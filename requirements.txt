@@ -1,0 +1,8 @@
+requests
+Pillow
+matplotlib
+pandas
+scipy
+numpy
+PyPDF2
+ghostscript
