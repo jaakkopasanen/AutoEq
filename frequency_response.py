@@ -79,6 +79,38 @@ class FrequencyResponse:
             s = '# GraphicEQ: 10 -84; ' + s
             f.write(s)
 
+    def interpolate(self):
+        """Interpolates missing values from previous and next value."""
+        # Remove None values
+        i = 0
+        while i < len(self.raw):
+            if self.raw[i] is None:
+                del self.raw[i]
+                del self.frequency[i]
+            else:
+                i += 1
+        interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=1)
+        freq_new = []
+        step = 21.0/20.0
+        # Frequencies from 20kHz down
+        f = 20000
+        while f > min(self.frequency):
+            freq_new.append(round(f))
+            f = f / step
+        # Frequencies from 20kHZ up
+        f = 20000
+        while f < max(self.frequency):
+            freq_new.append(round(f))
+            f = f * step
+        freq_new = sorted(set(freq_new))  # Remove duplicates and sort ascending
+        self.frequency = np.array(freq_new)
+        self.raw = interpolator(np.log10(self.frequency))
+
+    def center(self):
+        """Removed bias from frequency response."""
+        a = self.raw[(self.frequency >= 200) * (self.frequency <= 2000)]
+        self.raw -= a.mean()
+
     def _window_size(self, octaves):
         """Calculates moving average window size in indices from octaves."""
         # Octaves to coefficient
@@ -111,32 +143,9 @@ class FrequencyResponse:
         for i in range(len(self.frequency)):
             self.raw = savgol_filter(self.raw, self._window_size(window_size), 2)
 
-    def interpolate(self):
-        """Interpolates missing values from previous and next value."""
-        # Remove None values
-        i = 0
-        while i < len(self.raw):
-            if self.raw[i] is None:
-                del self.raw[i]
-                del self.frequency[i]
-            else:
-                i += 1
-        interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=1)
-        freq_new = []
-        step = 21.0/20.0
-        # Frequencies from 20kHz down
-        f = 20000
-        while f > min(self.frequency):
-            freq_new.append(round(f))
-            f = f / step
-        # Frequencies from 20kHZ up
-        f = 20000
-        while f < max(self.frequency):
-            freq_new.append(round(f))
-            f = f * step
-        freq_new = sorted(set(freq_new))  # Remove duplicates and sort ascending
-        self.frequency = np.array(freq_new)
-        self.raw = interpolator(np.log10(self.frequency))
+    def compensate(self, compensation):
+        """Compensates raw frequency response data with compensation array."""
+        self.raw += compensation
 
     def _target(self, bass_boost=4):
         """Creates target curve with bass boost as described by harman target response.
@@ -276,7 +285,14 @@ class FrequencyResponse:
         arg_parser = argparse.ArgumentParser()
         arg_parser.add_argument('--dir_path', type=str, default=os.path.join('innerfidelity', 'data'),
                                 help='Path to data directory.')
+        arg_parser.add_argument('--compensation', type='str', default=os.path.join('innerfidelity', 'compensation.csv'),
+                                help='File path to CSV containing compensation curve.')
         cli_args = arg_parser.parse_args()
+
+        compensation = None
+        if cli_args.compensation:
+            file_path = os.path.abspath(cli_args.compensation)
+            compensation = FrequencyResponse.read_from_csv(file_path)
 
         dir_path = os.path.abspath(cli_args.dir_path)
         t = time()
@@ -288,18 +304,19 @@ class FrequencyResponse:
                         s = ' (Max +{g}db, Bass +{b}dB)'.format(g=max_gain, b=bass_target)
                         fp = file_path.replace(' ORIG', s)
                         fr.name = fr.name.replace(' ORIG', s)
+                        fr.interpolate()
                         fr.center()
                         fr.smooth(1/5)
-                        fr.interpolate()
-                        fr.compensate()
+                        if compensation is not None:
+                            fr.compensate()
                         fr.equalize(max_gain=max_gain, smooth=True, window_size=1/3, bass_target=bass_target)
-                        fr.plot_graph(show=False, file_path=fp.replace('.csv', '.png'))
+                        fr.plot_graph(show=True, file_path=fp.replace('.csv', '.png'))
                         fr.write_to_csv(fp)
                         fr.write_equalization_equalizerapo_graphic_eq(fp.replace('.csv', '.txt'))
                         print('Equalized "{}"'.format(fr.name))
                         fp = fp.replace('.csv', '.png')
                         shutil.copyfile(fp, os.path.join('inspect', os.path.split(fp)[-1]))
-        print('{:.2f}s'.format(time()-t))
+        print('Equalized all in {:.2f}s'.format(time()-t))
 
 
 if __name__ == '__main__':
