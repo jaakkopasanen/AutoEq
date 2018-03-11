@@ -8,6 +8,7 @@ import math
 import pandas as pd
 from scipy.interpolate import InterpolatedUnivariateSpline
 from scipy.signal import savgol_filter
+from scipy.special import expit
 import numpy as np
 from glob import glob
 import shutil
@@ -135,16 +136,11 @@ class FrequencyResponse:
             window_size += 1
         return window_size
 
-    def _ramp_down(self, f_lower, f_upper):
-        """Function where everything below lower limit is 1.0, above upper limit is 0.0 with ramp in between."""
-        # TODO: sigmoid expit((x-center) / (range / 4)) -> logarithmic scale
-        i_lower = np.argmin(np.abs(self.frequency / f_lower - 1))
-        i_upper = np.argmin(np.abs(self.frequency / f_upper - 1))
-        return np.concatenate([
-            np.ones(i_lower - 1),
-            np.linspace(1.0, 0.0, i_upper - i_lower + 2),
-            np.zeros(len(self.frequency) - i_upper - 1)
-        ], axis=0)
+    def _sigmoid(self, f_lower, f_upper):
+        f_center = np.sqrt(f_upper / f_lower) * f_lower
+        half_range = np.log10(f_upper) - np.log10(f_center)
+        f_center = np.log10(f_center)
+        return expit((np.log10(self.frequency) - f_center) / (half_range / 4))
 
     def smooth(self, window_size=1/3, treble_window_size=2):
         """Smooths data with moving average window.
@@ -157,11 +153,9 @@ class FrequencyResponse:
             raise ValueError('None values present, cannot smoothen!')
         y_small = savgol_filter(self.raw, self._window_size(window_size), 2)
         y_large = savgol_filter(self.raw, self._window_size(treble_window_size), 2)
-        k_small = self._ramp_down(6000, 10000)
-        k_large = k_small * -1 + 1
+        k_large = self._sigmoid(6000, 10000)
+        k_small = k_large * -1 + 1
         self.raw = y_small * k_small + y_large * k_large
-        ax, fig = plt.subplots()
-        plt.plot(self.frequency, k_large)
 
     def compensate(self, compensation):
         """Compensates raw frequency response data with compensation array."""
@@ -210,7 +204,7 @@ class FrequencyResponse:
         previous_clipped = False
         kink_inds = []
         self.target = self._target(bass_boost=bass_target)
-        k = self._ramp_down(6000, 10000)  # Limit equalization power in high frequencies
+        k = self._sigmoid(6000, 10000) * -1 + 1  # Limit equalization power in high frequencies
         for i, a in enumerate(self.raw):
             gain = self.target[i] - a
             gain *= k[i]
