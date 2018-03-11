@@ -79,7 +79,23 @@ class FrequencyResponse:
             s = '# GraphicEQ: 10 -84; ' + s
             f.write(s)
 
-    def interpolate(self):
+    @staticmethod
+    def generate_frequencies(min_f=10, max_f=30000, step=1.01):
+        freq_new = []
+        # Frequencies from 20kHz down
+        f = 20000
+        while f > min_f:
+            freq_new.append(round(f))
+            f = f / step
+        # Frequencies from 20kHZ up
+        f = 20000
+        while f < max_f:
+            freq_new.append(round(f))
+            f = f * step
+        freq_new = sorted(set(freq_new))  # Remove duplicates and sort ascending
+        return np.array(freq_new)
+
+    def interpolate(self, step=1.01):
         """Interpolates missing values from previous and next value."""
         # Remove None values
         i = 0
@@ -90,20 +106,8 @@ class FrequencyResponse:
             else:
                 i += 1
         interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=1)
-        freq_new = []
-        step = 21.0/20.0
-        # Frequencies from 20kHz down
-        f = 20000
-        while f > min(self.frequency):
-            freq_new.append(round(f))
-            f = f / step
-        # Frequencies from 20kHZ up
-        f = 20000
-        while f < max(self.frequency):
-            freq_new.append(round(f))
-            f = f * step
-        freq_new = sorted(set(freq_new))  # Remove duplicates and sort ascending
-        self.frequency = np.array(freq_new)
+
+        self.frequency = self.generate_frequencies(step=step)
         self.raw = interpolator(np.log10(self.frequency))
 
     def center(self):

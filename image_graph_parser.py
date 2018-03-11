@@ -2,11 +2,13 @@
 
 import os
 import argparse
+import numpy as np
 from glob import glob
 from PIL import Image, ImageDraw
 import colorsys
-import warnings
 from frequency_response import FrequencyResponse
+from operator import itemgetter
+from itertools import groupby
 
 
 class ImageGraphParser:
@@ -28,7 +30,6 @@ class ImageGraphParser:
         for file_path in file_paths:
             with open(file_path, 'rb') as f:
                 model = os.path.split(file_path)[-1].split('.')[0]
-                self.images[model] = Image.open(file_path)
                 self.images[model] = Image.open(file_path)
 
     def parse_images(self, source, models=None):
@@ -69,9 +70,9 @@ class ImageGraphParser:
             f.append(f[-1] * f_step)
 
         # Y axis
-        a_amx = scale
+        a_max = scale
         a_min = -scale
-        a_res = (a_amx - a_min) / im.size[1]  # dB / px
+        a_res = (a_max - a_min) / im.size[1]  # dB / px
 
         amplitude = []
         # Iterate each column
@@ -93,7 +94,7 @@ class ImageGraphParser:
                 # Mean of recorded pixels
                 v = sum(pxs) / len(pxs)
                 # Convert to dB value
-                v = a_amx - v * a_res
+                v = a_max - v * a_res
                 amplitude.append(v)
 
         fr = FrequencyResponse(model, f, amplitude)
@@ -119,21 +120,23 @@ class ImageGraphParser:
                     r, g, b = im.getpixel((i, j))
                 else:
                     r, g, b = im.getpixel((j, i))
-                if r + g + b < 10:
+                if r + g + b < 450:
                     count += 1
             if count > im.size[ori2] / 2:
                 # More than half of pixels are black -> this is a line
                 lines.append(i)
-        return lines
+
+        means = []
+        for k, g in groupby(enumerate(lines), lambda x:x[0]-x[1]):
+            group = map(itemgetter(1), g)
+            means.append(int(np.round(np.mean(list(group)))))
+
+        return means
 
     @staticmethod
-    def parse_innerfidelity(im, model):
+    def parse_innerfidelity(im, model, px_top=800, px_bottom=4600, px_left=500, px_right=2500):
         """Parses graph image downloaded from innerfidelity.com"""
         # Crop out everything but graph area (roughly)
-        px_top = 800  # Pixels from top to +30dB
-        px_bottom = 4600  # Pixels from bottom to -30dB
-        px_left = 500  # Pixels from left to 10Hz
-        px_right = 2500  # Pixels from right edge
         box = (px_left, px_top, im.size[0]-px_right, im.size[1]-px_bottom)
         im = im.crop(box)
 
@@ -156,7 +159,8 @@ class ImageGraphParser:
         px_right = v_lines[-1] - thickness - 1
         im = im.crop((px_left, px_top, px_right, px_bottom))
         # Crop right edge to 30kHz
-        px_30khz = ImageGraphParser._find_lines(im, 'vertical')[-7]
+        lines = ImageGraphParser._find_lines(im, 'vertical')
+        px_30khz = lines[-7]
         im = im.crop((0, 0, px_30khz, im.size[1]))
 
         # X axis
@@ -188,24 +192,22 @@ class ImageGraphParser:
             # Iterate each row (pixel in column)
             for y in range(im.size[1]):
                 # Convert read RGB pixel values and convert to HSV
-                h, l, count = colorsys.rgb_to_hls(*[v/255.0 for v in im.getpixel((x, y))])
-                # Scale hue to 0-255
-                h *= 255
-                # Graph pixels are blue
-                if count > 0.5:
+                h, l, s = colorsys.rgb_to_hls(*[v/255.0 for v in im.getpixel((x, y))])
+                # Graph pixels are colored
+                if s > 0.8:
                     pxs.append(float(y))
             if not pxs:
                 # No graph pixels found on this column
                 amplitude.append(None)
             else:
                 # Mean of recorded pixels
-                v = sum(pxs) / len(pxs)
+                v = np.mean(pxs)
                 # Convert to dB value
                 v = a_max - v * a_res
                 amplitude.append(v)
 
-        im.show()
         fr = FrequencyResponse(model, f, amplitude)
+        #im.show()
         return fr
 
     @staticmethod
