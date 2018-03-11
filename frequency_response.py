@@ -26,8 +26,8 @@ class FrequencyResponse:
         self.equalized = equalized if equalized is not None else []
         self.equalized = [None if x is None or math.isnan(x) else x for x in self.equalized]
         self.target = []
-        self.smoothed_frequencies = []
-        self.smoothed_equalization = []
+        self.rounded_frequencies = []
+        self.rounded_equalization = []
 
     @classmethod
     def read_from_csv(cls, file_path):
@@ -135,7 +135,18 @@ class FrequencyResponse:
             window_size += 1
         return window_size
 
-    def smooth(self, window_size=1/5):
+    def _ramp_down(self, f_lower, f_upper):
+        """Function where everything below lower limit is 1.0, above upper limit is 0.0 with ramp in between."""
+        # TODO: sigmoid expit((x-center) / (range / 4)) -> logarithmic scale
+        i_lower = np.argmin(np.abs(self.frequency / f_lower - 1))
+        i_upper = np.argmin(np.abs(self.frequency / f_upper - 1))
+        return np.concatenate([
+            np.ones(i_lower - 1),
+            np.linspace(1.0, 0.0, i_upper - i_lower + 2),
+            np.zeros(len(self.frequency) - i_upper - 1)
+        ], axis=0)
+
+    def smooth(self, window_size=1/3, treble_window_size=2):
         """Smooths data with moving average window.
 
         Args:
@@ -143,13 +154,18 @@ class FrequencyResponse:
         """
         if None in self.raw or None in self.equalization or None in self.equalized:
             # Must not contain None values
-            self.interpolate()
-        for i in range(len(self.frequency)):
-            self.raw = savgol_filter(self.raw, self._window_size(window_size), 2)
+            raise ValueError('None values present, cannot smoothen!')
+        y_small = savgol_filter(self.raw, self._window_size(window_size), 2)
+        y_large = savgol_filter(self.raw, self._window_size(treble_window_size), 2)
+        k_small = self._ramp_down(6000, 10000)
+        k_large = k_small * -1 + 1
+        self.raw = y_small * k_small + y_large * k_large
+        ax, fig = plt.subplots()
+        plt.plot(self.frequency, k_large)
 
     def compensate(self, compensation):
         """Compensates raw frequency response data with compensation array."""
-        self.raw += compensation
+        self.raw += compensation.raw
 
     def _target(self, bass_boost=4):
         """Creates target curve with bass boost as described by harman target response.
@@ -194,8 +210,10 @@ class FrequencyResponse:
         previous_clipped = False
         kink_inds = []
         self.target = self._target(bass_boost=bass_target)
+        k = self._ramp_down(6000, 10000)  # Limit equalization power in high frequencies
         for i, a in enumerate(self.raw):
             gain = self.target[i] - a
+            gain *= k[i]
             clipped = gain > max_gain
             if previous_clipped != clipped:
                 kink_inds.append(i)
@@ -225,8 +243,8 @@ class FrequencyResponse:
             e = np.array([x for i, x in enumerate(self.equalization) if i not in doomed_inds])
             interpolator = InterpolatedUnivariateSpline(np.log10(f), e, k=2)
             self.equalization = interpolator(np.log10(self.frequency))
-            self.smoothed_frequencies = self.frequency[doomed_inds]
-            self.smoothed_equalization = self.equalization[doomed_inds]
+            self.rounded_frequencies = self.frequency[doomed_inds]
+            self.rounded_equalization = self.equalization[doomed_inds]
         else:
             self.equalization = np.array(self.equalization)
 
@@ -238,7 +256,7 @@ class FrequencyResponse:
                    raw=True,
                    equalization=True,
                    equalized=True,
-                   smoothed=True,
+                   rounded=True,
                    target=True,
                    file_path=None,
                    f_min=10,
@@ -251,9 +269,9 @@ class FrequencyResponse:
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
 
-        if smoothed and len(self.smoothed_frequencies):
-            plt.plot(self.smoothed_frequencies, self.smoothed_equalization, '.', color='r', linewidth=1)
-            legend.append('Smoothed')
+        if rounded and len(self.rounded_frequencies):
+            plt.plot(self.rounded_frequencies, self.rounded_equalization, '.', color='r', linewidth=1)
+            legend.append('Rounded')
         if target and len(self.target):
             plt.plot(self.frequency, self.target, linewidth=2)
             legend.append('Target')
@@ -289,7 +307,8 @@ class FrequencyResponse:
         arg_parser = argparse.ArgumentParser()
         arg_parser.add_argument('--dir_path', type=str, default=os.path.join('innerfidelity', 'data'),
                                 help='Path to data directory.')
-        arg_parser.add_argument('--compensation', type='str', default=os.path.join('innerfidelity', 'compensation.csv'),
+        arg_parser.add_argument('--compensation', type=str,
+                                default=os.path.join('innerfidelity', 'transformation', 'transformation.csv'),
                                 help='File path to CSV containing compensation curve.')
         cli_args = arg_parser.parse_args()
 
@@ -309,11 +328,11 @@ class FrequencyResponse:
                         fp = file_path.replace(' ORIG', s)
                         fr.name = fr.name.replace(' ORIG', s)
                         fr.interpolate()
-                        fr.center()
-                        fr.smooth(1/5)
+                        fr.smooth(1/3, 2)
                         if compensation is not None:
-                            fr.compensate()
-                        fr.equalize(max_gain=max_gain, smooth=True, window_size=1/3, bass_target=bass_target)
+                            fr.compensate(compensation)
+                        fr.center()
+                        fr.equalize(max_gain=max_gain, smooth=True, window_size=1/5, bass_target=bass_target)
                         fr.plot_graph(show=True, file_path=fp.replace('.csv', '.png'))
                         fr.write_to_csv(fp)
                         fr.write_equalization_equalizerapo_graphic_eq(fp.replace('.csv', '.txt'))
