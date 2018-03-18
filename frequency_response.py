@@ -16,12 +16,13 @@ from time import time
 
 
 class FrequencyResponse:
-    def __init__(self, name=None, frequency=None, raw=None, equalization=None, equalized=None):
+    def __init__(self, name=None, frequency=None, raw=None, smoothed=None, equalization=None, equalized=None):
         self.name = name.strip()
         self.frequency = frequency if frequency is not None else []
         self.frequency = [None if x is None or math.isnan(x) else x for x in self.frequency]
         self.raw = raw if raw is not None else []
         self.raw = [None if x is None or math.isnan(x) or x is None else x for x in self.raw]
+        self.smoothed = smoothed if smoothed is not None else []
         self.equalization = equalization if equalization is not None else []
         self.equalization = [None if x is None or math.isnan(x) or x is None else x for x in self.equalization]
         self.equalized = equalized if equalized is not None else []
@@ -59,6 +60,8 @@ class FrequencyResponse:
             df['frequency'] = self.frequency
         if len(self.raw):
             df['raw'] = [x if x is not None else 'NaN' for x in self.raw]
+        if len(self.smoothed):
+            df['smoothed'] = [x if x is not None else 'NaN' for x in self.smoothed]
         if len(self.equalization):
             df['equalization'] = [x if x is not None else 'NaN' for x in self.equalization]
         if len(self.equalized):
@@ -149,7 +152,7 @@ class FrequencyResponse:
                treble_iterations=None,
                lower_freq=6000,
                upper_freq=10000):
-        """Smooths data with moving average window.
+        """Smooths data.
 
         Args:
             window_size: Filter window size in octaves.
@@ -187,11 +190,11 @@ class FrequencyResponse:
         # Transition weighted with sigmoid
         k_treble = self._sigmoid(lower_freq, upper_freq)
         k_normal = k_treble * -1 + 1
-        self.raw = y_normal * k_normal + y_treble * k_treble
+        self.smoothed = y_normal * k_normal + y_treble * k_treble
 
-    def compensate(self, compensation):
-        """Compensates raw frequency response data with compensation array."""
-        self.raw += compensation.raw
+    def calibrate(self, calibration):
+        """Calibrates raw frequency response data with calibration array."""
+        self.raw += calibration.raw
 
     def _target(self, bass_boost=4):
         """Creates target curve with bass boost as described by harman target response.
@@ -225,7 +228,9 @@ class FrequencyResponse:
         self.equalization = []
         self.equalized = []
 
-        if None in self.raw or None in self.equalization or None in self.equalized:
+        data = self.smoothed if len(self.smoothed) else self.raw
+
+        if None in data or None in self.equalization or None in self.equalized:
             # Must not contain None values
             self.interpolate()
 
@@ -237,9 +242,9 @@ class FrequencyResponse:
         kink_inds = []
         self.target = self._target(bass_boost=bass_target)
         k = self._sigmoid(6000, 10000) * -1 + 1  # Limit equalization power in high frequencies
-        for i, a in enumerate(self.raw):
+        for i, a in enumerate(data):
             gain = self.target[i] - a
-            gain *= k[i]
+            #gain *= k[i]  # TODO: Restore?
             clipped = gain > max_gain
             if previous_clipped != clipped:
                 kink_inds.append(i)
@@ -304,6 +309,9 @@ class FrequencyResponse:
         if raw and len(self.raw):
             plt.plot(self.frequency, self.raw, linewidth=1)
             legend.append('Raw')
+        if raw and len(self.smoothed):
+            plt.plot(self.frequency, self.smoothed, linewidth=1)
+            legend.append('Smoothed')
         if equalization and len(self.equalization):
             plt.plot(self.frequency, self.equalization, linewidth=1)
             legend.append('Equalization')
@@ -333,15 +341,15 @@ class FrequencyResponse:
         arg_parser = argparse.ArgumentParser()
         arg_parser.add_argument('--dir_path', type=str, default=os.path.join('innerfidelity', 'data'),
                                 help='Path to data directory.')
-        arg_parser.add_argument('--compensation', type=str,
-                                default=os.path.join('innerfidelity', 'transformation', 'transformation.csv'),
-                                help='File path to CSV containing compensation curve.')
+        arg_parser.add_argument('--calibration', type=str,
+                                default=os.path.join('innerfidelity', 'transformation.csv'),
+                                help='File path to CSV containing calibration curve.')
         cli_args = arg_parser.parse_args()
 
-        compensation = None
-        if cli_args.compensation:
-            file_path = os.path.abspath(cli_args.compensation)
-            compensation = FrequencyResponse.read_from_csv(file_path)
+        calibration = None
+        if cli_args.calibration:
+            file_path = os.path.abspath(cli_args.calibration)
+            calibration = FrequencyResponse.read_from_csv(file_path)
 
         dir_path = os.path.abspath(cli_args.dir_path)
         t = time()
@@ -354,10 +362,10 @@ class FrequencyResponse:
                         fp = file_path.replace(' ORIG', s)
                         fr.name = fr.name.replace(' ORIG', s)
                         fr.interpolate()
-                        fr.smooth(1/3, 2)
-                        if compensation is not None:
-                            fr.compensate(compensation)
+                        if calibration is not None:
+                            fr.calibrate(calibration)
                         fr.center()
+                        fr.smooth(window_size=1/5, iterations=10, treble_window_size=1/2, treble_iterations=100)
                         fr.equalize(max_gain=max_gain, smooth=True, window_size=1/5, bass_target=bass_target)
                         fr.plot_graph(show=True, file_path=fp.replace('.csv', '.png'))
                         fr.write_to_csv(fp)
