@@ -35,7 +35,8 @@ def main():
         px_left = 50  # Pixels from left to 10Hz
         px_right = 20  # Pixels from right edge
 
-        fr = ImageGraphParser.parse_innerfidelity(
+        # Add -1px to left and top, +1px to right and bottom of tight crop box in parse_innerfidelity
+        fr, _ = ImageGraphParser.parse_innerfidelity(
             im,
             model=model,
             px_top=px_top,
