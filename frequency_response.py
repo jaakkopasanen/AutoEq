@@ -310,9 +310,9 @@ class FrequencyResponse:
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
 
-        if rounded and len(self.rounded_frequencies):
-            plt.plot(self.rounded_frequencies, self.rounded_equalization, '.', color='r', linewidth=1)
-            legend.append('Rounded')
+        # if rounded and len(self.rounded_frequencies):
+        #     plt.plot(self.rounded_frequencies, self.rounded_equalization, '.', color='r', linewidth=1)
+        #     legend.append('Rounded')
         if target and len(self.target):
             plt.plot(self.frequency, self.target, linewidth=2)
             legend.append('Target')
@@ -338,7 +338,7 @@ class FrequencyResponse:
         plt.ylabel('Amplitude (dBr)')
         plt.ylim([a_min, a_max])
         plt.title(self.name)
-        plt.legend(legend)
+        plt.legend(legend, loc='upper right', fontsize=8)
         plt.grid(which='major')
         plt.grid(which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
