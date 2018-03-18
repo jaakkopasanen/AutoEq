@@ -16,22 +16,42 @@ from time import time
 
 
 class FrequencyResponse:
-    def __init__(self, name=None, frequency=None, raw=None, smoothed=None, equalization=None, equalized_raw=None, equalized_smoothed=None):
+    def __init__(self,
+                 name=None,
+                 frequency=None,
+                 raw=None,
+                 smoothed=None,
+                 equalization=None,
+                 equalized_raw=None,
+                 equalized_smoothed=None):
         self.name = name.strip()
+
         self.frequency = frequency if frequency is not None else []
         self.frequency = [None if x is None or math.isnan(x) else x for x in self.frequency]
+        self.frequency = np.array(self.frequency)
+
         self.raw = raw if raw is not None else []
         self.raw = [None if x is None or math.isnan(x) or x is None else x for x in self.raw]
+        self.raw = np.array(self.raw)
+
         self.smoothed = smoothed if smoothed is not None else []
+        self.smoothed = np.array(self.smoothed)
+
         self.equalization = equalization if equalization is not None else []
         self.equalization = [None if x is None or math.isnan(x) or x is None else x for x in self.equalization]
+        self.equalization = np.array(self.equalization)
+
         self.equalized_raw = equalized_raw if equalized_raw is not None else []
         self.equalized_raw = [None if x is None or math.isnan(x) else x for x in self.equalized_raw]
+        self.equalized_raw = np.array(self.equalized_raw)
+
         self.equalized_smoothed = equalized_smoothed if equalized_smoothed is not None else []
         self.equalized_smoothed = [None if x is None or math.isnan(x) else x for x in self.equalized_smoothed]
-        self.target = []
-        self.rounded_frequencies = []
-        self.rounded_equalization = []
+        self.equalized_smoothed = np.array(self.equalized_smoothed)
+
+        self.target = np.array([])
+        self.rounded_frequencies = np.array([])
+        self.rounded_equalization = np.array([])
 
     @classmethod
     def read_from_csv(cls, file_path):
@@ -92,40 +112,40 @@ class FrequencyResponse:
             f.write(s)
 
     @staticmethod
-    def generate_frequencies(min_f=10, max_f=30000, step=1.01):
+    def generate_frequencies(f_min=10, f_max=30000, step=1.01):
         freq_new = []
         # Frequencies from 20kHz down
-        f = 20000
-        while f > min_f:
+        f = np.min([20000, f_max])
+        while f > f_min:
             freq_new.append(round(f))
             f = f / step
         # Frequencies from 20kHZ up
-        f = 20000
-        while f < max_f:
+        f = np.min([20000, f_max])
+        while f < f_max:
             freq_new.append(round(f))
             f = f * step
         freq_new = sorted(set(freq_new))  # Remove duplicates and sort ascending
         return np.array(freq_new)
 
-    def interpolate(self, step=1.01):
+    def interpolate(self, step=1.01, pol_order=1, f_min=10, f_max=30000):
         """Interpolates missing values from previous and next value."""
         # Remove None values
         i = 0
         while i < len(self.raw):
             if self.raw[i] is None:
-                del self.raw[i]
-                del self.frequency[i]
+                self.raw = np.delete(self.raw, i)
+                self.frequency = np.delete(self.frequency, i)
             else:
                 i += 1
-        interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=1)
+        interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=pol_order)
 
-        self.frequency = self.generate_frequencies(step=step)
+        self.frequency = self.generate_frequencies(f_min=f_min, f_max=f_max, step=step)
         self.raw = interpolator(np.log10(self.frequency))
 
     def center(self):
         """Removed bias from frequency response."""
-        a = self.raw[(self.frequency >= 200) * (self.frequency <= 2000)]
-        self.raw -= a.mean()
+        interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=1)
+        self.raw -= interpolator(np.log10(1000))
 
     def _window_size(self, octaves):
         """Calculates moving average window size in indices from octaves."""
@@ -158,8 +178,8 @@ class FrequencyResponse:
                iterations=1,
                treble_window_size=None,
                treble_iterations=None,
-               lower_freq=6000,
-               upper_freq=10000):
+               f_lower=6000,
+               f_upper=10000):
         """Smooths data.
 
         Args:
@@ -167,16 +187,16 @@ class FrequencyResponse:
             iterations: Number of iterations to run the filter. Each new iteration is using output of previous one.
             treble_window_size: Filter window size for high frequencies.
             treble_iterations: Number of iterations for treble filter.
-            lower_freq: Lower boundary of transition frequency region. In the transition region normal filter is \
+            f_lower: Lower boundary of transition frequency region. In the transition region normal filter is \
                         switched to treble filter with sigmoid weighting function.
-            upper_freq: Upper boundary of transition frequency reqion. In the transition region normal filter is \
+            f_upper: Upper boundary of transition frequency reqion. In the transition region normal filter is \
                         switched to treble filter with sigmoid weighting function.
         """
         if None in self.frequency or None in self.raw or None in self.equalization or None in self.equalized_raw:
             # Must not contain None values
             raise ValueError('None values present, cannot smoothen!')
 
-        if upper_freq <= lower_freq:
+        if f_upper <= f_lower:
             raise ValueError('Upper transition boundary must be greater than lower boundary')
 
         # Use normal filter parameters for treble filter if treble filter parameters are not given
@@ -196,7 +216,7 @@ class FrequencyResponse:
             y_treble = savgol_filter(y_treble, self._window_size(treble_window_size), 2)
 
         # Transition weighted with sigmoid
-        k_treble = self._sigmoid(lower_freq, upper_freq)
+        k_treble = self._sigmoid(f_lower, f_upper)
         k_normal = k_treble * -1 + 1
         self.smoothed = y_normal * k_normal + y_treble * k_treble
 
@@ -293,8 +313,11 @@ class FrequencyResponse:
             self.equalized_smoothed = self.smoothed + self.equalization
 
     def plot_graph(self,
+                   fig=None,
+                   ax=None,
                    show=True,
                    raw=True,
+                   smoothed=True,
                    equalization=True,
                    equalized=True,
                    rounded=True,
@@ -305,7 +328,8 @@ class FrequencyResponse:
                    a_min=-40,
                    a_max=40):
         """Plots frequency response graph."""
-        fig, ax = plt.subplots()
+        if fig is None:
+            fig, ax = plt.subplots()
         legend = []
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
@@ -319,7 +343,7 @@ class FrequencyResponse:
         if raw and len(self.raw):
             plt.plot(self.frequency, self.raw, linewidth=1)
             legend.append('Raw')
-        if raw and len(self.smoothed):
+        if smoothed and len(self.smoothed):
             plt.plot(self.frequency, self.smoothed, linewidth=1)
             legend.append('Smoothed')
         if equalization and len(self.equalization):
@@ -339,16 +363,15 @@ class FrequencyResponse:
         plt.ylim([a_min, a_max])
         plt.title(self.name)
         plt.legend(legend, loc='upper right', fontsize=8)
-        plt.grid(which='major')
-        plt.grid(which='minor')
+        plt.grid(True, which='major')
+        plt.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
         if file_path is not None:
             file_path = os.path.abspath(file_path)
             fig.savefig(file_path, dpi=240)
         if show:
             plt.show()
-        if file_path:
-            plt.close(fig)
+        return fig, ax
 
     @staticmethod
     def main():
@@ -381,7 +404,8 @@ class FrequencyResponse:
                         fr.center()
                         fr.smooth(window_size=1/5, iterations=10, treble_window_size=1/2, treble_iterations=100)
                         fr.equalize(max_gain=max_gain, smooth=True, window_size=1/5, bass_target=bass_target)
-                        fr.plot_graph(show=True, file_path=fp.replace('.csv', '.png'))
+                        fig, ax = fr.plot_graph(show=True, file_path=fp.replace('.csv', '.png'))
+                        plt.close(fig)
                         fr.write_to_csv(fp)
                         fr.write_equalization_equalizerapo_graphic_eq(fp.replace('.csv', '.txt'))
                         print('Equalized "{}"'.format(fr.name))
