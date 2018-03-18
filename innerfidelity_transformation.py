@@ -43,7 +43,6 @@ def main():
             px_left=px_left,
             px_right=px_right
         )
-        #fr.plot_graph(a_min=-50, a_max=20)
         fr.interpolate()
         models[name][kind] = fr
 
@@ -56,8 +55,7 @@ def main():
     diff = np.mean(diffs, axis=0)
     f = models[list(models.keys())[0]]['before'].frequency
     diff = FrequencyResponse(name='Diff', frequency=f, raw=diff)
-    diff.smooth(1/5)
-    #diff.plot_graph(a_min=-10, a_max=10)
+    diff.smooth(window_size=1/5, iterations=100)
 
     fig, ax = plt.subplots()
     legend = []
@@ -81,9 +79,9 @@ def main():
     plt.grid(which='minor')
     plt.title('Innerfidelity Transformation Function')
     ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
-    fig.savefig('innerfidelity\\transformation\\transformation.png', dpi=240)
+    fig.savefig('innerfidelity\\transformation.png', dpi=240)
     plt.show()
-    diff.write_to_csv('innerfidelity\\transformation\\transformation.csv')
+    diff.write_to_csv('innerfidelity\\transformation.csv')
 
 
 if __name__ == '__main__':

@@ -142,20 +142,52 @@ class FrequencyResponse:
         f_center = np.log10(f_center)
         return expit((np.log10(self.frequency) - f_center) / (half_range / 4))
 
-    def smooth(self, window_size=1/3, treble_window_size=2):
+    def smooth(self,
+               window_size=1/5,
+               iterations=1,
+               treble_window_size=None,
+               treble_iterations=None,
+               lower_freq=6000,
+               upper_freq=10000):
         """Smooths data with moving average window.
 
         Args:
-            window_size: Window size in octaves
+            window_size: Filter window size in octaves.
+            iterations: Number of iterations to run the filter. Each new iteration is using output of previous one.
+            treble_window_size: Filter window size for high frequencies.
+            treble_iterations: Number of iterations for treble filter.
+            lower_freq: Lower boundary of transition frequency region. In the transition region normal filter is \
+                        switched to treble filter with sigmoid weighting function.
+            upper_freq: Upper boundary of transition frequency reqion. In the transition region normal filter is \
+                        switched to treble filter with sigmoid weighting function.
         """
-        if None in self.raw or None in self.equalization or None in self.equalized:
+        if None in self.frequency or None in self.raw or None in self.equalization or None in self.equalized:
             # Must not contain None values
             raise ValueError('None values present, cannot smoothen!')
-        y_small = savgol_filter(self.raw, self._window_size(window_size), 2)
-        y_large = savgol_filter(self.raw, self._window_size(treble_window_size), 2)
-        k_large = self._sigmoid(6000, 10000)
-        k_small = k_large * -1 + 1
-        self.raw = y_small * k_small + y_large * k_large
+
+        if upper_freq <= lower_freq:
+            raise ValueError('Upper transition boundary must be greater than lower boundary')
+
+        # Use normal filter parameters for treble filter if treble filter parameters are not given
+        if treble_window_size is None:
+            treble_window_size = window_size
+        if treble_iterations is None:
+            treble_iterations = iterations
+
+        # Normal filter
+        y_normal = self.raw
+        for _ in range(iterations):
+            y_normal = savgol_filter(y_normal, self._window_size(window_size), 2)
+
+        # Treble filter
+        y_treble = self.raw
+        for _ in range(treble_iterations):
+            y_treble = savgol_filter(y_treble, self._window_size(treble_window_size), 2)
+
+        # Transition weighted with sigmoid
+        k_treble = self._sigmoid(lower_freq, upper_freq)
+        k_normal = k_treble * -1 + 1
+        self.raw = y_normal * k_normal + y_treble * k_treble
 
     def compensate(self, compensation):
         """Compensates raw frequency response data with compensation array."""

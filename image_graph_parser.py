@@ -185,6 +185,7 @@ class ImageGraphParser:
         if n_h != 13:
             raise ValueError('Innerfidelity image parsing for "{}" failed because Y-axis is not correct!')
 
+        pix = im.load()
         amplitude = []
         # Iterate each column
         for x in range(im.size[0]):
@@ -192,10 +193,12 @@ class ImageGraphParser:
             # Iterate each row (pixel in column)
             for y in range(im.size[1]):
                 # Convert read RGB pixel values and convert to HSV
-                h, l, s = colorsys.rgb_to_hls(*[v/255.0 for v in im.getpixel((x, y))])
+                h, s, v = colorsys.rgb_to_hsv(*[v/255.0 for v in im.getpixel((x, y))])
                 # Graph pixels are colored
                 if s > 0.8:
                     pxs.append(float(y))
+                # else:
+                #     pix[x, y] = (0, 0, 0)
             if not pxs:
                 # No graph pixels found on this column
                 amplitude.append(None)
@@ -207,7 +210,7 @@ class ImageGraphParser:
                 amplitude.append(v)
 
         fr = FrequencyResponse(model, f, amplitude)
-        #im.show()
+        # im.show()
         return fr
 
     @staticmethod
