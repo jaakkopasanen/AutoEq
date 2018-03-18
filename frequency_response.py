@@ -16,7 +16,7 @@ from time import time
 
 
 class FrequencyResponse:
-    def __init__(self, name=None, frequency=None, raw=None, smoothed=None, equalization=None, equalized=None):
+    def __init__(self, name=None, frequency=None, raw=None, smoothed=None, equalization=None, equalized_raw=None, equalized_smoothed=None):
         self.name = name.strip()
         self.frequency = frequency if frequency is not None else []
         self.frequency = [None if x is None or math.isnan(x) else x for x in self.frequency]
@@ -25,8 +25,10 @@ class FrequencyResponse:
         self.smoothed = smoothed if smoothed is not None else []
         self.equalization = equalization if equalization is not None else []
         self.equalization = [None if x is None or math.isnan(x) or x is None else x for x in self.equalization]
-        self.equalized = equalized if equalized is not None else []
-        self.equalized = [None if x is None or math.isnan(x) else x for x in self.equalized]
+        self.equalized_raw = equalized_raw if equalized_raw is not None else []
+        self.equalized_raw = [None if x is None or math.isnan(x) else x for x in self.equalized_raw]
+        self.equalized_smoothed = equalized_smoothed if equalized_smoothed is not None else []
+        self.equalized_smoothed = [None if x is None or math.isnan(x) else x for x in self.equalized_smoothed]
         self.target = []
         self.rounded_frequencies = []
         self.rounded_equalization = []
@@ -40,15 +42,19 @@ class FrequencyResponse:
         df = pd.read_csv(file_path, sep=',', header=0)
         frequency = list(df['frequency']) if 'frequency' in df else None
         raw = list(df['raw']) if 'raw' in df else None
+        smoothed = list(df['smoothed']) if 'smoothed' in df else None
         equalization = list(df['equalization']) if 'equalization' in df else None
-        equalized = list(df['equalized']) if 'equalized' in df else None
+        equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
+        equalized_smoothed = list(df['equalized_smoothed']) if 'equalized_smoothed' in df else None
 
         return cls(
             name=name,
             frequency=frequency,
             raw=raw,
+            smoothed=smoothed,
             equalization=equalization,
-            equalized=equalized
+            equalized_raw=equalized_raw,
+            equalized_smoothed=equalized_smoothed
         )
 
     def write_to_csv(self, file_path=None):
@@ -64,8 +70,10 @@ class FrequencyResponse:
             df['smoothed'] = [x if x is not None else 'NaN' for x in self.smoothed]
         if len(self.equalization):
             df['equalization'] = [x if x is not None else 'NaN' for x in self.equalization]
-        if len(self.equalized):
-            df['equalized'] = [x if x is not None else 'NaN' for x in self.equalized]
+        if len(self.equalized_raw):
+            df['equalized_raw'] = [x if x is not None else 'NaN' for x in self.equalized_raw]
+        if len(self.equalized_smoothed):
+            df['equalized_smoothed'] = [x if x is not None else 'NaN' for x in self.equalized_smoothed]
 
         df.to_csv(file_path, header=True, index=False)
 
@@ -164,7 +172,7 @@ class FrequencyResponse:
             upper_freq: Upper boundary of transition frequency reqion. In the transition region normal filter is \
                         switched to treble filter with sigmoid weighting function.
         """
-        if None in self.frequency or None in self.raw or None in self.equalization or None in self.equalized:
+        if None in self.frequency or None in self.raw or None in self.equalization or None in self.equalized_raw:
             # Must not contain None values
             raise ValueError('None values present, cannot smoothen!')
 
@@ -226,11 +234,11 @@ class FrequencyResponse:
             bass_target: Target value in dB for bass boost
         """
         self.equalization = []
-        self.equalized = []
+        self.equalized_raw = []
 
         data = self.smoothed if len(self.smoothed) else self.raw
 
-        if None in data or None in self.equalization or None in self.equalized:
+        if None in data or None in self.equalization or None in self.equalized_raw:
             # Must not contain None values
             self.interpolate()
 
@@ -280,7 +288,9 @@ class FrequencyResponse:
             self.equalization = np.array(self.equalization)
 
         # Equalized
-        self.equalized = self.raw + self.equalization
+        self.equalized_raw = self.raw + self.equalization
+        if len(self.smoothed):
+            self.equalized_smoothed = self.smoothed + self.equalization
 
     def plot_graph(self,
                    show=True,
@@ -315,9 +325,12 @@ class FrequencyResponse:
         if equalization and len(self.equalization):
             plt.plot(self.frequency, self.equalization, linewidth=1)
             legend.append('Equalization')
-        if equalized and len(self.equalized):
-            plt.plot(self.frequency, self.equalized, linewidth=1)
-            legend.append('Equalized')
+        if equalized and len(self.equalized_raw):
+            plt.plot(self.frequency, self.equalized_raw, linewidth=1)
+            legend.append('Equalized raw')
+        if equalized and len(self.equalized_smoothed):
+            plt.plot(self.frequency, self.equalized_smoothed, linewidth=1)
+            legend.append('Equalized smoothed')
 
         plt.xlabel('Frequency (Hz)')
         plt.semilogx()
@@ -334,7 +347,8 @@ class FrequencyResponse:
             fig.savefig(file_path, dpi=240)
         if show:
             plt.show()
-        plt.close(fig)
+        if file_path:
+            plt.close(fig)
 
     @staticmethod
     def main():
