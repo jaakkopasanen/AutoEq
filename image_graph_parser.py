@@ -32,18 +32,25 @@ class ImageGraphParser:
                 model = os.path.split(file_path)[-1].split('.')[0]
                 self.images[model] = Image.open(file_path)
 
-    def parse_images(self, source, models=None):
+    def parse_images(self, source, models=None, inspection_dir=None):
         """Parses all read images."""
         if models is not None:
             images = {model: self.images[model] for model in models}
         else:
             images = self.images
+
+        if inspection_dir is not None:
+            inspection_dir = os.path.abspath(inspection_dir)
+            os.makedirs(inspection_dir, exist_ok=True)
+
         for model, image in images.items():
             try:
                 if source == 'headphonecom':
                     self.frequency_responses[model] = self.parse_headphonecom(image, model=model)
                 elif source == 'innerfidelity':
-                    self.frequency_responses[model] = self.parse_innerfidelity(image, model=model)
+                    self.frequency_responses[model], inspection = self.parse_innerfidelity(image, model=model)
+                    if inspection_dir is not None:
+                        inspection.save(os.path.join(inspection_dir, model+'.png'))
             except Exception as err:
                 # warnings.warn('Image for "{model}" parsing failed: "{err}"'.format(model=model, err=err))
                 raise err
@@ -144,23 +151,14 @@ class ImageGraphParser:
         v_lines = ImageGraphParser._find_lines(im, 'vertical')
         h_lines = ImageGraphParser._find_lines(im, 'horizontal')
 
-        # Find line thickness
-        thickness = 1
-        while thickness < len(v_lines):
-            if v_lines[thickness] - 1 == v_lines[thickness - 1]:
-                thickness += 1
-            else:
-                break
-
-        # Tight crop
-        px_top = h_lines[0] + round(thickness / 2)
-        px_bottom = h_lines[-1] - round(thickness) / 2
-        px_left = v_lines[0] + round(thickness / 2)
-        px_right = v_lines[-1] - thickness - 1
+        px_top = h_lines[0]
+        px_bottom = h_lines[-1]
+        px_left = v_lines[0]
+        px_right = v_lines[-1]
         im = im.crop((px_left, px_top, px_right, px_bottom))
         # Crop right edge to 30kHz
         lines = ImageGraphParser._find_lines(im, 'vertical')
-        px_30khz = lines[-7]
+        px_30khz = lines[-8]
         im = im.crop((0, 0, px_30khz, im.size[1]))
 
         # X axis
@@ -177,15 +175,18 @@ class ImageGraphParser:
         a_res = (a_max - a_min) / im.size[1]  # dB / px
 
         # Check crop
-        _im = im.crop((10, 10, im.size[0] - 10, im.size[1] - 10))
+        _im = im.crop((20, 20, im.size[0] - 20, im.size[1] - 20))
         n_h = len(ImageGraphParser._find_lines(_im, 'horizontal'))
         n_v = len(ImageGraphParser._find_lines(_im, 'vertical'))
         if n_v != 28:
-            raise ValueError('Innerfidelity image parsing for "{}" failed because X-axis is not correct!')
+            print(n_v)
+            raise ValueError('Innerfidelity image parsing for "{}" failed because X-axis is not correct!'.format(model))
         if n_h != 13:
-            raise ValueError('Innerfidelity image parsing for "{}" failed because Y-axis is not correct!')
+            print(n_h)
+            raise ValueError('Innerfidelity image parsing for "{}" failed because Y-axis is not correct!'.format(model))
 
-        pix = im.load()
+        _im = im.copy()
+        pix = _im.load()
         amplitude = []
         # Iterate each column
         for x in range(im.size[0]):
@@ -197,8 +198,9 @@ class ImageGraphParser:
                 # Graph pixels are colored
                 if s > 0.8:
                     pxs.append(float(y))
-                # else:
-                #     pix[x, y] = (0, 0, 0)
+                else:
+                    p = im.getpixel((x, y))
+                    pix[x, y] = (int(0.9*p[0]), int(255*0.1+0.9*p[1]), int(0+0.9*p[2]))
             if not pxs:
                 # No graph pixels found on this column
                 amplitude.append(None)
@@ -209,9 +211,13 @@ class ImageGraphParser:
                 v = a_max - v * a_res
                 amplitude.append(v)
 
+        draw = ImageDraw.Draw(_im)
+        x0 = np.log(20/f_min) / np.log(f_step)
+        x1 = np.log(20000/f_min) / np.log(f_step)
+        draw.rectangle(((x0, 10/a_res), (x1, 60/a_res)), outline='magenta')
+
         fr = FrequencyResponse(model, f, amplitude)
-        # im.show()
-        return fr
+        return fr, _im
 
     @staticmethod
     def main():
@@ -220,18 +226,20 @@ class ImageGraphParser:
                                 help='Path to directory containing images.')
         arg_parser.add_argument('--out_dir_path', type=str, default=os.path.join('innerfidelity', 'data'),
                                 help='Path to output directory.')
+        arg_parser.add_argument('--insp_dir_path', type=str, default=os.path.join('innerfidelity', 'inspection'),
+                                help='Path to inspection directory.')
         arg_parser.add_argument('--source', type=str, default='innerfidelity', help='Where did the image come from?')
         cli_args = arg_parser.parse_args()
 
         parser = ImageGraphParser()
         parser.read_images(cli_args.in_dir_path)
-        parser.parse_images(cli_args.source)
+        parser.parse_images(cli_args.source, inspection_dir=cli_args.insp_dir_path)
         for fr in parser.frequency_responses.values():
             dir_path = os.path.join(os.path.abspath(cli_args.out_dir_path), fr.name)
             if not os.path.exists(dir_path):
                 os.makedirs(dir_path, exist_ok=True)
             fr.write_to_csv(os.path.join(dir_path, fr.name+' ORIG.csv'))
-            fr.plot_graph(show=True)
+            # fr.plot_graph(show=True)
 
 
 if __name__ == '__main__':
