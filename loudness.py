@@ -38,8 +38,9 @@ def pop_frequency_distribution():
         frequency=[20, 100, 100*math.sqrt(10), 1000, 1000*math.sqrt(10), 10000, 20000],
         raw=[-30, 0, -3, -6, -10, -20, -50]
     )
+    fr.raw += 80
     fr.interpolate(pol_order=3, f_min=20, f_max=12500)
-    fr.center()
+    #fr.center()
     return fr
 
 
@@ -51,12 +52,34 @@ def main():
     elc.raw = -elc.raw
 
     loudness = FrequencyResponse('Loudness', frequency=pop.frequency, raw=pop.raw+elc.raw)
-    loudness.center()
+    #loudness.center()
 
     fig, ax = pop.plot_graph(show=False)
-    elc.plot_graph(fig=fig, ax=ax, show=False)
-    loudness.plot_graph(fig=fig, ax=ax, show=False, a_min=-70, a_max=10)
-    plt.legend(['Pop Music Frequency Distribution', 'Equal Loudness Contour (80 phon)', 'Sum'])
+    #elc.plot_graph(fig=fig, ax=ax, show=False)
+    loudness.plot_graph(fig=fig, ax=ax, show=False)
+
+    v = FrequencyResponse(name='V', frequency=[20, 1000, 20000], raw=[10, -10, 10])
+    v.interpolate(pol_order=2)
+    v.interpolate(f=loudness.frequency)
+    v.plot_graph(fig=fig, ax=ax, show=False)
+
+    v_l = FrequencyResponse(name='V Loudness', frequency=v.frequency, raw=v.raw+loudness.raw)
+    v_l.plot_graph(fig=fig, ax=ax, show=False)
+
+    a = FrequencyResponse(name='A', frequency=[20, 1000, 20000], raw=[-10, 5, -10])
+    a.interpolate(pol_order=2)
+    a.interpolate(f=loudness.frequency)
+    a.plot_graph(fig=fig, ax=ax, show=False)
+
+    a_l = FrequencyResponse(name='A Loudness', frequency=a.frequency, raw=a.raw+loudness.raw)
+    a_l.plot_graph(fig=fig, ax=ax, show=False, a_min=-20, a_max=90)
+
+    plt.legend(['Pop Music Frequency Distribution', 'Loudness',
+                'V', 'V+L', 'A', 'A+L'])
+    print('V: {}'.format(20*np.log10(np.mean(np.power(v.raw/20, 10)))))
+    print('V loudness: {}'.format(20*np.log10(np.mean(np.power(v_l.raw/20, 10)))))
+    print('A: {}'.format(20*np.log10(np.mean(np.power(a.raw/20, 10)))))
+    print('A loudness: {}'.format(20*np.log10(np.mean(np.power(a_l.raw/20, 10)))))
     plt.show()
     loudness.write_to_csv('music_loudness_contour.csv')
     plt.close(fig)

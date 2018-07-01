@@ -127,7 +127,7 @@ class FrequencyResponse:
         freq_new = sorted(set(freq_new))  # Remove duplicates and sort ascending
         return np.array(freq_new)
 
-    def interpolate(self, step=1.01, pol_order=1, f_min=10, f_max=30000):
+    def interpolate(self, f=None, step=1.01, pol_order=1, f_min=10, f_max=30000):
         """Interpolates missing values from previous and next value."""
         # Remove None values
         i = 0
@@ -139,7 +139,10 @@ class FrequencyResponse:
                 i += 1
         interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=pol_order)
 
-        self.frequency = self.generate_frequencies(f_min=f_min, f_max=f_max, step=step)
+        if f is None:
+            self.frequency = self.generate_frequencies(f_min=f_min, f_max=f_max, step=step)
+        else:
+            self.frequency = f
         self.raw = interpolator(np.log10(self.frequency))
 
     def center(self):
