@@ -5,6 +5,7 @@ import PyPDF2
 from ghostscript import Ghostscript
 import argparse
 from glob import glob
+import warnings
 
 
 def pdf_to_image(input_file_path, output_dir_path):
@@ -50,7 +51,11 @@ def main():
     cli_args = arg_parser.parse_args()
 
     for file_path in glob(os.path.join(os.path.abspath(cli_args.input_dir_path), '*.pdf')):
-        pdf_to_image(file_path, cli_args.output_dir_path)
+        try:
+            pdf_to_image(file_path, cli_args.output_dir_path)
+        except Exception as err:
+            warnings.warn('Failed to transform PDF into PNG for "{}"'.format(file_path))
+            warnings.warn(str(err))
 
 
 if __name__ == '__main__':

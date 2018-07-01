@@ -26,18 +26,22 @@ class Downloader:
             if r.status_code != 200:
                 warnings.warn('Failed to download image for "{model}" at "{url}"'.format(model=model, url=url))
                 continue
-            with open(os.path.join(dir_path, '{}.png'.format(model)), 'wb') as f:
-                r.raw.decode_content = True
-                shutil.copyfileobj(r.raw, f)
+            try:
+                with open(os.path.join(dir_path, '{}.png'.format(model)), 'wb') as f:
+                    r.raw.decode_content = True
+                    shutil.copyfileobj(r.raw, f)
+            except OSError:
+                print('Failed to save', model)
+                continue
             del r
             print('Downloaded image for "{}"'.format(model))
 
     @staticmethod
     def main():
         arg_parser = argparse.ArgumentParser()
-        arg_parser.add_argument('--json_path', type=str, default=os.path.join('headphonecom', 'headphonecom_40.json'),
+        arg_parser.add_argument('--json_path', type=str, default=os.path.join('innerfidelity', 'links', 'On-Ear All.json'),
                                 help='Path to JSON file.')
-        arg_parser.add_argument('--dir_path', type=str, default=os.path.join('headphonecom', 'images_40'),
+        arg_parser.add_argument('--dir_path', type=str, default=os.path.join('innerfidelity', 'pdf'),
                                 help='Path to output directory.')
         cli_args = arg_parser.parse_args()
 

@@ -9,6 +9,7 @@ import colorsys
 from frequency_response import FrequencyResponse
 from operator import itemgetter
 from itertools import groupby
+import warnings
 
 
 class ImageGraphParser:
@@ -25,12 +26,15 @@ class ImageGraphParser:
         Returns:
             - **data:** Graph data for parsed images
         """
-        file_paths = [os.path.abspath(file_path) for file_path in glob(os.path.join(dir_path, '*'))]
+        file_paths = [os.path.abspath(file_path) for file_path in glob(os.path.join(dir_path, '*.png'))]
 
         for file_path in file_paths:
-            with open(file_path, 'rb') as f:
-                model = os.path.split(file_path)[-1].split('.')[0]
-                self.images[model] = Image.open(file_path)
+            try:
+                with open(file_path, 'rb') as f:
+                    model = os.path.split(file_path)[-1].split('.')[0]
+                    self.images[model] = Image.open(file_path)
+            except:
+                warnings.warn('Failed to read image in path "{}"'.format(file_path))
 
     def parse_images(self, source, models=None, inspection_dir=None):
         """Parses all read images."""
@@ -52,8 +56,9 @@ class ImageGraphParser:
                     if inspection_dir is not None:
                         inspection.save(os.path.join(inspection_dir, model+'.png'))
             except Exception as err:
-                # warnings.warn('Image for "{model}" parsing failed: "{err}"'.format(model=model, err=err))
-                raise err
+                warnings.warn('Image for "{model}" parsing failed: "{err}"'.format(model=model, err=err))
+                continue
+                #raise err
             print('Parsed image for "{}"'.format(model))
 
     @staticmethod
@@ -176,6 +181,8 @@ class ImageGraphParser:
 
         # Check crop
         _im = im.crop((20, 20, im.size[0] - 20, im.size[1] - 20))
+        #_im.show()
+        #print(ImageGraphParser._find_lines(_im, 'horizontal'))
         n_h = len(ImageGraphParser._find_lines(_im, 'horizontal'))
         n_v = len(ImageGraphParser._find_lines(_im, 'vertical'))
         if n_v != 28:
