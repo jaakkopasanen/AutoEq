@@ -108,8 +108,9 @@ class FrequencyResponse:
                 eq.append(self.equalization[i])
         with open(file_path, 'w') as f:
             s = '; '.join(['{f} {a:.1f}'.format(f=round(f), a=a) for f, a in zip(freq, eq)])
-            s = '# GraphicEQ: 10 -84; ' + s
+            s = 'GraphicEQ: ' + s
             f.write(s)
+        return s
 
     @staticmethod
     def generate_frequencies(f_min=10, f_max=30000, step=1.01):
@@ -380,10 +381,22 @@ class FrequencyResponse:
     def main():
         arg_parser = argparse.ArgumentParser()
         arg_parser.add_argument('--dir_path', type=str, default=os.path.join('innerfidelity', 'data'),
-                                help='Path to data directory.')
+                                help='Path to data directory. Will look for *ORIG.csv files in the data directory and '
+                                     'recursviely in sub-directories. Outputs are produced in the same directory as '
+                                     'where the ORIG.csv file was found. Compilation EqAPO file will be produced in'
+                                     'directory root.')
         arg_parser.add_argument('--calibration', type=str,
                                 default=os.path.join('innerfidelity', 'transformation.csv'),
                                 help='File path to CSV containing calibration curve.')
+        arg_parser.add_argument('--bass_target', type=float, default=4,
+                                help='Target gain for sub-bass. Defaults to +6dB as per Harman on-ear 2017 target '
+                                     'response.')
+        arg_parser.add_argument('--max_gain', type=float, default=6,
+                                help='Maximum gain in equalization. Higher max gain allows to equalize deeper dips in '
+                                     'frequency response but will limit output volume if no analog gain is available.')
+        arg_parser.add_argument('--show_plot', action='store_true', default=False,
+                                help='Show plots? Requires the user to close each plot before next file can be '
+                                     'processed.')
         cli_args = arg_parser.parse_args()
 
         calibration = None
@@ -393,27 +406,29 @@ class FrequencyResponse:
 
         dir_path = os.path.abspath(cli_args.dir_path)
         t = time()
+        eq_apo_str = ''
         for directory in glob(os.path.join(dir_path, '*')):
             for file_path in glob(os.path.join(directory, '*ORIG.csv')):
-                for max_gain in [12]:
-                    for bass_target in [4]:
-                        fr = FrequencyResponse.read_from_csv(file_path)
-                        s = ' (Max +{g}db, Bass +{b}dB)'.format(g=max_gain, b=bass_target)
-                        fp = file_path.replace(' ORIG', s)
-                        fr.name = fr.name.replace(' ORIG', s)
-                        fr.interpolate()
-                        if calibration is not None:
-                            fr.calibrate(calibration)
-                        fr.center()
-                        fr.smooth(window_size=1/5, iterations=10, treble_window_size=1/2, treble_iterations=100)
-                        fr.equalize(max_gain=max_gain, smooth=True, window_size=1/5, bass_target=bass_target)
-                        fig, ax = fr.plot_graph(show=True, file_path=fp.replace('.csv', '.png'))
-                        plt.close(fig)
-                        fr.write_to_csv(fp)
-                        fr.write_equalization_equalizerapo_graphic_eq(fp.replace('.csv', '.txt'))
-                        print('Equalized "{}"'.format(fr.name))
-                        fp = fp.replace('.csv', '.png')
-                        shutil.copyfile(fp, os.path.join('inspect', os.path.split(fp)[-1]))
+                fr = FrequencyResponse.read_from_csv(file_path)
+                fp = file_path.replace(' ORIG', '')
+                fr.name = fr.name.replace(' ORIG', '')
+                fr.interpolate()
+                if calibration is not None:
+                    fr.calibrate(calibration)
+                fr.center()
+                fr.smooth(window_size=1/5, iterations=10, treble_window_size=1/2, treble_iterations=100)
+                fr.equalize(max_gain=cli_args.max_gain, smooth=True, window_size=1/5, bass_target=cli_args.bass_target)
+                fig, ax = fr.plot_graph(show=cli_args.show_plot, file_path=fp.replace('.csv', '.png'))
+                plt.close(fig)
+                fr.write_to_csv(fp)
+                _eq_apo_str = fr.write_equalization_equalizerapo_graphic_eq(fp.replace('.csv', ' EqAPO.txt'))
+                print('Equalized "{}"'.format(fr.name))
+                fp = fp.replace('.csv', '.png')
+                shutil.copyfile(fp, os.path.join('inspect', os.path.split(fp)[-1]))
+                eq_apo_str += '# ' + fr.name + '\n'
+                eq_apo_str += '#' + _eq_apo_str + '\n'
+        with open(os.path.join(dir_path, 'EqApo.txt'), 'w') as f:
+            f.write(eq_apo_str)
         print('Equalized all in {:.2f}s'.format(time()-t))
 
 
