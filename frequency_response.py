@@ -391,7 +391,7 @@ class FrequencyResponse:
         arg_parser.add_argument('--bass_target', type=float, default=4,
                                 help='Target gain for sub-bass. Defaults to +6dB as per Harman on-ear 2017 target '
                                      'response.')
-        arg_parser.add_argument('--max_gain', type=float, default=6,
+        arg_parser.add_argument('--max_gain', type=float, default=12,
                                 help='Maximum gain in equalization. Higher max gain allows to equalize deeper dips in '
                                      'frequency response but will limit output volume if no analog gain is available.')
         arg_parser.add_argument('--show_plot', action='store_true', default=False,
@@ -426,8 +426,9 @@ class FrequencyResponse:
                 fp = fp.replace('.csv', '.png')
                 shutil.copyfile(fp, os.path.join('inspect', os.path.split(fp)[-1]))
                 eq_apo_str += '# ' + fr.name + '\n'
-                eq_apo_str += '#' + _eq_apo_str + '\n'
-        with open(os.path.join(dir_path, 'EqApo.txt'), 'w') as f:
+                eq_apo_str += '#' + _eq_apo_str + '\n\n'
+        file_name = 'EqApo Bass +{b}dB, Max +{m}dB.txt'.format(b=cli_args.bass_target, m=cli_args.max_gain)
+        with open(os.path.join(dir_path, file_name), 'w') as f:
             f.write(eq_apo_str)
         print('Equalized all in {:.2f}s'.format(time()-t))
 
