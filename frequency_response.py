@@ -182,8 +182,8 @@ class FrequencyResponse:
                iterations=1,
                treble_window_size=None,
                treble_iterations=None,
-               f_lower=6000,
-               f_upper=10000):
+               treble_f_lower=6000,
+               treble_f_upper=10000):
         """Smooths data.
 
         Args:
@@ -191,16 +191,16 @@ class FrequencyResponse:
             iterations: Number of iterations to run the filter. Each new iteration is using output of previous one.
             treble_window_size: Filter window size for high frequencies.
             treble_iterations: Number of iterations for treble filter.
-            f_lower: Lower boundary of transition frequency region. In the transition region normal filter is \
+            treble_f_lower: Lower boundary of transition frequency region. In the transition region normal filter is \
                         switched to treble filter with sigmoid weighting function.
-            f_upper: Upper boundary of transition frequency reqion. In the transition region normal filter is \
+            treble_f_upper: Upper boundary of transition frequency reqion. In the transition region normal filter is \
                         switched to treble filter with sigmoid weighting function.
         """
         if None in self.frequency or None in self.raw or None in self.equalization or None in self.equalized_raw:
             # Must not contain None values
             raise ValueError('None values present, cannot smoothen!')
 
-        if f_upper <= f_lower:
+        if treble_f_upper <= treble_f_lower:
             raise ValueError('Upper transition boundary must be greater than lower boundary')
 
         # Use normal filter parameters for treble filter if treble filter parameters are not given
@@ -220,7 +220,7 @@ class FrequencyResponse:
             y_treble = savgol_filter(y_treble, self._window_size(treble_window_size), 2)
 
         # Transition weighted with sigmoid
-        k_treble = self._sigmoid(f_lower, f_upper)
+        k_treble = self._sigmoid(treble_f_lower, treble_f_upper)
         k_normal = k_treble * -1 + 1
         self.smoothed = y_normal * k_normal + y_treble * k_treble
 
@@ -248,7 +248,7 @@ class FrequencyResponse:
         interpolator = InterpolatedUnivariateSpline(np.log10(f_bm), a_bm, k=3)
         return interpolator(np.log10(self.frequency))
 
-    def equalize(self, max_gain=12, smooth=True, window_size=1/3, bass_target=4):
+    def equalize(self, max_gain=12, smooth=True, window_size=1/3, bass_target=4, treble_f_lower=6000, treble_f_upper=10000):
         """Creates equalization curve and equalized curve.
 
         Args:
@@ -273,10 +273,10 @@ class FrequencyResponse:
         previous_clipped = False
         kink_inds = []
         self.target = self._target(bass_boost=bass_target)
-        k = self._sigmoid(6000, 10000) * -1 + 1  # Limit equalization power in high frequencies
+        k = self._sigmoid(treble_f_lower, treble_f_upper) * -1 + 1  # Limit equalization power in high frequencies
         for i, a in enumerate(data):
             gain = self.target[i] - a
-            #gain *= k[i]  # TODO: Restore?
+            gain *= k[i]  # TODO: Restore?
             clipped = gain > max_gain
             if previous_clipped != clipped:
                 kink_inds.append(i)
@@ -394,6 +394,12 @@ class FrequencyResponse:
         arg_parser.add_argument('--max_gain', type=float, default=12,
                                 help='Maximum gain in equalization. Higher max gain allows to equalize deeper dips in '
                                      'frequency response but will limit output volume if no analog gain is available.')
+        arg_parser.add_argument('--treble_f_lower', type=float, default=5000,
+                                help='Lower bound for transition region between normal and treble frequencies. Treble '
+                                     'frequencies are smoothed heavier and have lower max gain.')
+        arg_parser.add_argument('--treble_f_upper', type=float, default=9000,
+                                help='Upper bound for transition region between normal and treble frequencies. Treble '
+                                     'frequencies are smoothed heavier and have lower max gain.')
         arg_parser.add_argument('--show_plot', action='store_true', default=False,
                                 help='Show plots? Requires the user to close each plot before next file can be '
                                      'processed.')
@@ -416,8 +422,22 @@ class FrequencyResponse:
                 if calibration is not None:
                     fr.calibrate(calibration)
                 fr.center()
-                fr.smooth(window_size=1/5, iterations=10, treble_window_size=1/2, treble_iterations=100)
-                fr.equalize(max_gain=cli_args.max_gain, smooth=True, window_size=1/5, bass_target=cli_args.bass_target)
+                fr.smooth(
+                    window_size=1/5,
+                    iterations=10,
+                    treble_window_size=1/2,
+                    treble_iterations=100,
+                    treble_f_lower=cli_args.treble_f_lower,
+                    treble_f_upper=cli_args.treble_f_upper
+                )
+                fr.equalize(
+                    max_gain=cli_args.max_gain,
+                    smooth=True,
+                    window_size=1/5,
+                    bass_target=cli_args.bass_target,
+                    treble_f_lower=cli_args.treble_f_lower,
+                    treble_f_upper=cli_args.treble_f_upper
+                )
                 fig, ax = fr.plot_graph(show=cli_args.show_plot, file_path=fp.replace('.csv', '.png'))
                 plt.close(fig)
                 fr.write_to_csv(fp)
