@@ -53,6 +53,21 @@ class FrequencyResponse:
         self.rounded_frequencies = np.array([])
         self.rounded_equalization = np.array([])
 
+        self._sort()
+
+    def _sort(self):
+        sorted_inds = self.frequency.argsort()
+        self.frequency = self.frequency[sorted_inds]
+        self.raw = self.raw[sorted_inds]
+        if len(self.smoothed):
+            self.smoothed = self.smoothed[sorted_inds]
+        if len(self.equalization):
+            self.equalization = self.equalization[sorted_inds]
+        if len(self.equalized_raw):
+            self.equalized_raw = self.equalized_raw[sorted_inds]
+        if len(self.equalized_smoothed):
+            self.equalized_smoothed = self.equalized_smoothed[sorted_inds]
+
     @classmethod
     def read_from_csv(cls, file_path):
         """Reads data from CSV file and constructs class instance."""
@@ -329,8 +344,8 @@ class FrequencyResponse:
                    file_path=None,
                    f_min=10,
                    f_max=30000,
-                   a_min=-40,
-                   a_max=40):
+                   a_min=None,
+                   a_max=None):
         """Plots frequency response graph."""
         if fig is None:
             fig, ax = plt.subplots()
