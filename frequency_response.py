@@ -125,15 +125,13 @@ class FrequencyResponse:
     def write_eqapo_graphic_eq(self, file_path):
         """Writes equalization graph to a file as Equalizer APO config."""
         file_path = os.path.abspath(file_path)
-        freq = []
-        eq = []
-        for i, x in enumerate(self.frequency):
-            if 20 <= x <= 20000:
-                freq.append(x)
-                eq.append(self.equalization[i])
+
+        fr = FrequencyResponse(name='hack', frequency=self.frequency, raw=self.equalization)
+        fr.interpolate(f_min=20, f_max=20000, f_step=1.07)
+
         with open(file_path, 'w') as f:
-            s = '; '.join(['{f} {a:.1f}'.format(f=round(f), a=a) for f, a in zip(freq, eq)])
-            s = 'GraphicEQ: ' + s
+            s = '; '.join(['{f} {a:.1f}'.format(f=f, a=a) for f, a in zip(fr.frequency, fr.raw)])
+            s = 'GraphicEQ: 10 -84; ' + s
             f.write(s)
         return s
 
