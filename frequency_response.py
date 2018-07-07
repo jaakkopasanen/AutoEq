@@ -26,7 +26,7 @@ class FrequencyResponse:
                  equalized_smoothed=None):
         self.name = name.strip()
 
-        self.frequency = frequency if frequency is not None else []
+        self.frequency = frequency if frequency is not None else self.generate_frequencies()
         self.frequency = [None if x is None or math.isnan(x) else x for x in self.frequency]
         self.frequency = np.array(self.frequency)
 
@@ -58,7 +58,8 @@ class FrequencyResponse:
     def _sort(self):
         sorted_inds = self.frequency.argsort()
         self.frequency = self.frequency[sorted_inds]
-        self.raw = self.raw[sorted_inds]
+        if len(self.raw):
+            self.raw = self.raw[sorted_inds]
         if len(self.smoothed):
             self.smoothed = self.smoothed[sorted_inds]
         if len(self.equalization):
@@ -112,7 +113,7 @@ class FrequencyResponse:
 
         df.to_csv(file_path, header=True, index=False)
 
-    def write_equalization_equalizerapo_graphic_eq(self, file_path):
+    def write_eqapo_graphic_eq(self, file_path):
         """Writes equalization graph to a file as Equalizer APO config."""
         file_path = os.path.abspath(file_path)
         freq = []
@@ -186,11 +187,13 @@ class FrequencyResponse:
             window_size += 1
         return window_size
 
-    def _sigmoid(self, f_lower, f_upper):
+    def _sigmoid(self, f_lower, f_upper, g_normal=0, g_treble=1):
         f_center = np.sqrt(f_upper / f_lower) * f_lower
         half_range = np.log10(f_upper) - np.log10(f_center)
         f_center = np.log10(f_center)
-        return expit((np.log10(self.frequency) - f_center) / (half_range / 4))
+        g = expit((np.log10(self.frequency) - f_center) / (half_range / 4))
+        g = g * -(g_normal - g_treble) + g_normal
+        return g
 
     def smooth(self,
                window_size=1/5,
@@ -263,14 +266,24 @@ class FrequencyResponse:
         interpolator = InterpolatedUnivariateSpline(np.log10(f_bm), a_bm, k=3)
         return interpolator(np.log10(self.frequency))
 
-    def equalize(self, max_gain=12, smooth=True, window_size=1/3, bass_target=4, treble_f_lower=6000, treble_f_upper=10000):
+    def equalize(self,
+                 max_gain=12,
+                 smooth=True,
+                 window_size=1/3,
+                 bass_target=4,
+                 treble_f_lower=6000,
+                 treble_f_upper=10000,
+                 treble_max_gain=0):
         """Creates equalization curve and equalized curve.
 
         Args:
-            max_gain: Maximum gain in dB
+            max_gain: Maximum positive gain in dB
             smooth: Smooth kinks caused by clipping gain to max gain?
             window_size: Smoothing average window size in octaves
             bass_target: Target value in dB for bass boost
+            treble_f_lower: Lower frequency boundary for transition region between normal parameters and treble parameters
+            treble_f_upper: Upper frequency boundary for transition reqion between normal parameters and treble parameters
+            treble_max_gain: Maximum positive gain in dB in treble region
         """
         self.equalization = []
         self.equalized_raw = []
@@ -281,23 +294,23 @@ class FrequencyResponse:
             # Must not contain None values
             self.interpolate()
 
-        if smooth:
-            max_gain *= 0.9
+        #if smooth:
+        #    max_gain *= 0.9
 
         # Invert with max gain clipping
         previous_clipped = False
         kink_inds = []
         self.target = self._target(bass_boost=bass_target)
-        k = self._sigmoid(treble_f_lower, treble_f_upper) * -1 + 1  # Limit equalization power in high frequencies
+        # Max gain at each frequency
+        max_gain = self._sigmoid(treble_f_lower, treble_f_upper, g_normal=max_gain, g_treble=treble_max_gain)
         for i, a in enumerate(data):
             gain = self.target[i] - a
-            gain *= k[i]  # TODO: Restore?
-            clipped = gain > max_gain
+            clipped = gain > max_gain[i]
             if previous_clipped != clipped:
                 kink_inds.append(i)
             previous_clipped = clipped
             if clipped:
-                gain = max_gain
+                gain = max_gain[i]
             self.equalization.append(gain)
 
         if len(kink_inds) and kink_inds[0] == 0:
@@ -393,13 +406,15 @@ class FrequencyResponse:
         return fig, ax
 
     @staticmethod
-    def main():
+    def cli_args():
+        """Parses command line arguments."""
         arg_parser = argparse.ArgumentParser()
-        arg_parser.add_argument('--dir_path', type=str, default=os.path.join('innerfidelity', 'data'),
-                                help='Path to data directory. Will look for *ORIG.csv files in the data directory and '
-                                     'recursviely in sub-directories. Outputs are produced in the same directory as '
-                                     'where the ORIG.csv file was found. Compilation EqAPO file will be produced in'
-                                     'directory root.')
+        arg_parser.add_argument('--input_dir', type=str, default=os.path.abspath('data'),
+                                help='Path to data directory. Will look for csv files in the data directory and '
+                                     'recursively in sub-directories.')
+        arg_parser.add_argument('--output_dir', type=str, default=os.path.abspath('results'),
+                                help='Path to results directory. Will keep the same relative paths for files found'
+                                     'in input_dir. Compilation results are produced in directory root.')
         arg_parser.add_argument('--calibration', type=str,
                                 default=os.path.join('innerfidelity', 'transformation.csv'),
                                 help='File path to CSV containing calibration curve.')
@@ -415,58 +430,98 @@ class FrequencyResponse:
         arg_parser.add_argument('--treble_f_upper', type=float, default=9000,
                                 help='Upper bound for transition region between normal and treble frequencies. Treble '
                                      'frequencies are smoothed heavier and have lower max gain.')
+        arg_parser.add_argument('--treble_max_gain', type=float, default=0,
+                                help='Maximum gain in equalization in treble region.')
         arg_parser.add_argument('--show_plot', action='store_true', default=False,
                                 help='Show plots? Requires the user to close each plot before next file can be '
                                      'processed.')
-        cli_args = arg_parser.parse_args()
+        return vars(arg_parser.parse_args())
 
-        calibration = None
-        if cli_args.calibration:
-            file_path = os.path.abspath(cli_args.calibration)
+    @staticmethod
+    def main(input_dir=None,
+             output_dir=None,
+             calibration=None,
+             bass_target=4,
+             max_gain=6,
+             treble_f_lower=3000,
+             treble_f_upper=8000,
+             treble_max_gain=0,
+             show_plot=False):
+        """Parses files in input directory and produces equalization results in output directory."""
+        if calibration:
+            # Creates FrequencyReponse for calibration data
+            file_path = os.path.abspath(calibration)
             calibration = FrequencyResponse.read_from_csv(file_path)
 
-        dir_path = os.path.abspath(cli_args.dir_path)
+        # Dir paths to absolute
+        input_dir = os.path.abspath(input_dir)
+        output_dir = os.path.abspath(output_dir)
+
         t = time()
-        eq_apo_str = ''
-        for directory in glob(os.path.join(dir_path, '*')):
-            for file_path in glob(os.path.join(directory, '*ORIG.csv')):
-                fr = FrequencyResponse.read_from_csv(file_path)
-                fp = file_path.replace(' ORIG', '')
-                fr.name = fr.name.replace(' ORIG', '')
-                fr.interpolate()
-                if calibration is not None:
-                    fr.calibrate(calibration)
-                fr.center()
-                fr.smooth(
-                    window_size=1/5,
-                    iterations=10,
-                    treble_window_size=1/2,
-                    treble_iterations=100,
-                    treble_f_lower=cli_args.treble_f_lower,
-                    treble_f_upper=cli_args.treble_f_upper
-                )
-                fr.equalize(
-                    max_gain=cli_args.max_gain,
-                    smooth=True,
-                    window_size=1/5,
-                    bass_target=cli_args.bass_target,
-                    treble_f_lower=cli_args.treble_f_lower,
-                    treble_f_upper=cli_args.treble_f_upper
-                )
-                fig, ax = fr.plot_graph(show=cli_args.show_plot, file_path=fp.replace('.csv', '.png'))
-                plt.close(fig)
-                fr.write_to_csv(fp)
-                _eq_apo_str = fr.write_equalization_equalizerapo_graphic_eq(fp.replace('.csv', ' EqAPO.txt'))
-                print('Equalized "{}"'.format(fr.name))
-                fp = fp.replace('.csv', '.png')
-                shutil.copyfile(fp, os.path.join('inspect', os.path.split(fp)[-1]))
-                eq_apo_str += '# ' + fr.name + '\n'
-                eq_apo_str += '#' + _eq_apo_str + '\n\n'
-        file_name = 'EqApo Bass +{b}dB, Max +{m}dB.txt'.format(b=cli_args.bass_target, m=cli_args.max_gain)
-        with open(os.path.join(dir_path, file_name), 'w') as f:
+        eq_apo_str = ''  # Compilation EqualizerAPO string
+        for file_path in glob(os.path.join(input_dir, '**', '*.csv'), recursive=True):
+            # Read data from input file
+            fr = FrequencyResponse.read_from_csv(file_path)
+
+            # Copy relative path to output directory
+            relative_path = os.path.relpath(file_path, input_dir)
+            print(relative_path)
+            file_path = os.path.join(output_dir, relative_path)
+            print(file_path)
+            dir_path = os.path.dirname(file_path)
+            if not os.path.isdir(dir_path):
+                os.makedirs(dir_path, exist_ok=True)
+
+            # Interpolate to standard frequency vector
+            fr.interpolate()
+
+            if calibration is not None:
+                # Calibrate
+                fr.calibrate(calibration)
+
+            # Center by 1kHz
+            fr.center()
+
+            # Smooth data
+            fr.smooth(
+                window_size=1/5,
+                iterations=10,
+                treble_window_size=1/2,
+                treble_iterations=100,
+                treble_f_lower=treble_f_lower,
+                treble_f_upper=treble_f_upper
+            )
+
+            # Equalize
+            fr.equalize(
+                max_gain=max_gain,
+                smooth=True,
+                window_size=1/5,
+                bass_target=bass_target,
+                treble_f_lower=treble_f_lower,
+                treble_f_upper=treble_f_upper,
+                treble_max_gain=treble_max_gain
+            )
+
+            # Write results to CSV file
+            fr.write_to_csv(file_path)
+            # Write plots to file and optionally display them
+            fig, ax = fr.plot_graph(show=show_plot, file_path=file_path.replace('.csv', '.png'))
+            plt.close(fig)
+            # Write EqualizerAPO settings to file
+            _eq_apo_str = fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' EqAPO.txt'))
+            print('Equalized "{}"'.format(fr.name))
+
+            # Add to compilation EqAPO string
+            eq_apo_str += '# ' + fr.name + '\n'
+            eq_apo_str += '#' + _eq_apo_str + '\n\n'
+
+        # Write compilation EqAPO to file
+        file_name = 'EqApo Bass +{b}dB, Max +{m}dB.txt'.format(b=bass_target, m=max_gain)
+        with open(os.path.join(output_dir, file_name), 'w') as f:
             f.write(eq_apo_str)
         print('Equalized all in {:.2f}s'.format(time()-t))
 
 
 if __name__ == '__main__':
-    FrequencyResponse.main()
+    FrequencyResponse.main(**FrequencyResponse.cli_args())
