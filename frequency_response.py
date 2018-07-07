@@ -20,7 +20,7 @@ class FrequencyResponse:
                  name=None,
                  frequency=None,
                  raw=None,
-                 calibrated=None,
+                 error=None,
                  smoothed=None,
                  equalization=None,
                  equalized_raw=None,
@@ -35,9 +35,9 @@ class FrequencyResponse:
         self.raw = [None if x is None or math.isnan(x) or x is None else x for x in self.raw]
         self.raw = np.array(self.raw)
 
-        self.calibrated = calibrated if calibrated is not None else []
-        self.calibrated = [None if x is None or math.isnan(x) or x is None else x for x in self.calibrated]
-        self.calibrated = np.array(self.calibrated)
+        self.error = error if error is not None else []
+        self.error = [None if x is None or math.isnan(x) or x is None else x for x in self.error]
+        self.error = np.array(self.error)
 
         self.smoothed = smoothed if smoothed is not None else []
         self.smoothed = np.array(self.smoothed)
@@ -65,8 +65,8 @@ class FrequencyResponse:
         self.frequency = self.frequency[sorted_inds]
         if len(self.raw):
             self.raw = self.raw[sorted_inds]
-        if len(self.calibrated):
-            self.calibrated = self.calibrated[sorted_inds]
+        if len(self.error):
+            self.error = self.error[sorted_inds]
         if len(self.smoothed):
             self.smoothed = self.smoothed[sorted_inds]
         if len(self.equalization):
@@ -85,7 +85,7 @@ class FrequencyResponse:
         df = pd.read_csv(file_path, sep=',', header=0)
         frequency = list(df['frequency']) if 'frequency' in df else None
         raw = list(df['raw']) if 'raw' in df else None
-        calibrated = list(df['calibrated']) if 'calibrated' in df else None
+        error = list(df['error']) if 'error' in df else None
         smoothed = list(df['smoothed']) if 'smoothed' in df else None
         equalization = list(df['equalization']) if 'equalization' in df else None
         equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
@@ -95,7 +95,7 @@ class FrequencyResponse:
             name=name,
             frequency=frequency,
             raw=raw,
-            calibrated=calibrated,
+            error=error,
             smoothed=smoothed,
             equalization=equalization,
             equalized_raw=equalized_raw,
@@ -110,8 +110,8 @@ class FrequencyResponse:
             df['frequency'] = self.frequency
         if len(self.raw):
             df['raw'] = [x if x is not None else 'NaN' for x in self.raw]
-        if len(self.calibrated):
-            df['calibrated'] = [x if x is not None else 'NaN' for x in self.calibrated]
+        if len(self.error):
+            df['error'] = [x if x is not None else 'NaN' for x in self.error]
         if len(self.smoothed):
             df['smoothed'] = [x if x is not None else 'NaN' for x in self.smoothed]
         if len(self.equalization):
@@ -174,7 +174,7 @@ class FrequencyResponse:
         interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=1)
         diff = interpolator(np.log10(1000))
         self.raw -= diff
-        self.calibrated -= diff
+        self.error -= diff
         self.smoothed -= diff
         self.equalization -= diff
         self.equalized_raw -= diff
@@ -236,8 +236,8 @@ class FrequencyResponse:
         if treble_iterations is None:
             treble_iterations = iterations
 
-        # Use calibrated data if available
-        data = self.calibrated if len(self.calibrated) else self.raw
+        # Use error data if available
+        data = self.error if len(self.error) else self.raw
 
         if None in self.frequency or None in data:
             # Must not contain None values
@@ -260,15 +260,15 @@ class FrequencyResponse:
 
     def calibrate(self, calibration):
         """Calibrates raw frequency response data with calibration array."""
-        calibrated_new = self.raw - calibration.raw
-        if len(self.calibrated):
-            # Already calibrated, calculate difference between new and old calibration
-            diff = calibrated_new - self.calibrated
+        error_new = self.raw - calibration.raw
+        if len(self.error):
+            # Already error, calculate difference between new and old calibration
+            diff = error_new - self.error
             self.smoothed -= diff
             self.equalization -= diff
             self.equalized_raw -= diff
             self.equalized_smoothed -= diff
-        self.calibrated = calibrated_new
+        self.error = error_new
 
     def _target(self, bass_boost=4):
         """Creates target curve with bass boost as described by harman target response.
@@ -314,8 +314,8 @@ class FrequencyResponse:
 
         if len(self.smoothed):
             data = self.smoothed
-        elif len(self.calibrated):
-            data = self.calibrated
+        elif len(self.error):
+            data = self.error
         else:
             data = self.raw
 
@@ -375,14 +375,14 @@ class FrequencyResponse:
                    ax=None,
                    show=True,
                    raw=True,
-                   calibrated=True,
+                   error=True,
                    smoothed=True,
                    equalization=True,
                    equalized=True,
                    target=True,
                    file_path=None,
-                   f_min=10,
-                   f_max=30000,
+                   f_min=20,
+                   f_max=20000,
                    a_min=None,
                    a_max=None):
         """Plots frequency response graph."""
@@ -391,22 +391,21 @@ class FrequencyResponse:
         legend = []
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
-
-        # if rounded and len(self.rounded_frequencies):
-        #     plt.plot(self.rounded_frequencies, self.rounded_equalization, '.', color='r', linewidth=1)
-        #     legend.append('Rounded')
         if target and len(self.target):
             plt.plot(self.frequency, self.target, linewidth=2)
             legend.append('Target')
         if raw and len(self.raw):
             plt.plot(self.frequency, self.raw, linewidth=1)
             legend.append('Raw')
-        if calibrated and len(self.calibrated) and not (smoothed and len(self.smoothed)):
-            plt.plot(self.frequency, self.calibrated, linewidth=1)
-            legend.append('Calibrated')
+        if error and len(self.error) and not (smoothed and len(self.smoothed)):
+            plt.plot(self.frequency, self.error, linewidth=1)
+            legend.append('Error')
         if smoothed and len(self.smoothed):
             plt.plot(self.frequency, self.smoothed, linewidth=1)
-            legend.append('Calibrated and Smoothed')
+            if len(self.error):
+                legend.append('Error Smoothed')
+            else:
+                legend.append('Smoothed')
         if equalization and len(self.equalization):
             plt.plot(self.frequency, self.equalization, linewidth=1)
             legend.append('Equalization')
@@ -504,21 +503,23 @@ class FrequencyResponse:
             if not os.path.isdir(dir_path):
                 os.makedirs(dir_path, exist_ok=True)
 
-            # Interpolate to standard frequency vector
-            fr.interpolate()
 
             # Center by 1kHz
             fr.center()
 
             if calibration is not None:
                 # Calibrate
+                fr.interpolate(f=calibration.frequency)
                 fr.calibrate(calibration)
+            else:
+                # Interpolate to standard frequency vector
+                fr.interpolate()
 
             # Smooth data
             fr.smooth(
                 window_size=1/5,
                 iterations=10,
-                treble_window_size=1/2,
+                treble_window_size=1/5,
                 treble_iterations=100,
                 treble_f_lower=treble_f_lower,
                 treble_f_upper=treble_f_upper
