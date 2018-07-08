@@ -258,7 +258,7 @@ class FrequencyResponse:
         k_normal = k_treble * -1 + 1
         self.smoothed = y_normal * k_normal + y_treble * k_treble
 
-    def calibrate(self, calibration):
+    def compensate(self, calibration):
         """Calibrates raw frequency response data with calibration array."""
         error_new = self.raw - calibration.raw
         if len(self.error):
@@ -517,7 +517,7 @@ class FrequencyResponse:
             if calibration is not None:
                 # Calibrate
                 fr.interpolate(f=calibration.frequency)
-                fr.calibrate(calibration)
+                fr.compensate(calibration)
             else:
                 # Interpolate to standard frequency vector
                 fr.interpolate()
@@ -527,7 +527,7 @@ class FrequencyResponse:
 
             # Smooth data
             fr.smooth(
-                window_size=1/5,
+                window_size=1/7,
                 iterations=10,
                 treble_window_size=1/5,
                 treble_iterations=100,
