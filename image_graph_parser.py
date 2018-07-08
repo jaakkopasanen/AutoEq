@@ -281,23 +281,22 @@ class ImageGraphParser:
     @staticmethod
     def main():
         arg_parser = argparse.ArgumentParser()
-        arg_parser.add_argument('--in_dir_path', type=str, default=os.path.join('innerfidelity', 'images'),
-                                help='Path to directory containing images.')
-        arg_parser.add_argument('--out_dir_path', type=str, default=os.path.join('innerfidelity', 'data'),
+        arg_parser.add_argument('--input_dir', type=str, required=True, help='Path to directory containing images.')
+        arg_parser.add_argument('--output_dir', type=str, required=True,
                                 help='Path to output directory.')
-        arg_parser.add_argument('--insp_dir_path', type=str, default=os.path.join('innerfidelity', 'inspection'),
+        arg_parser.add_argument('--inspection_dir', type=str, required=True,
                                 help='Path to inspection directory.')
-        arg_parser.add_argument('--source', type=str, default='innerfidelity', help='Where did the image come from?')
+        arg_parser.add_argument('--source', type=str, default='headphonecom', help='Where did the image come from?')
         cli_args = arg_parser.parse_args()
 
         parser = ImageGraphParser()
-        parser.read_images(cli_args.in_dir_path)
-        parser.parse_images(cli_args.source, inspection_dir=cli_args.insp_dir_path)
+        parser.read_images(cli_args.input_dir)
+        parser.parse_images(cli_args.source, inspection_dir=cli_args.inspection_dir)
         for fr in parser.frequency_responses.values():
-            dir_path = os.path.join(os.path.abspath(cli_args.out_dir_path), fr.name)
+            dir_path = os.path.join(os.path.abspath(cli_args.output_dir), fr.name)
             if not os.path.exists(dir_path):
                 os.makedirs(dir_path, exist_ok=True)
-            fr.write_to_csv(os.path.join(dir_path, fr.name+' ORIG.csv'))
+            fr.write_to_csv(os.path.join(dir_path, fr.name+'.csv'))
             # fr.plot_graph(show=True)
 
 

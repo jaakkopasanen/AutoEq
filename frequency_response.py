@@ -536,7 +536,7 @@ class FrequencyResponse:
             )
 
             # Equalize
-            if (equalize):
+            if equalize:
                 fr.equalize(
                     max_gain=max_gain,
                     smooth=True,
@@ -555,8 +555,6 @@ class FrequencyResponse:
                 fig, ax = fr.plot_graph(
                     show=show_plot,
                     file_path=file_path.replace('.csv', '.png'),
-                    #equalization=False,
-                    #equalized=False
                 )
                 plt.close(fig)
 

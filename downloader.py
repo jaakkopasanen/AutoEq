@@ -39,9 +39,9 @@ class Downloader:
     @staticmethod
     def main():
         arg_parser = argparse.ArgumentParser()
-        arg_parser.add_argument('--json_path', type=str, default=os.path.join('innerfidelity', 'links', 'On-Ear All.json'),
+        arg_parser.add_argument('--json_path', type=str, default=os.path.join('headphonecom', 'links', 'raw.json'),
                                 help='Path to JSON file.')
-        arg_parser.add_argument('--dir_path', type=str, default=os.path.join('innerfidelity', 'pdf'),
+        arg_parser.add_argument('--dir_path', type=str, default=os.path.join('headphonecom', 'images', 'raw'),
                                 help='Path to output directory.')
         cli_args = arg_parser.parse_args()
 
