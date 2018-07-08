@@ -136,7 +136,7 @@ class FrequencyResponse:
         return s
 
     @staticmethod
-    def generate_frequencies(f_min=10, f_max=30000, f_step=1.01):
+    def generate_frequencies(f_min=20, f_max=20000, f_step=1.01):
         freq_new = []
         # Frequencies from 20kHz down
         f = np.min([20000, f_max])
@@ -151,7 +151,7 @@ class FrequencyResponse:
         freq_new = sorted(set(freq_new))  # Remove duplicates and sort ascending
         return np.array(freq_new)
 
-    def interpolate(self, f=None, f_step=1.01, pol_order=1, f_min=10, f_max=30000):
+    def interpolate(self, f=None, f_step=1.01, pol_order=1, f_min=20, f_max=20000):
         """Interpolates missing values from previous and next value."""
         # Remove None values
         i = 0
@@ -258,17 +258,30 @@ class FrequencyResponse:
         k_normal = k_treble * -1 + 1
         self.smoothed = y_normal * k_normal + y_treble * k_treble
 
-    def compensate(self, calibration):
-        """Calibrates raw frequency response data with calibration array."""
-        error_new = self.raw - calibration.raw
+    def compensate(self, compensation):
+        """Calibrates raw frequency response data with compensation array. Doesn't change raw data."""
+        error_new = self.raw - compensation.raw
         if len(self.error):
-            # Already error, calculate difference between new and old calibration
+            # Already error, calculate difference between new and old compensation
             diff = error_new - self.error
             self.smoothed -= diff
             self.equalization -= diff
             self.equalized_raw -= diff
             self.equalized_smoothed -= diff
         self.error = error_new
+
+    def calibrate(self, calibration):
+        """Calibrates measurement to match calibration. Changes raw data."""
+        error_new = self.raw - calibration.raw
+        if len(self.error):
+            # Already error, calculate difference between new and old compensation
+            diff = error_new - self.error
+            self.error = error_new
+            self.smoothed -= diff
+            self.equalization -= diff
+            self.equalized_raw -= diff
+            self.equalized_smoothed -= diff
+        self.raw -= calibration.raw
 
     def _target(self, bass_boost=4):
         """Creates target curve with bass boost as described by harman target response.
@@ -451,9 +464,10 @@ class FrequencyResponse:
         arg_parser.add_argument('--output_dir', type=str, default=os.path.abspath('results'),
                                 help='Path to results directory. Will keep the same relative paths for files found'
                                      'in input_dir. Compilation results are produced in directory root.')
-        arg_parser.add_argument('--calibration', type=str,
-                                default=os.path.join('innerfidelity', 'transformation.csv'),
+        arg_parser.add_argument('--calibration', type=str, required=False, default=argparse.SUPPRESS,
                                 help='File path to CSV containing calibration curve.')
+        arg_parser.add_argument('--compensation', type=str, required=False, default=argparse.SUPPRESS,
+                                help='File path to CSV containing compensation curve.')
         arg_parser.add_argument('--equalize', action='store_true', default=False,
                                 help='Run equalization?')
         arg_parser.add_argument('--bass_target', type=float, default=4,
@@ -482,6 +496,7 @@ class FrequencyResponse:
     def main(input_dir=None,
              output_dir=None,
              calibration=None,
+             compensation=None,
              equalize=False,
              bass_target=4,
              max_gain=6,
@@ -492,10 +507,18 @@ class FrequencyResponse:
              show_plot=False):
         """Parses files in input directory and produces equalization results in output directory."""
         if calibration:
-            # Creates FrequencyReponse for calibration data
+            # Creates FrequencyReponse for compensation data
             file_path = os.path.abspath(calibration)
             calibration = FrequencyResponse.read_from_csv(file_path)
             calibration.interpolate()
+            calibration.center()
+
+        if compensation:
+            # Creates FrequencyReponse for compensation data
+            file_path = os.path.abspath(compensation)
+            compensation = FrequencyResponse.read_from_csv(file_path)
+            compensation.interpolate()
+            compensation.center()
 
         # Dir paths to absolute
         input_dir = os.path.abspath(input_dir)
@@ -514,13 +537,16 @@ class FrequencyResponse:
             if not os.path.isdir(dir_path):
                 os.makedirs(dir_path, exist_ok=True)
 
+            # Interpolate to standard frequency vector
+            fr.interpolate()
+
             if calibration is not None:
                 # Calibrate
-                fr.interpolate(f=calibration.frequency)
-                fr.compensate(calibration)
-            else:
-                # Interpolate to standard frequency vector
-                fr.interpolate()
+                fr.calibrate(calibration)
+
+            if compensation is not None:
+                # Compensate
+                fr.compensate(compensation)
 
             # Center by 1kHz
             fr.center()

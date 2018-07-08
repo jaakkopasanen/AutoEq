@@ -38,7 +38,9 @@ def main():
     diffs = []
     # Calculate differences for all models
     if_compensation = FrequencyResponse.read_from_csv(os.path.join('innerfidelity', 'resources', 'innerfidelity_compensation.csv'))
+    if_compensation.interpolate()
     hp_compensation = FrequencyResponse.read_from_csv(os.path.join('headphonecom', 'resources', 'headphonecom_compensation.csv'))
+    hp_compensation.interpolate()
     for i in range(len(matching_if_files)):
         if_fr = FrequencyResponse.read_from_csv(matching_if_files[i])
         if_fr.interpolate()
@@ -48,8 +50,7 @@ def main():
         hp_fr.interpolate()
         hp_fr.center()
         hp_fr.compensate(hp_compensation)
-        #diff = FrequencyResponse(name=if_fr.name, frequency=if_fr.frequency, raw=hp_fr.raw - if_fr.raw)
-        diff = FrequencyResponse(name=if_fr.name, frequency=if_fr.frequency, raw=hp_fr.error - if_fr.error)
+        diff = FrequencyResponse(name=if_fr.name, frequency=if_fr.frequency, raw=if_fr.error - hp_fr.error)
         plt.plot(diff.frequency, diff.raw)
         diffs.append(diff.raw)
 
@@ -58,7 +59,7 @@ def main():
     diffs = np.vstack(diffs)
     diff = np.mean(diffs, axis=0)
     std = np.std(diffs, axis=0)
-    diff = FrequencyResponse(name='Headphone.com Calibration Function', frequency=f, raw=diff)
+    diff = FrequencyResponse(name='Headphone.com to Innerfidelity', frequency=f, raw=diff)
     diff.smooth(window_size=1 / 9, iterations=10)
     diff.raw = diff.smoothed
     diff.smoothed = np.array([])
@@ -70,7 +71,7 @@ def main():
     plt.ylim([-15, 15])
     plt.grid(which='major')
     plt.grid(which='minor')
-    plt.title('Headphone.com Calibration Function')
+    plt.title('Headphone.com to Innerfidelity')
     ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
     plt.show()
 
