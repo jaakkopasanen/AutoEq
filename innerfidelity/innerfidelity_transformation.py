@@ -7,8 +7,7 @@ individual differences."""
 
 import os
 from glob import glob
-from PIL import Image, ImageDraw
-import colorsys
+from PIL import Image
 from frequency_response import FrequencyResponse
 from image_graph_parser import ImageGraphParser
 import numpy as np
@@ -18,7 +17,8 @@ import matplotlib.ticker as ticker
 
 def main():
     models = dict()
-    for file_path in glob('innerfidelity\\transformation\\*'):
+    for file_path in glob(os.path.join('transformation', '*.jpg')):
+        print(file_path)
         file_path = os.path.abspath(file_path)
         file_name = os.path.split(file_path)[-1]
         file_name = file_name.split('.')[0]
@@ -30,19 +30,14 @@ def main():
             model = os.path.split(file_path)[-1].split('.')[0]
             im = Image.open(file_path)
 
-        px_top = 50  # Pixels from top to +30dB
-        px_bottom = 50  # Pixels from bottom to -30dB
-        px_left = 50  # Pixels from left to 10Hz
-        px_right = 20  # Pixels from right edge
-
         # Add -1px to left and top, +1px to right and bottom of tight crop box in parse_innerfidelity
-        fr, _ = ImageGraphParser.parse_innerfidelity(
+        fr = ImageGraphParser.parse_cropped(
             im,
-            model=model,
-            px_top=px_top,
-            px_bottom=px_bottom,
-            px_left=px_left,
-            px_right=px_right
+            name=model,
+            f_min=10,
+            f_max=20000,
+            a_min=-50,
+            a_max=20
         )
         fr.interpolate()
         models[name][kind] = fr
@@ -50,39 +45,38 @@ def main():
     diffs = []
     names = []
     for model, frs in models.items():
-        diffs.append(frs['after'].raw - frs['before'].raw)
+        diffs.append(frs['before'].raw - frs['after'].raw)
         names.append(model)
     diffs = np.vstack(diffs)
     diff = np.mean(diffs, axis=0)
     f = models[list(models.keys())[0]]['before'].frequency
-    diff = FrequencyResponse(name='Diff', frequency=f, raw=diff)
-    diff.smooth(window_size=1/5, iterations=100)
+    diff = FrequencyResponse(name='Innerfidelity Transformation', frequency=f, raw=diff)
+    diff.smooth(window_size=1/9, iterations=10)
+    diff.raw = diff.smoothed
+    diff.smoothed = np.array([])
 
     fig, ax = plt.subplots()
     legend = []
 
-    # for i, d in enumerate(diffs):
-    #     fr = FrequencyResponse(name=names[i], frequency=f, raw=d)
-    #     fr.smooth()
-    #     plt.plot(f, fr.raw)
-    #     legend.append(names[i])
-
-    plt.plot(f, diff.raw)
-    legend.append('Mean smoothed')
+    for i, d in enumerate(diffs):
+        fr = FrequencyResponse(name=names[i], frequency=f, raw=d)
+        plt.plot(f, fr.raw)
+        legend.append(names[i])
 
     plt.xlabel('Frequency (Hz)')
     plt.semilogx()
-    plt.xlim([10, 30000])
+    plt.xlim([10, 20000])
     plt.ylabel('Amplitude (dBr)')
-    plt.ylim([-5, 15])
+    plt.ylim([-15, 5])
     plt.legend(legend)
     plt.grid(which='major')
     plt.grid(which='minor')
     plt.title('Innerfidelity Transformation Function')
     ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
-    fig.savefig('innerfidelity\\transformation.png', dpi=240)
     plt.show()
-    diff.write_to_csv('innerfidelity\\transformation.csv')
+    diff.write_to_csv('innerfidelity_transformation.csv')
+
+    diff.plot_graph(f_min=10, f_max=20000, file_path='innerfidelity_transformation.png')
 
 
 if __name__ == '__main__':

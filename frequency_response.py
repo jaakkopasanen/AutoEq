@@ -200,7 +200,7 @@ class FrequencyResponse:
             window_size += 1
         return window_size
 
-    def _sigmoid(self, f_lower, f_upper, a_normal=0, a_treble=1):
+    def _sigmoid(self, f_lower, f_upper, a_normal=0.0, a_treble=1.0):
         f_center = np.sqrt(f_upper / f_lower) * f_lower
         half_range = np.log10(f_upper) - np.log10(f_center)
         f_center = np.log10(f_center)
@@ -297,7 +297,8 @@ class FrequencyResponse:
                  bass_target=4,
                  treble_f_lower=6000,
                  treble_f_upper=10000,
-                 treble_max_gain=0):
+                 treble_max_gain=0,
+                 treble_gain_k=1.0):
         """Creates equalization curve and equalized curve.
 
         Args:
@@ -308,6 +309,8 @@ class FrequencyResponse:
             treble_f_lower: Lower frequency boundary for transition region between normal parameters and treble parameters
             treble_f_upper: Upper frequency boundary for transition reqion between normal parameters and treble parameters
             treble_max_gain: Maximum positive gain in dB in treble region
+            treble_gain_k: Coefficient for treble gain, positive and negative. Useful for disbling or reducing \
+                           equalization power in treble region. Defaults to 1.0 (not limited).
         """
         self.equalization = []
         self.equalized_raw = []
@@ -329,8 +332,9 @@ class FrequencyResponse:
         self.target = self._target(bass_boost=bass_target)
         # Max gain at each frequency
         max_gain = self._sigmoid(treble_f_lower, treble_f_upper, a_normal=max_gain, a_treble=treble_max_gain)
+        gain_k = self._sigmoid(treble_f_lower, treble_f_upper, a_normal=1.0, a_treble=treble_gain_k)
         for i, a in enumerate(data):
-            gain = self.target[i] - a
+            gain = (self.target[i] - a) * gain_k[i]
             clipped = gain > max_gain[i]
             if previous_clipped != clipped:
                 kink_inds.append(i)
@@ -450,6 +454,8 @@ class FrequencyResponse:
         arg_parser.add_argument('--calibration', type=str,
                                 default=os.path.join('innerfidelity', 'transformation.csv'),
                                 help='File path to CSV containing calibration curve.')
+        arg_parser.add_argument('--equalize', action='store_true', default=False,
+                                help='Run equalization?')
         arg_parser.add_argument('--bass_target', type=float, default=4,
                                 help='Target gain for sub-bass. Defaults to +6dB as per Harman on-ear 2017 target '
                                      'response.')
@@ -464,6 +470,9 @@ class FrequencyResponse:
                                      'frequencies are smoothed heavier and have lower max gain.')
         arg_parser.add_argument('--treble_max_gain', type=float, default=0,
                                 help='Maximum gain in equalization in treble region.')
+        arg_parser.add_argument('--treble_gain_k', type=float, default=1.0,
+                                help='Coefficient for treble gain, positive and negative. Useful for disbling or'
+                                     'reducing equalization power in treble region. Defaults to 1.0 (not limited).')
         arg_parser.add_argument('--show_plot', action='store_true', default=False,
                                 help='Show plots? Requires the user to close each plot before next file can be '
                                      'processed.')
@@ -473,11 +482,13 @@ class FrequencyResponse:
     def main(input_dir=None,
              output_dir=None,
              calibration=None,
+             equalize=False,
              bass_target=4,
              max_gain=6,
              treble_f_lower=3000,
              treble_f_upper=8000,
              treble_max_gain=0,
+             treble_gain_k=1.0,
              show_plot=False):
         """Parses files in input directory and produces equalization results in output directory."""
         if calibration:
@@ -503,10 +514,6 @@ class FrequencyResponse:
             if not os.path.isdir(dir_path):
                 os.makedirs(dir_path, exist_ok=True)
 
-
-            # Center by 1kHz
-            fr.center()
-
             if calibration is not None:
                 # Calibrate
                 fr.interpolate(f=calibration.frequency)
@@ -514,6 +521,9 @@ class FrequencyResponse:
             else:
                 # Interpolate to standard frequency vector
                 fr.interpolate()
+
+            # Center by 1kHz
+            fr.center()
 
             # Smooth data
             fr.smooth(
@@ -526,39 +536,47 @@ class FrequencyResponse:
             )
 
             # Equalize
-            fr.equalize(
-                max_gain=max_gain,
-                smooth=True,
-                window_size=1/5,
-                bass_target=bass_target,
-                treble_f_lower=treble_f_lower,
-                treble_f_upper=treble_f_upper,
-                treble_max_gain=treble_max_gain
-            )
+            if (equalize):
+                fr.equalize(
+                    max_gain=max_gain,
+                    smooth=True,
+                    window_size=1/5,
+                    bass_target=bass_target,
+                    treble_f_lower=treble_f_lower,
+                    treble_f_upper=treble_f_upper,
+                    treble_max_gain=treble_max_gain,
+                    treble_gain_k=treble_gain_k
+                )
 
-            # Write results to CSV file
-            fr.write_to_csv(file_path)
-            # Write plots to file and optionally display them
-            fig, ax = fr.plot_graph(
-                show=show_plot,
-                file_path=file_path.replace('.csv', '.png'),
-                #equalization=False,
-                #equalized=False
-            )
-            plt.close(fig)
-            # Write EqualizerAPO settings to file
-            _eq_apo_str = fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' EqAPO.txt'))
-            print('Equalized "{}"'.format(fr.name))
+            if output_dir:
+                # Write results to CSV file
+                fr.write_to_csv(file_path)
+                # Write plots to file and optionally display them
+                fig, ax = fr.plot_graph(
+                    show=show_plot,
+                    file_path=file_path.replace('.csv', '.png'),
+                    #equalization=False,
+                    #equalized=False
+                )
+                plt.close(fig)
 
-            # Add to compilation EqAPO string
-            eq_apo_str += '# ' + fr.name + '\n'
-            eq_apo_str += '#' + _eq_apo_str + '\n\n'
+                if equalize:
+                    # Write EqualizerAPO settings to file
+                    _eq_apo_str = fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' EqAPO.txt'))
+                    print('Equalized "{}"'.format(fr.name))
+                    # Add to compilation EqAPO string
+                    eq_apo_str += '# ' + fr.name + '\n'
+                    eq_apo_str += '#' + _eq_apo_str + '\n\n'
+            elif show_plot:
+                fig, ax = fr.plot_graph(show=show_plot)
+                plt.close(fig)
 
-        # Write compilation EqAPO to file
-        file_name = 'EqApo Bass +{b}dB, Max +{m}dB.txt'.format(b=bass_target, m=max_gain)
-        with open(os.path.join(output_dir, file_name), 'w') as f:
-            f.write(eq_apo_str)
-        print('Equalized all in {:.2f}s'.format(time()-t))
+        if equalize:
+            # Write compilation EqAPO to file
+            file_name = 'EqApo Bass +{b}dB, Max +{m}dB.txt'.format(b=bass_target, m=max_gain)
+            with open(os.path.join(output_dir, file_name), 'w') as f:
+                f.write(eq_apo_str)
+            print('Equalized all in {:.2f}s'.format(time()-t))
 
 
 if __name__ == '__main__':

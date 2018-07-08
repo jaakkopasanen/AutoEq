@@ -227,6 +227,58 @@ class ImageGraphParser:
         return fr, _im
 
     @staticmethod
+    def parse_cropped(im, name='fr', f_min=20, f_max=20000, a_min=-20, a_max=20):
+        """Parses an image which has been cropped tightly to given boundaries. Image left boundary must be cropped
+        to f_min, right boundary to f_max, bottom boundary to a_min and top boundary to a_max. Only colored pixels will
+        be scanned.
+
+        Args:
+            im: Image
+            name: Name of the image / produced FrequencyResponse
+            f_min: Frequency at left boundary of the image
+            f_max: Frequency at right boundary of the image
+            a_min: Amplitude at bottom boundary of the image
+            a_max: Amplitude at top boundary of the image
+
+        Returns:
+            FrequencyResponse created from colored pixels in the image
+        """
+        # X axis (frequencies)
+        f_step = (f_max / f_min) ** (1 / im.size[0])
+        f = [f_min]
+        for _ in range(1, im.size[0]):
+            f.append(f[-1] * f_step)
+
+        # Y axis (amplitude)
+        a_res = (a_max - a_min) / im.size[1]  # dB / px
+
+        _im = im.copy()
+        pix = _im.load()
+        amplitude = []
+        for x in range(im.size[0]):
+            pxs = []  # Graph pixels
+            # Iterate each row (pixel in column)
+            for y in range(im.size[1]):
+                # Convert read RGB pixel values and convert to HSV
+                h, s, v = colorsys.rgb_to_hsv(*[v/255.0 for v in im.getpixel((x, y))])
+                # Graph pixels are colored
+                if s > 0.8:
+                    pxs.append(float(y))
+                else:
+                    p = im.getpixel((x, y))
+                    pix[x, y] = (int(0.9*p[0]), int(255*0.1+0.9*p[1]), int(0+0.9*p[2]))
+            if not pxs:
+                # No graph pixels found on this column
+                amplitude.append(None)
+            else:
+                # Mean of recorded pixels
+                v = np.mean(pxs)
+                # Convert to dB value
+                v = a_max - v * a_res
+                amplitude.append(v)
+        return FrequencyResponse(name=name, frequency=f, raw=amplitude)
+
+    @staticmethod
     def main():
         arg_parser = argparse.ArgumentParser()
         arg_parser.add_argument('--in_dir_path', type=str, default=os.path.join('innerfidelity', 'images'),
