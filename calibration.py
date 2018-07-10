@@ -37,7 +37,7 @@ def main():
     fig, ax = plt.subplots()
     diffs = []
     # Calculate differences for all models
-    if_compensation = FrequencyResponse.read_from_csv(os.path.join('innerfidelity', 'resources', 'innerfidelity_compensation.csv'))
+    if_compensation = FrequencyResponse.read_from_csv(os.path.join('innerfidelity', 'resources', 'innerfidelity_compensation_2017.csv'))
     if_compensation.interpolate()
     hp_compensation = FrequencyResponse.read_from_csv(os.path.join('headphonecom', 'resources', 'headphonecom_compensation.csv'))
     hp_compensation.interpolate()
@@ -50,9 +50,13 @@ def main():
         hp_fr.interpolate()
         hp_fr.center()
         hp_fr.compensate(hp_compensation)
-        diff = FrequencyResponse(name=if_fr.name, frequency=if_fr.frequency, raw=if_fr.error - hp_fr.error)
-        plt.plot(diff.frequency, diff.raw)
+        diff = FrequencyResponse(name=if_fr.name, frequency=if_fr.frequency, raw=hp_fr.error - if_fr.error)
+        fig, ax = hp_fr.plot_graph(show=False)
+        if_fr.plot_graph(fig=fig, ax=ax, show=True)
+        #diff.plot_graph()
+#        plt.plot(diff.frequency, diff.raw)
         diffs.append(diff.raw)
+    return
 
     # Average and smooth difference
     f = FrequencyResponse.generate_frequencies()
@@ -81,7 +85,14 @@ def main():
     fig.savefig(os.path.join('calibration', 'headphonecom_to_innerfidelity.png'), dpi=240)
     plt.show()
     diff.write_to_csv(os.path.join('calibration', 'headphonecom_to_innerfidelity.csv'))
+
     diff.raw *= -1
+    diff.name = 'Innerfidelity to Headphone.com'
+    fig, ax = diff.plot_graph(f_min=10, f_max=20000, show=False)
+    ax.fill_between(diff.frequency, diff.raw + std, diff.raw - std, facecolor='lightblue')
+    plt.legend(['Innerfidelity to Headphone.com', 'Standard Deviation'])
+    fig.savefig(os.path.join('calibration', 'innerfidelity_to_headphonecom.png'), dpi=240)
+    plt.show()
     diff.write_to_csv(os.path.join('calibration', 'innerfidelity_to_headphonecom.csv'))
 
 
