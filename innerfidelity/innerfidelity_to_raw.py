@@ -16,7 +16,7 @@ from frequency_response import FrequencyResponse
 def main():
     compensation = FrequencyResponse.read_from_csv(os.path.join('resources', 'innerfidelity_compensation_2016.csv'))
     compensation.center()
-    for file in glob(os.path.join('data', 'inear', '**', '*.csv'), recursive=True):
+    for file in glob(os.path.join('data', 'onear', '**', '*.csv'), recursive=True):
         fr = FrequencyResponse.read_from_csv(file)
         print(fr.name)
         fr.interpolate()

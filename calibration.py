@@ -51,12 +51,8 @@ def main():
         hp_fr.center()
         hp_fr.compensate(hp_compensation)
         diff = FrequencyResponse(name=if_fr.name, frequency=if_fr.frequency, raw=hp_fr.error - if_fr.error)
-        fig, ax = hp_fr.plot_graph(show=False)
-        if_fr.plot_graph(fig=fig, ax=ax, show=True)
-        #diff.plot_graph()
-#        plt.plot(diff.frequency, diff.raw)
+        plt.plot(diff.frequency, diff.raw)
         diffs.append(diff.raw)
-    return
 
     # Average and smooth difference
     f = FrequencyResponse.generate_frequencies()
