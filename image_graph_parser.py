@@ -181,8 +181,7 @@ class ImageGraphParser:
 
         # Check crop
         _im = im.crop((20, 20, im.size[0] - 20, im.size[1] - 20))
-        #_im.show()
-        #print(ImageGraphParser._find_lines(_im, 'horizontal'))
+        # im.show()
         n_h = len(ImageGraphParser._find_lines(_im, 'horizontal'))
         n_v = len(ImageGraphParser._find_lines(_im, 'vertical'))
         if n_v != 28:
@@ -282,18 +281,25 @@ class ImageGraphParser:
     def main():
         arg_parser = argparse.ArgumentParser()
         arg_parser.add_argument('--input_dir', type=str, required=True, help='Path to directory containing images.')
-        arg_parser.add_argument('--output_dir', type=str, required=True,
-                                help='Path to output directory.')
-        arg_parser.add_argument('--inspection_dir', type=str, required=True,
-                                help='Path to inspection directory.')
+        arg_parser.add_argument('--output_dir', type=str, required=True, help='Path to output directory.')
+        arg_parser.add_argument('--inspection_dir', type=str, required=True, help='Path to inspection directory.')
         arg_parser.add_argument('--source', type=str, default='headphonecom', help='Where did the image come from?')
         cli_args = arg_parser.parse_args()
 
+        input_dir = os.path.abspath(cli_args.input_dir)
+        output_dir = os.path.abspath(cli_args.output_dir)
+        inspection_dir = os.path.abspath(cli_args.inspection_dir)
+
+        if os.path.isdir(output_dir):
+            os.makedirs(output_dir, exist_ok=True)
+        if os.path.isdir(inspection_dir):
+            os.makedirs(inspection_dir, exist_ok=True)
+
         parser = ImageGraphParser()
-        parser.read_images(cli_args.input_dir)
-        parser.parse_images(cli_args.source, inspection_dir=cli_args.inspection_dir)
+        parser.read_images(input_dir)
+        parser.parse_images(cli_args.source, inspection_dir=inspection_dir)
         for fr in parser.frequency_responses.values():
-            dir_path = os.path.join(os.path.abspath(cli_args.output_dir), fr.name)
+            dir_path = os.path.join(os.path.abspath(output_dir), fr.name)
             if not os.path.exists(dir_path):
                 os.makedirs(dir_path, exist_ok=True)
             fr.write_to_csv(os.path.join(dir_path, fr.name+'.csv'))

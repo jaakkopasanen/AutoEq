@@ -18,36 +18,40 @@ class Downloader:
         with open(file_path, 'r') as f:
             self.image_urls = json.loads(f.read())
 
-    def download_images(self, dir_path):
+    def download_images(self, output_dir):
         """Downloads images to a directory."""
-        dir_path = os.path.abspath(dir_path)
+        output_dir = os.path.abspath(output_dir)
         for model, url in self.image_urls.items():
             r = requests.get(url, stream=True)
             if r.status_code != 200:
                 warnings.warn('Failed to download image for "{model}" at "{url}"'.format(model=model, url=url))
                 continue
             try:
-                with open(os.path.join(dir_path, '{}.png'.format(model)), 'wb') as f:
+                file_path = os.path.join(output_dir, '{}.png'.format(model))
+                with open(file_path, 'wb') as f:
                     r.raw.decode_content = True
                     shutil.copyfileobj(r.raw, f)
             except OSError:
                 print('Failed to save', model)
                 continue
             del r
-            print('Downloaded image for "{}"'.format(model))
+            print('Downloaded image to "{}"'.format(file_path))
 
     @staticmethod
     def main():
         arg_parser = argparse.ArgumentParser()
-        arg_parser.add_argument('--json_path', type=str, default=os.path.join('headphonecom', 'links', 'raw.json'),
-                                help='Path to JSON file.')
-        arg_parser.add_argument('--dir_path', type=str, default=os.path.join('headphonecom', 'images', 'raw'),
-                                help='Path to output directory.')
+        arg_parser.add_argument('--json_path', type=str, required=True, help='Path to JSON file containing links.')
+        arg_parser.add_argument('--output_dir', type=str, required=True, help='Path to output directory.')
         cli_args = arg_parser.parse_args()
 
+        json_path = os.path.abspath(cli_args.json_path)
+        output_dir = os.path.abspath(cli_args.output_dir)
+
         downloader = Downloader()
-        downloader.read_json(cli_args.json_path)
-        downloader.download_images(cli_args.dir_path)
+        downloader.read_json(json_path)
+        if not os.path.isdir(output_dir):
+            os.makedirs(output_dir, exist_ok=True)
+        downloader.download_images(output_dir)
 
 
 if __name__ == '__main__':
