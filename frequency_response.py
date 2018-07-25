@@ -12,7 +12,10 @@ from scipy.special import expit
 import numpy as np
 from glob import glob
 from time import time
+import urllib
+from warnings import warn
 
+ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
 DEFAULT_F_MAX = 20000
 DEFAULT_STEP = 1.01
@@ -35,6 +38,7 @@ class FrequencyResponse:
                  raw=None,
                  error=None,
                  smoothed=None,
+                 error_smoothed=None,
                  equalization=None,
                  equalized_raw=None,
                  equalized_smoothed=None):
@@ -52,8 +56,13 @@ class FrequencyResponse:
         self.error = [None if x is None or math.isnan(x) or x is None else x for x in self.error]
         self.error = np.array(self.error)
 
-        self.smoothed = smoothed if smoothed is not None else []
+        self.smoothed = error_smoothed if error_smoothed is not None else []
+        self.smoothed = [None if x is None or math.isnan(x) or x is None else x for x in self.smoothed]
         self.smoothed = np.array(self.smoothed)
+
+        self.error_smoothed = smoothed if smoothed is not None else []
+        self.error_smoothed = [None if x is None or math.isnan(x) or x is None else x for x in self.error_smoothed]
+        self.error_smoothed = np.array(self.smoothed)
 
         self.equalization = equalization if equalization is not None else []
         self.equalization = [None if x is None or math.isnan(x) or x is None else x for x in self.equalization]
@@ -67,7 +76,7 @@ class FrequencyResponse:
         self.equalized_smoothed = [None if x is None or math.isnan(x) else x for x in self.equalized_smoothed]
         self.equalized_smoothed = np.array(self.equalized_smoothed)
 
-        self.target = np.array([])
+        self.compensation = np.array([])
         self.rounded_frequencies = np.array([])
         self.rounded_equalization = np.array([])
 
@@ -82,6 +91,8 @@ class FrequencyResponse:
             self.error = self.error[sorted_inds]
         if len(self.smoothed):
             self.smoothed = self.smoothed[sorted_inds]
+        if len(self.error_smoothed):
+            self.error_smoothed = self.error_smoothed[sorted_inds]
         if len(self.equalization):
             self.equalization = self.equalization[sorted_inds]
         if len(self.equalized_raw):
@@ -127,6 +138,8 @@ class FrequencyResponse:
             df['error'] = [x if x is not None else 'NaN' for x in self.error]
         if len(self.smoothed):
             df['smoothed'] = [x if x is not None else 'NaN' for x in self.smoothed]
+        if len(self.error_smoothed):
+            df['smoothed'] = [x if x is not None else 'NaN' for x in self.error_smoothed]
         if len(self.equalization):
             df['equalization'] = [x if x is not None else 'NaN' for x in self.equalization]
         if len(self.equalized_raw):
@@ -147,6 +160,56 @@ class FrequencyResponse:
             s = 'GraphicEQ: 10 -84; ' + s
             f.write(s)
         return s
+
+    def _split_path(self, path):
+        """Splits file system path into components."""
+        folders = []
+        while 1:
+            path, folder = os.path.split(path)
+
+            if folder != "":
+                folders.append(folder)
+            else:
+                if path != "":
+                    folders.append(path)
+
+                break
+
+        folders.reverse()
+        return folders
+
+    def write_readme(self, file_path):
+        """Writes README.md with picture and Equalizer APO settings."""
+        file_path = os.path.abspath(file_path)
+        dir_path = os.path.dirname(file_path)
+        model = os.path.split(dir_path)[-1]
+
+        lines = ['# ' + model]
+
+        # Write GraphicEq settings
+        graphic_eq_path = os.path.join(dir_path, model + ' GraphicEq.txt')
+        if os.path.isfile(graphic_eq_path):
+            lines.append('### EqualizerAPO GraphicEq')
+            lines.append('Copy this to EqualizerAPO configuration file '
+                         '`C:\\Program Files\\EqualizerAPO\\config\\config.txt` or if you\'re using '
+                         'HeSuVi to HeSuVi\'s eq file `C:\\Program Files\\EqualizerAPO\\config\\HeSuVi\\eq.txt`.')
+            lines.append('```')
+            with open(graphic_eq_path, 'r') as f:
+                lines.append(f.read().strip())
+            lines.append('```')
+
+        # Write image link
+        img_path = os.path.join(dir_path, model + '.png')
+        if os.path.isfile(img_path):
+            img_rel_path = os.path.relpath(img_path, ROOT_DIR)
+            img_url = '/'.join(self._split_path(img_rel_path))
+            img_url = 'https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/{}'.format(img_url)
+            img_url = urllib.parse.quote(img_url, safe="%/:=&?~#+!$,;'@()*[]")
+            lines.append('![]({})'.format(img_url))
+
+        # Write file
+        with open(file_path, 'w') as f:
+            f.write('\n'.join(lines))
 
     @staticmethod
     def generate_frequencies(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=DEFAULT_STEP):
@@ -189,6 +252,7 @@ class FrequencyResponse:
         self.raw -= diff
         self.error -= diff
         self.smoothed -= diff
+        self.error_smoothed -= diff
         self.equalization -= diff
         self.equalized_raw -= diff
         self.equalized_smoothed -= diff
@@ -221,6 +285,45 @@ class FrequencyResponse:
         a = a * -(a_normal - a_treble) + a_normal
         return a
 
+    def _smoothen_data(self,
+                       data,
+                       window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
+                       iterations=DEFAULT_SMOOTHING_ITERATIONS,
+                       treble_window_size=None,
+                       treble_iterations=None,
+                       treble_f_lower=DEFAULT_TREBLE_F_LOWER,
+                       treble_f_upper=DEFAULT_TREBLE_F_UPPER):
+        """Smooths data.
+
+        Args:
+            window_size: Filter window size in octaves.
+            iterations: Number of iterations to run the filter. Each new iteration is using output of previous one.
+            treble_window_size: Filter window size for high frequencies.
+            treble_iterations: Number of iterations for treble filter.
+            treble_f_lower: Lower boundary of transition frequency region. In the transition region normal filter is \
+                        switched to treble filter with sigmoid weighting function.
+            treble_f_upper: Upper boundary of transition frequency reqion. In the transition region normal filter is \
+                        switched to treble filter with sigmoid weighting function.
+        """
+        if None in self.frequency or None in data:
+            # Must not contain None values
+            raise ValueError('None values present, cannot smoothen!')
+
+        # Normal filter
+        y_normal = data
+        for _ in range(iterations):
+            y_normal = savgol_filter(y_normal, self._window_size(window_size), 2)
+
+        # Treble filter
+        y_treble = data
+        for _ in range(treble_iterations):
+            y_treble = savgol_filter(y_treble, self._window_size(treble_window_size), 2)
+
+        # Transition weighted with sigmoid
+        k_treble = self._sigmoid(treble_f_lower, treble_f_upper)
+        k_normal = k_treble * -1 + 1
+        return y_normal * k_normal + y_treble * k_treble
+
     def smoothen(self,
                  window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
                  iterations=DEFAULT_SMOOTHING_ITERATIONS,
@@ -249,35 +352,42 @@ class FrequencyResponse:
         if treble_iterations is None:
             treble_iterations = iterations
 
-        # Use error data if available
-        data = self.error if len(self.error) else self.raw
+        # Smoothen raw data
+        self.smoothed = self._smoothen_data(
+            self.raw,
+            window_size=window_size,
+            iterations=iterations,
+            treble_window_size=treble_window_size,
+            treble_iterations=treble_iterations,
+            treble_f_lower=treble_f_lower,
+            treble_f_upper=treble_f_upper
+        )
 
-        if None in self.frequency or None in data:
-            # Must not contain None values
-            raise ValueError('None values present, cannot smoothen!')
-
-        # Normal filter
-        y_normal = data
-        for _ in range(iterations):
-            y_normal = savgol_filter(y_normal, self._window_size(window_size), 2)
-
-        # Treble filter
-        y_treble = data
-        for _ in range(treble_iterations):
-            y_treble = savgol_filter(y_treble, self._window_size(treble_window_size), 2)
-
-        # Transition weighted with sigmoid
-        k_treble = self._sigmoid(treble_f_lower, treble_f_upper)
-        k_normal = k_treble * -1 + 1
-        self.smoothed = y_normal * k_normal + y_treble * k_treble
+        if len(self.error):
+            # Smoothen error data
+            self.error_smoothed = self._smoothen_data(
+                self.error,
+                window_size=window_size,
+                iterations=iterations,
+                treble_window_size=treble_window_size,
+                treble_iterations=treble_iterations,
+                treble_f_lower=treble_f_lower,
+                treble_f_upper=treble_f_upper
+            )
 
     def compensate(self, compensation):
         """Calibrates raw frequency response data with compensation array. Doesn't change raw data."""
-        error_new = self.raw - compensation.raw
+        # Copy and center compensation data
+        compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
+        compensation.center()
+        # Calculate difference and adjust data
+        self.compensation = compensation.raw
+        error_new = self.raw - self.compensation
         if len(self.error):
             # Already error, calculate difference between new and old compensation
             diff = error_new - self.error
             self.smoothed -= diff
+            self.error_smoothed -= diff
             self.equalization -= diff
             self.equalized_raw -= diff
             self.equalized_smoothed -= diff
@@ -291,6 +401,7 @@ class FrequencyResponse:
             diff = error_new - self.error
             self.error = error_new
             self.smoothed -= diff
+            self.error_smoothed -= diff
             self.equalization -= diff
             self.equalized_raw -= diff
             self.equalized_smoothed -= diff
@@ -341,26 +452,29 @@ class FrequencyResponse:
         self.equalization = []
         self.equalized_raw = []
 
-        if len(self.smoothed):
-            data = self.smoothed
+        if len(self.error_smoothed):
+            error = self.error_smoothed
         elif len(self.error):
-            data = self.error
+            error = self.error
         else:
-            data = self.raw
+            raise ValueError('Error data is missing. Call FrequencyResponse.compensate().')
 
-        if None in data or None in self.equalization or None in self.equalized_raw:
+        if None in error or None in self.equalization or None in self.equalized_raw:
             # Must not contain None values
+            warn('None values detected during equalization, interpolating data with default parameters.')
             self.interpolate()
 
         # Invert with max gain clipping
         previous_clipped = False
         kink_inds = []
-        self.target = self._target(bass_boost=bass_target)
+        target = self._target(bass_boost=bass_target)
+        self.compensation += target
+
         # Max gain at each frequency
         max_gain = self._sigmoid(treble_f_lower, treble_f_upper, a_normal=max_gain, a_treble=treble_max_gain)
         gain_k = self._sigmoid(treble_f_lower, treble_f_upper, a_normal=1.0, a_treble=treble_gain_k)
-        for i, a in enumerate(data):
-            gain = (self.target[i] - a) * gain_k[i]
+        for i in range(len(error)):
+            gain = (target[i] - error[i]) * gain_k[i]
             clipped = gain > max_gain[i]
             if previous_clipped != clipped:
                 kink_inds.append(i)
@@ -407,6 +521,7 @@ class FrequencyResponse:
                    raw=True,
                    error=True,
                    smoothed=True,
+                   error_smoothed=True,
                    equalization=True,
                    equalized=True,
                    target=True,
@@ -414,36 +529,37 @@ class FrequencyResponse:
                    f_min=DEFAULT_F_MIN,
                    f_max=DEFAULT_F_MAX,
                    a_min=None,
-                   a_max=None):
+                   a_max=None,
+                   color='black'):
         """Plots frequency response graph."""
         if fig is None:
             fig, ax = plt.subplots()
         legend = []
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
-        if target and len(self.target):
-            plt.plot(self.frequency, self.target, linewidth=2)
-            legend.append('Target')
-        if raw and len(self.raw):
-            plt.plot(self.frequency, self.raw, linewidth=1)
-            legend.append('Raw')
-        if error and len(self.error) and not (smoothed and len(self.smoothed)):
-            plt.plot(self.frequency, self.error, linewidth=1)
-            legend.append('Error')
+        if target and len(self.compensation):
+            plt.plot(self.frequency, self.compensation, linewidth=5, color='lightblue')
+            legend.append('Compensation')
         if smoothed and len(self.smoothed):
-            plt.plot(self.frequency, self.smoothed, linewidth=1)
-            if len(self.error):
-                legend.append('Error Smoothed')
-            else:
-                legend.append('Smoothed')
+            plt.plot(self.frequency, self.smoothed, linewidth=5, color='lightgrey')
+            legend.append('Raw Smoothed')
+        if error_smoothed and len(self.error_smoothed):
+            plt.plot(self.frequency, self.error_smoothed, linewidth=5, color='pink')
+            legend.append('Error Smoothed')
+        if raw and len(self.raw):
+            plt.plot(self.frequency, self.raw, linewidth=1, color=color)
+            legend.append('Raw')
+        if error and len(self.error):
+            plt.plot(self.frequency, self.error, linewidth=1, color='red')
+            legend.append('Error')
         if equalization and len(self.equalization):
-            plt.plot(self.frequency, self.equalization, linewidth=1)
+            plt.plot(self.frequency, self.equalization, linewidth=2, color='limegreen')
             legend.append('Equalization')
         if equalized and len(self.equalized_raw) and not len(self.equalized_smoothed):
-            plt.plot(self.frequency, self.equalized_raw, linewidth=1)
+            plt.plot(self.frequency, self.equalized_raw, linewidth=1, color='darkblue')
             legend.append('Equalized raw')
         if equalized and len(self.equalized_smoothed):
-            plt.plot(self.frequency, self.equalized_smoothed, linewidth=1)
+            plt.plot(self.frequency, self.equalized_smoothed, linewidth=1, color='darkblue')
             legend.append('Equalized smoothed')
 
         plt.xlabel('Frequency (Hz)')
@@ -451,9 +567,9 @@ class FrequencyResponse:
         plt.xlim([f_min, f_max])
         plt.ylabel('Amplitude (dBr)')
         if a_min is None:
-            a_min = np.floor(np.min(self.raw)/10 - 1) * 10
+            a_min = np.floor(np.min(self.raw)/10) * 10
         if a_max is None:
-            a_max = np.ceil(np.max(self.raw)/10 + 1) * 10
+            a_max = np.ceil(np.max(self.raw)/10) * 10
         plt.ylim([a_min, a_max])
         plt.title(self.name)
         plt.legend(legend, fontsize=8)
@@ -544,8 +660,6 @@ class FrequencyResponse:
         input_dir = os.path.abspath(input_dir)
         output_dir = os.path.abspath(output_dir)
 
-        t = time()
-        eq_apo_str = ''  # Compilation EqualizerAPO string
         for file_path in glob(os.path.join(input_dir, '**', '*.csv'), recursive=True):
             # Read data from input file
             fr = FrequencyResponse.read_from_csv(file_path)
@@ -606,11 +720,12 @@ class FrequencyResponse:
 
                 if equalize:
                     # Write EqualizerAPO settings to file
-                    _eq_apo_str = fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' EqAPO.txt'))
+                    fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' GraphicEq.txt'))
                     print('Equalized "{}"'.format(fr.name))
-                    # Add to compilation EqAPO string
-                    eq_apo_str += '# ' + fr.name + '\n'
-                    eq_apo_str += '#' + _eq_apo_str + '\n\n'
+
+                # Write README.md
+                fr.write_readme(os.path.join(dir_path, 'README.md'))
+
             elif show_plot:
                 fig, ax = fr.plot_graph(show=show_plot)
                 plt.close(fig)

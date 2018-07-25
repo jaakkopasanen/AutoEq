@@ -1,16 +1,19 @@
 # AutoEQ
 
 ### Todo
-- SBAF Serious IF transformation curve and Headphone.com calibration curve
-- Separate results by source
-- README in headphone result directory with picture, GraphicEq, preamp and description
+- Separate results by source and tuning
+- Headphone.com raw to Innerfidelity raw calibration (for headphone compensations)
+- Tilt
+- Custom compensation curve based on Serious and brighter tilt
+- Smoothing levels instead of window size and iterations
+- Compensation smoothing
 - README in batch result directory with parameters
-- Create missing directories in FrequencyResponse
 
-- Documentation
+### Documentation
   - Results
     - Links to sources
     - Usage with HeSuVi
+    - Parameters used
   - In ear data, everything in CSV, compensations, calibrations
   - Installing
     - python3
@@ -29,6 +32,11 @@
   - Compensation
     - Curve to turn raw microphone data into error data
     - Targets have no bass boost
+    - Innerfidelity 2016
+    - Innerfidelity 2017 (link to post)
+    - Innerfidelity SBAF-Serious (how was made)
+    - Headphone.com (how was made)
+  - Equalizing to other headphones
   - Calibration (raw - calibration data)
     - Same headphone models selected from both
     - Difference in error calculated. Errors obtained by respective compensation curves.
