@@ -5,6 +5,7 @@
 - Separate results by source
 - README in headphone result directory with picture, GraphicEq and description
 - README in batch result directory with parameters
+- Create missing directories in FrequencyResponse
 
 - Documentation
   - Results
@@ -16,6 +17,7 @@
     - pip3
     - Virtualenv
     - requirements.txt
+  - https://apps.automeris.io/wpd/
   - frequency_response.py
     - CLI args
     - Examples
