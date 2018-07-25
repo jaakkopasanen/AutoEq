@@ -24,11 +24,12 @@ DEFAULT_TREBLE_F_LOWER = 6000.0
 DEFAULT_TREBLE_F_UPPER = 8000.0
 DEFAULT_TREBLE_MAX_GAIN = 0.0
 DEFAULT_TREBLE_GAIN_K = 1.0
-DEFAULT_BASS_TARGET = 4.0
-DEFAULT_SMOOTHING_WINDOW_SIZE = 1/5
+DEFAULT_BASS_BOOST = 4.0
+DEFAULT_SMOOTHING_WINDOW_SIZE = 1/7
 DEFAULT_SMOOTHING_ITERATIONS = 10
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1/5
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
+DEFAULT_TILT = 0.0
 
 
 class FrequencyResponse:
@@ -76,7 +77,7 @@ class FrequencyResponse:
         self.equalized_smoothed = [None if x is None or math.isnan(x) else x for x in self.equalized_smoothed]
         self.equalized_smoothed = np.array(self.equalized_smoothed)
 
-        self.compensation = np.array([])
+        self.target = np.array([])
         self.rounded_frequencies = np.array([])
         self.rounded_equalization = np.array([])
 
@@ -375,14 +376,14 @@ class FrequencyResponse:
                 treble_f_upper=treble_f_upper
             )
 
-    def compensate(self, compensation):
+    def compensate(self, compensation, bass_boost=DEFAULT_BASS_BOOST, tilt=DEFAULT_TILT):
         """Calibrates raw frequency response data with compensation array. Doesn't change raw data."""
         # Copy and center compensation data
         compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
         compensation.center()
         # Calculate difference and adjust data
-        self.compensation = compensation.raw
-        error_new = self.raw - self.compensation
+        self.target = compensation.raw + self._target(bass_boost=bass_boost, tilt=tilt)
+        error_new = self.raw - self.target
         if len(self.error):
             # Already error, calculate difference between new and old compensation
             diff = error_new - self.error
@@ -407,7 +408,22 @@ class FrequencyResponse:
             self.equalized_smoothed -= diff
         self.raw -= calibration.raw
 
-    def _target(self, bass_boost=DEFAULT_BASS_TARGET):
+    def _tilt(self, tilt=DEFAULT_TILT):
+        """Creates a tilt for equalization.
+
+        Args:
+            tilt: Slope steepness in dB/octave
+
+        Returns:
+            Tilted data
+        """
+        # Center in logarithmic scale
+        c = 20 * np.sqrt(20000 / 20)
+        # N octaves above center
+        n_oct = np.log2(self.frequency / c)
+        return n_oct * tilt
+
+    def _target(self, bass_boost=DEFAULT_BASS_BOOST, tilt=DEFAULT_TILT):
         """Creates target curve with bass boost as described by harman target response.
 
         Args:
@@ -416,22 +432,13 @@ class FrequencyResponse:
         Returns:
             Target for equalization
         """
-        f_bass = self.frequency[self.frequency < 60]
-        f_highs = self.frequency[200 <= self.frequency]
-        f_bm = np.concatenate([f_bass, f_highs], axis=0)
-
-        a_bass = np.ones([len(f_bass)]) * bass_boost
-        a_mids = np.zeros([len(f_highs)])
-        a_bm = np.concatenate([a_bass, a_mids], axis=0)
-
-        interpolator = InterpolatedUnivariateSpline(np.log10(f_bm), a_bm, k=3)
-        return interpolator(np.log10(self.frequency))
+        bass_boost = self._sigmoid(f_lower=60, f_upper=200, a_normal=bass_boost, a_treble=0.0)
+        tilt = self._tilt(tilt=tilt)
+        return bass_boost + tilt
 
     def equalize(self,
                  max_gain=DEFAULT_MAX_GAIN,
                  smoothen=True,
-                 window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-                 bass_target=DEFAULT_BASS_TARGET,
                  treble_f_lower=DEFAULT_TREBLE_F_LOWER,
                  treble_f_upper=DEFAULT_TREBLE_F_UPPER,
                  treble_max_gain=DEFAULT_TREBLE_MAX_GAIN,
@@ -442,7 +449,6 @@ class FrequencyResponse:
             max_gain: Maximum positive gain in dB
             smoothen: Smooth kinks caused by clipping gain to max gain?
             window_size: Smoothing average window size in octaves
-            bass_target: Target value in dB for bass boost
             treble_f_lower: Lower frequency boundary for transition region between normal parameters and treble parameters
             treble_f_upper: Upper frequency boundary for transition reqion between normal parameters and treble parameters
             treble_max_gain: Maximum positive gain in dB in treble region
@@ -467,14 +473,12 @@ class FrequencyResponse:
         # Invert with max gain clipping
         previous_clipped = False
         kink_inds = []
-        target = self._target(bass_boost=bass_target)
-        self.compensation += target
 
         # Max gain at each frequency
         max_gain = self._sigmoid(treble_f_lower, treble_f_upper, a_normal=max_gain, a_treble=treble_max_gain)
         gain_k = self._sigmoid(treble_f_lower, treble_f_upper, a_normal=1.0, a_treble=treble_gain_k)
         for i in range(len(error)):
-            gain = (target[i] - error[i]) * gain_k[i]
+            gain = - error[i] * gain_k[i]
             clipped = gain > max_gain[i]
             if previous_clipped != clipped:
                 kink_inds.append(i)
@@ -488,7 +492,7 @@ class FrequencyResponse:
 
         if smoothen:
             # Smooth out kinks
-            window_size = self._window_size(window_size)
+            window_size = self._window_size(1/12)
             doomed_inds = set()
             for i in kink_inds:
                 start = i - min(i, (window_size - 1) // 2)
@@ -537,9 +541,9 @@ class FrequencyResponse:
         legend = []
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
-        if target and len(self.compensation):
-            plt.plot(self.frequency, self.compensation, linewidth=5, color='lightblue')
-            legend.append('Compensation')
+        if target and len(self.target):
+            plt.plot(self.frequency, self.target, linewidth=5, color='lightblue')
+            legend.append('Target')
         if smoothed and len(self.smoothed):
             plt.plot(self.frequency, self.smoothed, linewidth=5, color='lightgrey')
             legend.append('Raw Smoothed')
@@ -556,7 +560,7 @@ class FrequencyResponse:
             plt.plot(self.frequency, self.equalization, linewidth=2, color='limegreen')
             legend.append('Equalization')
         if equalized and len(self.equalized_raw) and not len(self.equalized_smoothed):
-            plt.plot(self.frequency, self.equalized_raw, linewidth=1, color='darkblue')
+            plt.plot(self.frequency, self.equalized_raw, linewidth=1, color='magenta')
             legend.append('Equalized raw')
         if equalized and len(self.equalized_smoothed):
             plt.plot(self.frequency, self.equalized_smoothed, linewidth=1, color='darkblue')
@@ -601,9 +605,15 @@ class FrequencyResponse:
                                      'innerfidelity/resources and headphonecom/resources.')
         arg_parser.add_argument('--equalize', action='store_true', default=False,
                                 help='Will run equalization if this parameter exists, no value needed.')
-        arg_parser.add_argument('--bass_target', type=float, default=DEFAULT_BASS_TARGET,
+        arg_parser.add_argument('--bass_boost', type=float, default=DEFAULT_BASS_BOOST,
                                 help='Target gain for sub-bass in dB. Defaults to +6dB as per Harman on-ear 2017 '
-                                     'target response. Defaults to {}'.format(DEFAULT_BASS_TARGET))
+                                     'target response. Defaults to {}'.format(DEFAULT_BASS_BOOST))
+        arg_parser.add_argument('--tilt', type=float, default=DEFAULT_TILT,
+                                help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
+                                     'frequency response and negative value (downwards slope) will result in darker '
+                                     'frequency response. 1 dB/octave will produce nearly 10 dB difference between '
+                                     'desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both '
+                                     'will affect the bass gain. Defaults to {}'.format(DEFAULT_TILT))
         arg_parser.add_argument('--max_gain', type=float, default=DEFAULT_MAX_GAIN,
                                 help='Maximum positive gain in equalization. Higher max gain allows to equalize deeper '
                                      'dips in  frequency response but will limit output volume if no analog gain is '
@@ -634,7 +644,8 @@ class FrequencyResponse:
              calibration=None,
              compensation=None,
              equalize=False,
-             bass_target=DEFAULT_BASS_TARGET,
+             bass_boost=DEFAULT_BASS_BOOST,
+             tilt=DEFAULT_TILT,
              max_gain=DEFAULT_MAX_GAIN,
              treble_f_lower=DEFAULT_TREBLE_F_LOWER,
              treble_f_upper=DEFAULT_TREBLE_F_UPPER,
@@ -680,7 +691,7 @@ class FrequencyResponse:
 
             if compensation is not None:
                 # Compensate
-                fr.compensate(compensation)
+                fr.compensate(compensation, bass_boost=bass_boost, tilt=tilt)
 
             # Center by 1kHz
             fr.center()
@@ -700,8 +711,6 @@ class FrequencyResponse:
                 fr.equalize(
                     max_gain=max_gain,
                     smoothen=True,
-                    window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-                    bass_target=bass_target,
                     treble_f_lower=treble_f_lower,
                     treble_f_upper=treble_f_upper,
                     treble_max_gain=treble_max_gain,

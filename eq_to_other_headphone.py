@@ -15,12 +15,12 @@ def main():
     compensation.interpolate()
 
     dt770_calibrated = FrequencyResponse(name='DT 770 calibrated', frequency=dt770.frequency, raw=dt770.raw)
-    #dt770_calibrated.calibrate(calibration)
-    dt770_calibrated.compensate(he400s)
-    #dt770_calibrated.compensate(compensation)
+    dt770_calibrated.calibrate(calibration)
+    dt770_calibrated.compensate(he400s, bass_boost=4.0, tilt=0.5)
+    #dt770_calibrated.compensate(compensation, bass_target=7.0, tilt=-0.0)
     #dt770_calibrated.center()
     dt770_calibrated.smoothen()
-    dt770_calibrated.equalize(bass_target=0.0)
+    dt770_calibrated.equalize(smoothen=True)
     dt770_calibrated.plot_graph(a_min=-20, a_max=20)
 
 
