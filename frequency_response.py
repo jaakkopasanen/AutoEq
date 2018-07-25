@@ -189,17 +189,29 @@ class FrequencyResponse:
 
         lines = ['# ' + model]
 
-        # Write GraphicEq settings
-        graphic_eq_path = os.path.join(dir_path, model + ' GraphicEq.txt')
+        # Write GraphicEQ settings
+        graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
         if os.path.isfile(graphic_eq_path):
-            lines.append('### EqualizerAPO GraphicEq')
-            lines.append('Copy this to EqualizerAPO configuration file '
-                         '`C:\\Program Files\\EqualizerAPO\\config\\config.txt` or if you\'re using '
-                         'HeSuVi to HeSuVi\'s eq file `C:\\Program Files\\EqualizerAPO\\config\\HeSuVi\\eq.txt`.')
-            lines.append('```')
+            preamp = min(0.0, float(-np.max(self.equalization)))
             with open(graphic_eq_path, 'r') as f:
-                lines.append(f.read().strip())
+                eq_str = f.read().strip()
+
+            lines.append('### EqualizerAPO GraphicEQ')
+            lines.append('If you are using HeSuVi, replace contents of HeSuVi\'s eq file '
+                         '`C:\\Program Files\\EqualizerAPO\\config\\HeSuVi\\eq.txt` with this line and set global '
+                         'volume for both channels from HeSuVi UI to {:.0f}.'.format(preamp*10))
             lines.append('```')
+            lines.append(eq_str)
+            lines.append('```')
+
+            lines.append('If you are not using HeSuVi, copy this to end of EqualizerAPO configuration file '
+                         '`C:\\Program Files\\EqualizerAPO\\config\\config.txt`.')
+            lines.append('```')
+            lines.append(eq_str)
+            lines.append('Copy: L={preamp:.1f}dB*l, R={preamp:.1f}dB*R'.format(preamp=preamp))
+            lines.append('```')
+            lines.append('EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric '
+                         'equalization configured by Peace if you are already using Peace.')
 
         # Write image link
         img_path = os.path.join(dir_path, model + '.png')
@@ -738,7 +750,7 @@ class FrequencyResponse:
 
                 if equalize:
                     # Write EqualizerAPO settings to file
-                    fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' GraphicEq.txt'))
+                    fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' GraphicEQ.txt'))
                     print('Equalized "{}"'.format(fr.name))
 
                 # Write README.md
