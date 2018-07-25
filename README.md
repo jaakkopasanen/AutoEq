@@ -1,9 +1,6 @@
 # AutoEQ
 
 ### Todo
-- Tilt
-- Smoothing levels instead of window size and iterations
-- Compensation smoothing
 - Custom compensation curve based on Serious and brighter tilt
 - Separate results by source and tuning
 - README in batch result directory with parameters

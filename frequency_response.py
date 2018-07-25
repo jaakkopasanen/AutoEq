@@ -11,7 +11,6 @@ from scipy.signal import savgol_filter
 from scipy.special import expit
 import numpy as np
 from glob import glob
-from time import time
 import urllib
 from warnings import warn
 
@@ -24,12 +23,15 @@ DEFAULT_TREBLE_F_LOWER = 6000.0
 DEFAULT_TREBLE_F_UPPER = 8000.0
 DEFAULT_TREBLE_MAX_GAIN = 0.0
 DEFAULT_TREBLE_GAIN_K = 1.0
-DEFAULT_BASS_BOOST = 4.0
+DEFAULT_BASS_BOOST = 0.0
 DEFAULT_SMOOTHING_WINDOW_SIZE = 1/7
 DEFAULT_SMOOTHING_ITERATIONS = 10
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1/5
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 DEFAULT_TILT = 0.0
+BASS_BOOST_F_LOWER = 60
+BASS_BOOST_F_UPPER = 200
+GRAPHIC_EQ_STEP = 1.07
 
 
 class FrequencyResponse:
@@ -154,7 +156,7 @@ class FrequencyResponse:
         file_path = os.path.abspath(file_path)
 
         fr = FrequencyResponse(name='hack', frequency=self.frequency, raw=self.equalization)
-        fr.interpolate(f_min=20, f_max=20000, f_step=1.07)
+        fr.interpolate(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=GRAPHIC_EQ_STEP)
 
         with open(file_path, 'w') as f:
             s = '; '.join(['{f} {a:.1f}'.format(f=f, a=a) for f, a in zip(fr.frequency, fr.raw)])
@@ -380,7 +382,13 @@ class FrequencyResponse:
         """Calibrates raw frequency response data with compensation array. Doesn't change raw data."""
         # Copy and center compensation data
         compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
+        compensation.smoothen(
+            window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
+            iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS
+        )
         compensation.center()
+        compensation.raw = compensation.smoothed
+        compensation.smoothed = np.array([])
         # Calculate difference and adjust data
         self.target = compensation.raw + self._target(bass_boost=bass_boost, tilt=tilt)
         error_new = self.raw - self.target
@@ -418,7 +426,7 @@ class FrequencyResponse:
             Tilted data
         """
         # Center in logarithmic scale
-        c = 20 * np.sqrt(20000 / 20)
+        c = DEFAULT_F_MIN * np.sqrt(DEFAULT_F_MAX / DEFAULT_F_MIN)
         # N octaves above center
         n_oct = np.log2(self.frequency / c)
         return n_oct * tilt
@@ -432,7 +440,12 @@ class FrequencyResponse:
         Returns:
             Target for equalization
         """
-        bass_boost = self._sigmoid(f_lower=60, f_upper=200, a_normal=bass_boost, a_treble=0.0)
+        bass_boost = self._sigmoid(
+            f_lower=BASS_BOOST_F_LOWER,
+            f_upper=BASS_BOOST_F_UPPER,
+            a_normal=bass_boost,
+            a_treble=0.0
+        )
         tilt = self._tilt(tilt=tilt)
         return bass_boost + tilt
 
@@ -570,10 +583,6 @@ class FrequencyResponse:
         plt.semilogx()
         plt.xlim([f_min, f_max])
         plt.ylabel('Amplitude (dBr)')
-        if a_min is None:
-            a_min = np.floor(np.min(self.raw)/10) * 10
-        if a_max is None:
-            a_max = np.ceil(np.max(self.raw)/10) * 10
         plt.ylim([a_min, a_max])
         plt.title(self.name)
         plt.legend(legend, fontsize=8)
