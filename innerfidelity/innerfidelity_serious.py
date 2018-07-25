@@ -5,7 +5,7 @@ from frequency_response import FrequencyResponse
 
 
 def main():
-    trans = FrequencyResponse.read_from_csv('resources\innerfidelity_transformation_2016_SBAF-Serious.csv')
+    trans = FrequencyResponse.read_from_csv('resources\innerfidelity_transformation_SBAF-Serious.csv')
     comp16 = FrequencyResponse.read_from_csv('resources\innerfidelity_compensation_2016.csv')
     comp17 = FrequencyResponse.read_from_csv('resources\innerfidelity_compensation_2017.csv')
 
