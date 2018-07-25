@@ -54,13 +54,13 @@ def main():
         plt.plot(diff.frequency, diff.raw)
         diffs.append(diff.raw)
 
-    # Average and smooth difference
+    # Average and smoothen difference
     f = FrequencyResponse.generate_frequencies()
     diffs = np.vstack(diffs)
     diff = np.mean(diffs, axis=0)
     std = np.std(diffs, axis=0)
     diff = FrequencyResponse(name='Headphone.com to Innerfidelity', frequency=f, raw=diff)
-    diff.smooth(window_size=1 / 9, iterations=10)
+    diff.smoothen(window_size=1 / 9, iterations=10)
     diff.raw = diff.smoothed
     diff.smoothed = np.array([])
 

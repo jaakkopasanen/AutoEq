@@ -11,8 +11,21 @@ from scipy.signal import savgol_filter
 from scipy.special import expit
 import numpy as np
 from glob import glob
-import shutil
 from time import time
+
+DEFAULT_F_MIN = 20
+DEFAULT_F_MAX = 20000
+DEFAULT_STEP = 1.01
+DEFAULT_MAX_GAIN = 6.0
+DEFAULT_TREBLE_F_LOWER = 6000.0
+DEFAULT_TREBLE_F_UPPER = 8000.0
+DEFAULT_TREBLE_MAX_GAIN = 0.0
+DEFAULT_TREBLE_GAIN_K = 1.0
+DEFAULT_BASS_TARGET = 4.0
+DEFAULT_SMOOTHING_WINDOW_SIZE = 1/5
+DEFAULT_SMOOTHING_ITERATIONS = 10
+DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1/5
+DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 
 
 class FrequencyResponse:
@@ -136,7 +149,7 @@ class FrequencyResponse:
         return s
 
     @staticmethod
-    def generate_frequencies(f_min=20, f_max=20000, f_step=1.01):
+    def generate_frequencies(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=DEFAULT_STEP):
         freq_new = []
         # Frequencies from 20kHz down
         f = np.min([20000, f_max])
@@ -151,7 +164,7 @@ class FrequencyResponse:
         freq_new = sorted(set(freq_new))  # Remove duplicates and sort ascending
         return np.array(freq_new)
 
-    def interpolate(self, f=None, f_step=1.01, pol_order=1, f_min=20, f_max=20000):
+    def interpolate(self, f=None, f_step=DEFAULT_STEP, pol_order=1, f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX):
         """Interpolates missing values from previous and next value."""
         # Remove None values
         i = 0
@@ -208,13 +221,13 @@ class FrequencyResponse:
         a = a * -(a_normal - a_treble) + a_normal
         return a
 
-    def smooth(self,
-               window_size=1/5,
-               iterations=1,
-               treble_window_size=None,
-               treble_iterations=None,
-               treble_f_lower=6000,
-               treble_f_upper=10000):
+    def smoothen(self,
+                 window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
+                 iterations=DEFAULT_SMOOTHING_ITERATIONS,
+                 treble_window_size=None,
+                 treble_iterations=None,
+                 treble_f_lower=DEFAULT_TREBLE_F_LOWER,
+                 treble_f_upper=DEFAULT_TREBLE_F_UPPER):
         """Smooths data.
 
         Args:
@@ -283,7 +296,7 @@ class FrequencyResponse:
             self.equalized_smoothed -= diff
         self.raw -= calibration.raw
 
-    def _target(self, bass_boost=4):
+    def _target(self, bass_boost=DEFAULT_BASS_TARGET):
         """Creates target curve with bass boost as described by harman target response.
 
         Args:
@@ -304,19 +317,19 @@ class FrequencyResponse:
         return interpolator(np.log10(self.frequency))
 
     def equalize(self,
-                 max_gain=12,
-                 smooth=True,
-                 window_size=1/3,
-                 bass_target=4,
-                 treble_f_lower=6000,
-                 treble_f_upper=10000,
-                 treble_max_gain=0,
-                 treble_gain_k=1.0):
+                 max_gain=DEFAULT_MAX_GAIN,
+                 smoothen=True,
+                 window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
+                 bass_target=DEFAULT_BASS_TARGET,
+                 treble_f_lower=DEFAULT_TREBLE_F_LOWER,
+                 treble_f_upper=DEFAULT_TREBLE_F_UPPER,
+                 treble_max_gain=DEFAULT_TREBLE_MAX_GAIN,
+                 treble_gain_k=DEFAULT_TREBLE_GAIN_K):
         """Creates equalization curve and equalized curve.
 
         Args:
             max_gain: Maximum positive gain in dB
-            smooth: Smooth kinks caused by clipping gain to max gain?
+            smoothen: Smooth kinks caused by clipping gain to max gain?
             window_size: Smoothing average window size in octaves
             bass_target: Target value in dB for bass boost
             treble_f_lower: Lower frequency boundary for transition region between normal parameters and treble parameters
@@ -359,7 +372,7 @@ class FrequencyResponse:
         if len(kink_inds) and kink_inds[0] == 0:
             del kink_inds[0]
 
-        if smooth:
+        if smoothen:
             # Smooth out kinks
             window_size = self._window_size(window_size)
             doomed_inds = set()
@@ -398,8 +411,8 @@ class FrequencyResponse:
                    equalized=True,
                    target=True,
                    file_path=None,
-                   f_min=20,
-                   f_max=20000,
+                   f_min=DEFAULT_F_MIN,
+                   f_max=DEFAULT_F_MAX,
                    a_min=None,
                    a_max=None):
         """Plots frequency response graph."""
@@ -438,9 +451,9 @@ class FrequencyResponse:
         plt.xlim([f_min, f_max])
         plt.ylabel('Amplitude (dBr)')
         if a_min is None:
-            a_min = max(np.min(self.raw) - 10, -40)
+            a_min = np.floor(np.min(self.raw)/10 - 1) * 10
         if a_max is None:
-            a_max = min(np.max(self.raw) + 10, 20)
+            a_max = np.ceil(np.max(self.raw)/10 + 1) * 10
         plt.ylim([a_min, a_max])
         plt.title(self.name)
         plt.legend(legend, fontsize=8)
@@ -458,38 +471,45 @@ class FrequencyResponse:
     def cli_args():
         """Parses command line arguments."""
         arg_parser = argparse.ArgumentParser()
-        arg_parser.add_argument('--input_dir', type=str, default=os.path.abspath('data'),
+        arg_parser.add_argument('--input_dir', type=str, required=True,
                                 help='Path to data directory. Will look for csv files in the data directory and '
                                      'recursively in sub-directories.')
-        arg_parser.add_argument('--output_dir', type=str, default=os.path.abspath('results'),
+        arg_parser.add_argument('--output_dir', type=str, required=True,
                                 help='Path to results directory. Will keep the same relative paths for files found'
-                                     'in input_dir. Compilation results are produced in directory root.')
+                                     'in input_dir.')
         arg_parser.add_argument('--calibration', type=str, required=False, default=argparse.SUPPRESS,
                                 help='File path to CSV containing calibration curve.')
         arg_parser.add_argument('--compensation', type=str, required=False, default=argparse.SUPPRESS,
-                                help='File path to CSV containing compensation curve.')
+                                help='File path to CSV containing compensation curve. Compensation is necessary when '
+                                     'equalizing because all input data is raw microphone data. See '
+                                     'innerfidelity/resources and headphonecom/resources.')
         arg_parser.add_argument('--equalize', action='store_true', default=False,
-                                help='Run equalization?')
-        arg_parser.add_argument('--bass_target', type=float, default=4,
-                                help='Target gain for sub-bass. Defaults to +6dB as per Harman on-ear 2017 target '
-                                     'response.')
-        arg_parser.add_argument('--max_gain', type=float, default=12,
-                                help='Maximum gain in equalization. Higher max gain allows to equalize deeper dips in '
-                                     'frequency response but will limit output volume if no analog gain is available.')
-        arg_parser.add_argument('--treble_f_lower', type=float, default=5000,
+                                help='Will run equalization if this parameter exists, no value needed.')
+        arg_parser.add_argument('--bass_target', type=float, default=DEFAULT_BASS_TARGET,
+                                help='Target gain for sub-bass in dB. Defaults to +6dB as per Harman on-ear 2017 '
+                                     'target response. Defaults to {}'.format(DEFAULT_BASS_TARGET))
+        arg_parser.add_argument('--max_gain', type=float, default=DEFAULT_MAX_GAIN,
+                                help='Maximum positive gain in equalization. Higher max gain allows to equalize deeper '
+                                     'dips in  frequency response but will limit output volume if no analog gain is '
+                                     'available because positive gain requires negative digital preamp equal to '
+                                     'maximum positive gain. Defaults to {}'.format(DEFAULT_MAX_GAIN))
+        arg_parser.add_argument('--treble_f_lower', type=float, default=DEFAULT_TREBLE_F_LOWER,
                                 help='Lower bound for transition region between normal and treble frequencies. Treble '
-                                     'frequencies are smoothed heavier and have lower max gain.')
-        arg_parser.add_argument('--treble_f_upper', type=float, default=9000,
+                                     'frequencies can have different smoothing, max gain and gain K. Defaults to '
+                                     '{}'.format(DEFAULT_TREBLE_F_LOWER))
+        arg_parser.add_argument('--treble_f_upper', type=float, default=DEFAULT_TREBLE_F_UPPER,
                                 help='Upper bound for transition region between normal and treble frequencies. Treble '
-                                     'frequencies are smoothed heavier and have lower max gain.')
-        arg_parser.add_argument('--treble_max_gain', type=float, default=0,
-                                help='Maximum gain in equalization in treble region.')
-        arg_parser.add_argument('--treble_gain_k', type=float, default=1.0,
-                                help='Coefficient for treble gain, positive and negative. Useful for disbling or'
-                                     'reducing equalization power in treble region. Defaults to 1.0 (not limited).')
+                                     'frequencies can have different smoothing, max gain and gain K. Defaults to '
+                                     '{}'.format(DEFAULT_TREBLE_F_UPPER))
+        arg_parser.add_argument('--treble_max_gain', type=float, default=DEFAULT_TREBLE_MAX_GAIN,
+                                help='Maximum positive gain for equalization in treble region. Defaults to '
+                                     '{}'.format(DEFAULT_TREBLE_MAX_GAIN))
+        arg_parser.add_argument('--treble_gain_k', type=float, default=DEFAULT_TREBLE_GAIN_K,
+                                help='Coefficient for treble gain, affects both positive and negative gain. Useful for '
+                                     'disbling or reducing equalization power in treble region. Defaults to '
+                                     '{}.'.format(DEFAULT_TREBLE_GAIN_K))
         arg_parser.add_argument('--show_plot', action='store_true', default=False,
-                                help='Show plots? Requires the user to close each plot before next file can be '
-                                     'processed.')
+                                help='Plot will be shown if this parameter exists, no value needed.')
         return vars(arg_parser.parse_args())
 
     @staticmethod
@@ -498,12 +518,12 @@ class FrequencyResponse:
              calibration=None,
              compensation=None,
              equalize=False,
-             bass_target=4,
-             max_gain=6,
-             treble_f_lower=3000,
-             treble_f_upper=8000,
-             treble_max_gain=0,
-             treble_gain_k=1.0,
+             bass_target=DEFAULT_BASS_TARGET,
+             max_gain=DEFAULT_MAX_GAIN,
+             treble_f_lower=DEFAULT_TREBLE_F_LOWER,
+             treble_f_upper=DEFAULT_TREBLE_F_UPPER,
+             treble_max_gain=DEFAULT_TREBLE_MAX_GAIN,
+             treble_gain_k=DEFAULT_TREBLE_GAIN_K,
              show_plot=False):
         """Parses files in input directory and produces equalization results in output directory."""
         if calibration:
@@ -552,11 +572,11 @@ class FrequencyResponse:
             fr.center()
 
             # Smooth data
-            fr.smooth(
-                window_size=1/7,
-                iterations=10,
-                treble_window_size=1/5,
-                treble_iterations=100,
+            fr.smoothen(
+                window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
+                iterations=DEFAULT_SMOOTHING_ITERATIONS,
+                treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
+                treble_iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS,
                 treble_f_lower=treble_f_lower,
                 treble_f_upper=treble_f_upper
             )
@@ -565,8 +585,8 @@ class FrequencyResponse:
             if equalize:
                 fr.equalize(
                     max_gain=max_gain,
-                    smooth=True,
-                    window_size=1/5,
+                    smoothen=True,
+                    window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
                     bass_target=bass_target,
                     treble_f_lower=treble_f_lower,
                     treble_f_upper=treble_f_upper,
@@ -594,13 +614,6 @@ class FrequencyResponse:
             elif show_plot:
                 fig, ax = fr.plot_graph(show=show_plot)
                 plt.close(fig)
-
-        if equalize:
-            # Write compilation EqAPO to file
-            file_name = 'EqApo Bass +{b}dB, Max +{m}dB.txt'.format(b=bass_target, m=max_gain)
-            with open(os.path.join(output_dir, file_name), 'w') as f:
-                f.write(eq_apo_str)
-            print('Equalized all in {:.2f}s'.format(time()-t))
 
 
 if __name__ == '__main__':

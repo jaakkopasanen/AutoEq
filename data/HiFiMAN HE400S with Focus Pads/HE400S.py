@@ -22,7 +22,7 @@ def main():
     _fr = FrequencyResponse(name='debug', frequency=stock.frequency, raw=base.raw, smoothed=diff.raw, equalization=fr.raw)
     _fr.plot_graph()
 
-    fr.smooth(window_size=1 / 5, iterations=10, treble_window_size=1 / 2, treble_iterations=100)
+    fr.smoothen(window_size=1 / 5, iterations=10, treble_window_size=1 / 2, treble_iterations=100)
 
 
     #stock.plot_graph()
@@ -32,7 +32,7 @@ def main():
     #fr.plot_graph()
     os.makedirs('innerfidelity/data/HiFiMAN HE400S with Focus Pads', exist_ok=True)
     fr.write_to_csv(file_path='innerfidelity/data/HiFiMAN HE400S with Focus Pads/HiFiMAN HE400S with Focus Pads ORIG.csv')
-    fr.equalize(max_gain=12, smooth=True, window_size=1 / 5, bass_target=4)
+    fr.equalize(max_gain=12, smoothen=True, window_size=1 / 5, bass_target=4)
     fr.write_to_csv(file_path='innerfidelity/data/HiFiMAN HE400S with Focus Pads/HiFiMAN HE400S with Focus Pads.csv')
     fig, ax = fr.plot_graph(show=False, file_path='innerfidelity/data/HiFiMAN HE400S with Focus Pads/HiFiMAN HE400S with Focus Pads.png')
     plt.close(fig)

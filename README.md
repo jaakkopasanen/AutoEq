@@ -3,7 +3,7 @@
 ### Todo
 - SBAF Serious IF transformation curve and Headphone.com calibration curve
 - Separate results by source
-- README in headphone result directory with picture, GraphicEq and description
+- README in headphone result directory with picture, GraphicEq, preamp and description
 - README in batch result directory with parameters
 - Create missing directories in FrequencyResponse
 
