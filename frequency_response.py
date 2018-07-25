@@ -13,6 +13,7 @@ import numpy as np
 from glob import glob
 import urllib
 from warnings import warn
+from datetime import datetime
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
@@ -676,21 +677,23 @@ class FrequencyResponse:
         """Parses files in input directory and produces equalization results in output directory."""
         if calibration:
             # Creates FrequencyReponse for compensation data
-            file_path = os.path.abspath(calibration)
-            calibration = FrequencyResponse.read_from_csv(file_path)
+            calibration_path = os.path.abspath(calibration)
+            calibration = FrequencyResponse.read_from_csv(calibration_path)
             calibration.interpolate()
             calibration.center()
 
         if compensation:
             # Creates FrequencyReponse for compensation data
-            file_path = os.path.abspath(compensation)
-            compensation = FrequencyResponse.read_from_csv(file_path)
+            compensation_path = os.path.abspath(compensation)
+            compensation = FrequencyResponse.read_from_csv(compensation_path)
             compensation.interpolate()
             compensation.center()
 
         # Dir paths to absolute
         input_dir = os.path.abspath(input_dir)
         output_dir = os.path.abspath(output_dir)
+        readme_path = os.path.join(output_dir, 'README.md')
+        old_readme = os.path.isfile(readme_path)  # Readme exists before writing headphone readmes, safe to overwrite
 
         for file_path in glob(os.path.join(input_dir, '**', '*.csv'), recursive=True):
             # Read data from input file
@@ -759,6 +762,26 @@ class FrequencyResponse:
             elif show_plot:
                 fig, ax = fr.plot_graph(show=show_plot)
                 plt.close(fig)
+
+        # Write parameters to run README.md
+        if not os.path.isfile(readme_path) or old_readme:
+            lines = ['# Run {}'.format(datetime.now().isoformat())]
+            lines.append('There results were obtained with parameters:')
+            lines.append('* `--input_dir="{}"`'.format(os.path.relpath(input_dir, ROOT_DIR)))
+            lines.append('* `--output_dir="{}"`'.format(os.path.relpath(output_dir, ROOT_DIR)))
+            if calibration is not None:
+                lines.append('* `--calibration="{}"`'.format(os.path.relpath(calibration_path, ROOT_DIR)))
+            if compensation is not None:
+                lines.append('* `--compensation="{}"`'.format(os.path.relpath(compensation_path, ROOT_DIR)))
+            lines.append('* `--bass_boost={}`'.format(bass_boost))
+            lines.append('* `--tilt={}`'.format(tilt))
+            lines.append('* `--max_gain={}`'.format(max_gain))
+            lines.append('* `--treble_f_lower={}`'.format(treble_f_lower))
+            lines.append('* `--treble_f_upper={}`'.format(treble_f_upper))
+            lines.append('* `--treble_max_gain={}`'.format(treble_max_gain))
+            lines.append('* `--treble_gain_k={}`'.format(treble_gain_k))
+            with open(readme_path, 'w') as f:
+                f.write('\n'.join(lines))
 
 
 if __name__ == '__main__':
