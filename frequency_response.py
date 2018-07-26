@@ -30,6 +30,11 @@ DEFAULT_SMOOTHING_ITERATIONS = 10
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1/5
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 DEFAULT_TILT = 0.0
+DEFAULT_COMPENSATION_FILE_PATH = os.path.join(
+    'innerfidelity',
+    'resources',
+    'innerfidelity_compensation_SBAF-Serious.brighter.csv'
+)
 BASS_BOOST_F_LOWER = 60
 BASS_BOOST_F_UPPER = 200
 GRAPHIC_EQ_STEP = 1.07
@@ -656,15 +661,16 @@ class FrequencyResponse:
                                      'in input_dir.')
         arg_parser.add_argument('--calibration', type=str, required=False, default=argparse.SUPPRESS,
                                 help='File path to CSV containing calibration curve.')
-        arg_parser.add_argument('--compensation', type=str, required=False, default=argparse.SUPPRESS,
+        arg_parser.add_argument('--compensation', type=str, required=False, default=DEFAULT_COMPENSATION_FILE_PATH,
                                 help='File path to CSV containing compensation curve. Compensation is necessary when '
                                      'equalizing because all input data is raw microphone data. See '
-                                     'innerfidelity/resources and headphonecom/resources.')
-        arg_parser.add_argument('--equalize', action='store_true', default=False,
+                                     'innerfidelity/resources and headphonecom/resources. '
+                                     'Defaults to "{}"'.format(DEFAULT_COMPENSATION_FILE_PATH))
+        arg_parser.add_argument('--equalize', action='store_true',
                                 help='Will run equalization if this parameter exists, no value needed.')
         arg_parser.add_argument('--bass_boost', type=float, default=DEFAULT_BASS_BOOST,
-                                help='Target gain for sub-bass in dB. Defaults to +6dB as per Harman on-ear 2017 '
-                                     'target response. Defaults to {}'.format(DEFAULT_BASS_BOOST))
+                                help='Target gain for sub-bass in dB. Flat response from 20 Hz to 60 Hz and a sigmoid '
+                                     'slope down to 200 Hz. Defaults to {}'.format(DEFAULT_BASS_BOOST))
         arg_parser.add_argument('--tilt', type=float, default=DEFAULT_TILT,
                                 help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
                                      'frequency response and negative value (downwards slope) will result in darker '
