@@ -21,10 +21,10 @@ headphone sound (roughly) like another headphone. For more info about equalizing
 
 Third major contribution of this project is the measurement data, compensation curves and calibration curves all in a
 numerical format. Everything is stored as CSV files so they are easy to process with any programming language or even
-Microsoft Excel. See [Compensation](), [Calibration]() and [Data Processing]() for more technical description about how
+Microsoft Excel. See [Calibration](https://github.com/jaakkopasanen/AutoEq#calibration) and [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing) for more technical description about how
 things were obtained and processed.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious-brighter/innerfidelity/onear/HiFiMAN%20HE400S/HiFiMAN%20HE400S.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/HiFiMAN%20HE400S/HiFiMAN%20HE400S.png)
 *HiFiMAN HE400S equalization results plotted*
 
 
