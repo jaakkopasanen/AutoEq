@@ -15,7 +15,8 @@ obtained.
 AutoEQ is not just a collection of automatically produced headphone equalization settings but also a tool for equalizing
 headphones for yourself. `frequency_response.py` provides methods for reading data, equalizing it to a given target
 response and saving the results for usage with EqualizerAPO. It's possible to use different compensation (target)
-curves, apply tilt for making the headphones brighter/darker and adding a bass boost. For more info about equalizing see
+curves, apply tilt for making the headphones brighter/darker and adding a bass boost. It's even possible to make one
+headphone sound (roughly) like another headphone. For more info about equalizing see
 [Equalizing](https://github.com/jaakkopasanen/AutoEq#equalizing)
 
 Third major contribution of this project is the measurement data, compensation curves and calibration curves all in a
@@ -24,7 +25,7 @@ Microsoft Excel. See [Compensation](), [Calibration]() and [Data Processing]() f
 things were obtained and processed.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/onear/SBAF-Serious-brighter/innerfidelity/HiFiMAN%20HE400S/HiFiMAN%20HE400S.png)
-HiFiMAN HE400S equalization results plotted
+*HiFiMAN HE400S equalization results plotted*
 
 
 ### Usage
@@ -61,7 +62,7 @@ The main princible used by AutoEQ for producing the equalization function is to 
 difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
 below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. In reality simply inverting the error is
 not sufficient since measurements and equalization have several problems that need to be addressed, see
-[Technical Challenges]() for more details.
+[Technical Challenges](https://github.com/jaakkopasanen/AutoEq#technical-challenges) for more details.
 
 Results provided in this project have all the on-ear headphone measurements from
 [Innerfidelity](https://www.innerfidelity.com/headphone-measurements) and [Headphone.com](http://graphs.headphone.com/)
@@ -100,25 +101,155 @@ applied. In the upper treble measurements are less reliable and boosting them to
 having some narrow dips is not a problem at all.
 
 ### Equalizing
-- Installing
-    - python3
-    - pip3
-    - Virtualenv
-    - requirements.txt
-- frequency_response.py
-    - CLI args
-    - Examples
-    - Use cases
-- https://apps.automeris.io/wpd/
+`frequency_response.py` is the tool used to produce the equalization results from data measurement data. There is no
+fancy graphical user interface but instead it is used from command line.
 
-### Compensation
-- Curve to turn raw microphone data into error data
-- Targets have no bass boost
-- Innerfidelity 2016
-- Innerfidelity 2017 (link to post)
-- Innerfidelity SBAF-Serious (how was made)
-- Headphone.com (how was made)
-- Equalizing to other headphones
+#### Installing
+- Download [AutoEQ zip](https://github.com/jaakkopasanen/AutoEq/archive/master.zip) and exctract to a convenient location.
+- Download and install [Python3](https://www.python.org/getit/). Make sure to check *Install Python3 to PATH*
+- Install virtualenv. Run this on command prompt. Search `cmd` in Windows start menu.  
+````commandline
+pip install virtualenv
+````
+- Go to AutoEQ location  
+````commandline
+cd C:\path\to\AutoEq-master
+````
+- Create virtual environment  
+````commandline
+virtualenv venv
+````
+- Activate virtualenv  
+````commandline
+.\vevn\scripts\activate
+````
+- Install required packages  
+````commandline
+pip install -r requirements.txt
+````
+- Verify installation  
+````commandline
+python frequency_response.py -H
+````
+
+When coming back at a later time you'll only need to activate virtual environment again
+````commandline
+cd C:\path\to\AutoEq-master
+.\vevn\scripts\activate
+````
+
+#### Command Line Arguments
+````
+usage: frequency_response.py [-h] --input_dir INPUT_DIR --output_dir
+                             OUTPUT_DIR [--calibration CALIBRATION]
+                             [--compensation COMPENSATION] [--equalize]
+                             [--bass_boost BASS_BOOST] [--tilt TILT]
+                             [--max_gain MAX_GAIN]
+                             [--treble_f_lower TREBLE_F_LOWER]
+                             [--treble_f_upper TREBLE_F_UPPER]
+                             [--treble_max_gain TREBLE_MAX_GAIN]
+                             [--treble_gain_k TREBLE_GAIN_K] [--show_plot]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --input_dir INPUT_DIR
+                        Path to input data directory. Will look for CSV files
+                        in the data directory and recursively in sub-
+                        directories.
+  --output_dir OUTPUT_DIR
+                        Path to results directory. Will keep the same relative
+                        paths for files foundin input_dir.
+  --calibration CALIBRATION
+                        File path to CSV containing calibration data. See
+                        `calibration` directory.
+  --compensation COMPENSATION
+                        File path to CSV containing compensation curve.
+                        Compensation is necessary when equalizing because all
+                        input data is raw microphone data. See
+                        innerfidelity/resources and headphonecom/resources.
+                        Defaults to "innerfidelity\resources\innerfidelity_com
+                        pensation_SBAF-Serious.brighter.csv"
+  --equalize            Will run equalization if this parameter exists, no
+                        value needed.
+  --bass_boost BASS_BOOST
+                        Target gain for sub-bass in dB. Has flat response from
+                        20 Hz to 60 Hz and a sigmoid slope down to 200 Hz.
+                        Defaults to 0.0
+  --tilt TILT           Target tilt in dB/octave. Positive value (upwards
+                        slope) will result in brighter frequency response and
+                        negative value (downwards slope) will result in darker
+                        frequency response. 1 dB/octave will produce nearly 10
+                        dB difference in desired value between 20 Hz and 20
+                        kHz. Tilt is applied with bass boost and both will
+                        affect the bass gain. Defaults to 0.0
+  --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain
+                        allows to equalize deeper dips in frequency response
+                        but will limit output volume if no analog gain is
+                        available because positive gain requires negative
+                        digital preamp equal to maximum positive gain.
+                        Defaults to 6.0
+  --treble_f_lower TREBLE_F_LOWER
+                        Lower bound for transition region between normal and
+                        treble frequencies. Treble frequencies can have
+                        different smoothing, max gain and gain K. Defaults to
+                        6000.0
+  --treble_f_upper TREBLE_F_UPPER
+                        Upper bound for transition region between normal and
+                        treble frequencies. Treble frequencies can have
+                        different smoothing, max gain and gain K. Defaults to
+                        8000.0
+  --treble_max_gain TREBLE_MAX_GAIN
+                        Maximum positive gain for equalization in treble
+                        region. Defaults to 0.0
+  --treble_gain_k TREBLE_GAIN_K
+                        Coefficient for treble gain, affects both positive and
+                        negative gain. Useful for disabling or reducing
+                        equalization power in treble region. Defaults to 1.0.
+  --show_plot           Plot will be shown if this parameter exists, no value
+                        needed.
+
+````
+
+#### Examples
+Equalizing Sennheiser HD 650 and saving results to `myresults/HD650`:
+````commandline
+python frequency_response.py --input_dir="innerfidelity\data\onear\Sennheiser HD 650" --output_dir="myresults\HD650" --compensation="innerfidelity\resources\innerfidelity_compensation_SBAF-Serious-brighter.csv" --equalize --bass_boost=4 --show_plot
+````
+
+Equalizing Beyerdynamic DT990 without saving results
+````commandline
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="headphonecom\resources\headphonecom_compensation.csv" --equalize --bass_boost=4 --show_plot
+````
+
+Equalizing Beyerdynamic DT990 to SBAF-Serious-brighter target. This target is made for Innerfidelity measurements so
+we need to calibrate Headphone.com measurement.
+````commandline
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="innerfidelity\resources\innerfidelity_compensation_SBAF-Serious-brighter.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=4 --show_plot
+````
+
+Equalizing all Headphone.com on-ear headphones and saving results to `results\onear\SBAF-Serious-brighter\headphonecom`.
+There is a lot of headphones and we don't want to inspect all visually so we'll omit `--show_plot`
+````commandline
+python frequency_response.py --input_dir="headphonecom\data\onear" --output_dir="results\onear\SBAF-Serious-brighter\headphonecom" --compensation="innerfidelity\resources\innerfidelity_compensation_SBAF-Serious-brighter.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=4
+````
+
+Equalizing Beyerdynamic DT 770 to sound like HiFiMAN HE400S. 80ohm version of DT 770 is only available in Headphone.com
+measurements and HE400S only in Innerfidelity measurements so we'll use calibration once again. To make the bass sound
+the same we'll set bass boost to zero.
+````commandline
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT770" --compensation="innerfidelity\data\onear\HiFiMAN HE400S\HiFiMAN HE400S.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=0 --show_plot
+````
+
+Viewing HiFiMAN HE400S raw microphone data
+````commandline
+python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400S" --show_plot
+````
+
+#### More Data!
+If data for you headphone cannot be found in this project but you have an image of the frequency response you might be
+able to use [https://apps.automeris.io/wpd/](https://apps.automeris.io/wpd/) to parse the image. You'll have replace
+all commas `,` in the produced file with point `.` and semi-colons `;` with comma `,` in this order. You can you for
+example [Notepad++](https://notepad-plus-plus.org/) for this, just hit `Ctrl+h`
 
 ### Calibration
 - raw - calibration

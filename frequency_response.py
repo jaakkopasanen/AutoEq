@@ -654,13 +654,13 @@ class FrequencyResponse:
         """Parses command line arguments."""
         arg_parser = argparse.ArgumentParser()
         arg_parser.add_argument('--input_dir', type=str, required=True,
-                                help='Path to data directory. Will look for csv files in the data directory and '
+                                help='Path to input data directory. Will look for CSV files in the data directory and '
                                      'recursively in sub-directories.')
         arg_parser.add_argument('--output_dir', type=str, required=True,
                                 help='Path to results directory. Will keep the same relative paths for files found'
                                      'in input_dir.')
         arg_parser.add_argument('--calibration', type=str, required=False, default=argparse.SUPPRESS,
-                                help='File path to CSV containing calibration curve.')
+                                help='File path to CSV containing calibration data. See `calibration` directory.')
         arg_parser.add_argument('--compensation', type=str, required=False, default=DEFAULT_COMPENSATION_FILE_PATH,
                                 help='File path to CSV containing compensation curve. Compensation is necessary when '
                                      'equalizing because all input data is raw microphone data. See '
@@ -669,12 +669,12 @@ class FrequencyResponse:
         arg_parser.add_argument('--equalize', action='store_true',
                                 help='Will run equalization if this parameter exists, no value needed.')
         arg_parser.add_argument('--bass_boost', type=float, default=DEFAULT_BASS_BOOST,
-                                help='Target gain for sub-bass in dB. Flat response from 20 Hz to 60 Hz and a sigmoid '
-                                     'slope down to 200 Hz. Defaults to {}'.format(DEFAULT_BASS_BOOST))
+                                help='Target gain for sub-bass in dB. Has flat response from 20 Hz to 60 Hz and a '
+                                     'sigmoid slope down to 200 Hz. Defaults to {}'.format(DEFAULT_BASS_BOOST))
         arg_parser.add_argument('--tilt', type=float, default=DEFAULT_TILT,
                                 help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
                                      'frequency response and negative value (downwards slope) will result in darker '
-                                     'frequency response. 1 dB/octave will produce nearly 10 dB difference between '
+                                     'frequency response. 1 dB/octave will produce nearly 10 dB difference in '
                                      'desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both '
                                      'will affect the bass gain. Defaults to {}'.format(DEFAULT_TILT))
         arg_parser.add_argument('--max_gain', type=float, default=DEFAULT_MAX_GAIN,
@@ -695,7 +695,7 @@ class FrequencyResponse:
                                      '{}'.format(DEFAULT_TREBLE_MAX_GAIN))
         arg_parser.add_argument('--treble_gain_k', type=float, default=DEFAULT_TREBLE_GAIN_K,
                                 help='Coefficient for treble gain, affects both positive and negative gain. Useful for '
-                                     'disbling or reducing equalization power in treble region. Defaults to '
+                                     'disabling or reducing equalization power in treble region. Defaults to '
                                      '{}.'.format(DEFAULT_TREBLE_GAIN_K))
         arg_parser.add_argument('--show_plot', action='store_true', default=False,
                                 help='Plot will be shown if this parameter exists, no value needed.')

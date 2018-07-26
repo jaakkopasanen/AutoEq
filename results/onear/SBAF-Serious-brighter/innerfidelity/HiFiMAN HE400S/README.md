@@ -12,7 +12,7 @@ Copy: L=-6.0dB*l, R=-6.0dB*R
 EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/onear/SBAF-Serious-brighter/innerfidelity/HiFiMAN%20HE400S/HiFiMAN%20HE400S.png)
 
-# Run 2018-07-26T11:40:17.908130
+# Run 2018-07-26T13:06:54.197520
 There results were obtained with parameters:
 * `--input_dir="innerfidelity\data\onear\HiFiMAN HE400S"`
 * `--output_dir="results\onear\SBAF-Serious-brighter\innerfidelity\HiFiMAN HE400S"`
