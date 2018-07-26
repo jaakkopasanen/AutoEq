@@ -3,10 +3,10 @@ AutoEQ is a project for equalizing headphone frequency responses automatically a
 frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
 This project currently has 700+ onear headphones covered in the
 [results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder. Results are organized by
-type/compensation/source/headphone so a Sennheiser HD 650 measured by Innerfidelity and tuned to
+target/source/type/headphone so a Sennheiser HD 650 measured by Innerfidelity and tuned to
 [Innerfidelity 2017 compensation curve](https://www.innerfidelity.com/content/compensation-curve-innerfidelity-measurements-dialog-part-1)
 would be found in
-[onear/innerfidelity2017/innerfidelity/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/onear/innerfidelity2017/innerfidelity/Sennheiser%20HD%20650).
+[Innerfidelity 2017/innerfidelity/onear/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/Innerfidelity%202017/innerfidelity/onear/Sennheiser%20HD%20650).
 See [Usage](https://github.com/jaakkopasanen/AutoEq#usage) for instructions how to use the results with
 [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and
 [Results](https://github.com/jaakkopasanen/AutoEq#results) for details about parameters and how the results were
@@ -24,7 +24,7 @@ numerical format. Everything is stored as CSV files so they are easy to process 
 Microsoft Excel. See [Compensation](), [Calibration]() and [Data Processing]() for more technical description about how
 things were obtained and processed.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/onear/SBAF-Serious-brighter/innerfidelity/HiFiMAN%20HE400S/HiFiMAN%20HE400S.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious-brighter/innerfidelity/onear/HiFiMAN%20HE400S/HiFiMAN%20HE400S.png)
 *HiFiMAN HE400S equalization results plotted*
 
 
