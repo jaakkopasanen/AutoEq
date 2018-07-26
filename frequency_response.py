@@ -233,21 +233,21 @@ class FrequencyResponse:
                 eq_str = f.read().strip()
 
             lines.append('### EqualizerAPO GraphicEQ')
-            lines.append('If you are using HeSuVi, replace contents of HeSuVi\'s eq file '
+            lines.append('If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi\'s eq file '
                          '`C:\\Program Files\\EqualizerAPO\\config\\HeSuVi\\eq.txt` with this line and set global '
-                         'volume for both channels from HeSuVi UI to {:.0f}.'.format(preamp*10))
+                         'volume for both channels from HeSuVi UI to **{:.0f}**.'.format(preamp*10))
             lines.append('```')
             lines.append(eq_str)
             lines.append('```')
 
-            lines.append('If you are not using HeSuVi, copy this to end of EqualizerAPO configuration file '
+            lines.append('If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file '
                          '`C:\\Program Files\\EqualizerAPO\\config\\config.txt`.')
             lines.append('```')
             lines.append(eq_str)
             lines.append('Copy: L={preamp:.1f}dB*l, R={preamp:.1f}dB*R'.format(preamp=preamp))
             lines.append('```')
             lines.append('EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric '
-                         'equalization configured by Peace if you are already using Peace.')
+                         'equalization configured by Peace if you are already using it.')
 
         # Write image link
         img_path = os.path.join(dir_path, model + '.png')

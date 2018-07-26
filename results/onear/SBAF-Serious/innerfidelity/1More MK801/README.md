@@ -1,13 +1,13 @@
 # 1More MK801
 ### EqualizerAPO GraphicEQ
-If you are using HeSuVi, replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to -60.
+If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
 ```
 GraphicEQ: 10 -84; 20 5.6; 22 4.8; 23 4.5; 25 3.9; 26 3.5; 28 3.0; 30 2.5; 32 2.1; 35 1.6; 37 1.3; 40 1.0; 42 0.7; 45 0.5; 49 0.2; 52 0.1; 56 -0.1; 59 -0.2; 64 -0.4; 68 -0.5; 73 -0.7; 78 -0.9; 83 -1.1; 89 -1.3; 95 -1.5; 102 -1.9; 109 -2.1; 117 -2.4; 125 -2.8; 134 -3.1; 143 -3.3; 153 -3.5; 164 -3.4; 175 -3.1; 188 -3.4; 201 -3.5; 215 -3.5; 230 -3.4; 246 -3.3; 263 -3.1; 282 -2.7; 301 -2.3; 323 -1.7; 345 -1.2; 369 -0.8; 395 -0.3; 423 0.3; 452 1.1; 484 1.7; 518 2.1; 554 2.2; 593 2.3; 635 2.1; 679 1.6; 726 1.1; 777 1.5; 832 2.3; 890 1.5; 952 0.5; 1019 -0.1; 1090 -0.2; 1167 0.1; 1248 0.5; 1336 1.0; 1429 1.4; 1529 1.9; 1636 2.5; 1751 3.2; 1873 3.9; 2004 4.5; 2145 4.7; 2295 4.8; 2455 5.0; 2627 5.0; 2811 4.6; 3008 4.5; 3219 4.4; 3444 4.9; 3685 5.4; 3943 5.0; 4219 2.6; 4514 2.9; 4830 3.0; 5168 4.8; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
+If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
 ```
 GraphicEQ: 10 -84; 20 5.6; 22 4.8; 23 4.5; 25 3.9; 26 3.5; 28 3.0; 30 2.5; 32 2.1; 35 1.6; 37 1.3; 40 1.0; 42 0.7; 45 0.5; 49 0.2; 52 0.1; 56 -0.1; 59 -0.2; 64 -0.4; 68 -0.5; 73 -0.7; 78 -0.9; 83 -1.1; 89 -1.3; 95 -1.5; 102 -1.9; 109 -2.1; 117 -2.4; 125 -2.8; 134 -3.1; 143 -3.3; 153 -3.5; 164 -3.4; 175 -3.1; 188 -3.4; 201 -3.5; 215 -3.5; 230 -3.4; 246 -3.3; 263 -3.1; 282 -2.7; 301 -2.3; 323 -1.7; 345 -1.2; 369 -0.8; 395 -0.3; 423 0.3; 452 1.1; 484 1.7; 518 2.1; 554 2.2; 593 2.3; 635 2.1; 679 1.6; 726 1.1; 777 1.5; 832 2.3; 890 1.5; 952 0.5; 1019 -0.1; 1090 -0.2; 1167 0.1; 1248 0.5; 1336 1.0; 1429 1.4; 1529 1.9; 1636 2.5; 1751 3.2; 1873 3.9; 2004 4.5; 2145 4.7; 2295 4.8; 2455 5.0; 2627 5.0; 2811 4.6; 3008 4.5; 3219 4.4; 3444 4.9; 3685 5.4; 3943 5.0; 4219 2.6; 4514 2.9; 4830 3.0; 5168 4.8; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 Copy: L=-6.0dB*l, R=-6.0dB*R
 ```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using Peace.
+EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/onear/SBAF-Serious/innerfidelity/1More%20MK801/1More%20MK801.png)

@@ -1,4 +1,4 @@
-# Run 2018-07-26T10:45:09.475151
+# Run 2018-07-26T10:49:47.690932
 There results were obtained with parameters:
 * `--input_dir="innerfidelity\data\test"`
 * `--output_dir="results\onear\SBAF-Serious\innerfidelity"`
