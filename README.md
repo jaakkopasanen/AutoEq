@@ -23,6 +23,9 @@ numerical format. Everything is stored as CSV files so they are easy to process 
 Microsoft Excel. See [Compensation](), [Calibration]() and [Data Processing]() for more technical description about how
 things were obtained and processed.
 
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/onear/SBAF-Serious-brighter/innerfidelity/HiFiMAN%20HE400S/HiFiMAN%20HE400S.png)
+HiFiMAN HE400S equalization results plotted
+
 
 ### Usage
 Equalization settings produced by AutoEQ are EqualizerAPO GraphicEQ configuration lines, one for each headphone
@@ -37,7 +40,7 @@ contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\config.txt` w
 start HeSuVi and adjust global volume for both channels to highest eq value. You can save the configuration with profile
 manager in bottom right corner.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi.PNG)
 
 It is also possible to use EqualizerAPO without any graphical user interface by copying the result into the end of the
 EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`. EqualizerAPO will update live as
@@ -54,9 +57,47 @@ doesn't work with GraphicEQ and you don't want to have two EQs on at the same ti
 for Peace users could be a consideration for the future if enough people want it.
 
 ### Results
-- Links to sources
-- Usage with HeSuVi
-- Parameters used
+The main princible used by AutoEQ for producing the equalization function is to invert error function. Error is the
+difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
+below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. In reality simply inverting the error is
+not sufficient since measurements and equalization have several problems that need to be addressed, see
+[Technical Challenges]() for more details.
+
+Results provided in this project have all the on-ear headphone measurements from
+[Innerfidelity](https://www.innerfidelity.com/headphone-measurements) and [Headphone.com](http://graphs.headphone.com/)
+with 4 different target responses:
+- Innerfidelity 2017
+- Headphone.com
+- Modified version of Innerfidelity target by @Serious user on Super Best Audio Friends forum
+- Sonoma Model One measurement by Innerfidelity
+
+All but the Headphone.com compensation curve are targeted to Innerfidelity measurements. But all targets have results
+also for Headphone.com data, in these cases the Headphone.com data was calibrated to Innerfidelity measurement system
+before applying the compensation.
+
+Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
+reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
+curve seems to underestimate 2 to 5 kHZ region by several dB leading the equalization to boost those frequencies too
+much.
+
+Headphone.com compensation curve is used by Headphone.com with their Frequency Response graphs but this seems to
+underestimate treble even more than the 2017 Innerfidelity curve leading to even brighter equalization.
+
+Recommended compensation curve is the modified version of Innerfidelity target curve produced by Serious user on Super
+Best Audio Friends forum. This curve doesn't have the glaring treble problems of previously mentioned targets but is
+quite well balanced overall. Curve was turned into a compensation for raw microphone data and tilted 0.3 dB / octave
+brighter. See the [forum thread](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
+for discussion about the original target.
+
+Fourth target is the raw measurement data of Sonoma Model One headphone system as measured by Innerfidelity. This is an
+experiment in equalizing headphones to sound like other headphones. Sonoma Model One is reasonably neutrally tuned
+headphone and as such work as a quite good equalization target. I personally prefer the modified SBAF-Serious target
+though.
+
+None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
+results. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain (boost) is
+applied. In the upper treble measurements are less reliable and boosting them too much will cause serious problem while
+having some narrow dips is not a problem at all.
 
 ### Equalizing
 - Installing
