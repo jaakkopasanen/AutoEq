@@ -2,7 +2,6 @@
 
 ### Todo
 - Separate results by source and tuning
-- README in batch result directory with parameters
 
 ### Documentation
   - Results

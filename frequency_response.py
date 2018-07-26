@@ -45,46 +45,32 @@ class FrequencyResponse:
                  error_smoothed=None,
                  equalization=None,
                  equalized_raw=None,
-                 equalized_smoothed=None):
+                 equalized_smoothed=None,
+                 target=None):
         self.name = name.strip()
 
-        self.frequency = frequency if frequency is not None else self.generate_frequencies()
-        self.frequency = [None if x is None or math.isnan(x) else x for x in self.frequency]
-        self.frequency = np.array(self.frequency)
+        self.frequency = self._init_data(frequency)
+        if not len(self.frequency):
+            self.frequency = self.generate_frequencies()
 
-        self.raw = raw if raw is not None else []
-        self.raw = [None if x is None or math.isnan(x) or x is None else x for x in self.raw]
-        self.raw = np.array(self.raw)
-
-        self.error = error if error is not None else []
-        self.error = [None if x is None or math.isnan(x) or x is None else x for x in self.error]
-        self.error = np.array(self.error)
-
-        self.smoothed = error_smoothed if error_smoothed is not None else []
-        self.smoothed = [None if x is None or math.isnan(x) or x is None else x for x in self.smoothed]
-        self.smoothed = np.array(self.smoothed)
-
-        self.error_smoothed = smoothed if smoothed is not None else []
-        self.error_smoothed = [None if x is None or math.isnan(x) or x is None else x for x in self.error_smoothed]
-        self.error_smoothed = np.array(self.smoothed)
-
-        self.equalization = equalization if equalization is not None else []
-        self.equalization = [None if x is None or math.isnan(x) or x is None else x for x in self.equalization]
-        self.equalization = np.array(self.equalization)
-
-        self.equalized_raw = equalized_raw if equalized_raw is not None else []
-        self.equalized_raw = [None if x is None or math.isnan(x) else x for x in self.equalized_raw]
-        self.equalized_raw = np.array(self.equalized_raw)
-
-        self.equalized_smoothed = equalized_smoothed if equalized_smoothed is not None else []
-        self.equalized_smoothed = [None if x is None or math.isnan(x) else x for x in self.equalized_smoothed]
-        self.equalized_smoothed = np.array(self.equalized_smoothed)
-
-        self.target = np.array([])
-        self.rounded_frequencies = np.array([])
-        self.rounded_equalization = np.array([])
+        self.raw = self._init_data(raw)
+        self.smoothed = self._init_data(smoothed)
+        self.error = self._init_data(error)
+        self.error_smoothed = self._init_data(error_smoothed)
+        self.equalization = self._init_data(equalization)
+        self.equalized_raw = self._init_data(equalized_raw)
+        self.equalized_smoothed = self._init_data(equalized_smoothed)
+        self.target = self._init_data(target)
 
         self._sort()
+
+    @staticmethod
+    def _init_data(data):
+        """Initializes data to a clean format. If None is passed and empty array is created. Non-numbers are removed."""
+        data = data if data is not None else []
+        data = [None if x is None or math.isnan(x) else x for x in data]
+        data = np.array(data)
+        return data
 
     def _sort(self):
         sorted_inds = self.frequency.argsort()
@@ -103,6 +89,46 @@ class FrequencyResponse:
             self.equalized_raw = self.equalized_raw[sorted_inds]
         if len(self.equalized_smoothed):
             self.equalized_smoothed = self.equalized_smoothed[sorted_inds]
+        if len(self.target):
+            self.target = self.target[sorted_inds]
+
+    def reset(self,
+              raw=False,
+              smoothed=True,
+              error=True,
+              error_smoothed=True,
+              equalization=True,
+              equalized_raw=True,
+              equalized_smoothed=True,
+              target=True):
+        """Resets data."""
+        if (
+                (raw and len(self.raw)) or
+                (smoothed and len(self.smoothed)) or
+                (error and len(self.error)) or
+                (error_smoothed and len(self.error_smoothed)) or
+                (equalization and len(self.equalization)) or
+                (equalized_raw and len(self.equalized_raw)) or
+                (equalized_smoothed and len(self.equalized_smoothed)) or
+                (target and len(self.target))
+        ):
+            warn('Resetting data, existing results will be affected!')
+        if raw:
+            self.raw = self._init_data(None)
+        if smoothed:
+            self.smoothed = self._init_data(None)
+        if error:
+            self.error = self._init_data(None)
+        if error_smoothed:
+            self.error_smoothed = self._init_data(None)
+        if equalization:
+            self.equalization = self._init_data(None)
+        if equalized_raw:
+            self.equalized_raw = self._init_data(None)
+        if equalized_smoothed:
+            self.equalized_smoothed = self._init_data(None)
+        if target:
+            self.target = self._init_data(None)
 
     @classmethod
     def read_from_csv(cls, file_path):
@@ -118,6 +144,7 @@ class FrequencyResponse:
         equalization = list(df['equalization']) if 'equalization' in df else None
         equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
         equalized_smoothed = list(df['equalized_smoothed']) if 'equalized_smoothed' in df else None
+        target = list(df['target']) if 'target' in df else None
 
         return cls(
             name=name,
@@ -127,7 +154,8 @@ class FrequencyResponse:
             smoothed=smoothed,
             equalization=equalization,
             equalized_raw=equalized_raw,
-            equalized_smoothed=equalized_smoothed
+            equalized_smoothed=equalized_smoothed,
+            target=target
         )
 
     def write_to_csv(self, file_path=None):
@@ -143,13 +171,15 @@ class FrequencyResponse:
         if len(self.smoothed):
             df['smoothed'] = [x if x is not None else 'NaN' for x in self.smoothed]
         if len(self.error_smoothed):
-            df['smoothed'] = [x if x is not None else 'NaN' for x in self.error_smoothed]
+            df['error_smoothed'] = [x if x is not None else 'NaN' for x in self.error_smoothed]
         if len(self.equalization):
             df['equalization'] = [x if x is not None else 'NaN' for x in self.equalization]
         if len(self.equalized_raw):
             df['equalized_raw'] = [x if x is not None else 'NaN' for x in self.equalized_raw]
         if len(self.equalized_smoothed):
             df['equalized_smoothed'] = [x if x is not None else 'NaN' for x in self.equalized_smoothed]
+        if len(self.target):
+            df['target'] = [x if x is not None else 'NaN' for x in self.target]
         df.to_csv(file_path, header=True, index=False)
 
     def write_eqapo_graphic_eq(self, file_path):
@@ -225,7 +255,7 @@ class FrequencyResponse:
 
         # Write file
         with open(file_path, 'w') as f:
-            f.write('\n'.join(lines))
+            f.write('\n'.join(lines) + '\n')
 
     @staticmethod
     def generate_frequencies(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=DEFAULT_STEP):
@@ -244,7 +274,7 @@ class FrequencyResponse:
         return np.array(freq_new)
 
     def interpolate(self, f=None, f_step=DEFAULT_STEP, pol_order=1, f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX):
-        """Interpolates missing values from previous and next value."""
+        """Interpolates missing values from previous and next value. Resets all but raw data."""
         # Remove None values
         i = 0
         while i < len(self.raw):
@@ -260,18 +290,84 @@ class FrequencyResponse:
         else:
             self.frequency = f
         self.raw = interpolator(np.log10(self.frequency))
+        # Everything but raw data is affected by interpolating, reset them
+        self.reset(raw=False)
+
+    def calibrate(self, calibration):
+        """Calibrates measurement to match calibration. Changes raw data."""
+        self.raw -= calibration.raw
+        # Everything but raw data is affected by calibrating, reset them
+        self.reset(raw=False)
 
     def center(self):
         """Removed bias from frequency response."""
         interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=1)
         diff = interpolator(np.log10(1000))
         self.raw -= diff
-        self.error -= diff
-        self.smoothed -= diff
-        self.error_smoothed -= diff
-        self.equalization -= diff
-        self.equalized_raw -= diff
-        self.equalized_smoothed -= diff
+        if len(self.smoothed):
+            self.smoothed -= diff
+        # Everything but raw, smoothed and target is affected by centering, reset them
+        self.reset(raw=False, smoothed=False, target=False)
+
+    def _tilt(self, tilt=DEFAULT_TILT):
+        """Creates a tilt for equalization.
+
+        Args:
+            tilt: Slope steepness in dB/octave
+
+        Returns:
+            Tilted data
+        """
+        # Center in logarithmic scale
+        c = DEFAULT_F_MIN * np.sqrt(DEFAULT_F_MAX / DEFAULT_F_MIN)
+        # N octaves above center
+        n_oct = np.log2(self.frequency / c)
+        return n_oct * tilt
+
+    def _target(self, bass_boost=DEFAULT_BASS_BOOST, tilt=DEFAULT_TILT):
+        """Creates target curve with bass boost as described by harman target response.
+
+        Args:
+            bass_boost: Bass boost in dB
+
+        Returns:
+            Target for equalization
+        """
+        bass_boost = self._sigmoid(
+            f_lower=BASS_BOOST_F_LOWER,
+            f_upper=BASS_BOOST_F_UPPER,
+            a_normal=bass_boost,
+            a_treble=0.0
+        )
+        tilt = self._tilt(tilt=tilt)
+        return bass_boost + tilt
+
+    def compensate(self, compensation, bass_boost=DEFAULT_BASS_BOOST, tilt=DEFAULT_TILT):
+        """Calibrates raw frequency response data with compensation array. Doesn't change raw data."""
+        # Copy and center compensation data
+        compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
+        compensation.smoothen(
+            window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
+            iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS
+        )
+        compensation.center()
+        compensation.raw = compensation.smoothed
+        compensation.smoothed = np.array([])
+        # Set target
+        self.target = compensation.raw + self._target(bass_boost=bass_boost, tilt=tilt)
+        # Set error
+        self.error = self.raw - self.target
+        # Smoothed error and equalization results are affected by compensation, reset them
+        self.reset(
+            raw=False,
+            smoothed=False,
+            error=False,
+            error_smoothed=True,
+            equalization=True,
+            equalized_raw=True,
+            equalized_smoothed=True,
+            target=False
+        )
 
     def _window_size(self, octaves):
         """Calculates moving average window size in indices from octaves."""
@@ -391,76 +487,17 @@ class FrequencyResponse:
                 treble_f_upper=treble_f_upper
             )
 
-    def compensate(self, compensation, bass_boost=DEFAULT_BASS_BOOST, tilt=DEFAULT_TILT):
-        """Calibrates raw frequency response data with compensation array. Doesn't change raw data."""
-        # Copy and center compensation data
-        compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
-        compensation.smoothen(
-            window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
-            iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS
+        # Equalization is affected by smoothing, reset equalization results
+        self.reset(
+            raw=False,
+            smoothed=False,
+            error=False,
+            error_smoothed=False,
+            equalization=True,
+            equalized_raw=True,
+            equalized_smoothed=True,
+            target=False
         )
-        compensation.center()
-        compensation.raw = compensation.smoothed
-        compensation.smoothed = np.array([])
-        # Calculate difference and adjust data
-        self.target = compensation.raw + self._target(bass_boost=bass_boost, tilt=tilt)
-        error_new = self.raw - self.target
-        if len(self.error):
-            # Already error, calculate difference between new and old compensation
-            diff = error_new - self.error
-            self.smoothed -= diff
-            self.error_smoothed -= diff
-            self.equalization -= diff
-            self.equalized_raw -= diff
-            self.equalized_smoothed -= diff
-        self.error = error_new
-
-    def calibrate(self, calibration):
-        """Calibrates measurement to match calibration. Changes raw data."""
-        error_new = self.raw - calibration.raw
-        if len(self.error):
-            # Already error, calculate difference between new and old compensation
-            diff = error_new - self.error
-            self.error = error_new
-            self.smoothed -= diff
-            self.error_smoothed -= diff
-            self.equalization -= diff
-            self.equalized_raw -= diff
-            self.equalized_smoothed -= diff
-        self.raw -= calibration.raw
-
-    def _tilt(self, tilt=DEFAULT_TILT):
-        """Creates a tilt for equalization.
-
-        Args:
-            tilt: Slope steepness in dB/octave
-
-        Returns:
-            Tilted data
-        """
-        # Center in logarithmic scale
-        c = DEFAULT_F_MIN * np.sqrt(DEFAULT_F_MAX / DEFAULT_F_MIN)
-        # N octaves above center
-        n_oct = np.log2(self.frequency / c)
-        return n_oct * tilt
-
-    def _target(self, bass_boost=DEFAULT_BASS_BOOST, tilt=DEFAULT_TILT):
-        """Creates target curve with bass boost as described by harman target response.
-
-        Args:
-            bass_boost: Bass boost in dB
-
-        Returns:
-            Target for equalization
-        """
-        bass_boost = self._sigmoid(
-            f_lower=BASS_BOOST_F_LOWER,
-            f_upper=BASS_BOOST_F_UPPER,
-            a_normal=bass_boost,
-            a_treble=0.0
-        )
-        tilt = self._tilt(tilt=tilt)
-        return bass_boost + tilt
 
     def equalize(self,
                  max_gain=DEFAULT_MAX_GAIN,
@@ -534,8 +571,6 @@ class FrequencyResponse:
             e = np.array([x for i, x in enumerate(self.equalization) if i not in doomed_inds])
             interpolator = InterpolatedUnivariateSpline(np.log10(f), e, k=2)
             self.equalization = interpolator(np.log10(self.frequency))
-            self.rounded_frequencies = self.frequency[doomed_inds]
-            self.rounded_equalization = self.equalization[doomed_inds]
         else:
             self.equalization = np.array(self.equalization)
 
@@ -692,10 +727,15 @@ class FrequencyResponse:
         # Dir paths to absolute
         input_dir = os.path.abspath(input_dir)
         output_dir = os.path.abspath(output_dir)
+        glob_files = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)
+        if len(glob_files) == 0:
+            warn('No CSV files found in "{}"'.format(input_dir))
+            return
+
         readme_path = os.path.join(output_dir, 'README.md')
         old_readme = os.path.isfile(readme_path)  # Readme exists before writing headphone readmes, safe to overwrite
 
-        for file_path in glob(os.path.join(input_dir, '**', '*.csv'), recursive=True):
+        for file_path in glob_files:
             # Read data from input file
             fr = FrequencyResponse.read_from_csv(file_path)
 
@@ -713,12 +753,12 @@ class FrequencyResponse:
                 # Calibrate
                 fr.calibrate(calibration)
 
+            # Center by 1kHz
+            fr.center()
+
             if compensation is not None:
                 # Compensate
                 fr.compensate(compensation, bass_boost=bass_boost, tilt=tilt)
-
-            # Center by 1kHz
-            fr.center()
 
             # Smooth data
             fr.smoothen(
@@ -763,23 +803,30 @@ class FrequencyResponse:
                 fig, ax = fr.plot_graph(show=show_plot)
                 plt.close(fig)
 
+        lines = ['# Run {}'.format(datetime.now().isoformat())]
+        lines.append('There results were obtained with parameters:')
+        lines.append('* `--input_dir="{}"`'.format(os.path.relpath(input_dir, ROOT_DIR)))
+        lines.append('* `--output_dir="{}"`'.format(os.path.relpath(output_dir, ROOT_DIR)))
+        if calibration is not None:
+            lines.append('* `--calibration="{}"`'.format(os.path.relpath(calibration_path, ROOT_DIR)))
+        if compensation is not None:
+            lines.append('* `--compensation="{}"`'.format(os.path.relpath(compensation_path, ROOT_DIR)))
+        lines.append('* `--bass_boost={}`'.format(bass_boost))
+        lines.append('* `--tilt={}`'.format(tilt))
+        lines.append('* `--max_gain={}`'.format(max_gain))
+        lines.append('* `--treble_f_lower={}`'.format(treble_f_lower))
+        lines.append('* `--treble_f_upper={}`'.format(treble_f_upper))
+        lines.append('* `--treble_max_gain={}`'.format(treble_max_gain))
+        lines.append('* `--treble_gain_k={}`'.format(treble_gain_k))
+
         # Write parameters to run README.md
-        if not os.path.isfile(readme_path) or old_readme:
-            lines = ['# Run {}'.format(datetime.now().isoformat())]
-            lines.append('There results were obtained with parameters:')
-            lines.append('* `--input_dir="{}"`'.format(os.path.relpath(input_dir, ROOT_DIR)))
-            lines.append('* `--output_dir="{}"`'.format(os.path.relpath(output_dir, ROOT_DIR)))
-            if calibration is not None:
-                lines.append('* `--calibration="{}"`'.format(os.path.relpath(calibration_path, ROOT_DIR)))
-            if compensation is not None:
-                lines.append('* `--compensation="{}"`'.format(os.path.relpath(compensation_path, ROOT_DIR)))
-            lines.append('* `--bass_boost={}`'.format(bass_boost))
-            lines.append('* `--tilt={}`'.format(tilt))
-            lines.append('* `--max_gain={}`'.format(max_gain))
-            lines.append('* `--treble_f_lower={}`'.format(treble_f_lower))
-            lines.append('* `--treble_f_upper={}`'.format(treble_f_upper))
-            lines.append('* `--treble_max_gain={}`'.format(treble_max_gain))
-            lines.append('* `--treble_gain_k={}`'.format(treble_gain_k))
+        if os.path.isfile(readme_path) and not old_readme:
+            # Directory already contains a README.md written for a single headphone
+            # Add to the end of the README
+            with open(readme_path, 'a') as f:
+                f.write('\n' + '\n'.join(lines))
+        else:
+            # README.md doesn't exist or old README.md from previous run, safe to overwrite
             with open(readme_path, 'w') as f:
                 f.write('\n'.join(lines))
 
