@@ -739,7 +739,7 @@ class FrequencyResponse:
             return
 
         readme_path = os.path.join(output_dir, 'README.md')
-        old_readme = os.path.isfile(readme_path)  # Readme exists before writing headphone readmes, safe to overwrite
+        readme_occupied = False
 
         for file_path in glob_files:
             # Read data from input file
@@ -803,7 +803,10 @@ class FrequencyResponse:
                     print('Equalized "{}"'.format(fr.name))
 
                 # Write README.md
-                fr.write_readme(os.path.join(dir_path, 'README.md'))
+                _readme_path = os.path.join(dir_path, 'README.md')
+                fr.write_readme(_readme_path)
+                if _readme_path == readme_path:
+                    readme_occupied = True
 
             elif show_plot:
                 fig, ax = fr.plot_graph(show=show_plot)
@@ -826,12 +829,14 @@ class FrequencyResponse:
         lines.append('* `--treble_gain_k={}`'.format(treble_gain_k))
 
         # Write parameters to run README.md
-        if os.path.isfile(readme_path) and not old_readme:
+        if readme_occupied:
+            print('append')
             # Directory already contains a README.md written for a single headphone
             # Add to the end of the README
             with open(readme_path, 'a') as f:
                 f.write('\n' + '\n'.join(lines))
         else:
+            print('write')
             # README.md doesn't exist or old README.md from previous run, safe to overwrite
             with open(readme_path, 'w') as f:
                 f.write('\n'.join(lines))
