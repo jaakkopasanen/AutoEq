@@ -34,9 +34,9 @@ processed. They look like this:
 ````
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 5.9; 45 5.7; 49 5.4; 52 5.2; 56 4.9; 59 4.7; 64 4.3; 68 4.1; 73 3.8; 78 3.5; 83 3.2; 89 2.8; 95 2.4; 102 2.1; 109 1.7; 117 1.2; 125 0.8; 134 0.5; 143 0.3; 153 0.2; 164 0.1; 175 0.1; 188 0.1; 201 0.1; 215 0.2; 230 0.3; 246 0.4; 263 0.3; 282 0.3; 301 0.2; 323 0.1; 345 0.0; 369 0.0; 395 -0.2; 423 0.3; 452 0.5; 484 0.9; 518 1.2; 554 1.1; 593 1.1; 635 1.0; 679 1.0; 726 0.8; 777 0.6; 832 0.3; 890 0.1; 952 -0.1; 1019 -0.1; 1090 -0.1; 1167 0.7; 1248 0.5; 1336 0.1; 1429 -0.1; 1529 0.1; 1636 0.3; 1751 0.7; 1873 1.3; 2004 1.7; 2145 1.7; 2295 2.4; 2455 2.7; 2627 3.0; 2811 2.4; 3008 2.3; 3219 2.5; 3444 2.6; 3685 2.6; 3943 2.4; 4219 0.7; 4514 -0.1; 4830 2.1; 5168 5.4; 5530 6.0; 5917 4.2; 6331 1.9; 6775 2.1; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ````
-HeSuVi is highly recommended to be used with AutoEQ results. HeSuVi provides a convenient graphical user interface for
+[HeSuVi](https://sourceforge.net/projects/hesuvi/) is highly recommended to be used with AutoEQ results. HeSuVi provides a convenient graphical user interface for
 adjusting the equalizer, toggling eq on and off, adjusting preamp and saving and restoring multiple different
-configurations making it very easy to compare different eq settings. To load a eq into HeSuVi, close HeSuVi and replace
+configurations making it very easy to compare different eq settings. To load an eq into HeSuVi, close HeSuVi and replace
 contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\config.txt` with the produced GraphicEQ line. Then
 start HeSuVi and adjust global volume for both channels to highest eq value. You can save the configuration with profile
 manager in bottom right corner.
@@ -77,8 +77,8 @@ also for Headphone.com data, in these cases the Headphone.com data was calibrate
 before applying the compensation.
 
 Recommended compensation curve is the modified version of Innerfidelity target curve produced by Serious user on Super
-Best Audio Friends forum. This curve doesn't have the glaring treble problems of previously mentioned targets but is
-quite well balanced overall. Curve was turned into a compensation for raw microphone data and tilted 0.3 dB / octave
+Best Audio Friends forum. This curve doesn't have the glaring problems but is
+quite well balanced overall. Curve was turned into a compensation for raw microphone data and tilted 0.2 dB / octave
 brighter. See the [forum thread](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 for discussion about the original target. `innerfidelity/resources/innerfidelity_compensation_SBAF-Serious-brighter.csv`
 
@@ -93,7 +93,7 @@ underestimate treble even more than the 2017 Innerfidelity curve leading to even
 
 Fourth target is the raw measurement data of Sonoma Model One headphone system as measured by Innerfidelity. This is an
 experiment in equalizing headphones to sound like other headphones. Sonoma Model One is reasonably neutrally tuned
-headphone and as such work as a quite good equalization target. I personally prefer the modified SBAF-Serious target
+headphone and as such works as a quite good equalization target. I personally prefer the modified SBAF-Serious target
 though. `innerfidelity/data/onear/Sonoma Model One/Sonoma Model One.csv`
 
 None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
@@ -102,7 +102,7 @@ applied. In the upper treble measurements are less reliable and boosting them to
 having some narrow dips is not a problem at all.
 
 ### Equalizing
-`frequency_response.py` is the tool used to produce the equalization results from data measurement data. There is no
+`frequency_response.py` is the tool used to produce the equalization results from measurement data. There is no
 fancy graphical user interface but instead it is used from command line.
 
 #### Installing
@@ -279,13 +279,13 @@ calibration data in `frequency_response.py` the curve is subtracted for raw data
 must not be applied!
 
 ### Technical Challenges
-Simply inverting headphone frequency response deviation from target response does not usually produce sufficient.
-results. Some problems are caused by imperfections in measurements, some reliability issues and some are practical
+Simply inverting headphone frequency response deviation from target response does not usually produce sufficient
+results. Some problems are caused by imperfections in measurements, some are reliability issues and some are practical
 end-user problems. Rtings has a good [video on Youtube](https://www.youtube.com/watch?v=HNEI3qLZEKo) about measurement
 system challenges and solutions which is definitely worth checking out. Innerfidelity also has a very
 educational [video on Youtube](https://www.youtube.com/watch?v=SDRHFNfFCFU) about measurments and what constitutes as a
 neutral sound. Main takeoffs are that bass and treble measurements are very inconsistent, neutral sound is not very well
-defined yet and on-ear headphones have big reliability problems in 8 to 9kHZ range due to resonances which move when
+defined yet and on-ear headphones have big reliability problems in 8 to 9kHz range due to resonances which move when
 headphone placement is changed. Harman international has done some solid research into preferred headphone frequency
 response but since that research was done on a different measurement system the target does not apply directly to
 Innerfidelity (Summer 2018) and Headphone.com measurements.
@@ -300,7 +300,7 @@ Moving resonances around 8 to 9kHZ may cause big problems if not taken into acco
 of great amplitude and very narrow. If one equalizes these spikes and dips according to frequency response measurement
 in worst case scenario a spike will move in a place of dip when headphone is moved and therefore the spike is amplified
 significantly leading to very sharp and piercing sound signature. To counter these problems by default AutoEQ uses heavy
-smoothing and limited positive gain above 6 to 8kHZ. This way the equalization will follow a broader trend of the region
+smoothing and limited positive gain above 6 to 8kHz. This way the equalization will follow a broader trend of the region
 and will not care so much about narrow spikes and dips. Also positive gain is limited to 0dB as an extra safety measure
 against amplifying moved spike. Suppressing a narrow dip even further is not an optimal thing to do but in practice has
 little negative effect on the sound. Both of these measures will also alleviate upper treble measurement inconsistencies
@@ -323,7 +323,7 @@ all. The old compensation curve was then applied in inverse to turn the compensa
 raw microphone data is stored in `innerfidelity/data`. On-ear, in-ear and ear-bud data is separated because they ask for
 different AutoEQ parameters.
 
-Headphone.com measurements were downloaded as images, bot raw and compensated data. Images were parsed into numerical
+Headphone.com measurements were downloaded as images, both raw and compensated data. Images were parsed into numerical
 format and raw data saved to `headphonecom/data`. Both datas were used to obtain Headphone.com compensation curve by
 calculating differences between raw and compensated data.
 
