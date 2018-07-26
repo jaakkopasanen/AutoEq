@@ -67,14 +67,20 @@ not sufficient since measurements and equalization have several problems that ne
 Results provided in this project have all the on-ear headphone measurements from
 [Innerfidelity](https://www.innerfidelity.com/headphone-measurements) and [Headphone.com](http://graphs.headphone.com/)
 with 4 different target responses:
+- Modified version of Innerfidelity target by @Serious user on Super Best Audio Friends forum
 - Innerfidelity 2017
 - Headphone.com
-- Modified version of Innerfidelity target by @Serious user on Super Best Audio Friends forum
 - Sonoma Model One measurement by Innerfidelity
 
 All but the Headphone.com compensation curve are targeted to Innerfidelity measurements. But all targets have results
 also for Headphone.com data, in these cases the Headphone.com data was calibrated to Innerfidelity measurement system
 before applying the compensation.
+
+Recommended compensation curve is the modified version of Innerfidelity target curve produced by Serious user on Super
+Best Audio Friends forum. This curve doesn't have the glaring treble problems of previously mentioned targets but is
+quite well balanced overall. Curve was turned into a compensation for raw microphone data and tilted 0.3 dB / octave
+brighter. See the [forum thread](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
+for discussion about the original target.
 
 Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
 reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
@@ -83,12 +89,6 @@ much.
 
 Headphone.com compensation curve is used by Headphone.com with their Frequency Response graphs but this seems to
 underestimate treble even more than the 2017 Innerfidelity curve leading to even brighter equalization.
-
-Recommended compensation curve is the modified version of Innerfidelity target curve produced by Serious user on Super
-Best Audio Friends forum. This curve doesn't have the glaring treble problems of previously mentioned targets but is
-quite well balanced overall. Curve was turned into a compensation for raw microphone data and tilted 0.3 dB / octave
-brighter. See the [forum thread](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
-for discussion about the original target.
 
 Fourth target is the raw measurement data of Sonoma Model One headphone system as measured by Innerfidelity. This is an
 experiment in equalizing headphones to sound like other headphones. Sonoma Model One is reasonably neutrally tuned
@@ -245,6 +245,8 @@ Viewing HiFiMAN HE400S raw microphone data
 python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400S" --show_plot
 ````
 
+Feel free to experiment more.
+
 #### More Data!
 If data for you headphone cannot be found in this project but you have an image of the frequency response you might be
 able to use [https://apps.automeris.io/wpd/](https://apps.automeris.io/wpd/) to parse the image. You'll have replace
@@ -252,11 +254,61 @@ all commas `,` in the produced file with point `.` and semi-colons `;` with comm
 example [Notepad++](https://notepad-plus-plus.org/) for this, just hit `Ctrl+h`
 
 ### Calibration
-- raw - calibration
-- Same headphone models selected from both
-- Difference in error calculated. Errors obtained by respective compensation curves.
-- Calibration data is to be subtracted from error data (compensated data)
-- Calibrating raw microphone data makes no sense because systems are different
+Innerfidelity and Headphone.com have different kind of measurement systems and since there is no any kind of standard
+calibration for headphone frequency response measurements the data produced by these systems are not directly compatible
+with each other. Same individual headphone will measure differently in the two systems. This actually applies for all of
+the existing measurement systems.
+
+To have comparable equalization results and to be able to use all compensation curves
+for both measurements a calibration was done. Calibration made is not as reliable as a real calibration where a set of
+reference headphones are measured on both systems and outputs compared but instead a same headphone models but different
+individual units were used. All headphones with same name were selected from Headphone.com measurement database and
+Innerfidelity measurement database and results were compared model-wise. Final calibration curve was produced by
+averaging all the measurement pairs and smoothing the averaged curve. This method is problematic because there are large
+differences between individual headphones due to manufacturing and placement on the measurement head. Standard deviation
+is quite high about 5dB at 20Hz but still it's probably closer to truth than not using any calibration at all.
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/calibration/headphonecom_raw_to_innerfidelity_raq.png)
+
+Pictured data is for calibrating Headphone.com measurement to Innerfidelity measurement or in other words estimating how
+an individual headphone measured by Headphone.com would look like if it was measured by Innerfidelity. When using
+calibration data in `frequency_response.py` the curve is subtracted for raw data.
+
+### Technical Challenges
+Simply inverting headphone frequency response deviation from target response does not usually produce sufficient.
+results. Some problems are caused by imperfections in measurements, some reliability issues and some are practical
+end-user problems. Rtings has a good [video on Youtube](https://www.youtube.com/watch?v=HNEI3qLZEKo) about measurement
+system challenges and solutions which is definitely worth checking out. Innerfidelity also has a very
+educational [video on Youtube](https://www.youtube.com/watch?v=SDRHFNfFCFU) about measurments and what constitutes as a
+neutral sound. Main takeoffs are that bass and treble measurements are very inconsistent, neutral sound is not very well
+defined yet and on-ear headphones have big reliability problems in 8 to 9kHZ range due to resonances which move when
+headphone placement is changed. Harman international has done some solid research into preferred headphone frequency
+response but since that research was done on a different measurement system the target does not apply directly to
+Innerfidelity (Summer 2018) and Headphone.com measurements.
+
+There is very little that can be done for fighting bass inconsistencies because the same problems will be there whether
+equalization is used or not. Headphones simply have different bass responses on different listeners (heads). Therefore
+bass is taken as is in AutoEQ and equalized as if there was nothing wrong with it. You're mileage may wary. Luckily bass
+has smaller impact on music and having too much bass (especially sub-bass) doesn't create problems of the same magnitude
+as having too much treble.
+
+Moving resonances around 8 to 9kHZ may cause big problems if not taken into account. Spikes and dips in this range are
+of great amplitude and very narrow. If one equalizes these spikes and dips according to frequency response measurement
+in worst case scenario a spike will move in a place of dip when headphone is moved and therefore the spike is amplified
+significantly leading to very sharp and piercing sound signature. To counter these problems by default AutoEQ uses heavy
+smoothing and limited positive gain above 6 to 8kHZ. This way the equalization will follow a broader trend of the region
+and will not care so much about narrow spikes and dips. Also positive gain is limited to 0dB as an extra safety measure
+against amplifying moved spike. Suppressing a narrow dip even further is not an optimal thing to do but in practice has
+little negative effect on the sound. Both of these measures will also alleviate upper treble measurement inconsistencies
+above 11 to 12 kHz.
+
+A practical end-user problem is if too high positive gain is allowed which asks for equal amount of negative digital
+pre-amp to prevent clipping. This negative preamp will limit maximum volume produced by the system if there is no analog
+gain available. If a dedicated headphone amplifier is available or if the motherboard/soundcard can drive the headphones
+loud enough even when using high negative preamp larger `--max_gain` values can be uses. By default `--max_gain` is set
+to +6dB to not to cripple user's volume too much. Max gain will clip the equalization curve which produces sharp kinks
+in it. Sharp changes in equalization may produce unwanted equalization artifacts. To counter this AutoEQ rounds the
+corners whenever max gain clips the curve.
 
 ### Data Processing
 - Not meant as a user friendly tool. Obtaining data needs to be done only once.
@@ -272,8 +324,3 @@ example [Notepad++](https://notepad-plus-plus.org/) for this, just hit `Ctrl+h`
     - Raw data images crawled. Compensated data images crawled. Images turned into data. All inspected manually.
     - Raw and compensated data used to produce compensation curve.
     - Only raw data kept.
-  
-### Technical Challenges
-- Smoothing
-- Interpolating
-- Max gain with smoothed corners
