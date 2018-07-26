@@ -80,20 +80,21 @@ Recommended compensation curve is the modified version of Innerfidelity target c
 Best Audio Friends forum. This curve doesn't have the glaring treble problems of previously mentioned targets but is
 quite well balanced overall. Curve was turned into a compensation for raw microphone data and tilted 0.3 dB / octave
 brighter. See the [forum thread](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
-for discussion about the original target.
+for discussion about the original target. `innerfidelity/resources/innerfidelity_compensation_SBAF-Serious-brighter.csv`
 
 Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
 reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
 curve seems to underestimate 2 to 5 kHZ region by several dB leading the equalization to boost those frequencies too
-much.
+much. `innerfidelity/resources/innerfidelity_compensation_2017.csv`
 
 Headphone.com compensation curve is used by Headphone.com with their Frequency Response graphs but this seems to
 underestimate treble even more than the 2017 Innerfidelity curve leading to even brighter equalization.
+`headphonecom/resources/headphonecom_compensation.csv`
 
 Fourth target is the raw measurement data of Sonoma Model One headphone system as measured by Innerfidelity. This is an
 experiment in equalizing headphones to sound like other headphones. Sonoma Model One is reasonably neutrally tuned
 headphone and as such work as a quite good equalization target. I personally prefer the modified SBAF-Serious target
-though.
+though. `innerfidelity/data/onear/Sonoma Model One/Sonoma Model One.csv`
 
 None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
 results. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain (boost) is
@@ -274,6 +275,9 @@ Pictured data is for calibrating Headphone.com measurement to Innerfidelity meas
 an individual headphone measured by Headphone.com would look like if it was measured by Innerfidelity. When using
 calibration data in `frequency_response.py` the curve is subtracted for raw data.
 
+**Warning** Using calibration will change the saved raw data and therefore when loading the result a new calibration
+must not be applied!
+
 ### Technical Challenges
 Simply inverting headphone frequency response deviation from target response does not usually produce sufficient.
 results. Some problems are caused by imperfections in measurements, some reliability issues and some are practical
@@ -311,16 +315,17 @@ in it. Sharp changes in equalization may produce unwanted equalization artifacts
 corners whenever max gain clips the curve.
 
 ### Data Processing
-- Not meant as a user friendly tool. Obtaining data needs to be done only once.
-- Innerfidelity
-    - Innerfidelity PDFs crawled. PDFs turned into images. Images turned into data. All inspected manually.
-    - Read data is the red and blue curves which are compensated with old compensation curve
-    - Compensation curve 2016 obtained from Innerfidelity image
-    - Compensation curve 2017 obtained from Innerfidelity image (see article...)
-    - Transformation curve made from compensation curves
-    - Data turned into raw data by adding compensation curve 2016
-    - Original data still saved
-- Headphone.com
-    - Raw data images crawled. Compensated data images crawled. Images turned into data. All inspected manually.
-    - Raw and compensated data used to produce compensation curve.
-    - Only raw data kept.
+Measurement data for this project was obtained by crawling Innerfidelity and Headphone.com databases. For Innerfidelity
+that means downloading all PDFs, turning them into images with Ghostscript, parsing images with Python PIL package and
+saving the numerical data. Numerical data obtained this way is an average of the blue and red curves in the frequency
+response. These curves have been compensated with the old compensation curve which does not match human perception at
+all. The old compensation curve was then applied in inverse to turn the compensated data into raw microphone data. This
+raw microphone data is stored in `innerfidelity/data`. On-ear, in-ear and ear-bud data is separated because they ask for
+different AutoEQ parameters.
+
+Headphone.com measurements were downloaded as images, bot raw and compensated data. Images were parsed into numerical
+format and raw data saved to `headphonecom/data`. Both datas were used to obtain Headphone.com compensation curve by
+calculating differences between raw and compensated data.
+
+Data processing tools are not meant as a user friendly and robust software but instead to be able to be ran once to
+obtain the raw data.
