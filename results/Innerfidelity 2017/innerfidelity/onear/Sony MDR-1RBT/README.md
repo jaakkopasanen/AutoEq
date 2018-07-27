@@ -1,13 +1,8 @@
 # Sony MDR-1RBT
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 1.2; 22 0.1; 23 -0.4; 25 -1.3; 26 -1.7; 28 -2.5; 30 -3.1; 32 -3.7; 35 -4.5; 37 -4.9; 40 -5.5; 42 -5.9; 45 -6.3; 49 -6.8; 52 -7.1; 56 -7.3; 59 -7.5; 64 -7.9; 68 -8.3; 73 -8.6; 78 -8.8; 83 -9.1; 89 -9.5; 95 -9.4; 102 -8.9; 109 -8.6; 117 -8.2; 125 -8.4; 134 -8.8; 143 -9.0; 153 -9.1; 164 -7.5; 175 -4.6; 188 -5.4; 201 -4.0; 215 -1.8; 230 -0.1; 246 2.3; 263 2.9; 282 4.1; 301 5.0; 323 4.2; 345 3.7; 369 3.2; 395 2.0; 423 0.4; 452 -0.7; 484 -1.2; 518 -0.7; 554 0.8; 593 1.7; 635 1.3; 679 0.4; 726 0.4; 777 1.7; 832 1.5; 890 0.3; 952 -0.1; 1019 0.1; 1090 0.6; 1167 0.2; 1248 -1.1; 1336 -1.6; 1429 -4.1; 1529 -5.1; 1636 -5.9; 1751 -7.4; 1873 -8.7; 2004 -8.5; 2145 -8.5; 2295 -7.8; 2455 -5.1; 2627 -2.2; 2811 -0.3; 3008 2.0; 3219 2.2; 3444 1.5; 3685 0.6; 3943 1.3; 4219 3.2; 4514 5.6; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.2; 8299 -2.2; 8880 -4.5; 9502 -3.9; 10167 -0.6; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 1.2; 22 0.1; 23 -0.4; 25 -1.3; 26 -1.7; 28 -2.5; 30 -3.1; 32 -3.7; 35 -4.5; 37 -4.9; 40 -5.5; 42 -5.9; 45 -6.3; 49 -6.8; 52 -7.1; 56 -7.3; 59 -7.5; 64 -7.9; 68 -8.3; 73 -8.6; 78 -8.8; 83 -9.1; 89 -9.5; 95 -9.4; 102 -8.9; 109 -8.6; 117 -8.2; 125 -8.4; 134 -8.8; 143 -9.0; 153 -9.1; 164 -7.5; 175 -4.6; 188 -5.4; 201 -4.0; 215 -1.8; 230 -0.1; 246 2.3; 263 2.9; 282 4.1; 301 5.0; 323 4.2; 345 3.7; 369 3.2; 395 2.0; 423 0.4; 452 -0.7; 484 -1.2; 518 -0.7; 554 0.8; 593 1.7; 635 1.3; 679 0.4; 726 0.4; 777 1.7; 832 1.5; 890 0.3; 952 -0.1; 1019 0.1; 1090 0.6; 1167 0.2; 1248 -1.1; 1336 -1.6; 1429 -4.1; 1529 -5.1; 1636 -5.9; 1751 -7.4; 1873 -8.7; 2004 -8.5; 2145 -8.5; 2295 -7.8; 2455 -5.1; 2627 -2.2; 2811 -0.3; 3008 2.0; 3219 2.2; 3444 1.5; 3685 0.6; 3943 1.3; 4219 3.2; 4514 5.6; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.2; 8299 -2.2; 8880 -4.5; 9502 -3.9; 10167 -0.6; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Sony%20MDR-1RBT/Sony%20MDR-1RBT.png)

@@ -1,13 +1,8 @@
 # Mr Speakers Alpha Prime
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 0.2; 22 0.0; 23 -0.1; 25 -0.2; 26 -0.3; 28 -0.4; 30 -0.4; 32 -0.4; 35 -0.5; 37 -0.5; 40 -0.5; 42 -0.5; 45 -0.5; 49 -0.4; 52 -0.4; 56 -0.5; 59 -0.4; 64 -0.3; 68 -0.2; 73 -0.2; 78 -0.2; 83 -0.3; 89 -0.4; 95 -0.5; 102 -0.5; 109 -0.5; 117 -0.6; 125 -0.8; 134 -1.4; 143 -1.8; 153 -1.7; 164 -1.0; 175 -0.4; 188 -0.9; 201 -1.0; 215 -1.1; 230 -0.8; 246 -0.9; 263 -1.0; 282 -1.0; 301 -0.9; 323 -0.9; 345 -1.0; 369 -0.9; 395 -0.6; 423 0.0; 452 -0.2; 484 -0.7; 518 -0.8; 554 -0.3; 593 -0.0; 635 0.6; 679 1.1; 726 0.1; 777 -0.2; 832 -0.5; 890 -0.7; 952 -0.5; 1019 0.2; 1090 0.1; 1167 0.2; 1248 0.6; 1336 1.3; 1429 1.1; 1529 1.1; 1636 1.2; 1751 2.2; 1873 3.2; 2004 4.3; 2145 4.8; 2295 4.9; 2455 5.1; 2627 5.1; 2811 5.4; 3008 5.8; 3219 5.9; 3444 6.0; 3685 6.0; 3943 6.0; 4219 5.7; 4514 3.4; 4830 1.6; 5168 1.0; 5530 0.8; 5917 0.6; 6331 0.1; 6775 1.2; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 0.2; 22 0.0; 23 -0.1; 25 -0.2; 26 -0.3; 28 -0.4; 30 -0.4; 32 -0.4; 35 -0.5; 37 -0.5; 40 -0.5; 42 -0.5; 45 -0.5; 49 -0.4; 52 -0.4; 56 -0.5; 59 -0.4; 64 -0.3; 68 -0.2; 73 -0.2; 78 -0.2; 83 -0.3; 89 -0.4; 95 -0.5; 102 -0.5; 109 -0.5; 117 -0.6; 125 -0.8; 134 -1.4; 143 -1.8; 153 -1.7; 164 -1.0; 175 -0.4; 188 -0.9; 201 -1.0; 215 -1.1; 230 -0.8; 246 -0.9; 263 -1.0; 282 -1.0; 301 -0.9; 323 -0.9; 345 -1.0; 369 -0.9; 395 -0.6; 423 0.0; 452 -0.2; 484 -0.7; 518 -0.8; 554 -0.3; 593 -0.0; 635 0.6; 679 1.1; 726 0.1; 777 -0.2; 832 -0.5; 890 -0.7; 952 -0.5; 1019 0.2; 1090 0.1; 1167 0.2; 1248 0.6; 1336 1.3; 1429 1.1; 1529 1.1; 1636 1.2; 1751 2.2; 1873 3.2; 2004 4.3; 2145 4.8; 2295 4.9; 2455 5.1; 2627 5.1; 2811 5.4; 3008 5.8; 3219 5.9; 3444 6.0; 3685 6.0; 3943 6.0; 4219 5.7; 4514 3.4; 4830 1.6; 5168 1.0; 5530 0.8; 5917 0.6; 6331 0.1; 6775 1.2; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Mr%20Speakers%20Alpha%20Prime/Mr%20Speakers%20Alpha%20Prime.png)

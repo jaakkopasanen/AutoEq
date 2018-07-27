@@ -1,13 +1,8 @@
 # Philips ActionFit SHQ5200
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.7; 26 5.5; 28 4.9; 30 4.3; 32 3.6; 35 2.8; 37 2.3; 40 1.6; 42 1.2; 45 0.6; 49 -0.0; 52 -0.4; 56 -0.8; 59 -1.1; 64 -1.5; 68 -1.8; 73 -2.1; 78 -2.3; 83 -2.6; 89 -2.9; 95 -3.2; 102 -3.5; 109 -3.6; 117 -4.0; 125 -4.3; 134 -4.4; 143 -4.6; 153 -4.6; 164 -4.6; 175 -4.3; 188 -4.2; 201 -4.2; 215 -3.9; 230 -3.7; 246 -3.4; 263 -3.1; 282 -2.8; 301 -2.5; 323 -2.0; 345 -1.2; 369 -0.3; 395 -0.4; 423 -2.2; 452 -2.5; 484 -2.1; 518 -1.7; 554 -1.3; 593 -0.8; 635 -0.6; 679 -0.7; 726 -0.5; 777 -0.2; 832 0.0; 890 0.0; 952 0.0; 1019 0.1; 1090 0.2; 1167 0.3; 1248 0.4; 1336 0.4; 1429 0.6; 1529 0.9; 1636 1.1; 1751 1.6; 1873 2.6; 2004 2.9; 2145 2.8; 2295 3.9; 2455 2.7; 2627 3.0; 2811 3.0; 3008 4.3; 3219 5.5; 3444 6.0; 3685 6.0; 3943 5.4; 4219 3.2; 4514 2.5; 4830 2.9; 5168 5.2; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.7; 26 5.5; 28 4.9; 30 4.3; 32 3.6; 35 2.8; 37 2.3; 40 1.6; 42 1.2; 45 0.6; 49 -0.0; 52 -0.4; 56 -0.8; 59 -1.1; 64 -1.5; 68 -1.8; 73 -2.1; 78 -2.3; 83 -2.6; 89 -2.9; 95 -3.2; 102 -3.5; 109 -3.6; 117 -4.0; 125 -4.3; 134 -4.4; 143 -4.6; 153 -4.6; 164 -4.6; 175 -4.3; 188 -4.2; 201 -4.2; 215 -3.9; 230 -3.7; 246 -3.4; 263 -3.1; 282 -2.8; 301 -2.5; 323 -2.0; 345 -1.2; 369 -0.3; 395 -0.4; 423 -2.2; 452 -2.5; 484 -2.1; 518 -1.7; 554 -1.3; 593 -0.8; 635 -0.6; 679 -0.7; 726 -0.5; 777 -0.2; 832 0.0; 890 0.0; 952 0.0; 1019 0.1; 1090 0.2; 1167 0.3; 1248 0.4; 1336 0.4; 1429 0.6; 1529 0.9; 1636 1.1; 1751 1.6; 1873 2.6; 2004 2.9; 2145 2.8; 2295 3.9; 2455 2.7; 2627 3.0; 2811 3.0; 3008 4.3; 3219 5.5; 3444 6.0; 3685 6.0; 3943 5.4; 4219 3.2; 4514 2.5; 4830 2.9; 5168 5.2; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Philips%20ActionFit%20SHQ5200/Philips%20ActionFit%20SHQ5200.png)

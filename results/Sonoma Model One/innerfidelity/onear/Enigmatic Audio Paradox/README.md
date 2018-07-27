@@ -1,13 +1,8 @@
 # Enigmatic Audio Paradox
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.8; 30 5.6; 32 5.5; 35 5.3; 37 5.1; 40 5.0; 42 4.9; 45 4.7; 49 4.5; 52 4.3; 56 3.9; 59 3.6; 64 3.7; 68 4.1; 73 4.6; 78 4.9; 83 4.8; 89 4.0; 95 2.7; 102 0.9; 109 -0.4; 117 -1.5; 125 -2.5; 134 -3.0; 143 -3.5; 153 -3.6; 164 -3.2; 175 -4.0; 188 -4.3; 201 -4.3; 215 -4.3; 230 -4.2; 246 -4.1; 263 -4.0; 282 -3.7; 301 -3.4; 323 -3.1; 345 -2.1; 369 -0.8; 395 -0.4; 423 -0.1; 452 0.3; 484 0.5; 518 0.5; 554 0.6; 593 1.0; 635 2.3; 679 3.0; 726 2.8; 777 2.7; 832 2.5; 890 1.6; 952 0.5; 1019 -0.1; 1090 0.1; 1167 0.8; 1248 1.6; 1336 2.1; 1429 2.7; 1529 3.0; 1636 3.2; 1751 2.6; 1873 2.6; 2004 3.3; 2145 4.2; 2295 5.0; 2455 5.9; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 5.8; 3685 4.8; 3943 4.3; 4219 4.1; 4514 5.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -0.8; 8880 -3.7; 9502 -3.9; 10167 -1.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.8; 30 5.6; 32 5.5; 35 5.3; 37 5.1; 40 5.0; 42 4.9; 45 4.7; 49 4.5; 52 4.3; 56 3.9; 59 3.6; 64 3.7; 68 4.1; 73 4.6; 78 4.9; 83 4.8; 89 4.0; 95 2.7; 102 0.9; 109 -0.4; 117 -1.5; 125 -2.5; 134 -3.0; 143 -3.5; 153 -3.6; 164 -3.2; 175 -4.0; 188 -4.3; 201 -4.3; 215 -4.3; 230 -4.2; 246 -4.1; 263 -4.0; 282 -3.7; 301 -3.4; 323 -3.1; 345 -2.1; 369 -0.8; 395 -0.4; 423 -0.1; 452 0.3; 484 0.5; 518 0.5; 554 0.6; 593 1.0; 635 2.3; 679 3.0; 726 2.8; 777 2.7; 832 2.5; 890 1.6; 952 0.5; 1019 -0.1; 1090 0.1; 1167 0.8; 1248 1.6; 1336 2.1; 1429 2.7; 1529 3.0; 1636 3.2; 1751 2.6; 1873 2.6; 2004 3.3; 2145 4.2; 2295 5.0; 2455 5.9; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 5.8; 3685 4.8; 3943 4.3; 4219 4.1; 4514 5.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -0.8; 8880 -3.7; 9502 -3.9; 10167 -1.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Enigmatic%20Audio%20Paradox/Enigmatic%20Audio%20Paradox.png)

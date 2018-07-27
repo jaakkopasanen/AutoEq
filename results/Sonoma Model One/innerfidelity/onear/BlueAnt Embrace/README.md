@@ -1,13 +1,8 @@
 # BlueAnt Embrace
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 5.9; 64 5.7; 68 5.7; 73 5.6; 78 5.4; 83 4.9; 89 3.7; 95 2.6; 102 1.5; 109 0.8; 117 0.0; 125 -0.9; 134 -1.9; 143 -2.5; 153 -3.0; 164 -2.9; 175 -3.2; 188 -3.3; 201 -3.2; 215 -2.9; 230 -2.4; 246 -2.0; 263 -2.0; 282 -1.7; 301 -1.6; 323 -1.0; 345 -0.3; 369 0.4; 395 1.3; 423 2.4; 452 3.5; 484 4.3; 518 4.8; 554 5.2; 593 5.6; 635 5.9; 679 6.0; 726 5.7; 777 4.5; 832 3.0; 890 1.7; 952 0.6; 1019 -0.1; 1090 -0.0; 1167 0.6; 1248 1.3; 1336 1.7; 1429 1.9; 1529 1.7; 1636 1.2; 1751 0.7; 1873 0.6; 2004 1.1; 2145 2.6; 2295 3.6; 2455 4.4; 2627 5.7; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 5.9; 4830 3.5; 5168 -0.2; 5530 -2.2; 5917 -2.0; 6331 -0.3; 6775 2.6; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 5.9; 64 5.7; 68 5.7; 73 5.6; 78 5.4; 83 4.9; 89 3.7; 95 2.6; 102 1.5; 109 0.8; 117 0.0; 125 -0.9; 134 -1.9; 143 -2.5; 153 -3.0; 164 -2.9; 175 -3.2; 188 -3.3; 201 -3.2; 215 -2.9; 230 -2.4; 246 -2.0; 263 -2.0; 282 -1.7; 301 -1.6; 323 -1.0; 345 -0.3; 369 0.4; 395 1.3; 423 2.4; 452 3.5; 484 4.3; 518 4.8; 554 5.2; 593 5.6; 635 5.9; 679 6.0; 726 5.7; 777 4.5; 832 3.0; 890 1.7; 952 0.6; 1019 -0.1; 1090 -0.0; 1167 0.6; 1248 1.3; 1336 1.7; 1429 1.9; 1529 1.7; 1636 1.2; 1751 0.7; 1873 0.6; 2004 1.1; 2145 2.6; 2295 3.6; 2455 4.4; 2627 5.7; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 5.9; 4830 3.5; 5168 -0.2; 5530 -2.2; 5917 -2.0; 6331 -0.3; 6775 2.6; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/BlueAnt%20Embrace/BlueAnt%20Embrace.png)

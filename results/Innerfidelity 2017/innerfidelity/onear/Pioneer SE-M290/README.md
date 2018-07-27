@@ -1,13 +1,8 @@
 # Pioneer SE-M290
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 5.9; 25 5.4; 26 5.0; 28 4.3; 30 3.5; 32 2.8; 35 1.9; 37 1.4; 40 0.7; 42 0.3; 45 -0.2; 49 -0.8; 52 -1.0; 56 -1.3; 59 -1.5; 64 -1.9; 68 -1.8; 73 -0.8; 78 0.3; 83 -0.1; 89 -1.5; 95 -2.6; 102 -3.2; 109 -3.6; 117 -4.0; 125 -4.5; 134 -4.9; 143 -5.0; 153 -5.1; 164 -4.7; 175 -4.9; 188 -5.0; 201 -5.1; 215 -5.1; 230 -4.8; 246 -4.6; 263 -4.4; 282 -4.1; 301 -4.1; 323 -4.1; 345 -3.7; 369 -3.4; 395 -3.0; 423 -2.6; 452 -2.4; 484 -2.4; 518 -2.1; 554 -1.7; 593 -1.4; 635 -1.4; 679 -1.5; 726 -1.7; 777 -1.8; 832 -1.5; 890 -0.9; 952 -0.4; 1019 0.1; 1090 0.7; 1167 1.7; 1248 2.9; 1336 4.1; 1429 4.8; 1529 5.7; 1636 6.0; 1751 6.0; 1873 6.0; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.3; 6331 5.1; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 5.9; 25 5.4; 26 5.0; 28 4.3; 30 3.5; 32 2.8; 35 1.9; 37 1.4; 40 0.7; 42 0.3; 45 -0.2; 49 -0.8; 52 -1.0; 56 -1.3; 59 -1.5; 64 -1.9; 68 -1.8; 73 -0.8; 78 0.3; 83 -0.1; 89 -1.5; 95 -2.6; 102 -3.2; 109 -3.6; 117 -4.0; 125 -4.5; 134 -4.9; 143 -5.0; 153 -5.1; 164 -4.7; 175 -4.9; 188 -5.0; 201 -5.1; 215 -5.1; 230 -4.8; 246 -4.6; 263 -4.4; 282 -4.1; 301 -4.1; 323 -4.1; 345 -3.7; 369 -3.4; 395 -3.0; 423 -2.6; 452 -2.4; 484 -2.4; 518 -2.1; 554 -1.7; 593 -1.4; 635 -1.4; 679 -1.5; 726 -1.7; 777 -1.8; 832 -1.5; 890 -0.9; 952 -0.4; 1019 0.1; 1090 0.7; 1167 1.7; 1248 2.9; 1336 4.1; 1429 4.8; 1529 5.7; 1636 6.0; 1751 6.0; 1873 6.0; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.3; 6331 5.1; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Pioneer%20SE-M290/Pioneer%20SE-M290.png)

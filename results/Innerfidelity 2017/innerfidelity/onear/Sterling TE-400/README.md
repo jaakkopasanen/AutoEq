@@ -1,13 +1,8 @@
 # Sterling TE-400
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 5.4; 59 4.5; 64 3.0; 68 1.8; 73 0.4; 78 -0.7; 83 -1.6; 89 -2.5; 95 -3.5; 102 -4.5; 109 -5.0; 117 -5.1; 125 -5.3; 134 -5.4; 143 -5.4; 153 -5.2; 164 -5.0; 175 -4.6; 188 -4.6; 201 -4.5; 215 -4.4; 230 -4.3; 246 -4.4; 263 -4.2; 282 -3.9; 301 -3.5; 323 -3.5; 345 -3.4; 369 -3.5; 395 -3.5; 423 -3.3; 452 -3.5; 484 -3.6; 518 -3.3; 554 -2.9; 593 -0.9; 635 2.5; 679 5.6; 726 6.0; 777 6.0; 832 4.7; 890 2.6; 952 1.1; 1019 -0.4; 1090 -1.1; 1167 -1.4; 1248 -0.9; 1336 -0.0; 1429 0.5; 1529 1.8; 1636 2.5; 1751 3.2; 1873 3.8; 2004 4.7; 2145 5.0; 2295 4.9; 2455 4.7; 2627 4.1; 2811 3.8; 3008 3.4; 3219 3.5; 3444 5.2; 3685 6.0; 3943 5.0; 4219 0.6; 4514 0.6; 4830 1.5; 5168 4.1; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 -1.3; 8299 -2.2; 8880 -0.5; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 5.4; 59 4.5; 64 3.0; 68 1.8; 73 0.4; 78 -0.7; 83 -1.6; 89 -2.5; 95 -3.5; 102 -4.5; 109 -5.0; 117 -5.1; 125 -5.3; 134 -5.4; 143 -5.4; 153 -5.2; 164 -5.0; 175 -4.6; 188 -4.6; 201 -4.5; 215 -4.4; 230 -4.3; 246 -4.4; 263 -4.2; 282 -3.9; 301 -3.5; 323 -3.5; 345 -3.4; 369 -3.5; 395 -3.5; 423 -3.3; 452 -3.5; 484 -3.6; 518 -3.3; 554 -2.9; 593 -0.9; 635 2.5; 679 5.6; 726 6.0; 777 6.0; 832 4.7; 890 2.6; 952 1.1; 1019 -0.4; 1090 -1.1; 1167 -1.4; 1248 -0.9; 1336 -0.0; 1429 0.5; 1529 1.8; 1636 2.5; 1751 3.2; 1873 3.8; 2004 4.7; 2145 5.0; 2295 4.9; 2455 4.7; 2627 4.1; 2811 3.8; 3008 3.4; 3219 3.5; 3444 5.2; 3685 6.0; 3943 5.0; 4219 0.6; 4514 0.6; 4830 1.5; 5168 4.1; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 -1.3; 8299 -2.2; 8880 -0.5; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Sterling%20TE-400/Sterling%20TE-400.png)

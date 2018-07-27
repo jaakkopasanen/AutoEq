@@ -1,13 +1,8 @@
 # KRK Systems KNS 6400
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 5.0; 95 3.6; 102 2.3; 109 1.5; 117 0.5; 125 -0.6; 134 -1.5; 143 -2.3; 153 -2.2; 164 -1.8; 175 -3.1; 188 -4.2; 201 -4.8; 215 -5.2; 230 -4.8; 246 -4.0; 263 -4.2; 282 -4.4; 301 -4.5; 323 -4.6; 345 -4.4; 369 -4.0; 395 -3.3; 423 -2.4; 452 -1.6; 484 -1.2; 518 -1.3; 554 -1.8; 593 -2.2; 635 -1.8; 679 -0.8; 726 1.2; 777 1.3; 832 -0.0; 890 0.1; 952 -0.0; 1019 0.1; 1090 0.2; 1167 0.5; 1248 1.0; 1336 1.7; 1429 2.1; 1529 2.0; 1636 1.7; 1751 -0.3; 1873 -1.8; 2004 -2.6; 2145 -2.7; 2295 -2.5; 2455 -2.8; 2627 -2.5; 2811 -1.6; 3008 0.6; 3219 0.1; 3444 0.9; 3685 2.8; 3943 1.4; 4219 0.7; 4514 0.9; 4830 3.0; 5168 2.9; 5530 1.0; 5917 -3.1; 6331 -4.3; 6775 -3.4; 7249 -0.8; 7756 0.3; 8299 -0.5; 8880 -2.8; 9502 -5.0; 10167 -4.9; 10879 -1.4; 11640 0.0; 12455 0.0; 13327 -0.0; 14260 -1.7; 15258 -2.1; 16326 -1.2; 17469 -1.8; 18692 -3.9; 20000 -6.3
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 5.0; 95 3.6; 102 2.3; 109 1.5; 117 0.5; 125 -0.6; 134 -1.5; 143 -2.3; 153 -2.2; 164 -1.8; 175 -3.1; 188 -4.2; 201 -4.8; 215 -5.2; 230 -4.8; 246 -4.0; 263 -4.2; 282 -4.4; 301 -4.5; 323 -4.6; 345 -4.4; 369 -4.0; 395 -3.3; 423 -2.4; 452 -1.6; 484 -1.2; 518 -1.3; 554 -1.8; 593 -2.2; 635 -1.8; 679 -0.8; 726 1.2; 777 1.3; 832 -0.0; 890 0.1; 952 -0.0; 1019 0.1; 1090 0.2; 1167 0.5; 1248 1.0; 1336 1.7; 1429 2.1; 1529 2.0; 1636 1.7; 1751 -0.3; 1873 -1.8; 2004 -2.6; 2145 -2.7; 2295 -2.5; 2455 -2.8; 2627 -2.5; 2811 -1.6; 3008 0.6; 3219 0.1; 3444 0.9; 3685 2.8; 3943 1.4; 4219 0.7; 4514 0.9; 4830 3.0; 5168 2.9; 5530 1.0; 5917 -3.1; 6331 -4.3; 6775 -3.4; 7249 -0.8; 7756 0.3; 8299 -0.5; 8880 -2.8; 9502 -5.0; 10167 -4.9; 10879 -1.4; 11640 0.0; 12455 0.0; 13327 -0.0; 14260 -1.7; 15258 -2.1; 16326 -1.2; 17469 -1.8; 18692 -3.9; 20000 -6.3
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/headphoncecom/onear/KRK%20Systems%20KNS%206400/KRK%20Systems%20KNS%206400.png)

@@ -1,13 +1,8 @@
 # Sennheiser HD25-SP
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 5.3; 22 4.6; 23 4.3; 25 3.7; 26 3.4; 28 2.9; 30 2.4; 32 2.1; 35 1.8; 37 1.7; 40 1.3; 42 0.7; 45 -0.3; 49 -1.2; 52 -1.5; 56 -1.8; 59 -1.9; 64 -1.7; 68 -1.5; 73 -1.1; 78 -0.5; 83 -0.2; 89 -0.8; 95 -2.6; 102 -4.5; 109 -5.4; 117 -5.7; 125 -6.1; 134 -6.1; 143 -5.9; 153 -5.5; 164 -5.4; 175 -6.3; 188 -6.9; 201 -7.1; 215 -6.8; 230 -6.3; 246 -5.6; 263 -4.9; 282 -4.3; 301 -3.5; 323 -2.2; 345 -1.1; 369 -0.4; 395 0.2; 423 0.7; 452 0.9; 484 1.0; 518 1.1; 554 1.1; 593 1.3; 635 1.5; 679 1.7; 726 1.9; 777 2.0; 832 1.6; 890 1.0; 952 0.3; 1019 -0.1; 1090 0.1; 1167 0.5; 1248 0.6; 1336 0.4; 1429 0.2; 1529 -0.3; 1636 -1.5; 1751 -2.8; 1873 -3.5; 2004 -3.7; 2145 -3.4; 2295 -2.9; 2455 -2.5; 2627 -1.9; 2811 -0.6; 3008 1.3; 3219 1.8; 3444 2.0; 3685 1.8; 3943 0.7; 4219 0.7; 4514 1.1; 4830 1.2; 5168 1.8; 5530 6.0; 5917 4.1; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -5.3; 8880 -10.4; 9502 -10.5; 10167 -8.0; 10879 -5.4; 11640 -2.5; 12455 -0.1; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 5.3; 22 4.6; 23 4.3; 25 3.7; 26 3.4; 28 2.9; 30 2.4; 32 2.1; 35 1.8; 37 1.7; 40 1.3; 42 0.7; 45 -0.3; 49 -1.2; 52 -1.5; 56 -1.8; 59 -1.9; 64 -1.7; 68 -1.5; 73 -1.1; 78 -0.5; 83 -0.2; 89 -0.8; 95 -2.6; 102 -4.5; 109 -5.4; 117 -5.7; 125 -6.1; 134 -6.1; 143 -5.9; 153 -5.5; 164 -5.4; 175 -6.3; 188 -6.9; 201 -7.1; 215 -6.8; 230 -6.3; 246 -5.6; 263 -4.9; 282 -4.3; 301 -3.5; 323 -2.2; 345 -1.1; 369 -0.4; 395 0.2; 423 0.7; 452 0.9; 484 1.0; 518 1.1; 554 1.1; 593 1.3; 635 1.5; 679 1.7; 726 1.9; 777 2.0; 832 1.6; 890 1.0; 952 0.3; 1019 -0.1; 1090 0.1; 1167 0.5; 1248 0.6; 1336 0.4; 1429 0.2; 1529 -0.3; 1636 -1.5; 1751 -2.8; 1873 -3.5; 2004 -3.7; 2145 -3.4; 2295 -2.9; 2455 -2.5; 2627 -1.9; 2811 -0.6; 3008 1.3; 3219 1.8; 3444 2.0; 3685 1.8; 3943 0.7; 4219 0.7; 4514 1.1; 4830 1.2; 5168 1.8; 5530 6.0; 5917 4.1; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -5.3; 8880 -10.4; 9502 -10.5; 10167 -8.0; 10879 -5.4; 11640 -2.5; 12455 -0.1; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/headphoncecom/onear/Sennheiser%20HD25-SP/Sennheiser%20HD25-SP.png)

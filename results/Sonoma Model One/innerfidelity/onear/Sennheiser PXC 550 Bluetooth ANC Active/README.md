@@ -1,13 +1,8 @@
 # Sennheiser PXC 550 Bluetooth ANC Active
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 5.9; 23 5.7; 25 5.2; 26 5.0; 28 4.8; 30 4.7; 32 4.8; 35 4.9; 37 4.9; 40 5.0; 42 5.1; 45 5.2; 49 5.2; 52 5.2; 56 5.3; 59 5.5; 64 5.9; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 5.8; 102 4.8; 109 4.3; 117 3.6; 125 2.9; 134 2.1; 143 1.7; 153 1.3; 164 1.2; 175 1.4; 188 1.3; 201 1.5; 215 1.6; 230 1.8; 246 2.0; 263 2.2; 282 2.6; 301 2.8; 323 3.0; 345 3.1; 369 3.0; 395 2.8; 423 2.8; 452 2.9; 484 2.8; 518 2.5; 554 2.3; 593 2.4; 635 2.6; 679 2.8; 726 3.0; 777 3.0; 832 2.3; 890 1.3; 952 0.5; 1019 -0.1; 1090 -0.2; 1167 0.8; 1248 2.2; 1336 1.4; 1429 1.3; 1529 0.9; 1636 0.0; 1751 0.0; 1873 0.6; 2004 0.1; 2145 0.5; 2295 1.0; 2455 2.1; 2627 3.6; 2811 4.4; 3008 4.9; 3219 5.4; 3444 5.2; 3685 3.0; 3943 3.5; 4219 6.0; 4514 5.2; 4830 -1.6; 5168 -3.6; 5530 -0.4; 5917 1.1; 6331 2.2; 6775 2.7; 7249 0.8; 7756 -1.5; 8299 -3.7; 8880 -5.6; 9502 -6.5; 10167 -5.4; 10879 -2.2; 11640 -0.1; 12455 0.0; 13327 0.0; 14260 -0.3; 15258 -0.1; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 5.9; 23 5.7; 25 5.2; 26 5.0; 28 4.8; 30 4.7; 32 4.8; 35 4.9; 37 4.9; 40 5.0; 42 5.1; 45 5.2; 49 5.2; 52 5.2; 56 5.3; 59 5.5; 64 5.9; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 5.8; 102 4.8; 109 4.3; 117 3.6; 125 2.9; 134 2.1; 143 1.7; 153 1.3; 164 1.2; 175 1.4; 188 1.3; 201 1.5; 215 1.6; 230 1.8; 246 2.0; 263 2.2; 282 2.6; 301 2.8; 323 3.0; 345 3.1; 369 3.0; 395 2.8; 423 2.8; 452 2.9; 484 2.8; 518 2.5; 554 2.3; 593 2.4; 635 2.6; 679 2.8; 726 3.0; 777 3.0; 832 2.3; 890 1.3; 952 0.5; 1019 -0.1; 1090 -0.2; 1167 0.8; 1248 2.2; 1336 1.4; 1429 1.3; 1529 0.9; 1636 0.0; 1751 0.0; 1873 0.6; 2004 0.1; 2145 0.5; 2295 1.0; 2455 2.1; 2627 3.6; 2811 4.4; 3008 4.9; 3219 5.4; 3444 5.2; 3685 3.0; 3943 3.5; 4219 6.0; 4514 5.2; 4830 -1.6; 5168 -3.6; 5530 -0.4; 5917 1.1; 6331 2.2; 6775 2.7; 7249 0.8; 7756 -1.5; 8299 -3.7; 8880 -5.6; 9502 -6.5; 10167 -5.4; 10879 -2.2; 11640 -0.1; 12455 0.0; 13327 0.0; 14260 -0.3; 15258 -0.1; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Sennheiser%20PXC%20550%20Bluetooth%20ANC%20Active/Sennheiser%20PXC%20550%20Bluetooth%20ANC%20Active.png)

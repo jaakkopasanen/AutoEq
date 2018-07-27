@@ -1,13 +1,8 @@
 # EMu Teak Rosewood Cups
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-50**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -5.0dB
 GraphicEQ: 10 -84; 20 3.5; 22 2.7; 23 2.3; 25 1.7; 26 1.4; 28 1.0; 30 0.7; 32 0.5; 35 0.3; 37 0.2; 40 0.1; 42 -0.0; 45 -0.2; 49 -0.4; 52 -0.5; 56 -0.5; 59 -0.3; 64 0.2; 68 0.6; 73 0.9; 78 1.0; 83 0.8; 89 0.1; 95 -0.5; 102 -1.3; 109 -1.8; 117 -2.3; 125 -2.8; 134 -3.4; 143 -3.8; 153 -4.1; 164 -4.0; 175 -4.0; 188 -4.0; 201 -3.9; 215 -3.8; 230 -3.6; 246 -3.5; 263 -3.2; 282 -2.8; 301 -2.6; 323 -2.6; 345 -2.3; 369 -2.1; 395 -1.7; 423 -1.2; 452 -0.8; 484 -0.5; 518 -0.2; 554 0.1; 593 0.1; 635 0.4; 679 0.6; 726 1.0; 777 1.9; 832 2.0; 890 1.1; 952 0.3; 1019 0.0; 1090 0.5; 1167 1.3; 1248 2.1; 1336 2.5; 1429 2.7; 1529 2.6; 1636 2.3; 1751 1.9; 1873 1.5; 2004 1.9; 2145 2.3; 2295 2.6; 2455 3.7; 2627 4.4; 2811 4.7; 3008 5.0; 3219 4.7; 3444 4.3; 3685 4.2; 3943 3.7; 4219 3.4; 4514 2.9; 4830 1.9; 5168 1.0; 5530 -0.1; 5917 -1.4; 6331 -0.9; 6775 1.3; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.9; 9502 -4.8; 10167 -5.9; 10879 -4.3; 11640 -2.6; 12455 -2.5; 13327 -3.7; 14260 -4.5; 15258 -3.3; 16326 -1.5; 17469 -0.7; 18692 -0.1; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 3.5; 22 2.7; 23 2.3; 25 1.7; 26 1.4; 28 1.0; 30 0.7; 32 0.5; 35 0.3; 37 0.2; 40 0.1; 42 -0.0; 45 -0.2; 49 -0.4; 52 -0.5; 56 -0.5; 59 -0.3; 64 0.2; 68 0.6; 73 0.9; 78 1.0; 83 0.8; 89 0.1; 95 -0.5; 102 -1.3; 109 -1.8; 117 -2.3; 125 -2.8; 134 -3.4; 143 -3.8; 153 -4.1; 164 -4.0; 175 -4.0; 188 -4.0; 201 -3.9; 215 -3.8; 230 -3.6; 246 -3.5; 263 -3.2; 282 -2.8; 301 -2.6; 323 -2.6; 345 -2.3; 369 -2.1; 395 -1.7; 423 -1.2; 452 -0.8; 484 -0.5; 518 -0.2; 554 0.1; 593 0.1; 635 0.4; 679 0.6; 726 1.0; 777 1.9; 832 2.0; 890 1.1; 952 0.3; 1019 0.0; 1090 0.5; 1167 1.3; 1248 2.1; 1336 2.5; 1429 2.7; 1529 2.6; 1636 2.3; 1751 1.9; 1873 1.5; 2004 1.9; 2145 2.3; 2295 2.6; 2455 3.7; 2627 4.4; 2811 4.7; 3008 5.0; 3219 4.7; 3444 4.3; 3685 4.2; 3943 3.7; 4219 3.4; 4514 2.9; 4830 1.9; 5168 1.0; 5530 -0.1; 5917 -1.4; 6331 -0.9; 6775 1.3; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.9; 9502 -4.8; 10167 -5.9; 10879 -4.3; 11640 -2.6; 12455 -2.5; 13327 -3.7; 14260 -4.5; 15258 -3.3; 16326 -1.5; 17469 -0.7; 18692 -0.1; 20000 0.0
-Copy: L=-5.0dB*l, R=-5.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.0dB` and instead set Global volume in the UI for both channels to **-50**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/EMu%20Teak%20Rosewood%20Cups/EMu%20Teak%20Rosewood%20Cups.png)

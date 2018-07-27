@@ -1,13 +1,8 @@
 # Sonoma Model One
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-58**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -5.8dB
 GraphicEQ: 10 -84; 20 0.7; 22 0.6; 23 0.5; 25 0.5; 26 0.5; 28 0.5; 30 0.5; 32 0.5; 35 0.6; 37 0.6; 40 0.7; 42 0.7; 45 0.9; 49 1.1; 52 1.2; 56 1.4; 59 1.6; 64 1.6; 68 0.8; 73 -0.3; 78 -0.6; 83 -0.4; 89 -0.1; 95 0.0; 102 0.1; 109 -0.1; 117 -0.4; 125 -0.5; 134 -0.6; 143 -0.6; 153 -0.7; 164 -0.7; 175 -0.6; 188 -0.8; 201 -0.9; 215 -0.8; 230 -0.7; 246 -0.8; 263 -0.9; 282 -0.9; 301 -1.0; 323 -1.1; 345 -1.1; 369 -1.2; 395 -1.2; 423 -1.1; 452 -1.5; 484 -2.1; 518 -2.0; 554 -1.4; 593 -0.7; 635 -1.1; 679 -1.8; 726 -2.0; 777 -1.4; 832 -1.2; 890 -1.0; 952 -0.3; 1019 0.3; 1090 -0.4; 1167 -1.6; 1248 -2.6; 1336 -1.9; 1429 -2.8; 1529 -3.1; 1636 -1.8; 1751 -1.7; 1873 -1.0; 2004 -0.7; 2145 -1.6; 2295 -1.0; 2455 -0.4; 2627 -1.9; 2811 -0.8; 3008 -0.4; 3219 -1.0; 3444 -0.3; 3685 0.7; 3943 2.6; 4219 3.8; 4514 4.2; 4830 3.5; 5168 1.2; 5530 1.9; 5917 5.8; 6331 1.9; 6775 -0.1; 7249 0.3; 7756 0.2; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 0.7; 22 0.6; 23 0.5; 25 0.5; 26 0.5; 28 0.5; 30 0.5; 32 0.5; 35 0.6; 37 0.6; 40 0.7; 42 0.7; 45 0.9; 49 1.1; 52 1.2; 56 1.4; 59 1.6; 64 1.6; 68 0.8; 73 -0.3; 78 -0.6; 83 -0.4; 89 -0.1; 95 0.0; 102 0.1; 109 -0.1; 117 -0.4; 125 -0.5; 134 -0.6; 143 -0.6; 153 -0.7; 164 -0.7; 175 -0.6; 188 -0.8; 201 -0.9; 215 -0.8; 230 -0.7; 246 -0.8; 263 -0.9; 282 -0.9; 301 -1.0; 323 -1.1; 345 -1.1; 369 -1.2; 395 -1.2; 423 -1.1; 452 -1.5; 484 -2.1; 518 -2.0; 554 -1.4; 593 -0.7; 635 -1.1; 679 -1.8; 726 -2.0; 777 -1.4; 832 -1.2; 890 -1.0; 952 -0.3; 1019 0.3; 1090 -0.4; 1167 -1.6; 1248 -2.6; 1336 -1.9; 1429 -2.8; 1529 -3.1; 1636 -1.8; 1751 -1.7; 1873 -1.0; 2004 -0.7; 2145 -1.6; 2295 -1.0; 2455 -0.4; 2627 -1.9; 2811 -0.8; 3008 -0.4; 3219 -1.0; 3444 -0.3; 3685 0.7; 3943 2.6; 4219 3.8; 4514 4.2; 4830 3.5; 5168 1.2; 5530 1.9; 5917 5.8; 6331 1.9; 6775 -0.1; 7249 0.3; 7756 0.2; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-5.8dB*l, R=-5.8dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.8dB` and instead set Global volume in the UI for both channels to **-58**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Sonoma%20Model%20One/Sonoma%20Model%20One.png)

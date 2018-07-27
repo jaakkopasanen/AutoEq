@@ -1,13 +1,8 @@
 # Philips SBC HP910
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 5.9; 32 5.5; 35 4.9; 37 4.4; 40 3.8; 42 3.5; 45 3.1; 49 2.6; 52 2.3; 56 1.8; 59 1.6; 64 1.6; 68 1.3; 73 0.9; 78 1.2; 83 1.5; 89 0.7; 95 -0.2; 102 -0.9; 109 -1.3; 117 -1.8; 125 -2.2; 134 -2.6; 143 -2.7; 153 -2.8; 164 -2.6; 175 -2.6; 188 -2.6; 201 -2.6; 215 -2.5; 230 -2.3; 246 -2.1; 263 -2.1; 282 -1.8; 301 -1.7; 323 -1.6; 345 -1.3; 369 -1.2; 395 -0.9; 423 -0.7; 452 -0.8; 484 -0.9; 518 -0.6; 554 -0.5; 593 -0.2; 635 0.7; 679 0.8; 726 0.3; 777 0.4; 832 0.3; 890 0.1; 952 0.1; 1019 -0.1; 1090 -0.3; 1167 -0.5; 1248 -0.8; 1336 -0.7; 1429 -0.6; 1529 -0.4; 1636 -0.6; 1751 -1.5; 1873 -1.8; 2004 -2.0; 2145 -2.7; 2295 -3.6; 2455 -4.0; 2627 -4.6; 2811 -5.1; 3008 -5.0; 3219 -4.0; 3444 -2.1; 3685 -0.1; 3943 1.4; 4219 3.5; 4514 2.8; 4830 -0.9; 5168 -1.6; 5530 0.1; 5917 0.1; 6331 -3.1; 6775 -6.6; 7249 -7.6; 7756 -8.4; 8299 -8.9; 8880 -7.8; 9502 -4.0; 10167 -0.2; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 5.9; 32 5.5; 35 4.9; 37 4.4; 40 3.8; 42 3.5; 45 3.1; 49 2.6; 52 2.3; 56 1.8; 59 1.6; 64 1.6; 68 1.3; 73 0.9; 78 1.2; 83 1.5; 89 0.7; 95 -0.2; 102 -0.9; 109 -1.3; 117 -1.8; 125 -2.2; 134 -2.6; 143 -2.7; 153 -2.8; 164 -2.6; 175 -2.6; 188 -2.6; 201 -2.6; 215 -2.5; 230 -2.3; 246 -2.1; 263 -2.1; 282 -1.8; 301 -1.7; 323 -1.6; 345 -1.3; 369 -1.2; 395 -0.9; 423 -0.7; 452 -0.8; 484 -0.9; 518 -0.6; 554 -0.5; 593 -0.2; 635 0.7; 679 0.8; 726 0.3; 777 0.4; 832 0.3; 890 0.1; 952 0.1; 1019 -0.1; 1090 -0.3; 1167 -0.5; 1248 -0.8; 1336 -0.7; 1429 -0.6; 1529 -0.4; 1636 -0.6; 1751 -1.5; 1873 -1.8; 2004 -2.0; 2145 -2.7; 2295 -3.6; 2455 -4.0; 2627 -4.6; 2811 -5.1; 3008 -5.0; 3219 -4.0; 3444 -2.1; 3685 -0.1; 3943 1.4; 4219 3.5; 4514 2.8; 4830 -0.9; 5168 -1.6; 5530 0.1; 5917 0.1; 6331 -3.1; 6775 -6.6; 7249 -7.6; 7756 -8.4; 8299 -8.9; 8880 -7.8; 9502 -4.0; 10167 -0.2; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Philips%20SBC%20HP910/Philips%20SBC%20HP910.png)

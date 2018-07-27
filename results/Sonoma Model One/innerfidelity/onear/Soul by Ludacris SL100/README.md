@@ -1,13 +1,8 @@
 # Soul by Ludacris SL100
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 4.3; 22 3.7; 23 3.5; 25 3.1; 26 2.9; 28 2.6; 30 2.2; 32 2.0; 35 1.6; 37 1.3; 40 0.9; 42 0.6; 45 0.3; 49 -0.2; 52 -0.5; 56 -0.7; 59 -0.6; 64 -0.0; 68 0.3; 73 0.1; 78 -0.4; 83 -1.2; 89 -2.3; 95 -3.4; 102 -4.3; 109 -4.9; 117 -5.5; 125 -6.2; 134 -6.8; 143 -7.2; 153 -7.6; 164 -7.9; 175 -8.2; 188 -8.3; 201 -8.3; 215 -8.2; 230 -8.0; 246 -7.9; 263 -7.8; 282 -7.6; 301 -7.7; 323 -8.1; 345 -8.0; 369 -7.7; 395 -7.5; 423 -7.1; 452 -6.6; 484 -6.0; 518 -5.5; 554 -5.0; 593 -3.9; 635 -2.3; 679 -0.7; 726 0.9; 777 1.9; 832 2.1; 890 1.5; 952 0.7; 1019 -0.3; 1090 -0.9; 1167 -1.3; 1248 -1.4; 1336 -1.4; 1429 -1.2; 1529 -1.0; 1636 -1.0; 1751 -0.8; 1873 -0.1; 2004 1.0; 2145 2.0; 2295 3.2; 2455 4.8; 2627 5.8; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 2.7; 4514 -2.3; 4830 -2.1; 5168 -1.5; 5530 -3.7; 5917 -5.1; 6331 -1.6; 6775 1.8; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 4.3; 22 3.7; 23 3.5; 25 3.1; 26 2.9; 28 2.6; 30 2.2; 32 2.0; 35 1.6; 37 1.3; 40 0.9; 42 0.6; 45 0.3; 49 -0.2; 52 -0.5; 56 -0.7; 59 -0.6; 64 -0.0; 68 0.3; 73 0.1; 78 -0.4; 83 -1.2; 89 -2.3; 95 -3.4; 102 -4.3; 109 -4.9; 117 -5.5; 125 -6.2; 134 -6.8; 143 -7.2; 153 -7.6; 164 -7.9; 175 -8.2; 188 -8.3; 201 -8.3; 215 -8.2; 230 -8.0; 246 -7.9; 263 -7.8; 282 -7.6; 301 -7.7; 323 -8.1; 345 -8.0; 369 -7.7; 395 -7.5; 423 -7.1; 452 -6.6; 484 -6.0; 518 -5.5; 554 -5.0; 593 -3.9; 635 -2.3; 679 -0.7; 726 0.9; 777 1.9; 832 2.1; 890 1.5; 952 0.7; 1019 -0.3; 1090 -0.9; 1167 -1.3; 1248 -1.4; 1336 -1.4; 1429 -1.2; 1529 -1.0; 1636 -1.0; 1751 -0.8; 1873 -0.1; 2004 1.0; 2145 2.0; 2295 3.2; 2455 4.8; 2627 5.8; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 2.7; 4514 -2.3; 4830 -2.1; 5168 -1.5; 5530 -3.7; 5917 -5.1; 6331 -1.6; 6775 1.8; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Soul%20by%20Ludacris%20SL100/Soul%20by%20Ludacris%20SL100.png)

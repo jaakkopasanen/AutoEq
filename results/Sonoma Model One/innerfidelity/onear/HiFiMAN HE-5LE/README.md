@@ -1,13 +1,8 @@
 # HiFiMAN HE-5LE
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-74**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -7.4dB
 GraphicEQ: 10 -84; 20 7.4; 22 5.8; 23 5.2; 25 4.3; 26 4.0; 28 3.6; 30 3.5; 32 3.5; 35 3.6; 37 3.7; 40 3.8; 42 3.8; 45 3.8; 49 3.8; 52 3.8; 56 3.8; 59 3.7; 64 3.9; 68 4.3; 73 4.8; 78 5.1; 83 4.9; 89 4.2; 95 3.4; 102 2.6; 109 2.1; 117 1.4; 125 0.4; 134 -0.5; 143 -1.4; 153 -2.2; 164 -2.6; 175 -2.9; 188 -3.1; 201 -3.2; 215 -3.2; 230 -3.4; 246 -3.5; 263 -3.6; 282 -3.6; 301 -3.6; 323 -3.5; 345 -3.6; 369 -3.6; 395 -3.5; 423 -3.4; 452 -3.2; 484 -3.0; 518 -3.0; 554 -3.3; 593 -2.9; 635 -1.2; 679 -0.0; 726 1.7; 777 2.5; 832 2.1; 890 1.1; 952 0.2; 1019 -0.1; 1090 0.8; 1167 2.3; 1248 3.7; 1336 4.8; 1429 5.9; 1529 6.0; 1636 6.0; 1751 6.0; 1873 6.0; 2004 5.3; 2145 4.3; 2295 4.0; 2455 5.3; 2627 5.0; 2811 4.4; 3008 4.0; 3219 3.5; 3444 3.3; 3685 2.7; 3943 1.0; 4219 -1.0; 4514 -0.3; 4830 -2.7; 5168 -0.7; 5530 -1.2; 5917 -6.1; 6331 -6.3; 6775 -5.0; 7249 -4.3; 7756 -4.8; 8299 -6.6; 8880 -8.7; 9502 -9.2; 10167 -7.5; 10879 -4.9; 11640 -3.0; 12455 -2.4; 13327 -2.8; 14260 -3.9; 15258 -5.1; 16326 -5.9; 17469 -5.7; 18692 -4.2; 20000 -1.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 7.4; 22 5.8; 23 5.2; 25 4.3; 26 4.0; 28 3.6; 30 3.5; 32 3.5; 35 3.6; 37 3.7; 40 3.8; 42 3.8; 45 3.8; 49 3.8; 52 3.8; 56 3.8; 59 3.7; 64 3.9; 68 4.3; 73 4.8; 78 5.1; 83 4.9; 89 4.2; 95 3.4; 102 2.6; 109 2.1; 117 1.4; 125 0.4; 134 -0.5; 143 -1.4; 153 -2.2; 164 -2.6; 175 -2.9; 188 -3.1; 201 -3.2; 215 -3.2; 230 -3.4; 246 -3.5; 263 -3.6; 282 -3.6; 301 -3.6; 323 -3.5; 345 -3.6; 369 -3.6; 395 -3.5; 423 -3.4; 452 -3.2; 484 -3.0; 518 -3.0; 554 -3.3; 593 -2.9; 635 -1.2; 679 -0.0; 726 1.7; 777 2.5; 832 2.1; 890 1.1; 952 0.2; 1019 -0.1; 1090 0.8; 1167 2.3; 1248 3.7; 1336 4.8; 1429 5.9; 1529 6.0; 1636 6.0; 1751 6.0; 1873 6.0; 2004 5.3; 2145 4.3; 2295 4.0; 2455 5.3; 2627 5.0; 2811 4.4; 3008 4.0; 3219 3.5; 3444 3.3; 3685 2.7; 3943 1.0; 4219 -1.0; 4514 -0.3; 4830 -2.7; 5168 -0.7; 5530 -1.2; 5917 -6.1; 6331 -6.3; 6775 -5.0; 7249 -4.3; 7756 -4.8; 8299 -6.6; 8880 -8.7; 9502 -9.2; 10167 -7.5; 10879 -4.9; 11640 -3.0; 12455 -2.4; 13327 -2.8; 14260 -3.9; 15258 -5.1; 16326 -5.9; 17469 -5.7; 18692 -4.2; 20000 -1.0
-Copy: L=-7.4dB*l, R=-7.4dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -7.4dB` and instead set Global volume in the UI for both channels to **-74**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/HiFiMAN%20HE-5LE/HiFiMAN%20HE-5LE.png)

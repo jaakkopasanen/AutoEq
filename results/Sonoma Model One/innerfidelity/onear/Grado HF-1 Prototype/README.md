@@ -1,13 +1,8 @@
 # Grado HF-1 Prototype
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 5.9; 52 5.3; 56 4.3; 59 3.9; 64 3.7; 68 3.5; 73 3.2; 78 2.9; 83 2.3; 89 1.4; 95 0.6; 102 -0.2; 109 -0.7; 117 -1.1; 125 -1.6; 134 -1.9; 143 -2.1; 153 -2.0; 164 -2.0; 175 -1.7; 188 -1.4; 201 -1.4; 215 -1.4; 230 -1.2; 246 -1.1; 263 -0.9; 282 -0.6; 301 -0.2; 323 -0.3; 345 -0.3; 369 -0.0; 395 -0.1; 423 -0.1; 452 0.1; 484 0.2; 518 0.3; 554 0.4; 593 0.5; 635 0.9; 679 1.3; 726 1.6; 777 1.7; 832 1.3; 890 0.8; 952 0.2; 1019 -0.0; 1090 0.3; 1167 0.8; 1248 1.1; 1336 0.9; 1429 0.5; 1529 -0.2; 1636 -1.2; 1751 -2.3; 1873 -3.4; 2004 -4.2; 2145 -4.5; 2295 -3.8; 2455 -2.8; 2627 -2.2; 2811 -1.6; 3008 -0.6; 3219 0.1; 3444 0.1; 3685 -0.9; 3943 -1.4; 4219 -4.9; 4514 -7.9; 4830 -8.1; 5168 -5.9; 5530 -5.4; 5917 -6.4; 6331 -6.4; 6775 -7.0; 7249 -8.1; 7756 -8.5; 8299 -10.3; 8880 -12.6; 9502 -12.8; 10167 -9.9; 10879 -5.5; 11640 -1.3; 12455 0.0; 13327 0.0; 14260 0.0; 15258 -0.2; 16326 -3.1; 17469 -5.5; 18692 -4.2; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 5.9; 52 5.3; 56 4.3; 59 3.9; 64 3.7; 68 3.5; 73 3.2; 78 2.9; 83 2.3; 89 1.4; 95 0.6; 102 -0.2; 109 -0.7; 117 -1.1; 125 -1.6; 134 -1.9; 143 -2.1; 153 -2.0; 164 -2.0; 175 -1.7; 188 -1.4; 201 -1.4; 215 -1.4; 230 -1.2; 246 -1.1; 263 -0.9; 282 -0.6; 301 -0.2; 323 -0.3; 345 -0.3; 369 -0.0; 395 -0.1; 423 -0.1; 452 0.1; 484 0.2; 518 0.3; 554 0.4; 593 0.5; 635 0.9; 679 1.3; 726 1.6; 777 1.7; 832 1.3; 890 0.8; 952 0.2; 1019 -0.0; 1090 0.3; 1167 0.8; 1248 1.1; 1336 0.9; 1429 0.5; 1529 -0.2; 1636 -1.2; 1751 -2.3; 1873 -3.4; 2004 -4.2; 2145 -4.5; 2295 -3.8; 2455 -2.8; 2627 -2.2; 2811 -1.6; 3008 -0.6; 3219 0.1; 3444 0.1; 3685 -0.9; 3943 -1.4; 4219 -4.9; 4514 -7.9; 4830 -8.1; 5168 -5.9; 5530 -5.4; 5917 -6.4; 6331 -6.4; 6775 -7.0; 7249 -8.1; 7756 -8.5; 8299 -10.3; 8880 -12.6; 9502 -12.8; 10167 -9.9; 10879 -5.5; 11640 -1.3; 12455 0.0; 13327 0.0; 14260 0.0; 15258 -0.2; 16326 -3.1; 17469 -5.5; 18692 -4.2; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Grado%20HF-1%20Prototype/Grado%20HF-1%20Prototype.png)

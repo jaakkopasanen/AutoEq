@@ -1,13 +1,8 @@
 # Klipsch Reference On Ear
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-56**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -5.6dB
 GraphicEQ: 10 -84; 20 -1.6; 22 -1.7; 23 -1.8; 25 -1.9; 26 -1.9; 28 -2.0; 30 -2.0; 32 -2.1; 35 -2.2; 37 -2.2; 40 -2.3; 42 -2.4; 45 -2.6; 49 -2.7; 52 -2.8; 56 -2.8; 59 -2.8; 64 -2.5; 68 -2.1; 73 -1.7; 78 -1.4; 83 -1.6; 89 -2.2; 95 -2.9; 102 -3.6; 109 -4.0; 117 -4.6; 125 -5.3; 134 -5.9; 143 -6.1; 153 -6.5; 164 -6.7; 175 -6.5; 188 -6.9; 201 -7.0; 215 -7.0; 230 -6.9; 246 -6.8; 263 -6.6; 282 -6.2; 301 -6.0; 323 -5.8; 345 -5.8; 369 -6.0; 395 -5.7; 423 -5.0; 452 -4.9; 484 -5.2; 518 -5.1; 554 -4.9; 593 -4.2; 635 -3.5; 679 -2.8; 726 -1.9; 777 -1.2; 832 -0.9; 890 -0.6; 952 -0.4; 1019 0.2; 1090 1.3; 1167 2.7; 1248 3.9; 1336 4.3; 1429 4.5; 1529 4.7; 1636 4.3; 1751 3.6; 1873 3.0; 2004 3.0; 2145 3.6; 2295 3.6; 2455 3.7; 2627 3.6; 2811 3.1; 3008 2.8; 3219 2.2; 3444 1.6; 3685 1.0; 3943 0.6; 4219 0.7; 4514 1.6; 4830 3.7; 5168 5.4; 5530 4.2; 5917 -0.1; 6331 -0.9; 6775 0.2; 7249 -0.9; 7756 -2.9; 8299 -4.7; 8880 -5.8; 9502 -6.0; 10167 -4.8; 10879 -1.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 -0.7; 17469 -3.9; 18692 -1.9; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -1.6; 22 -1.7; 23 -1.8; 25 -1.9; 26 -1.9; 28 -2.0; 30 -2.0; 32 -2.1; 35 -2.2; 37 -2.2; 40 -2.3; 42 -2.4; 45 -2.6; 49 -2.7; 52 -2.8; 56 -2.8; 59 -2.8; 64 -2.5; 68 -2.1; 73 -1.7; 78 -1.4; 83 -1.6; 89 -2.2; 95 -2.9; 102 -3.6; 109 -4.0; 117 -4.6; 125 -5.3; 134 -5.9; 143 -6.1; 153 -6.5; 164 -6.7; 175 -6.5; 188 -6.9; 201 -7.0; 215 -7.0; 230 -6.9; 246 -6.8; 263 -6.6; 282 -6.2; 301 -6.0; 323 -5.8; 345 -5.8; 369 -6.0; 395 -5.7; 423 -5.0; 452 -4.9; 484 -5.2; 518 -5.1; 554 -4.9; 593 -4.2; 635 -3.5; 679 -2.8; 726 -1.9; 777 -1.2; 832 -0.9; 890 -0.6; 952 -0.4; 1019 0.2; 1090 1.3; 1167 2.7; 1248 3.9; 1336 4.3; 1429 4.5; 1529 4.7; 1636 4.3; 1751 3.6; 1873 3.0; 2004 3.0; 2145 3.6; 2295 3.6; 2455 3.7; 2627 3.6; 2811 3.1; 3008 2.8; 3219 2.2; 3444 1.6; 3685 1.0; 3943 0.6; 4219 0.7; 4514 1.6; 4830 3.7; 5168 5.4; 5530 4.2; 5917 -0.1; 6331 -0.9; 6775 0.2; 7249 -0.9; 7756 -2.9; 8299 -4.7; 8880 -5.8; 9502 -6.0; 10167 -4.8; 10879 -1.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 -0.7; 17469 -3.9; 18692 -1.9; 20000 0.0
-Copy: L=-5.6dB*l, R=-5.6dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.6dB` and instead set Global volume in the UI for both channels to **-56**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Klipsch%20Reference%20On%20Ear/Klipsch%20Reference%20On%20Ear.png)

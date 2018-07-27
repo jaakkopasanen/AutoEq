@@ -1,13 +1,8 @@
 # Creative Aurvana Live 2
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -3.1; 22 -3.4; 23 -3.5; 25 -3.7; 26 -3.8; 28 -4.0; 30 -4.1; 32 -4.2; 35 -4.3; 37 -4.3; 40 -4.3; 42 -4.3; 45 -4.4; 49 -4.3; 52 -4.3; 56 -4.2; 59 -4.2; 64 -4.1; 68 -4.1; 73 -3.9; 78 -3.8; 83 -3.7; 89 -3.7; 95 -4.0; 102 -4.6; 109 -4.7; 117 -5.2; 125 -5.5; 134 -5.9; 143 -6.0; 153 -6.0; 164 -5.4; 175 -5.5; 188 -5.6; 201 -5.5; 215 -5.3; 230 -5.0; 246 -4.8; 263 -4.5; 282 -4.0; 301 -3.6; 323 -3.2; 345 -2.4; 369 -1.7; 395 -1.2; 423 -0.6; 452 -0.4; 484 -0.5; 518 -0.5; 554 -0.6; 593 -0.7; 635 -1.0; 679 -1.2; 726 -1.2; 777 -1.0; 832 -0.9; 890 -0.7; 952 -0.3; 1019 0.2; 1090 0.7; 1167 1.2; 1248 1.8; 1336 2.4; 1429 2.8; 1529 3.3; 1636 3.6; 1751 3.9; 1873 4.4; 2004 5.0; 2145 5.4; 2295 5.6; 2455 5.8; 2627 5.6; 2811 4.9; 3008 5.4; 3219 6.0; 3444 6.0; 3685 6.0; 3943 5.5; 4219 4.0; 4514 3.7; 4830 4.8; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -1.0; 8880 -3.5; 9502 -3.7; 10167 -0.9; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -3.1; 22 -3.4; 23 -3.5; 25 -3.7; 26 -3.8; 28 -4.0; 30 -4.1; 32 -4.2; 35 -4.3; 37 -4.3; 40 -4.3; 42 -4.3; 45 -4.4; 49 -4.3; 52 -4.3; 56 -4.2; 59 -4.2; 64 -4.1; 68 -4.1; 73 -3.9; 78 -3.8; 83 -3.7; 89 -3.7; 95 -4.0; 102 -4.6; 109 -4.7; 117 -5.2; 125 -5.5; 134 -5.9; 143 -6.0; 153 -6.0; 164 -5.4; 175 -5.5; 188 -5.6; 201 -5.5; 215 -5.3; 230 -5.0; 246 -4.8; 263 -4.5; 282 -4.0; 301 -3.6; 323 -3.2; 345 -2.4; 369 -1.7; 395 -1.2; 423 -0.6; 452 -0.4; 484 -0.5; 518 -0.5; 554 -0.6; 593 -0.7; 635 -1.0; 679 -1.2; 726 -1.2; 777 -1.0; 832 -0.9; 890 -0.7; 952 -0.3; 1019 0.2; 1090 0.7; 1167 1.2; 1248 1.8; 1336 2.4; 1429 2.8; 1529 3.3; 1636 3.6; 1751 3.9; 1873 4.4; 2004 5.0; 2145 5.4; 2295 5.6; 2455 5.8; 2627 5.6; 2811 4.9; 3008 5.4; 3219 6.0; 3444 6.0; 3685 6.0; 3943 5.5; 4219 4.0; 4514 3.7; 4830 4.8; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -1.0; 8880 -3.5; 9502 -3.7; 10167 -0.9; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Creative%20Aurvana%20Live%202/Creative%20Aurvana%20Live%202.png)

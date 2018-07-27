@@ -1,13 +1,8 @@
 # Aedle VK1
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 5.9; 49 4.9; 52 3.9; 56 2.8; 59 2.1; 64 1.3; 68 1.0; 73 0.6; 78 0.2; 83 -0.5; 89 -1.4; 95 -2.3; 102 -3.1; 109 -3.4; 117 -3.7; 125 -4.0; 134 -4.3; 143 -4.4; 153 -4.4; 164 -4.2; 175 -4.0; 188 -3.8; 201 -3.6; 215 -3.4; 230 -3.2; 246 -3.0; 263 -2.8; 282 -2.4; 301 -2.0; 323 -1.5; 345 -1.5; 369 -1.7; 395 -1.3; 423 -0.9; 452 -0.4; 484 0.1; 518 0.4; 554 0.7; 593 -0.7; 635 -0.5; 679 1.5; 726 2.6; 777 3.1; 832 2.8; 890 1.9; 952 0.8; 1019 -0.2; 1090 -0.5; 1167 -0.7; 1248 -0.9; 1336 -1.4; 1429 -2.0; 1529 -2.6; 1636 -3.3; 1751 -3.1; 1873 -2.9; 2004 -3.0; 2145 -2.3; 2295 -1.4; 2455 -0.2; 2627 1.2; 2811 2.6; 3008 4.2; 3219 5.1; 3444 5.4; 3685 5.9; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 4.2; 5917 2.0; 6331 1.7; 6775 1.8; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 5.9; 49 4.9; 52 3.9; 56 2.8; 59 2.1; 64 1.3; 68 1.0; 73 0.6; 78 0.2; 83 -0.5; 89 -1.4; 95 -2.3; 102 -3.1; 109 -3.4; 117 -3.7; 125 -4.0; 134 -4.3; 143 -4.4; 153 -4.4; 164 -4.2; 175 -4.0; 188 -3.8; 201 -3.6; 215 -3.4; 230 -3.2; 246 -3.0; 263 -2.8; 282 -2.4; 301 -2.0; 323 -1.5; 345 -1.5; 369 -1.7; 395 -1.3; 423 -0.9; 452 -0.4; 484 0.1; 518 0.4; 554 0.7; 593 -0.7; 635 -0.5; 679 1.5; 726 2.6; 777 3.1; 832 2.8; 890 1.9; 952 0.8; 1019 -0.2; 1090 -0.5; 1167 -0.7; 1248 -0.9; 1336 -1.4; 1429 -2.0; 1529 -2.6; 1636 -3.3; 1751 -3.1; 1873 -2.9; 2004 -3.0; 2145 -2.3; 2295 -1.4; 2455 -0.2; 2627 1.2; 2811 2.6; 3008 4.2; 3219 5.1; 3444 5.4; 3685 5.9; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 4.2; 5917 2.0; 6331 1.7; 6775 1.8; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Aedle%20VK1/Aedle%20VK1.png)

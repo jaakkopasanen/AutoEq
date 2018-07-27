@@ -1,13 +1,8 @@
 # Sennheiser Momentum M2 OEBT Wireless
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -3.4; 22 -3.9; 23 -4.1; 25 -4.5; 26 -4.7; 28 -5.1; 30 -5.3; 32 -5.5; 35 -5.8; 37 -5.9; 40 -6.2; 42 -6.3; 45 -6.4; 49 -6.4; 52 -6.4; 56 -6.4; 59 -6.6; 64 -4.1; 68 -1.4; 73 -4.0; 78 -4.8; 83 -4.1; 89 -3.7; 95 -3.4; 102 -2.9; 109 -2.6; 117 -2.2; 125 -2.1; 134 -1.9; 143 -1.5; 153 -1.1; 164 -0.6; 175 -0.3; 188 -0.0; 201 0.3; 215 0.7; 230 1.1; 246 1.6; 263 2.3; 282 3.0; 301 3.5; 323 4.0; 345 4.2; 369 4.3; 395 4.3; 423 4.3; 452 4.1; 484 3.8; 518 3.5; 554 3.4; 593 3.3; 635 2.9; 679 2.4; 726 2.0; 777 1.7; 832 1.2; 890 0.7; 952 0.3; 1019 -0.1; 1090 -0.4; 1167 -0.5; 1248 -0.8; 1336 -1.3; 1429 -2.0; 1529 -2.8; 1636 -3.5; 1751 -4.0; 1873 -4.3; 2004 -4.7; 2145 -4.9; 2295 -4.7; 2455 -3.9; 2627 -3.2; 2811 -2.1; 3008 -0.7; 3219 0.8; 3444 2.3; 3685 3.5; 3943 5.5; 4219 6.0; 4514 5.7; 4830 3.8; 5168 1.7; 5530 2.8; 5917 4.5; 6331 4.2; 6775 2.5; 7249 1.3; 7756 0.3; 8299 -0.6; 8880 -2.3; 9502 -2.6; 10167 -0.4; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -3.4; 22 -3.9; 23 -4.1; 25 -4.5; 26 -4.7; 28 -5.1; 30 -5.3; 32 -5.5; 35 -5.8; 37 -5.9; 40 -6.2; 42 -6.3; 45 -6.4; 49 -6.4; 52 -6.4; 56 -6.4; 59 -6.6; 64 -4.1; 68 -1.4; 73 -4.0; 78 -4.8; 83 -4.1; 89 -3.7; 95 -3.4; 102 -2.9; 109 -2.6; 117 -2.2; 125 -2.1; 134 -1.9; 143 -1.5; 153 -1.1; 164 -0.6; 175 -0.3; 188 -0.0; 201 0.3; 215 0.7; 230 1.1; 246 1.6; 263 2.3; 282 3.0; 301 3.5; 323 4.0; 345 4.2; 369 4.3; 395 4.3; 423 4.3; 452 4.1; 484 3.8; 518 3.5; 554 3.4; 593 3.3; 635 2.9; 679 2.4; 726 2.0; 777 1.7; 832 1.2; 890 0.7; 952 0.3; 1019 -0.1; 1090 -0.4; 1167 -0.5; 1248 -0.8; 1336 -1.3; 1429 -2.0; 1529 -2.8; 1636 -3.5; 1751 -4.0; 1873 -4.3; 2004 -4.7; 2145 -4.9; 2295 -4.7; 2455 -3.9; 2627 -3.2; 2811 -2.1; 3008 -0.7; 3219 0.8; 3444 2.3; 3685 3.5; 3943 5.5; 4219 6.0; 4514 5.7; 4830 3.8; 5168 1.7; 5530 2.8; 5917 4.5; 6331 4.2; 6775 2.5; 7249 1.3; 7756 0.3; 8299 -0.6; 8880 -2.3; 9502 -2.6; 10167 -0.4; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20Momentum%20M2%20OEBT%20Wireless/Sennheiser%20Momentum%20M2%20OEBT%20Wireless.png)

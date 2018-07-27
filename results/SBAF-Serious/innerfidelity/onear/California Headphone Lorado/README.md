@@ -1,13 +1,8 @@
 # California Headphone Lorado
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.9; 37 5.6; 40 4.9; 42 4.3; 45 3.5; 49 2.6; 52 2.1; 56 1.5; 59 1.0; 64 0.4; 68 0.2; 73 0.2; 78 -0.1; 83 -0.7; 89 -1.7; 95 -2.1; 102 -1.9; 109 -1.9; 117 -2.2; 125 -2.9; 134 -3.2; 143 -3.4; 153 -3.6; 164 -2.9; 175 -3.1; 188 -3.5; 201 -4.0; 215 -3.6; 230 -3.3; 246 -2.9; 263 -2.6; 282 -1.9; 301 -1.4; 323 -0.8; 345 -0.4; 369 -0.2; 395 -0.0; 423 0.2; 452 0.2; 484 0.2; 518 0.3; 554 0.5; 593 0.8; 635 0.9; 679 0.8; 726 0.8; 777 1.0; 832 0.8; 890 0.5; 952 0.3; 1019 -0.0; 1090 -0.3; 1167 -0.5; 1248 -0.8; 1336 -1.7; 1429 -1.7; 1529 -2.1; 1636 -3.0; 1751 -3.1; 1873 -2.9; 2004 -2.2; 2145 -0.8; 2295 0.3; 2455 1.8; 2627 3.3; 2811 4.5; 3008 5.9; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 3.9; 5530 5.8; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 -0.9; 10167 -1.9; 10879 -0.8; 11640 0.0; 12455 0.0; 13327 -0.6; 14260 -1.7; 15258 -0.1; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.9; 37 5.6; 40 4.9; 42 4.3; 45 3.5; 49 2.6; 52 2.1; 56 1.5; 59 1.0; 64 0.4; 68 0.2; 73 0.2; 78 -0.1; 83 -0.7; 89 -1.7; 95 -2.1; 102 -1.9; 109 -1.9; 117 -2.2; 125 -2.9; 134 -3.2; 143 -3.4; 153 -3.6; 164 -2.9; 175 -3.1; 188 -3.5; 201 -4.0; 215 -3.6; 230 -3.3; 246 -2.9; 263 -2.6; 282 -1.9; 301 -1.4; 323 -0.8; 345 -0.4; 369 -0.2; 395 -0.0; 423 0.2; 452 0.2; 484 0.2; 518 0.3; 554 0.5; 593 0.8; 635 0.9; 679 0.8; 726 0.8; 777 1.0; 832 0.8; 890 0.5; 952 0.3; 1019 -0.0; 1090 -0.3; 1167 -0.5; 1248 -0.8; 1336 -1.7; 1429 -1.7; 1529 -2.1; 1636 -3.0; 1751 -3.1; 1873 -2.9; 2004 -2.2; 2145 -0.8; 2295 0.3; 2455 1.8; 2627 3.3; 2811 4.5; 3008 5.9; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 3.9; 5530 5.8; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 -0.9; 10167 -1.9; 10879 -0.8; 11640 0.0; 12455 0.0; 13327 -0.6; 14260 -1.7; 15258 -0.1; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/California%20Headphone%20Lorado/California%20Headphone%20Lorado.png)

@@ -1,13 +1,8 @@
 # Takstar Pro 80
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 2.3; 22 1.9; 23 1.8; 25 1.4; 26 1.3; 28 1.1; 30 0.9; 32 0.8; 35 0.6; 37 0.5; 40 0.4; 42 0.4; 45 0.4; 49 0.4; 52 0.3; 56 0.3; 59 0.4; 64 0.3; 68 0.3; 73 0.3; 78 0.2; 83 0.1; 89 -0.1; 95 -0.4; 102 -0.5; 109 -0.7; 117 -1.1; 125 -1.7; 134 -2.3; 143 -2.7; 153 -2.6; 164 -2.3; 175 -2.5; 188 -2.7; 201 -2.7; 215 -2.6; 230 -2.4; 246 -2.3; 263 -2.3; 282 -2.1; 301 -1.8; 323 -1.5; 345 -1.1; 369 -0.9; 395 -0.4; 423 0.0; 452 0.2; 484 -0.0; 518 0.0; 554 0.3; 593 0.6; 635 0.4; 679 0.2; 726 0.1; 777 0.3; 832 0.9; 890 0.7; 952 0.4; 1019 0.1; 1090 -0.3; 1167 -0.7; 1248 -1.2; 1336 -1.7; 1429 -2.0; 1529 -2.6; 1636 -3.0; 1751 -3.3; 1873 -3.9; 2004 -3.9; 2145 -3.1; 2295 -1.6; 2455 0.5; 2627 2.7; 2811 4.7; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 5.7; 5168 5.5; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -1.6; 8880 -3.5; 9502 -3.8; 10167 -3.2; 10879 -1.2; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 2.3; 22 1.9; 23 1.8; 25 1.4; 26 1.3; 28 1.1; 30 0.9; 32 0.8; 35 0.6; 37 0.5; 40 0.4; 42 0.4; 45 0.4; 49 0.4; 52 0.3; 56 0.3; 59 0.4; 64 0.3; 68 0.3; 73 0.3; 78 0.2; 83 0.1; 89 -0.1; 95 -0.4; 102 -0.5; 109 -0.7; 117 -1.1; 125 -1.7; 134 -2.3; 143 -2.7; 153 -2.6; 164 -2.3; 175 -2.5; 188 -2.7; 201 -2.7; 215 -2.6; 230 -2.4; 246 -2.3; 263 -2.3; 282 -2.1; 301 -1.8; 323 -1.5; 345 -1.1; 369 -0.9; 395 -0.4; 423 0.0; 452 0.2; 484 -0.0; 518 0.0; 554 0.3; 593 0.6; 635 0.4; 679 0.2; 726 0.1; 777 0.3; 832 0.9; 890 0.7; 952 0.4; 1019 0.1; 1090 -0.3; 1167 -0.7; 1248 -1.2; 1336 -1.7; 1429 -2.0; 1529 -2.6; 1636 -3.0; 1751 -3.3; 1873 -3.9; 2004 -3.9; 2145 -3.1; 2295 -1.6; 2455 0.5; 2627 2.7; 2811 4.7; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 5.7; 5168 5.5; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -1.6; 8880 -3.5; 9502 -3.8; 10167 -3.2; 10879 -1.2; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Takstar%20Pro%2080/Takstar%20Pro%2080.png)

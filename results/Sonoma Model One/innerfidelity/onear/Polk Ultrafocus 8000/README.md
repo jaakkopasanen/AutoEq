@@ -1,13 +1,8 @@
 # Polk Ultrafocus 8000
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -0.7; 22 -0.5; 23 -0.4; 25 -0.3; 26 -0.2; 28 0.0; 30 0.3; 32 0.5; 35 1.0; 37 1.2; 40 1.5; 42 1.6; 45 1.7; 49 1.9; 52 2.0; 56 2.2; 59 2.6; 64 3.3; 68 3.9; 73 4.6; 78 5.0; 83 4.9; 89 4.5; 95 3.9; 102 3.4; 109 3.1; 117 2.8; 125 2.3; 134 1.9; 143 1.6; 153 1.6; 164 1.7; 175 1.6; 188 1.5; 201 1.4; 215 1.5; 230 1.5; 246 1.4; 263 1.2; 282 1.2; 301 1.1; 323 1.1; 345 1.1; 369 1.3; 395 1.0; 423 1.0; 452 1.1; 484 1.1; 518 1.2; 554 1.4; 593 1.6; 635 2.0; 679 2.2; 726 2.6; 777 2.7; 832 2.5; 890 1.4; 952 0.6; 1019 -0.0; 1090 0.6; 1167 1.7; 1248 2.7; 1336 3.6; 1429 4.3; 1529 4.7; 1636 4.7; 1751 4.3; 1873 4.3; 2004 4.3; 2145 4.7; 2295 5.3; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 3.5; 4830 3.1; 5168 3.9; 5530 4.0; 5917 5.1; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 -0.5; 10167 -0.7; 10879 -0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -0.7; 22 -0.5; 23 -0.4; 25 -0.3; 26 -0.2; 28 0.0; 30 0.3; 32 0.5; 35 1.0; 37 1.2; 40 1.5; 42 1.6; 45 1.7; 49 1.9; 52 2.0; 56 2.2; 59 2.6; 64 3.3; 68 3.9; 73 4.6; 78 5.0; 83 4.9; 89 4.5; 95 3.9; 102 3.4; 109 3.1; 117 2.8; 125 2.3; 134 1.9; 143 1.6; 153 1.6; 164 1.7; 175 1.6; 188 1.5; 201 1.4; 215 1.5; 230 1.5; 246 1.4; 263 1.2; 282 1.2; 301 1.1; 323 1.1; 345 1.1; 369 1.3; 395 1.0; 423 1.0; 452 1.1; 484 1.1; 518 1.2; 554 1.4; 593 1.6; 635 2.0; 679 2.2; 726 2.6; 777 2.7; 832 2.5; 890 1.4; 952 0.6; 1019 -0.0; 1090 0.6; 1167 1.7; 1248 2.7; 1336 3.6; 1429 4.3; 1529 4.7; 1636 4.7; 1751 4.3; 1873 4.3; 2004 4.3; 2145 4.7; 2295 5.3; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 3.5; 4830 3.1; 5168 3.9; 5530 4.0; 5917 5.1; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 -0.5; 10167 -0.7; 10879 -0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Polk%20Ultrafocus%208000/Polk%20Ultrafocus%208000.png)

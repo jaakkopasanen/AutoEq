@@ -1,13 +1,8 @@
 # Stax SR-L300
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 5.8; 56 5.2; 59 4.9; 64 4.8; 68 5.0; 73 5.3; 78 5.4; 83 5.1; 89 4.4; 95 3.7; 102 2.8; 109 2.4; 117 2.2; 125 1.6; 134 1.2; 143 1.0; 153 0.8; 164 0.7; 175 0.7; 188 0.7; 201 0.7; 215 0.8; 230 0.9; 246 0.8; 263 0.9; 282 1.0; 301 1.1; 323 1.2; 345 1.2; 369 1.2; 395 1.2; 423 1.3; 452 1.5; 484 1.5; 518 1.3; 554 1.3; 593 1.6; 635 1.9; 679 2.1; 726 2.2; 777 2.2; 832 1.6; 890 0.8; 952 0.0; 1019 0.2; 1090 0.8; 1167 1.1; 1248 1.0; 1336 1.1; 1429 2.3; 1529 3.2; 1636 4.1; 1751 4.3; 1873 4.2; 2004 3.8; 2145 3.1; 2295 2.4; 2455 1.9; 2627 1.8; 2811 2.3; 3008 3.4; 3219 3.7; 3444 3.9; 3685 3.0; 3943 2.1; 4219 0.9; 4514 0.9; 4830 0.9; 5168 1.3; 5530 -0.4; 5917 -2.8; 6331 -2.4; 6775 -1.0; 7249 -0.6; 7756 -1.4; 8299 -3.5; 8880 -5.1; 9502 -4.3; 10167 -1.3; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 -0.1; 15258 -1.1; 16326 -2.0; 17469 -2.7; 18692 -3.0; 20000 -2.5
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 5.8; 56 5.2; 59 4.9; 64 4.8; 68 5.0; 73 5.3; 78 5.4; 83 5.1; 89 4.4; 95 3.7; 102 2.8; 109 2.4; 117 2.2; 125 1.6; 134 1.2; 143 1.0; 153 0.8; 164 0.7; 175 0.7; 188 0.7; 201 0.7; 215 0.8; 230 0.9; 246 0.8; 263 0.9; 282 1.0; 301 1.1; 323 1.2; 345 1.2; 369 1.2; 395 1.2; 423 1.3; 452 1.5; 484 1.5; 518 1.3; 554 1.3; 593 1.6; 635 1.9; 679 2.1; 726 2.2; 777 2.2; 832 1.6; 890 0.8; 952 0.0; 1019 0.2; 1090 0.8; 1167 1.1; 1248 1.0; 1336 1.1; 1429 2.3; 1529 3.2; 1636 4.1; 1751 4.3; 1873 4.2; 2004 3.8; 2145 3.1; 2295 2.4; 2455 1.9; 2627 1.8; 2811 2.3; 3008 3.4; 3219 3.7; 3444 3.9; 3685 3.0; 3943 2.1; 4219 0.9; 4514 0.9; 4830 0.9; 5168 1.3; 5530 -0.4; 5917 -2.8; 6331 -2.4; 6775 -1.0; 7249 -0.6; 7756 -1.4; 8299 -3.5; 8880 -5.1; 9502 -4.3; 10167 -1.3; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 -0.1; 15258 -1.1; 16326 -2.0; 17469 -2.7; 18692 -3.0; 20000 -2.5
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Stax%20SR-L300/Stax%20SR-L300.png)

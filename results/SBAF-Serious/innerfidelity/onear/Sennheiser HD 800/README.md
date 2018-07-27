@@ -1,13 +1,8 @@
 # Sennheiser HD 800
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-36**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -3.6dB
 GraphicEQ: 10 -84; 20 3.6; 22 3.2; 23 3.1; 25 2.8; 26 2.7; 28 2.4; 30 2.2; 32 2.1; 35 1.9; 37 1.8; 40 1.7; 42 1.7; 45 1.7; 49 1.8; 52 2.0; 56 2.3; 59 2.3; 64 1.9; 68 1.4; 73 0.8; 78 0.4; 83 0.1; 89 -0.2; 95 -0.6; 102 -1.0; 109 -1.3; 117 -1.7; 125 -2.2; 134 -2.4; 143 -2.6; 153 -2.9; 164 -2.8; 175 -3.0; 188 -3.0; 201 -3.1; 215 -3.0; 230 -2.9; 246 -3.0; 263 -2.9; 282 -2.7; 301 -2.7; 323 -2.6; 345 -2.4; 369 -2.3; 395 -2.2; 423 -2.0; 452 -1.8; 484 -1.8; 518 -1.7; 554 -1.5; 593 -1.2; 635 -1.1; 679 -1.1; 726 -1.0; 777 -0.5; 832 -0.5; 890 -0.4; 952 -0.1; 1019 0.1; 1090 0.5; 1167 0.9; 1248 1.4; 1336 1.5; 1429 1.5; 1529 1.6; 1636 1.4; 1751 1.2; 1873 1.2; 2004 1.6; 2145 1.6; 2295 1.5; 2455 2.1; 2627 2.6; 2811 2.2; 3008 2.0; 3219 2.2; 3444 2.0; 3685 0.9; 3943 -0.1; 4219 -1.7; 4514 -2.6; 4830 -2.6; 5168 -2.9; 5530 -3.9; 5917 -4.0; 6331 -4.9; 6775 -4.3; 7249 -3.0; 7756 -1.3; 8299 -0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.7
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 3.6; 22 3.2; 23 3.1; 25 2.8; 26 2.7; 28 2.4; 30 2.2; 32 2.1; 35 1.9; 37 1.8; 40 1.7; 42 1.7; 45 1.7; 49 1.8; 52 2.0; 56 2.3; 59 2.3; 64 1.9; 68 1.4; 73 0.8; 78 0.4; 83 0.1; 89 -0.2; 95 -0.6; 102 -1.0; 109 -1.3; 117 -1.7; 125 -2.2; 134 -2.4; 143 -2.6; 153 -2.9; 164 -2.8; 175 -3.0; 188 -3.0; 201 -3.1; 215 -3.0; 230 -2.9; 246 -3.0; 263 -2.9; 282 -2.7; 301 -2.7; 323 -2.6; 345 -2.4; 369 -2.3; 395 -2.2; 423 -2.0; 452 -1.8; 484 -1.8; 518 -1.7; 554 -1.5; 593 -1.2; 635 -1.1; 679 -1.1; 726 -1.0; 777 -0.5; 832 -0.5; 890 -0.4; 952 -0.1; 1019 0.1; 1090 0.5; 1167 0.9; 1248 1.4; 1336 1.5; 1429 1.5; 1529 1.6; 1636 1.4; 1751 1.2; 1873 1.2; 2004 1.6; 2145 1.6; 2295 1.5; 2455 2.1; 2627 2.6; 2811 2.2; 3008 2.0; 3219 2.2; 3444 2.0; 3685 0.9; 3943 -0.1; 4219 -1.7; 4514 -2.6; 4830 -2.6; 5168 -2.9; 5530 -3.9; 5917 -4.0; 6331 -4.9; 6775 -4.3; 7249 -3.0; 7756 -1.3; 8299 -0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.7
-Copy: L=-3.6dB*l, R=-3.6dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -3.6dB` and instead set Global volume in the UI for both channels to **-36**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)

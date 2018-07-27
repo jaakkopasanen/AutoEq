@@ -1,13 +1,8 @@
 # Torque t402v OverEar Black
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 3.4; 22 2.7; 23 2.4; 25 1.8; 26 1.5; 28 0.9; 30 0.4; 32 -0.1; 35 -0.7; 37 -1.1; 40 -1.7; 42 -2.0; 45 -2.5; 49 -3.2; 52 -3.6; 56 -4.0; 59 -4.1; 64 -4.1; 68 -3.8; 73 -3.3; 78 -3.1; 83 -3.4; 89 -4.4; 95 -5.6; 102 -6.8; 109 -7.5; 117 -8.3; 125 -9.2; 134 -9.8; 143 -10.1; 153 -10.7; 164 -10.5; 175 -10.8; 188 -11.3; 201 -11.6; 215 -11.8; 230 -12.0; 246 -12.2; 263 -12.3; 282 -12.0; 301 -11.5; 323 -10.8; 345 -9.6; 369 -8.4; 395 -7.1; 423 -5.1; 452 -3.2; 484 -1.9; 518 -0.5; 554 1.0; 593 2.7; 635 4.3; 679 5.6; 726 6.0; 777 5.8; 832 4.5; 890 2.9; 952 1.2; 1019 -0.4; 1090 -0.3; 1167 1.6; 1248 1.5; 1336 0.4; 1429 0.1; 1529 -1.7; 1636 -3.8; 1751 -4.0; 1873 -2.7; 2004 -1.5; 2145 -1.1; 2295 -1.0; 2455 -0.9; 2627 -0.4; 2811 0.1; 3008 0.7; 3219 2.2; 3444 3.0; 3685 2.9; 3943 2.5; 4219 2.3; 4514 2.8; 4830 3.3; 5168 2.0; 5530 -0.6; 5917 -4.0; 6331 -6.5; 6775 -6.8; 7249 -6.3; 7756 -6.0; 8299 -6.1; 8880 -5.2; 9502 -1.6; 10167 0.0; 10879 0.0; 11640 0.0; 12455 -0.8; 13327 -3.3; 14260 -4.0; 15258 -3.6; 16326 -2.3; 17469 -0.3; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 3.4; 22 2.7; 23 2.4; 25 1.8; 26 1.5; 28 0.9; 30 0.4; 32 -0.1; 35 -0.7; 37 -1.1; 40 -1.7; 42 -2.0; 45 -2.5; 49 -3.2; 52 -3.6; 56 -4.0; 59 -4.1; 64 -4.1; 68 -3.8; 73 -3.3; 78 -3.1; 83 -3.4; 89 -4.4; 95 -5.6; 102 -6.8; 109 -7.5; 117 -8.3; 125 -9.2; 134 -9.8; 143 -10.1; 153 -10.7; 164 -10.5; 175 -10.8; 188 -11.3; 201 -11.6; 215 -11.8; 230 -12.0; 246 -12.2; 263 -12.3; 282 -12.0; 301 -11.5; 323 -10.8; 345 -9.6; 369 -8.4; 395 -7.1; 423 -5.1; 452 -3.2; 484 -1.9; 518 -0.5; 554 1.0; 593 2.7; 635 4.3; 679 5.6; 726 6.0; 777 5.8; 832 4.5; 890 2.9; 952 1.2; 1019 -0.4; 1090 -0.3; 1167 1.6; 1248 1.5; 1336 0.4; 1429 0.1; 1529 -1.7; 1636 -3.8; 1751 -4.0; 1873 -2.7; 2004 -1.5; 2145 -1.1; 2295 -1.0; 2455 -0.9; 2627 -0.4; 2811 0.1; 3008 0.7; 3219 2.2; 3444 3.0; 3685 2.9; 3943 2.5; 4219 2.3; 4514 2.8; 4830 3.3; 5168 2.0; 5530 -0.6; 5917 -4.0; 6331 -6.5; 6775 -6.8; 7249 -6.3; 7756 -6.0; 8299 -6.1; 8880 -5.2; 9502 -1.6; 10167 0.0; 10879 0.0; 11640 0.0; 12455 -0.8; 13327 -3.3; 14260 -4.0; 15258 -3.6; 16326 -2.3; 17469 -0.3; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Torque%20t402v%20OverEar%20Black/Torque%20t402v%20OverEar%20Black.png)

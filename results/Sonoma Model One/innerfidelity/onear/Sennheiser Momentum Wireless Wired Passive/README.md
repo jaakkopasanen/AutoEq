@@ -1,13 +1,8 @@
 # Sennheiser Momentum Wireless Wired Passive
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 5.0; 22 4.6; 23 4.4; 25 4.1; 26 4.0; 28 3.7; 30 3.5; 32 3.3; 35 3.0; 37 2.9; 40 2.6; 42 2.4; 45 2.2; 49 1.8; 52 1.6; 56 1.4; 59 1.4; 64 1.5; 68 1.8; 73 2.2; 78 2.4; 83 2.1; 89 1.4; 95 0.6; 102 -0.2; 109 -0.5; 117 -1.1; 125 -1.5; 134 -1.8; 143 -1.8; 153 -2.3; 164 -2.5; 175 -1.8; 188 -1.6; 201 -1.5; 215 -1.2; 230 -0.8; 246 -0.4; 263 -0.2; 282 0.3; 301 1.0; 323 1.5; 345 1.7; 369 1.5; 395 1.0; 423 0.9; 452 0.8; 484 0.6; 518 0.4; 554 0.2; 593 0.3; 635 0.6; 679 1.0; 726 1.3; 777 1.5; 832 1.2; 890 0.7; 952 0.1; 1019 0.0; 1090 0.3; 1167 1.0; 1248 1.4; 1336 1.5; 1429 1.5; 1529 1.2; 1636 0.7; 1751 -0.0; 1873 -0.9; 2004 -0.7; 2145 -0.1; 2295 0.8; 2455 2.0; 2627 3.2; 2811 4.4; 3008 5.8; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 2.5; 5168 2.3; 5530 3.6; 5917 4.8; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 5.0; 22 4.6; 23 4.4; 25 4.1; 26 4.0; 28 3.7; 30 3.5; 32 3.3; 35 3.0; 37 2.9; 40 2.6; 42 2.4; 45 2.2; 49 1.8; 52 1.6; 56 1.4; 59 1.4; 64 1.5; 68 1.8; 73 2.2; 78 2.4; 83 2.1; 89 1.4; 95 0.6; 102 -0.2; 109 -0.5; 117 -1.1; 125 -1.5; 134 -1.8; 143 -1.8; 153 -2.3; 164 -2.5; 175 -1.8; 188 -1.6; 201 -1.5; 215 -1.2; 230 -0.8; 246 -0.4; 263 -0.2; 282 0.3; 301 1.0; 323 1.5; 345 1.7; 369 1.5; 395 1.0; 423 0.9; 452 0.8; 484 0.6; 518 0.4; 554 0.2; 593 0.3; 635 0.6; 679 1.0; 726 1.3; 777 1.5; 832 1.2; 890 0.7; 952 0.1; 1019 0.0; 1090 0.3; 1167 1.0; 1248 1.4; 1336 1.5; 1429 1.5; 1529 1.2; 1636 0.7; 1751 -0.0; 1873 -0.9; 2004 -0.7; 2145 -0.1; 2295 0.8; 2455 2.0; 2627 3.2; 2811 4.4; 3008 5.8; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 2.5; 5168 2.3; 5530 3.6; 5917 4.8; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Sennheiser%20Momentum%20Wireless%20Wired%20Passive/Sennheiser%20Momentum%20Wireless%20Wired%20Passive.png)

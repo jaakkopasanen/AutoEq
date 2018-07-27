@@ -1,13 +1,8 @@
 # Sennheiser Urbanite
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 1.8; 22 1.7; 23 1.7; 25 1.7; 26 1.6; 28 1.6; 30 1.6; 32 1.6; 35 1.5; 37 1.5; 40 1.4; 42 1.4; 45 1.2; 49 1.0; 52 0.9; 56 0.8; 59 0.8; 64 1.1; 68 1.5; 73 2.1; 78 2.3; 83 2.0; 89 1.5; 95 0.8; 102 0.2; 109 -0.1; 117 -0.4; 125 -0.8; 134 -1.2; 143 -1.8; 153 -2.3; 164 -2.0; 175 -1.9; 188 -2.1; 201 -2.1; 215 -1.9; 230 -1.6; 246 -1.4; 263 -1.2; 282 -0.8; 301 -0.5; 323 -0.2; 345 -0.0; 369 0.1; 395 0.1; 423 0.3; 452 0.5; 484 0.8; 518 0.8; 554 0.7; 593 0.7; 635 0.9; 679 1.0; 726 1.3; 777 1.4; 832 1.2; 890 0.7; 952 0.2; 1019 0.0; 1090 0.5; 1167 1.4; 1248 2.3; 1336 2.8; 1429 2.9; 1529 2.8; 1636 2.4; 1751 2.1; 1873 2.6; 2004 3.6; 2145 5.0; 2295 5.9; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 1.8; 22 1.7; 23 1.7; 25 1.7; 26 1.6; 28 1.6; 30 1.6; 32 1.6; 35 1.5; 37 1.5; 40 1.4; 42 1.4; 45 1.2; 49 1.0; 52 0.9; 56 0.8; 59 0.8; 64 1.1; 68 1.5; 73 2.1; 78 2.3; 83 2.0; 89 1.5; 95 0.8; 102 0.2; 109 -0.1; 117 -0.4; 125 -0.8; 134 -1.2; 143 -1.8; 153 -2.3; 164 -2.0; 175 -1.9; 188 -2.1; 201 -2.1; 215 -1.9; 230 -1.6; 246 -1.4; 263 -1.2; 282 -0.8; 301 -0.5; 323 -0.2; 345 -0.0; 369 0.1; 395 0.1; 423 0.3; 452 0.5; 484 0.8; 518 0.8; 554 0.7; 593 0.7; 635 0.9; 679 1.0; 726 1.3; 777 1.4; 832 1.2; 890 0.7; 952 0.2; 1019 0.0; 1090 0.5; 1167 1.4; 1248 2.3; 1336 2.8; 1429 2.9; 1529 2.8; 1636 2.4; 1751 2.1; 1873 2.6; 2004 3.6; 2145 5.0; 2295 5.9; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Sennheiser%20Urbanite/Sennheiser%20Urbanite.png)

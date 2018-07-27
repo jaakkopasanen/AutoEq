@@ -1,13 +1,8 @@
 # AKG K271 MkII
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 5.9; 52 5.6; 56 5.1; 59 5.0; 64 5.3; 68 5.8; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 5.9; 109 4.6; 117 3.6; 125 3.0; 134 1.7; 143 1.0; 153 1.0; 164 1.7; 175 0.9; 188 0.7; 201 0.8; 215 0.5; 230 -0.2; 246 -0.8; 263 -1.0; 282 -1.1; 301 -1.2; 323 -1.2; 345 -1.2; 369 -1.3; 395 -1.5; 423 -1.4; 452 -1.3; 484 -1.4; 518 -1.6; 554 -1.9; 593 -2.1; 635 -2.5; 679 -1.6; 726 1.1; 777 2.4; 832 1.7; 890 1.2; 952 0.6; 1019 -0.1; 1090 0.1; 1167 0.7; 1248 1.0; 1336 1.1; 1429 0.9; 1529 0.3; 1636 -0.6; 1751 -1.2; 1873 -1.0; 2004 1.0; 2145 2.2; 2295 1.7; 2455 3.1; 2627 3.3; 2811 3.5; 3008 4.3; 3219 4.8; 3444 5.2; 3685 5.4; 3943 4.7; 4219 3.1; 4514 3.1; 4830 4.9; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 -1.4; 8299 -5.6; 8880 -8.5; 9502 -9.7; 10167 -8.4; 10879 -3.4; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 5.9; 52 5.6; 56 5.1; 59 5.0; 64 5.3; 68 5.8; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 5.9; 109 4.6; 117 3.6; 125 3.0; 134 1.7; 143 1.0; 153 1.0; 164 1.7; 175 0.9; 188 0.7; 201 0.8; 215 0.5; 230 -0.2; 246 -0.8; 263 -1.0; 282 -1.1; 301 -1.2; 323 -1.2; 345 -1.2; 369 -1.3; 395 -1.5; 423 -1.4; 452 -1.3; 484 -1.4; 518 -1.6; 554 -1.9; 593 -2.1; 635 -2.5; 679 -1.6; 726 1.1; 777 2.4; 832 1.7; 890 1.2; 952 0.6; 1019 -0.1; 1090 0.1; 1167 0.7; 1248 1.0; 1336 1.1; 1429 0.9; 1529 0.3; 1636 -0.6; 1751 -1.2; 1873 -1.0; 2004 1.0; 2145 2.2; 2295 1.7; 2455 3.1; 2627 3.3; 2811 3.5; 3008 4.3; 3219 4.8; 3444 5.2; 3685 5.4; 3943 4.7; 4219 3.1; 4514 3.1; 4830 4.9; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 -1.4; 8299 -5.6; 8880 -8.5; 9502 -9.7; 10167 -8.4; 10879 -3.4; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/AKG%20K271%20MkII/AKG%20K271%20MkII.png)

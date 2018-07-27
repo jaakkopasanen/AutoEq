@@ -1,13 +1,8 @@
 # Sol Republic Tracks
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 2.4; 22 1.7; 23 1.4; 25 0.9; 26 0.6; 28 0.2; 30 -0.2; 32 -0.5; 35 -1.0; 37 -1.3; 40 -1.7; 42 -1.9; 45 -2.2; 49 -2.5; 52 -2.8; 56 -2.9; 59 -2.8; 64 -2.5; 68 -2.1; 73 -1.6; 78 -1.3; 83 -1.3; 89 -1.5; 95 -1.9; 102 -2.5; 109 -3.0; 117 -3.6; 125 -4.1; 134 -4.7; 143 -5.1; 153 -5.4; 164 -5.1; 175 -5.2; 188 -5.2; 201 -5.0; 215 -4.8; 230 -4.1; 246 -3.4; 263 -2.4; 282 -0.9; 301 0.5; 323 2.1; 345 3.5; 369 5.5; 395 6.0; 423 6.0; 452 6.0; 484 6.0; 518 5.6; 554 4.3; 593 3.2; 635 2.5; 679 2.0; 726 1.6; 777 1.3; 832 0.8; 890 0.4; 952 0.1; 1019 -0.0; 1090 0.6; 1167 2.0; 1248 3.1; 1336 3.9; 1429 4.6; 1529 5.6; 1636 5.5; 1751 3.2; 1873 2.9; 2004 3.2; 2145 3.8; 2295 4.8; 2455 5.8; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 4.8; 4830 4.4; 5168 3.9; 5530 3.4; 5917 3.5; 6331 4.8; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 2.4; 22 1.7; 23 1.4; 25 0.9; 26 0.6; 28 0.2; 30 -0.2; 32 -0.5; 35 -1.0; 37 -1.3; 40 -1.7; 42 -1.9; 45 -2.2; 49 -2.5; 52 -2.8; 56 -2.9; 59 -2.8; 64 -2.5; 68 -2.1; 73 -1.6; 78 -1.3; 83 -1.3; 89 -1.5; 95 -1.9; 102 -2.5; 109 -3.0; 117 -3.6; 125 -4.1; 134 -4.7; 143 -5.1; 153 -5.4; 164 -5.1; 175 -5.2; 188 -5.2; 201 -5.0; 215 -4.8; 230 -4.1; 246 -3.4; 263 -2.4; 282 -0.9; 301 0.5; 323 2.1; 345 3.5; 369 5.5; 395 6.0; 423 6.0; 452 6.0; 484 6.0; 518 5.6; 554 4.3; 593 3.2; 635 2.5; 679 2.0; 726 1.6; 777 1.3; 832 0.8; 890 0.4; 952 0.1; 1019 -0.0; 1090 0.6; 1167 2.0; 1248 3.1; 1336 3.9; 1429 4.6; 1529 5.6; 1636 5.5; 1751 3.2; 1873 2.9; 2004 3.2; 2145 3.8; 2295 4.8; 2455 5.8; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 4.8; 4830 4.4; 5168 3.9; 5530 3.4; 5917 3.5; 6331 4.8; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Sol%20Republic%20Tracks/Sol%20Republic%20Tracks.png)

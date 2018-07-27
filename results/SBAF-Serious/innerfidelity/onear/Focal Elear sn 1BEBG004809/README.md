@@ -1,13 +1,8 @@
 # Focal Elear sn 1BEBG004809
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 4.2; 22 3.9; 23 3.7; 25 3.4; 26 3.3; 28 3.1; 30 2.9; 32 2.7; 35 2.6; 37 2.5; 40 2.3; 42 2.3; 45 2.2; 49 2.0; 52 1.9; 56 1.7; 59 1.6; 64 1.4; 68 1.2; 73 1.1; 78 0.9; 83 0.8; 89 0.5; 95 0.2; 102 -0.2; 109 -0.4; 117 -0.7; 125 -1.1; 134 -1.3; 143 -1.5; 153 -1.5; 164 -1.6; 175 -1.5; 188 -1.6; 201 -1.5; 215 -1.4; 230 -1.3; 246 -1.2; 263 -1.2; 282 -1.0; 301 -0.9; 323 -0.8; 345 -0.6; 369 -0.5; 395 -0.5; 423 -0.3; 452 -0.2; 484 -0.2; 518 -0.2; 554 0.1; 593 0.4; 635 0.5; 679 0.4; 726 0.4; 777 0.6; 832 0.5; 890 0.3; 952 0.1; 1019 -0.0; 1090 -0.2; 1167 -0.5; 1248 -0.6; 1336 -0.8; 1429 -1.1; 1529 -1.6; 1636 -2.2; 1751 -2.4; 1873 -2.2; 2004 -2.3; 2145 -2.2; 2295 -1.9; 2455 -1.9; 2627 -1.6; 2811 -1.0; 3008 -0.2; 3219 0.5; 3444 1.1; 3685 1.7; 3943 4.6; 4219 5.7; 4514 5.2; 4830 5.9; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.1; 8299 -1.9; 8880 -2.3; 9502 -0.8; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -1.2; 20000 -1.2
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 4.2; 22 3.9; 23 3.7; 25 3.4; 26 3.3; 28 3.1; 30 2.9; 32 2.7; 35 2.6; 37 2.5; 40 2.3; 42 2.3; 45 2.2; 49 2.0; 52 1.9; 56 1.7; 59 1.6; 64 1.4; 68 1.2; 73 1.1; 78 0.9; 83 0.8; 89 0.5; 95 0.2; 102 -0.2; 109 -0.4; 117 -0.7; 125 -1.1; 134 -1.3; 143 -1.5; 153 -1.5; 164 -1.6; 175 -1.5; 188 -1.6; 201 -1.5; 215 -1.4; 230 -1.3; 246 -1.2; 263 -1.2; 282 -1.0; 301 -0.9; 323 -0.8; 345 -0.6; 369 -0.5; 395 -0.5; 423 -0.3; 452 -0.2; 484 -0.2; 518 -0.2; 554 0.1; 593 0.4; 635 0.5; 679 0.4; 726 0.4; 777 0.6; 832 0.5; 890 0.3; 952 0.1; 1019 -0.0; 1090 -0.2; 1167 -0.5; 1248 -0.6; 1336 -0.8; 1429 -1.1; 1529 -1.6; 1636 -2.2; 1751 -2.4; 1873 -2.2; 2004 -2.3; 2145 -2.2; 2295 -1.9; 2455 -1.9; 2627 -1.6; 2811 -1.0; 3008 -0.2; 3219 0.5; 3444 1.1; 3685 1.7; 3943 4.6; 4219 5.7; 4514 5.2; 4830 5.9; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.1; 8299 -1.9; 8880 -2.3; 9502 -0.8; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -1.2; 20000 -1.2
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Focal%20Elear%20sn%201BEBG004809/Focal%20Elear%20sn%201BEBG004809.png)

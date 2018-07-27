@@ -1,13 +1,8 @@
 # Phiaton Chord MS530 Bluetooth
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 4.0; 22 3.4; 23 3.2; 25 2.7; 26 2.5; 28 2.1; 30 1.8; 32 1.6; 35 1.3; 37 1.1; 40 0.9; 42 0.8; 45 0.6; 49 0.5; 52 0.3; 56 0.3; 59 0.3; 64 0.3; 68 0.3; 73 0.1; 78 0.1; 83 0.1; 89 0.0; 95 -0.1; 102 -0.2; 109 -0.1; 117 -0.2; 125 -0.3; 134 -0.0; 143 0.4; 153 0.7; 164 0.6; 175 1.4; 188 1.8; 201 1.7; 215 1.7; 230 1.9; 246 2.1; 263 2.6; 282 3.0; 301 3.2; 323 3.4; 345 3.6; 369 3.5; 395 3.4; 423 3.4; 452 3.3; 484 3.0; 518 2.8; 554 2.8; 593 2.9; 635 2.8; 679 2.5; 726 2.2; 777 2.0; 832 1.6; 890 1.2; 952 0.6; 1019 -0.1; 1090 -0.6; 1167 -1.1; 1248 -1.5; 1336 -2.0; 1429 -2.4; 1529 -1.3; 1636 0.1; 1751 -2.7; 1873 -2.2; 2004 -1.3; 2145 -0.0; 2295 1.0; 2455 2.4; 2627 3.9; 2811 5.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 4.0; 22 3.4; 23 3.2; 25 2.7; 26 2.5; 28 2.1; 30 1.8; 32 1.6; 35 1.3; 37 1.1; 40 0.9; 42 0.8; 45 0.6; 49 0.5; 52 0.3; 56 0.3; 59 0.3; 64 0.3; 68 0.3; 73 0.1; 78 0.1; 83 0.1; 89 0.0; 95 -0.1; 102 -0.2; 109 -0.1; 117 -0.2; 125 -0.3; 134 -0.0; 143 0.4; 153 0.7; 164 0.6; 175 1.4; 188 1.8; 201 1.7; 215 1.7; 230 1.9; 246 2.1; 263 2.6; 282 3.0; 301 3.2; 323 3.4; 345 3.6; 369 3.5; 395 3.4; 423 3.4; 452 3.3; 484 3.0; 518 2.8; 554 2.8; 593 2.9; 635 2.8; 679 2.5; 726 2.2; 777 2.0; 832 1.6; 890 1.2; 952 0.6; 1019 -0.1; 1090 -0.6; 1167 -1.1; 1248 -1.5; 1336 -2.0; 1429 -2.4; 1529 -1.3; 1636 0.1; 1751 -2.7; 1873 -2.2; 2004 -1.3; 2145 -0.0; 2295 1.0; 2455 2.4; 2627 3.9; 2811 5.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Phiaton%20Chord%20MS530%20Bluetooth/Phiaton%20Chord%20MS530%20Bluetooth.png)

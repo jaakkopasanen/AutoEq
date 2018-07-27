@@ -1,13 +1,8 @@
 # Toshiba HR-810 Low Gain
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 6.0; 109 5.9; 117 4.8; 125 3.4; 134 2.2; 143 1.4; 153 0.7; 164 0.2; 175 -0.3; 188 -0.6; 201 -0.8; 215 -0.9; 230 -1.0; 246 -1.0; 263 -1.1; 282 -1.0; 301 -0.9; 323 -0.8; 345 -0.6; 369 -0.5; 395 -0.5; 423 -0.2; 452 0.1; 484 0.3; 518 0.4; 554 0.4; 593 0.7; 635 1.0; 679 1.5; 726 1.8; 777 1.9; 832 1.6; 890 0.8; 952 0.2; 1019 0.1; 1090 1.2; 1167 2.0; 1248 1.2; 1336 0.2; 1429 -0.0; 1529 -0.2; 1636 -1.1; 1751 -1.8; 1873 -2.3; 2004 -2.4; 2145 -3.0; 2295 -3.0; 2455 -1.9; 2627 -1.6; 2811 -0.9; 3008 0.5; 3219 1.2; 3444 1.6; 3685 1.9; 3943 2.2; 4219 2.4; 4514 3.7; 4830 5.5; 5168 6.0; 5530 4.7; 5917 5.6; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 -0.3; 16326 -0.1; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 6.0; 109 5.9; 117 4.8; 125 3.4; 134 2.2; 143 1.4; 153 0.7; 164 0.2; 175 -0.3; 188 -0.6; 201 -0.8; 215 -0.9; 230 -1.0; 246 -1.0; 263 -1.1; 282 -1.0; 301 -0.9; 323 -0.8; 345 -0.6; 369 -0.5; 395 -0.5; 423 -0.2; 452 0.1; 484 0.3; 518 0.4; 554 0.4; 593 0.7; 635 1.0; 679 1.5; 726 1.8; 777 1.9; 832 1.6; 890 0.8; 952 0.2; 1019 0.1; 1090 1.2; 1167 2.0; 1248 1.2; 1336 0.2; 1429 -0.0; 1529 -0.2; 1636 -1.1; 1751 -1.8; 1873 -2.3; 2004 -2.4; 2145 -3.0; 2295 -3.0; 2455 -1.9; 2627 -1.6; 2811 -0.9; 3008 0.5; 3219 1.2; 3444 1.6; 3685 1.9; 3943 2.2; 4219 2.4; 4514 3.7; 4830 5.5; 5168 6.0; 5530 4.7; 5917 5.6; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 -0.3; 16326 -0.1; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Toshiba%20HR-810%20Low%20Gain/Toshiba%20HR-810%20Low%20Gain.png)

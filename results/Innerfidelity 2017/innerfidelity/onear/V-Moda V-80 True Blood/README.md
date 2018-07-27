@@ -1,13 +1,8 @@
 # V-Moda V-80 True Blood
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 0.2; 22 -0.2; 23 -0.4; 25 -0.6; 26 -0.8; 28 -0.9; 30 -1.1; 32 -1.2; 35 -1.4; 37 -1.5; 40 -1.6; 42 -1.6; 45 -1.7; 49 -1.7; 52 -1.8; 56 -1.9; 59 -1.9; 64 -2.0; 68 -2.0; 73 -2.1; 78 -2.0; 83 -2.0; 89 -2.3; 95 -2.7; 102 -3.1; 109 -3.2; 117 -3.2; 125 -3.6; 134 -4.0; 143 -4.3; 153 -4.3; 164 -4.1; 175 -3.9; 188 -4.0; 201 -3.8; 215 -3.9; 230 -4.4; 246 -3.9; 263 -3.3; 282 -2.5; 301 -1.7; 323 -1.2; 345 -0.8; 369 -0.5; 395 -0.1; 423 0.3; 452 0.5; 484 0.8; 518 1.5; 554 2.3; 593 2.9; 635 3.0; 679 2.8; 726 2.5; 777 2.3; 832 1.7; 890 1.1; 952 0.5; 1019 -0.2; 1090 -1.0; 1167 -1.8; 1248 -2.3; 1336 -2.7; 1429 -2.7; 1529 -2.2; 1636 -1.8; 1751 -1.1; 1873 -0.4; 2004 0.5; 2145 1.2; 2295 1.7; 2455 2.2; 2627 2.3; 2811 2.2; 3008 2.1; 3219 1.0; 3444 0.8; 3685 2.5; 3943 5.2; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 5.6; 5917 3.6; 6331 2.6; 6775 2.6; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 0.2; 22 -0.2; 23 -0.4; 25 -0.6; 26 -0.8; 28 -0.9; 30 -1.1; 32 -1.2; 35 -1.4; 37 -1.5; 40 -1.6; 42 -1.6; 45 -1.7; 49 -1.7; 52 -1.8; 56 -1.9; 59 -1.9; 64 -2.0; 68 -2.0; 73 -2.1; 78 -2.0; 83 -2.0; 89 -2.3; 95 -2.7; 102 -3.1; 109 -3.2; 117 -3.2; 125 -3.6; 134 -4.0; 143 -4.3; 153 -4.3; 164 -4.1; 175 -3.9; 188 -4.0; 201 -3.8; 215 -3.9; 230 -4.4; 246 -3.9; 263 -3.3; 282 -2.5; 301 -1.7; 323 -1.2; 345 -0.8; 369 -0.5; 395 -0.1; 423 0.3; 452 0.5; 484 0.8; 518 1.5; 554 2.3; 593 2.9; 635 3.0; 679 2.8; 726 2.5; 777 2.3; 832 1.7; 890 1.1; 952 0.5; 1019 -0.2; 1090 -1.0; 1167 -1.8; 1248 -2.3; 1336 -2.7; 1429 -2.7; 1529 -2.2; 1636 -1.8; 1751 -1.1; 1873 -0.4; 2004 0.5; 2145 1.2; 2295 1.7; 2455 2.2; 2627 2.3; 2811 2.2; 3008 2.1; 3219 1.0; 3444 0.8; 3685 2.5; 3943 5.2; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 5.6; 5917 3.6; 6331 2.6; 6775 2.6; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/V-Moda%20V-80%20True%20Blood/V-Moda%20V-80%20True%20Blood.png)

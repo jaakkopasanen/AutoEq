@@ -1,13 +1,8 @@
 # Sony MDR 1000X Wireless NC Off
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-56**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -5.6dB
 GraphicEQ: 10 -84; 20 -1.5; 22 -1.7; 23 -1.8; 25 -1.9; 26 -2.0; 28 -2.1; 30 -2.2; 32 -2.3; 35 -2.4; 37 -2.5; 40 -2.7; 42 -2.9; 45 -3.2; 49 -3.5; 52 -3.6; 56 -3.7; 59 -3.5; 64 -3.0; 68 -2.3; 73 -1.4; 78 -0.9; 83 -0.8; 89 -1.2; 95 -2.6; 102 -4.4; 109 -5.2; 117 -6.2; 125 -6.9; 134 -6.5; 143 -6.0; 153 -5.8; 164 -4.1; 175 -4.4; 188 -4.9; 201 -4.0; 215 -3.3; 230 -2.6; 246 -2.5; 263 -2.9; 282 -3.0; 301 -3.0; 323 -2.6; 345 -1.9; 369 -1.3; 395 -1.0; 423 -1.4; 452 -1.6; 484 -1.7; 518 -1.9; 554 -1.2; 593 0.2; 635 0.1; 679 -1.0; 726 -1.0; 777 1.1; 832 1.0; 890 -0.0; 952 -0.2; 1019 0.0; 1090 1.1; 1167 3.7; 1248 3.9; 1336 5.5; 1429 4.7; 1529 4.0; 1636 2.9; 1751 -0.3; 1873 -1.7; 2004 -2.3; 2145 -3.1; 2295 -1.4; 2455 -0.2; 2627 1.3; 2811 1.1; 3008 0.0; 3219 -0.3; 3444 -0.6; 3685 -1.3; 3943 -4.4; 4219 -6.1; 4514 -5.1; 4830 -2.4; 5168 -3.4; 5530 -7.4; 5917 -8.5; 6331 -6.8; 6775 -2.4; 7249 -1.7; 7756 -3.1; 8299 -5.2; 8880 -6.5; 9502 -6.4; 10167 -5.6; 10879 -4.2; 11640 -2.3; 12455 -0.2; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -1.5; 22 -1.7; 23 -1.8; 25 -1.9; 26 -2.0; 28 -2.1; 30 -2.2; 32 -2.3; 35 -2.4; 37 -2.5; 40 -2.7; 42 -2.9; 45 -3.2; 49 -3.5; 52 -3.6; 56 -3.7; 59 -3.5; 64 -3.0; 68 -2.3; 73 -1.4; 78 -0.9; 83 -0.8; 89 -1.2; 95 -2.6; 102 -4.4; 109 -5.2; 117 -6.2; 125 -6.9; 134 -6.5; 143 -6.0; 153 -5.8; 164 -4.1; 175 -4.4; 188 -4.9; 201 -4.0; 215 -3.3; 230 -2.6; 246 -2.5; 263 -2.9; 282 -3.0; 301 -3.0; 323 -2.6; 345 -1.9; 369 -1.3; 395 -1.0; 423 -1.4; 452 -1.6; 484 -1.7; 518 -1.9; 554 -1.2; 593 0.2; 635 0.1; 679 -1.0; 726 -1.0; 777 1.1; 832 1.0; 890 -0.0; 952 -0.2; 1019 0.0; 1090 1.1; 1167 3.7; 1248 3.9; 1336 5.5; 1429 4.7; 1529 4.0; 1636 2.9; 1751 -0.3; 1873 -1.7; 2004 -2.3; 2145 -3.1; 2295 -1.4; 2455 -0.2; 2627 1.3; 2811 1.1; 3008 0.0; 3219 -0.3; 3444 -0.6; 3685 -1.3; 3943 -4.4; 4219 -6.1; 4514 -5.1; 4830 -2.4; 5168 -3.4; 5530 -7.4; 5917 -8.5; 6331 -6.8; 6775 -2.4; 7249 -1.7; 7756 -3.1; 8299 -5.2; 8880 -6.5; 9502 -6.4; 10167 -5.6; 10879 -4.2; 11640 -2.3; 12455 -0.2; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-5.6dB*l, R=-5.6dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.6dB` and instead set Global volume in the UI for both channels to **-56**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Sony%20MDR%201000X%20Wireless%20NC%20Off/Sony%20MDR%201000X%20Wireless%20NC%20Off.png)

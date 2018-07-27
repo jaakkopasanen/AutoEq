@@ -1,13 +1,8 @@
 # Ultrasone Zino
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 5.9; 35 5.5; 37 5.0; 40 4.2; 42 3.7; 45 3.0; 49 2.1; 52 1.5; 56 0.9; 59 0.7; 64 0.7; 68 0.8; 73 1.2; 78 1.4; 83 1.3; 89 1.0; 95 0.5; 102 -0.0; 109 -0.3; 117 -0.5; 125 -0.8; 134 -1.0; 143 -1.1; 153 -0.9; 164 -0.6; 175 -0.1; 188 0.2; 201 0.7; 215 1.2; 230 1.7; 246 1.9; 263 2.2; 282 2.8; 301 3.8; 323 4.3; 345 4.4; 369 4.4; 395 3.8; 423 3.6; 452 3.7; 484 4.2; 518 4.7; 554 5.4; 593 6.0; 635 6.0; 679 6.0; 726 6.0; 777 6.0; 832 5.9; 890 4.0; 952 1.6; 1019 -0.5; 1090 -1.7; 1167 -2.4; 1248 -2.2; 1336 -2.7; 1429 -3.2; 1529 -4.1; 1636 -5.4; 1751 -6.9; 1873 -8.0; 2004 -8.6; 2145 -8.2; 2295 -6.4; 2455 -2.2; 2627 1.2; 2811 1.5; 3008 2.5; 3219 3.8; 3444 3.1; 3685 5.4; 3943 5.4; 4219 -0.4; 4514 -0.3; 4830 1.8; 5168 2.0; 5530 -2.1; 5917 -5.9; 6331 -5.2; 6775 -2.5; 7249 -0.4; 7756 0.0; 8299 -1.3; 8880 -3.1; 9502 -4.8; 10167 -6.0; 10879 -5.6; 11640 -2.7; 12455 -0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 -0.0; 18692 -0.4; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 5.9; 35 5.5; 37 5.0; 40 4.2; 42 3.7; 45 3.0; 49 2.1; 52 1.5; 56 0.9; 59 0.7; 64 0.7; 68 0.8; 73 1.2; 78 1.4; 83 1.3; 89 1.0; 95 0.5; 102 -0.0; 109 -0.3; 117 -0.5; 125 -0.8; 134 -1.0; 143 -1.1; 153 -0.9; 164 -0.6; 175 -0.1; 188 0.2; 201 0.7; 215 1.2; 230 1.7; 246 1.9; 263 2.2; 282 2.8; 301 3.8; 323 4.3; 345 4.4; 369 4.4; 395 3.8; 423 3.6; 452 3.7; 484 4.2; 518 4.7; 554 5.4; 593 6.0; 635 6.0; 679 6.0; 726 6.0; 777 6.0; 832 5.9; 890 4.0; 952 1.6; 1019 -0.5; 1090 -1.7; 1167 -2.4; 1248 -2.2; 1336 -2.7; 1429 -3.2; 1529 -4.1; 1636 -5.4; 1751 -6.9; 1873 -8.0; 2004 -8.6; 2145 -8.2; 2295 -6.4; 2455 -2.2; 2627 1.2; 2811 1.5; 3008 2.5; 3219 3.8; 3444 3.1; 3685 5.4; 3943 5.4; 4219 -0.4; 4514 -0.3; 4830 1.8; 5168 2.0; 5530 -2.1; 5917 -5.9; 6331 -5.2; 6775 -2.5; 7249 -0.4; 7756 0.0; 8299 -1.3; 8880 -3.1; 9502 -4.8; 10167 -6.0; 10879 -5.6; 11640 -2.7; 12455 -0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 -0.0; 18692 -0.4; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Ultrasone%20Zino/Ultrasone%20Zino.png)

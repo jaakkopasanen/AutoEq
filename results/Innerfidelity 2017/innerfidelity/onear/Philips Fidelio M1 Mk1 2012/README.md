@@ -1,13 +1,8 @@
 # Philips Fidelio M1 Mk1 2012
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -0.3; 22 -0.5; 23 -0.6; 25 -0.7; 26 -0.8; 28 -0.8; 30 -0.9; 32 -0.9; 35 -0.9; 37 -0.9; 40 -0.9; 42 -0.9; 45 -0.8; 49 -0.7; 52 -0.6; 56 -0.5; 59 -0.4; 64 -0.2; 68 -0.1; 73 0.0; 78 -0.0; 83 -0.2; 89 -0.3; 95 -0.5; 102 -0.5; 109 -0.5; 117 -0.4; 125 -0.6; 134 -0.6; 143 -0.7; 153 -0.5; 164 -0.1; 175 0.4; 188 0.6; 201 0.7; 215 0.8; 230 1.0; 246 0.9; 263 1.0; 282 1.2; 301 1.2; 323 1.1; 345 0.7; 369 0.2; 395 -0.1; 423 -0.7; 452 -1.5; 484 -2.1; 518 -2.3; 554 -1.9; 593 -1.5; 635 -1.4; 679 -1.4; 726 -1.2; 777 -0.7; 832 -0.6; 890 -0.3; 952 -0.1; 1019 0.0; 1090 0.1; 1167 0.3; 1248 0.5; 1336 0.5; 1429 0.6; 1529 0.8; 1636 0.8; 1751 1.0; 1873 1.2; 2004 1.7; 2145 2.3; 2295 3.0; 2455 4.0; 2627 4.8; 2811 5.5; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -0.3; 22 -0.5; 23 -0.6; 25 -0.7; 26 -0.8; 28 -0.8; 30 -0.9; 32 -0.9; 35 -0.9; 37 -0.9; 40 -0.9; 42 -0.9; 45 -0.8; 49 -0.7; 52 -0.6; 56 -0.5; 59 -0.4; 64 -0.2; 68 -0.1; 73 0.0; 78 -0.0; 83 -0.2; 89 -0.3; 95 -0.5; 102 -0.5; 109 -0.5; 117 -0.4; 125 -0.6; 134 -0.6; 143 -0.7; 153 -0.5; 164 -0.1; 175 0.4; 188 0.6; 201 0.7; 215 0.8; 230 1.0; 246 0.9; 263 1.0; 282 1.2; 301 1.2; 323 1.1; 345 0.7; 369 0.2; 395 -0.1; 423 -0.7; 452 -1.5; 484 -2.1; 518 -2.3; 554 -1.9; 593 -1.5; 635 -1.4; 679 -1.4; 726 -1.2; 777 -0.7; 832 -0.6; 890 -0.3; 952 -0.1; 1019 0.0; 1090 0.1; 1167 0.3; 1248 0.5; 1336 0.5; 1429 0.6; 1529 0.8; 1636 0.8; 1751 1.0; 1873 1.2; 2004 1.7; 2145 2.3; 2295 3.0; 2455 4.0; 2627 4.8; 2811 5.5; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Philips%20Fidelio%20M1%20Mk1%202012/Philips%20Fidelio%20M1%20Mk1%202012.png)

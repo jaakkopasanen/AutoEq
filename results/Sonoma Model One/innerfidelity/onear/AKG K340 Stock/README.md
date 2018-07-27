@@ -1,13 +1,8 @@
 # AKG K340 Stock
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 5.6; 89 4.4; 95 3.2; 102 1.9; 109 1.1; 117 0.2; 125 -0.8; 134 -1.6; 143 -2.3; 153 -2.8; 164 -2.9; 175 -3.3; 188 -3.5; 201 -3.7; 215 -3.8; 230 -3.9; 246 -4.0; 263 -4.1; 282 -4.0; 301 -3.9; 323 -3.8; 345 -3.4; 369 -3.2; 395 -3.2; 423 -2.6; 452 -2.0; 484 -1.3; 518 -0.6; 554 0.4; 593 0.8; 635 1.3; 679 2.1; 726 2.5; 777 3.2; 832 2.7; 890 1.4; 952 0.5; 1019 -0.0; 1090 0.3; 1167 4.9; 1248 6.0; 1336 5.0; 1429 3.2; 1529 2.0; 1636 1.2; 1751 0.3; 1873 0.4; 2004 0.6; 2145 -2.2; 2295 -3.4; 2455 -3.8; 2627 -2.4; 2811 -0.6; 3008 1.5; 3219 2.4; 3444 3.6; 3685 2.2; 3943 1.5; 4219 3.4; 4514 2.4; 4830 2.8; 5168 2.5; 5530 0.4; 5917 -2.6; 6331 -3.1; 6775 0.3; 7249 0.7; 7756 -2.3; 8299 -6.7; 8880 -9.6; 9502 -9.5; 10167 -7.3; 10879 -4.1; 11640 -0.6; 12455 0.0; 13327 0.0; 14260 0.0; 15258 -0.3; 16326 -2.5; 17469 -4.9; 18692 -6.1; 20000 -5.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 5.6; 89 4.4; 95 3.2; 102 1.9; 109 1.1; 117 0.2; 125 -0.8; 134 -1.6; 143 -2.3; 153 -2.8; 164 -2.9; 175 -3.3; 188 -3.5; 201 -3.7; 215 -3.8; 230 -3.9; 246 -4.0; 263 -4.1; 282 -4.0; 301 -3.9; 323 -3.8; 345 -3.4; 369 -3.2; 395 -3.2; 423 -2.6; 452 -2.0; 484 -1.3; 518 -0.6; 554 0.4; 593 0.8; 635 1.3; 679 2.1; 726 2.5; 777 3.2; 832 2.7; 890 1.4; 952 0.5; 1019 -0.0; 1090 0.3; 1167 4.9; 1248 6.0; 1336 5.0; 1429 3.2; 1529 2.0; 1636 1.2; 1751 0.3; 1873 0.4; 2004 0.6; 2145 -2.2; 2295 -3.4; 2455 -3.8; 2627 -2.4; 2811 -0.6; 3008 1.5; 3219 2.4; 3444 3.6; 3685 2.2; 3943 1.5; 4219 3.4; 4514 2.4; 4830 2.8; 5168 2.5; 5530 0.4; 5917 -2.6; 6331 -3.1; 6775 0.3; 7249 0.7; 7756 -2.3; 8299 -6.7; 8880 -9.6; 9502 -9.5; 10167 -7.3; 10879 -4.1; 11640 -0.6; 12455 0.0; 13327 0.0; 14260 0.0; 15258 -0.3; 16326 -2.5; 17469 -4.9; 18692 -6.1; 20000 -5.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/AKG%20K340%20Stock/AKG%20K340%20Stock.png)

@@ -1,13 +1,8 @@
 # Phiaton PS 320
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 5.7; 22 5.6; 23 5.6; 25 5.6; 26 5.7; 28 5.9; 30 5.9; 32 5.9; 35 5.7; 37 5.5; 40 5.3; 42 5.2; 45 5.0; 49 4.5; 52 4.3; 56 4.5; 59 5.0; 64 5.9; 68 6.0; 73 5.5; 78 5.0; 83 4.5; 89 3.5; 95 2.5; 102 1.5; 109 1.0; 117 0.8; 125 0.4; 134 0.1; 143 0.3; 153 0.8; 164 -0.4; 175 -1.9; 188 -2.8; 201 -3.4; 215 -3.6; 230 -3.7; 246 -4.4; 263 -5.0; 282 -4.9; 301 -4.6; 323 -4.2; 345 -3.8; 369 -2.8; 395 -1.9; 423 -1.1; 452 -0.7; 484 0.0; 518 0.9; 554 1.6; 593 2.2; 635 2.9; 679 3.3; 726 3.4; 777 3.3; 832 2.8; 890 2.0; 952 0.9; 1019 -0.3; 1090 -0.8; 1167 -0.4; 1248 0.1; 1336 0.1; 1429 -0.1; 1529 -0.3; 1636 -1.1; 1751 -2.4; 1873 -2.7; 2004 -3.0; 2145 -3.9; 2295 -3.2; 2455 -1.9; 2627 -0.6; 2811 1.0; 3008 2.3; 3219 2.8; 3444 2.7; 3685 2.6; 3943 3.1; 4219 4.1; 4514 5.6; 4830 6.0; 5168 6.0; 5530 5.6; 5917 0.9; 6331 -2.6; 6775 -2.4; 7249 -1.4; 7756 -1.7; 8299 -3.4; 8880 -4.3; 9502 -2.7; 10167 -0.2; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 -3.0; 15258 -8.2; 16326 -9.9; 17469 -8.9; 18692 -7.2; 20000 -5.8
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 5.7; 22 5.6; 23 5.6; 25 5.6; 26 5.7; 28 5.9; 30 5.9; 32 5.9; 35 5.7; 37 5.5; 40 5.3; 42 5.2; 45 5.0; 49 4.5; 52 4.3; 56 4.5; 59 5.0; 64 5.9; 68 6.0; 73 5.5; 78 5.0; 83 4.5; 89 3.5; 95 2.5; 102 1.5; 109 1.0; 117 0.8; 125 0.4; 134 0.1; 143 0.3; 153 0.8; 164 -0.4; 175 -1.9; 188 -2.8; 201 -3.4; 215 -3.6; 230 -3.7; 246 -4.4; 263 -5.0; 282 -4.9; 301 -4.6; 323 -4.2; 345 -3.8; 369 -2.8; 395 -1.9; 423 -1.1; 452 -0.7; 484 0.0; 518 0.9; 554 1.6; 593 2.2; 635 2.9; 679 3.3; 726 3.4; 777 3.3; 832 2.8; 890 2.0; 952 0.9; 1019 -0.3; 1090 -0.8; 1167 -0.4; 1248 0.1; 1336 0.1; 1429 -0.1; 1529 -0.3; 1636 -1.1; 1751 -2.4; 1873 -2.7; 2004 -3.0; 2145 -3.9; 2295 -3.2; 2455 -1.9; 2627 -0.6; 2811 1.0; 3008 2.3; 3219 2.8; 3444 2.7; 3685 2.6; 3943 3.1; 4219 4.1; 4514 5.6; 4830 6.0; 5168 6.0; 5530 5.6; 5917 0.9; 6331 -2.6; 6775 -2.4; 7249 -1.4; 7756 -1.7; 8299 -3.4; 8880 -4.3; 9502 -2.7; 10167 -0.2; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 -3.0; 15258 -8.2; 16326 -9.9; 17469 -8.9; 18692 -7.2; 20000 -5.8
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/headphoncecom/onear/Phiaton%20PS%20320/Phiaton%20PS%20320.png)

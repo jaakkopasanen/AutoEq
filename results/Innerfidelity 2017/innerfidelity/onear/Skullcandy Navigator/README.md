@@ -1,13 +1,8 @@
 # Skullcandy Navigator
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -3.2; 22 -3.3; 23 -3.3; 25 -3.3; 26 -3.3; 28 -3.3; 30 -3.3; 32 -3.3; 35 -3.3; 37 -3.3; 40 -3.2; 42 -3.2; 45 -3.2; 49 -3.2; 52 -3.1; 56 -3.2; 59 -3.2; 64 -3.2; 68 -3.2; 73 -3.2; 78 -3.3; 83 -3.5; 89 -3.7; 95 -3.9; 102 -4.1; 109 -4.4; 117 -4.7; 125 -5.2; 134 -5.5; 143 -5.6; 153 -5.5; 164 -5.7; 175 -5.3; 188 -5.2; 201 -5.6; 215 -5.8; 230 -5.7; 246 -5.7; 263 -5.5; 282 -5.1; 301 -4.9; 323 -4.7; 345 -4.4; 369 -4.2; 395 -3.9; 423 -3.3; 452 -3.1; 484 -2.8; 518 -2.2; 554 -1.4; 593 -0.6; 635 -0.1; 679 0.1; 726 0.5; 777 1.0; 832 0.7; 890 0.4; 952 0.2; 1019 0.1; 1090 0.2; 1167 -0.0; 1248 -0.3; 1336 -0.1; 1429 0.1; 1529 0.1; 1636 0.7; 1751 0.8; 1873 1.1; 2004 1.5; 2145 2.0; 2295 2.6; 2455 3.3; 2627 3.9; 2811 4.3; 3008 4.9; 3219 5.4; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -3.2; 22 -3.3; 23 -3.3; 25 -3.3; 26 -3.3; 28 -3.3; 30 -3.3; 32 -3.3; 35 -3.3; 37 -3.3; 40 -3.2; 42 -3.2; 45 -3.2; 49 -3.2; 52 -3.1; 56 -3.2; 59 -3.2; 64 -3.2; 68 -3.2; 73 -3.2; 78 -3.3; 83 -3.5; 89 -3.7; 95 -3.9; 102 -4.1; 109 -4.4; 117 -4.7; 125 -5.2; 134 -5.5; 143 -5.6; 153 -5.5; 164 -5.7; 175 -5.3; 188 -5.2; 201 -5.6; 215 -5.8; 230 -5.7; 246 -5.7; 263 -5.5; 282 -5.1; 301 -4.9; 323 -4.7; 345 -4.4; 369 -4.2; 395 -3.9; 423 -3.3; 452 -3.1; 484 -2.8; 518 -2.2; 554 -1.4; 593 -0.6; 635 -0.1; 679 0.1; 726 0.5; 777 1.0; 832 0.7; 890 0.4; 952 0.2; 1019 0.1; 1090 0.2; 1167 -0.0; 1248 -0.3; 1336 -0.1; 1429 0.1; 1529 0.1; 1636 0.7; 1751 0.8; 1873 1.1; 2004 1.5; 2145 2.0; 2295 2.6; 2455 3.3; 2627 3.9; 2811 4.3; 3008 4.9; 3219 5.4; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Skullcandy%20Navigator/Skullcandy%20Navigator.png)

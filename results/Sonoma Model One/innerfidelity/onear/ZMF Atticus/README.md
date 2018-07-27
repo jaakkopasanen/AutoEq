@@ -1,13 +1,8 @@
 # ZMF Atticus
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 5.3; 22 4.6; 23 4.3; 25 3.8; 26 3.7; 28 3.4; 30 3.2; 32 2.9; 35 2.5; 37 2.2; 40 1.8; 42 1.5; 45 1.1; 49 0.4; 52 0.1; 56 -0.1; 59 -0.1; 64 -0.1; 68 -0.2; 73 -0.3; 78 -0.4; 83 -1.0; 89 -2.1; 95 -3.2; 102 -4.2; 109 -4.7; 117 -5.5; 125 -6.2; 134 -6.8; 143 -7.1; 153 -7.0; 164 -6.3; 175 -6.9; 188 -6.5; 201 -6.0; 215 -5.5; 230 -5.0; 246 -4.5; 263 -4.0; 282 -3.7; 301 -3.5; 323 -3.3; 345 -3.1; 369 -3.2; 395 -3.1; 423 -2.6; 452 -2.4; 484 -2.5; 518 -2.3; 554 -2.2; 593 -2.0; 635 -1.6; 679 -1.1; 726 -0.7; 777 -0.1; 832 -0.1; 890 -0.3; 952 -0.1; 1019 0.2; 1090 0.7; 1167 1.7; 1248 2.6; 1336 3.3; 1429 4.0; 1529 5.8; 1636 5.6; 1751 2.6; 1873 1.5; 2004 1.6; 2145 0.8; 2295 0.3; 2455 0.7; 2627 1.3; 2811 1.9; 3008 2.4; 3219 2.3; 3444 2.9; 3685 4.1; 3943 4.9; 4219 4.9; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 4.2; 6775 2.5; 7249 -0.9; 7756 -2.6; 8299 -3.5; 8880 -4.2; 9502 -4.4; 10167 -3.3; 10879 -1.1; 11640 -0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 5.3; 22 4.6; 23 4.3; 25 3.8; 26 3.7; 28 3.4; 30 3.2; 32 2.9; 35 2.5; 37 2.2; 40 1.8; 42 1.5; 45 1.1; 49 0.4; 52 0.1; 56 -0.1; 59 -0.1; 64 -0.1; 68 -0.2; 73 -0.3; 78 -0.4; 83 -1.0; 89 -2.1; 95 -3.2; 102 -4.2; 109 -4.7; 117 -5.5; 125 -6.2; 134 -6.8; 143 -7.1; 153 -7.0; 164 -6.3; 175 -6.9; 188 -6.5; 201 -6.0; 215 -5.5; 230 -5.0; 246 -4.5; 263 -4.0; 282 -3.7; 301 -3.5; 323 -3.3; 345 -3.1; 369 -3.2; 395 -3.1; 423 -2.6; 452 -2.4; 484 -2.5; 518 -2.3; 554 -2.2; 593 -2.0; 635 -1.6; 679 -1.1; 726 -0.7; 777 -0.1; 832 -0.1; 890 -0.3; 952 -0.1; 1019 0.2; 1090 0.7; 1167 1.7; 1248 2.6; 1336 3.3; 1429 4.0; 1529 5.8; 1636 5.6; 1751 2.6; 1873 1.5; 2004 1.6; 2145 0.8; 2295 0.3; 2455 0.7; 2627 1.3; 2811 1.9; 3008 2.4; 3219 2.3; 3444 2.9; 3685 4.1; 3943 4.9; 4219 4.9; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 4.2; 6775 2.5; 7249 -0.9; 7756 -2.6; 8299 -3.5; 8880 -4.2; 9502 -4.4; 10167 -3.3; 10879 -1.1; 11640 -0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/ZMF%20Atticus/ZMF%20Atticus.png)

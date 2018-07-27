@@ -1,13 +1,8 @@
 # Sennheiser HD 560 Ovation II
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 5.8; 64 5.1; 68 4.6; 73 3.9; 78 3.4; 83 3.0; 89 2.4; 95 1.8; 102 1.2; 109 0.8; 117 0.2; 125 -0.5; 134 -0.9; 143 -1.3; 153 -1.6; 164 -1.7; 175 -1.8; 188 -1.9; 201 -2.1; 215 -2.1; 230 -2.1; 246 -2.0; 263 -2.1; 282 -2.1; 301 -2.1; 323 -2.2; 345 -2.1; 369 -2.0; 395 -2.0; 423 -2.0; 452 -2.1; 484 -2.2; 518 -2.1; 554 -1.6; 593 -1.0; 635 -0.8; 679 -0.8; 726 -0.7; 777 -0.3; 832 -0.2; 890 -0.3; 952 -0.1; 1019 -0.2; 1090 -0.3; 1167 -0.4; 1248 -0.8; 1336 -1.2; 1429 -1.5; 1529 -1.7; 1636 -2.1; 1751 -2.4; 1873 -2.7; 2004 -3.1; 2145 -3.6; 2295 -3.9; 2455 -4.1; 2627 -4.3; 2811 -4.2; 3008 -3.4; 3219 -2.8; 3444 -1.7; 3685 -0.7; 3943 0.4; 4219 1.2; 4514 1.1; 4830 1.1; 5168 0.8; 5530 3.4; 5917 5.9; 6331 5.2; 6775 1.7; 7249 -1.6; 7756 -4.3; 8299 -5.0; 8880 -3.8; 9502 -1.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.2; 20000 -4.8
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 5.8; 64 5.1; 68 4.6; 73 3.9; 78 3.4; 83 3.0; 89 2.4; 95 1.8; 102 1.2; 109 0.8; 117 0.2; 125 -0.5; 134 -0.9; 143 -1.3; 153 -1.6; 164 -1.7; 175 -1.8; 188 -1.9; 201 -2.1; 215 -2.1; 230 -2.1; 246 -2.0; 263 -2.1; 282 -2.1; 301 -2.1; 323 -2.2; 345 -2.1; 369 -2.0; 395 -2.0; 423 -2.0; 452 -2.1; 484 -2.2; 518 -2.1; 554 -1.6; 593 -1.0; 635 -0.8; 679 -0.8; 726 -0.7; 777 -0.3; 832 -0.2; 890 -0.3; 952 -0.1; 1019 -0.2; 1090 -0.3; 1167 -0.4; 1248 -0.8; 1336 -1.2; 1429 -1.5; 1529 -1.7; 1636 -2.1; 1751 -2.4; 1873 -2.7; 2004 -3.1; 2145 -3.6; 2295 -3.9; 2455 -4.1; 2627 -4.3; 2811 -4.2; 3008 -3.4; 3219 -2.8; 3444 -1.7; 3685 -0.7; 3943 0.4; 4219 1.2; 4514 1.1; 4830 1.1; 5168 0.8; 5530 3.4; 5917 5.9; 6331 5.2; 6775 1.7; 7249 -1.6; 7756 -4.3; 8299 -5.0; 8880 -3.8; 9502 -1.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.2; 20000 -4.8
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Sennheiser%20HD%20560%20Ovation%20II/Sennheiser%20HD%20560%20Ovation%20II.png)
