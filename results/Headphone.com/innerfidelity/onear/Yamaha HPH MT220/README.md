@@ -1,13 +1,8 @@
 # Yamaha HPH MT220
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 2.3; 22 1.7; 23 1.5; 25 1.0; 26 0.8; 28 0.5; 30 0.3; 32 0.1; 35 -0.0; 37 -0.1; 40 -0.2; 42 -0.2; 45 -0.1; 49 -0.1; 52 0.0; 56 0.2; 59 0.3; 64 0.3; 68 0.3; 73 0.4; 78 0.5; 83 0.5; 89 0.3; 95 0.2; 102 0.2; 109 0.3; 117 0.5; 125 0.8; 134 0.8; 143 0.2; 153 -0.6; 164 0.4; 175 1.2; 188 0.5; 201 0.4; 215 0.5; 230 0.9; 246 1.3; 263 1.8; 282 2.3; 301 2.6; 323 2.4; 345 2.3; 369 2.5; 395 2.6; 423 2.6; 452 2.4; 484 2.1; 518 1.8; 554 1.5; 593 1.3; 635 1.0; 679 0.7; 726 0.5; 777 0.2; 832 -0.0; 890 -0.0; 952 -0.1; 1019 0.1; 1090 0.3; 1167 0.8; 1248 1.6; 1336 2.3; 1429 3.0; 1529 3.8; 1636 4.8; 1751 5.8; 1873 6.0; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 2.3; 22 1.7; 23 1.5; 25 1.0; 26 0.8; 28 0.5; 30 0.3; 32 0.1; 35 -0.0; 37 -0.1; 40 -0.2; 42 -0.2; 45 -0.1; 49 -0.1; 52 0.0; 56 0.2; 59 0.3; 64 0.3; 68 0.3; 73 0.4; 78 0.5; 83 0.5; 89 0.3; 95 0.2; 102 0.2; 109 0.3; 117 0.5; 125 0.8; 134 0.8; 143 0.2; 153 -0.6; 164 0.4; 175 1.2; 188 0.5; 201 0.4; 215 0.5; 230 0.9; 246 1.3; 263 1.8; 282 2.3; 301 2.6; 323 2.4; 345 2.3; 369 2.5; 395 2.6; 423 2.6; 452 2.4; 484 2.1; 518 1.8; 554 1.5; 593 1.3; 635 1.0; 679 0.7; 726 0.5; 777 0.2; 832 -0.0; 890 -0.0; 952 -0.1; 1019 0.1; 1090 0.3; 1167 0.8; 1248 1.6; 1336 2.3; 1429 3.0; 1529 3.8; 1636 4.8; 1751 5.8; 1873 6.0; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Yamaha%20HPH%20MT220/Yamaha%20HPH%20MT220.png)

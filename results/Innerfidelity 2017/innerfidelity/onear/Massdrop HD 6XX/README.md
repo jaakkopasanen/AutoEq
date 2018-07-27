@@ -1,13 +1,8 @@
 # Massdrop HD 6XX
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.8; 37 5.6; 40 5.1; 42 4.8; 45 4.3; 49 3.8; 52 3.6; 56 3.5; 59 3.4; 64 2.9; 68 2.5; 73 2.5; 78 2.0; 83 1.1; 89 0.3; 95 -0.4; 102 -1.0; 109 -1.4; 117 -2.0; 125 -2.6; 134 -3.1; 143 -3.4; 153 -3.6; 164 -3.6; 175 -3.6; 188 -3.8; 201 -4.0; 215 -3.9; 230 -3.8; 246 -3.8; 263 -3.7; 282 -3.5; 301 -3.4; 323 -3.4; 345 -3.3; 369 -3.3; 395 -3.2; 423 -3.1; 452 -3.1; 484 -3.3; 518 -3.0; 554 -2.5; 593 -1.9; 635 -1.6; 679 -1.5; 726 -1.2; 777 -0.8; 832 -0.8; 890 -0.8; 952 -0.7; 1019 -0.0; 1090 -0.6; 1167 -1.1; 1248 -1.2; 1336 -1.3; 1429 -1.3; 1529 -1.3; 1636 -1.5; 1751 -1.6; 1873 -1.5; 2004 -1.2; 2145 -0.9; 2295 -0.6; 2455 -0.3; 2627 0.1; 2811 0.3; 3008 0.3; 3219 0.5; 3444 0.5; 3685 0.9; 3943 2.6; 4219 4.1; 4514 4.5; 4830 4.5; 5168 4.8; 5530 4.9; 5917 5.2; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.8; 37 5.6; 40 5.1; 42 4.8; 45 4.3; 49 3.8; 52 3.6; 56 3.5; 59 3.4; 64 2.9; 68 2.5; 73 2.5; 78 2.0; 83 1.1; 89 0.3; 95 -0.4; 102 -1.0; 109 -1.4; 117 -2.0; 125 -2.6; 134 -3.1; 143 -3.4; 153 -3.6; 164 -3.6; 175 -3.6; 188 -3.8; 201 -4.0; 215 -3.9; 230 -3.8; 246 -3.8; 263 -3.7; 282 -3.5; 301 -3.4; 323 -3.4; 345 -3.3; 369 -3.3; 395 -3.2; 423 -3.1; 452 -3.1; 484 -3.3; 518 -3.0; 554 -2.5; 593 -1.9; 635 -1.6; 679 -1.5; 726 -1.2; 777 -0.8; 832 -0.8; 890 -0.8; 952 -0.7; 1019 -0.0; 1090 -0.6; 1167 -1.1; 1248 -1.2; 1336 -1.3; 1429 -1.3; 1529 -1.3; 1636 -1.5; 1751 -1.6; 1873 -1.5; 2004 -1.2; 2145 -0.9; 2295 -0.6; 2455 -0.3; 2627 0.1; 2811 0.3; 3008 0.3; 3219 0.5; 3444 0.5; 3685 0.9; 3943 2.6; 4219 4.1; 4514 4.5; 4830 4.5; 5168 4.8; 5530 4.9; 5917 5.2; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Massdrop%20HD%206XX/Massdrop%20HD%206XX.png)

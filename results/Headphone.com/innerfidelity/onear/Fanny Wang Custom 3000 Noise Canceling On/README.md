@@ -1,13 +1,8 @@
 # Fanny Wang Custom 3000 Noise Canceling On
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 5.7; 23 5.3; 25 3.9; 26 3.3; 28 2.4; 30 2.1; 32 2.5; 35 3.4; 37 4.0; 40 4.5; 42 4.7; 45 5.0; 49 5.1; 52 5.1; 56 5.1; 59 4.9; 64 4.7; 68 4.5; 73 4.2; 78 3.9; 83 3.5; 89 2.9; 95 2.1; 102 1.1; 109 0.4; 117 -0.4; 125 -1.3; 134 -2.1; 143 -2.6; 153 -2.9; 164 -2.9; 175 -3.4; 188 -3.8; 201 -4.0; 215 -4.1; 230 -4.2; 246 -4.3; 263 -4.3; 282 -4.2; 301 -4.1; 323 -4.1; 345 -3.9; 369 -3.3; 395 -3.2; 423 -3.0; 452 -2.6; 484 -2.4; 518 -2.0; 554 -1.5; 593 -0.9; 635 -0.2; 679 0.7; 726 1.3; 777 1.5; 832 1.2; 890 0.8; 952 0.5; 1019 -0.1; 1090 -0.6; 1167 -1.3; 1248 -1.8; 1336 -2.0; 1429 -1.7; 1529 -1.0; 1636 -0.1; 1751 1.7; 1873 2.9; 2004 4.7; 2145 5.9; 2295 6.0; 2455 6.0; 2627 5.6; 2811 2.3; 3008 -1.8; 3219 -3.6; 3444 -1.9; 3685 -0.8; 3943 0.3; 4219 0.8; 4514 1.9; 4830 3.3; 5168 3.9; 5530 5.9; 5917 5.2; 6331 4.8; 6775 3.6; 7249 1.3; 7756 -1.1; 8299 -4.7; 8880 -6.9; 9502 -6.7; 10167 -4.3; 10879 -0.6; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 5.7; 23 5.3; 25 3.9; 26 3.3; 28 2.4; 30 2.1; 32 2.5; 35 3.4; 37 4.0; 40 4.5; 42 4.7; 45 5.0; 49 5.1; 52 5.1; 56 5.1; 59 4.9; 64 4.7; 68 4.5; 73 4.2; 78 3.9; 83 3.5; 89 2.9; 95 2.1; 102 1.1; 109 0.4; 117 -0.4; 125 -1.3; 134 -2.1; 143 -2.6; 153 -2.9; 164 -2.9; 175 -3.4; 188 -3.8; 201 -4.0; 215 -4.1; 230 -4.2; 246 -4.3; 263 -4.3; 282 -4.2; 301 -4.1; 323 -4.1; 345 -3.9; 369 -3.3; 395 -3.2; 423 -3.0; 452 -2.6; 484 -2.4; 518 -2.0; 554 -1.5; 593 -0.9; 635 -0.2; 679 0.7; 726 1.3; 777 1.5; 832 1.2; 890 0.8; 952 0.5; 1019 -0.1; 1090 -0.6; 1167 -1.3; 1248 -1.8; 1336 -2.0; 1429 -1.7; 1529 -1.0; 1636 -0.1; 1751 1.7; 1873 2.9; 2004 4.7; 2145 5.9; 2295 6.0; 2455 6.0; 2627 5.6; 2811 2.3; 3008 -1.8; 3219 -3.6; 3444 -1.9; 3685 -0.8; 3943 0.3; 4219 0.8; 4514 1.9; 4830 3.3; 5168 3.9; 5530 5.9; 5917 5.2; 6331 4.8; 6775 3.6; 7249 1.3; 7756 -1.1; 8299 -4.7; 8880 -6.9; 9502 -6.7; 10167 -4.3; 10879 -0.6; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Fanny%20Wang%20Custom%203000%20Noise%20Canceling%20On/Fanny%20Wang%20Custom%203000%20Noise%20Canceling%20On.png)

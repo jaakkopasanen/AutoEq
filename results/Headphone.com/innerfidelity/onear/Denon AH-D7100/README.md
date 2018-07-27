@@ -1,13 +1,8 @@
 # Denon AH-D7100
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -5.1; 22 -5.2; 23 -5.2; 25 -5.2; 26 -5.2; 28 -5.1; 30 -5.1; 32 -5.0; 35 -4.9; 37 -4.8; 40 -4.6; 42 -4.4; 45 -4.1; 49 -3.7; 52 -3.3; 56 -2.9; 59 -2.8; 64 -3.0; 68 -3.2; 73 -3.6; 78 -3.9; 83 -4.2; 89 -4.9; 95 -5.5; 102 -6.0; 109 -6.4; 117 -6.6; 125 -6.8; 134 -6.8; 143 -6.8; 153 -6.5; 164 -5.2; 175 -5.3; 188 -4.8; 201 -3.7; 215 -2.4; 230 -0.8; 246 0.9; 263 2.7; 282 4.4; 301 5.3; 323 5.5; 345 5.0; 369 4.5; 395 4.1; 423 3.9; 452 3.5; 484 3.4; 518 3.2; 554 2.9; 593 2.6; 635 2.2; 679 1.9; 726 1.5; 777 1.0; 832 0.7; 890 0.4; 952 0.1; 1019 -0.1; 1090 -0.2; 1167 -0.2; 1248 -0.2; 1336 -0.0; 1429 0.1; 1529 -0.2; 1636 -0.6; 1751 -0.7; 1873 -0.7; 2004 -0.2; 2145 0.8; 2295 2.3; 2455 4.6; 2627 5.4; 2811 4.9; 3008 4.4; 3219 4.7; 3444 5.9; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.8; 6331 4.8; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -1.7; 9502 -1.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -5.1; 22 -5.2; 23 -5.2; 25 -5.2; 26 -5.2; 28 -5.1; 30 -5.1; 32 -5.0; 35 -4.9; 37 -4.8; 40 -4.6; 42 -4.4; 45 -4.1; 49 -3.7; 52 -3.3; 56 -2.9; 59 -2.8; 64 -3.0; 68 -3.2; 73 -3.6; 78 -3.9; 83 -4.2; 89 -4.9; 95 -5.5; 102 -6.0; 109 -6.4; 117 -6.6; 125 -6.8; 134 -6.8; 143 -6.8; 153 -6.5; 164 -5.2; 175 -5.3; 188 -4.8; 201 -3.7; 215 -2.4; 230 -0.8; 246 0.9; 263 2.7; 282 4.4; 301 5.3; 323 5.5; 345 5.0; 369 4.5; 395 4.1; 423 3.9; 452 3.5; 484 3.4; 518 3.2; 554 2.9; 593 2.6; 635 2.2; 679 1.9; 726 1.5; 777 1.0; 832 0.7; 890 0.4; 952 0.1; 1019 -0.1; 1090 -0.2; 1167 -0.2; 1248 -0.2; 1336 -0.0; 1429 0.1; 1529 -0.2; 1636 -0.6; 1751 -0.7; 1873 -0.7; 2004 -0.2; 2145 0.8; 2295 2.3; 2455 4.6; 2627 5.4; 2811 4.9; 3008 4.4; 3219 4.7; 3444 5.9; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.8; 6331 4.8; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -1.7; 9502 -1.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Denon%20AH-D7100/Denon%20AH-D7100.png)

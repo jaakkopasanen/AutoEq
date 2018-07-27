@@ -1,13 +1,8 @@
 # Koss Pro4AA 2014
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 6.0; 109 6.0; 117 6.0; 125 6.0; 134 6.0; 143 6.0; 153 5.4; 164 4.8; 175 4.6; 188 3.6; 201 2.9; 215 2.2; 230 1.3; 246 0.3; 263 -0.6; 282 -1.7; 301 -2.5; 323 -3.2; 345 -4.0; 369 -4.9; 395 -5.6; 423 -6.1; 452 -6.5; 484 -6.6; 518 -6.8; 554 -6.2; 593 -5.0; 635 -4.3; 679 -3.8; 726 -3.0; 777 -2.1; 832 -1.4; 890 -0.9; 952 -0.2; 1019 0.1; 1090 0.3; 1167 -0.0; 1248 -0.4; 1336 -1.2; 1429 -2.3; 1529 -3.5; 1636 -4.9; 1751 -6.4; 1873 -7.9; 2004 -9.4; 2145 -10.9; 2295 -11.6; 2455 -10.5; 2627 -8.3; 2811 -5.7; 3008 -2.0; 3219 0.9; 3444 3.1; 3685 4.2; 3943 4.6; 4219 4.2; 4514 3.6; 4830 3.8; 5168 4.9; 5530 5.9; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.0; 9502 -0.7; 10167 -0.4; 10879 -0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 6.0; 109 6.0; 117 6.0; 125 6.0; 134 6.0; 143 6.0; 153 5.4; 164 4.8; 175 4.6; 188 3.6; 201 2.9; 215 2.2; 230 1.3; 246 0.3; 263 -0.6; 282 -1.7; 301 -2.5; 323 -3.2; 345 -4.0; 369 -4.9; 395 -5.6; 423 -6.1; 452 -6.5; 484 -6.6; 518 -6.8; 554 -6.2; 593 -5.0; 635 -4.3; 679 -3.8; 726 -3.0; 777 -2.1; 832 -1.4; 890 -0.9; 952 -0.2; 1019 0.1; 1090 0.3; 1167 -0.0; 1248 -0.4; 1336 -1.2; 1429 -2.3; 1529 -3.5; 1636 -4.9; 1751 -6.4; 1873 -7.9; 2004 -9.4; 2145 -10.9; 2295 -11.6; 2455 -10.5; 2627 -8.3; 2811 -5.7; 3008 -2.0; 3219 0.9; 3444 3.1; 3685 4.2; 3943 4.6; 4219 4.2; 4514 3.6; 4830 3.8; 5168 4.9; 5530 5.9; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.0; 9502 -0.7; 10167 -0.4; 10879 -0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Koss%20Pro4AA%202014/Koss%20Pro4AA%202014.png)

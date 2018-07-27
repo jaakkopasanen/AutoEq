@@ -1,13 +1,8 @@
 # Audeze LCD-3 Fazor sn2715432
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.9; 26 5.8; 28 5.6; 30 5.4; 32 5.2; 35 4.8; 37 4.6; 40 4.4; 42 4.2; 45 3.8; 49 3.2; 52 2.9; 56 2.6; 59 2.3; 64 2.0; 68 1.9; 73 1.9; 78 1.8; 83 1.7; 89 1.4; 95 1.1; 102 0.8; 109 0.6; 117 0.1; 125 -0.3; 134 -0.7; 143 -0.9; 153 -1.1; 164 -1.2; 175 -1.3; 188 -1.4; 201 -1.5; 215 -1.6; 230 -1.6; 246 -1.8; 263 -1.9; 282 -1.9; 301 -1.9; 323 -2.0; 345 -2.1; 369 -2.1; 395 -2.2; 423 -2.2; 452 -2.3; 484 -2.5; 518 -2.3; 554 -1.8; 593 -1.2; 635 -1.1; 679 -1.1; 726 -0.6; 777 -0.4; 832 -0.6; 890 -0.5; 952 -0.2; 1019 0.1; 1090 0.1; 1167 0.1; 1248 -0.0; 1336 -0.7; 1429 -1.0; 1529 -1.3; 1636 -1.4; 1751 -1.0; 1873 -0.6; 2004 -0.7; 2145 -0.5; 2295 0.7; 2455 1.6; 2627 2.3; 2811 2.9; 3008 3.8; 3219 4.4; 3444 5.1; 3685 5.9; 3943 6.0; 4219 6.0; 4514 6.0; 4830 5.8; 5168 3.5; 5530 5.9; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -1.7
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.9; 26 5.8; 28 5.6; 30 5.4; 32 5.2; 35 4.8; 37 4.6; 40 4.4; 42 4.2; 45 3.8; 49 3.2; 52 2.9; 56 2.6; 59 2.3; 64 2.0; 68 1.9; 73 1.9; 78 1.8; 83 1.7; 89 1.4; 95 1.1; 102 0.8; 109 0.6; 117 0.1; 125 -0.3; 134 -0.7; 143 -0.9; 153 -1.1; 164 -1.2; 175 -1.3; 188 -1.4; 201 -1.5; 215 -1.6; 230 -1.6; 246 -1.8; 263 -1.9; 282 -1.9; 301 -1.9; 323 -2.0; 345 -2.1; 369 -2.1; 395 -2.2; 423 -2.2; 452 -2.3; 484 -2.5; 518 -2.3; 554 -1.8; 593 -1.2; 635 -1.1; 679 -1.1; 726 -0.6; 777 -0.4; 832 -0.6; 890 -0.5; 952 -0.2; 1019 0.1; 1090 0.1; 1167 0.1; 1248 -0.0; 1336 -0.7; 1429 -1.0; 1529 -1.3; 1636 -1.4; 1751 -1.0; 1873 -0.6; 2004 -0.7; 2145 -0.5; 2295 0.7; 2455 1.6; 2627 2.3; 2811 2.9; 3008 3.8; 3219 4.4; 3444 5.1; 3685 5.9; 3943 6.0; 4219 6.0; 4514 6.0; 4830 5.8; 5168 3.5; 5530 5.9; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -1.7
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Audeze%20LCD-3%20Fazor%20sn2715432/Audeze%20LCD-3%20Fazor%20sn2715432.png)

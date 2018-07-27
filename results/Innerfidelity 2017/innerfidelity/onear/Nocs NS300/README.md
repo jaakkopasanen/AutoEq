@@ -1,13 +1,8 @@
 # Nocs NS300
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.8; 37 5.5; 40 4.9; 42 4.5; 45 4.1; 49 3.5; 52 3.2; 56 2.9; 59 2.7; 64 2.5; 68 2.3; 73 2.1; 78 2.0; 83 2.1; 89 2.4; 95 2.3; 102 2.4; 109 3.1; 117 3.3; 125 3.0; 134 2.3; 143 2.1; 153 2.0; 164 2.8; 175 3.2; 188 3.5; 201 4.1; 215 5.1; 230 5.7; 246 5.5; 263 5.6; 282 5.2; 301 4.1; 323 2.1; 345 0.8; 369 0.4; 395 0.0; 423 -0.3; 452 -0.7; 484 -1.2; 518 -1.3; 554 -1.0; 593 -0.7; 635 -0.7; 679 -0.9; 726 -1.0; 777 -0.9; 832 -0.9; 890 -0.8; 952 -0.4; 1019 0.2; 1090 1.0; 1167 2.0; 1248 2.7; 1336 3.0; 1429 3.4; 1529 4.7; 1636 4.5; 1751 5.0; 1873 4.9; 2004 4.8; 2145 4.4; 2295 4.0; 2455 3.9; 2627 3.3; 2811 3.0; 3008 3.0; 3219 2.5; 3444 3.5; 3685 5.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.2; 6775 2.6; 7249 1.2; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.8; 37 5.5; 40 4.9; 42 4.5; 45 4.1; 49 3.5; 52 3.2; 56 2.9; 59 2.7; 64 2.5; 68 2.3; 73 2.1; 78 2.0; 83 2.1; 89 2.4; 95 2.3; 102 2.4; 109 3.1; 117 3.3; 125 3.0; 134 2.3; 143 2.1; 153 2.0; 164 2.8; 175 3.2; 188 3.5; 201 4.1; 215 5.1; 230 5.7; 246 5.5; 263 5.6; 282 5.2; 301 4.1; 323 2.1; 345 0.8; 369 0.4; 395 0.0; 423 -0.3; 452 -0.7; 484 -1.2; 518 -1.3; 554 -1.0; 593 -0.7; 635 -0.7; 679 -0.9; 726 -1.0; 777 -0.9; 832 -0.9; 890 -0.8; 952 -0.4; 1019 0.2; 1090 1.0; 1167 2.0; 1248 2.7; 1336 3.0; 1429 3.4; 1529 4.7; 1636 4.5; 1751 5.0; 1873 4.9; 2004 4.8; 2145 4.4; 2295 4.0; 2455 3.9; 2627 3.3; 2811 3.0; 3008 3.0; 3219 2.5; 3444 3.5; 3685 5.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.2; 6775 2.6; 7249 1.2; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Nocs%20NS300/Nocs%20NS300.png)

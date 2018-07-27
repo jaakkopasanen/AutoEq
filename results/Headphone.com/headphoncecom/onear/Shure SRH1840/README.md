@@ -1,13 +1,8 @@
 # Shure SRH1840
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 5.9; 42 5.7; 45 5.5; 49 5.3; 52 5.1; 56 5.0; 59 4.8; 64 4.5; 68 4.4; 73 4.4; 78 4.6; 83 4.5; 89 3.7; 95 2.9; 102 2.1; 109 1.5; 117 0.8; 125 0.2; 134 -0.2; 143 -0.6; 153 -1.0; 164 -1.1; 175 -1.3; 188 -1.4; 201 -1.6; 215 -1.6; 230 -1.6; 246 -1.7; 263 -1.7; 282 -1.6; 301 -1.6; 323 -1.7; 345 -1.5; 369 -1.4; 395 -1.4; 423 -1.2; 452 -0.8; 484 -0.5; 518 -0.2; 554 0.1; 593 0.3; 635 0.4; 679 0.7; 726 0.9; 777 1.3; 832 0.8; 890 0.3; 952 0.2; 1019 0.0; 1090 0.0; 1167 0.1; 1248 0.2; 1336 0.4; 1429 0.7; 1529 0.6; 1636 0.4; 1751 -0.2; 1873 -1.1; 2004 -1.7; 2145 -2.0; 2295 -2.0; 2455 -1.9; 2627 -1.9; 2811 -1.9; 3008 -2.0; 3219 -2.1; 3444 -2.0; 3685 -1.8; 3943 -0.8; 4219 1.2; 4514 2.5; 4830 4.6; 5168 5.9; 5530 5.7; 5917 3.1; 6331 0.8; 6775 1.2; 7249 1.3; 7756 0.2; 8299 -1.5; 8880 -2.8; 9502 -0.9; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 5.9; 42 5.7; 45 5.5; 49 5.3; 52 5.1; 56 5.0; 59 4.8; 64 4.5; 68 4.4; 73 4.4; 78 4.6; 83 4.5; 89 3.7; 95 2.9; 102 2.1; 109 1.5; 117 0.8; 125 0.2; 134 -0.2; 143 -0.6; 153 -1.0; 164 -1.1; 175 -1.3; 188 -1.4; 201 -1.6; 215 -1.6; 230 -1.6; 246 -1.7; 263 -1.7; 282 -1.6; 301 -1.6; 323 -1.7; 345 -1.5; 369 -1.4; 395 -1.4; 423 -1.2; 452 -0.8; 484 -0.5; 518 -0.2; 554 0.1; 593 0.3; 635 0.4; 679 0.7; 726 0.9; 777 1.3; 832 0.8; 890 0.3; 952 0.2; 1019 0.0; 1090 0.0; 1167 0.1; 1248 0.2; 1336 0.4; 1429 0.7; 1529 0.6; 1636 0.4; 1751 -0.2; 1873 -1.1; 2004 -1.7; 2145 -2.0; 2295 -2.0; 2455 -1.9; 2627 -1.9; 2811 -1.9; 3008 -2.0; 3219 -2.1; 3444 -2.0; 3685 -1.8; 3943 -0.8; 4219 1.2; 4514 2.5; 4830 4.6; 5168 5.9; 5530 5.7; 5917 3.1; 6331 0.8; 6775 1.2; 7249 1.3; 7756 0.2; 8299 -1.5; 8880 -2.8; 9502 -0.9; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/headphoncecom/onear/Shure%20SRH1840/Shure%20SRH1840.png)

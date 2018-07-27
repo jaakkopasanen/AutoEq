@@ -1,13 +1,8 @@
 # Focal Utopia with Elear Pads
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -1.3; 22 -1.5; 23 -1.6; 25 -1.7; 26 -1.8; 28 -1.9; 30 -1.9; 32 -2.0; 35 -2.1; 37 -2.2; 40 -2.3; 42 -2.3; 45 -2.4; 49 -2.5; 52 -2.6; 56 -2.8; 59 -2.9; 64 -3.0; 68 -3.1; 73 -3.2; 78 -3.4; 83 -3.6; 89 -4.0; 95 -4.3; 102 -4.7; 109 -5.1; 117 -5.5; 125 -5.9; 134 -6.1; 143 -6.2; 153 -6.3; 164 -6.2; 175 -6.2; 188 -6.1; 201 -6.0; 215 -5.8; 230 -5.6; 246 -5.4; 263 -5.1; 282 -4.8; 301 -4.5; 323 -4.2; 345 -4.0; 369 -3.6; 395 -3.2; 423 -2.8; 452 -2.4; 484 -2.1; 518 -1.8; 554 -1.4; 593 -1.0; 635 -0.6; 679 -0.2; 726 -0.1; 777 -0.0; 832 -0.1; 890 -0.1; 952 -0.1; 1019 0.1; 1090 0.2; 1167 0.2; 1248 0.6; 1336 1.1; 1429 1.7; 1529 2.1; 1636 2.1; 1751 2.4; 1873 2.6; 2004 2.7; 2145 2.7; 2295 2.0; 2455 0.7; 2627 0.4; 2811 1.4; 3008 2.4; 3219 3.2; 3444 4.8; 3685 6.0; 3943 5.5; 4219 5.4; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.3; 6331 4.8; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -0.2; 8880 -0.7; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -1.3; 22 -1.5; 23 -1.6; 25 -1.7; 26 -1.8; 28 -1.9; 30 -1.9; 32 -2.0; 35 -2.1; 37 -2.2; 40 -2.3; 42 -2.3; 45 -2.4; 49 -2.5; 52 -2.6; 56 -2.8; 59 -2.9; 64 -3.0; 68 -3.1; 73 -3.2; 78 -3.4; 83 -3.6; 89 -4.0; 95 -4.3; 102 -4.7; 109 -5.1; 117 -5.5; 125 -5.9; 134 -6.1; 143 -6.2; 153 -6.3; 164 -6.2; 175 -6.2; 188 -6.1; 201 -6.0; 215 -5.8; 230 -5.6; 246 -5.4; 263 -5.1; 282 -4.8; 301 -4.5; 323 -4.2; 345 -4.0; 369 -3.6; 395 -3.2; 423 -2.8; 452 -2.4; 484 -2.1; 518 -1.8; 554 -1.4; 593 -1.0; 635 -0.6; 679 -0.2; 726 -0.1; 777 -0.0; 832 -0.1; 890 -0.1; 952 -0.1; 1019 0.1; 1090 0.2; 1167 0.2; 1248 0.6; 1336 1.1; 1429 1.7; 1529 2.1; 1636 2.1; 1751 2.4; 1873 2.6; 2004 2.7; 2145 2.7; 2295 2.0; 2455 0.7; 2627 0.4; 2811 1.4; 3008 2.4; 3219 3.2; 3444 4.8; 3685 6.0; 3943 5.5; 4219 5.4; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.3; 6331 4.8; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -0.2; 8880 -0.7; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Focal%20Utopia%20with%20Elear%20Pads/Focal%20Utopia%20with%20Elear%20Pads.png)

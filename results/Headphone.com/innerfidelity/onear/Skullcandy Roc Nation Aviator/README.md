@@ -1,13 +1,8 @@
 # Skullcandy Roc Nation Aviator
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.8; 26 5.6; 28 4.9; 30 4.2; 32 3.4; 35 2.4; 37 1.7; 40 0.9; 42 0.4; 45 -0.3; 49 -1.0; 52 -1.5; 56 -2.0; 59 -2.4; 64 -2.9; 68 -3.3; 73 -3.7; 78 -4.1; 83 -4.5; 89 -5.0; 95 -5.6; 102 -6.1; 109 -6.5; 117 -6.9; 125 -7.3; 134 -7.5; 143 -7.7; 153 -7.8; 164 -7.8; 175 -7.8; 188 -7.6; 201 -7.6; 215 -7.5; 230 -7.3; 246 -7.1; 263 -6.9; 282 -6.6; 301 -6.4; 323 -6.3; 345 -6.0; 369 -5.8; 395 -5.6; 423 -5.2; 452 -4.8; 484 -4.3; 518 -3.8; 554 -3.2; 593 -2.7; 635 -2.5; 679 -2.3; 726 -1.0; 777 0.1; 832 0.3; 890 0.9; 952 0.7; 1019 0.1; 1090 0.3; 1167 0.3; 1248 0.2; 1336 -0.6; 1429 -0.9; 1529 -1.0; 1636 -1.0; 1751 -1.2; 1873 -1.1; 2004 -0.7; 2145 -0.2; 2295 0.4; 2455 1.0; 2627 1.3; 2811 0.6; 3008 -0.5; 3219 -1.4; 3444 -1.5; 3685 -1.1; 3943 -2.0; 4219 -3.9; 4514 -3.9; 4830 -2.0; 5168 1.0; 5530 2.7; 5917 4.1; 6331 3.1; 6775 1.6; 7249 1.3; 7756 0.2; 8299 -1.7; 8880 -3.8; 9502 -3.9; 10167 -2.0; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.8; 26 5.6; 28 4.9; 30 4.2; 32 3.4; 35 2.4; 37 1.7; 40 0.9; 42 0.4; 45 -0.3; 49 -1.0; 52 -1.5; 56 -2.0; 59 -2.4; 64 -2.9; 68 -3.3; 73 -3.7; 78 -4.1; 83 -4.5; 89 -5.0; 95 -5.6; 102 -6.1; 109 -6.5; 117 -6.9; 125 -7.3; 134 -7.5; 143 -7.7; 153 -7.8; 164 -7.8; 175 -7.8; 188 -7.6; 201 -7.6; 215 -7.5; 230 -7.3; 246 -7.1; 263 -6.9; 282 -6.6; 301 -6.4; 323 -6.3; 345 -6.0; 369 -5.8; 395 -5.6; 423 -5.2; 452 -4.8; 484 -4.3; 518 -3.8; 554 -3.2; 593 -2.7; 635 -2.5; 679 -2.3; 726 -1.0; 777 0.1; 832 0.3; 890 0.9; 952 0.7; 1019 0.1; 1090 0.3; 1167 0.3; 1248 0.2; 1336 -0.6; 1429 -0.9; 1529 -1.0; 1636 -1.0; 1751 -1.2; 1873 -1.1; 2004 -0.7; 2145 -0.2; 2295 0.4; 2455 1.0; 2627 1.3; 2811 0.6; 3008 -0.5; 3219 -1.4; 3444 -1.5; 3685 -1.1; 3943 -2.0; 4219 -3.9; 4514 -3.9; 4830 -2.0; 5168 1.0; 5530 2.7; 5917 4.1; 6331 3.1; 6775 1.6; 7249 1.3; 7756 0.2; 8299 -1.7; 8880 -3.8; 9502 -3.9; 10167 -2.0; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Skullcandy%20Roc%20Nation%20Aviator/Skullcandy%20Roc%20Nation%20Aviator.png)

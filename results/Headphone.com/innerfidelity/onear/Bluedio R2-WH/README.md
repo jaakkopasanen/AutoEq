@@ -1,13 +1,8 @@
 # Bluedio R2-WH
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-62**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.2dB
 GraphicEQ: 10 -84; 20 0.7; 22 -0.2; 23 -0.6; 25 -1.3; 26 -1.6; 28 -2.3; 30 -2.8; 32 -3.2; 35 -3.8; 37 -4.1; 40 -4.4; 42 -4.6; 45 -4.8; 49 -4.9; 52 -4.9; 56 -5.0; 59 -5.0; 64 -5.0; 68 -4.9; 73 -4.9; 78 -4.9; 83 -4.9; 89 -4.8; 95 -5.0; 102 -5.8; 109 -6.4; 117 -6.7; 125 -6.9; 134 -7.4; 143 -7.7; 153 -7.9; 164 -7.7; 175 -7.7; 188 -7.7; 201 -7.4; 215 -7.2; 230 -7.1; 246 -6.5; 263 -7.0; 282 -6.9; 301 -6.5; 323 -5.9; 345 -5.9; 369 -5.7; 395 -4.9; 423 -4.1; 452 -3.6; 484 -3.2; 518 -2.3; 554 -1.2; 593 0.1; 635 1.0; 679 2.0; 726 2.7; 777 2.9; 832 2.5; 890 1.4; 952 0.4; 1019 -0.1; 1090 -0.2; 1167 0.1; 1248 0.7; 1336 1.4; 1429 2.2; 1529 2.8; 1636 2.8; 1751 2.4; 1873 1.9; 2004 1.6; 2145 2.7; 2295 2.9; 2455 2.8; 2627 3.0; 2811 3.4; 3008 4.1; 3219 5.3; 3444 6.2; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 0.7; 22 -0.2; 23 -0.6; 25 -1.3; 26 -1.6; 28 -2.3; 30 -2.8; 32 -3.2; 35 -3.8; 37 -4.1; 40 -4.4; 42 -4.6; 45 -4.8; 49 -4.9; 52 -4.9; 56 -5.0; 59 -5.0; 64 -5.0; 68 -4.9; 73 -4.9; 78 -4.9; 83 -4.9; 89 -4.8; 95 -5.0; 102 -5.8; 109 -6.4; 117 -6.7; 125 -6.9; 134 -7.4; 143 -7.7; 153 -7.9; 164 -7.7; 175 -7.7; 188 -7.7; 201 -7.4; 215 -7.2; 230 -7.1; 246 -6.5; 263 -7.0; 282 -6.9; 301 -6.5; 323 -5.9; 345 -5.9; 369 -5.7; 395 -4.9; 423 -4.1; 452 -3.6; 484 -3.2; 518 -2.3; 554 -1.2; 593 0.1; 635 1.0; 679 2.0; 726 2.7; 777 2.9; 832 2.5; 890 1.4; 952 0.4; 1019 -0.1; 1090 -0.2; 1167 0.1; 1248 0.7; 1336 1.4; 1429 2.2; 1529 2.8; 1636 2.8; 1751 2.4; 1873 1.9; 2004 1.6; 2145 2.7; 2295 2.9; 2455 2.8; 2627 3.0; 2811 3.4; 3008 4.1; 3219 5.3; 3444 6.2; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.2dB*l, R=-6.2dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.2dB` and instead set Global volume in the UI for both channels to **-62**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Bluedio%20R2-WH/Bluedio%20R2-WH.png)

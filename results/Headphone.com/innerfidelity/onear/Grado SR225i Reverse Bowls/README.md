@@ -1,13 +1,8 @@
 # Grado SR225i Reverse Bowls
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.9; 37 5.7; 40 5.0; 42 4.3; 45 3.5; 49 2.6; 52 2.0; 56 1.4; 59 1.0; 64 0.4; 68 0.0; 73 -0.5; 78 -1.0; 83 -1.4; 89 -1.8; 95 -2.2; 102 -2.7; 109 -3.1; 117 -3.5; 125 -3.8; 134 -3.9; 143 -4.0; 153 -4.0; 164 -4.0; 175 -3.9; 188 -3.7; 201 -3.5; 215 -3.3; 230 -3.2; 246 -3.0; 263 -2.8; 282 -2.4; 301 -2.5; 323 -2.6; 345 -2.3; 369 -2.1; 395 -2.0; 423 -1.8; 452 -1.5; 484 -1.2; 518 -0.9; 554 -0.6; 593 -0.3; 635 -0.1; 679 0.1; 726 0.2; 777 0.2; 832 0.1; 890 0.1; 952 0.0; 1019 0.0; 1090 0.0; 1167 0.1; 1248 0.0; 1336 0.2; 1429 0.2; 1529 0.0; 1636 -0.1; 1751 -0.4; 1873 -2.4; 2004 -4.6; 2145 -4.8; 2295 -2.6; 2455 -0.9; 2627 0.7; 2811 1.9; 3008 1.7; 3219 2.6; 3444 1.8; 3685 1.3; 3943 2.7; 4219 5.5; 4514 6.0; 4830 6.0; 5168 5.8; 5530 5.8; 5917 5.5; 6331 2.6; 6775 -0.9; 7249 -3.2; 7756 -3.5; 8299 -3.7; 8880 -4.2; 9502 -3.1; 10167 -0.2; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.9; 37 5.7; 40 5.0; 42 4.3; 45 3.5; 49 2.6; 52 2.0; 56 1.4; 59 1.0; 64 0.4; 68 0.0; 73 -0.5; 78 -1.0; 83 -1.4; 89 -1.8; 95 -2.2; 102 -2.7; 109 -3.1; 117 -3.5; 125 -3.8; 134 -3.9; 143 -4.0; 153 -4.0; 164 -4.0; 175 -3.9; 188 -3.7; 201 -3.5; 215 -3.3; 230 -3.2; 246 -3.0; 263 -2.8; 282 -2.4; 301 -2.5; 323 -2.6; 345 -2.3; 369 -2.1; 395 -2.0; 423 -1.8; 452 -1.5; 484 -1.2; 518 -0.9; 554 -0.6; 593 -0.3; 635 -0.1; 679 0.1; 726 0.2; 777 0.2; 832 0.1; 890 0.1; 952 0.0; 1019 0.0; 1090 0.0; 1167 0.1; 1248 0.0; 1336 0.2; 1429 0.2; 1529 0.0; 1636 -0.1; 1751 -0.4; 1873 -2.4; 2004 -4.6; 2145 -4.8; 2295 -2.6; 2455 -0.9; 2627 0.7; 2811 1.9; 3008 1.7; 3219 2.6; 3444 1.8; 3685 1.3; 3943 2.7; 4219 5.5; 4514 6.0; 4830 6.0; 5168 5.8; 5530 5.8; 5917 5.5; 6331 2.6; 6775 -0.9; 7249 -3.2; 7756 -3.5; 8299 -3.7; 8880 -4.2; 9502 -3.1; 10167 -0.2; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Grado%20SR225i%20Reverse%20Bowls/Grado%20SR225i%20Reverse%20Bowls.png)

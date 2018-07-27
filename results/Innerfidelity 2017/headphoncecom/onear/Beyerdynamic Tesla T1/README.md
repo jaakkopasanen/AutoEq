@@ -1,13 +1,8 @@
 # Beyerdynamic Tesla T1
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-54**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -5.4dB
 GraphicEQ: 10 -84; 20 2.6; 22 2.2; 23 2.0; 25 1.6; 26 1.4; 28 1.1; 30 0.8; 32 0.6; 35 0.3; 37 0.1; 40 -0.1; 42 -0.2; 45 -0.4; 49 -0.6; 52 -0.7; 56 -0.8; 59 -0.8; 64 -0.3; 68 -0.0; 73 -0.7; 78 -1.3; 83 -1.7; 89 -2.2; 95 -2.4; 102 -2.8; 109 -3.2; 117 -3.5; 125 -4.0; 134 -4.4; 143 -4.8; 153 -5.0; 164 -4.9; 175 -4.9; 188 -5.0; 201 -5.1; 215 -5.1; 230 -5.2; 246 -5.4; 263 -5.2; 282 -5.2; 301 -5.1; 323 -5.0; 345 -4.9; 369 -4.7; 395 -4.6; 423 -4.5; 452 -4.5; 484 -4.5; 518 -4.1; 554 -3.4; 593 -2.9; 635 -2.5; 679 -2.1; 726 -1.7; 777 -1.0; 832 -0.8; 890 -0.6; 952 -0.3; 1019 0.1; 1090 0.3; 1167 0.6; 1248 1.0; 1336 1.5; 1429 1.1; 1529 0.7; 1636 -0.4; 1751 -1.1; 1873 -1.9; 2004 -2.0; 2145 -1.2; 2295 -0.2; 2455 0.4; 2627 0.5; 2811 -0.1; 3008 -0.1; 3219 0.5; 3444 1.3; 3685 1.6; 3943 2.4; 4219 3.0; 4514 4.5; 4830 5.4; 5168 3.9; 5530 1.9; 5917 1.2; 6331 2.7; 6775 1.3; 7249 -0.1; 7756 -4.9; 8299 -8.5; 8880 -9.3; 9502 -6.8; 10167 -2.7; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 2.6; 22 2.2; 23 2.0; 25 1.6; 26 1.4; 28 1.1; 30 0.8; 32 0.6; 35 0.3; 37 0.1; 40 -0.1; 42 -0.2; 45 -0.4; 49 -0.6; 52 -0.7; 56 -0.8; 59 -0.8; 64 -0.3; 68 -0.0; 73 -0.7; 78 -1.3; 83 -1.7; 89 -2.2; 95 -2.4; 102 -2.8; 109 -3.2; 117 -3.5; 125 -4.0; 134 -4.4; 143 -4.8; 153 -5.0; 164 -4.9; 175 -4.9; 188 -5.0; 201 -5.1; 215 -5.1; 230 -5.2; 246 -5.4; 263 -5.2; 282 -5.2; 301 -5.1; 323 -5.0; 345 -4.9; 369 -4.7; 395 -4.6; 423 -4.5; 452 -4.5; 484 -4.5; 518 -4.1; 554 -3.4; 593 -2.9; 635 -2.5; 679 -2.1; 726 -1.7; 777 -1.0; 832 -0.8; 890 -0.6; 952 -0.3; 1019 0.1; 1090 0.3; 1167 0.6; 1248 1.0; 1336 1.5; 1429 1.1; 1529 0.7; 1636 -0.4; 1751 -1.1; 1873 -1.9; 2004 -2.0; 2145 -1.2; 2295 -0.2; 2455 0.4; 2627 0.5; 2811 -0.1; 3008 -0.1; 3219 0.5; 3444 1.3; 3685 1.6; 3943 2.4; 4219 3.0; 4514 4.5; 4830 5.4; 5168 3.9; 5530 1.9; 5917 1.2; 6331 2.7; 6775 1.3; 7249 -0.1; 7756 -4.9; 8299 -8.5; 8880 -9.3; 9502 -6.8; 10167 -2.7; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-5.4dB*l, R=-5.4dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.4dB` and instead set Global volume in the UI for both channels to **-54**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/headphoncecom/onear/Beyerdynamic%20Tesla%20T1/Beyerdynamic%20Tesla%20T1.png)

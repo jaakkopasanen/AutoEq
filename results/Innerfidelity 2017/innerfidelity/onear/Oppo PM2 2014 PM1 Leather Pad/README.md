@@ -1,13 +1,8 @@
 # Oppo PM2 2014 PM1 Leather Pad
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 3.6; 22 3.5; 23 3.4; 25 3.3; 26 3.2; 28 3.1; 30 3.1; 32 3.0; 35 2.9; 37 2.9; 40 2.9; 42 2.9; 45 3.0; 49 3.1; 52 3.1; 56 3.2; 59 3.6; 64 3.6; 68 2.9; 73 2.3; 78 2.4; 83 2.2; 89 1.6; 95 1.3; 102 1.0; 109 0.7; 117 0.2; 125 -0.3; 134 -0.6; 143 -0.9; 153 -0.9; 164 -1.0; 175 -1.2; 188 -1.5; 201 -1.9; 215 -2.2; 230 -2.4; 246 -2.5; 263 -2.4; 282 -2.0; 301 -1.4; 323 -0.9; 345 -1.0; 369 -1.4; 395 -1.5; 423 -1.6; 452 -2.0; 484 -2.6; 518 -2.7; 554 -2.5; 593 -2.2; 635 -2.2; 679 -2.0; 726 -1.0; 777 -0.5; 832 -0.8; 890 -0.7; 952 -0.1; 1019 -0.1; 1090 -0.2; 1167 -0.1; 1248 0.1; 1336 0.0; 1429 0.1; 1529 0.4; 1636 0.5; 1751 0.6; 1873 0.7; 2004 1.2; 2145 1.6; 2295 2.3; 2455 3.0; 2627 3.8; 2811 4.5; 3008 5.5; 3219 5.9; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -0.2; 8880 -1.0; 9502 -0.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 3.6; 22 3.5; 23 3.4; 25 3.3; 26 3.2; 28 3.1; 30 3.1; 32 3.0; 35 2.9; 37 2.9; 40 2.9; 42 2.9; 45 3.0; 49 3.1; 52 3.1; 56 3.2; 59 3.6; 64 3.6; 68 2.9; 73 2.3; 78 2.4; 83 2.2; 89 1.6; 95 1.3; 102 1.0; 109 0.7; 117 0.2; 125 -0.3; 134 -0.6; 143 -0.9; 153 -0.9; 164 -1.0; 175 -1.2; 188 -1.5; 201 -1.9; 215 -2.2; 230 -2.4; 246 -2.5; 263 -2.4; 282 -2.0; 301 -1.4; 323 -0.9; 345 -1.0; 369 -1.4; 395 -1.5; 423 -1.6; 452 -2.0; 484 -2.6; 518 -2.7; 554 -2.5; 593 -2.2; 635 -2.2; 679 -2.0; 726 -1.0; 777 -0.5; 832 -0.8; 890 -0.7; 952 -0.1; 1019 -0.1; 1090 -0.2; 1167 -0.1; 1248 0.1; 1336 0.0; 1429 0.1; 1529 0.4; 1636 0.5; 1751 0.6; 1873 0.7; 2004 1.2; 2145 1.6; 2295 2.3; 2455 3.0; 2627 3.8; 2811 4.5; 3008 5.5; 3219 5.9; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -0.2; 8880 -1.0; 9502 -0.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Oppo%20PM2%202014%20PM1%20Leather%20Pad/Oppo%20PM2%202014%20PM1%20Leather%20Pad.png)

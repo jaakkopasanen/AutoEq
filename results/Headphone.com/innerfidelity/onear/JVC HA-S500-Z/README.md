@@ -1,13 +1,8 @@
 # JVC HA-S500-Z
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 5.3; 22 4.5; 23 4.1; 25 3.4; 26 3.0; 28 2.5; 30 2.0; 32 1.5; 35 0.9; 37 0.6; 40 0.3; 42 0.1; 45 -0.1; 49 -0.3; 52 -0.4; 56 -0.4; 59 -0.5; 64 -0.5; 68 -0.6; 73 -0.7; 78 -0.9; 83 -1.1; 89 -1.3; 95 -1.5; 102 -1.8; 109 -2.1; 117 -2.6; 125 -3.0; 134 -3.4; 143 -3.6; 153 -3.8; 164 -3.8; 175 -3.6; 188 -3.7; 201 -3.7; 215 -3.7; 230 -3.6; 246 -3.5; 263 -3.9; 282 -4.6; 301 -4.6; 323 -4.1; 345 -3.5; 369 -2.6; 395 -1.7; 423 -0.4; 452 0.8; 484 2.4; 518 3.9; 554 4.3; 593 3.8; 635 3.0; 679 2.2; 726 1.6; 777 1.1; 832 0.7; 890 0.3; 952 0.1; 1019 -0.0; 1090 0.1; 1167 0.4; 1248 0.8; 1336 1.5; 1429 2.4; 1529 3.3; 1636 4.1; 1751 4.9; 1873 5.4; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.0; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 5.3; 22 4.5; 23 4.1; 25 3.4; 26 3.0; 28 2.5; 30 2.0; 32 1.5; 35 0.9; 37 0.6; 40 0.3; 42 0.1; 45 -0.1; 49 -0.3; 52 -0.4; 56 -0.4; 59 -0.5; 64 -0.5; 68 -0.6; 73 -0.7; 78 -0.9; 83 -1.1; 89 -1.3; 95 -1.5; 102 -1.8; 109 -2.1; 117 -2.6; 125 -3.0; 134 -3.4; 143 -3.6; 153 -3.8; 164 -3.8; 175 -3.6; 188 -3.7; 201 -3.7; 215 -3.7; 230 -3.6; 246 -3.5; 263 -3.9; 282 -4.6; 301 -4.6; 323 -4.1; 345 -3.5; 369 -2.6; 395 -1.7; 423 -0.4; 452 0.8; 484 2.4; 518 3.9; 554 4.3; 593 3.8; 635 3.0; 679 2.2; 726 1.6; 777 1.1; 832 0.7; 890 0.3; 952 0.1; 1019 -0.0; 1090 0.1; 1167 0.4; 1248 0.8; 1336 1.5; 1429 2.4; 1529 3.3; 1636 4.1; 1751 4.9; 1873 5.4; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.0; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/JVC%20HA-S500-Z/JVC%20HA-S500-Z.png)

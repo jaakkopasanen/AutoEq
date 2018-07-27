@@ -1,13 +1,8 @@
 # Kennerton Magister
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 5.8; 22 5.1; 23 4.9; 25 4.4; 26 4.2; 28 3.8; 30 3.5; 32 3.3; 35 3.0; 37 2.8; 40 2.7; 42 2.7; 45 2.7; 49 2.7; 52 2.6; 56 2.4; 59 2.2; 64 2.1; 68 2.2; 73 2.3; 78 2.3; 83 1.7; 89 0.9; 95 0.5; 102 -0.3; 109 -1.2; 117 -1.9; 125 -2.6; 134 -3.1; 143 -3.3; 153 -3.2; 164 -2.5; 175 -3.0; 188 -3.5; 201 -3.4; 215 -3.2; 230 -2.8; 246 -2.4; 263 -1.7; 282 -0.6; 301 0.5; 323 1.5; 345 2.1; 369 2.2; 395 1.6; 423 1.0; 452 0.5; 484 -0.3; 518 -0.6; 554 -0.4; 593 -0.3; 635 -0.4; 679 -0.5; 726 -0.4; 777 0.0; 832 0.2; 890 0.1; 952 -0.1; 1019 -0.1; 1090 -0.4; 1167 -0.7; 1248 -1.2; 1336 -1.8; 1429 -2.3; 1529 -2.8; 1636 -3.4; 1751 -3.9; 1873 -4.7; 2004 -4.3; 2145 -4.0; 2295 -3.8; 2455 -2.9; 2627 -2.2; 2811 -1.5; 3008 -0.3; 3219 -0.1; 3444 0.7; 3685 1.2; 3943 2.3; 4219 4.0; 4514 5.0; 4830 5.6; 5168 6.0; 5530 6.0; 5917 5.9; 6331 4.6; 6775 2.7; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 5.8; 22 5.1; 23 4.9; 25 4.4; 26 4.2; 28 3.8; 30 3.5; 32 3.3; 35 3.0; 37 2.8; 40 2.7; 42 2.7; 45 2.7; 49 2.7; 52 2.6; 56 2.4; 59 2.2; 64 2.1; 68 2.2; 73 2.3; 78 2.3; 83 1.7; 89 0.9; 95 0.5; 102 -0.3; 109 -1.2; 117 -1.9; 125 -2.6; 134 -3.1; 143 -3.3; 153 -3.2; 164 -2.5; 175 -3.0; 188 -3.5; 201 -3.4; 215 -3.2; 230 -2.8; 246 -2.4; 263 -1.7; 282 -0.6; 301 0.5; 323 1.5; 345 2.1; 369 2.2; 395 1.6; 423 1.0; 452 0.5; 484 -0.3; 518 -0.6; 554 -0.4; 593 -0.3; 635 -0.4; 679 -0.5; 726 -0.4; 777 0.0; 832 0.2; 890 0.1; 952 -0.1; 1019 -0.1; 1090 -0.4; 1167 -0.7; 1248 -1.2; 1336 -1.8; 1429 -2.3; 1529 -2.8; 1636 -3.4; 1751 -3.9; 1873 -4.7; 2004 -4.3; 2145 -4.0; 2295 -3.8; 2455 -2.9; 2627 -2.2; 2811 -1.5; 3008 -0.3; 3219 -0.1; 3444 0.7; 3685 1.2; 3943 2.3; 4219 4.0; 4514 5.0; 4830 5.6; 5168 6.0; 5530 6.0; 5917 5.9; 6331 4.6; 6775 2.7; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Kennerton%20Magister/Kennerton%20Magister.png)

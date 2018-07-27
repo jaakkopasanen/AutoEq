@@ -1,13 +1,8 @@
 # Bose Quiet Comfort 25
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -1.3; 22 -1.8; 23 -2.0; 25 -2.2; 26 -2.2; 28 -2.1; 30 -1.9; 32 -1.7; 35 -1.3; 37 -1.1; 40 -1.0; 42 -1.0; 45 -1.1; 49 -1.2; 52 -1.3; 56 -1.5; 59 -1.6; 64 -1.6; 68 -1.5; 73 -1.5; 78 -1.6; 83 -1.6; 89 -1.6; 95 -1.7; 102 -1.9; 109 -2.1; 117 -2.3; 125 -2.6; 134 -2.7; 143 -2.8; 153 -2.8; 164 -2.7; 175 -2.4; 188 -2.4; 201 -2.5; 215 -2.3; 230 -2.2; 246 -2.0; 263 -1.9; 282 -1.7; 301 -1.6; 323 -1.4; 345 -1.1; 369 -0.8; 395 -0.5; 423 -0.1; 452 0.3; 484 0.6; 518 0.9; 554 1.3; 593 1.5; 635 1.7; 679 1.8; 726 1.8; 777 1.5; 832 1.1; 890 0.7; 952 0.3; 1019 0.1; 1090 0.5; 1167 0.7; 1248 1.0; 1336 0.8; 1429 1.7; 1529 0.6; 1636 -0.4; 1751 -1.7; 1873 -2.8; 2004 -3.1; 2145 -2.4; 2295 -1.7; 2455 -1.2; 2627 -0.6; 2811 -1.1; 3008 -2.3; 3219 -3.6; 3444 -4.0; 3685 -2.6; 3943 -0.1; 4219 3.6; 4514 5.9; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.3; 6331 3.0; 6775 3.3; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -1.3; 22 -1.8; 23 -2.0; 25 -2.2; 26 -2.2; 28 -2.1; 30 -1.9; 32 -1.7; 35 -1.3; 37 -1.1; 40 -1.0; 42 -1.0; 45 -1.1; 49 -1.2; 52 -1.3; 56 -1.5; 59 -1.6; 64 -1.6; 68 -1.5; 73 -1.5; 78 -1.6; 83 -1.6; 89 -1.6; 95 -1.7; 102 -1.9; 109 -2.1; 117 -2.3; 125 -2.6; 134 -2.7; 143 -2.8; 153 -2.8; 164 -2.7; 175 -2.4; 188 -2.4; 201 -2.5; 215 -2.3; 230 -2.2; 246 -2.0; 263 -1.9; 282 -1.7; 301 -1.6; 323 -1.4; 345 -1.1; 369 -0.8; 395 -0.5; 423 -0.1; 452 0.3; 484 0.6; 518 0.9; 554 1.3; 593 1.5; 635 1.7; 679 1.8; 726 1.8; 777 1.5; 832 1.1; 890 0.7; 952 0.3; 1019 0.1; 1090 0.5; 1167 0.7; 1248 1.0; 1336 0.8; 1429 1.7; 1529 0.6; 1636 -0.4; 1751 -1.7; 1873 -2.8; 2004 -3.1; 2145 -2.4; 2295 -1.7; 2455 -1.2; 2627 -0.6; 2811 -1.1; 3008 -2.3; 3219 -3.6; 3444 -4.0; 3685 -2.6; 3943 -0.1; 4219 3.6; 4514 5.9; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.3; 6331 3.0; 6775 3.3; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Bose%20Quiet%20Comfort%2025/Bose%20Quiet%20Comfort%2025.png)

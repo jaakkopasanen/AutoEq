@@ -1,13 +1,8 @@
 # MrSpeakers Aeon snACXB168 w Filters
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -1.0; 22 -1.1; 23 -1.1; 25 -1.2; 26 -1.2; 28 -1.2; 30 -1.2; 32 -1.2; 35 -1.2; 37 -1.2; 40 -1.2; 42 -1.2; 45 -1.1; 49 -1.0; 52 -1.0; 56 -0.9; 59 -0.8; 64 -0.3; 68 0.0; 73 0.3; 78 0.5; 83 0.5; 89 0.1; 95 -0.5; 102 -0.8; 109 -1.2; 117 -1.2; 125 -1.2; 134 -1.5; 143 -1.5; 153 -1.2; 164 -0.9; 175 -2.0; 188 -2.2; 201 -2.3; 215 -2.4; 230 -2.4; 246 -2.5; 263 -2.6; 282 -2.5; 301 -2.4; 323 -2.5; 345 -2.5; 369 -2.6; 395 -2.4; 423 -2.3; 452 -2.3; 484 -2.1; 518 -2.0; 554 -1.8; 593 -1.7; 635 -1.6; 679 -1.5; 726 -1.4; 777 -1.3; 832 -1.2; 890 -1.0; 952 -0.6; 1019 0.4; 1090 0.2; 1167 -0.3; 1248 -0.2; 1336 0.3; 1429 0.9; 1529 1.5; 1636 1.9; 1751 2.2; 1873 2.7; 2004 4.0; 2145 5.3; 2295 5.8; 2455 5.6; 2627 4.5; 2811 5.6; 3008 6.0; 3219 5.3; 3444 4.2; 3685 4.1; 3943 4.8; 4219 4.7; 4514 5.8; 4830 6.0; 5168 6.0; 5530 5.9; 5917 4.4; 6331 2.2; 6775 0.2; 7249 -1.6; 7756 -2.4; 8299 -2.5; 8880 -1.6; 9502 -0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -1.0; 22 -1.1; 23 -1.1; 25 -1.2; 26 -1.2; 28 -1.2; 30 -1.2; 32 -1.2; 35 -1.2; 37 -1.2; 40 -1.2; 42 -1.2; 45 -1.1; 49 -1.0; 52 -1.0; 56 -0.9; 59 -0.8; 64 -0.3; 68 0.0; 73 0.3; 78 0.5; 83 0.5; 89 0.1; 95 -0.5; 102 -0.8; 109 -1.2; 117 -1.2; 125 -1.2; 134 -1.5; 143 -1.5; 153 -1.2; 164 -0.9; 175 -2.0; 188 -2.2; 201 -2.3; 215 -2.4; 230 -2.4; 246 -2.5; 263 -2.6; 282 -2.5; 301 -2.4; 323 -2.5; 345 -2.5; 369 -2.6; 395 -2.4; 423 -2.3; 452 -2.3; 484 -2.1; 518 -2.0; 554 -1.8; 593 -1.7; 635 -1.6; 679 -1.5; 726 -1.4; 777 -1.3; 832 -1.2; 890 -1.0; 952 -0.6; 1019 0.4; 1090 0.2; 1167 -0.3; 1248 -0.2; 1336 0.3; 1429 0.9; 1529 1.5; 1636 1.9; 1751 2.2; 1873 2.7; 2004 4.0; 2145 5.3; 2295 5.8; 2455 5.6; 2627 4.5; 2811 5.6; 3008 6.0; 3219 5.3; 3444 4.2; 3685 4.1; 3943 4.8; 4219 4.7; 4514 5.8; 4830 6.0; 5168 6.0; 5530 5.9; 5917 4.4; 6331 2.2; 6775 0.2; 7249 -1.6; 7756 -2.4; 8299 -2.5; 8880 -1.6; 9502 -0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/MrSpeakers%20Aeon%20snACXB168%20w%20Filters/MrSpeakers%20Aeon%20snACXB168%20w%20Filters.png)

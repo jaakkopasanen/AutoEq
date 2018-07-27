@@ -1,13 +1,8 @@
 # Audio Technica ATH-M50 B2012
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 0.3; 22 -0.1; 23 -0.2; 25 -0.5; 26 -0.6; 28 -0.8; 30 -1.0; 32 -1.1; 35 -1.3; 37 -1.4; 40 -1.4; 42 -1.4; 45 -1.4; 49 -1.3; 52 -1.2; 56 -1.0; 59 -1.0; 64 -0.7; 68 -0.3; 73 0.2; 78 0.3; 83 0.8; 89 2.5; 95 3.3; 102 1.1; 109 -0.9; 117 -2.1; 125 -2.8; 134 -3.2; 143 -3.3; 153 -2.8; 164 -1.9; 175 -2.5; 188 -2.2; 201 -1.6; 215 -1.0; 230 -0.4; 246 0.2; 263 0.7; 282 1.2; 301 1.3; 323 0.4; 345 -0.2; 369 -0.5; 395 -0.7; 423 -0.9; 452 -1.1; 484 -1.2; 518 -1.1; 554 -1.1; 593 -0.9; 635 -0.8; 679 -0.7; 726 -0.5; 777 -0.5; 832 -0.5; 890 -0.4; 952 -0.2; 1019 -0.0; 1090 0.2; 1167 0.2; 1248 0.3; 1336 0.8; 1429 1.1; 1529 1.0; 1636 0.3; 1751 -0.5; 1873 -0.8; 2004 -0.6; 2145 -0.1; 2295 0.4; 2455 1.3; 2627 2.4; 2811 3.4; 3008 4.2; 3219 4.9; 3444 5.6; 3685 5.2; 3943 3.0; 4219 1.3; 4514 2.9; 4830 5.7; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.2; 7756 -2.2; 8299 -4.8; 8880 -4.6; 9502 -1.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 0.3; 22 -0.1; 23 -0.2; 25 -0.5; 26 -0.6; 28 -0.8; 30 -1.0; 32 -1.1; 35 -1.3; 37 -1.4; 40 -1.4; 42 -1.4; 45 -1.4; 49 -1.3; 52 -1.2; 56 -1.0; 59 -1.0; 64 -0.7; 68 -0.3; 73 0.2; 78 0.3; 83 0.8; 89 2.5; 95 3.3; 102 1.1; 109 -0.9; 117 -2.1; 125 -2.8; 134 -3.2; 143 -3.3; 153 -2.8; 164 -1.9; 175 -2.5; 188 -2.2; 201 -1.6; 215 -1.0; 230 -0.4; 246 0.2; 263 0.7; 282 1.2; 301 1.3; 323 0.4; 345 -0.2; 369 -0.5; 395 -0.7; 423 -0.9; 452 -1.1; 484 -1.2; 518 -1.1; 554 -1.1; 593 -0.9; 635 -0.8; 679 -0.7; 726 -0.5; 777 -0.5; 832 -0.5; 890 -0.4; 952 -0.2; 1019 -0.0; 1090 0.2; 1167 0.2; 1248 0.3; 1336 0.8; 1429 1.1; 1529 1.0; 1636 0.3; 1751 -0.5; 1873 -0.8; 2004 -0.6; 2145 -0.1; 2295 0.4; 2455 1.3; 2627 2.4; 2811 3.4; 3008 4.2; 3219 4.9; 3444 5.6; 3685 5.2; 3943 3.0; 4219 1.3; 4514 2.9; 4830 5.7; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.2; 7756 -2.2; 8299 -4.8; 8880 -4.6; 9502 -1.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Audio%20Technica%20ATH-M50%20B2012/Audio%20Technica%20ATH-M50%20B2012.png)

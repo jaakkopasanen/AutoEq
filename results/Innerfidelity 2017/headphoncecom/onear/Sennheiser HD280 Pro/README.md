@@ -1,13 +1,8 @@
 # Sennheiser HD280 Pro
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -0.3; 22 -0.7; 23 -0.8; 25 -1.1; 26 -1.2; 28 -1.3; 30 -1.4; 32 -1.5; 35 -1.5; 37 -1.5; 40 -1.5; 42 -1.4; 45 -1.2; 49 -0.9; 52 -0.4; 56 0.4; 59 1.1; 64 2.6; 68 5.0; 73 6.0; 78 6.0; 83 4.5; 89 1.8; 95 0.7; 102 3.3; 109 5.9; 117 5.5; 125 3.7; 134 2.6; 143 2.2; 153 2.6; 164 3.5; 175 1.2; 188 0.3; 201 -0.5; 215 -1.0; 230 -1.2; 246 -1.6; 263 -1.9; 282 -2.0; 301 -1.9; 323 -2.0; 345 -1.9; 369 -1.9; 395 -2.0; 423 -2.0; 452 -1.9; 484 -2.0; 518 -1.9; 554 -1.7; 593 -1.5; 635 -1.2; 679 -1.1; 726 -1.0; 777 -0.6; 832 -0.3; 890 -0.1; 952 0.0; 1019 -0.1; 1090 -0.3; 1167 -0.3; 1248 -0.2; 1336 -0.0; 1429 0.6; 1529 1.1; 1636 0.6; 1751 -0.5; 1873 -0.7; 2004 -1.2; 2145 -1.3; 2295 -1.9; 2455 -1.8; 2627 -0.8; 2811 1.4; 3008 3.9; 3219 3.9; 3444 2.6; 3685 2.4; 3943 3.7; 4219 5.4; 4514 5.3; 4830 5.3; 5168 5.4; 5530 4.3; 5917 2.6; 6331 0.8; 6775 0.4; 7249 -0.8; 7756 -2.0; 8299 -3.6; 8880 -4.8; 9502 -5.2; 10167 -5.1; 10879 -4.4; 11640 -1.5; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -0.3; 22 -0.7; 23 -0.8; 25 -1.1; 26 -1.2; 28 -1.3; 30 -1.4; 32 -1.5; 35 -1.5; 37 -1.5; 40 -1.5; 42 -1.4; 45 -1.2; 49 -0.9; 52 -0.4; 56 0.4; 59 1.1; 64 2.6; 68 5.0; 73 6.0; 78 6.0; 83 4.5; 89 1.8; 95 0.7; 102 3.3; 109 5.9; 117 5.5; 125 3.7; 134 2.6; 143 2.2; 153 2.6; 164 3.5; 175 1.2; 188 0.3; 201 -0.5; 215 -1.0; 230 -1.2; 246 -1.6; 263 -1.9; 282 -2.0; 301 -1.9; 323 -2.0; 345 -1.9; 369 -1.9; 395 -2.0; 423 -2.0; 452 -1.9; 484 -2.0; 518 -1.9; 554 -1.7; 593 -1.5; 635 -1.2; 679 -1.1; 726 -1.0; 777 -0.6; 832 -0.3; 890 -0.1; 952 0.0; 1019 -0.1; 1090 -0.3; 1167 -0.3; 1248 -0.2; 1336 -0.0; 1429 0.6; 1529 1.1; 1636 0.6; 1751 -0.5; 1873 -0.7; 2004 -1.2; 2145 -1.3; 2295 -1.9; 2455 -1.8; 2627 -0.8; 2811 1.4; 3008 3.9; 3219 3.9; 3444 2.6; 3685 2.4; 3943 3.7; 4219 5.4; 4514 5.3; 4830 5.3; 5168 5.4; 5530 4.3; 5917 2.6; 6331 0.8; 6775 0.4; 7249 -0.8; 7756 -2.0; 8299 -3.6; 8880 -4.8; 9502 -5.2; 10167 -5.1; 10879 -4.4; 11640 -1.5; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/headphoncecom/onear/Sennheiser%20HD280%20Pro/Sennheiser%20HD280%20Pro.png)

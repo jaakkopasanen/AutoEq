@@ -1,13 +1,8 @@
 # Meze 99 Classic with New Pads
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-59**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -5.9dB
 GraphicEQ: 10 -84; 20 4.5; 22 3.5; 23 3.0; 25 2.1; 26 1.7; 28 1.0; 30 0.3; 32 -0.4; 35 -1.2; 37 -1.6; 40 -2.1; 42 -2.4; 45 -2.7; 49 -3.0; 52 -3.2; 56 -3.4; 59 -3.5; 64 -3.7; 68 -3.8; 73 -3.9; 78 -3.9; 83 -3.8; 89 -3.7; 95 -3.6; 102 -3.6; 109 -3.3; 117 -3.7; 125 -4.5; 134 -5.1; 143 -5.5; 153 -5.9; 164 -5.2; 175 -4.9; 188 -5.4; 201 -5.4; 215 -5.4; 230 -5.2; 246 -5.0; 263 -4.8; 282 -4.2; 301 -4.1; 323 -4.0; 345 -3.9; 369 -3.8; 395 -4.1; 423 -4.2; 452 -4.5; 484 -4.8; 518 -4.8; 554 -4.3; 593 -3.7; 635 -3.4; 679 -3.1; 726 -2.6; 777 -2.0; 832 -1.6; 890 -1.1; 952 -0.4; 1019 0.3; 1090 -0.1; 1167 -0.3; 1248 -0.4; 1336 -0.9; 1429 -1.4; 1529 -2.4; 1636 -3.6; 1751 -4.2; 1873 -4.2; 2004 -3.7; 2145 -3.2; 2295 -2.8; 2455 -2.2; 2627 -1.5; 2811 -0.8; 3008 -0.0; 3219 0.7; 3444 1.8; 3685 3.4; 3943 5.9; 4219 5.2; 4514 4.1; 4830 4.2; 5168 5.2; 5530 4.5; 5917 2.8; 6331 1.9; 6775 1.3; 7249 -0.1; 7756 -0.9; 8299 -1.3; 8880 -1.8; 9502 -2.7; 10167 -3.6; 10879 -3.9; 11640 -3.4; 12455 -1.5; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 4.5; 22 3.5; 23 3.0; 25 2.1; 26 1.7; 28 1.0; 30 0.3; 32 -0.4; 35 -1.2; 37 -1.6; 40 -2.1; 42 -2.4; 45 -2.7; 49 -3.0; 52 -3.2; 56 -3.4; 59 -3.5; 64 -3.7; 68 -3.8; 73 -3.9; 78 -3.9; 83 -3.8; 89 -3.7; 95 -3.6; 102 -3.6; 109 -3.3; 117 -3.7; 125 -4.5; 134 -5.1; 143 -5.5; 153 -5.9; 164 -5.2; 175 -4.9; 188 -5.4; 201 -5.4; 215 -5.4; 230 -5.2; 246 -5.0; 263 -4.8; 282 -4.2; 301 -4.1; 323 -4.0; 345 -3.9; 369 -3.8; 395 -4.1; 423 -4.2; 452 -4.5; 484 -4.8; 518 -4.8; 554 -4.3; 593 -3.7; 635 -3.4; 679 -3.1; 726 -2.6; 777 -2.0; 832 -1.6; 890 -1.1; 952 -0.4; 1019 0.3; 1090 -0.1; 1167 -0.3; 1248 -0.4; 1336 -0.9; 1429 -1.4; 1529 -2.4; 1636 -3.6; 1751 -4.2; 1873 -4.2; 2004 -3.7; 2145 -3.2; 2295 -2.8; 2455 -2.2; 2627 -1.5; 2811 -0.8; 3008 -0.0; 3219 0.7; 3444 1.8; 3685 3.4; 3943 5.9; 4219 5.2; 4514 4.1; 4830 4.2; 5168 5.2; 5530 4.5; 5917 2.8; 6331 1.9; 6775 1.3; 7249 -0.1; 7756 -0.9; 8299 -1.3; 8880 -1.8; 9502 -2.7; 10167 -3.6; 10879 -3.9; 11640 -3.4; 12455 -1.5; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-5.9dB*l, R=-5.9dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.9dB` and instead set Global volume in the UI for both channels to **-59**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Meze%2099%20Classic%20with%20New%20Pads/Meze%2099%20Classic%20with%20New%20Pads.png)

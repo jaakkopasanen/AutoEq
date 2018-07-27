@@ -1,13 +1,8 @@
 # Meelectronics Air-Fi Matrix2 AF62 Bluetooth
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.7; 26 5.4; 28 4.6; 30 3.7; 32 2.8; 35 1.6; 37 0.9; 40 0.1; 42 -0.4; 45 -0.9; 49 -1.5; 52 -1.8; 56 -2.1; 59 -2.2; 64 -2.3; 68 -2.2; 73 -2.1; 78 -2.0; 83 -1.9; 89 -1.9; 95 -2.0; 102 -2.0; 109 -2.0; 117 -2.1; 125 -2.4; 134 -2.8; 143 -2.8; 153 -3.1; 164 -3.0; 175 -2.8; 188 -2.8; 201 -3.0; 215 -3.0; 230 -2.7; 246 -2.5; 263 -3.2; 282 -3.2; 301 -3.3; 323 -3.4; 345 -3.5; 369 -3.4; 395 -3.5; 423 -3.4; 452 -3.5; 484 -3.9; 518 -3.9; 554 -3.6; 593 -3.2; 635 -2.9; 679 -2.7; 726 -2.5; 777 -1.7; 832 -0.6; 890 -0.4; 952 -0.1; 1019 -0.1; 1090 -0.3; 1167 -0.3; 1248 -0.2; 1336 -0.4; 1429 -0.2; 1529 -0.0; 1636 0.4; 1751 0.9; 1873 1.7; 2004 2.0; 2145 2.4; 2295 2.7; 2455 2.9; 2627 3.4; 2811 3.3; 3008 3.1; 3219 2.6; 3444 2.7; 3685 4.5; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 5.8; 5530 2.8; 5917 2.7; 6331 3.8; 6775 3.8; 7249 1.3; 7756 0.1; 8299 -0.6; 8880 -0.4; 9502 -0.3; 10167 -0.1; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.7; 26 5.4; 28 4.6; 30 3.7; 32 2.8; 35 1.6; 37 0.9; 40 0.1; 42 -0.4; 45 -0.9; 49 -1.5; 52 -1.8; 56 -2.1; 59 -2.2; 64 -2.3; 68 -2.2; 73 -2.1; 78 -2.0; 83 -1.9; 89 -1.9; 95 -2.0; 102 -2.0; 109 -2.0; 117 -2.1; 125 -2.4; 134 -2.8; 143 -2.8; 153 -3.1; 164 -3.0; 175 -2.8; 188 -2.8; 201 -3.0; 215 -3.0; 230 -2.7; 246 -2.5; 263 -3.2; 282 -3.2; 301 -3.3; 323 -3.4; 345 -3.5; 369 -3.4; 395 -3.5; 423 -3.4; 452 -3.5; 484 -3.9; 518 -3.9; 554 -3.6; 593 -3.2; 635 -2.9; 679 -2.7; 726 -2.5; 777 -1.7; 832 -0.6; 890 -0.4; 952 -0.1; 1019 -0.1; 1090 -0.3; 1167 -0.3; 1248 -0.2; 1336 -0.4; 1429 -0.2; 1529 -0.0; 1636 0.4; 1751 0.9; 1873 1.7; 2004 2.0; 2145 2.4; 2295 2.7; 2455 2.9; 2627 3.4; 2811 3.3; 3008 3.1; 3219 2.6; 3444 2.7; 3685 4.5; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 5.8; 5530 2.8; 5917 2.7; 6331 3.8; 6775 3.8; 7249 1.3; 7756 0.1; 8299 -0.6; 8880 -0.4; 9502 -0.3; 10167 -0.1; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Meelectronics%20Air-Fi%20Matrix2%20AF62%20Bluetooth/Meelectronics%20Air-Fi%20Matrix2%20AF62%20Bluetooth.png)

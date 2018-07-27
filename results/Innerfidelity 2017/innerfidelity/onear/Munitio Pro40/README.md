@@ -1,13 +1,8 @@
 # Munitio Pro40
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 0.9; 22 -0.0; 23 -0.5; 25 -1.3; 26 -1.6; 28 -2.3; 30 -2.9; 32 -3.5; 35 -4.1; 37 -4.4; 40 -4.8; 42 -5.0; 45 -5.3; 49 -5.4; 52 -5.5; 56 -5.5; 59 -5.5; 64 -5.4; 68 -5.3; 73 -5.3; 78 -5.4; 83 -5.6; 89 -6.0; 95 -6.3; 102 -6.8; 109 -7.0; 117 -7.3; 125 -7.7; 134 -8.0; 143 -8.3; 153 -8.5; 164 -8.2; 175 -8.3; 188 -8.5; 201 -8.6; 215 -8.6; 230 -8.6; 246 -8.6; 263 -8.5; 282 -8.2; 301 -7.8; 323 -7.0; 345 -6.2; 369 -5.8; 395 -5.2; 423 -4.9; 452 -4.2; 484 -3.3; 518 -1.9; 554 0.2; 593 2.5; 635 4.2; 679 5.0; 726 4.7; 777 3.9; 832 2.5; 890 1.2; 952 0.5; 1019 0.0; 1090 0.1; 1167 0.6; 1248 1.2; 1336 1.6; 1429 1.9; 1529 2.5; 1636 3.0; 1751 3.6; 1873 4.0; 2004 4.5; 2145 5.1; 2295 5.6; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.8; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 0.9; 22 -0.0; 23 -0.5; 25 -1.3; 26 -1.6; 28 -2.3; 30 -2.9; 32 -3.5; 35 -4.1; 37 -4.4; 40 -4.8; 42 -5.0; 45 -5.3; 49 -5.4; 52 -5.5; 56 -5.5; 59 -5.5; 64 -5.4; 68 -5.3; 73 -5.3; 78 -5.4; 83 -5.6; 89 -6.0; 95 -6.3; 102 -6.8; 109 -7.0; 117 -7.3; 125 -7.7; 134 -8.0; 143 -8.3; 153 -8.5; 164 -8.2; 175 -8.3; 188 -8.5; 201 -8.6; 215 -8.6; 230 -8.6; 246 -8.6; 263 -8.5; 282 -8.2; 301 -7.8; 323 -7.0; 345 -6.2; 369 -5.8; 395 -5.2; 423 -4.9; 452 -4.2; 484 -3.3; 518 -1.9; 554 0.2; 593 2.5; 635 4.2; 679 5.0; 726 4.7; 777 3.9; 832 2.5; 890 1.2; 952 0.5; 1019 0.0; 1090 0.1; 1167 0.6; 1248 1.2; 1336 1.6; 1429 1.9; 1529 2.5; 1636 3.0; 1751 3.6; 1873 4.0; 2004 4.5; 2145 5.1; 2295 5.6; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.8; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Munitio%20Pro40/Munitio%20Pro40.png)

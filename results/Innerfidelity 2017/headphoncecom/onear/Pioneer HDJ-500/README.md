@@ -1,13 +1,8 @@
 # Pioneer HDJ-500
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.2; 30 4.2; 32 3.1; 35 1.5; 37 0.6; 40 -0.5; 42 -1.1; 45 -1.9; 49 -2.6; 52 -2.9; 56 -3.2; 59 -3.3; 64 -3.3; 68 -3.2; 73 -3.0; 78 -2.8; 83 -2.9; 89 -3.1; 95 -3.3; 102 -3.6; 109 -3.7; 117 -4.0; 125 -4.6; 134 -5.0; 143 -5.3; 153 -5.5; 164 -5.6; 175 -5.7; 188 -5.9; 201 -6.0; 215 -6.0; 230 -6.2; 246 -6.1; 263 -5.9; 282 -5.9; 301 -6.2; 323 -6.2; 345 -6.5; 369 -7.0; 395 -7.3; 423 -6.8; 452 -6.5; 484 -6.5; 518 -5.8; 554 -4.6; 593 -3.4; 635 -2.6; 679 -2.3; 726 -2.0; 777 -1.5; 832 -1.1; 890 -0.6; 952 -0.4; 1019 0.1; 1090 0.6; 1167 1.1; 1248 1.5; 1336 1.8; 1429 2.4; 1529 3.1; 1636 3.6; 1751 3.9; 1873 4.7; 2004 5.6; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 4.2; 5168 0.7; 5530 -2.2; 5917 1.9; 6331 5.5; 6775 0.8; 7249 0.2; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 -0.4; 18692 -0.1; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.2; 30 4.2; 32 3.1; 35 1.5; 37 0.6; 40 -0.5; 42 -1.1; 45 -1.9; 49 -2.6; 52 -2.9; 56 -3.2; 59 -3.3; 64 -3.3; 68 -3.2; 73 -3.0; 78 -2.8; 83 -2.9; 89 -3.1; 95 -3.3; 102 -3.6; 109 -3.7; 117 -4.0; 125 -4.6; 134 -5.0; 143 -5.3; 153 -5.5; 164 -5.6; 175 -5.7; 188 -5.9; 201 -6.0; 215 -6.0; 230 -6.2; 246 -6.1; 263 -5.9; 282 -5.9; 301 -6.2; 323 -6.2; 345 -6.5; 369 -7.0; 395 -7.3; 423 -6.8; 452 -6.5; 484 -6.5; 518 -5.8; 554 -4.6; 593 -3.4; 635 -2.6; 679 -2.3; 726 -2.0; 777 -1.5; 832 -1.1; 890 -0.6; 952 -0.4; 1019 0.1; 1090 0.6; 1167 1.1; 1248 1.5; 1336 1.8; 1429 2.4; 1529 3.1; 1636 3.6; 1751 3.9; 1873 4.7; 2004 5.6; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 4.2; 5168 0.7; 5530 -2.2; 5917 1.9; 6331 5.5; 6775 0.8; 7249 0.2; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 -0.4; 18692 -0.1; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/headphoncecom/onear/Pioneer%20HDJ-500/Pioneer%20HDJ-500.png)

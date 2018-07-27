@@ -1,13 +1,8 @@
 # Mr Speakers Mad Dog 2014
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 3.2; 22 2.8; 23 2.6; 25 2.2; 26 2.1; 28 1.9; 30 1.7; 32 1.5; 35 1.2; 37 1.1; 40 0.9; 42 0.9; 45 0.9; 49 0.8; 52 0.7; 56 0.5; 59 0.5; 64 0.5; 68 0.5; 73 0.4; 78 0.4; 83 0.2; 89 -0.2; 95 -0.8; 102 -1.4; 109 -2.2; 117 -3.1; 125 -3.9; 134 -4.4; 143 -4.8; 153 -4.8; 164 -4.3; 175 -4.6; 188 -5.0; 201 -5.2; 215 -5.1; 230 -5.0; 246 -4.8; 263 -4.7; 282 -4.4; 301 -4.3; 323 -4.3; 345 -4.1; 369 -3.8; 395 -2.9; 423 -1.6; 452 -2.0; 484 -1.4; 518 0.9; 554 1.0; 593 0.9; 635 -0.2; 679 -0.1; 726 0.1; 777 0.9; 832 0.8; 890 0.0; 952 0.3; 1019 0.2; 1090 0.8; 1167 0.4; 1248 1.2; 1336 1.8; 1429 2.0; 1529 3.3; 1636 4.3; 1751 4.8; 1873 5.1; 2004 5.8; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.5; 6331 3.3; 6775 2.5; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 3.2; 22 2.8; 23 2.6; 25 2.2; 26 2.1; 28 1.9; 30 1.7; 32 1.5; 35 1.2; 37 1.1; 40 0.9; 42 0.9; 45 0.9; 49 0.8; 52 0.7; 56 0.5; 59 0.5; 64 0.5; 68 0.5; 73 0.4; 78 0.4; 83 0.2; 89 -0.2; 95 -0.8; 102 -1.4; 109 -2.2; 117 -3.1; 125 -3.9; 134 -4.4; 143 -4.8; 153 -4.8; 164 -4.3; 175 -4.6; 188 -5.0; 201 -5.2; 215 -5.1; 230 -5.0; 246 -4.8; 263 -4.7; 282 -4.4; 301 -4.3; 323 -4.3; 345 -4.1; 369 -3.8; 395 -2.9; 423 -1.6; 452 -2.0; 484 -1.4; 518 0.9; 554 1.0; 593 0.9; 635 -0.2; 679 -0.1; 726 0.1; 777 0.9; 832 0.8; 890 0.0; 952 0.3; 1019 0.2; 1090 0.8; 1167 0.4; 1248 1.2; 1336 1.8; 1429 2.0; 1529 3.3; 1636 4.3; 1751 4.8; 1873 5.1; 2004 5.8; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.5; 6331 3.3; 6775 2.5; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Mr%20Speakers%20Mad%20Dog%202014/Mr%20Speakers%20Mad%20Dog%202014.png)

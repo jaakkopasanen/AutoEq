@@ -1,13 +1,8 @@
 # A Audio Elite Passive
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-59**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -5.9dB
 GraphicEQ: 10 -84; 20 -2.6; 22 -2.7; 23 -2.8; 25 -2.9; 26 -2.9; 28 -3.0; 30 -3.0; 32 -3.0; 35 -3.0; 37 -3.0; 40 -2.9; 42 -2.9; 45 -2.9; 49 -2.8; 52 -2.7; 56 -2.6; 59 -2.6; 64 -2.4; 68 -2.2; 73 -2.0; 78 -1.9; 83 -2.0; 89 -2.3; 95 -2.5; 102 -2.7; 109 -3.0; 117 -3.1; 125 -3.8; 134 -4.4; 143 -4.6; 153 -4.3; 164 -3.2; 175 -3.5; 188 -3.4; 201 -2.7; 215 -1.9; 230 -1.2; 246 -0.7; 263 -0.2; 282 -0.1; 301 0.2; 323 0.3; 345 0.3; 369 0.2; 395 -0.2; 423 -0.5; 452 -0.8; 484 -1.4; 518 -1.6; 554 -1.2; 593 -0.4; 635 0.1; 679 0.1; 726 -0.4; 777 -0.8; 832 -0.8; 890 -0.6; 952 -0.2; 1019 0.1; 1090 0.2; 1167 0.4; 1248 0.7; 1336 1.0; 1429 1.3; 1529 1.3; 1636 1.4; 1751 1.5; 1873 1.8; 2004 2.4; 2145 3.1; 2295 3.7; 2455 4.3; 2627 4.8; 2811 4.9; 3008 4.9; 3219 4.4; 3444 4.5; 3685 4.1; 3943 3.7; 4219 3.2; 4514 3.0; 4830 3.5; 5168 4.7; 5530 5.3; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -2.6; 22 -2.7; 23 -2.8; 25 -2.9; 26 -2.9; 28 -3.0; 30 -3.0; 32 -3.0; 35 -3.0; 37 -3.0; 40 -2.9; 42 -2.9; 45 -2.9; 49 -2.8; 52 -2.7; 56 -2.6; 59 -2.6; 64 -2.4; 68 -2.2; 73 -2.0; 78 -1.9; 83 -2.0; 89 -2.3; 95 -2.5; 102 -2.7; 109 -3.0; 117 -3.1; 125 -3.8; 134 -4.4; 143 -4.6; 153 -4.3; 164 -3.2; 175 -3.5; 188 -3.4; 201 -2.7; 215 -1.9; 230 -1.2; 246 -0.7; 263 -0.2; 282 -0.1; 301 0.2; 323 0.3; 345 0.3; 369 0.2; 395 -0.2; 423 -0.5; 452 -0.8; 484 -1.4; 518 -1.6; 554 -1.2; 593 -0.4; 635 0.1; 679 0.1; 726 -0.4; 777 -0.8; 832 -0.8; 890 -0.6; 952 -0.2; 1019 0.1; 1090 0.2; 1167 0.4; 1248 0.7; 1336 1.0; 1429 1.3; 1529 1.3; 1636 1.4; 1751 1.5; 1873 1.8; 2004 2.4; 2145 3.1; 2295 3.7; 2455 4.3; 2627 4.8; 2811 4.9; 3008 4.9; 3219 4.4; 3444 4.5; 3685 4.1; 3943 3.7; 4219 3.2; 4514 3.0; 4830 3.5; 5168 4.7; 5530 5.3; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-5.9dB*l, R=-5.9dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.9dB` and instead set Global volume in the UI for both channels to **-59**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/A%20Audio%20Elite%20Passive/A%20Audio%20Elite%20Passive.png)

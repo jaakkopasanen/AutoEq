@@ -1,13 +1,8 @@
 # AKG Q460 Quincy Jones
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 2.2; 22 1.3; 23 0.9; 25 0.3; 26 -0.0; 28 -0.5; 30 -0.8; 32 -1.1; 35 -1.4; 37 -1.5; 40 -1.6; 42 -1.7; 45 -1.8; 49 -1.9; 52 -1.9; 56 -1.9; 59 -1.9; 64 -2.0; 68 -2.0; 73 -1.9; 78 -2.1; 83 -2.2; 89 -2.2; 95 -2.4; 102 -2.5; 109 -2.7; 117 -3.3; 125 -3.9; 134 -4.4; 143 -4.8; 153 -5.0; 164 -5.1; 175 -5.3; 188 -5.4; 201 -5.3; 215 -5.3; 230 -5.0; 246 -4.9; 263 -4.9; 282 -4.7; 301 -4.5; 323 -4.2; 345 -3.6; 369 -3.0; 395 -2.3; 423 -1.8; 452 -1.6; 484 -1.4; 518 -0.7; 554 0.6; 593 1.9; 635 2.8; 679 3.2; 726 3.4; 777 3.1; 832 2.2; 890 1.1; 952 0.2; 1019 0.0; 1090 0.2; 1167 -0.5; 1248 -0.4; 1336 0.0; 1429 0.8; 1529 1.7; 1636 2.7; 1751 3.5; 1873 4.5; 2004 5.4; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 4.7; 3444 2.6; 3685 1.6; 3943 3.0; 4219 4.9; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 2.2; 22 1.3; 23 0.9; 25 0.3; 26 -0.0; 28 -0.5; 30 -0.8; 32 -1.1; 35 -1.4; 37 -1.5; 40 -1.6; 42 -1.7; 45 -1.8; 49 -1.9; 52 -1.9; 56 -1.9; 59 -1.9; 64 -2.0; 68 -2.0; 73 -1.9; 78 -2.1; 83 -2.2; 89 -2.2; 95 -2.4; 102 -2.5; 109 -2.7; 117 -3.3; 125 -3.9; 134 -4.4; 143 -4.8; 153 -5.0; 164 -5.1; 175 -5.3; 188 -5.4; 201 -5.3; 215 -5.3; 230 -5.0; 246 -4.9; 263 -4.9; 282 -4.7; 301 -4.5; 323 -4.2; 345 -3.6; 369 -3.0; 395 -2.3; 423 -1.8; 452 -1.6; 484 -1.4; 518 -0.7; 554 0.6; 593 1.9; 635 2.8; 679 3.2; 726 3.4; 777 3.1; 832 2.2; 890 1.1; 952 0.2; 1019 0.0; 1090 0.2; 1167 -0.5; 1248 -0.4; 1336 0.0; 1429 0.8; 1529 1.7; 1636 2.7; 1751 3.5; 1873 4.5; 2004 5.4; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 4.7; 3444 2.6; 3685 1.6; 3943 3.0; 4219 4.9; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/headphoncecom/onear/AKG%20Q460%20Quincy%20Jones/AKG%20Q460%20Quincy%20Jones.png)

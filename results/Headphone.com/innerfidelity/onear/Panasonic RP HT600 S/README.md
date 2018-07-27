@@ -1,13 +1,8 @@
 # Panasonic RP HT600 S
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 2.2; 22 1.0; 23 0.4; 25 -0.6; 26 -1.1; 28 -1.9; 30 -2.5; 32 -3.1; 35 -3.7; 37 -4.0; 40 -4.3; 42 -4.4; 45 -4.5; 49 -4.5; 52 -4.5; 56 -4.4; 59 -4.3; 64 -4.2; 68 -4.1; 73 -4.1; 78 -4.1; 83 -4.1; 89 -4.3; 95 -4.5; 102 -4.8; 109 -4.9; 117 -5.1; 125 -5.5; 134 -5.9; 143 -6.2; 153 -6.4; 164 -6.5; 175 -6.2; 188 -6.4; 201 -6.5; 215 -6.5; 230 -6.5; 246 -6.6; 263 -6.6; 282 -6.7; 301 -6.7; 323 -6.6; 345 -6.7; 369 -6.7; 395 -6.6; 423 -6.4; 452 -6.3; 484 -6.1; 518 -6.0; 554 -5.8; 593 -5.4; 635 -4.9; 679 -4.4; 726 -4.0; 777 -3.6; 832 -2.8; 890 -1.5; 952 -0.4; 1019 0.1; 1090 0.2; 1167 0.2; 1248 -0.5; 1336 -1.6; 1429 -2.4; 1529 -3.3; 1636 -3.5; 1751 -3.2; 1873 -2.7; 2004 -0.8; 2145 0.6; 2295 1.7; 2455 2.8; 2627 4.2; 2811 5.3; 3008 5.8; 3219 6.0; 3444 5.9; 3685 5.9; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -0.9; 8880 -4.1; 9502 -3.6; 10167 -0.2; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 2.2; 22 1.0; 23 0.4; 25 -0.6; 26 -1.1; 28 -1.9; 30 -2.5; 32 -3.1; 35 -3.7; 37 -4.0; 40 -4.3; 42 -4.4; 45 -4.5; 49 -4.5; 52 -4.5; 56 -4.4; 59 -4.3; 64 -4.2; 68 -4.1; 73 -4.1; 78 -4.1; 83 -4.1; 89 -4.3; 95 -4.5; 102 -4.8; 109 -4.9; 117 -5.1; 125 -5.5; 134 -5.9; 143 -6.2; 153 -6.4; 164 -6.5; 175 -6.2; 188 -6.4; 201 -6.5; 215 -6.5; 230 -6.5; 246 -6.6; 263 -6.6; 282 -6.7; 301 -6.7; 323 -6.6; 345 -6.7; 369 -6.7; 395 -6.6; 423 -6.4; 452 -6.3; 484 -6.1; 518 -6.0; 554 -5.8; 593 -5.4; 635 -4.9; 679 -4.4; 726 -4.0; 777 -3.6; 832 -2.8; 890 -1.5; 952 -0.4; 1019 0.1; 1090 0.2; 1167 0.2; 1248 -0.5; 1336 -1.6; 1429 -2.4; 1529 -3.3; 1636 -3.5; 1751 -3.2; 1873 -2.7; 2004 -0.8; 2145 0.6; 2295 1.7; 2455 2.8; 2627 4.2; 2811 5.3; 3008 5.8; 3219 6.0; 3444 5.9; 3685 5.9; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -0.9; 8880 -4.1; 9502 -3.6; 10167 -0.2; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Panasonic%20RP%20HT600%20S/Panasonic%20RP%20HT600%20S.png)

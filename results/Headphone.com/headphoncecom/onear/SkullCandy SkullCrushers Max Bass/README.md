@@ -1,13 +1,8 @@
 # SkullCandy SkullCrushers Max Bass
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 5.7; 25 4.0; 26 3.1; 28 1.9; 30 2.1; 32 4.0; 35 5.7; 37 6.0; 40 5.8; 42 4.7; 45 2.7; 49 1.0; 52 0.5; 56 0.5; 59 0.7; 64 -0.3; 68 -3.4; 73 -9.0; 78 -13.4; 83 -17.0; 89 -17.5; 95 -12.7; 102 -8.1; 109 -5.2; 117 -2.4; 125 0.4; 134 2.0; 143 4.1; 153 6.0; 164 5.1; 175 5.1; 188 6.0; 201 6.0; 215 5.8; 230 4.8; 246 2.8; 263 1.5; 282 1.3; 301 1.4; 323 1.6; 345 1.1; 369 0.8; 395 1.0; 423 0.6; 452 0.3; 484 -0.2; 518 -0.4; 554 -0.1; 593 0.1; 635 0.1; 679 0.2; 726 0.4; 777 0.4; 832 0.3; 890 0.2; 952 0.1; 1019 -0.1; 1090 -0.2; 1167 -0.2; 1248 -0.1; 1336 0.3; 1429 0.8; 1529 1.4; 1636 1.8; 1751 1.2; 1873 -0.8; 2004 -1.8; 2145 -0.6; 2295 2.1; 2455 5.1; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 3.6; 3943 3.2; 4219 5.5; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.2; 9502 -0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 5.7; 25 4.0; 26 3.1; 28 1.9; 30 2.1; 32 4.0; 35 5.7; 37 6.0; 40 5.8; 42 4.7; 45 2.7; 49 1.0; 52 0.5; 56 0.5; 59 0.7; 64 -0.3; 68 -3.4; 73 -9.0; 78 -13.4; 83 -17.0; 89 -17.5; 95 -12.7; 102 -8.1; 109 -5.2; 117 -2.4; 125 0.4; 134 2.0; 143 4.1; 153 6.0; 164 5.1; 175 5.1; 188 6.0; 201 6.0; 215 5.8; 230 4.8; 246 2.8; 263 1.5; 282 1.3; 301 1.4; 323 1.6; 345 1.1; 369 0.8; 395 1.0; 423 0.6; 452 0.3; 484 -0.2; 518 -0.4; 554 -0.1; 593 0.1; 635 0.1; 679 0.2; 726 0.4; 777 0.4; 832 0.3; 890 0.2; 952 0.1; 1019 -0.1; 1090 -0.2; 1167 -0.2; 1248 -0.1; 1336 0.3; 1429 0.8; 1529 1.4; 1636 1.8; 1751 1.2; 1873 -0.8; 2004 -1.8; 2145 -0.6; 2295 2.1; 2455 5.1; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 3.6; 3943 3.2; 4219 5.5; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.2; 9502 -0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/headphoncecom/onear/SkullCandy%20SkullCrushers%20Max%20Bass/SkullCandy%20SkullCrushers%20Max%20Bass.png)

@@ -1,13 +1,8 @@
 # Urbanears Plattan
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.9; 37 5.8; 40 5.6; 42 5.5; 45 5.3; 49 5.2; 52 5.2; 56 5.2; 59 5.2; 64 5.2; 68 5.1; 73 5.0; 78 4.9; 83 4.8; 89 4.7; 95 4.5; 102 4.2; 109 3.8; 117 3.5; 125 3.5; 134 3.2; 143 3.0; 153 2.6; 164 2.3; 175 2.1; 188 2.0; 201 2.0; 215 2.2; 230 2.3; 246 2.3; 263 2.4; 282 2.6; 301 2.9; 323 3.4; 345 3.8; 369 4.1; 395 4.2; 423 3.7; 452 3.1; 484 2.7; 518 2.3; 554 2.1; 593 1.8; 635 1.5; 679 1.2; 726 0.8; 777 0.4; 832 -0.0; 890 -0.3; 952 -0.3; 1019 0.2; 1090 1.2; 1167 3.0; 1248 3.9; 1336 4.8; 1429 6.0; 1529 6.0; 1636 6.0; 1751 6.0; 1873 6.0; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.9; 37 5.8; 40 5.6; 42 5.5; 45 5.3; 49 5.2; 52 5.2; 56 5.2; 59 5.2; 64 5.2; 68 5.1; 73 5.0; 78 4.9; 83 4.8; 89 4.7; 95 4.5; 102 4.2; 109 3.8; 117 3.5; 125 3.5; 134 3.2; 143 3.0; 153 2.6; 164 2.3; 175 2.1; 188 2.0; 201 2.0; 215 2.2; 230 2.3; 246 2.3; 263 2.4; 282 2.6; 301 2.9; 323 3.4; 345 3.8; 369 4.1; 395 4.2; 423 3.7; 452 3.1; 484 2.7; 518 2.3; 554 2.1; 593 1.8; 635 1.5; 679 1.2; 726 0.8; 777 0.4; 832 -0.0; 890 -0.3; 952 -0.3; 1019 0.2; 1090 1.2; 1167 3.0; 1248 3.9; 1336 4.8; 1429 6.0; 1529 6.0; 1636 6.0; 1751 6.0; 1873 6.0; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/headphoncecom/onear/Urbanears%20Plattan/Urbanears%20Plattan.png)

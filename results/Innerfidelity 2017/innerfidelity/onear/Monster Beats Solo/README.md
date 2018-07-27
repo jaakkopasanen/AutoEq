@@ -1,13 +1,8 @@
 # Monster Beats Solo
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -5.6; 22 -5.8; 23 -5.9; 25 -6.1; 26 -6.2; 28 -6.3; 30 -6.4; 32 -6.5; 35 -6.5; 37 -6.6; 40 -6.7; 42 -6.7; 45 -6.7; 49 -6.7; 52 -6.8; 56 -6.9; 59 -6.9; 64 -7.0; 68 -7.0; 73 -7.0; 78 -6.9; 83 -6.8; 89 -6.9; 95 -7.6; 102 -8.5; 109 -8.9; 117 -8.9; 125 -8.8; 134 -8.9; 143 -9.6; 153 -10.4; 164 -9.9; 175 -10.3; 188 -10.4; 201 -10.1; 215 -9.6; 230 -9.0; 246 -8.2; 263 -7.4; 282 -6.3; 301 -5.1; 323 -3.9; 345 -2.8; 369 -1.8; 395 -0.8; 423 0.4; 452 1.2; 484 1.7; 518 2.1; 554 2.4; 593 2.1; 635 1.3; 679 0.5; 726 0.0; 777 -0.2; 832 -0.3; 890 -0.4; 952 -0.2; 1019 0.1; 1090 0.6; 1167 1.0; 1248 1.5; 1336 1.9; 1429 2.1; 1529 2.4; 1636 2.6; 1751 2.5; 1873 2.4; 2004 2.7; 2145 2.9; 2295 2.9; 2455 3.3; 2627 3.7; 2811 4.3; 3008 4.9; 3219 4.8; 3444 5.1; 3685 5.7; 3943 6.0; 4219 6.0; 4514 5.8; 4830 5.6; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -5.6; 22 -5.8; 23 -5.9; 25 -6.1; 26 -6.2; 28 -6.3; 30 -6.4; 32 -6.5; 35 -6.5; 37 -6.6; 40 -6.7; 42 -6.7; 45 -6.7; 49 -6.7; 52 -6.8; 56 -6.9; 59 -6.9; 64 -7.0; 68 -7.0; 73 -7.0; 78 -6.9; 83 -6.8; 89 -6.9; 95 -7.6; 102 -8.5; 109 -8.9; 117 -8.9; 125 -8.8; 134 -8.9; 143 -9.6; 153 -10.4; 164 -9.9; 175 -10.3; 188 -10.4; 201 -10.1; 215 -9.6; 230 -9.0; 246 -8.2; 263 -7.4; 282 -6.3; 301 -5.1; 323 -3.9; 345 -2.8; 369 -1.8; 395 -0.8; 423 0.4; 452 1.2; 484 1.7; 518 2.1; 554 2.4; 593 2.1; 635 1.3; 679 0.5; 726 0.0; 777 -0.2; 832 -0.3; 890 -0.4; 952 -0.2; 1019 0.1; 1090 0.6; 1167 1.0; 1248 1.5; 1336 1.9; 1429 2.1; 1529 2.4; 1636 2.6; 1751 2.5; 1873 2.4; 2004 2.7; 2145 2.9; 2295 2.9; 2455 3.3; 2627 3.7; 2811 4.3; 3008 4.9; 3219 4.8; 3444 5.1; 3685 5.7; 3943 6.0; 4219 6.0; 4514 5.8; 4830 5.6; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Monster%20Beats%20Solo/Monster%20Beats%20Solo.png)

@@ -1,13 +1,8 @@
 # Bowers Wilkins P5
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-58**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -5.8dB
 GraphicEQ: 10 -84; 20 3.8; 22 3.5; 23 3.4; 25 3.1; 26 3.0; 28 2.7; 30 2.5; 32 2.3; 35 2.0; 37 1.9; 40 1.6; 42 1.5; 45 1.2; 49 1.0; 52 0.8; 56 0.5; 59 0.3; 64 -0.0; 68 -0.3; 73 -0.7; 78 -1.1; 83 -1.5; 89 -2.1; 95 -2.6; 102 -3.2; 109 -3.7; 117 -4.2; 125 -5.0; 134 -5.6; 143 -5.9; 153 -6.3; 164 -6.5; 175 -6.4; 188 -6.7; 201 -6.8; 215 -6.8; 230 -6.6; 246 -6.4; 263 -6.0; 282 -5.4; 301 -4.6; 323 -4.0; 345 -3.3; 369 -2.8; 395 -2.3; 423 -1.7; 452 -1.5; 484 -1.6; 518 -1.6; 554 -1.1; 593 -0.7; 635 -0.6; 679 -0.7; 726 -0.7; 777 -0.5; 832 -0.4; 890 -0.3; 952 -0.1; 1019 -0.0; 1090 -0.1; 1167 -0.2; 1248 -0.3; 1336 -0.5; 1429 -0.7; 1529 -1.0; 1636 -1.3; 1751 -1.7; 1873 -2.2; 2004 -2.3; 2145 -2.7; 2295 -3.3; 2455 -2.9; 2627 -2.1; 2811 -1.5; 3008 -1.0; 3219 -0.4; 3444 0.6; 3685 1.5; 3943 3.9; 4219 5.4; 4514 5.8; 4830 5.6; 5168 5.0; 5530 3.6; 5917 3.4; 6331 3.4; 6775 3.5; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.1
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 3.8; 22 3.5; 23 3.4; 25 3.1; 26 3.0; 28 2.7; 30 2.5; 32 2.3; 35 2.0; 37 1.9; 40 1.6; 42 1.5; 45 1.2; 49 1.0; 52 0.8; 56 0.5; 59 0.3; 64 -0.0; 68 -0.3; 73 -0.7; 78 -1.1; 83 -1.5; 89 -2.1; 95 -2.6; 102 -3.2; 109 -3.7; 117 -4.2; 125 -5.0; 134 -5.6; 143 -5.9; 153 -6.3; 164 -6.5; 175 -6.4; 188 -6.7; 201 -6.8; 215 -6.8; 230 -6.6; 246 -6.4; 263 -6.0; 282 -5.4; 301 -4.6; 323 -4.0; 345 -3.3; 369 -2.8; 395 -2.3; 423 -1.7; 452 -1.5; 484 -1.6; 518 -1.6; 554 -1.1; 593 -0.7; 635 -0.6; 679 -0.7; 726 -0.7; 777 -0.5; 832 -0.4; 890 -0.3; 952 -0.1; 1019 -0.0; 1090 -0.1; 1167 -0.2; 1248 -0.3; 1336 -0.5; 1429 -0.7; 1529 -1.0; 1636 -1.3; 1751 -1.7; 1873 -2.2; 2004 -2.3; 2145 -2.7; 2295 -3.3; 2455 -2.9; 2627 -2.1; 2811 -1.5; 3008 -1.0; 3219 -0.4; 3444 0.6; 3685 1.5; 3943 3.9; 4219 5.4; 4514 5.8; 4830 5.6; 5168 5.0; 5530 3.6; 5917 3.4; 6331 3.4; 6775 3.5; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.1
-Copy: L=-5.8dB*l, R=-5.8dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.8dB` and instead set Global volume in the UI for both channels to **-58**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Bowers%20Wilkins%20P5/Bowers%20Wilkins%20P5.png)

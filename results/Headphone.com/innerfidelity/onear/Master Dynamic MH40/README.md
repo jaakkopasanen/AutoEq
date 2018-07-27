@@ -1,13 +1,8 @@
 # Master Dynamic MH40
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 1.1; 22 0.9; 23 0.8; 25 0.6; 26 0.6; 28 0.5; 30 0.4; 32 0.3; 35 0.1; 37 0.0; 40 -0.0; 42 -0.0; 45 -0.0; 49 -0.0; 52 0.0; 56 0.1; 59 0.2; 64 0.2; 68 0.3; 73 0.3; 78 0.0; 83 -0.4; 89 -1.2; 95 -1.7; 102 -1.8; 109 -1.9; 117 -2.4; 125 -3.0; 134 -3.7; 143 -4.3; 153 -4.0; 164 -2.9; 175 -3.2; 188 -3.6; 201 -3.3; 215 -2.8; 230 -2.2; 246 -1.5; 263 -0.6; 282 -0.1; 301 0.6; 323 1.1; 345 1.7; 369 2.2; 395 2.6; 423 3.0; 452 3.2; 484 3.2; 518 3.0; 554 2.8; 593 2.2; 635 1.7; 679 1.3; 726 0.9; 777 0.6; 832 0.3; 890 0.1; 952 0.1; 1019 0.1; 1090 0.1; 1167 0.2; 1248 0.5; 1336 1.1; 1429 1.6; 1529 1.9; 1636 2.4; 1751 2.5; 1873 2.7; 2004 3.2; 2145 4.8; 2295 5.8; 2455 5.2; 2627 3.4; 2811 2.7; 3008 4.5; 3219 5.9; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 1.1; 22 0.9; 23 0.8; 25 0.6; 26 0.6; 28 0.5; 30 0.4; 32 0.3; 35 0.1; 37 0.0; 40 -0.0; 42 -0.0; 45 -0.0; 49 -0.0; 52 0.0; 56 0.1; 59 0.2; 64 0.2; 68 0.3; 73 0.3; 78 0.0; 83 -0.4; 89 -1.2; 95 -1.7; 102 -1.8; 109 -1.9; 117 -2.4; 125 -3.0; 134 -3.7; 143 -4.3; 153 -4.0; 164 -2.9; 175 -3.2; 188 -3.6; 201 -3.3; 215 -2.8; 230 -2.2; 246 -1.5; 263 -0.6; 282 -0.1; 301 0.6; 323 1.1; 345 1.7; 369 2.2; 395 2.6; 423 3.0; 452 3.2; 484 3.2; 518 3.0; 554 2.8; 593 2.2; 635 1.7; 679 1.3; 726 0.9; 777 0.6; 832 0.3; 890 0.1; 952 0.1; 1019 0.1; 1090 0.1; 1167 0.2; 1248 0.5; 1336 1.1; 1429 1.6; 1529 1.9; 1636 2.4; 1751 2.5; 1873 2.7; 2004 3.2; 2145 4.8; 2295 5.8; 2455 5.2; 2627 3.4; 2811 2.7; 3008 4.5; 3219 5.9; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Master%20Dynamic%20MH40/Master%20Dynamic%20MH40.png)

@@ -1,13 +1,8 @@
 # Grado SR225 Comfy Pad with Hole
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 5.8; 32 5.3; 35 4.4; 37 3.8; 40 3.1; 42 2.6; 45 2.0; 49 1.3; 52 0.9; 56 0.5; 59 0.3; 64 -0.3; 68 -0.6; 73 -1.0; 78 -1.3; 83 -1.6; 89 -1.9; 95 -2.4; 102 -2.8; 109 -3.1; 117 -3.5; 125 -3.7; 134 -3.8; 143 -3.9; 153 -3.9; 164 -3.8; 175 -3.7; 188 -3.5; 201 -3.4; 215 -3.1; 230 -2.9; 246 -2.7; 263 -2.4; 282 -2.1; 301 -2.3; 323 -2.3; 345 -2.1; 369 -1.9; 395 -1.8; 423 -1.5; 452 -1.2; 484 -0.9; 518 -0.6; 554 -0.4; 593 -0.2; 635 0.1; 679 0.2; 726 0.4; 777 0.3; 832 0.3; 890 0.2; 952 0.1; 1019 -0.0; 1090 0.0; 1167 0.0; 1248 0.0; 1336 0.2; 1429 0.2; 1529 -0.0; 1636 -0.2; 1751 -0.8; 1873 -2.6; 2004 -5.4; 2145 -6.5; 2295 -5.5; 2455 -3.1; 2627 -1.0; 2811 0.6; 3008 1.1; 3219 2.1; 3444 1.5; 3685 1.0; 3943 2.6; 4219 5.4; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.5; 7249 0.9; 7756 -0.7; 8299 -1.8; 8880 -2.5; 9502 -1.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 5.8; 32 5.3; 35 4.4; 37 3.8; 40 3.1; 42 2.6; 45 2.0; 49 1.3; 52 0.9; 56 0.5; 59 0.3; 64 -0.3; 68 -0.6; 73 -1.0; 78 -1.3; 83 -1.6; 89 -1.9; 95 -2.4; 102 -2.8; 109 -3.1; 117 -3.5; 125 -3.7; 134 -3.8; 143 -3.9; 153 -3.9; 164 -3.8; 175 -3.7; 188 -3.5; 201 -3.4; 215 -3.1; 230 -2.9; 246 -2.7; 263 -2.4; 282 -2.1; 301 -2.3; 323 -2.3; 345 -2.1; 369 -1.9; 395 -1.8; 423 -1.5; 452 -1.2; 484 -0.9; 518 -0.6; 554 -0.4; 593 -0.2; 635 0.1; 679 0.2; 726 0.4; 777 0.3; 832 0.3; 890 0.2; 952 0.1; 1019 -0.0; 1090 0.0; 1167 0.0; 1248 0.0; 1336 0.2; 1429 0.2; 1529 -0.0; 1636 -0.2; 1751 -0.8; 1873 -2.6; 2004 -5.4; 2145 -6.5; 2295 -5.5; 2455 -3.1; 2627 -1.0; 2811 0.6; 3008 1.1; 3219 2.1; 3444 1.5; 3685 1.0; 3943 2.6; 4219 5.4; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.5; 7249 0.9; 7756 -0.7; 8299 -1.8; 8880 -2.5; 9502 -1.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Grado%20SR225%20Comfy%20Pad%20with%20Hole/Grado%20SR225%20Comfy%20Pad%20with%20Hole.png)

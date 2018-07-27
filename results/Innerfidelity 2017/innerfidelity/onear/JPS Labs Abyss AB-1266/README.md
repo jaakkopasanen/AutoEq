@@ -1,13 +1,8 @@
 # JPS Labs Abyss AB-1266
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 5.9; 23 5.8; 25 5.4; 26 5.2; 28 4.9; 30 4.7; 32 4.7; 35 5.0; 37 5.3; 40 5.3; 42 5.1; 45 4.5; 49 4.3; 52 4.5; 56 5.0; 59 5.2; 64 5.5; 68 5.6; 73 5.7; 78 5.8; 83 5.7; 89 5.6; 95 5.4; 102 5.1; 109 5.0; 117 4.6; 125 4.1; 134 3.9; 143 3.7; 153 3.5; 164 3.4; 175 3.3; 188 3.2; 201 3.0; 215 3.0; 230 2.9; 246 2.7; 263 2.5; 282 2.3; 301 2.0; 323 1.6; 345 1.5; 369 1.6; 395 1.2; 423 0.5; 452 0.8; 484 3.7; 518 3.7; 554 3.8; 593 3.7; 635 2.9; 679 2.1; 726 1.6; 777 1.3; 832 0.5; 890 -0.2; 952 -0.2; 1019 0.4; 1090 1.3; 1167 0.9; 1248 1.7; 1336 2.5; 1429 2.9; 1529 3.6; 1636 4.3; 1751 5.8; 1873 6.0; 2004 6.0; 2145 5.9; 2295 5.7; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 3.9; 6775 1.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.4; 9502 -0.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.4; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 5.9; 23 5.8; 25 5.4; 26 5.2; 28 4.9; 30 4.7; 32 4.7; 35 5.0; 37 5.3; 40 5.3; 42 5.1; 45 4.5; 49 4.3; 52 4.5; 56 5.0; 59 5.2; 64 5.5; 68 5.6; 73 5.7; 78 5.8; 83 5.7; 89 5.6; 95 5.4; 102 5.1; 109 5.0; 117 4.6; 125 4.1; 134 3.9; 143 3.7; 153 3.5; 164 3.4; 175 3.3; 188 3.2; 201 3.0; 215 3.0; 230 2.9; 246 2.7; 263 2.5; 282 2.3; 301 2.0; 323 1.6; 345 1.5; 369 1.6; 395 1.2; 423 0.5; 452 0.8; 484 3.7; 518 3.7; 554 3.8; 593 3.7; 635 2.9; 679 2.1; 726 1.6; 777 1.3; 832 0.5; 890 -0.2; 952 -0.2; 1019 0.4; 1090 1.3; 1167 0.9; 1248 1.7; 1336 2.5; 1429 2.9; 1529 3.6; 1636 4.3; 1751 5.8; 1873 6.0; 2004 6.0; 2145 5.9; 2295 5.7; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 3.9; 6775 1.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.4; 9502 -0.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.4; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/JPS%20Labs%20Abyss%20AB-1266/JPS%20Labs%20Abyss%20AB-1266.png)

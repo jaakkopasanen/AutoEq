@@ -1,13 +1,8 @@
 # Musical Fidelity MF200
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-57**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -5.7dB
 GraphicEQ: 10 -84; 20 2.4; 22 1.6; 23 1.2; 25 0.6; 26 0.3; 28 -0.2; 30 -0.6; 32 -1.0; 35 -1.5; 37 -1.7; 40 -2.1; 42 -2.2; 45 -2.5; 49 -2.7; 52 -2.7; 56 -2.8; 59 -2.8; 64 -2.9; 68 -3.0; 73 -3.1; 78 -3.0; 83 -3.1; 89 -3.0; 95 -3.0; 102 -3.4; 109 -3.6; 117 -3.7; 125 -3.8; 134 -3.6; 143 -3.6; 153 -3.7; 164 -3.5; 175 -3.1; 188 -3.0; 201 -2.9; 215 -2.6; 230 -2.3; 246 -2.0; 263 -1.7; 282 -1.1; 301 -0.6; 323 -0.2; 345 -0.0; 369 0.3; 395 0.4; 423 0.8; 452 1.1; 484 1.4; 518 2.0; 554 2.6; 593 2.7; 635 1.8; 679 0.8; 726 0.3; 777 0.1; 832 -0.5; 890 -0.9; 952 -0.5; 1019 0.0; 1090 -0.6; 1167 -0.4; 1248 0.1; 1336 0.5; 1429 1.1; 1529 1.2; 1636 1.1; 1751 0.9; 1873 0.7; 2004 0.3; 2145 -0.0; 2295 -0.2; 2455 -0.2; 2627 0.1; 2811 0.2; 3008 0.4; 3219 0.4; 3444 0.4; 3685 1.0; 3943 3.0; 4219 3.9; 4514 2.2; 4830 0.5; 5168 2.0; 5530 2.3; 5917 4.8; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.0; 8299 -0.6; 8880 -0.3; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 2.4; 22 1.6; 23 1.2; 25 0.6; 26 0.3; 28 -0.2; 30 -0.6; 32 -1.0; 35 -1.5; 37 -1.7; 40 -2.1; 42 -2.2; 45 -2.5; 49 -2.7; 52 -2.7; 56 -2.8; 59 -2.8; 64 -2.9; 68 -3.0; 73 -3.1; 78 -3.0; 83 -3.1; 89 -3.0; 95 -3.0; 102 -3.4; 109 -3.6; 117 -3.7; 125 -3.8; 134 -3.6; 143 -3.6; 153 -3.7; 164 -3.5; 175 -3.1; 188 -3.0; 201 -2.9; 215 -2.6; 230 -2.3; 246 -2.0; 263 -1.7; 282 -1.1; 301 -0.6; 323 -0.2; 345 -0.0; 369 0.3; 395 0.4; 423 0.8; 452 1.1; 484 1.4; 518 2.0; 554 2.6; 593 2.7; 635 1.8; 679 0.8; 726 0.3; 777 0.1; 832 -0.5; 890 -0.9; 952 -0.5; 1019 0.0; 1090 -0.6; 1167 -0.4; 1248 0.1; 1336 0.5; 1429 1.1; 1529 1.2; 1636 1.1; 1751 0.9; 1873 0.7; 2004 0.3; 2145 -0.0; 2295 -0.2; 2455 -0.2; 2627 0.1; 2811 0.2; 3008 0.4; 3219 0.4; 3444 0.4; 3685 1.0; 3943 3.0; 4219 3.9; 4514 2.2; 4830 0.5; 5168 2.0; 5530 2.3; 5917 4.8; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.0; 8299 -0.6; 8880 -0.3; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-5.7dB*l, R=-5.7dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.7dB` and instead set Global volume in the UI for both channels to **-57**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Musical%20Fidelity%20MF200/Musical%20Fidelity%20MF200.png)

@@ -1,13 +1,8 @@
 # House of Marley Exodus Second Pair
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.8; 37 5.6; 40 5.2; 42 5.0; 45 4.8; 49 4.5; 52 4.3; 56 4.0; 59 3.8; 64 3.6; 68 3.7; 73 3.7; 78 3.3; 83 3.0; 89 2.4; 95 1.9; 102 1.5; 109 1.0; 117 0.7; 125 0.2; 134 -0.1; 143 -0.4; 153 -0.6; 164 -0.5; 175 -0.5; 188 -0.6; 201 -0.5; 215 -0.7; 230 -1.9; 246 -1.3; 263 -0.7; 282 -0.5; 301 -0.6; 323 -0.9; 345 -0.9; 369 -1.0; 395 -0.8; 423 -0.7; 452 -0.7; 484 -0.8; 518 -0.6; 554 0.1; 593 0.5; 635 0.4; 679 0.0; 726 -0.2; 777 -0.2; 832 -0.3; 890 -0.3; 952 -0.2; 1019 0.1; 1090 0.5; 1167 1.0; 1248 1.1; 1336 1.6; 1429 2.0; 1529 2.2; 1636 2.6; 1751 3.0; 1873 3.2; 2004 3.3; 2145 3.4; 2295 3.4; 2455 3.5; 2627 3.3; 2811 2.9; 3008 2.5; 3219 2.2; 3444 2.2; 3685 3.3; 3943 5.5; 4219 6.0; 4514 6.0; 4830 6.0; 5168 5.6; 5530 4.4; 5917 3.2; 6331 0.8; 6775 -2.0; 7249 -1.0; 7756 0.1; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.8; 37 5.6; 40 5.2; 42 5.0; 45 4.8; 49 4.5; 52 4.3; 56 4.0; 59 3.8; 64 3.6; 68 3.7; 73 3.7; 78 3.3; 83 3.0; 89 2.4; 95 1.9; 102 1.5; 109 1.0; 117 0.7; 125 0.2; 134 -0.1; 143 -0.4; 153 -0.6; 164 -0.5; 175 -0.5; 188 -0.6; 201 -0.5; 215 -0.7; 230 -1.9; 246 -1.3; 263 -0.7; 282 -0.5; 301 -0.6; 323 -0.9; 345 -0.9; 369 -1.0; 395 -0.8; 423 -0.7; 452 -0.7; 484 -0.8; 518 -0.6; 554 0.1; 593 0.5; 635 0.4; 679 0.0; 726 -0.2; 777 -0.2; 832 -0.3; 890 -0.3; 952 -0.2; 1019 0.1; 1090 0.5; 1167 1.0; 1248 1.1; 1336 1.6; 1429 2.0; 1529 2.2; 1636 2.6; 1751 3.0; 1873 3.2; 2004 3.3; 2145 3.4; 2295 3.4; 2455 3.5; 2627 3.3; 2811 2.9; 3008 2.5; 3219 2.2; 3444 2.2; 3685 3.3; 3943 5.5; 4219 6.0; 4514 6.0; 4830 6.0; 5168 5.6; 5530 4.4; 5917 3.2; 6331 0.8; 6775 -2.0; 7249 -1.0; 7756 0.1; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/House%20of%20Marley%20Exodus%20Second%20Pair/House%20of%20Marley%20Exodus%20Second%20Pair.png)

@@ -1,13 +1,8 @@
 # Beats Solo3 Bluetooth
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -5.3; 22 -5.6; 23 -5.8; 25 -6.0; 26 -6.1; 28 -6.3; 30 -6.4; 32 -6.5; 35 -6.6; 37 -6.7; 40 -6.8; 42 -6.8; 45 -6.8; 49 -6.9; 52 -6.9; 56 -6.9; 59 -6.9; 64 -7.0; 68 -6.9; 73 -7.0; 78 -7.1; 83 -7.3; 89 -7.5; 95 -7.9; 102 -8.5; 109 -8.9; 117 -9.1; 125 -9.4; 134 -9.7; 143 -9.9; 153 -10.1; 164 -10.0; 175 -9.7; 188 -9.9; 201 -9.8; 215 -9.4; 230 -9.2; 246 -8.7; 263 -8.3; 282 -7.7; 301 -7.1; 323 -6.5; 345 -6.2; 369 -5.7; 395 -4.8; 423 -4.0; 452 -3.7; 484 -3.3; 518 -2.8; 554 -2.1; 593 -1.4; 635 -0.8; 679 -0.3; 726 0.2; 777 0.3; 832 0.3; 890 0.2; 952 0.1; 1019 -0.0; 1090 -0.2; 1167 -0.2; 1248 -0.1; 1336 0.2; 1429 0.5; 1529 0.9; 1636 1.1; 1751 1.1; 1873 1.3; 2004 1.8; 2145 2.2; 2295 2.2; 2455 2.3; 2627 2.3; 2811 1.7; 3008 1.0; 3219 0.3; 3444 -0.5; 3685 -0.3; 3943 1.5; 4219 2.6; 4514 2.1; 4830 3.0; 5168 4.6; 5530 5.9; 5917 5.4; 6331 3.2; 6775 2.4; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -5.3; 22 -5.6; 23 -5.8; 25 -6.0; 26 -6.1; 28 -6.3; 30 -6.4; 32 -6.5; 35 -6.6; 37 -6.7; 40 -6.8; 42 -6.8; 45 -6.8; 49 -6.9; 52 -6.9; 56 -6.9; 59 -6.9; 64 -7.0; 68 -6.9; 73 -7.0; 78 -7.1; 83 -7.3; 89 -7.5; 95 -7.9; 102 -8.5; 109 -8.9; 117 -9.1; 125 -9.4; 134 -9.7; 143 -9.9; 153 -10.1; 164 -10.0; 175 -9.7; 188 -9.9; 201 -9.8; 215 -9.4; 230 -9.2; 246 -8.7; 263 -8.3; 282 -7.7; 301 -7.1; 323 -6.5; 345 -6.2; 369 -5.7; 395 -4.8; 423 -4.0; 452 -3.7; 484 -3.3; 518 -2.8; 554 -2.1; 593 -1.4; 635 -0.8; 679 -0.3; 726 0.2; 777 0.3; 832 0.3; 890 0.2; 952 0.1; 1019 -0.0; 1090 -0.2; 1167 -0.2; 1248 -0.1; 1336 0.2; 1429 0.5; 1529 0.9; 1636 1.1; 1751 1.1; 1873 1.3; 2004 1.8; 2145 2.2; 2295 2.2; 2455 2.3; 2627 2.3; 2811 1.7; 3008 1.0; 3219 0.3; 3444 -0.5; 3685 -0.3; 3943 1.5; 4219 2.6; 4514 2.1; 4830 3.0; 5168 4.6; 5530 5.9; 5917 5.4; 6331 3.2; 6775 2.4; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Beats%20Solo3%20Bluetooth/Beats%20Solo3%20Bluetooth.png)

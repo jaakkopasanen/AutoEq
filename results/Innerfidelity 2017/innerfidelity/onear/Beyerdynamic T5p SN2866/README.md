@@ -1,13 +1,8 @@
 # Beyerdynamic T5p SN2866
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 1.4; 22 1.0; 23 0.8; 25 0.6; 26 0.5; 28 0.3; 30 0.2; 32 0.1; 35 0.0; 37 -0.0; 40 -0.1; 42 -0.1; 45 -0.1; 49 0.0; 52 0.1; 56 0.3; 59 0.4; 64 0.5; 68 0.7; 73 1.0; 78 1.3; 83 1.4; 89 0.9; 95 0.0; 102 -1.6; 109 -2.7; 117 -3.7; 125 -4.8; 134 -5.3; 143 -5.3; 153 -4.9; 164 -3.6; 175 -3.9; 188 -4.5; 201 -4.4; 215 -4.0; 230 -3.6; 246 -3.2; 263 -2.8; 282 -2.4; 301 -2.1; 323 -1.8; 345 -1.6; 369 -1.5; 395 -1.5; 423 -1.5; 452 -1.7; 484 -2.1; 518 -2.3; 554 -1.9; 593 -0.1; 635 2.9; 679 1.2; 726 0.4; 777 0.7; 832 0.1; 890 -0.9; 952 -0.5; 1019 0.1; 1090 -0.0; 1167 -1.7; 1248 -3.0; 1336 -2.4; 1429 -1.6; 1529 -3.0; 1636 -3.4; 1751 -4.0; 1873 -3.1; 2004 -2.7; 2145 -4.3; 2295 -3.5; 2455 -1.4; 2627 0.5; 2811 0.8; 3008 1.8; 3219 2.6; 3444 3.8; 3685 5.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 3.1; 5917 0.4; 6331 -0.2; 6775 1.4; 7249 0.9; 7756 -3.0; 8299 -5.3; 8880 -4.1; 9502 -0.8; 10167 0.0; 10879 -0.0; 11640 -0.7; 12455 -0.1; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 1.4; 22 1.0; 23 0.8; 25 0.6; 26 0.5; 28 0.3; 30 0.2; 32 0.1; 35 0.0; 37 -0.0; 40 -0.1; 42 -0.1; 45 -0.1; 49 0.0; 52 0.1; 56 0.3; 59 0.4; 64 0.5; 68 0.7; 73 1.0; 78 1.3; 83 1.4; 89 0.9; 95 0.0; 102 -1.6; 109 -2.7; 117 -3.7; 125 -4.8; 134 -5.3; 143 -5.3; 153 -4.9; 164 -3.6; 175 -3.9; 188 -4.5; 201 -4.4; 215 -4.0; 230 -3.6; 246 -3.2; 263 -2.8; 282 -2.4; 301 -2.1; 323 -1.8; 345 -1.6; 369 -1.5; 395 -1.5; 423 -1.5; 452 -1.7; 484 -2.1; 518 -2.3; 554 -1.9; 593 -0.1; 635 2.9; 679 1.2; 726 0.4; 777 0.7; 832 0.1; 890 -0.9; 952 -0.5; 1019 0.1; 1090 -0.0; 1167 -1.7; 1248 -3.0; 1336 -2.4; 1429 -1.6; 1529 -3.0; 1636 -3.4; 1751 -4.0; 1873 -3.1; 2004 -2.7; 2145 -4.3; 2295 -3.5; 2455 -1.4; 2627 0.5; 2811 0.8; 3008 1.8; 3219 2.6; 3444 3.8; 3685 5.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 3.1; 5917 0.4; 6331 -0.2; 6775 1.4; 7249 0.9; 7756 -3.0; 8299 -5.3; 8880 -4.1; 9502 -0.8; 10167 0.0; 10879 -0.0; 11640 -0.7; 12455 -0.1; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/innerfidelity/onear/Beyerdynamic%20T5p%20SN2866/Beyerdynamic%20T5p%20SN2866.png)

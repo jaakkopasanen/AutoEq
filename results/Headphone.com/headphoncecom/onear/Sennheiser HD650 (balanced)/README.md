@@ -1,13 +1,8 @@
 # Sennheiser HD650 (balanced)
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-64**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.4dB
 GraphicEQ: 10 -84; 20 6.4; 22 5.6; 23 5.3; 25 4.6; 26 4.4; 28 3.8; 30 3.3; 32 2.9; 35 2.4; 37 2.2; 40 1.9; 42 1.7; 45 1.6; 49 1.7; 52 1.4; 56 0.8; 59 0.4; 64 0.2; 68 0.2; 73 0.1; 78 -0.4; 83 -0.9; 89 -1.4; 95 -1.8; 102 -2.4; 109 -2.8; 117 -3.3; 125 -3.9; 134 -4.2; 143 -4.4; 153 -4.6; 164 -4.3; 175 -4.3; 188 -4.4; 201 -4.4; 215 -4.4; 230 -4.2; 246 -4.0; 263 -4.0; 282 -3.7; 301 -3.6; 323 -3.5; 345 -3.2; 369 -3.0; 395 -2.6; 423 -2.3; 452 -1.9; 484 -1.6; 518 -1.4; 554 -1.3; 593 -1.0; 635 -0.7; 679 -0.6; 726 -0.6; 777 -0.6; 832 -0.7; 890 -0.8; 952 -0.1; 1019 -0.1; 1090 -0.5; 1167 -0.6; 1248 -0.4; 1336 0.1; 1429 0.6; 1529 1.0; 1636 1.0; 1751 0.9; 1873 0.7; 2004 0.7; 2145 1.0; 2295 1.1; 2455 1.2; 2627 1.2; 2811 1.1; 3008 1.0; 3219 0.5; 3444 0.5; 3685 1.4; 3943 2.9; 4219 3.7; 4514 3.7; 4830 4.9; 5168 6.0; 5530 6.0; 5917 4.8; 6331 1.4; 6775 0.4; 7249 0.4; 7756 0.2; 8299 -0.6; 8880 -1.3; 9502 -0.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.4; 22 5.6; 23 5.3; 25 4.6; 26 4.4; 28 3.8; 30 3.3; 32 2.9; 35 2.4; 37 2.2; 40 1.9; 42 1.7; 45 1.6; 49 1.7; 52 1.4; 56 0.8; 59 0.4; 64 0.2; 68 0.2; 73 0.1; 78 -0.4; 83 -0.9; 89 -1.4; 95 -1.8; 102 -2.4; 109 -2.8; 117 -3.3; 125 -3.9; 134 -4.2; 143 -4.4; 153 -4.6; 164 -4.3; 175 -4.3; 188 -4.4; 201 -4.4; 215 -4.4; 230 -4.2; 246 -4.0; 263 -4.0; 282 -3.7; 301 -3.6; 323 -3.5; 345 -3.2; 369 -3.0; 395 -2.6; 423 -2.3; 452 -1.9; 484 -1.6; 518 -1.4; 554 -1.3; 593 -1.0; 635 -0.7; 679 -0.6; 726 -0.6; 777 -0.6; 832 -0.7; 890 -0.8; 952 -0.1; 1019 -0.1; 1090 -0.5; 1167 -0.6; 1248 -0.4; 1336 0.1; 1429 0.6; 1529 1.0; 1636 1.0; 1751 0.9; 1873 0.7; 2004 0.7; 2145 1.0; 2295 1.1; 2455 1.2; 2627 1.2; 2811 1.1; 3008 1.0; 3219 0.5; 3444 0.5; 3685 1.4; 3943 2.9; 4219 3.7; 4514 3.7; 4830 4.9; 5168 6.0; 5530 6.0; 5917 4.8; 6331 1.4; 6775 0.4; 7249 0.4; 7756 0.2; 8299 -0.6; 8880 -1.3; 9502 -0.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.4dB*l, R=-6.4dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.4dB` and instead set Global volume in the UI for both channels to **-64**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/headphoncecom/onear/Sennheiser%20HD650%20(balanced)/Sennheiser%20HD650%20(balanced).png)

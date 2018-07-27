@@ -1,13 +1,8 @@
 # Sony MDR-7505
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 5.7; 109 4.6; 117 3.5; 125 2.6; 134 1.9; 143 1.3; 153 0.9; 164 0.6; 175 0.4; 188 0.0; 201 -0.0; 215 0.0; 230 0.6; 246 1.2; 263 1.3; 282 1.4; 301 1.0; 323 0.2; 345 -0.7; 369 -1.5; 395 -1.2; 423 -0.8; 452 -0.5; 484 -0.3; 518 -0.2; 554 -0.1; 593 -0.1; 635 -0.2; 679 0.0; 726 0.9; 777 1.2; 832 1.0; 890 0.2; 952 -0.2; 1019 0.2; 1090 0.7; 1167 0.9; 1248 1.0; 1336 1.4; 1429 1.7; 1529 2.0; 1636 2.7; 1751 3.1; 1873 3.3; 2004 3.6; 2145 3.9; 2295 4.1; 2455 4.2; 2627 4.9; 2811 4.6; 3008 3.7; 3219 3.0; 3444 2.6; 3685 2.7; 3943 3.1; 4219 3.6; 4514 4.6; 4830 5.9; 5168 6.0; 5530 6.0; 5917 4.8; 6331 3.0; 6775 3.7; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 5.7; 109 4.6; 117 3.5; 125 2.6; 134 1.9; 143 1.3; 153 0.9; 164 0.6; 175 0.4; 188 0.0; 201 -0.0; 215 0.0; 230 0.6; 246 1.2; 263 1.3; 282 1.4; 301 1.0; 323 0.2; 345 -0.7; 369 -1.5; 395 -1.2; 423 -0.8; 452 -0.5; 484 -0.3; 518 -0.2; 554 -0.1; 593 -0.1; 635 -0.2; 679 0.0; 726 0.9; 777 1.2; 832 1.0; 890 0.2; 952 -0.2; 1019 0.2; 1090 0.7; 1167 0.9; 1248 1.0; 1336 1.4; 1429 1.7; 1529 2.0; 1636 2.7; 1751 3.1; 1873 3.3; 2004 3.6; 2145 3.9; 2295 4.1; 2455 4.2; 2627 4.9; 2811 4.6; 3008 3.7; 3219 3.0; 3444 2.6; 3685 2.7; 3943 3.1; 4219 3.6; 4514 4.6; 4830 5.9; 5168 6.0; 5530 6.0; 5917 4.8; 6331 3.0; 6775 3.7; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/headphoncecom/onear/Sony%20MDR-7505/Sony%20MDR-7505.png)

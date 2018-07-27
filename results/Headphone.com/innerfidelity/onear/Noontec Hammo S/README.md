@@ -1,13 +1,8 @@
 # Noontec Hammo S
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 0.4; 22 0.2; 23 0.1; 25 -0.1; 26 -0.2; 28 -0.3; 30 -0.4; 32 -0.5; 35 -0.7; 37 -0.7; 40 -0.8; 42 -0.8; 45 -0.8; 49 -0.9; 52 -0.9; 56 -0.9; 59 -0.9; 64 -0.9; 68 -0.9; 73 -0.9; 78 -0.9; 83 -1.0; 89 -1.1; 95 -1.1; 102 -1.1; 109 -1.2; 117 -1.5; 125 -2.4; 134 -3.4; 143 -4.1; 153 -4.7; 164 -3.9; 175 -3.7; 188 -4.4; 201 -4.4; 215 -4.3; 230 -4.0; 246 -3.5; 263 -3.1; 282 -2.6; 301 -2.1; 323 -1.6; 345 -1.0; 369 -0.5; 395 0.1; 423 0.7; 452 0.8; 484 1.3; 518 1.6; 554 1.6; 593 1.3; 635 0.9; 679 0.5; 726 0.6; 777 0.7; 832 0.9; 890 0.8; 952 0.6; 1019 -0.1; 1090 -0.6; 1167 -0.9; 1248 -1.0; 1336 -0.7; 1429 -0.3; 1529 0.1; 1636 0.4; 1751 0.6; 1873 0.7; 2004 1.4; 2145 2.3; 2295 3.0; 2455 4.2; 2627 5.2; 2811 5.8; 3008 5.9; 3219 5.3; 3444 3.1; 3685 1.6; 3943 3.6; 4219 4.1; 4514 5.3; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 0.4; 22 0.2; 23 0.1; 25 -0.1; 26 -0.2; 28 -0.3; 30 -0.4; 32 -0.5; 35 -0.7; 37 -0.7; 40 -0.8; 42 -0.8; 45 -0.8; 49 -0.9; 52 -0.9; 56 -0.9; 59 -0.9; 64 -0.9; 68 -0.9; 73 -0.9; 78 -0.9; 83 -1.0; 89 -1.1; 95 -1.1; 102 -1.1; 109 -1.2; 117 -1.5; 125 -2.4; 134 -3.4; 143 -4.1; 153 -4.7; 164 -3.9; 175 -3.7; 188 -4.4; 201 -4.4; 215 -4.3; 230 -4.0; 246 -3.5; 263 -3.1; 282 -2.6; 301 -2.1; 323 -1.6; 345 -1.0; 369 -0.5; 395 0.1; 423 0.7; 452 0.8; 484 1.3; 518 1.6; 554 1.6; 593 1.3; 635 0.9; 679 0.5; 726 0.6; 777 0.7; 832 0.9; 890 0.8; 952 0.6; 1019 -0.1; 1090 -0.6; 1167 -0.9; 1248 -1.0; 1336 -0.7; 1429 -0.3; 1529 0.1; 1636 0.4; 1751 0.6; 1873 0.7; 2004 1.4; 2145 2.3; 2295 3.0; 2455 4.2; 2627 5.2; 2811 5.8; 3008 5.9; 3219 5.3; 3444 3.1; 3685 1.6; 3943 3.6; 4219 4.1; 4514 5.3; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Noontec%20Hammo%20S/Noontec%20Hammo%20S.png)

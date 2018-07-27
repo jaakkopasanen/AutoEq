@@ -1,13 +1,8 @@
 # Beyerdynamic DT 770
-### EqualizerAPO GraphicEQ
-If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with this line and set global volume for both channels from HeSuVi UI to **-60**.
+Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
 ```
+Preamp: -6.0dB
 GraphicEQ: 10 -84; 20 -1.5; 22 -2.1; 23 -2.3; 25 -2.8; 26 -3.0; 28 -3.4; 30 -3.7; 32 -4.0; 35 -4.4; 37 -4.5; 40 -4.7; 42 -4.8; 45 -4.9; 49 -4.9; 52 -4.7; 56 -4.4; 59 -3.9; 64 -2.5; 68 -1.0; 73 0.9; 78 1.1; 83 -0.5; 89 -3.1; 95 -5.0; 102 -6.3; 109 -6.7; 117 -6.9; 125 -6.8; 134 -6.4; 143 -5.9; 153 -4.5; 164 -3.7; 175 -3.6; 188 -2.7; 201 -2.2; 215 -1.9; 230 -2.0; 246 -2.4; 263 -2.7; 282 -3.0; 301 -3.2; 323 -3.3; 345 -3.4; 369 -3.4; 395 -3.3; 423 -3.0; 452 -2.7; 484 -2.5; 518 -2.1; 554 -1.7; 593 -1.3; 635 -0.9; 679 -0.7; 726 -0.4; 777 -0.3; 832 -0.2; 890 -0.2; 952 -0.1; 1019 0.1; 1090 0.3; 1167 0.5; 1248 0.7; 1336 0.9; 1429 1.3; 1529 1.6; 1636 1.5; 1751 1.2; 1873 1.1; 2004 1.6; 2145 1.6; 2295 1.0; 2455 1.0; 2627 1.7; 2811 2.5; 3008 3.4; 3219 4.2; 3444 5.4; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 2.2; 5530 -2.5; 5917 -3.6; 6331 -5.3; 6775 -5.1; 7249 -4.8; 7756 -6.5; 8299 -8.2; 8880 -8.3; 9502 -5.3; 10167 -0.6; 10879 0.0; 11640 0.0; 12455 -0.1; 13327 -0.5; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
-If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`.
-```
-GraphicEQ: 10 -84; 20 -1.5; 22 -2.1; 23 -2.3; 25 -2.8; 26 -3.0; 28 -3.4; 30 -3.7; 32 -4.0; 35 -4.4; 37 -4.5; 40 -4.7; 42 -4.8; 45 -4.9; 49 -4.9; 52 -4.7; 56 -4.4; 59 -3.9; 64 -2.5; 68 -1.0; 73 0.9; 78 1.1; 83 -0.5; 89 -3.1; 95 -5.0; 102 -6.3; 109 -6.7; 117 -6.9; 125 -6.8; 134 -6.4; 143 -5.9; 153 -4.5; 164 -3.7; 175 -3.6; 188 -2.7; 201 -2.2; 215 -1.9; 230 -2.0; 246 -2.4; 263 -2.7; 282 -3.0; 301 -3.2; 323 -3.3; 345 -3.4; 369 -3.4; 395 -3.3; 423 -3.0; 452 -2.7; 484 -2.5; 518 -2.1; 554 -1.7; 593 -1.3; 635 -0.9; 679 -0.7; 726 -0.4; 777 -0.3; 832 -0.2; 890 -0.2; 952 -0.1; 1019 0.1; 1090 0.3; 1167 0.5; 1248 0.7; 1336 0.9; 1429 1.3; 1529 1.6; 1636 1.5; 1751 1.2; 1873 1.1; 2004 1.6; 2145 1.6; 2295 1.0; 2455 1.0; 2627 1.7; 2811 2.5; 3008 3.4; 3219 4.2; 3444 5.4; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 2.2; 5530 -2.5; 5917 -3.6; 6331 -5.3; 6775 -5.1; 7249 -4.8; 7756 -6.5; 8299 -8.2; 8880 -8.3; 9502 -5.3; 10167 -0.6; 10879 0.0; 11640 0.0; 12455 -0.1; 13327 -0.5; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-Copy: L=-6.0dB*l, R=-6.0dB*R
-```
-EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric equalization configured by Peace if you are already using it.
+**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Headphone.com/innerfidelity/onear/Beyerdynamic%20DT%20770/Beyerdynamic%20DT%20770.png)
