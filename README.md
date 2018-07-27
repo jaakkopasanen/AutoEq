@@ -147,7 +147,7 @@ virtualenv venv
 ````
 - Activate virtualenv  
 ````commandline
-.\vevn\scripts\activate
+.\venv\scripts\activate
 ````
 - Install required packages  
 ````commandline
@@ -161,7 +161,7 @@ python frequency_response.py -H
 When coming back at a later time you'll only need to activate virtual environment again
 ````commandline
 cd C:\path\to\AutoEq-master
-.\vevn\scripts\activate
+.\venv\scripts\activate
 ````
 
 ### Command Line Arguments
