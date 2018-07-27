@@ -33,7 +33,7 @@ DEFAULT_TILT = 0.0
 DEFAULT_COMPENSATION_FILE_PATH = os.path.join(
     'innerfidelity',
     'resources',
-    'innerfidelity_compensation_SBAF-Serious.brighter.csv'
+    'innerfidelity_compensation_SBAF-Serious-brighter.csv'
 )
 BASS_BOOST_F_LOWER = 60
 BASS_BOOST_F_UPPER = 200
