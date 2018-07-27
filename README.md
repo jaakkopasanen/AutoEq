@@ -1,4 +1,11 @@
 # AutoEQ
+**TL;DR** If you are here just looking to make your headphones sound better
+[install HeSuVi](https://sourceforge.net/p/hesuvi/wiki/Help/#installation), find your headphone model in
+[here](https://github.com/jaakkopasanen/AutoEq/tree/master/results/SBAF-Serious/innerfidelity/onear) or
+[here](https://github.com/jaakkopasanen/AutoEq/tree/master/results/SBAF-Serious/headphoncecom/onear) and follow
+instructions there. 
+
+### About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
 frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
 This project currently has 700+ onear headphones covered in the
