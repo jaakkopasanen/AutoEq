@@ -227,7 +227,6 @@ class FrequencyResponse:
 
         # Write GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
-        print(graphic_eq_path)
         if os.path.isfile(graphic_eq_path):
             preamp = min(0.0, float(-np.max(self.equalization)))
             preamp = np.floor(preamp * 10) / 10
@@ -825,13 +824,11 @@ class FrequencyResponse:
 
         # Write parameters to run README.md
         if readme_occupied:
-            print('append')
             # Directory already contains a README.md written for a single headphone
             # Add to the end of the README
             with open(readme_path, 'a') as f:
                 f.write('\n' + '\n'.join(lines))
         else:
-            print('write')
             # README.md doesn't exist or old README.md from previous run, safe to overwrite
             with open(readme_path, 'w') as f:
                 f.write('\n'.join(lines))
