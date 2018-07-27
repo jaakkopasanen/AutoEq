@@ -1,9 +1,8 @@
 # AutoEQ
-**TL;DR** If you are here just looking to make your headphones sound better
-[install HeSuVi](https://sourceforge.net/p/hesuvi/wiki/Help/#installation), find your headphone model in
+**TL;DR** If you are here just looking to make your headphones sound better, find your headphone model in
 [here](https://github.com/jaakkopasanen/AutoEq/tree/master/results/SBAF-Serious/innerfidelity/onear) or
 [here](https://github.com/jaakkopasanen/AutoEq/tree/master/results/SBAF-Serious/headphoncecom/onear) and follow
-instructions there. 
+instructions in [Usage](https://github.com/jaakkopasanen/AutoEq#usage) section. 
 
 ## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
@@ -58,6 +57,7 @@ EqualizerAPO has a graphical user interface for adjusting configurations. Launch
 `C:\Program Files\EqualizerAPO\Editor.exe`.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/EqualizerAPOEditor.PNG)
+*EqualizerAPO Editor GUI*
 
 ### HeSuVi
 [HeSuVi](https://sourceforge.net/projects/hesuvi/) is GUI for EqualizerAPO which has almost all
@@ -69,6 +69,7 @@ produced `GraphicEQ: ...` line. Then start HeSuVi and adjust global volume for b
 can save the configuration with profile manager in bottom right corner.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi.PNG)
+*HeSuVi GUI for EqualizerAPO*
 
 ### Peace
 If you are already using Peace GUI for EqualizerAPO you'll have to disable the configurations made by it because Peace
@@ -77,6 +78,7 @@ the top right corner off will disable everything Peace is doing. After Peace has
 instructions in the [Plain EqualizerAPO](https://github.com/jaakkopasanen/AutoEq#plain-equalizerapo) section.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/PeaceOff.PNG)
+*Peace GUI for EqualizerAPO with master switch off*
 
 Producing parametric eq settings for Peace users could be a consideration for the future if enough people request that.
 
