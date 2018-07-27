@@ -64,7 +64,7 @@ EqualizerAPO has a graphical user interface for adjusting configurations. Launch
 headphone surround virtualizations available. HeSuVi also provides
 a convenient graphical user interface for adjusting the equalizer, toggling eq on and off, adjusting preamp and saving
 and restoring multiple different configurations making it very easy to compare different eq settings. To load an eq into
-HeSuVi, close HeSuVi and replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\config.txt` with the
+HeSuVi, close HeSuVi and replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with the
 produced `GraphicEQ: ...` line. Then start HeSuVi and adjust global volume for both channels to highest eq value. You
 can save the configuration with profile manager in bottom right corner.
 

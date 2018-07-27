@@ -221,33 +221,28 @@ class FrequencyResponse:
         """Writes README.md with picture and Equalizer APO settings."""
         file_path = os.path.abspath(file_path)
         dir_path = os.path.dirname(file_path)
-        model = os.path.split(dir_path)[-1]
+        model = self.name
 
         lines = ['# ' + model]
 
         # Write GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
+        print(graphic_eq_path)
         if os.path.isfile(graphic_eq_path):
             preamp = min(0.0, float(-np.max(self.equalization)))
+            preamp = np.floor(preamp * 10) / 10
             with open(graphic_eq_path, 'r') as f:
                 eq_str = f.read().strip()
 
-            lines.append('### EqualizerAPO GraphicEQ')
-            lines.append('If you are using [HeSuVi](https://sourceforge.net/projects/hesuvi/), replace contents of HeSuVi\'s eq file '
-                         '`C:\\Program Files\\EqualizerAPO\\config\\HeSuVi\\eq.txt` with this line and set global '
-                         'volume for both channels from HeSuVi UI to **{:.0f}**.'.format(preamp*10))
+            lines.append('Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:')
             lines.append('```')
+            lines.append('Preamp: {}dB'.format(preamp))
             lines.append(eq_str)
             lines.append('```')
-
-            lines.append('If you are not using HeSuVi, copy this to the end of EqualizerAPO configuration file '
-                         '`C:\\Program Files\\EqualizerAPO\\config\\config.txt`.')
-            lines.append('```')
-            lines.append(eq_str)
-            lines.append('Copy: L={preamp:.1f}dB*l, R={preamp:.1f}dB*R'.format(preamp=preamp))
-            lines.append('```')
-            lines.append('EqualizerAPO Peace GUI does not work with GraphicEQ so you have to disable parametric '
-                         'equalization configured by Peace if you are already using it.')
+            lines.append('**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and '
+                         'omit `Preamp: {f_preamp}dB` and instead set Global volume in the UI for both channels to '
+                         '**{i_preamp}**.'.format(f_preamp=preamp, i_preamp=int(preamp*10)))
+            lines.append('')
 
         # Write image link
         img_path = os.path.join(dir_path, model + '.png')
