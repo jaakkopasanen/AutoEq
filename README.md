@@ -5,7 +5,7 @@
 [here](https://github.com/jaakkopasanen/AutoEq/tree/master/results/SBAF-Serious/headphoncecom/onear) and follow
 instructions there. 
 
-### About This Project
+## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
 frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
 This project currently has 700+ onear headphones covered in the
@@ -31,40 +31,56 @@ numerical format. Everything is stored as CSV files so they are easy to process 
 Microsoft Excel. See [Calibration](https://github.com/jaakkopasanen/AutoEq#calibration) and [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing) for more technical description about how
 things were obtained and processed.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/HiFiMAN%20HE400S/HiFiMAN%20HE400S.png)
-*HiFiMAN HE400S equalization results plotted*
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
+*Sennheiser HD 650 equalization results plotted*
 
 
-### Usage
+## Usage
 Equalization settings produced by AutoEQ are EqualizerAPO GraphicEQ configuration lines, one for each headphone
 processed. They look like this:
 ````
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 5.9; 45 5.7; 49 5.4; 52 5.2; 56 4.9; 59 4.7; 64 4.3; 68 4.1; 73 3.8; 78 3.5; 83 3.2; 89 2.8; 95 2.4; 102 2.1; 109 1.7; 117 1.2; 125 0.8; 134 0.5; 143 0.3; 153 0.2; 164 0.1; 175 0.1; 188 0.1; 201 0.1; 215 0.2; 230 0.3; 246 0.4; 263 0.3; 282 0.3; 301 0.2; 323 0.1; 345 0.0; 369 0.0; 395 -0.2; 423 0.3; 452 0.5; 484 0.9; 518 1.2; 554 1.1; 593 1.1; 635 1.0; 679 1.0; 726 0.8; 777 0.6; 832 0.3; 890 0.1; 952 -0.1; 1019 -0.1; 1090 -0.1; 1167 0.7; 1248 0.5; 1336 0.1; 1429 -0.1; 1529 0.1; 1636 0.3; 1751 0.7; 1873 1.3; 2004 1.7; 2145 1.7; 2295 2.4; 2455 2.7; 2627 3.0; 2811 2.4; 3008 2.3; 3219 2.5; 3444 2.6; 3685 2.6; 3943 2.4; 4219 0.7; 4514 -0.1; 4830 2.1; 5168 5.4; 5530 6.0; 5917 4.2; 6331 1.9; 6775 2.1; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ````
-[HeSuVi](https://sourceforge.net/projects/hesuvi/) is highly recommended to be used with AutoEQ results. HeSuVi provides a convenient graphical user interface for
-adjusting the equalizer, toggling eq on and off, adjusting preamp and saving and restoring multiple different
-configurations making it very easy to compare different eq settings. To load an eq into HeSuVi, close HeSuVi and replace
-contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\config.txt` with the produced GraphicEQ line. Then
-start HeSuVi and adjust global volume for both channels to highest eq value. You can save the configuration with profile
-manager in bottom right corner.
+
+### Plain EqualizerAPO
+Simplest way is to [install EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
+`C:\Program Files\EqualizerAPO\config\config.txt`. Disable `Include: example.txt`, replace `GraphicEQ: ...` line with
+the one found in results and set `Preamp: ...`. Using
+[Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20HD%20650)
+would make config file look like this:
+````
+Preamp: -6 dB
+# Include: example.txt
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+````
+
+EqualizerAPO has a graphical user interface for adjusting configurations. Launch the editor from
+`C:\Program Files\EqualizerAPO\Editor.exe`.
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/EqualizerAPOEditor.PNG)
+
+### HeSuVi
+[HeSuVi](https://sourceforge.net/projects/hesuvi/) is GUI for EqualizerAPO which has almost all
+headphone surround virtualizations available. HeSuVi also provides
+a convenient graphical user interface for adjusting the equalizer, toggling eq on and off, adjusting preamp and saving
+and restoring multiple different configurations making it very easy to compare different eq settings. To load an eq into
+HeSuVi, close HeSuVi and replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\config.txt` with the
+produced `GraphicEQ: ...` line. Then start HeSuVi and adjust global volume for both channels to highest eq value. You
+can save the configuration with profile manager in bottom right corner.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi.PNG)
 
-It is also possible to use EqualizerAPO without any graphical user interface by copying the result into the end of the
-EqualizerAPO configuration file `C:\Program Files\EqualizerAPO\config\config.txt`. EqualizerAPO will update live as
-soon as the file is saved. Adding a hash `#` to the beginning of the line and saving the file will disable EQ making it
-possible to compare sound when using and not using EQ. When using EqualizerAPO like this it's **imperative** to apply a
-preamp which brings everything down as much as the highest positive gain is, this can be done by adding this line also.
-This example assumes that equalization has maximum positive gain of 6dB. Exact amounts are displayed in the results.
-````
-Copy: L=-6.0dB*L R=-6.0dB*R
-````
-
+### Peace
 If you are already using Peace GUI for EqualizerAPO you'll have to disable the configurations made by it because Peace
-doesn't work with GraphicEQ and you don't want to have two EQs on at the same time. Producing parametric eq settings
-for Peace users could be a consideration for the future if enough people want it.
+doesn't work with GraphicEQ and you don't want to have two EQs on at the same time. Simply toggling the master switch in
+the top right corner off will disable everything Peace is doing. After Peace has been disabled you can follow
+instructions in the [Plain EqualizerAPO](https://github.com/jaakkopasanen/AutoEq#plain-equalizerapo) section.
 
-### Results
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/PeaceOff.PNG)
+
+Producing parametric eq settings for Peace users could be a consideration for the future if enough people request that.
+
+## Results
 The main princible used by AutoEQ for producing the equalization function is to invert error function. Error is the
 difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
 below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. In reality simply inverting the error is
@@ -108,11 +124,11 @@ results. Above 6 to 8kHz data is filtered more heavily to avoid measurement arti
 applied. In the upper treble measurements are less reliable and boosting them too much will cause serious problem while
 having some narrow dips is not a problem at all.
 
-### Equalizing
+## Equalizing
 `frequency_response.py` is the tool used to produce the equalization results from measurement data. There is no
 fancy graphical user interface but instead it is used from command line.
 
-#### Installing
+### Installing
 - Download [AutoEQ zip](https://github.com/jaakkopasanen/AutoEq/archive/master.zip) and exctract to a convenient location.
 - Download and install [Python3](https://www.python.org/getit/). Make sure to check *Install Python3 to PATH*
 - Install virtualenv. Run this on command prompt. Search `cmd` in Windows start menu.  
@@ -146,7 +162,7 @@ cd C:\path\to\AutoEq-master
 .\vevn\scripts\activate
 ````
 
-#### Command Line Arguments
+### Command Line Arguments
 ````
 usage: frequency_response.py [-h] --input_dir INPUT_DIR --output_dir
                              OUTPUT_DIR [--calibration CALIBRATION]
@@ -218,7 +234,7 @@ optional arguments:
 
 ````
 
-#### Examples
+### Examples
 Equalizing Sennheiser HD 650 and saving results to `myresults/HD650`:
 ````commandline
 python frequency_response.py --input_dir="innerfidelity\data\onear\Sennheiser HD 650" --output_dir="myresults\HD650" --compensation="innerfidelity\resources\innerfidelity_compensation_SBAF-Serious-brighter.csv" --equalize --bass_boost=4 --show_plot
@@ -255,13 +271,13 @@ python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400
 
 Feel free to experiment more.
 
-#### More Data!
+### More Data!
 If data for you headphone cannot be found in this project but you have an image of the frequency response you might be
 able to use [https://apps.automeris.io/wpd/](https://apps.automeris.io/wpd/) to parse the image. You'll have replace
 all commas `,` in the produced file with point `.` and semi-colons `;` with comma `,` in this order. You can you for
 example [Notepad++](https://notepad-plus-plus.org/) for this, just hit `Ctrl+h`
 
-### Calibration
+## Calibration
 Innerfidelity and Headphone.com have different kind of measurement systems and since there is no any kind of standard
 calibration for headphone frequency response measurements the data produced by these systems are not directly compatible
 with each other. Same individual headphone will measure differently in the two systems. This actually applies for all of
@@ -285,7 +301,7 @@ calibration data in `frequency_response.py` the curve is subtracted for raw data
 **Warning** Using calibration will change the saved raw data and therefore when loading the result a new calibration
 must not be applied!
 
-### Technical Challenges
+## Technical Challenges
 Simply inverting headphone frequency response deviation from target response does not usually produce sufficient
 results. Some problems are caused by imperfections in measurements, some are reliability issues and some are practical
 end-user problems. Rtings has a good [video on Youtube](https://www.youtube.com/watch?v=HNEI3qLZEKo) about measurement
@@ -321,7 +337,7 @@ to +6dB to not to cripple user's volume too much. Max gain will clip the equaliz
 in it. Sharp changes in equalization may produce unwanted equalization artifacts. To counter this AutoEQ rounds the
 corners whenever max gain clips the curve.
 
-### Data Processing
+## Data Processing
 Measurement data for this project was obtained by crawling Innerfidelity and Headphone.com databases. For Innerfidelity
 that means downloading all PDFs, turning them into images with Ghostscript, parsing images with Python PIL package and
 saving the numerical data. Numerical data obtained this way is an average of the blue and red curves in the frequency
