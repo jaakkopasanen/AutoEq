@@ -354,3 +354,14 @@ calculating differences between raw and compensated data.
 
 Data processing tools are not meant as a user friendly and robust software but instead to be able to be ran once to
 obtain the raw data.
+
+## TODO
+Contributions are more than welcome.
+
+- Biquad filter optimzer for parametric eq
+- Impulse responses
+- oratory1990 measurements
+- Rtings measurements
+- Reference audio analyzer measurements
+- IEMs
+- Crinacle measurements for IEMs
