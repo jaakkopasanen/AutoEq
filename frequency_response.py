@@ -15,7 +15,7 @@ import urllib
 from warnings import warn
 from datetime import datetime
 import biquad
-import optunity
+import tensorflow as tf
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
@@ -207,56 +207,68 @@ class FrequencyResponse:
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
 
-        def fr(fc0, Q0, gain0,
-               fc1, Q1, gain1,
-               fc2, Q2, gain2,
-               fc3, Q3, gain3,
-               fc4, Q4, gain4,
-               fc5, Q5, gain5,
-               fc6, Q6, gain6,
-               fc7, Q7, gain7,
-               fc8, Q8, gain8,
-               fc9, Q9, gain9):
-            fs = 48000
-            fc = [fc0, fc1, fc2, fc3, fc4, fc5, fc6, fc7, fc8, fc9]
-            Q = [Q0, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9]
-            gain = [gain0, gain1, gain2, gain3, gain4, gain5, gain6, gain7, gain8, gain9]
-            a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, Q, gain, fs=fs)
-            f = self.frequency
-            f = np.repeat(np.expand_dims(f, 1), len(fc), axis=1)
-            c = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2)
-            c = np.sum(c, axis=1)
-            return c
+        n = 5
+        fs = tf.constant(48000, name='f', dtype='float32')
 
-        def loss(fc0, Q0, gain0,
-                 fc1, Q1, gain1,
-                 fc2, Q2, gain2,
-                 fc3, Q3, gain3,
-                 fc4, Q4, gain4,
-                 fc5, Q5, gain5,
-                 fc6, Q6, gain6,
-                 fc7, Q7, gain7,
-                 fc8, Q8, gain8,
-                 fc9, Q9, gain9):
-            c_peaking = fr(fc0, Q0, gain0, fc1, Q1, gain1, fc2, Q2, gain2, fc3, Q3, gain3, fc4, Q4, gain4,
-                           fc5, Q5, gain5, fc6, Q6, gain6, fc7, Q7, gain7, fc8, Q8, gain8, fc9, Q9, gain9)
-            return ((c_peaking - self.equalization) ** 2).mean(axis=0)
+        f = tf.constant(np.repeat(np.expand_dims(self.frequency, axis=0), n, axis=0), name='f', dtype='float32')
+        eq_target = tf.constant(self.equalization, name='eq_target', dtype='float32')
 
-        pars, _, _ = optunity.minimize(
-            loss,
-            num_evals=1000,
-            solver_name='particle swarm',
-            fc0=[20, 80], fc1=[40, 160], fc2=[80, 320], fc3=[160, 640], fc4=[320, 1280],
-            fc5=[640, 2560], fc6=[1280, 5120], fc7=[2560, 10240], fc8=[5120, 20000], fc9=[20, 20000],
-            Q0=[0, 2], Q1=[0, 2], Q2=[0, 2], Q3=[0, 2], Q4=[0, 2],
-            Q5=[0, 2], Q6=[0, 2], Q7=[0, 2], Q8=[0, 2], Q9=[0, 2],
-            gain0=[-12, 12], gain1=[-12, 12], gain2=[-12, 12], gain3=[-12, 12], gain4=[-12, 12],
-            gain5=[-12, 12], gain6=[-12, 12], gain7=[-12, 12], gain8=[-12, 12], gain9=[-12, 12]
-        )
+        fc_np = np.array([[20*((8000/20)**(1/(n-1)))**i] for i in range(n)], dtype='float32')
+        fc = tf.get_variable('fc', initializer=fc_np, dtype='float32')
+        Q_init = np.log2(fc_np[1][0] / fc_np[0][0])
+        Q = tf.get_variable('Q', initializer=np.ones([n, 1], dtype='float32') * Q_init, dtype='float32')
+        interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.equalization, k=1)
+        gain_init = interpolator(np.log10(fc_np)).astype('float32')
+        gain = tf.get_variable('gain', initializer=gain_init, dtype='float32')
+
+        # Filter design
+        A = 10 ** (gain / 40)
+        w0 = 2 * np.pi * fc / fs
+        alpha = tf.sin(w0) / (2 * Q)
+
+        a0 = 1 + alpha / A
+        a1 = -(-2 * tf.cos(w0)) / a0
+        a2 = -(1 - alpha / A) / a0
+
+        b0 = (1 + alpha * A) / a0
+        b1 = (-2 * tf.cos(w0)) / a0
+        b2 = (1 - alpha * A) / a0
+
+        w = 2 * np.pi * f / fs
+        phi = 4 * tf.sin(w / 2) ** 2
+
+        a0 = 1.0
+        a1 *= -1
+        a2 *= -1
+
+        # Equalizer frequency repsonse
+        eq = 10 * tf.log(
+            (b0 + b1 + b2) ** 2 + (b0 * b2 * phi - (b1 * (b0 + b2) + 4 * b0 * b2)) * phi
+        ) / tf.log(10.0) - 10 * tf.log(
+            (a0 + a1 + a2) ** 2 + (a0 * a2 * phi - (a1 * (a0 + a2) + 4 * a0 * a2)) * phi
+        ) / tf.log(10.0)
+        eq = tf.reduce_sum(eq, axis=0)
+
+        # Loss and optimizer
+        loss = tf.reduce_mean(tf.square(eq - eq_target))
+        learning_rate_value = 0.3
+        learning_rate = tf.placeholder('float32', shape=(), name='learning_rate')
+        train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(loss)
+
+        # Optimization loop
+        with tf.Session() as sess:
+            sess.run(tf.global_variables_initializer())
+            for i in range(300):
+                epoch_loss, _ = sess.run([loss, train_step], feed_dict={learning_rate: learning_rate_value})
+                if i > 0 and i % 10 == 0:
+                    print(i, epoch_loss)
+                learning_rate_value = learning_rate_value * 0.995
+            eq, fc, Q, gain = sess.run([eq, fc, Q, gain])
 
         fig, ax = plt.subplots()
         plt.plot(self.frequency, self.equalization)
-        plt.plot(self.frequency, fr(**pars))
+        plt.plot(self.frequency, eq)
+        plt.plot(fc, gain, 'o', color='red')
         plt.xlabel('Frequency (Hz)')
         plt.semilogx()
         plt.xlim([20, 20000])
@@ -266,12 +278,11 @@ class FrequencyResponse:
         plt.grid(True, which='major')
         plt.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
-        print(pars)
         plt.show()
 
-        print(loss(**pars))
+        print(np.hstack([fc, Q, gain]))
 
-        return []
+        return np.hstack([fc, Q, gain])
 
     def write_eqapo_parametric_eq(self, file_path):
         """Writes EqualizerAPO Parameteric eq settings to a file."""
@@ -280,14 +291,15 @@ class FrequencyResponse:
         # Get the filters
         filters = self.optimize_parametric_eq()
 
-        # with open(file_path, 'w') as f:
-        #     '\n'.join(['Filter {i}: ON {type} Fc {fc} Hz Gain {gain} dB Q {Q}'.format(
-        #         i=i+1,
-        #         type=filters[i]['type'],
-        #         fc=filters[i]['fc'],
-        #         gain=filters[i]['gain'],
-        #         Q=filters[i]['Q']
-        #     ) for i in range(len(filters))])
+        with open(file_path, 'w') as f:
+            f.write('\n'.join(['Filter {i}: ON {type} Fc {fc:.0f} Hz Gain {gain:.1f} dB Q {Q:.2f}'.format(
+                i=i+1,
+                #type=filters[i]['type'],
+                type='PK',
+                fc=filters[i, 0],
+                Q=filters[i, 1],
+                gain=filters[i, 2]
+            ) for i in range(len(filters))]))
 
     def _split_path(self, path):
         """Splits file system path into components."""

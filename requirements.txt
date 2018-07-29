@@ -6,4 +6,4 @@ scipy
 numpy
 PyPDF2
 ghostscript
-optunity
+tensorflow
