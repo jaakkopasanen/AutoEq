@@ -213,7 +213,7 @@ class FrequencyResponse:
         eq_target = tf.constant(target, name='eq_target', dtype='float32')
 
         # Center frequencies
-        fc_np = np.array([[20*((5000/20)**(1/(n-1)))**i] for i in range(n)], dtype='float32')
+        fc_np = np.array([[20*((20000/20)**(1/(n-1)))**i] for i in range(n)], dtype='float32')
         fc = tf.get_variable('fc', initializer=fc_np, dtype='float32')
 
         # Q
@@ -300,7 +300,7 @@ class FrequencyResponse:
         min_loss = None
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
-            for i in range(20000):
+            for i in range(10000):
                 epoch_loss, _ = sess.run([loss, train_step], feed_dict={learning_rate: learning_rate_value})
                 if min_loss is None or epoch_loss < min_loss:
                     # Loss improved, save model
@@ -325,8 +325,8 @@ class FrequencyResponse:
         eq, fc, Q, gain = self._run_optimize_parametric_eq(
             frequency=self.frequency,
             target=self.equalization,
-            n_ls=8,
-            n_pk=2,
+            n_ls=0,
+            n_pk=20,
             n_hs=0
         )
 
