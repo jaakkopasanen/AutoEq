@@ -290,8 +290,9 @@ class FrequencyResponse:
 
         # Loss and optimizer
         loss = tf.reduce_mean(tf.square(eq_op - eq_target))
-        learning_rate_value = 0.05
+        learning_rate_value = 0.5
         decay = 0.99
+        target_loss = 0.1
         learning_rate = tf.placeholder('float32', shape=(), name='learning_rate')
         train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(loss)
 
@@ -300,13 +301,13 @@ class FrequencyResponse:
         min_loss = None
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
-            for i in range(10000):
+            for i in range(5000):
                 epoch_loss, _ = sess.run([loss, train_step], feed_dict={learning_rate: learning_rate_value})
                 if min_loss is None or epoch_loss < min_loss:
                     # Loss improved, save model
                     min_loss = epoch_loss
                     _eq, _fc, _Q, _gain = sess.run([eq_op, fc, Q, gain])
-                    if min_loss < 0.2:
+                    if min_loss < target_loss:
                         # Good enough, stop optimizing
                         break
                 if i > 0 and i % 100 == 0:
