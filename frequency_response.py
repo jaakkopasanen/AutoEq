@@ -14,6 +14,8 @@ from glob import glob
 import urllib
 from warnings import warn
 from datetime import datetime
+import biquad
+import optunity
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
@@ -25,9 +27,9 @@ DEFAULT_TREBLE_F_UPPER = 8000.0
 DEFAULT_TREBLE_MAX_GAIN = 0.0
 DEFAULT_TREBLE_GAIN_K = 1.0
 DEFAULT_BASS_BOOST = 0.0
-DEFAULT_SMOOTHING_WINDOW_SIZE = 1/7
+DEFAULT_SMOOTHING_WINDOW_SIZE = 1 / 7
 DEFAULT_SMOOTHING_ITERATIONS = 10
-DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1/5
+DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 5
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 DEFAULT_TILT = 0.0
 DEFAULT_COMPENSATION_FILE_PATH = os.path.join(
@@ -200,6 +202,93 @@ class FrequencyResponse:
             f.write(s)
         return s
 
+    def optimize_parametric_eq(self):
+        """Fits multiple biquad filters to equalization curve."""
+        if not len(self.equalization):
+            raise ValueError('Equalization has not been done yet.')
+
+        def fr(fc0, Q0, gain0,
+               fc1, Q1, gain1,
+               fc2, Q2, gain2,
+               fc3, Q3, gain3,
+               fc4, Q4, gain4,
+               fc5, Q5, gain5,
+               fc6, Q6, gain6,
+               fc7, Q7, gain7,
+               fc8, Q8, gain8,
+               fc9, Q9, gain9):
+            fs = 48000
+            fc = [fc0, fc1, fc2, fc3, fc4, fc5, fc6, fc7, fc8, fc9]
+            Q = [Q0, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9]
+            gain = [gain0, gain1, gain2, gain3, gain4, gain5, gain6, gain7, gain8, gain9]
+            a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, Q, gain, fs=fs)
+            f = self.frequency
+            f = np.repeat(np.expand_dims(f, 1), len(fc), axis=1)
+            c = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2)
+            c = np.sum(c, axis=1)
+            return c
+
+        def loss(fc0, Q0, gain0,
+                 fc1, Q1, gain1,
+                 fc2, Q2, gain2,
+                 fc3, Q3, gain3,
+                 fc4, Q4, gain4,
+                 fc5, Q5, gain5,
+                 fc6, Q6, gain6,
+                 fc7, Q7, gain7,
+                 fc8, Q8, gain8,
+                 fc9, Q9, gain9):
+            c_peaking = fr(fc0, Q0, gain0, fc1, Q1, gain1, fc2, Q2, gain2, fc3, Q3, gain3, fc4, Q4, gain4,
+                           fc5, Q5, gain5, fc6, Q6, gain6, fc7, Q7, gain7, fc8, Q8, gain8, fc9, Q9, gain9)
+            return ((c_peaking - self.equalization) ** 2).mean(axis=0)
+
+        pars, _, _ = optunity.minimize(
+            loss,
+            num_evals=1000,
+            solver_name='particle swarm',
+            fc0=[20, 80], fc1=[40, 160], fc2=[80, 320], fc3=[160, 640], fc4=[320, 1280],
+            fc5=[640, 2560], fc6=[1280, 5120], fc7=[2560, 10240], fc8=[5120, 20000], fc9=[20, 20000],
+            Q0=[0, 2], Q1=[0, 2], Q2=[0, 2], Q3=[0, 2], Q4=[0, 2],
+            Q5=[0, 2], Q6=[0, 2], Q7=[0, 2], Q8=[0, 2], Q9=[0, 2],
+            gain0=[-12, 12], gain1=[-12, 12], gain2=[-12, 12], gain3=[-12, 12], gain4=[-12, 12],
+            gain5=[-12, 12], gain6=[-12, 12], gain7=[-12, 12], gain8=[-12, 12], gain9=[-12, 12]
+        )
+
+        fig, ax = plt.subplots()
+        plt.plot(self.frequency, self.equalization)
+        plt.plot(self.frequency, fr(**pars))
+        plt.xlabel('Frequency (Hz)')
+        plt.semilogx()
+        plt.xlim([20, 20000])
+        plt.ylabel('Amplitude (dBr)')
+        plt.title(self.name)
+        plt.legend(['Equalization', 'Parametric EQ'], fontsize=8)
+        plt.grid(True, which='major')
+        plt.grid(True, which='minor')
+        ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
+        print(pars)
+        plt.show()
+
+        print(loss(**pars))
+
+        return []
+
+    def write_eqapo_parametric_eq(self, file_path):
+        """Writes EqualizerAPO Parameteric eq settings to a file."""
+        file_path = os.path.abspath(file_path)
+
+        # Get the filters
+        filters = self.optimize_parametric_eq()
+
+        # with open(file_path, 'w') as f:
+        #     '\n'.join(['Filter {i}: ON {type} Fc {fc} Hz Gain {gain} dB Q {Q}'.format(
+        #         i=i+1,
+        #         type=filters[i]['type'],
+        #         fc=filters[i]['fc'],
+        #         gain=filters[i]['gain'],
+        #         Q=filters[i]['Q']
+        #     ) for i in range(len(filters))])
+
     def _split_path(self, path):
         """Splits file system path into components."""
         folders = []
@@ -240,7 +329,7 @@ class FrequencyResponse:
             lines.append('```')
             lines.append('**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and '
                          'omit `Preamp: {f_preamp}dB` and instead set Global volume in the UI for both channels to '
-                         '**{i_preamp}**.'.format(f_preamp=preamp, i_preamp=int(preamp*10)))
+                         '**{i_preamp}**.'.format(f_preamp=preamp, i_preamp=int(preamp * 10)))
             lines.append('')
 
         # Write image link
@@ -371,11 +460,11 @@ class FrequencyResponse:
     def _window_size(self, octaves):
         """Calculates moving average window size in indices from octaves."""
         # Octaves to coefficient
-        k = 2**octaves
+        k = 2 ** octaves
         # Calculate average step size in frequencies
         steps = []
         for i in range(1, len(self.frequency)):
-            steps.append(self.frequency[i] / self.frequency[i-1])
+            steps.append(self.frequency[i] / self.frequency[i - 1])
         step_size = sum(steps) / len(steps)
         # Calculate window size in indices
         # step_size^x = k  --> x = ...
@@ -554,7 +643,7 @@ class FrequencyResponse:
 
         if smoothen:
             # Smooth out kinks
-            window_size = self._window_size(1/12)
+            window_size = self._window_size(1 / 12)
             doomed_inds = set()
             for i in kink_inds:
                 start = i - min(i, (window_size - 1) // 2)
@@ -792,8 +881,10 @@ class FrequencyResponse:
                 plt.close(fig)
 
                 if equalize:
-                    # Write EqualizerAPO settings to file
+                    # Write EqualizerAPO GraphicEq settings to file
                     fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' GraphicEQ.txt'))
+                    # Write ParametricEq settings to file
+                    fr.write_eqapo_parametric_eq(file_path.replace('.csv', ' ParametricEQ.txt'))
                     print('Equalized "{}"'.format(fr.name))
 
                 # Write README.md

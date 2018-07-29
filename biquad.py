@@ -4,24 +4,24 @@ import numpy as np
 from frequency_response import FrequencyResponse
 
 
-def numpyfy(f_center, Q, gain, fs):
+def numpyfy(fc, Q, gain, fs):
     # Cast lists to Numpy arrays
-    if type(f_center) == list:
-        f_center = np.array(f_center)
+    if type(fc) == list:
+        fc = np.array(fc)
     if type(Q) == list:
         Q = np.array(Q)
     if type(gain) == list:
         gain = np.array(gain)
     if type(fs) == list:
         fs = np.array(fs)
-    return f_center, Q, gain, fs
+    return fc, Q, gain, fs
 
 
-def peaking(f_center, Q, gain, fs=48000):
+def peaking(fc, Q, gain, fs=48000):
     """Peaking filter designer.
 
     Args:
-        f_center: Center frequency
+        fc: Center frequency
         Q: Q factor
         gain: Gain
         fs: Sampling frequency
@@ -30,10 +30,10 @@ def peaking(f_center, Q, gain, fs=48000):
         Biquad filter coefficients a0, a1, a2, b0, b1 and b2 as tuple
     """
     # Turn lists into numpy arrays
-    f_center, Q, gain, fs = numpyfy(f_center, Q, gain, fs)
+    fc, Q, gain, fs = numpyfy(fc, Q, gain, fs)
 
     A = 10 ** (gain / 40)
-    w0 = 2 * np.pi * f_center / fs
+    w0 = 2 * np.pi * fc / fs
     alpha = np.sin(w0) / (2 * Q)
 
     a0 = 1 + alpha / A
@@ -47,11 +47,11 @@ def peaking(f_center, Q, gain, fs=48000):
     return 1.0, a1, a2, b0, b1, b2
 
 
-def low_shelf(f_center, Q, gain, fs=48000):
+def low_shelf(fc, Q, gain, fs=48000):
     """Low shelf filter designer.
 
     Args:
-        f_center: Center frequency
+        fc: Center frequency
         Q: Q factor
         gain: Gain
         fs: Sampling frequency
@@ -60,10 +60,10 @@ def low_shelf(f_center, Q, gain, fs=48000):
         Biquad filter coefficients a0, a1, a2, b0, b1 and b2 as tuple
     """
     # Turn lists into numpy arrays
-    f_center, Q, gain, fs = numpyfy(f_center, Q, gain, fs)
+    fc, Q, gain, fs = numpyfy(fc, Q, gain, fs)
 
     A = 10 ** (gain / 40)
-    w0 = 2 * np.pi * f_center / fs
+    w0 = 2 * np.pi * fc / fs
     alpha = np.sin(w0) / (2 * Q)
 
     a0 = (A + 1) + (A - 1) * np.cos(w0) + 2 * np.sqrt(A) * alpha
@@ -77,11 +77,11 @@ def low_shelf(f_center, Q, gain, fs=48000):
     return 1.0, a1, a2, b0, b1, b2
 
 
-def high_shelf(f_center, Q, gain, fs=48000):
+def high_shelf(fc, Q, gain, fs=48000):
     """High shelf filter designer.
 
     Args:
-        f_center: Center frequency
+        fc: Center frequency
         Q: Q factor
         gain: Gain
         fs: Sampling frequency
@@ -90,10 +90,10 @@ def high_shelf(f_center, Q, gain, fs=48000):
         Biquad filter coefficients a0, a1, a2, b0, b1 and b2 as tuple
     """
     # Turn lists into numpy arrays
-    f_center, Q, gain, fs = numpyfy(f_center, Q, gain, fs)
+    fc, Q, gain, fs = numpyfy(fc, Q, gain, fs)
 
     A = 10 ** (gain / 40)
-    w0 = 2 * np.pi * f_center / fs
+    w0 = 2 * np.pi * fc / fs
     alpha = np.sin(w0) / (2 * Q)
 
     a0 = (A + 1) - (A - 1) * np.cos(w0) + 2 * np.sqrt(A) * alpha
@@ -123,21 +123,25 @@ def digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2):
 
 
 def main():
-    f_center = [200, 1000]
-    Q = [2, 2]
-    gain = [5, 3]
+    fc = [20, 220, 450, 1280, 2200, 3000, 5700, 6600, 7600]
+    Q = [1.1, 0.9, 1.0, 1.5, 4.0, 2.0, 6.0, 7.0, 5.0]
+    gain = [2.1, -3.8, -2.0, 4.0, -3.5, 4.5, -5.0, 0.4, -2.4]
     fs = 48000
 
-    a0, a1, a2, b0, b1, b2 = high_shelf(f_center, Q, gain, fs=fs)
+    a0, a1, a2, b0, b1, b2 = peaking(fc, Q, gain, fs=fs)
 
     fr = FrequencyResponse(name='Biquad')
     f = fr.frequency
-    f = np.repeat(np.expand_dims(f, 1), len(f_center), axis=1)
+    f = np.repeat(np.expand_dims(f, 1), len(fc), axis=1)
 
-    c = digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2)
+    c_peaking = digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2)
 
-    #fr.raw = np.sum(c, axis=1)
-    fr.raw = c
+    a0, a1, a2, b0, b1, b2 = low_shelf(55, 0.7, 2.4, fs=fs)
+    c_low_shelf = digital_coeffs(fr.frequency, fs, a0, a1, a2, b0, b1, b2)
+
+    #fr.raw = c_peaking
+    #fr.raw = c_low_shelf
+    fr.raw = np.sum(c_peaking, axis=1) + np.sum(np.expand_dims(c_low_shelf, axis=1), axis=1)
     fr.plot_graph()
 
 
