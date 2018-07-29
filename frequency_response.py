@@ -203,58 +203,75 @@ class FrequencyResponse:
         return s
 
     @staticmethod
-    def _run_optimize_parametric_eq(frequency, target, filter_type, n):
+    def _run_optimize_parametric_eq(frequency, target, n_pk=8, n_ls=1, n_hs=0):
         tf.reset_default_graph()
         fs = tf.constant(48000, name='f', dtype='float32')
+        n = n_pk + n_ls + n_hs
 
+        # Frequencies and target gain
         f = tf.constant(np.repeat(np.expand_dims(frequency, axis=0), n, axis=0), name='f', dtype='float32')
         eq_target = tf.constant(target, name='eq_target', dtype='float32')
 
-        fc_np = np.array([[20*((8000/20)**(1/(n-1)))**i] for i in range(n)], dtype='float32')
+        # Center frequencies
+        fc_np = np.array([[20*((5000/20)**(1/(n-1)))**i] for i in range(n)], dtype='float32')
         fc = tf.get_variable('fc', initializer=fc_np, dtype='float32')
+
+        # Q
         Q_init = np.log2(fc_np[1][0] / fc_np[0][0])
         Q = tf.get_variable('Q', initializer=np.ones([n, 1], dtype='float32') * Q_init, dtype='float32')
+
+        # Gain
         interpolator = InterpolatedUnivariateSpline(np.log10(frequency), target, k=1)
         gain_init = interpolator(np.log10(fc_np)).astype('float32')
         gain = tf.get_variable('gain', initializer=gain_init, dtype='float32')
 
         # Filter design
-        A = 10 ** (gain / 40)
-        w0 = 2 * np.pi * fc / fs
-        alpha = tf.sin(w0) / (2 * Q)
+        # Low shelf filter
+        A = 10 ** (gain[:n_ls, :] / 40)
+        w0 = 2 * np.pi * fc[:n_ls, :] / fs
+        alpha = tf.sin(w0) / (2 * Q[:n_ls, :])
 
-        if filter_type in ['PK']:
-            # Peak filter
-            a0 = 1 + alpha / A
-            a1 = -(-2 * tf.cos(w0)) / a0
-            a2 = -(1 - alpha / A) / a0
+        a0_ls = ((A + 1) + (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)
+        a1_ls = (-(-2 * ((A - 1) + (A + 1) * tf.cos(w0))) / a0_ls)
+        a2_ls = (-((A + 1) + (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha) / a0_ls)
 
-            b0 = (1 + alpha * A) / a0
-            b1 = (-2 * tf.cos(w0)) / a0
-            b2 = (1 - alpha * A) / a0
+        b0_ls = ((A * ((A + 1) - (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)) / a0_ls)
+        b1_ls = ((2 * A * ((A - 1) - (A + 1) * tf.cos(w0))) / a0_ls)
+        b2_ls = ((A * ((A + 1) - (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha)) / a0_ls)
 
-        elif filter_type in ['LS']:
-            # Low shelf filter
-            a0 = (A + 1) + (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha
-            a1 = -(-2 * ((A - 1) + (A + 1) * tf.cos(w0))) / a0
-            a2 = -((A + 1) + (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha) / a0
+        # Peak filter
+        A = 10 ** (gain[n_ls:n_ls+n_pk, :] / 40)
+        w0 = 2 * np.pi * fc[n_ls:n_ls+n_pk, :] / fs
+        alpha = tf.sin(w0) / (2 * Q[n_ls:n_ls+n_pk, :])
 
-            b0 = (A * ((A + 1) - (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)) / a0
-            b1 = (2 * A * ((A - 1) - (A + 1) * tf.cos(w0))) / a0
-            b2 = (A * ((A + 1) - (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha)) / a0
+        a0_pk = (1 + alpha / A)
+        a1_pk = -(-2 * tf.cos(w0)) / a0_pk
+        a2_pk = -(1 - alpha / A) / a0_pk
 
-        elif filter_type == 'HS':
-            # High self filter
-            a0 = (A + 1) - (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha
-            a1 = -(2 * ((A - 1) - (A + 1) * tf.cos(w0))) / a0
-            a2 = -((A + 1) - (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha) / a0
+        b0_pk = (1 + alpha * A) / a0_pk
+        b1_pk = (-2 * tf.cos(w0)) / a0_pk
+        b2_pk = (1 - alpha * A) / a0_pk
 
-            b0 = (A * ((A + 1) + (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)) / a0
-            b1 = (-2 * A * ((A - 1) + (A + 1) * tf.cos(w0))) / a0
-            b2 = (A * ((A + 1) + (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha)) / a0
+        # High self filter
+        A = 10 ** (gain[n_ls+n_pk:, :] / 40)
+        w0 = 2 * np.pi * fc[n_ls+n_pk:, :] / fs
+        alpha = tf.sin(w0) / (2 * Q[n_ls+n_pk:, :])
 
-        else:
-            raise ValueError('"filter_type" has invalid value "{}", valid values are "PK", "LS" and "HS"')
+        a0_hs = (A + 1) - (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha
+        a1_hs = -(2 * ((A - 1) - (A + 1) * tf.cos(w0))) / a0_hs
+        a2_hs = -((A + 1) - (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha) / a0_hs
+
+        b0_hs = (A * ((A + 1) + (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)) / a0_hs
+        b1_hs = (-2 * A * ((A - 1) + (A + 1) * tf.cos(w0))) / a0_hs
+        b2_hs = (A * ((A + 1) + (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha)) / a0_hs
+
+        # Concatenate all
+        a0 = tf.concat([a0_ls, a0_pk, a0_hs], axis=0)
+        a1 = tf.concat([a1_ls, a1_pk, a1_hs], axis=0)
+        a2 = tf.concat([a2_ls, a2_pk, a2_hs], axis=0)
+        b0 = tf.concat([b0_ls, b0_pk, b0_hs], axis=0)
+        b1 = tf.concat([b1_ls, b1_pk, b1_hs], axis=0)
+        b2 = tf.concat([b2_ls, b2_pk, b2_hs], axis=0)
 
         w = 2 * np.pi * f / fs
         phi = 4 * tf.sin(w / 2) ** 2
@@ -263,7 +280,7 @@ class FrequencyResponse:
         a1 *= -1
         a2 *= -1
 
-        # Equalizer frequency repsonse
+        # Equalizer frequency response
         eq_op = 10 * tf.log(
             (b0 + b1 + b2) ** 2 + (b0 * b2 * phi - (b1 * (b0 + b2) + 4 * b0 * b2)) * phi
         ) / tf.log(10.0) - 10 * tf.log(
@@ -283,7 +300,7 @@ class FrequencyResponse:
         min_loss = None
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
-            for i in range(10000):
+            for i in range(20000):
                 epoch_loss, _ = sess.run([loss, train_step], feed_dict={learning_rate: learning_rate_value})
                 if min_loss is None or epoch_loss < min_loss:
                     # Loss improved, save model
@@ -308,8 +325,9 @@ class FrequencyResponse:
         eq, fc, Q, gain = self._run_optimize_parametric_eq(
             frequency=self.frequency,
             target=self.equalization,
-            filter_type='PK',
-            n=20
+            n_ls=8,
+            n_pk=2,
+            n_hs=0
         )
 
         fig, ax = plt.subplots()
