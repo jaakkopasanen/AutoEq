@@ -14,8 +14,8 @@ from glob import glob
 import urllib
 from warnings import warn
 from datetime import datetime
-import biquad
 import tensorflow as tf
+from time import time
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
@@ -202,22 +202,19 @@ class FrequencyResponse:
             f.write(s)
         return s
 
-    def optimize_parametric_eq(self):
-        """Fits multiple biquad filters to equalization curve."""
-        if not len(self.equalization):
-            raise ValueError('Equalization has not been done yet.')
-
-        n = 5
+    @staticmethod
+    def _run_optimize_parametric_eq(frequency, target, filter_type, n):
+        tf.reset_default_graph()
         fs = tf.constant(48000, name='f', dtype='float32')
 
-        f = tf.constant(np.repeat(np.expand_dims(self.frequency, axis=0), n, axis=0), name='f', dtype='float32')
-        eq_target = tf.constant(self.equalization, name='eq_target', dtype='float32')
+        f = tf.constant(np.repeat(np.expand_dims(frequency, axis=0), n, axis=0), name='f', dtype='float32')
+        eq_target = tf.constant(target, name='eq_target', dtype='float32')
 
         fc_np = np.array([[20*((8000/20)**(1/(n-1)))**i] for i in range(n)], dtype='float32')
         fc = tf.get_variable('fc', initializer=fc_np, dtype='float32')
         Q_init = np.log2(fc_np[1][0] / fc_np[0][0])
         Q = tf.get_variable('Q', initializer=np.ones([n, 1], dtype='float32') * Q_init, dtype='float32')
-        interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.equalization, k=1)
+        interpolator = InterpolatedUnivariateSpline(np.log10(frequency), target, k=1)
         gain_init = interpolator(np.log10(fc_np)).astype('float32')
         gain = tf.get_variable('gain', initializer=gain_init, dtype='float32')
 
@@ -226,13 +223,38 @@ class FrequencyResponse:
         w0 = 2 * np.pi * fc / fs
         alpha = tf.sin(w0) / (2 * Q)
 
-        a0 = 1 + alpha / A
-        a1 = -(-2 * tf.cos(w0)) / a0
-        a2 = -(1 - alpha / A) / a0
+        if filter_type in ['PK']:
+            # Peak filter
+            a0 = 1 + alpha / A
+            a1 = -(-2 * tf.cos(w0)) / a0
+            a2 = -(1 - alpha / A) / a0
 
-        b0 = (1 + alpha * A) / a0
-        b1 = (-2 * tf.cos(w0)) / a0
-        b2 = (1 - alpha * A) / a0
+            b0 = (1 + alpha * A) / a0
+            b1 = (-2 * tf.cos(w0)) / a0
+            b2 = (1 - alpha * A) / a0
+
+        elif filter_type in ['LS']:
+            # Low shelf filter
+            a0 = (A + 1) + (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha
+            a1 = -(-2 * ((A - 1) + (A + 1) * tf.cos(w0))) / a0
+            a2 = -((A + 1) + (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha) / a0
+
+            b0 = (A * ((A + 1) - (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)) / a0
+            b1 = (2 * A * ((A - 1) - (A + 1) * tf.cos(w0))) / a0
+            b2 = (A * ((A + 1) - (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha)) / a0
+
+        elif filter_type == 'HS':
+            # High self filter
+            a0 = (A + 1) - (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha
+            a1 = -(2 * ((A - 1) - (A + 1) * tf.cos(w0))) / a0
+            a2 = -((A + 1) - (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha) / a0
+
+            b0 = (A * ((A + 1) + (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)) / a0
+            b1 = (-2 * A * ((A - 1) + (A + 1) * tf.cos(w0))) / a0
+            b2 = (A * ((A + 1) + (A - 1) * tf.cos(w0) - 2 * tf.sqrt(A) * alpha)) / a0
+
+        else:
+            raise ValueError('"filter_type" has invalid value "{}", valid values are "PK", "LS" and "HS"')
 
         w = 2 * np.pi * f / fs
         phi = 4 * tf.sin(w / 2) ** 2
@@ -242,33 +264,58 @@ class FrequencyResponse:
         a2 *= -1
 
         # Equalizer frequency repsonse
-        eq = 10 * tf.log(
+        eq_op = 10 * tf.log(
             (b0 + b1 + b2) ** 2 + (b0 * b2 * phi - (b1 * (b0 + b2) + 4 * b0 * b2)) * phi
         ) / tf.log(10.0) - 10 * tf.log(
             (a0 + a1 + a2) ** 2 + (a0 * a2 * phi - (a1 * (a0 + a2) + 4 * a0 * a2)) * phi
         ) / tf.log(10.0)
-        eq = tf.reduce_sum(eq, axis=0)
+        eq_op = tf.reduce_sum(eq_op, axis=0)
 
         # Loss and optimizer
-        loss = tf.reduce_mean(tf.square(eq - eq_target))
-        learning_rate_value = 0.3
+        loss = tf.reduce_mean(tf.square(eq_op - eq_target))
+        learning_rate_value = 0.05
+        decay = 0.99
         learning_rate = tf.placeholder('float32', shape=(), name='learning_rate')
         train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(loss)
 
         # Optimization loop
+        t = time()
+        min_loss = None
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
-            for i in range(300):
+            for i in range(10000):
                 epoch_loss, _ = sess.run([loss, train_step], feed_dict={learning_rate: learning_rate_value})
-                if i > 0 and i % 10 == 0:
-                    print(i, epoch_loss)
-                learning_rate_value = learning_rate_value * 0.995
-            eq, fc, Q, gain = sess.run([eq, fc, Q, gain])
+                if min_loss is None or epoch_loss < min_loss:
+                    # Loss improved, save model
+                    min_loss = epoch_loss
+                    _eq, _fc, _Q, _gain = sess.run([eq_op, fc, Q, gain])
+                    if min_loss < 0.2:
+                        # Good enough, stop optimizing
+                        break
+                if i > 0 and i % 100 == 0:
+                    # Reduce learning rate every 1000 epochs
+                    learning_rate_value = learning_rate_value * decay
+
+        print('Optimized in {duration:.1f}s and achieved loss of {loss:.4f}'.format(duration=time() - t, loss=min_loss))
+
+        return _eq, _fc, _Q, _gain
+
+    def optimize_parametric_eq(self):
+        """Fits multiple biquad filters to equalization curve."""
+        if not len(self.equalization):
+            raise ValueError('Equalization has not been done yet.')
+
+        eq, fc, Q, gain = self._run_optimize_parametric_eq(
+            frequency=self.frequency,
+            target=self.equalization,
+            filter_type='PK',
+            n=20
+        )
 
         fig, ax = plt.subplots()
         plt.plot(self.frequency, self.equalization)
         plt.plot(self.frequency, eq)
-        plt.plot(fc, gain, 'o', color='red')
+        plt.plot(fc, gain, '.', color='red')
         plt.xlabel('Frequency (Hz)')
         plt.semilogx()
         plt.xlim([20, 20000])
@@ -279,8 +326,6 @@ class FrequencyResponse:
         plt.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
         plt.show()
-
-        print(np.hstack([fc, Q, gain]))
 
         return np.hstack([fc, Q, gain])
 
