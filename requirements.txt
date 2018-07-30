@@ -7,3 +7,4 @@ numpy
 PyPDF2
 ghostscript
 tensorflow
+tabulate

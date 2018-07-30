@@ -16,6 +16,7 @@ from warnings import warn
 from datetime import datetime
 import tensorflow as tf
 from time import time
+from tabulate import tabulate
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
@@ -51,6 +52,7 @@ class FrequencyResponse:
                  smoothed=None,
                  error_smoothed=None,
                  equalization=None,
+                 parametric_eq=None,
                  equalized_raw=None,
                  equalized_smoothed=None,
                  target=None):
@@ -65,6 +67,7 @@ class FrequencyResponse:
         self.error = self._init_data(error)
         self.error_smoothed = self._init_data(error_smoothed)
         self.equalization = self._init_data(equalization)
+        self.parametric_eq = self._init_data(parametric_eq)
         self.equalized_raw = self._init_data(equalized_raw)
         self.equalized_smoothed = self._init_data(equalized_smoothed)
         self.target = self._init_data(target)
@@ -92,6 +95,8 @@ class FrequencyResponse:
             self.error_smoothed = self.error_smoothed[sorted_inds]
         if len(self.equalization):
             self.equalization = self.equalization[sorted_inds]
+        if len(self.parametric_eq):
+            self.parametric_eq = self.parametric_eq[sorted_inds]
         if len(self.equalized_raw):
             self.equalized_raw = self.equalized_raw[sorted_inds]
         if len(self.equalized_smoothed):
@@ -105,6 +110,7 @@ class FrequencyResponse:
               error=True,
               error_smoothed=True,
               equalization=True,
+              parametric_eq=True,
               equalized_raw=True,
               equalized_smoothed=True,
               target=True):
@@ -115,6 +121,7 @@ class FrequencyResponse:
                 (error and len(self.error)) or
                 (error_smoothed and len(self.error_smoothed)) or
                 (equalization and len(self.equalization)) or
+                (parametric_eq and len(self.parametric_eq)) or
                 (equalized_raw and len(self.equalized_raw)) or
                 (equalized_smoothed and len(self.equalized_smoothed)) or
                 (target and len(self.target))
@@ -130,6 +137,8 @@ class FrequencyResponse:
             self.error_smoothed = self._init_data(None)
         if equalization:
             self.equalization = self._init_data(None)
+        if parametric_eq:
+            self.parametric_eq = self._init_data(None)
         if equalized_raw:
             self.equalized_raw = self._init_data(None)
         if equalized_smoothed:
@@ -149,6 +158,7 @@ class FrequencyResponse:
         error = list(df['error']) if 'error' in df else None
         smoothed = list(df['smoothed']) if 'smoothed' in df else None
         equalization = list(df['equalization']) if 'equalization' in df else None
+        parametric_eq = list(df['parametric_eq']) if 'parametric_eq' in df else None
         equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
         equalized_smoothed = list(df['equalized_smoothed']) if 'equalized_smoothed' in df else None
         target = list(df['target']) if 'target' in df else None
@@ -160,6 +170,7 @@ class FrequencyResponse:
             error=error,
             smoothed=smoothed,
             equalization=equalization,
+            parametric_eq=parametric_eq,
             equalized_raw=equalized_raw,
             equalized_smoothed=equalized_smoothed,
             target=target
@@ -181,13 +192,15 @@ class FrequencyResponse:
             df['error_smoothed'] = [x if x is not None else 'NaN' for x in self.error_smoothed]
         if len(self.equalization):
             df['equalization'] = [x if x is not None else 'NaN' for x in self.equalization]
+        if len(self.parametric_eq):
+            df['parametric_eq'] = [x if x is not None else 'NaN' for x in self.parametric_eq]
         if len(self.equalized_raw):
             df['equalized_raw'] = [x if x is not None else 'NaN' for x in self.equalized_raw]
         if len(self.equalized_smoothed):
             df['equalized_smoothed'] = [x if x is not None else 'NaN' for x in self.equalized_smoothed]
         if len(self.target):
             df['target'] = [x if x is not None else 'NaN' for x in self.target]
-        df.to_csv(file_path, header=True, index=False)
+        df.to_csv(file_path, header=True, index=False, float_format='%.2f')
 
     def write_eqapo_graphic_eq(self, file_path):
         """Writes equalization graph to a file as Equalizer APO config."""
@@ -203,7 +216,7 @@ class FrequencyResponse:
         return s
 
     @staticmethod
-    def _run_optimize_parametric_eq(frequency, target, n_pk=8, n_ls=1, n_hs=0):
+    def _run_optimize_parametric_eq(frequency, target, n_pk=8, n_ls=1, n_hs=0, target_loss=0.1):
         tf.reset_default_graph()
         fs = tf.constant(48000, name='f', dtype='float32')
         n = n_pk + n_ls + n_hs
@@ -291,8 +304,7 @@ class FrequencyResponse:
         # Loss and optimizer
         loss = tf.reduce_mean(tf.square(eq_op - eq_target))
         learning_rate_value = 0.5
-        decay = 0.99
-        target_loss = 0.1
+        decay = 0.9995
         learning_rate = tf.placeholder('float32', shape=(), name='learning_rate')
         train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(loss)
 
@@ -310,41 +322,52 @@ class FrequencyResponse:
                     if min_loss < target_loss:
                         # Good enough, stop optimizing
                         break
-                if i > 0 and i % 100 == 0:
-                    # Reduce learning rate every 1000 epochs
-                    learning_rate_value = learning_rate_value * decay
+                learning_rate_value = learning_rate_value * decay
 
-        print('Optimized in {duration:.1f}s and achieved loss of {loss:.4f}'.format(duration=time() - t, loss=min_loss))
+        # print('Optimized in {duration:.1f}s and achieved loss of {loss:.4f}'.format(duration=time() - t, loss=min_loss))
 
-        return _eq, _fc, _Q, _gain
+        return _eq, min_loss, _fc, _Q, _gain
 
     def optimize_parametric_eq(self):
         """Fits multiple biquad filters to equalization curve."""
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
 
-        eq, fc, Q, gain = self._run_optimize_parametric_eq(
+        eq, loss, fc, Q, gain = self._run_optimize_parametric_eq(
             frequency=self.frequency,
             target=self.equalization,
             n_ls=0,
-            n_pk=20,
-            n_hs=0
+            n_pk=10,
+            n_hs=0,
+            target_loss=0.1,
         )
 
-        fig, ax = plt.subplots()
-        plt.plot(self.frequency, self.equalization)
-        plt.plot(self.frequency, eq)
-        plt.plot(fc, gain, '.', color='red')
-        plt.xlabel('Frequency (Hz)')
-        plt.semilogx()
-        plt.xlim([20, 20000])
-        plt.ylabel('Amplitude (dBr)')
-        plt.title(self.name)
-        plt.legend(['Equalization', 'Parametric EQ'], fontsize=8)
-        plt.grid(True, which='major')
-        plt.grid(True, which='minor')
-        ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
-        plt.show()
+        if loss > 0.2:
+            eq, loss, fc, Q, gain = self._run_optimize_parametric_eq(
+                frequency=self.frequency,
+                target=self.equalization,
+                n_ls=0,
+                n_pk=20,
+                n_hs=0,
+                target_loss=0.1,
+            )
+
+        self.parametric_eq = eq
+
+        # fig, ax = plt.subplots()
+        # plt.plot(self.frequency, self.equalization)
+        # plt.plot(self.frequency, eq)
+        # plt.plot(fc, gain, '.', color='red')
+        # plt.xlabel('Frequency (Hz)')
+        # plt.semilogx()
+        # plt.xlim([20, 20000])
+        # plt.ylabel('Amplitude (dBr)')
+        # plt.title(self.name)
+        # plt.legend(['Equalization', 'Parametric EQ'], fontsize=8)
+        # plt.grid(True, which='major')
+        # plt.grid(True, which='minor')
+        # ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
+        # plt.show()
 
         return np.hstack([fc, Q, gain])
 
@@ -395,17 +418,55 @@ class FrequencyResponse:
         if os.path.isfile(graphic_eq_path):
             preamp = min(0.0, float(-np.max(self.equalization)))
             preamp = np.floor(preamp * 10) / 10
-            with open(graphic_eq_path, 'r') as f:
-                eq_str = f.read().strip()
 
-            lines.append('Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:')
+            # Read Graphig eq
+            with open(graphic_eq_path, 'r') as f:
+                graphic_eq_str = f.read().strip()
+
+            # Read Parametric eq
+            with open(os.path.join(dir_path, model + ' ParametricEQ.txt'), 'r') as f:
+                parametric_eq_str = f.read().strip()
+
+            # Filters as Markdown table
+            filters = []
+            for line in parametric_eq_str.split('\n'):
+                type = line[line.index('ON')+3:line.index('Fc')-1]
+                if type == 'PK':
+                    type = 'Peaking'
+                if type == 'LS':
+                    type = 'Low Shelf'
+                if type == 'HS':
+                    type = 'High Shelf'
+                fc = line[line.index('Fc')+3:line.index('Gain')-1]
+                gain = line[line.index('Gain')+5:line.index('Q')-1]
+                q = line[line.index('Q')+2:]
+                filters.append([type, fc, q, gain])
+            filters_table_str = tabulate(
+                filters,
+                headers=['Type', 'Fc', 'Q', 'Gain'],
+                tablefmt='orgtbl'
+            ).replace('+', '|').replace('|-', '|:')
+
+            # Produce text
+            lines.append('### EqualizerAPO')
+            lines.append('In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt` with:')
             lines.append('```')
             lines.append('Preamp: {}dB'.format(preamp))
-            lines.append(eq_str)
+            lines.append(graphic_eq_str)
             lines.append('```')
-            lines.append('**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and '
+            lines.append('### HeSuVi')
+            lines.append('In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and '
                          'omit `Preamp: {f_preamp}dB` and instead set Global volume in the UI for both channels to '
                          '**{i_preamp}**.'.format(f_preamp=preamp, i_preamp=int(preamp * 10)))
+            lines.append('### Peace')
+            lines.append('In case of using Peace, replace `C:\Program Files\EqualizerAPO\config\peace\\filters.peace with:')
+            lines.append('```')
+            lines.append(parametric_eq_str)  # This is multi-line but works nevertheless
+            lines.append('```')
+            lines.append('### Other Parametric Eq')
+            lines.append('In case of using other parametric equalizer, build filters manually with these parameters:')
+            lines.append('')
+            lines.append(filters_table_str)
             lines.append('')
 
         # Write image link
@@ -528,6 +589,7 @@ class FrequencyResponse:
             error=False,
             error_smoothed=True,
             equalization=True,
+            parametric_eq=True,
             equalized_raw=True,
             equalized_smoothed=True,
             target=False
@@ -658,6 +720,7 @@ class FrequencyResponse:
             error=False,
             error_smoothed=False,
             equalization=True,
+            parametric_eq=True,
             equalized_raw=True,
             equalized_smoothed=True,
             target=False
@@ -752,6 +815,7 @@ class FrequencyResponse:
                    smoothed=True,
                    error_smoothed=True,
                    equalization=True,
+                   parametric_eq=True,
                    equalized=True,
                    target=True,
                    file_path=None,
@@ -781,14 +845,17 @@ class FrequencyResponse:
         if error and len(self.error):
             plt.plot(self.frequency, self.error, linewidth=1, color='red')
             legend.append('Error')
+        if parametric_eq and len(self.parametric_eq):
+            plt.plot(self.frequency, self.parametric_eq, linewidth=5, color='lightgreen')
+            legend.append('Parametric Eq')
         if equalization and len(self.equalization):
-            plt.plot(self.frequency, self.equalization, linewidth=2, color='limegreen')
+            plt.plot(self.frequency, self.equalization, linewidth=1, color='darkgreen')
             legend.append('Equalization')
         if equalized and len(self.equalized_raw) and not len(self.equalized_smoothed):
             plt.plot(self.frequency, self.equalized_raw, linewidth=1, color='magenta')
             legend.append('Equalized raw')
         if equalized and len(self.equalized_smoothed):
-            plt.plot(self.frequency, self.equalized_smoothed, linewidth=1, color='darkblue')
+            plt.plot(self.frequency, self.equalized_smoothed, linewidth=1, color='blue')
             legend.append('Equalized smoothed')
 
         plt.xlabel('Frequency (Hz)')
@@ -803,7 +870,7 @@ class FrequencyResponse:
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
         if file_path is not None:
             file_path = os.path.abspath(file_path)
-            fig.savefig(file_path, dpi=240)
+            fig.savefig(file_path, dpi=120)
         if show:
             plt.show()
         return fig, ax
@@ -815,12 +882,12 @@ class FrequencyResponse:
         arg_parser.add_argument('--input_dir', type=str, required=True,
                                 help='Path to input data directory. Will look for CSV files in the data directory and '
                                      'recursively in sub-directories.')
-        arg_parser.add_argument('--output_dir', type=str, required=True,
+        arg_parser.add_argument('--output_dir', type=str, default=argparse.SUPPRESS,
                                 help='Path to results directory. Will keep the same relative paths for files found'
                                      'in input_dir.')
-        arg_parser.add_argument('--calibration', type=str, required=False, default=argparse.SUPPRESS,
+        arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
                                 help='File path to CSV containing calibration data. See `calibration` directory.')
-        arg_parser.add_argument('--compensation', type=str, required=False, default=DEFAULT_COMPENSATION_FILE_PATH,
+        arg_parser.add_argument('--compensation', type=str, default=DEFAULT_COMPENSATION_FILE_PATH,
                                 help='File path to CSV containing compensation curve. Compensation is necessary when '
                                      'equalizing because all input data is raw microphone data. See '
                                      'innerfidelity/resources and headphonecom/resources. '
@@ -856,7 +923,7 @@ class FrequencyResponse:
                                 help='Coefficient for treble gain, affects both positive and negative gain. Useful for '
                                      'disabling or reducing equalization power in treble region. Defaults to '
                                      '{}.'.format(DEFAULT_TREBLE_GAIN_K))
-        arg_parser.add_argument('--show_plot', action='store_true', default=False,
+        arg_parser.add_argument('--show_plot', action='store_true',
                                 help='Plot will be shown if this parameter exists, no value needed.')
         return vars(arg_parser.parse_args())
 
@@ -947,6 +1014,13 @@ class FrequencyResponse:
                 )
 
             if output_dir:
+                if equalize:
+                    # Write EqualizerAPO GraphicEq settings to file
+                    fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' GraphicEQ.txt'))
+                    # Write ParametricEq settings to file
+                    fr.write_eqapo_parametric_eq(file_path.replace('.csv', ' ParametricEQ.txt'))
+                    print('Equalized "{}"'.format(fr.name))
+
                 # Write results to CSV file
                 fr.write_to_csv(file_path)
                 # Write plots to file and optionally display them
@@ -955,13 +1029,6 @@ class FrequencyResponse:
                     file_path=file_path.replace('.csv', '.png'),
                 )
                 plt.close(fig)
-
-                if equalize:
-                    # Write EqualizerAPO GraphicEq settings to file
-                    fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' GraphicEQ.txt'))
-                    # Write ParametricEq settings to file
-                    fr.write_eqapo_parametric_eq(file_path.replace('.csv', ' ParametricEQ.txt'))
-                    print('Equalized "{}"'.format(fr.name))
 
                 # Write README.md
                 _readme_path = os.path.join(dir_path, 'README.md')
