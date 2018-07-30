@@ -17,6 +17,7 @@ from datetime import datetime
 import tensorflow as tf
 from time import time
 from tabulate import tabulate
+from PIL import Image
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
@@ -871,6 +872,9 @@ class FrequencyResponse:
         if file_path is not None:
             file_path = os.path.abspath(file_path)
             fig.savefig(file_path, dpi=120)
+            im = Image.open(file_path)
+            im = im.convert('P', palette=Image.ADAPTIVE, colors=60)
+            im.save(file_path, optimize=True)
         if show:
             plt.show()
         return fig, ax
