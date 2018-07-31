@@ -218,7 +218,7 @@ class FrequencyResponse:
         return s
 
     @staticmethod
-    def _run_optimize_parametric_eq(frequency, target, max_filters=None, target_loss=0.1):
+    def _run_optimize_parametric_eq(frequency, target, target_loss=0.1, max_filters=None):
         # Reset graph to be able to run this again
         tf.reset_default_graph()
         # Sampling frequency
@@ -360,7 +360,7 @@ class FrequencyResponse:
 
         return _eq, rmse, _fc, _Q, _gain
 
-    def optimize_parametric_eq(self):
+    def optimize_parametric_eq(self, max_filters=None):
         """Fits multiple biquad filters to equalization curve."""
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
@@ -369,6 +369,7 @@ class FrequencyResponse:
             frequency=self.frequency,
             target=self.equalization,
             target_loss=0.1,
+            max_filters=max_filters
         )
 
         # if loss > 0.2:
@@ -400,12 +401,9 @@ class FrequencyResponse:
 
         return np.hstack([fc, Q, gain])
 
-    def write_eqapo_parametric_eq(self, file_path):
+    def write_eqapo_parametric_eq(self, file_path, filters):
         """Writes EqualizerAPO Parameteric eq settings to a file."""
         file_path = os.path.abspath(file_path)
-
-        # Get the filters
-        filters = self.optimize_parametric_eq()
 
         with open(file_path, 'w') as f:
             f.write('\n'.join(['Filter {i}: ON {type} Fc {fc:.0f} Hz Gain {gain:.1f} dB Q {Q:.2f}'.format(
@@ -433,7 +431,7 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def write_readme(self, file_path):
+    def write_readme(self, file_path, write_graphic_eq=False, write_parametric_eq=False):
         """Writes README.md with picture and Equalizer APO settings."""
         file_path = os.path.abspath(file_path)
         dir_path = os.path.dirname(file_path)
@@ -444,7 +442,7 @@ class FrequencyResponse:
 
         # Add GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
-        if os.path.isfile(graphic_eq_path):
+        if write_graphic_eq and os.path.isfile(graphic_eq_path):
             preamp = min(0.0, float(-np.max(self.equalization)))
             preamp = np.floor(preamp * 10) / 10
 
@@ -474,7 +472,7 @@ class FrequencyResponse:
 
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
-        if os.path.isfile(parametric_eq_path):
+        if write_parametric_eq and os.path.isfile(parametric_eq_path):
             preamp = min(0.0, float(-np.max(self.parametric_eq)))
             preamp = np.floor(preamp * 10) / 10
 
@@ -516,7 +514,6 @@ class FrequencyResponse:
             these parameters:
 
             {filters_table}
-
             '''.format(
                 preamp=preamp,
                 parametric_eq=parametric_eq_str,
@@ -530,7 +527,7 @@ class FrequencyResponse:
             img_url = '/'.join(self._split_path(img_rel_path))
             img_url = 'https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/{}'.format(img_url)
             img_url = urllib.parse.quote(img_url, safe="%/:=&?~#+!$,;'@()*[]")
-            s += '![]({})'.format(img_url)
+            s += '\n![]({})'.format(img_url)
 
         # Write file
         with open(file_path, 'w') as f:
@@ -948,34 +945,38 @@ class FrequencyResponse:
                                 help='File path to CSV containing compensation curve. Compensation is necessary when '
                                      'equalizing because all input data is raw microphone data. See '
                                      'innerfidelity/resources and headphonecom/resources. '
-                                     'Defaults to "{}"'.format(DEFAULT_COMPENSATION_FILE_PATH))
+                                     'Defaults to "{}".'.format(DEFAULT_COMPENSATION_FILE_PATH))
         arg_parser.add_argument('--equalize', action='store_true',
                                 help='Will run equalization if this parameter exists, no value needed.')
+        arg_parser.add_argument('--parametric_eq', action='store_true',
+                                help='Will produce parametric eq settings if this parameter exists, no value needed.')
+        arg_parser.add_argument('--max_filters', type=int, default=argparse.SUPPRESS,
+                                help='Maximum number of filters for parametric EQ.')
         arg_parser.add_argument('--bass_boost', type=float, default=DEFAULT_BASS_BOOST,
                                 help='Target gain for sub-bass in dB. Has flat response from 20 Hz to 60 Hz and a '
-                                     'sigmoid slope down to 200 Hz. Defaults to {}'.format(DEFAULT_BASS_BOOST))
+                                     'sigmoid slope down to 200 Hz. Defaults to {}.'.format(DEFAULT_BASS_BOOST))
         arg_parser.add_argument('--tilt', type=float, default=DEFAULT_TILT,
                                 help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
                                      'frequency response and negative value (downwards slope) will result in darker '
                                      'frequency response. 1 dB/octave will produce nearly 10 dB difference in '
                                      'desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both '
-                                     'will affect the bass gain. Defaults to {}'.format(DEFAULT_TILT))
+                                     'will affect the bass gain. Defaults to {}.'.format(DEFAULT_TILT))
         arg_parser.add_argument('--max_gain', type=float, default=DEFAULT_MAX_GAIN,
                                 help='Maximum positive gain in equalization. Higher max gain allows to equalize deeper '
                                      'dips in  frequency response but will limit output volume if no analog gain is '
                                      'available because positive gain requires negative digital preamp equal to '
-                                     'maximum positive gain. Defaults to {}'.format(DEFAULT_MAX_GAIN))
+                                     'maximum positive gain. Defaults to {}.'.format(DEFAULT_MAX_GAIN))
         arg_parser.add_argument('--treble_f_lower', type=float, default=DEFAULT_TREBLE_F_LOWER,
                                 help='Lower bound for transition region between normal and treble frequencies. Treble '
                                      'frequencies can have different smoothing, max gain and gain K. Defaults to '
-                                     '{}'.format(DEFAULT_TREBLE_F_LOWER))
+                                     '{}.'.format(DEFAULT_TREBLE_F_LOWER))
         arg_parser.add_argument('--treble_f_upper', type=float, default=DEFAULT_TREBLE_F_UPPER,
                                 help='Upper bound for transition region between normal and treble frequencies. Treble '
                                      'frequencies can have different smoothing, max gain and gain K. Defaults to '
-                                     '{}'.format(DEFAULT_TREBLE_F_UPPER))
+                                     '{}.'.format(DEFAULT_TREBLE_F_UPPER))
         arg_parser.add_argument('--treble_max_gain', type=float, default=DEFAULT_TREBLE_MAX_GAIN,
                                 help='Maximum positive gain for equalization in treble region. Defaults to '
-                                     '{}'.format(DEFAULT_TREBLE_MAX_GAIN))
+                                     '{}.'.format(DEFAULT_TREBLE_MAX_GAIN))
         arg_parser.add_argument('--treble_gain_k', type=float, default=DEFAULT_TREBLE_GAIN_K,
                                 help='Coefficient for treble gain, affects both positive and negative gain. Useful for '
                                      'disabling or reducing equalization power in treble region. Defaults to '
@@ -990,6 +991,8 @@ class FrequencyResponse:
              calibration=None,
              compensation=None,
              equalize=False,
+             parametric_eq=False,
+             max_filters=None,
              bass_boost=DEFAULT_BASS_BOOST,
              tilt=DEFAULT_TILT,
              max_gain=DEFAULT_MAX_GAIN,
@@ -999,6 +1002,9 @@ class FrequencyResponse:
              treble_gain_k=DEFAULT_TREBLE_GAIN_K,
              show_plot=False):
         """Parses files in input directory and produces equalization results in output directory."""
+        if parametric_eq and not equalize:
+            raise ValueError('equalize must be True when parametric_eq is True.')
+
         if calibration:
             # Creates FrequencyReponse for compensation data
             calibration_path = os.path.abspath(calibration)
@@ -1069,13 +1075,17 @@ class FrequencyResponse:
                     treble_max_gain=treble_max_gain,
                     treble_gain_k=treble_gain_k
                 )
+                if parametric_eq:
+                    # Get the filters
+                    filters = fr.optimize_parametric_eq(max_filters=max_filters)
 
             if output_dir:
                 if equalize:
                     # Write EqualizerAPO GraphicEq settings to file
                     fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' GraphicEQ.txt'))
-                    # Write ParametricEq settings to file
-                    fr.write_eqapo_parametric_eq(file_path.replace('.csv', ' ParametricEQ.txt'))
+                    if parametric_eq:
+                        # Write ParametricEq settings to file
+                        fr.write_eqapo_parametric_eq(file_path.replace('.csv', ' ParametricEQ.txt'), filters)
                     print('Equalized "{}"'.format(fr.name))
 
                 # Write results to CSV file
@@ -1089,7 +1099,7 @@ class FrequencyResponse:
 
                 # Write README.md
                 _readme_path = os.path.join(dir_path, 'README.md')
-                fr.write_readme(_readme_path)
+                fr.write_readme(_readme_path, write_graphic_eq=equalize, write_parametric_eq=parametric_eq)
                 if _readme_path == readme_path:
                     readme_occupied = True
 

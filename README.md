@@ -359,9 +359,10 @@ obtain the raw data.
 Contributions are more than welcome.
 
 - Biquad filter optimzer for parametric eq
-- Impulse responses
+  - README doc
 - oratory1990 measurements
 - Rtings measurements
 - Reference audio analyzer measurements
 - IEMs
 - Crinacle measurements for IEMs
+- Impulse responses
