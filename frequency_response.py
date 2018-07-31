@@ -7,7 +7,7 @@ import argparse
 import math
 import pandas as pd
 from scipy.interpolate import InterpolatedUnivariateSpline
-from scipy.signal import savgol_filter
+from scipy.signal import savgol_filter, find_peaks
 from scipy.special import expit
 import numpy as np
 from glob import glob
@@ -18,6 +18,7 @@ import tensorflow as tf
 from time import time
 from tabulate import tabulate
 from PIL import Image
+import re
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
@@ -217,30 +218,54 @@ class FrequencyResponse:
         return s
 
     @staticmethod
-    def _run_optimize_parametric_eq(frequency, target, n_pk=8, n_ls=1, n_hs=0, target_loss=0.1):
+    def _run_optimize_parametric_eq(frequency, target, max_filters=None, target_loss=0.1):
+        # Reset graph to be able to run this again
         tf.reset_default_graph()
+        # Sampling frequency
         fs = tf.constant(48000, name='f', dtype='float32')
-        n = n_pk + n_ls + n_hs
+
+        # Filter heavily and find peaks
+        fr_target = FrequencyResponse(name='Target', frequency=frequency, raw=target)
+        fr_target.smoothen(window_size=1/7, iterations=1000)
+        fr_target_pos = np.clip(fr_target.smoothed, a_min=0.0, a_max=None)
+        peak_inds = find_peaks(fr_target_pos)[0]
+        fr_target_neg = np.clip(-fr_target.smoothed, a_min=0.0, a_max=None)
+        peak_inds = np.concatenate((peak_inds, find_peaks(fr_target_neg)[0]))
+        peak_inds.sort()
+        peak_inds = peak_inds[np.abs(fr_target.smoothed[peak_inds]) > 0.1]
+
+        # fr_target.plot_graph(show=False)
+        # plt.plot(frequency[peak_inds], fr_target.smoothed[peak_inds], '.', color='red')
+        # plt.show()
+
+        # TODO: limit number of filters
+        n = n_pk = len(peak_inds) + 2
+        n_ls = n_hs = 0
 
         # Frequencies and target gain
         f = tf.constant(np.repeat(np.expand_dims(frequency, axis=0), n, axis=0), name='f', dtype='float32')
         eq_target = tf.constant(target, name='eq_target', dtype='float32')
 
         # Center frequencies
-        fc_np = np.array([[20*((20000/20)**(1/(n-1)))**i] for i in range(n)], dtype='float32')
+        fc_np = np.expand_dims(np.concatenate((
+            np.array([20.0, 40.0], dtype='float32'),
+            frequency[peak_inds])
+        ), axis=1).astype('float32')
         fc = tf.get_variable('fc', initializer=fc_np, dtype='float32')
 
         # Q
-        Q_init = np.log2(fc_np[1][0] / fc_np[0][0])
+        Q_init = np.ones([n_pk, 1], dtype='float32')
         Q = tf.get_variable('Q', initializer=np.ones([n, 1], dtype='float32') * Q_init, dtype='float32')
 
         # Gain
-        interpolator = InterpolatedUnivariateSpline(np.log10(frequency), target, k=1)
+        interpolator = InterpolatedUnivariateSpline(np.log10(frequency), fr_target.smoothed, k=1)
         gain_init = interpolator(np.log10(fc_np)).astype('float32')
         gain = tf.get_variable('gain', initializer=gain_init, dtype='float32')
 
         # Filter design
+
         # Low shelf filter
+        # This is not used at the moment but is kept for future
         A = 10 ** (gain[:n_ls, :] / 40)
         w0 = 2 * np.pi * fc[:n_ls, :] / fs
         alpha = tf.sin(w0) / (2 * Q[:n_ls, :])
@@ -267,6 +292,7 @@ class FrequencyResponse:
         b2_pk = (1 - alpha * A) / a0_pk
 
         # High self filter
+        # This is not kept at the moment but kept for future
         A = 10 ** (gain[n_ls+n_pk:, :] / 40)
         w0 = 2 * np.pi * fc[n_ls+n_pk:, :] / fs
         alpha = tf.sin(w0) / (2 * Q[n_ls+n_pk:, :])
@@ -325,33 +351,35 @@ class FrequencyResponse:
                         break
                 learning_rate_value = learning_rate_value * decay
 
-        # print('Optimized in {duration:.1f}s and achieved loss of {loss:.4f}'.format(duration=time() - t, loss=min_loss))
+        rmse = np.sqrt(min_loss)  # RMSE
+        print('Optimized {n} filters in {duration:.1f}s and achieved RMSE of {rmse:.2f}dB'.format(
+            n=n,
+            duration=time() - t,
+            rmse=rmse,
+        ))
 
-        return _eq, min_loss, _fc, _Q, _gain
+        return _eq, rmse, _fc, _Q, _gain
 
     def optimize_parametric_eq(self):
         """Fits multiple biquad filters to equalization curve."""
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
 
-        eq, loss, fc, Q, gain = self._run_optimize_parametric_eq(
+        eq, rmse, fc, Q, gain = self._run_optimize_parametric_eq(
             frequency=self.frequency,
             target=self.equalization,
-            n_ls=0,
-            n_pk=10,
-            n_hs=0,
             target_loss=0.1,
         )
 
-        if loss > 0.2:
-            eq, loss, fc, Q, gain = self._run_optimize_parametric_eq(
-                frequency=self.frequency,
-                target=self.equalization,
-                n_ls=0,
-                n_pk=20,
-                n_hs=0,
-                target_loss=0.1,
-            )
+        # if loss > 0.2:
+        #     eq, loss, fc, Q, gain = self._run_optimize_parametric_eq(
+        #         frequency=self.frequency,
+        #         target=self.equalization,
+        #         n_ls=0,
+        #         n_pk=20,
+        #         n_hs=0,
+        #         target_loss=0.1,
+        #     )
 
         self.parametric_eq = eq
 
@@ -382,7 +410,6 @@ class FrequencyResponse:
         with open(file_path, 'w') as f:
             f.write('\n'.join(['Filter {i}: ON {type} Fc {fc:.0f} Hz Gain {gain:.1f} dB Q {Q:.2f}'.format(
                 i=i+1,
-                #type=filters[i]['type'],
                 type='PK',
                 fc=filters[i, 0],
                 Q=filters[i, 1],
@@ -412,9 +439,10 @@ class FrequencyResponse:
         dir_path = os.path.dirname(file_path)
         model = self.name
 
-        lines = ['# ' + model]
+        # Write model
+        s = '# {}\n'.format(model)
 
-        # Write GraphicEQ settings
+        # Add GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
         if os.path.isfile(graphic_eq_path):
             preamp = min(0.0, float(-np.max(self.equalization)))
@@ -424,8 +452,34 @@ class FrequencyResponse:
             with open(graphic_eq_path, 'r') as f:
                 graphic_eq_str = f.read().strip()
 
+            # Produce text
+            s += '''
+            ### EqualizerAPO
+            In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+            with:
+            ```
+            Preamp: {preamp}dB
+            {graphic_eq}
+            ```
+            
+            ### HeSuVi
+            In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+            {f_preamp}dB` and instead set Global volume in the UI for both channels to **{i_preamp}**
+            '''.format(
+                preamp=preamp,
+                graphic_eq=graphic_eq_str,
+                f_preamp=preamp,
+                i_preamp=int(preamp * 10)
+            )
+
+        # Add parametric EQ settings
+        parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
+        if os.path.isfile(parametric_eq_path):
+            preamp = min(0.0, float(-np.max(self.parametric_eq)))
+            preamp = np.floor(preamp * 10) / 10
+
             # Read Parametric eq
-            with open(os.path.join(dir_path, model + ' ParametricEQ.txt'), 'r') as f:
+            with open(parametric_eq_path, 'r') as f:
                 parametric_eq_str = f.read().strip()
 
             # Filters as Markdown table
@@ -448,27 +502,26 @@ class FrequencyResponse:
                 tablefmt='orgtbl'
             ).replace('+', '|').replace('|-', '|:')
 
-            # Produce text
-            lines.append('### EqualizerAPO')
-            lines.append('In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt` with:')
-            lines.append('```')
-            lines.append('Preamp: {}dB'.format(preamp))
-            lines.append(graphic_eq_str)
-            lines.append('```')
-            lines.append('### HeSuVi')
-            lines.append('In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and '
-                         'omit `Preamp: {f_preamp}dB` and instead set Global volume in the UI for both channels to '
-                         '**{i_preamp}**.'.format(f_preamp=preamp, i_preamp=int(preamp * 10)))
-            lines.append('### Peace')
-            lines.append('In case of using Peace, replace `C:\Program Files\EqualizerAPO\config\peace\\filters.peace with:')
-            lines.append('```')
-            lines.append(parametric_eq_str)  # This is multi-line but works nevertheless
-            lines.append('```')
-            lines.append('### Other Parametric Eq')
-            lines.append('In case of using other parametric equalizer, build filters manually with these parameters:')
-            lines.append('')
-            lines.append(filters_table_str)
-            lines.append('')
+            s += '''
+            ### Peace
+            In case of using Peace, replace `C:\Program Files\EqualizerAPO\config\peace\\filters.peace` with:
+            ```
+            Channel: all
+            Preamp: {preamp}dB
+            {parametric_eq}
+            ```
+
+            ### Other Parametric EQs
+            In case of using other parametric equalizer, apply preamp of **{preamp}dB** and build filters manually with
+            these parameters:
+
+            {filters_table}
+
+            '''.format(
+                preamp=preamp,
+                parametric_eq=parametric_eq_str,
+                filters_table=filters_table_str
+            )
 
         # Write image link
         img_path = os.path.join(dir_path, model + '.png')
@@ -477,11 +530,11 @@ class FrequencyResponse:
             img_url = '/'.join(self._split_path(img_rel_path))
             img_url = 'https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/{}'.format(img_url)
             img_url = urllib.parse.quote(img_url, safe="%/:=&?~#+!$,;'@()*[]")
-            lines.append('![]({})'.format(img_url))
+            s += '![]({})'.format(img_url)
 
         # Write file
         with open(file_path, 'w') as f:
-            f.write('\n'.join(lines) + '\n')
+            f.write(re.sub('\n[ \t]+', '\n', s).strip())
 
     @staticmethod
     def generate_frequencies(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=DEFAULT_STEP):
