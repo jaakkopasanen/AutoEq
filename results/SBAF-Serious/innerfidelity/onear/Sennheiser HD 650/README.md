@@ -12,6 +12,9 @@ GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
 -6.5dB` and instead set Global volume in the UI for both channels to **-65**
 
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 650 ParametricEQ.txt`.
+
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters:
@@ -27,7 +30,7 @@ these parameters:
 | Peaking | 8882 Hz | 2.77 | -0.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
-# Run 2018-07-31T21:49:16.334750
+# Run 2018-07-31T22:05:03.797121
 There results were obtained with parameters:
 * `--input_dir="innerfidelity\data\onear\Sennheiser HD 650"`
 * `--output_dir="results\SBAF-Serious\innerfidelity\onear\Sennheiser HD 650"`

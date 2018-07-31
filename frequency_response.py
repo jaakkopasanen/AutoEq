@@ -490,12 +490,16 @@ class FrequencyResponse:
             ).replace('+', '|').replace('|-', '|:')
 
             s += '''
+            ### Peace
+            In case of using Peace, click *Import* in Peace GUI and select `{model} ParametricEQ.txt`.
+            
             ### Parametric EQs
             In case of using other parametric equalizer, apply preamp of **{preamp}dB** and build filters manually with
             these parameters:
 
             {filters_table}
             '''.format(
+                model=model,
                 preamp=preamp,
                 parametric_eq=parametric_eq_str,
                 filters_table=filters_table_str
