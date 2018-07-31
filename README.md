@@ -31,6 +31,7 @@ Microsoft Excel. See [Calibration](https://github.com/jaakkopasanen/AutoEq#calib
 things were obtained and processed.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
+
 *Sennheiser HD 650 equalization results plotted*
 
 
@@ -59,6 +60,7 @@ EqualizerAPO has a graphical user interface for adjusting configurations. Launch
 `C:\Program Files\EqualizerAPO\Editor.exe`.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/EqualizerAPOEditor.PNG)
+
 *EqualizerAPO Editor GUI*
 
 ### HeSuVi
@@ -71,6 +73,7 @@ the produced `GraphicEQ: ...` line. Then start HeSuVi and adjust global volume f
 You can save the configuration with profile manager in bottom right corner.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi.PNG)
+
 *HeSuVi GUI for EqualizerAPO*
 
 ### Peace and Other Parametric Equalizers
@@ -85,6 +88,7 @@ the configuration file produced is only compatible with EqualizerAPO.
 Keep in mind that parametric eq produced is not as accurate as graphic eq because there is limited number of filters.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
+
 *Peace with full GUI for EqualizerAPO*
 
 
