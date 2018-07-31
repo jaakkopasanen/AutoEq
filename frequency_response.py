@@ -19,6 +19,7 @@ from time import time
 from tabulate import tabulate
 from PIL import Image
 import re
+import biquad
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
@@ -358,6 +359,17 @@ class FrequencyResponse:
             rmse=rmse,
         ))
 
+        # Remove filters with less than 0.1dB gain. Optimizer might produce these sometimes.
+        sl = (np.abs(_gain) > 0.1)
+        _fc = np.expand_dims(_fc[sl], axis=1)
+        _Q = np.expand_dims(np.abs(_Q[sl]), axis=1)
+        _gain = np.expand_dims(_gain[sl], axis=1)
+
+        # Re-compute eq
+        a0, a1, a2, b0, b1, b2 = biquad.peaking(_fc, _Q, _gain, fs=48000)
+        frequency = np.repeat(np.expand_dims(frequency, axis=0), len(_fc), axis=0)
+        _eq = np.sum(biquad.digital_coeffs(frequency, 48000, a0, a1, a2, b0, b1, b2), axis=0)
+
         return _eq, rmse, _fc, _Q, _gain
 
     def optimize_parametric_eq(self, max_filters=None):
@@ -372,32 +384,7 @@ class FrequencyResponse:
             max_filters=max_filters
         )
 
-        # if loss > 0.2:
-        #     eq, loss, fc, Q, gain = self._run_optimize_parametric_eq(
-        #         frequency=self.frequency,
-        #         target=self.equalization,
-        #         n_ls=0,
-        #         n_pk=20,
-        #         n_hs=0,
-        #         target_loss=0.1,
-        #     )
-
         self.parametric_eq = eq
-
-        # fig, ax = plt.subplots()
-        # plt.plot(self.frequency, self.equalization)
-        # plt.plot(self.frequency, eq)
-        # plt.plot(fc, gain, '.', color='red')
-        # plt.xlabel('Frequency (Hz)')
-        # plt.semilogx()
-        # plt.xlim([20, 20000])
-        # plt.ylabel('Amplitude (dBr)')
-        # plt.title(self.name)
-        # plt.legend(['Equalization', 'Parametric EQ'], fontsize=8)
-        # plt.grid(True, which='major')
-        # plt.grid(True, which='minor')
-        # ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
-        # plt.show()
 
         return np.hstack([fc, Q, gain])
 
@@ -444,7 +431,7 @@ class FrequencyResponse:
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
         if write_graphic_eq and os.path.isfile(graphic_eq_path):
             preamp = min(0.0, float(-np.max(self.equalization)))
-            preamp = np.floor(preamp * 10) / 10
+            preamp = np.floor(preamp * 10) / 10 - 0.5
 
             # Read Graphig eq
             with open(graphic_eq_path, 'r') as f:
@@ -473,8 +460,10 @@ class FrequencyResponse:
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
         if write_parametric_eq and os.path.isfile(parametric_eq_path):
-            preamp = min(0.0, float(-np.max(self.parametric_eq)))
-            preamp = np.floor(preamp * 10) / 10
+            preamp = np.min([0.0, float(-np.max(self.parametric_eq))])
+            # Subtract 0.5dB and round down with resolution of 0.5dB
+            # This is done to protect from affect of potential removed < 0.1dB filters in optimization
+            preamp = np.floor((preamp - 0.5) * 2) / 2
 
             # Read Parametric eq
             with open(parametric_eq_path, 'r') as f:
@@ -501,15 +490,7 @@ class FrequencyResponse:
             ).replace('+', '|').replace('|-', '|:')
 
             s += '''
-            ### Peace
-            In case of using Peace, replace `C:\Program Files\EqualizerAPO\config\peace\\filters.peace` with:
-            ```
-            Channel: all
-            Preamp: {preamp}dB
-            {parametric_eq}
-            ```
-
-            ### Other Parametric EQs
+            ### Parametric EQs
             In case of using other parametric equalizer, apply preamp of **{preamp}dB** and build filters manually with
             these parameters:
 

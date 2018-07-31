@@ -64,23 +64,27 @@ EqualizerAPO has a graphical user interface for adjusting configurations. Launch
 headphone surround virtualizations available. HeSuVi also provides
 a convenient graphical user interface for adjusting the equalizer, toggling eq on and off, adjusting preamp and saving
 and restoring multiple different configurations making it very easy to compare different eq settings. To load an eq into
-HeSuVi, close HeSuVi and replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with the
-produced `GraphicEQ: ...` line. Then start HeSuVi and adjust global volume for both channels to highest eq value. You
-can save the configuration with profile manager in bottom right corner.
+HeSuVi, close HeSuVi and replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with
+the produced `GraphicEQ: ...` line. Then start HeSuVi and adjust global volume for both channels to highest eq value.
+You can save the configuration with profile manager in bottom right corner.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi.PNG)
 *HeSuVi GUI for EqualizerAPO*
 
-### Peace
-If you are already using Peace GUI for EqualizerAPO you'll have to disable the configurations made by it because Peace
-doesn't work with GraphicEQ and you don't want to have two EQs on at the same time. Simply toggling the master switch in
-the top right corner off will disable everything Peace is doing. After Peace has been disabled you can follow
-instructions in the [Plain EqualizerAPO](https://github.com/jaakkopasanen/AutoEq#plain-equalizerapo) section.
+### Peace and Other Parametric Equalizers
+[Peace](https://sourceforge.net/projects/peace-equalizer-apo-extension/) is a GUI for manipulating parametric eq filters
+with EqualizerAPO. Peace also has visualization for the end result equalization frequency response, profile manager for
+multiple different eq settings and a switch for disabling everything among other features. Load eq settings into Peace
+by clicking *Import* button and select the *<model> ParametricEQ.txt* file.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/PeaceOff.PNG)
-*Peace GUI for EqualizerAPO with master switch off*
+To load an eq into a some other graphic equalizer you'll have to adjust preamp and build the filters manually because
+the configuration file produced is only compatible with EqualizerAPO.
 
-Producing parametric eq settings for Peace users could be a consideration for the future if enough people request that.
+Keep in mind that parametric eq produced is not as accurate as graphic eq because there is limited number of filters.
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
+*Peace with full GUI for EqualizerAPO*
+
 
 ## Results
 The main princible used by AutoEQ for producing the equalization function is to invert error function. Error is the
@@ -166,9 +170,11 @@ cd C:\path\to\AutoEq-master
 
 ### Command Line Arguments
 ````
-usage: frequency_response.py [-h] --input_dir INPUT_DIR --output_dir
-                             OUTPUT_DIR [--calibration CALIBRATION]
+usage: frequency_response.py [-h] --input_dir INPUT_DIR
+                             [--output_dir OUTPUT_DIR]
+                             [--calibration CALIBRATION]
                              [--compensation COMPENSATION] [--equalize]
+                             [--parametric_eq] [--max_filters MAX_FILTERS]
                              [--bass_boost BASS_BOOST] [--tilt TILT]
                              [--max_gain MAX_GAIN]
                              [--treble_f_lower TREBLE_F_LOWER]
@@ -194,46 +200,49 @@ optional arguments:
                         input data is raw microphone data. See
                         innerfidelity/resources and headphonecom/resources.
                         Defaults to "innerfidelity\resources\innerfidelity_com
-                        pensation_SBAF-Serious.brighter.csv"
+                        pensation_SBAF-Serious-brighter.csv".
   --equalize            Will run equalization if this parameter exists, no
                         value needed.
+  --parametric_eq       Will produce parametric eq settings if this parameter
+                        exists, no value needed.
+  --max_filters MAX_FILTERS
+                        Maximum number of filters for parametric EQ.
   --bass_boost BASS_BOOST
                         Target gain for sub-bass in dB. Has flat response from
                         20 Hz to 60 Hz and a sigmoid slope down to 200 Hz.
-                        Defaults to 0.0
+                        Defaults to 0.0.
   --tilt TILT           Target tilt in dB/octave. Positive value (upwards
                         slope) will result in brighter frequency response and
                         negative value (downwards slope) will result in darker
                         frequency response. 1 dB/octave will produce nearly 10
                         dB difference in desired value between 20 Hz and 20
                         kHz. Tilt is applied with bass boost and both will
-                        affect the bass gain. Defaults to 0.0
+                        affect the bass gain. Defaults to 0.0.
   --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain
                         allows to equalize deeper dips in frequency response
                         but will limit output volume if no analog gain is
                         available because positive gain requires negative
                         digital preamp equal to maximum positive gain.
-                        Defaults to 6.0
+                        Defaults to 6.0.
   --treble_f_lower TREBLE_F_LOWER
                         Lower bound for transition region between normal and
                         treble frequencies. Treble frequencies can have
                         different smoothing, max gain and gain K. Defaults to
-                        6000.0
+                        6000.0.
   --treble_f_upper TREBLE_F_UPPER
                         Upper bound for transition region between normal and
                         treble frequencies. Treble frequencies can have
                         different smoothing, max gain and gain K. Defaults to
-                        8000.0
+                        8000.0.
   --treble_max_gain TREBLE_MAX_GAIN
                         Maximum positive gain for equalization in treble
-                        region. Defaults to 0.0
+                        region. Defaults to 0.0.
   --treble_gain_k TREBLE_GAIN_K
                         Coefficient for treble gain, affects both positive and
                         negative gain. Useful for disabling or reducing
                         equalization power in treble region. Defaults to 1.0.
   --show_plot           Plot will be shown if this parameter exists, no value
                         needed.
-
 ````
 
 ### Examples
@@ -339,6 +348,9 @@ to +6dB to not to cripple user's volume too much. Max gain will clip the equaliz
 in it. Sharp changes in equalization may produce unwanted equalization artifacts. To counter this AutoEQ rounds the
 corners whenever max gain clips the curve.
 
+## Parametric Equalizer
+
+
 ## Data Processing
 Measurement data for this project was obtained by crawling Innerfidelity and Headphone.com databases. For Innerfidelity
 that means downloading all PDFs, turning them into images with Ghostscript, parsing images with Python PIL package and
@@ -359,7 +371,10 @@ obtain the raw data.
 Contributions are more than welcome.
 
 - Biquad filter optimzer for parametric eq
+  - max filters
   - README doc
+- Re-organize results to <model>/<tuning>/<source>
+  - List of recommended tuning - source pairs
 - oratory1990 measurements
 - Rtings measurements
 - Reference audio analyzer measurements
