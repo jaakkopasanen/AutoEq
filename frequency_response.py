@@ -226,7 +226,7 @@ class FrequencyResponse:
         fs = tf.constant(48000, name='f', dtype='float32')
 
         # Filter heavily and find peaks
-        fr_target = FrequencyResponse(name='Target', frequency=frequency, raw=target)
+        fr_target = FrequencyResponse(name='Filter Initialization', frequency=frequency, raw=target)
         fr_target.smoothen(window_size=1/7, iterations=1000)
         fr_target_pos = np.clip(fr_target.smoothed, a_min=0.0, a_max=None)
         peak_inds = find_peaks(fr_target_pos)[0]
@@ -265,7 +265,43 @@ class FrequencyResponse:
         def merge_filters():
             # Merge two filters which have small integral between them
             nonlocal peak_fc, peak_g
-            return None  # No prominent filter pairs
+            # Form filter pairs, select only filters with equal gain sign
+            pair_inds = []
+            for j in range(len(peak_fc) - 1):
+                if np.sign(peak_g[j]) == np.sign(peak_g[j+1]):
+                    pair_inds.append(j)
+
+            min_err = None
+            min_err_ind = None
+            for pair_ind in pair_inds:
+                # Interpolate between the two points
+                f_0 = peak_fc[pair_ind]
+                g_0 = peak_g[pair_ind]
+                i_0 = np.where(frequency == f_0)[0][0]
+                f_1 = peak_fc[pair_ind+1]
+                i_1 = np.where(frequency == f_1)[0][0]
+                g_1 = peak_g[pair_ind]
+                interp = InterpolatedUnivariateSpline(np.log10([f_0, f_1]), [g_0, g_1], k=1)
+                line = interp(frequency[i_0:i_1+1])
+                err = line - fr_target.smoothed[i_0:i_1+1]
+                err = np.sqrt(np.mean(np.square(err)))  # Root mean squared error
+                if min_err is None or err < min_err:
+                    min_err = err
+                    min_err_ind = pair_ind
+            # Select smallest error if err < threshold
+            if min_err < 0.3:
+                # New filter
+                c = peak_fc[min_err_ind] * np.sqrt(peak_fc[min_err_ind+1] / peak_fc[min_err_ind])
+                c = frequency[np.argmin(np.abs(frequency - c))]
+                g = np.mean([peak_g[min_err_ind], peak_g[min_err_ind+1]])
+                # Remove filters
+                peak_fc = np.delete(peak_fc, [min_err_ind, min_err_ind+1])
+                peak_g = np.delete(peak_g, [min_err_ind, min_err_ind+1])
+                # Add filter in-between
+                peak_fc = np.insert(peak_fc, min_err_ind, c)
+                peak_g = np.insert(peak_g, min_err_ind, g)
+                return True
+            return False  # No prominent filter pairs
 
         remove_small_filters(0.1)
         if max_filters is not None:
@@ -278,23 +314,23 @@ class FrequencyResponse:
                 remove_small_filters(0.33)
 
             # Merge filters if needed
-            #while merge_filters() is not None and len(peak_fc) > max_filters:
-            #    pass
+            while merge_filters() and len(peak_fc) > max_filters:
+                pass
 
             if len(peak_fc) > max_filters:
                 # Remove smallest filters
-                sorted_inds = np.flip(np.argsort(peak_g))
-                sorted_inds = sorted_inds[:len(peak_fc)-max_filters+1]
+                sorted_inds = np.flip(np.argsort(np.abs(peak_g)))
+                sorted_inds = sorted_inds[:max_filters]
                 peak_fc = peak_fc[sorted_inds]
                 peak_g = peak_g[sorted_inds]
 
         # fr_target.plot_graph(show=False)
-        # fr_target.plot_graph(show=False)
-        # plt.plot(peak_fc_all, peak_g_all, 'o', color='red')
-        # plt.plot(peak_fc, peak_g, '.', color='limegreen')
-        # plt.show()
+        fr_target.plot_graph(show=False)
+        plt.plot(peak_fc_all, peak_g_all, 'o', color='red')
+        plt.plot(peak_fc, peak_g, '.', color='limegreen')
+        plt.legend(['Smoothed Target', 'Equalization Target', 'Before Reduction', 'After Reduction'])
+        plt.show()
 
-        # TODO: limit number of filters
         n = n_pk = len(peak_fc)
         n_ls = n_hs = 0
 
@@ -399,30 +435,26 @@ class FrequencyResponse:
                     # Improvement, update model
                     _eq, _fc, _Q, _gain = sess.run([eq_op, fc, Q, gain])
                 if min_loss is None or min_loss - step_loss > threshold:
-                    if min_loss is not None:
-                        print('Improvement {i:.4f} after {bs} bad steps'.format(i=min_loss-step_loss, bs=bad_steps))
                     # Loss improved
                     min_loss = step_loss
                     bad_steps = 0
                     if min_loss < target_loss:
                         # Good enough, stop optimizing
-                        print('Good enough')
                         break
                 else:
                     # No improvement, increment bad step counter
                     bad_steps += 1
                 if bad_steps > momentum:
                     # Bad steps exceed maximum number of bad steps, break
-                    print('Momentum exceeded at {}'.format(bad_steps))
                     break
                 learning_rate_value = learning_rate_value * decay
 
         rmse = np.sqrt(min_loss)  # RMSE
-        print('Optimized {n} filters in {duration:.1f}s and achieved RMSE of {rmse:.2f}dB'.format(
-            n=n,
-            duration=time() - t,
-            rmse=rmse,
-        ))
+        # print('Optimized {n} filters in {duration:.1f}s and achieved RMSE of {rmse:.2f}dB'.format(
+        #     n=n,
+        #     duration=time() - t,
+        #     rmse=rmse,
+        # ))
 
         # Remove filters with less than 0.1dB gain. Optimizer might produce these sometimes.
         sl = (np.abs(_gain) > 0.1)
@@ -441,8 +473,6 @@ class FrequencyResponse:
         """Fits multiple biquad filters to equalization curve."""
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
-
-        #max_filters = 5
 
         eq, rmse, fc, Q, gain = self._run_optimize_parametric_eq(
             frequency=self.frequency,

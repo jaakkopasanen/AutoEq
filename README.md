@@ -356,6 +356,13 @@ corners whenever max gain clips the curve.
 
 ## Parametric Equalizer
 
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/FilterInitialization.png)
+
+*Equalization target and initial peak filters for optimization before and after filter number limitation*
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/1More%20MK801.png)
+
+*1More MK801 with parametric equalization*
 
 ## Data Processing
 Measurement data for this project was obtained by crawling Innerfidelity and Headphone.com databases. For Innerfidelity
