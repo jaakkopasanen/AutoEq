@@ -235,12 +235,67 @@ class FrequencyResponse:
         peak_inds.sort()
         peak_inds = peak_inds[np.abs(fr_target.smoothed[peak_inds]) > 0.1]
 
+        # Positive, dropping and first peak is positive \/\ -> 20 Hz to first peak
+        # Positive, dropping and first peak is negative \ -> 20 Hz to zero crossing
+        # Positive and raising /\ -> Nothing
+
+        # Peak center frequencies and gains
+        peak_fc = frequency[peak_inds].astype('float32')
+
+        if peak_fc[0] > 80:
+            # First peak is beyond 80Hz, add peaks to 20Hz and 60Hz
+            peak_fc = np.concatenate((np.array([20, 60], dtype='float32'), peak_fc))
+        elif peak_fc[0] > 40:
+            # First peak is beyond 40Hz, add peak to 20Hz
+            peak_fc = np.concatenate((np.array([20], dtype='float32'), peak_fc))
+
+        # Gains at peak center frequencies
+        interpolator = InterpolatedUnivariateSpline(np.log10(frequency), fr_target.smoothed, k=1)
+        peak_g = interpolator(np.log10(peak_fc)).astype('float32')
+
+        peak_fc_all = peak_fc
+        peak_g_all = peak_g
+
+        def remove_small_filters(min_gain):
+            # Remove peaks with too little gain
+            nonlocal peak_fc, peak_g
+            peak_fc = peak_fc[np.abs(peak_g) > min_gain]
+            peak_g = peak_g[np.abs(peak_g) > min_gain]
+
+        def merge_filters():
+            # Merge two filters which have small integral between them
+            nonlocal peak_fc, peak_g
+            return None  # No prominent filter pairs
+
+        remove_small_filters(0.1)
+        if max_filters is not None:
+            if len(peak_fc) > max_filters:
+                # Remove too small filters
+                remove_small_filters(0.2)
+
+            if len(peak_fc) > max_filters:
+                # Try to remove some more
+                remove_small_filters(0.33)
+
+            # Merge filters if needed
+            #while merge_filters() is not None and len(peak_fc) > max_filters:
+            #    pass
+
+            if len(peak_fc) > max_filters:
+                # Remove smallest filters
+                sorted_inds = np.flip(np.argsort(peak_g))
+                sorted_inds = sorted_inds[:len(peak_fc)-max_filters+1]
+                peak_fc = peak_fc[sorted_inds]
+                peak_g = peak_g[sorted_inds]
+
         # fr_target.plot_graph(show=False)
-        # plt.plot(frequency[peak_inds], fr_target.smoothed[peak_inds], '.', color='red')
+        # fr_target.plot_graph(show=False)
+        # plt.plot(peak_fc_all, peak_g_all, 'o', color='red')
+        # plt.plot(peak_fc, peak_g, '.', color='limegreen')
         # plt.show()
 
         # TODO: limit number of filters
-        n = n_pk = len(peak_inds) + 2
+        n = n_pk = len(peak_fc)
         n_ls = n_hs = 0
 
         # Frequencies and target gain
@@ -248,20 +303,14 @@ class FrequencyResponse:
         eq_target = tf.constant(target, name='eq_target', dtype='float32')
 
         # Center frequencies
-        fc_np = np.expand_dims(np.concatenate((
-            np.array([20.0, 40.0], dtype='float32'),
-            frequency[peak_inds])
-        ), axis=1).astype('float32')
-        fc = tf.get_variable('fc', initializer=fc_np, dtype='float32')
+        fc = tf.get_variable('fc', initializer=np.expand_dims(peak_fc, axis=1), dtype='float32')
 
         # Q
         Q_init = np.ones([n_pk, 1], dtype='float32')
         Q = tf.get_variable('Q', initializer=np.ones([n, 1], dtype='float32') * Q_init, dtype='float32')
 
         # Gain
-        interpolator = InterpolatedUnivariateSpline(np.log10(frequency), fr_target.smoothed, k=1)
-        gain_init = interpolator(np.log10(fc_np)).astype('float32')
-        gain = tf.get_variable('gain', initializer=gain_init, dtype='float32')
+        gain = tf.get_variable('gain', initializer=np.expand_dims(peak_g, axis=1), dtype='float32')
 
         # Filter design
 
@@ -339,17 +388,33 @@ class FrequencyResponse:
         # Optimization loop
         t = time()
         min_loss = None
+        threshold = 0.01
+        momentum = 300
+        bad_steps = 0
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
-            for i in range(5000):
-                epoch_loss, _ = sess.run([loss, train_step], feed_dict={learning_rate: learning_rate_value})
-                if min_loss is None or epoch_loss < min_loss:
-                    # Loss improved, save model
-                    min_loss = epoch_loss
+            for i in range(10000):
+                step_loss, _ = sess.run([loss, train_step], feed_dict={learning_rate: learning_rate_value})
+                if min_loss is None or step_loss < min_loss:
+                    # Improvement, update model
                     _eq, _fc, _Q, _gain = sess.run([eq_op, fc, Q, gain])
+                if min_loss is None or min_loss - step_loss > threshold:
+                    if min_loss is not None:
+                        print('Improvement {i:.4f} after {bs} bad steps'.format(i=min_loss-step_loss, bs=bad_steps))
+                    # Loss improved
+                    min_loss = step_loss
+                    bad_steps = 0
                     if min_loss < target_loss:
                         # Good enough, stop optimizing
+                        print('Good enough')
                         break
+                else:
+                    # No improvement, increment bad step counter
+                    bad_steps += 1
+                if bad_steps > momentum:
+                    # Bad steps exceed maximum number of bad steps, break
+                    print('Momentum exceeded at {}'.format(bad_steps))
+                    break
                 learning_rate_value = learning_rate_value * decay
 
         rmse = np.sqrt(min_loss)  # RMSE
@@ -376,6 +441,8 @@ class FrequencyResponse:
         """Fits multiple biquad filters to equalization curve."""
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
+
+        #max_filters = 5
 
         eq, rmse, fc, Q, gain = self._run_optimize_parametric_eq(
             frequency=self.frequency,
