@@ -348,16 +348,16 @@ corners whenever max gain clips the curve.
 
 ## Parametric Equalizer
 AutoEQ has an optimizer to fit several peaking filters to the desired equalization curve. Optimization is part heuristic
-initialization part mathematical optimization.
+initialization and part mathematical optimization.
 
 In the initialization phase peaks are detected from the target curve and a peaking filter is created to match the peak's
 height (gain) and location (frequency). This way the optimizer finds suitable number of filters to optimize. If bass
-region has no peaks and therefore is missing filters entirely maximum of two filters will be added at 20 Hz and 60 Hz.
+region has no peaks and therefore is missing filters entirely, maximum of two filters will be added at 20 Hz and 60 Hz.
 
 A way to limit the number of filters used is provided with `max_filters` parameter. If there are too many filters after
-initialization filters are removed. First filters with small gain (< 0.2 dB and < 0.33 dB) are removed. If there are too
+initialization, some filters are removed. First filters with small gain (< 0.2 dB and < 0.33 dB) are removed. If there are too
 many filters after reduction of small gain filters, nearby filters are attempted to merge. Merged filter will be in the
-mid point of the merged filters. If merging filters did not reduce the count enough smallest filters are removed until
+mid point of the merged filters. If merging filters did not reduce the count enough, smallest filters are removed until
 count matches maximum allowed number of filters. Image below shows initialization for 1More MK801 headphone. Red dots
 are the peaks of filters before reduction and green dots are the peaks after reduction.
 
@@ -367,7 +367,7 @@ are the peaks of filters before reduction and green dots are the peaks after red
 
 After suitable number of filters have been achieved and filter center frequencies and gains have been set to appropriate
 values a mathematical optimization is performed to fit sum frequency response of all filters to match as close as
-possible the desired curve. Optimization is based on gradient descent optimizer and will attempt to minimize mean
+possible the desired curve. Optimization is based on gradient descent and will attempt to minimize mean
 squared error between the sum frequency response of the filters and the target. When improvements in the error are
 getting too small to make a practical difference the optimization is stopped. Animation below shows progress from the
 initialization to a close finished curve.
