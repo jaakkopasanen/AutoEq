@@ -404,8 +404,6 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- Re-organize results to `<source>/<tuning>/<model>`
-  - List of recommended results
 - oratory1990 measurements
 - Rtings measurements
 - Reference audio analyzer measurements
