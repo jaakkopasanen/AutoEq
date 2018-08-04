@@ -444,7 +444,7 @@ class FrequencyResponse:
         plt.ylabel('Amplitude (dBr)')
         plt.ylim([-12, 12])
         plt.title('Parametric EQ Optimization')
-        plt.legend(['Target', 'Estimated'])
+        plt.legend(['Target', 'Parametric EQ'])
         plt.grid(True, which='major')
         plt.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
@@ -493,6 +493,7 @@ class FrequencyResponse:
         n_frames = 30
         ani = animation.FuncAnimation(fig, animate, eqs[:n_frames], interval=4000/n_frames)
         #plt.show()
+        #ani.save('Optimization.gif', writer=animation.writers['pillow'](fps=10))
 
         # Remove filters with less than 0.1dB gain. Optimizer might produce these sometimes.
         sl = (np.abs(_gain) > 0.1)

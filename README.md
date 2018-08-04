@@ -360,6 +360,10 @@ corners whenever max gain clips the curve.
 
 *Equalization target and initial peak filters for optimization before and after filter number limitation*
 
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Optimization.gif)
+
+*Optimization of parametric eq filters*
+
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/1More%20MK801.png)
 
 *1More MK801 with parametric equalization*
