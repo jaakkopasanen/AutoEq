@@ -30,7 +30,7 @@ numerical format. Everything is stored as CSV files so they are easy to process 
 Microsoft Excel. See [Calibration](https://github.com/jaakkopasanen/AutoEq#calibration) and [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing) for more technical description about how
 things were obtained and processed.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
+![sennheiser-hd650](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
 
 *Sennheiser HD 650 equalization results plotted*
 
@@ -59,7 +59,7 @@ GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.
 EqualizerAPO has a graphical user interface for adjusting configurations. Launch the editor from
 `C:\Program Files\EqualizerAPO\Editor.exe`.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/EqualizerAPOEditor.PNG)
+![equalizerapo-editor](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/EqualizerAPOEditor.PNG)
 
 *EqualizerAPO Editor GUI*
 
@@ -72,7 +72,7 @@ HeSuVi, close HeSuVi and replace contents of HeSuVi's eq file `C:\Program Files\
 the produced `GraphicEQ: ...` line. Then start HeSuVi and adjust global volume for both channels to highest eq value.
 You can save the configuration with profile manager in bottom right corner.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi.PNG)
+![hesuvi](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi.PNG)
 
 *HeSuVi GUI for EqualizerAPO*
 
@@ -87,7 +87,7 @@ the configuration file produced is only compatible with EqualizerAPO.
 
 Keep in mind that parametric eq produced is not as accurate as graphic eq because there is limited number of filters.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
+![peace](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
 
 *Peace with full GUI for EqualizerAPO*
 
@@ -309,7 +309,7 @@ averaging all the measurement pairs and smoothing the averaged curve. This metho
 differences between individual headphones due to manufacturing and placement on the measurement head. Standard deviation
 is quite high about 5dB at 20Hz but still it's probably closer to truth than not using any calibration at all.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/calibration/headphonecom_raw_to_innerfidelity_raq.png)
+![calibration](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/calibration/headphonecom_raw_to_innerfidelity_raw.png)
 
 Pictured data is for calibrating Headphone.com measurement to Innerfidelity measurement or in other words estimating how
 an individual headphone measured by Headphone.com would look like if it was measured by Innerfidelity. When using
@@ -356,15 +356,15 @@ corners whenever max gain clips the curve.
 
 ## Parametric Equalizer
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/FilterInitialization.png)
+![filter-initialization](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/FilterInitialization.png)
 
 *Equalization target and initial peak filters for optimization before and after filter number limitation*
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Optimization.gif)
+![optimization-animation](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Optimization.gif)
 
-*Optimization of parametric eq filters*
+*Optimization of parametric eq filters (click to play)*
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/1More%20MK801.png)
+![1more-mk801-plot](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/1More%20MK801.png)
 
 *1More MK801 with parametric equalization*
 
