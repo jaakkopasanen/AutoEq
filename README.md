@@ -301,7 +301,7 @@ averaging all the measurement pairs and smoothing the averaged curve. This metho
 differences between individual headphones due to manufacturing and placement on the measurement head. Standard deviation
 is quite high about 5dB at 20Hz but still it's probably closer to truth than not using any calibration at all.
 
-![calibration](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/calibration/headphonecom_raw_to_innerfidelity_raw.png)
+![calibration](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/calibration/headphonecom_to_innerfidelity.png)
 
 Pictured data is for calibrating Headphone.com measurement to Innerfidelity measurement or in other words estimating how
 an individual headphone measured by Headphone.com would look like if it was measured by Innerfidelity. When using
