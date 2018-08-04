@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 88 Hz   |  0.05 | 6.1 dB  |
+| Peaking | 86 Hz   |  0.05 | 6.1 dB  |
 | Peaking | 1147 Hz |  1.62 | -6.7 dB |
-| Peaking | 730 Hz  |  1.66 | 2.8 dB  |
-| Peaking | 4395 Hz |  2.27 | 5.0 dB  |
-| Peaking | 3120 Hz |  5.04 | 2.4 dB  |
-| Peaking | 1654 Hz |  9.69 | 5.3 dB  |
-| Peaking | 1556 Hz |  5.11 | -2.8 dB |
-| Peaking | 5282 Hz | 13.19 | -6.8 dB |
-| Peaking | 6056 Hz |  1.81 | 5.5 dB  |
-| Peaking | 6826 Hz |  1.03 | -2.9 dB |
+| Peaking | 731 Hz  |  1.67 | 2.8 dB  |
+| Peaking | 4394 Hz |  2.27 | 5.0 dB  |
+| Peaking | 3122 Hz |  5.03 | 2.4 dB  |
+| Peaking | 1648 Hz |  9.97 | 4.9 dB  |
+| Peaking | 1549 Hz |  5.52 | -2.6 dB |
+| Peaking | 5279 Hz | 12.61 | -7.0 dB |
+| Peaking | 5920 Hz |  1.76 | 5.4 dB  |
+| Peaking | 6496 Hz |  0.88 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD201/Sennheiser%20HD201.png)

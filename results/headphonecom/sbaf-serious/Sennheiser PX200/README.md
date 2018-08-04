@@ -21,14 +21,14 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 35 Hz   | 0.09 | 6.0 dB  |
+| Peaking | 35 Hz   | 0.1  | 6.0 dB  |
 | Peaking | 353 Hz  | 0.81 | 3.6 dB  |
-| Peaking | 1818 Hz | 0.19 | -2.0 dB |
+| Peaking | 1808 Hz | 0.18 | -2.0 dB |
 | Peaking | 3606 Hz | 1.73 | 7.0 dB  |
 | Peaking | 5867 Hz | 2.76 | 6.4 dB  |
-| Peaking | 795 Hz  | 3.65 | -0.8 dB |
-| Peaking | 1242 Hz | 2.48 | 1.1 dB  |
-| Peaking | 1984 Hz | 2.48 | -1.4 dB |
-| Peaking | 2340 Hz | 3.77 | 1.1 dB  |
+| Peaking | 794 Hz  | 3.63 | -0.8 dB |
+| Peaking | 1250 Hz | 2.49 | 1.1 dB  |
+| Peaking | 2003 Hz | 2.48 | -1.4 dB |
+| Peaking | 2313 Hz | 3.77 | 1.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PX200/Sennheiser%20PX200.png)

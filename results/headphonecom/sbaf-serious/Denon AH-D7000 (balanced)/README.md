@@ -4,32 +4,32 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.4dB
-GraphicEQ: 10 -84; 20 4.9; 22 3.5; 23 2.8; 25 1.6; 26 1.1; 28 0.0; 30 -0.9; 32 -1.6; 35 -2.4; 37 -2.7; 40 -2.7; 42 -2.7; 45 -2.9; 49 -3.4; 52 -3.6; 56 -3.3; 59 -3.1; 64 -2.9; 68 -2.9; 73 -2.8; 78 -2.6; 83 -2.4; 89 -2.1; 95 -1.8; 102 -1.3; 109 -0.9; 117 -0.5; 125 -0.4; 134 -0.2; 143 0.0; 153 0.2; 164 0.6; 175 0.7; 188 0.9; 201 1.0; 215 1.3; 230 1.5; 246 1.7; 263 1.9; 282 2.2; 301 2.5; 323 2.8; 345 3.1; 369 3.2; 395 3.3; 423 3.3; 452 2.8; 484 2.1; 518 1.5; 554 1.0; 593 0.7; 635 0.4; 679 0.0; 726 -0.6; 777 -0.8; 832 -0.8; 890 0.9; 952 0.4; 1019 -0.0; 1090 0.1; 1167 0.4; 1248 0.9; 1336 1.2; 1429 1.2; 1529 1.3; 1636 1.6; 1751 2.1; 1873 2.2; 2004 2.0; 2145 2.1; 2295 2.8; 2455 3.4; 2627 3.6; 2811 3.3; 3008 2.7; 3219 1.4; 3444 0.4; 3685 0.5; 3943 1.2; 4219 1.1; 4514 -0.1; 4830 -1.8; 5168 -0.7; 5530 -0.3; 5917 -2.2; 6331 -2.6; 6775 -1.7; 7249 -2.0; 7756 -0.5; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 5.9; 25 5.3; 26 4.9; 28 4.0; 30 3.1; 32 2.4; 35 1.6; 37 1.3; 40 1.3; 42 1.3; 45 1.0; 49 0.5; 52 0.4; 56 0.6; 59 0.9; 64 1.0; 68 0.9; 73 1.0; 78 1.0; 83 1.0; 89 1.1; 95 1.1; 102 1.1; 109 1.1; 117 1.1; 125 0.8; 134 0.7; 143 0.6; 153 0.6; 164 0.9; 175 0.9; 188 1.0; 201 1.1; 215 1.3; 230 1.6; 246 1.7; 263 1.9; 282 2.2; 301 2.5; 323 2.8; 345 3.1; 369 3.2; 395 3.3; 423 3.3; 452 2.8; 484 2.1; 518 1.5; 554 1.0; 593 0.7; 635 0.4; 679 0.0; 726 -0.6; 777 -0.8; 832 -0.8; 890 0.9; 952 0.4; 1019 -0.0; 1090 0.1; 1167 0.4; 1248 0.9; 1336 1.2; 1429 1.2; 1529 1.3; 1636 1.6; 1751 2.1; 1873 2.2; 2004 2.0; 2145 2.1; 2295 2.8; 2455 3.4; 2627 3.6; 2811 3.3; 3008 2.7; 3219 1.4; 3444 0.4; 3685 0.5; 3943 1.2; 4219 1.1; 4514 -0.1; 4830 -1.8; 5168 -0.7; 5530 -0.3; 5917 -2.2; 6331 -2.6; 6775 -1.7; 7249 -2.0; 7756 -0.5; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.4dB` and instead set Global volume in the UI for both channels to **-54**
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D7000 (balanced) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.99 | 5.8 dB  |
-| Peaking | 50 Hz   | 0.85 | -3.9 dB |
-| Peaking | 344 Hz  | 1.35 | 3.4 dB  |
-| Peaking | 2489 Hz | 1.72 | 3.5 dB  |
-| Peaking | 6307 Hz | 2.85 | -2.6 dB |
-| Peaking | 33 Hz   | 1.03 | -0.8 dB |
-| Peaking | 48 Hz   | 2.33 | 0.6 dB  |
-| Peaking | 439 Hz  | 6.92 | 0.9 dB  |
-| Peaking | 762 Hz  | 4.26 | -1.5 dB |
-| Peaking | 1528 Hz | 3.41 | 0.6 dB  |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 22 Hz   |  1.73 | 6.3 dB  |
+| Peaking | 102 Hz  |  0.91 | 0.8 dB  |
+| Peaking | 364 Hz  |  1.73 | 3.4 dB  |
+| Peaking | 2484 Hz |  1.68 | 3.5 dB  |
+| Peaking | 6304 Hz |  2.83 | -2.6 dB |
+| Peaking | 10 Hz   |  0.9  | -0.9 dB |
+| Peaking | 450 Hz  |  7.32 | 0.7 dB  |
+| Peaking | 768 Hz  |  4.82 | -1.5 dB |
+| Peaking | 1520 Hz |  3.22 | 0.6 dB  |
+| Peaking | 3446 Hz | 12.58 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D7000%20(balanced)/Denon%20AH-D7000%20(balanced).png)

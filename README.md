@@ -406,7 +406,6 @@ Contributions are more than welcome.
 
 - Re-organize results to `<source>/<tuning>/<model>`
   - List of recommended results
-  - Update reddit links
 - oratory1990 measurements
 - Rtings measurements
 - Reference audio analyzer measurements

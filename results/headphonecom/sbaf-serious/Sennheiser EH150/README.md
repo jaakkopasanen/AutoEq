@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 41 Hz   | 0.23 | 6.2 dB  |
-| Peaking | 230 Hz  | 1.07 | 3.5 dB  |
-| Peaking | 401 Hz  | 2.81 | 4.0 dB  |
+| Peaking | 229 Hz  | 1.07 | 3.4 dB  |
+| Peaking | 400 Hz  | 2.77 | 4.0 dB  |
 | Peaking | 3125 Hz | 1.82 | 6.6 dB  |
-| Peaking | 5890 Hz | 3.85 | 5.8 dB  |
+| Peaking | 5890 Hz | 3.84 | 5.8 dB  |
 | Peaking | 2472 Hz | 0.44 | -2.0 dB |
-| Peaking | 2926 Hz | 1.24 | 4.0 dB  |
-| Peaking | 6651 Hz | 7.46 | 2.2 dB  |
-| Peaking | 3057 Hz | 4.73 | -3.0 dB |
-| Peaking | 7612 Hz | 2.63 | -0.9 dB |
+| Peaking | 2918 Hz | 1.25 | 4.1 dB  |
+| Peaking | 6656 Hz | 7.45 | 2.2 dB  |
+| Peaking | 3064 Hz | 4.84 | -3.1 dB |
+| Peaking | 7598 Hz | 2.62 | -0.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20EH150/Sennheiser%20EH150.png)

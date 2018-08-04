@@ -4,32 +4,32 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.4dB
-GraphicEQ: 10 -84; 20 3.8; 22 3.1; 23 2.8; 25 2.1; 26 1.8; 28 1.3; 30 0.8; 32 0.3; 35 -0.3; 37 -0.7; 40 -1.1; 42 -1.4; 45 -1.8; 49 -2.4; 52 -2.7; 56 -3.1; 59 -3.4; 64 -3.7; 68 -3.7; 73 -3.6; 78 -3.3; 83 -3.2; 89 -4.1; 95 -4.5; 102 -4.5; 109 -4.1; 117 -3.6; 125 -4.2; 134 -4.2; 143 -4.4; 153 -4.6; 164 -4.2; 175 -4.3; 188 -4.5; 201 -4.4; 215 -4.4; 230 -4.3; 246 -4.2; 263 -4.2; 282 -3.9; 301 -3.8; 323 -3.6; 345 -3.3; 369 -3.2; 395 -3.1; 423 -2.8; 452 -2.4; 484 -2.4; 518 -2.4; 554 -1.4; 593 -0.7; 635 -0.9; 679 -1.2; 726 -0.9; 777 -0.6; 832 -0.8; 890 -0.5; 952 -0.2; 1019 0.0; 1090 0.5; 1167 0.1; 1248 -0.1; 1336 -0.5; 1429 -1.6; 1529 -2.5; 1636 -3.0; 1751 -3.9; 1873 -5.0; 2004 -5.6; 2145 -4.9; 2295 -3.6; 2455 -2.7; 2627 -1.6; 2811 -0.4; 3008 0.6; 3219 1.4; 3444 1.8; 3685 1.9; 3943 0.9; 4219 -1.0; 4514 -1.7; 4830 -1.1; 5168 -1.9; 5530 -4.4; 5917 -6.7; 6331 -6.7; 6775 -4.6; 7249 -4.4; 7756 -4.7; 8299 -4.1; 8880 -2.2; 9502 -0.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.8; 20000 -4.3
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.8; 26 5.7; 28 5.3; 30 4.8; 32 4.3; 35 3.7; 37 3.3; 40 2.8; 42 2.6; 45 2.2; 49 1.6; 52 1.3; 56 0.8; 59 0.6; 64 0.2; 68 0.1; 73 0.1; 78 0.3; 83 0.2; 89 -0.9; 95 -1.6; 102 -2.1; 109 -2.1; 117 -2.0; 125 -3.0; 134 -3.4; 143 -3.8; 153 -4.2; 164 -4.0; 175 -4.2; 188 -4.4; 201 -4.4; 215 -4.3; 230 -4.2; 246 -4.2; 263 -4.2; 282 -3.9; 301 -3.8; 323 -3.6; 345 -3.2; 369 -3.2; 395 -3.1; 423 -2.8; 452 -2.4; 484 -2.4; 518 -2.4; 554 -1.4; 593 -0.7; 635 -0.9; 679 -1.2; 726 -0.9; 777 -0.6; 832 -0.8; 890 -0.5; 952 -0.2; 1019 0.0; 1090 0.5; 1167 0.1; 1248 -0.1; 1336 -0.5; 1429 -1.6; 1529 -2.5; 1636 -3.0; 1751 -3.9; 1873 -5.0; 2004 -5.6; 2145 -4.9; 2295 -3.6; 2455 -2.7; 2627 -1.6; 2811 -0.4; 3008 0.6; 3219 1.4; 3444 1.8; 3685 1.9; 3943 0.9; 4219 -1.0; 4514 -1.7; 4830 -1.1; 5168 -1.9; 5530 -4.4; 5917 -6.7; 6331 -6.7; 6775 -4.6; 7249 -4.4; 7756 -4.7; 8299 -4.1; 8880 -2.2; 9502 -0.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.8; 20000 -4.3
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-44**
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG Q701 Quincy Jones ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 0.84 | 4.9 dB  |
-| Peaking | 86 Hz    | 0.4  | -4.0 dB |
-| Peaking | 276 Hz   | 0.87 | -2.5 dB |
-| Peaking | 1975 Hz  | 3.63 | -5.9 dB |
-| Peaking | 6458 Hz  | 2.63 | -6.7 dB |
-| Peaking | 1113 Hz  | 2.9  | 1.5 dB  |
-| Peaking | 18600 Hz | 0.05 | -1.9 dB |
-| Peaking | 3460 Hz  | 3.23 | 3.7 dB  |
-| Peaking | 8224 Hz  | 5.78 | -2.8 dB |
-| Peaking | 10748 Hz | 0.46 | 2.6 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 21 Hz   | 0.67 | 6.2 dB  |
+| Peaking | 209 Hz  | 0.66 | -4.7 dB |
+| Peaking | 2011 Hz | 2.82 | -5.8 dB |
+| Peaking | 3498 Hz | 2.86 | 3.3 dB  |
+| Peaking | 6388 Hz | 2.06 | -6.6 dB |
+| Peaking | 436 Hz  | 3.67 | -0.5 dB |
+| Peaking | 1105 Hz | 4.31 | 1.4 dB  |
+| Peaking | 8366 Hz | 2.77 | -3.1 dB |
+| Peaking | 9461 Hz | 2.41 | 2.5 dB  |
+| Peaking | 6950 Hz | 9.65 | 2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20Q701%20Quincy%20Jones/AKG%20Q701%20Quincy%20Jones.png)

@@ -24,12 +24,12 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 49 Hz   | 0.24 | 6.4 dB  |
 | Peaking | 269 Hz  | 1.47 | 4.1 dB  |
 | Peaking | 2073 Hz | 2.22 | 4.9 dB  |
-| Peaking | 3526 Hz | 1.47 | 5.2 dB  |
-| Peaking | 5639 Hz | 2.76 | 4.8 dB  |
-| Peaking | 17 Hz   | 2.06 | 1.1 dB  |
-| Peaking | 363 Hz  | 5.59 | 2.6 dB  |
-| Peaking | 934 Hz  | 3.6  | -1.1 dB |
-| Peaking | 500 Hz  | 2.18 | -1.8 dB |
-| Peaking | 8339 Hz | 4.09 | -1.4 dB |
+| Peaking | 3525 Hz | 1.47 | 5.2 dB  |
+| Peaking | 5640 Hz | 2.76 | 4.8 dB  |
+| Peaking | 9 Hz    | 1.09 | 1.1 dB  |
+| Peaking | 361 Hz  | 5.57 | 2.6 dB  |
+| Peaking | 935 Hz  | 3.59 | -1.1 dB |
+| Peaking | 497 Hz  | 2.19 | -1.8 dB |
+| Peaking | 8340 Hz | 4.09 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AudioTechnica%20ATH%20Pro700/AudioTechnica%20ATH%20Pro700.png)
