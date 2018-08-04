@@ -14,9 +14,9 @@ def get_urls(files):
         rel_path = os.path.relpath(path, RESULTS_DIR)
         model = os.path.split(rel_path)[-1]
         url = '/'.join(FrequencyResponse._split_path(rel_path))
-        url = 'https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/{}'.format(url)
+        url = 'https://github.com/jaakkopasanen/AutoEq/tree/master/results/{}'.format(url)
         url = urllib.parse.quote(url, safe="%/:=&?~#+!$,;'@()*[]")
-        urls[model] = '[{model}]({url})'.format(model=model, url=url)
+        urls[model] = '- [{model}]({url})'.format(model=model, url=url)
     return urls
 
 
@@ -29,7 +29,9 @@ def main():
 
     with open('README.md', 'w') as f:
         keys = sorted(urls.keys())
-        f.write('\n'.join([urls[key] for key in keys]))
+        s = '# Recommended Results\n'
+        s += '\n'.join([urls[key] for key in keys])
+        f.write(s)
 
 
 if __name__ == '__main__':
