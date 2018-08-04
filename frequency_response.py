@@ -236,10 +236,6 @@ class FrequencyResponse:
         peak_inds.sort()
         peak_inds = peak_inds[np.abs(fr_target.smoothed[peak_inds]) > 0.1]
 
-        # Positive, dropping and first peak is positive \/\ -> 20 Hz to first peak
-        # Positive, dropping and first peak is negative \ -> 20 Hz to zero crossing
-        # Positive and raising /\ -> Nothing
-
         # Peak center frequencies and gains
         peak_fc = frequency[peak_inds].astype('float32')
 
@@ -253,9 +249,6 @@ class FrequencyResponse:
         # Gains at peak center frequencies
         interpolator = InterpolatedUnivariateSpline(np.log10(frequency), fr_target.smoothed, k=1)
         peak_g = interpolator(np.log10(peak_fc)).astype('float32')
-
-        peak_fc_all = peak_fc
-        peak_g_all = peak_g
 
         def remove_small_filters(min_gain):
             # Remove peaks with too little gain
@@ -326,13 +319,6 @@ class FrequencyResponse:
                 peak_fc = peak_fc[sorted_inds]
                 peak_g = peak_g[sorted_inds]
 
-        # fr_target.plot_graph(show=False)
-        # fr_target.plot_graph(show=False)
-        # plt.plot(peak_fc_all, peak_g_all, 'o', color='red')
-        # plt.plot(peak_fc, peak_g, '.', color='limegreen')
-        # plt.legend(['Smoothed Target', 'Equalization Target', 'Before Reduction', 'After Reduction'])
-        # plt.show()
-
         sorted_inds = np.argsort(peak_fc)
         peak_fc = peak_fc[sorted_inds]
         peak_g = peak_g[sorted_inds]
@@ -359,7 +345,7 @@ class FrequencyResponse:
         # Low shelf filter
         # This is not used at the moment but is kept for future
         A = 10 ** (gain[:n_ls, :] / 40)
-        w0 = 2 * np.pi * fc[:n_ls, :] / fs
+        w0 = 2 * np.pi * tf.pow(10, fc[:n_ls, :]) / fs
         alpha = tf.sin(w0) / (2 * Q[:n_ls, :])
 
         a0_ls = ((A + 1) + (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)
@@ -372,7 +358,6 @@ class FrequencyResponse:
 
         # Peak filter
         A = 10 ** (gain[n_ls:n_ls+n_pk, :] / 40)
-        w0 = 2 * np.pi * fc[n_ls:n_ls+n_pk, :] / fs
         w0 = 2 * np.pi * tf.pow(10.0, fc[n_ls:n_ls+n_pk, :]) / fs
         alpha = tf.sin(w0) / (2 * Q[n_ls:n_ls+n_pk, :])
 
@@ -387,7 +372,7 @@ class FrequencyResponse:
         # High self filter
         # This is not kept at the moment but kept for future
         A = 10 ** (gain[n_ls+n_pk:, :] / 40)
-        w0 = 2 * np.pi * fc[n_ls+n_pk:, :] / fs
+        w0 = 2 * np.pi * tf.pow(10, fc[n_ls+n_pk:, :]) / fs
         alpha = tf.sin(w0) / (2 * Q[n_ls+n_pk:, :])
 
         a0_hs = (A + 1) - (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha
@@ -435,38 +420,14 @@ class FrequencyResponse:
         momentum = 300
         bad_steps = 0
 
-        fig, ax = plt.subplots()
-        plt.plot(frequency, fr_target.raw)
-        line, = ax.plot(frequency, np.zeros(frequency.shape))
-        plt.xlabel('Frequency (Hz)')
-        plt.semilogx()
-        plt.xlim([20, 20000])
-        plt.ylabel('Amplitude (dBr)')
-        plt.ylim([-12, 12])
-        plt.title('Parametric EQ Optimization')
-        plt.legend(['Target', 'Parametric EQ'])
-        plt.grid(True, which='major')
-        plt.grid(True, which='minor')
-        ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
-        eqs = []
-
-        def animate(y):
-            line.set_ydata(y)
-            return line,
-
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
-
-            _eq, _fc, _Q, _gain = sess.run([eq_op, fc, Q, gain])
-            eqs.append(_eq)
-
             while time() - t < max_time:
                 step_loss, _ = sess.run([loss, train_step], feed_dict={learning_rate: learning_rate_value})
                 if min_loss is None or step_loss < min_loss:
                     # Improvement, update model
                     _eq, _fc, _Q, _gain = sess.run([eq_op, fc, Q, gain])
                     _fc = 10**_fc
-                    eqs.append(_eq)
 
                 if min_loss is None or min_loss - step_loss > threshold:
                     # Loss improved
@@ -484,16 +445,6 @@ class FrequencyResponse:
                 learning_rate_value = learning_rate_value * decay
 
         rmse = np.sqrt(min_loss)  # RMSE
-        print('Optimized {n} filters in {duration:.1f}s and achieved RMSE of {rmse:.2f}dB'.format(
-            n=n,
-            duration=time() - t,
-            rmse=rmse,
-        ))
-
-        n_frames = 30
-        ani = animation.FuncAnimation(fig, animate, eqs[:n_frames], interval=4000/n_frames)
-        #plt.show()
-        #ani.save('Optimization.gif', writer=animation.writers['pillow'](fps=10))
 
         # Remove filters with less than 0.1dB gain. Optimizer might produce these sometimes.
         sl = (np.abs(_gain) > 0.1)
