@@ -1,0 +1,35 @@
+# AKG K271 MK II
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 5.8; 42 5.3; 45 4.5; 49 3.5; 52 3.7; 56 5.1; 59 5.9; 64 5.2; 68 4.2; 73 3.3; 78 2.6; 83 1.9; 89 1.2; 95 0.8; 102 0.3; 109 -0.1; 117 -0.5; 125 -0.8; 134 -1.3; 143 -1.6; 153 -1.9; 164 -1.4; 175 -1.3; 188 -1.7; 201 -1.9; 215 -1.7; 230 -1.4; 246 -1.6; 263 -1.4; 282 -1.2; 301 -1.6; 323 -2.0; 345 -2.0; 369 -2.0; 395 -2.0; 423 -2.2; 452 -2.3; 484 -2.3; 518 -2.1; 554 -2.2; 593 -2.4; 635 -3.2; 679 -3.2; 726 0.6; 777 1.1; 832 0.7; 890 1.0; 952 0.5; 1019 -0.2; 1090 -0.6; 1167 -0.8; 1248 -0.8; 1336 -0.8; 1429 -0.6; 1529 -0.3; 1636 -0.2; 1751 -0.0; 1873 0.5; 2004 2.1; 2145 5.2; 2295 4.4; 2455 3.3; 2627 2.7; 2811 2.6; 3008 3.2; 3219 4.6; 3444 5.4; 3685 5.0; 3943 4.9; 4219 4.4; 4514 5.5; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 0.9; 7756 -3.1; 8299 -6.1; 8880 -6.9; 9502 -5.2; 10167 -1.6; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `AKG K271 MK II ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 32 Hz   | 0.86 | 6.8 dB   |
+| Peaking | 2223 Hz | 6.78 | 4.5 dB   |
+| Peaking | 3464 Hz | 3.24 | 3.5 dB   |
+| Peaking | 5811 Hz | 1.44 | 7.4 dB   |
+| Peaking | 8566 Hz | 3.19 | -10.3 dB |
+| Peaking | 64 Hz   | 2.68 | 3.7 dB   |
+| Peaking | 244 Hz  | 0.32 | -2.0 dB  |
+| Peaking | 666 Hz  | 3.63 | -4.9 dB  |
+| Peaking | 749 Hz  | 3.05 | 4.8 dB   |
+| Peaking | 1336 Hz | 3.07 | -0.8 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/headphonecom/AKG%20K271%20MK%20II/AKG%20K271%20MK%20II.png)

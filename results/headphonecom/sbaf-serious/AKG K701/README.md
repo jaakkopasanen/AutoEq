@@ -1,0 +1,35 @@
+# AKG K701
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 5.9; 25 5.6; 26 5.3; 28 4.7; 30 4.2; 32 3.6; 35 3.0; 37 2.6; 40 2.0; 42 1.6; 45 1.1; 49 0.6; 52 0.2; 56 -0.2; 59 -0.0; 64 1.2; 68 0.8; 73 -0.5; 78 -1.0; 83 -1.3; 89 -1.3; 95 -1.4; 102 -1.4; 109 -1.4; 117 -1.5; 125 -1.7; 134 -1.7; 143 -1.7; 153 -1.6; 164 -1.6; 175 -1.6; 188 -1.8; 201 -1.6; 215 -1.5; 230 -1.6; 246 -1.5; 263 -1.4; 282 -1.2; 301 -1.1; 323 -0.9; 345 -0.8; 369 -0.7; 395 -0.6; 423 -0.3; 452 -0.1; 484 -0.2; 518 -0.2; 554 1.2; 593 1.8; 635 1.0; 679 1.0; 726 0.9; 777 0.8; 832 0.5; 890 0.2; 952 -0.0; 1019 -0.0; 1090 -0.3; 1167 -0.5; 1248 -0.7; 1336 -0.6; 1429 -1.1; 1529 -1.6; 1636 -1.9; 1751 -2.5; 1873 -3.4; 2004 -4.2; 2145 -4.7; 2295 -4.5; 2455 -4.0; 2627 -3.2; 2811 -2.7; 3008 -2.4; 3219 -2.2; 3444 -2.2; 3685 -2.0; 3943 -2.1; 4219 -2.9; 4514 -3.0; 4830 -1.9; 5168 -2.0; 5530 -4.0; 5917 -5.7; 6331 -5.3; 6775 -3.8; 7249 -4.0; 7756 -4.4; 8299 -4.2; 8880 -3.4; 9502 -2.0; 10167 -0.4; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.5
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `AKG K701 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 23 Hz    | 1.14 | 6.3 dB  |
+| Peaking | 140 Hz   | 0.77 | -2.0 dB |
+| Peaking | 2242 Hz  | 1.93 | -4.6 dB |
+| Peaking | 6073 Hz  | 2.4  | -4.7 dB |
+| Peaking | 8257 Hz  | 3.92 | -3.2 dB |
+| Peaking | 462 Hz   | 1.01 | -1.0 dB |
+| Peaking | 617 Hz   | 1.73 | 2.4 dB  |
+| Peaking | 4522 Hz  | 3.14 | -1.8 dB |
+| Peaking | 5047 Hz  | 6.81 | 2.6 dB  |
+| Peaking | 10973 Hz | 4.4  | 0.8 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K701/AKG%20K701.png)

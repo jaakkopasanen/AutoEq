@@ -1,8 +1,0 @@
-# Beyerdynamic Custom One Pro linear bass position
-Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
-```
-Preamp: -6.0dB
-GraphicEQ: 10 -84; 20 -1.0; 22 -1.5; 23 -1.7; 25 -2.1; 26 -2.2; 28 -2.5; 30 -2.8; 32 -3.0; 35 -3.1; 37 -3.2; 40 -3.2; 42 -3.2; 45 -3.1; 49 -2.6; 52 -2.0; 56 -1.3; 59 -0.7; 64 1.2; 68 1.4; 73 -0.6; 78 1.3; 83 4.7; 89 4.6; 95 2.1; 102 -0.0; 109 -0.9; 117 -1.4; 125 -2.2; 134 -2.5; 143 -2.7; 153 -2.7; 164 -2.7; 175 -4.9; 188 -5.8; 201 -5.8; 215 -5.8; 230 -5.6; 246 -5.9; 263 -5.9; 282 -5.7; 301 -5.5; 323 -5.3; 345 -5.0; 369 -4.8; 395 -4.6; 423 -4.4; 452 -4.4; 484 -4.4; 518 -4.1; 554 -3.5; 593 -2.7; 635 -2.3; 679 -2.5; 726 -2.0; 777 -0.8; 832 -0.5; 890 -0.5; 952 -0.2; 1019 0.0; 1090 -0.1; 1167 -0.1; 1248 -0.4; 1336 -0.7; 1429 -1.0; 1529 -1.5; 1636 -2.3; 1751 -3.1; 1873 -3.9; 2004 -4.8; 2145 -5.2; 2295 -4.7; 2455 -3.5; 2627 -2.2; 2811 -0.8; 3008 0.7; 3219 1.4; 3444 2.0; 3685 3.0; 3943 4.7; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.8; 6331 3.4; 6775 3.2; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.7; 9502 -0.4; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-```
-**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Innerfidelity%202017/headphoncecom/onear/Beyerdynamic%20Custom%20One%20Pro%20linear%20bass%20position/Beyerdynamic%20Custom%20One%20Pro%20linear%20bass%20position.png)

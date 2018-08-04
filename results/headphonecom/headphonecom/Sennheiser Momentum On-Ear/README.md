@@ -1,0 +1,35 @@
+# Sennheiser Momentum On-Ear
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -6.8; 22 -7.0; 23 -7.1; 25 -7.3; 26 -7.3; 28 -7.5; 30 -7.6; 32 -7.6; 35 -7.7; 37 -7.8; 40 -7.9; 42 -7.9; 45 -7.9; 49 -7.9; 52 -7.9; 56 -7.9; 59 -7.9; 64 -7.9; 68 -7.8; 73 -7.5; 78 -7.1; 83 -6.9; 89 -6.9; 95 -7.1; 102 -7.1; 109 -7.1; 117 -6.9; 125 -6.7; 134 -6.5; 143 -6.2; 153 -5.8; 164 -5.4; 175 -5.1; 188 -4.8; 201 -4.3; 215 -3.7; 230 -3.1; 246 -2.4; 263 -1.6; 282 -0.9; 301 -0.6; 323 -0.2; 345 0.2; 369 0.5; 395 0.8; 423 0.8; 452 1.0; 484 1.0; 518 1.0; 554 0.9; 593 0.8; 635 0.6; 679 0.4; 726 0.3; 777 0.3; 832 0.2; 890 0.3; 952 0.3; 1019 -0.0; 1090 -0.4; 1167 -0.8; 1248 -1.2; 1336 -1.6; 1429 -1.5; 1529 -1.8; 1636 -2.4; 1751 -2.6; 1873 -2.4; 2004 -1.9; 2145 -1.2; 2295 -0.2; 2455 1.1; 2627 2.6; 2811 3.7; 3008 4.5; 3219 5.1; 3444 5.8; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.8; 6331 3.3; 6775 -0.4; 7249 -2.6; 7756 -2.3; 8299 -1.5; 8880 -1.0; 9502 -0.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum On-Ear ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 37 Hz   | 0.48 | -8.0 dB |
+| Peaking | 112 Hz  | 1.38 | -3.9 dB |
+| Peaking | 179 Hz  | 2.72 | -2.6 dB |
+| Peaking | 1800 Hz | 2.3  | -3.9 dB |
+| Peaking | 3990 Hz | 1.37 | 7.2 dB  |
+| Peaking | 461 Hz  | 1.79 | 1.6 dB  |
+| Peaking | 8132 Hz | 2.77 | -1.2 dB |
+| Peaking | 4133 Hz | 5.62 | -1.5 dB |
+| Peaking | 6014 Hz | 2.7  | 5.3 dB  |
+| Peaking | 7098 Hz | 3.14 | -5.9 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/headphonecom/Sennheiser%20Momentum%20On-Ear/Sennheiser%20Momentum%20On-Ear.png)

@@ -1,0 +1,35 @@
+# Audio-Technica ATH-FC700A
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 5.9; 35 5.4; 37 4.9; 40 3.9; 42 3.3; 45 2.5; 49 1.5; 52 0.9; 56 0.7; 59 1.0; 64 0.8; 68 0.1; 73 -0.5; 78 -0.9; 83 -1.2; 89 -1.5; 95 -1.6; 102 -1.8; 109 -1.8; 117 -1.8; 125 -1.5; 134 -0.5; 143 -0.1; 153 -0.5; 164 -0.5; 175 -0.6; 188 -0.5; 201 -0.3; 215 -0.3; 230 -0.2; 246 -0.1; 263 -0.6; 282 -1.2; 301 -1.0; 323 -0.7; 345 -0.3; 369 -0.4; 395 -0.3; 423 0.0; 452 0.1; 484 0.0; 518 0.1; 554 0.4; 593 0.7; 635 0.7; 679 0.6; 726 0.7; 777 0.8; 832 0.6; 890 0.2; 952 0.1; 1019 0.0; 1090 -0.1; 1167 -0.3; 1248 -0.6; 1336 -0.7; 1429 -1.0; 1529 -1.7; 1636 -2.1; 1751 -2.5; 1873 -2.9; 2004 -3.1; 2145 -3.1; 2295 -2.8; 2455 -1.8; 2627 -0.9; 2811 -0.4; 3008 0.8; 3219 1.4; 3444 1.8; 3685 2.6; 3943 3.2; 4219 2.8; 4514 3.5; 4830 3.7; 5168 5.5; 5530 -0.3; 5917 -5.1; 6331 -4.9; 6775 -8.3; 7249 -8.8; 7756 -7.3; 8299 -5.7; 8880 -3.7; 9502 -0.9; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 -0.0; 14260 -2.4; 15258 -4.2; 16326 -4.0; 17469 -2.7; 18692 -0.4; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Audio-Technica ATH-FC700A ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 27 Hz    | 1.56 | 7.1 dB   |
+| Peaking | 2041 Hz  | 2.16 | -3.8 dB  |
+| Peaking | 4808 Hz  | 1.61 | 6.9 dB   |
+| Peaking | 6939 Hz  | 2.39 | -11.7 dB |
+| Peaking | 31984 Hz | 2.88 | -4.7 dB  |
+| Peaking | 17 Hz    | 0.18 | 0.7 dB   |
+| Peaking | 98 Hz    | 1.54 | -2.5 dB  |
+| Peaking | 293 Hz   | 4.36 | -1.1 dB  |
+| Peaking | 703 Hz   | 2.45 | 0.9 dB   |
+| Peaking | 10779 Hz | 3.76 | 1.7 dB   |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audio-Technica%20ATH-FC700A/Audio-Technica%20ATH-FC700A.png)

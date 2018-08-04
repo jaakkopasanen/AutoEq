@@ -1,0 +1,35 @@
+# Sennheiser PX 200 II
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.9dB
+GraphicEQ: 10 -84; 20 6.3; 22 5.6; 23 5.3; 25 4.8; 26 4.5; 28 4.2; 30 3.9; 32 3.6; 35 3.2; 37 2.9; 40 2.7; 42 2.5; 45 2.2; 49 1.9; 52 1.8; 56 1.5; 59 1.4; 64 1.3; 68 1.2; 73 1.0; 78 1.0; 83 1.0; 89 1.2; 95 2.1; 102 2.8; 109 2.2; 117 1.8; 125 1.7; 134 2.0; 143 1.8; 153 1.5; 164 1.4; 175 1.3; 188 1.2; 201 1.2; 215 1.3; 230 1.9; 246 2.4; 263 2.3; 282 1.9; 301 1.5; 323 1.7; 345 1.6; 369 1.5; 395 1.2; 423 1.1; 452 0.9; 484 0.7; 518 0.5; 554 0.6; 593 0.9; 635 1.0; 679 0.6; 726 0.4; 777 0.6; 832 0.5; 890 0.4; 952 0.2; 1019 -0.0; 1090 -0.3; 1167 -0.7; 1248 -1.1; 1336 -1.9; 1429 -2.6; 1529 -2.5; 1636 -1.8; 1751 -2.3; 1873 -2.4; 2004 -2.2; 2145 -1.3; 2295 0.1; 2455 1.0; 2627 1.9; 2811 3.2; 3008 4.4; 3219 5.0; 3444 5.4; 3685 5.7; 3943 5.8; 4219 3.7; 4514 2.3; 4830 2.4; 5168 3.9; 5530 5.9; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.9dB` and instead set Global volume in the UI for both channels to **-69**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PX 200 II ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 19 Hz   | 0.87 | 5.9 dB  |
+| Peaking | 213 Hz  | 0.34 | 1.7 dB  |
+| Peaking | 1735 Hz | 1.48 | -3.5 dB |
+| Peaking | 3418 Hz | 1.96 | 6.2 dB  |
+| Peaking | 5963 Hz | 4.05 | 5.8 dB  |
+| Peaking | 84 Hz   | 2.57 | -0.9 dB |
+| Peaking | 101 Hz  | 5.37 | 1.7 dB  |
+| Peaking | 217 Hz  | 2.34 | -1.0 dB |
+| Peaking | 249 Hz  | 4.43 | 1.4 dB  |
+| Peaking | 8275 Hz | 4.52 | -0.9 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PX%20200%20II/Sennheiser%20PX%20200%20II.png)

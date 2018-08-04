@@ -32,6 +32,7 @@ DEFAULT_TREBLE_F_UPPER = 8000.0
 DEFAULT_TREBLE_MAX_GAIN = 0.0
 DEFAULT_TREBLE_GAIN_K = 1.0
 DEFAULT_BASS_BOOST = 0.0
+DEFAULT_MAX_FILTERS = [5, 5]
 DEFAULT_SMOOTHING_WINDOW_SIZE = 1 / 7
 DEFAULT_SMOOTHING_ITERATIONS = 10
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 5
@@ -40,7 +41,7 @@ DEFAULT_TILT = 0.0
 DEFAULT_COMPENSATION_FILE_PATH = os.path.join(
     'innerfidelity',
     'resources',
-    'innerfidelity_compensation_SBAF-Serious-brighter.csv'
+    'innerfidelity_compensation_sbaf-serious.csv'
 )
 BASS_BOOST_F_LOWER = 60
 BASS_BOOST_F_UPPER = 200
@@ -282,6 +283,11 @@ class FrequencyResponse:
                 if min_err is None or err < min_err:
                     min_err = err
                     min_err_ind = pair_ind
+
+            if min_err is None:
+                # No pairs detected
+                return False
+
             # Select smallest error if err < threshold
             if min_err < 0.3:
                 # New filter
@@ -297,8 +303,13 @@ class FrequencyResponse:
                 return True
             return False  # No prominent filter pairs
 
-        # Limit filter number to max_filters by removing least significant filters and merging close filters
+        # Remove insignificant filters
         remove_small_filters(0.1)
+        if len(peak_fc) == 0:
+            # All filters were insignificant, exit
+            return np.zeros(frequency.shape), 0.0, np.array([]), np.array([]), np.array([])
+
+        # Limit filter number to max_filters by removing least significant filters and merging close filters
         if max_filters is not None:
             if len(peak_fc) > max_filters:
                 # Remove too small filters
@@ -345,7 +356,7 @@ class FrequencyResponse:
         # Low shelf filter
         # This is not used at the moment but is kept for future
         A = 10 ** (gain[:n_ls, :] / 40)
-        w0 = 2 * np.pi * tf.pow(10, fc[:n_ls, :]) / fs
+        w0 = 2 * np.pi * tf.pow(10.0, fc[:n_ls, :]) / fs
         alpha = tf.sin(w0) / (2 * Q[:n_ls, :])
 
         a0_ls = ((A + 1) + (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)
@@ -372,7 +383,7 @@ class FrequencyResponse:
         # High self filter
         # This is not kept at the moment but kept for future
         A = 10 ** (gain[n_ls+n_pk:, :] / 40)
-        w0 = 2 * np.pi * tf.pow(10, fc[n_ls+n_pk:, :]) / fs
+        w0 = 2 * np.pi * tf.pow(10.0, fc[n_ls+n_pk:, :]) / fs
         alpha = tf.sin(w0) / (2 * Q[n_ls+n_pk:, :])
 
         a0_hs = (A + 1) - (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha
@@ -406,7 +417,7 @@ class FrequencyResponse:
         ) / tf.log(10.0)
         eq_op = tf.reduce_sum(eq_op, axis=0)
 
-        # Loss and optimizer
+        # RMSE as loss
         loss = tf.reduce_mean(tf.square(eq_op - eq_target))
         learning_rate_value = 0.1
         decay = 0.9995
@@ -433,9 +444,6 @@ class FrequencyResponse:
                     # Loss improved
                     min_loss = step_loss
                     bad_steps = 0
-                    # if min_loss < target_loss:
-                    #     # Good enough, stop optimizing
-                    #     break
                 else:
                     # No improvement, increment bad step counter
                     bad_steps += 1
@@ -457,22 +465,28 @@ class FrequencyResponse:
         frequency = np.repeat(np.expand_dims(frequency, axis=0), len(_fc), axis=0)
         _eq = np.sum(biquad.digital_coeffs(frequency, 48000, a0, a1, a2, b0, b1, b2), axis=0)
 
-        return _eq, rmse, _fc, _Q, _gain
+        return np.squeeze(_eq), rmse, np.squeeze(_fc), np.squeeze(_Q), np.squeeze(_gain)
 
     def optimize_parametric_eq(self, max_filters=None):
         """Fits multiple biquad filters to equalization curve."""
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
 
-        eq, rmse, fc, Q, gain = self._run_optimize_parametric_eq(
-            frequency=self.frequency,
-            target=self.equalization,
-            max_filters=max_filters
-        )
+        self.parametric_eq = np.zeros(self.frequency.shape)
+        fc = Q = gain = np.array([])
+        for n in max_filters:
+            _eq, rmse, _fc, _Q, _gain = self._run_optimize_parametric_eq(
+                frequency=self.frequency,
+                target=self.equalization - self.parametric_eq,
+                max_filters=n
+            )
+            # print('RMSE: {:.2f}dB'.format(rmse))
+            self.parametric_eq += _eq
+            fc = np.concatenate((fc, _fc))
+            Q = np.concatenate((Q, _Q))
+            gain = np.concatenate((gain, _gain))
 
-        self.parametric_eq = eq
-
-        return np.hstack([fc, Q, gain])
+        return np.transpose(np.vstack([fc, Q, gain]))
 
     @staticmethod
     def write_eqapo_parametric_eq(file_path, filters):
@@ -488,7 +502,8 @@ class FrequencyResponse:
                 gain=filters[i, 2]
             ) for i in range(len(filters))]))
 
-    def _split_path(self, path):
+    @staticmethod
+    def _split_path(path):
         """Splits file system path into components."""
         folders = []
         while 1:
@@ -505,7 +520,7 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def write_readme(self, file_path, write_graphic_eq=False, write_parametric_eq=False):
+    def write_readme(self, file_path, write_graphic_eq=False, write_parametric_eq=False, max_filters=None):
         """Writes README.md with picture and Equalizer APO settings."""
         file_path = os.path.abspath(file_path)
         dir_path = os.path.dirname(file_path)
@@ -559,22 +574,36 @@ class FrequencyResponse:
             # Filters as Markdown table
             filters = []
             for line in parametric_eq_str.split('\n'):
-                type = line[line.index('ON')+3:line.index('Fc')-1]
-                if type == 'PK':
-                    type = 'Peaking'
-                if type == 'LS':
-                    type = 'Low Shelf'
-                if type == 'HS':
-                    type = 'High Shelf'
+                filter_type = line[line.index('ON')+3:line.index('Fc')-1]
+                if filter_type == 'PK':
+                    filter_type = 'Peaking'
+                if filter_type == 'LS':
+                    filter_type = 'Low Shelf'
+                if filter_type == 'HS':
+                    filter_type = 'High Shelf'
                 fc = line[line.index('Fc')+3:line.index('Gain')-1]
                 gain = line[line.index('Gain')+5:line.index('Q')-1]
                 q = line[line.index('Q')+2:]
-                filters.append([type, fc, q, gain])
+                filters.append([filter_type, fc, q, gain])
             filters_table_str = tabulate(
                 filters,
                 headers=['Type', 'Fc', 'Q', 'Gain'],
                 tablefmt='orgtbl'
             ).replace('+', '|').replace('|-', '|:')
+
+            max_filters_str = ''
+            if type(max_filters) == list and len(max_filters) > 1:
+                n = [0]
+                for x in max_filters:
+                    n.append(n[-1] + x)
+                del n[0]
+                if len(max_filters) > 3:
+                    n_str = ', '.join([str(x) for x in n[:-2]]) + ' and {}'.format(n[-2])
+                if len(max_filters) == 3:
+                    n_str = '{n0} and {n1}'.format(n0=n[0], n1=n[1])
+                if len(max_filters) == 2:
+                    n_str = str(n[0])
+                max_filters_str = 'The first {} filters can be used independently.'.format(n_str)
 
             s += '''
             ### Peace
@@ -582,13 +611,13 @@ class FrequencyResponse:
             
             ### Parametric EQs
             In case of using other parametric equalizer, apply preamp of **{preamp}dB** and build filters manually with
-            these parameters:
+            these parameters. {max_filters_str}
 
             {filters_table}
             '''.format(
                 model=model,
                 preamp=preamp,
-                parametric_eq=parametric_eq_str,
+                max_filters_str=max_filters_str,
                 filters_table=filters_table_str
             )
 
@@ -1022,8 +1051,13 @@ class FrequencyResponse:
                                 help='Will run equalization if this parameter exists, no value needed.')
         arg_parser.add_argument('--parametric_eq', action='store_true',
                                 help='Will produce parametric eq settings if this parameter exists, no value needed.')
-        arg_parser.add_argument('--max_filters', type=int, default=argparse.SUPPRESS,
-                                help='Maximum number of filters for parametric EQ.')
+        arg_parser.add_argument('--max_filters', type=str, default='5+5',
+                                help='Maximum number of filters for parametric EQ. Multiple cumulative optimization runs'
+                                     'can be done by giving multiple filter counts separated by "+". "5+5" would create'
+                                     '10 filters where the first 5 are usable independently from the rest 5 and the last'
+                                     '5 can only be used with the first 5. This allows to have muliple configurations'
+                                     'for equalizers with different number of bands available. '
+                                     'Defaults to "{}".'.format('+'.join([str(x) for x in DEFAULT_MAX_FILTERS])))
         arg_parser.add_argument('--bass_boost', type=float, default=DEFAULT_BASS_BOOST,
                                 help='Target gain for sub-bass in dB. Has flat response from 20 Hz to 60 Hz and a '
                                      'sigmoid slope down to 200 Hz. Defaults to {}.'.format(DEFAULT_BASS_BOOST))
@@ -1055,7 +1089,9 @@ class FrequencyResponse:
                                      '{}.'.format(DEFAULT_TREBLE_GAIN_K))
         arg_parser.add_argument('--show_plot', action='store_true',
                                 help='Plot will be shown if this parameter exists, no value needed.')
-        return vars(arg_parser.parse_args())
+        args = vars(arg_parser.parse_args())
+        args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
+        return args
 
     @staticmethod
     def main(input_dir=None,
@@ -1077,6 +1113,14 @@ class FrequencyResponse:
         if parametric_eq and not equalize:
             raise ValueError('equalize must be True when parametric_eq is True.')
 
+        # Dir paths to absolute
+        input_dir = os.path.abspath(input_dir)
+        output_dir = os.path.abspath(output_dir)
+        glob_files = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)
+        if len(glob_files) == 0:
+            warn('No CSV files found in "{}"'.format(input_dir))
+            return
+
         if calibration:
             # Creates FrequencyReponse for compensation data
             calibration_path = os.path.abspath(calibration)
@@ -1091,13 +1135,10 @@ class FrequencyResponse:
             compensation.interpolate()
             compensation.center()
 
-        # Dir paths to absolute
-        input_dir = os.path.abspath(input_dir)
-        output_dir = os.path.abspath(output_dir)
-        glob_files = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)
-        if len(glob_files) == 0:
-            warn('No CSV files found in "{}"'.format(input_dir))
-            return
+        if max_filters is None:
+            max_filters = DEFAULT_MAX_FILTERS
+        if type(max_filters) != list:
+            max_filters = [max_filters]
 
         readme_path = os.path.join(output_dir, 'README.md')
         readme_occupied = False
@@ -1171,7 +1212,12 @@ class FrequencyResponse:
 
                 # Write README.md
                 _readme_path = os.path.join(dir_path, 'README.md')
-                fr.write_readme(_readme_path, write_graphic_eq=equalize, write_parametric_eq=parametric_eq)
+                fr.write_readme(
+                    _readme_path,
+                    write_graphic_eq=equalize,
+                    write_parametric_eq=parametric_eq,
+                    max_filters=max_filters
+                )
                 if _readme_path == readme_path:
                     readme_occupied = True
 

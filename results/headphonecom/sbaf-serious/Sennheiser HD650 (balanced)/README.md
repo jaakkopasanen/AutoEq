@@ -1,0 +1,34 @@
+# Sennheiser HD650 (balanced)
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -3.7dB
+GraphicEQ: 10 -84; 20 2.8; 22 2.1; 23 1.8; 25 1.2; 26 0.9; 28 0.3; 30 -0.1; 32 -0.5; 35 -1.0; 37 -1.2; 40 -1.5; 42 -1.7; 45 -1.8; 49 -1.7; 52 -2.0; 56 -2.6; 59 -3.0; 64 -3.2; 68 -3.0; 73 -3.0; 78 -3.4; 83 -3.6; 89 -3.8; 95 -3.9; 102 -3.8; 109 -3.7; 117 -3.6; 125 -3.8; 134 -3.7; 143 -3.7; 153 -3.7; 164 -3.2; 175 -3.1; 188 -3.2; 201 -3.1; 215 -3.0; 230 -2.8; 246 -2.7; 263 -2.6; 282 -2.3; 301 -2.2; 323 -2.1; 345 -1.7; 369 -1.6; 395 -1.3; 423 -1.1; 452 -0.8; 484 -0.9; 518 -0.9; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.6; 777 -0.5; 832 -0.6; 890 -0.8; 952 -0.1; 1019 -0.1; 1090 -0.6; 1167 -0.9; 1248 -1.1; 1336 -1.2; 1429 -1.5; 1529 -1.7; 1636 -2.0; 1751 -2.1; 1873 -2.2; 2004 -2.3; 2145 -2.1; 2295 -1.9; 2455 -1.8; 2627 -1.8; 2811 -1.9; 3008 -1.5; 3219 -1.8; 3444 -1.6; 3685 -0.7; 3943 0.5; 4219 0.1; 4514 -1.1; 4830 -0.6; 5168 2.1; 5530 3.1; 5917 1.4; 6331 -0.8; 6775 -0.9; 7249 -0.6; 7756 -0.8; 8299 -2.1; 8880 -3.2; 9502 -1.8; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.0; 20000 -3.4
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-3.7dB` and instead set Global volume in the UI for both channels to **-37**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD650 (balanced) ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 20 Hz    | 1.76 | 3.2 dB  |
+| Peaking | 93 Hz    | 0.59 | -3.4 dB |
+| Peaking | 230 Hz   | 0.89 | -1.5 dB |
+| Peaking | 2034 Hz  | 1.34 | -2.4 dB |
+| Peaking | 8848 Hz  | 6.59 | -3.5 dB |
+| Peaking | 3256 Hz  | 6.9  | -1.1 dB |
+| Peaking | 5528 Hz  | 7.19 | 4.0 dB  |
+| Peaking | 6527 Hz  | 5.99 | -1.3 dB |
+| Peaking | 19916 Hz | 5.56 | -3.4 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD650%20(balanced)/Sennheiser%20HD650%20(balanced).png)

@@ -1,0 +1,35 @@
+# Sony MDR-Q68LW
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 5.3; 52 4.5; 56 3.3; 59 2.6; 64 1.4; 68 0.6; 73 -0.2; 78 -0.8; 83 -1.1; 89 -1.4; 95 -1.6; 102 -1.7; 109 -1.6; 117 -1.5; 125 -1.5; 134 -1.5; 143 -1.4; 153 -1.3; 164 -1.1; 175 -1.1; 188 -0.9; 201 -0.8; 215 -0.7; 230 -0.7; 246 -0.5; 263 -0.2; 282 0.1; 301 0.3; 323 0.4; 345 0.6; 369 0.7; 395 0.8; 423 0.9; 452 1.0; 484 1.0; 518 1.0; 554 1.2; 593 1.3; 635 1.2; 679 1.0; 726 1.0; 777 1.0; 832 0.8; 890 0.5; 952 0.2; 1019 -0.0; 1090 -0.3; 1167 -0.5; 1248 -1.0; 1336 -1.8; 1429 -2.7; 1529 -3.7; 1636 -4.4; 1751 -5.0; 1873 -5.5; 2004 -5.5; 2145 -5.2; 2295 -5.3; 2455 -5.1; 2627 -4.9; 2811 -4.4; 3008 -3.0; 3219 -1.9; 3444 -1.4; 3685 -2.2; 3943 -3.6; 4219 -3.5; 4514 -1.8; 4830 1.0; 5168 3.6; 5530 5.6; 5917 5.9; 6331 4.9; 6775 2.8; 7249 -0.3; 7756 -1.7; 8299 -0.7; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -1.2
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-Q68LW ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 68 Hz   | 0.14 | 11.8 dB  |
+| Peaking | 120 Hz  | 0.39 | -13.3 dB |
+| Peaking | 2090 Hz | 1.28 | -6.3 dB  |
+| Peaking | 4180 Hz | 6.01 | -3.7 dB  |
+| Peaking | 5744 Hz | 3.9  | 7.4 dB   |
+| Peaking | 17 Hz   | 0.82 | -0.8 dB  |
+| Peaking | 46 Hz   | 1.79 | 3.3 dB   |
+| Peaking | 85 Hz   | 0.58 | -2.5 dB  |
+| Peaking | 130 Hz  | 1.29 | 2.4 dB   |
+| Peaking | 7699 Hz | 8.85 | -2.6 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-Q68LW/Sony%20MDR-Q68LW.png)

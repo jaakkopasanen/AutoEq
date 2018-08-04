@@ -1,8 +1,0 @@
-# Sennheiser Momentum Wireless Bluetooth
-Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
-```
-Preamp: -6.0dB
-GraphicEQ: 10 -84; 20 6.0; 22 5.9; 23 5.8; 25 5.4; 26 5.2; 28 5.0; 30 5.1; 32 5.2; 35 5.6; 37 5.8; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 6.0; 109 6.0; 117 6.0; 125 5.8; 134 5.5; 143 5.3; 153 5.1; 164 5.0; 175 5.3; 188 5.4; 201 5.5; 215 5.8; 230 5.9; 246 6.0; 263 6.0; 282 6.0; 301 6.0; 323 6.0; 345 6.0; 369 6.0; 395 6.0; 423 6.0; 452 6.0; 484 5.9; 518 5.3; 554 4.6; 593 4.1; 635 3.8; 679 3.6; 726 3.3; 777 3.0; 832 2.2; 890 1.4; 952 0.5; 1019 -0.0; 1090 -0.0; 1167 0.4; 1248 0.4; 1336 0.1; 1429 -0.4; 1529 -1.3; 1636 -2.7; 1751 -3.6; 1873 -4.6; 2004 -4.6; 2145 -3.7; 2295 -2.3; 2455 -0.2; 2627 1.6; 2811 3.3; 3008 5.4; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 1.2; 5168 1.1; 5530 3.2; 5917 5.1; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-```
-**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -6.0dB` and instead set Global volume in the UI for both channels to **-60**.
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/Sennheiser%20Momentum%20Wireless%20Bluetooth/Sennheiser%20Momentum%20Wireless%20Bluetooth.png)

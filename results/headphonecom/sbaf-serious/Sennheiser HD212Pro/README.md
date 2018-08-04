@@ -1,0 +1,35 @@
+# Sennheiser HD212Pro
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 5.9; 37 5.5; 40 4.6; 42 4.1; 45 3.3; 49 2.4; 52 1.8; 56 1.0; 59 0.6; 64 0.3; 68 0.4; 73 0.0; 78 -0.5; 83 -0.7; 89 -1.0; 95 -1.0; 102 -1.1; 109 -1.0; 117 -0.7; 125 0.2; 134 1.9; 143 2.4; 153 2.2; 164 2.3; 175 2.6; 188 2.8; 201 3.1; 215 3.4; 230 3.7; 246 3.9; 263 4.0; 282 3.8; 301 2.9; 323 2.5; 345 2.4; 369 2.3; 395 2.7; 423 3.0; 452 2.9; 484 2.5; 518 2.2; 554 2.0; 593 1.9; 635 1.6; 679 1.0; 726 0.6; 777 0.6; 832 0.5; 890 0.5; 952 0.3; 1019 -0.1; 1090 -0.3; 1167 -0.2; 1248 -0.1; 1336 -0.1; 1429 -0.2; 1529 -0.4; 1636 -0.3; 1751 0.1; 1873 0.7; 2004 1.1; 2145 1.7; 2295 2.1; 2455 3.3; 2627 3.8; 2811 4.5; 3008 5.9; 3219 6.0; 3444 6.0; 3685 4.9; 3943 1.3; 4219 -0.9; 4514 0.1; 4830 2.2; 5168 4.1; 5530 6.0; 5917 5.9; 6331 4.7; 6775 1.8; 7249 1.1; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 -1.1; 14260 -2.8; 15258 -2.3; 16326 -1.5; 17469 -1.1; 18692 -0.4; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD212Pro ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-8.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 28 Hz    |  1.4  | 7.0 dB  |
+| Peaking | 237 Hz   |  1.69 | 3.8 dB  |
+| Peaking | 463 Hz   |  1.99 | 2.3 dB  |
+| Peaking | 3109 Hz  |  3.01 | 6.5 dB  |
+| Peaking | 5803 Hz  |  4.84 | 6.5 dB  |
+| Peaking | 33 Hz    |  0.17 | 0.7 dB  |
+| Peaking | 108 Hz   |  1.13 | -3.1 dB |
+| Peaking | 143 Hz   |  2.99 | 2.9 dB  |
+| Peaking | 4307 Hz  | 10.72 | -3.1 dB |
+| Peaking | 14920 Hz |  2.63 | -2.9 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD212Pro/Sennheiser%20HD212Pro.png)

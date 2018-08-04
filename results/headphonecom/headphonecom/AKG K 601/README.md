@@ -1,0 +1,33 @@
+# AKG K 601
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.3dB
+GraphicEQ: 10 -84; 20 2.0; 22 1.5; 23 1.2; 25 0.8; 26 0.7; 28 0.3; 30 0.1; 32 -0.2; 35 -0.5; 37 -0.7; 40 -0.9; 42 -1.1; 45 -1.2; 49 -1.4; 52 -1.6; 56 -1.7; 59 -1.8; 64 -2.0; 68 -1.7; 73 -0.5; 78 -0.6; 83 -1.7; 89 -1.7; 95 -1.4; 102 -1.7; 109 -2.0; 117 -2.1; 125 -2.3; 134 -2.3; 143 -2.4; 153 -2.5; 164 -2.2; 175 -2.4; 188 -2.4; 201 -2.4; 215 -2.3; 230 -2.3; 246 -2.2; 263 -2.2; 282 -2.1; 301 -2.0; 323 -1.7; 345 -1.7; 369 -1.6; 395 -1.4; 423 -1.2; 452 -0.9; 484 -0.7; 518 -0.6; 554 -0.3; 593 0.0; 635 0.5; 679 0.6; 726 0.7; 777 0.8; 832 0.7; 890 0.6; 952 0.2; 1019 -0.1; 1090 -0.2; 1167 -0.4; 1248 -0.4; 1336 -0.1; 1429 0.2; 1529 0.5; 1636 0.9; 1751 0.8; 1873 0.7; 2004 1.2; 2145 1.4; 2295 1.7; 2455 1.6; 2627 1.5; 2811 1.5; 3008 1.7; 3219 1.7; 3444 1.9; 3685 0.8; 3943 1.0; 4219 1.8; 4514 2.8; 4830 4.2; 5168 5.7; 5530 4.5; 5917 0.6; 6331 -0.4; 6775 1.3; 7249 1.1; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.3dB` and instead set Global volume in the UI for both channels to **-63**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `AKG K 601 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 18 Hz   | 1.47 | 2.3 dB  |
+| Peaking | 50 Hz   | 1.56 | -1.4 dB |
+| Peaking | 182 Hz  | 0.7  | -2.6 dB |
+| Peaking | 2636 Hz | 1.2  | 1.6 dB  |
+| Peaking | 5144 Hz | 5.46 | 5.7 dB  |
+| Peaking | 390 Hz  | 2.03 | -0.5 dB |
+| Peaking | 745 Hz  | 1.98 | 1.2 dB  |
+| Peaking | 1174 Hz | 3.31 | -0.9 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/headphonecom/AKG%20K%20601/AKG%20K%20601.png)

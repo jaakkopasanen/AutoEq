@@ -1,0 +1,35 @@
+# AudioTechnica ATH-M50 staight cable
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -1.2; 22 -2.1; 23 -2.4; 25 -3.1; 26 -3.4; 28 -3.9; 30 -4.4; 32 -4.8; 35 -5.2; 37 -5.5; 40 -5.6; 42 -5.7; 45 -5.9; 49 -6.1; 52 -6.2; 56 -5.9; 59 -5.5; 64 -3.7; 68 -1.3; 73 0.6; 78 -0.5; 83 -2.4; 89 -3.8; 95 -4.7; 102 -5.1; 109 -5.1; 117 -4.8; 125 -4.7; 134 -4.9; 143 -4.8; 153 -4.5; 164 -3.3; 175 -3.5; 188 -3.1; 201 -2.3; 215 -1.4; 230 -0.7; 246 -0.2; 263 0.5; 282 1.4; 301 2.1; 323 2.6; 345 2.9; 369 2.9; 395 2.5; 423 2.1; 452 1.5; 484 0.8; 518 0.1; 554 -0.1; 593 -0.3; 635 -0.5; 679 -0.7; 726 -0.7; 777 -0.4; 832 -0.3; 890 -0.2; 952 -0.1; 1019 0.0; 1090 -0.5; 1167 -0.9; 1248 -1.0; 1336 -1.1; 1429 -1.6; 1529 -2.4; 1636 -3.3; 1751 -4.2; 1873 -4.3; 2004 -3.8; 2145 -3.0; 2295 -2.2; 2455 -1.2; 2627 -0.0; 2811 1.3; 3008 2.4; 3219 2.9; 3444 3.1; 3685 2.3; 3943 0.4; 4219 -1.6; 4514 -0.8; 4830 1.7; 5168 4.9; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -1.4; 8880 -4.3; 9502 -4.2; 10167 -1.9; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -4.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `AudioTechnica ATH-M50 staight cable ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 41 Hz   | 1.28 | -6.3 dB |
+| Peaking | 128 Hz  | 1.88 | -5.1 dB |
+| Peaking | 1829 Hz | 3.21 | -4.9 dB |
+| Peaking | 5935 Hz | 2.8  | 6.8 dB  |
+| Peaking | 9124 Hz | 4.55 | -5.7 dB |
+| Peaking | 74 Hz   | 7.57 | 4.5 dB  |
+| Peaking | 212 Hz  | 0.17 | -1.0 dB |
+| Peaking | 351 Hz  | 1.91 | 4.4 dB  |
+| Peaking | 3337 Hz | 3.54 | 3.5 dB  |
+| Peaking | 4333 Hz | 7.1  | -4.0 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AudioTechnica%20ATH-M50%20staight%20cable/AudioTechnica%20ATH-M50%20staight%20cable.png)

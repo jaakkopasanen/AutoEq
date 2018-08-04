@@ -1,0 +1,35 @@
+# Beyerdynamic Custom One Pro linear bass position
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -4.7; 22 -5.1; 23 -5.3; 25 -5.7; 26 -5.9; 28 -6.2; 30 -6.4; 32 -6.6; 35 -6.8; 37 -6.9; 40 -7.0; 42 -7.0; 45 -6.8; 49 -6.3; 52 -5.7; 56 -5.0; 59 -4.3; 64 -2.4; 68 -2.1; 73 -4.1; 78 -2.2; 83 1.4; 89 1.5; 95 -0.8; 102 -2.6; 109 -3.2; 117 -3.4; 125 -3.7; 134 -3.7; 143 -3.6; 153 -3.4; 164 -3.3; 175 -5.3; 188 -6.1; 201 -6.0; 215 -6.0; 230 -5.8; 246 -5.9; 263 -5.9; 282 -5.6; 301 -5.3; 323 -5.1; 345 -4.8; 369 -4.5; 395 -4.1; 423 -3.8; 452 -3.5; 484 -3.1; 518 -2.7; 554 -2.4; 593 -1.9; 635 -1.6; 679 -1.6; 726 -1.2; 777 -0.4; 832 -0.2; 890 -0.3; 952 -0.2; 1019 0.0; 1090 0.0; 1167 0.3; 1248 0.5; 1336 0.7; 1429 1.0; 1529 0.8; 1636 0.3; 1751 -0.4; 1873 -1.1; 2004 -1.8; 2145 -2.1; 2295 -1.6; 2455 -0.5; 2627 0.8; 2811 1.9; 3008 2.7; 3219 3.2; 3444 3.4; 3685 3.8; 3943 4.6; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic Custom One Pro linear bass position ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 35 Hz   | 1.02 | -7.5 dB |
+| Peaking | 206 Hz  | 1.37 | -4.8 dB |
+| Peaking | 361 Hz  | 1.21 | -3.4 dB |
+| Peaking | 2155 Hz | 4.91 | -3.3 dB |
+| Peaking | 4796 Hz | 1.41 | 6.7 dB  |
+| Peaking | 52 Hz   | 3.74 | -1.2 dB |
+| Peaking | 86 Hz   | 8.05 | 4.7 dB  |
+| Peaking | 114 Hz  | 4.03 | -1.5 dB |
+| Peaking | 6406 Hz | 4.24 | 3.6 dB  |
+| Peaking | 7519 Hz | 1.76 | -2.5 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/headphonecom/Beyerdynamic%20Custom%20One%20Pro%20linear%20bass%20position/Beyerdynamic%20Custom%20One%20Pro%20linear%20bass%20position.png)

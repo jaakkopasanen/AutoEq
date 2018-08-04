@@ -1,0 +1,35 @@
+# Sennheiser HD 229 Black
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -5.8dB
+GraphicEQ: 10 -84; 20 -1.2; 22 -2.0; 23 -2.4; 25 -3.1; 26 -3.4; 28 -4.0; 30 -4.5; 32 -5.0; 35 -5.6; 37 -5.9; 40 -6.4; 42 -6.7; 45 -7.0; 49 -7.5; 52 -7.7; 56 -8.0; 59 -8.2; 64 -8.3; 68 -8.4; 73 -8.4; 78 -8.3; 83 -8.1; 89 -7.9; 95 -7.8; 102 -7.5; 109 -7.0; 117 -6.4; 125 -5.8; 134 -5.1; 143 -4.8; 153 -5.7; 164 -5.4; 175 -4.6; 188 -4.2; 201 -3.0; 215 -3.1; 230 -3.3; 246 -2.7; 263 -1.9; 282 -0.9; 301 -0.1; 323 0.7; 345 1.3; 369 1.8; 395 1.9; 423 1.9; 452 1.7; 484 1.7; 518 1.5; 554 1.5; 593 1.8; 635 1.8; 679 1.4; 726 1.0; 777 0.9; 832 0.6; 890 0.3; 952 0.2; 1019 0.1; 1090 -0.0; 1167 0.0; 1248 0.2; 1336 0.4; 1429 0.6; 1529 0.9; 1636 -0.6; 1751 -1.4; 1873 -0.9; 2004 -0.5; 2145 0.2; 2295 0.4; 2455 0.6; 2627 0.5; 2811 0.6; 3008 0.8; 3219 0.8; 3444 0.9; 3685 0.3; 3943 -0.5; 4219 -1.8; 4514 -2.3; 4830 -1.6; 5168 0.6; 5530 2.7; 5917 4.2; 6331 5.2; 6775 3.9; 7249 1.3; 7756 -0.1; 8299 -3.2; 8880 -5.9; 9502 -5.6; 10167 -1.1; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.0; 20000 -0.3
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-5.8dB` and instead set Global volume in the UI for both channels to **-58**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 229 Black ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 65 Hz   | 0.7  | -8.9 dB |
+| Peaking | 161 Hz  | 2.5  | -2.5 dB |
+| Peaking | 4705 Hz | 2.65 | -7.9 dB |
+| Peaking | 5818 Hz | 1.25 | 8.0 dB  |
+| Peaking | 8910 Hz | 3.53 | -9.0 dB |
+| Peaking | 149 Hz  | 3.56 | 0.8 dB  |
+| Peaking | 245 Hz  | 4.26 | -1.3 dB |
+| Peaking | 371 Hz  | 1.53 | 3.2 dB  |
+| Peaking | 634 Hz  | 1.43 | 2.1 dB  |
+| Peaking | 395 Hz  | 0.29 | -1.1 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20229%20Black/Sennheiser%20HD%20229%20Black.png)

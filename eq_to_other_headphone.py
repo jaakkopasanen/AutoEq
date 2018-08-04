@@ -9,7 +9,7 @@ def main():
     dt770.interpolate()
     he400s = FrequencyResponse.read_from_csv('innerfidelity/data/onear/HiFiMAN HE400S/HiFiMAN HE400S.csv')
     he400s.interpolate()
-    calibration = FrequencyResponse.read_from_csv('calibration/headphonecom_raw_to_innerfidelity_raw.csv')
+    calibration = FrequencyResponse.read_from_csv('calibration/headphonecom_to_innerfidelity.csv')
     calibration.interpolate()
     compensation = FrequencyResponse.read_from_csv('innerfidelity/resources/innerfidelity_compensation_2017.csv')
     compensation.interpolate()

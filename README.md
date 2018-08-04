@@ -1,21 +1,20 @@
 # AutoEQ
 **TL;DR** If you are here just looking to make your headphones sound better, find your headphone model in
-[here](https://github.com/jaakkopasanen/AutoEq/tree/master/results/SBAF-Serious/innerfidelity/onear) or
-[here](https://github.com/jaakkopasanen/AutoEq/tree/master/results/SBAF-Serious/headphoncecom/onear) and follow
-instructions in [Usage](https://github.com/jaakkopasanen/AutoEq#usage) section. 
+[results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder's recommended headphones list
+and follow instructions in [Usage](https://github.com/jaakkopasanen/AutoEq#usage) section. 
 
 ## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
 frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
 This project currently has 700+ onear headphones covered in the
 [results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder. Results are organized by
-target/source/type/headphone so a Sennheiser HD 650 measured by Innerfidelity and tuned to
+source/target/headphone so a Sennheiser HD 650 measured by Innerfidelity and tuned to
 [Innerfidelity 2017 compensation curve](https://www.innerfidelity.com/content/compensation-curve-innerfidelity-measurements-dialog-part-1)
 would be found in
-[Innerfidelity 2017/innerfidelity/onear/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/Innerfidelity%202017/innerfidelity/onear/Sennheiser%20HD%20650).
+[innerfidelity/innerfidelity2017/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/innerfidelity2017/Sennheiser%20HD%20650).
 See [Usage](https://github.com/jaakkopasanen/AutoEq#usage) for instructions how to use the results with
 [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and
-[Results](https://github.com/jaakkopasanen/AutoEq#results) for details about parameters and how the results were
+[Results](https://github.com/jaakkopasanen/AutoEq#results) section for details about parameters and how the results were
 obtained.
 
 AutoEQ is not just a collection of automatically produced headphone equalization settings but also a tool for equalizing
@@ -30,7 +29,7 @@ numerical format. Everything is stored as CSV files so they are easy to process 
 Microsoft Excel. See [Calibration](https://github.com/jaakkopasanen/AutoEq#calibration) and [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing) for more technical description about how
 things were obtained and processed.
 
-![sennheiser-hd650](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
+![sennheiser-hd650](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
 
 *Sennheiser HD 650 equalization results plotted*
 
@@ -41,14 +40,14 @@ processed. They look like this:
 ````
 GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ````
-AutoEQ also produces parametric eq settings and can be used with Peace or any other parametric eq which has enough
-bands available.
+AutoEQ also produces parametric eq settings which can be used with Peace or any other parametric eq which has at least
+5 bands available.
 
 ### Plain EqualizerAPO
 Simplest way is to [install EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
 `C:\Program Files\EqualizerAPO\config\config.txt`. Disable `Include: example.txt`, replace `GraphicEQ: ...` line with
 the one found in results and set `Preamp: ...`. Using
-[Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/SBAF-Serious/innerfidelity/onear/Sennheiser%20HD%20650)
+[Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/innerfidelity/sbaf-serious/Sennheiser%20HD%20650)
 would make config file look like this:
 ````
 Preamp: -6 dB
@@ -93,29 +92,27 @@ Keep in mind that parametric eq produced is not as accurate as graphic eq becaus
 
 
 ## Results
-The main princible used by AutoEQ for producing the equalization function is to invert error function. Error is the
+The main principle used by AutoEQ for producing the equalization function is to invert error curve. Error is the
 difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
 below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. In reality simply inverting the error is
 not sufficient since measurements and equalization have several problems that need to be addressed, see
 [Technical Challenges](https://github.com/jaakkopasanen/AutoEq#technical-challenges) for more details.
 
-Results provided in this project have all the on-ear headphone measurements from
+Results provided in this project currently have all the on-ear headphone measurements from
 [Innerfidelity](https://www.innerfidelity.com/headphone-measurements) and [Headphone.com](http://graphs.headphone.com/)
-with 4 different target responses:
-- Modified version of Innerfidelity target by @Serious user on Super Best Audio Friends forum
-- Innerfidelity 2017
-- Headphone.com
-- Sonoma Model One measurement by Innerfidelity
+with 2 different target responses for each:
 
-All but the Headphone.com compensation curve are targeted to Innerfidelity measurements. But all targets have results
-also for Headphone.com data, in these cases the Headphone.com data was calibrated to Innerfidelity measurement system
-before applying the compensation.
+Innerfidelity measured headphones have SBAF-Serious target and Innerfidelity 2017 target results. Headphone.com measured
+headphones have Headphone.com native target results as well as SBAF-Serious target results. Headphone.com measurements
+were calibrated to Innerfidelity measurements before applying the SBAF-Serious target curve because that was developed
+for Innerfidelity measurements.
 
-Recommended compensation curve is the modified version of Innerfidelity target curve produced by Serious user on Super
-Best Audio Friends forum. This curve doesn't have the glaring problems but is
-quite well balanced overall. Curve was turned into a compensation for raw microphone data and tilted 0.2 dB / octave
-brighter. See the [forum thread](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
-for discussion about the original target. `innerfidelity/resources/innerfidelity_compensation_SBAF-Serious-brighter.csv`
+Recommended compensation curve for Innerfidelity and Headphone.com measurements is the modified version of
+Innerfidelity target curve produced by Serious user on Super Best Audio Friends forum. This curve doesn't have the
+glaring problems but is quite well balanced overall. Curve was turned into a compensation for raw microphone data and
+tilted 0.2 dB / octave brighter. See the
+[forum thread](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
+for discussion about the original target. `innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv`
 
 Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
 reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
@@ -125,11 +122,6 @@ much. `innerfidelity/resources/innerfidelity_compensation_2017.csv`
 Headphone.com compensation curve is used by Headphone.com with their Frequency Response graphs but this seems to
 underestimate treble even more than the 2017 Innerfidelity curve leading to even brighter equalization.
 `headphonecom/resources/headphonecom_compensation.csv`
-
-Fourth target is the raw measurement data of Sonoma Model One headphone system as measured by Innerfidelity. This is an
-experiment in equalizing headphones to sound like other headphones. Sonoma Model One is reasonably neutrally tuned
-headphone and as such works as a quite good equalization target. I personally prefer the modified SBAF-Serious target
-though. `innerfidelity/data/onear/Sonoma Model One/Sonoma Model One.csv`
 
 None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
 results. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain (boost) is
@@ -206,7 +198,7 @@ optional arguments:
                         input data is raw microphone data. See
                         innerfidelity/resources and headphonecom/resources.
                         Defaults to "innerfidelity\resources\innerfidelity_com
-                        pensation_SBAF-Serious-brighter.csv".
+                        pensation_sbaf-serious.csv".
   --equalize            Will run equalization if this parameter exists, no
                         value needed.
   --parametric_eq       Will produce parametric eq settings if this parameter
@@ -254,7 +246,7 @@ optional arguments:
 ### Examples
 Equalizing Sennheiser HD 650 and saving results to `myresults/HD650`:
 ````commandline
-python frequency_response.py --input_dir="innerfidelity\data\onear\Sennheiser HD 650" --output_dir="myresults\HD650" --compensation="innerfidelity\resources\innerfidelity_compensation_SBAF-Serious-brighter.csv" --equalize --bass_boost=4 --show_plot
+python frequency_response.py --input_dir="innerfidelity\data\onear\Sennheiser HD 650" --output_dir="myresults\HD650" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
 ````
 
 Equalizing Beyerdynamic DT990 without saving results
@@ -262,23 +254,23 @@ Equalizing Beyerdynamic DT990 without saving results
 python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="headphonecom\resources\headphonecom_compensation.csv" --equalize --bass_boost=4 --show_plot
 ````
 
-Equalizing Beyerdynamic DT990 to SBAF-Serious-brighter target. This target is made for Innerfidelity measurements so
+Equalizing Beyerdynamic DT990 to SBAF-Serious target. This target is made for Innerfidelity measurements so
 we need to calibrate Headphone.com measurement.
 ````commandline
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="innerfidelity\resources\innerfidelity_compensation_SBAF-Serious-brighter.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=4 --show_plot
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious-brighter.csv" --calibration="calibration\headphonecom_to_innerfidelity.csv" --equalize --bass_boost=4 --show_plot
 ````
 
-Equalizing all Headphone.com on-ear headphones and saving results to `results\onear\SBAF-Serious-brighter\headphonecom`.
+Equalizing all Headphone.com on-ear headphones and saving results to `results\onear\sbaf-serious\headphonecom`.
 There is a lot of headphones and we don't want to inspect all visually so we'll omit `--show_plot`
 ````commandline
-python frequency_response.py --input_dir="headphonecom\data\onear" --output_dir="results\onear\SBAF-Serious-brighter\headphonecom" --compensation="innerfidelity\resources\innerfidelity_compensation_SBAF-Serious-brighter.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=4
+python frequency_response.py --input_dir="headphonecom\data\onear" --output_dir="results\headphonecom\sbaf-serious" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=4
 ````
 
 Equalizing Beyerdynamic DT 770 to sound like HiFiMAN HE400S. 80ohm version of DT 770 is only available in Headphone.com
 measurements and HE400S only in Innerfidelity measurements so we'll use calibration once again. To make the bass sound
 the same we'll set bass boost to zero.
 ````commandline
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT770" --compensation="innerfidelity\data\onear\HiFiMAN HE400S\HiFiMAN HE400S.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=0 --show_plot
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT770" --output_dir="myresults\Beyerdynamic DT770" --compensation="innerfidelity\data\onear\HiFiMAN HE400S\HiFiMAN HE400S.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=0 --show_plot
 ````
 
 Viewing HiFiMAN HE400S raw microphone data
@@ -355,14 +347,39 @@ in it. Sharp changes in equalization may produce unwanted equalization artifacts
 corners whenever max gain clips the curve.
 
 ## Parametric Equalizer
+AutoEQ has an optimizer to fit several peaking filters to the desired equalization curve. Optimization is part heuristic
+initialization part mathematical optimization.
+
+In the initialization phase peaks are detected from the target curve and a peaking filter is created to match the peak's
+height (gain) and location (frequency). This way the optimizer finds suitable number of filters to optimize. If bass
+region has no peaks and therefore is missing filters entirely maximum of two filters will be added at 20 Hz and 60 Hz.
+
+A way to limit the number of filters used is provided with `max_filters` parameter. If there are too many filters after
+initialization filters are removed. First filters with small gain (< 0.2 dB and < 0.33 dB) are removed. If there are too
+many filters after reduction of small gain filters, nearby filters are attempted to merge. Merged filter will be in the
+mid point of the merged filters. If merging filters did not reduce the count enough smallest filters are removed until
+count matches maximum allowed number of filters. Image below shows initialization for 1More MK801 headphone. Red dots
+are the peaks of filters before reduction and green dots are the peaks after reduction.
 
 ![filter-initialization](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/FilterInitialization.png)
 
 *Equalization target and initial peak filters for optimization before and after filter number limitation*
 
+After suitable number of filters have been achieved and filter center frequencies and gains have been set to appropriate
+values a mathematical optimization is performed to fit sum frequency response of all filters to match as close as
+possible the desired curve. Optimization is based on gradient descent optimizer and will attempt to minimize mean
+squared error between the sum frequency response of the filters and the target. When improvements in the error are
+getting too small to make a practical difference the optimization is stopped. Animation below shows progress from the
+initialization to a close finished curve.
+
 ![optimization-animation](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Optimization.gif)
 
 *Optimization of parametric eq filters (click to play)*
+
+Below is the end result of optimizing only 5 peaking filters to equalization curve of 1More MK801 headphone. Parametric
+eq curve deviates from the fine equalization curve in some points but all in all follows the target surprisingly well.
+The two equalization curves have hardly audible difference. Some headphones are not as easy to equalize properly with
+limited number of bands because highly erratic curves are impossible to be estimated with only a few peaking filters.
 
 ![1more-mk801-plot](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/1More%20MK801.png)
 
@@ -387,11 +404,9 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- Biquad filter optimzer for parametric eq
-  - max filters
-  - README doc
-- Re-organize results to <model>/<tuning>/<source>
-  - List of recommended tuning - source pairs
+- Re-organize results to `<source>/<tuning>/<model>`
+  - List of recommended results
+  - Update reddit links
 - oratory1990 measurements
 - Rtings measurements
 - Reference audio analyzer measurements

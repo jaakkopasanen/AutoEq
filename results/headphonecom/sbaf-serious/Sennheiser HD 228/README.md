@@ -1,0 +1,35 @@
+# Sennheiser HD 228
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 -6.2; 22 -6.7; 23 -6.9; 25 -7.3; 26 -7.5; 28 -7.8; 30 -8.0; 32 -8.3; 35 -8.6; 37 -8.8; 40 -9.0; 42 -9.2; 45 -9.4; 49 -9.6; 52 -9.7; 56 -9.8; 59 -10.0; 64 -10.2; 68 -10.3; 73 -10.4; 78 -10.4; 83 -10.3; 89 -9.7; 95 -9.1; 102 -8.8; 109 -8.5; 117 -9.1; 125 -9.8; 134 -10.1; 143 -10.1; 153 -9.9; 164 -9.2; 175 -8.7; 188 -7.9; 201 -6.7; 215 -5.1; 230 -4.4; 246 -5.6; 263 -6.0; 282 -5.0; 301 -4.6; 323 -4.1; 345 -3.5; 369 -3.2; 395 -2.7; 423 -1.9; 452 -1.1; 484 -0.7; 518 -0.2; 554 0.3; 593 0.8; 635 1.0; 679 1.0; 726 0.9; 777 0.9; 832 0.6; 890 0.4; 952 0.2; 1019 0.0; 1090 0.1; 1167 0.4; 1248 0.7; 1336 0.9; 1429 1.2; 1529 0.9; 1636 -0.2; 1751 0.2; 1873 0.7; 2004 0.9; 2145 1.4; 2295 1.8; 2455 2.5; 2627 2.8; 2811 2.7; 3008 3.5; 3219 3.9; 3444 4.1; 3685 5.7; 3943 4.3; 4219 -0.2; 4514 -2.6; 4830 -3.6; 5168 -1.2; 5530 1.4; 5917 2.3; 6331 1.4; 6775 1.8; 7249 0.3; 7756 -0.7; 8299 -1.9; 8880 -1.8; 9502 -0.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 -1.2; 17469 -3.7; 18692 -5.4; 20000 -6.5
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 228 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 30 Hz    | 0.6  | -6.5 dB |
+| Peaking | 73 Hz    | 0.92 | -6.7 dB |
+| Peaking | 152 Hz   | 1.61 | -7.1 dB |
+| Peaking | 290 Hz   | 2.52 | -3.3 dB |
+| Peaking | 3238 Hz  | 2.49 | 4.6 dB  |
+| Peaking | 679 Hz   | 2.42 | 1.6 dB  |
+| Peaking | 3819 Hz  | 9.49 | 4.7 dB  |
+| Peaking | 4748 Hz  | 3.75 | -5.7 dB |
+| Peaking | 5758 Hz  | 4.2  | 3.6 dB  |
+| Peaking | 19365 Hz | 1.55 | -6.7 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20228/Sennheiser%20HD%20228.png)

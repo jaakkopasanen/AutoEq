@@ -1,0 +1,35 @@
+# KRK Systems KNS 6400
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 0.6; 22 0.4; 23 0.2; 25 0.0; 26 -0.1; 28 -0.3; 30 -0.5; 32 -0.6; 35 -0.8; 37 -0.8; 40 -0.9; 42 -0.9; 45 -0.6; 49 0.4; 52 1.0; 56 1.4; 59 2.1; 64 3.8; 68 3.7; 73 2.3; 78 0.8; 83 -0.6; 89 -1.6; 95 -2.2; 102 -2.7; 109 -3.0; 117 -3.4; 125 -3.8; 134 -4.1; 143 -4.4; 153 -3.9; 164 -3.3; 175 -4.5; 188 -5.4; 201 -5.9; 215 -6.3; 230 -5.8; 246 -4.9; 263 -5.1; 282 -5.3; 301 -5.3; 323 -5.5; 345 -5.3; 369 -4.8; 395 -4.0; 423 -3.1; 452 -2.3; 484 -1.8; 518 -1.7; 554 -2.0; 593 -2.4; 635 -2.3; 679 -1.5; 726 0.3; 777 0.2; 832 -1.0; 890 -0.4; 952 -0.1; 1019 0.0; 1090 -0.2; 1167 -0.4; 1248 -0.2; 1336 0.5; 1429 1.3; 1529 1.6; 1636 2.1; 1751 0.9; 1873 -0.1; 2004 -0.7; 2145 -0.6; 2295 -0.4; 2455 -0.9; 2627 -0.7; 2811 0.1; 3008 1.9; 3219 1.2; 3444 2.0; 3685 4.5; 3943 3.8; 4219 4.4; 4514 5.3; 4830 6.0; 5168 6.0; 5530 6.0; 5917 3.6; 6331 0.5; 6775 -0.5; 7249 0.8; 7756 0.3; 8299 0.0; 8880 -0.0; 9502 -0.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.2
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `KRK Systems KNS 6400 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 67 Hz   |  3.56 | 5.4 dB  |
+| Peaking | 122 Hz  |  1.07 | -3.3 dB |
+| Peaking | 209 Hz  |  3.02 | -3.4 dB |
+| Peaking | 329 Hz  |  1.49 | -4.6 dB |
+| Peaking | 4792 Hz |  2.37 | 6.6 dB  |
+| Peaking | 613 Hz  |  9.42 | -1.5 dB |
+| Peaking | 1592 Hz |  4.56 | 2.5 dB  |
+| Peaking | 2228 Hz |  2.3  | -1.4 dB |
+| Peaking | 3662 Hz | 10.93 | 2.4 dB  |
+| Peaking | 6617 Hz | 10.74 | -2.5 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/headphonecom/KRK%20Systems%20KNS%206400/KRK%20Systems%20KNS%206400.png)

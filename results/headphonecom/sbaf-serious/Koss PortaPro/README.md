@@ -1,0 +1,35 @@
+# Koss PortaPro
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.2dB
+GraphicEQ: 10 -84; 20 5.5; 22 4.5; 23 4.0; 25 3.2; 26 2.8; 28 2.0; 30 1.3; 32 0.7; 35 -0.2; 37 -0.7; 40 -1.4; 42 -1.9; 45 -2.5; 49 -3.4; 52 -3.9; 56 -4.6; 59 -5.0; 64 -5.7; 68 -6.2; 73 -6.7; 78 -7.0; 83 -7.3; 89 -7.5; 95 -7.6; 102 -7.6; 109 -7.6; 117 -7.2; 125 -7.2; 134 -6.9; 143 -6.7; 153 -6.6; 164 -6.2; 175 -6.0; 188 -5.5; 201 -5.1; 215 -4.7; 230 -4.4; 246 -4.0; 263 -3.8; 282 -3.5; 301 -3.2; 323 -2.8; 345 -2.6; 369 -2.0; 395 -1.5; 423 -1.3; 452 -1.0; 484 -1.0; 518 -0.8; 554 -0.5; 593 -0.2; 635 0.1; 679 -0.2; 726 -0.0; 777 0.3; 832 0.3; 890 0.1; 952 0.1; 1019 -0.1; 1090 -0.1; 1167 -0.3; 1248 -0.6; 1336 -1.1; 1429 -1.7; 1529 -2.3; 1636 -3.0; 1751 -3.6; 1873 -4.1; 2004 -4.6; 2145 -4.9; 2295 -4.4; 2455 -3.3; 2627 -2.1; 2811 -0.4; 3008 1.4; 3219 2.4; 3444 3.0; 3685 3.1; 3943 2.0; 4219 0.1; 4514 -1.0; 4830 -2.2; 5168 -0.8; 5530 0.8; 5917 3.6; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -2.1; 9502 -2.5; 10167 -0.1; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -3.8
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.2dB` and instead set Global volume in the UI for both channels to **-62**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Koss PortaPro ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 20 Hz   | 1.12 | 6.1 dB  |
+| Peaking | 86 Hz   | 0.75 | -6.9 dB |
+| Peaking | 184 Hz  | 0.92 | -3.1 dB |
+| Peaking | 2106 Hz | 2.17 | -5.6 dB |
+| Peaking | 3389 Hz | 3.17 | 4.2 dB  |
+| Peaking | 858 Hz  | 1.55 | 0.8 dB  |
+| Peaking | 1573 Hz | 5.05 | -0.8 dB |
+| Peaking | 4845 Hz | 5.87 | -3.2 dB |
+| Peaking | 6350 Hz | 5.19 | 6.1 dB  |
+| Peaking | 9231 Hz | 8.04 | -3.4 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20PortaPro/Koss%20PortaPro.png)

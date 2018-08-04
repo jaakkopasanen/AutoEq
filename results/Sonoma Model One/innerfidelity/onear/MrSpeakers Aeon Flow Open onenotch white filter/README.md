@@ -1,8 +1,0 @@
-# MrSpeakers Aeon Flow Open onenotch white filter
-Replace `C:\Program Files\EqualizerAPO\config\config.txt` with:
-```
-Preamp: -5.9dB
-GraphicEQ: 10 -84; 20 3.4; 22 3.4; 23 3.3; 25 3.3; 26 3.3; 28 3.2; 30 3.2; 32 3.1; 35 3.0; 37 3.0; 40 2.8; 42 2.6; 45 2.4; 49 2.0; 52 1.8; 56 1.6; 59 1.6; 64 1.7; 68 1.8; 73 1.7; 78 1.1; 83 0.5; 89 -0.3; 95 -1.4; 102 -2.4; 109 -3.2; 117 -3.9; 125 -4.5; 134 -5.0; 143 -5.3; 153 -5.2; 164 -5.0; 175 -5.9; 188 -5.9; 201 -5.8; 215 -5.8; 230 -5.6; 246 -5.5; 263 -5.3; 282 -5.1; 301 -4.9; 323 -4.7; 345 -4.5; 369 -4.3; 395 -4.0; 423 -3.6; 452 -3.1; 484 -2.8; 518 -2.3; 554 -1.9; 593 -1.7; 635 -1.2; 679 -0.6; 726 -0.1; 777 0.1; 832 0.3; 890 0.4; 952 -0.0; 1019 0.1; 1090 0.9; 1167 2.6; 1248 4.3; 1336 3.7; 1429 2.9; 1529 1.9; 1636 0.8; 1751 0.1; 1873 -0.1; 2004 0.3; 2145 0.9; 2295 1.7; 2455 3.6; 2627 5.6; 2811 4.5; 3008 4.6; 3219 5.8; 3444 5.3; 3685 3.4; 3943 2.0; 4219 1.4; 4514 2.8; 4830 2.8; 5168 3.2; 5530 2.5; 5917 2.2; 6331 2.6; 6775 3.0; 7249 1.3; 7756 -0.3; 8299 -3.1; 8880 -5.1; 9502 -5.4; 10167 -3.9; 10879 -0.8; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-```
-**OR** if using HeSuVi replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp: -5.9dB` and instead set Global volume in the UI for both channels to **-59**.
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/Sonoma%20Model%20One/innerfidelity/onear/MrSpeakers%20Aeon%20Flow%20Open%20onenotch%20white%20filter/MrSpeakers%20Aeon%20Flow%20Open%20onenotch%20white%20filter.png)

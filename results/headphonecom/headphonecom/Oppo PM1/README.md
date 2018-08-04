@@ -1,0 +1,35 @@
+# Oppo PM1
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -1.0; 22 -1.4; 23 -1.6; 25 -1.8; 26 -1.9; 28 -2.1; 30 -2.3; 32 -2.4; 35 -2.6; 37 -2.6; 40 -2.4; 42 -2.3; 45 -1.9; 49 -1.3; 52 -1.5; 56 -3.0; 59 -3.8; 64 -3.9; 68 -3.8; 73 -3.8; 78 -3.9; 83 -3.9; 89 -4.0; 95 -4.2; 102 -4.1; 109 -4.1; 117 -4.2; 125 -4.0; 134 -4.1; 143 -4.1; 153 -4.1; 164 -3.9; 175 -4.0; 188 -4.0; 201 -3.8; 215 -3.7; 230 -3.5; 246 -3.4; 263 -3.6; 282 -3.8; 301 -3.8; 323 -3.7; 345 -3.2; 369 -2.6; 395 -1.8; 423 -1.2; 452 -1.5; 484 -1.8; 518 -1.8; 554 -1.7; 593 -1.3; 635 -1.1; 679 -1.1; 726 -1.2; 777 -1.3; 832 -1.5; 890 -1.4; 952 -0.5; 1019 0.2; 1090 0.9; 1167 1.2; 1248 1.8; 1336 1.5; 1429 2.0; 1529 2.8; 1636 3.0; 1751 3.3; 1873 3.8; 2004 4.1; 2145 4.4; 2295 5.0; 2455 5.6; 2627 5.8; 2811 5.7; 3008 5.8; 3219 5.4; 3444 5.1; 3685 5.1; 3943 5.7; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.5; 9502 -0.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Oppo PM1 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 30 Hz   | 1.83 | -1.5 dB |
+| Peaking | 78 Hz   | 1.17 | -1.6 dB |
+| Peaking | 190 Hz  | 0.36 | -3.7 dB |
+| Peaking | 2669 Hz | 0.93 | 5.6 dB  |
+| Peaking | 5331 Hz | 2.21 | 4.9 dB  |
+| Peaking | 427 Hz  | 8.58 | 1.4 dB  |
+| Peaking | 860 Hz  | 5.9  | -1.5 dB |
+| Peaking | 2249 Hz | 0.32 | 0.2 dB  |
+| Peaking | 6487 Hz | 5.55 | 3.1 dB  |
+| Peaking | 7665 Hz | 1.57 | -2.1 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/headphonecom/Oppo%20PM1/Oppo%20PM1.png)

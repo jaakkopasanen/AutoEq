@@ -79,18 +79,18 @@ def main():
     fig, ax = diff.plot_graph(f_min=10, f_max=20000, show=False)
     ax.fill_between(diff.frequency, diff.raw+std, diff.raw-std, facecolor='lightblue')
     plt.legend(['Headphone.com Raw to Innerfidelity Raw', 'Standard Deviation'])
-    fig.savefig(os.path.join('calibration', 'headphonecom_raw_to_innerfidelity_raw.png'), dpi=240)
+    fig.savefig(os.path.join('calibration', 'headphonecom_to_innerfidelity.png'), dpi=240)
     plt.show()
-    diff.write_to_csv(os.path.join('calibration', 'headphonecom_raw_to_innerfidelity_raw.csv'))
+    diff.write_to_csv(os.path.join('calibration', 'headphonecom_to_innerfidelity.csv'))
 
     diff.raw *= -1
     diff.name = 'Innerfidelity Raw to Headphone.com Raw'
     fig, ax = diff.plot_graph(f_min=10, f_max=20000, show=False)
     ax.fill_between(diff.frequency, diff.raw + std, diff.raw - std, facecolor='lightblue')
     plt.legend(['Innerfidelity Raw to Headphone.com Raw', 'Standard Deviation'])
-    fig.savefig(os.path.join('calibration', 'innerfidelity_raw_to_headphonecom_raw.png'), dpi=240)
+    fig.savefig(os.path.join('calibration', 'innerfidelity_to_headphonecom.png'), dpi=240)
     plt.show()
-    diff.write_to_csv(os.path.join('calibration', 'innerfidelity_raw_to_headphonecom_raw.csv'))
+    diff.write_to_csv(os.path.join('calibration', 'innerfidelity_to_headphonecom.csv'))
 
 
 if __name__ == '__main__':

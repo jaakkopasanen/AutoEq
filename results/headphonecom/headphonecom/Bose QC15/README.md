@@ -1,0 +1,35 @@
+# Bose QC15
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -2.5dB
+GraphicEQ: 10 -84; 20 -10.1; 22 -12.6; 23 -13.5; 25 -14.8; 26 -15.1; 28 -15.3; 30 -14.8; 32 -14.1; 35 -13.0; 37 -12.4; 40 -11.9; 42 -11.6; 45 -11.3; 49 -10.9; 52 -10.7; 56 -10.3; 59 -10.1; 64 -9.9; 68 -9.9; 73 -9.9; 78 -9.8; 83 -9.6; 89 -9.4; 95 -9.2; 102 -8.9; 109 -8.7; 117 -8.4; 125 -8.2; 134 -7.9; 143 -7.6; 153 -7.3; 164 -6.9; 175 -6.8; 188 -6.5; 201 -6.3; 215 -6.2; 230 -5.9; 246 -5.9; 263 -5.8; 282 -5.5; 301 -5.2; 323 -5.0; 345 -4.7; 369 -4.2; 395 -3.9; 423 -3.5; 452 -3.0; 484 -2.6; 518 -2.2; 554 -1.7; 593 -1.2; 635 -0.5; 679 -0.3; 726 -0.0; 777 0.4; 832 0.7; 890 0.7; 952 0.4; 1019 -0.0; 1090 -0.5; 1167 -0.8; 1248 -0.9; 1336 -0.6; 1429 0.2; 1529 0.6; 1636 -0.4; 1751 -2.0; 1873 -3.7; 2004 -5.3; 2145 -6.5; 2295 -6.7; 2455 -6.3; 2627 -5.0; 2811 -3.2; 3008 -1.2; 3219 -0.1; 3444 -1.0; 3685 -1.5; 3943 -4.2; 4219 -6.0; 4514 -4.8; 4830 -1.0; 5168 1.3; 5530 1.0; 5917 -3.9; 6331 -1.5; 6775 -0.8; 7249 -0.5; 7756 0.2; 8299 0.0; 8880 -1.1; 9502 -3.2; 10167 -3.0; 10879 -0.7; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -1.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-2.5dB` and instead set Global volume in the UI for both channels to **-25**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Bose QC15 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-1.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 15 Hz    | 0.07 | -12.1 dB |
+| Peaking | 2278 Hz  | 3.48 | -7.4 dB  |
+| Peaking | 4265 Hz  | 6.87 | -6.1 dB  |
+| Peaking | 20382 Hz | 2.33 | -0.4 dB  |
+| Peaking | 38314 Hz | 6.01 | -3.6 dB  |
+| Peaking | 29 Hz    | 2.79 | -3.6 dB  |
+| Peaking | 65 Hz    | 0.92 | 1.1 dB   |
+| Peaking | 833 Hz   | 2.85 | 1.9 dB   |
+| Peaking | 2718 Hz  | 5.31 | -1.4 dB  |
+| Peaking | 3132 Hz  | 7.2  | 1.9 dB   |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/headphonecom/Bose%20QC15/Bose%20QC15.png)
