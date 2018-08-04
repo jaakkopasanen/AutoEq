@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-from frequency_response import FrequencyResponse
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
