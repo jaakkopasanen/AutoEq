@@ -1,0 +1,35 @@
+# Sennheiser PXC 550 Wired Power On
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 0.9; 22 0.3; 23 0.1; 25 -0.3; 26 -0.5; 28 -0.8; 30 -0.9; 32 -1.1; 35 -1.3; 37 -1.4; 40 -1.5; 42 -1.6; 45 -1.7; 49 -1.8; 52 -1.8; 56 -1.8; 59 -1.8; 64 -1.7; 68 -1.6; 73 -1.5; 78 -1.2; 83 -1.2; 89 -1.3; 95 -1.4; 102 -1.8; 109 -2.3; 117 -2.8; 125 -3.4; 134 -3.6; 143 -3.9; 153 -4.2; 164 -2.5; 175 -2.3; 188 -2.6; 201 -2.0; 215 -1.2; 230 -0.1; 246 0.7; 263 1.3; 282 2.1; 301 2.4; 323 2.7; 345 2.8; 369 2.8; 395 2.8; 423 2.8; 452 2.8; 484 2.6; 518 2.5; 554 2.5; 593 2.6; 635 2.4; 679 2.1; 726 1.8; 777 1.6; 832 1.0; 890 0.6; 952 0.3; 1019 -0.0; 1090 -0.2; 1167 0.4; 1248 0.4; 1336 -0.9; 1429 -1.3; 1529 -2.0; 1636 -2.5; 1751 -2.2; 1873 -1.6; 2004 -1.7; 2145 -1.3; 2295 -0.7; 2455 0.2; 2627 1.2; 2811 1.6; 3008 2.4; 3219 3.1; 3444 3.4; 3685 2.4; 3943 3.3; 4219 6.0; 4514 3.2; 4830 -2.6; 5168 -1.9; 5530 2.4; 5917 5.4; 6331 5.4; 6775 3.6; 7249 1.3; 7756 0.3; 8299 -1.7; 8880 -4.6; 9502 -5.2; 10167 -2.2; 10879 -0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.0; 20000 -1.4
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PXC 550 Wired Power On ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 168 Hz  | 0.72 | -5.1 dB |
+| Peaking | 330 Hz  | 0.85 | 5.4 dB  |
+| Peaking | 6255 Hz | 6.06 | 6.4 dB  |
+| Peaking | 4090 Hz | 5.12 | 5.0 dB  |
+| Peaking | 9229 Hz | 5.43 | -6.2 dB |
+| Peaking | 8 Hz    | 0.62 | 2.0 dB  |
+| Peaking | 39 Hz   | 1.75 | -1.5 dB |
+| Peaking | 1796 Hz | 1.28 | -6.6 dB |
+| Peaking | 2184 Hz | 0.64 | 4.3 dB  |
+| Peaking | 4956 Hz | 9.04 | -6.4 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PXC%20550%20Wired%20Power%20On/Sennheiser%20PXC%20550%20Wired%20Power%20On.png)

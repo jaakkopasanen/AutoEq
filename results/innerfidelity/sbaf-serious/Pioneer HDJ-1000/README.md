@@ -1,0 +1,35 @@
+# Pioneer HDJ-1000
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 5.6; 78 4.7; 83 3.9; 89 3.1; 95 2.5; 102 2.0; 109 1.8; 117 1.6; 125 1.2; 134 1.1; 143 1.1; 153 1.1; 164 1.2; 175 1.5; 188 1.4; 201 1.4; 215 1.6; 230 1.7; 246 2.0; 263 2.2; 282 2.5; 301 2.7; 323 2.8; 345 2.9; 369 3.1; 395 3.4; 423 3.9; 452 3.6; 484 2.9; 518 2.2; 554 2.6; 593 2.6; 635 2.2; 679 1.7; 726 1.3; 777 1.0; 832 0.6; 890 0.3; 952 0.2; 1019 -0.1; 1090 -0.4; 1167 -0.8; 1248 -1.4; 1336 -2.2; 1429 -2.8; 1529 -3.2; 1636 -3.2; 1751 -2.7; 1873 -1.7; 2004 -0.7; 2145 0.6; 2295 1.8; 2455 3.2; 2627 4.3; 2811 5.1; 3008 6.0; 3219 6.0; 3444 6.0; 3685 5.2; 3943 1.9; 4219 1.2; 4514 2.8; 4830 5.7; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Pioneer HDJ-1000 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 37 Hz   | 0.55 | 6.8 dB  |
+| Peaking | 427 Hz  | 1.12 | 3.4 dB  |
+| Peaking | 1590 Hz | 2.11 | -4.4 dB |
+| Peaking | 3027 Hz | 2.21 | 6.4 dB  |
+| Peaking | 5672 Hz | 2.99 | 6.3 dB  |
+| Peaking | 41 Hz   | 2.67 | -0.8 dB |
+| Peaking | 71 Hz   | 3.18 | 1.8 dB  |
+| Peaking | 109 Hz  | 1.82 | -1.0 dB |
+| Peaking | 2397 Hz | 4.05 | 0.3 dB  |
+| Peaking | 8318 Hz | 4.39 | -1.1 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20HDJ-1000/Pioneer%20HDJ-1000.png)

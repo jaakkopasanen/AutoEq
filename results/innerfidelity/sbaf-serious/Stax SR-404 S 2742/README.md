@@ -1,0 +1,35 @@
+# Stax SR-404 S 2742
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 5.9; 35 5.8; 37 5.7; 40 5.6; 42 5.6; 45 5.6; 49 5.6; 52 5.6; 56 5.6; 59 5.5; 64 5.3; 68 5.1; 73 4.9; 78 4.8; 83 4.7; 89 4.5; 95 4.2; 102 3.8; 109 3.3; 117 3.0; 125 2.6; 134 2.3; 143 2.2; 153 2.1; 164 2.0; 175 2.0; 188 1.9; 201 1.9; 215 2.0; 230 1.9; 246 1.9; 263 1.9; 282 1.9; 301 1.9; 323 2.0; 345 2.0; 369 2.1; 395 2.1; 423 2.2; 452 2.1; 484 1.9; 518 1.7; 554 1.8; 593 2.0; 635 1.8; 679 1.6; 726 1.4; 777 1.5; 832 1.2; 890 0.8; 952 0.4; 1019 -0.0; 1090 -0.1; 1167 -0.8; 1248 -1.6; 1336 -2.0; 1429 -2.8; 1529 -3.2; 1636 -3.8; 1751 -3.6; 1873 -2.1; 2004 -0.0; 2145 1.8; 2295 3.7; 2455 4.3; 2627 3.5; 2811 1.6; 3008 0.8; 3219 0.8; 3444 1.7; 3685 1.9; 3943 3.0; 4219 3.6; 4514 2.3; 4830 2.2; 5168 2.3; 5530 1.9; 5917 -0.2; 6331 0.1; 6775 2.7; 7249 1.3; 7756 0.3; 8299 -1.1; 8880 -3.9; 9502 -3.9; 10167 -1.5; 10879 -0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -2.1; 20000 -5.4
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Stax SR-404 S 2742 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 11 Hz   | 0.73 | 5.3 dB  |
+| Peaking | 46 Hz   | 0.38 | 5.2 dB  |
+| Peaking | 1503 Hz | 1.44 | -8.6 dB |
+| Peaking | 1764 Hz | 0.38 | 5.0 dB  |
+| Peaking | 9222 Hz | 5    | -5.5 dB |
+| Peaking | 1453 Hz | 3.4  | 3.1 dB  |
+| Peaking | 1715 Hz | 1.74 | -3.4 dB |
+| Peaking | 2405 Hz | 2.89 | 4.7 dB  |
+| Peaking | 3009 Hz | 3.1  | -3.1 dB |
+| Peaking | 4145 Hz | 8.58 | 1.7 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-404%20S%202742/Stax%20SR-404%20S%202742.png)

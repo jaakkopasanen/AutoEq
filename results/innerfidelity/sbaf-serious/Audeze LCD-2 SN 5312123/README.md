@@ -1,0 +1,35 @@
+# Audeze LCD-2 SN 5312123
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -4.7dB
+GraphicEQ: 10 -84; 20 1.7; 22 1.6; 23 1.6; 25 1.6; 26 1.7; 28 1.7; 30 1.8; 32 1.9; 35 2.0; 37 2.1; 40 2.0; 42 1.9; 45 1.5; 49 1.1; 52 1.1; 56 1.2; 59 1.2; 64 1.0; 68 0.9; 73 0.8; 78 0.7; 83 0.6; 89 0.3; 95 -0.0; 102 -0.4; 109 -0.7; 117 -1.1; 125 -1.5; 134 -1.9; 143 -2.2; 153 -2.4; 164 -2.5; 175 -2.5; 188 -2.4; 201 -2.6; 215 -2.6; 230 -2.7; 246 -2.9; 263 -2.9; 282 -2.9; 301 -2.8; 323 -2.7; 345 -2.7; 369 -2.6; 395 -2.5; 423 -2.1; 452 -2.1; 484 -2.1; 518 -1.8; 554 -1.4; 593 -1.3; 635 -1.4; 679 -1.8; 726 -1.7; 777 -1.4; 832 -1.5; 890 -1.1; 952 -0.4; 1019 0.1; 1090 0.8; 1167 1.2; 1248 1.0; 1336 0.9; 1429 0.4; 1529 0.2; 1636 0.6; 1751 1.0; 1873 1.6; 2004 1.6; 2145 1.3; 2295 1.1; 2455 1.7; 2627 1.4; 2811 1.5; 3008 2.2; 3219 2.1; 3444 2.3; 3685 3.6; 3943 4.1; 4219 3.7; 4514 3.6; 4830 1.8; 5168 0.9; 5530 0.4; 5917 1.4; 6331 2.1; 6775 0.8; 7249 0.7; 7756 0.2; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 -0.5; 17469 -2.5; 18692 -4.4; 20000 -5.5
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-4.7dB` and instead set Global volume in the UI for both channels to **-47**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-2 SN 5312123 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 50 Hz    | 0.35 | 2.5 dB  |
+| Peaking | 231 Hz   | 0.4  | -3.9 dB |
+| Peaking | 784 Hz   | 2.69 | -1.6 dB |
+| Peaking | 1290 Hz  | 0.39 | 1.6 dB  |
+| Peaking | 4026 Hz  | 2.78 | 3.5 dB  |
+| Peaking | 143 Hz   | 5.95 | -0.4 dB |
+| Peaking | 1477 Hz  | 1.97 | 1.1 dB  |
+| Peaking | 1513 Hz  | 4.41 | -2.0 dB |
+| Peaking | 28241 Hz | 0.9  | -5.6 dB |
+| Peaking | 15805 Hz | 1.48 | 1.8 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-2%20SN%205312123/Audeze%20LCD-2%20SN%205312123.png)

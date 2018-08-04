@@ -1,0 +1,35 @@
+# Stax SR-Alpha Pro Excellent
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 5.9; 52 5.1; 56 3.8; 59 3.2; 64 2.2; 68 1.0; 73 -0.8; 78 -2.1; 83 -2.5; 89 -2.4; 95 -2.4; 102 -2.6; 109 -2.2; 117 -1.9; 125 -1.6; 134 -1.3; 143 -1.1; 153 -0.9; 164 -0.7; 175 -0.5; 188 -0.3; 201 -0.2; 215 0.0; 230 0.2; 246 0.3; 263 0.4; 282 0.6; 301 0.6; 323 0.7; 345 0.7; 369 0.8; 395 0.8; 423 1.0; 452 1.1; 484 1.0; 518 1.0; 554 1.1; 593 1.1; 635 1.1; 679 0.9; 726 0.8; 777 0.9; 832 0.7; 890 0.5; 952 0.3; 1019 -0.0; 1090 -0.2; 1167 -0.6; 1248 -1.0; 1336 -1.6; 1429 -2.1; 1529 -2.6; 1636 -3.0; 1751 -3.2; 1873 -2.9; 2004 -2.1; 2145 -1.3; 2295 -1.2; 2455 -0.8; 2627 -0.1; 2811 0.5; 3008 1.4; 3219 1.8; 3444 2.5; 3685 2.7; 3943 3.5; 4219 3.1; 4514 3.2; 4830 4.0; 5168 4.8; 5530 4.8; 5917 3.2; 6331 1.4; 6775 0.5; 7249 0.1; 7756 -1.2; 8299 -3.3; 8880 -4.8; 9502 -4.5; 10167 -2.6; 10879 -0.4; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.2
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Stax SR-Alpha Pro Excellent ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 63 Hz    |  0.28 | 18.7 dB  |
+| Peaking | 88 Hz    |  0.51 | -20.0 dB |
+| Peaking | 1746 Hz  |  2.04 | -3.9 dB  |
+| Peaking | 4920 Hz  |  1.26 | 4.7 dB   |
+| Peaking | 8947 Hz  |  3.07 | -6.2 dB  |
+| Peaking | 50 Hz    |  4.51 | 0.8 dB   |
+| Peaking | 204 Hz   |  1.34 | -0.6 dB  |
+| Peaking | 654 Hz   |  2    | 0.6 dB   |
+| Peaking | 6584 Hz  | 11.85 | -1.1 dB  |
+| Peaking | 11345 Hz |  7.21 | 0.9 dB   |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-Alpha%20Pro%20Excellent/Stax%20SR-Alpha%20Pro%20Excellent.png)

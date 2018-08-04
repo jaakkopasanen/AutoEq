@@ -1,0 +1,35 @@
+# Sol Republic Tracks
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 -0.0; 22 -0.8; 23 -1.1; 25 -1.7; 26 -2.0; 28 -2.5; 30 -2.9; 32 -3.2; 35 -3.6; 37 -3.8; 40 -4.1; 42 -4.2; 45 -4.4; 49 -4.5; 52 -4.5; 56 -4.5; 59 -4.5; 64 -4.4; 68 -4.4; 73 -4.3; 78 -4.4; 83 -4.3; 89 -4.1; 95 -3.9; 102 -4.1; 109 -4.3; 117 -4.6; 125 -4.9; 134 -5.2; 143 -5.3; 153 -5.4; 164 -5.0; 175 -5.0; 188 -5.0; 201 -4.8; 215 -4.4; 230 -3.6; 246 -2.9; 263 -1.9; 282 -0.4; 301 1.0; 323 2.6; 345 3.9; 369 5.7; 395 6.0; 423 6.0; 452 6.0; 484 6.0; 518 5.8; 554 4.6; 593 3.4; 635 2.4; 679 1.4; 726 0.6; 777 0.3; 832 -0.0; 890 -0.1; 952 -0.0; 1019 -0.1; 1090 0.1; 1167 0.7; 1248 1.2; 1336 1.4; 1429 1.7; 1529 2.7; 1636 3.1; 1751 1.4; 1873 1.6; 2004 2.2; 2145 2.8; 2295 3.8; 2455 4.9; 2627 5.8; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 4.5; 4830 3.9; 5168 4.1; 5530 5.3; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sol Republic Tracks ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 43 Hz   | 1.12 | -3.2 dB |
+| Peaking | 254 Hz  | 0.4  | -8.6 dB |
+| Peaking | 412 Hz  | 1.12 | 14.1 dB |
+| Peaking | 3221 Hz | 1.1  | 6.5 dB  |
+| Peaking | 6018 Hz | 4.76 | 4.5 dB  |
+| Peaking | 546 Hz  | 5.57 | 1.4 dB  |
+| Peaking | 820 Hz  | 2.19 | -0.9 dB |
+| Peaking | 1571 Hz | 9.72 | 2.0 dB  |
+| Peaking | 6667 Hz | 9.25 | 1.7 dB  |
+| Peaking | 8107 Hz | 2.35 | -1.3 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sol%20Republic%20Tracks/Sol%20Republic%20Tracks.png)

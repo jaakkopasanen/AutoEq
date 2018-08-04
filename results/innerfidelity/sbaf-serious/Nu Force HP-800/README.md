@@ -1,0 +1,35 @@
+# Nu Force HP-800
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.3dB
+GraphicEQ: 10 -84; 20 -1.7; 22 -2.5; 23 -2.9; 25 -3.5; 26 -3.8; 28 -4.3; 30 -4.7; 32 -5.0; 35 -5.3; 37 -5.5; 40 -5.8; 42 -5.9; 45 -6.1; 49 -6.2; 52 -6.2; 56 -6.1; 59 -6.0; 64 -6.0; 68 -6.0; 73 -6.1; 78 -6.3; 83 -6.6; 89 -6.6; 95 -6.8; 102 -7.2; 109 -7.4; 117 -7.6; 125 -7.9; 134 -8.1; 143 -8.2; 153 -8.2; 164 -7.8; 175 -7.8; 188 -7.8; 201 -7.6; 215 -7.2; 230 -7.1; 246 -6.9; 263 -6.4; 282 -5.7; 301 -5.0; 323 -4.3; 345 -3.2; 369 -1.7; 395 -0.6; 423 0.0; 452 -1.0; 484 -0.5; 518 -0.0; 554 -1.0; 593 -1.6; 635 -1.8; 679 -1.8; 726 -1.5; 777 -1.0; 832 -0.6; 890 -0.3; 952 -0.2; 1019 0.1; 1090 0.3; 1167 0.5; 1248 0.4; 1336 0.0; 1429 -0.5; 1529 -1.3; 1636 -2.1; 1751 -2.9; 1873 -3.6; 2004 -4.2; 2145 -4.7; 2295 -5.7; 2455 -6.4; 2627 -6.7; 2811 -6.7; 3008 -5.8; 3219 -4.8; 3444 -3.5; 3685 -2.7; 3943 -1.5; 4219 -0.7; 4514 0.6; 4830 3.0; 5168 4.8; 5530 5.5; 5917 3.7; 6331 2.7; 6775 0.1; 7249 -0.9; 7756 0.1; 8299 0.0; 8880 -0.3; 9502 -0.3; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.3dB` and instead set Global volume in the UI for both channels to **-63**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Nu Force HP-800 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 49 Hz   |  0.54 | -5.5 dB |
+| Peaking | 146 Hz  |  1.09 | -6.0 dB |
+| Peaking | 249 Hz  |  2.19 | -4.0 dB |
+| Peaking | 2658 Hz |  1.7  | -7.2 dB |
+| Peaking | 5382 Hz |  3.92 | 6.8 dB  |
+| Peaking | 415 Hz  |  6.86 | 1.8 dB  |
+| Peaking | 675 Hz  |  4.62 | -1.5 dB |
+| Peaking | 1228 Hz |  2.28 | 1.6 dB  |
+| Peaking | 1804 Hz |  3.81 | -1.1 dB |
+| Peaking | 7103 Hz | 12.37 | -1.8 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Nu%20Force%20HP-800/Nu%20Force%20HP-800.png)

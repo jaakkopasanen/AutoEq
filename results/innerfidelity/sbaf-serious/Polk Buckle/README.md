@@ -1,0 +1,35 @@
+# Polk Buckle
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -6.8; 22 -6.9; 23 -6.9; 25 -6.9; 26 -7.0; 28 -7.0; 30 -6.9; 32 -6.9; 35 -6.7; 37 -6.6; 40 -6.5; 42 -6.4; 45 -6.2; 49 -5.9; 52 -5.7; 56 -5.4; 59 -5.2; 64 -4.8; 68 -4.4; 73 -3.8; 78 -3.4; 83 -3.2; 89 -3.5; 95 -4.0; 102 -4.5; 109 -4.7; 117 -4.8; 125 -4.9; 134 -5.0; 143 -5.0; 153 -4.9; 164 -4.3; 175 -4.2; 188 -4.4; 201 -4.5; 215 -4.2; 230 -4.1; 246 -4.0; 263 -3.5; 282 -2.5; 301 -1.3; 323 -1.2; 345 -0.7; 369 -0.2; 395 -0.1; 423 0.2; 452 0.3; 484 0.6; 518 0.8; 554 1.2; 593 1.3; 635 1.6; 679 1.7; 726 1.3; 777 0.8; 832 0.1; 890 -0.1; 952 -0.0; 1019 0.0; 1090 0.2; 1167 0.6; 1248 1.1; 1336 1.4; 1429 1.6; 1529 1.9; 1636 2.3; 1751 2.7; 1873 3.3; 2004 3.8; 2145 4.2; 2295 4.5; 2455 4.9; 2627 5.4; 2811 5.3; 3008 4.8; 3219 4.5; 3444 4.9; 3685 5.8; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Polk Buckle ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 21 Hz   | 0.64 | -5.6 dB |
+| Peaking | 44 Hz   | 0.85 | -3.4 dB |
+| Peaking | 160 Hz  | 1.01 | -4.6 dB |
+| Peaking | 2792 Hz | 0.92 | 4.8 dB  |
+| Peaking | 5293 Hz | 2.09 | 4.9 dB  |
+| Peaking | 249 Hz  | 6.17 | -1.6 dB |
+| Peaking | 565 Hz  | 2.19 | 1.6 dB  |
+| Peaking | 6382 Hz | 3.94 | 4.6 dB  |
+| Peaking | 4093 Hz | 4.59 | 1.7 dB  |
+| Peaking | 6697 Hz | 1.33 | -3.1 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Polk%20Buckle/Polk%20Buckle.png)

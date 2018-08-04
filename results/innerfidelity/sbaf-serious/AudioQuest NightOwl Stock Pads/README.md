@@ -1,0 +1,35 @@
+# AudioQuest NightOwl Stock Pads
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -1.1; 22 -1.1; 23 -1.0; 25 -1.0; 26 -1.0; 28 -0.9; 30 -0.8; 32 -0.8; 35 -0.7; 37 -0.6; 40 -0.5; 42 -0.4; 45 -0.3; 49 -0.2; 52 -0.0; 56 0.2; 59 0.3; 64 0.5; 68 0.5; 73 0.3; 78 0.1; 83 -0.3; 89 -1.0; 95 -2.0; 102 -2.5; 109 -2.2; 117 -2.8; 125 -3.6; 134 -4.0; 143 -4.1; 153 -3.7; 164 -3.0; 175 -3.7; 188 -3.8; 201 -3.6; 215 -3.3; 230 -3.0; 246 -2.8; 263 -2.6; 282 -2.2; 301 -2.0; 323 -1.7; 345 -1.5; 369 -1.2; 395 -1.0; 423 -0.7; 452 -0.6; 484 -0.7; 518 -0.7; 554 -0.5; 593 -0.2; 635 -0.1; 679 0.1; 726 0.4; 777 0.5; 832 0.2; 890 -0.0; 952 -0.0; 1019 0.0; 1090 0.1; 1167 0.6; 1248 0.9; 1336 1.1; 1429 1.3; 1529 1.8; 1636 2.7; 1751 3.7; 1873 4.9; 2004 5.9; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 5.9; 3444 5.0; 3685 5.8; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 4.4; 6331 2.7; 6775 3.4; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.4; 9502 -0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.2
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `AudioQuest NightOwl Stock Pads ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 19 Hz    | 1.06 | -0.9 dB |
+| Peaking | 72 Hz    | 1.21 | 3.9 dB  |
+| Peaking | 130 Hz   | 0.52 | -4.7 dB |
+| Peaking | 8723 Hz  | 1.57 | -3.0 dB |
+| Peaking | 3749 Hz  | 0.59 | 6.9 dB  |
+| Peaking | 1312 Hz  | 1.57 | -1.5 dB |
+| Peaking | 2048 Hz  | 2.86 | 2.3 dB  |
+| Peaking | 3511 Hz  | 4.9  | -1.5 dB |
+| Peaking | 5506 Hz  | 7.51 | 1.4 dB  |
+| Peaking | 14416 Hz | 1.49 | -0.4 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AudioQuest%20NightOwl%20Stock%20Pads/AudioQuest%20NightOwl%20Stock%20Pads.png)

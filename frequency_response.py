@@ -463,12 +463,15 @@ class FrequencyResponse:
         frequency = np.repeat(np.expand_dims(frequency, axis=0), len(_fc), axis=0)
         _eq = np.sum(biquad.digital_coeffs(frequency, 48000, a0, a1, a2, b0, b1, b2), axis=0)
 
-        return np.squeeze(_eq), rmse, np.squeeze(_fc), np.squeeze(_Q), np.squeeze(_gain)
+        return _eq, rmse, np.squeeze(_fc, axis=1), np.squeeze(_Q, axis=1), np.squeeze(_gain, axis=1)
 
     def optimize_parametric_eq(self, max_filters=None):
         """Fits multiple biquad filters to equalization curve."""
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
+
+        if type(max_filters) != list:
+            max_filters = [max_filters]
 
         self.parametric_eq = np.zeros(self.frequency.shape)
         fc = Q = gain = np.array([])

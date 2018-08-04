@@ -1,0 +1,35 @@
+# 1More MK801
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 5.7; 22 5.0; 23 4.7; 25 4.0; 26 3.7; 28 3.1; 30 2.6; 32 2.2; 35 1.7; 37 1.5; 40 1.1; 42 0.9; 45 0.6; 49 0.4; 52 0.2; 56 0.1; 59 -0.1; 64 -0.2; 68 -0.4; 73 -0.5; 78 -0.7; 83 -0.9; 89 -1.2; 95 -1.4; 102 -1.7; 109 -1.9; 117 -2.1; 125 -2.5; 134 -2.8; 143 -3.0; 153 -3.2; 164 -3.1; 175 -2.9; 188 -3.1; 201 -3.3; 215 -3.3; 230 -3.2; 246 -3.1; 263 -2.9; 282 -2.6; 301 -2.1; 323 -1.6; 345 -1.1; 369 -0.6; 395 -0.2; 423 0.4; 452 1.2; 484 1.8; 518 2.2; 554 2.3; 593 2.3; 635 2.2; 679 1.7; 726 1.2; 777 1.6; 832 2.4; 890 1.5; 952 0.5; 1019 -0.1; 1090 -0.2; 1167 0.1; 1248 0.4; 1336 1.0; 1429 1.4; 1529 1.8; 1636 2.4; 1751 3.1; 1873 3.8; 2004 4.4; 2145 4.6; 2295 4.6; 2455 4.8; 2627 4.8; 2811 4.4; 3008 4.4; 3219 4.3; 3444 4.7; 3685 5.2; 3943 4.8; 4219 2.4; 4514 2.7; 4830 2.8; 5168 4.5; 5530 5.9; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `1More MK801 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 17 Hz   | 0.94 | 6.3 dB  |
+| Peaking | 209 Hz  | 0.57 | -3.7 dB |
+| Peaking | 533 Hz  | 1.55 | 3.6 dB  |
+| Peaking | 2740 Hz | 1.06 | 5.1 dB  |
+| Peaking | 5903 Hz | 3.84 | 5.5 dB  |
+| Peaking | 844 Hz  | 7.42 | 1.8 dB  |
+| Peaking | 1085 Hz | 2.87 | -1.4 dB |
+| Peaking | 1923 Hz | 4.84 | 1.1 dB  |
+| Peaking | 6692 Hz | 8.39 | 1.8 dB  |
+| Peaking | 7865 Hz | 2.23 | -1.3 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1More%20MK801/1More%20MK801.png)

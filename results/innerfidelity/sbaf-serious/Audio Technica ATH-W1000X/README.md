@@ -1,0 +1,35 @@
+# Audio Technica ATH-W1000X
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 5.9; 42 5.6; 45 5.0; 49 4.2; 52 3.6; 56 2.8; 59 2.1; 64 1.3; 68 1.0; 73 0.6; 78 -0.1; 83 -0.6; 89 -1.0; 95 -1.3; 102 -1.7; 109 -1.9; 117 -2.1; 125 -2.4; 134 -2.5; 143 -2.5; 153 -2.5; 164 -2.2; 175 -2.1; 188 -2.0; 201 -1.9; 215 -1.7; 230 -1.3; 246 -1.1; 263 -0.9; 282 -0.3; 301 -0.1; 323 0.2; 345 0.6; 369 1.0; 395 1.7; 423 2.7; 452 3.1; 484 2.7; 518 1.7; 554 1.0; 593 0.6; 635 0.4; 679 0.2; 726 0.3; 777 1.0; 832 1.1; 890 0.3; 952 -0.0; 1019 0.0; 1090 0.1; 1167 -0.0; 1248 -0.2; 1336 -0.4; 1429 -1.0; 1529 -1.5; 1636 -1.4; 1751 -1.0; 1873 -0.7; 2004 -0.8; 2145 -0.7; 2295 -0.2; 2455 1.0; 2627 2.9; 2811 4.3; 3008 5.1; 3219 5.7; 3444 5.9; 3685 5.4; 3943 5.7; 4219 5.0; 4514 3.4; 4830 5.9; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 -0.0; 17469 -1.7; 18692 -2.5; 20000 -1.7
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-W1000X ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 33 Hz    | 0.48 | 7.6 dB  |
+| Peaking | 105 Hz   | 0.57 | -4.6 dB |
+| Peaking | 446 Hz   | 2.58 | 3.6 dB  |
+| Peaking | 3399 Hz  | 2.84 | 5.8 dB  |
+| Peaking | 5557 Hz  | 2.57 | 6.2 dB  |
+| Peaking | 812 Hz   | 8.56 | 1.3 dB  |
+| Peaking | 1857 Hz  | 1.65 | -1.8 dB |
+| Peaking | 2826 Hz  | 6.27 | 2.1 dB  |
+| Peaking | 8194 Hz  | 5.53 | -1.2 dB |
+| Peaking | 29076 Hz | 1.97 | -2.8 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-W1000X/Audio%20Technica%20ATH-W1000X.png)

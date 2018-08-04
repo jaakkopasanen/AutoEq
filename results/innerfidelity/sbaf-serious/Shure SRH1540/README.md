@@ -1,0 +1,35 @@
+# Shure SRH1540
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -1.1dB
+GraphicEQ: 10 -84; 20 -3.8; 22 -4.5; 23 -4.8; 25 -5.3; 26 -5.5; 28 -6.0; 30 -6.3; 32 -6.6; 35 -7.0; 37 -7.3; 40 -7.6; 42 -7.7; 45 -7.9; 49 -8.0; 52 -8.0; 56 -8.0; 59 -8.0; 64 -7.8; 68 -7.7; 73 -7.4; 78 -7.1; 83 -6.8; 89 -6.6; 95 -6.4; 102 -6.5; 109 -6.7; 117 -6.9; 125 -7.0; 134 -7.0; 143 -6.6; 153 -6.0; 164 -4.7; 175 -4.7; 188 -4.8; 201 -4.4; 215 -4.0; 230 -3.8; 246 -3.8; 263 -3.7; 282 -3.6; 301 -3.9; 323 -4.1; 345 -4.0; 369 -3.8; 395 -3.6; 423 -3.1; 452 -2.8; 484 -2.5; 518 -2.2; 554 -1.6; 593 -1.1; 635 -0.8; 679 -0.6; 726 -0.2; 777 0.0; 832 0.1; 890 0.2; 952 0.2; 1019 -0.0; 1090 -0.1; 1167 0.1; 1248 0.2; 1336 -0.1; 1429 -0.6; 1529 -1.2; 1636 -1.9; 1751 -2.7; 1873 -3.2; 2004 -3.4; 2145 -3.1; 2295 -3.1; 2455 -2.8; 2627 -2.2; 2811 -1.6; 3008 -1.3; 3219 -1.5; 3444 -1.2; 3685 -1.2; 3943 -1.0; 4219 -0.9; 4514 -0.9; 4830 -0.4; 5168 0.4; 5530 -0.2; 5917 -3.0; 6331 -3.9; 6775 -2.3; 7249 -1.0; 7756 -0.5; 8299 -1.8; 8880 -3.6; 9502 -3.6; 10167 -1.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-1.1dB` and instead set Global volume in the UI for both channels to **-11**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Shure SRH1540 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-1.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 8 Hz     | 1.24 | -3.6 dB |
+| Peaking | 48 Hz    | 0.55 | -7.6 dB |
+| Peaking | 137 Hz   | 1.2  | -3.8 dB |
+| Peaking | 349 Hz   | 1.61 | -3.1 dB |
+| Peaking | 2234 Hz  | 1.6  | -3.2 dB |
+| Peaking | 504 Hz   | 3.37 | -0.8 dB |
+| Peaking | 1429 Hz  | 0.62 | 1.2 dB  |
+| Peaking | 1796 Hz  | 3.03 | -1.8 dB |
+| Peaking | 7815 Hz  | 1.25 | -2.3 dB |
+| Peaking | 24000 Hz | 2.3  | -0.7 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SRH1540/Shure%20SRH1540.png)

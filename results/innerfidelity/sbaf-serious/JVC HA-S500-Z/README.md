@@ -1,0 +1,35 @@
+# JVC HA-S500-Z
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 5.8; 22 5.0; 23 4.6; 25 3.9; 26 3.6; 28 3.0; 30 2.5; 32 2.1; 35 1.5; 37 1.2; 40 0.9; 42 0.7; 45 0.5; 49 0.3; 52 0.2; 56 0.1; 59 0.1; 64 0.1; 68 0.0; 73 -0.1; 78 -0.2; 83 -0.4; 89 -0.5; 95 -0.7; 102 -0.8; 109 -1.0; 117 -1.3; 125 -1.8; 134 -2.1; 143 -2.3; 153 -2.5; 164 -2.5; 175 -2.3; 188 -2.3; 201 -2.4; 215 -2.3; 230 -2.2; 246 -2.1; 263 -2.5; 282 -3.2; 301 -3.2; 323 -2.7; 345 -2.0; 369 -1.3; 395 -0.4; 423 0.8; 452 1.8; 484 3.1; 518 4.4; 554 4.8; 593 4.3; 635 3.3; 679 2.3; 726 1.6; 777 1.3; 832 0.8; 890 0.4; 952 0.1; 1019 -0.0; 1090 -0.0; 1167 0.1; 1248 0.1; 1336 0.1; 1429 0.3; 1529 0.6; 1636 1.0; 1751 1.8; 1873 2.5; 2004 3.6; 2145 4.7; 2295 5.7; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 5.9; 4514 5.2; 4830 5.5; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.6; 7249 0.0; 7756 0.1; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `JVC HA-S500-Z ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 18 Hz   | 1.14 | 6.1 dB  |
+| Peaking | 445 Hz  | 0.45 | -5.9 dB |
+| Peaking | 554 Hz  | 1.43 | 10.1 dB |
+| Peaking | 2919 Hz | 1.06 | 6.9 dB  |
+| Peaking | 5566 Hz | 2.96 | 4.7 dB  |
+| Peaking | 453 Hz  | 4.23 | 0.2 dB  |
+| Peaking | 2292 Hz | 3.32 | 2.8 dB  |
+| Peaking | 2472 Hz | 1.43 | -1.9 dB |
+| Peaking | 4069 Hz | 3.5  | 1.3 dB  |
+| Peaking | 7913 Hz | 4.28 | -1.7 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/JVC%20HA-S500-Z/JVC%20HA-S500-Z.png)
