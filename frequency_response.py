@@ -3,7 +3,6 @@
 import os
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
-import matplotlib.animation as animation
 import argparse
 import math
 import pandas as pd
@@ -32,7 +31,6 @@ DEFAULT_TREBLE_F_UPPER = 8000.0
 DEFAULT_TREBLE_MAX_GAIN = 0.0
 DEFAULT_TREBLE_GAIN_K = 1.0
 DEFAULT_BASS_BOOST = 0.0
-DEFAULT_MAX_FILTERS = [5, 5]
 DEFAULT_SMOOTHING_WINDOW_SIZE = 1 / 7
 DEFAULT_SMOOTHING_ITERATIONS = 10
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 5
@@ -1057,7 +1055,7 @@ class FrequencyResponse:
                                      '10 filters where the first 5 are usable independently from the rest 5 and the last'
                                      '5 can only be used with the first 5. This allows to have muliple configurations'
                                      'for equalizers with different number of bands available. '
-                                     'Defaults to "{}".'.format('+'.join([str(x) for x in DEFAULT_MAX_FILTERS])))
+                                     'Not limited by default.')
         arg_parser.add_argument('--bass_boost', type=float, default=DEFAULT_BASS_BOOST,
                                 help='Target gain for sub-bass in dB. Has flat response from 20 Hz to 60 Hz and a '
                                      'sigmoid slope down to 200 Hz. Defaults to {}.'.format(DEFAULT_BASS_BOOST))
@@ -1135,9 +1133,7 @@ class FrequencyResponse:
             compensation.interpolate()
             compensation.center()
 
-        if max_filters is None:
-            max_filters = DEFAULT_MAX_FILTERS
-        if type(max_filters) != list:
+        if max_filters is not None and type(max_filters) != list:
             max_filters = [max_filters]
 
         readme_path = os.path.join(output_dir, 'README.md')
