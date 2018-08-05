@@ -100,6 +100,9 @@ Results are organized by `source/target/headphone` so a Sennheiser HD 650 measur
 [target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 would be found in
 [innerfidelity/sbaf-serious/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650).
+Multiple measurements of a same heaphone by a same measurement entity are averaged. All different measurements for
+averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
+averaged data which has no suffixes in the name.
 
 Innerfidelity and Headphone.com measured headphones have
 [SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
