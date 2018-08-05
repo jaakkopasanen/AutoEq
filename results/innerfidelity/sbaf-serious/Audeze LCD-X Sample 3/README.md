@@ -1,4 +1,4 @@
-# Audeze LCD-X Sample 3
+# Audeze LCD-X sample 3
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.5dB` and instead set Global volume in the UI for both channels to **-65**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-X Sample 3 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-X sample 3 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
@@ -32,4 +32,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 4686 Hz  | 14.92 | -4.2 dB |
 | Peaking | 11930 Hz |  1.89 | 1.7 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-X%20Sample%203/Audeze%20LCD-X%20Sample%203.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-X%20sample%203/Audeze%20LCD-X%20sample%203.png)

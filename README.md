@@ -406,9 +406,6 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- Recommended results
-    - Average multiple measurements by same source
-    - Prefer averaged over others
 - oratory1990 measurements'
     - Vectorize Harman targets
     - Full pipeline

@@ -6,15 +6,18 @@ from glob import glob
 import numpy as np
 from frequency_response import FrequencyResponse
 
-DIR = 'innerfidelity/data/earbud'
+DIR = 'innerfidelity/data/onear'
 DIR = os.path.abspath(DIR)
-OUT_DIR = os.path.join('innerfidelity/data/fixes')
+OUT_DIR = os.path.join('innerfidelity/data/avg')
 
 
 def main():
     models = {}
     for file_path in glob(os.path.join(DIR, '*')):
         model = os.path.split(file_path)[-1]
+        if not (re.search(' sample [a-zA-Z0-9]$', model) or re.search(' sn[a-zA-Z0-9]+$', model)):
+            # Skip measurements with sample or serial number, those have averaged results
+            continue
         norm = re.sub(' sample [a-zA-Z0-9]$', '', model)
         norm = re.sub(' sn[a-zA-Z0-9]+$', '', norm)
         try:
