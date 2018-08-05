@@ -1,4 +1,4 @@
-# Koss Porta Pro Sample 2
+# Koss Porta Pro sample 2
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Koss Porta Pro Sample 2 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Koss Porta Pro sample 2 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
@@ -32,4 +32,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 6316 Hz | 5.19 | 6.1 dB  |
 | Peaking | 9180 Hz | 8.05 | -3.4 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20Porta%20Pro%20Sample%202/Koss%20Porta%20Pro%20Sample%202.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20Porta%20Pro%20sample%202/Koss%20Porta%20Pro%20sample%202.png)

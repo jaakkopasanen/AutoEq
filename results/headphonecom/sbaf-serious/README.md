@@ -1,10 +1,10 @@
-# Run 2018-08-05T16:51:10.119091
+# Run 2018-08-05T17:54:49.159305
 There results were obtained with parameters:
-* `--input_dir="headphonecom\data\onear"`
+* `--input_dir="headphonecom\data\fixes"`
 * `--output_dir="results\headphonecom\sbaf-serious"`
 * `--calibration="calibration\headphonecom_to_innerfidelity.csv"`
 * `--compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv"`
-* `--bass_boost=4.0`
+* `--bass_boost=0.0`
 * `--tilt=0.0`
 * `--max_gain=6.0`
 * `--treble_f_lower=6000.0`
