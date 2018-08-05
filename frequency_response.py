@@ -1117,14 +1117,14 @@ class FrequencyResponse:
             return
 
         if calibration:
-            # Creates FrequencyReponse for compensation data
+            # Creates FrequencyResponse for compensation data
             calibration_path = os.path.abspath(calibration)
             calibration = FrequencyResponse.read_from_csv(calibration_path)
             calibration.interpolate()
             calibration.center()
 
         if compensation:
-            # Creates FrequencyReponse for compensation data
+            # Creates FrequencyResponse for compensation data
             compensation_path = os.path.abspath(compensation)
             compensation = FrequencyResponse.read_from_csv(compensation_path)
             compensation.interpolate()
