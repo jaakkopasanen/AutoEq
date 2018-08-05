@@ -31,7 +31,8 @@ def main():
     urls.update(get_urls(glob(os.path.abspath(os.path.join('headphonecom', 'sbaf-serious', '*')))))
     # Get links to Innerfidelity results and override Headphone.com results with the same name
     urls.update(get_urls(glob(os.path.abspath(os.path.join('innerfidelity', 'sbaf-serious', '*')))))
-
+    # Get links to custom results
+    urls.update(get_urls(glob(os.path.abspath(os.path.join('custom', '*')))))
     with open('README.md', 'w') as f:
         keys = sorted(urls.keys())
         s = '# Recommended Results\n'
