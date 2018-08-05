@@ -36,11 +36,7 @@ DEFAULT_SMOOTHING_ITERATIONS = 10
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 5
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 DEFAULT_TILT = 0.0
-DEFAULT_COMPENSATION_FILE_PATH = os.path.join(
-    'innerfidelity',
-    'resources',
-    'innerfidelity_compensation_sbaf-serious.csv'
-)
+
 BASS_BOOST_F_LOWER = 60
 BASS_BOOST_F_UPPER = 200
 GRAPHIC_EQ_STEP = 1.07
@@ -1043,11 +1039,10 @@ class FrequencyResponse:
                                      'in input_dir.')
         arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
                                 help='File path to CSV containing calibration data. See `calibration` directory.')
-        arg_parser.add_argument('--compensation', type=str, default=DEFAULT_COMPENSATION_FILE_PATH,
+        arg_parser.add_argument('--compensation', type=str,
                                 help='File path to CSV containing compensation curve. Compensation is necessary when '
                                      'equalizing because all input data is raw microphone data. See '
-                                     'innerfidelity/resources and headphonecom/resources. '
-                                     'Defaults to "{}".'.format(DEFAULT_COMPENSATION_FILE_PATH))
+                                     'innerfidelity/resources and headphonecom/resources.')
         arg_parser.add_argument('--equalize', action='store_true',
                                 help='Will run equalization if this parameter exists, no value needed.')
         arg_parser.add_argument('--parametric_eq', action='store_true',
@@ -1116,7 +1111,6 @@ class FrequencyResponse:
 
         # Dir paths to absolute
         input_dir = os.path.abspath(input_dir)
-        output_dir = os.path.abspath(output_dir)
         glob_files = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)
         if len(glob_files) == 0:
             warn('No CSV files found in "{}"'.format(input_dir))
@@ -1139,19 +1133,16 @@ class FrequencyResponse:
         if max_filters is not None and type(max_filters) != list:
             max_filters = [max_filters]
 
-        readme_path = os.path.join(output_dir, 'README.md')
+        if output_dir:
+            output_dir = os.path.abspath(output_dir)
+            readme_path = os.path.join(output_dir, 'README.md')
+        else:
+            readme_path = None
         readme_occupied = False
 
         for file_path in glob_files:
             # Read data from input file
             fr = FrequencyResponse.read_from_csv(file_path)
-
-            # Copy relative path to output directory
-            relative_path = os.path.relpath(file_path, input_dir)
-            file_path = os.path.join(output_dir, relative_path)
-            dir_path = os.path.dirname(file_path)
-            if not os.path.isdir(dir_path):
-                os.makedirs(dir_path, exist_ok=True)
 
             # Interpolate to standard frequency vector
             fr.interpolate()
@@ -1192,6 +1183,13 @@ class FrequencyResponse:
                     filters = fr.optimize_parametric_eq(max_filters=max_filters)
 
             if output_dir:
+                # Copy relative path to output directory
+                relative_path = os.path.relpath(file_path, input_dir)
+                file_path = os.path.join(output_dir, relative_path)
+                dir_path = os.path.dirname(file_path)
+                if not os.path.isdir(dir_path):
+                    os.makedirs(dir_path, exist_ok=True)
+
                 if equalize:
                     # Write EqualizerAPO GraphicEq settings to file
                     fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' GraphicEQ.txt'))
@@ -1224,32 +1222,33 @@ class FrequencyResponse:
                 fig, ax = fr.plot_graph(show=show_plot)
                 plt.close(fig)
 
-        lines = ['# Run {}'.format(datetime.now().isoformat())]
-        lines.append('There results were obtained with parameters:')
-        lines.append('* `--input_dir="{}"`'.format(os.path.relpath(input_dir, ROOT_DIR)))
-        lines.append('* `--output_dir="{}"`'.format(os.path.relpath(output_dir, ROOT_DIR)))
-        if calibration is not None:
-            lines.append('* `--calibration="{}"`'.format(os.path.relpath(calibration_path, ROOT_DIR)))
-        if compensation is not None:
-            lines.append('* `--compensation="{}"`'.format(os.path.relpath(compensation_path, ROOT_DIR)))
-        lines.append('* `--bass_boost={}`'.format(bass_boost))
-        lines.append('* `--tilt={}`'.format(tilt))
-        lines.append('* `--max_gain={}`'.format(max_gain))
-        lines.append('* `--treble_f_lower={}`'.format(treble_f_lower))
-        lines.append('* `--treble_f_upper={}`'.format(treble_f_upper))
-        lines.append('* `--treble_max_gain={}`'.format(treble_max_gain))
-        lines.append('* `--treble_gain_k={}`'.format(treble_gain_k))
+        if output_dir:
+            # Write parameters to run README.md
+            lines = ['# Run {}'.format(datetime.now().isoformat())]
+            lines.append('There results were obtained with parameters:')
+            lines.append('* `--input_dir="{}"`'.format(os.path.relpath(input_dir, ROOT_DIR)))
+            lines.append('* `--output_dir="{}"`'.format(os.path.relpath(output_dir, ROOT_DIR)))
+            if calibration is not None:
+                lines.append('* `--calibration="{}"`'.format(os.path.relpath(calibration_path, ROOT_DIR)))
+            if compensation is not None:
+                lines.append('* `--compensation="{}"`'.format(os.path.relpath(compensation_path, ROOT_DIR)))
+            lines.append('* `--bass_boost={}`'.format(bass_boost))
+            lines.append('* `--tilt={}`'.format(tilt))
+            lines.append('* `--max_gain={}`'.format(max_gain))
+            lines.append('* `--treble_f_lower={}`'.format(treble_f_lower))
+            lines.append('* `--treble_f_upper={}`'.format(treble_f_upper))
+            lines.append('* `--treble_max_gain={}`'.format(treble_max_gain))
+            lines.append('* `--treble_gain_k={}`'.format(treble_gain_k))
 
-        # Write parameters to run README.md
-        if readme_occupied:
-            # Directory already contains a README.md written for a single headphone
-            # Add to the end of the README
-            with open(readme_path, 'a') as f:
-                f.write('\n' + '\n'.join(lines))
-        else:
-            # README.md doesn't exist or old README.md from previous run, safe to overwrite
-            with open(readme_path, 'w') as f:
-                f.write('\n'.join(lines))
+            if readme_occupied:
+                # Directory already contains a README.md written for a single headphone
+                # Add to the end of the README
+                with open(readme_path, 'a') as f:
+                    f.write('\n' + '\n'.join(lines))
+            else:
+                # README.md doesn't exist or old README.md from previous run, safe to overwrite
+                with open(readme_path, 'w') as f:
+                    f.write('\n'.join(lines))
 
 
 if __name__ == '__main__':
