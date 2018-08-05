@@ -13,10 +13,11 @@ def get_urls(files):
     for path in files:
         rel_path = os.path.relpath(path, RESULTS_DIR)
         model = os.path.split(rel_path)[-1]
+        key = model.lower()
         url = '/'.join(FrequencyResponse._split_path(rel_path))
         url = 'https://github.com/jaakkopasanen/AutoEq/tree/master/results/{}'.format(url)
         url = urllib.parse.quote(url, safe="%/:=&?~#+!$,;'@()*[]")
-        urls[model] = '- [{model}]({url})'.format(model=model, url=url)
+        urls[key] = '- [{model}]({url})'.format(model=model, url=url)
     return urls
 
 
