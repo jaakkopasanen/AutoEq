@@ -77,8 +77,6 @@
 - [Audeze LCD-3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-3)
 - [Audeze LCD-4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-4)
 - [Audeze LCD-X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-X)
-- [Audeze LCD-X Sample 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-X%20Sample%203)
-- [Audeze LCD-X sn7456406 Bob Katz](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-X%20sn7456406%20Bob%20Katz)
 - [Audeze LCD-XC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-XC)
 - [Audeze SINE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20SINE)
 - [Audeze SINE DX](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20SINE%20DX)
