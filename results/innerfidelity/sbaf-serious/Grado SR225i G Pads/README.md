@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i G P
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 27 Hz    | 0.7  | 6.7 dB  |
-| Peaking | 127 Hz   | 0.72 | -4.1 dB |
-| Peaking | 5941 Hz  | 3.82 | -1.7 dB |
-| Peaking | 6981 Hz  | 0.93 | -9.2 dB |
-| Peaking | 24000 Hz | 2.21 | -7.9 dB |
-| Peaking | 1627 Hz  | 3.6  | -1.3 dB |
-| Peaking | 4560 Hz  | 1.44 | -3.3 dB |
-| Peaking | 4567 Hz  | 5.11 | 4.8 dB  |
-| Peaking | 9563 Hz  | 3.32 | -9.9 dB |
-| Peaking | 10014 Hz | 0.99 | 6.0 dB  |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 27 Hz    | 0.7  | 6.7 dB   |
+| Peaking | 127 Hz   | 0.72 | -4.1 dB  |
+| Peaking | 5941 Hz  | 3.82 | -1.7 dB  |
+| Peaking | 6981 Hz  | 0.93 | -9.2 dB  |
+| Peaking | 24000 Hz | 2.21 | -7.9 dB  |
+| Peaking | 1626 Hz  | 3.61 | -1.3 dB  |
+| Peaking | 4606 Hz  | 1.44 | -3.4 dB  |
+| Peaking | 4536 Hz  | 5.05 | 4.8 dB   |
+| Peaking | 9502 Hz  | 3.3  | -10.0 dB |
+| Peaking | 10073 Hz | 1    | 6.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i%20G%20Pads/Grado%20SR225i%20G%20Pads.png)

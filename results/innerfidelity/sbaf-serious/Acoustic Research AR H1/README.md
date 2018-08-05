@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 27 Hz   | 0.89 | 3.8 dB  |
-| Peaking | 68 Hz   | 2.08 | 2.6 dB  |
+| Peaking | 27 Hz   | 0.9  | 3.8 dB  |
+| Peaking | 66 Hz   | 2.08 | 2.6 dB  |
 | Peaking | 3451 Hz | 2.74 | 6.7 dB  |
-| Peaking | 6304 Hz | 3.58 | 4.4 dB  |
-| Peaking | 9184 Hz | 4.05 | -4.2 dB |
-| Peaking | 172 Hz  | 2.72 | -1.8 dB |
-| Peaking | 371 Hz  | 4.57 | -2.0 dB |
-| Peaking | 672 Hz  | 5.02 | -4.1 dB |
-| Peaking | 748 Hz  | 6.6  | 5.1 dB  |
-| Peaking | 1805 Hz | 8.68 | -2.1 dB |
+| Peaking | 6305 Hz | 3.57 | 4.4 dB  |
+| Peaking | 9183 Hz | 4.02 | -4.2 dB |
+| Peaking | 173 Hz  | 2.86 | -1.8 dB |
+| Peaking | 372 Hz  | 4.57 | -2.0 dB |
+| Peaking | 670 Hz  | 5.01 | -4.1 dB |
+| Peaking | 748 Hz  | 6.68 | 5.1 dB  |
+| Peaking | 1803 Hz | 8.97 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Acoustic%20Research%20AR%20H1/Acoustic%20Research%20AR%20H1.png)

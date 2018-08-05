@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.06 | 7.1 dB   |
-| Peaking | 2268 Hz  | 1.1  | -13.6 dB |
-| Peaking | 3673 Hz  | 0.71 | 16.1 dB  |
-| Peaking | 4644 Hz  | 3.6  | -17.9 dB |
-| Peaking | 9053 Hz  | 3.11 | -10.3 dB |
-| Peaking | 69 Hz    | 0.98 | 1.9 dB   |
+| Peaking | 32 Hz    | 1.06 | 7.0 dB   |
+| Peaking | 2274 Hz  | 1.08 | -13.8 dB |
+| Peaking | 3659 Hz  | 0.71 | 16.3 dB  |
+| Peaking | 4641 Hz  | 3.59 | -17.9 dB |
+| Peaking | 9056 Hz  | 3.1  | -10.3 dB |
+| Peaking | 70 Hz    | 0.98 | 1.8 dB   |
 | Peaking | 164 Hz   | 0.81 | -3.1 dB  |
-| Peaking | 5332 Hz  | 9.05 | -3.6 dB  |
-| Peaking | 6247 Hz  | 6.2  | 4.4 dB   |
-| Peaking | 17503 Hz | 0.32 | -0.5 dB  |
+| Peaking | 5330 Hz  | 9.14 | -3.7 dB  |
+| Peaking | 6246 Hz  | 6.24 | 4.4 dB   |
+| Peaking | 20572 Hz | 0.16 | -0.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Yuin%20G2A/Yuin%20G2A.png)

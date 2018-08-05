@@ -16,19 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-W5000 2013 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 40 Hz    | 0.43 | 8.2 dB  |
-| Peaking | 546 Hz   | 0.89 | 9.5 dB  |
-| Peaking | 626 Hz   | 0.08 | -4.9 dB |
-| Peaking | 3124 Hz  | 1.81 | 10.3 dB |
-| Peaking | 6001 Hz  | 3.08 | 8.0 dB  |
-| Peaking | 214 Hz   | 4    | 0.8 dB  |
-| Peaking | 9505 Hz  | 5.05 | -2.1 dB |
-| Peaking | 9023 Hz  | 2.77 | 0.3 dB  |
-| Peaking | 11530 Hz | 1.26 | 0.8 dB  |
+| Peaking | 41 Hz    | 0.43 | 8.4 dB  |
+| Peaking | 547 Hz   | 0.87 | 9.6 dB  |
+| Peaking | 604 Hz   | 0.08 | -5.0 dB |
+| Peaking | 3115 Hz  | 1.79 | 10.4 dB |
+| Peaking | 6037 Hz  | 3.07 | 8.0 dB  |
+| Peaking | 215 Hz   | 4.13 | 0.7 dB  |
+| Peaking | 2180 Hz  | 8.22 | -1.6 dB |
+| Peaking | 2630 Hz  | 8.75 | 1.4 dB  |
+| Peaking | 9512 Hz  | 5.47 | -1.9 dB |
+| Peaking | 11427 Hz | 1.15 | 0.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-W5000%202013/Audio%20Technica%20ATH-W5000%202013.png)

@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 1.08 | 3.8 dB  |
-| Peaking | 55 Hz    | 1.99 | 1.7 dB  |
-| Peaking | 6876 Hz  | 8.29 | 2.5 dB  |
-| Peaking | 5317 Hz  | 6.57 | 4.9 dB  |
-| Peaking | 8795 Hz  | 7.36 | -2.9 dB |
-| Peaking | 182 Hz   | 1.41 | -1.6 dB |
-| Peaking | 982 Hz   | 0.6  | 1.4 dB  |
-| Peaking | 1286 Hz  | 2.29 | -2.6 dB |
-| Peaking | 3459 Hz  | 8.63 | 2.6 dB  |
-| Peaking | 18155 Hz | 3.73 | -2.1 dB |
+| Peaking | 24 Hz    | 1.09 | 3.8 dB  |
+| Peaking | 54 Hz    | 2    | 1.7 dB  |
+| Peaking | 6888 Hz  | 8.52 | 2.5 dB  |
+| Peaking | 5309 Hz  | 6.56 | 4.9 dB  |
+| Peaking | 8813 Hz  | 7.46 | -2.9 dB |
+| Peaking | 181 Hz   | 1.41 | -1.5 dB |
+| Peaking | 981 Hz   | 0.6  | 1.4 dB  |
+| Peaking | 1289 Hz  | 2.29 | -2.6 dB |
+| Peaking | 3466 Hz  | 8.62 | 2.6 dB  |
+| Peaking | 18276 Hz | 3.73 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Focal%20Utopia%20snA1BEHG003253/Focal%20Utopia%20snA1BEHG003253.png)

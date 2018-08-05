@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 429 Hz  | 1.51 | 1.3 dB  |
 | Peaking | 2831 Hz | 1.83 | 5.8 dB  |
 | Peaking | 5114 Hz | 1.76 | 5.9 dB  |
-| Peaking | 1642 Hz | 3.1  | -1.6 dB |
-| Peaking | 2260 Hz | 5.72 | 1.7 dB  |
+| Peaking | 1641 Hz | 3.1  | -1.6 dB |
+| Peaking | 2257 Hz | 5.72 | 1.7 dB  |
 | Peaking | 6725 Hz | 3.9  | 0.6 dB  |
 | Peaking | 6431 Hz | 5.13 | 2.8 dB  |
-| Peaking | 7474 Hz | 1.89 | -2.3 dB |
+| Peaking | 7473 Hz | 1.89 | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Urbanite/Sennheiser%20Urbanite.png)

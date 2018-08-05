@@ -1,0 +1,35 @@
+# Popclick String
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -4.1dB
+GraphicEQ: 10 -84; 20 -10.7; 22 -10.6; 23 -10.6; 25 -10.6; 26 -10.6; 28 -10.5; 30 -10.4; 32 -10.3; 35 -10.2; 37 -10.1; 40 -9.9; 42 -9.8; 45 -9.6; 49 -9.4; 52 -9.2; 56 -8.9; 59 -8.7; 64 -8.5; 68 -8.3; 73 -8.1; 78 -8.0; 83 -7.9; 89 -7.9; 95 -8.0; 102 -8.2; 109 -8.3; 117 -8.4; 125 -8.6; 134 -8.6; 143 -8.6; 153 -8.4; 164 -8.1; 175 -7.7; 188 -7.3; 201 -6.9; 215 -6.4; 230 -5.9; 246 -5.5; 263 -5.0; 282 -4.4; 301 -4.0; 323 -3.4; 345 -2.9; 369 -2.5; 395 -2.0; 423 -1.4; 452 -1.0; 484 -0.7; 518 -0.4; 554 -0.0; 593 0.3; 635 0.4; 679 0.4; 726 0.4; 777 0.7; 832 1.0; 890 0.7; 952 0.3; 1019 -0.0; 1090 -0.4; 1167 -0.7; 1248 -1.1; 1336 -1.8; 1429 -2.6; 1529 -3.6; 1636 -4.3; 1751 -4.8; 1873 -5.1; 2004 -5.6; 2145 -6.1; 2295 -6.4; 2455 -6.0; 2627 -4.8; 2811 -3.0; 3008 -0.5; 3219 1.6; 3444 3.3; 3685 3.6; 3943 2.9; 4219 0.9; 4514 -1.1; 4830 -2.8; 5168 -5.1; 5530 -8.7; 5917 -7.4; 6331 -2.5; 6775 0.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 -0.1; 10879 -0.5; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-4.1dB` and instead set Global volume in the UI for both channels to **-41**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Popclick String ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 8 Hz    | 0.74 | -10.2 dB |
+| Peaking | 34 Hz   | 0.34 | -8.7 dB  |
+| Peaking | 163 Hz  | 0.94 | -5.8 dB  |
+| Peaking | 2086 Hz | 2.56 | -6.9 dB  |
+| Peaking | 5616 Hz | 7.39 | -9.7 dB  |
+| Peaking | 745 Hz  | 1.11 | 2.7 dB   |
+| Peaking | 2636 Hz | 7.39 | -2.2 dB  |
+| Peaking | 1663 Hz | 0.21 | -1.3 dB  |
+| Peaking | 3596 Hz | 3.5  | 6.2 dB   |
+| Peaking | 7037 Hz | 7.17 | 3.2 dB   |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Popclick%20String/Popclick%20String.png)

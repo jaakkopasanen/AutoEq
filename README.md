@@ -6,12 +6,8 @@ and follow instructions in [Usage](https://github.com/jaakkopasanen/AutoEq#usage
 ## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
 frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
-This project currently has 700+ onear headphones covered in the
-[results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder. Results are organized by
-source/target/headphone so a Sennheiser HD 650 measured by Innerfidelity and tuned to
-[Innerfidelity 2017 compensation curve](https://www.innerfidelity.com/content/compensation-curve-innerfidelity-measurements-dialog-part-1)
-would be found in
-[innerfidelity/innerfidelity2017/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/innerfidelity2017/Sennheiser%20HD%20650).
+This project currently has 1000+ headphones covered in the
+[results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder.
 See [Usage](https://github.com/jaakkopasanen/AutoEq#usage) for instructions how to use the results with
 [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and
 [Results](https://github.com/jaakkopasanen/AutoEq#results) section for details about parameters and how the results were
@@ -98,35 +94,41 @@ below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. 
 not sufficient since measurements and equalization have several problems that need to be addressed, see
 [Technical Challenges](https://github.com/jaakkopasanen/AutoEq#technical-challenges) for more details.
 
-Results provided in this project currently have all the on-ear headphone measurements from
-[Innerfidelity](https://www.innerfidelity.com/headphone-measurements) and [Headphone.com](http://graphs.headphone.com/)
-with 2 different target responses for each:
+Results provided in this project currently have all the headphone measurements from
+[Innerfidelity](https://www.innerfidelity.com/headphone-measurements) and [Headphone.com](http://graphs.headphone.com/).
+Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
+[target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
+would be found in
+[innerfidelity/sbaf-serious/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650).
 
-Innerfidelity measured headphones have SBAF-Serious target and Innerfidelity 2017 target results. Headphone.com measured
-headphones have Headphone.com native target results as well as SBAF-Serious target results. Headphone.com measurements
-were calibrated to Innerfidelity measurements before applying the SBAF-Serious target curve because that was developed
-for Innerfidelity measurements.
+Innerfidelity and Headphone.com measured headphones have
+[SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
+only. This is a modified version of Innerfidelity target curve produced by Serious user on Super Best Audio Friends
+forum. This curve doesn't have the glaring problems but is quite well balanced overall. Curve was turned into a
+compensation for raw microphone data and tilted 0.2 dB / octave brighter. Headphone.com measurements were calibrated to
+Innerfidelity measurements before applying the SBAF-Serious target curve because that was developed for Innerfidelity
+measurements. Innerfidelity measurements are recommended over Headphone.com measurements because SBAF-Serious target
+was developed for Innerfidelity.
 
-Recommended compensation curve for Innerfidelity and Headphone.com measurements is the modified version of
-Innerfidelity target curve produced by Serious user on Super Best Audio Friends forum. This curve doesn't have the
-glaring problems but is quite well balanced overall. Curve was turned into a compensation for raw microphone data and
-tilted 0.2 dB / octave brighter. See the
-[forum thread](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
-for discussion about the original target. `innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv`
+This project also has other compensation curves which have not been used for pre-processed results for simplicity.
 
 Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
 reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
 curve seems to underestimate 2 to 5 kHZ region by several dB leading the equalization to boost those frequencies too
-much. `innerfidelity/resources/innerfidelity_compensation_2017.csv`
+much. See [the original post](https://www.innerfidelity.com/content/new-compensation-curve-innerfidelity-measurements)
+and [the sequel](https://www.innerfidelity.com/content/compensation-curve-innerfidelity-measurements-dialog-part-1)
+on Innerfidelity for more details. Data can be found in `innerfidelity/resources/innerfidelity_compensation_2017.csv`
 
 Headphone.com compensation curve is used by Headphone.com with their Frequency Response graphs but this seems to
-underestimate treble even more than the 2017 Innerfidelity curve leading to even brighter equalization.
+underestimate treble even more than the 2017 Innerfidelity curve leading to even brighter equalization. Data location:
 `headphonecom/resources/headphonecom_compensation.csv`
 
 None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
-results. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain (boost) is
-applied. In the upper treble measurements are less reliable and boosting them too much will cause serious problem while
-having some narrow dips is not a problem at all.
+on-ear headphones, +6dB for in-ear headphones and no boost for earbuds. Harman targets actually ask for about +6dB for
+on-ears and +11dB for in-ears but since most headphones cannot achieve this with positive gain limited to +6dB a smaller
+boost was selected. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain
+(boost) is applied. In the upper treble measurements are less reliable and boosting them too much will cause serious
+problem while having some narrow dips is not a problem at all.
 
 ## Equalizing
 `frequency_response.py` is the tool used to produce the equalization results from measurement data. There is no
@@ -404,9 +406,24 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- oratory1990 measurements
+- Recommended results
+    - Average multiple measurements by same source
+    - Prefer averaged over others
+- oratory1990 measurements'
+    - Vectorize Harman targets
+    - Full pipeline
+    - Update results section
+    - Update recommendations
 - Rtings measurements
+    - Calibrate to Innerfidelity
+    - Full pipeline
+    - Update results section
+    - Update recommendations
 - Reference audio analyzer measurements
-- IEMs
+    - Target response
+    - Full pipeline
+    - Update results section
+    - Update recommendations
 - Crinacle measurements for IEMs
+    - Target response
 - Impulse responses

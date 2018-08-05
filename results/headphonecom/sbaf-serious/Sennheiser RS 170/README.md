@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 170 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 2.11 | 6.7 dB  |
-| Peaking | 159 Hz  | 0.87 | -6.4 dB |
-| Peaking | 1621 Hz | 6.93 | -4.0 dB |
-| Peaking | 4131 Hz | 0.86 | -9.6 dB |
-| Peaking | 4764 Hz | 2.16 | 14.3 dB |
-| Peaking | 67 Hz   | 3.34 | -1.2 dB |
-| Peaking | 831 Hz  | 3.19 | 3.1 dB  |
-| Peaking | 2317 Hz | 5.58 | -1.5 dB |
-| Peaking | 9113 Hz | 1.45 | 3.6 dB  |
-| Peaking | 9443 Hz | 3.65 | -7.8 dB |
+| Peaking | 21 Hz   | 2.09 | 6.8 dB  |
+| Peaking | 160 Hz  | 0.9  | -6.3 dB |
+| Peaking | 1629 Hz | 6.88 | -4.0 dB |
+| Peaking | 4100 Hz | 0.86 | -9.4 dB |
+| Peaking | 4790 Hz | 2.17 | 14.2 dB |
+| Peaking | 62 Hz   | 2.65 | -1.4 dB |
+| Peaking | 830 Hz  | 3.25 | 3.1 dB  |
+| Peaking | 2299 Hz | 6.55 | -1.5 dB |
+| Peaking | 9200 Hz | 1.47 | 3.5 dB  |
+| Peaking | 9490 Hz | 3.63 | -7.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20170/Sennheiser%20RS%20170.png)

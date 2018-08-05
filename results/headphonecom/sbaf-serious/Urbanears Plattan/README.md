@@ -24,12 +24,12 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 37 Hz   | 0.2  | 6.1 dB  |
 | Peaking | 379 Hz  | 1.97 | 4.3 dB  |
 | Peaking | 1741 Hz | 2.08 | 4.8 dB  |
-| Peaking | 3204 Hz | 1.21 | 5.4 dB  |
+| Peaking | 3203 Hz | 1.21 | 5.4 dB  |
 | Peaking | 5533 Hz | 2.53 | 4.7 dB  |
-| Peaking | 935 Hz  | 2.44 | -3.9 dB |
-| Peaking | 1000 Hz | 1.27 | 2.1 dB  |
-| Peaking | 4467 Hz | 3.99 | 1.6 dB  |
-| Peaking | 6452 Hz | 4.56 | 4.1 dB  |
-| Peaking | 6677 Hz | 1.38 | -2.8 dB |
+| Peaking | 935 Hz  | 2.46 | -3.9 dB |
+| Peaking | 1001 Hz | 1.28 | 2.1 dB  |
+| Peaking | 4440 Hz | 4.01 | 1.5 dB  |
+| Peaking | 6492 Hz | 4.51 | 4.1 dB  |
+| Peaking | 6632 Hz | 1.4  | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Urbanears%20Plattan/Urbanears%20Plattan.png)

@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 26 Hz   |  1.12 | 6.4 dB  |
-| Peaking | 68 Hz   |  4.48 | 2.2 dB  |
+| Peaking | 26 Hz   |  1.14 | 6.4 dB  |
+| Peaking | 67 Hz   |  4.44 | 2.3 dB  |
 | Peaking | 1787 Hz |  2.97 | 6.5 dB  |
-| Peaking | 2428 Hz |  3.04 | -6.0 dB |
+| Peaking | 2428 Hz |  3.03 | -6.0 dB |
 | Peaking | 4509 Hz |  2.75 | 6.9 dB  |
-| Peaking | 175 Hz  |  1.2  | -2.1 dB |
-| Peaking | 720 Hz  |  2.57 | 0.8 dB  |
-| Peaking | 1211 Hz |  6.44 | -1.1 dB |
-| Peaking | 6397 Hz | 13.39 | 3.5 dB  |
-| Peaking | 9343 Hz |  2.21 | -2.4 dB |
+| Peaking | 172 Hz  |  0.25 | 2.3 dB  |
+| Peaking | 182 Hz  |  0.57 | -4.2 dB |
+| Peaking | 1200 Hz |  4.87 | -1.3 dB |
+| Peaking | 6441 Hz | 12.34 | 3.4 dB  |
+| Peaking | 9293 Hz |  2.08 | -2.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20RS%20220/Sennheiser%20RS%20220.png)

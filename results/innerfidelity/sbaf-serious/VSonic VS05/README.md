@@ -1,0 +1,35 @@
+# VSonic VS05
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -4.9dB
+GraphicEQ: 10 -84; 20 3.4; 22 2.9; 23 2.6; 25 2.2; 26 2.1; 28 1.8; 30 1.5; 32 1.3; 35 1.0; 37 0.9; 40 0.7; 42 0.6; 45 0.4; 49 0.3; 52 0.1; 56 0.0; 59 -0.0; 64 -0.2; 68 -0.4; 73 -0.5; 78 -0.7; 83 -1.0; 89 -1.4; 95 -1.9; 102 -2.5; 109 -2.9; 117 -3.4; 125 -4.1; 134 -4.5; 143 -4.8; 153 -5.1; 164 -5.1; 175 -5.2; 188 -5.1; 201 -5.1; 215 -5.0; 230 -4.8; 246 -4.7; 263 -4.5; 282 -4.3; 301 -4.2; 323 -3.9; 345 -3.7; 369 -3.4; 395 -3.2; 423 -2.8; 452 -2.5; 484 -2.3; 518 -2.1; 554 -1.6; 593 -1.2; 635 -0.9; 679 -0.7; 726 -0.4; 777 -0.0; 832 0.1; 890 0.1; 952 0.1; 1019 0.0; 1090 0.0; 1167 0.1; 1248 0.1; 1336 -0.0; 1429 -0.0; 1529 0.1; 1636 0.3; 1751 0.6; 1873 0.9; 2004 1.3; 2145 1.6; 2295 1.9; 2455 2.5; 2627 2.9; 2811 3.1; 3008 3.6; 3219 4.0; 3444 4.4; 3685 4.1; 3943 3.3; 4219 1.6; 4514 0.2; 4830 -0.7; 5168 -1.3; 5530 -2.6; 5917 -3.9; 6331 -4.3; 6775 -3.2; 7249 -2.9; 7756 -3.4; 8299 -4.7; 8880 -5.5; 9502 -4.6; 10167 -1.8; 10879 -0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-4.9dB` and instead set Global volume in the UI for both channels to **-49**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `VSonic VS05 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 9 Hz     | 0.17 | 2.7 dB  |
+| Peaking | 195 Hz   | 0.63 | -5.5 dB |
+| Peaking | 3383 Hz  | 1.39 | 5.0 dB  |
+| Peaking | 6001 Hz  | 1.99 | -4.8 dB |
+| Peaking | 8888 Hz  | 4.4  | -5.3 dB |
+| Peaking | 40 Hz    | 2.1  | -0.4 dB |
+| Peaking | 80 Hz    | 2.39 | 0.6 dB  |
+| Peaking | 134 Hz   | 4.28 | -0.6 dB |
+| Peaking | 825 Hz   | 3.93 | 0.8 dB  |
+| Peaking | 11218 Hz | 6.32 | 1.0 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/VSonic%20VS05/VSonic%20VS05.png)

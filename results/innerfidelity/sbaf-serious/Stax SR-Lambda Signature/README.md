@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-Lambda Signature ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-8.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 1.74 | 6.9 dB  |
-| Peaking | 1743 Hz | 2.71 | -5.5 dB |
-| Peaking | 2491 Hz | 4.03 | 5.2 dB  |
-| Peaking | 5624 Hz | 7.08 | 3.3 dB  |
-| Peaking | 9012 Hz | 5.82 | -4.0 dB |
-| Peaking | 51 Hz   | 2.87 | -3.4 dB |
-| Peaking | 299 Hz  | 0.2  | 1.5 dB  |
-| Peaking | 1363 Hz | 2.81 | -1.7 dB |
-| Peaking | 6846 Hz | 7.06 | -0.7 dB |
-| Peaking | 4305 Hz | 9.21 | -1.1 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 25 Hz    | 1.7  | 6.8 dB  |
+| Peaking | 1744 Hz  | 2.71 | -5.5 dB |
+| Peaking | 2495 Hz  | 4.03 | 5.2 dB  |
+| Peaking | 5624 Hz  | 7.01 | 3.2 dB  |
+| Peaking | 9035 Hz  | 5.8  | -4.0 dB |
+| Peaking | 56 Hz    | 0.61 | 2.7 dB  |
+| Peaking | 50 Hz    | 1.88 | -5.2 dB |
+| Peaking | 492 Hz   | 0.65 | 1.7 dB  |
+| Peaking | 1364 Hz  | 3.95 | -1.5 dB |
+| Peaking | 10653 Hz | 5.49 | 0.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-Lambda%20Signature/Stax%20SR-Lambda%20Signature.png)

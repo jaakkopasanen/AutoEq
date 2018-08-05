@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Pioneer HDJ-500 
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 29 Hz    | 0.49 | 6.3 dB  |
-| Peaking | 917 Hz   | 0.68 | -2.2 dB |
-| Peaking | 3323 Hz  | 0.54 | 8.1 dB  |
-| Peaking | 5274 Hz  | 5.37 | -6.3 dB |
-| Peaking | 41470 Hz | 0.84 | -3.5 dB |
-| Peaking | 100 Hz   | 3.67 | 0.6 dB  |
-| Peaking | 163 Hz   | 2.25 | -0.6 dB |
-| Peaking | 2076 Hz  | 7.41 | 1.3 dB  |
-| Peaking | 4395 Hz  | 9.21 | 2.7 dB  |
-| Peaking | 16668 Hz | 2.97 | -1.9 dB |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 29 Hz    |  0.5  | 6.3 dB  |
+| Peaking | 903 Hz   |  0.68 | -2.2 dB |
+| Peaking | 3381 Hz  |  0.53 | 8.3 dB  |
+| Peaking | 5299 Hz  |  5.4  | -6.3 dB |
+| Peaking | 40552 Hz |  0.86 | -3.7 dB |
+| Peaking | 2073 Hz  |  8.08 | 1.1 dB  |
+| Peaking | 3055 Hz  |  4.01 | -1.0 dB |
+| Peaking | 7691 Hz  |  1.63 | 0.8 dB  |
+| Peaking | 6676 Hz  | 11.31 | -3.0 dB |
+| Peaking | 31213 Hz |  3.35 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20HDJ-500/Pioneer%20HDJ-500.png)

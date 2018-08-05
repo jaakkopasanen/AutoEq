@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 545 Hz  | 1.09 | 5.0 dB  |
 | Peaking | 1814 Hz | 2.29 | -4.3 dB |
 | Peaking | 3980 Hz | 0.92 | 6.9 dB  |
-| Peaking | 2201 Hz | 5.98 | -0.7 dB |
-| Peaking | 3160 Hz | 3.03 | 1.7 dB  |
-| Peaking | 3691 Hz | 5.26 | -2.3 dB |
-| Peaking | 6281 Hz | 2.7  | 5.1 dB  |
-| Peaking | 7315 Hz | 1.47 | -3.8 dB |
+| Peaking | 2203 Hz | 5.98 | -0.7 dB |
+| Peaking | 3168 Hz | 2.97 | 1.7 dB  |
+| Peaking | 3687 Hz | 5.3  | -2.3 dB |
+| Peaking | 6277 Hz | 2.68 | 5.2 dB  |
+| Peaking | 7294 Hz | 1.47 | -3.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Phonon%20SMB2/Phonon%20SMB2.png)

@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PX 20
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 34 Hz   | 0.35 | 5.3 dB  |
-| Peaking | 83 Hz   | 0.04 | 1.0 dB  |
-| Peaking | 1721 Hz | 1.38 | -3.8 dB |
-| Peaking | 3416 Hz | 1.97 | 6.2 dB  |
-| Peaking | 5962 Hz | 4.07 | 5.8 dB  |
-| Peaking | 100 Hz  | 7.23 | 1.9 dB  |
-| Peaking | 199 Hz  | 1.49 | -1.4 dB |
-| Peaking | 254 Hz  | 2.51 | 1.6 dB  |
-| Peaking | 1996 Hz | 8.46 | -0.4 dB |
-| Peaking | 8285 Hz | 4.51 | -0.9 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 34 Hz   |  0.35 | 5.3 dB  |
+| Peaking | 82 Hz   |  0.04 | 1.0 dB  |
+| Peaking | 1721 Hz |  1.38 | -3.8 dB |
+| Peaking | 3417 Hz |  1.97 | 6.2 dB  |
+| Peaking | 5962 Hz |  4.07 | 5.8 dB  |
+| Peaking | 99 Hz   |  7.02 | 1.7 dB  |
+| Peaking | 201 Hz  |  1.52 | -1.5 dB |
+| Peaking | 250 Hz  |  2.45 | 1.7 dB  |
+| Peaking | 1647 Hz | 10.06 | 0.6 dB  |
+| Peaking | 8291 Hz |  4.45 | -0.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PX%20200%20II/Sennheiser%20PX%20200%20II.png)

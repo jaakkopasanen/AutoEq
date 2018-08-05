@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 384 Hz  | 1.48 | -2.7 dB |
 | Peaking | 801 Hz  | 1.19 | 0.8 dB  |
 | Peaking | 5194 Hz | 1.83 | 6.7 dB  |
-| Peaking | 263 Hz  | 8.91 | 0.6 dB  |
-| Peaking | 2486 Hz | 2.83 | 1.9 dB  |
-| Peaking | 4077 Hz | 0.31 | -0.4 dB |
-| Peaking | 6473 Hz | 4.77 | 3.1 dB  |
-| Peaking | 7519 Hz | 2.43 | -1.9 dB |
+| Peaking | 263 Hz  | 8.91 | 0.5 dB  |
+| Peaking | 2485 Hz | 2.83 | 1.9 dB  |
+| Peaking | 4082 Hz | 0.31 | -0.4 dB |
+| Peaking | 6480 Hz | 4.77 | 3.1 dB  |
+| Peaking | 7515 Hz | 2.42 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Wiss%20Audio%20On%20Ear%20Force%201%20HP%20P244/Wiss%20Audio%20On%20Ear%20Force%201%20HP%20P244.png)

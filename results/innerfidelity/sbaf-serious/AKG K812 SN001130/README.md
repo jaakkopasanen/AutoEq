@@ -1,4 +1,4 @@
-# AKG K812 SN001130
+# AKG K812 sn001130
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,23 +13,23 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -3.3dB` and instead set Global volume in the UI for both channels to **-33**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `AKG K812 SN001130 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `AKG K812 sn001130 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 14 Hz    |  0.12 | 1.1 dB  |
-| Peaking | 210 Hz   |  0.5  | -4.7 dB |
-| Peaking | 3572 Hz  |  6.01 | -4.5 dB |
-| Peaking | 6004 Hz  |  5.19 | -9.2 dB |
-| Peaking | 28140 Hz |  1.26 | -6.4 dB |
-| Peaking | 2505 Hz  | 11.1  | 3.4 dB  |
-| Peaking | 10512 Hz |  3.87 | 1.8 dB  |
-| Peaking | 6840 Hz  |  8.62 | 2.4 dB  |
-| Peaking | 8937 Hz  |  2.08 | -6.4 dB |
-| Peaking | 9858 Hz  |  0.72 | 2.0 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 14 Hz    | 0.11 | 1.1 dB  |
+| Peaking | 210 Hz   | 0.5  | -4.7 dB |
+| Peaking | 3573 Hz  | 5.85 | -4.4 dB |
+| Peaking | 5985 Hz  | 5.12 | -9.1 dB |
+| Peaking | 27950 Hz | 1.27 | -6.4 dB |
+| Peaking | 2511 Hz  | 8.89 | 3.7 dB  |
+| Peaking | 4637 Hz  | 8.6  | 4.4 dB  |
+| Peaking | 7006 Hz  | 3.11 | 5.5 dB  |
+| Peaking | 8628 Hz  | 1.2  | -8.9 dB |
+| Peaking | 10685 Hz | 1.25 | 5.4 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K812%20SN001130/AKG%20K812%20SN001130.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K812%20sn001130/AKG%20K812%20sn001130.png)

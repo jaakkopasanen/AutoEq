@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 30 Hz   | 0.64 | 6.7 dB  |
-| Peaking | 218 Hz  | 0.72 | -4.1 dB |
+| Peaking | 30 Hz   | 0.63 | 6.7 dB  |
+| Peaking | 220 Hz  | 0.72 | -4.1 dB |
 | Peaking | 467 Hz  | 2.06 | -1.8 dB |
-| Peaking | 2828 Hz | 1.45 | 6.2 dB  |
+| Peaking | 2827 Hz | 1.45 | 6.2 dB  |
 | Peaking | 5762 Hz | 3.5  | 5.8 dB  |
-| Peaking | 48 Hz   | 3.49 | 0.5 dB  |
-| Peaking | 905 Hz  | 2.51 | -1.1 dB |
-| Peaking | 1366 Hz | 1.73 | 2.3 dB  |
-| Peaking | 1684 Hz | 3.33 | -2.2 dB |
-| Peaking | 9409 Hz | 5.35 | -2.5 dB |
+| Peaking | 108 Hz  | 2.27 | -1.6 dB |
+| Peaking | 114 Hz  | 5.05 | 2.8 dB  |
+| Peaking | 1305 Hz | 4.67 | 1.8 dB  |
+| Peaking | 1725 Hz | 5.67 | -1.1 dB |
+| Peaking | 9393 Hz | 5.47 | -2.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-V600/Sony%20MDR-V600.png)

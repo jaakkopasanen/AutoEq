@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 48 Loose ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 41 Hz    | 0.83 | 7.4 dB   |
-| Peaking | 1888 Hz  | 1.75 | -10.0 dB |
-| Peaking | 7147 Hz  | 0.67 | 11.6 dB  |
-| Peaking | 8428 Hz  | 2.45 | -17.8 dB |
-| Peaking | 17137 Hz | 1.32 | -11.4 dB |
-| Peaking | 21 Hz    | 1.75 | 4.1 dB   |
-| Peaking | 88 Hz    | 0.84 | 11.4 dB  |
-| Peaking | 156 Hz   | 0.26 | -10.2 dB |
-| Peaking | 603 Hz   | 0.9  | 9.2 dB   |
-| Peaking | 1255 Hz  | 2.98 | -2.9 dB  |
+| Peaking | 41 Hz    | 0.84 | 7.3 dB   |
+| Peaking | 1883 Hz  | 1.76 | -10.0 dB |
+| Peaking | 7074 Hz  | 0.68 | 11.5 dB  |
+| Peaking | 8503 Hz  | 2.45 | -17.7 dB |
+| Peaking | 17027 Hz | 1.31 | -11.4 dB |
+| Peaking | 20 Hz    | 1.72 | 4.1 dB   |
+| Peaking | 88 Hz    | 0.89 | 10.8 dB  |
+| Peaking | 160 Hz   | 0.26 | -9.7 dB  |
+| Peaking | 607 Hz   | 0.91 | 9.3 dB   |
+| Peaking | 1273 Hz  | 3.09 | -2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%2048%20Loose/Beyerdynamic%20DT%2048%20Loose.png)

@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:--------|:-----|:--------|
 | Peaking | 40 Hz   | 1.8  | -2.1 dB |
 | Peaking | 97 Hz   | 1.87 | 7.9 dB  |
-| Peaking | 221 Hz  | 0.73 | -4.4 dB |
+| Peaking | 222 Hz  | 0.74 | -4.4 dB |
 | Peaking | 1985 Hz | 2.49 | -4.4 dB |
-| Peaking | 4389 Hz | 1.16 | 7.0 dB  |
-| Peaking | 1023 Hz | 1.79 | 1.0 dB  |
-| Peaking | 3043 Hz | 3.4  | 1.2 dB  |
-| Peaking | 2706 Hz | 0.19 | -0.6 dB |
-| Peaking | 6337 Hz | 3.41 | 4.5 dB  |
-| Peaking | 7325 Hz | 1.77 | -2.7 dB |
+| Peaking | 4390 Hz | 1.16 | 7.0 dB  |
+| Peaking | 1022 Hz | 1.81 | 1.0 dB  |
+| Peaking | 3050 Hz | 3.44 | 1.2 dB  |
+| Peaking | 2718 Hz | 0.19 | -0.5 dB |
+| Peaking | 6318 Hz | 3.39 | 4.5 dB  |
+| Peaking | 7331 Hz | 1.74 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20Custom%20One%20Pro%20switch%20position%202/Beyerdynamic%20Custom%20One%20Pro%20switch%20position%202.png)

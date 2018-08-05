@@ -25,10 +25,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 189 Hz  | 0.53 | -4.6 dB |
 | Peaking | 658 Hz  | 1.89 | 2.4 dB  |
 | Peaking | 4306 Hz | 1.08 | 6.7 dB  |
-| Peaking | 1517 Hz | 2.85 | -1.0 dB |
-| Peaking | 2561 Hz | 2.98 | 1.2 dB  |
-| Peaking | 4302 Hz | 3.48 | -0.8 dB |
-| Peaking | 6280 Hz | 2.87 | 4.6 dB  |
-| Peaking | 7423 Hz | 1.59 | -3.4 dB |
+| Peaking | 1518 Hz | 2.85 | -1.0 dB |
+| Peaking | 2550 Hz | 2.98 | 1.2 dB  |
+| Peaking | 4307 Hz | 3.48 | -0.8 dB |
+| Peaking | 6330 Hz | 2.87 | 4.6 dB  |
+| Peaking | 7378 Hz | 1.59 | -3.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Navigator/Skullcandy%20Navigator.png)

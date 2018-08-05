@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-SA5000 
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 23 Hz   |  0.07 | 5.5 dB  |
-| Peaking | 1127 Hz |  0.23 | 2.0 dB  |
-| Peaking | 2802 Hz |  4.01 | -9.3 dB |
-| Peaking | 5917 Hz |  3.52 | 7.3 dB  |
-| Peaking | 8505 Hz |  2.72 | -6.2 dB |
-| Peaking | 141 Hz  |  2.09 | -1.6 dB |
-| Peaking | 357 Hz  |  0.95 | 1.4 dB  |
-| Peaking | 971 Hz  |  1.51 | -4.6 dB |
-| Peaking | 1331 Hz |  1.95 | 4.6 dB  |
-| Peaking | 4445 Hz | 10.88 | -4.0 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 23 Hz   | 0.07 | 5.5 dB  |
+| Peaking | 1121 Hz | 0.22 | 2.0 dB  |
+| Peaking | 2810 Hz | 4.01 | -9.3 dB |
+| Peaking | 5928 Hz | 3.52 | 7.3 dB  |
+| Peaking | 8521 Hz | 2.72 | -6.2 dB |
+| Peaking | 141 Hz  | 2.06 | -1.6 dB |
+| Peaking | 353 Hz  | 1.11 | 1.2 dB  |
+| Peaking | 967 Hz  | 1.59 | -4.9 dB |
+| Peaking | 1339 Hz | 1.6  | 5.0 dB  |
+| Peaking | 2289 Hz | 0.7  | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-SA5000/Sony%20MDR-SA5000.png)

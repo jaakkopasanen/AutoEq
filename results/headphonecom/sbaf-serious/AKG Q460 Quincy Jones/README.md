@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 661 Hz  | 2.49 | 5.0 dB  |
 | Peaking | 2409 Hz | 2    | 6.7 dB  |
 | Peaking | 5677 Hz | 3.12 | 6.5 dB  |
-| Peaking | 18 Hz   | 2.2  | 1.1 dB  |
+| Peaking | 18 Hz   | 2.25 | 1.2 dB  |
 | Peaking | 1228 Hz | 3.24 | -1.5 dB |
-| Peaking | 1894 Hz | 6.65 | 1.3 dB  |
-| Peaking | 3038 Hz | 8.45 | 2.3 dB  |
-| Peaking | 3758 Hz | 6.32 | -2.4 dB |
+| Peaking | 1893 Hz | 6.65 | 1.3 dB  |
+| Peaking | 3042 Hz | 8.45 | 2.3 dB  |
+| Peaking | 3761 Hz | 6.32 | -2.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20Q460%20Quincy%20Jones/AKG%20Q460%20Quincy%20Jones.png)

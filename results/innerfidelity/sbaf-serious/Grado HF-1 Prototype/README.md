@@ -28,8 +28,8 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 8756 Hz  | 2.66 | -11.5 dB |
 | Peaking | 620 Hz   | 1.3  | 1.0 dB   |
 | Peaking | 3501 Hz  | 7.22 | 1.1 dB   |
-| Peaking | 9803 Hz  | 6.54 | -3.5 dB  |
-| Peaking | 11425 Hz | 2.73 | 3.0 dB   |
-| Peaking | 18500 Hz | 4.03 | -2.2 dB  |
+| Peaking | 9822 Hz  | 6.54 | -3.4 dB  |
+| Peaking | 11434 Hz | 2.74 | 3.0 dB   |
+| Peaking | 18396 Hz | 4.03 | -2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20HF-1%20Prototype/Grado%20HF-1%20Prototype.png)

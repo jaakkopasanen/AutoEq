@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 28 Hz    | 0.67 | 3.1 dB   |
+| Peaking | 27 Hz    | 0.68 | 3.1 dB   |
 | Peaking | 1827 Hz  | 1.11 | 2.8 dB   |
-| Peaking | 4245 Hz  | 4.86 | -5.0 dB  |
-| Peaking | 8735 Hz  | 2.11 | -7.7 dB  |
-| Peaking | 27166 Hz | 0.74 | -13.3 dB |
-| Peaking | 234 Hz   | 1.42 | -2.4 dB  |
-| Peaking | 760 Hz   | 6.73 | 2.5 dB   |
-| Peaking | 5477 Hz  | 9.67 | 6.7 dB   |
-| Peaking | 6383 Hz  | 6.51 | -3.6 dB  |
-| Peaking | 13464 Hz | 6.35 | -3.3 dB  |
+| Peaking | 4271 Hz  | 4.86 | -5.0 dB  |
+| Peaking | 8754 Hz  | 2.11 | -7.7 dB  |
+| Peaking | 27324 Hz | 0.73 | -13.3 dB |
+| Peaking | 234 Hz   | 1.44 | -2.4 dB  |
+| Peaking | 761 Hz   | 6.74 | 2.5 dB   |
+| Peaking | 5479 Hz  | 9.52 | 6.6 dB   |
+| Peaking | 6394 Hz  | 6.61 | -3.6 dB  |
+| Peaking | 13590 Hz | 7.2  | -3.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE-4/HiFiMAN%20HE-4.png)

@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-L300 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 30 Hz   | 0.63 | 6.5 dB  |
 | Peaking | 407 Hz  | 0.97 | 1.8 dB  |
-| Peaking | 3151 Hz | 1.01 | 2.1 dB  |
-| Peaking | 8867 Hz | 2.03 | 1.4 dB  |
+| Peaking | 3152 Hz | 1.01 | 2.1 dB  |
+| Peaking | 8866 Hz | 2.03 | 1.4 dB  |
 | Peaking | 8837 Hz | 4.63 | -5.7 dB |
-| Peaking | 641 Hz  | 5.05 | 0.8 dB  |
-| Peaking | 1351 Hz | 3.72 | -2.3 dB |
-| Peaking | 1910 Hz | 2.57 | 3.5 dB  |
-| Peaking | 2625 Hz | 1.39 | -2.5 dB |
-| Peaking | 3376 Hz | 3.49 | 2.3 dB  |
+| Peaking | 642 Hz  | 5.1  | 0.8 dB  |
+| Peaking | 1350 Hz | 3.71 | -2.3 dB |
+| Peaking | 1909 Hz | 2.59 | 3.5 dB  |
+| Peaking | 2659 Hz | 1.38 | -2.5 dB |
+| Peaking | 3363 Hz | 3.44 | 2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-L300/Stax%20SR-L300.png)

@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 462 Hz  | 1.99 | 1.5 dB  |
 | Peaking | 1628 Hz | 2.51 | -3.8 dB |
 | Peaking | 3736 Hz | 0.84 | 7.0 dB  |
-| Peaking | 108 Hz  | 7.79 | 3.4 dB  |
-| Peaking | 135 Hz  | 4.33 | -1.5 dB |
-| Peaking | 2486 Hz | 6.15 | 1.4 dB  |
-| Peaking | 6207 Hz | 2.39 | 6.6 dB  |
-| Peaking | 6734 Hz | 1.15 | -4.6 dB |
+| Peaking | 108 Hz  | 7.94 | 3.2 dB  |
+| Peaking | 136 Hz  | 4.33 | -1.4 dB |
+| Peaking | 2526 Hz | 6.15 | 1.4 dB  |
+| Peaking | 6083 Hz | 2.38 | 6.5 dB  |
+| Peaking | 6878 Hz | 1.14 | -4.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20439/Sennheiser%20HD%20439.png)

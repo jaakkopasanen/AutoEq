@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 0.87 | -5.4 dB |
-| Peaking | 43 Hz   | 1.58 | -1.6 dB |
-| Peaking | 183 Hz  | 0.37 | -1.6 dB |
-| Peaking | 3503 Hz | 2.51 | 6.2 dB  |
-| Peaking | 6458 Hz | 6.88 | 4.5 dB  |
-| Peaking | 511 Hz  | 4.29 | -0.8 dB |
+| Peaking | 20 Hz   | 0.91 | -5.3 dB |
+| Peaking | 42 Hz   | 1.55 | -1.7 dB |
+| Peaking | 182 Hz  | 0.38 | -1.6 dB |
+| Peaking | 3504 Hz | 2.51 | 6.2 dB  |
+| Peaking | 6459 Hz | 7.02 | 4.5 dB  |
+| Peaking | 509 Hz  | 4.29 | -0.8 dB |
 | Peaking | 1254 Hz | 3.49 | 2.1 dB  |
-| Peaking | 2046 Hz | 5.78 | -1.0 dB |
-| Peaking | 1148 Hz | 3.16 | -0.7 dB |
-| Peaking | 9229 Hz | 5.49 | -1.5 dB |
+| Peaking | 2044 Hz | 5.79 | -1.0 dB |
+| Peaking | 1152 Hz | 3.03 | -0.6 dB |
+| Peaking | 9207 Hz | 5.52 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Polk%20UltraFocus%208000%20NC/Polk%20UltraFocus%208000%20NC.png)

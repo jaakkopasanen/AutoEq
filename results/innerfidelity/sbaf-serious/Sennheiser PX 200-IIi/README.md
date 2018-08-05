@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 752 Hz  | 3.02 | 2.2 dB  |
 | Peaking | 1990 Hz | 2.2  | -2.6 dB |
 | Peaking | 4623 Hz | 1.32 | 6.9 dB  |
-| Peaking | 19 Hz   | 1.81 | 2.0 dB  |
-| Peaking | 90 Hz   | 0.54 | -2.9 dB |
-| Peaking | 91 Hz   | 1.15 | 4.1 dB  |
-| Peaking | 6356 Hz | 4.08 | 3.9 dB  |
-| Peaking | 7499 Hz | 1.66 | -2.5 dB |
+| Peaking | 18 Hz   | 1.84 | 2.0 dB  |
+| Peaking | 93 Hz   | 0.52 | -2.9 dB |
+| Peaking | 92 Hz   | 1.19 | 4.1 dB  |
+| Peaking | 6406 Hz | 3.96 | 4.0 dB  |
+| Peaking | 7409 Hz | 1.67 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PX%20200-IIi/Sennheiser%20PX%20200-IIi.png)

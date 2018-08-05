@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 530 Hz  | 0.91 | -2.1 dB |
 | Peaking | 3326 Hz | 1.21 | 5.9 dB  |
 | Peaking | 5790 Hz | 3.45 | 4.8 dB  |
-| Peaking | 9 Hz    | 1.19 | -0.7 dB |
+| Peaking | 8 Hz    | 1.19 | -0.7 dB |
 | Peaking | 1613 Hz | 4.91 | -0.8 dB |
-| Peaking | 2357 Hz | 5.53 | 0.9 dB  |
+| Peaking | 2358 Hz | 5.53 | 0.9 dB  |
 | Peaking | 8403 Hz | 3.7  | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Jabra%20Move%20Wired/Jabra%20Move%20Wired.png)

@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:---------|:-----|:--------|
 | Peaking | 202 Hz   | 0.91 | -3.6 dB |
 | Peaking | 582 Hz   | 1.31 | -2.3 dB |
-| Peaking | 2052 Hz  | 5.88 | 2.1 dB  |
-| Peaking | 4113 Hz  | 2.27 | 6.4 dB  |
+| Peaking | 2020 Hz  | 5.89 | 2.1 dB  |
+| Peaking | 4117 Hz  | 2.27 | 6.4 dB  |
 | Peaking | 18273 Hz | 1.56 | -9.0 dB |
-| Peaking | 23 Hz    | 1.59 | 1.4 dB  |
-| Peaking | 1092 Hz  | 1.8  | -1.9 dB |
-| Peaking | 1095 Hz  | 4.13 | 3.6 dB  |
-| Peaking | 14647 Hz | 1.48 | 2.0 dB  |
-| Peaking | 16174 Hz | 3.24 | -3.0 dB |
+| Peaking | 24 Hz    | 1.64 | 1.4 dB  |
+| Peaking | 1091 Hz  | 1.79 | -1.9 dB |
+| Peaking | 1104 Hz  | 4.13 | 3.6 dB  |
+| Peaking | 14568 Hz | 1.49 | 2.0 dB  |
+| Peaking | 16210 Hz | 3.27 | -2.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audeze%20LCD-3/Audeze%20LCD-3.png)

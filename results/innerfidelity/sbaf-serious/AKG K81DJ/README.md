@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 12 Hz    | 0.32 | 6.9 dB   |
-| Peaking | 162 Hz   | 1.78 | -4.0 dB  |
-| Peaking | 1713 Hz  | 0.99 | -10.8 dB |
-| Peaking | 1906 Hz  | 0.45 | 8.1 dB   |
-| Peaking | 6459 Hz  | 8.82 | 3.2 dB   |
-| Peaking | 451 Hz   | 1.82 | 3.3 dB   |
-| Peaking | 470 Hz   | 0.8  | -1.7 dB  |
-| Peaking | 3181 Hz  | 5.69 | 1.6 dB   |
-| Peaking | 8650 Hz  | 2.98 | -1.2 dB  |
-| Peaking | 17099 Hz | 2.23 | -2.7 dB  |
+| Peaking | 11 Hz    | 0.3  | 7.0 dB   |
+| Peaking | 161 Hz   | 1.79 | -4.0 dB  |
+| Peaking | 1718 Hz  | 0.99 | -10.8 dB |
+| Peaking | 1904 Hz  | 0.45 | 8.1 dB   |
+| Peaking | 6442 Hz  | 8.92 | 3.2 dB   |
+| Peaking | 453 Hz   | 1.74 | 3.5 dB   |
+| Peaking | 474 Hz   | 0.8  | -2.0 dB  |
+| Peaking | 3170 Hz  | 5.65 | 1.6 dB   |
+| Peaking | 8666 Hz  | 2.95 | -1.2 dB  |
+| Peaking | 17070 Hz | 2.23 | -2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K81DJ/AKG%20K81DJ.png)

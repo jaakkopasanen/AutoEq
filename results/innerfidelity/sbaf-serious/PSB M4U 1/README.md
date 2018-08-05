@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 76 Hz   | 1.43 | 7.9 dB  |
-| Peaking | 102 Hz  | 0.64 | -5.6 dB |
-| Peaking | 489 Hz  | 1.35 | 3.1 dB  |
-| Peaking | 3687 Hz | 2.02 | -3.6 dB |
-| Peaking | 8693 Hz | 5.22 | -6.7 dB |
-| Peaking | 21 Hz   | 1.86 | -0.7 dB |
-| Peaking | 647 Hz  | 6.92 | 1.2 dB  |
-| Peaking | 1702 Hz | 1.84 | -1.5 dB |
-| Peaking | 7677 Hz | 6.73 | -2.1 dB |
-| Peaking | 6225 Hz | 4.45 | 3.8 dB  |
+| Peaking | 75 Hz   | 1.43 | 7.9 dB  |
+| Peaking | 104 Hz  | 0.64 | -5.6 dB |
+| Peaking | 493 Hz  | 1.35 | 3.1 dB  |
+| Peaking | 3686 Hz | 2.02 | -3.6 dB |
+| Peaking | 8693 Hz | 5.21 | -6.7 dB |
+| Peaking | 20 Hz   | 1.74 | -0.8 dB |
+| Peaking | 644 Hz  | 7.33 | 1.2 dB  |
+| Peaking | 1702 Hz | 1.86 | -1.5 dB |
+| Peaking | 7691 Hz | 7.27 | -2.2 dB |
+| Peaking | 6217 Hz | 4.52 | 3.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/PSB%20M4U%201/PSB%20M4U%201.png)

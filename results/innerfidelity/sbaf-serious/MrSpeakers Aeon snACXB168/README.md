@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2824 Hz  | 1.55 | 2.7 dB  |
 | Peaking | 5368 Hz  | 4.51 | 3.0 dB  |
 | Peaking | 8123 Hz  | 3.38 | -4.6 dB |
-| Peaking | 17 Hz    | 0.74 | 0.7 dB  |
-| Peaking | 67 Hz    | 3.06 | 1.3 dB  |
-| Peaking | 4334 Hz  | 8.5  | -2.5 dB |
-| Peaking | 4227 Hz  | 3.63 | 1.1 dB  |
-| Peaking | 10298 Hz | 8.34 | 0.9 dB  |
+| Peaking | 16 Hz    | 0.7  | 0.7 dB  |
+| Peaking | 68 Hz    | 3.03 | 1.4 dB  |
+| Peaking | 4276 Hz  | 8.5  | -2.5 dB |
+| Peaking | 4264 Hz  | 3.66 | 1.1 dB  |
+| Peaking | 10289 Hz | 8.34 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20snACXB168/MrSpeakers%20Aeon%20snACXB168.png)

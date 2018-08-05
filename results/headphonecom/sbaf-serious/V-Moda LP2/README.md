@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 466 Hz  | 1.51 | 7.2 dB  |
 | Peaking | 5317 Hz | 2.37 | 7.1 dB  |
 | Peaking | 606 Hz  | 5.38 | 1.9 dB  |
-| Peaking | 910 Hz  | 1.09 | -1.1 dB |
-| Peaking | 2995 Hz | 2.79 | -6.0 dB |
-| Peaking | 3203 Hz | 1.16 | 3.2 dB  |
-| Peaking | 9365 Hz | 2.06 | -1.4 dB |
+| Peaking | 909 Hz  | 1.09 | -1.1 dB |
+| Peaking | 2996 Hz | 2.79 | -6.0 dB |
+| Peaking | 3204 Hz | 1.16 | 3.2 dB  |
+| Peaking | 9364 Hz | 2.06 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/V-Moda%20LP2/V-Moda%20LP2.png)

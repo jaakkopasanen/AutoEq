@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 684 Hz   |  2.3  | 2.9 dB  |
 | Peaking | 2671 Hz  |  0.72 | -1.2 dB |
 | Peaking | 8677 Hz  |  3.9  | -4.5 dB |
-| Peaking | 17 Hz    |  1.75 | 3.3 dB  |
-| Peaking | 44 Hz    |  1.6  | -1.9 dB |
-| Peaking | 7052 Hz  | 14.54 | -1.8 dB |
+| Peaking | 16 Hz    |  1.5  | 3.3 dB  |
+| Peaking | 43 Hz    |  1.52 | -2.0 dB |
+| Peaking | 7060 Hz  | 14.53 | -1.8 dB |
 | Peaking | 10401 Hz |  9.73 | 1.1 dB  |
-| Peaking | 11870 Hz |  3.35 | 0.4 dB  |
+| Peaking | 11870 Hz |  3.36 | 0.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Musical%20Fidelity%20MF100/Musical%20Fidelity%20MF100.png)

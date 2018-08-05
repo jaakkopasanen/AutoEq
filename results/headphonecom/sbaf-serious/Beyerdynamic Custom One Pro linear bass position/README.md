@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 249 Hz  | 0.88 | -4.7 dB |
 | Peaking | 2114 Hz | 2.5  | -5.7 dB |
 | Peaking | 5134 Hz | 2.07 | 6.9 dB  |
-| Peaking | 313 Hz  | 2.73 | 0.5 dB  |
-| Peaking | 820 Hz  | 0.73 | -1.3 dB |
-| Peaking | 960 Hz  | 1.43 | 2.0 dB  |
-| Peaking | 6440 Hz | 3.81 | 1.2 dB  |
-| Peaking | 8619 Hz | 2.46 | -1.6 dB |
+| Peaking | 312 Hz  | 2.73 | 0.5 dB  |
+| Peaking | 818 Hz  | 0.73 | -1.3 dB |
+| Peaking | 962 Hz  | 1.42 | 2.0 dB  |
+| Peaking | 6448 Hz | 3.81 | 1.2 dB  |
+| Peaking | 8627 Hz | 2.46 | -1.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20Custom%20One%20Pro%20linear%20bass%20position/Beyerdynamic%20Custom%20One%20Pro%20linear%20bass%20position.png)

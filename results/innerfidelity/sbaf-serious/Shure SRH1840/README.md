@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Shure SRH1840 Pa
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 38 Hz    | 0.56 | 6.8 dB  |
-| Peaking | 1009 Hz  | 0.92 | 2.9 dB  |
-| Peaking | 2982 Hz  | 0.45 | -6.3 dB |
-| Peaking | 6648 Hz  | 0.82 | 5.3 dB  |
-| Peaking | 8822 Hz  | 4.11 | -8.1 dB |
-| Peaking | 40 Hz    | 2.75 | -0.9 dB |
-| Peaking | 82 Hz    | 2.09 | 1.8 dB  |
-| Peaking | 181 Hz   | 0.8  | -1.3 dB |
-| Peaking | 574 Hz   | 2.34 | 0.7 dB  |
-| Peaking | 10485 Hz | 7.82 | 0.7 dB  |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 38 Hz    |  0.56 | 6.8 dB  |
+| Peaking | 1006 Hz  |  0.92 | 2.9 dB  |
+| Peaking | 2982 Hz  |  0.45 | -6.3 dB |
+| Peaking | 6649 Hz  |  0.82 | 5.3 dB  |
+| Peaking | 8822 Hz  |  4.11 | -8.1 dB |
+| Peaking | 38 Hz    |  2.82 | -0.9 dB |
+| Peaking | 79 Hz    |  2.06 | 1.9 dB  |
+| Peaking | 190 Hz   |  0.81 | -1.2 dB |
+| Peaking | 569 Hz   |  2.35 | 0.7 dB  |
+| Peaking | 10450 Hz | 10.25 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SRH1840/Shure%20SRH1840.png)

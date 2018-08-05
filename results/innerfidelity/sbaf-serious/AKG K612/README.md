@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 9 Hz     | 0.29 | 6.6 dB  |
-| Peaking | 209 Hz   | 0.88 | -3.2 dB |
-| Peaking | 2366 Hz  | 2.52 | -4.8 dB |
-| Peaking | 8307 Hz  | 3.85 | -3.7 dB |
-| Peaking | 29755 Hz | 3.28 | -3.7 dB |
-| Peaking | 137 Hz   | 6.09 | -0.7 dB |
-| Peaking | 1071 Hz  | 0.75 | 2.0 dB  |
-| Peaking | 3609 Hz  | 8.12 | 2.5 dB  |
-| Peaking | 1378 Hz  | 0.35 | -1.3 dB |
-| Peaking | 11259 Hz | 1.65 | 0.6 dB  |
+| Peaking | 9 Hz     | 0.29 | 6.7 dB  |
+| Peaking | 205 Hz   | 0.87 | -3.2 dB |
+| Peaking | 2365 Hz  | 2.52 | -4.8 dB |
+| Peaking | 8321 Hz  | 3.85 | -3.7 dB |
+| Peaking | 29779 Hz | 3.28 | -3.7 dB |
+| Peaking | 79 Hz    | 4.74 | 1.1 dB  |
+| Peaking | 1031 Hz  | 0.7  | 2.2 dB  |
+| Peaking | 3643 Hz  | 8.11 | 2.5 dB  |
+| Peaking | 1234 Hz  | 0.33 | -1.5 dB |
+| Peaking | 11253 Hz | 1.67 | 0.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K612/AKG%20K612.png)

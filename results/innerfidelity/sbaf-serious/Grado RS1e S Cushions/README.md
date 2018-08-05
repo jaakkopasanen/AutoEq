@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 657 Hz   | 0.2  | 1.1 dB   |
 | Peaking | 1988 Hz  | 3.69 | -10.0 dB |
 | Peaking | 4038 Hz  | 0.99 | 6.7 dB   |
-| Peaking | 1614 Hz  | 7.15 | 3.0 dB   |
+| Peaking | 1621 Hz  | 7.15 | 3.0 dB   |
 | Peaking | 24000 Hz | 1.43 | 0.1 dB   |
-| Peaking | 1775 Hz  | 9.85 | -2.8 dB  |
-| Peaking | 6217 Hz  | 2.98 | 5.5 dB   |
-| Peaking | 7157 Hz  | 1.39 | -3.7 dB  |
+| Peaking | 1790 Hz  | 9.85 | -2.8 dB  |
+| Peaking | 6202 Hz  | 2.98 | 5.5 dB   |
+| Peaking | 7177 Hz  | 1.39 | -3.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20RS1e%20S%20Cushions/Grado%20RS1e%20S%20Cushions.png)

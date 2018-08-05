@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
 | Peaking | 36 Hz    |  0.84 | 7.2 dB   |
-| Peaking | 2107 Hz  |  1.92 | -5.7 dB  |
-| Peaking | 4037 Hz  |  2.41 | -7.1 dB  |
-| Peaking | 8989 Hz  |  2.28 | -11.1 dB |
-| Peaking | 27518 Hz |  3.73 | -7.3 dB  |
-| Peaking | 66 Hz    |  2.85 | 2.3 dB   |
-| Peaking | 152 Hz   |  1.2  | -2.1 dB  |
-| Peaking | 655 Hz   |  1.21 | 1.1 dB   |
-| Peaking | 5755 Hz  | 11.78 | -4.0 dB  |
-| Peaking | 12576 Hz |  3.96 | 2.6 dB   |
+| Peaking | 2106 Hz  |  1.92 | -5.7 dB  |
+| Peaking | 4048 Hz  |  2.4  | -7.1 dB  |
+| Peaking | 8944 Hz  |  2.28 | -11.1 dB |
+| Peaking | 27507 Hz |  3.71 | -7.3 dB  |
+| Peaking | 64 Hz    |  2.88 | 2.3 dB   |
+| Peaking | 149 Hz   |  1.18 | -2.1 dB  |
+| Peaking | 644 Hz   |  1.21 | 1.1 dB   |
+| Peaking | 5784 Hz  | 12.79 | -4.1 dB  |
+| Peaking | 12669 Hz |  4.07 | 2.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20SR%2080/Grado%20SR%2080.png)

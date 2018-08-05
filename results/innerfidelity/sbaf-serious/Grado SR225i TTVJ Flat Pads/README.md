@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 29 Hz    | 0.65 | 7.1 dB  |
-| Peaking | 128 Hz   | 0.47 | -3.3 dB |
-| Peaking | 2104 Hz  | 4.07 | -7.1 dB |
-| Peaking | 5349 Hz  | 0.79 | 7.8 dB  |
-| Peaking | 8170 Hz  | 1.75 | -6.6 dB |
-| Peaking | 7 Hz     | 0.82 | 0.6 dB  |
-| Peaking | 1488 Hz  | 6.67 | -1.3 dB |
-| Peaking | 2920 Hz  | 6.52 | 1.0 dB  |
-| Peaking | 10116 Hz | 5.98 | 0.7 dB  |
-| Peaking | 13516 Hz | 0.98 | -0.4 dB |
+| Peaking | 30 Hz    | 0.65 | 7.1 dB  |
+| Peaking | 128 Hz   | 0.48 | -3.3 dB |
+| Peaking | 2101 Hz  | 4.07 | -7.1 dB |
+| Peaking | 5347 Hz  | 0.79 | 7.8 dB  |
+| Peaking | 8173 Hz  | 1.75 | -6.6 dB |
+| Peaking | 4 Hz     | 1.36 | 0.5 dB  |
+| Peaking | 1496 Hz  | 6.75 | -1.3 dB |
+| Peaking | 2929 Hz  | 6.63 | 1.0 dB  |
+| Peaking | 10095 Hz | 5.55 | 0.7 dB  |
+| Peaking | 13460 Hz | 0.97 | -0.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i%20TTVJ%20Flat%20Pads/Grado%20SR225i%20TTVJ%20Flat%20Pads.png)

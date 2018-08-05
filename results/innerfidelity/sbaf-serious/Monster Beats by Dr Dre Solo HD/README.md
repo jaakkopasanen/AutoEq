@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 118 Hz  | 0.99 | -7.2 dB |
 | Peaking | 2921 Hz | 1.32 | 5.2 dB  |
 | Peaking | 5895 Hz | 3.87 | 5.7 dB  |
-| Peaking | 65 Hz   | 4.43 | 5.0 dB  |
-| Peaking | 82 Hz   | 3.14 | -3.6 dB |
-| Peaking | 113 Hz  | 5.43 | 3.2 dB  |
+| Peaking | 64 Hz   | 4.42 | 5.0 dB  |
+| Peaking | 80 Hz   | 3.14 | -3.6 dB |
+| Peaking | 115 Hz  | 5.42 | 3.2 dB  |
 | Peaking | 413 Hz  | 0.59 | -3.7 dB |
-| Peaking | 479 Hz  | 1.35 | 7.7 dB  |
+| Peaking | 477 Hz  | 1.36 | 7.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Beats%20by%20Dr%20Dre%20Solo%20HD/Monster%20Beats%20by%20Dr%20Dre%20Solo%20HD.png)

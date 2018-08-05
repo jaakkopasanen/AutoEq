@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 5747 Hz  | 1.23 | 6.8 dB  |
 | Peaking | 8810 Hz  | 2.96 | -9.8 dB |
 | Peaking | 379 Hz   | 0.74 | -1.7 dB |
-| Peaking | 1764 Hz  | 2.48 | -1.5 dB |
-| Peaking | 2488 Hz  | 6.77 | 1.4 dB  |
-| Peaking | 1976 Hz  | 3.92 | 0.7 dB  |
-| Peaking | 25844 Hz | 1.59 | 0.3 dB  |
+| Peaking | 1753 Hz  | 2.48 | -1.5 dB |
+| Peaking | 2473 Hz  | 6.76 | 1.3 dB  |
+| Peaking | 1995 Hz  | 3.92 | 0.7 dB  |
+| Peaking | 25845 Hz | 1.59 | 0.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Teac%20CT-H02/Teac%20CT-H02.png)

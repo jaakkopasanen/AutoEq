@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 36 Hz   | 0.57 | 6.7 dB  |
-| Peaking | 350 Hz  | 0.96 | 2.9 dB  |
+| Peaking | 36 Hz   | 0.57 | 6.8 dB  |
+| Peaking | 352 Hz  | 0.96 | 2.9 dB  |
 | Peaking | 8970 Hz | 4.84 | -5.5 dB |
 | Peaking | 3748 Hz | 6.83 | 5.9 dB  |
 | Peaking | 5770 Hz | 2.64 | 6.8 dB  |
-| Peaking | 65 Hz   | 3.7  | 1.4 dB  |
-| Peaking | 122 Hz  | 1.92 | -0.9 dB |
-| Peaking | 938 Hz  | 2.61 | -3.8 dB |
-| Peaking | 1236 Hz | 1.29 | 3.9 dB  |
-| Peaking | 2424 Hz | 3.41 | -5.4 dB |
+| Peaking | 66 Hz   | 3.74 | 1.4 dB  |
+| Peaking | 123 Hz  | 1.99 | -0.9 dB |
+| Peaking | 954 Hz  | 2.62 | -3.7 dB |
+| Peaking | 1235 Hz | 1.3  | 3.9 dB  |
+| Peaking | 2417 Hz | 3.42 | -5.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDRV-SA5000/Sony%20MDRV-SA5000.png)

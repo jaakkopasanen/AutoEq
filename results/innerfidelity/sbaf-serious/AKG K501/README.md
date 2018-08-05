@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 38 Hz   | 0.51 | 6.7 dB  |
+| Peaking | 38 Hz   | 0.52 | 6.7 dB  |
 | Peaking | 747 Hz  | 1.52 | 1.9 dB  |
-| Peaking | 1640 Hz | 1.4  | -3.1 dB |
-| Peaking | 3438 Hz | 3.19 | -1.8 dB |
+| Peaking | 1638 Hz | 1.4  | -3.1 dB |
+| Peaking | 3436 Hz | 3.19 | -1.8 dB |
 | Peaking | 8499 Hz | 3.57 | -3.7 dB |
-| Peaking | 39 Hz   | 2.99 | -0.9 dB |
-| Peaking | 79 Hz   | 3.06 | 1.5 dB  |
-| Peaking | 140 Hz  | 1.82 | -1.0 dB |
-| Peaking | 5481 Hz | 5.29 | 2.9 dB  |
-| Peaking | 6217 Hz | 8.92 | -5.4 dB |
+| Peaking | 38 Hz   | 2.81 | -0.7 dB |
+| Peaking | 80 Hz   | 3.07 | 1.4 dB  |
+| Peaking | 144 Hz  | 1.83 | -1.0 dB |
+| Peaking | 5562 Hz | 5.32 | 2.9 dB  |
+| Peaking | 6284 Hz | 8.93 | -5.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K501/AKG%20K501.png)

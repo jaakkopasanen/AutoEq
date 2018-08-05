@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 44 Hz   | 1.42 | -3.4 dB |
-| Peaking | 128 Hz  | 2.14 | -5.0 dB |
-| Peaking | 3528 Hz | 4.08 | 2.7 dB  |
-| Peaking | 5952 Hz | 8.34 | 4.2 dB  |
-| Peaking | 8897 Hz | 4.56 | -3.7 dB |
-| Peaking | 84 Hz   | 4.29 | 3.1 dB  |
-| Peaking | 87 Hz   | 1.37 | -2.4 dB |
-| Peaking | 203 Hz  | 1.15 | -2.3 dB |
-| Peaking | 252 Hz  | 0.41 | 2.3 dB  |
-| Peaking | 1709 Hz | 1.67 | -1.0 dB |
+| Peaking | 129 Hz  | 2.13 | -5.0 dB |
+| Peaking | 3518 Hz | 4.09 | 2.7 dB  |
+| Peaking | 5974 Hz | 8.27 | 4.2 dB  |
+| Peaking | 8927 Hz | 4.55 | -3.7 dB |
+| Peaking | 86 Hz   | 4.04 | 3.6 dB  |
+| Peaking | 89 Hz   | 1.59 | -2.9 dB |
+| Peaking | 208 Hz  | 1.09 | -2.6 dB |
+| Peaking | 233 Hz  | 0.42 | 2.6 dB  |
+| Peaking | 1733 Hz | 1.67 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20250%20II/Sennheiser%20HD%20250%20II.png)

@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 3756 Hz | 1    | 7.9 dB  |
 | Peaking | 6372 Hz | 5.77 | 3.5 dB  |
 | Peaking | 9051 Hz | 4.71 | -9.6 dB |
-| Peaking | 17 Hz   | 2.22 | 1.1 dB  |
-| Peaking | 304 Hz  | 2.44 | 3.7 dB  |
-| Peaking | 464 Hz  | 1.55 | -4.2 dB |
-| Peaking | 1581 Hz | 6.27 | -1.2 dB |
-| Peaking | 1236 Hz | 3.22 | 2.0 dB  |
+| Peaking | 18 Hz   | 2.46 | 0.9 dB  |
+| Peaking | 305 Hz  | 2.43 | 3.7 dB  |
+| Peaking | 464 Hz  | 1.54 | -4.2 dB |
+| Peaking | 1567 Hz | 5.51 | -1.2 dB |
+| Peaking | 1244 Hz | 3.07 | 2.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-7509HD/Sony%20MDR-7509HD.png)

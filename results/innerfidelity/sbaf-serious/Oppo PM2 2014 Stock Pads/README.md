@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 0.92 | 3.7 dB  |
-| Peaking | 61 Hz   | 1.85 | 2.8 dB  |
-| Peaking | 1852 Hz | 1.63 | -2.8 dB |
-| Peaking | 3115 Hz | 1.97 | 2.8 dB  |
+| Peaking | 23 Hz   | 0.89 | 3.7 dB  |
+| Peaking | 60 Hz   | 1.85 | 2.8 dB  |
+| Peaking | 1851 Hz | 1.63 | -2.8 dB |
+| Peaking | 3116 Hz | 1.97 | 2.8 dB  |
 | Peaking | 5694 Hz | 3    | 6.6 dB  |
-| Peaking | 90 Hz   | 3.71 | 0.7 dB  |
-| Peaking | 242 Hz  | 1.29 | -2.8 dB |
-| Peaking | 390 Hz  | 0.81 | 2.4 dB  |
-| Peaking | 549 Hz  | 2    | -2.5 dB |
-| Peaking | 8781 Hz | 4.87 | -1.7 dB |
+| Peaking | 90 Hz   | 3.71 | 0.8 dB  |
+| Peaking | 240 Hz  | 1.27 | -2.9 dB |
+| Peaking | 388 Hz  | 0.82 | 2.4 dB  |
+| Peaking | 550 Hz  | 2    | -2.5 dB |
+| Peaking | 8787 Hz | 4.87 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM2%202014%20Stock%20Pads/Oppo%20PM2%202014%20Stock%20Pads.png)

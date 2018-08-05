@@ -1,4 +1,4 @@
-# beyerdynamic DT 880
+# Beyerdynamic DT 880
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.3dB` and instead set Global volume in the UI for both channels to **-63**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `beyerdynamic DT 880 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 880 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 186 Hz   | 0.79 | -2.4 dB |
 | Peaking | 7887 Hz  | 1.67 | -5.0 dB |
 | Peaking | 20024 Hz | 1.15 | -9.2 dB |
-| Peaking | 1262 Hz  | 4.11 | 1.1 dB  |
-| Peaking | 6997 Hz  | 1.75 | 5.1 dB  |
-| Peaking | 5985 Hz  | 4.79 | -5.9 dB |
-| Peaking | 8886 Hz  | 1.94 | -4.9 dB |
-| Peaking | 10932 Hz | 2.58 | 3.5 dB  |
+| Peaking | 1270 Hz  | 4.11 | 1.1 dB  |
+| Peaking | 6983 Hz  | 1.75 | 5.1 dB  |
+| Peaking | 6005 Hz  | 4.81 | -5.9 dB |
+| Peaking | 8846 Hz  | 1.95 | -4.9 dB |
+| Peaking | 10977 Hz | 2.6  | 3.5 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/beyerdynamic%20DT%20880/beyerdynamic%20DT%20880.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20880/Beyerdynamic%20DT%20880.png)

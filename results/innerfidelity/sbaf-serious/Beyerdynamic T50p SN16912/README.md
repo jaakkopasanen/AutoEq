@@ -1,4 +1,4 @@
-# Beyerdynamic T50p SN16912
+# Beyerdynamic T50p sn16912
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T50p SN16912 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T50p sn16912 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 308 Hz   | 0.74 | -5.8 dB |
 | Peaking | 4249 Hz  | 0.68 | 7.1 dB  |
 | Peaking | 8675 Hz  | 2.61 | -4.6 dB |
-| Peaking | 1754 Hz  | 3.01 | -2.0 dB |
+| Peaking | 1755 Hz  | 3.01 | -2.0 dB |
 | Peaking | 2499 Hz  | 3.54 | 2.4 dB  |
 | Peaking | 4145 Hz  | 2.77 | -1.0 dB |
-| Peaking | 6122 Hz  | 5.98 | 1.7 dB  |
-| Peaking | 13445 Hz | 1.52 | -0.6 dB |
+| Peaking | 6143 Hz  | 5.98 | 1.7 dB  |
+| Peaking | 13446 Hz | 1.52 | -0.6 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T50p%20SN16912/Beyerdynamic%20T50p%20SN16912.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T50p%20sn16912/Beyerdynamic%20T50p%20sn16912.png)

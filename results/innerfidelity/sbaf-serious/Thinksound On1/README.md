@@ -1,4 +1,4 @@
-# thinksound On1
+# Thinksound On1
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.5dB` and instead set Global volume in the UI for both channels to **-65**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `thinksound On1 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Thinksound On1 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
@@ -26,8 +26,8 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2739 Hz  | 2.17 | 5.4 dB  |
 | Peaking | 5132 Hz  | 2    | 5.4 dB  |
 | Peaking | 8183 Hz  | 2.4  | -2.2 dB |
-| Peaking | 1728 Hz  | 2.07 | -1.0 dB |
+| Peaking | 1728 Hz  | 2.07 | -0.9 dB |
 | Peaking | 2056 Hz  | 7.2  | 1.9 dB  |
-| Peaking | 13267 Hz | 8.77 | -1.4 dB |
+| Peaking | 13283 Hz | 8.77 | -1.4 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/thinksound%20On1/thinksound%20On1.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Thinksound%20On1/Thinksound%20On1.png)

@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 9 Hz    | 0.4  | 3.9 dB  |
-| Peaking | 145 Hz  | 0.63 | -7.0 dB |
-| Peaking | 1579 Hz | 8.8  | 4.0 dB  |
-| Peaking | 5412 Hz | 1.44 | 7.5 dB  |
-| Peaking | 8358 Hz | 2.65 | -5.3 dB |
-| Peaking | 270 Hz  | 3.47 | 0.8 dB  |
-| Peaking | 598 Hz  | 2.04 | -1.0 dB |
-| Peaking | 2346 Hz | 5.8  | -1.5 dB |
-| Peaking | 3813 Hz | 5.27 | 2.1 dB  |
-| Peaking | 3362 Hz | 3.67 | -1.2 dB |
+| Peaking | 9 Hz    | 0.39 | 3.9 dB  |
+| Peaking | 144 Hz  | 0.62 | -7.0 dB |
+| Peaking | 1578 Hz | 8.8  | 4.0 dB  |
+| Peaking | 5413 Hz | 1.44 | 7.5 dB  |
+| Peaking | 8351 Hz | 2.65 | -5.3 dB |
+| Peaking | 270 Hz  | 3.44 | 0.8 dB  |
+| Peaking | 599 Hz  | 2.06 | -1.0 dB |
+| Peaking | 2359 Hz | 5.82 | -1.5 dB |
+| Peaking | 3847 Hz | 5.28 | 2.1 dB  |
+| Peaking | 3356 Hz | 3.68 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/ZMF%20Atticus/ZMF%20Atticus.png)

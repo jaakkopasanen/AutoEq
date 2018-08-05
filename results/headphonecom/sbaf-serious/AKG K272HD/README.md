@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 33 Hz   | 0.8  | 6.9 dB  |
-| Peaking | 1849 Hz | 1.74 | -9.3 dB |
-| Peaking | 2192 Hz | 2.28 | 8.5 dB  |
-| Peaking | 5189 Hz | 0.96 | 5.9 dB  |
-| Peaking | 9348 Hz | 3.58 | -9.1 dB |
-| Peaking | 99 Hz   | 4.23 | 3.2 dB  |
-| Peaking | 147 Hz  | 2.11 | -2.8 dB |
-| Peaking | 549 Hz  | 0.93 | -2.3 dB |
-| Peaking | 659 Hz  | 5.4  | -3.8 dB |
-| Peaking | 765 Hz  | 1.62 | 3.4 dB  |
+| Peaking | 1844 Hz | 1.76 | -8.6 dB |
+| Peaking | 2192 Hz | 2.38 | 7.7 dB  |
+| Peaking | 5185 Hz | 0.96 | 5.9 dB  |
+| Peaking | 9274 Hz | 3.58 | -9.1 dB |
+| Peaking | 99 Hz   | 4.21 | 3.2 dB  |
+| Peaking | 148 Hz  | 2.11 | -2.8 dB |
+| Peaking | 540 Hz  | 0.94 | -2.2 dB |
+| Peaking | 659 Hz  | 5.22 | -4.0 dB |
+| Peaking | 761 Hz  | 1.73 | 3.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K272HD/AKG%20K272HD.png)

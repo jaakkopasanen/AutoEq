@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 34 Hz    | 1.05 | 7.3 dB   |
-| Peaking | 514 Hz   | 1.58 | 7.1 dB   |
-| Peaking | 5208 Hz  | 1.52 | 7.6 dB   |
-| Peaking | 8493 Hz  | 4.77 | -10.0 dB |
-| Peaking | 16703 Hz | 2.25 | -7.4 dB  |
-| Peaking | 64 Hz    | 2.82 | 5.0 dB   |
-| Peaking | 77 Hz    | 6.27 | -7.0 dB  |
-| Peaking | 116 Hz   | 2.35 | -2.4 dB  |
-| Peaking | 737 Hz   | 5.27 | 3.4 dB   |
+| Peaking | 515 Hz   | 1.58 | 7.1 dB   |
+| Peaking | 5213 Hz  | 1.52 | 7.6 dB   |
+| Peaking | 8522 Hz  | 4.77 | -10.0 dB |
+| Peaking | 16701 Hz | 2.25 | -7.4 dB  |
+| Peaking | 66 Hz    | 2.81 | 5.1 dB   |
+| Peaking | 78 Hz    | 6.27 | -7.1 dB  |
+| Peaking | 119 Hz   | 2.33 | -2.4 dB  |
+| Peaking | 736 Hz   | 5.29 | 3.4 dB   |
 | Peaking | 1748 Hz  | 2.19 | -6.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%2048%20E%20pad%20holes%20c/Beyerdynamic%20DT%2048%20E%20pad%20holes%20c.png)

@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 355 Hz  | 2.32 | 2.0 dB  |
 | Peaking | 3680 Hz | 0.84 | 6.9 dB  |
 | Peaking | 987 Hz  | 1.18 | -0.9 dB |
-| Peaking | 2373 Hz | 3.93 | 2.0 dB  |
-| Peaking | 3681 Hz | 2.85 | -1.1 dB |
-| Peaking | 6256 Hz | 2.38 | 5.3 dB  |
-| Peaking | 7397 Hz | 1.5  | -4.1 dB |
+| Peaking | 2374 Hz | 3.93 | 2.0 dB  |
+| Peaking | 3678 Hz | 2.86 | -1.1 dB |
+| Peaking | 6241 Hz | 2.42 | 5.1 dB  |
+| Peaking | 7448 Hz | 1.51 | -3.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Hesh%202/Skullcandy%20Hesh%202.png)

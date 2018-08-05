@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Beats Solo3 Wired ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 31 Hz   | 0.21 | -5.9 dB |
 | Peaking | 190 Hz  | 0.87 | -6.1 dB |
-| Peaking | 1676 Hz | 4.58 | -1.4 dB |
-| Peaking | 4255 Hz | 1.11 | -2.6 dB |
-| Peaking | 5943 Hz | 2.81 | 4.2 dB  |
-| Peaking | 315 Hz  | 3.09 | -0.7 dB |
-| Peaking | 755 Hz  | 2.39 | 1.6 dB  |
-| Peaking | 3462 Hz | 5    | -1.4 dB |
-| Peaking | 4022 Hz | 6.53 | 2.5 dB  |
-| Peaking | 4617 Hz | 8.91 | -1.8 dB |
+| Peaking | 1677 Hz | 4.58 | -1.4 dB |
+| Peaking | 4255 Hz | 1.12 | -2.6 dB |
+| Peaking | 5961 Hz | 2.8  | 4.1 dB  |
+| Peaking | 193 Hz  | 1.99 | 1.8 dB  |
+| Peaking | 217 Hz  | 0.99 | -1.4 dB |
+| Peaking | 748 Hz  | 2.15 | 1.6 dB  |
+| Peaking | 4051 Hz | 2.78 | -2.2 dB |
+| Peaking | 3969 Hz | 7.46 | 4.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beats%20Solo3%20Wired/Beats%20Solo3%20Wired.png)

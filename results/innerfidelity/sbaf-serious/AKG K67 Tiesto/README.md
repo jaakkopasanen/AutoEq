@@ -28,8 +28,8 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 3282 Hz | 0.89 | 7.1 dB  |
 | Peaking | 2672 Hz | 2.84 | 0.9 dB  |
 | Peaking | 3144 Hz | 4.66 | -0.6 dB |
-| Peaking | 6572 Hz | 4.34 | 5.6 dB  |
-| Peaking | 4917 Hz | 3.33 | 3.9 dB  |
-| Peaking | 6025 Hz | 1.44 | -4.9 dB |
+| Peaking | 6573 Hz | 4.34 | 5.6 dB  |
+| Peaking | 4916 Hz | 3.33 | 3.9 dB  |
+| Peaking | 6024 Hz | 1.44 | -4.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K67%20Tiesto/AKG%20K67%20Tiesto.png)

@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1463 Hz  | 2.01 | 5.6 dB  |
 | Peaking | 3252 Hz  | 4.27 | 5.6 dB  |
 | Peaking | 5533 Hz  | 2.51 | 6.5 dB  |
-| Peaking | 85 Hz    | 4.81 | 0.7 dB  |
-| Peaking | 5122 Hz  | 0.39 | 0.4 dB  |
-| Peaking | 2409 Hz  | 5.56 | -1.4 dB |
-| Peaking | 8708 Hz  | 2.6  | -1.5 dB |
-| Peaking | 32049 Hz | 4.35 | -1.7 dB |
+| Peaking | 84 Hz    | 4.82 | 0.8 dB  |
+| Peaking | 5122 Hz  | 0.4  | 0.4 dB  |
+| Peaking | 2402 Hz  | 5.56 | -1.4 dB |
+| Peaking | 8700 Hz  | 2.6  | -1.5 dB |
+| Peaking | 31973 Hz | 4.35 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20YH3%20Sn180629/Yamaha%20YH3%20Sn180629.png)

@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 314 Hz  | 1.19 | -5.7 dB |
 | Peaking | 3017 Hz | 2.09 | -8.1 dB |
 | Peaking | 1258 Hz | 2.87 | 2.8 dB  |
-| Peaking | 1895 Hz | 3.92 | -0.9 dB |
-| Peaking | 2277 Hz | 6.39 | -1.2 dB |
-| Peaking | 6620 Hz | 2.39 | 3.2 dB  |
-| Peaking | 7536 Hz | 2.42 | -3.8 dB |
+| Peaking | 1892 Hz | 3.92 | -0.9 dB |
+| Peaking | 2285 Hz | 6.39 | -1.2 dB |
+| Peaking | 6636 Hz | 2.36 | 3.4 dB  |
+| Peaking | 7521 Hz | 2.4  | -3.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20SP540/Koss%20SP540.png)

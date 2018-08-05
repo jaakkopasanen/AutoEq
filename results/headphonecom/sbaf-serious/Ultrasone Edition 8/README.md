@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2192 Hz | 4.96 | 8.5 dB  |
 | Peaking | 4022 Hz | 7.8  | -5.3 dB |
 | Peaking | 2055 Hz | 1.8  | -2.0 dB |
-| Peaking | 258 Hz  | 5.72 | -1.5 dB |
+| Peaking | 257 Hz  | 5.74 | -1.5 dB |
 | Peaking | 517 Hz  | 2.62 | 1.6 dB  |
-| Peaking | 8602 Hz | 3.04 | 1.1 dB  |
-| Peaking | 5564 Hz | 7.14 | 8.8 dB  |
-| Peaking | 6489 Hz | 2.82 | -6.4 dB |
+| Peaking | 8592 Hz | 3.02 | 1.1 dB  |
+| Peaking | 5550 Hz | 7.11 | 8.8 dB  |
+| Peaking | 6474 Hz | 2.81 | -6.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20Edition%208/Ultrasone%20Edition%208.png)

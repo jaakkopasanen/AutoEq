@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 0.96 | 5.1 dB  |
-| Peaking | 68 Hz   | 2.67 | 1.8 dB  |
+| Peaking | 23 Hz   | 0.98 | 5.1 dB  |
+| Peaking | 69 Hz   | 2.67 | 1.7 dB  |
 | Peaking | 1575 Hz | 2.78 | 3.8 dB  |
 | Peaking | 3560 Hz | 2.72 | 3.8 dB  |
 | Peaking | 5631 Hz | 2.72 | 6.2 dB  |
-| Peaking | 91 Hz   | 3.05 | 1.4 dB  |
-| Peaking | 417 Hz  | 0.25 | -1.6 dB |
-| Peaking | 1239 Hz | 3.94 | 1.8 dB  |
-| Peaking | 2825 Hz | 0.43 | 0.4 dB  |
-| Peaking | 8338 Hz | 3.61 | -1.3 dB |
+| Peaking | 75 Hz   | 0.84 | 1.4 dB  |
+| Peaking | 321 Hz  | 0.21 | -1.7 dB |
+| Peaking | 1242 Hz | 3.98 | 1.8 dB  |
+| Peaking | 2822 Hz | 0.41 | 0.4 dB  |
+| Peaking | 8327 Hz | 3.59 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20HP1%20Sn051712/Yamaha%20HP1%20Sn051712.png)

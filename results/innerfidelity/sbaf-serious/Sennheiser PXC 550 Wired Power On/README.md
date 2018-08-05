@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 6255 Hz | 6.06 | 6.4 dB  |
 | Peaking | 4090 Hz | 5.12 | 5.0 dB  |
 | Peaking | 9229 Hz | 5.43 | -6.2 dB |
-| Peaking | 8 Hz    | 0.62 | 2.0 dB  |
-| Peaking | 39 Hz   | 1.75 | -1.5 dB |
-| Peaking | 1796 Hz | 1.28 | -6.6 dB |
-| Peaking | 2184 Hz | 0.64 | 4.3 dB  |
-| Peaking | 4956 Hz | 9.04 | -6.4 dB |
+| Peaking | 8 Hz    | 0.65 | 2.0 dB  |
+| Peaking | 41 Hz   | 1.83 | -1.5 dB |
+| Peaking | 1796 Hz | 1.27 | -6.6 dB |
+| Peaking | 2178 Hz | 0.64 | 4.3 dB  |
+| Peaking | 4980 Hz | 9.05 | -6.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PXC%20550%20Wired%20Power%20On/Sennheiser%20PXC%20550%20Wired%20Power%20On.png)

@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 30 Hz   | 0.46 | -4.0 dB |
-| Peaking | 130 Hz  | 1.76 | -5.4 dB |
+| Peaking | 131 Hz  | 1.76 | -5.4 dB |
 | Peaking | 2029 Hz | 1.42 | -3.6 dB |
-| Peaking | 4509 Hz | 1.68 | 7.2 dB  |
-| Peaking | 9294 Hz | 6.29 | -6.1 dB |
-| Peaking | 449 Hz  | 6.34 | 1.0 dB  |
-| Peaking | 189 Hz  | 3.64 | -2.1 dB |
-| Peaking | 261 Hz  | 3.24 | 3.6 dB  |
-| Peaking | 974 Hz  | 3.24 | 0.7 dB  |
-| Peaking | 2864 Hz | 7.89 | -1.1 dB |
+| Peaking | 4510 Hz | 1.68 | 7.2 dB  |
+| Peaking | 9341 Hz | 6.29 | -6.1 dB |
+| Peaking | 447 Hz  | 6.21 | 1.0 dB  |
+| Peaking | 190 Hz  | 3.56 | -2.1 dB |
+| Peaking | 262 Hz  | 3.25 | 3.6 dB  |
+| Peaking | 974 Hz  | 3.26 | 0.7 dB  |
+| Peaking | 2866 Hz | 7.96 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D600/Denon%20AH-D600.png)

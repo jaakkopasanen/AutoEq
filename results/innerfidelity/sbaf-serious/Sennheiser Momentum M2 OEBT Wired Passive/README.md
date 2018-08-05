@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 12 Hz   | 1.67 | -3.7 dB |
+| Peaking | 12 Hz   | 1.66 | -3.7 dB |
 | Peaking | 60 Hz   | 0.68 | -4.4 dB |
-| Peaking | 151 Hz  | 1.82 | -7.2 dB |
+| Peaking | 150 Hz  | 1.81 | -7.2 dB |
 | Peaking | 4137 Hz | 4.46 | 6.9 dB  |
 | Peaking | 9084 Hz | 5    | -5.9 dB |
-| Peaking | 203 Hz  | 4.75 | -2.1 dB |
+| Peaking | 203 Hz  | 4.75 | -2.2 dB |
 | Peaking | 308 Hz  | 2.97 | 2.4 dB  |
-| Peaking | 822 Hz  | 0.7  | 1.0 dB  |
-| Peaking | 2148 Hz | 1.19 | -6.2 dB |
-| Peaking | 3024 Hz | 0.81 | 2.7 dB  |
+| Peaking | 813 Hz  | 0.7  | 1.0 dB  |
+| Peaking | 2149 Hz | 1.19 | -6.2 dB |
+| Peaking | 3021 Hz | 0.81 | 2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20M2%20OEBT%20Wired%20Passive/Sennheiser%20Momentum%20M2%20OEBT%20Wired%20Passive.png)

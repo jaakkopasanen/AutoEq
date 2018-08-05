@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 143 Hz  | 0.59 | -5.3 dB |
 | Peaking | 497 Hz  | 1.73 | 5.1 dB  |
 | Peaking | 3066 Hz | 2.41 | 6.3 dB  |
-| Peaking | 19 Hz   | 0.33 | 0.3 dB  |
-| Peaking | 3835 Hz | 6.58 | 3.4 dB  |
-| Peaking | 2655 Hz | 4.48 | -1.8 dB |
-| Peaking | 2486 Hz | 7.72 | 3.7 dB  |
-| Peaking | 5660 Hz | 1.77 | -2.9 dB |
+| Peaking | 14 Hz   | 0.36 | 0.3 dB  |
+| Peaking | 3863 Hz | 6.58 | 3.4 dB  |
+| Peaking | 2675 Hz | 4.49 | -1.8 dB |
+| Peaking | 2470 Hz | 7.72 | 3.7 dB  |
+| Peaking | 5663 Hz | 1.77 | -2.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fostex%20TH600/Fostex%20TH600.png)

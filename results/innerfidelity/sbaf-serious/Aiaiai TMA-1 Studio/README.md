@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 23 Hz   | 1.3  | 6.7 dB  |
+| Peaking | 24 Hz   | 1.28 | 6.7 dB  |
 | Peaking | 167 Hz  | 0.43 | -3.3 dB |
-| Peaking | 712 Hz  | 3.6  | 2.4 dB  |
-| Peaking | 2698 Hz | 1.19 | 6.2 dB  |
+| Peaking | 722 Hz  | 3.6  | 2.4 dB  |
+| Peaking | 2696 Hz | 1.19 | 6.2 dB  |
 | Peaking | 5302 Hz | 2.34 | 5.2 dB  |
-| Peaking | 1086 Hz | 7.08 | -1.0 dB |
-| Peaking | 2076 Hz | 6.14 | 0.6 dB  |
-| Peaking | 6455 Hz | 7.79 | 2.1 dB  |
-| Peaking | 6186 Hz | 6.85 | 1.3 dB  |
-| Peaking | 7384 Hz | 2.14 | -1.9 dB |
+| Peaking | 6 Hz    | 1.02 | 0.6 dB  |
+| Peaking | 1086 Hz | 6.57 | -1.0 dB |
+| Peaking | 2074 Hz | 5.87 | 0.6 dB  |
+| Peaking | 6356 Hz | 6.81 | 3.1 dB  |
+| Peaking | 7400 Hz | 2.15 | -2.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Aiaiai%20TMA-1%20Studio/Aiaiai%20TMA-1%20Studio.png)

@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado PS500 Para
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 25 Hz   |  1.1  | 6.8 dB  |
-| Peaking | 114 Hz  |  0.78 | -4.9 dB |
-| Peaking | 2053 Hz |  1.86 | -7.0 dB |
-| Peaking | 3095 Hz |  1.72 | 7.9 dB  |
-| Peaking | 5543 Hz |  2.93 | 5.7 dB  |
-| Peaking | 2 Hz    |  0.99 | 0.2 dB  |
-| Peaking | 651 Hz  |  1.36 | 1.5 dB  |
-| Peaking | 1478 Hz |  6.2  | -1.8 dB |
-| Peaking | 6505 Hz | 10.34 | 2.2 dB  |
-| Peaking | 9344 Hz |  5.59 | -4.8 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 25 Hz   | 1.1  | 6.8 dB  |
+| Peaking | 114 Hz  | 0.78 | -4.9 dB |
+| Peaking | 2053 Hz | 1.86 | -7.0 dB |
+| Peaking | 3095 Hz | 1.72 | 7.9 dB  |
+| Peaking | 5543 Hz | 2.93 | 5.7 dB  |
+| Peaking | 4 Hz    | 1.54 | -0.4 dB |
+| Peaking | 652 Hz  | 1.35 | 1.5 dB  |
+| Peaking | 1478 Hz | 6.17 | -1.8 dB |
+| Peaking | 6574 Hz | 9.2  | 2.1 dB  |
+| Peaking | 9431 Hz | 5.53 | -4.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20PS500/Grado%20PS500.png)

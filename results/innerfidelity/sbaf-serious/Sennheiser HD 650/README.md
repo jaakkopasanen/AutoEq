@@ -21,14 +21,14 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 0.61 | 6.2 dB  |
-| Peaking | 74 Hz   | 2.66 | 1.7 dB  |
+| Peaking | 22 Hz   | 0.59 | 6.1 dB  |
+| Peaking | 74 Hz   | 2.63 | 1.7 dB  |
 | Peaking | 172 Hz  | 0.66 | -3.0 dB |
-| Peaking | 3373 Hz | 0.37 | -1.2 dB |
+| Peaking | 3383 Hz | 0.38 | -1.2 dB |
 | Peaking | 5834 Hz | 2.98 | 7.0 dB  |
-| Peaking | 873 Hz  | 1.85 | 0.4 dB  |
-| Peaking | 1653 Hz | 2.28 | -0.9 dB |
-| Peaking | 2709 Hz | 2.68 | 1.7 dB  |
-| Peaking | 3155 Hz | 2.5  | -1.1 dB |
+| Peaking | 871 Hz  | 1.86 | 0.4 dB  |
+| Peaking | 1645 Hz | 2.3  | -0.9 dB |
+| Peaking | 2716 Hz | 2.71 | 1.9 dB  |
+| Peaking | 3121 Hz | 2.5  | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)

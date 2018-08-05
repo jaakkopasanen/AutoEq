@@ -1,4 +1,4 @@
-# Beyerdynamic T5p SN2866
+# Beyerdynamic T5p sn2866
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.5dB` and instead set Global volume in the UI for both channels to **-65**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T5p SN2866 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T5p sn2866 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
@@ -32,4 +32,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 317 Hz  | 0.1  | -0.2 dB |
 | Peaking | 2768 Hz | 3.89 | 0.3 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T5p%20SN2866/Beyerdynamic%20T5p%20SN2866.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T5p%20sn2866/Beyerdynamic%20T5p%20sn2866.png)

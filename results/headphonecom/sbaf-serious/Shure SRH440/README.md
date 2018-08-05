@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 39 Hz   | 0.47 | 6.7 dB  |
-| Peaking | 1760 Hz | 2.79 | -3.4 dB |
+| Peaking | 1759 Hz | 2.79 | -3.4 dB |
 | Peaking | 2826 Hz | 2.34 | 2.4 dB  |
 | Peaking | 6165 Hz | 2.15 | 5.0 dB  |
 | Peaking | 9705 Hz | 3.74 | -8.0 dB |
-| Peaking | 41 Hz   | 2.48 | -0.8 dB |
-| Peaking | 78 Hz   | 2.94 | 2.0 dB  |
-| Peaking | 135 Hz  | 1.22 | -1.4 dB |
-| Peaking | 241 Hz  | 1.32 | 1.5 dB  |
-| Peaking | 394 Hz  | 1.36 | -1.2 dB |
+| Peaking | 41 Hz   | 2.55 | -0.9 dB |
+| Peaking | 76 Hz   | 2.94 | 2.0 dB  |
+| Peaking | 138 Hz  | 1.25 | -1.3 dB |
+| Peaking | 234 Hz  | 1.39 | 1.5 dB  |
+| Peaking | 394 Hz  | 1.43 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Shure%20SRH440/Shure%20SRH440.png)

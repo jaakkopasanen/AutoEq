@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 13 Hz   |  0.87 | 6.9 dB  |
+| Peaking | 13 Hz   |  0.86 | 6.9 dB  |
 | Peaking | 69 Hz   |  0.09 | 2.3 dB  |
-| Peaking | 3327 Hz |  2.86 | 4.0 dB  |
-| Peaking | 6315 Hz |  6.75 | 5.4 dB  |
-| Peaking | 9002 Hz |  4.39 | -5.1 dB |
-| Peaking | 184 Hz  |  1.97 | -2.1 dB |
-| Peaking | 429 Hz  |  1.12 | 1.7 dB  |
-| Peaking | 1582 Hz |  2.59 | -2.7 dB |
-| Peaking | 4310 Hz |  9.42 | 6.0 dB  |
-| Peaking | 4974 Hz | 10.23 | -7.3 dB |
+| Peaking | 3324 Hz |  2.86 | 4.0 dB  |
+| Peaking | 6334 Hz |  6.75 | 5.4 dB  |
+| Peaking | 9031 Hz |  4.39 | -5.1 dB |
+| Peaking | 184 Hz  |  1.94 | -2.1 dB |
+| Peaking | 429 Hz  |  1.13 | 1.7 dB  |
+| Peaking | 1583 Hz |  2.59 | -2.7 dB |
+| Peaking | 4327 Hz |  9.5  | 6.0 dB  |
+| Peaking | 4993 Hz | 10.35 | -7.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PXC%20550%20Wires%20ANC%20Active/Sennheiser%20PXC%20550%20Wires%20ANC%20Active.png)

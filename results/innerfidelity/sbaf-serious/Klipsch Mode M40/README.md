@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 571 Hz  | 0.67 | 1.2 dB  |
 | Peaking | 1601 Hz | 2.05 | -9.5 dB |
 | Peaking | 3248 Hz | 0.7  | 7.7 dB  |
-| Peaking | 81 Hz   | 3.81 | 0.4 dB  |
-| Peaking | 2513 Hz | 4.22 | 2.0 dB  |
-| Peaking | 3172 Hz | 1.37 | -1.3 dB |
-| Peaking | 6305 Hz | 1.98 | 6.1 dB  |
-| Peaking | 7306 Hz | 1.44 | -5.0 dB |
+| Peaking | 85 Hz   | 3.76 | 0.5 dB  |
+| Peaking | 2537 Hz | 4.24 | 2.0 dB  |
+| Peaking | 3133 Hz | 1.39 | -1.3 dB |
+| Peaking | 6246 Hz | 2.01 | 6.0 dB  |
+| Peaking | 7404 Hz | 1.47 | -4.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Klipsch%20Mode%20M40/Klipsch%20Mode%20M40.png)

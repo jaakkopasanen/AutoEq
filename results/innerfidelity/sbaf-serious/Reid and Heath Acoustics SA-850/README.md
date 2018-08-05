@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 550 Hz  | 1.83 | -4.6 dB |
 | Peaking | 1562 Hz | 2.93 | -5.4 dB |
 | Peaking | 3177 Hz | 1.97 | 7.4 dB  |
-| Peaking | 42 Hz   | 2.46 | -1.3 dB |
-| Peaking | 92 Hz   | 2.64 | 1.1 dB  |
-| Peaking | 945 Hz  | 7.62 | 1.9 dB  |
-| Peaking | 4394 Hz | 3.79 | 8.7 dB  |
-| Peaking | 5065 Hz | 2    | -7.0 dB |
+| Peaking | 42 Hz   | 2.41 | -1.2 dB |
+| Peaking | 94 Hz   | 2.66 | 1.0 dB  |
+| Peaking | 946 Hz  | 7.62 | 1.8 dB  |
+| Peaking | 4383 Hz | 3.78 | 8.7 dB  |
+| Peaking | 5080 Hz | 2    | -7.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Reid%20and%20Heath%20Acoustics%20SA-850/Reid%20and%20Heath%20Acoustics%20SA-850.png)

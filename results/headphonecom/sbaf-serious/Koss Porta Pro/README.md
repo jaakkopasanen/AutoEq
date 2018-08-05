@@ -23,12 +23,12 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:---------|:-----|:--------|
 | Peaking | 25 Hz    | 0.86 | 6.9 dB  |
 | Peaking | 139 Hz   | 0.57 | -6.6 dB |
-| Peaking | 2042 Hz  | 1.13 | -9.8 dB |
-| Peaking | 3257 Hz  | 3.81 | 4.5 dB  |
-| Peaking | 2336 Hz  | 0.41 | 5.0 dB  |
-| Peaking | 4755 Hz  | 4.23 | -3.3 dB |
-| Peaking | 6056 Hz  | 3.44 | 5.3 dB  |
-| Peaking | 8843 Hz  | 3.48 | -3.7 dB |
-| Peaking | 30287 Hz | 3    | -2.4 dB |
+| Peaking | 2043 Hz  | 1.12 | -9.9 dB |
+| Peaking | 3259 Hz  | 3.82 | 4.5 dB  |
+| Peaking | 2334 Hz  | 0.42 | 5.1 dB  |
+| Peaking | 4746 Hz  | 4.5  | -3.2 dB |
+| Peaking | 6065 Hz  | 3.62 | 5.2 dB  |
+| Peaking | 8871 Hz  | 3.77 | -3.8 dB |
+| Peaking | 20200 Hz | 5.06 | -3.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20Porta%20Pro/Koss%20Porta%20Pro.png)

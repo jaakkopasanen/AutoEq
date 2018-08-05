@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 28 Hz    | 0.94 | 6.8 dB  |
-| Peaking | 154 Hz   | 0.95 | -4.0 dB |
+| Peaking | 158 Hz   | 0.95 | -4.0 dB |
 | Peaking | 1815 Hz  | 2.31 | -5.0 dB |
-| Peaking | 3504 Hz  | 1.31 | 6.9 dB  |
-| Peaking | 5966 Hz  | 4.32 | 4.5 dB  |
-| Peaking | 8 Hz     | 0.73 | 0.7 dB  |
-| Peaking | 234 Hz   | 3.84 | -1.3 dB |
-| Peaking | 591 Hz   | 1.24 | 1.1 dB  |
-| Peaking | 10065 Hz | 3.28 | -2.1 dB |
-| Peaking | 35719 Hz | 2.8  | -0.4 dB |
+| Peaking | 3505 Hz  | 1.31 | 6.9 dB  |
+| Peaking | 5957 Hz  | 4.35 | 4.5 dB  |
+| Peaking | 234 Hz   | 3.99 | -1.1 dB |
+| Peaking | 585 Hz   | 1.23 | 1.2 dB  |
+| Peaking | 5941 Hz  | 1.5  | 0.7 dB  |
+| Peaking | 11050 Hz | 1.35 | -3.2 dB |
+| Peaking | 11804 Hz | 3.6  | 2.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/California%20Headphone%20Lorado/California%20Headphone%20Lorado.png)

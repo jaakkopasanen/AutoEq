@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 20 Hz   |  0.7  | 4.3 dB  |
-| Peaking | 58 Hz   |  1.12 | 2.5 dB  |
+| Peaking | 20 Hz   |  0.71 | 4.3 dB  |
+| Peaking | 59 Hz   |  1.13 | 2.5 dB  |
 | Peaking | 1864 Hz |  1.72 | 2.4 dB  |
 | Peaking | 4533 Hz |  2.98 | -2.6 dB |
-| Peaking | 8529 Hz |  6.09 | -2.7 dB |
-| Peaking | 274 Hz  |  1.25 | -0.6 dB |
-| Peaking | 956 Hz  |  3.5  | -2.3 dB |
-| Peaking | 1065 Hz |  4.11 | 2.5 dB  |
-| Peaking | 3202 Hz | 10.58 | -1.4 dB |
-| Peaking | 6342 Hz | 19.45 | 2.7 dB  |
+| Peaking | 8528 Hz |  6.09 | -2.7 dB |
+| Peaking | 276 Hz  |  1.28 | -0.6 dB |
+| Peaking | 959 Hz  |  3.49 | -2.3 dB |
+| Peaking | 1062 Hz |  4.1  | 2.6 dB  |
+| Peaking | 3198 Hz | 10.73 | -1.4 dB |
+| Peaking | 6384 Hz | 19.84 | 2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20Sundara/HiFiMAN%20Sundara.png)

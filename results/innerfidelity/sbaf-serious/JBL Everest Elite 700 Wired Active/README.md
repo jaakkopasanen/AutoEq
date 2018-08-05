@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `JBL Everest Elit
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 33 Hz   | 1.61 | -4.3 dB |
-| Peaking | 291 Hz  | 0.04 | 1.0 dB  |
-| Peaking | 2216 Hz | 1.43 | -6.3 dB |
-| Peaking | 5454 Hz | 1.45 | 7.0 dB  |
-| Peaking | 8853 Hz | 2.79 | -5.0 dB |
-| Peaking | 48 Hz   | 2.99 | -1.0 dB |
-| Peaking | 76 Hz   | 2.89 | 1.4 dB  |
-| Peaking | 188 Hz  | 2.05 | -1.2 dB |
-| Peaking | 402 Hz  | 2.58 | 0.8 dB  |
-| Peaking | 1311 Hz | 7.72 | -0.3 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 33 Hz    | 1.61 | -4.3 dB |
+| Peaking | 294 Hz   | 0.04 | 1.0 dB  |
+| Peaking | 2220 Hz  | 1.43 | -6.3 dB |
+| Peaking | 5471 Hz  | 1.45 | 7.0 dB  |
+| Peaking | 8964 Hz  | 2.78 | -5.0 dB |
+| Peaking | 50 Hz    | 3.29 | -0.9 dB |
+| Peaking | 79 Hz    | 2.87 | 1.3 dB  |
+| Peaking | 186 Hz   | 2.08 | -1.2 dB |
+| Peaking | 402 Hz   | 2.85 | 0.8 dB  |
+| Peaking | 15805 Hz | 2.8  | -0.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/JBL%20Everest%20Elite%20700%20Wired%20Active/JBL%20Everest%20Elite%20700%20Wired%20Active.png)

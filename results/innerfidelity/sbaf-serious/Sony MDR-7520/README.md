@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2382 Hz | 1.49 | -11.5 dB |
 | Peaking | 4767 Hz | 0.95 | 8.6 dB   |
 | Peaking | 9184 Hz | 3.52 | -14.6 dB |
-| Peaking | 162 Hz  | 4.23 | -2.1 dB  |
-| Peaking | 287 Hz  | 1.88 | 1.9 dB   |
-| Peaking | 1027 Hz | 1.25 | 1.5 dB   |
+| Peaking | 163 Hz  | 4.23 | -2.1 dB  |
+| Peaking | 287 Hz  | 1.87 | 1.9 dB   |
+| Peaking | 1028 Hz | 1.25 | 1.5 dB   |
 | Peaking | 2164 Hz | 1.45 | -2.1 dB  |
-| Peaking | 2375 Hz | 5.22 | 3.0 dB   |
+| Peaking | 2374 Hz | 5.22 | 3.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-7520/Sony%20MDR-7520.png)

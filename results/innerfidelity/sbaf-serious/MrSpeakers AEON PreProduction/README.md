@@ -21,14 +21,14 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 120 Hz  | 4.26 | -2.5 dB |
+| Peaking | 120 Hz  | 4.27 | -2.5 dB |
 | Peaking | 1661 Hz | 2.74 | -2.4 dB |
 | Peaking | 2970 Hz | 3.42 | 3.2 dB  |
-| Peaking | 6062 Hz | 2.48 | 4.3 dB  |
-| Peaking | 8931 Hz | 4.57 | -4.3 dB |
-| Peaking | 25 Hz   | 0.83 | 1.1 dB  |
-| Peaking | 72 Hz   | 3.62 | 1.1 dB  |
-| Peaking | 852 Hz  | 2.14 | 1.3 dB  |
-| Peaking | 1036 Hz | 2.35 | -0.9 dB |
+| Peaking | 6063 Hz | 2.48 | 4.3 dB  |
+| Peaking | 8937 Hz | 4.57 | -4.3 dB |
+| Peaking | 23 Hz   | 0.77 | 1.1 dB  |
+| Peaking | 71 Hz   | 3.64 | 1.1 dB  |
+| Peaking | 859 Hz  | 2.16 | 1.3 dB  |
+| Peaking | 1028 Hz | 2.34 | -0.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20AEON%20PreProduction/MrSpeakers%20AEON%20PreProduction.png)

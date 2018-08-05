@@ -28,8 +28,8 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 5646 Hz | 2.91 | 4.8 dB  |
 | Peaking | 956 Hz  | 3.04 | -1.0 dB |
 | Peaking | 2143 Hz | 3.27 | 1.1 dB  |
-| Peaking | 2764 Hz | 3.05 | -1.0 dB |
-| Peaking | 3844 Hz | 5.18 | 1.2 dB  |
+| Peaking | 2766 Hz | 3.05 | -1.0 dB |
+| Peaking | 3853 Hz | 5.18 | 1.2 dB  |
 | Peaking | 8442 Hz | 3.45 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20O'Neil%20Bend/Philips%20O'Neil%20Bend.png)

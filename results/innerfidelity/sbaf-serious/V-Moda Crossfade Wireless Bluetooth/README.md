@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 47 Hz   | 1.8  | -2.7 dB |
-| Peaking | 153 Hz  | 0.67 | -7.3 dB |
-| Peaking | 423 Hz  | 1.19 | 8.3 dB  |
-| Peaking | 5747 Hz | 3.28 | 7.4 dB  |
+| Peaking | 46 Hz   | 1.81 | -2.7 dB |
+| Peaking | 154 Hz  | 0.67 | -7.2 dB |
+| Peaking | 425 Hz  | 1.19 | 8.3 dB  |
+| Peaking | 5748 Hz | 3.28 | 7.4 dB  |
 | Peaking | 9767 Hz | 4.07 | -5.6 dB |
-| Peaking | 445 Hz  | 6.81 | -1.4 dB |
-| Peaking | 672 Hz  | 2.16 | 1.9 dB  |
-| Peaking | 1386 Hz | 1.3  | -2.2 dB |
-| Peaking | 3655 Hz | 4.68 | -4.6 dB |
-| Peaking | 4826 Hz | 8.35 | 3.8 dB  |
+| Peaking | 456 Hz  | 3.72 | -2.0 dB |
+| Peaking | 635 Hz  | 1.14 | 2.1 dB  |
+| Peaking | 1315 Hz | 1.13 | -2.5 dB |
+| Peaking | 3663 Hz | 4.73 | -4.6 dB |
+| Peaking | 4837 Hz | 8.24 | 3.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/V-Moda%20Crossfade%20Wireless%20Bluetooth/V-Moda%20Crossfade%20Wireless%20Bluetooth.png)

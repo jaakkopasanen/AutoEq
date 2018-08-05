@@ -1,0 +1,35 @@
+# Apple iPod Ear Bud sample B
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 6.0; 109 6.0; 117 6.0; 125 6.0; 134 6.0; 143 6.0; 153 5.8; 164 5.0; 175 3.9; 188 3.0; 201 2.1; 215 1.3; 230 0.7; 246 0.2; 263 -0.3; 282 -0.5; 301 -0.8; 323 -0.9; 345 -0.8; 369 -0.6; 395 -0.5; 423 -0.1; 452 0.0; 484 0.1; 518 0.0; 554 0.2; 593 0.3; 635 0.1; 679 0.0; 726 -0.1; 777 0.1; 832 0.0; 890 -0.0; 952 -0.0; 1019 0.0; 1090 0.0; 1167 0.1; 1248 0.0; 1336 -0.3; 1429 -0.6; 1529 -1.0; 1636 -1.3; 1751 -1.3; 1873 -1.1; 2004 -0.5; 2145 0.2; 2295 0.9; 2455 0.4; 2627 -1.5; 2811 -3.2; 3008 -5.4; 3219 -4.8; 3444 -2.7; 3685 -1.0; 3943 -0.5; 4219 -1.2; 4514 -1.9; 4830 -1.9; 5168 -1.4; 5530 -1.8; 5917 -3.2; 6331 -4.5; 6775 -3.5; 7249 -2.3; 7756 -2.0; 8299 -2.2; 8880 -1.6; 9502 -0.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Apple iPod Ear Bud sample B ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 64 Hz   | 0.19 | 6.6 dB  |
+| Peaking | 355 Hz  | 1.04 | -3.2 dB |
+| Peaking | 251 Hz  | 2.37 | -2.6 dB |
+| Peaking | 3078 Hz | 5.5  | -5.6 dB |
+| Peaking | 6466 Hz | 2.36 | -3.9 dB |
+| Peaking | 19 Hz   | 1.24 | 1.3 dB  |
+| Peaking | 47 Hz   | 0.27 | -0.5 dB |
+| Peaking | 143 Hz  | 3.29 | 1.4 dB  |
+| Peaking | 1712 Hz | 2.82 | -1.4 dB |
+| Peaking | 2314 Hz | 7.06 | 2.0 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Apple%20iPod%20Ear%20Bud%20sample%20B/Apple%20iPod%20Ear%20Bud%20sample%20B.png)

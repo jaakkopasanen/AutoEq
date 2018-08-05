@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 51
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 18 Hz   |  0.93 | 6.4 dB  |
-| Peaking | 211 Hz  |  0.51 | -4.9 dB |
-| Peaking | 1681 Hz |  1.83 | 5.1 dB  |
-| Peaking | 4643 Hz |  6.8  | -3.1 dB |
-| Peaking | 6422 Hz |  5.31 | 3.5 dB  |
-| Peaking | 97 Hz   |  6.57 | 1.5 dB  |
-| Peaking | 138 Hz  |  3.8  | -0.7 dB |
-| Peaking | 3779 Hz |  3.05 | -1.5 dB |
-| Peaking | 3803 Hz |  7.57 | 3.6 dB  |
-| Peaking | 8708 Hz | 10.46 | -1.8 dB |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 19 Hz    |  0.9  | 6.4 dB  |
+| Peaking | 218 Hz   |  0.52 | -4.9 dB |
+| Peaking | 1678 Hz  |  1.83 | 5.1 dB  |
+| Peaking | 4645 Hz  |  6.8  | -3.1 dB |
+| Peaking | 6423 Hz  |  5.31 | 3.5 dB  |
+| Peaking | 95 Hz    |  7.44 | 1.5 dB  |
+| Peaking | 136 Hz   |  3.45 | -0.8 dB |
+| Peaking | 886 Hz   |  5.56 | -0.3 dB |
+| Peaking | 3842 Hz  | 12.57 | 2.1 dB  |
+| Peaking | 19335 Hz |  2.15 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20518/Sennheiser%20HD%20518.png)

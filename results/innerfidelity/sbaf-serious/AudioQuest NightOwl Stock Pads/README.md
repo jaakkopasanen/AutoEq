@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 8723 Hz  | 1.57 | -3.0 dB |
 | Peaking | 3749 Hz  | 0.59 | 6.9 dB  |
 | Peaking | 1312 Hz  | 1.57 | -1.5 dB |
-| Peaking | 2048 Hz  | 2.86 | 2.3 dB  |
-| Peaking | 3511 Hz  | 4.9  | -1.5 dB |
-| Peaking | 5506 Hz  | 7.51 | 1.4 dB  |
+| Peaking | 2044 Hz  | 2.86 | 2.3 dB  |
+| Peaking | 3479 Hz  | 4.9  | -1.5 dB |
+| Peaking | 5460 Hz  | 7.51 | 1.4 dB  |
 | Peaking | 14416 Hz | 1.49 | -0.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AudioQuest%20NightOwl%20Stock%20Pads/AudioQuest%20NightOwl%20Stock%20Pads.png)

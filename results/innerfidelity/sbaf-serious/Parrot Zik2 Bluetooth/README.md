@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 19 Hz    | 0.65 | -10.6 dB |
-| Peaking | 41 Hz    | 0.67 | -1.8 dB  |
-| Peaking | 1903 Hz  | 0.8  | -25.3 dB |
-| Peaking | 2853 Hz  | 0.21 | 17.8 dB  |
-| Peaking | 10474 Hz | 0.96 | -14.0 dB |
-| Peaking | 2773 Hz  | 4.94 | -1.6 dB  |
-| Peaking | 2408 Hz  | 6.35 | -3.1 dB  |
-| Peaking | 3458 Hz  | 1.66 | 3.1 dB   |
-| Peaking | 5276 Hz  | 5.23 | -5.3 dB  |
-| Peaking | 6621 Hz  | 8.79 | 1.9 dB   |
+| Peaking | 19 Hz    | 0.67 | -10.7 dB |
+| Peaking | 41 Hz    | 0.66 | -1.8 dB  |
+| Peaking | 1911 Hz  | 0.81 | -25.2 dB |
+| Peaking | 2860 Hz  | 0.21 | 17.8 dB  |
+| Peaking | 10479 Hz | 0.97 | -14.0 dB |
+| Peaking | 1324 Hz  | 1.6  | -2.3 dB  |
+| Peaking | 2496 Hz  | 2.96 | -6.0 dB  |
+| Peaking | 2792 Hz  | 0.77 | 4.5 dB   |
+| Peaking | 5290 Hz  | 4.29 | -6.0 dB  |
+| Peaking | 6572 Hz  | 9.19 | 1.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Parrot%20Zik2%20Bluetooth/Parrot%20Zik2%20Bluetooth.png)

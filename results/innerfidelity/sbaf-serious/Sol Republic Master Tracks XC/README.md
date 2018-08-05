@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1157 Hz | 1.33 | -0.6 dB |
 | Peaking | 2765 Hz | 1.1  | 6.7 dB  |
 | Peaking | 5955 Hz | 4.54 | 5.3 dB  |
-| Peaking | 279 Hz  | 6.23 | -0.4 dB |
-| Peaking | 2941 Hz | 3.5  | -1.7 dB |
-| Peaking | 4374 Hz | 1.45 | 2.9 dB  |
-| Peaking | 4655 Hz | 6.41 | -5.4 dB |
-| Peaking | 8286 Hz | 1.89 | -1.4 dB |
+| Peaking | 284 Hz  | 6.22 | -0.4 dB |
+| Peaking | 2923 Hz | 3.51 | -1.6 dB |
+| Peaking | 4334 Hz | 1.46 | 2.9 dB  |
+| Peaking | 4687 Hz | 6.41 | -5.4 dB |
+| Peaking | 8245 Hz | 1.89 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sol%20Republic%20Master%20Tracks%20XC/Sol%20Republic%20Master%20Tracks%20XC.png)

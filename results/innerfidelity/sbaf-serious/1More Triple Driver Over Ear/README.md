@@ -1,4 +1,4 @@
-# 1More Triple Driver Over Ear
+# 1MORE Triple Driver Over Ear
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -3.9dB` and instead set Global volume in the UI for both channels to **-39**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `1More Triple Driver Over Ear ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `1MORE Triple Driver Over Ear ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually with
@@ -31,4 +31,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 4178 Hz | 2.88 | -3.9 dB |
 | Peaking | 5265 Hz | 2.01 | 2.4 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1More%20Triple%20Driver%20Over%20Ear/1More%20Triple%20Driver%20Over%20Ear.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1MORE%20Triple%20Driver%20Over%20Ear/1MORE%20Triple%20Driver%20Over%20Ear.png)

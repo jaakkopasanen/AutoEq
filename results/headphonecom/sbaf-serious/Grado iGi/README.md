@@ -1,0 +1,35 @@
+# Grado iGi
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 3.4; 22 3.0; 23 2.8; 25 2.5; 26 2.4; 28 2.1; 30 1.9; 32 1.8; 35 1.6; 37 1.5; 40 1.3; 42 1.2; 45 1.1; 49 1.0; 52 0.9; 56 0.8; 59 0.7; 64 0.6; 68 0.6; 73 0.6; 78 0.5; 83 0.3; 89 0.1; 95 -0.1; 102 -0.6; 109 -0.9; 117 -1.3; 125 -1.7; 134 -2.0; 143 -2.2; 153 -2.2; 164 -2.2; 175 -2.0; 188 -1.9; 201 -1.7; 215 -1.4; 230 -1.1; 246 -0.9; 263 -0.6; 282 -0.3; 301 0.0; 323 0.2; 345 0.6; 369 0.7; 395 1.0; 423 1.2; 452 1.4; 484 1.4; 518 1.5; 554 1.7; 593 2.0; 635 2.0; 679 1.8; 726 1.8; 777 1.8; 832 1.5; 890 1.1; 952 0.5; 1019 -0.0; 1090 -0.5; 1167 -1.0; 1248 -1.3; 1336 -1.5; 1429 -1.3; 1529 -1.3; 1636 -2.0; 1751 -1.8; 1873 -0.6; 2004 0.8; 2145 2.6; 2295 4.7; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 4.7; 6331 1.0; 6775 1.3; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Grado iGi ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 9 Hz    | 0.26 | 3.4 dB  |
+| Peaking | 161 Hz  | 1.32 | -2.7 dB |
+| Peaking | 609 Hz  | 1.12 | 2.1 dB  |
+| Peaking | 1611 Hz | 1.45 | -5.6 dB |
+| Peaking | 3122 Hz | 0.8  | 7.9 dB  |
+| Peaking | 1933 Hz | 5.45 | -0.9 dB |
+| Peaking | 2389 Hz | 4.41 | 1.8 dB  |
+| Peaking | 3188 Hz | 3.43 | -1.0 dB |
+| Peaking | 5443 Hz | 2.89 | 4.5 dB  |
+| Peaking | 6559 Hz | 1.11 | -2.6 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20iGi/Grado%20iGi.png)

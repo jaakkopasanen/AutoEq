@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 182 Hz  | 0.56 | -7.0 dB |
 | Peaking | 1716 Hz | 4.22 | -2.2 dB |
 | Peaking | 4120 Hz | 2.17 | 4.7 dB  |
-| Peaking | 10 Hz   | 0.51 | 0.4 dB  |
+| Peaking | 11 Hz   | 0.49 | 0.4 dB  |
 | Peaking | 482 Hz  | 3.17 | -1.0 dB |
-| Peaking | 886 Hz  | 1.5  | 1.3 dB  |
+| Peaking | 887 Hz  | 1.5  | 1.3 dB  |
 | Peaking | 2665 Hz | 3.87 | 1.4 dB  |
-| Peaking | 1975 Hz | 0.57 | -0.6 dB |
+| Peaking | 1976 Hz | 0.57 | -0.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Noontec%20Zoro%20II%20Wireless%20Active/Noontec%20Zoro%20II%20Wireless%20Active.png)

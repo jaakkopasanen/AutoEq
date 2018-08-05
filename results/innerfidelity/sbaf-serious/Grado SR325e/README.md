@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR325e ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 30 Hz   | 1.06 | 7.0 dB   |
-| Peaking | 2015 Hz | 2.49 | -11.1 dB |
-| Peaking | 4150 Hz | 0.28 | 2.5 dB   |
-| Peaking | 5204 Hz | 6.97 | 3.2 dB   |
-| Peaking | 9327 Hz | 3.35 | -11.1 dB |
-| Peaking | 51 Hz   | 2.24 | 1.1 dB   |
-| Peaking | 144 Hz  | 1.46 | -1.7 dB  |
-| Peaking | 3345 Hz | 4.68 | 5.1 dB   |
-| Peaking | 3714 Hz | 2.57 | -3.7 dB  |
-| Peaking | 6214 Hz | 3.05 | 1.1 dB   |
+| Peaking | 29 Hz   | 1.07 | 6.9 dB   |
+| Peaking | 2011 Hz | 2.49 | -11.1 dB |
+| Peaking | 4151 Hz | 0.28 | 2.5 dB   |
+| Peaking | 5227 Hz | 6.94 | 3.2 dB   |
+| Peaking | 9354 Hz | 3.35 | -11.1 dB |
+| Peaking | 50 Hz   | 2.34 | 1.1 dB   |
+| Peaking | 144 Hz  | 1.42 | -1.6 dB  |
+| Peaking | 3306 Hz | 4.81 | 4.9 dB   |
+| Peaking | 3778 Hz | 2.73 | -3.6 dB  |
+| Peaking | 6298 Hz | 3.4  | 1.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR325e/Grado%20SR325e.png)

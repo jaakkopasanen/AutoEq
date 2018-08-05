@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Beats Studio 2 2014 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 21 Hz   |  2.14 | 5.7 dB  |
-| Peaking | 469 Hz  |  0.98 | 7.6 dB  |
-| Peaking | 798 Hz  |  2.01 | -5.0 dB |
-| Peaking | 2385 Hz |  2.59 | 5.0 dB  |
-| Peaking | 5269 Hz |  2.22 | 6.7 dB  |
-| Peaking | 588 Hz  | 12    | 1.5 dB  |
-| Peaking | 3511 Hz |  4.36 | -4.1 dB |
-| Peaking | 4077 Hz |  1.46 | 5.8 dB  |
-| Peaking | 6384 Hz |  3.68 | 5.3 dB  |
-| Peaking | 5672 Hz |  0.98 | -5.5 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 20 Hz   | 2.14 | 5.9 dB  |
+| Peaking | 468 Hz  | 0.98 | 7.6 dB  |
+| Peaking | 802 Hz  | 2.02 | -4.9 dB |
+| Peaking | 2386 Hz | 2.59 | 5.0 dB  |
+| Peaking | 5270 Hz | 2.22 | 6.7 dB  |
+| Peaking | 321 Hz  | 6.24 | 1.1 dB  |
+| Peaking | 140 Hz  | 2.01 | -0.9 dB |
+| Peaking | 3402 Hz | 8.17 | -2.3 dB |
+| Peaking | 6751 Hz | 0.66 | 0.9 dB  |
+| Peaking | 9300 Hz | 2.08 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beats%20Studio%202%202014/Beats%20Studio%202%202014.png)

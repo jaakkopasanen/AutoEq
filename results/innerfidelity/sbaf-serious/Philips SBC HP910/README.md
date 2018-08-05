@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
 | Peaking | 22 Hz    |  0.42 | 6.2 dB  |
-| Peaking | 146 Hz   |  1.57 | -2.7 dB |
+| Peaking | 148 Hz   |  1.57 | -2.7 dB |
 | Peaking | 2515 Hz  |  2.04 | -3.4 dB |
 | Peaking | 3021 Hz  |  4.56 | -3.3 dB |
 | Peaking | 8021 Hz  |  2.78 | -9.0 dB |
-| Peaking | 229 Hz   |  3.14 | -0.8 dB |
-| Peaking | 576 Hz   |  1.47 | 1.6 dB  |
-| Peaking | 5797 Hz  | 12.25 | 2.8 dB  |
-| Peaking | 4962 Hz  | 10.43 | -3.8 dB |
-| Peaking | 10707 Hz |  6.19 | 2.2 dB  |
+| Peaking | 231 Hz   |  3.2  | -0.7 dB |
+| Peaking | 574 Hz   |  1.47 | 1.7 dB  |
+| Peaking | 5823 Hz  | 12.05 | 2.8 dB  |
+| Peaking | 5037 Hz  | 10.34 | -3.8 dB |
+| Peaking | 10720 Hz |  6.19 | 2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20SBC%20HP910/Philips%20SBC%20HP910.png)

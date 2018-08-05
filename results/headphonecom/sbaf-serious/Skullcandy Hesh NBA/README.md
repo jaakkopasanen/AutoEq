@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 102 Hz  | 2.62 | -2.3 dB |
 | Peaking | 1440 Hz | 2.03 | -9.7 dB |
 | Peaking | 3024 Hz | 0.64 | 7.7 dB  |
-| Peaking | 3479 Hz | 0.2  | -1.1 dB |
-| Peaking | 2237 Hz | 4.64 | 2.5 dB  |
-| Peaking | 941 Hz  | 4.12 | 1.9 dB  |
-| Peaking | 6193 Hz | 1.98 | 5.3 dB  |
-| Peaking | 7609 Hz | 2.03 | -3.8 dB |
+| Peaking | 3471 Hz | 0.2  | -1.1 dB |
+| Peaking | 2224 Hz | 4.64 | 2.5 dB  |
+| Peaking | 935 Hz  | 4.12 | 1.9 dB  |
+| Peaking | 6268 Hz | 1.98 | 5.3 dB  |
+| Peaking | 7512 Hz | 2.03 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Skullcandy%20Hesh%20NBA/Skullcandy%20Hesh%20NBA.png)

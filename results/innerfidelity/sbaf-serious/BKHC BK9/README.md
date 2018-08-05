@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 677 Hz  | 0.7  | -5.4 dB |
 | Peaking | 1844 Hz | 0.61 | 7.6 dB  |
 | Peaking | 5100 Hz | 1.83 | 4.4 dB  |
-| Peaking | 2243 Hz | 2.72 | -1.0 dB |
-| Peaking | 3948 Hz | 0.83 | 1.2 dB  |
-| Peaking | 4856 Hz | 3.93 | -1.2 dB |
-| Peaking | 6387 Hz | 4.01 | 3.8 dB  |
-| Peaking | 7310 Hz | 1.42 | -3.0 dB |
+| Peaking | 2236 Hz | 2.73 | -1.0 dB |
+| Peaking | 3935 Hz | 0.84 | 1.2 dB  |
+| Peaking | 4833 Hz | 3.92 | -1.2 dB |
+| Peaking | 6358 Hz | 4.01 | 3.7 dB  |
+| Peaking | 7358 Hz | 1.42 | -3.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/BKHC%20BK9/BKHC%20BK9.png)

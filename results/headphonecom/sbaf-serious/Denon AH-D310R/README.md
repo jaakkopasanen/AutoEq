@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 0.85 | 5.3 dB  |
+| Peaking | 21 Hz   | 0.89 | 5.3 dB  |
 | Peaking | 676 Hz  | 3.87 | 5.1 dB  |
 | Peaking | 1897 Hz | 3.47 | 3.2 dB  |
 | Peaking | 3213 Hz | 1.5  | 6.3 dB  |
 | Peaking | 5864 Hz | 3.37 | 4.7 dB  |
-| Peaking | 77 Hz   | 3.04 | 1.6 dB  |
-| Peaking | 200 Hz  | 1.38 | -3.3 dB |
-| Peaking | 441 Hz  | 2.16 | 1.6 dB  |
-| Peaking | 1201 Hz | 4.5  | -1.8 dB |
-| Peaking | 9308 Hz | 5.25 | -2.6 dB |
+| Peaking | 79 Hz   | 2.48 | 1.6 dB  |
+| Peaking | 202 Hz  | 1.35 | -3.3 dB |
+| Peaking | 443 Hz  | 2.12 | 1.6 dB  |
+| Peaking | 1198 Hz | 4.43 | -1.8 dB |
+| Peaking | 9279 Hz | 5.22 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D310R/Denon%20AH-D310R.png)

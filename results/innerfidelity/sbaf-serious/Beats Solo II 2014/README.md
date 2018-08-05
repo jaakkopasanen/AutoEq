@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 196 Hz  |  0.56 | -7.7 dB |
 | Peaking | 2721 Hz |  3.91 | 2.0 dB  |
 | Peaking | 5925 Hz |  5.91 | 2.8 dB  |
-| Peaking | 576 Hz  |  2.16 | -1.9 dB |
-| Peaking | 680 Hz  |  2.11 | 2.0 dB  |
-| Peaking | 1543 Hz |  2.49 | -1.4 dB |
-| Peaking | 4785 Hz | 11.95 | -2.9 dB |
-| Peaking | 2036 Hz |  0.3  | 0.4 dB  |
+| Peaking | 578 Hz  |  2.16 | -1.9 dB |
+| Peaking | 679 Hz  |  2.12 | 2.0 dB  |
+| Peaking | 1540 Hz |  2.49 | -1.4 dB |
+| Peaking | 4760 Hz | 11.95 | -2.9 dB |
+| Peaking | 2040 Hz |  0.3  | 0.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beats%20Solo%20II%202014/Beats%20Solo%20II%202014.png)

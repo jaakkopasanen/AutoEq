@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 28 Hz   | 0.58 | 6.6 dB  |
-| Peaking | 154 Hz  | 0.9  | -5.3 dB |
-| Peaking | 2186 Hz | 4.99 | 8.4 dB  |
-| Peaking | 4013 Hz | 7.71 | -5.3 dB |
-| Peaking | 2049 Hz | 1.79 | -2.0 dB |
-| Peaking | 258 Hz  | 5.66 | -1.6 dB |
-| Peaking | 518 Hz  | 2.63 | 1.6 dB  |
-| Peaking | 8606 Hz | 3.05 | 1.1 dB  |
-| Peaking | 5586 Hz | 7.2  | 8.8 dB  |
-| Peaking | 6505 Hz | 2.84 | -6.4 dB |
+| Peaking | 156 Hz  | 0.9  | -5.3 dB |
+| Peaking | 2192 Hz | 4.96 | 8.5 dB  |
+| Peaking | 4022 Hz | 7.8  | -5.3 dB |
+| Peaking | 2055 Hz | 1.8  | -2.0 dB |
+| Peaking | 258 Hz  | 5.72 | -1.5 dB |
+| Peaking | 517 Hz  | 2.62 | 1.6 dB  |
+| Peaking | 8602 Hz | 3.04 | 1.1 dB  |
+| Peaking | 5564 Hz | 7.14 | 8.8 dB  |
+| Peaking | 6489 Hz | 2.82 | -6.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20Edition%208%20Palladium/Ultrasone%20Edition%208%20Palladium.png)

@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 317 Hz  | 1.39 | 2.5 dB  |
 | Peaking | 2675 Hz | 2    | 5.0 dB  |
 | Peaking | 6104 Hz | 4.97 | 6.3 dB  |
-| Peaking | 3856 Hz | 3.59 | 0.2 dB  |
+| Peaking | 3855 Hz | 3.59 | 0.2 dB  |
 | Peaking | 3538 Hz | 5.45 | 1.7 dB  |
 | Peaking | 4515 Hz | 3.57 | -3.6 dB |
-| Peaking | 5267 Hz | 4.39 | 2.2 dB  |
+| Peaking | 5266 Hz | 4.39 | 2.2 dB  |
 | Peaking | 8320 Hz | 4.38 | -0.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/A%20Audio%20Elite%20Passive/A%20Audio%20Elite%20Passive.png)

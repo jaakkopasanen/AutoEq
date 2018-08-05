@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 236 Hz  |  0.75 | -3.0 dB |
 | Peaking | 3424 Hz |  2.59 | 6.7 dB  |
 | Peaking | 5915 Hz |  4.04 | 6.1 dB  |
-| Peaking | 868 Hz  |  5.58 | 1.0 dB  |
-| Peaking | 1809 Hz |  2.52 | -1.8 dB |
-| Peaking | 2744 Hz |  4.39 | 1.2 dB  |
-| Peaking | 6644 Hz | 12.21 | 1.5 dB  |
-| Peaking | 8922 Hz |  4.36 | -1.9 dB |
+| Peaking | 875 Hz  |  5.58 | 1.0 dB  |
+| Peaking | 1810 Hz |  2.52 | -1.8 dB |
+| Peaking | 2751 Hz |  4.39 | 1.2 dB  |
+| Peaking | 6647 Hz | 12.22 | 1.5 dB  |
+| Peaking | 8930 Hz |  4.36 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Focal%20Listen/Focal%20Listen.png)

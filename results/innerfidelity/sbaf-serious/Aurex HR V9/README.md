@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 35 Hz   | 0.39 | 6.3 dB  |
+| Peaking | 34 Hz   | 0.39 | 6.3 dB  |
 | Peaking | 475 Hz  | 1.19 | 1.2 dB  |
 | Peaking | 1696 Hz | 3.91 | 2.7 dB  |
 | Peaking | 3603 Hz | 2.38 | 4.0 dB  |
 | Peaking | 5786 Hz | 3.15 | 6.1 dB  |
-| Peaking | 90 Hz   | 1.63 | 2.0 dB  |
-| Peaking | 107 Hz  | 0.76 | -1.5 dB |
-| Peaking | 272 Hz  | 1.81 | 0.5 dB  |
-| Peaking | 6653 Hz | 6.51 | 2.1 dB  |
-| Peaking | 7576 Hz | 2.42 | -1.5 dB |
+| Peaking | 90 Hz   | 1.62 | 2.1 dB  |
+| Peaking | 106 Hz  | 0.8  | -1.5 dB |
+| Peaking | 272 Hz  | 1.84 | 0.5 dB  |
+| Peaking | 6650 Hz | 6.39 | 2.1 dB  |
+| Peaking | 7570 Hz | 2.42 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Aurex%20HR%20V9/Aurex%20HR%20V9.png)

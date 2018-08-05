@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1625 Hz | 1.07 | -7.8 dB  |
 | Peaking | 5266 Hz | 0.6  | 7.2 dB   |
 | Peaking | 9085 Hz | 2.66 | -10.4 dB |
-| Peaking | 59 Hz   | 2.64 | 2.7 dB   |
-| Peaking | 147 Hz  | 1.05 | -2.7 dB  |
-| Peaking | 388 Hz  | 2.59 | 1.7 dB   |
+| Peaking | 59 Hz   | 2.62 | 2.7 dB   |
+| Peaking | 148 Hz  | 1.04 | -2.7 dB  |
+| Peaking | 387 Hz  | 2.59 | 1.7 dB   |
 | Peaking | 3021 Hz | 5.59 | 2.4 dB   |
-| Peaking | 3989 Hz | 6.49 | -2.6 dB  |
+| Peaking | 3988 Hz | 6.49 | -2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Polk%20UltraFit%202000/Polk%20UltraFit%202000.png)

@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 353 Hz  | 1.45 | 3.9 dB  |
 | Peaking | 2765 Hz | 1.27 | 6.5 dB  |
 | Peaking | 5589 Hz | 2.68 | 5.3 dB  |
-| Peaking | 1107 Hz | 1.38 | -1.0 dB |
-| Peaking | 2048 Hz | 5.36 | 2.0 dB  |
-| Peaking | 2767 Hz | 4.2  | -1.0 dB |
-| Peaking | 3738 Hz | 7.48 | 1.5 dB  |
-| Peaking | 8378 Hz | 3.83 | -1.3 dB |
+| Peaking | 1110 Hz | 1.38 | -1.0 dB |
+| Peaking | 2089 Hz | 5.36 | 2.0 dB  |
+| Peaking | 2778 Hz | 4.2  | -1.0 dB |
+| Peaking | 3730 Hz | 7.47 | 1.5 dB  |
+| Peaking | 8380 Hz | 3.83 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20HPH%20MT220/Yamaha%20HPH%20MT220.png)

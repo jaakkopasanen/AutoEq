@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 653 Hz  | 2.16 | -2.7 dB |
 | Peaking | 1446 Hz | 1    | 1.7 dB  |
 | Peaking | 5451 Hz | 2.34 | 6.4 dB  |
-| Peaking | 274 Hz  | 4.87 | -1.1 dB |
-| Peaking | 368 Hz  | 4.59 | 1.1 dB  |
-| Peaking | 3375 Hz | 8.89 | -1.1 dB |
-| Peaking | 6662 Hz | 6.26 | 2.2 dB  |
-| Peaking | 7776 Hz | 2.52 | -1.5 dB |
+| Peaking | 274 Hz  | 4.87 | -1.0 dB |
+| Peaking | 366 Hz  | 4.59 | 1.1 dB  |
+| Peaking | 3392 Hz | 8.88 | -1.1 dB |
+| Peaking | 6617 Hz | 6.25 | 2.2 dB  |
+| Peaking | 7767 Hz | 2.53 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/KEF%20M500/KEF%20M500.png)

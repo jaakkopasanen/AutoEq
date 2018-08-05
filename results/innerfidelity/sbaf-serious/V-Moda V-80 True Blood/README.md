@@ -24,12 +24,12 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 151 Hz  | 0.84 | -3.3 dB |
 | Peaking | 238 Hz  | 4.09 | -1.7 dB |
 | Peaking | 594 Hz  | 1.1  | 4.5 dB  |
-| Peaking | 1342 Hz | 2.39 | -4.1 dB |
-| Peaking | 5086 Hz | 1.45 | 4.0 dB  |
-| Peaking | 17 Hz   | 2.11 | 1.4 dB  |
-| Peaking | 1692 Hz | 4.16 | -1.5 dB |
-| Peaking | 2512 Hz | 1.74 | 2.0 dB  |
-| Peaking | 3384 Hz | 6.19 | -2.5 dB |
-| Peaking | 8599 Hz | 3.45 | -1.1 dB |
+| Peaking | 1345 Hz | 2.39 | -4.1 dB |
+| Peaking | 5082 Hz | 1.45 | 4.0 dB  |
+| Peaking | 7 Hz    | 2.55 | 0.8 dB  |
+| Peaking | 1704 Hz | 4.18 | -1.4 dB |
+| Peaking | 2505 Hz | 1.78 | 2.0 dB  |
+| Peaking | 3337 Hz | 6.25 | -2.5 dB |
+| Peaking | 8614 Hz | 3.48 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/V-Moda%20V-80%20True%20Blood/V-Moda%20V-80%20True%20Blood.png)

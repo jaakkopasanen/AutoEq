@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2143 Hz  | 1.67 | 1.4 dB  |
 | Peaking | 4626 Hz  | 5.92 | -4.5 dB |
 | Peaking | 19231 Hz | 2.03 | -6.0 dB |
-| Peaking | 56 Hz    | 2.79 | -0.8 dB |
-| Peaking | 85 Hz    | 6.91 | 1.3 dB  |
-| Peaking | 8175 Hz  | 2.22 | 0.9 dB  |
-| Peaking | 8766 Hz  | 6.2  | -2.0 dB |
-| Peaking | 15912 Hz | 3.26 | 0.9 dB  |
+| Peaking | 54 Hz    | 2.68 | -0.7 dB |
+| Peaking | 84 Hz    | 6.82 | 1.4 dB  |
+| Peaking | 8151 Hz  | 2.24 | 1.0 dB  |
+| Peaking | 8764 Hz  | 6.25 | -2.3 dB |
+| Peaking | 15937 Hz | 3.27 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20598/Sennheiser%20HD%20598.png)

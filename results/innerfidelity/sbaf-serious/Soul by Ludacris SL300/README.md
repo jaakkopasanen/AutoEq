@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 783 Hz  | 3.33 | 10.4 dB  |
 | Peaking | 3074 Hz | 2.7  | 8.5 dB   |
 | Peaking | 862 Hz  | 0.27 | -3.3 dB  |
-| Peaking | 18 Hz   | 2.78 | 1.8 dB   |
-| Peaking | 539 Hz  | 7.69 | -2.8 dB  |
-| Peaking | 4675 Hz | 7.48 | -6.2 dB  |
-| Peaking | 6507 Hz | 5.6  | 5.6 dB   |
-| Peaking | 9204 Hz | 4.87 | -2.4 dB  |
+| Peaking | 21 Hz   | 2.64 | 1.8 dB   |
+| Peaking | 540 Hz  | 7.46 | -2.7 dB  |
+| Peaking | 4670 Hz | 7.37 | -6.2 dB  |
+| Peaking | 6498 Hz | 5.52 | 5.6 dB   |
+| Peaking | 9195 Hz | 4.8  | -2.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Soul%20by%20Ludacris%20SL300/Soul%20by%20Ludacris%20SL300.png)

@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:--------|:-----|:--------|
 | Peaking | 683 Hz  | 2.11 | 5.1 dB  |
 | Peaking | 2066 Hz | 2.45 | -5.2 dB |
-| Peaking | 3425 Hz | 8.61 | 4.6 dB  |
-| Peaking | 6058 Hz | 5.22 | 4.6 dB  |
-| Peaking | 8749 Hz | 4.88 | -4.9 dB |
-| Peaking | 16 Hz   | 1.27 | 2.4 dB  |
-| Peaking | 40 Hz   | 0.97 | -1.9 dB |
-| Peaking | 171 Hz  | 1.65 | -1.6 dB |
-| Peaking | 4275 Hz | 1.54 | 2.2 dB  |
-| Peaking | 4357 Hz | 3.98 | -5.4 dB |
+| Peaking | 3424 Hz | 8.61 | 4.6 dB  |
+| Peaking | 6059 Hz | 5.22 | 4.6 dB  |
+| Peaking | 8757 Hz | 4.88 | -4.9 dB |
+| Peaking | 17 Hz   | 1.53 | 2.4 dB  |
+| Peaking | 42 Hz   | 0.95 | -1.8 dB |
+| Peaking | 173 Hz  | 1.63 | -1.7 dB |
+| Peaking | 4308 Hz | 1.54 | 2.2 dB  |
+| Peaking | 4335 Hz | 4    | -5.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Grind/Skullcandy%20Grind.png)

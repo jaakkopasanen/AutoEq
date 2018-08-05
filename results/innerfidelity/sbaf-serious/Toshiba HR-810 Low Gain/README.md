@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1086 Hz | 1.07 | 2.5 dB  |
 | Peaking | 1789 Hz | 1.03 | -5.4 dB |
 | Peaking | 5372 Hz | 2.03 | 7.1 dB  |
-| Peaking | 6 Hz    | 1.51 | 0.9 dB  |
-| Peaking | 98 Hz   | 6.14 | 1.1 dB  |
-| Peaking | 6489 Hz | 4.78 | 3.6 dB  |
-| Peaking | 3724 Hz | 4.98 | 1.2 dB  |
-| Peaking | 7011 Hz | 1.63 | -2.3 dB |
+| Peaking | 6 Hz    | 1.49 | 0.9 dB  |
+| Peaking | 98 Hz   | 6.15 | 1.1 dB  |
+| Peaking | 6478 Hz | 4.77 | 3.7 dB  |
+| Peaking | 3726 Hz | 4.99 | 1.2 dB  |
+| Peaking | 7017 Hz | 1.67 | -2.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Toshiba%20HR-810%20Low%20Gain/Toshiba%20HR-810%20Low%20Gain.png)

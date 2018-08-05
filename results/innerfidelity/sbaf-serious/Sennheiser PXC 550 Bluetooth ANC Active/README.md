@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 19 Hz   |  3.13 | 4.5 dB  |
-| Peaking | 85 Hz   |  0.14 | 3.1 dB  |
-| Peaking | 3537 Hz |  2.55 | 4.4 dB  |
-| Peaking | 6461 Hz |  5.92 | 5.5 dB  |
-| Peaking | 9130 Hz |  4.18 | -5.3 dB |
-| Peaking | 77 Hz   |  2.25 | 1.5 dB  |
-| Peaking | 154 Hz  |  2.57 | -2.0 dB |
-| Peaking | 1597 Hz |  3.1  | -3.2 dB |
-| Peaking | 4389 Hz |  8.73 | 5.1 dB  |
-| Peaking | 5006 Hz | 10.61 | -6.8 dB |
+| Peaking | 18 Hz   |  3.2  | 4.5 dB  |
+| Peaking | 93 Hz   |  0.15 | 3.0 dB  |
+| Peaking | 3527 Hz |  2.55 | 4.4 dB  |
+| Peaking | 6444 Hz |  5.92 | 5.5 dB  |
+| Peaking | 9112 Hz |  4.18 | -5.3 dB |
+| Peaking | 77 Hz   |  2.06 | 1.5 dB  |
+| Peaking | 153 Hz  |  2.52 | -2.0 dB |
+| Peaking | 1595 Hz |  2.98 | -3.2 dB |
+| Peaking | 4387 Hz |  8.49 | 5.1 dB  |
+| Peaking | 5002 Hz | 10.42 | -6.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PXC%20550%20Bluetooth%20ANC%20Active/Sennheiser%20PXC%20550%20Bluetooth%20ANC%20Active.png)

@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
-| Peaking | 63 Hz    |  0.28 | 18.7 dB  |
-| Peaking | 88 Hz    |  0.51 | -20.0 dB |
-| Peaking | 1746 Hz  |  2.04 | -3.9 dB  |
-| Peaking | 4920 Hz  |  1.26 | 4.7 dB   |
-| Peaking | 8947 Hz  |  3.07 | -6.2 dB  |
-| Peaking | 50 Hz    |  4.51 | 0.8 dB   |
-| Peaking | 204 Hz   |  1.34 | -0.6 dB  |
-| Peaking | 654 Hz   |  2    | 0.6 dB   |
-| Peaking | 6584 Hz  | 11.85 | -1.1 dB  |
-| Peaking | 11345 Hz |  7.21 | 0.9 dB   |
+| Peaking | 62 Hz    |  0.29 | 18.5 dB  |
+| Peaking | 89 Hz    |  0.51 | -19.8 dB |
+| Peaking | 1739 Hz  |  2.05 | -3.9 dB  |
+| Peaking | 4921 Hz  |  1.26 | 4.7 dB   |
+| Peaking | 8928 Hz  |  3.07 | -6.2 dB  |
+| Peaking | 50 Hz    |  3.65 | 0.7 dB   |
+| Peaking | 81 Hz    |  6.77 | -0.9 dB  |
+| Peaking | 659 Hz   |  1.96 | 0.7 dB   |
+| Peaking | 6588 Hz  | 12.28 | -1.1 dB  |
+| Peaking | 11337 Hz |  7.39 | 0.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-Alpha%20Pro%20Excellent/Stax%20SR-Alpha%20Pro%20Excellent.png)

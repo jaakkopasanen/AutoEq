@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 29 Hz   | 0.8  | -5.0 dB |
-| Peaking | 104 Hz  | 2.88 | -3.9 dB |
-| Peaking | 413 Hz  | 1.46 | -4.0 dB |
+| Peaking | 105 Hz  | 2.88 | -3.9 dB |
+| Peaking | 412 Hz  | 1.46 | -4.0 dB |
 | Peaking | 3226 Hz | 2.16 | 4.9 dB  |
 | Peaking | 5936 Hz | 3.74 | 6.1 dB  |
-| Peaking | 213 Hz  | 2.09 | -0.3 dB |
-| Peaking | 1341 Hz | 1.06 | 1.2 dB  |
-| Peaking | 1671 Hz | 2.41 | -2.6 dB |
-| Peaking | 2519 Hz | 5.01 | 0.8 dB  |
-| Peaking | 8226 Hz | 4.63 | -1.0 dB |
+| Peaking | 217 Hz  | 2.6  | -0.3 dB |
+| Peaking | 1310 Hz | 1.11 | 1.1 dB  |
+| Peaking | 1661 Hz | 2.42 | -2.5 dB |
+| Peaking | 2486 Hz | 4.49 | 0.8 dB  |
+| Peaking | 8231 Hz | 4.63 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/SMS%20DJ%20Pro/SMS%20DJ%20Pro.png)

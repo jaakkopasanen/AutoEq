@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1732 Hz  | 1.35 | -4.0 dB |
 | Peaking | 3123 Hz  | 1.3  | 6.1 dB  |
 | Peaking | 5487 Hz  | 2.43 | 5.2 dB  |
-| Peaking | 2 Hz     | 1.75 | 0.2 dB  |
-| Peaking | 108 Hz   | 5.86 | 1.2 dB  |
-| Peaking | 6515 Hz  | 6.76 | 2.4 dB  |
-| Peaking | 7769 Hz  | 2.32 | -1.7 dB |
-| Peaking | 32205 Hz | 4.11 | -1.9 dB |
+| Peaking | 2 Hz     | 1.74 | 0.2 dB  |
+| Peaking | 108 Hz   | 5.87 | 1.2 dB  |
+| Peaking | 6532 Hz  | 6.76 | 2.4 dB  |
+| Peaking | 7790 Hz  | 2.32 | -1.7 dB |
+| Peaking | 32323 Hz | 4.11 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-ES55/Audio%20Technica%20ATH-ES55.png)

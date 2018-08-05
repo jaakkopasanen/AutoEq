@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2629 Hz  | 1.48 | -3.6 dB  |
 | Peaking | 8605 Hz  | 2.03 | -12.8 dB |
 | Peaking | 29888 Hz | 1.27 | -6.2 dB  |
-| Peaking | 866 Hz   | 2.73 | 1.2 dB   |
-| Peaking | 5724 Hz  | 4.73 | 4.3 dB   |
-| Peaking | 4385 Hz  | 3.33 | -4.8 dB  |
-| Peaking | 4826 Hz  | 5.08 | 7.2 dB   |
-| Peaking | 6628 Hz  | 5.66 | -4.8 dB  |
+| Peaking | 867 Hz   | 2.72 | 1.2 dB   |
+| Peaking | 5761 Hz  | 4.5  | 4.5 dB   |
+| Peaking | 4431 Hz  | 3.29 | -4.7 dB  |
+| Peaking | 4781 Hz  | 5.28 | 7.2 dB   |
+| Peaking | 6593 Hz  | 5.6  | -4.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T90/Beyerdynamic%20T90.png)

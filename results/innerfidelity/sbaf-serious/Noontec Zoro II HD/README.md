@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1696 Hz | 3.03 | -2.5 dB |
 | Peaking | 3929 Hz | 1.98 | 6.1 dB  |
 | Peaking | 5965 Hz | 4.87 | 2.6 dB  |
-| Peaking | 458 Hz  | 3.6  | -0.6 dB |
-| Peaking | 736 Hz  | 2.18 | 0.8 dB  |
-| Peaking | 9865 Hz | 2.95 | -0.3 dB |
-| Peaking | 8166 Hz | 8.35 | -0.6 dB |
+| Peaking | 459 Hz  | 3.6  | -0.6 dB |
+| Peaking | 738 Hz  | 2.18 | 0.8 dB  |
+| Peaking | 9866 Hz | 2.95 | -0.3 dB |
+| Peaking | 8165 Hz | 8.35 | -0.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Noontec%20Zoro%20II%20HD/Noontec%20Zoro%20II%20HD.png)

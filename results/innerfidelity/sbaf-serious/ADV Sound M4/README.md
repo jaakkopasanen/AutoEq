@@ -1,0 +1,35 @@
+# ADV Sound M4
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -5.6; 22 -5.9; 23 -6.0; 25 -6.2; 26 -6.3; 28 -6.4; 30 -6.5; 32 -6.6; 35 -6.7; 37 -6.8; 40 -6.8; 42 -6.8; 45 -6.9; 49 -7.0; 52 -7.0; 56 -7.0; 59 -7.0; 64 -7.0; 68 -7.1; 73 -7.1; 78 -7.2; 83 -7.4; 89 -7.7; 95 -8.1; 102 -8.5; 109 -8.9; 117 -9.2; 125 -9.7; 134 -10.0; 143 -10.1; 153 -10.1; 164 -10.1; 175 -9.9; 188 -9.6; 201 -9.4; 215 -9.1; 230 -8.7; 246 -8.4; 263 -8.0; 282 -7.5; 301 -7.1; 323 -6.7; 345 -6.2; 369 -5.7; 395 -5.3; 423 -4.7; 452 -4.2; 484 -3.8; 518 -3.3; 554 -2.8; 593 -2.0; 635 -1.7; 679 -1.4; 726 -1.0; 777 -0.5; 832 -0.3; 890 -0.3; 952 -0.2; 1019 0.0; 1090 0.6; 1167 0.3; 1248 0.2; 1336 -0.0; 1429 -0.2; 1529 -0.4; 1636 -0.4; 1751 -0.2; 1873 0.2; 2004 0.5; 2145 0.9; 2295 1.0; 2455 0.6; 2627 0.3; 2811 1.3; 3008 3.3; 3219 4.7; 3444 5.9; 3685 6.0; 3943 5.8; 4219 4.4; 4514 3.4; 4830 3.2; 5168 3.4; 5530 3.0; 5917 1.6; 6331 -1.3; 6775 -4.7; 7249 -6.1; 7756 -5.0; 8299 -2.7; 8880 -0.3; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `ADV Sound M4 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 6 Hz    | 1.77 | -5.0 dB |
+| Peaking | 30 Hz   | 0.37 | -5.5 dB |
+| Peaking | 180 Hz  | 0.59 | -9.1 dB |
+| Peaking | 3903 Hz | 1.65 | 6.1 dB  |
+| Peaking | 7279 Hz | 4.55 | -7.7 dB |
+| Peaking | 945 Hz  | 2.18 | 1.1 dB  |
+| Peaking | 2670 Hz | 5.47 | -1.9 dB |
+| Peaking | 3418 Hz | 2.73 | 2.7 dB  |
+| Peaking | 4338 Hz | 1.39 | -2.3 dB |
+| Peaking | 5455 Hz | 4.51 | 3.0 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/ADV%20Sound%20M4/ADV%20Sound%20M4.png)

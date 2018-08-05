@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2096 Hz  | 1.88 | -6.3 dB  |
 | Peaking | 5932 Hz  | 2.15 | -6.4 dB  |
 | Peaking | 9054 Hz  | 3.76 | -10.0 dB |
-| Peaking | 362 Hz   | 3.7  | -0.7 dB  |
+| Peaking | 363 Hz   | 3.71 | -0.7 dB  |
 | Peaking | 811 Hz   | 2.97 | 0.6 dB   |
 | Peaking | 3862 Hz  | 6.12 | 0.9 dB   |
-| Peaking | 11848 Hz | 4.58 | 2.1 dB   |
-| Peaking | 19935 Hz | 3.14 | -8.6 dB  |
+| Peaking | 11843 Hz | 4.58 | 2.1 dB   |
+| Peaking | 19922 Hz | 3.15 | -8.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20SR125i/Grado%20SR125i.png)

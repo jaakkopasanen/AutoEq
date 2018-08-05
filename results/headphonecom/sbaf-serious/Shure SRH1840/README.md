@@ -25,10 +25,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 803 Hz  | 2.07 | 1.5 dB  |
 | Peaking | 2508 Hz | 1.18 | -5.5 dB |
 | Peaking | 8944 Hz | 7.82 | -5.1 dB |
-| Peaking | 40 Hz   | 2.37 | -0.6 dB |
-| Peaking | 85 Hz   | 2.96 | 1.8 dB  |
-| Peaking | 183 Hz  | 1.11 | -1.2 dB |
-| Peaking | 3822 Hz | 4    | -1.1 dB |
-| Peaking | 5364 Hz | 7.13 | 2.6 dB  |
+| Peaking | 43 Hz   | 2.46 | -0.8 dB |
+| Peaking | 83 Hz   | 2.96 | 1.8 dB  |
+| Peaking | 188 Hz  | 1.1  | -1.2 dB |
+| Peaking | 3821 Hz | 4    | -1.1 dB |
+| Peaking | 5359 Hz | 7.14 | 2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Shure%20SRH1840/Shure%20SRH1840.png)

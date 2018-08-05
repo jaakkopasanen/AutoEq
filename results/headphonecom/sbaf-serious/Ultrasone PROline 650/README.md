@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2388 Hz  | 1.32 | -6.3 dB |
 | Peaking | 15736 Hz | 3.5  | -9.8 dB |
 | Peaking | 2 Hz     | 2.05 | -0.6 dB |
-| Peaking | 36 Hz    | 3.47 | -2.4 dB |
-| Peaking | 95 Hz    | 1.27 | -2.9 dB |
-| Peaking | 4020 Hz  | 5.5  | -2.6 dB |
-| Peaking | 5843 Hz  | 9.33 | 5.0 dB  |
+| Peaking | 37 Hz    | 3.49 | -2.1 dB |
+| Peaking | 97 Hz    | 1.27 | -2.9 dB |
+| Peaking | 4018 Hz  | 5.5  | -2.6 dB |
+| Peaking | 5824 Hz  | 9.32 | 5.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20PROline%20650/Ultrasone%20PROline%20650.png)

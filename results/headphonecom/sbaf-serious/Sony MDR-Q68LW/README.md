@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 36 Hz   | 0.81 | 7.1 dB  |
+| Peaking | 35 Hz   | 0.8  | 7.1 dB  |
 | Peaking | 765 Hz  | 1.1  | 1.8 dB  |
-| Peaking | 2079 Hz | 1.2  | -6.1 dB |
-| Peaking | 4185 Hz | 6.24 | -3.6 dB |
-| Peaking | 5742 Hz | 3.86 | 7.4 dB  |
-| Peaking | 38 Hz   | 3.16 | -1.3 dB |
-| Peaking | 62 Hz   | 2.56 | 2.2 dB  |
-| Peaking | 148 Hz  | 1.45 | -1.8 dB |
-| Peaking | 6588 Hz | 9.44 | 2.0 dB  |
-| Peaking | 7679 Hz | 6.08 | -2.6 dB |
+| Peaking | 2079 Hz | 1.19 | -6.1 dB |
+| Peaking | 4183 Hz | 6.26 | -3.6 dB |
+| Peaking | 5740 Hz | 3.87 | 7.4 dB  |
+| Peaking | 37 Hz   | 3.14 | -1.3 dB |
+| Peaking | 61 Hz   | 2.52 | 2.3 dB  |
+| Peaking | 145 Hz  | 1.46 | -1.8 dB |
+| Peaking | 6582 Hz | 9.21 | 2.0 dB  |
+| Peaking | 7676 Hz | 6    | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-Q68LW/Sony%20MDR-Q68LW.png)

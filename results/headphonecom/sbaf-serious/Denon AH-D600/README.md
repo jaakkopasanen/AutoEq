@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 251 Hz  | 0.66 | 4.0 dB  |
 | Peaking | 1861 Hz | 1.91 | -3.2 dB |
 | Peaking | 4586 Hz | 2.59 | 6.6 dB  |
-| Peaking | 358 Hz  | 1.61 | 1.7 dB  |
-| Peaking | 361 Hz  | 2.88 | -2.5 dB |
-| Peaking | 2893 Hz | 3.67 | -2.6 dB |
-| Peaking | 3091 Hz | 1.48 | 1.9 dB  |
-| Peaking | 4937 Hz | 0.39 | -0.4 dB |
+| Peaking | 356 Hz  | 1.62 | 1.8 dB  |
+| Peaking | 363 Hz  | 2.85 | -2.5 dB |
+| Peaking | 2898 Hz | 3.69 | -2.6 dB |
+| Peaking | 3084 Hz | 1.49 | 1.9 dB  |
+| Peaking | 4984 Hz | 0.39 | -0.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D600/Denon%20AH-D600.png)

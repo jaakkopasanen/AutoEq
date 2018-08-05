@@ -1,0 +1,35 @@
+# Monster Lady Gaga
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -4.2dB
+GraphicEQ: 10 -84; 20 -4.5; 22 -4.8; 23 -4.9; 25 -5.0; 26 -5.1; 28 -5.1; 30 -5.1; 32 -5.1; 35 -5.1; 37 -5.0; 40 -4.9; 42 -4.8; 45 -4.7; 49 -4.5; 52 -4.3; 56 -4.2; 59 -4.0; 64 -3.8; 68 -3.6; 73 -3.5; 78 -3.5; 83 -3.4; 89 -3.5; 95 -3.8; 102 -3.8; 109 -4.1; 117 -4.3; 125 -4.6; 134 -4.7; 143 -4.8; 153 -4.7; 164 -4.4; 175 -4.3; 188 -4.0; 201 -3.7; 215 -3.5; 230 -3.0; 246 -2.8; 263 -2.5; 282 -2.1; 301 -1.8; 323 -1.6; 345 -1.2; 369 -1.0; 395 -0.7; 423 -0.4; 452 -0.1; 484 -0.1; 518 0.1; 554 0.4; 593 0.8; 635 0.9; 679 0.9; 726 0.9; 777 1.0; 832 0.8; 890 0.6; 952 0.3; 1019 -0.1; 1090 -0.4; 1167 -0.6; 1248 -1.0; 1336 -1.5; 1429 -2.1; 1529 -2.8; 1636 -3.3; 1751 -3.6; 1873 -3.6; 2004 -3.6; 2145 -3.7; 2295 -3.5; 2455 -3.1; 2627 -2.6; 2811 -1.8; 3008 -0.4; 3219 1.0; 3444 1.9; 3685 1.9; 3943 1.2; 4219 -0.5; 4514 -1.4; 4830 -1.2; 5168 0.1; 5530 1.5; 5917 2.8; 6331 3.5; 6775 3.4; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.1; 9502 -0.4; 10167 -0.1; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-4.2dB` and instead set Global volume in the UI for both channels to **-42**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Monster Lady Gaga ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 29 Hz    | 0.45 | -5.0 dB |
+| Peaking | 157 Hz   | 1.1  | -4.1 dB |
+| Peaking | 2054 Hz  | 1.66 | -4.2 dB |
+| Peaking | 3479 Hz  | 5.65 | 3.2 dB  |
+| Peaking | 6412 Hz  | 5.18 | 4.2 dB  |
+| Peaking | 281 Hz   | 2.22 | -0.6 dB |
+| Peaking | 716 Hz   | 1.44 | 1.5 dB  |
+| Peaking | 1524 Hz  | 4.47 | -1.0 dB |
+| Peaking | 4672 Hz  | 8.93 | -1.8 dB |
+| Peaking | 24000 Hz | 1.95 | 0.2 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Lady%20Gaga/Monster%20Lady%20Gaga.png)

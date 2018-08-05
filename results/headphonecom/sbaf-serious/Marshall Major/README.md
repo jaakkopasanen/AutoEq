@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 18 Hz   | 0.11 | 6.2 dB   |
-| Peaking | 98 Hz   | 2.13 | 1.5 dB   |
-| Peaking | 695 Hz  | 1.32 | 3.9 dB   |
+| Peaking | 23 Hz   | 0.14 | 6.1 dB   |
+| Peaking | 97 Hz   | 2.18 | 1.5 dB   |
+| Peaking | 696 Hz  | 1.32 | 3.9 dB   |
 | Peaking | 1739 Hz | 1.93 | -10.6 dB |
 | Peaking | 3873 Hz | 1.47 | 7.6 dB   |
-| Peaking | 2128 Hz | 6.18 | -1.3 dB  |
-| Peaking | 2966 Hz | 2.48 | 2.2 dB   |
-| Peaking | 3612 Hz | 3.08 | -2.1 dB  |
-| Peaking | 5661 Hz | 2.69 | 6.7 dB   |
-| Peaking | 6965 Hz | 1.67 | -6.2 dB  |
+| Peaking | 2124 Hz | 6.18 | -1.3 dB  |
+| Peaking | 2969 Hz | 2.44 | 2.2 dB   |
+| Peaking | 3612 Hz | 3.12 | -2.2 dB  |
+| Peaking | 5672 Hz | 2.72 | 6.7 dB   |
+| Peaking | 6949 Hz | 1.66 | -6.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Marshall%20Major/Marshall%20Major.png)

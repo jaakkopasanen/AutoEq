@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2607 Hz | 3.17 | 5.9 dB  |
 | Peaking | 5211 Hz | 1.98 | 6.6 dB  |
 | Peaking | 1008 Hz | 3.21 | -0.7 dB |
-| Peaking | 5393 Hz | 5.29 | -2.5 dB |
-| Peaking | 8440 Hz | 1.29 | -1.3 dB |
-| Peaking | 6382 Hz | 1.96 | 3.4 dB  |
-| Peaking | 7507 Hz | 4.09 | -2.3 dB |
+| Peaking | 5394 Hz | 5.31 | -2.5 dB |
+| Peaking | 8275 Hz | 1.26 | -1.4 dB |
+| Peaking | 6432 Hz | 1.93 | 3.6 dB  |
+| Peaking | 7480 Hz | 4.02 | -2.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Phiaton%20Bridge%20M500/Phiaton%20Bridge%20M500.png)

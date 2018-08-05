@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 220 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 26 Hz   | 1.11 | 6.3 dB  |
-| Peaking | 70 Hz   | 5.36 | 2.3 dB  |
-| Peaking | 1807 Hz | 2.73 | 6.9 dB  |
-| Peaking | 2445 Hz | 1.95 | -6.4 dB |
-| Peaking | 4405 Hz | 1.91 | 7.3 dB  |
-| Peaking | 84 Hz   | 0.74 | 1.6 dB  |
-| Peaking | 150 Hz  | 0.79 | -2.8 dB |
-| Peaking | 630 Hz  | 3.03 | 0.6 dB  |
-| Peaking | 6428 Hz | 8.35 | 5.9 dB  |
-| Peaking | 6950 Hz | 2.23 | -2.5 dB |
+| Peaking | 26 Hz   | 1.1  | 6.3 dB  |
+| Peaking | 70 Hz   | 5.35 | 2.3 dB  |
+| Peaking | 1809 Hz | 2.72 | 6.9 dB  |
+| Peaking | 2451 Hz | 1.94 | -6.5 dB |
+| Peaking | 4406 Hz | 1.91 | 7.3 dB  |
+| Peaking | 50 Hz   | 2.31 | 1.0 dB  |
+| Peaking | 172 Hz  | 1.16 | -2.2 dB |
+| Peaking | 2045 Hz | 2.5  | 0.2 dB  |
+| Peaking | 6397 Hz | 8.34 | 6.0 dB  |
+| Peaking | 6947 Hz | 2.23 | -2.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20220/Sennheiser%20RS%20220.png)

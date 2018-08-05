@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 1.27 | 4.8 dB  |
-| Peaking | 58 Hz   | 1.46 | -1.0 dB |
+| Peaking | 18 Hz   | 1.3  | 4.8 dB  |
+| Peaking | 55 Hz   | 1.44 | -1.0 dB |
 | Peaking | 158 Hz  | 1.26 | -4.1 dB |
-| Peaking | 492 Hz  | 1.83 | 2.6 dB  |
-| Peaking | 3659 Hz | 0.91 | 7.0 dB  |
+| Peaking | 490 Hz  | 1.83 | 2.6 dB  |
+| Peaking | 3654 Hz | 0.91 | 7.0 dB  |
 | Peaking | 1539 Hz | 2.84 | -2.1 dB |
-| Peaking | 2316 Hz | 3.33 | 2.6 dB  |
-| Peaking | 3659 Hz | 2.81 | -1.2 dB |
-| Peaking | 5882 Hz | 2.43 | 4.3 dB  |
-| Peaking | 7233 Hz | 1.28 | -2.9 dB |
+| Peaking | 2316 Hz | 3.34 | 2.5 dB  |
+| Peaking | 3656 Hz | 2.8  | -1.2 dB |
+| Peaking | 5884 Hz | 2.41 | 4.4 dB  |
+| Peaking | 7215 Hz | 1.28 | -2.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-WS55/Audio%20Technica%20ATH-WS55.png)

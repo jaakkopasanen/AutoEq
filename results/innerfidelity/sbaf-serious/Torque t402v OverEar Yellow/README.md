@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 33 Hz    | 0.3  | -13.3 dB |
-| Peaking | 147 Hz   | 1.03 | -12.0 dB |
+| Peaking | 148 Hz   | 1.02 | -12.0 dB |
 | Peaking | 259 Hz   | 1.65 | -11.0 dB |
-| Peaking | 1276 Hz  | 6.15 | -5.0 dB  |
-| Peaking | 7972 Hz  | 2.3  | -7.0 dB  |
-| Peaking | 374 Hz   | 3.37 | -2.2 dB  |
-| Peaking | 765 Hz   | 2.76 | 6.4 dB   |
-| Peaking | 2898 Hz  | 1.29 | -5.5 dB  |
-| Peaking | 3562 Hz  | 1.9  | 6.5 dB   |
-| Peaking | 14365 Hz | 5.27 | -3.4 dB  |
+| Peaking | 1250 Hz  | 6.15 | -5.0 dB  |
+| Peaking | 7973 Hz  | 2.3  | -7.0 dB  |
+| Peaking | 375 Hz   | 3.38 | -2.2 dB  |
+| Peaking | 767 Hz   | 2.68 | 6.4 dB   |
+| Peaking | 2922 Hz  | 1.2  | -5.6 dB  |
+| Peaking | 3599 Hz  | 1.85 | 6.7 dB   |
+| Peaking | 14353 Hz | 5.51 | -3.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Yellow/Torque%20t402v%20OverEar%20Yellow.png)

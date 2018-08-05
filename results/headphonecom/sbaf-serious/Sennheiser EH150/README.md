@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 400 Hz  | 2.77 | 4.0 dB  |
 | Peaking | 3125 Hz | 1.82 | 6.6 dB  |
 | Peaking | 5890 Hz | 3.84 | 5.8 dB  |
-| Peaking | 2472 Hz | 0.44 | -2.0 dB |
-| Peaking | 2918 Hz | 1.25 | 4.1 dB  |
-| Peaking | 6656 Hz | 7.45 | 2.2 dB  |
-| Peaking | 3064 Hz | 4.84 | -3.1 dB |
-| Peaking | 7598 Hz | 2.62 | -0.9 dB |
+| Peaking | 2348 Hz | 0.45 | -1.9 dB |
+| Peaking | 2959 Hz | 1.23 | 3.9 dB  |
+| Peaking | 6633 Hz | 7.44 | 2.2 dB  |
+| Peaking | 3018 Hz | 4.8  | -2.9 dB |
+| Peaking | 7598 Hz | 2.41 | -0.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20EH150/Sennheiser%20EH150.png)

@@ -21,14 +21,14 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 35 Hz   | 0.85 | 7.1 dB  |
-| Peaking | 1803 Hz | 1.28 | -8.4 dB |
-| Peaking | 2683 Hz | 0.59 | 7.3 dB  |
-| Peaking | 6004 Hz | 2.57 | -4.3 dB |
-| Peaking | 9108 Hz | 4.47 | -6.2 dB |
-| Peaking | 35 Hz   | 1.3  | -6.0 dB |
-| Peaking | 42 Hz   | 0.36 | 5.2 dB  |
-| Peaking | 138 Hz  | 0.76 | -4.4 dB |
-| Peaking | 384 Hz  | 1    | 1.0 dB  |
+| Peaking | 36 Hz   | 0.85 | 7.1 dB  |
+| Peaking | 1798 Hz | 1.28 | -8.4 dB |
+| Peaking | 2691 Hz | 0.59 | 7.3 dB  |
+| Peaking | 6005 Hz | 2.56 | -4.3 dB |
+| Peaking | 9124 Hz | 4.47 | -6.2 dB |
+| Peaking | 35 Hz   | 1.24 | -6.4 dB |
+| Peaking | 42 Hz   | 0.35 | 5.6 dB  |
+| Peaking | 139 Hz  | 0.74 | -4.6 dB |
+| Peaking | 381 Hz  | 0.94 | 1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-Gamma%20Pro/Stax%20SR-Gamma%20Pro.png)

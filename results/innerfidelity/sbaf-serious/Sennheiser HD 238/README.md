@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 23
 In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 19 Hz   |  1.45 | 3.4 dB  |
-| Peaking | 170 Hz  |  0.62 | -4.8 dB |
-| Peaking | 2456 Hz |  6.3  | 3.6 dB  |
-| Peaking | 3210 Hz |  9.49 | -3.8 dB |
-| Peaking | 9148 Hz |  5.91 | -4.0 dB |
-| Peaking | 1298 Hz |  1.26 | 1.6 dB  |
-| Peaking | 1547 Hz |  2.48 | -2.6 dB |
-| Peaking | 3913 Hz |  9.14 | 4.7 dB  |
-| Peaking | 4521 Hz |  5.47 | -4.5 dB |
-| Peaking | 7424 Hz | 10.06 | 1.3 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 21 Hz   | 1.47 | 3.5 dB  |
+| Peaking | 168 Hz  | 0.64 | -4.8 dB |
+| Peaking | 2456 Hz | 6.31 | 3.6 dB  |
+| Peaking | 3210 Hz | 9.5  | -3.8 dB |
+| Peaking | 9126 Hz | 5.9  | -4.0 dB |
+| Peaking | 1104 Hz | 3.31 | 1.2 dB  |
+| Peaking | 1591 Hz | 3.55 | -1.4 dB |
+| Peaking | 3894 Hz | 8.86 | 4.7 dB  |
+| Peaking | 4501 Hz | 5.56 | -4.6 dB |
+| Peaking | 7429 Hz | 9.4  | 1.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20238/Sennheiser%20HD%20238.png)

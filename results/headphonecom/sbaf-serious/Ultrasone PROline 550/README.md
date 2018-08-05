@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:---------|:------|:--------|
 | Peaking | 67 Hz    |  0.22 | 6.7 dB  |
 | Peaking | 3509 Hz  |  1.84 | 3.3 dB  |
-| Peaking | 6393 Hz  |  6.5  | 6.0 dB  |
-| Peaking | 9096 Hz  |  5.15 | -5.1 dB |
-| Peaking | 17444 Hz |  2.95 | -3.6 dB |
-| Peaking | 20 Hz    |  2.57 | 1.0 dB  |
-| Peaking | 333 Hz   |  1.62 | 5.7 dB  |
-| Peaking | 451 Hz   |  1.61 | -6.3 dB |
-| Peaking | 1995 Hz  |  5.07 | 2.2 dB  |
-| Peaking | 2489 Hz  | 11.1  | -3.0 dB |
+| Peaking | 6384 Hz  |  6.5  | 6.0 dB  |
+| Peaking | 9085 Hz  |  5.15 | -5.1 dB |
+| Peaking | 17432 Hz |  2.95 | -3.6 dB |
+| Peaking | 19 Hz    |  2.6  | 1.0 dB  |
+| Peaking | 334 Hz   |  1.61 | 5.8 dB  |
+| Peaking | 450 Hz   |  1.6  | -6.4 dB |
+| Peaking | 1982 Hz  |  5.36 | 2.2 dB  |
+| Peaking | 2480 Hz  | 11.83 | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20PROline%20550/Ultrasone%20PROline%20550.png)

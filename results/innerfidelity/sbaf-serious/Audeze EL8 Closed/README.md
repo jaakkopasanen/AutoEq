@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Audeze EL8 Closed ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 43 Hz    | 1.19 | 3.0 dB  |
-| Peaking | 347 Hz   | 0.7  | 4.4 dB  |
-| Peaking | 6502 Hz  | 0.03 | -1.2 dB |
-| Peaking | 4756 Hz  | 4.31 | -6.0 dB |
-| Peaking | 5916 Hz  | 2.93 | 9.1 dB  |
-| Peaking | 118 Hz   | 2.71 | -1.8 dB |
-| Peaking | 1257 Hz  | 0.92 | 1.6 dB  |
-| Peaking | 1797 Hz  | 1.13 | -3.1 dB |
-| Peaking | 2524 Hz  | 3.14 | 2.4 dB  |
-| Peaking | 11986 Hz | 3.53 | 1.2 dB  |
+| Peaking | 40 Hz    | 1.24 | 3.0 dB  |
+| Peaking | 368 Hz   | 0.81 | 3.8 dB  |
+| Peaking | 5847 Hz  | 0.11 | -1.5 dB |
+| Peaking | 4821 Hz  | 4.36 | -7.8 dB |
+| Peaking | 5812 Hz  | 2.44 | 9.8 dB  |
+| Peaking | 120 Hz   | 2.8  | -1.7 dB |
+| Peaking | 231 Hz   | 3.43 | 1.0 dB  |
+| Peaking | 1775 Hz  | 3.89 | -1.8 dB |
+| Peaking | 2591 Hz  | 6.35 | 1.5 dB  |
+| Peaking | 12087 Hz | 3.68 | 1.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20EL8%20Closed/Audeze%20EL8%20Closed.png)

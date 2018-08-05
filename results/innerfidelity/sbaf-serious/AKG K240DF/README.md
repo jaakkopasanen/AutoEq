@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 41 Hz   |  0.66 | 7.1 dB  |
-| Peaking | 1841 Hz |  2.34 | -2.8 dB |
-| Peaking | 4285 Hz |  2.09 | -9.6 dB |
-| Peaking | 5516 Hz |  0.94 | 10.7 dB |
-| Peaking | 9065 Hz |  2.2  | -9.6 dB |
-| Peaking | 18 Hz   |  1.19 | 3.0 dB  |
-| Peaking | 40 Hz   |  1.4  | -1.9 dB |
-| Peaking | 85 Hz   |  1.42 | 2.9 dB  |
-| Peaking | 228 Hz  |  0.54 | -2.4 dB |
-| Peaking | 2988 Hz | 11.01 | 1.9 dB  |
+| Peaking | 1842 Hz |  2.34 | -2.8 dB |
+| Peaking | 4281 Hz |  2.08 | -9.6 dB |
+| Peaking | 5518 Hz |  0.94 | 10.7 dB |
+| Peaking | 9071 Hz |  2.2  | -9.6 dB |
+| Peaking | 18 Hz   |  1.09 | 3.0 dB  |
+| Peaking | 41 Hz   |  1.42 | -1.9 dB |
+| Peaking | 85 Hz   |  1.41 | 3.0 dB  |
+| Peaking | 231 Hz  |  0.55 | -2.4 dB |
+| Peaking | 3004 Hz | 10.05 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K240DF/AKG%20K240DF.png)

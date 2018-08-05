@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 93 Hz   | 0.94 | 5.9 dB  |
 | Peaking | 3223 Hz | 3.05 | 5.6 dB  |
 | Peaking | 5686 Hz | 3.13 | 6.3 dB  |
-| Peaking | 282 Hz  | 2.9  | -0.6 dB |
-| Peaking | 1897 Hz | 1.69 | -3.8 dB |
-| Peaking | 2695 Hz | 7.08 | 2.7 dB  |
-| Peaking | 3175 Hz | 0.28 | 0.8 dB  |
-| Peaking | 9025 Hz | 4.76 | -4.8 dB |
+| Peaking | 289 Hz  | 2.21 | -0.6 dB |
+| Peaking | 1974 Hz | 1.24 | -4.4 dB |
+| Peaking | 2684 Hz | 5.82 | 3.3 dB  |
+| Peaking | 2570 Hz | 0.34 | 1.3 dB  |
+| Peaking | 9137 Hz | 4.78 | -4.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20280%20Pro/Sennheiser%20HD%20280%20Pro.png)

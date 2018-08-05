@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 5721 Hz  |  5.7  | -7.6 dB |
 | Peaking | 15165 Hz |  1.99 | -3.8 dB |
 | Peaking | 513 Hz   |  1.41 | 2.3 dB  |
-| Peaking | 1793 Hz  |  2.52 | -2.8 dB |
-| Peaking | 2939 Hz  |  5.97 | 1.4 dB  |
-| Peaking | 6169 Hz  | 10.07 | -2.2 dB |
-| Peaking | 7027 Hz  |  3.32 | 1.7 dB  |
+| Peaking | 1791 Hz  |  2.52 | -2.8 dB |
+| Peaking | 2909 Hz  |  5.97 | 1.4 dB  |
+| Peaking | 6122 Hz  | 10.07 | -2.2 dB |
+| Peaking | 7005 Hz  |  3.33 | 1.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Enigmacoustics%20Dharma%20Production%202015/Enigmacoustics%20Dharma%20Production%202015.png)

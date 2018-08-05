@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 189 Hz   | 0.43 | -3.9 dB |
 | Peaking | 1846 Hz  | 3.13 | -4.7 dB |
 | Peaking | 10190 Hz | 4.31 | -4.0 dB |
-| Peaking | 609 Hz   | 2.89 | -1.1 dB |
-| Peaking | 1060 Hz  | 4.39 | 1.3 dB  |
-| Peaking | 9004 Hz  | 4.55 | -1.0 dB |
-| Peaking | 3854 Hz  | 8.25 | 3.5 dB  |
-| Peaking | 5738 Hz  | 3.38 | 3.6 dB  |
+| Peaking | 610 Hz   | 2.89 | -1.1 dB |
+| Peaking | 1060 Hz  | 4.4  | 1.3 dB  |
+| Peaking | 8991 Hz  | 4.48 | -1.0 dB |
+| Peaking | 3886 Hz  | 8.19 | 3.5 dB  |
+| Peaking | 5719 Hz  | 3.38 | 3.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Meze%2099%20Classic%20with%20New%20Pads/Meze%2099%20Classic%20with%20New%20Pads.png)

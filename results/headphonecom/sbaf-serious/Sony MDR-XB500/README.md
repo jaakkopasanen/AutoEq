@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 6 Hz     | 1.31 | -8.8 dB |
-| Peaking | 28 Hz    | 0.15 | -8.7 dB |
-| Peaking | 220 Hz   | 0.65 | -9.2 dB |
+| Peaking | 6 Hz     | 1.27 | -8.8 dB |
+| Peaking | 28 Hz    | 0.14 | -8.7 dB |
+| Peaking | 219 Hz   | 0.65 | -9.2 dB |
 | Peaking | 414 Hz   | 1.89 | -4.3 dB |
 | Peaking | 3414 Hz  | 4.24 | 7.4 dB  |
-| Peaking | 917 Hz   | 1.79 | 7.2 dB  |
-| Peaking | 1742 Hz  | 0.69 | -8.9 dB |
-| Peaking | 2610 Hz  | 1.06 | 6.9 dB  |
-| Peaking | 4851 Hz  | 7.19 | -3.5 dB |
-| Peaking | 25755 Hz | 1.7  | -0.3 dB |
+| Peaking | 912 Hz   | 2.22 | 5.8 dB  |
+| Peaking | 1647 Hz  | 0.95 | -6.4 dB |
+| Peaking | 2666 Hz  | 1.35 | 4.0 dB  |
+| Peaking | 4872 Hz  | 6.43 | -3.5 dB |
+| Peaking | 26445 Hz | 1.73 | -0.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-XB500/Sony%20MDR-XB500.png)

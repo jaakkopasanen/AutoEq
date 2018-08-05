@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 62 Hz    | 1.92 | 2.5 dB  |
-| Peaking | 3995 Hz  | 1.15 | -7.3 dB |
-| Peaking | 6557 Hz  | 1.18 | 6.6 dB  |
-| Peaking | 9161 Hz  | 3.01 | -8.2 dB |
-| Peaking | 32791 Hz | 4.37 | -3.5 dB |
-| Peaking | 182 Hz   | 1.66 | -1.2 dB |
-| Peaking | 811 Hz   | 2.78 | -1.4 dB |
-| Peaking | 484 Hz   | 1.64 | -1.2 dB |
-| Peaking | 966 Hz   | 0.66 | 1.2 dB  |
-| Peaking | 2476 Hz  | 5.1  | -1.5 dB |
+| Peaking | 3935 Hz  | 1.18 | -6.7 dB |
+| Peaking | 6534 Hz  | 1.44 | 6.0 dB  |
+| Peaking | 9197 Hz  | 3.23 | -7.6 dB |
+| Peaking | 32883 Hz | 4.55 | -3.4 dB |
+| Peaking | 171 Hz   | 2.19 | -1.0 dB |
+| Peaking | 573 Hz   | 0.64 | -0.8 dB |
+| Peaking | 1292 Hz  | 1.54 | 1.2 dB  |
+| Peaking | 2457 Hz  | 6.83 | -1.3 dB |
+| Peaking | 12052 Hz | 6.46 | 1.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20N90Q%20Nominal/AKG%20N90Q%20Nominal.png)

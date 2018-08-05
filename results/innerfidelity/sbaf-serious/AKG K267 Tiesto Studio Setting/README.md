@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 36 Hz   | 0.73 | 4.4 dB  |
-| Peaking | 74 Hz   | 2.14 | 3.9 dB  |
-| Peaking | 1462 Hz | 3.83 | -3.4 dB |
-| Peaking | 3943 Hz | 1.33 | 5.8 dB  |
-| Peaking | 6165 Hz | 5.86 | 4.1 dB  |
-| Peaking | 218 Hz  | 2.18 | -0.9 dB |
-| Peaking | 135 Hz  | 4.81 | -1.2 dB |
+| Peaking | 36 Hz   | 0.72 | 4.4 dB  |
+| Peaking | 74 Hz   | 2.15 | 3.8 dB  |
+| Peaking | 1462 Hz | 3.82 | -3.4 dB |
+| Peaking | 3949 Hz | 1.33 | 5.8 dB  |
+| Peaking | 6169 Hz | 6.1  | 4.2 dB  |
+| Peaking | 221 Hz  | 2.19 | -0.9 dB |
+| Peaking | 136 Hz  | 4.75 | -1.2 dB |
 | Peaking | 338 Hz  | 2.55 | 2.5 dB  |
-| Peaking | 6719 Hz | 6.36 | 1.4 dB  |
-| Peaking | 7923 Hz | 2.35 | -1.4 dB |
+| Peaking | 6709 Hz | 6.45 | 1.4 dB  |
+| Peaking | 7933 Hz | 2.35 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K267%20Tiesto%20Studio%20Setting/AKG%20K267%20Tiesto%20Studio%20Setting.png)

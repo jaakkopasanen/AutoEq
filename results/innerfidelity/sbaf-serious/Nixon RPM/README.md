@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 1.15 | 6.6 dB  |
-| Peaking | 152 Hz  | 0.7  | -2.6 dB |
-| Peaking | 347 Hz  | 4.1  | -1.7 dB |
-| Peaking | 2877 Hz | 1.01 | 6.6 dB  |
+| Peaking | 24 Hz   | 1.15 | 6.5 dB  |
+| Peaking | 153 Hz  | 0.71 | -2.6 dB |
+| Peaking | 348 Hz  | 4.1  | -1.7 dB |
+| Peaking | 2879 Hz | 1.01 | 6.6 dB  |
 | Peaking | 5772 Hz | 3.38 | 4.6 dB  |
-| Peaking | 618 Hz  | 3.66 | 1.3 dB  |
+| Peaking | 618 Hz  | 3.63 | 1.3 dB  |
 | Peaking | 1225 Hz | 0.86 | -0.9 dB |
-| Peaking | 2015 Hz | 4.8  | 2.0 dB  |
-| Peaking | 6601 Hz | 5.59 | 2.0 dB  |
-| Peaking | 7844 Hz | 2.38 | -1.7 dB |
+| Peaking | 2014 Hz | 4.78 | 2.0 dB  |
+| Peaking | 6660 Hz | 5.66 | 2.0 dB  |
+| Peaking | 7857 Hz | 2.38 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Nixon%20RPM/Nixon%20RPM.png)

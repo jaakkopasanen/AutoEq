@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2480 Hz |  2.08 | 5.0 dB  |
 | Peaking | 3990 Hz |  1.76 | 4.9 dB  |
 | Peaking | 5820 Hz |  3.31 | 4.6 dB  |
-| Peaking | 528 Hz  |  6.66 | 1.3 dB  |
-| Peaking | 2432 Hz |  0.34 | 0.4 dB  |
-| Peaking | 1232 Hz |  1.22 | -1.6 dB |
-| Peaking | 1587 Hz | 13.36 | 4.0 dB  |
-| Peaking | 8387 Hz |  3.1  | -1.3 dB |
+| Peaking | 534 Hz  |  6.68 | 1.2 dB  |
+| Peaking | 2336 Hz |  0.33 | 0.4 dB  |
+| Peaking | 1234 Hz |  1.21 | -1.6 dB |
+| Peaking | 1572 Hz | 13.35 | 4.0 dB  |
+| Peaking | 8386 Hz |  3.1  | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Phiaton%20Chord%20MS530%20NC%20on/Phiaton%20Chord%20MS530%20NC%20on.png)

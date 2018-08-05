@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 12 Hz   | 1.08 | -4.1 dB |
-| Peaking | 40 Hz   | 0.51 | -4.6 dB |
-| Peaking | 139 Hz  | 1.63 | -4.8 dB |
-| Peaking | 462 Hz  | 1.83 | -2.8 dB |
+| Peaking | 12 Hz   | 1.07 | -4.2 dB |
+| Peaking | 41 Hz   | 0.52 | -4.6 dB |
+| Peaking | 139 Hz  | 1.63 | -4.9 dB |
+| Peaking | 459 Hz  | 1.83 | -2.8 dB |
 | Peaking | 5037 Hz | 1.7  | 6.8 dB  |
-| Peaking | 260 Hz  | 7.36 | 1.9 dB  |
-| Peaking | 1258 Hz | 4.99 | 0.9 dB  |
-| Peaking | 6175 Hz | 6.27 | 1.8 dB  |
-| Peaking | 6629 Hz | 5.59 | 2.2 dB  |
-| Peaking | 7451 Hz | 1.86 | -2.2 dB |
+| Peaking | 259 Hz  | 7.16 | 1.9 dB  |
+| Peaking | 2829 Hz | 4.58 | -0.2 dB |
+| Peaking | 6224 Hz | 6.24 | 1.7 dB  |
+| Peaking | 6651 Hz | 5.4  | 2.0 dB  |
+| Peaking | 7541 Hz | 1.98 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Onkyo%20ES-FC300/Onkyo%20ES-FC300.png)

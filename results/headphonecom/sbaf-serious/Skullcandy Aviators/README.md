@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 145 Hz   | 0.46 | -11.4 dB |
-| Peaking | 444 Hz   | 1.4  | -4.2 dB  |
+| Peaking | 145 Hz   | 0.47 | -11.4 dB |
+| Peaking | 444 Hz   | 1.4  | -4.1 dB  |
 | Peaking | 1999 Hz  | 1.42 | -6.6 dB  |
 | Peaking | 4481 Hz  | 3.19 | -11.9 dB |
 | Peaking | 10728 Hz | 1.52 | -9.0 dB  |
-| Peaking | 21 Hz    | 2.44 | 5.6 dB   |
-| Peaking | 972 Hz   | 4.07 | 4.2 dB   |
-| Peaking | 713 Hz   | 3.91 | -1.9 dB  |
-| Peaking | 6975 Hz  | 2.62 | 8.4 dB   |
-| Peaking | 7405 Hz  | 1.25 | -4.8 dB  |
+| Peaking | 22 Hz    | 2.43 | 5.6 dB   |
+| Peaking | 989 Hz   | 2.6  | 7.7 dB   |
+| Peaking | 1013 Hz  | 1.07 | -3.8 dB  |
+| Peaking | 7164 Hz  | 3.71 | 3.9 dB   |
+| Peaking | 8971 Hz  | 6.23 | -4.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Skullcandy%20Aviators/Skullcandy%20Aviators.png)

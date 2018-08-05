@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 232 Hz   | 0.73 | -11.0 dB |
 | Peaking | 2724 Hz  | 0.8  | -9.4 dB  |
 | Peaking | 9139 Hz  | 4.97 | -16.1 dB |
-| Peaking | 678 Hz   | 6.85 | 1.5 dB   |
+| Peaking | 670 Hz   | 6.85 | 1.5 dB   |
 | Peaking | 4325 Hz  | 3.31 | -2.7 dB  |
-| Peaking | 5381 Hz  | 3.32 | 3.1 dB   |
+| Peaking | 5382 Hz  | 3.32 | 3.1 dB   |
 | Peaking | 10096 Hz | 5.42 | -5.1 dB  |
 | Peaking | 11100 Hz | 3.08 | 4.3 dB   |
 

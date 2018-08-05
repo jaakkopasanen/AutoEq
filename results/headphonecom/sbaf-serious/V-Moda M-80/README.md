@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 611 Hz  | 1.21 | 5.2 dB  |
 | Peaking | 1378 Hz | 2.34 | -4.6 dB |
 | Peaking | 5694 Hz | 2.72 | 5.1 dB  |
-| Peaking | 19 Hz   | 2.39 | 1.8 dB  |
-| Peaking | 1702 Hz | 5.23 | -1.8 dB |
-| Peaking | 2424 Hz | 1.53 | 1.6 dB  |
-| Peaking | 3346 Hz | 7.03 | -2.3 dB |
-| Peaking | 8848 Hz | 5.78 | -1.7 dB |
+| Peaking | 21 Hz   | 2.22 | 1.9 dB  |
+| Peaking | 1699 Hz | 5.23 | -1.8 dB |
+| Peaking | 2425 Hz | 1.53 | 1.6 dB  |
+| Peaking | 3351 Hz | 7.03 | -2.3 dB |
+| Peaking | 8770 Hz | 5.78 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/V-Moda%20M-80/V-Moda%20M-80.png)

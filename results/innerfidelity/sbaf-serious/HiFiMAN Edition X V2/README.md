@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 207 Hz  | 0.31 | -1.9 dB |
 | Peaking | 1523 Hz | 1.26 | 5.4 dB  |
 | Peaking | 5623 Hz | 6.84 | 4.3 dB  |
-| Peaking | 393 Hz  | 3.14 | 3.8 dB  |
-| Peaking | 437 Hz  | 1.53 | -2.5 dB |
-| Peaking | 731 Hz  | 8.92 | 1.8 dB  |
-| Peaking | 3495 Hz | 1.87 | -1.0 dB |
-| Peaking | 3722 Hz | 4.58 | 2.1 dB  |
+| Peaking | 395 Hz  | 3.13 | 3.8 dB  |
+| Peaking | 435 Hz  | 1.53 | -2.5 dB |
+| Peaking | 729 Hz  | 8.93 | 1.8 dB  |
+| Peaking | 3507 Hz | 1.88 | -1.0 dB |
+| Peaking | 3710 Hz | 4.53 | 2.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20Edition%20X%20V2/HiFiMAN%20Edition%20X%20V2.png)

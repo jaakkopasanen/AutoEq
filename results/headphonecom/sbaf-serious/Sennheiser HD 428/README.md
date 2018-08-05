@@ -16,7 +16,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 428 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2874 Hz  | 4.21 | 2.0 dB  |
 | Peaking | 4873 Hz  | 1.75 | 5.9 dB  |
 | Peaking | 24000 Hz | 2.36 | 2.9 dB  |
-| Peaking | 22 Hz    | 3.18 | 1.3 dB  |
-| Peaking | 84 Hz    | 3.84 | 2.3 dB  |
+| Peaking | 21 Hz    | 2.52 | 1.2 dB  |
+| Peaking | 85 Hz    | 3.87 | 2.2 dB  |
 | Peaking | 135 Hz   | 2.43 | -2.1 dB |
-| Peaking | 1737 Hz  | 3.47 | -3.1 dB |
-| Peaking | 744 Hz   | 0.15 | 0.3 dB  |
+| Peaking | 1736 Hz  | 3.46 | -3.1 dB |
+| Peaking | 739 Hz   | 0.15 | 0.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20428/Sennheiser%20HD%20428.png)

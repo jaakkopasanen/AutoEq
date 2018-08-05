@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1650 Hz  |  1.67 | -5.7 dB |
 | Peaking | 2348 Hz  |  4.03 | 5.5 dB  |
 | Peaking | 5263 Hz  |  3.68 | 4.0 dB  |
-| Peaking | 35 Hz    |  2.66 | -1.4 dB |
-| Peaking | 75 Hz    |  3.26 | 1.3 dB  |
-| Peaking | 10670 Hz |  4.55 | 0.7 dB  |
-| Peaking | 6823 Hz  | 10.45 | 3.1 dB  |
-| Peaking | 9115 Hz  |  4.71 | -4.3 dB |
+| Peaking | 36 Hz    |  2.67 | -1.4 dB |
+| Peaking | 75 Hz    |  3.33 | 1.2 dB  |
+| Peaking | 10687 Hz |  4.62 | 0.7 dB  |
+| Peaking | 6837 Hz  | 10.53 | 3.1 dB  |
+| Peaking | 9127 Hz  |  4.72 | -4.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20Lambda%20Nova%20Signature/Stax%20Lambda%20Nova%20Signature.png)

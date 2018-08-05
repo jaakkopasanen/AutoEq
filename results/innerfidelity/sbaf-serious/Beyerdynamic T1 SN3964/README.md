@@ -1,4 +1,4 @@
-# Beyerdynamic T1 SN3964
+# Beyerdynamic T1 sn3964
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,23 +13,23 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -5.4dB` and instead set Global volume in the UI for both channels to **-54**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T1 SN3964 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T1 sn3964 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 11 Hz    |  0.15 | 3.0 dB  |
-| Peaking | 184 Hz   |  0.65 | -3.8 dB |
-| Peaking | 2383 Hz  |  3.11 | -1.8 dB |
-| Peaking | 5291 Hz  | 13.9  | 6.0 dB  |
-| Peaking | 8611 Hz  |  4.08 | -9.0 dB |
-| Peaking | 1158 Hz  |  6.07 | 1.3 dB  |
-| Peaking | 3374 Hz  |  6.48 | 1.4 dB  |
-| Peaking | 5369 Hz  |  4.5  | -1.1 dB |
-| Peaking | 4289 Hz  |  6.65 | -2.0 dB |
-| Peaking | 11049 Hz |  4.23 | 1.4 dB  |
+| Peaking | 9 Hz     |  0.13 | 3.0 dB  |
+| Peaking | 185 Hz   |  0.65 | -3.8 dB |
+| Peaking | 2384 Hz  |  3.11 | -1.8 dB |
+| Peaking | 5257 Hz  | 13.93 | 6.0 dB  |
+| Peaking | 8561 Hz  |  4.08 | -9.0 dB |
+| Peaking | 1171 Hz  |  5.57 | 1.3 dB  |
+| Peaking | 3370 Hz  |  6.92 | 1.7 dB  |
+| Peaking | 4932 Hz  |  0.77 | -0.4 dB |
+| Peaking | 4318 Hz  |  7.64 | -1.9 dB |
+| Peaking | 11059 Hz |  4.86 | 1.4 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T1%20SN3964/Beyerdynamic%20T1%20SN3964.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T1%20sn3964/Beyerdynamic%20T1%20sn3964.png)

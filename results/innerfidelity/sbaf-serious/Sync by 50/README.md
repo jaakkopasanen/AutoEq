@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 403 Hz  | 2.1  | -6.0 dB |
 | Peaking | 1950 Hz | 4.23 | -3.6 dB |
 | Peaking | 5540 Hz | 2.8  | 4.3 dB  |
-| Peaking | 508 Hz  | 6.16 | -2.2 dB |
-| Peaking | 554 Hz  | 5.24 | -1.4 dB |
-| Peaking | 749 Hz  | 2.75 | 4.2 dB  |
-| Peaking | 3072 Hz | 3.31 | 3.6 dB  |
-| Peaking | 3160 Hz | 1.39 | -1.9 dB |
+| Peaking | 493 Hz  | 7.72 | -1.9 dB |
+| Peaking | 552 Hz  | 6.71 | -2.1 dB |
+| Peaking | 754 Hz  | 2.83 | 4.2 dB  |
+| Peaking | 3105 Hz | 3.2  | 3.9 dB  |
+| Peaking | 3138 Hz | 1.49 | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sync%20by%2050/Sync%20by%2050.png)

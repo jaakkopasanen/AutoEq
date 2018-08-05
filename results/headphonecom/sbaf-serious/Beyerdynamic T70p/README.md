@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 157 Hz   | 1.94 | -2.2 dB  |
+| Peaking | 157 Hz   | 1.93 | -2.3 dB  |
 | Peaking | 2456 Hz  | 4.12 | 4.8 dB   |
 | Peaking | 5892 Hz  | 2.77 | 8.6 dB   |
 | Peaking | 3844 Hz  | 2.61 | 4.1 dB   |
 | Peaking | 8659 Hz  | 2.42 | -12.8 dB |
-| Peaking | 18 Hz    | 1.08 | 1.2 dB   |
-| Peaking | 85 Hz    | 2.65 | 0.2 dB   |
-| Peaking | 1624 Hz  | 4.69 | -2.4 dB  |
-| Peaking | 10178 Hz | 5.07 | -4.1 dB  |
-| Peaking | 11519 Hz | 2.34 | 3.2 dB   |
+| Peaking | 18 Hz    | 1.08 | 1.1 dB   |
+| Peaking | 86 Hz    | 2.52 | 0.2 dB   |
+| Peaking | 1621 Hz  | 4.69 | -2.4 dB  |
+| Peaking | 10180 Hz | 5.13 | -4.0 dB  |
+| Peaking | 11530 Hz | 2.35 | 3.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20T70p/Beyerdynamic%20T70p.png)

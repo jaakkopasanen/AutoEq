@@ -16,7 +16,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `AKG K240 Monitor ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 386 Hz  | 1.25 | -2.1 dB |
 | Peaking | 5926 Hz | 3.48 | 7.1 dB  |
 | Peaking | 9025 Hz | 4.1  | -4.3 dB |
-| Peaking | 1217 Hz | 2.28 | 1.0 dB  |
-| Peaking | 1845 Hz | 2.28 | -2.2 dB |
-| Peaking | 3131 Hz | 2.69 | 5.4 dB  |
-| Peaking | 3640 Hz | 3.93 | -7.4 dB |
-| Peaking | 5153 Hz | 7.52 | 1.7 dB  |
+| Peaking | 1224 Hz | 2.28 | 1.0 dB  |
+| Peaking | 1844 Hz | 2.29 | -2.2 dB |
+| Peaking | 3146 Hz | 2.66 | 5.5 dB  |
+| Peaking | 3629 Hz | 3.91 | -7.6 dB |
+| Peaking | 5143 Hz | 7.56 | 1.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K240%20Monitor/AKG%20K240%20Monitor.png)

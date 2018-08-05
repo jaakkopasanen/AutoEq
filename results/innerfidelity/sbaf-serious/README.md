@@ -1,6 +1,6 @@
-# Run 2018-08-04T19:26:38.215983
+# Run 2018-08-05T17:10:20.492462
 There results were obtained with parameters:
-* `--input_dir="innerfidelity\data\onear"`
+* `--input_dir="innerfidelity\data\fixes"`
 * `--output_dir="results\innerfidelity\sbaf-serious"`
 * `--compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv"`
 * `--bass_boost=4.0`

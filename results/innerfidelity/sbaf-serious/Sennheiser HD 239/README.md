@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 239 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.78 | 3.1 dB  |
-| Peaking | 160 Hz  | 0.68 | -4.0 dB |
-| Peaking | 2514 Hz | 6.84 | 3.7 dB  |
-| Peaking | 6956 Hz | 3.86 | 1.6 dB  |
-| Peaking | 9476 Hz | 4.74 | -6.0 dB |
-| Peaking | 1712 Hz | 4.69 | -2.5 dB |
-| Peaking | 771 Hz  | 2.31 | 0.5 dB  |
-| Peaking | 3331 Hz | 6.83 | -5.0 dB |
-| Peaking | 3885 Hz | 3.57 | 7.2 dB  |
-| Peaking | 4489 Hz | 4.76 | -5.6 dB |
+| Peaking | 20 Hz   | 1.77 | 3.1 dB  |
+| Peaking | 161 Hz  | 0.67 | -4.0 dB |
+| Peaking | 2520 Hz | 6.84 | 3.6 dB  |
+| Peaking | 6958 Hz | 3.86 | 1.6 dB  |
+| Peaking | 9481 Hz | 4.74 | -6.0 dB |
+| Peaking | 1707 Hz | 4.72 | -2.5 dB |
+| Peaking | 761 Hz  | 2.06 | 0.5 dB  |
+| Peaking | 3343 Hz | 6.84 | -4.9 dB |
+| Peaking | 3896 Hz | 3.6  | 7.2 dB  |
+| Peaking | 4468 Hz | 4.76 | -5.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20239/Sennheiser%20HD%20239.png)

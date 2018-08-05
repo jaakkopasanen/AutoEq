@@ -16,7 +16,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Philips Construct ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 316 Hz  | 1.59 | 6.3 dB  |
 | Peaking | 724 Hz  | 1.01 | -3.5 dB |
 | Peaking | 2836 Hz | 0.53 | 6.9 dB  |
-| Peaking | 67 Hz   | 5.09 | 1.2 dB  |
-| Peaking | 1899 Hz | 4.23 | 0.9 dB  |
-| Peaking | 2862 Hz | 2.08 | -0.9 dB |
-| Peaking | 6026 Hz | 1.89 | 5.8 dB  |
-| Peaking | 7683 Hz | 1.37 | -4.9 dB |
+| Peaking | 69 Hz   | 5.04 | 1.2 dB  |
+| Peaking | 1863 Hz | 4.21 | 0.9 dB  |
+| Peaking | 2903 Hz | 2.07 | -0.9 dB |
+| Peaking | 6256 Hz | 1.95 | 5.6 dB  |
+| Peaking | 7443 Hz | 1.39 | -4.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20Construct/Philips%20Construct.png)

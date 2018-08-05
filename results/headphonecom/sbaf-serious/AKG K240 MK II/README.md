@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 9 Hz    | 0.23 | 6.8 dB   |
-| Peaking | 157 Hz  | 0.48 | -7.0 dB  |
-| Peaking | 2182 Hz | 1.81 | -6.0 dB  |
-| Peaking | 4172 Hz | 0.23 | 2.5 dB   |
+| Peaking | 9 Hz    | 0.25 | 6.8 dB   |
+| Peaking | 157 Hz  | 0.48 | -6.9 dB  |
+| Peaking | 2180 Hz | 1.82 | -6.0 dB  |
+| Peaking | 4165 Hz | 0.23 | 2.5 dB   |
 | Peaking | 8915 Hz | 2.53 | -12.6 dB |
-| Peaking | 37 Hz   | 3.35 | -0.7 dB  |
-| Peaking | 457 Hz  | 7.51 | -1.1 dB  |
-| Peaking | 3571 Hz | 4.21 | 2.4 dB   |
-| Peaking | 4729 Hz | 2.19 | -3.5 dB  |
-| Peaking | 5485 Hz | 4.36 | 3.9 dB   |
+| Peaking | 61 Hz   | 6.55 | 1.5 dB   |
+| Peaking | 452 Hz  | 8.09 | -1.1 dB  |
+| Peaking | 3574 Hz | 4.18 | 2.4 dB   |
+| Peaking | 4719 Hz | 2.18 | -3.5 dB  |
+| Peaking | 5488 Hz | 4.36 | 3.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K240%20MK%20II/AKG%20K240%20MK%20II.png)

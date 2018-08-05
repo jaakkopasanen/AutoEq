@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 17 Hz   | 0.69 | 3.6 dB  |
-| Peaking | 67 Hz   | 1.49 | 1.0 dB  |
+| Peaking | 17 Hz   | 0.67 | 3.6 dB  |
+| Peaking | 66 Hz   | 1.49 | 1.0 dB  |
 | Peaking | 381 Hz  | 1.47 | 3.8 dB  |
-| Peaking | 2719 Hz | 3.12 | 3.0 dB  |
-| Peaking | 4422 Hz | 1.86 | 5.9 dB  |
-| Peaking | 310 Hz  | 1.01 | -1.4 dB |
-| Peaking | 305 Hz  | 2.6  | 1.9 dB  |
-| Peaking | 606 Hz  | 3.08 | 1.0 dB  |
-| Peaking | 1559 Hz | 3.85 | -0.9 dB |
+| Peaking | 2716 Hz | 3.16 | 3.1 dB  |
+| Peaking | 4419 Hz | 1.86 | 5.9 dB  |
+| Peaking | 308 Hz  | 1.06 | -1.5 dB |
+| Peaking | 306 Hz  | 2.52 | 2.1 dB  |
+| Peaking | 604 Hz  | 3.15 | 1.0 dB  |
+| Peaking | 1559 Hz | 3.84 | -0.9 dB |
 | Peaking | 8603 Hz | 3.21 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/JAYS%20u-JAYS/JAYS%20u-JAYS.png)

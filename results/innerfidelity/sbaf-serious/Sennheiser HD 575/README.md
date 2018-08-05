@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1993 Hz | 4.36 | 2.0 dB  |
 | Peaking | 3078 Hz | 2.85 | -5.2 dB |
 | Peaking | 6793 Hz | 6.51 | 3.5 dB  |
-| Peaking | 371 Hz  | 3.28 | -0.5 dB |
+| Peaking | 370 Hz  | 3.28 | -0.4 dB |
 | Peaking | 768 Hz  | 2.26 | 0.6 dB  |
-| Peaking | 5540 Hz | 2.29 | -0.8 dB |
-| Peaking | 5245 Hz | 6.42 | 2.5 dB  |
+| Peaking | 5524 Hz | 2.48 | -0.9 dB |
+| Peaking | 5287 Hz | 6.4  | 2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20575/Sennheiser%20HD%20575.png)

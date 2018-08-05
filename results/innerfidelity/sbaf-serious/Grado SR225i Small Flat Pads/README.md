@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 5418 Hz  | 0.81 | 8.2 dB  |
 | Peaking | 7954 Hz  | 1.53 | -6.4 dB |
 | Peaking | 740 Hz   | 2.55 | 0.4 dB  |
-| Peaking | 1495 Hz  | 6.74 | -1.1 dB |
+| Peaking | 1499 Hz  | 6.74 | -1.1 dB |
 | Peaking | 2974 Hz  | 6.35 | 0.9 dB  |
-| Peaking | 9799 Hz  | 5.54 | 0.7 dB  |
-| Peaking | 13351 Hz | 0.87 | -0.4 dB |
+| Peaking | 9771 Hz  | 5.54 | 0.7 dB  |
+| Peaking | 13348 Hz | 0.87 | -0.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i%20Small%20Flat%20Pads/Grado%20SR225i%20Small%20Flat%20Pads.png)

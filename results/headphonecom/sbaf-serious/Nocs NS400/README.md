@@ -1,0 +1,35 @@
+# Nocs NS400
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -4.1dB
+GraphicEQ: 10 -84; 20 -12.1; 22 -12.0; 23 -11.9; 25 -11.9; 26 -11.8; 28 -11.8; 30 -11.7; 32 -11.6; 35 -11.4; 37 -11.3; 40 -11.2; 42 -11.1; 45 -10.9; 49 -10.7; 52 -10.6; 56 -10.4; 59 -10.2; 64 -10.0; 68 -9.8; 73 -9.6; 78 -9.5; 83 -9.4; 89 -9.3; 95 -9.4; 102 -9.5; 109 -9.6; 117 -9.8; 125 -10.0; 134 -10.1; 143 -10.0; 153 -9.9; 164 -9.6; 175 -9.2; 188 -8.8; 201 -8.4; 215 -7.9; 230 -7.4; 246 -7.0; 263 -6.6; 282 -6.0; 301 -5.5; 323 -4.9; 345 -4.4; 369 -3.9; 395 -3.4; 423 -2.9; 452 -2.4; 484 -2.1; 518 -1.7; 554 -1.2; 593 -0.6; 635 -0.2; 679 0.0; 726 0.2; 777 0.5; 832 0.5; 890 0.4; 952 0.3; 1019 0.0; 1090 -0.3; 1167 -0.5; 1248 -0.8; 1336 -1.3; 1429 -1.7; 1529 -2.1; 1636 -2.5; 1751 -2.8; 1873 -3.1; 2004 -3.7; 2145 -4.3; 2295 -4.6; 2455 -4.6; 2627 -4.3; 2811 -3.4; 3008 -1.6; 3219 0.4; 3444 2.2; 3685 3.3; 3943 3.4; 4219 1.8; 4514 0.6; 4830 -0.0; 5168 -0.3; 5530 -1.3; 5917 -3.9; 6331 -6.7; 6775 -6.2; 7249 -4.3; 7756 -2.5; 8299 -1.1; 8880 -0.6; 9502 -1.3; 10167 -2.4; 10879 -1.2; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.1; 20000 -2.2
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-4.1dB` and instead set Global volume in the UI for both channels to **-41**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Nocs NS400 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 9 Hz    | 1.03 | -11.8 dB |
+| Peaking | 32 Hz   | 0.28 | -10.1 dB |
+| Peaking | 176 Hz  | 0.8  | -6.3 dB  |
+| Peaking | 2231 Hz | 2.9  | -5.1 dB  |
+| Peaking | 6606 Hz | 4.91 | -7.4 dB  |
+| Peaking | 794 Hz  | 1.58 | 2.0 dB   |
+| Peaking | 1558 Hz | 4.96 | -1.1 dB  |
+| Peaking | 2649 Hz | 0.12 | -0.6 dB  |
+| Peaking | 3758 Hz | 2.95 | 4.9 dB   |
+| Peaking | 2785 Hz | 6.63 | -2.4 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Nocs%20NS400/Nocs%20NS400.png)

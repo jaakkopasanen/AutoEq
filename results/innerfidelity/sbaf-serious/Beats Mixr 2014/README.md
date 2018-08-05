@@ -22,13 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 39 Hz   | 0.88 | -2.0 dB |
-| Peaking | 249 Hz  | 0.47 | -9.1 dB |
-| Peaking | 423 Hz  | 1.03 | 10.9 dB |
-| Peaking | 4125 Hz | 6.98 | 3.6 dB  |
-| Peaking | 5929 Hz | 3.91 | 6.7 dB  |
-| Peaking | 1315 Hz | 4.26 | 0.9 dB  |
-| Peaking | 2743 Hz | 2.58 | -1.8 dB |
-| Peaking | 3649 Hz | 6.85 | 1.3 dB  |
-| Peaking | 8231 Hz | 5.48 | -0.8 dB |
+| Peaking | 250 Hz  | 0.47 | -9.0 dB |
+| Peaking | 423 Hz  | 1.04 | 10.9 dB |
+| Peaking | 4119 Hz | 6.98 | 3.6 dB  |
+| Peaking | 5936 Hz | 3.92 | 6.7 dB  |
+| Peaking | 1 Hz    | 1.54 | -0.1 dB |
+| Peaking | 1313 Hz | 4.07 | 0.9 dB  |
+| Peaking | 2741 Hz | 2.61 | -1.8 dB |
+| Peaking | 3638 Hz | 6.68 | 1.3 dB  |
+| Peaking | 8222 Hz | 5.48 | -0.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beats%20Mixr%202014/Beats%20Mixr%202014.png)

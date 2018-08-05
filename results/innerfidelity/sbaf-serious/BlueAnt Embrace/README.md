@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 573 Hz   |  1.97 | 6.8 dB  |
 | Peaking | 3505 Hz  |  1.8  | 7.0 dB  |
 | Peaking | 24000 Hz |  2.27 | 0.6 dB  |
-| Peaking | 726 Hz   |  5.6  | 1.9 dB  |
-| Peaking | 1569 Hz  |  1.23 | -2.4 dB |
-| Peaking | 2622 Hz  |  3.54 | 2.6 dB  |
-| Peaking | 5410 Hz  | 10.64 | -2.9 dB |
-| Peaking | 6729 Hz  |  9.46 | 3.1 dB  |
+| Peaking | 727 Hz   |  5.6  | 1.9 dB  |
+| Peaking | 1571 Hz  |  1.23 | -2.4 dB |
+| Peaking | 2629 Hz  |  3.54 | 2.6 dB  |
+| Peaking | 5383 Hz  | 10.64 | -2.9 dB |
+| Peaking | 6699 Hz  |  9.46 | 3.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/BlueAnt%20Embrace/BlueAnt%20Embrace.png)

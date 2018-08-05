@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `AKG K702 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 15 Hz   | 0.18 | 6.2 dB  |
-| Peaking | 186 Hz  | 0.56 | -3.4 dB |
-| Peaking | 1131 Hz | 0.23 | 1.5 dB  |
-| Peaking | 2199 Hz | 1.59 | -5.7 dB |
-| Peaking | 5998 Hz | 3.21 | -6.8 dB |
-| Peaking | 70 Hz   | 8.18 | 1.1 dB  |
-| Peaking | 577 Hz  | 4.51 | 2.5 dB  |
-| Peaking | 7610 Hz | 2.09 | 1.7 dB  |
-| Peaking | 7831 Hz | 4.87 | -3.7 dB |
-| Peaking | 529 Hz  | 2.71 | -1.5 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 15 Hz    | 0.19 | 6.2 dB  |
+| Peaking | 186 Hz   | 0.56 | -3.4 dB |
+| Peaking | 1128 Hz  | 0.23 | 1.5 dB  |
+| Peaking | 2202 Hz  | 1.59 | -5.7 dB |
+| Peaking | 5961 Hz  | 3.21 | -6.8 dB |
+| Peaking | 70 Hz    | 7.83 | 1.4 dB  |
+| Peaking | 588 Hz   | 8.53 | 1.5 dB  |
+| Peaking | 1132 Hz  | 3.56 | -0.5 dB |
+| Peaking | 7908 Hz  | 9.13 | -2.2 dB |
+| Peaking | 19961 Hz | 3.67 | -8.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K702/AKG%20K702.png)

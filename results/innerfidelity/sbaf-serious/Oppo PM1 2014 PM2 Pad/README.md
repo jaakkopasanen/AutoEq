@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Oppo PM1 2014 PM
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 51 Hz   | 0.36 | 2.4 dB  |
-| Peaking | 179 Hz  | 0.63 | -4.0 dB |
-| Peaking | 755 Hz  | 3.3  | -1.9 dB |
-| Peaking | 1745 Hz | 2.65 | -2.7 dB |
-| Peaking | 5510 Hz | 2.29 | 6.5 dB  |
-| Peaking | 320 Hz  | 4.61 | -1.6 dB |
-| Peaking | 401 Hz  | 6.15 | 2.1 dB  |
-| Peaking | 3213 Hz | 4.79 | 1.8 dB  |
-| Peaking | 6468 Hz | 9.97 | 1.9 dB  |
-| Peaking | 8916 Hz | 3.73 | -2.7 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 51 Hz   |  0.36 | 2.4 dB  |
+| Peaking | 179 Hz  |  0.63 | -4.0 dB |
+| Peaking | 755 Hz  |  3.3  | -1.9 dB |
+| Peaking | 1745 Hz |  2.65 | -2.7 dB |
+| Peaking | 5510 Hz |  2.29 | 6.5 dB  |
+| Peaking | 321 Hz  |  4.64 | -1.6 dB |
+| Peaking | 402 Hz  |  6.25 | 2.1 dB  |
+| Peaking | 3201 Hz |  4.79 | 1.8 dB  |
+| Peaking | 6448 Hz | 10.44 | 1.9 dB  |
+| Peaking | 8891 Hz |  3.79 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM1%202014%20PM2%20Pad/Oppo%20PM1%202014%20PM2%20Pad.png)

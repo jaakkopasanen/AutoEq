@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 93 Hz   |  7.49 | 4.4 dB  |
+| Peaking | 93 Hz   |  7.52 | 4.4 dB  |
 | Peaking | 1939 Hz |  2.38 | -4.1 dB |
 | Peaking | 3364 Hz |  6.03 | 4.1 dB  |
 | Peaking | 6031 Hz |  3.43 | 7.6 dB  |
 | Peaking | 8563 Hz |  4.33 | -8.4 dB |
-| Peaking | 102 Hz  |  1.64 | 2.1 dB  |
-| Peaking | 43 Hz   |  1.75 | -1.0 dB |
-| Peaking | 129 Hz  |  1.75 | -3.4 dB |
-| Peaking | 286 Hz  |  3.04 | 3.0 dB  |
-| Peaking | 4360 Hz | 10.07 | -4.1 dB |
+| Peaking | 104 Hz  |  1.86 | 2.8 dB  |
+| Peaking | 43 Hz   |  1.86 | -0.9 dB |
+| Peaking | 126 Hz  |  1.71 | -3.8 dB |
+| Peaking | 285 Hz  |  3.03 | 3.0 dB  |
+| Peaking | 4356 Hz | 10.35 | -4.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-M50%20B2012/Audio%20Technica%20ATH-M50%20B2012.png)

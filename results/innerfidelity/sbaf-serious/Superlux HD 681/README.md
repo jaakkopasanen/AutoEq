@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 5295 Hz  | 4.34 | -3.6 dB  |
 | Peaking | 8955 Hz  | 2.78 | -11.1 dB |
 | Peaking | 773 Hz   | 2.61 | 1.1 dB   |
-| Peaking | 12993 Hz | 6.03 | 1.8 dB   |
-| Peaking | 11785 Hz | 9.62 | 2.3 dB   |
-| Peaking | 19899 Hz | 5.42 | -2.9 dB  |
-| Peaking | 14723 Hz | 4.8  | -2.9 dB  |
+| Peaking | 12890 Hz | 6.06 | 1.8 dB   |
+| Peaking | 11886 Hz | 9.68 | 2.3 dB   |
+| Peaking | 20036 Hz | 5.44 | -2.9 dB  |
+| Peaking | 14633 Hz | 4.81 | -3.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Superlux%20HD%20681/Superlux%20HD%20681.png)

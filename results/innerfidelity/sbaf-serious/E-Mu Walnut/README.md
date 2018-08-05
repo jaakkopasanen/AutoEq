@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 3795 Hz | 5.94 | 4.1 dB  |
 | Peaking | 2445 Hz | 2.55 | 4.4 dB  |
 | Peaking | 5763 Hz | 3.31 | 6.6 dB  |
-| Peaking | 242 Hz  | 3.52 | -0.6 dB |
+| Peaking | 241 Hz  | 3.52 | -0.6 dB |
 | Peaking | 448 Hz  | 2.39 | 1.0 dB  |
-| Peaking | 6650 Hz | 9.49 | 2.0 dB  |
+| Peaking | 6594 Hz | 9.49 | 2.0 dB  |
 | Peaking | 1231 Hz | 7.63 | 0.8 dB  |
-| Peaking | 8691 Hz | 1.61 | -1.1 dB |
+| Peaking | 8673 Hz | 1.61 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/E-Mu%20Walnut/E-Mu%20Walnut.png)

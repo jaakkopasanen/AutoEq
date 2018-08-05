@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 120 Hz  | 0.63 | -2.4 dB |
 | Peaking | 259 Hz  | 0.95 | -3.7 dB |
 | Peaking | 2234 Hz | 2.69 | -4.3 dB |
-| Peaking | 2699 Hz | 6.74 | -2.1 dB |
-| Peaking | 5374 Hz | 6.12 | 2.5 dB  |
-| Peaking | 5374 Hz | 0.96 | 2.1 dB  |
-| Peaking | 9519 Hz | 5.76 | -3.7 dB |
-| Peaking | 6409 Hz | 4.79 | -4.2 dB |
+| Peaking | 2681 Hz | 6.74 | -2.2 dB |
+| Peaking | 5368 Hz | 6.11 | 2.5 dB  |
+| Peaking | 5357 Hz | 0.97 | 2.1 dB  |
+| Peaking | 9538 Hz | 5.74 | -3.6 dB |
+| Peaking | 6399 Hz | 4.77 | -4.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/KRK%20Systems%20KNS%206400/KRK%20Systems%20KNS%206400.png)

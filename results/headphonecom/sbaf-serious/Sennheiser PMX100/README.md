@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 141 Hz  | 0.61 | -5.4 dB  |
-| Peaking | 1916 Hz | 2.35 | -4.7 dB  |
-| Peaking | 3496 Hz | 2.17 | 9.4 dB   |
-| Peaking | 4392 Hz | 4.53 | -13.4 dB |
-| Peaking | 5855 Hz | 3.51 | 7.2 dB   |
-| Peaking | 17 Hz   | 1.43 | 3.4 dB   |
-| Peaking | 47 Hz   | 1.7  | -1.1 dB  |
-| Peaking | 807 Hz  | 1.66 | 0.8 dB   |
-| Peaking | 1523 Hz | 6.6  | -0.7 dB  |
-| Peaking | 8234 Hz | 4.77 | -1.0 dB  |
+| Peaking | 1916 Hz | 2.34 | -4.7 dB  |
+| Peaking | 3493 Hz | 2.17 | 9.4 dB   |
+| Peaking | 4375 Hz | 4.52 | -13.4 dB |
+| Peaking | 5839 Hz | 3.5  | 7.2 dB   |
+| Peaking | 18 Hz   | 1.52 | 3.3 dB   |
+| Peaking | 47 Hz   | 1.77 | -1.0 dB  |
+| Peaking | 808 Hz  | 1.64 | 0.8 dB   |
+| Peaking | 1524 Hz | 6.35 | -0.7 dB  |
+| Peaking | 8291 Hz | 4.63 | -1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PMX100/Sennheiser%20PMX100.png)

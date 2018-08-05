@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1659 Hz  | 3.73 | -4.6 dB  |
 | Peaking | 4403 Hz  | 1.05 | -8.1 dB  |
 | Peaking | 24900 Hz | 2.38 | -5.5 dB  |
-| Peaking | 1050 Hz  | 5.86 | 2.4 dB   |
-| Peaking | 11402 Hz | 2.31 | 3.5 dB   |
-| Peaking | 6208 Hz  | 7.66 | -4.9 dB  |
-| Peaking | 7158 Hz  | 3.18 | 8.5 dB   |
-| Peaking | 9446 Hz  | 2.9  | -11.1 dB |
+| Peaking | 1050 Hz  | 5.85 | 2.4 dB   |
+| Peaking | 11524 Hz | 2.32 | 3.5 dB   |
+| Peaking | 6169 Hz  | 7.58 | -4.9 dB  |
+| Peaking | 7107 Hz  | 3.19 | 8.5 dB   |
+| Peaking | 9412 Hz  | 2.92 | -11.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20130/Sennheiser%20RS%20130.png)

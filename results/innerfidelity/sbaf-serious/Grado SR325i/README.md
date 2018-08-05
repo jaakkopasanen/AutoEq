@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 29 Hz    | 0.66 | 6.8 dB   |
-| Peaking | 125 Hz   | 0.87 | -3.5 dB  |
+| Peaking | 29 Hz    | 0.66 | 6.7 dB   |
+| Peaking | 124 Hz   | 0.88 | -3.5 dB  |
 | Peaking | 2096 Hz  | 2.65 | -8.6 dB  |
 | Peaking | 9130 Hz  | 2.68 | -10.5 dB |
 | Peaking | 24000 Hz | 2.3  | -7.5 dB  |
-| Peaking | 744 Hz   | 1.48 | 0.8 dB   |
-| Peaking | 3680 Hz  | 3.69 | 5.2 dB   |
-| Peaking | 4338 Hz  | 4.39 | -10.0 dB |
-| Peaking | 5572 Hz  | 4.16 | 1.5 dB   |
-| Peaking | 11927 Hz | 5.03 | 2.7 dB   |
+| Peaking | 750 Hz   | 1.52 | 0.8 dB   |
+| Peaking | 3703 Hz  | 3.69 | 5.2 dB   |
+| Peaking | 4366 Hz  | 4.4  | -10.0 dB |
+| Peaking | 5613 Hz  | 4.18 | 1.5 dB   |
+| Peaking | 11973 Hz | 5.02 | 2.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR325i/Grado%20SR325i.png)

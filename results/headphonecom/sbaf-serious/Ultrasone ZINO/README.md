@@ -1,4 +1,4 @@
-# Ultrasone ZINO
+# Ultrasone Zino
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,23 +13,23 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Ultrasone ZINO ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Zino ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |     Q | Gain     |
-|:--------|:---------|:------|:---------|
-| Peaking | 25 Hz    |  2.07 | 6.7 dB   |
-| Peaking | 661 Hz   |  1    | 9.0 dB   |
-| Peaking | 1803 Hz  |  1.3  | -15.5 dB |
-| Peaking | 20101 Hz |  3.77 | -3.4 dB  |
-| Peaking | 9551 Hz  |  3.49 | -11.8 dB |
-| Peaking | 104 Hz   |  0.85 | -1.5 dB  |
-| Peaking | 784 Hz   |  1    | 5.5 dB   |
-| Peaking | 652 Hz   |  2.25 | -5.5 dB  |
-| Peaking | 1152 Hz  |  2.42 | -4.6 dB  |
-| Peaking | 7256 Hz  | 10.96 | 2.4 dB   |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 24 Hz    | 2.05 | 6.7 dB   |
+| Peaking | 661 Hz   | 1    | 9.0 dB   |
+| Peaking | 1803 Hz  | 1.3  | -15.5 dB |
+| Peaking | 20113 Hz | 3.81 | -3.5 dB  |
+| Peaking | 9529 Hz  | 3.49 | -11.8 dB |
+| Peaking | 105 Hz   | 0.87 | -1.5 dB  |
+| Peaking | 794 Hz   | 0.97 | 5.3 dB   |
+| Peaking | 651 Hz   | 2.29 | -5.2 dB  |
+| Peaking | 1153 Hz  | 2.39 | -4.7 dB  |
+| Peaking | 12871 Hz | 4.83 | 1.7 dB   |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20ZINO/Ultrasone%20ZINO.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20Zino/Ultrasone%20Zino.png)

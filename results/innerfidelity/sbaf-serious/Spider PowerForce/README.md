@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 476 Hz  | 2.65 | -2.5 dB |
 | Peaking | 3979 Hz | 4.77 | 6.6 dB  |
 | Peaking | 6115 Hz | 5.24 | 6.4 dB  |
-| Peaking | 262 Hz  | 1.9  | -1.7 dB |
-| Peaking | 270 Hz  | 4.43 | 3.2 dB  |
-| Peaking | 1999 Hz | 1.66 | -2.5 dB |
-| Peaking | 8626 Hz | 2.56 | -0.5 dB |
-| Peaking | 1725 Hz | 0.77 | 1.4 dB  |
+| Peaking | 262 Hz  | 2.07 | -2.0 dB |
+| Peaking | 270 Hz  | 4.56 | 3.5 dB  |
+| Peaking | 1988 Hz | 1.67 | -2.5 dB |
+| Peaking | 8625 Hz | 2.56 | -0.5 dB |
+| Peaking | 1740 Hz | 0.78 | 1.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Spider%20PowerForce/Spider%20PowerForce.png)

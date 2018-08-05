@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:--------|:-----|:--------|
 | Peaking | 25 Hz   | 1.06 | -3.0 dB |
 | Peaking | 143 Hz  | 0.49 | -5.9 dB |
-| Peaking | 1597 Hz | 6.17 | 5.9 dB  |
-| Peaking | 6462 Hz | 7.07 | 6.7 dB  |
-| Peaking | 5875 Hz | 8.41 | -5.6 dB |
-| Peaking | 361 Hz  | 4    | -0.8 dB |
-| Peaking | 663 Hz  | 3.75 | 0.7 dB  |
-| Peaking | 3779 Hz | 2.14 | 2.5 dB  |
-| Peaking | 4061 Hz | 4.79 | -3.6 dB |
-| Peaking | 9073 Hz | 8.88 | -2.3 dB |
+| Peaking | 1595 Hz | 6.17 | 5.9 dB  |
+| Peaking | 6457 Hz | 7.06 | 6.7 dB  |
+| Peaking | 5869 Hz | 8.4  | -5.6 dB |
+| Peaking | 361 Hz  | 4.17 | -0.8 dB |
+| Peaking | 662 Hz  | 3.67 | 0.7 dB  |
+| Peaking | 3766 Hz | 2.16 | 2.5 dB  |
+| Peaking | 4076 Hz | 4.78 | -3.6 dB |
+| Peaking | 9149 Hz | 8.96 | -2.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/ZMF%20Eikon/ZMF%20Eikon.png)

@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Creative Aurvana ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 18 Hz   | 1.24 | 3.6 dB  |
-| Peaking | 150 Hz  | 0.92 | -3.4 dB |
-| Peaking | 540 Hz  | 0.18 | 1.0 dB  |
-| Peaking | 3479 Hz | 7.16 | 5.4 dB  |
-| Peaking | 5977 Hz | 4.06 | 6.3 dB  |
-| Peaking | 542 Hz  | 1.4  | 2.7 dB  |
-| Peaking | 626 Hz  | 0.79 | -2.0 dB |
-| Peaking | 2433 Hz | 3.31 | 2.0 dB  |
-| Peaking | 2894 Hz | 7.54 | -1.9 dB |
-| Peaking | 9177 Hz | 3.44 | -1.0 dB |
+| Peaking | 153 Hz  | 0.92 | -3.4 dB |
+| Peaking | 532 Hz  | 0.17 | 1.0 dB  |
+| Peaking | 3477 Hz | 7.16 | 5.4 dB  |
+| Peaking | 5980 Hz | 4.06 | 6.3 dB  |
+| Peaking | 21 Hz   | 1.14 | 0.5 dB  |
+| Peaking | 594 Hz  | 1.46 | 1.6 dB  |
+| Peaking | 760 Hz  | 1.97 | -1.3 dB |
+| Peaking | 2340 Hz | 4.48 | 2.0 dB  |
+| Peaking | 2024 Hz | 0.09 | -0.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Creative%20Aurvana/Creative%20Aurvana.png)

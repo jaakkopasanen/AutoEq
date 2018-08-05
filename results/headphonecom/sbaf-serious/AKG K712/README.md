@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2088 Hz  | 2.4  | -14.7 dB |
 | Peaking | 2386 Hz  | 0.74 | 10.1 dB  |
 | Peaking | 6615 Hz  | 0.91 | -7.7 dB  |
-| Peaking | 1158 Hz  | 4.89 | 1.8 dB   |
-| Peaking | 2975 Hz  | 5.87 | 3.9 dB   |
-| Peaking | 4866 Hz  | 0.74 | -2.6 dB  |
-| Peaking | 5725 Hz  | 3.13 | 4.1 dB   |
-| Peaking | 12698 Hz | 2.82 | 2.1 dB   |
+| Peaking | 1186 Hz  | 4.89 | 1.8 dB   |
+| Peaking | 3008 Hz  | 5.87 | 4.0 dB   |
+| Peaking | 4913 Hz  | 0.74 | -2.6 dB  |
+| Peaking | 5653 Hz  | 3.12 | 4.1 dB   |
+| Peaking | 12777 Hz | 2.82 | 2.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K712/AKG%20K712.png)

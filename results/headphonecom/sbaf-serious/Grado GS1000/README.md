@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 800 Hz   | 1.01 | 0.8 dB   |
 | Peaking | 1668 Hz  | 1.62 | -0.7 dB  |
 | Peaking | 6896 Hz  | 1.26 | -10.7 dB |
-| Peaking | 7 Hz     | 0.88 | 0.6 dB   |
-| Peaking | 3394 Hz  | 5.3  | 1.9 dB   |
-| Peaking | 3756 Hz  | 8.96 | -3.9 dB  |
-| Peaking | 9641 Hz  | 2.74 | -3.4 dB  |
-| Peaking | 11495 Hz | 1.25 | 2.8 dB   |
+| Peaking | 2 Hz     | 1.42 | 0.6 dB   |
+| Peaking | 3413 Hz  | 5.28 | 2.0 dB   |
+| Peaking | 3773 Hz  | 8.9  | -3.9 dB  |
+| Peaking | 9675 Hz  | 2.74 | -3.4 dB  |
+| Peaking | 11500 Hz | 1.25 | 2.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20GS1000/Grado%20GS1000.png)

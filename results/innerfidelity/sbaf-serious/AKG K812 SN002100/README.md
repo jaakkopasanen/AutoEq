@@ -1,4 +1,4 @@
-# AKG K812 SN002100
+# AKG K812 sn002100
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -5.3dB` and instead set Global volume in the UI for both channels to **-53**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `AKG K812 SN002100 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `AKG K812 sn002100 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually with
@@ -32,4 +32,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 9288 Hz  | 1.84 | -4.0 dB |
 | Peaking | 10487 Hz | 2.57 | 2.8 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K812%20SN002100/AKG%20K812%20SN002100.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K812%20sn002100/AKG%20K812%20sn002100.png)

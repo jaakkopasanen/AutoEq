@@ -1,4 +1,4 @@
-# Monster Beats Solo Sample 2
+# Monster Beats Solo sample 2
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Monster Beats Solo Sample 2 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Monster Beats Solo sample 2 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
@@ -32,4 +32,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 474 Hz  | 1.48 | 7.4 dB  |
 | Peaking | 8412 Hz | 3.97 | -1.3 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Beats%20Solo%20Sample%202/Monster%20Beats%20Solo%20Sample%202.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Beats%20Solo%20sample%202/Monster%20Beats%20Solo%20sample%202.png)

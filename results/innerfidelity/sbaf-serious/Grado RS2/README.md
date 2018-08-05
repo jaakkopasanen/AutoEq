@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
 | Peaking | 66 Hz    |  0.21 | 10.2 dB  |
-| Peaking | 129 Hz   |  0.51 | -11.2 dB |
-| Peaking | 2049 Hz  |  2.8  | -8.6 dB  |
-| Peaking | 4650 Hz  |  4.01 | -7.6 dB  |
-| Peaking | 8084 Hz  |  1.9  | -11.2 dB |
-| Peaking | 3473 Hz  | 10.77 | 2.4 dB   |
-| Peaking | 6455 Hz  |  3.5  | -2.9 dB  |
-| Peaking | 9442 Hz  |  4.51 | -9.0 dB  |
-| Peaking | 9899 Hz  |  1.38 | 5.7 dB   |
-| Peaking | 17823 Hz |  3.02 | -2.2 dB  |
+| Peaking | 129 Hz   |  0.5  | -11.3 dB |
+| Peaking | 2048 Hz  |  2.8  | -8.6 dB  |
+| Peaking | 4656 Hz  |  4.01 | -7.6 dB  |
+| Peaking | 8083 Hz  |  1.9  | -11.2 dB |
+| Peaking | 3469 Hz  | 11.2  | 2.4 dB   |
+| Peaking | 6484 Hz  |  3.49 | -2.9 dB  |
+| Peaking | 9410 Hz  |  4.4  | -9.3 dB  |
+| Peaking | 9903 Hz  |  1.4  | 6.1 dB   |
+| Peaking | 17861 Hz |  3.05 | -2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20RS2/Grado%20RS2.png)

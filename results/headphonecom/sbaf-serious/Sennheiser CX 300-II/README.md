@@ -1,0 +1,35 @@
+# Sennheiser CX 300-II
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -2.0; 22 -2.4; 23 -2.5; 25 -2.8; 26 -2.9; 28 -3.1; 30 -3.2; 32 -3.4; 35 -3.5; 37 -3.6; 40 -3.7; 42 -3.8; 45 -3.9; 49 -4.1; 52 -4.2; 56 -4.3; 59 -4.3; 64 -4.4; 68 -4.5; 73 -4.6; 78 -4.7; 83 -4.9; 89 -5.2; 95 -5.6; 102 -6.1; 109 -6.6; 117 -7.1; 125 -7.5; 134 -8.0; 143 -8.2; 153 -8.3; 164 -8.3; 175 -8.3; 188 -8.2; 201 -8.0; 215 -7.8; 230 -7.5; 246 -7.3; 263 -7.0; 282 -6.7; 301 -6.3; 323 -6.0; 345 -5.5; 369 -5.1; 395 -4.7; 423 -4.1; 452 -3.8; 484 -3.5; 518 -3.0; 554 -2.5; 593 -1.9; 635 -1.4; 679 -1.2; 726 -0.8; 777 -0.3; 832 -0.1; 890 -0.1; 952 -0.1; 1019 0.0; 1090 -0.0; 1167 -0.0; 1248 -0.1; 1336 -0.1; 1429 0.0; 1529 0.1; 1636 0.1; 1751 0.2; 1873 0.5; 2004 0.8; 2145 1.2; 2295 1.8; 2455 2.6; 2627 3.2; 2811 4.0; 3008 4.9; 3219 5.6; 3444 6.0; 3685 5.7; 3943 4.7; 4219 2.6; 4514 0.7; 4830 -0.4; 5168 -1.1; 5530 -2.7; 5917 -5.8; 6331 -6.3; 6775 -3.0; 7249 -0.5; 7756 0.2; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 -0.3; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser CX 300-II ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 4 Hz    | 1.81 | -1.3 dB |
+| Peaking | 36 Hz   | 0.61 | -2.7 dB |
+| Peaking | 183 Hz  | 0.59 | -8.3 dB |
+| Peaking | 3356 Hz | 1.96 | 6.4 dB  |
+| Peaking | 6083 Hz | 4.54 | -7.7 dB |
+| Peaking | 212 Hz  | 2.48 | 0.7 dB  |
+| Peaking | 532 Hz  | 0.55 | -1.0 dB |
+| Peaking | 795 Hz  | 1.35 | 1.8 dB  |
+| Peaking | 4741 Hz | 9.02 | -1.3 dB |
+| Peaking | 7607 Hz | 7.98 | 1.2 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20CX%20300-II/Sennheiser%20CX%20300-II.png)

@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:---------|:-----|:---------|
 | Peaking | 208 Hz   | 0.9  | -12.4 dB |
 | Peaking | 2222 Hz  | 3.26 | -13.2 dB |
-| Peaking | 8107 Hz  | 1.12 | -12.0 dB |
-| Peaking | 25960 Hz | 1.9  | -15.5 dB |
-| Peaking | 33286 Hz | 0.7  | -11.0 dB |
-| Peaking | 26 Hz    | 0.42 | 6.1 dB   |
-| Peaking | 57 Hz    | 1.76 | 3.7 dB   |
+| Peaking | 8108 Hz  | 1.12 | -12.0 dB |
+| Peaking | 25961 Hz | 1.9  | -15.5 dB |
+| Peaking | 33285 Hz | 0.7  | -11.0 dB |
+| Peaking | 26 Hz    | 0.41 | 6.1 dB   |
+| Peaking | 57 Hz    | 1.79 | 3.7 dB   |
 | Peaking | 128 Hz   | 2.55 | -5.4 dB  |
-| Peaking | 4213 Hz  | 2.55 | 4.1 dB   |
-| Peaking | 6032 Hz  | 6.98 | -7.6 dB  |
+| Peaking | 4214 Hz  | 2.55 | 4.1 dB   |
+| Peaking | 6043 Hz  | 6.98 | -7.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Howard%20Leight%20Sync/Howard%20Leight%20Sync.png)

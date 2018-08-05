@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 296 Hz  |  1.13 | 4.6 dB  |
 | Peaking | 479 Hz  |  1.86 | 2.7 dB  |
 | Peaking | 4266 Hz |  1.21 | 7.0 dB  |
-| Peaking | 168 Hz  | 11.53 | 3.0 dB  |
-| Peaking | 1909 Hz |  1.35 | -3.1 dB |
-| Peaking | 2579 Hz |  2.02 | 3.9 dB  |
+| Peaking | 167 Hz  | 11.55 | 2.9 dB  |
+| Peaking | 1907 Hz |  1.35 | -3.1 dB |
+| Peaking | 2580 Hz |  2.03 | 3.9 dB  |
 | Peaking | 6224 Hz |  2.65 | 7.2 dB  |
-| Peaking | 6660 Hz |  1.19 | -4.9 dB |
+| Peaking | 6663 Hz |  1.19 | -4.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bang%20Olufsen%20H6/Bang%20Olufsen%20H6.png)

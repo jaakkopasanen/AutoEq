@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 3011 Hz  | 0.61 | -7.0 dB |
 | Peaking | 6454 Hz  | 2.16 | 5.3 dB  |
 | Peaking | 9163 Hz  | 4.02 | -7.9 dB |
-| Peaking | 18 Hz    | 1.15 | 2.5 dB  |
-| Peaking | 41 Hz    | 1.08 | -1.7 dB |
-| Peaking | 77 Hz    | 1.61 | 2.0 dB  |
-| Peaking | 172 Hz   | 1.33 | -1.4 dB |
-| Peaking | 11751 Hz | 4.98 | 1.6 dB  |
+| Peaking | 18 Hz    | 1.04 | 2.6 dB  |
+| Peaking | 41 Hz    | 1.05 | -1.7 dB |
+| Peaking | 76 Hz    | 1.61 | 2.0 dB  |
+| Peaking | 170 Hz   | 1.33 | -1.4 dB |
+| Peaking | 11754 Hz | 4.98 | 1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SRH1440/Shure%20SRH1440.png)

@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `SkullCandy SkullCrushers Max Bass ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-8.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 44 Hz   | 0.51 | 7.9 dB   |
 | Peaking | 86 Hz   | 2.29 | -26.5 dB |
-| Peaking | 162 Hz  | 1.04 | 9.4 dB   |
+| Peaking | 165 Hz  | 1.04 | 9.4 dB   |
 | Peaking | 3042 Hz | 4.84 | 6.7 dB   |
-| Peaking | 5481 Hz | 2.83 | 6.9 dB   |
-| Peaking | 19 Hz   | 3    | 2.3 dB   |
-| Peaking | 100 Hz  | 5.91 | -1.1 dB  |
-| Peaking | 2037 Hz | 2.96 | -5.8 dB  |
-| Peaking | 2567 Hz | 4.81 | 4.1 dB   |
-| Peaking | 9107 Hz | 5.57 | -3.2 dB  |
+| Peaking | 5482 Hz | 2.83 | 6.9 dB   |
+| Peaking | 64 Hz   | 9.38 | 1.9 dB   |
+| Peaking | 2055 Hz | 2.83 | -5.8 dB  |
+| Peaking | 2584 Hz | 4.82 | 4.3 dB   |
+| Peaking | 6498 Hz | 8.19 | 2.2 dB   |
+| Peaking | 9079 Hz | 4.27 | -3.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/SkullCandy%20SkullCrushers%20Max%20Bass/SkullCandy%20SkullCrushers%20Max%20Bass.png)

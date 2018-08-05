@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1661 Hz | 1.57 | -2.8 dB |
 | Peaking | 2720 Hz | 2.08 | 7.1 dB  |
 | Peaking | 5591 Hz | 2.82 | 6.4 dB  |
-| Peaking | 3349 Hz | 7.25 | 1.6 dB  |
-| Peaking | 3987 Hz | 9.85 | -2.7 dB |
-| Peaking | 6541 Hz | 7.98 | 2.2 dB  |
-| Peaking | 8147 Hz | 2.16 | -1.2 dB |
+| Peaking | 3352 Hz | 7.26 | 1.6 dB  |
+| Peaking | 3990 Hz | 9.85 | -2.7 dB |
+| Peaking | 6483 Hz | 7.99 | 2.2 dB  |
+| Peaking | 8128 Hz | 2.16 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20HDJ-2000/Pioneer%20HDJ-2000.png)

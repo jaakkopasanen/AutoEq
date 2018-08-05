@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 337 Hz  | 0.3  | -3.8 dB |
 | Peaking | 554 Hz  | 1.3  | 9.2 dB  |
 | Peaking | 4538 Hz | 1.2  | 6.7 dB  |
-| Peaking | 1047 Hz | 7.51 | -0.7 dB |
-| Peaking | 3608 Hz | 6.73 | 2.0 dB  |
-| Peaking | 4141 Hz | 6.69 | -1.8 dB |
-| Peaking | 6333 Hz | 3.24 | 4.4 dB  |
-| Peaking | 7384 Hz | 1.63 | -3.2 dB |
+| Peaking | 1042 Hz | 7.51 | -0.7 dB |
+| Peaking | 3618 Hz | 6.73 | 2.0 dB  |
+| Peaking | 4156 Hz | 6.69 | -1.8 dB |
+| Peaking | 6351 Hz | 3.25 | 4.4 dB  |
+| Peaking | 7366 Hz | 1.63 | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D400/Denon%20AH-D400.png)

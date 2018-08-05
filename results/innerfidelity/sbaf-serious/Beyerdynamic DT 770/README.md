@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 121 Hz   | 1.55 | -5.6 dB  |
-| Peaking | 4610 Hz  | 1.66 | 23.6 dB  |
-| Peaking | 8732 Hz  | 5.93 | -6.5 dB  |
-| Peaking | 5432 Hz  | 1.03 | -21.2 dB |
-| Peaking | 29126 Hz | 1.28 | -8.1 dB  |
-| Peaking | 42 Hz    | 1.05 | -4.4 dB  |
-| Peaking | 75 Hz    | 4.76 | 5.8 dB   |
-| Peaking | 404 Hz   | 2.09 | -1.8 dB  |
-| Peaking | 3583 Hz  | 7.7  | 2.8 dB   |
-| Peaking | 13631 Hz | 8.36 | -2.8 dB  |
+| Peaking | 4603 Hz  | 1.7  | 22.9 dB  |
+| Peaking | 8737 Hz  | 5.88 | -6.5 dB  |
+| Peaking | 5440 Hz  | 1.05 | -20.4 dB |
+| Peaking | 29123 Hz | 1.23 | -8.1 dB  |
+| Peaking | 42 Hz    | 1.07 | -4.4 dB  |
+| Peaking | 76 Hz    | 4.71 | 5.7 dB   |
+| Peaking | 404 Hz   | 2.06 | -1.8 dB  |
+| Peaking | 3587 Hz  | 7.82 | 2.8 dB   |
+| Peaking | 36929 Hz | 8.89 | 3.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20770/Beyerdynamic%20DT%20770.png)

@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:--------|:-----|:--------|
 | Peaking | 28 Hz   | 0.61 | 6.5 dB  |
 | Peaking | 170 Hz  | 0.77 | -3.6 dB |
-| Peaking | 1829 Hz | 2.62 | -4.5 dB |
-| Peaking | 2853 Hz | 2.46 | 5.5 dB  |
+| Peaking | 1828 Hz | 2.62 | -4.5 dB |
+| Peaking | 2854 Hz | 2.46 | 5.5 dB  |
 | Peaking | 5989 Hz | 4.31 | 6.6 dB  |
-| Peaking | 784 Hz  | 2.54 | 0.8 dB  |
-| Peaking | 3931 Hz | 9.4  | 3.7 dB  |
-| Peaking | 4526 Hz | 4.97 | -4.0 dB |
-| Peaking | 5224 Hz | 6.61 | 2.4 dB  |
-| Peaking | 8275 Hz | 4.87 | -0.7 dB |
+| Peaking | 785 Hz  | 2.57 | 0.8 dB  |
+| Peaking | 3972 Hz | 9.31 | 3.7 dB  |
+| Peaking | 4567 Hz | 4.85 | -4.1 dB |
+| Peaking | 5271 Hz | 6.48 | 2.5 dB  |
+| Peaking | 8283 Hz | 4.86 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PX%20100-IIi/Sennheiser%20PX%20100-IIi.png)

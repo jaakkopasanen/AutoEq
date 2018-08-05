@@ -25,11 +25,11 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1852 Hz | 2.49 | -6.2 dB |
 | Peaking | 3559 Hz | 3.81 | 5.4 dB  |
 | Peaking | 6258 Hz | 4.16 | 6.9 dB  |
-| Peaking | 9514 Hz | 3.32 | -7.9 dB |
-| Peaking | 569 Hz  | 0.76 | 1.7 dB  |
-| Peaking | 136 Hz  | 2.46 | -1.6 dB |
-| Peaking | 1039 Hz | 0.43 | 3.1 dB  |
-| Peaking | 1267 Hz | 0.83 | -4.1 dB |
-| Peaking | 4626 Hz | 7.78 | -2.5 dB |
+| Peaking | 9513 Hz | 3.32 | -7.9 dB |
+| Peaking | 14 Hz   | 1.82 | 0.7 dB  |
+| Peaking | 136 Hz  | 2.24 | -1.6 dB |
+| Peaking | 598 Hz  | 0.6  | 3.0 dB  |
+| Peaking | 1229 Hz | 1.53 | -2.2 dB |
+| Peaking | 4617 Hz | 8.52 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PXC150/Sennheiser%20PXC150.png)

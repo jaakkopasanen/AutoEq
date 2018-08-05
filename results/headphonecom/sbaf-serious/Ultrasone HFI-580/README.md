@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone HFI-580 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 23 Hz    | 2.46 | 6.0 dB  |
-| Peaking | 3451 Hz  | 1.77 | -7.7 dB |
-| Peaking | 1985 Hz  | 3.39 | -3.2 dB |
-| Peaking | 6062 Hz  | 2.47 | 8.7 dB  |
-| Peaking | 9076 Hz  | 2.73 | -8.4 dB |
-| Peaking | 52 Hz    | 3.11 | -2.1 dB |
-| Peaking | 179 Hz   | 4.95 | 4.3 dB  |
+| Peaking | 22 Hz    | 2.53 | 6.0 dB  |
+| Peaking | 3471 Hz  | 1.78 | -7.7 dB |
+| Peaking | 1985 Hz  | 3.37 | -3.2 dB |
+| Peaking | 6090 Hz  | 2.47 | 8.7 dB  |
+| Peaking | 9087 Hz  | 2.73 | -8.4 dB |
+| Peaking | 53 Hz    | 3.46 | -2.1 dB |
+| Peaking | 178 Hz   | 4.95 | 4.3 dB  |
 | Peaking | 310 Hz   | 2.58 | -2.1 dB |
-| Peaking | 1158 Hz  | 5.6  | 1.6 dB  |
-| Peaking | 11977 Hz | 6.18 | 1.6 dB  |
+| Peaking | 1183 Hz  | 5.67 | 1.6 dB  |
+| Peaking | 11990 Hz | 6.18 | 1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20HFI-580/Ultrasone%20HFI-580.png)

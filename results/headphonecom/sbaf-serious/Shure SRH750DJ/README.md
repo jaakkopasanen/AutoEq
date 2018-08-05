@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2105 Hz | 2.73 | -8.8 dB |
 | Peaking | 6354 Hz | 4.58 | 7.2 dB  |
 | Peaking | 9081 Hz | 3.71 | -8.1 dB |
-| Peaking | 12 Hz   | 1.73 | -0.6 dB |
-| Peaking | 392 Hz  | 5.15 | 1.0 dB  |
-| Peaking | 911 Hz  | 5.11 | 1.3 dB  |
-| Peaking | 3487 Hz | 4.21 | 2.4 dB  |
-| Peaking | 4384 Hz | 8.43 | -4.7 dB |
+| Peaking | 12 Hz   | 1.71 | -0.6 dB |
+| Peaking | 393 Hz  | 5.15 | 1.0 dB  |
+| Peaking | 914 Hz  | 5.11 | 1.3 dB  |
+| Peaking | 3502 Hz | 4.22 | 2.4 dB  |
+| Peaking | 4419 Hz | 8.43 | -4.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Shure%20SRH750DJ/Shure%20SRH750DJ.png)

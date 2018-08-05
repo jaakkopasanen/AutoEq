@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 3198 Hz | 2.42 | 4.7 dB  |
 | Peaking | 5727 Hz | 3.2  | 6.4 dB  |
 | Peaking | 719 Hz  | 4.61 | 0.5 dB  |
-| Peaking | 1471 Hz | 2.57 | -1.1 dB |
-| Peaking | 4232 Hz | 2.98 | 3.5 dB  |
-| Peaking | 4222 Hz | 8.95 | -7.7 dB |
-| Peaking | 8317 Hz | 3.7  | -1.1 dB |
+| Peaking | 1468 Hz | 2.57 | -1.1 dB |
+| Peaking | 4184 Hz | 2.94 | 3.4 dB  |
+| Peaking | 4253 Hz | 8.99 | -7.5 dB |
+| Peaking | 8284 Hz | 3.69 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Blue%20MOFI%20Active%20On/Blue%20MOFI%20Active%20On.png)

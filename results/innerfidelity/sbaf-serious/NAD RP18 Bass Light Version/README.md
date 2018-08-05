@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 413 Hz  |  0.52 | -1.8 dB |
 | Peaking | 3620 Hz |  5.51 | 3.2 dB  |
 | Peaking | 5939 Hz |  4.06 | 6.8 dB  |
-| Peaking | 1149 Hz |  8.71 | 0.7 dB  |
-| Peaking | 2568 Hz | 14.96 | -1.6 dB |
-| Peaking | 4794 Hz |  9.32 | -2.8 dB |
-| Peaking | 5265 Hz | 10.21 | 2.4 dB  |
-| Peaking | 8232 Hz |  5.11 | -0.8 dB |
+| Peaking | 1148 Hz |  8.71 | 0.7 dB  |
+| Peaking | 2572 Hz | 14.96 | -1.6 dB |
+| Peaking | 4798 Hz |  9.32 | -2.8 dB |
+| Peaking | 5286 Hz | 10.21 | 2.4 dB  |
+| Peaking | 8235 Hz |  5.11 | -0.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NAD%20RP18%20Bass%20Light%20Version/NAD%20RP18%20Bass%20Light%20Version.png)

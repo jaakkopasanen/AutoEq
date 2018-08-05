@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 7 Hz     | 1.3  | -4.3 dB |
-| Peaking | 39 Hz    | 0.54 | -6.6 dB |
-| Peaking | 151 Hz   | 1.21 | -9.9 dB |
-| Peaking | 3144 Hz  | 1.5  | -4.4 dB |
-| Peaking | 9661 Hz  | 1.55 | -9.2 dB |
-| Peaking | 73 Hz    | 8.87 | 2.1 dB  |
-| Peaking | 214 Hz   | 5.15 | -1.3 dB |
-| Peaking | 534 Hz   | 1.87 | 2.8 dB  |
-| Peaking | 253 Hz   | 4    | -0.9 dB |
-| Peaking | 15259 Hz | 3.55 | 1.6 dB  |
+| Peaking | 7 Hz     | 1.31 | -4.3 dB |
+| Peaking | 39 Hz    | 0.55 | -6.6 dB |
+| Peaking | 152 Hz   | 1.21 | -9.9 dB |
+| Peaking | 3142 Hz  | 1.5  | -4.4 dB |
+| Peaking | 9660 Hz  | 1.55 | -9.2 dB |
+| Peaking | 76 Hz    | 6.58 | 2.5 dB  |
+| Peaking | 91 Hz    | 4.69 | -1.7 dB |
+| Peaking | 229 Hz   | 3.6  | -1.7 dB |
+| Peaking | 536 Hz   | 1.89 | 2.8 dB  |
+| Peaking | 15260 Hz | 3.55 | 1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Crusher%20Wireless%20Wired%20Sub%20Off/Skullcandy%20Crusher%20Wireless%20Wired%20Sub%20Off.png)

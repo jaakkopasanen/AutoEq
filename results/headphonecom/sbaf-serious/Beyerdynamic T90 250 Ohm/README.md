@@ -25,11 +25,11 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1980 Hz  | 2.59 | -3.2 dB  |
 | Peaking | 3195 Hz  | 3.47 | -4.3 dB  |
 | Peaking | 9032 Hz  | 1.47 | -11.9 dB |
-| Peaking | 30010 Hz | 1.64 | -9.1 dB  |
-| Peaking | 879 Hz   | 1.8  | 2.0 dB   |
-| Peaking | 2529 Hz  | 0.14 | -0.7 dB  |
-| Peaking | 4919 Hz  | 2.65 | 10.7 dB  |
-| Peaking | 6602 Hz  | 5.53 | -5.4 dB  |
-| Peaking | 4294 Hz  | 4.09 | -7.9 dB  |
+| Peaking | 30012 Hz | 1.64 | -9.1 dB  |
+| Peaking | 880 Hz   | 1.79 | 2.0 dB   |
+| Peaking | 2528 Hz  | 0.14 | -0.7 dB  |
+| Peaking | 4913 Hz  | 2.63 | 10.8 dB  |
+| Peaking | 6598 Hz  | 5.5  | -5.4 dB  |
+| Peaking | 4299 Hz  | 4.06 | -7.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20T90%20250%20Ohm/Beyerdynamic%20T90%20250%20Ohm.png)

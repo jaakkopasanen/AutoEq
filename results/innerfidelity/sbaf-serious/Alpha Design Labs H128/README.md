@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 165 Hz  | 0.79 | -4.1 dB |
 | Peaking | 565 Hz  | 0.61 | -1.2 dB |
 | Peaking | 4517 Hz | 1.28 | 6.9 dB  |
-| Peaking | 1650 Hz | 3.82 | -0.3 dB |
-| Peaking | 3708 Hz | 2.81 | 1.2 dB  |
-| Peaking | 4422 Hz | 3.45 | -1.4 dB |
-| Peaking | 6335 Hz | 3.21 | 4.1 dB  |
-| Peaking | 7571 Hz | 1.54 | -2.8 dB |
+| Peaking | 1647 Hz | 3.82 | -0.3 dB |
+| Peaking | 3664 Hz | 2.83 | 1.1 dB  |
+| Peaking | 4470 Hz | 3.44 | -1.4 dB |
+| Peaking | 6350 Hz | 3.2  | 4.0 dB  |
+| Peaking | 7579 Hz | 1.55 | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Alpha%20Design%20Labs%20H128/Alpha%20Design%20Labs%20H128.png)

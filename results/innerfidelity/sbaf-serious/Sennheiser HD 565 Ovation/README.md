@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 56
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 49 Hz   | 0.35 | 7.4 dB  |
-| Peaking | 655 Hz  | 0.44 | 5.2 dB  |
-| Peaking | 769 Hz  | 0.13 | -5.1 dB |
-| Peaking | 3105 Hz | 3.17 | 3.8 dB  |
-| Peaking | 5793 Hz | 2.54 | 8.7 dB  |
-| Peaking | 16 Hz   | 1.12 | 1.8 dB  |
-| Peaking | 39 Hz   | 1.16 | -1.1 dB |
-| Peaking | 81 Hz   | 2.99 | 1.2 dB  |
-| Peaking | 144 Hz  | 3.01 | -0.6 dB |
-| Peaking | 1954 Hz | 7.59 | 0.5 dB  |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 49 Hz   |  0.35 | 7.4 dB  |
+| Peaking | 652 Hz  |  0.44 | 5.2 dB  |
+| Peaking | 773 Hz  |  0.14 | -5.1 dB |
+| Peaking | 3118 Hz |  3.17 | 3.8 dB  |
+| Peaking | 5778 Hz |  2.54 | 8.7 dB  |
+| Peaking | 15 Hz   |  1.06 | 1.8 dB  |
+| Peaking | 40 Hz   |  1.07 | -1.1 dB |
+| Peaking | 82 Hz   |  2.95 | 1.2 dB  |
+| Peaking | 148 Hz  |  2.47 | -0.7 dB |
+| Peaking | 4242 Hz | 10.93 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20565%20Ovation/Sennheiser%20HD%20565%20Ovation.png)

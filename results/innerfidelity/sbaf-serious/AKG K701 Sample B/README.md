@@ -1,4 +1,4 @@
-# AKG K701 Sample B
+# AKG K701 sample B
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `AKG K701 Sample B ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `AKG K701 sample B ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2097 Hz  | 2.37 | -3.3 dB |
 | Peaking | 7358 Hz  | 1.64 | -4.5 dB |
 | Peaking | 165 Hz   | 0.33 | 2.4 dB  |
-| Peaking | 196 Hz   | 0.66 | -4.7 dB |
-| Peaking | 3419 Hz  | 6.86 | 2.3 dB  |
-| Peaking | 20352 Hz | 0.14 | -4.8 dB |
-| Peaking | 14515 Hz | 0.57 | 4.8 dB  |
+| Peaking | 196 Hz   | 0.66 | -4.6 dB |
+| Peaking | 3424 Hz  | 6.89 | 2.2 dB  |
+| Peaking | 19791 Hz | 0.18 | -4.7 dB |
+| Peaking | 14499 Hz | 0.59 | 4.8 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K701%20Sample%20B/AKG%20K701%20Sample%20B.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K701%20sample%20B/AKG%20K701%20sample%20B.png)

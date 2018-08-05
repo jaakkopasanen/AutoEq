@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 43 Hz   |  0.44 | -8.6 dB |
-| Peaking | 140 Hz  |  1.27 | -5.0 dB |
+| Peaking | 43 Hz   |  0.45 | -8.6 dB |
+| Peaking | 140 Hz  |  1.28 | -5.0 dB |
 | Peaking | 231 Hz  |  2.36 | -4.0 dB |
 | Peaking | 3072 Hz |  1.4  | -6.6 dB |
-| Peaking | 4944 Hz |  1.91 | 7.1 dB  |
-| Peaking | 334 Hz  |  3.34 | -1.3 dB |
-| Peaking | 566 Hz  |  1.89 | 2.6 dB  |
-| Peaking | 6529 Hz |  3.62 | 2.9 dB  |
-| Peaking | 5547 Hz | 12.75 | -3.1 dB |
-| Peaking | 8340 Hz |  1.65 | -1.5 dB |
+| Peaking | 4938 Hz |  1.91 | 7.1 dB  |
+| Peaking | 332 Hz  |  3.1  | -1.3 dB |
+| Peaking | 565 Hz  |  1.89 | 2.6 dB  |
+| Peaking | 6508 Hz |  3.2  | 3.1 dB  |
+| Peaking | 5507 Hz | 12.49 | -3.2 dB |
+| Peaking | 8156 Hz |  1.55 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20BT540i%20Bluetooth/Koss%20BT540i%20Bluetooth.png)

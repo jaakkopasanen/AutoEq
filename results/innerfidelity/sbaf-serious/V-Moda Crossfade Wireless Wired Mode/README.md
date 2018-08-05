@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain     |
 |:--------|:--------|:------|:---------|
-| Peaking | 180 Hz  |  0.59 | -10.4 dB |
-| Peaking | 444 Hz  |  0.65 | 12.8 dB  |
-| Peaking | 1865 Hz |  0.31 | -4.9 dB  |
-| Peaking | 5571 Hz |  1.95 | 9.8 dB   |
-| Peaking | 9319 Hz |  4.1  | -5.2 dB  |
-| Peaking | 16 Hz   |  1.34 | 4.3 dB   |
-| Peaking | 43 Hz   |  2.12 | -1.7 dB  |
-| Peaking | 2686 Hz |  3.4  | 2.0 dB   |
-| Peaking | 3537 Hz |  4.49 | -3.4 dB  |
-| Peaking | 4685 Hz | 10.86 | 2.8 dB   |
+| Peaking | 179 Hz  |  0.59 | -10.4 dB |
+| Peaking | 446 Hz  |  0.64 | 12.8 dB  |
+| Peaking | 1880 Hz |  0.32 | -4.9 dB  |
+| Peaking | 5569 Hz |  1.94 | 9.8 dB   |
+| Peaking | 9338 Hz |  4.1  | -5.2 dB  |
+| Peaking | 18 Hz   |  1.35 | 3.9 dB   |
+| Peaking | 44 Hz   |  2.26 | -1.5 dB  |
+| Peaking | 2703 Hz |  3.66 | 2.1 dB   |
+| Peaking | 3564 Hz |  4.22 | -3.3 dB  |
+| Peaking | 4712 Hz | 10.42 | 2.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/V-Moda%20Crossfade%20Wireless%20Wired%20Mode/V-Moda%20Crossfade%20Wireless%20Wired%20Mode.png)

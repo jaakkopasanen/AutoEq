@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 8435 Hz  | 5.11 | -5.3 dB |
 | Peaking | 6641 Hz  | 2.32 | -5.8 dB |
 | Peaking | 18626 Hz | 2    | -6.2 dB |
-| Peaking | 21 Hz    | 2.64 | 2.6 dB  |
-| Peaking | 745 Hz   | 2.99 | 2.3 dB  |
-| Peaking | 3449 Hz  | 3.28 | 4.8 dB  |
-| Peaking | 3753 Hz  | 1.63 | -3.1 dB |
-| Peaking | 11869 Hz | 1.66 | 1.2 dB  |
+| Peaking | 22 Hz    | 2.64 | 2.6 dB  |
+| Peaking | 740 Hz   | 2.99 | 2.3 dB  |
+| Peaking | 3518 Hz  | 3.3  | 4.8 dB  |
+| Peaking | 3692 Hz  | 1.65 | -3.1 dB |
+| Peaking | 11839 Hz | 1.66 | 1.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K702/AKG%20K702.png)

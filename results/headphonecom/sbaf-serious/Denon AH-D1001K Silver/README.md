@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 30 Hz   | 0.5  | 6.3 dB  |
-| Peaking | 444 Hz  | 1.16 | 4.1 dB  |
-| Peaking | 3740 Hz | 8.56 | 4.1 dB  |
-| Peaking | 2441 Hz | 2.48 | 4.8 dB  |
-| Peaking | 5989 Hz | 4.8  | 6.7 dB  |
-| Peaking | 609 Hz  | 5.6  | 1.2 dB  |
-| Peaking | 904 Hz  | 3.45 | -1.4 dB |
-| Peaking | 4524 Hz | 4.86 | -4.1 dB |
-| Peaking | 4725 Hz | 1.76 | 1.9 dB  |
-| Peaking | 9837 Hz | 5.76 | -3.8 dB |
+| Peaking | 442 Hz  | 1.16 | 4.1 dB  |
+| Peaking | 3723 Hz | 8.61 | 4.1 dB  |
+| Peaking | 2444 Hz | 2.48 | 4.8 dB  |
+| Peaking | 5995 Hz | 4.8  | 6.7 dB  |
+| Peaking | 612 Hz  | 5.53 | 1.2 dB  |
+| Peaking | 905 Hz  | 3.49 | -1.4 dB |
+| Peaking | 4546 Hz | 5.04 | -4.1 dB |
+| Peaking | 4774 Hz | 1.86 | 1.8 dB  |
+| Peaking | 9793 Hz | 5.78 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D1001K%20Silver/Denon%20AH-D1001K%20Silver.png)

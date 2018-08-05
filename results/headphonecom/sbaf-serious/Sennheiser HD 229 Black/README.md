@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 2.28 | 3.0 dB  |
-| Peaking | 74 Hz   | 0.82 | -4.9 dB |
-| Peaking | 163 Hz  | 2.18 | -3.7 dB |
+| Peaking | 21 Hz   | 2.23 | 3.0 dB  |
+| Peaking | 75 Hz   | 0.86 | -4.9 dB |
+| Peaking | 164 Hz  | 2.19 | -3.7 dB |
 | Peaking | 6354 Hz | 4.88 | 6.1 dB  |
 | Peaking | 9043 Hz | 5.25 | -7.2 dB |
-| Peaking | 234 Hz  | 5.04 | -1.6 dB |
-| Peaking | 382 Hz  | 1.59 | 2.5 dB  |
-| Peaking | 627 Hz  | 3.09 | 1.3 dB  |
-| Peaking | 267 Hz  | 3.49 | -0.9 dB |
-| Peaking | 4518 Hz | 7.4  | -3.1 dB |
+| Peaking | 239 Hz  | 4.37 | -1.7 dB |
+| Peaking | 382 Hz  | 1.79 | 2.5 dB  |
+| Peaking | 623 Hz  | 2.79 | 1.4 dB  |
+| Peaking | 270 Hz  | 2.3  | -0.5 dB |
+| Peaking | 4523 Hz | 7.27 | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20229%20Black/Sennheiser%20HD%20229%20Black.png)

@@ -1,0 +1,35 @@
+# MOE SS01
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -1.1dB
+GraphicEQ: 10 -84; 20 -5.1; 22 -5.2; 23 -5.2; 25 -5.3; 26 -5.3; 28 -5.3; 30 -5.3; 32 -5.3; 35 -5.3; 37 -5.2; 40 -5.2; 42 -5.1; 45 -5.0; 49 -5.0; 52 -4.9; 56 -4.8; 59 -4.7; 64 -4.7; 68 -4.6; 73 -4.6; 78 -4.7; 83 -4.8; 89 -5.0; 95 -5.3; 102 -5.7; 109 -6.0; 117 -6.3; 125 -6.7; 134 -6.9; 143 -7.1; 153 -7.0; 164 -7.0; 175 -6.7; 188 -6.5; 201 -6.3; 215 -6.0; 230 -5.6; 246 -5.3; 263 -4.9; 282 -4.5; 301 -4.2; 323 -3.8; 345 -3.4; 369 -3.0; 395 -2.6; 423 -2.1; 452 -1.7; 484 -1.5; 518 -1.1; 554 -0.7; 593 -0.2; 635 0.0; 679 0.1; 726 0.3; 777 0.6; 832 0.5; 890 0.3; 952 0.2; 1019 -0.1; 1090 -0.3; 1167 -0.6; 1248 -0.9; 1336 -1.3; 1429 -1.7; 1529 -2.3; 1636 -2.4; 1751 -2.2; 1873 -2.0; 2004 -2.2; 2145 -2.6; 2295 -2.9; 2455 -2.9; 2627 -3.2; 2811 -3.6; 3008 -3.2; 3219 -2.0; 3444 -0.7; 3685 -0.6; 3943 -1.3; 4219 -3.3; 4514 -5.2; 4830 -6.4; 5168 -6.6; 5530 -5.8; 5917 -3.7; 6331 -2.1; 6775 -0.9; 7249 -0.4; 7756 -0.9; 8299 -2.2; 8880 -3.3; 9502 -2.9; 10167 -0.6; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-1.1dB` and instead set Global volume in the UI for both channels to **-11**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `MOE SS01 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-1.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 25 Hz    | 0.34 | -5.1 dB |
+| Peaking | 169 Hz   | 0.78 | -6.3 dB |
+| Peaking | 2354 Hz  | 1.6  | -3.0 dB |
+| Peaking | 5092 Hz  | 3.59 | -6.9 dB |
+| Peaking | 39038 Hz | 5.95 | -3.3 dB |
+| Peaking | 345 Hz   | 2.26 | -0.8 dB |
+| Peaking | 758 Hz   | 1.6  | 1.3 dB  |
+| Peaking | 1529 Hz  | 5.07 | -1.4 dB |
+| Peaking | 2947 Hz  | 7.14 | -1.3 dB |
+| Peaking | 3599 Hz  | 6.75 | 1.7 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MOE%20SS01/MOE%20SS01.png)

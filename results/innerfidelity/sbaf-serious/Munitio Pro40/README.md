@@ -16,7 +16,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Munitio Pro40 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 194 Hz  | 0.44 | -7.7 dB |
 | Peaking | 662 Hz  | 2.54 | 8.5 dB  |
 | Peaking | 3436 Hz | 0.72 | 6.9 dB  |
-| Peaking | 11 Hz   | 0.73 | 1.3 dB  |
-| Peaking | 1038 Hz | 6.32 | -1.4 dB |
-| Peaking | 3609 Hz | 4.58 | -1.3 dB |
-| Peaking | 6198 Hz | 2.06 | 5.4 dB  |
-| Peaking | 7656 Hz | 1.59 | -4.7 dB |
+| Peaking | 12 Hz   | 0.68 | 1.2 dB  |
+| Peaking | 1046 Hz | 6.32 | -1.4 dB |
+| Peaking | 3650 Hz | 4.59 | -1.3 dB |
+| Peaking | 6328 Hz | 2.06 | 5.4 dB  |
+| Peaking | 7489 Hz | 1.59 | -4.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Munitio%20Pro40/Munitio%20Pro40.png)

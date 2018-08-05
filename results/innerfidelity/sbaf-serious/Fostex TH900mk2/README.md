@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Fostex TH900mk2 
 In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 5 Hz     | 1.37 | -2.0 dB |
-| Peaking | 37 Hz    | 0.51 | -3.7 dB |
-| Peaking | 158 Hz   | 0.82 | -5.0 dB |
-| Peaking | 885 Hz   | 0.14 | 1.9 dB  |
-| Peaking | 5901 Hz  | 2.67 | -6.3 dB |
-| Peaking | 485 Hz   | 3.31 | 1.6 dB  |
-| Peaking | 977 Hz   | 2.11 | -1.6 dB |
-| Peaking | 2617 Hz  | 5.75 | 2.5 dB  |
-| Peaking | 16434 Hz | 1.38 | 2.6 dB  |
-| Peaking | 20340 Hz | 0.8  | -7.9 dB |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 5 Hz     |  1.37 | -2.0 dB |
+| Peaking | 37 Hz    |  0.51 | -3.7 dB |
+| Peaking | 158 Hz   |  0.83 | -5.0 dB |
+| Peaking | 884 Hz   |  0.13 | 1.9 dB  |
+| Peaking | 5895 Hz  |  2.67 | -6.3 dB |
+| Peaking | 485 Hz   |  3.36 | 1.6 dB  |
+| Peaking | 978 Hz   |  2.13 | -1.6 dB |
+| Peaking | 2635 Hz  |  5.7  | 2.4 dB  |
+| Peaking | 7931 Hz  | 10.45 | -3.4 dB |
+| Peaking | 19774 Hz |  2.09 | -7.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fostex%20TH900mk2/Fostex%20TH900mk2.png)

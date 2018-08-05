@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 147 Hz  |  1.45 | -3.2 dB |
-| Peaking | 1618 Hz |  5.3  | -3.4 dB |
-| Peaking | 2477 Hz |  2.34 | -3.0 dB |
-| Peaking | 5870 Hz |  2.46 | 7.2 dB  |
-| Peaking | 9307 Hz |  3.79 | -7.7 dB |
-| Peaking | 37 Hz   |  0.78 | -1.4 dB |
-| Peaking | 90 Hz   |  4.69 | 1.3 dB  |
-| Peaking | 769 Hz  |  1.4  | 4.8 dB  |
-| Peaking | 891 Hz  |  0.81 | -2.7 dB |
-| Peaking | 1888 Hz | 16.53 | 2.7 dB  |
+| Peaking | 147 Hz  |  1.44 | -3.2 dB |
+| Peaking | 1609 Hz |  5.29 | -3.4 dB |
+| Peaking | 2480 Hz |  2.34 | -3.0 dB |
+| Peaking | 5871 Hz |  2.46 | 7.2 dB  |
+| Peaking | 9308 Hz |  3.79 | -7.7 dB |
+| Peaking | 36 Hz   |  0.78 | -1.4 dB |
+| Peaking | 89 Hz   |  4.69 | 1.2 dB  |
+| Peaking | 777 Hz  |  1.4  | 4.7 dB  |
+| Peaking | 875 Hz  |  0.81 | -2.7 dB |
+| Peaking | 1887 Hz | 17.42 | 2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20160/Sennheiser%20RS%20160.png)

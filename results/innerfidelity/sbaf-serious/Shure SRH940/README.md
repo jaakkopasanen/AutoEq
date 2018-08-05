@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Shure SRH940 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 26 Hz    | 0.87 | 6.5 dB   |
-| Peaking | 96 Hz    | 2.58 | 3.8 dB   |
-| Peaking | 276 Hz   | 1.08 | -4.5 dB  |
-| Peaking | 2243 Hz  | 1.36 | -3.0 dB  |
-| Peaking | 9167 Hz  | 4.21 | -10.6 dB |
-| Peaking | 890 Hz   | 2.28 | 1.2 dB   |
-| Peaking | 4454 Hz  | 3.77 | -2.0 dB  |
-| Peaking | 6104 Hz  | 2.86 | 3.7 dB   |
-| Peaking | 11577 Hz | 3.92 | 3.3 dB   |
-| Peaking | 19256 Hz | 0.14 | -1.8 dB  |
+| Peaking | 27 Hz    | 0.85 | 6.4 dB   |
+| Peaking | 95 Hz    | 2.58 | 3.8 dB   |
+| Peaking | 279 Hz   | 1.08 | -4.5 dB  |
+| Peaking | 2237 Hz  | 1.36 | -3.0 dB  |
+| Peaking | 9181 Hz  | 4.21 | -10.6 dB |
+| Peaking | 887 Hz   | 2.18 | 1.2 dB   |
+| Peaking | 4469 Hz  | 3.78 | -2.0 dB  |
+| Peaking | 6094 Hz  | 2.91 | 3.7 dB   |
+| Peaking | 11640 Hz | 3.93 | 3.3 dB   |
+| Peaking | 21370 Hz | 0.07 | -1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SRH940/Shure%20SRH940.png)

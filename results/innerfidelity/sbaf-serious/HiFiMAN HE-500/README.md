@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2289 Hz |  1.41 | 2.7 dB  |
 | Peaking | 5578 Hz |  5.65 | 3.2 dB  |
 | Peaking | 9049 Hz |  5.85 | -6.6 dB |
-| Peaking | 99 Hz   |  2.26 | 0.9 dB  |
-| Peaking | 210 Hz  |  0.76 | -1.5 dB |
-| Peaking | 233 Hz  |  1.39 | 1.0 dB  |
-| Peaking | 4459 Hz | 11.49 | -1.6 dB |
-| Peaking | 7171 Hz |  8.8  | 1.4 dB  |
+| Peaking | 100 Hz  |  2.28 | 0.9 dB  |
+| Peaking | 212 Hz  |  0.75 | -1.5 dB |
+| Peaking | 228 Hz  |  1.39 | 1.0 dB  |
+| Peaking | 4479 Hz | 11.49 | -1.6 dB |
+| Peaking | 7216 Hz |  8.8  | 1.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE-500/HiFiMAN%20HE-500.png)

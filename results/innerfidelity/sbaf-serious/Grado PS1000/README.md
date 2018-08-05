@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1572 Hz  |  3    | -1.9 dB  |
 | Peaking | 6249 Hz  |  1.52 | -10.7 dB |
 | Peaking | 9612 Hz  |  4.94 | -8.2 dB  |
-| Peaking | 596 Hz   |  1.16 | 0.8 dB   |
-| Peaking | 4345 Hz  |  8.94 | -2.6 dB  |
-| Peaking | 5567 Hz  | 10.64 | 1.8 dB   |
-| Peaking | 12450 Hz |  4.19 | 2.1 dB   |
+| Peaking | 596 Hz   |  1.15 | 0.8 dB   |
+| Peaking | 4312 Hz  |  8.94 | -2.6 dB  |
+| Peaking | 5558 Hz  | 10.64 | 1.8 dB   |
+| Peaking | 12481 Hz |  4.19 | 2.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20PS1000/Grado%20PS1000.png)

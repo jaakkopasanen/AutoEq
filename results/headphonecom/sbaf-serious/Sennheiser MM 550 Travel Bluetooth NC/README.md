@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 3774 Hz  | 2.83 | 7.1 dB   |
 | Peaking | 6123 Hz  | 4.99 | 6.2 dB   |
 | Peaking | 396 Hz   | 2.66 | -3.8 dB  |
-| Peaking | 913 Hz   | 1.62 | 1.8 dB   |
-| Peaking | 1451 Hz  | 5.13 | -1.6 dB  |
-| Peaking | 12078 Hz | 2.01 | 0.8 dB   |
-| Peaking | 10916 Hz | 3.64 | -3.8 dB  |
+| Peaking | 914 Hz   | 1.63 | 1.8 dB   |
+| Peaking | 1463 Hz  | 5.12 | -1.6 dB  |
+| Peaking | 12051 Hz | 1.99 | 0.9 dB   |
+| Peaking | 10916 Hz | 3.62 | -3.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20MM%20550%20Travel%20Bluetooth%20NC/Sennheiser%20MM%20550%20Travel%20Bluetooth%20NC.png)

@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 70
 In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 11 Hz    | 0.41 | 7.0 dB  |
-| Peaking | 222 Hz   | 0.48 | -4.7 dB |
-| Peaking | 2023 Hz  | 1.25 | 4.8 dB  |
-| Peaking | 3685 Hz  | 5.35 | 4.0 dB  |
-| Peaking | 6070 Hz  | 2.28 | -8.8 dB |
-| Peaking | 146 Hz   | 5.14 | -0.6 dB |
-| Peaking | 8664 Hz  | 1.48 | -3.2 dB |
-| Peaking | 7844 Hz  | 4.51 | 4.4 dB  |
-| Peaking | 19943 Hz | 1.12 | -9.6 dB |
-| Peaking | 14664 Hz | 0.59 | 2.2 dB  |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 11 Hz    |  0.4  | 7.0 dB  |
+| Peaking | 221 Hz   |  0.48 | -4.7 dB |
+| Peaking | 2023 Hz  |  1.25 | 4.8 dB  |
+| Peaking | 3656 Hz  |  5.35 | 4.0 dB  |
+| Peaking | 6061 Hz  |  2.28 | -8.8 dB |
+| Peaking | 73 Hz    |  0.73 | -1.1 dB |
+| Peaking | 80 Hz    |  1.9  | 1.6 dB  |
+| Peaking | 4817 Hz  | 10.01 | -1.2 dB |
+| Peaking | 7727 Hz  | 10    | 2.4 dB  |
+| Peaking | 19713 Hz |  2.03 | -9.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20700/Sennheiser%20HD%20700.png)

@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-V6 Para
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 24 Hz    |  0.8  | 6.3 dB  |
-| Peaking | 2446 Hz  |  1.07 | -4.7 dB |
-| Peaking | 4558 Hz  |  6.17 | -5.4 dB |
-| Peaking | 5866 Hz  |  4.59 | 5.2 dB  |
-| Peaking | 9375 Hz  |  3.24 | -9.2 dB |
-| Peaking | 166 Hz   |  1.52 | -1.7 dB |
-| Peaking | 290 Hz   |  4.19 | 1.9 dB  |
-| Peaking | 196 Hz   |  3.48 | 3.8 dB  |
-| Peaking | 2439 Hz  | 13.01 | 1.2 dB  |
-| Peaking | 11993 Hz |  6.14 | 2.0 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 24 Hz    | 0.81 | 6.3 dB  |
+| Peaking | 2446 Hz  | 1.07 | -4.7 dB |
+| Peaking | 4536 Hz  | 6.17 | -5.4 dB |
+| Peaking | 5840 Hz  | 4.59 | 5.2 dB  |
+| Peaking | 9371 Hz  | 3.24 | -9.2 dB |
+| Peaking | 156 Hz   | 1.82 | -1.5 dB |
+| Peaking | 292 Hz   | 4.28 | 1.7 dB  |
+| Peaking | 195 Hz   | 3.69 | 3.3 dB  |
+| Peaking | 1710 Hz  | 8.34 | -1.1 dB |
+| Peaking | 11990 Hz | 6.09 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-V6/Sony%20MDR-V6.png)

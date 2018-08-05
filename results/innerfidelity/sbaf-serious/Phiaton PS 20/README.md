@@ -1,0 +1,35 @@
+# Phiaton PS 20
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 5.3; 22 4.7; 23 4.4; 25 3.9; 26 3.7; 28 3.2; 30 2.9; 32 2.5; 35 2.1; 37 1.8; 40 1.4; 42 1.2; 45 0.9; 49 0.6; 52 0.4; 56 0.1; 59 -0.0; 64 -0.3; 68 -0.6; 73 -0.9; 78 -1.2; 83 -1.5; 89 -2.1; 95 -2.6; 102 -3.3; 109 -3.9; 117 -4.5; 125 -5.2; 134 -5.8; 143 -6.2; 153 -6.5; 164 -6.7; 175 -6.8; 188 -6.9; 201 -7.0; 215 -7.1; 230 -7.1; 246 -7.2; 263 -7.3; 282 -7.1; 301 -7.2; 323 -7.2; 345 -7.3; 369 -7.4; 395 -7.5; 423 -7.3; 452 -7.0; 484 -7.2; 518 -6.9; 554 -6.5; 593 -5.8; 635 -5.2; 679 -4.6; 726 -3.7; 777 -2.6; 832 -1.8; 890 -1.0; 952 -0.3; 1019 0.1; 1090 0.4; 1167 0.5; 1248 0.3; 1336 -0.3; 1429 -1.1; 1529 -2.2; 1636 -3.1; 1751 -4.2; 1873 -5.1; 2004 -5.6; 2145 -5.9; 2295 -4.8; 2455 -2.5; 2627 -0.2; 2811 2.0; 3008 4.5; 3219 5.9; 3444 6.0; 3685 6.0; 3943 5.5; 4219 2.9; 4514 0.2; 4830 -2.3; 5168 -4.0; 5530 -3.3; 5917 -0.4; 6331 2.1; 6775 3.2; 7249 1.3; 7756 0.2; 8299 -0.9; 8880 -0.4; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Phiaton PS 20 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 10 Hz   | 0.3  | 6.2 dB   |
+| Peaking | 274 Hz  | 0.44 | -8.1 dB  |
+| Peaking | 2172 Hz | 2.02 | -13.9 dB |
+| Peaking | 2997 Hz | 0.76 | 10.5 dB  |
+| Peaking | 5141 Hz | 3.71 | -9.0 dB  |
+| Peaking | 596 Hz  | 1.26 | -5.2 dB  |
+| Peaking | 768 Hz  | 0.64 | 4.3 dB   |
+| Peaking | 1665 Hz | 2.95 | -2.8 dB  |
+| Peaking | 6720 Hz | 5.36 | 3.8 dB   |
+| Peaking | 7919 Hz | 1.59 | -2.4 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Phiaton%20PS%2020/Phiaton%20PS%2020.png)

@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 2.47 | 3.9 dB  |
-| Peaking | 210 Hz  | 0.46 | -8.3 dB |
-| Peaking | 424 Hz  | 0.86 | 9.9 dB  |
-| Peaking | 3771 Hz | 0.43 | -5.9 dB |
-| Peaking | 5228 Hz | 1.33 | 12.1 dB |
-| Peaking | 48 Hz   | 3.16 | -1.1 dB |
-| Peaking | 743 Hz  | 6.19 | -0.7 dB |
-| Peaking | 1134 Hz | 5.69 | 0.7 dB  |
-| Peaking | 6460 Hz | 7.81 | 2.0 dB  |
-| Peaking | 7561 Hz | 4.27 | -1.3 dB |
+| Peaking | 22 Hz   | 2.51 | 4.1 dB  |
+| Peaking | 206 Hz  | 0.46 | -8.2 dB |
+| Peaking | 423 Hz  | 0.87 | 9.7 dB  |
+| Peaking | 3754 Hz | 0.43 | -5.8 dB |
+| Peaking | 5224 Hz | 1.34 | 12.0 dB |
+| Peaking | 46 Hz   | 1.95 | -1.1 dB |
+| Peaking | 92 Hz   | 3.56 | 0.9 dB  |
+| Peaking | 729 Hz  | 7.39 | -0.7 dB |
+| Peaking | 6550 Hz | 7.34 | 2.2 dB  |
+| Peaking | 7536 Hz | 3.57 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/V-Moda%20Crossfade%20LP/V-Moda%20Crossfade%20LP.png)

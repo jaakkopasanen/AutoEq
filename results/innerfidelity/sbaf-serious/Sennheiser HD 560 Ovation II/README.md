@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:---------|:-----|:--------|
 | Peaking | 38 Hz    | 0.69 | 7.0 dB  |
 | Peaking | 2523 Hz  | 1.24 | -4.3 dB |
-| Peaking | 4953 Hz  | 3.24 | -4.0 dB |
-| Peaking | 6004 Hz  | 3.54 | 8.9 dB  |
-| Peaking | 8181 Hz  | 3.88 | -5.8 dB |
-| Peaking | 36 Hz    | 1.3  | -4.7 dB |
-| Peaking | 74 Hz    | 0.19 | 4.6 dB  |
-| Peaking | 169 Hz   | 0.56 | -5.5 dB |
-| Peaking | 10372 Hz | 6.89 | 0.9 dB  |
-| Peaking | 27974 Hz | 3.86 | -6.8 dB |
+| Peaking | 4952 Hz  | 3.24 | -4.0 dB |
+| Peaking | 6003 Hz  | 3.54 | 8.9 dB  |
+| Peaking | 8180 Hz  | 3.88 | -5.8 dB |
+| Peaking | 36 Hz    | 1.31 | -4.7 dB |
+| Peaking | 76 Hz    | 0.19 | 4.6 dB  |
+| Peaking | 171 Hz   | 0.57 | -5.5 dB |
+| Peaking | 10339 Hz | 6.9  | 0.9 dB  |
+| Peaking | 19942 Hz | 3.87 | -6.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20560%20Ovation%20II/Sennheiser%20HD%20560%20Ovation%20II.png)

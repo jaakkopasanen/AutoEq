@@ -16,7 +16,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Ortofon 2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
@@ -24,12 +24,12 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 43 Hz   | 0.38 | 6.6 dB  |
 | Peaking | 170 Hz  | 1.76 | 3.3 dB  |
 | Peaking | 5988 Hz | 3.35 | 3.5 dB  |
-| Peaking | 4480 Hz | 1.3  | 5.0 dB  |
+| Peaking | 4479 Hz | 1.3  | 5.0 dB  |
 | Peaking | 9851 Hz | 3.64 | -5.2 dB |
-| Peaking | 18 Hz   | 2.05 | 1.3 dB  |
-| Peaking | 240 Hz  | 3.09 | 2.0 dB  |
-| Peaking | 366 Hz  | 1.99 | -3.1 dB |
-| Peaking | 1862 Hz | 4.76 | -1.9 dB |
-| Peaking | 2728 Hz | 5.94 | 2.0 dB  |
+| Peaking | 23 Hz   | 2.58 | 1.2 dB  |
+| Peaking | 237 Hz  | 3.08 | 2.0 dB  |
+| Peaking | 365 Hz  | 1.99 | -3.1 dB |
+| Peaking | 1862 Hz | 4.75 | -1.9 dB |
+| Peaking | 2730 Hz | 5.91 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ortofon%202/Ortofon%202.png)

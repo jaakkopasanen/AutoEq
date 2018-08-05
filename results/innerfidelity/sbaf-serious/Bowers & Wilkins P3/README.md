@@ -1,0 +1,35 @@
+# Bowers & Wilkins P3
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 1.5; 22 0.8; 23 0.5; 25 -0.1; 26 -0.4; 28 -0.8; 30 -1.2; 32 -1.6; 35 -2.1; 37 -2.4; 40 -2.8; 42 -3.0; 45 -3.3; 49 -3.7; 52 -3.9; 56 -4.2; 59 -4.4; 64 -4.7; 68 -4.9; 73 -5.2; 78 -5.4; 83 -5.7; 89 -6.1; 95 -6.6; 102 -7.0; 109 -7.3; 117 -7.7; 125 -8.1; 134 -8.4; 143 -8.6; 153 -8.9; 164 -9.1; 175 -8.9; 188 -9.1; 201 -9.3; 215 -9.4; 230 -9.4; 246 -9.6; 263 -9.6; 282 -9.5; 301 -9.5; 323 -9.3; 345 -9.1; 369 -8.7; 395 -8.3; 423 -7.7; 452 -7.2; 484 -6.8; 518 -6.4; 554 -5.9; 593 -5.1; 635 -4.3; 679 -3.6; 726 -2.8; 777 -1.9; 832 -1.2; 890 -0.7; 952 -0.3; 1019 0.1; 1090 0.8; 1167 1.8; 1248 2.3; 1336 1.8; 1429 1.6; 1529 2.0; 1636 2.2; 1751 2.6; 1873 3.3; 2004 3.7; 2145 3.9; 2295 3.9; 2455 4.0; 2627 3.7; 2811 2.8; 3008 1.8; 3219 0.7; 3444 0.2; 3685 0.1; 3943 0.6; 4219 2.3; 4514 5.2; 4830 6.0; 5168 4.3; 5530 1.9; 5917 2.7; 6331 3.2; 6775 2.1; 7249 -0.2; 7756 -2.2; 8299 -3.4; 8880 -3.1; 9502 -1.4; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 -1.5; 18692 -3.8; 20000 -5.8
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins P3 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 120 Hz  | 0.48 | -5.3 dB |
+| Peaking | 337 Hz  | 0.57 | -7.3 dB |
+| Peaking | 1668 Hz | 0.69 | 4.1 dB  |
+| Peaking | 4838 Hz | 5.2  | 5.6 dB  |
+| Peaking | 8449 Hz | 5.49 | -4.3 dB |
+| Peaking | 18 Hz   | 2.37 | 1.9 dB  |
+| Peaking | 1634 Hz | 3.2  | -1.9 dB |
+| Peaking | 2406 Hz | 1.1  | 1.8 dB  |
+| Peaking | 3488 Hz | 2.97 | -3.0 dB |
+| Peaking | 6387 Hz | 8.14 | 2.8 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bowers%20&%20Wilkins%20P3/Bowers%20&%20Wilkins%20P3.png)

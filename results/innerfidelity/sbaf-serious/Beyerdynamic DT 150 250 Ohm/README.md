@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 148 Hz  | 1.51 | -6.9 dB |
-| Peaking | 2142 Hz | 3.35 | -3.0 dB |
-| Peaking | 3531 Hz | 3.69 | 5.1 dB  |
-| Peaking | 6475 Hz | 3.03 | 10.3 dB |
-| Peaking | 6083 Hz | 0.91 | -5.6 dB |
-| Peaking | 17 Hz   | 1.75 | 2.0 dB  |
-| Peaking | 70 Hz   | 2.6  | 1.8 dB  |
-| Peaking | 104 Hz  | 2.59 | -2.7 dB |
-| Peaking | 219 Hz  | 1.86 | -5.8 dB |
-| Peaking | 229 Hz  | 0.73 | 4.3 dB  |
+| Peaking | 2144 Hz | 3.36 | -3.0 dB |
+| Peaking | 3511 Hz | 3.67 | 5.1 dB  |
+| Peaking | 6511 Hz | 3.02 | 10.2 dB |
+| Peaking | 6029 Hz | 0.9  | -5.6 dB |
+| Peaking | 22 Hz   | 2.02 | 2.0 dB  |
+| Peaking | 69 Hz   | 2.62 | 1.8 dB  |
+| Peaking | 105 Hz  | 2.52 | -2.8 dB |
+| Peaking | 217 Hz  | 1.81 | -6.0 dB |
+| Peaking | 229 Hz  | 0.74 | 4.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20150%20250%20Ohm/Beyerdynamic%20DT%20150%20250%20Ohm.png)

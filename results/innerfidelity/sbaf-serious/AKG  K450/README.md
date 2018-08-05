@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:--------|:-----|:--------|
 | Peaking | 16 Hz   | 0.19 | 6.3 dB  |
 | Peaking | 255 Hz  | 0.3  | -1.6 dB |
-| Peaking | 3844 Hz | 0.71 | -8.4 dB |
-| Peaking | 2319 Hz | 1.01 | 10.8 dB |
-| Peaking | 5339 Hz | 1.67 | 10.9 dB |
-| Peaking | 1604 Hz | 8.96 | 0.9 dB  |
-| Peaking | 4800 Hz | 7.9  | 1.7 dB  |
-| Peaking | 5567 Hz | 2.65 | -1.8 dB |
-| Peaking | 6406 Hz | 4.76 | 2.9 dB  |
-| Peaking | 7573 Hz | 4.23 | -1.3 dB |
+| Peaking | 3826 Hz | 0.7  | -8.4 dB |
+| Peaking | 2321 Hz | 1.01 | 10.8 dB |
+| Peaking | 5352 Hz | 1.67 | 10.9 dB |
+| Peaking | 1603 Hz | 6.05 | 0.9 dB  |
+| Peaking | 6759 Hz | 7.92 | 2.0 dB  |
+| Peaking | 1076 Hz | 3.67 | -0.4 dB |
+| Peaking | 6326 Hz | 9.44 | 1.6 dB  |
+| Peaking | 7063 Hz | 2.73 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20%20K450/AKG%20%20K450.png)

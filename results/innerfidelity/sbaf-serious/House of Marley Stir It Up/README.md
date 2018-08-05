@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 628 Hz  | 1.27 | -4.2 dB |
 | Peaking | 2556 Hz | 0.74 | 6.7 dB  |
 | Peaking | 5997 Hz | 4.87 | 4.3 dB  |
-| Peaking | 327 Hz  | 3.06 | 0.7 dB  |
-| Peaking | 473 Hz  | 7.21 | -1.0 dB |
-| Peaking | 2635 Hz | 5.55 | -0.7 dB |
-| Peaking | 3890 Hz | 6.98 | 1.5 dB  |
-| Peaking | 8639 Hz | 2.66 | -1.3 dB |
+| Peaking | 328 Hz  | 3.07 | 0.7 dB  |
+| Peaking | 475 Hz  | 7.21 | -1.0 dB |
+| Peaking | 2633 Hz | 5.55 | -0.7 dB |
+| Peaking | 3873 Hz | 6.98 | 1.5 dB  |
+| Peaking | 8637 Hz | 2.66 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/House%20of%20Marley%20Stir%20It%20Up/House%20of%20Marley%20Stir%20It%20Up.png)

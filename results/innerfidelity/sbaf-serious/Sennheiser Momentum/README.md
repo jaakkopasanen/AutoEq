@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 24 Hz   | 1.06 | 3.4 dB  |
-| Peaking | 58 Hz   | 2.13 | 1.6 dB  |
+| Peaking | 59 Hz   | 2.13 | 1.6 dB  |
 | Peaking | 530 Hz  | 2.61 | 1.7 dB  |
 | Peaking | 1704 Hz | 2.07 | -3.6 dB |
 | Peaking | 3811 Hz | 0.88 | 7.1 dB  |
-| Peaking | 199 Hz  | 1.87 | -1.7 dB |
-| Peaking | 2824 Hz | 4.93 | 1.3 dB  |
-| Peaking | 3842 Hz | 2.81 | -1.0 dB |
-| Peaking | 6269 Hz | 2.5  | 5.1 dB  |
-| Peaking | 7405 Hz | 1.51 | -3.8 dB |
+| Peaking | 200 Hz  | 1.88 | -1.7 dB |
+| Peaking | 2830 Hz | 4.92 | 1.3 dB  |
+| Peaking | 3834 Hz | 2.83 | -1.0 dB |
+| Peaking | 6259 Hz | 2.47 | 5.2 dB  |
+| Peaking | 7389 Hz | 1.5  | -4.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum/Sennheiser%20Momentum.png)

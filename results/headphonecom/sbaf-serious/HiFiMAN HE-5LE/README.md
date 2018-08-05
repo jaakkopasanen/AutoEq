@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 338 Hz  |  0.73 | -4.5 dB |
-| Peaking | 1775 Hz |  0.82 | 4.2 dB  |
-| Peaking | 3820 Hz |  4.82 | 3.5 dB  |
-| Peaking | 4470 Hz |  3.61 | -5.1 dB |
-| Peaking | 8617 Hz |  2.78 | -7.4 dB |
-| Peaking | 42 Hz   |  1.03 | 1.4 dB  |
-| Peaking | 81 Hz   |  2.56 | 1.6 dB  |
-| Peaking | 550 Hz  |  6.54 | -3.1 dB |
-| Peaking | 709 Hz  |  4.9  | 2.5 dB  |
-| Peaking | 6428 Hz | 10.99 | -2.8 dB |
+| Peaking | 339 Hz  |  0.73 | -4.5 dB |
+| Peaking | 1778 Hz |  0.82 | 4.2 dB  |
+| Peaking | 3779 Hz |  4.82 | 3.5 dB  |
+| Peaking | 4440 Hz |  3.62 | -5.1 dB |
+| Peaking | 8706 Hz |  2.78 | -7.4 dB |
+| Peaking | 42 Hz   |  1.04 | 1.4 dB  |
+| Peaking | 82 Hz   |  2.56 | 1.6 dB  |
+| Peaking | 550 Hz  |  6.57 | -3.1 dB |
+| Peaking | 708 Hz  |  4.9  | 2.4 dB  |
+| Peaking | 6432 Hz | 10.68 | -3.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/HiFiMAN%20HE-5LE/HiFiMAN%20HE-5LE.png)

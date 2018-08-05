@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 35 Hz   | 0.93 | 7.2 dB   |
-| Peaking | 2284 Hz | 1.52 | -8.3 dB  |
-| Peaking | 6732 Hz | 1.12 | 7.0 dB   |
-| Peaking | 4228 Hz | 3.37 | 6.1 dB   |
-| Peaking | 8636 Hz | 3.38 | -17.4 dB |
-| Peaking | 87 Hz   | 1.77 | 3.0 dB   |
-| Peaking | 124 Hz  | 1.78 | -3.1 dB  |
-| Peaking | 216 Hz  | 1.76 | -1.3 dB  |
+| Peaking | 35 Hz   | 0.94 | 7.2 dB   |
+| Peaking | 2282 Hz | 1.53 | -8.3 dB  |
+| Peaking | 6719 Hz | 1.14 | 7.0 dB   |
+| Peaking | 4229 Hz | 3.36 | 6.2 dB   |
+| Peaking | 8633 Hz | 3.4  | -17.3 dB |
+| Peaking | 87 Hz   | 1.66 | 3.1 dB   |
+| Peaking | 124 Hz  | 1.78 | -3.2 dB  |
+| Peaking | 215 Hz  | 1.73 | -1.3 dB  |
 | Peaking | 389 Hz  | 1.3  | -3.8 dB  |
-| Peaking | 957 Hz  | 1.38 | 1.6 dB   |
+| Peaking | 953 Hz  | 1.38 | 1.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-ZX700/Sony%20MDR-ZX700.png)

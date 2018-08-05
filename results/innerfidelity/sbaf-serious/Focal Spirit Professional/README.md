@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 29 Hz   |  0.54 | -3.0 dB |
-| Peaking | 148 Hz  |  0.84 | -3.2 dB |
-| Peaking | 4967 Hz |  0.6  | -2.7 dB |
-| Peaking | 2671 Hz |  2.48 | 3.1 dB  |
-| Peaking | 5694 Hz |  2.17 | 8.9 dB  |
-| Peaking | 404 Hz  |  2.68 | 1.3 dB  |
-| Peaking | 494 Hz  |  2.12 | -1.5 dB |
-| Peaking | 1050 Hz |  2.52 | 0.4 dB  |
-| Peaking | 3594 Hz |  8.9  | -0.9 dB |
-| Peaking | 6566 Hz | 14.29 | 1.4 dB  |
+| Peaking | 149 Hz  |  0.84 | -3.2 dB |
+| Peaking | 4975 Hz |  0.6  | -2.7 dB |
+| Peaking | 2676 Hz |  2.47 | 3.1 dB  |
+| Peaking | 5680 Hz |  2.17 | 8.9 dB  |
+| Peaking | 409 Hz  |  2.53 | 1.4 dB  |
+| Peaking | 487 Hz  |  2.06 | -1.6 dB |
+| Peaking | 1041 Hz |  2.49 | 0.4 dB  |
+| Peaking | 3577 Hz |  7.6  | -0.8 dB |
+| Peaking | 6549 Hz | 13.6  | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Focal%20Spirit%20Professional/Focal%20Spirit%20Professional.png)

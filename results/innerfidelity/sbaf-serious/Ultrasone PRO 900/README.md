@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 32916 Hz |  2.89 | -6.9 dB |
 | Peaking | 17897 Hz |  1.14 | -6.4 dB |
 | Peaking | 189 Hz   |  3.77 | -3.1 dB |
-| Peaking | 274 Hz   |  4.08 | 6.4 dB  |
-| Peaking | 564 Hz   | 11.37 | 5.3 dB  |
-| Peaking | 5171 Hz  |  9.63 | 7.1 dB  |
-| Peaking | 6532 Hz  |  7.39 | -9.7 dB |
+| Peaking | 275 Hz   |  4.09 | 6.4 dB  |
+| Peaking | 563 Hz   | 11.36 | 5.2 dB  |
+| Peaking | 5186 Hz  |  9.62 | 7.1 dB  |
+| Peaking | 6534 Hz  |  7.39 | -9.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20PRO%20900/Ultrasone%20PRO%20900.png)

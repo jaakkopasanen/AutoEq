@@ -1,0 +1,35 @@
+# RHA T10i Reference Filter
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -8.8; 22 -9.2; 23 -9.3; 25 -9.6; 26 -9.6; 28 -9.8; 30 -9.9; 32 -9.9; 35 -9.9; 37 -10.0; 40 -10.0; 42 -10.0; 45 -9.9; 49 -9.8; 52 -9.7; 56 -9.6; 59 -9.6; 64 -9.5; 68 -9.4; 73 -9.3; 78 -9.3; 83 -9.3; 89 -9.4; 95 -9.6; 102 -9.9; 109 -10.0; 117 -10.3; 125 -10.6; 134 -10.8; 143 -10.8; 153 -10.7; 164 -10.5; 175 -10.1; 188 -9.8; 201 -9.4; 215 -9.0; 230 -8.5; 246 -8.1; 263 -7.7; 282 -7.1; 301 -6.6; 323 -6.2; 345 -5.6; 369 -5.1; 395 -4.7; 423 -4.1; 452 -3.6; 484 -3.3; 518 -2.8; 554 -2.4; 593 -1.6; 635 -1.2; 679 -1.2; 726 -1.0; 777 -0.5; 832 -0.1; 890 0.2; 952 0.3; 1019 -0.1; 1090 -0.4; 1167 -0.6; 1248 -0.9; 1336 -1.4; 1429 -2.0; 1529 -2.7; 1636 -3.3; 1751 -3.9; 1873 -4.2; 2004 -4.6; 2145 -4.8; 2295 -4.6; 2455 -3.6; 2627 -2.3; 2811 -1.0; 3008 0.4; 3219 1.0; 3444 1.2; 3685 1.2; 3943 2.4; 4219 3.5; 4514 5.6; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.1; 8299 -3.8; 8880 -6.0; 9502 -7.8; 10167 -9.6; 10879 -8.4; 11640 -2.8; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `RHA T10i Reference Filter ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 29 Hz    | 0.25 | -9.3 dB  |
+| Peaking | 183 Hz   | 0.67 | -7.4 dB  |
+| Peaking | 2109 Hz  | 2.05 | -5.7 dB  |
+| Peaking | 5481 Hz  | 1.38 | 7.7 dB   |
+| Peaking | 9858 Hz  | 2.69 | -11.5 dB |
+| Peaking | 388 Hz   | 2.4  | -0.7 dB  |
+| Peaking | 905 Hz   | 2    | 1.4 dB   |
+| Peaking | 1550 Hz  | 4.86 | -1.0 dB  |
+| Peaking | 10924 Hz | 7.53 | -3.8 dB  |
+| Peaking | 12156 Hz | 3.16 | 2.8 dB   |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/RHA%20T10i%20Reference%20Filter/RHA%20T10i%20Reference%20Filter.png)

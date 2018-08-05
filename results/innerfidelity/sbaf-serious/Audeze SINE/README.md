@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Audeze SINE ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 11 Hz    | 0.53 | 6.5 dB  |
-| Peaking | 204 Hz   | 0.79 | -2.9 dB |
-| Peaking | 2080 Hz  | 1.57 | -2.5 dB |
-| Peaking | 5784 Hz  | 2.85 | 4.6 dB  |
-| Peaking | 17899 Hz | 2.15 | -3.6 dB |
-| Peaking | 482 Hz   | 1.39 | -2.0 dB |
-| Peaking | 642 Hz   | 0.78 | 1.7 dB  |
-| Peaking | 1609 Hz  | 3.58 | -0.9 dB |
-| Peaking | 10233 Hz | 5.72 | -2.1 dB |
-| Peaking | 14508 Hz | 2.46 | 0.6 dB  |
+| Peaking | 11 Hz    | 0.52 | 6.5 dB  |
+| Peaking | 202 Hz   | 0.78 | -2.9 dB |
+| Peaking | 2096 Hz  | 1.57 | -2.5 dB |
+| Peaking | 5781 Hz  | 2.85 | 4.6 dB  |
+| Peaking | 17896 Hz | 2.15 | -3.6 dB |
+| Peaking | 472 Hz   | 1.31 | -2.2 dB |
+| Peaking | 620 Hz   | 0.71 | 1.9 dB  |
+| Peaking | 1677 Hz  | 4.4  | -0.8 dB |
+| Peaking | 1455 Hz  | 3.38 | -0.4 dB |
+| Peaking | 10236 Hz | 6.77 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20SINE/Audeze%20SINE.png)

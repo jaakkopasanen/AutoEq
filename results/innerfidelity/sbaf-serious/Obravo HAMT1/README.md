@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 541 Hz   | 1.9  | -12.9 dB |
 | Peaking | 1461 Hz  | 3.17 | 7.6 dB   |
 | Peaking | 21627 Hz | 0.15 | -4.5 dB  |
-| Peaking | 25 Hz    | 1.26 | 6.6 dB   |
-| Peaking | 2167 Hz  | 7.17 | -6.0 dB  |
-| Peaking | 3774 Hz  | 1.31 | -11.5 dB |
-| Peaking | 5721 Hz  | 0.57 | 11.5 dB  |
-| Peaking | 9205 Hz  | 2.53 | -13.6 dB |
+| Peaking | 25 Hz    | 1.26 | 6.7 dB   |
+| Peaking | 2167 Hz  | 7.05 | -6.0 dB  |
+| Peaking | 3768 Hz  | 1.34 | -11.2 dB |
+| Peaking | 5766 Hz  | 0.57 | 11.2 dB  |
+| Peaking | 9201 Hz  | 2.53 | -13.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Obravo%20HAMT1/Obravo%20HAMT1.png)

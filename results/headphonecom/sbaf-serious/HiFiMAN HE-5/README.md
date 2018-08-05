@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-5 Par
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 0.72 | 6.1 dB  |
-| Peaking | 2043 Hz  | 1.75 | 4.0 dB  |
-| Peaking | 4329 Hz  | 8.02 | -3.2 dB |
-| Peaking | 8906 Hz  | 1.92 | -8.6 dB |
-| Peaking | 29161 Hz | 1.65 | -7.5 dB |
-| Peaking | 91 Hz    | 1.45 | 1.9 dB  |
-| Peaking | 167 Hz   | 0.44 | -1.4 dB |
-| Peaking | 5205 Hz  | 9.89 | 1.7 dB  |
-| Peaking | 6629 Hz  | 7.34 | -1.8 dB |
-| Peaking | 14385 Hz | 2.21 | 0.9 dB  |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 24 Hz    |  0.72 | 6.1 dB  |
+| Peaking | 2043 Hz  |  1.75 | 4.0 dB  |
+| Peaking | 4327 Hz  |  8.02 | -3.2 dB |
+| Peaking | 8906 Hz  |  1.92 | -8.6 dB |
+| Peaking | 29156 Hz |  1.65 | -7.5 dB |
+| Peaking | 91 Hz    |  1.39 | 2.0 dB  |
+| Peaking | 156 Hz   |  0.42 | -1.5 dB |
+| Peaking | 5274 Hz  | 10.25 | 1.8 dB  |
+| Peaking | 6659 Hz  |  7.43 | -1.8 dB |
+| Peaking | 14374 Hz |  2.21 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/HiFiMAN%20HE-5/HiFiMAN%20HE-5.png)

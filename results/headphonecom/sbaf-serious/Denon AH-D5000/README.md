@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 7970 Hz  | 1.63 | -4.4 dB |
 | Peaking | 19861 Hz | 4.4  | -7.4 dB |
 | Peaking | 607 Hz   | 5.58 | 2.3 dB  |
-| Peaking | 2938 Hz  | 5.1  | 2.5 dB  |
-| Peaking | 4442 Hz  | 4.22 | -3.4 dB |
-| Peaking | 5807 Hz  | 7.3  | 2.2 dB  |
-| Peaking | 11165 Hz | 6.28 | 1.8 dB  |
+| Peaking | 2955 Hz  | 5.09 | 2.5 dB  |
+| Peaking | 4517 Hz  | 4.21 | -3.4 dB |
+| Peaking | 5882 Hz  | 7.28 | 2.2 dB  |
+| Peaking | 11230 Hz | 6.28 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D5000/Denon%20AH-D5000.png)

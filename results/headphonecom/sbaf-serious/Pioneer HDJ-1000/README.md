@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:--------|:-----|:--------|
 | Peaking | 39 Hz   | 0.58 | 6.9 dB  |
 | Peaking | 569 Hz  | 1.05 | 2.9 dB  |
-| Peaking | 1597 Hz | 1.66 | -5.7 dB |
+| Peaking | 1596 Hz | 1.66 | -5.7 dB |
 | Peaking | 2892 Hz | 1.31 | 6.9 dB  |
 | Peaking | 5327 Hz | 2.89 | 4.9 dB  |
-| Peaking | 42 Hz   | 2.77 | -1.0 dB |
-| Peaking | 75 Hz   | 2.99 | 2.2 dB  |
-| Peaking | 128 Hz  | 2.15 | -1.6 dB |
-| Peaking | 6747 Hz | 9.67 | 2.3 dB  |
-| Peaking | 7967 Hz | 2.12 | -1.1 dB |
+| Peaking | 40 Hz   | 2.83 | -1.0 dB |
+| Peaking | 76 Hz   | 2.99 | 2.3 dB  |
+| Peaking | 130 Hz  | 2.18 | -1.6 dB |
+| Peaking | 6791 Hz | 9.76 | 2.3 dB  |
+| Peaking | 7984 Hz | 2.13 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Pioneer%20HDJ-1000/Pioneer%20HDJ-1000.png)

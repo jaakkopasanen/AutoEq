@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 366 Hz  | 6.21 | 1.8 dB  |
 | Peaking | 1925 Hz | 1.54 | -2.4 dB |
 | Peaking | 4367 Hz | 1.17 | 7.1 dB  |
-| Peaking | 475 Hz  | 6.29 | -1.0 dB |
-| Peaking | 3503 Hz | 6.68 | 1.4 dB  |
-| Peaking | 4405 Hz | 3.47 | -1.0 dB |
-| Peaking | 6287 Hz | 2.92 | 4.6 dB  |
-| Peaking | 7446 Hz | 1.61 | -3.3 dB |
+| Peaking | 478 Hz  | 6.29 | -1.0 dB |
+| Peaking | 3492 Hz | 6.68 | 1.4 dB  |
+| Peaking | 4418 Hz | 3.47 | -1.0 dB |
+| Peaking | 6307 Hz | 2.92 | 4.6 dB  |
+| Peaking | 7398 Hz | 1.61 | -3.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/JBL%20Everest%20Elite%20700%20Wired%20Passive/JBL%20Everest%20Elite%20700%20Wired%20Passive.png)

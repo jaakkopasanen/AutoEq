@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE400S P
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 34 Hz   | 0.66 | 8.7 dB  |
-| Peaking | 33 Hz   | 1.94 | -2.9 dB |
-| Peaking | 573 Hz  | 2.85 | 1.2 dB  |
-| Peaking | 2749 Hz | 1.73 | 2.7 dB  |
-| Peaking | 5506 Hz | 5.48 | 6.1 dB  |
-| Peaking | 12 Hz   | 1.47 | 1.4 dB  |
-| Peaking | 156 Hz  | 2.99 | -0.7 dB |
-| Peaking | 1481 Hz | 5.61 | -0.6 dB |
-| Peaking | 4344 Hz | 2.78 | 2.0 dB  |
-| Peaking | 4467 Hz | 7.01 | -4.1 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 33 Hz   |  0.66 | 8.7 dB  |
+| Peaking | 34 Hz   |  1.96 | -2.9 dB |
+| Peaking | 575 Hz  |  2.85 | 1.2 dB  |
+| Peaking | 2749 Hz |  1.73 | 2.7 dB  |
+| Peaking | 5507 Hz |  5.48 | 6.1 dB  |
+| Peaking | 11 Hz   |  0.91 | 0.8 dB  |
+| Peaking | 81 Hz   |  1.54 | 0.6 dB  |
+| Peaking | 147 Hz  |  2.14 | -0.7 dB |
+| Peaking | 3801 Hz |  6.29 | 1.2 dB  |
+| Peaking | 4475 Hz | 10.21 | -2.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE400S/HiFiMAN%20HE400S.png)

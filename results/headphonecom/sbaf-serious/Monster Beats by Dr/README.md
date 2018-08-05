@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 23 Hz   | 2.82 | 6.7 dB  |
-| Peaking | 143 Hz  | 0.66 | -5.1 dB |
-| Peaking | 1831 Hz | 2.35 | -9.1 dB |
-| Peaking | 3619 Hz | 3.2  | 5.6 dB  |
-| Peaking | 8821 Hz | 5.93 | -8.5 dB |
-| Peaking | 43 Hz   | 2.93 | -2.2 dB |
-| Peaking | 747 Hz  | 2.63 | 4.6 dB  |
-| Peaking | 1397 Hz | 4.29 | -1.9 dB |
-| Peaking | 5145 Hz | 5.51 | -4.4 dB |
-| Peaking | 6570 Hz | 6.73 | 5.9 dB  |
+| Peaking | 23 Hz   | 2.9  | 7.1 dB  |
+| Peaking | 145 Hz  | 0.67 | -5.1 dB |
+| Peaking | 1832 Hz | 2.35 | -9.1 dB |
+| Peaking | 3618 Hz | 3.2  | 5.6 dB  |
+| Peaking | 8844 Hz | 5.92 | -8.4 dB |
+| Peaking | 41 Hz   | 2.58 | -2.2 dB |
+| Peaking | 747 Hz  | 2.62 | 4.6 dB  |
+| Peaking | 1397 Hz | 4.28 | -1.9 dB |
+| Peaking | 5159 Hz | 5.52 | -4.4 dB |
+| Peaking | 6591 Hz | 6.82 | 5.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Monster%20Beats%20by%20Dr/Monster%20Beats%20by%20Dr.png)

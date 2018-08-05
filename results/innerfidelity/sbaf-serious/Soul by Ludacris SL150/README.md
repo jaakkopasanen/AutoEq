@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 15 Hz   | 0.46 | 3.0 dB   |
-| Peaking | 148 Hz  | 0.85 | -6.7 dB  |
-| Peaking | 347 Hz  | 1.4  | -6.6 dB  |
-| Peaking | 3531 Hz | 0.57 | -1.8 dB  |
-| Peaking | 6583 Hz | 8.98 | 6.7 dB   |
-| Peaking | 500 Hz  | 5.21 | -1.7 dB  |
+| Peaking | 14 Hz   | 0.47 | 3.0 dB   |
+| Peaking | 148 Hz  | 0.84 | -6.8 dB  |
+| Peaking | 346 Hz  | 1.4  | -6.6 dB  |
+| Peaking | 3527 Hz | 0.57 | -1.8 dB  |
+| Peaking | 6596 Hz | 8.98 | 6.7 dB   |
+| Peaking | 500 Hz  | 5.19 | -1.7 dB  |
 | Peaking | 819 Hz  | 2.61 | 2.1 dB   |
-| Peaking | 4316 Hz | 3.34 | 9.5 dB   |
-| Peaking | 5178 Hz | 1.62 | -12.9 dB |
-| Peaking | 6177 Hz | 1.44 | 7.3 dB   |
+| Peaking | 4314 Hz | 3.38 | 9.4 dB   |
+| Peaking | 5189 Hz | 1.63 | -13.0 dB |
+| Peaking | 6145 Hz | 1.46 | 7.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Soul%20by%20Ludacris%20SL150/Soul%20by%20Ludacris%20SL150.png)

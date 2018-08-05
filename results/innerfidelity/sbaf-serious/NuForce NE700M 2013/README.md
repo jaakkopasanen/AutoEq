@@ -1,0 +1,35 @@
+# NuForce NE700M 2013
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -4.1dB
+GraphicEQ: 10 -84; 20 -12.2; 22 -12.0; 23 -11.9; 25 -11.7; 26 -11.6; 28 -11.4; 30 -11.1; 32 -10.8; 35 -10.5; 37 -10.3; 40 -10.0; 42 -9.7; 45 -9.4; 49 -9.0; 52 -8.7; 56 -8.2; 59 -8.0; 64 -7.6; 68 -7.4; 73 -7.0; 78 -6.8; 83 -6.7; 89 -6.6; 95 -6.7; 102 -6.7; 109 -6.8; 117 -7.0; 125 -7.1; 134 -7.2; 143 -7.0; 153 -7.0; 164 -6.7; 175 -6.2; 188 -6.0; 201 -5.6; 215 -5.2; 230 -4.8; 246 -4.3; 263 -4.0; 282 -3.5; 301 -3.2; 323 -2.7; 345 -2.3; 369 -2.0; 395 -1.6; 423 -1.2; 452 -0.8; 484 -0.6; 518 -0.4; 554 0.0; 593 0.4; 635 0.5; 679 0.5; 726 0.8; 777 1.0; 832 0.8; 890 0.6; 952 0.3; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.2; 1336 -1.8; 1429 -2.6; 1529 -3.3; 1636 -3.9; 1751 -4.4; 1873 -4.7; 2004 -5.0; 2145 -5.6; 2295 -6.2; 2455 -6.7; 2627 -7.0; 2811 -6.7; 3008 -4.9; 3219 -2.7; 3444 -0.9; 3685 -0.5; 3943 -1.1; 4219 -2.7; 4514 -4.2; 4830 -4.6; 5168 -3.7; 5530 -1.7; 5917 0.9; 6331 2.8; 6775 3.4; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 -0.1; 10879 -0.3; 11640 0.0; 12455 0.0; 13327 0.0; 14260 -2.4; 15258 -4.8; 16326 -2.9; 17469 -0.1; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-4.1dB` and instead set Global volume in the UI for both channels to **-41**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `NuForce NE700M 2013 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 10 Hz    | 0.64 | -11.7 dB |
+| Peaking | 34 Hz    | 0.4  | -7.8 dB  |
+| Peaking | 161 Hz   | 0.96 | -5.0 dB  |
+| Peaking | 2035 Hz  | 1.76 | -4.5 dB  |
+| Peaking | 2697 Hz  | 3.37 | -4.9 dB  |
+| Peaking | 756 Hz   | 2.15 | 1.7 dB   |
+| Peaking | 3697 Hz  | 4.24 | 2.9 dB   |
+| Peaking | 4812 Hz  | 2.49 | -5.1 dB  |
+| Peaking | 6482 Hz  | 3.96 | 5.1 dB   |
+| Peaking | 15371 Hz | 4.25 | -5.4 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NuForce%20NE700M%202013/NuForce%20NE700M%202013.png)

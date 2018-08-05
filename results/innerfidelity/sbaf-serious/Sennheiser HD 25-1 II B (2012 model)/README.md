@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 2.82 | 2.1 dB  |
-| Peaking | 148 Hz  | 1.97 | -4.0 dB |
-| Peaking | 3077 Hz | 5.31 | 2.2 dB  |
+| Peaking | 21 Hz   | 2.8  | 2.0 dB  |
+| Peaking | 149 Hz  | 1.97 | -4.0 dB |
+| Peaking | 3077 Hz | 5.32 | 2.2 dB  |
 | Peaking | 5536 Hz | 1.78 | 6.7 dB  |
-| Peaking | 8952 Hz | 4.44 | -6.0 dB |
-| Peaking | 17 Hz   | 1.89 | -1.7 dB |
-| Peaking | 59 Hz   | 1.02 | -0.7 dB |
-| Peaking | 465 Hz  | 0.95 | 1.2 dB  |
-| Peaking | 2540 Hz | 1.4  | 2.2 dB  |
-| Peaking | 1980 Hz | 1.76 | -4.3 dB |
+| Peaking | 8955 Hz | 4.44 | -6.0 dB |
+| Peaking | 63 Hz   | 0.87 | -1.1 dB |
+| Peaking | 198 Hz  | 3.7  | -1.5 dB |
+| Peaking | 363 Hz  | 2.11 | 0.6 dB  |
+| Peaking | 569 Hz  | 0.11 | 0.8 dB  |
+| Peaking | 1811 Hz | 1.95 | -3.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%2025-1%20II%20B%20(2012%20model)/Sennheiser%20HD%2025-1%20II%20B%20(2012%20model).png)

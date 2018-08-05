@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-G75 Par
 In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 30 Hz   |  0.75 | 7.0 dB  |
-| Peaking | 139 Hz  |  0.92 | -5.1 dB |
-| Peaking | 3916 Hz |  0.72 | -9.7 dB |
-| Peaking | 2954 Hz |  2.36 | 12.9 dB |
-| Peaking | 5613 Hz |  1.98 | 12.9 dB |
-| Peaking | 640 Hz  |  1.34 | 0.7 dB  |
-| Peaking | 1738 Hz |  3    | -3.7 dB |
-| Peaking | 1499 Hz |  0.67 | 1.2 dB  |
-| Peaking | 4219 Hz | 10.08 | -1.9 dB |
-| Peaking | 2398 Hz |  7.1  | 1.4 dB  |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 30 Hz    |  0.75 | 7.0 dB  |
+| Peaking | 138 Hz   |  0.92 | -5.1 dB |
+| Peaking | 3948 Hz  |  0.72 | -9.6 dB |
+| Peaking | 2946 Hz  |  2.36 | 12.9 dB |
+| Peaking | 5592 Hz  |  1.99 | 12.8 dB |
+| Peaking | 1164 Hz  |  0.55 | 1.4 dB  |
+| Peaking | 1748 Hz  |  2.67 | -3.7 dB |
+| Peaking | 2362 Hz  |  5.43 | 1.3 dB  |
+| Peaking | 4202 Hz  | 10.86 | -1.9 dB |
+| Peaking | 12752 Hz |  2.59 | 0.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-G75/Sony%20MDR-G75.png)

@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 1.12 | 3.5 dB  |
-| Peaking | 61 Hz   | 0.72 | 2.7 dB  |
-| Peaking | 174 Hz  | 0.45 | -4.0 dB |
-| Peaking | 2306 Hz | 0.62 | 1.9 dB  |
-| Peaking | 6621 Hz | 1.83 | -6.0 dB |
-| Peaking | 3751 Hz | 4.41 | 3.8 dB  |
-| Peaking | 7951 Hz | 4.73 | -3.5 dB |
-| Peaking | 6050 Hz | 8.7  | 2.0 dB  |
-| Peaking | 4245 Hz | 2.13 | -2.9 dB |
-| Peaking | 8794 Hz | 2.29 | 2.8 dB  |
+| Peaking | 17 Hz   | 1.13 | 3.4 dB  |
+| Peaking | 63 Hz   | 0.73 | 2.7 dB  |
+| Peaking | 170 Hz  | 0.42 | -4.0 dB |
+| Peaking | 2280 Hz | 0.61 | 1.9 dB  |
+| Peaking | 6621 Hz | 1.84 | -6.0 dB |
+| Peaking | 3761 Hz | 4.46 | 3.7 dB  |
+| Peaking | 4253 Hz | 2.11 | -2.8 dB |
+| Peaking | 6035 Hz | 8.24 | 1.9 dB  |
+| Peaking | 7958 Hz | 4.8  | -3.4 dB |
+| Peaking | 8801 Hz | 2.29 | 2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20800%20Balanced/Sennheiser%20HD%20800%20Balanced.png)

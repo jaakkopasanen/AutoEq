@@ -1,4 +1,4 @@
-# Ultrsone HFI-450
+# Ultrasone HFI-450
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Ultrsone HFI-450 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Ultrasone HFI-450 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 26 Hz   | 0.3  | 6.0 dB  |
-| Peaking | 65 Hz   | 2.42 | 1.8 dB  |
-| Peaking | 391 Hz  | 2.2  | -2.4 dB |
-| Peaking | 3571 Hz | 1.8  | 5.7 dB  |
-| Peaking | 6196 Hz | 5.77 | 5.5 dB  |
-| Peaking | 214 Hz  | 4.1  | 1.2 dB  |
-| Peaking | 1729 Hz | 2.48 | -1.3 dB |
-| Peaking | 2581 Hz | 6.02 | 1.9 dB  |
-| Peaking | 6758 Hz | 9.14 | 0.9 dB  |
-| Peaking | 9369 Hz | 2.65 | -1.3 dB |
+| Peaking | 26 Hz   | 0.31 | 6.0 dB  |
+| Peaking | 66 Hz   | 2.42 | 1.8 dB  |
+| Peaking | 393 Hz  | 2.21 | -2.4 dB |
+| Peaking | 3570 Hz | 1.8  | 5.7 dB  |
+| Peaking | 6202 Hz | 5.77 | 5.5 dB  |
+| Peaking | 213 Hz  | 3.93 | 1.2 dB  |
+| Peaking | 1730 Hz | 2.5  | -1.3 dB |
+| Peaking | 2590 Hz | 6.05 | 1.9 dB  |
+| Peaking | 6739 Hz | 9.25 | 0.8 dB  |
+| Peaking | 9365 Hz | 2.7  | -1.3 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrsone%20HFI-450/Ultrsone%20HFI-450.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20HFI-450/Ultrasone%20HFI-450.png)

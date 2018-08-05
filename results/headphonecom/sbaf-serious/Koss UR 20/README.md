@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:---------|:-----|:---------|
 | Peaking | 34 Hz    | 0.6  | 6.7 dB   |
 | Peaking | 486 Hz   | 1.09 | -10.4 dB |
-| Peaking | 1393 Hz  | 1.95 | 8.1 dB   |
+| Peaking | 1392 Hz  | 1.95 | 8.1 dB   |
 | Peaking | 3248 Hz  | 5    | 7.1 dB   |
-| Peaking | 7297 Hz  | 1.37 | -3.8 dB  |
-| Peaking | 154 Hz   | 3.12 | -1.3 dB  |
-| Peaking | 1751 Hz  | 8.2  | 2.8 dB   |
-| Peaking | 2332 Hz  | 5.81 | 1.6 dB   |
-| Peaking | 2156 Hz  | 6.49 | -4.8 dB  |
-| Peaking | 11109 Hz | 4.96 | 1.4 dB   |
+| Peaking | 7290 Hz  | 1.37 | -3.8 dB  |
+| Peaking | 154 Hz   | 3.16 | -1.3 dB  |
+| Peaking | 1746 Hz  | 7.87 | 2.7 dB   |
+| Peaking | 2342 Hz  | 4.57 | 1.3 dB   |
+| Peaking | 2139 Hz  | 6.49 | -4.8 dB  |
+| Peaking | 11143 Hz | 4.99 | 1.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20UR%2020/Koss%20UR%2020.png)

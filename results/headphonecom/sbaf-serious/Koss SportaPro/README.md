@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2847 Hz |  0.7  | -3.4 dB |
 | Peaking | 6445 Hz |  5.1  | 7.3 dB  |
 | Peaking | 9258 Hz |  6.39 | -9.6 dB |
-| Peaking | 12 Hz   |  1.86 | 1.3 dB  |
+| Peaking | 1 Hz    |  2.56 | 0.9 dB  |
 | Peaking | 974 Hz  |  1.19 | 1.4 dB  |
-| Peaking | 2107 Hz |  1.76 | -2.2 dB |
-| Peaking | 3028 Hz |  4.95 | 3.5 dB  |
-| Peaking | 4849 Hz | 13.11 | -3.4 dB |
+| Peaking | 2102 Hz |  1.77 | -2.2 dB |
+| Peaking | 3014 Hz |  4.96 | 3.5 dB  |
+| Peaking | 4821 Hz | 13.04 | -3.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20SportaPro/Koss%20SportaPro.png)

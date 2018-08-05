@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 21 Hz   | 0.67 | 6.2 dB  |
-| Peaking | 209 Hz  | 0.66 | -4.7 dB |
+| Peaking | 208 Hz  | 0.65 | -4.7 dB |
 | Peaking | 2011 Hz | 2.82 | -5.8 dB |
 | Peaking | 3498 Hz | 2.86 | 3.3 dB  |
 | Peaking | 6388 Hz | 2.06 | -6.6 dB |
-| Peaking | 436 Hz  | 3.67 | -0.5 dB |
-| Peaking | 1105 Hz | 4.31 | 1.4 dB  |
-| Peaking | 8366 Hz | 2.77 | -3.1 dB |
-| Peaking | 9461 Hz | 2.41 | 2.5 dB  |
-| Peaking | 6950 Hz | 9.65 | 2.2 dB  |
+| Peaking | 146 Hz  | 7.26 | -0.6 dB |
+| Peaking | 436 Hz  | 3.79 | -0.5 dB |
+| Peaking | 1104 Hz | 4.37 | 1.4 dB  |
+| Peaking | 8309 Hz | 5.01 | -3.4 dB |
+| Peaking | 9033 Hz | 1.86 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20Q701%20Quincy%20Jones/AKG%20Q701%20Quincy%20Jones.png)

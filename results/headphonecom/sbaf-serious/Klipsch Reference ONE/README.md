@@ -28,8 +28,8 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 4706 Hz | 3.22 | 6.5 dB  |
 | Peaking | 2468 Hz | 6.13 | 0.6 dB  |
 | Peaking | 2154 Hz | 6.37 | 0.4 dB  |
-| Peaking | 5694 Hz | 7.94 | -3.0 dB |
-| Peaking | 3102 Hz | 4.72 | -1.0 dB |
-| Peaking | 6631 Hz | 6.67 | 4.6 dB  |
+| Peaking | 5717 Hz | 7.94 | -3.0 dB |
+| Peaking | 3103 Hz | 4.72 | -1.0 dB |
+| Peaking | 6659 Hz | 6.67 | 4.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Klipsch%20Reference%20ONE/Klipsch%20Reference%20ONE.png)

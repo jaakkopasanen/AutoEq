@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2111 Hz | 1.36 | -7.6 dB  |
 | Peaking | 4931 Hz | 0.71 | 8.2 dB   |
 | Peaking | 8992 Hz | 2.86 | -11.1 dB |
-| Peaking | 65 Hz   | 3.36 | 1.3 dB   |
-| Peaking | 141 Hz  | 4.31 | -1.8 dB  |
-| Peaking | 468 Hz  | 2.97 | -1.0 dB  |
-| Peaking | 1157 Hz | 1.13 | 0.8 dB   |
-| Peaking | 1638 Hz | 4.33 | -1.4 dB  |
+| Peaking | 66 Hz   | 3.36 | 1.2 dB   |
+| Peaking | 140 Hz  | 4.3  | -1.8 dB  |
+| Peaking | 469 Hz  | 2.97 | -1.0 dB  |
+| Peaking | 1153 Hz | 1.14 | 0.8 dB   |
+| Peaking | 1627 Hz | 4.34 | -1.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-ZX1000/Sony%20MDR-ZX1000.png)

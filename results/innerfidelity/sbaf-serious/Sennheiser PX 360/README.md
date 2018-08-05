@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 31 Hz    | 0.49 | 6.4 dB   |
-| Peaking | 738 Hz   | 0.86 | 2.7 dB   |
-| Peaking | 1811 Hz  | 1.51 | -10.1 dB |
-| Peaking | 3690 Hz  | 2.24 | 6.7 dB   |
-| Peaking | 5873 Hz  | 3.75 | 6.1 dB   |
-| Peaking | 116 Hz   | 4.2  | -1.1 dB  |
-| Peaking | 187 Hz   | 6.02 | 2.5 dB   |
-| Peaking | 333 Hz   | 5    | -0.9 dB  |
-| Peaking | 9778 Hz  | 0.56 | 0.3 dB   |
+| Peaking | 737 Hz   | 0.86 | 2.7 dB   |
+| Peaking | 1812 Hz  | 1.51 | -10.1 dB |
+| Peaking | 3691 Hz  | 2.24 | 6.7 dB   |
+| Peaking | 5870 Hz  | 3.75 | 6.1 dB   |
+| Peaking | 114 Hz   | 4.03 | -1.2 dB  |
+| Peaking | 187 Hz   | 6.05 | 2.5 dB   |
+| Peaking | 331 Hz   | 4.96 | -0.9 dB  |
+| Peaking | 9825 Hz  | 0.57 | 0.3 dB   |
 | Peaking | 10277 Hz | 3.36 | -3.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PX%20360/Sennheiser%20PX%20360.png)

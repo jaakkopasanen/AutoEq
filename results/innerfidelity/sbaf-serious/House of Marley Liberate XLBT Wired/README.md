@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1554 Hz | 1.28 | -3.8 dB |
 | Peaking | 2139 Hz | 1.73 | 6.4 dB  |
 | Peaking | 4610 Hz | 1.29 | 6.4 dB  |
-| Peaking | 74 Hz   | 2.86 | 0.5 dB  |
-| Peaking | 3525 Hz | 3.64 | 1.9 dB  |
-| Peaking | 4303 Hz | 1.54 | -1.3 dB |
-| Peaking | 6325 Hz | 3    | 4.5 dB  |
-| Peaking | 7410 Hz | 1.7  | -3.1 dB |
+| Peaking | 72 Hz   | 2.89 | 0.5 dB  |
+| Peaking | 3546 Hz | 3.63 | 1.9 dB  |
+| Peaking | 4246 Hz | 1.6  | -1.3 dB |
+| Peaking | 6299 Hz | 3.02 | 4.6 dB  |
+| Peaking | 7422 Hz | 1.69 | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/House%20of%20Marley%20Liberate%20XLBT%20Wired/House%20of%20Marley%20Liberate%20XLBT%20Wired.png)

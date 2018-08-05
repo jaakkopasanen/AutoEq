@@ -1,0 +1,35 @@
+# Shure SE215
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.3dB
+GraphicEQ: 10 -84; 20 -5.4; 22 -5.4; 23 -5.4; 25 -5.4; 26 -5.4; 28 -5.4; 30 -5.4; 32 -5.4; 35 -5.4; 37 -5.4; 40 -5.4; 42 -5.4; 45 -5.4; 49 -5.4; 52 -5.4; 56 -5.4; 59 -5.4; 64 -5.3; 68 -5.4; 73 -5.4; 78 -5.4; 83 -5.6; 89 -5.7; 95 -6.0; 102 -6.4; 109 -6.7; 117 -7.1; 125 -7.5; 134 -7.8; 143 -7.9; 153 -8.0; 164 -7.9; 175 -7.7; 188 -7.5; 201 -7.3; 215 -7.0; 230 -6.6; 246 -6.3; 263 -6.0; 282 -5.5; 301 -5.1; 323 -4.6; 345 -4.1; 369 -3.7; 395 -3.3; 423 -2.8; 452 -2.4; 484 -2.1; 518 -1.7; 554 -1.1; 593 -0.6; 635 -0.3; 679 -0.1; 726 0.2; 777 0.5; 832 0.5; 890 0.3; 952 0.2; 1019 -0.1; 1090 -0.4; 1167 -0.4; 1248 -0.8; 1336 -2.0; 1429 -2.8; 1529 -3.5; 1636 -4.2; 1751 -4.8; 1873 -5.1; 2004 -5.5; 2145 -5.7; 2295 -5.4; 2455 -4.3; 2627 -2.8; 2811 -0.8; 3008 1.5; 3219 3.1; 3444 4.2; 3685 4.1; 3943 2.6; 4219 -1.0; 4514 -5.0; 4830 -7.5; 5168 -3.8; 5530 1.5; 5917 5.1; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 -0.2; 10167 -0.1; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.3dB` and instead set Global volume in the UI for both channels to **-63**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Shure SE215 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 18 Hz   | 0.16 | -5.2 dB  |
+| Peaking | 182 Hz  | 0.78 | -6.5 dB  |
+| Peaking | 2175 Hz | 1.66 | -9.4 dB  |
+| Peaking | 4723 Hz | 5.03 | -15.1 dB |
+| Peaking | 4000 Hz | 0.91 | 8.6 dB   |
+| Peaking | 835 Hz  | 2.09 | 1.5 dB   |
+| Peaking | 1541 Hz | 5.29 | -1.4 dB  |
+| Peaking | 5192 Hz | 8.54 | -3.2 dB  |
+| Peaking | 6226 Hz | 3.14 | 6.2 dB   |
+| Peaking | 7520 Hz | 1.44 | -3.3 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Shure%20SE215/Shure%20SE215.png)

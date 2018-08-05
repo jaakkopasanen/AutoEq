@@ -23,12 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:---------|:------|:--------|
 | Peaking | 220 Hz   |  0.86 | -4.0 dB |
 | Peaking | 594 Hz   |  1.67 | 5.5 dB  |
-| Peaking | 1999 Hz  |  1.24 | -4.9 dB |
-| Peaking | 4293 Hz  |  1.51 | 7.7 dB  |
+| Peaking | 1998 Hz  |  1.24 | -4.9 dB |
+| Peaking | 4294 Hz  |  1.51 | 7.7 dB  |
 | Peaking | 18633 Hz |  1.25 | -3.8 dB |
-| Peaking | 27 Hz    |  0.9  | 2.3 dB  |
-| Peaking | 77 Hz    |  4.46 | 1.9 dB  |
-| Peaking | 5625 Hz  | 10.41 | 2.7 dB  |
-| Peaking | 8922 Hz  |  4.51 | -2.6 dB |
+| Peaking | 27 Hz    |  0.87 | 2.4 dB  |
+| Peaking | 77 Hz    |  4.67 | 1.9 dB  |
+| Peaking | 1421 Hz  |  2.67 | -0.1 dB |
+| Peaking | 5622 Hz  | 10.86 | 2.7 dB  |
+| Peaking | 8926 Hz  |  4.54 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Phiaton%20PS%20320/Phiaton%20PS%20320.png)

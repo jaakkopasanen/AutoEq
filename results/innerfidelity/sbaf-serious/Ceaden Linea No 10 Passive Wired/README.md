@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 562 Hz  | 2.34 | 1.7 dB  |
 | Peaking | 3247 Hz | 1.73 | 6.7 dB  |
 | Peaking | 5835 Hz | 3.77 | 5.3 dB  |
-| Peaking | 1700 Hz | 1.27 | -4.6 dB |
-| Peaking | 2693 Hz | 0.65 | 4.6 dB  |
-| Peaking | 3231 Hz | 3.92 | -3.6 dB |
-| Peaking | 6582 Hz | 5    | 2.1 dB  |
-| Peaking | 6261 Hz | 1.01 | -2.7 dB |
+| Peaking | 1716 Hz | 1.26 | -4.6 dB |
+| Peaking | 2664 Hz | 0.63 | 4.6 dB  |
+| Peaking | 3248 Hz | 3.96 | -3.5 dB |
+| Peaking | 6620 Hz | 4.99 | 2.0 dB  |
+| Peaking | 6153 Hz | 0.96 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ceaden%20Linea%20No%2010%20Passive%20Wired/Ceaden%20Linea%20No%2010%20Passive%20Wired.png)

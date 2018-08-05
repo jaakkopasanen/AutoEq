@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:---------|:-----|:--------|
 | Peaking | 47 Hz    | 0.28 | 6.5 dB  |
 | Peaking | 219 Hz   | 1.68 | 3.4 dB  |
-| Peaking | 5359 Hz  | 6.86 | 6.3 dB  |
-| Peaking | 13406 Hz | 2    | 5.7 dB  |
-| Peaking | 15265 Hz | 1.34 | -9.1 dB |
-| Peaking | 3 Hz     | 2.25 | 0.5 dB  |
-| Peaking | 440 Hz   | 4.08 | -1.8 dB |
+| Peaking | 5361 Hz  | 6.86 | 6.3 dB  |
+| Peaking | 13402 Hz | 2    | 5.8 dB  |
+| Peaking | 15271 Hz | 1.34 | -9.1 dB |
+| Peaking | 21 Hz    | 2.72 | 0.8 dB  |
+| Peaking | 441 Hz   | 4.08 | -1.8 dB |
 | Peaking | 1853 Hz  | 1.53 | -2.0 dB |
 | Peaking | 3240 Hz  | 3.48 | 4.5 dB  |
-| Peaking | 6598 Hz  | 7.87 | -2.6 dB |
+| Peaking | 6617 Hz  | 7.85 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K81%20DJ/AKG%20K81%20DJ.png)

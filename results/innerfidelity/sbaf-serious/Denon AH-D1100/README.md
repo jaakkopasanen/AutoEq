@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 146 Hz  | 1.43 | -7.3 dB |
 | Peaking | 238 Hz  | 2.68 | -7.7 dB |
 | Peaking | 4121 Hz | 3.53 | 5.7 dB  |
-| Peaking | 311 Hz  | 4.11 | -2.6 dB |
-| Peaking | 463 Hz  | 2.88 | 4.9 dB  |
-| Peaking | 2294 Hz | 7.07 | -3.3 dB |
-| Peaking | 6334 Hz | 2.59 | 2.5 dB  |
-| Peaking | 9670 Hz | 2.73 | -4.4 dB |
+| Peaking | 308 Hz  | 4.11 | -2.6 dB |
+| Peaking | 460 Hz  | 2.88 | 4.9 dB  |
+| Peaking | 2294 Hz | 7.06 | -3.3 dB |
+| Peaking | 6349 Hz | 2.59 | 2.5 dB  |
+| Peaking | 9675 Hz | 2.73 | -4.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D1100/Denon%20AH-D1100.png)

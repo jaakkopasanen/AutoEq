@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2563 Hz  | 0.52 | 2.9 dB  |
 | Peaking | 6633 Hz  | 0.88 | -8.1 dB |
 | Peaking | 28868 Hz | 1.16 | -5.7 dB |
-| Peaking | 6233 Hz  | 9.54 | -5.5 dB |
-| Peaking | 7288 Hz  | 2.94 | 4.1 dB  |
-| Peaking | 9566 Hz  | 3.02 | -9.2 dB |
-| Peaking | 11255 Hz | 1.77 | 6.2 dB  |
-| Peaking | 15114 Hz | 3.18 | -2.6 dB |
+| Peaking | 6246 Hz  | 9.53 | -5.6 dB |
+| Peaking | 7283 Hz  | 2.91 | 4.1 dB  |
+| Peaking | 9573 Hz  | 3.03 | -9.2 dB |
+| Peaking | 11238 Hz | 1.76 | 6.2 dB  |
+| Peaking | 15111 Hz | 3.18 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20800%202013/Sennheiser%20HD%20800%202013.png)

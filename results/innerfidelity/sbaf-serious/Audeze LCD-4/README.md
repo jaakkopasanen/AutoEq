@@ -21,13 +21,14 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 23 Hz    |  0.42 | 4.5 dB  |
+| Peaking | 23 Hz    |  0.41 | 4.6 dB  |
 | Peaking | 76 Hz    |  1.3  | 1.9 dB  |
-| Peaking | 3755 Hz  |  1.65 | 5.3 dB  |
-| Peaking | 1777 Hz  |  1.92 | -1.8 dB |
-| Peaking | 5427 Hz  |  2.73 | 4.3 dB  |
-| Peaking | 824 Hz   |  1.69 | 0.2 dB  |
-| Peaking | 6600 Hz  | 12.07 | 1.0 dB  |
-| Peaking | 19713 Hz |  1.95 | -7.2 dB |
+| Peaking | 3748 Hz  |  1.65 | 5.3 dB  |
+| Peaking | 1776 Hz  |  1.92 | -1.8 dB |
+| Peaking | 5428 Hz  |  2.73 | 4.3 dB  |
+| Peaking | 155 Hz   |  4.23 | -0.4 dB |
+| Peaking | 812 Hz   |  1.59 | 0.2 dB  |
+| Peaking | 6666 Hz  | 10.92 | 1.0 dB  |
+| Peaking | 19612 Hz |  1.96 | -7.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-4/Audeze%20LCD-4.png)

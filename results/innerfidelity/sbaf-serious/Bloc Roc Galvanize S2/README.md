@@ -29,7 +29,7 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 472 Hz  | 1.67 | -1.8 dB |
 | Peaking | 713 Hz  | 1.65 | 2.9 dB  |
 | Peaking | 1423 Hz | 4.39 | -1.1 dB |
-| Peaking | 4309 Hz | 8.82 | 2.9 dB  |
-| Peaking | 4927 Hz | 4.12 | -3.0 dB |
+| Peaking | 4326 Hz | 8.82 | 2.9 dB  |
+| Peaking | 4940 Hz | 4.11 | -3.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bloc%20Roc%20Galvanize%20S2/Bloc%20Roc%20Galvanize%20S2.png)

@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
 | Peaking | 17 Hz    |  0.6  | 5.0 dB  |
-| Peaking | 64 Hz    |  0.67 | 4.2 dB  |
-| Peaking | 1512 Hz  |  1.53 | -6.2 dB |
-| Peaking | 1878 Hz  |  0.19 | 3.0 dB  |
-| Peaking | 9404 Hz  |  3.83 | -5.4 dB |
-| Peaking | 19738 Hz |  1.89 | -4.4 dB |
-| Peaking | 2317 Hz  |  3.83 | 3.0 dB  |
-| Peaking | 2803 Hz  |  1.13 | -1.7 dB |
-| Peaking | 4117 Hz  |  7.76 | 2.2 dB  |
-| Peaking | 6700 Hz  | 12.15 | 3.0 dB  |
+| Peaking | 63 Hz    |  0.67 | 4.2 dB  |
+| Peaking | 1511 Hz  |  1.53 | -6.2 dB |
+| Peaking | 1871 Hz  |  0.2  | 3.0 dB  |
+| Peaking | 9388 Hz  |  3.83 | -5.4 dB |
+| Peaking | 19589 Hz |  1.93 | -4.4 dB |
+| Peaking | 2310 Hz  |  3.8  | 3.0 dB  |
+| Peaking | 2787 Hz  |  1.18 | -1.7 dB |
+| Peaking | 6746 Hz  | 12.45 | 3.0 dB  |
+| Peaking | 4118 Hz  |  7.65 | 2.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-404%20Ltd%20SSL-0670/Stax%20SR-404%20Ltd%20SSL-0670.png)

@@ -24,12 +24,12 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 75 Hz   | 0.33 | -4.9 dB |
 | Peaking | 233 Hz  | 0.79 | -6.6 dB |
 | Peaking | 460 Hz  | 3.06 | -4.2 dB |
-| Peaking | 2080 Hz | 0.65 | 6.5 dB  |
+| Peaking | 2072 Hz | 0.65 | 6.5 dB  |
 | Peaking | 5162 Hz | 1.92 | 4.5 dB  |
-| Peaking | 17 Hz   | 2.2  | 1.3 dB  |
-| Peaking | 766 Hz  | 3.48 | 2.2 dB  |
-| Peaking | 951 Hz  | 5.41 | -3.0 dB |
-| Peaking | 6390 Hz | 5.09 | 2.9 dB  |
-| Peaking | 7813 Hz | 1.86 | -2.1 dB |
+| Peaking | 21 Hz   | 2.22 | 1.5 dB  |
+| Peaking | 764 Hz  | 3.62 | 2.1 dB  |
+| Peaking | 950 Hz  | 5.39 | -2.9 dB |
+| Peaking | 6387 Hz | 5.09 | 2.9 dB  |
+| Peaking | 7823 Hz | 1.87 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-ANC50iS%20Passive/Audio%20Technica%20ATH-ANC50iS%20Passive.png)

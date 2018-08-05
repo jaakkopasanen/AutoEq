@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1820 Hz  |  1.77 | -4.6 dB |
 | Peaking | 3324 Hz  |  2.85 | 5.1 dB  |
 | Peaking | 6095 Hz  |  5.18 | 6.6 dB  |
-| Peaking | 92 Hz    |  1    | 4.1 dB  |
-| Peaking | 107 Hz   |  0.56 | -3.4 dB |
-| Peaking | 364 Hz   |  3.31 | 1.4 dB  |
-| Peaking | 4641 Hz  | 10.66 | -2.8 dB |
-| Peaking | 39008 Hz |  6.44 | -1.8 dB |
+| Peaking | 92 Hz    |  0.99 | 4.1 dB  |
+| Peaking | 108 Hz   |  0.56 | -3.5 dB |
+| Peaking | 365 Hz   |  3.31 | 1.4 dB  |
+| Peaking | 4600 Hz  | 10.66 | -2.8 dB |
+| Peaking | 38756 Hz |  6.44 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-MSR7NC%20Passive/Audio%20Technica%20ATH-MSR7NC%20Passive.png)

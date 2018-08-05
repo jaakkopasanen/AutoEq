@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 507 Hz  | 2.41 | 1.8 dB  |
 | Peaking | 1748 Hz | 1.95 | -4.1 dB |
 | Peaking | 3759 Hz | 0.86 | 7.2 dB  |
-| Peaking | 198 Hz  | 2.04 | -1.7 dB |
-| Peaking | 2806 Hz | 5.59 | 1.4 dB  |
-| Peaking | 3816 Hz | 2.7  | -1.0 dB |
-| Peaking | 6264 Hz | 2.43 | 5.2 dB  |
-| Peaking | 7387 Hz | 1.49 | -4.0 dB |
+| Peaking | 199 Hz  | 2.04 | -1.7 dB |
+| Peaking | 2805 Hz | 5.6  | 1.4 dB  |
+| Peaking | 3807 Hz | 2.7  | -1.0 dB |
+| Peaking | 6251 Hz | 2.41 | 5.3 dB  |
+| Peaking | 7395 Hz | 1.5  | -4.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20Momentum/Sennheiser%20Momentum.png)

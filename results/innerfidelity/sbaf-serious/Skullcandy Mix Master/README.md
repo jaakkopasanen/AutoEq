@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1649 Hz | 3.11 | -3.6 dB |
 | Peaking | 3017 Hz | 4.09 | 5.7 dB  |
 | Peaking | 5762 Hz | 3.4  | 6.8 dB  |
-| Peaking | 71 Hz   | 4.65 | 0.7 dB  |
+| Peaking | 69 Hz   | 4.7  | 0.7 dB  |
 | Peaking | 670 Hz  | 2.9  | 2.1 dB  |
-| Peaking | 4008 Hz | 5.83 | -5.6 dB |
-| Peaking | 4002 Hz | 2.02 | 2.3 dB  |
-| Peaking | 8259 Hz | 4.02 | -1.0 dB |
+| Peaking | 3985 Hz | 5.81 | -5.7 dB |
+| Peaking | 4016 Hz | 2.07 | 2.4 dB  |
+| Peaking | 8289 Hz | 4.03 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Mix%20Master/Skullcandy%20Mix%20Master.png)

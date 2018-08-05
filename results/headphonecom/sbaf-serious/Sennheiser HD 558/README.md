@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 187 Hz   | 0.62 | -3.0 dB |
 | Peaking | 3008 Hz  | 2.43 | -3.6 dB |
 | Peaking | 4542 Hz  | 7.74 | -3.7 dB |
-| Peaking | 867 Hz   | 3.48 | 0.6 dB  |
-| Peaking | 2088 Hz  | 8.57 | -1.3 dB |
-| Peaking | 6310 Hz  | 5.56 | 2.8 dB  |
-| Peaking | 19334 Hz | 1.98 | -4.5 dB |
+| Peaking | 868 Hz   | 3.48 | 0.6 dB  |
+| Peaking | 2087 Hz  | 8.57 | -1.3 dB |
+| Peaking | 6291 Hz  | 5.56 | 2.8 dB  |
+| Peaking | 19387 Hz | 1.98 | -4.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20558/Sennheiser%20HD%20558.png)

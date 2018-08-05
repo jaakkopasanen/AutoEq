@@ -16,7 +16,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Soul Jet Pro ANC Off ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain     |
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 564 Hz  | 1.74 | 9.8 dB   |
 | Peaking | 2368 Hz | 5.56 | -2.6 dB  |
 | Peaking | 4490 Hz | 3.51 | -8.9 dB  |
-| Peaking | 210 Hz  | 3.97 | 0.5 dB   |
-| Peaking | 1433 Hz | 2.66 | 1.6 dB   |
-| Peaking | 9412 Hz | 0.01 | -0.2 dB  |
-| Peaking | 6979 Hz | 8.59 | 3.9 dB   |
-| Peaking | 9489 Hz | 7.38 | -2.7 dB  |
+| Peaking | 208 Hz  | 4.13 | 0.4 dB   |
+| Peaking | 1455 Hz | 2.65 | 1.7 dB   |
+| Peaking | 6655 Hz | 0.03 | -0.2 dB  |
+| Peaking | 6977 Hz | 8.59 | 3.9 dB   |
+| Peaking | 9480 Hz | 7.38 | -2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Soul%20Jet%20Pro%20ANC%20Off/Soul%20Jet%20Pro%20ANC%20Off.png)

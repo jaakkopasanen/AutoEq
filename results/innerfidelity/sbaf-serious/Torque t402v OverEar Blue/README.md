@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 243 Hz  | 0.1  | -9.4 dB  |
-| Peaking | 273 Hz  | 0.51 | -19.1 dB |
-| Peaking | 766 Hz  | 0.41 | 30.1 dB  |
-| Peaking | 1262 Hz | 0.7  | -13.9 dB |
-| Peaking | 7835 Hz | 2.57 | -8.3 dB  |
-| Peaking | 88 Hz   | 2.9  | 1.1 dB   |
-| Peaking | 133 Hz  | 3.8  | -1.2 dB  |
-| Peaking | 1903 Hz | 6.1  | 2.4 dB   |
-| Peaking | 2763 Hz | 2.54 | -2.6 dB  |
-| Peaking | 3360 Hz | 3.68 | 2.4 dB   |
+| Peaking | 240 Hz  | 0.1  | -9.4 dB  |
+| Peaking | 274 Hz  | 0.51 | -19.0 dB |
+| Peaking | 764 Hz  | 0.41 | 29.8 dB  |
+| Peaking | 1267 Hz | 0.7  | -13.9 dB |
+| Peaking | 7818 Hz | 2.6  | -8.3 dB  |
+| Peaking | 137 Hz  | 6.11 | -1.0 dB  |
+| Peaking | 1913 Hz | 4.59 | 2.9 dB   |
+| Peaking | 2906 Hz | 1.54 | -2.8 dB  |
+| Peaking | 5312 Hz | 6.86 | 2.1 dB   |
+| Peaking | 3390 Hz | 3.87 | 3.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Blue/Torque%20t402v%20OverEar%20Blue.png)

@@ -1,4 +1,4 @@
-# 1More MK801
+# 1MORE MK801
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.5dB` and instead set Global volume in the UI for both channels to **-65**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `1More MK801 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `1MORE MK801 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
@@ -32,4 +32,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 6692 Hz | 8.39 | 1.8 dB  |
 | Peaking | 7865 Hz | 2.23 | -1.3 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1More%20MK801/1More%20MK801.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1MORE%20MK801/1MORE%20MK801.png)

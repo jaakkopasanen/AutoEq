@@ -28,8 +28,8 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 4969 Hz  | 1.58 | 5.4 dB  |
 | Peaking | 1071 Hz  | 5.36 | -2.7 dB |
 | Peaking | 1615 Hz  | 4.16 | 1.4 dB  |
-| Peaking | 37054 Hz | 1.1  | -0.2 dB |
-| Peaking | 6407 Hz  | 4.52 | 3.5 dB  |
-| Peaking | 7467 Hz  | 2    | -2.3 dB |
+| Peaking | 36953 Hz | 1.12 | -0.3 dB |
+| Peaking | 6440 Hz  | 4.54 | 3.6 dB  |
+| Peaking | 7395 Hz  | 2.02 | -2.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/A%20Audio%20Elite%20Bass%20Mode/A%20Audio%20Elite%20Bass%20Mode.png)

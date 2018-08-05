@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-507 SE1-1049 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 5 Hz    | 0.17 | 3.1 dB  |
-| Peaking | 59 Hz   | 0.09 | 2.1 dB  |
-| Peaking | 1672 Hz | 1.96 | -5.5 dB |
-| Peaking | 2316 Hz | 2.48 | 5.5 dB  |
-| Peaking | 9450 Hz | 5.72 | -4.9 dB |
-| Peaking | 71 Hz   | 2    | 2.1 dB  |
-| Peaking | 6127 Hz | 8.25 | -1.9 dB |
-| Peaking | 8807 Hz | 1.64 | 0.7 dB  |
-| Peaking | 6738 Hz | 5.13 | 3.5 dB  |
-| Peaking | 8639 Hz | 7.15 | -2.7 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 18 Hz   |  0.19 | 3.5 dB  |
+| Peaking | 661 Hz  |  0.06 | 1.4 dB  |
+| Peaking | 1672 Hz |  1.46 | -5.5 dB |
+| Peaking | 2274 Hz |  3.83 | 5.7 dB  |
+| Peaking | 9267 Hz |  4.44 | -5.6 dB |
+| Peaking | 34 Hz   |  1.11 | -4.0 dB |
+| Peaking | 36 Hz   |  0.15 | 2.9 dB  |
+| Peaking | 147 Hz  |  0.8  | -2.6 dB |
+| Peaking | 4648 Hz | 11.31 | -2.4 dB |
+| Peaking | 6830 Hz | 11.48 | 3.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-507%20SE1-1049/Stax%20SR-507%20SE1-1049.png)

@@ -16,7 +16,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM2 2014 PM1 Leather Pad ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 223 Hz  | 2.96 | -1.4 dB |
 | Peaking | 1030 Hz | 0.62 | -0.8 dB |
 | Peaking | 4146 Hz | 1.03 | 6.8 dB  |
-| Peaking | 338 Hz  | 6.46 | 1.1 dB  |
-| Peaking | 2922 Hz | 2.04 | 2.4 dB  |
-| Peaking | 3720 Hz | 0.89 | -2.0 dB |
-| Peaking | 6213 Hz | 2.4  | 4.6 dB  |
-| Peaking | 7971 Hz | 1.71 | -3.2 dB |
+| Peaking | 338 Hz  | 6.45 | 1.1 dB  |
+| Peaking | 2860 Hz | 2.04 | 2.4 dB  |
+| Peaking | 3804 Hz | 0.89 | -2.0 dB |
+| Peaking | 6272 Hz | 2.4  | 4.6 dB  |
+| Peaking | 7949 Hz | 1.71 | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM2%202014%20PM1%20Leather%20Pad/Oppo%20PM2%202014%20PM1%20Leather%20Pad.png)

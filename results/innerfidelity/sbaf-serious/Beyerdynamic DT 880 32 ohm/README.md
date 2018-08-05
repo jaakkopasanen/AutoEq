@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 5507 Hz  |  5.5  | 7.6 dB  |
 | Peaking | 8536 Hz  |  2.96 | -5.0 dB |
 | Peaking | 1346 Hz  |  1.85 | 1.4 dB  |
-| Peaking | 1785 Hz  |  2.07 | -1.6 dB |
-| Peaking | 5023 Hz  | 10.1  | 2.3 dB  |
-| Peaking | 3932 Hz  |  1.23 | -1.1 dB |
-| Peaking | 10732 Hz |  5.69 | 1.4 dB  |
+| Peaking | 1787 Hz  |  2.07 | -1.6 dB |
+| Peaking | 5069 Hz  | 10.01 | 2.3 dB  |
+| Peaking | 3937 Hz  |  1.22 | -1.1 dB |
+| Peaking | 10718 Hz |  5.68 | 1.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20880%2032%20ohm/Beyerdynamic%20DT%20880%2032%20ohm.png)

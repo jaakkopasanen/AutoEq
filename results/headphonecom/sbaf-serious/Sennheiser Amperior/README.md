@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.23 | 5.7 dB  |
-| Peaking | 146 Hz  | 1.2  | -6.7 dB |
-| Peaking | 1894 Hz | 2.7  | -4.9 dB |
-| Peaking | 6351 Hz | 4.71 | 6.4 dB  |
-| Peaking | 8659 Hz | 6.2  | -6.7 dB |
-| Peaking | 20 Hz   | 0.21 | -0.2 dB |
-| Peaking | 227 Hz  | 3.51 | -2.2 dB |
-| Peaking | 498 Hz  | 1.14 | 2.4 dB  |
-| Peaking | 3183 Hz | 2.23 | 3.0 dB  |
-| Peaking | 2908 Hz | 0.96 | -1.6 dB |
+| Peaking | 20 Hz   | 1.23 | 5.7 dB  |
+| Peaking | 146 Hz  | 1.18 | -6.7 dB |
+| Peaking | 1891 Hz | 2.7  | -4.9 dB |
+| Peaking | 6319 Hz | 4.7  | 6.4 dB  |
+| Peaking | 8616 Hz | 6.2  | -6.6 dB |
+| Peaking | 223 Hz  | 3.71 | -2.1 dB |
+| Peaking | 491 Hz  | 1.27 | 2.4 dB  |
+| Peaking | 2509 Hz | 2.05 | -2.4 dB |
+| Peaking | 2966 Hz | 1.87 | 2.7 dB  |
+| Peaking | 5174 Hz | 8.63 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20Amperior/Sennheiser%20Amperior.png)

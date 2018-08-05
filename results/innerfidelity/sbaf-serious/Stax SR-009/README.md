@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2782 Hz | 1.73 | 4.7 dB  |
 | Peaking | 4975 Hz | 5.22 | -4.0 dB |
 | Peaking | 6020 Hz | 4.13 | 6.8 dB  |
-| Peaking | 795 Hz  | 2.87 | 1.5 dB  |
+| Peaking | 794 Hz  | 2.87 | 1.5 dB  |
 | Peaking | 1323 Hz | 1.14 | -1.6 dB |
-| Peaking | 2139 Hz | 3.35 | 1.5 dB  |
-| Peaking | 6762 Hz | 7.85 | 1.3 dB  |
-| Peaking | 7793 Hz | 3.07 | -1.0 dB |
+| Peaking | 2140 Hz | 3.35 | 1.5 dB  |
+| Peaking | 6714 Hz | 7.91 | 1.3 dB  |
+| Peaking | 7786 Hz | 3.07 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-009/Stax%20SR-009.png)

@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2414 Hz  | 2.07 | 2.6 dB  |
 | Peaking | 3453 Hz  | 0.71 | 1.0 dB  |
 | Peaking | 31652 Hz | 2.84 | -0.6 dB |
-| Peaking | 33 Hz    | 2.58 | -0.4 dB |
-| Peaking | 114 Hz   | 0.9  | 0.8 dB  |
-| Peaking | 140 Hz   | 2.13 | -1.4 dB |
-| Peaking | 6929 Hz  | 2.23 | -1.0 dB |
-| Peaking | 7032 Hz  | 6.54 | 2.3 dB  |
+| Peaking | 33 Hz    | 2.42 | -0.5 dB |
+| Peaking | 120 Hz   | 0.89 | 0.8 dB  |
+| Peaking | 142 Hz   | 2.09 | -1.5 dB |
+| Peaking | 6930 Hz  | 2.24 | -1.0 dB |
+| Peaking | 7030 Hz  | 6.54 | 2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDRV-CD3000/Sony%20MDRV-CD3000.png)

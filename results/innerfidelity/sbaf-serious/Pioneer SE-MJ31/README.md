@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1713 Hz  | 1.77 | -11.8 dB |
 | Peaking | 3600 Hz  | 0.73 | 8.3 dB   |
 | Peaking | 7352 Hz  | 5.58 | -6.3 dB  |
-| Peaking | 998 Hz   | 3.4  | 4.0 dB   |
-| Peaking | 1014 Hz  | 1.74 | -2.4 dB  |
-| Peaking | 3944 Hz  | 6.19 | -0.9 dB  |
-| Peaking | 5940 Hz  | 6.64 | 2.8 dB   |
-| Peaking | 21162 Hz | 0.21 | -1.8 dB  |
+| Peaking | 995 Hz   | 3.43 | 3.9 dB   |
+| Peaking | 1021 Hz  | 1.73 | -2.3 dB  |
+| Peaking | 3925 Hz  | 6.19 | -0.9 dB  |
+| Peaking | 5911 Hz  | 6.65 | 2.8 dB   |
+| Peaking | 21058 Hz | 0.21 | -1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20SE-MJ31/Pioneer%20SE-MJ31.png)

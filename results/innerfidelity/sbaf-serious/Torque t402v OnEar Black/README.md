@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OnEar Black ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 93 Hz   | 0.46 | -6.9 dB |
 | Peaking | 229 Hz  | 0.96 | -6.0 dB |
-| Peaking | 1566 Hz | 4.03 | -4.5 dB |
-| Peaking | 2834 Hz | 1.21 | -3.3 dB |
-| Peaking | 6058 Hz | 4.38 | 7.4 dB  |
-| Peaking | 434 Hz  | 2.23 | -2.4 dB |
-| Peaking | 783 Hz  | 2.07 | 5.4 dB  |
-| Peaking | 1175 Hz | 2.99 | -2.5 dB |
-| Peaking | 4510 Hz | 2.02 | 1.9 dB  |
-| Peaking | 4519 Hz | 5.05 | -4.3 dB |
+| Peaking | 1561 Hz | 4.03 | -4.5 dB |
+| Peaking | 2835 Hz | 1.22 | -3.3 dB |
+| Peaking | 6063 Hz | 4.38 | 7.4 dB  |
+| Peaking | 434 Hz  | 2.22 | -2.4 dB |
+| Peaking | 783 Hz  | 2.08 | 5.4 dB  |
+| Peaking | 1176 Hz | 3.1  | -2.4 dB |
+| Peaking | 3454 Hz | 5.54 | 1.1 dB  |
+| Peaking | 4530 Hz | 7.64 | -2.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OnEar%20Black/Torque%20t402v%20OnEar%20Black.png)

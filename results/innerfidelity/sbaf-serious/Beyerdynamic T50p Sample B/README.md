@@ -1,4 +1,4 @@
-# Beyerdynamic T50p Sample B
+# Beyerdynamic T50p sample B
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T50p Sample B ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T50p sample B ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
@@ -32,4 +32,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 6278 Hz | 1.65 | 5.8 dB  |
 | Peaking | 7592 Hz | 2.11 | -4.3 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T50p%20Sample%20B/Beyerdynamic%20T50p%20Sample%20B.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T50p%20sample%20B/Beyerdynamic%20T50p%20sample%20B.png)

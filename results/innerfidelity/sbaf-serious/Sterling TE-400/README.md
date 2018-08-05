@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 62 Hz   | 0.23 | 26.5 dB  |
-| Peaking | 99 Hz   | 0.28 | -26.6 dB |
-| Peaking | 736 Hz  | 3.27 | 8.9 dB   |
-| Peaking | 2305 Hz | 1.65 | 5.9 dB   |
-| Peaking | 6034 Hz | 5.59 | 6.7 dB   |
-| Peaking | 2989 Hz | 3    | -0.8 dB  |
-| Peaking | 3739 Hz | 4.62 | 7.6 dB   |
-| Peaking | 4345 Hz | 3.9  | -7.7 dB  |
-| Peaking | 5427 Hz | 9.71 | 3.9 dB   |
-| Peaking | 8242 Hz | 9.13 | -2.5 dB  |
+| Peaking | 100 Hz  | 0.28 | -26.5 dB |
+| Peaking | 737 Hz  | 3.27 | 8.9 dB   |
+| Peaking | 2311 Hz | 1.65 | 5.9 dB   |
+| Peaking | 6044 Hz | 5.59 | 6.7 dB   |
+| Peaking | 2999 Hz | 3.51 | -0.9 dB  |
+| Peaking | 3748 Hz | 4.58 | 7.6 dB   |
+| Peaking | 4368 Hz | 3.9  | -7.8 dB  |
+| Peaking | 5481 Hz | 9.62 | 4.0 dB   |
+| Peaking | 8298 Hz | 8.99 | -2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sterling%20TE-400/Sterling%20TE-400.png)

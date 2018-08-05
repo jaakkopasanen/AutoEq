@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 162 Hz  |  1.2  | -2.4 dB |
 | Peaking | 3745 Hz |  6.86 | 4.7 dB  |
 | Peaking | 5914 Hz |  3.88 | 6.7 dB  |
-| Peaking | 12 Hz   |  1.96 | 1.1 dB  |
-| Peaking | 1491 Hz |  2.26 | -1.3 dB |
-| Peaking | 2597 Hz |  4.91 | 1.2 dB  |
-| Peaking | 4512 Hz | 13.31 | -1.8 dB |
-| Peaking | 9712 Hz |  5.03 | -1.3 dB |
+| Peaking | 2 Hz    |  2.37 | 0.6 dB  |
+| Peaking | 1492 Hz |  2.26 | -1.3 dB |
+| Peaking | 2612 Hz |  4.9  | 1.2 dB  |
+| Peaking | 4537 Hz | 13.27 | -1.8 dB |
+| Peaking | 9624 Hz |  5.03 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-AD700/Audio%20Technica%20ATH-AD700.png)

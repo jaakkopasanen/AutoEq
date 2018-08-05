@@ -16,19 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `AKG K167 Tiesto ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 12 Hz   | 1.75 | 5.8 dB  |
-| Peaking | 22 Hz   | 1.04 | 4.1 dB  |
-| Peaking | 77 Hz   | 0.72 | 5.2 dB  |
-| Peaking | 267 Hz  | 0.93 | 3.0 dB  |
-| Peaking | 4915 Hz | 1.79 | 5.3 dB  |
-| Peaking | 1770 Hz | 1.74 | -6.4 dB |
-| Peaking | 2761 Hz | 0.7  | 4.0 dB  |
-| Peaking | 4328 Hz | 3.74 | -3.7 dB |
-| Peaking | 9147 Hz | 4.01 | -4.0 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 12 Hz    | 1.72 | 5.8 dB  |
+| Peaking | 22 Hz    | 1.04 | 4.1 dB  |
+| Peaking | 76 Hz    | 0.7  | 5.2 dB  |
+| Peaking | 264 Hz   | 0.93 | 3.0 dB  |
+| Peaking | 4915 Hz  | 1.79 | 5.3 dB  |
+| Peaking | 1772 Hz  | 1.7  | -6.6 dB |
+| Peaking | 2708 Hz  | 0.7  | 4.1 dB  |
+| Peaking | 4328 Hz  | 3.75 | -3.7 dB |
+| Peaking | 24002 Hz | 0.45 | 0.3 dB  |
+| Peaking | 9151 Hz  | 3.93 | -4.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K167%20Tiesto/AKG%20K167%20Tiesto.png)

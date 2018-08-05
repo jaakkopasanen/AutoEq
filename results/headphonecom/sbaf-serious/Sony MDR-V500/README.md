@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 244 Hz  | 3.07 | 1.8 dB  |
 | Peaking | 511 Hz  | 0.71 | 1.4 dB  |
 | Peaking | 2569 Hz | 0.89 | -4.0 dB |
-| Peaking | 1500 Hz | 5.59 | -1.2 dB |
+| Peaking | 1497 Hz | 5.59 | -1.2 dB |
 | Peaking | 2537 Hz | 2.77 | 1.6 dB  |
 | Peaking | 3477 Hz | 1.78 | -1.6 dB |
-| Peaking | 5473 Hz | 4.65 | 1.6 dB  |
-| Peaking | 5472 Hz | 5.26 | 1.2 dB  |
+| Peaking | 5472 Hz | 4.65 | 1.6 dB  |
+| Peaking | 5471 Hz | 5.26 | 1.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-V500/Sony%20MDR-V500.png)

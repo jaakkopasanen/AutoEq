@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 34 Hz   | 0.73 | 6.9 dB  |
-| Peaking | 6329 Hz | 4.06 | 7.4 dB  |
-| Peaking | 2896 Hz | 3.99 | 4.1 dB  |
-| Peaking | 4345 Hz | 2.33 | 10.7 dB |
-| Peaking | 4788 Hz | 0.57 | -4.9 dB |
-| Peaking | 117 Hz  | 4.18 | -1.6 dB |
-| Peaking | 231 Hz  | 2.63 | 2.1 dB  |
-| Peaking | 332 Hz  | 1.64 | -2.8 dB |
-| Peaking | 1606 Hz | 1.49 | 1.7 dB  |
-| Peaking | 1913 Hz | 3.99 | -2.7 dB |
+| Peaking | 34 Hz   | 0.72 | 6.9 dB  |
+| Peaking | 6335 Hz | 4.04 | 7.4 dB  |
+| Peaking | 2897 Hz | 4.06 | 4.1 dB  |
+| Peaking | 4337 Hz | 2.31 | 10.8 dB |
+| Peaking | 4796 Hz | 0.58 | -5.0 dB |
+| Peaking | 117 Hz  | 4.26 | -1.5 dB |
+| Peaking | 232 Hz  | 2.65 | 2.1 dB  |
+| Peaking | 333 Hz  | 1.64 | -2.8 dB |
+| Peaking | 1609 Hz | 1.52 | 1.7 dB  |
+| Peaking | 1914 Hz | 3.98 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20HFI-450/Ultrasone%20HFI-450.png)

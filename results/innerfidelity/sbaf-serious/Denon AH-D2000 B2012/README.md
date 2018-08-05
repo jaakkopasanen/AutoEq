@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 203 Hz   | 0.74 | -2.5 dB |
-| Peaking | 10583 Hz | 4.81 | -1.6 dB |
-| Peaking | 1825 Hz  | 1.02 | 1.0 dB  |
-| Peaking | 3074 Hz  | 5.6  | 5.0 dB  |
+| Peaking | 204 Hz   | 0.74 | -2.5 dB |
+| Peaking | 10462 Hz | 4.81 | -1.6 dB |
+| Peaking | 1824 Hz  | 1.02 | 1.0 dB  |
+| Peaking | 3069 Hz  | 5.6  | 5.1 dB  |
 | Peaking | 5187 Hz  | 3    | 2.9 dB  |
-| Peaking | 36 Hz    | 0.9  | -3.4 dB |
-| Peaking | 20 Hz    | 0.16 | 3.1 dB  |
-| Peaking | 126 Hz   | 1.35 | -1.6 dB |
-| Peaking | 667 Hz   | 2.63 | -1.9 dB |
-| Peaking | 731 Hz   | 6.86 | 3.2 dB  |
+| Peaking | 37 Hz    | 0.9  | -3.4 dB |
+| Peaking | 21 Hz    | 0.17 | 3.0 dB  |
+| Peaking | 127 Hz   | 1.34 | -1.6 dB |
+| Peaking | 671 Hz   | 2.65 | -1.9 dB |
+| Peaking | 728 Hz   | 6.87 | 3.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D2000%20B2012/Denon%20AH-D2000%20B2012.png)

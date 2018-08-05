@@ -16,7 +16,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic Custom One Pro switch position 3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 132 Hz  | 0.3  | -2.7 dB |
 | Peaking | 1969 Hz | 2.43 | -4.5 dB |
 | Peaking | 4278 Hz | 1.1  | 7.0 dB  |
-| Peaking | 1034 Hz | 1.39 | 1.1 dB  |
-| Peaking | 3042 Hz | 3.23 | 1.3 dB  |
-| Peaking | 2927 Hz | 0.2  | -0.7 dB |
-| Peaking | 6265 Hz | 3.29 | 4.4 dB  |
-| Peaking | 7502 Hz | 1.95 | -2.6 dB |
+| Peaking | 1032 Hz | 1.39 | 1.1 dB  |
+| Peaking | 3030 Hz | 3.22 | 1.3 dB  |
+| Peaking | 2936 Hz | 0.2  | -0.7 dB |
+| Peaking | 6298 Hz | 3.28 | 4.4 dB  |
+| Peaking | 7452 Hz | 1.96 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20Custom%20One%20Pro%20switch%20position%203/Beyerdynamic%20Custom%20One%20Pro%20switch%20position%203.png)

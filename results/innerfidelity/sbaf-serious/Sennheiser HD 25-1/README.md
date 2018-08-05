@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1810 Hz | 1.45 | -5.4 dB |
 | Peaking | 5307 Hz | 0.83 | 7.3 dB  |
 | Peaking | 8633 Hz | 2.93 | -8.6 dB |
-| Peaking | 40 Hz   | 2.73 | -0.7 dB |
-| Peaking | 77 Hz   | 3.2  | 1.9 dB  |
-| Peaking | 115 Hz  | 1.19 | -1.7 dB |
-| Peaking | 138 Hz  | 2.74 | 1.9 dB  |
+| Peaking | 42 Hz   | 2.8  | -0.7 dB |
+| Peaking | 78 Hz   | 3.13 | 2.0 dB  |
+| Peaking | 111 Hz  | 1.2  | -1.7 dB |
+| Peaking | 140 Hz  | 2.9  | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%2025-1/Sennheiser%20HD%2025-1.png)

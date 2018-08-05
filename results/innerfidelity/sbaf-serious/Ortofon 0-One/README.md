@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 700 Hz   |  9.12 | 2.4 dB  |
 | Peaking | 2896 Hz  |  1.31 | 6.7 dB  |
 | Peaking | 6154 Hz  |  5.19 | 5.2 dB  |
-| Peaking | 475 Hz   |  3.96 | -2.3 dB |
-| Peaking | 1606 Hz  |  5.15 | -2.9 dB |
+| Peaking | 478 Hz   |  3.96 | -2.3 dB |
+| Peaking | 1607 Hz  |  5.15 | -2.9 dB |
 | Peaking | 2059 Hz  |  6.15 | 2.7 dB  |
-| Peaking | 4518 Hz  | 14.37 | 3.2 dB  |
-| Peaking | 19977 Hz |  2.09 | -6.2 dB |
+| Peaking | 4553 Hz  | 14.37 | 3.2 dB  |
+| Peaking | 20195 Hz |  2.09 | -6.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ortofon%200-One/Ortofon%200-One.png)

@@ -1,0 +1,35 @@
+# Audeo PFE 121 Gray Filter
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.6dB
+GraphicEQ: 10 -84; 20 6.0; 22 5.7; 23 5.5; 25 5.2; 26 5.1; 28 4.9; 30 4.7; 32 4.5; 35 4.3; 37 4.1; 40 4.0; 42 3.9; 45 3.8; 49 3.6; 52 3.6; 56 3.4; 59 3.3; 64 3.2; 68 3.1; 73 3.0; 78 2.6; 83 2.3; 89 2.0; 95 1.5; 102 0.9; 109 0.5; 117 -0.0; 125 -0.7; 134 -1.2; 143 -1.5; 153 -1.6; 164 -1.8; 175 -1.9; 188 -1.8; 201 -1.8; 215 -1.7; 230 -1.6; 246 -1.5; 263 -1.4; 282 -1.2; 301 -1.1; 323 -0.9; 345 -0.8; 369 -0.6; 395 -0.5; 423 -0.1; 452 0.2; 484 0.2; 518 0.3; 554 0.7; 593 1.0; 635 1.2; 679 1.1; 726 1.1; 777 1.2; 832 0.9; 890 0.6; 952 0.3; 1019 -0.1; 1090 -0.4; 1167 -0.8; 1248 -1.2; 1336 -1.7; 1429 -2.3; 1529 -2.8; 1636 -3.1; 1751 -3.3; 1873 -3.2; 2004 -3.1; 2145 -2.9; 2295 -2.5; 2455 -1.6; 2627 -1.0; 2811 -0.1; 3008 1.6; 3219 3.0; 3444 4.2; 3685 4.3; 3943 3.6; 4219 1.9; 4514 0.7; 4830 0.8; 5168 2.0; 5530 2.9; 5917 4.0; 6331 4.7; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -0.1; 8880 -1.9; 9502 -3.3; 10167 -3.0; 10879 -0.7; 11640 0.0; 12455 0.0; 13327 -0.1; 14260 -3.0; 15258 -4.8; 16326 -1.5; 17469 0.0; 18692 0.0; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.6dB` and instead set Global volume in the UI for both channels to **-66**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Audeo PFE 121 Gray Filter ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 24 Hz    | 1    | 5.6 dB  |
+| Peaking | 64 Hz    | 2.14 | 2.7 dB  |
+| Peaking | 1907 Hz  | 1.74 | -3.8 dB |
+| Peaking | 3550 Hz  | 3.5  | 5.2 dB  |
+| Peaking | 6244 Hz  | 5.01 | 5.1 dB  |
+| Peaking | 107 Hz   | 0.81 | 2.9 dB  |
+| Peaking | 150 Hz   | 0.79 | -4.1 dB |
+| Peaking | 685 Hz   | 1.87 | 1.7 dB  |
+| Peaking | 15206 Hz | 3.94 | -5.2 dB |
+| Peaking | 24000 Hz | 1.9  | -1.7 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeo%20PFE%20121%20Gray%20Filter/Audeo%20PFE%20121%20Gray%20Filter.png)

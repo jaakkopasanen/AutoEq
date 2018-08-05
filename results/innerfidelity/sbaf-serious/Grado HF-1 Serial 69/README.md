@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Grado HF-1 Serial 69 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 28 Hz    | 0.86 | 7.0 dB   |
-| Peaking | 106 Hz   | 0.79 | -3.5 dB  |
-| Peaking | 2425 Hz  | 1.82 | -5.4 dB  |
-| Peaking | 1768 Hz  | 2.87 | -2.4 dB  |
+| Peaking | 27 Hz    | 0.87 | 7.0 dB   |
+| Peaking | 105 Hz   | 0.78 | -3.5 dB  |
+| Peaking | 2426 Hz  | 1.82 | -5.4 dB  |
+| Peaking | 1769 Hz  | 2.87 | -2.4 dB  |
 | Peaking | 8854 Hz  | 3.98 | -10.4 dB |
-| Peaking | 13 Hz    | 1.67 | 1.3 dB   |
-| Peaking | 3575 Hz  | 3.66 | 4.3 dB   |
-| Peaking | 4209 Hz  | 2.18 | -4.3 dB  |
-| Peaking | 6044 Hz  | 7.42 | 3.5 dB   |
-| Peaking | 11000 Hz | 6.56 | 2.3 dB   |
+| Peaking | 747 Hz   | 1.11 | 0.9 dB   |
+| Peaking | 3488 Hz  | 4.06 | 3.5 dB   |
+| Peaking | 5148 Hz  | 1.14 | -4.3 dB  |
+| Peaking | 5905 Hz  | 3.83 | 6.0 dB   |
+| Peaking | 11112 Hz | 3.95 | 2.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20HF-1%20Serial%2069/Grado%20HF-1%20Serial%2069.png)

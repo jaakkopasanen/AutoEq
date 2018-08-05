@@ -21,15 +21,15 @@ these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.95 | 5.8 dB  |
+| Peaking | 21 Hz   | 1.92 | 5.7 dB  |
 | Peaking | 142 Hz  | 1.09 | -3.6 dB |
 | Peaking | 299 Hz  | 1.99 | 3.4 dB  |
 | Peaking | 2709 Hz | 4.43 | 2.7 dB  |
 | Peaking | 5509 Hz | 2.5  | 6.7 dB  |
-| Peaking | 58 Hz   | 3.31 | -1.1 dB |
-| Peaking | 520 Hz  | 6.9  | -0.9 dB |
-| Peaking | 1334 Hz | 4.34 | 1.0 dB  |
-| Peaking | 6477 Hz | 9.2  | 2.0 dB  |
-| Peaking | 8838 Hz | 2.73 | -1.8 dB |
+| Peaking | 58 Hz   | 3.33 | -1.0 dB |
+| Peaking | 522 Hz  | 6.85 | -0.9 dB |
+| Peaking | 1335 Hz | 4.34 | 1.0 dB  |
+| Peaking | 6524 Hz | 9.18 | 2.0 dB  |
+| Peaking | 8866 Hz | 2.74 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20569/Sennheiser%20HD%20569.png)

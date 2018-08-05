@@ -28,8 +28,8 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 5682 Hz | 2.41 | 5.9 dB  |
 | Peaking | 35 Hz   | 1.06 | -3.0 dB |
 | Peaking | 22 Hz   | 0.2  | 2.4 dB  |
-| Peaking | 161 Hz  | 1.12 | -1.7 dB |
-| Peaking | 573 Hz  | 1.35 | 0.7 dB  |
-| Peaking | 7892 Hz | 7.13 | -1.2 dB |
+| Peaking | 162 Hz  | 1.12 | -1.6 dB |
+| Peaking | 571 Hz  | 1.35 | 0.7 dB  |
+| Peaking | 7907 Hz | 7.13 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20HP3/Yamaha%20HP3.png)

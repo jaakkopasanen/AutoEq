@@ -16,7 +16,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Koss KDE250 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
 | Type    | Fc       |    Q | Gain     |
@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 4546 Hz  | 1.07 | 17.3 dB  |
 | Peaking | 8557 Hz  | 1.27 | -10.2 dB |
 | Peaking | 3 Hz     | 2.43 | 0.5 dB   |
-| Peaking | 9890 Hz  | 5.78 | 2.6 dB   |
+| Peaking | 9889 Hz  | 5.78 | 2.6 dB   |
 | Peaking | 14142 Hz | 1.92 | 3.0 dB   |
-| Peaking | 12405 Hz | 2.39 | -4.3 dB  |
+| Peaking | 12404 Hz | 2.39 | -4.3 dB  |
 | Peaking | 24000 Hz | 1.37 | -0.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20KDE250/Koss%20KDE250.png)

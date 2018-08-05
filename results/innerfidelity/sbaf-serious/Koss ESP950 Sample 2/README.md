@@ -1,4 +1,4 @@
-# Koss ESP950 Sample 2
+# Koss ESP950 sample 2
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Koss ESP950 Sample 2 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Koss ESP950 sample 2 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1495 Hz | 2.26 | -3.1 dB |
 | Peaking | 2263 Hz | 2.77 | 4.6 dB  |
 | Peaking | 4756 Hz | 1.67 | 6.7 dB  |
-| Peaking | 3 Hz    | 1.85 | 0.3 dB  |
-| Peaking | 86 Hz   | 6.03 | 1.3 dB  |
-| Peaking | 6332 Hz | 5.75 | 2.0 dB  |
-| Peaking | 9085 Hz | 3.8  | -3.2 dB |
+| Peaking | 3 Hz    | 1.84 | 0.3 dB  |
+| Peaking | 88 Hz   | 5.99 | 1.3 dB  |
+| Peaking | 6348 Hz | 5.75 | 2.0 dB  |
+| Peaking | 9115 Hz | 3.81 | -3.2 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20ESP950%20Sample%202/Koss%20ESP950%20Sample%202.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20ESP950%20sample%202/Koss%20ESP950%20sample%202.png)

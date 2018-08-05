@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 332 Hz  | 1.36 | 5.2 dB  |
 | Peaking | 2372 Hz | 2.3  | 5.8 dB  |
 | Peaking | 5399 Hz | 2.37 | 6.6 dB  |
-| Peaking | 871 Hz  | 3.5  | -2.2 dB |
-| Peaking | 3571 Hz | 7.13 | -1.9 dB |
-| Peaking | 2050 Hz | 0.21 | 0.4 dB  |
-| Peaking | 6507 Hz | 6.85 | 2.7 dB  |
-| Peaking | 7687 Hz | 1.83 | -1.7 dB |
+| Peaking | 877 Hz  | 3.5  | -2.2 dB |
+| Peaking | 3602 Hz | 7.13 | -1.9 dB |
+| Peaking | 2049 Hz | 0.21 | 0.4 dB  |
+| Peaking | 6608 Hz | 6.85 | 2.6 dB  |
+| Peaking | 7684 Hz | 1.83 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beats%20Studio%202%20Bluetooth/Beats%20Studio%202%20Bluetooth.png)

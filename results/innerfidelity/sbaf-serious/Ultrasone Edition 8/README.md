@@ -22,14 +22,14 @@ these parameters. The first 5 filters can be used independently.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 33 Hz    | 0.44 | 6.3 dB   |
-| Peaking | 2011 Hz  | 2.08 | 5.8 dB   |
-| Peaking | 5331 Hz  | 1.07 | 19.8 dB  |
-| Peaking | 7144 Hz  | 1.07 | 8.2 dB   |
-| Peaking | 6294 Hz  | 1.25 | -27.9 dB |
-| Peaking | 213 Hz   | 3.05 | -1.6 dB  |
-| Peaking | 726 Hz   | 1.85 | 1.2 dB   |
-| Peaking | 968 Hz   | 5.75 | -0.9 dB  |
-| Peaking | 12559 Hz | 2.82 | 1.9 dB   |
-| Peaking | 14402 Hz | 5.04 | -4.8 dB  |
+| Peaking | 2011 Hz  | 2.09 | 5.8 dB   |
+| Peaking | 5332 Hz  | 1.06 | 20.0 dB  |
+| Peaking | 7134 Hz  | 1.07 | 8.2 dB   |
+| Peaking | 6299 Hz  | 1.25 | -28.1 dB |
+| Peaking | 212 Hz   | 3.1  | -1.6 dB  |
+| Peaking | 721 Hz   | 1.91 | 1.2 dB   |
+| Peaking | 970 Hz   | 5.85 | -0.9 dB  |
+| Peaking | 12666 Hz | 2.58 | 2.0 dB   |
+| Peaking | 14420 Hz | 4.94 | -4.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20Edition%208/Ultrasone%20Edition%208.png)

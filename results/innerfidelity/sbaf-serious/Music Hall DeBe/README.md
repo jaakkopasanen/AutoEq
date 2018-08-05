@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:--------|:-----|:--------|
 | Peaking | 30 Hz   | 0.29 | 6.4 dB  |
 | Peaking | 356 Hz  | 0.25 | -4.5 dB |
-| Peaking | 685 Hz  | 1.62 | 5.7 dB  |
-| Peaking | 2191 Hz | 1.85 | 4.6 dB  |
-| Peaking | 3838 Hz | 0.9  | 5.7 dB  |
-| Peaking | 84 Hz   | 2.92 | 0.5 dB  |
-| Peaking | 143 Hz  | 3.61 | -0.5 dB |
-| Peaking | 5030 Hz | 7.49 | -4.8 dB |
-| Peaking | 6205 Hz | 2.21 | 5.9 dB  |
-| Peaking | 7431 Hz | 1.63 | -3.8 dB |
+| Peaking | 687 Hz  | 1.62 | 5.7 dB  |
+| Peaking | 2190 Hz | 1.85 | 4.6 dB  |
+| Peaking | 3827 Hz | 0.9  | 5.7 dB  |
+| Peaking | 85 Hz   | 3.13 | 0.4 dB  |
+| Peaking | 144 Hz  | 3.59 | -0.5 dB |
+| Peaking | 5004 Hz | 7.62 | -4.7 dB |
+| Peaking | 6175 Hz | 2.25 | 5.9 dB  |
+| Peaking | 7460 Hz | 1.62 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Music%20Hall%20DeBe/Music%20Hall%20DeBe.png)

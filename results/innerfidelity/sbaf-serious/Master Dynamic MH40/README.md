@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 421 Hz  | 1.53 | 4.7 dB  |
 | Peaking | 4149 Hz | 2.07 | 5.4 dB  |
 | Peaking | 5852 Hz | 3.49 | 5.0 dB  |
-| Peaking | 1504 Hz | 1.43 | -1.2 dB |
-| Peaking | 1933 Hz | 2.78 | -2.2 dB |
-| Peaking | 2326 Hz | 1.98 | 4.0 dB  |
-| Peaking | 2749 Hz | 6.96 | -4.1 dB |
-| Peaking | 8983 Hz | 3.96 | -1.7 dB |
+| Peaking | 1502 Hz | 1.43 | -1.1 dB |
+| Peaking | 1944 Hz | 2.76 | -2.3 dB |
+| Peaking | 2314 Hz | 1.98 | 4.0 dB  |
+| Peaking | 2743 Hz | 6.96 | -4.1 dB |
+| Peaking | 9001 Hz | 3.97 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Master%20Dynamic%20MH40/Master%20Dynamic%20MH40.png)

@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 661 Hz  | 0.86 | 6.7 dB   |
 | Peaking | 3025 Hz | 0.73 | -14.1 dB |
 | Peaking | 4325 Hz | 0.8  | 9.5 dB   |
-| Peaking | 318 Hz  | 7.87 | -0.4 dB  |
-| Peaking | 6710 Hz | 7.21 | 4.0 dB   |
-| Peaking | 5401 Hz | 5.04 | -2.7 dB  |
-| Peaking | 5052 Hz | 4.64 | 2.5 dB   |
-| Peaking | 6614 Hz | 1.54 | -1.1 dB  |
+| Peaking | 320 Hz  | 7.87 | -0.4 dB  |
+| Peaking | 6772 Hz | 7.19 | 4.0 dB   |
+| Peaking | 5431 Hz | 5.04 | -2.7 dB  |
+| Peaking | 5010 Hz | 4.64 | 2.4 dB   |
+| Peaking | 6607 Hz | 1.53 | -1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Klipsch%20Image%20One%20B/Klipsch%20Image%20One%20B.png)

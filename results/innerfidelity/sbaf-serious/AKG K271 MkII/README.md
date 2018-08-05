@@ -1,4 +1,4 @@
-# AKG K271 MkII
+# AKG K271 MKII
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -6.6dB` and instead set Global volume in the UI for both channels to **-66**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `AKG K271 MkII ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `AKG K271 MKII ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
@@ -27,9 +27,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 3531 Hz  | 3.15 | 4.1 dB  |
 | Peaking | 9123 Hz  | 3.59 | -9.6 dB |
 | Peaking | 678 Hz   | 1.69 | -4.5 dB |
-| Peaking | 785 Hz   | 2.74 | 4.9 dB  |
-| Peaking | 1718 Hz  | 2.52 | -4.8 dB |
-| Peaking | 2155 Hz  | 2.07 | 2.6 dB  |
-| Peaking | 11278 Hz | 8.39 | 1.6 dB  |
+| Peaking | 784 Hz   | 2.74 | 4.9 dB  |
+| Peaking | 1717 Hz  | 2.52 | -4.8 dB |
+| Peaking | 2156 Hz  | 2.07 | 2.6 dB  |
+| Peaking | 11277 Hz | 8.39 | 1.6 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K271%20MkII/AKG%20K271%20MkII.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K271%20MKII/AKG%20K271%20MKII.png)

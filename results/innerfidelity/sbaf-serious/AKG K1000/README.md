@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 1948 Hz  | 1.78 | -7.5 dB  |
 | Peaking | 3110 Hz  | 3.26 | 6.0 dB   |
 | Peaking | 6684 Hz  | 1.13 | -4.9 dB  |
-| Peaking | 90 Hz    | 5.7  | -0.7 dB  |
-| Peaking | 939 Hz   | 1.91 | 0.8 dB   |
-| Peaking | 1403 Hz  | 7.11 | -1.6 dB  |
-| Peaking | 9142 Hz  | 4.12 | -3.0 dB  |
-| Peaking | 10603 Hz | 1.69 | 2.0 dB   |
+| Peaking | 86 Hz    | 5.79 | -0.7 dB  |
+| Peaking | 939 Hz   | 1.92 | 0.8 dB   |
+| Peaking | 1407 Hz  | 7.11 | -1.6 dB  |
+| Peaking | 9133 Hz  | 4.09 | -3.0 dB  |
+| Peaking | 10620 Hz | 1.71 | 2.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K1000/AKG%20K1000.png)

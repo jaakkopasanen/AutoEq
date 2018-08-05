@@ -19,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Spider Moonlight
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
 these parameters. The first 5 filters can be used independently.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 152 Hz   |  1.26 | -5.9 dB |
-| Peaking | 2218 Hz  |  1.77 | -6.0 dB |
-| Peaking | 4357 Hz  |  1.76 | -8.3 dB |
-| Peaking | 5591 Hz  |  2.2  | 11.8 dB |
-| Peaking | 12500 Hz |  1.25 | -4.1 dB |
-| Peaking | 20 Hz    |  2.7  | 2.4 dB  |
-| Peaking | 228 Hz   |  3.38 | -1.9 dB |
-| Peaking | 345 Hz   |  3.01 | 2.9 dB  |
-| Peaking | 807 Hz   |  3.26 | 1.3 dB  |
-| Peaking | 9872 Hz  | 11.8  | -2.2 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 152 Hz   | 1.26 | -5.9 dB |
+| Peaking | 2218 Hz  | 1.77 | -6.0 dB |
+| Peaking | 4357 Hz  | 1.76 | -8.3 dB |
+| Peaking | 5591 Hz  | 2.2  | 11.8 dB |
+| Peaking | 12500 Hz | 1.25 | -4.1 dB |
+| Peaking | 19 Hz    | 2.39 | 2.2 dB  |
+| Peaking | 228 Hz   | 3.38 | -1.9 dB |
+| Peaking | 344 Hz   | 3.01 | 2.9 dB  |
+| Peaking | 807 Hz   | 3.27 | 1.3 dB  |
+| Peaking | 16265 Hz | 5.01 | 1.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Spider%20Moonlight/Spider%20Moonlight.png)

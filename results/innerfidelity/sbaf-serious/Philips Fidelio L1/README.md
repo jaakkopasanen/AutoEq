@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 219 Hz  | 0.83 | -4.2 dB |
 | Peaking | 2242 Hz | 1.56 | -9.0 dB |
 | Peaking | 5320 Hz | 3.83 | 6.7 dB  |
-| Peaking | 998 Hz  | 1.49 | 2.1 dB  |
-| Peaking | 1623 Hz | 4.97 | -2.9 dB |
-| Peaking | 6240 Hz | 5.8  | 3.6 dB  |
-| Peaking | 9686 Hz | 2.65 | 1.7 dB  |
-| Peaking | 7936 Hz | 2.74 | -5.8 dB |
+| Peaking | 999 Hz  | 1.49 | 2.1 dB  |
+| Peaking | 1630 Hz | 4.97 | -2.9 dB |
+| Peaking | 6243 Hz | 5.8  | 3.6 dB  |
+| Peaking | 9684 Hz | 2.65 | 1.7 dB  |
+| Peaking | 7938 Hz | 2.74 | -5.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20Fidelio%20L1/Philips%20Fidelio%20L1.png)

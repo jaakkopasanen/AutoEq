@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 381 Hz  | 3.13 | 4.2 dB  |
 | Peaking | 1944 Hz | 1.79 | -4.9 dB |
 | Peaking | 5728 Hz | 3.39 | 7.0 dB  |
-| Peaking | 46 Hz   | 2.23 | 2.4 dB  |
-| Peaking | 87 Hz   | 2.18 | 3.4 dB  |
-| Peaking | 249 Hz  | 0.23 | -3.8 dB |
-| Peaking | 311 Hz  | 3.63 | 2.8 dB  |
-| Peaking | 591 Hz  | 0.65 | 3.6 dB  |
+| Peaking | 47 Hz   | 2.22 | 2.4 dB  |
+| Peaking | 87 Hz   | 2.2  | 3.4 dB  |
+| Peaking | 246 Hz  | 0.22 | -3.8 dB |
+| Peaking | 312 Hz  | 3.63 | 2.8 dB  |
+| Peaking | 595 Hz  | 0.64 | 3.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Kennerton%20Magister/Kennerton%20Magister.png)

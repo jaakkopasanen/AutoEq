@@ -1,0 +1,35 @@
+# Radius HP-TWF31
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.5dB
+GraphicEQ: 10 -84; 20 -0.3; 22 -0.5; 23 -0.5; 25 -0.6; 26 -0.7; 28 -0.8; 30 -0.8; 32 -0.9; 35 -1.0; 37 -1.0; 40 -1.1; 42 -1.1; 45 -1.1; 49 -1.2; 52 -1.2; 56 -1.2; 59 -1.2; 64 -1.3; 68 -1.4; 73 -1.5; 78 -1.7; 83 -2.0; 89 -2.4; 95 -2.8; 102 -3.4; 109 -3.9; 117 -4.5; 125 -5.0; 134 -5.5; 143 -5.7; 153 -6.0; 164 -6.2; 175 -6.2; 188 -6.2; 201 -6.1; 215 -6.1; 230 -5.9; 246 -5.8; 263 -5.7; 282 -5.5; 301 -5.3; 323 -5.1; 345 -4.8; 369 -4.5; 395 -4.4; 423 -4.1; 452 -3.7; 484 -3.4; 518 -3.0; 554 -2.4; 593 -1.8; 635 -1.6; 679 -1.5; 726 -1.1; 777 -0.6; 832 -0.3; 890 -0.1; 952 -0.0; 1019 0.1; 1090 0.2; 1167 0.2; 1248 0.3; 1336 0.2; 1429 -0.0; 1529 -0.2; 1636 -0.2; 1751 -0.0; 1873 0.3; 2004 0.6; 2145 0.9; 2295 1.3; 2455 1.9; 2627 2.3; 2811 3.5; 3008 4.0; 3219 4.4; 3444 4.6; 3685 4.0; 3943 2.9; 4219 1.3; 4514 0.8; 4830 2.2; 5168 4.9; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.2; 9502 -2.8; 10167 -3.2; 10879 -1.5; 11640 -0.1; 12455 -0.2; 13327 -0.9; 14260 -1.4; 15258 -2.6; 16326 -4.0; 17469 -4.2; 18692 -2.1; 20000 0.0
+```
+
+### HeSuVi
+In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
+-6.5dB` and instead set Global volume in the UI for both channels to **-65**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Radius HP-TWF31 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
+these parameters. The first 5 filters can be used independently.
+
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 208 Hz   |  0.6  | -6.5 dB |
+| Peaking | 3181 Hz  |  2.45 | 4.5 dB  |
+| Peaking | 5913 Hz  |  3.33 | 6.5 dB  |
+| Peaking | 9917 Hz  |  5.18 | -3.8 dB |
+| Peaking | 16915 Hz |  1.94 | -4.7 dB |
+| Peaking | 78 Hz    |  2.99 | 0.7 dB  |
+| Peaking | 129 Hz   |  4.27 | -0.6 dB |
+| Peaking | 453 Hz   |  3.19 | -0.8 dB |
+| Peaking | 943 Hz   |  1.9  | 0.9 dB  |
+| Peaking | 4476 Hz  | 11.26 | -1.7 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Radius%20HP-TWF31/Radius%20HP-TWF31.png)

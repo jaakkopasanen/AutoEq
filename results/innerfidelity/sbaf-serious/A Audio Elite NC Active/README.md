@@ -23,13 +23,13 @@ these parameters. The first 5 filters can be used independently.
 |:--------|:---------|:-----|:--------|
 | Peaking | 60 Hz    | 0.14 | 6.3 dB  |
 | Peaking | 508 Hz   | 1.35 | 3.8 dB  |
-| Peaking | 2795 Hz  | 1.19 | 6.4 dB  |
+| Peaking | 2796 Hz  | 1.19 | 6.4 dB  |
 | Peaking | 5721 Hz  | 3.06 | 5.2 dB  |
 | Peaking | 24000 Hz | 2.36 | 4.3 dB  |
-| Peaking | 705 Hz   | 5.05 | 2.3 dB  |
-| Peaking | 1083 Hz  | 2.57 | -3.0 dB |
+| Peaking | 704 Hz   | 5.04 | 2.3 dB  |
+| Peaking | 1084 Hz  | 2.57 | -3.0 dB |
 | Peaking | 1902 Hz  | 3.95 | 1.9 dB  |
-| Peaking | 6558 Hz  | 6.89 | 2.1 dB  |
+| Peaking | 6559 Hz  | 6.88 | 2.1 dB  |
 | Peaking | 7823 Hz  | 2.24 | -1.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/A%20Audio%20Elite%20NC%20Active/A%20Audio%20Elite%20NC%20Active.png)
