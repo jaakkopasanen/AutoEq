@@ -32,4 +32,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 5160 Hz | 2.91 | 1.9 dB  |
 | Peaking | 5927 Hz | 3.35 | -1.2 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20w%20Filters%20snACXB168/MrSpeakers%20Aeon%20w%20Filters%20snACXB168.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20w%20Filters%20snACXB168s/MrSpeakers%20Aeon%20w%20Filters%20snACXB168s.png)
