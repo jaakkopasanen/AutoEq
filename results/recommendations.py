@@ -22,6 +22,8 @@ def get_urls(files):
     for path in files:
         rel_path = os.path.relpath(path, RESULTS_DIR)
         model = os.path.split(rel_path)[-1]
+        if model == 'README.md':
+            continue
         if re.search(' sample [a-zA-Z0-9]$', model) or re.search(' sn[a-zA-Z0-9]+$', model):
             # Skip measurements with sample or serial number, those have averaged results
             model = re.sub(' sample [a-zA-Z0-9]$', '', model)

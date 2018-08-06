@@ -702,7 +702,6 @@
 - [Read and Heath Acoustics MA-350](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Read%20and%20Heath%20Acoustics%20MA-350)
 - [Read Heath Acoustics MA750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Read%20Heath%20Acoustics%20MA750)
 - [Read Heath Audio MA600](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Read%20Heath%20Audio%20MA600)
-- [README.md](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/README.md)
 - [Reid and Heath Acoustics SA-850](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Reid%20and%20Heath%20Acoustics%20SA-850)
 - [RHA MA450i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20MA450i)
 - [RHA S500i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20S500i)
