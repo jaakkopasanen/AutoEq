@@ -1,4 +1,4 @@
-# MrSpeakers Aeon snACXB168
+# MrSpeakers Aeon Flow Closed snACXB168
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -3.9dB` and instead set Global volume in the UI for both channels to **-39**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon snACXB168 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon Flow Closed snACXB168 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually with
@@ -26,10 +26,10 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 2824 Hz  | 1.55 | 2.7 dB  |
 | Peaking | 5368 Hz  | 4.51 | 3.0 dB  |
 | Peaking | 8123 Hz  | 3.38 | -4.6 dB |
-| Peaking | 16 Hz    | 0.7  | 0.7 dB  |
-| Peaking | 68 Hz    | 3.03 | 1.4 dB  |
-| Peaking | 4276 Hz  | 8.5  | -2.5 dB |
-| Peaking | 4264 Hz  | 3.66 | 1.1 dB  |
-| Peaking | 10289 Hz | 8.34 | 0.9 dB  |
+| Peaking | 17 Hz    | 0.74 | 0.7 dB  |
+| Peaking | 67 Hz    | 3.06 | 1.3 dB  |
+| Peaking | 4334 Hz  | 8.5  | -2.5 dB |
+| Peaking | 4227 Hz  | 3.63 | 1.1 dB  |
+| Peaking | 10298 Hz | 8.34 | 0.9 dB  |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20snACXB168/MrSpeakers%20Aeon%20snACXB168.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20Flow%20Closed%20snACXB168/MrSpeakers%20Aeon%20Flow%20Closed%20snACXB168.png)

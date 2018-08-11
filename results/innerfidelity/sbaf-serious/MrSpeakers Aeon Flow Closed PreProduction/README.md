@@ -1,4 +1,4 @@
-# MrSpeakers AEON PreProduction
+# MrSpeakers Aeon Flow Closed PreProduction
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -13,7 +13,7 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 -4.7dB` and instead set Global volume in the UI for both channels to **-47**
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers AEON PreProduction ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon Flow Closed PreProduction ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually with
@@ -31,4 +31,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 859 Hz  | 2.16 | 1.3 dB  |
 | Peaking | 1028 Hz | 2.34 | -0.9 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20AEON%20PreProduction/MrSpeakers%20AEON%20PreProduction.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20Flow%20Closed%20PreProduction/MrSpeakers%20Aeon%20Flow%20Closed%20PreProduction.png)

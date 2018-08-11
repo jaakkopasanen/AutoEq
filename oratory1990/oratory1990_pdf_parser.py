@@ -134,7 +134,6 @@ def main():
 
     for file_path in glob(os.path.join(input_dir, '*.pdf')):
         print(file_path)
-        # try:
         name = os.path.split(file_path)[-1].replace('.pdf', '')
         output_file = os.path.join(image_dir, name + '.png')
         im = pdf_to_image(file_path, output_file)
@@ -144,9 +143,6 @@ def main():
         if not os.path.isdir(dir_path):
             os.makedirs(dir_path)
         fr.write_to_csv(os.path.join(output_dir, name, name + '.csv'))
-        # except Exception as err:
-        #     warnings.warn('Failed to transform PDF into PNG for "{}"'.format(file_path))
-        #     warnings.warn(str(err))
 
 
 if __name__ == '__main__':

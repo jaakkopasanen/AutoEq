@@ -1,6 +1,6 @@
-# Run 2018-08-06T18:26:15.892518
+# Run 2018-08-11T19:19:56.740162
 There results were obtained with parameters:
-* `--input_dir="innerfidelity\data\avg"`
+* `--input_dir="innerfidelity\data\rename"`
 * `--output_dir="results\innerfidelity\sbaf-serious"`
 * `--compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv"`
 * `--bass_boost=4.0`
