@@ -113,7 +113,7 @@ class ImageGraphParser:
         return fr
 
     @staticmethod
-    def _find_lines(im, orientation):
+    def find_lines(im, orientation):
         if orientation == 'vertical':
             ori1 = 0
             ori2 = 1
@@ -153,8 +153,8 @@ class ImageGraphParser:
         im = im.crop(box)
 
         # Find graph edges (thick lines)
-        v_lines = ImageGraphParser._find_lines(im, 'vertical')
-        h_lines = ImageGraphParser._find_lines(im, 'horizontal')
+        v_lines = ImageGraphParser.find_lines(im, 'vertical')
+        h_lines = ImageGraphParser.find_lines(im, 'horizontal')
 
         px_top = h_lines[0]
         px_bottom = h_lines[-1]
@@ -162,7 +162,7 @@ class ImageGraphParser:
         px_right = v_lines[-1]
         im = im.crop((px_left, px_top, px_right, px_bottom))
         # Crop right edge to 30kHz
-        lines = ImageGraphParser._find_lines(im, 'vertical')
+        lines = ImageGraphParser.find_lines(im, 'vertical')
         px_30khz = lines[-8]
         im = im.crop((0, 0, px_30khz, im.size[1]))
 
@@ -182,8 +182,8 @@ class ImageGraphParser:
         # Check crop
         _im = im.crop((20, 20, im.size[0] - 20, im.size[1] - 20))
         # im.show()
-        n_h = len(ImageGraphParser._find_lines(_im, 'horizontal'))
-        n_v = len(ImageGraphParser._find_lines(_im, 'vertical'))
+        n_h = len(ImageGraphParser.find_lines(_im, 'horizontal'))
+        n_v = len(ImageGraphParser.find_lines(_im, 'vertical'))
         if n_v != 28:
             print(n_v)
             raise ValueError('Innerfidelity image parsing for "{}" failed because X-axis is not correct!'.format(model))
