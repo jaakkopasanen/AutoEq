@@ -50,6 +50,7 @@ def main():
     urls.update(get_urls(glob(os.path.abspath(os.path.join('innerfidelity', 'sbaf-serious', '*')))))
     # Get links to oratory1990 results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('oratory1990', 'harman_over-ear_2018', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join('oratory1990', 'harman_in-ear_2017-1', '*')))))
     # Get links to custom results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('custom', '*')))))
 
