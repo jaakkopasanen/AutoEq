@@ -580,9 +580,8 @@ class FrequencyResponse:
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
         if write_parametric_eq and os.path.isfile(parametric_eq_path):
             preamp = np.min([0.0, float(-np.max(self.parametric_eq))])
-            # Subtract 0.5dB and round down with resolution of 0.5dB
-            # This is done to protect from affect of potential removed < 0.1dB filters in optimization
-            preamp = np.floor((preamp - 0.5) * 2) / 2
+            preamp = np.floor(preamp * 10) / 10 - 0.5
+            preamp -= 1.0  # Temporary fix to protect against potentially larger top gains in independent filter groups
 
             # Read Parametric eq
             with open(parametric_eq_path, 'r') as f:
