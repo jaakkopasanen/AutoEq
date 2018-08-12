@@ -25,20 +25,23 @@ ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
 DEFAULT_F_MAX = 20000
 DEFAULT_STEP = 1.01
+
 DEFAULT_MAX_GAIN = 6.0
 DEFAULT_TREBLE_F_LOWER = 6000.0
 DEFAULT_TREBLE_F_UPPER = 8000.0
 DEFAULT_TREBLE_MAX_GAIN = 0.0
 DEFAULT_TREBLE_GAIN_K = 1.0
-DEFAULT_BASS_BOOST = 0.0
 DEFAULT_SMOOTHING_WINDOW_SIZE = 1 / 7
 DEFAULT_SMOOTHING_ITERATIONS = 10
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 5
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 DEFAULT_TILT = 0.0
 
-BASS_BOOST_F_LOWER = 60
-BASS_BOOST_F_UPPER = 200
+DEFAULT_OE_BASS_BOOST_F_LOWER = 35
+DEFAULT_OE_BASS_BOOST_F_UPPER = 280
+DEFAULT_IE_BASS_BOOST_F_LOWER = 25
+DEFAULT_IE_BASS_BOOST_F_UPPER = 350
+
 GRAPHIC_EQ_STEP = 1.07
 
 
@@ -698,7 +701,11 @@ class FrequencyResponse:
         n_oct = np.log2(self.frequency / c)
         return n_oct * tilt
 
-    def _target(self, bass_boost=DEFAULT_BASS_BOOST, tilt=DEFAULT_TILT):
+    def _target(self,
+                bass_boost=None,
+                bass_boost_f_lower=None,
+                bass_boost_f_upper=None,
+                tilt=None):
         """Creates target curve with bass boost as described by harman target response.
 
         Args:
@@ -707,16 +714,27 @@ class FrequencyResponse:
         Returns:
             Target for equalization
         """
-        bass_boost = self._sigmoid(
-            f_lower=BASS_BOOST_F_LOWER,
-            f_upper=BASS_BOOST_F_UPPER,
-            a_normal=bass_boost,
-            a_treble=0.0
-        )
-        tilt = self._tilt(tilt=tilt)
+        if bass_boost is not None:
+            bass_boost = self._sigmoid(
+                f_lower=bass_boost_f_lower,
+                f_upper=bass_boost_f_upper,
+                a_normal=bass_boost,
+                a_treble=0.0
+            )
+        else:
+            bass_boost = np.zeros(len(self.frequency))
+        if tilt is not None:
+            tilt = self._tilt(tilt=tilt)
+        else:
+            tilt = np.zeros(len(self.frequency))
         return bass_boost + tilt
 
-    def compensate(self, compensation, bass_boost=DEFAULT_BASS_BOOST, tilt=DEFAULT_TILT):
+    def compensate(self,
+                   compensation,
+                   bass_boost=None,
+                   bass_boost_f_lower=None,
+                   bass_boost_f_upper=None,
+                   tilt=None):
         """Calibrates raw frequency response data with compensation array. Doesn't change raw data."""
         # Copy and center compensation data
         compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
@@ -728,7 +746,12 @@ class FrequencyResponse:
         compensation.raw = compensation.smoothed
         compensation.smoothed = np.array([])
         # Set target
-        self.target = compensation.raw + self._target(bass_boost=bass_boost, tilt=tilt)
+        self.target = compensation.raw + self._target(
+            bass_boost=bass_boost,
+            bass_boost_f_lower=bass_boost_f_lower,
+            bass_boost_f_upper=bass_boost_f_upper,
+            tilt=tilt
+        )
         # Set error
         self.error = self.raw - self.target
         # Smoothed error and equalization results are affected by compensation, reset them
@@ -1038,31 +1061,43 @@ class FrequencyResponse:
                                 help='Path to results directory. Will keep the same relative paths for files found'
                                      'in input_dir.')
         arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
-                                help='File path to CSV containing calibration data. See `calibration` directory.')
+                                help='File path to CSV containing calibration data. Needed when using target responses'
+                                     'not developed for the source measurement system. See `calibration` directory.')
         arg_parser.add_argument('--compensation', type=str,
-                                help='File path to CSV containing compensation curve. Compensation is necessary when '
-                                     'equalizing because all input data is raw microphone data. See '
-                                     'innerfidelity/resources and headphonecom/resources.')
+                                help='File path to CSV containing compensation (target) curve. Compensation is '
+                                     'necessary when equalizing because all input data is raw microphone data. See '
+                                     '"compensation", "innerfidelity/resources" and "headphonecom/resources".')
         arg_parser.add_argument('--equalize', action='store_true',
                                 help='Will run equalization if this parameter exists, no value needed.')
         arg_parser.add_argument('--parametric_eq', action='store_true',
                                 help='Will produce parametric eq settings if this parameter exists, no value needed.')
-        arg_parser.add_argument('--max_filters', type=str, default='5+5',
+        arg_parser.add_argument('--max_filters', type=str, default=argparse.SUPPRESS,
                                 help='Maximum number of filters for parametric EQ. Multiple cumulative optimization runs'
                                      'can be done by giving multiple filter counts separated by "+". "5+5" would create'
                                      '10 filters where the first 5 are usable independently from the rest 5 and the last'
                                      '5 can only be used with the first 5. This allows to have muliple configurations'
                                      'for equalizers with different number of bands available. '
                                      'Not limited by default.')
-        arg_parser.add_argument('--bass_boost', type=float, default=DEFAULT_BASS_BOOST,
-                                help='Target gain for sub-bass in dB. Has flat response from 20 Hz to 60 Hz and a '
-                                     'sigmoid slope down to 200 Hz. Defaults to {}.'.format(DEFAULT_BASS_BOOST))
-        arg_parser.add_argument('--tilt', type=float, default=DEFAULT_TILT,
+        arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
+                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
+                                     ' Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
+                                        f_min=DEFAULT_OE_BASS_BOOST_F_LOWER,
+                                        f_max=DEFAULT_OE_BASS_BOOST_F_UPPER
+                                     )
+                                )
+        arg_parser.add_argument('--iem_bass_boost', type=float, default=argparse.SUPPRESS,
+                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
+                                     ' Hz. "--iem_bass_boost" is mutually exclusive with "--bass_boost".'.format(
+                                        f_min=DEFAULT_IE_BASS_BOOST_F_LOWER,
+                                        f_max=DEFAULT_IE_BASS_BOOST_F_UPPER
+                                     )
+                                )
+        arg_parser.add_argument('--tilt', type=float, default=argparse.SUPPRESS,
                                 help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
                                      'frequency response and negative value (downwards slope) will result in darker '
                                      'frequency response. 1 dB/octave will produce nearly 10 dB difference in '
                                      'desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both '
-                                     'will affect the bass gain. Defaults to {}.'.format(DEFAULT_TILT))
+                                     'will affect the bass gain.')
         arg_parser.add_argument('--max_gain', type=float, default=DEFAULT_MAX_GAIN,
                                 help='Maximum positive gain in equalization. Higher max gain allows to equalize deeper '
                                      'dips in  frequency response but will limit output volume if no analog gain is '
@@ -1086,6 +1121,8 @@ class FrequencyResponse:
         arg_parser.add_argument('--show_plot', action='store_true',
                                 help='Plot will be shown if this parameter exists, no value needed.')
         args = vars(arg_parser.parse_args())
+        if 'bass_boost' in args and 'iem_bass_boost' in args:
+            raise TypeError('"--bass_boost" or "--iem_bass_boost" can be given but not both')
         args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
         return args
 
@@ -1097,8 +1134,9 @@ class FrequencyResponse:
              equalize=False,
              parametric_eq=False,
              max_filters=None,
-             bass_boost=DEFAULT_BASS_BOOST,
-             tilt=DEFAULT_TILT,
+             bass_boost=None,
+             iem_bass_boost=None,
+             tilt=None,
              max_gain=DEFAULT_MAX_GAIN,
              treble_f_lower=DEFAULT_TREBLE_F_LOWER,
              treble_f_upper=DEFAULT_TREBLE_F_UPPER,
@@ -1109,12 +1147,26 @@ class FrequencyResponse:
         if parametric_eq and not equalize:
             raise ValueError('equalize must be True when parametric_eq is True.')
 
+        # Use either normal bass boost (for on-ears) or iem bass boost
+        if bass_boost is not None and iem_bass_boost is not None:
+            raise TypeError('"bass_boost" or "iem_bass_boost" can be given but not both')
+        elif bass_boost is not None and iem_bass_boost is None:
+            bass_boost_f_lower = DEFAULT_OE_BASS_BOOST_F_LOWER
+            bass_boost_f_upper = DEFAULT_OE_BASS_BOOST_F_UPPER
+        elif iem_bass_boost is not None and bass_boost is None:
+            bass_boost = iem_bass_boost
+            bass_boost_f_lower = DEFAULT_IE_BASS_BOOST_F_LOWER
+            bass_boost_f_upper = DEFAULT_IE_BASS_BOOST_F_UPPER
+        else:
+            bass_boost = None
+            bass_boost_f_lower = None
+            bass_boost_f_upper = None
+
         # Dir paths to absolute
         input_dir = os.path.abspath(input_dir)
         glob_files = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)
         if len(glob_files) == 0:
-            warn('No CSV files found in "{}"'.format(input_dir))
-            return
+            raise FileNotFoundError('No CSV files found in "{}"'.format(input_dir))
 
         if calibration:
             # Creates FrequencyResponse for compensation data
@@ -1156,7 +1208,13 @@ class FrequencyResponse:
 
             if compensation is not None:
                 # Compensate
-                fr.compensate(compensation, bass_boost=bass_boost, tilt=tilt)
+                fr.compensate(
+                    compensation,
+                    bass_boost=bass_boost,
+                    bass_boost_f_lower=bass_boost_f_lower,
+                    bass_boost_f_upper=bass_boost_f_upper,
+                    tilt=tilt
+                )
 
             # Smooth data
             fr.smoothen(
