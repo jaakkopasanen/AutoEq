@@ -46,10 +46,13 @@ def main():
     urls = dict()
     # Get links to Headphone.com results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('headphonecom', 'sbaf-serious', '*')))))
-    # Get links to Innerfidelity results and override Headphone.com results with the same name
+    # Get links to Innerfidelity results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('innerfidelity', 'sbaf-serious', '*')))))
+    # Get links to oratory1990 results
+    urls.update(get_urls(glob(os.path.abspath(os.path.join('oratory1990', 'harman_over-ear_2018', '*')))))
     # Get links to custom results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('custom', '*')))))
+
     with open('README.md', 'w') as f:
         keys = sorted(urls.keys())
         s = '# Recommended Results\n'
