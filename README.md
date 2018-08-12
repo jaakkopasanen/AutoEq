@@ -95,7 +95,8 @@ not sufficient since measurements and equalization have several problems that ne
 [Technical Challenges](https://github.com/jaakkopasanen/AutoEq#technical-challenges) for more details.
 
 Results provided in this project currently have all the headphone measurements from
-[Innerfidelity](https://www.innerfidelity.com/headphone-measurements) and [Headphone.com](http://graphs.headphone.com/).
+[Innerfidelity](https://www.innerfidelity.com/headphone-measurements), [Headphone.com](http://graphs.headphone.com/) and
+[oratory1990](https://www.reddit.com/user/oratory1990).
 Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
 [target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 would be found in
@@ -103,6 +104,10 @@ would be found in
 Multiple measurements of a same heaphone by a same measurement entity are averaged. All different measurements for
 averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
 averaged data which has no suffixes in the name.
+
+oratory1990 measurements have been done on Gras 43AG and 43AC couples, the same which were used to develop Harman target
+responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results are
+recommended over all other measurements because of this reason.
 
 Innerfidelity and Headphone.com measured headphones have
 [SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
@@ -128,7 +133,7 @@ underestimate treble even more than the 2017 Innerfidelity curve leading to even
 
 None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
 on-ear headphones, +6dB for in-ear headphones and no boost for earbuds. Harman targets actually ask for about +6dB for
-on-ears and +11dB for in-ears but since most headphones cannot achieve this with positive gain limited to +6dB a smaller
+on-ears and +10dB for in-ears but since most headphones cannot achieve this with positive gain limited to +6dB a smaller
 boost was selected. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain
 (boost) is applied. In the upper treble measurements are less reliable and boosting them too much will cause serious
 problem while having some narrow dips is not a problem at all.
@@ -409,9 +414,6 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- oratory1990 measurements'
-    - Update results section
-    - Update recommendations
 - Preamp for first 5 filters
 - First N filters can be used independently: N must be the actual number instead of original target.
 - Rtings measurements
