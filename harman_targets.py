@@ -27,7 +27,7 @@ def main():
     save(df, 'In-Ear (2016)', 'Harman In-Ear 2016')
     save(df, 'In-Ear_2 (2017)', 'Harman In-Ear 2017-2')
     save(df, 'In-Ear_1 (2017)', 'Harman In-Ear 2017-1')
-    save(df, 'Loudspeaker equalized to flat in-room response (2013)', 'Loudspeaker in-room 2013')
+    save(df, 'Loudspeaker equalized to flat in-room response (2013)', 'Loudspeaker In-Room Flat 2013')
 
 
 if __name__ == '__main__':
