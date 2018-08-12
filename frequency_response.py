@@ -453,15 +453,26 @@ class FrequencyResponse:
 
         # Filter selection slice
         sl = np.logical_and(
-            np.abs(_gain) < 0.1,  # Filters with more than 0.1 dB of gain
+            np.abs(_gain) > 0.1,  # Filters with more than 0.1 dB of gain
             np.logical_and(
                 _fc > 10,  # Filters centered above 10 Hz
                 _fc < 22000  # Filters centered below 22 kHZ
             )
         )
-        _fc = np.expand_dims(_fc[sl], axis=1)
-        _Q = np.expand_dims(np.abs(_Q[sl]), axis=1)
-        _gain = np.expand_dims(_gain[sl], axis=1)
+        _fc = _fc[sl]
+        _Q = np.abs(_Q[sl])
+        _gain = _gain[sl]
+
+        # Sort filters by center frequency
+        sorted_inds = np.argsort(_fc)
+        _fc = _fc[sorted_inds]
+        _Q = _Q[sorted_inds]
+        _gain = _gain[sorted_inds]
+
+        # Expand dimensionality for biquad
+        _fc = np.expand_dims(_fc, axis=1)
+        _Q = np.expand_dims(np.abs(_Q), axis=1)
+        _gain = np.expand_dims(_gain, axis=1)
 
         # Re-compute eq
         a0, a1, a2, b0, b1, b2 = biquad.peaking(_fc, _Q, _gain, fs=48000)
