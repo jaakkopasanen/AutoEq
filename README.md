@@ -415,7 +415,9 @@ Contributions are more than welcome.
 - Preamp for first 5 filters
 - First N filters can be used independently: N must be the actual number instead of original target.
 - Rtings measurements
-    - Calibrate to Innerfidelity
+    - Use native compensation
+    - Calibrate to Innerfidelity to use SBAF-Serious
+    - Create compensation by averaging headphones
     - Full pipeline
     - Update results section
     - Update recommendations
