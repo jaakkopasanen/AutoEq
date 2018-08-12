@@ -1,9 +1,9 @@
-# Run 2018-08-12T15:16:48.969469
+# Run 2018-08-12T15:55:25.307450
 There results were obtained with parameters:
 * `--input_dir="innerfidelity\data\adhoc"`
 * `--output_dir="results\innerfidelity\sbaf-serious"`
 * `--compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv"`
-* `--bass_boost=4.0`
+* `--bass_boost=6.0`
 * `--tilt=None`
 * `--max_gain=6.0`
 * `--treble_f_lower=6000.0`

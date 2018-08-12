@@ -1,7 +1,7 @@
 # Recommended Results
 - [1MORE Crystal Piston](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Crystal%20Piston)
 - [1MORE MK801](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20MK801)
-- [1More Multi Unit Earphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1More%20Multi%20Unit%20Earphones)
+- [1MORE Multi Unit Earphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Multi%20Unit%20Earphones)
 - [1MORE Triple Driver](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Triple%20Driver)
 - [1MORE Triple Driver Over Ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Triple%20Driver%20Over%20Ear)
 - [1MORE Voice of China](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Voice%20of%20China)
