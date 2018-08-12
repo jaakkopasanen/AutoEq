@@ -410,10 +410,10 @@ obtain the raw data.
 Contributions are more than welcome.
 
 - oratory1990 measurements'
-    - Vectorize Harman targets
-    - Full pipeline
     - Update results section
     - Update recommendations
+- Preamp for first 5 filters
+- First N filters can be used independently: N must be the actual number instead of original target.
 - Rtings measurements
     - Calibrate to Innerfidelity
     - Full pipeline
