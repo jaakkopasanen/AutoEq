@@ -26,9 +26,9 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 323 Hz  | 2    | 3.8 dB  |
 | Peaking | 2667 Hz | 2.36 | 3.5 dB  |
 | Peaking | 420 Hz  | 6.01 | 1.2 dB  |
-| Peaking | 705 Hz  | 1.66 | -1.1 dB |
-| Peaking | 3457 Hz | 5.45 | 2.2 dB  |
-| Peaking | 4178 Hz | 2.88 | -3.9 dB |
-| Peaking | 5265 Hz | 2.01 | 2.4 dB  |
+| Peaking | 704 Hz  | 1.66 | -1.1 dB |
+| Peaking | 3443 Hz | 5.42 | 2.2 dB  |
+| Peaking | 4163 Hz | 2.87 | -3.8 dB |
+| Peaking | 5293 Hz | 2.03 | 2.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1MORE%20Triple%20Driver%20Over%20Ear/1MORE%20Triple%20Driver%20Over%20Ear.png)

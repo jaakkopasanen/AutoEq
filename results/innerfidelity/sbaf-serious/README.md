@@ -1,6 +1,6 @@
-# Run 2018-08-11T19:19:56.740162
+# Run 2018-08-12T09:59:53.288807
 There results were obtained with parameters:
-* `--input_dir="innerfidelity\data\rename"`
+* `--input_dir="innerfidelity\data\adhoc"`
 * `--output_dir="results\innerfidelity\sbaf-serious"`
 * `--compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv"`
 * `--bass_boost=4.0`
