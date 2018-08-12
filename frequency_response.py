@@ -451,8 +451,14 @@ class FrequencyResponse:
 
         rmse = np.sqrt(min_loss)  # RMSE
 
-        # Remove filters with less than 0.1dB gain. Optimizer might produce these sometimes.
-        sl = (np.abs(_gain) > 0.1)
+        # Filter selection slice
+        sl = np.logical_and(
+            np.abs(_gain) < 0.1,  # Filters with more than 0.1 dB of gain
+            np.logical_and(
+                _fc > 10,  # Filters centered above 10 Hz
+                _fc < 22000  # Filters centered below 22 kHZ
+            )
+        )
         _fc = np.expand_dims(_fc[sl], axis=1)
         _Q = np.expand_dims(np.abs(_Q[sl]), axis=1)
         _gain = np.expand_dims(_gain[sl], axis=1)
@@ -574,6 +580,8 @@ class FrequencyResponse:
             # Filters as Markdown table
             filters = []
             for line in parametric_eq_str.split('\n'):
+                if line == '':
+                    continue
                 filter_type = line[line.index('ON')+3:line.index('Fc')-1]
                 if filter_type == 'PK':
                     filter_type = 'Peaking'

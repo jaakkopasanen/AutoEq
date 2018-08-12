@@ -333,7 +333,7 @@ bass is taken as is in AutoEQ and equalized as if there was nothing wrong with i
 has smaller impact on music and having too much bass (especially sub-bass) doesn't create problems of the same magnitude
 as having too much treble.
 
-Moving resonances around 8 to 9kHZ may cause big problems if not taken into account. Spikes and dips in this range are
+Moving resonances around 8 to 9kHz may cause big problems if not taken into account. Spikes and dips in this range are
 of great amplitude and very narrow. If one equalizes these spikes and dips according to frequency response measurement
 in worst case scenario a spike will move in a place of dip when headphone is moved and therefore the spike is amplified
 significantly leading to very sharp and piercing sound signature. To counter these problems by default AutoEQ uses heavy
