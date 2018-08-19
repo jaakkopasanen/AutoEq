@@ -1,4 +1,4 @@
-# Run 2018-08-12T15:46:56.128240
+# Run 2018-08-19T18:17:15.138655
 There results were obtained with parameters:
 * `--input_dir="oratory1990\data\earbud"`
 * `--output_dir="results\oratory1990\harman_in-ear_2017-1"`

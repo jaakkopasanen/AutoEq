@@ -1,4 +1,4 @@
-# Run 2018-08-12T15:25:44.787958
+# Run 2018-08-19T18:14:57.316664
 There results were obtained with parameters:
 * `--input_dir="oratory1990\data\onear"`
 * `--output_dir="results\oratory1990\harman_over-ear_2018"`

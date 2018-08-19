@@ -648,7 +648,6 @@ class FrequencyResponse:
             preamp_str = ''
             if type(max_gains) == list and len(max_gains) > 1:
                 max_gains = [x + 0.1 for x in max_gains]
-                print(max_gains)
                 if len(max_gains) > 3:
                     _s = 'When using independent subset of filters, apply preamp of {}, respectively.'
                     preamp_str = ', '.join(['-{:.1f}dB'.format(x) for x in max_gains[:-2]])
@@ -1316,7 +1315,6 @@ class FrequencyResponse:
                     if parametric_eq:
                         # Write ParametricEq settings to file
                         fr.write_eqapo_parametric_eq(file_path.replace('.csv', ' ParametricEQ.txt'), filters)
-                    print('Equalized "{}"'.format(fr.name))
 
                 # Write results to CSV file
                 fr.write_to_csv(file_path)
@@ -1342,6 +1340,8 @@ class FrequencyResponse:
             elif show_plot:
                 fig, ax = fr.plot_graph(show=show_plot)
                 plt.close(fig)
+
+            print(fr.name)
 
         if output_dir:
             # Write parameters to run README.md
