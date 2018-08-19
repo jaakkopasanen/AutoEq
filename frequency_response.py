@@ -792,7 +792,7 @@ class FrequencyResponse:
                    bass_boost_f_lower=None,
                    bass_boost_f_upper=None,
                    tilt=None):
-        """Calibrates raw frequency response data with compensation array. Doesn't change raw data."""
+        """Sets target and error curves."""
         # Copy and center compensation data
         compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
         compensation.smoothen(

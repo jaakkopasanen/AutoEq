@@ -20,10 +20,10 @@ curves, apply tilt for making the headphones brighter/darker and adding a bass b
 headphone sound (roughly) like another headphone. For more info about equalizing see
 [Equalizing](https://github.com/jaakkopasanen/AutoEq#equalizing)
 
-Third major contribution of this project is the measurement data, compensation curves and calibration curves all in a
+Third major contribution of this project is the measurement data and compensation curves all in a
 numerical format. Everything is stored as CSV files so they are easy to process with any programming language or even
-Microsoft Excel. See [Calibration](https://github.com/jaakkopasanen/AutoEq#calibration) and [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing) for more technical description about how
-things were obtained and processed.
+Microsoft Excel. See [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing) for more technical
+description about how things were obtained and processed.
 
 ![sennheiser-hd650](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
 
@@ -107,16 +107,18 @@ averaged data which has no suffixes in the name.
 
 oratory1990 measurements have been done on Gras 43AG and 43AC couples, the same which were used to develop Harman target
 responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results are
-recommended over all other measurements because of this reason.
+recommended over all other measurements because of this reason. Harman target datas are in the `compensation` folder.
 
 Innerfidelity and Headphone.com measured headphones have
 [SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 only. This is a modified version of Innerfidelity target curve produced by Serious user on Super Best Audio Friends
 forum. This curve doesn't have the glaring problems but is quite well balanced overall. Curve was turned into a
-compensation for raw microphone data and tilted 0.2 dB / octave brighter. Headphone.com measurements were calibrated to
-Innerfidelity measurements before applying the SBAF-Serious target curve because that was developed for Innerfidelity
-measurements. Innerfidelity measurements are recommended over Headphone.com measurements because SBAF-Serious target
-was developed for Innerfidelity.
+compensation for raw microphone data and tilted 0.2 dB / octave brighter. Innerfidelity measurements are recommended
+over Headphone.com measurements because SBAF-Serious target was developed for Innerfidelity. SBAF-Serious curve was
+modified to be suitable for Headphone.com measurements by
+[calibrating](https://github.com/jaakkopasanen/AutoEq#calibration) it. CSV data files for Innerfidelity and
+Headphone.com are at `innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv` and
+`headphonecom/resources/headphonecom_compensation_sbaf-serious.csv`, respectively.
 
 This project also has other compensation curves which have not been used for pre-processed results for simplicity.
 
@@ -264,23 +266,22 @@ Equalizing Beyerdynamic DT990 without saving results
 python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="headphonecom\resources\headphonecom_compensation.csv" --equalize --bass_boost=4 --show_plot
 ````
 
-Equalizing Beyerdynamic DT990 to SBAF-Serious target. This target is made for Innerfidelity measurements so
-we need to calibrate Headphone.com measurement.
+Equalizing Beyerdynamic DT990 to SBAF-Serious target
 ````commandline
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious-brighter.csv" --calibration="calibration\headphonecom_to_innerfidelity.csv" --equalize --bass_boost=4 --show_plot
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="headphonecom\resources\headphonecom_compensation_sbaf-serious-brighter.csv" --equalize --bass_boost=4 --show_plot
 ````
 
 Equalizing all Headphone.com on-ear headphones and saving results to `results\onear\sbaf-serious\headphonecom`.
 There is a lot of headphones and we don't want to inspect all visually so we'll omit `--show_plot`
 ````commandline
-python frequency_response.py --input_dir="headphonecom\data\onear" --output_dir="results\headphonecom\sbaf-serious" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=4
+python frequency_response.py --input_dir="headphonecom\data\onear" --output_dir="results\headphonecom\sbaf-serious" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4
 ````
 
 Equalizing Beyerdynamic DT 770 to sound like HiFiMAN HE400S. 80ohm version of DT 770 is only available in Headphone.com
-measurements and HE400S only in Innerfidelity measurements so we'll use calibration once again. To make the bass sound
-the same we'll set bass boost to zero.
+measurements and HE400S only in Innerfidelity measurements so we'll use calibration. To make the bass sound
+the same we'll omit bass boost.
 ````commandline
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT770" --output_dir="myresults\Beyerdynamic DT770" --compensation="innerfidelity\data\onear\HiFiMAN HE400S\HiFiMAN HE400S.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --bass_boost=0 --show_plot
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT770" --output_dir="myresults\Beyerdynamic DT770" --compensation="innerfidelity\data\onear\HiFiMAN HE400S\HiFiMAN HE400S.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --show_plot
 ````
 
 Viewing HiFiMAN HE400S raw microphone data
@@ -314,11 +315,12 @@ is quite high about 5dB at 20Hz but still it's probably closer to truth than not
 ![calibration](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/calibration/headphonecom_to_innerfidelity.png)
 
 Pictured data is for calibrating Headphone.com measurement to Innerfidelity measurement or in other words estimating how
-an individual headphone measured by Headphone.com would look like if it was measured by Innerfidelity. When using
-calibration data in `frequency_response.py` the curve is subtracted for raw data.
+an individual headphone measured by Headphone.com would look like if it was measured by Innerfidelity.
 
-**Warning** Using calibration will change the saved raw data and therefore when loading the result a new calibration
-must not be applied!
+Calibration data is not used as is in the results but instead Innerfidelity SBAF-Serious compensation curve
+was calibrated to be suitable for Headphone.com measurements. Calibration can be used between Innerfidelity and
+Headphone.com mainly to make headphones sound like other headphones when both models are from different sources.
+
 
 ## Technical Challenges
 Simply inverting headphone frequency response deviation from target response does not usually produce sufficient
@@ -414,9 +416,6 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- Remove calibration add calibrated sbaf-serious compensation curve
-  - Update calibration section
-  - Update usage examples
 - Rtings measurements
     - Use native compensation
     - Calibrate to Innerfidelity to use SBAF-Serious
@@ -432,3 +431,4 @@ Contributions are more than welcome.
 - Crinacle measurements for IEMs
     - Target response
 - Impulse responses
+- All parameters in run readme
