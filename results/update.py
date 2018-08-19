@@ -8,39 +8,40 @@ ROOT_DIR = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 
 def main():
     if_compensation = os.path.join(ROOT_DIR, 'innerfidelity', 'resources', 'innerfidelity_compensation_sbaf-serious.csv')
-    # Innerfidelity on-ear SBAF-Serious
-    FrequencyResponse.main(
-        input_dir=os.path.join(ROOT_DIR, 'innerfidelity', 'data', 'onear'),
-        output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
-        compensation=if_compensation,
-        equalize=True,
-        parametric_eq=True,
-        max_filters=[5, 5],
-        bass_boost=4.0
-    )
-
-    # Innerfidelity in-ear SBAF-Serious
-    FrequencyResponse.main(
-        input_dir=os.path.join(ROOT_DIR, 'innerfidelity', 'data', 'inear'),
-        output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
-        compensation=if_compensation,
-        equalize=True,
-        parametric_eq=True,
-        max_filters=[5, 5],
-        iem_bass_boost=6.0
-    )
-
-    # Innerfidelity earbud SBAF-Serious
-    FrequencyResponse.main(
-        input_dir=os.path.join(ROOT_DIR, 'innerfidelity', 'data', 'earbud'),
-        output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
-        compensation=if_compensation,
-        equalize=True,
-        parametric_eq=True,
-        max_filters=[5, 5],
-    )
-
     hp_compensation = os.path.join(ROOT_DIR, 'headphonecom', 'resources', 'headphonecom_compensation_sbaf-serious.csv')
+
+    # # Innerfidelity on-ear SBAF-Serious
+    # FrequencyResponse.main(
+    #     input_dir=os.path.join(ROOT_DIR, 'innerfidelity', 'data', 'onear'),
+    #     output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
+    #     compensation=if_compensation,
+    #     equalize=True,
+    #     parametric_eq=True,
+    #     max_filters=[5, 5],
+    #     bass_boost=4.0
+    # )
+    #
+    # # Innerfidelity in-ear SBAF-Serious
+    # FrequencyResponse.main(
+    #     input_dir=os.path.join(ROOT_DIR, 'innerfidelity', 'data', 'inear'),
+    #     output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
+    #     compensation=if_compensation,
+    #     equalize=True,
+    #     parametric_eq=True,
+    #     max_filters=[5, 5],
+    #     iem_bass_boost=6.0
+    # )
+    #
+    # # Innerfidelity earbud SBAF-Serious
+    # FrequencyResponse.main(
+    #     input_dir=os.path.join(ROOT_DIR, 'innerfidelity', 'data', 'earbud'),
+    #     output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
+    #     compensation=if_compensation,
+    #     equalize=True,
+    #     parametric_eq=True,
+    #     max_filters=[5, 5],
+    # )
+    #
     # Headphone.com on-ear SBAF-Serious
     FrequencyResponse.main(
         input_dir=os.path.join(ROOT_DIR, 'headphonecom', 'data', 'onear'),

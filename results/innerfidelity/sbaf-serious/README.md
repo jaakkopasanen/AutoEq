@@ -1,4 +1,4 @@
-# Run 2018-08-12T15:55:25.307450
+# Run 2018-08-19T20:34:45.320326
 There results were obtained with parameters:
 * `--input_dir="innerfidelity\data\adhoc"`
 * `--output_dir="results\innerfidelity\sbaf-serious"`

@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.3dB
-GraphicEQ: 10 -84; 20 1.2; 22 0.9; 23 0.8; 25 0.6; 26 0.5; 28 0.4; 30 0.3; 32 0.1; 35 -0.0; 37 -0.1; 40 -0.1; 42 -0.1; 45 0.0; 49 0.0; 52 0.1; 56 0.6; 59 1.1; 64 0.4; 68 -0.6; 73 -1.1; 78 -1.4; 83 -1.6; 89 -1.9; 95 -2.2; 102 -2.6; 109 -3.0; 117 -3.5; 125 -4.0; 134 -4.5; 143 -4.7; 153 -4.9; 164 -4.8; 175 -4.9; 188 -5.1; 201 -5.1; 215 -5.0; 230 -4.9; 246 -4.9; 263 -4.9; 282 -4.6; 301 -4.5; 323 -4.3; 345 -4.0; 369 -3.7; 395 -3.3; 423 -3.0; 452 -2.9; 484 -2.6; 518 -2.3; 554 -1.6; 593 -0.9; 635 -0.7; 679 -0.8; 726 -0.1; 777 0.2; 832 0.5; 890 0.5; 952 0.3; 1019 0.0; 1090 0.1; 1167 -0.3; 1248 -0.4; 1336 -1.1; 1429 -1.8; 1529 -2.2; 1636 -2.6; 1751 -3.1; 1873 -3.5; 2004 -3.7; 2145 -3.5; 2295 -3.4; 2455 -3.3; 2627 -3.7; 2811 -4.3; 3008 -4.7; 3219 -5.2; 3444 -4.9; 3685 -4.4; 3943 -4.1; 4219 -4.6; 4514 -2.2; 4830 3.5; 5168 2.2; 5530 0.6; 5917 -2.4; 6331 -7.6; 6775 -9.0; 7249 -9.1; 7756 -10.3; 8299 -11.3; 8880 -11.7; 9502 -10.7; 10167 -9.3; 10879 -8.5; 11640 -8.4; 12455 -7.7; 13327 -5.7; 14260 -3.5; 15258 -3.4; 16326 -6.1; 17469 -9.1; 18692 -8.2; 20000 -0.8
+Preamp: -3.9dB
+GraphicEQ: 10 -84; 20 1.2; 22 0.9; 23 0.8; 25 0.6; 26 0.5; 28 0.4; 30 0.2; 32 0.1; 35 -0.1; 37 -0.2; 40 -0.2; 42 -0.2; 45 -0.2; 49 -0.2; 52 -0.2; 56 0.2; 59 0.7; 64 -0.1; 68 -1.2; 73 -1.8; 78 -2.2; 83 -2.4; 89 -2.7; 95 -2.9; 102 -3.2; 109 -3.4; 117 -3.7; 125 -4.0; 134 -4.4; 143 -4.5; 153 -4.6; 164 -4.6; 175 -4.7; 188 -4.9; 201 -4.9; 215 -4.9; 230 -4.9; 246 -4.8; 263 -4.8; 282 -4.6; 301 -4.4; 323 -4.2; 345 -3.9; 369 -3.7; 395 -3.3; 423 -3.0; 452 -2.9; 484 -2.6; 518 -2.2; 554 -1.6; 593 -1.0; 635 -0.8; 679 -0.7; 726 0.0; 777 0.1; 832 0.5; 890 0.6; 952 0.3; 1019 0.0; 1090 0.1; 1167 -0.3; 1248 -0.5; 1336 -1.1; 1429 -1.8; 1529 -2.2; 1636 -2.6; 1751 -3.0; 1873 -3.6; 2004 -3.7; 2145 -3.5; 2295 -3.4; 2455 -3.4; 2627 -3.6; 2811 -4.2; 3008 -4.8; 3219 -5.2; 3444 -4.8; 3685 -4.3; 3943 -4.3; 4219 -4.5; 4514 -2.1; 4830 3.6; 5168 2.1; 5530 0.5; 5917 -2.3; 6331 -7.6; 6775 -9.1; 7249 -9.2; 7756 -10.3; 8299 -11.1; 8880 -11.6; 9502 -10.9; 10167 -9.4; 10879 -8.4; 11640 -8.2; 12455 -7.8; 13327 -6.0; 14260 -3.5; 15258 -3.2; 16326 -6.0; 17469 -9.2; 18692 -8.3; 20000 -0.7
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.3dB` and instead set Global volume in the UI for both channels to **-43**
+-3.8831779582340316dB` and instead set Global volume in the UI for both channels to **-38**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T90 250 Ohm ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of --0.0dB.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 208 Hz   | 0.73 | -5.5 dB  |
-| Peaking | 1980 Hz  | 2.59 | -3.2 dB  |
-| Peaking | 3195 Hz  | 3.47 | -4.3 dB  |
-| Peaking | 9032 Hz  | 1.47 | -11.9 dB |
-| Peaking | 30012 Hz | 1.64 | -9.1 dB  |
-| Peaking | 880 Hz   | 1.79 | 2.0 dB   |
-| Peaking | 2528 Hz  | 0.14 | -0.7 dB  |
-| Peaking | 4913 Hz  | 2.63 | 10.8 dB  |
-| Peaking | 6598 Hz  | 5.5  | -5.4 dB  |
-| Peaking | 4299 Hz  | 4.06 | -7.9 dB  |
+| Peaking | 201 Hz   | 0.65 | -5.3 dB  |
+| Peaking | 1978 Hz  | 2.64 | -3.2 dB  |
+| Peaking | 3186 Hz  | 3.44 | -4.3 dB  |
+| Peaking | 9061 Hz  | 1.44 | -11.9 dB |
+| Peaking | 18002 Hz | 1.73 | -9.3 dB  |
+| Peaking | 878 Hz   | 1.77 | 2.0 dB   |
+| Peaking | 2447 Hz  | 0.13 | -0.7 dB  |
+| Peaking | 4312 Hz  | 4.14 | -7.5 dB  |
+| Peaking | 4884 Hz  | 2.59 | 10.3 dB  |
+| Peaking | 6565 Hz  | 5.46 | -5.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20T90%20250%20Ohm/Beyerdynamic%20T90%20250%20Ohm.png)

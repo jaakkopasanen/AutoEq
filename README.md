@@ -416,6 +416,8 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
+- Remove 10 Hz; -84dB band from GraphicEQ
+- Fewer bands on GraphicEQ
 - Rtings measurements
     - Use native compensation
     - Calibrate to Innerfidelity to use SBAF-Serious

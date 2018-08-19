@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.3dB
-GraphicEQ: 10 -84; 20 2.8; 22 1.8; 23 1.4; 25 0.7; 26 0.4; 28 -0.0; 30 -0.3; 32 -0.5; 35 -0.7; 37 -0.8; 40 -1.0; 42 -1.0; 45 -1.0; 49 -0.8; 52 -0.6; 56 -0.6; 59 -0.6; 64 -0.7; 68 -0.7; 73 -0.8; 78 -0.8; 83 -0.9; 89 -1.1; 95 -1.2; 102 -1.4; 109 -1.7; 117 -1.9; 125 -2.2; 134 -2.4; 143 -2.3; 153 -2.3; 164 -2.3; 175 -2.3; 188 -2.3; 201 -2.4; 215 -2.3; 230 -2.0; 246 -2.0; 263 -1.8; 282 -1.6; 301 -1.6; 323 -1.4; 345 -1.0; 369 -0.9; 395 -0.6; 423 -0.3; 452 -0.1; 484 0.1; 518 0.4; 554 1.1; 593 1.7; 635 1.9; 679 1.4; 726 0.4; 777 -0.8; 832 -2.0; 890 0.3; 952 1.2; 1019 -0.2; 1090 -0.9; 1167 -1.4; 1248 -1.7; 1336 -2.3; 1429 -2.7; 1529 -3.0; 1636 -3.4; 1751 -3.6; 1873 -3.4; 2004 -3.2; 2145 -3.4; 2295 -3.1; 2455 -1.9; 2627 0.5; 2811 2.0; 3008 1.7; 3219 1.1; 3444 0.4; 3685 -0.1; 3943 -1.1; 4219 -2.5; 4514 -2.9; 4830 -2.7; 5168 -1.8; 5530 -0.3; 5917 0.2; 6331 -1.8; 6775 -3.4; 7249 -4.3; 7756 -4.1; 8299 -3.8; 8880 -4.1; 9502 -3.8; 10167 -1.6; 10879 -0.0; 11640 0.0; 12455 -0.6; 13327 -2.0; 14260 -0.7; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -1.0; 20000 -4.5
+Preamp: -2.9dB
+GraphicEQ: 10 -84; 20 2.8; 22 1.8; 23 1.4; 25 0.7; 26 0.4; 28 -0.1; 30 -0.4; 32 -0.6; 35 -0.8; 37 -0.9; 40 -1.1; 42 -1.2; 45 -1.2; 49 -1.0; 52 -0.9; 56 -0.9; 59 -1.0; 64 -1.2; 68 -1.3; 73 -1.5; 78 -1.6; 83 -1.7; 89 -1.9; 95 -1.9; 102 -2.0; 109 -2.1; 117 -2.2; 125 -2.2; 134 -2.2; 143 -2.1; 153 -2.1; 164 -2.0; 175 -2.1; 188 -2.1; 201 -2.2; 215 -2.2; 230 -1.9; 246 -1.9; 263 -1.7; 282 -1.6; 301 -1.5; 323 -1.3; 345 -1.0; 369 -0.9; 395 -0.6; 423 -0.4; 452 -0.1; 484 0.2; 518 0.5; 554 1.1; 593 1.6; 635 1.8; 679 1.5; 726 0.5; 777 -0.8; 832 -2.0; 890 0.3; 952 1.2; 1019 -0.2; 1090 -0.9; 1167 -1.3; 1248 -1.7; 1336 -2.2; 1429 -2.6; 1529 -3.0; 1636 -3.4; 1751 -3.6; 1873 -3.5; 2004 -3.2; 2145 -3.3; 2295 -3.1; 2455 -2.0; 2627 0.6; 2811 2.0; 3008 1.6; 3219 1.2; 3444 0.5; 3685 -0.0; 3943 -1.4; 4219 -2.5; 4514 -2.8; 4830 -2.7; 5168 -1.8; 5530 -0.3; 5917 0.2; 6331 -1.8; 6775 -3.5; 7249 -4.4; 7756 -4.1; 8299 -3.5; 8880 -4.0; 9502 -4.0; 10167 -1.7; 10879 -0.0; 11640 0.0; 12455 -0.8; 13327 -2.3; 14260 -0.7; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -1.1; 20000 -4.5
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.3dB` and instead set Global volume in the UI for both channels to **-33**
+-2.8553110582660826dB` and instead set Global volume in the UI for both channels to **-28**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D5000 (balanced) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-2.8dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -2.8dB.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 21 Hz    | 2.72 | 2.4 dB  |
-| Peaking | 162 Hz   | 0.89 | -2.6 dB |
-| Peaking | 1752 Hz  | 2.34 | -4.0 dB |
-| Peaking | 8024 Hz  | 1.96 | -4.5 dB |
-| Peaking | 19939 Hz | 3    | -4.2 dB |
-| Peaking | 41 Hz    | 2.49 | -0.9 dB |
-| Peaking | 614 Hz   | 4.88 | 2.5 dB  |
-| Peaking | 2323 Hz  | 4.22 | -3.4 dB |
-| Peaking | 2802 Hz  | 2.73 | 3.8 dB  |
-| Peaking | 4458 Hz  | 5.54 | -3.0 dB |
+| Peaking | 19 Hz    | 2.87 | 2.5 dB  |
+| Peaking | 132 Hz   | 0.63 | -2.4 dB |
+| Peaking | 1756 Hz  | 2.31 | -4.0 dB |
+| Peaking | 7444 Hz  | 2.8  | -3.8 dB |
+| Peaking | 9019 Hz  | 4.07 | -2.8 dB |
+| Peaking | 615 Hz   | 3.01 | 2.7 dB  |
+| Peaking | 760 Hz   | 0.3  | -0.5 dB |
+| Peaking | 2954 Hz  | 5.06 | 3.2 dB  |
+| Peaking | 4478 Hz  | 5.93 | -2.7 dB |
+| Peaking | 19940 Hz | 3.36 | -4.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D5000%20(balanced)/Denon%20AH-D5000%20(balanced).png)

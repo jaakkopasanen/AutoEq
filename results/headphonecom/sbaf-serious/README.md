@@ -1,10 +1,9 @@
-# Run 2018-08-12T16:10:50.622047
+# Run 2018-08-19T20:22:17.195437
 There results were obtained with parameters:
-* `--input_dir="headphonecom\data\adhoc\inear"`
+* `--input_dir="headphonecom\data\earbud"`
 * `--output_dir="results\headphonecom\sbaf-serious"`
-* `--calibration="calibration\headphonecom_to_innerfidelity.csv"`
-* `--compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv"`
-* `--bass_boost=6.0`
+* `--compensation="headphonecom\resources\headphonecom_compensation_sbaf-serious.csv"`
+* `--bass_boost=None`
 * `--tilt=None`
 * `--max_gain=6.0`
 * `--treble_f_lower=6000.0`

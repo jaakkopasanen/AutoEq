@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.6dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 5.4; 52 4.9; 56 4.7; 59 4.9; 64 4.7; 68 3.9; 73 3.2; 78 2.7; 83 2.3; 89 1.7; 95 1.2; 102 0.6; 109 0.2; 117 -0.2; 125 -0.4; 134 0.4; 143 0.5; 153 -0.1; 164 -0.2; 175 -0.5; 188 -0.4; 201 -0.3; 215 -0.2; 230 -0.2; 246 -0.1; 263 -0.6; 282 -1.2; 301 -1.0; 323 -0.7; 345 -0.3; 369 -0.4; 395 -0.3; 423 0.0; 452 0.1; 484 0.0; 518 0.1; 554 0.4; 593 0.7; 635 0.7; 679 0.6; 726 0.7; 777 0.8; 832 0.6; 890 0.2; 952 0.1; 1019 0.0; 1090 -0.1; 1167 -0.3; 1248 -0.6; 1336 -0.7; 1429 -1.0; 1529 -1.7; 1636 -2.1; 1751 -2.5; 1873 -2.9; 2004 -3.1; 2145 -3.1; 2295 -2.8; 2455 -1.8; 2627 -0.9; 2811 -0.4; 3008 0.8; 3219 1.4; 3444 1.8; 3685 2.6; 3943 3.2; 4219 2.8; 4514 3.5; 4830 3.7; 5168 5.5; 5530 -0.3; 5917 -5.1; 6331 -4.9; 6775 -8.3; 7249 -8.8; 7756 -7.3; 8299 -5.7; 8880 -3.7; 9502 -0.9; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 -0.0; 14260 -2.4; 15258 -4.2; 16326 -4.0; 17469 -2.7; 18692 -0.4; 20000 0.0
+Preamp: -6.1dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 5.9; 49 5.3; 52 4.6; 56 4.3; 59 4.5; 64 4.2; 68 3.3; 73 2.5; 78 1.9; 83 1.5; 89 0.9; 95 0.5; 102 0.1; 109 -0.2; 117 -0.4; 125 -0.4; 134 0.5; 143 0.7; 153 0.2; 164 0.0; 175 -0.3; 188 -0.2; 201 -0.1; 215 -0.1; 230 -0.1; 246 -0.0; 263 -0.5; 282 -1.1; 301 -1.0; 323 -0.6; 345 -0.3; 369 -0.3; 395 -0.3; 423 -0.0; 452 0.0; 484 0.1; 518 0.2; 554 0.4; 593 0.6; 635 0.6; 679 0.7; 726 0.8; 777 0.7; 832 0.5; 890 0.2; 952 0.1; 1019 -0.0; 1090 -0.1; 1167 -0.3; 1248 -0.6; 1336 -0.7; 1429 -1.0; 1529 -1.7; 1636 -2.1; 1751 -2.5; 1873 -2.9; 2004 -3.1; 2145 -3.1; 2295 -2.7; 2455 -1.9; 2627 -0.8; 2811 -0.3; 3008 0.7; 3219 1.5; 3444 1.9; 3685 2.6; 3943 2.9; 4219 2.9; 4514 3.6; 4830 3.8; 5168 6.0; 5530 -0.3; 5917 -5.0; 6331 -4.9; 6775 -8.4; 7249 -8.9; 7756 -7.3; 8299 -5.5; 8880 -3.6; 9502 -1.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 -0.0; 14260 -2.4; 15258 -4.0; 16326 -3.9; 17469 -2.8; 18692 -0.5; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.6dB` and instead set Global volume in the UI for both channels to **-66**
+-6.100000000000002dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio-Technica ATH-FC700A ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -7.0dB.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 33 Hz    | 0.75 | 6.9 dB   |
-| Peaking | 2040 Hz  | 2.14 | -3.8 dB  |
-| Peaking | 4807 Hz  | 1.6  | 6.9 dB   |
-| Peaking | 6939 Hz  | 2.39 | -11.7 dB |
-| Peaking | 31984 Hz | 2.88 | -4.7 dB  |
-| Peaking | 66 Hz    | 1.65 | 2.8 dB   |
-| Peaking | 80 Hz    | 0.58 | -1.7 dB  |
-| Peaking | 298 Hz   | 4.7  | -1.0 dB  |
-| Peaking | 707 Hz   | 2.34 | 1.0 dB   |
-| Peaking | 10780 Hz | 3.75 | 1.7 dB   |
+| Peaking | 33 Hz    | 0.81 | 6.9 dB   |
+| Peaking | 2035 Hz  | 2.2  | -3.8 dB  |
+| Peaking | 4831 Hz  | 1.67 | 7.1 dB   |
+| Peaking | 6931 Hz  | 2.42 | -11.7 dB |
+| Peaking | 16073 Hz | 2.71 | -4.5 dB  |
+| Peaking | 62 Hz    | 3.98 | 1.5 dB   |
+| Peaking | 108 Hz   | 2.51 | -1.4 dB  |
+| Peaking | 291 Hz   | 3.53 | -1.2 dB  |
+| Peaking | 711 Hz   | 2.61 | 1.0 dB   |
+| Peaking | 10829 Hz | 3.69 | 1.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audio-Technica%20ATH-FC700A/Audio-Technica%20ATH-FC700A.png)
