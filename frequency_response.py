@@ -480,7 +480,25 @@ class FrequencyResponse:
         return _eq, rmse, np.squeeze(_fc, axis=1), np.squeeze(_Q, axis=1), np.squeeze(_gain, axis=1)
 
     def optimize_parametric_eq(self, max_filters=None):
-        """Fits multiple biquad filters to equalization curve."""
+        """Fits multiple biquad filters to equalization curve. If max_filters is a list with more than one element, one
+        optimization run will be ran for each element. Each optimization run will continue from the previous. Each
+        optimization run results must be combined with results of all the previous runs but can be used independently of
+        the preceeding runs' results. If max_filters is [5, 5, 5] the first 5, 10 and 15 filters can be used
+        independently.
+
+        Args:
+            max_filters: List of maximum number of filters available for each filter group optimization.
+
+        Returns:
+            - **filters:** Numpy array of filters where each row contains one filter fc, Q and gain
+            - **n_produced:** Actual number of filters produced for each filter group. Calling with [5, 5] max_filters
+                              might actually produce [4, 5] filters meaning that first 4 filters can be used
+                              independently.
+            - **max_gains:** Maximum gain value of the equalizer frequency response after each filter group
+                             optimization. When using sub-set of filters independently the actual max gain of that
+                             sub-set's frequency response must be applied as a negative digital preamp to avoid
+                             clipping.
+        """
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
 
@@ -489,19 +507,23 @@ class FrequencyResponse:
 
         self.parametric_eq = np.zeros(self.frequency.shape)
         fc = Q = gain = np.array([])
+        n_produced = []
+        max_gains = []
         for n in max_filters:
             _eq, rmse, _fc, _Q, _gain = self._run_optimize_parametric_eq(
                 frequency=self.frequency,
                 target=self.equalization - self.parametric_eq,
                 max_filters=n
             )
+            n_produced.append(len(_fc))
             # print('RMSE: {:.2f}dB'.format(rmse))
             self.parametric_eq += _eq
+            max_gains.append(np.max(self.parametric_eq))
             fc = np.concatenate((fc, _fc))
             Q = np.concatenate((Q, _Q))
             gain = np.concatenate((gain, _gain))
 
-        return np.transpose(np.vstack([fc, Q, gain]))
+        return np.transpose(np.vstack([fc, Q, gain])), n_produced, max_gains
 
     @staticmethod
     def write_eqapo_parametric_eq(file_path, filters):
@@ -535,7 +557,12 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def write_readme(self, file_path, write_graphic_eq=False, write_parametric_eq=False, max_filters=None):
+    def write_readme(self,
+                     file_path,
+                     write_graphic_eq=False,
+                     write_parametric_eq=False,
+                     max_filters=None,
+                     max_gains=None):
         """Writes README.md with picture and Equalizer APO settings."""
         file_path = os.path.abspath(file_path)
         dir_path = os.path.dirname(file_path)
@@ -547,8 +574,7 @@ class FrequencyResponse:
         # Add GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
         if write_graphic_eq and os.path.isfile(graphic_eq_path):
-            preamp = min(0.0, float(-np.max(self.equalization)))
-            preamp = np.floor(preamp * 10) / 10 - 0.5
+            preamp = min(0.0, float(-np.max(self.equalization))) - 0.1
 
             # Read Graphig eq
             with open(graphic_eq_path, 'r') as f:
@@ -560,7 +586,7 @@ class FrequencyResponse:
             In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
             with:
             ```
-            Preamp: {preamp}dB
+            Preamp: {preamp:.1f}dB
             {graphic_eq}
             ```
             
@@ -577,9 +603,7 @@ class FrequencyResponse:
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
         if write_parametric_eq and os.path.isfile(parametric_eq_path):
-            preamp = np.min([0.0, float(-np.max(self.parametric_eq))])
-            preamp = np.floor(preamp * 10) / 10 - 0.5
-            preamp -= 1.0  # Temporary fix to protect against potentially larger top gains in independent filter groups
+            preamp = np.min([0.0, float(-np.max(self.parametric_eq))]) - 0.1
 
             # Read Parametric eq
             with open(parametric_eq_path, 'r') as f:
@@ -614,26 +638,44 @@ class FrequencyResponse:
                     n.append(n[-1] + x)
                 del n[0]
                 if len(max_filters) > 3:
-                    n_str = ', '.join([str(x) for x in n[:-2]]) + ' and {}'.format(n[-2])
+                    max_filters_str = ', '.join([str(x) for x in n[:-2]]) + ' or {}'.format(n[-2])
                 if len(max_filters) == 3:
-                    n_str = '{n0} and {n1}'.format(n0=n[0], n1=n[1])
+                    max_filters_str = '{n0} or {n1}'.format(n0=n[0], n1=n[1])
                 if len(max_filters) == 2:
-                    n_str = str(n[0])
-                max_filters_str = 'The first {} filters can be used independently.'.format(n_str)
+                    max_filters_str = str(n[0])
+                max_filters_str = 'The first {} filters can be used independently.'.format(max_filters_str)
+
+            preamp_str = ''
+            if type(max_gains) == list and len(max_gains) > 1:
+                max_gains = [x + 0.1 for x in max_gains]
+                print(max_gains)
+                if len(max_gains) > 3:
+                    _s = 'When using independent subset of filters, apply preamp of {}, respectively.'
+                    preamp_str = ', '.join(['-{:.1f}dB'.format(x) for x in max_gains[:-2]])
+                    preamp_str += ' or -{:.1f}dB'.format(max_gains[-2])
+                if len(max_gains) == 3:
+                    _s = 'When using independent subset of filters, apply preamp of {}, respectively.'
+                    preamp_str = '-{g0:.1f}dB or -{g1:.1f}dB'.format(g0=max_gains[0], g1=max_gains[1])
+                if len(max_gains) == 2:
+                    _s = 'When using independent subset of filters, apply preamp of {}.'
+                    preamp_str = '-{:.1f}dB'.format(max_gains[0])
+                preamp_str = _s.format(preamp_str)
 
             s += '''
             ### Peace
             In case of using Peace, click *Import* in Peace GUI and select `{model} ParametricEQ.txt`.
             
             ### Parametric EQs
-            In case of using other parametric equalizer, apply preamp of **{preamp}dB** and build filters manually with
-            these parameters. {max_filters_str}
+            In case of using other parametric equalizer, apply preamp of **{preamp:.1f}dB** and build filters manually
+            with these parameters. {max_filters_str}
+            {preamp_str}
 
             {filters_table}
             '''.format(
                 model=model,
                 preamp=preamp,
                 max_filters_str=max_filters_str,
+                preamp_str=preamp_str,
                 filters_table=filters_table_str
             )
 
@@ -1139,7 +1181,8 @@ class FrequencyResponse:
         args = vars(arg_parser.parse_args())
         if 'bass_boost' in args and 'iem_bass_boost' in args:
             raise TypeError('"--bass_boost" or "--iem_bass_boost" can be given but not both')
-        args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
+        if 'max_filters' in args:
+            args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
         return args
 
     @staticmethod
@@ -1242,6 +1285,9 @@ class FrequencyResponse:
                 treble_f_upper=treble_f_upper
             )
 
+            n_filters = None
+            max_gains = None
+
             # Equalize
             if equalize:
                 fr.equalize(
@@ -1254,7 +1300,7 @@ class FrequencyResponse:
                 )
                 if parametric_eq:
                     # Get the filters
-                    filters = fr.optimize_parametric_eq(max_filters=max_filters)
+                    filters, n_filters, max_gains = fr.optimize_parametric_eq(max_filters=max_filters)
 
             if output_dir:
                 # Copy relative path to output directory
@@ -1287,7 +1333,8 @@ class FrequencyResponse:
                     _readme_path,
                     write_graphic_eq=equalize,
                     write_parametric_eq=parametric_eq,
-                    max_filters=max_filters
+                    max_filters=n_filters,
+                    max_gains=max_gains
                 )
                 if _readme_path == readme_path:
                     readme_occupied = True

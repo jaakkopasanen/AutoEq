@@ -414,8 +414,6 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- Preamp for first 5 filters
-- First N filters can be used independently: N must be the actual number instead of original target.
 - Remove calibration add calibrated sbaf-serious compensation curve
   - Update calibration section
   - Update usage examples
