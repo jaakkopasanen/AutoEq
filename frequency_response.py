@@ -222,7 +222,8 @@ class FrequencyResponse:
         # Reset graph to be able to run this again
         tf.reset_default_graph()
         # Sampling frequency
-        fs = tf.constant(48000, name='f', dtype='float32')
+        fs = 48000
+        fs_tf = tf.constant(fs, name='f', dtype='float32')
 
         # Filter heavily and find peaks
         fr_target = FrequencyResponse(name='Filter Initialization', frequency=frequency, raw=target)
@@ -353,7 +354,7 @@ class FrequencyResponse:
         # Low shelf filter
         # This is not used at the moment but is kept for future
         A = 10 ** (gain[:n_ls, :] / 40)
-        w0 = 2 * np.pi * tf.pow(10.0, fc[:n_ls, :]) / fs
+        w0 = 2 * np.pi * tf.pow(10.0, fc[:n_ls, :]) / fs_tf
         alpha = tf.sin(w0) / (2 * Q[:n_ls, :])
 
         a0_ls = ((A + 1) + (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha)
@@ -366,7 +367,7 @@ class FrequencyResponse:
 
         # Peak filter
         A = 10 ** (gain[n_ls:n_ls+n_pk, :] / 40)
-        w0 = 2 * np.pi * tf.pow(10.0, fc[n_ls:n_ls+n_pk, :]) / fs
+        w0 = 2 * np.pi * tf.pow(10.0, fc[n_ls:n_ls+n_pk, :]) / fs_tf
         alpha = tf.sin(w0) / (2 * Q[n_ls:n_ls+n_pk, :])
 
         a0_pk = (1 + alpha / A)
@@ -380,7 +381,7 @@ class FrequencyResponse:
         # High self filter
         # This is not kept at the moment but kept for future
         A = 10 ** (gain[n_ls+n_pk:, :] / 40)
-        w0 = 2 * np.pi * tf.pow(10.0, fc[n_ls+n_pk:, :]) / fs
+        w0 = 2 * np.pi * tf.pow(10.0, fc[n_ls+n_pk:, :]) / fs_tf
         alpha = tf.sin(w0) / (2 * Q[n_ls+n_pk:, :])
 
         a0_hs = (A + 1) - (A - 1) * tf.cos(w0) + 2 * tf.sqrt(A) * alpha
@@ -399,7 +400,7 @@ class FrequencyResponse:
         b1 = tf.concat([b1_ls, b1_pk, b1_hs], axis=0)
         b2 = tf.concat([b2_ls, b2_pk, b2_hs], axis=0)
 
-        w = 2 * np.pi * f / fs
+        w = 2 * np.pi * f / fs_tf
         phi = 4 * tf.sin(w / 2) ** 2
 
         a0 = 1.0
@@ -451,14 +452,11 @@ class FrequencyResponse:
 
         rmse = np.sqrt(min_loss)  # RMSE
 
+        # Fold center frequencies back to normal
+        _fc = np.abs(np.round(_fc / fs) * fs - _fc)
+
         # Filter selection slice
-        sl = np.logical_and(
-            np.abs(_gain) > 0.1,  # Filters with more than 0.1 dB of gain
-            np.logical_and(
-                _fc > 10,  # Filters centered above 10 Hz
-                _fc < 22000  # Filters centered below 22 kHZ
-            )
-        )
+        sl = np.logical_and(np.abs(_gain) > 0.1, _fc > 10)
         _fc = _fc[sl]
         _Q = np.abs(_Q[sl])
         _gain = _gain[sl]
@@ -475,9 +473,9 @@ class FrequencyResponse:
         _gain = np.expand_dims(_gain, axis=1)
 
         # Re-compute eq
-        a0, a1, a2, b0, b1, b2 = biquad.peaking(_fc, _Q, _gain, fs=48000)
+        a0, a1, a2, b0, b1, b2 = biquad.peaking(_fc, _Q, _gain, fs=fs)
         frequency = np.repeat(np.expand_dims(frequency, axis=0), len(_fc), axis=0)
-        _eq = np.sum(biquad.digital_coeffs(frequency, 48000, a0, a1, a2, b0, b1, b2), axis=0)
+        _eq = np.sum(biquad.digital_coeffs(frequency, fs, a0, a1, a2, b0, b1, b2), axis=0)
 
         return _eq, rmse, np.squeeze(_fc, axis=1), np.squeeze(_Q, axis=1), np.squeeze(_gain, axis=1)
 

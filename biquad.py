@@ -128,27 +128,29 @@ def main():
     # Q = [1.1, 0.9, 1.0, 1.5, 4.0, 2.0, 6.0, 7.0, 5.0]
     # gain = [2.1, -3.8, -2.0, 4.0, -3.5, 4.5, -5.0, 0.4, -2.4]
 
-    fc = [200, 2000]
-    Q = [-2.2, 2.2]
-    gain = [3.0, 3.0]
-
     fs = 48000
+
+    fc = [100000]
+    fc.append(abs(round(fc[0] / fs) * fs - fc[0]))
+    print(fc)
+    Q = [1, 1]
+    gain = [1.0, -1.0]
 
     a0, a1, a2, b0, b1, b2 = peaking(fc, Q, gain, fs=fs)
 
     f = [20]
-    while f[-1] < 20000:
-        f.append(f[-1]*2**(1/8))
+    while f[-1] < fs:
+        f.append(f[-1]*2**(1/16))
     f = np.repeat(np.expand_dims(f, 1), len(fc), axis=1)
 
     c = digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2)
 
     fig, ax = plt.subplots()
-    plt.plot(f, np.sum(c, axis=1), linewidth=3)
+    #plt.plot(f, np.sum(c, axis=1), linewidth=3)
     plt.plot(f, c)
     plt.xlabel('Frequency (Hz)')
     plt.semilogx()
-    plt.xlim([20, 20000])
+    plt.xlim([20, 100000])
     plt.ylabel('Amplitude (dBr)')
     plt.grid(True, which='major')
     plt.grid(True, which='minor')
