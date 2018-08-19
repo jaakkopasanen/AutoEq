@@ -4,32 +4,32 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.6dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 5.9; 40 5.3; 42 4.8; 45 4.1; 49 3.4; 52 3.0; 56 2.5; 59 2.0; 64 1.2; 68 0.8; 73 0.3; 78 -0.1; 83 -0.4; 89 -0.8; 95 -1.1; 102 -1.5; 109 -1.7; 117 -2.0; 125 -2.3; 134 -2.4; 143 -2.5; 153 -2.5; 164 -2.3; 175 -2.1; 188 -2.0; 201 -1.8; 215 -1.5; 230 -1.3; 246 -1.1; 263 -0.8; 282 -0.6; 301 -0.7; 323 -0.8; 345 -0.4; 369 -0.3; 395 -0.4; 423 -0.2; 452 -0.1; 484 -0.1; 518 -0.1; 554 0.1; 593 0.4; 635 0.3; 679 0.3; 726 0.4; 777 0.5; 832 0.4; 890 0.1; 952 0.1; 1019 -0.1; 1090 -0.2; 1167 -0.5; 1248 -0.8; 1336 -1.5; 1429 -2.3; 1529 -3.0; 1636 -3.6; 1751 -4.4; 1873 -6.3; 2004 -8.1; 2145 -8.0; 2295 -6.3; 2455 -4.7; 2627 -3.4; 2811 -2.6; 3008 -2.5; 3219 -1.5; 3444 -2.1; 3685 -2.8; 3943 -1.8; 4219 -0.5; 4514 0.2; 4830 -0.7; 5168 -2.3; 5530 -1.8; 5917 -0.7; 6331 -1.6; 6775 -3.6; 7249 -5.4; 7756 -6.2; 8299 -7.3; 8880 -8.9; 9502 -8.7; 10167 -5.1; 10879 -0.5; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+Preamp: -6.1dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 5.8; 40 5.2; 42 4.7; 45 3.9; 49 3.2; 52 2.8; 56 2.1; 59 1.6; 64 0.7; 68 0.2; 73 -0.4; 78 -0.8; 83 -1.2; 89 -1.5; 95 -1.8; 102 -2.0; 109 -2.1; 117 -2.2; 125 -2.3; 134 -2.3; 143 -2.3; 153 -2.2; 164 -2.1; 175 -1.9; 188 -1.8; 201 -1.6; 215 -1.4; 230 -1.1; 246 -1.0; 263 -0.8; 282 -0.5; 301 -0.6; 323 -0.7; 345 -0.4; 369 -0.3; 395 -0.4; 423 -0.2; 452 -0.1; 484 -0.1; 518 -0.1; 554 0.1; 593 0.4; 635 0.4; 679 0.3; 726 0.4; 777 0.5; 832 0.4; 890 0.1; 952 0.1; 1019 -0.1; 1090 -0.2; 1167 -0.5; 1248 -0.8; 1336 -1.5; 1429 -2.3; 1529 -3.0; 1636 -3.6; 1751 -4.4; 1873 -6.3; 2004 -8.1; 2145 -8.0; 2295 -6.3; 2455 -4.7; 2627 -3.4; 2811 -2.6; 3008 -2.5; 3219 -1.5; 3444 -2.1; 3685 -2.8; 3943 -1.8; 4219 -0.5; 4514 0.2; 4830 -0.7; 5168 -2.3; 5530 -1.8; 5917 -0.7; 6331 -1.6; 6775 -3.6; 7249 -5.4; 7756 -6.2; 8299 -7.3; 8880 -8.9; 9502 -8.7; 10167 -5.1; 10879 -0.5; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.6dB` and instead set Global volume in the UI for both channels to **-66**
+-6.1000000000000005dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i Goo Bowl ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -6.5dB.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 28 Hz    |  0.71 | 6.7 dB  |
-| Peaking | 130 Hz   |  0.94 | -3.1 dB |
-| Peaking | 2082 Hz  |  2.45 | -6.8 dB |
-| Peaking | 2059 Hz  |  2.43 | -1.3 dB |
+| Peaking | 29 Hz    |  0.61 | 6.9 dB  |
+| Peaking | 104 Hz   |  0.75 | -3.6 dB |
+| Peaking | 2061 Hz  |  2.43 | -1.3 dB |
+| Peaking | 2082 Hz  |  2.46 | -6.8 dB |
 | Peaking | 8747 Hz  |  2.73 | -9.4 dB |
-| Peaking | 71 Hz    |  3.48 | -0.4 dB |
-| Peaking | 770 Hz   |  1.78 | 0.8 dB  |
-| Peaking | 3674 Hz  | 10.13 | -1.9 dB |
-| Peaking | 9854 Hz  |  7    | -3.5 dB |
-| Peaking | 11111 Hz |  2.84 | 2.7 dB  |
+| Peaking | 766 Hz   |  1.73 | 0.8 dB  |
+| Peaking | 3644 Hz  | 10.72 | -1.9 dB |
+| Peaking | 7161 Hz  | 10.93 | -1.9 dB |
+| Peaking | 11503 Hz |  5.21 | 2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i%20Goo%20Bowl/Grado%20SR225i%20Goo%20Bowl.png)

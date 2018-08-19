@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.5dB
-GraphicEQ: 10 -84; 20 3.6; 22 3.6; 23 3.7; 25 3.7; 26 3.8; 28 3.8; 30 3.9; 32 4.0; 35 4.1; 37 4.2; 40 4.4; 42 4.5; 45 4.7; 49 5.0; 52 5.2; 56 5.3; 59 5.3; 64 5.2; 68 5.1; 73 5.2; 78 5.4; 83 5.1; 89 4.2; 95 3.3; 102 2.4; 109 1.8; 117 0.9; 125 0.2; 134 -0.0; 143 -0.2; 153 -0.1; 164 0.5; 175 0.0; 188 -0.3; 201 -0.1; 215 -0.2; 230 -0.1; 246 0.2; 263 0.4; 282 1.0; 301 1.7; 323 2.3; 345 2.4; 369 2.1; 395 1.5; 423 1.0; 452 0.7; 484 0.4; 518 0.2; 554 0.4; 593 0.6; 635 0.6; 679 0.3; 726 0.4; 777 0.5; 832 0.4; 890 0.3; 952 0.2; 1019 -0.1; 1090 -0.2; 1167 -0.4; 1248 -1.1; 1336 -2.2; 1429 -2.8; 1529 -2.1; 1636 -1.5; 1751 -0.6; 1873 -0.0; 2004 0.5; 2145 1.1; 2295 1.9; 2455 3.0; 2627 3.1; 2811 3.1; 3008 3.8; 3219 4.0; 3444 4.4; 3685 4.9; 3943 5.7; 4219 6.0; 4514 6.0; 4830 6.0; 5168 3.0; 5530 4.1; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+Preamp: -6.1dB
+GraphicEQ: 10 -84; 20 3.6; 22 3.6; 23 3.7; 25 3.7; 26 3.7; 28 3.8; 30 3.9; 32 3.9; 35 4.1; 37 4.1; 40 4.3; 42 4.4; 45 4.5; 49 4.8; 52 4.9; 56 4.9; 59 4.9; 64 4.7; 68 4.5; 73 4.5; 78 4.6; 83 4.3; 89 3.4; 95 2.6; 102 1.8; 109 1.4; 117 0.7; 125 0.2; 134 0.1; 143 0.0; 153 0.1; 164 0.7; 175 0.3; 188 -0.1; 201 0.0; 215 -0.0; 230 0.1; 246 0.3; 263 0.5; 282 1.1; 301 1.8; 323 2.4; 345 2.4; 369 2.1; 395 1.5; 423 1.0; 452 0.7; 484 0.4; 518 0.2; 554 0.4; 593 0.6; 635 0.6; 679 0.4; 726 0.4; 777 0.5; 832 0.4; 890 0.3; 952 0.2; 1019 -0.1; 1090 -0.2; 1167 -0.4; 1248 -1.1; 1336 -2.2; 1429 -2.8; 1529 -2.1; 1636 -1.5; 1751 -0.6; 1873 -0.0; 2004 0.5; 2145 1.1; 2295 1.9; 2455 3.0; 2627 3.1; 2811 3.1; 3008 3.8; 3219 4.0; 3444 4.4; 3685 4.9; 3943 5.7; 4219 6.0; 4514 6.0; 4830 6.0; 5168 3.0; 5530 4.1; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.5dB` and instead set Global volume in the UI for both channels to **-65**
+-6.099996068419183dB` and instead set Global volume in the UI for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K267 Tiesto Studio Setting ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -6.4dB.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 36 Hz   | 0.72 | 4.4 dB  |
-| Peaking | 74 Hz   | 2.15 | 3.8 dB  |
-| Peaking | 1462 Hz | 3.82 | -3.4 dB |
-| Peaking | 3949 Hz | 1.33 | 5.8 dB  |
-| Peaking | 6169 Hz | 6.1  | 4.2 dB  |
-| Peaking | 221 Hz  | 2.19 | -0.9 dB |
-| Peaking | 136 Hz  | 4.75 | -1.2 dB |
-| Peaking | 338 Hz  | 2.55 | 2.5 dB  |
-| Peaking | 6709 Hz | 6.45 | 1.4 dB  |
-| Peaking | 7933 Hz | 2.35 | -1.4 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 32 Hz   |  0.66 | 4.0 dB  |
+| Peaking | 70 Hz   |  1.8  | 3.2 dB  |
+| Peaking | 1462 Hz |  3.83 | -3.5 dB |
+| Peaking | 3951 Hz |  1.33 | 5.8 dB  |
+| Peaking | 6151 Hz |  6.13 | 4.2 dB  |
+| Peaking | 135 Hz  |  3.09 | -1.0 dB |
+| Peaking | 344 Hz  |  3.32 | 2.5 dB  |
+| Peaking | 2497 Hz | 10.18 | 1.3 dB  |
+| Peaking | 6738 Hz |  9.09 | 1.6 dB  |
+| Peaking | 8047 Hz |  2.12 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K267%20Tiesto%20Studio%20Setting/AKG%20K267%20Tiesto%20Studio%20Setting.png)

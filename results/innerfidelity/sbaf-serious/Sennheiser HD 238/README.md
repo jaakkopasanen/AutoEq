@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.0dB
-GraphicEQ: 10 -84; 20 3.5; 22 2.8; 23 2.5; 25 2.0; 26 1.8; 28 1.4; 30 1.0; 32 0.7; 35 0.3; 37 0.1; 40 -0.2; 42 -0.4; 45 -0.6; 49 -0.9; 52 -1.0; 56 -1.1; 59 -1.2; 64 -1.4; 68 -1.6; 73 -1.8; 78 -1.9; 83 -2.1; 89 -2.4; 95 -2.9; 102 -3.3; 109 -3.7; 117 -3.9; 125 -4.3; 134 -4.5; 143 -4.6; 153 -4.7; 164 -4.6; 175 -4.6; 188 -4.5; 201 -4.4; 215 -4.2; 230 -4.0; 246 -3.8; 263 -3.6; 282 -3.3; 301 -3.2; 323 -2.9; 345 -2.6; 369 -2.4; 395 -2.1; 423 -1.8; 452 -1.6; 484 -1.4; 518 -1.3; 554 -1.0; 593 -0.6; 635 -0.5; 679 -0.4; 726 -0.3; 777 -0.0; 832 -0.1; 890 -0.1; 952 -0.0; 1019 0.2; 1090 1.0; 1167 0.5; 1248 -0.0; 1336 -0.4; 1429 -0.9; 1529 -1.1; 1636 -1.2; 1751 -1.1; 1873 -0.6; 2004 0.2; 2145 1.2; 2295 2.2; 2455 3.2; 2627 2.1; 2811 0.4; 3008 -1.3; 3219 -3.2; 3444 -1.9; 3685 1.7; 3943 2.7; 4219 -1.5; 4514 -4.0; 4830 -2.7; 5168 -0.6; 5530 -0.2; 5917 -0.9; 6331 -1.3; 6775 -0.1; 7249 0.8; 7756 0.2; 8299 -1.5; 8880 -3.4; 9502 -3.2; 10167 -1.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+Preamp: -3.5dB
+GraphicEQ: 10 -84; 20 3.4; 22 2.8; 23 2.5; 25 2.0; 26 1.7; 28 1.3; 30 1.0; 32 0.7; 35 0.3; 37 -0.0; 40 -0.4; 42 -0.5; 45 -0.8; 49 -1.1; 52 -1.3; 56 -1.5; 59 -1.6; 64 -2.0; 68 -2.2; 73 -2.5; 78 -2.6; 83 -2.9; 89 -3.2; 95 -3.6; 102 -3.9; 109 -4.1; 117 -4.1; 125 -4.3; 134 -4.4; 143 -4.4; 153 -4.4; 164 -4.4; 175 -4.4; 188 -4.3; 201 -4.2; 215 -4.1; 230 -3.8; 246 -3.7; 263 -3.5; 282 -3.3; 301 -3.1; 323 -2.9; 345 -2.6; 369 -2.4; 395 -2.1; 423 -1.8; 452 -1.5; 484 -1.4; 518 -1.3; 554 -1.0; 593 -0.6; 635 -0.5; 679 -0.4; 726 -0.3; 777 -0.0; 832 -0.1; 890 -0.1; 952 -0.0; 1019 0.2; 1090 1.0; 1167 0.5; 1248 -0.0; 1336 -0.4; 1429 -0.9; 1529 -1.1; 1636 -1.2; 1751 -1.1; 1873 -0.6; 2004 0.2; 2145 1.2; 2295 2.2; 2455 3.2; 2627 2.1; 2811 0.4; 3008 -1.3; 3219 -3.2; 3444 -1.9; 3685 1.7; 3943 2.7; 4219 -1.5; 4514 -4.0; 4830 -2.7; 5168 -0.6; 5530 -0.2; 5917 -0.9; 6331 -1.3; 6775 -0.1; 7249 0.8; 7756 0.2; 8299 -1.5; 8880 -3.4; 9502 -3.2; 10167 -1.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.0dB` and instead set Global volume in the UI for both channels to **-40**
+-3.543402914477965dB` and instead set Global volume in the UI for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 238 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -3.6dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.47 | 3.5 dB  |
-| Peaking | 168 Hz  | 0.64 | -4.8 dB |
-| Peaking | 2456 Hz | 6.31 | 3.6 dB  |
-| Peaking | 3210 Hz | 9.5  | -3.8 dB |
-| Peaking | 9126 Hz | 5.9  | -4.0 dB |
-| Peaking | 1104 Hz | 3.31 | 1.2 dB  |
-| Peaking | 1591 Hz | 3.55 | -1.4 dB |
-| Peaking | 3894 Hz | 8.86 | 4.7 dB  |
-| Peaking | 4501 Hz | 5.56 | -4.6 dB |
-| Peaking | 7429 Hz | 9.4  | 1.3 dB  |
+| Peaking | 19 Hz   | 1.3  | 3.6 dB  |
+| Peaking | 152 Hz  | 0.56 | -4.6 dB |
+| Peaking | 2481 Hz | 3.58 | 7.1 dB  |
+| Peaking | 2681 Hz | 1.6  | -4.0 dB |
+| Peaking | 9128 Hz | 6.41 | -3.9 dB |
+| Peaking | 1126 Hz | 2.08 | 1.3 dB  |
+| Peaking | 1522 Hz | 3.17 | -1.3 dB |
+| Peaking | 3319 Hz | 7.53 | -3.6 dB |
+| Peaking | 3867 Hz | 4.29 | 5.7 dB  |
+| Peaking | 4451 Hz | 5.89 | -5.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20238/Sennheiser%20HD%20238.png)

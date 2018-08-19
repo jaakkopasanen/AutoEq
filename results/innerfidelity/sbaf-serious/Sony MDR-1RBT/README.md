@@ -4,32 +4,31 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.6dB
-GraphicEQ: 10 -84; 20 2.1; 22 1.0; 23 0.4; 25 -0.5; 26 -0.9; 28 -1.6; 30 -2.2; 32 -2.8; 35 -3.6; 37 -4.1; 40 -4.6; 42 -5.0; 45 -5.4; 49 -5.9; 52 -6.2; 56 -6.5; 59 -6.7; 64 -7.0; 68 -7.4; 73 -7.7; 78 -7.9; 83 -8.3; 89 -8.6; 95 -8.6; 102 -8.1; 109 -7.7; 117 -7.3; 125 -7.5; 134 -7.9; 143 -8.0; 153 -8.1; 164 -6.5; 175 -3.6; 188 -4.2; 201 -2.8; 215 -0.5; 230 1.1; 246 3.7; 263 4.3; 282 5.5; 301 6.0; 323 5.7; 345 5.3; 369 4.8; 395 3.7; 423 2.2; 452 1.2; 484 0.8; 518 1.3; 554 2.4; 593 3.0; 635 2.4; 679 1.4; 726 1.2; 777 2.3; 832 1.9; 890 0.6; 952 -0.0; 1019 0.1; 1090 0.7; 1167 0.3; 1248 -0.9; 1336 -1.6; 1429 -4.3; 1529 -5.5; 1636 -6.3; 1751 -7.7; 1873 -8.8; 2004 -8.5; 2145 -8.4; 2295 -7.7; 2455 -5.1; 2627 -2.2; 2811 -0.5; 3008 1.5; 3219 1.6; 3444 0.8; 3685 -0.7; 3943 -1.1; 4219 -0.5; 4514 1.7; 4830 4.2; 5168 5.8; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -1.8; 8880 -4.6; 9502 -4.3; 10167 -0.6; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+Preamp: -6.1dB
+GraphicEQ: 10 -84; 20 2.0; 22 0.9; 23 0.4; 25 -0.5; 26 -0.9; 28 -1.6; 30 -2.3; 32 -2.9; 35 -3.7; 37 -4.1; 40 -4.8; 42 -5.1; 45 -5.6; 49 -6.2; 52 -6.5; 56 -6.8; 59 -7.1; 64 -7.6; 68 -8.0; 73 -8.4; 78 -8.7; 83 -9.1; 89 -9.4; 95 -9.3; 102 -8.6; 109 -8.1; 117 -7.5; 125 -7.5; 134 -7.7; 143 -7.8; 153 -7.9; 164 -6.2; 175 -3.3; 188 -4.0; 201 -2.6; 215 -0.4; 230 1.2; 246 3.8; 263 4.4; 282 5.6; 301 6.0; 323 5.7; 345 5.3; 369 4.9; 395 3.7; 423 2.2; 452 1.2; 484 0.8; 518 1.3; 554 2.4; 593 3.0; 635 2.4; 679 1.4; 726 1.2; 777 2.3; 832 1.9; 890 0.6; 952 -0.0; 1019 0.1; 1090 0.7; 1167 0.3; 1248 -0.9; 1336 -1.6; 1429 -4.3; 1529 -5.5; 1636 -6.3; 1751 -7.7; 1873 -8.8; 2004 -8.5; 2145 -8.4; 2295 -7.7; 2455 -5.1; 2627 -2.2; 2811 -0.5; 3008 1.5; 3219 1.6; 3444 0.8; 3685 -0.7; 3943 -1.1; 4219 -0.5; 4514 1.7; 4830 4.2; 5168 5.8; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 -1.8; 8880 -4.6; 9502 -4.3; 10167 -0.6; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.6dB` and instead set Global volume in the UI for both channels to **-66**
+-6.1dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1RBT ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+with these parameters. The first 4 filters can be used independently.
+When using independent subset of filters, apply preamp of -7.1dB.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 3 Hz    | 2.12 | -5.6 dB  |
-| Peaking | 74 Hz   | 1.19 | -8.6 dB  |
-| Peaking | 140 Hz  | 3.34 | -6.5 dB  |
+| Peaking | 75 Hz   | 1.24 | -9.5 dB  |
+| Peaking | 139 Hz  | 3.38 | -6.0 dB  |
 | Peaking | 1955 Hz | 2.75 | -10.1 dB |
 | Peaking | 5621 Hz | 3.3  | 7.3 dB   |
-| Peaking | 2 Hz    | 2.05 | 1.6 dB   |
-| Peaking | 309 Hz  | 2.66 | 7.2 dB   |
-| Peaking | 670 Hz  | 1.79 | 2.2 dB   |
-| Peaking | 6585 Hz | 8.12 | 2.3 dB   |
-| Peaking | 9063 Hz | 5.61 | -5.9 dB  |
+| Peaking | 309 Hz  | 2.62 | 7.2 dB   |
+| Peaking | 670 Hz  | 1.8  | 2.2 dB   |
+| Peaking | 6608 Hz | 7.68 | 2.2 dB   |
+| Peaking | 9079 Hz | 5.58 | -5.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-1RBT/Sony%20MDR-1RBT.png)

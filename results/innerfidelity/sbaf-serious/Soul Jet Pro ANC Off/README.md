@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.6dB
-GraphicEQ: 10 -84; 20 5.3; 22 4.7; 23 4.4; 25 3.9; 26 3.7; 28 3.3; 30 2.8; 32 2.4; 35 1.9; 37 1.5; 40 1.1; 42 0.8; 45 0.4; 49 -0.1; 52 -0.4; 56 -0.9; 59 -1.2; 64 -1.6; 68 -1.9; 73 -2.3; 78 -2.6; 83 -2.8; 89 -3.1; 95 -3.2; 102 -3.5; 109 -3.6; 117 -4.4; 125 -5.7; 134 -6.9; 143 -7.7; 153 -8.3; 164 -8.1; 175 -8.7; 188 -9.7; 201 -10.2; 215 -10.6; 230 -11.0; 246 -11.0; 263 -10.7; 282 -10.0; 301 -9.2; 323 -7.9; 345 -6.4; 369 -4.7; 395 -3.5; 423 -1.8; 452 -0.2; 484 1.5; 518 3.7; 554 5.6; 593 6.0; 635 5.4; 679 2.5; 726 1.3; 777 2.5; 832 1.6; 890 0.3; 952 -0.2; 1019 0.1; 1090 0.6; 1167 0.6; 1248 1.0; 1336 1.2; 1429 1.0; 1529 0.8; 1636 0.8; 1751 0.4; 1873 0.0; 2004 -1.2; 2145 -2.1; 2295 -2.7; 2455 -2.5; 2627 -2.3; 2811 -1.9; 3008 -0.9; 3219 -0.6; 3444 -1.4; 3685 -2.8; 3943 -4.6; 4219 -8.5; 4514 -8.0; 4830 -6.7; 5168 -5.1; 5530 -4.0; 5917 -2.2; 6331 -1.2; 6775 2.5; 7249 1.3; 7756 0.3; 8299 -0.1; 8880 -2.0; 9502 -2.7; 10167 -1.7; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.5; 20000 -5.7
+Preamp: -6.1dB
+GraphicEQ: 10 -84; 20 5.3; 22 4.7; 23 4.4; 25 3.9; 26 3.7; 28 3.2; 30 2.8; 32 2.4; 35 1.8; 37 1.4; 40 1.0; 42 0.7; 45 0.2; 49 -0.3; 52 -0.7; 56 -1.2; 59 -1.6; 64 -2.1; 68 -2.5; 73 -3.0; 78 -3.3; 83 -3.6; 89 -3.9; 95 -4.0; 102 -4.0; 109 -4.0; 117 -4.6; 125 -5.7; 134 -6.8; 143 -7.5; 153 -8.1; 164 -7.8; 175 -8.4; 188 -9.5; 201 -10.1; 215 -10.5; 230 -10.8; 246 -10.9; 263 -10.6; 282 -10.0; 301 -9.2; 323 -7.9; 345 -6.3; 369 -4.7; 395 -3.4; 423 -1.8; 452 -0.2; 484 1.5; 518 3.7; 554 5.6; 593 6.0; 635 5.4; 679 2.5; 726 1.3; 777 2.5; 832 1.6; 890 0.3; 952 -0.2; 1019 0.1; 1090 0.6; 1167 0.6; 1248 1.0; 1336 1.2; 1429 1.0; 1529 0.8; 1636 0.8; 1751 0.4; 1873 0.0; 2004 -1.2; 2145 -2.1; 2295 -2.7; 2455 -2.5; 2627 -2.3; 2811 -1.9; 3008 -0.9; 3219 -0.6; 3444 -1.4; 3685 -2.8; 3943 -4.6; 4219 -8.5; 4514 -8.0; 4830 -6.7; 5168 -5.1; 5530 -4.0; 5917 -2.2; 6331 -1.2; 6775 2.5; 7249 1.3; 7756 0.3; 8299 -0.1; 8880 -2.0; 9502 -2.7; 10167 -1.7; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 -0.5; 20000 -5.7
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.6dB` and instead set Global volume in the UI for both channels to **-66**
+-6.100000000000002dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Soul Jet Pro ANC Off ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -5.5dB.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 21 Hz   | 1.05 | 5.2 dB   |
-| Peaking | 240 Hz  | 0.74 | -12.1 dB |
-| Peaking | 564 Hz  | 1.74 | 9.8 dB   |
-| Peaking | 2368 Hz | 5.56 | -2.6 dB  |
-| Peaking | 4490 Hz | 3.51 | -8.9 dB  |
-| Peaking | 208 Hz  | 4.13 | 0.4 dB   |
-| Peaking | 1455 Hz | 2.65 | 1.7 dB   |
-| Peaking | 6655 Hz | 0.03 | -0.2 dB  |
-| Peaking | 6977 Hz | 8.59 | 3.9 dB   |
-| Peaking | 9480 Hz | 7.38 | -2.6 dB  |
+| Peaking | 21 Hz   | 1.26 | 5.1 dB   |
+| Peaking | 247 Hz  | 0.66 | -12.1 dB |
+| Peaking | 561 Hz  | 1.57 | 10.4 dB  |
+| Peaking | 2371 Hz | 5.25 | -2.5 dB  |
+| Peaking | 4492 Hz | 3.52 | -8.9 dB  |
+| Peaking | 75 Hz   | 4.19 | -0.8 dB  |
+| Peaking | 1429 Hz | 3.47 | 1.5 dB   |
+| Peaking | 5755 Hz | 3.6  | -1.5 dB  |
+| Peaking | 6867 Hz | 6.03 | 3.9 dB   |
+| Peaking | 9387 Hz | 6.29 | -2.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Soul%20Jet%20Pro%20ANC%20Off/Soul%20Jet%20Pro%20ANC%20Off.png)

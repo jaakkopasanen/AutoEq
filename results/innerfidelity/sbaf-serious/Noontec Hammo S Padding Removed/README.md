@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.5dB
-GraphicEQ: 10 -84; 20 3.7; 22 3.4; 23 3.3; 25 3.1; 26 3.0; 28 2.8; 30 2.7; 32 2.6; 35 2.5; 37 2.4; 40 2.3; 42 2.3; 45 2.2; 49 2.2; 52 2.1; 56 2.1; 59 2.1; 64 2.0; 68 2.0; 73 2.0; 78 1.9; 83 1.9; 89 1.8; 95 1.7; 102 1.6; 109 1.5; 117 0.9; 125 0.3; 134 -0.2; 143 -0.7; 153 -1.1; 164 -0.6; 175 -0.5; 188 -0.8; 201 -0.8; 215 -0.8; 230 -0.5; 246 -0.2; 263 0.3; 282 0.7; 301 1.1; 323 1.5; 345 1.7; 369 1.7; 395 2.0; 423 2.2; 452 2.2; 484 2.4; 518 2.5; 554 2.2; 593 1.8; 635 1.2; 679 0.6; 726 0.4; 777 0.6; 832 0.7; 890 0.8; 952 0.5; 1019 -0.1; 1090 -0.6; 1167 -1.0; 1248 -1.4; 1336 -1.8; 1429 -2.0; 1529 -2.1; 1636 -2.1; 1751 -1.8; 1873 -1.3; 2004 -0.4; 2145 0.6; 2295 1.4; 2455 2.9; 2627 4.1; 2811 4.7; 3008 5.0; 3219 4.8; 3444 2.6; 3685 0.7; 3943 3.1; 4219 2.0; 4514 2.6; 4830 5.4; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+Preamp: -6.1dB
+GraphicEQ: 10 -84; 20 3.7; 22 3.4; 23 3.3; 25 3.1; 26 3.0; 28 2.8; 30 2.7; 32 2.5; 35 2.4; 37 2.3; 40 2.2; 42 2.1; 45 2.0; 49 2.0; 52 1.9; 56 1.7; 59 1.6; 64 1.5; 68 1.4; 73 1.3; 78 1.2; 83 1.1; 89 1.1; 95 1.0; 102 1.1; 109 1.1; 117 0.7; 125 0.3; 134 -0.1; 143 -0.5; 153 -0.8; 164 -0.3; 175 -0.2; 188 -0.6; 201 -0.6; 215 -0.6; 230 -0.4; 246 -0.1; 263 0.4; 282 0.8; 301 1.1; 323 1.5; 345 1.7; 369 1.8; 395 2.0; 423 2.2; 452 2.2; 484 2.4; 518 2.5; 554 2.2; 593 1.8; 635 1.2; 679 0.6; 726 0.4; 777 0.6; 832 0.7; 890 0.8; 952 0.5; 1019 -0.1; 1090 -0.6; 1167 -1.0; 1248 -1.4; 1336 -1.8; 1429 -2.0; 1529 -2.1; 1636 -2.1; 1751 -1.8; 1873 -1.3; 2004 -0.4; 2145 0.6; 2295 1.4; 2455 2.9; 2627 4.1; 2811 4.7; 3008 5.0; 3219 4.8; 3444 2.6; 3685 0.7; 3943 3.1; 4219 2.0; 4514 2.6; 4830 5.4; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.5dB` and instead set Global volume in the UI for both channels to **-65**
+-6.098269946750708dB` and instead set Global volume in the UI for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Noontec Hammo S Padding Removed ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -6.9dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 0.42 | 3.1 dB  |
-| Peaking | 484 Hz  | 1.8  | 2.6 dB  |
-| Peaking | 1580 Hz | 1.96 | -2.9 dB |
-| Peaking | 2851 Hz | 2.86 | 5.2 dB  |
+| Peaking | 20 Hz   | 0.46 | 3.3 dB  |
+| Peaking | 479 Hz  | 1.68 | 2.6 dB  |
+| Peaking | 1579 Hz | 1.93 | -2.9 dB |
+| Peaking | 2851 Hz | 2.85 | 5.2 dB  |
 | Peaking | 5591 Hz | 2.7  | 6.6 dB  |
-| Peaking | 100 Hz  | 1.18 | 3.1 dB  |
-| Peaking | 145 Hz  | 0.62 | -3.0 dB |
-| Peaking | 347 Hz  | 1.12 | 1.9 dB  |
-| Peaking | 453 Hz  | 3.03 | -1.1 dB |
-| Peaking | 8265 Hz | 4.8  | -1.2 dB |
+| Peaking | 102 Hz  | 1.57 | 1.1 dB  |
+| Peaking | 194 Hz  | 0.84 | -1.8 dB |
+| Peaking | 339 Hz  | 1.18 | 1.5 dB  |
+| Peaking | 442 Hz  | 3.84 | -0.8 dB |
+| Peaking | 8277 Hz | 4.78 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Noontec%20Hammo%20S%20Padding%20Removed/Noontec%20Hammo%20S%20Padding%20Removed.png)

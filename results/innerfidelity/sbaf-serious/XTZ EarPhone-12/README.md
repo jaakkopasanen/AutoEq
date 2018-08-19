@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.4dB
-GraphicEQ: 10 -84; 20 0.2; 22 -0.3; 23 -0.5; 25 -0.9; 26 -1.1; 28 -1.4; 30 -1.7; 32 -2.0; 35 -2.4; 37 -2.6; 40 -2.8; 42 -3.0; 45 -3.1; 49 -3.3; 52 -3.4; 56 -3.6; 59 -3.7; 64 -3.9; 68 -4.0; 73 -4.1; 78 -4.3; 83 -4.5; 89 -4.9; 95 -5.4; 102 -5.9; 109 -6.3; 117 -6.7; 125 -7.2; 134 -7.6; 143 -7.7; 153 -7.8; 164 -7.8; 175 -7.6; 188 -7.5; 201 -7.2; 215 -6.9; 230 -6.6; 246 -6.3; 263 -6.0; 282 -5.6; 301 -5.2; 323 -4.8; 345 -4.4; 369 -4.0; 395 -3.6; 423 -3.1; 452 -2.6; 484 -2.3; 518 -1.9; 554 -1.3; 593 -0.8; 635 -0.4; 679 -0.2; 726 0.1; 777 0.5; 832 0.6; 890 0.4; 952 0.2; 1019 -0.0; 1090 -0.2; 1167 -0.5; 1248 -0.7; 1336 -1.0; 1429 -1.4; 1529 -1.8; 1636 -2.3; 1751 -2.7; 1873 -3.0; 2004 -3.3; 2145 -3.4; 2295 -3.2; 2455 -2.7; 2627 -1.8; 2811 -0.8; 3008 0.8; 3219 2.1; 3444 3.4; 3685 3.6; 3943 3.0; 4219 1.4; 4514 0.4; 4830 0.5; 5168 1.1; 5530 1.9; 5917 2.7; 6331 3.5; 6775 3.6; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+Preamp: -3.9dB
+GraphicEQ: 10 -84; 20 0.1; 22 -0.4; 23 -0.6; 25 -1.0; 26 -1.2; 28 -1.6; 30 -1.9; 32 -2.2; 35 -2.7; 37 -2.9; 40 -3.2; 42 -3.4; 45 -3.7; 49 -4.0; 52 -4.3; 56 -4.6; 59 -4.8; 64 -5.1; 68 -5.4; 73 -5.7; 78 -5.9; 83 -6.2; 89 -6.5; 95 -6.8; 102 -6.9; 109 -7.0; 117 -7.1; 125 -7.2; 134 -7.3; 143 -7.3; 153 -7.3; 164 -7.2; 175 -7.1; 188 -7.0; 201 -6.7; 215 -6.6; 230 -6.3; 246 -6.0; 263 -5.8; 282 -5.4; 301 -5.0; 323 -4.7; 345 -4.3; 369 -3.9; 395 -3.5; 423 -3.0; 452 -2.6; 484 -2.3; 518 -1.8; 554 -1.3; 593 -0.7; 635 -0.4; 679 -0.2; 726 0.1; 777 0.6; 832 0.6; 890 0.5; 952 0.2; 1019 -0.0; 1090 -0.2; 1167 -0.5; 1248 -0.7; 1336 -1.0; 1429 -1.4; 1529 -1.8; 1636 -2.3; 1751 -2.7; 1873 -3.0; 2004 -3.3; 2145 -3.4; 2295 -3.2; 2455 -2.7; 2627 -1.8; 2811 -0.8; 3008 0.8; 3219 2.1; 3444 3.4; 3685 3.6; 3943 3.0; 4219 1.4; 4514 0.4; 4830 0.5; 5168 1.1; 5530 1.9; 5917 2.7; 6331 3.5; 6775 3.6; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-44**
+-3.9390929440544777dB` and instead set Global volume in the UI for both channels to **-39**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `XTZ EarPhone-12 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-4.1dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -4.1dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 48 Hz   | 0.91 | -1.9 dB |
-| Peaking | 169 Hz  | 0.68 | -7.8 dB |
-| Peaking | 2143 Hz | 2.11 | -3.9 dB |
-| Peaking | 3578 Hz | 3.6  | 4.5 dB  |
-| Peaking | 6300 Hz | 4.57 | 3.9 dB  |
-| Peaking | 199 Hz  | 1.89 | 1.0 dB  |
-| Peaking | 312 Hz  | 0.67 | -1.0 dB |
-| Peaking | 770 Hz  | 1.5  | 1.9 dB  |
-| Peaking | 1565 Hz | 3.68 | -0.7 dB |
-| Peaking | 8297 Hz | 5.79 | -0.4 dB |
+| Peaking | 102 Hz  | 0.53 | -6.4 dB |
+| Peaking | 240 Hz  | 1.04 | -3.3 dB |
+| Peaking | 2137 Hz | 2.05 | -3.9 dB |
+| Peaking | 3557 Hz | 3.57 | 4.5 dB  |
+| Peaking | 6409 Hz | 4.58 | 3.9 dB  |
+| Peaking | 17 Hz   | 0.45 | 1.1 dB  |
+| Peaking | 36 Hz   | 1.32 | -1.2 dB |
+| Peaking | 413 Hz  | 2.56 | -0.7 dB |
+| Peaking | 797 Hz  | 1.98 | 1.5 dB  |
+| Peaking | 1576 Hz | 4.04 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/XTZ%20EarPhone-12/XTZ%20EarPhone-12.png)

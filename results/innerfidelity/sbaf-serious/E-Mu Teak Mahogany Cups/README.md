@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.2dB
-GraphicEQ: 10 -84; 20 -0.9; 22 -1.7; 23 -2.0; 25 -2.5; 26 -2.7; 28 -3.0; 30 -3.2; 32 -3.3; 35 -3.3; 37 -3.3; 40 -3.3; 42 -3.2; 45 -3.2; 49 -3.1; 52 -3.0; 56 -2.7; 59 -2.5; 64 -2.3; 68 -2.3; 73 -2.5; 78 -2.6; 83 -2.8; 89 -3.0; 95 -3.2; 102 -3.3; 109 -3.6; 117 -3.9; 125 -4.1; 134 -4.3; 143 -4.4; 153 -4.5; 164 -4.3; 175 -4.3; 188 -4.1; 201 -4.1; 215 -3.9; 230 -3.6; 246 -3.4; 263 -3.2; 282 -2.9; 301 -2.6; 323 -2.4; 345 -2.2; 369 -2.0; 395 -1.7; 423 -1.2; 452 -0.9; 484 -0.8; 518 -0.6; 554 -0.3; 593 0.2; 635 -0.0; 679 -0.3; 726 -0.5; 777 -0.6; 832 -0.1; 890 0.4; 952 -0.1; 1019 -0.2; 1090 -0.2; 1167 -0.1; 1248 -0.1; 1336 -0.3; 1429 -0.4; 1529 -0.6; 1636 -0.6; 1751 -0.5; 1873 -0.2; 2004 0.3; 2145 0.8; 2295 1.1; 2455 2.0; 2627 2.6; 2811 2.5; 3008 2.6; 3219 2.2; 3444 1.9; 3685 2.0; 3943 2.2; 4219 1.6; 4514 1.0; 4830 0.4; 5168 -0.0; 5530 0.6; 5917 0.7; 6331 1.4; 6775 2.6; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.2; 9502 -2.6; 10167 -2.2; 10879 -0.3; 11640 0.0; 12455 -0.2; 13327 -1.3; 14260 -0.9; 15258 -0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.1
+Preamp: -2.8dB
+GraphicEQ: 10 -84; 20 -0.9; 22 -1.7; 23 -2.0; 25 -2.5; 26 -2.8; 28 -3.1; 30 -3.2; 32 -3.3; 35 -3.4; 37 -3.4; 40 -3.4; 42 -3.4; 45 -3.4; 49 -3.3; 52 -3.2; 56 -3.1; 59 -2.9; 64 -2.8; 68 -2.9; 73 -3.2; 78 -3.4; 83 -3.6; 89 -3.8; 95 -3.9; 102 -3.9; 109 -4.0; 117 -4.1; 125 -4.1; 134 -4.2; 143 -4.2; 153 -4.2; 164 -4.1; 175 -4.0; 188 -3.9; 201 -3.9; 215 -3.7; 230 -3.4; 246 -3.3; 263 -3.1; 282 -2.8; 301 -2.6; 323 -2.4; 345 -2.2; 369 -1.9; 395 -1.7; 423 -1.2; 452 -0.9; 484 -0.8; 518 -0.5; 554 -0.3; 593 0.2; 635 -0.0; 679 -0.3; 726 -0.5; 777 -0.6; 832 -0.1; 890 0.4; 952 -0.1; 1019 -0.2; 1090 -0.2; 1167 -0.1; 1248 -0.1; 1336 -0.3; 1429 -0.4; 1529 -0.6; 1636 -0.6; 1751 -0.5; 1873 -0.2; 2004 0.3; 2145 0.8; 2295 1.1; 2455 2.0; 2627 2.6; 2811 2.5; 3008 2.6; 3219 2.2; 3444 1.9; 3685 2.0; 3943 2.2; 4219 1.6; 4514 1.0; 4830 0.4; 5168 -0.0; 5530 0.6; 5917 0.7; 6331 1.4; 6775 2.6; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.2; 9502 -2.6; 10167 -2.2; 10879 -0.3; 11640 0.0; 12455 -0.2; 13327 -1.3; 14260 -0.9; 15258 -0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.1
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.2dB` and instead set Global volume in the UI for both channels to **-32**
+-2.791589799229325dB` and instead set Global volume in the UI for both channels to **-27**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `E-Mu Teak Mahogany Cups ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -2.8dB.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 35 Hz    | 0.96 | -3.0 dB |
-| Peaking | 166 Hz   | 0.7  | -4.3 dB |
-| Peaking | 3084 Hz  | 1.92 | 2.8 dB  |
-| Peaking | 6790 Hz  | 6.62 | 2.5 dB  |
-| Peaking | 9745 Hz  | 6.3  | -3.1 dB |
-| Peaking | 587 Hz   | 5.44 | 0.9 dB  |
-| Peaking | 1695 Hz  | 3.04 | -1.1 dB |
-| Peaking | 3154 Hz  | 1.87 | 1.2 dB  |
-| Peaking | 3203 Hz  | 4.92 | -1.8 dB |
-| Peaking | 13675 Hz | 6.83 | -1.5 dB |
+| Peaking | 35 Hz    | 0.9  | -2.8 dB |
+| Peaking | 150 Hz   | 0.59 | -4.1 dB |
+| Peaking | 3085 Hz  | 1.91 | 2.8 dB  |
+| Peaking | 6811 Hz  | 6.75 | 2.5 dB  |
+| Peaking | 9771 Hz  | 6.39 | -3.1 dB |
+| Peaking | 589 Hz   | 5.06 | 0.9 dB  |
+| Peaking | 1690 Hz  | 3.07 | -1.1 dB |
+| Peaking | 3140 Hz  | 1.91 | 1.2 dB  |
+| Peaking | 3226 Hz  | 5.03 | -1.8 dB |
+| Peaking | 13588 Hz | 6.83 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/E-Mu%20Teak%20Mahogany%20Cups/E-Mu%20Teak%20Mahogany%20Cups.png)

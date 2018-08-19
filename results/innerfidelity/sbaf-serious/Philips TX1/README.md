@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.1dB
-GraphicEQ: 10 -84; 20 -9.0; 22 -8.9; 23 -8.9; 25 -8.9; 26 -8.8; 28 -8.7; 30 -8.7; 32 -8.6; 35 -8.4; 37 -8.3; 40 -8.2; 42 -8.1; 45 -7.9; 49 -7.7; 52 -7.6; 56 -7.4; 59 -7.2; 64 -7.0; 68 -6.9; 73 -6.7; 78 -6.7; 83 -6.7; 89 -6.7; 95 -6.9; 102 -7.1; 109 -7.3; 117 -7.5; 125 -7.7; 134 -7.8; 143 -7.8; 153 -7.7; 164 -7.5; 175 -7.1; 188 -6.8; 201 -6.4; 215 -6.0; 230 -5.5; 246 -5.2; 263 -4.8; 282 -4.3; 301 -3.9; 323 -3.5; 345 -3.0; 369 -2.7; 395 -2.3; 423 -1.8; 452 -1.5; 484 -1.1; 518 -0.8; 554 -0.4; 593 0.1; 635 0.3; 679 0.3; 726 0.5; 777 0.7; 832 0.6; 890 0.5; 952 0.2; 1019 -0.0; 1090 -0.3; 1167 -0.6; 1248 -0.8; 1336 -1.3; 1429 -1.9; 1529 -2.3; 1636 -2.7; 1751 -2.9; 1873 -2.8; 2004 -2.6; 2145 -2.2; 2295 -1.5; 2455 -0.2; 2627 0.8; 2811 1.7; 3008 3.1; 3219 3.9; 3444 4.6; 3685 4.1; 3943 2.9; 4219 0.4; 4514 -1.7; 4830 -3.3; 5168 -4.0; 5530 -3.9; 5917 -2.2; 6331 -1.0; 6775 0.1; 7249 0.7; 7756 0.2; 8299 -0.8; 8880 -1.6; 9502 -1.6; 10167 -0.9; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+Preamp: -4.7dB
+GraphicEQ: 10 -84; 20 -9.1; 22 -9.0; 23 -9.0; 25 -9.0; 26 -8.9; 28 -8.9; 30 -8.8; 32 -8.8; 35 -8.7; 37 -8.7; 40 -8.6; 42 -8.5; 45 -8.5; 49 -8.4; 52 -8.4; 56 -8.4; 59 -8.3; 64 -8.3; 68 -8.3; 73 -8.3; 78 -8.3; 83 -8.3; 89 -8.3; 95 -8.3; 102 -8.2; 109 -8.0; 117 -7.9; 125 -7.7; 134 -7.6; 143 -7.4; 153 -7.1; 164 -6.9; 175 -6.6; 188 -6.3; 201 -6.0; 215 -5.6; 230 -5.2; 246 -4.9; 263 -4.6; 282 -4.1; 301 -3.7; 323 -3.4; 345 -2.9; 369 -2.6; 395 -2.2; 423 -1.7; 452 -1.4; 484 -1.1; 518 -0.7; 554 -0.3; 593 0.1; 635 0.3; 679 0.3; 726 0.5; 777 0.7; 832 0.6; 890 0.5; 952 0.2; 1019 -0.0; 1090 -0.3; 1167 -0.6; 1248 -0.8; 1336 -1.3; 1429 -1.9; 1529 -2.3; 1636 -2.7; 1751 -2.9; 1873 -2.8; 2004 -2.6; 2145 -2.2; 2295 -1.5; 2455 -0.2; 2627 0.8; 2811 1.7; 3008 3.1; 3219 3.9; 3444 4.6; 3685 4.1; 3943 2.9; 4219 0.4; 4514 -1.7; 4830 -3.3; 5168 -4.0; 5530 -3.9; 5917 -2.2; 6331 -1.0; 6775 0.1; 7249 0.7; 7756 0.2; 8299 -0.8; 8880 -1.6; 9502 -1.6; 10167 -0.9; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.1dB` and instead set Global volume in the UI for both channels to **-51**
+-4.672943423641249dB` and instead set Global volume in the UI for both channels to **-46**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips TX1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -4.8dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 10 Hz   | 0.95 | -8.6 dB |
-| Peaking | 32 Hz   | 0.41 | -7.0 dB |
-| Peaking | 163 Hz  | 0.78 | -6.1 dB |
-| Peaking | 3517 Hz | 3.95 | 5.8 dB  |
-| Peaking | 5152 Hz | 3.38 | -4.8 dB |
-| Peaking | 777 Hz  | 1.76 | 1.6 dB  |
-| Peaking | 1830 Hz | 1.65 | -3.3 dB |
-| Peaking | 2895 Hz | 3.91 | 1.9 dB  |
-| Peaking | 7253 Hz | 5.1  | 1.6 dB  |
-| Peaking | 9165 Hz | 4.45 | -1.8 dB |
+| Peaking | 24 Hz   | 0.2  | -8.7 dB |
+| Peaking | 159 Hz  | 0.75 | -3.8 dB |
+| Peaking | 1880 Hz | 2.26 | -3.6 dB |
+| Peaking | 3495 Hz | 2.26 | 5.9 dB  |
+| Peaking | 5070 Hz | 3    | -5.6 dB |
+| Peaking | 314 Hz  | 1.76 | -0.7 dB |
+| Peaking | 732 Hz  | 1.47 | 1.4 dB  |
+| Peaking | 1449 Hz | 4.1  | -0.8 dB |
+| Peaking | 7245 Hz | 5.77 | 1.6 dB  |
+| Peaking | 9162 Hz | 4.36 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20TX1/Philips%20TX1.png)

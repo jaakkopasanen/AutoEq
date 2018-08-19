@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.3dB
-GraphicEQ: 10 -84; 20 -9.8; 22 -9.7; 23 -9.7; 25 -9.6; 26 -9.5; 28 -9.3; 30 -9.1; 32 -9.0; 35 -8.8; 37 -8.7; 40 -8.4; 42 -8.3; 45 -8.0; 49 -7.6; 52 -7.4; 56 -7.1; 59 -6.8; 64 -6.5; 68 -6.2; 73 -6.0; 78 -5.8; 83 -5.7; 89 -5.7; 95 -5.8; 102 -6.0; 109 -6.1; 117 -6.2; 125 -6.4; 134 -6.6; 143 -6.3; 153 -6.2; 164 -6.1; 175 -5.6; 188 -5.3; 201 -4.9; 215 -4.5; 230 -4.1; 246 -3.8; 263 -3.4; 282 -2.8; 301 -2.6; 323 -2.1; 345 -1.7; 369 -1.2; 395 -0.9; 423 -0.4; 452 -0.0; 484 0.0; 518 0.4; 554 0.9; 593 1.2; 635 1.3; 679 1.3; 726 1.3; 777 1.3; 832 1.1; 890 0.7; 952 0.4; 1019 -0.1; 1090 -0.5; 1167 -1.0; 1248 -1.6; 1336 -2.6; 1429 -3.7; 1529 -4.8; 1636 -5.8; 1751 -6.7; 1873 -7.2; 2004 -7.0; 2145 -6.1; 2295 -4.8; 2455 -2.4; 2627 2.3; 2811 3.0; 3008 3.4; 3219 2.1; 3444 1.7; 3685 1.5; 3943 1.2; 4219 0.8; 4514 1.3; 4830 2.3; 5168 3.8; 5530 4.5; 5917 4.7; 6331 3.3; 6775 1.9; 7249 -0.1; 7756 -2.6; 8299 -4.7; 8880 -4.9; 9502 -2.7; 10167 -0.1; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 -1.2; 15258 -4.8; 16326 -5.7; 17469 -3.8; 18692 -2.2; 20000 -3.8
+Preamp: -4.9dB
+GraphicEQ: 10 -84; 20 -9.8; 22 -9.8; 23 -9.8; 25 -9.7; 26 -9.6; 28 -9.5; 30 -9.3; 32 -9.2; 35 -9.1; 37 -9.0; 40 -8.9; 42 -8.7; 45 -8.6; 49 -8.3; 52 -8.2; 56 -8.0; 59 -7.9; 64 -7.8; 68 -7.7; 73 -7.6; 78 -7.4; 83 -7.4; 89 -7.3; 95 -7.2; 102 -7.0; 109 -6.8; 117 -6.6; 125 -6.4; 134 -6.3; 143 -5.9; 153 -5.7; 164 -5.5; 175 -5.1; 188 -4.8; 201 -4.5; 215 -4.2; 230 -3.8; 246 -3.6; 263 -3.2; 282 -2.6; 301 -2.4; 323 -1.9; 345 -1.6; 369 -1.1; 395 -0.8; 423 -0.3; 452 0.0; 484 0.1; 518 0.4; 554 0.9; 593 1.2; 635 1.3; 679 1.3; 726 1.3; 777 1.3; 832 1.1; 890 0.7; 952 0.4; 1019 -0.1; 1090 -0.5; 1167 -1.0; 1248 -1.6; 1336 -2.6; 1429 -3.7; 1529 -4.8; 1636 -5.8; 1751 -6.7; 1873 -7.2; 2004 -7.0; 2145 -6.1; 2295 -4.8; 2455 -2.4; 2627 2.3; 2811 3.0; 3008 3.4; 3219 2.1; 3444 1.7; 3685 1.5; 3943 1.2; 4219 0.8; 4514 1.3; 4830 2.3; 5168 3.8; 5530 4.5; 5917 4.7; 6331 3.3; 6775 1.9; 7249 -0.1; 7756 -2.6; 8299 -4.7; 8880 -4.9; 9502 -2.7; 10167 -0.1; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 -1.2; 15258 -4.8; 16326 -5.7; 17469 -3.8; 18692 -2.2; 20000 -3.8
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.3dB` and instead set Global volume in the UI for both channels to **-53**
+-4.879433751121188dB` and instead set Global volume in the UI for both channels to **-48**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `KEF M200 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -2.8dB.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 10 Hz    | 0.56 | -8.8 dB |
-| Peaking | 38 Hz    | 0.46 | -6.2 dB |
-| Peaking | 158 Hz   | 1.1  | -4.8 dB |
-| Peaking | 1841 Hz  | 3.16 | -8.2 dB |
-| Peaking | 5516 Hz  | 3.64 | 5.2 dB  |
-| Peaking | 707 Hz   | 1.83 | 1.9 dB  |
-| Peaking | 1516 Hz  | 1.54 | -2.2 dB |
-| Peaking | 5502 Hz  | 0.21 | 1.7 dB  |
-| Peaking | 8521 Hz  | 3.56 | -7.0 dB |
-| Peaking | 16453 Hz | 1.8  | -6.7 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 18 Hz    | 0.19 | -9.6 dB  |
+| Peaking | 158 Hz   | 0.64 | -3.3 dB  |
+| Peaking | 1872 Hz  | 1.16 | -18.0 dB |
+| Peaking | 2387 Hz  | 0.39 | 11.6 dB  |
+| Peaking | 14632 Hz | 0.17 | -3.8 dB  |
+| Peaking | 2848 Hz  | 4.89 | 4.3 dB   |
+| Peaking | 4811 Hz  | 0.79 | -3.5 dB  |
+| Peaking | 5795 Hz  | 2.38 | 6.6 dB   |
+| Peaking | 8509 Hz  | 3.96 | -5.4 dB  |
+| Peaking | 11619 Hz | 2.04 | 3.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/KEF%20M200/KEF%20M200.png)

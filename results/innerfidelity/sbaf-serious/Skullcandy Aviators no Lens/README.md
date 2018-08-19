@@ -4,32 +4,33 @@
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.6dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 5.9; 30 5.6; 32 5.0; 35 4.0; 37 3.3; 40 2.4; 42 1.9; 45 1.2; 49 0.3; 52 -0.2; 56 -0.8; 59 -1.2; 64 -1.6; 68 -2.0; 73 -2.4; 78 -2.7; 83 -3.0; 89 -3.3; 95 -3.6; 102 -4.0; 109 -4.3; 117 -4.5; 125 -4.9; 134 -5.1; 143 -5.2; 153 -5.2; 164 -5.2; 175 -5.1; 188 -5.0; 201 -5.0; 215 -4.8; 230 -4.6; 246 -4.5; 263 -4.3; 282 -3.9; 301 -3.7; 323 -3.6; 345 -3.5; 369 -3.3; 395 -3.2; 423 -3.0; 452 -2.8; 484 -2.7; 518 -2.6; 554 -2.4; 593 -1.9; 635 -1.7; 679 -1.7; 726 -1.3; 777 -0.9; 832 -0.8; 890 -0.6; 952 -0.3; 1019 0.0; 1090 0.5; 1167 0.9; 1248 1.5; 1336 1.5; 1429 1.3; 1529 1.8; 1636 2.5; 1751 3.3; 1873 3.7; 2004 3.9; 2145 3.5; 2295 2.7; 2455 2.0; 2627 0.9; 2811 -0.4; 3008 -1.5; 3219 -2.0; 3444 -1.6; 3685 -0.7; 3943 -1.4; 4219 -4.6; 4514 -5.6; 4830 -4.4; 5168 -1.4; 5530 1.1; 5917 3.3; 6331 4.1; 6775 3.3; 7249 1.3; 7756 0.3; 8299 -0.3; 8880 -2.1; 9502 -2.6; 10167 -2.1; 10879 -1.4; 11640 -0.3; 12455 0.0; 13327 -0.0; 14260 -0.4; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+Preamp: -6.1dB
+GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 5.9; 30 5.6; 32 5.0; 35 3.9; 37 3.2; 40 2.3; 42 1.7; 45 1.0; 49 0.1; 52 -0.5; 56 -1.2; 59 -1.6; 64 -2.2; 68 -2.6; 73 -3.1; 78 -3.5; 83 -3.8; 89 -4.1; 95 -4.4; 102 -4.6; 109 -4.7; 117 -4.7; 125 -4.9; 134 -4.9; 143 -5.0; 153 -5.0; 164 -4.9; 175 -4.9; 188 -4.8; 201 -4.8; 215 -4.6; 230 -4.5; 246 -4.4; 263 -4.2; 282 -3.9; 301 -3.7; 323 -3.6; 345 -3.5; 369 -3.3; 395 -3.1; 423 -3.0; 452 -2.8; 484 -2.7; 518 -2.6; 554 -2.3; 593 -1.9; 635 -1.7; 679 -1.7; 726 -1.3; 777 -0.9; 832 -0.8; 890 -0.6; 952 -0.3; 1019 0.0; 1090 0.5; 1167 0.9; 1248 1.5; 1336 1.5; 1429 1.3; 1529 1.8; 1636 2.5; 1751 3.3; 1873 3.7; 2004 3.9; 2145 3.5; 2295 2.7; 2455 2.0; 2627 0.9; 2811 -0.4; 3008 -1.5; 3219 -2.0; 3444 -1.6; 3685 -0.7; 3943 -1.4; 4219 -4.6; 4514 -5.6; 4830 -4.4; 5168 -1.4; 5530 1.1; 5917 3.3; 6331 4.1; 6775 3.3; 7249 1.3; 7756 0.3; 8299 -0.3; 8880 -2.1; 9502 -2.6; 10167 -2.1; 10879 -1.4; 11640 -0.3; 12455 0.0; 13327 -0.0; 14260 -0.4; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.6dB` and instead set Global volume in the UI for both channels to **-66**
+-6.1000000000000005dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Aviators no Lens ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually with
-these parameters. The first 5 filters can be used independently.
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of -6.5dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 25 Hz   | 0.85 | 7.2 dB  |
-| Peaking | 155 Hz  | 0.36 | -5.3 dB |
-| Peaking | 2008 Hz | 1.32 | 5.2 dB  |
-| Peaking | 5302 Hz | 0.95 | -8.9 dB |
-| Peaking | 6170 Hz | 2.46 | 12.3 dB |
-| Peaking | 3143 Hz | 4.66 | -1.6 dB |
-| Peaking | 3845 Hz | 4.48 | 3.3 dB  |
-| Peaking | 4420 Hz | 5.79 | -3.4 dB |
-| Peaking | 9717 Hz | 3.11 | -3.2 dB |
-| Peaking | 9741 Hz | 1.01 | 1.6 dB  |
+| Peaking | 26 Hz   | 0.73 | 9.0 dB  |
+| Peaking | 110 Hz  | 0.26 | -5.7 dB |
+| Peaking | 2001 Hz | 1.3  | 5.2 dB  |
+| Peaking | 5301 Hz | 0.95 | -9.1 dB |
+| Peaking | 6176 Hz | 2.45 | 12.4 dB |
+| Peaking | 3155 Hz | 4.63 | -1.7 dB |
+| Peaking | 3841 Hz | 4.07 | 3.4 dB  |
+| Peaking | 4409 Hz | 5.81 | -3.5 dB |
+| Peaking | 9682 Hz | 3.16 | -3.1 dB |
+| Peaking | 9905 Hz | 1    | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Aviators%20no%20Lens/Skullcandy%20Aviators%20no%20Lens.png)
