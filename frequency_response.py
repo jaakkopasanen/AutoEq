@@ -592,7 +592,7 @@ class FrequencyResponse:
             
             ### HeSuVi
             In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
-            {f_preamp}dB` and instead set Global volume in the UI for both channels to **{i_preamp}**
+            {f_preamp:.1f}dB` and instead set Global volume in the UI for both channels to **{i_preamp}**
             '''.format(
                 preamp=preamp,
                 graphic_eq=graphic_eq_str,
@@ -1184,6 +1184,113 @@ class FrequencyResponse:
             args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
         return args
 
+    def process(self,
+                calibration=None,
+                compensation=None,
+                equalize=False,
+                parametric_eq=False,
+                max_filters=None,
+                bass_boost=None,
+                iem_bass_boost=None,
+                tilt=None,
+                max_gain=DEFAULT_MAX_GAIN,
+                treble_f_lower=DEFAULT_TREBLE_F_LOWER,
+                treble_f_upper=DEFAULT_TREBLE_F_UPPER,
+                treble_max_gain=DEFAULT_TREBLE_MAX_GAIN,
+                treble_gain_k=DEFAULT_TREBLE_GAIN_K):
+        """Runs processing pipeline with interpolation, centering, compensation, calibration and equalization.
+
+        Args:
+            calibration: Calibration FrequencyResponse. Must be interpolated and centered.
+            compensation: Compensation FrequencyReponse. Must be interpolated and centered.
+            equalize: Run equalization?
+            parametric_eq: Optimize peaking filters for parametric eq?
+            max_filters: List of maximum number of peaking filters for each additive filter optimization run.
+            bass_boost: Bass boost amount in dB for over-ear headphones.
+            iem_bass_boost: Bass boost amount in dB for in-ear headphones.
+            tilt: Target frequency response tilt in db / octave
+            max_gain: Maximum positive gain in dB
+            treble_f_lower: Lower bound for treble transition region
+            treble_f_upper: Upper boud for treble transition region
+            treble_max_gain: Maximum gain in treble region
+            treble_gain_k: Gain coefficient in treble region
+
+        Returns:
+            - **filters:** Numpy array of produced peaking filters. Each row contains Fc, Q and gain
+            - **n_filters:** Number of produced peaking filters for each group.
+            - **max_gains:** Maximum positive gains in each peaking filter group.
+        """
+        if parametric_eq and not equalize:
+            raise ValueError('equalize must be True when parametric_eq is True.')
+
+        # Use either normal bass boost (for on-ears) or iem bass boost
+        if bass_boost is not None and iem_bass_boost is not None:
+            raise TypeError('"bass_boost" or "iem_bass_boost" can be given but not both')
+        elif bass_boost is not None and iem_bass_boost is None:
+            bass_boost_f_lower = DEFAULT_OE_BASS_BOOST_F_LOWER
+            bass_boost_f_upper = DEFAULT_OE_BASS_BOOST_F_UPPER
+        elif iem_bass_boost is not None and bass_boost is None:
+            bass_boost = iem_bass_boost
+            bass_boost_f_lower = DEFAULT_IE_BASS_BOOST_F_LOWER
+            bass_boost_f_upper = DEFAULT_IE_BASS_BOOST_F_UPPER
+        else:
+            bass_boost = None
+            bass_boost_f_lower = None
+            bass_boost_f_upper = None
+
+        if max_filters is not None and type(max_filters) != list:
+            max_filters = [max_filters]
+
+        # Interpolate to standard frequency vector
+        self.interpolate()
+
+        if calibration is not None:
+            # Calibrate
+            self.calibrate(calibration)
+
+        # Center by 1kHz
+        self.center()
+
+        if compensation is not None:
+            # Compensate
+            self.compensate(
+                compensation,
+                bass_boost=bass_boost,
+                bass_boost_f_lower=bass_boost_f_lower,
+                bass_boost_f_upper=bass_boost_f_upper,
+                tilt=tilt
+            )
+
+        # Smooth data
+        self.smoothen(
+            window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
+            iterations=DEFAULT_SMOOTHING_ITERATIONS,
+            treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
+            treble_iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS,
+            treble_f_lower=treble_f_lower,
+            treble_f_upper=treble_f_upper
+        )
+
+        filters = None
+        n_filters = None
+        max_gains = None
+
+        # Equalize
+        if equalize:
+            self.equalize(
+                max_gain=max_gain,
+                smoothen=True,
+                treble_f_lower=treble_f_lower,
+                treble_f_upper=treble_f_upper,
+                treble_max_gain=treble_max_gain,
+                treble_gain_k=treble_gain_k
+            )
+            if parametric_eq:
+                # Get the filters
+                filters, n_filters, max_gains = self.optimize_parametric_eq(max_filters=max_filters)
+
+        return filters, n_filters, max_gains
+
     @staticmethod
     def main(input_dir=None,
              output_dir=None,
@@ -1202,23 +1309,6 @@ class FrequencyResponse:
              treble_gain_k=DEFAULT_TREBLE_GAIN_K,
              show_plot=False):
         """Parses files in input directory and produces equalization results in output directory."""
-        if parametric_eq and not equalize:
-            raise ValueError('equalize must be True when parametric_eq is True.')
-
-        # Use either normal bass boost (for on-ears) or iem bass boost
-        if bass_boost is not None and iem_bass_boost is not None:
-            raise TypeError('"bass_boost" or "iem_bass_boost" can be given but not both')
-        elif bass_boost is not None and iem_bass_boost is None:
-            bass_boost_f_lower = DEFAULT_OE_BASS_BOOST_F_LOWER
-            bass_boost_f_upper = DEFAULT_OE_BASS_BOOST_F_UPPER
-        elif iem_bass_boost is not None and bass_boost is None:
-            bass_boost = iem_bass_boost
-            bass_boost_f_lower = DEFAULT_IE_BASS_BOOST_F_LOWER
-            bass_boost_f_upper = DEFAULT_IE_BASS_BOOST_F_UPPER
-        else:
-            bass_boost = None
-            bass_boost_f_lower = None
-            bass_boost_f_upper = None
 
         # Dir paths to absolute
         input_dir = os.path.abspath(input_dir)
@@ -1240,66 +1330,26 @@ class FrequencyResponse:
             compensation.interpolate()
             compensation.center()
 
-        if max_filters is not None and type(max_filters) != list:
-            max_filters = [max_filters]
-
-        if output_dir:
-            output_dir = os.path.abspath(output_dir)
-            readme_path = os.path.join(output_dir, 'README.md')
-        else:
-            readme_path = None
-        readme_occupied = False
-
         for file_path in glob_files:
             # Read data from input file
             fr = FrequencyResponse.read_from_csv(file_path)
 
-            # Interpolate to standard frequency vector
-            fr.interpolate()
-
-            if calibration is not None:
-                # Calibrate
-                fr.calibrate(calibration)
-
-            # Center by 1kHz
-            fr.center()
-
-            if compensation is not None:
-                # Compensate
-                fr.compensate(
-                    compensation,
-                    bass_boost=bass_boost,
-                    bass_boost_f_lower=bass_boost_f_lower,
-                    bass_boost_f_upper=bass_boost_f_upper,
-                    tilt=tilt
-                )
-
-            # Smooth data
-            fr.smoothen(
-                window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-                iterations=DEFAULT_SMOOTHING_ITERATIONS,
-                treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
-                treble_iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS,
+            # Process and equalize
+            filters, n_filters, max_gains = fr.process(
+                calibration=calibration,
+                compensation=compensation,
+                equalize=equalize,
+                parametric_eq=parametric_eq,
+                max_filters=max_filters,
+                bass_boost=bass_boost,
+                iem_bass_boost=iem_bass_boost,
+                tilt=tilt,
+                max_gain=max_gain,
                 treble_f_lower=treble_f_lower,
-                treble_f_upper=treble_f_upper
+                treble_f_upper=treble_f_upper,
+                treble_max_gain=treble_max_gain,
+                treble_gain_k=treble_gain_k
             )
-
-            n_filters = None
-            max_gains = None
-
-            # Equalize
-            if equalize:
-                fr.equalize(
-                    max_gain=max_gain,
-                    smoothen=True,
-                    treble_f_lower=treble_f_lower,
-                    treble_f_upper=treble_f_upper,
-                    treble_max_gain=treble_max_gain,
-                    treble_gain_k=treble_gain_k
-                )
-                if parametric_eq:
-                    # Get the filters
-                    filters, n_filters, max_gains = fr.optimize_parametric_eq(max_filters=max_filters)
 
             if output_dir:
                 # Copy relative path to output directory
@@ -1334,42 +1384,12 @@ class FrequencyResponse:
                     max_filters=n_filters,
                     max_gains=max_gains
                 )
-                if _readme_path == readme_path:
-                    readme_occupied = True
 
             elif show_plot:
                 fig, ax = fr.plot_graph(show=show_plot)
                 plt.close(fig)
 
             print(fr.name)
-
-        if output_dir:
-            # Write parameters to run README.md
-            lines = ['# Run {}'.format(datetime.now().isoformat())]
-            lines.append('There results were obtained with parameters:')
-            lines.append('* `--input_dir="{}"`'.format(os.path.relpath(input_dir, ROOT_DIR)))
-            lines.append('* `--output_dir="{}"`'.format(os.path.relpath(output_dir, ROOT_DIR)))
-            if calibration is not None:
-                lines.append('* `--calibration="{}"`'.format(os.path.relpath(calibration_path, ROOT_DIR)))
-            if compensation is not None:
-                lines.append('* `--compensation="{}"`'.format(os.path.relpath(compensation_path, ROOT_DIR)))
-            lines.append('* `--bass_boost={}`'.format(bass_boost))
-            lines.append('* `--tilt={}`'.format(tilt))
-            lines.append('* `--max_gain={}`'.format(max_gain))
-            lines.append('* `--treble_f_lower={}`'.format(treble_f_lower))
-            lines.append('* `--treble_f_upper={}`'.format(treble_f_upper))
-            lines.append('* `--treble_max_gain={}`'.format(treble_max_gain))
-            lines.append('* `--treble_gain_k={}`'.format(treble_gain_k))
-
-            if readme_occupied:
-                # Directory already contains a README.md written for a single headphone
-                # Add to the end of the README
-                with open(readme_path, 'a') as f:
-                    f.write('\n' + '\n'.join(lines))
-            else:
-                # README.md doesn't exist or old README.md from previous run, safe to overwrite
-                with open(readme_path, 'w') as f:
-                    f.write('\n'.join(lines))
 
 
 if __name__ == '__main__':
