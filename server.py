@@ -2,7 +2,6 @@
 
 from flask import Flask, request, jsonify, Response
 import gevent.pywsgi
-import traceback
 from frequency_response import FrequencyResponse
 
 app = Flask(__name__)
@@ -72,7 +71,7 @@ def process():
             if params['compensation'] not in compensations:
                 return bad_request(400, 'Unrecognized compensation function.')
             params['compensation'] = compensations[params['compensation']]
-            if len(frequency) != len(params['compensation']):
+            if len(frequency) != len(params['compensation'].frequency):
                 params['compensation'] = FrequencyResponse(
                     name='compensation',
                     frequency=params['compensation'].frequency,
@@ -82,7 +81,7 @@ def process():
         else:
             # List, assume to have same frequency data as raw
             if len(frequency) != len(params['compensation']):
-                params['compensation'].interpolate(frequency)
+                return bad_request(400, 'Compensation data does not match frequency data')
             params['compensation'] = FrequencyResponse(
                 name='compensation',
                 frequency=frequency,
@@ -95,7 +94,7 @@ def process():
             if params['calibration'] not in calibrations:
                 return bad_request(400, 'Unrecognized compensation function.')
             params['calibration'] = calibrations[params['calibration']]
-            if len(frequency) != len(params['calibration']):
+            if len(frequency) != len(params['calibration'].frequency):
                 params['calibration'] = FrequencyResponse(
                     name='calibration',
                     frequency=params['calibration'].frequency,
@@ -105,25 +104,35 @@ def process():
         else:
             # List, assume to have same frequency data as raw
             if len(frequency) != len(params['calibration']):
-                params['calibration'].interpolate(frequency)
+                return bad_request(400, 'Calibration data does not match frequency data')
             params['calibration'] = FrequencyResponse(
                 name='calibration',
                 frequency=frequency,
                 raw=params['calibration']
             )
 
+    if 'bass_boost' in params and params['bass_boost'] and 'iem_bass_boost' in params and params['iem_bass_boost']:
+        return bad_request(400, 'Either "bass_boost" or "iem_bass_boost" can be given but not both.')
+
     # Create frequency response and process
     try:
         fr = FrequencyResponse(name='fr', frequency=frequency, raw=raw)
-        fr.process(**params)
+        filters, n_filters, max_gains = fr.process(**params)
     except Exception as err:
-        return bad_request(str(err), 500)
+        return bad_request(500, str(err))
 
-    return jsonify(fr.to_dict())
+    r = fr.to_dict()
+    r.update({
+        'filters': filters.tolist() if filters is not None else [],
+        'n_filters': n_filters if n_filters is not None else [],
+        'max_gains': max_gains if max_gains is not None else []
+    })
+    return jsonify(r)
 
 
 def run():
     ws = gevent.pywsgi.WSGIServer(('0.0.0.0', 8080), app)
+    print('Server running on port 8080')
     ws.serve_forever()
     #app.run('0.0.0.0', 8080)
 

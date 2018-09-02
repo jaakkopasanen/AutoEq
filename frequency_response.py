@@ -181,7 +181,7 @@ class FrequencyResponse:
     def to_dict(self):
         d = dict()
         if len(self.frequency):
-            d['frequency'] = self.frequency
+            d['frequency'] = self.frequency.tolist()
         if len(self.raw):
             d['raw'] = [x if x is not None else 'NaN' for x in self.raw]
         if len(self.error):
