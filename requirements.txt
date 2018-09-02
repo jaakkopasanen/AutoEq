@@ -8,3 +8,5 @@ PyPDF2
 ghostscript
 tensorflow
 tabulate
+flask
+gevent

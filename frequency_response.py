@@ -177,31 +177,35 @@ class FrequencyResponse:
             equalized_smoothed=equalized_smoothed,
             target=target
         )
+    
+    def to_dict(self):
+        d = dict()
+        if len(self.frequency):
+            d['frequency'] = self.frequency
+        if len(self.raw):
+            d['raw'] = [x if x is not None else 'NaN' for x in self.raw]
+        if len(self.error):
+            d['error'] = [x if x is not None else 'NaN' for x in self.error]
+        if len(self.smoothed):
+            d['smoothed'] = [x if x is not None else 'NaN' for x in self.smoothed]
+        if len(self.error_smoothed):
+            d['error_smoothed'] = [x if x is not None else 'NaN' for x in self.error_smoothed]
+        if len(self.equalization):
+            d['equalization'] = [x if x is not None else 'NaN' for x in self.equalization]
+        if len(self.parametric_eq):
+            d['parametric_eq'] = [x if x is not None else 'NaN' for x in self.parametric_eq]
+        if len(self.equalized_raw):
+            d['equalized_raw'] = [x if x is not None else 'NaN' for x in self.equalized_raw]
+        if len(self.equalized_smoothed):
+            d['equalized_smoothed'] = [x if x is not None else 'NaN' for x in self.equalized_smoothed]
+        if len(self.target):
+            d['target'] = [x if x is not None else 'NaN' for x in self.target]
+        return d
 
     def write_to_csv(self, file_path=None):
         """Writes data to files as CSV."""
         file_path = os.path.abspath(file_path)
-        df = pd.DataFrame()
-        if len(self.frequency):
-            df['frequency'] = self.frequency
-        if len(self.raw):
-            df['raw'] = [x if x is not None else 'NaN' for x in self.raw]
-        if len(self.error):
-            df['error'] = [x if x is not None else 'NaN' for x in self.error]
-        if len(self.smoothed):
-            df['smoothed'] = [x if x is not None else 'NaN' for x in self.smoothed]
-        if len(self.error_smoothed):
-            df['error_smoothed'] = [x if x is not None else 'NaN' for x in self.error_smoothed]
-        if len(self.equalization):
-            df['equalization'] = [x if x is not None else 'NaN' for x in self.equalization]
-        if len(self.parametric_eq):
-            df['parametric_eq'] = [x if x is not None else 'NaN' for x in self.parametric_eq]
-        if len(self.equalized_raw):
-            df['equalized_raw'] = [x if x is not None else 'NaN' for x in self.equalized_raw]
-        if len(self.equalized_smoothed):
-            df['equalized_smoothed'] = [x if x is not None else 'NaN' for x in self.equalized_smoothed]
-        if len(self.target):
-            df['target'] = [x if x is not None else 'NaN' for x in self.target]
+        df = pd.DataFrame(self.to_dict())
         df.to_csv(file_path, header=True, index=False, float_format='%.2f')
 
     def write_eqapo_graphic_eq(self, file_path):
@@ -1202,7 +1206,7 @@ class FrequencyResponse:
 
         Args:
             calibration: Calibration FrequencyResponse. Must be interpolated and centered.
-            compensation: Compensation FrequencyReponse. Must be interpolated and centered.
+            compensation: Compensation FrequencyResponse. Must be interpolated and centered.
             equalize: Run equalization?
             parametric_eq: Optimize peaking filters for parametric eq?
             max_filters: List of maximum number of peaking filters for each additive filter optimization run.
