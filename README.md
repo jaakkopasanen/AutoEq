@@ -186,7 +186,8 @@ usage: frequency_response.py [-h] --input_dir INPUT_DIR
                              [--calibration CALIBRATION]
                              [--compensation COMPENSATION] [--equalize]
                              [--parametric_eq] [--max_filters MAX_FILTERS]
-                             [--bass_boost BASS_BOOST] [--tilt TILT]
+                             [--bass_boost BASS_BOOST]
+                             [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
                              [--max_gain MAX_GAIN]
                              [--treble_f_lower TREBLE_F_LOWER]
                              [--treble_f_upper TREBLE_F_UPPER]
@@ -203,32 +204,44 @@ optional arguments:
                         Path to results directory. Will keep the same relative
                         paths for files foundin input_dir.
   --calibration CALIBRATION
-                        File path to CSV containing calibration data. See
-                        `calibration` directory.
+                        File path to CSV containing calibration data. Needed
+                        when using target responsesnot developed for the
+                        source measurement system. See `calibration`
+                        directory.
   --compensation COMPENSATION
-                        File path to CSV containing compensation curve.
-                        Compensation is necessary when equalizing because all
-                        input data is raw microphone data. See
-                        innerfidelity/resources and headphonecom/resources.
-                        Defaults to "innerfidelity\resources\innerfidelity_com
-                        pensation_sbaf-serious.csv".
+                        File path to CSV containing compensation (target)
+                        curve. Compensation is necessary when equalizing
+                        because all input data is raw microphone data. See
+                        "compensation", "innerfidelity/resources" and
+                        "headphonecom/resources".
   --equalize            Will run equalization if this parameter exists, no
                         value needed.
   --parametric_eq       Will produce parametric eq settings if this parameter
                         exists, no value needed.
   --max_filters MAX_FILTERS
-                        Maximum number of filters for parametric EQ.
+                        Maximum number of filters for parametric EQ. Multiple
+                        cumulative optimization runscan be done by giving
+                        multiple filter counts separated by "+". "5+5" would
+                        create10 filters where the first 5 are usable
+                        independently from the rest 5 and the last5 can only
+                        be used with the first 5. This allows to have muliple
+                        configurationsfor equalizers with different number of
+                        bands available. Not limited by default.
   --bass_boost BASS_BOOST
-                        Target gain for sub-bass in dB. Has flat response from
-                        20 Hz to 60 Hz and a sigmoid slope down to 200 Hz.
-                        Defaults to 0.0.
+                        Target gain for sub-bass in dB. Has sigmoid slope down
+                        from 35 Hz to 280 Hz. "--bass_boost" is mutually
+                        exclusive with "--iem_bass_boost".
+  --iem_bass_boost IEM_BASS_BOOST
+                        Target gain for sub-bass in dB. Has sigmoid slope down
+                        from 25 Hz to 350 Hz. "--iem_bass_boost" is mutually
+                        exclusive with "--bass_boost".
   --tilt TILT           Target tilt in dB/octave. Positive value (upwards
                         slope) will result in brighter frequency response and
                         negative value (downwards slope) will result in darker
                         frequency response. 1 dB/octave will produce nearly 10
                         dB difference in desired value between 20 Hz and 20
                         kHz. Tilt is applied with bass boost and both will
-                        affect the bass gain. Defaults to 0.0.
+                        affect the bass gain.
   --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain
                         allows to equalize deeper dips in frequency response
                         but will limit output volume if no analog gain is
@@ -291,6 +304,48 @@ python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400
 ````
 
 Feel free to experiment more.
+
+### Server
+AutoEQ has a HTTP server for clients such as graphical user interfaces or web apps. This is the API documentation.
+Currently only one route [/process]() exists.
+
+#### `POST` /process
+**Request**  
+JSON request with MIME-type of `application/json` and data:
+- **calibration** `[float]|str` Calibration data. Either name of the calibration curve as string
+(see below for supported curve names) or list of floats matching frequency data.
+- **compensation** `[float]|str` Compensation data. Either name of the compensation curve as string
+(see below for supported curve names) or list of floats matching frequency data.
+- **equalize** `bool` Run equalization?
+- **parametric_eq** `bool` Optimize peaking filters for parametric eq?
+- **max_filters** `int|[int]` Maximum number of peaking filters for filter optimization run. Can be omitted for
+automatic selection. Can also be a list in which case there will be multiple runs, each building on top of the previous
+filters.
+- **bass_boost** `float` Bass boost amount in dB for over-ear headphones. Mutually exclusive with `iem_bass_boost`.
+- **iem_bass_boost** `float` Bass boost amount in dB for in-ear headphones. Mutually exclusive with `bass_boost`.
+- **tilt** `float` Target frequency response tilt in db / octave.
+- **max_gain** `float` Maximum positive gain in dB. Higher equalization values will be clipped.
+- **treble_f_lower** `float` Lower bound for treble transition region.
+- **treble_f_upper** `float` Upper boud for treble transition region.
+- **treble_max_gain** `float` Maximum gain in treble region.
+- **treble_gain_k** `float` Gain coefficient in treble region.
+
+**Response**  
+JSON response with data:
+- **equalization** `[float]` Equalization curve.
+- **equalized_raw** `[float]` Raw frequency response after equalization.
+- **equalized_smoothed** `[float]` Smoothed frequency response after equalization.
+- **error** `[float]` Error curve.
+- **error_smoothed** `[float]` Smoothed error curve.
+- **filters** `[[float]]` List of parametric eq peaking filters. Each item contains center frequency (Fc), quality (Q)
+and gain.
+- **frequency** `[float]` Frequency data.
+- **max_gains** `[float]` List of maximum gains for each parametric eq filter group frequency response.
+- **n_filters** `[float]` List of number of filters in each parametric eq filter group
+- **raw** `[float]` Raw frequency response.
+- **smoothed** `[float]` Smoothed frequency response.
+- **target** `[float]` Target frequency response.
+
 
 ### More Data!
 If data for you headphone cannot be found in this project but you have an image of the frequency response you might be
