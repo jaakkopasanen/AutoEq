@@ -473,11 +473,16 @@ obtain the raw data.
 Contributions are more than welcome.
 
 - Remove 10 Hz; -84dB band from GraphicEQ
+- HeSuVi documentation
 - Fewer bands on GraphicEQ
 - Rtings measurements
     - Use native compensation
     - Calibrate to Innerfidelity to use SBAF-Serious
     - Create compensation by averaging headphones
+    - Full pipeline
+    - Update results section
+    - Update recommendations
+- Head-fi measurements
     - Full pipeline
     - Update results section
     - Update recommendations
@@ -489,4 +494,3 @@ Contributions are more than welcome.
 - Crinacle measurements for IEMs
     - Target response
 - Impulse responses
-- All parameters in run readme
