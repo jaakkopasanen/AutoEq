@@ -5,12 +5,12 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 5.6; 64 4.8; 68 4.0; 73 3.1; 78 2.2; 83 1.6; 89 0.9; 95 0.4; 102 0.0; 109 -0.2; 117 -0.6; 125 -0.8; 134 -1.0; 143 -1.1; 153 -1.1; 164 -1.0; 175 -0.9; 188 -0.8; 201 -0.8; 215 -0.8; 230 -0.7; 246 -0.5; 263 -0.3; 282 -0.1; 301 -0.1; 323 0.0; 345 0.2; 369 0.3; 395 0.4; 423 0.4; 452 0.5; 484 0.6; 518 0.6; 554 0.6; 593 0.7; 635 0.7; 679 0.7; 726 0.7; 777 0.6; 832 0.6; 890 0.4; 952 0.2; 1019 -0.1; 1090 -0.3; 1167 -0.6; 1248 -1.0; 1336 -1.6; 1429 -2.4; 1529 -3.2; 1636 -3.9; 1751 -4.5; 1873 -5.2; 2004 -5.9; 2145 -6.1; 2295 -6.1; 2455 -5.6; 2627 -5.3; 2811 -4.9; 3008 -4.4; 3219 -4.1; 3444 -4.4; 3685 -6.9; 3943 -10.2; 4219 -7.9; 4514 -4.7; 4830 -4.3; 5168 -4.6; 5530 -6.1; 5917 -6.8; 6331 -3.8; 6775 -4.4; 7249 -6.0; 7756 -7.5; 8299 -9.2; 8880 -10.6; 9502 -10.8; 10167 -9.0; 10879 -5.3; 11640 -1.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -5.4
+GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 5.4; 66 4.4; 72 3.3; 79 2.1; 87 1.1; 96 0.3; 106 -0.1; 116 -0.6; 128 -0.8; 141 -1.1; 155 -1.1; 170 -1.0; 187 -0.8; 206 -0.8; 227 -0.7; 249 -0.5; 274 -0.1; 302 -0.1; 332 0.1; 365 0.3; 402 0.4; 442 0.5; 486 0.6; 535 0.6; 588 0.7; 647 0.7; 712 0.7; 783 0.6; 861 0.5; 947 0.2; 1042 -0.2; 1146 -0.5; 1261 -1.1; 1387 -2.0; 1526 -3.2; 1678 -4.1; 1846 -5.0; 2031 -5.9; 2234 -6.1; 2457 -5.6; 2703 -5.2; 2973 -4.5; 3270 -4.1; 3597 -5.6; 3957 -10.2; 4353 -6.4; 4788 -4.2; 5267 -4.5; 5793 -7.3; 6373 -3.6; 7010 -5.4; 7711 -7.3; 8482 -9.7; 9330 -10.9; 10263 -8.5; 11289 -2.9; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 0.0; 20000 -5.4
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.100000000000002dB` and instead set Global volume in the UI for both channels to **-61**
+-6.1dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR 80 ParametricEQ.txt`.
@@ -18,19 +18,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado SR 80 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of -7.3dB.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
-| Peaking | 35 Hz    |  0.88 | 7.1 dB   |
-| Peaking | 2116 Hz  |  1.89 | -5.8 dB  |
-| Peaking | 4034 Hz  |  2.65 | -7.3 dB  |
-| Peaking | 8948 Hz  |  2.23 | -11.1 dB |
-| Peaking | 20396 Hz |  4.02 | -6.8 dB  |
-| Peaking | 62 Hz    |  2.88 | 2.5 dB   |
-| Peaking | 137 Hz   |  0.9  | -1.8 dB  |
-| Peaking | 623 Hz   |  1.11 | 1.1 dB   |
-| Peaking | 5774 Hz  | 11.51 | -4.0 dB  |
-| Peaking | 12557 Hz |  4.07 | 2.7 dB   |
+| Peaking | 35 Hz    |  0.88 | 7.2 dB   |
+| Peaking | 2114 Hz  |  1.9  | -5.8 dB  |
+| Peaking | 4037 Hz  |  2.61 | -7.3 dB  |
+| Peaking | 8947 Hz  |  2.24 | -11.1 dB |
+| Peaking | 20448 Hz |  3.85 | -7.1 dB  |
+| Peaking | 62 Hz    |  2.89 | 2.6 dB   |
+| Peaking | 133 Hz   |  0.88 | -1.8 dB  |
+| Peaking | 644 Hz   |  1.14 | 1.1 dB   |
+| Peaking | 5795 Hz  | 11.91 | -4.1 dB  |
+| Peaking | 12546 Hz |  4.06 | 2.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20SR%2080/Grado%20SR%2080.png)

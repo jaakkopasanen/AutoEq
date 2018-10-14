@@ -5,32 +5,31 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 0.0; 22 -0.4; 23 -0.5; 25 -0.8; 26 -0.9; 28 -1.0; 30 -1.1; 32 -1.1; 35 -1.1; 37 -1.1; 40 -1.0; 42 -0.9; 45 -0.9; 49 -0.8; 52 -0.7; 56 -0.7; 59 -0.7; 64 -0.6; 68 -0.6; 73 -0.6; 78 -0.6; 83 -0.6; 89 -0.6; 95 -0.7; 102 -0.6; 109 -0.7; 117 -0.6; 125 -0.8; 134 -0.8; 143 -0.9; 153 -0.8; 164 -0.8; 175 -0.7; 188 -0.7; 201 -0.7; 215 -0.5; 230 -0.7; 246 -0.6; 263 -0.5; 282 -0.3; 301 0.2; 323 0.8; 345 0.8; 369 0.7; 395 0.6; 423 0.7; 452 0.6; 484 0.6; 518 0.7; 554 1.0; 593 1.0; 635 1.2; 679 1.2; 726 1.1; 777 1.1; 832 0.8; 890 0.5; 952 0.2; 1019 -0.1; 1090 -0.7; 1167 -1.3; 1248 -2.0; 1336 -2.9; 1429 -4.2; 1529 -5.3; 1636 -5.6; 1751 -4.0; 1873 -2.6; 2004 0.1; 2145 2.5; 2295 4.1; 2455 5.8; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 -0.2; 23 -0.5; 25 -0.8; 28 -1.0; 31 -1.1; 34 -1.1; 37 -1.1; 41 -1.0; 45 -0.9; 49 -0.8; 54 -0.7; 60 -0.7; 66 -0.6; 72 -0.6; 79 -0.6; 87 -0.6; 96 -0.7; 106 -0.7; 116 -0.6; 128 -0.8; 141 -0.8; 155 -0.8; 170 -0.7; 187 -0.7; 206 -0.7; 227 -0.7; 249 -0.5; 274 -0.4; 302 0.2; 332 0.8; 365 0.7; 402 0.6; 442 0.7; 486 0.6; 535 0.9; 588 1.0; 647 1.2; 712 1.1; 783 1.1; 861 0.7; 947 0.2; 1042 -0.3; 1146 -1.1; 1261 -2.1; 1387 -3.6; 1526 -5.3; 1678 -5.2; 1846 -2.8; 2031 0.8; 2234 3.4; 2457 5.8; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.099999999994906dB` and instead set Global volume in the UI for both channels to **-60**
+-6.1dB` and instead set Global volume in the UI for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Klipsch M40 Mode ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -7.0dB.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 35 Hz   | 1.04 | -0.9 dB  |
-| Peaking | 205 Hz  | 0.66 | -1.5 dB  |
-| Peaking | 421 Hz  | 0.54 | 1.4 dB   |
-| Peaking | 1607 Hz | 2.06 | -10.0 dB |
-| Peaking | 3141 Hz | 0.68 | 7.8 dB   |
-| Peaking | 1906 Hz | 6.24 | -0.8 dB  |
-| Peaking | 2437 Hz | 3.53 | 1.5 dB   |
-| Peaking | 3295 Hz | 2.46 | -1.2 dB  |
-| Peaking | 6210 Hz | 2.14 | 5.5 dB   |
-| Peaking | 7477 Hz | 1.44 | -4.4 dB  |
+| Peaking | 36 Hz   | 0.99 | -1.0 dB  |
+| Peaking | 202 Hz  | 0.66 | -1.5 dB  |
+| Peaking | 427 Hz  | 0.54 | 1.4 dB   |
+| Peaking | 1606 Hz | 2.06 | -10.0 dB |
+| Peaking | 3147 Hz | 0.68 | 7.8 dB   |
+| Peaking | 2462 Hz | 4.44 | 2.0 dB   |
+| Peaking | 3142 Hz | 1.44 | -1.3 dB  |
+| Peaking | 6299 Hz | 2.02 | 5.9 dB   |
+| Peaking | 7341 Hz | 1.44 | -4.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Klipsch%20M40%20Mode/Klipsch%20M40%20Mode.png)

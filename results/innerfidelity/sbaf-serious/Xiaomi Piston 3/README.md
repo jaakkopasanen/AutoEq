@@ -5,18 +5,18 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -4.8dB
-GraphicEQ: 10 -84; 20 -2.6; 22 -3.1; 23 -3.4; 25 -3.8; 26 -4.0; 28 -4.4; 30 -4.8; 32 -5.1; 35 -5.5; 37 -5.7; 40 -6.0; 42 -6.1; 45 -6.4; 49 -6.7; 52 -6.9; 56 -7.2; 59 -7.3; 64 -7.6; 68 -7.8; 73 -8.0; 78 -8.2; 83 -8.5; 89 -8.6; 95 -8.9; 102 -8.9; 109 -8.9; 117 -8.9; 125 -9.0; 134 -9.0; 143 -8.9; 153 -8.8; 164 -8.7; 175 -8.5; 188 -8.3; 201 -8.0; 215 -7.7; 230 -7.4; 246 -7.1; 263 -6.7; 282 -6.3; 301 -5.9; 323 -5.5; 345 -5.0; 369 -4.6; 395 -4.1; 423 -3.5; 452 -3.0; 484 -2.7; 518 -2.2; 554 -1.6; 593 -1.0; 635 -0.6; 679 -0.3; 726 0.0; 777 0.4; 832 0.5; 890 0.5; 952 0.3; 1019 -0.1; 1090 -0.6; 1167 -1.2; 1248 -1.8; 1336 -2.6; 1429 -3.3; 1529 -3.9; 1636 -4.3; 1751 -4.6; 1873 -4.7; 2004 -4.8; 2145 -5.0; 2295 -5.0; 2455 -4.7; 2627 -4.3; 2811 -3.9; 3008 -2.7; 3219 -1.7; 3444 -0.8; 3685 -1.1; 3943 -2.5; 4219 -4.9; 4514 -6.7; 4830 -6.1; 5168 -3.2; 5530 -0.1; 5917 2.8; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 -0.7; 10167 -1.3; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 -2.9; 23 -3.4; 25 -3.8; 28 -4.4; 31 -4.9; 34 -5.3; 37 -5.7; 41 -6.0; 45 -6.4; 49 -6.7; 54 -7.0; 60 -7.4; 66 -7.7; 72 -7.9; 79 -8.3; 87 -8.6; 96 -8.9; 106 -8.9; 116 -8.9; 128 -9.0; 141 -8.9; 155 -8.8; 170 -8.6; 187 -8.3; 206 -7.9; 227 -7.4; 249 -7.0; 274 -6.4; 302 -5.8; 332 -5.3; 365 -4.6; 402 -4.0; 442 -3.2; 486 -2.6; 535 -2.0; 588 -1.1; 647 -0.5; 712 -0.1; 783 0.4; 861 0.5; 947 0.4; 1042 -0.2; 1146 -1.0; 1261 -1.9; 1387 -3.0; 1526 -3.8; 1678 -4.4; 1846 -4.7; 2031 -4.8; 2234 -5.0; 2457 -4.7; 2703 -4.3; 2973 -2.9; 3270 -1.4; 3597 -0.9; 3957 -2.6; 4353 -5.8; 4788 -6.4; 5267 -2.3; 5793 2.0; 6373 4.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -0.3; 10263 -1.2; 11289 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.765487663597517dB` and instead set Global volume in the UI for both channels to **-47**
+-4.8dB` and instead set Global volume in the UI for both channels to **-47**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Xiaomi Piston 3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -5.0dB.
 
@@ -24,13 +24,13 @@ When using independent subset of filters, apply preamp of -5.0dB.
 |:--------|:--------|:-----|:--------|
 | Peaking | 76 Hz   | 0.41 | -7.5 dB |
 | Peaking | 207 Hz  | 0.84 | -4.3 dB |
-| Peaking | 2084 Hz | 1.64 | -5.4 dB |
-| Peaking | 4655 Hz | 4.73 | -7.3 dB |
-| Peaking | 6358 Hz | 4.65 | 5.8 dB  |
-| Peaking | 850 Hz  | 2.35 | 2.0 dB  |
-| Peaking | 1471 Hz | 4.61 | -1.4 dB |
-| Peaking | 2766 Hz | 7.08 | -1.2 dB |
-| Peaking | 3497 Hz | 7.02 | 1.4 dB  |
-| Peaking | 9929 Hz | 8.45 | -1.5 dB |
+| Peaking | 2083 Hz | 1.64 | -5.3 dB |
+| Peaking | 4676 Hz | 4.73 | -7.3 dB |
+| Peaking | 6398 Hz | 4.66 | 5.8 dB  |
+| Peaking | 852 Hz  | 2.36 | 2.0 dB  |
+| Peaking | 1502 Hz | 3.32 | -1.6 dB |
+| Peaking | 2676 Hz | 1.64 | 1.8 dB  |
+| Peaking | 2688 Hz | 3.97 | -2.9 dB |
+| Peaking | 9933 Hz | 7.62 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Xiaomi%20Piston%203/Xiaomi%20Piston%203.png)

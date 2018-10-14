@@ -5,7 +5,7 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.9; 26 5.8; 28 5.4; 30 5.0; 32 4.5; 35 4.0; 37 3.7; 40 3.3; 42 3.1; 45 3.0; 49 2.9; 52 2.8; 56 2.7; 59 2.7; 64 2.6; 68 2.5; 73 2.3; 78 2.1; 83 1.9; 89 1.6; 95 1.3; 102 1.0; 109 0.8; 117 0.5; 125 0.2; 134 -0.0; 143 -0.2; 153 -0.4; 164 -0.6; 175 -0.7; 188 -0.9; 201 -1.0; 215 -1.1; 230 -1.1; 246 -1.1; 263 -1.1; 282 -1.1; 301 -0.9; 323 -0.8; 345 -0.7; 369 -0.5; 395 -0.4; 423 -0.4; 452 -0.4; 484 -0.5; 518 -0.5; 554 -0.3; 593 -0.3; 635 -0.3; 679 -0.3; 726 -0.3; 777 -0.3; 832 -0.3; 890 -0.2; 952 -0.1; 1019 0.1; 1090 0.3; 1167 0.4; 1248 0.5; 1336 0.4; 1429 0.4; 1529 0.6; 1636 1.0; 1751 1.3; 1873 1.3; 2004 1.2; 2145 1.3; 2295 1.5; 2455 1.8; 2627 2.4; 2811 2.6; 3008 2.6; 3219 2.7; 3444 2.8; 3685 2.6; 3943 2.8; 4219 3.7; 4514 3.7; 4830 3.7; 5168 4.1; 5530 4.4; 5917 4.3; 6331 3.6; 6775 3.2; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 -0.2; 12455 -2.0; 13327 -2.9; 14260 -2.7; 15258 -3.3; 16326 -5.5; 17469 -8.9; 18692 -13.4; 20000 -19.3
+GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.4; 31 4.7; 34 4.2; 37 3.7; 41 3.2; 45 3.0; 49 2.9; 54 2.8; 60 2.7; 66 2.5; 72 2.3; 79 2.1; 87 1.7; 96 1.3; 106 0.9; 116 0.5; 128 0.1; 141 -0.2; 155 -0.5; 170 -0.7; 187 -0.9; 206 -1.0; 227 -1.1; 249 -1.1; 274 -1.1; 302 -0.9; 332 -0.7; 365 -0.5; 402 -0.4; 442 -0.4; 486 -0.5; 535 -0.4; 588 -0.3; 647 -0.3; 712 -0.3; 783 -0.3; 861 -0.3; 947 -0.1; 1042 0.1; 1146 0.4; 1261 0.5; 1387 0.3; 1526 0.6; 1678 1.1; 1846 1.4; 2031 1.2; 2234 1.4; 2457 1.8; 2703 2.5; 2973 2.6; 3270 2.7; 3597 2.7; 3957 2.8; 4353 3.8; 4788 3.7; 5267 4.3; 5793 4.3; 6373 3.5; 7010 2.4; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 -1.9; 13660 -2.8; 15026 -3.0; 16529 -6.0; 18182 -11.4; 20000 -19.3
 ```
 
 ### HeSuVi
@@ -16,20 +16,20 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-X ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of -6.3dB.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 0.91 | 5.9 dB   |
-| Peaking | 70 Hz    | 0.93 | 1.9 dB   |
-| Peaking | 211 Hz   | 0.7  | -1.4 dB  |
-| Peaking | 3169 Hz  | 1.21 | 2.6 dB   |
-| Peaking | 5546 Hz  | 2.67 | 4.0 dB   |
-| Peaking | 807 Hz   | 4.23 | -0.3 dB  |
-| Peaking | 1738 Hz  | 6.18 | 0.5 dB   |
-| Peaking | 12922 Hz | 0.51 | 1.3 dB   |
-| Peaking | 19713 Hz | 0.99 | -18.6 dB |
+| Peaking | 22 Hz    | 0.9  | 5.9 dB   |
+| Peaking | 70 Hz    | 0.92 | 1.9 dB   |
+| Peaking | 210 Hz   | 0.71 | -1.4 dB  |
+| Peaking | 3170 Hz  | 1.21 | 2.6 dB   |
+| Peaking | 5547 Hz  | 2.67 | 4.0 dB   |
+| Peaking | 806 Hz   | 4.18 | -0.3 dB  |
+| Peaking | 1751 Hz  | 6.26 | 0.5 dB   |
+| Peaking | 13098 Hz | 0.5  | 1.3 dB   |
+| Peaking | 19832 Hz | 0.98 | -18.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audeze%20LCD-X/Audeze%20LCD-X.png)

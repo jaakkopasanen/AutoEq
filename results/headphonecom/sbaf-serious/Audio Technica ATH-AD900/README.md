@@ -5,32 +5,32 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 5.7; 68 5.4; 73 5.1; 78 5.3; 83 5.9; 89 5.5; 95 4.2; 102 3.5; 109 3.4; 117 3.1; 125 2.6; 134 2.2; 143 1.8; 153 1.5; 164 1.4; 175 1.1; 188 1.1; 201 1.0; 215 1.0; 230 0.8; 246 0.7; 263 0.6; 282 0.8; 301 0.8; 323 0.9; 345 1.0; 369 1.0; 395 1.0; 423 0.9; 452 0.9; 484 0.8; 518 0.9; 554 0.8; 593 0.8; 635 0.9; 679 0.8; 726 1.0; 777 0.8; 832 0.4; 890 0.3; 952 0.3; 1019 -0.0; 1090 -0.1; 1167 -0.3; 1248 -0.8; 1336 -1.4; 1429 -2.6; 1529 -4.1; 1636 -4.1; 1751 -2.6; 1873 -1.8; 2004 -0.7; 2145 0.8; 2295 0.9; 2455 2.3; 2627 1.8; 2811 1.1; 3008 0.8; 3219 1.7; 3444 0.2; 3685 -3.2; 3943 -4.8; 4219 -5.7; 4514 -5.5; 4830 -3.3; 5168 -1.1; 5530 1.6; 5917 2.3; 6331 2.6; 6775 3.1; 7249 1.3; 7756 0.3; 8299 -0.1; 8880 -2.0; 9502 -3.2; 10167 -1.4; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.8
+GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 5.9; 66 5.6; 72 5.2; 79 5.4; 87 5.8; 96 4.0; 106 3.4; 116 3.2; 128 2.5; 141 1.9; 155 1.5; 170 1.3; 187 1.1; 206 1.0; 227 0.8; 249 0.6; 274 0.7; 302 0.8; 332 1.0; 365 1.0; 402 1.0; 442 0.9; 486 0.8; 535 0.8; 588 0.8; 647 0.9; 712 0.9; 783 0.8; 861 0.3; 947 0.3; 1042 -0.1; 1146 -0.2; 1261 -0.9; 1387 -2.0; 1526 -4.0; 1678 -3.6; 1846 -1.9; 2031 -0.3; 2234 0.9; 2457 2.3; 2703 1.3; 2973 0.8; 3270 1.8; 3597 -2.1; 3957 -4.9; 4353 -5.9; 4788 -3.6; 5267 -0.4; 5793 2.4; 6373 2.7; 7010 2.4; 7711 0.3; 8482 -0.6; 9330 -3.1; 10263 -1.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 0.0; 20000 -0.8
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.100000000000003dB` and instead set Global volume in the UI for both channels to **-61**
+-6.1dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-AD900 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -6.6dB.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 39 Hz    | 0.39 | 6.5 dB  |
-| Peaking | 1593 Hz  | 2.47 | -4.7 dB |
-| Peaking | 3613 Hz  | 0.44 | 2.7 dB  |
-| Peaking | 4243 Hz  | 3.02 | -7.2 dB |
-| Peaking | 10493 Hz | 2.31 | -1.6 dB |
-| Peaking | 167 Hz   | 3.02 | -0.8 dB |
-| Peaking | 1666 Hz  | 3.13 | -1.5 dB |
-| Peaking | 4439 Hz  | 1.77 | -6.1 dB |
-| Peaking | 5109 Hz  | 0.77 | 4.7 dB  |
-| Peaking | 9059 Hz  | 3.36 | -4.4 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 39 Hz    | 0.4  | 6.5 dB   |
+| Peaking | 1628 Hz  | 2.72 | -6.1 dB  |
+| Peaking | 4231 Hz  | 2.33 | -13.0 dB |
+| Peaking | 4552 Hz  | 0.55 | 6.9 dB   |
+| Peaking | 9340 Hz  | 2.67 | -5.5 dB  |
+| Peaking | 39 Hz    | 2.56 | -0.6 dB  |
+| Peaking | 85 Hz    | 6.77 | 1.7 dB   |
+| Peaking | 159 Hz   | 2.5  | -0.7 dB  |
+| Peaking | 13468 Hz | 3.7  | -0.6 dB  |
+| Peaking | 16298 Hz | 1.77 | -0.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audio%20Technica%20ATH-AD900/Audio%20Technica%20ATH-AD900.png)

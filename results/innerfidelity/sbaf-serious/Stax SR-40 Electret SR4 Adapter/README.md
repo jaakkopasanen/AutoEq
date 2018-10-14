@@ -5,32 +5,32 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 5.5; 102 4.1; 109 3.1; 117 1.9; 125 0.7; 134 -0.2; 143 -0.7; 153 -1.1; 164 -1.3; 175 -1.3; 188 -1.2; 201 -1.1; 215 -0.9; 230 -0.7; 246 -0.6; 263 -0.5; 282 -0.2; 301 -0.1; 323 0.0; 345 0.2; 369 0.3; 395 0.4; 423 0.5; 452 0.5; 484 0.5; 518 0.2; 554 0.1; 593 0.3; 635 0.6; 679 0.6; 726 0.5; 777 0.5; 832 0.3; 890 -0.0; 952 0.1; 1019 0.1; 1090 0.3; 1167 -0.2; 1248 -0.9; 1336 -1.9; 1429 -3.1; 1529 -4.0; 1636 -4.6; 1751 -4.5; 1873 -3.0; 2004 -0.8; 2145 0.5; 2295 1.0; 2455 2.7; 2627 4.0; 2811 3.9; 3008 4.1; 3219 4.1; 3444 3.3; 3685 2.5; 3943 2.0; 4219 2.0; 4514 1.4; 4830 1.2; 5168 1.2; 5530 2.3; 5917 1.4; 6331 1.3; 6775 2.5; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 5.3; 106 3.6; 116 2.0; 128 0.4; 141 -0.6; 155 -1.2; 170 -1.3; 187 -1.3; 206 -1.0; 227 -0.8; 249 -0.6; 274 -0.3; 302 -0.1; 332 0.1; 365 0.3; 402 0.4; 442 0.5; 486 0.4; 535 0.1; 588 0.3; 647 0.6; 712 0.5; 783 0.5; 861 0.0; 947 0.1; 1042 0.2; 1146 0.0; 1261 -1.1; 1387 -2.5; 1526 -4.0; 1678 -4.7; 1846 -3.4; 2031 -0.4; 2234 0.7; 2457 2.7; 2703 4.1; 2973 4.1; 3270 4.0; 3597 2.6; 3957 2.0; 4353 1.8; 4788 1.2; 5267 1.5; 5793 1.8; 6373 1.3; 7010 2.3; 7711 0.3; 8482 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.100000000000002dB` and instead set Global volume in the UI for both channels to **-61**
+-6.1dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-40 Electret SR4 Adapter ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -6.8dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 60 Hz   | 0.28 | 7.4 dB  |
-| Peaking | 165 Hz  | 1.07 | -6.5 dB |
+| Peaking | 166 Hz  | 1.07 | -6.5 dB |
 | Peaking | 1679 Hz | 2.83 | -6.2 dB |
 | Peaking | 2891 Hz | 1.56 | 4.7 dB  |
-| Peaking | 6614 Hz | 3.85 | 1.6 dB  |
-| Peaking | 16 Hz   | 1.04 | 1.9 dB  |
-| Peaking | 43 Hz   | 1.11 | -0.9 dB |
-| Peaking | 91 Hz   | 4.32 | 1.7 dB  |
-| Peaking | 284 Hz  | 0.16 | -0.3 dB |
-| Peaking | 883 Hz  | 1.34 | 0.5 dB  |
+| Peaking | 6615 Hz | 3.85 | 1.6 dB  |
+| Peaking | 16 Hz   | 1.01 | 1.8 dB  |
+| Peaking | 45 Hz   | 0.95 | -1.0 dB |
+| Peaking | 89 Hz   | 3.38 | 1.6 dB  |
+| Peaking | 127 Hz  | 4.54 | -0.9 dB |
+| Peaking | 1094 Hz | 7.71 | 0.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-40%20Electret%20SR4%20Adapter/Stax%20SR-40%20Electret%20SR4%20Adapter.png)

@@ -5,7 +5,7 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 -2.8; 22 -3.1; 23 -3.2; 25 -3.3; 26 -3.4; 28 -3.5; 30 -3.6; 32 -3.6; 35 -3.5; 37 -3.3; 40 -3.1; 42 -3.0; 45 -3.0; 49 -3.0; 52 -2.6; 56 -1.8; 59 -1.1; 64 -0.8; 68 -1.6; 73 -2.8; 78 -3.4; 83 -3.8; 89 -4.4; 95 -4.7; 102 -5.1; 109 -5.4; 117 -5.7; 125 -5.6; 134 -5.4; 143 -4.9; 153 -4.3; 164 -3.9; 175 -3.1; 188 -1.8; 201 -0.4; 215 1.1; 230 1.9; 246 2.4; 263 2.3; 282 1.9; 301 1.4; 323 0.8; 345 0.4; 369 0.1; 395 -0.1; 423 -0.3; 452 -0.4; 484 -0.4; 518 -0.3; 554 -0.2; 593 0.2; 635 0.6; 679 0.7; 726 0.9; 777 0.9; 832 0.8; 890 0.5; 952 0.2; 1019 0.0; 1090 0.3; 1167 0.8; 1248 1.3; 1336 1.9; 1429 2.4; 1529 3.2; 1636 4.2; 1751 5.5; 1873 6.0; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 5.6; 3685 5.4; 3943 6.0; 4219 6.0; 4514 5.9; 4830 1.4; 5168 -0.9; 5530 -2.0; 5917 -3.3; 6331 -3.5; 6775 -2.5; 7249 -3.7; 7756 -4.8; 8299 -4.6; 8880 -2.6; 9502 -0.2; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 -3.0; 23 -3.2; 25 -3.3; 28 -3.5; 31 -3.6; 34 -3.5; 37 -3.3; 41 -3.1; 45 -3.0; 49 -3.0; 54 -2.3; 60 -0.9; 66 -1.1; 72 -2.6; 79 -3.5; 87 -4.2; 96 -4.8; 106 -5.2; 116 -5.7; 128 -5.5; 141 -5.1; 155 -4.2; 170 -3.5; 187 -1.9; 206 0.2; 227 1.8; 249 2.4; 274 2.1; 302 1.3; 332 0.6; 365 0.2; 402 -0.2; 442 -0.4; 486 -0.4; 535 -0.3; 588 0.1; 647 0.7; 712 0.8; 783 0.9; 861 0.7; 947 0.2; 1042 0.1; 1146 0.6; 1261 1.4; 1387 2.2; 1526 3.1; 1678 4.7; 1846 6.0; 2031 6.0; 2234 6.0; 2457 6.0; 2703 6.0; 2973 6.0; 3270 6.0; 3597 5.3; 3957 6.0; 4353 6.0; 4788 2.0; 5267 -1.3; 5793 -2.9; 6373 -3.4; 7010 -3.0; 7711 -4.8; 8482 -4.2; 9330 -0.6; 10263 0.0
 ```
 
 ### HeSuVi
@@ -16,21 +16,21 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 1770 (Velours Earpads) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -6.9dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 29 Hz   | 1.21 | -3.5 dB |
-| Peaking | 129 Hz  | 0.95 | -6.0 dB |
+| Peaking | 29 Hz   | 1.21 | -3.6 dB |
+| Peaking | 129 Hz  | 0.96 | -5.9 dB |
 | Peaking | 241 Hz  | 2.4  | 4.9 dB  |
-| Peaking | 3528 Hz | 0.65 | 8.7 dB  |
-| Peaking | 6499 Hz | 1.28 | -8.9 dB |
-| Peaking | 1099 Hz | 2.55 | -1.6 dB |
-| Peaking | 1865 Hz | 3.71 | 2.2 dB  |
-| Peaking | 3475 Hz | 2.47 | -1.5 dB |
-| Peaking | 4506 Hz | 4.07 | 4.0 dB  |
-| Peaking | 5001 Hz | 5.71 | -3.5 dB |
+| Peaking | 3507 Hz | 0.65 | 8.6 dB  |
+| Peaking | 6509 Hz | 1.28 | -8.8 dB |
+| Peaking | 1098 Hz | 2.56 | -1.6 dB |
+| Peaking | 1864 Hz | 3.72 | 2.2 dB  |
+| Peaking | 3467 Hz | 2.44 | -1.5 dB |
+| Peaking | 4496 Hz | 4.06 | 4.0 dB  |
+| Peaking | 5013 Hz | 5.66 | -3.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201770%20(Velours%20Earpads)/Beyerdynamic%20DT%201770%20(Velours%20Earpads).png)

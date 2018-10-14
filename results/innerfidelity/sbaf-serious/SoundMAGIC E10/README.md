@@ -5,7 +5,7 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 -0.4; 22 -0.8; 23 -1.0; 25 -1.3; 26 -1.5; 28 -1.8; 30 -2.0; 32 -2.2; 35 -2.5; 37 -2.7; 40 -2.9; 42 -3.0; 45 -3.2; 49 -3.5; 52 -3.7; 56 -4.0; 59 -4.1; 64 -4.4; 68 -4.6; 73 -4.8; 78 -5.0; 83 -5.3; 89 -5.6; 95 -5.8; 102 -6.0; 109 -6.2; 117 -6.3; 125 -6.4; 134 -6.5; 143 -6.5; 153 -6.5; 164 -6.4; 175 -6.4; 188 -6.2; 201 -6.0; 215 -5.8; 230 -5.5; 246 -5.3; 263 -5.0; 282 -4.7; 301 -4.4; 323 -4.0; 345 -3.7; 369 -3.3; 395 -3.0; 423 -2.6; 452 -2.1; 484 -1.6; 518 -1.1; 554 -0.9; 593 -0.7; 635 -0.4; 679 0.0; 726 0.2; 777 0.3; 832 0.3; 890 0.3; 952 0.3; 1019 -0.0; 1090 -0.0; 1167 0.4; 1248 1.1; 1336 2.4; 1429 3.7; 1529 4.1; 1636 4.3; 1751 4.7; 1873 5.8; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.3; 6775 3.5; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 -0.6; 23 -1.0; 25 -1.3; 28 -1.8; 31 -2.1; 34 -2.4; 37 -2.7; 41 -3.0; 45 -3.2; 49 -3.5; 54 -3.8; 60 -4.2; 66 -4.5; 72 -4.7; 79 -5.1; 87 -5.5; 96 -5.8; 106 -6.1; 116 -6.3; 128 -6.4; 141 -6.5; 155 -6.5; 170 -6.4; 187 -6.2; 206 -5.9; 227 -5.6; 249 -5.2; 274 -4.8; 302 -4.3; 332 -3.9; 365 -3.4; 402 -2.9; 442 -2.2; 486 -1.5; 535 -1.0; 588 -0.7; 647 -0.3; 712 0.2; 783 0.3; 861 0.3; 947 0.3; 1042 -0.1; 1146 0.2; 1261 1.3; 1387 3.2; 1526 4.1; 1678 4.3; 1846 5.7; 2031 6.0; 2234 6.0; 2457 6.0; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.0; 7010 2.5; 7711 0.3; 8482 0.0
 ```
 
 ### HeSuVi
@@ -16,21 +16,21 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `SoundMAGIC E10 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of -6.8dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 52 Hz   | 0.7  | -2.2 dB |
-| Peaking | 110 Hz  | 0.89 | -2.9 dB |
-| Peaking | 212 Hz  | 0.67 | -4.6 dB |
-| Peaking | 2431 Hz | 0.93 | 6.2 dB  |
-| Peaking | 5089 Hz | 1.94 | 4.9 dB  |
-| Peaking | 1122 Hz | 3.29 | -2.4 dB |
-| Peaking | 2517 Hz | 1.78 | -2.9 dB |
-| Peaking | 2986 Hz | 0.51 | 3.0 dB  |
-| Peaking | 6235 Hz | 1.08 | -4.6 dB |
-| Peaking | 6254 Hz | 3.56 | 4.9 dB  |
+| Peaking | 51 Hz   | 0.72 | -2.1 dB |
+| Peaking | 109 Hz  | 0.88 | -2.9 dB |
+| Peaking | 211 Hz  | 0.66 | -4.6 dB |
+| Peaking | 2426 Hz | 0.93 | 6.2 dB  |
+| Peaking | 5167 Hz | 1.94 | 4.9 dB  |
+| Peaking | 1137 Hz | 2.44 | -3.8 dB |
+| Peaking | 1291 Hz | 1.08 | 3.0 dB  |
+| Peaking | 3880 Hz | 1.61 | 4.3 dB  |
+| Peaking | 4408 Hz | 0.67 | -4.1 dB |
+| Peaking | 6185 Hz | 4.25 | 3.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/SoundMAGIC%20E10/SoundMAGIC%20E10.png)

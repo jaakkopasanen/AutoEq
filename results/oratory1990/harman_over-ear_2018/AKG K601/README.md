@@ -5,18 +5,18 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 5.8; 68 5.1; 73 4.2; 78 3.6; 83 3.2; 89 2.7; 95 2.3; 102 1.8; 109 1.5; 117 1.1; 125 0.7; 134 0.5; 143 0.3; 153 0.1; 164 -0.1; 175 -0.1; 188 -0.3; 201 -0.4; 215 -0.5; 230 -0.5; 246 -0.5; 263 -0.4; 282 -0.2; 301 -0.1; 323 0.1; 345 0.2; 369 0.3; 395 0.4; 423 0.5; 452 0.6; 484 0.7; 518 0.9; 554 1.1; 593 1.2; 635 1.4; 679 1.6; 726 1.6; 777 1.4; 832 0.9; 890 0.5; 952 0.2; 1019 -0.1; 1090 -0.5; 1167 -0.9; 1248 -1.2; 1336 -1.5; 1429 -2.0; 1529 -2.6; 1636 -3.3; 1751 -3.8; 1873 -4.3; 2004 -4.9; 2145 -5.6; 2295 -5.7; 2455 -5.8; 2627 -5.6; 2811 -4.8; 3008 -3.7; 3219 -2.0; 3444 -1.2; 3685 -1.2; 3943 -1.9; 4219 -1.1; 4514 0.2; 4830 0.8; 5168 1.6; 5530 1.1; 5917 -0.1; 6331 -0.3; 6775 0.3; 7249 -0.2; 7756 -1.8; 8299 -1.9; 8880 -0.2; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 -0.2; 13327 -1.0; 14260 -0.2; 15258 0.0; 16326 -0.4; 17469 -2.8; 18692 -5.5; 20000 -8.2
+GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 5.5; 72 4.4; 79 3.5; 87 2.8; 96 2.2; 106 1.6; 116 1.1; 128 0.6; 141 0.3; 155 0.0; 170 -0.1; 187 -0.3; 206 -0.4; 227 -0.5; 249 -0.5; 274 -0.3; 302 -0.0; 332 0.2; 365 0.3; 402 0.4; 442 0.6; 486 0.7; 535 1.0; 588 1.2; 647 1.5; 712 1.7; 783 1.3; 861 0.7; 947 0.2; 1042 -0.2; 1146 -0.8; 1261 -1.2; 1387 -1.8; 1526 -2.6; 1678 -3.5; 1846 -4.2; 2031 -5.1; 2234 -5.7; 2457 -5.8; 2703 -5.4; 2973 -4.0; 3270 -1.6; 3597 -1.3; 3957 -1.9; 4353 -0.4; 4788 0.7; 5267 1.6; 5793 0.2; 6373 -0.2; 7010 0.3; 7711 -1.7; 8482 -1.4; 9330 0.0; 10263 0.0; 11289 0.0; 12418 -0.2; 13660 -0.8; 15026 0.0; 16529 -0.7; 18182 -4.4; 20000 -8.2
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.100000000000002dB` and instead set Global volume in the UI for both channels to **-61**
+-6.1dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K601 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -7.0dB.
 
@@ -25,12 +25,12 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 36 Hz    | 0.66 | 6.9 dB  |
 | Peaking | 705 Hz   | 2.13 | 2.1 dB  |
 | Peaking | 2280 Hz  | 1.42 | -6.1 dB |
-| Peaking | 5129 Hz  | 4.8  | 2.5 dB  |
-| Peaking | 19753 Hz | 1.78 | -8.0 dB |
-| Peaking | 41 Hz    | 2.89 | -1.2 dB |
-| Peaking | 62 Hz    | 2.77 | 1.7 dB  |
-| Peaking | 176 Hz   | 1.28 | -1.1 dB |
-| Peaking | 8072 Hz  | 6.43 | -3.1 dB |
-| Peaking | 8394 Hz  | 1.87 | 0.9 dB  |
+| Peaking | 5131 Hz  | 4.79 | 2.5 dB  |
+| Peaking | 19678 Hz | 1.78 | -8.0 dB |
+| Peaking | 40 Hz    | 2.72 | -1.0 dB |
+| Peaking | 61 Hz    | 2.7  | 1.7 dB  |
+| Peaking | 181 Hz   | 1.28 | -1.1 dB |
+| Peaking | 8040 Hz  | 6.56 | -2.9 dB |
+| Peaking | 8547 Hz  | 1.65 | 0.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20K601/AKG%20K601.png)

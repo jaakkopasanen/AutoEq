@@ -5,32 +5,32 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 6.0; 109 5.9; 117 5.6; 125 5.3; 134 5.1; 143 4.9; 153 4.8; 164 4.6; 175 4.5; 188 4.3; 201 4.2; 215 4.1; 230 4.1; 246 4.0; 263 4.0; 282 4.1; 301 4.1; 323 4.1; 345 4.1; 369 4.1; 395 4.0; 423 3.9; 452 3.7; 484 3.6; 518 3.4; 554 3.2; 593 2.9; 635 2.6; 679 2.2; 726 1.8; 777 1.5; 832 1.5; 890 1.1; 952 0.4; 1019 -0.1; 1090 -0.5; 1167 -0.6; 1248 -0.8; 1336 -1.4; 1429 -1.2; 1529 -0.1; 1636 1.7; 1751 3.4; 1873 5.3; 2004 6.0; 2145 6.0; 2295 6.0; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 5.9; 116 5.6; 128 5.3; 141 5.0; 155 4.7; 170 4.5; 187 4.4; 206 4.2; 227 4.1; 249 4.0; 274 4.1; 302 4.1; 332 4.1; 365 4.1; 402 4.0; 442 3.8; 486 3.6; 535 3.3; 588 3.0; 647 2.5; 712 1.9; 783 1.5; 861 1.3; 947 0.5; 1042 -0.3; 1146 -0.6; 1261 -0.9; 1387 -1.4; 1526 -0.1; 1678 2.3; 1846 4.9; 2031 6.0; 2234 6.0; 2457 6.0; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.100000000000002dB` and instead set Global volume in the UI for both channels to **-61**
+-6.1dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze iSine20 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -6.8dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 44 Hz   | 0.18 | 6.2 dB  |
-| Peaking | 434 Hz  | 1.07 | 2.2 dB  |
-| Peaking | 1373 Hz | 1.62 | -6.5 dB |
-| Peaking | 2170 Hz | 0.83 | 7.8 dB  |
-| Peaking | 5183 Hz | 1.91 | 4.7 dB  |
-| Peaking | 2564 Hz | 3.87 | -1.1 dB |
-| Peaking | 4094 Hz | 1.02 | 1.2 dB  |
-| Peaking | 4962 Hz | 4.09 | -1.3 dB |
-| Peaking | 6416 Hz | 4.19 | 3.6 dB  |
-| Peaking | 7309 Hz | 1.5  | -2.8 dB |
+| Peaking | 434 Hz  | 1.08 | 2.2 dB  |
+| Peaking | 1375 Hz | 1.65 | -6.4 dB |
+| Peaking | 2186 Hz | 0.83 | 7.6 dB  |
+| Peaking | 5188 Hz | 1.92 | 4.7 dB  |
+| Peaking | 1014 Hz | 5.87 | -0.5 dB |
+| Peaking | 2615 Hz | 2.76 | -1.7 dB |
+| Peaking | 3381 Hz | 0.98 | 1.8 dB  |
+| Peaking | 6356 Hz | 3.95 | 4.8 dB  |
+| Peaking | 6595 Hz | 1.26 | -3.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audeze%20iSine20/Audeze%20iSine20.png)

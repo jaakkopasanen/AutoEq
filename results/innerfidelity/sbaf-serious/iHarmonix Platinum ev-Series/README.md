@@ -5,12 +5,12 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -4.4dB
-GraphicEQ: 10 -84; 20 -10.0; 22 -10.0; 23 -10.0; 25 -10.0; 26 -10.0; 28 -10.0; 30 -10.0; 32 -10.0; 35 -10.0; 37 -10.0; 40 -10.0; 42 -10.0; 45 -10.1; 49 -10.1; 52 -10.2; 56 -10.2; 59 -10.2; 64 -10.3; 68 -10.4; 73 -10.4; 78 -10.5; 83 -10.6; 89 -10.7; 95 -10.7; 102 -10.8; 109 -10.6; 117 -10.6; 125 -10.5; 134 -10.5; 143 -10.3; 153 -10.2; 164 -10.0; 175 -9.7; 188 -9.5; 201 -9.2; 215 -8.9; 230 -8.5; 246 -8.2; 263 -7.9; 282 -7.4; 301 -6.9; 323 -6.6; 345 -6.1; 369 -5.7; 395 -5.3; 423 -4.7; 452 -4.1; 484 -3.6; 518 -3.2; 554 -2.8; 593 -2.0; 635 -1.8; 679 -1.1; 726 -1.2; 777 -0.4; 832 -0.4; 890 -0.2; 952 -0.3; 1019 -0.3; 1090 -0.5; 1167 -0.6; 1248 -0.6; 1336 -0.9; 1429 -1.2; 1529 -1.5; 1636 -1.7; 1751 -1.9; 1873 -2.0; 2004 -1.9; 2145 -2.1; 2295 -2.2; 2455 -2.1; 2627 -2.1; 2811 -1.4; 3008 0.8; 3219 2.9; 3444 4.2; 3685 4.2; 3943 2.9; 4219 0.2; 4514 -3.0; 4830 -6.2; 5168 -7.4; 5530 -4.1; 5917 0.1; 6331 2.1; 6775 2.9; 7249 1.3; 7756 0.0; 8299 -1.7; 8880 -1.3; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 -10.0; 23 -10.0; 25 -10.0; 28 -10.0; 31 -10.0; 34 -10.0; 37 -10.0; 41 -10.0; 45 -10.1; 49 -10.1; 54 -10.2; 60 -10.2; 66 -10.3; 72 -10.4; 79 -10.6; 87 -10.6; 96 -10.7; 106 -10.7; 116 -10.6; 128 -10.5; 141 -10.4; 155 -10.1; 170 -9.8; 187 -9.5; 206 -9.1; 227 -8.6; 249 -8.2; 274 -7.6; 302 -6.9; 332 -6.5; 365 -5.7; 402 -5.2; 442 -4.2; 486 -3.6; 535 -3.1; 588 -2.1; 647 -1.6; 712 -1.2; 783 -0.4; 861 -0.3; 947 -0.2; 1042 -0.3; 1146 -0.6; 1261 -0.7; 1387 -1.1; 1526 -1.5; 1678 -1.8; 1846 -1.9; 2031 -2.0; 2234 -2.2; 2457 -2.1; 2703 -2.0; 2973 0.4; 3270 3.3; 3597 4.3; 3957 2.8; 4353 -1.2; 4788 -5.8; 5267 -6.9; 5793 -0.9; 6373 2.2; 7010 2.3; 7711 0.1; 8482 -2.0; 9330 -0.1; 10263 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4211924542934256dB` and instead set Global volume in the UI for both channels to **-44**
+-4.4dB` and instead set Global volume in the UI for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `iHarmonix Platinum ev-Series ParametricEQ.txt`.
@@ -18,19 +18,19 @@ In case of using Peace, click *Import* in Peace GUI and select `iHarmonix Platin
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.0dB.
+When using independent subset of filters, apply preamp of -3.9dB.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 30 Hz   | 0.16 | -9.8 dB  |
 | Peaking | 198 Hz  | 0.58 | -4.7 dB  |
-| Peaking | 2656 Hz | 1.34 | -9.7 dB  |
-| Peaking | 3389 Hz | 1.12 | 11.3 dB  |
-| Peaking | 4962 Hz | 4.26 | -11.8 dB |
-| Peaking | 393 Hz  | 2.53 | -0.7 dB  |
-| Peaking | 839 Hz  | 1.88 | 1.1 dB   |
-| Peaking | 1606 Hz | 3.8  | -0.9 dB  |
-| Peaking | 6661 Hz | 6.65 | 3.2 dB   |
-| Peaking | 8448 Hz | 5.27 | -2.7 dB  |
+| Peaking | 2670 Hz | 1.33 | -9.8 dB  |
+| Peaking | 3375 Hz | 1.13 | 11.4 dB  |
+| Peaking | 4952 Hz | 4.26 | -11.7 dB |
+| Peaking | 394 Hz  | 2.55 | -0.7 dB  |
+| Peaking | 839 Hz  | 1.87 | 1.1 dB   |
+| Peaking | 1615 Hz | 3.58 | -0.9 dB  |
+| Peaking | 6643 Hz | 6.64 | 3.2 dB   |
+| Peaking | 8424 Hz | 5.38 | -2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/iHarmonix%20Platinum%20ev-Series/iHarmonix%20Platinum%20ev-Series.png)

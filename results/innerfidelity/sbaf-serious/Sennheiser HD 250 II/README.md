@@ -5,32 +5,32 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -3.9dB
-GraphicEQ: 10 -84; 20 0.5; 22 -0.2; 23 -0.6; 25 -1.1; 26 -1.4; 28 -1.8; 30 -2.1; 32 -2.4; 35 -2.8; 37 -3.0; 40 -3.2; 42 -3.3; 45 -3.4; 49 -3.5; 52 -3.6; 56 -3.5; 59 -3.3; 64 -2.9; 68 -2.7; 73 -2.4; 78 -1.8; 83 -1.4; 89 -1.6; 95 -2.6; 102 -4.2; 109 -5.1; 117 -5.4; 125 -4.7; 134 -4.0; 143 -4.3; 153 -3.9; 164 -2.1; 175 -2.8; 188 -1.7; 201 -0.9; 215 -0.5; 230 -0.7; 246 -0.5; 263 -0.1; 282 0.1; 301 0.3; 323 0.7; 345 1.1; 369 1.2; 395 1.2; 423 1.3; 452 1.1; 484 1.1; 518 0.9; 554 1.0; 593 1.2; 635 1.0; 679 0.9; 726 0.7; 777 0.8; 832 0.6; 890 0.4; 952 0.2; 1019 0.1; 1090 -0.1; 1167 0.0; 1248 0.6; 1336 0.1; 1429 -0.5; 1529 -1.0; 1636 -1.0; 1751 -0.5; 1873 -0.3; 2004 -0.5; 2145 -0.7; 2295 -0.9; 2455 -0.3; 2627 0.3; 2811 0.7; 3008 1.7; 3219 1.9; 3444 2.2; 3685 2.4; 3943 2.1; 4219 0.7; 4514 -0.1; 4830 -0.2; 5168 0.6; 5530 1.8; 5917 3.8; 6331 2.1; 6775 -0.4; 7249 -0.6; 7756 -0.8; 8299 -2.1; 8880 -3.4; 9502 -2.6; 10167 -0.3; 10879 0.0; 11640 -0.3; 12455 -0.8; 13327 -0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 0.0; 23 -0.6; 25 -1.1; 28 -1.8; 31 -2.3; 34 -2.7; 37 -3.0; 41 -3.2; 45 -3.4; 49 -3.5; 54 -3.5; 60 -3.2; 66 -2.8; 72 -2.5; 79 -1.7; 87 -1.5; 96 -2.8; 106 -4.8; 116 -5.4; 128 -4.4; 141 -4.2; 155 -3.4; 170 -2.6; 187 -1.8; 206 -0.7; 227 -0.6; 249 -0.4; 274 0.0; 302 0.3; 332 0.9; 365 1.2; 402 1.3; 442 1.2; 486 1.0; 535 0.9; 588 1.1; 647 0.9; 712 0.7; 783 0.8; 861 0.5; 947 0.2; 1042 0.0; 1146 -0.1; 1261 0.6; 1387 -0.2; 1526 -1.0; 1678 -0.8; 1846 -0.3; 2031 -0.5; 2234 -0.9; 2457 -0.3; 2703 0.4; 2973 1.6; 3270 2.0; 3597 2.3; 3957 2.1; 4353 0.3; 4788 -0.2; 5267 0.8; 5793 3.4; 6373 1.8; 7010 -0.6; 7711 -0.7; 8482 -2.6; 9330 -3.1; 10263 -0.1; 11289 -0.0; 12418 -0.9; 13660 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.934327137855155dB` and instead set Global volume in the UI for both channels to **-39**
+-3.9dB` and instead set Global volume in the UI for both channels to **-39**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 250 II ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.2dB.
+When using independent subset of filters, apply preamp of -4.3dB.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 46 Hz    | 1.26 | -3.6 dB |
-| Peaking | 124 Hz   | 2.12 | -5.0 dB |
-| Peaking | 3514 Hz  | 4.08 | 2.7 dB  |
-| Peaking | 5982 Hz  | 8.5  | 4.2 dB  |
-| Peaking | 8940 Hz  | 4.6  | -3.7 dB |
-| Peaking | 86 Hz    | 8.3  | 0.8 dB  |
-| Peaking | 176 Hz   | 3.22 | -0.9 dB |
-| Peaking | 458 Hz   | 0.91 | 1.4 dB  |
-| Peaking | 1765 Hz  | 1.85 | -0.9 dB |
-| Peaking | 10507 Hz | 9.04 | 0.8 dB  |
+| Peaking | 46 Hz    | 1.27 | -3.6 dB |
+| Peaking | 123 Hz   | 2.13 | -5.0 dB |
+| Peaking | 3526 Hz  | 4.07 | 2.7 dB  |
+| Peaking | 5959 Hz  | 8.52 | 4.2 dB  |
+| Peaking | 8908 Hz  | 4.61 | -3.7 dB |
+| Peaking | 94 Hz    | 7.99 | 0.7 dB  |
+| Peaking | 176 Hz   | 3.49 | -1.0 dB |
+| Peaking | 475 Hz   | 0.91 | 1.4 dB  |
+| Peaking | 1748 Hz  | 1.86 | -0.9 dB |
+| Peaking | 10434 Hz | 8.66 | 0.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20250%20II/Sennheiser%20HD%20250%20II.png)

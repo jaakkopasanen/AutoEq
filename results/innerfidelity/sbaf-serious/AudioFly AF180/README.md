@@ -5,32 +5,32 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 2.9; 22 2.7; 23 2.6; 25 2.4; 26 2.3; 28 2.2; 30 2.1; 32 1.9; 35 1.8; 37 1.6; 40 1.5; 42 1.4; 45 1.2; 49 0.9; 52 0.8; 56 0.6; 59 0.4; 64 0.1; 68 -0.1; 73 -0.4; 78 -0.6; 83 -0.9; 89 -1.3; 95 -1.6; 102 -1.9; 109 -2.0; 117 -2.2; 125 -2.4; 134 -2.5; 143 -2.7; 153 -2.9; 164 -3.1; 175 -3.1; 188 -3.1; 201 -3.2; 215 -3.2; 230 -3.1; 246 -3.1; 263 -3.1; 282 -2.9; 301 -2.8; 323 -2.7; 345 -2.6; 369 -2.4; 395 -2.3; 423 -2.0; 452 -1.8; 484 -1.7; 518 -1.5; 554 -1.1; 593 -0.7; 635 -0.5; 679 -0.4; 726 -0.1; 777 0.2; 832 0.1; 890 0.1; 952 -0.0; 1019 -0.1; 1090 -0.1; 1167 -0.1; 1248 -0.1; 1336 -0.2; 1429 -0.2; 1529 -0.3; 1636 -0.1; 1751 0.3; 1873 0.8; 2004 1.6; 2145 2.2; 2295 3.0; 2455 4.1; 2627 4.9; 2811 5.5; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 5.7; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 -0.8; 10167 -3.3; 10879 -2.4; 11640 -0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 0.0; 23 2.6; 25 2.4; 28 2.2; 31 2.0; 34 1.8; 37 1.6; 41 1.4; 45 1.2; 49 0.9; 54 0.7; 60 0.3; 66 0.0; 72 -0.3; 79 -0.7; 87 -1.2; 96 -1.7; 106 -2.0; 116 -2.2; 128 -2.4; 141 -2.7; 155 -2.9; 170 -3.1; 187 -3.0; 206 -3.2; 227 -3.1; 249 -3.1; 274 -2.9; 302 -2.8; 332 -2.7; 365 -2.4; 402 -2.2; 442 -1.8; 486 -1.7; 535 -1.3; 588 -0.7; 647 -0.4; 712 -0.2; 783 0.2; 861 0.1; 947 -0.0; 1042 -0.1; 1146 -0.1; 1261 -0.1; 1387 -0.2; 1526 -0.3; 1678 0.0; 1846 0.7; 2031 1.8; 2234 2.6; 2457 4.1; 2703 5.1; 2973 6.0; 3270 6.0; 3597 6.0; 3957 5.7; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -0.2; 10263 -3.4; 11289 -0.7; 12418 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.099999999573947dB` and instead set Global volume in the UI for both channels to **-60**
+-6.1dB` and instead set Global volume in the UI for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AudioFly AF180 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -6.9dB.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 14 Hz    | 0.89 | 0.8 dB  |
-| Peaking | 20 Hz    | 0.27 | 2.4 dB  |
+| Peaking | 15 Hz    | 0.78 | 0.8 dB  |
+| Peaking | 21 Hz    | 0.28 | 2.4 dB  |
 | Peaking | 187 Hz   | 0.45 | -3.5 dB |
-| Peaking | 4282 Hz  | 0.84 | 6.9 dB  |
-| Peaking | 10076 Hz | 2.6  | -4.2 dB |
-| Peaking | 1649 Hz  | 2.62 | -1.6 dB |
-| Peaking | 2849 Hz  | 2.61 | 1.9 dB  |
-| Peaking | 4388 Hz  | 1.66 | -1.9 dB |
-| Peaking | 6556 Hz  | 1.68 | 3.1 dB  |
-| Peaking | 7514 Hz  | 4.18 | -3.9 dB |
+| Peaking | 4280 Hz  | 0.84 | 6.9 dB  |
+| Peaking | 10075 Hz | 2.59 | -4.2 dB |
+| Peaking | 1642 Hz  | 2.61 | -1.6 dB |
+| Peaking | 2856 Hz  | 2.6  | 1.9 dB  |
+| Peaking | 4369 Hz  | 1.67 | -1.9 dB |
+| Peaking | 6603 Hz  | 1.67 | 3.0 dB  |
+| Peaking | 7489 Hz  | 4.2  | -3.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AudioFly%20AF180/AudioFly%20AF180.png)

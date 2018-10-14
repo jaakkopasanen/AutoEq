@@ -5,12 +5,12 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 0.2; 22 0.1; 23 0.0; 25 -0.1; 26 -0.1; 28 -0.2; 30 -0.2; 32 -0.3; 35 -0.3; 37 -0.3; 40 -0.4; 42 -0.4; 45 -0.5; 49 -0.6; 52 -0.6; 56 -0.7; 59 -0.7; 64 -0.8; 68 -1.0; 73 -1.2; 78 -1.4; 83 -1.5; 89 -1.7; 95 -1.9; 102 -2.1; 109 -2.2; 117 -2.2; 125 -2.3; 134 -2.7; 143 -2.8; 153 -2.9; 164 -3.1; 175 -3.0; 188 -3.1; 201 -3.4; 215 -3.5; 230 -3.9; 246 -3.9; 263 -3.9; 282 -3.8; 301 -3.8; 323 -3.8; 345 -3.6; 369 -3.4; 395 -3.0; 423 -2.4; 452 -1.6; 484 -0.8; 518 0.1; 554 1.4; 593 2.8; 635 3.7; 679 3.7; 726 3.4; 777 2.9; 832 1.8; 890 0.8; 952 0.2; 1019 -0.2; 1090 -0.7; 1167 -0.9; 1248 -1.0; 1336 -1.2; 1429 -0.9; 1529 -0.7; 1636 0.3; 1751 1.1; 1873 2.2; 2004 4.8; 2145 6.0; 2295 5.4; 2455 4.4; 2627 4.3; 2811 4.7; 3008 4.8; 3219 4.9; 3444 5.9; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 0.0; 23 0.0; 25 -0.1; 28 -0.2; 31 -0.3; 34 -0.3; 37 -0.3; 41 -0.4; 45 -0.5; 49 -0.6; 54 -0.6; 60 -0.7; 66 -0.9; 72 -1.1; 79 -1.4; 87 -1.6; 96 -1.9; 106 -2.1; 116 -2.2; 128 -2.4; 141 -2.8; 155 -3.0; 170 -3.0; 187 -3.1; 206 -3.4; 227 -3.8; 249 -3.9; 274 -3.9; 302 -3.8; 332 -3.7; 365 -3.4; 402 -2.9; 442 -1.8; 486 -0.7; 535 0.6; 588 2.6; 647 3.8; 712 3.5; 783 2.8; 861 1.2; 947 0.2; 1042 -0.4; 1146 -0.9; 1261 -1.1; 1387 -1.1; 1526 -0.7; 1678 0.7; 1846 1.9; 2031 5.3; 2234 5.9; 2457 4.4; 2703 4.3; 2973 4.9; 3270 5.2; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.099999999999973dB` and instead set Global volume in the UI for both channels to **-60**
+-6.1dB` and instead set Global volume in the UI for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `House of Marley Liberate XLBT Wired ParametricEQ.txt`.
@@ -22,15 +22,15 @@ When using independent subset of filters, apply preamp of -6.9dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 440 Hz  | 0.32 | -5.3 dB |
-| Peaking | 671 Hz  | 1.55 | 8.6 dB  |
-| Peaking | 1637 Hz | 1.64 | -4.2 dB |
-| Peaking | 2075 Hz | 1.3  | 7.7 dB  |
-| Peaking | 4757 Hz | 1.39 | 6.2 dB  |
-| Peaking | 1183 Hz | 2.43 | -0.3 dB |
-| Peaking | 3536 Hz | 5.74 | 1.4 dB  |
-| Peaking | 4692 Hz | 4.86 | -0.8 dB |
-| Peaking | 6355 Hz | 3.34 | 4.3 dB  |
-| Peaking | 7312 Hz | 1.64 | -3.0 dB |
+| Peaking | 446 Hz  | 0.32 | -5.4 dB |
+| Peaking | 670 Hz  | 1.54 | 8.6 dB  |
+| Peaking | 1633 Hz | 1.65 | -4.2 dB |
+| Peaking | 2078 Hz | 1.29 | 7.8 dB  |
+| Peaking | 4758 Hz | 1.39 | 6.2 dB  |
+| Peaking | 3543 Hz | 4.56 | 1.6 dB  |
+| Peaking | 4739 Hz | 3.94 | -0.8 dB |
+| Peaking | 6402 Hz | 3.08 | 4.0 dB  |
+| Peaking | 6527 Hz | 0.53 | -0.7 dB |
+| Peaking | 7459 Hz | 2.55 | -2.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/House%20of%20Marley%20Liberate%20XLBT%20Wired/House%20of%20Marley%20Liberate%20XLBT%20Wired.png)

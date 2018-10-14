@@ -5,7 +5,7 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 5.9; 26 5.8; 28 5.3; 30 4.7; 32 3.9; 35 2.9; 37 2.2; 40 1.4; 42 0.8; 45 0.1; 49 -0.7; 52 -1.2; 56 -1.8; 59 -2.2; 64 -2.9; 68 -3.3; 73 -3.8; 78 -4.2; 83 -4.6; 89 -5.0; 95 -5.4; 102 -5.7; 109 -5.8; 117 -5.8; 125 -6.1; 134 -6.1; 143 -6.2; 153 -6.3; 164 -6.2; 175 -6.2; 188 -6.1; 201 -6.1; 215 -5.9; 230 -5.7; 246 -5.6; 263 -5.5; 282 -5.2; 301 -5.0; 323 -4.8; 345 -4.5; 369 -4.4; 395 -4.3; 423 -4.0; 452 -3.7; 484 -3.6; 518 -3.2; 554 -2.7; 593 -2.2; 635 -2.1; 679 -2.2; 726 -1.0; 777 0.2; 832 0.3; 890 0.9; 952 0.7; 1019 0.1; 1090 0.2; 1167 -0.0; 1248 -0.5; 1336 -1.9; 1429 -3.0; 1529 -3.7; 1636 -4.0; 1751 -4.3; 1873 -4.0; 2004 -3.7; 2145 -3.2; 2295 -2.7; 2455 -2.0; 2627 -1.8; 2811 -2.3; 3008 -3.1; 3219 -3.7; 3444 -3.5; 3685 -3.1; 3943 -4.4; 4219 -7.6; 4514 -8.7; 4830 -7.5; 5168 -4.4; 5530 -2.0; 5917 0.5; 6331 0.8; 6775 0.2; 7249 1.1; 7756 -0.2; 8299 -3.1; 8880 -5.7; 9502 -6.5; 10167 -5.6; 10879 -3.9; 11640 -1.7; 12455 -0.2; 13327 -0.3; 14260 -1.3; 15258 -0.6; 16326 0.0; 17469 0.0; 18692 0.0; 20000 -0.2
+GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.3; 31 4.3; 34 3.2; 37 2.2; 41 1.1; 45 0.1; 49 -0.7; 54 -1.5; 60 -2.4; 66 -3.1; 72 -3.7; 79 -4.3; 87 -4.9; 96 -5.5; 106 -5.7; 116 -5.8; 128 -6.1; 141 -6.2; 155 -6.3; 170 -6.2; 187 -6.1; 206 -6.1; 227 -5.7; 249 -5.6; 274 -5.3; 302 -5.0; 332 -4.7; 365 -4.4; 402 -4.2; 442 -3.8; 486 -3.6; 535 -3.0; 588 -2.3; 647 -2.2; 712 -1.4; 783 0.3; 861 0.6; 947 0.8; 1042 0.1; 1146 -0.1; 1261 -0.7; 1387 -2.6; 1526 -3.7; 1678 -4.1; 1846 -4.1; 2031 -3.6; 2234 -2.9; 2457 -2.0; 2703 -2.0; 2973 -2.9; 3270 -3.7; 3597 -3.3; 3957 -4.6; 4353 -8.3; 4788 -7.8; 5267 -3.7; 5793 -0.1; 6373 0.7; 7010 0.8; 7711 0.0; 8482 -4.1; 9330 -6.5; 10263 -5.4; 11289 -2.7; 12418 -0.2; 13660 -0.7; 15026 -0.9; 16529 0.0; 18182 0.0; 20000 -0.3
 ```
 
 ### HeSuVi
@@ -16,21 +16,21 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Roc Nation Aviator ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of -6.4dB.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 24 Hz    | 0.97 | 7.2 dB  |
-| Peaking | 151 Hz   | 0.41 | -6.7 dB |
-| Peaking | 1838 Hz  | 2.46 | -4.1 dB |
-| Peaking | 4460 Hz  | 3.24 | -8.6 dB |
-| Peaking | 22095 Hz | 1.25 | -4.9 dB |
-| Peaking | 816 Hz   | 0.84 | -2.5 dB |
-| Peaking | 895 Hz   | 1.71 | 4.7 dB  |
-| Peaking | 3157 Hz  | 7.06 | -1.8 dB |
-| Peaking | 7052 Hz  | 2.08 | 3.7 dB  |
-| Peaking | 9382 Hz  | 2.67 | -7.8 dB |
+| Peaking | 150 Hz   | 0.41 | -6.7 dB |
+| Peaking | 1837 Hz  | 2.46 | -4.1 dB |
+| Peaking | 4413 Hz  | 3.23 | -8.6 dB |
+| Peaking | 21933 Hz | 1.49 | -4.8 dB |
+| Peaking | 809 Hz   | 0.84 | -2.3 dB |
+| Peaking | 894 Hz   | 1.75 | 4.6 dB  |
+| Peaking | 3138 Hz  | 8.54 | -1.8 dB |
+| Peaking | 7081 Hz  | 2.19 | 3.7 dB  |
+| Peaking | 9381 Hz  | 2.66 | -7.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Roc%20Nation%20Aviator/Skullcandy%20Roc%20Nation%20Aviator.png)

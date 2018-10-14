@@ -5,12 +5,12 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 5.3; 22 4.8; 23 4.5; 25 4.0; 26 3.7; 28 3.2; 30 2.7; 32 2.2; 35 1.5; 37 1.2; 40 0.7; 42 0.3; 45 -0.4; 49 -1.2; 52 -1.9; 56 -2.7; 59 -3.2; 64 -4.0; 68 -4.3; 73 -4.5; 78 -4.8; 83 -5.4; 89 -6.0; 95 -6.1; 102 -5.7; 109 -5.1; 117 -4.4; 125 -3.7; 134 -2.9; 143 -2.2; 153 -1.5; 164 -0.8; 175 -0.3; 188 0.1; 201 0.4; 215 0.8; 230 1.2; 246 1.6; 263 2.1; 282 2.6; 301 3.1; 323 3.7; 345 3.9; 369 3.8; 395 3.7; 423 3.5; 452 3.3; 484 3.1; 518 2.9; 554 2.9; 593 2.8; 635 2.4; 679 1.9; 726 1.6; 777 1.4; 832 0.9; 890 0.5; 952 0.2; 1019 -0.1; 1090 -0.3; 1167 -0.4; 1248 -0.7; 1336 -1.2; 1429 -1.9; 1529 -2.7; 1636 -3.3; 1751 -3.8; 1873 -4.3; 2004 -4.7; 2145 -4.7; 2295 -4.9; 2455 -4.1; 2627 -3.2; 2811 -2.5; 3008 -0.8; 3219 0.8; 3444 2.3; 3685 3.7; 3943 5.8; 4219 6.0; 4514 5.6; 4830 3.1; 5168 1.3; 5530 2.9; 5917 4.3; 6331 3.1; 6775 0.9; 7249 0.2; 7756 -0.6; 8299 -2.1; 8880 -3.8; 9502 -3.6; 10167 -0.4; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 0.0; 23 4.5; 25 4.0; 28 3.2; 31 2.4; 34 1.7; 37 1.2; 41 0.5; 45 -0.4; 49 -1.2; 54 -2.3; 60 -3.4; 66 -4.2; 72 -4.5; 79 -4.9; 87 -5.8; 96 -6.0; 106 -5.3; 116 -4.5; 128 -3.5; 141 -2.4; 155 -1.3; 170 -0.5; 187 0.1; 206 0.5; 227 1.1; 249 1.7; 274 2.4; 302 3.1; 332 3.8; 365 3.9; 402 3.6; 442 3.4; 486 3.1; 535 2.9; 588 2.8; 647 2.3; 712 1.7; 783 1.3; 861 0.7; 947 0.2; 1042 -0.2; 1146 -0.3; 1261 -0.7; 1387 -1.5; 1526 -2.6; 1678 -3.5; 1846 -4.2; 2031 -4.6; 2234 -5.0; 2457 -4.1; 2703 -3.0; 2973 -1.1; 3270 1.2; 3597 3.0; 3957 5.9; 4353 6.0; 4788 3.6; 5267 1.6; 5793 4.1; 6373 2.9; 7010 0.4; 7711 -0.5; 8482 -2.7; 9330 -4.0; 10263 -0.2; 11289 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.0999977423100935dB` and instead set Global volume in the UI for both channels to **-60**
+-6.1dB` and instead set Global volume in the UI for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum M2 OEBT Wired Active ParametricEQ.txt`.
@@ -22,13 +22,13 @@ When using independent subset of filters, apply preamp of -6.2dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 0.83 | 5.5 dB  |
-| Peaking | 91 Hz   | 0.96 | -6.8 dB |
-| Peaking | 380 Hz  | 0.67 | 4.3 dB  |
-| Peaking | 2219 Hz | 1.13 | -6.1 dB |
-| Peaking | 4093 Hz | 2.1  | 7.9 dB  |
-| Peaking | 5130 Hz | 9.06 | -2.4 dB |
-| Peaking | 5953 Hz | 5.3  | 3.4 dB  |
-| Peaking | 8999 Hz | 4.89 | -4.6 dB |
+| Peaking | 20 Hz   | 0.84 | 5.5 dB  |
+| Peaking | 90 Hz   | 0.95 | -6.9 dB |
+| Peaking | 377 Hz  | 0.67 | 4.3 dB  |
+| Peaking | 2216 Hz | 1.14 | -6.0 dB |
+| Peaking | 4097 Hz | 2.09 | 7.9 dB  |
+| Peaking | 5112 Hz | 9.89 | -2.3 dB |
+| Peaking | 5968 Hz | 5.92 | 3.4 dB  |
+| Peaking | 9000 Hz | 4.96 | -4.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20M2%20OEBT%20Wired%20Active/Sennheiser%20Momentum%20M2%20OEBT%20Wired%20Active.png)

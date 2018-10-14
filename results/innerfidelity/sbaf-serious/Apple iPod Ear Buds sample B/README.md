@@ -5,32 +5,32 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 6.0; 49 6.0; 52 6.0; 56 6.0; 59 6.0; 64 6.0; 68 6.0; 73 6.0; 78 6.0; 83 6.0; 89 6.0; 95 6.0; 102 6.0; 109 6.0; 117 6.0; 125 6.0; 134 6.0; 143 6.0; 153 5.8; 164 5.0; 175 3.9; 188 3.0; 201 2.1; 215 1.3; 230 0.7; 246 0.2; 263 -0.3; 282 -0.5; 301 -0.8; 323 -0.9; 345 -0.8; 369 -0.6; 395 -0.5; 423 -0.1; 452 0.0; 484 0.1; 518 0.0; 554 0.2; 593 0.3; 635 0.1; 679 0.0; 726 -0.1; 777 0.1; 832 0.0; 890 -0.0; 952 -0.0; 1019 0.0; 1090 0.0; 1167 0.1; 1248 0.0; 1336 -0.3; 1429 -0.6; 1529 -1.0; 1636 -1.3; 1751 -1.3; 1873 -1.1; 2004 -0.5; 2145 0.2; 2295 0.9; 2455 0.4; 2627 -1.5; 2811 -3.2; 3008 -5.4; 3219 -4.8; 3444 -2.7; 3685 -1.0; 3943 -0.5; 4219 -1.2; 4514 -1.9; 4830 -1.9; 5168 -1.4; 5530 -1.8; 5917 -3.2; 6331 -4.5; 6775 -3.5; 7249 -2.3; 7756 -2.0; 8299 -2.2; 8880 -1.6; 9502 -0.1; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 6.0; 141 6.0; 155 5.7; 170 4.3; 187 3.0; 206 1.9; 227 0.9; 249 0.1; 274 -0.5; 302 -0.8; 332 -0.9; 365 -0.7; 402 -0.4; 442 0.0; 486 0.1; 535 0.1; 588 0.3; 647 0.1; 712 -0.1; 783 0.1; 861 -0.0; 947 -0.0; 1042 0.0; 1146 0.1; 1261 0.0; 1387 -0.5; 1526 -1.0; 1678 -1.3; 1846 -1.2; 2031 -0.4; 2234 0.7; 2457 0.3; 2703 -2.2; 2973 -5.1; 3270 -4.4; 3597 -1.5; 3957 -0.5; 4353 -1.6; 4788 -1.9; 5267 -1.5; 5793 -2.6; 6373 -4.5; 7010 -2.8; 7711 -2.0; 8482 -2.2; 9330 -0.4; 10263 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.100000000000002dB` and instead set Global volume in the UI for both channels to **-61**
+-6.1dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Apple iPod Ear Buds sample B ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -6.6dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 64 Hz   | 0.19 | 6.6 dB  |
+| Peaking | 63 Hz   | 0.19 | 6.6 dB  |
 | Peaking | 251 Hz  | 2.37 | -2.6 dB |
 | Peaking | 355 Hz  | 1.04 | -3.2 dB |
-| Peaking | 3078 Hz | 5.5  | -5.6 dB |
-| Peaking | 6466 Hz | 2.36 | -3.9 dB |
-| Peaking | 19 Hz   | 1.24 | 1.3 dB  |
-| Peaking | 47 Hz   | 0.27 | -0.5 dB |
-| Peaking | 143 Hz  | 3.29 | 1.4 dB  |
-| Peaking | 1712 Hz | 2.82 | -1.4 dB |
-| Peaking | 2314 Hz | 7.06 | 2.0 dB  |
+| Peaking | 3080 Hz | 5.49 | -5.6 dB |
+| Peaking | 6465 Hz | 2.36 | -3.9 dB |
+| Peaking | 16 Hz   | 1.26 | 1.2 dB  |
+| Peaking | 44 Hz   | 0.34 | -0.6 dB |
+| Peaking | 142 Hz  | 3.46 | 1.4 dB  |
+| Peaking | 1714 Hz | 2.83 | -1.4 dB |
+| Peaking | 2324 Hz | 7.08 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Apple%20iPod%20Ear%20Buds%20sample%20B/Apple%20iPod%20Ear%20Buds%20sample%20B.png)

@@ -5,32 +5,32 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -1.9dB
-GraphicEQ: 10 -84; 20 -5.4; 22 -5.4; 23 -5.4; 25 -5.4; 26 -5.4; 28 -5.4; 30 -5.4; 32 -5.5; 35 -5.5; 37 -5.6; 40 -5.6; 42 -5.6; 45 -5.6; 49 -5.7; 52 -5.8; 56 -5.8; 59 -5.9; 64 -6.0; 68 -6.1; 73 -6.2; 78 -6.4; 83 -6.5; 89 -6.6; 95 -6.7; 102 -6.7; 109 -6.7; 117 -6.6; 125 -6.6; 134 -6.6; 143 -6.5; 153 -6.4; 164 -6.2; 175 -6.0; 188 -5.8; 201 -5.6; 215 -5.3; 230 -5.0; 246 -4.7; 263 -4.5; 282 -4.0; 301 -3.7; 323 -3.4; 345 -3.0; 369 -2.7; 395 -2.4; 423 -1.8; 452 -1.5; 484 -1.3; 518 -1.0; 554 -0.6; 593 -0.1; 635 0.1; 679 0.2; 726 0.4; 777 0.6; 832 0.5; 890 0.4; 952 0.2; 1019 -0.1; 1090 -0.4; 1167 -0.7; 1248 -1.0; 1336 -1.6; 1429 -2.1; 1529 -2.6; 1636 -2.9; 1751 -3.3; 1873 -3.4; 2004 -3.5; 2145 -3.8; 2295 -4.1; 2455 -3.6; 2627 -3.0; 2811 -3.8; 3008 -3.0; 3219 -1.0; 3444 0.8; 3685 1.5; 3943 1.7; 4219 0.7; 4514 0.1; 4830 0.2; 5168 0.8; 5530 0.9; 5917 0.4; 6331 -0.4; 6775 -0.6; 7249 0.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 -0.9; 14260 -2.8; 15258 -2.7; 16326 -2.2; 17469 -2.6; 18692 -1.7; 20000 0.0
+GraphicEQ: 21 -5.4; 23 -5.4; 25 -5.4; 28 -5.4; 31 -5.5; 34 -5.5; 37 -5.6; 41 -5.6; 45 -5.6; 49 -5.7; 54 -5.8; 60 -5.9; 66 -6.1; 72 -6.2; 79 -6.4; 87 -6.5; 96 -6.7; 106 -6.7; 116 -6.6; 128 -6.6; 141 -6.5; 155 -6.3; 170 -6.1; 187 -5.8; 206 -5.5; 227 -5.0; 249 -4.7; 274 -4.2; 302 -3.7; 332 -3.2; 365 -2.7; 402 -2.2; 442 -1.6; 486 -1.3; 535 -0.8; 588 -0.2; 647 0.2; 712 0.3; 783 0.6; 861 0.5; 947 0.2; 1042 -0.2; 1146 -0.6; 1261 -1.1; 1387 -1.9; 1526 -2.6; 1678 -3.1; 1846 -3.4; 2031 -3.5; 2234 -4.0; 2457 -3.6; 2703 -3.4; 2973 -3.2; 3270 -0.5; 3597 1.3; 3957 1.6; 4353 0.3; 4788 0.1; 5267 0.9; 5793 0.7; 6373 -0.5; 7010 -0.2; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -1.7; 15026 -2.8; 16529 -2.2; 18182 -2.4; 20000 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.8755810543259221dB` and instead set Global volume in the UI for both channels to **-18**
+-1.9dB` and instead set Global volume in the UI for both channels to **-18**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Steelseries Flux In-Ear ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -1.9dB.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 37 Hz    | 0.25 | -5.4 dB |
+| Peaking | 36 Hz    | 0.24 | -5.4 dB |
 | Peaking | 165 Hz   | 0.73 | -3.9 dB |
-| Peaking | 2330 Hz  | 1.44 | -4.5 dB |
-| Peaking | 3787 Hz  | 3.23 | 3.2 dB  |
-| Peaking | 16456 Hz | 1.48 | -2.9 dB |
-| Peaking | 331 Hz   | 1.55 | -0.9 dB |
-| Peaking | 776 Hz   | 1.68 | 1.2 dB  |
-| Peaking | 1543 Hz  | 2.94 | -1.4 dB |
-| Peaking | 1629 Hz  | 0.12 | 0.4 dB  |
-| Peaking | 2947 Hz  | 9.57 | -1.7 dB |
+| Peaking | 2334 Hz  | 1.44 | -4.5 dB |
+| Peaking | 3834 Hz  | 3.23 | 3.2 dB  |
+| Peaking | 16455 Hz | 1.48 | -2.9 dB |
+| Peaking | 342 Hz   | 1.89 | -0.8 dB |
+| Peaking | 845 Hz   | 1.06 | 1.9 dB  |
+| Peaking | 1921 Hz  | 0.85 | -2.3 dB |
+| Peaking | 2211 Hz  | 2.29 | 2.2 dB  |
+| Peaking | 5725 Hz  | 0.56 | 0.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Steelseries%20Flux%20In-Ear/Steelseries%20Flux%20In-Ear.png)

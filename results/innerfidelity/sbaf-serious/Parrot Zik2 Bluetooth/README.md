@@ -5,32 +5,32 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 -11.5; 22 -11.1; 23 -10.9; 25 -10.4; 26 -10.1; 28 -9.5; 30 -9.0; 32 -8.4; 35 -7.7; 37 -7.3; 40 -6.8; 42 -6.4; 45 -6.0; 49 -5.5; 52 -5.2; 56 -4.8; 59 -4.5; 64 -4.0; 68 -3.7; 73 -3.3; 78 -2.9; 83 -2.6; 89 -2.3; 95 -1.9; 102 -1.5; 109 -1.1; 117 -0.7; 125 -0.5; 134 -0.2; 143 0.1; 153 0.2; 164 0.4; 175 0.6; 188 0.8; 201 1.1; 215 1.3; 230 1.5; 246 1.5; 263 1.7; 282 1.9; 301 2.0; 323 2.2; 345 2.5; 369 2.6; 395 2.6; 423 2.8; 452 3.0; 484 3.0; 518 3.0; 554 3.1; 593 3.3; 635 3.5; 679 3.4; 726 3.3; 777 3.0; 832 2.2; 890 1.3; 952 0.6; 1019 -0.2; 1090 -0.5; 1167 -1.0; 1248 -1.9; 1336 -2.5; 1429 -3.5; 1529 -5.0; 1636 -6.7; 1751 -8.0; 1873 -7.8; 2004 -7.5; 2145 -6.8; 2295 -6.0; 2455 -4.5; 2627 -1.9; 2811 0.6; 3008 2.6; 3219 5.7; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 3.6; 5168 0.3; 5530 1.3; 5917 2.0; 6331 3.8; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.9; 9502 -5.7; 10167 -7.0; 10879 -6.1; 11640 -4.8; 12455 -3.9; 13327 -3.0; 14260 -1.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 -11.3; 23 -10.9; 25 -10.4; 28 -9.5; 31 -8.7; 34 -7.9; 37 -7.3; 41 -6.6; 45 -6.0; 49 -5.5; 54 -5.0; 60 -4.4; 66 -3.8; 72 -3.4; 79 -2.8; 87 -2.4; 96 -1.9; 106 -1.3; 116 -0.7; 128 -0.4; 141 0.0; 155 0.2; 170 0.5; 187 0.8; 206 1.2; 227 1.5; 249 1.6; 274 1.8; 302 2.0; 332 2.3; 365 2.6; 402 2.6; 442 2.9; 486 3.0; 535 3.0; 588 3.3; 647 3.5; 712 3.3; 783 2.9; 861 1.7; 947 0.6; 1042 -0.3; 1146 -0.8; 1261 -1.9; 1387 -2.9; 1526 -4.9; 1678 -7.3; 1846 -8.0; 2031 -7.4; 2234 -6.2; 2457 -4.5; 2703 -0.7; 2973 2.1; 3270 5.9; 3597 6.0; 3957 6.0; 4353 6.0; 4788 4.4; 5267 0.6; 5793 1.7; 6373 4.0; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -4.6; 10263 -7.0; 11289 -5.4; 12418 -3.9; 13660 -2.5; 15026 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.100000670943735dB` and instead set Global volume in the UI for both channels to **-61**
+-6.1dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Parrot Zik2 Bluetooth ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -4.9dB.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 20 Hz    | 0.59 | -11.2 dB |
-| Peaking | 63 Hz    | 0.93 | -1.3 dB  |
-| Peaking | 1904 Hz  | 0.77 | -26.2 dB |
-| Peaking | 2889 Hz  | 0.2  | 18.9 dB  |
-| Peaking | 10521 Hz | 0.92 | -14.4 dB |
-| Peaking | 669 Hz   | 4.69 | 1.1 dB   |
-| Peaking | 2491 Hz  | 4.66 | -3.5 dB  |
-| Peaking | 3673 Hz  | 1.48 | 2.9 dB   |
-| Peaking | 5262 Hz  | 4.88 | -5.5 dB  |
-| Peaking | 6611 Hz  | 8.91 | 2.0 dB   |
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 20 Hz    |  0.6  | -11.2 dB |
+| Peaking | 62 Hz    |  0.94 | -1.3 dB  |
+| Peaking | 1904 Hz  |  0.78 | -26.0 dB |
+| Peaking | 2862 Hz  |  0.2  | 18.6 dB  |
+| Peaking | 10507 Hz |  0.93 | -14.3 dB |
+| Peaking | 1992 Hz  |  3.74 | 4.3 dB   |
+| Peaking | 2365 Hz  |  1.45 | -7.4 dB  |
+| Peaking | 3227 Hz  |  1.18 | 5.9 dB   |
+| Peaking | 5298 Hz  |  4.77 | -5.6 dB  |
+| Peaking | 6641 Hz  | 10.05 | 1.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Parrot%20Zik2%20Bluetooth/Parrot%20Zik2%20Bluetooth.png)

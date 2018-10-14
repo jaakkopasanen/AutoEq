@@ -5,18 +5,18 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -5.2dB
-GraphicEQ: 10 -84; 20 -3.1; 22 -3.2; 23 -3.2; 25 -3.3; 26 -3.3; 28 -3.3; 30 -3.3; 32 -3.3; 35 -3.3; 37 -3.3; 40 -3.2; 42 -3.1; 45 -3.0; 49 -2.9; 52 -2.8; 56 -2.7; 59 -2.6; 64 -2.5; 68 -2.5; 73 -2.4; 78 -2.3; 83 -2.2; 89 -2.1; 95 -2.1; 102 -2.5; 109 -2.8; 117 -2.6; 125 -2.4; 134 -2.9; 143 -4.0; 153 -4.6; 164 -3.0; 175 -3.1; 188 -4.5; 201 -4.3; 215 -4.2; 230 -3.6; 246 -3.2; 263 -2.7; 282 -2.1; 301 -1.4; 323 -1.0; 345 -0.9; 369 -0.7; 395 -0.4; 423 -0.1; 452 0.0; 484 -0.1; 518 -0.1; 554 0.1; 593 0.3; 635 0.2; 679 0.1; 726 -0.1; 777 -0.1; 832 -0.1; 890 -0.1; 952 -0.0; 1019 -0.1; 1090 -0.3; 1167 -0.7; 1248 -1.5; 1336 -2.1; 1429 -2.4; 1529 -2.7; 1636 -2.8; 1751 -2.4; 1873 -1.9; 2004 -1.4; 2145 -0.7; 2295 0.1; 2455 1.0; 2627 1.8; 2811 2.2; 3008 2.3; 3219 2.2; 3444 1.9; 3685 1.2; 3943 0.7; 4219 0.2; 4514 -0.2; 4830 -1.3; 5168 1.4; 5530 4.0; 5917 5.0; 6331 5.1; 6775 3.8; 7249 1.3; 7756 -0.5; 8299 -1.4; 8880 -1.5; 9502 -0.8; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 -3.2; 23 -3.2; 25 -3.3; 28 -3.3; 31 -3.3; 34 -3.3; 37 -3.3; 41 -3.2; 45 -3.0; 49 -2.9; 54 -2.8; 60 -2.6; 66 -2.5; 72 -2.4; 79 -2.3; 87 -2.2; 96 -2.2; 106 -2.7; 116 -2.6; 128 -2.5; 141 -3.7; 155 -4.4; 170 -2.6; 187 -4.4; 206 -4.3; 227 -3.7; 249 -3.1; 274 -2.3; 302 -1.4; 332 -1.0; 365 -0.7; 402 -0.3; 442 0.0; 486 -0.1; 535 -0.0; 588 0.3; 647 0.2; 712 -0.0; 783 -0.1; 861 -0.2; 947 -0.0; 1042 -0.2; 1146 -0.5; 1261 -1.6; 1387 -2.3; 1526 -2.7; 1678 -2.8; 1846 -2.0; 2031 -1.3; 2234 -0.3; 2457 1.1; 2703 2.0; 2973 2.3; 3270 2.2; 3597 1.4; 3957 0.7; 4353 0.3; 4788 -1.3; 5267 2.3; 5793 4.9; 6373 5.0; 7010 2.6; 7711 -0.4; 8482 -1.5; 9330 -1.1; 10263 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.242608418578785dB` and instead set Global volume in the UI for both channels to **-52**
+-5.2dB` and instead set Global volume in the UI for both channels to **-52**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NAD VISO HP50 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -1.9dB.
 
@@ -24,13 +24,13 @@ When using independent subset of filters, apply preamp of -1.9dB.
 |:--------|:--------|:-----|:--------|
 | Peaking | 26 Hz   | 0.31 | -3.2 dB |
 | Peaking | 193 Hz  | 1.28 | -3.8 dB |
-| Peaking | 1540 Hz | 2.76 | 0.6 dB  |
-| Peaking | 1608 Hz | 1.49 | -6.1 dB |
-| Peaking | 2290 Hz | 0.41 | 3.0 dB  |
-| Peaking | 2147 Hz | 5.17 | -0.6 dB |
-| Peaking | 2834 Hz | 3.73 | 1.0 dB  |
-| Peaking | 4860 Hz | 3.06 | -5.3 dB |
-| Peaking | 6003 Hz | 2.17 | 6.7 dB  |
-| Peaking | 8121 Hz | 2.39 | -3.9 dB |
+| Peaking | 1541 Hz | 2.76 | 0.6 dB  |
+| Peaking | 1607 Hz | 1.49 | -6.1 dB |
+| Peaking | 2291 Hz | 0.41 | 3.0 dB  |
+| Peaking | 2160 Hz | 5.22 | -0.6 dB |
+| Peaking | 2825 Hz | 3.71 | 1.0 dB  |
+| Peaking | 4802 Hz | 3.06 | -5.3 dB |
+| Peaking | 6016 Hz | 2.19 | 6.7 dB  |
+| Peaking | 8195 Hz | 2.38 | -3.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NAD%20VISO%20HP50/NAD%20VISO%20HP50.png)

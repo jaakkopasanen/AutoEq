@@ -5,12 +5,12 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 0.1; 22 -0.4; 23 -0.6; 25 -1.0; 26 -1.2; 28 -1.6; 30 -1.9; 32 -2.2; 35 -2.5; 37 -2.7; 40 -2.9; 42 -3.1; 45 -3.3; 49 -3.6; 52 -3.6; 56 -3.6; 59 -3.6; 64 -3.7; 68 -3.4; 73 -2.1; 78 -0.6; 83 -1.2; 89 -3.6; 95 -5.3; 102 -6.3; 109 -6.6; 117 -5.9; 125 -6.0; 134 -7.0; 143 -7.3; 153 -7.3; 164 -5.5; 175 -5.9; 188 -6.0; 201 -5.1; 215 -4.4; 230 -3.2; 246 -2.2; 263 -1.3; 282 -0.5; 301 -0.1; 323 0.0; 345 -0.0; 369 -0.1; 395 -0.2; 423 -0.4; 452 -0.7; 484 -0.9; 518 -1.1; 554 -1.1; 593 -1.1; 635 -1.1; 679 -0.8; 726 -0.6; 777 -0.7; 832 -0.6; 890 -0.6; 952 -0.4; 1019 0.1; 1090 0.7; 1167 0.9; 1248 0.5; 1336 -0.1; 1429 -0.7; 1529 -0.8; 1636 -0.2; 1751 1.1; 1873 2.4; 2004 3.5; 2145 4.3; 2295 5.2; 2455 6.0; 2627 6.0; 2811 6.0; 3008 6.0; 3219 5.9; 3444 5.8; 3685 5.5; 3943 5.6; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.0; 6331 1.4; 6775 3.5; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -1.3; 9502 -4.1; 10167 -4.6; 10879 -4.4; 11640 -4.0; 12455 -3.6; 13327 -2.5; 14260 -0.2; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 -0.2; 23 -0.6; 25 -1.0; 28 -1.6; 31 -2.0; 34 -2.4; 37 -2.7; 41 -3.0; 45 -3.3; 49 -3.5; 54 -3.6; 60 -3.6; 66 -3.6; 72 -2.5; 79 -0.5; 87 -2.8; 96 -5.4; 106 -6.5; 116 -6.0; 128 -6.3; 141 -7.2; 155 -7.0; 170 -5.3; 187 -6.0; 206 -4.9; 227 -3.5; 249 -2.0; 274 -0.8; 302 -0.1; 332 0.0; 365 -0.1; 402 -0.2; 442 -0.6; 486 -1.0; 535 -1.1; 588 -1.1; 647 -1.0; 712 -0.6; 783 -0.7; 861 -0.6; 947 -0.4; 1042 0.3; 1146 1.0; 1261 0.4; 1387 -0.5; 1526 -0.8; 1678 0.2; 1846 2.2; 2031 3.6; 2234 4.8; 2457 6.0; 2703 6.0; 2973 6.0; 3270 5.9; 3597 5.6; 3957 5.6; 4353 6.0; 4788 6.0; 5267 6.0; 5793 5.9; 6373 1.4; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -3.6; 10263 -4.6; 11289 -4.2; 12418 -3.6; 13660 -1.6; 15026 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.099999999996126dB` and instead set Global volume in the UI for both channels to **-60**
+-6.1dB` and instead set Global volume in the UI for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Signature Pro ParametricEQ.txt`.
@@ -18,19 +18,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Signat
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of -6.7dB.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 45 Hz    | 1.46 | -3.0 dB |
-| Peaking | 140 Hz   | 1.22 | -7.3 dB |
-| Peaking | 1492 Hz  | 0.76 | -5.5 dB |
-| Peaking | 3014 Hz  | 0.43 | 8.8 dB  |
-| Peaking | 10473 Hz | 1.51 | -7.2 dB |
-| Peaking | 168 Hz   | 5.78 | 1.5 dB  |
-| Peaking | 197 Hz   | 2.64 | -2.3 dB |
-| Peaking | 319 Hz   | 1.26 | 2.6 dB  |
-| Peaking | 499 Hz   | 0.77 | -1.6 dB |
-| Peaking | 1126 Hz  | 5.88 | 1.8 dB  |
+| Peaking | 45 Hz    | 1.44 | -3.0 dB |
+| Peaking | 141 Hz   | 1.22 | -7.3 dB |
+| Peaking | 1444 Hz  | 0.74 | -5.5 dB |
+| Peaking | 3027 Hz  | 0.44 | 8.8 dB  |
+| Peaking | 10450 Hz | 1.51 | -7.2 dB |
+| Peaking | 167 Hz   | 5.41 | 1.8 dB  |
+| Peaking | 193 Hz   | 2.99 | -2.0 dB |
+| Peaking | 312 Hz   | 1.82 | 2.1 dB  |
+| Peaking | 583 Hz   | 0.53 | -0.8 dB |
+| Peaking | 1117 Hz  | 4.58 | 2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20Signature%20Pro/Ultrasone%20Signature%20Pro.png)

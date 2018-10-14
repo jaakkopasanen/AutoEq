@@ -5,12 +5,12 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 6.0; 30 6.0; 32 6.0; 35 6.0; 37 6.0; 40 6.0; 42 6.0; 45 5.8; 49 5.3; 52 4.8; 56 4.3; 59 3.9; 64 3.2; 68 2.7; 73 2.1; 78 1.5; 83 0.9; 89 0.3; 95 -0.3; 102 -0.8; 109 -1.3; 117 -1.8; 125 -2.4; 134 -3.0; 143 -3.5; 153 -4.0; 164 -4.6; 175 -5.0; 188 -5.6; 201 -6.1; 215 -6.4; 230 -6.8; 246 -7.2; 263 -7.5; 282 -7.6; 301 -7.7; 323 -7.6; 345 -7.3; 369 -7.0; 395 -6.5; 423 -5.7; 452 -5.2; 484 -4.5; 518 -3.9; 554 -3.2; 593 -2.4; 635 -2.0; 679 -1.0; 726 -0.2; 777 -0.0; 832 0.3; 890 0.1; 952 0.1; 1019 0.0; 1090 -0.1; 1167 -0.2; 1248 -0.4; 1336 -0.8; 1429 -1.2; 1529 -1.7; 1636 -2.1; 1751 -2.4; 1873 -2.5; 2004 -2.4; 2145 -2.0; 2295 -0.9; 2455 1.0; 2627 3.0; 2811 5.1; 3008 6.0; 3219 6.0; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.8; 49 5.3; 54 4.5; 60 3.7; 66 2.9; 72 2.2; 79 1.4; 87 0.5; 96 -0.4; 106 -1.1; 116 -1.8; 128 -2.6; 141 -3.4; 155 -4.2; 170 -4.9; 187 -5.5; 206 -6.2; 227 -6.7; 249 -7.3; 274 -7.6; 302 -7.7; 332 -7.4; 365 -7.0; 402 -6.3; 442 -5.4; 486 -4.5; 535 -3.6; 588 -2.4; 647 -1.8; 712 -0.3; 783 0.0; 861 0.2; 947 0.1; 1042 0.0; 1146 -0.2; 1261 -0.5; 1387 -1.0; 1526 -1.7; 1678 -2.2; 1846 -2.5; 2031 -2.4; 2234 -1.4; 2457 1.0; 2703 3.9; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.100000000000001dB` and instead set Global volume in the UI for both channels to **-61**
+-6.1dB` and instead set Global volume in the UI for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t103z Reference ParametricEQ.txt`.
@@ -18,18 +18,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Torque t103z Ref
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of -6.8dB.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 33 Hz   | 0.61 | 6.9 dB  |
-| Peaking | 271 Hz  | 0.73 | -8.3 dB |
-| Peaking | 2042 Hz | 1.56 | -9.7 dB |
-| Peaking | 3024 Hz | 0.68 | 9.6 dB  |
-| Peaking | 428 Hz  | 2.71 | -0.8 dB |
-| Peaking | 775 Hz  | 2.73 | 1.5 dB  |
-| Peaking | 1465 Hz | 5.53 | -0.8 dB |
-| Peaking | 6212 Hz | 2.26 | 6.0 dB  |
-| Peaking | 7254 Hz | 1.32 | -4.8 dB |
+| Peaking | 269 Hz  | 0.74 | -8.3 dB |
+| Peaking | 2006 Hz | 1.63 | -9.0 dB |
+| Peaking | 3123 Hz | 0.7  | 9.1 dB  |
+| Peaking | 424 Hz  | 2.89 | -0.8 dB |
+| Peaking | 778 Hz  | 2.81 | 1.6 dB  |
+| Peaking | 3700 Hz | 4.76 | -0.8 dB |
+| Peaking | 6235 Hz | 2.21 | 5.6 dB  |
+| Peaking | 7394 Hz | 1.4  | -4.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t103z%20Reference/Torque%20t103z%20Reference.png)

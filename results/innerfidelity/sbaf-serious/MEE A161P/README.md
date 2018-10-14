@@ -5,32 +5,32 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 2.5; 22 2.4; 23 2.3; 25 2.2; 26 2.2; 28 2.1; 30 2.1; 32 2.0; 35 1.9; 37 1.8; 40 1.7; 42 1.6; 45 1.5; 49 1.3; 52 1.2; 56 1.0; 59 0.9; 64 0.6; 68 0.4; 73 0.1; 78 -0.1; 83 -0.4; 89 -0.7; 95 -1.0; 102 -1.3; 109 -1.4; 117 -1.6; 125 -1.9; 134 -2.1; 143 -2.3; 153 -2.5; 164 -2.5; 175 -2.5; 188 -2.7; 201 -2.8; 215 -2.6; 230 -2.7; 246 -2.7; 263 -2.6; 282 -2.5; 301 -2.4; 323 -2.3; 345 -2.1; 369 -2.0; 395 -1.8; 423 -1.5; 452 -1.3; 484 -1.2; 518 -1.0; 554 -0.6; 593 -0.2; 635 0.1; 679 0.1; 726 0.3; 777 0.6; 832 0.5; 890 0.2; 952 0.1; 1019 -0.0; 1090 -0.2; 1167 -0.3; 1248 -0.5; 1336 -0.8; 1429 -1.2; 1529 -1.6; 1636 -1.9; 1751 -2.1; 1873 -2.2; 2004 -2.4; 2145 -2.9; 2295 -3.4; 2455 -3.4; 2627 -2.7; 2811 -0.4; 3008 3.1; 3219 5.7; 3444 6.0; 3685 6.0; 3943 6.0; 4219 5.8; 4514 3.7; 4830 1.8; 5168 -0.3; 5530 -3.7; 5917 -3.0; 6331 1.3; 6775 3.3; 7249 1.3; 7756 0.3; 8299 0.0; 8880 -0.4; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 0.0; 23 2.3; 25 2.2; 28 2.1; 31 2.1; 34 2.0; 37 1.8; 41 1.6; 45 1.5; 49 1.3; 54 1.1; 60 0.8; 66 0.5; 72 0.2; 79 -0.2; 87 -0.6; 96 -1.1; 106 -1.3; 116 -1.6; 128 -1.9; 141 -2.3; 155 -2.5; 170 -2.5; 187 -2.7; 206 -2.7; 227 -2.7; 249 -2.7; 274 -2.6; 302 -2.4; 332 -2.2; 365 -2.0; 402 -1.8; 442 -1.4; 486 -1.2; 535 -0.8; 588 -0.2; 647 0.1; 712 0.2; 783 0.6; 861 0.3; 947 0.1; 1042 -0.1; 1146 -0.3; 1261 -0.6; 1387 -1.0; 1526 -1.6; 1678 -2.0; 1846 -2.2; 2031 -2.5; 2234 -3.2; 2457 -3.4; 2703 -2.0; 2973 2.6; 3270 5.9; 3597 6.0; 3957 6.0; 4353 5.0; 4788 2.0; 5267 -1.2; 5793 -3.9; 6373 1.7; 7010 2.5; 7711 0.3; 8482 -0.2; 9330 -0.0
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.099999991048581dB` and instead set Global volume in the UI for both channels to **-60**
+-6.1dB` and instead set Global volume in the UI for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MEE A161P ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of -6.6dB.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 26 Hz   | 0.49 | 2.4 dB   |
-| Peaking | 197 Hz  | 0.69 | -3.1 dB  |
-| Peaking | 2531 Hz | 1.51 | -10.8 dB |
-| Peaking | 3355 Hz | 1.3  | 12.3 dB  |
-| Peaking | 5610 Hz | 6.86 | -7.3 dB  |
-| Peaking | 784 Hz  | 2.73 | 1.1 dB   |
-| Peaking | 1577 Hz | 6.18 | -0.7 dB  |
-| Peaking | 6133 Hz | 5.65 | -1.3 dB  |
-| Peaking | 6724 Hz | 6.06 | 4.0 dB   |
-| Peaking | 7993 Hz | 1.64 | -1.2 dB  |
+| Peaking | 25 Hz   | 0.49 | 2.4 dB   |
+| Peaking | 195 Hz  | 0.69 | -3.0 dB  |
+| Peaking | 2544 Hz | 1.53 | -10.4 dB |
+| Peaking | 3344 Hz | 1.31 | 12.0 dB  |
+| Peaking | 5577 Hz | 6.89 | -7.3 dB  |
+| Peaking | 397 Hz  | 2.06 | -0.6 dB  |
+| Peaking | 761 Hz  | 1.89 | 1.0 dB   |
+| Peaking | 1583 Hz | 4.35 | -0.9 dB  |
+| Peaking | 6744 Hz | 8.76 | 3.5 dB   |
+| Peaking | 8104 Hz | 1.58 | -1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MEE%20A161P/MEE%20A161P.png)

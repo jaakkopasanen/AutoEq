@@ -31,43 +31,31 @@ description about how things were obtained and processed.
 
 
 ## Usage
-Equalization settings produced by AutoEQ are EqualizerAPO GraphicEQ configuration lines, one for each headphone
-processed. They look like this:
+Equalization settings produced by AutoEQ are EqualizerAPO GraphicEQ configuration lines and parametric equalizer peaking
+filters, one for each headphone processed. GraphicEQ settings look like this:
 ````
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 20 0.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ````
-AutoEQ also produces parametric eq settings which can be used with Peace or any other parametric eq which has at least
-5 bands available.
-
-### Plain EqualizerAPO
-Simplest way is to [install EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
-`C:\Program Files\EqualizerAPO\config\config.txt`. Disable `Include: example.txt`, replace `GraphicEQ: ...` line with
-the one found in results and set `Preamp: ...`. Using
-[Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/innerfidelity/sbaf-serious/Sennheiser%20HD%20650)
-would make config file look like this:
-````
-Preamp: -6 dB
-# Include: example.txt
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-````
-
-EqualizerAPO has a graphical user interface for adjusting configurations. Launch the editor from
-`C:\Program Files\EqualizerAPO\Editor.exe`.
-
-![equalizerapo-editor](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/EqualizerAPOEditor.PNG)
-
-*EqualizerAPO Editor GUI*
+Parametric eq settings can be used with Peace or any other parametric eq which has at least 5 bands available. Even
+fewer bands is possible but pre-computed results require to use minimum five first of the filters.
 
 ### HeSuVi
-[HeSuVi](https://sourceforge.net/projects/hesuvi/) is GUI for EqualizerAPO which has almost all
-headphone surround virtualizations available. HeSuVi also provides
-a convenient graphical user interface for adjusting the equalizer, toggling eq on and off, adjusting preamp and saving
-and restoring multiple different configurations making it very easy to compare different eq settings. To load an eq into
-HeSuVi, close HeSuVi and replace contents of HeSuVi's eq file `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` with
-the produced `GraphicEQ: ...` line. Then start HeSuVi and adjust global volume for both channels to highest eq value.
-You can save the configuration with profile manager in bottom right corner.
+Easiest way is install [HeSuVi](https://sourceforge.net/projects/hesuvi/) and select correct headphone model from the
+Equalizer tab. There is no need to download results from the results folder because HeSuVi ships with all of the
+recommended results. Please note that after installing HeSuVi will have surround virtualization on and if you don't
+want to use it you can select **none.wav** from the left side list on the Virtualization tab.
 
-![hesuvi](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi.PNG)
+HeSuVi is GUI for EqualizerAPO which has almost all headphone surround virtualizations available. HeSuVi also provides
+a convenient graphical user interface for adjusting the equalizer, toggling eq on and off, adjusting preamp and saving
+and restoring multiple different configurations making it very easy to compare different eq settings.
+
+If some reason HeSuVi doesn't include a headphone available in this project or if you wish to try out some other than
+the recommended result the file can be added manually. To add a preset into HeSuVi add the GraphicEq file into
+`C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom`.
+Then restart HeSuVi, select the new preset from the **custom** group in Equalizer tab and set volume attenuation for
+both channels to the highest positive gain value in preset.
+
+![hesuvi](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi2.PNG)
 
 *HeSuVi GUI for EqualizerAPO*
 
@@ -81,11 +69,30 @@ To load an eq into a some other graphic equalizer you'll have to adjust preamp a
 the configuration file produced is only compatible with EqualizerAPO.
 
 Keep in mind that parametric eq produced is not as accurate as graphic eq because there is limited number of filters.
+This might not have any significant difference in practice though.
 
 ![peace](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
 
 *Peace with full GUI for EqualizerAPO*
 
+### Plain EqualizerAPO
+It's possible to use plain [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
+`C:\Program Files\EqualizerAPO\config\config.txt`. Disable `Include: example.txt`, replace `GraphicEQ: ...` line with
+the one found in results and set `Preamp: ...`. Using
+[Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/innerfidelity/sbaf-serious/Sennheiser%20HD%20650)
+would make config file look like this:
+````
+Preamp: -6 dB
+# Include: example.txt
+GraphicEQ: 20 0.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+````
+
+EqualizerAPO has a graphical user interface for adjusting configurations. Launch the editor from
+`C:\Program Files\EqualizerAPO\Editor.exe`.
+
+![equalizerapo-editor](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/EqualizerAPOEditor.PNG)
+
+*EqualizerAPO Editor GUI*
 
 ## Results
 The main principle used by AutoEQ for producing the equalization function is to invert error curve. Error is the
@@ -162,7 +169,7 @@ virtualenv venv
 ````
 - Activate virtualenv  
 ````commandline
-.\venv\Scripts\activate
+venv\Scripts\activate
 ````
 - Install required packages  
 ````commandline
@@ -176,7 +183,7 @@ python frequency_response.py -H
 When coming back at a later time you'll only need to activate virtual environment again
 ````commandline
 cd C:\path\to\AutoEq-master
-.\venv\Scripts\activate
+venv\Scripts\activate
 ````
 
 ### Command Line Arguments
@@ -472,7 +479,6 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- HeSuVi documentation
 - Rtings measurements
     - Use native compensation
     - Calibrate to Innerfidelity to use SBAF-Serious
@@ -484,11 +490,11 @@ Contributions are more than welcome.
     - Full pipeline
     - Update results section
     - Update recommendations
+- Crinacle measurements for IEMs
+    - Target response
 - Reference audio analyzer measurements
     - Target response
     - Full pipeline
     - Update results section
     - Update recommendations
-- Crinacle measurements for IEMs
-    - Target response
 - Impulse responses

@@ -5,7 +5,7 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 6.0; 22 6.0; 23 6.0; 25 6.0; 26 6.0; 28 5.9; 30 5.6; 32 5.3; 35 4.8; 37 4.5; 40 4.1; 42 3.9; 45 3.6; 49 3.1; 52 2.9; 56 2.6; 59 2.6; 64 3.0; 68 3.4; 73 2.7; 78 1.6; 83 1.6; 89 1.3; 95 0.4; 102 -0.1; 109 -0.4; 117 -0.6; 125 -0.9; 134 -1.2; 143 -1.4; 153 -1.5; 164 -1.5; 175 -1.7; 188 -1.7; 201 -1.9; 215 -1.8; 230 -1.7; 246 -1.7; 263 -1.7; 282 -1.7; 301 -1.5; 323 -1.2; 345 -1.1; 369 -0.9; 395 -0.8; 423 -0.4; 452 -0.1; 484 0.1; 518 0.2; 554 0.5; 593 0.8; 635 1.1; 679 1.6; 726 2.0; 777 2.3; 832 1.8; 890 0.8; 952 0.3; 1019 -0.1; 1090 -0.4; 1167 -0.6; 1248 -0.6; 1336 -0.7; 1429 -0.8; 1529 -1.0; 1636 -1.4; 1751 -2.1; 1873 -2.6; 2004 -3.1; 2145 -3.2; 2295 -3.0; 2455 -2.7; 2627 -2.4; 2811 -1.7; 3008 -0.8; 3219 0.4; 3444 0.9; 3685 0.1; 3943 -0.2; 4219 -1.4; 4514 -2.2; 4830 -1.9; 5168 -1.2; 5530 -1.6; 5917 -3.7; 6331 -4.8; 6775 -3.9; 7249 -3.5; 7756 -3.8; 8299 -4.5; 8880 -4.2; 9502 -2.8; 10167 -1.1; 10879 -0.1; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 -0.5; 18692 -2.3; 20000 -3.7
+GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.9; 31 5.5; 34 5.0; 37 4.5; 41 4.0; 45 3.6; 49 3.1; 54 2.7; 60 2.6; 66 3.2; 72 3.0; 79 1.5; 87 1.5; 96 0.3; 106 -0.3; 116 -0.6; 128 -1.0; 141 -1.3; 155 -1.5; 170 -1.6; 187 -1.7; 206 -1.9; 227 -1.7; 249 -1.7; 274 -1.7; 302 -1.5; 332 -1.1; 365 -1.0; 402 -0.8; 442 -0.2; 486 0.1; 535 0.3; 588 0.8; 647 1.2; 712 1.9; 783 2.3; 861 1.3; 947 0.4; 1042 -0.2; 1146 -0.6; 1261 -0.6; 1387 -0.8; 1526 -1.0; 1678 -1.7; 1846 -2.5; 2031 -3.2; 2234 -3.0; 2457 -2.7; 2703 -2.3; 2973 -1.0; 3270 0.7; 3597 0.3; 3957 -0.3; 4353 -1.9; 4788 -2.0; 5267 -1.1; 5793 -2.9; 6373 -4.8; 7010 -3.6; 7711 -3.8; 8482 -4.5; 9330 -3.2; 10263 -0.9; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 -1.5; 20000 -3.7
 ```
 
 ### HeSuVi
@@ -16,20 +16,21 @@ In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq
 In case of using Peace, click *Import* in Peace GUI and select `AKG K701 sample B ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -6.7dB.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 26 Hz    | 1.14 | 6.5 dB  |
-| Peaking | 68 Hz    | 4.56 | 2.6 dB  |
-| Peaking | 758 Hz   | 4.34 | 2.6 dB  |
-| Peaking | 2097 Hz  | 2.37 | -3.3 dB |
+| Peaking | 27 Hz    | 1.13 | 6.6 dB  |
+| Peaking | 67 Hz    | 4.56 | 2.6 dB  |
+| Peaking | 758 Hz   | 4.33 | 2.6 dB  |
+| Peaking | 2097 Hz  | 2.38 | -3.3 dB |
 | Peaking | 7358 Hz  | 1.64 | -4.5 dB |
-| Peaking | 47 Hz    | 1.82 | 1.2 dB  |
-| Peaking | 202 Hz   | 1    | -2.1 dB |
-| Peaking | 3423 Hz  | 7.58 | 2.0 dB  |
-| Peaking | 11413 Hz | 5.1  | 1.2 dB  |
+| Peaking | 205 Hz   | 1.06 | -2.1 dB |
+| Peaking | 2716 Hz  | 4.83 | -1.2 dB |
+| Peaking | 3383 Hz  | 3.87 | 2.1 dB  |
+| Peaking | 4463 Hz  | 7.94 | -1.3 dB |
+| Peaking | 11408 Hz | 5.13 | 1.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K701%20sample%20B/AKG%20K701%20sample%20B.png)

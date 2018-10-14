@@ -5,18 +5,18 @@ In case of using EqualizerAPO without any GUI, replace `C:\Program Files\Equaliz
 with:
 ```
 Preamp: -6.1dB
-GraphicEQ: 10 -84; 20 2.6; 22 2.6; 23 2.6; 25 2.6; 26 2.6; 28 2.6; 30 2.6; 32 2.5; 35 2.2; 37 2.0; 40 1.8; 42 1.6; 45 1.4; 49 1.4; 52 1.4; 56 1.3; 59 1.1; 64 0.9; 68 0.9; 73 0.8; 78 0.5; 83 0.3; 89 0.2; 95 0.0; 102 -0.1; 109 -0.2; 117 -0.4; 125 -0.6; 134 -0.7; 143 -0.9; 153 -1.0; 164 -1.1; 175 -1.2; 188 -1.2; 201 -1.2; 215 -1.2; 230 -1.2; 246 -1.2; 263 -1.3; 282 -1.3; 301 -1.4; 323 -1.4; 345 -1.5; 369 -1.1; 395 -0.8; 423 -1.0; 452 -1.1; 484 -1.0; 518 -0.9; 554 -0.8; 593 -0.5; 635 -0.3; 679 -0.5; 726 -0.5; 777 -0.6; 832 -0.6; 890 -0.2; 952 0.1; 1019 0.0; 1090 0.2; 1167 0.3; 1248 -0.3; 1336 -0.7; 1429 -1.0; 1529 -1.7; 1636 -2.1; 1751 -2.1; 1873 -1.5; 2004 -1.4; 2145 -2.1; 2295 -1.4; 2455 0.4; 2627 1.3; 2811 2.0; 3008 2.5; 3219 5.2; 3444 6.0; 3685 6.0; 3943 6.0; 4219 6.0; 4514 6.0; 4830 6.0; 5168 6.0; 5530 6.0; 5917 5.9; 6331 5.5; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 -0.0; 15258 -1.1; 16326 -3.2; 17469 -4.9; 18692 -4.5; 20000 -0.9
+GraphicEQ: 21 0.0; 23 2.6; 25 2.6; 28 2.6; 31 2.5; 34 2.3; 37 2.0; 41 1.7; 45 1.4; 49 1.4; 54 1.4; 60 1.0; 66 0.9; 72 0.9; 79 0.4; 87 0.2; 96 0.0; 106 -0.2; 116 -0.4; 128 -0.6; 141 -0.8; 155 -1.0; 170 -1.1; 187 -1.2; 206 -1.2; 227 -1.2; 249 -1.2; 274 -1.3; 302 -1.4; 332 -1.4; 365 -1.2; 402 -0.8; 442 -1.0; 486 -1.0; 535 -0.8; 588 -0.5; 647 -0.4; 712 -0.5; 783 -0.6; 861 -0.5; 947 0.1; 1042 0.0; 1146 0.3; 1261 -0.4; 1387 -0.9; 1526 -1.7; 1678 -2.3; 1846 -1.6; 2031 -1.5; 2234 -2.0; 2457 0.4; 2703 1.6; 2973 2.3; 3270 5.7; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 -0.7; 16529 -3.6; 18182 -5.0; 20000 -0.9
 ```
 
 ### HeSuVi
 In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.099999988230117dB` and instead set Global volume in the UI for both channels to **-60**
+-6.1dB` and instead set Global volume in the UI for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-X ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of -6.9dB.
 
@@ -27,10 +27,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 2012 Hz  | 1.7  | -3.8 dB |
 | Peaking | 4269 Hz  | 1.06 | 7.3 dB  |
 | Peaking | 17959 Hz | 1.6  | -5.4 dB |
-| Peaking | 1123 Hz  | 6.81 | 0.8 dB  |
-| Peaking | 3361 Hz  | 7.92 | 2.0 dB  |
-| Peaking | 4435 Hz  | 1.43 | -1.2 dB |
-| Peaking | 6335 Hz  | 2.59 | 4.0 dB  |
-| Peaking | 7601 Hz  | 2.39 | -3.2 dB |
+| Peaking | 1123 Hz  | 6.79 | 0.8 dB  |
+| Peaking | 3378 Hz  | 7.97 | 2.1 dB  |
+| Peaking | 4382 Hz  | 1.45 | -1.2 dB |
+| Peaking | 6319 Hz  | 2.62 | 4.0 dB  |
+| Peaking | 7617 Hz  | 2.39 | -3.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audeze%20LCD-X/Audeze%20LCD-X.png)
