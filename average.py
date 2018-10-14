@@ -15,11 +15,11 @@ def main():
     models = {}
     for file_path in glob(os.path.join(DIR, '*')):
         model = os.path.split(file_path)[-1]
-        if not (re.search(' sample [a-zA-Z0-9]$', model) or re.search(' sn[a-zA-Z0-9]+$', model)):
+        if not (re.search(' sample [a-zA-Z0-9]$', model, re.IGNORECASE) or re.search(' sn[a-zA-Z0-9]+$', model, re.IGNORECASE)):
             # Skip measurements with sample or serial number, those have averaged results
             continue
-        norm = re.sub(' sample [a-zA-Z0-9]$', '', model)
-        norm = re.sub(' sn[a-zA-Z0-9]+$', '', norm)
+        norm = re.sub(' sample [a-zA-Z0-9]$', '', model, 0, re.IGNORECASE)
+        norm = re.sub(' sn[a-zA-Z0-9]+$', '', norm, 0, re.IGNORECASE)
         try:
             models[norm].append(model)
         except KeyError as err:
@@ -41,7 +41,7 @@ def main():
             if not os.path.isdir(d):
                 os.makedirs(d)
             fr.write_to_csv(os.path.join(d, norm + '.csv'))
-            fr.plot_graph()
+            #fr.plot_graph()
 
 
 if __name__ == '__main__':

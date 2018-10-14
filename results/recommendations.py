@@ -24,10 +24,10 @@ def get_urls(files):
         model = os.path.split(rel_path)[-1]
         if model == 'README.md':
             continue
-        if re.search(' sample [a-zA-Z0-9]$', model) or re.search(' sn[a-zA-Z0-9]+$', model):
+        if re.search(' sample [a-zA-Z0-9]$', model, re.IGNORECASE) or re.search(' sn[a-zA-Z0-9]+$', model, re.IGNORECASE):
             # Skip measurements with sample or serial number, those have averaged results
-            model = re.sub(' sample [a-zA-Z0-9]$', '', model)
-            model = re.sub(' sn[a-zA-Z0-9]+$', '', model)
+            model = re.sub(' sample [a-zA-Z0-9]$', '', model, 0, re.IGNORECASE)
+            model = re.sub(' sn[a-zA-Z0-9]+$', '', model, 0, re.IGNORECASE)
             try:
                 skipped[model].append(rel_path)
             except KeyError as err:
