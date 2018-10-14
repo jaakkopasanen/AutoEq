@@ -42,7 +42,7 @@ DEFAULT_OE_BASS_BOOST_F_UPPER = 280
 DEFAULT_IE_BASS_BOOST_F_LOWER = 25
 DEFAULT_IE_BASS_BOOST_F_UPPER = 350
 
-GRAPHIC_EQ_STEP = 1.07
+GRAPHIC_EQ_STEP = 1.1
 
 
 class FrequencyResponse:
@@ -214,10 +214,17 @@ class FrequencyResponse:
 
         fr = FrequencyResponse(name='hack', frequency=self.frequency, raw=self.equalization)
         fr.interpolate(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=GRAPHIC_EQ_STEP)
+        if fr.raw[0] > 0.0:
+            # Prevent bass boost below lowest frequency
+            fr.raw[0] = 0.0
+
+        # Remove leading zeros
+        while np.abs(fr.raw[-1]) < 0.1 and np.abs(fr.raw[-2]) < 0.1:  # Last two are zeros
+            fr.raw = fr.raw[:-1]
 
         with open(file_path, 'w') as f:
             s = '; '.join(['{f} {a:.1f}'.format(f=f, a=a) for f, a in zip(fr.frequency, fr.raw)])
-            s = 'GraphicEQ: 10 -84; ' + s
+            s = 'GraphicEQ: ' + s
             f.write(s)
         return s
 
