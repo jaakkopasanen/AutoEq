@@ -8,7 +8,7 @@ from frequency_response import FrequencyResponse
 
 DIR = 'innerfidelity/data/onear'
 DIR = os.path.abspath(DIR)
-OUT_DIR = os.path.join('innerfidelity/data/avg')
+OUT_DIR = os.path.join('innerfidelity/data/avg/onear')
 
 
 def main():
