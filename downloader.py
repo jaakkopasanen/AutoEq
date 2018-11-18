@@ -15,7 +15,7 @@ class Downloader:
     def read_json(self, file_path):
         """Reads JSON file containing headphone models and image urls."""
         file_path = os.path.abspath(file_path)
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             self.image_urls = json.loads(f.read())
 
     def download_images(self, output_dir):
