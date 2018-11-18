@@ -41,6 +41,10 @@ def parse_image(im, model, channel):
         _h_lines.append(estimate)
     h_lines = _h_lines
 
+    # Crop bottom
+    box = (0, 0, im.size[0], h_lines[-1])
+    im = im.crop(box)
+
     px_a_max = 0
     px_a_min = h_lines[-1]
     #im.show()
@@ -126,6 +130,8 @@ def main():
         os.makedirs(os.path.join(inspection_dir, 'left'))
     if not os.path.isdir(os.path.join(inspection_dir, 'right')):
         os.makedirs(os.path.join(inspection_dir, 'right'))
+    if not os.path.isdir(os.path.join(inspection_dir, 'fr')):
+        os.makedirs(os.path.join(inspection_dir, 'fr'))
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir)
 
@@ -156,6 +162,7 @@ def main():
             continue
         raw = np.mean(np.vstack((fr_left.raw, fr_right.raw)), axis=0) + comp.raw
         fr = FrequencyResponse(name=name, frequency=fr_left.frequency, raw=raw)
+        fr.plot_graph(show=False, file_path=os.path.join(inspection_dir, 'fr', name + '.png'))
 
         # Write to CSV
         fr.write_to_csv(os.path.join(output_dir, name, name + '.csv'))
