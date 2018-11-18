@@ -488,7 +488,6 @@ Contributions are more than welcome.
     - Update recommendations
     - Update update.py
 - New oratory1990 measurements
-- HeSuVi usage in headphone readme
 - Crinacle measurements for IEMs
     - Target response
 - Impulse responses

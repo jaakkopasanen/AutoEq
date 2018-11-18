@@ -602,9 +602,11 @@ class FrequencyResponse:
             ```
             
             ### HeSuVi
-            In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
-            {f_preamp:.1f}dB` and instead set Global volume in the UI for both channels to **{i_preamp}**
+            HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+            {model} GraphicEQ.txt to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+            Set volume attenuation in the Connection tab for both channels to **{i_preamp}**
             '''.format(
+                model=model,
                 preamp=preamp,
                 graphic_eq=graphic_eq_str,
                 f_preamp=preamp,

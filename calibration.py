@@ -18,7 +18,7 @@ def main():
     if_files = list(glob(os.path.join('innerfidelity', 'data', '**', '*.csv'), recursive=True))
     if_file_names = [os.path.split(os.path.abspath(f))[-1] for f in if_files]
     normalized_if_files = [normalize(s) for s in if_file_names]
-    hp_files = list(glob(os.path.join('headphonecom', 'data', '**', '*.csv'), recursive=True))
+    hp_files = list(glob(os.path.join('rtings', 'data', '**', '*.csv'), recursive=True))
 
     # Find matching files
     matching_if_files = []
@@ -39,7 +39,7 @@ def main():
     # Calculate differences for all models
     if_compensation = FrequencyResponse.read_from_csv(os.path.join('innerfidelity', 'resources', 'innerfidelity_compensation_2017.csv'))
     if_compensation.interpolate()
-    hp_compensation = FrequencyResponse.read_from_csv(os.path.join('headphonecom', 'resources', 'headphonecom_compensation.csv'))
+    hp_compensation = FrequencyResponse.read_from_csv(os.path.join('rtings', 'resources', 'rtings_compensation.csv'))
     hp_compensation.interpolate()
     for i in range(len(matching_if_files)):
         if_fr = FrequencyResponse.read_from_csv(matching_if_files[i])
@@ -60,8 +60,9 @@ def main():
     diffs = np.vstack(diffs)
     diff = np.mean(diffs, axis=0)
     std = np.std(diffs, axis=0)
-    diff = FrequencyResponse(name='Headphone.com Raw to Innerfidelity Raw', frequency=f, raw=diff)
-    diff.smoothen(window_size=1 / 9, iterations=10)
+    diff = FrequencyResponse(name='Rtings Raw to Innerfidelity Raw', frequency=f, raw=diff)
+    #diff.smoothen(window_size=1/7, iterations=10)
+    diff.smoothen(window_size=1/5, iterations=100)
     diff.raw = diff.smoothed
     diff.smoothed = np.array([])
 
@@ -72,25 +73,27 @@ def main():
     plt.ylim([-15, 15])
     plt.grid(which='major')
     plt.grid(which='minor')
-    plt.title('Headphone.com Raw to Innerfidelity Raw')
+    plt.title('Rtings Raw to Innerfidelity Raw')
     ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
     plt.show()
 
-    fig, ax = diff.plot_graph(f_min=10, f_max=20000, show=False)
+    fig, ax = diff.plot_graph(f_min=20, f_max=20000, show=False, color=None)
     ax.fill_between(diff.frequency, diff.raw+std, diff.raw-std, facecolor='lightblue')
-    plt.legend(['Headphone.com Raw to Innerfidelity Raw', 'Standard Deviation'])
-    fig.savefig(os.path.join('calibration', 'headphonecom_to_innerfidelity.png'), dpi=240)
+    plt.legend(['Rtings Raw to Innerfidelity Raw', 'Standard Deviation'])
+    plt.ylim([-10, 10])
+    fig.savefig(os.path.join('calibration', 'rtings_to_innerfidelity.png'), dpi=240)
     plt.show()
-    diff.write_to_csv(os.path.join('calibration', 'headphonecom_to_innerfidelity.csv'))
+    diff.write_to_csv(os.path.join('calibration', 'rtings_to_innerfidelity.csv'))
 
     diff.raw *= -1
-    diff.name = 'Innerfidelity Raw to Headphone.com Raw'
-    fig, ax = diff.plot_graph(f_min=10, f_max=20000, show=False)
+    diff.name = 'Innerfidelity Raw to Rtings Raw'
+    fig, ax = diff.plot_graph(f_min=20, f_max=20000, show=False, color=None)
     ax.fill_between(diff.frequency, diff.raw + std, diff.raw - std, facecolor='lightblue')
-    plt.legend(['Innerfidelity Raw to Headphone.com Raw', 'Standard Deviation'])
-    fig.savefig(os.path.join('calibration', 'innerfidelity_to_headphonecom.png'), dpi=240)
+    plt.legend(['Innerfidelity Raw to Rtings Raw', 'Standard Deviation'])
+    plt.ylim([-10, 10])
+    fig.savefig(os.path.join('calibration', 'innerfidelity_to_rtings.png'), dpi=240)
     plt.show()
-    diff.write_to_csv(os.path.join('calibration', 'innerfidelity_to_headphonecom.csv'))
+    diff.write_to_csv(os.path.join('calibration', 'innerfidelity_to_rtings.csv'))
 
 
 if __name__ == '__main__':
