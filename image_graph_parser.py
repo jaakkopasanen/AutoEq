@@ -58,7 +58,6 @@ class ImageGraphParser:
             except Exception as err:
                 warnings.warn('Image for "{model}" parsing failed: "{err}"'.format(model=model, err=err))
                 continue
-                #raise err
             print('Parsed image for "{}"'.format(model))
 
     @staticmethod
@@ -113,7 +112,7 @@ class ImageGraphParser:
         return fr
 
     @staticmethod
-    def find_lines(im, orientation):
+    def find_lines(im, orientation, line_color=None):
         if orientation == 'vertical':
             ori1 = 0
             ori2 = 1
@@ -129,11 +128,16 @@ class ImageGraphParser:
             count = 0
             for j in range(im.size[ori2]):
                 if orientation == 'vertical':
-                    r, g, b = im.getpixel((i, j))
+                    rgba = im.getpixel((i, j))
                 else:
-                    r, g, b = im.getpixel((j, i))
-                if r + g + b < 450:
-                    count += 1
+                    rgba = im.getpixel((j, i))
+                r, g, b = rgba[:3]
+                if line_color is not None:
+                    if (r, g, b) == line_color:
+                        count += 1
+                else:
+                    if r + g + b < 450 and r == g == b:
+                        count += 1
             if count > im.size[ori2] / 2:
                 # More than half of pixels are black -> this is a line
                 lines.append(i)

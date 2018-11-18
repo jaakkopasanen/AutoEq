@@ -486,15 +486,17 @@ Contributions are more than welcome.
     - Full pipeline
     - Update results section
     - Update recommendations
+    - Update update.py
+- Crinacle measurements for IEMs
+    - Target response
+- Impulse responses
 - Head-fi measurements
     - Full pipeline
     - Update results section
     - Update recommendations
-- Crinacle measurements for IEMs
-    - Target response
 - Reference audio analyzer measurements
     - Target response
     - Full pipeline
     - Update results section
     - Update recommendations
-- Impulse responses
+
