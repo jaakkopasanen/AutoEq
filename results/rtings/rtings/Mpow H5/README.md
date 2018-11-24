@@ -1,0 +1,37 @@
+# Mpow H5
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -1.9dB
+GraphicEQ: 21 -0.9; 23 -1.6; 25 -2.2; 28 -3.0; 31 -3.6; 34 -4.1; 37 -4.5; 41 -4.9; 45 -5.3; 49 -5.7; 54 -6.1; 60 -6.6; 66 -7.2; 72 -7.7; 79 -8.2; 87 -8.8; 96 -9.3; 106 -9.8; 116 -10.2; 128 -10.6; 141 -10.8; 155 -11.0; 170 -11.1; 187 -11.0; 206 -10.8; 227 -10.6; 249 -10.5; 274 -10.1; 302 -10.0; 332 -10.2; 365 -10.0; 402 -9.5; 442 -8.4; 486 -7.1; 535 -5.6; 588 -4.4; 647 -3.4; 712 -2.6; 783 -1.8; 861 -0.8; 947 -0.4; 1042 -0.4; 1146 -2.2; 1261 -4.0; 1387 -5.8; 1526 -6.5; 1678 -6.5; 1846 -6.4; 2031 -6.6; 2234 -5.8; 2457 -4.9; 2703 -5.0; 2973 -6.1; 3270 -7.4; 3597 -8.3; 3957 -6.8; 4353 -4.1; 4788 -2.1; 5267 -1.3; 5793 1.0; 6373 -1.5; 7010 -5.3; 7711 -6.4; 8482 -10.2; 9330 -14.7; 10263 -14.0; 11289 -8.4; 12418 -3.0; 13660 -2.6; 15026 -5.7; 16529 -6.1; 18182 -3.9; 20000 -3.6
+```
+
+### HeSuVi
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Mpow H5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-19**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Mpow H5 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-1.8dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **--0.1dB**.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 91 Hz    | 0.47 | -7.1 dB  |
+| Peaking | 199 Hz   | 0.87 | -6.1 dB  |
+| Peaking | 386 Hz   | 1.81 | -5.9 dB  |
+| Peaking | 2392 Hz  | 0.85 | -6.5 dB  |
+| Peaking | 9776 Hz  | 2.41 | -15.6 dB |
+| Peaking | 982 Hz   | 3.21 | 2.9 dB   |
+| Peaking | 1454 Hz  | 4.19 | -2.8 dB  |
+| Peaking | 3674 Hz  | 6.52 | -4.1 dB  |
+| Peaking | 5890 Hz  | 5.99 | 5.5 dB   |
+| Peaking | 16897 Hz | 1.84 | -5.6 dB  |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/rtings/Mpow%20H5/Mpow%20H5.png)

@@ -1,0 +1,37 @@
+# JBL Free
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -1.2dB
+GraphicEQ: 21 -2.2; 23 -2.3; 25 -2.3; 28 -2.3; 31 -2.3; 34 -2.3; 37 -2.3; 41 -2.3; 45 -2.3; 49 -2.2; 54 -2.3; 60 -2.6; 66 -2.8; 72 -2.9; 79 -3.0; 87 -3.2; 96 -3.4; 106 -3.6; 116 -3.8; 128 -4.0; 141 -4.0; 155 -3.7; 170 -3.6; 187 -3.4; 206 -3.3; 227 -3.2; 249 -3.1; 274 -2.9; 302 -2.7; 332 -2.6; 365 -2.4; 402 -2.2; 442 -1.9; 486 -1.4; 535 -1.0; 588 -0.5; 647 0.2; 712 0.8; 783 1.1; 861 0.9; 947 0.4; 1042 -0.3; 1146 -1.0; 1261 -1.6; 1387 -1.9; 1526 -2.0; 1678 -2.0; 1846 -1.9; 2031 -1.9; 2234 -1.5; 2457 -1.2; 2703 -1.7; 2973 -2.3; 3270 -2.2; 3597 -1.6; 3957 -0.8; 4353 -0.5; 4788 0.5; 5267 0.9; 5793 0.5; 6373 -2.0; 7010 -4.4; 7711 -1.7; 8482 0.0; 9330 0.0; 10263 -0.7; 11289 -3.9; 12418 -6.3; 13660 -4.8; 15026 -4.4; 16529 -8.3; 18182 -9.1; 20000 -1.7
+```
+
+### HeSuVi
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`JBL Free GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-12**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `JBL Free ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-1.4dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **--0.5dB**.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 20 Hz    | 0.12 | -2.0 dB  |
+| Peaking | 172 Hz   | 0.62 | -2.9 dB  |
+| Peaking | 2274 Hz  | 1.01 | -2.0 dB  |
+| Peaking | 12423 Hz | 3.92 | -5.0 dB  |
+| Peaking | 17643 Hz | 1.43 | -10.0 dB |
+| Peaking | 805 Hz   | 3.04 | 2.1 dB   |
+| Peaking | 1374 Hz  | 3.15 | -1.1 dB  |
+| Peaking | 5449 Hz  | 3.71 | 2.2 dB   |
+| Peaking | 7001 Hz  | 4.54 | -4.8 dB  |
+| Peaking | 8684 Hz  | 2.89 | 1.9 dB   |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/JBL%20Free/JBL%20Free.png)

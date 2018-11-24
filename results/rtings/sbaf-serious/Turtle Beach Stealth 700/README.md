@@ -1,0 +1,37 @@
+# Turtle Beach Stealth 700
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -6.1dB
+GraphicEQ: 21 -3.9; 23 -4.3; 25 -4.6; 28 -5.0; 31 -5.2; 34 -5.4; 37 -5.5; 41 -5.6; 45 -5.7; 49 -5.7; 54 -5.8; 60 -5.9; 66 -5.9; 72 -5.9; 79 -5.8; 87 -5.8; 96 -5.6; 106 -5.9; 116 -6.1; 128 -6.4; 141 -6.6; 155 -6.7; 170 -6.7; 187 -6.8; 206 -6.7; 227 -6.6; 249 -6.2; 274 -5.5; 302 -4.6; 332 -3.7; 365 -2.8; 402 -2.0; 442 -1.0; 486 0.1; 535 0.8; 588 0.6; 647 -0.2; 712 -1.0; 783 -1.5; 861 -1.3; 947 -0.4; 1042 0.4; 1146 1.2; 1261 1.7; 1387 2.0; 1526 2.5; 1678 3.2; 1846 3.9; 2031 3.3; 2234 2.4; 2457 2.2; 2703 2.3; 2973 3.4; 3270 5.0; 3597 6.0; 3957 4.4; 4353 0.5; 4788 0.9; 5267 3.2; 5793 5.5; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -0.1; 10263 0.0
+```
+
+### HeSuVi
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Turtle Beach Stealth 700 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Turtle Beach Stealth 700 ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-4.0dB**.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 27 Hz   | 0.78 | -2.7 dB |
+| Peaking | 77 Hz   | 0.46 | -4.8 dB |
+| Peaking | 213 Hz  | 1.16 | -4.8 dB |
+| Peaking | 1724 Hz | 2.68 | 2.4 dB  |
+| Peaking | 3882 Hz | 0.75 | 3.8 dB  |
+| Peaking | 522 Hz  | 5.53 | 2.1 dB  |
+| Peaking | 3683 Hz | 4.33 | 5.8 dB  |
+| Peaking | 4392 Hz | 2.29 | -5.8 dB |
+| Peaking | 6155 Hz | 2.71 | 6.7 dB  |
+| Peaking | 7512 Hz | 1.52 | -2.8 dB |
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/sbaf-serious/Turtle%20Beach%20Stealth%20700/Turtle%20Beach%20Stealth%20700.png)

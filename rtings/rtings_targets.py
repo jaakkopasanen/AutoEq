@@ -17,12 +17,14 @@ def main():
     serious = FrequencyResponse.read_from_csv('resources/rtings_compensation_sbaf-serious.csv')
     native = FrequencyResponse.read_from_csv('resources/rtings_compensation.csv')
     avg = measurements_avg()
+    hd650 = FrequencyResponse.read_from_csv('data/onear/Sennheiser HD 650/Sennheiser HD 650.csv')
 
     fig, ax = native.plot_graph(show=False, color=None)
     serious.plot_graph(fig=fig, ax=ax, show=False, color=None)
     avg.plot_graph(fig=fig, ax=ax, show=False, color=None)
+    hd650.plot_graph(fig=fig, ax=ax, show=False, color=None)
 
-    plt.legend(['Rtings native', 'SBAF Serious', 'Measurements Avg'])
+    plt.legend(['Rtings native', 'SBAF Serious', 'Measurements Avg', 'Sennheiser HD 650'])
     plt.title('Rtings Targets')
     plt.ylim([-10.0, 12.0])
     plt.show()
