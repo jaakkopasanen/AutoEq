@@ -1325,6 +1325,8 @@ class FrequencyResponse:
              show_plot=False):
         """Parses files in input directory and produces equalization results in output directory."""
 
+        start_time = time()
+
         # Dir paths to absolute
         input_dir = os.path.abspath(input_dir)
         glob_files = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)
@@ -1345,6 +1347,7 @@ class FrequencyResponse:
             compensation.interpolate()
             compensation.center()
 
+        n = 0
         for file_path in glob_files:
             # Read data from input file
             fr = FrequencyResponse.read_from_csv(file_path)
@@ -1405,6 +1408,8 @@ class FrequencyResponse:
                 plt.close(fig)
 
             print(fr.name)
+            n += 1
+        print('Processed {n} headphones in {t:.0f}s'.format(n=n, t=time()-start_time))
 
 
 if __name__ == '__main__':
