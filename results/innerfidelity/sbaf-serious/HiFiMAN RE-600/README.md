@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.1; 25 4.0; 28 3.9; 31 3.8; 34 3.7; 37 3.6; 41 3.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiFiMAN RE-600 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN RE-600 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 24 Hz   | 0.96 | 3.9 dB   |
-| Peaking | 53 Hz   | 1.51 | 2.1 dB   |
-| Peaking | 730 Hz  | 1.37 | 2.2 dB   |
-| Peaking | 1863 Hz | 1.39 | -10.8 dB |
-| Peaking | 3313 Hz | 0.84 | 9.5 dB   |
-| Peaking | 188 Hz  | 1.92 | -0.8 dB  |
-| Peaking | 2844 Hz | 5.06 | 3.2 dB   |
-| Peaking | 3041 Hz | 1.92 | -1.9 dB  |
-| Peaking | 6380 Hz | 2.25 | 5.2 dB   |
-| Peaking | 7495 Hz | 1.62 | -4.2 dB  |
+| Peaking | 24 Hz   | 0.96 | 4.0 dB   |
+| Peaking | 53 Hz   | 1.53 | 2.1 dB   |
+| Peaking | 726 Hz  | 1.37 | 2.2 dB   |
+| Peaking | 1865 Hz | 1.39 | -10.8 dB |
+| Peaking | 3361 Hz | 0.84 | 9.5 dB   |
+| Peaking | 189 Hz  | 1.95 | -0.8 dB  |
+| Peaking | 2821 Hz | 7.79 | 1.9 dB   |
+| Peaking | 3634 Hz | 3.87 | -1.1 dB  |
+| Peaking | 6390 Hz | 2.41 | 5.2 dB   |
+| Peaking | 7430 Hz | 1.59 | -4.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20RE-600/HiFiMAN%20RE-600.png)

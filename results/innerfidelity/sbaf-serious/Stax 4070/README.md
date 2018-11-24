@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.0; 25 0.1; 28 -0.5; 31 -0.6; 34 -0.4; 37 -0.1; 41 0.3; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.2dB` and instead set Global volume in the UI for both channels to **-32**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax 4070 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-32**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax 4070 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Stax 4070 Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.2dB.
+When using independent subset of filters, apply preamp of **-2.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 62 Hz    | 2.3  | 1.3 dB  |
+| Peaking | 62 Hz    | 2.32 | 1.3 dB  |
 | Peaking | 620 Hz   | 1.79 | 2.3 dB  |
 | Peaking | 1790 Hz  | 1.9  | -4.0 dB |
 | Peaking | 4056 Hz  | 2.67 | -7.0 dB |
-| Peaking | 9323 Hz  | 7.03 | -3.1 dB |
-| Peaking | 90 Hz    | 3.05 | 0.3 dB  |
+| Peaking | 9323 Hz  | 7.02 | -3.1 dB |
+| Peaking | 91 Hz    | 3.08 | 0.3 dB  |
 | Peaking | 304 Hz   | 1.33 | -1.5 dB |
-| Peaking | 422 Hz   | 4.96 | 2.4 dB  |
-| Peaking | 6979 Hz  | 7.01 | 3.7 dB  |
-| Peaking | 21264 Hz | 0.05 | -0.4 dB |
+| Peaking | 423 Hz   | 4.96 | 2.4 dB  |
+| Peaking | 6977 Hz  | 7.02 | 3.7 dB  |
+| Peaking | 20626 Hz | 0.06 | -0.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%204070/Stax%204070.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 -1.0; 23 -1.0; 25 -0.9; 28 -0.8; 31 -0.7; 34 -0.5; 37 -0.3; 41 0.0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.0dB` and instead set Global volume in the UI for both channels to **-30**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`PSB M4U 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-30**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `PSB M4U 1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.7dB.
+When using independent subset of filters, apply preamp of **-2.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 73 Hz   | 1.46 | 7.1 dB  |
-| Peaking | 100 Hz  | 0.66 | -5.4 dB |
-| Peaking | 502 Hz  | 1.4  | 3.0 dB  |
-| Peaking | 3687 Hz | 2.02 | -3.6 dB |
-| Peaking | 8693 Hz | 5.21 | -6.7 dB |
-| Peaking | 23 Hz   | 1.75 | -0.7 dB |
-| Peaking | 640 Hz  | 7.32 | 1.1 dB  |
-| Peaking | 1703 Hz | 1.88 | -1.5 dB |
-| Peaking | 6229 Hz | 4.52 | 3.7 dB  |
-| Peaking | 7711 Hz | 7.3  | -2.2 dB |
+| Peaking | 74 Hz   | 1.46 | 7.0 dB  |
+| Peaking | 99 Hz   | 0.67 | -5.4 dB |
+| Peaking | 501 Hz  | 1.4  | 3.0 dB  |
+| Peaking | 3688 Hz | 2.02 | -3.6 dB |
+| Peaking | 8693 Hz | 5.2  | -6.7 dB |
+| Peaking | 21 Hz   | 1.71 | -0.9 dB |
+| Peaking | 642 Hz  | 7.21 | 1.1 dB  |
+| Peaking | 1703 Hz | 1.86 | -1.5 dB |
+| Peaking | 6211 Hz | 4.49 | 3.8 dB  |
+| Peaking | 7666 Hz | 7.08 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/PSB%20M4U%201/PSB%20M4U%201.png)

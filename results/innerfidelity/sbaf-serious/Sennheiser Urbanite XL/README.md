@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 -0.0; 25 -0.6; 28 -1.2; 31 -1.7; 34 -2.2; 37 -2.6; 41 -3.1
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.2dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser Urbanite XL GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Urbanite XL ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Urban
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.9dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.9dB.
 | Peaking | 349 Hz   |  3.04 | -1.9 dB |
 | Peaking | 4072 Hz  |  2.61 | 5.8 dB  |
 | Peaking | 22810 Hz |  2.41 | 2.3 dB  |
-| Peaking | 20 Hz    |  2.38 | 1.7 dB  |
-| Peaking | 1868 Hz  |  1.71 | -5.2 dB |
-| Peaking | 1901 Hz  |  0.83 | 2.7 dB  |
-| Peaking | 5031 Hz  | 10.55 | -5.6 dB |
-| Peaking | 6222 Hz  |  5.21 | 4.7 dB  |
+| Peaking | 18 Hz    |  2.26 | 1.6 dB  |
+| Peaking | 1870 Hz  |  1.7  | -5.3 dB |
+| Peaking | 1899 Hz  |  0.83 | 2.8 dB  |
+| Peaking | 5047 Hz  | 10.6  | -5.6 dB |
+| Peaking | 6238 Hz  |  5.22 | 4.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Urbanite%20XL/Sennheiser%20Urbanite%20XL.png)

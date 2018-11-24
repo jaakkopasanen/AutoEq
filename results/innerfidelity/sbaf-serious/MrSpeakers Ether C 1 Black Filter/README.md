@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.5; 25 2.5; 28 2.5; 31 2.6; 34 2.9; 37 3.1; 41 3.6; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`MrSpeakers Ether C 1 Black Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Ether C 1 Black Filter ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Ether
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 157 Hz  | 3.75 | 2.8 dB  |
 | Peaking | 499 Hz  | 1.71 | 2.0 dB  |
 | Peaking | 5634 Hz | 2.3  | 6.2 dB  |
-| Peaking | 3081 Hz | 0.87 | 1.3 dB  |
-| Peaking | 4574 Hz | 6.49 | -1.4 dB |
-| Peaking | 6529 Hz | 5.91 | 2.2 dB  |
-| Peaking | 7390 Hz | 1.25 | -1.2 dB |
-| Peaking | 7533 Hz | 4.36 | -0.8 dB |
+| Peaking | 3100 Hz | 0.86 | 1.3 dB  |
+| Peaking | 4570 Hz | 6.49 | -1.4 dB |
+| Peaking | 6520 Hz | 5.91 | 2.3 dB  |
+| Peaking | 7382 Hz | 1.26 | -1.3 dB |
+| Peaking | 7523 Hz | 4.35 | -0.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Ether%20C%201%20Black%20Filter/MrSpeakers%20Ether%20C%201%20Black%20Filter.png)

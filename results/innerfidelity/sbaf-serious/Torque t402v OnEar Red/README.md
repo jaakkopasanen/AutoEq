@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.7; 23 -2.4; 25 -3.1; 28 -3.9; 31 -4.6; 34 -5.2; 37 -5.6; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Torque t402v OnEar Red GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OnEar Red ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OnE
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 91 Hz   | 0.43 | -8.7 dB |
 | Peaking | 244 Hz  | 0.94 | -6.0 dB |
-| Peaking | 2290 Hz | 0.98 | -3.5 dB |
-| Peaking | 6029 Hz | 3.88 | 7.5 dB  |
+| Peaking | 2289 Hz | 0.98 | -3.5 dB |
+| Peaking | 6030 Hz | 3.88 | 7.5 dB  |
 | Peaking | 8182 Hz | 2.89 | -0.5 dB |
-| Peaking | 474 Hz  | 1.63 | -3.3 dB |
-| Peaking | 811 Hz  | 2.15 | 5.2 dB  |
-| Peaking | 982 Hz  | 0.43 | 1.8 dB  |
-| Peaking | 1285 Hz | 1.97 | -5.1 dB |
-| Peaking | 4499 Hz | 7.69 | -2.7 dB |
+| Peaking | 474 Hz  | 1.62 | -3.4 dB |
+| Peaking | 811 Hz  | 2.16 | 5.1 dB  |
+| Peaking | 968 Hz  | 0.43 | 1.9 dB  |
+| Peaking | 1285 Hz | 1.96 | -5.1 dB |
+| Peaking | 4510 Hz | 7.72 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OnEar%20Red/Torque%20t402v%20OnEar%20Red.png)

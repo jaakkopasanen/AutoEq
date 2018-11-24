@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultrasone HFI-450 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone HFI-450 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Ultrasone HFI-45
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 33 Hz   | 0.78 | 6.9 dB  |
-| Peaking | 2888 Hz | 4.01 | 4.0 dB  |
-| Peaking | 4344 Hz | 2.32 | 10.6 dB |
-| Peaking | 4795 Hz | 0.56 | -4.8 dB |
-| Peaking | 6323 Hz | 4.1  | 7.3 dB  |
-| Peaking | 112 Hz  | 4.37 | -1.8 dB |
-| Peaking | 230 Hz  | 2.15 | 2.3 dB  |
-| Peaking | 328 Hz  | 1.61 | -2.9 dB |
-| Peaking | 1603 Hz | 1.47 | 1.7 dB  |
-| Peaking | 1915 Hz | 4    | -2.7 dB |
+| Peaking | 33 Hz   | 0.79 | 6.9 dB  |
+| Peaking | 2888 Hz | 4.02 | 4.0 dB  |
+| Peaking | 4346 Hz | 2.32 | 10.6 dB |
+| Peaking | 4794 Hz | 0.56 | -4.8 dB |
+| Peaking | 6322 Hz | 4.1  | 7.4 dB  |
+| Peaking | 111 Hz  | 4.36 | -1.8 dB |
+| Peaking | 230 Hz  | 2.16 | 2.3 dB  |
+| Peaking | 329 Hz  | 1.61 | -2.9 dB |
+| Peaking | 1608 Hz | 1.46 | 1.7 dB  |
+| Peaking | 1916 Hz | 4    | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20HFI-450/Ultrasone%20HFI-450.png)

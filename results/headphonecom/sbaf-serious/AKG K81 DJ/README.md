@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K81 DJ GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K81 DJ ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K81 DJ Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 68 Hz    | 0.17 | 6.5 dB  |
-| Peaking | 4085 Hz  | 0.85 | 5.2 dB  |
-| Peaking | 4455 Hz  | 0.08 | -2.6 dB |
-| Peaking | 13357 Hz | 1.51 | 5.5 dB  |
-| Peaking | 15402 Hz | 1.78 | -7.6 dB |
-| Peaking | 427 Hz   | 4.93 | -2.4 dB |
-| Peaking | 3371 Hz  | 4.41 | 3.4 dB  |
-| Peaking | 4411 Hz  | 2.24 | -4.0 dB |
-| Peaking | 5379 Hz  | 4.67 | 6.6 dB  |
-| Peaking | 6434 Hz  | 6.15 | -3.4 dB |
+| Peaking | 69 Hz    | 0.17 | 6.5 dB  |
+| Peaking | 4079 Hz  | 0.85 | 5.2 dB  |
+| Peaking | 4353 Hz  | 0.08 | -2.6 dB |
+| Peaking | 13338 Hz | 1.52 | 5.5 dB  |
+| Peaking | 15384 Hz | 1.75 | -7.5 dB |
+| Peaking | 427 Hz   | 4.97 | -2.4 dB |
+| Peaking | 3330 Hz  | 4.65 | 3.1 dB  |
+| Peaking | 4405 Hz  | 2.49 | -3.9 dB |
+| Peaking | 5422 Hz  | 4.76 | 6.4 dB  |
+| Peaking | 6484 Hz  | 6.12 | -3.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K81%20DJ/AKG%20K81%20DJ.png)

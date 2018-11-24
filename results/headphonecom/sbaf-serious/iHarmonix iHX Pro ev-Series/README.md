@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.7; 23 -3.7; 25 -3.7; 28 -3.8; 31 -3.7; 34 -3.7; 37 -3.7; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-49**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`iHarmonix iHX Pro ev-Series GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-49**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `iHarmonix iHX Pro ev-Series ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `iHarmonix iHX Pr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.9dB.
+When using independent subset of filters, apply preamp of **-4.9dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 37 Hz   | 0.32 | -3.7 dB  |
+| Peaking | 37 Hz   | 0.31 | -3.7 dB  |
 | Peaking | 151 Hz  | 0.9  | -3.0 dB  |
-| Peaking | 2240 Hz | 2.27 | -10.8 dB |
-| Peaking | 4954 Hz | 6.57 | -7.4 dB  |
-| Peaking | 6382 Hz | 4.52 | 5.8 dB   |
-| Peaking | 753 Hz  | 1.77 | 1.7 dB   |
-| Peaking | 1659 Hz | 5.59 | -2.2 dB  |
-| Peaking | 2680 Hz | 7.09 | -3.5 dB  |
-| Peaking | 3617 Hz | 3.15 | 4.4 dB   |
-| Peaking | 4419 Hz | 5.18 | -2.6 dB  |
+| Peaking | 2239 Hz | 2.27 | -10.8 dB |
+| Peaking | 4955 Hz | 6.57 | -7.4 dB  |
+| Peaking | 6383 Hz | 4.52 | 5.8 dB   |
+| Peaking | 752 Hz  | 1.74 | 1.7 dB   |
+| Peaking | 1655 Hz | 5.57 | -2.2 dB  |
+| Peaking | 2690 Hz | 7.1  | -3.5 dB  |
+| Peaking | 3622 Hz | 3.17 | 4.4 dB   |
+| Peaking | 4440 Hz | 5.26 | -2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/iHarmonix%20iHX%20Pro%20ev-Series/iHarmonix%20iHX%20Pro%20ev-Series.png)

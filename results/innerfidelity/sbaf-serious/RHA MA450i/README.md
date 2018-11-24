@@ -9,8 +9,9 @@ GraphicEQ: 21 -11.8; 23 -11.7; 25 -11.7; 28 -11.6; 31 -11.4; 34 -11.3; 37 -11.2;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.1dB` and instead set Global volume in the UI for both channels to **-31**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`RHA MA450i GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-31**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `RHA MA450i ParametricEQ.txt`.
@@ -18,18 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `RHA MA450i Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.8dB.
+When using independent subset of filters, apply preamp of **-2.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 0.18 | -11.4 dB |
-| Peaking | 171 Hz   | 0.67 | -4.3 dB  |
-| Peaking | 1769 Hz  | 3.14 | -1.7 dB  |
-| Peaking | 5097 Hz  | 3.39 | -13.3 dB |
-| Peaking | 6596 Hz  | 3.8  | 5.8 dB   |
-| Peaking | 336 Hz   | 2.31 | -0.5 dB  |
-| Peaking | 776 Hz   | 2.02 | 1.1 dB   |
-| Peaking | 13875 Hz | 1.36 | 0.4 dB   |
-| Peaking | 15170 Hz | 5.13 | -2.4 dB  |
+| Peaking | 22 Hz    | 0.17 | -11.4 dB |
+| Peaking | 170 Hz   | 0.66 | -4.4 dB  |
+| Peaking | 1769 Hz  | 3.15 | -1.7 dB  |
+| Peaking | 5103 Hz  | 3.39 | -13.3 dB |
+| Peaking | 6609 Hz  | 3.78 | 5.8 dB   |
+| Peaking | 166 Hz   | 2.48 | 0.5 dB   |
+| Peaking | 325 Hz   | 1.68 | -0.5 dB  |
+| Peaking | 771 Hz   | 1.93 | 1.2 dB   |
+| Peaking | 13578 Hz | 2.07 | 0.5 dB   |
+| Peaking | 15196 Hz | 5.29 | -2.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/RHA%20MA450i/RHA%20MA450i.png)

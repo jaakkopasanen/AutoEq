@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.2; 23 -0.4; 25 -0.5; 28 -0.6; 31 -0.6; 34 -0.6; 37 -0.6; 41 -0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`FLC Technologies FLC8 G G Bk De GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `FLC Technologies FLC8 G G Bk De ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `FLC Technologies
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 707 Hz  | 1.7  | 1.7 dB  |
 | Peaking | 1299 Hz | 2.22 | -2.4 dB |
-| Peaking | 4030 Hz | 1.01 | 6.7 dB  |
-| Peaking | 6021 Hz | 3.05 | 5.9 dB  |
-| Peaking | 7602 Hz | 1.49 | -6.0 dB |
+| Peaking | 4031 Hz | 1.01 | 6.7 dB  |
+| Peaking | 6003 Hz | 3.05 | 5.9 dB  |
+| Peaking | 7608 Hz | 1.49 | -6.0 dB |
 | Peaking | 40 Hz   | 0.46 | -0.5 dB |
 | Peaking | 137 Hz  | 1.03 | -1.0 dB |
-| Peaking | 2024 Hz | 5.53 | 0.7 dB  |
-| Peaking | 2820 Hz | 5.73 | -2.1 dB |
-| Peaking | 3084 Hz | 7.64 | 2.2 dB  |
+| Peaking | 2024 Hz | 5.4  | 0.6 dB  |
+| Peaking | 2812 Hz | 5.59 | -2.1 dB |
+| Peaking | 3075 Hz | 7.73 | 2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/FLC%20Technologies%20FLC8%20G%20G%20Bk%20De/FLC%20Technologies%20FLC8%20G%20G%20Bk%20De.png)

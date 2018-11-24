@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-AD500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-AD500 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 36 Hz    | 0.36 | 6.4 dB   |
-| Peaking | 3605 Hz  | 1.58 | 11.6 dB  |
-| Peaking | 4174 Hz  | 1.96 | -14.0 dB |
-| Peaking | 6068 Hz  | 5.29 | 9.3 dB   |
-| Peaking | 8993 Hz  | 2.62 | -8.9 dB  |
-| Peaking | 37 Hz    | 2.5  | -0.4 dB  |
-| Peaking | 614 Hz   | 1.01 | 1.8 dB   |
-| Peaking | 1586 Hz  | 1.18 | -2.9 dB  |
-| Peaking | 1870 Hz  | 2.97 | 3.8 dB   |
-| Peaking | 12534 Hz | 4.79 | 1.6 dB   |
+| Peaking | 3614 Hz  | 1.57 | 11.8 dB  |
+| Peaking | 4164 Hz  | 1.94 | -14.1 dB |
+| Peaking | 6063 Hz  | 5.28 | 9.3 dB   |
+| Peaking | 8999 Hz  | 2.62 | -8.9 dB  |
+| Peaking | 34 Hz    | 2.68 | -0.3 dB  |
+| Peaking | 620 Hz   | 0.98 | 1.8 dB   |
+| Peaking | 1540 Hz  | 1.17 | -2.9 dB  |
+| Peaking | 1881 Hz  | 2.95 | 3.7 dB   |
+| Peaking | 12517 Hz | 4.85 | 1.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audio%20Technica%20ATH-AD500/Audio%20Technica%20ATH-AD500.png)

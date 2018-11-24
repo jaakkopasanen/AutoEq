@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.1; 25 1.0; 28 0.9; 31 0.8; 34 0.7; 37 0.7; 41 0.7; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.3dB` and instead set Global volume in the UI for both channels to **-42**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`MrSpeakers Aeon Flow Closed PreProduction GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-42**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon Flow Closed PreProduction ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.3dB.
+When using independent subset of filters, apply preamp of **-4.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 114 Hz  | 3.69 | -2.7 dB |
 | Peaking | 1661 Hz | 2.75 | -2.4 dB |
 | Peaking | 2970 Hz | 3.43 | 3.2 dB  |
-| Peaking | 6063 Hz | 2.48 | 4.3 dB  |
-| Peaking | 8937 Hz | 4.57 | -4.3 dB |
-| Peaking | 16 Hz   | 0.69 | 0.5 dB  |
-| Peaking | 28 Hz   | 0.64 | 0.8 dB  |
-| Peaking | 222 Hz  | 3.64 | 0.5 dB  |
-| Peaking | 850 Hz  | 2.25 | 1.2 dB  |
-| Peaking | 1040 Hz | 2.37 | -0.8 dB |
+| Peaking | 6064 Hz | 2.48 | 4.3 dB  |
+| Peaking | 8948 Hz | 4.57 | -4.3 dB |
+| Peaking | 21 Hz   | 0.87 | 1.1 dB  |
+| Peaking | 68 Hz   | 3.44 | 0.5 dB  |
+| Peaking | 219 Hz  | 3.58 | 0.5 dB  |
+| Peaking | 849 Hz  | 2.24 | 1.3 dB  |
+| Peaking | 1038 Hz | 2.35 | -0.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20Flow%20Closed%20PreProduction/MrSpeakers%20Aeon%20Flow%20Closed%20PreProduction.png)

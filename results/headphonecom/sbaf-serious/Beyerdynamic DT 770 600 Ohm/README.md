@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.9; 34 5.4; 37 4.6; 41 3.5; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 770 600 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 770 600 Ohm ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 24 Hz    | 0.64 | 6.3 dB   |
-| Peaking | 204 Hz   | 0.76 | -4.4 dB  |
-| Peaking | 4612 Hz  | 2.19 | 9.2 dB   |
-| Peaking | 5686 Hz  | 3.28 | -11.6 dB |
-| Peaking | 8785 Hz  | 3.93 | -9.9 dB  |
-| Peaking | 91 Hz    | 9.93 | 3.1 dB   |
-| Peaking | 1174 Hz  | 5.13 | 1.3 dB   |
-| Peaking | 2480 Hz  | 2.13 | -2.4 dB  |
-| Peaking | 3570 Hz  | 6.1  | 3.5 dB   |
-| Peaking | 19373 Hz | 1.55 | -8.4 dB  |
+| Peaking | 203 Hz   | 0.76 | -4.4 dB  |
+| Peaking | 4627 Hz  | 2.19 | 9.4 dB   |
+| Peaking | 5678 Hz  | 3.22 | -11.8 dB |
+| Peaking | 8786 Hz  | 3.95 | -9.9 dB  |
+| Peaking | 90 Hz    | 9.76 | 3.0 dB   |
+| Peaking | 1176 Hz  | 5.09 | 1.3 dB   |
+| Peaking | 2481 Hz  | 2.09 | -2.4 dB  |
+| Peaking | 3573 Hz  | 6.04 | 3.5 dB   |
+| Peaking | 19416 Hz | 1.55 | -8.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20770%20600%20Ohm/Beyerdynamic%20DT%20770%20600%20Ohm.png)

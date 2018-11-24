@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.7; 23 -1.0; 25 -1.3; 28 -1.7; 31 -2.0; 34 -2.3; 37 -2.6; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Onkyo IE-HF300S GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Onkyo IE-HF300S ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Onkyo IE-HF300S 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 1698 Hz  | 3.35 | -2.2 dB |
 | Peaking | 3296 Hz  | 2.74 | 6.5 dB  |
 | Peaking | 24000 Hz | 2.25 | 0.7 dB  |
-| Peaking | 796 Hz   | 3.01 | 1.1 dB  |
-| Peaking | 3903 Hz  | 6.64 | 2.0 dB  |
-| Peaking | 4862 Hz  | 3.29 | -2.9 dB |
-| Peaking | 6583 Hz  | 5.05 | 3.7 dB  |
-| Peaking | 8960 Hz  | 7.34 | -2.1 dB |
+| Peaking | 797 Hz   | 3.01 | 1.1 dB  |
+| Peaking | 3870 Hz  | 6.63 | 2.0 dB  |
+| Peaking | 4836 Hz  | 3.28 | -2.9 dB |
+| Peaking | 6539 Hz  | 5.05 | 3.7 dB  |
+| Peaking | 8910 Hz  | 7.34 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Onkyo%20IE-HF300S/Onkyo%20IE-HF300S.png)

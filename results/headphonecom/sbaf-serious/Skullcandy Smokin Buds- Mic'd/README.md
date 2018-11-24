@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.2; 25 4.6; 28 3.8; 31 3.1; 34 2.6; 37 2.0; 41 1.4; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.3dB` and instead set Global volume in the UI for both channels to **-63**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Skullcandy Smokin Buds- Mic'd GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-63**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Smokin Buds- Mic'd ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Smoki
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 2043 Hz | 2.8  | -5.8 dB |
 | Peaking | 3607 Hz | 2.55 | 7.6 dB  |
 | Peaking | 5230 Hz | 2.84 | -4.2 dB |
-| Peaking | 1015 Hz | 3.14 | -1.5 dB |
-| Peaking | 1159 Hz | 3.96 | 4.9 dB  |
-| Peaking | 1668 Hz | 7.67 | -2.3 dB |
-| Peaking | 6942 Hz | 5.26 | 2.1 dB  |
-| Peaking | 8555 Hz | 6    | -4.7 dB |
+| Peaking | 1017 Hz | 3.14 | -1.4 dB |
+| Peaking | 1157 Hz | 3.97 | 4.9 dB  |
+| Peaking | 1665 Hz | 7.76 | -2.3 dB |
+| Peaking | 6940 Hz | 5.55 | 2.1 dB  |
+| Peaking | 8567 Hz | 6.09 | -4.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Skullcandy%20Smokin%20Buds-%20Mic'd/Skullcandy%20Smokin%20Buds-%20Mic'd.png)

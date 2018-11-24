@@ -9,28 +9,29 @@ GraphicEQ: 21 -15.0; 23 -14.9; 25 -14.8; 28 -14.7; 31 -14.5; 34 -14.3; 37 -14.1;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.4dB` and instead set Global volume in the UI for both channels to **-23**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`RBH EP3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-23**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `RBH EP3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.9dB.
+When using independent subset of filters, apply preamp of **-1.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 20 Hz    | 0.15 | -14.6 dB |
 | Peaking | 181 Hz   | 0.66 | -4.5 dB  |
-| Peaking | 1969 Hz  | 2.44 | -4.5 dB  |
-| Peaking | 5370 Hz  | 5.05 | -10.9 dB |
-| Peaking | 6894 Hz  | 4.6  | 3.2 dB   |
-| Peaking | 850 Hz   | 2.35 | 1.5 dB   |
-| Peaking | 2674 Hz  | 3.06 | -2.4 dB  |
-| Peaking | 3558 Hz  | 2.77 | 4.3 dB   |
-| Peaking | 4638 Hz  | 5.16 | -2.5 dB  |
-| Peaking | 15582 Hz | 4.99 | -3.5 dB  |
+| Peaking | 1970 Hz  | 2.44 | -4.5 dB  |
+| Peaking | 5363 Hz  | 5.03 | -10.9 dB |
+| Peaking | 6871 Hz  | 4.34 | 3.1 dB   |
+| Peaking | 868 Hz   | 1.33 | 2.4 dB   |
+| Peaking | 1309 Hz  | 0.24 | -1.0 dB  |
+| Peaking | 2657 Hz  | 6.18 | -1.3 dB  |
+| Peaking | 3531 Hz  | 4.07 | 4.4 dB   |
+| Peaking | 15517 Hz | 5.26 | -3.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/RBH%20EP3/RBH%20EP3.png)

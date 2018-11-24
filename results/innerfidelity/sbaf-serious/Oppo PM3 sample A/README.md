@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 0.8; 25 0.8; 28 0.8; 31 0.8; 34 0.8; 37 0.8; 41 0.8; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Oppo PM3 sample A GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM3 sample A ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 351 Hz  | 1.23 | 2.6 dB  |
 | Peaking | 1960 Hz | 2.12 | -4.1 dB |
 | Peaking | 5538 Hz | 2.41 | 6.8 dB  |
-| Peaking | 843 Hz  | 3.88 | 0.4 dB  |
-| Peaking | 2562 Hz | 4.38 | -1.5 dB |
-| Peaking | 3029 Hz | 1.98 | 1.2 dB  |
-| Peaking | 6545 Hz | 5.65 | 3.1 dB  |
-| Peaking | 7172 Hz | 1.83 | -2.0 dB |
+| Peaking | 843 Hz  | 3.91 | 0.4 dB  |
+| Peaking | 2567 Hz | 4.31 | -1.5 dB |
+| Peaking | 3017 Hz | 1.98 | 1.2 dB  |
+| Peaking | 6556 Hz | 5.59 | 3.2 dB  |
+| Peaking | 7149 Hz | 1.84 | -2.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM3%20sample%20A/Oppo%20PM3%20sample%20A.png)

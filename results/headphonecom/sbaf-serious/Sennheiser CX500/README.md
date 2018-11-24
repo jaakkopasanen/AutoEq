@@ -9,28 +9,29 @@ GraphicEQ: 21 -7.1; 23 -7.1; 25 -7.2; 28 -7.2; 31 -7.2; 34 -7.2; 37 -7.3; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser CX500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser CX500 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 28 Hz   | 0.19 | -6.7 dB |
-| Peaking | 147 Hz  | 0.65 | -5.1 dB |
-| Peaking | 306 Hz  | 0.95 | -3.5 dB |
-| Peaking | 3449 Hz | 2.08 | 6.7 dB  |
-| Peaking | 5933 Hz | 5.97 | -9.0 dB |
-| Peaking | 517 Hz  | 2.46 | -1.0 dB |
-| Peaking | 1460 Hz | 0.53 | 1.4 dB  |
-| Peaking | 1745 Hz | 1.75 | -2.0 dB |
-| Peaking | 6208 Hz | 0.84 | -0.7 dB |
-| Peaking | 7221 Hz | 6.11 | 2.2 dB  |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 27 Hz    |  0.18 | -6.7 dB |
+| Peaking | 148 Hz   |  0.64 | -5.1 dB |
+| Peaking | 307 Hz   |  0.96 | -3.5 dB |
+| Peaking | 3448 Hz  |  2.08 | 6.7 dB  |
+| Peaking | 5925 Hz  |  5.97 | -9.0 dB |
+| Peaking | 520 Hz   |  2.58 | -0.9 dB |
+| Peaking | 961 Hz   |  0.92 | 0.9 dB  |
+| Peaking | 1729 Hz  |  2.95 | -1.1 dB |
+| Peaking | 7265 Hz  | 10.54 | 1.8 dB  |
+| Peaking | 10213 Hz | 10.36 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20CX500/Sennheiser%20CX500.png)

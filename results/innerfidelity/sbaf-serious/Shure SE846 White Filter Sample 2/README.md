@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.4; 23 -2.4; 25 -2.4; 28 -2.4; 31 -2.4; 34 -2.4; 37 -2.4; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SE846 White Filter Sample 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SE846 White Filter Sample 2 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Shure SE846 Whit
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 2001 Hz | 1.1  | -4.9 dB |
 | Peaking | 3187 Hz | 1.75 | 8.4 dB  |
 | Peaking | 5798 Hz | 3.6  | 5.8 dB  |
-| Peaking | 56 Hz   | 1.47 | 0.3 dB  |
-| Peaking | 93 Hz   | 1.92 | -0.2 dB |
-| Peaking | 6702 Hz | 7.63 | 2.1 dB  |
-| Peaking | 7978 Hz | 3.8  | -2.3 dB |
+| Peaking | 59 Hz   | 1.5  | 0.3 dB  |
+| Peaking | 103 Hz  | 1.95 | -0.2 dB |
+| Peaking | 6683 Hz | 7.64 | 2.1 dB  |
+| Peaking | 7964 Hz | 3.8  | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SE846%20White%20Filter%20Sample%202/Shure%20SE846%20White%20Filter%20Sample%202.png)

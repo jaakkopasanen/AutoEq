@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.4; 25 2.4; 28 2.4; 31 2.5; 34 2.7; 37 3.0; 41 3.6; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`MrSpeakers Ether C 2 Black Filters GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Ether C 2 Black Filters ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Ether
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 12 Hz   | 1.86 | 2.2 dB  |
-| Peaking | 45 Hz   | 0.42 | 3.4 dB  |
-| Peaking | 158 Hz  | 5.24 | 2.2 dB  |
-| Peaking | 3006 Hz | 1.67 | 2.1 dB  |
-| Peaking | 5704 Hz | 2.92 | 6.4 dB  |
-| Peaking | 335 Hz  | 1.26 | -0.9 dB |
-| Peaking | 482 Hz  | 1.33 | 1.8 dB  |
-| Peaking | 1684 Hz | 5.67 | -1.2 dB |
-| Peaking | 3050 Hz | 0.35 | 0.1 dB  |
-| Peaking | 8278 Hz | 3.98 | -1.2 dB |
+| Peaking | 11 Hz   | 1.78 | 2.2 dB  |
+| Peaking | 48 Hz   | 0.44 | 3.3 dB  |
+| Peaking | 160 Hz  | 5.46 | 2.2 dB  |
+| Peaking | 3005 Hz | 1.68 | 2.1 dB  |
+| Peaking | 5703 Hz | 2.92 | 6.4 dB  |
+| Peaking | 340 Hz  | 1.17 | -1.0 dB |
+| Peaking | 480 Hz  | 1.32 | 1.9 dB  |
+| Peaking | 1696 Hz | 5.67 | -1.2 dB |
+| Peaking | 2994 Hz | 0.35 | 0.1 dB  |
+| Peaking | 8291 Hz | 3.99 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Ether%20C%202%20Black%20Filters/MrSpeakers%20Ether%20C%202%20Black%20Filters.png)

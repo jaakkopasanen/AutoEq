@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Yamaha YH 5M GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yamaha YH 5M ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Yamaha YH 5M Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 1393 Hz | 1.85 | 4.7 dB  |
 | Peaking | 2372 Hz | 1.02 | 4.4 dB  |
 | Peaking | 4301 Hz | 1.33 | 4.1 dB  |
-| Peaking | 73 Hz   | 4.77 | 0.5 dB  |
-| Peaking | 5150 Hz | 4.65 | -2.0 dB |
-| Peaking | 5588 Hz | 2.92 | 2.3 dB  |
-| Peaking | 8486 Hz | 1.95 | -1.2 dB |
+| Peaking | 72 Hz   | 4.58 | 0.6 dB  |
+| Peaking | 5106 Hz | 4.65 | -2.0 dB |
+| Peaking | 5637 Hz | 2.92 | 2.3 dB  |
+| Peaking | 8532 Hz | 1.95 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20YH%205M/Yamaha%20YH%205M.png)

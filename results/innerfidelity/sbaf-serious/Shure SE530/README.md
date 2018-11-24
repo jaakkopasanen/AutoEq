@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.1; 25 2.0; 28 1.9; 31 1.8; 34 1.7; 37 1.5; 41 1.3; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SE530 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SE530 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Shure SE530 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 26 Hz   | 0.54 | 2.2 dB  |
-| Peaking | 204 Hz  | 0.59 | -3.7 dB |
-| Peaking | 2015 Hz | 2.13 | -3.2 dB |
-| Peaking | 3480 Hz | 1.77 | 6.0 dB  |
-| Peaking | 5737 Hz | 3.05 | 5.5 dB  |
-| Peaking | 461 Hz  | 1.1  | -1.7 dB |
-| Peaking | 614 Hz  | 0.65 | 1.6 dB  |
-| Peaking | 1488 Hz | 2.8  | -0.8 dB |
-| Peaking | 6580 Hz | 7.8  | 2.1 dB  |
-| Peaking | 7766 Hz | 2.2  | -1.4 dB |
+| Peaking | 26 Hz   | 0.53 | 2.2 dB  |
+| Peaking | 203 Hz  | 0.59 | -3.7 dB |
+| Peaking | 2016 Hz | 2.13 | -3.2 dB |
+| Peaking | 3481 Hz | 1.77 | 6.0 dB  |
+| Peaking | 5742 Hz | 3.05 | 5.5 dB  |
+| Peaking | 454 Hz  | 1.05 | -1.8 dB |
+| Peaking | 601 Hz  | 0.62 | 1.7 dB  |
+| Peaking | 1491 Hz | 2.71 | -0.8 dB |
+| Peaking | 6610 Hz | 7.86 | 2.1 dB  |
+| Peaking | 7774 Hz | 2.21 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SE530/Shure%20SE530.png)

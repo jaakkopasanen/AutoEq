@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.8; 25 5.6; 28 5.3; 31 5.1; 34 4.9; 37 4.7; 41 4.5; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.3dB` and instead set Global volume in the UI for both channels to **-62**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Focal Clear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-62**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Clear ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Focal Clear Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 18 Hz    |  0.57 | 5.6 dB  |
-| Peaking | 59 Hz    |  0.82 | 2.1 dB  |
-| Peaking | 476 Hz   |  1.33 | 2.2 dB  |
+| Peaking | 18 Hz    |  0.54 | 5.7 dB  |
+| Peaking | 59 Hz    |  0.83 | 2.1 dB  |
+| Peaking | 475 Hz   |  1.33 | 2.2 dB  |
 | Peaking | 2251 Hz  |  5.05 | 2.3 dB  |
 | Peaking | 4696 Hz  |  2.09 | 6.1 dB  |
-| Peaking | 716 Hz   |  3.64 | 0.8 dB  |
-| Peaking | 1298 Hz  |  3.48 | -2.1 dB |
-| Peaking | 3539 Hz  | 10.47 | -0.9 dB |
-| Peaking | 6571 Hz  | 13.63 | 3.7 dB  |
-| Peaking | 19567 Hz |  1.55 | -6.3 dB |
+| Peaking | 715 Hz   |  3.67 | 0.8 dB  |
+| Peaking | 1298 Hz  |  3.49 | -2.1 dB |
+| Peaking | 3550 Hz  |  9.24 | -0.8 dB |
+| Peaking | 6593 Hz  | 13.33 | 3.6 dB  |
+| Peaking | 19597 Hz |  1.55 | -6.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Focal%20Clear/Focal%20Clear.png)

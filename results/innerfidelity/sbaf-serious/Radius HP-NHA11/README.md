@@ -9,8 +9,9 @@ GraphicEQ: 21 -13.1; 23 -13.0; 25 -12.8; 28 -12.6; 31 -12.4; 34 -12.3; 37 -12.1;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.1dB` and instead set Global volume in the UI for both channels to **-31**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Radius HP-NHA11 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-31**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Radius HP-NHA11 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Radius HP-NHA11 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.1dB.
+When using independent subset of filters, apply preamp of **-3.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 21 Hz   | 0.18 | -12.6 dB |
+| Peaking | 20 Hz   | 0.18 | -12.7 dB |
 | Peaking | 161 Hz  | 0.73 | -4.1 dB  |
-| Peaking | 2036 Hz | 2.12 | -5.4 dB  |
-| Peaking | 4847 Hz | 4.75 | -9.5 dB  |
-| Peaking | 6561 Hz | 4.64 | 4.1 dB   |
-| Peaking | 792 Hz  | 2.01 | 1.7 dB   |
-| Peaking | 1538 Hz | 5.58 | -1.2 dB  |
-| Peaking | 2675 Hz | 6.75 | -1.4 dB  |
-| Peaking | 3483 Hz | 6.24 | 2.2 dB   |
-| Peaking | 9065 Hz | 6.74 | -1.1 dB  |
+| Peaking | 2038 Hz | 2.12 | -5.4 dB  |
+| Peaking | 4845 Hz | 4.75 | -9.5 dB  |
+| Peaking | 6558 Hz | 4.63 | 4.1 dB   |
+| Peaking | 796 Hz  | 2.14 | 1.7 dB   |
+| Peaking | 1541 Hz | 5.67 | -1.2 dB  |
+| Peaking | 2676 Hz | 6.85 | -1.4 dB  |
+| Peaking | 3483 Hz | 6.25 | 2.2 dB   |
+| Peaking | 9059 Hz | 6.76 | -1.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Radius%20HP-NHA11/Radius%20HP-NHA11.png)

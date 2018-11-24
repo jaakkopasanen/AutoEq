@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 1.9; 25 1.6; 28 1.2; 31 0.9; 34 0.6; 37 0.4; 41 0.1; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Westone UM3X RC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Westone UM3X RC ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 14 Hz    | 0.54 | 2.8 dB  |
-| Peaking | 193 Hz   | 0.43 | -4.4 dB |
-| Peaking | 1664 Hz  | 1.33 | -7.9 dB |
-| Peaking | 3065 Hz  | 0.38 | 8.3 dB  |
-| Peaking | 9420 Hz  | 2.05 | -6.0 dB |
-| Peaking | 2587 Hz  | 5.33 | 1.7 dB  |
-| Peaking | 6017 Hz  | 4.26 | 2.1 dB  |
-| Peaking | 6533 Hz  | 0.26 | -0.7 dB |
-| Peaking | 10933 Hz | 5.52 | 1.5 dB  |
-| Peaking | 14804 Hz | 2.87 | -0.2 dB |
+| Peaking | 14 Hz    | 0.56 | 2.8 dB  |
+| Peaking | 192 Hz   | 0.42 | -4.4 dB |
+| Peaking | 1628 Hz  | 1.32 | -7.9 dB |
+| Peaking | 3088 Hz  | 0.39 | 8.3 dB  |
+| Peaking | 9400 Hz  | 2.05 | -6.0 dB |
+| Peaking | 2601 Hz  | 7.42 | 1.4 dB  |
+| Peaking | 4242 Hz  | 1.26 | -1.2 dB |
+| Peaking | 6654 Hz  | 1.64 | 2.6 dB  |
+| Peaking | 7371 Hz  | 5.3  | -3.4 dB |
+| Peaking | 15107 Hz | 1.43 | -0.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Westone%20UM3X%20RC/Westone%20UM3X%20RC.png)

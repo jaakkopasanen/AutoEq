@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.5; 25 4.3; 28 4.0; 31 3.7; 34 3.5; 37 3.4; 41 3.1; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic T70 250 Ohm sn01111 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T70 250 Ohm sn01111 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T70
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 3927 Hz  | 2.05 | 4.5 dB   |
 | Peaking | 5977 Hz  | 2.29 | 7.2 dB   |
 | Peaking | 8631 Hz  | 2.69 | -10.9 dB |
-| Peaking | 151 Hz   | 3.75 | -1.4 dB  |
-| Peaking | 392 Hz   | 3.71 | -0.7 dB  |
-| Peaking | 551 Hz   | 2.62 | 0.6 dB   |
-| Peaking | 1529 Hz  | 3.86 | -1.1 dB  |
-| Peaking | 11671 Hz | 6.28 | 1.8 dB   |
+| Peaking | 150 Hz   | 3.74 | -1.4 dB  |
+| Peaking | 393 Hz   | 3.8  | -0.7 dB  |
+| Peaking | 554 Hz   | 2.66 | 0.6 dB   |
+| Peaking | 1543 Hz  | 3.87 | -1.1 dB  |
+| Peaking | 11733 Hz | 6.3  | 1.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T70%20250%20Ohm%20sn01111/Beyerdynamic%20T70%20250%20Ohm%20sn01111.png)

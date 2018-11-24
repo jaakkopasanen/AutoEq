@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`NAD RP18 Bass Light Version GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NAD RP18 Bass Light Version ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 415 Hz  |  0.52 | -1.8 dB |
 | Peaking | 3621 Hz |  5.47 | 3.2 dB  |
 | Peaking | 5939 Hz |  4.06 | 6.8 dB  |
-| Peaking | 1155 Hz |  8.72 | 0.7 dB  |
-| Peaking | 2563 Hz | 15.56 | -1.6 dB |
-| Peaking | 4793 Hz |  9.81 | -2.7 dB |
-| Peaking | 5336 Hz | 11.85 | 2.5 dB  |
-| Peaking | 8232 Hz |  5.31 | -0.8 dB |
+| Peaking | 1152 Hz |  8.72 | 0.7 dB  |
+| Peaking | 2553 Hz | 15.55 | -1.6 dB |
+| Peaking | 4780 Hz |  9.81 | -2.7 dB |
+| Peaking | 5276 Hz | 11.84 | 2.5 dB  |
+| Peaking | 8223 Hz |  5.31 | -0.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NAD%20RP18%20Bass%20Light%20Version/NAD%20RP18%20Bass%20Light%20Version.png)

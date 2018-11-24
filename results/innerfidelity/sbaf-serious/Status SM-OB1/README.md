@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.9; 34 5.4; 37 4.8; 41 4.0; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Status SM-OB1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Status SM-OB1 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Status SM-OB1 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 372 Hz  | 0.98 | -0.6 dB |
 | Peaking | 880 Hz  | 3.82 | -0.6 dB |
 | Peaking | 3822 Hz | 0.81 | 6.6 dB  |
-| Peaking | 1862 Hz | 5.55 | 1.1 dB  |
+| Peaking | 1861 Hz | 5.55 | 1.1 dB  |
 | Peaking | 3886 Hz | 4.26 | -0.6 dB |
 | Peaking | 6246 Hz | 2.45 | 5.3 dB  |
-| Peaking | 7372 Hz | 1.46 | -4.2 dB |
+| Peaking | 7371 Hz | 1.46 | -4.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Status%20SM-OB1/Status%20SM-OB1.png)

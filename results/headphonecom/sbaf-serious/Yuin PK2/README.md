@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Yuin PK2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yuin PK2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 1951 Hz  | 1.37 | -9.1 dB |
 | Peaking | 5456 Hz  | 2.09 | -5.8 dB |
 | Peaking | 21803 Hz | 1.98 | -1.2 dB |
-| Peaking | 82 Hz    | 5.61 | 1.5 dB  |
-| Peaking | 2516 Hz  | 5.5  | -1.3 dB |
-| Peaking | 3515 Hz  | 5.68 | 2.5 dB  |
-| Peaking | 9096 Hz  | 6.42 | -3.8 dB |
+| Peaking | 83 Hz    | 5.62 | 1.5 dB  |
+| Peaking | 2506 Hz  | 5.46 | -1.3 dB |
+| Peaking | 3486 Hz  | 5.65 | 2.5 dB  |
+| Peaking | 9082 Hz  | 6.41 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Yuin%20PK2/Yuin%20PK2.png)

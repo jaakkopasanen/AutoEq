@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.4; 25 1.9; 28 1.3; 31 0.8; 34 0.4; 37 0.1; 41 -0.3; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.1dB` and instead set Global volume in the UI for both channels to **-51**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K702 65th Anv Ed 2014 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-51**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K702 65th Anv Ed 2014 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K702 65th An
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.5dB.
+When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.5dB.
 | Peaking | 2008 Hz  |  3.08 | -5.6 dB |
 | Peaking | 3106 Hz  |  2.54 | 6.5 dB  |
 | Peaking | 7147 Hz  |  2.04 | -5.8 dB |
-| Peaking | 1205 Hz  |  2.11 | 1.7 dB  |
-| Peaking | 1605 Hz  |  5.39 | -1.8 dB |
-| Peaking | 4356 Hz  | 10.46 | -1.7 dB |
-| Peaking | 15190 Hz |  0.88 | 2.3 dB  |
-| Peaking | 18099 Hz |  1.04 | -4.8 dB |
+| Peaking | 1206 Hz  |  2.11 | 1.7 dB  |
+| Peaking | 1611 Hz  |  5.39 | -1.8 dB |
+| Peaking | 4373 Hz  | 10.47 | -1.7 dB |
+| Peaking | 15168 Hz |  0.88 | 2.4 dB  |
+| Peaking | 18142 Hz |  1.04 | -4.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K702%2065th%20Anv%20Ed%202014/AKG%20K702%2065th%20Anv%20Ed%202014.png)

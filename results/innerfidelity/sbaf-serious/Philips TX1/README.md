@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.0; 23 -9.0; 25 -9.0; 28 -8.9; 31 -8.8; 34 -8.7; 37 -8.6; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.7dB` and instead set Global volume in the UI for both channels to **-46**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips TX1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-46**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips TX1 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips TX1 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.8dB.
+When using independent subset of filters, apply preamp of **-4.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -4.8dB.
 | Peaking | 1879 Hz | 2.26 | -3.6 dB |
 | Peaking | 3489 Hz | 2.26 | 5.9 dB  |
 | Peaking | 5029 Hz | 3    | -5.6 dB |
-| Peaking | 321 Hz  | 2.19 | -0.7 dB |
+| Peaking | 320 Hz  | 2.19 | -0.7 dB |
 | Peaking | 735 Hz  | 1.48 | 1.4 dB  |
-| Peaking | 1447 Hz | 4.1  | -0.8 dB |
+| Peaking | 1448 Hz | 4.1  | -0.8 dB |
 | Peaking | 7260 Hz | 6.09 | 1.5 dB  |
 | Peaking | 9165 Hz | 4.38 | -1.8 dB |
 

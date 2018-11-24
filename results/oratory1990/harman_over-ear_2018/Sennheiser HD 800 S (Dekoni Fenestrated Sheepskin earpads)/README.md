@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 800 S (Dekoni Fenestrated Sheepskin earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 800 S (Dekoni Fenestrated Sheepskin earpads) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 36 Hz    | 0.57 | 6.8 dB  |
-| Peaking | 1884 Hz  | 2.22 | 4.7 dB  |
-| Peaking | 6556 Hz  | 4.65 | -2.5 dB |
-| Peaking | 17754 Hz | 0.47 | -4.2 dB |
-| Peaking | 18942 Hz | 0.72 | -8.0 dB |
-| Peaking | 2922 Hz  | 6.52 | -1.7 dB |
-| Peaking | 3783 Hz  | 4.65 | 2.4 dB  |
-| Peaking | 4752 Hz  | 7.2  | -2.9 dB |
-| Peaking | 9730 Hz  | 4.86 | 3.5 dB  |
-| Peaking | 11657 Hz | 5.84 | -4.6 dB |
+| Peaking | 36 Hz    | 0.57 | 6.7 dB  |
+| Peaking | 1883 Hz  | 2.22 | 4.7 dB  |
+| Peaking | 6556 Hz  | 4.64 | -2.5 dB |
+| Peaking | 17705 Hz | 0.48 | -4.2 dB |
+| Peaking | 18951 Hz | 0.72 | -8.0 dB |
+| Peaking | 2925 Hz  | 6.6  | -1.7 dB |
+| Peaking | 3790 Hz  | 4.72 | 2.3 dB  |
+| Peaking | 4765 Hz  | 7.26 | -2.9 dB |
+| Peaking | 9708 Hz  | 4.86 | 3.5 dB  |
+| Peaking | 11629 Hz | 5.84 | -4.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800%20S%20(Dekoni%20Fenestrated%20Sheepskin%20earpads)/Sennheiser%20HD%20800%20S%20(Dekoni%20Fenestrated%20Sheepskin%20earpads).png)

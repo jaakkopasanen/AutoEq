@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.9; 25 4.4; 28 3.7; 31 3.2; 34 2.7; 37 2.3; 41 1.9; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.9dB` and instead set Global volume in the UI for both channels to **-58**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K612 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-58**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K612 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.9dB.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 15 Hz    | 0.62 | 6.5 dB  |
-| Peaking | 209 Hz   | 0.79 | -2.9 dB |
-| Peaking | 2367 Hz  | 2.53 | -4.8 dB |
-| Peaking | 8301 Hz  | 3.84 | -3.7 dB |
-| Peaking | 18410 Hz | 3.28 | -3.7 dB |
-| Peaking | 1004 Hz  | 1.37 | 0.7 dB  |
-| Peaking | 3745 Hz  | 4.49 | 4.3 dB  |
-| Peaking | 4312 Hz  | 1.83 | -3.6 dB |
-| Peaking | 5361 Hz  | 5.3  | 3.5 dB  |
-| Peaking | 21740 Hz | 1.08 | 0.9 dB  |
+| Peaking | 15 Hz    | 0.61 | 6.4 dB  |
+| Peaking | 204 Hz   | 0.78 | -3.0 dB |
+| Peaking | 2366 Hz  | 2.53 | -4.8 dB |
+| Peaking | 8303 Hz  | 3.84 | -3.7 dB |
+| Peaking | 18340 Hz | 3.28 | -3.7 dB |
+| Peaking | 1057 Hz  | 1.33 | 0.8 dB  |
+| Peaking | 3713 Hz  | 4.03 | 4.6 dB  |
+| Peaking | 4510 Hz  | 1.52 | -4.3 dB |
+| Peaking | 5370 Hz  | 4.41 | 4.5 dB  |
+| Peaking | 10885 Hz | 1.72 | 0.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K612/AKG%20K612.png)

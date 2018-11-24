@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.2; 23 -4.6; 25 -5.0; 28 -5.7; 31 -6.2; 34 -6.6; 37 -7.0; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.1dB` and instead set Global volume in the UI for both channels to **-1**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`PureSound Clarity One GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-1**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `PureSound Clarity One ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `PureSound Clarit
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.1dB.
+When using independent subset of filters, apply preamp of **--0.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of --0.1dB.
 | Peaking | 303 Hz   | 1.03 | -3.2 dB  |
 | Peaking | 6215 Hz  | 1.81 | -11.7 dB |
 | Peaking | 16855 Hz | 3.47 | -3.8 dB  |
-| Peaking | 1866 Hz  | 2.84 | -2.1 dB  |
-| Peaking | 8086 Hz  | 5.4  | 2.4 dB   |
-| Peaking | 10183 Hz | 3.27 | -3.6 dB  |
-| Peaking | 11882 Hz | 2.06 | 2.4 dB   |
-| Peaking | 18180 Hz | 3.03 | -0.6 dB  |
+| Peaking | 1867 Hz  | 2.84 | -2.1 dB  |
+| Peaking | 8094 Hz  | 5.39 | 2.4 dB   |
+| Peaking | 10159 Hz | 3.26 | -3.5 dB  |
+| Peaking | 11966 Hz | 1.94 | 2.3 dB   |
+| Peaking | 16089 Hz | 2.99 | -0.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/PureSound%20Clarity%20One/PureSound%20Clarity%20One.png)

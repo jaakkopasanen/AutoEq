@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 4.8; 28 2.2; 31 3.2; 34 5.4; 37 6.0; 41 5.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`SkullCandy SkullCrushers Max Bass GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `SkullCandy SkullCrushers Max Bass ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `SkullCandy Skull
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.4dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 42 Hz   | 0.56 | 8.1 dB   |
-| Peaking | 86 Hz   | 2.26 | -27.5 dB |
-| Peaking | 163 Hz  | 1.02 | 10.2 dB  |
-| Peaking | 3044 Hz | 4.86 | 6.7 dB   |
-| Peaking | 5479 Hz | 2.83 | 6.9 dB   |
-| Peaking | 28 Hz   | 5.02 | -1.1 dB  |
-| Peaking | 63 Hz   | 9.13 | 3.0 dB   |
-| Peaking | 2057 Hz | 2.94 | -5.8 dB  |
-| Peaking | 2607 Hz | 4.88 | 4.2 dB   |
-| Peaking | 9161 Hz | 5.52 | -3.2 dB  |
+| Peaking | 42 Hz   | 0.57 | 7.9 dB   |
+| Peaking | 86 Hz   | 2.3  | -27.1 dB |
+| Peaking | 163 Hz  | 1.03 | 10.1 dB  |
+| Peaking | 3040 Hz | 4.85 | 6.7 dB   |
+| Peaking | 5480 Hz | 2.83 | 6.9 dB   |
+| Peaking | 21 Hz   | 3    | 2.4 dB   |
+| Peaking | 96 Hz   | 6.15 | -1.3 dB  |
+| Peaking | 2050 Hz | 2.91 | -5.9 dB  |
+| Peaking | 2584 Hz | 4.65 | 4.2 dB   |
+| Peaking | 9230 Hz | 5.5  | -3.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/SkullCandy%20SkullCrushers%20Max%20Bass/SkullCandy%20SkullCrushers%20Max%20Bass.png)

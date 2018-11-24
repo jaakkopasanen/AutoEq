@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.3; 25 2.3; 28 2.2; 31 2.1; 34 2.0; 37 1.8; 41 1.7; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado GR8 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado GR8 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado GR8 Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 26 Hz   |  0.6  | 2.5 dB  |
-| Peaking | 203 Hz  |  0.78 | -3.1 dB |
-| Peaking | 3213 Hz |  2.27 | 11.3 dB |
-| Peaking | 3517 Hz |  0.64 | -4.8 dB |
-| Peaking | 5532 Hz |  3.23 | 8.7 dB  |
-| Peaking | 1053 Hz |  1.31 | 1.4 dB  |
-| Peaking | 2041 Hz |  1.11 | -1.3 dB |
-| Peaking | 2772 Hz | 10.11 | 2.7 dB  |
-| Peaking | 7074 Hz |  2.37 | 2.9 dB  |
-| Peaking | 7189 Hz |  5.86 | -5.9 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 26 Hz   | 0.6  | 2.4 dB  |
+| Peaking | 203 Hz  | 0.77 | -3.1 dB |
+| Peaking | 3232 Hz | 2.27 | 11.2 dB |
+| Peaking | 3492 Hz | 0.64 | -4.8 dB |
+| Peaking | 5508 Hz | 3.23 | 8.7 dB  |
+| Peaking | 1019 Hz | 0.82 | 4.0 dB  |
+| Peaking | 1247 Hz | 0.48 | -3.1 dB |
+| Peaking | 2789 Hz | 8.98 | 3.0 dB  |
+| Peaking | 6994 Hz | 2.32 | 3.2 dB  |
+| Peaking | 7213 Hz | 5.83 | -6.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20GR8/Grado%20GR8.png)

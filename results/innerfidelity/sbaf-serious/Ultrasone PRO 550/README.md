@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.4; 34 4.5; 37 3.8; 41 3.0; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultrasone PRO 550 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone PRO 550 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 20 Hz    | 0.57 | 6.2 dB  |
-| Peaking | 233 Hz   | 1.17 | 6.4 dB  |
-| Peaking | 2252 Hz  | 2.53 | 3.6 dB  |
+| Peaking | 20 Hz    | 0.58 | 6.2 dB  |
+| Peaking | 232 Hz   | 1.17 | 6.4 dB  |
+| Peaking | 2250 Hz  | 2.53 | 3.6 dB  |
 | Peaking | 4626 Hz  | 2.52 | 5.4 dB  |
-| Peaking | 6142 Hz  | 4.51 | 4.4 dB  |
-| Peaking | 458 Hz   | 3.53 | -1.6 dB |
-| Peaking | 648 Hz   | 6.49 | 2.6 dB  |
-| Peaking | 1572 Hz  | 7.53 | -1.7 dB |
-| Peaking | 8769 Hz  | 4.5  | -1.4 dB |
-| Peaking | 17639 Hz | 4.31 | -2.3 dB |
+| Peaking | 6144 Hz  | 4.53 | 4.4 dB  |
+| Peaking | 316 Hz   | 5.14 | 2.6 dB  |
+| Peaking | 422 Hz   | 1.5  | -1.7 dB |
+| Peaking | 649 Hz   | 5.31 | 2.9 dB  |
+| Peaking | 1573 Hz  | 8.02 | -1.7 dB |
+| Peaking | 18456 Hz | 0.33 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20PRO%20550/Ultrasone%20PRO%20550.png)

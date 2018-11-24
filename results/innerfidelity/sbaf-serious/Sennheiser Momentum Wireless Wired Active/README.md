@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.8; 25 2.4; 28 2.3; 31 2.6; 34 3.0; 37 3.3; 41 3.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser Momentum Wireless Wired Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum Wireless Wired Active ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momen
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 1946 Hz |  1.26 | -8.3 dB |
 | Peaking | 3464 Hz |  1.62 | 8.7 dB  |
 | Peaking | 6072 Hz |  4.98 | 5.3 dB  |
-| Peaking | 104 Hz  |  3.98 | -0.1 dB |
-| Peaking | 4542 Hz |  6.53 | 2.5 dB  |
-| Peaking | 4900 Hz | 14.47 | -5.0 dB |
-| Peaking | 7974 Hz |  7.98 | -0.9 dB |
-| Peaking | 9495 Hz |  3.49 | -0.5 dB |
+| Peaking | 105 Hz  |  3.88 | -0.1 dB |
+| Peaking | 4527 Hz |  6.9  | 2.5 dB  |
+| Peaking | 4899 Hz | 14.8  | -4.9 dB |
+| Peaking | 7913 Hz |  8.17 | -0.9 dB |
+| Peaking | 9560 Hz |  3.55 | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20Wireless%20Wired%20Active/Sennheiser%20Momentum%20Wireless%20Wired%20Active.png)

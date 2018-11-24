@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.9; 41 5.5; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic Custom Pro One switch position 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic Custom Pro One switch position 1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 39 Hz   | 0.41 | 8.6 dB   |
-| Peaking | 84 Hz   | 2.22 | 9.9 dB   |
-| Peaking | 125 Hz  | 0.54 | -11.0 dB |
-| Peaking | 2060 Hz | 2.82 | -4.3 dB  |
-| Peaking | 4993 Hz | 1.72 | 6.8 dB   |
-| Peaking | 161 Hz  | 7.15 | 2.3 dB   |
-| Peaking | 192 Hz  | 0.89 | -0.6 dB  |
-| Peaking | 926 Hz  | 2.02 | 1.0 dB   |
-| Peaking | 6422 Hz | 4.71 | 2.2 dB   |
-| Peaking | 8397 Hz | 1.94 | -2.0 dB  |
+| Peaking | 40 Hz   | 0.41 | 8.6 dB   |
+| Peaking | 84 Hz   | 2.21 | 10.0 dB  |
+| Peaking | 125 Hz  | 0.55 | -11.1 dB |
+| Peaking | 2056 Hz | 2.82 | -4.3 dB  |
+| Peaking | 4995 Hz | 1.72 | 6.8 dB   |
+| Peaking | 162 Hz  | 6.71 | 2.5 dB   |
+| Peaking | 170 Hz  | 0.9  | -0.7 dB  |
+| Peaking | 928 Hz  | 2.01 | 1.0 dB   |
+| Peaking | 6452 Hz | 4.72 | 2.2 dB   |
+| Peaking | 8410 Hz | 1.95 | -2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20Custom%20Pro%20One%20switch%20position%201/Beyerdynamic%20Custom%20Pro%20One%20switch%20position%201.png)

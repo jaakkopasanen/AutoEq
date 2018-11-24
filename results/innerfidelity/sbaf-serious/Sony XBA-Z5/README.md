@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.7; 23 -3.9; 25 -4.0; 28 -4.2; 31 -4.4; 34 -4.5; 37 -4.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.0dB` and instead set Global volume in the UI for both channels to **-59**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony XBA-Z5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-59**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony XBA-Z5 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony XBA-Z5 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -31,6 +32,6 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 1540 Hz  | 4.09 | -1.1 dB |
 | Peaking | 4483 Hz  | 1.41 | 1.7 dB  |
 | Peaking | 4630 Hz  | 4.26 | -4.3 dB |
-| Peaking | 22704 Hz | 0.45 | -0.5 dB |
+| Peaking | 22705 Hz | 0.45 | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20XBA-Z5/Sony%20XBA-Z5.png)

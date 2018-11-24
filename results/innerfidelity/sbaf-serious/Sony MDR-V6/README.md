@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.8; 41 5.1; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-V6 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-V6 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 13 Hz    | 0.21 | 6.6 dB  |
-| Peaking | 2958 Hz  | 1    | -4.6 dB |
-| Peaking | 4676 Hz  | 4.69 | -5.0 dB |
-| Peaking | 5974 Hz  | 3.44 | 7.2 dB  |
-| Peaking | 9541 Hz  | 4    | -8.2 dB |
-| Peaking | 201 Hz   | 3.26 | 1.5 dB  |
-| Peaking | 532 Hz   | 2.18 | -1.4 dB |
-| Peaking | 1251 Hz  | 0.99 | 0.8 dB  |
-| Peaking | 1622 Hz  | 3.68 | -1.3 dB |
-| Peaking | 11710 Hz | 7.27 | 1.7 dB  |
+| Peaking | 2963 Hz  | 1    | -4.6 dB |
+| Peaking | 4673 Hz  | 4.82 | -4.9 dB |
+| Peaking | 5983 Hz  | 3.48 | 7.2 dB  |
+| Peaking | 9545 Hz  | 4.02 | -8.2 dB |
+| Peaking | 62 Hz    | 3.18 | -0.9 dB |
+| Peaking | 200 Hz   | 3.29 | 1.5 dB  |
+| Peaking | 519 Hz   | 2.47 | -1.3 dB |
+| Peaking | 1023 Hz  | 4.24 | 0.8 dB  |
+| Peaking | 11636 Hz | 6.99 | 1.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-V6/Sony%20MDR-V6.png)

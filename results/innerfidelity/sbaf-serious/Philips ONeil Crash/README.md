@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.2; 23 -8.5; 25 -8.8; 28 -9.1; 31 -9.4; 34 -9.6; 37 -9.8; 41 -10
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-49**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips ONeil Crash GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-49**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips ONeil Crash ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips ONeil Cr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 36 Hz   | 0.24 | -8.4 dB |
+| Peaking | 37 Hz   | 0.24 | -8.4 dB |
 | Peaking | 180 Hz  | 0.53 | -7.9 dB |
 | Peaking | 2553 Hz | 2.6  | -8.1 dB |
 | Peaking | 8599 Hz | 4.47 | -7.0 dB |
-| Peaking | 1037 Hz | 2.78 | 1.7 dB  |
-| Peaking | 1839 Hz | 3.99 | -1.3 dB |
-| Peaking | 3129 Hz | 8.03 | -2.2 dB |
-| Peaking | 5408 Hz | 3.93 | 6.1 dB  |
-| Peaking | 7299 Hz | 5.48 | -2.7 dB |
+| Peaking | 1036 Hz | 2.74 | 1.7 dB  |
+| Peaking | 1838 Hz | 3.98 | -1.3 dB |
+| Peaking | 3140 Hz | 8.02 | -2.2 dB |
+| Peaking | 5421 Hz | 3.93 | 6.1 dB  |
+| Peaking | 7315 Hz | 5.48 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20ONeil%20Crash/Philips%20ONeil%20Crash.png)

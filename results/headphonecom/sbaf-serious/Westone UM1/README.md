@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.8; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Westone UM1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Westone UM1 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Westone UM1 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 711 Hz  | 1.9  | 1.2 dB  |
 | Peaking | 1712 Hz | 1.61 | -3.7 dB |
 | Peaking | 3955 Hz | 0.95 | 7.2 dB  |
-| Peaking | 3030 Hz | 5.52 | 1.2 dB  |
-| Peaking | 4048 Hz | 3.52 | -1.1 dB |
-| Peaking | 6285 Hz | 2.59 | 5.0 dB  |
-| Peaking | 7379 Hz | 1.52 | -3.7 dB |
+| Peaking | 3029 Hz | 5.52 | 1.2 dB  |
+| Peaking | 4054 Hz | 3.51 | -1.1 dB |
+| Peaking | 6268 Hz | 2.6  | 4.9 dB  |
+| Peaking | 7407 Hz | 1.53 | -3.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Westone%20UM1/Westone%20UM1.png)

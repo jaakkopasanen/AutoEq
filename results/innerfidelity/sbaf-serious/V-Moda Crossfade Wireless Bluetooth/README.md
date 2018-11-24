@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.4; 25 0.5; 28 -0.8; 31 -1.8; 34 -2.5; 37 -3.0; 41 -3.6; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`V-Moda Crossfade Wireless Bluetooth GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda Crossfade Wireless Bluetooth ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `V-Moda Crossfade
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.3dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 48 Hz   | 2.05 | -2.1 dB |
+| Peaking | 47 Hz   | 2.05 | -2.1 dB |
 | Peaking | 148 Hz  | 0.52 | -7.2 dB |
-| Peaking | 420 Hz  | 1.15 | 8.9 dB  |
-| Peaking | 5748 Hz | 3.28 | 7.4 dB  |
-| Peaking | 9756 Hz | 4.06 | -5.6 dB |
-| Peaking | 446 Hz  | 6.05 | -1.5 dB |
-| Peaking | 670 Hz  | 1.91 | 1.9 dB  |
-| Peaking | 1373 Hz | 1.27 | -2.2 dB |
-| Peaking | 3664 Hz | 4.69 | -4.6 dB |
-| Peaking | 4840 Hz | 8.23 | 3.8 dB  |
+| Peaking | 421 Hz  | 1.15 | 8.9 dB  |
+| Peaking | 5746 Hz | 3.28 | 7.4 dB  |
+| Peaking | 9780 Hz | 4.06 | -5.6 dB |
+| Peaking | 19 Hz   | 2.79 | 3.5 dB  |
+| Peaking | 684 Hz  | 3.23 | 1.9 dB  |
+| Peaking | 1413 Hz | 1.36 | -2.1 dB |
+| Peaking | 3657 Hz | 4.57 | -4.6 dB |
+| Peaking | 4818 Hz | 7.81 | 3.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/V-Moda%20Crossfade%20Wireless%20Bluetooth/V-Moda%20Crossfade%20Wireless%20Bluetooth.png)

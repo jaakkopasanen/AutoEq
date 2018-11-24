@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.9; 25 2.4; 28 1.7; 31 1.0; 34 0.5; 37 -0.0; 41 -0.6; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.0dB` and instead set Global volume in the UI for both channels to **-39**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 990 250 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-39**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 990 250 Ohm ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.0dB.
+When using independent subset of filters, apply preamp of **-4.0dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -4.0dB.
 | Peaking | 19068 Hz |  1.58 | -6.7 dB |
 | Peaking | 762 Hz   |  2.32 | 2.1 dB  |
 | Peaking | 1660 Hz  |  1.53 | -1.8 dB |
-| Peaking | 5231 Hz  | 15.06 | 1.8 dB  |
-| Peaking | 9170 Hz  |  9.53 | -3.0 dB |
-| Peaking | 10810 Hz |  7.01 | 3.2 dB  |
+| Peaking | 5217 Hz  | 15    | 1.8 dB  |
+| Peaking | 9208 Hz  |  9.53 | -3.0 dB |
+| Peaking | 10856 Hz |  7.01 | 3.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20990%20250%20Ohm/Beyerdynamic%20DT%20990%20250%20Ohm.png)

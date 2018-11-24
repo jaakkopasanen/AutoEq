@@ -9,16 +9,17 @@ GraphicEQ: 21 -1.1; 23 -1.4; 25 -1.8; 28 -2.2; 31 -2.5; 34 -2.8; 37 -3.0; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`1MORE Triple Driver LTNG GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `1MORE Triple Driver LTNG ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.9dB.
+When using independent subset of filters, apply preamp of **-3.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -3.9dB.
 | Peaking | 4255 Hz  | 4.36 | -6.7 dB  |
 | Peaking | 7484 Hz  | 0.79 | 9.3 dB   |
 | Peaking | 16190 Hz | 1.46 | -34.1 dB |
-| Peaking | 2263 Hz  | 2.03 | -2.2 dB  |
-| Peaking | 5838 Hz  | 4.43 | 4.1 dB   |
-| Peaking | 7843 Hz  | 2.96 | -4.3 dB  |
+| Peaking | 2263 Hz  | 2.02 | -2.2 dB  |
+| Peaking | 5831 Hz  | 4.43 | 4.1 dB   |
+| Peaking | 7817 Hz  | 2.96 | -4.3 dB  |
 | Peaking | 11650 Hz | 1.69 | 5.2 dB   |
-| Peaking | 14411 Hz | 2.64 | -6.5 dB  |
+| Peaking | 14435 Hz | 2.66 | -6.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/1MORE%20Triple%20Driver%20LTNG/1MORE%20Triple%20Driver%20LTNG.png)

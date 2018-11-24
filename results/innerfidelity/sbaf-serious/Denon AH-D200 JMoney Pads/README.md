@@ -9,27 +9,28 @@ GraphicEQ: 21 0.0; 23 5.9; 25 5.4; 28 4.6; 31 3.9; 34 3.5; 37 3.3; 41 3.1; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-D200 JMoney Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D200 JMoney Pads ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 1.12 | 5.7 dB  |
-| Peaking | 67 Hz   | 0.93 | 2.5 dB  |
-| Peaking | 307 Hz  | 0.78 | 1.8 dB  |
-| Peaking | 5150 Hz | 3.5  | -2.1 dB |
-| Peaking | 997 Hz  | 1.44 | -1.9 dB |
-| Peaking | 1226 Hz | 1.53 | 2.3 dB  |
-| Peaking | 3203 Hz | 2.13 | 2.9 dB  |
-| Peaking | 3553 Hz | 2.4  | -0.8 dB |
-| Peaking | 3887 Hz | 3.99 | -2.4 dB |
+| Peaking | 21 Hz   | 1.12 | 5.7 dB  |
+| Peaking | 66 Hz   | 0.91 | 2.6 dB  |
+| Peaking | 308 Hz  | 0.75 | 1.8 dB  |
+| Peaking | 5151 Hz | 3.5  | -2.1 dB |
+| Peaking | 677 Hz  | 6.52 | -1.5 dB |
+| Peaking | 3029 Hz | 0.87 | 1.8 dB  |
+| Peaking | 3992 Hz | 4.15 | -2.9 dB |
+| Peaking | 6265 Hz | 9.86 | 2.6 dB  |
+| Peaking | 7366 Hz | 3.81 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D200%20JMoney%20Pads/Denon%20AH-D200%20JMoney%20Pads.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Polk Audio UltraFit 2000 sample B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Polk Audio UltraFit 2000 sample B ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Polk Audio Ultra
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 39 Hz   | 0.42 | 7.8 dB  |
-| Peaking | 104 Hz  | 0.82 | -7.0 dB |
-| Peaking | 597 Hz  | 1.88 | 5.6 dB  |
-| Peaking | 2941 Hz | 2.9  | 5.8 dB  |
+| Peaking | 103 Hz  | 0.82 | -7.0 dB |
+| Peaking | 596 Hz  | 1.88 | 5.6 dB  |
+| Peaking | 2940 Hz | 2.9  | 5.8 dB  |
 | Peaking | 5115 Hz | 1.84 | 6.4 dB  |
-| Peaking | 374 Hz  | 2.65 | 0.9 dB  |
-| Peaking | 1633 Hz | 2.25 | -3.5 dB |
-| Peaking | 2404 Hz | 4.52 | 2.5 dB  |
-| Peaking | 6423 Hz | 5.45 | 3.0 dB  |
-| Peaking | 7684 Hz | 2.01 | -1.9 dB |
+| Peaking | 375 Hz  | 2.7  | 0.9 dB  |
+| Peaking | 1629 Hz | 2.25 | -3.5 dB |
+| Peaking | 2378 Hz | 4.53 | 2.4 dB  |
+| Peaking | 6453 Hz | 5.46 | 3.0 dB  |
+| Peaking | 7681 Hz | 2.01 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Polk%20Audio%20UltraFit%202000%20sample%20B/Polk%20Audio%20UltraFit%202000%20sample%20B.png)

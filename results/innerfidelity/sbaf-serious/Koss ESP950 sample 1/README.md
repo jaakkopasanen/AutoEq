@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss ESP950 sample 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss ESP950 sample 1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 31 Hz   | 0.31 | 6.1 dB  |
-| Peaking | 76 Hz   | 2.92 | 1.8 dB  |
-| Peaking | 379 Hz  | 0.94 | 2.0 dB  |
+| Peaking | 30 Hz   | 0.32 | 6.1 dB  |
+| Peaking | 74 Hz   | 2.92 | 1.8 dB  |
+| Peaking | 383 Hz  | 0.94 | 2.0 dB  |
 | Peaking | 2361 Hz | 5.52 | 5.3 dB  |
-| Peaking | 4759 Hz | 1.72 | 6.6 dB  |
-| Peaking | 108 Hz  | 4.99 | -0.7 dB |
-| Peaking | 687 Hz  | 3.01 | 0.7 dB  |
-| Peaking | 1447 Hz | 3.53 | -2.4 dB |
-| Peaking | 6508 Hz | 4.32 | 2.5 dB  |
-| Peaking | 8114 Hz | 1.99 | -1.8 dB |
+| Peaking | 4760 Hz | 1.72 | 6.6 dB  |
+| Peaking | 1436 Hz | 2.09 | -3.9 dB |
+| Peaking | 1524 Hz | 0.89 | 1.6 dB  |
+| Peaking | 4888 Hz | 6.72 | -1.4 dB |
+| Peaking | 6447 Hz | 2.6  | 2.9 dB  |
+| Peaking | 7930 Hz | 1.93 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20ESP950%20sample%201/Koss%20ESP950%20sample%201.png)

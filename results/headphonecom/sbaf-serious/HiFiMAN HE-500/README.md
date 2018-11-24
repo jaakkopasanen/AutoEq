@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.4; 25 2.1; 28 1.7; 31 1.4; 34 1.2; 37 1.1; 41 1.1; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.1dB` and instead set Global volume in the UI for both channels to **-30**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiFiMAN HE-500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-30**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-500 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-500 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.7dB.
+When using independent subset of filters, apply preamp of **-2.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 20 Hz    | 0.9  | 2.7 dB  |
+| Peaking | 20 Hz    | 0.93 | 2.6 dB  |
 | Peaking | 2237 Hz  | 1.61 | 2.3 dB  |
-| Peaking | 4655 Hz  | 4.28 | -3.2 dB |
-| Peaking | 5464 Hz  | 4.15 | 3.6 dB  |
-| Peaking | 9157 Hz  | 5.23 | -6.7 dB |
-| Peaking | 54 Hz    | 2.13 | 0.6 dB  |
-| Peaking | 327 Hz   | 0.47 | -1.1 dB |
-| Peaking | 778 Hz   | 7.97 | 1.3 dB  |
-| Peaking | 1874 Hz  | 9.33 | 1.0 dB  |
-| Peaking | 10937 Hz | 8.19 | 1.0 dB  |
+| Peaking | 4628 Hz  | 4.28 | -3.2 dB |
+| Peaking | 5414 Hz  | 4.17 | 3.6 dB  |
+| Peaking | 9092 Hz  | 5.24 | -6.7 dB |
+| Peaking | 53 Hz    | 1.79 | 0.6 dB  |
+| Peaking | 322 Hz   | 0.48 | -1.1 dB |
+| Peaking | 771 Hz   | 8.04 | 1.2 dB  |
+| Peaking | 1876 Hz  | 9.56 | 1.0 dB  |
+| Peaking | 19651 Hz | 2.29 | -5.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/HiFiMAN%20HE-500/HiFiMAN%20HE-500.png)

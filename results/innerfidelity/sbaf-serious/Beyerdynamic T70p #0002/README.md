@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.6; 25 4.3; 28 4.0; 31 3.8; 34 3.6; 37 3.4; 41 3.2; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic T70p #0002 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T70p #0002 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T70
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.9dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 27 Hz    | 0.66 | 4.5 dB   |
-| Peaking | 3348 Hz  | 1.42 | 4.7 dB   |
-| Peaking | 5628 Hz  | 4.52 | 4.1 dB   |
-| Peaking | 6164 Hz  | 4.09 | 3.5 dB   |
-| Peaking | 8724 Hz  | 2.37 | -11.0 dB |
-| Peaking | 146 Hz   | 2.73 | -1.9 dB  |
-| Peaking | 380 Hz   | 4.06 | -1.5 dB  |
-| Peaking | 1908 Hz  | 1.89 | -2.6 dB  |
-| Peaking | 2340 Hz  | 4.32 | 4.0 dB   |
-| Peaking | 12227 Hz | 5.23 | 2.1 dB   |
+| Peaking | 3347 Hz  | 1.42 | 4.7 dB   |
+| Peaking | 5629 Hz  | 4.48 | 4.1 dB   |
+| Peaking | 6159 Hz  | 4.06 | 3.5 dB   |
+| Peaking | 8719 Hz  | 2.37 | -11.0 dB |
+| Peaking | 146 Hz   | 2.67 | -1.9 dB  |
+| Peaking | 384 Hz   | 4.05 | -1.5 dB  |
+| Peaking | 1902 Hz  | 1.94 | -2.5 dB  |
+| Peaking | 2360 Hz  | 4.37 | 3.9 dB   |
+| Peaking | 12242 Hz | 5.23 | 2.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T70p%20#0002/Beyerdynamic%20T70p%20#0002.png)

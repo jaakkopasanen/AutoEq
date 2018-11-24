@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss ESP950 sample 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss ESP950 sample 2 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Koss ESP950 samp
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,8 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 1494 Hz | 2.21 | -3.1 dB |
 | Peaking | 2262 Hz | 2.76 | 4.6 dB  |
 | Peaking | 4756 Hz | 1.67 | 6.7 dB  |
-| Peaking | 83 Hz   | 3.47 | 1.1 dB  |
-| Peaking | 116 Hz  | 3.2  | -0.9 dB |
-| Peaking | 6355 Hz | 5.73 | 2.0 dB  |
-| Peaking | 9126 Hz | 3.81 | -3.2 dB |
+| Peaking | 83 Hz   | 5.58 | 1.0 dB  |
+| Peaking | 6348 Hz | 5.74 | 2.0 dB  |
+| Peaking | 9119 Hz | 3.84 | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20ESP950%20sample%202/Koss%20ESP950%20sample%202.png)

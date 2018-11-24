@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Etymotic MC5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Etymotic MC5 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 1641 Hz | 1.71 | -6.8 dB |
 | Peaking | 3705 Hz | 1.89 | 6.2 dB  |
 | Peaking | 5780 Hz | 3.16 | 5.3 dB  |
-| Peaking | 1063 Hz | 1.82 | 0.6 dB  |
-| Peaking | 1091 Hz | 3.34 | -0.9 dB |
-| Peaking | 6583 Hz | 8.23 | 2.0 dB  |
-| Peaking | 7828 Hz | 2.39 | -1.3 dB |
+| Peaking | 1064 Hz | 1.35 | 0.3 dB  |
+| Peaking | 1115 Hz | 3.78 | -0.6 dB |
+| Peaking | 6628 Hz | 8.23 | 2.0 dB  |
+| Peaking | 7841 Hz | 2.39 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Etymotic%20MC5/Etymotic%20MC5.png)

@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-M10 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M10 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 410 Hz  |  2.15 | 1.1 dB  |
 | Peaking | 2786 Hz |  0.95 | 6.1 dB  |
 | Peaking | 5420 Hz |  2.34 | 4.6 dB  |
-| Peaking | 973 Hz  |  3.51 | -1.9 dB |
-| Peaking | 1114 Hz | 10.53 | 4.0 dB  |
-| Peaking | 6464 Hz |  6.55 | 2.1 dB  |
-| Peaking | 6569 Hz |  4.37 | 0.5 dB  |
-| Peaking | 7852 Hz |  2.06 | -1.9 dB |
+| Peaking | 974 Hz  |  3.5  | -1.9 dB |
+| Peaking | 1109 Hz | 10.46 | 4.0 dB  |
+| Peaking | 6570 Hz |  6.55 | 2.2 dB  |
+| Peaking | 6616 Hz |  4.34 | 0.4 dB  |
+| Peaking | 7883 Hz |  2.06 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audio%20Technica%20ATH-M10/Audio%20Technica%20ATH-M10.png)

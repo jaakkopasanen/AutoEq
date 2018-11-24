@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.3; 23 -10.2; 25 -10.2; 28 -10.1; 31 -9.9; 34 -9.8; 37 -9.7; 41
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.5dB` and instead set Global volume in the UI for both channels to **-35**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Read and Heath Acoustics MA-350 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Read and Heath Acoustics MA-350 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Read and Heath A
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.1dB.
+When using independent subset of filters, apply preamp of **-3.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|

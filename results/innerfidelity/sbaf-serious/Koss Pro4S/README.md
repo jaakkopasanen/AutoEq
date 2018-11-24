@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.8; 25 2.3; 28 1.6; 31 1.1; 34 0.7; 37 0.4; 41 0.0; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss Pro4S GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss Pro4S ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Koss Pro4S Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 241 Hz  |  2.2  | 5.4 dB  |
 | Peaking | 2786 Hz |  1.18 | -4.3 dB |
 | Peaking | 5017 Hz |  1.74 | 8.2 dB  |
-| Peaking | 182 Hz  | 13.3  | 1.4 dB  |
-| Peaking | 416 Hz  |  1.23 | -0.3 dB |
-| Peaking | 5301 Hz |  7.82 | -1.6 dB |
-| Peaking | 6524 Hz |  2.87 | 3.5 dB  |
-| Peaking | 7458 Hz |  2.19 | -2.9 dB |
+| Peaking | 183 Hz  | 13.62 | 1.4 dB  |
+| Peaking | 422 Hz  |  1.34 | -0.3 dB |
+| Peaking | 5240 Hz |  7.92 | -1.5 dB |
+| Peaking | 6469 Hz |  3.03 | 3.3 dB  |
+| Peaking | 7560 Hz |  2.24 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20Pro4S/Koss%20Pro4S.png)

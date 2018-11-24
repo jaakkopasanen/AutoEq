@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.3; 25 3.3; 28 3.2; 31 3.1; 34 3.0; 37 2.9; 41 2.7; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado GR8 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado GR8 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado GR8 Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.3dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 22 Hz    | 0.65 | 3.3 dB  |
-| Peaking | 53 Hz    | 1.2  | 1.3 dB  |
-| Peaking | 223 Hz   | 0.64 | -2.2 dB |
+| Peaking | 23 Hz    | 0.66 | 3.2 dB  |
+| Peaking | 53 Hz    | 1.19 | 1.4 dB  |
+| Peaking | 224 Hz   | 0.65 | -2.2 dB |
 | Peaking | 3167 Hz  | 4.32 | 7.2 dB  |
-| Peaking | 21748 Hz | 2.17 | -0.2 dB |
-| Peaking | 778 Hz   | 2.89 | 1.1 dB  |
-| Peaking | 1723 Hz  | 2.14 | -1.4 dB |
-| Peaking | 3622 Hz  | 7.79 | 3.7 dB  |
-| Peaking | 4067 Hz  | 4.7  | -3.5 dB |
-| Peaking | 5163 Hz  | 8.66 | 2.4 dB  |
+| Peaking | 21749 Hz | 2.17 | -0.2 dB |
+| Peaking | 779 Hz   | 2.94 | 1.1 dB  |
+| Peaking | 1722 Hz  | 2.15 | -1.4 dB |
+| Peaking | 3614 Hz  | 7.98 | 3.7 dB  |
+| Peaking | 4066 Hz  | 4.68 | -3.5 dB |
+| Peaking | 5159 Hz  | 8.65 | 2.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20GR8/Grado%20GR8.png)

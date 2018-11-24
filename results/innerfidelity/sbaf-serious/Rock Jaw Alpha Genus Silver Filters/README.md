@@ -9,28 +9,29 @@ GraphicEQ: 21 -11.6; 23 -11.8; 25 -11.8; 28 -11.9; 31 -11.9; 34 -11.8; 37 -11.8;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.6dB` and instead set Global volume in the UI for both channels to **-26**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Rock Jaw Alpha Genus Silver Filters GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-26**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Rock Jaw Alpha Genus Silver Filters ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.5dB.
+When using independent subset of filters, apply preamp of **-0.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 31 Hz    | 0.1  | -11.8 dB |
-| Peaking | 703 Hz   | 0.85 | 2.7 dB   |
+| Peaking | 704 Hz   | 0.85 | 2.7 dB   |
 | Peaking | 2180 Hz  | 1.69 | -6.3 dB  |
-| Peaking | 4963 Hz  | 5.59 | -11.0 dB |
+| Peaking | 4954 Hz  | 5.59 | -11.0 dB |
 | Peaking | 21998 Hz | 1.27 | -1.9 dB  |
-| Peaking | 3592 Hz  | 3.84 | 5.4 dB   |
-| Peaking | 3696 Hz  | 1.68 | -3.2 dB  |
-| Peaking | 5718 Hz  | 6.59 | -2.5 dB  |
-| Peaking | 6637 Hz  | 3.13 | 4.2 dB   |
-| Peaking | 10668 Hz | 3.72 | -3.4 dB  |
+| Peaking | 2982 Hz  | 2.99 | -2.1 dB  |
+| Peaking | 3411 Hz  | 4.3  | 3.5 dB   |
+| Peaking | 5700 Hz  | 3.48 | -2.8 dB  |
+| Peaking | 6640 Hz  | 3.61 | 4.6 dB   |
+| Peaking | 10679 Hz | 3.82 | -3.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Rock%20Jaw%20Alpha%20Genus%20Silver%20Filters/Rock%20Jaw%20Alpha%20Genus%20Silver%20Filters.png)

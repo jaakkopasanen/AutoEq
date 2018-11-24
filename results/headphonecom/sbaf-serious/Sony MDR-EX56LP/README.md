@@ -9,8 +9,9 @@ GraphicEQ: 21 -7.6; 23 -7.9; 25 -8.3; 28 -8.7; 31 -9.0; 34 -9.3; 37 -9.5; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-EX56LP GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-EX56LP ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-EX56LP 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -7.2dB.
 | Peaking | 153 Hz   | 0.34 | -8.4 dB |
 | Peaking | 2119 Hz  | 1.42 | -8.9 dB |
 | Peaking | 4821 Hz  | 2.53 | 8.4 dB  |
-| Peaking | 862 Hz   | 3.57 | -3.7 dB |
-| Peaking | 985 Hz   | 4.04 | 5.0 dB  |
-| Peaking | 1524 Hz  | 5.08 | -1.1 dB |
-| Peaking | 9858 Hz  | 5.77 | -4.3 dB |
-| Peaking | 16156 Hz | 4.29 | -3.7 dB |
+| Peaking | 866 Hz   | 3.58 | -3.7 dB |
+| Peaking | 981 Hz   | 4.04 | 5.0 dB  |
+| Peaking | 1521 Hz  | 5.08 | -1.1 dB |
+| Peaking | 9824 Hz  | 5.75 | -4.3 dB |
+| Peaking | 16164 Hz | 4.28 | -3.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-EX56LP/Sony%20MDR-EX56LP.png)

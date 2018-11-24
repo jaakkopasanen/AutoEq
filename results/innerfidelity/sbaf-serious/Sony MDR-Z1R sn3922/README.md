@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.2; 23 -4.4; 25 -4.6; 28 -4.8; 31 -4.9; 34 -5.0; 37 -5.0; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-Z1R sn3922 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-Z1R sn3922 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-Z1R sn3
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 29 Hz    | 0.81 | -4.3 dB  |
-| Peaking | 125 Hz   | 0.66 | -6.3 dB  |
-| Peaking | 1872 Hz  | 3.37 | -2.6 dB  |
-| Peaking | 4634 Hz  | 2.02 | 6.3 dB   |
-| Peaking | 9750 Hz  | 4.49 | -11.8 dB |
-| Peaking | 2870 Hz  | 6.79 | 6.1 dB   |
-| Peaking | 3214 Hz  | 4.84 | -7.3 dB  |
-| Peaking | 3780 Hz  | 8.19 | 3.0 dB   |
-| Peaking | 3977 Hz  | 6.65 | 1.1 dB   |
-| Peaking | 11946 Hz | 7.38 | 1.7 dB   |
+| Peaking | 28 Hz    | 0.81 | -4.3 dB  |
+| Peaking | 127 Hz   | 0.66 | -6.3 dB  |
+| Peaking | 1873 Hz  | 3.37 | -2.6 dB  |
+| Peaking | 4632 Hz  | 2.02 | 6.3 dB   |
+| Peaking | 9741 Hz  | 4.49 | -11.8 dB |
+| Peaking | 2857 Hz  | 6.81 | 6.1 dB   |
+| Peaking | 3213 Hz  | 4.89 | -7.3 dB  |
+| Peaking | 3797 Hz  | 8.1  | 3.0 dB   |
+| Peaking | 3983 Hz  | 6.42 | 1.0 dB   |
+| Peaking | 12113 Hz | 7.43 | 1.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-Z1R%20sn3922/Sony%20MDR-Z1R%20sn3922.png)

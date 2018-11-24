@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 880 250 Ohm (old earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 880 250 Ohm (old earpads) ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 60 Hz    |  0.2  | 7.3 dB  |
-| Peaking | 174 Hz   |  0.61 | -5.3 dB |
-| Peaking | 1465 Hz  |  4.86 | 0.4 dB  |
-| Peaking | 4491 Hz  |  3.49 | 3.6 dB  |
-| Peaking | 19077 Hz |  1.63 | -8.2 dB |
-| Peaking | 181 Hz   |  5.16 | 0.2 dB  |
-| Peaking | 5007 Hz  | 10.56 | 1.2 dB  |
-| Peaking | 5255 Hz  |  7.44 | 1.4 dB  |
-| Peaking | 6051 Hz  |  5.22 | -3.3 dB |
-| Peaking | 15001 Hz |  4.09 | 1.5 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 61 Hz    | 0.2  | 7.4 dB  |
+| Peaking | 174 Hz   | 0.6  | -5.4 dB |
+| Peaking | 1465 Hz  | 5.09 | 0.4 dB  |
+| Peaking | 4491 Hz  | 3.49 | 3.6 dB  |
+| Peaking | 19001 Hz | 1.63 | -8.3 dB |
+| Peaking | 182 Hz   | 5.08 | 0.2 dB  |
+| Peaking | 3606 Hz  | 9.48 | 1.4 dB  |
+| Peaking | 5159 Hz  | 9.01 | 2.4 dB  |
+| Peaking | 6081 Hz  | 4.95 | -3.2 dB |
+| Peaking | 15072 Hz | 3.82 | 1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20880%20250%20Ohm%20(old%20earpads)/Beyerdynamic%20DT%20880%20250%20Ohm%20(old%20earpads).png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Santa Cruz Audio SC1000 Passive GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Santa Cruz Audio SC1000 Passive ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Santa Cruz Audio
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.3dB.
 | Peaking | 2509 Hz  | 1.06 | -5.6 dB  |
 | Peaking | 4877 Hz  | 3.12 | -12.7 dB |
 | Peaking | 8607 Hz  | 2.52 | -14.1 dB |
-| Peaking | 2334 Hz  | 3.25 | 1.6 dB   |
-| Peaking | 2966 Hz  | 1.31 | -1.6 dB  |
-| Peaking | 3631 Hz  | 4.81 | 2.2 dB   |
-| Peaking | 10308 Hz | 4.19 | -4.4 dB  |
-| Peaking | 11759 Hz | 1.9  | 3.6 dB   |
+| Peaking | 2343 Hz  | 3.24 | 1.6 dB   |
+| Peaking | 2970 Hz  | 1.3  | -1.6 dB  |
+| Peaking | 3606 Hz  | 4.83 | 2.2 dB   |
+| Peaking | 10237 Hz | 4.22 | -4.3 dB  |
+| Peaking | 11836 Hz | 1.92 | 3.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Santa%20Cruz%20Audio%20SC1000%20Passive/Santa%20Cruz%20Audio%20SC1000%20Passive.png)

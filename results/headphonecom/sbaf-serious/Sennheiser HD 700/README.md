@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.1; 25 3.5; 28 2.9; 31 2.3; 34 1.8; 37 1.4; 41 1.0; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.4dB` and instead set Global volume in the UI for both channels to **-53**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 700 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-53**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 700 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.0dB.
+When using independent subset of filters, apply preamp of **-4.9dB**.
 
-| Type    | Fc       |     Q | Gain     |
-|:--------|:---------|:------|:---------|
-| Peaking | 15 Hz    |  0.64 | 6.0 dB   |
-| Peaking | 196 Hz   |  0.41 | -3.7 dB  |
-| Peaking | 3658 Hz  |  0.81 | 11.9 dB  |
-| Peaking | 4749 Hz  |  1.08 | -11.7 dB |
-| Peaking | 18942 Hz |  1.58 | -8.4 dB  |
-| Peaking | 4490 Hz  | 11.04 | -2.0 dB  |
-| Peaking | 4964 Hz  |  6.34 | -1.1 dB  |
-| Peaking | 5887 Hz  |  4.3  | 4.5 dB   |
-| Peaking | 6575 Hz  |  6.8  | -7.8 dB  |
-| Peaking | 9246 Hz  |  0.64 | 0.8 dB   |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 15 Hz    | 0.67 | 5.8 dB   |
+| Peaking | 194 Hz   | 0.41 | -3.7 dB  |
+| Peaking | 3613 Hz  | 0.81 | 10.7 dB  |
+| Peaking | 4788 Hz  | 1.12 | -10.5 dB |
+| Peaking | 19032 Hz | 1.57 | -8.4 dB  |
+| Peaking | 3030 Hz  | 7.07 | -3.1 dB  |
+| Peaking | 3051 Hz  | 2.98 | 1.7 dB   |
+| Peaking | 5834 Hz  | 8.31 | 3.9 dB   |
+| Peaking | 6564 Hz  | 8.22 | -6.2 dB  |
+| Peaking | 11317 Hz | 1.05 | 0.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20700/Sennheiser%20HD%20700.png)

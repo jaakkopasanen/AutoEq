@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.3; 23 -3.6; 25 -3.8; 28 -4.1; 31 -4.3; 34 -4.5; 37 -4.7; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AudioFly AF140 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AudioFly AF140 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `AudioFly AF140 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.3dB.
 | Peaking | 2114 Hz  | 1.73 | -7.0 dB |
 | Peaking | 3737 Hz  | 1.87 | 6.3 dB  |
 | Peaking | 4515 Hz  | 5.98 | 2.8 dB  |
-| Peaking | 809 Hz   | 0.75 | -3.2 dB |
-| Peaking | 813 Hz   | 1.58 | 6.0 dB  |
-| Peaking | 6470 Hz  | 9.67 | 5.1 dB  |
-| Peaking | 10583 Hz | 6.17 | -3.3 dB |
-| Peaking | 15076 Hz | 3.86 | -4.5 dB |
+| Peaking | 809 Hz   | 0.73 | -2.9 dB |
+| Peaking | 813 Hz   | 1.62 | 5.7 dB  |
+| Peaking | 6474 Hz  | 9.6  | 5.1 dB  |
+| Peaking | 10570 Hz | 6.16 | -3.3 dB |
+| Peaking | 15095 Hz | 3.85 | -4.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AudioFly%20AF140/AudioFly%20AF140.png)

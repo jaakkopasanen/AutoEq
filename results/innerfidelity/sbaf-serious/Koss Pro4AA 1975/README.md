@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss Pro4AA 1975 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss Pro4AA 1975 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 39 Hz   | 0.54 | 7.5 dB   |
-| Peaking | 362 Hz  | 0.56 | -17.2 dB |
-| Peaking | 703 Hz  | 0.54 | 15.9 dB  |
-| Peaking | 1972 Hz | 0.63 | -12.3 dB |
-| Peaking | 4604 Hz | 1.26 | 10.7 dB  |
-| Peaking | 123 Hz  | 3.61 | -0.6 dB  |
-| Peaking | 2213 Hz | 0.26 | 0.3 dB   |
-| Peaking | 4770 Hz | 7.29 | -1.4 dB  |
-| Peaking | 6396 Hz | 3.46 | 3.6 dB   |
-| Peaking | 7564 Hz | 1.99 | -2.8 dB  |
+| Peaking | 39 Hz   | 0.54 | 7.8 dB   |
+| Peaking | 352 Hz  | 0.5  | -19.2 dB |
+| Peaking | 731 Hz  | 0.44 | 20.8 dB  |
+| Peaking | 2069 Hz | 0.46 | -16.5 dB |
+| Peaking | 4573 Hz | 1.04 | 13.1 dB  |
+| Peaking | 56 Hz   | 1.08 | -1.7 dB  |
+| Peaking | 59 Hz   | 2.49 | 2.8 dB   |
+| Peaking | 4780 Hz | 7.14 | -1.5 dB  |
+| Peaking | 6469 Hz | 3.06 | 3.5 dB   |
+| Peaking | 7510 Hz | 2.71 | -2.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20Pro4AA%201975/Koss%20Pro4AA%201975.png)

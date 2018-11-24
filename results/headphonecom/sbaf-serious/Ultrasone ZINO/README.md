@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.5; 31 4.4; 34 3.2; 37 2.2; 41 1.2; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultrasone Zino GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Zino ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.3dB.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 25 Hz    | 2.36 | 7.2 dB   |
-| Peaking | 661 Hz   | 0.99 | 9.0 dB   |
-| Peaking | 1802 Hz  | 1.3  | -15.5 dB |
-| Peaking | 9579 Hz  | 3.6  | -12.0 dB |
-| Peaking | 19913 Hz | 3.85 | -3.5 dB  |
-| Peaking | 75 Hz    | 0.3  | 2.9 dB   |
-| Peaking | 83 Hz    | 0.59 | -4.9 dB  |
-| Peaking | 868 Hz   | 7.5  | 2.6 dB   |
-| Peaking | 1096 Hz  | 4.53 | -1.2 dB  |
-| Peaking | 1260 Hz  | 7.44 | -1.6 dB  |
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 25 Hz    |  2.38 | 7.4 dB   |
+| Peaking | 661 Hz   |  0.99 | 9.0 dB   |
+| Peaking | 1802 Hz  |  1.3  | -15.5 dB |
+| Peaking | 9563 Hz  |  3.6  | -12.0 dB |
+| Peaking | 20129 Hz |  3.86 | -3.5 dB  |
+| Peaking | 87 Hz    |  1.09 | -2.1 dB  |
+| Peaking | 657 Hz   |  2.28 | -5.6 dB  |
+| Peaking | 767 Hz   |  1.1  | 5.5 dB   |
+| Peaking | 1148 Hz  |  2.54 | -4.2 dB  |
+| Peaking | 3862 Hz  | 13.99 | 3.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20Zino/Ultrasone%20Zino.png)

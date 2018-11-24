@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.2; 25 4.7; 28 4.0; 31 3.4; 34 2.9; 37 2.4; 41 1.9; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.2dB` and instead set Global volume in the UI for both channels to **-62**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Jamz GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-62**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Jamz ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Monster Jamz Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 17 Hz   | 0.6  | 6.5 dB  |
-| Peaking | 165 Hz  | 0.64 | -5.3 dB |
-| Peaking | 339 Hz  | 1.18 | -3.0 dB |
-| Peaking | 3418 Hz | 1.84 | 6.2 dB  |
-| Peaking | 5680 Hz | 2.85 | 5.5 dB  |
-| Peaking | 886 Hz  | 2.55 | 0.8 dB  |
-| Peaking | 1773 Hz | 2.03 | -0.9 dB |
-| Peaking | 2732 Hz | 5.05 | 0.9 dB  |
-| Peaking | 6582 Hz | 7.54 | 2.2 dB  |
-| Peaking | 7802 Hz | 2.28 | -1.4 dB |
+| Peaking | 17 Hz   | 0.59 | 6.5 dB  |
+| Peaking | 163 Hz  | 0.63 | -5.3 dB |
+| Peaking | 338 Hz  | 1.18 | -3.0 dB |
+| Peaking | 3417 Hz | 1.84 | 6.2 dB  |
+| Peaking | 5676 Hz | 2.85 | 5.5 dB  |
+| Peaking | 886 Hz  | 2.59 | 0.8 dB  |
+| Peaking | 1775 Hz | 2.03 | -0.9 dB |
+| Peaking | 2730 Hz | 5.05 | 0.9 dB  |
+| Peaking | 6593 Hz | 7.51 | 2.2 dB  |
+| Peaking | 7815 Hz | 2.28 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Monster%20Jamz/Monster%20Jamz.png)

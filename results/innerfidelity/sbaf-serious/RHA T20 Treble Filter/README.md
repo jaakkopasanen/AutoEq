@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.0; 23 -5.3; 25 -5.5; 28 -5.8; 31 -5.9; 34 -6.0; 37 -6.1; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.7dB` and instead set Global volume in the UI for both channels to **-46**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`RHA T20 Treble Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-46**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `RHA T20 Treble Filter ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `RHA T20 Treble F
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -0.1dB.
 | Peaking | 208 Hz  | 1.59 | -2.2 dB  |
 | Peaking | 2688 Hz | 1.89 | -5.8 dB  |
 | Peaking | 4628 Hz | 6.24 | -11.5 dB |
-| Peaking | 748 Hz  | 1.78 | 1.8 dB   |
-| Peaking | 1563 Hz | 3.05 | -4.2 dB  |
-| Peaking | 1861 Hz | 6.01 | 3.6 dB   |
-| Peaking | 5057 Hz | 6.25 | -2.9 dB  |
-| Peaking | 6351 Hz | 4.34 | 6.0 dB   |
+| Peaking | 747 Hz  | 1.78 | 1.8 dB   |
+| Peaking | 1562 Hz | 3.05 | -4.2 dB  |
+| Peaking | 1860 Hz | 6.03 | 3.6 dB   |
+| Peaking | 5056 Hz | 6.35 | -2.9 dB  |
+| Peaking | 6352 Hz | 4.35 | 6.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/RHA%20T20%20Treble%20Filter/RHA%20T20%20Treble%20Filter.png)

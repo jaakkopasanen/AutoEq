@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.9; 41 5.6; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT880 250 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT880 250 Ohm ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT8
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 33 Hz    | 0.49 | 6.4 dB   |
 | Peaking | 2906 Hz  | 2.63 | -2.3 dB  |
-| Peaking | 6041 Hz  | 4.59 | -7.3 dB  |
-| Peaking | 6068 Hz  | 0.12 | 0.5 dB   |
-| Peaking | 19278 Hz | 1.13 | -11.8 dB |
-| Peaking | 83 Hz    | 4.42 | 1.5 dB   |
-| Peaking | 192 Hz   | 1.46 | -0.9 dB  |
-| Peaking | 12219 Hz | 5.24 | -2.1 dB  |
-| Peaking | 14569 Hz | 2.89 | 2.5 dB   |
-| Peaking | 17106 Hz | 3.71 | -1.9 dB  |
+| Peaking | 6008 Hz  | 0.12 | 0.5 dB   |
+| Peaking | 6033 Hz  | 4.59 | -7.3 dB  |
+| Peaking | 19301 Hz | 1.13 | -11.8 dB |
+| Peaking | 81 Hz    | 4.49 | 1.5 dB   |
+| Peaking | 194 Hz   | 1.42 | -0.9 dB  |
+| Peaking | 12182 Hz | 5.22 | -2.1 dB  |
+| Peaking | 14530 Hz | 2.92 | 2.5 dB   |
+| Peaking | 17074 Hz | 3.62 | -2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20880%20250%20Ohm/Beyerdynamic%20DT880%20250%20Ohm.png)

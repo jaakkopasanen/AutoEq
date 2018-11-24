@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.6; 31 5.0; 34 4.2; 37 3.6; 41 2.8; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SRH940 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SRH940 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 10 Hz    | 0.3  | 7.5 dB   |
-| Peaking | 301 Hz   | 1.26 | -3.5 dB  |
-| Peaking | 5713 Hz  | 0.66 | -4.2 dB  |
-| Peaking | 6372 Hz  | 2.17 | 9.0 dB   |
-| Peaking | 8929 Hz  | 5.32 | -10.5 dB |
-| Peaking | 58 Hz    | 2.25 | -1.3 dB  |
-| Peaking | 83 Hz    | 5.07 | 2.4 dB   |
-| Peaking | 1827 Hz  | 2.99 | -1.6 dB  |
-| Peaking | 2748 Hz  | 3.87 | 1.7 dB   |
-| Peaking | 11030 Hz | 6.69 | 2.4 dB   |
+| Peaking | 11 Hz    | 0.31 | 7.5 dB   |
+| Peaking | 305 Hz   | 1.26 | -3.5 dB  |
+| Peaking | 5640 Hz  | 0.68 | -4.3 dB  |
+| Peaking | 6415 Hz  | 2.19 | 9.0 dB   |
+| Peaking | 9003 Hz  | 5.32 | -10.6 dB |
+| Peaking | 57 Hz    | 2.11 | -1.4 dB  |
+| Peaking | 82 Hz    | 5.04 | 2.5 dB   |
+| Peaking | 1827 Hz  | 3.01 | -1.7 dB  |
+| Peaking | 2763 Hz  | 3.7  | 1.7 dB   |
+| Peaking | 11028 Hz | 6.94 | 2.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Shure%20SRH940/Shure%20SRH940.png)

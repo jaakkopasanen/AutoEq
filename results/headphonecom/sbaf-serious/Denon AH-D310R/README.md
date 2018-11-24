@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.0; 25 4.5; 28 3.9; 31 3.4; 34 3.0; 37 2.7; 41 2.3; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-D310R GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D310R ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D310R P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 22 Hz   |  1.13 | 5.4 dB  |
+| Peaking | 22 Hz   |  1.12 | 5.4 dB  |
 | Peaking | 678 Hz  |  3.93 | 5.1 dB  |
-| Peaking | 1897 Hz |  3.5  | 3.2 dB  |
+| Peaking | 1896 Hz |  3.52 | 3.3 dB  |
 | Peaking | 3217 Hz |  1.49 | 6.3 dB  |
 | Peaking | 5864 Hz |  3.39 | 4.7 dB  |
-| Peaking | 206 Hz  |  1.6  | -3.1 dB |
-| Peaking | 456 Hz  |  2.31 | 1.6 dB  |
-| Peaking | 1351 Hz |  2.62 | -2.6 dB |
-| Peaking | 1529 Hz | 11.5  | 6.0 dB  |
-| Peaking | 9363 Hz |  5.37 | -2.8 dB |
+| Peaking | 206 Hz  |  1.59 | -3.1 dB |
+| Peaking | 456 Hz  |  2.28 | 1.6 dB  |
+| Peaking | 1350 Hz |  2.63 | -2.6 dB |
+| Peaking | 1530 Hz | 11.54 | 6.0 dB  |
+| Peaking | 9301 Hz |  5.37 | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D310R/Denon%20AH-D310R.png)

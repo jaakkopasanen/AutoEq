@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.2; 23 -5.3; 25 -5.4; 28 -5.4; 31 -5.5; 34 -5.5; 37 -5.6; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.7dB` and instead set Global volume in the UI for both channels to **-6**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`MOE SS01 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-6**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MOE SS01 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `MOE SS01 Paramet
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -0.1dB.
 | Peaking | 256 Hz  | 1.4  | -2.4 dB |
 | Peaking | 2322 Hz | 1.53 | -2.9 dB |
 | Peaking | 5116 Hz | 3.17 | -6.8 dB |
-| Peaking | 785 Hz  | 2.73 | 1.2 dB  |
-| Peaking | 1535 Hz | 4.28 | -1.5 dB |
-| Peaking | 2873 Hz | 8.21 | -1.7 dB |
-| Peaking | 4515 Hz | 0.29 | 0.5 dB  |
-| Peaking | 9047 Hz | 5.22 | -3.7 dB |
+| Peaking | 784 Hz  | 2.73 | 1.2 dB  |
+| Peaking | 1513 Hz | 4.28 | -1.5 dB |
+| Peaking | 2900 Hz | 8.21 | -1.7 dB |
+| Peaking | 4533 Hz | 0.29 | 0.5 dB  |
+| Peaking | 9035 Hz | 5.22 | -3.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MOE%20SS01/MOE%20SS01.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.8; 41 4.8; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SRH440 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SRH440 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 28 Hz    | 1.05 | 6.9 dB  |
-| Peaking | 129 Hz   | 1.58 | -2.7 dB |
-| Peaking | 412 Hz   | 1.63 | -1.6 dB |
-| Peaking | 6232 Hz  | 3.03 | 6.6 dB  |
+| Peaking | 128 Hz   | 1.59 | -2.7 dB |
+| Peaking | 416 Hz   | 1.63 | -1.6 dB |
+| Peaking | 6231 Hz  | 3.03 | 6.6 dB  |
 | Peaking | 9296 Hz  | 2.99 | -7.3 dB |
-| Peaking | 40 Hz    | 3.1  | 1.0 dB  |
-| Peaking | 69 Hz    | 4.58 | -1.5 dB |
+| Peaking | 70 Hz    | 2.71 | -3.2 dB |
+| Peaking | 70 Hz    | 1.32 | 1.7 dB  |
 | Peaking | 1751 Hz  | 4.19 | -1.7 dB |
-| Peaking | 10520 Hz | 6.25 | -2.4 dB |
-| Peaking | 11384 Hz | 3.02 | 1.9 dB  |
+| Peaking | 10530 Hz | 6.29 | -2.4 dB |
+| Peaking | 11372 Hz | 3.02 | 1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SRH440/Shure%20SRH440.png)

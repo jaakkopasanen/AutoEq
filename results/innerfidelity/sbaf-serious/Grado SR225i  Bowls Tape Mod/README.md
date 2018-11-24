@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.5; 41 4.4; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado SR225i  Bowls Tape Mod GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i  Bowls Tape Mod ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i  Bo
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 28 Hz    | 0.68 | 7.1 dB  |
-| Peaking | 106 Hz   | 0.62 | -3.9 dB |
-| Peaking | 1980 Hz  | 6.12 | -4.9 dB |
-| Peaking | 8620 Hz  | 1.9  | -8.3 dB |
-| Peaking | 10962 Hz | 2.6  | 3.4 dB  |
-| Peaking | 727 Hz   | 1.97 | 0.6 dB  |
-| Peaking | 1529 Hz  | 4.81 | -1.2 dB |
-| Peaking | 2654 Hz  | 6.14 | 1.9 dB  |
-| Peaking | 6656 Hz  | 2.67 | 1.8 dB  |
-| Peaking | 7047 Hz  | 7.44 | -4.0 dB |
+| Peaking | 29 Hz    | 0.67 | 7.1 dB  |
+| Peaking | 107 Hz   | 0.62 | -3.9 dB |
+| Peaking | 1980 Hz  | 5.83 | -4.9 dB |
+| Peaking | 8178 Hz  | 2.37 | -7.4 dB |
+| Peaking | 21742 Hz | 0.94 | 1.1 dB  |
+| Peaking | 724 Hz   | 1.99 | 0.6 dB  |
+| Peaking | 1525 Hz  | 5.08 | -1.2 dB |
+| Peaking | 2661 Hz  | 6.21 | 1.9 dB  |
+| Peaking | 9482 Hz  | 7.17 | -4.0 dB |
+| Peaking | 10502 Hz | 2.72 | 2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i%20%20Bowls%20Tape%20Mod/Grado%20SR225i%20%20Bowls%20Tape%20Mod.png)

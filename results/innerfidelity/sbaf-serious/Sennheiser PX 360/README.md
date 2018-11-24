@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser PX 360 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PX 360 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PX 36
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 1802 Hz  | 1.43 | -10.5 dB |
 | Peaking | 3684 Hz  | 2.19 | 6.8 dB   |
 | Peaking | 5872 Hz  | 3.76 | 6.1 dB   |
-| Peaking | 105 Hz   | 3.05 | -1.1 dB  |
-| Peaking | 186 Hz   | 4.88 | 2.7 dB   |
-| Peaking | 333 Hz   | 4.2  | -1.0 dB  |
+| Peaking | 105 Hz   | 3.02 | -1.2 dB  |
+| Peaking | 186 Hz   | 4.89 | 2.7 dB   |
+| Peaking | 334 Hz   | 4.19 | -1.0 dB  |
 | Peaking | 9841 Hz  | 0.57 | 0.3 dB   |
 | Peaking | 10278 Hz | 3.36 | -3.1 dB  |
 

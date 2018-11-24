@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.3; 25 3.3; 28 2.3; 31 1.7; 34 1.3; 37 1.1; 41 1.0; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.3dB` and instead set Global volume in the UI for both channels to **-63**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Massdrop x Fostex TH-X00 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-63**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Massdrop x Fostex TH-X00 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Massdrop x Foste
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 15 Hz    |  1.21 | 9.1 dB  |
-| Peaking | 546 Hz   |  2.55 | 3.0 dB  |
-| Peaking | 3447 Hz  |  2.72 | 7.1 dB  |
-| Peaking | 6628 Hz  |  8.56 | 5.0 dB  |
-| Peaking | 13009 Hz |  2.26 | -7.5 dB |
-| Peaking | 72 Hz    |  2.22 | 0.7 dB  |
-| Peaking | 166 Hz   |  1.58 | -0.6 dB |
-| Peaking | 4085 Hz  | 10.25 | 2.3 dB  |
-| Peaking | 5217 Hz  |  5.67 | -2.6 dB |
-| Peaking | 9640 Hz  |  5.77 | 1.5 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 15 Hz    | 1.18 | 9.1 dB  |
+| Peaking | 546 Hz   | 2.55 | 3.0 dB  |
+| Peaking | 3447 Hz  | 2.72 | 7.1 dB  |
+| Peaking | 6608 Hz  | 8.58 | 5.0 dB  |
+| Peaking | 12978 Hz | 2.26 | -7.5 dB |
+| Peaking | 71 Hz    | 2.27 | 0.6 dB  |
+| Peaking | 165 Hz   | 1.59 | -0.6 dB |
+| Peaking | 4079 Hz  | 9.97 | 2.3 dB  |
+| Peaking | 5212 Hz  | 5.56 | -2.6 dB |
+| Peaking | 9653 Hz  | 5.44 | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Fostex%20TH-X00/Massdrop%20x%20Fostex%20TH-X00.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 -0.1; 25 -0.8; 28 -1.8; 31 -2.5; 34 -3.1; 37 -3.6; 41 -4.1
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bluedio R2-WH GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bluedio R2-WH ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Bluedio R2-WH Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 14 Hz   | 0.57 | 3.7 dB  |
-| Peaking | 37 Hz   | 0.89 | -2.8 dB |
-| Peaking | 276 Hz  | 0.19 | -6.4 dB |
-| Peaking | 734 Hz  | 1.15 | 7.8 dB  |
-| Peaking | 4727 Hz | 1.4  | 7.0 dB  |
-| Peaking | 1477 Hz | 3.07 | 2.4 dB  |
-| Peaking | 1580 Hz | 1.52 | -1.4 dB |
-| Peaking | 6376 Hz | 4.32 | 3.7 dB  |
-| Peaking | 7551 Hz | 1.78 | -2.6 dB |
-| Peaking | 7566 Hz | 1.85 | 0.3 dB  |
+| Peaking | 13 Hz   | 0.57 | 3.7 dB  |
+| Peaking | 37 Hz   | 0.89 | -2.9 dB |
+| Peaking | 273 Hz  | 0.19 | -6.4 dB |
+| Peaking | 732 Hz  | 1.15 | 7.8 dB  |
+| Peaking | 4714 Hz | 1.4  | 7.0 dB  |
+| Peaking | 1492 Hz | 2.98 | 2.5 dB  |
+| Peaking | 1554 Hz | 1.52 | -1.5 dB |
+| Peaking | 6271 Hz | 4.46 | 2.9 dB  |
+| Peaking | 6658 Hz | 3.69 | 1.4 dB  |
+| Peaking | 7416 Hz | 1.82 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bluedio%20R2-WH/Bluedio%20R2-WH.png)

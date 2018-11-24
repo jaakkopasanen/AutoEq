@@ -9,28 +9,29 @@ GraphicEQ: 21 -0.7; 23 -1.4; 25 -2.0; 28 -2.8; 31 -3.5; 34 -4.0; 37 -4.5; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.0dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Torque t402v OnEar Black GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OnEar Black ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 97 Hz   | 0.49 | -8.1 dB |
 | Peaking | 250 Hz  | 1.1  | -5.3 dB |
-| Peaking | 1576 Hz | 4.02 | -4.5 dB |
+| Peaking | 1571 Hz | 4.02 | -4.5 dB |
 | Peaking | 2831 Hz | 1.21 | -3.3 dB |
-| Peaking | 6045 Hz | 4.38 | 7.4 dB  |
-| Peaking | 443 Hz  | 2.33 | -2.4 dB |
-| Peaking | 783 Hz  | 2.06 | 5.4 dB  |
-| Peaking | 1186 Hz | 3.02 | -2.5 dB |
-| Peaking | 4492 Hz | 2.13 | 2.2 dB  |
-| Peaking | 4531 Hz | 4.89 | -4.6 dB |
+| Peaking | 6023 Hz | 4.38 | 7.4 dB  |
+| Peaking | 443 Hz  | 2.35 | -2.4 dB |
+| Peaking | 784 Hz  | 2.06 | 5.4 dB  |
+| Peaking | 1191 Hz | 2.99 | -2.5 dB |
+| Peaking | 4464 Hz | 2.06 | 2.1 dB  |
+| Peaking | 4545 Hz | 4.75 | -4.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OnEar%20Black/Torque%20t402v%20OnEar%20Black.png)

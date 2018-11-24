@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.5; 23 -2.8; 25 -3.0; 28 -3.3; 31 -3.4; 34 -3.5; 37 -3.6; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`V-Moda M-100 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda M-100 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `V-Moda M-100 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 415 Hz  | 1.28 | 5.1 dB  |
 | Peaking | 5544 Hz | 1.89 | 6.8 dB  |
 | Peaking | 9518 Hz | 3.91 | -5.5 dB |
-| Peaking | 603 Hz  | 6.08 | 0.7 dB  |
-| Peaking | 975 Hz  | 2.82 | -0.9 dB |
-| Peaking | 1665 Hz | 0.57 | 0.1 dB  |
-| Peaking | 3243 Hz | 6.68 | 1.0 dB  |
-| Peaking | 3885 Hz | 6.72 | -1.1 dB |
+| Peaking | 598 Hz  | 6.08 | 0.7 dB  |
+| Peaking | 975 Hz  | 2.83 | -0.9 dB |
+| Peaking | 1685 Hz | 0.56 | 0.1 dB  |
+| Peaking | 3235 Hz | 6.68 | 1.0 dB  |
+| Peaking | 3877 Hz | 6.72 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/V-Moda%20M-100/V-Moda%20M-100.png)

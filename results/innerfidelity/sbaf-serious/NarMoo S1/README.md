@@ -9,8 +9,9 @@ GraphicEQ: 21 -11.5; 23 -11.6; 25 -11.7; 28 -11.7; 31 -11.7; 34 -11.8; 37 -11.8;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.6dB` and instead set Global volume in the UI for both channels to **-36**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`NarMoo S1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-36**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NarMoo S1 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `NarMoo S1 Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.2dB.
+When using independent subset of filters, apply preamp of **--0.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of --0.2dB.
 | Peaking | 19318 Hz | 1.46 | -3.1 dB  |
 | Peaking | 900 Hz   | 1.95 | 1.7 dB   |
 | Peaking | 1728 Hz  | 3.68 | -1.9 dB  |
-| Peaking | 5247 Hz  | 5.03 | -3.3 dB  |
-| Peaking | 6439 Hz  | 2.71 | 5.2 dB   |
-| Peaking | 9731 Hz  | 4.07 | -7.2 dB  |
+| Peaking | 5237 Hz  | 5.03 | -3.3 dB  |
+| Peaking | 6427 Hz  | 2.71 | 5.2 dB   |
+| Peaking | 9726 Hz  | 4.07 | -7.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NarMoo%20S1/NarMoo%20S1.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.2; 23 -10.3; 25 -10.4; 28 -10.3; 31 -10.2; 34 -10.1; 37 -10.1;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`NHT Super Buds GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NHT Super Buds ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `NHT Super Buds P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -7.1dB.
 | Peaking | 717 Hz  | 0.66 | 3.0 dB   |
 | Peaking | 2017 Hz | 1.04 | -6.7 dB  |
 | Peaking | 4357 Hz | 1.23 | 8.4 dB   |
-| Peaking | 3628 Hz | 6.2  | 1.9 dB   |
-| Peaking | 4436 Hz | 2.59 | -1.2 dB  |
-| Peaking | 6327 Hz | 2.65 | 4.2 dB   |
-| Peaking | 7528 Hz | 3.19 | -2.3 dB  |
-| Peaking | 7537 Hz | 0.8  | -1.2 dB  |
+| Peaking | 3638 Hz | 6.22 | 1.9 dB   |
+| Peaking | 4479 Hz | 2.64 | -1.2 dB  |
+| Peaking | 6362 Hz | 2.64 | 4.2 dB   |
+| Peaking | 7443 Hz | 0.79 | -1.2 dB  |
+| Peaking | 7471 Hz | 3.18 | -2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NHT%20Super%20Buds/NHT%20Super%20Buds.png)

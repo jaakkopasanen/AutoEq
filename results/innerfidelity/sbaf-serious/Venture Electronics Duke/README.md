@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.2; 25 -0.0; 28 -0.2; 31 -0.4; 34 -0.6; 37 -0.8; 41 -1.0;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.8dB` and instead set Global volume in the UI for both channels to **-18**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Venture Electronics Duke GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-18**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Venture Electronics Duke ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Venture Electron
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -0.1dB.
 | Peaking | 372 Hz  | 1.86 | -1.9 dB  |
 | Peaking | 1747 Hz | 2.37 | -1.5 dB  |
 | Peaking | 7410 Hz | 4.2  | -10.1 dB |
-| Peaking | 2879 Hz | 4.57 | -4.4 dB  |
-| Peaking | 3636 Hz | 5.52 | 1.3 dB   |
-| Peaking | 5165 Hz | 0.67 | 2.4 dB   |
-| Peaking | 9173 Hz | 1.01 | -4.1 dB  |
-| Peaking | 9902 Hz | 3.07 | 4.4 dB   |
+| Peaking | 2884 Hz | 4.56 | -4.4 dB  |
+| Peaking | 3631 Hz | 5.38 | 1.3 dB   |
+| Peaking | 5104 Hz | 0.68 | 2.4 dB   |
+| Peaking | 9253 Hz | 1.03 | -4.1 dB  |
+| Peaking | 9867 Hz | 3.06 | 4.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Venture%20Electronics%20Duke/Venture%20Electronics%20Duke.png)

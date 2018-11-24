@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 2.2; 25 2.0; 28 1.7; 31 1.3; 34 0.8; 37 0.5; 41 0.4; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.1dB` and instead set Global volume in the UI for both channels to **-50**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Soul by Ludacris SL150 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-50**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Soul by Ludacris SL150 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.7dB.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 18 Hz   | 0.5  | 2.8 dB   |
+| Peaking | 17 Hz   | 0.51 | 2.8 dB   |
 | Peaking | 140 Hz  | 0.72 | -6.6 dB  |
 | Peaking | 346 Hz  | 1.41 | -6.4 dB  |
-| Peaking | 3570 Hz | 0.57 | -1.8 dB  |
-| Peaking | 6566 Hz | 8.75 | 6.7 dB   |
-| Peaking | 493 Hz  | 5.16 | -1.7 dB  |
-| Peaking | 819 Hz  | 2.58 | 2.2 dB   |
-| Peaking | 4270 Hz | 3.25 | 9.7 dB   |
-| Peaking | 5230 Hz | 1.58 | -12.9 dB |
-| Peaking | 6150 Hz | 1.42 | 7.3 dB   |
+| Peaking | 3578 Hz | 0.57 | -1.8 dB  |
+| Peaking | 6600 Hz | 8.75 | 6.7 dB   |
+| Peaking | 499 Hz  | 5.18 | -1.7 dB  |
+| Peaking | 819 Hz  | 2.58 | 2.1 dB   |
+| Peaking | 4309 Hz | 3.31 | 9.5 dB   |
+| Peaking | 5197 Hz | 1.6  | -13.3 dB |
+| Peaking | 6130 Hz | 1.42 | 7.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Soul%20by%20Ludacris%20SL150/Soul%20by%20Ludacris%20SL150.png)

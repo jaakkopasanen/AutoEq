@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.8; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-G75 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-G75 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 31 Hz   | 0.7  | 7.2 dB  |
-| Peaking | 123 Hz  | 0.79 | -5.2 dB |
-| Peaking | 2952 Hz | 2.37 | 12.8 dB |
-| Peaking | 3916 Hz | 0.72 | -9.6 dB |
-| Peaking | 5608 Hz | 1.98 | 12.8 dB |
-| Peaking | 639 Hz  | 1.4  | 0.7 dB  |
-| Peaking | 1549 Hz | 0.68 | 1.3 dB  |
-| Peaking | 1743 Hz | 2.87 | -3.8 dB |
-| Peaking | 2387 Hz | 6.58 | 1.3 dB  |
-| Peaking | 4152 Hz | 9.62 | -2.0 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 30 Hz   |  0.72 | 7.2 dB  |
+| Peaking | 122 Hz  |  0.78 | -5.2 dB |
+| Peaking | 2948 Hz |  2.37 | 12.8 dB |
+| Peaking | 3898 Hz |  0.72 | -9.5 dB |
+| Peaking | 5638 Hz |  1.99 | 12.8 dB |
+| Peaking | 230 Hz  |  1.58 | -1.5 dB |
+| Peaking | 698 Hz  |  0.24 | 1.2 dB  |
+| Peaking | 1751 Hz |  3.21 | -3.5 dB |
+| Peaking | 2397 Hz |  6.5  | 1.2 dB  |
+| Peaking | 4155 Hz | 10.56 | -2.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-G75/Sony%20MDR-G75.png)

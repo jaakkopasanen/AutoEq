@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.6; 23 -1.0; 25 -1.4; 28 -2.0; 31 -2.5; 34 -2.9; 37 -3.2; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.4dB` and instead set Global volume in the UI for both channels to **-34**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`1MORE Triple Driver Over Ear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-34**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `1MORE Triple Driver Over Ear ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `1MORE Triple Dri
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.3dB.
+When using independent subset of filters, apply preamp of **-3.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -3.3dB.
 | Peaking | 3002 Hz | 1.07 | 4.0 dB  |
 | Peaking | 4157 Hz | 3.27 | -4.5 dB |
 | Peaking | 5393 Hz | 3.53 | 1.5 dB  |
-| Peaking | 15 Hz   | 1.1  | 1.3 dB  |
-| Peaking | 44 Hz   | 1.01 | -0.8 dB |
-| Peaking | 71 Hz   | 3.59 | 1.3 dB  |
-| Peaking | 81 Hz   | 3.68 | -0.6 dB |
+| Peaking | 17 Hz   | 1.16 | 1.4 dB  |
+| Peaking | 42 Hz   | 1.12 | -0.7 dB |
+| Peaking | 69 Hz   | 3.73 | 1.3 dB  |
+| Peaking | 83 Hz   | 3.77 | -0.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1MORE%20Triple%20Driver%20Over%20Ear/1MORE%20Triple%20Driver%20Over%20Ear.png)

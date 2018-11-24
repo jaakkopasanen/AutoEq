@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.7; 25 5.3; 28 4.5; 31 3.9; 34 3.3; 37 2.8; 41 2.1; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 218 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 218 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 21
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.0dB.
+When using independent subset of filters, apply preamp of **-6.0dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 21 Hz    |  0.81 | 6.0 dB  |
-| Peaking | 87 Hz    |  1.78 | -2.4 dB |
-| Peaking | 184 Hz   |  1.16 | -6.5 dB |
+| Peaking | 20 Hz    |  0.82 | 6.0 dB  |
+| Peaking | 86 Hz    |  1.78 | -2.4 dB |
+| Peaking | 183 Hz   |  1.16 | -6.5 dB |
 | Peaking | 3426 Hz  |  1.84 | 6.0 dB  |
 | Peaking | 24000 Hz |  2.3  | 0.4 dB  |
-| Peaking | 343 Hz   |  6.02 | -1.4 dB |
-| Peaking | 663 Hz   |  2.44 | 1.5 dB  |
-| Peaking | 4834 Hz  | 12.6  | -4.0 dB |
-| Peaking | 6725 Hz  | 10.04 | 2.9 dB  |
-| Peaking | 18082 Hz |  3.19 | -2.8 dB |
+| Peaking | 340 Hz   |  5.8  | -1.5 dB |
+| Peaking | 662 Hz   |  2.46 | 1.5 dB  |
+| Peaking | 4812 Hz  | 12.54 | -4.0 dB |
+| Peaking | 6687 Hz  | 10.01 | 2.9 dB  |
+| Peaking | 18353 Hz |  3.2  | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20218/Sennheiser%20HD%20218.png)

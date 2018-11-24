@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.3; 25 -0.2; 28 -0.7; 31 -1.1; 34 -1.4; 37 -1.6; 41 -1.7;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.0dB` and instead set Global volume in the UI for both channels to **-50**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Skullcandy Grind GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-50**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Grind ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Grind
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.1dB.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 683 Hz  | 2.08 | 5.1 dB  |
-| Peaking | 2066 Hz | 2.45 | -5.2 dB |
-| Peaking | 3429 Hz | 8.6  | 4.6 dB  |
+| Peaking | 2067 Hz | 2.45 | -5.2 dB |
+| Peaking | 3432 Hz | 8.6  | 4.6 dB  |
 | Peaking | 6057 Hz | 5.22 | 4.6 dB  |
-| Peaking | 8750 Hz | 4.88 | -4.9 dB |
-| Peaking | 17 Hz   | 1.35 | 2.4 dB  |
-| Peaking | 44 Hz   | 0.53 | -2.1 dB |
-| Peaking | 181 Hz  | 1.87 | -1.1 dB |
-| Peaking | 4298 Hz | 1.5  | 2.1 dB  |
-| Peaking | 4335 Hz | 4.01 | -5.3 dB |
+| Peaking | 8751 Hz | 4.88 | -4.9 dB |
+| Peaking | 17 Hz   | 1.3  | 2.6 dB  |
+| Peaking | 45 Hz   | 0.54 | -2.0 dB |
+| Peaking | 182 Hz  | 1.86 | -1.1 dB |
+| Peaking | 4256 Hz | 1.53 | 2.4 dB  |
+| Peaking | 4366 Hz | 3.88 | -5.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Grind/Skullcandy%20Grind.png)

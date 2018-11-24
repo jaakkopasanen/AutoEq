@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.4; 31 4.9; 34 4.5; 37 4.1; 41 3.7; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Yamaha Pro500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yamaha Pro500 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Yamaha Pro500 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 26 Hz   | 1.06 | 6.2 dB  |
+| Peaking | 26 Hz   | 1.03 | 6.2 dB  |
 | Peaking | 72 Hz   | 4.86 | 1.8 dB  |
-| Peaking | 480 Hz  | 2.35 | 5.1 dB  |
-| Peaking | 2865 Hz | 3.42 | 5.7 dB  |
+| Peaking | 480 Hz  | 2.34 | 5.1 dB  |
+| Peaking | 2864 Hz | 3.42 | 5.7 dB  |
 | Peaking | 5206 Hz | 1.96 | 6.6 dB  |
-| Peaking | 186 Hz  | 0.86 | -5.3 dB |
-| Peaking | 196 Hz  | 0.38 | 2.8 dB  |
-| Peaking | 1629 Hz | 1.86 | -3.3 dB |
-| Peaking | 2130 Hz | 1.76 | 1.7 dB  |
-| Peaking | 8361 Hz | 4.38 | -1.4 dB |
+| Peaking | 192 Hz  | 0.89 | -5.6 dB |
+| Peaking | 215 Hz  | 0.46 | 3.1 dB  |
+| Peaking | 1630 Hz | 1.91 | -3.4 dB |
+| Peaking | 2104 Hz | 1.66 | 1.7 dB  |
+| Peaking | 8371 Hz | 4.36 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20Pro500/Yamaha%20Pro500.png)

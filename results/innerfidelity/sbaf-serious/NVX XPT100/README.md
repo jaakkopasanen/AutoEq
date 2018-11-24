@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.7; 25 5.4; 28 4.9; 31 4.5; 34 4.1; 37 3.9; 41 3.6; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`NVX XPT100 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NVX XPT100 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `NVX XPT100 Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 322 Hz   | 2.78 | 5.7 dB  |
 | Peaking | 1829 Hz  | 2.17 | -3.6 dB |
 | Peaking | 5551 Hz  | 2.71 | 6.4 dB  |
-| Peaking | 185 Hz   | 1.57 | -2.4 dB |
-| Peaking | 272 Hz   | 0.32 | 0.9 dB  |
+| Peaking | 184 Hz   | 1.57 | -2.4 dB |
+| Peaking | 271 Hz   | 0.32 | 0.9 dB  |
 | Peaking | 3003 Hz  | 1.79 | -1.6 dB |
 | Peaking | 3173 Hz  | 6.74 | 5.0 dB  |
-| Peaking | 19721 Hz | 2.66 | -4.7 dB |
+| Peaking | 19719 Hz | 2.66 | -4.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NVX%20XPT100/NVX%20XPT100.png)

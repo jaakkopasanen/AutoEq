@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.9; 37 5.4; 41 4.7; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 600 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 600 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 60
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.3dB.
 | Peaking | 4413 Hz  | 1.39 | -6.4 dB |
 | Peaking | 5956 Hz  | 2.48 | 5.9 dB  |
 | Peaking | 14643 Hz | 3.54 | -6.3 dB |
-| Peaking | 264 Hz   | 1.35 | -1.3 dB |
-| Peaking | 332 Hz   | 0.65 | 0.9 dB  |
-| Peaking | 733 Hz   | 2.34 | 0.8 dB  |
-| Peaking | 3277 Hz  | 5.4  | -0.5 dB |
-| Peaking | 11671 Hz | 4.58 | 1.0 dB  |
+| Peaking | 266 Hz   | 1.35 | -1.3 dB |
+| Peaking | 330 Hz   | 0.65 | 0.9 dB  |
+| Peaking | 734 Hz   | 2.34 | 0.8 dB  |
+| Peaking | 3216 Hz  | 5.4  | -0.5 dB |
+| Peaking | 11584 Hz | 4.58 | 1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20600/Sennheiser%20HD%20600.png)

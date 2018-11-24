@@ -9,28 +9,29 @@ GraphicEQ: 21 -10.1; 23 -10.2; 25 -10.3; 28 -10.5; 31 -10.6; 34 -10.7; 37 -10.7;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.7dB` and instead set Global volume in the UI for both channels to **-46**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Thinksoud RAIN GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-46**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Thinksoud RAIN ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.7dB.
+When using independent subset of filters, apply preamp of **-2.6dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 29 Hz   | 0.24 | -9.7 dB  |
-| Peaking | 148 Hz  | 0.58 | -7.0 dB  |
-| Peaking | 325 Hz  | 0.98 | -3.6 dB  |
-| Peaking | 4782 Hz | 1.08 | 6.3 dB   |
-| Peaking | 5101 Hz | 4.27 | -14.4 dB |
-| Peaking | 1139 Hz | 2.34 | 1.1 dB   |
-| Peaking | 2757 Hz | 7.11 | -2.8 dB  |
-| Peaking | 3512 Hz | 5.35 | 2.9 dB   |
-| Peaking | 6535 Hz | 5.22 | 5.8 dB   |
-| Peaking | 6760 Hz | 1.2  | -2.5 dB  |
+| Peaking | 31 Hz   | 0.21 | -9.9 dB  |
+| Peaking | 155 Hz  | 0.59 | -6.3 dB  |
+| Peaking | 333 Hz  | 1.02 | -3.3 dB  |
+| Peaking | 4788 Hz | 1.08 | 6.3 dB   |
+| Peaking | 5095 Hz | 4.27 | -14.4 dB |
+| Peaking | 1140 Hz | 2.28 | 1.1 dB   |
+| Peaking | 2757 Hz | 7.05 | -2.8 dB  |
+| Peaking | 3510 Hz | 5.25 | 2.9 dB   |
+| Peaking | 6546 Hz | 5.32 | 5.8 dB   |
+| Peaking | 6766 Hz | 1.21 | -2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Thinksoud%20RAIN/Thinksoud%20RAIN.png)

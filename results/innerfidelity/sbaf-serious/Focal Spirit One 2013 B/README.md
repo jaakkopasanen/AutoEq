@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.5; 23 -3.4; 25 -3.3; 28 -3.1; 31 -2.9; 34 -2.8; 37 -2.6; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Focal Spirit One 2013 B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Spirit One 2013 B ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Focal Spirit One
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 24 Hz   |  0.96 | -3.3 dB |
-| Peaking | 140 Hz  |  1.01 | -4.4 dB |
-| Peaking | 485 Hz  |  1.67 | -2.1 dB |
-| Peaking | 2808 Hz |  1.8  | 3.4 dB  |
+| Peaking | 24 Hz   |  0.95 | -3.4 dB |
+| Peaking | 141 Hz  |  1.01 | -4.4 dB |
+| Peaking | 489 Hz  |  1.67 | -2.1 dB |
+| Peaking | 2806 Hz |  1.8  | 3.4 dB  |
 | Peaking | 5972 Hz |  4.25 | 6.5 dB  |
-| Peaking | 81 Hz   |  5.29 | 2.2 dB  |
-| Peaking | 98 Hz   |  6.06 | -2.0 dB |
-| Peaking | 1221 Hz |  5.65 | 0.7 dB  |
-| Peaking | 3939 Hz | 18.07 | 1.9 dB  |
-| Peaking | 9697 Hz |  2.22 | -0.7 dB |
+| Peaking | 80 Hz   |  5.13 | 2.0 dB  |
+| Peaking | 100 Hz  |  5.91 | -2.1 dB |
+| Peaking | 1213 Hz |  5.52 | 0.7 dB  |
+| Peaking | 3932 Hz | 16.89 | 1.8 dB  |
+| Peaking | 9696 Hz |  2.22 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Focal%20Spirit%20One%202013%20B/Focal%20Spirit%20One%202013%20B.png)

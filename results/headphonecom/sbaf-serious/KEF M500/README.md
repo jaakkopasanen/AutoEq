@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.9; 23 -4.9; 25 -4.9; 28 -4.9; 31 -4.9; 34 -4.9; 37 -4.8; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`KEF M500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `KEF M500 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `KEF M500 Paramet
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 650 Hz  | 2.23 | -2.7 dB |
 | Peaking | 1456 Hz | 1.02 | 1.6 dB  |
 | Peaking | 5448 Hz | 2.33 | 6.4 dB  |
-| Peaking | 275 Hz  | 5.2  | -1.0 dB |
-| Peaking | 367 Hz  | 4.51 | 1.2 dB  |
-| Peaking | 3352 Hz | 7.99 | -1.0 dB |
-| Peaking | 6581 Hz | 5.89 | 2.2 dB  |
-| Peaking | 7731 Hz | 2.49 | -1.6 dB |
+| Peaking | 275 Hz  | 5.21 | -1.0 dB |
+| Peaking | 366 Hz  | 4.52 | 1.1 dB  |
+| Peaking | 3365 Hz | 8.49 | -1.0 dB |
+| Peaking | 6633 Hz | 6.12 | 2.2 dB  |
+| Peaking | 7758 Hz | 2.49 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/KEF%20M500/KEF%20M500.png)

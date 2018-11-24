@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.8; 23 -1.1; 25 -1.3; 28 -1.6; 31 -1.7; 34 -1.7; 37 -1.6; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.1dB` and instead set Global volume in the UI for both channels to **-51**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 770 250 Ohm (old earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-51**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 770 250 Ohm (old earpads) ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.4dB.
+When using independent subset of filters, apply preamp of **-5.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.4dB.
 | Peaking | 6620 Hz  | 4.02 | -5.0 dB |
 | Peaking | 13048 Hz | 3.88 | -6.1 dB |
 | Peaking | 18695 Hz | 0.92 | -9.4 dB |
-| Peaking | 32 Hz    | 2.02 | -2.1 dB |
-| Peaking | 123 Hz   | 3.74 | -2.7 dB |
+| Peaking | 33 Hz    | 2    | -2.0 dB |
+| Peaking | 123 Hz   | 3.75 | -2.7 dB |
 | Peaking | 210 Hz   | 3.6  | 3.2 dB  |
-| Peaking | 2365 Hz  | 6.65 | -1.5 dB |
-| Peaking | 4926 Hz  | 5.04 | 0.9 dB  |
+| Peaking | 2371 Hz  | 6.67 | -1.5 dB |
+| Peaking | 4927 Hz  | 5.05 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm%20(old%20earpads)/Beyerdynamic%20DT%20770%20250%20Ohm%20(old%20earpads).png)

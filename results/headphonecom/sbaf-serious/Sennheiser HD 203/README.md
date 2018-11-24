@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.4; 25 4.6; 28 3.7; 31 3.1; 34 2.5; 37 1.6; 41 0.2; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--7.0dB` and instead set Global volume in the UI for both channels to **-69**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 203 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-69**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 203 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 20
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 20 Hz   |  0.9  | 7.0 dB  |
-| Peaking | 157 Hz  |  0.43 | -7.6 dB |
-| Peaking | 231 Hz  |  1.24 | 13.1 dB |
-| Peaking | 3125 Hz |  1.8  | 6.8 dB  |
-| Peaking | 5948 Hz |  4.14 | 5.8 dB  |
-| Peaking | 1533 Hz |  3.42 | -2.0 dB |
-| Peaking | 2377 Hz |  5.94 | 1.5 dB  |
-| Peaking | 4084 Hz |  7.3  | 3.0 dB  |
-| Peaking | 4496 Hz | 10.64 | -4.0 dB |
-| Peaking | 8314 Hz |  4.68 | -1.0 dB |
+| Peaking | 20 Hz   |  0.91 | 7.0 dB  |
+| Peaking | 156 Hz  |  0.43 | -7.5 dB |
+| Peaking | 231 Hz  |  1.25 | 13.1 dB |
+| Peaking | 3123 Hz |  1.8  | 6.8 dB  |
+| Peaking | 5947 Hz |  4.14 | 5.8 dB  |
+| Peaking | 1529 Hz |  3.37 | -2.0 dB |
+| Peaking | 2366 Hz |  5.96 | 1.4 dB  |
+| Peaking | 4110 Hz |  7.38 | 3.0 dB  |
+| Peaking | 4517 Hz | 10.72 | -4.0 dB |
+| Peaking | 8313 Hz |  4.7  | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20203/Sennheiser%20HD%20203.png)

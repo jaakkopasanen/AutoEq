@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.8; 23 -0.9; 25 -1.0; 28 -1.1; 31 -1.2; 34 -1.3; 37 -1.5; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Massdrop Nobel X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Massdrop Nobel X ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Massdrop Nobel X
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 3535 Hz  | 3.56 | 6.6 dB  |
 | Peaking | 6383 Hz  | 3.59 | 5.2 dB  |
 | Peaking | 8796 Hz  | 3.68 | -6.0 dB |
-| Peaking | 864 Hz   | 2.27 | 1.0 dB  |
-| Peaking | 1939 Hz  | 1.46 | -2.4 dB |
-| Peaking | 2590 Hz  | 1.03 | 1.4 dB  |
-| Peaking | 4715 Hz  | 9.57 | -1.8 dB |
-| Peaking | 11019 Hz | 8.55 | 0.9 dB  |
+| Peaking | 863 Hz   | 2.27 | 1.0 dB  |
+| Peaking | 1935 Hz  | 1.46 | -2.4 dB |
+| Peaking | 2593 Hz  | 1.02 | 1.4 dB  |
+| Peaking | 4718 Hz  | 9.57 | -1.8 dB |
+| Peaking | 11027 Hz | 8.55 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Massdrop%20Nobel%20X/Massdrop%20Nobel%20X.png)

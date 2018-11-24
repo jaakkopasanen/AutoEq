@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.7; 41 5.0; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Teknmotion London Underground GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Teknmotion London Underground ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Teknmotion Londo
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 28 Hz   | 0.81 | 6.5 dB  |
+| Peaking | 28 Hz   | 0.82 | 6.5 dB  |
 | Peaking | 335 Hz  | 1.28 | 4.8 dB  |
-| Peaking | 513 Hz  | 2.74 | 4.1 dB  |
-| Peaking | 2621 Hz | 1.86 | 5.6 dB  |
-| Peaking | 4937 Hz | 1.57 | 6.0 dB  |
-| Peaking | 949 Hz  | 3.93 | -0.9 dB |
-| Peaking | 1479 Hz | 4.2  | -2.0 dB |
-| Peaking | 2073 Hz | 6.45 | 1.9 dB  |
+| Peaking | 514 Hz  | 2.77 | 4.0 dB  |
+| Peaking | 2622 Hz | 1.86 | 5.6 dB  |
+| Peaking | 4940 Hz | 1.57 | 6.0 dB  |
+| Peaking | 948 Hz  | 3.94 | -0.9 dB |
+| Peaking | 1493 Hz | 4.2  | -2.0 dB |
+| Peaking | 2088 Hz | 6.44 | 1.9 dB  |
 | Peaking | 6416 Hz | 4.51 | 3.6 dB  |
-| Peaking | 7481 Hz | 1.76 | -2.3 dB |
+| Peaking | 7482 Hz | 1.77 | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Teknmotion%20London%20Underground/Teknmotion%20London%20Underground.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.9; 23 -6.0; 25 -6.0; 28 -6.2; 31 -6.3; 34 -6.4; 37 -6.4; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Paradigm Shift E1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Paradigm Shift E1 ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Paradigm Shift E
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 27 Hz   | 0.2  | -5.6 dB |
-| Peaking | 134 Hz  | 0.68 | -4.6 dB |
-| Peaking | 277 Hz  | 0.83 | -4.4 dB |
-| Peaking | 3178 Hz | 0.72 | 6.8 dB  |
-| Peaking | 2178 Hz | 3.22 | 2.5 dB  |
-| Peaking | 2404 Hz | 1.05 | -1.3 dB |
-| Peaking | 4786 Hz | 2.44 | 1.9 dB  |
-| Peaking | 6492 Hz | 5.05 | 4.4 dB  |
-| Peaking | 7162 Hz | 1.21 | -2.6 dB |
+| Peaking | 28 Hz   | 0.21 | -5.6 dB |
+| Peaking | 132 Hz  | 0.68 | -4.6 dB |
+| Peaking | 274 Hz  | 0.81 | -4.5 dB |
+| Peaking | 3177 Hz | 0.72 | 6.8 dB  |
+| Peaking | 2170 Hz | 4.03 | 1.9 dB  |
+| Peaking | 4501 Hz | 0.57 | -1.6 dB |
+| Peaking | 4724 Hz | 1.94 | 2.6 dB  |
+| Peaking | 6511 Hz | 4.91 | 4.4 dB  |
+| Peaking | 7224 Hz | 1.59 | -2.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Paradigm%20Shift%20E1/Paradigm%20Shift%20E1.png)

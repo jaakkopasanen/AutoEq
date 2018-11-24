@@ -9,28 +9,29 @@ GraphicEQ: 21 -1.3; 23 -1.8; 25 -2.3; 28 -2.9; 31 -3.4; 34 -3.8; 37 -4.0; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.2dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 770 600 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 770 600 Ohm ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 116 Hz   | 1.36 | -5.6 dB  |
-| Peaking | 4602 Hz  | 1.75 | 22.3 dB  |
-| Peaking | 5442 Hz  | 1.08 | -19.8 dB |
-| Peaking | 8743 Hz  | 5.82 | -6.6 dB  |
-| Peaking | 18898 Hz | 1.2  | -8.1 dB  |
-| Peaking | 42 Hz    | 1.09 | -4.4 dB  |
-| Peaking | 77 Hz    | 4.74 | 5.5 dB   |
-| Peaking | 415 Hz   | 2.18 | -1.8 dB  |
-| Peaking | 3583 Hz  | 7.78 | 2.8 dB   |
-| Peaking | 13465 Hz | 8.36 | -3.0 dB  |
+| Peaking | 115 Hz   | 1.37 | -5.6 dB  |
+| Peaking | 4606 Hz  | 1.69 | 23.1 dB  |
+| Peaking | 5439 Hz  | 1.05 | -20.7 dB |
+| Peaking | 8735 Hz  | 5.88 | -6.6 dB  |
+| Peaking | 18873 Hz | 1.24 | -8.1 dB  |
+| Peaking | 43 Hz    | 1.1  | -4.4 dB  |
+| Peaking | 76 Hz    | 4.71 | 5.4 dB   |
+| Peaking | 410 Hz   | 2.18 | -1.8 dB  |
+| Peaking | 3427 Hz  | 4.26 | 1.9 dB   |
+| Peaking | 9844 Hz  | 3.48 | -0.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20770%20600%20Ohm/Beyerdynamic%20DT%20770%20600%20Ohm.png)

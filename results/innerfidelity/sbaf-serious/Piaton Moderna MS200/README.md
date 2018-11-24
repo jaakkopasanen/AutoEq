@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 0.4; 25 -0.2; 28 -1.0; 31 -1.7; 34 -2.3; 37 -2.8; 41 -3.5;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Piaton Moderna MS200 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Piaton Moderna MS200 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.1dB.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.1dB.
 | Peaking | 2156 Hz | 1.08 | -16.5 dB |
 | Peaking | 2969 Hz | 0.41 | 15.5 dB  |
 | Peaking | 7650 Hz | 0.95 | -9.7 dB  |
-| Peaking | 20 Hz   | 1.98 | 2.1 dB   |
-| Peaking | 2685 Hz | 5.61 | -1.2 dB  |
-| Peaking | 3726 Hz | 2.55 | 2.1 dB   |
-| Peaking | 4562 Hz | 3.39 | -3.0 dB  |
-| Peaking | 5605 Hz | 5.67 | 1.6 dB   |
+| Peaking | 21 Hz   | 2.22 | 2.3 dB   |
+| Peaking | 2651 Hz | 5.43 | -1.2 dB  |
+| Peaking | 3660 Hz | 2.53 | 2.1 dB   |
+| Peaking | 4607 Hz | 3.43 | -3.0 dB  |
+| Peaking | 5689 Hz | 5.56 | 1.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Piaton%20Moderna%20MS200/Piaton%20Moderna%20MS200.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 3.7; 25 3.4; 28 3.0; 31 2.8; 34 2.5; 37 2.4; 41 2.2; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Focal Elear sn1BEBG004809 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Elear sn1BEBG004809 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 14 Hz   |  0.35 | 4.2 dB  |
-| Peaking | 152 Hz  |  0.83 | -1.7 dB |
-| Peaking | 2338 Hz |  1.21 | -3.8 dB |
-| Peaking | 5291 Hz |  1.09 | 7.7 dB  |
-| Peaking | 8460 Hz |  2.66 | -5.1 dB |
-| Peaking | 770 Hz  |  2.08 | 0.9 dB  |
-| Peaking | 1658 Hz |  7.65 | -0.9 dB |
-| Peaking | 3998 Hz |  3.09 | -1.9 dB |
-| Peaking | 4102 Hz |  7.92 | 3.6 dB  |
-| Peaking | 6398 Hz | 10.2  | 1.0 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 14 Hz   | 0.35 | 4.2 dB  |
+| Peaking | 152 Hz  | 0.83 | -1.7 dB |
+| Peaking | 2338 Hz | 1.21 | -3.8 dB |
+| Peaking | 5291 Hz | 1.09 | 7.7 dB  |
+| Peaking | 8460 Hz | 2.66 | -5.1 dB |
+| Peaking | 770 Hz  | 2.08 | 0.9 dB  |
+| Peaking | 1658 Hz | 7.57 | -0.9 dB |
+| Peaking | 4021 Hz | 2.92 | -1.7 dB |
+| Peaking | 4073 Hz | 8.06 | 3.3 dB  |
+| Peaking | 6451 Hz | 9.85 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Focal%20Elear%20sn1BEBG004809/Focal%20Elear%20sn1BEBG004809.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.3; 25 0.7; 28 0.0; 31 -0.5; 34 -1.0; 37 -1.3; 41 -1.5; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.3dB` and instead set Global volume in the UI for both channels to **-32**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Musical Fidelity MF100 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-32**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Musical Fidelity MF100 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Musical Fidelity
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.6dB.
+When using independent subset of filters, apply preamp of **-3.6dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -3.6dB.
 | Peaking | 322 Hz   |  1.11 | 3.0 dB  |
 | Peaking | 683 Hz   |  3.07 | 2.8 dB  |
 | Peaking | 8529 Hz  |  2.88 | -4.2 dB |
-| Peaking | 25 Hz    |  1.29 | -0.4 dB |
-| Peaking | 531 Hz   |  4.55 | 0.4 dB  |
-| Peaking | 2379 Hz  |  1.71 | -1.4 dB |
-| Peaking | 4689 Hz  | 10.41 | -2.4 dB |
-| Peaking | 10656 Hz |  5.72 | 1.3 dB  |
+| Peaking | 25 Hz    |  1.38 | -0.4 dB |
+| Peaking | 530 Hz   |  4.55 | 0.4 dB  |
+| Peaking | 2378 Hz  |  1.7  | -1.4 dB |
+| Peaking | 4721 Hz  | 10.4  | -2.4 dB |
+| Peaking | 10662 Hz |  5.72 | 1.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Musical%20Fidelity%20MF100/Musical%20Fidelity%20MF100.png)

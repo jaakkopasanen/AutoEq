@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.9; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`FLC Technology FLC8 C C Gn Strin GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `FLC Technology FLC8 C C Gn Strin ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `FLC Technology F
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 0.42 | 6.3 dB   |
+| Peaking | 31 Hz    | 0.43 | 6.3 dB   |
 | Peaking | 3524 Hz  | 2.19 | 6.0 dB   |
-| Peaking | 5744 Hz  | 2.72 | 8.6 dB   |
-| Peaking | 7240 Hz  | 2.86 | -10.4 dB |
-| Peaking | 10302 Hz | 4.08 | -5.7 dB  |
-| Peaking | 737 Hz   | 1.15 | 2.5 dB   |
-| Peaking | 1327 Hz  | 1.45 | -3.5 dB  |
-| Peaking | 1964 Hz  | 1.89 | 2.5 dB   |
-| Peaking | 2729 Hz  | 8.94 | -2.3 dB  |
-| Peaking | 12875 Hz | 6.16 | 1.1 dB   |
+| Peaking | 5743 Hz  | 2.72 | 8.6 dB   |
+| Peaking | 7239 Hz  | 2.86 | -10.4 dB |
+| Peaking | 10303 Hz | 4.08 | -5.7 dB  |
+| Peaking | 739 Hz   | 1.13 | 2.5 dB   |
+| Peaking | 1325 Hz  | 1.45 | -3.5 dB  |
+| Peaking | 1981 Hz  | 1.88 | 2.5 dB   |
+| Peaking | 2751 Hz  | 8.85 | -2.3 dB  |
+| Peaking | 12803 Hz | 6.16 | 1.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/FLC%20Technology%20FLC8%20C%20C%20Gn%20Strin/FLC%20Technology%20FLC8%20C%20C%20Gn%20Strin.png)

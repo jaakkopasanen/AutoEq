@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.2; 31 4.1; 34 3.1; 37 2.2; 41 1.1; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Aiaiai TMA-1 Studio GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Aiaiai TMA-1 Studio ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Aiaiai TMA-1 Stu
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 24 Hz   | 0.92 | 8.0 dB  |
 | Peaking | 102 Hz  | 0.23 | -3.5 dB |
-| Peaking | 717 Hz  | 3.31 | 2.5 dB  |
-| Peaking | 2699 Hz | 1.18 | 6.2 dB  |
-| Peaking | 5312 Hz | 2.35 | 5.2 dB  |
-| Peaking | 1090 Hz | 7.48 | -0.9 dB |
-| Peaking | 2074 Hz | 5.83 | 0.6 dB  |
-| Peaking | 6308 Hz | 5.49 | 0.8 dB  |
-| Peaking | 6389 Hz | 7.32 | 2.3 dB  |
-| Peaking | 7396 Hz | 2.16 | -2.0 dB |
+| Peaking | 721 Hz  | 3.31 | 2.5 dB  |
+| Peaking | 2702 Hz | 1.18 | 6.2 dB  |
+| Peaking | 5306 Hz | 2.35 | 5.2 dB  |
+| Peaking | 1081 Hz | 7.23 | -1.0 dB |
+| Peaking | 2073 Hz | 5.83 | 0.6 dB  |
+| Peaking | 6281 Hz | 7.29 | 1.9 dB  |
+| Peaking | 6479 Hz | 6.37 | 1.4 dB  |
+| Peaking | 7353 Hz | 2.16 | -2.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Aiaiai%20TMA-1%20Studio/Aiaiai%20TMA-1%20Studio.png)

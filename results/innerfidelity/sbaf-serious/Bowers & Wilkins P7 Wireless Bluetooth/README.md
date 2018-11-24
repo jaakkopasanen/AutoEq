@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.3; 25 1.8; 28 1.3; 31 0.8; 34 0.4; 37 0.1; 41 -0.2; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.6dB` and instead set Global volume in the UI for both channels to **-56**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bowers & Wilkins P7 Wireless Bluetooth GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-56**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins P7 Wireless Bluetooth ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 1.97 | 3.1 dB  |
-| Peaking | 135 Hz  | 0.91 | -2.9 dB |
-| Peaking | 2127 Hz | 1.66 | -2.8 dB |
-| Peaking | 3276 Hz | 5.54 | 6.9 dB  |
-| Peaking | 6501 Hz | 5.13 | 3.8 dB  |
-| Peaking | 238 Hz  | 2.04 | -1.9 dB |
-| Peaking | 410 Hz  | 0.66 | 1.5 dB  |
-| Peaking | 1187 Hz | 3.36 | 1.1 dB  |
-| Peaking | 1695 Hz | 1.4  | -1.4 dB |
-| Peaking | 2099 Hz | 5.46 | 1.7 dB  |
+| Peaking | 21 Hz   | 2.03 | 3.0 dB  |
+| Peaking | 135 Hz  | 0.9  | -2.9 dB |
+| Peaking | 2119 Hz | 1.67 | -2.8 dB |
+| Peaking | 3249 Hz | 5.58 | 6.8 dB  |
+| Peaking | 6627 Hz | 5.21 | 3.8 dB  |
+| Peaking | 239 Hz  | 2.04 | -1.9 dB |
+| Peaking | 405 Hz  | 0.66 | 1.5 dB  |
+| Peaking | 1169 Hz | 4.13 | 0.9 dB  |
+| Peaking | 1805 Hz | 1.57 | -1.4 dB |
+| Peaking | 2082 Hz | 5.23 | 1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bowers%20&%20Wilkins%20P7%20Wireless%20Bluetooth/Bowers%20&%20Wilkins%20P7%20Wireless%20Bluetooth.png)

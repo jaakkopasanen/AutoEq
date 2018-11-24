@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.8; 28 5.2; 31 4.5; 34 3.8; 37 3.2; 41 2.6; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG Q701 Quincy Jones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG Q701 Quincy Jones ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG Q701 Quincy 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 0.88 | 6.2 dB  |
-| Peaking | 203 Hz  | 0.59 | -4.4 dB |
+| Peaking | 23 Hz   | 0.89 | 6.2 dB  |
+| Peaking | 201 Hz  | 0.58 | -4.5 dB |
 | Peaking | 2012 Hz | 2.86 | -5.8 dB |
 | Peaking | 3487 Hz | 2.98 | 3.3 dB  |
-| Peaking | 6399 Hz | 2.1  | -6.6 dB |
-| Peaking | 424 Hz  | 3.5  | -0.6 dB |
-| Peaking | 1166 Hz | 2.36 | 1.4 dB  |
-| Peaking | 1539 Hz | 4.64 | -1.2 dB |
-| Peaking | 8225 Hz | 4.91 | -3.1 dB |
-| Peaking | 9170 Hz | 1.79 | 1.6 dB  |
+| Peaking | 6398 Hz | 2.1  | -6.6 dB |
+| Peaking | 423 Hz  | 3.57 | -0.6 dB |
+| Peaking | 1160 Hz | 2.33 | 1.4 dB  |
+| Peaking | 1518 Hz | 4.62 | -1.2 dB |
+| Peaking | 8269 Hz | 4.92 | -3.1 dB |
+| Peaking | 9076 Hz | 1.78 | 1.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20Q701%20Quincy%20Jones/AKG%20Q701%20Quincy%20Jones.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Pioneer HDJ-500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pioneer HDJ-500 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Pioneer HDJ-500 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 29 Hz    | 0.57 | 6.4 dB  |
+| Peaking | 29 Hz    | 0.58 | 6.4 dB  |
 | Peaking | 899 Hz   | 0.79 | -2.2 dB |
-| Peaking | 3643 Hz  | 0.52 | 9.0 dB  |
-| Peaking | 5279 Hz  | 5.41 | -6.3 dB |
-| Peaking | 6846 Hz  | 0.76 | -4.8 dB |
-| Peaking | 2106 Hz  | 4.84 | 1.5 dB  |
-| Peaking | 4158 Hz  | 0.6  | -0.9 dB |
-| Peaking | 4380 Hz  | 7.43 | 2.7 dB  |
-| Peaking | 8630 Hz  | 1.84 | 0.8 dB  |
-| Peaking | 16719 Hz | 3.4  | -1.9 dB |
+| Peaking | 3598 Hz  | 0.52 | 8.8 dB  |
+| Peaking | 5280 Hz  | 5.44 | -6.3 dB |
+| Peaking | 6885 Hz  | 0.79 | -4.5 dB |
+| Peaking | 2102 Hz  | 4.88 | 1.5 dB  |
+| Peaking | 4116 Hz  | 0.61 | -0.8 dB |
+| Peaking | 4398 Hz  | 7.39 | 2.7 dB  |
+| Peaking | 8523 Hz  | 2.06 | 0.8 dB  |
+| Peaking | 16772 Hz | 3.4  | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20HDJ-500/Pioneer%20HDJ-500.png)

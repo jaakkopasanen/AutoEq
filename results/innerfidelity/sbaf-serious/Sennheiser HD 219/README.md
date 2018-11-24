@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.2; 25 2.6; 28 1.7; 31 0.9; 34 0.3; 37 -0.4; 41 -1.1; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.6dB` and instead set Global volume in the UI for both channels to **-55**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 219 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-55**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 219 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 21
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 16 Hz   | 0.6  | 5.8 dB  |
-| Peaking | 134 Hz  | 0.34 | -3.6 dB |
-| Peaking | 235 Hz  | 0.19 | -3.1 dB |
-| Peaking | 422 Hz  | 0.62 | 6.7 dB  |
-| Peaking | 6127 Hz | 4.9  | 6.3 dB  |
-| Peaking | 1581 Hz | 5.2  | 1.8 dB  |
-| Peaking | 1770 Hz | 4.09 | -2.0 dB |
-| Peaking | 4385 Hz | 1.08 | 1.6 dB  |
-| Peaking | 4455 Hz | 4.85 | -4.0 dB |
-| Peaking | 8552 Hz | 5.72 | -2.6 dB |
+| Peaking | 15 Hz   | 0.59 | 5.8 dB  |
+| Peaking | 134 Hz  | 0.34 | -3.7 dB |
+| Peaking | 236 Hz  | 0.19 | -3.2 dB |
+| Peaking | 422 Hz  | 0.62 | 6.8 dB  |
+| Peaking | 6106 Hz | 4.9  | 6.3 dB  |
+| Peaking | 1564 Hz | 5.45 | 1.9 dB  |
+| Peaking | 1778 Hz | 3.84 | -2.0 dB |
+| Peaking | 4348 Hz | 0.95 | 1.5 dB  |
+| Peaking | 4438 Hz | 4.94 | -3.8 dB |
+| Peaking | 8593 Hz | 5.85 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20219/Sennheiser%20HD%20219.png)

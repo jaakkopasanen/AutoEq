@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.5; 23 -2.9; 25 -3.3; 28 -3.7; 31 -4.1; 34 -4.4; 37 -4.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 770 32 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 770 32 Ohm ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 40 Hz    |  1.26 | -5.5 dB |
-| Peaking | 116 Hz   |  3.28 | -7.0 dB |
-| Peaking | 3657 Hz  |  4.25 | 8.0 dB  |
-| Peaking | 8332 Hz  |  1.15 | -6.5 dB |
-| Peaking | 18760 Hz |  1.86 | -7.1 dB |
-| Peaking | 229 Hz   |  3.61 | 2.8 dB  |
-| Peaking | 676 Hz   |  2.11 | 1.2 dB  |
-| Peaking | 2267 Hz  |  4.48 | -2.2 dB |
-| Peaking | 6472 Hz  | 16.2  | -2.3 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 40 Hz    | 1.26 | -5.5 dB |
+| Peaking | 116 Hz   | 3.28 | -7.0 dB |
+| Peaking | 3652 Hz  | 4.24 | 8.0 dB  |
+| Peaking | 8336 Hz  | 1.15 | -6.5 dB |
+| Peaking | 18661 Hz | 1.85 | -7.1 dB |
+| Peaking | 230 Hz   | 3.59 | 2.8 dB  |
+| Peaking | 676 Hz   | 2.12 | 1.2 dB  |
+| Peaking | 2268 Hz  | 4.4  | -2.2 dB |
+| Peaking | 9096 Hz  | 6.59 | -0.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20770%2032%20Ohm/Beyerdynamic%20DT%20770%2032%20Ohm.png)

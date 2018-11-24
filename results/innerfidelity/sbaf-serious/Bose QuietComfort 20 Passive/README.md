@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.9; 34 5.5; 37 4.6; 41 3.5; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bose QuietComfort 20 Passive GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfort 20 Passive ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfor
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
-| Peaking | 30 Hz    |  0.61 | 9.8 dB   |
-| Peaking | 82 Hz    |  0.36 | -6.4 dB  |
-| Peaking | 1544 Hz  |  1.77 | -15.1 dB |
-| Peaking | 1848 Hz  |  0.63 | 11.0 dB  |
-| Peaking | 5785 Hz  |  4.95 | 4.6 dB   |
-| Peaking | 331 Hz   |  1.65 | -4.7 dB  |
-| Peaking | 821 Hz   |  0.44 | 6.7 dB   |
-| Peaking | 1063 Hz  |  0.9  | -7.4 dB  |
-| Peaking | 4130 Hz  | 10.12 | -5.6 dB  |
-| Peaking | 21620 Hz |  1.59 | -1.7 dB  |
+| Peaking | 30 Hz    |  0.61 | 9.9 dB   |
+| Peaking | 82 Hz    |  0.35 | -6.4 dB  |
+| Peaking | 1529 Hz  |  1.77 | -15.1 dB |
+| Peaking | 1859 Hz  |  0.64 | 11.0 dB  |
+| Peaking | 5781 Hz  |  4.96 | 4.6 dB   |
+| Peaking | 332 Hz   |  1.63 | -4.9 dB  |
+| Peaking | 783 Hz   |  0.44 | 7.2 dB   |
+| Peaking | 1034 Hz  |  0.83 | -7.4 dB  |
+| Peaking | 4180 Hz  | 10.38 | -5.6 dB  |
+| Peaking | 21777 Hz |  1.26 | -1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bose%20QuietComfort%2020%20Passive/Bose%20QuietComfort%2020%20Passive.png)

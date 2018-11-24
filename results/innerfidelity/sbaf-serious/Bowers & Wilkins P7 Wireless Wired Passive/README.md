@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.2; 25 3.8; 28 3.3; 31 2.9; 34 2.6; 37 2.4; 41 2.1; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bowers & Wilkins P7 Wireless Wired Passive GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins P7 Wireless Wired Passive ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.2dB.
 | Peaking | 1945 Hz | 1.3  | -4.8 dB |
 | Peaking | 3240 Hz | 4.34 | 7.5 dB  |
 | Peaking | 6576 Hz | 5.17 | 4.2 dB  |
-| Peaking | 132 Hz  | 2.3  | -0.4 dB |
-| Peaking | 1116 Hz | 9.06 | 0.6 dB  |
-| Peaking | 2700 Hz | 7.8  | -0.8 dB |
-| Peaking | 5345 Hz | 5.49 | 2.8 dB  |
-| Peaking | 5908 Hz | 7.27 | -2.2 dB |
+| Peaking | 131 Hz  | 2.3  | -0.4 dB |
+| Peaking | 1112 Hz | 9.05 | 0.6 dB  |
+| Peaking | 2697 Hz | 7.81 | -0.8 dB |
+| Peaking | 5335 Hz | 5.48 | 2.8 dB  |
+| Peaking | 5860 Hz | 7.21 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bowers%20&%20Wilkins%20P7%20Wireless%20Wired%20Passive/Bowers%20&%20Wilkins%20P7%20Wireless%20Wired%20Passive.png)

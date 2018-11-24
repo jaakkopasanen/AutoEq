@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.6; 23 -1.1; 25 -1.5; 28 -2.0; 31 -2.5; 34 -2.8; 37 -3.1; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`1MORE Multi Unit Earphones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `1MORE Multi Unit Earphones ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `1MORE Multi Unit
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 83 Hz    | 0.54 | -5.1 dB |
 | Peaking | 195 Hz   | 1.07 | -3.1 dB |
-| Peaking | 1963 Hz  | 2.49 | -6.7 dB |
-| Peaking | 5773 Hz  | 2.75 | 7.7 dB  |
-| Peaking | 19084 Hz | 0.26 | -3.0 dB |
-| Peaking | 749 Hz   | 2.6  | 1.7 dB  |
-| Peaking | 3273 Hz  | 5.23 | 3.3 dB  |
-| Peaking | 4169 Hz  | 8.82 | -4.6 dB |
-| Peaking | 10474 Hz | 5.69 | -3.2 dB |
-| Peaking | 13185 Hz | 3.36 | 2.6 dB  |
+| Peaking | 1959 Hz  | 2.5  | -6.7 dB |
+| Peaking | 5819 Hz  | 2.76 | 7.7 dB  |
+| Peaking | 19212 Hz | 0.25 | -3.0 dB |
+| Peaking | 749 Hz   | 2.61 | 1.7 dB  |
+| Peaking | 3274 Hz  | 5.24 | 3.3 dB  |
+| Peaking | 4166 Hz  | 9.13 | -4.5 dB |
+| Peaking | 10471 Hz | 5.63 | -3.1 dB |
+| Peaking | 13181 Hz | 3.38 | 2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1MORE%20Multi%20Unit%20Earphones/1MORE%20Multi%20Unit%20Earphones.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.0; 25 -0.1; 28 -0.2; 31 -0.3; 34 -0.3; 37 -0.3; 41 -0.4;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`House of Marley Liberate XLBT Wired GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `House of Marley Liberate XLBT Wired ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `House of Marley 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 1633 Hz | 1.65 | -4.2 dB |
 | Peaking | 2078 Hz | 1.29 | 7.8 dB  |
 | Peaking | 4758 Hz | 1.39 | 6.2 dB  |
-| Peaking | 3543 Hz | 4.56 | 1.6 dB  |
-| Peaking | 4739 Hz | 3.94 | -0.8 dB |
-| Peaking | 6402 Hz | 3.08 | 4.0 dB  |
-| Peaking | 6527 Hz | 0.53 | -0.7 dB |
-| Peaking | 7459 Hz | 2.55 | -2.5 dB |
+| Peaking | 3540 Hz | 4.56 | 1.6 dB  |
+| Peaking | 4742 Hz | 3.95 | -0.8 dB |
+| Peaking | 6410 Hz | 3.07 | 4.1 dB  |
+| Peaking | 6508 Hz | 0.54 | -0.7 dB |
+| Peaking | 7444 Hz | 2.54 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/House%20of%20Marley%20Liberate%20XLBT%20Wired/House%20of%20Marley%20Liberate%20XLBT%20Wired.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.5; 31 5.1; 34 4.8; 37 4.5; 41 4.1; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 800 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 800 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 80
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 1.12 | 6.2 dB  |
-| Peaking | 60 Hz    | 2.61 | 3.1 dB  |
+| Peaking | 25 Hz    | 1.13 | 6.2 dB  |
+| Peaking | 59 Hz    | 2.61 | 3.1 dB  |
 | Peaking | 1912 Hz  | 1.77 | 3.0 dB  |
-| Peaking | 5708 Hz  | 5.13 | -8.0 dB |
-| Peaking | 21331 Hz | 0.17 | -6.1 dB |
-| Peaking | 243 Hz   | 0.88 | -1.9 dB |
-| Peaking | 3694 Hz  | 4.95 | 1.8 dB  |
-| Peaking | 9942 Hz  | 2.46 | 7.3 dB  |
-| Peaking | 11764 Hz | 1.1  | -6.3 dB |
-| Peaking | 15943 Hz | 1.73 | 3.8 dB  |
+| Peaking | 5709 Hz  | 5.13 | -8.0 dB |
+| Peaking | 21249 Hz | 0.18 | -6.1 dB |
+| Peaking | 244 Hz   | 0.86 | -1.9 dB |
+| Peaking | 3665 Hz  | 6.04 | 1.6 dB  |
+| Peaking | 9839 Hz  | 3.87 | 3.8 dB  |
+| Peaking | 11216 Hz | 3.75 | -1.6 dB |
+| Peaking | 12524 Hz | 3.94 | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)

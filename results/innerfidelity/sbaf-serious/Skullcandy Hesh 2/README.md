@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.5; 25 4.0; 28 3.5; 31 3.2; 34 2.9; 37 2.7; 41 2.6; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Skullcandy Hesh 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Hesh 2 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Hesh 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -30,7 +31,7 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 1022 Hz | 1.12 | -0.8 dB |
 | Peaking | 2372 Hz | 3.86 | 2.0 dB  |
 | Peaking | 3676 Hz | 2.85 | -1.1 dB |
-| Peaking | 6257 Hz | 2.36 | 5.4 dB  |
-| Peaking | 7389 Hz | 1.5  | -4.1 dB |
+| Peaking | 6258 Hz | 2.36 | 5.4 dB  |
+| Peaking | 7388 Hz | 1.5  | -4.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Hesh%202/Skullcandy%20Hesh%202.png)

@@ -9,27 +9,28 @@ GraphicEQ: 21 -5.9; 23 -5.9; 25 -5.9; 28 -5.9; 31 -5.9; 34 -6.0; 37 -6.0; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-49**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Read Heath Acoustics MA750 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-49**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Read Heath Acoustics MA750 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.0dB.
+When using independent subset of filters, apply preamp of **-5.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 38 Hz    | 0.18 | -5.9 dB |
 | Peaking | 227 Hz   | 0.69 | -3.5 dB |
-| Peaking | 4688 Hz  | 4.18 | -9.4 dB |
-| Peaking | 6347 Hz  | 4.71 | 6.1 dB  |
-| Peaking | 15013 Hz | 4.67 | -5.1 dB |
-| Peaking | 477 Hz   | 1.83 | -0.9 dB |
-| Peaking | 816 Hz   | 0.94 | 0.8 dB  |
-| Peaking | 2680 Hz  | 2.11 | 2.0 dB  |
-| Peaking | 3950 Hz  | 1.57 | -0.8 dB |
+| Peaking | 4724 Hz  | 4.18 | -9.4 dB |
+| Peaking | 6429 Hz  | 4.71 | 6.1 dB  |
+| Peaking | 15131 Hz | 4.68 | -5.1 dB |
+| Peaking | 498 Hz   | 1.44 | -1.3 dB |
+| Peaking | 671 Hz   | 0.7  | 1.1 dB  |
+| Peaking | 2605 Hz  | 2.62 | 1.7 dB  |
+| Peaking | 4112 Hz  | 6.65 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Read%20Heath%20Acoustics%20MA750/Read%20Heath%20Acoustics%20MA750.png)

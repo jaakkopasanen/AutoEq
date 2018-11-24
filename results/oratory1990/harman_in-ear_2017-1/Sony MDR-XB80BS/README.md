@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.0; 23 -2.1; 25 -2.1; 28 -2.1; 31 -2.2; 34 -2.3; 37 -2.4; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-XB80BS GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-XB80BS ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-XB80BS 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,9 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 1862 Hz  | 3    | 1.9 dB   |
 | Peaking | 3979 Hz  | 1.2  | 6.5 dB   |
 | Peaking | 18176 Hz | 1.25 | -12.0 dB |
-| Peaking | 14 Hz    | 2.03 | -0.8 dB  |
-| Peaking | 189 Hz   | 4.26 | -0.7 dB  |
-| Peaking | 348 Hz   | 2.16 | 0.9 dB   |
-| Peaking | 13490 Hz | 2.68 | 3.1 dB   |
-| Peaking | 15886 Hz | 3.76 | -3.5 dB  |
+| Peaking | 191 Hz   | 4.25 | -0.7 dB  |
+| Peaking | 348 Hz   | 2.17 | 0.9 dB   |
+| Peaking | 13429 Hz | 2.67 | 3.1 dB   |
+| Peaking | 15789 Hz | 3.77 | -3.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sony%20MDR-XB80BS/Sony%20MDR-XB80BS.png)

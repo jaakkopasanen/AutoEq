@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.9; 23 -4.2; 25 -4.5; 28 -4.8; 31 -5.0; 34 -5.1; 37 -5.2; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.0dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 770 250 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 770 250 Ohm ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.9dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 39 Hz    | 0.63 | -5.7 dB |
 | Peaking | 245 Hz   | 1.58 | 5.3 dB  |
 | Peaking | 3385 Hz  | 2.58 | 6.5 dB  |
-| Peaking | 15461 Hz | 0.33 | -4.0 dB |
+| Peaking | 15463 Hz | 0.33 | -4.0 dB |
 | Peaking | 19381 Hz | 1.07 | -5.7 dB |
-| Peaking | 102 Hz   | 5.74 | 5.7 dB  |
-| Peaking | 134 Hz   | 4.02 | -4.5 dB |
-| Peaking | 6153 Hz  | 6.77 | -3.4 dB |
-| Peaking | 9755 Hz  | 3.25 | 3.4 dB  |
-| Peaking | 12095 Hz | 4.81 | -4.0 dB |
+| Peaking | 103 Hz   | 5.76 | 5.7 dB  |
+| Peaking | 132 Hz   | 4.02 | -4.6 dB |
+| Peaking | 6177 Hz  | 6.75 | -3.4 dB |
+| Peaking | 9784 Hz  | 3.24 | 3.4 dB  |
+| Peaking | 12121 Hz | 4.8  | -4.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm/Beyerdynamic%20DT%20770%20250%20Ohm.png)

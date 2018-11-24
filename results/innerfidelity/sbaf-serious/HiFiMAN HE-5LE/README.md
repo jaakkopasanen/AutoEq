@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.6; 25 1.7; 28 0.9; 31 0.8; 34 0.9; 37 1.1; 41 1.3; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.5dB` and instead set Global volume in the UI for both channels to **-54**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiFiMAN HE-5LE GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-54**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-5LE ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-5LE P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.8dB.
+When using independent subset of filters, apply preamp of **-4.8dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
 | Peaking | 15 Hz    |  0.07 | 2.1 dB  |
 | Peaking | 271 Hz   |  0.6  | -4.2 dB |
 | Peaking | 1751 Hz  |  1.5  | 4.6 dB  |
-| Peaking | 2815 Hz  |  2.53 | 2.4 dB  |
-| Peaking | 8733 Hz  |  2.05 | -6.9 dB |
-| Peaking | 34 Hz    |  3.22 | -0.9 dB |
-| Peaking | 558 Hz   |  4.66 | -1.6 dB |
-| Peaking | 768 Hz   |  5.83 | 2.4 dB  |
-| Peaking | 6195 Hz  | 10.42 | -2.6 dB |
-| Peaking | 11541 Hz |  6.12 | 2.3 dB  |
+| Peaking | 2814 Hz  |  2.53 | 2.4 dB  |
+| Peaking | 8734 Hz  |  2.05 | -6.9 dB |
+| Peaking | 33 Hz    |  3.11 | -1.1 dB |
+| Peaking | 554 Hz   |  4.65 | -1.6 dB |
+| Peaking | 762 Hz   |  5.83 | 2.4 dB  |
+| Peaking | 6189 Hz  | 10.4  | -2.6 dB |
+| Peaking | 11506 Hz |  6.12 | 2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE-5LE/HiFiMAN%20HE-5LE.png)

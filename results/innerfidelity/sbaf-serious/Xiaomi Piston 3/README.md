@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.9; 23 -3.4; 25 -3.8; 28 -4.4; 31 -4.9; 34 -5.3; 37 -5.7; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.8dB` and instead set Global volume in the UI for both channels to **-47**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Xiaomi Piston 3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-47**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Xiaomi Piston 3 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Xiaomi Piston 3 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.0dB.
+When using independent subset of filters, apply preamp of **-5.0dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 76 Hz   | 0.41 | -7.5 dB |
-| Peaking | 207 Hz  | 0.84 | -4.3 dB |
-| Peaking | 2083 Hz | 1.64 | -5.3 dB |
-| Peaking | 4676 Hz | 4.73 | -7.3 dB |
-| Peaking | 6398 Hz | 4.66 | 5.8 dB  |
-| Peaking | 852 Hz  | 2.36 | 2.0 dB  |
-| Peaking | 1502 Hz | 3.32 | -1.6 dB |
-| Peaking | 2676 Hz | 1.64 | 1.8 dB  |
-| Peaking | 2688 Hz | 3.97 | -2.9 dB |
-| Peaking | 9933 Hz | 7.62 | -1.5 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 76 Hz    | 0.41 | -7.5 dB |
+| Peaking | 207 Hz   | 0.84 | -4.3 dB |
+| Peaking | 2083 Hz  | 1.64 | -5.3 dB |
+| Peaking | 4676 Hz  | 4.73 | -7.3 dB |
+| Peaking | 6398 Hz  | 4.66 | 5.8 dB  |
+| Peaking | 852 Hz   | 2.37 | 2.0 dB  |
+| Peaking | 1489 Hz  | 3.35 | -1.6 dB |
+| Peaking | 2647 Hz  | 1.67 | 1.9 dB  |
+| Peaking | 2732 Hz  | 3.95 | -3.0 dB |
+| Peaking | 10002 Hz | 7.63 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Xiaomi%20Piston%203/Xiaomi%20Piston%203.png)

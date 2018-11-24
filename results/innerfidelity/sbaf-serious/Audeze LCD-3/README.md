@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.4; 25 3.1; 28 2.4; 31 1.8; 34 1.6; 37 1.5; 41 1.4; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.5dB` and instead set Global volume in the UI for both channels to **-54**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeze LCD-3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-54**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-3 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-3 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.1dB.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -30,7 +31,7 @@ When using independent subset of filters, apply preamp of -5.1dB.
 | Peaking | 688 Hz   | 2.31 | -0.8 dB |
 | Peaking | 1146 Hz  | 3.56 | 1.1 dB  |
 | Peaking | 2190 Hz  | 2.62 | 0.8 dB  |
-| Peaking | 3279 Hz  | 3.86 | -1.7 dB |
-| Peaking | 3703 Hz  | 5    | 1.2 dB  |
+| Peaking | 3279 Hz  | 3.87 | -1.7 dB |
+| Peaking | 3704 Hz  | 5.01 | 1.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-3/Audeze%20LCD-3.png)

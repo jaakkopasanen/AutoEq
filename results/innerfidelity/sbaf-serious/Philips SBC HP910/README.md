@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.7; 37 5.2; 41 4.4; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips SBC HP910 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips SBC HP910 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips SBC HP91
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
-| Peaking | 28 Hz    |  1.09 | 6.8 dB   |
-| Peaking | 2524 Hz  |  0.6  | -5.3 dB  |
-| Peaking | 2879 Hz  |  3.64 | -3.7 dB  |
-| Peaking | 3318 Hz  |  0.21 | 3.5 dB   |
-| Peaking | 8051 Hz  |  2.23 | -10.6 dB |
-| Peaking | 163 Hz   |  1.28 | -2.0 dB  |
-| Peaking | 542 Hz   |  1.8  | 1.0 dB   |
-| Peaking | 4833 Hz  |  2.76 | 2.9 dB   |
-| Peaking | 4914 Hz  |  7.5  | -6.6 dB  |
-| Peaking | 10404 Hz | 10.34 | 2.1 dB   |
+| Peaking | 28 Hz    |  1.11 | 6.8 dB   |
+| Peaking | 2530 Hz  |  0.59 | -5.5 dB  |
+| Peaking | 2880 Hz  |  3.66 | -3.6 dB  |
+| Peaking | 3307 Hz  |  0.22 | 3.6 dB   |
+| Peaking | 8048 Hz  |  2.22 | -10.6 dB |
+| Peaking | 163 Hz   |  1.3  | -2.0 dB  |
+| Peaking | 538 Hz   |  1.82 | 0.9 dB   |
+| Peaking | 4786 Hz  |  2.85 | 3.3 dB   |
+| Peaking | 4935 Hz  |  7.27 | -6.9 dB  |
+| Peaking | 10346 Hz | 10.9  | 2.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20SBC%20HP910/Philips%20SBC%20HP910.png)

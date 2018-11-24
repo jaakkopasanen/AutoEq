@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.8; 23 -2.1; 25 -2.5; 28 -3.0; 31 -3.5; 34 -4.1; 37 -4.4; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-43**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Xaiomi Piston 3 Youth Edition GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-43**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Xaiomi Piston 3 Youth Edition ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Xaiomi Piston 3 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.3dB.
+When using independent subset of filters, apply preamp of **-4.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -4.3dB.
 | Peaking | 6420 Hz | 4.21 | 5.9 dB  |
 | Peaking | 408 Hz  | 2.12 | -0.8 dB |
 | Peaking | 819 Hz  | 1.45 | 1.3 dB  |
-| Peaking | 1627 Hz | 4.51 | -1.0 dB |
-| Peaking | 2912 Hz | 7.47 | -1.0 dB |
-| Peaking | 3526 Hz | 7.4  | 1.0 dB  |
+| Peaking | 1626 Hz | 4.51 | -1.0 dB |
+| Peaking | 2914 Hz | 7.47 | -1.0 dB |
+| Peaking | 3527 Hz | 7.4  | 1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Xaiomi%20Piston%203%20Youth%20Edition/Xaiomi%20Piston%203%20Youth%20Edition.png)

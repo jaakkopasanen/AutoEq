@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 5.0; 25 4.7; 28 4.4; 31 4.1; 34 3.8; 37 3.5; 41 3.2; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SE420 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SE420 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 209 Hz  | 0.82 | -2.4 dB |
 | Peaking | 2105 Hz | 1.73 | -4.0 dB |
 | Peaking | 4702 Hz | 1.28 | 6.6 dB  |
-| Peaking | 809 Hz  | 2.77 | 1.0 dB  |
-| Peaking | 3518 Hz | 3.94 | 2.6 dB  |
-| Peaking | 5551 Hz | 0.86 | -2.9 dB |
-| Peaking | 6206 Hz | 2.33 | 5.4 dB  |
-| Peaking | 7684 Hz | 2.86 | -2.2 dB |
+| Peaking | 807 Hz  | 2.78 | 1.0 dB  |
+| Peaking | 3496 Hz | 3.99 | 2.5 dB  |
+| Peaking | 5563 Hz | 0.87 | -2.9 dB |
+| Peaking | 6259 Hz | 2.34 | 5.5 dB  |
+| Peaking | 7539 Hz | 2.85 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Shure%20SE420/Shure%20SE420.png)

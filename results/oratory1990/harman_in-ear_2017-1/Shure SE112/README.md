@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.2; 23 -3.3; 25 -3.3; 28 -3.4; 31 -3.5; 34 -3.6; 37 -3.7; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SE112 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SE112 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Shure SE112 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 36 Hz    | 0.24 | -3.1 dB |
-| Peaking | 147 Hz   | 0.7  | -4.5 dB |
-| Peaking | 294 Hz   | 1.1  | -2.7 dB |
+| Peaking | 37 Hz    | 0.25 | -3.1 dB |
+| Peaking | 146 Hz   | 0.7  | -4.5 dB |
+| Peaking | 293 Hz   | 1.09 | -2.7 dB |
 | Peaking | 3127 Hz  | 3.66 | 6.0 dB  |
 | Peaking | 6024 Hz  | 5.08 | 6.8 dB  |
-| Peaking | 831 Hz   | 4.37 | 1.0 dB  |
-| Peaking | 3758 Hz  | 5.83 | 2.6 dB  |
-| Peaking | 4583 Hz  | 5.13 | -6.0 dB |
-| Peaking | 5332 Hz  | 8.15 | 4.0 dB  |
-| Peaking | 14804 Hz | 3.95 | -5.2 dB |
+| Peaking | 831 Hz   | 4.43 | 1.0 dB  |
+| Peaking | 3743 Hz  | 5.81 | 2.6 dB  |
+| Peaking | 4565 Hz  | 5.11 | -6.0 dB |
+| Peaking | 5303 Hz  | 8.1  | 4.0 dB  |
+| Peaking | 14726 Hz | 3.95 | -5.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Shure%20SE112/Shure%20SE112.png)

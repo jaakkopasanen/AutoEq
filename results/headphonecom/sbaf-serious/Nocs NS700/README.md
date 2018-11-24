@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.6; 25 0.1; 28 -0.5; 31 -1.0; 34 -1.4; 37 -1.7; 41 -1.9; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-43**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Nocs NS700 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-43**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Nocs NS700 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Nocs NS700 Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.7dB.
+When using independent subset of filters, apply preamp of **-4.7dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -4.7dB.
 | Peaking | 337 Hz  |  2.88 | -5.4 dB |
 | Peaking | 4504 Hz |  6.56 | 4.7 dB  |
 | Peaking | 7144 Hz |  9.68 | -5.5 dB |
-| Peaking | 18 Hz   |  2.03 | 1.8 dB  |
-| Peaking | 139 Hz  |  6.31 | -0.7 dB |
+| Peaking | 20 Hz   |  2.01 | 2.0 dB  |
+| Peaking | 139 Hz  |  6.03 | -0.6 dB |
 | Peaking | 2120 Hz |  2.65 | 1.1 dB  |
-| Peaking | 3198 Hz |  4.05 | -2.1 dB |
-| Peaking | 6061 Hz | 11.7  | 3.8 dB  |
+| Peaking | 3196 Hz |  4.04 | -2.1 dB |
+| Peaking | 6060 Hz | 11.61 | 3.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Nocs%20NS700/Nocs%20NS700.png)

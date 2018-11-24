@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.2; 25 4.0; 28 3.6; 31 3.2; 34 2.9; 37 2.6; 41 2.3; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.7dB` and instead set Global volume in the UI for both channels to **-47**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bowers & Wilkins P5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-47**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins P5 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.6dB.
+When using independent subset of filters, apply preamp of **-4.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 22 Hz   | 1.11 | 4.4 dB  |
-| Peaking | 46 Hz   | 1.78 | 1.4 dB  |
-| Peaking | 175 Hz  | 1.01 | -5.9 dB |
-| Peaking | 2278 Hz | 1.95 | -3.3 dB |
-| Peaking | 5710 Hz | 1.9  | 3.7 dB  |
-| Peaking | 99 Hz   | 4.07 | -0.8 dB |
-| Peaking | 267 Hz  | 3.39 | -1.5 dB |
-| Peaking | 491 Hz  | 1.36 | 1.5 dB  |
-| Peaking | 4028 Hz | 9.85 | 1.0 dB  |
-| Peaking | 8419 Hz | 4.47 | -1.0 dB |
+| Peaking | 42 Hz   | 1.8  | 1.5 dB  |
+| Peaking | 175 Hz  | 0.99 | -5.9 dB |
+| Peaking | 2279 Hz | 1.95 | -3.3 dB |
+| Peaking | 5708 Hz | 1.9  | 3.7 dB  |
+| Peaking | 175 Hz  | 2.2  | 2.4 dB  |
+| Peaking | 234 Hz  | 0.85 | -2.4 dB |
+| Peaking | 451 Hz  | 1.18 | 2.3 dB  |
+| Peaking | 4022 Hz | 9.84 | 1.0 dB  |
+| Peaking | 8356 Hz | 4.49 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bowers%20&%20Wilkins%20P5/Bowers%20&%20Wilkins%20P5.png)

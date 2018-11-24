@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.6; 31 4.7; 34 3.7; 37 2.9; 41 1.9; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Nixon RPM GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Nixon RPM ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Nixon RPM Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 609 Hz  | 1.87 | 2.7 dB  |
 | Peaking | 2705 Hz | 0.83 | 7.7 dB  |
 | Peaking | 5754 Hz | 3.55 | 4.4 dB  |
-| Peaking | 271 Hz  | 5.37 | 0.6 dB  |
-| Peaking | 2069 Hz | 3.59 | 2.6 dB  |
-| Peaking | 2209 Hz | 1.41 | -1.6 dB |
-| Peaking | 4070 Hz | 5.23 | 1.6 dB  |
-| Peaking | 8569 Hz | 2.96 | -1.4 dB |
+| Peaking | 271 Hz  | 5.5  | 0.6 dB  |
+| Peaking | 2067 Hz | 3.57 | 2.6 dB  |
+| Peaking | 2207 Hz | 1.43 | -1.7 dB |
+| Peaking | 4074 Hz | 5.25 | 1.6 dB  |
+| Peaking | 8568 Hz | 2.95 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Nixon%20RPM/Nixon%20RPM.png)

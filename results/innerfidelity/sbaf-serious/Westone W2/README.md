@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.8; 25 2.7; 28 2.6; 31 2.5; 34 2.4; 37 2.3; 41 2.1; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Westone W2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Westone W2 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Westone W2 Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 208 Hz  | 0.73 | -2.7 dB |
 | Peaking | 1990 Hz | 1.72 | -5.2 dB |
 | Peaking | 3760 Hz | 0.9  | 7.6 dB  |
-| Peaking | 775 Hz  | 2.14 | 1.3 dB  |
-| Peaking | 1968 Hz | 0.14 | -0.4 dB |
-| Peaking | 2991 Hz | 8.74 | 1.9 dB  |
-| Peaking | 6272 Hz | 2.81 | 6.0 dB  |
-| Peaking | 7012 Hz | 1.42 | -3.7 dB |
+| Peaking | 777 Hz  | 2.14 | 1.3 dB  |
+| Peaking | 1819 Hz | 0.15 | -0.3 dB |
+| Peaking | 3017 Hz | 8.74 | 1.8 dB  |
+| Peaking | 6193 Hz | 2.81 | 5.8 dB  |
+| Peaking | 7113 Hz | 1.38 | -3.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Westone%20W2/Westone%20W2.png)

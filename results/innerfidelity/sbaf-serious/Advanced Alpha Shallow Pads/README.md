@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 1.1; 25 1.1; 28 1.1; 31 1.2; 34 1.2; 37 1.3; 41 1.2; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.0dB` and instead set Global volume in the UI for both channels to **-39**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Advanced Alpha Shallow Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-39**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Advanced Alpha Shallow Pads ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 251 Hz   | 1.03 | -3.0 dB |
 | Peaking | 2906 Hz  | 3.01 | -7.7 dB |
-| Peaking | 14383 Hz | 4.68 | -2.2 dB |
-| Peaking | 14530 Hz | 4.59 | -2.5 dB |
+| Peaking | 14540 Hz | 4.63 | -2.2 dB |
+| Peaking | 14559 Hz | 4.55 | -2.5 dB |
 | Peaking | 24000 Hz | 1.88 | -1.4 dB |
-| Peaking | 39 Hz    | 0.87 | 1.5 dB  |
-| Peaking | 1960 Hz  | 2.59 | 2.5 dB  |
-| Peaking | 2282 Hz  | 4.12 | -2.8 dB |
-| Peaking | 9014 Hz  | 3.53 | -4.7 dB |
-| Peaking | 9639 Hz  | 1.2  | 1.6 dB  |
+| Peaking | 40 Hz    | 0.85 | 1.6 dB  |
+| Peaking | 1965 Hz  | 2.6  | 2.4 dB  |
+| Peaking | 2275 Hz  | 4.15 | -2.8 dB |
+| Peaking | 9009 Hz  | 3.57 | -4.6 dB |
+| Peaking | 9573 Hz  | 1.2  | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Advanced%20Alpha%20Shallow%20Pads/Advanced%20Alpha%20Shallow%20Pads.png)

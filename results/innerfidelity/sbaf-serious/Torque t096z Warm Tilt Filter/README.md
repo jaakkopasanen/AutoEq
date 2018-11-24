@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.5; 23 -4.8; 25 -5.0; 28 -5.4; 31 -5.6; 34 -5.8; 37 -5.9; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.9dB` and instead set Global volume in the UI for both channels to **-59**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Torque t096z Warm Tilt Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-59**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t096z Warm Tilt Filter ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Torque t096z War
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 55 Hz   | 0.33 | -6.2 dB |
 | Peaking | 179 Hz  | 0.77 | -4.4 dB |
 | Peaking | 2124 Hz | 2.54 | -7.7 dB |
-| Peaking | 4680 Hz | 6.94 | -7.6 dB |
-| Peaking | 6119 Hz | 4.09 | 6.9 dB  |
-| Peaking | 787 Hz  | 2.26 | 1.7 dB  |
-| Peaking | 1558 Hz | 4.77 | -1.6 dB |
-| Peaking | 2580 Hz | 6.47 | -2.5 dB |
-| Peaking | 3461 Hz | 3.26 | 3.8 dB  |
-| Peaking | 4272 Hz | 7.61 | -2.6 dB |
+| Peaking | 4679 Hz | 6.94 | -7.6 dB |
+| Peaking | 6117 Hz | 4.09 | 6.9 dB  |
+| Peaking | 787 Hz  | 2.27 | 1.7 dB  |
+| Peaking | 1559 Hz | 4.71 | -1.6 dB |
+| Peaking | 2572 Hz | 6.27 | -2.6 dB |
+| Peaking | 3499 Hz | 2.94 | 4.1 dB  |
+| Peaking | 4241 Hz | 5.09 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t096z%20Warm%20Tilt%20Filter/Torque%20t096z%20Warm%20Tilt%20Filter.png)

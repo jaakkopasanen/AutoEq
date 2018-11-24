@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Etymotic Mk5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Etymotic Mk5 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Etymotic Mk5 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 1659 Hz | 1.36 | -5.3 dB |
 | Peaking | 2250 Hz | 2.55 | -4.0 dB |
 | Peaking | 5606 Hz | 2.17 | 4.0 dB  |
-| Peaking | 3229 Hz | 7.23 | 1.0 dB  |
-| Peaking | 3874 Hz | 7.41 | -1.1 dB |
-| Peaking | 6752 Hz | 8.82 | 2.3 dB  |
-| Peaking | 7642 Hz | 2.28 | -1.0 dB |
+| Peaking | 3267 Hz | 7.23 | 1.0 dB  |
+| Peaking | 3926 Hz | 7.42 | -1.1 dB |
+| Peaking | 6768 Hz | 8.83 | 2.3 dB  |
+| Peaking | 7648 Hz | 2.28 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Etymotic%20Mk5/Etymotic%20Mk5.png)

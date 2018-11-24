@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.1; 25 2.8; 28 2.4; 31 2.1; 34 1.9; 37 1.7; 41 1.6; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.7dB` and instead set Global volume in the UI for both channels to **-36**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 800 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-36**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 800 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 80
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.6dB.
+When using independent subset of filters, apply preamp of **-3.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 17 Hz    | 0.59 | 3.7 dB  |
-| Peaking | 57 Hz    | 2.08 | 2.2 dB  |
-| Peaking | 222 Hz   | 0.39 | -3.0 dB |
-| Peaking | 4026 Hz  | 0.42 | 4.1 dB  |
-| Peaking | 5738 Hz  | 1.27 | -8.3 dB |
-| Peaking | 1989 Hz  | 2.38 | -2.0 dB |
-| Peaking | 1995 Hz  | 1.29 | 1.4 dB  |
-| Peaking | 6848 Hz  | 6.98 | -1.3 dB |
-| Peaking | 8400 Hz  | 3.89 | 1.2 dB  |
-| Peaking | 13389 Hz | 0.83 | -0.3 dB |
+| Peaking | 59 Hz    | 2.09 | 2.2 dB  |
+| Peaking | 216 Hz   | 0.38 | -3.0 dB |
+| Peaking | 4015 Hz  | 0.42 | 4.1 dB  |
+| Peaking | 5743 Hz  | 1.27 | -8.3 dB |
+| Peaking | 1972 Hz  | 2.34 | -2.1 dB |
+| Peaking | 1977 Hz  | 1.3  | 1.4 dB  |
+| Peaking | 6773 Hz  | 6.97 | -1.3 dB |
+| Peaking | 8316 Hz  | 3.8  | 1.2 dB  |
+| Peaking | 13391 Hz | 0.83 | -0.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)

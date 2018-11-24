@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.6; 25 2.3; 28 1.9; 31 1.6; 34 1.4; 37 1.3; 41 1.2; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Takstar Pro 80 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Takstar Pro 80 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Takstar Pro 80 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 21 Hz   | 1.13 | 2.8 dB   |
-| Peaking | 1952 Hz | 1.12 | -16.4 dB |
-| Peaking | 2619 Hz | 0.54 | 13.5 dB  |
-| Peaking | 6228 Hz | 6.26 | 2.9 dB   |
-| Peaking | 9222 Hz | 2.47 | -6.6 dB  |
-| Peaking | 197 Hz  | 1.14 | -1.7 dB  |
-| Peaking | 475 Hz  | 1.86 | 1.9 dB   |
-| Peaking | 1304 Hz | 3.49 | -0.8 dB  |
-| Peaking | 4800 Hz | 2.51 | 1.6 dB   |
-| Peaking | 4912 Hz | 8.45 | -4.8 dB  |
+| Peaking | 23 Hz   | 1.08 | 2.8 dB   |
+| Peaking | 1955 Hz | 1.12 | -16.3 dB |
+| Peaking | 2615 Hz | 0.54 | 13.5 dB  |
+| Peaking | 6228 Hz | 6.25 | 2.9 dB   |
+| Peaking | 9217 Hz | 2.48 | -6.6 dB  |
+| Peaking | 196 Hz  | 1.09 | -1.7 dB  |
+| Peaking | 474 Hz  | 1.86 | 1.9 dB   |
+| Peaking | 1306 Hz | 3.3  | -0.9 dB  |
+| Peaking | 4760 Hz | 2.47 | 1.7 dB   |
+| Peaking | 4940 Hz | 8.37 | -4.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Takstar%20Pro%2080/Takstar%20Pro%2080.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.9; 25 3.0; 28 1.8; 31 0.7; 34 -0.2; 37 -0.9; 41 -1.5; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.5dB` and instead set Global volume in the UI for both channels to **-54**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Meze 99 Classic with New Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-54**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Meze 99 Classic with New Pads ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Meze 99 Classic 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.1dB.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|

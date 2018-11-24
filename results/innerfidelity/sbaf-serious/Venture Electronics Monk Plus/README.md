@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Venture Electronics Monk Plus GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Venture Electronics Monk Plus ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.4dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 40 Hz    | 0.75 | 7.2 dB  |
+| Peaking | 41 Hz    | 0.75 | 7.3 dB  |
 | Peaking | 2209 Hz  | 1.85 | -8.6 dB |
 | Peaking | 7755 Hz  | 4.17 | -6.2 dB |
-| Peaking | 15124 Hz | 2.95 | -6.8 dB |
+| Peaking | 15126 Hz | 2.9  | -6.7 dB |
 | Peaking | 24000 Hz | 1.64 | -4.4 dB |
-| Peaking | 20 Hz    | 3.03 | 2.7 dB  |
-| Peaking | 84 Hz    | 2.23 | 3.5 dB  |
-| Peaking | 192 Hz   | 0.8  | -3.4 dB |
-| Peaking | 2707 Hz  | 0.07 | 0.6 dB  |
-| Peaking | 4862 Hz  | 6.29 | -4.3 dB |
+| Peaking | 20 Hz    | 2.99 | 2.5 dB  |
+| Peaking | 83 Hz    | 2.24 | 3.4 dB  |
+| Peaking | 193 Hz   | 0.8  | -3.4 dB |
+| Peaking | 2748 Hz  | 0.07 | 0.6 dB  |
+| Peaking | 4881 Hz  | 6.28 | -4.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Venture%20Electronics%20Monk%20Plus/Venture%20Electronics%20Monk%20Plus.png)

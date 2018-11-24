@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.1; 23 -2.9; 25 -3.5; 28 -4.3; 31 -4.9; 34 -5.3; 37 -5.6; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.8dB` and instead set Global volume in the UI for both channels to **-58**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Nu Force HP-800 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-58**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Nu Force HP-800 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Nu Force HP-800 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.0dB.
+When using independent subset of filters, apply preamp of **-6.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 54 Hz   |  0.5  | -5.8 dB |
-| Peaking | 143 Hz  |  1.04 | -5.1 dB |
+| Peaking | 144 Hz  |  1.03 | -5.1 dB |
 | Peaking | 248 Hz  |  2.18 | -3.9 dB |
-| Peaking | 2660 Hz |  1.71 | -7.2 dB |
-| Peaking | 5423 Hz |  3.92 | 6.8 dB  |
-| Peaking | 418 Hz  |  6.77 | 1.8 dB  |
-| Peaking | 679 Hz  |  4.65 | -1.5 dB |
-| Peaking | 1229 Hz |  2.23 | 1.6 dB  |
-| Peaking | 1804 Hz |  3.81 | -1.2 dB |
-| Peaking | 7134 Hz | 11.67 | -1.8 dB |
+| Peaking | 2658 Hz |  1.71 | -7.2 dB |
+| Peaking | 5383 Hz |  3.91 | 6.8 dB  |
+| Peaking | 415 Hz  |  6.67 | 1.9 dB  |
+| Peaking | 673 Hz  |  4.68 | -1.5 dB |
+| Peaking | 1228 Hz |  2.26 | 1.6 dB  |
+| Peaking | 1803 Hz |  3.78 | -1.1 dB |
+| Peaking | 7173 Hz | 12.3  | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Nu%20Force%20HP-800/Nu%20Force%20HP-800.png)

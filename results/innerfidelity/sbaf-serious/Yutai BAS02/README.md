@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.0; 23 -1.1; 25 -1.2; 28 -1.3; 31 -1.5; 34 -1.6; 37 -1.7; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Yutai BAS02 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yutai BAS02 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Yutai BAS02 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.1dB.
 | Peaking | 331 Hz  | 1.33 | -1.7 dB |
 | Peaking | 2569 Hz | 1.27 | -2.8 dB |
 | Peaking | 4399 Hz | 1.25 | 7.8 dB  |
-| Peaking | 1463 Hz | 1    | 1.4 dB  |
-| Peaking | 1515 Hz | 2.12 | -2.1 dB |
-| Peaking | 4595 Hz | 7.05 | -1.3 dB |
-| Peaking | 6372 Hz | 3.07 | 4.3 dB  |
-| Peaking | 7458 Hz | 1.77 | -3.2 dB |
+| Peaking | 1466 Hz | 1    | 1.4 dB  |
+| Peaking | 1511 Hz | 2.12 | -2.1 dB |
+| Peaking | 4586 Hz | 7.05 | -1.3 dB |
+| Peaking | 6356 Hz | 3.07 | 4.2 dB  |
+| Peaking | 7486 Hz | 1.78 | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yutai%20BAS02/Yutai%20BAS02.png)

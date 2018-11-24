@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.3; 23 -0.4; 25 -0.4; 28 -0.6; 31 -0.7; 34 -0.7; 37 -0.8; 41 -0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.0dB` and instead set Global volume in the UI for both channels to **-40**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips Fidelio S2 Early 2013 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-40**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips Fidelio S2 Early 2013 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips Fidelio 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.1dB.
+When using independent subset of filters, apply preamp of **-4.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 119 Hz  | 0.75 | -2.8 dB |
 | Peaking | 1908 Hz | 1.99 | -4.1 dB |
-| Peaking | 3528 Hz | 2.93 | 4.1 dB  |
-| Peaking | 4753 Hz | 3.5  | -5.1 dB |
-| Peaking | 6492 Hz | 4.93 | 4.6 dB  |
-| Peaking | 34 Hz   | 1.46 | -0.4 dB |
-| Peaking | 240 Hz  | 1.94 | -0.6 dB |
+| Peaking | 3530 Hz | 2.93 | 4.1 dB  |
+| Peaking | 4756 Hz | 3.5  | -5.1 dB |
+| Peaking | 6498 Hz | 4.93 | 4.6 dB  |
+| Peaking | 37 Hz   | 1.54 | -0.4 dB |
+| Peaking | 240 Hz  | 1.93 | -0.6 dB |
 | Peaking | 715 Hz  | 1.17 | 1.7 dB  |
-| Peaking | 1142 Hz | 2.69 | -0.5 dB |
-| Peaking | 1464 Hz | 4.52 | -0.9 dB |
+| Peaking | 1143 Hz | 2.69 | -0.5 dB |
+| Peaking | 1466 Hz | 4.52 | -0.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20Fidelio%20S2%20Early%202013/Philips%20Fidelio%20S2%20Early%202013.png)

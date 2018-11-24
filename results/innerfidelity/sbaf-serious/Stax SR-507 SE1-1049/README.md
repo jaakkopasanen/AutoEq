@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.4; 25 3.7; 28 3.0; 31 2.7; 34 2.6; 37 2.8; 41 3.1; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.0dB` and instead set Global volume in the UI for both channels to **-59**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-507 SE1-1049 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-59**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-507 SE1-1049 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.2dB.
+When using independent subset of filters, apply preamp of **-4.3dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 10 Hz   |  0.14 | 3.6 dB  |
-| Peaking | 691 Hz  |  0.06 | 1.6 dB  |
-| Peaking | 1728 Hz |  1.3  | -6.1 dB |
-| Peaking | 2264 Hz |  3.44 | 6.4 dB  |
-| Peaking | 9268 Hz |  4.39 | -5.6 dB |
-| Peaking | 36 Hz   |  2.84 | -1.0 dB |
-| Peaking | 63 Hz   |  2.84 | 0.8 dB  |
-| Peaking | 4109 Hz |  6.33 | 2.4 dB  |
-| Peaking | 4473 Hz |  4.96 | -2.9 dB |
-| Peaking | 6798 Hz | 10.63 | 3.0 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 10 Hz   | 0.13 | 3.6 dB  |
+| Peaking | 691 Hz  | 0.06 | 1.6 dB  |
+| Peaking | 1724 Hz | 1.3  | -6.1 dB |
+| Peaking | 2276 Hz | 3.42 | 6.4 dB  |
+| Peaking | 9277 Hz | 4.39 | -5.6 dB |
+| Peaking | 33 Hz   | 2.85 | -1.0 dB |
+| Peaking | 61 Hz   | 2.85 | 0.8 dB  |
+| Peaking | 553 Hz  | 2.4  | 0.3 dB  |
+| Peaking | 6353 Hz | 2.14 | -1.9 dB |
+| Peaking | 6778 Hz | 6.11 | 4.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-507%20SE1-1049/Stax%20SR-507%20SE1-1049.png)

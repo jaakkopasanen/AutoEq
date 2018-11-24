@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.1; 23 -1.3; 25 -1.4; 28 -1.6; 31 -1.7; 34 -1.8; 37 -1.9; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiSoundAudio Crystal GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiSoundAudio Crystal ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `HiSoundAudio Cry
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 102 Hz   |  0.55 | -3.9 dB |
-| Peaking | 225 Hz   |  1.09 | -2.7 dB |
-| Peaking | 1787 Hz  |  2.47 | -5.2 dB |
-| Peaking | 2740 Hz  |  7.14 | 7.6 dB  |
-| Peaking | 6474 Hz  |  4.79 | -7.2 dB |
-| Peaking | 26 Hz    |  1.6  | -0.6 dB |
-| Peaking | 781 Hz   |  2.85 | 1.5 dB  |
-| Peaking | 3997 Hz  | 10.71 | 2.2 dB  |
-| Peaking | 8401 Hz  |  4.93 | 1.1 dB  |
-| Peaking | 16192 Hz |  2.02 | -3.2 dB |
+| Peaking | 102 Hz   |  0.54 | -3.9 dB |
+| Peaking | 226 Hz   |  1.09 | -2.7 dB |
+| Peaking | 1788 Hz  |  2.45 | -5.2 dB |
+| Peaking | 2730 Hz  |  7.05 | 7.6 dB  |
+| Peaking | 6426 Hz  |  4.79 | -7.2 dB |
+| Peaking | 25 Hz    |  1.5  | -0.7 dB |
+| Peaking | 780 Hz   |  2.83 | 1.5 dB  |
+| Peaking | 3953 Hz  | 10.61 | 2.2 dB  |
+| Peaking | 8489 Hz  |  4.88 | 1.0 dB  |
+| Peaking | 16190 Hz |  2.01 | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiSoundAudio%20Crystal/HiSoundAudio%20Crystal.png)

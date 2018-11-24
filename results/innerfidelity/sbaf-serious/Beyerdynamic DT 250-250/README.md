@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.7; 34 5.3; 37 5.0; 41 4.6; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 250-250 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 250-250 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 1.17 | 4.7 dB  |
-| Peaking | 33 Hz   | 1.5  | 2.4 dB  |
-| Peaking | 85 Hz   | 0.67 | 3.4 dB  |
+| Peaking | 21 Hz   | 1.18 | 4.7 dB  |
+| Peaking | 32 Hz   | 1.5  | 2.5 dB  |
+| Peaking | 87 Hz   | 0.65 | 3.5 dB  |
 | Peaking | 3321 Hz | 4.48 | 5.2 dB  |
-| Peaking | 5870 Hz | 3.66 | 6.6 dB  |
-| Peaking | 97 Hz   | 1.9  | 2.9 dB  |
-| Peaking | 103 Hz  | 0.84 | -3.2 dB |
-| Peaking | 357 Hz  | 0.07 | 1.0 dB  |
-| Peaking | 1648 Hz | 2    | -4.4 dB |
-| Peaking | 9283 Hz | 4.45 | -2.2 dB |
+| Peaking | 5871 Hz | 3.66 | 6.6 dB  |
+| Peaking | 101 Hz  | 1.93 | 2.7 dB  |
+| Peaking | 106 Hz  | 0.86 | -3.0 dB |
+| Peaking | 449 Hz  | 0.1  | 0.9 dB  |
+| Peaking | 1660 Hz | 2.02 | -4.4 dB |
+| Peaking | 9419 Hz | 4.46 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20250-250/Beyerdynamic%20DT%20250-250.png)

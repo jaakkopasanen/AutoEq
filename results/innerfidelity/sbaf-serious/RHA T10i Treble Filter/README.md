@@ -9,28 +9,29 @@ GraphicEQ: 21 -9.7; 23 -9.7; 25 -9.8; 28 -10.2; 31 -10.5; 34 -10.6; 37 -10.7; 41
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`RHA T10i Treble Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `RHA T10i Treble Filter ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
-| Type    | Fc       |     Q | Gain     |
-|:--------|:---------|:------|:---------|
-| Peaking | 41 Hz    |  0.24 | -10.4 dB |
-| Peaking | 186 Hz   |  0.64 | -4.9 dB  |
-| Peaking | 2471 Hz  |  1.69 | -7.8 dB  |
-| Peaking | 5865 Hz  |  1.48 | 9.4 dB   |
-| Peaking | 9106 Hz  |  3.22 | -17.8 dB |
-| Peaking | 891 Hz   |  0.61 | -2.0 dB  |
-| Peaking | 909 Hz   |  1.19 | 3.5 dB   |
-| Peaking | 5793 Hz  | 11.31 | -0.7 dB  |
-| Peaking | 10286 Hz |  6.13 | -5.4 dB  |
-| Peaking | 11406 Hz |  2.64 | 3.8 dB   |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 42 Hz    | 0.24 | -10.4 dB |
+| Peaking | 187 Hz   | 0.64 | -4.9 dB  |
+| Peaking | 2471 Hz  | 1.69 | -7.8 dB  |
+| Peaking | 5870 Hz  | 1.48 | 9.5 dB   |
+| Peaking | 9107 Hz  | 3.22 | -17.8 dB |
+| Peaking | 919 Hz   | 1.24 | 3.4 dB   |
+| Peaking | 946 Hz   | 0.64 | -1.9 dB  |
+| Peaking | 10305 Hz | 6.96 | -4.4 dB  |
+| Peaking | 11513 Hz | 4.55 | 3.0 dB   |
+| Peaking | 13123 Hz | 1.6  | 0.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/RHA%20T10i%20Treble%20Filter/RHA%20T10i%20Treble%20Filter.png)

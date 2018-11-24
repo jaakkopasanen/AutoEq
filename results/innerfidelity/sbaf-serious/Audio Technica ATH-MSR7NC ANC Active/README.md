@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.7; 25 5.4; 28 4.8; 31 4.3; 34 3.9; 37 3.6; 41 3.3; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-MSR7NC ANC Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-MSR7NC ANC Active ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 15 Hz   | 0.36 | 6.3 dB  |
-| Peaking | 516 Hz  | 1.35 | 5.2 dB  |
+| Peaking | 15 Hz   | 0.36 | 6.2 dB  |
+| Peaking | 517 Hz  | 1.35 | 5.2 dB  |
 | Peaking | 1815 Hz | 1.53 | -4.9 dB |
-| Peaking | 3238 Hz | 3.15 | 4.8 dB  |
-| Peaking | 6084 Hz | 5.45 | 6.9 dB  |
-| Peaking | 229 Hz  | 1.77 | -1.1 dB |
-| Peaking | 371 Hz  | 4.27 | 1.1 dB  |
-| Peaking | 4658 Hz | 5.11 | -6.4 dB |
-| Peaking | 4668 Hz | 1.91 | 2.9 dB  |
-| Peaking | 9240 Hz | 5.28 | -2.9 dB |
+| Peaking | 3237 Hz | 3.15 | 4.8 dB  |
+| Peaking | 6084 Hz | 5.43 | 6.9 dB  |
+| Peaking | 230 Hz  | 1.81 | -1.1 dB |
+| Peaking | 372 Hz  | 4.3  | 1.1 dB  |
+| Peaking | 4640 Hz | 5.15 | -6.2 dB |
+| Peaking | 4700 Hz | 1.87 | 2.8 dB  |
+| Peaking | 9247 Hz | 5.26 | -2.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-MSR7NC%20ANC%20Active/Audio%20Technica%20ATH-MSR7NC%20ANC%20Active.png)

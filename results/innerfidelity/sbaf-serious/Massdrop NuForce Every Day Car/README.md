@@ -9,8 +9,9 @@ GraphicEQ: 21 -12.8; 23 -12.8; 25 -12.7; 28 -12.5; 31 -12.3; 34 -12.1; 37 -11.9;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Massdrop NuForce Every Day Car GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Massdrop NuForce Every Day Car ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Massdrop NuForce
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -7.1dB.
 | Peaking | 182 Hz  | 0.8  | -3.4 dB  |
 | Peaking | 2159 Hz | 1.53 | -5.2 dB  |
 | Peaking | 4323 Hz | 1.2  | 7.8 dB   |
-| Peaking | 780 Hz  | 0.99 | 3.9 dB   |
-| Peaking | 824 Hz  | 0.55 | -2.6 dB  |
-| Peaking | 2104 Hz | 5.68 | 1.2 dB   |
-| Peaking | 6307 Hz | 3.6  | 4.0 dB   |
-| Peaking | 7642 Hz | 1.48 | -2.5 dB  |
+| Peaking | 773 Hz  | 1    | 3.9 dB   |
+| Peaking | 831 Hz  | 0.55 | -2.7 dB  |
+| Peaking | 2116 Hz | 5.68 | 1.2 dB   |
+| Peaking | 6329 Hz | 3.6  | 4.1 dB   |
+| Peaking | 7596 Hz | 1.48 | -2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Massdrop%20NuForce%20Every%20Day%20Car/Massdrop%20NuForce%20Every%20Day%20Car.png)

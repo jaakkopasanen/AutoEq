@@ -9,8 +9,9 @@ GraphicEQ: 21 -15.1; 23 -15.1; 25 -15.0; 28 -14.9; 31 -14.8; 34 -14.6; 37 -14.5;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.3dB` and instead set Global volume in the UI for both channels to **-2**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-C260R GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-2**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C260R ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C260R P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.0dB.
+When using independent subset of filters, apply preamp of **--0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of --0.0dB.
 | Peaking | 5756 Hz  | 1.95 | -5.8 dB  |
 | Peaking | 17862 Hz | 4.14 | -1.9 dB  |
 | Peaking | 836 Hz   | 2.15 | 1.5 dB   |
-| Peaking | 1607 Hz  | 4.71 | -1.1 dB  |
-| Peaking | 7984 Hz  | 3.58 | 1.2 dB   |
-| Peaking | 10082 Hz | 4.02 | -4.6 dB  |
-| Peaking | 11154 Hz | 2.48 | 1.7 dB   |
+| Peaking | 1611 Hz  | 4.71 | -1.1 dB  |
+| Peaking | 7942 Hz  | 3.58 | 1.1 dB   |
+| Peaking | 10025 Hz | 4.03 | -4.6 dB  |
+| Peaking | 11245 Hz | 2.49 | 1.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-C260R/Denon%20AH-C260R.png)

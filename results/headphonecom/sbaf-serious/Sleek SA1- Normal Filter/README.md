@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.3; 23 -5.4; 25 -5.5; 28 -5.6; 31 -5.6; 34 -5.7; 37 -5.7; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sleek SA1- Normal Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sleek SA1- Normal Filter ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sleek SA1- Norma
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.2dB.
 | Peaking | 291 Hz  | 0.82 | -4.1 dB |
 | Peaking | 3388 Hz | 1.26 | 6.6 dB  |
 | Peaking | 5170 Hz | 4.2  | -6.2 dB |
-| Peaking | 513 Hz  | 2.97 | -0.7 dB |
-| Peaking | 853 Hz  | 1.56 | 0.7 dB  |
-| Peaking | 1636 Hz | 3.89 | -0.7 dB |
-| Peaking | 6563 Hz | 2.02 | -2.0 dB |
-| Peaking | 6729 Hz | 6    | 5.4 dB  |
+| Peaking | 512 Hz  | 2.96 | -0.7 dB |
+| Peaking | 854 Hz  | 1.57 | 0.7 dB  |
+| Peaking | 1627 Hz | 3.89 | -0.7 dB |
+| Peaking | 6532 Hz | 2.08 | -2.1 dB |
+| Peaking | 6706 Hz | 6.01 | 5.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sleek%20SA1-%20Normal%20Filter/Sleek%20SA1-%20Normal%20Filter.png)

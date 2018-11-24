@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.6; 25 0.9; 28 -0.0; 31 -0.8; 34 -1.5; 37 -2.0; 41 -2.7; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.4dB` and instead set Global volume in the UI for both channels to **-53**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 229 Black GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-53**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 229 Black ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 22
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.9dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|

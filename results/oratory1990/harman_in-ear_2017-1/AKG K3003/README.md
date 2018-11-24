@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.7; 23 -3.8; 25 -3.9; 28 -3.9; 31 -3.9; 34 -3.8; 37 -3.8; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K3003 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K3003 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K3003 Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 277 Hz   | 0.76 | -3.9 dB  |
 | Peaking | 3176 Hz  | 1.22 | 6.9 dB   |
 | Peaking | 15837 Hz | 2.3  | -22.7 dB |
-| Peaking | 4400 Hz  | 5.41 | 4.1 dB   |
-| Peaking | 5081 Hz  | 2.52 | -3.0 dB  |
-| Peaking | 7829 Hz  | 5.99 | -1.8 dB  |
-| Peaking | 12429 Hz | 2.12 | 6.8 dB   |
-| Peaking | 14364 Hz | 3.78 | -8.3 dB  |
+| Peaking | 4360 Hz  | 5.41 | 4.1 dB   |
+| Peaking | 5091 Hz  | 2.52 | -3.0 dB  |
+| Peaking | 7753 Hz  | 6.01 | -1.8 dB  |
+| Peaking | 12380 Hz | 2.12 | 6.8 dB   |
+| Peaking | 14286 Hz | 3.77 | -8.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/AKG%20K3003/AKG%20K3003.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.5; 23 -10.4; 25 -10.3; 28 -10.1; 31 -9.8; 34 -9.6; 37 -9.4; 41
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultimate Ears UE500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultimate Ears UE500 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Ultimate Ears UE
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 2017 Hz | 2.37 | -2.9 dB  |
 | Peaking | 2490 Hz | 4.76 | -2.8 dB  |
 | Peaking | 4152 Hz | 1.05 | 7.2 dB   |
-| Peaking | 755 Hz  | 2.8  | 1.2 dB   |
-| Peaking | 1226 Hz | 5.55 | -1.1 dB  |
-| Peaking | 4360 Hz | 5.78 | -1.1 dB  |
-| Peaking | 6361 Hz | 2.61 | 4.5 dB   |
-| Peaking | 7500 Hz | 1.77 | -3.7 dB  |
+| Peaking | 756 Hz  | 2.8  | 1.2 dB   |
+| Peaking | 1223 Hz | 5.55 | -1.1 dB  |
+| Peaking | 4357 Hz | 5.79 | -1.1 dB  |
+| Peaking | 6356 Hz | 2.61 | 4.5 dB   |
+| Peaking | 7507 Hz | 1.77 | -3.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultimate%20Ears%20UE500/Ultimate%20Ears%20UE500.png)

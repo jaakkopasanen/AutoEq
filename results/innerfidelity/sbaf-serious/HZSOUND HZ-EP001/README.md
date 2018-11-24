@@ -9,16 +9,17 @@ GraphicEQ: 21 -2.6; 23 -2.6; 25 -2.6; 28 -2.6; 31 -2.6; 34 -2.6; 37 -2.5; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HZSOUND HZ-EP001 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HZSOUND HZ-EP001 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 360 Hz  | 3.83 | -1.9 dB |
 | Peaking | 2774 Hz | 2.31 | 3.3 dB  |
 | Peaking | 5760 Hz | 3.25 | 6.6 dB  |
-| Peaking | 863 Hz  | 3.15 | 0.4 dB  |
-| Peaking | 1599 Hz | 6.79 | -0.4 dB |
-| Peaking | 4160 Hz | 5.87 | -3.2 dB |
-| Peaking | 4276 Hz | 1.97 | 1.5 dB  |
-| Peaking | 8220 Hz | 3.69 | -1.1 dB |
+| Peaking | 860 Hz  | 3.15 | 0.4 dB  |
+| Peaking | 1601 Hz | 6.79 | -0.4 dB |
+| Peaking | 4144 Hz | 5.85 | -3.2 dB |
+| Peaking | 4318 Hz | 1.98 | 1.5 dB  |
+| Peaking | 8252 Hz | 3.69 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HZSOUND%20HZ-EP001/HZSOUND%20HZ-EP001.png)

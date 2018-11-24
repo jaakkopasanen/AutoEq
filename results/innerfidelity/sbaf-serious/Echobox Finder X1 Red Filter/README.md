@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.3; 23 -10.3; 25 -10.3; 28 -10.2; 31 -10.1; 34 -10.0; 37 -9.9; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.9dB` and instead set Global volume in the UI for both channels to **-9**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Echobox Finder X1 Red Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-9**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Echobox Finder X1 Red Filter ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Echobox Finder X
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.9dB.
+When using independent subset of filters, apply preamp of **-0.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -0.9dB.
 | Peaking | 700 Hz   | 1.5  | 2.2 dB  |
 | Peaking | 5618 Hz  | 0.69 | -9.5 dB |
 | Peaking | 11065 Hz | 5.44 | -4.7 dB |
-| Peaking | 1702 Hz  | 3.66 | -1.3 dB |
-| Peaking | 5249 Hz  | 2.1  | 1.4 dB  |
-| Peaking | 6371 Hz  | 4.56 | -3.8 dB |
-| Peaking | 8420 Hz  | 4.35 | 2.7 dB  |
-| Peaking | 15180 Hz | 5.19 | -3.8 dB |
+| Peaking | 1692 Hz  | 3.66 | -1.3 dB |
+| Peaking | 5240 Hz  | 2.09 | 1.4 dB  |
+| Peaking | 6415 Hz  | 4.55 | -3.9 dB |
+| Peaking | 8466 Hz  | 4.35 | 2.7 dB  |
+| Peaking | 15303 Hz | 5.2  | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Echobox%20Finder%20X1%20Red%20Filter/Echobox%20Finder%20X1%20Red%20Filter.png)

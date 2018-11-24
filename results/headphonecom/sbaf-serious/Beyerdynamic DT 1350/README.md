@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.4; 23 -1.4; 25 -1.5; 28 -1.5; 31 -1.6; 34 -1.7; 37 -1.8; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 1350 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 1350 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 2997 Hz  | 1.64 | 6.6 dB   |
 | Peaking | 6063 Hz  | 2.76 | 6.2 dB   |
 | Peaking | 8991 Hz  | 4.64 | -11.4 dB |
-| Peaking | 150 Hz   | 4.12 | 1.5 dB   |
-| Peaking | 199 Hz   | 3.76 | -1.4 dB  |
-| Peaking | 1228 Hz  | 2.92 | 1.2 dB   |
+| Peaking | 149 Hz   | 4.11 | 1.5 dB   |
+| Peaking | 200 Hz   | 3.77 | -1.4 dB  |
+| Peaking | 1227 Hz  | 2.92 | 1.2 dB   |
 | Peaking | 1814 Hz  | 5.46 | -1.7 dB  |
-| Peaking | 10822 Hz | 9.25 | 1.8 dB   |
+| Peaking | 10774 Hz | 9.25 | 1.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%201350/Beyerdynamic%20DT%201350.png)

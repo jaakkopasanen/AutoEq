@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Polk Audio UltraFit 2000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Polk Audio UltraFit 2000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 37 Hz   | 0.67 | 7.6 dB   |
-| Peaking | 580 Hz  | 0.51 | 18.8 dB  |
-| Peaking | 908 Hz  | 0.15 | -12.9 dB |
-| Peaking | 2958 Hz | 1.97 | 9.9 dB   |
-| Peaking | 5339 Hz | 1.37 | 11.2 dB  |
-| Peaking | 60 Hz   | 3.77 | 1.9 dB   |
-| Peaking | 108 Hz  | 1.61 | -1.1 dB  |
-| Peaking | 244 Hz  | 2.31 | 1.1 dB   |
-| Peaking | 795 Hz  | 8.48 | 2.4 dB   |
-| Peaking | 8962 Hz | 8.52 | -1.9 dB  |
+| Peaking | 37 Hz   | 0.68 | 7.6 dB   |
+| Peaking | 579 Hz  | 0.51 | 18.8 dB  |
+| Peaking | 913 Hz  | 0.15 | -12.8 dB |
+| Peaking | 2960 Hz | 1.98 | 9.9 dB   |
+| Peaking | 5334 Hz | 1.37 | 11.2 dB  |
+| Peaking | 60 Hz   | 4.42 | 1.7 dB   |
+| Peaking | 107 Hz  | 2.69 | -1.3 dB  |
+| Peaking | 801 Hz  | 3.71 | 4.7 dB   |
+| Peaking | 839 Hz  | 1.53 | -2.5 dB  |
+| Peaking | 8932 Hz | 7.93 | -1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Polk%20Audio%20UltraFit%202000/Polk%20Audio%20UltraFit%202000.png)

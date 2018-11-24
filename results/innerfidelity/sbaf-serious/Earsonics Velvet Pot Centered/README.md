@@ -9,16 +9,17 @@ GraphicEQ: 21 -1.3; 23 -1.5; 25 -1.7; 28 -2.0; 31 -2.1; 34 -2.3; 37 -2.4; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Earsonics Velvet Pot Centered GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Earsonics Velvet Pot Centered ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 239 Hz  | 0.94 | 7.1 dB  |
 | Peaking | 1579 Hz | 1.82 | -4.6 dB |
 | Peaking | 3512 Hz | 0.78 | 7.2 dB  |
-| Peaking | 1867 Hz | 8.89 | -0.6 dB |
-| Peaking | 2665 Hz | 3.13 | 1.2 dB  |
-| Peaking | 3440 Hz | 2.56 | -1.1 dB |
-| Peaking | 6097 Hz | 2.54 | 5.3 dB  |
-| Peaking | 7330 Hz | 1.42 | -3.8 dB |
+| Peaking | 1872 Hz | 8.89 | -0.6 dB |
+| Peaking | 2657 Hz | 3.13 | 1.2 dB  |
+| Peaking | 3433 Hz | 2.56 | -1.1 dB |
+| Peaking | 6129 Hz | 2.56 | 5.3 dB  |
+| Peaking | 7300 Hz | 1.42 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Earsonics%20Velvet%20Pot%20Centered/Earsonics%20Velvet%20Pot%20Centered.png)

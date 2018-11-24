@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.7; 23 -6.1; 25 -6.4; 28 -6.8; 31 -7.2; 34 -7.5; 37 -7.7; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.5dB` and instead set Global volume in the UI for both channels to **-14**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Master Dynamic ME05 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-14**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Master Dynamic ME05 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Master Dynamic M
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -0.1dB.
 | Peaking | 2217 Hz | 1.78 | -3.7 dB |
 | Peaking | 4903 Hz | 5.02 | -6.2 dB |
 | Peaking | 804 Hz  | 1.68 | 1.7 dB  |
-| Peaking | 1633 Hz | 0.21 | -0.6 dB |
-| Peaking | 3571 Hz | 7.15 | 2.2 dB  |
-| Peaking | 6944 Hz | 5.04 | 2.4 dB  |
-| Peaking | 8825 Hz | 7.27 | -1.4 dB |
+| Peaking | 1634 Hz | 0.21 | -0.6 dB |
+| Peaking | 3572 Hz | 7.15 | 2.2 dB  |
+| Peaking | 6917 Hz | 5.04 | 2.5 dB  |
+| Peaking | 8784 Hz | 7.28 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Master%20Dynamic%20ME05/Master%20Dynamic%20ME05.png)

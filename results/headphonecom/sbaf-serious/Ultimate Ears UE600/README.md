@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.1; 25 2.0; 28 1.9; 31 1.9; 34 1.8; 37 1.7; 41 1.5; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultimate Ears UE600 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultimate Ears UE600 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Ultimate Ears UE
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 25 Hz    | 0.49 | 2.2 dB  |
-| Peaking | 207 Hz   | 0.64 | -2.8 dB |
-| Peaking | 3238 Hz  | 2.1  | 5.9 dB  |
-| Peaking | 5948 Hz  | 1.84 | 6.7 dB  |
-| Peaking | 7761 Hz  | 1.97 | -2.8 dB |
-| Peaking | 807 Hz   | 2.71 | 1.0 dB  |
-| Peaking | 1628 Hz  | 2.08 | -1.7 dB |
-| Peaking | 2349 Hz  | 4.31 | 0.5 dB  |
-| Peaking | 2639 Hz  | 6.36 | 1.0 dB  |
-| Peaking | 12677 Hz | 2.26 | -0.2 dB |
+| Peaking | 206 Hz   | 0.64 | -2.8 dB |
+| Peaking | 3237 Hz  | 2.1  | 5.9 dB  |
+| Peaking | 5950 Hz  | 1.84 | 6.7 dB  |
+| Peaking | 7757 Hz  | 1.96 | -2.8 dB |
+| Peaking | 807 Hz   | 2.74 | 1.0 dB  |
+| Peaking | 1629 Hz  | 2.08 | -1.7 dB |
+| Peaking | 2349 Hz  | 4.32 | 0.5 dB  |
+| Peaking | 2648 Hz  | 6.42 | 1.0 dB  |
+| Peaking | 12679 Hz | 2.27 | -0.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultimate%20Ears%20UE600/Ultimate%20Ears%20UE600.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.0; 23 -9.8; 25 -9.6; 28 -9.3; 31 -9.0; 34 -8.7; 37 -8.5; 41 -8
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.1dB` and instead set Global volume in the UI for both channels to **-40**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Nocs NS200 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-40**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Nocs NS200 ParametricEQ.txt`.
@@ -18,18 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Nocs NS200 Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.4dB.
+When using independent subset of filters, apply preamp of **-4.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 15 Hz   | 0.14 | -9.3 dB |
-| Peaking | 199 Hz  | 0.81 | -4.0 dB |
-| Peaking | 2262 Hz | 1.56 | -4.9 dB |
-| Peaking | 3649 Hz | 3.4  | 5.8 dB  |
-| Peaking | 5712 Hz | 5.87 | -3.5 dB |
-| Peaking | 383 Hz  | 1.93 | -0.6 dB |
-| Peaking | 801 Hz  | 1.73 | 1.5 dB  |
-| Peaking | 1529 Hz | 3.58 | -1.0 dB |
-| Peaking | 7067 Hz | 9.67 | 1.8 dB  |
+| Peaking | 15 Hz   | 0.13 | -9.3 dB |
+| Peaking | 200 Hz  | 0.81 | -4.0 dB |
+| Peaking | 2263 Hz | 1.56 | -4.9 dB |
+| Peaking | 3656 Hz | 3.4  | 5.8 dB  |
+| Peaking | 5725 Hz | 5.9  | -3.5 dB |
+| Peaking | 16 Hz   | 1.48 | -0.8 dB |
+| Peaking | 383 Hz  | 1.89 | -0.6 dB |
+| Peaking | 800 Hz  | 1.73 | 1.5 dB  |
+| Peaking | 1529 Hz | 3.59 | -1.0 dB |
+| Peaking | 7176 Hz | 9.51 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Nocs%20NS200/Nocs%20NS200.png)

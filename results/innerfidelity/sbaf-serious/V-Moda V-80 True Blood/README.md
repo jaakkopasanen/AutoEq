@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.5; 25 0.2; 28 -0.1; 31 -0.3; 34 -0.5; 37 -0.7; 41 -0.9; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-48**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`V-Moda V-80 True Blood GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-48**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda V-80 True Blood ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `V-Moda V-80 True
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.4dB.
+When using independent subset of filters, apply preamp of **-4.4dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -4.4dB.
 | Peaking | 1373 Hz |  1.02 | -5.5 dB |
 | Peaking | 2335 Hz |  2.12 | 3.5 dB  |
 | Peaking | 5296 Hz |  1.94 | 4.4 dB  |
-| Peaking | 17 Hz   |  1.79 | 1.0 dB  |
-| Peaking | 319 Hz  |  8.28 | 0.6 dB  |
-| Peaking | 3361 Hz | 14.35 | -1.4 dB |
-| Peaking | 6805 Hz |  8.59 | 1.6 dB  |
+| Peaking | 20 Hz   |  1.86 | 1.3 dB  |
+| Peaking | 324 Hz  |  8.49 | 0.6 dB  |
+| Peaking | 3403 Hz | 14.62 | -1.4 dB |
+| Peaking | 6775 Hz |  8.78 | 1.6 dB  |
 | Peaking | 8036 Hz |  2.74 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/V-Moda%20V-80%20True%20Blood/V-Moda%20V-80%20True%20Blood.png)

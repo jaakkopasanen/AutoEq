@@ -9,16 +9,17 @@ GraphicEQ: 21 -0.1; 23 -0.6; 25 -1.1; 28 -1.7; 31 -2.2; 34 -2.6; 37 -2.9; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Thinksound On1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Thinksound On1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.3dB.
 | Peaking | 270 Hz  | 1.31 | 4.2 dB  |
 | Peaking | 2791 Hz | 1.99 | 5.6 dB  |
 | Peaking | 5091 Hz | 3.11 | 5.4 dB  |
-| Peaking | 1684 Hz | 2.17 | -1.0 dB |
-| Peaking | 2053 Hz | 7.21 | 1.8 dB  |
-| Peaking | 6396 Hz | 4.26 | 1.1 dB  |
-| Peaking | 7089 Hz | 3.57 | -0.6 dB |
-| Peaking | 8507 Hz | 4.28 | -1.9 dB |
+| Peaking | 1926 Hz | 1.64 | -1.5 dB |
+| Peaking | 2053 Hz | 5.19 | 2.6 dB  |
+| Peaking | 4608 Hz | 2.42 | 2.1 dB  |
+| Peaking | 4702 Hz | 5.42 | -2.5 dB |
+| Peaking | 8443 Hz | 4.22 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Thinksound%20On1/Thinksound%20On1.png)

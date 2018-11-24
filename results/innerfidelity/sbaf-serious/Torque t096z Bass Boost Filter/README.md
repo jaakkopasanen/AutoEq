@@ -9,28 +9,29 @@ GraphicEQ: 21 -11.5; 23 -11.5; 25 -11.4; 28 -11.3; 31 -11.2; 34 -11.1; 37 -11.0;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Torque t096z Bass Boost Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t096z Bass Boost Filter ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
-| Type    | Fc       |     Q | Gain     |
-|:--------|:---------|:------|:---------|
-| Peaking | 26 Hz    |  0.23 | -11.2 dB |
-| Peaking | 157 Hz   |  0.8  | -4.0 dB  |
-| Peaking | 1986 Hz  |  2.34 | -8.5 dB  |
-| Peaking | 3234 Hz  |  3.97 | 6.5 dB   |
-| Peaking | 5846 Hz  |  3.73 | 7.0 dB   |
-| Peaking | 313 Hz   |  1.85 | -0.9 dB  |
-| Peaking | 755 Hz   |  1.23 | 1.9 dB   |
-| Peaking | 1481 Hz  |  3.9  | -1.4 dB  |
-| Peaking | 4376 Hz  | 11.08 | -3.7 dB  |
-| Peaking | 21649 Hz |  1.72 | -0.3 dB  |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 27 Hz    | 0.23 | -11.2 dB |
+| Peaking | 157 Hz   | 0.8  | -4.0 dB  |
+| Peaking | 1986 Hz  | 2.34 | -8.5 dB  |
+| Peaking | 3234 Hz  | 3.97 | 6.5 dB   |
+| Peaking | 5846 Hz  | 3.73 | 7.0 dB   |
+| Peaking | 770 Hz   | 1.89 | 2.0 dB   |
+| Peaking | 1516 Hz  | 4.58 | -1.2 dB  |
+| Peaking | 4383 Hz  | 6.55 | -6.6 dB  |
+| Peaking | 4525 Hz  | 2.65 | 2.9 dB   |
+| Peaking | 24000 Hz | 1.72 | 0.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t096z%20Bass%20Boost%20Filter/Torque%20t096z%20Bass%20Boost%20Filter.png)

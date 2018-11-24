@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.7; 31 5.1; 34 4.5; 37 4.0; 41 3.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-D400 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D400 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 403 Hz  | 0.37 | -3.9 dB |
 | Peaking | 553 Hz  | 1.28 | 9.5 dB  |
 | Peaking | 4552 Hz | 1.2  | 6.7 dB  |
-| Peaking | 1047 Hz | 7.5  | -0.7 dB |
-| Peaking | 3628 Hz | 6.8  | 2.0 dB  |
-| Peaking | 4188 Hz | 7.03 | -1.7 dB |
-| Peaking | 6401 Hz | 3.26 | 4.5 dB  |
-| Peaking | 7280 Hz | 1.61 | -3.2 dB |
+| Peaking | 1050 Hz | 7.5  | -0.7 dB |
+| Peaking | 3582 Hz | 6.81 | 2.0 dB  |
+| Peaking | 4151 Hz | 6.99 | -1.7 dB |
+| Peaking | 6386 Hz | 3.27 | 4.4 dB  |
+| Peaking | 7337 Hz | 1.61 | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D400/Denon%20AH-D400.png)

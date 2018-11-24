@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Noble PR R Tuning GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Noble PR R Tuning ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Noble PR R Tunin
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 3408 Hz | 5.28 | 4.6 dB  |
 | Peaking | 6496 Hz | 7.19 | 5.9 dB  |
 | Peaking | 9612 Hz | 3.93 | -3.6 dB |
-| Peaking | 148 Hz  | 1.42 | -0.7 dB |
-| Peaking | 680 Hz  | 0.89 | 2.0 dB  |
-| Peaking | 1353 Hz | 1.79 | -1.4 dB |
-| Peaking | 4754 Hz | 1.51 | 2.1 dB  |
-| Peaking | 4834 Hz | 3.88 | -5.3 dB |
+| Peaking | 149 Hz  | 1.41 | -0.7 dB |
+| Peaking | 681 Hz  | 0.89 | 2.0 dB  |
+| Peaking | 1350 Hz | 1.79 | -1.4 dB |
+| Peaking | 4704 Hz | 1.51 | 2.1 dB  |
+| Peaking | 4875 Hz | 3.86 | -5.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Noble%20PR%20R%20Tuning/Noble%20PR%20R%20Tuning.png)

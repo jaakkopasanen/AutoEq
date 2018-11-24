@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.1; 25 -0.3; 28 -0.8; 31 -1.1; 34 -1.3; 37 -1.5; 41 -1.7;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser PXC 550 Wired Power On GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PXC 550 Wired Power On ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PXC 5
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 485 Hz  |  0.46 | 10.4 dB |
-| Peaking | 503 Hz  |  0.14 | -7.3 dB |
-| Peaking | 3453 Hz |  1.59 | 6.4 dB  |
-| Peaking | 6294 Hz |  5.3  | 6.7 dB  |
-| Peaking | 9233 Hz |  5.67 | -5.8 dB |
-| Peaking | 12 Hz   |  1.46 | 2.7 dB  |
-| Peaking | 149 Hz  |  4.64 | -1.7 dB |
-| Peaking | 290 Hz  |  4.49 | 1.4 dB  |
-| Peaking | 4324 Hz | 10.88 | 5.1 dB  |
-| Peaking | 4936 Hz | 10.04 | -5.5 dB |
+| Peaking | 489 Hz  |  0.46 | 10.4 dB |
+| Peaking | 498 Hz  |  0.14 | -7.3 dB |
+| Peaking | 3448 Hz |  1.59 | 6.4 dB  |
+| Peaking | 6262 Hz |  5.3  | 6.7 dB  |
+| Peaking | 9280 Hz |  5.67 | -5.8 dB |
+| Peaking | 11 Hz   |  1.66 | 2.0 dB  |
+| Peaking | 149 Hz  |  4.28 | -1.7 dB |
+| Peaking | 289 Hz  |  4.48 | 1.4 dB  |
+| Peaking | 4316 Hz | 11.2  | 5.0 dB  |
+| Peaking | 4925 Hz |  9.29 | -5.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PXC%20550%20Wired%20Power%20On/Sennheiser%20PXC%20550%20Wired%20Power%20On.png)

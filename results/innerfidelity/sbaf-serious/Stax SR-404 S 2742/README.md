@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.9; 34 5.7; 37 5.6; 41 5.5; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-404 S 2742 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-404 S 2742 ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Stax SR-404 S 27
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
-| Type    | Fc       |     Q | Gain     |
-|:--------|:---------|:------|:---------|
-| Peaking | 23 Hz    |  0.22 | 6.0 dB   |
-| Peaking | 1724 Hz  |  0.88 | -10.1 dB |
-| Peaking | 1753 Hz  |  0.27 | 5.6 dB   |
-| Peaking | 2327 Hz  |  3.34 | 6.4 dB   |
-| Peaking | 9195 Hz  |  4.32 | -5.8 dB  |
-| Peaking | 3088 Hz  |  8.72 | -1.3 dB  |
-| Peaking | 4124 Hz  |  7.71 | 1.8 dB   |
-| Peaking | 6040 Hz  | 14.76 | -2.7 dB  |
-| Peaking | 19902 Hz |  2.77 | -5.3 dB  |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 26 Hz   | 0.27 | 6.0 dB   |
+| Peaking | 524 Hz  | 0.54 | 2.1 dB   |
+| Peaking | 1753 Hz | 1    | -20.7 dB |
+| Peaking | 2017 Hz | 0.77 | 18.0 dB  |
+| Peaking | 9208 Hz | 5.5  | -5.4 dB  |
+| Peaking | 2121 Hz | 3.97 | -0.9 dB  |
+| Peaking | 2442 Hz | 4.16 | 2.7 dB   |
+| Peaking | 3049 Hz | 3.41 | -2.7 dB  |
+| Peaking | 4200 Hz | 5.16 | 1.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-404%20S%202742/Stax%20SR-404%20S%202742.png)

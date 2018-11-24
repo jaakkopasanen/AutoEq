@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.9; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss KSC75 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss KSC75 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.9dB.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 30 Hz   | 1.58 | 7.5 dB   |
-| Peaking | 2742 Hz | 0.94 | -15.8 dB |
-| Peaking | 3973 Hz | 1.12 | 23.5 dB  |
-| Peaking | 4649 Hz | 3.69 | -21.2 dB |
-| Peaking | 9405 Hz | 3.2  | -9.8 dB  |
-| Peaking | 52 Hz   | 1.84 | 3.6 dB   |
-| Peaking | 137 Hz  | 0.56 | -3.9 dB  |
-| Peaking | 903 Hz  | 0.81 | 1.4 dB   |
-| Peaking | 1820 Hz | 2.8  | -1.6 dB  |
-| Peaking | 6054 Hz | 7.06 | 1.3 dB   |
+| Peaking | 31 Hz   | 1.56 | 7.5 dB   |
+| Peaking | 2739 Hz | 0.96 | -15.6 dB |
+| Peaking | 3976 Hz | 1.13 | 23.0 dB  |
+| Peaking | 4651 Hz | 3.74 | -21.1 dB |
+| Peaking | 9407 Hz | 3.24 | -9.7 dB  |
+| Peaking | 50 Hz   | 1.74 | 3.5 dB   |
+| Peaking | 136 Hz  | 0.55 | -3.9 dB  |
+| Peaking | 907 Hz  | 0.81 | 1.4 dB   |
+| Peaking | 1824 Hz | 2.84 | -1.5 dB  |
+| Peaking | 5367 Hz | 6.64 | 1.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20KSC75/Koss%20KSC75.png)

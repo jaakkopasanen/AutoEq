@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.8; 28 5.4; 31 5.1; 34 4.8; 37 4.6; 41 4.5; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Zenith PMx2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Zenith PMx2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 205 Hz  | 1.22 | -1.4 dB |
 | Peaking | 2980 Hz | 1.11 | 5.7 dB  |
 | Peaking | 5550 Hz | 2.65 | 5.0 dB  |
-| Peaking | 398 Hz  | 5.96 | 1.3 dB  |
+| Peaking | 395 Hz  | 5.96 | 1.3 dB  |
 | Peaking | 754 Hz  | 2.6  | -0.7 dB |
-| Peaking | 4441 Hz | 2.88 | 1.2 dB  |
-| Peaking | 6524 Hz | 5.09 | 3.6 dB  |
-| Peaking | 7004 Hz | 1.37 | -2.4 dB |
+| Peaking | 4437 Hz | 2.76 | 1.2 dB  |
+| Peaking | 6544 Hz | 4.9  | 3.8 dB  |
+| Peaking | 6861 Hz | 1.38 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Zenith%20PMx2/Audio%20Zenith%20PMx2.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Polk Audio UltraFit 500 sample 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Polk Audio UltraFit 500 sample 1 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Polk Audio Ultra
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 2065 Hz | 1.21 | 5.9 dB  |
 | Peaking | 3916 Hz | 1.57 | 4.5 dB  |
 | Peaking | 5801 Hz | 3.32 | 4.4 dB  |
-| Peaking | 17 Hz   | 1.1  | 1.5 dB  |
-| Peaking | 49 Hz   | 0.38 | -0.8 dB |
-| Peaking | 95 Hz   | 2.14 | 1.3 dB  |
+| Peaking | 17 Hz   | 1.15 | 1.5 dB  |
+| Peaking | 48 Hz   | 0.4  | -0.8 dB |
+| Peaking | 96 Hz   | 2.14 | 1.3 dB  |
 | Peaking | 6558 Hz | 7.89 | 2.0 dB  |
 | Peaking | 7918 Hz | 2.33 | -1.5 dB |
 

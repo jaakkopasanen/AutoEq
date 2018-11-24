@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.2; 25 3.0; 28 2.7; 31 2.5; 34 2.4; 37 2.2; 41 2.1; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.8dB` and instead set Global volume in the UI for both channels to **-37**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiFiMAN HE-4 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-37**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-4 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-4 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.3dB.
+When using independent subset of filters, apply preamp of **-3.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 25 Hz    | 0.79 | 3.2 dB   |
-| Peaking | 1824 Hz  | 1.1  | 2.8 dB   |
-| Peaking | 4263 Hz  | 4.85 | -5.0 dB  |
-| Peaking | 8750 Hz  | 2.11 | -7.7 dB  |
-| Peaking | 20722 Hz | 0.73 | -13.4 dB |
-| Peaking | 238 Hz   | 1.41 | -2.1 dB  |
-| Peaking | 759 Hz   | 6.79 | 2.5 dB   |
-| Peaking | 5508 Hz  | 9.66 | 6.7 dB   |
-| Peaking | 6436 Hz  | 6.72 | -3.6 dB  |
-| Peaking | 13641 Hz | 7.06 | -3.1 dB  |
+| Peaking | 25 Hz    | 0.77 | 3.2 dB   |
+| Peaking | 1826 Hz  | 1.09 | 2.8 dB   |
+| Peaking | 4261 Hz  | 4.78 | -5.0 dB  |
+| Peaking | 8755 Hz  | 2.11 | -7.7 dB  |
+| Peaking | 20606 Hz | 0.73 | -12.9 dB |
+| Peaking | 237 Hz   | 1.39 | -2.1 dB  |
+| Peaking | 757 Hz   | 6.79 | 2.5 dB   |
+| Peaking | 5477 Hz  | 9.64 | 6.7 dB   |
+| Peaking | 6389 Hz  | 6.74 | -3.6 dB  |
+| Peaking | 13598 Hz | 7.27 | -3.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE-4/HiFiMAN%20HE-4.png)

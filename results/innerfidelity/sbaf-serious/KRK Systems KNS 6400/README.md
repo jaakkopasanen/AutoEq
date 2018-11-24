@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.8; 25 5.6; 28 5.3; 31 5.0; 34 4.9; 37 4.8; 41 5.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`KRK Systems KNS 6400 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `KRK Systems KNS 6400 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `KRK Systems KNS 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 209 Hz  | 0.5  | -2.6 dB |
 | Peaking | 2384 Hz | 1.54 | -4.5 dB |
 | Peaking | 5204 Hz | 3.15 | 5.4 dB  |
-| Peaking | 574 Hz  | 4.05 | -1.9 dB |
+| Peaking | 575 Hz  | 4.05 | -1.9 dB |
 | Peaking | 802 Hz  | 1.17 | 1.0 dB  |
-| Peaking | 1817 Hz | 7.82 | -1.2 dB |
-| Peaking | 7055 Hz | 5.48 | 0.8 dB  |
-| Peaking | 9571 Hz | 5.07 | -2.9 dB |
+| Peaking | 1814 Hz | 7.84 | -1.2 dB |
+| Peaking | 7071 Hz | 5.53 | 0.8 dB  |
+| Peaking | 9584 Hz | 5.07 | -2.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/KRK%20Systems%20KNS%206400/KRK%20Systems%20KNS%206400.png)

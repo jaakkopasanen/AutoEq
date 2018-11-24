@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.6; 23 -9.7; 25 -9.9; 28 -10.1; 31 -10.2; 34 -10.2; 37 -10.3; 41
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.9dB` and instead set Global volume in the UI for both channels to **-9**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Xiaomi Piston 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-9**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Xiaomi Piston 2 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Xiaomi Piston 2 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 38 Hz    | 0.23 | -10.0 dB |
+| Peaking | 37 Hz    | 0.23 | -10.0 dB |
 | Peaking | 180 Hz   | 0.66 | -4.6 dB  |
-| Peaking | 1910 Hz  | 2.99 | -1.8 dB  |
+| Peaking | 1911 Hz  | 2.99 | -1.8 dB  |
 | Peaking | 6098 Hz  | 1.58 | -5.6 dB  |
 | Peaking | 24000 Hz | 2.11 | -2.6 dB  |
-| Peaking | 820 Hz   | 2.42 | 1.5 dB   |
-| Peaking | 3694 Hz  | 2.95 | 5.1 dB   |
-| Peaking | 3916 Hz  | 1.17 | -2.7 dB  |
-| Peaking | 7199 Hz  | 4.26 | 2.4 dB   |
-| Peaking | 9509 Hz  | 5.38 | -3.6 dB  |
+| Peaking | 821 Hz   | 2.46 | 1.5 dB   |
+| Peaking | 3698 Hz  | 2.97 | 5.0 dB   |
+| Peaking | 3918 Hz  | 1.16 | -2.6 dB  |
+| Peaking | 7179 Hz  | 4.26 | 2.4 dB   |
+| Peaking | 9484 Hz  | 5.38 | -3.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Xiaomi%20Piston%202/Xiaomi%20Piston%202.png)

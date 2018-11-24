@@ -9,8 +9,9 @@ GraphicEQ: 21 -13.1; 23 -13.0; 25 -12.9; 28 -12.7; 31 -12.6; 34 -12.4; 37 -12.2;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.7dB` and instead set Global volume in the UI for both channels to **-26**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K376 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-26**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K376 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K376 Paramet
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.5dB.
+When using independent subset of filters, apply preamp of **-2.5dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 22 Hz   | 0.19 | -12.7 dB |
-| Peaking | 164 Hz  | 0.73 | -4.3 dB  |
-| Peaking | 2523 Hz | 1.75 | -7.1 dB  |
-| Peaking | 3501 Hz | 2.75 | 5.7 dB   |
-| Peaking | 5250 Hz | 4.93 | -6.8 dB  |
-| Peaking | 332 Hz  | 1.88 | -0.8 dB  |
-| Peaking | 780 Hz  | 1.63 | 1.9 dB   |
-| Peaking | 1626 Hz | 3.83 | -1.3 dB  |
-| Peaking | 5786 Hz | 8.2  | -1.8 dB  |
-| Peaking | 6855 Hz | 6.43 | 3.5 dB   |
+| Peaking | 165 Hz  | 0.73 | -4.3 dB  |
+| Peaking | 2526 Hz | 1.75 | -7.2 dB  |
+| Peaking | 3493 Hz | 2.7  | 5.7 dB   |
+| Peaking | 5242 Hz | 4.91 | -6.8 dB  |
+| Peaking | 335 Hz  | 2.07 | -0.8 dB  |
+| Peaking | 781 Hz  | 1.63 | 1.9 dB   |
+| Peaking | 1626 Hz | 3.82 | -1.3 dB  |
+| Peaking | 5829 Hz | 7.25 | -1.8 dB  |
+| Peaking | 6868 Hz | 6.11 | 3.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K376/AKG%20K376.png)

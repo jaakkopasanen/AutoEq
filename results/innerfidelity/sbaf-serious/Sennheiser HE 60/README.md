@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.9; 37 5.8; 41 5.7; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HE 60 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HE 60 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HE 60
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 0.28 | 6.0 dB  |
-| Peaking | 58 Hz   | 3.14 | 1.7 dB  |
-| Peaking | 621 Hz  | 1.52 | 1.9 dB  |
-| Peaking | 3783 Hz | 3.6  | 2.5 dB  |
-| Peaking | 5661 Hz | 5.41 | -4.4 dB |
-| Peaking | 88 Hz   | 5.21 | -1.2 dB |
-| Peaking | 252 Hz  | 1.53 | 0.4 dB  |
-| Peaking | 1766 Hz | 3.91 | -1.3 dB |
-| Peaking | 7097 Hz | 9.83 | 2.5 dB  |
-| Peaking | 9285 Hz | 9.33 | -2.8 dB |
+| Peaking | 22 Hz   | 0.28 | 6.1 dB  |
+| Peaking | 58 Hz   | 3.13 | 1.7 dB  |
+| Peaking | 628 Hz  | 1.53 | 1.9 dB  |
+| Peaking | 3789 Hz | 3.6  | 2.5 dB  |
+| Peaking | 5691 Hz | 5.41 | -4.4 dB |
+| Peaking | 89 Hz   | 3.64 | -1.3 dB |
+| Peaking | 139 Hz  | 0.35 | 0.3 dB  |
+| Peaking | 1761 Hz | 3.8  | -1.3 dB |
+| Peaking | 7017 Hz | 9.59 | 2.5 dB  |
+| Peaking | 9205 Hz | 9.21 | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HE%2060/Sennheiser%20HE%2060.png)

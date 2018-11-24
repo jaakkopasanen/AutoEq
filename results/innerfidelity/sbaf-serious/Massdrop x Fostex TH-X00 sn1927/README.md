@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.6; 23 -0.9; 25 -1.2; 28 -1.4; 31 -1.5; 34 -1.5; 37 -1.5; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.2dB` and instead set Global volume in the UI for both channels to **-51**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Massdrop x Fostex TH-X00 sn1927 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-51**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Massdrop x Fostex TH-X00 sn1927 ParametricEQ.txt`.
@@ -18,17 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Massdrop x Foste
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.1dB.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 37 Hz   | 0.55 | -1.3 dB |
-| Peaking | 148 Hz  | 1.17 | -2.4 dB |
+| Peaking | 37 Hz   | 0.54 | -1.3 dB |
+| Peaking | 149 Hz  | 1.16 | -2.4 dB |
 | Peaking | 1762 Hz | 2.62 | -1.8 dB |
 | Peaking | 3395 Hz | 1.6  | 5.1 dB  |
 | Peaking | 6662 Hz | 5.79 | 1.8 dB  |
-| Peaking | 224 Hz  | 3.08 | -0.5 dB |
-| Peaking | 531 Hz  | 1.37 | 0.8 dB  |
+| Peaking | 228 Hz  | 3.11 | -0.5 dB |
+| Peaking | 532 Hz  | 1.36 | 0.9 dB  |
 | Peaking | 9615 Hz | 2.31 | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Massdrop%20x%20Fostex%20TH-X00%20sn1927/Massdrop%20x%20Fostex%20TH-X00%20sn1927.png)

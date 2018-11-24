@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.9; 31 5.3; 34 4.3; 37 3.1; 41 1.6; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Superlux HD 668B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Superlux HD 668B ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Superlux HD 668B
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 2170 Hz  | 1.94 | -6.7 dB  |
 | Peaking | 8609 Hz  | 1.56 | -11.1 dB |
 | Peaking | 15999 Hz | 2.5  | -5.8 dB  |
-| Peaking | 837 Hz   | 1.75 | 1.1 dB   |
-| Peaking | 5066 Hz  | 4.73 | 6.4 dB   |
-| Peaking | 5603 Hz  | 6.44 | -11.1 dB |
-| Peaking | 7048 Hz  | 5.65 | 2.5 dB   |
-| Peaking | 12159 Hz | 6.08 | 2.1 dB   |
+| Peaking | 836 Hz   | 1.75 | 1.1 dB   |
+| Peaking | 5086 Hz  | 4.72 | 6.4 dB   |
+| Peaking | 5586 Hz  | 6.44 | -11.1 dB |
+| Peaking | 7024 Hz  | 5.66 | 2.5 dB   |
+| Peaking | 12140 Hz | 6.08 | 2.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Superlux%20HD%20668B/Superlux%20HD%20668B.png)

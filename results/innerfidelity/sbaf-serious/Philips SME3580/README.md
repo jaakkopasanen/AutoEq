@@ -9,8 +9,9 @@ GraphicEQ: 21 -12.7; 23 -12.5; 25 -12.3; 28 -12.0; 31 -11.7; 34 -11.4; 37 -11.1;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.8dB` and instead set Global volume in the UI for both channels to **-18**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips SME3580 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-18**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips SME3580 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips SME3580 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.4dB.
+When using independent subset of filters, apply preamp of **-1.4dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 17 Hz   | 0.18 | -12.5 dB |
+| Peaking | 17 Hz   | 0.19 | -12.5 dB |
 | Peaking | 155 Hz  | 0.82 | -3.4 dB  |
 | Peaking | 2239 Hz | 2    | -8.1 dB  |
-| Peaking | 5233 Hz | 4.48 | -8.4 dB  |
-| Peaking | 6968 Hz | 4.21 | 2.5 dB   |
-| Peaking | 807 Hz  | 1.55 | 1.9 dB   |
-| Peaking | 1569 Hz | 3.28 | -1.1 dB  |
-| Peaking | 2189 Hz | 3.39 | 4.0 dB   |
-| Peaking | 2756 Hz | 1.14 | -4.4 dB  |
-| Peaking | 3478 Hz | 3.21 | 6.3 dB   |
+| Peaking | 5234 Hz | 4.48 | -8.4 dB  |
+| Peaking | 6969 Hz | 4.21 | 2.5 dB   |
+| Peaking | 810 Hz  | 1.61 | 1.9 dB   |
+| Peaking | 1567 Hz | 3.34 | -1.1 dB  |
+| Peaking | 2168 Hz | 3.41 | 4.0 dB   |
+| Peaking | 2761 Hz | 1.14 | -4.4 dB  |
+| Peaking | 3500 Hz | 3.21 | 6.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20SME3580/Philips%20SME3580.png)

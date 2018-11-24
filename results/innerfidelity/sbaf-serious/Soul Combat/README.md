@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.8; 25 2.6; 28 1.1; 31 -0.2; 34 -1.2; 37 -2.1; 41 -3.0; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Soul Combat GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Soul Combat ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Soul Combat Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.1dB.
 | Peaking | 442 Hz  | 1.71 | -9.0 dB |
 | Peaking | 3256 Hz | 2.65 | 5.9 dB  |
 | Peaking | 5367 Hz | 2.51 | 6.4 dB  |
-| Peaking | 580 Hz  | 3.57 | -3.3 dB |
-| Peaking | 872 Hz  | 2.06 | 5.8 dB  |
-| Peaking | 1189 Hz | 3.22 | -3.8 dB |
-| Peaking | 1860 Hz | 5.29 | -4.5 dB |
-| Peaking | 9956 Hz | 4.95 | -5.4 dB |
+| Peaking | 577 Hz  | 3.57 | -3.3 dB |
+| Peaking | 870 Hz  | 2.06 | 5.8 dB  |
+| Peaking | 1190 Hz | 3.22 | -3.8 dB |
+| Peaking | 1854 Hz | 5.29 | -4.5 dB |
+| Peaking | 9957 Hz | 4.95 | -5.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Soul%20Combat/Soul%20Combat.png)

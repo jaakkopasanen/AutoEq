@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-7506 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-7506 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-7506 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.2dB.
 | Peaking | 1051 Hz | 0.11 | -1.6 dB |
 | Peaking | 5953 Hz | 7.02 | 7.3 dB  |
 | Peaking | 9665 Hz | 5.51 | -6.1 dB |
-| Peaking | 487 Hz  | 2.95 | -1.6 dB |
-| Peaking | 1063 Hz | 2.69 | 1.7 dB  |
-| Peaking | 3152 Hz | 3.07 | -2.3 dB |
-| Peaking | 4197 Hz | 1.53 | 3.5 dB  |
-| Peaking | 4617 Hz | 4.82 | -6.7 dB |
+| Peaking | 486 Hz  | 2.95 | -1.6 dB |
+| Peaking | 1061 Hz | 2.68 | 1.7 dB  |
+| Peaking | 3147 Hz | 3.12 | -2.3 dB |
+| Peaking | 4207 Hz | 1.56 | 3.5 dB  |
+| Peaking | 4625 Hz | 4.8  | -6.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-7506/Sony%20MDR-7506.png)

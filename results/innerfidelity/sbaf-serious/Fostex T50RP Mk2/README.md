@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.8; 31 5.2; 34 4.6; 37 4.2; 41 3.8; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Fostex T50RP Mk2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fostex T50RP Mk2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 23 Hz   | 0.76 | 5.9 dB  |
-| Peaking | 78 Hz   | 0.98 | 1.8 dB  |
+| Peaking | 23 Hz   | 0.74 | 5.9 dB  |
+| Peaking | 76 Hz   | 0.97 | 1.8 dB  |
 | Peaking | 752 Hz  | 3.7  | 3.1 dB  |
-| Peaking | 1493 Hz | 1.3  | -5.2 dB |
-| Peaking | 3112 Hz | 0.66 | 7.7 dB  |
-| Peaking | 1828 Hz | 5.3  | -2.9 dB |
-| Peaking | 2140 Hz | 1.86 | 2.3 dB  |
-| Peaking | 3159 Hz | 2.01 | -1.5 dB |
-| Peaking | 6239 Hz | 2.06 | 5.8 dB  |
-| Peaking | 7399 Hz | 1.43 | -4.8 dB |
+| Peaking | 1492 Hz | 1.3  | -5.2 dB |
+| Peaking | 3111 Hz | 0.66 | 7.7 dB  |
+| Peaking | 1830 Hz | 5.33 | -2.9 dB |
+| Peaking | 2131 Hz | 1.84 | 2.3 dB  |
+| Peaking | 3166 Hz | 2    | -1.5 dB |
+| Peaking | 6260 Hz | 2.04 | 6.0 dB  |
+| Peaking | 7362 Hz | 1.43 | -4.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fostex%20T50RP%20Mk2/Fostex%20T50RP%20Mk2.png)

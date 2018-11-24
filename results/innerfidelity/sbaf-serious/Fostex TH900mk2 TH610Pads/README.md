@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.7; 23 -1.3; 25 -1.8; 28 -2.4; 31 -2.8; 34 -3.0; 37 -3.2; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.0dB` and instead set Global volume in the UI for both channels to **-49**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Fostex TH900mk2 TH610Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-49**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fostex TH900mk2 TH610Pads ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Fostex TH900mk2 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.8dB.
+When using independent subset of filters, apply preamp of **-4.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 71 Hz   | 1.33 | 1.8 dB  |
-| Peaking | 82 Hz   | 0.46 | -5.6 dB |
+| Peaking | 73 Hz   | 1.32 | 1.8 dB  |
+| Peaking | 81 Hz   | 0.46 | -5.6 dB |
 | Peaking | 245 Hz  | 0.99 | -2.6 dB |
-| Peaking | 2798 Hz | 2.33 | 3.7 dB  |
-| Peaking | 5255 Hz | 2.65 | 4.4 dB  |
-| Peaking | 787 Hz  | 9.59 | 1.4 dB  |
-| Peaking | 1225 Hz | 4.17 | 0.7 dB  |
-| Peaking | 1678 Hz | 4.4  | -0.8 dB |
-| Peaking | 4014 Hz | 8.88 | 0.8 dB  |
-| Peaking | 8669 Hz | 2.74 | -0.5 dB |
+| Peaking | 2796 Hz | 2.33 | 3.7 dB  |
+| Peaking | 5254 Hz | 2.65 | 4.4 dB  |
+| Peaking | 787 Hz  | 9.67 | 1.4 dB  |
+| Peaking | 1228 Hz | 4.23 | 0.7 dB  |
+| Peaking | 1683 Hz | 4.33 | -0.8 dB |
+| Peaking | 4011 Hz | 8.86 | 0.8 dB  |
+| Peaking | 8670 Hz | 2.76 | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fostex%20TH900mk2%20TH610Pads/Fostex%20TH900mk2%20TH610Pads.png)

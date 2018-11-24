@@ -9,8 +9,9 @@ GraphicEQ: 21 -13.9; 23 -13.8; 25 -13.7; 28 -13.6; 31 -13.4; 34 -13.2; 37 -13.1;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.6dB` and instead set Global volume in the UI for both channels to **-5**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Wicked Audio Deuce GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-5**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Wicked Audio Deuce ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Wicked Audio Deu
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.0dB.
+When using independent subset of filters, apply preamp of **--0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of --0.0dB.
 | Peaking | 22468 Hz | 2.24 | -3.8 dB  |
 | Peaking | 853 Hz   | 2.06 | 1.4 dB   |
 | Peaking | 1712 Hz  | 3.99 | -1.3 dB  |
-| Peaking | 7153 Hz  | 5.86 | 1.4 dB   |
+| Peaking | 7157 Hz  | 5.86 | 1.4 dB   |
 | Peaking | 8165 Hz  | 0.37 | 0.8 dB   |
-| Peaking | 9133 Hz  | 4.02 | -6.6 dB  |
+| Peaking | 9141 Hz  | 4.02 | -6.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Wicked%20Audio%20Deuce/Wicked%20Audio%20Deuce.png)

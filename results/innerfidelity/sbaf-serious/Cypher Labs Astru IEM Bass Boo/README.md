@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.4; 25 0.4; 28 0.4; 31 0.4; 34 0.3; 37 0.2; 41 -0.0; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.2dB` and instead set Global volume in the UI for both channels to **-32**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Cypher Labs Astru IEM Bass Boo GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-32**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Cypher Labs Astru IEM Bass Boo ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Cypher Labs Astr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.4dB.
+When using independent subset of filters, apply preamp of **-3.4dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -3.4dB.
 | Peaking | 2094 Hz | 0.54 | 5.2 dB   |
 | Peaking | 4359 Hz | 5.84 | -5.1 dB  |
 | Peaking | 6418 Hz | 8.86 | 2.7 dB   |
-| Peaking | 31 Hz   | 1.28 | 0.9 dB   |
-| Peaking | 768 Hz  | 2.69 | 0.8 dB   |
-| Peaking | 3002 Hz | 0.1  | -0.2 dB  |
-| Peaking | 3010 Hz | 3.04 | -0.7 dB  |
-| Peaking | 3339 Hz | 5.76 | 2.3 dB   |
+| Peaking | 31 Hz   | 1.01 | 1.0 dB   |
+| Peaking | 765 Hz  | 2.9  | 0.8 dB   |
+| Peaking | 1047 Hz | 0.03 | -0.1 dB  |
+| Peaking | 3307 Hz | 2.16 | -1.0 dB  |
+| Peaking | 3326 Hz | 5.32 | 2.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Cypher%20Labs%20Astru%20IEM%20Bass%20Boo/Cypher%20Labs%20Astru%20IEM%20Bass%20Boo.png)

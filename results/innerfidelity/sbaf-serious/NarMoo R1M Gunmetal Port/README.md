@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.2; 23 -9.9; 25 -9.7; 28 -9.4; 31 -9.1; 34 -8.8; 37 -8.6; 41 -8
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.6dB` and instead set Global volume in the UI for both channels to **-26**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`NarMoo R1M Gunmetal Port GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-26**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NarMoo R1M Gunmetal Port ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `NarMoo R1M Gunme
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.9dB.
+When using independent subset of filters, apply preamp of **-1.9dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|

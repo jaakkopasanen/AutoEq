@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.1; 25 0.9; 28 0.6; 31 0.4; 34 0.2; 37 0.1; 41 -0.1; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ocharaku Flat4 Kuro Type II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ocharaku Flat4 Kuro Type II ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Ocharaku Flat4 K
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 5061 Hz  |  5.5  | -11.3 dB |
 | Peaking | 6026 Hz  |  3.06 | 12.5 dB  |
 | Peaking | 7992 Hz  |  2.46 | -11.5 dB |
-| Peaking | 20 Hz    |  1.7  | 1.5 dB   |
+| Peaking | 19 Hz    |  1.68 | 1.5 dB   |
 | Peaking | 635 Hz   |  1.52 | 1.9 dB   |
 | Peaking | 1228 Hz  |  3.01 | -1.8 dB  |
-| Peaking | 11099 Hz | 10.75 | 1.7 dB   |
-| Peaking | 12582 Hz |  4.54 | 0.9 dB   |
+| Peaking | 11165 Hz | 10.82 | 1.7 dB   |
+| Peaking | 12508 Hz |  4.52 | 0.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ocharaku%20Flat4%20Kuro%20Type%20II/Ocharaku%20Flat4%20Kuro%20Type%20II.png)

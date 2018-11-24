@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.4; 31 4.7; 34 4.2; 37 3.7; 41 3.2; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeze LCD-X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-X ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-X Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 22 Hz    | 0.9  | 5.9 dB   |
-| Peaking | 70 Hz    | 0.92 | 1.9 dB   |
-| Peaking | 210 Hz   | 0.71 | -1.4 dB  |
+| Peaking | 71 Hz    | 0.92 | 1.9 dB   |
+| Peaking | 212 Hz   | 0.71 | -1.4 dB  |
 | Peaking | 3170 Hz  | 1.21 | 2.6 dB   |
 | Peaking | 5547 Hz  | 2.67 | 4.0 dB   |
-| Peaking | 806 Hz   | 4.18 | -0.3 dB  |
-| Peaking | 1751 Hz  | 6.26 | 0.5 dB   |
-| Peaking | 13098 Hz | 0.5  | 1.3 dB   |
-| Peaking | 19832 Hz | 0.98 | -18.7 dB |
+| Peaking | 806 Hz   | 4.19 | -0.3 dB  |
+| Peaking | 1746 Hz  | 6.22 | 0.5 dB   |
+| Peaking | 13025 Hz | 0.51 | 1.3 dB   |
+| Peaking | 19798 Hz | 0.98 | -18.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audeze%20LCD-X/Audeze%20LCD-X.png)

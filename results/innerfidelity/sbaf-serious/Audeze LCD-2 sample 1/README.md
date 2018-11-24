@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.8; 25 5.5; 28 5.2; 31 5.1; 34 5.1; 37 5.1; 41 5.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.5dB` and instead set Global volume in the UI for both channels to **-65**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeze LCD-2 sample 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-65**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-2 sample 1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 12 Hz   | 1.14 | 5.9 dB  |
-| Peaking | 32 Hz   | 0.35 | 4.6 dB  |
+| Peaking | 12 Hz   | 1.1  | 5.9 dB  |
+| Peaking | 32 Hz   | 0.36 | 4.6 dB  |
 | Peaking | 1864 Hz | 1.58 | 4.9 dB  |
 | Peaking | 3736 Hz | 1.55 | 5.2 dB  |
-| Peaking | 5742 Hz | 3.09 | 4.6 dB  |
-| Peaking | 24 Hz   | 1.73 | -0.5 dB |
-| Peaking | 954 Hz  | 2.43 | -3.5 dB |
-| Peaking | 1190 Hz | 1.81 | 3.4 dB  |
-| Peaking | 1546 Hz | 4.31 | -2.0 dB |
-| Peaking | 8352 Hz | 3.85 | -1.3 dB |
+| Peaking | 5741 Hz | 3.09 | 4.6 dB  |
+| Peaking | 952 Hz  | 2.46 | -3.5 dB |
+| Peaking | 1193 Hz | 1.76 | 3.3 dB  |
+| Peaking | 1544 Hz | 4.21 | -2.1 dB |
+| Peaking | 6563 Hz | 7.53 | 2.1 dB  |
+| Peaking | 7838 Hz | 2.17 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-2%20sample%201/Audeze%20LCD-2%20sample%201.png)

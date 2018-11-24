@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sterling TE-400 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sterling TE-400 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sterling TE-400 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
-| Type    | Fc      |     Q | Gain     |
-|:--------|:--------|:------|:---------|
-| Peaking | 59 Hz   |  0.24 | 27.4 dB  |
-| Peaking | 94 Hz   |  0.28 | -27.3 dB |
-| Peaking | 737 Hz  |  3.3  | 8.9 dB   |
-| Peaking | 2308 Hz |  1.66 | 5.9 dB   |
-| Peaking | 6032 Hz |  5.59 | 6.7 dB   |
-| Peaking | 3019 Hz |  3    | -0.9 dB  |
-| Peaking | 3748 Hz |  4.49 | 7.7 dB   |
-| Peaking | 4356 Hz |  3.95 | -7.8 dB  |
-| Peaking | 5454 Hz | 10.32 | 3.9 dB   |
-| Peaking | 8291 Hz |  9.39 | -2.5 dB  |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 59 Hz   | 0.23 | 27.9 dB  |
+| Peaking | 94 Hz   | 0.27 | -27.8 dB |
+| Peaking | 736 Hz  | 3.28 | 8.9 dB   |
+| Peaking | 2301 Hz | 1.64 | 6.0 dB   |
+| Peaking | 6030 Hz | 5.59 | 6.8 dB   |
+| Peaking | 1139 Hz | 5.93 | -1.8 dB  |
+| Peaking | 3733 Hz | 5.68 | 7.3 dB   |
+| Peaking | 4359 Hz | 3.78 | -7.0 dB  |
+| Peaking | 5414 Hz | 9.25 | 4.0 dB   |
+| Peaking | 8271 Hz | 9.17 | -2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sterling%20TE-400/Sterling%20TE-400.png)

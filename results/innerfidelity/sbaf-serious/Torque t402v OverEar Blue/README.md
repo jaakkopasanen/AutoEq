@@ -9,28 +9,29 @@ GraphicEQ: 21 -3.9; 23 -4.6; 25 -5.2; 28 -5.9; 31 -6.5; 34 -7.1; 37 -7.5; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.6dB` and instead set Global volume in the UI for both channels to **-46**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Torque t402v OverEar Blue GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-46**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OverEar Blue ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.7dB.
+When using independent subset of filters, apply preamp of **-4.8dB**.
 
-| Type    | Fc      |    Q | Gain     |
-|:--------|:--------|:-----|:---------|
-| Peaking | 236 Hz  | 0.12 | -12.3 dB |
-| Peaking | 278 Hz  | 0.57 | -16.1 dB |
-| Peaking | 760 Hz  | 0.41 | 29.7 dB  |
-| Peaking | 1279 Hz | 0.71 | -13.8 dB |
-| Peaking | 7840 Hz | 2.59 | -8.3 dB  |
-| Peaking | 329 Hz  | 6.61 | -0.3 dB  |
-| Peaking | 1916 Hz | 4.44 | 3.0 dB   |
-| Peaking | 2984 Hz | 1.29 | -3.4 dB  |
-| Peaking | 3409 Hz | 3.38 | 4.1 dB   |
-| Peaking | 5297 Hz | 6.59 | 2.3 dB   |
+| Type    | Fc      |     Q | Gain     |
+|:--------|:--------|:------|:---------|
+| Peaking | 233 Hz  |  0.13 | -12.2 dB |
+| Peaking | 278 Hz  |  0.57 | -16.1 dB |
+| Peaking | 762 Hz  |  0.41 | 29.6 dB  |
+| Peaking | 1277 Hz |  0.72 | -13.8 dB |
+| Peaking | 7861 Hz |  2.61 | -8.2 dB  |
+| Peaking | 42 Hz   |  2.06 | -0.3 dB  |
+| Peaking | 1905 Hz |  6.51 | 2.3 dB   |
+| Peaking | 2739 Hz |  2.33 | -2.8 dB  |
+| Peaking | 3371 Hz |  3.88 | 2.3 dB   |
+| Peaking | 6699 Hz | 10.77 | -1.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Blue/Torque%20t402v%20OverEar%20Blue.png)

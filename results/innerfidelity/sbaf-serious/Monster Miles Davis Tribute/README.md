@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.4; 23 -9.4; 25 -9.3; 28 -9.2; 31 -9.1; 34 -9.0; 37 -8.9; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-44**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Miles Davis Tribute GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Miles Davis Tribute ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Monster Miles Da
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.9dB.
+When using independent subset of filters, apply preamp of **-4.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 23 Hz    | 0.21 | -9.1 dB |
+| Peaking | 23 Hz    | 0.2  | -9.1 dB |
 | Peaking | 157 Hz   | 0.8  | -3.6 dB |
-| Peaking | 2269 Hz  | 1.54 | -6.4 dB |
-| Peaking | 3467 Hz  | 4.84 | 5.3 dB  |
-| Peaking | 6514 Hz  | 6.41 | 5.0 dB  |
-| Peaking | 313 Hz   | 1.81 | -0.9 dB |
-| Peaking | 754 Hz   | 1.33 | 1.8 dB  |
-| Peaking | 1582 Hz  | 4.09 | -1.2 dB |
-| Peaking | 4746 Hz  | 8.28 | -2.7 dB |
-| Peaking | 14569 Hz | 7.38 | -1.6 dB |
+| Peaking | 2270 Hz  | 1.54 | -6.4 dB |
+| Peaking | 3486 Hz  | 4.84 | 5.3 dB  |
+| Peaking | 6468 Hz  | 6.42 | 5.0 dB  |
+| Peaking | 317 Hz   | 2.23 | -0.8 dB |
+| Peaking | 757 Hz   | 1.33 | 1.8 dB  |
+| Peaking | 1580 Hz  | 4.12 | -1.2 dB |
+| Peaking | 4736 Hz  | 8.15 | -2.8 dB |
+| Peaking | 14682 Hz | 7.59 | -1.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Miles%20Davis%20Tribute/Monster%20Miles%20Davis%20Tribute.png)

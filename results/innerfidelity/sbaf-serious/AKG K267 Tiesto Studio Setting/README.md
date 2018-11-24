@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.7; 25 3.7; 28 3.8; 31 3.9; 34 4.0; 37 4.2; 41 4.3; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K267 Tiesto Studio Setting GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K267 Tiesto Studio Setting ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K267 Tiesto 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 32 Hz   | 0.66 | 4.0 dB  |
-| Peaking | 69 Hz   | 1.79 | 3.2 dB  |
+| Peaking | 33 Hz   | 0.66 | 4.0 dB  |
+| Peaking | 68 Hz   | 1.79 | 3.2 dB  |
 | Peaking | 1462 Hz | 3.83 | -3.4 dB |
-| Peaking | 3951 Hz | 1.32 | 5.8 dB  |
+| Peaking | 3950 Hz | 1.32 | 5.8 dB  |
 | Peaking | 6171 Hz | 6.2  | 4.2 dB  |
-| Peaking | 135 Hz  | 3.34 | -1.0 dB |
-| Peaking | 343 Hz  | 3.61 | 2.5 dB  |
-| Peaking | 699 Hz  | 2.2  | 0.4 dB  |
-| Peaking | 6676 Hz | 8.48 | 1.4 dB  |
-| Peaking | 8049 Hz | 2.36 | -1.3 dB |
+| Peaking | 136 Hz  | 3.41 | -1.0 dB |
+| Peaking | 343 Hz  | 3.64 | 2.5 dB  |
+| Peaking | 700 Hz  | 2.2  | 0.4 dB  |
+| Peaking | 6751 Hz | 8.36 | 1.4 dB  |
+| Peaking | 8061 Hz | 2.36 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K267%20Tiesto%20Studio%20Setting/AKG%20K267%20Tiesto%20Studio%20Setting.png)

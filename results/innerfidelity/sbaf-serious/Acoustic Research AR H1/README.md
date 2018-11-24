@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.8; 25 3.6; 28 3.4; 31 3.3; 34 3.2; 37 3.2; 41 3.1; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Acoustic Research AR H1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Acoustic Research AR H1 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Acoustic Researc
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 25 Hz   | 0.96 | 3.8 dB  |
-| Peaking | 59 Hz   | 1.81 | 2.2 dB  |
+| Peaking | 25 Hz   | 0.96 | 3.7 dB  |
+| Peaking | 58 Hz   | 1.82 | 2.2 dB  |
 | Peaking | 3451 Hz | 2.73 | 6.7 dB  |
-| Peaking | 6304 Hz | 3.58 | 4.4 dB  |
-| Peaking | 9185 Hz | 4.05 | -4.2 dB |
-| Peaking | 173 Hz  | 2.84 | -1.4 dB |
-| Peaking | 370 Hz  | 4.67 | -2.0 dB |
-| Peaking | 673 Hz  | 5.05 | -4.2 dB |
-| Peaking | 750 Hz  | 6.47 | 5.0 dB  |
-| Peaking | 1812 Hz | 8.26 | -2.0 dB |
+| Peaking | 6306 Hz | 3.6  | 4.4 dB  |
+| Peaking | 9217 Hz | 4.1  | -4.2 dB |
+| Peaking | 174 Hz  | 2.91 | -1.4 dB |
+| Peaking | 370 Hz  | 4.7  | -2.0 dB |
+| Peaking | 673 Hz  | 5.03 | -4.1 dB |
+| Peaking | 750 Hz  | 6.64 | 5.0 dB  |
+| Peaking | 1812 Hz | 8.72 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Acoustic%20Research%20AR%20H1/Acoustic%20Research%20AR%20H1.png)

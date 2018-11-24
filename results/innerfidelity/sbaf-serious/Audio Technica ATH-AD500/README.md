@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-AD500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-AD500 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Audio Technica A
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 37 Hz   | 0.5  | 6.7 dB  |
 | Peaking | 486 Hz  | 1.52 | 1.3 dB  |
 | Peaking | 3137 Hz | 2.66 | 6.5 dB  |
-| Peaking | 5924 Hz | 3.15 | 6.3 dB  |
-| Peaking | 9219 Hz | 4.17 | -3.5 dB |
-| Peaking | 71 Hz   | 1.68 | 3.3 dB  |
-| Peaking | 75 Hz   | 0.84 | -2.2 dB |
-| Peaking | 1434 Hz | 1.41 | -3.4 dB |
-| Peaking | 1537 Hz | 0.57 | 1.7 dB  |
-| Peaking | 4282 Hz | 9.01 | -2.1 dB |
+| Peaking | 5922 Hz | 3.15 | 6.3 dB  |
+| Peaking | 9191 Hz | 4.17 | -3.5 dB |
+| Peaking | 70 Hz   | 1.69 | 3.3 dB  |
+| Peaking | 73 Hz   | 0.82 | -2.2 dB |
+| Peaking | 1436 Hz | 1.41 | -3.3 dB |
+| Peaking | 1538 Hz | 0.56 | 1.7 dB  |
+| Peaking | 4306 Hz | 8.93 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-AD500/Audio%20Technica%20ATH-AD500.png)

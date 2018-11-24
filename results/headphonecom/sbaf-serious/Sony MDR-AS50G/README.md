@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.0; 23 -1.4; 25 -1.8; 28 -2.3; 31 -2.7; 34 -3.0; 37 -3.3; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-AS50G GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-AS50G ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-AS50G P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.3dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 88 Hz    | 0.47 | -5.4 dB |
-| Peaking | 215 Hz   | 0.91 | -2.9 dB |
+| Peaking | 216 Hz   | 0.91 | -2.9 dB |
 | Peaking | 1976 Hz  | 1.92 | -5.2 dB |
 | Peaking | 3399 Hz  | 3.16 | 8.2 dB  |
-| Peaking | 7944 Hz  | 3.95 | -7.2 dB |
-| Peaking | 867 Hz   | 2.5  | 1.1 dB  |
-| Peaking | 4028 Hz  | 9.3  | 3.3 dB  |
-| Peaking | 5061 Hz  | 5.15 | -4.5 dB |
-| Peaking | 12986 Hz | 0.82 | 1.6 dB  |
-| Peaking | 14389 Hz | 3.78 | -7.0 dB |
+| Peaking | 7949 Hz  | 3.95 | -7.2 dB |
+| Peaking | 867 Hz   | 2.48 | 1.1 dB  |
+| Peaking | 4032 Hz  | 9    | 3.2 dB  |
+| Peaking | 5058 Hz  | 5.08 | -4.5 dB |
+| Peaking | 12913 Hz | 0.82 | 1.6 dB  |
+| Peaking | 14467 Hz | 3.79 | -7.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-AS50G/Sony%20MDR-AS50G.png)

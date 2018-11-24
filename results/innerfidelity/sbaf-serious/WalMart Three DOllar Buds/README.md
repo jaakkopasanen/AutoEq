@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`WalMart Three DOllar Buds GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `WalMart Three DOllar Buds ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `WalMart Three DO
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 427 Hz  | 1.63 | -6.6 dB |
 | Peaking | 2379 Hz | 3.66 | 5.1 dB  |
 | Peaking | 4066 Hz | 1.39 | 4.4 dB  |
-| Peaking | 175 Hz  | 5.61 | 1.4 dB  |
-| Peaking | 1629 Hz | 5.81 | -0.8 dB |
-| Peaking | 5786 Hz | 8.65 | 1.7 dB  |
-| Peaking | 8609 Hz | 1.3  | -0.5 dB |
+| Peaking | 176 Hz  | 5.62 | 1.4 dB  |
+| Peaking | 1633 Hz | 5.8  | -0.8 dB |
+| Peaking | 5765 Hz | 8.65 | 1.7 dB  |
+| Peaking | 8600 Hz | 1.3  | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/WalMart%20Three%20DOllar%20Buds/WalMart%20Three%20DOllar%20Buds.png)

@@ -9,16 +9,17 @@ GraphicEQ: 21 -9.3; 23 -9.3; 25 -9.4; 28 -9.6; 31 -9.7; 34 -9.7; 37 -9.8; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Polk Audio UltraFit 3000 sample A GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Polk Audio UltraFit 3000 sample A ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.2dB.
 | Peaking | 196 Hz  |  0.54 | -6.0 dB |
 | Peaking | 3441 Hz |  3.1  | 7.0 dB  |
 | Peaking | 6061 Hz |  4.76 | 6.3 dB  |
-| Peaking | 1032 Hz |  1.6  | 1.4 dB  |
-| Peaking | 1823 Hz |  1.9  | -2.4 dB |
-| Peaking | 2895 Hz |  5.57 | 1.8 dB  |
-| Peaking | 4805 Hz | 13.23 | -2.5 dB |
-| Peaking | 8250 Hz |  6.21 | -0.7 dB |
+| Peaking | 1033 Hz |  1.6  | 1.4 dB  |
+| Peaking | 1825 Hz |  1.9  | -2.4 dB |
+| Peaking | 2906 Hz |  5.58 | 1.8 dB  |
+| Peaking | 4828 Hz | 13.23 | -2.5 dB |
+| Peaking | 8246 Hz |  6.21 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Polk%20Audio%20UltraFit%203000%20sample%20A/Polk%20Audio%20UltraFit%203000%20sample%20A.png)

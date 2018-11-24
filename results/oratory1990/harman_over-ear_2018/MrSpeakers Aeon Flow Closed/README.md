@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.5; 25 1.6; 28 1.9; 31 2.2; 34 2.4; 37 2.6; 41 2.9; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`MrSpeakers Aeon Flow Closed GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon Flow Closed ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 2085 Hz  | 1.81 | 3.8 dB  |
 | Peaking | 3425 Hz  | 2.44 | 5.6 dB  |
 | Peaking | 24000 Hz | 2.22 | 0.5 dB  |
-| Peaking | 921 Hz   | 5.32 | -1.5 dB |
+| Peaking | 927 Hz   | 5.32 | -1.5 dB |
 | Peaking | 1584 Hz  | 0.26 | 0.2 dB  |
-| Peaking | 5590 Hz  | 8.33 | -4.6 dB |
-| Peaking | 6695 Hz  | 9.77 | 4.0 dB  |
-| Peaking | 19381 Hz | 1.45 | -3.7 dB |
+| Peaking | 5610 Hz  | 8.33 | -4.6 dB |
+| Peaking | 6719 Hz  | 9.78 | 4.0 dB  |
+| Peaking | 19306 Hz | 1.46 | -3.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/MrSpeakers%20Aeon%20Flow%20Closed/MrSpeakers%20Aeon%20Flow%20Closed.png)

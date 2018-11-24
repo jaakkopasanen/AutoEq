@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.6; 25 3.9; 28 3.1; 31 2.6; 34 2.5; 37 2.5; 41 2.6; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax Lambda Nova Signature GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax Lambda Nova Signature ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.6dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 13 Hz    |  1.19 | 6.3 dB  |
-| Peaking | 86 Hz    |  0.06 | 2.4 dB  |
-| Peaking | 1666 Hz  |  1.57 | -5.6 dB |
-| Peaking | 2337 Hz  |  3.61 | 5.9 dB  |
-| Peaking | 5268 Hz  |  3.24 | 4.0 dB  |
-| Peaking | 32 Hz    |  2.13 | -0.9 dB |
-| Peaking | 65 Hz    |  2.42 | 1.1 dB  |
-| Peaking | 6890 Hz  | 10.18 | 2.9 dB  |
-| Peaking | 9177 Hz  |  4.58 | -4.3 dB |
-| Peaking | 10698 Hz |  4.11 | 0.7 dB  |
+| Peaking | 14 Hz    |  1.13 | 6.4 dB  |
+| Peaking | 87 Hz    |  0.06 | 2.4 dB  |
+| Peaking | 1665 Hz  |  1.57 | -5.6 dB |
+| Peaking | 2331 Hz  |  3.61 | 5.9 dB  |
+| Peaking | 5248 Hz  |  3.24 | 4.0 dB  |
+| Peaking | 32 Hz    |  2.02 | -0.9 dB |
+| Peaking | 66 Hz    |  2.42 | 1.1 dB  |
+| Peaking | 6890 Hz  | 10    | 2.9 dB  |
+| Peaking | 9170 Hz  |  4.57 | -4.3 dB |
+| Peaking | 10689 Hz |  4.13 | 0.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20Lambda%20Nova%20Signature/Stax%20Lambda%20Nova%20Signature.png)

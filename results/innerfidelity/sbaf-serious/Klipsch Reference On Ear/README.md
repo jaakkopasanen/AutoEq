@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.2; 23 -4.4; 25 -4.5; 28 -4.6; 31 -4.8; 34 -4.8; 37 -4.9; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Klipsch Reference On Ear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Klipsch Reference On Ear ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Klipsch Referenc
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.4dB.
+When using independent subset of filters, apply preamp of **-2.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 43 Hz   | 0.29 | -3.8 dB |
-| Peaking | 222 Hz  | 0.53 | -5.0 dB |
-| Peaking | 605 Hz  | 1.01 | -4.1 dB |
-| Peaking | 1418 Hz | 0.35 | 3.1 dB  |
-| Peaking | 24 Hz   | 0.93 | -0.9 dB |
-| Peaking | 2459 Hz | 5.31 | 0.9 dB  |
-| Peaking | 4125 Hz | 1.68 | -2.1 dB |
-| Peaking | 5339 Hz | 3.74 | 6.3 dB  |
-| Peaking | 8845 Hz | 3.8  | -5.4 dB |
+| Peaking | 40 Hz   | 0.28 | -3.9 dB |
+| Peaking | 221 Hz  | 0.52 | -5.0 dB |
+| Peaking | 603 Hz  | 1.01 | -4.1 dB |
+| Peaking | 1415 Hz | 0.35 | 3.1 dB  |
+| Peaking | 23 Hz   | 1.25 | -0.6 dB |
+| Peaking | 2464 Hz | 5.29 | 0.9 dB  |
+| Peaking | 4125 Hz | 1.67 | -2.1 dB |
+| Peaking | 5335 Hz | 3.75 | 6.3 dB  |
+| Peaking | 8844 Hz | 3.8  | -5.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Klipsch%20Reference%20On%20Ear/Klipsch%20Reference%20On%20Ear.png)

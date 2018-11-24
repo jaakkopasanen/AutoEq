@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.6; 25 1.2; 28 0.6; 31 0.2; 34 -0.2; 37 -0.5; 41 -0.7; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 25-1 II B (2012 model) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 25-1 II B (2012 model) ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 25
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 2.35 | 2.2 dB  |
-| Peaking | 139 Hz  | 1.46 | -3.5 dB |
-| Peaking | 3090 Hz | 5.05 | 2.2 dB  |
-| Peaking | 5536 Hz | 1.79 | 6.7 dB  |
-| Peaking | 8931 Hz | 4.44 | -5.9 dB |
-| Peaking | 19 Hz   | 1.63 | 1.2 dB  |
-| Peaking | 60 Hz   | 1.24 | -1.1 dB |
-| Peaking | 440 Hz  | 0.93 | 1.3 dB  |
-| Peaking | 1982 Hz | 1.77 | -4.3 dB |
-| Peaking | 2540 Hz | 1.42 | 2.2 dB  |
+| Peaking | 21 Hz   | 2.89 | 2.0 dB  |
+| Peaking | 140 Hz  | 1.48 | -3.5 dB |
+| Peaking | 3066 Hz | 5.57 | 2.2 dB  |
+| Peaking | 5532 Hz | 1.77 | 6.7 dB  |
+| Peaking | 8947 Hz | 4.43 | -6.0 dB |
+| Peaking | 67 Hz   | 1.86 | -1.1 dB |
+| Peaking | 356 Hz  | 2.14 | 1.2 dB  |
+| Peaking | 669 Hz  | 1.19 | 0.8 dB  |
+| Peaking | 1991 Hz | 1.65 | -4.5 dB |
+| Peaking | 2545 Hz | 1.42 | 2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%2025-1%20II%20B%20(2012%20model)/Sennheiser%20HD%2025-1%20II%20B%20(2012%20model).png)

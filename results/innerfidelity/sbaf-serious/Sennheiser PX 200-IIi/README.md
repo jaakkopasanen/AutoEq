@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser PX 200-IIi GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PX 200-IIi ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 40 Hz   | 0.43 | 6.7 dB  |
-| Peaking | 751 Hz  | 2.95 | 2.2 dB  |
-| Peaking | 1271 Hz | 4.38 | 2.2 dB  |
-| Peaking | 1989 Hz | 2.2  | -2.6 dB |
-| Peaking | 4622 Hz | 1.32 | 6.9 dB  |
-| Peaking | 26 Hz   | 0.56 | 1.6 dB  |
-| Peaking | 37 Hz   | 1.46 | -2.2 dB |
-| Peaking | 4809 Hz | 6.27 | -1.2 dB |
-| Peaking | 6470 Hz | 2.8  | 4.0 dB  |
-| Peaking | 7414 Hz | 1.92 | -3.3 dB |
+| Peaking | 751 Hz  | 2.96 | 2.2 dB  |
+| Peaking | 1271 Hz | 4.32 | 2.2 dB  |
+| Peaking | 1988 Hz | 2.19 | -2.6 dB |
+| Peaking | 4621 Hz | 1.32 | 6.9 dB  |
+| Peaking | 28 Hz   | 0.57 | 1.7 dB  |
+| Peaking | 36 Hz   | 1.43 | -2.3 dB |
+| Peaking | 4773 Hz | 6.19 | -1.1 dB |
+| Peaking | 6367 Hz | 2.84 | 3.9 dB  |
+| Peaking | 7592 Hz | 1.95 | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PX%20200-IIi/Sennheiser%20PX%20200-IIi.png)

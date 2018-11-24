@@ -9,8 +9,9 @@ GraphicEQ: 21 -11.0; 23 -11.0; 25 -11.0; 28 -10.9; 31 -10.7; 34 -10.4; 37 -10.2;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.3dB` and instead set Global volume in the UI for both channels to **-42**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`California Headphone Silverado GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-42**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `California Headphone Silverado ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `California Headp
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.1dB.
+When using independent subset of filters, apply preamp of **-4.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 24 Hz    | 1    | -9.5 dB  |
-| Peaking | 135 Hz   | 0.42 | -11.8 dB |
-| Peaking | 1685 Hz  | 2.92 | -5.6 dB  |
-| Peaking | 3781 Hz  | 1.4  | 4.8 dB   |
-| Peaking | 8187 Hz  | 2.65 | -9.8 dB  |
-| Peaking | 64 Hz    | 5.93 | 1.9 dB   |
-| Peaking | 167 Hz   | 6.34 | 1.6 dB   |
-| Peaking | 381 Hz   | 3.12 | -2.6 dB  |
-| Peaking | 799 Hz   | 1.89 | 2.2 dB   |
-| Peaking | 10650 Hz | 7.78 | 2.5 dB   |
+| Peaking | 24 Hz    | 1    | -9.4 dB  |
+| Peaking | 136 Hz   | 0.42 | -11.8 dB |
+| Peaking | 1688 Hz  | 2.92 | -5.6 dB  |
+| Peaking | 3774 Hz  | 1.4  | 4.8 dB   |
+| Peaking | 8191 Hz  | 2.65 | -9.8 dB  |
+| Peaking | 93 Hz    | 5.71 | -1.4 dB  |
+| Peaking | 171 Hz   | 4.16 | 1.4 dB   |
+| Peaking | 381 Hz   | 3.11 | -2.7 dB  |
+| Peaking | 796 Hz   | 1.89 | 2.2 dB   |
+| Peaking | 10697 Hz | 7.87 | 2.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/California%20Headphone%20Silverado/California%20Headphone%20Silverado.png)

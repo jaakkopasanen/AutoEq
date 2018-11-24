@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.0; 25 4.6; 28 4.0; 31 3.6; 34 3.3; 37 3.0; 41 2.7; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Yamaha HP1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yamaha HP1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 1.22 | 5.2 dB  |
-| Peaking | 50 Hz   | 1.84 | 1.5 dB  |
+| Peaking | 22 Hz   | 1.2  | 5.1 dB  |
+| Peaking | 48 Hz   | 1.85 | 1.6 dB  |
 | Peaking | 1605 Hz | 2.63 | 3.4 dB  |
-| Peaking | 3574 Hz | 3.07 | 4.7 dB  |
-| Peaking | 5650 Hz | 2.77 | 6.2 dB  |
-| Peaking | 81 Hz   | 1.48 | 0.8 dB  |
-| Peaking | 200 Hz  | 0.74 | -1.2 dB |
-| Peaking | 652 Hz  | 0.95 | -0.9 dB |
-| Peaking | 1247 Hz | 5.46 | 1.4 dB  |
-| Peaking | 8229 Hz | 4.79 | -1.2 dB |
+| Peaking | 3574 Hz | 3.06 | 4.7 dB  |
+| Peaking | 5651 Hz | 2.77 | 6.2 dB  |
+| Peaking | 79 Hz   | 1.5  | 1.2 dB  |
+| Peaking | 298 Hz  | 0.25 | -1.2 dB |
+| Peaking | 1252 Hz | 5.07 | 1.6 dB  |
+| Peaking | 1886 Hz | 9.19 | 1.1 dB  |
+| Peaking | 8181 Hz | 4.97 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20HP1/Yamaha%20HP1.png)

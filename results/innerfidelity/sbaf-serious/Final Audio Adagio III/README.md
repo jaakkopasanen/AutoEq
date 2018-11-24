@@ -9,28 +9,28 @@ GraphicEQ: 21 -10.6; 23 -10.6; 25 -10.6; 28 -10.6; 31 -10.6; 34 -10.6; 37 -10.7;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.4dB` and instead set Global volume in the UI for both channels to **-54**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Final Audio Adagio III GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-54**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Final Audio Adagio III ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 39 Hz    | 0.24 | -10.7 dB |
-| Peaking | 191 Hz   | 0.79 | -6.9 dB  |
-| Peaking | 3642 Hz  | 3.16 | 12.0 dB  |
-| Peaking | 3700 Hz  | 1.08 | -6.0 dB  |
-| Peaking | 6412 Hz  | 5.45 | 7.2 dB   |
-| Peaking | 19 Hz    | 2.24 | -0.9 dB  |
-| Peaking | 362 Hz   | 2.24 | -1.8 dB  |
-| Peaking | 754 Hz   | 2.43 | 4.1 dB   |
-| Peaking | 2523 Hz  | 6.47 | -2.2 dB  |
-| Peaking | 10506 Hz | 1.75 | 0.3 dB   |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 39 Hz   | 0.24 | -10.7 dB |
+| Peaking | 191 Hz  | 0.79 | -6.9 dB  |
+| Peaking | 3647 Hz | 3.16 | 12.0 dB  |
+| Peaking | 3693 Hz | 1.08 | -6.0 dB  |
+| Peaking | 6403 Hz | 5.45 | 7.2 dB   |
+| Peaking | 362 Hz  | 2.23 | -1.8 dB  |
+| Peaking | 754 Hz  | 2.42 | 4.1 dB   |
+| Peaking | 2561 Hz | 4.52 | -2.3 dB  |
+| Peaking | 3129 Hz | 6.92 | 1.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Final%20Audio%20Adagio%20III/Final%20Audio%20Adagio%20III.png)

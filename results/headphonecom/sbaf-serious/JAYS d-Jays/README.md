@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.4; 25 5.1; 28 4.8; 31 4.6; 34 4.3; 37 4.1; 41 3.8; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`JAYS d-Jays GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `JAYS d-Jays ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `JAYS d-Jays Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -29,7 +30,7 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 5973 Hz | 4.17 | 6.0 dB  |
 | Peaking | 249 Hz  | 1.08 | -1.4 dB |
 | Peaking | 770 Hz  | 2.13 | 1.2 dB  |
-| Peaking | 6702 Hz | 8.5  | 1.7 dB  |
-| Peaking | 7710 Hz | 2.64 | -1.0 dB |
+| Peaking | 6691 Hz | 8.5  | 1.8 dB  |
+| Peaking | 7703 Hz | 2.63 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/JAYS%20d-Jays/JAYS%20d-Jays.png)

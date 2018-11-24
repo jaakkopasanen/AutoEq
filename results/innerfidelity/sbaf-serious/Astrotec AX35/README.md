@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.7; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Astrotec AX35 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Astrotec AX35 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Astrotec AX35 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 201 Hz  | 0.56 | -5.3 dB |
 | Peaking | 1883 Hz | 1.87 | -4.0 dB |
 | Peaking | 3768 Hz | 1.49 | 7.0 dB  |
-| Peaking | 890 Hz  | 2.5  | 1.2 dB  |
-| Peaking | 1483 Hz | 6.69 | -1.0 dB |
-| Peaking | 4354 Hz | 3.35 | -0.5 dB |
-| Peaking | 5373 Hz | 5.07 | 1.9 dB  |
-| Peaking | 6362 Hz | 8.48 | -2.3 dB |
+| Peaking | 891 Hz  | 2.5  | 1.2 dB  |
+| Peaking | 1490 Hz | 6.69 | -1.0 dB |
+| Peaking | 4350 Hz | 3.34 | -0.5 dB |
+| Peaking | 5345 Hz | 5.07 | 1.9 dB  |
+| Peaking | 6285 Hz | 8.45 | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Astrotec%20AX35/Astrotec%20AX35.png)

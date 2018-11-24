@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 3.0; 25 2.2; 28 1.2; 31 0.3; 34 -0.4; 37 -0.9; 41 -1.5; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-44**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-M50x (Massdrop Velours Earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M50x (Massdrop Velours Earpads) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-4.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 21 Hz    | 3.67 | 4.4 dB   |
+| Peaking | 22 Hz    | 3.57 | 4.3 dB   |
 | Peaking | 302 Hz   | 3.1  | 4.6 dB   |
-| Peaking | 3944 Hz  | 0.57 | -2.6 dB  |
-| Peaking | 14687 Hz | 2.07 | -11.9 dB |
-| Peaking | 20225 Hz | 0.9  | -13.9 dB |
-| Peaking | 50 Hz    | 1.53 | -2.0 dB  |
-| Peaking | 137 Hz   | 2.28 | -2.7 dB  |
-| Peaking | 5687 Hz  | 4.39 | 3.1 dB   |
-| Peaking | 7302 Hz  | 1.13 | -2.0 dB  |
-| Peaking | 10588 Hz | 3.71 | 3.1 dB   |
+| Peaking | 3934 Hz  | 0.57 | -2.6 dB  |
+| Peaking | 14686 Hz | 2.07 | -11.9 dB |
+| Peaking | 20285 Hz | 0.89 | -14.1 dB |
+| Peaking | 50 Hz    | 1.6  | -1.9 dB  |
+| Peaking | 137 Hz   | 2.26 | -2.7 dB  |
+| Peaking | 5710 Hz  | 4.41 | 3.1 dB   |
+| Peaking | 7317 Hz  | 1.14 | -2.0 dB  |
+| Peaking | 10517 Hz | 3.68 | 3.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audio%20Technica%20ATH-M50x%20(Massdrop%20Velours%20Earpads)/Audio%20Technica%20ATH-M50x%20(Massdrop%20Velours%20Earpads).png)

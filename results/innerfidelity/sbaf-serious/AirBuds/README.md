@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.1; 23 -1.8; 25 -2.3; 28 -2.5; 31 -2.6; 34 -3.1; 37 -3.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AirBuds GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AirBuds ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `AirBuds Parametr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 1431 Hz | 2.2  | 6.1 dB  |
 | Peaking | 3428 Hz | 1.19 | 7.1 dB  |
 | Peaking | 5289 Hz | 3.58 | -8.5 dB |
-| Peaking | 858 Hz  | 4.99 | 0.6 dB  |
-| Peaking | 1700 Hz | 6.47 | 2.4 dB  |
-| Peaking | 2029 Hz | 2.66 | -2.6 dB |
-| Peaking | 2527 Hz | 4    | 2.3 dB  |
-| Peaking | 3132 Hz | 4.52 | -0.6 dB |
+| Peaking | 859 Hz  | 4.95 | 0.6 dB  |
+| Peaking | 1687 Hz | 6.46 | 2.3 dB  |
+| Peaking | 2019 Hz | 2.67 | -2.6 dB |
+| Peaking | 2524 Hz | 3.96 | 2.3 dB  |
+| Peaking | 3140 Hz | 4.6  | -0.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AirBuds/AirBuds.png)

@@ -9,16 +9,17 @@ GraphicEQ: 21 -2.0; 23 -2.2; 25 -2.3; 28 -2.5; 31 -2.6; 34 -2.6; 37 -2.6; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`FLC Technologies FLC8 Bk Gy Bk GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `FLC Technologies FLC8 Bk Gy Bk ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 625 Hz  | 2.53 | 1.2 dB   |
 | Peaking | 5249 Hz | 0.78 | 8.5 dB   |
 | Peaking | 8563 Hz | 1.86 | -10.6 dB |
-| Peaking | 826 Hz  | 6.22 | 1.0 dB   |
-| Peaking | 1321 Hz | 2.6  | -1.7 dB  |
-| Peaking | 3272 Hz | 5.42 | 2.0 dB   |
-| Peaking | 5715 Hz | 1.69 | -1.4 dB  |
-| Peaking | 6101 Hz | 5.73 | 2.8 dB   |
+| Peaking | 827 Hz  | 6.24 | 1.0 dB   |
+| Peaking | 1322 Hz | 2.6  | -1.7 dB  |
+| Peaking | 3249 Hz | 5.48 | 2.0 dB   |
+| Peaking | 5723 Hz | 1.75 | -1.5 dB  |
+| Peaking | 6154 Hz | 5.63 | 2.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/FLC%20Technologies%20FLC8%20Bk%20Gy%20Bk/FLC%20Technologies%20FLC8%20Bk%20Gy%20Bk.png)

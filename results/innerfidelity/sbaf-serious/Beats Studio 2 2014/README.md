@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.7; 25 3.7; 28 2.2; 31 1.2; 34 0.7; 37 0.5; 41 0.4; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beats Studio 2 2014 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beats Studio 2 2014 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Beats Studio 2 2
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 2.53 | 5.6 dB  |
+| Peaking | 22 Hz   | 2.45 | 5.5 dB  |
 | Peaking | 465 Hz  | 0.98 | 7.5 dB  |
-| Peaking | 801 Hz  | 2.05 | -4.9 dB |
-| Peaking | 2385 Hz | 2.59 | 5.0 dB  |
+| Peaking | 800 Hz  | 2.05 | -4.9 dB |
+| Peaking | 2386 Hz | 2.59 | 5.0 dB  |
 | Peaking | 5270 Hz | 2.22 | 6.7 dB  |
-| Peaking | 19 Hz   | 1.43 | 0.8 dB  |
-| Peaking | 102 Hz  | 1.94 | -1.1 dB |
-| Peaking | 3405 Hz | 8.2  | -2.3 dB |
-| Peaking | 6598 Hz | 0.64 | 0.9 dB  |
-| Peaking | 9313 Hz | 2.13 | -2.6 dB |
+| Peaking | 104 Hz  | 1.61 | -1.1 dB |
+| Peaking | 320 Hz  | 5.98 | 1.1 dB  |
+| Peaking | 3405 Hz | 8.37 | -2.3 dB |
+| Peaking | 6954 Hz | 0.69 | 1.0 dB  |
+| Peaking | 9277 Hz | 2.02 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beats%20Studio%202%202014/Beats%20Studio%202%202014.png)

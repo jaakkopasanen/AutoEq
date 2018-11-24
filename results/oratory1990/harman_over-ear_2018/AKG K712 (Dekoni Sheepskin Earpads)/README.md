@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 1.4; 25 1.0; 28 0.6; 31 0.3; 34 0.0; 37 -0.2; 41 -0.4; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K712 (Dekoni Sheepskin Earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K712 (Dekoni Sheepskin Earpads) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 215 Hz   | 0.63 | -5.3 dB  |
-| Peaking | 2363 Hz  | 1.55 | -13.4 dB |
-| Peaking | 3921 Hz  | 0.71 | 20.3 dB  |
-| Peaking | 5426 Hz  | 0.94 | -14.6 dB |
-| Peaking | 19086 Hz | 0.97 | -9.5 dB  |
-| Peaking | 21 Hz    | 2    | 1.9 dB   |
-| Peaking | 664 Hz   | 2.86 | 2.1 dB   |
-| Peaking | 811 Hz   | 1.18 | -1.3 dB  |
-| Peaking | 1311 Hz  | 4.92 | 1.5 dB   |
-| Peaking | 12117 Hz | 8.67 | -2.3 dB  |
+| Peaking | 2355 Hz  | 1.56 | -13.4 dB |
+| Peaking | 3905 Hz  | 0.72 | 20.4 dB  |
+| Peaking | 5450 Hz  | 0.94 | -14.7 dB |
+| Peaking | 19064 Hz | 0.96 | -9.5 dB  |
+| Peaking | 20 Hz    | 1.92 | 1.8 dB   |
+| Peaking | 662 Hz   | 2.68 | 2.1 dB   |
+| Peaking | 840 Hz   | 0.98 | -1.4 dB  |
+| Peaking | 1305 Hz  | 4.51 | 1.7 dB   |
+| Peaking | 23999 Hz | 1.82 | 0.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20K712%20(Dekoni%20Sheepskin%20Earpads)/AKG%20K712%20(Dekoni%20Sheepskin%20Earpads).png)

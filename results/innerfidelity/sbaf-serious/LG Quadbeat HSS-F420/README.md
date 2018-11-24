@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.3; 23 -1.3; 25 -1.4; 28 -1.5; 31 -1.6; 34 -1.7; 37 -1.8; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.6dB` and instead set Global volume in the UI for both channels to **-25**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`LG Quadbeat HSS-F420 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-25**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `LG Quadbeat HSS-F420 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `LG Quadbeat HSS-
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.5dB.
+When using independent subset of filters, apply preamp of **-2.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 119 Hz   | 0.52 | -4.3 dB |
 | Peaking | 262 Hz   | 1.02 | -2.5 dB |
-| Peaking | 2160 Hz  | 1.68 | -1.9 dB |
+| Peaking | 2159 Hz  | 1.68 | -1.9 dB |
 | Peaking | 3649 Hz  | 2.4  | 2.9 dB  |
-| Peaking | 16117 Hz | 4.41 | -3.4 dB |
-| Peaking | 21 Hz    | 1.52 | -0.8 dB |
-| Peaking | 842 Hz   | 1.39 | 2.5 dB  |
-| Peaking | 842 Hz   | 0.75 | -1.5 dB |
-| Peaking | 6305 Hz  | 2.65 | 0.9 dB  |
-| Peaking | 8906 Hz  | 4.98 | -1.6 dB |
+| Peaking | 16118 Hz | 4.41 | -3.4 dB |
+| Peaking | 21 Hz    | 1.48 | -0.8 dB |
+| Peaking | 842 Hz   | 1.38 | 2.6 dB  |
+| Peaking | 854 Hz   | 0.77 | -1.6 dB |
+| Peaking | 6318 Hz  | 2.66 | 0.9 dB  |
+| Peaking | 8995 Hz  | 4.97 | -1.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/LG%20Quadbeat%20HSS-F420/LG%20Quadbeat%20HSS-F420.png)

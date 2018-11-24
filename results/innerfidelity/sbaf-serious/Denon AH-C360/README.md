@@ -9,8 +9,9 @@ GraphicEQ: 21 -7.7; 23 -7.8; 25 -7.9; 28 -8.0; 31 -8.2; 34 -8.3; 37 -8.4; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.2dB` and instead set Global volume in the UI for both channels to **-11**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-C360 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-11**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C360 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C360 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 35 Hz    | 0.25 | -7.8 dB |
-| Peaking | 150 Hz   | 0.7  | -5.7 dB |
+| Peaking | 36 Hz    | 0.24 | -7.8 dB |
+| Peaking | 151 Hz   | 0.7  | -5.7 dB |
 | Peaking | 314 Hz   | 1.24 | -3.3 dB |
 | Peaking | 5418 Hz  | 2.02 | -8.6 dB |
 | Peaking | 24000 Hz | 2.32 | -2.4 dB |
-| Peaking | 898 Hz   | 3.58 | 1.0 dB  |
-| Peaking | 2871 Hz  | 1.58 | 1.6 dB  |
-| Peaking | 4436 Hz  | 5.15 | -2.2 dB |
-| Peaking | 8580 Hz  | 3.64 | -5.6 dB |
-| Peaking | 8596 Hz  | 1.24 | 2.3 dB  |
+| Peaking | 896 Hz   | 3.48 | 1.0 dB  |
+| Peaking | 2884 Hz  | 1.54 | 1.6 dB  |
+| Peaking | 4467 Hz  | 5.14 | -2.2 dB |
+| Peaking | 8529 Hz  | 3.66 | -5.6 dB |
+| Peaking | 8704 Hz  | 1.28 | 2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-C360/Denon%20AH-C360.png)

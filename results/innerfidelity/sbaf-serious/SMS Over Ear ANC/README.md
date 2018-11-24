@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.5; 25 2.6; 28 -0.7; 31 -3.0; 34 -4.0; 37 -4.2; 41 -3.9; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`SMS Over Ear ANC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `SMS Over Ear ANC ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `SMS Over Ear ANC
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.1dB.
 | Peaking | 626 Hz  | 0.55 | 7.0 dB   |
 | Peaking | 1630 Hz | 1.54 | -15.0 dB |
 | Peaking | 4666 Hz | 1.86 | 6.7 dB   |
-| Peaking | 748 Hz  | 2.69 | 0.8 dB   |
-| Peaking | 1007 Hz | 2.2  | -1.3 dB  |
-| Peaking | 1172 Hz | 3.32 | 1.0 dB   |
-| Peaking | 6632 Hz | 6.18 | 4.2 dB   |
-| Peaking | 6872 Hz | 2.25 | -2.1 dB  |
+| Peaking | 745 Hz  | 2.7  | 0.8 dB   |
+| Peaking | 1001 Hz | 2.23 | -1.3 dB  |
+| Peaking | 1180 Hz | 3.31 | 1.0 dB   |
+| Peaking | 6662 Hz | 6.17 | 4.1 dB   |
+| Peaking | 6826 Hz | 2.22 | -2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/SMS%20Over%20Ear%20ANC/SMS%20Over%20Ear%20ANC.png)

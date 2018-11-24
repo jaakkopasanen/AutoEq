@@ -9,28 +9,29 @@ GraphicEQ: 21 -3.8; 23 -3.9; 25 -4.0; 28 -4.2; 31 -4.3; 34 -4.4; 37 -4.5; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Noontec Zoro HD GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Noontec Zoro HD ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 32 Hz   | 0.3  | -3.8 dB |
-| Peaking | 126 Hz  | 0.73 | -3.8 dB |
-| Peaking | 251 Hz  | 0.83 | -3.3 dB |
-| Peaking | 4321 Hz | 1.38 | 5.4 dB  |
-| Peaking | 6104 Hz | 5.27 | 3.6 dB  |
-| Peaking | 1246 Hz | 3.86 | 1.1 dB  |
-| Peaking | 2828 Hz | 2.01 | 2.0 dB  |
-| Peaking | 3355 Hz | 3.32 | -3.5 dB |
-| Peaking | 4053 Hz | 2.11 | 1.0 dB  |
-| Peaking | 8415 Hz | 2.71 | -1.3 dB |
+| Peaking | 33 Hz   | 0.3  | -3.8 dB |
+| Peaking | 125 Hz  | 0.74 | -3.7 dB |
+| Peaking | 249 Hz  | 0.82 | -3.4 dB |
+| Peaking | 4317 Hz | 1.38 | 5.4 dB  |
+| Peaking | 6101 Hz | 5.17 | 3.6 dB  |
+| Peaking | 1246 Hz | 3.8  | 1.1 dB  |
+| Peaking | 2820 Hz | 2.03 | 2.0 dB  |
+| Peaking | 3360 Hz | 3.25 | -3.5 dB |
+| Peaking | 4043 Hz | 2.17 | 1.1 dB  |
+| Peaking | 8415 Hz | 2.72 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Noontec%20Zoro%20HD/Noontec%20Zoro%20HD.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 4.8; 37 2.0; 41 -2.2; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Soul by Ludacris SL300 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Soul by Ludacris SL300 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Soul by Ludacris
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.4dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 31 Hz   | 0.79 | 16.2 dB  |
-| Peaking | 45 Hz   | 0.93 | -16.2 dB |
-| Peaking | 762 Hz  | 0.71 | -6.9 dB  |
-| Peaking | 783 Hz  | 2.55 | 14.2 dB  |
+| Peaking | 32 Hz   | 0.81 | 15.5 dB  |
+| Peaking | 46 Hz   | 0.95 | -15.4 dB |
+| Peaking | 769 Hz  | 0.69 | -6.6 dB  |
+| Peaking | 782 Hz  | 2.59 | 13.8 dB  |
 | Peaking | 3097 Hz | 3.33 | 7.6 dB   |
-| Peaking | 1228 Hz | 6.15 | -0.7 dB  |
-| Peaking | 3863 Hz | 9.21 | 5.7 dB   |
-| Peaking | 4590 Hz | 4.06 | -6.4 dB  |
-| Peaking | 6486 Hz | 5.16 | 5.7 dB   |
-| Peaking | 9190 Hz | 4.42 | -2.5 dB  |
+| Peaking | 548 Hz  | 8.38 | -2.2 dB  |
+| Peaking | 3849 Hz | 9.06 | 5.6 dB   |
+| Peaking | 4576 Hz | 4.07 | -6.4 dB  |
+| Peaking | 6454 Hz | 5.16 | 5.7 dB   |
+| Peaking | 9162 Hz | 4.43 | -2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Soul%20by%20Ludacris%20SL300/Soul%20by%20Ludacris%20SL300.png)

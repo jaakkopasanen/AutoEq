@@ -9,27 +9,28 @@ GraphicEQ: 21 -1.0; 23 -1.4; 25 -1.8; 28 -2.4; 31 -2.8; 34 -3.1; 37 -3.4; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 240 Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 240 Pro ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 49 Hz   | 0.7  | -3.5 dB |
-| Peaking | 152 Hz  | 0.92 | -4.6 dB |
-| Peaking | 3534 Hz | 6.59 | 5.0 dB  |
-| Peaking | 5596 Hz | 2.97 | 6.9 dB  |
-| Peaking | 157 Hz  | 2.73 | 1.8 dB  |
-| Peaking | 172 Hz  | 1.32 | -1.4 dB |
-| Peaking | 341 Hz  | 4.54 | 1.6 dB  |
-| Peaking | 1882 Hz | 2.67 | -3.5 dB |
-| Peaking | 9160 Hz | 5.3  | -1.8 dB |
+| Peaking | 153 Hz  | 0.92 | -4.6 dB |
+| Peaking | 3562 Hz | 6.56 | 5.0 dB  |
+| Peaking | 5588 Hz | 2.97 | 6.9 dB  |
+| Peaking | 219 Hz  | 4.04 | -0.7 dB |
+| Peaking | 352 Hz  | 5.88 | 1.5 dB  |
+| Peaking | 1950 Hz | 1.65 | -5.5 dB |
+| Peaking | 2158 Hz | 0.8  | 2.2 dB  |
+| Peaking | 9017 Hz | 4.29 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20240%20Pro/Beyerdynamic%20DT%20240%20Pro.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.4; 37 4.2; 41 2.6; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Superlux HD 668B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Superlux HD 668B ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-8.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 27 Hz    |  2.6  | 7.2 dB  |
+| Peaking | 27 Hz    |  2.66 | 7.0 dB  |
 | Peaking | 1983 Hz  |  2.14 | -6.1 dB |
-| Peaking | 8454 Hz  |  1.73 | -8.7 dB |
-| Peaking | 15017 Hz |  4.29 | -4.2 dB |
-| Peaking | 16820 Hz |  2.79 | -5.2 dB |
-| Peaking | 37 Hz    |  1.36 | 4.8 dB  |
-| Peaking | 87 Hz    |  0.56 | -5.8 dB |
-| Peaking | 3732 Hz  |  5.2  | 2.2 dB  |
-| Peaking | 5694 Hz  | 11.15 | -8.4 dB |
-| Peaking | 6988 Hz  |  5.54 | 2.3 dB  |
+| Peaking | 8452 Hz  |  1.74 | -8.7 dB |
+| Peaking | 14939 Hz |  3.89 | -3.9 dB |
+| Peaking | 16902 Hz |  2.7  | -5.2 dB |
+| Peaking | 38 Hz    |  1.76 | 4.5 dB  |
+| Peaking | 91 Hz    |  0.58 | -5.5 dB |
+| Peaking | 3740 Hz  |  5.24 | 2.2 dB  |
+| Peaking | 5713 Hz  | 11.38 | -8.5 dB |
+| Peaking | 7014 Hz  |  5.71 | 2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Superlux%20HD%20668B/Superlux%20HD%20668B.png)

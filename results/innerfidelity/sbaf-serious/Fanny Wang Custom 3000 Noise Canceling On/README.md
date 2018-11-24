@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.7; 25 4.5; 28 2.9; 31 2.8; 34 3.6; 37 4.5; 41 5.1; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Fanny Wang Custom 3000 Noise Canceling On GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fanny Wang Custom 3000 Noise Canceling On ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 19 Hz   | 1.43 | 5.8 dB   |
-| Peaking | 55 Hz   | 1.56 | 5.6 dB   |
-| Peaking | 2342 Hz | 3.16 | 13.3 dB  |
-| Peaking | 2458 Hz | 1.05 | -7.8 dB  |
+| Peaking | 19 Hz   | 1.44 | 5.9 dB   |
+| Peaking | 54 Hz   | 1.55 | 5.6 dB   |
+| Peaking | 2341 Hz | 3.16 | 13.3 dB  |
+| Peaking | 2460 Hz | 1.05 | -7.8 dB  |
 | Peaking | 9470 Hz | 4.34 | -10.5 dB |
-| Peaking | 271 Hz  | 1.01 | -3.1 dB  |
-| Peaking | 801 Hz  | 2.59 | 2.7 dB   |
-| Peaking | 1409 Hz | 5.04 | -2.5 dB  |
-| Peaking | 6587 Hz | 3.72 | 4.9 dB   |
-| Peaking | 8515 Hz | 7.48 | -3.5 dB  |
+| Peaking | 271 Hz  | 0.99 | -3.1 dB  |
+| Peaking | 801 Hz  | 2.58 | 2.7 dB   |
+| Peaking | 1410 Hz | 5    | -2.5 dB  |
+| Peaking | 6557 Hz | 3.73 | 4.9 dB   |
+| Peaking | 8416 Hz | 7.62 | -3.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fanny%20Wang%20Custom%203000%20Noise%20Canceling%20On/Fanny%20Wang%20Custom%203000%20Noise%20Canceling%20On.png)

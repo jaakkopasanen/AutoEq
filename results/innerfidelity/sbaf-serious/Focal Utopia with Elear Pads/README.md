@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.9; 23 -1.1; 25 -1.2; 28 -1.4; 31 -1.5; 34 -1.6; 37 -1.7; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.9dB` and instead set Global volume in the UI for both channels to **-58**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Focal Utopia with Elear Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-58**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Utopia with Elear Pads ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Focal Utopia wit
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.6dB.
+When using independent subset of filters, apply preamp of **-5.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 104 Hz   | 0.51 | -3.6 dB |
 | Peaking | 219 Hz   | 0.92 | -2.2 dB |
-| Peaking | 2604 Hz  | 4.11 | -3.0 dB |
-| Peaking | 3670 Hz  | 5.68 | 4.4 dB  |
-| Peaking | 5317 Hz  | 3.71 | 5.3 dB  |
-| Peaking | 785 Hz   | 2.26 | 0.5 dB  |
-| Peaking | 1618 Hz  | 6.81 | -0.8 dB |
-| Peaking | 6712 Hz  | 9.91 | 2.7 dB  |
-| Peaking | 8699 Hz  | 6.78 | -3.2 dB |
-| Peaking | 18223 Hz | 4.58 | -1.1 dB |
+| Peaking | 2610 Hz  | 4.11 | -3.0 dB |
+| Peaking | 3679 Hz  | 5.69 | 4.4 dB  |
+| Peaking | 5308 Hz  | 3.71 | 5.3 dB  |
+| Peaking | 785 Hz   | 2.31 | 0.5 dB  |
+| Peaking | 1628 Hz  | 6.78 | -0.8 dB |
+| Peaking | 6797 Hz  | 9.79 | 2.7 dB  |
+| Peaking | 8801 Hz  | 6.76 | -3.2 dB |
+| Peaking | 18236 Hz | 4.54 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Focal%20Utopia%20with%20Elear%20Pads/Focal%20Utopia%20with%20Elear%20Pads.png)

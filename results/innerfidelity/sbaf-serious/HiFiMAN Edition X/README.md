@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.5; 31 5.0; 34 4.6; 37 4.3; 41 4.0; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiFiMAN Edition X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN Edition X ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN Edition 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.0dB.
+When using independent subset of filters, apply preamp of **-6.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 11 Hz   | 0.21 | 5.6 dB  |
-| Peaking | 52 Hz   | 0.05 | 0.6 dB  |
-| Peaking | 1208 Hz | 5.13 | 2.6 dB  |
-| Peaking | 2213 Hz | 0.7  | 2.0 dB  |
-| Peaking | 5693 Hz | 4.82 | 4.2 dB  |
-| Peaking | 402 Hz  | 5.51 | 1.2 dB  |
-| Peaking | 763 Hz  | 1.82 | -1.6 dB |
-| Peaking | 789 Hz  | 6.74 | 3.5 dB  |
-| Peaking | 3674 Hz | 6.29 | 1.4 dB  |
-| Peaking | 4487 Hz | 8.75 | -1.8 dB |
+| Peaking | 11 Hz   | 0.2  | 5.6 dB  |
+| Peaking | 51 Hz   | 0.05 | 0.6 dB  |
+| Peaking | 1215 Hz | 5.07 | 2.6 dB  |
+| Peaking | 2225 Hz | 0.7  | 2.0 dB  |
+| Peaking | 5679 Hz | 4.81 | 4.2 dB  |
+| Peaking | 402 Hz  | 5.45 | 1.2 dB  |
+| Peaking | 747 Hz  | 1.66 | -1.4 dB |
+| Peaking | 790 Hz  | 7.05 | 3.3 dB  |
+| Peaking | 3673 Hz | 6.5  | 1.5 dB  |
+| Peaking | 4485 Hz | 8.88 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20Edition%20X/HiFiMAN%20Edition%20X.png)

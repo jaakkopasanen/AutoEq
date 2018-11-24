@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.3; 23 -2.7; 25 -3.0; 28 -3.4; 31 -3.7; 34 -3.9; 37 -4.2; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.8dB` and instead set Global volume in the UI for both channels to **-58**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Massdrop x E-Mu Purpleheart GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-58**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Massdrop x E-Mu Purpleheart ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Massdrop x E-Mu 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -6.1dB.
 | Peaking | 146 Hz  | 0.45 | -6.1 dB |
 | Peaking | 6072 Hz | 3.64 | 6.3 dB  |
 | Peaking | 9213 Hz | 3.82 | -3.4 dB |
-| Peaking | 880 Hz  | 3.17 | -0.4 dB |
-| Peaking | 982 Hz  | 4.1  | 1.1 dB  |
-| Peaking | 1595 Hz | 2.47 | -1.3 dB |
-| Peaking | 2525 Hz | 3.62 | 2.1 dB  |
-| Peaking | 3074 Hz | 5.57 | -1.8 dB |
+| Peaking | 887 Hz  | 3.16 | -0.4 dB |
+| Peaking | 970 Hz  | 4.11 | 1.1 dB  |
+| Peaking | 1591 Hz | 2.47 | -1.3 dB |
+| Peaking | 2516 Hz | 3.63 | 2.1 dB  |
+| Peaking | 3062 Hz | 5.57 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Massdrop%20x%20E-Mu%20Purpleheart/Massdrop%20x%20E-Mu%20Purpleheart.png)

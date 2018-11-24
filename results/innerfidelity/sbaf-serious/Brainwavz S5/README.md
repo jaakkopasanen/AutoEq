@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.1; 23 -9.3; 25 -9.4; 28 -9.5; 31 -9.6; 34 -9.7; 37 -9.7; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.3dB` and instead set Global volume in the UI for both channels to **-23**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Brainwavz S5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-23**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Brainwavz S5 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Brainwavz S5 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.4dB.
+When using independent subset of filters, apply preamp of **--0.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of --0.4dB.
 | Peaking | 294 Hz   | 1.28 | -3.1 dB  |
 | Peaking | 5368 Hz  | 2.79 | -11.2 dB |
 | Peaking | 15820 Hz | 0.33 | -3.3 dB  |
-| Peaking | 2876 Hz  | 1.47 | 3.4 dB   |
-| Peaking | 4250 Hz  | 3.01 | -3.6 dB  |
-| Peaking | 9140 Hz  | 3.36 | -10.9 dB |
-| Peaking | 11484 Hz | 0.91 | 6.5 dB   |
-| Peaking | 14988 Hz | 2.79 | -6.2 dB  |
+| Peaking | 2869 Hz  | 1.48 | 3.4 dB   |
+| Peaking | 4258 Hz  | 3.09 | -3.6 dB  |
+| Peaking | 9119 Hz  | 3.42 | -10.7 dB |
+| Peaking | 11589 Hz | 0.91 | 6.4 dB   |
+| Peaking | 15008 Hz | 2.77 | -6.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Brainwavz%20S5/Brainwavz%20S5.png)

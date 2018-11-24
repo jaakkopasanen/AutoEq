@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.6; 41 4.7; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado SR225i GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
-| Peaking | 28 Hz    |  0.67 | 6.7 dB   |
-| Peaking | 105 Hz   |  0.83 | -3.2 dB  |
+| Peaking | 28 Hz    |  0.68 | 6.7 dB   |
+| Peaking | 105 Hz   |  0.82 | -3.2 dB  |
 | Peaking | 2116 Hz  |  2.37 | -8.4 dB  |
-| Peaking | 9283 Hz  |  1.83 | -11.9 dB |
-| Peaking | 11125 Hz |  2.06 | 5.9 dB   |
-| Peaking | 796 Hz   |  1.39 | 0.9 dB   |
-| Peaking | 3777 Hz  |  4.5  | -2.8 dB  |
-| Peaking | 4320 Hz  |  3.5  | 2.1 dB   |
-| Peaking | 7095 Hz  | 11.82 | -2.0 dB  |
+| Peaking | 9285 Hz  |  1.83 | -12.0 dB |
+| Peaking | 11158 Hz |  2.05 | 6.0 dB   |
+| Peaking | 796 Hz   |  1.38 | 0.9 dB   |
+| Peaking | 3776 Hz  |  4.44 | -2.9 dB  |
+| Peaking | 4312 Hz  |  3.42 | 2.2 dB   |
+| Peaking | 7072 Hz  | 12.31 | -2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i/Grado%20SR225i.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.5; 23 -5.9; 25 -6.2; 28 -6.6; 31 -6.8; 34 -6.9; 37 -6.9; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`RHA SA950i GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `RHA SA950i ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `RHA SA950i Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.5dB.
+When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 41 Hz   | 0.25 | -6.5 dB |
 | Peaking | 229 Hz  | 0.72 | -4.5 dB |
-| Peaking | 484 Hz  | 1.57 | -5.4 dB |
+| Peaking | 483 Hz  | 1.57 | -5.4 dB |
 | Peaking | 1616 Hz | 2.89 | -6.7 dB |
 | Peaking | 3736 Hz | 1.55 | 5.7 dB  |
-| Peaking | 657 Hz  | 5.83 | -1.2 dB |
-| Peaking | 994 Hz  | 4.7  | 2.2 dB  |
-| Peaking | 4538 Hz | 5.12 | 6.1 dB  |
-| Peaking | 5214 Hz | 2.77 | -7.8 dB |
-| Peaking | 6253 Hz | 5.08 | 7.6 dB  |
+| Peaking | 656 Hz  | 6.04 | -1.2 dB |
+| Peaking | 993 Hz  | 4.69 | 2.2 dB  |
+| Peaking | 4538 Hz | 4.97 | 6.3 dB  |
+| Peaking | 5221 Hz | 2.71 | -8.0 dB |
+| Peaking | 6261 Hz | 4.98 | 7.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/RHA%20SA950i/RHA%20SA950i.png)

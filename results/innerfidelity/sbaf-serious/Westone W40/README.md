@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.3; 25 2.8; 28 2.1; 31 1.6; 34 1.1; 37 0.7; 41 0.2; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Westone W40 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Westone W40 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Westone W40 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 0.88 | 4.5 dB  |
-| Peaking | 103 Hz  | 0.86 | -1.9 dB |
-| Peaking | 243 Hz  | 0.53 | -5.4 dB |
-| Peaking | 4397 Hz | 0.72 | 7.1 dB  |
-| Peaking | 9367 Hz | 2.61 | -6.6 dB |
-| Peaking | 878 Hz  | 2.7  | 1.0 dB  |
-| Peaking | 1644 Hz | 2.24 | -1.8 dB |
-| Peaking | 2798 Hz | 2    | 2.5 dB  |
-| Peaking | 3871 Hz | 0.86 | -1.3 dB |
-| Peaking | 6122 Hz | 5.18 | 2.0 dB  |
+| Peaking | 17 Hz   | 0.89 | 4.6 dB  |
+| Peaking | 103 Hz  | 0.85 | -1.9 dB |
+| Peaking | 246 Hz  | 0.52 | -5.4 dB |
+| Peaking | 4437 Hz | 0.72 | 7.1 dB  |
+| Peaking | 9359 Hz | 2.61 | -6.6 dB |
+| Peaking | 875 Hz  | 2.44 | 1.0 dB  |
+| Peaking | 1635 Hz | 2.3  | -1.8 dB |
+| Peaking | 2777 Hz | 1.99 | 2.6 dB  |
+| Peaking | 3911 Hz | 0.84 | -1.3 dB |
+| Peaking | 6103 Hz | 5.22 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Westone%20W40/Westone%20W40.png)

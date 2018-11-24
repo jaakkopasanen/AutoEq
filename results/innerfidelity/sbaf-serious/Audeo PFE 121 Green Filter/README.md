@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.7; 23 -1.8; 25 -1.8; 28 -1.9; 31 -2.0; 34 -2.1; 37 -2.3; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeo PFE 121 Green Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeo PFE 121 Green Filter ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Audeo PFE 121 Gr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 3521 Hz  | 0.97 | 5.2 dB  |
 | Peaking | 5810 Hz  | 2.01 | 4.2 dB  |
 | Peaking | 9210 Hz  | 3.57 | -6.4 dB |
-| Peaking | 785 Hz   | 3    | 0.8 dB  |
-| Peaking | 1662 Hz  | 2.71 | -1.2 dB |
-| Peaking | 2618 Hz  | 2.2  | 1.6 dB  |
-| Peaking | 3014 Hz  | 5.2  | -2.0 dB |
-| Peaking | 15171 Hz | 7.28 | -2.2 dB |
+| Peaking | 792 Hz   | 3    | 0.8 dB  |
+| Peaking | 1653 Hz  | 2.77 | -1.2 dB |
+| Peaking | 2641 Hz  | 2.19 | 1.7 dB  |
+| Peaking | 3029 Hz  | 5.15 | -2.2 dB |
+| Peaking | 15017 Hz | 7.24 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeo%20PFE%20121%20Green%20Filter/Audeo%20PFE%20121%20Green%20Filter.png)

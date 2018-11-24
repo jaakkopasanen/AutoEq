@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.1; 23 -0.6; 25 -1.0; 28 -1.6; 31 -2.1; 34 -2.5; 37 -2.9; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.9dB` and instead set Global volume in the UI for both channels to **-39**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`XTZ EarPhone-12 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-39**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `XTZ EarPhone-12 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `XTZ EarPhone-12 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.1dB.
+When using independent subset of filters, apply preamp of **-4.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|

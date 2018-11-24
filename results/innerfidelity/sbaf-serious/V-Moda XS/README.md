@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.2; 23 -2.6; 25 -3.0; 28 -3.4; 31 -3.8; 34 -4.0; 37 -4.2; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.1dB` and instead set Global volume in the UI for both channels to **-41**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`V-Moda XS GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-41**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda XS ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `V-Moda XS Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.2dB.
+When using independent subset of filters, apply preamp of **-4.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`FLC Technology FLC8 C C Bk Ligh GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `FLC Technology FLC8 C C Bk Ligh ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `FLC Technology F
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 3600 Hz  | 1.66 | 4.9 dB  |
 | Peaking | 5888 Hz  | 1.59 | 9.0 dB  |
 | Peaking | 7772 Hz  | 1.54 | -8.9 dB |
-| Peaking | 689 Hz   | 1.24 | 1.9 dB  |
-| Peaking | 1126 Hz  | 5.09 | -1.6 dB |
-| Peaking | 1611 Hz  | 7.82 | -0.8 dB |
-| Peaking | 10244 Hz | 4.42 | -2.7 dB |
-| Peaking | 11366 Hz | 1.84 | 1.7 dB  |
+| Peaking | 688 Hz   | 1.24 | 1.9 dB  |
+| Peaking | 1129 Hz  | 5.09 | -1.6 dB |
+| Peaking | 1604 Hz  | 7.82 | -0.8 dB |
+| Peaking | 10319 Hz | 4.4  | -2.7 dB |
+| Peaking | 11286 Hz | 1.84 | 1.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/FLC%20Technology%20FLC8%20C%20C%20Bk%20Ligh/FLC%20Technology%20FLC8%20C%20C%20Bk%20Ligh.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.4; 25 2.0; 28 1.4; 31 0.9; 34 0.5; 37 0.2; 41 -0.3; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K3003 Reference Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K3003 Reference Filter ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K3003 Refere
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.3dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 20 Hz   | 1.15 | 3.3 dB   |
-| Peaking | 159 Hz  | 0.52 | -5.0 dB  |
-| Peaking | 3592 Hz | 4.61 | 7.3 dB   |
-| Peaking | 6536 Hz | 6.54 | 5.9 dB   |
-| Peaking | 9477 Hz | 4.58 | -10.0 dB |
-| Peaking | 809 Hz  | 1.74 | 1.7 dB   |
-| Peaking | 2163 Hz | 1.01 | -3.1 dB  |
-| Peaking | 2855 Hz | 4.15 | 2.5 dB   |
-| Peaking | 4578 Hz | 1.68 | 4.2 dB   |
-| Peaking | 4881 Hz | 4.77 | -8.0 dB  |
+| Peaking | 158 Hz  | 0.52 | -5.0 dB  |
+| Peaking | 3589 Hz | 4.61 | 7.3 dB   |
+| Peaking | 6541 Hz | 6.61 | 5.9 dB   |
+| Peaking | 9508 Hz | 4.59 | -10.0 dB |
+| Peaking | 811 Hz  | 1.74 | 1.6 dB   |
+| Peaking | 2188 Hz | 0.99 | -3.1 dB  |
+| Peaking | 2847 Hz | 4.04 | 2.7 dB   |
+| Peaking | 4573 Hz | 1.75 | 4.3 dB   |
+| Peaking | 4870 Hz | 4.82 | -8.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K3003%20Reference%20Filter/AKG%20K3003%20Reference%20Filter.png)

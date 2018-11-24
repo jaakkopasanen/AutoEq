@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-V500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-V500 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-V500 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 32 Hz    | 0.26 | 5.5 dB  |
-| Peaking | 206 Hz   | 0.2  | 1.8 dB  |
-| Peaking | 3706 Hz  | 0.58 | -6.9 dB |
-| Peaking | 5527 Hz  | 0.9  | 5.4 dB  |
-| Peaking | 10256 Hz | 9.04 | -2.2 dB |
-| Peaking | 99 Hz    | 2.04 | 2.3 dB  |
-| Peaking | 118 Hz   | 0.96 | -1.7 dB |
-| Peaking | 238 Hz   | 4.86 | 1.3 dB  |
-| Peaking | 1511 Hz  | 5.93 | -1.1 dB |
-| Peaking | 2555 Hz  | 6    | 1.0 dB  |
+| Peaking | 32 Hz    | 0.27 | 5.5 dB  |
+| Peaking | 207 Hz   | 0.2  | 1.8 dB  |
+| Peaking | 3613 Hz  | 0.58 | -6.4 dB |
+| Peaking | 5589 Hz  | 0.94 | 4.9 dB  |
+| Peaking | 10251 Hz | 8.57 | -2.1 dB |
+| Peaking | 100 Hz   | 2.06 | 2.3 dB  |
+| Peaking | 116 Hz   | 0.99 | -1.7 dB |
+| Peaking | 241 Hz   | 4.87 | 1.2 dB  |
+| Peaking | 1506 Hz  | 6.11 | -1.1 dB |
+| Peaking | 2546 Hz  | 5.84 | 1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-V500/Sony%20MDR-V500.png)

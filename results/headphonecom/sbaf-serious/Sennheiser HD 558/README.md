@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.7; 34 5.2; 37 4.7; 41 4.0; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 558 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 558 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 22 Hz    | 0.49 | 6.2 dB  |
-| Peaking | 209 Hz   | 0.7  | -2.8 dB |
-| Peaking | 3006 Hz  | 2.01 | -3.3 dB |
-| Peaking | 4629 Hz  | 5.23 | -3.5 dB |
-| Peaking | 6209 Hz  | 4.42 | 2.9 dB  |
-| Peaking | 89 Hz    | 5.59 | 2.6 dB  |
-| Peaking | 89 Hz    | 1.77 | -1.1 dB |
-| Peaking | 883 Hz   | 2.95 | 0.6 dB  |
-| Peaking | 2066 Hz  | 9.66 | -1.0 dB |
-| Peaking | 19277 Hz | 2.36 | -4.9 dB |
+| Peaking | 22 Hz    | 0.5  | 6.2 dB  |
+| Peaking | 208 Hz   | 0.71 | -2.8 dB |
+| Peaking | 3005 Hz  | 2    | -3.3 dB |
+| Peaking | 4636 Hz  | 5.24 | -3.5 dB |
+| Peaking | 6218 Hz  | 4.42 | 2.9 dB  |
+| Peaking | 89 Hz    | 5.71 | 2.5 dB  |
+| Peaking | 89 Hz    | 1.68 | -1.2 dB |
+| Peaking | 884 Hz   | 3.04 | 0.6 dB  |
+| Peaking | 2092 Hz  | 9.55 | -1.0 dB |
+| Peaking | 19363 Hz | 2.36 | -4.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20558/Sennheiser%20HD%20558.png)

@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.9; 31 5.8; 34 5.7; 37 5.6; 41 5.4; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiFiMAN RE-262 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN RE-262 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 827 Hz  | 2.72 | 1.5 dB   |
 | Peaking | 1688 Hz | 1.83 | -10.9 dB |
 | Peaking | 3261 Hz | 0.75 | 8.4 dB   |
-| Peaking | 311 Hz  | 1.68 | -0.5 dB  |
-| Peaking | 2639 Hz | 6.01 | 2.2 dB   |
-| Peaking | 3360 Hz | 1.59 | -1.2 dB  |
-| Peaking | 6241 Hz | 2.09 | 5.7 dB   |
-| Peaking | 7421 Hz | 1.47 | -4.5 dB  |
+| Peaking | 313 Hz  | 1.68 | -0.5 dB  |
+| Peaking | 2641 Hz | 6.01 | 2.2 dB   |
+| Peaking | 3361 Hz | 1.59 | -1.2 dB  |
+| Peaking | 6230 Hz | 2.1  | 5.6 dB   |
+| Peaking | 7445 Hz | 1.47 | -4.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20RE-262/HiFiMAN%20RE-262.png)

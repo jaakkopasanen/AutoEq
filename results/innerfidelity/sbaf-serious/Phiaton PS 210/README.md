@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.8; 25 5.5; 28 4.9; 31 4.3; 34 3.9; 37 3.5; 41 3.0; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Phiaton PS 210 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Phiaton PS 210 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Phiaton PS 210 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 2165 Hz | 1.68 | -10.8 dB |
 | Peaking | 3308 Hz | 4.12 | 5.7 dB   |
 | Peaking | 665 Hz  | 5.69 | -0.8 dB  |
-| Peaking | 3854 Hz | 5.34 | 2.8 dB   |
-| Peaking | 4445 Hz | 3.96 | -4.0 dB  |
-| Peaking | 6292 Hz | 4.33 | 6.2 dB   |
-| Peaking | 7369 Hz | 1.38 | -1.7 dB  |
+| Peaking | 3852 Hz | 5.33 | 2.8 dB   |
+| Peaking | 4455 Hz | 3.96 | -4.0 dB  |
+| Peaking | 6311 Hz | 4.34 | 6.3 dB   |
+| Peaking | 7366 Hz | 1.37 | -1.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Phiaton%20PS%20210/Phiaton%20PS%20210.png)

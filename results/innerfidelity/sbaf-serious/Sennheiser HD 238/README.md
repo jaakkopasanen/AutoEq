@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 2.5; 25 2.0; 28 1.3; 31 0.8; 34 0.4; 37 -0.0; 41 -0.5; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.6dB` and instead set Global volume in the UI for both channels to **-35**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 238 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 238 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.5dB.
+When using independent subset of filters, apply preamp of **-3.5dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 19 Hz   | 1.26 | 3.7 dB  |
-| Peaking | 151 Hz  | 0.54 | -4.6 dB |
-| Peaking | 2453 Hz | 6.25 | 3.6 dB  |
-| Peaking | 3206 Hz | 9.51 | -3.8 dB |
-| Peaking | 9157 Hz | 5.92 | -4.0 dB |
-| Peaking | 1100 Hz | 2.55 | 1.1 dB  |
-| Peaking | 1576 Hz | 3.33 | -1.5 dB |
-| Peaking | 3930 Hz | 8.97 | 4.7 dB  |
-| Peaking | 4536 Hz | 5.6  | -4.6 dB |
-| Peaking | 7472 Hz | 9.79 | 1.3 dB  |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 19 Hz   |  1.26 | 3.7 dB  |
+| Peaking | 153 Hz  |  0.53 | -4.6 dB |
+| Peaking | 2464 Hz |  6.25 | 3.6 dB  |
+| Peaking | 3228 Hz |  9.51 | -3.8 dB |
+| Peaking | 9159 Hz |  5.92 | -4.0 dB |
+| Peaking | 1250 Hz |  1.31 | 1.5 dB  |
+| Peaking | 1539 Hz |  2.54 | -2.4 dB |
+| Peaking | 3897 Hz |  8.94 | 4.7 dB  |
+| Peaking | 4502 Hz |  5.48 | -4.6 dB |
+| Peaking | 7373 Hz | 10.12 | 1.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20238/Sennheiser%20HD%20238.png)

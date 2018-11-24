@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 5.5; 25 5.4; 28 5.2; 31 5.0; 34 4.9; 37 4.7; 41 4.5; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`NuForce Primo 8 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NuForce Primo 8 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 1889 Hz | 1.63 | -8.2 dB |
 | Peaking | 3437 Hz | 0.86 | 8.4 dB  |
 | Peaking | 222 Hz  | 1.98 | -0.6 dB |
-| Peaking | 2858 Hz | 5.8  | 2.2 dB  |
-| Peaking | 3553 Hz | 1.56 | -1.2 dB |
-| Peaking | 5752 Hz | 2.37 | 4.2 dB  |
-| Peaking | 7506 Hz | 1.24 | -2.7 dB |
+| Peaking | 2838 Hz | 5.8  | 2.2 dB  |
+| Peaking | 3539 Hz | 1.57 | -1.2 dB |
+| Peaking | 5799 Hz | 2.38 | 4.3 dB  |
+| Peaking | 7427 Hz | 1.22 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NuForce%20Primo%208/NuForce%20Primo%208.png)

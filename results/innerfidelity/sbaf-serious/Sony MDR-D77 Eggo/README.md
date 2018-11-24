@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.9; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-D77 Eggo GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-D77 Eggo ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-D77 Egg
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 29 Hz   | 0.69 | 6.5 dB  |
 | Peaking | 354 Hz  | 1.09 | 3.4 dB  |
-| Peaking | 1923 Hz | 3.54 | -3.1 dB |
-| Peaking | 3216 Hz | 2.03 | 4.8 dB  |
+| Peaking | 1922 Hz | 3.56 | -3.1 dB |
+| Peaking | 3216 Hz | 2.04 | 4.8 dB  |
 | Peaking | 5408 Hz | 2.26 | 6.0 dB  |
-| Peaking | 467 Hz  | 6.82 | 0.7 dB  |
-| Peaking | 1228 Hz | 1.6  | -1.3 dB |
-| Peaking | 1353 Hz | 6.19 | 3.5 dB  |
-| Peaking | 6527 Hz | 6.82 | 2.5 dB  |
-| Peaking | 7977 Hz | 2.09 | -1.6 dB |
+| Peaking | 462 Hz  | 6.76 | 0.7 dB  |
+| Peaking | 1220 Hz | 1.61 | -1.3 dB |
+| Peaking | 1369 Hz | 6.17 | 3.5 dB  |
+| Peaking | 6506 Hz | 6.83 | 2.5 dB  |
+| Peaking | 7966 Hz | 2.09 | -1.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-D77%20Eggo/Sony%20MDR-D77%20Eggo.png)

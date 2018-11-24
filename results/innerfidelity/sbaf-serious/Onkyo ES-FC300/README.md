@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.5; 23 -4.7; 25 -4.9; 28 -5.0; 31 -5.0; 34 -4.9; 37 -5.0; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Onkyo ES-FC300 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Onkyo ES-FC300 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Onkyo ES-FC300 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 138 Hz  | 1.63 | -4.2 dB |
 | Peaking | 461 Hz  | 1.85 | -2.8 dB |
 | Peaking | 5037 Hz | 1.71 | 6.8 dB  |
-| Peaking | 261 Hz  | 6.92 | 1.9 dB  |
+| Peaking | 262 Hz  | 6.92 | 1.9 dB  |
 | Peaking | 2830 Hz | 4.22 | -0.2 dB |
-| Peaking | 6246 Hz | 6.06 | 1.8 dB  |
-| Peaking | 6669 Hz | 5.18 | 1.9 dB  |
-| Peaking | 7507 Hz | 1.99 | -2.2 dB |
+| Peaking | 6245 Hz | 6.06 | 1.8 dB  |
+| Peaking | 6668 Hz | 5.18 | 1.9 dB  |
+| Peaking | 7508 Hz | 1.99 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Onkyo%20ES-FC300/Onkyo%20ES-FC300.png)

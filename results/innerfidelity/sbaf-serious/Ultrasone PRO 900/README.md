@@ -9,28 +9,29 @@ GraphicEQ: 21 -1.9; 23 -2.8; 25 -3.6; 28 -4.7; 31 -5.5; 34 -6.2; 37 -6.7; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-48**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultrasone PRO 900 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-48**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone PRO 900 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.1dB.
+When using independent subset of filters, apply preamp of **--0.1dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 47 Hz    |  0.82 | -7.3 dB |
-| Peaking | 122 Hz   |  1.58 | -7.0 dB |
-| Peaking | 3423 Hz  |  1.87 | -5.1 dB |
-| Peaking | 15205 Hz |  2.94 | -6.8 dB |
-| Peaking | 17854 Hz |  1.14 | -6.5 dB |
-| Peaking | 188 Hz   |  3.45 | -3.1 dB |
-| Peaking | 275 Hz   |  4.01 | 6.5 dB  |
-| Peaking | 562 Hz   | 11.23 | 5.2 dB  |
-| Peaking | 5145 Hz  |  9.7  | 7.2 dB  |
-| Peaking | 6527 Hz  |  7.39 | -9.7 dB |
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 46 Hz    |  0.82 | -7.3 dB  |
+| Peaking | 123 Hz   |  1.58 | -7.0 dB  |
+| Peaking | 3423 Hz  |  1.87 | -5.1 dB  |
+| Peaking | 15047 Hz |  2.94 | -6.8 dB  |
+| Peaking | 17856 Hz |  1.14 | -6.5 dB  |
+| Peaking | 188 Hz   |  3.51 | -3.1 dB  |
+| Peaking | 276 Hz   |  4.04 | 6.5 dB   |
+| Peaking | 566 Hz   | 10.73 | 5.1 dB   |
+| Peaking | 6193 Hz  |  1.64 | 6.2 dB   |
+| Peaking | 6534 Hz  |  5.07 | -15.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20PRO%20900/Ultrasone%20PRO%20900.png)

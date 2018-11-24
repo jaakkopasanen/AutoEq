@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.5; 23 -8.5; 25 -8.5; 28 -8.6; 31 -8.6; 34 -8.6; 37 -8.5; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Cardas EM5813 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Cardas EM5813 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Cardas EM5813 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 0.22 | -7.8 dB |
-| Peaking | 133 Hz  | 0.58 | -6.2 dB |
-| Peaking | 296 Hz  | 0.78 | -4.3 dB |
-| Peaking | 2359 Hz | 2.22 | -6.3 dB |
-| Peaking | 6081 Hz | 5.48 | 7.3 dB  |
-| Peaking | 950 Hz  | 6.21 | 3.3 dB  |
-| Peaking | 1335 Hz | 0.52 | -0.6 dB |
-| Peaking | 3472 Hz | 4.04 | 4.6 dB  |
-| Peaking | 4474 Hz | 4.79 | -8.0 dB |
-| Peaking | 5409 Hz | 7.8  | 4.2 dB  |
+| Peaking | 20 Hz   | 0.24 | -7.8 dB |
+| Peaking | 129 Hz  | 0.58 | -6.3 dB |
+| Peaking | 290 Hz  | 0.76 | -4.5 dB |
+| Peaking | 2353 Hz | 2.22 | -6.3 dB |
+| Peaking | 6059 Hz | 5.49 | 7.3 dB  |
+| Peaking | 951 Hz  | 6.37 | 3.4 dB  |
+| Peaking | 1299 Hz | 0.53 | -0.6 dB |
+| Peaking | 3480 Hz | 4.17 | 4.5 dB  |
+| Peaking | 4490 Hz | 4.92 | -8.0 dB |
+| Peaking | 5425 Hz | 7.93 | 4.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Cardas%20EM5813/Cardas%20EM5813.png)

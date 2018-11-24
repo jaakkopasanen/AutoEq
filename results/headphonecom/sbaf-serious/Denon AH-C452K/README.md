@@ -9,8 +9,9 @@ GraphicEQ: 21 -11.9; 23 -11.8; 25 -11.7; 28 -11.5; 31 -11.3; 34 -11.1; 37 -11.0;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.9dB` and instead set Global volume in the UI for both channels to **-9**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-C452K GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-9**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C452K ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C452K P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.0dB.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 0.2  | -11.5 dB |
-| Peaking | 155 Hz   | 0.74 | -3.2 dB  |
+| Peaking | 23 Hz    | 0.21 | -11.5 dB |
+| Peaking | 155 Hz   | 0.74 | -3.3 dB  |
 | Peaking | 2413 Hz  | 2.03 | -5.8 dB  |
-| Peaking | 6074 Hz  | 1.27 | -8.8 dB  |
+| Peaking | 6073 Hz  | 1.27 | -8.8 dB  |
 | Peaking | 24000 Hz | 2.37 | -6.2 dB  |
-| Peaking | 3835 Hz  | 6.65 | 3.4 dB   |
-| Peaking | 5622 Hz  | 5.57 | -5.0 dB  |
-| Peaking | 6942 Hz  | 3.06 | 5.8 dB   |
-| Peaking | 9046 Hz  | 3.02 | -10.5 dB |
-| Peaking | 10338 Hz | 2.14 | 5.5 dB   |
+| Peaking | 3857 Hz  | 6.65 | 3.4 dB   |
+| Peaking | 5661 Hz  | 5.57 | -5.0 dB  |
+| Peaking | 6959 Hz  | 3.06 | 5.8 dB   |
+| Peaking | 9050 Hz  | 3.02 | -10.5 dB |
+| Peaking | 10329 Hz | 2.13 | 5.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-C452K/Denon%20AH-C452K.png)

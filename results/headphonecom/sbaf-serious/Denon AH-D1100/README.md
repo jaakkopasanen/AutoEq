@@ -9,8 +9,9 @@ GraphicEQ: 21 -7.0; 23 -7.5; 25 -7.9; 28 -8.4; 31 -8.9; 34 -9.2; 37 -9.5; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-D1100 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D1100 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D1100 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 3 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,8 +28,8 @@ When using independent subset of filters, apply preamp of -0.1dB.
 | Peaking | 226 Hz   | 2.7  | -8.3 dB |
 | Peaking | 23 Hz    | 0.34 | -6.5 dB |
 | Peaking | 473 Hz   | 3.6  | 5.3 dB  |
-| Peaking | 3885 Hz  | 4.51 | 6.3 dB  |
-| Peaking | 6256 Hz  | 5.58 | 4.1 dB  |
-| Peaking | 10086 Hz | 4.01 | -4.5 dB |
+| Peaking | 3905 Hz  | 4.48 | 6.3 dB  |
+| Peaking | 6237 Hz  | 6.09 | 4.2 dB  |
+| Peaking | 10087 Hz | 4.08 | -4.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D1100/Denon%20AH-D1100.png)

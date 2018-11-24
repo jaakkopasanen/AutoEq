@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.5; 25 4.0; 28 3.3; 31 2.8; 34 2.3; 37 1.9; 41 1.4; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.5dB` and instead set Global volume in the UI for both channels to **-55**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K712 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-55**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K712 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.3dB.
+When using independent subset of filters, apply preamp of **-5.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 17 Hz    | 0.71 | 5.7 dB  |
-| Peaking | 186 Hz   | 0.56 | -3.6 dB |
-| Peaking | 1990 Hz  | 4.16 | -5.5 dB |
+| Peaking | 16 Hz    | 0.71 | 5.8 dB  |
+| Peaking | 183 Hz   | 0.55 | -3.6 dB |
+| Peaking | 1989 Hz  | 4.15 | -5.5 dB |
 | Peaking | 8074 Hz  | 3.3  | -6.0 dB |
-| Peaking | 18604 Hz | 2.39 | -7.0 dB |
-| Peaking | 991 Hz   | 2.11 | 0.7 dB  |
-| Peaking | 2327 Hz  | 5.13 | -2.8 dB |
-| Peaking | 3080 Hz  | 2.61 | 4.1 dB  |
-| Peaking | 4317 Hz  | 5.33 | -3.8 dB |
-| Peaking | 13093 Hz | 1.4  | 0.9 dB  |
+| Peaking | 18638 Hz | 2.4  | -7.0 dB |
+| Peaking | 1000 Hz  | 2.16 | 0.7 dB  |
+| Peaking | 2352 Hz  | 5.13 | -2.8 dB |
+| Peaking | 3091 Hz  | 2.61 | 4.1 dB  |
+| Peaking | 4352 Hz  | 5.33 | -3.8 dB |
+| Peaking | 12912 Hz | 1.45 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K712/AKG%20K712.png)

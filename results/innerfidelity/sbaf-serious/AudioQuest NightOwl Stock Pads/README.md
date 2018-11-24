@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.1; 23 -1.1; 25 -1.0; 28 -0.9; 31 -0.9; 34 -0.8; 37 -0.7; 41 -0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AudioQuest NightOwl Stock Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AudioQuest NightOwl Stock Pads ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `AudioQuest Night
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,7 +28,7 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 135 Hz  | 0.79 | -2.0 dB |
 | Peaking | 149 Hz  | 0.38 | -2.0 dB |
 | Peaking | 3249 Hz | 0.74 | 6.8 dB  |
-| Peaking | 1299 Hz | 1.88 | -1.1 dB |
+| Peaking | 1298 Hz | 1.88 | -1.1 dB |
 | Peaking | 2018 Hz | 3.89 | 2.1 dB  |
 | Peaking | 3420 Hz | 4.49 | -1.6 dB |
 | Peaking | 5409 Hz | 2.84 | 2.6 dB  |

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 0.2; 25 0.1; 28 -0.1; 31 -0.3; 34 -0.5; 37 -0.6; 41 -0.8; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Lear LUF 4C GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Lear LUF 4C ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.2dB.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 103 Hz  |  1.24 | -3.6 dB |
-| Peaking | 2147 Hz |  1.84 | -9.7 dB |
-| Peaking | 4655 Hz |  2.31 | 8.2 dB  |
-| Peaking | 5576 Hz |  4.57 | -8.7 dB |
-| Peaking | 9210 Hz |  4.46 | -7.3 dB |
-| Peaking | 170 Hz  |  2.08 | -1.6 dB |
-| Peaking | 536 Hz  |  0.57 | 2.4 dB  |
-| Peaking | 1497 Hz |  2.99 | -2.4 dB |
-| Peaking | 3269 Hz |  8.53 | 0.9 dB  |
-| Peaking | 4001 Hz | 11.63 | -1.4 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 102 Hz  | 1.24 | -3.6 dB |
+| Peaking | 2147 Hz | 1.85 | -9.7 dB |
+| Peaking | 4653 Hz | 2.33 | 8.1 dB  |
+| Peaking | 5557 Hz | 4.59 | -8.6 dB |
+| Peaking | 9240 Hz | 4.47 | -7.2 dB |
+| Peaking | 170 Hz  | 2.05 | -1.6 dB |
+| Peaking | 536 Hz  | 0.56 | 2.4 dB  |
+| Peaking | 1499 Hz | 3.02 | -2.4 dB |
+| Peaking | 6174 Hz | 7.58 | -1.3 dB |
+| Peaking | 7013 Hz | 6.49 | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Lear%20LUF%204C/Lear%20LUF%204C.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.6; 31 4.8; 34 3.8; 37 3.0; 41 2.1; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 202 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 202 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 20
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 1.06 | 6.6 dB  |
-| Peaking | 157 Hz  | 0.59 | -5.8 dB |
-| Peaking | 241 Hz  | 0.95 | 9.3 dB  |
-| Peaking | 3021 Hz | 1.82 | 6.7 dB  |
-| Peaking | 5847 Hz | 3.68 | 5.9 dB  |
-| Peaking | 2383 Hz | 2.54 | 6.3 dB  |
-| Peaking | 2635 Hz | 1    | -5.7 dB |
-| Peaking | 4208 Hz | 2.03 | 6.5 dB  |
-| Peaking | 4504 Hz | 7.81 | -8.0 dB |
-| Peaking | 8239 Hz | 3.46 | -1.0 dB |
+| Peaking | 24 Hz   | 1.07 | 6.6 dB  |
+| Peaking | 156 Hz  | 0.59 | -5.9 dB |
+| Peaking | 242 Hz  | 0.96 | 9.3 dB  |
+| Peaking | 3018 Hz | 1.82 | 6.7 dB  |
+| Peaking | 5844 Hz | 3.68 | 5.9 dB  |
+| Peaking | 2374 Hz | 2.57 | 6.1 dB  |
+| Peaking | 2651 Hz | 1    | -5.5 dB |
+| Peaking | 4215 Hz | 2.01 | 6.4 dB  |
+| Peaking | 4490 Hz | 7.9  | -7.9 dB |
+| Peaking | 8255 Hz | 3.5  | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20202/Sennheiser%20HD%20202.png)

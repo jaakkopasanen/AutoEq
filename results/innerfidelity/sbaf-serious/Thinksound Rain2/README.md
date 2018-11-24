@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.7; 23 -8.8; 25 -8.9; 28 -9.0; 31 -9.1; 34 -9.2; 37 -9.3; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.7dB` and instead set Global volume in the UI for both channels to **-27**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Thinksound Rain2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-27**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Thinksound Rain2 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Thinksound Rain2
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.0dB.
+When using independent subset of filters, apply preamp of **-3.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 33 Hz    | 0.21 | -8.5 dB  |
+| Peaking | 33 Hz    | 0.22 | -8.5 dB  |
 | Peaking | 155 Hz   | 0.64 | -6.3 dB  |
-| Peaking | 331 Hz   | 1.17 | -3.3 dB  |
+| Peaking | 332 Hz   | 1.17 | -3.3 dB  |
 | Peaking | 3256 Hz  | 2.75 | 3.5 dB   |
-| Peaking | 5827 Hz  | 3.71 | -11.4 dB |
-| Peaking | 1178 Hz  | 1.93 | 1.4 dB   |
+| Peaking | 5828 Hz  | 3.71 | -11.4 dB |
+| Peaking | 1178 Hz  | 1.92 | 1.4 dB   |
 | Peaking | 1725 Hz  | 3.6  | -1.5 dB  |
-| Peaking | 7903 Hz  | 5.49 | 2.1 dB   |
-| Peaking | 10350 Hz | 8.31 | -2.5 dB  |
-| Peaking | 16884 Hz | 4.34 | -2.8 dB  |
+| Peaking | 7896 Hz  | 5.52 | 2.1 dB   |
+| Peaking | 10343 Hz | 8.41 | -2.5 dB  |
+| Peaking | 16865 Hz | 4.34 | -2.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Thinksound%20Rain2/Thinksound%20Rain2.png)

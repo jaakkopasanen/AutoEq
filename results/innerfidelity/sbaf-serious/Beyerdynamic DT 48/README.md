@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 48 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 48 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-8.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.7dB.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 34 Hz    | 1.56 | 7.5 dB   |
+| Peaking | 33 Hz    | 1.56 | 7.5 dB   |
 | Peaking | 1844 Hz  | 1.03 | -18.5 dB |
-| Peaking | 4021 Hz  | 0.15 | 11.5 dB  |
-| Peaking | 8578 Hz  | 3.15 | -18.1 dB |
-| Peaking | 17379 Hz | 0.95 | -15.4 dB |
-| Peaking | 63 Hz    | 2.07 | 10.2 dB  |
-| Peaking | 80 Hz    | 3.62 | -11.4 dB |
-| Peaking | 116 Hz   | 0.61 | -3.7 dB  |
-| Peaking | 576 Hz   | 1.9  | 3.9 dB   |
-| Peaking | 1171 Hz  | 3.58 | -3.0 dB  |
+| Peaking | 4044 Hz  | 0.15 | 11.5 dB  |
+| Peaking | 8577 Hz  | 3.15 | -18.1 dB |
+| Peaking | 17373 Hz | 0.95 | -15.5 dB |
+| Peaking | 66 Hz    | 2.02 | 10.7 dB  |
+| Peaking | 79 Hz    | 3.44 | -11.9 dB |
+| Peaking | 118 Hz   | 0.63 | -3.6 dB  |
+| Peaking | 579 Hz   | 1.88 | 3.9 dB   |
+| Peaking | 1169 Hz  | 3.58 | -3.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%2048/Beyerdynamic%20DT%2048.png)

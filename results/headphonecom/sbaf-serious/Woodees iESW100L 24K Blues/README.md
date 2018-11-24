@@ -9,28 +9,29 @@ GraphicEQ: 21 -10.5; 23 -10.6; 25 -10.6; 28 -10.5; 31 -10.5; 34 -10.5; 37 -10.4;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.0dB` and instead set Global volume in the UI for both channels to **-30**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Woodees iESW100L 24K Blues GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-30**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Woodees iESW100L 24K Blues ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.0dB.
+When using independent subset of filters, apply preamp of **-1.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 63 Hz    | 0.12 | -11.1 dB |
-| Peaking | 1964 Hz  | 0.22 | 7.5 dB   |
-| Peaking | 2138 Hz  | 0.87 | -11.3 dB |
-| Peaking | 5127 Hz  | 5.05 | -14.8 dB |
-| Peaking | 9317 Hz  | 4.25 | -7.6 dB  |
-| Peaking | 2845 Hz  | 5.36 | -2.6 dB  |
-| Peaking | 3754 Hz  | 2.63 | 3.2 dB   |
-| Peaking | 4365 Hz  | 3.76 | -3.0 dB  |
-| Peaking | 6631 Hz  | 7.83 | 2.5 dB   |
-| Peaking | 14156 Hz | 1.37 | -0.9 dB  |
+| Peaking | 64 Hz    | 0.12 | -11.1 dB |
+| Peaking | 1935 Hz  | 0.21 | 7.7 dB   |
+| Peaking | 2149 Hz  | 0.87 | -11.5 dB |
+| Peaking | 5116 Hz  | 5.04 | -14.8 dB |
+| Peaking | 9401 Hz  | 4.17 | -7.5 dB  |
+| Peaking | 2811 Hz  | 5.96 | -2.2 dB  |
+| Peaking | 3725 Hz  | 3.36 | 3.6 dB   |
+| Peaking | 4310 Hz  | 3.06 | -2.6 dB  |
+| Peaking | 6668 Hz  | 8.28 | 2.6 dB   |
+| Peaking | 14334 Hz | 1.42 | -0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Woodees%20iESW100L%2024K%20Blues/Woodees%20iESW100L%2024K%20Blues.png)

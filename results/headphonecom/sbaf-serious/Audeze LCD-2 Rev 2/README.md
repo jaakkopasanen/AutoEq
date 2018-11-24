@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.5; 25 0.5; 28 0.6; 31 0.6; 34 0.7; 37 0.6; 41 0.5; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.6dB` and instead set Global volume in the UI for both channels to **-36**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeze LCD-2 Rev 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-36**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-2 Rev 2 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-2 Rev
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.9dB.
+When using independent subset of filters, apply preamp of **-3.9dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
 | Peaking | 214 Hz   |  0.7  | -3.3 dB |
-| Peaking | 646 Hz   |  2.04 | -1.9 dB |
-| Peaking | 1668 Hz  |  6.2  | -2.8 dB |
+| Peaking | 645 Hz   |  2.04 | -1.9 dB |
+| Peaking | 1683 Hz  |  6.19 | -2.8 dB |
 | Peaking | 4000 Hz  |  3.36 | 3.9 dB  |
-| Peaking | 19052 Hz |  2.02 | -4.4 dB |
-| Peaking | 39 Hz    |  1.45 | 1.0 dB  |
-| Peaking | 843 Hz   |  6.91 | -1.1 dB |
-| Peaking | 1157 Hz  |  5.97 | 2.1 dB  |
-| Peaking | 5557 Hz  |  5.06 | -0.8 dB |
-| Peaking | 7087 Hz  | 10.28 | 1.5 dB  |
+| Peaking | 18781 Hz |  2.03 | -4.4 dB |
+| Peaking | 36 Hz    |  1.39 | 1.0 dB  |
+| Peaking | 1115 Hz  |  1.56 | -1.5 dB |
+| Peaking | 1152 Hz  |  3.68 | 3.5 dB  |
+| Peaking | 5561 Hz  |  5.47 | -0.8 dB |
+| Peaking | 7074 Hz  | 10.17 | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audeze%20LCD-2%20Rev%202/Audeze%20LCD-2%20Rev%202.png)

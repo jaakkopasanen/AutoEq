@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.8; 23 -3.9; 25 -4.0; 28 -4.1; 31 -4.3; 34 -4.4; 37 -4.4; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.2dB` and instead set Global volume in the UI for both channels to **-52**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss SP330 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-52**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss SP330 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Koss SP330 Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.5dB.
+When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 35 Hz   | 0.43 | -4.2 dB |
 | Peaking | 120 Hz  | 1.14 | -3.3 dB |
 | Peaking | 520 Hz  | 2.83 | -2.2 dB |
-| Peaking | 4581 Hz | 6.68 | -3.3 dB |
+| Peaking | 4581 Hz | 6.69 | -3.3 dB |
 | Peaking | 6225 Hz | 4.29 | 5.6 dB  |
-| Peaking | 299 Hz  | 3.05 | 2.8 dB  |
-| Peaking | 305 Hz  | 1.39 | -1.5 dB |
-| Peaking | 814 Hz  | 1.87 | -0.7 dB |
-| Peaking | 1688 Hz | 0.74 | 1.3 dB  |
-| Peaking | 9138 Hz | 3.82 | -1.4 dB |
+| Peaking | 297 Hz  | 3.03 | 2.8 dB  |
+| Peaking | 308 Hz  | 1.39 | -1.5 dB |
+| Peaking | 812 Hz  | 1.87 | -0.7 dB |
+| Peaking | 1690 Hz | 0.74 | 1.3 dB  |
+| Peaking | 9122 Hz | 3.81 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20SP330/Koss%20SP330.png)

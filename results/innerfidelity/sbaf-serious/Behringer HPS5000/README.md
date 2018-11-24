@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Behringer HPS5000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Behringer HPS5000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 45 Hz   | 0.21 | 6.3 dB  |
 | Peaking | 358 Hz  | 1.76 | 2.6 dB  |
-| Peaking | 636 Hz  | 2.49 | 2.3 dB  |
+| Peaking | 635 Hz  | 2.49 | 2.3 dB  |
 | Peaking | 1656 Hz | 1.95 | -7.7 dB |
 | Peaking | 3284 Hz | 0.72 | 7.6 dB  |
-| Peaking | 1032 Hz | 6.76 | -0.8 dB |
-| Peaking | 2538 Hz | 7.22 | 1.8 dB  |
-| Peaking | 3456 Hz | 2.63 | -1.0 dB |
-| Peaking | 6132 Hz | 2.31 | 5.7 dB  |
-| Peaking | 7500 Hz | 1.44 | -4.3 dB |
+| Peaking | 1044 Hz | 6.74 | -0.8 dB |
+| Peaking | 2506 Hz | 7.2  | 1.8 dB  |
+| Peaking | 3470 Hz | 2.61 | -1.0 dB |
+| Peaking | 6261 Hz | 2.31 | 5.6 dB  |
+| Peaking | 7337 Hz | 1.44 | -4.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Behringer%20HPS5000/Behringer%20HPS5000.png)

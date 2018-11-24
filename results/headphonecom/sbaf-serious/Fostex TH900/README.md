@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.7; 23 -4.9; 25 -5.0; 28 -5.2; 31 -5.2; 34 -5.3; 37 -5.3; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.3dB` and instead set Global volume in the UI for both channels to **-52**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Fostex TH900 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-52**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fostex TH900 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Fostex TH900 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.2dB.
+When using independent subset of filters, apply preamp of **-5.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.2dB.
 | Peaking | 562 Hz   | 2.21 | 6.6 dB  |
 | Peaking | 3471 Hz  | 1.08 | 3.5 dB  |
 | Peaking | 5610 Hz  | 1.44 | -4.3 dB |
-| Peaking | 1821 Hz  | 3.82 | -2.6 dB |
-| Peaking | 2203 Hz  | 4.39 | 3.1 dB  |
-| Peaking | 3042 Hz  | 7.77 | -1.4 dB |
-| Peaking | 8953 Hz  | 5.84 | 1.1 dB  |
-| Peaking | 20389 Hz | 1.47 | -9.8 dB |
+| Peaking | 1838 Hz  | 3.64 | -2.8 dB |
+| Peaking | 2197 Hz  | 3.97 | 3.3 dB  |
+| Peaking | 3041 Hz  | 7.14 | -1.4 dB |
+| Peaking | 8929 Hz  | 5.86 | 1.1 dB  |
+| Peaking | 20232 Hz | 1.46 | -9.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Fostex%20TH900/Fostex%20TH900.png)

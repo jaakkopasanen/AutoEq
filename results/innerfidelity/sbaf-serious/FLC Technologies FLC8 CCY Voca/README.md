@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.9; 31 5.8; 34 5.6; 37 5.5; 41 5.3; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`FLC Technologies FLC8 CCY Voca GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `FLC Technologies FLC8 CCY Voca ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `FLC Technologies
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 25 Hz   | 0.78 | 5.9 dB  |
-| Peaking | 57 Hz   | 1.29 | 2.6 dB  |
+| Peaking | 25 Hz   | 0.79 | 5.9 dB  |
+| Peaking | 57 Hz   | 1.3  | 2.6 dB  |
 | Peaking | 1722 Hz | 2.24 | -8.1 dB |
 | Peaking | 4991 Hz | 1.04 | 7.3 dB  |
-| Peaking | 9571 Hz | 1.7  | -3.9 dB |
-| Peaking | 225 Hz  | 1.49 | -0.8 dB |
-| Peaking | 741 Hz  | 1.8  | 1.8 dB  |
-| Peaking | 3049 Hz | 3.98 | -4.4 dB |
-| Peaking | 3427 Hz | 4    | 4.5 dB  |
-| Peaking | 4495 Hz | 5.8  | -1.3 dB |
+| Peaking | 9573 Hz | 1.7  | -3.9 dB |
+| Peaking | 225 Hz  | 1.53 | -0.8 dB |
+| Peaking | 741 Hz  | 1.81 | 1.8 dB  |
+| Peaking | 3045 Hz | 3.97 | -4.4 dB |
+| Peaking | 3433 Hz | 3.98 | 4.5 dB  |
+| Peaking | 4494 Hz | 5.81 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/FLC%20Technologies%20FLC8%20CCY%20Voca/FLC%20Technologies%20FLC8%20CCY%20Voca.png)

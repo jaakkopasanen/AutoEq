@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 5.8; 25 5.5; 28 4.9; 31 4.2; 34 3.6; 37 3.2; 41 2.7; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG Y50BT GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG Y50BT ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 1413 Hz  | 1.2  | -3.2 dB |
 | Peaking | 2609 Hz  | 2.89 | 6.1 dB  |
 | Peaking | 16974 Hz | 1.16 | -5.7 dB |
-| Peaking | 317 Hz   | 1.4  | 1.6 dB  |
-| Peaking | 338 Hz   | 2.69 | -3.3 dB |
-| Peaking | 3932 Hz  | 9.61 | 2.4 dB  |
-| Peaking | 5627 Hz  | 3.41 | -3.3 dB |
-| Peaking | 7944 Hz  | 1.17 | 1.2 dB  |
+| Peaking | 316 Hz   | 1.4  | 1.6 dB  |
+| Peaking | 339 Hz   | 2.66 | -3.3 dB |
+| Peaking | 3939 Hz  | 9.61 | 2.4 dB  |
+| Peaking | 5633 Hz  | 3.42 | -3.3 dB |
+| Peaking | 7947 Hz  | 1.17 | 1.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20Y50BT/AKG%20Y50BT.png)

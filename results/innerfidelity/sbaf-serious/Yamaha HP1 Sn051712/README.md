@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.0; 25 4.7; 28 4.1; 31 3.7; 34 3.4; 37 3.1; 41 2.8; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Yamaha HP1 Sn051712 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yamaha HP1 Sn051712 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Yamaha HP1 Sn051
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 23 Hz   | 1.2  | 5.1 dB  |
-| Peaking | 51 Hz   | 1.8  | 1.5 dB  |
+| Peaking | 23 Hz   | 1.21 | 5.2 dB  |
+| Peaking | 49 Hz   | 1.8  | 1.5 dB  |
 | Peaking | 1575 Hz | 2.77 | 3.8 dB  |
-| Peaking | 3560 Hz | 2.73 | 3.8 dB  |
-| Peaking | 5630 Hz | 2.72 | 6.2 dB  |
-| Peaking | 80 Hz   | 2.27 | 1.0 dB  |
+| Peaking | 3561 Hz | 2.71 | 3.8 dB  |
+| Peaking | 5631 Hz | 2.72 | 6.2 dB  |
+| Peaking | 82 Hz   | 2.27 | 1.0 dB  |
 | Peaking | 376 Hz  | 0.34 | -1.5 dB |
-| Peaking | 1253 Hz | 4.04 | 1.7 dB  |
-| Peaking | 6553 Hz | 7.66 | 2.1 dB  |
-| Peaking | 7818 Hz | 2.61 | -1.4 dB |
+| Peaking | 1252 Hz | 4.04 | 1.7 dB  |
+| Peaking | 6589 Hz | 7.68 | 2.1 dB  |
+| Peaking | 7838 Hz | 2.62 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20HP1%20Sn051712/Yamaha%20HP1%20Sn051712.png)

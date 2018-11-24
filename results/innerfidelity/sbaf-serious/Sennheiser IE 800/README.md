@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 -0.1; 25 -0.4; 28 -0.7; 31 -0.9; 34 -1.1; 37 -1.3; 41 -1.6
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser IE 800 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser IE 800 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser IE 80
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 102 Hz   | 0.59 | -3.4 dB |
+| Peaking | 103 Hz   | 0.6  | -3.4 dB |
 | Peaking | 216 Hz   | 1.09 | -1.7 dB |
 | Peaking | 2704 Hz  | 3.69 | 4.0 dB  |
 | Peaking | 4100 Hz  | 1.28 | 5.7 dB  |
 | Peaking | 10220 Hz | 3.69 | -5.7 dB |
-| Peaking | 16 Hz    | 1.72 | 0.8 dB  |
-| Peaking | 725 Hz   | 2.5  | 1.0 dB  |
+| Peaking | 15 Hz    | 1.5  | 0.8 dB  |
+| Peaking | 724 Hz   | 2.5  | 1.0 dB  |
 | Peaking | 1537 Hz  | 3    | -1.8 dB |
-| Peaking | 5684 Hz  | 4.56 | -1.7 dB |
-| Peaking | 6482 Hz  | 7.94 | 4.0 dB  |
+| Peaking | 5716 Hz  | 4.55 | -1.7 dB |
+| Peaking | 6529 Hz  | 7.93 | 4.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20IE%20800/Sennheiser%20IE%20800.png)

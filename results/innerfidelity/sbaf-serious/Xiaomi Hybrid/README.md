@@ -9,28 +9,29 @@ GraphicEQ: 21 -5.4; 23 -5.8; 25 -6.1; 28 -6.4; 31 -6.7; 34 -6.8; 37 -7.0; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Xiaomi Hybrid GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Xiaomi Hybrid ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 39 Hz    | 0.39 | -6.5 dB |
+| Peaking | 39 Hz    | 0.4  | -6.5 dB |
 | Peaking | 120 Hz   | 0.85 | -4.5 dB |
 | Peaking | 235 Hz   | 1.42 | -2.9 dB |
-| Peaking | 2000 Hz  | 2.35 | -6.8 dB |
-| Peaking | 5729 Hz  | 3.08 | 7.1 dB  |
-| Peaking | 788 Hz   | 1.1  | 3.8 dB  |
-| Peaking | 843 Hz   | 0.58 | -2.3 dB |
-| Peaking | 3201 Hz  | 4.92 | 2.6 dB  |
-| Peaking | 4022 Hz  | 8.28 | -2.6 dB |
-| Peaking | 14962 Hz | 4.8  | -2.2 dB |
+| Peaking | 1997 Hz  | 2.35 | -6.8 dB |
+| Peaking | 5728 Hz  | 3.08 | 7.1 dB  |
+| Peaking | 783 Hz   | 1.38 | 2.3 dB  |
+| Peaking | 1244 Hz  | 0.25 | -0.8 dB |
+| Peaking | 3147 Hz  | 6.19 | 2.9 dB  |
+| Peaking | 14917 Hz | 5.8  | -1.7 dB |
+| Peaking | 15632 Hz | 4.78 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Xiaomi%20Hybrid/Xiaomi%20Hybrid.png)

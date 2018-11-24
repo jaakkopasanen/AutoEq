@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.9; 25 5.3; 28 4.0; 31 2.9; 34 2.0; 37 1.3; 41 0.7; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-M50x GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M50x ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.0dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 23 Hz    | 2.07 | 6.4 dB   |
-| Peaking | 2632 Hz  | 2.39 | -3.8 dB  |
-| Peaking | 4365 Hz  | 7.56 | -4.3 dB  |
-| Peaking | 14575 Hz | 1.9  | -10.1 dB |
-| Peaking | 20556 Hz | 0.71 | -12.0 dB |
+| Peaking | 23 Hz    | 2.26 | 6.7 dB   |
+| Peaking | 2631 Hz  | 2.39 | -3.8 dB  |
+| Peaking | 4369 Hz  | 7.46 | -4.3 dB  |
+| Peaking | 14579 Hz | 1.9  | -10.1 dB |
+| Peaking | 20526 Hz | 0.71 | -12.0 dB |
 | Peaking | 165 Hz   | 1.26 | -4.0 dB  |
 | Peaking | 298 Hz   | 2    | 4.1 dB   |
-| Peaking | 5744 Hz  | 4.79 | 3.7 dB   |
-| Peaking | 7439 Hz  | 2.55 | -4.8 dB  |
-| Peaking | 9891 Hz  | 3.56 | 4.2 dB   |
+| Peaking | 5780 Hz  | 4.78 | 3.7 dB   |
+| Peaking | 7485 Hz  | 2.57 | -4.8 dB  |
+| Peaking | 9951 Hz  | 3.54 | 4.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audio%20Technica%20ATH-M50x/Audio%20Technica%20ATH-M50x.png)

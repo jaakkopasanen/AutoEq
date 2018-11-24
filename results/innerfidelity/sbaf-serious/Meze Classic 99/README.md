@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.5; 31 4.7; 34 3.9; 37 3.4; 41 2.8; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Meze Classic 99 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Meze Classic 99 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Meze Classic 99 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 0.82 | 6.1 dB  |
-| Peaking | 105 Hz  | 1.65 | 1.0 dB  |
-| Peaking | 261 Hz  | 2.76 | 1.0 dB  |
+| Peaking | 22 Hz   | 0.84 | 6.1 dB  |
+| Peaking | 107 Hz  | 1.65 | 1.0 dB  |
+| Peaking | 264 Hz  | 2.76 | 1.0 dB  |
 | Peaking | 3621 Hz | 2.72 | 5.5 dB  |
 | Peaking | 5794 Hz | 3.27 | 6.1 dB  |
-| Peaking | 631 Hz  | 2.23 | -0.8 dB |
-| Peaking | 1658 Hz | 3.86 | -0.8 dB |
-| Peaking | 2637 Hz | 5.25 | 0.7 dB  |
-| Peaking | 6638 Hz | 8.27 | 2.1 dB  |
-| Peaking | 7715 Hz | 2.26 | -1.2 dB |
+| Peaking | 628 Hz  | 2.23 | -0.8 dB |
+| Peaking | 1659 Hz | 3.86 | -0.8 dB |
+| Peaking | 2640 Hz | 5.25 | 0.7 dB  |
+| Peaking | 6630 Hz | 8.27 | 2.0 dB  |
+| Peaking | 7717 Hz | 2.26 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Meze%20Classic%2099/Meze%20Classic%2099.png)

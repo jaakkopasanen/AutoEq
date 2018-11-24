@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.6; 23 -8.6; 25 -8.5; 28 -8.4; 31 -8.3; 34 -8.2; 37 -8.1; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.8dB` and instead set Global volume in the UI for both channels to **-37**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Unique Melody 3X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-37**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Unique Melody 3X ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Unique Melody 3X
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.0dB.
+When using independent subset of filters, apply preamp of **-4.0dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -4.0dB.
 | Peaking | 1696 Hz | 4.4  | -1.0 dB  |
 | Peaking | 3339 Hz | 3.35 | 6.1 dB   |
 | Peaking | 5136 Hz | 2.29 | -10.9 dB |
-| Peaking | 360 Hz  | 2.34 | -0.5 dB  |
-| Peaking | 779 Hz  | 2.27 | 1.0 dB   |
-| Peaking | 6122 Hz | 4.83 | -1.6 dB  |
-| Peaking | 6994 Hz | 4.74 | -1.1 dB  |
-| Peaking | 7837 Hz | 2.17 | 2.2 dB   |
+| Peaking | 361 Hz  | 2.34 | -0.5 dB  |
+| Peaking | 783 Hz  | 2.27 | 1.0 dB   |
+| Peaking | 6267 Hz | 4.83 | -1.6 dB  |
+| Peaking | 6765 Hz | 4.74 | -1.1 dB  |
+| Peaking | 7931 Hz | 2.16 | 2.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Unique%20Melody%203X/Unique%20Melody%203X.png)

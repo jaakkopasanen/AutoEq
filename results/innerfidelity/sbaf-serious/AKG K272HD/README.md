@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.8; 37 5.2; 41 4.3; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K272HD GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K272HD ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K272HD Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 21 Hz   | 1.67 | 4.6 dB   |
-| Peaking | 34 Hz   | 1.63 | 4.6 dB   |
+| Peaking | 21 Hz   | 1.69 | 4.6 dB   |
+| Peaking | 34 Hz   | 1.6  | 4.7 dB   |
 | Peaking | 1591 Hz | 2.28 | -5.0 dB  |
-| Peaking | 4790 Hz | 0.59 | 7.0 dB   |
+| Peaking | 4791 Hz | 0.59 | 7.0 dB   |
 | Peaking | 9123 Hz | 2.8  | -10.4 dB |
-| Peaking | 85 Hz   | 4.17 | -2.3 dB  |
-| Peaking | 108 Hz  | 5.84 | 5.0 dB   |
-| Peaking | 360 Hz  | 0.78 | -1.8 dB  |
-| Peaking | 648 Hz  | 3.82 | -4.2 dB  |
-| Peaking | 716 Hz  | 2.37 | 2.9 dB   |
+| Peaking | 84 Hz   | 4.16 | -2.3 dB  |
+| Peaking | 107 Hz  | 5.82 | 5.0 dB   |
+| Peaking | 368 Hz  | 0.8  | -1.8 dB  |
+| Peaking | 645 Hz  | 3.81 | -4.2 dB  |
+| Peaking | 718 Hz  | 2.38 | 2.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K272HD/AKG%20K272HD.png)

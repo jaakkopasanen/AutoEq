@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.3; 25 -0.0; 28 -0.3; 31 -0.6; 34 -0.7; 37 -0.8; 41 -0.9;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-M50 B2012 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M50 B2012 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Audio Technica A
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 289 Hz  |  3.91 | 3.0 dB  |
+| Peaking | 290 Hz  |  3.91 | 3.0 dB  |
 | Peaking | 1939 Hz |  2.3  | -4.1 dB |
-| Peaking | 3361 Hz |  5.92 | 4.1 dB  |
+| Peaking | 3361 Hz |  5.93 | 4.1 dB  |
 | Peaking | 6030 Hz |  3.43 | 7.6 dB  |
 | Peaking | 8563 Hz |  4.33 | -8.4 dB |
-| Peaking | 14 Hz   |  1.15 | 1.7 dB  |
-| Peaking | 41 Hz   |  1.01 | -1.1 dB |
-| Peaking | 94 Hz   |  5.4  | 4.3 dB  |
-| Peaking | 132 Hz  |  2.74 | -2.1 dB |
-| Peaking | 4356 Hz | 10.18 | -4.1 dB |
+| Peaking | 12 Hz   |  1.14 | 1.8 dB  |
+| Peaking | 44 Hz   |  1.09 | -1.1 dB |
+| Peaking | 95 Hz   |  5.44 | 4.2 dB  |
+| Peaking | 131 Hz  |  2.74 | -2.1 dB |
+| Peaking | 4357 Hz | 10.57 | -4.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-M50%20B2012/Audio%20Technica%20ATH-M50%20B2012.png)

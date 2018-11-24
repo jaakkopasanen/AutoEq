@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.8; 34 5.4; 37 4.9; 41 4.2; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG Q701 Quincy Jones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG Q701 Quincy Jones ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG Q701 Quincy 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.2dB.
 | Peaking | 728 Hz   | 1.53 | 1.8 dB  |
 | Peaking | 1960 Hz  | 2.11 | -5.9 dB |
 | Peaking | 7348 Hz  | 1.83 | -5.4 dB |
-| Peaking | 2432 Hz  | 5.56 | -1.1 dB |
-| Peaking | 3620 Hz  | 3.02 | 2.1 dB  |
-| Peaking | 4392 Hz  | 6.43 | -2.0 dB |
-| Peaking | 8593 Hz  | 1.57 | -1.1 dB |
-| Peaking | 10291 Hz | 2.94 | 2.3 dB  |
+| Peaking | 2430 Hz  | 5.56 | -1.1 dB |
+| Peaking | 3629 Hz  | 3.02 | 2.1 dB  |
+| Peaking | 4385 Hz  | 6.43 | -2.0 dB |
+| Peaking | 9255 Hz  | 1.57 | -1.1 dB |
+| Peaking | 10256 Hz | 2.94 | 2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20Q701%20Quincy%20Jones/AKG%20Q701%20Quincy%20Jones.png)

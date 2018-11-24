@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.5; 25 3.2; 28 1.5; 31 0.1; 34 -1.1; 37 -2.1; 41 -3.1; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.7dB` and instead set Global volume in the UI for both channels to **-67**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Skullcandy Crusher GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-67**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Crusher ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Crush
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.3dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -7.3dB.
 | Peaking | 252 Hz  | 0.47 | -4.3 dB |
 | Peaking | 674 Hz  | 2.82 | -1.8 dB |
 | Peaking | 5758 Hz | 3.74 | 7.2 dB  |
-| Peaking | 1245 Hz | 2.79 | 4.8 dB  |
-| Peaking | 1675 Hz | 1.13 | -3.1 dB |
-| Peaking | 4232 Hz | 8.45 | -4.3 dB |
-| Peaking | 4933 Hz | 9.27 | 3.9 dB  |
+| Peaking | 1222 Hz | 2.79 | 4.8 dB  |
+| Peaking | 1680 Hz | 1.14 | -3.1 dB |
+| Peaking | 4237 Hz | 8.45 | -4.3 dB |
+| Peaking | 4940 Hz | 9.27 | 3.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Crusher/Skullcandy%20Crusher.png)

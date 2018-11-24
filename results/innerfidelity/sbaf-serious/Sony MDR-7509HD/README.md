@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-7509HD GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-7509HD ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.3dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 36 Hz   | 0.92 | 7.2 dB  |
+| Peaking | 36 Hz   | 0.91 | 7.2 dB  |
 | Peaking | 2048 Hz | 1.71 | -8.6 dB |
-| Peaking | 4150 Hz | 1.51 | 7.4 dB  |
-| Peaking | 6416 Hz | 5.7  | 4.2 dB  |
-| Peaking | 8943 Hz | 4.3  | -6.7 dB |
-| Peaking | 37 Hz   | 3.54 | -1.3 dB |
-| Peaking | 59 Hz   | 3.08 | 2.7 dB  |
-| Peaking | 168 Hz  | 1.6  | -2.5 dB |
-| Peaking | 472 Hz  | 3.07 | -3.8 dB |
-| Peaking | 1048 Hz | 2.85 | 1.4 dB  |
+| Peaking | 4149 Hz | 1.52 | 7.4 dB  |
+| Peaking | 6403 Hz | 5.61 | 4.2 dB  |
+| Peaking | 8929 Hz | 4.29 | -6.7 dB |
+| Peaking | 39 Hz   | 3.51 | -1.3 dB |
+| Peaking | 60 Hz   | 3.09 | 2.7 dB  |
+| Peaking | 170 Hz  | 1.58 | -2.5 dB |
+| Peaking | 473 Hz  | 3.07 | -3.8 dB |
+| Peaking | 1050 Hz | 2.85 | 1.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-7509HD/Sony%20MDR-7509HD.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.9; 25 3.3; 28 2.6; 31 2.0; 34 1.5; 37 1.0; 41 0.4; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-48**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 990 250 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-48**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 990 250 Ohm ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.8dB.
+When using independent subset of filters, apply preamp of **-4.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 1.62 | 4.6 dB   |
-| Peaking | 134 Hz   | 1    | -3.8 dB  |
+| Peaking | 21 Hz    | 1.66 | 4.6 dB   |
+| Peaking | 135 Hz   | 0.97 | -3.9 dB  |
 | Peaking | 5789 Hz  | 2.39 | -5.3 dB  |
 | Peaking | 12547 Hz | 3.59 | -7.6 dB  |
-| Peaking | 19654 Hz | 0.49 | -16.2 dB |
-| Peaking | 226 Hz   | 1.34 | -3.2 dB  |
-| Peaking | 256 Hz   | 0.5  | 3.7 dB   |
-| Peaking | 291 Hz   | 0.15 | -1.5 dB  |
-| Peaking | 712 Hz   | 2.02 | 2.4 dB   |
-| Peaking | 20720 Hz | 2.11 | 0.2 dB   |
+| Peaking | 19650 Hz | 0.49 | -16.2 dB |
+| Peaking | 63 Hz    | 4.15 | -0.7 dB  |
+| Peaking | 379 Hz   | 3.93 | 1.5 dB   |
+| Peaking | 684 Hz   | 1.42 | 3.6 dB   |
+| Peaking | 740 Hz   | 0.41 | -1.3 dB  |
+| Peaking | 18057 Hz | 3.45 | -0.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20990%20250%20Ohm/Beyerdynamic%20DT%20990%20250%20Ohm.png)

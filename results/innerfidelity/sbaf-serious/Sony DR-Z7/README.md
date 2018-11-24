@@ -9,28 +9,28 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony DR-Z7 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony DR-Z7 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 45 Hz   | 0.23 | 6.3 dB  |
-| Peaking | 527 Hz  | 0.95 | 2.6 dB  |
-| Peaking | 1961 Hz | 1.48 | -7.4 dB |
-| Peaking | 3300 Hz | 2.2  | 4.2 dB  |
-| Peaking | 5825 Hz | 3.35 | 6.7 dB  |
-| Peaking | 13 Hz   | 0.87 | 1.0 dB  |
-| Peaking | 40 Hz   | 0.99 | -0.6 dB |
-| Peaking | 114 Hz  | 2.55 | 1.6 dB  |
-| Peaking | 135 Hz  | 2.06 | -1.1 dB |
-| Peaking | 8118 Hz | 5.34 | -0.9 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 45 Hz   |  0.23 | 6.3 dB  |
+| Peaking | 527 Hz  |  0.95 | 2.6 dB  |
+| Peaking | 1966 Hz |  1.48 | -7.4 dB |
+| Peaking | 3333 Hz |  2.2  | 4.2 dB  |
+| Peaking | 5757 Hz |  3.36 | 6.7 dB  |
+| Peaking | 111 Hz  |  5.85 | 0.9 dB  |
+| Peaking | 4510 Hz | 11.29 | -1.1 dB |
+| Peaking | 6577 Hz |  8.38 | 2.2 dB  |
+| Peaking | 7719 Hz |  2.48 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20DR-Z7/Sony%20DR-Z7.png)

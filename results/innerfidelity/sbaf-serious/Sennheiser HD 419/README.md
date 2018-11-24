@@ -9,28 +9,29 @@ GraphicEQ: 21 -4.9; 23 -5.1; 25 -5.3; 28 -5.6; 31 -5.8; 34 -5.9; 37 -6.1; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 419 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 419 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 30 Hz   | 0.64 | -5.2 dB |
+| Peaking | 29 Hz   | 0.65 | -5.2 dB |
 | Peaking | 65 Hz   | 1.43 | -3.0 dB |
 | Peaking | 128 Hz  | 2.97 | -3.1 dB |
-| Peaking | 203 Hz  | 0.89 | -8.4 dB |
-| Peaking | 4698 Hz | 1.43 | 6.8 dB  |
-| Peaking | 370 Hz  | 5.22 | 0.7 dB  |
-| Peaking | 1787 Hz | 2.22 | -3.9 dB |
-| Peaking | 2240 Hz | 1.21 | 2.4 dB  |
-| Peaking | 6310 Hz | 3.79 | 5.1 dB  |
-| Peaking | 6796 Hz | 1.33 | -3.2 dB |
+| Peaking | 202 Hz  | 0.89 | -8.4 dB |
+| Peaking | 4699 Hz | 1.43 | 6.8 dB  |
+| Peaking | 592 Hz  | 5.62 | -1.6 dB |
+| Peaking | 1714 Hz | 1.72 | -5.1 dB |
+| Peaking | 1968 Hz | 0.74 | 3.2 dB  |
+| Peaking | 6291 Hz | 3.49 | 5.8 dB  |
+| Peaking | 6488 Hz | 1.26 | -3.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20419/Sennheiser%20HD%20419.png)

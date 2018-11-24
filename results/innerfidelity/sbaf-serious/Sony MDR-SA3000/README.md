@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-SA3000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-SA3000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 37 Hz   | 0.46 | 6.6 dB  |
 | Peaking | 1530 Hz | 3.17 | 5.0 dB  |
-| Peaking | 3970 Hz | 5.96 | 5.7 dB  |
-| Peaking | 5817 Hz | 2.84 | 6.8 dB  |
-| Peaking | 8804 Hz | 4.1  | -5.5 dB |
-| Peaking | 65 Hz   | 5.33 | 0.9 dB  |
-| Peaking | 736 Hz  | 1.49 | -3.4 dB |
-| Peaking | 1296 Hz | 0.34 | 1.6 dB  |
-| Peaking | 1981 Hz | 5.84 | 2.4 dB  |
-| Peaking | 2477 Hz | 2.05 | -4.1 dB |
+| Peaking | 3974 Hz | 5.96 | 5.7 dB  |
+| Peaking | 5814 Hz | 2.84 | 6.8 dB  |
+| Peaking | 8801 Hz | 4.1  | -5.5 dB |
+| Peaking | 67 Hz   | 5.3  | 0.9 dB  |
+| Peaking | 739 Hz  | 1.5  | -3.4 dB |
+| Peaking | 1304 Hz | 0.35 | 1.6 dB  |
+| Peaking | 1992 Hz | 5.83 | 2.3 dB  |
+| Peaking | 2486 Hz | 2.08 | -4.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-SA3000/Sony%20MDR-SA3000.png)

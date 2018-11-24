@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.4; 25 4.4; 28 3.0; 31 1.8; 34 0.8; 37 -0.1; 41 -1.1; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--7.3dB` and instead set Global volume in the UI for both channels to **-73**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Torque t402v OverEar Red GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-73**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OverEar Red ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Torque t402v Ove
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.2dB.
 | Peaking | 349 Hz  | 0.82 | -8.2 dB |
 | Peaking | 705 Hz  | 1.53 | 9.1 dB  |
 | Peaking | 1425 Hz | 2.23 | -4.6 dB |
-| Peaking | 1990 Hz | 6.03 | 2.3 dB  |
-| Peaking | 2862 Hz | 1.87 | -3.4 dB |
-| Peaking | 3422 Hz | 3.21 | 3.5 dB  |
-| Peaking | 5714 Hz | 1.93 | 4.0 dB  |
-| Peaking | 8473 Hz | 4.59 | -6.0 dB |
+| Peaking | 1970 Hz | 6.04 | 2.3 dB  |
+| Peaking | 2831 Hz | 1.86 | -3.5 dB |
+| Peaking | 3468 Hz | 3.2  | 3.6 dB  |
+| Peaking | 5679 Hz | 1.92 | 4.0 dB  |
+| Peaking | 8388 Hz | 4.59 | -6.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Red/Torque%20t402v%20OverEar%20Red.png)

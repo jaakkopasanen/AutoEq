@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.9; 31 5.6; 34 5.1; 37 4.5; 41 3.9; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser IE 800 sample B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser IE 800 sample B ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser IE 80
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 23 Hz    |  0.59 | 5.7 dB  |
+| Peaking | 23 Hz    |  0.6  | 5.7 dB  |
 | Peaking | 34 Hz    |  0.75 | 0.8 dB  |
-| Peaking | 181 Hz   |  0.58 | -3.3 dB |
+| Peaking | 182 Hz   |  0.58 | -3.3 dB |
 | Peaking | 3758 Hz  |  1.09 | 6.9 dB  |
-| Peaking | 11787 Hz |  1.84 | -6.1 dB |
-| Peaking | 763 Hz   |  1.42 | 1.7 dB  |
-| Peaking | 1543 Hz  |  0.38 | -1.1 dB |
-| Peaking | 1605 Hz  |  2.45 | -1.5 dB |
-| Peaking | 2578 Hz  |  3.58 | 3.2 dB  |
-| Peaking | 6669 Hz  | 11.12 | 3.2 dB  |
+| Peaking | 11786 Hz |  1.84 | -6.1 dB |
+| Peaking | 760 Hz   |  1.45 | 1.7 dB  |
+| Peaking | 1583 Hz  |  0.37 | -1.0 dB |
+| Peaking | 1604 Hz  |  2.36 | -1.6 dB |
+| Peaking | 2589 Hz  |  3.61 | 3.1 dB  |
+| Peaking | 6684 Hz  | 10.89 | 3.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20IE%20800%20sample%20B/Sennheiser%20IE%20800%20sample%20B.png)

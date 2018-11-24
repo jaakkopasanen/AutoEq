@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-V700 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-V700 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-V700 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 35 Hz   | 0.73 | 7.0 dB  |
+| Peaking | 35 Hz   | 0.74 | 6.9 dB  |
 | Peaking | 352 Hz  | 1.56 | 4.6 dB  |
-| Peaking | 2403 Hz | 1.38 | -6.4 dB |
-| Peaking | 5061 Hz | 1.29 | 7.4 dB  |
-| Peaking | 9219 Hz | 4.15 | -5.8 dB |
-| Peaking | 63 Hz   | 2.09 | 4.4 dB  |
-| Peaking | 81 Hz   | 0.73 | -2.9 dB |
-| Peaking | 197 Hz  | 1.09 | 1.2 dB  |
-| Peaking | 604 Hz  | 5.56 | -2.0 dB |
-| Peaking | 1175 Hz | 6.73 | 2.1 dB  |
+| Peaking | 2404 Hz | 1.38 | -6.4 dB |
+| Peaking | 5059 Hz | 1.29 | 7.4 dB  |
+| Peaking | 9219 Hz | 4.14 | -5.8 dB |
+| Peaking | 63 Hz   | 2.14 | 4.2 dB  |
+| Peaking | 83 Hz   | 0.72 | -2.7 dB |
+| Peaking | 193 Hz  | 1.02 | 1.2 dB  |
+| Peaking | 608 Hz  | 5.51 | -2.0 dB |
+| Peaking | 1179 Hz | 6.69 | 2.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-V700/Sony%20MDR-V700.png)

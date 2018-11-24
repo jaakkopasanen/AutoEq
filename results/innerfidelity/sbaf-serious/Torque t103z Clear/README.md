@@ -9,28 +9,29 @@ GraphicEQ: 21 -3.2; 23 -3.7; 25 -4.1; 28 -4.8; 31 -5.3; 34 -5.8; 37 -6.1; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.6dB` and instead set Global volume in the UI for both channels to **-55**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Torque t103z Clear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-55**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t103z Clear ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.9dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 66 Hz   |  0.4  | -7.0 dB |
-| Peaking | 164 Hz  |  0.79 | -5.3 dB |
-| Peaking | 324 Hz  |  1.36 | -3.1 dB |
-| Peaking | 4911 Hz |  3.43 | -4.6 dB |
-| Peaking | 6269 Hz |  4.8  | 6.9 dB  |
-| Peaking | 550 Hz  |  1.89 | -1.5 dB |
-| Peaking | 744 Hz  |  1.29 | 1.7 dB  |
-| Peaking | 1668 Hz |  2.52 | -0.7 dB |
-| Peaking | 3624 Hz |  6.23 | 2.1 dB  |
-| Peaking | 4313 Hz | 13.05 | -2.5 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 67 Hz   | 0.4  | -7.0 dB |
+| Peaking | 164 Hz  | 0.79 | -5.3 dB |
+| Peaking | 324 Hz  | 1.36 | -3.1 dB |
+| Peaking | 4912 Hz | 3.43 | -4.6 dB |
+| Peaking | 6269 Hz | 4.8  | 6.9 dB  |
+| Peaking | 552 Hz  | 1.81 | -1.9 dB |
+| Peaking | 707 Hz  | 1.19 | 1.9 dB  |
+| Peaking | 1633 Hz | 3.9  | -0.8 dB |
+| Peaking | 3598 Hz | 4.97 | 4.2 dB  |
+| Peaking | 3736 Hz | 2.36 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t103z%20Clear/Torque%20t103z%20Clear.png)

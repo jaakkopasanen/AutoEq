@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Apple EarPods GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Apple EarPods ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Apple EarPods Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 37 Hz    | 0.66 | 7.0 dB   |
-| Peaking | 657 Hz   | 0.75 | 2.6 dB   |
+| Peaking | 658 Hz   | 0.75 | 2.6 dB   |
 | Peaking | 2070 Hz  | 1.51 | -11.6 dB |
 | Peaking | 7742 Hz  | 1.19 | -7.0 dB  |
 | Peaking | 24000 Hz | 2.21 | -6.1 dB  |
-| Peaking | 3770 Hz  | 3.47 | 4.8 dB   |
-| Peaking | 6349 Hz  | 0.7  | -3.4 dB  |
-| Peaking | 7428 Hz  | 3.49 | 5.1 dB   |
-| Peaking | 9869 Hz  | 3.83 | -4.6 dB  |
-| Peaking | 11357 Hz | 2    | 5.0 dB   |
+| Peaking | 67 Hz    | 5.91 | 2.1 dB   |
+| Peaking | 3700 Hz  | 7.32 | 3.1 dB   |
+| Peaking | 5813 Hz  | 4.74 | -3.9 dB  |
+| Peaking | 9560 Hz  | 3.45 | -9.5 dB  |
+| Peaking | 9768 Hz  | 1.3  | 6.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Apple%20EarPods/Apple%20EarPods.png)

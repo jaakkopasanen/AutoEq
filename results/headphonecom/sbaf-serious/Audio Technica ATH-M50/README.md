@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 1.6; 25 0.9; 28 0.0; 31 -0.6; 34 -1.2; 37 -1.6; 41 -1.8; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-M50 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M50 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 135 Hz  | 2.12 | -4.5 dB |
-| Peaking | 1868 Hz | 2.4  | -4.7 dB |
-| Peaking | 3201 Hz | 4.63 | 3.7 dB  |
-| Peaking | 5938 Hz | 3.41 | 7.0 dB  |
-| Peaking | 9092 Hz | 4.92 | -5.6 dB |
-| Peaking | 19 Hz   | 1.5  | 3.6 dB  |
-| Peaking | 57 Hz   | 0.84 | -3.2 dB |
-| Peaking | 73 Hz   | 4.43 | 6.9 dB  |
-| Peaking | 350 Hz  | 2.67 | 3.6 dB  |
-| Peaking | 4274 Hz | 9.98 | -3.1 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 135 Hz  |  2.12 | -4.5 dB |
+| Peaking | 1868 Hz |  2.4  | -4.7 dB |
+| Peaking | 3201 Hz |  4.63 | 3.7 dB  |
+| Peaking | 5945 Hz |  3.41 | 7.0 dB  |
+| Peaking | 9198 Hz |  4.92 | -5.6 dB |
+| Peaking | 19 Hz   |  1.44 | 3.5 dB  |
+| Peaking | 57 Hz   |  0.87 | -3.3 dB |
+| Peaking | 73 Hz   |  4.44 | 6.9 dB  |
+| Peaking | 350 Hz  |  2.66 | 3.6 dB  |
+| Peaking | 4301 Hz | 10.03 | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audio%20Technica%20ATH-M50/Audio%20Technica%20ATH-M50.png)

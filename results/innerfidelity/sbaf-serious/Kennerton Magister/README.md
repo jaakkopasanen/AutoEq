@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.7; 25 5.2; 28 4.6; 31 4.2; 34 3.9; 37 3.6; 41 3.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.8dB` and instead set Global volume in the UI for both channels to **-67**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Kennerton Magister GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-67**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Kennerton Magister ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Kennerton Magist
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 1.27 | 6.1 dB  |
-| Peaking | 52 Hz   | 2.07 | 2.7 dB  |
+| Peaking | 22 Hz   | 1.26 | 6.0 dB  |
+| Peaking | 52 Hz   | 2.07 | 2.6 dB  |
 | Peaking | 381 Hz  | 3.05 | 4.2 dB  |
 | Peaking | 1943 Hz | 1.79 | -4.9 dB |
 | Peaking | 5728 Hz | 3.39 | 7.0 dB  |
-| Peaking | 79 Hz   | 2.36 | 2.3 dB  |
-| Peaking | 179 Hz  | 0.64 | -2.6 dB |
-| Peaking | 313 Hz  | 4.03 | 2.4 dB  |
-| Peaking | 611 Hz  | 1.07 | 1.1 dB  |
-| Peaking | 8250 Hz | 5.16 | -0.8 dB |
+| Peaking | 79 Hz   | 2.27 | 2.5 dB  |
+| Peaking | 189 Hz  | 0.51 | -2.7 dB |
+| Peaking | 311 Hz  | 3.64 | 2.7 dB  |
+| Peaking | 589 Hz  | 0.99 | 1.5 dB  |
+| Peaking | 8314 Hz | 5.17 | -0.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Kennerton%20Magister/Kennerton%20Magister.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 2.8; 25 2.4; 28 2.0; 31 1.7; 34 1.6; 37 1.5; 41 1.5; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 25-1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 25-1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 122 Hz  | 0.81 | -7.8 dB |
-| Peaking | 125 Hz  | 0.18 | 4.6 dB  |
-| Peaking | 1807 Hz | 1.44 | -5.5 dB |
-| Peaking | 5307 Hz | 0.83 | 7.3 dB  |
-| Peaking | 8682 Hz | 2.94 | -8.6 dB |
-| Peaking | 38 Hz   | 2.68 | -0.7 dB |
-| Peaking | 74 Hz   | 5.96 | 1.0 dB  |
-| Peaking | 214 Hz  | 4.91 | -0.7 dB |
-| Peaking | 376 Hz  | 4.43 | 0.7 dB  |
-| Peaking | 944 Hz  | 3.8  | -0.4 dB |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 120 Hz   |  2.03 | -3.9 dB |
+| Peaking | 433 Hz   |  0.98 | 2.8 dB  |
+| Peaking | 1841 Hz  |  1.73 | -5.2 dB |
+| Peaking | 5353 Hz  |  0.85 | 7.3 dB  |
+| Peaking | 8722 Hz  |  2.94 | -8.5 dB |
+| Peaking | 17 Hz    |  1.11 | 3.6 dB  |
+| Peaking | 86 Hz    |  0.58 | 1.9 dB  |
+| Peaking | 99 Hz    |  3.42 | -2.9 dB |
+| Peaking | 182 Hz   |  2.17 | -1.7 dB |
+| Peaking | 10270 Hz | 10.61 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%2025-1/Sennheiser%20HD%2025-1.png)

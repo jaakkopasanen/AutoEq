@@ -9,28 +9,29 @@ GraphicEQ: 21 -7.8; 23 -7.8; 25 -7.8; 28 -7.7; 31 -7.6; 34 -7.5; 37 -7.4; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.9dB` and instead set Global volume in the UI for both channels to **-29**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiSoundAudio Golden Crystal GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-29**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiSoundAudio Golden Crystal ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.2dB.
+When using independent subset of filters, apply preamp of **--0.2dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 23 Hz    | 0.19 | -7.5 dB |
-| Peaking | 164 Hz   | 0.78 | -3.3 dB |
-| Peaking | 1798 Hz  | 4.64 | -4.1 dB |
-| Peaking | 7247 Hz  | 3.6  | -8.7 dB |
-| Peaking | 17695 Hz | 2.63 | -4.6 dB |
-| Peaking | 736 Hz   | 3.06 | 1.4 dB  |
-| Peaking | 3284 Hz  | 1.94 | 1.4 dB  |
-| Peaking | 3949 Hz  | 2.31 | 1.7 dB  |
-| Peaking | 10634 Hz | 3.77 | -5.7 dB |
-| Peaking | 12117 Hz | 1.74 | 1.9 dB  |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 24 Hz    |  0.19 | -7.5 dB |
+| Peaking | 164 Hz   |  0.78 | -3.3 dB |
+| Peaking | 1798 Hz  |  4.65 | -4.1 dB |
+| Peaking | 7250 Hz  |  3.6  | -8.7 dB |
+| Peaking | 17695 Hz |  2.63 | -4.6 dB |
+| Peaking | 737 Hz   |  3.05 | 1.4 dB  |
+| Peaking | 2501 Hz  | 10.1  | 3.1 dB  |
+| Peaking | 3793 Hz  |  2.85 | 3.1 dB  |
+| Peaking | 10641 Hz |  3.65 | -6.1 dB |
+| Peaking | 11792 Hz |  1.6  | 2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiSoundAudio%20Golden%20Crystal/HiSoundAudio%20Golden%20Crystal.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado RS1e Flat Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado RS1e Flat Pads ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado RS1e Flat 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 51 Hz   | 0.4  | 9.0 dB  |
-| Peaking | 103 Hz  | 0.86 | -8.1 dB |
-| Peaking | 567 Hz  | 1.81 | 1.1 dB  |
-| Peaking | 1963 Hz | 4.26 | -9.7 dB |
-| Peaking | 3827 Hz | 0.91 | 7.2 dB  |
-| Peaking | 1342 Hz | 3.36 | -1.6 dB |
-| Peaking | 1633 Hz | 6.2  | 3.9 dB  |
-| Peaking | 1787 Hz | 9.73 | -2.5 dB |
-| Peaking | 6251 Hz | 2.72 | 5.8 dB  |
-| Peaking | 7111 Hz | 1.38 | -4.1 dB |
+| Peaking | 104 Hz  | 0.85 | -8.1 dB |
+| Peaking | 568 Hz  | 1.81 | 1.1 dB  |
+| Peaking | 1965 Hz | 4.26 | -9.7 dB |
+| Peaking | 3829 Hz | 0.91 | 7.2 dB  |
+| Peaking | 1598 Hz | 7.78 | 4.8 dB  |
+| Peaking | 1601 Hz | 1.31 | -4.1 dB |
+| Peaking | 1972 Hz | 0.64 | 2.5 dB  |
+| Peaking | 6090 Hz | 2.49 | 6.8 dB  |
+| Peaking | 6349 Hz | 1.01 | -4.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20RS1e%20Flat%20Pads/Grado%20RS1e%20Flat%20Pads.png)

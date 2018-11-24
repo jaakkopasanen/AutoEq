@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.5; 25 3.1; 28 2.5; 31 2.1; 34 1.7; 37 1.4; 41 1.0; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Radius HP-TWF41 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Radius HP-TWF41 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Radius HP-TWF41 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 8671 Hz  | 1.12 | -2.7 dB |
 | Peaking | 508 Hz   | 2.06 | -0.9 dB |
 | Peaking | 921 Hz   | 1.37 | 1.1 dB  |
-| Peaking | 4235 Hz  | 0.24 | -0.1 dB |
-| Peaking | 13764 Hz | 1.82 | 1.2 dB  |
-| Peaking | 16298 Hz | 3.59 | -3.6 dB |
+| Peaking | 4359 Hz  | 0.23 | -0.1 dB |
+| Peaking | 13743 Hz | 1.81 | 1.2 dB  |
+| Peaking | 16243 Hz | 3.59 | -3.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Radius%20HP-TWF41/Radius%20HP-TWF41.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.8; 23 -4.9; 25 -4.9; 28 -4.9; 31 -5.0; 34 -5.1; 37 -5.1; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.0dB` and instead set Global volume in the UI for both channels to **-59**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Focal Spirit One GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-59**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Spirit One ParametricEQ.txt`.
@@ -18,19 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Focal Spirit One
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.05 | -3.7 dB |
-| Peaking | 44 Hz   | 1.16 | -2.2 dB |
-| Peaking | 161 Hz  | 0.46 | -6.1 dB |
-| Peaking | 3017 Hz | 2.94 | 5.6 dB  |
-| Peaking | 6178 Hz | 5.2  | 6.2 dB  |
-| Peaking | 347 Hz  | 2.88 | 0.9 dB  |
-| Peaking | 572 Hz  | 3.16 | -0.9 dB |
-| Peaking | 1652 Hz | 3.04 | -1.7 dB |
-| Peaking | 2421 Hz | 5.46 | 1.3 dB  |
-| Peaking | 4506 Hz | 8.8  | -1.1 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 22 Hz    | 1.06 | -3.7 dB |
+| Peaking | 44 Hz    | 1.14 | -2.2 dB |
+| Peaking | 160 Hz   | 0.45 | -6.1 dB |
+| Peaking | 3017 Hz  | 2.94 | 5.6 dB  |
+| Peaking | 6184 Hz  | 5.2  | 6.2 dB  |
+| Peaking | 347 Hz   | 2.79 | 0.9 dB  |
+| Peaking | 574 Hz   | 3.11 | -0.9 dB |
+| Peaking | 1622 Hz  | 4.07 | -1.8 dB |
+| Peaking | 24000 Hz | 1.84 | 0.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Focal%20Spirit%20One/Focal%20Spirit%20One.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.0; 25 5.0; 28 4.9; 31 4.9; 34 4.9; 37 5.0; 41 5.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips Cityscape Downtown GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips Cityscape Downtown ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips Cityscap
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 33 Hz   | 0.24 | 4.9 dB  |
 | Peaking | 159 Hz  | 0.75 | 2.3 dB  |
-| Peaking | 370 Hz  | 1.73 | 2.3 dB  |
+| Peaking | 369 Hz  | 1.73 | 2.3 dB  |
 | Peaking | 2842 Hz | 1.23 | 6.5 dB  |
-| Peaking | 5599 Hz | 2.69 | 5.2 dB  |
-| Peaking | 1137 Hz | 1.75 | -1.0 dB |
-| Peaking | 2143 Hz | 5.02 | 1.9 dB  |
-| Peaking | 2878 Hz | 3.21 | -1.0 dB |
-| Peaking | 3850 Hz | 4.91 | 1.3 dB  |
-| Peaking | 8392 Hz | 3.68 | -1.4 dB |
+| Peaking | 5600 Hz | 2.69 | 5.2 dB  |
+| Peaking | 1138 Hz | 1.73 | -1.0 dB |
+| Peaking | 2141 Hz | 5.01 | 1.9 dB  |
+| Peaking | 2867 Hz | 3.22 | -1.0 dB |
+| Peaking | 3810 Hz | 4.92 | 1.3 dB  |
+| Peaking | 8388 Hz | 3.68 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20Cityscape%20Downtown/Philips%20Cityscape%20Downtown.png)

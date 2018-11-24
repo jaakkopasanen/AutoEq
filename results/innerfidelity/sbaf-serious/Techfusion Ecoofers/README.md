@@ -9,8 +9,9 @@ GraphicEQ: 21 -14.9; 23 -14.9; 25 -14.9; 28 -15.0; 31 -15.0; 34 -15.0; 37 -15.0;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.4dB` and instead set Global volume in the UI for both channels to **-13**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Techfusion Ecoofers GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-13**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Techfusion Ecoofers ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Techfusion Ecoof
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.4dB.
+When using independent subset of filters, apply preamp of **-0.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 57 Hz    | 0.09 | -15.4 dB |
-| Peaking | 1472 Hz  | 0.3  | 8.1 dB   |
-| Peaking | 2267 Hz  | 0.9  | -9.0 dB  |
-| Peaking | 6283 Hz  | 2.73 | -6.6 dB  |
-| Peaking | 17631 Hz | 2.7  | -3.2 dB  |
-| Peaking | 2400 Hz  | 7.23 | 1.0 dB   |
-| Peaking | 3089 Hz  | 4.33 | -2.6 dB  |
-| Peaking | 3602 Hz  | 3.56 | 2.7 dB   |
-| Peaking | 4574 Hz  | 6.03 | -1.6 dB  |
+| Peaking | 1464 Hz  | 0.3  | 7.7 dB   |
+| Peaking | 2271 Hz  | 0.92 | -8.7 dB  |
+| Peaking | 6286 Hz  | 2.76 | -6.6 dB  |
+| Peaking | 17633 Hz | 2.73 | -3.2 dB  |
+| Peaking | 2397 Hz  | 7.36 | 0.9 dB   |
+| Peaking | 3074 Hz  | 4.52 | -2.6 dB  |
+| Peaking | 3611 Hz  | 3.66 | 2.6 dB   |
+| Peaking | 4583 Hz  | 6.01 | -1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Techfusion%20Ecoofers/Techfusion%20Ecoofers.png)

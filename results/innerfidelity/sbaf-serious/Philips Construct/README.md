@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.1; 23 -1.1; 25 -1.1; 28 -1.2; 31 -1.2; 34 -1.2; 37 -1.1; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips Construct GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips Construct ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips Construc
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 315 Hz  | 1.55 | 6.4 dB  |
 | Peaking | 721 Hz  | 1    | -3.5 dB |
 | Peaking | 2835 Hz | 0.53 | 6.9 dB  |
-| Peaking | 64 Hz   | 5.03 | 1.0 dB  |
-| Peaking | 1882 Hz | 4.15 | 0.9 dB  |
-| Peaking | 2894 Hz | 2.09 | -0.9 dB |
-| Peaking | 6208 Hz | 1.91 | 5.8 dB  |
-| Peaking | 7484 Hz | 1.39 | -4.9 dB |
+| Peaking | 67 Hz   | 5.17 | 0.9 dB  |
+| Peaking | 1877 Hz | 4.14 | 0.9 dB  |
+| Peaking | 2893 Hz | 2.08 | -0.9 dB |
+| Peaking | 6191 Hz | 1.95 | 5.4 dB  |
+| Peaking | 7535 Hz | 1.39 | -4.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20Construct/Philips%20Construct.png)

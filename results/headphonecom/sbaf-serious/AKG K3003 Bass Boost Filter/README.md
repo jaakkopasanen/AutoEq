@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.7; 23 -2.3; 25 -2.7; 28 -3.3; 31 -3.8; 34 -4.2; 37 -4.6; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.8dB` and instead set Global volume in the UI for both channels to **-58**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K3003 Bass Boost Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-58**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K3003 Bass Boost Filter ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K3003 Bass B
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 95 Hz    | 0.42 | -7.6 dB |
-| Peaking | 248 Hz   | 0.85 | -4.6 dB |
-| Peaking | 3677 Hz  | 2.53 | 12.6 dB |
-| Peaking | 4843 Hz  | 0.88 | -8.6 dB |
-| Peaking | 6584 Hz  | 3.18 | 8.8 dB  |
-| Peaking | 908 Hz   | 2.25 | 1.3 dB  |
-| Peaking | 2263 Hz  | 3.19 | -1.7 dB |
-| Peaking | 3073 Hz  | 7.27 | 1.6 dB  |
-| Peaking | 9644 Hz  | 6.89 | -4.0 dB |
-| Peaking | 10654 Hz | 1.71 | 1.7 dB  |
+| Peaking | 248 Hz   | 0.85 | -4.5 dB |
+| Peaking | 3678 Hz  | 2.53 | 12.6 dB |
+| Peaking | 4832 Hz  | 0.88 | -8.5 dB |
+| Peaking | 6576 Hz  | 3.2  | 8.7 dB  |
+| Peaking | 909 Hz   | 2.25 | 1.3 dB  |
+| Peaking | 2263 Hz  | 3.18 | -1.7 dB |
+| Peaking | 3071 Hz  | 7.28 | 1.6 dB  |
+| Peaking | 9634 Hz  | 6.84 | -4.1 dB |
+| Peaking | 10637 Hz | 1.74 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K3003%20Bass%20Boost%20Filter/AKG%20K3003%20Bass%20Boost%20Filter.png)

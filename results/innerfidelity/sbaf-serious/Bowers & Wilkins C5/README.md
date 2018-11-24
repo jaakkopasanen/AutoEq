@@ -9,8 +9,9 @@ GraphicEQ: 21 -13.9; 23 -13.7; 25 -13.6; 28 -13.3; 31 -13.1; 34 -12.8; 37 -12.5;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.7dB` and instead set Global volume in the UI for both channels to **-6**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bowers & Wilkins C5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-6**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins C5 ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.5dB.
+When using independent subset of filters, apply preamp of **-0.6dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 18 Hz   | 0.59 | -10.2 dB |
-| Peaking | 85 Hz   | 0.28 | -8.9 dB  |
-| Peaking | 717 Hz  | 0.93 | 2.2 dB   |
-| Peaking | 2618 Hz | 0.83 | -2.9 dB  |
+| Peaking | 18 Hz   | 0.6  | -10.2 dB |
+| Peaking | 85 Hz   | 0.29 | -8.9 dB  |
+| Peaking | 711 Hz  | 0.93 | 2.2 dB   |
+| Peaking | 2616 Hz | 0.82 | -2.9 dB  |
 | Peaking | 4901 Hz | 2.75 | -3.6 dB  |
-| Peaking | 1708 Hz | 4.49 | -0.7 dB  |
-| Peaking | 2411 Hz | 1.73 | 0.6 dB   |
-| Peaking | 3066 Hz | 5.9  | -1.0 dB  |
-| Peaking | 9567 Hz | 1.23 | 0.3 dB   |
+| Peaking | 1703 Hz | 4.6  | -0.7 dB  |
+| Peaking | 2443 Hz | 1.72 | 0.6 dB   |
+| Peaking | 3071 Hz | 5.85 | -1.0 dB  |
+| Peaking | 7522 Hz | 8.11 | 0.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bowers%20&%20Wilkins%20C5/Bowers%20&%20Wilkins%20C5.png)

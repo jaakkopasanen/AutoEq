@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.2; 25 4.3; 28 4.3; 31 4.4; 34 4.4; 37 4.3; 41 3.9; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monoprice Monolith M1060 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monoprice Monolith M1060 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Monoprice Monoli
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 29 Hz   | 0.49 | 4.5 dB  |
-| Peaking | 1152 Hz | 0.85 | -0.7 dB |
-| Peaking | 1564 Hz | 3.3  | -3.7 dB |
-| Peaking | 2236 Hz | 0.93 | 3.5 dB  |
+| Peaking | 1153 Hz | 0.84 | -0.7 dB |
+| Peaking | 1559 Hz | 3.3  | -3.7 dB |
+| Peaking | 2238 Hz | 0.93 | 3.5 dB  |
 | Peaking | 5217 Hz | 2.03 | 5.9 dB  |
-| Peaking | 213 Hz  | 2.39 | -0.8 dB |
-| Peaking | 420 Hz  | 3.96 | 1.0 dB  |
-| Peaking | 683 Hz  | 6.89 | -0.8 dB |
-| Peaking | 6556 Hz | 4.3  | 2.7 dB  |
-| Peaking | 7601 Hz | 1.98 | -2.1 dB |
+| Peaking | 214 Hz  | 2.43 | -0.8 dB |
+| Peaking | 420 Hz  | 3.97 | 1.0 dB  |
+| Peaking | 684 Hz  | 7.02 | -0.8 dB |
+| Peaking | 6556 Hz | 4.28 | 2.7 dB  |
+| Peaking | 7593 Hz | 1.97 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monoprice%20Monolith%20M1060/Monoprice%20Monolith%20M1060.png)

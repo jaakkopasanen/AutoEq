@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.3; 25 4.7; 28 4.2; 31 3.8; 34 3.4; 37 3.1; 41 3.3; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.7dB` and instead set Global volume in the UI for both channels to **-66**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-NC732K GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-66**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-NC732K ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Denon AH-NC732K 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 393 Hz  | 0.49 | 4.0 dB  |
 | Peaking | 1362 Hz | 1.96 | -7.7 dB |
 | Peaking | 3121 Hz | 0.64 | 7.1 dB  |
-| Peaking | 1792 Hz | 8.97 | -3.3 dB |
-| Peaking | 2079 Hz | 2.42 | 2.5 dB  |
-| Peaking | 2998 Hz | 1.46 | -1.4 dB |
-| Peaking | 6142 Hz | 1.92 | 5.4 dB  |
-| Peaking | 7557 Hz | 1.41 | -4.5 dB |
+| Peaking | 1788 Hz | 8.97 | -3.3 dB |
+| Peaking | 2083 Hz | 2.43 | 2.4 dB  |
+| Peaking | 3002 Hz | 1.46 | -1.4 dB |
+| Peaking | 6132 Hz | 1.91 | 5.4 dB  |
+| Peaking | 7576 Hz | 1.4  | -4.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-NC732K/Denon%20AH-NC732K.png)

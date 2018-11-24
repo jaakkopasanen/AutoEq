@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Pioneer Monitor 10 II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pioneer Monitor 10 II ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Pioneer Monitor 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 37 Hz    | 0.36 | 6.7 dB   |
 | Peaking | 278 Hz   | 0.69 | -8.7 dB  |
-| Peaking | 2284 Hz  | 2.76 | 3.9 dB   |
-| Peaking | 4441 Hz  | 0.76 | 6.6 dB   |
+| Peaking | 2285 Hz  | 2.76 | 3.9 dB   |
+| Peaking | 4443 Hz  | 0.76 | 6.6 dB   |
 | Peaking | 17768 Hz | 0.8  | -10.5 dB |
-| Peaking | 849 Hz   | 3.2  | 1.3 dB   |
-| Peaking | 1576 Hz  | 6.75 | -1.7 dB  |
-| Peaking | 6340 Hz  | 4.23 | 2.8 dB   |
-| Peaking | 7475 Hz  | 2.77 | -2.8 dB  |
-| Peaking | 12243 Hz | 4.77 | 3.2 dB   |
+| Peaking | 849 Hz   | 3.19 | 1.3 dB   |
+| Peaking | 1574 Hz  | 6.79 | -1.7 dB  |
+| Peaking | 6407 Hz  | 4.19 | 2.9 dB   |
+| Peaking | 7486 Hz  | 2.74 | -2.8 dB  |
+| Peaking | 12245 Hz | 4.76 | 3.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Pioneer%20Monitor%2010%20II/Pioneer%20Monitor%2010%20II.png)

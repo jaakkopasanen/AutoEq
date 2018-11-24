@@ -9,8 +9,9 @@ GraphicEQ: 21 -7.1; 23 -7.1; 25 -7.0; 28 -6.9; 31 -6.7; 34 -6.6; 37 -6.5; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.6dB` and instead set Global volume in the UI for both channels to **-56**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Woodees iESW101V Vintage GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-56**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Woodees iESW101V Vintage ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Woodees iESW101V
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.3dB.
+When using independent subset of filters, apply preamp of **-5.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 0.13 | -6.8 dB |
-| Peaking | 210 Hz  | 0.91 | -2.7 dB |
+| Peaking | 19 Hz   | 0.13 | -6.7 dB |
+| Peaking | 209 Hz  | 0.91 | -2.7 dB |
 | Peaking | 2603 Hz | 2    | -4.3 dB |
-| Peaking | 3590 Hz | 2    | 6.9 dB  |
-| Peaking | 5650 Hz | 7.61 | -8.6 dB |
-| Peaking | 379 Hz  | 1.89 | -0.7 dB |
-| Peaking | 1275 Hz | 0.99 | 2.5 dB  |
-| Peaking | 1622 Hz | 1.84 | -2.7 dB |
-| Peaking | 6345 Hz | 2.44 | -1.9 dB |
-| Peaking | 6748 Hz | 6.59 | 5.1 dB  |
+| Peaking | 3591 Hz | 2    | 6.9 dB  |
+| Peaking | 5656 Hz | 7.61 | -8.6 dB |
+| Peaking | 383 Hz  | 1.93 | -0.7 dB |
+| Peaking | 1270 Hz | 0.97 | 2.5 dB  |
+| Peaking | 1641 Hz | 1.85 | -2.7 dB |
+| Peaking | 6256 Hz | 2.16 | -1.7 dB |
+| Peaking | 6785 Hz | 6.62 | 4.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Woodees%20iESW101V%20Vintage/Woodees%20iESW101V%20Vintage.png)

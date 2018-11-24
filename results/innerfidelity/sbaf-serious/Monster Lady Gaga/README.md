@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.7; 23 -4.9; 25 -5.1; 28 -5.3; 31 -5.3; 34 -5.4; 37 -5.4; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.8dB` and instead set Global volume in the UI for both channels to **-37**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Lady Gaga GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-37**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Lady Gaga ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Monster Lady Gag
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.0dB.
+When using independent subset of filters, apply preamp of **-4.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 51 Hz   | 0.27 | -5.6 dB |
-| Peaking | 2065 Hz | 1.76 | -4.3 dB |
-| Peaking | 3585 Hz | 3.84 | 3.3 dB  |
-| Peaking | 4604 Hz | 4.5  | -2.2 dB |
-| Peaking | 6348 Hz | 4.12 | 4.2 dB  |
-| Peaking | 61 Hz   | 1.78 | 0.6 dB  |
-| Peaking | 172 Hz  | 1.01 | -0.7 dB |
-| Peaking | 686 Hz  | 1.19 | 1.7 dB  |
-| Peaking | 1515 Hz | 3.79 | -1.1 dB |
-| Peaking | 8971 Hz | 3.38 | -0.5 dB |
+| Peaking | 2063 Hz | 1.76 | -4.3 dB |
+| Peaking | 3563 Hz | 3.84 | 3.3 dB  |
+| Peaking | 4564 Hz | 4.5  | -2.2 dB |
+| Peaking | 6304 Hz | 4.12 | 4.2 dB  |
+| Peaking | 62 Hz   | 1.77 | 0.6 dB  |
+| Peaking | 176 Hz  | 1.02 | -0.7 dB |
+| Peaking | 683 Hz  | 1.2  | 1.7 dB  |
+| Peaking | 1514 Hz | 3.76 | -1.1 dB |
+| Peaking | 9085 Hz | 3.66 | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Lady%20Gaga/Monster%20Lady%20Gaga.png)

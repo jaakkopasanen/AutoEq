@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.9; 25 4.7; 28 4.4; 31 4.2; 34 4.0; 37 3.9; 41 3.7; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic T70 250 Ohm sample 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T70 250 Ohm sample 1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 30 Hz    | 0.66 | 4.9 dB   |
-| Peaking | 2506 Hz  | 3.9  | 4.3 dB   |
-| Peaking | 4056 Hz  | 7.69 | 5.9 dB   |
-| Peaking | 5774 Hz  | 3.84 | 6.9 dB   |
-| Peaking | 8647 Hz  | 2.83 | -10.6 dB |
-| Peaking | 70 Hz    | 1.57 | 3.4 dB   |
-| Peaking | 84 Hz    | 0.51 | -1.8 dB  |
-| Peaking | 135 Hz   | 3.16 | -0.6 dB  |
-| Peaking | 415 Hz   | 3.59 | -1.7 dB  |
-| Peaking | 11586 Hz | 6.09 | 2.1 dB   |
+| Peaking | 2505 Hz  | 3.95 | 4.3 dB   |
+| Peaking | 4042 Hz  | 7.24 | 5.7 dB   |
+| Peaking | 5795 Hz  | 3.88 | 6.9 dB   |
+| Peaking | 8664 Hz  | 2.83 | -10.6 dB |
+| Peaking | 70 Hz    | 1.59 | 3.4 dB   |
+| Peaking | 86 Hz    | 0.5  | -1.8 dB  |
+| Peaking | 135 Hz   | 3.06 | -0.6 dB  |
+| Peaking | 416 Hz   | 3.59 | -1.7 dB  |
+| Peaking | 11664 Hz | 6.03 | 2.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T70%20250%20Ohm%20sample%201/Beyerdynamic%20T70%20250%20Ohm%20sample%201.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.1; 25 1.9; 28 1.7; 31 1.6; 34 1.6; 37 1.6; 41 1.6; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Teac CT-H02 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Teac CT-H02 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Teac CT-H02 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |     Q | Gain     |
 |:--------|:--------|:------|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 3004 Hz |  2.09 | 4.6 dB   |
 | Peaking | 5947 Hz |  0.96 | 7.2 dB   |
 | Peaking | 8796 Hz |  2.61 | -11.0 dB |
-| Peaking | 179 Hz  |  2.93 | 1.6 dB   |
-| Peaking | 206 Hz  |  2.31 | -1.4 dB  |
-| Peaking | 1556 Hz |  0.74 | 0.8 dB   |
-| Peaking | 1683 Hz |  2.47 | -1.8 dB  |
-| Peaking | 5320 Hz | 12.37 | -0.8 dB  |
+| Peaking | 180 Hz  |  2.88 | 1.7 dB   |
+| Peaking | 202 Hz  |  2.26 | -1.5 dB  |
+| Peaking | 1538 Hz |  0.74 | 0.8 dB   |
+| Peaking | 1681 Hz |  2.48 | -1.8 dB  |
+| Peaking | 5352 Hz | 12.64 | -0.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Teac%20CT-H02/Teac%20CT-H02.png)

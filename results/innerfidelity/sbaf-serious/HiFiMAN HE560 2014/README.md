@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.0; 25 2.1; 28 2.1; 31 2.2; 34 2.2; 37 2.2; 41 2.2; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.1dB` and instead set Global volume in the UI for both channels to **-31**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiFiMAN HE560 2014 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-31**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE560 2014 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE560 20
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.2dB.
+When using independent subset of filters, apply preamp of **-3.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -26,11 +27,11 @@ When using independent subset of filters, apply preamp of -3.2dB.
 | Peaking | 242 Hz  | 0.78 | -1.8 dB |
 | Peaking | 2063 Hz | 3.04 | 3.3 dB  |
 | Peaking | 4286 Hz | 3.5  | -4.6 dB |
-| Peaking | 8728 Hz | 4.85 | -3.8 dB |
-| Peaking | 431 Hz  | 3.99 | -1.6 dB |
-| Peaking | 569 Hz  | 5.36 | 2.7 dB  |
-| Peaking | 1320 Hz | 6.31 | -1.0 dB |
-| Peaking | 5418 Hz | 8.98 | 2.5 dB  |
-| Peaking | 6523 Hz | 7.63 | -2.1 dB |
+| Peaking | 8729 Hz | 4.85 | -3.8 dB |
+| Peaking | 433 Hz  | 3.98 | -1.6 dB |
+| Peaking | 572 Hz  | 5.36 | 2.7 dB  |
+| Peaking | 1322 Hz | 6.32 | -1.0 dB |
+| Peaking | 5406 Hz | 9    | 2.5 dB  |
+| Peaking | 6508 Hz | 7.66 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE560%202014/HiFiMAN%20HE560%202014.png)

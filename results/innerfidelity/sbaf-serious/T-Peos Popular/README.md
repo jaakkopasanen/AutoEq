@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.4; 23 -8.4; 25 -8.3; 28 -8.2; 31 -8.1; 34 -7.9; 37 -7.8; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.6dB` and instead set Global volume in the UI for both channels to **-55**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`T-Peos Popular GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-55**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `T-Peos Popular ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `T-Peos Popular P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.8dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 26 Hz   | 0.3  | -8.2 dB |
 | Peaking | 134 Hz  | 0.99 | -3.1 dB |
-| Peaking | 2064 Hz | 2.1  | -8.8 dB |
-| Peaking | 3463 Hz | 2.38 | 7.7 dB  |
-| Peaking | 5200 Hz | 5.15 | -7.9 dB |
-| Peaking | 245 Hz  | 2.04 | -0.9 dB |
-| Peaking | 686 Hz  | 1.23 | 2.2 dB  |
-| Peaking | 1548 Hz | 4.38 | -1.6 dB |
-| Peaking | 6841 Hz | 7.13 | 3.2 dB  |
-| Peaking | 9609 Hz | 4.85 | -3.3 dB |
+| Peaking | 2065 Hz | 2.1  | -8.8 dB |
+| Peaking | 3477 Hz | 2.4  | 7.7 dB  |
+| Peaking | 5224 Hz | 5.19 | -7.9 dB |
+| Peaking | 246 Hz  | 2.07 | -0.9 dB |
+| Peaking | 687 Hz  | 1.23 | 2.2 dB  |
+| Peaking | 1551 Hz | 4.42 | -1.7 dB |
+| Peaking | 6860 Hz | 7.02 | 3.2 dB  |
+| Peaking | 9627 Hz | 4.83 | -3.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/T-Peos%20Popular/T-Peos%20Popular.png)

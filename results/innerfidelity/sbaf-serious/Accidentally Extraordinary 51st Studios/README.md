@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.4; 25 4.7; 28 3.7; 31 2.9; 34 2.2; 37 1.6; 41 0.9; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.7dB` and instead set Global volume in the UI for both channels to **-67**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Accidentally Extraordinary 51st Studios GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-67**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Accidentally Extraordinary 51st Studios ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 15 Hz   | 0.67 | 8.2 dB  |
-| Peaking | 423 Hz  | 0.22 | -8.3 dB |
-| Peaking | 516 Hz  | 0.64 | 10.9 dB |
-| Peaking | 3091 Hz | 1.31 | 7.8 dB  |
-| Peaking | 5737 Hz | 3.06 | 5.4 dB  |
-| Peaking | 964 Hz  | 2.9  | -0.8 dB |
-| Peaking | 1078 Hz | 2.34 | 1.4 dB  |
-| Peaking | 1479 Hz | 4.04 | -0.8 dB |
-| Peaking | 6591 Hz | 8.11 | 2.0 dB  |
-| Peaking | 7864 Hz | 2.48 | -1.4 dB |
+| Peaking | 14 Hz   | 0.65 | 8.6 dB  |
+| Peaking | 428 Hz  | 0.22 | -8.8 dB |
+| Peaking | 516 Hz  | 0.61 | 11.4 dB |
+| Peaking | 3071 Hz | 1.29 | 7.9 dB  |
+| Peaking | 5719 Hz | 3.06 | 5.4 dB  |
+| Peaking | 208 Hz  | 1.9  | -0.5 dB |
+| Peaking | 367 Hz  | 5.99 | 0.8 dB  |
+| Peaking | 1134 Hz | 7.39 | 1.0 dB  |
+| Peaking | 1580 Hz | 4.36 | -0.7 dB |
+| Peaking | 8301 Hz | 4.33 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Accidentally%20Extraordinary%2051st%20Studios/Accidentally%20Extraordinary%2051st%20Studios.png)

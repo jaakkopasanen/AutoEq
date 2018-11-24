@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.2; 23 -2.0; 25 -2.6; 28 -3.5; 31 -4.2; 34 -4.8; 37 -5.4; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Spider PowerForce GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Spider PowerForce ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Spider PowerForc
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 477 Hz  | 2.71 | -2.5 dB |
 | Peaking | 3979 Hz | 4.76 | 6.6 dB  |
 | Peaking | 6116 Hz | 5.24 | 6.4 dB  |
-| Peaking | 264 Hz  | 2.03 | -2.0 dB |
-| Peaking | 270 Hz  | 4.45 | 3.6 dB  |
-| Peaking | 1731 Hz | 0.78 | 1.4 dB  |
-| Peaking | 1991 Hz | 1.67 | -2.5 dB |
-| Peaking | 8630 Hz | 2.58 | -0.5 dB |
+| Peaking | 266 Hz  | 4.34 | 3.5 dB  |
+| Peaking | 270 Hz  | 1.92 | -1.9 dB |
+| Peaking | 1716 Hz | 0.77 | 1.4 dB  |
+| Peaking | 1982 Hz | 1.67 | -2.5 dB |
+| Peaking | 8629 Hz | 2.59 | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Spider%20PowerForce/Spider%20PowerForce.png)

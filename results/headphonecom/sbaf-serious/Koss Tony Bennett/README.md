@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.9; 25 3.3; 28 2.6; 31 2.1; 34 1.6; 37 1.2; 41 0.6; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss Tony Bennett GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss Tony Bennett ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Koss Tony Bennet
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 1.68 | 4.4 dB  |
-| Peaking | 84 Hz   | 6.82 | 4.1 dB  |
-| Peaking | 172 Hz  | 1.16 | -5.4 dB |
-| Peaking | 2043 Hz | 0.7  | 2.5 dB  |
-| Peaking | 4939 Hz | 1.67 | 6.1 dB  |
-| Peaking | 259 Hz  | 3.33 | -2.2 dB |
-| Peaking | 358 Hz  | 2.07 | 3.5 dB  |
-| Peaking | 456 Hz  | 1.79 | -1.4 dB |
-| Peaking | 6401 Hz | 5.32 | 3.1 dB  |
-| Peaking | 8187 Hz | 1.6  | -2.0 dB |
+| Peaking | 22 Hz   | 1.66 | 4.5 dB  |
+| Peaking | 84 Hz   | 6.81 | 4.1 dB  |
+| Peaking | 170 Hz  | 1.19 | -5.4 dB |
+| Peaking | 2032 Hz | 0.7  | 2.5 dB  |
+| Peaking | 4940 Hz | 1.67 | 6.1 dB  |
+| Peaking | 58 Hz   | 4.24 | -1.1 dB |
+| Peaking | 251 Hz  | 4.06 | -1.7 dB |
+| Peaking | 352 Hz  | 4.22 | 2.6 dB  |
+| Peaking | 6405 Hz | 5.27 | 3.1 dB  |
+| Peaking | 8153 Hz | 1.57 | -2.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20Tony%20Bennett/Koss%20Tony%20Bennett.png)

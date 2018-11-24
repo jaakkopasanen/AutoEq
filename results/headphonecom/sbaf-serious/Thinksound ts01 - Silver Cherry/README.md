@@ -9,28 +9,29 @@ GraphicEQ: 21 -7.3; 23 -7.4; 25 -7.4; 28 -7.5; 31 -7.7; 34 -7.7; 37 -7.8; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.2dB` and instead set Global volume in the UI for both channels to **-42**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Thinksound ts01 - Silver Cherry GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-42**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Thinksound ts01 - Silver Cherry ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.5dB.
+When using independent subset of filters, apply preamp of **-3.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 36 Hz   | 0.23 | -7.3 dB |
 | Peaking | 154 Hz  | 0.7  | -5.5 dB |
 | Peaking | 313 Hz  | 1.19 | -3.4 dB |
-| Peaking | 3852 Hz | 1.68 | 4.1 dB  |
-| Peaking | 6009 Hz | 4    | -9.5 dB |
-| Peaking | 1199 Hz | 2.07 | 1.3 dB  |
-| Peaking | 2243 Hz | 2.61 | 0.7 dB  |
-| Peaking | 2989 Hz | 6.38 | -1.5 dB |
-| Peaking | 7420 Hz | 4.84 | 1.9 dB  |
-| Peaking | 9206 Hz | 5.95 | -5.6 dB |
+| Peaking | 3843 Hz | 1.68 | 4.1 dB  |
+| Peaking | 5989 Hz | 4    | -9.5 dB |
+| Peaking | 1194 Hz | 2.14 | 1.2 dB  |
+| Peaking | 2591 Hz | 1.52 | 0.9 dB  |
+| Peaking | 2965 Hz | 4.86 | -2.0 dB |
+| Peaking | 7448 Hz | 4.59 | 1.8 dB  |
+| Peaking | 9185 Hz | 5.83 | -5.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Thinksound%20ts01%20-%20Silver%20Cherry/Thinksound%20ts01%20-%20Silver%20Cherry.png)

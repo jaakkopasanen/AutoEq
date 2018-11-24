@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 428 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 428 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 39 Hz    | 0.5  | 6.8 dB  |
+| Peaking | 40 Hz    | 0.5  | 6.8 dB  |
 | Peaking | 462 Hz   | 1.28 | 1.9 dB  |
-| Peaking | 2864 Hz  | 4.23 | 2.0 dB  |
-| Peaking | 4882 Hz  | 1.75 | 5.9 dB  |
+| Peaking | 2864 Hz  | 4.24 | 2.0 dB  |
+| Peaking | 4881 Hz  | 1.75 | 5.9 dB  |
 | Peaking | 24000 Hz | 2.34 | 3.0 dB  |
-| Peaking | 13 Hz    | 2.99 | 1.2 dB  |
-| Peaking | 81 Hz    | 3.91 | 2.2 dB  |
-| Peaking | 128 Hz   | 2.25 | -1.9 dB |
-| Peaking | 742 Hz   | 0.14 | 0.3 dB  |
-| Peaking | 1737 Hz  | 3.43 | -3.1 dB |
+| Peaking | 21 Hz    | 2.37 | 1.7 dB  |
+| Peaking | 83 Hz    | 3.89 | 2.2 dB  |
+| Peaking | 127 Hz   | 2.26 | -1.9 dB |
+| Peaking | 726 Hz   | 0.16 | 0.3 dB  |
+| Peaking | 1736 Hz  | 3.43 | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20428/Sennheiser%20HD%20428.png)

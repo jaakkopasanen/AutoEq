@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.7; 41 4.8; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 235 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 235 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 28 Hz    | 1.4  | 7.1 dB  |
+| Peaking | 29 Hz    | 1.43 | 7.2 dB  |
 | Peaking | 1729 Hz  | 4.22 | -5.2 dB |
 | Peaking | 3227 Hz  | 2.53 | 5.8 dB  |
-| Peaking | 6567 Hz  | 5.88 | 6.5 dB  |
-| Peaking | 9043 Hz  | 3.16 | -7.9 dB |
-| Peaking | 44 Hz    | 2.27 | 1.7 dB  |
-| Peaking | 137 Hz   | 1.08 | -2.4 dB |
-| Peaking | 4108 Hz  | 8.41 | 4.4 dB  |
-| Peaking | 4817 Hz  | 7.21 | -5.7 dB |
-| Peaking | 14675 Hz | 6.86 | -3.4 dB |
+| Peaking | 6538 Hz  | 5.88 | 6.5 dB  |
+| Peaking | 9026 Hz  | 3.16 | -7.9 dB |
+| Peaking | 138 Hz   | 1.57 | -2.5 dB |
+| Peaking | 456 Hz   | 0.9  | -0.5 dB |
+| Peaking | 4112 Hz  | 8.14 | 4.4 dB  |
+| Peaking | 4816 Hz  | 7.08 | -5.7 dB |
+| Peaking | 14732 Hz | 6.85 | -3.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20235/Beyerdynamic%20DT%20235.png)

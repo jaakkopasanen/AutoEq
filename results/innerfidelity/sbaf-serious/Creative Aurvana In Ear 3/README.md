@@ -9,25 +9,26 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.8; 41 5.3; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Creative Aurvana In Ear 3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Creative Aurvana In Ear 3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 29 Hz   | 0.59 | 6.6 dB  |
 | Peaking | 190 Hz  | 0.61 | -3.9 dB |
-| Peaking | 1863 Hz | 2.38 | -2.7 dB |
-| Peaking | 3401 Hz | 2.56 | 6.2 dB  |
-| Peaking | 6078 Hz | 2.83 | -1.6 dB |
-| Peaking | 382 Hz  | 2.37 | -0.5 dB |
-| Peaking | 793 Hz  | 2.47 | 1.0 dB  |
+| Peaking | 1865 Hz | 2.38 | -2.7 dB |
+| Peaking | 3400 Hz | 2.56 | 6.2 dB  |
+| Peaking | 6080 Hz | 2.83 | -1.6 dB |
+| Peaking | 382 Hz  | 2.39 | -0.5 dB |
+| Peaking | 792 Hz  | 2.47 | 1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Creative%20Aurvana%20In%20Ear%203/Creative%20Aurvana%20In%20Ear%203.png)

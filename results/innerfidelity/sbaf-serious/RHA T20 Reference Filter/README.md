@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.1; 23 -5.3; 25 -5.6; 28 -5.8; 31 -6.0; 34 -6.1; 37 -6.1; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.2dB` and instead set Global volume in the UI for both channels to **-51**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`RHA T20 Reference Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-51**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `RHA T20 Reference Filter ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `RHA T20 Referenc
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.3dB.
+When using independent subset of filters, apply preamp of **-5.3dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 41 Hz   | 0.36 | -6.1 dB  |
+| Peaking | 41 Hz   | 0.36 | -6.0 dB  |
 | Peaking | 147 Hz  | 0.9  | -3.2 dB  |
 | Peaking | 2411 Hz | 1.34 | -3.8 dB  |
-| Peaking | 4641 Hz | 4.61 | -10.3 dB |
-| Peaking | 6270 Hz | 4.08 | 6.7 dB   |
-| Peaking | 743 Hz  | 1.65 | 2.0 dB   |
-| Peaking | 1563 Hz | 3.11 | -3.9 dB  |
-| Peaking | 1859 Hz | 4.99 | 4.1 dB   |
-| Peaking | 3140 Hz | 1.83 | -1.6 dB  |
-| Peaking | 3403 Hz | 4.38 | 2.8 dB   |
+| Peaking | 4641 Hz | 4.6  | -10.3 dB |
+| Peaking | 6269 Hz | 4.07 | 6.7 dB   |
+| Peaking | 744 Hz  | 1.65 | 2.0 dB   |
+| Peaking | 1562 Hz | 3.12 | -3.9 dB  |
+| Peaking | 1857 Hz | 5.06 | 4.1 dB   |
+| Peaking | 3150 Hz | 1.86 | -1.7 dB  |
+| Peaking | 3417 Hz | 4.27 | 2.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/RHA%20T20%20Reference%20Filter/RHA%20T20%20Reference%20Filter.png)

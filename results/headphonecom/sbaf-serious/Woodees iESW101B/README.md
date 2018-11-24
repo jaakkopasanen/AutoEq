@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.4; 23 -9.3; 25 -9.3; 28 -9.2; 31 -9.1; 34 -9.0; 37 -8.9; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.7dB` and instead set Global volume in the UI for both channels to **-16**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Woodees iESW101B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-16**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Woodees iESW101B ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Woodees iESW101B
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.0dB.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 29 Hz    | 0.28 | -9.2 dB  |
+| Peaking | 29 Hz    | 0.28 | -9.1 dB  |
 | Peaking | 145 Hz   | 0.92 | -3.8 dB  |
 | Peaking | 2412 Hz  | 2.23 | -7.1 dB  |
-| Peaking | 5776 Hz  | 5.77 | -12.1 dB |
-| Peaking | 21595 Hz | 1.87 | -2.1 dB  |
-| Peaking | 654 Hz   | 1.71 | 2.3 dB   |
-| Peaking | 1593 Hz  | 3.92 | -1.9 dB  |
-| Peaking | 2869 Hz  | 8.31 | -3.0 dB  |
-| Peaking | 3689 Hz  | 4.92 | 4.0 dB   |
-| Peaking | 9830 Hz  | 7.22 | -5.7 dB  |
+| Peaking | 5780 Hz  | 5.77 | -12.1 dB |
+| Peaking | 21594 Hz | 1.87 | -2.1 dB  |
+| Peaking | 655 Hz   | 1.74 | 2.2 dB   |
+| Peaking | 1592 Hz  | 3.93 | -1.9 dB  |
+| Peaking | 2866 Hz  | 8.45 | -3.0 dB  |
+| Peaking | 3687 Hz  | 4.97 | 4.0 dB   |
+| Peaking | 9772 Hz  | 7.25 | -5.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Woodees%20iESW101B/Woodees%20iESW101B.png)

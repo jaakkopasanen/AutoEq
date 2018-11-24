@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.7; 31 5.1; 34 4.6; 37 4.1; 41 3.6; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser RS 220 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 220 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 24 Hz   |  1.45 | 6.3 dB  |
-| Peaking | 45 Hz   |  2.06 | 2.1 dB  |
-| Peaking | 1786 Hz |  2.97 | 6.5 dB  |
-| Peaking | 2425 Hz |  3.05 | -6.0 dB |
-| Peaking | 4508 Hz |  2.75 | 6.9 dB  |
-| Peaking | 70 Hz   |  3.62 | 1.8 dB  |
-| Peaking | 154 Hz  |  0.89 | -1.8 dB |
-| Peaking | 2035 Hz |  1.84 | 0.1 dB  |
-| Peaking | 6409 Hz | 12.14 | 3.4 dB  |
-| Peaking | 9291 Hz |  2.1  | -2.4 dB |
+| Peaking | 24 Hz   |  1.41 | 6.3 dB  |
+| Peaking | 46 Hz   |  2.05 | 2.1 dB  |
+| Peaking | 1787 Hz |  2.97 | 6.5 dB  |
+| Peaking | 2429 Hz |  3.06 | -6.0 dB |
+| Peaking | 4509 Hz |  2.75 | 6.9 dB  |
+| Peaking | 70 Hz   |  3.74 | 1.8 dB  |
+| Peaking | 151 Hz  |  0.91 | -1.8 dB |
+| Peaking | 3928 Hz |  3.64 | 0.3 dB  |
+| Peaking | 6373 Hz | 11.65 | 3.5 dB  |
+| Peaking | 9186 Hz |  1.92 | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20RS%20220/Sennheiser%20RS%20220.png)

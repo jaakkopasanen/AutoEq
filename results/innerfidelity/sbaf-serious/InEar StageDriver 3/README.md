@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.6; 23 -1.6; 25 -1.7; 28 -1.9; 31 -2.0; 34 -2.1; 37 -2.2; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`InEar StageDriver 3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `InEar StageDriver 3 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `InEar StageDrive
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 2120 Hz | 1.96 | -7.6 dB |
 | Peaking | 3540 Hz | 1.34 | 7.9 dB  |
 | Peaking | 6107 Hz | 5.28 | 4.4 dB  |
-| Peaking | 24 Hz   | 1.54 | -0.9 dB |
+| Peaking | 24 Hz   | 1.53 | -0.9 dB |
 | Peaking | 828 Hz  | 2.39 | 1.3 dB  |
-| Peaking | 1560 Hz | 5.55 | -1.0 dB |
-| Peaking | 6760 Hz | 6.89 | 1.4 dB  |
-| Peaking | 7980 Hz | 2.44 | -1.4 dB |
+| Peaking | 1559 Hz | 5.55 | -1.0 dB |
+| Peaking | 6665 Hz | 6.88 | 1.4 dB  |
+| Peaking | 7958 Hz | 2.44 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/InEar%20StageDriver%203/InEar%20StageDriver%203.png)

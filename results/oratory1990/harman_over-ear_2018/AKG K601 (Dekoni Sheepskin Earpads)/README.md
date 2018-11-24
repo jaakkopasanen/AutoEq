@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.9; 25 4.4; 28 3.7; 31 3.1; 34 2.6; 37 2.1; 41 1.6; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K601 (Dekoni Sheepskin Earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K601 (Dekoni Sheepskin Earpads) ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K601 (Dekoni
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 21 Hz    | 1.07 | 5.5 dB  |
-| Peaking | 184 Hz   | 0.86 | -4.7 dB |
-| Peaking | 2443 Hz  | 2.41 | -5.7 dB |
-| Peaking | 3503 Hz  | 2.87 | 8.4 dB  |
+| Peaking | 21 Hz    | 1.08 | 5.5 dB  |
+| Peaking | 186 Hz   | 0.88 | -4.7 dB |
+| Peaking | 2441 Hz  | 2.41 | -5.7 dB |
+| Peaking | 3505 Hz  | 2.87 | 8.4 dB  |
 | Peaking | 18792 Hz | 1.42 | -9.1 dB |
-| Peaking | 732 Hz   | 3.08 | 3.2 dB  |
-| Peaking | 4308 Hz  | 9.2  | 2.2 dB  |
-| Peaking | 5568 Hz  | 5.36 | -2.9 dB |
-| Peaking | 12084 Hz | 6.87 | -3.1 dB |
-| Peaking | 14684 Hz | 3.73 | 2.4 dB  |
+| Peaking | 732 Hz   | 3.09 | 3.2 dB  |
+| Peaking | 4290 Hz  | 9.26 | 2.2 dB  |
+| Peaking | 5543 Hz  | 5.36 | -2.9 dB |
+| Peaking | 12159 Hz | 6.87 | -3.1 dB |
+| Peaking | 14762 Hz | 3.72 | 2.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20K601%20(Dekoni%20Sheepskin%20Earpads)/AKG%20K601%20(Dekoni%20Sheepskin%20Earpads).png)

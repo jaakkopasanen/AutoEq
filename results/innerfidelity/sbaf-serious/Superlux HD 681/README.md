@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.7; 28 4.8; 31 3.8; 34 3.0; 37 2.3; 41 1.6; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Superlux HD 681 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Superlux HD 681 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 23 Hz    | 1.4  | 6.4 dB   |
-| Peaking | 148 Hz   | 1    | -1.9 dB  |
-| Peaking | 2191 Hz  | 1.64 | -6.4 dB  |
-| Peaking | 5289 Hz  | 4.22 | -3.6 dB  |
+| Peaking | 23 Hz    | 1.43 | 6.3 dB   |
+| Peaking | 150 Hz   | 1.01 | -1.9 dB  |
+| Peaking | 2190 Hz  | 1.64 | -6.4 dB  |
+| Peaking | 5285 Hz  | 4.14 | -3.5 dB  |
 | Peaking | 8956 Hz  | 2.78 | -11.1 dB |
-| Peaking | 764 Hz   | 2.49 | 1.2 dB   |
-| Peaking | 11754 Hz | 8.52 | 2.1 dB   |
-| Peaking | 13120 Hz | 5.55 | 1.7 dB   |
-| Peaking | 14753 Hz | 4.67 | -3.0 dB  |
-| Peaking | 19911 Hz | 5.07 | -2.9 dB  |
+| Peaking | 764 Hz   | 2.48 | 1.2 dB   |
+| Peaking | 11840 Hz | 8.79 | 2.2 dB   |
+| Peaking | 13006 Hz | 5.67 | 1.7 dB   |
+| Peaking | 14698 Hz | 4.72 | -3.0 dB  |
+| Peaking | 20029 Hz | 5.19 | -2.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Superlux%20HD%20681/Superlux%20HD%20681.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.4; 25 3.9; 28 3.2; 31 2.6; 34 2.0; 37 1.4; 41 0.8; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Soul Jet Pro ANC Off GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Soul Jet Pro ANC Off ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Soul Jet Pro ANC
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.5dB.
+When using independent subset of filters, apply preamp of **-5.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 1.24 | 5.1 dB   |
-| Peaking | 246 Hz   | 0.66 | -12.1 dB |
-| Peaking | 559 Hz   | 1.57 | 10.4 dB  |
-| Peaking | 2372 Hz  | 5.36 | -2.6 dB  |
-| Peaking | 4491 Hz  | 3.52 | -8.9 dB  |
-| Peaking | 75 Hz    | 4.03 | -0.8 dB  |
-| Peaking | 1467 Hz  | 3.54 | 1.5 dB   |
-| Peaking | 6959 Hz  | 8.86 | 3.7 dB   |
-| Peaking | 9492 Hz  | 6.55 | -2.7 dB  |
-| Peaking | 11304 Hz | 1.37 | -0.2 dB  |
+| Peaking | 22 Hz    | 1.25 | 5.1 dB   |
+| Peaking | 247 Hz   | 0.67 | -12.1 dB |
+| Peaking | 562 Hz   | 1.57 | 10.4 dB  |
+| Peaking | 2370 Hz  | 5.43 | -2.6 dB  |
+| Peaking | 4491 Hz  | 3.51 | -8.9 dB  |
+| Peaking | 74 Hz    | 3.72 | -0.9 dB  |
+| Peaking | 1430 Hz  | 3.69 | 1.5 dB   |
+| Peaking | 6946 Hz  | 9.91 | 3.8 dB   |
+| Peaking | 9469 Hz  | 6.64 | -2.8 dB  |
+| Peaking | 20058 Hz | 3.41 | -5.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Soul%20Jet%20Pro%20ANC%20Off/Soul%20Jet%20Pro%20ANC%20Off.png)

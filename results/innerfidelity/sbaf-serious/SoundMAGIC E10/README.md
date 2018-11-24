@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.6; 23 -1.0; 25 -1.3; 28 -1.8; 31 -2.1; 34 -2.4; 37 -2.7; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`SoundMAGIC E10 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `SoundMAGIC E10 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `SoundMAGIC E10 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 211 Hz  | 0.66 | -4.6 dB |
 | Peaking | 2426 Hz | 0.93 | 6.2 dB  |
 | Peaking | 5167 Hz | 1.94 | 4.9 dB  |
-| Peaking | 1137 Hz | 2.44 | -3.8 dB |
-| Peaking | 1291 Hz | 1.08 | 3.0 dB  |
-| Peaking | 3880 Hz | 1.61 | 4.3 dB  |
-| Peaking | 4408 Hz | 0.67 | -4.1 dB |
-| Peaking | 6185 Hz | 4.25 | 3.6 dB  |
+| Peaking | 1147 Hz | 2.42 | -3.8 dB |
+| Peaking | 1288 Hz | 1.06 | 3.0 dB  |
+| Peaking | 3912 Hz | 1.62 | 4.3 dB  |
+| Peaking | 4323 Hz | 0.65 | -4.1 dB |
+| Peaking | 6148 Hz | 4.22 | 3.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/SoundMAGIC%20E10/SoundMAGIC%20E10.png)

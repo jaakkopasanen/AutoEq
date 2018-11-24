@@ -9,28 +9,29 @@ GraphicEQ: 21 -8.9; 23 -8.9; 25 -8.9; 28 -8.9; 31 -8.8; 34 -8.8; 37 -8.8; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.4dB` and instead set Global volume in the UI for both channels to **-54**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`TDK MT300 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-54**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `TDK MT300 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.5dB.
+When using independent subset of filters, apply preamp of **-5.6dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 61 Hz   | 0.22 | -9.8 dB  |
 | Peaking | 2910 Hz | 1.48 | 6.0 dB   |
-| Peaking | 4825 Hz | 3.56 | -10.1 dB |
-| Peaking | 6331 Hz | 3.89 | 7.3 dB   |
-| Peaking | 7617 Hz | 2.15 | -1.0 dB  |
-| Peaking | 17 Hz   | 1.26 | -2.2 dB  |
-| Peaking | 52 Hz   | 0.93 | 1.4 dB   |
-| Peaking | 197 Hz  | 0.78 | -1.3 dB  |
-| Peaking | 642 Hz  | 1.08 | 2.1 dB   |
-| Peaking | 1399 Hz | 2.63 | -1.6 dB  |
+| Peaking | 4805 Hz | 3.57 | -10.1 dB |
+| Peaking | 6310 Hz | 3.89 | 7.3 dB   |
+| Peaking | 7615 Hz | 2.14 | -1.0 dB  |
+| Peaking | 18 Hz   | 1.12 | -2.4 dB  |
+| Peaking | 54 Hz   | 0.84 | 1.4 dB   |
+| Peaking | 191 Hz  | 0.69 | -1.3 dB  |
+| Peaking | 638 Hz  | 1.05 | 2.1 dB   |
+| Peaking | 1383 Hz | 2.6  | -1.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/TDK%20MT300/TDK%20MT300.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.8; 25 0.8; 28 0.9; 31 1.2; 34 1.5; 37 1.7; 41 1.8; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.0dB` and instead set Global volume in the UI for both channels to **-19**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Mayflower Electronics T50RP Version 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-19**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Mayflower Electronics T50RP Version 2 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Mayflower Electr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.9dB.
+When using independent subset of filters, apply preamp of **-1.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 122 Hz   | 2    | -6.2 dB  |
-| Peaking | 206 Hz   | 0.23 | 5.8 dB   |
-| Peaking | 232 Hz   | 0.73 | -10.4 dB |
-| Peaking | 2718 Hz  | 0.8  | -9.4 dB  |
-| Peaking | 9141 Hz  | 4.98 | -16.1 dB |
-| Peaking | 1507 Hz  | 6.24 | -1.5 dB  |
-| Peaking | 4342 Hz  | 3.35 | -3.1 dB  |
-| Peaking | 5308 Hz  | 2.83 | 3.2 dB   |
-| Peaking | 10121 Hz | 4.92 | -5.3 dB  |
-| Peaking | 11060 Hz | 3.11 | 4.6 dB   |
+| Peaking | 122 Hz   | 1.99 | -6.2 dB  |
+| Peaking | 205 Hz   | 0.23 | 5.8 dB   |
+| Peaking | 234 Hz   | 0.73 | -10.4 dB |
+| Peaking | 2715 Hz  | 0.8  | -9.4 dB  |
+| Peaking | 9138 Hz  | 4.98 | -16.1 dB |
+| Peaking | 675 Hz   | 6.46 | 1.6 dB   |
+| Peaking | 4309 Hz  | 3.34 | -2.7 dB  |
+| Peaking | 5366 Hz  | 3.31 | 3.1 dB   |
+| Peaking | 10081 Hz | 5.59 | -5.1 dB  |
+| Peaking | 11125 Hz | 3.06 | 4.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Mayflower%20Electronics%20T50RP%20Version%202/Mayflower%20Electronics%20T50RP%20Version%202.png)

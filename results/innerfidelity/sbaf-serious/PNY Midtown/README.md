@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.4; 23 -10.4; 25 -10.3; 28 -10.3; 31 -10.3; 34 -10.3; 37 -10.2;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`PNY Midtown GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `PNY Midtown ParametricEQ.txt`.
@@ -18,19 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `PNY Midtown Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |     Q | Gain     |
 |:--------|:--------|:------|:---------|
 | Peaking | 28 Hz   |  0.18 | -10.1 dB |
 | Peaking | 180 Hz  |  0.66 | -4.5 dB  |
-| Peaking | 2236 Hz |  2.26 | -6.1 dB  |
-| Peaking | 3631 Hz |  2.14 | 7.4 dB   |
-| Peaking | 6222 Hz |  5.77 | -9.9 dB  |
-| Peaking | 92 Hz   |  4.11 | -0.4 dB  |
-| Peaking | 379 Hz  |  1.73 | -0.9 dB  |
+| Peaking | 2235 Hz |  2.26 | -6.1 dB  |
+| Peaking | 3630 Hz |  2.14 | 7.4 dB   |
+| Peaking | 6220 Hz |  5.77 | -9.9 dB  |
+| Peaking | 382 Hz  |  1.82 | -0.8 dB  |
 | Peaking | 910 Hz  |  1    | 1.3 dB   |
-| Peaking | 1771 Hz |  4.23 | -1.3 dB  |
-| Peaking | 7599 Hz | 10.65 | 1.2 dB   |
+| Peaking | 1758 Hz |  4.21 | -1.3 dB  |
+| Peaking | 7612 Hz | 10.96 | 1.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/PNY%20Midtown/PNY%20Midtown.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.8; 25 1.9; 28 2.4; 31 2.9; 34 3.2; 37 3.1; 41 2.5; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.3dB` and instead set Global volume in the UI for both channels to **-32**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`MrSpeakers Ether Flow GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-32**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Ether Flow ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Ether
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.2dB.
+When using independent subset of filters, apply preamp of **-3.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 36 Hz   | 0.83 | 3.7 dB  |
-| Peaking | 156 Hz  | 0.45 | -3.8 dB |
-| Peaking | 557 Hz  | 1.12 | 2.8 dB  |
-| Peaking | 1254 Hz | 5.46 | 2.8 dB  |
-| Peaking | 2719 Hz | 5.49 | 1.8 dB  |
-| Peaking | 743 Hz  | 3.87 | 0.2 dB  |
-| Peaking | 1905 Hz | 6.21 | -1.0 dB |
-| Peaking | 5678 Hz | 4.9  | 1.9 dB  |
-| Peaking | 6388 Hz | 6.19 | -2.1 dB |
+| Peaking | 155 Hz  | 0.45 | -3.8 dB |
+| Peaking | 560 Hz  | 1.12 | 2.9 dB  |
+| Peaking | 1257 Hz | 5.41 | 2.7 dB  |
+| Peaking | 2708 Hz | 5.4  | 1.8 dB  |
+| Peaking | 374 Hz  | 3.86 | 0.2 dB  |
+| Peaking | 1898 Hz | 6.13 | -1.0 dB |
+| Peaking | 5670 Hz | 4.91 | 1.9 dB  |
+| Peaking | 6374 Hz | 6.22 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Ether%20Flow/MrSpeakers%20Ether%20Flow.png)

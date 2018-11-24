@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.2; 25 4.3; 28 3.1; 31 2.2; 34 1.4; 37 0.7; 41 -0.2; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.8dB` and instead set Global volume in the UI for both channels to **-67**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser RS 170 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-67**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 170 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.94 | 6.1 dB  |
-| Peaking | 147 Hz  | 0.74 | -6.0 dB |
-| Peaking | 1627 Hz | 6.93 | -4.0 dB |
-| Peaking | 4107 Hz | 0.87 | -9.7 dB |
-| Peaking | 4777 Hz | 2.17 | 14.4 dB |
-| Peaking | 65 Hz   | 3.5  | -1.2 dB |
-| Peaking | 826 Hz  | 3.03 | 3.1 dB  |
-| Peaking | 2295 Hz | 7.07 | -1.5 dB |
-| Peaking | 7507 Hz | 5.53 | 2.3 dB  |
-| Peaking | 9472 Hz | 5.68 | -4.8 dB |
+| Peaking | 23 Hz   | 1.89 | 6.5 dB  |
+| Peaking | 148 Hz  | 0.76 | -6.0 dB |
+| Peaking | 1618 Hz | 6.91 | -4.0 dB |
+| Peaking | 4122 Hz | 0.87 | -9.6 dB |
+| Peaking | 4752 Hz | 2.18 | 14.3 dB |
+| Peaking | 63 Hz   | 2.72 | -1.5 dB |
+| Peaking | 834 Hz  | 2.11 | 3.3 dB  |
+| Peaking | 1952 Hz | 0.18 | -0.6 dB |
+| Peaking | 9019 Hz | 1.25 | 4.1 dB  |
+| Peaking | 9464 Hz | 3.56 | -8.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20170/Sennheiser%20RS%20170.png)

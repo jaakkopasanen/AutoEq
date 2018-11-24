@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.6; 25 5.6; 28 5.5; 31 5.4; 34 5.3; 37 5.2; 41 5.1; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeze LCD-2 Classic GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-2 Classic ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-2 Cla
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 513 Hz  | 3.41 | 0.6 dB  |
 | Peaking | 1654 Hz | 4.08 | -2.1 dB |
 | Peaking | 4022 Hz | 1.12 | 6.8 dB  |
-| Peaking | 16 Hz   | 0.73 | 1.7 dB  |
-| Peaking | 818 Hz  | 5.56 | -1.0 dB |
-| Peaking | 4201 Hz | 3.37 | -2.3 dB |
-| Peaking | 5169 Hz | 1.21 | 2.2 dB  |
-| Peaking | 8338 Hz | 1.6  | -2.0 dB |
+| Peaking | 14 Hz   | 0.78 | 1.8 dB  |
+| Peaking | 809 Hz  | 5.59 | -1.0 dB |
+| Peaking | 4136 Hz | 3.34 | -2.3 dB |
+| Peaking | 5233 Hz | 1.22 | 2.2 dB  |
+| Peaking | 8389 Hz | 1.6  | -2.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-2%20Classic/Audeze%20LCD-2%20Classic.png)

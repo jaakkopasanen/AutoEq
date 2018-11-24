@@ -9,8 +9,9 @@ GraphicEQ: 21 -12.3; 23 -12.3; 25 -12.2; 28 -12.0; 31 -11.9; 34 -11.8; 37 -11.6;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.4dB` and instead set Global volume in the UI for both channels to **-24**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Radius HP-NHR11 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-24**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Radius HP-NHR11 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Radius HP-NHR11 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.2dB.
+When using independent subset of filters, apply preamp of **-2.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 23 Hz    | 0.19 | -11.9 dB |
+| Peaking | 22 Hz    | 0.18 | -12.0 dB |
 | Peaking | 162 Hz   | 0.73 | -4.3 dB  |
 | Peaking | 2004 Hz  | 2.23 | -4.6 dB  |
 | Peaking | 5080 Hz  | 4.08 | -8.3 dB  |
-| Peaking | 6783 Hz  | 5.21 | 3.3 dB   |
-| Peaking | 782 Hz   | 1.95 | 1.6 dB   |
-| Peaking | 1517 Hz  | 5.78 | -1.2 dB  |
-| Peaking | 2625 Hz  | 5.64 | -1.2 dB  |
-| Peaking | 3501 Hz  | 5.65 | 2.4 dB   |
-| Peaking | 10228 Hz | 8.41 | -2.0 dB  |
+| Peaking | 6783 Hz  | 5.19 | 3.3 dB   |
+| Peaking | 781 Hz   | 1.92 | 1.6 dB   |
+| Peaking | 1516 Hz  | 5.76 | -1.2 dB  |
+| Peaking | 2624 Hz  | 5.66 | -1.3 dB  |
+| Peaking | 3500 Hz  | 5.66 | 2.4 dB   |
+| Peaking | 10215 Hz | 8.41 | -2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Radius%20HP-NHR11/Radius%20HP-NHR11.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.6; 25 0.1; 28 -1.8; 31 -3.1; 34 -4.2; 37 -5.0; 41 -5.7; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Phiaton PS 300 NC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Phiaton PS 300 NC ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Phiaton PS 300 N
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.2dB.
 | Peaking | 337 Hz  | 3.04 | -7.4 dB  |
 | Peaking | 1796 Hz | 2.68 | -12.0 dB |
 | Peaking | 4591 Hz | 1.52 | 7.5 dB   |
-| Peaking | 21 Hz   | 3.47 | 5.0 dB   |
+| Peaking | 20 Hz   | 3.52 | 5.2 dB   |
 | Peaking | 440 Hz  | 3.33 | -5.1 dB  |
 | Peaking | 605 Hz  | 2.22 | 7.7 dB   |
-| Peaking | 6272 Hz | 5.95 | 2.9 dB   |
-| Peaking | 8430 Hz | 3.63 | -3.1 dB  |
+| Peaking | 6271 Hz | 5.95 | 2.9 dB   |
+| Peaking | 8428 Hz | 3.64 | -3.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Phiaton%20PS%20300%20NC/Phiaton%20PS%20300%20NC.png)

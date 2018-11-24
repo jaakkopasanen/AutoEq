@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 3.5; 25 2.5; 28 1.3; 31 0.6; 34 0.0; 37 -0.3; 41 -0.5; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.6dB` and instead set Global volume in the UI for both channels to **-56**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-D5000 JMoney Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-56**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D5000 JMoney Pads ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.9dB.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 22 Hz    | 3.34 | 5.4 dB  |
+| Peaking | 20 Hz    | 3.26 | 5.6 dB  |
 | Peaking | 1784 Hz  | 1.81 | -2.3 dB |
-| Peaking | 5336 Hz  | 0.85 | -5.5 dB |
-| Peaking | 13244 Hz | 2.86 | -5.3 dB |
-| Peaking | 21848 Hz | 1.48 | -4.3 dB |
-| Peaking | 153 Hz   | 0.76 | -1.9 dB |
-| Peaking | 2808 Hz  | 7.08 | 1.9 dB  |
-| Peaking | 6317 Hz  | 4.81 | 5.1 dB  |
-| Peaking | 7789 Hz  | 1.17 | -3.7 dB |
-| Peaking | 9777 Hz  | 3.42 | 4.5 dB  |
+| Peaking | 5335 Hz  | 0.85 | -5.5 dB |
+| Peaking | 13247 Hz | 2.83 | -5.3 dB |
+| Peaking | 21751 Hz | 1.62 | -4.2 dB |
+| Peaking | 17 Hz    | 0.13 | -0.5 dB |
+| Peaking | 167 Hz   | 0.93 | -1.8 dB |
+| Peaking | 6259 Hz  | 5.89 | 4.4 dB  |
+| Peaking | 8153 Hz  | 1.42 | -3.4 dB |
+| Peaking | 9830 Hz  | 3.63 | 4.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D5000%20JMoney%20Pads/Denon%20AH-D5000%20JMoney%20Pads.png)

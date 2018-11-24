@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.0; 23 -9.0; 25 -9.0; 28 -9.0; 31 -8.9; 34 -8.9; 37 -8.9; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.6dB` and instead set Global volume in the UI for both channels to **-46**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Turbine Pro Gold GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-46**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Turbine Pro Gold ParametricEQ.txt`.
@@ -18,18 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Monster Turbine 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.0dB.
+When using independent subset of filters, apply preamp of **-5.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 53 Hz   | 0.22 | -9.6 dB |
-| Peaking | 2181 Hz | 1.89 | -5.0 dB |
-| Peaking | 3569 Hz | 3.39 | 4.4 dB  |
-| Peaking | 4647 Hz | 3.45 | -3.9 dB |
-| Peaking | 6366 Hz | 4.97 | 5.4 dB  |
-| Peaking | 199 Hz  | 1.3  | -1.0 dB |
-| Peaking | 728 Hz  | 1.35 | 2.1 dB  |
-| Peaking | 1584 Hz | 3.93 | -1.3 dB |
-| Peaking | 9366 Hz | 7.15 | -1.7 dB |
+| Peaking | 2182 Hz | 1.89 | -5.0 dB |
+| Peaking | 3581 Hz | 3.3  | 4.5 dB  |
+| Peaking | 4637 Hz | 3.23 | -4.0 dB |
+| Peaking | 6361 Hz | 4.9  | 5.5 dB  |
+| Peaking | 16 Hz   | 2.8  | -1.2 dB |
+| Peaking | 200 Hz  | 1.32 | -1.0 dB |
+| Peaking | 727 Hz  | 1.35 | 2.1 dB  |
+| Peaking | 1577 Hz | 3.93 | -1.3 dB |
+| Peaking | 9391 Hz | 7.3  | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Turbine%20Pro%20Gold/Monster%20Turbine%20Pro%20Gold.png)

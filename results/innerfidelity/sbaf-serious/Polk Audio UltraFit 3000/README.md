@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.3; 23 -9.3; 25 -9.3; 28 -9.4; 31 -9.4; 34 -9.5; 37 -9.5; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Polk Audio UltraFit 3000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Polk Audio UltraFit 3000 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Polk Audio Ultra
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 25 Hz   | 0.21 | -8.8 dB |
-| Peaking | 142 Hz  | 0.63 | -6.4 dB |
-| Peaking | 306 Hz  | 1.07 | -3.4 dB |
+| Peaking | 143 Hz  | 0.63 | -6.3 dB |
+| Peaking | 306 Hz  | 1.08 | -3.3 dB |
 | Peaking | 3327 Hz | 2.19 | 6.7 dB  |
-| Peaking | 6077 Hz | 4.63 | 6.0 dB  |
-| Peaking | 1116 Hz | 1.04 | 3.0 dB  |
-| Peaking | 1681 Hz | 0.56 | -2.9 dB |
-| Peaking | 3105 Hz | 1.66 | 3.1 dB  |
-| Peaking | 3280 Hz | 6.73 | -2.6 dB |
-| Peaking | 8252 Hz | 4.97 | -0.7 dB |
+| Peaking | 6080 Hz | 4.63 | 6.0 dB  |
+| Peaking | 1108 Hz | 0.93 | 3.6 dB  |
+| Peaking | 1541 Hz | 0.52 | -3.3 dB |
+| Peaking | 3115 Hz | 1.72 | 3.4 dB  |
+| Peaking | 3298 Hz | 6.12 | -2.9 dB |
+| Peaking | 8246 Hz | 5.46 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Polk%20Audio%20UltraFit%203000/Polk%20Audio%20UltraFit%203000.png)

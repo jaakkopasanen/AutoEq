@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.8; 25 0.6; 28 0.4; 31 0.2; 34 0.1; 37 -0.1; 41 -0.2; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Life Acoustics PreKickstarter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Life Acoustics PreKickstarter ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Life Acoustics P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -28,8 +29,8 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 3390 Hz | 2.48 | 6.5 dB  |
 | Peaking | 5940 Hz | 3.75 | 5.3 dB  |
 | Peaking | 832 Hz  | 3.11 | 0.6 dB  |
-| Peaking | 2260 Hz | 3.1  | -1.0 dB |
-| Peaking | 2703 Hz | 4.39 | 1.0 dB  |
-| Peaking | 8877 Hz | 3.83 | -1.0 dB |
+| Peaking | 2255 Hz | 3.1  | -1.0 dB |
+| Peaking | 2695 Hz | 4.39 | 1.0 dB  |
+| Peaking | 8876 Hz | 3.83 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Life%20Acoustics%20PreKickstarter/Life%20Acoustics%20PreKickstarter.png)

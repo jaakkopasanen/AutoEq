@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.0; 25 -1.1; 28 -1.6; 31 -1.1; 34 -0.4; 37 0.2; 41 0.8; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.4dB` and instead set Global volume in the UI for both channels to **-54**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`PSB M4U 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-54**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `PSB M4U 2 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `PSB M4U 2 Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.7dB.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 69 Hz   | 2.06 | 2.5 dB  |
-| Peaking | 527 Hz  | 0.99 | 4.1 dB  |
+| Peaking | 526 Hz  | 0.99 | 4.1 dB  |
 | Peaking | 1615 Hz | 1.68 | -4.3 dB |
 | Peaking | 2813 Hz | 4.68 | 1.6 dB  |
 | Peaking | 5889 Hz | 3.47 | 5.6 dB  |
-| Peaking | 16 Hz   | 0.63 | 4.4 dB  |
-| Peaking | 26 Hz   | 2.07 | -4.7 dB |
-| Peaking | 136 Hz  | 1.49 | -0.7 dB |
-| Peaking | 781 Hz  | 5.98 | 0.4 dB  |
-| Peaking | 8739 Hz | 5.63 | -1.1 dB |
+| Peaking | 18 Hz   | 0.71 | 4.2 dB  |
+| Peaking | 26 Hz   | 2.07 | -4.5 dB |
+| Peaking | 152 Hz  | 1.47 | -0.6 dB |
+| Peaking | 787 Hz  | 6.25 | 0.4 dB  |
+| Peaking | 8673 Hz | 5.68 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/PSB%20M4U%202/PSB%20M4U%202.png)

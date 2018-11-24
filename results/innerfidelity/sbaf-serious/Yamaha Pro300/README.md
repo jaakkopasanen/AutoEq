@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Yamaha Pro300 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yamaha Pro300 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Yamaha Pro300 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 684 Hz  | 2.75 | 1.6 dB  |
 | Peaking | 1779 Hz | 1.7  | -8.6 dB |
 | Peaking | 3596 Hz | 0.94 | 7.9 dB  |
-| Peaking | 505 Hz  | 9.36 | -1.2 dB |
-| Peaking | 2991 Hz | 3.14 | 1.9 dB  |
-| Peaking | 3733 Hz | 1.42 | -2.9 dB |
-| Peaking | 5429 Hz | 1.14 | 3.4 dB  |
-| Peaking | 8094 Hz | 1.38 | -2.6 dB |
+| Peaking | 504 Hz  | 9.36 | -1.1 dB |
+| Peaking | 2987 Hz | 3.19 | 1.8 dB  |
+| Peaking | 3758 Hz | 1.42 | -2.9 dB |
+| Peaking | 5397 Hz | 1.15 | 3.4 dB  |
+| Peaking | 8111 Hz | 1.39 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20Pro300/Yamaha%20Pro300.png)

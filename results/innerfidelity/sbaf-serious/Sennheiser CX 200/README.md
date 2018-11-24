@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.5; 23 -1.8; 25 -2.1; 28 -2.4; 31 -2.8; 34 -3.0; 37 -3.1; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser CX 200 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser CX 200 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser CX 20
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 12 Hz    |  1.02 | -1.4 dB |
+| Peaking | 13 Hz    |  1.02 | -1.4 dB |
 | Peaking | 70 Hz    |  0.5  | -3.9 dB |
-| Peaking | 171 Hz   |  0.92 | -2.7 dB |
-| Peaking | 1719 Hz  |  2.28 | -3.3 dB |
-| Peaking | 3386 Hz  |  1.77 | 7.0 dB  |
-| Peaking | 311 Hz   |  2.22 | -0.5 dB |
-| Peaking | 743 Hz   |  1.45 | 1.2 dB  |
-| Peaking | 1225 Hz  |  2.53 | -0.7 dB |
-| Peaking | 4059 Hz  | 12.63 | 1.2 dB  |
-| Peaking | 13460 Hz |  0.81 | -1.1 dB |
+| Peaking | 173 Hz   |  0.92 | -2.7 dB |
+| Peaking | 1718 Hz  |  2.28 | -3.3 dB |
+| Peaking | 3385 Hz  |  1.77 | 7.0 dB  |
+| Peaking | 315 Hz   |  2.33 | -0.5 dB |
+| Peaking | 744 Hz   |  1.45 | 1.2 dB  |
+| Peaking | 1222 Hz  |  2.5  | -0.7 dB |
+| Peaking | 4076 Hz  | 12.48 | 1.2 dB  |
+| Peaking | 13463 Hz |  0.81 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20CX%20200/Sennheiser%20CX%20200.png)

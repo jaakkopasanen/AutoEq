@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 3.6; 25 2.9; 28 2.4; 31 2.5; 34 2.8; 37 3.2; 41 3.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser Momentum Wireless Bluetooth GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum Wireless Bluetooth ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 98 Hz   |  0.22 | 4.5 dB  |
-| Peaking | 415 Hz  |  0.72 | 3.8 dB  |
-| Peaking | 1891 Hz |  1.28 | -8.0 dB |
-| Peaking | 3488 Hz |  1.67 | 8.4 dB  |
-| Peaking | 6119 Hz |  5.42 | 5.4 dB  |
-| Peaking | 35 Hz   |  3.09 | -0.4 dB |
-| Peaking | 866 Hz  |  4.72 | -0.4 dB |
-| Peaking | 4673 Hz |  5.67 | 3.5 dB  |
-| Peaking | 4895 Hz | 12.26 | -6.6 dB |
-| Peaking | 8381 Hz |  4.26 | -0.9 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 98 Hz   | 0.22 | 4.5 dB  |
+| Peaking | 415 Hz  | 0.72 | 3.8 dB  |
+| Peaking | 1883 Hz | 1.28 | -8.0 dB |
+| Peaking | 3470 Hz | 1.66 | 8.4 dB  |
+| Peaking | 6147 Hz | 5.42 | 5.4 dB  |
+| Peaking | 33 Hz   | 2.91 | -0.7 dB |
+| Peaking | 858 Hz  | 4.28 | -0.3 dB |
+| Peaking | 4590 Hz | 5.75 | -1.2 dB |
+| Peaking | 5875 Hz | 2.72 | 1.1 dB  |
+| Peaking | 8045 Hz | 2.83 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20Wireless%20Bluetooth/Sennheiser%20Momentum%20Wireless%20Bluetooth.png)

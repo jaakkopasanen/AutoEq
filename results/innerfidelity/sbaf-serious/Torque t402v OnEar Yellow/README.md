@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.0; 23 -8.3; 25 -8.6; 28 -8.9; 31 -9.2; 34 -9.4; 37 -9.6; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Torque t402v OnEar Yellow GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OnEar Yellow ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OnE
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 46 Hz   |  0.28 | -9.3 dB |
 | Peaking | 175 Hz  |  0.82 | -8.4 dB |
 | Peaking | 365 Hz  |  1.87 | -4.4 dB |
-| Peaking | 2422 Hz |  0.92 | -3.0 dB |
+| Peaking | 2422 Hz |  0.91 | -3.0 dB |
 | Peaking | 5945 Hz |  3.81 | 7.5 dB  |
-| Peaking | 520 Hz  |  3.25 | -2.4 dB |
-| Peaking | 852 Hz  |  2.14 | 5.9 dB  |
-| Peaking | 1239 Hz |  2.82 | -5.4 dB |
-| Peaking | 1853 Hz |  5.43 | 2.0 dB  |
-| Peaking | 4512 Hz | 10.58 | -2.2 dB |
+| Peaking | 521 Hz  |  3.36 | -2.4 dB |
+| Peaking | 852 Hz  |  2.11 | 6.0 dB  |
+| Peaking | 1224 Hz |  2.79 | -5.4 dB |
+| Peaking | 1821 Hz |  5.4  | 2.0 dB  |
+| Peaking | 4512 Hz | 10.53 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OnEar%20Yellow/Torque%20t402v%20OnEar%20Yellow.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.2; 25 4.1; 28 4.0; 31 3.9; 34 3.8; 37 3.7; 41 3.7; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Oppo PM2 2014 PM1 Leather Pad GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM2 2014 PM1 Leather Pad ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Oppo PM2 2014 PM
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 228 Hz  | 4.08 | -1.3 dB |
 | Peaking | 1026 Hz | 0.62 | -0.8 dB |
 | Peaking | 4149 Hz | 1.03 | 6.8 dB  |
-| Peaking | 137 Hz  | 2.9  | -0.1 dB |
+| Peaking | 136 Hz  | 2.89 | -0.1 dB |
 | Peaking | 2854 Hz | 4.37 | 1.0 dB  |
-| Peaking | 4285 Hz | 3.94 | -1.2 dB |
+| Peaking | 4284 Hz | 3.95 | -1.2 dB |
 | Peaking | 6275 Hz | 2.61 | 4.3 dB  |
-| Peaking | 7844 Hz | 1.57 | -3.5 dB |
+| Peaking | 7839 Hz | 1.57 | -3.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM2%202014%20PM1%20Leather%20Pad/Oppo%20PM2%202014%20PM1%20Leather%20Pad.png)

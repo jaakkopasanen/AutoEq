@@ -9,28 +9,29 @@ GraphicEQ: 21 -10.6; 23 -10.5; 25 -10.4; 28 -10.3; 31 -10.2; 34 -10.1; 37 -10.0;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.7dB` and instead set Global volume in the UI for both channels to **-27**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Beats Tour GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-27**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Beats Tour ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.6dB.
+When using independent subset of filters, apply preamp of **-2.6dB**.
 
-| Type    | Fc      |    Q | Gain     |
-|:--------|:--------|:-----|:---------|
-| Peaking | 24 Hz   | 0.21 | -10.2 dB |
-| Peaking | 157 Hz  | 0.8  | -3.9 dB  |
-| Peaking | 2367 Hz | 1.94 | -8.6 dB  |
-| Peaking | 3511 Hz | 3.18 | 5.6 dB   |
-| Peaking | 5199 Hz | 6.18 | -12.5 dB |
-| Peaking | 772 Hz  | 1.93 | 1.9 dB   |
-| Peaking | 1637 Hz | 4.44 | -1.3 dB  |
-| Peaking | 5588 Hz | 9.04 | -2.6 dB  |
-| Peaking | 6727 Hz | 4.59 | 3.9 dB   |
-| Peaking | 9458 Hz | 7.55 | -3.0 dB  |
+| Type    | Fc      |     Q | Gain     |
+|:--------|:--------|:------|:---------|
+| Peaking | 24 Hz   |  0.21 | -10.2 dB |
+| Peaking | 157 Hz  |  0.8  | -3.9 dB  |
+| Peaking | 2366 Hz |  1.94 | -8.6 dB  |
+| Peaking | 3496 Hz |  3.18 | 5.6 dB   |
+| Peaking | 5176 Hz |  6.18 | -12.5 dB |
+| Peaking | 772 Hz  |  1.9  | 1.9 dB   |
+| Peaking | 1631 Hz |  4.4  | -1.3 dB  |
+| Peaking | 5564 Hz | 11.95 | -3.2 dB  |
+| Peaking | 6738 Hz |  4.7  | 3.8 dB   |
+| Peaking | 9433 Hz |  7.65 | -3.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Beats%20Tour/Monster%20Beats%20Tour.png)

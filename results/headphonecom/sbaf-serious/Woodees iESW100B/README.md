@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.5; 23 -8.5; 25 -8.5; 28 -8.5; 31 -8.5; 34 -8.4; 37 -8.4; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.2dB` and instead set Global volume in the UI for both channels to **-21**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Woodees iESW100B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-21**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Woodees iESW100B ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Woodees iESW100B
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.1dB.
+When using independent subset of filters, apply preamp of **-1.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -1.1dB.
 | Peaking | 6061 Hz  | 2.54 | -8.5 dB |
 | Peaking | 21764 Hz | 1.86 | -3.4 dB |
 | Peaking | 1194 Hz  | 6.52 | -1.8 dB |
-| Peaking | 2798 Hz  | 6.29 | -3.8 dB |
-| Peaking | 3699 Hz  | 4.56 | 4.2 dB  |
-| Peaking | 7230 Hz  | 5.95 | 2.5 dB  |
-| Peaking | 9239 Hz  | 5.57 | -7.1 dB |
+| Peaking | 2801 Hz  | 6.29 | -3.8 dB |
+| Peaking | 3703 Hz  | 4.56 | 4.2 dB  |
+| Peaking | 7227 Hz  | 5.95 | 2.5 dB  |
+| Peaking | 9235 Hz  | 5.57 | -7.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Woodees%20iESW100B/Woodees%20iESW100B.png)

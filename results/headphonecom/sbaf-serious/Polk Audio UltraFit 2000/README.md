@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Polk Audio UltraFit 2000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Polk Audio UltraFit 2000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 37 Hz    | 0.65 | 7.9 dB   |
-| Peaking | 577 Hz   | 0.51 | 17.5 dB  |
-| Peaking | 873 Hz   | 0.13 | -12.7 dB |
-| Peaking | 2978 Hz  | 1.95 | 10.4 dB  |
-| Peaking | 5288 Hz  | 1.31 | 11.6 dB  |
-| Peaking | 101 Hz   | 3.83 | -0.8 dB  |
-| Peaking | 784 Hz   | 2.97 | 3.2 dB   |
-| Peaking | 880 Hz   | 1.06 | -1.6 dB  |
-| Peaking | 9164 Hz  | 3.96 | -3.8 dB  |
-| Peaking | 10494 Hz | 0.94 | 1.6 dB   |
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 37 Hz    |  0.65 | 7.9 dB   |
+| Peaking | 577 Hz   |  0.51 | 17.7 dB  |
+| Peaking | 872 Hz   |  0.13 | -12.9 dB |
+| Peaking | 2979 Hz  |  1.95 | 10.4 dB  |
+| Peaking | 5281 Hz  |  1.31 | 11.6 dB  |
+| Peaking | 790 Hz   |  2.66 | 4.0 dB   |
+| Peaking | 814 Hz   |  1.19 | -2.3 dB  |
+| Peaking | 6452 Hz  | 10.07 | 1.6 dB   |
+| Peaking | 9177 Hz  |  4.43 | -3.1 dB  |
+| Peaking | 11596 Hz |  1.4  | 1.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Polk%20Audio%20UltraFit%202000/Polk%20Audio%20UltraFit%202000.png)

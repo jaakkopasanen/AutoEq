@@ -9,16 +9,17 @@ GraphicEQ: 21 -2.9; 23 -3.0; 25 -3.2; 28 -3.3; 31 -3.4; 34 -3.5; 37 -3.5; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`EarSonics ES3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `EarSonics ES3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 202 Hz  | 0.5  | 5.1 dB  |
 | Peaking | 1695 Hz | 1.91 | -7.7 dB |
 | Peaking | 3427 Hz | 0.88 | 7.6 dB  |
-| Peaking | 1947 Hz | 6.42 | -0.9 dB |
-| Peaking | 2750 Hz | 2.2  | 1.2 dB  |
-| Peaking | 3443 Hz | 3.13 | -1.5 dB |
-| Peaking | 5999 Hz | 2.8  | 6.6 dB  |
-| Peaking | 6671 Hz | 1.92 | -5.3 dB |
+| Peaking | 1992 Hz | 6.45 | -0.9 dB |
+| Peaking | 2757 Hz | 2.18 | 1.3 dB  |
+| Peaking | 3407 Hz | 3.14 | -1.6 dB |
+| Peaking | 5902 Hz | 2.83 | 6.7 dB  |
+| Peaking | 6814 Hz | 1.95 | -5.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/EarSonics%20ES3/EarSonics%20ES3.png)

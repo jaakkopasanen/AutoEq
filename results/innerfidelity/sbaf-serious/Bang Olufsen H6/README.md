@@ -9,27 +9,29 @@ GraphicEQ: 21 0.0; 23 1.9; 25 1.7; 28 1.4; 31 1.3; 34 1.2; 37 1.2; 41 1.2; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bang Olufsen H6 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bang Olufsen H6 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 0.9  | 2.1 dB  |
+| Peaking | 18 Hz   | 0.88 | 2.0 dB  |
 | Peaking | 85 Hz   | 1.4  | 2.9 dB  |
-| Peaking | 188 Hz  | 1.02 | 2.9 dB  |
-| Peaking | 385 Hz  | 1.23 | 5.1 dB  |
-| Peaking | 4269 Hz | 1.21 | 7.0 dB  |
-| Peaking | 1856 Hz | 1.41 | -2.9 dB |
-| Peaking | 2601 Hz | 2.09 | 3.6 dB  |
-| Peaking | 6211 Hz | 2.71 | 6.9 dB  |
-| Peaking | 6691 Hz | 1.17 | -4.7 dB |
+| Peaking | 190 Hz  | 1.02 | 2.9 dB  |
+| Peaking | 386 Hz  | 1.23 | 5.1 dB  |
+| Peaking | 4270 Hz | 1.21 | 7.0 dB  |
+| Peaking | 638 Hz  | 2.63 | 1.3 dB  |
+| Peaking | 2397 Hz | 0.78 | -5.0 dB |
+| Peaking | 2676 Hz | 1.69 | 6.6 dB  |
+| Peaking | 6237 Hz | 3.2  | 4.2 dB  |
+| Peaking | 8043 Hz | 1.78 | -2.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bang%20Olufsen%20H6/Bang%20Olufsen%20H6.png)

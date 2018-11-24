@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 -0.4; 25 -1.1; 28 -1.6; 31 -1.5; 34 -1.3; 37 -1.1; 41 -0.8
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser PXC 450 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PXC 450 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PXC 4
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 232 Hz  |  0.67 | -2.8 dB |
-| Peaking | 486 Hz  |  4.13 | 1.9 dB  |
-| Peaking | 493 Hz  |  2.02 | -5.1 dB |
-| Peaking | 2110 Hz |  5.97 | 6.2 dB  |
-| Peaking | 4612 Hz |  1.48 | 6.2 dB  |
-| Peaking | 31 Hz   |  2.49 | -1.5 dB |
-| Peaking | 1244 Hz |  3.63 | 1.6 dB  |
-| Peaking | 2673 Hz | 10.65 | -5.1 dB |
-| Peaking | 3211 Hz |  8.7  | 2.6 dB  |
-| Peaking | 8603 Hz |  4.26 | -1.3 dB |
+| Peaking | 229 Hz  |  0.67 | -2.8 dB |
+| Peaking | 480 Hz  |  4.04 | 1.8 dB  |
+| Peaking | 497 Hz  |  2    | -5.0 dB |
+| Peaking | 2103 Hz |  5.94 | 6.2 dB  |
+| Peaking | 4614 Hz |  1.48 | 6.2 dB  |
+| Peaking | 31 Hz   |  2.5  | -1.4 dB |
+| Peaking | 1240 Hz |  3.61 | 1.6 dB  |
+| Peaking | 2663 Hz | 10.67 | -5.1 dB |
+| Peaking | 3191 Hz |  8.49 | 2.6 dB  |
+| Peaking | 8603 Hz |  4.25 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PXC%20450/Sennheiser%20PXC%20450.png)

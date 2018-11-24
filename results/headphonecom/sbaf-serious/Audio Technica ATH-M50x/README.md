@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.4; 23 -2.7; 25 -2.9; 28 -3.2; 31 -3.3; 34 -3.4; 37 -3.4; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-M50x GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M50x ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Audio Technica A
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 34 Hz   | 1.25 | -3.8 dB |
+| Peaking | 33 Hz   | 1.25 | -3.8 dB |
 | Peaking | 139 Hz  | 1.75 | -4.8 dB |
-| Peaking | 340 Hz  | 2.02 | 4.6 dB  |
-| Peaking | 3525 Hz | 5.39 | 5.0 dB  |
-| Peaking | 5654 Hz | 3.15 | 6.3 dB  |
-| Peaking | 55 Hz   | 2.68 | -1.7 dB |
-| Peaking | 79 Hz   | 3.41 | 3.9 dB  |
-| Peaking | 103 Hz  | 6.31 | -2.9 dB |
-| Peaking | 1837 Hz | 2.98 | -3.5 dB |
+| Peaking | 341 Hz  | 2.02 | 4.6 dB  |
+| Peaking | 3524 Hz | 5.22 | 5.0 dB  |
+| Peaking | 5656 Hz | 3.16 | 6.3 dB  |
+| Peaking | 59 Hz   | 2.81 | -1.7 dB |
+| Peaking | 78 Hz   | 3.21 | 3.9 dB  |
+| Peaking | 103 Hz  | 6.09 | -3.1 dB |
+| Peaking | 1838 Hz | 2.96 | -3.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audio%20Technica%20ATH-M50x/Audio%20Technica%20ATH-M50x.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.5; 31 4.8; 34 4.2; 37 3.6; 41 3.1; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 4 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 4 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 4 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 23 Hz   |  1.47 | 6.1 dB  |
-| Peaking | 43 Hz   |  1.98 | 1.8 dB  |
+| Peaking | 24 Hz   |  1.41 | 6.3 dB  |
+| Peaking | 41 Hz   |  2.03 | 1.7 dB  |
 | Peaking | 1837 Hz |  2.19 | -2.9 dB |
-| Peaking | 3597 Hz |  1.94 | 6.9 dB  |
-| Peaking | 6353 Hz |  6.97 | 4.9 dB  |
-| Peaking | 233 Hz  |  0.93 | -2.5 dB |
-| Peaking | 340 Hz  |  0.93 | 2.0 dB  |
-| Peaking | 4463 Hz |  8.83 | 2.8 dB  |
-| Peaking | 4935 Hz | 11.15 | -4.0 dB |
-| Peaking | 8437 Hz |  4.44 | -0.7 dB |
+| Peaking | 3597 Hz |  1.93 | 6.9 dB  |
+| Peaking | 6354 Hz |  7.03 | 4.9 dB  |
+| Peaking | 232 Hz  |  0.93 | -2.5 dB |
+| Peaking | 341 Hz  |  0.92 | 2.0 dB  |
+| Peaking | 4492 Hz |  8.81 | 2.8 dB  |
+| Peaking | 4969 Hz | 11.16 | -3.9 dB |
+| Peaking | 8433 Hz |  4.45 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%204/Sennheiser%20HD%204.png)

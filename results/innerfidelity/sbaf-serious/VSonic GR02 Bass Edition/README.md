@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.4; 23 -5.4; 25 -5.4; 28 -5.3; 31 -5.3; 34 -5.2; 37 -5.2; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`VSonic GR02 Bass Edition GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `VSonic GR02 Bass Edition ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `VSonic GR02 Bass
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 656 Hz  | 1.19 | 1.3 dB  |
 | Peaking | 1702 Hz | 1.46 | -3.7 dB |
 | Peaking | 3116 Hz | 1.09 | 7.4 dB  |
-| Peaking | 3294 Hz | 4.21 | -2.4 dB |
-| Peaking | 3554 Hz | 1.63 | 3.2 dB  |
-| Peaking | 4947 Hz | 0.85 | -2.1 dB |
-| Peaking | 5515 Hz | 5.43 | 2.7 dB  |
+| Peaking | 3298 Hz | 4.31 | -2.3 dB |
+| Peaking | 3559 Hz | 1.6  | 3.1 dB  |
+| Peaking | 4945 Hz | 0.86 | -2.2 dB |
+| Peaking | 5516 Hz | 5.47 | 2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/VSonic%20GR02%20Bass%20Edition/VSonic%20GR02%20Bass%20Edition.png)

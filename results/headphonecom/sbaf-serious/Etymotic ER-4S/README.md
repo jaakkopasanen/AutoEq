@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Etymotic ER-4S GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Etymotic ER-4S ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Etymotic ER-4S P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.3dB.
+When using independent subset of filters, apply preamp of **-5.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 14 Hz    | 0.06 | 5.2 dB  |
-| Peaking | 1688 Hz  | 2.82 | -3.8 dB |
-| Peaking | 2296 Hz  | 2.14 | -8.6 dB |
-| Peaking | 16516 Hz | 3.87 | -7.8 dB |
-| Peaking | 23840 Hz | 4.31 | -3.9 dB |
-| Peaking | 169 Hz   | 1.57 | -1.5 dB |
-| Peaking | 631 Hz   | 1.62 | 2.1 dB  |
-| Peaking | 4586 Hz  | 4.06 | -4.6 dB |
-| Peaking | 6429 Hz  | 1.22 | 4.9 dB  |
-| Peaking | 7974 Hz  | 3    | -8.2 dB |
+| Peaking | 1689 Hz  | 2.81 | -3.8 dB |
+| Peaking | 2297 Hz  | 2.15 | -8.6 dB |
+| Peaking | 16450 Hz | 4.14 | -8.2 dB |
+| Peaking | 23872 Hz | 3.7  | -3.3 dB |
+| Peaking | 167 Hz   | 1.6  | -1.4 dB |
+| Peaking | 628 Hz   | 1.6  | 2.1 dB  |
+| Peaking | 4623 Hz  | 4.01 | -4.6 dB |
+| Peaking | 6501 Hz  | 1.22 | 4.8 dB  |
+| Peaking | 7883 Hz  | 3.01 | -8.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Etymotic%20ER-4S/Etymotic%20ER-4S.png)

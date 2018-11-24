@@ -9,8 +9,9 @@ GraphicEQ: 21 -12.1; 23 -12.0; 25 -12.0; 28 -11.9; 31 -11.8; 34 -11.7; 37 -11.7;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.5dB` and instead set Global volume in the UI for both channels to **-35**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Nocs NS400 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Nocs NS400 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Nocs NS400 Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.6dB.
+When using independent subset of filters, apply preamp of **-3.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 28 Hz    | 0.21 | -11.8 dB |
 | Peaking | 170 Hz   | 0.73 | -4.3 dB  |
-| Peaking | 2433 Hz  | 1.76 | -5.7 dB  |
-| Peaking | 3719 Hz  | 2.65 | 5.4 dB   |
-| Peaking | 6584 Hz  | 3.77 | -7.3 dB  |
-| Peaking | 86 Hz    | 3.71 | -0.4 dB  |
-| Peaking | 327 Hz   | 2.03 | -0.8 dB  |
-| Peaking | 791 Hz   | 1.51 | 1.6 dB   |
-| Peaking | 1564 Hz  | 3.29 | -1.0 dB  |
-| Peaking | 10161 Hz | 8.8  | -2.4 dB  |
+| Peaking | 2432 Hz  | 1.76 | -5.7 dB  |
+| Peaking | 3716 Hz  | 2.65 | 5.4 dB   |
+| Peaking | 6580 Hz  | 3.77 | -7.3 dB  |
+| Peaking | 86 Hz    | 3.73 | -0.4 dB  |
+| Peaking | 327 Hz   | 2.07 | -0.8 dB  |
+| Peaking | 791 Hz   | 1.52 | 1.6 dB   |
+| Peaking | 1564 Hz  | 3.28 | -1.0 dB  |
+| Peaking | 10159 Hz | 9.05 | -2.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Nocs%20NS400/Nocs%20NS400.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Yuin G1A GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yuin G1A ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.4dB.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 33 Hz   | 1.18 | 7.3 dB   |
+| Peaking | 33 Hz   | 1.17 | 7.3 dB   |
 | Peaking | 2242 Hz | 1.8  | -6.2 dB  |
-| Peaking | 3572 Hz | 2.35 | 10.9 dB  |
-| Peaking | 4753 Hz | 3.41 | -11.9 dB |
-| Peaking | 6285 Hz | 6.66 | 7.2 dB   |
-| Peaking | 32 Hz   | 1.71 | -6.5 dB  |
-| Peaking | 35 Hz   | 0.43 | 5.7 dB   |
-| Peaking | 138 Hz  | 0.58 | -4.4 dB  |
-| Peaking | 693 Hz  | 1.19 | 1.1 dB   |
-| Peaking | 9454 Hz | 5.77 | -4.6 dB  |
+| Peaking | 3570 Hz | 2.34 | 10.9 dB  |
+| Peaking | 4744 Hz | 3.39 | -11.9 dB |
+| Peaking | 6275 Hz | 6.65 | 7.2 dB   |
+| Peaking | 33 Hz   | 1.74 | -6.2 dB  |
+| Peaking | 35 Hz   | 0.42 | 5.4 dB   |
+| Peaking | 138 Hz  | 0.57 | -4.4 dB  |
+| Peaking | 698 Hz  | 1.19 | 1.1 dB   |
+| Peaking | 9463 Hz | 5.75 | -4.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Yuin%20G1A/Yuin%20G1A.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.2; 23 -8.2; 25 -8.3; 28 -8.3; 31 -8.3; 34 -8.4; 37 -8.4; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.9dB` and instead set Global volume in the UI for both channels to **-39**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Klipsch Image S4 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-39**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Klipsch Image S4 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Klipsch Image S4
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.7dB.
+When using independent subset of filters, apply preamp of **-4.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 20 Hz    | 0.31 | -7.2 dB |
-| Peaking | 106 Hz   | 0.56 | -6.4 dB |
-| Peaking | 241 Hz   | 0.75 | -4.9 dB |
-| Peaking | 3719 Hz  | 6.79 | 4.6 dB  |
-| Peaking | 14552 Hz | 3.62 | -7.7 dB |
-| Peaking | 905 Hz   | 1.96 | 1.7 dB  |
-| Peaking | 2346 Hz  | 1.16 | -3.9 dB |
-| Peaking | 3267 Hz  | 1.56 | 2.9 dB  |
-| Peaking | 5894 Hz  | 3.89 | -4.7 dB |
-| Peaking | 6843 Hz  | 4.05 | 3.3 dB  |
+| Peaking | 20 Hz    | 0.27 | -7.3 dB |
+| Peaking | 112 Hz   | 0.56 | -6.3 dB |
+| Peaking | 247 Hz   | 0.77 | -4.6 dB |
+| Peaking | 3699 Hz  | 6.84 | 4.6 dB  |
+| Peaking | 14682 Hz | 3.62 | -7.7 dB |
+| Peaking | 904 Hz   | 1.94 | 1.6 dB  |
+| Peaking | 2313 Hz  | 1.17 | -4.3 dB |
+| Peaking | 3247 Hz  | 1.13 | 2.9 dB  |
+| Peaking | 5850 Hz  | 3.58 | -4.6 dB |
+| Peaking | 6877 Hz  | 4.76 | 3.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Klipsch%20Image%20S4/Klipsch%20Image%20S4.png)

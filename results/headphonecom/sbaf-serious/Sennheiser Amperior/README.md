@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.9; 25 4.2; 28 3.5; 31 2.8; 34 2.2; 37 1.6; 41 0.8; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.0dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser Amperior GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Amperior ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.3  | 5.6 dB  |
+| Peaking | 20 Hz   | 1.3  | 5.6 dB  |
 | Peaking | 139 Hz  | 1.05 | -6.5 dB |
-| Peaking | 1889 Hz | 2.7  | -4.9 dB |
-| Peaking | 6340 Hz | 4.73 | 6.4 dB  |
-| Peaking | 8669 Hz | 6.06 | -6.4 dB |
-| Peaking | 30 Hz   | 2.43 | 0.3 dB  |
-| Peaking | 222 Hz  | 3.42 | -2.2 dB |
-| Peaking | 494 Hz  | 1.13 | 2.5 dB  |
-| Peaking | 2833 Hz | 1    | -1.6 dB |
-| Peaking | 3216 Hz | 2.35 | 2.9 dB  |
+| Peaking | 1895 Hz | 2.7  | -4.9 dB |
+| Peaking | 6339 Hz | 4.71 | 6.4 dB  |
+| Peaking | 8665 Hz | 6.01 | -6.4 dB |
+| Peaking | 33 Hz   | 2.45 | 0.5 dB  |
+| Peaking | 224 Hz  | 3.47 | -2.2 dB |
+| Peaking | 497 Hz  | 1.1  | 2.5 dB  |
+| Peaking | 2680 Hz | 0.83 | -1.2 dB |
+| Peaking | 3287 Hz | 2.43 | 2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20Amperior/Sennheiser%20Amperior.png)

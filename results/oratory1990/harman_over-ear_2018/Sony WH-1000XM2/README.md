@@ -9,8 +9,9 @@ GraphicEQ: 21 -6.4; 23 -6.7; 25 -6.9; 28 -7.2; 31 -7.4; 34 -7.6; 37 -7.7; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.2dB` and instead set Global volume in the UI for both channels to **-11**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony WH-1000XM2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-11**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony WH-1000XM2 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony WH-1000XM2 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.2dB.
+When using independent subset of filters, apply preamp of **--0.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of --0.2dB.
 | Peaking | 1994 Hz  | 1.1  | -7.4 dB  |
 | Peaking | 5619 Hz  | 1.77 | -7.7 dB  |
 | Peaking | 13093 Hz | 2.59 | -10.7 dB |
-| Peaking | 957 Hz   | 1.82 | 8.4 dB   |
-| Peaking | 1213 Hz  | 0.78 | -5.8 dB  |
-| Peaking | 2020 Hz  | 2.91 | 4.0 dB   |
-| Peaking | 9984 Hz  | 5.96 | 4.3 dB   |
-| Peaking | 19608 Hz | 1.65 | -8.5 dB  |
+| Peaking | 960 Hz   | 1.8  | 8.5 dB   |
+| Peaking | 1204 Hz  | 0.78 | -5.9 dB  |
+| Peaking | 2015 Hz  | 2.91 | 4.0 dB   |
+| Peaking | 10028 Hz | 5.96 | 4.3 dB   |
+| Peaking | 19728 Hz | 1.65 | -8.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sony%20WH-1000XM2/Sony%20WH-1000XM2.png)

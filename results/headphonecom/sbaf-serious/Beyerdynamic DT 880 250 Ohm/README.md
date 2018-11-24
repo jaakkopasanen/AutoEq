@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.1; 25 4.7; 28 4.1; 31 3.7; 34 3.4; 37 3.1; 41 2.8; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.9dB` and instead set Global volume in the UI for both channels to **-58**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 880 250 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-58**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 880 250 Ohm ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.7dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 0.75 | 5.7 dB  |
-| Peaking | 55 Hz    | 1.35 | 1.6 dB  |
-| Peaking | 205 Hz   | 0.83 | -2.0 dB |
-| Peaking | 7854 Hz  | 1.63 | -5.0 dB |
-| Peaking | 20017 Hz | 1.18 | -9.2 dB |
-| Peaking | 1267 Hz  | 4.18 | 1.1 dB  |
-| Peaking | 6019 Hz  | 4.68 | -5.9 dB |
-| Peaking | 6773 Hz  | 1.72 | 4.5 dB  |
-| Peaking | 8998 Hz  | 2.14 | -4.4 dB |
-| Peaking | 11079 Hz | 2.7  | 3.4 dB  |
+| Peaking | 18 Hz    | 0.75 | 5.6 dB  |
+| Peaking | 55 Hz    | 1.34 | 1.7 dB  |
+| Peaking | 208 Hz   | 0.84 | -1.9 dB |
+| Peaking | 7861 Hz  | 1.63 | -5.0 dB |
+| Peaking | 19813 Hz | 1.18 | -9.1 dB |
+| Peaking | 1262 Hz  | 4.18 | 1.1 dB  |
+| Peaking | 5974 Hz  | 4.74 | -5.9 dB |
+| Peaking | 6788 Hz  | 1.7  | 4.0 dB  |
+| Peaking | 9031 Hz  | 2.59 | -4.2 dB |
+| Peaking | 11024 Hz | 2.54 | 3.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20880%20250%20Ohm/Beyerdynamic%20DT%20880%20250%20Ohm.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -13.9; 23 -14.0; 25 -14.0; 28 -13.9; 31 -13.8; 34 -13.8; 37 -13.7;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.3dB` and instead set Global volume in the UI for both channels to **-42**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Pump Audio Earphones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-42**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pump Audio Earphones ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Pump Audio Earph
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.3dB.
+When using independent subset of filters, apply preamp of **-1.3dB**.
 
 | Type    | Fc      |     Q | Gain     |
 |:--------|:--------|:------|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -1.3dB.
 | Peaking | 2076 Hz |  1.15 | -9.7 dB  |
 | Peaking | 2327 Hz |  0.4  | 6.9 dB   |
 | Peaking | 5025 Hz |  5.16 | -13.5 dB |
-| Peaking | 2724 Hz |  7.45 | -1.1 dB  |
-| Peaking | 3481 Hz |  5.33 | 2.0 dB   |
-| Peaking | 5473 Hz | 12.11 | -2.4 dB  |
-| Peaking | 6493 Hz |  4.01 | 5.7 dB   |
-| Peaking | 7365 Hz |  1.11 | -2.4 dB  |
+| Peaking | 2721 Hz |  7.43 | -1.1 dB  |
+| Peaking | 3475 Hz |  5.32 | 2.0 dB   |
+| Peaking | 5490 Hz | 12.04 | -2.4 dB  |
+| Peaking | 6507 Hz |  4    | 5.7 dB   |
+| Peaking | 7345 Hz |  1.11 | -2.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pump%20Audio%20Earphones/Pump%20Audio%20Earphones.png)

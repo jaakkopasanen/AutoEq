@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 2.1; 25 1.5; 28 0.9; 31 0.4; 34 0.2; 37 0.0; 41 -0.4; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.2dB` and instead set Global volume in the UI for both channels to **-32**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Pioneer SE Master 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-32**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pioneer SE Master 1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.1dB.
+When using independent subset of filters, apply preamp of **-3.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 14 Hz    | 0.65 | 4.2 dB   |
-| Peaking | 122 Hz   | 0.62 | -6.4 dB  |
+| Peaking | 14 Hz    | 0.68 | 4.1 dB   |
+| Peaking | 122 Hz   | 0.6  | -6.4 dB  |
 | Peaking | 278 Hz   | 1.02 | -3.0 dB  |
-| Peaking | 2688 Hz  | 4.62 | -2.9 dB  |
+| Peaking | 2687 Hz  | 4.62 | -2.9 dB  |
 | Peaking | 6112 Hz  | 4.37 | -12.2 dB |
-| Peaking | 479 Hz   | 2.99 | -0.7 dB  |
-| Peaking | 1403 Hz  | 2.27 | 2.8 dB   |
-| Peaking | 2212 Hz  | 5.1  | -1.7 dB  |
-| Peaking | 3805 Hz  | 8.08 | 2.1 dB   |
-| Peaking | 19143 Hz | 1.86 | -12.5 dB |
+| Peaking | 486 Hz   | 3.94 | -0.7 dB  |
+| Peaking | 1401 Hz  | 2.27 | 2.8 dB   |
+| Peaking | 2202 Hz  | 5.21 | -1.7 dB  |
+| Peaking | 3786 Hz  | 8.18 | 2.1 dB   |
+| Peaking | 19117 Hz | 1.87 | -12.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20SE%20Master%201/Pioneer%20SE%20Master%201.png)

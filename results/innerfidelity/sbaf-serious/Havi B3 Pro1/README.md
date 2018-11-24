@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Havi B3 Pro1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Havi B3 Pro1 ParametricEQ.txt`.
@@ -18,16 +19,16 @@ In case of using Peace, click *Import* in Peace GUI and select `Havi B3 Pro1 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 33 Hz    | 0.51 | 6.5 dB  |
-| Peaking | 3033 Hz  | 1.99 | 4.9 dB  |
-| Peaking | 5854 Hz  | 1.56 | 6.6 dB  |
-| Peaking | 7642 Hz  | 3.44 | -2.5 dB |
-| Peaking | 9191 Hz  | 1.2  | -1.1 dB |
-| Peaking | 479 Hz   | 1.06 | -0.7 dB |
-| Peaking | 21268 Hz | 1.99 | -0.1 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 33 Hz   | 0.51 | 6.5 dB  |
+| Peaking | 3033 Hz | 1.99 | 4.9 dB  |
+| Peaking | 5859 Hz | 1.55 | 6.7 dB  |
+| Peaking | 7635 Hz | 3.5  | -2.4 dB |
+| Peaking | 9001 Hz | 1.18 | -1.1 dB |
+| Peaking | 15 Hz   | 1.89 | 1.2 dB  |
+| Peaking | 480 Hz  | 1.06 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Havi%20B3%20Pro1/Havi%20B3%20Pro1.png)

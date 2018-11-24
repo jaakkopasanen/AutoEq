@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.2; 23 -0.1; 25 -0.0; 28 0.1; 31 0.3; 34 0.5; 37 0.8; 41 1.0; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.9dB` and instead set Global volume in the UI for both channels to **-39**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG N90Q Nominal GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-39**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG N90Q Nominal ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG N90Q Nominal
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.2dB.
+When using independent subset of filters, apply preamp of **-3.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -3.2dB.
 | Peaking | 7946 Hz  | 2.4  | -0.4 dB |
 | Peaking | 9279 Hz  | 3.21 | -6.6 dB |
 | Peaking | 394 Hz   | 0.38 | -0.7 dB |
-| Peaking | 1306 Hz  | 1.72 | 1.2 dB  |
-| Peaking | 2463 Hz  | 7.7  | -1.2 dB |
-| Peaking | 12176 Hz | 3.81 | 1.4 dB  |
-| Peaking | 15035 Hz | 3.65 | -3.3 dB |
+| Peaking | 1305 Hz  | 1.72 | 1.2 dB  |
+| Peaking | 2450 Hz  | 7.7  | -1.2 dB |
+| Peaking | 12202 Hz | 3.81 | 1.4 dB  |
+| Peaking | 15067 Hz | 3.65 | -3.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20N90Q%20Nominal/AKG%20N90Q%20Nominal.png)

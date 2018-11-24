@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.3; 31 4.3; 34 3.2; 37 2.2; 41 1.1; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Skullcandy Roc Nation Aviator GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Roc Nation Aviator ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 24 Hz    | 0.97 | 7.2 dB  |
-| Peaking | 150 Hz   | 0.41 | -6.7 dB |
-| Peaking | 1837 Hz  | 2.46 | -4.1 dB |
-| Peaking | 4413 Hz  | 3.23 | -8.6 dB |
-| Peaking | 21933 Hz | 1.49 | -4.8 dB |
-| Peaking | 809 Hz   | 0.84 | -2.3 dB |
-| Peaking | 894 Hz   | 1.75 | 4.6 dB  |
-| Peaking | 3138 Hz  | 8.54 | -1.8 dB |
-| Peaking | 7081 Hz  | 2.19 | 3.7 dB  |
-| Peaking | 9381 Hz  | 2.66 | -7.7 dB |
+| Peaking | 151 Hz   | 0.41 | -6.7 dB |
+| Peaking | 1834 Hz  | 2.46 | -4.1 dB |
+| Peaking | 4460 Hz  | 3.23 | -8.6 dB |
+| Peaking | 21963 Hz | 1.44 | -4.9 dB |
+| Peaking | 820 Hz   | 0.85 | -2.7 dB |
+| Peaking | 898 Hz   | 1.68 | 4.9 dB  |
+| Peaking | 3142 Hz  | 7.38 | -1.8 dB |
+| Peaking | 7059 Hz  | 2.09 | 3.7 dB  |
+| Peaking | 9396 Hz  | 2.66 | -7.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Roc%20Nation%20Aviator/Skullcandy%20Roc%20Nation%20Aviator.png)

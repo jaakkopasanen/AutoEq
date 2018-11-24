@@ -9,28 +9,29 @@ GraphicEQ: 21 -1.3; 23 -2.0; 25 -2.5; 28 -3.0; 31 -3.3; 34 -3.4; 37 -3.4; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.8dB` and instead set Global volume in the UI for both channels to **-27**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`E-Mu Teak Mahogany Cups GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-27**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `E-Mu Teak Mahogany Cups ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.8dB.
+When using independent subset of filters, apply preamp of **-2.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 35 Hz    | 0.9  | -2.8 dB |
-| Peaking | 151 Hz   | 0.58 | -4.1 dB |
-| Peaking | 3086 Hz  | 1.9  | 2.8 dB  |
-| Peaking | 6802 Hz  | 6.76 | 2.5 dB  |
-| Peaking | 9754 Hz  | 6.4  | -3.1 dB |
-| Peaking | 588 Hz   | 4.88 | 0.9 dB  |
-| Peaking | 1688 Hz  | 3.08 | -1.1 dB |
-| Peaking | 3121 Hz  | 1.9  | 1.2 dB  |
-| Peaking | 3239 Hz  | 5.03 | -1.8 dB |
-| Peaking | 13674 Hz | 6.82 | -1.5 dB |
+| Peaking | 35 Hz    | 0.89 | -2.8 dB |
+| Peaking | 150 Hz   | 0.59 | -4.1 dB |
+| Peaking | 3084 Hz  | 1.9  | 2.8 dB  |
+| Peaking | 6799 Hz  | 6.76 | 2.5 dB  |
+| Peaking | 9752 Hz  | 6.4  | -3.1 dB |
+| Peaking | 588 Hz   | 5.11 | 0.9 dB  |
+| Peaking | 1693 Hz  | 3.07 | -1.1 dB |
+| Peaking | 3140 Hz  | 1.87 | 1.2 dB  |
+| Peaking | 3223 Hz  | 5.03 | -1.8 dB |
+| Peaking | 13585 Hz | 6.81 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/E-Mu%20Teak%20Mahogany%20Cups/E-Mu%20Teak%20Mahogany%20Cups.png)

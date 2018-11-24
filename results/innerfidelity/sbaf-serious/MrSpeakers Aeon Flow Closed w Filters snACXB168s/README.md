@@ -9,28 +9,29 @@ GraphicEQ: 21 -0.5; 23 -0.6; 25 -0.6; 28 -0.7; 31 -0.7; 34 -0.7; 37 -0.7; 41 -0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.2dB` and instead set Global volume in the UI for both channels to **-41**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`MrSpeakers Aeon Flow Closed w Filters snACXB168s GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-41**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon Flow Closed w Filters snACXB168s ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.9dB.
+When using independent subset of filters, apply preamp of **-2.9dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 549 Hz  |  0.61 | -1.6 dB |
-| Peaking | 1672 Hz |  1.9  | -4.3 dB |
-| Peaking | 2160 Hz |  0.83 | 4.1 dB  |
-| Peaking | 7063 Hz |  0.84 | 2.6 dB  |
-| Peaking | 7972 Hz |  2.2  | -6.9 dB |
-| Peaking | 35 Hz   |  0.87 | -0.8 dB |
-| Peaking | 80 Hz   |  4.22 | 0.8 dB  |
-| Peaking | 3035 Hz | 13.71 | 1.6 dB  |
-| Peaking | 4717 Hz |  3.28 | -1.5 dB |
-| Peaking | 5105 Hz |  6.77 | 2.5 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 549 Hz  | 0.6  | -1.6 dB |
+| Peaking | 1653 Hz | 1.92 | -4.2 dB |
+| Peaking | 2177 Hz | 0.84 | 4.0 dB  |
+| Peaking | 7039 Hz | 0.84 | 2.6 dB  |
+| Peaking | 7977 Hz | 2.2  | -6.9 dB |
+| Peaking | 34 Hz   | 1.17 | -0.8 dB |
+| Peaking | 161 Hz  | 9.04 | 1.1 dB  |
+| Peaking | 4477 Hz | 5.6  | -2.5 dB |
+| Peaking | 5027 Hz | 2.56 | 2.4 dB  |
+| Peaking | 5931 Hz | 3.01 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20Flow%20Closed%20w%20Filters%20snACXB168s/MrSpeakers%20Aeon%20Flow%20Closed%20w%20Filters%20snACXB168s.png)

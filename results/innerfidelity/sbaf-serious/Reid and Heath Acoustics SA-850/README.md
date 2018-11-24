@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.9; 25 5.5; 28 4.4; 31 3.4; 34 2.6; 37 2.0; 41 1.4; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Reid and Heath Acoustics SA-850 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Reid and Heath Acoustics SA-850 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Reid and Heath A
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.2dB.
 | Peaking | 548 Hz  | 1.82 | -4.7 dB |
 | Peaking | 1562 Hz | 2.93 | -5.4 dB |
 | Peaking | 3177 Hz | 1.97 | 7.4 dB  |
-| Peaking | 866 Hz  | 1.93 | -1.2 dB |
-| Peaking | 928 Hz  | 4.44 | 2.9 dB  |
-| Peaking | 4384 Hz | 3.6  | 8.9 dB  |
-| Peaking | 5069 Hz | 1.93 | -7.3 dB |
-| Peaking | 9040 Hz | 4.98 | 0.5 dB  |
+| Peaking | 868 Hz  | 1.93 | -1.2 dB |
+| Peaking | 929 Hz  | 4.44 | 3.0 dB  |
+| Peaking | 4378 Hz | 3.61 | 8.9 dB  |
+| Peaking | 5079 Hz | 1.93 | -7.3 dB |
+| Peaking | 9056 Hz | 4.89 | 0.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Reid%20and%20Heath%20Acoustics%20SA-850/Reid%20and%20Heath%20Acoustics%20SA-850.png)

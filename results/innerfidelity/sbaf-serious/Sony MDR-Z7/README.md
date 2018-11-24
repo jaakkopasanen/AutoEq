@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.9; 25 -0.2; 28 -1.5; 31 -2.4; 34 -3.0; 37 -3.4; 41 -3.6;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.5dB` and instead set Global volume in the UI for both channels to **-45**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-Z7 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-45**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-Z7 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-Z7 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.1dB.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 1.43 | 5.3 dB  |
-| Peaking | 39 Hz   | 0.56 | -4.2 dB |
-| Peaking | 172 Hz  | 1.15 | -4.5 dB |
+| Peaking | 20 Hz   | 1.48 | 5.7 dB  |
+| Peaking | 39 Hz   | 0.53 | -4.1 dB |
+| Peaking | 173 Hz  | 1.15 | -4.5 dB |
 | Peaking | 1341 Hz | 3.46 | 5.4 dB  |
 | Peaking | 2333 Hz | 3.66 | -5.5 dB |
-| Peaking | 490 Hz  | 2.19 | 1.5 dB  |
-| Peaking | 1101 Hz | 0.22 | -0.5 dB |
-| Peaking | 3676 Hz | 6.45 | 4.0 dB  |
-| Peaking | 5639 Hz | 4.54 | 3.8 dB  |
-| Peaking | 9088 Hz | 6.82 | -1.9 dB |
+| Peaking | 490 Hz  | 2.2  | 1.5 dB  |
+| Peaking | 1138 Hz | 0.22 | -0.5 dB |
+| Peaking | 3678 Hz | 6.51 | 4.0 dB  |
+| Peaking | 5634 Hz | 4.57 | 3.8 dB  |
+| Peaking | 9072 Hz | 7.69 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-Z7/Sony%20MDR-Z7.png)

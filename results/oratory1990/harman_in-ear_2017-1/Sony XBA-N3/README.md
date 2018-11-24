@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.2; 23 -4.4; 25 -4.5; 28 -4.7; 31 -4.8; 34 -4.8; 37 -4.9; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.9dB` and instead set Global volume in the UI for both channels to **-58**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony XBA-N3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-58**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony XBA-N3 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony XBA-N3 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.0dB.
+When using independent subset of filters, apply preamp of **-6.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.0dB.
 | Peaking | 3016 Hz  | 3.1  | 3.9 dB   |
 | Peaking | 9286 Hz  | 0.38 | 7.5 dB   |
 | Peaking | 16448 Hz | 1.05 | -28.6 dB |
-| Peaking | 1306 Hz  | 4.84 | -1.8 dB  |
-| Peaking | 6133 Hz  | 4.2  | 3.4 dB   |
-| Peaking | 9429 Hz  | 1.33 | -3.3 dB  |
-| Peaking | 12385 Hz | 2.53 | 5.7 dB   |
-| Peaking | 14864 Hz | 5.07 | -4.2 dB  |
+| Peaking | 1287 Hz  | 4.84 | -1.8 dB  |
+| Peaking | 6108 Hz  | 4.2  | 3.4 dB   |
+| Peaking | 9424 Hz  | 1.33 | -3.3 dB  |
+| Peaking | 12436 Hz | 2.53 | 5.7 dB   |
+| Peaking | 14935 Hz | 5.07 | -4.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sony%20XBA-N3/Sony%20XBA-N3.png)

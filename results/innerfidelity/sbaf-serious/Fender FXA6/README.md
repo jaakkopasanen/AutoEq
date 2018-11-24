@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.2; 23 -5.2; 25 -5.1; 28 -5.1; 31 -5.0; 34 -5.0; 37 -4.9; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Fender FXA6 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fender FXA6 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Fender FXA6 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 23 Hz   | 0.14 | -4.9 dB |
-| Peaking | 181 Hz  | 0.74 | -4.1 dB |
-| Peaking | 2010 Hz | 2.58 | -7.8 dB |
-| Peaking | 3126 Hz | 3.54 | 5.2 dB  |
-| Peaking | 5640 Hz | 2.78 | 6.8 dB  |
-| Peaking | 361 Hz  | 2.16 | -0.8 dB |
-| Peaking | 790 Hz  | 1.43 | 1.4 dB  |
-| Peaking | 1564 Hz | 5.07 | -1.0 dB |
-| Peaking | 6576 Hz | 7.42 | 2.3 dB  |
-| Peaking | 7613 Hz | 2.17 | -1.3 dB |
+| Peaking | 23 Hz   | 0.15 | -4.9 dB |
+| Peaking | 182 Hz  | 0.74 | -4.1 dB |
+| Peaking | 2011 Hz | 2.58 | -7.8 dB |
+| Peaking | 3127 Hz | 3.54 | 5.2 dB  |
+| Peaking | 5644 Hz | 2.78 | 6.8 dB  |
+| Peaking | 360 Hz  | 1.99 | -0.8 dB |
+| Peaking | 789 Hz  | 1.42 | 1.4 dB  |
+| Peaking | 1552 Hz | 5.05 | -1.0 dB |
+| Peaking | 6583 Hz | 7.49 | 2.3 dB  |
+| Peaking | 7627 Hz | 2.2  | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fender%20FXA6/Fender%20FXA6.png)

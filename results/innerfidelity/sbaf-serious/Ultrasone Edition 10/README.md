@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.6; 34 4.8; 37 4.1; 41 3.3; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultrasone Edition 10 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Edition 10 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Editio
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 3918 Hz  | 5.08 | -6.1 dB  |
 | Peaking | 6283 Hz  | 8.44 | -11.2 dB |
 | Peaking | 15556 Hz | 2.86 | -9.4 dB  |
-| Peaking | 134 Hz   | 1.21 | -1.5 dB  |
+| Peaking | 135 Hz   | 1.22 | -1.5 dB  |
 | Peaking | 736 Hz   | 0.49 | 2.4 dB   |
-| Peaking | 1334 Hz  | 1.2  | -4.2 dB  |
-| Peaking | 1850 Hz  | 6.51 | 3.9 dB   |
+| Peaking | 1338 Hz  | 1.2  | -4.2 dB  |
+| Peaking | 1867 Hz  | 6.5  | 3.9 dB   |
 | Peaking | 9446 Hz  | 1.09 | 0.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20Edition%2010/Ultrasone%20Edition%2010.png)

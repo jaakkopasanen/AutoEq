@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.4; 23 -3.6; 25 -3.7; 28 -3.9; 31 -4.0; 34 -4.1; 37 -4.2; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.5dB` and instead set Global volume in the UI for both channels to **-55**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SE215 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-55**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SE215 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Shure SE215 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.1dB.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -5.1dB.
 | Peaking | 10742 Hz | 0.68 | 6.9 dB   |
 | Peaking | 16953 Hz | 0.55 | -14.9 dB |
 | Peaking | 797 Hz   | 3.07 | 1.3 dB   |
-| Peaking | 2039 Hz  | 2.17 | -2.1 dB  |
-| Peaking | 5054 Hz  | 3.7  | -10.2 dB |
-| Peaking | 6283 Hz  | 1.37 | 11.2 dB  |
-| Peaking | 7657 Hz  | 1.71 | -7.4 dB  |
+| Peaking | 2038 Hz  | 2.19 | -2.1 dB  |
+| Peaking | 5041 Hz  | 3.74 | -10.2 dB |
+| Peaking | 6275 Hz  | 1.38 | 11.1 dB  |
+| Peaking | 7678 Hz  | 1.72 | -7.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Shure%20SE215/Shure%20SE215.png)

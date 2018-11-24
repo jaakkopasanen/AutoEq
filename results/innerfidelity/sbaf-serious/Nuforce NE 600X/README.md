@@ -9,8 +9,9 @@ GraphicEQ: 21 -13.2; 23 -13.1; 25 -13.0; 28 -12.8; 31 -12.6; 34 -12.3; 37 -12.1;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.5dB` and instead set Global volume in the UI for both channels to **-44**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Nuforce NE 600X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Nuforce NE 600X ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Nuforce NE 600X 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.8dB.
+When using independent subset of filters, apply preamp of **-4.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 20 Hz    | 0.18 | -12.8 dB |
-| Peaking | 161 Hz   | 0.74 | -3.9 dB  |
-| Peaking | 2417 Hz  | 1.65 | -5.1 dB  |
-| Peaking | 4699 Hz  | 4.37 | -6.8 dB  |
-| Peaking | 6408 Hz  | 4.81 | 5.7 dB   |
-| Peaking | 789 Hz   | 1.97 | 1.7 dB   |
-| Peaking | 1617 Hz  | 4.53 | -1.2 dB  |
-| Peaking | 10127 Hz | 5.93 | -2.6 dB  |
-| Peaking | 12956 Hz | 1.01 | 0.8 dB   |
-| Peaking | 15185 Hz | 2.26 | -2.0 dB  |
+| Peaking | 21 Hz    | 0.19 | -12.8 dB |
+| Peaking | 160 Hz   | 0.73 | -4.1 dB  |
+| Peaking | 2417 Hz  | 1.64 | -5.1 dB  |
+| Peaking | 4692 Hz  | 4.36 | -6.8 dB  |
+| Peaking | 6390 Hz  | 4.8  | 5.7 dB   |
+| Peaking | 788 Hz   | 1.94 | 1.7 dB   |
+| Peaking | 1617 Hz  | 4.52 | -1.2 dB  |
+| Peaking | 9994 Hz  | 6.04 | -2.6 dB  |
+| Peaking | 12781 Hz | 1.02 | 0.8 dB   |
+| Peaking | 15567 Hz | 2.32 | -2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Nuforce%20NE%20600X/Nuforce%20NE%20600X.png)

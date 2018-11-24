@@ -9,8 +9,9 @@ GraphicEQ: 21 -7.4; 23 -7.8; 25 -8.2; 28 -8.6; 31 -9.0; 34 -9.3; 37 -9.5; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.7dB` and instead set Global volume in the UI for both channels to **-7**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG Q350 Quincy Jones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-7**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG Q350 Quincy Jones ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG Q350 Quincy 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.4dB.
+When using independent subset of filters, apply preamp of **--0.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 45 Hz    | 0.33 | -9.1 dB  |
 | Peaking | 144 Hz   | 0.72 | -5.7 dB  |
-| Peaking | 296 Hz   | 1.22 | -3.5 dB  |
+| Peaking | 296 Hz   | 1.23 | -3.5 dB  |
 | Peaking | 5925 Hz  | 1.48 | -11.0 dB |
-| Peaking | 21553 Hz | 1.92 | -6.9 dB  |
-| Peaking | 2784 Hz  | 1.94 | 2.8 dB   |
-| Peaking | 7259 Hz  | 3.39 | 7.5 dB   |
-| Peaking | 9476 Hz  | 1.54 | -19.7 dB |
-| Peaking | 10527 Hz | 1.34 | 14.4 dB  |
-| Peaking | 15496 Hz | 6.05 | -3.8 dB  |
+| Peaking | 21556 Hz | 1.91 | -6.9 dB  |
+| Peaking | 2779 Hz  | 1.93 | 2.8 dB   |
+| Peaking | 7251 Hz  | 3.35 | 7.5 dB   |
+| Peaking | 9437 Hz  | 1.52 | -19.8 dB |
+| Peaking | 10560 Hz | 1.32 | 14.4 dB  |
+| Peaking | 15518 Hz | 5.99 | -3.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20Q350%20Quincy%20Jones/AKG%20Q350%20Quincy%20Jones.png)

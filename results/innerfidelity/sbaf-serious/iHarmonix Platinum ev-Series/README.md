@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.0; 23 -10.0; 25 -10.0; 28 -10.0; 31 -10.0; 34 -10.0; 37 -10.0;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-44**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`iHarmonix Platinum ev-Series GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `iHarmonix Platinum ev-Series ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `iHarmonix Platin
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.9dB.
+When using independent subset of filters, apply preamp of **-4.0dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 30 Hz   | 0.16 | -9.8 dB  |
+| Peaking | 30 Hz   | 0.15 | -9.8 dB  |
 | Peaking | 198 Hz  | 0.58 | -4.7 dB  |
-| Peaking | 2670 Hz | 1.33 | -9.8 dB  |
-| Peaking | 3375 Hz | 1.13 | 11.4 dB  |
-| Peaking | 4952 Hz | 4.26 | -11.7 dB |
-| Peaking | 394 Hz  | 2.55 | -0.7 dB  |
-| Peaking | 839 Hz  | 1.87 | 1.1 dB   |
-| Peaking | 1615 Hz | 3.58 | -0.9 dB  |
-| Peaking | 6643 Hz | 6.64 | 3.2 dB   |
-| Peaking | 8424 Hz | 5.38 | -2.7 dB  |
+| Peaking | 2665 Hz | 1.34 | -9.8 dB  |
+| Peaking | 3379 Hz | 1.12 | 11.4 dB  |
+| Peaking | 4961 Hz | 4.27 | -11.7 dB |
+| Peaking | 392 Hz  | 2.47 | -0.7 dB  |
+| Peaking | 839 Hz  | 1.88 | 1.1 dB   |
+| Peaking | 1611 Hz | 3.67 | -0.9 dB  |
+| Peaking | 6669 Hz | 6.61 | 3.2 dB   |
+| Peaking | 8460 Hz | 5.27 | -2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/iHarmonix%20Platinum%20ev-Series/iHarmonix%20Platinum%20ev-Series.png)

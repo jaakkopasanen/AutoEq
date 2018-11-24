@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-L300 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-L300 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Stax SR-L300 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 8834 Hz | 4.64 | -5.7 dB |
 | Peaking | 8858 Hz | 2.04 | 1.5 dB  |
 | Peaking | 636 Hz  | 5.01 | 0.8 dB  |
-| Peaking | 1351 Hz | 3.64 | -2.3 dB |
-| Peaking | 1908 Hz | 2.56 | 3.5 dB  |
-| Peaking | 2634 Hz | 1.38 | -2.5 dB |
-| Peaking | 3374 Hz | 3.51 | 2.3 dB  |
+| Peaking | 1346 Hz | 3.64 | -2.3 dB |
+| Peaking | 1907 Hz | 2.56 | 3.5 dB  |
+| Peaking | 2656 Hz | 1.38 | -2.5 dB |
+| Peaking | 3356 Hz | 3.51 | 2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-L300/Stax%20SR-L300.png)

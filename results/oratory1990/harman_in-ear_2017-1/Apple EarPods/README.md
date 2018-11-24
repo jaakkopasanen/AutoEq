@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Apple EarPods GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Apple EarPods ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Apple EarPods Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.2dB.
+When using independent subset of filters, apply preamp of **-4.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -26,11 +27,11 @@ When using independent subset of filters, apply preamp of -4.2dB.
 | Peaking | 2103 Hz  | 1.27 | -7.2 dB  |
 | Peaking | 5645 Hz  | 4.35 | -6.8 dB  |
 | Peaking | 15026 Hz | 2.86 | -14.8 dB |
-| Peaking | 18720 Hz | 0.89 | -8.5 dB  |
-| Peaking | 108 Hz   | 0.27 | 5.9 dB   |
-| Peaking | 143 Hz   | 0.52 | -7.6 dB  |
-| Peaking | 7504 Hz  | 3.6  | 4.1 dB   |
-| Peaking | 10644 Hz | 1.1  | -5.5 dB  |
-| Peaking | 11594 Hz | 3.39 | 9.5 dB   |
+| Peaking | 18719 Hz | 0.89 | -8.5 dB  |
+| Peaking | 107 Hz   | 0.25 | 5.4 dB   |
+| Peaking | 143 Hz   | 0.54 | -7.0 dB  |
+| Peaking | 7519 Hz  | 3.61 | 4.1 dB   |
+| Peaking | 10630 Hz | 1.09 | -5.2 dB  |
+| Peaking | 11567 Hz | 3.47 | 9.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Apple%20EarPods/Apple%20EarPods.png)

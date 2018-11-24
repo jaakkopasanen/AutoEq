@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.9; 25 3.7; 28 3.4; 31 3.2; 34 3.0; 37 2.8; 41 2.5; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Brainwavz R3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Brainwavz R3 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Brainwavz R3 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 0.35 | 4.1 dB  |
+| Peaking | 18 Hz    | 0.34 | 4.1 dB  |
 | Peaking | 199 Hz   | 0.58 | -3.4 dB |
-| Peaking | 2043 Hz  | 2.09 | -6.2 dB |
-| Peaking | 3039 Hz  | 1.18 | 7.8 dB  |
-| Peaking | 5714 Hz  | 3.16 | 4.7 dB  |
-| Peaking | 807 Hz   | 2.96 | 0.7 dB  |
-| Peaking | 1513 Hz  | 6.52 | -0.5 dB |
-| Peaking | 6566 Hz  | 8.13 | 1.9 dB  |
-| Peaking | 7723 Hz  | 3.6  | -1.4 dB |
-| Peaking | 10020 Hz | 1.74 | -0.5 dB |
+| Peaking | 2045 Hz  | 2.1  | -6.2 dB |
+| Peaking | 3040 Hz  | 1.18 | 7.8 dB  |
+| Peaking | 5715 Hz  | 3.16 | 4.7 dB  |
+| Peaking | 806 Hz   | 3.02 | 0.7 dB  |
+| Peaking | 1482 Hz  | 6.6  | -0.5 dB |
+| Peaking | 6598 Hz  | 8.14 | 1.9 dB  |
+| Peaking | 7740 Hz  | 3.63 | -1.4 dB |
+| Peaking | 10032 Hz | 1.75 | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Brainwavz%20R3/Brainwavz%20R3.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.2; 25 4.0; 28 3.7; 31 3.5; 34 3.3; 37 3.1; 41 2.9; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-EX1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-EX1000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 27 Hz   | 0.98 | 4.3 dB  |
+| Peaking | 26 Hz   | 1    | 4.4 dB  |
 | Peaking | 1834 Hz | 1.91 | -4.9 dB |
-| Peaking | 3441 Hz | 2.13 | 7.9 dB  |
-| Peaking | 4900 Hz | 4.61 | -3.2 dB |
-| Peaking | 5111 Hz | 5.04 | -5.5 dB |
-| Peaking | 60 Hz   | 1.54 | 1.3 dB  |
+| Peaking | 3434 Hz | 2.13 | 7.9 dB  |
+| Peaking | 4850 Hz | 4.68 | -3.3 dB |
+| Peaking | 5106 Hz | 5.29 | -5.6 dB |
+| Peaking | 59 Hz   | 1.44 | 1.3 dB  |
 | Peaking | 210 Hz  | 0.61 | -2.0 dB |
-| Peaking | 755 Hz  | 1.92 | 1.5 dB  |
-| Peaking | 6547 Hz | 5.21 | 2.8 dB  |
-| Peaking | 8098 Hz | 5.13 | -5.7 dB |
+| Peaking | 757 Hz  | 1.92 | 1.5 dB  |
+| Peaking | 6584 Hz | 5.44 | 2.7 dB  |
+| Peaking | 8129 Hz | 5.16 | -5.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-EX1000/Sony%20MDR-EX1000.png)

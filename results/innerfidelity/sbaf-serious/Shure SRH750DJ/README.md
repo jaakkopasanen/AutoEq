@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.5; 41 4.8; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SRH750DJ GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SRH750DJ ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Shure SRH750DJ P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 8920 Hz | 4.46 | -7.8 dB |
 | Peaking | 563 Hz  | 3.36 | -1.0 dB |
 | Peaking | 922 Hz  | 2.58 | 1.1 dB  |
-| Peaking | 2630 Hz | 5.36 | -1.8 dB |
-| Peaking | 3670 Hz | 2.53 | 2.8 dB  |
-| Peaking | 4442 Hz | 7.84 | -4.5 dB |
+| Peaking | 2607 Hz | 5.36 | -1.8 dB |
+| Peaking | 3653 Hz | 2.55 | 2.8 dB  |
+| Peaking | 4413 Hz | 7.84 | -4.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SRH750DJ/Shure%20SRH750DJ.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 -0.3; 25 -0.6; 28 -0.9; 31 -1.1; 34 -1.3; 37 -1.5; 41 -1.7
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-48**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K812 sn002100 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-48**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K812 sn002100 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K812 sn00210
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.3dB.
+When using independent subset of filters, apply preamp of **-5.2dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 186 Hz   | 0.42 | -5.0 dB |
-| Peaking | 2818 Hz  | 2.03 | 6.4 dB  |
-| Peaking | 3122 Hz  | 3.41 | -7.2 dB |
-| Peaking | 4231 Hz  | 6.21 | 6.2 dB  |
-| Peaking | 5776 Hz  | 3.93 | -9.2 dB |
-| Peaking | 42 Hz    | 2.18 | -0.4 dB |
-| Peaking | 1166 Hz  | 3.01 | 1.5 dB  |
-| Peaking | 6999 Hz  | 5.7  | 3.9 dB  |
-| Peaking | 9227 Hz  | 1.58 | -4.2 dB |
-| Peaking | 10644 Hz | 2.33 | 3.1 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 186 Hz  | 0.42 | -5.0 dB |
+| Peaking | 2794 Hz | 2.02 | 6.3 dB  |
+| Peaking | 3143 Hz | 3.42 | -7.1 dB |
+| Peaking | 4246 Hz | 6.19 | 6.2 dB  |
+| Peaking | 5766 Hz | 3.93 | -9.2 dB |
+| Peaking | 1016 Hz | 0.61 | -1.4 dB |
+| Peaking | 1088 Hz | 1.31 | 2.6 dB  |
+| Peaking | 5878 Hz | 7.2  | -1.6 dB |
+| Peaking | 6842 Hz | 7.49 | 3.6 dB  |
+| Peaking | 8875 Hz | 4.95 | -3.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K812%20sn002100/AKG%20K812%20sn002100.png)

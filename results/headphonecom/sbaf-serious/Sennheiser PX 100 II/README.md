@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.6; 25 5.1; 28 4.3; 31 3.5; 34 2.9; 37 2.3; 41 1.7; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser PX 100 II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PX 100 II ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PX 10
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 2787 Hz | 2.63 | 5.2 dB  |
 | Peaking | 5983 Hz | 4.65 | 6.8 dB  |
 | Peaking | 758 Hz  | 2.15 | 0.8 dB  |
-| Peaking | 3810 Hz | 7.22 | 4.4 dB  |
-| Peaking | 4468 Hz | 4.8  | -5.6 dB |
-| Peaking | 5275 Hz | 7.37 | 3.2 dB  |
-| Peaking | 9204 Hz | 6.48 | -1.6 dB |
+| Peaking | 3808 Hz | 7.21 | 4.4 dB  |
+| Peaking | 4466 Hz | 4.8  | -5.6 dB |
+| Peaking | 5270 Hz | 7.35 | 3.2 dB  |
+| Peaking | 9137 Hz | 6.46 | -1.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PX%20100%20II/Sennheiser%20PX%20100%20II.png)

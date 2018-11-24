@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.6; 23 -2.0; 25 -2.3; 28 -2.8; 31 -3.1; 34 -3.4; 37 -3.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser Momentum M2 OEBT Wired Passive GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum M2 OEBT Wired Passive ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momen
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 12 Hz   | 1.25 | -4.2 dB |
-| Peaking | 67 Hz   | 0.74 | -5.1 dB |
+| Peaking | 12 Hz   | 1.13 | -4.3 dB |
+| Peaking | 67 Hz   | 0.75 | -5.1 dB |
 | Peaking | 151 Hz  | 1.86 | -6.6 dB |
-| Peaking | 4159 Hz | 4.46 | 6.9 dB  |
-| Peaking | 9131 Hz | 5.01 | -5.9 dB |
-| Peaking | 202 Hz  | 4.78 | -2.1 dB |
-| Peaking | 308 Hz  | 2.96 | 2.4 dB  |
-| Peaking | 870 Hz  | 0.64 | 1.1 dB  |
-| Peaking | 2185 Hz | 1.15 | -6.4 dB |
-| Peaking | 3049 Hz | 0.93 | 3.2 dB  |
+| Peaking | 4132 Hz | 4.46 | 6.9 dB  |
+| Peaking | 9080 Hz | 5    | -5.9 dB |
+| Peaking | 203 Hz  | 4.81 | -2.1 dB |
+| Peaking | 307 Hz  | 2.96 | 2.4 dB  |
+| Peaking | 817 Hz  | 0.67 | 1.0 dB  |
+| Peaking | 2141 Hz | 1.19 | -6.1 dB |
+| Peaking | 3030 Hz | 0.79 | 2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20M2%20OEBT%20Wired%20Passive/Sennheiser%20Momentum%20M2%20OEBT%20Wired%20Passive.png)

@@ -9,16 +9,17 @@ GraphicEQ: 21 -4.8; 23 -5.1; 25 -5.3; 28 -5.5; 31 -5.6; 34 -5.7; 37 -5.8; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Beats Solo sample 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Beats Solo sample 1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.0dB.
+When using independent subset of filters, apply preamp of **-3.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -3.0dB.
 | Peaking | 218 Hz  | 1.65 | -6.9 dB |
 | Peaking | 996 Hz  | 0.1  | 3.0 dB  |
 | Peaking | 521 Hz  | 2.81 | 3.7 dB  |
-| Peaking | 884 Hz  | 1.51 | -3.0 dB |
-| Peaking | 3393 Hz | 1.49 | 4.5 dB  |
-| Peaking | 5488 Hz | 0.76 | -5.7 dB |
-| Peaking | 6020 Hz | 2.65 | 8.9 dB  |
+| Peaking | 885 Hz  | 1.51 | -3.0 dB |
+| Peaking | 3456 Hz | 1.46 | 4.5 dB  |
+| Peaking | 5622 Hz | 0.75 | -5.7 dB |
+| Peaking | 5913 Hz | 2.63 | 8.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Beats%20Solo%20sample%201/Monster%20Beats%20Solo%20sample%201.png)

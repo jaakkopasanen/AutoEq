@@ -9,16 +9,17 @@ GraphicEQ: 21 -3.5; 23 -3.8; 25 -4.0; 28 -4.3; 31 -4.5; 34 -4.6; 37 -4.7; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 25 Aluminum GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 25 Aluminum ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -26,11 +27,11 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 131 Hz  | 1.69 | -6.6 dB |
 | Peaking | 1958 Hz | 2.3  | -5.3 dB |
 | Peaking | 5782 Hz | 1.82 | 7.4 dB  |
-| Peaking | 8591 Hz | 3.92 | -9.0 dB |
-| Peaking | 208 Hz  | 2.16 | -2.7 dB |
-| Peaking | 389 Hz  | 0.91 | 3.2 dB  |
-| Peaking | 1508 Hz | 4.52 | -1.1 dB |
-| Peaking | 4092 Hz | 7.06 | -1.9 dB |
-| Peaking | 4768 Hz | 9.69 | 1.9 dB  |
+| Peaking | 8592 Hz | 3.92 | -9.0 dB |
+| Peaking | 140 Hz  | 3.48 | 1.8 dB  |
+| Peaking | 205 Hz  | 1.05 | -3.9 dB |
+| Peaking | 347 Hz  | 0.8  | 4.3 dB  |
+| Peaking | 1068 Hz | 2.46 | -0.2 dB |
+| Peaking | 1510 Hz | 4.43 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%2025%20Aluminum/Sennheiser%20HD%2025%20Aluminum.png)

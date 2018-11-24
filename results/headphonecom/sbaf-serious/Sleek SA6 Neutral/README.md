@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.8; 25 2.6; 28 2.4; 31 2.2; 34 2.0; 37 1.8; 41 1.6; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sleek SA6 Neutral GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sleek SA6 Neutral ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sleek SA6 Neutra
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 10 Hz   | 0.77 | 0.3 dB  |
-| Peaking | 21 Hz   | 0.46 | 2.9 dB  |
-| Peaking | 200 Hz  | 0.57 | -3.1 dB |
-| Peaking | 1953 Hz | 1.78 | -4.6 dB |
-| Peaking | 3859 Hz | 0.93 | 7.5 dB  |
-| Peaking | 841 Hz  | 3.57 | 0.9 dB  |
-| Peaking | 2985 Hz | 6.18 | 2.2 dB  |
-| Peaking | 6023 Hz | 0.68 | -2.5 dB |
-| Peaking | 6230 Hz | 2.05 | 5.5 dB  |
-| Peaking | 7552 Hz | 3.01 | -2.6 dB |
+| Peaking | 12 Hz   | 0.55 | 0.3 dB  |
+| Peaking | 20 Hz   | 0.48 | 2.8 dB  |
+| Peaking | 196 Hz  | 0.57 | -3.1 dB |
+| Peaking | 1951 Hz | 1.78 | -4.6 dB |
+| Peaking | 3860 Hz | 0.93 | 7.5 dB  |
+| Peaking | 843 Hz  | 3.66 | 0.9 dB  |
+| Peaking | 2976 Hz | 6.2  | 2.2 dB  |
+| Peaking | 5995 Hz | 0.68 | -2.4 dB |
+| Peaking | 6246 Hz | 2.07 | 5.5 dB  |
+| Peaking | 7546 Hz | 2.99 | -2.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sleek%20SA6%20Neutral/Sleek%20SA6%20Neutral.png)

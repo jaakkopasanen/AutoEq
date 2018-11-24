@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.6; 23 -4.0; 25 -4.3; 28 -4.8; 31 -5.2; 34 -5.5; 37 -5.6; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.4dB` and instead set Global volume in the UI for both channels to **-63**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Meze Classics 66 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-63**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Meze Classics 66 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Meze Classics 66
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 1765 Hz | 0.99 | 5.9 dB  |
 | Peaking | 5095 Hz | 1.73 | 5.8 dB  |
 | Peaking | 632 Hz  | 4.04 | 3.7 dB  |
-| Peaking | 937 Hz  | 2.52 | -3.0 dB |
-| Peaking | 1272 Hz | 4.77 | 2.2 dB  |
+| Peaking | 936 Hz  | 2.53 | -3.0 dB |
+| Peaking | 1269 Hz | 4.78 | 2.2 dB  |
 | Peaking | 6465 Hz | 5.16 | 3.2 dB  |
-| Peaking | 7600 Hz | 1.86 | -2.1 dB |
+| Peaking | 7607 Hz | 1.86 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Meze%20Classics%2066/Meze%20Classics%2066.png)

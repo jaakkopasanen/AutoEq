@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 3.5; 25 3.0; 28 2.5; 31 2.0; 34 1.5; 37 1.2; 41 0.7; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-44**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K3003 High Boost Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K3003 High Boost Filter ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.2dB.
+When using independent subset of filters, apply preamp of **-4.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 17 Hz    | 0.75 | 4.6 dB   |
+| Peaking | 17 Hz    | 0.76 | 4.6 dB   |
 | Peaking | 167 Hz   | 0.55 | -4.8 dB  |
-| Peaking | 5336 Hz  | 3.96 | -7.6 dB  |
+| Peaking | 5337 Hz  | 3.96 | -7.6 dB  |
 | Peaking | 7174 Hz  | 3.68 | 3.8 dB   |
 | Peaking | 9716 Hz  | 3.7  | -11.0 dB |
-| Peaking | 818 Hz   | 1.93 | 1.3 dB   |
-| Peaking | 2457 Hz  | 0.89 | -2.1 dB  |
-| Peaking | 3805 Hz  | 3.92 | 7.1 dB   |
-| Peaking | 4515 Hz  | 5.33 | -3.4 dB  |
-| Peaking | 11548 Hz | 4.45 | 1.6 dB   |
+| Peaking | 817 Hz   | 1.88 | 1.3 dB   |
+| Peaking | 2417 Hz  | 0.9  | -2.0 dB  |
+| Peaking | 3828 Hz  | 4.05 | 7.2 dB   |
+| Peaking | 4582 Hz  | 4.6  | -3.1 dB  |
+| Peaking | 11390 Hz | 3.71 | 1.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K3003%20High%20Boost%20Filter/AKG%20K3003%20High%20Boost%20Filter.png)

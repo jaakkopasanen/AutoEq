@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 -0.4; 25 -1.0; 28 -1.6; 31 -1.9; 34 -2.1; 37 -2.2; 41 -2.3
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.9dB` and instead set Global volume in the UI for both channels to **-18**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-D5000 B2012 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-18**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D5000 B2012 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.3dB.
+When using independent subset of filters, apply preamp of **--0.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 42 Hz    | 1.03 | -1.8 dB |
-| Peaking | 169 Hz   | 0.6  | -3.9 dB |
-| Peaking | 1789 Hz  | 3.12 | -4.7 dB |
-| Peaking | 11032 Hz | 1.35 | -3.1 dB |
-| Peaking | 19752 Hz | 3.12 | -8.3 dB |
-| Peaking | 661 Hz   | 6.18 | 1.5 dB  |
-| Peaking | 2865 Hz  | 5.12 | 1.9 dB  |
-| Peaking | 4075 Hz  | 5.77 | 2.2 dB  |
-| Peaking | 6408 Hz  | 4.07 | -2.1 dB |
-| Peaking | 16590 Hz | 3.42 | 1.3 dB  |
+| Peaking | 170 Hz   | 0.6  | -3.9 dB |
+| Peaking | 1788 Hz  | 3.12 | -4.7 dB |
+| Peaking | 11028 Hz | 1.35 | -3.1 dB |
+| Peaking | 19751 Hz | 3.12 | -8.3 dB |
+| Peaking | 659 Hz   | 6.11 | 1.5 dB  |
+| Peaking | 2853 Hz  | 5.11 | 1.9 dB  |
+| Peaking | 4096 Hz  | 5.71 | 2.2 dB  |
+| Peaking | 6414 Hz  | 4.04 | -2.1 dB |
+| Peaking | 16595 Hz | 3.42 | 1.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D5000%20B2012/Denon%20AH-D5000%20B2012.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 -5.0; 23 -5.5; 25 -5.9; 28 -6.3; 31 -6.7; 34 -6.9; 37 -7.1; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-XB500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-XB500 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 56 Hz   | 0.28 | -7.0 dB |
-| Peaking | 203 Hz  | 0.87 | -8.7 dB |
+| Peaking | 203 Hz  | 0.86 | -8.7 dB |
 | Peaking | 379 Hz  | 1.66 | -5.1 dB |
 | Peaking | 1709 Hz | 2.5  | -5.9 dB |
 | Peaking | 3397 Hz | 4.52 | 7.6 dB  |
-| Peaking | 530 Hz  | 3.68 | -1.8 dB |
-| Peaking | 870 Hz  | 2.14 | 3.1 dB  |
-| Peaking | 1365 Hz | 5.76 | -2.1 dB |
-| Peaking | 3876 Hz | 6.47 | 3.3 dB  |
-| Peaking | 5122 Hz | 3.66 | -5.8 dB |
+| Peaking | 530 Hz  | 3.77 | -1.8 dB |
+| Peaking | 871 Hz  | 2.12 | 3.1 dB  |
+| Peaking | 1364 Hz | 5.75 | -2.1 dB |
+| Peaking | 3846 Hz | 6.57 | 3.3 dB  |
+| Peaking | 5107 Hz | 3.66 | -5.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-XB500/Sony%20MDR-XB500.png)

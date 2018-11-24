@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.2; 25 3.1; 28 3.0; 31 2.9; 34 2.8; 37 2.7; 41 2.5; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultimate Ears UE600 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultimate Ears UE600 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Ultimate Ears UE
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 22 Hz   | 0.62 | 3.2 dB  |
-| Peaking | 55 Hz   | 1.41 | 1.1 dB  |
-| Peaking | 213 Hz  | 0.64 | -2.2 dB |
-| Peaking | 3225 Hz | 1.81 | 6.5 dB  |
-| Peaking | 5825 Hz | 3.47 | 5.7 dB  |
-| Peaking | 762 Hz  | 2.89 | 0.8 dB  |
-| Peaking | 1577 Hz | 2.45 | -1.2 dB |
-| Peaking | 2488 Hz | 5.31 | 1.1 dB  |
-| Peaking | 6617 Hz | 9.01 | 1.8 dB  |
-| Peaking | 8206 Hz | 2.39 | -1.3 dB |
+| Peaking | 55 Hz   | 1.37 | 1.1 dB  |
+| Peaking | 212 Hz  | 0.64 | -2.2 dB |
+| Peaking | 3226 Hz | 1.81 | 6.5 dB  |
+| Peaking | 5826 Hz | 3.47 | 5.7 dB  |
+| Peaking | 764 Hz  | 3    | 0.8 dB  |
+| Peaking | 1575 Hz | 2.44 | -1.2 dB |
+| Peaking | 2467 Hz | 5.31 | 1.1 dB  |
+| Peaking | 6615 Hz | 9.02 | 1.8 dB  |
+| Peaking | 8202 Hz | 2.37 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultimate%20Ears%20UE600/Ultimate%20Ears%20UE600.png)

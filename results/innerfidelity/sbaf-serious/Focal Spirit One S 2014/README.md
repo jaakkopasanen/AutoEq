@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.0; 23 -3.3; 25 -3.4; 28 -3.6; 31 -3.6; 34 -3.7; 37 -3.8; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Focal Spirit One S 2014 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Spirit One S 2014 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Focal Spirit One
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 186 Hz  | 2.69 | -3.2 dB |
 | Peaking | 2714 Hz | 1.99 | 4.3 dB  |
 | Peaking | 5990 Hz | 4.28 | 6.5 dB  |
-| Peaking | 241 Hz  | 3.34 | -1.1 dB |
-| Peaking | 332 Hz  | 2.18 | 2.3 dB  |
-| Peaking | 512 Hz  | 2.01 | -1.7 dB |
-| Peaking | 6673 Hz | 8.57 | 1.7 dB  |
-| Peaking | 8099 Hz | 1.45 | -0.8 dB |
+| Peaking | 239 Hz  | 3.34 | -1.1 dB |
+| Peaking | 331 Hz  | 2.18 | 2.3 dB  |
+| Peaking | 511 Hz  | 2.01 | -1.7 dB |
+| Peaking | 6684 Hz | 8.57 | 1.7 dB  |
+| Peaking | 8104 Hz | 1.44 | -0.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Focal%20Spirit%20One%20S%202014/Focal%20Spirit%20One%20S%202014.png)

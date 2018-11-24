@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.0; 25 2.0; 28 2.0; 31 1.9; 34 1.7; 37 1.6; 41 1.5; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultimate Ears UE700 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultimate Ears UE700 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Ultimate Ears UE
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -26,11 +27,11 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 196 Hz   | 0.63 | -2.6 dB  |
 | Peaking | 3306 Hz  | 2.7  | 5.4 dB   |
 | Peaking | 5563 Hz  | 1.55 | 6.2 dB   |
-| Peaking | 8856 Hz  | 3.84 | -11.1 dB |
-| Peaking | 903 Hz   | 0.99 | 2.8 dB   |
-| Peaking | 1486 Hz  | 0.56 | -3.1 dB  |
-| Peaking | 2737 Hz  | 3.84 | 2.9 dB   |
-| Peaking | 4142 Hz  | 6.03 | 2.0 dB   |
-| Peaking | 10787 Hz | 8.45 | 1.9 dB   |
+| Peaking | 8859 Hz  | 3.84 | -11.1 dB |
+| Peaking | 889 Hz   | 1    | 2.7 dB   |
+| Peaking | 1522 Hz  | 0.57 | -3.0 dB  |
+| Peaking | 2743 Hz  | 3.82 | 2.9 dB   |
+| Peaking | 4142 Hz  | 6.07 | 2.0 dB   |
+| Peaking | 10812 Hz | 8.5  | 2.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultimate%20Ears%20UE700/Ultimate%20Ears%20UE700.png)

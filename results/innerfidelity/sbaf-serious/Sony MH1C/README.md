@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.9; 23 -10.7; 25 -10.6; 28 -10.4; 31 -10.2; 34 -10.0; 37 -9.8; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MH1C GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MH1C ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MH1C Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 5788 Hz  | 3.07 | 6.6 dB   |
 | Peaking | 308 Hz   | 1.88 | -0.6 dB  |
 | Peaking | 782 Hz   | 1.14 | 1.5 dB   |
-| Peaking | 1273 Hz  | 1.72 | -0.9 dB  |
-| Peaking | 15134 Hz | 3.45 | -0.1 dB  |
-| Peaking | 15211 Hz | 5.06 | -1.5 dB  |
+| Peaking | 1271 Hz  | 1.72 | -0.9 dB  |
+| Peaking | 15158 Hz | 3.45 | -0.1 dB  |
+| Peaking | 15249 Hz | 5.06 | -1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MH1C/Sony%20MH1C.png)

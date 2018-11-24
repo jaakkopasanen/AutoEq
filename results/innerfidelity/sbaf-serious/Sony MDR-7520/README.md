@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.4; 25 4.4; 28 3.1; 31 1.9; 34 0.9; 37 -0.1; 41 -1.2; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--7.2dB` and instead set Global volume in the UI for both channels to **-71**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-7520 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-71**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-7520 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.7dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 21 Hz   | 1.81 | 7.0 dB   |
-| Peaking | 98 Hz   | 0.96 | -8.6 dB  |
+| Peaking | 21 Hz   | 1.81 | 6.9 dB   |
+| Peaking | 98 Hz   | 0.95 | -8.7 dB  |
 | Peaking | 2384 Hz | 1.49 | -11.6 dB |
-| Peaking | 4774 Hz | 0.92 | 8.6 dB   |
-| Peaking | 9182 Hz | 3.48 | -14.7 dB |
-| Peaking | 161 Hz  | 3.76 | -2.0 dB  |
-| Peaking | 284 Hz  | 1.93 | 1.9 dB   |
-| Peaking | 1719 Hz | 0.76 | 3.3 dB   |
-| Peaking | 1756 Hz | 1.76 | -4.4 dB  |
-| Peaking | 3225 Hz | 5.4  | -2.7 dB  |
+| Peaking | 4772 Hz | 0.92 | 8.6 dB   |
+| Peaking | 9181 Hz | 3.48 | -14.7 dB |
+| Peaking | 162 Hz  | 3.96 | -2.0 dB  |
+| Peaking | 285 Hz  | 1.83 | 2.0 dB   |
+| Peaking | 1017 Hz | 1.27 | 1.4 dB   |
+| Peaking | 2158 Hz | 1.47 | -2.2 dB  |
+| Peaking | 2403 Hz | 5.25 | 3.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-7520/Sony%20MDR-7520.png)

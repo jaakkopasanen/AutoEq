@@ -9,16 +9,17 @@ GraphicEQ: 21 -0.4; 23 -1.1; 25 -1.8; 28 -2.5; 31 -3.1; 34 -3.5; 37 -3.9; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sol Republic Tracks GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sol Republic Tracks ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -26,11 +27,11 @@ When using independent subset of filters, apply preamp of -7.1dB.
 | Peaking | 425 Hz  | 1.33 | 11.4 dB |
 | Peaking | 2711 Hz | 1.25 | 4.1 dB  |
 | Peaking | 3856 Hz | 1.75 | 3.8 dB  |
-| Peaking | 6038 Hz | 4.59 | 4.9 dB  |
-| Peaking | 20 Hz   | 2.73 | 1.3 dB  |
-| Peaking | 215 Hz  | 5.16 | -1.1 dB |
-| Peaking | 1598 Hz | 5.37 | 3.0 dB  |
-| Peaking | 1780 Hz | 3.97 | -2.0 dB |
-| Peaking | 8353 Hz | 3.89 | -1.1 dB |
+| Peaking | 6041 Hz | 4.59 | 4.9 dB  |
+| Peaking | 19 Hz   | 2.19 | 1.5 dB  |
+| Peaking | 214 Hz  | 5.08 | -1.1 dB |
+| Peaking | 1601 Hz | 5.43 | 3.0 dB  |
+| Peaking | 1780 Hz | 3.98 | -1.9 dB |
+| Peaking | 8377 Hz | 3.89 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sol%20Republic%20Tracks/Sol%20Republic%20Tracks.png)

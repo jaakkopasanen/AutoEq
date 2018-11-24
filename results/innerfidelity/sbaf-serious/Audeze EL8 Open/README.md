@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.9; 25 5.8; 28 5.7; 31 5.6; 34 5.5; 37 5.5; 41 5.3; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeze EL8 Open GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze EL8 Open ParametricEQ.txt`.
@@ -18,19 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Audeze EL8 Open 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 27 Hz   |  0.41 | 4.9 dB  |
-| Peaking | 48 Hz   |  0.08 | 1.0 dB  |
-| Peaking | 3835 Hz |  3.24 | 4.7 dB  |
-| Peaking | 6074 Hz |  3.7  | 6.7 dB  |
-| Peaking | 7642 Hz |  1.61 | -1.0 dB |
-| Peaking | 568 Hz  |  2.33 | 0.6 dB  |
-| Peaking | 1185 Hz |  4.42 | -0.8 dB |
-| Peaking | 2255 Hz |  4.05 | -2.1 dB |
-| Peaking | 2810 Hz |  5.62 | 1.9 dB  |
-| Peaking | 5002 Hz | 18.05 | -2.8 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 28 Hz   | 0.41 | 4.9 dB  |
+| Peaking | 39 Hz   | 0.06 | 1.0 dB  |
+| Peaking | 3810 Hz | 3.24 | 4.7 dB  |
+| Peaking | 6117 Hz | 3.7  | 6.7 dB  |
+| Peaking | 7666 Hz | 1.64 | -1.0 dB |
+| Peaking | 573 Hz  | 2.52 | 0.6 dB  |
+| Peaking | 1187 Hz | 4.33 | -0.8 dB |
+| Peaking | 2245 Hz | 3.9  | -2.1 dB |
+| Peaking | 2795 Hz | 6.43 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20EL8%20Open/Audeze%20EL8%20Open.png)

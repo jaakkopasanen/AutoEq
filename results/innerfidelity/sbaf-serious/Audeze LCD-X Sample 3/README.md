@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.0; 25 3.8; 28 3.5; 31 3.1; 34 2.5; 37 1.3; 41 0.1; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeze LCD-X sample 3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-X sample 3 ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-X sam
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 23 Hz    | 1.26 | 4.3 dB  |
-| Peaking | 254 Hz   | 0.52 | -2.1 dB |
-| Peaking | 3463 Hz  | 3.32 | 6.6 dB  |
-| Peaking | 5805 Hz  | 4.68 | 6.1 dB  |
-| Peaking | 19331 Hz | 1.25 | -6.2 dB |
-| Peaking | 71 Hz    | 3.47 | 0.5 dB  |
-| Peaking | 1069 Hz  | 5.34 | 0.7 dB  |
-| Peaking | 2054 Hz  | 3.76 | -1.2 dB |
-| Peaking | 14018 Hz | 3.73 | 1.0 dB  |
+| Peaking | 260 Hz   | 0.53 | -2.1 dB |
+| Peaking | 3462 Hz  | 3.32 | 6.6 dB  |
+| Peaking | 5808 Hz  | 4.67 | 6.1 dB  |
+| Peaking | 19341 Hz | 1.25 | -6.2 dB |
+| Peaking | 75 Hz    | 3.62 | 0.6 dB  |
+| Peaking | 1065 Hz  | 4.83 | 0.7 dB  |
+| Peaking | 2046 Hz  | 3.59 | -1.1 dB |
+| Peaking | 13996 Hz | 3.64 | 1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-X%20sample%203/Audeze%20LCD-X%20sample%203.png)

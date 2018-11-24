@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.8; 23 -4.9; 25 -5.0; 28 -5.1; 31 -5.2; 34 -5.2; 37 -5.3; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser IE 800 sample A GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser IE 800 sample A ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser IE 80
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 34 Hz   | 0.27 | -5.0 dB |
 | Peaking | 150 Hz  | 0.74 | -2.7 dB |
 | Peaking | 3286 Hz | 1.64 | 7.0 dB  |
-| Peaking | 6411 Hz | 7.06 | 5.0 dB  |
-| Peaking | 9880 Hz | 4.29 | -3.7 dB |
-| Peaking | 723 Hz  | 1.96 | 1.2 dB  |
-| Peaking | 1587 Hz | 2.03 | -1.9 dB |
-| Peaking | 2547 Hz | 3.97 | 2.5 dB  |
-| Peaking | 3850 Hz | 1.66 | -2.1 dB |
-| Peaking | 4102 Hz | 5.15 | 3.7 dB  |
+| Peaking | 6439 Hz | 7.04 | 5.0 dB  |
+| Peaking | 9920 Hz | 4.28 | -3.7 dB |
+| Peaking | 724 Hz  | 2.01 | 1.2 dB  |
+| Peaking | 1587 Hz | 2.02 | -1.9 dB |
+| Peaking | 2556 Hz | 3.92 | 2.6 dB  |
+| Peaking | 3838 Hz | 1.65 | -2.1 dB |
+| Peaking | 4086 Hz | 5.14 | 3.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20IE%20800%20sample%20A/Sennheiser%20IE%20800%20sample%20A.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.1; 23 -2.5; 25 -2.8; 28 -3.2; 31 -3.5; 34 -3.8; 37 -4.0; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.3dB` and instead set Global volume in the UI for both channels to **-12**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Fidue A81 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-12**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fidue A81 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Fidue A81 Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.0dB.
+When using independent subset of filters, apply preamp of **--0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of --0.0dB.
 | Peaking | 4891 Hz  | 5.37 | -12.2 dB |
 | Peaking | 22064 Hz | 1.67 | -6.4 dB  |
 | Peaking | 830 Hz   | 2.17 | 1.4 dB   |
-| Peaking | 1606 Hz  | 4.17 | -1.4 dB  |
-| Peaking | 7000 Hz  | 3.49 | 5.1 dB   |
-| Peaking | 9071 Hz  | 2.12 | -10.2 dB |
-| Peaking | 10453 Hz | 0.33 | 1.2 dB   |
+| Peaking | 1608 Hz  | 4.17 | -1.4 dB  |
+| Peaking | 6998 Hz  | 3.49 | 5.1 dB   |
+| Peaking | 9070 Hz  | 2.12 | -10.2 dB |
+| Peaking | 10454 Hz | 0.33 | 1.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fidue%20A81/Fidue%20A81.png)

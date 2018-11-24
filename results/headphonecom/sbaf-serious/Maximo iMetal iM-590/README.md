@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.1; 23 -8.0; 25 -7.9; 28 -7.7; 31 -7.5; 34 -7.4; 37 -7.2; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Maximo iMetal iM-590 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Maximo iMetal iM-590 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Maximo iMetal iM
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 2295 Hz  | 1.62 | -9.9 dB |
 | Peaking | 3580 Hz  | 1.25 | 9.6 dB  |
 | Peaking | 6630 Hz  | 4.58 | -8.6 dB |
-| Peaking | 78 Hz    | 3.22 | -0.5 dB |
-| Peaking | 230 Hz   | 2.25 | -0.8 dB |
-| Peaking | 753 Hz   | 0.99 | 2.0 dB  |
+| Peaking | 80 Hz    | 3.27 | -0.5 dB |
+| Peaking | 231 Hz   | 2.25 | -0.8 dB |
+| Peaking | 754 Hz   | 0.99 | 2.0 dB  |
 | Peaking | 1319 Hz  | 2.13 | -1.8 dB |
-| Peaking | 10304 Hz | 7.95 | -2.2 dB |
+| Peaking | 10386 Hz | 7.95 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Maximo%20iMetal%20iM-590/Maximo%20iMetal%20iM-590.png)

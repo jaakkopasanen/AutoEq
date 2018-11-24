@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.7; 25 5.3; 28 4.4; 31 3.7; 34 3.0; 37 2.5; 41 2.0; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Enigmacoustics Dharma Production 2015 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Enigmacoustics Dharma Production 2015 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 1.72 | 6.2 dB  |
-| Peaking | 1829 Hz  | 3.2  | -3.1 dB |
-| Peaking | 3542 Hz  | 2.35 | 6.1 dB  |
-| Peaking | 5758 Hz  | 5.17 | -7.7 dB |
-| Peaking | 15153 Hz | 1.99 | -3.8 dB |
-| Peaking | 42 Hz    | 2.12 | 1.0 dB  |
-| Peaking | 122 Hz   | 1.09 | -2.5 dB |
-| Peaking | 482 Hz   | 1.3  | 2.3 dB  |
-| Peaking | 4858 Hz  | 9.48 | -1.6 dB |
-| Peaking | 7195 Hz  | 6.38 | 1.8 dB  |
+| Peaking | 23 Hz    | 1.79 | 6.2 dB  |
+| Peaking | 1829 Hz  | 3.21 | -3.1 dB |
+| Peaking | 3538 Hz  | 2.35 | 6.1 dB  |
+| Peaking | 5715 Hz  | 5.17 | -7.7 dB |
+| Peaking | 15157 Hz | 1.99 | -3.8 dB |
+| Peaking | 39 Hz    | 1.96 | 1.2 dB  |
+| Peaking | 121 Hz   | 1.12 | -2.5 dB |
+| Peaking | 485 Hz   | 1.3  | 2.3 dB  |
+| Peaking | 7242 Hz  | 6.59 | 1.6 dB  |
+| Peaking | 13880 Hz | 5.19 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Enigmacoustics%20Dharma%20Production%202015/Enigmacoustics%20Dharma%20Production%202015.png)

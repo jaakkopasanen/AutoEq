@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 235 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 235 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.2dB.
 | Peaking | 274 Hz   | 0.91 | 2.6 dB   |
 | Peaking | 3081 Hz  | 2.16 | 7.0 dB   |
 | Peaking | 14533 Hz | 2.93 | -7.7 dB  |
-| Peaking | 873 Hz   | 4.47 | -2.5 dB  |
-| Peaking | 1293 Hz  | 6.23 | 3.1 dB   |
-| Peaking | 4865 Hz  | 7.3  | -10.4 dB |
-| Peaking | 6099 Hz  | 1.09 | 4.4 dB   |
-| Peaking | 7555 Hz  | 3.67 | -7.2 dB  |
+| Peaking | 872 Hz   | 4.47 | -2.5 dB  |
+| Peaking | 1290 Hz  | 6.23 | 3.1 dB   |
+| Peaking | 4887 Hz  | 7.3  | -10.3 dB |
+| Peaking | 6101 Hz  | 1.1  | 4.3 dB   |
+| Peaking | 7516 Hz  | 3.68 | -7.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20235/Beyerdynamic%20DT%20235.png)

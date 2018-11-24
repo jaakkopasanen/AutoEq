@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.9; 23 -5.4; 25 -5.7; 28 -6.2; 31 -6.6; 34 -7.0; 37 -7.3; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.4dB` and instead set Global volume in the UI for both channels to **-23**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Skullcandy Crusher Wireless Wired Sub Off GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-23**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Crusher Wireless Wired Sub Off ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Crush
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.0dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.1dB.
+When using independent subset of filters, apply preamp of **--0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 42 Hz    | 0.48 | -6.8 dB |
 | Peaking | 151 Hz   | 1.19 | -9.1 dB |
-| Peaking | 3144 Hz  | 1.5  | -4.4 dB |
+| Peaking | 3143 Hz  | 1.5  | -4.4 dB |
 | Peaking | 9660 Hz  | 1.55 | -9.2 dB |
-| Peaking | 75 Hz    | 6.58 | 2.5 dB  |
-| Peaking | 91 Hz    | 5.83 | -1.9 dB |
-| Peaking | 229 Hz   | 3.62 | -1.7 dB |
-| Peaking | 535 Hz   | 1.87 | 2.8 dB  |
-| Peaking | 15268 Hz | 3.55 | 1.6 dB  |
+| Peaking | 74 Hz    | 6.45 | 2.6 dB  |
+| Peaking | 92 Hz    | 5.62 | -1.8 dB |
+| Peaking | 228 Hz   | 3.59 | -1.7 dB |
+| Peaking | 536 Hz   | 1.88 | 2.8 dB  |
+| Peaking | 15287 Hz | 3.54 | 1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Crusher%20Wireless%20Wired%20Sub%20Off/Skullcandy%20Crusher%20Wireless%20Wired%20Sub%20Off.png)

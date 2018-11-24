@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.9; 25 4.5; 28 4.0; 31 3.5; 34 3.2; 37 2.9; 41 2.7; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Yamaha HP1 sample 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yamaha HP1 sample 1 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Yamaha HP1 sampl
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 3568 Hz |  3.28 | 5.4 dB  |
 | Peaking | 5662 Hz |  2.81 | 6.2 dB  |
 | Peaking | 208 Hz  |  1.41 | -1.1 dB |
-| Peaking | 496 Hz  |  0.76 | -0.6 dB |
-| Peaking | 1261 Hz |  6.99 | 1.2 dB  |
-| Peaking | 2270 Hz | 10.11 | -1.0 dB |
-| Peaking | 8246 Hz |  4.78 | -1.2 dB |
+| Peaking | 497 Hz  |  0.76 | -0.6 dB |
+| Peaking | 1272 Hz |  6.99 | 1.2 dB  |
+| Peaking | 2280 Hz | 10.18 | -1.0 dB |
+| Peaking | 8257 Hz |  4.78 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20HP1%20sample%201/Yamaha%20HP1%20sample%201.png)

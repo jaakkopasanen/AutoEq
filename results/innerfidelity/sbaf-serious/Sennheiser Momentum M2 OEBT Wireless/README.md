@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.6; 23 -4.1; 25 -4.5; 28 -5.1; 31 -5.5; 34 -5.8; 37 -6.0; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser Momentum M2 OEBT Wireless GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum M2 OEBT Wireless ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momen
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.8dB.
+When using independent subset of filters, apply preamp of **-5.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.8dB.
 | Peaking | 398 Hz  | 0.71 | 5.1 dB  |
 | Peaking | 2228 Hz | 1.06 | -6.6 dB |
 | Peaking | 4135 Hz | 1.59 | 7.7 dB  |
-| Peaking | 65 Hz   | 2.58 | -2.3 dB |
-| Peaking | 67 Hz   | 8.53 | 5.6 dB  |
-| Peaking | 5205 Hz | 8.15 | -2.9 dB |
-| Peaking | 6121 Hz | 4.48 | 3.2 dB  |
-| Peaking | 9113 Hz | 4.98 | -3.4 dB |
+| Peaking | 68 Hz   | 8.4  | 6.0 dB  |
+| Peaking | 68 Hz   | 2.91 | -2.5 dB |
+| Peaking | 5201 Hz | 8.34 | -2.8 dB |
+| Peaking | 6126 Hz | 4.58 | 3.2 dB  |
+| Peaking | 9114 Hz | 5.01 | -3.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20M2%20OEBT%20Wireless/Sennheiser%20Momentum%20M2%20OEBT%20Wireless.png)

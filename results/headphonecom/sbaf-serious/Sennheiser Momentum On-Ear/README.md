@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.4; 23 -2.6; 25 -2.8; 28 -3.0; 31 -3.1; 34 -3.2; 37 -3.3; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser Momentum On-Ear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum On-Ear ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momen
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 46 Hz   |  0.62 | -3.7 dB |
+| Peaking | 47 Hz   |  0.62 | -3.7 dB |
 | Peaking | 132 Hz  |  1.64 | -3.6 dB |
 | Peaking | 1829 Hz |  2.12 | -6.6 dB |
 | Peaking | 3936 Hz |  2.13 | 6.7 dB  |
 | Peaking | 7835 Hz |  3.1  | -4.3 dB |
-| Peaking | 202 Hz  |  2.66 | -1.7 dB |
-| Peaking | 402 Hz  |  1.18 | 2.6 dB  |
-| Peaking | 980 Hz  |  3.47 | 0.6 dB  |
-| Peaking | 1396 Hz |  3.97 | -1.1 dB |
-| Peaking | 5971 Hz | 11.27 | 2.5 dB  |
+| Peaking | 201 Hz  |  2.69 | -1.7 dB |
+| Peaking | 401 Hz  |  1.18 | 2.6 dB  |
+| Peaking | 977 Hz  |  3.47 | 0.6 dB  |
+| Peaking | 1395 Hz |  3.97 | -1.1 dB |
+| Peaking | 5943 Hz | 11.25 | 2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20Momentum%20On-Ear/Sennheiser%20Momentum%20On-Ear.png)

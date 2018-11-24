@@ -9,8 +9,9 @@ GraphicEQ: 21 -7.6; 23 -8.2; 25 -8.6; 28 -9.2; 31 -9.7; 34 -10.2; 37 -10.6; 41 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.6dB` and instead set Global volume in the UI for both channels to **-35**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Signature Acoustics Elements C12 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Signature Acoustics Elements C12 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Signature Acoust
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.5dB.
+When using independent subset of filters, apply preamp of **--0.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 59 Hz    | 0.3  | -11.0 dB |
+| Peaking | 60 Hz    | 0.3  | -11.0 dB |
 | Peaking | 185 Hz   | 0.7  | -7.9 dB  |
-| Peaking | 398 Hz   | 1.32 | -5.1 dB  |
-| Peaking | 5893 Hz  | 3.09 | -10.0 dB |
+| Peaking | 398 Hz   | 1.33 | -5.1 dB  |
+| Peaking | 5895 Hz  | 3.09 | -10.0 dB |
 | Peaking | 17829 Hz | 2.04 | -7.3 dB  |
-| Peaking | 1225 Hz  | 1.86 | 6.4 dB   |
-| Peaking | 3020 Hz  | 0.43 | -6.8 dB  |
-| Peaking | 3306 Hz  | 1.79 | 10.3 dB  |
-| Peaking | 9111 Hz  | 0.83 | 5.0 dB   |
-| Peaking | 9761 Hz  | 3.09 | -7.2 dB  |
+| Peaking | 1231 Hz  | 1.85 | 6.4 dB   |
+| Peaking | 2963 Hz  | 0.44 | -6.8 dB  |
+| Peaking | 3287 Hz  | 1.78 | 10.4 dB  |
+| Peaking | 9276 Hz  | 0.87 | 5.0 dB   |
+| Peaking | 9736 Hz  | 3.07 | -7.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Signature%20Acoustics%20Elements%20C12/Signature%20Acoustics%20Elements%20C12.png)

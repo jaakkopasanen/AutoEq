@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.5; 25 4.9; 28 4.0; 31 3.1; 34 2.3; 37 1.7; 41 1.0; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-A1000X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-A1000X ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Audio Technica A
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 23 Hz    | 1.79 | 6.1 dB  |
-| Peaking | 131 Hz   | 3.46 | -2.5 dB |
-| Peaking | 2077 Hz  | 3.88 | -6.2 dB |
+| Peaking | 22 Hz    | 1.86 | 6.2 dB  |
+| Peaking | 132 Hz   | 3.45 | -2.5 dB |
+| Peaking | 2073 Hz  | 3.88 | -6.2 dB |
 | Peaking | 3296 Hz  | 1.56 | 6.6 dB  |
 | Peaking | 5733 Hz  | 3.14 | 5.3 dB  |
-| Peaking | 33 Hz    | 1.75 | 0.4 dB  |
-| Peaking | 57 Hz    | 2.33 | -1.3 dB |
-| Peaking | 337 Hz   | 1.7  | 1.3 dB  |
-| Peaking | 8221 Hz  | 4.57 | -1.2 dB |
-| Peaking | 18574 Hz | 2.86 | -3.2 dB |
+| Peaking | 32 Hz    | 2.1  | 0.8 dB  |
+| Peaking | 58 Hz    | 2.44 | -1.2 dB |
+| Peaking | 336 Hz   | 1.67 | 1.3 dB  |
+| Peaking | 8246 Hz  | 4.57 | -1.2 dB |
+| Peaking | 18495 Hz | 2.83 | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-A1000X/Audio%20Technica%20ATH-A1000X.png)

@@ -9,16 +9,17 @@ GraphicEQ: 21 -1.0; 23 -1.6; 25 -1.9; 28 -2.2; 31 -2.3; 34 -2.5; 37 -2.7; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`JBL Duet NC (ANC Off) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `JBL Duet NC (ANC Off) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 306 Hz  |  0.92 | 8.4 dB  |
 | Peaking | 2537 Hz |  1.68 | 6.0 dB  |
 | Peaking | 5345 Hz |  4.37 | 4.8 dB  |
-| Peaking | 465 Hz  |  6.45 | 1.8 dB  |
-| Peaking | 929 Hz  |  2.77 | -1.5 dB |
-| Peaking | 3278 Hz |  6.46 | 4.3 dB  |
-| Peaking | 3642 Hz |  3.81 | -3.3 dB |
-| Peaking | 6638 Hz | 12.39 | 3.9 dB  |
+| Peaking | 468 Hz  |  6.43 | 1.8 dB  |
+| Peaking | 931 Hz  |  2.77 | -1.5 dB |
+| Peaking | 3272 Hz |  6.6  | 4.2 dB  |
+| Peaking | 3654 Hz |  3.87 | -3.2 dB |
+| Peaking | 6560 Hz | 12.03 | 3.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/JBL%20Duet%20NC%20(ANC%20Off)/JBL%20Duet%20NC%20(ANC%20Off).png)

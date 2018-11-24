@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.9; 23 -11.0; 25 -11.1; 28 -11.1; 31 -11.2; 34 -11.3; 37 -11.3;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ivery IS-1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ivery IS-1 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Ivery IS-1 Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.4dB.
+When using independent subset of filters, apply preamp of **-5.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -5.4dB.
 | Peaking | 364 Hz   | 0.22 | -10.3 dB |
 | Peaking | 1658 Hz  | 0.27 | 9.5 dB   |
 | Peaking | 7532 Hz  | 3.11 | -12.2 dB |
-| Peaking | 22 Hz    | 1.16 | -1.3 dB  |
+| Peaking | 22 Hz    | 1.13 | -1.3 dB  |
 | Peaking | 1534 Hz  | 2.48 | -2.3 dB  |
-| Peaking | 2804 Hz  | 0.52 | 1.3 dB   |
-| Peaking | 4622 Hz  | 5.38 | -3.1 dB  |
-| Peaking | 13251 Hz | 4.51 | -2.8 dB  |
+| Peaking | 2801 Hz  | 0.52 | 1.3 dB   |
+| Peaking | 4613 Hz  | 5.38 | -3.1 dB  |
+| Peaking | 13306 Hz | 4.51 | -2.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ivery%20IS-1/Ivery%20IS-1.png)

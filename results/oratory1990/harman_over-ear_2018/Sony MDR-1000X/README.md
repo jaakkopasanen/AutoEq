@@ -9,8 +9,9 @@ GraphicEQ: 21 -6.8; 23 -7.1; 25 -7.4; 28 -7.6; 31 -7.7; 34 -7.8; 37 -7.7; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--1.7dB` and instead set Global volume in the UI for both channels to **-16**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-1000X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-16**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1000X ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1000X P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.0dB.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|

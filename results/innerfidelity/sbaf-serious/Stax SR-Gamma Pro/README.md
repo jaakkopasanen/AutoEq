@@ -9,27 +9,28 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-Gamma Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-Gamma Pro ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.3dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 35 Hz   | 0.9  | 7.2 dB  |
-| Peaking | 1801 Hz | 1.25 | -8.7 dB |
-| Peaking | 2658 Hz | 0.58 | 7.5 dB  |
-| Peaking | 6009 Hz | 2.53 | -4.3 dB |
-| Peaking | 9094 Hz | 4.45 | -6.2 dB |
-| Peaking | 35 Hz   | 1.42 | -6.2 dB |
-| Peaking | 40 Hz   | 0.43 | 5.7 dB  |
-| Peaking | 123 Hz  | 0.66 | -4.1 dB |
-| Peaking | 379 Hz  | 1.03 | 1.1 dB  |
+| Peaking | 1809 Hz | 1.26 | -8.7 dB |
+| Peaking | 2651 Hz | 0.58 | 7.5 dB  |
+| Peaking | 5992 Hz | 2.53 | -4.3 dB |
+| Peaking | 9111 Hz | 4.44 | -6.2 dB |
+| Peaking | 35 Hz   | 1.45 | -6.2 dB |
+| Peaking | 41 Hz   | 0.42 | 5.7 dB  |
+| Peaking | 120 Hz  | 0.64 | -4.1 dB |
+| Peaking | 380 Hz  | 1.11 | 1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-Gamma%20Pro/Stax%20SR-Gamma%20Pro.png)

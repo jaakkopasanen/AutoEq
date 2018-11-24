@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.4; 23 -4.3; 25 -4.2; 28 -4.1; 31 -3.9; 34 -3.7; 37 -3.6; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Dunu DN2000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Dunu DN2000 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Dunu DN2000 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 14 Hz   | 0.3  | -4.5 dB |
-| Peaking | 190 Hz  | 0.49 | -3.1 dB |
-| Peaking | 3091 Hz | 2.02 | 6.3 dB  |
-| Peaking | 6476 Hz | 5.09 | 5.1 dB  |
-| Peaking | 8972 Hz | 3.83 | -7.5 dB |
-| Peaking | 1616 Hz | 4.82 | -0.3 dB |
-| Peaking | 2140 Hz | 5.11 | 1.3 dB  |
-| Peaking | 3810 Hz | 6.65 | 3.3 dB  |
-| Peaking | 4738 Hz | 3.85 | -4.8 dB |
-| Peaking | 5655 Hz | 5.85 | 2.8 dB  |
+| Peaking | 15 Hz   | 0.31 | -4.4 dB |
+| Peaking | 191 Hz  | 0.49 | -3.1 dB |
+| Peaking | 3090 Hz | 2.02 | 6.3 dB  |
+| Peaking | 6473 Hz | 5.09 | 5.1 dB  |
+| Peaking | 8963 Hz | 3.83 | -7.5 dB |
+| Peaking | 1617 Hz | 4.72 | -0.3 dB |
+| Peaking | 2141 Hz | 5.09 | 1.3 dB  |
+| Peaking | 3794 Hz | 6.59 | 3.3 dB  |
+| Peaking | 4726 Hz | 3.78 | -4.9 dB |
+| Peaking | 5625 Hz | 5.65 | 2.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Dunu%20DN2000/Dunu%20DN2000.png)

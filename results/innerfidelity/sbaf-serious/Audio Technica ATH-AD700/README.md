@@ -9,27 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-AD700 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-AD700 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 44 Hz   |  0.23 | 6.4 dB  |
-| Peaking | 149 Hz  |  1.04 | -1.9 dB |
-| Peaking | 554 Hz  |  1.8  | 1.2 dB  |
-| Peaking | 3750 Hz |  7.16 | 4.8 dB  |
-| Peaking | 5913 Hz |  3.87 | 6.7 dB  |
-| Peaking | 1496 Hz |  2.26 | -1.3 dB |
-| Peaking | 2637 Hz |  4.62 | 1.2 dB  |
-| Peaking | 4558 Hz | 12.78 | -1.8 dB |
-| Peaking | 9658 Hz |  4.98 | -1.3 dB |
+| Peaking | 43 Hz   |  0.23 | 6.4 dB  |
+| Peaking | 149 Hz  |  1.05 | -1.9 dB |
+| Peaking | 553 Hz  |  1.8  | 1.2 dB  |
+| Peaking | 3741 Hz |  6.82 | 4.7 dB  |
+| Peaking | 5918 Hz |  3.88 | 6.7 dB  |
+| Peaking | 163 Hz  |  5.92 | 0.2 dB  |
+| Peaking | 1493 Hz |  2.28 | -1.3 dB |
+| Peaking | 2616 Hz |  4.95 | 1.2 dB  |
+| Peaking | 4539 Hz | 13.14 | -1.8 dB |
+| Peaking | 9670 Hz |  4.99 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-AD700/Audio%20Technica%20ATH-AD700.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultrasone PROline 550 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone PROline 550 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 67 Hz    |  0.22 | 6.7 dB  |
-| Peaking | 3502 Hz  |  1.84 | 3.3 dB  |
-| Peaking | 6369 Hz  |  6.6  | 6.0 dB  |
-| Peaking | 9129 Hz  |  5.27 | -5.1 dB |
-| Peaking | 17478 Hz |  3.08 | -3.7 dB |
-| Peaking | 19 Hz    |  2.14 | 1.2 dB  |
-| Peaking | 335 Hz   |  1.61 | 6.0 dB  |
-| Peaking | 448 Hz   |  1.58 | -6.5 dB |
-| Peaking | 1981 Hz  |  5.02 | 2.2 dB  |
-| Peaking | 2467 Hz  | 11.45 | -3.2 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 67 Hz    | 0.22 | 6.7 dB  |
+| Peaking | 3503 Hz  | 1.84 | 3.3 dB  |
+| Peaking | 6349 Hz  | 6.6  | 6.0 dB  |
+| Peaking | 9099 Hz  | 5.28 | -5.1 dB |
+| Peaking | 17503 Hz | 3.09 | -3.7 dB |
+| Peaking | 20 Hz    | 1.35 | 1.9 dB  |
+| Peaking | 166 Hz   | 0.09 | -0.9 dB |
+| Peaking | 353 Hz   | 1.03 | 6.6 dB  |
+| Peaking | 459 Hz   | 1.77 | -7.9 dB |
+| Peaking | 1928 Hz  | 6.8  | 2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20PROline%20550/Ultrasone%20PROline%20550.png)

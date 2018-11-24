@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.7; 25 0.2; 28 -0.3; 31 -0.8; 34 -1.2; 37 -1.5; 41 -1.8; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.1dB` and instead set Global volume in the UI for both channels to **-31**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Dunu DN2000J GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-31**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Dunu DN2000J ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Dunu DN2000J Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.3dB.
+When using independent subset of filters, apply preamp of **-0.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -0.3dB.
 | Peaking | 5821 Hz  | 3.4  | -8.4 dB |
 | Peaking | 8596 Hz  | 2.04 | -7.3 dB |
 | Peaking | 10829 Hz | 2.72 | 3.0 dB  |
-| Peaking | 19 Hz    | 2.26 | 1.7 dB  |
-| Peaking | 891 Hz   | 1.65 | 1.1 dB  |
-| Peaking | 1812 Hz  | 1.57 | -2.2 dB |
-| Peaking | 3828 Hz  | 3.88 | 5.1 dB  |
-| Peaking | 4715 Hz  | 7.05 | -3.8 dB |
+| Peaking | 19 Hz    | 2.14 | 1.9 dB  |
+| Peaking | 890 Hz   | 1.66 | 1.1 dB  |
+| Peaking | 1811 Hz  | 1.57 | -2.2 dB |
+| Peaking | 3813 Hz  | 3.88 | 5.1 dB  |
+| Peaking | 4692 Hz  | 7.05 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Dunu%20DN2000J/Dunu%20DN2000J.png)

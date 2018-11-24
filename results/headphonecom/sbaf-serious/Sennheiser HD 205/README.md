@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.8; 25 5.6; 28 5.2; 31 4.8; 34 4.3; 37 3.9; 41 3.6; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 205 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 205 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 20
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 0.81 | 5.9 dB  |
+| Peaking | 25 Hz    | 0.79 | 5.8 dB  |
 | Peaking | 412 Hz   | 3.34 | 4.4 dB  |
-| Peaking | 734 Hz   | 5.78 | 4.6 dB  |
+| Peaking | 736 Hz   | 5.78 | 4.6 dB  |
 | Peaking | 4011 Hz  | 1.85 | 6.4 dB  |
 | Peaking | 24000 Hz | 2.5  | 2.6 dB  |
-| Peaking | 116 Hz   | 3.61 | -1.3 dB |
-| Peaking | 1672 Hz  | 1.8  | -3.1 dB |
-| Peaking | 2798 Hz  | 3.95 | 1.7 dB  |
-| Peaking | 5152 Hz  | 8.92 | -4.7 dB |
-| Peaking | 6129 Hz  | 5.2  | 5.2 dB  |
+| Peaking | 114 Hz   | 3.48 | -1.3 dB |
+| Peaking | 1672 Hz  | 1.79 | -3.1 dB |
+| Peaking | 2798 Hz  | 3.95 | 1.8 dB  |
+| Peaking | 5150 Hz  | 9.01 | -4.7 dB |
+| Peaking | 6130 Hz  | 5.22 | 5.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20205/Sennheiser%20HD%20205.png)

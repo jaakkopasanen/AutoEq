@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser EH250 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser EH250 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser EH250
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 33 Hz    | 0.62 | 6.7 dB  |
+| Peaking | 33 Hz    | 0.63 | 6.7 dB  |
 | Peaking | 231 Hz   | 1.43 | 4.7 dB  |
-| Peaking | 4462 Hz  | 0.69 | 3.3 dB  |
-| Peaking | 11997 Hz | 2.42 | 5.1 dB  |
-| Peaking | 13500 Hz | 1.01 | -6.4 dB |
-| Peaking | 1741 Hz  | 1.85 | -1.3 dB |
-| Peaking | 3478 Hz  | 3.46 | 6.0 dB  |
-| Peaking | 4092 Hz  | 4.87 | -8.3 dB |
-| Peaking | 5963 Hz  | 4.56 | 4.9 dB  |
-| Peaking | 7083 Hz  | 5.3  | -3.7 dB |
+| Peaking | 4454 Hz  | 0.69 | 3.3 dB  |
+| Peaking | 12072 Hz | 2.42 | 5.1 dB  |
+| Peaking | 13430 Hz | 1.01 | -6.4 dB |
+| Peaking | 1738 Hz  | 1.88 | -1.3 dB |
+| Peaking | 3476 Hz  | 3.5  | 6.0 dB  |
+| Peaking | 4097 Hz  | 4.89 | -8.2 dB |
+| Peaking | 5972 Hz  | 4.44 | 4.8 dB  |
+| Peaking | 7080 Hz  | 5.45 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20EH250/Sennheiser%20EH250.png)

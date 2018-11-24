@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-AD900 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-AD900 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 39 Hz    | 0.4  | 6.5 dB   |
-| Peaking | 1628 Hz  | 2.72 | -6.1 dB  |
-| Peaking | 4231 Hz  | 2.33 | -13.0 dB |
-| Peaking | 4552 Hz  | 0.55 | 6.9 dB   |
-| Peaking | 9340 Hz  | 2.67 | -5.5 dB  |
-| Peaking | 39 Hz    | 2.56 | -0.6 dB  |
-| Peaking | 85 Hz    | 6.77 | 1.7 dB   |
-| Peaking | 159 Hz   | 2.5  | -0.7 dB  |
-| Peaking | 13468 Hz | 3.7  | -0.6 dB  |
-| Peaking | 16298 Hz | 1.77 | -0.4 dB  |
+| Peaking | 39 Hz    | 0.39 | 6.5 dB   |
+| Peaking | 1616 Hz  | 2.72 | -6.1 dB  |
+| Peaking | 4269 Hz  | 2.33 | -13.0 dB |
+| Peaking | 4504 Hz  | 0.55 | 6.9 dB   |
+| Peaking | 9335 Hz  | 2.68 | -5.5 dB  |
+| Peaking | 41 Hz    | 2.62 | -0.5 dB  |
+| Peaking | 86 Hz    | 6.89 | 1.7 dB   |
+| Peaking | 160 Hz   | 2.44 | -0.7 dB  |
+| Peaking | 6578 Hz  | 8.66 | 1.0 dB   |
+| Peaking | 14664 Hz | 1.62 | -0.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audio%20Technica%20ATH-AD900/Audio%20Technica%20ATH-AD900.png)

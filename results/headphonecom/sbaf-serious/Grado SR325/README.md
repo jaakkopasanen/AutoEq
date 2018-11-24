@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado SR325 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR325 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado SR325 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 2083 Hz  | 2.53 | -8.4 dB  |
 | Peaking | 4585 Hz  | 5.72 | -12.4 dB |
 | Peaking | 9453 Hz  | 1.88 | -12.8 dB |
-| Peaking | 2652 Hz  | 5.94 | -1.1 dB  |
-| Peaking | 3698 Hz  | 4.3  | 4.7 dB   |
-| Peaking | 4127 Hz  | 3.33 | -2.8 dB  |
-| Peaking | 11697 Hz | 3.27 | -3.6 dB  |
-| Peaking | 13408 Hz | 2.01 | 3.7 dB   |
+| Peaking | 2653 Hz  | 6.01 | -1.1 dB  |
+| Peaking | 3694 Hz  | 4.28 | 4.7 dB   |
+| Peaking | 4114 Hz  | 3.16 | -2.8 dB  |
+| Peaking | 11714 Hz | 3.24 | -3.6 dB  |
+| Peaking | 13373 Hz | 1.99 | 3.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20SR325/Grado%20SR325.png)

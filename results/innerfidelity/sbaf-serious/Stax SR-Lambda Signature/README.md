@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.6; 34 4.2; 37 2.4; 41 0.4; 45 -1
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-Lambda Signature GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-Lambda Signature ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-8.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 25 Hz    | 1.9  | 7.2 dB  |
-| Peaking | 1747 Hz  | 2.71 | -5.5 dB |
-| Peaking | 2518 Hz  | 4.05 | 5.2 dB  |
-| Peaking | 5617 Hz  | 6.92 | 3.2 dB  |
-| Peaking | 9008 Hz  | 5.77 | -4.0 dB |
-| Peaking | 52 Hz    | 2.11 | -3.8 dB |
-| Peaking | 84 Hz    | 0.16 | 1.2 dB  |
-| Peaking | 557 Hz   | 0.89 | 1.2 dB  |
-| Peaking | 1363 Hz  | 4.61 | -1.5 dB |
-| Peaking | 10687 Hz | 5.7  | 0.5 dB  |
+| Peaking | 25 Hz    | 1.98 | 7.1 dB  |
+| Peaking | 1744 Hz  | 2.71 | -5.5 dB |
+| Peaking | 2493 Hz  | 4.04 | 5.2 dB  |
+| Peaking | 5620 Hz  | 7.06 | 3.2 dB  |
+| Peaking | 9011 Hz  | 5.8  | -4.0 dB |
+| Peaking | 52 Hz    | 2.2  | -3.6 dB |
+| Peaking | 112 Hz   | 0.21 | 1.1 dB  |
+| Peaking | 560 Hz   | 0.89 | 1.2 dB  |
+| Peaking | 1370 Hz  | 4.47 | -1.5 dB |
+| Peaking | 10715 Hz | 6.79 | 0.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-Lambda%20Signature/Stax%20SR-Lambda%20Signature.png)

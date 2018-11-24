@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.6; 25 2.3; 28 1.9; 31 1.6; 34 1.4; 37 1.2; 41 1.2; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.3dB` and instead set Global volume in the UI for both channels to **-33**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 800 Balanced GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-33**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 800 Balanced ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 80
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.2dB.
+When using independent subset of filters, apply preamp of **-3.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -3.2dB.
 | Peaking | 256 Hz  | 0.26 | -4.3 dB |
 | Peaking | 2119 Hz | 0.14 | 2.8 dB  |
 | Peaking | 6580 Hz | 1.36 | -7.6 dB |
-| Peaking | 3640 Hz | 7.74 | 1.9 dB  |
-| Peaking | 4511 Hz | 7.4  | -2.0 dB |
-| Peaking | 7820 Hz | 7.32 | -2.0 dB |
-| Peaking | 8915 Hz | 6.7  | 1.3 dB  |
-| Peaking | 9375 Hz | 4.13 | 0.8 dB  |
+| Peaking | 3629 Hz | 7.88 | 1.9 dB  |
+| Peaking | 4492 Hz | 7.54 | -2.0 dB |
+| Peaking | 7808 Hz | 7.63 | -2.0 dB |
+| Peaking | 8909 Hz | 7.14 | 1.3 dB  |
+| Peaking | 9395 Hz | 4.29 | 0.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20800%20Balanced/Sennheiser%20HD%20800%20Balanced.png)

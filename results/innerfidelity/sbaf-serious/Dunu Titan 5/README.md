@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.2; 23 -4.3; 25 -4.3; 28 -4.4; 31 -4.4; 34 -4.5; 37 -4.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.1dB` and instead set Global volume in the UI for both channels to **-21**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Dunu Titan 5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-21**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Dunu Titan 5 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Dunu Titan 5 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -0.1dB.
 | Peaking | 2048 Hz | 2.11 | -4.8 dB |
 | Peaking | 5668 Hz | 5.32 | -9.0 dB |
 | Peaking | 743 Hz  | 2.42 | 1.6 dB  |
-| Peaking | 2734 Hz | 5.3  | -1.6 dB |
-| Peaking | 3641 Hz | 3.15 | 4.9 dB  |
-| Peaking | 4567 Hz | 0.84 | -1.8 dB |
-| Peaking | 7311 Hz | 4.36 | 2.6 dB  |
+| Peaking | 2730 Hz | 5.3  | -1.6 dB |
+| Peaking | 3636 Hz | 3.15 | 4.9 dB  |
+| Peaking | 4572 Hz | 0.84 | -1.8 dB |
+| Peaking | 7320 Hz | 4.35 | 2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Dunu%20Titan%205/Dunu%20Titan%205.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.8; 23 -1.0; 25 -1.2; 28 -1.3; 31 -1.4; 34 -1.5; 37 -1.6; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser RS 160 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 160 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 16
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 2474 Hz | 2.37 | -3.0 dB |
 | Peaking | 5862 Hz | 2.49 | 7.2 dB  |
 | Peaking | 9344 Hz | 3.93 | -7.8 dB |
-| Peaking | 36 Hz   | 1.06 | -0.7 dB |
-| Peaking | 41 Hz   | 0.36 | -0.7 dB |
-| Peaking | 91 Hz   | 3.56 | 1.5 dB  |
-| Peaking | 823 Hz  | 1.58 | 2.9 dB  |
-| Peaking | 1106 Hz | 2.08 | -1.9 dB |
+| Peaking | 36 Hz   | 1.07 | -0.7 dB |
+| Peaking | 42 Hz   | 0.35 | -0.7 dB |
+| Peaking | 92 Hz   | 3.6  | 1.5 dB  |
+| Peaking | 826 Hz  | 1.58 | 2.9 dB  |
+| Peaking | 1103 Hz | 2.09 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20160/Sennheiser%20RS%20160.png)

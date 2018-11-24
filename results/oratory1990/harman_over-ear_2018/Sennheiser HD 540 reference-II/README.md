@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.3; 31 4.6; 34 4.0; 37 3.5; 41 3.0; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 540 reference-II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 540 reference-II ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 54
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.9dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.9dB.
 | Peaking | 1736 Hz  | 2.21 | 2.9 dB   |
 | Peaking | 6012 Hz  | 2.62 | -4.4 dB  |
 | Peaking | 13134 Hz | 2.94 | -10.2 dB |
-| Peaking | 970 Hz   | 8.61 | 1.2 dB   |
-| Peaking | 2094 Hz  | 4.61 | 0.5 dB   |
-| Peaking | 2816 Hz  | 5    | -1.1 dB  |
-| Peaking | 10287 Hz | 4.93 | 2.8 dB   |
-| Peaking | 19318 Hz | 1.75 | -7.2 dB  |
+| Peaking | 966 Hz   | 8.51 | 1.2 dB   |
+| Peaking | 2107 Hz  | 4.23 | 0.5 dB   |
+| Peaking | 2806 Hz  | 4.66 | -1.1 dB  |
+| Peaking | 10234 Hz | 4.92 | 2.8 dB   |
+| Peaking | 19208 Hz | 1.76 | -7.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20540%20reference-II/Sennheiser%20HD%20540%20reference-II.png)

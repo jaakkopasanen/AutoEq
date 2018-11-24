@@ -9,27 +9,29 @@ GraphicEQ: 21 0.0; 23 2.8; 25 2.4; 28 1.9; 31 1.5; 34 1.2; 37 0.9; 41 0.6; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.6dB` and instead set Global volume in the UI for both channels to **-35**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic T1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.5dB.
+When using independent subset of filters, apply preamp of **-3.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 12 Hz    | 0.53 | 4.8 dB   |
-| Peaking | 208 Hz   | 0.55 | -4.1 dB  |
-| Peaking | 1942 Hz  | 7.41 | -2.2 dB  |
-| Peaking | 6636 Hz  | 2.23 | 4.3 dB   |
-| Peaking | 8689 Hz  | 3.61 | -11.5 dB |
-| Peaking | 1281 Hz  | 4.02 | 1.9 dB   |
-| Peaking | 11620 Hz | 2.61 | 3.2 dB   |
-| Peaking | 14167 Hz | 0.98 | -2.7 dB  |
-| Peaking | 16930 Hz | 1.62 | 1.6 dB   |
+| Peaking | 12 Hz    | 0.55 | 4.6 dB   |
+| Peaking | 206 Hz   | 0.54 | -4.1 dB  |
+| Peaking | 1937 Hz  | 7    | -2.2 dB  |
+| Peaking | 6636 Hz  | 2.21 | 4.3 dB   |
+| Peaking | 8686 Hz  | 3.61 | -11.5 dB |
+| Peaking | 67 Hz    | 6.42 | 1.3 dB   |
+| Peaking | 655 Hz   | 0.02 | -0.1 dB  |
+| Peaking | 1275 Hz  | 3.46 | 2.0 dB   |
+| Peaking | 11114 Hz | 5.91 | 2.0 dB   |
+| Peaking | 14510 Hz | 4.74 | -1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20T1/Beyerdynamic%20T1.png)

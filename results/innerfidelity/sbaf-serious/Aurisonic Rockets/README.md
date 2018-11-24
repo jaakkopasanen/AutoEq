@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.7; 25 1.6; 28 1.5; 31 1.4; 34 1.2; 37 1.1; 41 0.9; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Aurisonic Rockets GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Aurisonic Rockets ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Aurisonic Rocket
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 740 Hz  | 1.58 | 1.3 dB  |
 | Peaking | 1877 Hz | 1.65 | -3.7 dB |
 | Peaking | 3989 Hz | 0.98 | 7.3 dB  |
-| Peaking | 3066 Hz | 6.97 | 1.7 dB  |
-| Peaking | 4101 Hz | 3.58 | -0.9 dB |
-| Peaking | 6355 Hz | 2.32 | 4.8 dB  |
-| Peaking | 7222 Hz | 0.72 | -1.5 dB |
-| Peaking | 7474 Hz | 2.85 | -2.8 dB |
+| Peaking | 3071 Hz | 6.94 | 1.7 dB  |
+| Peaking | 4102 Hz | 3.55 | -0.9 dB |
+| Peaking | 6352 Hz | 2.31 | 4.8 dB  |
+| Peaking | 7220 Hz | 0.71 | -1.5 dB |
+| Peaking | 7476 Hz | 2.83 | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Aurisonic%20Rockets/Aurisonic%20Rockets.png)

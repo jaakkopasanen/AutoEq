@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 448 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 448 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 0.91 | 5.7 dB  |
-| Peaking | 54 Hz   | 1.33 | 4.2 dB  |
-| Peaking | 1709 Hz | 2.67 | -5.0 dB |
-| Peaking | 4305 Hz | 1.83 | 6.0 dB  |
-| Peaking | 6248 Hz | 6.21 | 4.3 dB  |
-| Peaking | 112 Hz  | 4.03 | 3.0 dB  |
-| Peaking | 181 Hz  | 1.15 | -2.8 dB |
-| Peaking | 348 Hz  | 1.85 | 1.8 dB  |
-| Peaking | 2502 Hz | 9.95 | 2.0 dB  |
-| Peaking | 8381 Hz | 3.41 | -0.9 dB |
+| Peaking | 25 Hz   | 0.92 | 5.6 dB  |
+| Peaking | 53 Hz   | 1.35 | 4.2 dB  |
+| Peaking | 1710 Hz | 2.67 | -5.0 dB |
+| Peaking | 4315 Hz | 1.82 | 6.0 dB  |
+| Peaking | 6201 Hz | 6.23 | 4.3 dB  |
+| Peaking | 112 Hz  | 3.96 | 3.0 dB  |
+| Peaking | 183 Hz  | 1.24 | -2.8 dB |
+| Peaking | 351 Hz  | 1.76 | 1.7 dB  |
+| Peaking | 2512 Hz | 8.3  | 2.2 dB  |
+| Peaking | 5730 Hz | 0.19 | -0.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20448/Sennheiser%20HD%20448.png)

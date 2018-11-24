@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.9; 23 -2.1; 25 -3.0; 28 -4.0; 31 -4.4; 34 -4.6; 37 -4.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-48**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bose QuietComfort 20 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-48**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfort 20 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfor
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.4dB.
+When using independent subset of filters, apply preamp of **--0.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of --0.4dB.
 | Peaking | 401 Hz   | 1.75 | -3.4 dB  |
 | Peaking | 1820 Hz  | 2.26 | -7.4 dB  |
 | Peaking | 17820 Hz | 1.35 | -12.5 dB |
-| Peaking | 881 Hz   | 3.98 | 2.4 dB   |
-| Peaking | 4298 Hz  | 2.97 | -5.5 dB  |
-| Peaking | 6068 Hz  | 2.46 | 7.6 dB   |
+| Peaking | 876 Hz   | 3.98 | 2.4 dB   |
+| Peaking | 4300 Hz  | 2.97 | -5.5 dB  |
+| Peaking | 6069 Hz  | 2.46 | 7.6 dB   |
 | Peaking | 7516 Hz  | 4.64 | -6.7 dB  |
 | Peaking | 13087 Hz | 4.55 | 3.3 dB   |
 

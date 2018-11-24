@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K240DF GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K240DF ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K240DF Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 39 Hz   |  0.66 | 7.0 dB  |
-| Peaking | 1846 Hz |  2.33 | -2.8 dB |
-| Peaking | 4277 Hz |  2.07 | -9.7 dB |
-| Peaking | 5511 Hz |  0.93 | 10.8 dB |
-| Peaking | 9081 Hz |  2.19 | -9.6 dB |
-| Peaking | 41 Hz   |  2.68 | -1.5 dB |
-| Peaking | 84 Hz   |  1    | 2.2 dB  |
-| Peaking | 271 Hz  |  0.44 | -2.4 dB |
-| Peaking | 1214 Hz |  0.33 | 0.6 dB  |
-| Peaking | 3636 Hz | 13.22 | -2.3 dB |
+| Peaking | 1860 Hz |  2.34 | -2.8 dB |
+| Peaking | 4236 Hz |  2.08 | -9.7 dB |
+| Peaking | 5556 Hz |  0.94 | 10.8 dB |
+| Peaking | 9141 Hz |  2.18 | -9.6 dB |
+| Peaking | 41 Hz   |  2.88 | -1.4 dB |
+| Peaking | 82 Hz   |  1.27 | 1.9 dB  |
+| Peaking | 263 Hz  |  0.63 | -2.2 dB |
+| Peaking | 3030 Hz |  5.61 | 2.0 dB  |
+| Peaking | 3557 Hz | 10.39 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K240DF/AKG%20K240DF.png)

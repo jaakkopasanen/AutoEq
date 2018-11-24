@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 1.6; 25 1.6; 28 1.5; 31 1.5; 34 1.5; 37 1.4; 41 1.4; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Oppo PM3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 35 Hz   | 0.69 | 1.8 dB  |
+| Peaking | 35 Hz   | 0.68 | 1.8 dB  |
 | Peaking | 368 Hz  | 1.76 | 3.2 dB  |
-| Peaking | 2052 Hz | 1.69 | -3.5 dB |
-| Peaking | 3183 Hz | 4.74 | 0.9 dB  |
-| Peaking | 5666 Hz | 2.86 | 7.0 dB  |
-| Peaking | 84 Hz   | 1.92 | 0.9 dB  |
-| Peaking | 132 Hz  | 1.11 | -0.9 dB |
-| Peaking | 290 Hz  | 5.13 | 0.7 dB  |
-| Peaking | 6659 Hz | 7.85 | 2.3 dB  |
-| Peaking | 7647 Hz | 2.27 | -1.3 dB |
+| Peaking | 2053 Hz | 1.69 | -3.5 dB |
+| Peaking | 3182 Hz | 4.74 | 0.9 dB  |
+| Peaking | 5665 Hz | 2.86 | 7.0 dB  |
+| Peaking | 82 Hz   | 1.92 | 0.8 dB  |
+| Peaking | 133 Hz  | 1.14 | -0.9 dB |
+| Peaking | 288 Hz  | 5.24 | 0.7 dB  |
+| Peaking | 6589 Hz | 7.85 | 2.2 dB  |
+| Peaking | 7643 Hz | 2.27 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM3/Oppo%20PM3.png)

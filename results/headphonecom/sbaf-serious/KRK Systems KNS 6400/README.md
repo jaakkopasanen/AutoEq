@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.8; 25 4.5; 28 4.2; 31 3.9; 34 3.8; 37 3.7; 41 3.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`KRK Systems KNS 6400 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `KRK Systems KNS 6400 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `KRK Systems KNS 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 0.7  | 4.9 dB  |
-| Peaking | 68 Hz   | 1.4  | 7.2 dB  |
-| Peaking | 94 Hz   | 1.19 | -2.3 dB |
-| Peaking | 246 Hz  | 0.89 | -4.4 dB |
-| Peaking | 2233 Hz | 2.7  | -4.3 dB |
-| Peaking | 2688 Hz | 6.41 | -2.1 dB |
-| Peaking | 5337 Hz | 6.15 | 2.3 dB  |
-| Peaking | 5433 Hz | 0.98 | 2.2 dB  |
-| Peaking | 6405 Hz | 4.81 | -4.3 dB |
-| Peaking | 9602 Hz | 5.94 | -3.9 dB |
+| Peaking | 16 Hz   | 0.57 | 5.1 dB  |
+| Peaking | 67 Hz   | 1.49 | 7.1 dB  |
+| Peaking | 94 Hz   | 0.93 | -2.1 dB |
+| Peaking | 252 Hz  | 0.91 | -4.3 dB |
+| Peaking | 2234 Hz | 2.7  | -4.3 dB |
+| Peaking | 2704 Hz | 6.31 | -2.0 dB |
+| Peaking | 5345 Hz | 6.02 | 2.4 dB  |
+| Peaking | 5403 Hz | 0.97 | 2.1 dB  |
+| Peaking | 6411 Hz | 4.81 | -4.2 dB |
+| Peaking | 9600 Hz | 5.96 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/KRK%20Systems%20KNS%206400/KRK%20Systems%20KNS%206400.png)

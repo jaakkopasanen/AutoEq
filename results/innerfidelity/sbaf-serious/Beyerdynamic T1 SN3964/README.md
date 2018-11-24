@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.3; 25 2.9; 28 2.4; 31 2.1; 34 1.8; 37 1.5; 41 1.2; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-49**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic T1 sn3964 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-49**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T1 sn3964 ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T1 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.4dB.
+When using independent subset of filters, apply preamp of **-5.4dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 187 Hz  |  0.61 | -3.3 dB |
 | Peaking | 2384 Hz |  3.11 | -1.8 dB |
-| Peaking | 5251 Hz | 13.49 | 5.9 dB  |
-| Peaking | 8554 Hz |  4.07 | -9.0 dB |
-| Peaking | 16 Hz   |  0.63 | 4.3 dB  |
-| Peaking | 65 Hz   |  4.02 | 1.3 dB  |
-| Peaking | 4442 Hz |  4.25 | -4.1 dB |
-| Peaking | 5411 Hz |  1.37 | 2.7 dB  |
-| Peaking | 6157 Hz |  9.43 | -6.7 dB |
+| Peaking | 5269 Hz | 13.39 | 5.8 dB  |
+| Peaking | 8580 Hz |  4.07 | -9.0 dB |
+| Peaking | 17 Hz   |  0.69 | 4.2 dB  |
+| Peaking | 63 Hz   |  4.03 | 1.4 dB  |
+| Peaking | 4434 Hz |  4.35 | -4.1 dB |
+| Peaking | 5359 Hz |  1.33 | 2.6 dB  |
+| Peaking | 6145 Hz |  9.4  | -6.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T1%20sn3964/Beyerdynamic%20T1%20sn3964.png)

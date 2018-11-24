@@ -9,16 +9,17 @@ GraphicEQ: 21 -1.8; 23 -1.9; 25 -2.0; 28 -2.1; 31 -2.2; 34 -2.2; 37 -2.3; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Plantronics BackBeat 500 Wired GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Plantronics BackBeat 500 Wired ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 296 Hz  | 3.19 | -1.0 dB |
 | Peaking | 1807 Hz | 2.95 | -3.7 dB |
 | Peaking | 4531 Hz | 1.2  | 6.6 dB  |
-| Peaking | 2254 Hz | 5.5  | -1.6 dB |
-| Peaking | 2591 Hz | 2.59 | 1.4 dB  |
-| Peaking | 4768 Hz | 2.97 | -0.7 dB |
-| Peaking | 6276 Hz | 3.14 | 4.6 dB  |
-| Peaking | 7390 Hz | 1.58 | -3.2 dB |
+| Peaking | 2262 Hz | 5.5  | -1.6 dB |
+| Peaking | 2573 Hz | 2.59 | 1.4 dB  |
+| Peaking | 4752 Hz | 2.96 | -0.6 dB |
+| Peaking | 6315 Hz | 3.17 | 4.6 dB  |
+| Peaking | 7353 Hz | 1.6  | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Plantronics%20BackBeat%20500%20Wired/Plantronics%20BackBeat%20500%20Wired.png)

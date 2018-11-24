@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.3; 23 -4.5; 25 -4.7; 28 -4.8; 31 -4.8; 34 -4.7; 37 -4.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`SMS DJ Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `SMS DJ Pro ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `SMS DJ Pro Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 416 Hz  |  1.55 | -4.1 dB |
 | Peaking | 3227 Hz |  2.17 | 4.9 dB  |
 | Peaking | 5936 Hz |  3.74 | 6.1 dB  |
-| Peaking | 766 Hz  | 11.94 | 1.5 dB  |
-| Peaking | 1170 Hz |  3.71 | 0.8 dB  |
-| Peaking | 1700 Hz |  3.04 | -1.8 dB |
-| Peaking | 2518 Hz |  4.5  | 0.9 dB  |
-| Peaking | 8225 Hz |  4.81 | -1.0 dB |
+| Peaking | 768 Hz  | 11.95 | 1.5 dB  |
+| Peaking | 1169 Hz |  3.71 | 0.8 dB  |
+| Peaking | 1701 Hz |  3.04 | -1.8 dB |
+| Peaking | 2524 Hz |  4.5  | 0.9 dB  |
+| Peaking | 8228 Hz |  4.81 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/SMS%20DJ%20Pro/SMS%20DJ%20Pro.png)

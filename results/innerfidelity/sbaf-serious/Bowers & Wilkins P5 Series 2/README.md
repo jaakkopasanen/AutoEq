@@ -9,8 +9,9 @@ GraphicEQ: 21 -6.7; 23 -7.2; 25 -7.6; 28 -8.1; 31 -8.4; 34 -8.7; 37 -8.8; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.5dB` and instead set Global volume in the UI for both channels to **-45**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bowers & Wilkins P5 Series 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-45**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins P5 Series 2 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.5dB.
+When using independent subset of filters, apply preamp of **-4.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -4.5dB.
 | Peaking | 199 Hz   | 0.44 | -7.3 dB |
 | Peaking | 581 Hz   | 0.95 | 8.6 dB  |
 | Peaking | 1797 Hz  | 1.26 | -7.9 dB |
-| Peaking | 2394 Hz  | 5.11 | -1.6 dB |
-| Peaking | 3522 Hz  | 1.86 | 3.8 dB  |
-| Peaking | 4559 Hz  | 2.01 | -4.7 dB |
-| Peaking | 6939 Hz  | 6.28 | 3.2 dB  |
-| Peaking | 18592 Hz | 2.44 | -1.7 dB |
+| Peaking | 2385 Hz  | 5.11 | -1.6 dB |
+| Peaking | 3509 Hz  | 1.87 | 3.8 dB  |
+| Peaking | 4567 Hz  | 2.01 | -4.7 dB |
+| Peaking | 6962 Hz  | 6.27 | 3.2 dB  |
+| Peaking | 18668 Hz | 2.47 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bowers%20&%20Wilkins%20P5%20Series%202/Bowers%20&%20Wilkins%20P5%20Series%202.png)

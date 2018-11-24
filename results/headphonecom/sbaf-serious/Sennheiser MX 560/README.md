@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser MX 560 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser MX 560 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser MX 56
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.4dB.
 | Peaking | 2386 Hz  | 1.86 | -12.6 dB |
 | Peaking | 6771 Hz  | 0.88 | -4.8 dB  |
 | Peaking | 24000 Hz | 2.17 | -3.9 dB  |
-| Peaking | 3767 Hz  | 3.74 | 4.5 dB   |
-| Peaking | 4554 Hz  | 1.03 | -2.4 dB  |
-| Peaking | 7599 Hz  | 3.13 | 4.2 dB   |
-| Peaking | 9409 Hz  | 2.82 | -4.6 dB  |
-| Peaking | 11396 Hz | 3.27 | 3.5 dB   |
+| Peaking | 3761 Hz  | 3.74 | 4.5 dB   |
+| Peaking | 4577 Hz  | 1.02 | -2.3 dB  |
+| Peaking | 7606 Hz  | 3.13 | 4.2 dB   |
+| Peaking | 9412 Hz  | 2.84 | -4.6 dB  |
+| Peaking | 11387 Hz | 3.23 | 3.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20MX%20560/Sennheiser%20MX%20560.png)

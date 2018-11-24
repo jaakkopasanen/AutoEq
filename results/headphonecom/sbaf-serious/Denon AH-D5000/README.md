@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 1.4; 25 0.8; 28 0.2; 31 -0.1; 34 -0.4; 37 -0.7; 41 -0.9; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.6dB` and instead set Global volume in the UI for both channels to **-26**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-D5000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-26**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D5000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.9dB.
+When using independent subset of filters, apply preamp of **-1.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 19 Hz    | 2.65 | 2.7 dB  |
-| Peaking | 145 Hz   | 0.64 | -2.6 dB |
-| Peaking | 1728 Hz  | 2.33 | -4.0 dB |
-| Peaking | 7913 Hz  | 1.58 | -4.3 dB |
-| Peaking | 20002 Hz | 4.44 | -7.4 dB |
-| Peaking | 610 Hz   | 4.73 | 2.3 dB  |
-| Peaking | 3163 Hz  | 2.17 | 5.2 dB  |
-| Peaking | 4225 Hz  | 1.02 | -4.8 dB |
-| Peaking | 5822 Hz  | 3.54 | 4.4 dB  |
-| Peaking | 11244 Hz | 4.88 | 2.1 dB  |
+| Peaking | 18 Hz    | 2.63 | 2.6 dB  |
+| Peaking | 146 Hz   | 0.65 | -2.6 dB |
+| Peaking | 1731 Hz  | 2.33 | -4.0 dB |
+| Peaking | 7938 Hz  | 1.58 | -4.3 dB |
+| Peaking | 19902 Hz | 4.24 | -7.2 dB |
+| Peaking | 18 Hz    | 1.87 | 0.9 dB  |
+| Peaking | 606 Hz   | 5.06 | 2.3 dB  |
+| Peaking | 2915 Hz  | 5.63 | 2.5 dB  |
+| Peaking | 4400 Hz  | 5.69 | -3.5 dB |
+| Peaking | 13820 Hz | 0.37 | 0.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D5000/Denon%20AH-D5000.png)

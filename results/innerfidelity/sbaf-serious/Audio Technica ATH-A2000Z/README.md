@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.2; 25 4.5; 28 3.6; 31 2.9; 34 2.3; 37 1.7; 41 1.1; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.4dB` and instead set Global volume in the UI for both channels to **-64**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-A2000Z GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-64**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-A2000Z ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.6dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 2.18 | 6.5 dB   |
-| Peaking | 2018 Hz  | 2.45 | -6.8 dB  |
-| Peaking | 4240 Hz  | 3.22 | -12.5 dB |
-| Peaking | 4955 Hz  | 1.17 | 10.0 dB  |
-| Peaking | 9529 Hz  | 3.22 | -7.0 dB  |
-| Peaking | 33 Hz    | 1.94 | 1.1 dB   |
-| Peaking | 130 Hz   | 1.08 | -2.8 dB  |
-| Peaking | 303 Hz   | 2.23 | 0.8 dB   |
-| Peaking | 3041 Hz  | 8.35 | 1.6 dB   |
-| Peaking | 17007 Hz | 3.27 | -4.7 dB  |
+| Peaking | 24 Hz    | 2.1  | 6.1 dB   |
+| Peaking | 2013 Hz  | 2.45 | -6.8 dB  |
+| Peaking | 4256 Hz  | 3.22 | -12.5 dB |
+| Peaking | 4938 Hz  | 1.17 | 10.0 dB  |
+| Peaking | 9505 Hz  | 3.22 | -7.0 dB  |
+| Peaking | 127 Hz   | 1.32 | -2.9 dB  |
+| Peaking | 1217 Hz  | 2.03 | 0.9 dB   |
+| Peaking | 1592 Hz  | 5    | -1.2 dB  |
+| Peaking | 3038 Hz  | 9.41 | 1.5 dB   |
+| Peaking | 16898 Hz | 3.27 | -4.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-A2000Z/Audio%20Technica%20ATH-A2000Z.png)

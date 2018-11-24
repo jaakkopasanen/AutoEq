@@ -9,25 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-009 SN SZ9 2251 KGSS GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-009 SN SZ9 2251 KGSS ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 113 Hz  |  0.09 | 8.3 dB  |
-| Peaking | 530 Hz  |  0.11 | -5.3 dB |
-| Peaking | 2377 Hz |  2.39 | 6.8 dB  |
-| Peaking | 3537 Hz |  3.28 | 5.0 dB  |
-| Peaking | 6144 Hz |  4    | 7.8 dB  |
-| Peaking | 1644 Hz |  9.72 | -1.2 dB |
-| Peaking | 4982 Hz | 11.11 | -1.8 dB |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 114 Hz   |  0.09 | 8.3 dB  |
+| Peaking | 533 Hz   |  0.1  | -5.3 dB |
+| Peaking | 2372 Hz  |  2.39 | 6.8 dB  |
+| Peaking | 3541 Hz  |  3.28 | 5.0 dB  |
+| Peaking | 6164 Hz  |  4    | 7.8 dB  |
+| Peaking | 53 Hz    |  3.47 | 0.4 dB  |
+| Peaking | 1645 Hz  |  9.96 | -1.4 dB |
+| Peaking | 4060 Hz  |  0.13 | 0.2 dB  |
+| Peaking | 4991 Hz  | 11.4  | -1.9 dB |
+| Peaking | 11293 Hz |  2.68 | 0.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-009%20SN%20SZ9%202251%20KGSS/Stax%20SR-009%20SN%20SZ9%202251%20KGSS.png)

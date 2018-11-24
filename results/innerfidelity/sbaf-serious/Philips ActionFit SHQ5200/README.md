@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.7; 28 4.9; 31 3.9; 34 3.0; 37 2.2; 41 1.2; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips ActionFit SHQ5200 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips ActionFit SHQ5200 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips ActionFi
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 22 Hz    | 0.76 | 7.1 dB  |
+| Peaking | 22 Hz    | 0.77 | 7.1 dB  |
 | Peaking | 124 Hz   | 0.36 | -4.8 dB |
-| Peaking | 364 Hz   | 4.71 | 1.9 dB  |
-| Peaking | 3278 Hz  | 1.17 | 5.1 dB  |
-| Peaking | 5918 Hz  | 4.19 | 5.2 dB  |
-| Peaking | 454 Hz   | 7.71 | -1.2 dB |
-| Peaking | 2628 Hz  | 1.67 | 2.0 dB  |
-| Peaking | 2738 Hz  | 4.41 | -3.5 dB |
-| Peaking | 8000 Hz  | 5.63 | -1.0 dB |
-| Peaking | 10082 Hz | 2.11 | -0.5 dB |
+| Peaking | 363 Hz   | 4.36 | 1.9 dB  |
+| Peaking | 3277 Hz  | 1.17 | 5.1 dB  |
+| Peaking | 5918 Hz  | 4.16 | 5.2 dB  |
+| Peaking | 455 Hz   | 7.85 | -1.2 dB |
+| Peaking | 2639 Hz  | 1.66 | 2.0 dB  |
+| Peaking | 2726 Hz  | 4.4  | -3.5 dB |
+| Peaking | 8000 Hz  | 5.68 | -1.0 dB |
+| Peaking | 10044 Hz | 2.11 | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20ActionFit%20SHQ5200/Philips%20ActionFit%20SHQ5200.png)

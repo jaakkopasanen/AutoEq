@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 1.1; 25 1.2; 28 1.4; 31 1.6; 34 1.9; 37 2.1; 41 2.7; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.2dB` and instead set Global volume in the UI for both channels to **-32**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Oppo PM3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-32**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.2dB.
+When using independent subset of filters, apply preamp of **-3.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 44 Hz    | 1.59 | 3.4 dB  |
-| Peaking | 128 Hz   | 1.51 | -4.6 dB |
-| Peaking | 1978 Hz  | 1.51 | -2.8 dB |
-| Peaking | 7229 Hz  | 2.89 | -4.2 dB |
-| Peaking | 13194 Hz | 5.78 | -5.6 dB |
-| Peaking | 201 Hz   | 2.49 | -1.5 dB |
+| Peaking | 44 Hz    | 1.62 | 3.4 dB  |
+| Peaking | 129 Hz   | 1.52 | -4.6 dB |
+| Peaking | 1977 Hz  | 1.51 | -2.8 dB |
+| Peaking | 7230 Hz  | 2.89 | -4.2 dB |
+| Peaking | 13080 Hz | 5.75 | -5.6 dB |
+| Peaking | 202 Hz   | 2.47 | -1.5 dB |
 | Peaking | 360 Hz   | 1.54 | 2.8 dB  |
-| Peaking | 2748 Hz  | 5.42 | -1.0 dB |
-| Peaking | 5255 Hz  | 8.32 | 2.6 dB  |
-| Peaking | 10511 Hz | 6.14 | 1.1 dB  |
+| Peaking | 2766 Hz  | 4.87 | -0.9 dB |
+| Peaking | 5247 Hz  | 7.9  | 2.5 dB  |
+| Peaking | 10645 Hz | 5.58 | 1.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Oppo%20PM3/Oppo%20PM3.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Apple Stock Bud New GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Apple Stock Bud New ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Apple Stock Bud 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 50 Hz    | 0.32 | 6.7 dB  |
-| Peaking | 903 Hz   | 1.45 | 0.4 dB  |
+| Peaking | 902 Hz   | 1.45 | 0.4 dB  |
 | Peaking | 2798 Hz  | 1.98 | -8.6 dB |
 | Peaking | 6108 Hz  | 1.29 | -5.9 dB |
-| Peaking | 14714 Hz | 5.09 | -5.3 dB |
-| Peaking | 21 Hz    | 2.43 | 1.2 dB  |
-| Peaking | 131 Hz   | 3.08 | 2.0 dB  |
-| Peaking | 222 Hz   | 1.63 | -1.3 dB |
-| Peaking | 8687 Hz  | 4.8  | -1.9 dB |
-| Peaking | 10762 Hz | 3.1  | 2.0 dB  |
+| Peaking | 14684 Hz | 5.1  | -5.3 dB |
+| Peaking | 17 Hz    | 2.76 | 1.0 dB  |
+| Peaking | 132 Hz   | 3.07 | 2.0 dB  |
+| Peaking | 224 Hz   | 1.63 | -1.3 dB |
+| Peaking | 8697 Hz  | 4.78 | -1.9 dB |
+| Peaking | 10771 Hz | 3.04 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Apple%20Stock%20Bud%20New/Apple%20Stock%20Bud%20New.png)

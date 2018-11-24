@@ -9,8 +9,9 @@ GraphicEQ: 21 -11.3; 23 -10.9; 25 -10.4; 28 -9.5; 31 -8.7; 34 -7.9; 37 -7.3; 41 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Parrot Zik2 Bluetooth GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Parrot Zik2 Bluetooth ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Parrot Zik2 Blue
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.9dB.
+When using independent subset of filters, apply preamp of **-4.9dB**.
 
-| Type    | Fc       |     Q | Gain     |
-|:--------|:---------|:------|:---------|
-| Peaking | 20 Hz    |  0.6  | -11.2 dB |
-| Peaking | 62 Hz    |  0.94 | -1.3 dB  |
-| Peaking | 1904 Hz  |  0.78 | -26.0 dB |
-| Peaking | 2862 Hz  |  0.2  | 18.6 dB  |
-| Peaking | 10507 Hz |  0.93 | -14.3 dB |
-| Peaking | 1992 Hz  |  3.74 | 4.3 dB   |
-| Peaking | 2365 Hz  |  1.45 | -7.4 dB  |
-| Peaking | 3227 Hz  |  1.18 | 5.9 dB   |
-| Peaking | 5298 Hz  |  4.77 | -5.6 dB  |
-| Peaking | 6641 Hz  | 10.05 | 1.9 dB   |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 20 Hz    | 0.6  | -11.2 dB |
+| Peaking | 63 Hz    | 0.94 | -1.3 dB  |
+| Peaking | 1902 Hz  | 0.77 | -26.2 dB |
+| Peaking | 2890 Hz  | 0.2  | 18.8 dB  |
+| Peaking | 10533 Hz | 0.92 | -14.4 dB |
+| Peaking | 663 Hz   | 4.4  | 1.1 dB   |
+| Peaking | 2473 Hz  | 4.66 | -3.5 dB  |
+| Peaking | 3668 Hz  | 1.45 | 2.9 dB   |
+| Peaking | 5299 Hz  | 4.85 | -5.5 dB  |
+| Peaking | 6670 Hz  | 9.41 | 1.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Parrot%20Zik2%20Bluetooth/Parrot%20Zik2%20Bluetooth.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.4; 25 1.3; 28 1.3; 31 1.3; 34 1.4; 37 1.4; 41 1.4; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.8dB` and instead set Global volume in the UI for both channels to **-57**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sonoma Model One GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-57**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sonoma Model One ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sonoma Model One
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 35 Hz   |  0.56 | 1.6 dB  |
-| Peaking | 1428 Hz |  2.49 | -1.8 dB |
-| Peaking | 1541 Hz |  4.52 | -1.5 dB |
+| Peaking | 35 Hz   |  0.57 | 1.6 dB  |
+| Peaking | 1423 Hz |  2.48 | -1.8 dB |
+| Peaking | 1538 Hz |  4.54 | -1.5 dB |
 | Peaking | 2914 Hz |  2.09 | -1.2 dB |
-| Peaking | 5981 Hz | 11.04 | 6.3 dB  |
-| Peaking | 62 Hz   |  3.57 | 2.0 dB  |
-| Peaking | 74 Hz   |  2.42 | -2.1 dB |
-| Peaking | 368 Hz  |  0.35 | 0.6 dB  |
-| Peaking | 730 Hz  |  4.68 | -1.5 dB |
-| Peaking | 1226 Hz |  5.72 | -0.5 dB |
+| Peaking | 5953 Hz | 11.04 | 6.3 dB  |
+| Peaking | 64 Hz   |  3.45 | 1.9 dB  |
+| Peaking | 76 Hz   |  2.59 | -2.0 dB |
+| Peaking | 373 Hz  |  0.34 | 0.5 dB  |
+| Peaking | 730 Hz  |  4.49 | -1.5 dB |
+| Peaking | 1487 Hz |  1.43 | -0.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sonoma%20Model%20One/Sonoma%20Model%20One.png)

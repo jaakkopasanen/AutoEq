@@ -9,8 +9,9 @@ GraphicEQ: 21 -14.0; 23 -13.9; 25 -13.7; 28 -13.5; 31 -13.3; 34 -13.1; 37 -12.8;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.5dB` and instead set Global volume in the UI for both channels to **-5**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Cyberdrive Forte Classic Soprano GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-5**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Cyberdrive Forte Classic Soprano ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Cyberdrive Forte
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.2dB.
+When using independent subset of filters, apply preamp of **--0.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of --0.2dB.
 | Peaking | 5713 Hz  | 4.46 | -13.0 dB |
 | Peaking | 12824 Hz | 1.24 | -4.3 dB  |
 | Peaking | 819 Hz   | 1.85 | 1.4 dB   |
-| Peaking | 1666 Hz  | 3.13 | -1.3 dB  |
-| Peaking | 8688 Hz  | 4.09 | 2.0 dB   |
-| Peaking | 10786 Hz | 7.23 | -3.1 dB  |
-| Peaking | 17393 Hz | 5.03 | 1.5 dB   |
+| Peaking | 1665 Hz  | 3.13 | -1.3 dB  |
+| Peaking | 8684 Hz  | 4.09 | 2.0 dB   |
+| Peaking | 10776 Hz | 7.23 | -3.1 dB  |
+| Peaking | 17389 Hz | 5.03 | 1.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Cyberdrive%20Forte%20Classic%20Soprano/Cyberdrive%20Forte%20Classic%20Soprano.png)

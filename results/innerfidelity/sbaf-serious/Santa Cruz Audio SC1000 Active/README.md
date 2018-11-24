@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.5; 25 5.3; 28 5.2; 31 5.0; 34 4.9; 37 4.7; 41 4.5; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Santa Cruz Audio SC1000 Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Santa Cruz Audio SC1000 Active ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Santa Cruz Audio
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 0.64 | 4.9 dB  |
-| Peaking | 50 Hz   | 0.71 | 2.8 dB  |
-| Peaking | 3755 Hz | 2.95 | 9.1 dB  |
-| Peaking | 4558 Hz | 0.96 | -9.8 dB |
-| Peaking | 5951 Hz | 2.67 | 13.1 dB |
-| Peaking | 656 Hz  | 1.64 | 1.2 dB  |
-| Peaking | 1245 Hz | 3.47 | 0.7 dB  |
-| Peaking | 1654 Hz | 2.19 | -0.8 dB |
-| Peaking | 9027 Hz | 4.17 | -3.2 dB |
-| Peaking | 9913 Hz | 1.33 | 1.4 dB  |
+| Peaking | 18 Hz   | 0.66 | 4.9 dB  |
+| Peaking | 51 Hz   | 0.7  | 2.8 dB  |
+| Peaking | 3768 Hz | 2.98 | 9.0 dB  |
+| Peaking | 4539 Hz | 0.95 | -9.5 dB |
+| Peaking | 5939 Hz | 2.69 | 13.0 dB |
+| Peaking | 656 Hz  | 1.65 | 1.2 dB  |
+| Peaking | 1230 Hz | 3.88 | 0.5 dB  |
+| Peaking | 1674 Hz | 2.81 | -0.8 dB |
+| Peaking | 9202 Hz | 4.34 | -3.1 dB |
+| Peaking | 9824 Hz | 1.4  | 1.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Santa%20Cruz%20Audio%20SC1000%20Active/Santa%20Cruz%20Audio%20SC1000%20Active.png)

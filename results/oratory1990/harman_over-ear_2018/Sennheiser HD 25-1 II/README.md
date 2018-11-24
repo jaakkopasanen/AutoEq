@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 25-1 II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 25-1 II ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 37 Hz    | 0.7  | 7.1 dB  |
 | Peaking | 601 Hz   | 2.2  | 2.4 dB  |
-| Peaking | 3097 Hz  | 1.3  | -4.0 dB |
-| Peaking | 4566 Hz  | 1.29 | 7.1 dB  |
-| Peaking | 8195 Hz  | 2.64 | -7.8 dB |
-| Peaking | 38 Hz    | 3.32 | -1.1 dB |
-| Peaking | 68 Hz    | 2.43 | 2.7 dB  |
-| Peaking | 135 Hz   | 0.73 | -1.3 dB |
-| Peaking | 1327 Hz  | 6.5  | 0.8 dB  |
-| Peaking | 10658 Hz | 7.32 | 1.5 dB  |
+| Peaking | 3106 Hz  | 1.29 | -4.1 dB |
+| Peaking | 4558 Hz  | 1.28 | 7.2 dB  |
+| Peaking | 8192 Hz  | 2.63 | -7.8 dB |
+| Peaking | 39 Hz    | 3.11 | -1.0 dB |
+| Peaking | 70 Hz    | 2.38 | 2.7 dB  |
+| Peaking | 130 Hz   | 0.73 | -1.3 dB |
+| Peaking | 1344 Hz  | 6.53 | 0.8 dB  |
+| Peaking | 10599 Hz | 7.37 | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%2025-1%20II/Sennheiser%20HD%2025-1%20II.png)

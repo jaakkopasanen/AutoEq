@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.6; 25 4.3; 28 3.8; 31 3.4; 34 3.1; 37 2.8; 41 2.4; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.1dB` and instead set Global volume in the UI for both channels to **-50**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Final Audio Heaven A GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-50**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Final Audio Heaven A ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Final Audio Heav
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.9dB.
+When using independent subset of filters, apply preamp of **-4.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -4.9dB.
 | Peaking | 2629 Hz | 1.15 | -8.8 dB |
 | Peaking | 3975 Hz | 0.77 | 10.2 dB |
 | Peaking | 6601 Hz | 1.53 | -9.1 dB |
-| Peaking | 830 Hz  | 2.32 | 1.0 dB  |
-| Peaking | 1870 Hz | 1.36 | -1.1 dB |
-| Peaking | 2204 Hz | 3.51 | 1.2 dB  |
-| Peaking | 8639 Hz | 2.51 | 2.2 dB  |
-| Peaking | 8781 Hz | 6.38 | -4.6 dB |
+| Peaking | 833 Hz  | 2.3  | 1.0 dB  |
+| Peaking | 1852 Hz | 1.34 | -1.1 dB |
+| Peaking | 2207 Hz | 3.54 | 1.2 dB  |
+| Peaking | 8622 Hz | 2.47 | 2.2 dB  |
+| Peaking | 8798 Hz | 6.32 | -4.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Final%20Audio%20Heaven%20A/Final%20Audio%20Heaven%20A.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.9; 25 3.2; 28 2.2; 31 1.5; 34 0.9; 37 0.5; 41 0.0; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultrasone Signature Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Signature Pro ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Signat
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 20 Hz    | 1.85 | 5.0 dB  |
-| Peaking | 171 Hz   | 1.58 | -1.6 dB |
-| Peaking | 488 Hz   | 0.18 | -1.8 dB |
-| Peaking | 3754 Hz  | 0.53 | 7.4 dB  |
-| Peaking | 10452 Hz | 1.56 | -4.9 dB |
-| Peaking | 380 Hz   | 2.27 | 1.3 dB  |
-| Peaking | 1392 Hz  | 0.2  | -0.5 dB |
-| Peaking | 2324 Hz  | 4.28 | 2.1 dB  |
-| Peaking | 6214 Hz  | 4.18 | 2.2 dB  |
-| Peaking | 7485 Hz  | 6.87 | -2.1 dB |
+| Peaking | 20 Hz    | 1.89 | 5.2 dB  |
+| Peaking | 169 Hz   | 1.57 | -1.6 dB |
+| Peaking | 489 Hz   | 0.18 | -1.8 dB |
+| Peaking | 3720 Hz  | 0.52 | 7.4 dB  |
+| Peaking | 10475 Hz | 1.56 | -4.9 dB |
+| Peaking | 381 Hz   | 2.28 | 1.3 dB  |
+| Peaking | 1413 Hz  | 0.21 | -0.6 dB |
+| Peaking | 2341 Hz  | 4.36 | 2.1 dB  |
+| Peaking | 6222 Hz  | 4.02 | 2.2 dB  |
+| Peaking | 7510 Hz  | 6.81 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20Signature%20Pro/Ultrasone%20Signature%20Pro.png)

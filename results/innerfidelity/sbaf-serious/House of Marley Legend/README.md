@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.3; 25 1.1; 28 0.9; 31 0.7; 34 0.5; 37 0.4; 41 0.1; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`House of Marley Legend GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `House of Marley Legend ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `House of Marley 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 17 Hz   | 0.6  | 1.8 dB  |
-| Peaking | 147 Hz  | 0.69 | -3.7 dB |
-| Peaking | 305 Hz  | 1.35 | -2.0 dB |
-| Peaking | 1951 Hz | 1.79 | -4.3 dB |
-| Peaking | 4068 Hz | 1.04 | 7.2 dB  |
-| Peaking | 806 Hz  | 2.12 | 1.1 dB  |
-| Peaking | 2584 Hz | 0.14 | -0.3 dB |
-| Peaking | 3198 Hz | 8.98 | 1.8 dB  |
-| Peaking | 6303 Hz | 3.39 | 5.0 dB  |
-| Peaking | 7244 Hz | 1.57 | -3.0 dB |
+| Peaking | 17 Hz   | 0.61 | 1.8 dB  |
+| Peaking | 147 Hz  | 0.71 | -3.7 dB |
+| Peaking | 305 Hz  | 1.35 | -2.1 dB |
+| Peaking | 1951 Hz | 1.8  | -4.3 dB |
+| Peaking | 4070 Hz | 1.04 | 7.2 dB  |
+| Peaking | 807 Hz  | 2.09 | 1.1 dB  |
+| Peaking | 2390 Hz | 0.13 | -0.3 dB |
+| Peaking | 3194 Hz | 8.9  | 1.8 dB  |
+| Peaking | 6332 Hz | 3.39 | 5.1 dB  |
+| Peaking | 7215 Hz | 1.6  | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/House%20of%20Marley%20Legend/House%20of%20Marley%20Legend.png)

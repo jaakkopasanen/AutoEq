@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.7; 23 -4.1; 25 -4.4; 28 -4.8; 31 -5.2; 34 -5.5; 37 -5.7; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.2dB` and instead set Global volume in the UI for both channels to **-41**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser PMX 680 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-41**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PMX 680 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PMX 6
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.3dB.
+When using independent subset of filters, apply preamp of **-2.3dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -31,6 +32,6 @@ When using independent subset of filters, apply preamp of -2.3dB.
 | Peaking | 789 Hz  | 1.77 | 2.0 dB   |
 | Peaking | 1559 Hz | 4.32 | -1.2 dB  |
 | Peaking | 6616 Hz | 6.29 | 4.6 dB   |
-| Peaking | 8402 Hz | 1.16 | -1.6 dB  |
+| Peaking | 8415 Hz | 1.16 | -1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PMX%20680/Sennheiser%20PMX%20680.png)

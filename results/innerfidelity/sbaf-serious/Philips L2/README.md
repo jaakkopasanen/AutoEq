@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.9; 23 -4.4; 25 -4.8; 28 -5.2; 31 -5.5; 34 -5.8; 37 -5.9; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.6dB` and instead set Global volume in the UI for both channels to **-55**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips L2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-55**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips L2 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips L2 Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.0dB.
+When using independent subset of filters, apply preamp of **-6.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -6.0dB.
 | Peaking | 171 Hz   | 0.98 | -2.6 dB |
 | Peaking | 2137 Hz  | 1.6  | -7.5 dB |
 | Peaking | 4983 Hz  | 5.03 | 6.7 dB  |
-| Peaking | 675 Hz   | 3.1  | 1.7 dB  |
-| Peaking | 1340 Hz  | 1.45 | 2.7 dB  |
-| Peaking | 1538 Hz  | 3.07 | -4.0 dB |
-| Peaking | 7186 Hz  | 4.23 | -3.5 dB |
+| Peaking | 674 Hz   | 3.12 | 1.7 dB  |
+| Peaking | 1328 Hz  | 1.44 | 2.5 dB  |
+| Peaking | 1542 Hz  | 3.15 | -3.8 dB |
+| Peaking | 7185 Hz  | 4.23 | -3.5 dB |
 | Peaking | 19009 Hz | 2.27 | -3.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20L2/Philips%20L2.png)

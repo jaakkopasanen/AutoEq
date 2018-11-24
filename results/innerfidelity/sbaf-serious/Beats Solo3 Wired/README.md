@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.8; 23 -6.0; 25 -6.1; 28 -6.2; 31 -6.2; 34 -6.3; 37 -6.4; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.8dB` and instead set Global volume in the UI for both channels to **-27**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beats Solo3 Wired GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-27**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beats Solo3 Wired ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Beats Solo3 Wire
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.6dB.
+When using independent subset of filters, apply preamp of **-2.6dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 32 Hz   |  0.29 | -5.9 dB |
 | Peaking | 136 Hz  |  0.86 | -4.5 dB |
 | Peaking | 246 Hz  |  1.34 | -3.9 dB |
-| Peaking | 4004 Hz |  0.85 | -2.5 dB |
-| Peaking | 5995 Hz |  2.74 | 4.1 dB  |
-| Peaking | 786 Hz  |  2.7  | 1.4 dB  |
-| Peaking | 1632 Hz |  3.22 | -1.2 dB |
-| Peaking | 2476 Hz |  6.14 | 0.7 dB  |
-| Peaking | 4015 Hz | 11.79 | 2.1 dB  |
-| Peaking | 4617 Hz |  9.2  | -1.8 dB |
+| Peaking | 4012 Hz |  0.85 | -2.5 dB |
+| Peaking | 5949 Hz |  2.73 | 4.1 dB  |
+| Peaking | 785 Hz  |  2.68 | 1.5 dB  |
+| Peaking | 1629 Hz |  3.23 | -1.2 dB |
+| Peaking | 2468 Hz |  6.34 | 0.7 dB  |
+| Peaking | 4078 Hz | 11.78 | 2.1 dB  |
+| Peaking | 4658 Hz |  8.7  | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beats%20Solo3%20Wired/Beats%20Solo3%20Wired.png)

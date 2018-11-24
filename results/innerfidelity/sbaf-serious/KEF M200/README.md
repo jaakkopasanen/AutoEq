@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.8; 23 -9.8; 25 -9.7; 28 -9.5; 31 -9.3; 34 -9.1; 37 -9.0; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-48**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`KEF M200 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-48**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `KEF M200 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `KEF M200 Paramet
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.9dB.
+When using independent subset of filters, apply preamp of **-2.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 18 Hz    | 0.19 | -9.6 dB  |
+| Peaking | 18 Hz    | 0.2  | -9.6 dB  |
 | Peaking | 157 Hz   | 0.64 | -3.3 dB  |
-| Peaking | 1861 Hz  | 1.16 | -17.8 dB |
-| Peaking | 2403 Hz  | 0.39 | 11.4 dB  |
-| Peaking | 14838 Hz | 0.17 | -3.8 dB  |
-| Peaking | 2847 Hz  | 5.32 | 4.0 dB   |
-| Peaking | 4611 Hz  | 0.97 | -3.5 dB  |
-| Peaking | 5770 Hz  | 2.38 | 6.2 dB   |
-| Peaking | 8510 Hz  | 3.8  | -5.7 dB  |
-| Peaking | 11645 Hz | 2.09 | 3.1 dB   |
+| Peaking | 1866 Hz  | 1.17 | -17.8 dB |
+| Peaking | 2388 Hz  | 0.39 | 11.3 dB  |
+| Peaking | 14874 Hz | 0.17 | -3.7 dB  |
+| Peaking | 2846 Hz  | 5.04 | 4.2 dB   |
+| Peaking | 4671 Hz  | 0.87 | -3.4 dB  |
+| Peaking | 5790 Hz  | 2.39 | 6.3 dB   |
+| Peaking | 8517 Hz  | 3.89 | -5.6 dB  |
+| Peaking | 11628 Hz | 2.07 | 3.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/KEF%20M200/KEF%20M200.png)

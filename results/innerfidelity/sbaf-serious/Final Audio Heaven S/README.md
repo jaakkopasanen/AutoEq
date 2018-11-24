@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 2.5; 25 2.3; 28 2.1; 31 2.0; 34 1.8; 37 1.7; 41 1.5; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.8dB` and instead set Global volume in the UI for both channels to **-38**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Final Audio Heaven S GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-38**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Final Audio Heaven S ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.4dB.
+When using independent subset of filters, apply preamp of **-3.3dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 0.46 | 2.6 dB   |
-| Peaking | 189 Hz   | 0.6  | -3.2 dB  |
-| Peaking | 2678 Hz  | 0.92 | -10.3 dB |
-| Peaking | 4030 Hz  | 0.63 | 12.7 dB  |
-| Peaking | 6832 Hz  | 1.47 | -12.2 dB |
-| Peaking | 387 Hz   | 2.42 | -0.5 dB  |
-| Peaking | 799 Hz   | 1.65 | 0.9 dB   |
-| Peaking | 1760 Hz  | 1.42 | -1.2 dB  |
-| Peaking | 2139 Hz  | 3.23 | 1.5 dB   |
-| Peaking | 15992 Hz | 1.88 | -0.2 dB  |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 22 Hz   | 0.46 | 2.6 dB   |
+| Peaking | 189 Hz  | 0.6  | -3.2 dB  |
+| Peaking | 2707 Hz | 0.92 | -10.4 dB |
+| Peaking | 3979 Hz | 0.62 | 12.8 dB  |
+| Peaking | 6812 Hz | 1.47 | -12.2 dB |
+| Peaking | 800 Hz  | 2.99 | 0.9 dB   |
+| Peaking | 1662 Hz | 1.87 | -1.2 dB  |
+| Peaking | 2116 Hz | 3.92 | 0.9 dB   |
+| Peaking | 4538 Hz | 9.6  | -0.9 dB  |
+| Peaking | 5464 Hz | 8.72 | 1.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Final%20Audio%20Heaven%20S/Final%20Audio%20Heaven%20S.png)

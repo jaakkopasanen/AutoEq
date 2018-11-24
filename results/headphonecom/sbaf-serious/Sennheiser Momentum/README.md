@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.3; 25 3.1; 28 2.8; 31 2.6; 34 2.4; 37 2.3; 41 2.1; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser Momentum GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momen
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 1.34 | 3.4 dB  |
-| Peaking | 47 Hz   | 2    | 1.4 dB  |
+| Peaking | 22 Hz   | 1.32 | 3.3 dB  |
+| Peaking | 46 Hz   | 2.02 | 1.4 dB  |
 | Peaking | 504 Hz  | 2.39 | 1.9 dB  |
 | Peaking | 1750 Hz | 1.94 | -4.1 dB |
 | Peaking | 3748 Hz | 0.86 | 7.2 dB  |
-| Peaking | 203 Hz  | 2    | -1.4 dB |
-| Peaking | 2797 Hz | 5.87 | 1.5 dB  |
-| Peaking | 3807 Hz | 2.56 | -1.0 dB |
-| Peaking | 6264 Hz | 2.38 | 5.4 dB  |
-| Peaking | 7365 Hz | 1.5  | -4.2 dB |
+| Peaking | 202 Hz  | 2    | -1.4 dB |
+| Peaking | 2802 Hz | 5.86 | 1.5 dB  |
+| Peaking | 3804 Hz | 2.52 | -1.0 dB |
+| Peaking | 6256 Hz | 2.42 | 5.2 dB  |
+| Peaking | 7410 Hz | 1.5  | -3.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20Momentum/Sennheiser%20Momentum.png)

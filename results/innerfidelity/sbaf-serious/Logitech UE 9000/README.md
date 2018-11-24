@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.2; 23 -0.5; 25 -0.8; 28 -1.1; 31 -1.3; 34 -1.5; 37 -1.6; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Logitech UE 9000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Logitech UE 9000 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Logitech UE 9000
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 138 Hz  | 1.82 | -3.0 dB |
 | Peaking | 3112 Hz | 1.63 | 6.5 dB  |
 | Peaking | 5819 Hz | 3.35 | 5.5 dB  |
-| Peaking | 218 Hz  | 4.8  | -1.4 dB |
-| Peaking | 563 Hz  | 0.98 | 1.7 dB  |
-| Peaking | 1323 Hz | 1.1  | -1.2 dB |
-| Peaking | 2502 Hz | 6.93 | 1.5 dB  |
-| Peaking | 8295 Hz | 4.41 | -1.2 dB |
+| Peaking | 217 Hz  | 4.8  | -1.5 dB |
+| Peaking | 566 Hz  | 0.98 | 1.7 dB  |
+| Peaking | 1324 Hz | 1.09 | -1.2 dB |
+| Peaking | 2518 Hz | 6.93 | 1.5 dB  |
+| Peaking | 8281 Hz | 4.41 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Logitech%20UE%209000/Logitech%20UE%209000.png)

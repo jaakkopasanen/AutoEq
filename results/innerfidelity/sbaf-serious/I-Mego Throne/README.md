@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.3; 23 -3.4; 25 -3.5; 28 -3.6; 31 -3.6; 34 -3.6; 37 -3.6; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`I-Mego Throne GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `I-Mego Throne ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `I-Mego Throne Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 3282 Hz | 0.66 | 6.9 dB  |
 | Peaking | 218 Hz  | 5.25 | -0.3 dB |
 | Peaking | 2164 Hz | 3.07 | 2.2 dB  |
-| Peaking | 2691 Hz | 0.88 | -1.2 dB |
+| Peaking | 2693 Hz | 0.88 | -1.2 dB |
 | Peaking | 6172 Hz | 2    | 5.6 dB  |
-| Peaking | 7538 Hz | 1.46 | -4.4 dB |
+| Peaking | 7537 Hz | 1.46 | -4.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/I-Mego%20Throne/I-Mego%20Throne.png)

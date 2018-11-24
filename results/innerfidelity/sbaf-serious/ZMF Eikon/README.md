@@ -9,28 +9,29 @@ GraphicEQ: 21 -3.4; 23 -3.5; 25 -3.6; 28 -3.6; 31 -3.6; 34 -3.6; 37 -3.6; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.7dB` and instead set Global volume in the UI for both channels to **-57**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`ZMF Eikon GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-57**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `ZMF Eikon ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.8dB.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 1.22 | -2.7 dB |
-| Peaking | 129 Hz  | 0.45 | -6.0 dB |
-| Peaking | 1597 Hz | 6.17 | 5.9 dB  |
-| Peaking | 5905 Hz | 8.59 | -5.6 dB |
-| Peaking | 6488 Hz | 7.09 | 6.6 dB  |
-| Peaking | 361 Hz  | 3.84 | -0.9 dB |
-| Peaking | 663 Hz  | 3.73 | 0.6 dB  |
-| Peaking | 3736 Hz | 2.11 | 2.4 dB  |
-| Peaking | 4076 Hz | 4.73 | -3.5 dB |
-| Peaking | 9192 Hz | 8.88 | -2.3 dB |
+| Peaking | 25 Hz   | 1.22 | -2.8 dB |
+| Peaking | 128 Hz  | 0.44 | -6.0 dB |
+| Peaking | 1599 Hz | 6.13 | 5.9 dB  |
+| Peaking | 5923 Hz | 8.27 | -5.6 dB |
+| Peaking | 6490 Hz | 7.05 | 6.7 dB  |
+| Peaking | 60 Hz   | 5.17 | 1.0 dB  |
+| Peaking | 354 Hz  | 5.11 | -0.8 dB |
+| Peaking | 3735 Hz | 2.06 | 2.4 dB  |
+| Peaking | 4100 Hz | 4.73 | -3.5 dB |
+| Peaking | 9106 Hz | 8.71 | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/ZMF%20Eikon/ZMF%20Eikon.png)

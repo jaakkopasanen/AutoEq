@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.6; 25 4.1; 28 3.5; 31 2.9; 34 2.4; 37 1.9; 41 1.4; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.4dB` and instead set Global volume in the UI for both channels to **-53**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 990 600 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-53**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 990 600 Ohm ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.2dB.
+When using independent subset of filters, apply preamp of **-5.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 0.73 | 5.4 dB  |
-| Peaking | 176 Hz   | 0.72 | -6.9 dB |
+| Peaking | 18 Hz    | 0.74 | 5.4 dB  |
+| Peaking | 175 Hz   | 0.71 | -6.9 dB |
 | Peaking | 8918 Hz  | 2.07 | -9.3 dB |
-| Peaking | 13286 Hz | 4.57 | -5.2 dB |
-| Peaking | 19335 Hz | 2.98 | -3.5 dB |
-| Peaking | 306 Hz   | 3.33 | -1.1 dB |
-| Peaking | 747 Hz   | 1.78 | 1.4 dB  |
-| Peaking | 1923 Hz  | 1.73 | -3.7 dB |
-| Peaking | 2332 Hz  | 1.44 | 3.5 dB  |
-| Peaking | 6081 Hz  | 8.52 | -3.6 dB |
+| Peaking | 13286 Hz | 4.59 | -5.2 dB |
+| Peaking | 19334 Hz | 2.99 | -3.5 dB |
+| Peaking | 307 Hz   | 3.36 | -1.1 dB |
+| Peaking | 747 Hz   | 1.76 | 1.4 dB  |
+| Peaking | 1934 Hz  | 1.71 | -3.8 dB |
+| Peaking | 2316 Hz  | 1.43 | 3.6 dB  |
+| Peaking | 6072 Hz  | 8.56 | -3.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20990%20600%20Ohm/Beyerdynamic%20DT%20990%20600%20Ohm.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 -0.3; 25 -0.7; 28 -1.3; 31 -1.7; 34 -2.1; 37 -2.5; 41 -2.8
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.6dB` and instead set Global volume in the UI for both channels to **-36**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Focal Sphear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-36**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Sphear ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Focal Sphear Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.9dB.
+When using independent subset of filters, apply preamp of **-3.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 101 Hz  | 0.56 | -5.5 dB |
+| Peaking | 101 Hz  | 0.57 | -5.5 dB |
 | Peaking | 229 Hz  | 1.08 | -3.0 dB |
 | Peaking | 2041 Hz | 1.79 | -3.5 dB |
 | Peaking | 3519 Hz | 3.23 | 5.1 dB  |
 | Peaking | 5126 Hz | 4.11 | -6.5 dB |
-| Peaking | 15 Hz   | 2.13 | 1.1 dB  |
-| Peaking | 787 Hz  | 0.7  | -1.8 dB |
-| Peaking | 789 Hz  | 1.27 | 3.2 dB  |
-| Peaking | 7047 Hz | 5.87 | 2.4 dB  |
-| Peaking | 9252 Hz | 6.1  | -3.4 dB |
+| Peaking | 15 Hz   | 2.01 | 1.3 dB  |
+| Peaking | 787 Hz  | 0.71 | -1.9 dB |
+| Peaking | 789 Hz  | 1.26 | 3.3 dB  |
+| Peaking | 7045 Hz | 5.91 | 2.4 dB  |
+| Peaking | 9250 Hz | 6.11 | -3.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Focal%20Sphear/Focal%20Sphear.png)

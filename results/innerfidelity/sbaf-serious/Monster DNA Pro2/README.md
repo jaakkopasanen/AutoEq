@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.3; 25 3.2; 28 1.8; 31 0.7; 34 -0.1; 37 -0.7; 41 -1.1; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.5dB` and instead set Global volume in the UI for both channels to **-65**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster DNA Pro2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-65**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster DNA Pro2 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Monster DNA Pro2
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -10.6dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 20 Hz   |  3.44 | 6.0 dB  |
+| Peaking | 21 Hz   |  3.48 | 5.5 dB  |
 | Peaking | 1426 Hz |  3.17 | 3.9 dB  |
-| Peaking | 2486 Hz |  3.35 | -5.7 dB |
-| Peaking | 4292 Hz |  5.72 | -5.1 dB |
-| Peaking | 5779 Hz |  3.15 | 7.2 dB  |
-| Peaking | 19 Hz   |  3.74 | -3.7 dB |
-| Peaking | 134 Hz  |  0.38 | -1.7 dB |
-| Peaking | 390 Hz  |  3.05 | 4.2 dB  |
-| Peaking | 657 Hz  |  1.74 | -1.2 dB |
-| Peaking | 3554 Hz | 10.36 | 1.8 dB  |
+| Peaking | 2486 Hz |  3.34 | -5.7 dB |
+| Peaking | 4296 Hz |  5.74 | -5.1 dB |
+| Peaking | 5781 Hz |  3.15 | 7.2 dB  |
+| Peaking | 23 Hz   |  1.54 | 2.8 dB  |
+| Peaking | 89 Hz   |  0.21 | -1.7 dB |
+| Peaking | 391 Hz  |  3.18 | 4.2 dB  |
+| Peaking | 660 Hz  |  1.87 | -1.1 dB |
+| Peaking | 3535 Hz | 11.4  | 1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20DNA%20Pro2/Monster%20DNA%20Pro2.png)

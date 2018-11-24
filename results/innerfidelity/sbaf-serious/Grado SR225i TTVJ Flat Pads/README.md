@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.2; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado SR225i TTVJ Flat Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i TTVJ Flat Pads ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i TTV
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 2103 Hz  | 4.07 | -7.1 dB |
 | Peaking | 5356 Hz  | 0.8  | 7.9 dB  |
 | Peaking | 8157 Hz  | 1.73 | -6.7 dB |
-| Peaking | 1488 Hz  | 6.37 | -1.3 dB |
-| Peaking | 3182 Hz  | 3.19 | 1.2 dB  |
-| Peaking | 3626 Hz  | 7.96 | -1.7 dB |
-| Peaking | 9982 Hz  | 6.5  | 0.7 dB  |
-| Peaking | 13694 Hz | 1.11 | -0.4 dB |
+| Peaking | 1499 Hz  | 6.37 | -1.3 dB |
+| Peaking | 3183 Hz  | 3.2  | 1.2 dB  |
+| Peaking | 3626 Hz  | 7.95 | -1.6 dB |
+| Peaking | 10103 Hz | 6.48 | 0.7 dB  |
+| Peaking | 13712 Hz | 1.11 | -0.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i%20TTVJ%20Flat%20Pads/Grado%20SR225i%20TTVJ%20Flat%20Pads.png)

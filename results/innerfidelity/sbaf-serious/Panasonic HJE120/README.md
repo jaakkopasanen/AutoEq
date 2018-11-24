@@ -9,8 +9,9 @@ GraphicEQ: 21 -7.4; 23 -7.4; 25 -7.5; 28 -7.6; 31 -7.6; 34 -7.3; 37 -7.1; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Panasonic HJE120 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Panasonic HJE120 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Panasonic HJE120
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 1986 Hz | 2.53 | -9.7 dB |
 | Peaking | 3448 Hz | 1.77 | 7.5 dB  |
 | Peaking | 6077 Hz | 4.75 | 5.4 dB  |
-| Peaking | 178 Hz  | 1.32 | 1.3 dB  |
-| Peaking | 259 Hz  | 0.55 | -1.1 dB |
-| Peaking | 793 Hz  | 1.34 | 1.8 dB  |
-| Peaking | 1558 Hz | 4.56 | -1.1 dB |
-| Peaking | 8331 Hz | 4.07 | -0.9 dB |
+| Peaking | 181 Hz  | 1.33 | 1.2 dB  |
+| Peaking | 259 Hz  | 0.54 | -1.1 dB |
+| Peaking | 792 Hz  | 1.34 | 1.8 dB  |
+| Peaking | 1560 Hz | 4.57 | -1.1 dB |
+| Peaking | 8339 Hz | 4.07 | -0.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Panasonic%20HJE120/Panasonic%20HJE120.png)

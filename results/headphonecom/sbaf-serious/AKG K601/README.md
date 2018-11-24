@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 5.8; 25 5.3; 28 4.9; 31 4.5; 34 4.1; 37 3.8; 41 3.4; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.6dB` and instead set Global volume in the UI for both channels to **-66**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K601 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-66**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K601 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.0dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -26,11 +27,11 @@ When using independent subset of filters, apply preamp of -6.0dB.
 | Peaking | 75 Hz   | 4.27 | 2.1 dB  |
 | Peaking | 1597 Hz | 2.89 | -2.1 dB |
 | Peaking | 2262 Hz | 2.23 | -1.0 dB |
-| Peaking | 4939 Hz | 1.21 | -1.3 dB |
-| Peaking | 213 Hz  | 1.42 | -1.0 dB |
-| Peaking | 750 Hz  | 2.55 | 1.1 dB  |
-| Peaking | 5407 Hz | 7.49 | 3.2 dB  |
-| Peaking | 6147 Hz | 3.91 | -3.9 dB |
-| Peaking | 6822 Hz | 4.34 | 2.5 dB  |
+| Peaking | 4938 Hz | 1.21 | -1.3 dB |
+| Peaking | 213 Hz  | 1.41 | -1.0 dB |
+| Peaking | 747 Hz  | 2.54 | 1.1 dB  |
+| Peaking | 5408 Hz | 7.27 | 3.3 dB  |
+| Peaking | 6127 Hz | 3.74 | -4.0 dB |
+| Peaking | 6844 Hz | 4.24 | 2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K601/AKG%20K601.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Toshiba HR-810 Low Gain GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Toshiba HR-810 Low Gain ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Toshiba HR-810 L
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 1076 Hz | 0.12 | -7.4 dB |
 | Peaking | 1133 Hz | 4.7  | 3.2 dB  |
 | Peaking | 5210 Hz | 1.09 | 11.3 dB |
-| Peaking | 18 Hz   | 1.8  | 1.8 dB  |
-| Peaking | 81 Hz   | 0.64 | -1.8 dB |
-| Peaking | 89 Hz   | 1.9  | 2.8 dB  |
-| Peaking | 6440 Hz | 6.45 | 1.9 dB  |
-| Peaking | 7627 Hz | 4.05 | -1.9 dB |
+| Peaking | 18 Hz   | 1.74 | 1.8 dB  |
+| Peaking | 81 Hz   | 0.66 | -1.8 dB |
+| Peaking | 89 Hz   | 1.88 | 2.8 dB  |
+| Peaking | 6441 Hz | 6.45 | 1.9 dB  |
+| Peaking | 7627 Hz | 4.04 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Toshiba%20HR-810%20Low%20Gain/Toshiba%20HR-810%20Low%20Gain.png)

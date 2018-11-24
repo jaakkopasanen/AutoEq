@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Howard Leight Sync GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Howard Leight Sync ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.1dB.
+When using independent subset of filters, apply preamp of **--0.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 207 Hz   | 0.87 | -12.2 dB |
+| Peaking | 207 Hz   | 0.87 | -12.1 dB |
 | Peaking | 2223 Hz  | 3.27 | -13.2 dB |
 | Peaking | 8142 Hz  | 1.11 | -12.2 dB |
 | Peaking | 14763 Hz | 0.72 | -10.9 dB |
 | Peaking | 21967 Hz | 1.93 | -15.5 dB |
 | Peaking | 28 Hz    | 0.48 | 6.4 dB   |
-| Peaking | 56 Hz    | 2.29 | 3.7 dB   |
-| Peaking | 125 Hz   | 2.51 | -5.0 dB  |
-| Peaking | 4213 Hz  | 2.55 | 4.1 dB   |
-| Peaking | 6042 Hz  | 6.96 | -7.7 dB  |
+| Peaking | 57 Hz    | 2.28 | 3.7 dB   |
+| Peaking | 126 Hz   | 2.5  | -5.0 dB  |
+| Peaking | 4212 Hz  | 2.55 | 4.1 dB   |
+| Peaking | 6031 Hz  | 6.94 | -7.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Howard%20Leight%20Sync/Howard%20Leight%20Sync.png)

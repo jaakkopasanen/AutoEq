@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.6; 25 1.2; 28 0.7; 31 0.2; 34 -0.2; 37 -0.5; 41 -0.8; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Spider Moonlight GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Spider Moonlight ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Spider Moonlight
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 4324 Hz  | 1.75 | -7.8 dB |
 | Peaking | 5542 Hz  | 2.32 | 11.3 dB |
 | Peaking | 12704 Hz | 1.39 | -4.3 dB |
-| Peaking | 20 Hz    | 2.85 | 2.4 dB  |
+| Peaking | 20 Hz    | 2.72 | 2.1 dB  |
 | Peaking | 223 Hz   | 3.18 | -2.0 dB |
-| Peaking | 344 Hz   | 2.95 | 3.0 dB  |
-| Peaking | 805 Hz   | 3.14 | 1.3 dB  |
-| Peaking | 16192 Hz | 4.97 | 1.8 dB  |
+| Peaking | 345 Hz   | 2.95 | 3.0 dB  |
+| Peaking | 806 Hz   | 3.14 | 1.3 dB  |
+| Peaking | 16157 Hz | 4.97 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Spider%20Moonlight/Spider%20Moonlight.png)

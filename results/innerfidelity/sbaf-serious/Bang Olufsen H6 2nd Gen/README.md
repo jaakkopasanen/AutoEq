@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.2; 25 3.5; 28 2.6; 31 1.8; 34 1.2; 37 0.7; 41 0.2; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bang Olufsen H6 2nd Gen GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bang Olufsen H6 2nd Gen ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Bang Olufsen H6 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 256 Hz  | 1.44 | 5.9 dB  |
 | Peaking | 4550 Hz | 0.95 | 7.1 dB  |
 | Peaking | 8980 Hz | 2.85 | -4.1 dB |
-| Peaking | 55 Hz   | 2.47 | -0.9 dB |
-| Peaking | 72 Hz   | 3.25 | -0.6 dB |
-| Peaking | 1861 Hz | 1.76 | -2.2 dB |
-| Peaking | 2887 Hz | 3    | 2.7 dB  |
-| Peaking | 4360 Hz | 5.27 | -1.2 dB |
+| Peaking | 54 Hz   | 2.45 | -0.9 dB |
+| Peaking | 70 Hz   | 2.83 | -0.6 dB |
+| Peaking | 1867 Hz | 1.74 | -2.2 dB |
+| Peaking | 2887 Hz | 2.9  | 2.7 dB  |
+| Peaking | 4353 Hz | 4.99 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bang%20Olufsen%20H6%202nd%20Gen/Bang%20Olufsen%20H6%202nd%20Gen.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 -6.7; 23 -6.7; 25 -6.7; 28 -6.6; 31 -6.6; 34 -6.5; 37 -6.5; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.6dB` and instead set Global volume in the UI for both channels to **-26**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AudioQuest NightHawk Stock Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-26**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AudioQuest NightHawk Stock Pads ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.9dB.
+When using independent subset of filters, apply preamp of **-1.8dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 31 Hz   | 0.08 | -5.7 dB |
-| Peaking | 359 Hz  | 0.39 | -8.3 dB |
-| Peaking | 1414 Hz | 0.4  | 7.6 dB  |
-| Peaking | 1725 Hz | 1.44 | -9.8 dB |
-| Peaking | 8625 Hz | 2.48 | -6.1 dB |
-| Peaking | 54 Hz   | 0.43 | -1.1 dB |
-| Peaking | 64 Hz   | 1.43 | 1.9 dB  |
-| Peaking | 989 Hz  | 0.11 | 0.3 dB  |
-| Peaking | 4789 Hz | 1.39 | -2.8 dB |
-| Peaking | 4812 Hz | 3.11 | 3.9 dB  |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 30 Hz   | 0.08 | -5.7 dB  |
+| Peaking | 370 Hz  | 0.38 | -8.3 dB  |
+| Peaking | 1373 Hz | 0.39 | 8.0 dB   |
+| Peaking | 1736 Hz | 1.43 | -10.0 dB |
+| Peaking | 8576 Hz | 2.42 | -6.2 dB  |
+| Peaking | 22 Hz   | 0.21 | -0.7 dB  |
+| Peaking | 66 Hz   | 1.83 | 1.4 dB   |
+| Peaking | 2907 Hz | 4.26 | 4.0 dB   |
+| Peaking | 3381 Hz | 2.03 | -4.3 dB  |
+| Peaking | 4237 Hz | 2.52 | 2.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AudioQuest%20NightHawk%20Stock%20Pads/AudioQuest%20NightHawk%20Stock%20Pads.png)

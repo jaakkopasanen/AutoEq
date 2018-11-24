@@ -9,28 +9,29 @@ GraphicEQ: 21 -6.7; 23 -7.0; 25 -7.2; 28 -7.5; 31 -7.7; 34 -7.9; 37 -8.1; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.7dB` and instead set Global volume in the UI for both channels to **-7**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-C360 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-7**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C360 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 45 Hz    | 0.3  | -7.8 dB |
-| Peaking | 155 Hz   | 0.73 | -5.6 dB |
-| Peaking | 318 Hz   | 1.24 | -3.2 dB |
-| Peaking | 5758 Hz  | 2.19 | -7.8 dB |
-| Peaking | 8646 Hz  | 4.16 | -7.4 dB |
-| Peaking | 501 Hz   | 2.89 | -1.2 dB |
-| Peaking | 876 Hz   | 1.27 | 1.2 dB  |
-| Peaking | 3213 Hz  | 2.4  | 1.7 dB  |
-| Peaking | 4463 Hz  | 5.55 | -2.2 dB |
-| Peaking | 10932 Hz | 6.35 | 1.9 dB  |
+| Peaking | 157 Hz   | 0.73 | -5.6 dB |
+| Peaking | 320 Hz   | 1.26 | -3.1 dB |
+| Peaking | 5773 Hz  | 2.19 | -7.8 dB |
+| Peaking | 8598 Hz  | 4.18 | -7.4 dB |
+| Peaking | 503 Hz   | 2.93 | -1.2 dB |
+| Peaking | 874 Hz   | 1.27 | 1.2 dB  |
+| Peaking | 3217 Hz  | 2.35 | 1.7 dB  |
+| Peaking | 4455 Hz  | 5.5  | -2.3 dB |
+| Peaking | 10941 Hz | 6.25 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-C360/Denon%20AH-C360.png)

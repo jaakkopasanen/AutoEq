@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Skullcandy Hesh NBA GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Hesh NBA ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 51 Hz   | 0.38 | 8.4 dB   |
-| Peaking | 115 Hz  | 0.77 | -6.1 dB  |
-| Peaking | 584 Hz  | 3.54 | -1.6 dB  |
-| Peaking | 1451 Hz | 1.86 | -11.1 dB |
-| Peaking | 2722 Hz | 0.56 | 8.2 dB   |
-| Peaking | 139 Hz  | 4.93 | 0.4 dB   |
-| Peaking | 945 Hz  | 8.24 | 1.2 dB   |
-| Peaking | 3265 Hz | 4.29 | -1.0 dB  |
-| Peaking | 6266 Hz | 2.01 | 5.7 dB   |
-| Peaking | 7388 Hz | 1.4  | -4.8 dB  |
+| Peaking | 50 Hz   | 0.38 | 8.2 dB   |
+| Peaking | 115 Hz  | 0.79 | -5.9 dB  |
+| Peaking | 584 Hz  | 3.61 | -1.6 dB  |
+| Peaking | 1452 Hz | 1.88 | -11.0 dB |
+| Peaking | 2746 Hz | 0.56 | 8.2 dB   |
+| Peaking | 66 Hz   | 6.67 | 1.1 dB   |
+| Peaking | 942 Hz  | 8.77 | 1.2 dB   |
+| Peaking | 3255 Hz | 4.34 | -1.0 dB  |
+| Peaking | 6225 Hz | 1.95 | 6.2 dB   |
+| Peaking | 7414 Hz | 1.4  | -5.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Skullcandy%20Hesh%20NBA/Skullcandy%20Hesh%20NBA.png)

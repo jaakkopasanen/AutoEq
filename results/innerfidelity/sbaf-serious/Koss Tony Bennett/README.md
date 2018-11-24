@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.7; 28 5.1; 31 4.4; 34 3.8; 37 3.3; 41 2.7; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss Tony Bennett GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss Tony Bennett ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.1dB.
 | Peaking | 544 Hz  | 2    | -3.5 dB |
 | Peaking | 1574 Hz | 1.18 | 2.6 dB  |
 | Peaking | 4883 Hz | 1.69 | 6.8 dB  |
-| Peaking | 88 Hz   | 8.86 | 2.1 dB  |
-| Peaking | 3865 Hz | 5.54 | 3.7 dB  |
-| Peaking | 4062 Hz | 1.86 | -1.9 dB |
-| Peaking | 6325 Hz | 5.61 | 2.9 dB  |
-| Peaking | 8992 Hz | 2.8  | -2.3 dB |
+| Peaking | 89 Hz   | 8.82 | 2.1 dB  |
+| Peaking | 3884 Hz | 5.54 | 3.7 dB  |
+| Peaking | 4017 Hz | 1.9  | -2.0 dB |
+| Peaking | 6292 Hz | 5.61 | 2.8 dB  |
+| Peaking | 8982 Hz | 2.79 | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20Tony%20Bennett/Koss%20Tony%20Bennett.png)

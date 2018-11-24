@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.9; 31 5.8; 34 5.6; 37 5.6; 41 5.5; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-Alpha Pro wYax1 Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-Alpha Pro wYax1 Pads ParametricEQ.txt`.
@@ -18,18 +19,17 @@ In case of using Peace, click *Import* in Peace GUI and select `Stax SR-Alpha Pr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 22 Hz    | 0.67 | 5.4 dB  |
-| Peaking | 55 Hz    | 1.01 | 3.3 dB  |
-| Peaking | 567 Hz   | 0.27 | 1.0 dB  |
-| Peaking | 1948 Hz  | 1.43 | -5.8 dB |
-| Peaking | 3607 Hz  | 1.08 | 3.5 dB  |
-| Peaking | 5268 Hz  | 6.49 | -0.7 dB |
-| Peaking | 6660 Hz  | 5.54 | 2.1 dB  |
-| Peaking | 9431 Hz  | 4.07 | -3.3 dB |
-| Peaking | 10425 Hz | 5.1  | 1.1 dB  |
+| Peaking | 22 Hz    | 0.71 | 5.3 dB  |
+| Peaking | 54 Hz    | 0.97 | 3.5 dB  |
+| Peaking | 571 Hz   | 0.28 | 1.0 dB  |
+| Peaking | 1946 Hz  | 1.43 | -5.8 dB |
+| Peaking | 3599 Hz  | 1.08 | 3.5 dB  |
+| Peaking | 6751 Hz  | 7.17 | 2.2 dB  |
+| Peaking | 9488 Hz  | 4.27 | -3.2 dB |
+| Peaking | 10422 Hz | 5.38 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-Alpha%20Pro%20wYax1%20Pads/Stax%20SR-Alpha%20Pro%20wYax1%20Pads.png)

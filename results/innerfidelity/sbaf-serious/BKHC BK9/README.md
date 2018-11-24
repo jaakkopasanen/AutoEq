@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.4; 25 3.0; 28 2.5; 31 2.2; 34 1.9; 37 1.6; 41 1.4; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`BKHC BK9 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `BKHC BK9 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `BKHC BK9 Paramet
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 670 Hz  | 0.72 | -5.4 dB |
 | Peaking | 1864 Hz | 0.61 | 7.4 dB  |
 | Peaking | 5108 Hz | 1.84 | 4.5 dB  |
-| Peaking | 2270 Hz | 2.67 | -1.0 dB |
-| Peaking | 3908 Hz | 0.81 | 1.2 dB  |
-| Peaking | 4891 Hz | 3.9  | -1.2 dB |
-| Peaking | 6414 Hz | 4.06 | 3.7 dB  |
-| Peaking | 7316 Hz | 1.42 | -3.0 dB |
+| Peaking | 2260 Hz | 2.68 | -1.0 dB |
+| Peaking | 3956 Hz | 0.81 | 1.3 dB  |
+| Peaking | 4868 Hz | 3.91 | -1.2 dB |
+| Peaking | 6392 Hz | 4.04 | 3.7 dB  |
+| Peaking | 7301 Hz | 1.41 | -3.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/BKHC%20BK9/BKHC%20BK9.png)

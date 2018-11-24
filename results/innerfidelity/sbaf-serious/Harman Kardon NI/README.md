@@ -9,28 +9,29 @@ GraphicEQ: 21 -8.2; 23 -8.3; 25 -8.3; 28 -8.3; 31 -8.2; 34 -8.1; 37 -8.0; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.3dB` and instead set Global volume in the UI for both channels to **-32**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Harman Kardon NI GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-32**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Harman Kardon NI ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.8dB.
+When using independent subset of filters, apply preamp of **-2.8dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 26 Hz   | 0.1  | -8.1 dB  |
-| Peaking | 623 Hz  | 1.09 | 1.9 dB   |
-| Peaking | 2386 Hz | 1.96 | -9.1 dB  |
-| Peaking | 5159 Hz | 5    | -12.6 dB |
-| Peaking | 6622 Hz | 3.88 | 4.8 dB   |
-| Peaking | 1699 Hz | 2.09 | -3.9 dB  |
-| Peaking | 2074 Hz | 1.18 | 3.3 dB   |
-| Peaking | 2765 Hz | 4.8  | -4.1 dB  |
-| Peaking | 3666 Hz | 3.56 | 3.0 dB   |
-| Peaking | 4531 Hz | 4.68 | -2.3 dB  |
+| Peaking | 625 Hz  | 1.1  | 1.9 dB   |
+| Peaking | 2385 Hz | 1.96 | -9.1 dB  |
+| Peaking | 5168 Hz | 5    | -12.7 dB |
+| Peaking | 6639 Hz | 3.87 | 4.8 dB   |
+| Peaking | 1701 Hz | 2.16 | -3.6 dB  |
+| Peaking | 2082 Hz | 1.15 | 3.1 dB   |
+| Peaking | 2755 Hz | 4.85 | -4.1 dB  |
+| Peaking | 3643 Hz | 3.73 | 2.8 dB   |
+| Peaking | 4542 Hz | 5.54 | -2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Harman%20Kardon%20NI/Harman%20Kardon%20NI.png)

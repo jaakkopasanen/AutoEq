@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.3; 31 4.3; 34 3.3; 37 2.4; 41 1.4; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Aiaiai TMA-1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Aiaiai TMA-1 ParametricEQ.txt`.
@@ -18,18 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Aiaiai TMA-1 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 25 Hz   | 1.36 | 6.6 dB  |
-| Peaking | 151 Hz  | 0.61 | -3.9 dB |
-| Peaking | 366 Hz  | 2.04 | -3.1 dB |
-| Peaking | 2357 Hz | 0.93 | 5.7 dB  |
-| Peaking | 4524 Hz | 1.65 | 3.9 dB  |
-| Peaking | 509 Hz  | 4.02 | -1.6 dB |
-| Peaking | 749 Hz  | 2.55 | 3.7 dB  |
-| Peaking | 977 Hz  | 2.49 | -2.2 dB |
-| Peaking | 8661 Hz | 3.09 | -1.1 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 24 Hz   |  1.35 | 6.7 dB  |
+| Peaking | 151 Hz  |  0.6  | -3.9 dB |
+| Peaking | 366 Hz  |  2.04 | -3.1 dB |
+| Peaking | 2348 Hz |  0.92 | 5.7 dB  |
+| Peaking | 4492 Hz |  1.65 | 3.9 dB  |
+| Peaking | 509 Hz  |  4.18 | -1.6 dB |
+| Peaking | 751 Hz  |  2.51 | 3.8 dB  |
+| Peaking | 972 Hz  |  2.38 | -2.3 dB |
+| Peaking | 5793 Hz | 10.21 | 2.6 dB  |
+| Peaking | 8405 Hz |  1.31 | -0.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Aiaiai%20TMA-1/Aiaiai%20TMA-1.png)

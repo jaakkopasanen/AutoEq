@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.3; 25 0.4; 28 -0.9; 31 -2.0; 34 -3.0; 37 -3.9; 41 -4.9; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.9dB` and instead set Global volume in the UI for both channels to **-38**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bloc Roc Galvanize S2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-38**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bloc Roc Galvanize S2 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Bloc Roc Galvani
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.2dB.
+When using independent subset of filters, apply preamp of **-4.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -4.2dB.
 | Peaking | 199 Hz  | 0.8  | -3.8 dB |
 | Peaking | 1787 Hz | 2.48 | -5.4 dB |
 | Peaking | 3764 Hz | 4.73 | 4.5 dB  |
-| Peaking | 478 Hz  | 1.68 | -1.9 dB |
+| Peaking | 479 Hz  | 1.68 | -1.9 dB |
 | Peaking | 710 Hz  | 1.63 | 2.9 dB  |
 | Peaking | 1422 Hz | 4.36 | -1.1 dB |
-| Peaking | 4322 Hz | 8.27 | 3.0 dB  |
-| Peaking | 4912 Hz | 4.07 | -3.1 dB |
+| Peaking | 4309 Hz | 8.28 | 2.9 dB  |
+| Peaking | 4906 Hz | 4.07 | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bloc%20Roc%20Galvanize%20S2/Bloc%20Roc%20Galvanize%20S2.png)

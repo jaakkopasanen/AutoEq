@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 0.0; 25 -0.4; 28 -1.0; 31 -1.4; 34 -1.7; 37 -2.0; 41 -2.3;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic Custom One Pro switch position 4 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic Custom One Pro switch position 4 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 52 Hz   | 1.46 | -2.8 dB |
 | Peaking | 163 Hz  | 1.55 | -5.0 dB |
-| Peaking | 1731 Hz | 3.05 | -2.8 dB |
-| Peaking | 2137 Hz | 3.94 | -3.2 dB |
-| Peaking | 4269 Hz | 1.09 | 7.0 dB  |
-| Peaking | 79 Hz   | 4.18 | -2.0 dB |
-| Peaking | 99 Hz   | 3.6  | 3.3 dB  |
-| Peaking | 126 Hz  | 4.96 | -2.0 dB |
-| Peaking | 6308 Hz | 3.35 | 4.6 dB  |
-| Peaking | 7340 Hz | 1.51 | -3.1 dB |
+| Peaking | 1724 Hz | 3.05 | -2.8 dB |
+| Peaking | 2137 Hz | 3.92 | -3.2 dB |
+| Peaking | 4268 Hz | 1.09 | 7.0 dB  |
+| Peaking | 78 Hz   | 4.05 | -2.0 dB |
+| Peaking | 98 Hz   | 3.72 | 3.3 dB  |
+| Peaking | 130 Hz  | 5    | -2.0 dB |
+| Peaking | 6287 Hz | 3.32 | 4.7 dB  |
+| Peaking | 7352 Hz | 1.51 | -3.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20Custom%20One%20Pro%20switch%20position%204/Beyerdynamic%20Custom%20One%20Pro%20switch%20position%204.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.9; 23 -4.0; 25 -4.1; 28 -4.2; 31 -4.4; 34 -4.5; 37 -4.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.3dB` and instead set Global volume in the UI for both channels to **-32**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeo PFE 232 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-32**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeo PFE 232 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Audeo PFE 232 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.0dB.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 36 Hz    | 0.25 | -3.9 dB  |
+| Peaking | 37 Hz    | 0.25 | -3.9 dB  |
 | Peaking | 146 Hz   | 0.7  | -4.9 dB  |
 | Peaking | 299 Hz   | 1.18 | -2.8 dB  |
-| Peaking | 14636 Hz | 3.59 | -12.3 dB |
+| Peaking | 14590 Hz | 3.6  | -12.3 dB |
 | Peaking | 24000 Hz | 1.89 | -6.6 dB  |
-| Peaking | 1934 Hz  | 2.18 | -2.0 dB  |
-| Peaking | 3020 Hz  | 2.51 | 2.5 dB   |
-| Peaking | 4973 Hz  | 1.01 | 2.6 dB   |
-| Peaking | 9349 Hz  | 3.52 | -6.6 dB  |
-| Peaking | 11869 Hz | 5.09 | 2.8 dB   |
+| Peaking | 1935 Hz  | 2.16 | -2.0 dB  |
+| Peaking | 3013 Hz  | 2.6  | 2.4 dB   |
+| Peaking | 4920 Hz  | 0.92 | 2.6 dB   |
+| Peaking | 9362 Hz  | 3.46 | -6.7 dB  |
+| Peaking | 11906 Hz | 4.87 | 2.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeo%20PFE%20232/Audeo%20PFE%20232.png)

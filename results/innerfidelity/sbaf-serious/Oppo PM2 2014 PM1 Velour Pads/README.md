@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.9; 25 2.7; 28 2.6; 31 2.4; 34 2.3; 37 2.2; 41 2.2; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Oppo PM2 2014 PM1 Velour Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM2 2014 PM1 Velour Pads ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Oppo PM2 2014 PM
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 1.25 | 3.0 dB  |
-| Peaking | 56 Hz   | 2.72 | 2.2 dB  |
-| Peaking | 3069 Hz | 2.39 | 3.5 dB  |
-| Peaking | 5707 Hz | 1.89 | 6.4 dB  |
-| Peaking | 8887 Hz | 3.67 | -4.9 dB |
-| Peaking | 41 Hz   | 3.14 | 0.6 dB  |
-| Peaking | 218 Hz  | 1.62 | -2.1 dB |
+| Peaking | 26 Hz   | 1.3  | 3.0 dB  |
+| Peaking | 55 Hz   | 2.73 | 2.2 dB  |
+| Peaking | 3071 Hz | 2.38 | 3.5 dB  |
+| Peaking | 5704 Hz | 1.9  | 6.4 dB  |
+| Peaking | 8892 Hz | 3.73 | -4.9 dB |
+| Peaking | 19 Hz   | 0.33 | 0.2 dB  |
+| Peaking | 218 Hz  | 1.63 | -2.1 dB |
 | Peaking | 579 Hz  | 3.13 | -1.6 dB |
-| Peaking | 1684 Hz | 2.68 | -1.0 dB |
-| Peaking | 2436 Hz | 4.97 | 0.8 dB  |
+| Peaking | 1693 Hz | 2.57 | -1.0 dB |
+| Peaking | 2440 Hz | 4.53 | 0.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM2%202014%20PM1%20Velour%20Pads/Oppo%20PM2%202014%20PM1%20Velour%20Pads.png)

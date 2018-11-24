@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.4; 25 0.3; 28 0.3; 31 0.4; 34 0.5; 37 0.5; 41 0.7; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic T5p GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T5p ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T5p
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.0dB.
+When using independent subset of filters, apply preamp of **-5.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.0dB.
 | Peaking | 646 Hz  |  1.68 | 3.5 dB  |
 | Peaking | 1816 Hz |  1.1  | -3.2 dB |
 | Peaking | 4207 Hz |  1.58 | 5.5 dB  |
-| Peaking | 336 Hz  |  1.07 | -1.8 dB |
-| Peaking | 339 Hz  |  1.85 | 2.8 dB  |
-| Peaking | 5129 Hz |  9.38 | 3.1 dB  |
-| Peaking | 6014 Hz | 10.18 | -2.6 dB |
-| Peaking | 8600 Hz |  7.61 | -3.1 dB |
+| Peaking | 332 Hz  |  1.07 | -2.0 dB |
+| Peaking | 343 Hz  |  1.78 | 3.0 dB  |
+| Peaking | 5110 Hz |  9.48 | 3.2 dB  |
+| Peaking | 5995 Hz | 10.29 | -2.6 dB |
+| Peaking | 8604 Hz |  7.62 | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T5p/Beyerdynamic%20T5p.png)

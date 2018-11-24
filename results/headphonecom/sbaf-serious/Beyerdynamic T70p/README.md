@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.9; 25 0.7; 28 0.5; 31 0.4; 34 0.3; 37 0.1; 41 0.0; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic T70p GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T70p ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T70
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 149 Hz   | 1.28 | -1.8 dB  |
+| Peaking | 149 Hz   | 1.27 | -1.8 dB  |
 | Peaking | 2462 Hz  | 4.01 | 4.7 dB   |
 | Peaking | 3850 Hz  | 2.66 | 4.1 dB   |
 | Peaking | 5875 Hz  | 2.8  | 8.6 dB   |
-| Peaking | 8678 Hz  | 2.4  | -12.7 dB |
-| Peaking | 19 Hz    | 1.69 | 1.1 dB   |
-| Peaking | 1618 Hz  | 4.69 | -2.4 dB  |
-| Peaking | 10135 Hz | 5.3  | -4.2 dB  |
-| Peaking | 11509 Hz | 2.39 | 3.2 dB   |
+| Peaking | 8679 Hz  | 2.4  | -12.7 dB |
+| Peaking | 22 Hz    | 1.55 | 1.0 dB   |
+| Peaking | 1620 Hz  | 4.71 | -2.4 dB  |
+| Peaking | 10090 Hz | 5.28 | -4.3 dB  |
+| Peaking | 11530 Hz | 2.38 | 3.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20T70p/Beyerdynamic%20T70p.png)

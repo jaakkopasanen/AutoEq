@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 -0.6; 25 -1.1; 28 -1.8; 31 -2.3; 34 -2.7; 37 -3.0; 41 -3.2
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.9dB` and instead set Global volume in the UI for both channels to **-39**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 250 II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-39**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 250 II ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 25
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.3dB.
+When using independent subset of filters, apply preamp of **-4.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -4.3dB.
 | Peaking | 3526 Hz  | 4.07 | 2.7 dB  |
 | Peaking | 5959 Hz  | 8.52 | 4.2 dB  |
 | Peaking | 8908 Hz  | 4.61 | -3.7 dB |
-| Peaking | 94 Hz    | 7.99 | 0.7 dB  |
-| Peaking | 176 Hz   | 3.49 | -1.0 dB |
-| Peaking | 475 Hz   | 0.91 | 1.4 dB  |
-| Peaking | 1748 Hz  | 1.86 | -0.9 dB |
-| Peaking | 10434 Hz | 8.66 | 0.7 dB  |
+| Peaking | 83 Hz    | 7.44 | 1.0 dB  |
+| Peaking | 174 Hz   | 3.61 | -1.0 dB |
+| Peaking | 463 Hz   | 0.93 | 1.4 dB  |
+| Peaking | 1762 Hz  | 1.86 | -0.9 dB |
+| Peaking | 10478 Hz | 8.69 | 0.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20250%20II/Sennheiser%20HD%20250%20II.png)

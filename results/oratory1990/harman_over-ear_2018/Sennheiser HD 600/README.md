@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.8; 31 5.3; 34 4.8; 37 4.3; 41 3.8; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 600 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 600 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 25 Hz    |  1.26 | 6.5 dB  |
-| Peaking | 55 Hz    |  2.8  | 2.0 dB  |
-| Peaking | 13224 Hz |  3.06 | -7.6 dB |
-| Peaking | 13275 Hz |  0.89 | 3.6 dB  |
-| Peaking | 18527 Hz |  0.98 | -9.5 dB |
-| Peaking | 172 Hz   |  1.23 | -1.7 dB |
-| Peaking | 623 Hz   |  1.64 | 1.0 dB  |
-| Peaking | 3223 Hz  |  3.36 | -2.6 dB |
-| Peaking | 4223 Hz  |  5.23 | 3.6 dB  |
-| Peaking | 5817 Hz  | 11.07 | -2.8 dB |
+| Peaking | 25 Hz    |  1.31 | 6.5 dB  |
+| Peaking | 54 Hz    |  2.79 | 2.0 dB  |
+| Peaking | 13212 Hz |  3.06 | -7.7 dB |
+| Peaking | 13382 Hz |  0.89 | 3.8 dB  |
+| Peaking | 18544 Hz |  0.96 | -9.6 dB |
+| Peaking | 173 Hz   |  1.25 | -1.7 dB |
+| Peaking | 624 Hz   |  1.66 | 1.0 dB  |
+| Peaking | 3214 Hz  |  3.36 | -2.6 dB |
+| Peaking | 4202 Hz  |  5.23 | 3.6 dB  |
+| Peaking | 5787 Hz  | 11.09 | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20600/Sennheiser%20HD%20600.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.6; 23 -0.7; 25 -0.8; 28 -0.9; 31 -1.0; 34 -1.1; 37 -1.2; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beats Powerbeats2 Bluetooth GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beats Powerbeats2 Bluetooth ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beats Powerbeats
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,8 +28,8 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 357 Hz   | 0.91 | -2.3 dB |
 | Peaking | 3493 Hz  | 1.33 | 6.8 dB  |
 | Peaking | 18864 Hz | 0.54 | -3.8 dB |
-| Peaking | 1864 Hz  | 3.09 | -0.9 dB |
-| Peaking | 2709 Hz  | 6.82 | 1.2 dB  |
+| Peaking | 1863 Hz  | 3.09 | -0.9 dB |
+| Peaking | 2705 Hz  | 6.82 | 1.2 dB  |
 | Peaking | 5979 Hz  | 4.45 | 1.8 dB  |
 | Peaking | 8358 Hz  | 3.36 | -3.1 dB |
 | Peaking | 12274 Hz | 2.56 | 1.7 dB  |

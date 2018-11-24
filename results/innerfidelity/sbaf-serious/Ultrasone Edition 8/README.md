@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultrasone Edition 8 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Edition 8 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 30 Hz    | 0.42 | 6.2 dB   |
-| Peaking | 2011 Hz  | 2.1  | 5.8 dB   |
-| Peaking | 5330 Hz  | 1.06 | 20.0 dB  |
-| Peaking | 6302 Hz  | 1.25 | -28.0 dB |
-| Peaking | 7141 Hz  | 1.09 | 8.1 dB   |
-| Peaking | 216 Hz   | 3.95 | -1.3 dB  |
-| Peaking | 719 Hz   | 1.91 | 1.2 dB   |
-| Peaking | 970 Hz   | 5.82 | -0.9 dB  |
-| Peaking | 12698 Hz | 2.55 | 1.9 dB   |
-| Peaking | 14475 Hz | 4.91 | -4.9 dB  |
+| Peaking | 2011 Hz  | 2.11 | 5.8 dB   |
+| Peaking | 5333 Hz  | 1.06 | 20.1 dB  |
+| Peaking | 6300 Hz  | 1.25 | -28.0 dB |
+| Peaking | 7145 Hz  | 1.09 | 8.1 dB   |
+| Peaking | 214 Hz   | 3.91 | -1.3 dB  |
+| Peaking | 717 Hz   | 1.94 | 1.2 dB   |
+| Peaking | 975 Hz   | 6.26 | -0.9 dB  |
+| Peaking | 12603 Hz | 2.6  | 1.9 dB   |
+| Peaking | 14370 Hz | 4.94 | -4.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20Edition%208/Ultrasone%20Edition%208.png)

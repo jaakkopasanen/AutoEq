@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.5; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado RS2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado RS2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 31 Hz    |  0.52 | 7.2 dB  |
-| Peaking | 99 Hz    |  0.69 | -4.4 dB |
-| Peaking | 2137 Hz  |  2.96 | -8.5 dB |
-| Peaking | 4109 Hz  |  4.26 | -6.8 dB |
-| Peaking | 9136 Hz  |  2    | -9.9 dB |
-| Peaking | 755 Hz   |  1.92 | 0.9 dB  |
-| Peaking | 3377 Hz  | 10.5  | 2.4 dB  |
-| Peaking | 6675 Hz  |  6.19 | -3.4 dB |
-| Peaking | 11956 Hz |  7.93 | 3.0 dB  |
-| Peaking | 13541 Hz |  3.15 | 1.6 dB  |
+| Peaking | 31 Hz    |  0.53 | 7.2 dB  |
+| Peaking | 99 Hz    |  0.68 | -4.4 dB |
+| Peaking | 2135 Hz  |  2.97 | -8.5 dB |
+| Peaking | 4162 Hz  |  4.18 | -6.8 dB |
+| Peaking | 9134 Hz  |  2.01 | -9.9 dB |
+| Peaking | 753 Hz   |  1.88 | 0.9 dB  |
+| Peaking | 3343 Hz  | 11.83 | 2.3 dB  |
+| Peaking | 6688 Hz  |  6.64 | -3.4 dB |
+| Peaking | 11848 Hz |  8.48 | 3.0 dB  |
+| Peaking | 13581 Hz |  3.21 | 1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20RS2/Grado%20RS2.png)

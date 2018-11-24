@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Superlux HD 681 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Superlux HD 681 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Superlux HD 681 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 35 Hz    | 0.45 | 6.5 dB   |
-| Peaking | 464 Hz   | 0.73 | 2.5 dB   |
-| Peaking | 1521 Hz  | 2.05 | -2.0 dB  |
-| Peaking | 2245 Hz  | 1.75 | -5.2 dB  |
-| Peaking | 8851 Hz  | 2.8  | -10.9 dB |
-| Peaking | 3769 Hz  | 4.1  | 3.7 dB   |
-| Peaking | 5139 Hz  | 1.67 | -3.6 dB  |
-| Peaking | 6669 Hz  | 8.94 | 3.4 dB   |
-| Peaking | 6928 Hz  | 9    | 2.7 dB   |
-| Peaking | 19876 Hz | 5.29 | -4.8 dB  |
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 35 Hz    |  0.45 | 6.5 dB   |
+| Peaking | 464 Hz   |  0.73 | 2.5 dB   |
+| Peaking | 1521 Hz  |  2.05 | -2.0 dB  |
+| Peaking | 2245 Hz  |  1.75 | -5.2 dB  |
+| Peaking | 8851 Hz  |  2.8  | -10.9 dB |
+| Peaking | 3777 Hz  |  3.99 | 3.8 dB   |
+| Peaking | 5077 Hz  |  1.67 | -3.6 dB  |
+| Peaking | 6669 Hz  | 10.5  | 3.0 dB   |
+| Peaking | 6969 Hz  | 10.03 | 3.5 dB   |
+| Peaking | 19800 Hz |  4.95 | -4.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Superlux%20HD%20681/Superlux%20HD%20681.png)

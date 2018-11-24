@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.9; 25 5.7; 28 5.0; 31 4.4; 34 3.9; 37 3.2; 41 2.4; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Beats Solo sample 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Beats Solo sample 2 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Monster Beats So
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 12 Hz   | 0.27 | 6.7 dB  |
-| Peaking | 135 Hz  | 1.26 | -7.5 dB |
-| Peaking | 255 Hz  | 4.55 | -4.4 dB |
-| Peaking | 2879 Hz | 1.12 | 6.3 dB  |
-| Peaking | 5760 Hz | 3.42 | 5.1 dB  |
-| Peaking | 92 Hz   | 2.5  | -3.9 dB |
-| Peaking | 100 Hz  | 0.89 | 4.8 dB  |
-| Peaking | 232 Hz  | 0.27 | -2.9 dB |
-| Peaking | 460 Hz  | 1.51 | 6.3 dB  |
-| Peaking | 8366 Hz | 4.05 | -1.3 dB |
+| Peaking | 12 Hz   | 0.27 | 6.8 dB  |
+| Peaking | 134 Hz  | 1.26 | -7.5 dB |
+| Peaking | 254 Hz  | 4.55 | -4.4 dB |
+| Peaking | 2881 Hz | 1.12 | 6.3 dB  |
+| Peaking | 5762 Hz | 3.42 | 5.1 dB  |
+| Peaking | 92 Hz   | 2.52 | -3.8 dB |
+| Peaking | 95 Hz   | 0.84 | 5.0 dB  |
+| Peaking | 205 Hz  | 0.25 | -3.0 dB |
+| Peaking | 464 Hz  | 1.54 | 6.2 dB  |
+| Peaking | 8405 Hz | 4.03 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Beats%20Solo%20sample%202/Monster%20Beats%20Solo%20sample%202.png)

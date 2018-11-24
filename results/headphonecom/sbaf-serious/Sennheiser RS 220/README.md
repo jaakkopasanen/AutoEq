@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.5; 31 4.9; 34 4.5; 37 4.0; 41 3.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser RS 220 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 220 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 1.51 | 6.1 dB  |
-| Peaking | 44 Hz   | 2.02 | 2.3 dB  |
+| Peaking | 23 Hz   | 1.51 | 6.3 dB  |
+| Peaking | 44 Hz   | 1.98 | 2.3 dB  |
 | Peaking | 1809 Hz | 2.72 | 6.9 dB  |
-| Peaking | 2444 Hz | 1.98 | -6.4 dB |
-| Peaking | 4404 Hz | 1.94 | 7.3 dB  |
-| Peaking | 139 Hz  | 0.43 | 2.6 dB  |
-| Peaking | 159 Hz  | 0.68 | -4.4 dB |
-| Peaking | 6334 Hz | 8.42 | 5.2 dB  |
-| Peaking | 6605 Hz | 6.29 | 1.2 dB  |
-| Peaking | 6972 Hz | 2.47 | -2.9 dB |
+| Peaking | 2448 Hz | 1.97 | -6.4 dB |
+| Peaking | 4405 Hz | 1.94 | 7.3 dB  |
+| Peaking | 70 Hz   | 4.55 | 1.9 dB  |
+| Peaking | 164 Hz  | 0.93 | -1.8 dB |
+| Peaking | 6381 Hz | 8.46 | 5.1 dB  |
+| Peaking | 6603 Hz | 5.83 | 1.0 dB  |
+| Peaking | 6942 Hz | 2.43 | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20220/Sennheiser%20RS%20220.png)

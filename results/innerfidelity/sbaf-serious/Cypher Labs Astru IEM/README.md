@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.9; 25 4.5; 28 3.9; 31 3.4; 34 3.0; 37 2.5; 41 2.0; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.9dB` and instead set Global volume in the UI for both channels to **-58**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Cypher Labs Astru IEM GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-58**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Cypher Labs Astru IEM ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.7dB.
+When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 13 Hz   |  0.41 | 6.6 dB  |
+| Peaking | 14 Hz   |  0.44 | 6.4 dB  |
 | Peaking | 190 Hz  |  0.48 | -4.3 dB |
-| Peaking | 1972 Hz |  1.31 | -9.8 dB |
-| Peaking | 2093 Hz |  0.47 | 4.6 dB  |
-| Peaking | 4417 Hz |  4.79 | -5.4 dB |
-| Peaking | 2727 Hz |  3.88 | -0.7 dB |
-| Peaking | 3344 Hz |  7.15 | 1.7 dB  |
-| Peaking | 5589 Hz | 10.31 | -3.1 dB |
-| Peaking | 6202 Hz |  5.89 | 2.2 dB  |
-| Peaking | 8908 Hz |  1.37 | -0.5 dB |
+| Peaking | 1979 Hz |  1.36 | -9.3 dB |
+| Peaking | 2038 Hz |  0.44 | 4.0 dB  |
+| Peaking | 4386 Hz |  4.94 | -5.4 dB |
+| Peaking | 3041 Hz |  2.13 | -0.8 dB |
+| Peaking | 3339 Hz |  5.64 | 2.3 dB  |
+| Peaking | 5597 Hz | 10.44 | -3.0 dB |
+| Peaking | 6231 Hz |  6.36 | 2.2 dB  |
+| Peaking | 9059 Hz |  1.4  | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Cypher%20Labs%20Astru%20IEM/Cypher%20Labs%20Astru%20IEM.png)

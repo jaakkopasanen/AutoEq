@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.1; 23 -2.9; 25 -3.5; 28 -4.3; 31 -4.9; 34 -5.4; 37 -5.7; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.8dB` and instead set Global volume in the UI for both channels to **-47**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Scosche RH1060 Bluetooth GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-47**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Scosche RH1060 Bluetooth ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Scosche RH1060 B
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.0dB.
+When using independent subset of filters, apply preamp of **-5.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.0dB.
 | Peaking | 493 Hz  | 1.12 | 8.5 dB  |
 | Peaking | 3647 Hz | 0.47 | -2.4 dB |
 | Peaking | 6374 Hz | 4.34 | 6.6 dB  |
-| Peaking | 3350 Hz | 4.97 | -0.8 dB |
-| Peaking | 4559 Hz | 2.3  | 1.6 dB  |
-| Peaking | 4904 Hz | 7.65 | -3.3 dB |
-| Peaking | 8318 Hz | 5.52 | -2.7 dB |
-| Peaking | 9229 Hz | 1.3  | 0.9 dB  |
+| Peaking | 3362 Hz | 4.95 | -0.8 dB |
+| Peaking | 4570 Hz | 2.3  | 1.6 dB  |
+| Peaking | 4884 Hz | 7.62 | -3.3 dB |
+| Peaking | 8340 Hz | 5.52 | -2.7 dB |
+| Peaking | 9311 Hz | 1.31 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Scosche%20RH1060%20Bluetooth/Scosche%20RH1060%20Bluetooth.png)

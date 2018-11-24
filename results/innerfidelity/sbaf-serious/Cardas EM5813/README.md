@@ -9,8 +9,9 @@ GraphicEQ: 21 -6.3; 23 -6.3; 25 -6.3; 28 -6.4; 31 -6.4; 34 -6.5; 37 -6.6; 41 -6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Cardas EM5813 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Cardas EM5813 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Cardas EM5813 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 21 Hz   | 0.2  | -5.8 dB |
-| Peaking | 124 Hz  | 0.66 | -4.0 dB |
-| Peaking | 294 Hz  | 0.55 | -6.1 dB |
-| Peaking | 4498 Hz | 6.42 | -8.0 dB |
-| Peaking | 5846 Hz | 3.47 | 7.4 dB  |
-| Peaking | 1019 Hz | 2.49 | 2.7 dB  |
-| Peaking | 1206 Hz | 0.62 | -1.0 dB |
-| Peaking | 2603 Hz | 4.33 | -5.3 dB |
-| Peaking | 3323 Hz | 4.31 | 4.0 dB  |
-| Peaking | 8210 Hz | 5.16 | -0.8 dB |
+| Peaking | 125 Hz  | 0.65 | -4.1 dB |
+| Peaking | 297 Hz  | 0.55 | -6.0 dB |
+| Peaking | 4504 Hz | 6.47 | -8.1 dB |
+| Peaking | 5850 Hz | 3.48 | 7.4 dB  |
+| Peaking | 1018 Hz | 2.39 | 2.9 dB  |
+| Peaking | 1132 Hz | 0.68 | -1.1 dB |
+| Peaking | 2603 Hz | 4.25 | -5.3 dB |
+| Peaking | 3320 Hz | 4.35 | 4.0 dB  |
+| Peaking | 8209 Hz | 5.08 | -0.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Cardas%20EM5813/Cardas%20EM5813.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.5; 25 3.1; 28 -1.3; 31 -4.8; 34 -6.4; 37 -6.8; 41 -6.7; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Beats Studio GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Beats Studio ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 22 Hz   | 1.75 | 12.0 dB  |
-| Peaking | 34 Hz   | 0.93 | -8.9 dB  |
-| Peaking | 198 Hz  | 0.48 | -7.9 dB  |
-| Peaking | 1790 Hz | 2.33 | -7.6 dB  |
+| Peaking | 22 Hz   | 1.7  | 12.0 dB  |
+| Peaking | 33 Hz   | 0.93 | -8.9 dB  |
+| Peaking | 193 Hz  | 0.47 | -7.9 dB  |
+| Peaking | 1791 Hz | 2.32 | -7.6 dB  |
 | Peaking | 8823 Hz | 3.01 | -10.2 dB |
-| Peaking | 505 Hz  | 2.09 | -2.6 dB  |
-| Peaking | 851 Hz  | 1.9  | 3.9 dB   |
-| Peaking | 1363 Hz | 3.7  | -2.3 dB  |
-| Peaking | 3312 Hz | 7.23 | 3.8 dB   |
-| Peaking | 4634 Hz | 8.71 | -6.1 dB  |
+| Peaking | 504 Hz  | 2.08 | -2.6 dB  |
+| Peaking | 850 Hz  | 1.89 | 3.9 dB   |
+| Peaking | 1358 Hz | 3.78 | -2.3 dB  |
+| Peaking | 3302 Hz | 7.37 | 3.9 dB   |
+| Peaking | 4621 Hz | 8.82 | -6.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Beats%20Studio/Monster%20Beats%20Studio.png)

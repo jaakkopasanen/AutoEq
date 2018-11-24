@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.5; 25 3.1; 28 2.6; 31 2.3; 34 2.0; 37 1.7; 41 1.5; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.5dB` and instead set Global volume in the UI for both channels to **-45**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`RHA S500i GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-45**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `RHA S500i ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `RHA S500i Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.3dB.
+When using independent subset of filters, apply preamp of **-4.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 16 Hz    | 0.61 | 4.6 dB  |
-| Peaking | 152 Hz   | 0.83 | -2.8 dB |
-| Peaking | 2538 Hz  | 1.92 | -9.7 dB |
-| Peaking | 13903 Hz | 2.14 | -3.6 dB |
-| Peaking | 20250 Hz | 3.2  | -2.5 dB |
-| Peaking | 733 Hz   | 2.05 | 1.2 dB  |
-| Peaking | 1633 Hz  | 1.8  | -3.9 dB |
-| Peaking | 2910 Hz  | 5.98 | -5.5 dB |
-| Peaking | 4292 Hz  | 0.37 | 3.8 dB  |
-| Peaking | 7412 Hz  | 2.47 | -9.3 dB |
+| Peaking | 16 Hz    | 0.6  | 4.6 dB  |
+| Peaking | 149 Hz   | 0.83 | -2.7 dB |
+| Peaking | 2537 Hz  | 1.92 | -9.7 dB |
+| Peaking | 13907 Hz | 2.14 | -3.6 dB |
+| Peaking | 20036 Hz | 3.2  | -2.5 dB |
+| Peaking | 737 Hz   | 2.1  | 1.2 dB  |
+| Peaking | 1636 Hz  | 1.82 | -3.8 dB |
+| Peaking | 2902 Hz  | 6    | -5.5 dB |
+| Peaking | 4379 Hz  | 0.37 | 3.8 dB  |
+| Peaking | 7426 Hz  | 2.45 | -9.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/RHA%20S500i/RHA%20S500i.png)

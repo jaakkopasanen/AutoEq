@@ -9,28 +9,29 @@ GraphicEQ: 21 -5.5; 23 -5.9; 25 -6.2; 28 -6.6; 31 -6.9; 34 -7.2; 37 -7.5; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`UBSound Fighter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `UBSound Fighter ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 46 Hz   | 0.37 | -7.2 dB |
-| Peaking | 135 Hz  | 0.8  | -5.2 dB |
+| Peaking | 135 Hz  | 0.79 | -5.2 dB |
 | Peaking | 268 Hz  | 1.39 | -3.0 dB |
-| Peaking | 1837 Hz | 2.44 | -5.4 dB |
+| Peaking | 1836 Hz | 2.44 | -5.4 dB |
 | Peaking | 3322 Hz | 1.08 | 7.4 dB  |
-| Peaking | 685 Hz  | 0.8  | -0.9 dB |
-| Peaking | 735 Hz  | 2.75 | 3.0 dB  |
-| Peaking | 3499 Hz | 6.2  | -1.2 dB |
-| Peaking | 5443 Hz | 3.38 | 4.5 dB  |
-| Peaking | 6357 Hz | 5.37 | -7.0 dB |
+| Peaking | 697 Hz  | 0.85 | -0.9 dB |
+| Peaking | 738 Hz  | 2.72 | 3.0 dB  |
+| Peaking | 3481 Hz | 6.31 | -1.3 dB |
+| Peaking | 5412 Hz | 3.41 | 4.4 dB  |
+| Peaking | 6323 Hz | 5.41 | -6.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/UBSound%20Fighter/UBSound%20Fighter.png)

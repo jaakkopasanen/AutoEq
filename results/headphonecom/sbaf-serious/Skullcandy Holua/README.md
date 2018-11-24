@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.9; 23 -9.8; 25 -9.8; 28 -9.7; 31 -9.6; 34 -9.6; 37 -9.5; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Skullcandy Holua GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Holua ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Holua
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 30 Hz   | 0.24 | -9.6 dB  |
 | Peaking | 160 Hz  | 0.81 | -3.9 dB  |
-| Peaking | 2288 Hz | 2.08 | -13.0 dB |
-| Peaking | 3249 Hz | 1.46 | 6.0 dB   |
-| Peaking | 3599 Hz | 4.47 | 4.1 dB   |
-| Peaking | 295 Hz  | 2.31 | -0.8 dB  |
+| Peaking | 2286 Hz | 2.07 | -13.2 dB |
+| Peaking | 3226 Hz | 1.36 | 5.9 dB   |
+| Peaking | 3580 Hz | 4.47 | 4.3 dB   |
+| Peaking | 295 Hz  | 2.52 | -0.8 dB  |
 | Peaking | 788 Hz  | 1.38 | 1.8 dB   |
-| Peaking | 1666 Hz | 5.12 | -1.9 dB  |
-| Peaking | 5170 Hz | 5.48 | -3.8 dB  |
-| Peaking | 6351 Hz | 5.95 | 5.7 dB   |
+| Peaking | 1666 Hz | 5.15 | -1.9 dB  |
+| Peaking | 5160 Hz | 5.55 | -3.9 dB  |
+| Peaking | 6345 Hz | 6.05 | 5.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Skullcandy%20Holua/Skullcandy%20Holua.png)

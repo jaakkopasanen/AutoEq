@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.7; 23 -8.7; 25 -8.7; 28 -8.8; 31 -8.8; 34 -8.8; 37 -8.8; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.9dB` and instead set Global volume in the UI for both channels to **-38**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Klipsch Image S4i GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-38**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Klipsch Image S4i ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Klipsch Image S4
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.4dB.
+When using independent subset of filters, apply preamp of **-4.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -4.4dB.
 | Peaking | 5950 Hz  | 5.29 | -5.2 dB |
 | Peaking | 922 Hz   | 1.01 | 4.9 dB  |
 | Peaking | 1196 Hz  | 0.57 | -4.2 dB |
-| Peaking | 3345 Hz  | 4.01 | 1.8 dB  |
-| Peaking | 7345 Hz  | 5.55 | 1.6 dB  |
-| Peaking | 10677 Hz | 9.88 | -2.1 dB |
+| Peaking | 3346 Hz  | 4    | 1.8 dB  |
+| Peaking | 7331 Hz  | 5.56 | 1.6 dB  |
+| Peaking | 10667 Hz | 9.89 | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Klipsch%20Image%20S4i/Klipsch%20Image%20S4i.png)

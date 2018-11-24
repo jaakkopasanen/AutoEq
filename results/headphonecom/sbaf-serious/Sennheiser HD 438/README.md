@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.9; 41 5.4; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 438 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 438 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 274 Hz  | 1.09 | 4.2 dB  |
 | Peaking | 471 Hz  | 1.84 | 1.3 dB  |
 | Peaking | 3671 Hz | 0.83 | 6.9 dB  |
-| Peaking | 1394 Hz | 3.09 | -2.0 dB |
-| Peaking | 2300 Hz | 2.54 | 2.0 dB  |
-| Peaking | 3584 Hz | 2.28 | -1.3 dB |
-| Peaking | 6177 Hz | 2.4  | 4.9 dB  |
-| Peaking | 7592 Hz | 1.54 | -3.7 dB |
+| Peaking | 1393 Hz | 3.09 | -2.0 dB |
+| Peaking | 2293 Hz | 2.53 | 2.0 dB  |
+| Peaking | 3605 Hz | 2.31 | -1.3 dB |
+| Peaking | 6272 Hz | 2.38 | 5.1 dB  |
+| Peaking | 7424 Hz | 1.53 | -3.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20438/Sennheiser%20HD%20438.png)

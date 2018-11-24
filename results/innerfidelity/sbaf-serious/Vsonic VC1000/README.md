@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.0; 25 2.9; 28 2.9; 31 2.8; 34 2.7; 37 2.5; 41 2.3; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Vsonic VC1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Vsonic VC1000 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Vsonic VC1000 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 3407 Hz  |  2.45 | 6.6 dB  |
 | Peaking | 5945 Hz  |  3.5  | 5.9 dB  |
 | Peaking | 11233 Hz |  4.3  | -4.5 dB |
-| Peaking | 815 Hz   |  1.39 | 1.4 dB  |
-| Peaking | 1359 Hz  |  0.42 | -1.0 dB |
-| Peaking | 2926 Hz  |  9.38 | 2.0 dB  |
-| Peaking | 3992 Hz  | 14.48 | 2.1 dB  |
+| Peaking | 813 Hz   |  1.4  | 1.4 dB  |
+| Peaking | 1361 Hz  |  0.42 | -1.0 dB |
+| Peaking | 2921 Hz  |  9.38 | 1.9 dB  |
+| Peaking | 4004 Hz  | 14.46 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Vsonic%20VC1000/Vsonic%20VC1000.png)

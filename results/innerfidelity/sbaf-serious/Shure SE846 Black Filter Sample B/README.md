@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.1; 23 -5.1; 25 -5.1; 28 -5.1; 31 -5.0; 34 -5.0; 37 -4.9; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SE846 Black Filter Sample B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SE846 Black Filter Sample B ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Shure SE846 Blac
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 19 Hz   | 0.34 | -4.7 dB |
-| Peaking | 125 Hz  | 0.46 | -3.8 dB |
-| Peaking | 3130 Hz | 2.53 | 5.0 dB  |
-| Peaking | 5522 Hz | 1.33 | 6.8 dB  |
-| Peaking | 8219 Hz | 1.88 | -2.9 dB |
-| Peaking | 804 Hz  | 1.78 | 1.1 dB  |
-| Peaking | 1848 Hz | 0.84 | -1.5 dB |
-| Peaking | 2623 Hz | 5.22 | 2.1 dB  |
-| Peaking | 4056 Hz | 4.54 | 1.2 dB  |
-| Peaking | 5218 Hz | 7.34 | -0.6 dB |
+| Peaking | 19 Hz   | 0.35 | -4.6 dB |
+| Peaking | 124 Hz  | 0.46 | -3.8 dB |
+| Peaking | 3129 Hz | 2.53 | 5.0 dB  |
+| Peaking | 5519 Hz | 1.33 | 6.8 dB  |
+| Peaking | 8051 Hz | 1.87 | -2.9 dB |
+| Peaking | 805 Hz  | 1.88 | 1.0 dB  |
+| Peaking | 1800 Hz | 0.94 | -1.4 dB |
+| Peaking | 2606 Hz | 5.58 | 2.0 dB  |
+| Peaking | 4083 Hz | 4.91 | 1.2 dB  |
+| Peaking | 5263 Hz | 9.11 | -0.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SE846%20Black%20Filter%20Sample%20B/Shure%20SE846%20Black%20Filter%20Sample%20B.png)

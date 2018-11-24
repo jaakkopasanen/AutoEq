@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.2; 23 -0.5; 25 -0.8; 28 -1.1; 31 -1.3; 34 -1.5; 37 -1.7; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`E-Mu Walnut GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `E-Mu Walnut ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `E-Mu Walnut Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 70 Hz   | 0.66 | -2.4 dB |
+| Peaking | 69 Hz   | 0.66 | -2.4 dB |
 | Peaking | 157 Hz  | 1.39 | -2.0 dB |
 | Peaking | 2444 Hz | 2.55 | 4.3 dB  |
 | Peaking | 3797 Hz | 5.91 | 4.1 dB  |
 | Peaking | 5762 Hz | 3.32 | 6.6 dB  |
-| Peaking | 241 Hz  | 3.55 | -0.5 dB |
-| Peaking | 449 Hz  | 2.37 | 1.1 dB  |
-| Peaking | 1225 Hz | 7.58 | 0.8 dB  |
-| Peaking | 6557 Hz | 9.36 | 2.0 dB  |
-| Peaking | 8656 Hz | 1.6  | -1.1 dB |
+| Peaking | 241 Hz  | 3.54 | -0.5 dB |
+| Peaking | 448 Hz  | 2.37 | 1.1 dB  |
+| Peaking | 1231 Hz | 7.58 | 0.8 dB  |
+| Peaking | 6596 Hz | 9.35 | 2.0 dB  |
+| Peaking | 8657 Hz | 1.6  | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/E-Mu%20Walnut/E-Mu%20Walnut.png)

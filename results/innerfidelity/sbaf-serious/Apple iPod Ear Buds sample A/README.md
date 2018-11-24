@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Apple iPod Ear Buds sample A GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Apple iPod Ear Buds sample A ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 62 Hz   |  0.2  | 6.6 dB  |
-| Peaking | 221 Hz  |  2.82 | -2.6 dB |
-| Peaking | 316 Hz  |  1.32 | -4.7 dB |
-| Peaking | 3015 Hz |  6.19 | -5.7 dB |
-| Peaking | 6724 Hz |  3.1  | -5.9 dB |
-| Peaking | 14 Hz   |  2.05 | 1.1 dB  |
-| Peaking | 137 Hz  |  6.3  | 1.3 dB  |
-| Peaking | 3915 Hz |  8.16 | 1.3 dB  |
-| Peaking | 5305 Hz | 10.95 | 2.8 dB  |
-| Peaking | 8741 Hz |  8.65 | -3.6 dB |
+| Peaking | 222 Hz  |  2.82 | -2.6 dB |
+| Peaking | 317 Hz  |  1.33 | -4.7 dB |
+| Peaking | 3014 Hz |  6.18 | -5.7 dB |
+| Peaking | 6725 Hz |  3.1  | -5.9 dB |
+| Peaking | 18 Hz   |  1.97 | 1.2 dB  |
+| Peaking | 137 Hz  |  6.58 | 1.3 dB  |
+| Peaking | 3911 Hz |  8.25 | 1.3 dB  |
+| Peaking | 5345 Hz | 11.1  | 2.8 dB  |
+| Peaking | 8766 Hz |  8.66 | -3.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Apple%20iPod%20Ear%20Buds%20sample%20A/Apple%20iPod%20Ear%20Buds%20sample%20A.png)

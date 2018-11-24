@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-D1001 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D1001 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D1001 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 32 Hz   | 0.52 | 6.4 dB  |
-| Peaking | 429 Hz  | 1.34 | 4.3 dB  |
-| Peaking | 2125 Hz | 2.56 | 4.2 dB  |
-| Peaking | 3169 Hz | 6.36 | 4.1 dB  |
-| Peaking | 5941 Hz | 4.22 | 4.9 dB  |
-| Peaking | 583 Hz  | 5.74 | 1.1 dB  |
-| Peaking | 859 Hz  | 3.45 | -1.3 dB |
-| Peaking | 4421 Hz | 6.09 | -2.4 dB |
-| Peaking | 5624 Hz | 0.87 | 0.7 dB  |
-| Peaking | 9563 Hz | 4.56 | -2.9 dB |
+| Peaking | 431 Hz  | 1.34 | 4.3 dB  |
+| Peaking | 2126 Hz | 2.56 | 4.2 dB  |
+| Peaking | 3166 Hz | 6.36 | 4.1 dB  |
+| Peaking | 5942 Hz | 4.22 | 4.9 dB  |
+| Peaking | 589 Hz  | 5.71 | 1.1 dB  |
+| Peaking | 858 Hz  | 3.41 | -1.3 dB |
+| Peaking | 4416 Hz | 6.06 | -2.4 dB |
+| Peaking | 5634 Hz | 0.87 | 0.7 dB  |
+| Peaking | 9580 Hz | 4.54 | -2.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D1001/Denon%20AH-D1001.png)

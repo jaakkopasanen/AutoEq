@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.9; 31 5.1; 34 4.2; 37 3.8; 41 3.6; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Phiaton PS 500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Phiaton PS 500 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Phiaton PS 500 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 29 Hz   | 0.41 | 7.7 dB   |
-| Peaking | 526 Hz  | 0.46 | 12.5 dB  |
+| Peaking | 525 Hz  | 0.46 | 12.5 dB  |
 | Peaking | 535 Hz  | 0.1  | -10.0 dB |
-| Peaking | 2969 Hz | 1.4  | 10.4 dB  |
-| Peaking | 5127 Hz | 1.57 | 7.7 dB   |
-| Peaking | 230 Hz  | 1.11 | -4.2 dB  |
-| Peaking | 399 Hz  | 0.61 | 6.6 dB   |
-| Peaking | 536 Hz  | 1.13 | -5.8 dB  |
-| Peaking | 1906 Hz | 7.04 | -2.3 dB  |
-| Peaking | 8661 Hz | 7.49 | -1.3 dB  |
+| Peaking | 2975 Hz | 1.4  | 10.4 dB  |
+| Peaking | 5116 Hz | 1.57 | 7.7 dB   |
+| Peaking | 231 Hz  | 1.08 | -4.2 dB  |
+| Peaking | 401 Hz  | 0.62 | 6.8 dB   |
+| Peaking | 533 Hz  | 1.13 | -6.0 dB  |
+| Peaking | 1923 Hz | 7.14 | -2.3 dB  |
+| Peaking | 4589 Hz | 5.02 | -0.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Phiaton%20PS%20500/Phiaton%20PS%20500.png)

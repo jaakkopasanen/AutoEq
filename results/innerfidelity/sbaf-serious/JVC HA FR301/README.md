@@ -9,16 +9,17 @@ GraphicEQ: 21 -9.1; 23 -9.6; 25 -10.0; 28 -10.5; 31 -10.9; 34 -11.2; 37 -11.5; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.3dB` and instead set Global volume in the UI for both channels to **-3**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`JVC HA FR301 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-3**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `JVC HA FR301 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.1dB.
+When using independent subset of filters, apply preamp of **--0.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of --0.1dB.
 | Peaking | 4664 Hz  | 1.16 | -11.0 dB |
 | Peaking | 15638 Hz | 3.45 | -5.5 dB  |
 | Peaking | 1061 Hz  | 2.38 | 2.0 dB   |
-| Peaking | 2859 Hz  | 5.36 | -1.1 dB  |
-| Peaking | 6729 Hz  | 3.78 | 4.0 dB   |
-| Peaking | 9299 Hz  | 2.3  | -7.0 dB  |
-| Peaking | 11248 Hz | 2.24 | 4.5 dB   |
+| Peaking | 2857 Hz  | 5.36 | -1.1 dB  |
+| Peaking | 6789 Hz  | 3.78 | 3.9 dB   |
+| Peaking | 9388 Hz  | 2.3  | -7.0 dB  |
+| Peaking | 11144 Hz | 2.23 | 4.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/JVC%20HA%20FR301/JVC%20HA%20FR301.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sansui SS35 Pads Off GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sansui SS35 Pads Off ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sansui SS35 Pads
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 683 Hz  | 3.48 | 3.0 dB  |
 | Peaking | 3356 Hz | 1.2  | 6.0 dB  |
 | Peaking | 5646 Hz | 2.9  | 4.5 dB  |
-| Peaking | 1256 Hz | 2.79 | -2.8 dB |
+| Peaking | 1258 Hz | 2.78 | -2.8 dB |
 | Peaking | 1931 Hz | 1.85 | 3.6 dB  |
-| Peaking | 2269 Hz | 5.49 | -4.6 dB |
-| Peaking | 6563 Hz | 6.52 | 2.5 dB  |
-| Peaking | 7703 Hz | 1.86 | -1.7 dB |
+| Peaking | 2266 Hz | 5.49 | -4.6 dB |
+| Peaking | 6537 Hz | 6.52 | 2.5 dB  |
+| Peaking | 7704 Hz | 1.86 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sansui%20SS35%20Pads%20Off/Sansui%20SS35%20Pads%20Off.png)

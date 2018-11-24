@@ -9,8 +9,9 @@ GraphicEQ: 21 -11.4; 23 -11.3; 25 -11.2; 28 -11.0; 31 -10.9; 34 -10.7; 37 -10.6;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.2dB` and instead set Global volume in the UI for both channels to **-41**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Turbine GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-41**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Turbine ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Monster Turbine 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.4dB.
+When using independent subset of filters, apply preamp of **-4.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -4.4dB.
 | Peaking | 2397 Hz  | 1.78 | -6.1 dB  |
 | Peaking | 4712 Hz  | 4.6  | -6.0 dB  |
 | Peaking | 6458 Hz  | 5.21 | 5.2 dB   |
-| Peaking | 738 Hz   | 2.06 | 1.9 dB   |
-| Peaking | 1689 Hz  | 3.26 | -1.4 dB  |
-| Peaking | 2816 Hz  | 1.77 | 2.0 dB   |
-| Peaking | 2850 Hz  | 4.69 | -3.0 dB  |
-| Peaking | 11686 Hz | 1.71 | -1.9 dB  |
+| Peaking | 740 Hz   | 2.06 | 1.9 dB   |
+| Peaking | 1691 Hz  | 3.28 | -1.4 dB  |
+| Peaking | 2820 Hz  | 1.83 | 2.1 dB   |
+| Peaking | 2853 Hz  | 4.69 | -3.1 dB  |
+| Peaking | 11685 Hz | 1.71 | -1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Turbine/Monster%20Turbine.png)

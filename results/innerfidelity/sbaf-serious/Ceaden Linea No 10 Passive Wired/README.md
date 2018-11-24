@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.3; 23 -1.8; 25 -2.1; 28 -2.5; 31 -2.8; 34 -3.0; 37 -3.2; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ceaden Linea No 10 Passive Wired GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ceaden Linea No 10 Passive Wired ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Ceaden Linea No 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 557 Hz  | 2.24 | 1.7 dB  |
 | Peaking | 3249 Hz | 1.73 | 6.7 dB  |
 | Peaking | 5836 Hz | 3.81 | 5.3 dB  |
-| Peaking | 1714 Hz | 1.19 | -5.2 dB |
-| Peaking | 2657 Hz | 0.63 | 5.2 dB  |
-| Peaking | 3229 Hz | 3.77 | -3.7 dB |
-| Peaking | 6157 Hz | 0.96 | -2.8 dB |
-| Peaking | 6590 Hz | 5.07 | 2.1 dB  |
+| Peaking | 1709 Hz | 1.2  | -5.1 dB |
+| Peaking | 2670 Hz | 0.63 | 5.1 dB  |
+| Peaking | 3232 Hz | 3.8  | -3.7 dB |
+| Peaking | 6166 Hz | 0.96 | -2.8 dB |
+| Peaking | 6589 Hz | 5.08 | 2.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ceaden%20Linea%20No%2010%20Passive%20Wired/Ceaden%20Linea%20No%2010%20Passive%20Wired.png)

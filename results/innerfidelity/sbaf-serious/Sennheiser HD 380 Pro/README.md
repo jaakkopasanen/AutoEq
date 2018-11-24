@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.7; 23 -9.8; 25 -9.9; 28 -9.9; 31 -9.9; 34 -9.8; 37 -9.7; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.6dB` and instead set Global volume in the UI for both channels to **-45**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 380 Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-45**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 380 Pro ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 38
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.0dB.
+When using independent subset of filters, apply preamp of **-5.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.0dB.
 | Peaking | 493 Hz  | 2.8  | -2.6 dB |
 | Peaking | 2179 Hz | 3.53 | -5.0 dB |
 | Peaking | 5654 Hz | 5.2  | 5.0 dB  |
-| Peaking | 95 Hz   | 4.53 | 5.7 dB  |
-| Peaking | 129 Hz  | 0.91 | -3.3 dB |
-| Peaking | 236 Hz  | 2.4  | 3.8 dB  |
-| Peaking | 3233 Hz | 7.86 | 3.0 dB  |
-| Peaking | 4181 Hz | 6.56 | -3.5 dB |
+| Peaking | 93 Hz   | 4.53 | 5.7 dB  |
+| Peaking | 131 Hz  | 0.93 | -3.3 dB |
+| Peaking | 237 Hz  | 2.4  | 3.8 dB  |
+| Peaking | 3238 Hz | 7.83 | 3.0 dB  |
+| Peaking | 4185 Hz | 6.54 | -3.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20380%20Pro/Sennheiser%20HD%20380%20Pro.png)

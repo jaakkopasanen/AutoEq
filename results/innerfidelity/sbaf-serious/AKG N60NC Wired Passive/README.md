@@ -9,16 +9,17 @@ GraphicEQ: 21 -2.9; 23 -2.8; 25 -2.8; 28 -2.7; 31 -2.7; 34 -2.6; 37 -2.5; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.8dB` and instead set Global volume in the UI for both channels to **-57**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG N60NC Wired Passive GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-57**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG N60NC Wired Passive ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.8dB.
+When using independent subset of filters, apply preamp of **-5.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.8dB.
 | Peaking | 138 Hz  | 0.67 | -3.7 dB |
 | Peaking | 2554 Hz | 1.27 | -2.3 dB |
 | Peaking | 6149 Hz | 3.81 | 6.0 dB  |
-| Peaking | 497 Hz  | 9.37 | -1.4 dB |
-| Peaking | 830 Hz  | 1.59 | 0.6 dB  |
-| Peaking | 4662 Hz | 2.51 | -1.4 dB |
-| Peaking | 4778 Hz | 8.42 | 4.0 dB  |
-| Peaking | 8026 Hz | 6.48 | -0.7 dB |
+| Peaking | 494 Hz  | 9.38 | -1.4 dB |
+| Peaking | 829 Hz  | 1.6  | 0.6 dB  |
+| Peaking | 4708 Hz | 2.51 | -1.4 dB |
+| Peaking | 4732 Hz | 8.37 | 4.0 dB  |
+| Peaking | 7988 Hz | 6.5  | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20N60NC%20Wired%20Passive/AKG%20N60NC%20Wired%20Passive.png)

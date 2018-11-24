@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.8; 34 5.2; 37 4.3; 41 3.3; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado SR225 Comfy Pad with Hole GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR225 Comfy Pad with Hole ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado SR225 Comf
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 26 Hz   | 0.83 | 6.7 dB   |
-| Peaking | 108 Hz  | 0.7  | -3.1 dB  |
-| Peaking | 2158 Hz | 2.9  | -10.1 dB |
-| Peaking | 6513 Hz | 1.17 | 4.6 dB   |
-| Peaking | 8535 Hz | 2.69 | -7.2 dB  |
-| Peaking | 819 Hz  | 1.28 | 0.8 dB   |
-| Peaking | 1515 Hz | 7.51 | -0.9 dB  |
-| Peaking | 4524 Hz | 5.65 | 3.2 dB   |
-| Peaking | 5232 Hz | 2.3  | -3.0 dB  |
-| Peaking | 6103 Hz | 5.67 | 3.0 dB   |
+| Peaking | 26 Hz   | 0.82 | 6.7 dB   |
+| Peaking | 110 Hz  | 0.7  | -3.1 dB  |
+| Peaking | 2159 Hz | 2.9  | -10.1 dB |
+| Peaking | 6509 Hz | 1.18 | 4.6 dB   |
+| Peaking | 8537 Hz | 2.69 | -7.2 dB  |
+| Peaking | 821 Hz  | 1.23 | 0.8 dB   |
+| Peaking | 1510 Hz | 7.23 | -0.9 dB  |
+| Peaking | 4486 Hz | 5.68 | 3.3 dB   |
+| Peaking | 5336 Hz | 2.27 | -3.0 dB  |
+| Peaking | 6111 Hz | 5.67 | 3.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225%20Comfy%20Pad%20with%20Hole/Grado%20SR225%20Comfy%20Pad%20with%20Hole.png)

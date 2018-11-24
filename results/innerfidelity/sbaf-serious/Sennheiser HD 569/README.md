@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 4.8; 25 4.0; 28 3.0; 31 2.1; 34 1.4; 37 0.8; 41 0.1; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.3dB` and instead set Global volume in the UI for both channels to **-62**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 569 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-62**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 569 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 294 Hz  | 1.49 | 4.8 dB  |
 | Peaking | 2705 Hz | 4.25 | 2.7 dB  |
 | Peaking | 5509 Hz | 2.5  | 6.7 dB  |
-| Peaking | 141 Hz  | 4.89 | -2.9 dB |
-| Peaking | 141 Hz  | 2.03 | 1.6 dB  |
-| Peaking | 1326 Hz | 4.04 | 1.0 dB  |
-| Peaking | 6511 Hz | 9.34 | 2.0 dB  |
-| Peaking | 8860 Hz | 2.75 | -1.8 dB |
+| Peaking | 138 Hz  | 2.09 | 1.6 dB  |
+| Peaking | 144 Hz  | 4.87 | -3.0 dB |
+| Peaking | 1327 Hz | 4.04 | 1.0 dB  |
+| Peaking | 6517 Hz | 9.41 | 2.0 dB  |
+| Peaking | 8863 Hz | 2.75 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20569/Sennheiser%20HD%20569.png)

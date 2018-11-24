@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.8; 23 -9.8; 25 -9.7; 28 -9.7; 31 -9.7; 34 -9.6; 37 -9.5; 41 -9.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.7dB` and instead set Global volume in the UI for both channels to **-56**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Zoukbox ZLX30 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-56**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Zoukbox ZLX30 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Zoukbox ZLX30 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 4372 Hz  | 4.51 | -12.0 dB |
 | Peaking | 5839 Hz  | 3.28 | 8.2 dB   |
 | Peaking | 763 Hz   | 1.98 | 1.9 dB   |
-| Peaking | 1548 Hz  | 4.04 | -1.5 dB  |
-| Peaking | 10424 Hz | 6.45 | -3.3 dB  |
-| Peaking | 12748 Hz | 0.09 | 0.2 dB   |
-| Peaking | 16228 Hz | 4.39 | -3.2 dB  |
+| Peaking | 1554 Hz  | 4.04 | -1.5 dB  |
+| Peaking | 10470 Hz | 6.45 | -3.3 dB  |
+| Peaking | 12766 Hz | 0.09 | 0.2 dB   |
+| Peaking | 16053 Hz | 4.39 | -3.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Zoukbox%20ZLX30/Zoukbox%20ZLX30.png)

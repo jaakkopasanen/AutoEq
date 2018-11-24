@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.2; 25 -0.2; 28 -0.7; 31 -1.1; 34 -1.4; 37 -1.7; 41 -1.9;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sol Republic Master Tracks XC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sol Republic Master Tracks XC ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sol Republic Mas
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 401 Hz  | 3.12 | 1.6 dB  |
 | Peaking | 2793 Hz | 1.15 | 6.7 dB  |
 | Peaking | 5949 Hz | 4.5  | 5.4 dB  |
-| Peaking | 637 Hz  | 5.96 | 0.5 dB  |
-| Peaking | 4629 Hz | 1.94 | 4.2 dB  |
-| Peaking | 4657 Hz | 6.45 | -6.1 dB |
-| Peaking | 5034 Hz | 0.55 | -0.9 dB |
-| Peaking | 8115 Hz | 4.89 | -0.9 dB |
+| Peaking | 638 Hz  | 5.62 | 0.5 dB  |
+| Peaking | 4608 Hz | 1.96 | 4.0 dB  |
+| Peaking | 4673 Hz | 6.56 | -6.1 dB |
+| Peaking | 5087 Hz | 0.51 | -0.8 dB |
+| Peaking | 8124 Hz | 4.57 | -0.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sol%20Republic%20Master%20Tracks%20XC/Sol%20Republic%20Master%20Tracks%20XC.png)

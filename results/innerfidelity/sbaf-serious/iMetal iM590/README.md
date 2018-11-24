@@ -9,28 +9,29 @@ GraphicEQ: 21 -7.5; 23 -7.4; 25 -7.4; 28 -7.4; 31 -7.3; 34 -7.2; 37 -7.2; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`iMetal iM590 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `iMetal iM590 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.0dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
-| Type    | Fc      |     Q | Gain     |
-|:--------|:--------|:------|:---------|
-| Peaking | 28 Hz   |  0.25 | -7.2 dB  |
-| Peaking | 148 Hz  |  0.85 | -3.6 dB  |
-| Peaking | 2238 Hz |  1.78 | -9.7 dB  |
-| Peaking | 3716 Hz |  1.3  | 12.5 dB  |
-| Peaking | 4902 Hz |  1.9  | -10.0 dB |
-| Peaking | 277 Hz  |  2.29 | -0.8 dB  |
-| Peaking | 702 Hz  |  1.53 | 1.7 dB   |
-| Peaking | 1602 Hz |  3.7  | -1.0 dB  |
-| Peaking | 7166 Hz | 13.89 | 1.9 dB   |
-| Peaking | 9335 Hz |  8.89 | -1.4 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 28 Hz   | 0.26 | -7.2 dB |
+| Peaking | 148 Hz  | 0.86 | -3.6 dB |
+| Peaking | 2207 Hz | 1.91 | -8.6 dB |
+| Peaking | 3655 Hz | 1.59 | 10.6 dB |
+| Peaking | 5037 Hz | 2.24 | -8.0 dB |
+| Peaking | 274 Hz  | 2.05 | -0.8 dB |
+| Peaking | 707 Hz  | 1.49 | 1.8 dB  |
+| Peaking | 1582 Hz | 3    | -0.9 dB |
+| Peaking | 6367 Hz | 8.61 | -1.6 dB |
+| Peaking | 7091 Hz | 7.54 | 2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/iMetal%20iM590/iMetal%20iM590.png)

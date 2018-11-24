@@ -9,27 +9,28 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-009 SZ9-1278 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-009 SZ9-1278 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 17 Hz   | 0.05 | 5.2 dB  |
-| Peaking | 3169 Hz | 1.33 | 5.2 dB  |
-| Peaking | 5201 Hz | 1.34 | -4.2 dB |
-| Peaking | 5952 Hz | 3.38 | 9.2 dB  |
-| Peaking | 33 Hz   | 0.95 | 1.0 dB  |
-| Peaking | 159 Hz  | 1.06 | -0.9 dB |
-| Peaking | 1332 Hz | 0.6  | 3.8 dB  |
-| Peaking | 1335 Hz | 1.12 | -5.2 dB |
-| Peaking | 3102 Hz | 8.04 | -2.2 dB |
+| Peaking | 3209 Hz | 1.3  | 5.4 dB  |
+| Peaking | 5181 Hz | 1.32 | -5.2 dB |
+| Peaking | 5971 Hz | 3.17 | 9.9 dB  |
+| Peaking | 33 Hz   | 0.87 | 1.0 dB  |
+| Peaking | 178 Hz  | 0.66 | -1.1 dB |
+| Peaking | 968 Hz  | 0.31 | 1.7 dB  |
+| Peaking | 1624 Hz | 0.85 | -3.5 dB |
+| Peaking | 2166 Hz | 2.78 | 2.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-009%20SZ9-1278/Stax%20SR-009%20SZ9-1278.png)

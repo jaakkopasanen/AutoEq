@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.0; 25 4.2; 28 3.1; 31 2.3; 34 1.5; 37 0.9; 41 0.3; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.5dB` and instead set Global volume in the UI for both channels to **-65**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Phonon SMB2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-65**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Phonon SMB2 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Phonon SMB2 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 569 Hz  | 1.31 | 4.2 dB  |
 | Peaking | 1805 Hz | 2.31 | -4.3 dB |
 | Peaking | 4010 Hz | 0.93 | 6.9 dB  |
-| Peaking | 2206 Hz | 7.5  | -0.8 dB |
-| Peaking | 3208 Hz | 2.72 | 1.9 dB  |
-| Peaking | 3680 Hz | 4.78 | -2.5 dB |
-| Peaking | 6267 Hz | 2.81 | 4.9 dB  |
-| Peaking | 7385 Hz | 1.48 | -3.6 dB |
+| Peaking | 2205 Hz | 7.5  | -0.8 dB |
+| Peaking | 3207 Hz | 2.71 | 1.9 dB  |
+| Peaking | 3684 Hz | 4.77 | -2.6 dB |
+| Peaking | 6276 Hz | 2.81 | 4.9 dB  |
+| Peaking | 7367 Hz | 1.48 | -3.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Phonon%20SMB2/Phonon%20SMB2.png)

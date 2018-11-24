@@ -9,8 +9,9 @@ GraphicEQ: 21 -7.1; 23 -7.3; 25 -7.5; 28 -7.8; 31 -8.1; 34 -8.2; 37 -8.3; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.3dB` and instead set Global volume in the UI for both channels to **-2**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Xiaomi Crystal GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-2**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Xiaomi Crystal ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Xiaomi Crystal P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -29,7 +30,7 @@ When using independent subset of filters, apply preamp of -0.1dB.
 | Peaking | 9563 Hz  | 4.33 | -5.3 dB |
 | Peaking | 867 Hz   | 1.98 | 1.1 dB  |
 | Peaking | 2173 Hz  | 2.26 | -2.4 dB |
-| Peaking | 3659 Hz  | 5.75 | 1.8 dB  |
-| Peaking | 12174 Hz | 5.02 | 1.2 dB  |
+| Peaking | 3655 Hz  | 5.75 | 1.8 dB  |
+| Peaking | 12266 Hz | 5.02 | 1.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Xiaomi%20Crystal/Xiaomi%20Crystal.png)

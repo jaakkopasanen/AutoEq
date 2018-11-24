@@ -9,8 +9,9 @@ GraphicEQ: 21 -9.4; 23 -9.3; 25 -9.2; 28 -9.0; 31 -8.9; 34 -8.7; 37 -8.6; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.4dB` and instead set Global volume in the UI for both channels to **-54**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Lil Jamz GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-54**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Lil Jamz ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Monster Lil Jamz
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.7dB.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.7dB.
 | Peaking | 1789 Hz  | 0.27 | 4.3 dB  |
 | Peaking | 2160 Hz  | 0.87 | -8.4 dB |
 | Peaking | 3572 Hz  | 3.19 | 6.5 dB  |
-| Peaking | 751 Hz   | 5.28 | 0.4 dB  |
-| Peaking | 5171 Hz  | 5.31 | -1.5 dB |
-| Peaking | 6486 Hz  | 4.84 | 5.0 dB  |
-| Peaking | 7887 Hz  | 1.68 | -1.6 dB |
-| Peaking | 15116 Hz | 4.42 | -1.4 dB |
+| Peaking | 752 Hz   | 5.3  | 0.4 dB  |
+| Peaking | 5151 Hz  | 5.34 | -1.5 dB |
+| Peaking | 6457 Hz  | 4.87 | 5.0 dB  |
+| Peaking | 7891 Hz  | 1.68 | -1.6 dB |
+| Peaking | 15087 Hz | 4.42 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Monster%20Lil%20Jamz/Monster%20Lil%20Jamz.png)

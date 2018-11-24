@@ -9,8 +9,9 @@ GraphicEQ: 21 -14.3; 23 -14.3; 25 -14.3; 28 -14.2; 31 -14.2; 34 -14.1; 37 -14.1;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--0.9dB` and instead set Global volume in the UI for both channels to **-8**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiSoundAudio Wooduo GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-8**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiSoundAudio Wooduo ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `HiSoundAudio Woo
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.1dB.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -28,8 +29,8 @@ When using independent subset of filters, apply preamp of -0.1dB.
 | Peaking | 855 Hz  | 1.53 | 2.3 dB   |
 | Peaking | 5467 Hz | 3.62 | -10.3 dB |
 | Peaking | 1964 Hz | 2.4  | -0.8 dB  |
-| Peaking | 3623 Hz | 3.37 | 0.8 dB   |
-| Peaking | 4442 Hz | 6.08 | -1.9 dB  |
-| Peaking | 7374 Hz | 6.36 | 2.7 dB   |
+| Peaking | 3616 Hz | 3.42 | 0.8 dB   |
+| Peaking | 4427 Hz | 6.16 | -1.9 dB  |
+| Peaking | 7317 Hz | 6.37 | 2.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiSoundAudio%20Wooduo/HiSoundAudio%20Wooduo.png)

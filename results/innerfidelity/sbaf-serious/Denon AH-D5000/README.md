@@ -9,27 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.7; 28 4.6; 31 3.4; 34 2.3; 37 1.6; 41 1.1; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Denon AH-D5000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D5000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 23 Hz    | 1.62 | 6.3 dB  |
-| Peaking | 458 Hz   | 1.21 | 3.0 dB  |
+| Peaking | 23 Hz    | 1.62 | 6.2 dB  |
+| Peaking | 458 Hz   | 1.21 | 2.9 dB  |
 | Peaking | 805 Hz   | 2.1  | -3.7 dB |
 | Peaking | 2193 Hz  | 3.52 | 2.7 dB  |
 | Peaking | 10258 Hz | 4.21 | -3.5 dB |
-| Peaking | 1180 Hz  | 9.43 | -0.6 dB |
-| Peaking | 3529 Hz  | 4.02 | -1.9 dB |
-| Peaking | 5246 Hz  | 3.23 | 2.8 dB  |
-| Peaking | 12053 Hz | 8.05 | -1.3 dB |
+| Peaking | 39 Hz    | 1.88 | -0.4 dB |
+| Peaking | 1171 Hz  | 9.45 | -0.6 dB |
+| Peaking | 3530 Hz  | 4.01 | -1.9 dB |
+| Peaking | 5249 Hz  | 3.21 | 2.8 dB  |
+| Peaking | 12044 Hz | 8.05 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-D5000/Denon%20AH-D5000.png)

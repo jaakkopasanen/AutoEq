@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.2; 23 -3.2; 25 -3.3; 28 -3.3; 31 -3.3; 34 -3.3; 37 -3.3; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.2dB` and instead set Global volume in the UI for both channels to **-52**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`NAD VISO HP50 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-52**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NAD VISO HP50 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `NAD VISO HP50 Pa
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.9dB.
+When using independent subset of filters, apply preamp of **-1.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -1.9dB.
 | Peaking | 1541 Hz | 2.76 | 0.6 dB  |
 | Peaking | 1607 Hz | 1.49 | -6.1 dB |
 | Peaking | 2291 Hz | 0.41 | 3.0 dB  |
-| Peaking | 2160 Hz | 5.22 | -0.6 dB |
-| Peaking | 2825 Hz | 3.71 | 1.0 dB  |
-| Peaking | 4802 Hz | 3.06 | -5.3 dB |
-| Peaking | 6016 Hz | 2.19 | 6.7 dB  |
-| Peaking | 8195 Hz | 2.38 | -3.9 dB |
+| Peaking | 2163 Hz | 5.22 | -0.6 dB |
+| Peaking | 2825 Hz | 3.72 | 1.0 dB  |
+| Peaking | 4804 Hz | 3.06 | -5.3 dB |
+| Peaking | 6018 Hz | 2.18 | 6.7 dB  |
+| Peaking | 8205 Hz | 2.39 | -3.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NAD%20VISO%20HP50/NAD%20VISO%20HP50.png)

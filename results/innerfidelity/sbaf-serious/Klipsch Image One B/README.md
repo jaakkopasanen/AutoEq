@@ -9,28 +9,29 @@ GraphicEQ: 21 -9.6; 23 -9.8; 25 -10.0; 28 -10.1; 31 -10.3; 34 -10.3; 37 -10.4; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.4dB` and instead set Global volume in the UI for both channels to **-34**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Klipsch Image One B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-34**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Klipsch Image One B ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.7dB.
+When using independent subset of filters, apply preamp of **-1.8dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 31 Hz   | 0.23 | -9.6 dB  |
-| Peaking | 269 Hz  | 0.41 | -8.2 dB  |
+| Peaking | 268 Hz  | 0.41 | -8.2 dB  |
 | Peaking | 639 Hz  | 0.79 | 8.0 dB   |
-| Peaking | 2977 Hz | 0.74 | -13.0 dB |
-| Peaking | 4419 Hz | 0.84 | 8.5 dB   |
-| Peaking | 441 Hz  | 8.33 | 0.6 dB   |
-| Peaking | 4956 Hz | 5.32 | 2.0 dB   |
-| Peaking | 5498 Hz | 4.36 | -2.8 dB  |
-| Peaking | 6770 Hz | 8.12 | 3.4 dB   |
-| Peaking | 8630 Hz | 1.46 | -0.4 dB  |
+| Peaking | 2981 Hz | 0.75 | -12.9 dB |
+| Peaking | 4413 Hz | 0.84 | 8.4 dB   |
+| Peaking | 4926 Hz | 5.53 | 1.9 dB   |
+| Peaking | 5492 Hz | 6.23 | -2.1 dB  |
+| Peaking | 6084 Hz | 3.38 | -1.2 dB  |
+| Peaking | 6815 Hz | 7.19 | 3.9 dB   |
+| Peaking | 8507 Hz | 1.34 | -0.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Klipsch%20Image%20One%20B/Klipsch%20Image%20One%20B.png)

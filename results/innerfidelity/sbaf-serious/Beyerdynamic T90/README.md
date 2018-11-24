@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 3.9; 25 3.7; 28 3.3; 31 2.9; 34 2.7; 37 2.5; 41 2.3; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.5dB` and instead set Global volume in the UI for both channels to **-44**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic T90 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T90 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.0dB.
+When using independent subset of filters, apply preamp of **-3.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -4.0dB.
 | Peaking | 2632 Hz  | 1.48 | -3.6 dB  |
 | Peaking | 8613 Hz  | 2.03 | -12.8 dB |
 | Peaking | 17915 Hz | 1.28 | -6.2 dB  |
-| Peaking | 863 Hz   | 2.71 | 1.2 dB   |
-| Peaking | 4356 Hz  | 3.37 | -4.8 dB  |
-| Peaking | 4841 Hz  | 5    | 7.1 dB   |
-| Peaking | 5714 Hz  | 4.72 | 4.2 dB   |
-| Peaking | 6632 Hz  | 5.71 | -4.9 dB  |
+| Peaking | 861 Hz   | 2.76 | 1.2 dB   |
+| Peaking | 4307 Hz  | 3.23 | -5.0 dB  |
+| Peaking | 4800 Hz  | 3.31 | 6.6 dB   |
+| Peaking | 5932 Hz  | 4.34 | 2.7 dB   |
+| Peaking | 6644 Hz  | 5.8  | -5.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T90/Beyerdynamic%20T90.png)

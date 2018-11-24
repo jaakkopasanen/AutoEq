@@ -9,28 +9,29 @@ GraphicEQ: 21 -0.2; 23 -0.9; 25 -1.6; 28 -2.5; 31 -3.2; 34 -3.7; 37 -4.1; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-M50x (Dekoni Sheepskin Earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M50x (Dekoni Sheepskin Earpads) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.6dB.
+When using independent subset of filters, apply preamp of **-3.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 73 Hz    | 0.46 | -5.3 dB  |
-| Peaking | 189 Hz   | 2.19 | -3.7 dB  |
-| Peaking | 1678 Hz  | 2.72 | 2.8 dB   |
-| Peaking | 4186 Hz  | 1.24 | 3.7 dB   |
+| Peaking | 73 Hz    | 0.45 | -5.3 dB  |
+| Peaking | 190 Hz   | 2.19 | -3.7 dB  |
+| Peaking | 1679 Hz  | 2.72 | 2.8 dB   |
+| Peaking | 4187 Hz  | 1.24 | 3.7 dB   |
 | Peaking | 15349 Hz | 1.25 | -10.2 dB |
-| Peaking | 343 Hz   | 4.06 | 2.9 dB   |
-| Peaking | 580 Hz   | 1.84 | -2.2 dB  |
-| Peaking | 5287 Hz  | 6.39 | 8.1 dB   |
-| Peaking | 5674 Hz  | 2.09 | -4.2 dB  |
-| Peaking | 10697 Hz | 3.88 | 3.1 dB   |
+| Peaking | 343 Hz   | 4.02 | 2.9 dB   |
+| Peaking | 579 Hz   | 1.85 | -2.2 dB  |
+| Peaking | 5260 Hz  | 6.35 | 8.1 dB   |
+| Peaking | 5714 Hz  | 2.09 | -4.2 dB  |
+| Peaking | 10737 Hz | 3.88 | 3.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audio%20Technica%20ATH-M50x%20(Dekoni%20Sheepskin%20Earpads)/Audio%20Technica%20ATH-M50x%20(Dekoni%20Sheepskin%20Earpads).png)

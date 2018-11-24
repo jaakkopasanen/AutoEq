@@ -9,28 +9,29 @@ GraphicEQ: 21 -6.5; 23 -6.6; 25 -6.7; 28 -6.9; 31 -7.0; 34 -7.0; 37 -7.0; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-44**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Klipsch Image S2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Klipsch Image S2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.4dB.
+When using independent subset of filters, apply preamp of **-4.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 39 Hz    | 0.34 | -7.1 dB |
-| Peaking | 152 Hz   | 0.94 | -3.4 dB |
-| Peaking | 2405 Hz  | 1.68 | -8.0 dB |
-| Peaking | 3530 Hz  | 2.42 | 7.3 dB  |
-| Peaking | 5486 Hz  | 6.84 | -8.7 dB |
-| Peaking | 734 Hz   | 1.69 | 2.3 dB  |
-| Peaking | 1332 Hz  | 3.96 | -2.0 dB |
-| Peaking | 5870 Hz  | 8.86 | -2.3 dB |
-| Peaking | 6716 Hz  | 6.61 | 4.3 dB  |
-| Peaking | 14721 Hz | 5.18 | -3.0 dB |
+| Peaking | 151 Hz   | 0.94 | -3.4 dB |
+| Peaking | 2406 Hz  | 1.68 | -8.0 dB |
+| Peaking | 3548 Hz  | 2.42 | 7.3 dB  |
+| Peaking | 5516 Hz  | 6.84 | -8.7 dB |
+| Peaking | 734 Hz   | 1.67 | 2.3 dB  |
+| Peaking | 1330 Hz  | 4.09 | -2.0 dB |
+| Peaking | 6045 Hz  | 2.62 | -2.0 dB |
+| Peaking | 6708 Hz  | 5.65 | 5.4 dB  |
+| Peaking | 14680 Hz | 5.31 | -3.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Klipsch%20Image%20S2/Klipsch%20Image%20S2.png)

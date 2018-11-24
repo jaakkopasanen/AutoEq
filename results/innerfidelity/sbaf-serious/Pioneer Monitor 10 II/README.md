@@ -9,16 +9,17 @@ GraphicEQ: 21 -4.3; 23 -4.4; 25 -4.5; 28 -4.5; 31 -4.6; 34 -4.6; 37 -4.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Pioneer Monitor 10 II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pioneer Monitor 10 II ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -30,7 +31,7 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 375 Hz  | 3.43 | -2.0 dB  |
 | Peaking | 639 Hz  | 2.83 | 4.0 dB   |
 | Peaking | 760 Hz  | 4.35 | 2.4 dB   |
-| Peaking | 6443 Hz | 3.89 | 4.8 dB   |
-| Peaking | 7030 Hz | 1.5  | -2.9 dB  |
+| Peaking | 6357 Hz | 3.93 | 4.7 dB   |
+| Peaking | 7128 Hz | 1.5  | -2.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20Monitor%2010%20II/Pioneer%20Monitor%2010%20II.png)

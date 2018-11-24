@@ -9,28 +9,29 @@ GraphicEQ: 21 -12.8; 23 -12.8; 25 -12.8; 28 -12.7; 31 -12.6; 34 -12.5; 37 -12.5;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--2.5dB` and instead set Global volume in the UI for both channels to **-25**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`NarMoo R1M Black Ports GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-25**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NarMoo R1M Black Ports ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.7dB.
+When using independent subset of filters, apply preamp of **-1.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 27 Hz    | 0.2  | -12.5 dB |
 | Peaking | 169 Hz   | 0.7  | -5.2 dB  |
-| Peaking | 5060 Hz  | 2.75 | -10.3 dB |
-| Peaking | 6527 Hz  | 2.45 | 4.5 dB   |
-| Peaking | 17263 Hz | 3.56 | -3.3 dB  |
-| Peaking | 90 Hz    | 4.48 | -0.5 dB  |
-| Peaking | 349 Hz   | 1.89 | -1.1 dB  |
+| Peaking | 5054 Hz  | 2.72 | -10.5 dB |
+| Peaking | 6444 Hz  | 2.26 | 4.5 dB   |
+| Peaking | 17194 Hz | 3.52 | -3.2 dB  |
+| Peaking | 48 Hz    | 2.29 | 0.2 dB   |
+| Peaking | 349 Hz   | 1.82 | -1.1 dB  |
 | Peaking | 690 Hz   | 1.55 | 1.9 dB   |
-| Peaking | 1679 Hz  | 2.9  | -1.1 dB  |
-| Peaking | 3558 Hz  | 6.34 | 0.6 dB   |
+| Peaking | 1677 Hz  | 2.9  | -1.1 dB  |
+| Peaking | 3567 Hz  | 6.09 | 0.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NarMoo%20R1M%20Black%20Ports/NarMoo%20R1M%20Black%20Ports.png)

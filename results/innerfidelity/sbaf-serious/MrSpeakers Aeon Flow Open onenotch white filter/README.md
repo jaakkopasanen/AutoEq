@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.8; 25 0.7; 28 0.6; 31 0.5; 34 0.4; 37 0.3; 41 0.2; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.4dB` and instead set Global volume in the UI for both channels to **-54**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`MrSpeakers Aeon Flow Open onenotch white filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-54**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon Flow Open onenotch white filter ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.8dB.
+When using independent subset of filters, apply preamp of **-5.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.8dB.
 | Peaking | 2255 Hz | 0.81 | 6.7 dB  |
 | Peaking | 6160 Hz | 3.62 | 5.0 dB  |
 | Peaking | 8963 Hz | 4.28 | -5.0 dB |
-| Peaking | 53 Hz   | 0.43 | 1.5 dB  |
-| Peaking | 102 Hz  | 1.66 | -2.1 dB |
-| Peaking | 3380 Hz | 6.31 | 2.4 dB  |
-| Peaking | 3890 Hz | 2.4  | -1.4 dB |
-| Peaking | 5396 Hz | 5.8  | 0.8 dB  |
+| Peaking | 54 Hz   | 0.41 | 1.5 dB  |
+| Peaking | 102 Hz  | 1.67 | -2.1 dB |
+| Peaking | 3394 Hz | 6.31 | 2.4 dB  |
+| Peaking | 3883 Hz | 2.41 | -1.4 dB |
+| Peaking | 5353 Hz | 5.79 | 0.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20Flow%20Open%20onenotch%20white%20filter/MrSpeakers%20Aeon%20Flow%20Open%20onenotch%20white%20filter.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.3; 23 -0.9; 25 -1.5; 28 -2.2; 31 -2.8; 34 -3.3; 37 -3.8; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.2dB` and instead set Global volume in the UI for both channels to **-32**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser MM 50 iP GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-32**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser MM 50 iP ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser MM 50
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.4dB.
+When using independent subset of filters, apply preamp of **-3.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 112 Hz   | 0.46 | -8.5 dB |
-| Peaking | 296 Hz   | 1.05 | -3.3 dB |
-| Peaking | 3451 Hz  | 2.97 | 3.9 dB  |
-| Peaking | 5934 Hz  | 3.49 | -9.1 dB |
-| Peaking | 9374 Hz  | 5.79 | -6.8 dB |
-| Peaking | 20 Hz    | 2.52 | 0.9 dB  |
-| Peaking | 492 Hz   | 2.08 | -0.9 dB |
-| Peaking | 1033 Hz  | 0.85 | 1.1 dB  |
-| Peaking | 1767 Hz  | 3.27 | -1.6 dB |
-| Peaking | 11110 Hz | 7.44 | 1.3 dB  |
+| Peaking | 296 Hz   | 1.04 | -3.3 dB |
+| Peaking | 3454 Hz  | 2.97 | 3.9 dB  |
+| Peaking | 5947 Hz  | 3.49 | -9.1 dB |
+| Peaking | 9347 Hz  | 5.8  | -6.8 dB |
+| Peaking | 17 Hz    | 2.07 | 1.4 dB  |
+| Peaking | 491 Hz   | 2.07 | -0.9 dB |
+| Peaking | 1033 Hz  | 0.86 | 1.1 dB  |
+| Peaking | 1741 Hz  | 3.29 | -1.6 dB |
+| Peaking | 11140 Hz | 7.53 | 1.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20MM%2050%20iP/Sennheiser%20MM%2050%20iP.png)

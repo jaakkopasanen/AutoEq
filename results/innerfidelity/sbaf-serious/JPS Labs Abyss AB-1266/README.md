@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.7; 31 5.5; 34 5.7; 37 5.9; 41 5.8; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`JPS Labs Abyss AB-1266 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `JPS Labs Abyss AB-1266 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 16 Hz   | 0.33 | 5.4 dB  |
-| Peaking | 123 Hz  | 0.41 | 4.6 dB  |
-| Peaking | 538 Hz  | 3.85 | 4.4 dB  |
-| Peaking | 3787 Hz | 0.54 | 7.0 dB  |
-| Peaking | 8804 Hz | 1.54 | -3.6 dB |
-| Peaking | 719 Hz  | 2.25 | 1.6 dB  |
-| Peaking | 918 Hz  | 2.47 | -2.6 dB |
-| Peaking | 1940 Hz | 2.65 | 2.6 dB  |
-| Peaking | 3034 Hz | 0.35 | -0.8 dB |
-| Peaking | 5704 Hz | 4.77 | 2.3 dB  |
+| Peaking | 16 Hz   | 0.39 | 5.2 dB  |
+| Peaking | 117 Hz  | 0.39 | 4.8 dB  |
+| Peaking | 539 Hz  | 3.86 | 4.4 dB  |
+| Peaking | 3792 Hz | 0.53 | 7.0 dB  |
+| Peaking | 8830 Hz | 1.54 | -3.6 dB |
+| Peaking | 740 Hz  | 2.15 | 1.7 dB  |
+| Peaking | 906 Hz  | 2.39 | -2.8 dB |
+| Peaking | 1920 Hz | 2.67 | 2.6 dB  |
+| Peaking | 3138 Hz | 0.37 | -0.8 dB |
+| Peaking | 5770 Hz | 4.86 | 2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/JPS%20Labs%20Abyss%20AB-1266/JPS%20Labs%20Abyss%20AB-1266.png)

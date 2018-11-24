@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.1; 23 -9.9; 25 -9.6; 28 -9.2; 31 -8.9; 34 -8.7; 37 -8.4; 41 -7
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.2dB` and instead set Global volume in the UI for both channels to **-41**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`RBH EP1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-41**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `RBH EP1 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `RBH EP1 Parametr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.1dB.
+When using independent subset of filters, apply preamp of **-4.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,9 +28,10 @@ When using independent subset of filters, apply preamp of -4.1dB.
 | Peaking | 1979 Hz | 2.19 | -5.0 dB  |
 | Peaking | 4802 Hz | 5.21 | -7.4 dB  |
 | Peaking | 6549 Hz | 5.2  | 4.7 dB   |
-| Peaking | 736 Hz  | 2.19 | 1.9 dB   |
-| Peaking | 1508 Hz | 6.05 | -0.9 dB  |
-| Peaking | 3402 Hz | 1.72 | -2.5 dB  |
-| Peaking | 3462 Hz | 3.82 | 5.1 dB   |
+| Peaking | 11 Hz   | 0.83 | -1.1 dB  |
+| Peaking | 736 Hz  | 2.2  | 1.9 dB   |
+| Peaking | 1510 Hz | 6.21 | -0.9 dB  |
+| Peaking | 3399 Hz | 1.73 | -2.6 dB  |
+| Peaking | 3465 Hz | 3.8  | 5.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/RBH%20EP1/RBH%20EP1.png)

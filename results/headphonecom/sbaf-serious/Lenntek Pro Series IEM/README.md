@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Lenntek Pro Series IEM GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Lenntek Pro Series IEM ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Lenntek Pro Seri
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 15 Hz   | 0.12 | 6.1 dB  |
 | Peaking | 2062 Hz | 2.11 | -8.2 dB |
-| Peaking | 3393 Hz | 2.46 | 5.9 dB  |
-| Peaking | 4439 Hz | 5.29 | -8.3 dB |
-| Peaking | 5794 Hz | 3.9  | 7.5 dB  |
-| Peaking | 148 Hz  | 1.25 | -0.6 dB |
+| Peaking | 3392 Hz | 2.46 | 5.9 dB  |
+| Peaking | 4438 Hz | 5.29 | -8.3 dB |
+| Peaking | 5793 Hz | 3.9  | 7.5 dB  |
+| Peaking | 149 Hz  | 1.25 | -0.6 dB |
 | Peaking | 607 Hz  | 0.91 | 1.6 dB  |
-| Peaking | 1527 Hz | 3.26 | -1.0 dB |
-| Peaking | 6711 Hz | 7.21 | 2.2 dB  |
-| Peaking | 8223 Hz | 5.11 | -3.8 dB |
+| Peaking | 1528 Hz | 3.27 | -1.0 dB |
+| Peaking | 6756 Hz | 7.23 | 2.2 dB  |
+| Peaking | 8266 Hz | 5.11 | -3.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Lenntek%20Pro%20Series%20IEM/Lenntek%20Pro%20Series%20IEM.png)

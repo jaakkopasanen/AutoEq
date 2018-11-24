@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Meze 99 Neo with Classic Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Meze 99 Neo with Classic Pads ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Meze 99 Neo with
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 31 Hz   | 0.43 | 6.3 dB  |
 | Peaking | 366 Hz  | 2.12 | 4.6 dB  |
-| Peaking | 3672 Hz | 4.53 | 3.9 dB  |
-| Peaking | 5933 Hz | 2.75 | 7.0 dB  |
+| Peaking | 3670 Hz | 4.53 | 3.9 dB  |
+| Peaking | 5934 Hz | 2.75 | 7.0 dB  |
 | Peaking | 7837 Hz | 1.79 | -1.4 dB |
-| Peaking | 448 Hz  | 7.41 | 0.8 dB  |
-| Peaking | 673 Hz  | 2.08 | -0.6 dB |
-| Peaking | 1690 Hz | 4.41 | -0.5 dB |
-| Peaking | 2524 Hz | 2.34 | -1.1 dB |
-| Peaking | 2724 Hz | 4.03 | 1.5 dB  |
+| Peaking | 448 Hz  | 6.92 | 0.8 dB  |
+| Peaking | 674 Hz  | 1.98 | -0.6 dB |
+| Peaking | 1702 Hz | 4.35 | -0.5 dB |
+| Peaking | 2514 Hz | 2.51 | -1.0 dB |
+| Peaking | 2719 Hz | 4.27 | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Meze%2099%20Neo%20with%20Classic%20Pads/Meze%2099%20Neo%20with%20Classic%20Pads.png)

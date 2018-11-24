@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.1; 25 0.1; 28 0.0; 31 -0.1; 34 -0.2; 37 -0.3; 41 -0.4; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`TDK BA200 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `TDK BA200 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `TDK BA200 Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -26,10 +27,10 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 1914 Hz | 2.2  | -3.6 dB |
 | Peaking | 3464 Hz | 2.46 | 6.3 dB  |
 | Peaking | 5902 Hz | 2.62 | 6.1 dB  |
-| Peaking | 9113 Hz | 4.4  | -5.6 dB |
-| Peaking | 22 Hz   | 1.1  | 0.3 dB  |
-| Peaking | 382 Hz  | 2.26 | -0.7 dB |
-| Peaking | 795 Hz  | 1.73 | 1.1 dB  |
+| Peaking | 9112 Hz | 4.4  | -5.6 dB |
+| Peaking | 21 Hz   | 1.01 | 0.3 dB  |
+| Peaking | 383 Hz  | 2.26 | -0.7 dB |
+| Peaking | 794 Hz  | 1.73 | 1.1 dB  |
 | Peaking | 1492 Hz | 4.91 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/TDK%20BA200/TDK%20BA200.png)

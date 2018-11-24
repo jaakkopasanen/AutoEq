@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.9; 25 1.5; 28 1.1; 31 0.7; 34 0.5; 37 0.2; 41 -0.0; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser Momentum Wireless Wired Passive GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum Wireless Wired Passive ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momen
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 16 Hz   | 0.97 | 3.1 dB  |
-| Peaking | 120 Hz  | 0.74 | -2.5 dB |
-| Peaking | 343 Hz  | 1.89 | 2.8 dB  |
-| Peaking | 3713 Hz | 2.5  | 6.8 dB  |
-| Peaking | 6046 Hz | 4.35 | 5.6 dB  |
-| Peaking | 1811 Hz | 2.1  | -2.8 dB |
-| Peaking | 2962 Hz | 4.69 | 2.0 dB  |
-| Peaking | 6741 Hz | 8.21 | 1.5 dB  |
-| Peaking | 7790 Hz | 2.68 | -1.1 dB |
+| Peaking | 16 Hz   | 0.97 | 3.2 dB  |
+| Peaking | 121 Hz  | 0.72 | -2.5 dB |
+| Peaking | 341 Hz  | 1.88 | 2.8 dB  |
+| Peaking | 3715 Hz | 2.5  | 6.8 dB  |
+| Peaking | 6024 Hz | 4.36 | 5.6 dB  |
+| Peaking | 1811 Hz | 2.11 | -2.8 dB |
+| Peaking | 2964 Hz | 4.73 | 2.0 dB  |
+| Peaking | 6704 Hz | 8.5  | 1.7 dB  |
+| Peaking | 7744 Hz | 2.46 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20Wireless%20Wired%20Passive/Sennheiser%20Momentum%20Wireless%20Wired%20Passive.png)

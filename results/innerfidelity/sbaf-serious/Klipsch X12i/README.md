@@ -9,8 +9,9 @@ GraphicEQ: 21 -0.9; 23 -1.0; 25 -1.1; 28 -1.3; 31 -1.4; 34 -1.5; 37 -1.7; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Klipsch X12i GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Klipsch X12i ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Klipsch X12i Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 3058 Hz | 4.8  | -1.3 dB |
 | Peaking | 4130 Hz | 2.19 | 6.0 dB  |
 | Peaking | 5885 Hz | 3.46 | 4.9 dB  |
-| Peaking | 26 Hz   | 1.51 | -0.4 dB |
+| Peaking | 26 Hz   | 1.47 | -0.4 dB |
 | Peaking | 837 Hz  | 3.22 | 0.9 dB  |
-| Peaking | 1598 Hz | 3.94 | -1.1 dB |
+| Peaking | 1599 Hz | 3.94 | -1.1 dB |
 | Peaking | 8248 Hz | 4.57 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Klipsch%20X12i/Klipsch%20X12i.png)

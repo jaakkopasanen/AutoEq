@@ -9,8 +9,9 @@ GraphicEQ: 21 -4.2; 23 -4.4; 25 -4.6; 28 -4.7; 31 -4.7; 34 -4.7; 37 -4.6; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bose QuietComfort 3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfort 3 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfor
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 26 Hz   | 0.4  | -4.3 dB |
-| Peaking | 147 Hz  | 0.7  | -4.4 dB |
+| Peaking | 26 Hz   | 0.41 | -4.3 dB |
+| Peaking | 148 Hz  | 0.7  | -4.4 dB |
 | Peaking | 2604 Hz | 1.75 | 6.6 dB  |
 | Peaking | 5882 Hz | 2.42 | 6.6 dB  |
-| Peaking | 7915 Hz | 2.15 | -1.8 dB |
-| Peaking | 1308 Hz | 3.34 | -1.6 dB |
-| Peaking | 2018 Hz | 7.05 | 1.3 dB  |
-| Peaking | 4095 Hz | 7.61 | -2.9 dB |
-| Peaking | 4248 Hz | 2.95 | 2.5 dB  |
-| Peaking | 4411 Hz | 9.76 | -2.9 dB |
+| Peaking | 7916 Hz | 2.15 | -1.8 dB |
+| Peaking | 1308 Hz | 3.32 | -1.6 dB |
+| Peaking | 2013 Hz | 6.85 | 1.3 dB  |
+| Peaking | 4107 Hz | 7.33 | -2.7 dB |
+| Peaking | 4179 Hz | 2.81 | 2.4 dB  |
+| Peaking | 4413 Hz | 9.39 | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Bose%20QuietComfort%203/Bose%20QuietComfort%203.png)

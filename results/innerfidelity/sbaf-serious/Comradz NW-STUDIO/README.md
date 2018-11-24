@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Comradz NW-STUDIO GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Comradz NW-STUDIO ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Comradz NW-STUDI
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.3dB.
 | Peaking | 5907 Hz  | 1.52 | -9.4 dB  |
 | Peaking | 8922 Hz  | 2.22 | -17.7 dB |
 | Peaking | 11751 Hz | 1.86 | 6.7 dB   |
-| Peaking | 526 Hz   | 9.19 | -7.7 dB  |
-| Peaking | 975 Hz   | 0.49 | 1.6 dB   |
-| Peaking | 1595 Hz  | 4.21 | -3.4 dB  |
-| Peaking | 2736 Hz  | 4.46 | -3.0 dB  |
-| Peaking | 3437 Hz  | 6.26 | 2.8 dB   |
+| Peaking | 525 Hz   | 9.18 | -7.7 dB  |
+| Peaking | 974 Hz   | 0.49 | 1.6 dB   |
+| Peaking | 1593 Hz  | 4.21 | -3.4 dB  |
+| Peaking | 2741 Hz  | 4.46 | -3.0 dB  |
+| Peaking | 3439 Hz  | 6.26 | 2.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Comradz%20NW-STUDIO/Comradz%20NW-STUDIO.png)

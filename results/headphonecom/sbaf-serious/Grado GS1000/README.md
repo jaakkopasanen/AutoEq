@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.6; 37 4.7; 41 3.8; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado GS1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado GS1000 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado GS1000 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 794 Hz   | 1.16 | 0.8 dB   |
 | Peaking | 1690 Hz  | 1.68 | -0.7 dB  |
 | Peaking | 6892 Hz  | 1.27 | -10.7 dB |
-| Peaking | 3399 Hz  | 5.29 | 1.9 dB   |
-| Peaking | 3775 Hz  | 9.43 | -4.0 dB  |
-| Peaking | 9655 Hz  | 2.99 | -3.7 dB  |
-| Peaking | 11425 Hz | 1.35 | 2.9 dB   |
+| Peaking | 3403 Hz  | 5.22 | 1.9 dB   |
+| Peaking | 3778 Hz  | 9.37 | -4.0 dB  |
+| Peaking | 9634 Hz  | 3    | -3.7 dB  |
+| Peaking | 11459 Hz | 1.35 | 2.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20GS1000/Grado%20GS1000.png)

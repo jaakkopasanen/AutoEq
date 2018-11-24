@@ -9,27 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.8; 34 5.1; 37 4.2; 41 2.8; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado PS1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado PS1000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.4dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
 | Peaking | 27 Hz    |  0.84 | 7.3 dB   |
 | Peaking | 95 Hz    |  0.82 | -6.5 dB  |
-| Peaking | 1579 Hz  |  5.36 | -2.4 dB  |
-| Peaking | 4125 Hz  |  7.16 | -5.7 dB  |
-| Peaking | 6907 Hz  |  1.5  | -11.9 dB |
-| Peaking | 605 Hz   |  1.29 | 0.9 dB   |
-| Peaking | 3438 Hz  | 11.36 | 3.1 dB   |
-| Peaking | 9599 Hz  |  3.66 | -4.2 dB  |
-| Peaking | 11563 Hz |  1.67 | 2.9 dB   |
+| Peaking | 1579 Hz  |  5.29 | -2.4 dB  |
+| Peaking | 4142 Hz  |  6.78 | -5.5 dB  |
+| Peaking | 6912 Hz  |  1.5  | -11.9 dB |
+| Peaking | 613 Hz   |  1.22 | 0.9 dB   |
+| Peaking | 3441 Hz  | 10.15 | 3.3 dB   |
+| Peaking | 7598 Hz  |  3.46 | 4.0 dB   |
+| Peaking | 9412 Hz  |  1.33 | -6.6 dB  |
+| Peaking | 11437 Hz |  1.53 | 5.8 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Grado%20PS1000/Grado%20PS1000.png)

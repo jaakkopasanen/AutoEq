@@ -9,28 +9,28 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.6; 31 5.3; 34 5.1; 37 4.8; 41 4.4; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SE425 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SE425 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 25 Hz   | 1.27 | 6.1 dB  |
-| Peaking | 48 Hz   | 1.94 | 2.9 dB  |
-| Peaking | 2221 Hz | 1.28 | -3.3 dB |
-| Peaking | 3486 Hz | 1.87 | 4.4 dB  |
-| Peaking | 5611 Hz | 3.36 | 6.1 dB  |
-| Peaking | 10 Hz   | 0.97 | 1.0 dB  |
-| Peaking | 76 Hz   | 1.9  | 1.2 dB  |
-| Peaking | 237 Hz  | 0.58 | -1.9 dB |
-| Peaking | 774 Hz  | 1.56 | 1.2 dB  |
-| Peaking | 8172 Hz | 4.53 | -0.9 dB |
+| Peaking | 24 Hz   | 1.3  | 6.1 dB  |
+| Peaking | 49 Hz   | 1.93 | 2.9 dB  |
+| Peaking | 2227 Hz | 1.28 | -3.3 dB |
+| Peaking | 3473 Hz | 1.87 | 4.4 dB  |
+| Peaking | 5736 Hz | 3.35 | 6.1 dB  |
+| Peaking | 75 Hz   | 1.7  | 1.2 dB  |
+| Peaking | 236 Hz  | 0.57 | -2.0 dB |
+| Peaking | 771 Hz  | 1.56 | 1.2 dB  |
+| Peaking | 8018 Hz | 4.24 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SE425/Shure%20SE425.png)

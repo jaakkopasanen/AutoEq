@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser MM 550 Travel Bluetooth NC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser MM 550 Travel Bluetooth NC ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser MM 55
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 6107 Hz  | 5.01 | 6.2 dB   |
 | Peaking | 274 Hz   | 1.49 | 2.5 dB   |
 | Peaking | 371 Hz   | 1.56 | -5.0 dB  |
-| Peaking | 877 Hz   | 1.26 | 2.0 dB   |
-| Peaking | 1469 Hz  | 4.76 | -1.8 dB  |
-| Peaking | 10755 Hz | 4.35 | -3.1 dB  |
+| Peaking | 876 Hz   | 1.25 | 2.0 dB   |
+| Peaking | 1470 Hz  | 4.76 | -1.8 dB  |
+| Peaking | 10671 Hz | 4.36 | -3.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20MM%20550%20Travel%20Bluetooth%20NC/Sennheiser%20MM%20550%20Travel%20Bluetooth%20NC.png)

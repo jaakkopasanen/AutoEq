@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.8; 41 5.0; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Grado SR225i Goo Bowl GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i Goo Bowl ParametricEQ.txt`.
@@ -18,18 +19,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i Goo
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 29 Hz    |  0.6  | 6.9 dB  |
-| Peaking | 106 Hz   |  0.75 | -3.7 dB |
+| Peaking | 29 Hz    |  0.62 | 6.9 dB  |
+| Peaking | 104 Hz   |  0.74 | -3.6 dB |
 | Peaking | 2061 Hz  |  2.43 | -1.3 dB |
 | Peaking | 2082 Hz  |  2.45 | -6.8 dB |
 | Peaking | 8747 Hz  |  2.73 | -9.4 dB |
-| Peaking | 765 Hz   |  1.75 | 0.8 dB  |
-| Peaking | 3631 Hz  | 10.53 | -1.9 dB |
-| Peaking | 9813 Hz  |  7.02 | -3.5 dB |
-| Peaking | 11072 Hz |  2.85 | 2.7 dB  |
+| Peaking | 764 Hz   |  1.73 | 0.8 dB  |
+| Peaking | 3643 Hz  | 10.47 | -1.9 dB |
+| Peaking | 9801 Hz  |  7.02 | -3.5 dB |
+| Peaking | 11062 Hz |  2.85 | 2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i%20Goo%20Bowl/Grado%20SR225i%20Goo%20Bowl.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.7; 31 5.2; 34 4.8; 37 4.4; 41 4.1; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-X Mk3 Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-X Mk3 Pro ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Stax SR-X Mk3 Pr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.2dB.
 | Peaking | 1980 Hz | 3.29 | 2.4 dB  |
 | Peaking | 3775 Hz | 2.93 | -4.0 dB |
 | Peaking | 8125 Hz | 3.47 | -2.9 dB |
-| Peaking | 2383 Hz | 5.55 | 0.1 dB  |
-| Peaking | 2966 Hz | 5.6  | -1.4 dB |
-| Peaking | 4387 Hz | 5.15 | -3.3 dB |
-| Peaking | 5042 Hz | 1.64 | 2.9 dB  |
-| Peaking | 6632 Hz | 3.67 | -2.2 dB |
+| Peaking | 2381 Hz | 5.34 | 0.1 dB  |
+| Peaking | 2988 Hz | 5.69 | -1.4 dB |
+| Peaking | 4351 Hz | 5.28 | -3.2 dB |
+| Peaking | 5108 Hz | 1.63 | 2.9 dB  |
+| Peaking | 6675 Hz | 3.63 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-X%20Mk3%20Pro/Stax%20SR-X%20Mk3%20Pro.png)

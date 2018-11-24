@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.4; 23 -5.4; 25 -5.4; 28 -5.4; 31 -5.4; 34 -5.4; 37 -5.4; 41 -5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`T-Peos U200R GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `T-Peos U200R ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `T-Peos U200R Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.5dB.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 34 Hz    | 0.2  | -5.3 dB  |
 | Peaking | 189 Hz   | 0.73 | -3.9 dB  |
-| Peaking | 3572 Hz  | 1.86 | 13.4 dB  |
-| Peaking | 5131 Hz  | 1.21 | -24.5 dB |
-| Peaking | 5908 Hz  | 1.52 | 20.7 dB  |
-| Peaking | 890 Hz   | 1.65 | 1.9 dB   |
-| Peaking | 2013 Hz  | 1.3  | -2.6 dB  |
-| Peaking | 2693 Hz  | 3.5  | 3.0 dB   |
-| Peaking | 9505 Hz  | 5.66 | -2.0 dB  |
-| Peaking | 12323 Hz | 1.03 | 1.1 dB   |
+| Peaking | 3569 Hz  | 1.86 | 13.4 dB  |
+| Peaking | 5115 Hz  | 1.21 | -24.6 dB |
+| Peaking | 5921 Hz  | 1.52 | 20.8 dB  |
+| Peaking | 860 Hz   | 1.85 | 1.8 dB   |
+| Peaking | 1876 Hz  | 2    | -2.4 dB  |
+| Peaking | 2750 Hz  | 4.46 | 2.2 dB   |
+| Peaking | 9371 Hz  | 4.62 | -1.9 dB  |
+| Peaking | 12277 Hz | 1.18 | 1.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/T-Peos%20U200R/T-Peos%20U200R.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.0; 25 2.7; 28 2.2; 31 1.7; 34 1.4; 37 1.1; 41 0.7; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Philips Fidelio M1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips Fidelio M1 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Philips Fidelio 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 423 Hz   | 1.13 | 3.9 dB  |
 | Peaking | 2168 Hz  | 1.52 | 2.5 dB  |
 | Peaking | 5787 Hz  | 4.15 | 6.3 dB  |
-| Peaking | 985 Hz   | 3.86 | -1.0 dB |
-| Peaking | 1352 Hz  | 4.48 | 1.9 dB  |
-| Peaking | 1486 Hz  | 3.59 | -0.9 dB |
-| Peaking | 18572 Hz | 2.89 | -2.0 dB |
-| Peaking | 19543 Hz | 2.38 | -0.6 dB |
+| Peaking | 986 Hz   | 3.84 | -1.0 dB |
+| Peaking | 1352 Hz  | 4.42 | 1.9 dB  |
+| Peaking | 1491 Hz  | 3.61 | -0.8 dB |
+| Peaking | 18694 Hz | 2.88 | -2.0 dB |
+| Peaking | 20536 Hz | 2.26 | -0.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20Fidelio%20M1/Philips%20Fidelio%20M1.png)

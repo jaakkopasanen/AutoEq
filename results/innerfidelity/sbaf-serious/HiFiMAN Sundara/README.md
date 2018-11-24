@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 4.4; 25 4.1; 28 3.9; 31 3.7; 34 3.6; 37 3.6; 41 3.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.0dB` and instead set Global volume in the UI for both channels to **-49**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiFiMAN Sundara GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-49**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN Sundara ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN Sundara 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.9dB.
+When using independent subset of filters, apply preamp of **-4.9dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 19 Hz   |  0.8  | 4.4 dB  |
-| Peaking | 49 Hz   |  1.05 | 2.4 dB  |
+| Peaking | 19 Hz   |  0.79 | 4.4 dB  |
+| Peaking | 50 Hz   |  1.06 | 2.4 dB  |
 | Peaking | 1863 Hz |  1.71 | 2.4 dB  |
-| Peaking | 4531 Hz |  2.99 | -2.6 dB |
-| Peaking | 8539 Hz |  5.95 | -2.7 dB |
-| Peaking | 328 Hz  |  2.12 | -0.6 dB |
-| Peaking | 956 Hz  |  3.44 | -2.3 dB |
-| Peaking | 1065 Hz |  4.16 | 2.5 dB  |
-| Peaking | 3177 Hz | 10.56 | -1.4 dB |
-| Peaking | 6385 Hz | 19.32 | 2.7 dB  |
+| Peaking | 4533 Hz |  2.98 | -2.6 dB |
+| Peaking | 8514 Hz |  6.08 | -2.7 dB |
+| Peaking | 327 Hz  |  2.07 | -0.6 dB |
+| Peaking | 959 Hz  |  3.43 | -2.3 dB |
+| Peaking | 1061 Hz |  4.14 | 2.5 dB  |
+| Peaking | 3189 Hz | 10.57 | -1.4 dB |
+| Peaking | 6382 Hz | 19.37 | 2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20Sundara/HiFiMAN%20Sundara.png)

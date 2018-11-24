@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.3; 25 -0.0; 28 -0.5; 31 -0.8; 34 -1.1; 37 -1.4; 41 -1.6;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.2dB` and instead set Global volume in the UI for both channels to **-31**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K712 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-31**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K712 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `AKG K712 Paramet
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -2.0dB.
+When using independent subset of filters, apply preamp of **-2.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,8 +28,8 @@ When using independent subset of filters, apply preamp of -2.0dB.
 | Peaking | 2111 Hz  | 2.02 | -10.4 dB |
 | Peaking | 5549 Hz  | 1.48 | -8.6 dB  |
 | Peaking | 18837 Hz | 1.27 | -10.3 dB |
-| Peaking | 17 Hz    | 2.11 | 1.3 dB   |
-| Peaking | 1254 Hz  | 8.07 | 1.4 dB   |
+| Peaking | 20 Hz    | 2.08 | 1.3 dB   |
+| Peaking | 1252 Hz  | 8.08 | 1.4 dB   |
 | Peaking | 10323 Hz | 3.28 | 2.2 dB   |
 | Peaking | 12208 Hz | 3.67 | -4.0 dB  |
 | Peaking | 14509 Hz | 4.61 | 3.1 dB   |

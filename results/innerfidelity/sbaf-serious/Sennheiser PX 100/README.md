@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.4; 25 2.8; 28 2.1; 31 1.6; 34 1.1; 37 0.7; 41 0.2; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser PX 100 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PX 100 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PX 10
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.6dB.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 20 Hz    | 1.31 | 4.3 dB   |
-| Peaking | 138 Hz   | 0.7  | -3.7 dB  |
-| Peaking | 3309 Hz  | 1.99 | 15.6 dB  |
-| Peaking | 4323 Hz  | 1.22 | -25.0 dB |
-| Peaking | 5363 Hz  | 1.37 | 19.5 dB  |
-| Peaking | 885 Hz   | 1.23 | 1.5 dB   |
-| Peaking | 1770 Hz  | 2.82 | -3.1 dB  |
-| Peaking | 2677 Hz  | 7.56 | 2.6 dB   |
-| Peaking | 8056 Hz  | 5.42 | -1.5 dB  |
-| Peaking | 11217 Hz | 0.46 | 0.4 dB   |
+| Peaking | 21 Hz    | 1.29 | 4.3 dB   |
+| Peaking | 137 Hz   | 0.71 | -3.7 dB  |
+| Peaking | 3310 Hz  | 1.99 | 15.6 dB  |
+| Peaking | 4321 Hz  | 1.22 | -25.0 dB |
+| Peaking | 5365 Hz  | 1.37 | 19.5 dB  |
+| Peaking | 888 Hz   | 1.28 | 1.5 dB   |
+| Peaking | 1769 Hz  | 2.86 | -3.0 dB  |
+| Peaking | 2659 Hz  | 7.48 | 2.6 dB   |
+| Peaking | 7950 Hz  | 5.4  | -1.5 dB  |
+| Peaking | 11255 Hz | 0.46 | 0.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PX%20100/Sennheiser%20PX%20100.png)

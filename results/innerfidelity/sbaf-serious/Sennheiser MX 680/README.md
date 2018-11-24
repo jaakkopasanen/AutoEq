@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser MX 680 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser MX 680 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser MX 68
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 22 Hz    | 0.1  | 5.7 dB   |
-| Peaking | 346 Hz   | 0.26 | 2.3 dB   |
+| Peaking | 347 Hz   | 0.26 | 2.3 dB   |
 | Peaking | 2168 Hz  | 1.6  | -12.3 dB |
-| Peaking | 6478 Hz  | 1.82 | -9.2 dB  |
-| Peaking | 14869 Hz | 7.62 | -2.1 dB  |
-| Peaking | 2744 Hz  | 6.89 | -2.7 dB  |
-| Peaking | 3640 Hz  | 5.05 | 2.7 dB   |
-| Peaking | 5897 Hz  | 3.25 | -2.2 dB  |
-| Peaking | 8794 Hz  | 1.2  | 4.1 dB   |
-| Peaking | 9034 Hz  | 3.28 | -6.9 dB  |
+| Peaking | 6477 Hz  | 1.82 | -9.2 dB  |
+| Peaking | 15068 Hz | 7.53 | -2.1 dB  |
+| Peaking | 2733 Hz  | 6.9  | -2.7 dB  |
+| Peaking | 3637 Hz  | 5.06 | 2.7 dB   |
+| Peaking | 5873 Hz  | 3.31 | -2.2 dB  |
+| Peaking | 8732 Hz  | 1.2  | 4.1 dB   |
+| Peaking | 9082 Hz  | 3.28 | -6.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20MX%20680/Sennheiser%20MX%20680.png)

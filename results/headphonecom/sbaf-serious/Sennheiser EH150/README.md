@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser EH150 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser EH150 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser EH150
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 401 Hz  | 2.79 | 4.0 dB  |
 | Peaking | 3126 Hz | 1.81 | 6.6 dB  |
 | Peaking | 5890 Hz | 3.83 | 5.8 dB  |
-| Peaking | 2511 Hz | 1.42 | 5.2 dB  |
-| Peaking | 3449 Hz | 0.58 | -5.8 dB |
-| Peaking | 3860 Hz | 6.02 | 4.4 dB  |
-| Peaking | 6098 Hz | 1.25 | 3.8 dB  |
-| Peaking | 7805 Hz | 4.36 | -1.5 dB |
+| Peaking | 2513 Hz | 1.41 | 5.4 dB  |
+| Peaking | 3433 Hz | 0.59 | -6.0 dB |
+| Peaking | 3876 Hz | 5.98 | 4.4 dB  |
+| Peaking | 6080 Hz | 1.25 | 3.8 dB  |
+| Peaking | 7814 Hz | 4.29 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20EH150/Sennheiser%20EH150.png)

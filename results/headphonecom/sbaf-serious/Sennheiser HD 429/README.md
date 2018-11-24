@@ -9,28 +9,29 @@ GraphicEQ: 21 -1.3; 23 -1.5; 25 -1.6; 28 -1.7; 31 -1.9; 34 -2.0; 37 -2.0; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 429 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 429 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 34 Hz   | 1.15 | -2.0 dB |
-| Peaking | 62 Hz   | 2.89 | -1.4 dB |
-| Peaking | 178 Hz  | 1.71 | -2.4 dB |
-| Peaking | 1525 Hz | 1.9  | -2.4 dB |
-| Peaking | 4092 Hz | 0.93 | 6.6 dB  |
-| Peaking | 14 Hz   | 1.71 | -0.7 dB |
-| Peaking | 347 Hz  | 4.86 | 1.4 dB  |
-| Peaking | 2459 Hz | 5.56 | 1.5 dB  |
-| Peaking | 6187 Hz | 2.54 | 6.2 dB  |
-| Peaking | 6830 Hz | 1.2  | -4.4 dB |
+| Peaking | 34 Hz   | 1.12 | -2.0 dB |
+| Peaking | 60 Hz   | 2.91 | -1.4 dB |
+| Peaking | 179 Hz  | 1.71 | -2.4 dB |
+| Peaking | 1523 Hz | 1.9  | -2.4 dB |
+| Peaking | 4093 Hz | 0.94 | 6.6 dB  |
+| Peaking | 10 Hz   | 1.57 | -0.7 dB |
+| Peaking | 347 Hz  | 4.84 | 1.4 dB  |
+| Peaking | 2450 Hz | 5.57 | 1.6 dB  |
+| Peaking | 6207 Hz | 2.46 | 6.4 dB  |
+| Peaking | 6780 Hz | 1.21 | -4.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20429/Sennheiser%20HD%20429.png)

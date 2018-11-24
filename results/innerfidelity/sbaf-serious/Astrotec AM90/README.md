@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 3.1; 25 3.0; 28 3.0; 31 2.9; 34 2.8; 37 2.6; 41 2.5; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Astrotec AM90 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Astrotec AM90 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.1dB.
 | Peaking | 213 Hz  | 0.69 | -2.3 dB |
 | Peaking | 2734 Hz | 4.48 | -6.7 dB |
 | Peaking | 4264 Hz | 1.18 | 7.4 dB  |
-| Peaking | 1282 Hz | 7.58 | -1.0 dB |
-| Peaking | 3381 Hz | 7.21 | 3.0 dB  |
-| Peaking | 4219 Hz | 1.35 | -1.4 dB |
-| Peaking | 6311 Hz | 2.57 | 5.3 dB  |
-| Peaking | 7350 Hz | 1.68 | -3.6 dB |
+| Peaking | 1286 Hz | 7.56 | -1.0 dB |
+| Peaking | 3389 Hz | 7.2  | 3.0 dB  |
+| Peaking | 4152 Hz | 1.38 | -1.3 dB |
+| Peaking | 6303 Hz | 2.6  | 5.3 dB  |
+| Peaking | 7348 Hz | 1.67 | -3.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Astrotec%20AM90/Astrotec%20AM90.png)

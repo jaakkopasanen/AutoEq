@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.0; 23 -3.7; 25 -5.2; 28 -7.0; 31 -8.1; 34 -8.4; 37 -8.0; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.0dB` and instead set Global volume in the UI for both channels to **-49**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Soul Jet Pro ANC On GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-49**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Soul Jet Pro ANC On ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Soul Jet Pro ANC
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.3dB.
+When using independent subset of filters, apply preamp of **-5.3dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.3dB.
 | Peaking | 630 Hz  | 1.14 | 16.9 dB  |
 | Peaking | 2065 Hz | 1.78 | -17.1 dB |
 | Peaking | 4376 Hz | 6.04 | -9.7 dB  |
-| Peaking | 32 Hz   | 3.76 | -2.5 dB  |
-| Peaking | 2562 Hz | 5.07 | -1.6 dB  |
-| Peaking | 3273 Hz | 6.93 | 2.0 dB   |
-| Peaking | 5003 Hz | 6.03 | -2.8 dB  |
-| Peaking | 6493 Hz | 4.3  | 5.6 dB   |
+| Peaking | 34 Hz   | 3.77 | -2.4 dB  |
+| Peaking | 2559 Hz | 4.86 | -1.6 dB  |
+| Peaking | 3261 Hz | 6.65 | 2.0 dB   |
+| Peaking | 4989 Hz | 5.87 | -2.7 dB  |
+| Peaking | 6473 Hz | 4.28 | 5.6 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Soul%20Jet%20Pro%20ANC%20On/Soul%20Jet%20Pro%20ANC%20On.png)

@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 1.8; 25 1.1; 28 0.4; 31 -0.2; 34 -0.5; 37 -0.7; 41 -0.9; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG Q460 Quincy Jones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG Q460 Quincy Jones ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.0dB.
 | Peaking | 655 Hz  | 2.27 | 5.2 dB  |
 | Peaking | 2408 Hz | 2    | 6.8 dB  |
 | Peaking | 5673 Hz | 3.11 | 6.5 dB  |
-| Peaking | 1149 Hz | 0.98 | 1.4 dB  |
-| Peaking | 1182 Hz | 1.95 | -2.9 dB |
-| Peaking | 3832 Hz | 1.73 | 2.7 dB  |
-| Peaking | 3848 Hz | 4.27 | -5.2 dB |
-| Peaking | 8330 Hz | 3.44 | -1.2 dB |
+| Peaking | 1142 Hz | 0.99 | 1.5 dB  |
+| Peaking | 1189 Hz | 1.94 | -2.9 dB |
+| Peaking | 3820 Hz | 4.25 | -5.2 dB |
+| Peaking | 3866 Hz | 1.74 | 2.7 dB  |
+| Peaking | 8359 Hz | 3.45 | -1.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20Q460%20Quincy%20Jones/AKG%20Q460%20Quincy%20Jones.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 4.6; 25 4.4; 28 4.3; 31 4.1; 34 4.0; 37 3.9; 41 3.7; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AudioFly AF160 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AudioFly AF160 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 0.65 | 4.2 dB  |
+| Peaking | 20 Hz   | 0.68 | 4.2 dB  |
 | Peaking | 52 Hz   | 0.87 | 2.0 dB  |
-| Peaking | 203 Hz  | 1.07 | -1.3 dB |
-| Peaking | 1711 Hz | 2.55 | -2.8 dB |
+| Peaking | 207 Hz  | 1.07 | -1.3 dB |
+| Peaking | 1713 Hz | 2.55 | -2.8 dB |
 | Peaking | 4867 Hz | 1.41 | 6.5 dB  |
-| Peaking | 737 Hz  | 1.77 | 1.3 dB  |
-| Peaking | 1884 Hz | 0.15 | -0.4 dB |
-| Peaking | 3080 Hz | 4.71 | 2.1 dB  |
-| Peaking | 6288 Hz | 3.7  | 4.3 dB  |
-| Peaking | 7317 Hz | 1.69 | -2.7 dB |
+| Peaking | 738 Hz  | 1.81 | 1.3 dB  |
+| Peaking | 2044 Hz | 0.17 | -0.4 dB |
+| Peaking | 3052 Hz | 4.7  | 2.1 dB  |
+| Peaking | 6384 Hz | 3.73 | 4.2 dB  |
+| Peaking | 7213 Hz | 1.66 | -2.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AudioFly%20AF160/AudioFly%20AF160.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Pioneer SE-A1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pioneer SE-A1000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.5dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 35 Hz   | 1.03 | 7.3 dB   |
-| Peaking | 3666 Hz | 1.07 | 7.1 dB   |
-| Peaking | 4444 Hz | 2.59 | -14.4 dB |
-| Peaking | 6807 Hz | 7.7  | 3.9 dB   |
-| Peaking | 9322 Hz | 2.78 | -6.2 dB  |
-| Peaking | 61 Hz   | 2.59 | 4.1 dB   |
-| Peaking | 125 Hz  | 0.61 | -2.6 dB  |
-| Peaking | 573 Hz  | 1.6  | 1.6 dB   |
-| Peaking | 1626 Hz | 0.78 | -1.1 dB  |
-| Peaking | 2092 Hz | 3.28 | 2.2 dB   |
+| Peaking | 3667 Hz | 1.07 | 6.9 dB   |
+| Peaking | 4431 Hz | 2.6  | -14.2 dB |
+| Peaking | 6781 Hz | 7.64 | 3.9 dB   |
+| Peaking | 9341 Hz | 2.78 | -6.2 dB  |
+| Peaking | 60 Hz   | 2.55 | 4.1 dB   |
+| Peaking | 127 Hz  | 0.64 | -2.6 dB  |
+| Peaking | 577 Hz  | 1.59 | 1.6 dB   |
+| Peaking | 1573 Hz | 0.74 | -1.0 dB  |
+| Peaking | 2097 Hz | 3.27 | 2.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20SE-A1000/Pioneer%20SE-A1000.png)

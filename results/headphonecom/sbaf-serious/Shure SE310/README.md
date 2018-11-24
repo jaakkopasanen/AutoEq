@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.2; 25 5.2; 28 5.1; 31 4.9; 34 4.8; 37 4.8; 41 4.6; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Shure SE310 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SE310 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Shure SE310 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 14 Hz   | 0.66 | 4.1 dB  |
-| Peaking | 42 Hz   | 0.57 | 3.4 dB  |
-| Peaking | 1907 Hz | 1.8  | -6.2 dB |
+| Peaking | 15 Hz   | 0.65 | 4.1 dB  |
+| Peaking | 43 Hz   | 0.56 | 3.4 dB  |
+| Peaking | 1906 Hz | 1.8  | -6.2 dB |
 | Peaking | 3424 Hz | 1.63 | 7.1 dB  |
 | Peaking | 5732 Hz | 3.05 | 5.2 dB  |
-| Peaking | 693 Hz  | 1.36 | 1.8 dB  |
-| Peaking | 1223 Hz | 3.99 | -0.7 dB |
-| Peaking | 1460 Hz | 5.83 | -1.0 dB |
-| Peaking | 6625 Hz | 7.89 | 2.1 dB  |
-| Peaking | 7857 Hz | 2.28 | -1.4 dB |
+| Peaking | 693 Hz  | 1.38 | 1.8 dB  |
+| Peaking | 1225 Hz | 4.02 | -0.7 dB |
+| Peaking | 1461 Hz | 5.89 | -1.0 dB |
+| Peaking | 6582 Hz | 7.9  | 2.1 dB  |
+| Peaking | 7841 Hz | 2.29 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Shure%20SE310/Shure%20SE310.png)

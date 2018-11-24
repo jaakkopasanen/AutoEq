@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.1; 31 4.0; 34 2.8; 37 1.8; 41 0.5; 45 -0
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Pioneer HDJ-2000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pioneer HDJ-2000 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Pioneer HDJ-2000
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-8.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 24 Hz   | 1.02 | 7.4 dB  |
 | Peaking | 102 Hz  | 0.5  | -5.6 dB |
-| Peaking | 265 Hz  | 1.73 | -3.1 dB |
+| Peaking | 266 Hz  | 1.73 | -3.1 dB |
 | Peaking | 2848 Hz | 3.54 | 6.8 dB  |
-| Peaking | 5506 Hz | 2.69 | 6.7 dB  |
-| Peaking | 550 Hz  | 3    | 1.3 dB  |
-| Peaking | 1640 Hz | 1.74 | -5.0 dB |
-| Peaking | 2261 Hz | 0.76 | 2.3 dB  |
-| Peaking | 3951 Hz | 8.96 | -3.0 dB |
-| Peaking | 9113 Hz | 3.5  | -1.8 dB |
+| Peaking | 5507 Hz | 2.69 | 6.7 dB  |
+| Peaking | 550 Hz  | 2.98 | 1.3 dB  |
+| Peaking | 1649 Hz | 1.73 | -5.1 dB |
+| Peaking | 2242 Hz | 0.76 | 2.3 dB  |
+| Peaking | 3940 Hz | 8.96 | -3.0 dB |
+| Peaking | 9106 Hz | 3.49 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Pioneer%20HDJ-2000/Pioneer%20HDJ-2000.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 1.8; 25 1.0; 28 0.1; 31 -0.8; 34 -1.5; 37 -2.1; 41 -2.7; 4
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.1dB` and instead set Global volume in the UI for both channels to **-30**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Ultrasone PRO 900 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-30**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone PRO 900 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.2dB.
+When using independent subset of filters, apply preamp of **--0.2dB**.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
-| Peaking | 96 Hz    |  1.11 | -6.3 dB  |
-| Peaking | 159 Hz   |  2.48 | -4.6 dB  |
-| Peaking | 417 Hz   |  5.81 | -2.9 dB  |
+| Peaking | 96 Hz    |  1.12 | -6.3 dB  |
+| Peaking | 159 Hz   |  2.47 | -4.6 dB  |
+| Peaking | 418 Hz   |  5.81 | -2.9 dB  |
 | Peaking | 4550 Hz  |  1.35 | -8.7 dB  |
 | Peaking | 16279 Hz |  1.32 | -12.4 dB |
-| Peaking | 18 Hz    |  2.96 | 2.7 dB   |
-| Peaking | 279 Hz   |  7.6  | 4.6 dB   |
-| Peaking | 2176 Hz  | 10.56 | 4.3 dB   |
-| Peaking | 10040 Hz |  1.93 | 5.7 dB   |
-| Peaking | 19406 Hz |  0.09 | -1.9 dB  |
+| Peaking | 19 Hz    |  2.9  | 2.4 dB   |
+| Peaking | 280 Hz   |  7.53 | 4.6 dB   |
+| Peaking | 2180 Hz  | 10.4  | 4.3 dB   |
+| Peaking | 10036 Hz |  1.93 | 5.7 dB   |
+| Peaking | 19514 Hz |  0.08 | -1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20PRO%20900/Ultrasone%20PRO%20900.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -6.3; 23 -6.8; 25 -7.2; 28 -7.6; 31 -8.0; 34 -8.3; 37 -8.5; 41 -8.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss BT540i Bluetooth GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss BT540i Bluetooth ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Koss BT540i Blue
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.1dB.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -5.1dB.
 | Peaking | 522 Hz  | 0.91 | 5.5 dB  |
 | Peaking | 3272 Hz | 1.05 | -7.4 dB |
 | Peaking | 4865 Hz | 1.7  | 8.9 dB  |
-| Peaking | 1130 Hz | 6.36 | 0.5 dB  |
-| Peaking | 4992 Hz | 9.52 | 1.9 dB  |
+| Peaking | 1135 Hz | 6.37 | 0.5 dB  |
+| Peaking | 4979 Hz | 9.56 | 2.0 dB  |
 | Peaking | 5469 Hz | 8.66 | -3.0 dB |
-| Peaking | 6510 Hz | 4.43 | 3.3 dB  |
-| Peaking | 8064 Hz | 1.33 | -1.4 dB |
+| Peaking | 6536 Hz | 4.45 | 3.3 dB  |
+| Peaking | 8034 Hz | 1.32 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20BT540i%20Bluetooth/Koss%20BT540i%20Bluetooth.png)

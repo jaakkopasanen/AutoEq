@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.8; 23 -2.2; 25 -2.6; 28 -3.1; 31 -3.4; 34 -3.5; 37 -3.6; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.0dB` and instead set Global volume in the UI for both channels to **-40**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`E-Mu Teak 2016 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-40**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `E-Mu Teak 2016 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `E-Mu Teak 2016 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.9dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.9dB.
+When using independent subset of filters, apply preamp of **-3.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|

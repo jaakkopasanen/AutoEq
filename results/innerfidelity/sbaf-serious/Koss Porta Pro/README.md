@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.8; 31 5.0; 34 4.0; 37 3.1; 41 2.1; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Koss Porta Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss Porta Pro ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Koss Porta Pro P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.7dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -6.7dB.
 | Peaking | 3371 Hz |  2.03 | 7.1 dB  |
 | Peaking | 5929 Hz |  4.35 | 5.8 dB  |
 | Peaking | 818 Hz  |  1.62 | 0.8 dB  |
-| Peaking | 1558 Hz |  6.75 | -0.7 dB |
-| Peaking | 4648 Hz | 12.94 | -2.0 dB |
-| Peaking | 6660 Hz |  8.64 | 1.9 dB  |
-| Peaking | 7894 Hz |  2.73 | -1.0 dB |
+| Peaking | 1555 Hz |  6.75 | -0.7 dB |
+| Peaking | 4667 Hz | 12.93 | -2.0 dB |
+| Peaking | 6673 Hz |  8.63 | 1.9 dB  |
+| Peaking | 7888 Hz |  2.72 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20Porta%20Pro/Koss%20Porta%20Pro.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.3; 25 3.1; 28 2.8; 31 2.6; 34 2.4; 37 2.3; 41 2.2; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Noontec Hammo S Padding Removed GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Noontec Hammo S Padding Removed ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Noontec Hammo S 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 2849 Hz | 2.85 | 5.2 dB  |
 | Peaking | 5590 Hz | 2.7  | 6.6 dB  |
 | Peaking | 186 Hz  | 1.08 | -3.7 dB |
-| Peaking | 196 Hz  | 0.62 | 2.6 dB  |
-| Peaking | 467 Hz  | 4.12 | -0.7 dB |
-| Peaking | 6560 Hz | 7.24 | 2.4 dB  |
-| Peaking | 7639 Hz | 2.12 | -1.4 dB |
+| Peaking | 196 Hz  | 0.63 | 2.5 dB  |
+| Peaking | 465 Hz  | 4.15 | -0.7 dB |
+| Peaking | 6611 Hz | 7.24 | 2.4 dB  |
+| Peaking | 7627 Hz | 2.12 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Noontec%20Hammo%20S%20Padding%20Removed/Noontec%20Hammo%20S%20Padding%20Removed.png)

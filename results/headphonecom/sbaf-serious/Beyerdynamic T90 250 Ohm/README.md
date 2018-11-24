@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 0.8; 25 0.6; 28 0.4; 31 0.2; 34 -0.0; 37 -0.2; 41 -0.2; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.9dB` and instead set Global volume in the UI for both channels to **-38**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic T90 250 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-38**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T90 250 Ohm ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.0dB.
+When using independent subset of filters, apply preamp of **--0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 201 Hz   | 0.65 | -5.3 dB  |
 | Peaking | 1979 Hz  | 2.64 | -3.2 dB  |
 | Peaking | 3187 Hz  | 3.44 | -4.3 dB  |
-| Peaking | 9060 Hz  | 1.45 | -11.9 dB |
-| Peaking | 17986 Hz | 1.71 | -9.2 dB  |
-| Peaking | 875 Hz   | 1.75 | 2.1 dB   |
-| Peaking | 2409 Hz  | 0.14 | -0.7 dB  |
-| Peaking | 4291 Hz  | 4.04 | -7.8 dB  |
-| Peaking | 4900 Hz  | 2.55 | 10.6 dB  |
-| Peaking | 6594 Hz  | 5.36 | -5.5 dB  |
+| Peaking | 9061 Hz  | 1.45 | -11.9 dB |
+| Peaking | 17978 Hz | 1.71 | -9.2 dB  |
+| Peaking | 872 Hz   | 1.77 | 2.0 dB   |
+| Peaking | 2374 Hz  | 0.14 | -0.7 dB  |
+| Peaking | 4252 Hz  | 4.14 | -7.6 dB  |
+| Peaking | 4943 Hz  | 2.6  | 10.3 dB  |
+| Peaking | 6630 Hz  | 5.48 | -5.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20T90%20250%20Ohm/Beyerdynamic%20T90%20250%20Ohm.png)

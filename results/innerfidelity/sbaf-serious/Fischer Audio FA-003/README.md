@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.7; 25 2.2; 28 1.5; 31 1.0; 34 0.5; 37 0.2; 41 -0.2; 45 -
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.6dB` and instead set Global volume in the UI for both channels to **-46**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Fischer Audio FA-003 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-46**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fischer Audio FA-003 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Fischer Audio FA
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.7dB.
+When using independent subset of filters, apply preamp of **-4.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -4.7dB.
 | Peaking | 302 Hz  | 2.87 | 7.0 dB  |
 | Peaking | 563 Hz  | 2.46 | -1.5 dB |
 | Peaking | 4758 Hz | 3.04 | -4.0 dB |
-| Peaking | 1266 Hz | 4.01 | 1.1 dB  |
-| Peaking | 3006 Hz | 5.06 | -1.7 dB |
-| Peaking | 3413 Hz | 6.28 | 1.9 dB  |
-| Peaking | 5994 Hz | 7.79 | -3.8 dB |
-| Peaking | 6780 Hz | 7.11 | 4.7 dB  |
+| Peaking | 1266 Hz | 4    | 1.1 dB  |
+| Peaking | 3037 Hz | 5    | -1.7 dB |
+| Peaking | 3431 Hz | 6.23 | 1.9 dB  |
+| Peaking | 5993 Hz | 7.76 | -3.9 dB |
+| Peaking | 6776 Hz | 7.08 | 4.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fischer%20Audio%20FA-003/Fischer%20Audio%20FA-003.png)

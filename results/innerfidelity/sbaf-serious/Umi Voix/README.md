@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.6; 23 -3.7; 25 -3.7; 28 -3.8; 31 -3.9; 34 -3.9; 37 -4.0; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Umi Voix GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Umi Voix ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Umi Voix Paramet
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.1dB.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -30,7 +31,7 @@ When using independent subset of filters, apply preamp of -7.1dB.
 | Peaking | 280 Hz  | 2.07 | -1.6 dB |
 | Peaking | 603 Hz  | 1.09 | 3.9 dB  |
 | Peaking | 1481 Hz | 1.57 | -4.2 dB |
-| Peaking | 2379 Hz | 4.48 | 3.1 dB  |
-| Peaking | 8285 Hz | 4.74 | -1.3 dB |
+| Peaking | 2380 Hz | 4.48 | 3.1 dB  |
+| Peaking | 8333 Hz | 4.74 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Umi%20Voix/Umi%20Voix.png)

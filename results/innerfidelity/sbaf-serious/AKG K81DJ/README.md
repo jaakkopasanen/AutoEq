@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.9; 25 5.6; 28 5.0; 31 4.5; 34 3.9; 37 3.5; 41 3.0; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`AKG K81DJ GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K81DJ ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 21 Hz    | 0.7  | 6.0 dB   |
-| Peaking | 160 Hz   | 1.66 | -3.5 dB  |
-| Peaking | 1707 Hz  | 0.97 | -10.8 dB |
-| Peaking | 1889 Hz  | 0.44 | 8.2 dB   |
-| Peaking | 6445 Hz  | 9.13 | 3.3 dB   |
-| Peaking | 450 Hz   | 1.86 | 3.0 dB   |
-| Peaking | 486 Hz   | 0.77 | -1.5 dB  |
-| Peaking | 3177 Hz  | 5.69 | 1.6 dB   |
-| Peaking | 8672 Hz  | 2.94 | -1.2 dB  |
+| Peaking | 21 Hz    | 0.68 | 6.0 dB   |
+| Peaking | 160 Hz   | 1.67 | -3.5 dB  |
+| Peaking | 1706 Hz  | 0.98 | -10.7 dB |
+| Peaking | 1883 Hz  | 0.44 | 8.0 dB   |
+| Peaking | 6459 Hz  | 8.79 | 3.2 dB   |
+| Peaking | 450 Hz   | 1.83 | 3.1 dB   |
+| Peaking | 484 Hz   | 0.76 | -1.6 dB  |
+| Peaking | 3177 Hz  | 5.52 | 1.6 dB   |
+| Peaking | 8652 Hz  | 2.96 | -1.3 dB  |
 | Peaking | 17098 Hz | 2.23 | -2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/AKG%20K81DJ/AKG%20K81DJ.png)

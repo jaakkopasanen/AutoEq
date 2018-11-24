@@ -9,8 +9,9 @@ GraphicEQ: 21 -10.7; 23 -10.8; 25 -10.8; 28 -10.8; 31 -10.9; 34 -10.9; 37 -10.9;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.2dB` and instead set Global volume in the UI for both channels to **-31**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser IE 80 S GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-31**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser IE 80 S ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser IE 80
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of --0.3dB.
+When using independent subset of filters, apply preamp of **--0.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 29 Hz    | 0.2  | -10.4 dB |
 | Peaking | 157 Hz   | 0.68 | -6.5 dB  |
 | Peaking | 340 Hz   | 1.18 | -3.6 dB  |
-| Peaking | 4917 Hz  | 6.69 | -7.7 dB  |
-| Peaking | 17400 Hz | 1.24 | -18.6 dB |
-| Peaking | 1117 Hz  | 1.23 | 2.3 dB   |
-| Peaking | 2650 Hz  | 0.85 | 6.4 dB   |
-| Peaking | 5723 Hz  | 0.19 | -5.8 dB  |
-| Peaking | 6818 Hz  | 2.8  | 7.0 dB   |
-| Peaking | 10714 Hz | 1.77 | 8.1 dB   |
+| Peaking | 4949 Hz  | 6.69 | -7.7 dB  |
+| Peaking | 17399 Hz | 1.24 | -18.6 dB |
+| Peaking | 1126 Hz  | 1.12 | 2.7 dB   |
+| Peaking | 2645 Hz  | 0.9  | 6.4 dB   |
+| Peaking | 5495 Hz  | 0.18 | -5.7 dB  |
+| Peaking | 6836 Hz  | 2.61 | 7.1 dB   |
+| Peaking | 10720 Hz | 1.81 | 8.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20IE%2080%20S/Sennheiser%20IE%2080%20S.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Aurex HR V9 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Aurex HR V9 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Aurex HR V9 Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 544 Hz  | 0.16 | 1.0 dB  |
 | Peaking | 3636 Hz | 2.23 | 3.6 dB  |
 | Peaking | 5805 Hz | 3.29 | 5.8 dB  |
-| Peaking | 1029 Hz | 2.82 | -1.5 dB |
-| Peaking | 1889 Hz | 1.93 | 2.9 dB  |
-| Peaking | 2211 Hz | 3.77 | -3.3 dB |
-| Peaking | 8333 Hz | 4.16 | -1.1 dB |
+| Peaking | 1027 Hz | 2.84 | -1.5 dB |
+| Peaking | 1884 Hz | 1.93 | 2.9 dB  |
+| Peaking | 2218 Hz | 3.77 | -3.3 dB |
+| Peaking | 8281 Hz | 4.16 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Aurex%20HR%20V9/Aurex%20HR%20V9.png)

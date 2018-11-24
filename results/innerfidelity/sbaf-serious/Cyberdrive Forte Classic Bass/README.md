@@ -9,8 +9,9 @@ GraphicEQ: 21 -12.1; 23 -12.2; 25 -12.2; 28 -12.2; 31 -12.3; 34 -12.2; 37 -12.2;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.5dB` and instead set Global volume in the UI for both channels to **-35**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Cyberdrive Forte Classic Bass GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Cyberdrive Forte Classic Bass ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Cyberdrive Forte
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -1.6dB.
+When using independent subset of filters, apply preamp of **-1.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 59 Hz    | 0.13 | -12.9 dB |
-| Peaking | 3481 Hz  | 0.08 | 2.9 dB   |
+| Peaking | 3471 Hz  | 0.08 | 2.9 dB   |
 | Peaking | 6256 Hz  | 2.13 | -15.0 dB |
-| Peaking | 9844 Hz  | 3.6  | -4.7 dB  |
-| Peaking | 17394 Hz | 1.58 | -5.8 dB  |
-| Peaking | 16 Hz    | 2.45 | -0.6 dB  |
-| Peaking | 724 Hz   | 1.48 | 1.1 dB   |
-| Peaking | 1652 Hz  | 1.27 | -3.0 dB  |
+| Peaking | 9839 Hz  | 3.6  | -4.7 dB  |
+| Peaking | 17417 Hz | 1.58 | -5.8 dB  |
+| Peaking | 16 Hz    | 2.11 | -1.2 dB  |
+| Peaking | 724 Hz   | 1.49 | 1.1 dB   |
+| Peaking | 1651 Hz  | 1.27 | -3.0 dB  |
 | Peaking | 3052 Hz  | 1.2  | 3.6 dB   |
-| Peaking | 4382 Hz  | 4.06 | -4.2 dB  |
+| Peaking | 4382 Hz  | 4.07 | -4.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Cyberdrive%20Forte%20Classic%20Bass/Cyberdrive%20Forte%20Classic%20Bass.png)

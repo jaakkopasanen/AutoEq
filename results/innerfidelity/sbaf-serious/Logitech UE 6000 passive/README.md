@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.0; 23 -2.1; 25 -2.2; 28 -2.3; 31 -2.3; 34 -2.3; 37 -2.2; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Logitech UE 6000 passive GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Logitech UE 6000 passive ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Logitech UE 6000
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 29 Hz   | 0.66 | -2.2 dB |
-| Peaking | 406 Hz  | 0.77 | 5.9 dB  |
-| Peaking | 1017 Hz | 0.1  | -3.8 dB |
-| Peaking | 2839 Hz | 0.83 | 9.5 dB  |
-| Peaking | 5714 Hz | 2.3  | 5.7 dB  |
-| Peaking | 1785 Hz | 2.3  | -1.1 dB |
-| Peaking | 2176 Hz | 3.41 | 1.3 dB  |
-| Peaking | 2838 Hz | 4.28 | -1.0 dB |
-| Peaking | 5951 Hz | 0.18 | 0.3 dB  |
-| Peaking | 7886 Hz | 5.14 | -1.4 dB |
+| Peaking | 28 Hz   | 0.65 | -2.2 dB |
+| Peaking | 405 Hz  | 0.78 | 5.8 dB  |
+| Peaking | 1019 Hz | 0.1  | -3.7 dB |
+| Peaking | 2845 Hz | 0.84 | 9.4 dB  |
+| Peaking | 5717 Hz | 2.29 | 5.7 dB  |
+| Peaking | 1789 Hz | 2.3  | -1.6 dB |
+| Peaking | 2201 Hz | 1.85 | 1.8 dB  |
+| Peaking | 2778 Hz | 3.31 | -1.5 dB |
+| Peaking | 7370 Hz | 0.18 | 0.3 dB  |
+| Peaking | 7856 Hz | 5.25 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Logitech%20UE%206000%20passive/Logitech%20UE%206000%20passive.png)

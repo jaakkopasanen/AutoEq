@@ -9,8 +9,9 @@ GraphicEQ: 21 -5.6; 23 -5.3; 25 -5.1; 28 -4.7; 31 -4.4; 34 -4.1; 37 -4.0; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.0dB` and instead set Global volume in the UI for both channels to **-29**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDR-1000X Wireless NC Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-29**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1000X Wireless NC Active ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1000X W
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -0.0dB.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 0.69 | -5.4 dB |
-| Peaking | 142 Hz   | 0.53 | -6.0 dB |
+| Peaking | 18 Hz    | 0.69 | -5.3 dB |
+| Peaking | 142 Hz   | 0.52 | -6.0 dB |
 | Peaking | 1936 Hz  | 4.58 | -5.5 dB |
 | Peaking | 5540 Hz  | 0.96 | -5.8 dB |
 | Peaking | 24000 Hz | 2.29 | -4.4 dB |
-| Peaking | 973 Hz   | 0.84 | -1.0 dB |
-| Peaking | 1182 Hz  | 3.61 | 4.3 dB  |
-| Peaking | 7163 Hz  | 5.52 | 5.8 dB  |
-| Peaking | 9059 Hz  | 1.51 | -5.3 dB |
-| Peaking | 11198 Hz | 1.28 | 3.1 dB  |
+| Peaking | 992 Hz   | 0.85 | -1.0 dB |
+| Peaking | 1184 Hz  | 3.56 | 4.4 dB  |
+| Peaking | 7222 Hz  | 5.57 | 5.8 dB  |
+| Peaking | 9150 Hz  | 1.52 | -5.3 dB |
+| Peaking | 11014 Hz | 1.28 | 3.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-1000X%20Wireless%20NC%20Active/Sony%20MDR-1000X%20Wireless%20NC%20Active.png)

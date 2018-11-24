@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.9; 31 5.3; 34 4.2; 37 3.2; 41 2.0; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Skullcandy Aviators no Lens GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Aviators no Lens ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.3dB.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 27 Hz    | 0.72 | 9.1 dB  |
-| Peaking | 109 Hz   | 0.26 | -5.7 dB |
-| Peaking | 2007 Hz  | 1.29 | 5.3 dB  |
-| Peaking | 5329 Hz  | 0.96 | -9.6 dB |
-| Peaking | 6171 Hz  | 2.38 | 12.9 dB |
-| Peaking | 3141 Hz  | 4.61 | -1.6 dB |
-| Peaking | 3851 Hz  | 4.43 | 3.3 dB  |
-| Peaking | 4441 Hz  | 6.09 | -3.3 dB |
-| Peaking | 9558 Hz  | 3.12 | -3.1 dB |
-| Peaking | 10092 Hz | 0.96 | 1.5 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 27 Hz   | 0.73 | 9.1 dB  |
+| Peaking | 109 Hz  | 0.25 | -5.8 dB |
+| Peaking | 2004 Hz | 1.3  | 5.3 dB  |
+| Peaking | 5327 Hz | 0.96 | -9.5 dB |
+| Peaking | 6152 Hz | 2.39 | 12.9 dB |
+| Peaking | 3130 Hz | 5.01 | -1.5 dB |
+| Peaking | 3818 Hz | 4.65 | 3.3 dB  |
+| Peaking | 4402 Hz | 5.81 | -3.3 dB |
+| Peaking | 9697 Hz | 3.14 | -3.2 dB |
+| Peaking | 9812 Hz | 0.99 | 1.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Aviators%20no%20Lens/Skullcandy%20Aviators%20no%20Lens.png)

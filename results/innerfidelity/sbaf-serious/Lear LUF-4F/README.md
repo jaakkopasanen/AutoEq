@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 1.0; 25 0.8; 28 0.5; 31 0.2; 34 -0.0; 37 -0.2; 41 -0.5; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Lear LUF-4F GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Lear LUF-4F ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Lear LUF-4F Para
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.5dB.
 | Peaking | 1901 Hz |  1.38 | -8.2 dB |
 | Peaking | 4581 Hz |  4.02 | 7.2 dB  |
 | Peaking | 8269 Hz |  8.12 | -4.7 dB |
-| Peaking | 22 Hz   |  1.68 | 1.4 dB  |
-| Peaking | 2418 Hz |  6.32 | -1.3 dB |
-| Peaking | 3084 Hz |  7.84 | 2.1 dB  |
-| Peaking | 5500 Hz | 11.06 | -2.2 dB |
-| Peaking | 6606 Hz |  7.14 | 2.2 dB  |
+| Peaking | 20 Hz   |  1.64 | 1.4 dB  |
+| Peaking | 2429 Hz |  6.46 | -1.3 dB |
+| Peaking | 3104 Hz |  8.01 | 2.1 dB  |
+| Peaking | 5505 Hz | 11.64 | -2.3 dB |
+| Peaking | 6616 Hz |  7.28 | 2.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Lear%20LUF-4F/Lear%20LUF-4F.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.1; 23 -8.0; 25 -7.9; 28 -7.7; 31 -7.5; 34 -7.4; 37 -7.2; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Maximo iMetal iM-590 White GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Maximo iMetal iM-590 White ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Maximo iMetal iM
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 0.27 | -7.8 dB |
+| Peaking | 23 Hz    | 0.28 | -7.8 dB |
 | Peaking | 134 Hz   | 1.02 | -2.4 dB |
-| Peaking | 2292 Hz  | 1.62 | -9.9 dB |
-| Peaking | 3580 Hz  | 1.25 | 9.6 dB  |
-| Peaking | 6627 Hz  | 4.58 | -8.6 dB |
-| Peaking | 235 Hz   | 2.71 | -0.7 dB |
-| Peaking | 746 Hz   | 1.01 | 2.0 dB  |
-| Peaking | 1321 Hz  | 2.16 | -1.7 dB |
-| Peaking | 9200 Hz  | 2.49 | 0.5 dB  |
-| Peaking | 10265 Hz | 6.02 | -2.5 dB |
+| Peaking | 2294 Hz  | 1.62 | -9.9 dB |
+| Peaking | 3581 Hz  | 1.25 | 9.6 dB  |
+| Peaking | 6632 Hz  | 4.58 | -8.6 dB |
+| Peaking | 230 Hz   | 2.29 | -0.7 dB |
+| Peaking | 743 Hz   | 1.03 | 2.0 dB  |
+| Peaking | 1323 Hz  | 2.19 | -1.7 dB |
+| Peaking | 9100 Hz  | 2.53 | 0.5 dB  |
+| Peaking | 10267 Hz | 6.07 | -2.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Maximo%20iMetal%20iM-590%20White/Maximo%20iMetal%20iM-590%20White.png)

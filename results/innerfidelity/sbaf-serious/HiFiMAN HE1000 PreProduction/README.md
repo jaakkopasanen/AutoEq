@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.1; 25 2.9; 28 2.7; 31 2.6; 34 2.5; 37 2.4; 41 2.3; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.9dB` and instead set Global volume in the UI for both channels to **-38**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`HiFiMAN HE1000 PreProduction GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-38**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE1000 PreProduction ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE1000 P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.8dB.
+When using independent subset of filters, apply preamp of **-3.8dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 27 Hz   |  0.7  | 3.1 dB  |
-| Peaking | 1337 Hz |  5.66 | 1.6 dB  |
-| Peaking | 2322 Hz |  1.5  | 3.8 dB  |
-| Peaking | 4621 Hz |  6.02 | -2.9 dB |
-| Peaking | 7171 Hz |  2.95 | -4.4 dB |
-| Peaking | 67 Hz   |  1.97 | 0.6 dB  |
-| Peaking | 166 Hz  |  2.43 | -1.2 dB |
-| Peaking | 311 Hz  |  4.35 | -1.9 dB |
-| Peaking | 915 Hz  |  7.87 | -0.9 dB |
-| Peaking | 3736 Hz | 10.52 | 1.2 dB  |
+| Peaking | 1338 Hz |  5.48 | 1.6 dB  |
+| Peaking | 2331 Hz |  1.51 | 3.8 dB  |
+| Peaking | 4635 Hz |  6.02 | -2.9 dB |
+| Peaking | 7154 Hz |  2.95 | -4.4 dB |
+| Peaking | 68 Hz   |  1.75 | 0.7 dB  |
+| Peaking | 150 Hz  |  1.64 | -0.6 dB |
+| Peaking | 174 Hz  |  5.17 | -0.9 dB |
+| Peaking | 309 Hz  |  4.12 | -1.9 dB |
+| Peaking | 3748 Hz | 11.43 | 1.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE1000%20PreProduction/HiFiMAN%20HE1000%20PreProduction.png)

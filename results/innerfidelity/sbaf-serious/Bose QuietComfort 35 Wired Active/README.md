@@ -9,8 +9,9 @@ GraphicEQ: 21 -1.4; 23 -1.3; 25 -1.2; 28 -1.3; 31 -1.6; 34 -1.8; 37 -2.0; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.8dB` and instead set Global volume in the UI for both channels to **-57**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bose QuietComfort 35 Wired Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-57**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfort 35 Wired Active ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfor
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 44 Hz   |  0.66 | -2.0 dB |
+| Peaking | 43 Hz   |  0.66 | -2.0 dB |
 | Peaking | 127 Hz  |  1.17 | -1.3 dB |
 | Peaking | 2510 Hz |  2.3  | -2.7 dB |
-| Peaking | 4130 Hz |  4.33 | -2.2 dB |
-| Peaking | 5284 Hz |  8.71 | 6.6 dB  |
-| Peaking | 225 Hz  |  2.67 | -0.5 dB |
-| Peaking | 519 Hz  |  1.28 | 0.8 dB  |
-| Peaking | 1332 Hz |  2.46 | 0.8 dB  |
-| Peaking | 1899 Hz |  6.18 | -1.2 dB |
-| Peaking | 7011 Hz | 11.8  | 1.8 dB  |
+| Peaking | 4136 Hz |  4.35 | -2.2 dB |
+| Peaking | 5300 Hz |  8.74 | 6.6 dB  |
+| Peaking | 225 Hz  |  2.49 | -0.5 dB |
+| Peaking | 516 Hz  |  1.28 | 0.8 dB  |
+| Peaking | 1340 Hz |  2.37 | 0.8 dB  |
+| Peaking | 1898 Hz |  5.99 | -1.2 dB |
+| Peaking | 6979 Hz | 11.76 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bose%20QuietComfort%2035%20Wired%20Active/Bose%20QuietComfort%2035%20Wired%20Active.png)

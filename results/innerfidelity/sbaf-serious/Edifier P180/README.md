@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Edifier P180 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Edifier P180 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Edifier P180 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.8dB.
 | Peaking | 2104 Hz  | 2.12 | -16.3 dB |
 | Peaking | 6841 Hz  | 1.52 | -10.4 dB |
 | Peaking | 13999 Hz | 3.57 | -0.7 dB  |
-| Peaking | 1035 Hz  | 0.64 | 6.0 dB   |
-| Peaking | 1337 Hz  | 0.27 | -3.6 dB  |
-| Peaking | 1619 Hz  | 4.5  | -3.6 dB  |
-| Peaking | 3711 Hz  | 4.15 | 4.4 dB   |
-| Peaking | 11831 Hz | 3.53 | 2.9 dB   |
+| Peaking | 1040 Hz  | 0.63 | 5.9 dB   |
+| Peaking | 1331 Hz  | 0.27 | -3.6 dB  |
+| Peaking | 1600 Hz  | 4.51 | -3.6 dB  |
+| Peaking | 3681 Hz  | 4.15 | 4.4 dB   |
+| Peaking | 11819 Hz | 3.53 | 2.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Edifier%20P180/Edifier%20P180.png)

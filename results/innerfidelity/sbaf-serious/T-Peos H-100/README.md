@@ -9,8 +9,9 @@ GraphicEQ: 21 -6.6; 23 -6.3; 25 -6.0; 28 -5.6; 31 -5.3; 34 -4.9; 37 -4.5; 41 -4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.0dB` and instead set Global volume in the UI for both channels to **-59**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`T-Peos H-100 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-59**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `T-Peos H-100 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `T-Peos H-100 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.2dB.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 12 Hz    | 0.25 | -7.0 dB  |
+| Peaking | 12 Hz    | 0.24 | -7.1 dB  |
 | Peaking | 2287 Hz  | 1.52 | -9.8 dB  |
-| Peaking | 4036 Hz  | 6.59 | 5.1 dB   |
-| Peaking | 5982 Hz  | 2.22 | 7.6 dB   |
-| Peaking | 10352 Hz | 2.87 | -10.9 dB |
-| Peaking | 661 Hz   | 0.88 | 2.8 dB   |
-| Peaking | 1698 Hz  | 1.51 | -2.7 dB  |
-| Peaking | 2362 Hz  | 1.25 | 1.7 dB   |
-| Peaking | 3176 Hz  | 6.9  | -3.1 dB  |
-| Peaking | 14367 Hz | 4.58 | 1.2 dB   |
+| Peaking | 4031 Hz  | 6.59 | 5.1 dB   |
+| Peaking | 5985 Hz  | 2.22 | 7.6 dB   |
+| Peaking | 10354 Hz | 2.87 | -10.9 dB |
+| Peaking | 658 Hz   | 0.87 | 2.8 dB   |
+| Peaking | 1650 Hz  | 1.49 | -2.7 dB  |
+| Peaking | 2416 Hz  | 1.24 | 1.7 dB   |
+| Peaking | 3233 Hz  | 6.81 | -3.1 dB  |
+| Peaking | 14291 Hz | 4.59 | 1.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/T-Peos%20H-100/T-Peos%20H-100.png)

@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 0.8; 25 0.1; 28 -0.4; 31 -0.8; 34 -1.3; 37 -1.6; 41 -2.1; 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.9dB` and instead set Global volume in the UI for both channels to **-48**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`JVC XX Elation HA FR100X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-48**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `JVC XX Elation HA FR100X ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.0dB.
+When using independent subset of filters, apply preamp of **-5.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 2.05 | 2.9 dB  |
-| Peaking | 129 Hz  | 0.54 | -7.0 dB |
-| Peaking | 310 Hz  | 1.1  | -4.1 dB |
+| Peaking | 18 Hz   | 2.15 | 2.9 dB  |
+| Peaking | 130 Hz  | 0.55 | -7.0 dB |
+| Peaking | 311 Hz  | 1.1  | -4.1 dB |
 | Peaking | 4819 Hz | 4.64 | -8.6 dB |
-| Peaking | 6401 Hz | 4.94 | 5.9 dB  |
-| Peaking | 508 Hz  | 3.02 | -1.1 dB |
-| Peaking | 1548 Hz | 0.88 | 2.2 dB  |
-| Peaking | 2619 Hz | 1.38 | -2.7 dB |
-| Peaking | 3476 Hz | 2.96 | 2.8 dB  |
-| Peaking | 4275 Hz | 7.19 | -1.5 dB |
+| Peaking | 6402 Hz | 4.94 | 5.9 dB  |
+| Peaking | 17 Hz   | 1.98 | 1.3 dB  |
+| Peaking | 509 Hz  | 2.86 | -1.2 dB |
+| Peaking | 1674 Hz | 0.8  | 2.9 dB  |
+| Peaking | 2625 Hz | 1.04 | -3.3 dB |
+| Peaking | 3416 Hz | 3.82 | 3.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/JVC%20XX%20Elation%20HA%20FR100X/JVC%20XX%20Elation%20HA%20FR100X.png)

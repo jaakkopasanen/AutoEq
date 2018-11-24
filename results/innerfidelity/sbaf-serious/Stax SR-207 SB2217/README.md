@@ -9,28 +9,28 @@ GraphicEQ: 21 0.0; 23 5.4; 25 4.8; 28 4.2; 31 3.8; 34 3.7; 37 3.7; 41 3.8; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.8dB` and instead set Global volume in the UI for both channels to **-68**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Stax SR-207 SB2217 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-68**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-207 SB2217 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.7dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.8dB.
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+with these parameters. The first 4 filters can be used independently.
+When using independent subset of filters, apply preamp of **-2.7dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 13 Hz   |  0.11 | 4.7 dB  |
-| Peaking | 445 Hz  |  0.63 | 1.5 dB  |
-| Peaking | 1646 Hz |  1.56 | -8.2 dB |
-| Peaking | 2158 Hz |  0.76 | 5.2 dB  |
-| Peaking | 9293 Hz |  6.77 | -4.2 dB |
-| Peaking | 36 Hz   |  2.45 | -0.8 dB |
-| Peaking | 62 Hz   |  3.24 | 0.4 dB  |
-| Peaking | 2521 Hz |  5.23 | 2.4 dB  |
-| Peaking | 2778 Hz |  2.9  | -1.7 dB |
-| Peaking | 6792 Hz | 10.56 | 3.0 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 692 Hz   | 0.07 | 1.9 dB  |
+| Peaking | 1778 Hz  | 1.4  | -8.3 dB |
+| Peaking | 2247 Hz  | 1.82 | 5.9 dB  |
+| Peaking | 9290 Hz  | 5.15 | -4.7 dB |
+| Peaking | 17 Hz    | 1.07 | 6.8 dB  |
+| Peaking | 59 Hz    | 1.03 | 2.5 dB  |
+| Peaking | 5978 Hz  | 8.68 | -1.5 dB |
+| Peaking | 6791 Hz  | 8.74 | 2.5 dB  |
+| Peaking | 19708 Hz | 2.07 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-207%20SB2217/Stax%20SR-207%20SB2217.png)

@@ -9,27 +9,29 @@ GraphicEQ: 21 -5.1; 23 -4.4; 25 -3.8; 28 -3.3; 31 -3.0; 34 -3.0; 37 -2.9; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.8dB` and instead set Global volume in the UI for both channels to **-57**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bose QuietComfort 35 Wireless Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-57**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfort 35 Wireless Active ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
-with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.5dB.
+In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 116 Hz  |  1.03 | -1.7 dB |
-| Peaking | 1627 Hz |  1.4  | 5.1 dB  |
-| Peaking | 2326 Hz |  0.97 | -3.9 dB |
-| Peaking | 5435 Hz | 11.1  | 7.0 dB  |
-| Peaking | 18 Hz   |  1.47 | -5.5 dB |
-| Peaking | 36 Hz   |  0.6  | -2.0 dB |
-| Peaking | 506 Hz  |  2.3  | 1.0 dB  |
-| Peaking | 3484 Hz |  8.72 | 2.8 dB  |
-| Peaking | 4153 Hz |  5.01 | -1.9 dB |
+| Peaking | 10 Hz   |  0.27 | -5.2 dB |
+| Peaking | 115 Hz  |  1.03 | -1.7 dB |
+| Peaking | 1613 Hz |  1.44 | 4.9 dB  |
+| Peaking | 2362 Hz |  0.97 | -3.7 dB |
+| Peaking | 5446 Hz | 10.8  | 6.9 dB  |
+| Peaking | 541 Hz  |  1.66 | 1.0 dB  |
+| Peaking | 974 Hz  |  4.45 | -1.0 dB |
+| Peaking | 3502 Hz |  6.79 | 3.8 dB  |
+| Peaking | 3856 Hz |  3    | -2.2 dB |
+| Peaking | 7194 Hz | 10.87 | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bose%20QuietComfort%2035%20Wireless%20Active/Bose%20QuietComfort%2035%20Wireless%20Active.png)

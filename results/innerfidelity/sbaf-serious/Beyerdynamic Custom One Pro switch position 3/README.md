@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 0.2; 25 -0.2; 28 -0.7; 31 -1.2; 34 -1.5; 37 -1.7; 41 -1.9;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic Custom One Pro switch position 3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic Custom One Pro switch position 3 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic Cus
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 378 Hz  | 1.05 | -1.3 dB |
 | Peaking | 1963 Hz | 2.34 | -4.5 dB |
 | Peaking | 4272 Hz | 1.1  | 7.1 dB  |
-| Peaking | 45 Hz   | 1.78 | -1.1 dB |
-| Peaking | 60 Hz   | 4.41 | 1.1 dB  |
-| Peaking | 6343 Hz | 3.41 | 4.0 dB  |
-| Peaking | 7449 Hz | 2.95 | -1.7 dB |
-| Peaking | 7796 Hz | 1.01 | -1.4 dB |
+| Peaking | 45 Hz   | 1.86 | -0.9 dB |
+| Peaking | 64 Hz   | 4.31 | 1.1 dB  |
+| Peaking | 6340 Hz | 3.41 | 4.0 dB  |
+| Peaking | 7458 Hz | 3.05 | -1.7 dB |
+| Peaking | 7776 Hz | 1.03 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20Custom%20One%20Pro%20switch%20position%203/Beyerdynamic%20Custom%20One%20Pro%20switch%20position%203.png)

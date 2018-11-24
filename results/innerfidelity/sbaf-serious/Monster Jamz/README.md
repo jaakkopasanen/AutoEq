@@ -9,8 +9,9 @@ GraphicEQ: 21 -8.4; 23 -8.3; 25 -8.2; 28 -8.1; 31 -7.9; 34 -7.8; 37 -7.7; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.4dB` and instead set Global volume in the UI for both channels to **-44**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Monster Jamz GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Jamz ParametricEQ.txt`.
@@ -18,18 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Monster Jamz Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.8dB.
+When using independent subset of filters, apply preamp of **-4.8dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 0.2  | -8.1 dB |
-| Peaking | 152 Hz  | 0.89 | -2.9 dB |
-| Peaking | 2247 Hz | 1.64 | -5.9 dB |
-| Peaking | 3549 Hz | 4.32 | 5.8 dB  |
-| Peaking | 6520 Hz | 7.17 | 4.8 dB  |
-| Peaking | 289 Hz  | 2.28 | -0.6 dB |
-| Peaking | 725 Hz  | 1.55 | 1.7 dB  |
-| Peaking | 1617 Hz | 4.98 | -1.0 dB |
-| Peaking | 4851 Hz | 7.17 | -2.1 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 22 Hz    | 0.21 | -8.1 dB |
+| Peaking | 152 Hz   | 0.89 | -2.9 dB |
+| Peaking | 2246 Hz  | 1.64 | -5.9 dB |
+| Peaking | 3536 Hz  | 4.32 | 5.8 dB  |
+| Peaking | 6564 Hz  | 7.18 | 4.8 dB  |
+| Peaking | 285 Hz   | 1.94 | -0.7 dB |
+| Peaking | 725 Hz   | 1.54 | 1.7 dB  |
+| Peaking | 1611 Hz  | 4.94 | -1.0 dB |
+| Peaking | 4925 Hz  | 7.64 | -2.1 dB |
+| Peaking | 15153 Hz | 7    | -2.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Jamz/Monster%20Jamz.png)

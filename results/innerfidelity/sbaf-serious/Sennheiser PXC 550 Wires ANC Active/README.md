@@ -9,27 +9,28 @@ GraphicEQ: 21 0.0; 23 5.8; 25 5.3; 28 4.3; 31 3.5; 34 3.0; 37 2.7; 41 2.4; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.3dB` and instead set Global volume in the UI for both channels to **-62**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser PXC 550 Wires ANC Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-62**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PXC 550 Wires ANC Active ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.4dB.
+When using independent subset of filters, apply preamp of **-5.4dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 426 Hz  |  1.23 | 3.3 dB  |
-| Peaking | 3316 Hz |  2.78 | 4.1 dB  |
-| Peaking | 6327 Hz |  6.69 | 5.4 dB  |
-| Peaking | 9018 Hz |  4.37 | -5.1 dB |
-| Peaking | 21 Hz   |  1.17 | 5.7 dB  |
-| Peaking | 76 Hz   |  1.04 | 2.7 dB  |
-| Peaking | 1611 Hz |  3.65 | -2.6 dB |
-| Peaking | 4330 Hz |  9.47 | 6.0 dB  |
-| Peaking | 4993 Hz | 10.26 | -7.3 dB |
+| Peaking | 425 Hz  |  1.23 | 3.3 dB  |
+| Peaking | 3317 Hz |  2.77 | 4.1 dB  |
+| Peaking | 6327 Hz |  6.72 | 5.4 dB  |
+| Peaking | 9019 Hz |  4.38 | -5.1 dB |
+| Peaking | 20 Hz   |  1.18 | 5.8 dB  |
+| Peaking | 76 Hz   |  1.05 | 2.7 dB  |
+| Peaking | 1606 Hz |  3.65 | -2.6 dB |
+| Peaking | 4313 Hz |  9.36 | 5.9 dB  |
+| Peaking | 4975 Hz | 10.19 | -7.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PXC%20550%20Wires%20ANC%20Active/Sennheiser%20PXC%20550%20Wires%20ANC%20Active.png)

@@ -40,7 +40,7 @@ Parametric eq settings can be used with Peace or any other parametric eq which h
 fewer bands is possible but pre-computed results require to use minimum five first of the filters.
 
 ### HeSuVi
-Easiest way is install [HeSuVi](https://sourceforge.net/projects/hesuvi/) and select correct headphone model from the
+Easiest way is to install [HeSuVi](https://sourceforge.net/projects/hesuvi/) and select correct headphone model from the
 Equalizer tab. There is no need to download results from the results folder because HeSuVi ships with all of the
 recommended results. Please note that after installing HeSuVi will have surround virtualization on and if you don't
 want to use it you can select **none.wav** from the left side list on the Virtualization tab.
@@ -102,8 +102,8 @@ not sufficient since measurements and equalization have several problems that ne
 [Technical Challenges](https://github.com/jaakkopasanen/AutoEq#technical-challenges) for more details.
 
 Results provided in this project currently have all the headphone measurements from
-[Innerfidelity](https://www.innerfidelity.com/headphone-measurements), [Headphone.com](http://graphs.headphone.com/) and
-[oratory1990](https://www.reddit.com/user/oratory1990).
+[Innerfidelity](https://www.innerfidelity.com/headphone-measurements), [Headphone.com](http://graphs.headphone.com/),
+[oratory1990](https://www.reddit.com/user/oratory1990) and [Rtings](https://www.rtings.com/headphones).
 Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
 [target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 would be found in
@@ -114,18 +114,20 @@ averaged data which has no suffixes in the name.
 
 oratory1990 measurements have been done on Gras 43AG and 43AC couples, the same which were used to develop Harman target
 responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results are
-recommended over all other measurements because of this reason. Harman target datas are in the `compensation` folder.
+recommended over all other measurements because of this reason. Harman target data is in the `compensation` folder.
 
 Innerfidelity and Headphone.com measured headphones have
 [SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 only. This is a modified version of Innerfidelity target curve produced by Serious user on Super Best Audio Friends
-forum. This curve doesn't have the glaring problems but is quite well balanced overall. Curve was turned into a
+forum. This curve doesn't have any glaring problems and is quite well balanced overall. Curve was turned into a
 compensation for raw microphone data and tilted 0.2 dB / octave brighter. Innerfidelity measurements are recommended
 over Headphone.com measurements because SBAF-Serious target was developed for Innerfidelity. SBAF-Serious curve was
 modified to be suitable for Headphone.com measurements by
 [calibrating](https://github.com/jaakkopasanen/AutoEq#calibration) it. CSV data files for Innerfidelity and
 Headphone.com are at `innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv` and
 `headphonecom/resources/headphonecom_compensation_sbaf-serious.csv`, respectively.
+
+**TODO: Rtings target curves**
 
 This project also has other compensation curves which have not been used for pre-processed results for simplicity.
 
@@ -145,14 +147,15 @@ on-ear headphones, +6dB for in-ear headphones and no boost for earbuds. Harman t
 on-ears and +10dB for in-ears but since most headphones cannot achieve this with positive gain limited to +6dB a smaller
 boost was selected. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain
 (boost) is applied. In the upper treble measurements are less reliable and boosting them too much will cause serious
-problem while having some narrow dips is not a problem at all.
+problems while having some narrow dips is not a problem at all.
 
 ## Equalizing
 `frequency_response.py` is the tool used to produce the equalization results from measurement data. There is no
 fancy graphical user interface but instead it is used from command line.
 
 ### Installing
-- Download [AutoEQ zip](https://github.com/jaakkopasanen/AutoEq/archive/master.zip) and exctract to a convenient location.
+- Download [AutoEQ zip](https://github.com/jaakkopasanen/AutoEq/archive/master.zip) and exctract to a convenient
+location. Or just git clone if you know what that means.
 - Download and install [Python3.6](https://www.python.org/getit/). Python 3.7 is not supported yet. Make sure to check
 *Install Python3 to PATH*
 - Install virtualenv. Run this on command prompt. Search `cmd` in Windows start menu.  
@@ -312,6 +315,14 @@ python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400
 
 Feel free to experiment more.
 
+### More Data!
+If data for you headphone cannot be found in this project but you have an image of the frequency response you might be
+able to use [https://apps.automeris.io/wpd/](https://apps.automeris.io/wpd/) to parse the image. You'll have to add
+header row to the CSV file. Header row is the first line of the file and must be exactly `frequency,raw`. The produced
+CSV file is the input data not the actual result. Save the file to an empty folder in a convenient location and point
+`--input_dir` to the folder path when running `frequency_response.py`. For more instructions on the usage of
+WebPlotDigitizer see the [tutorial video](https://www.youtube.com/watch?v=P7GbGdMvopU).
+
 ### Server
 AutoEQ has a HTTP server for clients such as graphical user interfaces or web apps. This is the API documentation.
 Currently only one route [/process]() exists.
@@ -354,12 +365,6 @@ and gain.
 - **target** `[float]` Target frequency response.
 
 
-### More Data!
-If data for you headphone cannot be found in this project but you have an image of the frequency response you might be
-able to use [https://apps.automeris.io/wpd/](https://apps.automeris.io/wpd/) to parse the image. You'll have replace
-all commas `,` in the produced file with point `.` and semi-colons `;` with comma `,` in this order. You can you for
-example [Notepad++](https://notepad-plus-plus.org/) for this, just hit `Ctrl+h`
-
 ## Calibration
 Innerfidelity and Headphone.com have different kind of measurement systems and since there is no any kind of standard
 calibration for headphone frequency response measurements the data produced by these systems are not directly compatible
@@ -383,6 +388,8 @@ an individual headphone measured by Headphone.com would look like if it was meas
 Calibration data is not used as is in the results but instead Innerfidelity SBAF-Serious compensation curve
 was calibrated to be suitable for Headphone.com measurements. Calibration can be used between Innerfidelity and
 Headphone.com mainly to make headphones sound like other headphones when both models are from different sources.
+
+Same calibration procedure was done for Innerfidelity and Rtings measurements.
 
 
 ## Technical Challenges
@@ -420,6 +427,7 @@ loud enough even when using high negative preamp larger `--max_gain` values can 
 to +6dB to not to cripple user's volume too much. Max gain will clip the equalization curve which produces sharp kinks
 in it. Sharp changes in equalization may produce unwanted equalization artifacts. To counter this AutoEQ rounds the
 corners whenever max gain clips the curve.
+
 
 ## Parametric Equalizer
 AutoEQ has an optimizer to fit several peaking filters to the desired equalization curve. Optimization is part heuristic
@@ -460,8 +468,10 @@ limited number of bands because highly erratic curves are impossible to be estim
 
 *1More MK801 with parametric equalization*
 
+
 ## Data Processing
-Measurement data for this project was obtained by crawling Innerfidelity and Headphone.com databases. For Innerfidelity
+Measurement data for this project was obtained by crawling Innerfidelity, Headphone.com, oratory1990 and Rtings
+databases. For Innerfidelity
 that means downloading all PDFs, turning them into images with Ghostscript, parsing images with Python PIL package and
 saving the numerical data. Numerical data obtained this way is an average of the blue and red curves in the frequency
 response. These curves have been compensated with the old compensation curve which does not match human perception at
@@ -473,6 +483,12 @@ Headphone.com measurements were downloaded as images, both raw and compensated d
 format and raw data saved to `headphonecom/data`. Both datas were used to obtain Headphone.com compensation curve by
 calculating differences between raw and compensated data.
 
+oratory1990 data processing is similar to Innerfidelity because oratory1990 measurements are distributed as PDFs.
+Compensation curves used for oratory1990 measurements are the Harman target curves.
+
+Rtings measurements were obtained in a similar fashion as the Headphone.com measurements were. Two new compensation
+curves were developed in addition to the native curve used by Rtings in their measurement reports.
+
 Data processing tools are not meant as a user friendly and robust software but instead to be able to be ran once to
 obtain the raw data.
 
@@ -480,24 +496,16 @@ obtain the raw data.
 Contributions are more than welcome.
 
 - Rtings measurements
-    - Use native compensation
-    - Calibrate to Innerfidelity to use SBAF-Serious
-    - Create compensation by averaging headphones
-    - Full pipeline
     - Update results section
     - Update recommendations
-    - Update update.py
 - New oratory1990 measurements
 - Crinacle measurements for IEMs
-    - Target response
+    - Target response for old measurements
+    - Full pipeline for new measurements
 - Impulse responses
 - Head-fi measurements
     - Full pipeline
-    - Update results section
-    - Update recommendations
 - Reference audio analyzer measurements
-    - Target response
+    - Use compensated data directly
     - Full pipeline
-    - Update results section
-    - Update recommendations
 

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`BlueAnt Embrace GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `BlueAnt Embrace ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `BlueAnt Embrace 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.2dB.
 | Peaking | 569 Hz   |  1.92 | 6.9 dB  |
 | Peaking | 3505 Hz  |  1.8  | 7.0 dB  |
 | Peaking | 24000 Hz |  2.27 | 0.6 dB  |
-| Peaking | 723 Hz   |  5.56 | 2.0 dB  |
-| Peaking | 1568 Hz  |  1.23 | -2.4 dB |
-| Peaking | 2626 Hz  |  3.55 | 2.6 dB  |
-| Peaking | 5406 Hz  | 10.38 | -2.9 dB |
-| Peaking | 6712 Hz  |  9.32 | 3.0 dB  |
+| Peaking | 726 Hz   |  5.56 | 2.0 dB  |
+| Peaking | 1569 Hz  |  1.23 | -2.4 dB |
+| Peaking | 2633 Hz  |  3.55 | 2.6 dB  |
+| Peaking | 5424 Hz  | 10.38 | -2.9 dB |
+| Peaking | 6726 Hz  |  9.32 | 3.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/BlueAnt%20Embrace/BlueAnt%20Embrace.png)

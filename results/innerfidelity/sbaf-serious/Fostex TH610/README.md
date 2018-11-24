@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.0; 23 -2.2; 25 -2.3; 28 -2.5; 31 -2.6; 34 -2.6; 37 -2.7; 41 -2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--4.6dB` and instead set Global volume in the UI for both channels to **-46**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Fostex TH610 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-46**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fostex TH610 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Fostex TH610 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -4.8dB.
+When using independent subset of filters, apply preamp of **-4.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -4.8dB.
 | Peaking | 6831 Hz  | 0.59 | -2.3 dB |
 | Peaking | 714 Hz   | 1.84 | 1.0 dB  |
 | Peaking | 1634 Hz  | 4.55 | -1.1 dB |
-| Peaking | 8649 Hz  | 3.78 | 2.3 dB  |
-| Peaking | 9855 Hz  | 3.41 | -4.1 dB |
-| Peaking | 11441 Hz | 2.6  | 1.9 dB  |
+| Peaking | 8634 Hz  | 3.76 | 2.3 dB  |
+| Peaking | 9874 Hz  | 3.42 | -4.1 dB |
+| Peaking | 11473 Hz | 2.61 | 1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fostex%20TH610/Fostex%20TH610.png)

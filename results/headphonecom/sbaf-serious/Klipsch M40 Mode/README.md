@@ -9,27 +9,28 @@ GraphicEQ: 21 -0.2; 23 -0.5; 25 -0.8; 28 -1.0; 31 -1.1; 34 -1.1; 37 -1.1; 41 -1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Klipsch M40 Mode GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Klipsch M40 Mode ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 36 Hz   | 0.99 | -1.0 dB  |
-| Peaking | 202 Hz  | 0.66 | -1.5 dB  |
-| Peaking | 427 Hz  | 0.54 | 1.4 dB   |
+| Peaking | 36 Hz   | 1    | -1.0 dB  |
+| Peaking | 198 Hz  | 0.65 | -1.5 dB  |
+| Peaking | 429 Hz  | 0.55 | 1.4 dB   |
 | Peaking | 1606 Hz | 2.06 | -10.0 dB |
-| Peaking | 3147 Hz | 0.68 | 7.8 dB   |
-| Peaking | 2462 Hz | 4.44 | 2.0 dB   |
-| Peaking | 3142 Hz | 1.44 | -1.3 dB  |
-| Peaking | 6299 Hz | 2.02 | 5.9 dB   |
-| Peaking | 7341 Hz | 1.44 | -4.7 dB  |
+| Peaking | 3149 Hz | 0.68 | 7.8 dB   |
+| Peaking | 2476 Hz | 4.51 | 2.0 dB   |
+| Peaking | 3145 Hz | 1.47 | -1.2 dB  |
+| Peaking | 6251 Hz | 2.02 | 5.9 dB   |
+| Peaking | 7397 Hz | 1.44 | -4.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Klipsch%20M40%20Mode/Klipsch%20M40%20Mode.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 3.8; 25 3.5; 28 3.1; 31 2.9; 34 2.7; 37 2.5; 41 2.4; 45 2.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Enigmatic Audio Paradox GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Enigmatic Audio Paradox ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Enigmatic Audio 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 22 Hz   |  0.14 | 3.7 dB  |
-| Peaking | 173 Hz  |  0.64 | -5.8 dB |
-| Peaking | 586 Hz  |  1.45 | 2.7 dB  |
-| Peaking | 2912 Hz |  1.93 | 6.0 dB  |
-| Peaking | 5463 Hz |  2.56 | 6.1 dB  |
-| Peaking | 392 Hz  |  9.63 | 1.1 dB  |
-| Peaking | 1323 Hz |  1.54 | -3.2 dB |
-| Peaking | 1339 Hz |  0.93 | 2.0 dB  |
-| Peaking | 6455 Hz | 10.07 | 2.0 dB  |
-| Peaking | 8960 Hz |  4.81 | -3.3 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 22 Hz   | 0.14 | 3.7 dB  |
+| Peaking | 173 Hz  | 0.64 | -5.8 dB |
+| Peaking | 586 Hz  | 1.45 | 2.7 dB  |
+| Peaking | 2912 Hz | 1.93 | 6.0 dB  |
+| Peaking | 5463 Hz | 2.56 | 6.1 dB  |
+| Peaking | 39 Hz   | 2.49 | -0.3 dB |
+| Peaking | 807 Hz  | 3.68 | 1.0 dB  |
+| Peaking | 1205 Hz | 2.2  | -1.3 dB |
+| Peaking | 6460 Hz | 9.5  | 2.0 dB  |
+| Peaking | 8987 Hz | 4.94 | -3.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Enigmatic%20Audio%20Paradox/Enigmatic%20Audio%20Paradox.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 5.9; 31 5.5; 34 5.1; 37 4.8; 41 4.3; 45 4.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 880 250 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 880 250 Ohm ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -27,9 +28,9 @@ When using independent subset of filters, apply preamp of -6.1dB.
 | Peaking | 207 Hz   | 0.62 | -2.0 dB |
 | Peaking | 2719 Hz  | 3.57 | 2.4 dB  |
 | Peaking | 8509 Hz  | 2.76 | -8.0 dB |
-| Peaking | 1301 Hz  | 3.82 | 0.9 dB  |
-| Peaking | 1839 Hz  | 6.27 | -0.7 dB |
-| Peaking | 5763 Hz  | 7.75 | -1.6 dB |
-| Peaking | 11218 Hz | 6.23 | 1.9 dB  |
+| Peaking | 1299 Hz  | 3.82 | 0.9 dB  |
+| Peaking | 1828 Hz  | 6.27 | -0.7 dB |
+| Peaking | 5751 Hz  | 7.75 | -1.6 dB |
+| Peaking | 11253 Hz | 6.23 | 1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20880%20250%20Ohm/Beyerdynamic%20DT%20880%20250%20Ohm.png)

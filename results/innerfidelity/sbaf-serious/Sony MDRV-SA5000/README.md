@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sony MDRV-SA5000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDRV-SA5000 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDRV-SA5000
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 35 Hz   | 0.62 | 6.8 dB  |
-| Peaking | 340 Hz  | 0.92 | 3.0 dB  |
-| Peaking | 3747 Hz | 6.98 | 6.0 dB  |
-| Peaking | 5767 Hz | 2.64 | 6.8 dB  |
+| Peaking | 339 Hz  | 0.92 | 3.0 dB  |
+| Peaking | 3746 Hz | 6.98 | 6.0 dB  |
+| Peaking | 5768 Hz | 2.63 | 6.8 dB  |
 | Peaking | 8970 Hz | 4.88 | -5.6 dB |
-| Peaking | 63 Hz   | 3.72 | 1.6 dB  |
-| Peaking | 104 Hz  | 2.14 | -0.9 dB |
-| Peaking | 944 Hz  | 2.61 | -3.7 dB |
-| Peaking | 1239 Hz | 1.33 | 3.9 dB  |
-| Peaking | 2424 Hz | 3.44 | -5.4 dB |
+| Peaking | 64 Hz   | 3.8  | 1.5 dB  |
+| Peaking | 106 Hz  | 2.07 | -1.0 dB |
+| Peaking | 944 Hz  | 2.67 | -3.6 dB |
+| Peaking | 1242 Hz | 1.33 | 3.8 dB  |
+| Peaking | 2424 Hz | 3.45 | -5.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDRV-SA5000/Sony%20MDRV-SA5000.png)

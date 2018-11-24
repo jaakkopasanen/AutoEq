@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Astrotec AX7 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Astrotec AX7 ParametricEQ.txt`.
@@ -18,18 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Astrotec AX7 Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 34 Hz   | 0.55 | 6.6 dB  |
-| Peaking | 882 Hz  | 1.71 | 1.5 dB  |
-| Peaking | 2220 Hz | 0.73 | -4.0 dB |
-| Peaking | 3286 Hz | 1.86 | 9.5 dB  |
-| Peaking | 6163 Hz | 4.2  | 5.1 dB  |
-| Peaking | 24 Hz   | 0.28 | 1.7 dB  |
-| Peaking | 33 Hz   | 1.21 | -2.2 dB |
-| Peaking | 240 Hz  | 0.77 | -0.9 dB |
-| Peaking | 617 Hz  | 2.82 | 0.6 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 34 Hz    | 0.55 | 6.6 dB  |
+| Peaking | 864 Hz   | 1.86 | 1.4 dB  |
+| Peaking | 2215 Hz  | 0.79 | -4.0 dB |
+| Peaking | 3276 Hz  | 1.88 | 9.3 dB  |
+| Peaking | 6165 Hz  | 4.23 | 5.0 dB  |
+| Peaking | 22 Hz    | 0.29 | 1.6 dB  |
+| Peaking | 34 Hz    | 1.23 | -2.1 dB |
+| Peaking | 224 Hz   | 0.75 | -1.0 dB |
+| Peaking | 617 Hz   | 2.96 | 0.6 dB  |
+| Peaking | 21748 Hz | 1.47 | -0.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Astrotec%20AX7/Astrotec%20AX7.png)

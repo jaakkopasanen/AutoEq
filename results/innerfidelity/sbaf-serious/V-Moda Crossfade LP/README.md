@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.7; 25 2.0; 28 1.0; 31 0.2; 34 -0.6; 37 -1.3; 41 -2.0; 45
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`V-Moda Crossfade LP GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda Crossfade LP ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `V-Moda Crossfade
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -29,8 +30,8 @@ When using independent subset of filters, apply preamp of -6.9dB.
 | Peaking | 5296 Hz  | 1.53 | 10.4 dB |
 | Peaking | 740 Hz   | 5.26 | -1.0 dB |
 | Peaking | 1151 Hz  | 4.53 | 0.9 dB  |
-| Peaking | 6568 Hz  | 6.08 | 2.8 dB  |
-| Peaking | 7150 Hz  | 2.39 | -1.6 dB |
-| Peaking | 13090 Hz | 1.13 | 0.5 dB  |
+| Peaking | 6533 Hz  | 6.1  | 2.8 dB  |
+| Peaking | 7183 Hz  | 2.39 | -1.6 dB |
+| Peaking | 13130 Hz | 1.14 | 0.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/V-Moda%20Crossfade%20LP/V-Moda%20Crossfade%20LP.png)

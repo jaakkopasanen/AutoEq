@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`MrSpeakers Mad Dog GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Mad Dog ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Mad D
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.2dB.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 35 Hz   | 0.81 | 7.1 dB  |
-| Peaking | 327 Hz  | 2.36 | 1.5 dB  |
-| Peaking | 2531 Hz | 1.74 | 4.5 dB  |
-| Peaking | 5141 Hz | 0.96 | 6.3 dB  |
-| Peaking | 8604 Hz | 2.4  | -4.8 dB |
-| Peaking | 38 Hz   | 2.73 | -1.8 dB |
-| Peaking | 74 Hz   | 1.49 | 5.0 dB  |
-| Peaking | 91 Hz   | 2.03 | -5.6 dB |
-| Peaking | 660 Hz  | 6.01 | 1.5 dB  |
-| Peaking | 877 Hz  | 3.61 | -1.3 dB |
+| Peaking | 36 Hz   | 0.8  | 7.1 dB  |
+| Peaking | 325 Hz  | 2.36 | 1.5 dB  |
+| Peaking | 2530 Hz | 1.74 | 4.5 dB  |
+| Peaking | 5144 Hz | 0.96 | 6.3 dB  |
+| Peaking | 8612 Hz | 2.4  | -4.8 dB |
+| Peaking | 37 Hz   | 2.85 | -1.6 dB |
+| Peaking | 72 Hz   | 1.62 | 4.6 dB  |
+| Peaking | 93 Hz   | 2.03 | -5.2 dB |
+| Peaking | 663 Hz  | 5.87 | 1.5 dB  |
+| Peaking | 878 Hz  | 3.57 | -1.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Mad%20Dog/MrSpeakers%20Mad%20Dog.png)

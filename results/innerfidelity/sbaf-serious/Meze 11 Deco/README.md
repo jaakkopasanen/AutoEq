@@ -9,8 +9,9 @@ GraphicEQ: 21 -11.7; 23 -11.7; 25 -11.7; 28 -11.8; 31 -11.8; 34 -11.9; 37 -11.9;
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Meze 11 Deco GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Meze 11 Deco ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Meze 11 Deco Par
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.0dB.
+When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 19 Hz    | 0.19 | -10.7 dB |
-| Peaking | 177 Hz   | 0.4  | -9.1 dB  |
-| Peaking | 2045 Hz  | 1.72 | -13.0 dB |
-| Peaking | 2779 Hz  | 0.57 | 10.3 dB  |
-| Peaking | 6579 Hz  | 4.66 | -11.7 dB |
-| Peaking | 462 Hz   | 2.46 | -0.4 dB  |
-| Peaking | 800 Hz   | 4.74 | 1.0 dB   |
-| Peaking | 2627 Hz  | 7.06 | -1.4 dB  |
-| Peaking | 6227 Hz  | 0.58 | 0.7 dB   |
-| Peaking | 10308 Hz | 1.09 | -1.6 dB  |
+| Peaking | 18 Hz    | 0.19 | -10.7 dB |
+| Peaking | 178 Hz   | 0.41 | -9.0 dB  |
+| Peaking | 2060 Hz  | 1.72 | -13.0 dB |
+| Peaking | 2758 Hz  | 0.57 | 10.3 dB  |
+| Peaking | 6568 Hz  | 4.67 | -11.7 dB |
+| Peaking | 800 Hz   | 9.73 | 1.0 dB   |
+| Peaking | 1746 Hz  | 8.65 | -1.4 dB  |
+| Peaking | 2641 Hz  | 7.81 | -1.4 dB  |
+| Peaking | 5172 Hz  | 0.5  | 0.7 dB   |
+| Peaking | 10359 Hz | 1.12 | -1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Meze%2011%20Deco/Meze%2011%20Deco.png)

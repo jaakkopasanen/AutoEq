@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 1.4; 25 1.1; 28 0.7; 31 0.4; 34 0.1; 37 -0.1; 41 -0.3; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--5.2dB` and instead set Global volume in the UI for both channels to **-52**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 150 250 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-52**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 150 250 Ohm ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.0dB.
+When using independent subset of filters, apply preamp of **-5.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 142 Hz  | 1.39 | -6.8 dB |
+| Peaking | 142 Hz  | 1.39 | -6.7 dB |
 | Peaking | 2142 Hz | 3.35 | -3.0 dB |
-| Peaking | 3543 Hz | 3.7  | 5.1 dB  |
-| Peaking | 6122 Hz | 0.92 | -5.6 dB |
-| Peaking | 6446 Hz | 3.02 | 10.3 dB |
-| Peaking | 20 Hz   | 2.01 | 2.0 dB  |
-| Peaking | 66 Hz   | 3.35 | 1.3 dB  |
-| Peaking | 101 Hz  | 3.22 | -2.4 dB |
-| Peaking | 216 Hz  | 1.74 | -6.1 dB |
-| Peaking | 236 Hz  | 0.75 | 4.5 dB  |
+| Peaking | 3528 Hz | 3.69 | 5.1 dB  |
+| Peaking | 6075 Hz | 0.91 | -5.6 dB |
+| Peaking | 6482 Hz | 3.03 | 10.3 dB |
+| Peaking | 17 Hz   | 2.07 | 2.1 dB  |
+| Peaking | 67 Hz   | 3.37 | 1.4 dB  |
+| Peaking | 102 Hz  | 3.28 | -2.4 dB |
+| Peaking | 219 Hz  | 1.82 | -5.7 dB |
+| Peaking | 235 Hz  | 0.73 | 4.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20150%20250%20Ohm/Beyerdynamic%20DT%20150%20250%20Ohm.png)

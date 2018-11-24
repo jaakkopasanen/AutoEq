@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.8; 25 2.4; 28 1.9; 31 1.6; 34 1.2; 37 1.0; 41 0.7; 45 0.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Phiaton Bridge MS 500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Phiaton Bridge MS 500 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Phiaton Bridge M
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 1.86 | 3.1 dB  |
+| Peaking | 22 Hz   | 1.89 | 3.2 dB  |
 | Peaking | 318 Hz  | 1.21 | 6.4 dB  |
 | Peaking | 2685 Hz | 3.36 | 6.1 dB  |
 | Peaking | 5686 Hz | 1.83 | 7.0 dB  |
-| Peaking | 7993 Hz | 2.1  | -2.2 dB |
-| Peaking | 11 Hz   | 0.42 | 0.7 dB  |
-| Peaking | 97 Hz   | 1.17 | -0.9 dB |
-| Peaking | 534 Hz  | 2.41 | 0.6 dB  |
-| Peaking | 1136 Hz | 3.44 | -1.2 dB |
-| Peaking | 1831 Hz | 9.14 | -1.5 dB |
+| Peaking | 7990 Hz | 2.1  | -2.2 dB |
+| Peaking | 227 Hz  | 1.43 | 3.7 dB  |
+| Peaking | 241 Hz  | 0.63 | -3.2 dB |
+| Peaking | 486 Hz  | 1.35 | 1.7 dB  |
+| Peaking | 1140 Hz | 3.82 | -1.1 dB |
+| Peaking | 1826 Hz | 8.91 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Phiaton%20Bridge%20MS%20500/Phiaton%20Bridge%20MS%20500.png)

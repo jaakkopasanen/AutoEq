@@ -9,8 +9,9 @@ GraphicEQ: 21 -2.9; 23 -3.6; 25 -4.2; 28 -4.9; 31 -5.6; 34 -6.1; 37 -6.5; 41 -7.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Torque t402v OnEar Blue GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OnEar Blue ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OnE
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.8dB.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 85 Hz   | 0.38 | -8.9 dB |
 | Peaking | 242 Hz  | 0.88 | -7.0 dB |
-| Peaking | 2504 Hz | 0.85 | -3.2 dB |
-| Peaking | 6040 Hz | 3.81 | 7.6 dB  |
+| Peaking | 2506 Hz | 0.85 | -3.2 dB |
+| Peaking | 6045 Hz | 3.81 | 7.6 dB  |
 | Peaking | 8112 Hz | 2.94 | -0.5 dB |
-| Peaking | 479 Hz  | 1.69 | -3.2 dB |
-| Peaking | 827 Hz  | 1.88 | 5.5 dB  |
-| Peaking | 1121 Hz | 0.31 | 1.0 dB  |
-| Peaking | 1270 Hz | 2.36 | -5.4 dB |
-| Peaking | 4530 Hz | 7.73 | -2.7 dB |
+| Peaking | 479 Hz  | 1.68 | -3.2 dB |
+| Peaking | 826 Hz  | 1.88 | 5.5 dB  |
+| Peaking | 1146 Hz | 0.31 | 1.0 dB  |
+| Peaking | 1270 Hz | 2.37 | -5.3 dB |
+| Peaking | 4538 Hz | 7.76 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OnEar%20Blue/Torque%20t402v%20OnEar%20Blue.png)

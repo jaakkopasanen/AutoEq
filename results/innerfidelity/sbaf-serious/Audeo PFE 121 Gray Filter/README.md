@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 5.4; 25 5.1; 28 4.7; 31 4.4; 34 4.1; 37 3.8; 41 3.5; 45 3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audeo PFE 121 Gray Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeo PFE 121 Gray Filter ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Audeo PFE 121 Gr
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -5.6dB.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 25 Hz    | 0.84 | 5.5 dB  |
+| Peaking | 24 Hz    | 0.87 | 5.5 dB  |
 | Peaking | 1889 Hz  | 1.88 | -3.6 dB |
 | Peaking | 3566 Hz  | 3.1  | 5.8 dB  |
-| Peaking | 6296 Hz  | 2.95 | 6.7 dB  |
-| Peaking | 9406 Hz  | 0.39 | -2.3 dB |
-| Peaking | 199 Hz   | 1.03 | -1.6 dB |
-| Peaking | 694 Hz   | 2.03 | 1.7 dB  |
-| Peaking | 9696 Hz  | 4.68 | -3.3 dB |
-| Peaking | 14235 Hz | 1.05 | 4.5 dB  |
-| Peaking | 15018 Hz | 3.06 | -7.9 dB |
+| Peaking | 6297 Hz  | 2.95 | 6.7 dB  |
+| Peaking | 9408 Hz  | 0.39 | -2.3 dB |
+| Peaking | 201 Hz   | 1.08 | -1.6 dB |
+| Peaking | 695 Hz   | 2.05 | 1.7 dB  |
+| Peaking | 9704 Hz  | 4.66 | -3.3 dB |
+| Peaking | 14271 Hz | 1.05 | 4.6 dB  |
+| Peaking | 15002 Hz | 3.02 | -8.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeo%20PFE%20121%20Gray%20Filter/Audeo%20PFE%20121%20Gray%20Filter.png)

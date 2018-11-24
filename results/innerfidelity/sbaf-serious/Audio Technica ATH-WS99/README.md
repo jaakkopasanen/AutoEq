@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.4; 25 1.9; 28 1.2; 31 0.7; 34 0.3; 37 -0.1; 41 -0.5; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Audio Technica ATH-WS99 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-WS99 ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Audio Technica A
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.3dB.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -7.3dB.
 | Peaking | 670 Hz  | 0.98 | 10.4 dB |
 | Peaking | 3110 Hz | 1.46 | 11.5 dB |
 | Peaking | 6129 Hz | 4.36 | 7.1 dB  |
-| Peaking | 1619 Hz | 3.85 | -1.4 dB |
-| Peaking | 2591 Hz | 2.85 | 1.5 dB  |
-| Peaking | 3214 Hz | 3.08 | -3.8 dB |
-| Peaking | 4026 Hz | 1.9  | 4.2 dB  |
-| Peaking | 4740 Hz | 6.13 | -6.5 dB |
+| Peaking | 1620 Hz | 3.85 | -1.4 dB |
+| Peaking | 2592 Hz | 2.85 | 1.5 dB  |
+| Peaking | 3214 Hz | 3.07 | -3.8 dB |
+| Peaking | 4016 Hz | 1.9  | 4.2 dB  |
+| Peaking | 4745 Hz | 6.13 | -6.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-WS99/Audio%20Technica%20ATH-WS99.png)

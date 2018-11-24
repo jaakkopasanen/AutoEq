@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 2.9; 25 2.6; 28 2.1; 31 1.8; 34 1.5; 37 1.3; 41 1.2; 45 1.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--3.6dB` and instead set Global volume in the UI for both channels to **-35**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 800 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 800 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 80
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -3.0dB.
+When using independent subset of filters, apply preamp of **-3.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 12 Hz    | 0.24 | 3.2 dB  |
+| Peaking | 12 Hz    | 0.23 | 3.2 dB  |
 | Peaking | 192 Hz   | 0.55 | -3.9 dB |
-| Peaking | 6044 Hz  | 3.98 | -8.4 dB |
-| Peaking | 15495 Hz | 1.39 | -3.7 dB |
-| Peaking | 20291 Hz | 1.44 | -2.3 dB |
+| Peaking | 6041 Hz  | 3.98 | -8.4 dB |
+| Peaking | 15502 Hz | 1.39 | -3.7 dB |
+| Peaking | 20290 Hz | 1.44 | -2.3 dB |
 | Peaking | 1305 Hz  | 3.78 | 1.4 dB  |
-| Peaking | 2807 Hz  | 1.13 | 2.6 dB  |
-| Peaking | 4193 Hz  | 4.67 | -2.9 dB |
-| Peaking | 9466 Hz  | 5.09 | -6.0 dB |
-| Peaking | 11440 Hz | 2.72 | 2.3 dB  |
+| Peaking | 2805 Hz  | 1.13 | 2.6 dB  |
+| Peaking | 4161 Hz  | 4.7  | -2.9 dB |
+| Peaking | 9526 Hz  | 5.08 | -6.0 dB |
+| Peaking | 11488 Hz | 2.72 | 2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)

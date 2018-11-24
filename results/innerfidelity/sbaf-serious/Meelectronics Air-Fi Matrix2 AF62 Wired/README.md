@@ -9,28 +9,29 @@ GraphicEQ: 21 0.0; 23 5.4; 25 4.3; 28 2.9; 31 1.6; 34 0.5; 37 -0.4; 41 -1.3; 45 
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--7.3dB` and instead set Global volume in the UI for both channels to **-73**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Meelectronics Air-Fi Matrix2 AF62 Wired GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-73**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Meelectronics Air-Fi Matrix2 AF62 Wired ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -7.0dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 1.03 | 9.3 dB  |
-| Peaking | 51 Hz   | 0.39 | -4.0 dB |
-| Peaking | 447 Hz  | 0.69 | -2.3 dB |
+| Peaking | 20 Hz   | 1.04 | 9.2 dB  |
+| Peaking | 51 Hz   | 0.38 | -4.0 dB |
+| Peaking | 444 Hz  | 0.69 | -2.3 dB |
 | Peaking | 2382 Hz | 1.77 | 3.2 dB  |
-| Peaking | 4775 Hz | 1.71 | 5.7 dB  |
-| Peaking | 700 Hz  | 2.93 | -1.3 dB |
-| Peaking | 866 Hz  | 1.51 | 1.1 dB  |
-| Peaking | 1416 Hz | 4.34 | -0.8 dB |
-| Peaking | 6581 Hz | 6.13 | 3.8 dB  |
-| Peaking | 7830 Hz | 2.09 | -2.1 dB |
+| Peaking | 4776 Hz | 1.71 | 5.6 dB  |
+| Peaking | 691 Hz  | 2.67 | -1.3 dB |
+| Peaking | 893 Hz  | 1.04 | 1.1 dB  |
+| Peaking | 1400 Hz | 3.38 | -1.0 dB |
+| Peaking | 6585 Hz | 5.93 | 3.9 dB  |
+| Peaking | 7749 Hz | 1.98 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Meelectronics%20Air-Fi%20Matrix2%20AF62%20Wired/Meelectronics%20Air-Fi%20Matrix2%20AF62%20Wired.png)

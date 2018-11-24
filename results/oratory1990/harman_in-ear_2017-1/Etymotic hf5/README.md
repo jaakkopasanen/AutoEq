@@ -9,16 +9,17 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.9; 41 5.8; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Etymotic hf5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Etymotic hf5 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.1dB.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -27,10 +28,10 @@ When using independent subset of filters, apply preamp of -6.1dB.
 | Peaking | 1380 Hz  | 3.09 | -1.8 dB  |
 | Peaking | 4936 Hz  | 0.97 | 5.9 dB   |
 | Peaking | 15636 Hz | 2.87 | -18.9 dB |
-| Peaking | 4403 Hz  | 4.1  | -1.6 dB  |
-| Peaking | 6655 Hz  | 1.65 | 3.3 dB   |
-| Peaking | 7612 Hz  | 2.51 | -4.6 dB  |
-| Peaking | 12933 Hz | 3.43 | 4.5 dB   |
-| Peaking | 14377 Hz | 5.68 | -5.3 dB  |
+| Peaking | 4368 Hz  | 4.1  | -1.6 dB  |
+| Peaking | 6575 Hz  | 1.65 | 3.3 dB   |
+| Peaking | 7696 Hz  | 2.5  | -4.6 dB  |
+| Peaking | 13000 Hz | 3.43 | 4.5 dB   |
+| Peaking | 14451 Hz | 5.68 | -5.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Etymotic%20hf5/Etymotic%20hf5.png)

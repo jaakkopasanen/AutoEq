@@ -9,8 +9,9 @@ GraphicEQ: 21 -3.8; 23 -4.0; 25 -4.1; 28 -4.1; 31 -3.9; 34 -3.6; 37 -3.3; 41 -3.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-60**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Beyerdynamic DT 1770 (Leatherette Earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 1770 (Leatherette Earpads) ParametricEQ.txt`.
@@ -18,7 +19,7 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.6dB.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -28,9 +29,9 @@ When using independent subset of filters, apply preamp of -6.6dB.
 | Peaking | 8287 Hz  | 3.28 | -4.1 dB |
 | Peaking | 11416 Hz | 4.14 | -2.5 dB |
 | Peaking | 170 Hz   | 5.25 | -2.4 dB |
-| Peaking | 251 Hz   | 3.45 | 3.1 dB  |
-| Peaking | 4790 Hz  | 5.61 | 2.6 dB  |
-| Peaking | 6176 Hz  | 4.25 | -4.1 dB |
-| Peaking | 6844 Hz  | 6.74 | 3.4 dB  |
+| Peaking | 250 Hz   | 3.44 | 3.1 dB  |
+| Peaking | 4803 Hz  | 5.61 | 2.6 dB  |
+| Peaking | 6175 Hz  | 4.25 | -4.1 dB |
+| Peaking | 6811 Hz  | 6.74 | 3.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201770%20(Leatherette%20Earpads)/Beyerdynamic%20DT%201770%20(Leatherette%20Earpads).png)

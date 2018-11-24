@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Bedphones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bedphones ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Bedphones Parame
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 61 Hz   | 0.71 | -3.8 dB |
+| Peaking | 62 Hz   | 0.7  | -3.8 dB |
 | Peaking | 66 Hz   | 0.25 | 9.9 dB  |
-| Peaking | 311 Hz  | 0.68 | -2.9 dB |
-| Peaking | 2672 Hz | 2    | 5.6 dB  |
+| Peaking | 310 Hz  | 0.67 | -2.9 dB |
+| Peaking | 2673 Hz | 2    | 5.6 dB  |
 | Peaking | 4939 Hz | 1.57 | 6.1 dB  |
-| Peaking | 1838 Hz | 0.83 | -6.4 dB |
-| Peaking | 2081 Hz | 3.49 | 3.9 dB  |
-| Peaking | 2507 Hz | 0.36 | 4.1 dB  |
-| Peaking | 6350 Hz | 3.79 | 5.1 dB  |
-| Peaking | 6606 Hz | 1.14 | -4.8 dB |
+| Peaking | 162 Hz  | 5.46 | 1.1 dB  |
+| Peaking | 1495 Hz | 2.53 | -2.0 dB |
+| Peaking | 2139 Hz | 5.77 | 2.1 dB  |
+| Peaking | 6426 Hz | 4.58 | 3.5 dB  |
+| Peaking | 7516 Hz | 1.79 | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bedphones/Bedphones.png)

@@ -9,8 +9,9 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.7; 41 5.2; 45 5.
 ```
 
 ### HeSuVi
-In case of using HeSuVi, replace `C:\Program Files\EqualizerAPO\config\HeSuVi\eq.txt` and omit `Preamp:
--6.1dB` and instead set Global volume in the UI for both channels to **-61**
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Sennheiser HD 650 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 650 ParametricEQ.txt`.
@@ -18,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 65
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of -6.9dB.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 31 Hz    |  0.92 | 6.8 dB  |
+| Peaking | 31 Hz    |  0.93 | 6.8 dB  |
 | Peaking | 2021 Hz  |  3.02 | 2.0 dB  |
-| Peaking | 5265 Hz  |  1.32 | 3.4 dB  |
-| Peaking | 18572 Hz |  1.18 | -7.8 dB |
+| Peaking | 5266 Hz  |  1.32 | 3.4 dB  |
+| Peaking | 18571 Hz |  1.18 | -7.8 dB |
 | Peaking | 24000 Hz |  1.76 | 2.0 dB  |
-| Peaking | 63 Hz    |  2.49 | 1.9 dB  |
-| Peaking | 178 Hz   |  0.88 | -2.2 dB |
-| Peaking | 3129 Hz  |  5.66 | -1.2 dB |
-| Peaking | 4204 Hz  | 10.57 | 2.1 dB  |
-| Peaking | 12932 Hz |  5.34 | 1.2 dB  |
+| Peaking | 63 Hz    |  2.37 | 2.0 dB  |
+| Peaking | 180 Hz   |  0.9  | -2.3 dB |
+| Peaking | 3128 Hz  |  5.6  | -1.2 dB |
+| Peaking | 4197 Hz  | 10.38 | 2.0 dB  |
+| Peaking | 12887 Hz |  5.33 | 1.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
