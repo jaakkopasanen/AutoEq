@@ -154,7 +154,8 @@ class FrequencyResponse:
         file_path = os.path.abspath(file_path)
         name = os.path.split(file_path)[-1].split('.')[0]
 
-        df = pd.read_csv(file_path, sep=',', header=0)
+        f = open(file_path)
+        df = pd.read_csv(f, sep=',', header=0)
         frequency = list(df['frequency']) if 'frequency' in df else None
         raw = list(df['raw']) if 'raw' in df else None
         error = list(df['error']) if 'error' in df else None
@@ -164,6 +165,7 @@ class FrequencyResponse:
         equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
         equalized_smoothed = list(df['equalized_smoothed']) if 'equalized_smoothed' in df else None
         target = list(df['target']) if 'target' in df else None
+        f.close()
 
         return cls(
             name=name,
@@ -603,7 +605,7 @@ class FrequencyResponse:
             
             ### HeSuVi
             HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-            {model} GraphicEQ.txt to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+            `{model} GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
             Set volume attenuation in the Connection tab for both channels to **{i_preamp}**
             '''.format(
                 model=model,
@@ -669,7 +671,7 @@ class FrequencyResponse:
                     _s = 'When using independent subset of filters, apply preamp of {}, respectively.'
                     preamp_str = '-{g0:.1f}dB or -{g1:.1f}dB'.format(g0=max_gains[0], g1=max_gains[1])
                 if len(max_gains) == 2:
-                    _s = 'When using independent subset of filters, apply preamp of {}.'
+                    _s = 'When using independent subset of filters, apply preamp of **{}**.'
                     preamp_str = '-{:.1f}dB'.format(max_gains[0])
                 preamp_str = _s.format(preamp_str)
 

@@ -9,10 +9,7 @@ from frequency_response import FrequencyResponse
 def measurements_avg():
     stack = []
     for file in glob('data/*/*/*.csv'):
-        try:
-            stack.append(FrequencyResponse.read_from_csv(file).raw)
-        except:
-            continue
+        stack.append(FrequencyResponse.read_from_csv(file).raw)
     return FrequencyResponse(name='AVG', raw=np.mean(np.vstack(stack), axis=0))
 
 

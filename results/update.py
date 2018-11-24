@@ -106,6 +106,102 @@ def main():
         max_filters=[5, 5],
     )
 
+    # Rtings on-ear native
+    FrequencyResponse.main(
+        input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'onear'),
+        output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'rtings'),
+        compensation=os.path.join(ROOT_DIR, 'rtings', 'resources', 'rtings_compensation.csv'),
+        equalize=True,
+        parametric_eq=True,
+        max_filters=[5, 5],
+        bass_boost=4.0
+    )
+
+    # Rtings in-ear native
+    FrequencyResponse.main(
+        input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'inear'),
+        output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'rtings'),
+        compensation=os.path.join(ROOT_DIR, 'rtings', 'resources', 'rtings_compensation.csv'),
+        equalize=True,
+        parametric_eq=True,
+        max_filters=[5, 5],
+        iem_bass_boost=6.0
+    )
+
+    # Rtings earbud native
+    FrequencyResponse.main(
+        input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'earbud'),
+        output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'rtings'),
+        compensation=os.path.join(ROOT_DIR, 'rtings', 'resources', 'rtings_compensation.csv'),
+        equalize=True,
+        parametric_eq=True,
+        max_filters=[5, 5]
+    )
+
+    # Rtings on-ear SBAF Serious
+    FrequencyResponse.main(
+        input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'onear'),
+        output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'sbaf-serious'),
+        compensation=os.path.join(ROOT_DIR, 'rtings', 'resources', 'rtings_compensation_sbaf-serious.csv'),
+        equalize=True,
+        parametric_eq=True,
+        max_filters=[5, 5],
+        bass_boost=4.0
+    )
+
+    # Rtings in-ear SBAF Serious
+    FrequencyResponse.main(
+        input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'inear'),
+        output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'sbaf-serious'),
+        compensation=os.path.join(ROOT_DIR, 'rtings', 'resources', 'rtings_compensation_sbaf-serious.csv'),
+        equalize=True,
+        parametric_eq=True,
+        max_filters=[5, 5],
+        iem_bass_boost=6.0
+    )
+
+    # Rtings earbud SBAF Serious
+    FrequencyResponse.main(
+        input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'earbud'),
+        output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'sbaf-serious'),
+        compensation=os.path.join(ROOT_DIR, 'rtings', 'resources', 'rtings_compensation_sbaf-serious.csv'),
+        equalize=True,
+        parametric_eq=True,
+        max_filters=[5, 5]
+    )
+
+    # Rtings on-ear Avg
+    FrequencyResponse.main(
+        input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'onear'),
+        output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
+        compensation=os.path.join(ROOT_DIR, 'compensation', 'rtings_compensation_avg.csv'),
+        equalize=True,
+        parametric_eq=True,
+        max_filters=[5, 5],
+        bass_boost=4.0
+    )
+
+    # Rtings in-ear Avg
+    FrequencyResponse.main(
+        input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'inear'),
+        output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
+        compensation=os.path.join(ROOT_DIR, 'compensation', 'rtings_compensation_avg.csv'),
+        equalize=True,
+        parametric_eq=True,
+        max_filters=[5, 5],
+        iem_bass_boost=6.0
+    )
+
+    # Rtings earbud Avg
+    FrequencyResponse.main(
+        input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'earbud'),
+        output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
+        compensation=os.path.join(ROOT_DIR, 'compensation', 'rtings_compensation_avg.csv'),
+        equalize=True,
+        parametric_eq=True,
+        max_filters=[5, 5]
+    )
+
 
 if __name__ == '__main__':
     main()
