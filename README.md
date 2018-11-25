@@ -498,9 +498,13 @@ Contributions are more than welcome.
 - Rtings measurements
     - Update results section
 - New oratory1990 measurements
+- Rtings in server
+  - Calibrations to Headphone.com
+  - Compensation functions
 - Crinacle measurements for IEMs
     - Target response for old measurements
     - Full pipeline for new measurements
+- Usound target
 - Impulse responses
 - Head-fi measurements
     - Full pipeline
