@@ -46,6 +46,8 @@ def main():
     urls = dict()
     # Get links to Headphone.com results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('headphonecom', 'sbaf-serious', '*')))))
+    # Get links to Rtings results
+    urls.update(get_urls(glob(os.path.abspath(os.path.join('rtings', 'rtings', '*')))))
     # Get links to Innerfidelity results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('innerfidelity', 'sbaf-serious', '*')))))
     # Get links to oratory1990 results
@@ -56,9 +58,17 @@ def main():
 
     with open('README.md', 'w') as f:
         keys = sorted(urls.keys())
-        s = '# Recommended Results\n'
+        s = '''# Recommended Results
+        This is a list of recommended results. Results for other measurements are available for many headphones, these
+        can be found in the sub-folders. Folders are arranged by source/target/headphone.
+        
+        Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com. This means if there are
+        measurements from multiple sources for the same headphone model only the highest priority result will be shown
+        in this list.
+        
+        '''
         s += '\n'.join([urls[key] for key in keys])
-        f.write(s)
+        f.write(re.sub('\n[ \t]+', '\n', s).strip())
 
 
 if __name__ == '__main__':
