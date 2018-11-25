@@ -20,7 +20,17 @@ function toName(str) {
     str = str.trim();
     return str
 }
-groups = document.getElementsByClassName('tree-node');
+//groups = document.getElementsByClassName('tree-node');
+
+uls = document.getElementsByClassName('silo_reviews_page e-page')[0].children[1].children;
+groups = [];
+for (let i = 0; i < uls.length; ++i) {
+	let lis = uls[i].children;
+    for (let j = 0; j < lis.length; ++j) {
+        groups.push(lis[j]);
+    }
+}
+
 results = {};
 for (let i = 0; i < groups.length; ++i) {
     manufacturer = groups[i].children[0].innerHTML;

@@ -497,7 +497,6 @@ Contributions are more than welcome.
 
 - Rtings measurements
     - Update results section
-    - Update recommendations
 - New oratory1990 measurements
 - Crinacle measurements for IEMs
     - Target response for old measurements
