@@ -222,7 +222,6 @@ in this list.
 - [Beyerdynamic DT 1770 (Leatherette Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201770%20(Leatherette%20Earpads))
 - [Beyerdynamic DT 1770 (Velours Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201770%20(Velours%20Earpads))
 - [Beyerdynamic DT 1770 PRO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/rtings/Beyerdynamic%20DT%201770%20PRO)
-- [Beyerdynamic DT 1990](https://github.com/jaakkopasanen/AutoEq/tree/master/results/custom/Beyerdynamic%20DT%201990)
 - [Beyerdynamic DT 1990 PRO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/rtings/Beyerdynamic%20DT%201990%20PRO)
 - [Beyerdynamic DT 231](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20231)
 - [Beyerdynamic DT 235](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20235)
