@@ -47,7 +47,7 @@ def main():
     # Get links to Headphone.com results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('headphonecom', 'sbaf-serious', '*')))))
     # Get links to Rtings results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join('rtings', 'rtings', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join('rtings', 'avg', '*')))))
     # Get links to Innerfidelity results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('innerfidelity', 'sbaf-serious', '*')))))
     # Get links to oratory1990 results
