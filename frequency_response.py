@@ -1132,6 +1132,8 @@ class FrequencyResponse:
         arg_parser.add_argument('--output_dir', type=str, default=argparse.SUPPRESS,
                                 help='Path to results directory. Will keep the same relative paths for files found'
                                      'in input_dir.')
+        arg_parser.add_argument('--new_only', action='store_true',
+                                help='Only process input files which don\'t have results in output directory.')
         arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
                                 help='File path to CSV containing calibration data. Needed when using target responses'
                                      'not developed for the source measurement system. See `calibration` directory.')
@@ -1309,6 +1311,7 @@ class FrequencyResponse:
     @staticmethod
     def main(input_dir=None,
              output_dir=None,
+             new_only=False,
              calibration=None,
              compensation=None,
              equalize=False,
@@ -1348,9 +1351,17 @@ class FrequencyResponse:
             compensation.center()
 
         n = 0
-        for file_path in glob_files:
+        for input_file_path in glob_files:
+            if output_dir:
+                relative_path = os.path.relpath(input_file_path, input_dir)
+                output_file_path = os.path.join(output_dir, relative_path)
+                if os.path.isfile(output_file_path) and new_only:
+                    # Skip file for which result already exists
+                    continue
+                output_dir_path = os.path.dirname(output_file_path)
+
             # Read data from input file
-            fr = FrequencyResponse.read_from_csv(file_path)
+            fr = FrequencyResponse.read_from_csv(input_file_path)
 
             # Process and equalize
             filters, n_filters, max_gains = fr.process(
@@ -1371,30 +1382,27 @@ class FrequencyResponse:
 
             if output_dir:
                 # Copy relative path to output directory
-                relative_path = os.path.relpath(file_path, input_dir)
-                file_path = os.path.join(output_dir, relative_path)
-                dir_path = os.path.dirname(file_path)
-                if not os.path.isdir(dir_path):
-                    os.makedirs(dir_path, exist_ok=True)
+                if not os.path.isdir(output_dir_path):
+                    os.makedirs(output_dir_path, exist_ok=True)
 
                 if equalize:
                     # Write EqualizerAPO GraphicEq settings to file
-                    fr.write_eqapo_graphic_eq(file_path.replace('.csv', ' GraphicEQ.txt'))
+                    fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'))
                     if parametric_eq:
                         # Write ParametricEq settings to file
-                        fr.write_eqapo_parametric_eq(file_path.replace('.csv', ' ParametricEQ.txt'), filters)
+                        fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), filters)
 
                 # Write results to CSV file
-                fr.write_to_csv(file_path)
+                fr.write_to_csv(output_file_path)
                 # Write plots to file and optionally display them
                 fig, ax = fr.plot_graph(
                     show=show_plot,
-                    file_path=file_path.replace('.csv', '.png'),
+                    file_path=output_file_path.replace('.csv', '.png'),
                 )
                 plt.close(fig)
 
                 # Write README.md
-                _readme_path = os.path.join(dir_path, 'README.md')
+                _readme_path = os.path.join(output_dir_path, 'README.md')
                 fr.write_readme(
                     _readme_path,
                     write_graphic_eq=equalize,
