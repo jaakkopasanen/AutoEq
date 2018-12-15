@@ -19,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Koss QZPro Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.8dB**.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 42 Hz   | 0.5  | 9.9 dB  |
-| Peaking | 87 Hz   | 0.71 | -8.0 dB |
-| Peaking | 1019 Hz | 0.05 | -1.3 dB |
-| Peaking | 2390 Hz | 0.87 | 7.2 dB  |
-| Peaking | 5238 Hz | 1.59 | 5.7 dB  |
-| Peaking | 824 Hz  | 2.81 | 3.4 dB  |
-| Peaking | 1158 Hz | 1.16 | -2.8 dB |
-| Peaking | 1642 Hz | 3.18 | 2.8 dB  |
-| Peaking | 6434 Hz | 6.49 | 2.2 dB  |
-| Peaking | 7649 Hz | 3.58 | -1.7 dB |
+| Peaking | 43 Hz   | 0.49 | 10.4 dB |
+| Peaking | 86 Hz   | 0.69 | -8.5 dB |
+| Peaking | 953 Hz  | 0.04 | -1.2 dB |
+| Peaking | 2384 Hz | 0.87 | 7.2 dB  |
+| Peaking | 5243 Hz | 1.59 | 5.7 dB  |
+| Peaking | 814 Hz  | 2.84 | 3.3 dB  |
+| Peaking | 1153 Hz | 1.21 | -2.7 dB |
+| Peaking | 1668 Hz | 3.25 | 2.7 dB  |
+| Peaking | 6464 Hz | 6.61 | 2.2 dB  |
+| Peaking | 7692 Hz | 3.76 | -1.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Koss%20QZPro/Koss%20QZPro.png)

@@ -24,14 +24,14 @@ When using independent subset of filters, apply preamp of **-6.8dB**.
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 12 Hz   | 0.1  | 4.8 dB  |
-| Peaking | 254 Hz  | 1.68 | 4.3 dB  |
-| Peaking | 1543 Hz | 3.28 | 3.4 dB  |
-| Peaking | 2745 Hz | 1.46 | 5.7 dB  |
-| Peaking | 5451 Hz | 2.35 | 5.8 dB  |
-| Peaking | 31 Hz   | 0.37 | 2.0 dB  |
-| Peaking | 50 Hz   | 1.15 | -2.9 dB |
-| Peaking | 360 Hz  | 4.54 | 1.5 dB  |
-| Peaking | 599 Hz  | 2.29 | -2.7 dB |
-| Peaking | 8338 Hz | 4.32 | -1.4 dB |
+| Peaking | 255 Hz  | 1.69 | 4.3 dB  |
+| Peaking | 1542 Hz | 3.28 | 3.4 dB  |
+| Peaking | 2746 Hz | 1.46 | 5.7 dB  |
+| Peaking | 5450 Hz | 2.35 | 5.8 dB  |
+| Peaking | 33 Hz   | 0.36 | 2.0 dB  |
+| Peaking | 50 Hz   | 1.15 | -3.0 dB |
+| Peaking | 360 Hz  | 4.53 | 1.5 dB  |
+| Peaking | 599 Hz  | 2.3  | -2.7 dB |
+| Peaking | 8339 Hz | 4.31 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Skullcandy%20Crusher/Skullcandy%20Crusher.png)

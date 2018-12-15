@@ -64,7 +64,7 @@ def parse_image(im, model, px_top=800, px_bottom=4400, px_left=0, px_right=2500)
                 pxs.append(float(y))
             else:
                 p = im.getpixel((x, y))
-                pix[x, y] = (int(0.9 * p[0]), int(255 * 0.1 + 0.9 * p[1]), int(0 + 0.9 * p[2]))
+                pix[x, y] = (int(0.3 * p[0]), int(255 * 0.7 + 0.3 * p[1]), int(0.3 * p[2]))
         if not pxs:
             # No graph pixels found on this column
             amplitude.append(None)

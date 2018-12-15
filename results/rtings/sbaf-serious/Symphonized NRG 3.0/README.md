@@ -1,1 +1,0 @@
-# Symphonized NRG 3

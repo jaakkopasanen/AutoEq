@@ -25,13 +25,13 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 |:--------|:---------|:------|:--------|
 | Peaking | 36 Hz    |  0.29 | -9.5 dB |
 | Peaking | 465 Hz   |  2.79 | -4.2 dB |
-| Peaking | 1414 Hz  |  3.15 | 4.5 dB  |
-| Peaking | 2158 Hz  |  1.57 | 5.9 dB  |
-| Peaking | 19725 Hz |  2.53 | -2.3 dB |
-| Peaking | 246 Hz   |  3.92 | 0.9 dB  |
-| Peaking | 934 Hz   |  6.91 | -1.6 dB |
-| Peaking | 3321 Hz  | 11.17 | 5.1 dB  |
-| Peaking | 3863 Hz  | 10.11 | -5.7 dB |
-| Peaking | 5627 Hz  |  9.28 | 3.1 dB  |
+| Peaking | 1411 Hz  |  3.24 | 4.5 dB  |
+| Peaking | 2152 Hz  |  1.56 | 5.9 dB  |
+| Peaking | 19502 Hz |  2.64 | -2.4 dB |
+| Peaking | 248 Hz   |  3.87 | 0.9 dB  |
+| Peaking | 933 Hz   |  6.96 | -1.6 dB |
+| Peaking | 3332 Hz  | 11.18 | 5.1 dB  |
+| Peaking | 3877 Hz  | 10.1  | -5.7 dB |
+| Peaking | 5648 Hz  |  9.29 | 3.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Denon%20AH-GC20/Denon%20AH-GC20.png)

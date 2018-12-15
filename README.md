@@ -128,13 +128,14 @@ Headphone.com are at `innerfidelity/resources/innerfidelity_compensation_sbaf-se
 `headphonecom/resources/headphonecom_compensation_sbaf-serious.csv`, respectively.
 
 Rtings measured headphones have frequency response made for this project. This treble average target is using an average
-of frequency responses of all Rtings measured headphones in the treble range and the Rtings native response below 2500
-Hz without bass boost. Three different targets were compared in listening tests and the treble average target was found
-to sound the best. Other two were the Rtings native target curve and calibrated and uncalibrated versions of SBAF
-Serious target curve. Rtings uses the same measurement system as Innerfidelity uses so in theory the uncalibrated SBAF
-Serious target should work similarly with Rtings but listening tests found the treble average target to be slightly
-better. Rtings have [a very informative video](https://www.youtube.com/watch?v=HNEI3qLZEKo) about how they are doing
-the measurements and how did they came up with the target they use.
+of frequency responses of all Rtings measured headphones in the treble range with small manual reduction of the 9kHz
+peak and the Rtings native response below 2500 Hz without bass boost. Three different targets were compared in listening
+tests and the treble average target was found to sound the best. Other two were the Rtings native target curve and
+calibrated and uncalibrated versions of SBAF Serious target curve. Rtings uses the same measurement system as
+Innerfidelity uses so in theory the uncalibrated SBAF Serious target should work similarly with Rtings but listening
+tests found the treble average target to be slightly better. Rtings have
+[a very informative video](https://www.youtube.com/watch?v=HNEI3qLZEKo) about how they are doing the measurements and
+how did they came up with the target they use.
 
 Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
 reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
@@ -502,15 +503,16 @@ Contributions are more than welcome.
 
 - New oratory1990 measurements
 - Crinacle measurements for IEMs
-    - Target response for old measurements
     - Full pipeline for new measurements
+    - Target response for old measurements
 - Impulse responses
+- Fork as code only repo
 - Usound target
+- Full results index
+- Guide for WebPlotDigitizer
 - Rtings in server.py
   - Calibrations to Headphone.com
   - Compensation functions
-- Head-fi measurements
-    - Full pipeline
 - Reference audio analyzer measurements
     - Use compensated data directly
     - Full pipeline

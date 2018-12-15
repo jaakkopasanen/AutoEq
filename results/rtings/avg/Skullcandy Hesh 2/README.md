@@ -23,15 +23,15 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 0.83 | 5.8 dB  |
-| Peaking | 51 Hz   | 1.13 | 2.0 dB  |
+| Peaking | 20 Hz   | 0.82 | 5.8 dB  |
+| Peaking | 52 Hz   | 1.15 | 2.0 dB  |
 | Peaking | 136 Hz  | 1.16 | -2.5 dB |
-| Peaking | 374 Hz  | 1.27 | 7.0 dB  |
-| Peaking | 3491 Hz | 0.75 | 6.8 dB  |
-| Peaking | 542 Hz  | 4.19 | 3.2 dB  |
-| Peaking | 894 Hz  | 1    | -2.8 dB |
-| Peaking | 1676 Hz | 1.01 | 2.0 dB  |
-| Peaking | 5959 Hz | 2.23 | 7.1 dB  |
-| Peaking | 6496 Hz | 0.97 | -4.7 dB |
+| Peaking | 374 Hz  | 1.28 | 7.0 dB  |
+| Peaking | 3483 Hz | 0.75 | 6.8 dB  |
+| Peaking | 545 Hz  | 4.23 | 3.2 dB  |
+| Peaking | 903 Hz  | 1.04 | -2.7 dB |
+| Peaking | 1663 Hz | 1.04 | 1.9 dB  |
+| Peaking | 6008 Hz | 2.27 | 7.1 dB  |
+| Peaking | 6491 Hz | 0.98 | -4.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Skullcandy%20Hesh%202/Skullcandy%20Hesh%202.png)

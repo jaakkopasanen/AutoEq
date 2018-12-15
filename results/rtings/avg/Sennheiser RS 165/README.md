@@ -19,19 +19,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 16
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6dB**.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 23 Hz   | 2.2  | -2.1 dB |
-| Peaking | 136 Hz  | 1.58 | -3.8 dB |
-| Peaking | 250 Hz  | 4.84 | 1.7 dB  |
-| Peaking | 463 Hz  | 1.41 | 4.7 dB  |
-| Peaking | 3762 Hz | 1.49 | 6.4 dB  |
-| Peaking | 60 Hz   | 3.81 | 1.4 dB  |
-| Peaking | 740 Hz  | 4.31 | 1.5 dB  |
-| Peaking | 1449 Hz | 0.74 | -1.2 dB |
-| Peaking | 1737 Hz | 3.4  | 1.5 dB  |
-| Peaking | 2325 Hz | 4.03 | 1.4 dB  |
+| Peaking | 25 Hz   | 2.24 | -2.1 dB |
+| Peaking | 136 Hz  | 1.57 | -3.8 dB |
+| Peaking | 249 Hz  | 4.84 | 1.7 dB  |
+| Peaking | 464 Hz  | 1.41 | 4.7 dB  |
+| Peaking | 3762 Hz | 1.5  | 6.4 dB  |
+| Peaking | 58 Hz   | 3.65 | 1.5 dB  |
+| Peaking | 735 Hz  | 4.43 | 1.5 dB  |
+| Peaking | 1452 Hz | 0.76 | -1.2 dB |
+| Peaking | 1739 Hz | 3.35 | 1.5 dB  |
+| Peaking | 2323 Hz | 4.1  | 1.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sennheiser%20RS%20165/Sennheiser%20RS%20165.png)

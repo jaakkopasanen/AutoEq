@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-60**
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 202 II ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 23 Hz    | 3.05 | 4.3 dB  |
+| Peaking | 22 Hz    | 2.92 | 4.4 dB  |
 | Peaking | 343 Hz   | 1.57 | 4.9 dB  |
 | Peaking | 3372 Hz  | 1.47 | 8.0 dB  |
-| Peaking | 5239 Hz  | 0.28 | -4.4 dB |
-| Peaking | 5821 Hz  | 1.3  | 8.1 dB  |
-| Peaking | 68 Hz    | 2.43 | -1.8 dB |
-| Peaking | 107 Hz   | 1.3  | -3.4 dB |
-| Peaking | 252 Hz   | 3.52 | 2.0 dB  |
-| Peaking | 11307 Hz | 3.3  | 2.4 dB  |
-| Peaking | 13365 Hz | 4.57 | -4.0 dB |
+| Peaking | 5225 Hz  | 0.28 | -4.4 dB |
+| Peaking | 5819 Hz  | 1.3  | 8.1 dB  |
+| Peaking | 94 Hz    | 0.99 | -3.8 dB |
+| Peaking | 249 Hz   | 3.13 | 2.1 dB  |
+| Peaking | 11495 Hz | 2.62 | 4.8 dB  |
+| Peaking | 13299 Hz | 1.62 | -6.5 dB |
+| Peaking | 15720 Hz | 1.46 | 3.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sennheiser%20HD%20202%20II/Sennheiser%20HD%20202%20II.png)

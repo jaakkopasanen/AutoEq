@@ -23,15 +23,15 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 45 Hz    | 0.46 | 6.9 dB  |
+| Peaking | 44 Hz    | 0.46 | 6.9 dB  |
 | Peaking | 1873 Hz  | 1.71 | -4.0 dB |
-| Peaking | 4301 Hz  | 2.45 | -3.2 dB |
-| Peaking | 6302 Hz  | 3.92 | 5.1 dB  |
-| Peaking | 14969 Hz | 6.19 | -2.6 dB |
-| Peaking | 17 Hz    | 1.04 | 2.4 dB  |
-| Peaking | 40 Hz    | 0.95 | -1.4 dB |
-| Peaking | 95 Hz    | 1.55 | 2.6 dB  |
-| Peaking | 196 Hz   | 0.48 | -1.4 dB |
-| Peaking | 781 Hz   | 2.47 | 1.5 dB  |
+| Peaking | 4301 Hz  | 2.44 | -3.2 dB |
+| Peaking | 6300 Hz  | 3.93 | 5.2 dB  |
+| Peaking | 14931 Hz | 6.2  | -2.7 dB |
+| Peaking | 17 Hz    | 1.02 | 2.4 dB  |
+| Peaking | 42 Hz    | 0.96 | -1.4 dB |
+| Peaking | 96 Hz    | 1.54 | 2.7 dB  |
+| Peaking | 189 Hz   | 0.43 | -1.4 dB |
+| Peaking | 779 Hz   | 2.44 | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Etymotic%20hf5/Etymotic%20hf5.png)

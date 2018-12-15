@@ -24,14 +24,14 @@ When using independent subset of filters, apply preamp of **-6.4dB**.
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
 | Peaking | 18 Hz    |  0.92 | 5.3 dB  |
-| Peaking | 137 Hz   |  1.1  | -1.0 dB |
-| Peaking | 138 Hz   |  0.35 | -5.0 dB |
-| Peaking | 4335 Hz  |  3.55 | 6.4 dB  |
-| Peaking | 22877 Hz |  2.26 | 1.0 dB  |
-| Peaking | 1038 Hz  |  2    | 1.0 dB  |
+| Peaking | 136 Hz   |  0.34 | -5.0 dB |
+| Peaking | 137 Hz   |  1.17 | -0.9 dB |
+| Peaking | 4340 Hz  |  3.56 | 6.4 dB  |
+| Peaking | 22854 Hz |  2.26 | 1.1 dB  |
+| Peaking | 1038 Hz  |  2.02 | 1.0 dB  |
 | Peaking | 1959 Hz  |  2.65 | -3.1 dB |
-| Peaking | 2770 Hz  |  4.5  | 3.1 dB  |
-| Peaking | 5432 Hz  | 10.59 | -4.6 dB |
-| Peaking | 6545 Hz  |  7.25 | 4.4 dB  |
+| Peaking | 2766 Hz  |  4.47 | 3.1 dB  |
+| Peaking | 5454 Hz  | 10.59 | -4.7 dB |
+| Peaking | 6566 Hz  |  7.26 | 4.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Koss%20Porta%20Pro%20Wireless/Koss%20Porta%20Pro%20Wireless.png)

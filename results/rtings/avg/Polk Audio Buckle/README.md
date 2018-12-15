@@ -23,15 +23,15 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 32 Hz    | 0.99 | -2.6 dB |
-| Peaking | 444 Hz   | 4.31 | 1.5 dB  |
+| Peaking | 32 Hz    | 1.02 | -2.6 dB |
+| Peaking | 450 Hz   | 4.31 | 1.5 dB  |
 | Peaking | 856 Hz   | 3.24 | -2.1 dB |
 | Peaking | 2382 Hz  | 0.98 | 5.3 dB  |
 | Peaking | 5182 Hz  | 1.91 | 5.4 dB  |
-| Peaking | 290 Hz   | 1.74 | 1.5 dB  |
-| Peaking | 313 Hz   | 3.29 | -2.2 dB |
-| Peaking | 6482 Hz  | 5.37 | 3.0 dB  |
-| Peaking | 7519 Hz  | 2.32 | -2.0 dB |
+| Peaking | 286 Hz   | 1.89 | 1.5 dB  |
+| Peaking | 314 Hz   | 3.47 | -2.2 dB |
+| Peaking | 6489 Hz  | 5.37 | 3.0 dB  |
+| Peaking | 7520 Hz  | 2.32 | -2.0 dB |
 | Peaking | 10654 Hz | 1.37 | -0.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Polk%20Audio%20Buckle/Polk%20Audio%20Buckle.png)

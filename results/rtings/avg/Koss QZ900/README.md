@@ -23,15 +23,15 @@ When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 13 Hz    | 1.35 | -11.8 dB |
-| Peaking | 34 Hz    | 0.42 | -8.9 dB  |
-| Peaking | 151 Hz   | 0.63 | -8.0 dB  |
-| Peaking | 227 Hz   | 1.71 | -1.2 dB  |
-| Peaking | 1920 Hz  | 3.07 | -6.0 dB  |
-| Peaking | 2433 Hz  | 9.01 | 7.9 dB   |
-| Peaking | 2892 Hz  | 3.56 | -14.2 dB |
-| Peaking | 3621 Hz  | 1.45 | 6.4 dB   |
-| Peaking | 6326 Hz  | 7.2  | 5.3 dB   |
-| Peaking | 18699 Hz | 2.09 | -4.2 dB  |
+| Peaking | 12 Hz    | 1.3  | -11.8 dB |
+| Peaking | 33 Hz    | 0.4  | -9.0 dB  |
+| Peaking | 153 Hz   | 0.64 | -7.9 dB  |
+| Peaking | 227 Hz   | 1.74 | -1.2 dB  |
+| Peaking | 1919 Hz  | 3.09 | -6.0 dB  |
+| Peaking | 2426 Hz  | 8.98 | 7.8 dB   |
+| Peaking | 2882 Hz  | 3.64 | -13.9 dB |
+| Peaking | 3667 Hz  | 1.49 | 6.2 dB   |
+| Peaking | 6306 Hz  | 7.08 | 5.3 dB   |
+| Peaking | 18612 Hz | 2.1  | -4.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Koss%20QZ900/Koss%20QZ900.png)

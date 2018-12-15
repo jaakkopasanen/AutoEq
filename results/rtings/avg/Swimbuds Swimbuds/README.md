@@ -17,7 +17,7 @@ Set volume attenuation in the Connection tab for both channels to **-60**
 In case of using Peace, click *Import* in Peace GUI and select `Swimbuds Swimbuds ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 | Peaking | 629 Hz  | 1.19 | 2.8 dB  |
 | Peaking | 1223 Hz | 2.35 | -4.3 dB |
 | Peaking | 3195 Hz | 0.63 | 6.9 dB  |
-| Peaking | 2186 Hz | 3.64 | 1.3 dB  |
-| Peaking | 3146 Hz | 1.45 | -0.8 dB |
-| Peaking | 5229 Hz | 2.15 | 2.3 dB  |
-| Peaking | 6349 Hz | 3.33 | 4.7 dB  |
-| Peaking | 7124 Hz | 1.27 | -4.0 dB |
+| Peaking | 2184 Hz | 3.62 | 1.3 dB  |
+| Peaking | 3144 Hz | 1.45 | -0.8 dB |
+| Peaking | 5225 Hz | 2.16 | 2.2 dB  |
+| Peaking | 6353 Hz | 3.32 | 4.7 dB  |
+| Peaking | 7132 Hz | 1.26 | -4.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Swimbuds%20Swimbuds/Swimbuds%20Swimbuds.png)

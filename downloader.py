@@ -35,7 +35,7 @@ class Downloader:
                     del image_urls[key]
         self.image_urls = image_urls
 
-    def download_images(self, output_dir):
+    def download_images(self, output_dir, file_type='png'):
         """Downloads images to a directory."""
         output_dir = os.path.abspath(output_dir)
         for model, url in self.image_urls.items():
@@ -44,7 +44,7 @@ class Downloader:
                 warnings.warn('Failed to download image for "{model}" at "{url}"'.format(model=model, url=url))
                 continue
             try:
-                file_path = os.path.join(output_dir, '{}.png'.format(model))
+                file_path = os.path.join(output_dir, '{}.{}'.format(model, file_type))
                 with open(file_path, 'wb') as f:
                     r.raw.decode_content = True
                     shutil.copyfileobj(r.raw, f)
@@ -61,6 +61,7 @@ class Downloader:
         arg_parser.add_argument('--old_json_path', type=str, required=False, default='',
                                 help='Path to JSON file containing links already downloaded.')
         arg_parser.add_argument('--output_dir', type=str, required=True, help='Path to output directory.')
+        arg_parser.add_argument('--file_type', type=str, default='png', help='File type of the downloaded files.')
         cli_args = arg_parser.parse_args()
 
         json_path = os.path.abspath(cli_args.json_path)
@@ -74,7 +75,7 @@ class Downloader:
         downloader.read_json(json_path, old_file_path=old_json_path)
         if not os.path.isdir(output_dir):
             os.makedirs(output_dir, exist_ok=True)
-        downloader.download_images(output_dir)
+        downloader.download_images(output_dir, file_type=cli_args.file_type)
 
 
 if __name__ == '__main__':

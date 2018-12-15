@@ -17,7 +17,7 @@ Set volume attenuation in the Connection tab for both channels to **-60**
 In case of using Peace, click *Import* in Peace GUI and select `Sound Intone CX-05 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
@@ -28,9 +28,9 @@ When using independent subset of filters, apply preamp of **-6.8dB**.
 | Peaking | 2835 Hz | 1.04 | 6.2 dB  |
 | Peaking | 5415 Hz | 2.31 | 4.7 dB  |
 | Peaking | 195 Hz  | 2.16 | 0.5 dB  |
-| Peaking | 3018 Hz | 6.36 | -0.7 dB |
-| Peaking | 4171 Hz | 2.53 | 1.3 dB  |
-| Peaking | 6437 Hz | 4.52 | 4.3 dB  |
-| Peaking | 6798 Hz | 1.45 | -2.9 dB |
+| Peaking | 3016 Hz | 6.23 | -0.6 dB |
+| Peaking | 4122 Hz | 2.59 | 1.3 dB  |
+| Peaking | 6517 Hz | 4.51 | 4.3 dB  |
+| Peaking | 6706 Hz | 1.45 | -2.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sound%20Intone%20CX-05/Sound%20Intone%20CX-05.png)

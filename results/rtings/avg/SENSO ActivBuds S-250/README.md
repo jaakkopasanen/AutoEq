@@ -23,15 +23,15 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 15 Hz   | 0.94 | 1.8 dB   |
-| Peaking | 144 Hz  | 0.83 | -4.1 dB  |
-| Peaking | 295 Hz  | 0.46 | -14.5 dB |
-| Peaking | 1313 Hz | 1.2  | 7.2 dB   |
-| Peaking | 4063 Hz | 0.99 | 6.7 dB   |
-| Peaking | 1618 Hz | 5.03 | 3.3 dB   |
-| Peaking | 2053 Hz | 2.76 | -4.7 dB  |
-| Peaking | 2546 Hz | 3.05 | 4.0 dB   |
-| Peaking | 6119 Hz | 2.68 | 6.3 dB   |
-| Peaking | 6645 Hz | 1.1  | -4.1 dB  |
+| Peaking | 15 Hz   | 1.01 | 1.8 dB   |
+| Peaking | 145 Hz  | 0.83 | -4.2 dB  |
+| Peaking | 296 Hz  | 0.47 | -14.5 dB |
+| Peaking | 1315 Hz | 1.21 | 7.2 dB   |
+| Peaking | 4068 Hz | 0.99 | 6.7 dB   |
+| Peaking | 1620 Hz | 5.12 | 3.1 dB   |
+| Peaking | 2057 Hz | 2.91 | -4.6 dB  |
+| Peaking | 2542 Hz | 3.06 | 3.8 dB   |
+| Peaking | 6133 Hz | 2.7  | 6.2 dB   |
+| Peaking | 6628 Hz | 1.1  | -4.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/SENSO%20ActivBuds%20S-250/SENSO%20ActivBuds%20S-250.png)

@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-61**
 In case of using Peace, click *Import* in Peace GUI and select `Cowin E8 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 26 Hz   | 0.76 | 6.4 dB   |
-| Peaking | 130 Hz  | 1.26 | -3.2 dB  |
-| Peaking | 2037 Hz | 0.63 | 5.9 dB   |
-| Peaking | 4583 Hz | 1.92 | 5.4 dB   |
-| Peaking | 5463 Hz | 6.03 | -12.7 dB |
-| Peaking | 432 Hz  | 1.45 | 1.6 dB   |
-| Peaking | 788 Hz  | 1.41 | -3.3 dB  |
-| Peaking | 863 Hz  | 4.78 | 7.5 dB   |
-| Peaking | 1029 Hz | 4.3  | -3.6 dB  |
-| Peaking | 1372 Hz | 3.99 | 2.1 dB   |
+| Peaking | 129 Hz  | 1.26 | -3.2 dB  |
+| Peaking | 2041 Hz | 0.63 | 5.9 dB   |
+| Peaking | 4583 Hz | 1.91 | 5.4 dB   |
+| Peaking | 5478 Hz | 6.04 | -12.8 dB |
+| Peaking | 440 Hz  | 1.46 | 1.7 dB   |
+| Peaking | 817 Hz  | 1.37 | -3.5 dB  |
+| Peaking | 853 Hz  | 4.77 | 7.6 dB   |
+| Peaking | 1019 Hz | 4.5  | -3.4 dB  |
+| Peaking | 1383 Hz | 3.72 | 2.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Cowin%20E8/Cowin%20E8.png)

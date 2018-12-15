@@ -23,14 +23,14 @@ When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 14 Hz   |  0.5  | 6.7 dB  |
+| Peaking | 14 Hz   |  0.5  | 6.6 dB  |
 | Peaking | 152 Hz  |  0.8  | -2.6 dB |
-| Peaking | 468 Hz  |  1.54 | -2.0 dB |
-| Peaking | 900 Hz  |  4.51 | -5.0 dB |
+| Peaking | 465 Hz  |  1.54 | -2.0 dB |
+| Peaking | 901 Hz  |  4.51 | -5.0 dB |
 | Peaking | 2297 Hz |  0.41 | 6.7 dB  |
-| Peaking | 1119 Hz | 15.92 | 2.0 dB  |
-| Peaking | 2364 Hz |  2.57 | -1.0 dB |
-| Peaking | 6511 Hz |  1.3  | 6.0 dB  |
-| Peaking | 7748 Hz |  1.3  | -6.4 dB |
+| Peaking | 1126 Hz | 15.86 | 2.0 dB  |
+| Peaking | 2371 Hz |  2.63 | -1.0 dB |
+| Peaking | 6574 Hz |  1.33 | 6.1 dB  |
+| Peaking | 7698 Hz |  1.33 | -6.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Audio-Technica%20ATH-ANC7b/Audio-Technica%20ATH-ANC7b.png)

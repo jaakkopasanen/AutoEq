@@ -21,17 +21,17 @@ In case of using other parametric equalizer, apply preamp of **-6.2dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.2dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 27 Hz    | 0.51 | 7.4 dB  |
-| Peaking | 137 Hz   | 0.31 | -4.5 dB |
-| Peaking | 1825 Hz  | 1.29 | 4.0 dB  |
-| Peaking | 4250 Hz  | 3.63 | -2.8 dB |
-| Peaking | 6519 Hz  | 5.64 | 4.4 dB  |
-| Peaking | 276 Hz   | 1.41 | 1.3 dB  |
-| Peaking | 284 Hz   | 0.82 | -0.9 dB |
-| Peaking | 2810 Hz  | 6.76 | 1.2 dB  |
-| Peaking | 3339 Hz  | 7.5  | -1.0 dB |
-| Peaking | 19281 Hz | 2.07 | -5.5 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 28 Hz   | 0.5  | 7.4 dB  |
+| Peaking | 137 Hz  | 0.31 | -4.4 dB |
+| Peaking | 1831 Hz | 1.29 | 4.0 dB  |
+| Peaking | 4251 Hz | 3.61 | -2.8 dB |
+| Peaking | 6519 Hz | 5.63 | 4.4 dB  |
+| Peaking | 153 Hz  | 1.23 | -1.6 dB |
+| Peaking | 169 Hz  | 0.68 | 1.3 dB  |
+| Peaking | 513 Hz  | 2.49 | -0.5 dB |
+| Peaking | 2825 Hz | 8.16 | 1.2 dB  |
+| Peaking | 3376 Hz | 8.16 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sennheiser%20HD%20518/Sennheiser%20HD%20518.png)

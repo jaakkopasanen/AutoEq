@@ -25,13 +25,13 @@ When using independent subset of filters, apply preamp of **-6.8dB**.
 |:--------|:--------|:-----|:--------|
 | Peaking | 23 Hz   | 0.48 | 6.0 dB  |
 | Peaking | 126 Hz  | 0.59 | 1.5 dB  |
-| Peaking | 579 Hz  | 3.23 | 0.6 dB  |
+| Peaking | 579 Hz  | 3.21 | 0.6 dB  |
 | Peaking | 2314 Hz | 1.13 | 6.0 dB  |
 | Peaking | 4990 Hz | 1.6  | 5.4 dB  |
-| Peaking | 826 Hz  | 5.28 | 2.7 dB  |
+| Peaking | 833 Hz  | 5.26 | 2.7 dB  |
 | Peaking | 1072 Hz | 1.87 | -2.2 dB |
-| Peaking | 1665 Hz | 4.49 | 2.1 dB  |
-| Peaking | 6330 Hz | 4.58 | 3.4 dB  |
-| Peaking | 7599 Hz | 1.79 | -2.3 dB |
+| Peaking | 1664 Hz | 4.49 | 2.1 dB  |
+| Peaking | 6414 Hz | 4.58 | 3.4 dB  |
+| Peaking | 7573 Hz | 1.79 | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/AKG%20K44/AKG%20K44.png)

@@ -23,15 +23,15 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 33 Hz   | 1.83 | -3.5 dB |
-| Peaking | 135 Hz  | 1.18 | -1.3 dB |
-| Peaking | 222 Hz  | 2.57 | -0.2 dB |
+| Peaking | 32 Hz   | 1.87 | -3.5 dB |
+| Peaking | 137 Hz  | 1.18 | -1.3 dB |
+| Peaking | 223 Hz  | 2.52 | -0.2 dB |
 | Peaking | 476 Hz  | 1.52 | 2.2 dB  |
-| Peaking | 3240 Hz | 0.66 | 6.9 dB  |
-| Peaking | 1375 Hz | 2.99 | -4.5 dB |
-| Peaking | 1644 Hz | 2.49 | 4.2 dB  |
-| Peaking | 3204 Hz | 2.26 | -1.2 dB |
-| Peaking | 6237 Hz | 2.08 | 5.8 dB  |
-| Peaking | 7414 Hz | 1.44 | -4.7 dB |
+| Peaking | 3239 Hz | 0.66 | 6.9 dB  |
+| Peaking | 1371 Hz | 2.99 | -4.5 dB |
+| Peaking | 1648 Hz | 2.49 | 4.2 dB  |
+| Peaking | 3204 Hz | 2.27 | -1.2 dB |
+| Peaking | 6230 Hz | 2.08 | 5.8 dB  |
+| Peaking | 7420 Hz | 1.44 | -4.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Plane%20Quiet%20Platinum/Plane%20Quiet%20Platinum.png)

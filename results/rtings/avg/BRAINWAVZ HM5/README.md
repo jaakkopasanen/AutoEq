@@ -23,15 +23,15 @@ When using independent subset of filters, apply preamp of **-4.3dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 17 Hz    |  0.32 | 3.6 dB  |
-| Peaking | 64 Hz    |  0.78 | 2.7 dB  |
-| Peaking | 200 Hz   |  0.37 | -4.2 dB |
-| Peaking | 352 Hz   |  1.5  | 7.4 dB  |
+| Peaking | 17 Hz    |  0.34 | 3.5 dB  |
+| Peaking | 64 Hz    |  0.77 | 2.8 dB  |
+| Peaking | 201 Hz   |  0.37 | -4.2 dB |
+| Peaking | 355 Hz   |  1.49 | 7.4 dB  |
 | Peaking | 4185 Hz  |  1.97 | -4.0 dB |
-| Peaking | 1044 Hz  |  1.82 | 0.8 dB  |
-| Peaking | 1949 Hz  |  2.86 | -2.4 dB |
-| Peaking | 3139 Hz  | 10.45 | 2.4 dB  |
-| Peaking | 6952 Hz  | 11.9  | 3.9 dB  |
-| Peaking | 14291 Hz |  4.2  | -3.5 dB |
+| Peaking | 1054 Hz  |  1.93 | 0.8 dB  |
+| Peaking | 1948 Hz  |  2.85 | -2.3 dB |
+| Peaking | 3113 Hz  | 10.35 | 2.4 dB  |
+| Peaking | 6935 Hz  | 11.7  | 3.9 dB  |
+| Peaking | 14152 Hz |  4.22 | -3.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/BRAINWAVZ%20HM5/BRAINWAVZ%20HM5.png)

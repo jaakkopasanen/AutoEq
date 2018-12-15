@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-27**
 In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins P5 Wireless ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-3.2dB**.
+When using independent subset of filters, apply preamp of **-2.9dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 38 Hz    | 0.07 | -3.4 dB  |
-| Peaking | 549 Hz   | 1.02 | 5.0 dB   |
-| Peaking | 1698 Hz  | 2    | -5.6 dB  |
-| Peaking | 2454 Hz  | 1.79 | 3.4 dB   |
-| Peaking | 18407 Hz | 2.03 | -10.0 dB |
-| Peaking | 812 Hz   | 0.51 | -0.2 dB  |
-| Peaking | 3659 Hz  | 2.75 | 1.5 dB   |
-| Peaking | 4386 Hz  | 3.37 | -2.3 dB  |
-| Peaking | 6986 Hz  | 9.77 | 2.5 dB   |
-| Peaking | 14496 Hz | 3.58 | 1.7 dB   |
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 35 Hz    |  0.05 | -3.4 dB  |
+| Peaking | 547 Hz   |  0.98 | 5.0 dB   |
+| Peaking | 1680 Hz  |  2.01 | -5.6 dB  |
+| Peaking | 2484 Hz  |  1.76 | 3.4 dB   |
+| Peaking | 18406 Hz |  2.03 | -10.0 dB |
+| Peaking | 27 Hz    |  1.77 | -0.3 dB  |
+| Peaking | 3625 Hz  |  3.58 | 1.3 dB   |
+| Peaking | 4385 Hz  |  3.52 | -2.1 dB  |
+| Peaking | 6934 Hz  | 10.22 | 2.6 dB   |
+| Peaking | 14630 Hz |  3.57 | 1.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Bowers%20&%20Wilkins%20P5%20Wireless/Bowers%20&%20Wilkins%20P5%20Wireless.png)
