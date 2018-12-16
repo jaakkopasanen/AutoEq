@@ -501,15 +501,14 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- New oratory1990 measurements
 - Crinacle measurements for IEMs
     - Full pipeline for new measurements
     - Target response for old measurements
-- Impulse responses
 - Fork as code only repo
-- Usound target
 - Full results index
+- Impulse responses
 - Guide for WebPlotDigitizer
+- PulseEffects in usage
 - Rtings in server.py
   - Calibrations to Headphone.com
   - Compensation functions
