@@ -504,11 +504,11 @@ Contributions are more than welcome.
 - Crinacle measurements for IEMs
     - Full pipeline for new measurements
     - Target response for old measurements
-- Fork as code only repo
-- Full results index
-- Impulse responses
+    - Update results, recommendations and index
 - Guide for WebPlotDigitizer
 - PulseEffects in usage
+- Fork as code only repo
+- Impulse responses
 - Rtings in server.py
   - Calibrations to Headphone.com
   - Compensation functions
