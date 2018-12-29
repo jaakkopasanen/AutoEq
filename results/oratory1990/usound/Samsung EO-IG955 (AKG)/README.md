@@ -25,13 +25,13 @@ When using independent subset of filters, apply preamp of **--0.7dB**.
 |:--------|:---------|:-----|:---------|
 | Peaking | 62 Hz    | 0.32 | -5.8 dB  |
 | Peaking | 190 Hz   | 0.64 | -3.7 dB  |
-| Peaking | 3295 Hz  | 1.31 | -3.5 dB  |
+| Peaking | 3295 Hz  | 1.31 | -3.6 dB  |
 | Peaking | 8799 Hz  | 3.37 | -5.2 dB  |
 | Peaking | 15939 Hz | 1    | -15.0 dB |
 | Peaking | 862 Hz   | 2.54 | 1.3 dB   |
 | Peaking | 1485 Hz  | 2.72 | -0.8 dB  |
-| Peaking | 5333 Hz  | 5.73 | -2.4 dB  |
-| Peaking | 6602 Hz  | 4.11 | 3.8 dB   |
-| Peaking | 7745 Hz  | 6.99 | -2.6 dB  |
+| Peaking | 5394 Hz  | 5.84 | -2.4 dB  |
+| Peaking | 6664 Hz  | 4.16 | 3.8 dB   |
+| Peaking | 7832 Hz  | 7.05 | -2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Samsung%20EO-IG955%20(AKG)/Samsung%20EO-IG955%20(AKG).png)

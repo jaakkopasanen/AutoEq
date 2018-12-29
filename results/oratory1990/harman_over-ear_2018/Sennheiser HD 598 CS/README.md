@@ -17,7 +17,7 @@ Set volume attenuation in the Connection tab for both channels to **-60**
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 598 CS ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 | Peaking | 305 Hz   | 1.38 | 5.0 dB  |
 | Peaking | 2752 Hz  | 3.47 | 3.6 dB  |
 | Peaking | 5081 Hz  | 1.81 | 6.7 dB  |
-| Peaking | 1633 Hz  | 3.49 | 0.6 dB  |
-| Peaking | 4168 Hz  | 8.46 | 2.2 dB  |
-| Peaking | 6381 Hz  | 3.88 | 5.1 dB  |
-| Peaking | 6543 Hz  | 1.42 | -3.2 dB |
-| Peaking | 19741 Hz | 2.41 | -4.6 dB |
+| Peaking | 1738 Hz  | 2.18 | 1.0 dB  |
+| Peaking | 4140 Hz  | 5.97 | 1.8 dB  |
+| Peaking | 6392 Hz  | 4.86 | 3.5 dB  |
+| Peaking | 7331 Hz  | 2.46 | -1.4 dB |
+| Peaking | 15495 Hz | 0.01 | -0.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20598%20CS/Sennheiser%20HD%20598%20CS.png)

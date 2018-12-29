@@ -21,17 +21,17 @@ In case of using other parametric equalizer, apply preamp of **-7.2dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 15 Hz    | 1.18 | 9.1 dB  |
-| Peaking | 546 Hz   | 2.55 | 3.0 dB  |
-| Peaking | 3447 Hz  | 2.72 | 7.1 dB  |
-| Peaking | 6608 Hz  | 8.58 | 5.0 dB  |
-| Peaking | 12978 Hz | 2.26 | -7.5 dB |
-| Peaking | 71 Hz    | 2.27 | 0.6 dB  |
-| Peaking | 165 Hz   | 1.59 | -0.6 dB |
-| Peaking | 4079 Hz  | 9.97 | 2.3 dB  |
-| Peaking | 5212 Hz  | 5.56 | -2.6 dB |
-| Peaking | 9653 Hz  | 5.44 | 1.5 dB  |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 14 Hz    |  1.18 | 8.9 dB  |
+| Peaking | 546 Hz   |  2.55 | 3.0 dB  |
+| Peaking | 3447 Hz  |  2.72 | 7.1 dB  |
+| Peaking | 6595 Hz  |  8.22 | 4.9 dB  |
+| Peaking | 12975 Hz |  2.25 | -7.5 dB |
+| Peaking | 73 Hz    |  1.75 | 0.7 dB  |
+| Peaking | 168 Hz   |  1.56 | -0.7 dB |
+| Peaking | 4118 Hz  | 10.02 | 2.3 dB  |
+| Peaking | 5261 Hz  |  5.51 | -2.6 dB |
+| Peaking | 9681 Hz  |  5.42 | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Fostex%20TH-X00/Massdrop%20x%20Fostex%20TH-X00.png)

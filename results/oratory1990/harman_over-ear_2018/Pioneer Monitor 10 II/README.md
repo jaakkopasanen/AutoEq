@@ -25,13 +25,13 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 |:--------|:---------|:-----|:---------|
 | Peaking | 37 Hz    | 0.36 | 6.7 dB   |
 | Peaking | 278 Hz   | 0.69 | -8.7 dB  |
-| Peaking | 2285 Hz  | 2.76 | 3.9 dB   |
-| Peaking | 4443 Hz  | 0.76 | 6.6 dB   |
+| Peaking | 2284 Hz  | 2.76 | 3.9 dB   |
+| Peaking | 4441 Hz  | 0.76 | 6.6 dB   |
 | Peaking | 17768 Hz | 0.8  | -10.5 dB |
-| Peaking | 849 Hz   | 3.19 | 1.3 dB   |
-| Peaking | 1574 Hz  | 6.79 | -1.7 dB  |
-| Peaking | 6407 Hz  | 4.19 | 2.9 dB   |
-| Peaking | 7486 Hz  | 2.74 | -2.8 dB  |
-| Peaking | 12245 Hz | 4.76 | 3.2 dB   |
+| Peaking | 849 Hz   | 3.2  | 1.3 dB   |
+| Peaking | 1576 Hz  | 6.75 | -1.7 dB  |
+| Peaking | 6412 Hz  | 4.22 | 2.8 dB   |
+| Peaking | 7502 Hz  | 2.77 | -2.8 dB  |
+| Peaking | 12243 Hz | 4.77 | 3.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Pioneer%20Monitor%2010%20II/Pioneer%20Monitor%2010%20II.png)

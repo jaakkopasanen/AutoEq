@@ -24,14 +24,14 @@ When using independent subset of filters, apply preamp of **-6.2dB**.
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
 | Peaking | 29 Hz    |  0.37 | 6.1 dB  |
-| Peaking | 3475 Hz  |  1.04 | -6.3 dB |
-| Peaking | 5160 Hz  |  1.13 | 7.6 dB  |
-| Peaking | 11554 Hz |  3.21 | -4.7 dB |
-| Peaking | 18776 Hz |  0.82 | -8.2 dB |
-| Peaking | 731 Hz   |  4.39 | 0.3 dB  |
-| Peaking | 914 Hz   |  2.78 | 0.4 dB  |
-| Peaking | 1379 Hz  |  3.99 | -0.7 dB |
-| Peaking | 6633 Hz  | 10.85 | 2.1 dB  |
-| Peaking | 7644 Hz  |  6.4  | -1.4 dB |
+| Peaking | 3467 Hz  |  1.04 | -6.3 dB |
+| Peaking | 5169 Hz  |  1.13 | 7.6 dB  |
+| Peaking | 11519 Hz |  3.22 | -4.6 dB |
+| Peaking | 18896 Hz |  0.82 | -8.1 dB |
+| Peaking | 529 Hz   |  2.27 | -0.7 dB |
+| Peaking | 732 Hz   |  0.79 | 0.8 dB  |
+| Peaking | 1351 Hz  |  2.65 | -0.9 dB |
+| Peaking | 6607 Hz  | 10.94 | 2.1 dB  |
+| Peaking | 7630 Hz  |  5.84 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Audeze%20Sine/Audeze%20Sine.png)

@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 | Peaking | 2085 Hz  | 1.81 | 3.8 dB  |
 | Peaking | 3425 Hz  | 2.44 | 5.6 dB  |
 | Peaking | 24000 Hz | 2.22 | 0.5 dB  |
-| Peaking | 927 Hz   | 5.32 | -1.5 dB |
-| Peaking | 1584 Hz  | 0.26 | 0.2 dB  |
-| Peaking | 5610 Hz  | 8.33 | -4.6 dB |
-| Peaking | 6719 Hz  | 9.78 | 4.0 dB  |
-| Peaking | 19306 Hz | 1.46 | -3.7 dB |
+| Peaking | 919 Hz   | 5.32 | -1.5 dB |
+| Peaking | 1586 Hz  | 0.26 | 0.2 dB  |
+| Peaking | 5594 Hz  | 8.33 | -4.6 dB |
+| Peaking | 6699 Hz  | 9.77 | 4.0 dB  |
+| Peaking | 19348 Hz | 1.45 | -3.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/MrSpeakers%20Aeon%20Flow%20Closed/MrSpeakers%20Aeon%20Flow%20Closed.png)

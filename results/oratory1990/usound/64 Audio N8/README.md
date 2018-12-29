@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-5.2dB**.
 | Peaking | 1658 Hz  | 2.37 | -3.3 dB |
 | Peaking | 6163 Hz  | 4.08 | 5.2 dB  |
 | Peaking | 14872 Hz | 3.92 | -4.8 dB |
-| Peaking | 938 Hz   | 2.45 | 2.4 dB  |
-| Peaking | 966 Hz   | 1.27 | -1.4 dB |
-| Peaking | 2268 Hz  | 4.93 | -1.2 dB |
-| Peaking | 3410 Hz  | 2.36 | 1.9 dB  |
-| Peaking | 5058 Hz  | 8    | -1.6 dB |
+| Peaking | 940 Hz   | 2.45 | 2.4 dB  |
+| Peaking | 965 Hz   | 1.29 | -1.4 dB |
+| Peaking | 2270 Hz  | 4.93 | -1.2 dB |
+| Peaking | 3405 Hz  | 2.36 | 1.9 dB  |
+| Peaking | 5017 Hz  | 8    | -1.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/64%20Audio%20N8/64%20Audio%20N8.png)

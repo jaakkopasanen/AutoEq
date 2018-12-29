@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-61**
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 1770 (Velours Earpads) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 29 Hz   | 1.21 | -3.6 dB |
-| Peaking | 129 Hz  | 0.96 | -5.9 dB |
-| Peaking | 241 Hz  | 2.4  | 4.9 dB  |
+| Peaking | 29 Hz   | 1.2  | -3.5 dB |
+| Peaking | 129 Hz  | 0.95 | -5.9 dB |
+| Peaking | 242 Hz  | 2.4  | 4.8 dB  |
 | Peaking | 3507 Hz | 0.65 | 8.6 dB  |
-| Peaking | 6509 Hz | 1.28 | -8.8 dB |
+| Peaking | 6509 Hz | 1.29 | -8.8 dB |
 | Peaking | 1098 Hz | 2.56 | -1.6 dB |
 | Peaking | 1864 Hz | 3.72 | 2.2 dB  |
-| Peaking | 3467 Hz | 2.44 | -1.5 dB |
-| Peaking | 4496 Hz | 4.06 | 4.0 dB  |
-| Peaking | 5013 Hz | 5.66 | -3.5 dB |
+| Peaking | 3489 Hz | 2.44 | -1.5 dB |
+| Peaking | 4526 Hz | 4.06 | 4.0 dB  |
+| Peaking | 4978 Hz | 5.66 | -3.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201770%20(Velours%20Earpads)/Beyerdynamic%20DT%201770%20(Velours%20Earpads).png)

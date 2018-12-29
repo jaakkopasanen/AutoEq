@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-59**
 In case of using Peace, click *Import* in Peace GUI and select `KZ ZS10 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-4.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 44 Hz    | 0.27 | -6.6 dB  |
-| Peaking | 175 Hz   | 0.69 | -3.2 dB  |
-| Peaking | 2147 Hz  | 1.67 | -6.7 dB  |
-| Peaking | 3788 Hz  | 2.3  | -8.3 dB  |
-| Peaking | 4604 Hz  | 2.04 | 9.2 dB   |
-| Peaking | 862 Hz   | 3.1  | 1.5 dB   |
-| Peaking | 5402 Hz  | 8.34 | -5.6 dB  |
-| Peaking | 6209 Hz  | 3.37 | 5.6 dB   |
-| Peaking | 8102 Hz  | 5.29 | -5.2 dB  |
-| Peaking | 20799 Hz | 0.91 | -10.8 dB |
+| Peaking | 174 Hz   | 0.69 | -3.2 dB  |
+| Peaking | 2145 Hz  | 1.67 | -6.7 dB  |
+| Peaking | 3793 Hz  | 2.31 | -8.3 dB  |
+| Peaking | 4596 Hz  | 2.04 | 9.2 dB   |
+| Peaking | 863 Hz   | 3.1  | 1.6 dB   |
+| Peaking | 5400 Hz  | 8.48 | -5.5 dB  |
+| Peaking | 6199 Hz  | 3.42 | 5.6 dB   |
+| Peaking | 8055 Hz  | 5.32 | -5.2 dB  |
+| Peaking | 20994 Hz | 0.92 | -11.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/KZ%20ZS10/KZ%20ZS10.png)

@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-60**
 In case of using Peace, click *Import* in Peace GUI and select `Mee Audio Planamic IEM ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.8dB**.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 37 Hz   | 0.31 | -5.3 dB  |
-| Peaking | 133 Hz  | 0.76 | -4.4 dB  |
+| Peaking | 37 Hz   | 0.3  | -5.3 dB  |
+| Peaking | 133 Hz  | 0.76 | -4.3 dB  |
 | Peaking | 271 Hz  | 1.3  | -3.4 dB  |
-| Peaking | 3960 Hz | 1.06 | -12.2 dB |
-| Peaking | 5570 Hz | 1.98 | 13.9 dB  |
-| Peaking | 490 Hz  | 2.29 | -0.7 dB  |
-| Peaking | 912 Hz  | 1.58 | 1.7 dB   |
-| Peaking | 1553 Hz | 1.18 | -0.7 dB  |
-| Peaking | 6621 Hz | 8.82 | 1.7 dB   |
-| Peaking | 7645 Hz | 4.41 | -1.1 dB  |
+| Peaking | 3970 Hz | 1.06 | -12.4 dB |
+| Peaking | 5552 Hz | 1.97 | 14.0 dB  |
+| Peaking | 922 Hz  | 1.39 | 2.9 dB   |
+| Peaking | 1013 Hz | 0.6  | -1.6 dB  |
+| Peaking | 6516 Hz | 0.59 | 0.8 dB   |
+| Peaking | 6518 Hz | 6.52 | 2.9 dB   |
+| Peaking | 7056 Hz | 1.74 | -2.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Mee%20Audio%20Planamic%20IEM/Mee%20Audio%20Planamic%20IEM.png)

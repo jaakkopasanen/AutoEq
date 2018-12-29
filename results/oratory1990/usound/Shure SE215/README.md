@@ -21,17 +21,17 @@ In case of using other parametric equalizer, apply preamp of **-4.3dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-1.8dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 53 Hz    | 0.27 | -3.6 dB  |
-| Peaking | 180 Hz   | 0.62 | -4.3 dB  |
-| Peaking | 2155 Hz  | 2.44 | -3.7 dB  |
-| Peaking | 4938 Hz  | 4.31 | -11.8 dB |
-| Peaking | 5161 Hz  | 1.55 | 5.9 dB   |
-| Peaking | 821 Hz   | 3.62 | 1.2 dB   |
-| Peaking | 6587 Hz  | 7.16 | 3.1 dB   |
-| Peaking | 8438 Hz  | 5.28 | -2.6 dB  |
-| Peaking | 10054 Hz | 2.89 | 1.7 dB   |
-| Peaking | 10175 Hz | 1.43 | -1.7 dB  |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 53 Hz   | 0.27 | -3.7 dB  |
+| Peaking | 180 Hz  | 0.62 | -4.3 dB  |
+| Peaking | 2154 Hz | 2.44 | -3.7 dB  |
+| Peaking | 4948 Hz | 4.31 | -11.8 dB |
+| Peaking | 5143 Hz | 1.54 | 5.9 dB   |
+| Peaking | 821 Hz  | 3.59 | 1.2 dB   |
+| Peaking | 6581 Hz | 6.11 | 3.4 dB   |
+| Peaking | 7064 Hz | 3.55 | 0.7 dB   |
+| Peaking | 7531 Hz | 1.53 | -1.5 dB  |
+| Peaking | 8427 Hz | 7.29 | -2.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Shure%20SE215/Shure%20SE215.png)

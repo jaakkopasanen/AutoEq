@@ -23,14 +23,14 @@ When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 0.5  | 4.1 dB  |
-| Peaking | 59 Hz   | 0.94 | 1.5 dB  |
-| Peaking | 256 Hz  | 0.5  | -2.4 dB |
-| Peaking | 2584 Hz | 1.69 | 3.0 dB  |
-| Peaking | 4710 Hz | 2.05 | 5.5 dB  |
-| Peaking | 885 Hz  | 4.05 | 0.5 dB  |
+| Peaking | 20 Hz   | 0.49 | 4.1 dB  |
+| Peaking | 58 Hz   | 0.92 | 1.6 dB  |
+| Peaking | 255 Hz  | 0.51 | -2.4 dB |
+| Peaking | 2587 Hz | 1.69 | 3.0 dB  |
+| Peaking | 4714 Hz | 2.05 | 5.5 dB  |
+| Peaking | 887 Hz  | 4.21 | 0.5 dB  |
 | Peaking | 1307 Hz | 4.91 | -0.5 dB |
-| Peaking | 6276 Hz | 5.24 | 2.0 dB  |
-| Peaking | 7880 Hz | 3.1  | -2.3 dB |
+| Peaking | 6270 Hz | 5.28 | 2.0 dB  |
+| Peaking | 7873 Hz | 3.1  | -2.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Shure%20SE535/Shure%20SE535.png)

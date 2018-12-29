@@ -24,14 +24,14 @@ When using independent subset of filters, apply preamp of **-6.5dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 33 Hz    | 0.49 | 6.4 dB   |
-| Peaking | 2906 Hz  | 2.63 | -2.3 dB  |
-| Peaking | 6008 Hz  | 0.12 | 0.5 dB   |
-| Peaking | 6033 Hz  | 4.59 | -7.3 dB  |
-| Peaking | 19301 Hz | 1.13 | -11.8 dB |
+| Peaking | 2905 Hz  | 2.63 | -2.3 dB  |
+| Peaking | 6020 Hz  | 0.12 | 0.5 dB   |
+| Peaking | 6047 Hz  | 4.58 | -7.3 dB  |
+| Peaking | 19260 Hz | 1.13 | -11.8 dB |
 | Peaking | 81 Hz    | 4.49 | 1.5 dB   |
-| Peaking | 194 Hz   | 1.42 | -0.9 dB  |
-| Peaking | 12182 Hz | 5.22 | -2.1 dB  |
-| Peaking | 14530 Hz | 2.92 | 2.5 dB   |
-| Peaking | 17074 Hz | 3.62 | -2.0 dB  |
+| Peaking | 192 Hz   | 1.44 | -0.9 dB  |
+| Peaking | 12211 Hz | 5.11 | -2.2 dB  |
+| Peaking | 14545 Hz | 2.72 | 2.5 dB   |
+| Peaking | 17040 Hz | 3.66 | -1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20880%20250%20Ohm/Beyerdynamic%20DT880%20250%20Ohm.png)

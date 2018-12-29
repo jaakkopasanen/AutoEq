@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-0.1dB**.
 | Peaking | 222 Hz   | 0.59 | -5.2 dB  |
 | Peaking | 4847 Hz  | 2.95 | -9.0 dB  |
 | Peaking | 13002 Hz | 6.2  | -2.0 dB  |
-| Peaking | 13 Hz    | 0.26 | 0.2 dB   |
-| Peaking | 488 Hz   | 1.83 | -0.9 dB  |
-| Peaking | 1009 Hz  | 1.68 | 1.4 dB   |
+| Peaking | 12 Hz    | 0.32 | 0.2 dB   |
+| Peaking | 490 Hz   | 1.83 | -0.9 dB  |
+| Peaking | 1007 Hz  | 1.68 | 1.4 dB   |
 | Peaking | 3252 Hz  | 3.43 | -1.5 dB  |
-| Peaking | 6686 Hz  | 6.8  | 2.4 dB   |
+| Peaking | 6685 Hz  | 6.8  | 2.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Sennheiser%20IE%2080%20S/Sennheiser%20IE%2080%20S.png)

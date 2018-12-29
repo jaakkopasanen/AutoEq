@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-5.5dB**.
 | Peaking | 3346 Hz  | 1.08 | 6.7 dB   |
 | Peaking | 16225 Hz | 0.76 | -21.0 dB |
 | Peaking | 24000 Hz | 1.19 | -6.2 dB  |
-| Peaking | 1013 Hz  | 2.04 | 1.1 dB   |
-| Peaking | 4988 Hz  | 3.41 | 2.3 dB   |
-| Peaking | 6895 Hz  | 4.2  | -5.6 dB  |
-| Peaking | 12021 Hz | 3.78 | 3.6 dB   |
-| Peaking | 14433 Hz | 4.53 | -1.5 dB  |
+| Peaking | 1014 Hz  | 2.04 | 1.1 dB   |
+| Peaking | 4979 Hz  | 3.41 | 2.3 dB   |
+| Peaking | 6858 Hz  | 4.2  | -5.6 dB  |
+| Peaking | 11986 Hz | 3.78 | 3.6 dB   |
+| Peaking | 14344 Hz | 4.52 | -1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20Momentum%20In-Ear/Sennheiser%20Momentum%20In-Ear.png)

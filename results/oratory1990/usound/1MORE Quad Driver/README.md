@@ -24,14 +24,14 @@ When using independent subset of filters, apply preamp of **-2.5dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 15 Hz    | 0.78 | 4.1 dB   |
-| Peaking | 120 Hz   | 0.46 | -7.4 dB  |
-| Peaking | 319 Hz   | 0.84 | -3.6 dB  |
-| Peaking | 4263 Hz  | 5.39 | -2.8 dB  |
-| Peaking | 17867 Hz | 0.92 | -13.9 dB |
-| Peaking | 958 Hz   | 4.11 | 1.3 dB   |
-| Peaking | 2787 Hz  | 3.02 | -1.6 dB  |
-| Peaking | 6159 Hz  | 7.87 | 3.6 dB   |
-| Peaking | 10502 Hz | 1.91 | 3.5 dB   |
-| Peaking | 13667 Hz | 2.39 | -4.0 dB  |
+| Peaking | 122 Hz   | 0.46 | -7.4 dB  |
+| Peaking | 319 Hz   | 0.85 | -3.5 dB  |
+| Peaking | 4264 Hz  | 5.41 | -2.8 dB  |
+| Peaking | 17865 Hz | 0.92 | -13.9 dB |
+| Peaking | 955 Hz   | 4.02 | 1.3 dB   |
+| Peaking | 2789 Hz  | 3.02 | -1.6 dB  |
+| Peaking | 6206 Hz  | 7.87 | 3.6 dB   |
+| Peaking | 10470 Hz | 1.91 | 3.5 dB   |
+| Peaking | 13588 Hz | 2.39 | -4.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/1MORE%20Quad%20Driver/1MORE%20Quad%20Driver.png)

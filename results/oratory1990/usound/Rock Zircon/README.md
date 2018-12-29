@@ -29,9 +29,9 @@ When using independent subset of filters, apply preamp of **--0.5dB**.
 | Peaking | 6297 Hz  | 1.94 | -12.2 dB |
 | Peaking | 16882 Hz | 1.17 | -12.9 dB |
 | Peaking | 761 Hz   | 1.64 | 2.0 dB   |
-| Peaking | 1487 Hz  | 3.22 | -1.9 dB  |
-| Peaking | 8121 Hz  | 4.7  | -7.2 dB  |
-| Peaking | 10839 Hz | 1.45 | 6.4 dB   |
-| Peaking | 13861 Hz | 2.99 | -6.3 dB  |
+| Peaking | 1487 Hz  | 3.23 | -1.9 dB  |
+| Peaking | 8114 Hz  | 4.72 | -7.2 dB  |
+| Peaking | 10837 Hz | 1.46 | 6.4 dB   |
+| Peaking | 13856 Hz | 3    | -6.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Rock%20Zircon/Rock%20Zircon.png)

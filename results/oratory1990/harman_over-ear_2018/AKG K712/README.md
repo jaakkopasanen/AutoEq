@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-2.0dB**.
 | Peaking | 2111 Hz  | 2.02 | -10.4 dB |
 | Peaking | 5549 Hz  | 1.48 | -8.6 dB  |
 | Peaking | 18837 Hz | 1.27 | -10.3 dB |
-| Peaking | 20 Hz    | 2.08 | 1.3 dB   |
-| Peaking | 1252 Hz  | 8.08 | 1.4 dB   |
-| Peaking | 10323 Hz | 3.28 | 2.2 dB   |
-| Peaking | 12208 Hz | 3.67 | -4.0 dB  |
-| Peaking | 14509 Hz | 4.61 | 3.1 dB   |
+| Peaking | 17 Hz    | 2.07 | 1.3 dB   |
+| Peaking | 1238 Hz  | 8.13 | 1.4 dB   |
+| Peaking | 10328 Hz | 3.28 | 2.2 dB   |
+| Peaking | 12243 Hz | 3.65 | -4.0 dB  |
+| Peaking | 14615 Hz | 4.6  | 3.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20K712/AKG%20K712.png)

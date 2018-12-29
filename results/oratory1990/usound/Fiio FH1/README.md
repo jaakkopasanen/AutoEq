@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-6.2dB**.
 | Peaking | 4124 Hz | 6.14 | 5.7 dB  |
 | Peaking | 6251 Hz | 2.67 | 6.7 dB  |
 | Peaking | 8357 Hz | 4.06 | -8.7 dB |
-| Peaking | 22 Hz   | 1.44 | -1.2 dB |
-| Peaking | 45 Hz   | 1.29 | 1.1 dB  |
-| Peaking | 218 Hz  | 0.82 | -0.6 dB |
-| Peaking | 870 Hz  | 1.4  | 2.0 dB  |
+| Peaking | 24 Hz   | 1.41 | -1.1 dB |
+| Peaking | 44 Hz   | 1.19 | 1.1 dB  |
+| Peaking | 223 Hz  | 0.83 | -0.6 dB |
+| Peaking | 870 Hz  | 1.39 | 2.0 dB  |
 | Peaking | 1299 Hz | 3.25 | -1.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Fiio%20FH1/Fiio%20FH1.png)

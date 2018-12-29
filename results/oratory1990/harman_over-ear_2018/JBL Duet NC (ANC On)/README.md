@@ -17,20 +17,20 @@ Set volume attenuation in the Connection tab for both channels to **-61**
 In case of using Peace, click *Import* in Peace GUI and select `JBL Duet NC (ANC On) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 438 Hz   | 1.06 | 6.5 dB  |
-| Peaking | 2306 Hz  | 5.54 | 3.1 dB  |
-| Peaking | 3344 Hz  | 5.32 | 6.1 dB  |
-| Peaking | 23996 Hz | 2.27 | 1.1 dB  |
-| Peaking | 13 Hz    | 0.39 | -8.4 dB |
-| Peaking | 120 Hz   | 1.84 | -2.4 dB |
+| Peaking | 2305 Hz  | 5.62 | 3.1 dB  |
+| Peaking | 3346 Hz  | 5.38 | 6.2 dB  |
+| Peaking | 23995 Hz | 2.27 | 1.1 dB  |
+| Peaking | 12 Hz    | 0.37 | -8.7 dB |
+| Peaking | 119 Hz   | 1.82 | -2.4 dB |
 | Peaking | 1334 Hz  | 2.79 | -3.2 dB |
-| Peaking | 6917 Hz  | 2.18 | 4.6 dB  |
-| Peaking | 7859 Hz  | 3.99 | -5.9 dB |
+| Peaking | 6966 Hz  | 2.19 | 4.9 dB  |
+| Peaking | 7834 Hz  | 3.84 | -6.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/JBL%20Duet%20NC%20(ANC%20On)/JBL%20Duet%20NC%20(ANC%20On).png)

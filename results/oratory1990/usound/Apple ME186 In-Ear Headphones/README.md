@@ -29,9 +29,9 @@ When using independent subset of filters, apply preamp of **-5.6dB**.
 | Peaking | 5719 Hz  | 2.42 | 5.5 dB   |
 | Peaking | 20112 Hz | 2.21 | -10.8 dB |
 | Peaking | 886 Hz   | 3.84 | 0.7 dB   |
-| Peaking | 1323 Hz  | 4.76 | -0.6 dB  |
-| Peaking | 6624 Hz  | 7.74 | 2.1 dB   |
-| Peaking | 7676 Hz  | 2.62 | -1.4 dB  |
-| Peaking | 17690 Hz | 6.76 | 1.2 dB   |
+| Peaking | 1326 Hz  | 4.76 | -0.6 dB  |
+| Peaking | 6630 Hz  | 8.05 | 2.1 dB   |
+| Peaking | 7700 Hz  | 2.63 | -1.4 dB  |
+| Peaking | 17679 Hz | 7    | 1.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Apple%20ME186%20In-Ear%20Headphones/Apple%20ME186%20In-Ear%20Headphones.png)

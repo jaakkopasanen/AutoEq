@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-16**
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1000X ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 26 Hz    | 0.14 | -6.9 dB |
-| Peaking | 193 Hz   | 0.63 | -6.1 dB |
-| Peaking | 543 Hz   | 2.09 | -3.1 dB |
-| Peaking | 1885 Hz  | 3.07 | -7.5 dB |
+| Peaking | 26 Hz    | 0.13 | -6.9 dB |
+| Peaking | 193 Hz   | 0.63 | -6.0 dB |
+| Peaking | 542 Hz   | 2.09 | -3.1 dB |
+| Peaking | 1884 Hz  | 3.07 | -7.5 dB |
 | Peaking | 5146 Hz  | 1.1  | -8.8 dB |
-| Peaking | 716 Hz   | 9.84 | -3.5 dB |
-| Peaking | 1162 Hz  | 2.32 | 3.4 dB  |
-| Peaking | 1518 Hz  | 4.25 | -2.7 dB |
-| Peaking | 10072 Hz | 4.26 | 3.0 dB  |
-| Peaking | 12904 Hz | 3.74 | -6.9 dB |
+| Peaking | 710 Hz   | 9.75 | -3.5 dB |
+| Peaking | 1166 Hz  | 2.18 | 3.5 dB  |
+| Peaking | 1510 Hz  | 4.02 | -2.8 dB |
+| Peaking | 10072 Hz | 4.24 | 3.0 dB  |
+| Peaking | 12901 Hz | 3.73 | -6.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sony%20MDR-1000X/Sony%20MDR-1000X.png)

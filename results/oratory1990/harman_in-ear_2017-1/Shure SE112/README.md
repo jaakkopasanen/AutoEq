@@ -32,6 +32,6 @@ When using independent subset of filters, apply preamp of **-7.1dB**.
 | Peaking | 3743 Hz  | 5.81 | 2.6 dB  |
 | Peaking | 4565 Hz  | 5.11 | -6.0 dB |
 | Peaking | 5303 Hz  | 8.1  | 4.0 dB  |
-| Peaking | 14726 Hz | 3.95 | -5.2 dB |
+| Peaking | 14728 Hz | 3.95 | -5.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Shure%20SE112/Shure%20SE112.png)

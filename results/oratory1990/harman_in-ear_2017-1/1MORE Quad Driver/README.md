@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-50**
 In case of using Peace, click *Import* in Peace GUI and select `1MORE Quad Driver ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.6dB**.
+When using independent subset of filters, apply preamp of **-2.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 14 Hz    | 0.81 | 4.4 dB   |
-| Peaking | 119 Hz   | 0.46 | -7.6 dB  |
-| Peaking | 310 Hz   | 0.84 | -3.8 dB  |
-| Peaking | 8609 Hz  | 0.29 | 25.8 dB  |
-| Peaking | 16662 Hz | 0.33 | -46.6 dB |
-| Peaking | 4667 Hz  | 2.39 | -7.1 dB  |
-| Peaking | 5816 Hz  | 0.9  | 6.3 dB   |
-| Peaking | 7918 Hz  | 2.15 | -6.4 dB  |
-| Peaking | 11461 Hz | 2.63 | 4.6 dB   |
-| Peaking | 14582 Hz | 3.61 | -6.1 dB  |
+| Peaking | 14 Hz    | 0.81 | 4.3 dB   |
+| Peaking | 118 Hz   | 0.46 | -7.6 dB  |
+| Peaking | 308 Hz   | 0.84 | -3.8 dB  |
+| Peaking | 8597 Hz  | 0.29 | 25.8 dB  |
+| Peaking | 16679 Hz | 0.33 | -46.6 dB |
+| Peaking | 2251 Hz  | 2.5  | 0.8 dB   |
+| Peaking | 7771 Hz  | 6.74 | -2.3 dB  |
+| Peaking | 8850 Hz  | 4.21 | -2.0 dB  |
+| Peaking | 11444 Hz | 2.33 | 5.0 dB   |
+| Peaking | 14602 Hz | 3.65 | -6.1 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/1MORE%20Quad%20Driver/1MORE%20Quad%20Driver.png)

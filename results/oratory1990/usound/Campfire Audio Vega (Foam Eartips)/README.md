@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 | Peaking | 162 Hz   | 0.52 | -6.3 dB |
 | Peaking | 3427 Hz  | 1.47 | 7.6 dB  |
 | Peaking | 8505 Hz  | 1.7  | -9.3 dB |
-| Peaking | 880 Hz   | 1.13 | 3.7 dB  |
-| Peaking | 1151 Hz  | 0.65 | -3.2 dB |
-| Peaking | 2499 Hz  | 3.16 | 2.3 dB  |
-| Peaking | 11128 Hz | 4.32 | -3.5 dB |
-| Peaking | 12114 Hz | 1.91 | 2.7 dB  |
+| Peaking | 884 Hz   | 1.12 | 3.8 dB  |
+| Peaking | 1142 Hz  | 0.65 | -3.3 dB |
+| Peaking | 2496 Hz  | 3.17 | 2.3 dB  |
+| Peaking | 11043 Hz | 4.34 | -3.5 dB |
+| Peaking | 12205 Hz | 1.92 | 2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Campfire%20Audio%20Vega%20(Foam%20Eartips)/Campfire%20Audio%20Vega%20(Foam%20Eartips).png)

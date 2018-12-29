@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-5.4dB**.
 | Peaking | 6620 Hz  | 4.02 | -5.0 dB |
 | Peaking | 13048 Hz | 3.88 | -6.1 dB |
 | Peaking | 18695 Hz | 0.92 | -9.4 dB |
-| Peaking | 33 Hz    | 2    | -2.0 dB |
-| Peaking | 123 Hz   | 3.75 | -2.7 dB |
-| Peaking | 210 Hz   | 3.6  | 3.2 dB  |
-| Peaking | 2371 Hz  | 6.67 | -1.5 dB |
+| Peaking | 33 Hz    | 2    | -2.1 dB |
+| Peaking | 122 Hz   | 3.75 | -2.7 dB |
+| Peaking | 209 Hz   | 3.6  | 3.2 dB  |
+| Peaking | 2372 Hz  | 6.66 | -1.5 dB |
 | Peaking | 4927 Hz  | 5.05 | 0.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm%20(old%20earpads)/Beyerdynamic%20DT%20770%20250%20Ohm%20(old%20earpads).png)

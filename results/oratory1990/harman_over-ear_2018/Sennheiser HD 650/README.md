@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 | Peaking | 5266 Hz  |  1.32 | 3.4 dB  |
 | Peaking | 18571 Hz |  1.18 | -7.8 dB |
 | Peaking | 24000 Hz |  1.76 | 2.0 dB  |
-| Peaking | 63 Hz    |  2.37 | 2.0 dB  |
-| Peaking | 180 Hz   |  0.9  | -2.3 dB |
-| Peaking | 3128 Hz  |  5.6  | -1.2 dB |
-| Peaking | 4197 Hz  | 10.38 | 2.0 dB  |
-| Peaking | 12887 Hz |  5.33 | 1.2 dB  |
+| Peaking | 62 Hz    |  2.42 | 2.0 dB  |
+| Peaking | 178 Hz   |  0.89 | -2.3 dB |
+| Peaking | 3134 Hz  |  5.73 | -1.2 dB |
+| Peaking | 4222 Hz  | 10.86 | 2.1 dB  |
+| Peaking | 12861 Hz |  5.34 | 1.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)

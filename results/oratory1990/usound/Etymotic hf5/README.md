@@ -27,9 +27,9 @@ When using independent subset of filters, apply preamp of **-6.7dB**.
 | Peaking | 866 Hz  | 1.95 | 1.2 dB  |
 | Peaking | 1386 Hz | 1.5  | -2.0 dB |
 | Peaking | 5641 Hz | 2.59 | 6.6 dB  |
-| Peaking | 35 Hz   | 1.99 | -0.4 dB |
-| Peaking | 72 Hz   | 2.7  | 0.4 dB  |
-| Peaking | 6608 Hz | 7.63 | 2.1 dB  |
-| Peaking | 7786 Hz | 2.43 | -1.4 dB |
+| Peaking | 30 Hz   | 2.21 | -0.2 dB |
+| Peaking | 73 Hz   | 2.56 | 0.4 dB  |
+| Peaking | 6582 Hz | 7.62 | 2.1 dB  |
+| Peaking | 7769 Hz | 2.44 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Etymotic%20hf5/Etymotic%20hf5.png)

@@ -23,15 +23,15 @@ When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 72 Hz    | 0.33 | -4.7 dB  |
-| Peaking | 1977 Hz  | 1.89 | -4.9 dB  |
-| Peaking | 4391 Hz  | 6.05 | 7.8 dB   |
-| Peaking | 6733 Hz  | 6.74 | -4.9 dB  |
+| Peaking | 71 Hz    | 0.33 | -4.7 dB  |
+| Peaking | 1978 Hz  | 1.89 | -4.9 dB  |
+| Peaking | 4390 Hz  | 6.05 | 7.8 dB   |
+| Peaking | 6732 Hz  | 6.74 | -4.9 dB  |
 | Peaking | 12336 Hz | 2.27 | -10.0 dB |
-| Peaking | 188 Hz   | 2.79 | -1.0 dB  |
-| Peaking | 687 Hz   | 1.6  | 1.4 dB   |
-| Peaking | 8947 Hz  | 2.93 | 5.8 dB   |
-| Peaking | 9491 Hz  | 1.26 | -3.2 dB  |
-| Peaking | 16709 Hz | 3.87 | 1.7 dB   |
+| Peaking | 189 Hz   | 2.78 | -1.0 dB  |
+| Peaking | 688 Hz   | 1.6  | 1.4 dB   |
+| Peaking | 8798 Hz  | 3.05 | 5.2 dB   |
+| Peaking | 9722 Hz  | 1.16 | -2.7 dB  |
+| Peaking | 16736 Hz | 3.7  | 1.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/KZ%20ZST/KZ%20ZST.png)

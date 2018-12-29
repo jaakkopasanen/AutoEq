@@ -23,15 +23,15 @@ When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 23 Hz    | 0.65 | 6.0 dB  |
-| Peaking | 58 Hz    | 1.15 | 1.2 dB  |
-| Peaking | 240 Hz   | 0.55 | -2.6 dB |
-| Peaking | 2122 Hz  | 1.57 | 4.1 dB  |
-| Peaking | 3833 Hz  | 3.4  | 1.5 dB  |
-| Peaking | 453 Hz   | 4.36 | -0.3 dB |
-| Peaking | 5193 Hz  | 5.28 | -3.2 dB |
-| Peaking | 6448 Hz  | 2.54 | 4.6 dB  |
-| Peaking | 7822 Hz  | 5.6  | -3.6 dB |
-| Peaking | 22166 Hz | 0.1  | -1.8 dB |
+| Peaking | 23 Hz    | 0.66 | 6.0 dB  |
+| Peaking | 57 Hz    | 1.12 | 1.2 dB  |
+| Peaking | 241 Hz   | 0.54 | -2.6 dB |
+| Peaking | 2119 Hz  | 1.57 | 4.1 dB  |
+| Peaking | 3829 Hz  | 3.37 | 1.5 dB  |
+| Peaking | 842 Hz   | 6.39 | 0.8 dB  |
+| Peaking | 5227 Hz  | 5.27 | -3.2 dB |
+| Peaking | 6439 Hz  | 2.54 | 4.6 dB  |
+| Peaking | 7840 Hz  | 5.59 | -3.6 dB |
+| Peaking | 22286 Hz | 0.09 | -1.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Tin%20Audio%20T2/Tin%20Audio%20T2.png)

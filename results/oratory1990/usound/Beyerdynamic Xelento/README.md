@@ -23,14 +23,14 @@ When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 41 Hz   | 0.26 | -6.1 dB |
-| Peaking | 201 Hz  | 0.91 | -2.7 dB |
-| Peaking | 6454 Hz | 7.06 | 6.9 dB  |
-| Peaking | 8922 Hz | 2.81 | -3.8 dB |
-| Peaking | 17 Hz   | 0.87 | -2.4 dB |
-| Peaking | 854 Hz  | 3.16 | 0.8 dB  |
-| Peaking | 1428 Hz | 2.71 | -1.5 dB |
-| Peaking | 3865 Hz | 1.07 | 2.4 dB  |
-| Peaking | 5152 Hz | 5.65 | -6.1 dB |
+| Peaking | 43 Hz   | 0.27 | -6.0 dB |
+| Peaking | 202 Hz  | 0.91 | -2.7 dB |
+| Peaking | 6463 Hz | 7.05 | 6.9 dB  |
+| Peaking | 8924 Hz | 2.81 | -3.8 dB |
+| Peaking | 16 Hz   | 0.84 | -2.7 dB |
+| Peaking | 855 Hz  | 3.13 | 0.8 dB  |
+| Peaking | 1427 Hz | 2.72 | -1.5 dB |
+| Peaking | 3848 Hz | 1.08 | 2.4 dB  |
+| Peaking | 5141 Hz | 5.7  | -6.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Beyerdynamic%20Xelento/Beyerdynamic%20Xelento.png)

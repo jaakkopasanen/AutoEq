@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 | Peaking | 3905 Hz  | 0.72 | 20.4 dB  |
 | Peaking | 5450 Hz  | 0.94 | -14.7 dB |
 | Peaking | 19064 Hz | 0.96 | -9.5 dB  |
-| Peaking | 20 Hz    | 1.92 | 1.8 dB   |
-| Peaking | 662 Hz   | 2.68 | 2.1 dB   |
-| Peaking | 840 Hz   | 0.98 | -1.4 dB  |
-| Peaking | 1305 Hz  | 4.51 | 1.7 dB   |
+| Peaking | 22 Hz    | 1.89 | 2.0 dB   |
+| Peaking | 663 Hz   | 2.7  | 2.1 dB   |
+| Peaking | 841 Hz   | 0.98 | -1.4 dB  |
+| Peaking | 1303 Hz  | 4.5  | 1.7 dB   |
 | Peaking | 23999 Hz | 1.82 | 0.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20K712%20(Dekoni%20Sheepskin%20Earpads)/AKG%20K712%20(Dekoni%20Sheepskin%20Earpads).png)

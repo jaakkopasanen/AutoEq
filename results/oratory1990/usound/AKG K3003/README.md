@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-6.5dB**.
 | Peaking | 339 Hz   | 0.99 | -2.4 dB |
 | Peaking | 4007 Hz  | 1.29 | 12.6 dB |
 | Peaking | 5511 Hz  | 0.92 | -9.1 dB |
-| Peaking | 2474 Hz  | 7.46 | 0.5 dB  |
-| Peaking | 6726 Hz  | 4.84 | 4.3 dB  |
-| Peaking | 7628 Hz  | 2.11 | -6.6 dB |
-| Peaking | 9412 Hz  | 1.44 | 4.4 dB  |
-| Peaking | 14839 Hz | 4.3  | -4.8 dB |
+| Peaking | 2478 Hz  | 7.81 | 0.5 dB  |
+| Peaking | 6681 Hz  | 4.8  | 4.4 dB  |
+| Peaking | 7646 Hz  | 2.11 | -6.6 dB |
+| Peaking | 9447 Hz  | 1.49 | 4.5 dB  |
+| Peaking | 14900 Hz | 4.29 | -4.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/AKG%20K3003/AKG%20K3003.png)

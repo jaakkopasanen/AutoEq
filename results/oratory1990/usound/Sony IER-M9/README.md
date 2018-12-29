@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-4.7dB**.
 | Peaking | 6163 Hz  |  2.47 | 5.4 dB  |
 | Peaking | 10726 Hz |  2.12 | -6.6 dB |
 | Peaking | 16613 Hz |  1.86 | -8.6 dB |
-| Peaking | 862 Hz   |  1.76 | 1.5 dB  |
+| Peaking | 862 Hz   |  1.75 | 1.5 dB  |
 | Peaking | 1611 Hz  |  0.46 | -1.3 dB |
 | Peaking | 2706 Hz  |  1.88 | 4.4 dB  |
-| Peaking | 3343 Hz  |  4.84 | -3.4 dB |
+| Peaking | 3342 Hz  |  4.84 | -3.4 dB |
 | Peaking | 13426 Hz | 10.04 | 1.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Sony%20IER-M9/Sony%20IER-M9.png)

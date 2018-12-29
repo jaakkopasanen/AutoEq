@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-6.0dB**.
 | Peaking | 4393 Hz  | 2.98 | -6.9 dB  |
 | Peaking | 5650 Hz  | 3.99 | 8.5 dB   |
 | Peaking | 15900 Hz | 1.52 | -12.3 dB |
-| Peaking | 35 Hz    | 2.19 | -0.6 dB  |
+| Peaking | 37 Hz    | 2.14 | -0.5 dB  |
 | Peaking | 816 Hz   | 2.96 | 1.3 dB   |
-| Peaking | 7817 Hz  | 5.63 | -3.8 dB  |
-| Peaking | 10840 Hz | 1.27 | 3.2 dB   |
-| Peaking | 12640 Hz | 2.54 | -3.9 dB  |
+| Peaking | 7796 Hz  | 5.63 | -3.8 dB  |
+| Peaking | 10795 Hz | 1.27 | 3.3 dB   |
+| Peaking | 12697 Hz | 2.54 | -3.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/1MORE%20Triple%20Driver%20LTNG/1MORE%20Triple%20Driver%20LTNG.png)

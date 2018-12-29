@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-0.0dB**.
 | Peaking | 1798 Hz  | 2.63 | -7.8 dB  |
 | Peaking | 3581 Hz  | 1.42 | -5.4 dB  |
 | Peaking | 22582 Hz | 2.26 | -4.5 dB  |
-| Peaking | 33 Hz    | 3.38 | -1.4 dB  |
-| Peaking | 888 Hz   | 4.1  | 2.5 dB   |
-| Peaking | 4412 Hz  | 4.38 | -3.7 dB  |
-| Peaking | 6017 Hz  | 2.18 | 6.9 dB   |
-| Peaking | 7522 Hz  | 4.19 | -10.9 dB |
+| Peaking | 32 Hz    | 3.22 | -1.5 dB  |
+| Peaking | 895 Hz   | 4.08 | 2.5 dB   |
+| Peaking | 4388 Hz  | 4.76 | -3.5 dB  |
+| Peaking | 5983 Hz  | 2.38 | 6.6 dB   |
+| Peaking | 7509 Hz  | 4.33 | -10.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Bose%20QuietComfort%2020/Bose%20QuietComfort%2020.png)

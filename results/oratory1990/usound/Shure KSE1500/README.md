@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-60**
 In case of using Peace, click *Import* in Peace GUI and select `Shure KSE1500 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.4dB**.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 46 Hz    | 0.39 | -0.9 dB  |
-| Peaking | 134 Hz   | 0.76 | -2.3 dB  |
-| Peaking | 1893 Hz  | 0.92 | -13.9 dB |
-| Peaking | 3324 Hz  | 0.35 | 12.4 dB  |
-| Peaking | 9763 Hz  | 1.82 | -16.9 dB |
-| Peaking | 887 Hz   | 1.26 | 1.7 dB   |
-| Peaking | 1166 Hz  | 0.93 | -1.8 dB  |
-| Peaking | 1740 Hz  | 3.91 | 1.5 dB   |
-| Peaking | 5829 Hz  | 4.89 | 0.8 dB   |
-| Peaking | 13214 Hz | 7.09 | 2.4 dB   |
+| Peaking | 46 Hz    | 0.4  | -0.9 dB  |
+| Peaking | 135 Hz   | 0.76 | -2.4 dB  |
+| Peaking | 1874 Hz  | 0.92 | -13.9 dB |
+| Peaking | 3349 Hz  | 0.35 | 12.4 dB  |
+| Peaking | 9785 Hz  | 1.82 | -16.9 dB |
+| Peaking | 716 Hz   | 2.46 | 0.7 dB   |
+| Peaking | 1779 Hz  | 9.36 | 0.8 dB   |
+| Peaking | 5913 Hz  | 5.88 | 0.7 dB   |
+| Peaking | 16131 Hz | 1.14 | 4.0 dB   |
+| Peaking | 20061 Hz | 1.04 | -12.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Shure%20KSE1500/Shure%20KSE1500.png)

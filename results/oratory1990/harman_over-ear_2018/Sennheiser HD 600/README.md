@@ -17,21 +17,21 @@ Set volume attenuation in the Connection tab for both channels to **-61**
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 600 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6dB**.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 25 Hz    |  1.31 | 6.5 dB  |
-| Peaking | 54 Hz    |  2.79 | 2.0 dB  |
-| Peaking | 13212 Hz |  3.06 | -7.7 dB |
-| Peaking | 13382 Hz |  0.89 | 3.8 dB  |
-| Peaking | 18544 Hz |  0.96 | -9.6 dB |
-| Peaking | 173 Hz   |  1.25 | -1.7 dB |
-| Peaking | 624 Hz   |  1.66 | 1.0 dB  |
-| Peaking | 3214 Hz  |  3.36 | -2.6 dB |
-| Peaking | 4202 Hz  |  5.23 | 3.6 dB  |
-| Peaking | 5787 Hz  | 11.09 | -2.8 dB |
+| Peaking | 25 Hz    |  1.26 | 6.5 dB  |
+| Peaking | 53 Hz    |  2.81 | 2.0 dB  |
+| Peaking | 13250 Hz |  3.06 | -7.6 dB |
+| Peaking | 13259 Hz |  0.89 | 3.6 dB  |
+| Peaking | 18477 Hz |  0.97 | -9.5 dB |
+| Peaking | 172 Hz   |  1.24 | -1.7 dB |
+| Peaking | 624 Hz   |  1.65 | 1.0 dB  |
+| Peaking | 3226 Hz  |  3.31 | -2.6 dB |
+| Peaking | 4209 Hz  |  4.99 | 3.6 dB  |
+| Peaking | 5795 Hz  | 10.32 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20600/Sennheiser%20HD%20600.png)

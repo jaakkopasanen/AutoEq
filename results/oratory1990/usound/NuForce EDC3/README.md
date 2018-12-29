@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-6.8dB**.
 | Peaking | 312 Hz  | 0.94 | -1.9 dB |
 | Peaking | 1470 Hz | 2.63 | -3.2 dB |
 | Peaking | 4000 Hz | 0.96 | 6.8 dB  |
-| Peaking | 1872 Hz | 3.72 | -0.5 dB |
-| Peaking | 3985 Hz | 3.45 | -1.5 dB |
-| Peaking | 4047 Hz | 0.83 | 1.1 dB  |
-| Peaking | 6310 Hz | 3.64 | 4.5 dB  |
-| Peaking | 7320 Hz | 1.36 | -3.3 dB |
+| Peaking | 1875 Hz | 3.73 | -0.5 dB |
+| Peaking | 3984 Hz | 3.45 | -1.5 dB |
+| Peaking | 4052 Hz | 0.84 | 1.2 dB  |
+| Peaking | 6310 Hz | 3.63 | 4.5 dB  |
+| Peaking | 7325 Hz | 1.36 | -3.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/NuForce%20EDC3/NuForce%20EDC3.png)

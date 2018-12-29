@@ -29,9 +29,9 @@ When using independent subset of filters, apply preamp of **-7.2dB**.
 | Peaking | 5117 Hz  | 2.06 | 9.2 dB   |
 | Peaking | 20162 Hz | 1.03 | -11.1 dB |
 | Peaking | 851 Hz   | 2.84 | 1.8 dB   |
-| Peaking | 6448 Hz  | 7.91 | 2.4 dB   |
-| Peaking | 8139 Hz  | 6.47 | -2.8 dB  |
-| Peaking | 13182 Hz | 3.83 | -3.3 dB  |
-| Peaking | 15968 Hz | 3.57 | 3.3 dB   |
+| Peaking | 6429 Hz  | 7.9  | 2.4 dB   |
+| Peaking | 8108 Hz  | 6.46 | -2.8 dB  |
+| Peaking | 13239 Hz | 3.83 | -3.3 dB  |
+| Peaking | 16038 Hz | 3.58 | 3.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/KZ%20ES4/KZ%20ES4.png)

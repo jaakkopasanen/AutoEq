@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-6.5dB**.
 | Peaking | 150 Hz  | 0.87 | -3.9 dB |
 | Peaking | 294 Hz  | 1.16 | 1.6 dB  |
 | Peaking | 4151 Hz | 2.51 | 6.4 dB  |
-| Peaking | 1877 Hz | 3.3  | 1.8 dB  |
-| Peaking | 2653 Hz | 5.8  | -1.4 dB |
-| Peaking | 5627 Hz | 7.32 | -2.0 dB |
-| Peaking | 5951 Hz | 2.92 | 2.8 dB  |
-| Peaking | 5973 Hz | 8.09 | -5.0 dB |
+| Peaking | 1878 Hz | 3.28 | 1.8 dB  |
+| Peaking | 2651 Hz | 5.83 | -1.4 dB |
+| Peaking | 5632 Hz | 6.76 | -1.1 dB |
+| Peaking | 5903 Hz | 2.74 | 2.5 dB  |
+| Peaking | 5949 Hz | 7.59 | -5.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Sony%20MDR-XB80BS/Sony%20MDR-XB80BS.png)

@@ -28,9 +28,9 @@ When using independent subset of filters, apply preamp of **-6.5dB**.
 | Peaking | 1877 Hz  | 0.71 | -4.6 dB |
 | Peaking | 6020 Hz  | 3.2  | 6.7 dB  |
 | Peaking | 15045 Hz | 6.12 | -2.0 dB |
-| Peaking | 157 Hz   | 3.87 | -0.3 dB |
-| Peaking | 2674 Hz  | 3.66 | -1.3 dB |
-| Peaking | 3015 Hz  | 1.11 | 0.6 dB  |
-| Peaking | 7953 Hz  | 5.43 | -1.0 dB |
+| Peaking | 154 Hz   | 3.86 | -0.3 dB |
+| Peaking | 2700 Hz  | 3.65 | -1.3 dB |
+| Peaking | 2994 Hz  | 1.1  | 0.6 dB  |
+| Peaking | 7886 Hz  | 5.44 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Etymotic%20Research%20ER4SR/Etymotic%20Research%20ER4SR.png)

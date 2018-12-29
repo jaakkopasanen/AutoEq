@@ -21,17 +21,17 @@ In case of using other parametric equalizer, apply preamp of **-6.4dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.4dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 29 Hz    | 0.62 | -2.9 dB |
-| Peaking | 134 Hz   | 0.85 | -5.3 dB |
-| Peaking | 3303 Hz  | 7.94 | -8.8 dB |
-| Peaking | 4563 Hz  | 1.53 | 7.2 dB  |
-| Peaking | 13080 Hz | 0.74 | -4.6 dB |
-| Peaking | 1392 Hz  | 2.61 | 1.6 dB  |
-| Peaking | 2286 Hz  | 2.35 | -2.7 dB |
-| Peaking | 2876 Hz  | 9.87 | 2.8 dB  |
-| Peaking | 9997 Hz  | 1.87 | 2.6 dB  |
-| Peaking | 10322 Hz | 4.71 | -4.8 dB |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 29 Hz    |  0.62 | -2.9 dB |
+| Peaking | 133 Hz   |  0.85 | -5.2 dB |
+| Peaking | 3314 Hz  |  7.94 | -8.8 dB |
+| Peaking | 4565 Hz  |  1.53 | 7.2 dB  |
+| Peaking | 13083 Hz |  0.74 | -4.6 dB |
+| Peaking | 1390 Hz  |  2.65 | 1.6 dB  |
+| Peaking | 2276 Hz  |  2.46 | -2.6 dB |
+| Peaking | 2890 Hz  | 11.1  | 2.7 dB  |
+| Peaking | 9998 Hz  |  1.92 | 2.9 dB  |
+| Peaking | 10325 Hz |  4.48 | -5.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sony%20MDR-Z1R/Sony%20MDR-Z1R.png)

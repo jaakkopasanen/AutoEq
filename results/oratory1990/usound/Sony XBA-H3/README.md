@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-6.3dB**.
 | Peaking | 4817 Hz  | 6.92 | -4.7 dB |
 | Peaking | 10200 Hz | 3.35 | -6.6 dB |
 | Peaking | 18362 Hz | 2.3  | -4.1 dB |
-| Peaking | 19 Hz    | 1.46 | 0.8 dB  |
-| Peaking | 723 Hz   | 1.68 | 0.9 dB  |
-| Peaking | 1404 Hz  | 2.93 | -1.7 dB |
-| Peaking | 6677 Hz  | 3.42 | 6.8 dB  |
-| Peaking | 6731 Hz  | 1.3  | -2.6 dB |
+| Peaking | 19 Hz    | 1.54 | 0.8 dB  |
+| Peaking | 723 Hz   | 1.69 | 0.9 dB  |
+| Peaking | 1398 Hz  | 2.92 | -1.7 dB |
+| Peaking | 6652 Hz  | 3.59 | 6.4 dB  |
+| Peaking | 6789 Hz  | 1.24 | -2.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Sony%20XBA-H3/Sony%20XBA-H3.png)

@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-4.2dB**.
 | Peaking | 5099 Hz  |  1.2  | 7.8 dB  |
 | Peaking | 11640 Hz |  2.85 | -4.2 dB |
 | Peaking | 18922 Hz |  1.23 | -8.0 dB |
-| Peaking | 135 Hz   |  2    | -0.9 dB |
-| Peaking | 217 Hz   |  4    | 1.0 dB  |
-| Peaking | 779 Hz   |  3.09 | 0.7 dB  |
-| Peaking | 6576 Hz  | 10.54 | 2.4 dB  |
-| Peaking | 7665 Hz  |  5.66 | -1.4 dB |
+| Peaking | 134 Hz   |  2    | -0.9 dB |
+| Peaking | 218 Hz   |  4    | 1.0 dB  |
+| Peaking | 777 Hz   |  3.09 | 0.7 dB  |
+| Peaking | 6566 Hz  | 10.55 | 2.4 dB  |
+| Peaking | 7660 Hz  |  5.66 | -1.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Audeze%20Sine%20(Cipher%20Cable)/Audeze%20Sine%20(Cipher%20Cable).png)

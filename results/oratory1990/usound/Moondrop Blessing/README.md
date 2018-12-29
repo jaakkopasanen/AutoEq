@@ -17,7 +17,7 @@ Set volume attenuation in the Connection tab for both channels to **-20**
 In case of using Peace, click *Import* in Peace GUI and select `Moondrop Blessing ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.5dB**.
 
@@ -26,12 +26,12 @@ When using independent subset of filters, apply preamp of **--0.5dB**.
 | Peaking | 48 Hz    | 0.23 | -2.1 dB |
 | Peaking | 276 Hz   | 1.24 | -0.8 dB |
 | Peaking | 2087 Hz  | 0.92 | -2.2 dB |
-| Peaking | 2938 Hz  | 2.15 | -1.9 dB |
-| Peaking | 19586 Hz | 0.86 | -9.4 dB |
-| Peaking | 916 Hz   | 2.95 | 1.2 dB  |
+| Peaking | 2937 Hz  | 2.15 | -1.9 dB |
+| Peaking | 19596 Hz | 0.86 | -9.4 dB |
+| Peaking | 916 Hz   | 2.96 | 1.2 dB  |
 | Peaking | 1366 Hz  | 4.54 | -1.2 dB |
-| Peaking | 6445 Hz  | 7.44 | 3.5 dB  |
-| Peaking | 7831 Hz  | 5.12 | -4.4 dB |
-| Peaking | 11685 Hz | 2.12 | 1.8 dB  |
+| Peaking | 6484 Hz  | 7.42 | 3.5 dB  |
+| Peaking | 7877 Hz  | 5.11 | -4.4 dB |
+| Peaking | 11688 Hz | 2.12 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Moondrop%20Blessing/Moondrop%20Blessing.png)

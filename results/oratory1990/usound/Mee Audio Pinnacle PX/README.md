@@ -29,9 +29,9 @@ When using independent subset of filters, apply preamp of **--0.4dB**.
 | Peaking | 15231 Hz | 1.53 | -12.7 dB |
 | Peaking | 24000 Hz | 0.88 | -10.7 dB |
 | Peaking | 910 Hz   | 3.34 | 1.3 dB   |
-| Peaking | 1838 Hz  | 3.48 | 1.7 dB   |
-| Peaking | 6673 Hz  | 3.16 | 6.3 dB   |
-| Peaking | 8368 Hz  | 1.49 | -7.5 dB  |
-| Peaking | 9891 Hz  | 3.13 | 7.4 dB   |
+| Peaking | 1831 Hz  | 3.48 | 1.7 dB   |
+| Peaking | 6783 Hz  | 3.18 | 6.2 dB   |
+| Peaking | 8280 Hz  | 1.48 | -7.5 dB  |
+| Peaking | 9786 Hz  | 3.11 | 7.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Mee%20Audio%20Pinnacle%20PX/Mee%20Audio%20Pinnacle%20PX.png)

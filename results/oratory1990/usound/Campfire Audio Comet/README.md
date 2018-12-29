@@ -28,10 +28,10 @@ When using independent subset of filters, apply preamp of **-5.9dB**.
 | Peaking | 2013 Hz | 3.14 | 3.1 dB  |
 | Peaking | 5207 Hz | 2.78 | 6.9 dB  |
 | Peaking | 7331 Hz | 1.8  | -3.5 dB |
-| Peaking | 120 Hz  | 3.96 | -0.3 dB |
-| Peaking | 2010 Hz | 3.55 | -2.1 dB |
-| Peaking | 2402 Hz | 1.46 | 2.7 dB  |
-| Peaking | 3202 Hz | 3.17 | -4.7 dB |
-| Peaking | 4213 Hz | 5.89 | 1.9 dB  |
+| Peaking | 115 Hz  | 3.95 | -0.3 dB |
+| Peaking | 2022 Hz | 3.54 | -2.1 dB |
+| Peaking | 2394 Hz | 1.46 | 2.7 dB  |
+| Peaking | 3178 Hz | 3.17 | -4.7 dB |
+| Peaking | 4184 Hz | 5.9  | 1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Campfire%20Audio%20Comet/Campfire%20Audio%20Comet.png)

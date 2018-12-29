@@ -24,14 +24,14 @@ When using independent subset of filters, apply preamp of **--0.0dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 30 Hz    | 0.26 | -7.0 dB  |
-| Peaking | 139 Hz   | 0.83 | -5.0 dB  |
+| Peaking | 138 Hz   | 0.83 | -5.0 dB  |
 | Peaking | 276 Hz   | 1.36 | -3.0 dB  |
-| Peaking | 16051 Hz | 1.62 | -14.3 dB |
+| Peaking | 16050 Hz | 1.62 | -14.3 dB |
 | Peaking | 24000 Hz | 2.12 | -10.3 dB |
-| Peaking | 1549 Hz  | 1.44 | -3.4 dB  |
-| Peaking | 3197 Hz  | 0.68 | 8.0 dB   |
-| Peaking | 10011 Hz | 1.06 | -9.0 dB  |
-| Peaking | 12566 Hz | 2.82 | 9.3 dB   |
-| Peaking | 19627 Hz | 3.23 | 3.2 dB   |
+| Peaking | 1536 Hz  | 1.36 | -3.7 dB  |
+| Peaking | 3225 Hz  | 0.62 | 7.9 dB   |
+| Peaking | 6107 Hz  | 4.53 | -2.0 dB  |
+| Peaking | 9574 Hz  | 1.43 | -8.5 dB  |
+| Peaking | 12762 Hz | 3.49 | 7.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Campfire%20Audio%20Vega%20(Foam%20Eartips)/Campfire%20Audio%20Vega%20(Foam%20Eartips).png)
