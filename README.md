@@ -48,10 +48,14 @@ filter parameters look like this:
 | Peaking | 6093 Hz  | 2.26 | -4.7 dB |
 | Peaking | 8251 Hz  | 3.71 | -2.9 dB |
 
-Windows has EqualizerAPO, HeSuVi, Peace and many media players with parametric equalizers such as Roon and Foobar2000.
-Android doesn't have any system-wide parametric equalizers but there are several music players which have parametric eq
-and work with local files as well as certain streaming services. USB Audio Player PRO with Toneboosters plugin and
-Neutron Music Player are the most popular and well supported.
+**Windows** has EqualizerAPO, HeSuVi, Peace and many media players with parametric equalizers such as Roon and
+Foobar2000.
+
+**Android** doesn't have any system-wide parametric equalizers but there are several music players which have parametric
+eq and work with local files as well as certain streaming services. USB Audio Player PRO with Toneboosters plugin and
+Neutron Music Player are the most popular but are not free. Viper4Android is a system-wide solution on Android but it
+is not supported yet because it doesn't have parametric eq and requires rooting of the device. Viper4Android will be
+supported in the future.
 
 ### HeSuVi
 Easiest way is to install [HeSuVi](https://sourceforge.net/projects/hesuvi/) and select correct headphone model from the

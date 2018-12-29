@@ -235,7 +235,7 @@ class FrequencyResponse:
         # Reset graph to be able to run this again
         tf.reset_default_graph()
         # Sampling frequency
-        fs = 48000
+        fs = 44100
         fs_tf = tf.constant(fs, name='f', dtype='float32')
 
         # Filter heavily and find peaks
@@ -583,6 +583,7 @@ class FrequencyResponse:
 
         # Write model
         s = '# {}\n'.format(model)
+        s += 'See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.\n'
 
         # Add GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
@@ -606,7 +607,7 @@ class FrequencyResponse:
             ### HeSuVi
             HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
             `{model} GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-            Set volume attenuation in the Connection tab for both channels to **{i_preamp}**
+            Set volume attenuation in the Connection tab for both channels to **{i_preamp}**.
             '''.format(
                 model=model,
                 preamp=preamp,
