@@ -1428,8 +1428,10 @@ class FrequencyResponse:
                         # Write ParametricEq settings to file
                         fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), filters)
                     # Write impulse response as WAV
-                    ir = fr.impulse_response(fs=fs)
-                    wavfile.write(output_file_path.replace('.csv', ' {}Hz.wav'.format(fs)), fs, ir)
+                    fss = [44100, 48000] if fs in [44100, 48000] else [fs]
+                    for fs in fss:
+                        ir = fr.impulse_response(fs=fs)
+                        wavfile.write(output_file_path.replace('.csv', ' {}Hz.wav'.format(fs)), fs, ir)
 
                 # Write results to CSV file
                 fr.write_to_csv(output_file_path)
