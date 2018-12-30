@@ -9,6 +9,7 @@ import pandas as pd
 from scipy.interpolate import InterpolatedUnivariateSpline
 from scipy.signal import savgol_filter, find_peaks
 from scipy.special import expit
+from scipy.io import wavfile
 import numpy as np
 from glob import glob
 import urllib
@@ -569,6 +570,27 @@ class FrequencyResponse:
 
         folders.reverse()
         return folders
+
+    def impulse_response(self, fs=44100):
+        """Generates impulse response implementation of equalization filter."""
+        n = fs // 2
+        # Interpolate to even sample interval
+        fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
+        fr.interpolate(np.arange(0, n))
+        fr.raw[:20] = 0.0
+        # Reduce by max gain to avoid clipping with 1 dB of headroom
+        fr.raw -= np.max(fr.raw)
+        fr.raw -= 1.0
+        # Convert amplitude to linear scale
+        fr.raw = 10**(fr.raw / 20)
+        # Mirror
+        fr_data = np.zeros(n*2)
+        fr_data[1:n+1] = fr.raw  # First half is the original data
+        fr_data[n+1:2*n] = fr.raw[:-1][::-1]  # Second half is data until second to last element reversed
+        # IFFT
+        ir = np.real(np.fft.ifft(fr_data))
+        ir = np.concatenate((ir[n:], ir[:n]))
+        return ir
 
     def write_readme(self,
                      file_path,
@@ -1392,6 +1414,10 @@ class FrequencyResponse:
                     if parametric_eq:
                         # Write ParametricEq settings to file
                         fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), filters)
+                    # Write impulse response as WAV
+                    fs = 48000
+                    ir = fr.impulse_response(fs=fs)
+                    wavfile.write(output_file_path.replace('.csv', ' {}Hz.wav'.format(fs)), fs, ir)
 
                 # Write results to CSV file
                 fr.write_to_csv(output_file_path)
