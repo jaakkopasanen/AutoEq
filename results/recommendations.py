@@ -44,6 +44,8 @@ def get_urls(files):
 
 def main():
     urls = dict()
+    # Get links to Reference Audio Analyzer results
+    urls.update(get_urls(glob(os.path.abspath(os.path.join('referenceaudioanalyzer', 'zero', '*')))))
     # Get links to Headphone.com results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('headphonecom', 'sbaf-serious', '*')))))
     # Get links to Rtings results

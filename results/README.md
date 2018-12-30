@@ -81,6 +81,7 @@ in this list.
 - [AKG Q460 Quincy Jones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/AKG%20Q460%20Quincy%20Jones)
 - [AKG Q701](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/AKG%20Q701)
 - [AKG Q701 Quincy Jones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/AKG%20Q701%20Quincy%20Jones)
+- [AKG Y50](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/AKG%20Y50)
 - [AKG Y50BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/AKG%20Y50BT)
 - [Alpha and Delta AD01](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Alpha%20and%20Delta%20AD01)
 - [Alpha Design Labs H128](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Alpha%20Design%20Labs%20H128)

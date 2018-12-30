@@ -29,6 +29,11 @@ def get_lines(dirs, source):
 
 def main():
     lines = []
+    # Get links to Reference Audio Analyzer results
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join('referenceaudioanalyzer', 'zero', '*'))),
+        'Reference Audio Analyzer'
+    ))
     # Get links to Headphone.com results
     lines.extend(get_lines(glob(os.path.abspath(os.path.join('headphonecom', 'sbaf-serious', '*'))), 'Headphone.com'))
     # Get links to Rtings results

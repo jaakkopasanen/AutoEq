@@ -95,6 +95,7 @@ from the same source.
 - [AKG Q701 Quincy Jones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/AKG%20Q701%20Quincy%20Jones) by Innerfidelity
 - [AKG Q701](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/AKG%20Q701) by Rtings
 - [AKG Y50BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/AKG%20Y50BT) by oratory1990
+- [AKG Y50](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/AKG%20Y50) by Reference Audio Analyzer
 - [Accidentally Extraordinary 51st Studios](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Accidentally%20Extraordinary%2051st%20Studios) by Innerfidelity
 - [Accidentally Extraordinary Bamboo](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Accidentally%20Extraordinary%20Bamboo) by Innerfidelity
 - [Acoustic Research AR H1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Acoustic%20Research%20AR%20H1) by Innerfidelity
