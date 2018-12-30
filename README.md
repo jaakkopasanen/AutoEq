@@ -54,8 +54,7 @@ Foobar2000.
 **Android** doesn't have any system-wide parametric equalizers but there are several music players which have parametric
 eq and work with local files as well as certain streaming services. USB Audio Player PRO with Toneboosters plugin and
 Neutron Music Player are the most popular but are not free. Viper4Android is a system-wide solution on Android but it
-is not supported yet because it doesn't have parametric eq and requires rooting of the device. Viper4Android will be
-supported in the future.
+requires rooting of the device. Viper4Android is supported with impulse responses (WAV) files.
 
 ### HeSuVi
 Easiest way is to install [HeSuVi](https://sourceforge.net/projects/hesuvi/) and select correct headphone model from the
@@ -128,6 +127,11 @@ has Toneboosters Morphit plugin which has parametric equalizer. This app and the
 processing tools including parametric equalizer. Adjust filter parameters by clicking the cog button on each filter and
 set type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
 
+
+### Viper4Android and Other Convolution Engines
+Some software don't have parametric eq but have convolution engine which uses impulse response for processing. AutoEQ
+produces impulse responses with 44.1 kHz and 48 kHz. Import the WAV file with correct sampling frequency into the
+software.
 
 ## Results
 The main principle used by AutoEQ for producing the equalization function is to invert error curve. Error is the

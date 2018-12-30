@@ -594,8 +594,6 @@ class FrequencyResponse:
 
     def write_readme(self,
                      file_path,
-                     write_graphic_eq=False,
-                     write_parametric_eq=False,
                      max_filters=None,
                      max_gains=None):
         """Writes README.md with picture and Equalizer APO settings."""
@@ -605,11 +603,12 @@ class FrequencyResponse:
 
         # Write model
         s = '# {}\n'.format(model)
-        s += 'See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.\n'
+        s += 'See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and ' \
+             'info.\n'
 
         # Add GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
-        if write_graphic_eq and os.path.isfile(graphic_eq_path):
+        if os.path.isfile(graphic_eq_path):
             preamp = min(0.0, float(-np.max(self.equalization))) - 0.1
 
             # Read Graphig eq
@@ -640,7 +639,7 @@ class FrequencyResponse:
 
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
-        if write_parametric_eq and os.path.isfile(parametric_eq_path):
+        if os.path.isfile(parametric_eq_path):
             preamp = np.min([0.0, float(-np.max(self.parametric_eq))]) - 0.1
 
             # Read Parametric eq
@@ -715,6 +714,12 @@ class FrequencyResponse:
                 preamp_str=preamp_str,
                 filters_table=filters_table_str
             )
+
+        # Write impulse response
+        s += '''
+        ### Impulse Response
+        In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
+        '''
 
         # Write image link
         img_path = os.path.join(dir_path, model + '.png')
@@ -1446,8 +1451,6 @@ class FrequencyResponse:
                 _readme_path = os.path.join(output_dir_path, 'README.md')
                 fr.write_readme(
                     _readme_path,
-                    write_graphic_eq=equalize,
-                    write_parametric_eq=parametric_eq,
                     max_filters=n_filters,
                     max_gains=max_gains
                 )
