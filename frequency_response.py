@@ -1155,6 +1155,8 @@ class FrequencyResponse:
         arg_parser.add_argument('--output_dir', type=str, default=argparse.SUPPRESS,
                                 help='Path to results directory. Will keep the same relative paths for files found'
                                      'in input_dir.')
+        arg_parser.add_argument('--standardize_input', action='store_true',
+                                help='Overwrite input data in standardized sampling and bias?')
         arg_parser.add_argument('--new_only', action='store_true',
                                 help='Only process input files which don\'t have results in output directory.')
         arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
@@ -1335,6 +1337,7 @@ class FrequencyResponse:
     def main(input_dir=None,
              output_dir=None,
              new_only=False,
+             standardize_input=False,
              calibration=None,
              compensation=None,
              equalize=False,
@@ -1385,6 +1388,12 @@ class FrequencyResponse:
 
             # Read data from input file
             fr = FrequencyResponse.read_from_csv(input_file_path)
+
+            if standardize_input:
+                # Overwrite input data in standard sampling and bias
+                fr.interpolate()
+                fr.center()
+                fr.write_to_csv(input_file_path)
 
             # Process and equalize
             filters, n_filters, max_gains = fr.process(
