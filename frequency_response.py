@@ -37,6 +37,7 @@ DEFAULT_SMOOTHING_ITERATIONS = 10
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 5
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 DEFAULT_TILT = 0.0
+DEFAULT_FS = 44100
 
 DEFAULT_OE_BASS_BOOST_F_LOWER = 35
 DEFAULT_OE_BASS_BOOST_F_UPPER = 280
@@ -232,11 +233,10 @@ class FrequencyResponse:
         return s
 
     @staticmethod
-    def _run_optimize_parametric_eq(frequency, target, max_time=5, max_filters=None):
+    def _run_optimize_parametric_eq(frequency, target, max_time=5, max_filters=None, fs=DEFAULT_FS):
         # Reset graph to be able to run this again
         tf.reset_default_graph()
         # Sampling frequency
-        fs = 44100
         fs_tf = tf.constant(fs, name='f', dtype='float32')
 
         # Filter heavily and find peaks
@@ -571,13 +571,13 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def impulse_response(self, fs=44100):
+    def impulse_response(self, fs=DEFAULT_FS):
         """Generates impulse response implementation of equalization filter."""
-        n = fs // 2
         # Interpolate to even sample interval
         fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
-        fr.interpolate(np.arange(0, n))
-        fr.raw[:20] = 0.0
+        fr.interpolate(np.arange(0, fs // 2, 5))
+        n = len(fr.frequency)
+        fr.raw[fr.frequency <= 10.0] = 0.0
         # Reduce by max gain to avoid clipping with 1 dB of headroom
         fr.raw -= np.max(fr.raw)
         fr.raw -= 1.0
@@ -1177,6 +1177,9 @@ class FrequencyResponse:
                                      '5 can only be used with the first 5. This allows to have muliple configurations'
                                      'for equalizers with different number of bands available. '
                                      'Not limited by default.')
+        arg_parser.add_argument('--fs', type=int, default=DEFAULT_FS,
+                                help='Sampling frequency for impulse response and paramteric eq filters.'
+                                     'Defaults to {}.'.format(DEFAULT_FS))
         arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
                                 help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
                                      ' Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
@@ -1343,6 +1346,7 @@ class FrequencyResponse:
              equalize=False,
              parametric_eq=False,
              max_filters=None,
+             fs=DEFAULT_FS,
              bass_boost=None,
              iem_bass_boost=None,
              tilt=None,
@@ -1424,7 +1428,6 @@ class FrequencyResponse:
                         # Write ParametricEq settings to file
                         fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), filters)
                     # Write impulse response as WAV
-                    fs = 48000
                     ir = fr.impulse_response(fs=fs)
                     wavfile.write(output_file_path.replace('.csv', ' {}Hz.wav'.format(fs)), fs, ir)
 
