@@ -12,7 +12,7 @@ GraphicEQ: 21 -5.2; 23 -5.5; 25 -5.8; 28 -6.2; 31 -6.4; 34 -6.6; 37 -6.7; 41 -6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `V-Moda XS GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-49**
+Set volume attenuation in the Connection tab for both channels to **-49**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda XS ParametricEQ.txt`.
@@ -25,14 +25,14 @@ When using independent subset of filters, apply preamp of **-5.4dB**.
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 45 Hz    | 0.49 | -7.2 dB |
-| Peaking | 135 Hz   | 1.43 | -4.4 dB |
-| Peaking | 234 Hz   | 4.42 | -2.9 dB |
-| Peaking | 5707 Hz  | 4.25 | 5.3 dB  |
-| Peaking | 24000 Hz | 2.4  | 2.2 dB  |
-| Peaking | 17 Hz    | 1.51 | -1.1 dB |
+| Peaking | 136 Hz   | 1.43 | -4.4 dB |
+| Peaking | 234 Hz   | 4.52 | -3.0 dB |
+| Peaking | 5707 Hz  | 4.16 | 5.3 dB  |
+| Peaking | 22050 Hz | 2.5  | 1.8 dB  |
+| Peaking | 18 Hz    | 2.03 | -1.0 dB |
 | Peaking | 615 Hz   | 1.5  | 3.5 dB  |
-| Peaking | 2557 Hz  | 0.73 | -2.9 dB |
-| Peaking | 4101 Hz  | 5.06 | 5.7 dB  |
-| Peaking | 8836 Hz  | 8.04 | -1.0 dB |
+| Peaking | 2561 Hz  | 0.72 | -2.9 dB |
+| Peaking | 4076 Hz  | 5.02 | 5.7 dB  |
+| Peaking | 8852 Hz  | 7.97 | -1.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/V-Moda%20XS/V-Moda%20XS.png)

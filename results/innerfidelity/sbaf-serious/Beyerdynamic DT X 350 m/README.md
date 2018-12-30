@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 4.1; 25 3.7; 28 3.3; 31 2.9; 34 2.6; 37 2.4; 41 2.3; 45 2.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Beyerdynamic DT X 350 m GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT X 350 m ParametricEQ.txt`.
@@ -20,18 +20,18 @@ In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.5dB**.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 138 Hz   |  2.75 | -4.3 dB |
-| Peaking | 259 Hz   |  1.58 | 5.7 dB  |
-| Peaking | 3591 Hz  |  6.62 | 6.4 dB  |
-| Peaking | 24000 Hz |  2.35 | 0.8 dB  |
-| Peaking | 17 Hz    |  0.55 | 4.7 dB  |
-| Peaking | 88 Hz    |  5.51 | 1.7 dB  |
-| Peaking | 4366 Hz  | 10.05 | -3.9 dB |
-| Peaking | 5393 Hz  |  6.33 | 3.9 dB  |
-| Peaking | 8788 Hz  |  4.64 | -1.6 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 137 Hz   | 2.76 | -4.3 dB |
+| Peaking | 258 Hz   | 1.58 | 5.7 dB  |
+| Peaking | 3598 Hz  | 6.69 | 6.5 dB  |
+| Peaking | 19974 Hz | 2.32 | -2.5 dB |
+| Peaking | 16 Hz    | 0.54 | 4.7 dB  |
+| Peaking | 88 Hz    | 5.35 | 1.7 dB  |
+| Peaking | 2080 Hz  | 5.4  | -1.6 dB |
+| Peaking | 4356 Hz  | 9.84 | -3.8 dB |
+| Peaking | 5377 Hz  | 6.72 | 3.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20X%20350%20m/Beyerdynamic%20DT%20X%20350%20m.png)

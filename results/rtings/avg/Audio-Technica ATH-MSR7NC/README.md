@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 3.3; 25 3.0; 28 2.7; 31 2.4; 34 2.3; 37 2.3; 41 2.2; 45 2.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio-Technica ATH-MSR7NC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-38**
+Set volume attenuation in the Connection tab for both channels to **-38**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio-Technica ATH-MSR7NC ParametricEQ.txt`.
@@ -24,15 +24,15 @@ When using independent subset of filters, apply preamp of **-3.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 26 Hz    | 0.99 | 3.4 dB  |
-| Peaking | 421 Hz   | 2.5  | 3.5 dB  |
-| Peaking | 1999 Hz  | 2.05 | -5.5 dB |
-| Peaking | 8457 Hz  | 3.83 | -4.2 dB |
-| Peaking | 24000 Hz | 2.03 | -1.8 dB |
-| Peaking | 57 Hz    | 2.25 | 1.3 dB  |
-| Peaking | 156 Hz   | 1.32 | -2.4 dB |
-| Peaking | 3863 Hz  | 5.65 | 3.2 dB  |
-| Peaking | 4558 Hz  | 3.3  | -3.8 dB |
-| Peaking | 6297 Hz  | 5.63 | 2.9 dB  |
+| Peaking | 25 Hz    | 1.02 | 3.3 dB  |
+| Peaking | 420 Hz   | 2.53 | 3.5 dB  |
+| Peaking | 1990 Hz  | 2.17 | -5.6 dB |
+| Peaking | 4680 Hz  | 6.49 | -3.4 dB |
+| Peaking | 21080 Hz | 2.04 | -2.1 dB |
+| Peaking | 56 Hz    | 2.09 | 1.4 dB  |
+| Peaking | 156 Hz   | 1.34 | -2.4 dB |
+| Peaking | 6515 Hz  | 3.85 | 3.7 dB  |
+| Peaking | 8151 Hz  | 2.24 | -4.7 dB |
+| Peaking | 11874 Hz | 2.58 | 0.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Audio-Technica%20ATH-MSR7NC/Audio-Technica%20ATH-MSR7NC.png)

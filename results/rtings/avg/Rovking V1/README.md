@@ -12,7 +12,7 @@ GraphicEQ: 21 -15.6; 23 -15.6; 25 -15.5; 28 -15.5; 31 -15.4; 34 -15.4; 37 -15.3;
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Rovking V1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-39**
+Set volume attenuation in the Connection tab for both channels to **-39**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Rovking V1 ParametricEQ.txt`.
@@ -20,19 +20,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Rovking V1 Param
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.4dB**.
+When using independent subset of filters, apply preamp of **--0.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 28 Hz    | 0.18 | -15.2 dB |
 | Peaking | 184 Hz   | 0.63 | -6.4 dB  |
-| Peaking | 5159 Hz  | 2.57 | -7.4 dB  |
-| Peaking | 14118 Hz | 1.45 | -7.2 dB  |
-| Peaking | 24000 Hz | 1.86 | -6.0 dB  |
-| Peaking | 355 Hz   | 2.47 | -1.6 dB  |
-| Peaking | 1031 Hz  | 0.84 | 1.2 dB   |
-| Peaking | 2269 Hz  | 2.54 | 4.4 dB   |
-| Peaking | 8051 Hz  | 5.77 | -7.0 dB  |
-| Peaking | 10166 Hz | 3.56 | 3.7 dB   |
+| Peaking | 5223 Hz  | 2.32 | -7.4 dB  |
+| Peaking | 13085 Hz | 4.49 | -6.5 dB  |
+| Peaking | 15756 Hz | 1.1  | -4.8 dB  |
+| Peaking | 357 Hz   | 2.56 | -1.6 dB  |
+| Peaking | 1019 Hz  | 0.8  | 1.2 dB   |
+| Peaking | 2272 Hz  | 2.51 | 4.4 dB   |
+| Peaking | 8052 Hz  | 5.48 | -7.3 dB  |
+| Peaking | 9993 Hz  | 2.8  | 2.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Rovking%20V1/Rovking%20V1.png)

@@ -12,27 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.3; 45 3.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Anker SoundBuds Sport GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Anker SoundBuds Sport ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2dB**.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 31 Hz    | 0.99 | 8.7 dB   |
 | Peaking | 169 Hz   | 0.51 | -11.5 dB |
-| Peaking | 8460 Hz  | 3.04 | -11.3 dB |
-| Peaking | 11686 Hz | 0.48 | 16.1 dB  |
-| Peaking | 14548 Hz | 0.73 | -21.1 dB |
-| Peaking | 359 Hz   | 1.85 | -1.2 dB  |
-| Peaking | 790 Hz   | 2.43 | 2.8 dB   |
-| Peaking | 4685 Hz  | 1.12 | -1.6 dB  |
-| Peaking | 5548 Hz  | 2.78 | 3.2 dB   |
-| Peaking | 24000 Hz | 2.08 | 0.2 dB   |
+| Peaking | 8462 Hz  | 3.15 | -10.6 dB |
+| Peaking | 12015 Hz | 0.4  | 18.1 dB  |
+| Peaking | 14541 Hz | 0.58 | -23.6 dB |
+| Peaking | 357 Hz   | 1.83 | -1.2 dB  |
+| Peaking | 789 Hz   | 2.51 | 2.8 dB   |
+| Peaking | 4997 Hz  | 0.88 | -2.0 dB  |
+| Peaking | 5586 Hz  | 2.48 | 3.8 dB   |
+| Peaking | 17413 Hz | 4.19 | 2.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Anker%20SoundBuds%20Sport/Anker%20SoundBuds%20Sport.png)

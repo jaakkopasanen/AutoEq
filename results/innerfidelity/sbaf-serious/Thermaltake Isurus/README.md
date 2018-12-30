@@ -12,27 +12,27 @@ GraphicEQ: 21 -0.0; 23 -0.2; 25 -0.3; 28 -0.4; 31 -0.6; 34 -0.7; 37 -0.9; 41 -1.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Thermaltake Isurus GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-13**
+Set volume attenuation in the Connection tab for both channels to **-13**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Thermaltake Isurus ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-0.0dB**.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 159 Hz   | 0.59 | -5.0 dB |
 | Peaking | 362 Hz   | 1.32 | -3.1 dB |
-| Peaking | 1937 Hz  | 4.08 | -1.7 dB |
-| Peaking | 6310 Hz  | 2.22 | -4.6 dB |
-| Peaking | 21922 Hz | 2.16 | -0.9 dB |
-| Peaking | 1005 Hz  | 3.07 | 0.9 dB  |
-| Peaking | 3547 Hz  | 5.74 | 2.1 dB  |
-| Peaking | 9417 Hz  | 1.84 | 1.5 dB  |
-| Peaking | 9445 Hz  | 4.89 | -4.3 dB |
-| Peaking | 22175 Hz | 1.51 | -0.5 dB |
+| Peaking | 1938 Hz  | 4.06 | -1.7 dB |
+| Peaking | 6307 Hz  | 2.21 | -4.6 dB |
+| Peaking | 15246 Hz | 2.58 | -0.4 dB |
+| Peaking | 1007 Hz  | 3.05 | 0.9 dB  |
+| Peaking | 3574 Hz  | 5.55 | 2.2 dB  |
+| Peaking | 7640 Hz  | 5.75 | 1.5 dB  |
+| Peaking | 9493 Hz  | 3.13 | -3.5 dB |
+| Peaking | 10504 Hz | 2.93 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Thermaltake%20Isurus/Thermaltake%20Isurus.png)

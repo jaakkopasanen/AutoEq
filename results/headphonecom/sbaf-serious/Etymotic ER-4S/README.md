@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Etymotic ER-4S GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Etymotic ER-4S ParametricEQ.txt`.
@@ -20,19 +20,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Etymotic ER-4S P
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.3dB**.
+When using independent subset of filters, apply preamp of **-5.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 14 Hz    | 0.06 | 5.2 dB  |
-| Peaking | 1689 Hz  | 2.81 | -3.8 dB |
-| Peaking | 2297 Hz  | 2.15 | -8.6 dB |
-| Peaking | 16450 Hz | 4.14 | -8.2 dB |
-| Peaking | 23872 Hz | 3.7  | -3.3 dB |
-| Peaking | 167 Hz   | 1.6  | -1.4 dB |
-| Peaking | 628 Hz   | 1.6  | 2.1 dB  |
-| Peaking | 4623 Hz  | 4.01 | -4.6 dB |
-| Peaking | 6501 Hz  | 1.22 | 4.8 dB  |
-| Peaking | 7883 Hz  | 3.01 | -8.1 dB |
+| Peaking | 13 Hz    | 0.05 | 5.2 dB  |
+| Peaking | 1678 Hz  | 2.86 | -3.6 dB |
+| Peaking | 2287 Hz  | 2.1  | -8.7 dB |
+| Peaking | 16159 Hz | 3.73 | -5.5 dB |
+| Peaking | 16160 Hz | 2.93 | -3.3 dB |
+| Peaking | 170 Hz   | 1.47 | -1.6 dB |
+| Peaking | 639 Hz   | 1.74 | 2.0 dB  |
+| Peaking | 4598 Hz  | 4.02 | -4.6 dB |
+| Peaking | 6852 Hz  | 1.1  | 5.6 dB  |
+| Peaking | 7924 Hz  | 2.67 | -9.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Etymotic%20ER-4S/Etymotic%20ER-4S.png)

@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 0.3; 25 0.3; 28 0.3; 31 0.3; 34 0.3; 37 0.3; 41 0.3; 45 0.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Jaybird Tarah GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-20**
+Set volume attenuation in the Connection tab for both channels to **-20**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Jaybird Tarah ParametricEQ.txt`.
@@ -24,15 +24,15 @@ When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 180 Hz   | 1.03 | -5.5 dB  |
-| Peaking | 2282 Hz  | 1.63 | -5.6 dB  |
-| Peaking | 6516 Hz  | 5.46 | -12.4 dB |
-| Peaking | 10282 Hz | 5.4  | -7.8 dB  |
-| Peaking | 23224 Hz | 0.16 | -3.7 dB  |
-| Peaking | 803 Hz   | 2.21 | 3.2 dB   |
-| Peaking | 1259 Hz  | 2.13 | -1.8 dB  |
-| Peaking | 3890 Hz  | 5.89 | 1.0 dB   |
-| Peaking | 15577 Hz | 2.94 | -6.0 dB  |
-| Peaking | 16935 Hz | 0.76 | 2.6 dB   |
+| Peaking | 180 Hz   | 1.04 | -5.5 dB  |
+| Peaking | 2283 Hz  | 1.63 | -5.6 dB  |
+| Peaking | 6525 Hz  | 5.33 | -12.5 dB |
+| Peaking | 10205 Hz | 5.27 | -8.0 dB  |
+| Peaking | 15531 Hz | 3.38 | -4.5 dB  |
+| Peaking | 799 Hz   | 2.24 | 3.1 dB   |
+| Peaking | 1265 Hz  | 2.44 | -1.8 dB  |
+| Peaking | 2860 Hz  | 5.34 | -1.1 dB  |
+| Peaking | 3788 Hz  | 2.83 | 1.0 dB   |
+| Peaking | 12175 Hz | 6.2  | 1.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Jaybird%20Tarah/Jaybird%20Tarah.png)

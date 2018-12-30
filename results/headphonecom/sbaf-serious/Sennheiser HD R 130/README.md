@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD R 130 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD R 130 ParametricEQ.txt`.
@@ -22,17 +22,17 @@ In case of using other parametric equalizer, apply preamp of **-6.9dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 48 Hz    | 0.47 | 9.6 dB   |
-| Peaking | 163 Hz   | 0.43 | -8.4 dB  |
-| Peaking | 1659 Hz  | 3.68 | -4.6 dB  |
-| Peaking | 4399 Hz  | 1.06 | -8.1 dB  |
-| Peaking | 22967 Hz | 2.38 | -5.6 dB  |
-| Peaking | 1039 Hz  | 4.37 | 2.4 dB   |
-| Peaking | 1700 Hz  | 0.14 | -0.2 dB  |
-| Peaking | 7310 Hz  | 4.71 | 7.3 dB   |
-| Peaking | 9486 Hz  | 3.25 | -10.4 dB |
-| Peaking | 11337 Hz | 2.3  | 3.4 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 49 Hz    | 0.46 | 9.7 dB  |
+| Peaking | 162 Hz   | 0.42 | -8.5 dB |
+| Peaking | 1658 Hz  | 3.72 | -4.6 dB |
+| Peaking | 4405 Hz  | 1.04 | -8.1 dB |
+| Peaking | 21593 Hz | 2.2  | -6.0 dB |
+| Peaking | 991 Hz   | 1.29 | 3.9 dB  |
+| Peaking | 1203 Hz  | 0.49 | -2.4 dB |
+| Peaking | 2425 Hz  | 8.1  | 4.6 dB  |
+| Peaking | 7245 Hz  | 5.2  | 6.7 dB  |
+| Peaking | 9397 Hz  | 4.84 | -9.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20R%20130/Sennheiser%20HD%20R%20130.png)

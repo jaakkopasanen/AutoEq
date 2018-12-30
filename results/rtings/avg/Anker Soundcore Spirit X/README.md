@@ -12,27 +12,27 @@ GraphicEQ: 21 -5.1; 23 -5.0; 25 -5.0; 28 -4.9; 31 -4.9; 34 -4.8; 37 -4.6; 41 -4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Anker Soundcore Spirit X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-12**
+Set volume attenuation in the Connection tab for both channels to **-12**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Anker Soundcore Spirit X ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 29 Hz    | 0.39 | -5.0 dB |
-| Peaking | 125 Hz   | 1.58 | -2.8 dB |
-| Peaking | 1682 Hz  | 2.19 | -2.6 dB |
-| Peaking | 5040 Hz  | 1.49 | -6.0 dB |
-| Peaking | 24000 Hz | 2.13 | -1.4 dB |
-| Peaking | 274 Hz   | 4.6  | 2.1 dB  |
-| Peaking | 804 Hz   | 4.58 | 1.7 dB  |
-| Peaking | 6126 Hz  | 4.01 | -3.3 dB |
-| Peaking | 7794 Hz  | 1.71 | 4.4 dB  |
-| Peaking | 9045 Hz  | 4.43 | -6.3 dB |
+| Peaking | 29 Hz    | 0.38 | -5.0 dB |
+| Peaking | 124 Hz   | 1.58 | -2.8 dB |
+| Peaking | 1681 Hz  | 2.19 | -2.6 dB |
+| Peaking | 5046 Hz  | 1.46 | -6.0 dB |
+| Peaking | 22050 Hz | 2.14 | -1.2 dB |
+| Peaking | 280 Hz   | 2.39 | 2.9 dB  |
+| Peaking | 454 Hz   | 0.43 | -1.3 dB |
+| Peaking | 781 Hz   | 2.18 | 2.5 dB  |
+| Peaking | 7448 Hz  | 6.66 | 3.3 dB  |
+| Peaking | 9190 Hz  | 6.93 | -4.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Anker%20Soundcore%20Spirit%20X/Anker%20Soundcore%20Spirit%20X.png)

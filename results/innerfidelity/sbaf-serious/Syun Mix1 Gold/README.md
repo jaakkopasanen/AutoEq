@@ -12,7 +12,7 @@ GraphicEQ: 21 -2.9; 23 -3.5; 25 -3.9; 28 -4.5; 31 -4.9; 34 -5.3; 37 -5.7; 41 -6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Syun Mix1 Gold GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Syun Mix1 Gold ParametricEQ.txt`.
@@ -22,17 +22,16 @@ In case of using other parametric equalizer, apply preamp of **-7.3dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 67 Hz    | 0.39 | -6.5 dB |
-| Peaking | 166 Hz   | 0.76 | -5.1 dB |
-| Peaking | 334 Hz   | 1.17 | -3.3 dB |
-| Peaking | 3272 Hz  | 4.35 | 3.8 dB  |
-| Peaking | 6051 Hz  | 4.83 | 6.7 dB  |
-| Peaking | 1149 Hz  | 2.86 | 1.5 dB  |
-| Peaking | 1702 Hz  | 2.67 | -1.2 dB |
-| Peaking | 4505 Hz  | 2.04 | 2.2 dB  |
-| Peaking | 4518 Hz  | 5.21 | -5.2 dB |
-| Peaking | 24000 Hz | 1.75 | 0.3 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 68 Hz   | 0.39 | -6.5 dB |
+| Peaking | 168 Hz  | 0.76 | -5.1 dB |
+| Peaking | 337 Hz  | 1.2  | -3.2 dB |
+| Peaking | 3256 Hz | 4.33 | 3.8 dB  |
+| Peaking | 6061 Hz | 4.72 | 6.7 dB  |
+| Peaking | 1150 Hz | 2.88 | 1.5 dB  |
+| Peaking | 1702 Hz | 2.56 | -1.2 dB |
+| Peaking | 4503 Hz | 2.02 | 2.2 dB  |
+| Peaking | 4516 Hz | 5.21 | -5.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Syun%20Mix1%20Gold/Syun%20Mix1%20Gold.png)

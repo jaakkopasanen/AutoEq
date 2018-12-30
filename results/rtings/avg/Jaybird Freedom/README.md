@@ -12,7 +12,7 @@ GraphicEQ: 21 -1.5; 23 -1.5; 25 -1.5; 28 -1.5; 31 -1.5; 34 -1.5; 37 -1.5; 41 -1.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Jaybird Freedom GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-16**
+Set volume attenuation in the Connection tab for both channels to **-16**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Jaybird Freedom ParametricEQ.txt`.
@@ -20,19 +20,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Jaybird Freedom 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.1dB**.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 28 Hz    | 0.15 | -1.2 dB |
 | Peaking | 195 Hz   | 0.69 | -4.9 dB |
-| Peaking | 2320 Hz  | 1.59 | -5.9 dB |
-| Peaking | 10682 Hz | 1.24 | -4.7 dB |
-| Peaking | 24000 Hz | 2.03 | -3.8 dB |
-| Peaking | 829 Hz   | 2.5  | 2.2 dB  |
-| Peaking | 1410 Hz  | 3.02 | -1.7 dB |
-| Peaking | 5498 Hz  | 2.71 | 3.3 dB  |
-| Peaking | 7768 Hz  | 5.4  | -4.7 dB |
-| Peaking | 14907 Hz | 4.69 | 1.9 dB  |
+| Peaking | 2321 Hz  | 1.58 | -5.9 dB |
+| Peaking | 10835 Hz | 1.16 | -4.7 dB |
+| Peaking | 22050 Hz | 2.13 | -3.4 dB |
+| Peaking | 820 Hz   | 1.4  | 5.3 dB  |
+| Peaking | 907 Hz   | 0.72 | -3.4 dB |
+| Peaking | 5475 Hz  | 2.49 | 3.2 dB  |
+| Peaking | 7706 Hz  | 4.6  | -5.1 dB |
+| Peaking | 14075 Hz | 0.29 | 0.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Jaybird%20Freedom/Jaybird%20Freedom.png)

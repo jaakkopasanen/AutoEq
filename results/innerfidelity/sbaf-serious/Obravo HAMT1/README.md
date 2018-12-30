@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 5.9; 25 5.5; 28 4.7; 31 3.7; 34 2.9; 37 2.4; 41 2.1; 45 1.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Obravo HAMT1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Obravo HAMT1 ParametricEQ.txt`.
@@ -24,15 +24,15 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 111 Hz   | 1.17 | -12.8 dB |
-| Peaking | 323 Hz   | 1.78 | 11.6 dB  |
-| Peaking | 540 Hz   | 1.91 | -12.8 dB |
-| Peaking | 1462 Hz  | 3.17 | 7.6 dB   |
-| Peaking | 22076 Hz | 0.12 | -4.6 dB  |
-| Peaking | 25 Hz    | 1.28 | 6.8 dB   |
-| Peaking | 2168 Hz  | 7.08 | -6.0 dB  |
-| Peaking | 3770 Hz  | 1.32 | -11.4 dB |
-| Peaking | 5740 Hz  | 0.57 | 11.3 dB  |
-| Peaking | 9204 Hz  | 2.54 | -13.6 dB |
+| Peaking | 111 Hz   | 1.16 | -12.8 dB |
+| Peaking | 324 Hz   | 1.78 | 11.6 dB  |
+| Peaking | 541 Hz   | 1.91 | -12.8 dB |
+| Peaking | 1459 Hz  | 3.17 | 7.6 dB   |
+| Peaking | 19765 Hz | 0.14 | -4.4 dB  |
+| Peaking | 24 Hz    | 1.3  | 6.8 dB   |
+| Peaking | 2175 Hz  | 7.06 | -6.0 dB  |
+| Peaking | 3729 Hz  | 1.29 | -11.2 dB |
+| Peaking | 6089 Hz  | 0.53 | 11.8 dB  |
+| Peaking | 9217 Hz  | 2.29 | -14.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Obravo%20HAMT1/Obravo%20HAMT1.png)

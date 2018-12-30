@@ -12,27 +12,27 @@ GraphicEQ: 21 -8.5; 23 -8.8; 25 -9.0; 28 -9.2; 31 -9.3; 34 -9.3; 37 -9.2; 41 -9.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser Momentum In-Ear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-24**
+Set volume attenuation in the Connection tab for both channels to **-24**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum In-Ear ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.6dB**.
+When using independent subset of filters, apply preamp of **-2.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 38 Hz    | 0.15 | -8.7 dB  |
-| Peaking | 227 Hz   | 0.53 | -5.3 dB  |
-| Peaking | 5142 Hz  | 0.59 | 18.4 dB  |
-| Peaking | 6944 Hz  | 0.71 | -25.0 dB |
-| Peaking | 24000 Hz | 1.81 | -5.7 dB  |
-| Peaking | 113 Hz   | 3.75 | -0.4 dB  |
-| Peaking | 962 Hz   | 3.11 | 1.2 dB   |
-| Peaking | 9024 Hz  | 6.3  | 2.1 dB   |
-| Peaking | 12929 Hz | 2.79 | -2.8 dB  |
-| Peaking | 18759 Hz | 1.13 | 1.9 dB   |
+| Peaking | 224 Hz   | 0.55 | -5.4 dB  |
+| Peaking | 5278 Hz  | 0.7  | 6.5 dB   |
+| Peaking | 7095 Hz  | 1.83 | -15.1 dB |
+| Peaking | 12527 Hz | 1.07 | -6.7 dB  |
+| Peaking | 228 Hz   | 2.45 | 1.3 dB   |
+| Peaking | 446 Hz   | 0.49 | -1.0 dB  |
+| Peaking | 936 Hz   | 1.26 | 1.8 dB   |
+| Peaking | 2684 Hz  | 3.03 | -0.7 dB  |
+| Peaking | 4849 Hz  | 5.05 | 0.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Sennheiser%20Momentum%20In-Ear/Sennheiser%20Momentum%20In-Ear.png)

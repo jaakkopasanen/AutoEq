@@ -12,7 +12,7 @@ GraphicEQ: 21 -11.5; 23 -11.5; 25 -11.4; 28 -11.3; 31 -11.2; 34 -11.1; 37 -11.0;
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Torque t096z Bass Boost Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t096z Bass Boost Filter ParametricEQ.txt`.
@@ -27,12 +27,12 @@ When using independent subset of filters, apply preamp of **-7.1dB**.
 | Peaking | 27 Hz    | 0.23 | -11.2 dB |
 | Peaking | 157 Hz   | 0.8  | -4.0 dB  |
 | Peaking | 1986 Hz  | 2.34 | -8.5 dB  |
-| Peaking | 3234 Hz  | 3.97 | 6.5 dB   |
-| Peaking | 5846 Hz  | 3.73 | 7.0 dB   |
-| Peaking | 770 Hz   | 1.89 | 2.0 dB   |
-| Peaking | 1516 Hz  | 4.58 | -1.2 dB  |
-| Peaking | 4383 Hz  | 6.55 | -6.6 dB  |
-| Peaking | 4525 Hz  | 2.65 | 2.9 dB   |
-| Peaking | 24000 Hz | 1.72 | 0.2 dB   |
+| Peaking | 3235 Hz  | 3.95 | 6.5 dB   |
+| Peaking | 5849 Hz  | 3.65 | 7.0 dB   |
+| Peaking | 769 Hz   | 1.88 | 2.0 dB   |
+| Peaking | 1511 Hz  | 4.57 | -1.2 dB  |
+| Peaking | 4411 Hz  | 6.52 | -6.6 dB  |
+| Peaking | 4498 Hz  | 2.61 | 2.9 dB   |
+| Peaking | 22050 Hz | 1.76 | 0.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t096z%20Bass%20Boost%20Filter/Torque%20t096z%20Bass%20Boost%20Filter.png)

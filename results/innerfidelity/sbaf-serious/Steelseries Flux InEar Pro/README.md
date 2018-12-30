@@ -12,27 +12,27 @@ GraphicEQ: 21 0.0; 23 1.4; 25 1.4; 28 1.3; 31 1.2; 34 1.0; 37 1.0; 41 0.8; 45 0.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Steelseries Flux InEar Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-59**
+Set volume attenuation in the Connection tab for both channels to **-59**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Steelseries Flux InEar Pro ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 26 Hz    | 0.62 | 1.6 dB  |
-| Peaking | 178 Hz   | 0.7  | -3.4 dB |
+| Peaking | 27 Hz    | 0.62 | 1.5 dB  |
+| Peaking | 179 Hz   | 0.7  | -3.4 dB |
 | Peaking | 1951 Hz  | 1.96 | -3.2 dB |
-| Peaking | 3380 Hz  | 4.36 | 5.3 dB  |
-| Peaking | 6060 Hz  | 4.58 | 6.6 dB  |
+| Peaking | 3380 Hz  | 4.35 | 5.3 dB  |
+| Peaking | 6062 Hz  | 4.49 | 6.6 dB  |
 | Peaking | 787 Hz   | 2.71 | 1.3 dB  |
-| Peaking | 1469 Hz  | 5.02 | -0.7 dB |
-| Peaking | 4518 Hz  | 6.06 | -4.8 dB |
-| Peaking | 4662 Hz  | 2.53 | 2.1 dB  |
-| Peaking | 24000 Hz | 1.69 | 0.2 dB  |
+| Peaking | 1468 Hz  | 5.01 | -0.7 dB |
+| Peaking | 4564 Hz  | 5.99 | -4.8 dB |
+| Peaking | 4600 Hz  | 2.46 | 2.1 dB  |
+| Peaking | 22050 Hz | 1.71 | 0.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Steelseries%20Flux%20InEar%20Pro/Steelseries%20Flux%20InEar%20Pro.png)

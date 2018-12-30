@@ -12,13 +12,13 @@ GraphicEQ: 21 -12.1; 23 -12.3; 25 -12.5; 28 -12.7; 31 -12.8; 34 -12.9; 37 -12.9;
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Polk Audio Hinge GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-1**
+Set volume attenuation in the Connection tab for both channels to **-1**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Polk Audio Hinge ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.5dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.1dB**.
 
@@ -27,11 +27,11 @@ When using independent subset of filters, apply preamp of **-0.1dB**.
 | Peaking | 38 Hz    | 0.28 | -11.4 dB |
 | Peaking | 161 Hz   | 0.78 | -9.7 dB  |
 | Peaking | 499 Hz   | 1.91 | -5.6 dB  |
-| Peaking | 2007 Hz  | 1.15 | -7.5 dB  |
-| Peaking | 17 Hz    | 1.07 | -2.0 dB  |
-| Peaking | 1031 Hz  | 5.1  | 4.0 dB   |
-| Peaking | 1473 Hz  | 5.48 | -2.4 dB  |
-| Peaking | 7231 Hz  | 5.66 | -4.6 dB  |
-| Peaking | 24000 Hz | 2.42 | -0.9 dB  |
+| Peaking | 2008 Hz  | 1.15 | -7.5 dB  |
+| Peaking | 18 Hz    | 1.11 | -2.0 dB  |
+| Peaking | 1031 Hz  | 5.04 | 4.0 dB   |
+| Peaking | 1471 Hz  | 5.29 | -2.3 dB  |
+| Peaking | 7250 Hz  | 5.4  | -4.6 dB  |
+| Peaking | 22050 Hz | 2.32 | -1.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Polk%20Audio%20Hinge/Polk%20Audio%20Hinge.png)

@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `A Audio Elite NC Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `A Audio Elite NC Active ParametricEQ.txt`.
@@ -26,13 +26,13 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 60 Hz    | 0.14 | 6.3 dB  |
 | Peaking | 508 Hz   | 1.35 | 3.8 dB  |
-| Peaking | 2796 Hz  | 1.19 | 6.4 dB  |
-| Peaking | 5721 Hz  | 3.07 | 5.2 dB  |
-| Peaking | 24000 Hz | 2.36 | 4.3 dB  |
-| Peaking | 705 Hz   | 5.04 | 2.3 dB  |
+| Peaking | 2799 Hz  | 1.18 | 6.4 dB  |
+| Peaking | 5727 Hz  | 3.02 | 5.2 dB  |
+| Peaking | 22050 Hz | 2.35 | 4.2 dB  |
+| Peaking | 704 Hz   | 5.03 | 2.3 dB  |
 | Peaking | 1084 Hz  | 2.57 | -3.0 dB |
-| Peaking | 1902 Hz  | 3.95 | 1.9 dB  |
-| Peaking | 6559 Hz  | 6.89 | 2.1 dB  |
-| Peaking | 7822 Hz  | 2.24 | -1.6 dB |
+| Peaking | 1903 Hz  | 3.94 | 1.9 dB  |
+| Peaking | 6581 Hz  | 6.89 | 2.1 dB  |
+| Peaking | 7820 Hz  | 2.21 | -1.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/A%20Audio%20Elite%20NC%20Active/A%20Audio%20Elite%20NC%20Active.png)

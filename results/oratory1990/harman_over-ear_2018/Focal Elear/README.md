@@ -12,27 +12,27 @@ GraphicEQ: 21 0.0; 23 3.7; 25 3.3; 28 3.0; 31 2.8; 34 2.6; 37 2.4; 41 2.2; 45 2.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Focal Elear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Elear ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.4dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 22 Hz    |  1.2  | 3.9 dB  |
-| Peaking | 51 Hz    |  2.18 | 1.5 dB  |
-| Peaking | 2212 Hz  |  3.39 | 3.9 dB  |
-| Peaking | 4366 Hz  |  1.67 | 6.2 dB  |
-| Peaking | 24000 Hz |  2.2  | 1.7 dB  |
-| Peaking | 177 Hz   |  1.64 | -1.3 dB |
-| Peaking | 1455 Hz  |  4.41 | -0.9 dB |
-| Peaking | 5737 Hz  | 12.67 | -3.2 dB |
-| Peaking | 6496 Hz  | 10.31 | 3.6 dB  |
-| Peaking | 19918 Hz |  3.39 | -7.3 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 22 Hz    | 1.19 | 3.9 dB  |
+| Peaking | 50 Hz    | 2.16 | 1.5 dB  |
+| Peaking | 2209 Hz  | 3.46 | 3.9 dB  |
+| Peaking | 4367 Hz  | 1.62 | 6.2 dB  |
+| Peaking | 19942 Hz | 2.13 | -7.4 dB |
+| Peaking | 176 Hz   | 1.62 | -1.3 dB |
+| Peaking | 1447 Hz  | 4.21 | -0.9 dB |
+| Peaking | 5774 Hz  | 7.78 | -5.5 dB |
+| Peaking | 6480 Hz  | 2.89 | 5.9 dB  |
+| Peaking | 7372 Hz  | 2.2  | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Focal%20Elear/Focal%20Elear.png)

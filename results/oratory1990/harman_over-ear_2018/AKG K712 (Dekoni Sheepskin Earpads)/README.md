@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 1.4; 25 1.0; 28 0.6; 31 0.3; 34 0.0; 37 -0.2; 41 -0.4; 45 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `AKG K712 (Dekoni Sheepskin Earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K712 (Dekoni Sheepskin Earpads) ParametricEQ.txt`.
@@ -25,14 +25,14 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 215 Hz   | 0.63 | -5.3 dB  |
-| Peaking | 2355 Hz  | 1.56 | -13.4 dB |
-| Peaking | 3905 Hz  | 0.72 | 20.4 dB  |
-| Peaking | 5450 Hz  | 0.94 | -14.7 dB |
-| Peaking | 19064 Hz | 0.96 | -9.5 dB  |
-| Peaking | 22 Hz    | 1.89 | 2.0 dB   |
-| Peaking | 663 Hz   | 2.7  | 2.1 dB   |
-| Peaking | 841 Hz   | 0.98 | -1.4 dB  |
-| Peaking | 1303 Hz  | 4.5  | 1.7 dB   |
-| Peaking | 23999 Hz | 1.82 | 0.4 dB   |
+| Peaking | 2351 Hz  | 1.55 | -13.3 dB |
+| Peaking | 3919 Hz  | 0.71 | 20.6 dB  |
+| Peaking | 5438 Hz  | 0.93 | -15.0 dB |
+| Peaking | 19135 Hz | 0.65 | -9.5 dB  |
+| Peaking | 20 Hz    | 2.06 | 1.9 dB   |
+| Peaking | 664 Hz   | 2.73 | 2.1 dB   |
+| Peaking | 846 Hz   | 1    | -1.4 dB  |
+| Peaking | 1302 Hz  | 4.48 | 1.7 dB   |
+| Peaking | 18915 Hz | 4.02 | 0.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20K712%20(Dekoni%20Sheepskin%20Earpads)/AKG%20K712%20(Dekoni%20Sheepskin%20Earpads).png)

@@ -12,7 +12,7 @@ GraphicEQ: 21 -0.2; 23 -0.6; 25 -0.9; 28 -1.2; 31 -1.6; 34 -1.8; 37 -2.0; 41 -2.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Mee Audio Pinnacle PX GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-8**
+Set volume attenuation in the Connection tab for both channels to **-8**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Mee Audio Pinnacle PX ParametricEQ.txt`.
@@ -22,17 +22,17 @@ In case of using other parametric equalizer, apply preamp of **-1.1dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.4dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 172 Hz   | 0.44 | -7.0 dB  |
-| Peaking | 3021 Hz  | 3.92 | -3.9 dB  |
-| Peaking | 4936 Hz  | 3.95 | -5.6 dB  |
-| Peaking | 15231 Hz | 1.53 | -12.7 dB |
-| Peaking | 24000 Hz | 0.88 | -10.7 dB |
-| Peaking | 910 Hz   | 3.34 | 1.3 dB   |
-| Peaking | 1831 Hz  | 3.48 | 1.7 dB   |
-| Peaking | 6783 Hz  | 3.18 | 6.2 dB   |
-| Peaking | 8280 Hz  | 1.48 | -7.5 dB  |
-| Peaking | 9786 Hz  | 3.11 | 7.5 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 172 Hz   | 0.44 | -7.0 dB |
+| Peaking | 3018 Hz  | 3.91 | -3.9 dB |
+| Peaking | 4940 Hz  | 3.72 | -5.7 dB |
+| Peaking | 14412 Hz | 1.58 | -8.7 dB |
+| Peaking | 16438 Hz | 1.63 | -6.8 dB |
+| Peaking | 910 Hz   | 3.35 | 1.3 dB  |
+| Peaking | 1827 Hz  | 3.57 | 1.7 dB  |
+| Peaking | 6762 Hz  | 3.09 | 6.2 dB  |
+| Peaking | 8172 Hz  | 1.59 | -7.8 dB |
+| Peaking | 9847 Hz  | 2.87 | 6.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Mee%20Audio%20Pinnacle%20PX/Mee%20Audio%20Pinnacle%20PX.png)

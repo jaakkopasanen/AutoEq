@@ -12,7 +12,7 @@ GraphicEQ: 21 -2.0; 23 -2.1; 25 -2.1; 28 -2.2; 31 -2.4; 34 -2.5; 37 -2.6; 41 -2.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `KZ AS-10 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-8**
+Set volume attenuation in the Connection tab for both channels to **-8**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `KZ AS-10 ParametricEQ.txt`.
@@ -20,19 +20,19 @@ In case of using Peace, click *Import* in Peace GUI and select `KZ AS-10 Paramet
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-0.0dB**.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 155 Hz   | 0.53 | -7.7 dB |
-| Peaking | 2388 Hz  | 1.44 | -7.4 dB |
-| Peaking | 5380 Hz  | 3.85 | -8.2 dB |
-| Peaking | 12398 Hz | 3.19 | -5.5 dB |
-| Peaking | 24000 Hz | 2.19 | -2.7 dB |
-| Peaking | 26 Hz    | 1.17 | -1.6 dB |
-| Peaking | 823 Hz   | 2.81 | 2.5 dB  |
-| Peaking | 2982 Hz  | 6.91 | 1.1 dB  |
-| Peaking | 3914 Hz  | 9.49 | -3.6 dB |
-| Peaking | 7778 Hz  | 6.88 | 1.9 dB  |
+| Peaking | 2389 Hz  | 1.43 | -7.3 dB |
+| Peaking | 5378 Hz  | 3.81 | -8.2 dB |
+| Peaking | 12416 Hz | 2.88 | -5.5 dB |
+| Peaking | 22050 Hz | 2.19 | -2.6 dB |
+| Peaking | 26 Hz    | 1.22 | -1.5 dB |
+| Peaking | 824 Hz   | 2.8  | 2.6 dB  |
+| Peaking | 2982 Hz  | 7.05 | 1.1 dB  |
+| Peaking | 3940 Hz  | 9.56 | -3.7 dB |
+| Peaking | 7840 Hz  | 6.66 | 1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/KZ%20AS-10/KZ%20AS-10.png)

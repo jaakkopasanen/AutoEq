@@ -12,27 +12,27 @@ GraphicEQ: 21 -4.1; 23 -4.4; 25 -4.7; 28 -5.0; 31 -5.3; 34 -5.6; 37 -5.8; 41 -6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Samsung EO-IG955 (AKG) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-27**
+Set volume attenuation in the Connection tab for both channels to **-27**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Samsung EO-IG955 (AKG) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 46 Hz    | 0.36 | -5.3 dB  |
-| Peaking | 132 Hz   | 0.76 | -4.5 dB  |
+| Peaking | 132 Hz   | 0.77 | -4.5 dB  |
 | Peaking | 275 Hz   | 1.2  | -3.1 dB  |
-| Peaking | 15580 Hz | 2.04 | -22.0 dB |
-| Peaking | 17808 Hz | 1.17 | -21.0 dB |
-| Peaking | 823 Hz   | 4.24 | 1.1 dB   |
-| Peaking | 5344 Hz  | 4.27 | -2.1 dB  |
-| Peaking | 6677 Hz  | 3.8  | 6.0 dB   |
-| Peaking | 9134 Hz  | 3.81 | -3.2 dB  |
-| Peaking | 24000 Hz | 1.76 | 0.5 dB   |
+| Peaking | 15656 Hz | 1.79 | -22.0 dB |
+| Peaking | 17999 Hz | 0.85 | -22.0 dB |
+| Peaking | 824 Hz   | 4.25 | 1.1 dB   |
+| Peaking | 5361 Hz  | 4.29 | -2.1 dB  |
+| Peaking | 6682 Hz  | 3.55 | 6.2 dB   |
+| Peaking | 9094 Hz  | 3.71 | -2.9 dB  |
+| Peaking | 19886 Hz | 2.29 | -2.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Samsung%20EO-IG955%20(AKG)/Samsung%20EO-IG955%20(AKG).png)

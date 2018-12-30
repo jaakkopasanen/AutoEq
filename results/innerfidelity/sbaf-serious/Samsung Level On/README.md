@@ -12,7 +12,7 @@ GraphicEQ: 21 -4.8; 23 -5.0; 25 -5.2; 28 -5.4; 31 -5.6; 34 -5.8; 37 -5.9; 41 -6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Samsung Level On GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-58**
+Set volume attenuation in the Connection tab for both channels to **-58**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Samsung Level On ParametricEQ.txt`.
@@ -24,14 +24,14 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 29 Hz    | 0.54 | -4.2 dB |
+| Peaking | 28 Hz    | 0.54 | -4.2 dB |
 | Peaking | 137 Hz   | 0.49 | -7.5 dB |
-| Peaking | 2254 Hz  | 2.81 | -5.9 dB |
-| Peaking | 5745 Hz  | 3.14 | 6.7 dB  |
-| Peaking | 315 Hz   | 4.06 | 1.6 dB  |
-| Peaking | 578 Hz   | 2.25 | -2.0 dB |
-| Peaking | 1212 Hz  | 2.45 | 2.1 dB  |
-| Peaking | 1717 Hz  | 4.03 | -1.2 dB |
-| Peaking | 24000 Hz | 1.81 | 0.3 dB  |
+| Peaking | 2259 Hz  | 2.8  | -6.0 dB |
+| Peaking | 5833 Hz  | 3.08 | 6.7 dB  |
+| Peaking | 315 Hz   | 3.95 | 1.7 dB  |
+| Peaking | 579 Hz   | 2.28 | -2.0 dB |
+| Peaking | 1211 Hz  | 2.42 | 2.1 dB  |
+| Peaking | 1721 Hz  | 4.18 | -1.2 dB |
+| Peaking | 22050 Hz | 1.78 | 0.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Samsung%20Level%20On/Samsung%20Level%20On.png)

@@ -12,27 +12,27 @@ GraphicEQ: 21 0.0; 23 2.0; 25 1.3; 28 0.5; 31 -0.2; 34 -0.8; 37 -1.3; 41 -1.8; 4
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser RS 180 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-31**
+Set volume attenuation in the Connection tab for both channels to **-31**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 180 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.1dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 84 Hz    |  0.9  | -3.0 dB |
-| Peaking | 199 Hz   |  0.66 | -4.9 dB |
-| Peaking | 2107 Hz  |  3.68 | -6.8 dB |
-| Peaking | 9055 Hz  |  4.7  | -9.6 dB |
-| Peaking | 24000 Hz |  2.11 | -5.8 dB |
-| Peaking | 20 Hz    |  2.48 | 3.2 dB  |
-| Peaking | 1265 Hz  |  3.74 | 1.8 dB  |
-| Peaking | 4158 Hz  |  2.77 | 5.4 dB  |
-| Peaking | 4830 Hz  |  2.88 | -7.7 dB |
-| Peaking | 7040 Hz  | 10.3  | 4.6 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 84 Hz    | 0.9  | -3.0 dB |
+| Peaking | 199 Hz   | 0.66 | -4.9 dB |
+| Peaking | 2107 Hz  | 3.68 | -6.8 dB |
+| Peaking | 9040 Hz  | 4.45 | -9.5 dB |
+| Peaking | 22050 Hz | 2.17 | -5.7 dB |
+| Peaking | 21 Hz    | 2.62 | 3.4 dB  |
+| Peaking | 1266 Hz  | 3.77 | 1.8 dB  |
+| Peaking | 4147 Hz  | 2.78 | 5.3 dB  |
+| Peaking | 4835 Hz  | 2.86 | -7.6 dB |
+| Peaking | 7041 Hz  | 9.9  | 4.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20180/Sennheiser%20RS%20180.png)

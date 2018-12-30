@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.8; 37 5.4; 41 4.7; 45 4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 660 S GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 660 S ParametricEQ.txt`.
@@ -25,14 +25,14 @@ When using independent subset of filters, apply preamp of **-6.2dB**.
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 24 Hz    | 0.43 | 6.2 dB  |
-| Peaking | 191 Hz   | 0.95 | -2.8 dB |
-| Peaking | 2285 Hz  | 1.73 | 4.2 dB  |
-| Peaking | 6544 Hz  | 8.08 | 5.1 dB  |
-| Peaking | 24000 Hz | 2.24 | 1.3 dB  |
-| Peaking | 628 Hz   | 1.98 | 0.9 dB  |
-| Peaking | 1659 Hz  | 0.92 | -2.6 dB |
-| Peaking | 1846 Hz  | 1.97 | 3.0 dB  |
-| Peaking | 4636 Hz  | 4.37 | 4.8 dB  |
-| Peaking | 5356 Hz  | 6.65 | -4.2 dB |
+| Peaking | 192 Hz   | 0.95 | -2.8 dB |
+| Peaking | 2284 Hz  | 1.73 | 4.2 dB  |
+| Peaking | 6555 Hz  | 7.6  | 5.0 dB  |
+| Peaking | 22050 Hz | 2.27 | 1.1 dB  |
+| Peaking | 628 Hz   | 1.94 | 0.9 dB  |
+| Peaking | 1670 Hz  | 0.93 | -2.7 dB |
+| Peaking | 1837 Hz  | 1.92 | 3.1 dB  |
+| Peaking | 4641 Hz  | 4.31 | 4.8 dB  |
+| Peaking | 5362 Hz  | 6.57 | -4.2 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20660%20S/Sennheiser%20HD%20660%20S.png)

@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 3.5; 25 2.8; 28 1.9; 31 1.0; 34 0.3; 37 -0.3; 41 -0.9; 45 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Koss Porta Pro Wireless GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss Porta Pro Wireless ParametricEQ.txt`.
@@ -24,15 +24,15 @@ When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 18 Hz    |  0.92 | 5.3 dB  |
-| Peaking | 136 Hz   |  0.34 | -5.0 dB |
-| Peaking | 137 Hz   |  1.17 | -0.9 dB |
-| Peaking | 4340 Hz  |  3.56 | 6.4 dB  |
-| Peaking | 22854 Hz |  2.26 | 1.1 dB  |
-| Peaking | 1038 Hz  |  2.02 | 1.0 dB  |
-| Peaking | 1959 Hz  |  2.65 | -3.1 dB |
-| Peaking | 2766 Hz  |  4.47 | 3.1 dB  |
-| Peaking | 5454 Hz  | 10.59 | -4.7 dB |
-| Peaking | 6566 Hz  |  7.26 | 4.4 dB  |
+| Peaking | 18 Hz    |  0.93 | 5.3 dB  |
+| Peaking | 137 Hz   |  0.35 | -5.0 dB |
+| Peaking | 140 Hz   |  1.16 | -0.9 dB |
+| Peaking | 4338 Hz  |  3.53 | 6.4 dB  |
+| Peaking | 21520 Hz |  2.27 | 1.0 dB  |
+| Peaking | 1042 Hz  |  2.09 | 1.0 dB  |
+| Peaking | 1961 Hz  |  2.65 | -3.1 dB |
+| Peaking | 2774 Hz  |  4.48 | 3.1 dB  |
+| Peaking | 5452 Hz  | 10.51 | -4.7 dB |
+| Peaking | 6566 Hz  |  7.09 | 4.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Koss%20Porta%20Pro%20Wireless/Koss%20Porta%20Pro%20Wireless.png)

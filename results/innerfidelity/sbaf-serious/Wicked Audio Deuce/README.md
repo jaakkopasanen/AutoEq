@@ -12,27 +12,27 @@ GraphicEQ: 21 -13.9; 23 -13.8; 25 -13.7; 28 -13.6; 31 -13.4; 34 -13.2; 37 -13.1;
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Wicked Audio Deuce GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-5**
+Set volume attenuation in the Connection tab for both channels to **-5**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Wicked Audio Deuce ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.0dB**.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 21 Hz    | 0.17 | -13.5 dB |
-| Peaking | 171 Hz   | 0.67 | -4.5 dB  |
+| Peaking | 20 Hz    | 0.16 | -13.5 dB |
+| Peaking | 171 Hz   | 0.67 | -4.4 dB  |
 | Peaking | 2226 Hz  | 2.38 | -5.9 dB  |
-| Peaking | 5898 Hz  | 3.15 | -12.0 dB |
-| Peaking | 22468 Hz | 2.24 | -3.8 dB  |
-| Peaking | 853 Hz   | 2.06 | 1.4 dB   |
-| Peaking | 1712 Hz  | 3.99 | -1.3 dB  |
-| Peaking | 7157 Hz  | 5.86 | 1.4 dB   |
-| Peaking | 8165 Hz  | 0.37 | 0.8 dB   |
-| Peaking | 9141 Hz  | 4.02 | -6.6 dB  |
+| Peaking | 5901 Hz  | 3.1  | -12.0 dB |
+| Peaking | 21329 Hz | 2.3  | -3.6 dB  |
+| Peaking | 856 Hz   | 1.11 | 2.5 dB   |
+| Peaking | 1208 Hz  | 0.31 | -1.2 dB  |
+| Peaking | 3700 Hz  | 4.8  | 3.4 dB   |
+| Peaking | 6997 Hz  | 4.75 | 2.2 dB   |
+| Peaking | 9153 Hz  | 4.7  | -5.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Wicked%20Audio%20Deuce/Wicked%20Audio%20Deuce.png)

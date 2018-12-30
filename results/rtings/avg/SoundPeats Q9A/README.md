@@ -12,7 +12,7 @@ GraphicEQ: 21 -5.4; 23 -5.5; 25 -5.5; 28 -5.5; 31 -5.5; 34 -5.5; 37 -5.5; 41 -5.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `SoundPeats Q9A GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-23**
+Set volume attenuation in the Connection tab for both channels to **-23**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `SoundPeats Q9A ParametricEQ.txt`.
@@ -26,13 +26,13 @@ When using independent subset of filters, apply preamp of **-0.1dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 28 Hz    | 0.13 | -5.1 dB |
 | Peaking | 201 Hz   | 0.69 | -7.8 dB |
-| Peaking | 1881 Hz  | 3.6  | -7.9 dB |
-| Peaking | 5636 Hz  | 3.81 | -4.6 dB |
-| Peaking | 22293 Hz | 2.2  | -1.0 dB |
-| Peaking | 856 Hz   | 1.13 | 4.7 dB  |
-| Peaking | 899 Hz   | 0.58 | -3.0 dB |
-| Peaking | 2249 Hz  | 7.68 | -1.9 dB |
-| Peaking | 3193 Hz  | 2.53 | 3.7 dB  |
-| Peaking | 8221 Hz  | 6.58 | -3.6 dB |
+| Peaking | 1882 Hz  | 3.6  | -7.9 dB |
+| Peaking | 5633 Hz  | 3.73 | -4.6 dB |
+| Peaking | 21276 Hz | 2.18 | -1.0 dB |
+| Peaking | 878 Hz   | 2.25 | 1.7 dB  |
+| Peaking | 1545 Hz  | 6.66 | -1.7 dB |
+| Peaking | 2228 Hz  | 6.94 | -2.4 dB |
+| Peaking | 3204 Hz  | 2.73 | 3.3 dB  |
+| Peaking | 8137 Hz  | 6.13 | -3.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/SoundPeats%20Q9A/SoundPeats%20Q9A.png)

@@ -12,7 +12,7 @@ GraphicEQ: 21 -8.8; 23 -9.1; 25 -9.3; 28 -9.5; 31 -9.6; 34 -9.6; 37 -9.5; 41 -9.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser Momentum In-Ear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-51**
+Set volume attenuation in the Connection tab for both channels to **-51**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Momentum In-Ear ParametricEQ.txt`.
@@ -24,15 +24,15 @@ When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 37 Hz    | 0.16 | -9.1 dB  |
+| Peaking | 38 Hz    | 0.15 | -9.1 dB  |
 | Peaking | 222 Hz   | 0.57 | -5.7 dB  |
-| Peaking | 3346 Hz  | 1.08 | 6.7 dB   |
-| Peaking | 16225 Hz | 0.76 | -21.0 dB |
-| Peaking | 24000 Hz | 1.19 | -6.2 dB  |
-| Peaking | 1014 Hz  | 2.04 | 1.1 dB   |
-| Peaking | 4979 Hz  | 3.41 | 2.3 dB   |
-| Peaking | 6858 Hz  | 4.2  | -5.6 dB  |
-| Peaking | 11986 Hz | 3.78 | 3.6 dB   |
-| Peaking | 14344 Hz | 4.52 | -1.5 dB  |
+| Peaking | 3376 Hz  | 1.05 | 6.8 dB   |
+| Peaking | 16384 Hz | 0.6  | -21.0 dB |
+| Peaking | 22050 Hz | 1.14 | -6.3 dB  |
+| Peaking | 1000 Hz  | 2.12 | 1.1 dB   |
+| Peaking | 4998 Hz  | 3.44 | 2.2 dB   |
+| Peaking | 6850 Hz  | 4.23 | -5.5 dB  |
+| Peaking | 11969 Hz | 3.18 | 3.7 dB   |
+| Peaking | 14407 Hz | 3.61 | -1.9 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20Momentum%20In-Ear/Sennheiser%20Momentum%20In-Ear.png)

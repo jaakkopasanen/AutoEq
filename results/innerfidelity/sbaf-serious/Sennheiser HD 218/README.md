@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 5.7; 25 5.3; 28 4.5; 31 3.9; 34 3.3; 37 2.8; 41 2.1; 45 1.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 218 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 218 ParametricEQ.txt`.
@@ -24,15 +24,15 @@ When using independent subset of filters, apply preamp of **-6.0dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 20 Hz    |  0.82 | 6.0 dB  |
-| Peaking | 86 Hz    |  1.78 | -2.4 dB |
+| Peaking | 21 Hz    |  0.82 | 6.0 dB  |
+| Peaking | 86 Hz    |  1.79 | -2.4 dB |
 | Peaking | 183 Hz   |  1.16 | -6.5 dB |
-| Peaking | 3426 Hz  |  1.84 | 6.0 dB  |
-| Peaking | 24000 Hz |  2.3  | 0.4 dB  |
-| Peaking | 340 Hz   |  5.8  | -1.5 dB |
-| Peaking | 662 Hz   |  2.46 | 1.5 dB  |
-| Peaking | 4812 Hz  | 12.54 | -4.0 dB |
-| Peaking | 6687 Hz  | 10.01 | 2.9 dB  |
-| Peaking | 18353 Hz |  3.2  | -2.8 dB |
+| Peaking | 3427 Hz  |  1.83 | 6.0 dB  |
+| Peaking | 22049 Hz |  2.27 | 0.5 dB  |
+| Peaking | 341 Hz   |  5.8  | -1.5 dB |
+| Peaking | 662 Hz   |  2.45 | 1.5 dB  |
+| Peaking | 4826 Hz  | 12.42 | -4.0 dB |
+| Peaking | 6707 Hz  |  9.88 | 2.9 dB  |
+| Peaking | 18224 Hz |  2.24 | -2.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20218/Sennheiser%20HD%20218.png)

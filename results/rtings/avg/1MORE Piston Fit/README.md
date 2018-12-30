@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `1MORE Piston Fit GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `1MORE Piston Fit ParametricEQ.txt`.
@@ -24,15 +24,15 @@ When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 47 Hz    | 0.39 | 7.6 dB  |
-| Peaking | 216 Hz   | 0.6  | -7.4 dB |
-| Peaking | 4508 Hz  | 0.41 | -2.2 dB |
-| Peaking | 4714 Hz  | 1.58 | -6.9 dB |
-| Peaking | 24000 Hz | 1.94 | -3.2 dB |
-| Peaking | 902 Hz   | 2.88 | 2.1 dB  |
-| Peaking | 2491 Hz  | 1.78 | -3.9 dB |
-| Peaking | 2688 Hz  | 5.4  | 7.3 dB  |
-| Peaking | 7825 Hz  | 5.16 | 3.9 dB  |
-| Peaking | 9748 Hz  | 6.41 | -4.7 dB |
+| Peaking | 47 Hz    | 0.39 | 7.5 dB  |
+| Peaking | 217 Hz   | 0.6  | -7.4 dB |
+| Peaking | 4151 Hz  | 0.5  | -2.7 dB |
+| Peaking | 4798 Hz  | 1.63 | -6.5 dB |
+| Peaking | 15260 Hz | 3.08 | -1.3 dB |
+| Peaking | 901 Hz   | 2.9  | 2.1 dB  |
+| Peaking | 2513 Hz  | 1.74 | -3.8 dB |
+| Peaking | 2695 Hz  | 5.34 | 7.4 dB  |
+| Peaking | 7802 Hz  | 4.93 | 3.7 dB  |
+| Peaking | 9736 Hz  | 5.77 | -5.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/1MORE%20Piston%20Fit/1MORE%20Piston%20Fit.png)

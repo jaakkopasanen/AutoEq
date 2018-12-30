@@ -12,27 +12,27 @@ GraphicEQ: 21 -6.2; 23 -6.1; 25 -6.0; 28 -5.8; 31 -5.6; 34 -5.3; 37 -5.1; 41 -4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `SoundPeats QY8 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-18**
+Set volume attenuation in the Connection tab for both channels to **-18**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `SoundPeats QY8 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.3dB**.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 13 Hz    | 0.2  | -6.3 dB |
-| Peaking | 170 Hz   | 1.13 | -5.1 dB |
-| Peaking | 2111 Hz  | 2.93 | -4.9 dB |
-| Peaking | 4490 Hz  | 0.85 | -7.9 dB |
-| Peaking | 22234 Hz | 1.4  | -4.2 dB |
-| Peaking | 733 Hz   | 2.42 | 2.8 dB  |
-| Peaking | 3493 Hz  | 2.89 | 3.1 dB  |
-| Peaking | 4561 Hz  | 5.3  | -3.7 dB |
-| Peaking | 6073 Hz  | 2.24 | 9.9 dB  |
-| Peaking | 6735 Hz  | 0.74 | -5.6 dB |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 13 Hz   | 0.2  | -6.3 dB  |
+| Peaking | 170 Hz  | 1.12 | -5.1 dB  |
+| Peaking | 2253 Hz | 1.8  | -7.0 dB  |
+| Peaking | 4472 Hz | 3.18 | -10.4 dB |
+| Peaking | 9805 Hz | 1.18 | -4.5 dB  |
+| Peaking | 330 Hz  | 1.89 | -1.0 dB  |
+| Peaking | 768 Hz  | 1.41 | 3.0 dB   |
+| Peaking | 1206 Hz | 1.55 | -1.4 dB  |
+| Peaking | 6261 Hz | 5.89 | 2.2 dB   |
+| Peaking | 7812 Hz | 8.34 | -2.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/SoundPeats%20QY8/SoundPeats%20QY8.png)

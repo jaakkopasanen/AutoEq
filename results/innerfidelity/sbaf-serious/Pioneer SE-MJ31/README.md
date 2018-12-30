@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Pioneer SE-MJ31 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pioneer SE-MJ31 ParametricEQ.txt`.
@@ -24,15 +24,15 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 51 Hz    | 0.37 | 8.4 dB   |
-| Peaking | 112 Hz   | 0.8  | -6.7 dB  |
-| Peaking | 1713 Hz  | 1.78 | -11.8 dB |
-| Peaking | 3599 Hz  | 0.73 | 8.3 dB   |
-| Peaking | 7273 Hz  | 5.59 | -6.4 dB  |
-| Peaking | 994 Hz   | 3.47 | 3.9 dB   |
-| Peaking | 1032 Hz  | 1.79 | -2.3 dB  |
-| Peaking | 3932 Hz  | 6.41 | -0.9 dB  |
-| Peaking | 5946 Hz  | 6.06 | 3.0 dB   |
-| Peaking | 22061 Hz | 0.1  | -1.7 dB  |
+| Peaking | 50 Hz    | 0.38 | 8.2 dB   |
+| Peaking | 113 Hz   | 0.82 | -6.4 dB  |
+| Peaking | 1714 Hz  | 1.75 | -11.9 dB |
+| Peaking | 3588 Hz  | 0.7  | 8.3 dB   |
+| Peaking | 7374 Hz  | 5.37 | -6.4 dB  |
+| Peaking | 989 Hz   | 5.64 | 1.6 dB   |
+| Peaking | 1355 Hz  | 8.65 | -1.9 dB  |
+| Peaking | 3927 Hz  | 5.74 | -1.0 dB  |
+| Peaking | 5918 Hz  | 7.68 | 2.7 dB   |
+| Peaking | 19976 Hz | 0.4  | -2.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20SE-MJ31/Pioneer%20SE-MJ31.png)

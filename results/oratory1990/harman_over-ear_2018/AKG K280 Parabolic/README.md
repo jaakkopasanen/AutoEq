@@ -12,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `AKG K280 Parabolic GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K280 Parabolic ParametricEQ.txt`.
@@ -25,14 +25,14 @@ When using independent subset of filters, apply preamp of **-6.8dB**.
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 32 Hz    | 0.69 | 6.7 dB  |
-| Peaking | 1347 Hz  | 4.48 | 3.6 dB  |
-| Peaking | 3100 Hz  | 1.44 | 3.7 dB  |
-| Peaking | 6411 Hz  | 7.1  | 4.8 dB  |
-| Peaking | 24000 Hz | 2.25 | 2.0 dB  |
-| Peaking | 563 Hz   | 0.4  | -1.2 dB |
-| Peaking | 1171 Hz  | 6.01 | 1.6 dB  |
-| Peaking | 3447 Hz  | 4.2  | -4.3 dB |
-| Peaking | 3815 Hz  | 1.73 | 3.6 dB  |
-| Peaking | 5350 Hz  | 9.49 | -4.9 dB |
+| Peaking | 1346 Hz  | 4.51 | 3.6 dB  |
+| Peaking | 3107 Hz  | 1.42 | 3.7 dB  |
+| Peaking | 6423 Hz  | 7.33 | 5.0 dB  |
+| Peaking | 22050 Hz | 2.29 | 1.8 dB  |
+| Peaking | 575 Hz   | 0.4  | -1.2 dB |
+| Peaking | 1173 Hz  | 6    | 1.7 dB  |
+| Peaking | 3426 Hz  | 4.06 | -4.4 dB |
+| Peaking | 3791 Hz  | 1.68 | 3.6 dB  |
+| Peaking | 5362 Hz  | 9.46 | -4.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20K280%20Parabolic/AKG%20K280%20Parabolic.png)

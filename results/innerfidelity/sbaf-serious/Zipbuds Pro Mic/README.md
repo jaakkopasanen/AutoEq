@@ -12,7 +12,7 @@ GraphicEQ: 21 -6.9; 23 -7.3; 25 -7.7; 28 -8.1; 31 -8.3; 34 -8.5; 37 -8.6; 41 -8.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Zipbuds Pro Mic GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-5**
+Set volume attenuation in the Connection tab for both channels to **-5**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Zipbuds Pro Mic ParametricEQ.txt`.
@@ -20,19 +20,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Zipbuds Pro Mic 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-0.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.1dB**.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 43 Hz    | 0.32 | -8.2 dB  |
-| Peaking | 144 Hz   | 0.74 | -5.1 dB  |
-| Peaking | 295 Hz   | 1.32 | -3.0 dB  |
-| Peaking | 5578 Hz  | 0.75 | -7.5 dB  |
-| Peaking | 24000 Hz | 2.51 | -6.5 dB  |
-| Peaking | 2293 Hz  | 2.09 | -2.7 dB  |
-| Peaking | 3729 Hz  | 4.6  | 3.4 dB   |
-| Peaking | 5031 Hz  | 2.86 | -14.1 dB |
-| Peaking | 6253 Hz  | 1.07 | 12.1 dB  |
-| Peaking | 8300 Hz  | 3.23 | -12.1 dB |
+| Peaking | 42 Hz    | 0.32 | -8.2 dB  |
+| Peaking | 143 Hz   | 0.74 | -5.2 dB  |
+| Peaking | 294 Hz   | 1.32 | -3.0 dB  |
+| Peaking | 5642 Hz  | 0.71 | -7.4 dB  |
+| Peaking | 22050 Hz | 2.36 | -6.8 dB  |
+| Peaking | 2300 Hz  | 2.12 | -2.7 dB  |
+| Peaking | 3720 Hz  | 4.59 | 3.3 dB   |
+| Peaking | 5008 Hz  | 2.86 | -14.1 dB |
+| Peaking | 6315 Hz  | 1.04 | 11.9 dB  |
+| Peaking | 8318 Hz  | 3.11 | -12.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Zipbuds%20Pro%20Mic/Zipbuds%20Pro%20Mic.png)

@@ -12,27 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 448 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 448 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6dB**.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 32 Hz    | 0.51 | 6.3 dB  |
 | Peaking | 91 Hz    | 1.87 | 3.9 dB  |
-| Peaking | 379 Hz   | 1.32 | 2.3 dB  |
-| Peaking | 4798 Hz  | 2.09 | 5.7 dB  |
-| Peaking | 24000 Hz | 2.44 | 2.1 dB  |
-| Peaking | 125 Hz   | 3.28 | 1.3 dB  |
-| Peaking | 164 Hz   | 3.27 | -2.9 dB |
-| Peaking | 219 Hz   | 5.73 | 2.6 dB  |
-| Peaking | 2045 Hz  | 2.13 | -4.1 dB |
-| Peaking | 2350 Hz  | 2.58 | 2.5 dB  |
+| Peaking | 378 Hz   | 1.32 | 2.3 dB  |
+| Peaking | 4804 Hz  | 2.06 | 5.7 dB  |
+| Peaking | 22050 Hz | 2.34 | 2.2 dB  |
+| Peaking | 166 Hz   | 5.39 | -2.8 dB |
+| Peaking | 222 Hz   | 6.52 | 2.3 dB  |
+| Peaking | 1851 Hz  | 3.1  | -2.8 dB |
+| Peaking | 6372 Hz  | 2.33 | -2.8 dB |
+| Peaking | 6464 Hz  | 5.68 | 6.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20448/Sennheiser%20HD%20448.png)

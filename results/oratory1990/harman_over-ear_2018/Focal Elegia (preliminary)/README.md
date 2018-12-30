@@ -12,27 +12,26 @@ GraphicEQ: 21 0.0; 23 1.2; 25 1.2; 28 1.2; 31 1.4; 34 1.9; 37 2.4; 41 2.6; 45 2.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Focal Elegia (preliminary) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Elegia (preliminary) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 44 Hz    | 1.96 | 3.1 dB   |
-| Peaking | 187 Hz   | 1.8  | 2.1 dB   |
-| Peaking | 2299 Hz  | 4.24 | 4.3 dB   |
-| Peaking | 3781 Hz  | 1.51 | 6.3 dB   |
-| Peaking | 24000 Hz | 2.3  | 1.6 dB   |
-| Peaking | 91 Hz    | 2.82 | -1.2 dB  |
-| Peaking | 740 Hz   | 0.22 | 0.3 dB   |
-| Peaking | 1709 Hz  | 5.12 | -1.8 dB  |
-| Peaking | 17665 Hz | 1.89 | 3.0 dB   |
-| Peaking | 20007 Hz | 1.88 | -13.5 dB |
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 43 Hz    |  1.96 | 3.1 dB   |
+| Peaking | 189 Hz   |  1.82 | 2.1 dB   |
+| Peaking | 2283 Hz  |  4.97 | 4.3 dB   |
+| Peaking | 3753 Hz  |  1.42 | 6.3 dB   |
+| Peaking | 19790 Hz |  2.02 | -13.3 dB |
+| Peaking | 91 Hz    |  2.63 | -1.2 dB  |
+| Peaking | 1712 Hz  |  4.65 | -1.8 dB  |
+| Peaking | 4728 Hz  |  0.04 | 0.3 dB   |
+| Peaking | 5531 Hz  | 13.06 | -3.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Focal%20Elegia%20(preliminary)/Focal%20Elegia%20(preliminary).png)

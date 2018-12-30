@@ -12,27 +12,27 @@ GraphicEQ: 21 -11.9; 23 -11.8; 25 -11.7; 28 -11.5; 31 -11.3; 34 -11.1; 37 -11.0;
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Denon AH-C452K GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-9**
+Set volume attenuation in the Connection tab for both channels to **-9**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C452K ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-0.0dB**.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 23 Hz    | 0.21 | -11.5 dB |
-| Peaking | 155 Hz   | 0.74 | -3.3 dB  |
-| Peaking | 2413 Hz  | 2.03 | -5.8 dB  |
-| Peaking | 6073 Hz  | 1.27 | -8.8 dB  |
-| Peaking | 24000 Hz | 2.37 | -6.2 dB  |
-| Peaking | 3857 Hz  | 6.65 | 3.4 dB   |
-| Peaking | 5661 Hz  | 5.57 | -5.0 dB  |
-| Peaking | 6959 Hz  | 3.06 | 5.8 dB   |
-| Peaking | 9050 Hz  | 3.02 | -10.5 dB |
-| Peaking | 10329 Hz | 2.13 | 5.5 dB   |
+| Peaking | 22 Hz    | 0.2  | -11.5 dB |
+| Peaking | 156 Hz   | 0.74 | -3.2 dB  |
+| Peaking | 2411 Hz  | 2.04 | -5.7 dB  |
+| Peaking | 6116 Hz  | 1.19 | -8.7 dB  |
+| Peaking | 22050 Hz | 2.34 | -6.2 dB  |
+| Peaking | 3860 Hz  | 6.45 | 3.4 dB   |
+| Peaking | 5671 Hz  | 5.3  | -5.2 dB  |
+| Peaking | 6919 Hz  | 2.98 | 5.9 dB   |
+| Peaking | 8972 Hz  | 2.97 | -10.0 dB |
+| Peaking | 10487 Hz | 2.1  | 5.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-C452K/Denon%20AH-C452K.png)
