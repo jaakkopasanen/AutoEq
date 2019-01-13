@@ -1188,8 +1188,7 @@ class FrequencyResponse:
                                 help='Sampling frequency for impulse response and paramteric eq filters.'
                                      'Defaults to {}.'.format(DEFAULT_FS))
         arg_parser.add_argument('--bitdepth', type=str, default=DEFAULT_BITDEPTH,
-                                help='Number of bits for every sample.'
-                                     'Defaults to {}.'.format(DEFAULT_BITDEPTH))
+                                help='Number of bits for every sample. Defaults to {}.'.format(DEFAULT_BITDEPTH))
         arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
                                 help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
                                      ' Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
