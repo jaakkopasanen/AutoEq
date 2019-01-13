@@ -1,4 +1,5 @@
 # Audio Technica ATH-M50x
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -0.9; 23 -1.4; 25 -1.8; 28 -2.2; 31 -2.6; 34 -2.8; 37 -3.0; 41 -3.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio Technica ATH-M50x GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M50x ParametricEQ.txt`.
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 42 Hz    | 1.25 | -3.5 dB |
+| Peaking | 42 Hz    | 1.24 | -3.6 dB |
 | Peaking | 144 Hz   | 3.15 | -4.0 dB |
-| Peaking | 1884 Hz  | 2.57 | -3.7 dB |
-| Peaking | 3350 Hz  | 3.97 | 4.2 dB  |
-| Peaking | 5777 Hz  | 3.34 | 6.8 dB  |
-| Peaking | 90 Hz    | 7.44 | 1.6 dB  |
-| Peaking | 196 Hz   | 4.65 | -2.2 dB |
-| Peaking | 321 Hz   | 2.12 | 2.8 dB  |
-| Peaking | 1168 Hz  | 7.91 | 0.9 dB  |
-| Peaking | 24000 Hz | 1.79 | 0.3 dB  |
+| Peaking | 1884 Hz  | 2.56 | -3.7 dB |
+| Peaking | 3350 Hz  | 3.93 | 4.1 dB  |
+| Peaking | 5780 Hz  | 3.27 | 6.8 dB  |
+| Peaking | 89 Hz    | 7.34 | 1.6 dB  |
+| Peaking | 198 Hz   | 4.67 | -2.2 dB |
+| Peaking | 320 Hz   | 2.11 | 2.8 dB  |
+| Peaking | 1171 Hz  | 7.94 | 0.9 dB  |
+| Peaking | 22050 Hz | 1.78 | 0.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-M50x/Audio%20Technica%20ATH-M50x.png)

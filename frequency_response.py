@@ -9,6 +9,7 @@ import pandas as pd
 from scipy.interpolate import InterpolatedUnivariateSpline
 from scipy.signal import savgol_filter, find_peaks
 from scipy.special import expit
+from scipy.io import wavfile
 import numpy as np
 from glob import glob
 import urllib
@@ -36,6 +37,7 @@ DEFAULT_SMOOTHING_ITERATIONS = 10
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 5
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 DEFAULT_TILT = 0.0
+DEFAULT_FS = 44100
 
 DEFAULT_OE_BASS_BOOST_F_LOWER = 35
 DEFAULT_OE_BASS_BOOST_F_UPPER = 280
@@ -231,11 +233,10 @@ class FrequencyResponse:
         return s
 
     @staticmethod
-    def _run_optimize_parametric_eq(frequency, target, max_time=5, max_filters=None):
+    def _run_optimize_parametric_eq(frequency, target, max_time=5, max_filters=None, fs=DEFAULT_FS):
         # Reset graph to be able to run this again
         tf.reset_default_graph()
         # Sampling frequency
-        fs = 48000
         fs_tf = tf.constant(fs, name='f', dtype='float32')
 
         # Filter heavily and find peaks
@@ -570,10 +571,29 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
+    def impulse_response(self, fs=DEFAULT_FS):
+        """Generates impulse response implementation of equalization filter."""
+        # Interpolate to even sample interval
+        fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
+        fr.interpolate(np.arange(0, fs // 2, 5))
+        n = len(fr.frequency)
+        fr.raw[fr.frequency <= 10.0] = 0.0
+        # Reduce by max gain to avoid clipping with 1 dB of headroom
+        fr.raw -= np.max(fr.raw)
+        fr.raw -= 1.0
+        # Convert amplitude to linear scale
+        fr.raw = 10**(fr.raw / 20)
+        # Mirror
+        fr_data = np.zeros(n*2)
+        fr_data[1:n+1] = fr.raw  # First half is the original data
+        fr_data[n+1:2*n] = fr.raw[:-1][::-1]  # Second half is data until second to last element reversed
+        # IFFT
+        ir = np.real(np.fft.ifft(fr_data))
+        ir = np.concatenate((ir[n:], ir[:n]))
+        return ir
+
     def write_readme(self,
                      file_path,
-                     write_graphic_eq=False,
-                     write_parametric_eq=False,
                      max_filters=None,
                      max_gains=None):
         """Writes README.md with picture and Equalizer APO settings."""
@@ -583,10 +603,12 @@ class FrequencyResponse:
 
         # Write model
         s = '# {}\n'.format(model)
+        s += 'See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and ' \
+             'info.\n'
 
         # Add GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
-        if write_graphic_eq and os.path.isfile(graphic_eq_path):
+        if os.path.isfile(graphic_eq_path):
             preamp = min(0.0, float(-np.max(self.equalization))) - 0.1
 
             # Read Graphig eq
@@ -606,7 +628,7 @@ class FrequencyResponse:
             ### HeSuVi
             HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
             `{model} GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-            Set volume attenuation in the Connection tab for both channels to **{i_preamp}**
+            Set volume attenuation in the Connection tab for both channels to **{i_preamp}**.
             '''.format(
                 model=model,
                 preamp=preamp,
@@ -617,7 +639,7 @@ class FrequencyResponse:
 
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
-        if write_parametric_eq and os.path.isfile(parametric_eq_path):
+        if os.path.isfile(parametric_eq_path):
             preamp = np.min([0.0, float(-np.max(self.parametric_eq))]) - 0.1
 
             # Read Parametric eq
@@ -692,6 +714,12 @@ class FrequencyResponse:
                 preamp_str=preamp_str,
                 filters_table=filters_table_str
             )
+
+        # Write impulse response
+        s += '''
+        ### Impulse Response
+        In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
+        '''
 
         # Write image link
         img_path = os.path.join(dir_path, model + '.png')
@@ -1132,6 +1160,8 @@ class FrequencyResponse:
         arg_parser.add_argument('--output_dir', type=str, default=argparse.SUPPRESS,
                                 help='Path to results directory. Will keep the same relative paths for files found'
                                      'in input_dir.')
+        arg_parser.add_argument('--standardize_input', action='store_true',
+                                help='Overwrite input data in standardized sampling and bias?')
         arg_parser.add_argument('--new_only', action='store_true',
                                 help='Only process input files which don\'t have results in output directory.')
         arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
@@ -1152,6 +1182,9 @@ class FrequencyResponse:
                                      '5 can only be used with the first 5. This allows to have muliple configurations'
                                      'for equalizers with different number of bands available. '
                                      'Not limited by default.')
+        arg_parser.add_argument('--fs', type=int, default=DEFAULT_FS,
+                                help='Sampling frequency for impulse response and paramteric eq filters.'
+                                     'Defaults to {}.'.format(DEFAULT_FS))
         arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
                                 help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
                                      ' Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
@@ -1312,11 +1345,13 @@ class FrequencyResponse:
     def main(input_dir=None,
              output_dir=None,
              new_only=False,
+             standardize_input=False,
              calibration=None,
              compensation=None,
              equalize=False,
              parametric_eq=False,
              max_filters=None,
+             fs=DEFAULT_FS,
              bass_boost=None,
              iem_bass_boost=None,
              tilt=None,
@@ -1363,6 +1398,12 @@ class FrequencyResponse:
             # Read data from input file
             fr = FrequencyResponse.read_from_csv(input_file_path)
 
+            if standardize_input:
+                # Overwrite input data in standard sampling and bias
+                fr.interpolate()
+                fr.center()
+                fr.write_to_csv(input_file_path)
+
             # Process and equalize
             filters, n_filters, max_gains = fr.process(
                 calibration=calibration,
@@ -1391,6 +1432,11 @@ class FrequencyResponse:
                     if parametric_eq:
                         # Write ParametricEq settings to file
                         fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), filters)
+                    # Write impulse response as WAV
+                    fss = [44100, 48000] if fs in [44100, 48000] else [fs]
+                    for fs in fss:
+                        ir = fr.impulse_response(fs=fs)
+                        wavfile.write(output_file_path.replace('.csv', ' {}Hz.wav'.format(fs)), fs, ir)
 
                 # Write results to CSV file
                 fr.write_to_csv(output_file_path)
@@ -1405,8 +1451,6 @@ class FrequencyResponse:
                 _readme_path = os.path.join(output_dir_path, 'README.md')
                 fr.write_readme(
                     _readme_path,
-                    write_graphic_eq=equalize,
-                    write_parametric_eq=parametric_eq,
                     max_filters=n_filters,
                     max_gains=max_gains
                 )

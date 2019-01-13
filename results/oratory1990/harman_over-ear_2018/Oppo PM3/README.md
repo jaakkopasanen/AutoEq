@@ -1,4 +1,5 @@
 # Oppo PM3
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -17,21 +18,21 @@ Set volume attenuation in the Connection tab for both channels to **-32**
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-3.1dB**.
+When using independent subset of filters, apply preamp of **-3.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 44 Hz    | 1.62 | 3.4 dB  |
-| Peaking | 129 Hz   | 1.52 | -4.6 dB |
-| Peaking | 1977 Hz  | 1.51 | -2.8 dB |
-| Peaking | 7230 Hz  | 2.89 | -4.2 dB |
-| Peaking | 13080 Hz | 5.75 | -5.6 dB |
-| Peaking | 202 Hz   | 2.47 | -1.5 dB |
-| Peaking | 360 Hz   | 1.54 | 2.8 dB  |
-| Peaking | 2766 Hz  | 4.87 | -0.9 dB |
-| Peaking | 5247 Hz  | 7.9  | 2.5 dB  |
-| Peaking | 10645 Hz | 5.58 | 1.1 dB  |
+| Peaking | 44 Hz    | 1.61 | 3.4 dB  |
+| Peaking | 128 Hz   | 1.52 | -4.6 dB |
+| Peaking | 1979 Hz  | 1.51 | -2.8 dB |
+| Peaking | 7233 Hz  | 2.89 | -4.2 dB |
+| Peaking | 13026 Hz | 5.79 | -5.6 dB |
+| Peaking | 201 Hz   | 2.39 | -1.5 dB |
+| Peaking | 360 Hz   | 1.55 | 2.8 dB  |
+| Peaking | 2738 Hz  | 5.48 | -1.0 dB |
+| Peaking | 5234 Hz  | 8.16 | 2.6 dB  |
+| Peaking | 15735 Hz | 3.86 | 0.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Oppo%20PM3/Oppo%20PM3.png)

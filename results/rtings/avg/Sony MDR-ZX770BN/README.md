@@ -1,4 +1,5 @@
 # Sony MDR-ZX770BN
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -4.4; 23 -5.1; 25 -5.7; 28 -6.5; 31 -7.1; 34 -7.4; 37 -7.6; 41 -7.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony MDR-ZX770BN GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-16**
+Set volume attenuation in the Connection tab for both channels to **-16**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-ZX770BN ParametricEQ.txt`.
@@ -19,19 +20,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-ZX770BN
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--1.1dB**.
+When using independent subset of filters, apply preamp of **--1.0dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 67 Hz    | 0.23 | -7.6 dB  |
-| Peaking | 2081 Hz  | 3.84 | -6.8 dB  |
-| Peaking | 8972 Hz  | 0.45 | -7.0 dB  |
-| Peaking | 17655 Hz | 1.79 | -10.2 dB |
-| Peaking | 22208 Hz | 1    | -10.9 dB |
-| Peaking | 619 Hz   | 2.12 | 2.1 dB   |
-| Peaking | 3609 Hz  | 7.43 | 8.5 dB   |
-| Peaking | 4783 Hz  | 1.48 | -15.5 dB |
-| Peaking | 6379 Hz  | 1.05 | 16.2 dB  |
-| Peaking | 8785 Hz  | 1.76 | -9.0 dB  |
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 67 Hz    |  0.23 | -7.6 dB  |
+| Peaking | 2112 Hz  |  3.13 | -7.8 dB  |
+| Peaking | 4690 Hz  |  4.29 | -10.3 dB |
+| Peaking | 9380 Hz  |  2.17 | -9.0 dB  |
+| Peaking | 17724 Hz |  0.79 | -13.0 dB |
+| Peaking | 271 Hz   |  0.92 | -6.5 dB  |
+| Peaking | 329 Hz   |  0.47 | 4.8 dB   |
+| Peaking | 3599 Hz  | 10.35 | 6.4 dB   |
+| Peaking | 4478 Hz  |  0.66 | -1.9 dB  |
+| Peaking | 6409 Hz  |  3.92 | 4.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sony%20MDR-ZX770BN/Sony%20MDR-ZX770BN.png)

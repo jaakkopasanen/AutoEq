@@ -1,4 +1,5 @@
 # Campfire Audio Vega (Foam Eartips)
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -7.0; 23 -7.1; 25 -7.2; 28 -7.3; 31 -7.3; 34 -7.3; 37 -7.3; 41 -7.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Campfire Audio Vega (Foam Eartips) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Campfire Audio Vega (Foam Eartips) ParametricEQ.txt`.
@@ -19,19 +20,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Campfire Audio V
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.0dB**.
+When using independent subset of filters, apply preamp of **--0.1dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 30 Hz    | 0.26 | -7.0 dB  |
-| Peaking | 139 Hz   | 0.83 | -5.0 dB  |
-| Peaking | 276 Hz   | 1.36 | -3.0 dB  |
-| Peaking | 16051 Hz | 1.62 | -14.3 dB |
-| Peaking | 24000 Hz | 2.12 | -10.3 dB |
-| Peaking | 1549 Hz  | 1.44 | -3.4 dB  |
-| Peaking | 3197 Hz  | 0.68 | 8.0 dB   |
-| Peaking | 10011 Hz | 1.06 | -9.0 dB  |
-| Peaking | 12566 Hz | 2.82 | 9.3 dB   |
-| Peaking | 19627 Hz | 3.23 | 3.2 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 30 Hz    | 0.26 | -7.0 dB |
+| Peaking | 139 Hz   | 0.83 | -5.0 dB |
+| Peaking | 276 Hz   | 1.37 | -3.0 dB |
+| Peaking | 16094 Hz | 2.77 | -6.6 dB |
+| Peaking | 16108 Hz | 0.79 | -8.1 dB |
+| Peaking | 1553 Hz  | 1.5  | -3.2 dB |
+| Peaking | 3159 Hz  | 0.72 | 7.8 dB  |
+| Peaking | 9805 Hz  | 1.23 | -8.4 dB |
+| Peaking | 12707 Hz | 2.32 | 8.2 dB  |
+| Peaking | 14862 Hz | 5.23 | -2.7 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Campfire%20Audio%20Vega%20(Foam%20Eartips)/Campfire%20Audio%20Vega%20(Foam%20Eartips).png)

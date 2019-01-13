@@ -1,4 +1,5 @@
 # Grado RS1
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Grado RS1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado RS1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.52 | 7.4 dB  |
-| Peaking | 1960 Hz  | 2.95 | -9.5 dB |
-| Peaking | 7010 Hz  | 1.29 | -9.7 dB |
-| Peaking | 17781 Hz | 3.36 | -8.4 dB |
-| Peaking | 24000 Hz | 2.21 | -7.7 dB |
-| Peaking | 51 Hz    | 2.03 | 3.5 dB  |
-| Peaking | 124 Hz   | 0.8  | -3.9 dB |
-| Peaking | 3625 Hz  | 5.24 | 4.9 dB  |
-| Peaking | 4411 Hz  | 7.91 | -8.2 dB |
-| Peaking | 11967 Hz | 3.4  | 3.1 dB  |
+| Peaking | 32 Hz    | 1.53 | 7.5 dB  |
+| Peaking | 1959 Hz  | 2.96 | -9.5 dB |
+| Peaking | 7030 Hz  | 1.25 | -9.7 dB |
+| Peaking | 17827 Hz | 2.37 | -8.5 dB |
+| Peaking | 22050 Hz | 2.01 | -5.0 dB |
+| Peaking | 136 Hz   | 1.1  | -3.9 dB |
+| Peaking | 3642 Hz  | 5.42 | 4.9 dB  |
+| Peaking | 4432 Hz  | 7.17 | -8.3 dB |
+| Peaking | 9263 Hz  | 3.9  | -9.1 dB |
+| Peaking | 10175 Hz | 1.35 | 5.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20RS1/Grado%20RS1.png)

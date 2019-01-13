@@ -1,4 +1,5 @@
 # Denon AH-C551K
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 -10.7; 23 -10.8; 25 -10.9; 28 -11.0; 31 -11.1; 34 -11.1; 37 -11.1;
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Denon AH-C551K GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-5**
+Set volume attenuation in the Connection tab for both channels to **-5**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C551K ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.0dB**.
+When using independent subset of filters, apply preamp of **--0.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 42 Hz    | 0.26 | -11.4 dB |
 | Peaking | 195 Hz   | 0.84 | -4.9 dB  |
 | Peaking | 2564 Hz  | 2.02 | -9.4 dB  |
-| Peaking | 6257 Hz  | 1.17 | -10.3 dB |
-| Peaking | 24000 Hz | 2.11 | -8.7 dB  |
-| Peaking | 3927 Hz  | 3.65 | 5.1 dB   |
-| Peaking | 5931 Hz  | 1.03 | -4.8 dB  |
-| Peaking | 6750 Hz  | 3.54 | 8.1 dB   |
-| Peaking | 8706 Hz  | 3.53 | -8.0 dB  |
-| Peaking | 10388 Hz | 2.18 | 6.3 dB   |
+| Peaking | 6285 Hz  | 1.13 | -10.3 dB |
+| Peaking | 20894 Hz | 2.34 | -8.3 dB  |
+| Peaking | 3917 Hz  | 3.62 | 5.1 dB   |
+| Peaking | 5853 Hz  | 1.05 | -4.8 dB  |
+| Peaking | 6774 Hz  | 3.5  | 8.1 dB   |
+| Peaking | 8750 Hz  | 3.38 | -8.0 dB  |
+| Peaking | 10319 Hz | 2.06 | 6.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-C551K/Denon%20AH-C551K.png)

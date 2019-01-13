@@ -1,4 +1,5 @@
 # Sony MDR-EX600
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.8; 28 5.5; 31 5.2; 34 5.0; 37 4.7; 41 4.4; 45 4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony MDR-EX600 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-EX600 ParametricEQ.txt`.
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 1.02 | 5.9 dB  |
-| Peaking | 53 Hz    | 1.63 | 2.5 dB  |
-| Peaking | 1760 Hz  | 2.25 | -4.4 dB |
-| Peaking | 3257 Hz  | 1.99 | 7.4 dB  |
-| Peaking | 24000 Hz | 2.33 | 1.1 dB  |
-| Peaking | 242 Hz   | 1.12 | -1.3 dB |
-| Peaking | 746 Hz   | 2.47 | 1.3 dB  |
-| Peaking | 4184 Hz  | 5.89 | 3.4 dB  |
-| Peaking | 5307 Hz  | 4.31 | -6.5 dB |
-| Peaking | 6404 Hz  | 5.64 | 5.4 dB  |
+| Peaking | 23 Hz    | 1.03 | 5.9 dB  |
+| Peaking | 54 Hz    | 1.63 | 2.5 dB  |
+| Peaking | 1760 Hz  | 2.24 | -4.4 dB |
+| Peaking | 3258 Hz  | 1.97 | 7.4 dB  |
+| Peaking | 22050 Hz | 2.29 | 1.2 dB  |
+| Peaking | 243 Hz   | 1.16 | -1.3 dB |
+| Peaking | 748 Hz   | 2.49 | 1.3 dB  |
+| Peaking | 4172 Hz  | 5.93 | 3.3 dB  |
+| Peaking | 5294 Hz  | 4.35 | -6.6 dB |
+| Peaking | 6394 Hz  | 5.55 | 5.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-EX600/Sony%20MDR-EX600.png)

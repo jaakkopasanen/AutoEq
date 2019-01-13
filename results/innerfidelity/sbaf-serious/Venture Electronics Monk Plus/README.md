@@ -1,4 +1,5 @@
 # Venture Electronics Monk Plus
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Venture Electronics Monk Plus GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Venture Electronics Monk Plus ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 41 Hz    | 0.75 | 7.3 dB  |
-| Peaking | 2209 Hz  | 1.85 | -8.6 dB |
-| Peaking | 7755 Hz  | 4.17 | -6.2 dB |
-| Peaking | 15126 Hz | 2.9  | -6.7 dB |
-| Peaking | 24000 Hz | 1.64 | -4.4 dB |
-| Peaking | 20 Hz    | 2.99 | 2.5 dB  |
-| Peaking | 83 Hz    | 2.24 | 3.4 dB  |
-| Peaking | 193 Hz   | 0.8  | -3.4 dB |
-| Peaking | 2748 Hz  | 0.07 | 0.6 dB  |
-| Peaking | 4881 Hz  | 6.28 | -4.3 dB |
+| Peaking | 40 Hz    | 0.75 | 7.3 dB  |
+| Peaking | 2208 Hz  | 1.85 | -8.7 dB |
+| Peaking | 7712 Hz  | 3.56 | -5.8 dB |
+| Peaking | 14701 Hz | 3.58 | -3.9 dB |
+| Peaking | 15567 Hz | 3.03 | -4.4 dB |
+| Peaking | 19 Hz    | 3.15 | 2.8 dB  |
+| Peaking | 81 Hz    | 2.49 | 3.2 dB  |
+| Peaking | 192 Hz   | 1.04 | -3.2 dB |
+| Peaking | 4550 Hz  | 1.63 | 3.7 dB  |
+| Peaking | 4723 Hz  | 3.81 | -7.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Venture%20Electronics%20Monk%20Plus/Venture%20Electronics%20Monk%20Plus.png)

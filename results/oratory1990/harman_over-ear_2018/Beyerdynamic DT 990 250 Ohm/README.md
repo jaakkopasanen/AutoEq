@@ -1,4 +1,5 @@
 # Beyerdynamic DT 990 250 Ohm
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -28,10 +29,10 @@ When using independent subset of filters, apply preamp of **-4.6dB**.
 | Peaking | 5789 Hz  | 2.39 | -5.3 dB  |
 | Peaking | 12547 Hz | 3.59 | -7.6 dB  |
 | Peaking | 19650 Hz | 0.49 | -16.2 dB |
-| Peaking | 63 Hz    | 4.15 | -0.7 dB  |
+| Peaking | 67 Hz    | 4.09 | -0.8 dB  |
 | Peaking | 379 Hz   | 3.93 | 1.5 dB   |
 | Peaking | 684 Hz   | 1.42 | 3.6 dB   |
-| Peaking | 740 Hz   | 0.41 | -1.3 dB  |
-| Peaking | 18057 Hz | 3.45 | -0.4 dB  |
+| Peaking | 738 Hz   | 0.4  | -1.3 dB  |
+| Peaking | 18058 Hz | 3.45 | -0.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20990%20250%20Ohm/Beyerdynamic%20DT%20990%20250%20Ohm.png)

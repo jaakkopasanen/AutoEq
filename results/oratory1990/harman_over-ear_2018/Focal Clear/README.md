@@ -1,4 +1,5 @@
 # Focal Clear
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 18 Hz    |  0.54 | 5.7 dB  |
-| Peaking | 59 Hz    |  0.83 | 2.1 dB  |
+| Peaking | 18 Hz    |  0.56 | 5.6 dB  |
+| Peaking | 59 Hz    |  0.82 | 2.1 dB  |
 | Peaking | 475 Hz   |  1.33 | 2.2 dB  |
 | Peaking | 2251 Hz  |  5.05 | 2.3 dB  |
 | Peaking | 4696 Hz  |  2.09 | 6.1 dB  |
-| Peaking | 715 Hz   |  3.67 | 0.8 dB  |
+| Peaking | 715 Hz   |  3.64 | 0.8 dB  |
 | Peaking | 1298 Hz  |  3.49 | -2.1 dB |
-| Peaking | 3550 Hz  |  9.24 | -0.8 dB |
-| Peaking | 6593 Hz  | 13.33 | 3.6 dB  |
-| Peaking | 19597 Hz |  1.55 | -6.3 dB |
+| Peaking | 3520 Hz  |  8.86 | -0.8 dB |
+| Peaking | 6544 Hz  | 13.18 | 3.6 dB  |
+| Peaking | 19753 Hz |  1.54 | -6.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Focal%20Clear/Focal%20Clear.png)

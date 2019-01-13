@@ -1,4 +1,5 @@
 # Denon AH-C751K
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 -8.1; 23 -8.3; 25 -8.4; 28 -8.5; 31 -8.6; 34 -8.6; 37 -8.5; 41 -8.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Denon AH-C751K GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-7**
+Set volume attenuation in the Connection tab for both channels to **-7**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C751K ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.0dB**.
+When using independent subset of filters, apply preamp of **--0.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 43 Hz    | 0.3  | -9.0 dB  |
+| Peaking | 44 Hz    | 0.3  | -9.1 dB  |
 | Peaking | 188 Hz   | 1.14 | -3.7 dB  |
-| Peaking | 2494 Hz  | 1.69 | -7.7 dB  |
-| Peaking | 6469 Hz  | 1.17 | -10.0 dB |
-| Peaking | 24000 Hz | 2.32 | -8.2 dB  |
-| Peaking | 3879 Hz  | 4.45 | 4.0 dB   |
-| Peaking | 6107 Hz  | 1    | -3.5 dB  |
-| Peaking | 6803 Hz  | 3.87 | 6.5 dB   |
-| Peaking | 8720 Hz  | 3.61 | -7.1 dB  |
-| Peaking | 10386 Hz | 2.25 | 6.1 dB   |
+| Peaking | 2493 Hz  | 1.69 | -7.6 dB  |
+| Peaking | 6496 Hz  | 1.13 | -10.0 dB |
+| Peaking | 20961 Hz | 2.37 | -8.1 dB  |
+| Peaking | 3862 Hz  | 4.44 | 4.0 dB   |
+| Peaking | 5974 Hz  | 1.03 | -3.5 dB  |
+| Peaking | 6876 Hz  | 3.78 | 6.6 dB   |
+| Peaking | 8791 Hz  | 3.42 | -7.2 dB  |
+| Peaking | 10242 Hz | 2.13 | 6.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-C751K/Denon%20AH-C751K.png)

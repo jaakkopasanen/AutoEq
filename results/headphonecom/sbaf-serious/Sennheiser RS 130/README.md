@@ -1,4 +1,5 @@
 # Sennheiser RS 130
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser RS 130 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 130 ParametricEQ.txt`.
@@ -21,17 +22,17 @@ In case of using other parametric equalizer, apply preamp of **-6.9dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 48 Hz    | 0.47 | 9.6 dB   |
-| Peaking | 163 Hz   | 0.43 | -8.4 dB  |
-| Peaking | 1659 Hz  | 3.68 | -4.6 dB  |
-| Peaking | 4399 Hz  | 1.06 | -8.1 dB  |
-| Peaking | 22967 Hz | 2.38 | -5.6 dB  |
-| Peaking | 1039 Hz  | 4.37 | 2.4 dB   |
-| Peaking | 1700 Hz  | 0.14 | -0.2 dB  |
-| Peaking | 7310 Hz  | 4.71 | 7.3 dB   |
-| Peaking | 9486 Hz  | 3.25 | -10.4 dB |
-| Peaking | 11337 Hz | 2.3  | 3.4 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 48 Hz    | 0.47 | 9.7 dB  |
+| Peaking | 162 Hz   | 0.42 | -8.5 dB |
+| Peaking | 1659 Hz  | 3.73 | -4.6 dB |
+| Peaking | 4404 Hz  | 1.04 | -8.1 dB |
+| Peaking | 21593 Hz | 2.2  | -6.0 dB |
+| Peaking | 1011 Hz  | 1.49 | 3.4 dB  |
+| Peaking | 1303 Hz  | 0.49 | -1.9 dB |
+| Peaking | 2406 Hz  | 8.19 | 4.6 dB  |
+| Peaking | 7252 Hz  | 5.22 | 6.7 dB  |
+| Peaking | 9408 Hz  | 4.85 | -9.4 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20130/Sennheiser%20RS%20130.png)

@@ -1,4 +1,5 @@
 # JBL Duet NC (ANC On)
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,26 +12,26 @@ GraphicEQ: 21 -7.4; 23 -6.9; 25 -6.4; 28 -5.7; 31 -5.1; 34 -4.5; 37 -4.1; 41 -3.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `JBL Duet NC (ANC On) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `JBL Duet NC (ANC On) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 438 Hz   | 1.06 | 6.5 dB  |
-| Peaking | 2306 Hz  | 5.54 | 3.1 dB  |
-| Peaking | 3344 Hz  | 5.32 | 6.1 dB  |
-| Peaking | 23996 Hz | 2.27 | 1.1 dB  |
+| Peaking | 2310 Hz  | 5.64 | 3.1 dB  |
+| Peaking | 3339 Hz  | 5.37 | 6.2 dB  |
+| Peaking | 22043 Hz | 2.29 | 1.0 dB  |
 | Peaking | 13 Hz    | 0.39 | -8.4 dB |
 | Peaking | 120 Hz   | 1.84 | -2.4 dB |
-| Peaking | 1334 Hz  | 2.79 | -3.2 dB |
-| Peaking | 6917 Hz  | 2.18 | 4.6 dB  |
-| Peaking | 7859 Hz  | 3.99 | -5.9 dB |
+| Peaking | 1333 Hz  | 2.79 | -3.2 dB |
+| Peaking | 6976 Hz  | 2.13 | 4.6 dB  |
+| Peaking | 7782 Hz  | 3.83 | -5.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/JBL%20Duet%20NC%20(ANC%20On)/JBL%20Duet%20NC%20(ANC%20On).png)

@@ -1,4 +1,5 @@
 # 1MORE Triple Driver LTNG
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -28,10 +29,10 @@ When using independent subset of filters, apply preamp of **-3.9dB**.
 | Peaking | 4255 Hz  | 4.36 | -6.7 dB  |
 | Peaking | 7484 Hz  | 0.79 | 9.3 dB   |
 | Peaking | 16190 Hz | 1.46 | -34.1 dB |
-| Peaking | 2263 Hz  | 2.02 | -2.2 dB  |
-| Peaking | 5831 Hz  | 4.43 | 4.1 dB   |
-| Peaking | 7817 Hz  | 2.96 | -4.3 dB  |
-| Peaking | 11650 Hz | 1.69 | 5.2 dB   |
-| Peaking | 14435 Hz | 2.66 | -6.5 dB  |
+| Peaking | 2263 Hz  | 2.03 | -2.2 dB  |
+| Peaking | 5832 Hz  | 4.43 | 4.1 dB   |
+| Peaking | 7825 Hz  | 2.96 | -4.3 dB  |
+| Peaking | 11654 Hz | 1.69 | 5.2 dB   |
+| Peaking | 14459 Hz | 2.64 | -6.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/1MORE%20Triple%20Driver%20LTNG/1MORE%20Triple%20Driver%20LTNG.png)

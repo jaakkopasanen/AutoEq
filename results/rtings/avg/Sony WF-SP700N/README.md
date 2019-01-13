@@ -1,4 +1,5 @@
 # Sony WF-SP700N
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 -7.0; 23 -7.4; 25 -7.7; 28 -8.1; 31 -8.3; 34 -8.5; 37 -8.5; 41 -8.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony WF-SP700N GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-21**
+Set volume attenuation in the Connection tab for both channels to **-21**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony WF-SP700N ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.7dB**.
+When using independent subset of filters, apply preamp of **--0.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 42 Hz    | 0.29 | -8.3 dB  |
-| Peaking | 188 Hz   | 0.84 | -4.1 dB  |
-| Peaking | 1800 Hz  | 2.33 | -3.5 dB  |
-| Peaking | 21386 Hz | 0.11 | -4.2 dB  |
-| Peaking | 22195 Hz | 0.5  | -7.0 dB  |
-| Peaking | 5054 Hz  | 3.4  | 5.0 dB   |
-| Peaking | 8706 Hz  | 3.28 | 10.2 dB  |
-| Peaking | 10462 Hz | 1.16 | -16.4 dB |
-| Peaking | 13806 Hz | 0.94 | 12.2 dB  |
-| Peaking | 17756 Hz | 2.45 | -6.8 dB  |
+| Peaking | 41 Hz    | 0.29 | -8.3 dB  |
+| Peaking | 187 Hz   | 0.84 | -4.2 dB  |
+| Peaking | 1827 Hz  | 2.11 | -3.6 dB  |
+| Peaking | 10692 Hz | 4.02 | -10.3 dB |
+| Peaking | 18457 Hz | 1.47 | -10.8 dB |
+| Peaking | 805 Hz   | 3.86 | 2.3 dB   |
+| Peaking | 5450 Hz  | 3.41 | 3.5 dB   |
+| Peaking | 6587 Hz  | 6    | -8.1 dB  |
+| Peaking | 7962 Hz  | 3.65 | 2.5 dB   |
+| Peaking | 22050 Hz | 1.64 | 0.5 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sony%20WF-SP700N/Sony%20WF-SP700N.png)

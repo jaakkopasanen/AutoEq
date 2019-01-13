@@ -1,4 +1,5 @@
 # Sennheiser HD 540 reference-II
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 16 Hz    | 0.17 | 6.5 dB   |
-| Peaking | 172 Hz   | 0.38 | -6.8 dB  |
-| Peaking | 1736 Hz  | 2.21 | 2.9 dB   |
-| Peaking | 6012 Hz  | 2.62 | -4.4 dB  |
-| Peaking | 13134 Hz | 2.94 | -10.2 dB |
-| Peaking | 966 Hz   | 8.51 | 1.2 dB   |
-| Peaking | 2107 Hz  | 4.23 | 0.5 dB   |
-| Peaking | 2806 Hz  | 4.66 | -1.1 dB  |
-| Peaking | 10234 Hz | 4.92 | 2.8 dB   |
-| Peaking | 19208 Hz | 1.76 | -7.2 dB  |
+| Peaking | 17 Hz    | 0.18 | 6.5 dB   |
+| Peaking | 172 Hz   | 0.38 | -6.7 dB  |
+| Peaking | 1734 Hz  | 2.21 | 2.9 dB   |
+| Peaking | 6011 Hz  | 2.62 | -4.4 dB  |
+| Peaking | 13153 Hz | 2.93 | -10.2 dB |
+| Peaking | 989 Hz   | 4.92 | 1.5 dB   |
+| Peaking | 1697 Hz  | 0.39 | -0.4 dB  |
+| Peaking | 2016 Hz  | 5.36 | 0.9 dB   |
+| Peaking | 10212 Hz | 4.7  | 2.8 dB   |
+| Peaking | 19259 Hz | 1.77 | -7.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20540%20reference-II/Sennheiser%20HD%20540%20reference-II.png)

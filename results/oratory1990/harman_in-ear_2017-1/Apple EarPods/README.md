@@ -1,4 +1,5 @@
 # Apple EarPods
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -28,10 +29,10 @@ When using independent subset of filters, apply preamp of **-4.2dB**.
 | Peaking | 5645 Hz  | 4.35 | -6.8 dB  |
 | Peaking | 15026 Hz | 2.86 | -14.8 dB |
 | Peaking | 18719 Hz | 0.89 | -8.5 dB  |
-| Peaking | 107 Hz   | 0.25 | 5.4 dB   |
-| Peaking | 143 Hz   | 0.54 | -7.0 dB  |
-| Peaking | 7519 Hz  | 3.61 | 4.1 dB   |
-| Peaking | 10630 Hz | 1.09 | -5.2 dB  |
-| Peaking | 11567 Hz | 3.47 | 9.2 dB   |
+| Peaking | 107 Hz   | 0.26 | 5.7 dB   |
+| Peaking | 143 Hz   | 0.53 | -7.3 dB  |
+| Peaking | 7479 Hz  | 3.63 | 4.1 dB   |
+| Peaking | 10587 Hz | 1.1  | -5.4 dB  |
+| Peaking | 11640 Hz | 3.42 | 9.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Apple%20EarPods/Apple%20EarPods.png)

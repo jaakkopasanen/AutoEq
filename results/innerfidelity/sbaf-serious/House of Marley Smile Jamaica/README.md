@@ -1,4 +1,5 @@
 # House of Marley Smile Jamaica
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -10.2; 23 -10.3; 25 -10.4; 28 -10.5; 31 -10.6; 34 -10.7; 37 -10.8;
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `House of Marley Smile Jamaica GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `House of Marley Smile Jamaica ParametricEQ.txt`.
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 0.18 | -9.9 dB |
-| Peaking | 166 Hz   | 0.6  | -6.9 dB |
-| Peaking | 358 Hz   | 1.18 | -3.7 dB |
-| Peaking | 3297 Hz  | 2.63 | 7.3 dB  |
-| Peaking | 23651 Hz | 2.37 | 1.5 dB  |
-| Peaking | 1196 Hz  | 1.86 | 2.3 dB  |
-| Peaking | 1699 Hz  | 3.48 | -4.9 dB |
-| Peaking | 4068 Hz  | 6.27 | 3.2 dB  |
-| Peaking | 5306 Hz  | 4.89 | -7.2 dB |
-| Peaking | 6349 Hz  | 5.65 | 6.7 dB  |
+| Peaking | 30 Hz    | 0.19 | -9.9 dB |
+| Peaking | 163 Hz   | 0.6  | -7.1 dB |
+| Peaking | 354 Hz   | 1.13 | -3.9 dB |
+| Peaking | 3299 Hz  | 2.62 | 7.3 dB  |
+| Peaking | 21887 Hz | 2.3  | 1.6 dB  |
+| Peaking | 1218 Hz  | 1.69 | 2.4 dB  |
+| Peaking | 1695 Hz  | 3.38 | -5.1 dB |
+| Peaking | 4065 Hz  | 6.17 | 3.1 dB  |
+| Peaking | 5300 Hz  | 4.78 | -7.2 dB |
+| Peaking | 6342 Hz  | 5.48 | 6.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/House%20of%20Marley%20Smile%20Jamaica/House%20of%20Marley%20Smile%20Jamaica.png)

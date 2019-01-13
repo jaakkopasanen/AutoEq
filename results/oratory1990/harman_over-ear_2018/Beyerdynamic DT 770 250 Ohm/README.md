@@ -1,4 +1,5 @@
 # Beyerdynamic DT 770 250 Ohm
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -24,14 +25,14 @@ When using independent subset of filters, apply preamp of **-5.9dB**.
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 39 Hz    | 0.63 | -5.7 dB |
-| Peaking | 245 Hz   | 1.58 | 5.3 dB  |
+| Peaking | 246 Hz   | 1.58 | 5.3 dB  |
 | Peaking | 3385 Hz  | 2.58 | 6.5 dB  |
-| Peaking | 15463 Hz | 0.33 | -4.0 dB |
+| Peaking | 15464 Hz | 0.33 | -4.0 dB |
 | Peaking | 19381 Hz | 1.07 | -5.7 dB |
-| Peaking | 103 Hz   | 5.76 | 5.7 dB  |
-| Peaking | 132 Hz   | 4.02 | -4.6 dB |
-| Peaking | 6177 Hz  | 6.75 | -3.4 dB |
-| Peaking | 9784 Hz  | 3.24 | 3.4 dB  |
-| Peaking | 12121 Hz | 4.8  | -4.0 dB |
+| Peaking | 104 Hz   | 5.79 | 5.8 dB  |
+| Peaking | 135 Hz   | 4.03 | -4.5 dB |
+| Peaking | 6178 Hz  | 6.69 | -3.4 dB |
+| Peaking | 9786 Hz  | 3.2  | 3.4 dB  |
+| Peaking | 12114 Hz | 4.78 | -4.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm/Beyerdynamic%20DT%20770%20250%20Ohm.png)

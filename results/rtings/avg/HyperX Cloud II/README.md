@@ -1,4 +1,5 @@
 # HyperX Cloud II
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 -2.7; 23 -3.0; 25 -3.4; 28 -3.9; 31 -4.3; 34 -4.5; 37 -4.7; 41 -4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `HyperX Cloud II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HyperX Cloud II ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.15 | -2.6 dB |
+| Peaking | 31 Hz    | 1.16 | -2.6 dB |
 | Peaking | 120 Hz   | 0.42 | -6.1 dB |
-| Peaking | 2096 Hz  | 2.8  | -5.8 dB |
-| Peaking | 8561 Hz  | 2.74 | -9.1 dB |
-| Peaking | 18352 Hz | 0.58 | -8.3 dB |
-| Peaking | 613 Hz   | 2.85 | -1.5 dB |
-| Peaking | 3209 Hz  | 2.68 | -2.7 dB |
-| Peaking | 4093 Hz  | 3.6  | 11.7 dB |
-| Peaking | 4871 Hz  | 3    | -6.0 dB |
-| Peaking | 24000 Hz | 1.57 | 0.8 dB  |
+| Peaking | 2096 Hz  | 2.81 | -5.7 dB |
+| Peaking | 8571 Hz  | 2.67 | -9.0 dB |
+| Peaking | 18803 Hz | 0.37 | -8.5 dB |
+| Peaking | 607 Hz   | 3.08 | -1.5 dB |
+| Peaking | 4101 Hz  | 4.77 | 9.9 dB  |
+| Peaking | 4866 Hz  | 6.58 | -4.0 dB |
+| Peaking | 8897 Hz  | 0.28 | -1.5 dB |
+| Peaking | 11504 Hz | 4.35 | 5.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/HyperX%20Cloud%20II/HyperX%20Cloud%20II.png)

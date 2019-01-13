@@ -1,4 +1,5 @@
 # Westone ADV Alpha
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -7.2; 23 -7.3; 25 -7.3; 28 -7.3; 31 -7.4; 34 -7.5; 37 -7.5; 41 -7.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Westone ADV Alpha GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Westone ADV Alpha ParametricEQ.txt`.
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 27 Hz    | 0.2  | -6.9 dB |
-| Peaking | 142 Hz   | 0.67 | -5.2 dB |
-| Peaking | 292 Hz   | 1.13 | -2.9 dB |
-| Peaking | 3060 Hz  | 2.43 | 6.8 dB  |
-| Peaking | 22793 Hz | 2.29 | 2.6 dB  |
-| Peaking | 842 Hz   | 2.85 | 0.9 dB  |
-| Peaking | 1494 Hz  | 5.59 | -0.9 dB |
-| Peaking | 3745 Hz  | 6.21 | 3.2 dB  |
-| Peaking | 4694 Hz  | 4.19 | -6.2 dB |
-| Peaking | 6237 Hz  | 4.73 | 6.0 dB  |
+| Peaking | 26 Hz    | 0.2  | -6.9 dB |
+| Peaking | 138 Hz   | 0.67 | -5.3 dB |
+| Peaking | 287 Hz   | 1.08 | -3.1 dB |
+| Peaking | 3061 Hz  | 2.42 | 6.8 dB  |
+| Peaking | 21542 Hz | 2.25 | 2.6 dB  |
+| Peaking | 842 Hz   | 2.69 | 0.9 dB  |
+| Peaking | 1493 Hz  | 5.41 | -0.9 dB |
+| Peaking | 3758 Hz  | 6.12 | 3.2 dB  |
+| Peaking | 4708 Hz  | 4.13 | -6.2 dB |
+| Peaking | 6250 Hz  | 4.61 | 6.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Westone%20ADV%20Alpha/Westone%20ADV%20Alpha.png)

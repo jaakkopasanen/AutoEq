@@ -1,4 +1,5 @@
 # Marshall MID ANC
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 -3.8; 23 -3.5; 25 -3.4; 28 -3.3; 31 -3.3; 34 -3.3; 37 -3.2; 41 -3.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Marshall MID ANC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-12**
+Set volume attenuation in the Connection tab for both channels to **-12**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Marshall MID ANC ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 14 Hz    | 0.18 | -3.3 dB  |
-| Peaking | 112 Hz   | 0.74 | -2.9 dB  |
-| Peaking | 3724 Hz  | 1.72 | -7.6 dB  |
-| Peaking | 13648 Hz | 1.86 | -14.1 dB |
-| Peaking | 24000 Hz | 1.83 | -11.6 dB |
-| Peaking | 1813 Hz  | 4.91 | -1.3 dB  |
-| Peaking | 4251 Hz  | 9.73 | -4.0 dB  |
-| Peaking | 5732 Hz  | 2.27 | 8.4 dB   |
-| Peaking | 7321 Hz  | 2.01 | -11.7 dB |
-| Peaking | 9533 Hz  | 3.17 | 7.9 dB   |
+| Peaking | 15 Hz    | 0.2  | -3.3 dB  |
+| Peaking | 112 Hz   | 0.74 | -3.0 dB  |
+| Peaking | 3720 Hz  | 1.74 | -7.6 dB  |
+| Peaking | 13708 Hz | 1.58 | -14.0 dB |
+| Peaking | 21916 Hz | 1.78 | -11.7 dB |
+| Peaking | 1817 Hz  | 4.76 | -1.3 dB  |
+| Peaking | 4273 Hz  | 9.75 | -3.9 dB  |
+| Peaking | 5752 Hz  | 2.36 | 7.9 dB   |
+| Peaking | 7307 Hz  | 2.06 | -11.1 dB |
+| Peaking | 9491 Hz  | 3.09 | 7.7 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Marshall%20MID%20ANC/Marshall%20MID%20ANC.png)

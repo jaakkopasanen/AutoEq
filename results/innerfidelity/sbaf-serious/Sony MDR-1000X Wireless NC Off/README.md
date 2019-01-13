@@ -1,4 +1,5 @@
 # Sony MDR-1000X Wireless NC Off
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -4.1; 23 -4.3; 25 -4.5; 28 -4.7; 31 -4.9; 34 -5.0; 37 -5.2; 41 -5.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony MDR-1000X Wireless NC Off GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-31**
+Set volume attenuation in the Connection tab for both channels to **-31**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1000X Wireless NC Off ParametricEQ.txt`.
@@ -25,13 +26,13 @@ When using independent subset of filters, apply preamp of **-0.1dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 36 Hz    | 0.58 | -5.0 dB |
 | Peaking | 128 Hz   | 1.04 | -5.7 dB |
-| Peaking | 4795 Hz  | 1.43 | -4.8 dB |
-| Peaking | 9028 Hz  | 4.97 | -4.7 dB |
-| Peaking | 24000 Hz | 2.15 | -2.8 dB |
-| Peaking | 951 Hz   | 0.6  | -1.0 dB |
-| Peaking | 1332 Hz  | 2.31 | 4.5 dB  |
-| Peaking | 2077 Hz  | 2.42 | -4.6 dB |
-| Peaking | 2639 Hz  | 3    | 2.9 dB  |
-| Peaking | 11915 Hz | 3.94 | 0.8 dB  |
+| Peaking | 4803 Hz  | 1.41 | -4.8 dB |
+| Peaking | 9034 Hz  | 4.76 | -4.7 dB |
+| Peaking | 22050 Hz | 2.12 | -2.8 dB |
+| Peaking | 975 Hz   | 0.58 | -1.0 dB |
+| Peaking | 1332 Hz  | 2.29 | 4.5 dB  |
+| Peaking | 2081 Hz  | 2.39 | -4.6 dB |
+| Peaking | 2640 Hz  | 2.88 | 3.0 dB  |
+| Peaking | 11823 Hz | 3.96 | 0.7 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-1000X%20Wireless%20NC%20Off/Sony%20MDR-1000X%20Wireless%20NC%20Off.png)

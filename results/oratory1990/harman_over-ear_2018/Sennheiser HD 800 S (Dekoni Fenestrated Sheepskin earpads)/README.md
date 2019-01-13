@@ -1,4 +1,5 @@
 # Sennheiser HD 800 S (Dekoni Fenestrated Sheepskin earpads)
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -24,14 +25,14 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 36 Hz    | 0.57 | 6.7 dB  |
-| Peaking | 1883 Hz  | 2.22 | 4.7 dB  |
-| Peaking | 6556 Hz  | 4.64 | -2.5 dB |
-| Peaking | 17705 Hz | 0.48 | -4.2 dB |
-| Peaking | 18951 Hz | 0.72 | -8.0 dB |
-| Peaking | 2925 Hz  | 6.6  | -1.7 dB |
-| Peaking | 3790 Hz  | 4.72 | 2.3 dB  |
-| Peaking | 4765 Hz  | 7.26 | -2.9 dB |
-| Peaking | 9708 Hz  | 4.86 | 3.5 dB  |
-| Peaking | 11629 Hz | 5.84 | -4.6 dB |
+| Peaking | 1884 Hz  | 2.22 | 4.7 dB  |
+| Peaking | 6556 Hz  | 4.65 | -2.5 dB |
+| Peaking | 17755 Hz | 0.47 | -4.2 dB |
+| Peaking | 18942 Hz | 0.72 | -8.0 dB |
+| Peaking | 2914 Hz  | 6.53 | -1.7 dB |
+| Peaking | 3774 Hz  | 4.66 | 2.3 dB  |
+| Peaking | 4742 Hz  | 7.21 | -2.9 dB |
+| Peaking | 9808 Hz  | 4.86 | 3.5 dB  |
+| Peaking | 11758 Hz | 5.84 | -4.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800%20S%20(Dekoni%20Fenestrated%20Sheepskin%20earpads)/Sennheiser%20HD%20800%20S%20(Dekoni%20Fenestrated%20Sheepskin%20earpads).png)

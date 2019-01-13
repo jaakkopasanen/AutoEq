@@ -1,4 +1,5 @@
 # Meelectronics Air-Fi Matrix2 AF62 Bluetooth
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.3; 31 4.0; 34 2.7; 37 1.7; 41 0.6; 45 -0
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Meelectronics Air-Fi Matrix2 AF62 Bluetooth GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Meelectronics Air-Fi Matrix2 AF62 Bluetooth ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 1.5  | 8.3 dB  |
-| Peaking | 97 Hz    | 0.11 | -2.0 dB |
-| Peaking | 2420 Hz  | 2.17 | 2.9 dB  |
-| Peaking | 4709 Hz  | 2.03 | 5.5 dB  |
-| Peaking | 24000 Hz | 2.22 | 1.7 dB  |
-| Peaking | 65 Hz    | 1.2  | -1.8 dB |
-| Peaking | 69 Hz    | 0.54 | 1.0 dB  |
-| Peaking | 1541 Hz  | 6.44 | -0.6 dB |
-| Peaking | 6631 Hz  | 6.47 | 4.6 dB  |
-| Peaking | 7161 Hz  | 1.55 | -1.7 dB |
+| Peaking | 24 Hz    | 1.52 | 8.3 dB  |
+| Peaking | 103 Hz   | 0.11 | -2.0 dB |
+| Peaking | 2406 Hz  | 2.18 | 2.9 dB  |
+| Peaking | 4715 Hz  | 1.99 | 5.4 dB  |
+| Peaking | 22050 Hz | 2.29 | 1.5 dB  |
+| Peaking | 64 Hz    | 3.42 | -0.9 dB |
+| Peaking | 697 Hz   | 2.28 | -1.1 dB |
+| Peaking | 878 Hz   | 3.11 | 1.4 dB  |
+| Peaking | 6650 Hz  | 6.41 | 4.5 dB  |
+| Peaking | 7185 Hz  | 1.45 | -1.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Meelectronics%20Air-Fi%20Matrix2%20AF62%20Bluetooth/Meelectronics%20Air-Fi%20Matrix2%20AF62%20Bluetooth.png)

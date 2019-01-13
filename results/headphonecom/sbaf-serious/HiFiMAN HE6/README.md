@@ -1,4 +1,5 @@
 # HiFiMAN HE6
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,26 +12,26 @@ GraphicEQ: 21 0.0; 23 2.8; 25 2.1; 28 1.5; 31 1.3; 34 1.2; 37 1.3; 41 1.5; 45 1.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `HiFiMAN HE6 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-57**
+Set volume attenuation in the Connection tab for both channels to **-57**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE6 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-3.1dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 2036 Hz  | 1.95 | 3.1 dB  |
-| Peaking | 4369 Hz  | 9.87 | -3.2 dB |
-| Peaking | 7678 Hz  | 2.39 | -4.8 dB |
-| Peaking | 14749 Hz | 2.8  | -6.7 dB |
-| Peaking | 18 Hz    | 1.69 | 4.4 dB  |
-| Peaking | 56 Hz    | 1.13 | 1.5 dB  |
-| Peaking | 5477 Hz  | 9.65 | 9.2 dB  |
-| Peaking | 6057 Hz  | 4.83 | -4.1 dB |
-| Peaking | 23999 Hz | 2.18 | 0.1 dB  |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 2036 Hz  |  1.94 | 3.1 dB  |
+| Peaking | 4357 Hz  | 10    | -3.3 dB |
+| Peaking | 7683 Hz  |  2.32 | -4.8 dB |
+| Peaking | 14849 Hz |  2.36 | -6.7 dB |
+| Peaking | 17 Hz    |  1.94 | 4.4 dB  |
+| Peaking | 56 Hz    |  1.13 | 1.5 dB  |
+| Peaking | 5484 Hz  |  9.74 | 9.2 dB  |
+| Peaking | 6078 Hz  |  4.72 | -4.0 dB |
+| Peaking | 17986 Hz |  4.44 | 0.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/HiFiMAN%20HE6/HiFiMAN%20HE6.png)

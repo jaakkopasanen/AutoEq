@@ -1,4 +1,5 @@
 # Audeze LCD-X
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -23,14 +24,14 @@ When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 0.9  | 5.9 dB   |
+| Peaking | 22 Hz    | 0.92 | 5.9 dB   |
 | Peaking | 71 Hz    | 0.92 | 1.9 dB   |
-| Peaking | 212 Hz   | 0.71 | -1.4 dB  |
-| Peaking | 3170 Hz  | 1.21 | 2.6 dB   |
-| Peaking | 5547 Hz  | 2.67 | 4.0 dB   |
-| Peaking | 806 Hz   | 4.19 | -0.3 dB  |
-| Peaking | 1746 Hz  | 6.22 | 0.5 dB   |
-| Peaking | 13025 Hz | 0.51 | 1.3 dB   |
-| Peaking | 19798 Hz | 0.98 | -18.7 dB |
+| Peaking | 208 Hz   | 0.7  | -1.4 dB  |
+| Peaking | 3169 Hz  | 1.21 | 2.6 dB   |
+| Peaking | 5546 Hz  | 2.67 | 4.0 dB   |
+| Peaking | 807 Hz   | 4.28 | -0.3 dB  |
+| Peaking | 1752 Hz  | 6.33 | 0.5 dB   |
+| Peaking | 13197 Hz | 0.5  | 1.3 dB   |
+| Peaking | 19852 Hz | 0.98 | -18.8 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audeze%20LCD-X/Audeze%20LCD-X.png)

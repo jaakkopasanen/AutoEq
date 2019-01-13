@@ -1,4 +1,5 @@
 # MrSpeakers Aeon Flow Closed
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,13 +12,13 @@ GraphicEQ: 21 0.0; 23 1.5; 25 1.6; 28 1.9; 31 2.2; 34 2.4; 37 2.6; 41 2.9; 45 3.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `MrSpeakers Aeon Flow Closed GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon Flow Closed ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
@@ -25,13 +26,13 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 49 Hz    | 0.82 | 2.8 dB  |
 | Peaking | 184 Hz   | 0.58 | 4.5 dB  |
-| Peaking | 2085 Hz  | 1.81 | 3.8 dB  |
-| Peaking | 3425 Hz  | 2.44 | 5.6 dB  |
-| Peaking | 24000 Hz | 2.22 | 0.5 dB  |
-| Peaking | 927 Hz   | 5.32 | -1.5 dB |
-| Peaking | 1584 Hz  | 0.26 | 0.2 dB  |
-| Peaking | 5610 Hz  | 8.33 | -4.6 dB |
-| Peaking | 6719 Hz  | 9.78 | 4.0 dB  |
-| Peaking | 19306 Hz | 1.46 | -3.7 dB |
+| Peaking | 2083 Hz  | 1.8  | 3.8 dB  |
+| Peaking | 3426 Hz  | 2.38 | 5.6 dB  |
+| Peaking | 19389 Hz | 0.98 | -3.8 dB |
+| Peaking | 620 Hz   | 5.04 | 0.6 dB  |
+| Peaking | 921 Hz   | 5.88 | -1.3 dB |
+| Peaking | 4973 Hz  | 3.73 | 2.1 dB  |
+| Peaking | 5529 Hz  | 5.18 | -5.5 dB |
+| Peaking | 6687 Hz  | 8.43 | 4.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/MrSpeakers%20Aeon%20Flow%20Closed/MrSpeakers%20Aeon%20Flow%20Closed.png)

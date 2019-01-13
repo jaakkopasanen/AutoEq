@@ -1,4 +1,5 @@
 # Bose QuietComfort 25
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 2.73 | 3.6 dB  |
-| Peaking | 77 Hz    | 0.4  | -1.9 dB |
-| Peaking | 2223 Hz  | 1.11 | -2.3 dB |
+| Peaking | 21 Hz    | 2.73 | 3.7 dB  |
+| Peaking | 85 Hz    | 0.47 | -1.9 dB |
+| Peaking | 2222 Hz  | 1.11 | -2.4 dB |
 | Peaking | 3178 Hz  | 5.92 | 8.3 dB  |
-| Peaking | 13286 Hz | 3.94 | -5.8 dB |
-| Peaking | 543 Hz   | 1.7  | 1.5 dB  |
-| Peaking | 1300 Hz  | 5.86 | -1.8 dB |
-| Peaking | 4017 Hz  | 5.71 | -4.2 dB |
-| Peaking | 5486 Hz  | 1.73 | 4.5 dB  |
-| Peaking | 6089 Hz  | 7.11 | -8.5 dB |
+| Peaking | 13321 Hz | 3.94 | -5.8 dB |
+| Peaking | 545 Hz   | 1.72 | 1.5 dB  |
+| Peaking | 1310 Hz  | 5.87 | -1.8 dB |
+| Peaking | 4032 Hz  | 5.72 | -4.2 dB |
+| Peaking | 5519 Hz  | 1.74 | 4.5 dB  |
+| Peaking | 6059 Hz  | 7.12 | -8.5 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Bose%20QuietComfort%2025/Bose%20QuietComfort%2025.png)

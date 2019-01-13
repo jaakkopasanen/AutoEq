@@ -1,4 +1,5 @@
 # Comradz NW-STUDIO PRO
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 0.0; 23 5.7; 25 5.3; 28 4.4; 31 3.6; 34 2.8; 37 2.2; 41 1.4; 45 0.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Comradz NW-STUDIO PRO GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Comradz NW-STUDIO PRO ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.3dB**.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 1.37 | 6.2 dB   |
-| Peaking | 171 Hz   | 0.68 | -4.4 dB  |
-| Peaking | 1682 Hz  | 2.25 | -18.1 dB |
-| Peaking | 5179 Hz  | 3    | -6.1 dB  |
-| Peaking | 22692 Hz | 2.41 | -2.1 dB  |
-| Peaking | 871 Hz   | 2.67 | 6.1 dB   |
-| Peaking | 1346 Hz  | 5.39 | -5.1 dB  |
-| Peaking | 2266 Hz  | 4.58 | -3.2 dB  |
-| Peaking | 3452 Hz  | 4.8  | 3.3 dB   |
-| Peaking | 8048 Hz  | 7.41 | -5.3 dB  |
+| Peaking | 23 Hz    | 1.36 | 6.2 dB   |
+| Peaking | 172 Hz   | 0.68 | -4.4 dB  |
+| Peaking | 1682 Hz  | 2.24 | -18.1 dB |
+| Peaking | 5180 Hz  | 2.96 | -6.1 dB  |
+| Peaking | 21452 Hz | 2.36 | -2.1 dB  |
+| Peaking | 870 Hz   | 2.66 | 6.1 dB   |
+| Peaking | 1343 Hz  | 5.39 | -5.1 dB  |
+| Peaking | 2271 Hz  | 4.57 | -3.2 dB  |
+| Peaking | 3460 Hz  | 4.78 | 3.3 dB   |
+| Peaking | 8062 Hz  | 7.1  | -5.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Comradz%20NW-STUDIO%20PRO/Comradz%20NW-STUDIO%20PRO.png)

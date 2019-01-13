@@ -1,4 +1,5 @@
 # Sony MDR-1000X Wireless NC Active
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -5.6; 23 -5.3; 25 -5.1; 28 -4.7; 31 -4.4; 34 -4.1; 37 -4.0; 41 -3.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony MDR-1000X Wireless NC Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-29**
+Set volume attenuation in the Connection tab for both channels to **-29**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1000X Wireless NC Active ParametricEQ.txt`.
@@ -19,19 +20,19 @@ In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1000X W
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-2.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-0.0dB**.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 0.69 | -5.3 dB |
-| Peaking | 142 Hz   | 0.52 | -6.0 dB |
-| Peaking | 1936 Hz  | 4.58 | -5.5 dB |
-| Peaking | 5540 Hz  | 0.96 | -5.8 dB |
-| Peaking | 24000 Hz | 2.29 | -4.4 dB |
-| Peaking | 992 Hz   | 0.85 | -1.0 dB |
-| Peaking | 1184 Hz  | 3.56 | 4.4 dB  |
-| Peaking | 7222 Hz  | 5.57 | 5.8 dB  |
-| Peaking | 9150 Hz  | 1.52 | -5.3 dB |
-| Peaking | 11014 Hz | 1.28 | 3.0 dB  |
+| Peaking | 18 Hz    | 0.68 | -5.3 dB |
+| Peaking | 142 Hz   | 0.53 | -6.0 dB |
+| Peaking | 1935 Hz  | 4.58 | -5.5 dB |
+| Peaking | 5574 Hz  | 0.92 | -5.8 dB |
+| Peaking | 22050 Hz | 2.33 | -4.2 dB |
+| Peaking | 1070 Hz  | 0.87 | -1.2 dB |
+| Peaking | 1184 Hz  | 3.41 | 4.6 dB  |
+| Peaking | 6100 Hz  | 6.74 | -3.9 dB |
+| Peaking | 6941 Hz  | 3.69 | 4.8 dB  |
+| Peaking | 8922 Hz  | 4.14 | -4.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-1000X%20Wireless%20NC%20Active/Sony%20MDR-1000X%20Wireless%20NC%20Active.png)

@@ -1,4 +1,5 @@
 # Beyerdynamic DT 1770 (Leatherette Earpads)
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -29,9 +30,9 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 | Peaking | 8287 Hz  | 3.28 | -4.1 dB |
 | Peaking | 11416 Hz | 4.14 | -2.5 dB |
 | Peaking | 170 Hz   | 5.25 | -2.4 dB |
-| Peaking | 250 Hz   | 3.44 | 3.1 dB  |
-| Peaking | 4803 Hz  | 5.61 | 2.6 dB  |
-| Peaking | 6175 Hz  | 4.25 | -4.1 dB |
-| Peaking | 6811 Hz  | 6.74 | 3.4 dB  |
+| Peaking | 250 Hz   | 3.45 | 3.1 dB  |
+| Peaking | 4821 Hz  | 5.67 | 2.6 dB  |
+| Peaking | 6169 Hz  | 4.33 | -4.1 dB |
+| Peaking | 6760 Hz  | 6.71 | 3.4 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201770%20(Leatherette%20Earpads)/Beyerdynamic%20DT%201770%20(Leatherette%20Earpads).png)

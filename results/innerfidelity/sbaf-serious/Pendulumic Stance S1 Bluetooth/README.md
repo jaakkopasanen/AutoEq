@@ -1,4 +1,5 @@
 # Pendulumic Stance S1 Bluetooth
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.8; 45 4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Pendulumic Stance S1 Bluetooth GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pendulumic Stance S1 Bluetooth ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.0dB**.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 37 Hz    | 0.51 | 12.4 dB |
-| Peaking | 78 Hz    | 0.38 | -9.0 dB |
-| Peaking | 3320 Hz  | 2.2  | 4.9 dB  |
-| Peaking | 5827 Hz  | 3.68 | 6.3 dB  |
-| Peaking | 24000 Hz | 2.47 | 4.2 dB  |
-| Peaking | 390 Hz   | 2.54 | -1.1 dB |
-| Peaking | 632 Hz   | 2.42 | 1.9 dB  |
-| Peaking | 1629 Hz  | 1.72 | -3.1 dB |
-| Peaking | 2411 Hz  | 4.34 | 3.5 dB  |
-| Peaking | 9140 Hz  | 4.68 | -1.6 dB |
+| Peaking | 36 Hz    | 0.54 | 11.6 dB |
+| Peaking | 80 Hz    | 0.37 | -8.0 dB |
+| Peaking | 3319 Hz  | 2.19 | 4.9 dB  |
+| Peaking | 5831 Hz  | 3.59 | 6.3 dB  |
+| Peaking | 22050 Hz | 2.43 | 4.2 dB  |
+| Peaking | 391 Hz   | 2.57 | -1.1 dB |
+| Peaking | 632 Hz   | 2.43 | 1.9 dB  |
+| Peaking | 1628 Hz  | 1.72 | -3.1 dB |
+| Peaking | 2402 Hz  | 4.32 | 3.5 dB  |
+| Peaking | 9091 Hz  | 4.49 | -1.6 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pendulumic%20Stance%20S1%20Bluetooth/Pendulumic%20Stance%20S1%20Bluetooth.png)

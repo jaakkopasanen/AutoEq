@@ -1,4 +1,5 @@
 # Sennheiser HD 650
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.7; 41 5.2; 45 5.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 650 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 650 ParametricEQ.txt`.
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 31 Hz    |  0.93 | 6.8 dB  |
-| Peaking | 2021 Hz  |  3.02 | 2.0 dB  |
-| Peaking | 5266 Hz  |  1.32 | 3.4 dB  |
-| Peaking | 18571 Hz |  1.18 | -7.8 dB |
-| Peaking | 24000 Hz |  1.76 | 2.0 dB  |
-| Peaking | 63 Hz    |  2.37 | 2.0 dB  |
-| Peaking | 180 Hz   |  0.9  | -2.3 dB |
-| Peaking | 3128 Hz  |  5.6  | -1.2 dB |
-| Peaking | 4197 Hz  | 10.38 | 2.0 dB  |
-| Peaking | 12887 Hz |  5.33 | 1.2 dB  |
+| Peaking | 31 Hz    |  0.92 | 6.8 dB  |
+| Peaking | 2021 Hz  |  3.03 | 2.0 dB  |
+| Peaking | 5288 Hz  |  1.28 | 3.4 dB  |
+| Peaking | 18694 Hz |  0.82 | -7.8 dB |
+| Peaking | 22050 Hz |  1.76 | 2.2 dB  |
+| Peaking | 62 Hz    |  2.42 | 2.0 dB  |
+| Peaking | 178 Hz   |  0.9  | -2.3 dB |
+| Peaking | 3126 Hz  |  5.51 | -1.2 dB |
+| Peaking | 4182 Hz  | 10.06 | 2.0 dB  |
+| Peaking | 12877 Hz |  4.48 | 1.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)

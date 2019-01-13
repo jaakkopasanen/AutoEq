@@ -1,4 +1,5 @@
 # AKG Y50BT
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -17,7 +18,7 @@ Set volume attenuation in the Connection tab for both channels to **-61**
 In case of using Peace, click *Import* in Peace GUI and select `AKG Y50BT ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.5dB**.
 
@@ -28,10 +29,10 @@ When using independent subset of filters, apply preamp of **-6.5dB**.
 | Peaking | 1413 Hz  | 1.2  | -3.2 dB |
 | Peaking | 2609 Hz  | 2.89 | 6.1 dB  |
 | Peaking | 16974 Hz | 1.16 | -5.7 dB |
-| Peaking | 316 Hz   | 1.4  | 1.6 dB  |
-| Peaking | 339 Hz   | 2.66 | -3.3 dB |
-| Peaking | 3939 Hz  | 9.61 | 2.4 dB  |
-| Peaking | 5633 Hz  | 3.42 | -3.3 dB |
-| Peaking | 7947 Hz  | 1.17 | 1.2 dB  |
+| Peaking | 318 Hz   | 1.41 | 1.7 dB  |
+| Peaking | 337 Hz   | 2.66 | -3.4 dB |
+| Peaking | 3926 Hz  | 9.63 | 2.4 dB  |
+| Peaking | 5621 Hz  | 3.42 | -3.3 dB |
+| Peaking | 7954 Hz  | 1.17 | 1.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20Y50BT/AKG%20Y50BT.png)

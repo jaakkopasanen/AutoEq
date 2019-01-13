@@ -1,4 +1,5 @@
 # Sennheiser IE 80 S
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -17,21 +18,21 @@ Set volume attenuation in the Connection tab for both channels to **-31**
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser IE 80 S ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 29 Hz    | 0.2  | -10.4 dB |
-| Peaking | 157 Hz   | 0.68 | -6.5 dB  |
+| Peaking | 157 Hz   | 0.68 | -6.4 dB  |
 | Peaking | 340 Hz   | 1.18 | -3.6 dB  |
-| Peaking | 4949 Hz  | 6.69 | -7.7 dB  |
-| Peaking | 17399 Hz | 1.24 | -18.6 dB |
-| Peaking | 1126 Hz  | 1.12 | 2.7 dB   |
-| Peaking | 2645 Hz  | 0.9  | 6.4 dB   |
-| Peaking | 5495 Hz  | 0.18 | -5.7 dB  |
-| Peaking | 6836 Hz  | 2.61 | 7.1 dB   |
-| Peaking | 10720 Hz | 1.81 | 8.0 dB   |
+| Peaking | 4924 Hz  | 6.7  | -7.7 dB  |
+| Peaking | 17400 Hz | 1.24 | -18.6 dB |
+| Peaking | 1104 Hz  | 1.24 | 2.3 dB   |
+| Peaking | 2698 Hz  | 0.85 | 6.7 dB   |
+| Peaking | 5673 Hz  | 0.19 | -6.1 dB  |
+| Peaking | 6839 Hz  | 2.69 | 7.2 dB   |
+| Peaking | 10654 Hz | 1.76 | 8.2 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20IE%2080%20S/Sennheiser%20IE%2080%20S.png)

@@ -1,4 +1,5 @@
 # Grado SR225i G Pads
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.6; 37 4.9; 41 3.8; 45 3.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Grado SR225i G Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR225i G Pads ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.3dB**.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 28 Hz    | 0.57 | 7.2 dB   |
-| Peaking | 101 Hz   | 0.6  | -4.9 dB  |
-| Peaking | 5940 Hz  | 3.9  | -1.8 dB  |
-| Peaking | 6984 Hz  | 0.93 | -9.1 dB  |
-| Peaking | 24000 Hz | 2.21 | -7.9 dB  |
-| Peaking | 1626 Hz  | 3.63 | -1.3 dB  |
-| Peaking | 4557 Hz  | 5.03 | 4.8 dB   |
-| Peaking | 4602 Hz  | 1.41 | -3.4 dB  |
-| Peaking | 9534 Hz  | 3.29 | -10.0 dB |
-| Peaking | 9978 Hz  | 0.98 | 6.0 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 28 Hz    | 0.57 | 7.2 dB  |
+| Peaking | 102 Hz   | 0.61 | -4.9 dB |
+| Peaking | 5951 Hz  | 4.35 | -2.0 dB |
+| Peaking | 7049 Hz  | 0.88 | -9.1 dB |
+| Peaking | 22050 Hz | 2.64 | -6.8 dB |
+| Peaking | 1672 Hz  | 2.62 | -1.3 dB |
+| Peaking | 7722 Hz  | 4.92 | 2.9 dB  |
+| Peaking | 9355 Hz  | 2.22 | -5.2 dB |
+| Peaking | 9788 Hz  | 3.75 | -2.5 dB |
+| Peaking | 11375 Hz | 1.47 | 5.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i%20G%20Pads/Grado%20SR225i%20G%20Pads.png)

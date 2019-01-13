@@ -1,4 +1,5 @@
 # Audeo PFE 232
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -3.9; 23 -4.0; 25 -4.1; 28 -4.2; 31 -4.4; 34 -4.5; 37 -4.6; 41 -4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audeo PFE 232 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-32**
+Set volume attenuation in the Connection tab for both channels to **-32**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeo PFE 232 ParametricEQ.txt`.
@@ -24,14 +25,14 @@ When using independent subset of filters, apply preamp of **-0.0dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 37 Hz    | 0.25 | -3.9 dB  |
-| Peaking | 146 Hz   | 0.7  | -4.9 dB  |
-| Peaking | 299 Hz   | 1.18 | -2.8 dB  |
-| Peaking | 14590 Hz | 3.6  | -12.3 dB |
-| Peaking | 24000 Hz | 1.89 | -6.6 dB  |
-| Peaking | 1935 Hz  | 2.16 | -2.0 dB  |
-| Peaking | 3013 Hz  | 2.6  | 2.4 dB   |
-| Peaking | 4920 Hz  | 0.92 | 2.6 dB   |
-| Peaking | 9362 Hz  | 3.46 | -6.7 dB  |
-| Peaking | 11906 Hz | 4.87 | 2.9 dB   |
+| Peaking | 145 Hz   | 0.7  | -4.9 dB  |
+| Peaking | 298 Hz   | 1.18 | -2.8 dB  |
+| Peaking | 14667 Hz | 3.02 | -12.3 dB |
+| Peaking | 22050 Hz | 1.9  | -6.5 dB  |
+| Peaking | 1934 Hz  | 2.18 | -2.0 dB  |
+| Peaking | 3022 Hz  | 2.48 | 2.5 dB   |
+| Peaking | 4993 Hz  | 1    | 2.6 dB   |
+| Peaking | 9381 Hz  | 3.37 | -6.5 dB  |
+| Peaking | 11917 Hz | 4.67 | 2.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audeo%20PFE%20232/Audeo%20PFE%20232.png)

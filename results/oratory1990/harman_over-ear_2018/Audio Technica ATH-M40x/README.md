@@ -1,4 +1,5 @@
 # Audio Technica ATH-M40x
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.9; 45 5.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio Technica ATH-M40x GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M40x ParametricEQ.txt`.
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 30 Hz    | 0.6  | 6.6 dB  |
-| Peaking | 161 Hz   | 0.99 | -5.3 dB |
-| Peaking | 1470 Hz  | 2.27 | -1.4 dB |
-| Peaking | 14278 Hz | 5.27 | -3.4 dB |
-| Peaking | 22220 Hz | 0.11 | -7.5 dB |
-| Peaking | 248 Hz   | 3.77 | -1.1 dB |
-| Peaking | 357 Hz   | 3.48 | 1.3 dB  |
-| Peaking | 4372 Hz  | 9.53 | -2.0 dB |
-| Peaking | 7916 Hz  | 3.38 | -3.6 dB |
-| Peaking | 10813 Hz | 4.36 | 4.1 dB  |
+| Peaking | 29 Hz    | 0.61 | 6.6 dB  |
+| Peaking | 162 Hz   | 0.99 | -5.3 dB |
+| Peaking | 1417 Hz  | 3.25 | -1.4 dB |
+| Peaking | 13047 Hz | 0.29 | -3.3 dB |
+| Peaking | 20620 Hz | 0.34 | -9.5 dB |
+| Peaking | 360 Hz   | 6.84 | 1.5 dB  |
+| Peaking | 8180 Hz  | 2.28 | -5.6 dB |
+| Peaking | 11453 Hz | 0.88 | 6.8 dB  |
+| Peaking | 13660 Hz | 2.03 | -8.2 dB |
+| Peaking | 19591 Hz | 5.04 | -2.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audio%20Technica%20ATH-M40x/Audio%20Technica%20ATH-M40x.png)

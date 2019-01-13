@@ -1,4 +1,5 @@
 # Jaybird X3
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 -1.1; 23 -1.1; 25 -1.1; 28 -1.1; 31 -1.1; 34 -1.0; 37 -1.0; 41 -1.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Jaybird X3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-25**
+Set volume attenuation in the Connection tab for both channels to **-25**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Jaybird X3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.6dB**.
+When using independent subset of filters, apply preamp of **-1.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 166 Hz   | 0.79 | -5.1 dB  |
-| Peaking | 2336 Hz  | 1.59 | -4.5 dB  |
-| Peaking | 6028 Hz  | 0.99 | 16.3 dB  |
-| Peaking | 6983 Hz  | 1.3  | -20.3 dB |
-| Peaking | 24000 Hz | 2.17 | -2.1 dB  |
-| Peaking | 15 Hz    | 0.43 | -1.1 dB  |
-| Peaking | 699 Hz   | 2.69 | 2.7 dB   |
-| Peaking | 8938 Hz  | 6.08 | 3.9 dB   |
-| Peaking | 10821 Hz | 3.21 | -6.2 dB  |
-| Peaking | 12330 Hz | 2.34 | 3.3 dB   |
+| Peaking | 226 Hz   | 0.49 | -7.0 dB  |
+| Peaking | 1918 Hz  | 0.17 | 8.1 dB   |
+| Peaking | 2041 Hz  | 0.64 | -11.0 dB |
+| Peaking | 7302 Hz  | 3.91 | -11.3 dB |
+| Peaking | 10719 Hz | 3.1  | -8.1 dB  |
+| Peaking | 25 Hz    | 1.6  | -0.9 dB  |
+| Peaking | 1163 Hz  | 2.14 | -3.0 dB  |
+| Peaking | 1262 Hz  | 1    | 2.0 dB   |
+| Peaking | 2698 Hz  | 4.1  | -1.5 dB  |
+| Peaking | 5235 Hz  | 5.74 | 1.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Jaybird%20X3/Jaybird%20X3.png)

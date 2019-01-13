@@ -1,4 +1,5 @@
 # Sennheiser RS 185
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,26 +12,27 @@ GraphicEQ: 21 0.0; 23 0.2; 25 -0.2; 28 -0.8; 31 -1.3; 34 -1.6; 37 -1.9; 41 -2.1;
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser RS 185 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-46**
+Set volume attenuation in the Connection tab for both channels to **-46**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 185 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-3.6dB**.
+When using independent subset of filters, apply preamp of **-4.0dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 175 Hz   | 0.44 | -5.9 dB |
-| Peaking | 3099 Hz  | 2.24 | -9.2 dB |
-| Peaking | 6490 Hz  | 2.35 | 6.0 dB  |
-| Peaking | 11322 Hz | 0.66 | -3.6 dB |
-| Peaking | 24000 Hz | 1.73 | -1.9 dB |
-| Peaking | 439 Hz   | 3.69 | -1.3 dB |
-| Peaking | 887 Hz   | 4.96 | 2.1 dB  |
-| Peaking | 1822 Hz  | 2.41 | 1.1 dB  |
-| Peaking | 2485 Hz  | 7.46 | -1.9 dB |
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 175 Hz   |  0.44 | -5.9 dB |
+| Peaking | 3100 Hz  |  2.23 | -9.4 dB |
+| Peaking | 6564 Hz  |  3.59 | 5.0 dB  |
+| Peaking | 10779 Hz |  2.21 | -3.9 dB |
+| Peaking | 15550 Hz |  2.59 | -4.1 dB |
+| Peaking | 439 Hz   |  3.72 | -1.3 dB |
+| Peaking | 884 Hz   |  4.93 | 2.1 dB  |
+| Peaking | 1821 Hz  |  2.57 | 1.1 dB  |
+| Peaking | 2487 Hz  |  7.06 | -1.8 dB |
+| Peaking | 5117 Hz  | 11.71 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sennheiser%20RS%20185/Sennheiser%20RS%20185.png)

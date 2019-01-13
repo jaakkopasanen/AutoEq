@@ -1,4 +1,5 @@
 # Grado GS1000
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.7; 34 5.0; 37 4.2; 41 3.1; 45 1.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Grado GS1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado GS1000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.4dB**.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 28 Hz    | 0.63 | 7.9 dB   |
-| Peaking | 98 Hz    | 0.66 | -9.0 dB  |
-| Peaking | 261 Hz   | 2.44 | 0.2 dB   |
-| Peaking | 5837 Hz  | 1.37 | -10.5 dB |
-| Peaking | 9873 Hz  | 3.78 | -8.8 dB  |
-| Peaking | 889 Hz   | 0.99 | 1.7 dB   |
-| Peaking | 2172 Hz  | 0.37 | -2.2 dB  |
-| Peaking | 3846 Hz  | 1.17 | 4.5 dB   |
-| Peaking | 4251 Hz  | 7.03 | -7.1 dB  |
-| Peaking | 22267 Hz | 3.61 | 0.5 dB   |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 28 Hz   | 0.64 | 7.9 dB   |
+| Peaking | 98 Hz   | 0.66 | -9.0 dB  |
+| Peaking | 262 Hz  | 2.43 | 0.2 dB   |
+| Peaking | 5839 Hz | 1.34 | -10.4 dB |
+| Peaking | 9885 Hz | 3.5  | -8.8 dB  |
+| Peaking | 997 Hz  | 1.19 | 1.5 dB   |
+| Peaking | 1446 Hz | 0.91 | -1.6 dB  |
+| Peaking | 3471 Hz | 2.23 | 2.6 dB   |
+| Peaking | 4306 Hz | 5.73 | -5.9 dB  |
+| Peaking | 4924 Hz | 7.29 | 3.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20GS1000/Grado%20GS1000.png)

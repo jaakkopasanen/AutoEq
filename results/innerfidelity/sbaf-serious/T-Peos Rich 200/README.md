@@ -1,4 +1,5 @@
 # T-Peos Rich 200
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -4.1; 23 -4.0; 25 -4.0; 28 -4.1; 31 -4.1; 34 -4.1; 37 -4.2; 41 -4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `T-Peos Rich 200 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-49**
+Set volume attenuation in the Connection tab for both channels to **-49**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `T-Peos Rich 200 ParametricEQ.txt`.
@@ -26,12 +27,12 @@ When using independent subset of filters, apply preamp of **-0.1dB**.
 | Peaking | 42 Hz    | 0.27 | -4.1 dB  |
 | Peaking | 167 Hz   | 0.75 | -4.2 dB  |
 | Peaking | 1920 Hz  | 2.92 | -5.7 dB  |
-| Peaking | 8622 Hz  | 3.18 | -6.1 dB  |
-| Peaking | 24000 Hz | 2.29 | -3.8 dB  |
-| Peaking | 742 Hz   | 2.71 | 1.7 dB   |
-| Peaking | 2388 Hz  | 3.87 | -2.8 dB  |
-| Peaking | 3553 Hz  | 2.38 | 7.3 dB   |
-| Peaking | 5084 Hz  | 3.22 | -10.4 dB |
-| Peaking | 6535 Hz  | 3.86 | 3.9 dB   |
+| Peaking | 8626 Hz  | 2.98 | -6.1 dB  |
+| Peaking | 22050 Hz | 2.32 | -3.6 dB  |
+| Peaking | 743 Hz   | 2.73 | 1.7 dB   |
+| Peaking | 2390 Hz  | 3.84 | -2.8 dB  |
+| Peaking | 3557 Hz  | 2.36 | 7.3 dB   |
+| Peaking | 5087 Hz  | 3.16 | -10.4 dB |
+| Peaking | 6542 Hz  | 3.77 | 4.0 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/T-Peos%20Rich%20200/T-Peos%20Rich%20200.png)

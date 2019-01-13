@@ -1,4 +1,5 @@
 # Audio Technica ATH-M50x (Massdrop Velours Earpads)
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-4.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 3.57 | 4.3 dB   |
+| Peaking | 21 Hz    | 3.66 | 4.4 dB   |
 | Peaking | 302 Hz   | 3.1  | 4.6 dB   |
-| Peaking | 3934 Hz  | 0.57 | -2.6 dB  |
-| Peaking | 14686 Hz | 2.07 | -11.9 dB |
-| Peaking | 20285 Hz | 0.89 | -14.1 dB |
-| Peaking | 50 Hz    | 1.6  | -1.9 dB  |
-| Peaking | 137 Hz   | 2.26 | -2.7 dB  |
-| Peaking | 5710 Hz  | 4.41 | 3.1 dB   |
-| Peaking | 7317 Hz  | 1.14 | -2.0 dB  |
-| Peaking | 10517 Hz | 3.68 | 3.1 dB   |
+| Peaking | 3944 Hz  | 0.57 | -2.6 dB  |
+| Peaking | 14692 Hz | 2.07 | -11.9 dB |
+| Peaking | 20253 Hz | 0.89 | -14.1 dB |
+| Peaking | 22 Hz    | 1.01 | 2.4 dB   |
+| Peaking | 46 Hz    | 1.27 | -2.5 dB  |
+| Peaking | 137 Hz   | 2.29 | -2.7 dB  |
+| Peaking | 5552 Hz  | 8.21 | 1.7 dB   |
+| Peaking | 20642 Hz | 2.14 | -0.2 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audio%20Technica%20ATH-M50x%20(Massdrop%20Velours%20Earpads)/Audio%20Technica%20ATH-M50x%20(Massdrop%20Velours%20Earpads).png)

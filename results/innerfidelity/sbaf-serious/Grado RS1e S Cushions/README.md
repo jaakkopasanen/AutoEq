@@ -1,4 +1,5 @@
 # Grado RS1e S Cushions
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.8; 34 5.2; 37 4.5; 41 3.5; 45 2.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Grado RS1e S Cushions GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado RS1e S Cushions ParametricEQ.txt`.
@@ -21,17 +22,16 @@ In case of using other parametric equalizer, apply preamp of **-6.6dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
-| Type    | Fc       |     Q | Gain     |
-|:--------|:---------|:------|:---------|
-| Peaking | 28 Hz    |  0.55 | 7.9 dB   |
-| Peaking | 131 Hz   |  0.31 | -5.5 dB  |
-| Peaking | 693 Hz   |  0.21 | 1.4 dB   |
-| Peaking | 1987 Hz  |  3.64 | -10.1 dB |
-| Peaking | 4055 Hz  |  1    | 6.6 dB   |
-| Peaking | 1610 Hz  |  7.57 | 2.9 dB   |
-| Peaking | 1771 Hz  | 10.3  | -2.6 dB  |
-| Peaking | 6259 Hz  |  3.01 | 5.4 dB   |
-| Peaking | 7137 Hz  |  1.4  | -3.7 dB  |
-| Peaking | 24000 Hz |  1.41 | 0.1 dB   |
+| Type    | Fc      |     Q | Gain     |
+|:--------|:--------|:------|:---------|
+| Peaking | 28 Hz   |  0.55 | 7.9 dB   |
+| Peaking | 130 Hz  |  0.31 | -5.6 dB  |
+| Peaking | 696 Hz  |  0.22 | 1.3 dB   |
+| Peaking | 1988 Hz |  3.61 | -10.2 dB |
+| Peaking | 4057 Hz |  0.98 | 6.6 dB   |
+| Peaking | 1611 Hz |  7.53 | 2.9 dB   |
+| Peaking | 1779 Hz | 10.5  | -2.6 dB  |
+| Peaking | 6284 Hz |  2.99 | 5.4 dB   |
+| Peaking | 7137 Hz |  1.39 | -3.6 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20RS1e%20S%20Cushions/Grado%20RS1e%20S%20Cushions.png)

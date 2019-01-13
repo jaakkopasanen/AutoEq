@@ -1,4 +1,5 @@
 # AKG K3003
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -28,10 +29,10 @@ When using independent subset of filters, apply preamp of **-6.8dB**.
 | Peaking | 277 Hz   | 0.76 | -3.9 dB  |
 | Peaking | 3176 Hz  | 1.22 | 6.9 dB   |
 | Peaking | 15837 Hz | 2.3  | -22.7 dB |
-| Peaking | 4360 Hz  | 5.41 | 4.1 dB   |
-| Peaking | 5091 Hz  | 2.52 | -3.0 dB  |
-| Peaking | 7753 Hz  | 6.01 | -1.8 dB  |
-| Peaking | 12380 Hz | 2.12 | 6.8 dB   |
-| Peaking | 14286 Hz | 3.77 | -8.2 dB  |
+| Peaking | 4400 Hz  | 5.41 | 4.1 dB   |
+| Peaking | 5081 Hz  | 2.52 | -3.0 dB  |
+| Peaking | 7829 Hz  | 5.99 | -1.8 dB  |
+| Peaking | 12429 Hz | 2.12 | 6.8 dB   |
+| Peaking | 14364 Hz | 3.78 | -8.3 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/AKG%20K3003/AKG%20K3003.png)

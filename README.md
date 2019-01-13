@@ -33,11 +33,28 @@ description about how things were obtained and processed.
 ## Usage
 Equalization settings produced by AutoEQ are EqualizerAPO GraphicEQ configuration lines and parametric equalizer peaking
 filters, one for each headphone processed. GraphicEQ settings look like this:
-````
+```
 GraphicEQ: 20 0.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-````
+```
 Parametric eq settings can be used with Peace or any other parametric eq which has at least 5 bands available. Even
-fewer bands is possible but pre-computed results require to use minimum five first of the filters.
+fewer bands is possible but pre-computed results require to use minimum five first of the filters. Parametric equalizer
+filter parameters look like this:
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 28 Hz    | 0.46 | 6.3 dB  |
+| Peaking | 162 Hz   | 0.91 | -2.3 dB |
+| Peaking | 2237 Hz  | 1.94 | -4.6 dB |
+| Peaking | 6093 Hz  | 2.26 | -4.7 dB |
+| Peaking | 8251 Hz  | 3.71 | -2.9 dB |
+
+**Windows** has EqualizerAPO, HeSuVi, Peace and many media players with parametric equalizers such as Roon and
+Foobar2000.
+
+**Android** doesn't have any system-wide parametric equalizers but there are several music players which have parametric
+eq and work with local files as well as certain streaming services. USB Audio Player PRO with Toneboosters plugin and
+Neutron Music Player are the most popular but are not free. Viper4Android is a system-wide solution on Android but it
+requires rooting of the device. Viper4Android is supported with impulse responses (WAV) files.
 
 ### HeSuVi
 Easiest way is to install [HeSuVi](https://sourceforge.net/projects/hesuvi/) and select correct headphone model from the
@@ -59,33 +76,17 @@ both channels to the highest positive gain value in preset.
 
 *HeSuVi GUI for EqualizerAPO*
 
-### Peace and Other Parametric Equalizers
-[Peace](https://sourceforge.net/projects/peace-equalizer-apo-extension/) is a GUI for manipulating parametric eq filters
-with EqualizerAPO. Peace also has visualization for the end result equalization frequency response, profile manager for
-multiple different eq settings and a switch for disabling everything among other features. Load eq settings into Peace
-by clicking *Import* button and select the *<model> ParametricEQ.txt* file.
-
-To load an eq into a some other graphic equalizer you'll have to adjust preamp and build the filters manually because
-the configuration file produced is only compatible with EqualizerAPO.
-
-Keep in mind that parametric eq produced is not as accurate as graphic eq because there is limited number of filters.
-This might not have any significant difference in practice though.
-
-![peace](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
-
-*Peace with full GUI for EqualizerAPO*
-
 ### Plain EqualizerAPO
 It's possible to use plain [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
 `C:\Program Files\EqualizerAPO\config\config.txt`. Disable `Include: example.txt`, replace `GraphicEQ: ...` line with
 the one found in results and set `Preamp: ...`. Using
 [Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/innerfidelity/sbaf-serious/Sennheiser%20HD%20650)
 would make config file look like this:
-````
+```
 Preamp: -6 dB
 # Include: example.txt
 GraphicEQ: 20 0.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-````
+```
 
 EqualizerAPO has a graphical user interface for adjusting configurations. Launch the editor from
 `C:\Program Files\EqualizerAPO\Editor.exe`.
@@ -93,6 +94,44 @@ EqualizerAPO has a graphical user interface for adjusting configurations. Launch
 ![equalizerapo-editor](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/EqualizerAPOEditor.PNG)
 
 *EqualizerAPO Editor GUI*
+
+### Parametric Equalizers
+Parametric equalizers have filters with user adjustable center frequency and quality Q. AutoEQ estimates peaking filter
+parameters for parametric equalizer. Keep in mind that parametric eq produced is not as accurate as graphic eq because
+there is limited number of filters. This might not have any significant difference in practice though.
+
+All parametric equalizer except Peace require you to configure the filter parameters manually with the software user
+interface. Some parametric equalizer use filter width (band width) instead of Q. Filter width can be calculated as:
+`bw = Fc / Q` where `bw` is the band width, `Fc` is center frequency and `Q` is quality.
+
+Other options exist. Google is your friend.
+
+### Peace
+[Peace](https://sourceforge.net/projects/peace-equalizer-apo-extension/) is a GUI for manipulating parametric eq filters
+with EqualizerAPO. Peace also has visualization for the end result equalization frequency response, profile manager for
+multiple different eq settings and a switch for disabling everything among other features. Load eq settings into Peace
+by clicking *Import* button and select the *<model> ParametricEQ.txt* file.
+
+![peace](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
+
+*Peace with full GUI for EqualizerAPO*
+
+### USB Audio Player PRO
+[USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is and Android app
+with improved USB audio drivers for usage with USB DACs. USB Audio Player
+PRO is not system-wide but works with local files and many streaming services though not with Spotify. USB Audio Player
+has Toneboosters Morphit plugin which has parametric equalizer. This app and the plugin are not free.
+
+### PulseEffects
+[PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
+processing tools including parametric equalizer. Adjust filter parameters by clicking the cog button on each filter and
+set type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
+
+
+### Viper4Android and Other Convolution Engines
+Some software don't have parametric eq but have convolution engine which uses impulse response for processing. AutoEQ
+produces impulse responses with 44.1 kHz and 48 kHz. Import the WAV file with correct sampling frequency into the
+software.
 
 ## Results
 The main principle used by AutoEQ for producing the equalization function is to invert error curve. Error is the
@@ -165,44 +204,44 @@ location. Or just git clone if you know what that means.
 - Download and install [Python3.6](https://www.python.org/getit/). Python 3.7 is not supported yet. Make sure to check
 *Install Python3 to PATH*
 - Install virtualenv. Run this on command prompt. Search `cmd` in Windows start menu.  
-````commandline
+```commandline
 pip install virtualenv
-````
+```
 - Go to AutoEQ location  
-````commandline
+```commandline
 cd C:\path\to\AutoEq-master
-````
+```
 - Create virtual environment  
-````commandline
+```commandline
 virtualenv venv
-````
+```
 - Activate virtualenv  
-````commandline
+```commandline
 venv\Scripts\activate
-````
+```
 - Install required packages  
-````commandline
+```commandline
 pip install -r requirements.txt
-````
+```
 - Verify installation  
-````commandline
+```commandline
 python frequency_response.py -H
-````
+```
 
 When coming back at a later time you'll only need to activate virtual environment again
-````commandline
+```commandline
 cd C:\path\to\AutoEq-master
 venv\Scripts\activate
-````
+```
 
 ### Command Line Arguments
-````
+```
 usage: frequency_response.py [-h] --input_dir INPUT_DIR
-                             [--output_dir OUTPUT_DIR]
-                             [--calibration CALIBRATION]
+                             [--output_dir OUTPUT_DIR] [--standardize_input]
+                             [--new_only] [--calibration CALIBRATION]
                              [--compensation COMPENSATION] [--equalize]
                              [--parametric_eq] [--max_filters MAX_FILTERS]
-                             [--bass_boost BASS_BOOST]
+                             [--fs FS] [--bass_boost BASS_BOOST]
                              [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
                              [--max_gain MAX_GAIN]
                              [--treble_f_lower TREBLE_F_LOWER]
@@ -219,6 +258,10 @@ optional arguments:
   --output_dir OUTPUT_DIR
                         Path to results directory. Will keep the same relative
                         paths for files foundin input_dir.
+  --standardize_input   Overwrite input data in standardized sampling and
+                        bias?
+  --new_only            Only process input files which don't have results in
+                        output directory.
   --calibration CALIBRATION
                         File path to CSV containing calibration data. Needed
                         when using target responsesnot developed for the
@@ -243,6 +286,8 @@ optional arguments:
                         be used with the first 5. This allows to have muliple
                         configurationsfor equalizers with different number of
                         bands available. Not limited by default.
+  --fs FS               Sampling frequency for impulse response and paramteric
+                        eq filters.Defaults to 44100.
   --bass_boost BASS_BOOST
                         Target gain for sub-bass in dB. Has sigmoid slope down
                         from 35 Hz to 280 Hz. "--bass_boost" is mutually
@@ -283,41 +328,41 @@ optional arguments:
                         equalization power in treble region. Defaults to 1.0.
   --show_plot           Plot will be shown if this parameter exists, no value
                         needed.
-````
+```
 
 ### Examples
-Equalizing Sennheiser HD 650 and saving results to `myresults/HD650`:
-````commandline
-python frequency_response.py --input_dir="innerfidelity\data\onear\Sennheiser HD 650" --output_dir="myresults\HD650" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
-````
+Equalizing Sennheiser HD 650 and saving results to `my_results/HD650`:
+```commandline
+python frequency_response.py --input_dir="innerfidelity\data\onear\Sennheiser HD 650" --output_dir="my_results\HD650" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
+```
 
 Equalizing Beyerdynamic DT990 without saving results
-````commandline
+```commandline
 python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="headphonecom\resources\headphonecom_compensation.csv" --equalize --bass_boost=4 --show_plot
-````
+```
 
 Equalizing Beyerdynamic DT990 to SBAF-Serious target
-````commandline
+```commandline
 python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="headphonecom\resources\headphonecom_compensation_sbaf-serious-brighter.csv" --equalize --bass_boost=4 --show_plot
-````
+```
 
 Equalizing all Headphone.com on-ear headphones and saving results to `results\onear\sbaf-serious\headphonecom`.
 There is a lot of headphones and we don't want to inspect all visually so we'll omit `--show_plot`
-````commandline
+```commandline
 python frequency_response.py --input_dir="headphonecom\data\onear" --output_dir="results\headphonecom\sbaf-serious" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4
-````
+```
 
 Equalizing Beyerdynamic DT 770 to sound like HiFiMAN HE400S. 80ohm version of DT 770 is only available in Headphone.com
 measurements and HE400S only in Innerfidelity measurements so we'll use calibration. To make the bass sound
 the same we'll omit bass boost.
-````commandline
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT770" --output_dir="myresults\Beyerdynamic DT770" --compensation="innerfidelity\data\onear\HiFiMAN HE400S\HiFiMAN HE400S.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --show_plot
-````
+```commandline
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT770" --output_dir="my_results\Beyerdynamic DT770" --compensation="innerfidelity\data\onear\HiFiMAN HE400S\HiFiMAN HE400S.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --show_plot
+```
 
 Viewing HiFiMAN HE400S raw microphone data
-````commandline
+```commandline
 python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400S" --show_plot
-````
+```
 
 Feel free to experiment more.
 
@@ -501,15 +546,12 @@ obtain the raw data.
 ## TODO
 Contributions are more than welcome.
 
-- New oratory1990 measurements
 - Crinacle measurements for IEMs
     - Full pipeline for new measurements
     - Target response for old measurements
-- Impulse responses
-- Fork as code only repo
-- Usound target
-- Full results index
+    - Update results, recommendations and index
 - Guide for WebPlotDigitizer
+- Fork as code only repo
 - Rtings in server.py
   - Calibrations to Headphone.com
   - Compensation functions

@@ -1,4 +1,5 @@
 # Jaybird Run
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,13 +12,13 @@ GraphicEQ: 21 -1.2; 23 -1.2; 25 -1.3; 28 -1.3; 31 -1.3; 34 -1.3; 37 -1.3; 41 -1.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Jaybird Run GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-17**
+Set volume attenuation in the Connection tab for both channels to **-17**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Jaybird Run ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-1.8dB**.
 
@@ -25,13 +26,13 @@ When using independent subset of filters, apply preamp of **-1.8dB**.
 |:--------|:---------|:-----|:---------|
 | Peaking | 176 Hz   | 0.58 | -5.4 dB  |
 | Peaking | 713 Hz   | 1.99 | 2.9 dB   |
-| Peaking | 2103 Hz  | 1.86 | -4.9 dB  |
-| Peaking | 7084 Hz  | 4.55 | -10.1 dB |
-| Peaking | 22086 Hz | 2.26 | -2.1 dB  |
-| Peaking | 25 Hz    | 1.27 | -1.1 dB  |
-| Peaking | 2661 Hz  | 5.57 | -1.5 dB  |
-| Peaking | 4023 Hz  | 3.03 | 1.6 dB   |
-| Peaking | 5104 Hz  | 4.36 | 2.2 dB   |
-| Peaking | 9944 Hz  | 6.09 | -5.3 dB  |
+| Peaking | 2104 Hz  | 1.85 | -4.9 dB  |
+| Peaking | 7122 Hz  | 4.43 | -10.1 dB |
+| Peaking | 21198 Hz | 2.2  | -2.3 dB  |
+| Peaking | 24 Hz    | 1.35 | -1.0 dB  |
+| Peaking | 2704 Hz  | 3.66 | -1.9 dB  |
+| Peaking | 5521 Hz  | 0.99 | 2.9 dB   |
+| Peaking | 6535 Hz  | 6    | -4.0 dB  |
+| Peaking | 9940 Hz  | 4.65 | -5.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Jaybird%20Run/Jaybird%20Run.png)

@@ -44,6 +44,8 @@ def get_urls(files):
 
 def main():
     urls = dict()
+    # Get links to Reference Audio Analyzer results
+    urls.update(get_urls(glob(os.path.abspath(os.path.join('referenceaudioanalyzer', 'zero', '*')))))
     # Get links to Headphone.com results
     urls.update(get_urls(glob(os.path.abspath(os.path.join('headphonecom', 'sbaf-serious', '*')))))
     # Get links to Rtings results
@@ -60,12 +62,11 @@ def main():
         keys = sorted(urls.keys())
         s = '''# Recommended Results
         This is a list of recommended results. Results for other measurements are available for many headphones, these
-        can be found in the sub-folders. Folders are arranged by source/target/headphone.
+        can be found in the [full index](https://github.com/jaakkopasanen/AutoEq/blob/master/results/INDEX.md).
         
         Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com. This means if there are
         measurements from multiple sources for the same headphone model only the highest priority result will be shown
         in this list.
-        
         '''
         s += '\n'.join([urls[key] for key in keys])
         f.write(re.sub('\n[ \t]+', '\n', s).strip())

@@ -1,4 +1,5 @@
 # Plantronics BackBeat Pro 2
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 -9.0; 23 -9.1; 25 -9.1; 28 -9.1; 31 -9.1; 34 -9.3; 37 -9.2; 41 -8.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Plantronics BackBeat Pro 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-27**
+Set volume attenuation in the Connection tab for both channels to **-27**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Plantronics BackBeat Pro 2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.7dB**.
+When using independent subset of filters, apply preamp of **-2.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 30 Hz    | 0.68 | -10.3 dB |
+| Peaking | 29 Hz    | 0.69 | -10.2 dB |
 | Peaking | 132 Hz   | 0.8  | 3.8 dB   |
-| Peaking | 3679 Hz  | 3.07 | -2.8 dB  |
-| Peaking | 11267 Hz | 0.58 | -3.4 dB  |
-| Peaking | 24000 Hz | 1.89 | -2.4 dB  |
-| Peaking | 516 Hz   | 3.42 | -2.3 dB  |
-| Peaking | 1899 Hz  | 5.71 | -1.9 dB  |
-| Peaking | 7541 Hz  | 4.7  | -2.1 dB  |
-| Peaking | 14468 Hz | 2.03 | -3.5 dB  |
-| Peaking | 15444 Hz | 0.42 | 1.9 dB   |
+| Peaking | 3724 Hz  | 2.28 | -3.1 dB  |
+| Peaking | 7609 Hz  | 2.93 | -2.9 dB  |
+| Peaking | 13504 Hz | 1.11 | -3.9 dB  |
+| Peaking | 246 Hz   | 2.2  | 0.8 dB   |
+| Peaking | 510 Hz   | 2.85 | -2.2 dB  |
+| Peaking | 1950 Hz  | 3.64 | -2.2 dB  |
+| Peaking | 2492 Hz  | 2.7  | 1.0 dB   |
+| Peaking | 15821 Hz | 1.3  | 0.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Plantronics%20BackBeat%20Pro%202/Plantronics%20BackBeat%20Pro%202.png)

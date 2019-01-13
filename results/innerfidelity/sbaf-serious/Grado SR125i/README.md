@@ -1,4 +1,5 @@
 # Grado SR125i
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,26 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.8; 34 5.1; 37 4.2; 41 3.3; 45 2.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Grado SR125i GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR125i ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.4dB**.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 26 Hz    | 0.85 | 6.7 dB   |
-| Peaking | 109 Hz   | 0.73 | -3.1 dB  |
-| Peaking | 2109 Hz  | 3.1  | -10.5 dB |
-| Peaking | 8457 Hz  | 3.98 | -4.9 dB  |
-| Peaking | 24000 Hz | 2.15 | -2.6 dB  |
-| Peaking | 836 Hz   | 1.81 | 0.8 dB   |
-| Peaking | 6207 Hz  | 7.01 | 3.2 dB   |
-| Peaking | 7195 Hz  | 5.72 | -1.8 dB  |
-| Peaking | 10761 Hz | 5.8  | 0.8 dB   |
+| Peaking | 109 Hz   | 0.74 | -3.1 dB  |
+| Peaking | 2109 Hz  | 3.09 | -10.5 dB |
+| Peaking | 8463 Hz  | 3.81 | -4.9 dB  |
+| Peaking | 22050 Hz | 2.1  | -2.7 dB  |
+| Peaking | 893 Hz   | 0.93 | 1.9 dB   |
+| Peaking | 966 Hz   | 0.58 | -1.2 dB  |
+| Peaking | 6183 Hz  | 7.41 | 3.1 dB   |
+| Peaking | 7259 Hz  | 7.75 | -1.9 dB  |
+| Peaking | 10753 Hz | 6.64 | 0.9 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR125i/Grado%20SR125i.png)

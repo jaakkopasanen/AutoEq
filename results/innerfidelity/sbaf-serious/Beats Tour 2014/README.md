@@ -1,4 +1,5 @@
 # Beats Tour 2014
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -5.9; 23 -6.2; 25 -6.5; 28 -6.8; 31 -7.1; 34 -7.3; 37 -7.5; 41 -7.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Beats Tour 2014 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beats Tour 2014 ParametricEQ.txt`.
@@ -23,14 +24,14 @@ When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 69 Hz    | 0.39 | -7.3 dB |
-| Peaking | 198 Hz   | 0.65 | -4.8 dB |
-| Peaking | 3573 Hz  | 2.1  | 6.3 dB  |
-| Peaking | 23028 Hz | 2.35 | 1.5 dB  |
-| Peaking | 23 Hz    | 0.92 | -2.6 dB |
-| Peaking | 802 Hz   | 2.39 | 1.3 dB  |
-| Peaking | 1712 Hz  | 2.9  | -1.6 dB |
-| Peaking | 6537 Hz  | 4.26 | 5.5 dB  |
-| Peaking | 6603 Hz  | 1.57 | -1.8 dB |
+| Peaking | 67 Hz    | 0.39 | -7.2 dB |
+| Peaking | 196 Hz   | 0.65 | -4.8 dB |
+| Peaking | 3570 Hz  | 2.09 | 6.3 dB  |
+| Peaking | 21573 Hz | 2.4  | 1.3 dB  |
+| Peaking | 22 Hz    | 0.87 | -2.5 dB |
+| Peaking | 804 Hz   | 2.55 | 1.3 dB  |
+| Peaking | 1715 Hz  | 2.89 | -1.6 dB |
+| Peaking | 6566 Hz  | 1.55 | -1.8 dB |
+| Peaking | 6566 Hz  | 4.17 | 5.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beats%20Tour%202014/Beats%20Tour%202014.png)

@@ -1,4 +1,5 @@
 # Sony WH-1000XM2
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -28,10 +29,10 @@ When using independent subset of filters, apply preamp of **--0.2dB**.
 | Peaking | 1994 Hz  | 1.1  | -7.4 dB  |
 | Peaking | 5619 Hz  | 1.77 | -7.7 dB  |
 | Peaking | 13093 Hz | 2.59 | -10.7 dB |
-| Peaking | 960 Hz   | 1.8  | 8.5 dB   |
-| Peaking | 1204 Hz  | 0.78 | -5.9 dB  |
-| Peaking | 2015 Hz  | 2.91 | 4.0 dB   |
-| Peaking | 10028 Hz | 5.96 | 4.3 dB   |
-| Peaking | 19728 Hz | 1.65 | -8.5 dB  |
+| Peaking | 962 Hz   | 1.77 | 8.8 dB   |
+| Peaking | 1197 Hz  | 0.79 | -6.2 dB  |
+| Peaking | 2014 Hz  | 2.89 | 4.0 dB   |
+| Peaking | 9999 Hz  | 5.96 | 4.3 dB   |
+| Peaking | 19665 Hz | 1.65 | -8.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sony%20WH-1000XM2/Sony%20WH-1000XM2.png)

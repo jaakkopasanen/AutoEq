@@ -1,4 +1,5 @@
 # Beats Pro
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -26,12 +27,12 @@ When using independent subset of filters, apply preamp of **--0.0dB**.
 | Peaking | 54 Hz    | 0.57 | -5.7 dB  |
 | Peaking | 180 Hz   | 0.79 | -7.2 dB  |
 | Peaking | 2820 Hz  | 2.7  | -10.7 dB |
-| Peaking | 7295 Hz  | 4.04 | -6.0 dB  |
-| Peaking | 14935 Hz | 2.68 | -3.0 dB  |
-| Peaking | 649 Hz   | 4.04 | -0.8 dB  |
-| Peaking | 1407 Hz  | 2.19 | 2.4 dB   |
-| Peaking | 2711 Hz  | 0.59 | -0.9 dB  |
-| Peaking | 3990 Hz  | 9.25 | 3.6 dB   |
-| Peaking | 9904 Hz  | 3.67 | 1.3 dB   |
+| Peaking | 7318 Hz  | 4.04 | -6.0 dB  |
+| Peaking | 14933 Hz | 2.68 | -3.0 dB  |
+| Peaking | 649 Hz   | 4.07 | -0.8 dB  |
+| Peaking | 1406 Hz  | 2.21 | 2.4 dB   |
+| Peaking | 2783 Hz  | 0.58 | -0.9 dB  |
+| Peaking | 3995 Hz  | 9.28 | 3.6 dB   |
+| Peaking | 9875 Hz  | 3.57 | 1.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beats%20Pro/Beats%20Pro.png)

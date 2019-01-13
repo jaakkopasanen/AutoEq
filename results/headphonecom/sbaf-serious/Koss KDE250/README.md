@@ -1,4 +1,5 @@
 # Koss KDE250
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Koss KDE250 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss KDE250 ParametricEQ.txt`.
@@ -24,14 +25,14 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 53 Hz    | 0.23 | 6.5 dB   |
-| Peaking | 983 Hz   | 0.96 | 4.8 dB   |
-| Peaking | 2564 Hz  | 1.03 | -23.3 dB |
-| Peaking | 4564 Hz  | 1.06 | 17.4 dB  |
-| Peaking | 8564 Hz  | 1.24 | -10.2 dB |
-| Peaking | 19 Hz    | 1.98 | 1.1 dB   |
-| Peaking | 9898 Hz  | 5.66 | 2.2 dB   |
-| Peaking | 12534 Hz | 2.59 | -4.3 dB  |
-| Peaking | 14226 Hz | 2.01 | 3.0 dB   |
-| Peaking | 23800 Hz | 3.03 | -0.2 dB  |
+| Peaking | 981 Hz   | 0.97 | 4.7 dB   |
+| Peaking | 2562 Hz  | 1.03 | -23.2 dB |
+| Peaking | 4571 Hz  | 1.05 | 17.4 dB  |
+| Peaking | 8575 Hz  | 1.14 | -10.2 dB |
+| Peaking | 24 Hz    | 2.1  | 0.8 dB   |
+| Peaking | 9916 Hz  | 5.14 | 2.4 dB   |
+| Peaking | 12551 Hz | 2.17 | -3.7 dB  |
+| Peaking | 14179 Hz | 3.42 | 2.2 dB   |
+| Peaking | 15418 Hz | 1.27 | 1.1 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20KDE250/Koss%20KDE250.png)

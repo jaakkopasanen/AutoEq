@@ -1,4 +1,5 @@
 # Shure SRH1540
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -4.2; 23 -4.8; 25 -5.3; 28 -6.0; 31 -6.5; 34 -7.0; 37 -7.4; 41 -7.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Shure SRH1540 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-6**
+Set volume attenuation in the Connection tab for both channels to **-6**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SRH1540 ParametricEQ.txt`.
@@ -23,14 +24,14 @@ When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 49 Hz    | 0.54 | -7.7 dB |
-| Peaking | 129 Hz   | 1.01 | -3.4 dB |
-| Peaking | 353 Hz   | 1.7  | -3.0 dB |
-| Peaking | 2234 Hz  | 1.59 | -3.2 dB |
-| Peaking | 504 Hz   | 3.52 | -0.8 dB |
-| Peaking | 1444 Hz  | 0.64 | 1.2 dB  |
-| Peaking | 1814 Hz  | 2.99 | -1.8 dB |
-| Peaking | 7815 Hz  | 1.25 | -2.3 dB |
-| Peaking | 24000 Hz | 2.3  | -0.7 dB |
+| Peaking | 50 Hz    | 0.53 | -7.8 dB |
+| Peaking | 130 Hz   | 1.04 | -3.3 dB |
+| Peaking | 353 Hz   | 1.69 | -3.0 dB |
+| Peaking | 2231 Hz  | 1.6  | -3.3 dB |
+| Peaking | 504 Hz   | 3.54 | -0.8 dB |
+| Peaking | 1429 Hz  | 0.65 | 1.2 dB  |
+| Peaking | 1810 Hz  | 3.04 | -1.8 dB |
+| Peaking | 7886 Hz  | 1.2  | -2.3 dB |
+| Peaking | 22050 Hz | 2.17 | -1.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SRH1540/Shure%20SRH1540.png)

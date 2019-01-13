@@ -1,4 +1,5 @@
 # Panasonic RP-HC200
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,13 +12,13 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Panasonic RP-HC200 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Panasonic RP-HC200 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
@@ -25,13 +26,13 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 43 Hz    | 0.2  | 6.2 dB  |
 | Peaking | 381 Hz   | 1.7  | 4.5 dB  |
-| Peaking | 3911 Hz  | 0.63 | 7.7 dB  |
-| Peaking | 11915 Hz | 0.46 | -3.0 dB |
-| Peaking | 24000 Hz | 1.55 | -2.6 dB |
-| Peaking | 906 Hz   | 2.52 | -2.3 dB |
-| Peaking | 2087 Hz  | 2.84 | 2.5 dB  |
-| Peaking | 6237 Hz  | 1.77 | 6.6 dB  |
-| Peaking | 8399 Hz  | 0.73 | -7.7 dB |
-| Peaking | 10957 Hz | 1.63 | 7.0 dB  |
+| Peaking | 3864 Hz  | 0.64 | 7.5 dB  |
+| Peaking | 12603 Hz | 0.42 | -2.9 dB |
+| Peaking | 22050 Hz | 1.65 | -2.1 dB |
+| Peaking | 909 Hz   | 2.44 | -2.4 dB |
+| Peaking | 2025 Hz  | 4.38 | 2.2 dB  |
+| Peaking | 6093 Hz  | 4.43 | 1.8 dB  |
+| Peaking | 8411 Hz  | 6.05 | -4.0 dB |
+| Peaking | 11778 Hz | 3.26 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Panasonic%20RP-HC200/Panasonic%20RP-HC200.png)

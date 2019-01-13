@@ -1,4 +1,5 @@
 # Audeze Sine (Cipher Cable)
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -17,21 +18,21 @@ Set volume attenuation in the Connection tab for both channels to **-58**
 In case of using Peace, click *Import* in Peace GUI and select `Audeze Sine (Cipher Cable) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.9dB**.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 0.57 | 2.5 dB   |
-| Peaking | 118 Hz   | 1.72 | -1.4 dB  |
-| Peaking | 5763 Hz  | 1.05 | 11.5 dB  |
-| Peaking | 11748 Hz | 0.87 | 10.1 dB  |
-| Peaking | 17087 Hz | 0.39 | -27.3 dB |
-| Peaking | 783 Hz   | 1.74 | 0.7 dB   |
-| Peaking | 1246 Hz  | 3.2  | -0.5 dB  |
-| Peaking | 2632 Hz  | 5.06 | 1.2 dB   |
-| Peaking | 3928 Hz  | 2.25 | -1.7 dB  |
-| Peaking | 4321 Hz  | 5.05 | 2.2 dB   |
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 31 Hz    |  0.57 | 2.5 dB   |
+| Peaking | 121 Hz   |  1.72 | -1.3 dB  |
+| Peaking | 5775 Hz  |  1.07 | 11.3 dB  |
+| Peaking | 11583 Hz |  0.87 | 9.9 dB   |
+| Peaking | 17145 Hz |  0.4  | -27.1 dB |
+| Peaking | 214 Hz   |  8    | 0.8 dB   |
+| Peaking | 750 Hz   |  2.73 | 0.7 dB   |
+| Peaking | 2596 Hz  |  3.65 | 2.6 dB   |
+| Peaking | 2717 Hz  |  1.77 | -1.7 dB  |
+| Peaking | 7507 Hz  | 10.23 | -1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Audeze%20Sine%20(Cipher%20Cable)/Audeze%20Sine%20(Cipher%20Cable).png)

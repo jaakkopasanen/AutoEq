@@ -1,4 +1,5 @@
 # 1MORE Quad Driver In-Ear
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.7; 37 5.2; 41 4.6; 45 4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `1MORE Quad Driver In-Ear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `1MORE Quad Driver In-Ear ParametricEQ.txt`.
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 28 Hz    | 0.61 | 6.6 dB  |
+| Peaking | 28 Hz    | 0.62 | 6.6 dB  |
 | Peaking | 198 Hz   | 0.72 | -7.1 dB |
-| Peaking | 4548 Hz  | 3.05 | -8.2 dB |
-| Peaking | 6203 Hz  | 1.82 | 6.9 dB  |
-| Peaking | 21380 Hz | 0.14 | -5.8 dB |
-| Peaking | 388 Hz   | 2.22 | -1.4 dB |
-| Peaking | 717 Hz   | 2.02 | 2.2 dB  |
-| Peaking | 13739 Hz | 4.74 | -4.1 dB |
-| Peaking | 17019 Hz | 3.16 | 3.7 dB  |
-| Peaking | 24000 Hz | 1.61 | 1.9 dB  |
+| Peaking | 4468 Hz  | 3.49 | -7.0 dB |
+| Peaking | 6305 Hz  | 3.37 | 6.2 dB  |
+| Peaking | 14137 Hz | 1.65 | -7.2 dB |
+| Peaking | 211 Hz   | 1.7  | 1.8 dB  |
+| Peaking | 335 Hz   | 0.61 | -1.8 dB |
+| Peaking | 700 Hz   | 1.64 | 2.8 dB  |
+| Peaking | 10590 Hz | 5.14 | 2.0 dB  |
+| Peaking | 19881 Hz | 1.63 | -9.9 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/1MORE%20Quad%20Driver%20In-Ear/1MORE%20Quad%20Driver%20In-Ear.png)

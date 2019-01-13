@@ -1,4 +1,5 @@
 # Oppo PM3 sample C
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 0.0; 23 2.5; 25 2.4; 28 2.2; 31 2.2; 34 2.1; 37 2.1; 41 2.0; 45 2.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Oppo PM3 sample C GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
+Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM3 sample C ParametricEQ.txt`.
@@ -23,14 +24,14 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 25 Hz    | 1.03 | 2.5 dB  |
+| Peaking | 26 Hz    | 1.02 | 2.5 dB  |
 | Peaking | 61 Hz    | 2.03 | 1.6 dB  |
 | Peaking | 378 Hz   | 2.19 | 4.0 dB  |
-| Peaking | 2070 Hz  | 1.58 | -2.9 dB |
-| Peaking | 5741 Hz  | 3.26 | 7.0 dB  |
-| Peaking | 136 Hz   | 2.25 | -3.2 dB |
-| Peaking | 143 Hz   | 0.84 | 1.7 dB  |
-| Peaking | 198 Hz   | 3.54 | -1.9 dB |
-| Peaking | 24000 Hz | 1.83 | 0.3 dB  |
+| Peaking | 2071 Hz  | 1.57 | -2.9 dB |
+| Peaking | 5744 Hz  | 3.2  | 7.0 dB  |
+| Peaking | 89 Hz    | 4.19 | 1.1 dB  |
+| Peaking | 137 Hz   | 3.14 | -1.7 dB |
+| Peaking | 193 Hz   | 6.26 | -1.2 dB |
+| Peaking | 20889 Hz | 1.7  | -0.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM3%20sample%20C/Oppo%20PM3%20sample%20C.png)

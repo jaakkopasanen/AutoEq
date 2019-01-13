@@ -1,4 +1,5 @@
 # Sony MDR-AS40EX
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 -2.3; 23 -2.6; 25 -2.9; 28 -3.3; 31 -3.6; 34 -3.8; 37 -4.0; 41 -4.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony MDR-AS40EX GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-36**
+Set volume attenuation in the Connection tab for both channels to **-36**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-AS40EX ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 76 Hz    | 0.37 | -5.0 dB |
-| Peaking | 204 Hz   | 0.71 | -3.8 dB |
-| Peaking | 8524 Hz  | 4.92 | -6.6 dB |
-| Peaking | 16922 Hz | 3.05 | -7.3 dB |
-| Peaking | 24000 Hz | 1.97 | -3.7 dB |
-| Peaking | 818 Hz   | 2.76 | 1.3 dB  |
-| Peaking | 1772 Hz  | 2.38 | -3.1 dB |
-| Peaking | 3331 Hz  | 1.83 | 4.6 dB  |
-| Peaking | 4646 Hz  | 3.39 | -7.4 dB |
-| Peaking | 6883 Hz  | 0.35 | 0.7 dB  |
+| Peaking | 66 Hz    | 0.39 | -4.5 dB |
+| Peaking | 192 Hz   | 0.67 | -4.6 dB |
+| Peaking | 8475 Hz  | 4.25 | -6.1 dB |
+| Peaking | 9568 Hz  | 2.95 | -1.1 dB |
+| Peaking | 17083 Hz | 2.34 | -7.3 dB |
+| Peaking | 1790 Hz  | 3.01 | -3.1 dB |
+| Peaking | 3487 Hz  | 1.6  | 6.1 dB  |
+| Peaking | 4589 Hz  | 2.4  | -8.1 dB |
+| Peaking | 6202 Hz  | 4.04 | 2.4 dB  |
+| Peaking | 10572 Hz | 2.66 | 1.8 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sony%20MDR-AS40EX/Sony%20MDR-AS40EX.png)

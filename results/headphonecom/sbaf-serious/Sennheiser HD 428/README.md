@@ -1,4 +1,5 @@
 # Sennheiser HD 428
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 428 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 428 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 40 Hz    | 0.5  | 6.8 dB  |
-| Peaking | 462 Hz   | 1.28 | 1.9 dB  |
-| Peaking | 2864 Hz  | 4.24 | 2.0 dB  |
-| Peaking | 4881 Hz  | 1.75 | 5.9 dB  |
-| Peaking | 24000 Hz | 2.34 | 3.0 dB  |
-| Peaking | 21 Hz    | 2.37 | 1.7 dB  |
-| Peaking | 83 Hz    | 3.89 | 2.2 dB  |
-| Peaking | 127 Hz   | 2.26 | -1.9 dB |
-| Peaking | 726 Hz   | 0.16 | 0.3 dB  |
-| Peaking | 1736 Hz  | 3.43 | -3.1 dB |
+| Peaking | 461 Hz   | 1.28 | 1.9 dB  |
+| Peaking | 2867 Hz  | 4.13 | 2.0 dB  |
+| Peaking | 4891 Hz  | 1.71 | 5.9 dB  |
+| Peaking | 22050 Hz | 2.38 | 2.8 dB  |
+| Peaking | 19 Hz    | 2.46 | 1.3 dB  |
+| Peaking | 82 Hz    | 3.98 | 2.2 dB  |
+| Peaking | 130 Hz   | 2.24 | -1.9 dB |
+| Peaking | 759 Hz   | 0.15 | 0.3 dB  |
+| Peaking | 1737 Hz  | 3.42 | -3.1 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20428/Sennheiser%20HD%20428.png)

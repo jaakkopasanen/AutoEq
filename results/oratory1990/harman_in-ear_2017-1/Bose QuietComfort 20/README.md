@@ -1,4 +1,5 @@
 # Bose QuietComfort 20
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -28,10 +29,10 @@ When using independent subset of filters, apply preamp of **--0.4dB**.
 | Peaking | 401 Hz   | 1.75 | -3.4 dB  |
 | Peaking | 1820 Hz  | 2.26 | -7.4 dB  |
 | Peaking | 17820 Hz | 1.35 | -12.5 dB |
-| Peaking | 876 Hz   | 3.98 | 2.4 dB   |
-| Peaking | 4300 Hz  | 2.97 | -5.5 dB  |
-| Peaking | 6069 Hz  | 2.46 | 7.6 dB   |
-| Peaking | 7516 Hz  | 4.64 | -6.7 dB  |
-| Peaking | 13087 Hz | 4.55 | 3.3 dB   |
+| Peaking | 880 Hz   | 3.98 | 2.4 dB   |
+| Peaking | 4276 Hz  | 2.97 | -5.5 dB  |
+| Peaking | 6026 Hz  | 2.46 | 7.6 dB   |
+| Peaking | 7460 Hz  | 4.64 | -6.7 dB  |
+| Peaking | 13085 Hz | 4.55 | 3.3 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Bose%20QuietComfort%2020/Bose%20QuietComfort%2020.png)

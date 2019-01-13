@@ -1,4 +1,5 @@
 # HiFiMAN HE-300 Rev 2
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,27 +12,27 @@ GraphicEQ: 21 0.0; 23 5.9; 25 5.4; 28 4.3; 31 3.1; 34 2.0; 37 1.0; 41 -0.1; 45 -
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `HiFiMAN HE-300 Rev 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
+Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-300 Rev 2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.4dB**.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 23 Hz    | 1.44 | 6.7 dB  |
-| Peaking | 107 Hz   | 0.71 | -5.6 dB |
+| Peaking | 22 Hz    | 1.46 | 6.7 dB  |
+| Peaking | 107 Hz   | 0.7  | -5.6 dB |
 | Peaking | 1912 Hz  | 2.08 | -3.8 dB |
-| Peaking | 3810 Hz  | 1.36 | -5.2 dB |
-| Peaking | 23471 Hz | 2.42 | -3.8 dB |
-| Peaking | 260 Hz   | 4.57 | -1.5 dB |
-| Peaking | 668 Hz   | 2.23 | 2.7 dB  |
-| Peaking | 5171 Hz  | 4.13 | -5.4 dB |
-| Peaking | 6134 Hz  | 1.97 | 4.3 dB  |
-| Peaking | 9502 Hz  | 6.01 | -4.0 dB |
+| Peaking | 3816 Hz  | 1.35 | -5.2 dB |
+| Peaking | 21317 Hz | 2.41 | -3.8 dB |
+| Peaking | 260 Hz   | 4.79 | -1.5 dB |
+| Peaking | 668 Hz   | 2.21 | 2.7 dB  |
+| Peaking | 5158 Hz  | 4.14 | -5.3 dB |
+| Peaking | 6166 Hz  | 1.95 | 4.2 dB  |
+| Peaking | 9517 Hz  | 5.7  | -4.0 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE-300%20Rev%202/HiFiMAN%20HE-300%20Rev%202.png)

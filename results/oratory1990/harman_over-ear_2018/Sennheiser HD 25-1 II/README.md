@@ -1,4 +1,5 @@
 # Sennheiser HD 25-1 II
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -17,21 +18,21 @@ Set volume attenuation in the Connection tab for both channels to **-61**
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 25-1 II ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 37 Hz    | 0.7  | 7.1 dB  |
+| Peaking | 37 Hz    | 0.71 | 7.1 dB  |
 | Peaking | 601 Hz   | 2.2  | 2.4 dB  |
-| Peaking | 3106 Hz  | 1.29 | -4.1 dB |
-| Peaking | 4558 Hz  | 1.28 | 7.2 dB  |
+| Peaking | 3104 Hz  | 1.3  | -4.0 dB |
+| Peaking | 4560 Hz  | 1.28 | 7.2 dB  |
 | Peaking | 8192 Hz  | 2.63 | -7.8 dB |
-| Peaking | 39 Hz    | 3.11 | -1.0 dB |
-| Peaking | 70 Hz    | 2.38 | 2.7 dB  |
-| Peaking | 130 Hz   | 0.73 | -1.3 dB |
-| Peaking | 1344 Hz  | 6.53 | 0.8 dB  |
-| Peaking | 10599 Hz | 7.37 | 1.5 dB  |
+| Peaking | 42 Hz    | 3.01 | -1.3 dB |
+| Peaking | 69 Hz    | 2.41 | 2.7 dB  |
+| Peaking | 140 Hz   | 0.78 | -1.3 dB |
+| Peaking | 1338 Hz  | 6.45 | 0.8 dB  |
+| Peaking | 10656 Hz | 7.27 | 1.5 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%2025-1%20II/Sennheiser%20HD%2025-1%20II.png)

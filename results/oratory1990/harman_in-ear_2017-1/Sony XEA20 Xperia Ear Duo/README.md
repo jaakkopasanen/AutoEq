@@ -1,4 +1,5 @@
 # Sony XEA20 Xperia Ear Duo
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -17,21 +18,21 @@ Set volume attenuation in the Connection tab for both channels to **-61**
 In case of using Peace, click *Import* in Peace GUI and select `Sony XEA20 Xperia Ear Duo ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 66 Hz    | 0.16 | 6.4 dB   |
-| Peaking | 1980 Hz  | 3.32 | 5.7 dB   |
+| Peaking | 1979 Hz  | 3.32 | 5.7 dB   |
 | Peaking | 4717 Hz  | 0.91 | 4.5 dB   |
 | Peaking | 12569 Hz | 4.1  | 3.8 dB   |
 | Peaking | 15363 Hz | 2.55 | -16.7 dB |
 | Peaking | 1237 Hz  | 3.96 | -5.2 dB  |
-| Peaking | 1627 Hz  | 6.04 | 3.3 dB   |
-| Peaking | 4869 Hz  | 7.84 | -2.8 dB  |
-| Peaking | 6165 Hz  | 7.33 | 3.0 dB   |
-| Peaking | 18347 Hz | 4.92 | 3.3 dB   |
+| Peaking | 1626 Hz  | 6.06 | 3.3 dB   |
+| Peaking | 4905 Hz  | 7.85 | -2.8 dB  |
+| Peaking | 6211 Hz  | 7.33 | 3.0 dB   |
+| Peaking | 18407 Hz | 4.92 | 3.4 dB   |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sony%20XEA20%20Xperia%20Ear%20Duo/Sony%20XEA20%20Xperia%20Ear%20Duo.png)

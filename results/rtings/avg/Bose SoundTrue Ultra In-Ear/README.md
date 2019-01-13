@@ -1,4 +1,5 @@
 # Bose SoundTrue Ultra In-Ear
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -11,7 +12,7 @@ GraphicEQ: 21 -0.6; 23 -0.6; 25 -0.6; 28 -0.6; 31 -0.6; 34 -0.5; 37 -0.5; 41 -0.
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Bose SoundTrue Ultra In-Ear GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-28**
+Set volume attenuation in the Connection tab for both channels to **-28**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bose SoundTrue Ultra In-Ear ParametricEQ.txt`.
@@ -23,15 +24,15 @@ When using independent subset of filters, apply preamp of **-2.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 171 Hz   | 0.78 | -1.8 dB |
-| Peaking | 733 Hz   | 0.94 | 4.8 dB  |
-| Peaking | 1161 Hz  | 0.76 | -3.3 dB |
-| Peaking | 5880 Hz  | 3.65 | -4.8 dB |
-| Peaking | 24000 Hz | 1.9  | 0.3 dB  |
-| Peaking | 22 Hz    | 1.18 | -0.6 dB |
-| Peaking | 2020 Hz  | 4.74 | -1.4 dB |
-| Peaking | 2476 Hz  | 1.8  | 1.1 dB  |
-| Peaking | 6718 Hz  | 0.54 | -0.6 dB |
-| Peaking | 7596 Hz  | 4.59 | 2.0 dB  |
+| Peaking | 171 Hz   | 0.78 | -1.9 dB |
+| Peaking | 736 Hz   | 0.94 | 4.9 dB  |
+| Peaking | 1150 Hz  | 0.75 | -3.4 dB |
+| Peaking | 5881 Hz  | 3.58 | -4.8 dB |
+| Peaking | 22050 Hz | 1.88 | 0.3 dB  |
+| Peaking | 23 Hz    | 1.31 | -0.6 dB |
+| Peaking | 2048 Hz  | 3.76 | -1.8 dB |
+| Peaking | 2314 Hz  | 1.35 | 1.5 dB  |
+| Peaking | 5428 Hz  | 0.37 | -0.6 dB |
+| Peaking | 7608 Hz  | 4.65 | 2.0 dB  |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Bose%20SoundTrue%20Ultra%20In-Ear/Bose%20SoundTrue%20Ultra%20In-Ear.png)

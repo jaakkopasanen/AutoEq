@@ -1,4 +1,5 @@
 # Sennheiser HD 800 S
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
@@ -17,21 +18,21 @@ Set volume attenuation in the Connection tab for both channels to **-62**
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 800 S ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.9dB**.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 1.09 | 5.7 dB  |
-| Peaking | 58 Hz    | 2.37 | 2.9 dB  |
-| Peaking | 5659 Hz  | 6.6  | -4.6 dB |
-| Peaking | 12336 Hz | 3.58 | -6.5 dB |
-| Peaking | 18854 Hz | 0.98 | -7.9 dB |
-| Peaking | 82 Hz    | 1.67 | 1.1 dB  |
-| Peaking | 203 Hz   | 0.63 | -1.9 dB |
-| Peaking | 1749 Hz  | 1.56 | 2.7 dB  |
-| Peaking | 3436 Hz  | 4.17 | 2.1 dB  |
-| Peaking | 9796 Hz  | 5.64 | 1.9 dB  |
+| Peaking | 24 Hz    | 1.07 | 5.7 dB  |
+| Peaking | 58 Hz    | 2.38 | 2.9 dB  |
+| Peaking | 5608 Hz  | 6.76 | -4.7 dB |
+| Peaking | 12585 Hz | 3.58 | -6.5 dB |
+| Peaking | 18840 Hz | 0.98 | -7.9 dB |
+| Peaking | 82 Hz    | 1.98 | 1.1 dB  |
+| Peaking | 210 Hz   | 0.67 | -1.9 dB |
+| Peaking | 1750 Hz  | 1.55 | 2.7 dB  |
+| Peaking | 3429 Hz  | 3.84 | 2.0 dB  |
+| Peaking | 14521 Hz | 2.85 | -0.3 dB |
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800%20S/Sennheiser%20HD%20800%20S.png)
