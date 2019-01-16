@@ -10,3 +10,4 @@ tensorflow==1.8
 tabulate
 flask
 gevent
+soundfile
