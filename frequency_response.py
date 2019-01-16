@@ -38,7 +38,7 @@ DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 5
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 DEFAULT_TILT = 0.0
 DEFAULT_FS = 44100
-DEFAULT_BITDEPTH = "PCM_16"
+DEFAULT_BIT_DEPTH = 16
 
 DEFAULT_OE_BASS_BOOST_F_LOWER = 35
 DEFAULT_OE_BASS_BOOST_F_UPPER = 280
@@ -572,7 +572,7 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def impulse_response(self, fs=DEFAULT_FS, bitdepth=DEFAULT_BITDEPTH):
+    def impulse_response(self, fs=DEFAULT_FS):
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
         fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
@@ -1187,8 +1187,8 @@ class FrequencyResponse:
         arg_parser.add_argument('--fs', type=int, default=DEFAULT_FS,
                                 help='Sampling frequency for impulse response and paramteric eq filters.'
                                      'Defaults to {}.'.format(DEFAULT_FS))
-        arg_parser.add_argument('--bitdepth', type=str, default=DEFAULT_BITDEPTH,
-                                help='Number of bits for every sample. Defaults to {}.'.format(DEFAULT_BITDEPTH))
+        arg_parser.add_argument('--bit_depth', type=int, default=DEFAULT_BIT_DEPTH,
+                                help='Number of bits for every sample. Defaults to {}.'.format(DEFAULT_BIT_DEPTH))
         arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
                                 help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
                                      ' Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
@@ -1356,7 +1356,7 @@ class FrequencyResponse:
              parametric_eq=False,
              max_filters=None,
              fs=DEFAULT_FS,
-             bitdepth=DEFAULT_BITDEPTH,
+             bit_depth=DEFAULT_BIT_DEPTH,
              bass_boost=None,
              iem_bass_boost=None,
              tilt=None,
@@ -1389,6 +1389,15 @@ class FrequencyResponse:
             compensation = FrequencyResponse.read_from_csv(compensation_path)
             compensation.interpolate()
             compensation.center()
+        
+        if bit_depth == 16:
+            bit_depth = "PCM_16"
+        elif bit_depth == 24:
+            bit_depth = "PCM_24"
+        elif bit_depth == 32:
+            bit_depth = "PCM_32"
+        else:
+            raise ValueError('Invalid bit depth. Accepted values are 16, 24 e 32.')
 
         n = 0
         for input_file_path in glob_files:
@@ -1440,8 +1449,8 @@ class FrequencyResponse:
                     # Write impulse response as WAV
                     fss = [44100, 48000] if fs in [44100, 48000] else [fs]
                     for fs in fss:
-                        ir = fr.impulse_response(fs=fs, bitdepth=bitdepth)
-                        sf.write(output_file_path.replace('.csv', ' {}Hz.wav'.format(fs)), ir, fs, bitdepth)
+                        ir = fr.impulse_response(fs=fs)
+                        sf.write(output_file_path.replace('.csv', ' {}Hz.wav'.format(fs)), ir, fs, bit_depth)
 
                 # Write results to CSV file
                 fr.write_to_csv(output_file_path)
