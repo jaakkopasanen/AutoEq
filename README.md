@@ -542,20 +542,3 @@ curves were developed in addition to the native curve used by Rtings in their me
 
 Data processing tools are not meant as a user friendly and robust software but instead to be able to be ran once to
 obtain the raw data.
-
-## TODO
-Contributions are more than welcome.
-
-- Crinacle measurements for IEMs
-    - Full pipeline for new measurements
-    - Target response for old measurements
-    - Update results, recommendations and index
-- Guide for WebPlotDigitizer
-- Fork as code only repo
-- Rtings in server.py
-  - Calibrations to Headphone.com
-  - Compensation functions
-- Reference audio analyzer measurements
-    - Use compensated data directly
-    - Full pipeline
-
