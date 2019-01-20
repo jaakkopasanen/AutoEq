@@ -492,7 +492,10 @@ class FrequencyResponse:
         frequency = np.repeat(np.expand_dims(frequency, axis=0), len(_fc), axis=0)
         _eq = np.sum(biquad.digital_coeffs(frequency, fs, a0, a1, a2, b0, b1, b2), axis=0)
 
-        return _eq, rmse, np.squeeze(_fc, axis=1), np.squeeze(_Q, axis=1), np.squeeze(_gain, axis=1)
+        coeffs_a = np.hstack((np.tile(a0, a1.shape), a1, a2))
+        coeffs_b = np.hstack((b0, b1, b2))
+
+        return _eq, rmse, np.squeeze(_fc, axis=1), np.squeeze(_Q, axis=1), np.squeeze(_gain, axis=1), coeffs_a, coeffs_b
 
     def optimize_parametric_eq(self, max_filters=None):
         """Fits multiple biquad filters to equalization curve. If max_filters is a list with more than one element, one
@@ -513,6 +516,7 @@ class FrequencyResponse:
                              optimization. When using sub-set of filters independently the actual max gain of that
                              sub-set's frequency response must be applied as a negative digital preamp to avoid
                              clipping.
+            - **ir:** Impulse response
         """
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
@@ -522,10 +526,11 @@ class FrequencyResponse:
 
         self.parametric_eq = np.zeros(self.frequency.shape)
         fc = Q = gain = np.array([])
+        coeffs_a = coeffs_b = np.empty((0, 3))
         n_produced = []
         max_gains = []
         for n in max_filters:
-            _eq, rmse, _fc, _Q, _gain = self._run_optimize_parametric_eq(
+            _eq, rmse, _fc, _Q, _gain, _coeffs_a, _coeffs_b = self._run_optimize_parametric_eq(
                 frequency=self.frequency,
                 target=self.equalization - self.parametric_eq,
                 max_filters=n
@@ -537,8 +542,14 @@ class FrequencyResponse:
             fc = np.concatenate((fc, _fc))
             Q = np.concatenate((Q, _Q))
             gain = np.concatenate((gain, _gain))
+            coeffs_a = np.vstack((coeffs_a, _coeffs_a))
+            coeffs_b = np.vstack((coeffs_b, _coeffs_b))
 
-        return np.transpose(np.vstack([fc, Q, gain])), n_produced, max_gains
+        a0, a1, a2 = np.hsplit(coeffs_a, 3)
+        b0, b1, b2 = np.hsplit(coeffs_b, 3)
+        ir = biquad.impulse_response(a0, a1, a2, b0, b1, b2, n=250)
+
+        return np.transpose(np.vstack([fc, Q, gain])), n_produced, max_gains, ir
 
     @staticmethod
     def write_eqapo_parametric_eq(file_path, filters):
@@ -572,13 +583,13 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def impulse_response(self, fs=DEFAULT_FS):
+    def impulse_response(self, fs=DEFAULT_FS, f_res=10):
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
         fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
-        fr.interpolate(np.arange(0, fs // 2, 5))
+        fr.interpolate(np.arange(0, fs // 2, f_res))
         n = len(fr.frequency)
-        fr.raw[fr.frequency <= 10.0] = 0.0
+        fr.raw[fr.frequency < f_res] = 0.0
         # Reduce by max gain to avoid clipping with 1 dB of headroom
         fr.raw -= np.max(fr.raw)
         fr.raw -= 1.0
@@ -591,7 +602,6 @@ class FrequencyResponse:
         # IFFT
         ir = np.real(np.fft.ifft(fr_data))
         ir = np.concatenate((ir[n:], ir[:n]))
-        ir = np.tile(ir, (2, 1)).T
         return ir
 
     def write_readme(self,
@@ -1328,6 +1338,7 @@ class FrequencyResponse:
         filters = None
         n_filters = None
         max_gains = None
+        ir = None
 
         # Equalize
         if equalize:
@@ -1341,9 +1352,9 @@ class FrequencyResponse:
             )
             if parametric_eq:
                 # Get the filters
-                filters, n_filters, max_gains = self.optimize_parametric_eq(max_filters=max_filters)
+                filters, n_filters, max_gains, ir = self.optimize_parametric_eq(max_filters=max_filters)
 
-        return filters, n_filters, max_gains
+        return filters, n_filters, max_gains, ir
 
     @staticmethod
     def main(input_dir=None,
@@ -1419,7 +1430,7 @@ class FrequencyResponse:
                 fr.write_to_csv(input_file_path)
 
             # Process and equalize
-            filters, n_filters, max_gains = fr.process(
+            filters, n_filters, max_gains, minimum_phase_ir = fr.process(
                 calibration=calibration,
                 compensation=compensation,
                 equalize=equalize,
@@ -1448,9 +1459,23 @@ class FrequencyResponse:
                         fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), filters)
                     # Write impulse response as WAV
                     fss = [44100, 48000] if fs in [44100, 48000] else [fs]
-                    for fs in fss:
-                        ir = fr.impulse_response(fs=fs)
-                        sf.write(output_file_path.replace('.csv', ' {}Hz.wav'.format(fs)), ir, fs, bit_depth)
+                    for _fs in fss:
+                        linear_phase_ir = fr.impulse_response(fs=_fs)
+                        linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
+                        sf.write(
+                            output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
+                            linear_phase_ir,
+                            _fs,
+                            bit_depth
+                        )
+                    if minimum_phase_ir is not None:
+                        _minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
+                        sf.write(
+                            output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(fs)),
+                            _minimum_phase_ir,
+                            fs,
+                            bit_depth
+                        )
 
                 # Write results to CSV file
                 fr.write_to_csv(output_file_path)

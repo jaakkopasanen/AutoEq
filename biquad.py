@@ -3,6 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
+from scipy import signal
 
 
 def numpyfy(fc, Q, gain, fs):
@@ -123,18 +124,20 @@ def digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2):
     return c
 
 
+def impulse_response(a0, a1, a2, b0, b1, b2, n=250):
+    ir = signal.unit_impulse(n)
+    for _a0, _a1, _a2, _b0, _b1, _b2 in zip(a0, a1, a2, b0, b1, b2):
+        ir = signal.lfilter(np.concatenate([_b0, _b1, _b2]), np.concatenate([_a0, _a1, _a2]), ir)
+    ir = np.concatenate(([0.0], ir))
+    return ir
+
+
 def main():
-    # fc = [20, 220, 450, 1280, 2200, 3000, 5700, 6600, 7600]
-    # Q = [1.1, 0.9, 1.0, 1.5, 4.0, 2.0, 6.0, 7.0, 5.0]
-    # gain = [2.1, -3.8, -2.0, 4.0, -3.5, 4.5, -5.0, 0.4, -2.4]
+    fc = [20, 220, 450, 1280, 2200, 3000, 5700, 6600, 7600]
+    Q = [1.1, 0.9, 1.0, 1.5, 4.0, 2.0, 6.0, 7.0, 5.0]
+    gain = [2.1, -3.8, -2.0, 4.0, -3.5, 4.5, -5.0, 0.4, -2.4]
 
     fs = 48000
-
-    fc = [100000]
-    fc.append(abs(round(fc[0] / fs) * fs - fc[0]))
-    print(fc)
-    Q = [1, 1]
-    gain = [1.0, -1.0]
 
     a0, a1, a2, b0, b1, b2 = peaking(fc, Q, gain, fs=fs)
 
@@ -144,17 +147,26 @@ def main():
     f = np.repeat(np.expand_dims(f, 1), len(fc), axis=1)
 
     c = digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2)
+    a0 = [a0] * len(a1)
+    ir = impulse_response(a0, a1, a2, b0, b1, b2, n=250)
 
     fig, ax = plt.subplots()
     #plt.plot(f, np.sum(c, axis=1), linewidth=3)
     plt.plot(f, c)
     plt.xlabel('Frequency (Hz)')
     plt.semilogx()
-    plt.xlim([20, 100000])
+    plt.xlim([20, 20000])
     plt.ylabel('Amplitude (dBr)')
     plt.grid(True, which='major')
     plt.grid(True, which='minor')
     ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
+    plt.show()
+
+    fig, ax = plt.subplots()
+    plt.plot(np.arange(0, len(ir)) / fs, ir)
+    plt.xlabel('Time (s)')
+    plt.ylabel('Amplitude')
+    plt.ylim([-0.01, 0.01])
     plt.show()
 
 

@@ -117,7 +117,7 @@ def process():
     # Create frequency response and process
     try:
         fr = FrequencyResponse(name='fr', frequency=frequency, raw=raw)
-        filters, n_filters, max_gains = fr.process(**params)
+        filters, n_filters, max_gains, ir = fr.process(**params)
     except Exception as err:
         return bad_request(500, str(err))
 
