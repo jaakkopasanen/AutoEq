@@ -125,6 +125,7 @@ def digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2):
 
 
 def impulse_response(a0, a1, a2, b0, b1, b2, n=250):
+    raise NotImplemented('biquad.impulse_response is not correctly implemented!')
     ir = signal.unit_impulse(n)
     for _a0, _a1, _a2, _b0, _b1, _b2 in zip(a0, a1, a2, b0, b1, b2):
         ir = signal.lfilter(np.concatenate([_b0, _b1, _b2]), np.concatenate([_a0, _a1, _a2]), ir)

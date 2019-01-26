@@ -545,11 +545,7 @@ class FrequencyResponse:
             coeffs_a = np.vstack((coeffs_a, _coeffs_a))
             coeffs_b = np.vstack((coeffs_b, _coeffs_b))
 
-        a0, a1, a2 = np.hsplit(coeffs_a, 3)
-        b0, b1, b2 = np.hsplit(coeffs_b, 3)
-        ir = biquad.impulse_response(a0, a1, a2, b0, b1, b2, n=250)
-
-        return np.transpose(np.vstack([fc, Q, gain])), n_produced, max_gains, ir
+        return np.transpose(np.vstack([fc, Q, gain])), n_produced, max_gains
 
     @staticmethod
     def write_eqapo_parametric_eq(file_path, filters):
@@ -583,7 +579,104 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def impulse_response(self, fs=DEFAULT_FS, f_res=10):
+    @staticmethod
+    def linear_phase_to_minimum_phase(freq_data):
+        """Turn linear phase FIR filter into minimum phase FIR filters
+
+        Inspired by:
+        https://sourceforge.net/p/equalizerapo/code/HEAD/tree/tags/1.2/filters/GraphicEQFilter.cpp#l146
+
+        Args:
+            freq_data: Linear phase FIR filter data
+
+        Returns:
+            Minimum phase FIR filter data
+        """
+        # Get filter length, freq_data contains mirror also
+        filter_length = len(freq_data) // 2
+
+        # IFFT to get time data
+        time_data = np.fft.ifft(freq_data)
+
+        # Mystical scaling, doesn't work without this
+        time_data /= filter_length * 2
+
+        for i in range(1, filter_length):
+            # Is this inverse phase?
+            real = time_data.real[i] + time_data.real[filter_length * 2 - i]
+            imag = (time_data.imag[i] - time_data.imag[filter_length * 2 - i]) * 1j
+            time_data[i] = real + imag
+            # Set mirrored half to zeros
+            time_data[filter_length * 2 - i] = 0 + 0j
+        # Invert phase of the last sample?
+        time_data[filter_length] = time_data.real[filter_length] - time_data.imag[filter_length]
+
+        # Back to frequency domain
+        freq_data = np.fft.fft(time_data)
+
+        for i in range(2 * filter_length):
+            # This has something to do with Euler's formula
+            # Shifting zeros to inside the unit circle?
+            er = np.exp(freq_data.real[i])
+            freq_data[i] = er * np.cos(freq_data.imag[i]) + er * np.sin(freq_data.imag[i]) * 1j
+
+        return freq_data
+
+    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, filter_length=16384):
+        """Generates minimum phase impulse response
+
+        Inspired by:
+        https://sourceforge.net/p/equalizerapo/code/HEAD/tree/tags/1.2/filters/GraphicEQFilter.cpp#l45
+
+        Args:
+            fs: Sampling frequency in Hz
+            filter_length: FIR filter length in number of samples. Should be divisible by two?
+
+        Returns:
+            Minimum phase impulse response
+        """
+        freq = np.arange(0, filter_length) * fs / (filter_length * 2)
+        fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
+        fr.raw[fr.frequency <= 20.0] = 0.0
+        # Interpolate in place
+        fr.interpolate(f=freq)
+        fr.raw[0] = fr.raw[1]
+        # Convert to linear scale
+        freq_data = 10.0**(fr.raw / 20.0)
+
+        # plt.plot(freq, freq_data)
+        # plt.title('Frequency domain data')
+        # plt.semilogx()
+        # plt.show()
+
+        # Mirror frequency domain data
+        freq_data = np.concatenate([freq_data, np.flip(freq_data)])
+
+        # Turn to minimum phase
+        freq_data = self.linear_phase_to_minimum_phase(freq_data)
+
+        # plt.plot(freq, freq_data[:filter_length])
+        # plt.title('MP frequency domain data')
+        # plt.semilogx()
+        # plt.show()
+
+        # IFFT
+        time_data = np.fft.ifft(freq_data)
+
+        plt.plot(freq, time_data[:filter_length])
+        plt.title('Time domain data')
+        plt.show()
+
+        # Cosine ramp down
+        # to ensure impulse response resolves to zero?
+        ir = time_data * 0.5 * (1.0 + np.cos(2 * np.pi * np.arange(filter_length * 2) / (2 * filter_length)))
+        ir = ir[:filter_length]
+
+        # We are only interested in the real parts
+        ir = np.real(ir)
+        return ir
+
+    def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=10):
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
         fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
@@ -1352,9 +1445,9 @@ class FrequencyResponse:
             )
             if parametric_eq:
                 # Get the filters
-                filters, n_filters, max_gains, ir = self.optimize_parametric_eq(max_filters=max_filters)
+                filters, n_filters, max_gains = self.optimize_parametric_eq(max_filters=max_filters)
 
-        return filters, n_filters, max_gains, ir
+        return filters, n_filters, max_gains
 
     @staticmethod
     def main(input_dir=None,
@@ -1430,7 +1523,7 @@ class FrequencyResponse:
                 fr.write_to_csv(input_file_path)
 
             # Process and equalize
-            filters, n_filters, max_gains, minimum_phase_ir = fr.process(
+            filters, n_filters, max_gains = fr.process(
                 calibration=calibration,
                 compensation=compensation,
                 equalize=equalize,
@@ -1460,7 +1553,8 @@ class FrequencyResponse:
                     # Write impulse response as WAV
                     fss = [44100, 48000] if fs in [44100, 48000] else [fs]
                     for _fs in fss:
-                        linear_phase_ir = fr.impulse_response(fs=_fs)
+                        # Write linear phase impulse response
+                        linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs)
                         linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
                         sf.write(
                             output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
@@ -1468,11 +1562,12 @@ class FrequencyResponse:
                             _fs,
                             bit_depth
                         )
-                    if minimum_phase_ir is not None:
-                        _minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
+                        # Write minimum phase impulse response
+                        minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs)
+                        minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
                         sf.write(
-                            output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(fs)),
-                            _minimum_phase_ir,
+                            output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
+                            minimum_phase_ir,
                             fs,
                             bit_depth
                         )
