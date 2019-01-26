@@ -96,6 +96,7 @@ from the same source.
 - [AKG Q701](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/AKG%20Q701) by Rtings
 - [AKG Y50BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/AKG%20Y50BT) by oratory1990
 - [AKG Y50](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/AKG%20Y50) by Reference Audio Analyzer
+- [AUKEY Latitude](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/AUKEY%20Latitude) by Rtings
 - [Accidentally Extraordinary 51st Studios](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Accidentally%20Extraordinary%2051st%20Studios) by Innerfidelity
 - [Accidentally Extraordinary Bamboo](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Accidentally%20Extraordinary%20Bamboo) by Innerfidelity
 - [Acoustic Research AR H1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Acoustic%20Research%20AR%20H1) by Innerfidelity
@@ -571,7 +572,9 @@ from the same source.
 - [Focal Elear sn1BEBG004809](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Focal%20Elear%20sn1BEBG004809) by Innerfidelity
 - [Focal Elear with Utopia Pads](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Focal%20Elear%20with%20Utopia%20Pads) by Innerfidelity
 - [Focal Elear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Focal%20Elear) by oratory1990
+- [Focal Elear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Focal%20Elear) by Rtings
 - [Focal Elegia (preliminary)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Focal%20Elegia%20(preliminary)) by oratory1990
+- [Focal Elegia](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Focal%20Elegia) by Rtings
 - [Focal Elex](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Focal%20Elex) by oratory1990
 - [Focal Listen](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Focal%20Listen) by Innerfidelity
 - [Focal Sphear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Focal%20Sphear) by Innerfidelity
@@ -714,6 +717,7 @@ from the same source.
 - [JBL E45BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20E45BT) by Rtings
 - [JBL E50BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20E50BT) by Rtings
 - [JBL E55BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20E55BT) by Rtings
+- [JBL E65BTNC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20E65BTNC) by Rtings
 - [JBL Endurance Sprint](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Endurance%20Sprint) by Rtings
 - [JBL Everest Elite 700 Wired Active](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JBL%20Everest%20Elite%20700%20Wired%20Active) by Innerfidelity
 - [JBL Everest Elite 700 Wired Passive](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JBL%20Everest%20Elite%20700%20Wired%20Passive) by Innerfidelity
@@ -722,6 +726,7 @@ from the same source.
 - [JBL Free](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Free) by Rtings
 - [JBL J55i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JBL%20J55i) by Innerfidelity
 - [JBL J88i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JBL%20J88i) by Innerfidelity
+- [JBL Reflect Mini 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Reflect%20Mini%202) by Rtings
 - [JBL T450BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20T450BT) by Rtings
 - [JPS Labs Abyss AB-1266](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JPS%20Labs%20Abyss%20AB-1266) by Innerfidelity
 - [JVC HA FR301](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JVC%20HA%20FR301) by Innerfidelity
@@ -883,6 +888,7 @@ from the same source.
 - [Meze Classics 66](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Meze%20Classics%2066) by Innerfidelity
 - [Meze Classics 88](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Meze%20Classics%2088) by Innerfidelity
 - [Meze Empyrean](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Meze%20Empyrean) by oratory1990
+- [Microsoft Surface Headphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Microsoft%20Surface%20Headphones) by Rtings
 - [Monoprice 8320](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Monoprice%208320) by Innerfidelity
 - [Monoprice 8323](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Monoprice%208323) by Innerfidelity
 - [Monoprice Enhanced Active](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Monoprice%20Enhanced%20Active) by Rtings
@@ -1317,6 +1323,7 @@ from the same source.
 - [Sennheiser Momentum M2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20M2) by Innerfidelity
 - [Sennheiser Momentum On-Ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Sennheiser%20Momentum%20On-Ear) by Headphone.com
 - [Sennheiser Momentum On-Ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20On-Ear) by Innerfidelity
+- [Sennheiser Momentum True Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sennheiser%20Momentum%20True%20Wireless) by Rtings
 - [Sennheiser Momentum Wireless Bluetooth](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20Wireless%20Bluetooth) by Innerfidelity
 - [Sennheiser Momentum Wireless Wired Active](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20Wireless%20Wired%20Active) by Innerfidelity
 - [Sennheiser Momentum Wireless Wired Passive](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20Wireless%20Wired%20Passive) by Innerfidelity
@@ -1425,6 +1432,7 @@ from the same source.
 - [Skullcandy Mix Master Mike MMM](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Skullcandy%20Mix%20Master%20Mike%20MMM) by Headphone.com
 - [Skullcandy Mix Master](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Skullcandy%20Mix%20Master) by Innerfidelity
 - [Skullcandy Navigator](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Skullcandy%20Navigator) by Innerfidelity
+- [Skullcandy Push](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Skullcandy%20Push) by Rtings
 - [Skullcandy Roc Nation Aviator](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Skullcandy%20Roc%20Nation%20Aviator) by Innerfidelity
 - [Skullcandy Smokin Buds- Mic'd](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Skullcandy%20Smokin%20Buds-%20Mic'd) by Headphone.com
 - [Skullcandy Smokin Buds](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Skullcandy%20Smokin%20Buds) by Headphone.com
@@ -1539,6 +1547,7 @@ from the same source.
 - [SoundPeats Q9A](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/SoundPeats%20Q9A) by Rtings
 - [SoundPeats QY8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/SoundPeats%20QY8) by Rtings
 - [SoundPeats QY9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/SoundPeats%20QY9) by Rtings
+- [SoundPeats TrueFree](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/SoundPeats%20TrueFree) by Rtings
 - [Spider Moonlight](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Spider%20Moonlight) by Headphone.com
 - [Spider PowerForce](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Spider%20PowerForce) by Innerfidelity
 - [Spider realvoice](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Spider%20realvoice) by Innerfidelity
@@ -1596,6 +1605,7 @@ from the same source.
 - [T-Peos U200R](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/T-Peos%20U200R) by Innerfidelity
 - [TDK BA200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/TDK%20BA200) by Innerfidelity
 - [TDK MT300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/TDK%20MT300) by Innerfidelity
+- [TIN Audio T2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/TIN%20Audio%20T2) by Rtings
 - [Takstar Pro 80](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Takstar%20Pro%2080) by Innerfidelity
 - [Tascam TH-02](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Tascam%20TH-02) by Rtings
 - [Teac CT-H02](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Teac%20CT-H02) by Headphone.com
@@ -1632,6 +1642,7 @@ from the same source.
 - [Torque t402v OverEar Yellow](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Yellow) by Innerfidelity
 - [Toshiba HR-810 Low Gain](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Toshiba%20HR-810%20Low%20Gain) by Innerfidelity
 - [Turtle Beach Elite 800](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Turtle%20Beach%20Elite%20800) by Rtings
+- [Turtle Beach Elite Atlas](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Turtle%20Beach%20Elite%20Atlas) by Rtings
 - [Turtle Beach Elite Pro 2 SuperAmp](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Turtle%20Beach%20Elite%20Pro%202%20SuperAmp) by Rtings
 - [Turtle Beach Recon 50X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Turtle%20Beach%20Recon%2050X) by Rtings
 - [Turtle Beach Stealth 300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Turtle%20Beach%20Stealth%20300) by Rtings
@@ -1724,6 +1735,7 @@ from the same source.
 - [Woodees iESW100L 24K Blues](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Woodees%20iESW100L%2024K%20Blues) by Headphone.com
 - [Woodees iESW101B](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Woodees%20iESW101B) by Headphone.com
 - [Woodees iESW101V Vintage](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Woodees%20iESW101V%20Vintage) by Headphone.com
+- [XFYRO xS2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/XFYRO%20xS2) by Rtings
 - [XTZ EarPhone-12](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/XTZ%20EarPhone-12) by Innerfidelity
 - [Xaiomi Piston 3 Youth Edition](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Xaiomi%20Piston%203%20Youth%20Edition) by Innerfidelity
 - [Xiaomi Crystal](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Xiaomi%20Crystal) by Innerfidelity
