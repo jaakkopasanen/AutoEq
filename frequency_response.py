@@ -7,7 +7,7 @@ import argparse
 import math
 import pandas as pd
 from scipy.interpolate import InterpolatedUnivariateSpline
-from scipy.signal import savgol_filter, find_peaks, minimum_phase
+from scipy.signal import savgol_filter, find_peaks, minimum_phase, firwin2
 from scipy.special import expit
 import soundfile as sf
 import numpy as np
@@ -220,6 +220,7 @@ class FrequencyResponse:
 
         fr = FrequencyResponse(name='hack', frequency=self.frequency, raw=self.equalization)
         fr.interpolate(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=GRAPHIC_EQ_STEP)
+        fr.raw -= np.max(fr.raw) + 0.5
         if fr.raw[0] > 0.0:
             # Prevent bass boost below lowest frequency
             fr.raw[0] = 0.0
@@ -582,7 +583,7 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=10):
+    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=5):
         """Generates minimum phase impulse response
 
         Inspired by:
@@ -601,19 +602,16 @@ class FrequencyResponse:
         fr.raw[fr.frequency < f_res] = 0.0
         # Reduce by max gain to avoid clipping with 1 dB of headroom
         fr.raw -= np.max(fr.raw)
-        fr.raw -= 1.0
+        fr.raw -= 0.5
         # Minimum phase transformation halves dB gain
         # Maybe because it's only half long filter?
         fr.raw *= 2
         # Convert amplitude to linear scale
         fr.raw = 10**(fr.raw / 20)
-        # Mirror
-        fr_data = np.zeros(n * 2)
-        fr_data[1:n + 1] = fr.raw  # First half is the original data
-        fr_data[n + 1:2 * n] = fr.raw[:-1][::-1]  # Second half is data until second to last element reversed
-        # IFFT
-        ir = np.real(np.fft.ifft(fr_data))
-        ir = np.concatenate((ir[n:], ir[:n]))
+        # Calculate response
+        fr.frequency = np.append(fr.frequency, fs // 2)
+        fr.raw = np.append(fr.raw, 0.0)
+        ir = firwin2(n*2, fr.frequency, fr.raw, fs=fs)
         # Convert to minimum phase
         ir = minimum_phase(ir)
         return ir
@@ -627,17 +625,13 @@ class FrequencyResponse:
         fr.raw[fr.frequency < f_res] = 0.0
         # Reduce by max gain to avoid clipping with 1 dB of headroom
         fr.raw -= np.max(fr.raw)
-        fr.raw -= 1.0
+        fr.raw -= 0.5
         # Convert amplitude to linear scale
         fr.raw = 10**(fr.raw / 20)
         # Calculate response
-        # Mirror
-        fr_data = np.zeros(n*2)
-        fr_data[1:n+1] = fr.raw  # First half is the original data
-        fr_data[n+1:2*n] = fr.raw[:-1][::-1]  # Second half is data until second to last element reversed
-        # IFFT
-        ir = np.real(np.fft.ifft(fr_data))
-        ir = np.concatenate((ir[n:], ir[:n]))
+        fr.frequency = np.append(fr.frequency, fs // 2)
+        fr.raw = np.append(fr.raw, 0.0)
+        ir = firwin2(n*2, fr.frequency, fr.raw, fs=fs)
         return ir
 
     def write_readme(self,
@@ -657,7 +651,7 @@ class FrequencyResponse:
         # Add GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
         if os.path.isfile(graphic_eq_path):
-            preamp = min(0.0, float(-np.max(self.equalization))) - 0.1
+            preamp = min(0.0, float(-np.max(self.equalization))) - 0.5
 
             # Read Graphig eq
             with open(graphic_eq_path, 'r') as f:
@@ -688,7 +682,7 @@ class FrequencyResponse:
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
         if os.path.isfile(parametric_eq_path):
-            preamp = np.min([0.0, float(-np.max(self.parametric_eq))]) - 0.1
+            preamp = np.min([0.0, float(-np.max(self.parametric_eq))]) - 0.5
 
             # Read Parametric eq
             with open(parametric_eq_path, 'r') as f:
@@ -814,7 +808,12 @@ class FrequencyResponse:
             self.frequency = self.generate_frequencies(f_min=f_min, f_max=f_max, f_step=f_step)
         else:
             self.frequency = f
-        self.raw = interpolator(np.log10(self.frequency))
+        if self.frequency[0] == 0:
+            self.frequency[0] = 1  # Prevent log10 from exploding
+            self.raw = interpolator(np.log10(self.frequency))
+            self.frequency[0] = 0
+        else:
+            self.raw = interpolator(np.log10(self.frequency))
         # Everything but raw data is affected by interpolating, reset them
         self.reset(raw=False)
 

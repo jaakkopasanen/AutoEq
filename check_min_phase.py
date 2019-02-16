@@ -18,7 +18,7 @@ def fft(x, fs):
 
 def main():
     fs = 48000
-    f_res = 10
+    f_res = 5
     input_dir = os.path.join('oratory1990', 'data', 'onear')
     glob_files = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)
     for input_file_path in glob_files:
@@ -40,6 +40,7 @@ def main():
         plt.xlim([20, 20000])
         plt.ylabel('Gain (dBr)')
         plt.ylim([-40, 0])
+        plt.title(fr.name)
         plt.show()
 
 
