@@ -114,10 +114,10 @@ def pdf_to_image(input_file, output_file):
 
 def main():
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('--input_dir', type=str, default='pdf', help='Path to pdf directory.')
-    arg_parser.add_argument('--image_dir', type=str, default='images', help='Path to images directory.')
-    arg_parser.add_argument('--inspection_dir', type=str, default='inspection', help='Path to inspection directory.')
-    arg_parser.add_argument('--output_dir', type=str, default='new_data', help='Path to data directory.')
+    arg_parser.add_argument('--input_dir', type=str, default='oratory1990/pdf', help='Path to pdf directory.')
+    arg_parser.add_argument('--image_dir', type=str, default='oratory1990/images', help='Path to images directory.')
+    arg_parser.add_argument('--inspection_dir', type=str, default='oratory1990/inspection', help='Path to inspection directory.')
+    arg_parser.add_argument('--output_dir', type=str, default='oratory1990/new_data', help='Path to data directory.')
     cli_args = arg_parser.parse_args()
 
     input_dir = os.path.abspath(cli_args.input_dir)
