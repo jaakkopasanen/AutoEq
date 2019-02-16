@@ -7,7 +7,7 @@ import argparse
 import math
 import pandas as pd
 from scipy.interpolate import InterpolatedUnivariateSpline
-from scipy.signal import savgol_filter, find_peaks
+from scipy.signal import savgol_filter, find_peaks, minimum_phase
 from scipy.special import expit
 import soundfile as sf
 import numpy as np
@@ -39,6 +39,7 @@ DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
 DEFAULT_TILT = 0.0
 DEFAULT_FS = 44100
 DEFAULT_BIT_DEPTH = 16
+DEFAULT_PHASE = 'minimum'
 
 DEFAULT_OE_BASS_BOOST_F_LOWER = 35
 DEFAULT_OE_BASS_BOOST_F_UPPER = 280
@@ -497,7 +498,7 @@ class FrequencyResponse:
 
         return _eq, rmse, np.squeeze(_fc, axis=1), np.squeeze(_Q, axis=1), np.squeeze(_gain, axis=1), coeffs_a, coeffs_b
 
-    def optimize_parametric_eq(self, max_filters=None):
+    def optimize_parametric_eq(self, max_filters=None, fs=DEFAULT_FS):
         """Fits multiple biquad filters to equalization curve. If max_filters is a list with more than one element, one
         optimization run will be ran for each element. Each optimization run will continue from the previous. Each
         optimization run results must be combined with results of all the previous runs but can be used independently of
@@ -506,6 +507,7 @@ class FrequencyResponse:
 
         Args:
             max_filters: List of maximum number of filters available for each filter group optimization.
+            fs: Sampling frequency
 
         Returns:
             - **filters:** Numpy array of filters where each row contains one filter fc, Q and gain
@@ -533,7 +535,8 @@ class FrequencyResponse:
             _eq, rmse, _fc, _Q, _gain, _coeffs_a, _coeffs_b = self._run_optimize_parametric_eq(
                 frequency=self.frequency,
                 target=self.equalization - self.parametric_eq,
-                max_filters=n
+                max_filters=n,
+                fs=fs
             )
             n_produced.append(len(_fc))
             # print('RMSE: {:.2f}dB'.format(rmse))
@@ -579,50 +582,7 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    @staticmethod
-    def linear_phase_to_minimum_phase(freq_data):
-        """Turn linear phase FIR filter into minimum phase FIR filters
-
-        Inspired by:
-        https://sourceforge.net/p/equalizerapo/code/HEAD/tree/tags/1.2/filters/GraphicEQFilter.cpp#l146
-
-        Args:
-            freq_data: Linear phase FIR filter data
-
-        Returns:
-            Minimum phase FIR filter data
-        """
-        # Get filter length, freq_data contains mirror also
-        filter_length = len(freq_data) // 2
-
-        # IFFT to get time data
-        time_data = np.fft.ifft(freq_data)
-
-        # Mystical scaling, doesn't work without this
-        time_data /= filter_length * 2
-
-        for i in range(1, filter_length):
-            # Is this inverse phase?
-            real = time_data.real[i] + time_data.real[filter_length * 2 - i]
-            imag = (time_data.imag[i] - time_data.imag[filter_length * 2 - i]) * 1j
-            time_data[i] = real + imag
-            # Set mirrored half to zeros
-            time_data[filter_length * 2 - i] = 0 + 0j
-        # Invert phase of the last sample?
-        time_data[filter_length] = time_data.real[filter_length] - time_data.imag[filter_length]
-
-        # Back to frequency domain
-        freq_data = np.fft.fft(time_data)
-
-        for i in range(2 * filter_length):
-            # This has something to do with Euler's formula
-            # Shifting zeros to inside the unit circle?
-            er = np.exp(freq_data.real[i])
-            freq_data[i] = er * np.cos(freq_data.imag[i]) + er * np.sin(freq_data.imag[i]) * 1j
-
-        return freq_data
-
-    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, filter_length=16384):
+    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=10):
         """Generates minimum phase impulse response
 
         Inspired by:
@@ -630,50 +590,32 @@ class FrequencyResponse:
 
         Args:
             fs: Sampling frequency in Hz
-            filter_length: FIR filter length in number of samples. Should be divisible by two?
 
         Returns:
             Minimum phase impulse response
         """
-        freq = np.arange(0, filter_length) * fs / (filter_length * 2)
+        # Interpolate to even sample interval
         fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
-        fr.raw[fr.frequency <= 20.0] = 0.0
-        # Interpolate in place
-        fr.interpolate(f=freq)
-        fr.raw[0] = fr.raw[1]
-        # Convert to linear scale
-        freq_data = 10.0**(fr.raw / 20.0)
-
-        # plt.plot(freq, freq_data)
-        # plt.title('Frequency domain data')
-        # plt.semilogx()
-        # plt.show()
-
-        # Mirror frequency domain data
-        freq_data = np.concatenate([freq_data, np.flip(freq_data)])
-
-        # Turn to minimum phase
-        freq_data = self.linear_phase_to_minimum_phase(freq_data)
-
-        # plt.plot(freq, freq_data[:filter_length])
-        # plt.title('MP frequency domain data')
-        # plt.semilogx()
-        # plt.show()
-
+        fr.interpolate(np.arange(0, fs // 2, f_res))
+        n = len(fr.frequency)
+        fr.raw[fr.frequency < f_res] = 0.0
+        # Reduce by max gain to avoid clipping with 1 dB of headroom
+        fr.raw -= np.max(fr.raw)
+        fr.raw -= 1.0
+        # Minimum phase transformation halves dB gain
+        # Maybe because it's only half long filter?
+        fr.raw *= 2
+        # Convert amplitude to linear scale
+        fr.raw = 10**(fr.raw / 20)
+        # Mirror
+        fr_data = np.zeros(n * 2)
+        fr_data[1:n + 1] = fr.raw  # First half is the original data
+        fr_data[n + 1:2 * n] = fr.raw[:-1][::-1]  # Second half is data until second to last element reversed
         # IFFT
-        time_data = np.fft.ifft(freq_data)
-
-        plt.plot(freq, time_data[:filter_length])
-        plt.title('Time domain data')
-        plt.show()
-
-        # Cosine ramp down
-        # to ensure impulse response resolves to zero?
-        ir = time_data * 0.5 * (1.0 + np.cos(2 * np.pi * np.arange(filter_length * 2) / (2 * filter_length)))
-        ir = ir[:filter_length]
-
-        # We are only interested in the real parts
-        ir = np.real(ir)
+        ir = np.real(np.fft.ifft(fr_data))
+        ir = np.concatenate((ir[n:], ir[:n]))
+        # Convert to minimum phase
+        ir = minimum_phase(ir)
         return ir
 
     def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=10):
@@ -688,6 +630,7 @@ class FrequencyResponse:
         fr.raw -= 1.0
         # Convert amplitude to linear scale
         fr.raw = 10**(fr.raw / 20)
+        # Calculate response
         # Mirror
         fr_data = np.zeros(n*2)
         fr_data[1:n+1] = fr.raw  # First half is the original data
@@ -1255,92 +1198,6 @@ class FrequencyResponse:
             plt.show()
         return fig, ax
 
-    @staticmethod
-    def cli_args():
-        """Parses command line arguments."""
-        arg_parser = argparse.ArgumentParser()
-        arg_parser.add_argument('--input_dir', type=str, required=True,
-                                help='Path to input data directory. Will look for CSV files in the data directory and '
-                                     'recursively in sub-directories.')
-        arg_parser.add_argument('--output_dir', type=str, default=argparse.SUPPRESS,
-                                help='Path to results directory. Will keep the same relative paths for files found'
-                                     'in input_dir.')
-        arg_parser.add_argument('--standardize_input', action='store_true',
-                                help='Overwrite input data in standardized sampling and bias?')
-        arg_parser.add_argument('--new_only', action='store_true',
-                                help='Only process input files which don\'t have results in output directory.')
-        arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
-                                help='File path to CSV containing calibration data. Needed when using target responses'
-                                     'not developed for the source measurement system. See `calibration` directory.')
-        arg_parser.add_argument('--compensation', type=str,
-                                help='File path to CSV containing compensation (target) curve. Compensation is '
-                                     'necessary when equalizing because all input data is raw microphone data. See '
-                                     '"compensation", "innerfidelity/resources" and "headphonecom/resources".')
-        arg_parser.add_argument('--equalize', action='store_true',
-                                help='Will run equalization if this parameter exists, no value needed.')
-        arg_parser.add_argument('--parametric_eq', action='store_true',
-                                help='Will produce parametric eq settings if this parameter exists, no value needed.')
-        arg_parser.add_argument('--max_filters', type=str, default=argparse.SUPPRESS,
-                                help='Maximum number of filters for parametric EQ. Multiple cumulative optimization runs'
-                                     'can be done by giving multiple filter counts separated by "+". "5+5" would create'
-                                     '10 filters where the first 5 are usable independently from the rest 5 and the last'
-                                     '5 can only be used with the first 5. This allows to have muliple configurations'
-                                     'for equalizers with different number of bands available. '
-                                     'Not limited by default.')
-        arg_parser.add_argument('--fs', type=int, default=DEFAULT_FS,
-                                help='Sampling frequency for impulse response and paramteric eq filters.'
-                                     'Defaults to {}.'.format(DEFAULT_FS))
-        arg_parser.add_argument('--bit_depth', type=int, default=DEFAULT_BIT_DEPTH,
-                                help='Number of bits for every sample. Defaults to {}.'.format(DEFAULT_BIT_DEPTH))
-        arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
-                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
-                                     ' Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
-                                        f_min=DEFAULT_OE_BASS_BOOST_F_LOWER,
-                                        f_max=DEFAULT_OE_BASS_BOOST_F_UPPER
-                                     )
-                                )
-        arg_parser.add_argument('--iem_bass_boost', type=float, default=argparse.SUPPRESS,
-                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
-                                     ' Hz. "--iem_bass_boost" is mutually exclusive with "--bass_boost".'.format(
-                                        f_min=DEFAULT_IE_BASS_BOOST_F_LOWER,
-                                        f_max=DEFAULT_IE_BASS_BOOST_F_UPPER
-                                     )
-                                )
-        arg_parser.add_argument('--tilt', type=float, default=argparse.SUPPRESS,
-                                help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
-                                     'frequency response and negative value (downwards slope) will result in darker '
-                                     'frequency response. 1 dB/octave will produce nearly 10 dB difference in '
-                                     'desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both '
-                                     'will affect the bass gain.')
-        arg_parser.add_argument('--max_gain', type=float, default=DEFAULT_MAX_GAIN,
-                                help='Maximum positive gain in equalization. Higher max gain allows to equalize deeper '
-                                     'dips in  frequency response but will limit output volume if no analog gain is '
-                                     'available because positive gain requires negative digital preamp equal to '
-                                     'maximum positive gain. Defaults to {}.'.format(DEFAULT_MAX_GAIN))
-        arg_parser.add_argument('--treble_f_lower', type=float, default=DEFAULT_TREBLE_F_LOWER,
-                                help='Lower bound for transition region between normal and treble frequencies. Treble '
-                                     'frequencies can have different smoothing, max gain and gain K. Defaults to '
-                                     '{}.'.format(DEFAULT_TREBLE_F_LOWER))
-        arg_parser.add_argument('--treble_f_upper', type=float, default=DEFAULT_TREBLE_F_UPPER,
-                                help='Upper bound for transition region between normal and treble frequencies. Treble '
-                                     'frequencies can have different smoothing, max gain and gain K. Defaults to '
-                                     '{}.'.format(DEFAULT_TREBLE_F_UPPER))
-        arg_parser.add_argument('--treble_max_gain', type=float, default=DEFAULT_TREBLE_MAX_GAIN,
-                                help='Maximum positive gain for equalization in treble region. Defaults to '
-                                     '{}.'.format(DEFAULT_TREBLE_MAX_GAIN))
-        arg_parser.add_argument('--treble_gain_k', type=float, default=DEFAULT_TREBLE_GAIN_K,
-                                help='Coefficient for treble gain, affects both positive and negative gain. Useful for '
-                                     'disabling or reducing equalization power in treble region. Defaults to '
-                                     '{}.'.format(DEFAULT_TREBLE_GAIN_K))
-        arg_parser.add_argument('--show_plot', action='store_true',
-                                help='Plot will be shown if this parameter exists, no value needed.')
-        args = vars(arg_parser.parse_args())
-        if 'bass_boost' in args and 'iem_bass_boost' in args:
-            raise TypeError('"--bass_boost" or "--iem_bass_boost" can be given but not both')
-        if 'max_filters' in args:
-            args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
-        return args
-
     def process(self,
                 calibration=None,
                 compensation=None,
@@ -1354,7 +1211,8 @@ class FrequencyResponse:
                 treble_f_lower=DEFAULT_TREBLE_F_LOWER,
                 treble_f_upper=DEFAULT_TREBLE_F_UPPER,
                 treble_max_gain=DEFAULT_TREBLE_MAX_GAIN,
-                treble_gain_k=DEFAULT_TREBLE_GAIN_K):
+                treble_gain_k=DEFAULT_TREBLE_GAIN_K,
+                fs=DEFAULT_FS):
         """Runs processing pipeline with interpolation, centering, compensation, calibration and equalization.
 
         Args:
@@ -1371,6 +1229,7 @@ class FrequencyResponse:
             treble_f_upper: Upper boud for treble transition region
             treble_max_gain: Maximum gain in treble region
             treble_gain_k: Gain coefficient in treble region
+            fs: Sampling frequency
 
         Returns:
             - **filters:** Numpy array of produced peaking filters. Each row contains Fc, Q and gain
@@ -1445,7 +1304,7 @@ class FrequencyResponse:
             )
             if parametric_eq:
                 # Get the filters
-                filters, n_filters, max_gains = self.optimize_parametric_eq(max_filters=max_filters)
+                filters, n_filters, max_gains = self.optimize_parametric_eq(max_filters=max_filters, fs=fs)
 
         return filters, n_filters, max_gains
 
@@ -1461,6 +1320,7 @@ class FrequencyResponse:
              max_filters=None,
              fs=DEFAULT_FS,
              bit_depth=DEFAULT_BIT_DEPTH,
+             phase=DEFAULT_PHASE,
              bass_boost=None,
              iem_bass_boost=None,
              tilt=None,
@@ -1536,7 +1396,8 @@ class FrequencyResponse:
                 treble_f_lower=treble_f_lower,
                 treble_f_upper=treble_f_upper,
                 treble_max_gain=treble_max_gain,
-                treble_gain_k=treble_gain_k
+                treble_gain_k=treble_gain_k,
+                fs=fs
             )
 
             if output_dir:
@@ -1553,24 +1414,26 @@ class FrequencyResponse:
                     # Write impulse response as WAV
                     fss = [44100, 48000] if fs in [44100, 48000] else [fs]
                     for _fs in fss:
-                        # Write linear phase impulse response
-                        linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs)
-                        linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
-                        sf.write(
-                            output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
-                            linear_phase_ir,
-                            _fs,
-                            bit_depth
-                        )
-                        # Write minimum phase impulse response
-                        minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs)
-                        minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
-                        sf.write(
-                            output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
-                            minimum_phase_ir,
-                            fs,
-                            bit_depth
-                        )
+                        if phase in ['linear', 'both']:
+                            # Write linear phase impulse response
+                            linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs)
+                            linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
+                            sf.write(
+                                output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
+                                linear_phase_ir,
+                                _fs,
+                                bit_depth
+                            )
+                        if phase in ['minimum', 'both']:
+                            # Write minimum phase impulse response
+                            minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs)
+                            minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
+                            sf.write(
+                                output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
+                                minimum_phase_ir,
+                                fs,
+                                bit_depth
+                            )
 
                 # Write results to CSV file
                 fr.write_to_csv(output_file_path)
@@ -1597,6 +1460,94 @@ class FrequencyResponse:
             n += 1
         print('Processed {n} headphones in {t:.0f}s'.format(n=n, t=time()-start_time))
 
+    @staticmethod
+    def cli_args():
+        """Parses command line arguments."""
+        arg_parser = argparse.ArgumentParser()
+        arg_parser.add_argument('--input_dir', type=str, required=True,
+                                help='Path to input data directory. Will look for CSV files in the data directory and '
+                                     'recursively in sub-directories.')
+        arg_parser.add_argument('--output_dir', type=str, default=argparse.SUPPRESS,
+                                help='Path to results directory. Will keep the same relative paths for files found'
+                                     'in input_dir.')
+        arg_parser.add_argument('--standardize_input', action='store_true',
+                                help='Overwrite input data in standardized sampling and bias?')
+        arg_parser.add_argument('--new_only', action='store_true',
+                                help='Only process input files which don\'t have results in output directory.')
+        arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
+                                help='File path to CSV containing calibration data. Needed when using target responses'
+                                     'not developed for the source measurement system. See `calibration` directory.')
+        arg_parser.add_argument('--compensation', type=str,
+                                help='File path to CSV containing compensation (target) curve. Compensation is '
+                                     'necessary when equalizing because all input data is raw microphone data. See '
+                                     '"compensation", "innerfidelity/resources" and "headphonecom/resources".')
+        arg_parser.add_argument('--equalize', action='store_true',
+                                help='Will run equalization if this parameter exists, no value needed.')
+        arg_parser.add_argument('--parametric_eq', action='store_true',
+                                help='Will produce parametric eq settings if this parameter exists, no value needed.')
+        arg_parser.add_argument('--max_filters', type=str, default=argparse.SUPPRESS,
+                                help='Maximum number of filters for parametric EQ. Multiple cumulative optimization runs'
+                                     'can be done by giving multiple filter counts separated by "+". "5+5" would create'
+                                     '10 filters where the first 5 are usable independently from the rest 5 and the last'
+                                     '5 can only be used with the first 5. This allows to have muliple configurations'
+                                     'for equalizers with different number of bands available. '
+                                     'Not limited by default.')
+        arg_parser.add_argument('--fs', type=int, default=DEFAULT_FS,
+                                help='Sampling frequency for impulse response and paramteric eq filters.'
+                                     'Defaults to {}.'.format(DEFAULT_FS))
+        arg_parser.add_argument('--bit_depth', type=int, default=DEFAULT_BIT_DEPTH,
+                                help='Number of bits for every sample. Defaults to {}.'.format(DEFAULT_BIT_DEPTH))
+        arg_parser.add_argument('--phase', type=str, default=DEFAULT_PHASE,
+                                help='Impulse response phase characteristic. "minimum", "linear" or "both". '
+                                     'Defaults to "{}"'.format(DEFAULT_PHASE))
+        arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
+                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
+                                     ' Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
+                                        f_min=DEFAULT_OE_BASS_BOOST_F_LOWER,
+                                        f_max=DEFAULT_OE_BASS_BOOST_F_UPPER
+                                     )
+                                )
+        arg_parser.add_argument('--iem_bass_boost', type=float, default=argparse.SUPPRESS,
+                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
+                                     ' Hz. "--iem_bass_boost" is mutually exclusive with "--bass_boost".'.format(
+                                        f_min=DEFAULT_IE_BASS_BOOST_F_LOWER,
+                                        f_max=DEFAULT_IE_BASS_BOOST_F_UPPER
+                                     )
+                                )
+        arg_parser.add_argument('--tilt', type=float, default=argparse.SUPPRESS,
+                                help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
+                                     'frequency response and negative value (downwards slope) will result in darker '
+                                     'frequency response. 1 dB/octave will produce nearly 10 dB difference in '
+                                     'desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both '
+                                     'will affect the bass gain.')
+        arg_parser.add_argument('--max_gain', type=float, default=DEFAULT_MAX_GAIN,
+                                help='Maximum positive gain in equalization. Higher max gain allows to equalize deeper '
+                                     'dips in  frequency response but will limit output volume if no analog gain is '
+                                     'available because positive gain requires negative digital preamp equal to '
+                                     'maximum positive gain. Defaults to {}.'.format(DEFAULT_MAX_GAIN))
+        arg_parser.add_argument('--treble_f_lower', type=float, default=DEFAULT_TREBLE_F_LOWER,
+                                help='Lower bound for transition region between normal and treble frequencies. Treble '
+                                     'frequencies can have different smoothing, max gain and gain K. Defaults to '
+                                     '{}.'.format(DEFAULT_TREBLE_F_LOWER))
+        arg_parser.add_argument('--treble_f_upper', type=float, default=DEFAULT_TREBLE_F_UPPER,
+                                help='Upper bound for transition region between normal and treble frequencies. Treble '
+                                     'frequencies can have different smoothing, max gain and gain K. Defaults to '
+                                     '{}.'.format(DEFAULT_TREBLE_F_UPPER))
+        arg_parser.add_argument('--treble_max_gain', type=float, default=DEFAULT_TREBLE_MAX_GAIN,
+                                help='Maximum positive gain for equalization in treble region. Defaults to '
+                                     '{}.'.format(DEFAULT_TREBLE_MAX_GAIN))
+        arg_parser.add_argument('--treble_gain_k', type=float, default=DEFAULT_TREBLE_GAIN_K,
+                                help='Coefficient for treble gain, affects both positive and negative gain. Useful for '
+                                     'disabling or reducing equalization power in treble region. Defaults to '
+                                     '{}.'.format(DEFAULT_TREBLE_GAIN_K))
+        arg_parser.add_argument('--show_plot', action='store_true',
+                                help='Plot will be shown if this parameter exists, no value needed.')
+        args = vars(arg_parser.parse_args())
+        if 'bass_boost' in args and 'iem_bass_boost' in args:
+            raise TypeError('"--bass_boost" or "--iem_bass_boost" can be given but not both')
+        if 'max_filters' in args:
+            args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
+        return args
 
 if __name__ == '__main__':
     FrequencyResponse.main(**FrequencyResponse.cli_args())
