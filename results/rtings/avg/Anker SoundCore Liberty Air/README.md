@@ -1,0 +1,41 @@
+# Anker SoundCore Liberty Air
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+Preamp: -1.4dB
+GraphicEQ: 21 -2.8; 23 -2.8; 25 -2.8; 28 -2.9; 31 -2.9; 34 -3.0; 37 -3.1; 41 -3.2; 45 -3.3; 49 -3.4; 54 -3.5; 60 -3.8; 66 -4.1; 72 -4.2; 79 -4.3; 87 -4.5; 96 -4.6; 106 -4.7; 116 -4.8; 128 -4.6; 141 -4.0; 155 -3.6; 170 -3.3; 187 -3.4; 206 -3.9; 227 -4.5; 249 -4.8; 274 -5.0; 302 -4.9; 332 -4.8; 365 -4.5; 402 -4.1; 442 -3.6; 486 -3.1; 535 -2.5; 588 -1.8; 647 -1.1; 712 -0.7; 783 -0.5; 861 -0.6; 947 -1.0; 1042 -1.7; 1146 -2.6; 1261 -3.7; 1387 -4.7; 1526 -4.9; 1678 -4.5; 1846 -3.8; 2031 -3.2; 2234 -2.2; 2457 -1.5; 2703 -2.0; 2973 -3.7; 3270 -5.5; 3597 -6.1; 3957 -5.4; 4353 -4.2; 4788 -2.8; 5267 -2.1; 5793 -1.8; 6373 -3.4; 7010 -4.8; 7711 -5.0; 8482 -3.7; 9330 -3.3; 10263 -5.5; 11289 -8.0; 12418 -5.5; 13660 -1.4; 15026 -1.4; 16529 -1.4; 18182 -5.8; 20000 -7.0
+```
+
+### HeSuVi
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`Anker SoundCore Liberty Air GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+Set volume attenuation in the Connection tab for both channels to **-14**.
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `Anker SoundCore Liberty Air ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-1.4dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **--0.6dB**.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 125 Hz   | 0.31 | -3.1 dB |
+| Peaking | 1538 Hz  | 3.43 | -3.6 dB |
+| Peaking | 3656 Hz  | 2.78 | -4.8 dB |
+| Peaking | 11089 Hz | 2.38 | -6.2 dB |
+| Peaking | 19403 Hz | 1.51 | -6.8 dB |
+| Peaking | 176 Hz   | 2.31 | 2.2 dB  |
+| Peaking | 608 Hz   | 0.38 | -2.8 dB |
+| Peaking | 729 Hz   | 1.19 | 4.4 dB  |
+| Peaking | 6507 Hz  | 0.19 | 0.8 dB  |
+| Peaking | 7300 Hz  | 3.77 | -3.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Anker%20SoundCore%20Liberty%20Air/Anker%20SoundCore%20Liberty%20Air.png)

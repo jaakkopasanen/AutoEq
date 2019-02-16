@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 import argparse
 from glob import glob
 from PIL import Image, ImageDraw
 import numpy as np
 import warnings
-
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from image_graph_parser import ImageGraphParser
 from frequency_response import FrequencyResponse
 
@@ -112,10 +113,10 @@ def parse_image(im, model, channel):
 
 def main():
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('--input_dir', type=str, default='images', help='Path to images directory.')
-    arg_parser.add_argument('--inspection_dir', type=str, default='inspection', help='Path to inspection directory.')
-    arg_parser.add_argument('--output_dir', type=str, default='data', help='Path to data directory.')
-    arg_parser.add_argument('--compensation', type=str, default='resources/rtings_compensation_w_bass.csv',
+    arg_parser.add_argument('--input_dir', type=str, default='rtings/images', help='Path to images directory.')
+    arg_parser.add_argument('--inspection_dir', type=str, default='rtings/inspection', help='Path to inspection directory.')
+    arg_parser.add_argument('--output_dir', type=str, default='rtings/new_data', help='Path to data directory.')
+    arg_parser.add_argument('--compensation', type=str, default='rtings/resources/rtings_compensation_w_bass.csv',
                             help='Path to compensation file.')
     cli_args = arg_parser.parse_args()
 

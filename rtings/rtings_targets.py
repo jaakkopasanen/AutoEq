@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 
+import os
+import sys
 import matplotlib.pyplot as plt
 import numpy as np
 from glob import glob
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from frequency_response import FrequencyResponse
 
 

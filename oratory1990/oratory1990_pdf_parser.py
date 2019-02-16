@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 import os
-import PyPDF2
+import sys
 from ghostscript import Ghostscript
 import argparse
 from glob import glob
 from PIL import Image, ImageDraw
 import colorsys
-import warnings
 import numpy as np
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from image_graph_parser import ImageGraphParser
 from frequency_response import FrequencyResponse
 
