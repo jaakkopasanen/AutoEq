@@ -14,7 +14,6 @@ import numpy as np
 from glob import glob
 import urllib
 from warnings import warn
-from datetime import datetime
 import tensorflow as tf
 from time import time
 from tabulate import tabulate
@@ -60,6 +59,7 @@ class FrequencyResponse:
                  error_smoothed=None,
                  equalization=None,
                  parametric_eq=None,
+                 fixed_band_eq=None,
                  equalized_raw=None,
                  equalized_smoothed=None,
                  target=None):
@@ -75,6 +75,7 @@ class FrequencyResponse:
         self.error_smoothed = self._init_data(error_smoothed)
         self.equalization = self._init_data(equalization)
         self.parametric_eq = self._init_data(parametric_eq)
+        self.fixed_band_eq = self._init_data(fixed_band_eq)
         self.equalized_raw = self._init_data(equalized_raw)
         self.equalized_smoothed = self._init_data(equalized_smoothed)
         self.target = self._init_data(target)
@@ -104,6 +105,8 @@ class FrequencyResponse:
             self.equalization = self.equalization[sorted_inds]
         if len(self.parametric_eq):
             self.parametric_eq = self.parametric_eq[sorted_inds]
+        if len(self.fixed_band_eq):
+            self.fixed_band_eq = self.fixed_band_eq[sorted_inds]
         if len(self.equalized_raw):
             self.equalized_raw = self.equalized_raw[sorted_inds]
         if len(self.equalized_smoothed):
@@ -117,6 +120,7 @@ class FrequencyResponse:
               error=True,
               error_smoothed=True,
               equalization=True,
+              fixed_band_eq=True,
               parametric_eq=True,
               equalized_raw=True,
               equalized_smoothed=True,
@@ -129,6 +133,7 @@ class FrequencyResponse:
                 (error_smoothed and len(self.error_smoothed)) or
                 (equalization and len(self.equalization)) or
                 (parametric_eq and len(self.parametric_eq)) or
+                (fixed_band_eq and len(self.fixed_band_eq)) or
                 (equalized_raw and len(self.equalized_raw)) or
                 (equalized_smoothed and len(self.equalized_smoothed)) or
                 (target and len(self.target))
@@ -146,6 +151,8 @@ class FrequencyResponse:
             self.equalization = self._init_data(None)
         if parametric_eq:
             self.parametric_eq = self._init_data(None)
+        if fixed_band_eq:
+            self.fixed_band_eq = self._init_data(None)
         if equalized_raw:
             self.equalized_raw = self._init_data(None)
         if equalized_smoothed:
@@ -201,6 +208,8 @@ class FrequencyResponse:
             d['equalization'] = [x if x is not None else 'NaN' for x in self.equalization]
         if len(self.parametric_eq):
             d['parametric_eq'] = [x if x is not None else 'NaN' for x in self.parametric_eq]
+        if len(self.fixed_band_eq):
+            d['parametric_eq'] = [x if x is not None else 'NaN' for x in self.fixed_band_eq]
         if len(self.equalized_raw):
             d['equalized_raw'] = [x if x is not None else 'NaN' for x in self.equalized_raw]
         if len(self.equalized_smoothed):
@@ -237,132 +246,173 @@ class FrequencyResponse:
         return s
 
     @staticmethod
-    def _run_optimize_parametric_eq(frequency, target, max_time=5, max_filters=None, fs=DEFAULT_FS):
+    def optimize_biquad_filters(frequency, target, max_time=5, max_filters=None, fs=DEFAULT_FS, fc=None, q=None):
+        if fc is not None or q is not None:
+            if fc is None:
+                raise TypeError('"fc" must be given if "q" is given.')
+            if q is None:
+                raise TypeError('"q" must be give nif "fc" is given.')
+            if max_filters is not None:
+                raise TypeError('"max_filters" must not be given when "fc" and "q" are given.')
+
         # Reset graph to be able to run this again
         tf.reset_default_graph()
         # Sampling frequency
         fs_tf = tf.constant(fs, name='f', dtype='float32')
 
-        # Filter heavily and find peaks
+        # Smoothen heavily
         fr_target = FrequencyResponse(name='Filter Initialization', frequency=frequency, raw=target)
-        fr_target.smoothen(window_size=1/7, iterations=1000)
-        fr_target_pos = np.clip(fr_target.smoothed, a_min=0.0, a_max=None)
-        peak_inds = find_peaks(fr_target_pos)[0]
-        fr_target_neg = np.clip(-fr_target.smoothed, a_min=0.0, a_max=None)
-        peak_inds = np.concatenate((peak_inds, find_peaks(fr_target_neg)[0]))
-        peak_inds.sort()
-        peak_inds = peak_inds[np.abs(fr_target.smoothed[peak_inds]) > 0.1]
+        fr_target.smoothen(window_size=1 / 7, iterations=1000)
 
-        # Peak center frequencies and gains
-        peak_fc = frequency[peak_inds].astype('float32')
-
-        if peak_fc[0] > 80:
-            # First peak is beyond 80Hz, add peaks to 20Hz and 60Hz
-            peak_fc = np.concatenate((np.array([20, 60], dtype='float32'), peak_fc))
-        elif peak_fc[0] > 40:
-            # First peak is beyond 40Hz, add peak to 20Hz
-            peak_fc = np.concatenate((np.array([20], dtype='float32'), peak_fc))
-
-        # Gains at peak center frequencies
-        interpolator = InterpolatedUnivariateSpline(np.log10(frequency), fr_target.smoothed, k=1)
-        peak_g = interpolator(np.log10(peak_fc)).astype('float32')
-
-        def remove_small_filters(min_gain):
-            # Remove peaks with too little gain
-            nonlocal peak_fc, peak_g
-            peak_fc = peak_fc[np.abs(peak_g) > min_gain]
-            peak_g = peak_g[np.abs(peak_g) > min_gain]
-
-        def merge_filters():
-            # Merge two filters which have small integral between them
-            nonlocal peak_fc, peak_g
-            # Form filter pairs, select only filters with equal gain sign
-            pair_inds = []
-            for j in range(len(peak_fc) - 1):
-                if np.sign(peak_g[j]) == np.sign(peak_g[j+1]):
-                    pair_inds.append(j)
-
-            min_err = None
-            min_err_ind = None
-            for pair_ind in pair_inds:
-                # Interpolate between the two points
-                f_0 = peak_fc[pair_ind]
-                g_0 = peak_g[pair_ind]
-                i_0 = np.where(frequency == f_0)[0][0]
-                f_1 = peak_fc[pair_ind+1]
-                i_1 = np.where(frequency == f_1)[0][0]
-                g_1 = peak_g[pair_ind]
-                interp = InterpolatedUnivariateSpline(np.log10([f_0, f_1]), [g_0, g_1], k=1)
-                line = interp(frequency[i_0:i_1+1])
-                err = line - fr_target.smoothed[i_0:i_1+1]
-                err = np.sqrt(np.mean(np.square(err)))  # Root mean squared error
-                if min_err is None or err < min_err:
-                    min_err = err
-                    min_err_ind = pair_ind
-
-            if min_err is None:
-                # No pairs detected
-                return False
-
-            # Select smallest error if err < threshold
-            if min_err < 0.3:
-                # New filter
-                c = peak_fc[min_err_ind] * np.sqrt(peak_fc[min_err_ind+1] / peak_fc[min_err_ind])
-                c = frequency[np.argmin(np.abs(frequency - c))]
-                g = np.mean([peak_g[min_err_ind], peak_g[min_err_ind+1]])
-                # Remove filters
-                peak_fc = np.delete(peak_fc, [min_err_ind, min_err_ind+1])
-                peak_g = np.delete(peak_g, [min_err_ind, min_err_ind+1])
-                # Add filter in-between
-                peak_fc = np.insert(peak_fc, min_err_ind, c)
-                peak_g = np.insert(peak_g, min_err_ind, g)
-                return True
-            return False  # No prominent filter pairs
-
-        # Remove insignificant filters
-        remove_small_filters(0.1)
-        if len(peak_fc) == 0:
-            # All filters were insignificant, exit
-            return np.zeros(frequency.shape), 0.0, np.array([]), np.array([]), np.array([])
-
-        # Limit filter number to max_filters by removing least significant filters and merging close filters
-        if max_filters is not None:
-            if len(peak_fc) > max_filters:
-                # Remove too small filters
-                remove_small_filters(0.2)
-
-            if len(peak_fc) > max_filters:
-                # Try to remove some more
-                remove_small_filters(0.33)
-
-            # Merge filters if needed
-            while merge_filters() and len(peak_fc) > max_filters:
-                pass
-
-            if len(peak_fc) > max_filters:
-                # Remove smallest filters
-                sorted_inds = np.flip(np.argsort(np.abs(peak_g)))
-                sorted_inds = sorted_inds[:max_filters]
-                peak_fc = peak_fc[sorted_inds]
-                peak_g = peak_g[sorted_inds]
-
-        sorted_inds = np.argsort(peak_fc)
-        peak_fc = peak_fc[sorted_inds]
-        peak_g = peak_g[sorted_inds]
-
-        n = n_pk = len(peak_fc)
-        n_ls = n_hs = 0
-
-        # Frequencies and target gain
-        f = tf.constant(np.repeat(np.expand_dims(frequency, axis=0), n, axis=0), name='f', dtype='float32')
+        # Equalization target
         eq_target = tf.constant(target, name='eq_target', dtype='float32')
 
-        # Center frequencies
-        fc = tf.get_variable('fc', initializer=np.expand_dims(np.log10(peak_fc), axis=1), dtype='float32')
+        n_ls = n_hs = 0
 
-        # Q
-        Q_init = np.ones([n, 1], dtype='float32') * np.ones([n_pk, 1], dtype='float32')
-        Q = tf.get_variable('Q', initializer=Q_init, dtype='float32')
+        if fc is None:
+            # Fc and Q not given, parametric equalizer, find initial estimation of peaks and gains
+            fr_target_pos = np.clip(fr_target.smoothed, a_min=0.0, a_max=None)
+            peak_inds = find_peaks(fr_target_pos)[0]
+            fr_target_neg = np.clip(-fr_target.smoothed, a_min=0.0, a_max=None)
+            peak_inds = np.concatenate((peak_inds, find_peaks(fr_target_neg)[0]))
+            peak_inds.sort()
+            peak_inds = peak_inds[np.abs(fr_target.smoothed[peak_inds]) > 0.1]
+
+            # Peak center frequencies and gains
+            peak_fc = frequency[peak_inds].astype('float32')
+
+            if peak_fc[0] > 80:
+                # First peak is beyond 80Hz, add peaks to 20Hz and 60Hz
+                peak_fc = np.concatenate((np.array([20, 60], dtype='float32'), peak_fc))
+            elif peak_fc[0] > 40:
+                # First peak is beyond 40Hz, add peak to 20Hz
+                peak_fc = np.concatenate((np.array([20], dtype='float32'), peak_fc))
+
+            # Gains at peak center frequencies
+            interpolator = InterpolatedUnivariateSpline(np.log10(frequency), fr_target.smoothed, k=1)
+            peak_g = interpolator(np.log10(peak_fc)).astype('float32')
+
+            def remove_small_filters(min_gain):
+                # Remove peaks with too little gain
+                nonlocal peak_fc, peak_g
+                peak_fc = peak_fc[np.abs(peak_g) > min_gain]
+                peak_g = peak_g[np.abs(peak_g) > min_gain]
+
+            def merge_filters():
+                # Merge two filters which have small integral between them
+                nonlocal peak_fc, peak_g
+                # Form filter pairs, select only filters with equal gain sign
+                pair_inds = []
+                for j in range(len(peak_fc) - 1):
+                    if np.sign(peak_g[j]) == np.sign(peak_g[j + 1]):
+                        pair_inds.append(j)
+
+                min_err = None
+                min_err_ind = None
+                for pair_ind in pair_inds:
+                    # Interpolate between the two points
+                    f_0 = peak_fc[pair_ind]
+                    g_0 = peak_g[pair_ind]
+                    i_0 = np.where(frequency == f_0)[0][0]
+                    f_1 = peak_fc[pair_ind + 1]
+                    i_1 = np.where(frequency == f_1)[0][0]
+                    g_1 = peak_g[pair_ind]
+                    interp = InterpolatedUnivariateSpline(np.log10([f_0, f_1]), [g_0, g_1], k=1)
+                    line = interp(frequency[i_0:i_1 + 1])
+                    err = line - fr_target.smoothed[i_0:i_1 + 1]
+                    err = np.sqrt(np.mean(np.square(err)))  # Root mean squared error
+                    if min_err is None or err < min_err:
+                        min_err = err
+                        min_err_ind = pair_ind
+
+                if min_err is None:
+                    # No pairs detected
+                    return False
+
+                # Select smallest error if err < threshold
+                if min_err < 0.3:
+                    # New filter
+                    c = peak_fc[min_err_ind] * np.sqrt(peak_fc[min_err_ind + 1] / peak_fc[min_err_ind])
+                    c = frequency[np.argmin(np.abs(frequency - c))]
+                    g = np.mean([peak_g[min_err_ind], peak_g[min_err_ind + 1]])
+                    # Remove filters
+                    peak_fc = np.delete(peak_fc, [min_err_ind, min_err_ind + 1])
+                    peak_g = np.delete(peak_g, [min_err_ind, min_err_ind + 1])
+                    # Add filter in-between
+                    peak_fc = np.insert(peak_fc, min_err_ind, c)
+                    peak_g = np.insert(peak_g, min_err_ind, g)
+                    return True
+                return False  # No prominent filter pairs
+
+            # Remove insignificant filters
+            remove_small_filters(0.1)
+            if len(peak_fc) == 0:
+                # All filters were insignificant, exit
+                return np.zeros(frequency.shape), 0.0, np.array([]), np.array([]), np.array([])
+
+            # Limit filter number to max_filters by removing least significant filters and merging close filters
+            if max_filters is not None:
+                if len(peak_fc) > max_filters:
+                    # Remove too small filters
+                    remove_small_filters(0.2)
+
+                if len(peak_fc) > max_filters:
+                    # Try to remove some more
+                    remove_small_filters(0.33)
+
+                # Merge filters if needed
+                while merge_filters() and len(peak_fc) > max_filters:
+                    pass
+
+                if len(peak_fc) > max_filters:
+                    # Remove smallest filters
+                    sorted_inds = np.flip(np.argsort(np.abs(peak_g)))
+                    sorted_inds = sorted_inds[:max_filters]
+                    peak_fc = peak_fc[sorted_inds]
+                    peak_g = peak_g[sorted_inds]
+
+            sorted_inds = np.argsort(peak_fc)
+            peak_fc = peak_fc[sorted_inds]
+            peak_g = peak_g[sorted_inds]
+
+            n = n_pk = len(peak_fc)
+
+            # Frequencies
+            f = tf.constant(np.repeat(np.expand_dims(frequency, axis=0), n, axis=0), name='f', dtype='float32')
+
+            # Center frequencies
+            fc = tf.get_variable('fc', initializer=np.expand_dims(np.log10(peak_fc), axis=1), dtype='float32')
+
+            # Q
+            Q_init = np.ones([n, 1], dtype='float32') * np.ones([n_pk, 1], dtype='float32')
+            Q = tf.get_variable('Q', initializer=Q_init, dtype='float32')
+
+        else:
+            # Fc and Q given, fixed band equalizer
+            Q = tf.get_variable(
+                'Q',
+                initializer=np.expand_dims(np.log10(fc), axis=1),
+                dtype='float32',
+                trainable=False
+            )
+
+            # Gains at peak center frequencies
+            interpolator = InterpolatedUnivariateSpline(np.log10(frequency), fr_target.smoothed, k=1)
+            peak_g = interpolator(np.log10(fc)).astype('float32')
+
+            # Number of filters
+            n = n_pk = len(fc)
+
+            # Frequencies
+            f = tf.constant(np.repeat(np.expand_dims(frequency, axis=0), n, axis=0), name='f', dtype='float32')
+
+            # Center frequencies
+            fc = tf.get_variable(
+                'fc',
+                initializer=np.expand_dims(np.log10(fc), axis=1),
+                dtype='float32',
+                trainable=False
+            )
 
         # Gain
         gain = tf.get_variable('gain', initializer=np.expand_dims(peak_g, axis=1), dtype='float32')
@@ -520,7 +570,6 @@ class FrequencyResponse:
                              optimization. When using sub-set of filters independently the actual max gain of that
                              sub-set's frequency response must be applied as a negative digital preamp to avoid
                              clipping.
-            - **ir:** Impulse response
         """
         if not len(self.equalization):
             raise ValueError('Equalization has not been done yet.')
@@ -534,7 +583,7 @@ class FrequencyResponse:
         n_produced = []
         max_gains = []
         for n in max_filters:
-            _eq, rmse, _fc, _Q, _gain, _coeffs_a, _coeffs_b = self._run_optimize_parametric_eq(
+            _eq, rmse, _fc, _Q, _gain, _coeffs_a, _coeffs_b = self.optimize_biquad_filters(
                 frequency=self.frequency,
                 target=self.equalization - self.parametric_eq,
                 max_filters=n,
@@ -551,6 +600,29 @@ class FrequencyResponse:
             coeffs_b = np.vstack((coeffs_b, _coeffs_b))
 
         return np.transpose(np.vstack([fc, Q, gain])), n_produced, max_gains
+
+    def optimize_fixed_band_eq(self, fc=None, q=None, fs=DEFAULT_FS):
+        """Fits multiple fixed Fc and Q biquad filters to equalization curve.
+
+        Args:
+            fc: List of center frequencies for the filters
+            q: List of Q values for the filters
+            fs: Sampling frequency
+
+        Returns:
+            - **filters:** Numpy array of filters where each row contains one filter fc, Q and gain
+            - **n_produced:** Number of filters. Equals to length or inputs.
+            - **max_gains:** Maximum gain value of the equalizer frequency response.
+        """
+        eq, rmse, fc, Q, gain, coeffs_a, coeffs_b = self.optimize_biquad_filters(
+            frequency=self.frequency,
+            target=self.equalization,
+            fc=fc,
+            q=q,
+            fs=fs
+        )
+        self.fixed_band_eq = eq
+        return np.transpose(np.vstack([fc, q, gain])), len(fc), np.max(self.fixed_band_eq)
 
     @staticmethod
     def write_eqapo_parametric_eq(file_path, filters):
@@ -652,8 +724,6 @@ class FrequencyResponse:
         # Add GraphicEQ settings
         graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
         if os.path.isfile(graphic_eq_path):
-            preamp = min(0.0, float(-np.max(self.equalization))) - 0.5
-
             # Read Graphig eq
             with open(graphic_eq_path, 'r') as f:
                 graphic_eq_str = f.read().strip()
@@ -664,20 +734,15 @@ class FrequencyResponse:
             In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
             with:
             ```
-            Preamp: {preamp:.1f}dB
             {graphic_eq}
             ```
             
             ### HeSuVi
             HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
             `{model} GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-            Set volume attenuation in the Connection tab for both channels to **{i_preamp}**.
             '''.format(
                 model=model,
-                preamp=preamp,
-                graphic_eq=graphic_eq_str,
-                f_preamp=preamp,
-                i_preamp=int(preamp * 10)
+                graphic_eq=graphic_eq_str
             )
 
         # Add parametric EQ settings
@@ -755,6 +820,49 @@ class FrequencyResponse:
                 preamp=preamp,
                 max_filters_str=max_filters_str,
                 preamp_str=preamp_str,
+                filters_table=filters_table_str
+            )
+
+        # Add fixed band eq
+        fixed_band_eq_path = os.path.join(dir_path, model + ' FixedBandEQ.txt')
+        if os.path.isfile(fixed_band_eq_path):
+            preamp = np.min([0.0, float(-np.max(self.fixed_band_eq))]) - 0.5
+
+            # Read Parametric eq
+            with open(fixed_band_eq_path, 'r') as f:
+                fixed_band_eq_str = f.read().strip()
+
+            # Filters as Markdown table
+            filters = []
+            for line in fixed_band_eq_str.split('\n'):
+                if line == '':
+                    continue
+                filter_type = line[line.index('ON') + 3:line.index('Fc') - 1]
+                if filter_type == 'PK':
+                    filter_type = 'Peaking'
+                if filter_type == 'LS':
+                    filter_type = 'Low Shelf'
+                if filter_type == 'HS':
+                    filter_type = 'High Shelf'
+                fc = line[line.index('Fc') + 3:line.index('Gain') - 1]
+                gain = line[line.index('Gain') + 5:line.index('Q') - 1]
+                q = line[line.index('Q') + 2:]
+                filters.append([filter_type, fc, q, gain])
+            filters_table_str = tabulate(
+                filters,
+                headers=['Type', 'Fc', 'Q', 'Gain'],
+                tablefmt='orgtbl'
+            ).replace('+', '|').replace('|-', '|:')
+
+            s += '''
+            ### Fixed Band EQs
+            In case of using fixed band (also called graphic) equalizer, apply preamp of **{preamp:.1f}dB** and set
+            gains manually with these parameters.
+
+            {filters_table}
+            '''.format(
+                model=model,
+                preamp=preamp,
                 filters_table=filters_table_str
             )
 
@@ -910,6 +1018,7 @@ class FrequencyResponse:
             error_smoothed=True,
             equalization=True,
             parametric_eq=True,
+            fixed_band_eq=True,
             equalized_raw=True,
             equalized_smoothed=True,
             target=False
@@ -1045,6 +1154,7 @@ class FrequencyResponse:
             error_smoothed=False,
             equalization=True,
             parametric_eq=True,
+            fixed_band_eq=True,
             equalized_raw=True,
             equalized_smoothed=True,
             target=False
@@ -1140,6 +1250,7 @@ class FrequencyResponse:
                    error_smoothed=True,
                    equalization=True,
                    parametric_eq=True,
+                   fixed_band_eq=True,
                    equalized=True,
                    target=True,
                    file_path=None,
@@ -1172,6 +1283,9 @@ class FrequencyResponse:
         if parametric_eq and len(self.parametric_eq):
             plt.plot(self.frequency, self.parametric_eq, linewidth=5, color='lightgreen')
             legend.append('Parametric Eq')
+        if fixed_band_eq and len(self.fixed_band_eq):
+            plt.plot(self.frequency, self.fixed_band_eq, linewidth=5, color='limegreen')
+            legend.append('Fixed Band Eq')
         if equalization and len(self.equalization):
             plt.plot(self.frequency, self.equalization, linewidth=1, color='darkgreen')
             legend.append('Equalization')
@@ -1207,6 +1321,10 @@ class FrequencyResponse:
                 compensation=None,
                 equalize=False,
                 parametric_eq=False,
+                fixed_band_eq=False,
+                fc=None,
+                q=None,
+                ten_band_eq=None,
                 max_filters=None,
                 bass_boost=None,
                 iem_bass_boost=None,
@@ -1224,6 +1342,10 @@ class FrequencyResponse:
             compensation: Compensation FrequencyResponse. Must be interpolated and centered.
             equalize: Run equalization?
             parametric_eq: Optimize peaking filters for parametric eq?
+            fixed_band_eq: Optimize peaking filters for fixed band (graphic) eq?
+            fc: List of center frequencies for fixed band eq
+            q: List of Q values for fixed band eq
+            ten_band_eq: Optimize filters for standard ten band eq?
             max_filters: List of maximum number of peaking filters for each additive filter optimization run.
             bass_boost: Bass boost amount in dB for over-ear headphones.
             iem_bass_boost: Bass boost amount in dB for in-ear headphones.
@@ -1236,12 +1358,21 @@ class FrequencyResponse:
             fs: Sampling frequency
 
         Returns:
-            - **filters:** Numpy array of produced peaking filters. Each row contains Fc, Q and gain
-            - **n_filters:** Number of produced peaking filters for each group.
-            - **max_gains:** Maximum positive gains in each peaking filter group.
+            - **peq_filters:** Numpy array of produced parametric eq peaking filters. Each row contains Fc, Q and gain
+            - **n_peq_filters:** Number of produced parametric eq peaking filters for each group.
+            - **peq_max_gains:** Maximum positive gains in each parametric eq peaking filter group.
+            - **fbeq_filters:** Numpy array of produced fixed band peaking filters. Each row contains Fc, Q and gain
+            - **n_fbeq_filters:** Number of produced fixed band peaking filters.
+            - **fbeq_max_gains:** Maximum positive gain for fixed band eq.
         """
         if parametric_eq and not equalize:
             raise ValueError('equalize must be True when parametric_eq is True.')
+        if ten_band_eq:
+            fixed_band_eq = True
+            fc = np.array([31.25, 62.5, 125, 250, 500, 1000, 2000, 4000, 8000, 16000], dtype='float32')
+            q = np.ones(10, dtype='float32') * np.sqrt(2)
+        if fixed_band_eq and not equalize:
+            raise ValueError('equalize must be True when fixed_band_eq or ten_band_eq is True.')
 
         # Use either normal bass boost (for on-ears) or iem bass boost
         if bass_boost is not None and iem_bass_boost is not None:
@@ -1291,11 +1422,7 @@ class FrequencyResponse:
             treble_f_upper=treble_f_upper
         )
 
-        filters = None
-        n_filters = None
-        max_gains = None
-        ir = None
-
+        peq_filters = n_peq_filters = peq_max_gains = fbeq_filters = n_fbeq_filters = nfbeq_max_gains = None
         # Equalize
         if equalize:
             self.equalize(
@@ -1308,9 +1435,11 @@ class FrequencyResponse:
             )
             if parametric_eq:
                 # Get the filters
-                filters, n_filters, max_gains = self.optimize_parametric_eq(max_filters=max_filters, fs=fs)
+                peq_filters, n_peq_filters, peq_max_gains = self.optimize_parametric_eq(max_filters=max_filters, fs=fs)
+            if fixed_band_eq:
+                fbeq_filters, n_fbeq_filters, nfbeq_max_gains = self.optimize_fixed_band_eq(fc=fc, q=q, fs=fs)
 
-        return filters, n_filters, max_gains
+        return peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, nfbeq_max_gains
 
     @staticmethod
     def main(input_dir=None,
@@ -1321,6 +1450,10 @@ class FrequencyResponse:
              compensation=None,
              equalize=False,
              parametric_eq=False,
+             fixed_band_eq=False,
+             fc=None,
+             q=None,
+             ten_band_eq=False,
              max_filters=None,
              fs=DEFAULT_FS,
              bit_depth=DEFAULT_BIT_DEPTH,
@@ -1387,11 +1520,15 @@ class FrequencyResponse:
                 fr.write_to_csv(input_file_path)
 
             # Process and equalize
-            filters, n_filters, max_gains = fr.process(
+            peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gains = fr.process(
                 calibration=calibration,
                 compensation=compensation,
                 equalize=equalize,
                 parametric_eq=parametric_eq,
+                fixed_band_eq=fixed_band_eq,
+                fc=fc,
+                q=q,
+                ten_band_eq=ten_band_eq,
                 max_filters=max_filters,
                 bass_boost=bass_boost,
                 iem_bass_boost=iem_bass_boost,
@@ -1414,7 +1551,13 @@ class FrequencyResponse:
                     fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'))
                     if parametric_eq:
                         # Write ParametricEq settings to file
-                        fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), filters)
+                        fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), peq_filters)
+
+                    # Write fixed band eq
+                    if fixed_band_eq or ten_band_eq:
+                        # Write fixed band eq settings to file
+                        fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' FixedBandEQ.txt'), fbeq_filters)
+
                     # Write impulse response as WAV
                     fss = [44100, 48000] if fs in [44100, 48000] else [fs]
                     for _fs in fss:
@@ -1452,8 +1595,8 @@ class FrequencyResponse:
                 _readme_path = os.path.join(output_dir_path, 'README.md')
                 fr.write_readme(
                     _readme_path,
-                    max_filters=n_filters,
-                    max_gains=max_gains
+                    max_filters=n_peq_filters,
+                    max_gains=peq_max_gains
                 )
 
             elif show_plot:
@@ -1489,6 +1632,12 @@ class FrequencyResponse:
                                 help='Will run equalization if this parameter exists, no value needed.')
         arg_parser.add_argument('--parametric_eq', action='store_true',
                                 help='Will produce parametric eq settings if this parameter exists, no value needed.')
+        arg_parser.add_argument('--fixed_band_eq', action='store_true',
+                                help='Will produce fixed band eq settings if this parameter exists, no value needed.')
+        arg_parser.add_argument('--fc', type=str, help='Comma separated list of center frequencies for fixed band eq.')
+        arg_parser.add_argument('--q', type=str, help='Comma separated list of Q values for fixed band eq.')
+        arg_parser.add_argument('--ten_band_eq', action='store_true',
+                                help='Shortcut parameter for activating standard ten band eq optimization.')
         arg_parser.add_argument('--max_filters', type=str, default=argparse.SUPPRESS,
                                 help='Maximum number of filters for parametric EQ. Multiple cumulative optimization runs'
                                      'can be done by giving multiple filter counts separated by "+". "5+5" would create'
@@ -1551,6 +1700,10 @@ class FrequencyResponse:
             raise TypeError('"--bass_boost" or "--iem_bass_boost" can be given but not both')
         if 'max_filters' in args:
             args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
+        if 'fc' in args and args['fc'] is not None:
+            args['fc'] = [float(x) for x in args['fc'].split(',')]
+        if 'q' in args and args['q'] is not None:
+            args['q'] = [float(x) for x in args['q'].split(',')]
         return args
 
 

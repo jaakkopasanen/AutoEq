@@ -60,6 +60,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 bass_boost=4.0
             )
 
@@ -74,6 +75,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 iem_bass_boost=6.0
             )
 
@@ -88,6 +90,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
             )
 
     if headphonecom:
@@ -102,6 +105,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 bass_boost=4.0
             )
 
@@ -116,6 +120,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 iem_bass_boost=6.0
             )
 
@@ -129,6 +134,7 @@ def main():
                 compensation=hp_compensation,
                 equalize=True,
                 parametric_eq=True,
+                ten_band_eq=True,
                 max_filters=[5, 5],
             )
 
@@ -144,6 +150,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 bass_boost=4.0
             )
 
@@ -158,6 +165,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 iem_bass_boost=6.0
             )
 
@@ -171,6 +179,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 iem_bass_boost=6.0
             )
 
@@ -184,6 +193,7 @@ def main():
                 compensation=os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2017-1_wo_bass.csv'),
                 equalize=True,
                 parametric_eq=True,
+                ten_band_eq=True,
                 max_filters=[5, 5],
             )
 
@@ -199,6 +209,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 bass_boost=4.0
             )
 
@@ -213,6 +224,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 iem_bass_boost=6.0
             )
 
@@ -226,6 +238,7 @@ def main():
                 compensation=rtings_compensation,
                 equalize=True,
                 parametric_eq=True,
+                ten_band_eq=True,
                 max_filters=[5, 5]
             )
 
@@ -241,6 +254,7 @@ def main():
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
+                ten_band_eq=True,
                 bass_boost=4.0
             )
 

@@ -31,11 +31,13 @@ description about how things were obtained and processed.
 
 
 ## Usage
-Equalization settings produced by AutoEQ are EqualizerAPO GraphicEQ configuration lines and parametric equalizer peaking
-filters, one for each headphone processed. GraphicEQ settings look like this:
+AutoEQ produces settings for EqualizerAPO GraphicEQ, parametric equalizers, convolution equalizer and fixed band eqs.
+
+EqualizerAPO GraphicEQ settings look like this:
 ```
 GraphicEQ: 20 0.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
 ```
+
 Parametric eq settings can be used with Peace or any other parametric eq which has at least 5 bands available. Even
 fewer bands is possible but pre-computed results require to use minimum five first of the filters. Parametric equalizer
 filter parameters look like this:
@@ -48,13 +50,35 @@ filter parameters look like this:
 | Peaking | 6093 Hz  | 2.26 | -4.7 dB |
 | Peaking | 8251 Hz  | 3.71 | -2.9 dB |
 
-**Windows** has EqualizerAPO, HeSuVi, Peace and many media players with parametric equalizers such as Roon and
-Foobar2000.
+Convolution equalizer settings are finite impulse responses (FIR filters) and are the most advanced kind of (LTI)
+filters. FIR filters make it possible to produce linear phase filters which some may prefer though generally minimum
+phase filters are recommended. EqualizerAPO GraphicEQ is actually convolution eq under the hood. Minimum phase impulse
+response looks like this:
 
-**Android** doesn't have any system-wide parametric equalizers but there are several music players which have parametric
-eq and work with local files as well as certain streaming services. USB Audio Player PRO with Toneboosters plugin and
-Neutron Music Player are the most popular but are not free. Viper4Android is a system-wide solution on Android but it
-requires rooting of the device. Viper4Android is supported with impulse responses (WAV) files.
+![minimum-phase-FIR](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/minimum-phase-FIR.png)
+
+Fixed band eq is more commonly known as graphic equalizer but in order not to confuse with EqualizerAPO GraphicEQ it is
+called like that in this project. Fixed band equalizer is like parametric equalizer with several peaking filters but
+don't have adjustable frequency information, only gain. All other types are preferred over fixed band equalizers but on
+some devices these are only available ones.
+
+#### Windows
+has [EqualizerAPO](#plain-equalizerapo), [HeSuVi](#hesuvi), [Peace](#peace) and many media players with
+parametric equalizers such as [Roon](https://roonlabs.com/) and [Foobar2000](https://www.foobar2000.org/).
+
+#### Android
+doesn't have any system-wide parametric equalizers but there are several music players which have parametric
+eq and work with local files as well as certain streaming services.
+[USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) with Toneboosters
+plugin and [Neutron Music Player](https://play.google.com/store/apps/details?id=com.neutroncode.mp) are the most popular
+but are not free. [Viper4Android](https://forum.xda-developers.com/showthread.php?t=2191223) is a system-wide solution
+on Android but it requires rooting of the device. Viper4Android is supported with impulse response (WAV) files. Android
+has native ten band equalizer which can be controlled with
+[Music Equalizer EQ](https://play.google.com/store/apps/details?id=mediam.music.equalizer) app for system wide
+equalization without rooting.
+
+#### Linux
+has [PulseEffects](#pulseeffects) for PulseAudio which has parametric eq and convolution eq.
 
 ### HeSuVi
 Easiest way is to install [HeSuVi](https://sourceforge.net/projects/hesuvi/) and select correct headphone model from the
@@ -115,9 +139,6 @@ by clicking *Import* button and select the *<model> ParametricEQ.txt* file.
 ![peace](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
 
 *Peace with full GUI for EqualizerAPO*
-# Recommended Results
-This is a list of recommended results. Results for other measurements are available for many headphones, these
-can be found in the [full index](https://github.com/jaakkopasanen/AutoEq/blob/master/results/INDEX.md).
 
 ### USB Audio Player PRO
 [USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is and Android app
@@ -154,7 +175,7 @@ Multiple measurements of a same heaphone by a same measurement entity are averag
 averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
 averaged data which has no suffixes in the name.
 
-oratory1990 measurements have been done on Gras 43AG and 43AC couples, the same which were used to develop Harman target
+oratory1990 measurements have been done on Gras 43AG and 43AC couplers, the same which were used to develop Harman target
 responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results are
 recommended over all other measurements because of this reason. Harman target data is in the `compensation` folder.
 
@@ -243,8 +264,11 @@ usage: frequency_response.py [-h] --input_dir INPUT_DIR
                              [--output_dir OUTPUT_DIR] [--standardize_input]
                              [--new_only] [--calibration CALIBRATION]
                              [--compensation COMPENSATION] [--equalize]
-                             [--parametric_eq] [--max_filters MAX_FILTERS]
-                             [--fs FS] [--bass_boost BASS_BOOST]
+                             [--parametric_eq] [--fixed_band_eq] [--fc FC]
+                             [--q Q] [--ten_band_eq]
+                             [--max_filters MAX_FILTERS] [--fs FS]
+                             [--bit_depth BIT_DEPTH] [--phase PHASE]
+                             [--bass_boost BASS_BOOST]
                              [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
                              [--max_gain MAX_GAIN]
                              [--treble_f_lower TREBLE_F_LOWER]
@@ -280,6 +304,13 @@ optional arguments:
                         value needed.
   --parametric_eq       Will produce parametric eq settings if this parameter
                         exists, no value needed.
+  --fixed_band_eq       Will produce fixed band eq settings if this parameter
+                        exists, no value needed.
+  --fc FC               Comma separated list of center frequencies for fixed
+                        band eq.
+  --q Q                 Comma separated list of Q values for fixed band eq.
+  --ten_band_eq         Shortcut parameter for activating standard ten band eq
+                        optimization.
   --max_filters MAX_FILTERS
                         Maximum number of filters for parametric EQ. Multiple
                         cumulative optimization runscan be done by giving
@@ -291,6 +322,10 @@ optional arguments:
                         bands available. Not limited by default.
   --fs FS               Sampling frequency for impulse response and paramteric
                         eq filters.Defaults to 44100.
+  --bit_depth BIT_DEPTH
+                        Number of bits for every sample. Defaults to 16.
+  --phase PHASE         Impulse response phase characteristic. "minimum",
+                        "linear" or "both". Defaults to "minimum"
   --bass_boost BASS_BOOST
                         Target gain for sub-bass in dB. Has sigmoid slope down
                         from 35 Hz to 280 Hz. "--bass_boost" is mutually
