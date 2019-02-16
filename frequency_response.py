@@ -21,6 +21,7 @@ from tabulate import tabulate
 from PIL import Image
 import re
 import biquad
+import warnings
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
@@ -968,13 +969,17 @@ class FrequencyResponse:
 
         # Normal filter
         y_normal = data
-        for _ in range(iterations):
-            y_normal = savgol_filter(y_normal, self._window_size(window_size), 2)
+        with warnings.catch_warnings():
+            # Savgol filter uses array indexing which is not future proof, ignoring the warning and trusting that this
+            # will be fixed in the future release
+            warnings.simplefilter("ignore")
+            for _ in range(iterations):
+                y_normal = savgol_filter(y_normal, self._window_size(window_size), 2)
 
-        # Treble filter
-        y_treble = data
-        for _ in range(treble_iterations):
-            y_treble = savgol_filter(y_treble, self._window_size(treble_window_size), 2)
+            # Treble filter
+            y_treble = data
+            for _ in range(treble_iterations):
+                y_treble = savgol_filter(y_treble, self._window_size(treble_window_size), 2)
 
         # Transition weighted with sigmoid
         k_treble = self._sigmoid(treble_f_lower, treble_f_upper)
@@ -1547,6 +1552,7 @@ class FrequencyResponse:
         if 'max_filters' in args:
             args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
         return args
+
 
 if __name__ == '__main__':
     FrequencyResponse.main(**FrequencyResponse.cli_args())
