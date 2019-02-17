@@ -1,24 +1,22 @@
 # Sennheiser HD 650
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.7; 41 5.2; 45 5.0; 49 4.8; 54 4.4; 60 4.1; 66 3.5; 72 2.7; 79 1.8; 87 1.1; 96 0.4; 106 -0.2; 116 -0.6; 128 -1.0; 141 -1.4; 155 -1.6; 170 -1.7; 187 -1.8; 206 -1.9; 227 -1.8; 249 -1.6; 274 -1.4; 302 -1.2; 332 -1.0; 365 -0.7; 402 -0.5; 442 -0.4; 486 -0.3; 535 0.0; 588 0.2; 647 0.2; 712 0.2; 783 0.1; 861 0.1; 947 0.2; 1042 -0.1; 1146 -0.0; 1261 0.2; 1387 0.6; 1526 1.0; 1678 1.3; 1846 1.8; 2031 2.1; 2234 2.2; 2457 1.6; 2703 0.8; 2973 0.3; 3270 0.4; 3597 1.5; 3957 3.0; 4353 4.3; 4788 2.3; 5267 2.0; 5793 4.0; 6373 3.0; 7010 2.4; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -0.8; 15026 -2.4; 16529 -5.0; 18182 -7.1; 20000 -5.8
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.8; 41 -1.3; 45 -1.5; 49 -1.7; 54 -2.1; 60 -2.4; 66 -3.0; 72 -3.8; 79 -4.7; 87 -5.4; 96 -6.1; 106 -6.7; 116 -7.1; 128 -7.5; 141 -7.9; 155 -8.1; 170 -8.2; 187 -8.3; 206 -8.4; 227 -8.3; 249 -8.1; 274 -7.9; 302 -7.7; 332 -7.5; 365 -7.2; 402 -7.0; 442 -6.9; 486 -6.8; 535 -6.5; 588 -6.3; 647 -6.3; 712 -6.3; 783 -6.4; 861 -6.4; 947 -6.3; 1042 -6.6; 1146 -6.5; 1261 -6.3; 1387 -5.9; 1526 -5.5; 1678 -5.2; 1846 -4.7; 2031 -4.4; 2234 -4.3; 2457 -4.9; 2703 -5.7; 2973 -6.2; 3270 -6.1; 3597 -5.0; 3957 -3.5; 4353 -2.2; 4788 -4.2; 5267 -4.5; 5793 -2.5; 6373 -3.5; 7010 -4.1; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -7.3; 15026 -8.9; 16529 -11.5; 18182 -13.6; 20000 -12.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 650 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 650 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
@@ -29,10 +27,30 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 | Peaking | 5288 Hz  |  1.28 | 3.4 dB  |
 | Peaking | 18694 Hz |  0.82 | -7.8 dB |
 | Peaking | 22050 Hz |  1.76 | 2.2 dB  |
-| Peaking | 62 Hz    |  2.42 | 2.0 dB  |
-| Peaking | 178 Hz   |  0.9  | -2.3 dB |
-| Peaking | 3126 Hz  |  5.51 | -1.2 dB |
-| Peaking | 4182 Hz  | 10.06 | 2.0 dB  |
-| Peaking | 12877 Hz |  4.48 | 1.3 dB  |
+| Peaking | 63 Hz    |  2.35 | 2.0 dB  |
+| Peaking | 179 Hz   |  0.88 | -2.3 dB |
+| Peaking | 3139 Hz  |  5.52 | -1.2 dB |
+| Peaking | 4230 Hz  | 10.07 | 2.0 dB  |
+| Peaking | 12940 Hz |  4.48 | 1.3 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.7 dB  |
+| Peaking | 62 Hz    | 1.41 | 3.0 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.7 dB |
+| Peaking | 250 Hz   | 1.41 | -1.8 dB |
+| Peaking | 500 Hz   | 1.41 | 0.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.2 dB |
+| Peaking | 2000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -5.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)

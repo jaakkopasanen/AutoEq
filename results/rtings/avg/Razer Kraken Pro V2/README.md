@@ -1,38 +1,56 @@
 # Razer Kraken Pro V2
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 5.8; 25 5.4; 28 4.4; 31 3.5; 34 2.7; 37 2.0; 41 1.1; 45 0.1; 49 -0.8; 54 -1.8; 60 -2.8; 66 -3.7; 72 -4.3; 79 -4.9; 87 -5.4; 96 -5.7; 106 -6.0; 116 -6.2; 128 -6.3; 141 -6.4; 155 -6.4; 170 -6.3; 187 -6.0; 206 -5.6; 227 -5.1; 249 -4.2; 274 -3.6; 302 -6.1; 332 -6.2; 365 -5.3; 402 -4.5; 442 -3.9; 486 -3.7; 535 -3.5; 588 -2.8; 647 -2.6; 712 -1.5; 783 -1.1; 861 -1.6; 947 -0.7; 1042 0.4; 1146 1.8; 1261 3.2; 1387 3.9; 1526 3.3; 1678 3.6; 1846 3.4; 2031 2.5; 2234 3.9; 2457 5.6; 2703 5.8; 2973 6.0; 3270 4.5; 3597 3.2; 3957 3.8; 4353 5.7; 4788 4.9; 5267 4.7; 5793 3.8; 6373 4.3; 7010 2.5; 7711 -0.1; 8482 -3.9; 9330 -4.6; 10263 -1.4; 11289 0.0; 12418 0.0; 13660 0.0; 15026 -1.1; 16529 -1.0; 18182 0.0
+GraphicEQ: 21 -0.5; 23 -0.7; 25 -1.1; 28 -2.1; 31 -3.0; 34 -3.8; 37 -4.5; 41 -5.4; 45 -6.4; 49 -7.3; 54 -8.3; 60 -9.3; 66 -10.2; 72 -10.8; 79 -11.4; 87 -11.9; 96 -12.2; 106 -12.5; 116 -12.7; 128 -12.8; 141 -12.9; 155 -12.9; 170 -12.8; 187 -12.5; 206 -12.1; 227 -11.6; 249 -10.7; 274 -10.1; 302 -12.6; 332 -12.7; 365 -11.8; 402 -11.0; 442 -10.4; 486 -10.2; 535 -10.0; 588 -9.3; 647 -9.1; 712 -8.0; 783 -7.6; 861 -8.1; 947 -7.2; 1042 -6.1; 1146 -4.7; 1261 -3.3; 1387 -2.6; 1526 -3.2; 1678 -2.9; 1846 -3.1; 2031 -4.0; 2234 -2.6; 2457 -0.9; 2703 -0.7; 2973 -0.5; 3270 -2.0; 3597 -3.3; 3957 -2.7; 4353 -0.8; 4788 -1.6; 5267 -1.8; 5793 -2.7; 6373 -2.2; 7010 -4.0; 7711 -6.6; 8482 -10.4; 9330 -11.1; 10263 -7.9; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -7.6; 16529 -7.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Razer Kraken Pro V2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Razer Kraken Pro V2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.2dB**.
+When using independent subset of filters, apply preamp of **-6.1dB**.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 22 Hz   | 0.72 | 6.8 dB  |
+| Peaking | 111 Hz  | 0.54 | -6.5 dB |
+| Peaking | 414 Hz  | 0.85 | -3.5 dB |
+| Peaking | 2334 Hz | 0.79 | 5.0 dB  |
+| Peaking | 4973 Hz | 2.53 | 3.7 dB  |
+| Peaking | 1336 Hz | 5.6  | 1.9 dB  |
+| Peaking | 2045 Hz | 8.11 | -2.4 dB |
+| Peaking | 6589 Hz | 6.58 | 2.6 dB  |
+| Peaking | 6809 Hz | 3.79 | 0.7 dB  |
+| Peaking | 8949 Hz | 3.71 | -6.1 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB** and set
+gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 21 Hz    | 0.74 | 6.8 dB  |
-| Peaking | 111 Hz   | 0.52 | -6.5 dB |
-| Peaking | 413 Hz   | 0.85 | -3.5 dB |
-| Peaking | 2339 Hz  | 0.8  | 5.0 dB  |
-| Peaking | 4956 Hz  | 2.59 | 3.8 dB  |
-| Peaking | 1335 Hz  | 5.42 | 2.0 dB  |
-| Peaking | 2041 Hz  | 8.27 | -2.4 dB |
-| Peaking | 6654 Hz  | 5.09 | 3.5 dB  |
-| Peaking | 9081 Hz  | 2.92 | -6.4 dB |
-| Peaking | 10707 Hz | 3.77 | 1.6 dB  |
+| Peaking | 31 Hz    | 1.41 | 5.7 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.6 dB |
+| Peaking | 125 Hz   | 1.41 | -5.9 dB |
+| Peaking | 250 Hz   | 1.41 | -3.8 dB |
+| Peaking | 500 Hz   | 1.41 | -3.7 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | 3.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.7 dB |
+| Peaking | 16000 Hz | 1.41 | -1.0 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Razer%20Kraken%20Pro%20V2/Razer%20Kraken%20Pro%20V2.png)

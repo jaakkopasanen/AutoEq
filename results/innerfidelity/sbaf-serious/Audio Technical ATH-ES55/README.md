@@ -1,38 +1,56 @@
 # Audio Technical ATH-ES55
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 5.8; 141 5.2; 155 4.8; 170 4.4; 187 3.9; 206 3.6; 227 3.3; 249 3.2; 274 3.6; 302 3.8; 332 3.7; 365 3.2; 402 3.2; 442 3.6; 486 3.4; 535 3.4; 588 3.5; 647 2.9; 712 1.9; 783 1.3; 861 0.6; 947 0.2; 1042 -0.2; 1146 -0.5; 1261 -0.9; 1387 -1.5; 1526 -2.1; 1678 -2.2; 1846 -2.0; 2031 -1.0; 2234 0.3; 2457 2.2; 2703 3.7; 2973 5.0; 3270 5.1; 3597 5.3; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 -0.0; 16529 -0.2; 18182 -0.7; 20000 -3.2
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.7; 141 -1.3; 155 -1.7; 170 -2.1; 187 -2.6; 206 -2.9; 227 -3.2; 249 -3.3; 274 -2.9; 302 -2.7; 332 -2.8; 365 -3.3; 402 -3.3; 442 -2.9; 486 -3.1; 535 -3.1; 588 -3.0; 647 -3.6; 712 -4.6; 783 -5.2; 861 -5.9; 947 -6.3; 1042 -6.7; 1146 -7.0; 1261 -7.4; 1387 -8.0; 1526 -8.6; 1678 -8.7; 1846 -8.5; 2031 -7.5; 2234 -6.2; 2457 -4.3; 2703 -2.8; 2973 -1.5; 3270 -1.4; 3597 -1.2; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.7; 18182 -7.2; 20000 -9.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio Technical ATH-ES55 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technical ATH-ES55 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 12 Hz   | 0.11 | 6.0 dB  |
+| Peaking | 11 Hz   | 0.1  | 6.0 dB  |
 | Peaking | 119 Hz  | 0.78 | 2.7 dB  |
-| Peaking | 468 Hz  | 0.94 | 3.1 dB  |
-| Peaking | 1661 Hz | 1.53 | -4.1 dB |
-| Peaking | 4096 Hz | 0.98 | 7.0 dB  |
-| Peaking | 394 Hz  | 8.52 | -0.5 dB |
-| Peaking | 2893 Hz | 3.18 | 2.3 dB  |
-| Peaking | 3357 Hz | 1.34 | -1.4 dB |
-| Peaking | 6255 Hz | 2.61 | 5.0 dB  |
-| Peaking | 7379 Hz | 1.47 | -3.5 dB |
+| Peaking | 469 Hz  | 0.94 | 3.1 dB  |
+| Peaking | 1663 Hz | 1.51 | -4.1 dB |
+| Peaking | 4099 Hz | 0.96 | 7.0 dB  |
+| Peaking | 300 Hz  | 7.66 | 0.7 dB  |
+| Peaking | 2855 Hz | 3.08 | 2.4 dB  |
+| Peaking | 3405 Hz | 1.29 | -1.5 dB |
+| Peaking | 6347 Hz | 2.52 | 5.1 dB  |
+| Peaking | 7232 Hz | 1.49 | -3.6 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.3dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.1 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.5 dB  |
+| Peaking | 125 Hz   | 1.41 | 4.7 dB  |
+| Peaking | 250 Hz   | 1.41 | 1.9 dB  |
+| Peaking | 500 Hz   | 1.41 | 3.6 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 8.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technical%20ATH-ES55/Audio%20Technical%20ATH-ES55.png)

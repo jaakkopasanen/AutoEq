@@ -1,38 +1,56 @@
 # Philips SME3580
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.8dB
-GraphicEQ: 21 -12.7; 23 -12.5; 25 -12.3; 28 -12.0; 31 -11.7; 34 -11.4; 37 -11.1; 41 -10.7; 45 -10.4; 49 -10.1; 54 -9.8; 60 -9.5; 66 -9.3; 72 -9.0; 79 -8.9; 87 -8.7; 96 -8.5; 106 -8.1; 116 -7.7; 128 -7.5; 141 -7.1; 155 -6.8; 170 -6.3; 187 -5.9; 206 -5.4; 227 -4.8; 249 -4.3; 274 -3.8; 302 -3.3; 332 -2.7; 365 -2.2; 402 -1.7; 442 -1.1; 486 -0.8; 535 -0.4; 588 0.2; 647 0.5; 712 0.5; 783 0.8; 861 0.7; 947 0.4; 1042 -0.3; 1146 -0.9; 1261 -1.7; 1387 -2.8; 1526 -4.0; 1678 -4.9; 1846 -5.6; 2031 -6.3; 2234 -7.4; 2457 -7.9; 2703 -7.2; 2973 -4.2; 3270 -1.0; 3597 0.6; 3957 -0.2; 4353 -3.3; 4788 -6.7; 5267 -7.8; 5793 -4.5; 6373 -1.0; 7010 1.7; 7711 0.3; 8482 0.0; 9330 -0.7; 10263 -0.8; 11289 0.0
+GraphicEQ: 21 -14.9; 23 -14.7; 25 -14.5; 28 -14.2; 31 -13.9; 34 -13.6; 37 -13.3; 41 -12.9; 45 -12.6; 49 -12.3; 54 -12.0; 60 -11.7; 66 -11.5; 72 -11.2; 79 -11.1; 87 -10.9; 96 -10.7; 106 -10.3; 116 -9.9; 128 -9.7; 141 -9.4; 155 -9.0; 170 -8.5; 187 -8.1; 206 -7.6; 227 -7.0; 249 -6.5; 274 -6.0; 302 -5.5; 332 -4.9; 365 -4.4; 402 -3.9; 442 -3.3; 486 -3.0; 535 -2.6; 588 -2.0; 647 -1.7; 712 -1.7; 783 -1.5; 861 -1.5; 947 -1.9; 1042 -2.5; 1146 -3.1; 1261 -4.0; 1387 -5.0; 1526 -6.2; 1678 -7.1; 1846 -7.8; 2031 -8.5; 2234 -9.6; 2457 -10.2; 2703 -9.4; 2973 -6.4; 3270 -3.2; 3597 -1.6; 3957 -2.5; 4353 -5.5; 4788 -8.9; 5267 -10.0; 5793 -6.7; 6373 -3.2; 7010 -0.5; 7711 -1.9; 8482 -2.2; 9330 -2.9; 10263 -3.0; 11289 -2.2; 12418 -2.2; 13660 -2.2; 15026 -2.2; 16529 -2.2; 18182 -2.2; 20000 -2.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Philips SME3580 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-18**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips SME3580 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-1.4dB**.
+When using independent subset of filters, apply preamp of **-1.5dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 17 Hz   | 0.19 | -12.5 dB |
+| Peaking | 16 Hz   | 0.18 | -12.5 dB |
 | Peaking | 155 Hz  | 0.82 | -3.4 dB  |
-| Peaking | 2239 Hz | 2    | -8.1 dB  |
-| Peaking | 5234 Hz | 4.48 | -8.4 dB  |
-| Peaking | 6969 Hz | 4.21 | 2.5 dB   |
-| Peaking | 810 Hz  | 1.61 | 1.9 dB   |
-| Peaking | 1567 Hz | 3.34 | -1.1 dB  |
-| Peaking | 2168 Hz | 3.41 | 4.0 dB   |
-| Peaking | 2761 Hz | 1.14 | -4.4 dB  |
-| Peaking | 3500 Hz | 3.21 | 6.3 dB   |
+| Peaking | 2239 Hz | 1.99 | -8.1 dB  |
+| Peaking | 5231 Hz | 4.45 | -8.4 dB  |
+| Peaking | 6972 Hz | 4.5  | 2.5 dB   |
+| Peaking | 811 Hz  | 1.61 | 1.9 dB   |
+| Peaking | 1564 Hz | 3.33 | -1.1 dB  |
+| Peaking | 2161 Hz | 3.44 | 3.9 dB   |
+| Peaking | 2767 Hz | 1.13 | -4.3 dB  |
+| Peaking | 3506 Hz | 3.21 | 6.3 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -13.0 dB |
+| Peaking | 62 Hz    | 1.41 | -6.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -6.0 dB  |
+| Peaking | 250 Hz   | 1.41 | -3.3 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.4 dB   |
+| Peaking | 1000 Hz  | 1.41 | 1.8 dB   |
+| Peaking | 2000 Hz  | 1.41 | -7.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | -2.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.2 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.1 dB   |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20SME3580/Philips%20SME3580.png)

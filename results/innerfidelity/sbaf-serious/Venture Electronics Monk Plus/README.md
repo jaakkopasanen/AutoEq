@@ -1,38 +1,56 @@
 # Venture Electronics Monk Plus
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 5.9; 87 4.8; 96 3.5; 106 2.3; 116 1.2; 128 0.1; 141 -0.9; 155 -1.8; 170 -2.1; 187 -2.4; 206 -2.1; 227 -2.2; 249 -2.2; 274 -2.0; 302 -1.6; 332 -1.2; 365 -0.8; 402 -2.5; 442 -0.6; 486 -0.3; 535 -0.2; 588 0.2; 647 0.3; 712 0.3; 783 0.4; 861 0.3; 947 0.1; 1042 -0.1; 1146 -0.3; 1261 -0.8; 1387 -1.9; 1526 -3.5; 1678 -5.0; 1846 -6.4; 2031 -7.5; 2234 -8.2; 2457 -7.5; 2703 -6.5; 2973 -4.1; 3270 -1.4; 3597 -0.0; 3957 -0.7; 4353 -2.8; 4788 -4.3; 5267 -2.7; 5793 -2.0; 6373 0.3; 7010 -4.4; 7711 -5.9; 8482 -4.7; 9330 -0.8; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -3.2; 15026 -7.1; 16529 -2.8; 18182 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.6; 87 -1.7; 96 -3.0; 106 -4.2; 116 -5.3; 128 -6.4; 141 -7.4; 155 -8.3; 170 -8.6; 187 -8.9; 206 -8.6; 227 -8.7; 249 -8.7; 274 -8.5; 302 -8.1; 332 -7.7; 365 -7.3; 402 -9.0; 442 -7.1; 486 -6.8; 535 -6.7; 588 -6.3; 647 -6.2; 712 -6.2; 783 -6.1; 861 -6.2; 947 -6.4; 1042 -6.6; 1146 -6.8; 1261 -7.3; 1387 -8.4; 1526 -10.0; 1678 -11.5; 1846 -12.9; 2031 -14.0; 2234 -14.7; 2457 -14.0; 2703 -13.0; 2973 -10.6; 3270 -7.9; 3597 -6.5; 3957 -7.2; 4353 -9.3; 4788 -10.8; 5267 -9.2; 5793 -8.5; 6373 -6.2; 7010 -10.9; 7711 -12.4; 8482 -11.2; 9330 -7.3; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -9.7; 15026 -13.6; 16529 -9.3; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Venture Electronics Monk Plus GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Venture Electronics Monk Plus ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 40 Hz    | 0.75 | 7.3 dB  |
-| Peaking | 2208 Hz  | 1.85 | -8.7 dB |
-| Peaking | 7712 Hz  | 3.56 | -5.8 dB |
-| Peaking | 14701 Hz | 3.58 | -3.9 dB |
-| Peaking | 15567 Hz | 3.03 | -4.4 dB |
-| Peaking | 19 Hz    | 3.15 | 2.8 dB  |
-| Peaking | 81 Hz    | 2.49 | 3.2 dB  |
-| Peaking | 192 Hz   | 1.04 | -3.2 dB |
-| Peaking | 4550 Hz  | 1.63 | 3.7 dB  |
-| Peaking | 4723 Hz  | 3.81 | -7.1 dB |
+| Peaking | 2209 Hz  | 1.85 | -8.6 dB |
+| Peaking | 7787 Hz  | 3.85 | -6.2 dB |
+| Peaking | 14641 Hz | 4.76 | -5.4 dB |
+| Peaking | 15518 Hz | 3.77 | -4.7 dB |
+| Peaking | 22 Hz    | 3.38 | 2.0 dB  |
+| Peaking | 81 Hz    | 2.42 | 3.3 dB  |
+| Peaking | 191 Hz   | 1.04 | -3.2 dB |
+| Peaking | 4376 Hz  | 1.65 | 3.3 dB  |
+| Peaking | 4797 Hz  | 3.87 | -6.6 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 5.8 dB  |
+| Peaking | 62 Hz    | 1.41 | 6.4 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.6 dB |
+| Peaking | 250 Hz   | 1.41 | -2.8 dB |
+| Peaking | 500 Hz   | 1.41 | -0.0 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -8.1 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.2 dB |
+| Peaking | 16000 Hz | 1.41 | -4.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Venture%20Electronics%20Monk%20Plus/Venture%20Electronics%20Monk%20Plus.png)

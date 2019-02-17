@@ -1,38 +1,56 @@
 # Samsung Level U Pro
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.7dB
-GraphicEQ: 21 -6.2; 23 -6.1; 25 -6.1; 28 -6.1; 31 -6.0; 34 -5.9; 37 -5.8; 41 -5.7; 45 -5.6; 49 -5.5; 54 -5.4; 60 -5.6; 66 -5.7; 72 -5.9; 79 -6.0; 87 -6.3; 96 -6.6; 106 -7.0; 116 -7.4; 128 -7.6; 141 -7.7; 155 -7.7; 170 -7.6; 187 -7.4; 206 -7.1; 227 -6.9; 249 -6.5; 274 -5.9; 302 -5.3; 332 -4.6; 365 -4.0; 402 -3.3; 442 -2.6; 486 -1.9; 535 -1.2; 588 -0.4; 647 0.2; 712 0.7; 783 0.9; 861 0.8; 947 0.4; 1042 -0.2; 1146 -0.6; 1261 -1.0; 1387 -1.1; 1526 -1.1; 1678 -1.0; 1846 -1.0; 2031 -0.8; 2234 0.0; 2457 1.0; 2703 1.1; 2973 0.3; 3270 -1.2; 3597 -2.7; 3957 -3.8; 4353 -4.9; 4788 -5.2; 5267 -4.8; 5793 -2.8; 6373 -1.3; 7010 1.5; 7711 0.3; 8482 -1.8; 9330 -5.0; 10263 -2.1; 11289 -0.5; 12418 -3.6; 13660 -5.6; 15026 -5.1; 16529 -7.8; 18182 -12.2; 20000 -11.5
+GraphicEQ: 21 -8.2; 23 -8.2; 25 -8.2; 28 -8.1; 31 -8.0; 34 -7.9; 37 -7.8; 41 -7.7; 45 -7.6; 49 -7.5; 54 -7.5; 60 -7.6; 66 -7.8; 72 -7.9; 79 -8.1; 87 -8.3; 96 -8.7; 106 -9.1; 116 -9.4; 128 -9.6; 141 -9.7; 155 -9.8; 170 -9.7; 187 -9.5; 206 -9.2; 227 -8.9; 249 -8.5; 274 -7.9; 302 -7.3; 332 -6.7; 365 -6.0; 402 -5.4; 442 -4.7; 486 -3.9; 535 -3.2; 588 -2.5; 647 -1.8; 712 -1.3; 783 -1.1; 861 -1.2; 947 -1.7; 1042 -2.3; 1146 -2.7; 1261 -3.0; 1387 -3.1; 1526 -3.1; 1678 -3.1; 1846 -3.1; 2031 -2.9; 2234 -2.0; 2457 -1.0; 2703 -0.9; 2973 -1.8; 3270 -3.2; 3597 -4.7; 3957 -5.9; 4353 -7.0; 4788 -7.2; 5267 -6.8; 5793 -4.8; 6373 -3.4; 7010 -0.5; 7711 -1.7; 8482 -3.8; 9330 -7.1; 10263 -4.1; 11289 -2.5; 12418 -5.6; 13660 -7.7; 15026 -7.1; 16529 -9.8; 18182 -14.3; 20000 -13.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Samsung Level U Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-16**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Samsung Level U Pro ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 10 Hz    | 0.93 | -5.6 dB  |
+| Peaking | 11 Hz    | 0.92 | -5.7 dB  |
 | Peaking | 44 Hz    | 0.26 | -4.7 dB  |
-| Peaking | 188 Hz   | 0.78 | -5.6 dB  |
-| Peaking | 4622 Hz  | 2.93 | -5.5 dB  |
-| Peaking | 19006 Hz | 0.81 | -13.1 dB |
-| Peaking | 770 Hz   | 1.42 | 3.4 dB   |
-| Peaking | 1298 Hz  | 0.32 | -1.8 dB  |
-| Peaking | 2618 Hz  | 2.97 | 3.2 dB   |
-| Peaking | 7309 Hz  | 4.22 | 3.2 dB   |
-| Peaking | 9214 Hz  | 8.24 | -4.1 dB  |
+| Peaking | 189 Hz   | 0.78 | -5.6 dB  |
+| Peaking | 4623 Hz  | 2.91 | -5.5 dB  |
+| Peaking | 19055 Hz | 0.56 | -13.3 dB |
+| Peaking | 768 Hz   | 1.4  | 3.4 dB   |
+| Peaking | 1293 Hz  | 0.32 | -1.8 dB  |
+| Peaking | 2623 Hz  | 2.95 | 3.2 dB   |
+| Peaking | 7304 Hz  | 4.16 | 3.3 dB   |
+| Peaking | 9211 Hz  | 8.06 | -4.1 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -6.2 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.4 dB  |
+| Peaking | 125 Hz   | 1.41 | -6.4 dB  |
+| Peaking | 250 Hz   | 1.41 | -5.9 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB   |
+| Peaking | 2000 Hz  | 1.41 | 0.6 dB   |
+| Peaking | 4000 Hz  | 1.41 | -3.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -10.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Samsung%20Level%20U%20Pro/Samsung%20Level%20U%20Pro.png)

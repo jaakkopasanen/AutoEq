@@ -1,37 +1,56 @@
 # HiSoundAudio BA-100
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.2dB
-GraphicEQ: 21 0.0; 23 3.5; 25 3.4; 28 3.3; 31 3.2; 34 3.1; 37 3.0; 41 2.8; 45 2.6; 49 2.4; 54 2.2; 60 1.8; 66 1.5; 72 1.2; 79 0.8; 87 0.4; 96 -0.0; 106 -0.3; 116 -0.6; 128 -0.9; 141 -1.3; 155 -1.5; 170 -1.7; 187 -1.7; 206 -1.9; 227 -1.8; 249 -1.9; 274 -1.8; 302 -1.7; 332 -1.6; 365 -1.4; 402 -1.2; 442 -0.9; 486 -0.8; 535 -0.5; 588 0.0; 647 0.2; 712 0.2; 783 0.6; 861 0.4; 947 0.2; 1042 -0.0; 1146 -0.3; 1261 -0.6; 1387 -1.1; 1526 -1.6; 1678 -1.9; 1846 -1.4; 2031 0.1; 2234 2.3; 2457 4.1; 2703 3.7; 2973 1.7; 3270 -0.5; 3597 0.1; 3957 0.7; 4353 -1.3; 4788 -3.3; 5267 -2.0; 5793 2.1; 6373 5.0; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -2.0; 23 -2.1; 25 -2.1; 28 -2.2; 31 -2.3; 34 -2.4; 37 -2.6; 41 -2.7; 45 -2.9; 49 -3.1; 54 -3.3; 60 -3.7; 66 -4.0; 72 -4.3; 79 -4.7; 87 -5.1; 96 -5.6; 106 -5.9; 116 -6.1; 128 -6.5; 141 -6.8; 155 -7.0; 170 -7.2; 187 -7.3; 206 -7.4; 227 -7.3; 249 -7.4; 274 -7.3; 302 -7.2; 332 -7.1; 365 -6.9; 402 -6.7; 442 -6.4; 486 -6.3; 535 -6.0; 588 -5.5; 647 -5.3; 712 -5.3; 783 -5.0; 861 -5.1; 947 -5.3; 1042 -5.6; 1146 -5.8; 1261 -6.1; 1387 -6.6; 1526 -7.2; 1678 -7.4; 1846 -6.9; 2031 -5.5; 2234 -3.2; 2457 -1.5; 2703 -1.8; 2973 -3.8; 3270 -6.0; 3597 -5.4; 3957 -4.9; 4353 -6.9; 4788 -8.8; 5267 -7.6; 5793 -3.4; 6373 -0.5; 7010 -3.0; 7711 -5.2; 8482 -5.5; 9330 -5.5; 10263 -5.5; 11289 -5.5; 12418 -5.5; 13660 -5.5; 15026 -5.5; 16529 -5.5; 18182 -5.5; 20000 -5.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `HiSoundAudio BA-100 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-51**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiSoundAudio BA-100 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 29 Hz   | 1.02 | 3.8 dB  |
-| Peaking | 1701 Hz | 2.5  | -2.5 dB |
-| Peaking | 2502 Hz | 3.66 | 5.0 dB  |
-| Peaking | 4984 Hz | 4.75 | -4.4 dB |
-| Peaking | 6401 Hz | 5.11 | 5.8 dB  |
-| Peaking | 64 Hz   | 1.5  | 1.2 dB  |
-| Peaking | 223 Hz  | 0.61 | -2.0 dB |
-| Peaking | 615 Hz  | 4.07 | 0.5 dB  |
-| Peaking | 816 Hz  | 2.51 | 0.9 dB  |
+| Peaking | 29 Hz   | 1.03 | 3.8 dB  |
+| Peaking | 1702 Hz | 2.5  | -2.5 dB |
+| Peaking | 2501 Hz | 3.64 | 5.0 dB  |
+| Peaking | 4930 Hz | 4.66 | -4.4 dB |
+| Peaking | 6350 Hz | 4.97 | 5.8 dB  |
+| Peaking | 61 Hz   | 1.47 | 1.2 dB  |
+| Peaking | 220 Hz  | 0.62 | -2.1 dB |
+| Peaking | 612 Hz  | 4.94 | 0.5 dB  |
+| Peaking | 811 Hz  | 2.45 | 0.9 dB  |
+| Peaking | 8101 Hz | 5.64 | -0.5 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.4 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.0 dB |
+| Peaking | 250 Hz   | 1.41 | -2.1 dB |
+| Peaking | 500 Hz   | 1.41 | 0.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiSoundAudio%20BA-100/HiSoundAudio%20BA-100.png)

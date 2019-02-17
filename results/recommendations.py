@@ -69,7 +69,11 @@ def main():
         Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com. This means if there are
         measurements from multiple sources for the same headphone model only the highest priority result will be shown
         in this list.
-        '''
+        
+        This list has {} headphone models covered but if your headphone is missing you can create settings for it
+        yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
+        
+        '''.format(len(urls))
         s += '\n'.join([urls[key] for key in keys])
         f.write(re.sub('\n[ \t]+', '\n', s).strip())
 

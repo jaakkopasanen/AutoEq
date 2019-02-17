@@ -1,37 +1,56 @@
 # T-Peos Spider
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.9dB
-GraphicEQ: 21 -8.7; 23 -8.7; 25 -8.6; 28 -8.6; 31 -8.6; 34 -8.5; 37 -8.5; 41 -8.4; 45 -8.4; 49 -8.4; 54 -8.4; 60 -8.3; 66 -8.3; 72 -8.4; 79 -8.4; 87 -8.4; 96 -8.4; 106 -8.3; 116 -8.0; 128 -7.9; 141 -7.6; 155 -7.3; 170 -6.9; 187 -6.5; 206 -6.1; 227 -5.5; 249 -4.9; 274 -4.4; 302 -3.8; 332 -3.2; 365 -2.6; 402 -2.0; 442 -1.3; 486 -1.0; 535 -0.5; 588 0.2; 647 0.6; 712 0.7; 783 1.0; 861 0.7; 947 0.3; 1042 -0.1; 1146 -0.7; 1261 -1.1; 1387 -2.2; 1526 -3.2; 1678 -4.1; 1846 -4.7; 2031 -5.0; 2234 -4.6; 2457 -2.6; 2703 -0.1; 2973 3.0; 3270 5.2; 3597 5.6; 3957 3.9; 4353 -0.2; 4788 -4.7; 5267 -8.2; 5793 -3.3; 6373 0.9; 7010 1.9; 7711 -0.1; 8482 -3.4; 9330 -4.3; 10263 -1.9; 11289 0.0
+GraphicEQ: 21 -14.8; 23 -14.8; 25 -14.7; 28 -14.7; 31 -14.7; 34 -14.6; 37 -14.6; 41 -14.5; 45 -14.5; 49 -14.5; 54 -14.4; 60 -14.4; 66 -14.4; 72 -14.5; 79 -14.5; 87 -14.5; 96 -14.5; 106 -14.4; 116 -14.1; 128 -14.0; 141 -13.7; 155 -13.4; 170 -13.0; 187 -12.6; 206 -12.2; 227 -11.6; 249 -11.0; 274 -10.5; 302 -9.9; 332 -9.3; 365 -8.7; 402 -8.1; 442 -7.4; 486 -7.1; 535 -6.6; 588 -5.9; 647 -5.5; 712 -5.4; 783 -5.1; 861 -5.4; 947 -5.7; 1042 -6.2; 1146 -6.8; 1261 -7.2; 1387 -8.3; 1526 -9.3; 1678 -10.2; 1846 -10.8; 2031 -11.0; 2234 -10.7; 2457 -8.7; 2703 -6.2; 2973 -3.1; 3270 -0.9; 3597 -0.5; 3957 -2.2; 4353 -6.3; 4788 -10.8; 5267 -14.3; 5793 -9.4; 6373 -5.2; 7010 -4.2; 7711 -6.2; 8482 -9.5; 9330 -10.4; 10263 -8.0; 11289 -6.1; 12418 -6.1; 13660 -6.1; 15026 -6.1; 16529 -6.1; 18182 -6.1; 20000 -6.1
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `T-Peos Spider GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-59**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `T-Peos Spider ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.4dB**.
+When using independent subset of filters, apply preamp of **-5.5dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 50 Hz    | 0.18 | -9.0 dB  |
-| Peaking | 2079 Hz  | 1.08 | -17.7 dB |
-| Peaking | 3119 Hz  | 0.43 | 14.9 dB  |
-| Peaking | 5155 Hz  | 3.43 | -15.9 dB |
-| Peaking | 9193 Hz  | 2.22 | -8.3 dB  |
-| Peaking | 1372 Hz  | 2    | -2.0 dB  |
-| Peaking | 3447 Hz  | 0.23 | 2.7 dB   |
-| Peaking | 3866 Hz  | 0.43 | -2.6 dB  |
-| Peaking | 14673 Hz | 1.08 | -1.6 dB  |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 51 Hz   | 0.22 | -9.1 dB  |
+| Peaking | 2111 Hz | 1.91 | -7.3 dB  |
+| Peaking | 3468 Hz | 1.59 | 7.8 dB   |
+| Peaking | 5129 Hz | 4.76 | -10.9 dB |
+| Peaking | 9154 Hz | 5.33 | -5.2 dB  |
+| Peaking | 21 Hz   | 2.73 | -1.2 dB  |
+| Peaking | 192 Hz  | 1.49 | -1.0 dB  |
+| Peaking | 706 Hz  | 1.35 | 2.5 dB   |
+| Peaking | 2348 Hz | 0.21 | -0.5 dB  |
+| Peaking | 6817 Hz | 6.04 | 3.3 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -8.8 dB |
+| Peaking | 62 Hz    | 1.41 | -6.0 dB |
+| Peaking | 125 Hz   | 1.41 | -6.6 dB |
+| Peaking | 250 Hz   | 1.41 | -4.1 dB |
+| Peaking | 500 Hz   | 1.41 | 0.5 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.9 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.1 dB |
+| Peaking | 16000 Hz | 1.41 | 0.3 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/T-Peos%20Spider/T-Peos%20Spider.png)

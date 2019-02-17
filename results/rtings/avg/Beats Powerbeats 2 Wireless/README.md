@@ -1,38 +1,56 @@
 # Beats Powerbeats 2 Wireless
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -0.9dB
-GraphicEQ: 21 -3.8; 23 -4.2; 25 -4.6; 28 -5.1; 31 -5.5; 34 -5.8; 37 -6.1; 41 -6.5; 45 -6.8; 49 -7.1; 54 -7.5; 60 -8.2; 66 -8.9; 72 -9.5; 79 -10.1; 87 -10.8; 96 -11.5; 106 -12.2; 116 -12.9; 128 -13.5; 141 -14.2; 155 -14.8; 170 -15.1; 187 -15.4; 206 -15.5; 227 -15.4; 249 -15.1; 274 -14.6; 302 -14.1; 332 -13.4; 365 -12.6; 402 -11.6; 442 -10.3; 486 -8.8; 535 -6.7; 588 -4.8; 647 -2.8; 712 -1.0; 783 0.3; 861 0.8; 947 0.4; 1042 -0.2; 1146 -0.5; 1261 -0.7; 1387 -0.8; 1526 -0.9; 1678 -1.7; 1846 -3.5; 2031 -5.2; 2234 -5.3; 2457 -4.7; 2703 -2.8; 2973 -0.9; 3270 -0.1; 3597 0.0; 3957 -0.4; 4353 -1.5; 4788 -3.6; 5267 -5.6; 5793 -5.6; 6373 -6.4; 7010 -7.5; 7711 -8.0; 8482 -5.3; 9330 -0.6; 10263 0.0
+GraphicEQ: 21 -5.1; 23 -5.5; 25 -5.9; 28 -6.4; 31 -6.8; 34 -7.2; 37 -7.5; 41 -7.8; 45 -8.1; 49 -8.4; 54 -8.8; 60 -9.5; 66 -10.3; 72 -10.9; 79 -11.5; 87 -12.2; 96 -12.9; 106 -13.6; 116 -14.2; 128 -14.9; 141 -15.6; 155 -16.1; 170 -16.5; 187 -16.7; 206 -16.8; 227 -16.7; 249 -16.4; 274 -16.0; 302 -15.4; 332 -14.8; 365 -14.0; 402 -12.9; 442 -11.7; 486 -10.1; 535 -8.0; 588 -6.1; 647 -4.2; 712 -2.3; 783 -1.0; 861 -0.5; 947 -1.0; 1042 -1.6; 1146 -1.9; 1261 -2.1; 1387 -2.1; 1526 -2.3; 1678 -3.0; 1846 -4.8; 2031 -6.5; 2234 -6.7; 2457 -6.0; 2703 -4.2; 2973 -2.2; 3270 -1.5; 3597 -1.3; 3957 -1.7; 4353 -2.8; 4788 -5.0; 5267 -7.0; 5793 -6.9; 6373 -7.7; 7010 -8.8; 7711 -9.3; 8482 -6.6; 9330 -2.0; 10263 -1.3; 11289 -1.3; 12418 -1.3; 13660 -1.3; 15026 -1.3; 16529 -1.3; 18182 -1.3; 20000 -1.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Beats Powerbeats 2 Wireless GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-9**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beats Powerbeats 2 Wireless ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 83 Hz    | 0.4  | -8.2 dB |
-| Peaking | 200 Hz   | 0.96 | -9.9 dB |
+| Peaking | 84 Hz    | 0.39 | -8.2 dB |
+| Peaking | 201 Hz   | 0.95 | -9.9 dB |
 | Peaking | 369 Hz   | 1.77 | -7.0 dB |
-| Peaking | 2188 Hz  | 3.73 | -5.7 dB |
-| Peaking | 6892 Hz  | 2.02 | -8.2 dB |
-| Peaking | 509 Hz   | 3.76 | -1.9 dB |
-| Peaking | 826 Hz   | 2.32 | 3.1 dB  |
-| Peaking | 3699 Hz  | 2.3  | 4.8 dB  |
-| Peaking | 3979 Hz  | 1.17 | -3.3 dB |
-| Peaking | 10188 Hz | 3.58 | 2.3 dB  |
+| Peaking | 2187 Hz  | 3.73 | -5.7 dB |
+| Peaking | 6905 Hz  | 1.95 | -8.2 dB |
+| Peaking | 509 Hz   | 4    | -1.9 dB |
+| Peaking | 827 Hz   | 2.29 | 3.1 dB  |
+| Peaking | 3677 Hz  | 2.31 | 4.7 dB  |
+| Peaking | 4002 Hz  | 1.14 | -3.2 dB |
+| Peaking | 10173 Hz | 3.57 | 2.3 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -4.5 dB  |
+| Peaking | 62 Hz    | 1.41 | -5.5 dB  |
+| Peaking | 125 Hz   | 1.41 | -10.5 dB |
+| Peaking | 250 Hz   | 1.41 | -14.2 dB |
+| Peaking | 500 Hz   | 1.41 | -5.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | 4.0 dB   |
+| Peaking | 2000 Hz  | 1.41 | -4.5 dB  |
+| Peaking | 4000 Hz  | 1.41 | 0.0 dB   |
+| Peaking | 8000 Hz  | 1.41 | -6.5 dB  |
+| Peaking | 16000 Hz | 1.41 | 1.2 dB   |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Beats%20Powerbeats%202%20Wireless/Beats%20Powerbeats%202%20Wireless.png)

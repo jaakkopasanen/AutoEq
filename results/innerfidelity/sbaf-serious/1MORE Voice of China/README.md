@@ -1,38 +1,56 @@
 # 1MORE Voice of China
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.4dB
-GraphicEQ: 21 0.0; 23 0.4; 25 -0.2; 28 -0.9; 31 -1.5; 34 -2.0; 37 -2.4; 41 -2.9; 45 -3.4; 49 -3.8; 54 -4.2; 60 -4.7; 66 -5.1; 72 -5.4; 79 -5.9; 87 -6.3; 96 -6.7; 106 -6.8; 116 -7.0; 128 -7.1; 141 -7.2; 155 -7.1; 170 -7.0; 187 -6.8; 206 -6.6; 227 -6.2; 249 -5.8; 274 -5.4; 302 -4.8; 332 -4.4; 365 -3.8; 402 -3.2; 442 -2.5; 486 -2.1; 535 -1.6; 588 -0.7; 647 -0.3; 712 -0.1; 783 0.4; 861 0.5; 947 0.3; 1042 0.0; 1146 -0.2; 1261 -0.5; 1387 -0.9; 1526 -1.4; 1678 -2.0; 1846 -2.2; 2031 -2.3; 2234 -2.8; 2457 -3.4; 2703 -3.8; 2973 -3.4; 3270 -2.4; 3597 -1.6; 3957 -2.5; 4353 -5.4; 4788 -7.5; 5267 -6.4; 5793 -1.4; 6373 2.1; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 -0.4; 11289 0.0
+GraphicEQ: 21 -2.0; 23 -2.6; 25 -3.2; 28 -3.9; 31 -4.5; 34 -5.0; 37 -5.4; 41 -5.9; 45 -6.3; 49 -6.8; 54 -7.2; 60 -7.7; 66 -8.1; 72 -8.4; 79 -8.9; 87 -9.3; 96 -9.7; 106 -9.8; 116 -9.9; 128 -10.1; 141 -10.2; 155 -10.1; 170 -10.0; 187 -9.8; 206 -9.6; 227 -9.1; 249 -8.8; 274 -8.3; 302 -7.8; 332 -7.4; 365 -6.8; 402 -6.2; 442 -5.5; 486 -5.1; 535 -4.6; 588 -3.7; 647 -3.3; 712 -3.1; 783 -2.6; 861 -2.5; 947 -2.7; 1042 -3.0; 1146 -3.2; 1261 -3.5; 1387 -3.9; 1526 -4.4; 1678 -4.9; 1846 -5.2; 2031 -5.3; 2234 -5.8; 2457 -6.4; 2703 -6.8; 2973 -6.3; 3270 -5.4; 3597 -4.6; 3957 -5.5; 4353 -8.4; 4788 -10.5; 5267 -9.4; 5793 -4.4; 6373 -0.9; 7010 -0.5; 7711 -2.7; 8482 -3.0; 9330 -3.0; 10263 -3.4; 11289 -3.0; 12418 -3.0; 13660 -3.0; 15026 -3.0; 16529 -3.0; 18182 -3.0; 20000 -3.0
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `1MORE Voice of China GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-34**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `1MORE Voice of China ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-3.2dB**.
+When using independent subset of filters, apply preamp of **-3.1dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 104 Hz  |  0.58 | -6.2 dB |
-| Peaking | 239 Hz  |  1.03 | -3.4 dB |
-| Peaking | 2505 Hz |  1.87 | -3.4 dB |
-| Peaking | 4935 Hz |  3.4  | -8.3 dB |
-| Peaking | 6556 Hz |  4.18 | 4.8 dB  |
-| Peaking | 18 Hz   |  2.47 | 1.8 dB  |
-| Peaking | 410 Hz  |  2.54 | -0.6 dB |
-| Peaking | 813 Hz  |  1.82 | 1.3 dB  |
-| Peaking | 1688 Hz |  4.38 | -0.9 dB |
-| Peaking | 3670 Hz | 10.18 | 1.0 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 104 Hz  | 0.58 | -6.2 dB |
+| Peaking | 239 Hz  | 1.03 | -3.4 dB |
+| Peaking | 2506 Hz | 1.87 | -3.4 dB |
+| Peaking | 4916 Hz | 3.35 | -8.3 dB |
+| Peaking | 6474 Hz | 4.07 | 4.8 dB  |
+| Peaking | 18 Hz   | 2.52 | 1.8 dB  |
+| Peaking | 409 Hz  | 2.53 | -0.6 dB |
+| Peaking | 812 Hz  | 1.83 | 1.3 dB  |
+| Peaking | 1665 Hz | 4.34 | -0.9 dB |
+| Peaking | 3675 Hz | 9.48 | 1.0 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -0.4 dB |
+| Peaking | 62 Hz    | 1.41 | -4.1 dB |
+| Peaking | 125 Hz   | 1.41 | -6.2 dB |
+| Peaking | 250 Hz   | 1.41 | -5.1 dB |
+| Peaking | 500 Hz   | 1.41 | -0.8 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 4000 Hz  | 1.41 | -4.6 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1MORE%20Voice%20of%20China/1MORE%20Voice%20of%20China.png)

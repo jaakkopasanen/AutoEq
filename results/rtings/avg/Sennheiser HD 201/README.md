@@ -1,38 +1,56 @@
 # Sennheiser HD 201
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 5.7; 87 5.3; 96 5.1; 106 4.8; 116 4.5; 128 4.3; 141 4.1; 155 4.1; 170 4.1; 187 4.1; 206 4.1; 227 4.3; 249 4.5; 274 4.6; 302 3.1; 332 2.4; 365 1.9; 402 1.2; 442 0.6; 486 0.2; 535 0.1; 588 0.4; 647 0.8; 712 0.8; 783 0.5; 861 0.3; 947 0.1; 1042 -0.1; 1146 -0.3; 1261 0.1; 1387 -0.2; 1526 -1.4; 1678 1.9; 1846 -0.6; 2031 -1.3; 2234 -0.8; 2457 0.7; 2703 1.7; 2973 1.3; 3270 0.0; 3597 -0.2; 3957 2.1; 4353 6.0; 4788 6.0; 5267 1.8; 5793 4.7; 6373 3.0; 7010 0.9; 7711 -1.1; 8482 -2.1; 9330 -1.5; 10263 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.8; 87 -1.2; 96 -1.4; 106 -1.7; 116 -2.0; 128 -2.2; 141 -2.4; 155 -2.4; 170 -2.4; 187 -2.4; 206 -2.4; 227 -2.2; 249 -2.0; 274 -1.9; 302 -3.4; 332 -4.1; 365 -4.6; 402 -5.3; 442 -5.9; 486 -6.3; 535 -6.4; 588 -6.1; 647 -5.7; 712 -5.7; 783 -6.0; 861 -6.2; 947 -6.4; 1042 -6.6; 1146 -6.8; 1261 -6.4; 1387 -6.7; 1526 -7.9; 1678 -4.6; 1846 -7.1; 2031 -7.8; 2234 -7.3; 2457 -5.8; 2703 -4.8; 2973 -5.2; 3270 -6.5; 3597 -6.7; 3957 -4.4; 4353 -0.5; 4788 -0.5; 5267 -4.7; 5793 -1.8; 6373 -3.5; 7010 -5.6; 7711 -7.6; 8482 -8.6; 9330 -8.0; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 201 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 201 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-6.4dB**.
+
+| Type    | Fc       |     Q | Gain    |
+|:--------|:---------|:------|:--------|
+| Peaking | 39 Hz    |  0.24 | 6.2 dB  |
+| Peaking | 253 Hz   |  2.3  | 2.8 dB  |
+| Peaking | 4793 Hz  |  2.53 | 5.9 dB  |
+| Peaking | 8564 Hz  |  4.76 | -2.9 dB |
+| Peaking | 21660 Hz |  1.58 | 0.4 dB  |
+| Peaking | 493 Hz   |  5.14 | -0.8 dB |
+| Peaking | 2106 Hz  |  5.63 | -1.9 dB |
+| Peaking | 2740 Hz  |  4.64 | 1.6 dB  |
+| Peaking | 3505 Hz  |  6.85 | -2.4 dB |
+| Peaking | 6095 Hz  | 10.54 | 2.8 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB** and set
+gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 39 Hz    | 0.24 | 6.2 dB  |
-| Peaking | 253 Hz   | 2.31 | 2.8 dB  |
-| Peaking | 4531 Hz  | 4.81 | 6.6 dB  |
-| Peaking | 6068 Hz  | 5.47 | 4.2 dB  |
-| Peaking | 8501 Hz  | 4.06 | -2.7 dB |
-| Peaking | 494 Hz   | 5.06 | -0.8 dB |
-| Peaking | 2125 Hz  | 4.87 | -2.2 dB |
-| Peaking | 2792 Hz  | 2.33 | 2.0 dB  |
-| Peaking | 3445 Hz  | 5.47 | -2.4 dB |
-| Peaking | 10611 Hz | 3.56 | 0.2 dB  |
+| Peaking | 31 Hz    | 1.41 | 6.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.8 dB  |
+| Peaking | 125 Hz   | 1.41 | 2.9 dB  |
+| Peaking | 250 Hz   | 1.41 | 3.9 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.4 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 16000 Hz | 1.41 | -0.0 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sennheiser%20HD%20201/Sennheiser%20HD%20201.png)

@@ -1,24 +1,22 @@
 # Sony XBA-N3
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.9dB
-GraphicEQ: 21 -4.2; 23 -4.4; 25 -4.5; 28 -4.7; 31 -4.8; 34 -4.8; 37 -4.9; 41 -4.9; 45 -4.9; 49 -4.9; 54 -4.9; 60 -4.8; 66 -4.8; 72 -4.8; 79 -4.8; 87 -4.7; 96 -4.5; 106 -4.2; 116 -4.5; 128 -4.9; 141 -4.9; 155 -4.7; 170 -4.4; 187 -4.0; 206 -3.7; 227 -3.2; 249 -2.9; 274 -2.5; 302 -2.0; 332 -1.5; 365 -1.1; 402 -0.7; 442 -0.5; 486 -0.2; 535 0.1; 588 0.3; 647 0.5; 712 0.6; 783 0.7; 861 0.6; 947 0.3; 1042 -0.2; 1146 -0.7; 1261 -1.0; 1387 -0.8; 1526 0.4; 1678 1.1; 1846 1.0; 2031 1.3; 2234 2.2; 2457 3.4; 2703 4.6; 2973 5.5; 3270 5.6; 3597 3.9; 3957 2.6; 4353 4.0; 4788 3.0; 5267 3.5; 5793 4.9; 6373 4.7; 7010 2.2; 7711 0.3; 8482 -0.7; 9330 -2.1; 10263 -2.6; 11289 -1.8; 12418 -2.0; 13660 -8.1; 15026 -18.3; 16529 -22.5; 18182 -17.0; 20000 -5.5
+GraphicEQ: 21 -10.3; 23 -10.5; 25 -10.6; 28 -10.8; 31 -10.9; 34 -10.9; 37 -10.9; 41 -11.0; 45 -11.0; 49 -11.0; 54 -10.9; 60 -10.9; 66 -10.9; 72 -10.9; 79 -10.8; 87 -10.8; 96 -10.6; 106 -10.3; 116 -10.6; 128 -11.0; 141 -11.0; 155 -10.8; 170 -10.5; 187 -10.1; 206 -9.7; 227 -9.3; 249 -8.9; 274 -8.6; 302 -8.1; 332 -7.6; 365 -7.1; 402 -6.8; 442 -6.5; 486 -6.2; 535 -6.0; 588 -5.8; 647 -5.6; 712 -5.4; 783 -5.4; 861 -5.5; 947 -5.8; 1042 -6.3; 1146 -6.8; 1261 -7.0; 1387 -6.9; 1526 -5.7; 1678 -4.9; 1846 -5.1; 2031 -4.8; 2234 -3.8; 2457 -2.7; 2703 -1.5; 2973 -0.6; 3270 -0.5; 3597 -2.2; 3957 -3.5; 4353 -2.1; 4788 -3.1; 5267 -2.6; 5793 -1.2; 6373 -1.4; 7010 -3.9; 7711 -5.8; 8482 -6.8; 9330 -8.2; 10263 -8.6; 11289 -7.9; 12418 -8.1; 13660 -14.1; 15026 -24.4; 16529 -28.6; 18182 -23.1; 20000 -11.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony XBA-N3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-58**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony XBA-N3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.0dB**.
 
@@ -26,13 +24,33 @@ When using independent subset of filters, apply preamp of **-6.0dB**.
 |:--------|:---------|:-----|:---------|
 | Peaking | 39 Hz    | 0.33 | -4.8 dB  |
 | Peaking | 166 Hz   | 1.01 | -2.9 dB  |
-| Peaking | 3016 Hz  | 3.1  | 3.9 dB   |
-| Peaking | 9286 Hz  | 0.38 | 7.5 dB   |
-| Peaking | 16448 Hz | 1.05 | -28.6 dB |
-| Peaking | 1287 Hz  | 4.84 | -1.8 dB  |
-| Peaking | 6108 Hz  | 4.2  | 3.4 dB   |
-| Peaking | 9424 Hz  | 1.33 | -3.3 dB  |
-| Peaking | 12436 Hz | 2.53 | 5.7 dB   |
-| Peaking | 14935 Hz | 5.07 | -4.2 dB  |
+| Peaking | 3023 Hz  | 3.07 | 3.9 dB   |
+| Peaking | 9595 Hz  | 0.36 | 8.6 dB   |
+| Peaking | 16447 Hz | 0.78 | -28.8 dB |
+| Peaking | 1298 Hz  | 4.73 | -1.8 dB  |
+| Peaking | 6157 Hz  | 4.07 | 3.4 dB   |
+| Peaking | 9456 Hz  | 1.3  | -3.4 dB  |
+| Peaking | 12358 Hz | 2.27 | 5.6 dB   |
+| Peaking | 14822 Hz | 4.24 | -4.1 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -4.8 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.4 dB  |
+| Peaking | 125 Hz   | 1.41 | -4.0 dB  |
+| Peaking | 250 Hz   | 1.41 | -2.5 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.9 dB   |
+| Peaking | 1000 Hz  | 1.41 | -0.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | 1.2 dB   |
+| Peaking | 4000 Hz  | 1.41 | 5.1 dB   |
+| Peaking | 8000 Hz  | 1.41 | 4.0 dB   |
+| Peaking | 16000 Hz | 1.41 | -25.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sony%20XBA-N3/Sony%20XBA-N3.png)

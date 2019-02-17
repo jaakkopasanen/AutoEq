@@ -1,38 +1,56 @@
 # NarMoo R1M Black Ports
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -2.5dB
-GraphicEQ: 21 -12.8; 23 -12.8; 25 -12.8; 28 -12.7; 31 -12.6; 34 -12.5; 37 -12.5; 41 -12.4; 45 -12.3; 49 -12.3; 54 -12.2; 60 -12.2; 66 -12.2; 72 -12.1; 79 -12.1; 87 -12.1; 96 -12.1; 106 -11.8; 116 -11.5; 128 -11.3; 141 -11.0; 155 -10.6; 170 -10.2; 187 -9.6; 206 -9.1; 227 -8.4; 249 -7.8; 274 -7.1; 302 -6.3; 332 -5.5; 365 -4.7; 402 -4.0; 442 -3.0; 486 -2.3; 535 -1.3; 588 -0.3; 647 0.2; 712 0.4; 783 0.6; 861 0.1; 947 0.2; 1042 -0.0; 1146 -0.2; 1261 -0.4; 1387 -0.7; 1526 -1.1; 1678 -1.3; 1846 -1.2; 2031 -0.9; 2234 -0.7; 2457 -0.3; 2703 -0.6; 2973 -0.9; 3270 -1.0; 3597 -1.4; 3957 -2.6; 4353 -5.5; 4788 -8.0; 5267 -7.5; 5793 -3.1; 6373 0.8; 7010 2.2; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 -2.5; 18182 -1.7; 20000 0.0
+GraphicEQ: 21 -15.5; 23 -15.5; 25 -15.5; 28 -15.4; 31 -15.3; 34 -15.3; 37 -15.2; 41 -15.1; 45 -15.1; 49 -15.0; 54 -14.9; 60 -14.9; 66 -14.9; 72 -14.8; 79 -14.8; 87 -14.8; 96 -14.8; 106 -14.5; 116 -14.2; 128 -14.1; 141 -13.7; 155 -13.3; 170 -12.9; 187 -12.4; 206 -11.8; 227 -11.1; 249 -10.5; 274 -9.8; 302 -9.0; 332 -8.2; 365 -7.4; 402 -6.7; 442 -5.7; 486 -5.0; 535 -4.0; 588 -3.1; 647 -2.5; 712 -2.3; 783 -2.2; 861 -2.6; 947 -2.5; 1042 -2.7; 1146 -2.9; 1261 -3.1; 1387 -3.4; 1526 -3.8; 1678 -4.0; 1846 -3.9; 2031 -3.6; 2234 -3.5; 2457 -3.0; 2703 -3.3; 2973 -3.6; 3270 -3.7; 3597 -4.1; 3957 -5.3; 4353 -8.2; 4788 -10.7; 5267 -10.3; 5793 -5.8; 6373 -1.9; 7010 -0.5; 7711 -2.4; 8482 -2.7; 9330 -2.7; 10263 -2.7; 11289 -2.7; 12418 -2.7; 13660 -2.7; 15026 -2.7; 16529 -5.2; 18182 -4.4; 20000 -2.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `NarMoo R1M Black Ports GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-25**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NarMoo R1M Black Ports ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-1.6dB**.
+When using independent subset of filters, apply preamp of **-1.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 27 Hz    | 0.2  | -12.5 dB |
-| Peaking | 169 Hz   | 0.7  | -5.2 dB  |
-| Peaking | 5054 Hz  | 2.72 | -10.5 dB |
-| Peaking | 6444 Hz  | 2.26 | 4.5 dB   |
-| Peaking | 17194 Hz | 3.52 | -3.2 dB  |
-| Peaking | 48 Hz    | 2.29 | 0.2 dB   |
-| Peaking | 349 Hz   | 1.82 | -1.1 dB  |
+| Peaking | 169 Hz   | 0.7  | -5.3 dB  |
+| Peaking | 5021 Hz  | 2.75 | -10.0 dB |
+| Peaking | 6515 Hz  | 2.6  | 4.3 dB   |
+| Peaking | 17274 Hz | 2.68 | -3.3 dB  |
+| Peaking | 44 Hz    | 2.51 | 0.3 dB   |
+| Peaking | 348 Hz   | 1.8  | -1.1 dB  |
 | Peaking | 690 Hz   | 1.55 | 1.9 dB   |
-| Peaking | 1677 Hz  | 2.9  | -1.1 dB  |
-| Peaking | 3567 Hz  | 6.09 | 0.6 dB   |
+| Peaking | 1676 Hz  | 2.89 | -1.1 dB  |
+| Peaking | 3587 Hz  | 6.11 | 0.6 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -13.1 dB |
+| Peaking | 62 Hz    | 1.41 | -8.5 dB  |
+| Peaking | 125 Hz   | 1.41 | -9.2 dB  |
+| Peaking | 250 Hz   | 1.41 | -6.4 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.6 dB   |
+| Peaking | 2000 Hz  | 1.41 | 0.3 dB   |
+| Peaking | 4000 Hz  | 1.41 | -4.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.0 dB   |
+| Peaking | 16000 Hz | 1.41 | -1.5 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NarMoo%20R1M%20Black%20Ports/NarMoo%20R1M%20Black%20Ports.png)

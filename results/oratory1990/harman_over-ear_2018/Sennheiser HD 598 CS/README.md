@@ -1,38 +1,56 @@
 # Sennheiser HD 598 CS
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -1.1; 23 -1.4; 25 -1.6; 28 -1.8; 31 -2.0; 34 -2.0; 37 -2.1; 41 -2.1; 45 -2.1; 49 -2.0; 54 -1.9; 60 -1.7; 66 -1.6; 72 -1.6; 79 -1.3; 87 -1.2; 96 -1.2; 106 -1.0; 116 -0.9; 128 -1.2; 141 -1.5; 155 -1.9; 170 -1.8; 187 -0.8; 206 0.3; 227 1.5; 249 2.9; 274 4.0; 302 4.5; 332 4.3; 365 3.8; 402 3.1; 442 1.9; 486 1.4; 535 1.4; 588 1.3; 647 1.2; 712 0.9; 783 0.5; 861 0.1; 947 -0.0; 1042 0.1; 1146 0.2; 1261 0.5; 1387 0.8; 1526 1.0; 1678 1.1; 1846 1.1; 2031 1.3; 2234 1.8; 2457 2.9; 2703 4.4; 2973 4.6; 3270 2.5; 3597 2.2; 3957 4.9; 4353 6.0; 4788 6.0; 5267 6.0; 5793 5.8; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 -1.4; 20000 -4.8
+GraphicEQ: 21 -7.6; 23 -7.9; 25 -8.1; 28 -8.3; 31 -8.5; 34 -8.5; 37 -8.6; 41 -8.6; 45 -8.6; 49 -8.5; 54 -8.4; 60 -8.2; 66 -8.1; 72 -8.1; 79 -7.8; 87 -7.7; 96 -7.7; 106 -7.5; 116 -7.4; 128 -7.7; 141 -8.0; 155 -8.4; 170 -8.3; 187 -7.3; 206 -6.2; 227 -5.0; 249 -3.6; 274 -2.5; 302 -2.0; 332 -2.2; 365 -2.7; 402 -3.4; 442 -4.6; 486 -5.1; 535 -5.1; 588 -5.2; 647 -5.3; 712 -5.6; 783 -6.0; 861 -6.4; 947 -6.5; 1042 -6.4; 1146 -6.3; 1261 -6.0; 1387 -5.7; 1526 -5.5; 1678 -5.4; 1846 -5.4; 2031 -5.2; 2234 -4.7; 2457 -3.6; 2703 -2.1; 2973 -1.9; 3270 -4.0; 3597 -4.3; 3957 -1.6; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.7; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -7.9; 20000 -11.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 598 CS GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 598 CS ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 42 Hz    | 0.59 | -2.1 dB |
+| Peaking | 42 Hz    | 0.58 | -2.1 dB |
 | Peaking | 169 Hz   | 2.01 | -2.7 dB |
-| Peaking | 305 Hz   | 1.38 | 5.0 dB  |
-| Peaking | 2752 Hz  | 3.47 | 3.6 dB  |
-| Peaking | 5081 Hz  | 1.81 | 6.7 dB  |
-| Peaking | 1738 Hz  | 2.18 | 1.0 dB  |
-| Peaking | 4140 Hz  | 5.97 | 1.8 dB  |
-| Peaking | 6392 Hz  | 4.86 | 3.5 dB  |
-| Peaking | 7331 Hz  | 2.46 | -1.4 dB |
-| Peaking | 15495 Hz | 0.01 | -0.7 dB |
+| Peaking | 305 Hz   | 1.39 | 5.0 dB  |
+| Peaking | 2752 Hz  | 3.51 | 3.6 dB  |
+| Peaking | 5084 Hz  | 1.77 | 6.7 dB  |
+| Peaking | 1609 Hz  | 4.09 | 0.6 dB  |
+| Peaking | 6211 Hz  | 7.17 | 1.7 dB  |
+| Peaking | 6658 Hz  | 5.83 | 2.3 dB  |
+| Peaking | 7415 Hz  | 1.99 | -2.1 dB |
+| Peaking | 19723 Hz | 1.48 | -4.7 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -2.1 dB |
+| Peaking | 62 Hz    | 1.41 | -0.9 dB |
+| Peaking | 125 Hz   | 1.41 | -2.4 dB |
+| Peaking | 250 Hz   | 1.41 | 3.1 dB  |
+| Peaking | 500 Hz   | 1.41 | 1.9 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20598%20CS/Sennheiser%20HD%20598%20CS.png)

@@ -1,37 +1,55 @@
 # HiSoundAudio Wooduo
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -0.9dB
-GraphicEQ: 21 -14.3; 23 -14.3; 25 -14.3; 28 -14.2; 31 -14.2; 34 -14.1; 37 -14.1; 41 -14.0; 45 -14.0; 49 -13.9; 54 -13.9; 60 -13.9; 66 -13.8; 72 -13.9; 79 -13.9; 87 -13.9; 96 -13.9; 106 -13.7; 116 -13.4; 128 -13.2; 141 -12.9; 155 -12.6; 170 -12.2; 187 -11.6; 206 -11.1; 227 -10.4; 249 -9.9; 274 -9.1; 302 -8.4; 332 -7.7; 365 -6.9; 402 -6.1; 442 -5.2; 486 -4.5; 535 -3.8; 588 -2.8; 647 -2.1; 712 -1.4; 783 -1.6; 861 0.2; 947 0.2; 1042 -0.0; 1146 -0.0; 1261 -0.1; 1387 -0.6; 1526 -1.0; 1678 -1.2; 1846 -1.2; 2031 -1.1; 2234 -1.1; 2457 -0.9; 2703 -0.7; 2973 -0.5; 3270 -0.4; 3597 -0.7; 3957 -1.6; 4353 -4.1; 4788 -6.0; 5267 -8.3; 5793 -9.7; 6373 -4.4; 7010 -0.0; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 -1.0; 18182 0.0
+GraphicEQ: 21 -15.1; 23 -15.1; 25 -15.1; 28 -15.0; 31 -15.0; 34 -14.9; 37 -14.9; 41 -14.8; 45 -14.8; 49 -14.7; 54 -14.7; 60 -14.7; 66 -14.6; 72 -14.6; 79 -14.7; 87 -14.7; 96 -14.7; 106 -14.5; 116 -14.2; 128 -14.0; 141 -13.7; 155 -13.3; 170 -13.0; 187 -12.4; 206 -11.9; 227 -11.2; 249 -10.7; 274 -9.9; 302 -9.2; 332 -8.5; 365 -7.7; 402 -6.9; 442 -6.0; 486 -5.3; 535 -4.6; 588 -3.6; 647 -2.9; 712 -2.2; 783 -2.4; 861 -0.6; 947 -0.5; 1042 -0.8; 1146 -0.8; 1261 -0.9; 1387 -1.3; 1526 -1.8; 1678 -2.0; 1846 -2.0; 2031 -1.9; 2234 -1.9; 2457 -1.7; 2703 -1.5; 2973 -1.3; 3270 -1.2; 3597 -1.5; 3957 -2.4; 4353 -4.9; 4788 -6.8; 5267 -9.1; 5793 -10.5; 6373 -5.2; 7010 -0.8; 7711 -0.5; 8482 -0.8; 9330 -0.8; 10263 -0.8; 11289 -0.8; 12418 -0.8; 13660 -0.8; 15026 -0.8; 16529 -1.8; 18182 -0.8; 20000 -0.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `HiSoundAudio Wooduo GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-8**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiSoundAudio Wooduo ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 11 Hz   | 0.35 | -12.7 dB |
-| Peaking | 107 Hz  | 0.28 | -12.0 dB |
-| Peaking | 210 Hz  | 1.13 | -0.7 dB  |
-| Peaking | 855 Hz  | 1.53 | 2.3 dB   |
-| Peaking | 5467 Hz | 3.62 | -10.3 dB |
-| Peaking | 1964 Hz | 2.4  | -0.8 dB  |
-| Peaking | 3616 Hz | 3.42 | 0.8 dB   |
-| Peaking | 4427 Hz | 6.16 | -1.9 dB  |
-| Peaking | 7317 Hz | 6.37 | 2.7 dB   |
+| Peaking | 11 Hz   | 0.35 | -12.5 dB |
+| Peaking | 101 Hz  | 0.27 | -11.9 dB |
+| Peaking | 194 Hz  | 0.86 | -1.0 dB  |
+| Peaking | 853 Hz  | 1.55 | 2.2 dB   |
+| Peaking | 5469 Hz | 3.55 | -10.3 dB |
+| Peaking | 1959 Hz | 2.34 | -0.8 dB  |
+| Peaking | 3603 Hz | 3.48 | 0.8 dB   |
+| Peaking | 4455 Hz | 6.32 | -1.8 dB  |
+| Peaking | 7354 Hz | 6.28 | 2.7 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -14.7 dB |
+| Peaking | 62 Hz    | 1.41 | -9.7 dB  |
+| Peaking | 125 Hz   | 1.41 | -10.5 dB |
+| Peaking | 250 Hz   | 1.41 | -7.8 dB  |
+| Peaking | 500 Hz   | 1.41 | -2.5 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.1 dB   |
+| Peaking | 2000 Hz  | 1.41 | 0.1 dB   |
+| Peaking | 4000 Hz  | 1.41 | -4.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiSoundAudio%20Wooduo/HiSoundAudio%20Wooduo.png)

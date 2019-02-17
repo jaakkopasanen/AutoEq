@@ -1,38 +1,56 @@
 # Beyerdynamic T1 sample 1
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 5.6; 25 5.2; 28 4.6; 31 4.2; 34 3.8; 37 3.4; 41 3.1; 45 2.7; 49 2.4; 54 2.5; 60 2.9; 66 1.9; 72 1.1; 79 0.5; 87 0.0; 96 -0.5; 106 -0.9; 116 -1.1; 128 -1.4; 141 -1.7; 155 -1.9; 170 -2.0; 187 -2.1; 206 -2.2; 227 -2.2; 249 -2.2; 274 -2.1; 302 -2.1; 332 -1.9; 365 -1.8; 402 -1.7; 442 -1.4; 486 -1.2; 535 -1.1; 588 -0.8; 647 -0.6; 712 -0.7; 783 -0.2; 861 -0.2; 947 0.0; 1042 0.1; 1146 0.4; 1261 0.6; 1387 0.5; 1526 -0.6; 1678 -1.6; 1846 -1.8; 2031 0.0; 2234 1.7; 2457 -0.4; 2703 0.2; 2973 0.5; 3270 1.4; 3597 1.0; 3957 0.9; 4353 0.0; 4788 3.6; 5267 5.5; 5793 -3.2; 6373 -5.3; 7010 -2.2; 7711 -7.7; 8482 -12.4; 9330 -10.7; 10263 -3.4; 11289 0.0; 12418 0.0; 13660 -0.2; 15026 -1.8; 16529 -2.0; 18182 -0.1; 20000 0.0
+GraphicEQ: 21 -0.5; 23 -0.8; 25 -1.2; 28 -1.8; 31 -2.2; 34 -2.6; 37 -3.0; 41 -3.3; 45 -3.7; 49 -4.0; 54 -3.9; 60 -3.5; 66 -4.5; 72 -5.3; 79 -5.9; 87 -6.4; 96 -6.9; 106 -7.2; 116 -7.5; 128 -7.8; 141 -8.1; 155 -8.3; 170 -8.4; 187 -8.5; 206 -8.6; 227 -8.6; 249 -8.6; 274 -8.5; 302 -8.5; 332 -8.3; 365 -8.2; 402 -8.0; 442 -7.8; 486 -7.6; 535 -7.5; 588 -7.2; 647 -7.0; 712 -7.1; 783 -6.6; 861 -6.6; 947 -6.4; 1042 -6.3; 1146 -6.0; 1261 -5.8; 1387 -5.9; 1526 -7.0; 1678 -8.0; 1846 -8.2; 2031 -6.4; 2234 -4.7; 2457 -6.8; 2703 -6.1; 2973 -5.9; 3270 -5.0; 3597 -5.4; 3957 -5.5; 4353 -6.4; 4788 -2.7; 5267 -0.9; 5793 -9.6; 6373 -11.7; 7010 -8.6; 7711 -14.1; 8482 -18.7; 9330 -17.1; 10263 -9.8; 11289 -6.4; 12418 -6.4; 13660 -6.6; 15026 -8.2; 16529 -8.4; 18182 -6.5; 20000 -6.4
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Beyerdynamic T1 sample 1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T1 sample 1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
-| Peaking | 18 Hz    |  0.61 | 6.0 dB   |
-| Peaking | 60 Hz    |  3.3  | 1.7 dB   |
-| Peaking | 205 Hz   |  0.56 | -2.5 dB  |
-| Peaking | 5078 Hz  |  8.68 | 7.8 dB   |
-| Peaking | 8619 Hz  |  3.35 | -13.6 dB |
-| Peaking | 1758 Hz  |  5.4  | -3.1 dB  |
-| Peaking | 2441 Hz  |  0.58 | 1.1 dB   |
-| Peaking | 6137 Hz  | 11.27 | -5.8 dB  |
-| Peaking | 11365 Hz |  5.02 | 2.7 dB   |
-| Peaking | 16022 Hz |  3.48 | -2.3 dB  |
+| Peaking | 18 Hz    |  0.59 | 6.0 dB   |
+| Peaking | 59 Hz    |  3.38 | 1.7 dB   |
+| Peaking | 204 Hz   |  0.57 | -2.5 dB  |
+| Peaking | 5092 Hz  |  8.76 | 7.9 dB   |
+| Peaking | 8630 Hz  |  3.2  | -13.6 dB |
+| Peaking | 1765 Hz  |  5.48 | -3.1 dB  |
+| Peaking | 2535 Hz  |  0.57 | 1.1 dB   |
+| Peaking | 6100 Hz  | 10.93 | -5.8 dB  |
+| Peaking | 11402 Hz |  4.7  | 2.7 dB   |
+| Peaking | 16195 Hz |  2.71 | -2.3 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 5.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.4 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.6 dB |
+| Peaking | 250 Hz   | 1.41 | -2.1 dB |
+| Peaking | 500 Hz   | 1.41 | -1.0 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -9.0 dB |
+| Peaking | 16000 Hz | 1.41 | -0.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T1%20sample%201/Beyerdynamic%20T1%20sample%201.png)

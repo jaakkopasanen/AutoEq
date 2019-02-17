@@ -1,38 +1,56 @@
 # Grado SR225e
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.7; 37 5.2; 41 4.3; 45 3.6; 49 2.9; 54 2.3; 60 1.7; 66 1.1; 72 0.7; 79 0.4; 87 0.0; 96 -0.2; 106 -0.4; 116 -0.7; 128 -0.8; 141 -0.9; 155 -0.9; 170 -0.9; 187 -0.8; 206 -0.6; 227 -0.3; 249 -0.3; 274 -1.0; 302 -0.9; 332 -0.6; 365 -0.6; 402 -0.6; 442 -0.7; 486 -0.7; 535 -0.7; 588 -0.6; 647 -0.4; 712 -0.3; 783 -0.1; 861 -0.0; 947 0.0; 1042 -0.0; 1146 -0.2; 1261 -0.4; 1387 -1.0; 1526 -1.6; 1678 -2.6; 1846 -6.1; 2031 -9.1; 2234 -8.7; 2457 -7.0; 2703 -5.2; 2973 -4.1; 3270 -3.6; 3597 -1.8; 3957 -1.1; 4353 -6.4; 4788 -5.3; 5267 -4.6; 5793 -5.3; 6373 -2.9; 7010 -1.5; 7711 -3.7; 8482 -7.1; 9330 -9.8; 10263 -10.9; 11289 -10.4; 12418 -8.6; 13660 -4.9; 15026 -1.0; 16529 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.8; 37 -1.3; 41 -2.2; 45 -2.9; 49 -3.6; 54 -4.2; 60 -4.8; 66 -5.4; 72 -5.8; 79 -6.1; 87 -6.5; 96 -6.7; 106 -6.9; 116 -7.2; 128 -7.3; 141 -7.4; 155 -7.4; 170 -7.4; 187 -7.3; 206 -7.1; 227 -6.8; 249 -6.8; 274 -7.5; 302 -7.4; 332 -7.1; 365 -7.1; 402 -7.1; 442 -7.2; 486 -7.2; 535 -7.2; 588 -7.1; 647 -6.9; 712 -6.8; 783 -6.6; 861 -6.5; 947 -6.5; 1042 -6.5; 1146 -6.7; 1261 -6.9; 1387 -7.5; 1526 -8.1; 1678 -9.1; 1846 -12.6; 2031 -15.6; 2234 -15.2; 2457 -13.5; 2703 -11.7; 2973 -10.6; 3270 -10.1; 3597 -8.3; 3957 -7.6; 4353 -12.9; 4788 -11.8; 5267 -11.1; 5793 -11.8; 6373 -9.4; 7010 -8.0; 7711 -10.2; 8482 -13.6; 9330 -16.3; 10263 -17.4; 11289 -16.9; 12418 -15.1; 13660 -11.4; 15026 -7.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Grado SR225e GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR225e ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 27 Hz    | 0.6  | 7.1 dB  |
-| Peaking | 83 Hz    | 0.38 | -1.9 dB |
-| Peaking | 2217 Hz  | 2.19 | -8.9 dB |
-| Peaking | 10017 Hz | 1.31 | -9.2 dB |
-| Peaking | 11865 Hz | 3.1  | -3.6 dB |
-| Peaking | 1774 Hz  | 1.08 | 1.6 dB  |
-| Peaking | 1959 Hz  | 6.52 | -3.1 dB |
-| Peaking | 4851 Hz  | 2.75 | -4.0 dB |
-| Peaking | 7149 Hz  | 5.93 | 3.7 dB  |
-| Peaking | 16114 Hz | 3.06 | 2.0 dB  |
+| Peaking | 28 Hz    | 0.6  | 7.1 dB  |
+| Peaking | 84 Hz    | 0.39 | -1.9 dB |
+| Peaking | 2213 Hz  | 2.24 | -9.0 dB |
+| Peaking | 10096 Hz | 1.17 | -9.1 dB |
+| Peaking | 11852 Hz | 2.75 | -3.4 dB |
+| Peaking | 1726 Hz  | 1.15 | 1.5 dB  |
+| Peaking | 1954 Hz  | 6.94 | -3.0 dB |
+| Peaking | 4740 Hz  | 3.35 | -4.2 dB |
+| Peaking | 7127 Hz  | 6.27 | 3.7 dB  |
+| Peaking | 15834 Hz | 2.83 | 2.0 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 7.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.3 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.1 dB |
+| Peaking | 250 Hz   | 1.41 | -0.3 dB |
+| Peaking | 500 Hz   | 1.41 | -1.0 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 2000 Hz  | 1.41 | -7.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 8000 Hz  | 1.41 | -7.9 dB |
+| Peaking | 16000 Hz | 1.41 | -2.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Grado%20SR225e/Grado%20SR225e.png)

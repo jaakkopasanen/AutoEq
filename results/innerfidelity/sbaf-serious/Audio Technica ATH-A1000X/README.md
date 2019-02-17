@@ -1,38 +1,56 @@
 # Audio Technica ATH-A1000X
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 5.5; 25 4.9; 28 4.0; 31 3.1; 34 2.3; 37 1.7; 41 1.0; 45 0.4; 49 -0.1; 54 -0.5; 60 -0.8; 66 -0.9; 72 -0.6; 79 -0.2; 87 -0.2; 96 0.0; 106 -0.5; 116 -1.6; 128 -2.2; 141 -2.1; 155 -1.2; 170 -0.3; 187 -1.0; 206 -0.5; 227 0.3; 249 0.9; 274 1.2; 302 1.1; 332 1.2; 365 1.1; 402 0.9; 442 0.8; 486 0.6; 535 0.4; 588 0.6; 647 0.6; 712 0.3; 783 0.4; 861 0.3; 947 0.0; 1042 -0.0; 1146 -0.3; 1261 0.1; 1387 -0.5; 1526 -0.4; 1678 -0.1; 1846 -1.6; 2031 -4.2; 2234 -1.8; 2457 1.0; 2703 3.6; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 4.2; 4788 5.3; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 -0.3; 18182 -2.9; 20000 0.0
+GraphicEQ: 21 -0.6; 23 -1.0; 25 -1.6; 28 -2.5; 31 -3.4; 34 -4.2; 37 -4.8; 41 -5.5; 45 -6.1; 49 -6.6; 54 -7.0; 60 -7.3; 66 -7.4; 72 -7.1; 79 -6.7; 87 -6.7; 96 -6.5; 106 -7.0; 116 -8.1; 128 -8.7; 141 -8.6; 155 -7.7; 170 -6.8; 187 -7.5; 206 -7.0; 227 -6.2; 249 -5.6; 274 -5.3; 302 -5.4; 332 -5.3; 365 -5.4; 402 -5.6; 442 -5.7; 486 -5.9; 535 -6.1; 588 -5.9; 647 -5.9; 712 -6.2; 783 -6.1; 861 -6.2; 947 -6.5; 1042 -6.5; 1146 -6.8; 1261 -6.4; 1387 -7.0; 1526 -6.9; 1678 -6.6; 1846 -8.1; 2031 -10.7; 2234 -8.3; 2457 -5.5; 2703 -2.9; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -2.3; 4788 -1.2; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.8; 18182 -9.4; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio Technica ATH-A1000X GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-A1000X ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 22 Hz    | 1.86 | 6.2 dB  |
-| Peaking | 132 Hz   | 3.45 | -2.5 dB |
-| Peaking | 2073 Hz  | 3.88 | -6.2 dB |
-| Peaking | 3296 Hz  | 1.56 | 6.6 dB  |
-| Peaking | 5733 Hz  | 3.14 | 5.3 dB  |
-| Peaking | 32 Hz    | 2.1  | 0.8 dB  |
-| Peaking | 58 Hz    | 2.44 | -1.2 dB |
-| Peaking | 336 Hz   | 1.67 | 1.3 dB  |
-| Peaking | 8246 Hz  | 4.57 | -1.2 dB |
-| Peaking | 18495 Hz | 2.83 | -3.2 dB |
+| Peaking | 23 Hz    | 1.83 | 5.9 dB  |
+| Peaking | 131 Hz   | 3.46 | -2.5 dB |
+| Peaking | 2079 Hz  | 3.87 | -6.3 dB |
+| Peaking | 3296 Hz  | 1.54 | 6.6 dB  |
+| Peaking | 5737 Hz  | 3.06 | 5.3 dB  |
+| Peaking | 60 Hz    | 3.01 | -1.2 dB |
+| Peaking | 282 Hz   | 4.07 | 1.0 dB  |
+| Peaking | 398 Hz   | 1.86 | 0.9 dB  |
+| Peaking | 8233 Hz  | 4.59 | -1.2 dB |
+| Peaking | 18389 Hz | 1.98 | -3.3 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 4.0 dB  |
+| Peaking | 62 Hz    | 1.41 | -1.0 dB |
+| Peaking | 125 Hz   | 1.41 | -1.8 dB |
+| Peaking | 250 Hz   | 1.41 | 0.9 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.7 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 8.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -1.0 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-A1000X/Audio%20Technica%20ATH-A1000X.png)

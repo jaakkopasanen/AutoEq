@@ -1,38 +1,56 @@
 # Pioneer SE-A1000
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 5.9; 66 4.5; 72 2.9; 79 1.5; 87 0.3; 96 -0.6; 106 -1.1; 116 -1.4; 128 -1.8; 141 -1.9; 155 -1.9; 170 -1.7; 187 -1.7; 206 -1.5; 227 -1.2; 249 -1.0; 274 -0.7; 302 -0.7; 332 -0.6; 365 -0.1; 402 0.0; 442 0.3; 486 0.8; 535 1.2; 588 1.1; 647 0.9; 712 0.6; 783 0.7; 861 0.2; 947 0.1; 1042 -0.2; 1146 -0.3; 1261 -0.1; 1387 0.1; 1526 0.3; 1678 0.8; 1846 1.7; 2031 2.7; 2234 2.9; 2457 3.0; 2703 2.0; 2973 1.3; 3270 1.6; 3597 2.3; 3957 -3.5; 4353 -8.2; 4788 -6.9; 5267 -3.7; 5793 -1.8; 6373 0.1; 7010 1.5; 7711 -1.8; 8482 -4.3; 9330 -5.5; 10263 -4.8; 11289 -1.1; 12418 0.0; 13660 -0.3; 15026 -0.5; 16529 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.6; 66 -2.0; 72 -3.6; 79 -5.0; 87 -6.2; 96 -7.1; 106 -7.6; 116 -7.9; 128 -8.3; 141 -8.4; 155 -8.4; 170 -8.2; 187 -8.2; 206 -8.0; 227 -7.7; 249 -7.5; 274 -7.2; 302 -7.2; 332 -7.1; 365 -6.6; 402 -6.5; 442 -6.2; 486 -5.7; 535 -5.3; 588 -5.4; 647 -5.6; 712 -5.9; 783 -5.8; 861 -6.3; 947 -6.4; 1042 -6.7; 1146 -6.8; 1261 -6.6; 1387 -6.4; 1526 -6.2; 1678 -5.7; 1846 -4.8; 2031 -3.8; 2234 -3.6; 2457 -3.5; 2703 -4.5; 2973 -5.2; 3270 -4.9; 3597 -4.2; 3957 -10.0; 4353 -14.7; 4788 -13.4; 5267 -10.2; 5793 -8.3; 6373 -6.4; 7010 -5.0; 7711 -8.3; 8482 -10.8; 9330 -12.0; 10263 -11.3; 11289 -7.6; 12418 -6.5; 13660 -6.8; 15026 -7.0; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Pioneer SE-A1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Pioneer SE-A1000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 35 Hz   | 1.03 | 7.3 dB   |
-| Peaking | 3667 Hz | 1.07 | 6.9 dB   |
-| Peaking | 4431 Hz | 2.6  | -14.2 dB |
-| Peaking | 6781 Hz | 7.64 | 3.9 dB   |
-| Peaking | 9341 Hz | 2.78 | -6.2 dB  |
-| Peaking | 60 Hz   | 2.55 | 4.1 dB   |
-| Peaking | 127 Hz  | 0.64 | -2.6 dB  |
-| Peaking | 577 Hz  | 1.59 | 1.6 dB   |
-| Peaking | 1573 Hz | 0.74 | -1.0 dB  |
-| Peaking | 2097 Hz | 3.27 | 2.2 dB   |
+| Peaking | 3646 Hz | 1.07 | 6.9 dB   |
+| Peaking | 4447 Hz | 2.59 | -14.1 dB |
+| Peaking | 6810 Hz | 7.4  | 3.9 dB   |
+| Peaking | 9327 Hz | 2.61 | -6.2 dB  |
+| Peaking | 61 Hz   | 2.51 | 4.2 dB   |
+| Peaking | 125 Hz  | 0.61 | -2.6 dB  |
+| Peaking | 572 Hz  | 1.59 | 1.6 dB   |
+| Peaking | 1641 Hz | 0.78 | -1.1 dB  |
+| Peaking | 2066 Hz | 3.27 | 2.2 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.8 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -3.1 dB |
+| Peaking | 250 Hz   | 1.41 | -1.1 dB |
+| Peaking | 500 Hz   | 1.41 | 1.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | -3.1 dB |
+| Peaking | 8000 Hz  | 1.41 | -2.7 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Pioneer%20SE-A1000/Pioneer%20SE-A1000.png)

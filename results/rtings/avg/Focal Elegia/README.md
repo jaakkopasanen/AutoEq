@@ -5,20 +5,18 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 1.6; 25 1.5; 28 1.5; 31 1.5; 34 1.7; 37 2.0; 41 2.2; 45 2.2; 49 2.1; 54 2.0; 60 1.9; 66 1.8; 72 1.6; 79 1.4; 87 1.2; 96 1.2; 106 1.1; 116 1.2; 128 1.5; 141 1.7; 155 1.7; 170 1.7; 187 1.4; 206 1.0; 227 0.4; 249 -0.1; 274 -0.6; 302 -1.0; 332 -1.2; 365 -1.2; 402 -1.2; 442 -1.4; 486 -1.4; 535 -1.1; 588 -0.8; 647 -0.5; 712 -0.3; 783 -0.1; 861 -0.1; 947 -0.1; 1042 0.2; 1146 0.6; 1261 0.2; 1387 -0.5; 1526 -1.0; 1678 -1.6; 1846 -1.5; 2031 1.1; 2234 2.5; 2457 1.9; 2703 2.0; 2973 2.2; 3270 5.9; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 5.9; 5793 2.3; 6373 2.8; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 -1.3; 18182 -6.3; 20000 -5.3
+GraphicEQ: 21 -4.9; 23 -4.9; 25 -5.0; 28 -5.0; 31 -5.0; 34 -4.8; 37 -4.5; 41 -4.3; 45 -4.3; 49 -4.4; 54 -4.5; 60 -4.6; 66 -4.7; 72 -4.9; 79 -5.1; 87 -5.3; 96 -5.3; 106 -5.4; 116 -5.3; 128 -5.0; 141 -4.8; 155 -4.8; 170 -4.8; 187 -5.1; 206 -5.5; 227 -6.1; 249 -6.6; 274 -7.1; 302 -7.5; 332 -7.7; 365 -7.7; 402 -7.7; 442 -7.9; 486 -7.9; 535 -7.6; 588 -7.3; 647 -7.0; 712 -6.8; 783 -6.6; 861 -6.6; 947 -6.6; 1042 -6.3; 1146 -5.9; 1261 -6.3; 1387 -7.0; 1526 -7.5; 1678 -8.1; 1846 -8.0; 2031 -5.4; 2234 -4.0; 2457 -4.6; 2703 -4.5; 2973 -4.3; 3270 -0.6; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.6; 5793 -4.2; 6373 -3.7; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -7.8; 18182 -12.8; 20000 -11.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Focal Elegia GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Elegia ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.5dB**.
 
@@ -30,10 +28,27 @@ When using independent subset of filters, apply preamp of **-6.5dB**.
 | Peaking | 4825 Hz  | 2.06 | 5.5 dB  |
 | Peaking | 19008 Hz | 1.27 | -7.6 dB |
 | Peaking | 419 Hz   | 1.62 | -1.6 dB |
-| Peaking | 1796 Hz  | 3.68 | -3.0 dB |
-| Peaking | 2158 Hz  | 4.51 | 2.7 dB  |
-| Peaking | 16107 Hz | 2.19 | 2.0 dB  |
-| Peaking | 18424 Hz | 2.48 | -1.8 dB |
+| Peaking | 1780 Hz  | 3.89 | -2.7 dB |
+| Peaking | 2179 Hz  | 5.21 | 2.6 dB  |
+| Peaking | 15903 Hz | 2.2  | 1.7 dB  |
+| Peaking | 17622 Hz | 3.44 | -2.0 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 1.9 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.2 dB  |
+| Peaking | 125 Hz   | 1.41 | 1.5 dB  |
+| Peaking | 250 Hz   | 1.41 | -0.1 dB |
+| Peaking | 500 Hz   | 1.41 | -1.6 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.1 dB |
+| Peaking | 16000 Hz | 1.41 | -2.1 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

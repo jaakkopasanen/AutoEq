@@ -1,38 +1,56 @@
 # Sennheiser PMX100
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 1.6; 25 1.0; 28 0.2; 31 -0.4; 34 -0.9; 37 -1.3; 41 -1.8; 45 -2.1; 49 -2.5; 54 -2.9; 60 -3.3; 66 -3.6; 72 -3.9; 79 -4.2; 87 -4.6; 96 -4.8; 106 -4.9; 116 -4.9; 128 -5.1; 141 -5.2; 155 -5.1; 170 -4.9; 187 -4.6; 206 -4.5; 227 -4.2; 249 -3.6; 274 -3.1; 302 -2.7; 332 -2.2; 365 -1.9; 402 -1.6; 442 -1.3; 486 -1.0; 535 -0.6; 588 -0.4; 647 -0.2; 712 0.0; 783 0.2; 861 0.2; 947 0.1; 1042 -0.1; 1146 -0.2; 1261 -0.6; 1387 -1.3; 1526 -2.3; 1678 -3.0; 1846 -3.4; 2031 -3.2; 2234 -1.5; 2457 0.2; 2703 1.9; 2973 4.9; 3270 6.0; 3597 6.0; 3957 0.2; 4353 -7.2; 4788 -2.7; 5267 3.3; 5793 5.9; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -4.2; 23 -4.9; 25 -5.5; 28 -6.3; 31 -6.9; 34 -7.4; 37 -7.8; 41 -8.3; 45 -8.6; 49 -9.0; 54 -9.4; 60 -9.8; 66 -10.1; 72 -10.4; 79 -10.7; 87 -11.1; 96 -11.3; 106 -11.4; 116 -11.4; 128 -11.6; 141 -11.7; 155 -11.6; 170 -11.4; 187 -11.1; 206 -11.0; 227 -10.7; 249 -10.1; 274 -9.6; 302 -9.2; 332 -8.7; 365 -8.4; 402 -8.1; 442 -7.8; 486 -7.5; 535 -7.1; 588 -6.9; 647 -6.7; 712 -6.5; 783 -6.3; 861 -6.3; 947 -6.4; 1042 -6.6; 1146 -6.7; 1261 -7.1; 1387 -7.8; 1526 -8.8; 1678 -9.5; 1846 -9.9; 2031 -9.7; 2234 -8.0; 2457 -6.3; 2703 -4.6; 2973 -1.6; 3270 -0.5; 3597 -0.5; 3957 -6.3; 4353 -13.7; 4788 -9.2; 5267 -3.2; 5793 -0.6; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser PMX100 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PMX100 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 129 Hz  | 0.56 | -5.4 dB  |
-| Peaking | 1916 Hz | 2.35 | -4.7 dB  |
-| Peaking | 3490 Hz | 2.18 | 9.5 dB   |
-| Peaking | 4366 Hz | 4.42 | -13.3 dB |
-| Peaking | 5840 Hz | 3.5  | 7.2 dB   |
-| Peaking | 16 Hz   | 1.33 | 3.6 dB   |
-| Peaking | 45 Hz   | 1.62 | -0.7 dB  |
-| Peaking | 229 Hz  | 4.06 | -0.5 dB  |
-| Peaking | 775 Hz  | 1.98 | 0.8 dB   |
-| Peaking | 8283 Hz | 4.75 | -1.0 dB  |
+| Peaking | 128 Hz  | 0.56 | -5.4 dB  |
+| Peaking | 1922 Hz | 2.33 | -4.7 dB  |
+| Peaking | 3505 Hz | 2.13 | 9.6 dB   |
+| Peaking | 4355 Hz | 4.28 | -13.5 dB |
+| Peaking | 5821 Hz | 3.4  | 7.2 dB   |
+| Peaking | 18 Hz   | 1.4  | 3.3 dB   |
+| Peaking | 49 Hz   | 1.68 | -0.7 dB  |
+| Peaking | 231 Hz  | 3.97 | -0.5 dB  |
+| Peaking | 776 Hz  | 1.98 | 0.8 dB   |
+| Peaking | 8254 Hz | 4.59 | -1.0 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 0.7 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.1 dB |
+| Peaking | 125 Hz   | 1.41 | -4.6 dB |
+| Peaking | 250 Hz   | 1.41 | -3.1 dB |
+| Peaking | 500 Hz   | 1.41 | 0.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PMX100/Sennheiser%20PMX100.png)

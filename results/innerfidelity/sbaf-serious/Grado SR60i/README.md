@@ -1,36 +1,56 @@
 # Grado SR60i
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.7; 34 5.0; 37 4.2; 41 3.2; 45 2.4; 49 1.6; 54 0.8; 60 0.1; 66 -0.4; 72 -0.9; 79 -1.2; 87 -1.7; 96 -2.1; 106 -2.1; 116 -2.2; 128 -2.3; 141 -2.3; 155 -2.3; 170 -2.1; 187 -1.9; 206 -1.8; 227 -1.3; 249 -1.1; 274 -1.0; 302 -0.8; 332 -0.8; 365 -0.6; 402 -0.4; 442 -0.2; 486 -0.2; 535 -0.1; 588 0.3; 647 0.4; 712 0.2; 783 0.4; 861 0.2; 947 0.1; 1042 -0.0; 1146 -0.2; 1261 -0.7; 1387 -1.5; 1526 -2.6; 1678 -3.4; 1846 -6.2; 2031 -9.8; 2234 -8.1; 2457 -5.1; 2703 -2.9; 2973 -1.2; 3270 -1.5; 3597 -1.1; 3957 1.3; 4353 1.5; 4788 2.1; 5267 0.5; 5793 1.4; 6373 2.4; 7010 -1.3; 7711 -1.5; 8482 -1.7; 9330 -1.1; 10263 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.8; 34 -1.5; 37 -2.3; 41 -3.3; 45 -4.1; 49 -4.9; 54 -5.7; 60 -6.4; 66 -6.9; 72 -7.4; 79 -7.7; 87 -8.2; 96 -8.6; 106 -8.6; 116 -8.7; 128 -8.8; 141 -8.8; 155 -8.8; 170 -8.6; 187 -8.4; 206 -8.3; 227 -7.8; 249 -7.6; 274 -7.5; 302 -7.3; 332 -7.3; 365 -7.1; 402 -6.9; 442 -6.7; 486 -6.7; 535 -6.6; 588 -6.2; 647 -6.1; 712 -6.3; 783 -6.1; 861 -6.3; 947 -6.4; 1042 -6.5; 1146 -6.7; 1261 -7.2; 1387 -8.0; 1526 -9.1; 1678 -9.9; 1846 -12.7; 2031 -16.3; 2234 -14.6; 2457 -11.6; 2703 -9.4; 2973 -7.7; 3270 -8.0; 3597 -7.6; 3957 -5.2; 4353 -5.0; 4788 -4.4; 5267 -6.0; 5793 -5.1; 6373 -4.1; 7010 -7.8; 7711 -8.0; 8482 -8.2; 9330 -7.6; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Grado SR60i GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado SR60i ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 26 Hz   | 0.73 | 6.9 dB   |
-| Peaking | 105 Hz  | 0.51 | -3.1 dB  |
-| Peaking | 2096 Hz | 2.09 | -11.7 dB |
-| Peaking | 2989 Hz | 0.32 | 2.5 dB   |
-| Peaking | 8256 Hz | 2.64 | -3.2 dB  |
-| Peaking | 2899 Hz | 3.3  | 0.7 dB   |
-| Peaking | 3517 Hz | 3.91 | -3.0 dB  |
-| Peaking | 4005 Hz | 3.02 | 1.8 dB   |
+| Peaking | 27 Hz   | 0.74 | 8.1 dB   |
+| Peaking | 120 Hz  | 0.23 | -3.7 dB  |
+| Peaking | 1311 Hz | 0.12 | 2.2 dB   |
+| Peaking | 2082 Hz | 2.18 | -11.4 dB |
+| Peaking | 8880 Hz | 2.78 | -3.2 dB  |
+| Peaking | 3493 Hz | 5.38 | -2.6 dB  |
+| Peaking | 4367 Hz | 1.51 | 3.1 dB   |
+| Peaking | 6212 Hz | 6.87 | 4.6 dB   |
+| Peaking | 6584 Hz | 1.12 | -4.1 dB  |
+| Peaking | 9250 Hz | 2.26 | 2.5 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.9 dB  |
+| Peaking | 62 Hz    | 1.41 | -1.2 dB |
+| Peaking | 125 Hz   | 1.41 | -2.5 dB |
+| Peaking | 250 Hz   | 1.41 | -0.9 dB |
+| Peaking | 500 Hz   | 1.41 | -0.0 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -8.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 16000 Hz | 1.41 | 0.1 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR60i/Grado%20SR60i.png)

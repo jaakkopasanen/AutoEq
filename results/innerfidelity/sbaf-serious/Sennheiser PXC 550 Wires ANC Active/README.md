@@ -1,37 +1,55 @@
 # Sennheiser PXC 550 Wires ANC Active
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.3dB
-GraphicEQ: 21 0.0; 23 5.8; 25 5.3; 28 4.3; 31 3.5; 34 3.0; 37 2.7; 41 2.4; 45 2.4; 49 2.6; 54 2.7; 60 2.8; 66 3.0; 72 3.0; 79 3.0; 87 2.8; 96 2.6; 106 2.3; 116 1.9; 128 1.4; 141 1.1; 155 0.8; 170 1.0; 187 0.9; 206 1.0; 227 1.3; 249 1.6; 274 2.1; 302 2.6; 332 3.0; 365 3.2; 402 3.2; 442 3.2; 486 2.8; 535 2.5; 588 2.6; 647 2.3; 712 1.9; 783 1.8; 861 1.1; 947 0.4; 1042 -0.2; 1146 -0.5; 1261 0.6; 1387 -1.2; 1526 -1.8; 1678 -2.1; 1846 -0.4; 2031 -0.7; 2234 -0.2; 2457 1.1; 2703 2.8; 2973 3.5; 3270 3.9; 3597 2.2; 3957 3.1; 4353 5.8; 4788 -3.0; 5267 -2.4; 5793 3.6; 6373 4.5; 7010 1.8; 7711 -0.7; 8482 -3.4; 9330 -4.4; 10263 -1.1; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 -0.0; 20000 -3.5
+GraphicEQ: 21 -0.5; 23 -0.7; 25 -1.2; 28 -2.2; 31 -3.0; 34 -3.5; 37 -3.8; 41 -4.1; 45 -4.1; 49 -3.9; 54 -3.8; 60 -3.7; 66 -3.5; 72 -3.5; 79 -3.5; 87 -3.7; 96 -3.9; 106 -4.2; 116 -4.6; 128 -5.1; 141 -5.4; 155 -5.7; 170 -5.5; 187 -5.6; 206 -5.5; 227 -5.2; 249 -4.9; 274 -4.4; 302 -3.9; 332 -3.5; 365 -3.3; 402 -3.3; 442 -3.3; 486 -3.7; 535 -4.0; 588 -3.9; 647 -4.2; 712 -4.6; 783 -4.7; 861 -5.4; 947 -6.1; 1042 -6.7; 1146 -7.0; 1261 -5.9; 1387 -7.7; 1526 -8.3; 1678 -8.6; 1846 -6.9; 2031 -7.2; 2234 -6.7; 2457 -5.4; 2703 -3.7; 2973 -3.0; 3270 -2.6; 3597 -4.3; 3957 -3.4; 4353 -0.7; 4788 -9.5; 5267 -8.9; 5793 -2.9; 6373 -2.0; 7010 -4.7; 7711 -7.2; 8482 -9.9; 9330 -10.9; 10263 -7.6; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -10.0
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser PXC 550 Wires ANC Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-62**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PXC 550 Wires ANC Active ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.4dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 425 Hz  |  1.23 | 3.3 dB  |
-| Peaking | 3317 Hz |  2.77 | 4.1 dB  |
-| Peaking | 6327 Hz |  6.72 | 5.4 dB  |
-| Peaking | 9019 Hz |  4.38 | -5.1 dB |
-| Peaking | 20 Hz   |  1.18 | 5.8 dB  |
-| Peaking | 76 Hz   |  1.05 | 2.7 dB  |
-| Peaking | 1606 Hz |  3.65 | -2.6 dB |
-| Peaking | 4313 Hz |  9.36 | 5.9 dB  |
-| Peaking | 4975 Hz | 10.19 | -7.3 dB |
+| Peaking | 426 Hz  |  1.23 | 3.3 dB  |
+| Peaking | 3318 Hz |  2.76 | 4.1 dB  |
+| Peaking | 6329 Hz |  6.55 | 5.4 dB  |
+| Peaking | 9023 Hz |  4.16 | -5.1 dB |
+| Peaking | 21 Hz   |  1.19 | 5.9 dB  |
+| Peaking | 76 Hz   |  1.03 | 2.7 dB  |
+| Peaking | 1625 Hz |  3.64 | -2.6 dB |
+| Peaking | 4318 Hz |  9.24 | 5.9 dB  |
+| Peaking | 4979 Hz | 10.02 | -7.3 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.8 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.4 dB  |
+| Peaking | 125 Hz   | 1.41 | 0.8 dB  |
+| Peaking | 250 Hz   | 1.41 | 0.9 dB  |
+| Peaking | 500 Hz   | 1.41 | 3.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.9 dB |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20PXC%20550%20Wires%20ANC%20Active/Sennheiser%20PXC%20550%20Wires%20ANC%20Active.png)

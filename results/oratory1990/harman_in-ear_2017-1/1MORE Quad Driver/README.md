@@ -1,38 +1,56 @@
 # 1MORE Quad Driver
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.0dB
-GraphicEQ: 21 0.0; 23 1.0; 25 0.4; 28 -0.1; 31 -0.7; 34 -1.3; 37 -1.8; 41 -2.5; 45 -3.0; 49 -3.6; 54 -4.4; 60 -5.0; 66 -5.9; 72 -6.2; 79 -7.0; 87 -7.1; 96 -7.4; 106 -8.0; 116 -8.0; 128 -8.5; 141 -8.4; 155 -8.5; 170 -8.6; 187 -8.6; 206 -8.5; 227 -8.3; 249 -8.1; 274 -7.8; 302 -7.3; 332 -6.8; 365 -6.2; 402 -5.7; 442 -5.2; 486 -4.6; 535 -3.9; 588 -3.2; 647 -2.6; 712 -1.8; 783 -1.1; 861 -0.5; 947 -0.1; 1042 -0.0; 1146 -0.2; 1261 -0.3; 1387 -0.2; 1526 -0.0; 1678 0.3; 1846 0.7; 2031 1.0; 2234 1.2; 2457 1.2; 2703 1.1; 2973 1.4; 3270 1.8; 3597 1.6; 3957 0.4; 4353 -1.0; 4788 -0.5; 5267 1.3; 5793 3.1; 6373 4.8; 7010 1.7; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 -1.7; 12418 -6.9; 13660 -16.5; 15026 -25.6; 16529 -29.4; 18182 -28.2; 20000 -21.3
+GraphicEQ: 21 -3.4; 23 -4.3; 25 -4.9; 28 -5.3; 31 -5.9; 34 -6.6; 37 -7.1; 41 -7.8; 45 -8.2; 49 -8.8; 54 -9.6; 60 -10.3; 66 -11.1; 72 -11.5; 79 -12.2; 87 -12.4; 96 -12.7; 106 -13.3; 116 -13.3; 128 -13.8; 141 -13.7; 155 -13.8; 170 -13.8; 187 -13.8; 206 -13.8; 227 -13.6; 249 -13.3; 274 -13.0; 302 -12.6; 332 -12.0; 365 -11.5; 402 -11.0; 442 -10.4; 486 -9.8; 535 -9.1; 588 -8.5; 647 -7.8; 712 -7.1; 783 -6.3; 861 -5.7; 947 -5.3; 1042 -5.3; 1146 -5.5; 1261 -5.6; 1387 -5.5; 1526 -5.3; 1678 -4.9; 1846 -4.6; 2031 -4.3; 2234 -4.1; 2457 -4.1; 2703 -4.2; 2973 -3.9; 3270 -3.5; 3597 -3.6; 3957 -4.9; 4353 -6.3; 4788 -5.7; 5267 -4.0; 5793 -2.1; 6373 -0.5; 7010 -3.5; 7711 -5.0; 8482 -5.2; 9330 -5.3; 10263 -5.3; 11289 -7.0; 12418 -12.2; 13660 -21.8; 15026 -30.9; 16529 -34.6; 18182 -33.5; 20000 -26.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `1MORE Quad Driver GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-50**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `1MORE Quad Driver ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-2.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 14 Hz    | 0.81 | 4.3 dB   |
-| Peaking | 118 Hz   | 0.46 | -7.6 dB  |
-| Peaking | 308 Hz   | 0.84 | -3.8 dB  |
-| Peaking | 8597 Hz  | 0.29 | 25.8 dB  |
-| Peaking | 16679 Hz | 0.33 | -46.6 dB |
-| Peaking | 2251 Hz  | 2.5  | 0.8 dB   |
-| Peaking | 7771 Hz  | 6.74 | -2.3 dB  |
-| Peaking | 8850 Hz  | 4.21 | -2.0 dB  |
-| Peaking | 11444 Hz | 2.33 | 5.0 dB   |
-| Peaking | 14602 Hz | 3.65 | -6.1 dB  |
+| Peaking | 13 Hz    | 0.79 | 4.5 dB   |
+| Peaking | 118 Hz   | 0.45 | -7.6 dB  |
+| Peaking | 308 Hz   | 0.83 | -3.8 dB  |
+| Peaking | 8666 Hz  | 0.26 | 26.8 dB  |
+| Peaking | 16633 Hz | 0.25 | -46.5 dB |
+| Peaking | 4702 Hz  | 2.43 | -6.7 dB  |
+| Peaking | 5982 Hz  | 0.99 | 6.5 dB   |
+| Peaking | 7919 Hz  | 1.94 | -6.8 dB  |
+| Peaking | 11481 Hz | 2.37 | 4.5 dB   |
+| Peaking | 14553 Hz | 3.22 | -6.0 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 0.8 dB   |
+| Peaking | 62 Hz    | 1.41 | -4.6 dB  |
+| Peaking | 125 Hz   | 1.41 | -7.0 dB  |
+| Peaking | 250 Hz   | 1.41 | -7.0 dB  |
+| Peaking | 500 Hz   | 1.41 | -3.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.5 dB   |
+| Peaking | 2000 Hz  | 1.41 | 1.4 dB   |
+| Peaking | 4000 Hz  | 1.41 | 1.5 dB   |
+| Peaking | 8000 Hz  | 1.41 | 13.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -40.9 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/1MORE%20Quad%20Driver/1MORE%20Quad%20Driver.png)

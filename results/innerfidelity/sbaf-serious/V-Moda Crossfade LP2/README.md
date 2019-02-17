@@ -1,24 +1,22 @@
 # V-Moda Crossfade LP2
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -0.8; 23 -1.1; 25 -1.4; 28 -1.7; 31 -1.9; 34 -2.1; 37 -2.3; 41 -2.4; 45 -2.6; 49 -2.7; 54 -2.8; 60 -2.8; 66 -2.8; 72 -2.8; 79 -3.3; 87 -3.8; 96 -4.5; 106 -5.0; 116 -5.3; 128 -5.6; 141 -5.7; 155 -5.6; 170 -5.3; 187 -5.2; 206 -4.6; 227 -3.6; 249 -2.8; 274 -1.5; 302 -0.2; 332 1.1; 365 2.6; 402 3.7; 442 4.6; 486 4.8; 535 4.7; 588 4.4; 647 3.3; 712 1.7; 783 1.0; 861 0.3; 947 0.0; 1042 -0.0; 1146 -0.0; 1261 0.2; 1387 -0.4; 1526 0.0; 1678 0.9; 1846 2.5; 2031 5.5; 2234 4.9; 2457 5.0; 2703 4.8; 2973 1.5; 3270 -1.8; 3597 0.3; 3957 3.8; 4353 5.4; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -7.3; 23 -7.6; 25 -7.9; 28 -8.2; 31 -8.4; 34 -8.6; 37 -8.8; 41 -8.9; 45 -9.1; 49 -9.2; 54 -9.3; 60 -9.3; 66 -9.3; 72 -9.3; 79 -9.8; 87 -10.3; 96 -11.0; 106 -11.5; 116 -11.8; 128 -12.1; 141 -12.2; 155 -12.1; 170 -11.8; 187 -11.7; 206 -11.1; 227 -10.1; 249 -9.3; 274 -8.0; 302 -6.7; 332 -5.4; 365 -3.9; 402 -2.8; 442 -1.9; 486 -1.7; 535 -1.8; 588 -2.1; 647 -3.2; 712 -4.8; 783 -5.5; 861 -6.2; 947 -6.5; 1042 -6.5; 1146 -6.5; 1261 -6.3; 1387 -6.9; 1526 -6.5; 1678 -5.6; 1846 -4.0; 2031 -1.0; 2234 -1.6; 2457 -1.5; 2703 -1.7; 2973 -5.0; 3270 -8.3; 3597 -6.2; 3957 -2.7; 4353 -1.1; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `V-Moda Crossfade LP2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda Crossfade LP2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
@@ -26,13 +24,33 @@ When using independent subset of filters, apply preamp of **-7.1dB**.
 |:--------|:--------|:-----|:--------|
 | Peaking | 39 Hz   | 0.98 | -1.6 dB |
 | Peaking | 152 Hz  | 0.71 | -6.1 dB |
-| Peaking | 463 Hz  | 1.53 | 6.6 dB  |
-| Peaking | 2260 Hz | 3.37 | 5.5 dB  |
-| Peaking | 5304 Hz | 2.27 | 6.9 dB  |
-| Peaking | 1224 Hz | 1.94 | -0.9 dB |
-| Peaking | 2796 Hz | 5.74 | 3.8 dB  |
-| Peaking | 3268 Hz | 4.23 | -5.0 dB |
-| Peaking | 4150 Hz | 4.6  | 2.5 dB  |
-| Peaking | 8369 Hz | 4.49 | -1.2 dB |
+| Peaking | 462 Hz  | 1.53 | 6.6 dB  |
+| Peaking | 2260 Hz | 3.36 | 5.5 dB  |
+| Peaking | 5310 Hz | 2.23 | 6.9 dB  |
+| Peaking | 1227 Hz | 1.95 | -0.9 dB |
+| Peaking | 2783 Hz | 5.71 | 3.8 dB  |
+| Peaking | 3257 Hz | 4.22 | -5.0 dB |
+| Peaking | 4137 Hz | 4.57 | 2.5 dB  |
+| Peaking | 8342 Hz | 4.45 | -1.2 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -1.7 dB |
+| Peaking | 62 Hz    | 1.41 | -1.5 dB |
+| Peaking | 125 Hz   | 1.41 | -5.7 dB |
+| Peaking | 250 Hz   | 1.41 | -3.0 dB |
+| Peaking | 500 Hz   | 1.41 | 6.7 dB  |
+| Peaking | 1000 Hz  | 1.41 | -2.4 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/V-Moda%20Crossfade%20LP2/V-Moda%20Crossfade%20LP2.png)

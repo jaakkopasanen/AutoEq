@@ -1,38 +1,56 @@
 # Sennheiser RS 220
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.5; 31 4.9; 34 4.5; 37 4.0; 41 3.5; 45 3.1; 49 2.7; 54 2.3; 60 1.7; 66 1.9; 72 2.3; 79 0.9; 87 0.2; 96 -0.4; 106 -0.8; 116 -1.0; 128 -1.3; 141 -1.5; 155 -1.5; 170 -1.5; 187 -1.6; 206 -1.7; 227 -1.3; 249 -1.0; 274 -0.9; 302 -0.8; 332 -0.7; 365 -0.4; 402 -0.5; 442 -0.5; 486 -0.1; 535 0.3; 588 0.3; 647 0.4; 712 0.5; 783 0.4; 861 0.3; 947 0.2; 1042 -0.0; 1146 -0.0; 1261 -0.3; 1387 1.2; 1526 3.7; 1678 4.3; 1846 4.1; 2031 1.9; 2234 -1.9; 2457 -3.9; 2703 -2.6; 2973 -0.7; 3270 0.3; 3597 2.8; 3957 5.8; 4353 6.0; 4788 6.0; 5267 4.2; 5793 2.2; 6373 5.1; 7010 0.1; 7711 -0.5; 8482 0.0; 9330 -0.2; 10263 -1.3; 11289 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.6; 28 -1.0; 31 -1.6; 34 -2.0; 37 -2.5; 41 -3.0; 45 -3.4; 49 -3.8; 54 -4.2; 60 -4.8; 66 -4.6; 72 -4.2; 79 -5.6; 87 -6.3; 96 -6.9; 106 -7.3; 116 -7.5; 128 -7.8; 141 -8.0; 155 -8.0; 170 -8.0; 187 -8.1; 206 -8.2; 227 -7.8; 249 -7.5; 274 -7.4; 302 -7.3; 332 -7.2; 365 -6.9; 402 -7.0; 442 -7.0; 486 -6.6; 535 -6.2; 588 -6.2; 647 -6.1; 712 -6.0; 783 -6.1; 861 -6.2; 947 -6.3; 1042 -6.5; 1146 -6.5; 1261 -6.8; 1387 -5.3; 1526 -2.8; 1678 -2.2; 1846 -2.4; 2031 -4.6; 2234 -8.4; 2457 -10.4; 2703 -9.1; 2973 -7.2; 3270 -6.2; 3597 -3.7; 3957 -0.7; 4353 -0.5; 4788 -0.5; 5267 -2.3; 5793 -4.3; 6373 -1.4; 7010 -6.4; 7711 -7.0; 8482 -6.5; 9330 -6.7; 10263 -7.8; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser RS 220 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 220 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 23 Hz   | 1.51 | 6.3 dB  |
-| Peaking | 44 Hz   | 1.98 | 2.3 dB  |
-| Peaking | 1809 Hz | 2.72 | 6.9 dB  |
-| Peaking | 2448 Hz | 1.97 | -6.4 dB |
-| Peaking | 4405 Hz | 1.94 | 7.3 dB  |
-| Peaking | 70 Hz   | 4.55 | 1.9 dB  |
-| Peaking | 164 Hz  | 0.93 | -1.8 dB |
-| Peaking | 6381 Hz | 8.46 | 5.1 dB  |
-| Peaking | 6603 Hz | 5.83 | 1.0 dB  |
-| Peaking | 6942 Hz | 2.43 | -2.8 dB |
+| Peaking | 24 Hz   | 1.47 | 6.1 dB  |
+| Peaking | 43 Hz   | 1.99 | 2.3 dB  |
+| Peaking | 1810 Hz | 2.69 | 7.0 dB  |
+| Peaking | 2441 Hz | 1.91 | -6.5 dB |
+| Peaking | 4401 Hz | 1.9  | 7.3 dB  |
+| Peaking | 72 Hz   | 3.96 | 2.0 dB  |
+| Peaking | 162 Hz  | 0.75 | -1.8 dB |
+| Peaking | 629 Hz  | 2.77 | 0.6 dB  |
+| Peaking | 6370 Hz | 7.81 | 5.8 dB  |
+| Peaking | 6996 Hz | 2.25 | -2.6 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.3dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 5.8 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.3 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.7 dB |
+| Peaking | 250 Hz   | 1.41 | -1.1 dB |
+| Peaking | 500 Hz   | 1.41 | 0.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20220/Sennheiser%20RS%20220.png)

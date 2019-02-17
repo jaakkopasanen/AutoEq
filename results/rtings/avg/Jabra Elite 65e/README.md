@@ -1,38 +1,56 @@
 # Jabra Elite 65e
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -0.2dB
-GraphicEQ: 21 -7.5; 23 -7.8; 25 -8.0; 28 -8.2; 31 -8.4; 34 -8.4; 37 -8.5; 41 -8.5; 45 -8.4; 49 -8.3; 54 -8.2; 60 -8.0; 66 -8.1; 72 -7.9; 79 -7.7; 87 -7.7; 96 -7.4; 106 -7.2; 116 -6.8; 128 -6.7; 141 -6.3; 155 -5.8; 170 -5.5; 187 -5.0; 206 -4.6; 227 -4.4; 249 -4.2; 274 -4.0; 302 -3.8; 332 -3.8; 365 -3.7; 402 -3.6; 442 -3.3; 486 -3.0; 535 -2.5; 588 -2.0; 647 -1.5; 712 -1.0; 783 -0.5; 861 -0.2; 947 -0.0; 1042 0.0; 1146 0.1; 1261 -0.0; 1387 -0.9; 1526 -2.2; 1678 -3.2; 1846 -3.5; 2031 -3.2; 2234 -2.2; 2457 -1.0; 2703 -0.5; 2973 -0.8; 3270 -1.8; 3597 -3.0; 3957 -4.4; 4353 -5.4; 4788 -2.4; 5267 -2.8; 5793 -2.4; 6373 -5.1; 7010 -8.3; 7711 -7.2; 8482 -6.5; 9330 -9.8; 10263 -13.3; 11289 -11.8; 12418 -8.7; 13660 -7.7; 15026 -8.3; 16529 -11.0; 18182 -12.5; 20000 -8.0
+GraphicEQ: 21 -8.1; 23 -8.3; 25 -8.5; 28 -8.8; 31 -8.9; 34 -9.0; 37 -9.0; 41 -9.0; 45 -9.0; 49 -8.9; 54 -8.7; 60 -8.6; 66 -8.6; 72 -8.5; 79 -8.3; 87 -8.3; 96 -8.0; 106 -7.7; 116 -7.4; 128 -7.2; 141 -6.9; 155 -6.4; 170 -6.1; 187 -5.6; 206 -5.2; 227 -5.0; 249 -4.7; 274 -4.5; 302 -4.4; 332 -4.4; 365 -4.2; 402 -4.2; 442 -3.8; 486 -3.6; 535 -3.1; 588 -2.6; 647 -2.1; 712 -1.5; 783 -1.0; 861 -0.7; 947 -0.6; 1042 -0.6; 1146 -0.5; 1261 -0.6; 1387 -1.5; 1526 -2.8; 1678 -3.7; 1846 -4.1; 2031 -3.7; 2234 -2.8; 2457 -1.6; 2703 -1.0; 2973 -1.4; 3270 -2.3; 3597 -3.6; 3957 -5.0; 4353 -5.9; 4788 -3.0; 5267 -3.3; 5793 -2.9; 6373 -5.6; 7010 -8.9; 7711 -7.7; 8482 -7.1; 9330 -10.4; 10263 -13.8; 11289 -12.4; 12418 -9.3; 13660 -8.2; 15026 -8.9; 16529 -11.6; 18182 -13.0; 20000 -8.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Jabra Elite 65e GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-1**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Jabra Elite 65e ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 34 Hz    | 0.12 | -8.2 dB  |
-| Peaking | 1848 Hz  | 3.52 | -3.3 dB  |
-| Peaking | 10313 Hz | 0.9  | -10.6 dB |
-| Peaking | 17892 Hz | 1.53 | -10.0 dB |
-| Peaking | 21118 Hz | 1.63 | -11.3 dB |
-| Peaking | 1042 Hz  | 2.87 | 1.1 dB   |
-| Peaking | 4164 Hz  | 5.75 | -3.5 dB  |
-| Peaking | 5646 Hz  | 5.72 | 1.7 dB   |
-| Peaking | 8612 Hz  | 8.48 | 3.0 dB   |
-| Peaking | 10381 Hz | 7.45 | -2.3 dB  |
+| Peaking | 34 Hz    | 0.13 | -8.2 dB  |
+| Peaking | 1834 Hz  | 3.89 | -3.1 dB  |
+| Peaking | 7597 Hz  | 0.68 | -4.2 dB  |
+| Peaking | 10535 Hz | 2.8  | -8.0 dB  |
+| Peaking | 18218 Hz | 0.58 | -12.4 dB |
+| Peaking | 1030 Hz  | 3.14 | 1.1 dB   |
+| Peaking | 2804 Hz  | 6.75 | 1.3 dB   |
+| Peaking | 4160 Hz  | 4.96 | -3.6 dB  |
+| Peaking | 6154 Hz  | 2.1  | 4.0 dB   |
+| Peaking | 6843 Hz  | 5.16 | -5.8 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -8.5 dB  |
+| Peaking | 62 Hz    | 1.41 | -6.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -5.2 dB  |
+| Peaking | 250 Hz   | 1.41 | -2.9 dB  |
+| Peaking | 500 Hz   | 1.41 | -2.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.2 dB   |
+| Peaking | 2000 Hz  | 1.41 | -2.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -8.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -15.8 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Jabra%20Elite%2065e/Jabra%20Elite%2065e.png)

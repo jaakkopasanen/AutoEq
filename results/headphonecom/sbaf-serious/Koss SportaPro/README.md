@@ -1,38 +1,56 @@
 # Koss SportaPro
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.7; 37 4.9; 41 3.6; 45 2.5; 49 1.4; 54 0.3; 60 -0.7; 66 -1.3; 72 -2.2; 79 -2.8; 87 -3.1; 96 -3.6; 106 -3.8; 116 -4.0; 128 -4.2; 141 -4.2; 155 -3.7; 170 -3.4; 187 -3.2; 206 -3.3; 227 -3.2; 249 -2.8; 274 -2.5; 302 -2.2; 332 -1.8; 365 -1.4; 402 -1.2; 442 -0.9; 486 -0.6; 535 -0.4; 588 -0.2; 647 0.1; 712 0.2; 783 0.3; 861 0.3; 947 0.1; 1042 -0.1; 1146 -0.2; 1261 -0.6; 1387 -1.3; 1526 -2.3; 1678 -3.0; 1846 -3.6; 2031 -4.4; 2234 -4.7; 2457 -4.0; 2703 -2.3; 2973 -1.1; 3270 -1.1; 3597 -2.8; 3957 -4.6; 4353 -0.8; 4788 -4.7; 5267 -0.9; 5793 1.2; 6373 5.4; 7010 2.5; 7711 0.3; 8482 -3.7; 9330 -8.8; 10263 -2.5; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 0.0; 20000 -1.8
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.8; 37 -1.6; 41 -2.9; 45 -4.0; 49 -5.1; 54 -6.2; 60 -7.2; 66 -7.8; 72 -8.7; 79 -9.3; 87 -9.6; 96 -10.1; 106 -10.3; 116 -10.5; 128 -10.7; 141 -10.7; 155 -10.2; 170 -9.9; 187 -9.7; 206 -9.8; 227 -9.7; 249 -9.3; 274 -9.0; 302 -8.7; 332 -8.3; 365 -7.9; 402 -7.7; 442 -7.4; 486 -7.1; 535 -6.9; 588 -6.7; 647 -6.4; 712 -6.3; 783 -6.2; 861 -6.2; 947 -6.4; 1042 -6.6; 1146 -6.7; 1261 -7.1; 1387 -7.8; 1526 -8.8; 1678 -9.5; 1846 -10.1; 2031 -10.9; 2234 -11.2; 2457 -10.5; 2703 -8.8; 2973 -7.6; 3270 -7.6; 3597 -9.3; 3957 -11.1; 4353 -7.3; 4788 -11.2; 5267 -7.4; 5793 -5.3; 6373 -1.1; 7010 -4.0; 7711 -6.2; 8482 -10.2; 9330 -15.3; 10263 -9.0; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -8.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Koss SportaPro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss SportaPro ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.5dB**.
+When using independent subset of filters, apply preamp of **-6.6dB**.
+
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 28 Hz   |  0.8  | 7.4 dB  |
+| Peaking | 112 Hz  |  0.56 | -4.9 dB |
+| Peaking | 2894 Hz |  0.69 | -3.4 dB |
+| Peaking | 6426 Hz |  4.94 | 7.4 dB  |
+| Peaking | 9259 Hz |  6.15 | -9.7 dB |
+| Peaking | 1067 Hz |  1.03 | 2.1 dB  |
+| Peaking | 2844 Hz |  0.78 | -5.0 dB |
+| Peaking | 3024 Hz |  2.91 | 6.2 dB  |
+| Peaking | 4847 Hz | 14.01 | -3.0 dB |
+| Peaking | 4932 Hz |  0.61 | 1.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB** and set
+gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 28 Hz    | 0.8  | 7.4 dB  |
-| Peaking | 112 Hz   | 0.56 | -4.9 dB |
-| Peaking | 2850 Hz  | 0.7  | -3.4 dB |
-| Peaking | 6460 Hz  | 5.16 | 7.4 dB  |
-| Peaking | 9315 Hz  | 6.5  | -9.7 dB |
-| Peaking | 948 Hz   | 1.24 | 1.4 dB  |
-| Peaking | 2166 Hz  | 1.93 | -2.6 dB |
-| Peaking | 3171 Hz  | 2.56 | 5.7 dB  |
-| Peaking | 3692 Hz  | 2.24 | -3.7 dB |
-| Peaking | 11022 Hz | 6.51 | 1.5 dB  |
+| Peaking | 31 Hz    | 1.41 | 7.6 dB  |
+| Peaking | 62 Hz    | 1.41 | -2.0 dB |
+| Peaking | 125 Hz   | 1.41 | -4.1 dB |
+| Peaking | 250 Hz   | 1.41 | -2.3 dB |
+| Peaking | 500 Hz   | 1.41 | -0.0 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 8000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Koss%20SportaPro/Koss%20SportaPro.png)

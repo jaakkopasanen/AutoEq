@@ -1,18 +1,16 @@
 # V-Moda LP2
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -2.5; 23 -2.9; 25 -3.3; 28 -3.7; 31 -4.0; 34 -4.3; 37 -4.4; 41 -4.6; 45 -4.8; 49 -4.9; 54 -5.0; 60 -5.1; 66 -5.3; 72 -5.2; 79 -4.8; 87 -4.9; 96 -6.2; 106 -6.8; 116 -6.9; 128 -6.8; 141 -7.0; 155 -6.9; 170 -6.4; 187 -6.5; 206 -5.8; 227 -4.9; 249 -3.5; 274 -2.7; 302 -0.9; 332 1.1; 365 2.6; 402 3.6; 442 4.4; 486 5.1; 535 5.3; 588 4.7; 647 3.4; 712 1.8; 783 0.6; 861 0.1; 947 -0.0; 1042 -0.0; 1146 0.0; 1261 0.1; 1387 -0.3; 1526 -0.2; 1678 0.0; 1846 0.7; 2031 1.2; 2234 0.6; 2457 -0.8; 2703 -1.2; 2973 -2.2; 3270 -0.8; 3597 1.4; 3957 3.4; 4353 4.7; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -0.1; 10263 -1.2; 11289 0.0
+GraphicEQ: 21 -9.0; 23 -9.4; 25 -9.8; 28 -10.2; 31 -10.5; 34 -10.8; 37 -10.9; 41 -11.1; 45 -11.3; 49 -11.4; 54 -11.5; 60 -11.6; 66 -11.8; 72 -11.7; 79 -11.3; 87 -11.4; 96 -12.7; 106 -13.3; 116 -13.4; 128 -13.3; 141 -13.5; 155 -13.4; 170 -12.9; 187 -13.0; 206 -12.3; 227 -11.4; 249 -10.0; 274 -9.2; 302 -7.4; 332 -5.3; 365 -3.9; 402 -2.9; 442 -2.1; 486 -1.4; 535 -1.2; 588 -1.8; 647 -3.1; 712 -4.7; 783 -5.9; 861 -6.4; 947 -6.5; 1042 -6.5; 1146 -6.5; 1261 -6.4; 1387 -6.8; 1526 -6.7; 1678 -6.5; 1846 -5.8; 2031 -5.3; 2234 -5.9; 2457 -7.3; 2703 -7.7; 2973 -8.7; 3270 -7.3; 3597 -5.1; 3957 -3.1; 4353 -1.8; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.6; 10263 -7.7; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `V-Moda LP2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda LP2 ParametricEQ.txt`.
@@ -24,14 +22,34 @@ When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 39 Hz   | 0.64 | -3.6 dB |
-| Peaking | 158 Hz  | 0.65 | -7.0 dB |
+| Peaking | 38 Hz   | 0.65 | -3.6 dB |
+| Peaking | 158 Hz  | 0.64 | -7.0 dB |
 | Peaking | 462 Hz  | 1.46 | 7.4 dB  |
-| Peaking | 5314 Hz | 2.38 | 7.1 dB  |
-| Peaking | 608 Hz  | 4.68 | 1.8 dB  |
-| Peaking | 900 Hz  | 1.11 | -1.1 dB |
-| Peaking | 2992 Hz | 2.91 | -5.7 dB |
-| Peaking | 3208 Hz | 1.12 | 2.8 dB  |
-| Peaking | 9464 Hz | 2.22 | -1.5 dB |
+| Peaking | 5320 Hz | 2.34 | 7.1 dB  |
+| Peaking | 595 Hz  | 5.38 | 1.6 dB  |
+| Peaking | 869 Hz  | 1.98 | -1.0 dB |
+| Peaking | 3000 Hz | 4.63 | -3.3 dB |
+| Peaking | 4143 Hz | 4.43 | 1.9 dB  |
+| Peaking | 9828 Hz | 3.36 | -1.5 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.3dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -3.8 dB |
+| Peaking | 62 Hz    | 1.41 | -3.3 dB |
+| Peaking | 125 Hz   | 1.41 | -6.6 dB |
+| Peaking | 250 Hz   | 1.41 | -3.9 dB |
+| Peaking | 500 Hz   | 1.41 | 7.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/V-Moda%20LP2/V-Moda%20LP2.png)

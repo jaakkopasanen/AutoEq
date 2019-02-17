@@ -1,38 +1,56 @@
 # Bedphones
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 6.0; 141 6.0; 155 6.0; 170 5.6; 187 4.6; 206 3.5; 227 2.8; 249 2.1; 274 1.6; 302 1.3; 332 0.9; 365 0.8; 402 0.6; 442 0.8; 486 0.6; 535 0.7; 588 1.3; 647 0.9; 712 0.5; 783 0.6; 861 0.3; 947 0.0; 1042 -0.1; 1146 -0.3; 1261 -0.4; 1387 -0.6; 1526 -0.6; 1678 0.2; 1846 1.9; 2031 4.0; 2234 5.9; 2457 6.0; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.5; 155 -0.5; 170 -0.9; 187 -1.9; 206 -3.0; 227 -3.7; 249 -4.4; 274 -4.9; 302 -5.2; 332 -5.6; 365 -5.7; 402 -5.9; 442 -5.7; 486 -5.9; 535 -5.8; 588 -5.2; 647 -5.6; 712 -6.0; 783 -5.9; 861 -6.2; 947 -6.5; 1042 -6.6; 1146 -6.8; 1261 -6.9; 1387 -7.1; 1526 -7.1; 1678 -6.3; 1846 -4.6; 2031 -2.5; 2234 -0.6; 2457 -0.5; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Bedphones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bedphones ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 62 Hz   | 0.7  | -3.8 dB |
-| Peaking | 66 Hz   | 0.25 | 9.9 dB  |
-| Peaking | 310 Hz  | 0.67 | -2.9 dB |
-| Peaking | 2673 Hz | 2    | 5.6 dB  |
-| Peaking | 4939 Hz | 1.57 | 6.1 dB  |
-| Peaking | 162 Hz  | 5.46 | 1.1 dB  |
-| Peaking | 1495 Hz | 2.53 | -2.0 dB |
-| Peaking | 2139 Hz | 5.77 | 2.1 dB  |
-| Peaking | 6426 Hz | 4.58 | 3.5 dB  |
-| Peaking | 7516 Hz | 1.79 | -2.3 dB |
+| Peaking | 60 Hz   | 0.71 | -3.8 dB |
+| Peaking | 67 Hz   | 0.25 | 9.9 dB  |
+| Peaking | 313 Hz  | 0.68 | -2.9 dB |
+| Peaking | 2666 Hz | 2.01 | 5.6 dB  |
+| Peaking | 4935 Hz | 1.53 | 6.1 dB  |
+| Peaking | 1834 Hz | 0.87 | -5.9 dB |
+| Peaking | 2077 Hz | 3.51 | 3.9 dB  |
+| Peaking | 2554 Hz | 0.37 | 3.6 dB  |
+| Peaking | 6356 Hz | 3.76 | 5.0 dB  |
+| Peaking | 6610 Hz | 1.13 | -4.6 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.2 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.1 dB  |
+| Peaking | 125 Hz   | 1.41 | 5.8 dB  |
+| Peaking | 250 Hz   | 1.41 | 1.0 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.6 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.4 dB |
+| Peaking | 2000 Hz  | 1.41 | 2.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 7.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bedphones/Bedphones.png)

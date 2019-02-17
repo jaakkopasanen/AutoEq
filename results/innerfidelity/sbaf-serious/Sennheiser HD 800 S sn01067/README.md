@@ -1,36 +1,54 @@
 # Sennheiser HD 800 S sn01067
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.9dB
-GraphicEQ: 21 0.0; 23 4.0; 25 3.6; 28 3.2; 31 2.8; 34 2.5; 37 2.2; 41 1.9; 45 1.6; 49 1.5; 54 1.3; 60 1.1; 66 1.1; 72 0.9; 79 0.3; 87 -0.0; 96 -0.7; 106 -1.2; 116 -1.5; 128 -2.0; 141 -2.1; 155 -2.3; 170 -2.3; 187 -2.5; 206 -2.6; 227 -2.6; 249 -2.7; 274 -2.6; 302 -2.5; 332 -2.4; 365 -2.2; 402 -2.1; 442 -1.8; 486 -1.7; 535 -1.6; 588 -1.1; 647 -1.1; 712 -0.9; 783 -0.5; 861 -0.4; 947 -0.1; 1042 0.3; 1146 0.4; 1261 0.9; 1387 1.2; 1526 1.6; 1678 1.5; 1846 1.3; 2031 1.7; 2234 1.5; 2457 2.1; 2703 2.5; 2973 1.9; 3270 2.3; 3597 0.9; 3957 -0.3; 4353 -0.2; 4788 0.4; 5267 -0.4; 5793 -1.5; 6373 -3.9; 7010 -2.9; 7711 -1.2; 8482 -0.8; 9330 -0.4; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -0.8; 15026 -1.0; 16529 0.0; 18182 0.0; 20000 -0.3
+GraphicEQ: 21 -0.5; 23 -1.0; 25 -1.4; 28 -1.8; 31 -2.2; 34 -2.5; 37 -2.8; 41 -3.1; 45 -3.3; 49 -3.5; 54 -3.7; 60 -3.9; 66 -3.9; 72 -4.1; 79 -4.7; 87 -5.0; 96 -5.7; 106 -6.2; 116 -6.5; 128 -7.0; 141 -7.1; 155 -7.3; 170 -7.3; 187 -7.5; 206 -7.6; 227 -7.6; 249 -7.7; 274 -7.6; 302 -7.5; 332 -7.4; 365 -7.2; 402 -7.1; 442 -6.8; 486 -6.7; 535 -6.6; 588 -6.1; 647 -6.1; 712 -5.9; 783 -5.5; 861 -5.3; 947 -5.1; 1042 -4.7; 1146 -4.6; 1261 -4.1; 1387 -3.8; 1526 -3.3; 1678 -3.5; 1846 -3.6; 2031 -3.3; 2234 -3.5; 2457 -2.9; 2703 -2.5; 2973 -3.1; 3270 -2.7; 3597 -4.1; 3957 -5.3; 4353 -5.2; 4788 -4.6; 5267 -5.4; 5793 -6.5; 6373 -8.9; 7010 -7.9; 7711 -6.2; 8482 -5.8; 9330 -5.4; 10263 -5.0; 11289 -5.0; 12418 -5.0; 13660 -5.8; 15026 -6.0; 16529 -5.0; 18182 -5.0; 20000 -5.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 800 S sn01067 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-48**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 800 S sn01067 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-4.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 10 Hz    | 0.19 | 4.3 dB  |
-| Peaking | 221 Hz   | 0.47 | -2.9 dB |
-| Peaking | 1535 Hz  | 1.54 | 1.5 dB  |
-| Peaking | 2781 Hz  | 2.16 | 2.3 dB  |
-| Peaking | 6589 Hz  | 4    | -4.2 dB |
-| Peaking | 41 Hz    | 2.59 | -0.6 dB |
-| Peaking | 8772 Hz  | 5.16 | -0.2 dB |
-| Peaking | 14463 Hz | 5.88 | -1.4 dB |
+| Peaking | 11 Hz    | 0.21 | 4.3 dB  |
+| Peaking | 222 Hz   | 0.47 | -2.9 dB |
+| Peaking | 1534 Hz  | 1.55 | 1.5 dB  |
+| Peaking | 2781 Hz  | 2.14 | 2.3 dB  |
+| Peaking | 6604 Hz  | 3.91 | -4.2 dB |
+| Peaking | 63 Hz    | 0.87 | -1.0 dB |
+| Peaking | 71 Hz    | 1.99 | 1.3 dB  |
+| Peaking | 14466 Hz | 4.86 | -1.4 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.3 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.9 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.8 dB |
+| Peaking | 250 Hz   | 1.41 | -2.5 dB |
+| Peaking | 500 Hz   | 1.41 | -1.4 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.0 dB  |
+| Peaking | 2000 Hz  | 1.41 | 2.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20800%20S%20sn01067/Sennheiser%20HD%20800%20S%20sn01067.png)

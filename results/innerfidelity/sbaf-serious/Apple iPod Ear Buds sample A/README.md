@@ -1,38 +1,56 @@
 # Apple iPod Ear Buds sample A
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 6.0; 141 5.9; 155 4.5; 170 3.0; 187 1.8; 206 0.5; 227 -0.4; 249 -1.1; 274 -1.5; 302 -1.7; 332 -1.7; 365 -1.5; 402 -1.1; 442 -0.2; 486 0.0; 535 0.3; 588 0.4; 647 0.1; 712 -0.1; 783 -0.0; 861 -0.1; 947 -0.0; 1042 0.0; 1146 0.0; 1261 -0.0; 1387 -0.4; 1526 -0.8; 1678 -1.1; 1846 -0.8; 2031 0.3; 2234 1.4; 2457 0.2; 2703 -2.9; 2973 -5.2; 3270 -3.8; 3597 -0.7; 3957 0.4; 4353 -0.5; 4788 -0.4; 5267 0.7; 5793 -2.7; 6373 -6.7; 7010 -4.2; 7711 -2.8; 8482 -4.3; 9330 -2.6; 10263 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.6; 155 -2.0; 170 -3.5; 187 -4.7; 206 -6.0; 227 -6.9; 249 -7.6; 274 -8.0; 302 -8.2; 332 -8.2; 365 -8.0; 402 -7.6; 442 -6.7; 486 -6.5; 535 -6.2; 588 -6.1; 647 -6.4; 712 -6.6; 783 -6.5; 861 -6.6; 947 -6.5; 1042 -6.5; 1146 -6.5; 1261 -6.5; 1387 -6.9; 1526 -7.3; 1678 -7.6; 1846 -7.3; 2031 -6.2; 2234 -5.1; 2457 -6.3; 2703 -9.4; 2973 -11.7; 3270 -10.3; 3597 -7.2; 3957 -6.1; 4353 -7.0; 4788 -6.9; 5267 -5.8; 5793 -9.2; 6373 -13.2; 7010 -10.7; 7711 -9.3; 8482 -10.8; 9330 -9.1; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Apple iPod Ear Buds sample A GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Apple iPod Ear Buds sample A ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 62 Hz   |  0.2  | 6.6 dB  |
-| Peaking | 222 Hz  |  2.82 | -2.6 dB |
-| Peaking | 317 Hz  |  1.33 | -4.7 dB |
-| Peaking | 3014 Hz |  6.18 | -5.7 dB |
-| Peaking | 6725 Hz |  3.1  | -5.9 dB |
-| Peaking | 18 Hz   |  1.97 | 1.2 dB  |
-| Peaking | 137 Hz  |  6.58 | 1.3 dB  |
-| Peaking | 3911 Hz |  8.25 | 1.3 dB  |
-| Peaking | 5345 Hz | 11.1  | 2.8 dB  |
-| Peaking | 8766 Hz |  8.66 | -3.6 dB |
+| Peaking | 222 Hz  |  2.81 | -2.6 dB |
+| Peaking | 318 Hz  |  1.33 | -4.7 dB |
+| Peaking | 3008 Hz |  6.25 | -5.7 dB |
+| Peaking | 6733 Hz |  2.99 | -5.9 dB |
+| Peaking | 13 Hz   |  2.1  | 1.0 dB  |
+| Peaking | 137 Hz  |  6.52 | 1.3 dB  |
+| Peaking | 3949 Hz |  7.8  | 1.2 dB  |
+| Peaking | 5288 Hz | 10.72 | 2.8 dB  |
+| Peaking | 8723 Hz |  8.25 | -3.5 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.2 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.2 dB  |
+| Peaking | 125 Hz   | 1.41 | 6.2 dB  |
+| Peaking | 250 Hz   | 1.41 | -2.7 dB |
+| Peaking | 500 Hz   | 1.41 | 0.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -0.6 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.8 dB |
+| Peaking | 16000 Hz | 1.41 | 0.7 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Apple%20iPod%20Ear%20Buds%20sample%20A/Apple%20iPod%20Ear%20Buds%20sample%20A.png)

@@ -1,38 +1,56 @@
 # Fiio FH1
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -6.9; 23 -7.5; 25 -7.8; 28 -7.5; 31 -7.4; 34 -7.4; 37 -7.3; 41 -7.3; 45 -7.3; 49 -7.3; 54 -7.6; 60 -7.6; 66 -8.0; 72 -7.9; 79 -8.1; 87 -8.2; 96 -7.7; 106 -8.0; 116 -7.6; 128 -7.6; 141 -7.3; 155 -7.0; 170 -6.8; 187 -6.5; 206 -6.2; 227 -5.7; 249 -5.3; 274 -4.8; 302 -4.4; 332 -3.9; 365 -3.4; 402 -2.9; 442 -2.5; 486 -2.0; 535 -1.5; 588 -1.1; 647 -0.6; 712 -0.1; 783 0.3; 861 0.5; 947 0.3; 1042 -0.4; 1146 -1.5; 1261 -2.6; 1387 -3.4; 1526 -3.9; 1678 -4.0; 1846 -4.0; 2031 -3.8; 2234 -3.1; 2457 -1.8; 2703 -0.5; 2973 0.3; 3270 0.7; 3597 1.6; 3957 4.6; 4353 5.2; 4788 1.4; 5267 3.4; 5793 5.2; 6373 5.2; 7010 2.5; 7711 -3.3; 8482 -6.6; 9330 -3.6; 10263 -0.1; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 -0.3; 18182 -2.6; 20000 -5.9
+GraphicEQ: 21 -12.6; 23 -13.2; 25 -13.5; 28 -13.2; 31 -13.0; 34 -13.1; 37 -13.0; 41 -13.0; 45 -13.0; 49 -13.0; 54 -13.3; 60 -13.3; 66 -13.7; 72 -13.6; 79 -13.8; 87 -13.9; 96 -13.4; 106 -13.6; 116 -13.3; 128 -13.3; 141 -12.9; 155 -12.7; 170 -12.5; 187 -12.2; 206 -11.9; 227 -11.4; 249 -11.0; 274 -10.5; 302 -10.0; 332 -9.6; 365 -9.1; 402 -8.6; 442 -8.1; 486 -7.7; 535 -7.2; 588 -6.7; 647 -6.3; 712 -5.8; 783 -5.4; 861 -5.2; 947 -5.3; 1042 -6.1; 1146 -7.1; 1261 -8.2; 1387 -9.0; 1526 -9.5; 1678 -9.7; 1846 -9.7; 2031 -9.5; 2234 -8.7; 2457 -7.4; 2703 -6.2; 2973 -5.4; 3270 -5.0; 3597 -4.1; 3957 -1.1; 4353 -0.5; 4788 -4.3; 5267 -2.2; 5793 -0.5; 6373 -0.5; 7010 -3.2; 7711 -8.9; 8482 -12.3; 9330 -9.3; 10263 -5.8; 11289 -5.7; 12418 -5.7; 13660 -5.7; 15026 -5.7; 16529 -5.9; 18182 -8.2; 20000 -11.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Fiio FH1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fiio FH1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.2dB**.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 62 Hz   | 0.22 | -8.3 dB |
-| Peaking | 1791 Hz | 2.09 | -4.5 dB |
-| Peaking | 4124 Hz | 6.14 | 5.7 dB  |
-| Peaking | 6251 Hz | 2.67 | 6.7 dB  |
-| Peaking | 8357 Hz | 4.06 | -8.7 dB |
-| Peaking | 24 Hz   | 1.41 | -1.1 dB |
-| Peaking | 44 Hz   | 1.19 | 1.1 dB  |
-| Peaking | 223 Hz  | 0.83 | -0.6 dB |
-| Peaking | 870 Hz  | 1.39 | 2.0 dB  |
-| Peaking | 1299 Hz | 3.25 | -1.9 dB |
+| Peaking | 1793 Hz | 2.08 | -4.5 dB |
+| Peaking | 4118 Hz | 5.92 | 5.6 dB  |
+| Peaking | 6257 Hz | 2.63 | 6.7 dB  |
+| Peaking | 8373 Hz | 3.91 | -8.7 dB |
+| Peaking | 23 Hz   | 1.69 | -1.2 dB |
+| Peaking | 43 Hz   | 1.28 | 1.0 dB  |
+| Peaking | 223 Hz  | 0.84 | -0.6 dB |
+| Peaking | 871 Hz  | 1.39 | 2.0 dB  |
+| Peaking | 1298 Hz | 3.26 | -1.9 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -7.3 dB |
+| Peaking | 62 Hz    | 1.41 | -5.8 dB |
+| Peaking | 125 Hz   | 1.41 | -6.2 dB |
+| Peaking | 250 Hz   | 1.41 | -4.3 dB |
+| Peaking | 500 Hz   | 1.41 | -0.6 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.8 dB  |
+| Peaking | 2000 Hz  | 1.41 | -5.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.3 dB |
+| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Fiio%20FH1/Fiio%20FH1.png)

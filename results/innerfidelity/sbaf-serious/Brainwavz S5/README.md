@@ -1,38 +1,56 @@
 # Brainwavz S5
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -2.3dB
-GraphicEQ: 21 -9.1; 23 -9.3; 25 -9.4; 28 -9.5; 31 -9.6; 34 -9.7; 37 -9.7; 41 -9.8; 45 -9.9; 49 -10.0; 54 -10.0; 60 -10.2; 66 -10.3; 72 -10.4; 79 -10.5; 87 -10.7; 96 -10.8; 106 -10.7; 116 -10.6; 128 -10.5; 141 -10.3; 155 -10.1; 170 -9.7; 187 -9.3; 206 -8.9; 227 -8.3; 249 -7.8; 274 -7.2; 302 -6.6; 332 -5.9; 365 -5.2; 402 -4.6; 442 -3.9; 486 -3.4; 535 -2.7; 588 -1.7; 647 -1.1; 712 -0.6; 783 0.0; 861 0.2; 947 0.1; 1042 -0.0; 1146 0.0; 1261 0.3; 1387 -0.2; 1526 -0.1; 1678 -0.1; 1846 0.4; 2031 0.9; 2234 1.3; 2457 2.1; 2703 1.9; 2973 1.6; 3270 0.6; 3597 -1.7; 3957 -4.1; 4353 -7.1; 4788 -9.0; 5267 -11.4; 5793 -10.5; 6373 -6.6; 7010 -3.7; 7711 -4.2; 8482 -7.8; 9330 -8.6; 10263 -2.8; 11289 0.0; 12418 0.0; 13660 -1.8; 15026 -6.1; 16529 -3.9; 18182 -2.3; 20000 -3.6
+GraphicEQ: 21 -11.8; 23 -11.9; 25 -12.0; 28 -12.1; 31 -12.2; 34 -12.3; 37 -12.3; 41 -12.4; 45 -12.5; 49 -12.6; 54 -12.6; 60 -12.8; 66 -12.9; 72 -13.0; 79 -13.1; 87 -13.3; 96 -13.4; 106 -13.3; 116 -13.2; 128 -13.1; 141 -12.9; 155 -12.7; 170 -12.3; 187 -11.9; 206 -11.5; 227 -10.9; 249 -10.4; 274 -9.8; 302 -9.2; 332 -8.5; 365 -7.9; 402 -7.2; 442 -6.5; 486 -6.0; 535 -5.3; 588 -4.3; 647 -3.7; 712 -3.2; 783 -2.6; 861 -2.4; 947 -2.5; 1042 -2.6; 1146 -2.6; 1261 -2.3; 1387 -2.8; 1526 -2.8; 1678 -2.7; 1846 -2.2; 2031 -1.7; 2234 -1.3; 2457 -0.5; 2703 -0.7; 2973 -1.0; 3270 -2.0; 3597 -4.3; 3957 -6.7; 4353 -9.8; 4788 -11.7; 5267 -14.0; 5793 -13.1; 6373 -9.2; 7010 -6.3; 7711 -6.8; 8482 -10.4; 9330 -11.2; 10263 -5.4; 11289 -2.6; 12418 -2.6; 13660 -4.4; 15026 -8.7; 16529 -6.5; 18182 -4.9; 20000 -6.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Brainwavz S5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-23**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Brainwavz S5 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 32 Hz    | 0.25 | -9.2 dB  |
-| Peaking | 140 Hz   | 0.72 | -5.6 dB  |
-| Peaking | 294 Hz   | 1.28 | -3.1 dB  |
-| Peaking | 5368 Hz  | 2.79 | -11.2 dB |
-| Peaking | 15820 Hz | 0.33 | -3.3 dB  |
-| Peaking | 2869 Hz  | 1.48 | 3.4 dB   |
-| Peaking | 4258 Hz  | 3.09 | -3.6 dB  |
-| Peaking | 9119 Hz  | 3.42 | -10.7 dB |
-| Peaking | 11589 Hz | 0.91 | 6.4 dB   |
-| Peaking | 15008 Hz | 2.77 | -6.3 dB  |
+| Peaking | 140 Hz   | 0.73 | -5.6 dB  |
+| Peaking | 295 Hz   | 1.29 | -3.1 dB  |
+| Peaking | 5371 Hz  | 2.75 | -11.2 dB |
+| Peaking | 16321 Hz | 0.26 | -3.4 dB  |
+| Peaking | 3408 Hz  | 1.02 | 4.6 dB   |
+| Peaking | 4177 Hz  | 2.57 | -5.5 dB  |
+| Peaking | 9106 Hz  | 4.27 | -7.9 dB  |
+| Peaking | 11476 Hz | 2.61 | 4.6 dB   |
+| Peaking | 20107 Hz | 3.32 | -1.3 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -9.4 dB |
+| Peaking | 62 Hz    | 1.41 | -7.4 dB |
+| Peaking | 125 Hz   | 1.41 | -8.7 dB |
+| Peaking | 250 Hz   | 1.41 | -6.4 dB |
+| Peaking | 500 Hz   | 1.41 | -1.5 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | 3.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | -4.9 dB |
+| Peaking | 8000 Hz  | 1.41 | -6.7 dB |
+| Peaking | 16000 Hz | 1.41 | -4.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Brainwavz%20S5/Brainwavz%20S5.png)

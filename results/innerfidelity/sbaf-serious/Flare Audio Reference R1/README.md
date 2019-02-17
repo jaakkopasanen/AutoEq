@@ -1,38 +1,56 @@
 # Flare Audio Reference R1
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 5.0; 60 3.2; 66 1.6; 72 0.3; 79 -1.0; 87 -2.1; 96 -2.9; 106 -3.9; 116 -4.4; 128 -4.8; 141 -5.1; 155 -5.3; 170 -5.3; 187 -5.4; 206 -5.5; 227 -5.5; 249 -5.6; 274 -5.7; 302 -5.7; 332 -5.6; 365 -5.6; 402 -5.7; 442 -5.9; 486 -6.6; 535 -7.2; 588 -7.3; 647 -7.4; 712 -7.1; 783 -6.0; 861 -4.2; 947 -1.7; 1042 1.5; 1146 5.0; 1261 6.0; 1387 6.0; 1526 6.0; 1678 1.3; 1846 -3.9; 2031 -4.2; 2234 -0.2; 2457 3.5; 2703 5.7; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -1.5; 60 -3.3; 66 -4.9; 72 -6.2; 79 -7.5; 87 -8.6; 96 -9.4; 106 -10.4; 116 -10.9; 128 -11.3; 141 -11.6; 155 -11.8; 170 -11.8; 187 -11.9; 206 -12.0; 227 -12.0; 249 -12.1; 274 -12.2; 302 -12.2; 332 -12.1; 365 -12.1; 402 -12.2; 442 -12.4; 486 -13.1; 535 -13.7; 588 -13.8; 647 -13.9; 712 -13.6; 783 -12.5; 861 -10.7; 947 -8.2; 1042 -5.0; 1146 -1.5; 1261 -0.5; 1387 -0.5; 1526 -0.5; 1678 -5.2; 1846 -10.4; 2031 -10.7; 2234 -6.7; 2457 -3.0; 2703 -0.8; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Flare Audio Reference R1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Flare Audio Reference R1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-8.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.7dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 45 Hz   | 0.45 | 10.1 dB  |
-| Peaking | 103 Hz  | 0.59 | -8.7 dB  |
-| Peaking | 1269 Hz | 1.87 | 17.7 dB  |
-| Peaking | 1379 Hz | 0.31 | -13.6 dB |
-| Peaking | 3617 Hz | 0.77 | 14.6 dB  |
-| Peaking | 1562 Hz | 7.58 | 5.4 dB   |
-| Peaking | 1933 Hz | 4.46 | -5.7 dB  |
-| Peaking | 2621 Hz | 3.71 | 4.3 dB   |
-| Peaking | 5929 Hz | 2.1  | 7.4 dB   |
-| Peaking | 5962 Hz | 0.84 | -4.7 dB  |
+| Peaking | 45 Hz   | 0.45 | 9.9 dB   |
+| Peaking | 104 Hz  | 0.59 | -8.6 dB  |
+| Peaking | 1264 Hz | 1.89 | 17.5 dB  |
+| Peaking | 1336 Hz | 0.32 | -13.1 dB |
+| Peaking | 3636 Hz | 0.78 | 14.0 dB  |
+| Peaking | 1564 Hz | 7.33 | 5.6 dB   |
+| Peaking | 1938 Hz | 4.28 | -5.7 dB  |
+| Peaking | 2631 Hz | 3.54 | 4.4 dB   |
+| Peaking | 5910 Hz | 2.08 | 7.3 dB   |
+| Peaking | 6009 Hz | 0.83 | -4.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 7.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.3 dB  |
+| Peaking | 125 Hz   | 1.41 | -5.4 dB |
+| Peaking | 250 Hz   | 1.41 | -3.3 dB |
+| Peaking | 500 Hz   | 1.41 | -8.3 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 8.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Flare%20Audio%20Reference%20R1/Flare%20Audio%20Reference%20R1.png)

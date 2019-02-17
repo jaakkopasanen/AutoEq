@@ -1,38 +1,56 @@
 # Stax SR-L300
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.3; 49 4.3; 54 3.5; 60 2.8; 66 2.2; 72 1.8; 79 1.5; 87 1.1; 96 0.9; 106 0.6; 116 0.9; 128 0.8; 141 0.9; 155 1.0; 170 1.1; 187 1.1; 206 1.2; 227 1.4; 249 1.4; 274 1.6; 302 1.6; 332 1.7; 365 1.7; 402 1.8; 442 1.8; 486 1.6; 535 1.5; 588 1.9; 647 1.7; 712 1.3; 783 1.1; 861 0.5; 947 -0.1; 1042 0.4; 1146 -0.0; 1261 -1.1; 1387 -1.0; 1526 0.1; 1678 1.8; 1846 2.9; 2031 2.7; 2234 1.6; 2457 0.9; 2703 0.6; 2973 2.0; 3270 2.7; 3597 2.8; 3957 2.1; 4353 0.7; 4788 0.4; 5267 1.7; 5793 0.6; 6373 0.2; 7010 0.5; 7711 -0.2; 8482 -3.0; 9330 -2.9; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 -0.1; 20000 -3.9
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -1.2; 49 -2.2; 54 -3.0; 60 -3.7; 66 -4.3; 72 -4.7; 79 -5.0; 87 -5.4; 96 -5.6; 106 -5.9; 116 -5.6; 128 -5.7; 141 -5.6; 155 -5.5; 170 -5.4; 187 -5.4; 206 -5.3; 227 -5.1; 249 -5.1; 274 -4.9; 302 -4.9; 332 -4.8; 365 -4.8; 402 -4.7; 442 -4.7; 486 -4.9; 535 -5.0; 588 -4.6; 647 -4.8; 712 -5.2; 783 -5.4; 861 -6.0; 947 -6.6; 1042 -6.1; 1146 -6.5; 1261 -7.6; 1387 -7.5; 1526 -6.4; 1678 -4.7; 1846 -3.6; 2031 -3.8; 2234 -4.9; 2457 -5.6; 2703 -5.9; 2973 -4.5; 3270 -3.8; 3597 -3.7; 3957 -4.4; 4353 -5.8; 4788 -6.1; 5267 -4.8; 5793 -5.9; 6373 -6.3; 7010 -6.0; 7711 -6.7; 8482 -9.5; 9330 -9.4; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.6; 20000 -10.4
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Stax SR-L300 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-L300 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.8dB**.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 29 Hz   | 0.79 | 6.6 dB  |
-| Peaking | 385 Hz  | 0.86 | 1.8 dB  |
-| Peaking | 3163 Hz | 1.02 | 2.1 dB  |
-| Peaking | 8834 Hz | 4.64 | -5.7 dB |
-| Peaking | 8858 Hz | 2.04 | 1.5 dB  |
-| Peaking | 636 Hz  | 5.01 | 0.8 dB  |
-| Peaking | 1346 Hz | 3.64 | -2.3 dB |
-| Peaking | 1907 Hz | 2.56 | 3.5 dB  |
-| Peaking | 2656 Hz | 1.38 | -2.5 dB |
-| Peaking | 3356 Hz | 3.51 | 2.3 dB  |
+| Peaking | 29 Hz   | 0.78 | 6.6 dB  |
+| Peaking | 384 Hz  | 0.85 | 1.8 dB  |
+| Peaking | 3164 Hz | 1.02 | 2.1 dB  |
+| Peaking | 8841 Hz | 1.9  | 1.5 dB  |
+| Peaking | 8864 Hz | 4.41 | -5.7 dB |
+| Peaking | 636 Hz  | 4.99 | 0.8 dB  |
+| Peaking | 1350 Hz | 3.66 | -2.3 dB |
+| Peaking | 1910 Hz | 2.55 | 3.6 dB  |
+| Peaking | 2644 Hz | 1.34 | -2.5 dB |
+| Peaking | 3365 Hz | 3.42 | 2.3 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 7.5 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.2 dB  |
+| Peaking | 125 Hz   | 1.41 | 0.0 dB  |
+| Peaking | 250 Hz   | 1.41 | 1.2 dB  |
+| Peaking | 500 Hz   | 1.41 | 2.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 2000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 2.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.6 dB |
+| Peaking | 16000 Hz | 1.41 | 0.0 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-L300/Stax%20SR-L300.png)

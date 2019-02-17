@@ -1,24 +1,22 @@
 # Fostex TH600
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -3.3; 23 -3.5; 25 -3.8; 28 -4.1; 31 -4.4; 34 -4.6; 37 -4.7; 41 -4.8; 45 -4.9; 49 -4.9; 54 -4.7; 60 -4.4; 66 -4.8; 72 -5.1; 79 -5.4; 87 -5.5; 96 -5.7; 106 -5.7; 116 -5.5; 128 -5.5; 141 -5.4; 155 -5.2; 170 -4.6; 187 -4.4; 206 -4.0; 227 -3.4; 249 -2.9; 274 -2.3; 302 -1.6; 332 -0.7; 365 0.3; 402 1.5; 442 3.0; 486 3.7; 535 3.6; 588 3.2; 647 2.1; 712 1.0; 783 1.2; 861 1.1; 947 0.1; 1042 0.1; 1146 0.3; 1261 0.6; 1387 0.6; 1526 0.6; 1678 0.5; 1846 0.7; 2031 1.1; 2234 2.2; 2457 5.1; 2703 3.7; 2973 5.7; 3270 5.6; 3597 4.9; 3957 4.5; 4353 0.9; 4788 -1.4; 5267 -1.0; 5793 -2.3; 6373 -2.1; 7010 -2.1; 7711 -0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 -2.4; 20000 -6.5
+GraphicEQ: 21 -9.4; 23 -9.7; 25 -10.0; 28 -10.3; 31 -10.5; 34 -10.7; 37 -10.9; 41 -11.0; 45 -11.1; 49 -11.1; 54 -10.9; 60 -10.6; 66 -10.9; 72 -11.3; 79 -11.6; 87 -11.7; 96 -11.9; 106 -11.8; 116 -11.7; 128 -11.7; 141 -11.6; 155 -11.4; 170 -10.8; 187 -10.6; 206 -10.2; 227 -9.6; 249 -9.1; 274 -8.5; 302 -7.7; 332 -6.9; 365 -5.9; 402 -4.7; 442 -3.2; 486 -2.4; 535 -2.6; 588 -3.0; 647 -4.1; 712 -5.2; 783 -5.0; 861 -5.0; 947 -6.1; 1042 -6.1; 1146 -5.8; 1261 -5.5; 1387 -5.5; 1526 -5.6; 1678 -5.7; 1846 -5.5; 2031 -5.1; 2234 -4.0; 2457 -1.1; 2703 -2.4; 2973 -0.5; 3270 -0.6; 3597 -1.3; 3957 -1.7; 4353 -5.3; 4788 -7.6; 5267 -7.2; 5793 -8.5; 6373 -8.3; 7010 -8.3; 7711 -6.5; 8482 -6.2; 9330 -6.2; 10263 -6.2; 11289 -6.2; 12418 -6.2; 13660 -6.2; 15026 -6.2; 16529 -6.2; 18182 -8.6; 20000 -12.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Fostex TH600 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Fostex TH600 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.4dB**.
 
@@ -26,11 +24,31 @@ When using independent subset of filters, apply preamp of **-6.4dB**.
 |:--------|:--------|:-----|:--------|
 | Peaking | 31 Hz   | 0.75 | -3.1 dB |
 | Peaking | 125 Hz  | 0.47 | -5.4 dB |
-| Peaking | 496 Hz  | 1.69 | 5.2 dB  |
-| Peaking | 3065 Hz | 2.4  | 6.3 dB  |
-| Peaking | 2470 Hz | 8    | 3.3 dB  |
-| Peaking | 2724 Hz | 5.45 | -1.6 dB |
-| Peaking | 3875 Hz | 6.69 | 3.4 dB  |
-| Peaking | 5664 Hz | 1.77 | -2.9 dB |
+| Peaking | 496 Hz  | 1.68 | 5.2 dB  |
+| Peaking | 3067 Hz | 2.38 | 6.3 dB  |
+| Peaking | 2476 Hz | 7.69 | 3.8 dB  |
+| Peaking | 2659 Hz | 4.39 | -1.8 dB |
+| Peaking | 3852 Hz | 6.58 | 3.4 dB  |
+| Peaking | 5672 Hz | 1.75 | -2.9 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -4.3 dB |
+| Peaking | 62 Hz    | 1.41 | -3.6 dB |
+| Peaking | 125 Hz   | 1.41 | -5.0 dB |
+| Peaking | 250 Hz   | 1.41 | -3.0 dB |
+| Peaking | 500 Hz   | 1.41 | 4.5 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.1 dB |
+| Peaking | 2000 Hz  | 1.41 | 2.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.1 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fostex%20TH600/Fostex%20TH600.png)

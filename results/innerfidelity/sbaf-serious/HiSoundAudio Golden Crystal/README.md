@@ -1,38 +1,56 @@
 # HiSoundAudio Golden Crystal
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -2.9dB
-GraphicEQ: 21 -7.8; 23 -7.8; 25 -7.8; 28 -7.7; 31 -7.6; 34 -7.5; 37 -7.4; 41 -7.3; 45 -7.3; 49 -7.2; 54 -7.1; 60 -7.1; 66 -7.1; 72 -7.1; 79 -7.1; 87 -7.1; 96 -7.2; 106 -7.0; 116 -6.8; 128 -6.7; 141 -6.5; 155 -6.2; 170 -5.9; 187 -5.5; 206 -5.2; 227 -4.7; 249 -4.3; 274 -3.8; 302 -3.3; 332 -2.9; 365 -2.3; 402 -1.9; 442 -1.3; 486 -1.0; 535 -0.5; 588 0.1; 647 0.4; 712 0.4; 783 0.9; 861 0.7; 947 0.3; 1042 -0.2; 1146 -0.7; 1261 -1.1; 1387 -1.7; 1526 -2.2; 1678 -3.1; 1846 -3.6; 2031 -3.5; 2234 -0.8; 2457 2.7; 2703 1.4; 2973 0.8; 3270 1.7; 3597 2.5; 3957 2.4; 4353 1.0; 4788 0.4; 5267 0.5; 5793 -0.9; 6373 -5.4; 7010 -8.4; 7711 -6.4; 8482 -3.4; 9330 -2.8; 10263 -4.7; 11289 -3.2; 12418 0.0; 13660 0.0; 15026 0.0; 16529 -2.8; 18182 -3.9; 20000 0.0
+GraphicEQ: 21 -11.0; 23 -11.0; 25 -11.0; 28 -10.9; 31 -10.8; 34 -10.7; 37 -10.6; 41 -10.6; 45 -10.5; 49 -10.5; 54 -10.4; 60 -10.4; 66 -10.3; 72 -10.3; 79 -10.4; 87 -10.4; 96 -10.4; 106 -10.2; 116 -10.0; 128 -9.9; 141 -9.7; 155 -9.5; 170 -9.1; 187 -8.8; 206 -8.5; 227 -7.9; 249 -7.5; 274 -7.1; 302 -6.6; 332 -6.1; 365 -5.6; 402 -5.1; 442 -4.5; 486 -4.2; 535 -3.8; 588 -3.1; 647 -2.9; 712 -2.8; 783 -2.4; 861 -2.6; 947 -2.9; 1042 -3.5; 1146 -4.0; 1261 -4.3; 1387 -4.9; 1526 -5.4; 1678 -6.3; 1846 -6.8; 2031 -6.8; 2234 -4.1; 2457 -0.5; 2703 -1.9; 2973 -2.5; 3270 -1.6; 3597 -0.7; 3957 -0.8; 4353 -2.3; 4788 -2.8; 5267 -2.7; 5793 -4.2; 6373 -8.6; 7010 -11.6; 7711 -9.6; 8482 -6.6; 9330 -6.1; 10263 -8.0; 11289 -6.4; 12418 -3.2; 13660 -3.2; 15026 -3.2; 16529 -6.1; 18182 -7.1; 20000 -3.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `HiSoundAudio Golden Crystal GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-29**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiSoundAudio Golden Crystal ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.2dB**.
+When using independent subset of filters, apply preamp of **--0.3dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 24 Hz    |  0.19 | -7.5 dB |
-| Peaking | 164 Hz   |  0.78 | -3.3 dB |
-| Peaking | 1798 Hz  |  4.65 | -4.1 dB |
-| Peaking | 7250 Hz  |  3.6  | -8.7 dB |
-| Peaking | 17695 Hz |  2.63 | -4.6 dB |
-| Peaking | 737 Hz   |  3.05 | 1.4 dB  |
-| Peaking | 2501 Hz  | 10.1  | 3.1 dB  |
-| Peaking | 3793 Hz  |  2.85 | 3.1 dB  |
-| Peaking | 10641 Hz |  3.65 | -6.1 dB |
-| Peaking | 11792 Hz |  1.6  | 2.2 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 24 Hz    | 0.19 | -7.5 dB |
+| Peaking | 164 Hz   | 0.78 | -3.3 dB |
+| Peaking | 1798 Hz  | 4.66 | -4.1 dB |
+| Peaking | 7231 Hz  | 3.53 | -8.7 dB |
+| Peaking | 17783 Hz | 1.84 | -4.6 dB |
+| Peaking | 735 Hz   | 3.03 | 1.4 dB  |
+| Peaking | 3410 Hz  | 1.94 | 1.5 dB  |
+| Peaking | 3963 Hz  | 2.12 | 1.5 dB  |
+| Peaking | 10644 Hz | 3.43 | -5.6 dB |
+| Peaking | 12187 Hz | 1.59 | 1.9 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -7.8 dB |
+| Peaking | 62 Hz    | 1.41 | -5.1 dB |
+| Peaking | 125 Hz   | 1.41 | -5.6 dB |
+| Peaking | 250 Hz   | 1.41 | -3.6 dB |
+| Peaking | 500 Hz   | 1.41 | 0.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -6.9 dB |
+| Peaking | 16000 Hz | 1.41 | -1.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiSoundAudio%20Golden%20Crystal/HiSoundAudio%20Golden%20Crystal.png)

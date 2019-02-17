@@ -5,20 +5,18 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 -0.4; 25 -0.8; 28 -1.3; 31 -1.8; 34 -2.1; 37 -2.4; 41 -2.7; 45 -3.0; 49 -3.5; 54 -4.0; 60 -4.7; 66 -5.2; 72 -5.5; 79 -5.8; 87 -6.0; 96 -6.2; 106 -6.2; 116 -6.1; 128 -5.8; 141 -5.4; 155 -4.9; 170 -4.3; 187 -3.8; 206 -3.3; 227 -2.9; 249 -2.9; 274 -3.1; 302 -3.5; 332 -3.8; 365 -4.0; 402 -3.6; 442 -2.7; 486 -1.5; 535 -0.3; 588 0.5; 647 0.7; 712 0.3; 783 -0.9; 861 -1.6; 947 -0.6; 1042 0.6; 1146 2.5; 1261 3.5; 1387 3.6; 1526 3.6; 1678 3.8; 1846 4.1; 2031 4.6; 2234 5.7; 2457 6.0; 2703 6.0; 2973 5.2; 3270 5.2; 3597 6.0; 3957 6.0; 4353 5.6; 4788 1.5; 5267 3.4; 5793 5.9; 6373 4.6; 7010 2.5; 7711 -0.3; 8482 -2.4; 9330 -2.4; 10263 -0.1; 11289 0.0; 12418 0.0; 13660 -1.1; 15026 -3.5; 16529 -0.5; 18182 0.0
+GraphicEQ: 21 -6.5; 23 -6.9; 25 -7.3; 28 -7.8; 31 -8.3; 34 -8.6; 37 -8.9; 41 -9.2; 45 -9.5; 49 -10.0; 54 -10.5; 60 -11.2; 66 -11.7; 72 -12.0; 79 -12.3; 87 -12.5; 96 -12.7; 106 -12.7; 116 -12.6; 128 -12.3; 141 -11.9; 155 -11.4; 170 -10.8; 187 -10.3; 206 -9.8; 227 -9.4; 249 -9.4; 274 -9.6; 302 -10.0; 332 -10.3; 365 -10.5; 402 -10.1; 442 -9.2; 486 -8.0; 535 -6.8; 588 -6.0; 647 -5.8; 712 -6.2; 783 -7.4; 861 -8.1; 947 -7.1; 1042 -5.9; 1146 -4.0; 1261 -3.0; 1387 -2.9; 1526 -2.9; 1678 -2.7; 1846 -2.4; 2031 -1.9; 2234 -0.8; 2457 -0.5; 2703 -0.5; 2973 -1.3; 3270 -1.3; 3597 -0.5; 3957 -0.5; 4353 -0.9; 4788 -5.0; 5267 -3.1; 5793 -0.6; 6373 -1.9; 7010 -4.0; 7711 -6.8; 8482 -8.9; 9330 -8.9; 10263 -6.6; 11289 -6.5; 12418 -6.5; 13660 -7.6; 15026 -10.0; 16529 -7.0; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Microsoft Surface Headphones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Microsoft Surface Headphones ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
@@ -29,11 +27,28 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 | Peaking | 2196 Hz  | 0.92 | 5.5 dB  |
 | Peaking | 3844 Hz  | 3.31 | 3.9 dB  |
 | Peaking | 5988 Hz  | 5.68 | 5.1 dB  |
-| Peaking | 396 Hz   | 1.85 | -4.2 dB |
+| Peaking | 397 Hz   | 1.85 | -4.2 dB |
 | Peaking | 531 Hz   | 0.77 | 3.4 dB  |
-| Peaking | 863 Hz   | 3.58 | -3.6 dB |
+| Peaking | 861 Hz   | 3.58 | -3.6 dB |
 | Peaking | 8833 Hz  | 4.98 | -3.7 dB |
 | Peaking | 14870 Hz | 3.74 | -4.0 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -0.5 dB |
+| Peaking | 62 Hz    | 1.41 | -4.5 dB |
+| Peaking | 125 Hz   | 1.41 | -5.0 dB |
+| Peaking | 250 Hz   | 1.41 | -2.4 dB |
+| Peaking | 500 Hz   | 1.41 | -1.3 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | 4.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 16000 Hz | 1.41 | -2.2 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

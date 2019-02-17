@@ -1,38 +1,56 @@
 # Sony MDR-1000X Wired NC Active
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -2.4dB
-GraphicEQ: 21 -4.6; 23 -4.6; 25 -4.6; 28 -4.6; 31 -4.7; 34 -4.7; 37 -4.8; 41 -5.0; 45 -5.1; 49 -5.1; 54 -5.3; 60 -5.4; 66 -5.4; 72 -5.6; 79 -5.8; 87 -6.0; 96 -6.3; 106 -6.4; 116 -6.5; 128 -6.6; 141 -6.5; 155 -6.5; 170 -6.1; 187 -6.0; 206 -5.8; 227 -5.4; 249 -5.1; 274 -4.6; 302 -4.1; 332 -3.6; 365 -3.2; 402 -2.9; 442 -2.5; 486 -2.5; 535 -2.2; 588 -1.8; 647 -2.4; 712 -2.8; 783 -2.2; 861 -1.6; 947 -0.7; 1042 0.6; 1146 2.1; 1261 1.6; 1387 0.9; 1526 -1.2; 1678 -4.0; 1846 -6.2; 2031 -6.4; 2234 -4.9; 2457 -2.1; 2703 -1.7; 2973 -2.6; 3270 -2.8; 3597 -2.4; 3957 -5.1; 4353 -6.3; 4788 -3.9; 5267 -5.5; 5793 -7.4; 6373 -5.9; 7010 -2.9; 7711 -3.9; 8482 -5.3; 9330 -4.9; 10263 -2.9; 11289 -1.4; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 0.0; 20000 -4.2
+GraphicEQ: 21 -7.2; 23 -7.2; 25 -7.2; 28 -7.3; 31 -7.3; 34 -7.4; 37 -7.4; 41 -7.6; 45 -7.7; 49 -7.8; 54 -7.9; 60 -8.0; 66 -8.0; 72 -8.2; 79 -8.4; 87 -8.6; 96 -8.9; 106 -9.0; 116 -9.1; 128 -9.2; 141 -9.2; 155 -9.1; 170 -8.7; 187 -8.7; 206 -8.4; 227 -8.1; 249 -7.7; 274 -7.2; 302 -6.8; 332 -6.3; 365 -5.8; 402 -5.5; 442 -5.2; 486 -5.2; 535 -4.9; 588 -4.4; 647 -5.0; 712 -5.5; 783 -4.9; 861 -4.2; 947 -3.4; 1042 -2.1; 1146 -0.5; 1261 -1.0; 1387 -1.7; 1526 -3.8; 1678 -6.6; 1846 -8.9; 2031 -9.1; 2234 -7.5; 2457 -4.8; 2703 -4.3; 2973 -5.3; 3270 -5.4; 3597 -5.0; 3957 -7.8; 4353 -9.0; 4788 -6.5; 5267 -8.1; 5793 -10.0; 6373 -8.5; 7010 -5.6; 7711 -6.6; 8482 -8.0; 9330 -7.5; 10263 -5.6; 11289 -4.1; 12418 -2.6; 13660 -2.6; 15026 -2.6; 16529 -2.6; 18182 -2.6; 20000 -6.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony MDR-1000X Wired NC Active GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-23**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-1000X Wired NC Active ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-0.1dB**.
+When using independent subset of filters, apply preamp of **--0.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 0.23 | -4.1 dB |
-| Peaking | 159 Hz   | 0.48 | -5.6 dB |
-| Peaking | 1965 Hz  | 4.4  | -6.6 dB |
-| Peaking | 5308 Hz  | 1.28 | -6.0 dB |
-| Peaking | 9025 Hz  | 3.64 | -3.9 dB |
-| Peaking | 759 Hz   | 2.66 | -1.8 dB |
-| Peaking | 1219 Hz  | 2.6  | 3.5 dB  |
-| Peaking | 1721 Hz  | 5.94 | -2.0 dB |
-| Peaking | 3595 Hz  | 3.63 | -0.7 dB |
-| Peaking | 13007 Hz | 3.06 | 0.8 dB  |
+| Peaking | 19 Hz    | 0.18 | -4.1 dB |
+| Peaking | 166 Hz   | 0.49 | -5.2 dB |
+| Peaking | 1957 Hz  | 4.73 | -6.4 dB |
+| Peaking | 5878 Hz  | 0.87 | -6.0 dB |
+| Peaking | 19992 Hz | 2.7  | -4.1 dB |
+| Peaking | 735 Hz   | 3.39 | -1.7 dB |
+| Peaking | 1198 Hz  | 3.97 | 3.6 dB  |
+| Peaking | 7167 Hz  | 4.9  | 4.4 dB  |
+| Peaking | 9071 Hz  | 1.15 | -3.9 dB |
+| Peaking | 11703 Hz | 1.13 | 2.8 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -4.6 dB |
+| Peaking | 62 Hz    | 1.41 | -3.8 dB |
+| Peaking | 125 Hz   | 1.41 | -5.7 dB |
+| Peaking | 250 Hz   | 1.41 | -3.8 dB |
+| Peaking | 500 Hz   | 1.41 | -2.2 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.8 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.8 dB |
+| Peaking | 4000 Hz  | 1.41 | -3.3 dB |
+| Peaking | 8000 Hz  | 1.41 | -5.0 dB |
+| Peaking | 16000 Hz | 1.41 | 0.6 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MDR-1000X%20Wired%20NC%20Active/Sony%20MDR-1000X%20Wired%20NC%20Active.png)

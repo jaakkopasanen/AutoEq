@@ -1,24 +1,22 @@
 # Marshall MID ANC
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.2dB
-GraphicEQ: 21 -3.8; 23 -3.5; 25 -3.4; 28 -3.3; 31 -3.3; 34 -3.3; 37 -3.2; 41 -3.2; 45 -3.3; 49 -3.5; 54 -3.6; 60 -3.7; 66 -3.8; 72 -3.9; 79 -4.0; 87 -4.1; 96 -4.1; 106 -4.0; 116 -3.8; 128 -3.6; 141 -3.4; 155 -3.2; 170 -2.8; 187 -2.5; 206 -2.1; 227 -1.7; 249 -1.4; 274 -1.2; 302 -0.9; 332 -0.6; 365 -0.4; 402 -0.2; 442 -0.2; 486 -0.2; 535 -0.3; 588 -0.3; 647 -0.2; 712 -0.2; 783 -0.2; 861 -0.2; 947 -0.1; 1042 0.0; 1146 -0.0; 1261 -0.7; 1387 -1.0; 1526 -0.9; 1678 -1.9; 1846 -2.1; 2031 -2.4; 2234 -2.1; 2457 -2.1; 2703 -2.9; 2973 -4.7; 3270 -6.6; 3597 -7.0; 3957 -8.2; 4353 -7.8; 4788 -3.3; 5267 -0.1; 5793 1.0; 6373 -3.8; 7010 -8.0; 7711 -8.9; 8482 -4.2; 9330 0.0; 10263 0.0; 11289 -5.8; 12418 -12.0; 13660 -13.2; 15026 -9.9; 16529 -4.8; 18182 -1.2; 20000 -1.0
+GraphicEQ: 21 -5.3; 23 -5.1; 25 -4.9; 28 -4.8; 31 -4.8; 34 -4.8; 37 -4.7; 41 -4.8; 45 -4.8; 49 -5.0; 54 -5.2; 60 -5.2; 66 -5.3; 72 -5.5; 79 -5.5; 87 -5.6; 96 -5.6; 106 -5.5; 116 -5.3; 128 -5.2; 141 -4.9; 155 -4.7; 170 -4.3; 187 -4.0; 206 -3.6; 227 -3.3; 249 -2.9; 274 -2.8; 302 -2.4; 332 -2.1; 365 -1.9; 402 -1.8; 442 -1.7; 486 -1.7; 535 -1.8; 588 -1.8; 647 -1.8; 712 -1.7; 783 -1.8; 861 -1.7; 947 -1.6; 1042 -1.5; 1146 -1.5; 1261 -2.2; 1387 -2.5; 1526 -2.4; 1678 -3.5; 1846 -3.6; 2031 -3.9; 2234 -3.6; 2457 -3.6; 2703 -4.4; 2973 -6.2; 3270 -8.1; 3597 -8.5; 3957 -9.8; 4353 -9.3; 4788 -4.8; 5267 -1.6; 5793 -0.5; 6373 -5.3; 7010 -9.5; 7711 -10.4; 8482 -5.7; 9330 -1.5; 10263 -1.5; 11289 -7.3; 12418 -13.5; 13660 -14.7; 15026 -11.4; 16529 -6.4; 18182 -2.7; 20000 -2.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Marshall MID ANC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-12**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Marshall MID ANC ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.2dB**.
 
@@ -29,10 +27,30 @@ When using independent subset of filters, apply preamp of **--0.2dB**.
 | Peaking | 3720 Hz  | 1.74 | -7.6 dB  |
 | Peaking | 13708 Hz | 1.58 | -14.0 dB |
 | Peaking | 21916 Hz | 1.78 | -11.7 dB |
-| Peaking | 1817 Hz  | 4.76 | -1.3 dB  |
-| Peaking | 4273 Hz  | 9.75 | -3.9 dB  |
-| Peaking | 5752 Hz  | 2.36 | 7.9 dB   |
-| Peaking | 7307 Hz  | 2.06 | -11.1 dB |
-| Peaking | 9491 Hz  | 3.09 | 7.7 dB   |
+| Peaking | 1815 Hz  | 4.76 | -1.3 dB  |
+| Peaking | 4234 Hz  | 9.75 | -3.9 dB  |
+| Peaking | 5695 Hz  | 2.36 | 8.0 dB   |
+| Peaking | 7350 Hz  | 2.06 | -11.2 dB |
+| Peaking | 9591 Hz  | 3.08 | 7.7 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -3.2 dB  |
+| Peaking | 62 Hz    | 1.41 | -2.9 dB  |
+| Peaking | 125 Hz   | 1.41 | -3.4 dB  |
+| Peaking | 250 Hz   | 1.41 | -0.8 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.1 dB   |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB   |
+| Peaking | 2000 Hz  | 1.41 | -1.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | -5.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.5 dB  |
+| Peaking | 16000 Hz | 1.41 | -11.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Marshall%20MID%20ANC/Marshall%20MID%20ANC.png)

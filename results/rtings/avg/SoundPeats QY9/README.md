@@ -1,38 +1,56 @@
 # SoundPeats QY9
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 3.8; 25 3.4; 28 2.8; 31 2.3; 34 1.8; 37 1.4; 41 1.0; 45 0.5; 49 0.1; 54 -0.4; 60 -1.3; 66 -2.0; 72 -2.6; 79 -3.4; 87 -4.2; 96 -5.1; 106 -6.0; 116 -6.8; 128 -7.6; 141 -8.3; 155 -8.8; 170 -9.3; 187 -9.8; 206 -10.1; 227 -10.2; 249 -10.0; 274 -9.6; 302 -9.2; 332 -8.7; 365 -8.1; 402 -7.4; 442 -6.6; 486 -5.6; 535 -4.4; 588 -3.2; 647 -1.9; 712 -1.1; 783 -0.8; 861 -0.8; 947 -0.4; 1042 0.4; 1146 1.1; 1261 1.6; 1387 2.0; 1526 3.2; 1678 4.4; 1846 5.7; 2031 6.0; 2234 6.0; 2457 6.0; 2703 4.8; 2973 2.1; 3270 1.0; 3597 0.2; 3957 -1.1; 4353 -2.8; 4788 -3.9; 5267 -5.0; 5793 -5.9; 6373 -5.5; 7010 -3.4; 7711 -2.7; 8482 -3.7; 9330 -2.3; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -0.2; 15026 -2.9; 16529 -3.6; 18182 -3.5; 20000 -3.2
+GraphicEQ: 21 -2.2; 23 -2.7; 25 -3.1; 28 -3.7; 31 -4.2; 34 -4.7; 37 -5.1; 41 -5.5; 45 -6.0; 49 -6.4; 54 -6.9; 60 -7.8; 66 -8.5; 72 -9.1; 79 -9.9; 87 -10.7; 96 -11.6; 106 -12.5; 116 -13.3; 128 -14.1; 141 -14.8; 155 -15.3; 170 -15.8; 187 -16.3; 206 -16.6; 227 -16.7; 249 -16.5; 274 -16.1; 302 -15.7; 332 -15.2; 365 -14.6; 402 -13.9; 442 -13.1; 486 -12.1; 535 -10.9; 588 -9.7; 647 -8.4; 712 -7.6; 783 -7.3; 861 -7.3; 947 -6.9; 1042 -6.1; 1146 -5.4; 1261 -4.9; 1387 -4.5; 1526 -3.3; 1678 -2.1; 1846 -0.8; 2031 -0.5; 2234 -0.5; 2457 -0.5; 2703 -1.7; 2973 -4.4; 3270 -5.5; 3597 -6.3; 3957 -7.6; 4353 -9.3; 4788 -10.4; 5267 -11.5; 5793 -12.4; 6373 -12.0; 7010 -9.9; 7711 -9.2; 8482 -10.2; 9330 -8.8; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.7; 15026 -9.4; 16529 -10.1; 18182 -10.0; 20000 -9.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `SoundPeats QY9 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `SoundPeats QY9 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 16 Hz    | 0.47 | 4.8 dB   |
+| Peaking | 16 Hz    | 0.48 | 4.8 dB   |
 | Peaking | 216 Hz   | 0.53 | -10.7 dB |
-| Peaking | 2132 Hz  | 1.05 | 7.3 dB   |
-| Peaking | 5537 Hz  | 1.33 | -6.7 dB  |
-| Peaking | 18094 Hz | 1.24 | -4.0 dB  |
-| Peaking | 417 Hz   | 2.73 | -1.0 dB  |
-| Peaking | 692 Hz   | 3.09 | 1.4 dB   |
-| Peaking | 1414 Hz  | 5.88 | -0.7 dB  |
-| Peaking | 8808 Hz  | 6.34 | -2.8 dB  |
-| Peaking | 10547 Hz | 2.01 | 1.7 dB   |
+| Peaking | 2136 Hz  | 1.04 | 7.4 dB   |
+| Peaking | 5536 Hz  | 1.3  | -6.7 dB  |
+| Peaking | 18315 Hz | 0.84 | -4.1 dB  |
+| Peaking | 418 Hz   | 2.76 | -1.0 dB  |
+| Peaking | 692 Hz   | 3.08 | 1.4 dB   |
+| Peaking | 1421 Hz  | 6.01 | -0.7 dB  |
+| Peaking | 8831 Hz  | 6.12 | -2.8 dB  |
+| Peaking | 10599 Hz | 1.83 | 1.7 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.6 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.8 dB |
+| Peaking | 125 Hz   | 1.41 | -6.2 dB |
+| Peaking | 250 Hz   | 1.41 | -9.8 dB |
+| Peaking | 500 Hz   | 1.41 | -3.5 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.1 dB |
+| Peaking | 2000 Hz  | 1.41 | 7.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | -3.1 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.5 dB |
+| Peaking | 16000 Hz | 1.41 | -3.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/SoundPeats%20QY9/SoundPeats%20QY9.png)

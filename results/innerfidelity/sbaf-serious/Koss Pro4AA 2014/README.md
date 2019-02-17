@@ -1,38 +1,56 @@
 # Koss Pro4AA 2014
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 6.0; 141 6.0; 155 6.0; 170 6.0; 187 5.0; 206 4.0; 227 2.9; 249 1.6; 274 0.3; 302 -1.0; 332 -1.9; 365 -3.1; 402 -4.0; 442 -4.5; 486 -4.6; 535 -4.9; 588 -3.8; 647 -3.2; 712 -2.4; 783 -1.4; 861 -0.8; 947 -0.1; 1042 0.2; 1146 0.2; 1261 -0.4; 1387 -1.9; 1526 -3.9; 1678 -5.9; 1846 -7.7; 2031 -9.7; 2234 -11.4; 2457 -10.4; 2703 -7.5; 2973 -3.1; 3270 0.8; 3597 3.0; 3957 2.1; 4353 -0.1; 4788 0.1; 5267 3.5; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -0.9; 10263 -0.2; 11289 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.5; 155 -0.5; 170 -0.5; 187 -1.5; 206 -2.5; 227 -3.6; 249 -4.9; 274 -6.2; 302 -7.5; 332 -8.4; 365 -9.6; 402 -10.5; 442 -11.0; 486 -11.1; 535 -11.4; 588 -10.3; 647 -9.7; 712 -8.9; 783 -7.9; 861 -7.3; 947 -6.6; 1042 -6.3; 1146 -6.3; 1261 -6.9; 1387 -8.4; 1526 -10.4; 1678 -12.4; 1846 -14.2; 2031 -16.2; 2234 -17.9; 2457 -16.9; 2703 -14.0; 2973 -9.6; 3270 -5.7; 3597 -3.5; 3957 -4.4; 4353 -6.6; 4788 -6.4; 5267 -3.0; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -7.4; 10263 -6.7; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Koss Pro4AA 2014 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Koss Pro4AA 2014 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.8dB**.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 172 Hz  | 0.08 | 7.2 dB   |
-| Peaking | 465 Hz  | 0.89 | -11.7 dB |
-| Peaking | 2266 Hz | 1.38 | -15.1 dB |
-| Peaking | 3484 Hz | 3.37 | 7.1 dB   |
-| Peaking | 5984 Hz | 3.83 | 7.3 dB   |
-| Peaking | 18 Hz   | 1.2  | 1.5 dB   |
-| Peaking | 85 Hz   | 0.2  | -0.7 dB  |
-| Peaking | 164 Hz  | 2.26 | 1.9 dB   |
-| Peaking | 1162 Hz | 4.82 | 1.3 dB   |
-| Peaking | 9432 Hz | 6.16 | -1.2 dB  |
+| Peaking | 175 Hz  | 0.08 | 7.2 dB   |
+| Peaking | 463 Hz  | 0.89 | -11.7 dB |
+| Peaking | 2266 Hz | 1.39 | -15.1 dB |
+| Peaking | 3471 Hz | 3.35 | 7.1 dB   |
+| Peaking | 5961 Hz | 3.75 | 7.3 dB   |
+| Peaking | 19 Hz   | 1.76 | 1.4 dB   |
+| Peaking | 128 Hz  | 0.06 | -0.4 dB  |
+| Peaking | 168 Hz  | 2.61 | 1.8 dB   |
+| Peaking | 1158 Hz | 4.02 | 1.5 dB   |
+| Peaking | 9557 Hz | 6.16 | -1.2 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 6.2 dB   |
+| Peaking | 62 Hz    | 1.41 | 4.0 dB   |
+| Peaking | 125 Hz   | 1.41 | 6.0 dB   |
+| Peaking | 250 Hz   | 1.41 | 1.8 dB   |
+| Peaking | 500 Hz   | 1.41 | -6.6 dB  |
+| Peaking | 1000 Hz  | 1.41 | 4.3 dB   |
+| Peaking | 2000 Hz  | 1.41 | -11.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.2 dB   |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB   |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Koss%20Pro4AA%202014/Koss%20Pro4AA%202014.png)

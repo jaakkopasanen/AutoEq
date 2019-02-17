@@ -1,38 +1,56 @@
 # Ultrasone Signature Pro
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 3.9; 25 3.2; 28 2.2; 31 1.5; 34 0.9; 37 0.5; 41 0.0; 45 -0.3; 49 -0.6; 54 -0.8; 60 -1.0; 66 -1.0; 72 -0.4; 79 0.3; 87 -0.6; 96 -1.9; 106 -2.1; 116 -1.3; 128 -2.0; 141 -2.9; 155 -3.1; 170 -2.2; 187 -3.0; 206 -3.0; 227 -2.7; 249 -2.5; 274 -1.9; 302 -1.4; 332 -1.1; 365 -0.9; 402 -0.9; 442 -0.9; 486 -1.3; 535 -1.5; 588 -1.4; 647 -1.4; 712 -1.4; 783 -1.1; 861 -1.0; 947 -0.5; 1042 0.4; 1146 1.0; 1261 0.8; 1387 0.3; 1526 0.8; 1678 2.2; 1846 2.9; 2031 3.9; 2234 5.8; 2457 6.0; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 5.8; 4353 5.9; 4788 5.4; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -0.3; 10263 -2.5; 11289 -3.1; 12418 -1.8; 13660 -0.0
+GraphicEQ: 21 -1.7; 23 -2.6; 25 -3.3; 28 -4.3; 31 -5.0; 34 -5.6; 37 -6.0; 41 -6.5; 45 -6.8; 49 -7.1; 54 -7.3; 60 -7.5; 66 -7.5; 72 -6.9; 79 -6.2; 87 -7.1; 96 -8.4; 106 -8.6; 116 -7.8; 128 -8.5; 141 -9.4; 155 -9.6; 170 -8.7; 187 -9.5; 206 -9.5; 227 -9.2; 249 -9.0; 274 -8.4; 302 -7.9; 332 -7.6; 365 -7.4; 402 -7.4; 442 -7.4; 486 -7.8; 535 -8.0; 588 -7.9; 647 -7.9; 712 -7.9; 783 -7.6; 861 -7.5; 947 -7.0; 1042 -6.1; 1146 -5.5; 1261 -5.7; 1387 -6.2; 1526 -5.7; 1678 -4.3; 1846 -3.6; 2031 -2.6; 2234 -0.7; 2457 -0.5; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.7; 4353 -0.6; 4788 -1.1; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.8; 10263 -9.0; 11289 -9.6; 12418 -8.3; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Ultrasone Signature Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone Signature Pro ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 20 Hz    | 1.89 | 5.2 dB  |
-| Peaking | 169 Hz   | 1.57 | -1.6 dB |
-| Peaking | 489 Hz   | 0.18 | -1.8 dB |
-| Peaking | 3720 Hz  | 0.52 | 7.4 dB  |
-| Peaking | 10475 Hz | 1.56 | -4.9 dB |
-| Peaking | 381 Hz   | 2.28 | 1.3 dB  |
-| Peaking | 1413 Hz  | 0.21 | -0.6 dB |
-| Peaking | 2341 Hz  | 4.36 | 2.1 dB  |
-| Peaking | 6222 Hz  | 4.02 | 2.2 dB  |
-| Peaking | 7510 Hz  | 6.81 | -2.2 dB |
+| Peaking | 21 Hz    | 1.91 | 5.2 dB  |
+| Peaking | 167 Hz   | 1.58 | -1.6 dB |
+| Peaking | 488 Hz   | 0.18 | -1.8 dB |
+| Peaking | 3737 Hz  | 0.52 | 7.4 dB  |
+| Peaking | 10510 Hz | 1.48 | -4.8 dB |
+| Peaking | 382 Hz   | 2.35 | 1.3 dB  |
+| Peaking | 1412 Hz  | 0.2  | -0.6 dB |
+| Peaking | 2330 Hz  | 4.28 | 2.1 dB  |
+| Peaking | 6211 Hz  | 4.06 | 2.2 dB  |
+| Peaking | 7482 Hz  | 6.59 | -2.1 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 2.1 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.6 dB |
+| Peaking | 125 Hz   | 1.41 | -2.0 dB |
+| Peaking | 250 Hz   | 1.41 | -2.0 dB |
+| Peaking | 500 Hz   | 1.41 | -0.8 dB |
+| Peaking | 1000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 7.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 16000 Hz | 1.41 | -0.8 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20Signature%20Pro/Ultrasone%20Signature%20Pro.png)

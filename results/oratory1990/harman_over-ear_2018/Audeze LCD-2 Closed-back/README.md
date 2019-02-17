@@ -1,38 +1,56 @@
 # Audeze LCD-2 Closed-back
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 2.1; 25 1.9; 28 1.8; 31 1.6; 34 1.5; 37 1.3; 41 1.1; 45 0.9; 49 0.6; 54 0.5; 60 0.2; 66 -0.0; 72 -0.2; 79 -0.4; 87 -0.6; 96 -1.0; 106 -1.3; 116 -1.6; 128 -1.8; 141 -2.0; 155 -2.0; 170 -2.2; 187 -2.1; 206 -2.0; 227 -1.8; 249 -1.4; 274 -0.9; 302 -0.0; 332 0.8; 365 1.5; 402 1.5; 442 1.2; 486 0.9; 535 0.7; 588 0.6; 647 0.7; 712 0.8; 783 1.0; 861 0.6; 947 0.3; 1042 -0.3; 1146 -0.6; 1261 -0.5; 1387 -1.4; 1526 -2.4; 1678 -2.3; 1846 -2.6; 2031 -2.9; 2234 -1.8; 2457 -1.4; 2703 0.5; 2973 2.7; 3270 5.6; 3597 6.0; 3957 6.0; 4353 5.8; 4788 2.6; 5267 0.8; 5793 -3.2; 6373 -4.1; 7010 -4.7; 7711 -3.7; 8482 0.0; 9330 0.0; 10263 -0.4; 11289 -6.6; 12418 -6.4; 13660 -3.6; 15026 -2.6; 16529 -4.3; 18182 -10.4; 20000 -21.3
+GraphicEQ: 21 -4.3; 23 -4.4; 25 -4.6; 28 -4.7; 31 -4.9; 34 -5.0; 37 -5.2; 41 -5.4; 45 -5.6; 49 -5.9; 54 -6.0; 60 -6.3; 66 -6.5; 72 -6.7; 79 -6.9; 87 -7.1; 96 -7.5; 106 -7.8; 116 -8.1; 128 -8.3; 141 -8.5; 155 -8.5; 170 -8.7; 187 -8.6; 206 -8.5; 227 -8.3; 249 -7.9; 274 -7.4; 302 -6.5; 332 -5.7; 365 -5.0; 402 -5.0; 442 -5.3; 486 -5.6; 535 -5.8; 588 -5.9; 647 -5.8; 712 -5.7; 783 -5.5; 861 -5.9; 947 -6.2; 1042 -6.8; 1146 -7.1; 1261 -7.0; 1387 -7.9; 1526 -8.9; 1678 -8.8; 1846 -9.1; 2031 -9.4; 2234 -8.3; 2457 -7.9; 2703 -6.0; 2973 -3.8; 3270 -0.9; 3597 -0.5; 3957 -0.5; 4353 -0.7; 4788 -3.9; 5267 -5.7; 5793 -9.7; 6373 -10.6; 7010 -11.2; 7711 -10.2; 8482 -6.5; 9330 -6.5; 10263 -6.9; 11289 -13.1; 12418 -12.9; 13660 -10.1; 15026 -9.1; 16529 -10.8; 18182 -16.9; 20000 -27.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audeze LCD-2 Closed-back GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze LCD-2 Closed-back ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 25 Hz    | 1.67 | 2.4 dB   |
-| Peaking | 2103 Hz  | 1.55 | -4.9 dB  |
-| Peaking | 3829 Hz  | 1.37 | 8.6 dB   |
-| Peaking | 6374 Hz  | 2.23 | -6.6 dB  |
-| Peaking | 20044 Hz | 1.18 | -21.4 dB |
-| Peaking | 211 Hz   | 0.79 | -3.5 dB  |
-| Peaking | 364 Hz   | 0.95 | 3.1 dB   |
-| Peaking | 9907 Hz  | 3.02 | 4.6 dB   |
-| Peaking | 11609 Hz | 2.76 | -7.4 dB  |
-| Peaking | 15594 Hz | 1.99 | 3.2 dB   |
+| Peaking | 23 Hz    | 1.79 | 2.3 dB   |
+| Peaking | 2104 Hz  | 1.54 | -4.9 dB  |
+| Peaking | 3832 Hz  | 1.35 | 8.6 dB   |
+| Peaking | 6370 Hz  | 2.17 | -6.6 dB  |
+| Peaking | 20024 Hz | 0.71 | -21.1 dB |
+| Peaking | 205 Hz   | 0.84 | -3.3 dB  |
+| Peaking | 370 Hz   | 0.97 | 2.8 dB   |
+| Peaking | 9886 Hz  | 2.82 | 4.8 dB   |
+| Peaking | 11617 Hz | 2.46 | -7.5 dB  |
+| Peaking | 15621 Hz | 1.73 | 3.0 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 2.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -2.0 dB |
+| Peaking | 250 Hz   | 1.41 | -1.2 dB |
+| Peaking | 500 Hz   | 1.41 | 1.8 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.9 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.5 dB |
+| Peaking | 16000 Hz | 1.41 | -7.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audeze%20LCD-2%20Closed-back/Audeze%20LCD-2%20Closed-back.png)

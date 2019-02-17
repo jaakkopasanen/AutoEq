@@ -1,24 +1,22 @@
 # Sennheiser Urbanite XL
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.2dB
-GraphicEQ: 21 0.0; 23 -0.0; 25 -0.6; 28 -1.2; 31 -1.7; 34 -2.2; 37 -2.6; 41 -3.1; 45 -3.5; 49 -3.8; 54 -4.2; 60 -4.6; 66 -4.9; 72 -5.2; 79 -5.6; 87 -6.1; 96 -6.5; 106 -6.5; 116 -6.3; 128 -6.1; 141 -6.6; 155 -7.1; 170 -5.9; 187 -6.2; 206 -6.0; 227 -5.2; 249 -4.8; 274 -4.9; 302 -5.4; 332 -5.5; 365 -5.0; 402 -4.0; 442 -3.2; 486 -3.1; 535 -2.3; 588 -1.4; 647 -1.2; 712 -1.2; 783 -0.7; 861 -0.6; 947 -0.2; 1042 0.2; 1146 -0.1; 1261 -0.4; 1387 -0.9; 1526 -1.5; 1678 -1.9; 1846 -2.2; 2031 -2.2; 2234 -1.1; 2457 0.4; 2703 1.0; 2973 2.4; 3270 2.6; 3597 3.7; 3957 5.5; 4353 6.1; 4788 1.0; 5267 -0.2; 5793 4.1; 6373 5.0; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -5.9; 23 -6.6; 25 -7.1; 28 -7.8; 31 -8.3; 34 -8.7; 37 -9.2; 41 -9.6; 45 -10.0; 49 -10.4; 54 -10.7; 60 -11.1; 66 -11.5; 72 -11.8; 79 -12.2; 87 -12.7; 96 -13.0; 106 -13.1; 116 -12.8; 128 -12.7; 141 -13.2; 155 -13.7; 170 -12.5; 187 -12.8; 206 -12.5; 227 -11.8; 249 -11.4; 274 -11.5; 302 -11.9; 332 -12.0; 365 -11.6; 402 -10.5; 442 -9.8; 486 -9.7; 535 -8.9; 588 -8.0; 647 -7.7; 712 -7.8; 783 -7.3; 861 -7.1; 947 -6.8; 1042 -6.4; 1146 -6.7; 1261 -7.0; 1387 -7.5; 1526 -8.0; 1678 -8.5; 1846 -8.8; 2031 -8.7; 2234 -7.7; 2457 -6.2; 2703 -5.6; 2973 -4.2; 3270 -3.9; 3597 -2.9; 3957 -1.1; 4353 -0.5; 4788 -5.5; 5267 -6.8; 5793 -2.5; 6373 -1.6; 7010 -4.1; 7711 -6.3; 8482 -6.6; 9330 -6.6; 10263 -6.6; 11289 -6.6; 12418 -6.6; 13660 -6.6; 15026 -6.6; 16529 -6.6; 18182 -6.6; 20000 -6.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser Urbanite XL GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Urbanite XL ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.9dB**.
 
@@ -26,13 +24,33 @@ When using independent subset of filters, apply preamp of **-5.9dB**.
 |:--------|:---------|:------|:--------|
 | Peaking | 74 Hz    |  0.68 | -2.0 dB |
 | Peaking | 155 Hz   |  0.45 | -5.4 dB |
-| Peaking | 350 Hz   |  2.91 | -1.9 dB |
+| Peaking | 349 Hz   |  2.91 | -1.9 dB |
 | Peaking | 4073 Hz  |  2.6  | 5.8 dB  |
-| Peaking | 21464 Hz |  2.52 | 1.9 dB  |
-| Peaking | 20 Hz    |  2.46 | 1.6 dB  |
-| Peaking | 1878 Hz  |  1.69 | -5.3 dB |
-| Peaking | 1891 Hz  |  0.83 | 2.8 dB  |
-| Peaking | 5026 Hz  | 10.51 | -5.6 dB |
-| Peaking | 6228 Hz  |  5.08 | 4.8 dB  |
+| Peaking | 21465 Hz |  2.52 | 1.9 dB  |
+| Peaking | 21 Hz    |  2.48 | 1.8 dB  |
+| Peaking | 1872 Hz  |  1.73 | -5.1 dB |
+| Peaking | 1907 Hz  |  0.81 | 2.5 dB  |
+| Peaking | 5052 Hz  | 10.35 | -5.6 dB |
+| Peaking | 6240 Hz  |  5.06 | 4.8 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.3dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -0.7 dB |
+| Peaking | 62 Hz    | 1.41 | -4.1 dB |
+| Peaking | 125 Hz   | 1.41 | -5.6 dB |
+| Peaking | 250 Hz   | 1.41 | -4.5 dB |
+| Peaking | 500 Hz   | 1.41 | -2.1 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.9 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.9 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Urbanite%20XL/Sennheiser%20Urbanite%20XL.png)

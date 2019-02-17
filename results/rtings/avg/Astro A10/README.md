@@ -1,38 +1,56 @@
 # Astro A10
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.5; 31 4.7; 34 4.0; 37 3.4; 41 2.8; 45 2.2; 49 1.8; 54 1.4; 60 1.0; 66 0.7; 72 0.5; 79 0.4; 87 0.3; 96 0.4; 106 0.5; 116 0.7; 128 0.9; 141 1.3; 155 1.7; 170 2.1; 187 2.7; 206 3.3; 227 3.7; 249 3.5; 274 3.7; 302 3.5; 332 4.5; 365 4.9; 402 5.3; 442 5.7; 486 6.0; 535 6.0; 588 6.0; 647 6.0; 712 6.0; 783 6.0; 861 4.2; 947 1.3; 1042 -0.6; 1146 -1.1; 1261 -0.5; 1387 0.1; 1526 1.6; 1678 2.9; 1846 4.3; 2031 5.9; 2234 6.0; 2457 6.0; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 5.8; 5793 4.7; 6373 2.6; 7010 1.4; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.6; 28 -1.0; 31 -1.8; 34 -2.5; 37 -3.1; 41 -3.7; 45 -4.3; 49 -4.7; 54 -5.1; 60 -5.5; 66 -5.8; 72 -6.0; 79 -6.1; 87 -6.2; 96 -6.1; 106 -6.0; 116 -5.8; 128 -5.6; 141 -5.2; 155 -4.8; 170 -4.4; 187 -3.8; 206 -3.2; 227 -2.8; 249 -3.0; 274 -2.8; 302 -3.0; 332 -2.0; 365 -1.6; 402 -1.2; 442 -0.8; 486 -0.5; 535 -0.5; 588 -0.5; 647 -0.5; 712 -0.5; 783 -0.5; 861 -2.3; 947 -5.2; 1042 -7.1; 1146 -7.6; 1261 -7.0; 1387 -6.4; 1526 -4.9; 1678 -3.6; 1846 -2.2; 2031 -0.6; 2234 -0.5; 2457 -0.5; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.7; 5793 -1.8; 6373 -3.9; 7010 -5.1; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Astro A10 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Astro A10 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 24 Hz   | 1.29 | 6.4 dB   |
-| Peaking | 792 Hz  | 5.12 | 1.8 dB   |
-| Peaking | 1058 Hz | 0.35 | 10.4 dB  |
-| Peaking | 1156 Hz | 1.38 | -12.3 dB |
-| Peaking | 4386 Hz | 1.67 | 3.4 dB   |
-| Peaking | 95 Hz   | 2.4  | -0.8 dB  |
-| Peaking | 1616 Hz | 3.15 | -1.9 dB  |
-| Peaking | 2148 Hz | 1.1  | 1.5 dB   |
-| Peaking | 5613 Hz | 2.51 | 3.4 dB   |
-| Peaking | 6260 Hz | 0.87 | -2.6 dB  |
+| Peaking | 24 Hz   | 1.29 | 6.3 dB   |
+| Peaking | 792 Hz  | 5.11 | 1.8 dB   |
+| Peaking | 1065 Hz | 0.34 | 10.5 dB  |
+| Peaking | 1159 Hz | 1.37 | -12.3 dB |
+| Peaking | 4424 Hz | 1.69 | 3.3 dB   |
+| Peaking | 95 Hz   | 2.33 | -0.8 dB  |
+| Peaking | 1609 Hz | 3.27 | -1.7 dB  |
+| Peaking | 2189 Hz | 1.1  | 1.4 dB   |
+| Peaking | 5597 Hz | 2.52 | 3.2 dB   |
+| Peaking | 6414 Hz | 0.86 | -2.5 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 5.8 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.7 dB |
+| Peaking | 125 Hz   | 1.41 | 0.2 dB  |
+| Peaking | 250 Hz   | 1.41 | 2.4 dB  |
+| Peaking | 500 Hz   | 1.41 | 7.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.4 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | 6.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Astro%20A10/Astro%20A10.png)

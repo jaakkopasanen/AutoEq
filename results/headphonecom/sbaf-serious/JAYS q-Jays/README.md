@@ -1,38 +1,56 @@
 # JAYS q-Jays
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 1.3; 25 1.3; 28 1.2; 31 1.1; 34 0.9; 37 0.9; 41 0.8; 45 0.7; 49 0.5; 54 0.3; 60 -0.0; 66 -0.2; 72 -0.3; 79 -0.7; 87 -1.0; 96 -1.3; 106 -1.5; 116 -1.8; 128 -1.8; 141 -2.1; 155 -2.4; 170 -2.6; 187 -2.7; 206 -2.6; 227 -2.6; 249 -2.4; 274 -2.4; 302 -2.0; 332 -1.7; 365 -1.8; 402 -1.9; 442 -1.6; 486 -1.2; 535 -0.9; 588 -0.4; 647 -0.2; 712 0.0; 783 0.2; 861 0.3; 947 0.2; 1042 -0.0; 1146 -0.1; 1261 -0.1; 1387 -0.4; 1526 -1.2; 1678 -2.0; 1846 -2.0; 2031 -1.6; 2234 -0.8; 2457 0.6; 2703 3.1; 2973 5.9; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 -2.8; 9330 -5.7; 10263 -1.0; 11289 0.0
+GraphicEQ: 21 -5.2; 23 -5.2; 25 -5.2; 28 -5.3; 31 -5.4; 34 -5.6; 37 -5.6; 41 -5.7; 45 -5.8; 49 -6.0; 54 -6.2; 60 -6.5; 66 -6.7; 72 -6.8; 79 -7.2; 87 -7.5; 96 -7.8; 106 -8.0; 116 -8.3; 128 -8.3; 141 -8.6; 155 -8.9; 170 -9.1; 187 -9.2; 206 -9.1; 227 -9.1; 249 -8.9; 274 -8.9; 302 -8.5; 332 -8.2; 365 -8.3; 402 -8.4; 442 -8.1; 486 -7.7; 535 -7.4; 588 -6.9; 647 -6.7; 712 -6.5; 783 -6.3; 861 -6.2; 947 -6.3; 1042 -6.5; 1146 -6.6; 1261 -6.6; 1387 -6.9; 1526 -7.7; 1678 -8.5; 1846 -8.5; 2031 -8.1; 2234 -7.3; 2457 -5.9; 2703 -3.4; 2973 -0.6; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -9.3; 9330 -12.2; 10263 -7.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `JAYS q-Jays GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `JAYS q-Jays ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 192 Hz  | 0.87 | -2.7 dB |
+| Peaking | 423 Hz  | 1.91 | -1.1 dB |
+| Peaking | 1953 Hz | 1.31 | -7.7 dB |
+| Peaking | 3633 Hz | 0.52 | 8.5 dB  |
+| Peaking | 9130 Hz | 3.21 | -8.9 dB |
+| Peaking | 26 Hz   | 1.02 | 1.4 dB  |
+| Peaking | 2499 Hz | 4.06 | -3.0 dB |
+| Peaking | 2878 Hz | 1.88 | 3.6 dB  |
+| Peaking | 3578 Hz | 1.44 | -2.1 dB |
+| Peaking | 6068 Hz | 6.21 | 1.6 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.9dB** and set
+gains manually with these parameters.
+
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 192 Hz   | 0.87 | -2.7 dB |
-| Peaking | 421 Hz   | 2.02 | -1.1 dB |
-| Peaking | 1974 Hz  | 1.35 | -7.4 dB |
-| Peaking | 3676 Hz  | 0.54 | 8.4 dB  |
-| Peaking | 9118 Hz  | 3.36 | -8.8 dB |
-| Peaking | 26 Hz    | 1.02 | 1.4 dB  |
-| Peaking | 3037 Hz  | 6.85 | 2.0 dB  |
-| Peaking | 3756 Hz  | 1.12 | -0.8 dB |
-| Peaking | 6058 Hz  | 5.76 | 1.7 dB  |
-| Peaking | 14552 Hz | 1.95 | -0.6 dB |
+| Peaking | 31 Hz    | 1.41 | 1.4 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.1 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.8 dB |
+| Peaking | 250 Hz   | 1.41 | -2.4 dB |
+| Peaking | 500 Hz   | 1.41 | -0.7 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 9.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.9 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/JAYS%20q-Jays/JAYS%20q-Jays.png)

@@ -1,38 +1,56 @@
 # Comradz NW-STUDIO
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 6.0; 141 6.0; 155 6.0; 170 6.0; 187 6.0; 206 6.0; 227 6.0; 249 6.0; 274 6.0; 302 6.0; 332 6.0; 365 5.9; 402 5.3; 442 4.9; 486 2.9; 535 -2.2; 588 2.7; 647 2.9; 712 2.3; 783 2.2; 861 1.5; 947 0.6; 1042 -0.6; 1146 -2.2; 1261 -4.6; 1387 -7.7; 1526 -11.3; 1678 -14.6; 1846 -17.4; 2031 -18.8; 2234 -19.1; 2457 -17.6; 2703 -16.0; 2973 -13.1; 3270 -9.3; 3597 -8.5; 3957 -9.4; 4353 -11.9; 4788 -13.2; 5267 -13.7; 5793 -15.4; 6373 -15.8; 7010 -14.6; 7711 -16.1; 8482 -19.1; 9330 -17.0; 10263 -9.0; 11289 -1.0; 12418 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.5; 155 -0.5; 170 -0.5; 187 -0.5; 206 -0.5; 227 -0.5; 249 -0.5; 274 -0.5; 302 -0.5; 332 -0.5; 365 -0.6; 402 -1.2; 442 -1.6; 486 -3.6; 535 -8.7; 588 -3.8; 647 -3.6; 712 -4.2; 783 -4.3; 861 -5.0; 947 -5.9; 1042 -7.1; 1146 -8.7; 1261 -11.1; 1387 -14.2; 1526 -17.8; 1678 -21.1; 1846 -23.9; 2031 -25.3; 2234 -25.6; 2457 -24.1; 2703 -22.5; 2973 -19.6; 3270 -15.8; 3597 -15.0; 3957 -15.9; 4353 -18.4; 4788 -19.7; 5267 -20.2; 5793 -21.9; 6373 -22.3; 7010 -21.1; 7711 -22.6; 8482 -25.6; 9330 -23.5; 10263 -15.5; 11289 -7.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Comradz NW-STUDIO GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Comradz NW-STUDIO ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.3dB**.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 107 Hz   | 0.06 | 6.3 dB   |
-| Peaking | 2083 Hz  | 1.26 | -22.1 dB |
-| Peaking | 5907 Hz  | 1.52 | -9.4 dB  |
-| Peaking | 8922 Hz  | 2.22 | -17.7 dB |
-| Peaking | 11751 Hz | 1.86 | 6.7 dB   |
-| Peaking | 525 Hz   | 9.18 | -7.7 dB  |
-| Peaking | 974 Hz   | 0.49 | 1.6 dB   |
-| Peaking | 1593 Hz  | 4.21 | -3.4 dB  |
-| Peaking | 2741 Hz  | 4.46 | -3.0 dB  |
-| Peaking | 3439 Hz  | 6.26 | 2.8 dB   |
+| Peaking | 88 Hz    | 0.06 | 6.1 dB   |
+| Peaking | 2083 Hz  | 0.99 | -25.8 dB |
+| Peaking | 3857 Hz  | 0.15 | 4.8 dB   |
+| Peaking | 6073 Hz  | 1.3  | -12.8 dB |
+| Peaking | 8828 Hz  | 2.96 | -16.7 dB |
+| Peaking | 525 Hz   | 8.27 | -7.6 dB  |
+| Peaking | 789 Hz   | 0.59 | 1.5 dB   |
+| Peaking | 1615 Hz  | 4.21 | -2.9 dB  |
+| Peaking | 9864 Hz  | 6.42 | -2.7 dB  |
+| Peaking | 11449 Hz | 4.79 | 3.4 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 6.1 dB   |
+| Peaking | 62 Hz    | 1.41 | 4.4 dB   |
+| Peaking | 125 Hz   | 1.41 | 4.3 dB   |
+| Peaking | 250 Hz   | 1.41 | 5.8 dB   |
+| Peaking | 500 Hz   | 1.41 | 2.4 dB   |
+| Peaking | 1000 Hz  | 1.41 | 5.1 dB   |
+| Peaking | 2000 Hz  | 1.41 | -20.5 dB |
+| Peaking | 4000 Hz  | 1.41 | -3.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -17.7 dB |
+| Peaking | 16000 Hz | 1.41 | 3.5 dB   |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Comradz%20NW-STUDIO/Comradz%20NW-STUDIO.png)

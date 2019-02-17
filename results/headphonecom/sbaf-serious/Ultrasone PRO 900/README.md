@@ -1,38 +1,56 @@
 # Ultrasone PRO 900
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.1dB
-GraphicEQ: 21 0.0; 23 1.8; 25 1.0; 28 0.1; 31 -0.8; 34 -1.5; 37 -2.1; 41 -2.7; 45 -2.6; 49 -2.5; 54 -2.9; 60 -3.3; 66 -4.0; 72 -4.8; 79 -5.5; 87 -6.1; 96 -6.6; 106 -7.0; 116 -7.2; 128 -7.1; 141 -7.0; 155 -6.9; 170 -6.1; 187 -5.8; 206 -4.2; 227 -2.4; 249 -0.1; 274 2.6; 302 1.4; 332 -1.2; 365 -2.4; 402 -3.0; 442 -2.8; 486 -1.7; 535 1.2; 588 -0.2; 647 -1.3; 712 -1.1; 783 -0.9; 861 -0.8; 947 -0.3; 1042 0.3; 1146 1.2; 1261 1.2; 1387 -0.2; 1526 -1.1; 1678 -1.9; 1846 -1.9; 2031 0.1; 2234 1.4; 2457 -2.5; 2703 -4.6; 2973 -5.3; 3270 -5.5; 3597 -6.2; 3957 -7.4; 4353 -8.3; 4788 -8.4; 5267 -6.9; 5793 -8.5; 6373 -7.5; 7010 -4.8; 7711 -2.3; 8482 -0.2; 9330 0.0; 10263 0.0; 11289 -0.1; 12418 -4.4; 13660 -9.3; 15026 -11.9; 16529 -10.7; 18182 -7.9; 20000 -8.8
+GraphicEQ: 21 -0.5; 23 -1.3; 25 -2.0; 28 -3.0; 31 -3.9; 34 -4.6; 37 -5.2; 41 -5.7; 45 -5.7; 49 -5.6; 54 -5.9; 60 -6.4; 66 -7.0; 72 -7.9; 79 -8.5; 87 -9.1; 96 -9.6; 106 -10.0; 116 -10.3; 128 -10.1; 141 -10.1; 155 -9.9; 170 -9.2; 187 -8.8; 206 -7.3; 227 -5.4; 249 -3.2; 274 -0.5; 302 -1.6; 332 -4.3; 365 -5.5; 402 -6.1; 442 -5.9; 486 -4.7; 535 -1.9; 588 -3.3; 647 -4.4; 712 -4.2; 783 -4.0; 861 -3.9; 947 -3.4; 1042 -2.8; 1146 -1.9; 1261 -1.8; 1387 -3.2; 1526 -4.1; 1678 -5.0; 1846 -5.0; 2031 -2.9; 2234 -1.7; 2457 -5.6; 2703 -7.7; 2973 -8.3; 3270 -8.6; 3597 -9.3; 3957 -10.5; 4353 -11.4; 4788 -11.4; 5267 -10.0; 5793 -11.5; 6373 -10.5; 7010 -7.9; 7711 -5.4; 8482 -3.3; 9330 -3.1; 10263 -3.1; 11289 -3.1; 12418 -7.5; 13660 -12.3; 15026 -15.0; 16529 -13.7; 18182 -11.0; 20000 -11.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Ultrasone PRO 900 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-30**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone PRO 900 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.2dB**.
 
-| Type    | Fc       |     Q | Gain     |
-|:--------|:---------|:------|:---------|
-| Peaking | 96 Hz    |  1.12 | -6.3 dB  |
-| Peaking | 159 Hz   |  2.47 | -4.6 dB  |
-| Peaking | 418 Hz   |  5.81 | -2.9 dB  |
-| Peaking | 4550 Hz  |  1.35 | -8.7 dB  |
-| Peaking | 16279 Hz |  1.32 | -12.4 dB |
-| Peaking | 19 Hz    |  2.9  | 2.4 dB   |
-| Peaking | 280 Hz   |  7.53 | 4.6 dB   |
-| Peaking | 2180 Hz  | 10.4  | 4.3 dB   |
-| Peaking | 10036 Hz |  1.93 | 5.7 dB   |
-| Peaking | 19514 Hz |  0.08 | -1.9 dB  |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 96 Hz    | 1.11 | -6.3 dB  |
+| Peaking | 158 Hz   | 2.47 | -4.6 dB  |
+| Peaking | 416 Hz   | 5.94 | -3.0 dB  |
+| Peaking | 4548 Hz  | 1.34 | -8.7 dB  |
+| Peaking | 16461 Hz | 1.01 | -12.3 dB |
+| Peaking | 21 Hz    | 3.21 | 2.3 dB   |
+| Peaking | 279 Hz   | 7.68 | 4.6 dB   |
+| Peaking | 6393 Hz  | 3.91 | -4.4 dB  |
+| Peaking | 10689 Hz | 1    | 4.7 dB   |
+| Peaking | 13867 Hz | 2.38 | -5.9 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 0.3 dB   |
+| Peaking | 62 Hz    | 1.41 | -2.7 dB  |
+| Peaking | 125 Hz   | 1.41 | -8.3 dB  |
+| Peaking | 250 Hz   | 1.41 | 1.0 dB   |
+| Peaking | 500 Hz   | 1.41 | -1.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.5 dB   |
+| Peaking | 2000 Hz  | 1.41 | 1.1 dB   |
+| Peaking | 4000 Hz  | 1.41 | -9.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.0 dB   |
+| Peaking | 16000 Hz | 1.41 | -14.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20PRO%20900/Ultrasone%20PRO%20900.png)

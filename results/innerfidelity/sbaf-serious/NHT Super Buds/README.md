@@ -1,37 +1,55 @@
 # NHT Super Buds
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -10.2; 23 -10.3; 25 -10.4; 28 -10.3; 31 -10.2; 34 -10.1; 37 -10.1; 41 -9.9; 45 -9.8; 49 -9.6; 54 -9.5; 60 -9.4; 66 -9.3; 72 -9.2; 79 -9.0; 87 -9.0; 96 -8.9; 106 -8.6; 116 -8.2; 128 -8.0; 141 -7.7; 155 -7.3; 170 -6.8; 187 -6.4; 206 -5.9; 227 -5.3; 249 -4.7; 274 -4.1; 302 -3.5; 332 -2.9; 365 -2.3; 402 -1.8; 442 -1.1; 486 -0.7; 535 -0.2; 588 0.5; 647 0.5; 712 0.7; 783 0.9; 861 0.7; 947 0.3; 1042 -0.2; 1146 -0.7; 1261 -1.3; 1387 -2.2; 1526 -3.2; 1678 -4.0; 1846 -4.3; 2031 -4.2; 2234 -3.8; 2457 -2.7; 2703 -1.6; 2973 0.4; 3270 2.7; 3597 5.5; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -16.7; 23 -16.8; 25 -16.9; 28 -16.8; 31 -16.7; 34 -16.6; 37 -16.6; 41 -16.4; 45 -16.3; 49 -16.1; 54 -16.0; 60 -15.9; 66 -15.8; 72 -15.7; 79 -15.5; 87 -15.5; 96 -15.4; 106 -15.1; 116 -14.7; 128 -14.5; 141 -14.2; 155 -13.8; 170 -13.3; 187 -12.9; 206 -12.4; 227 -11.8; 249 -11.2; 274 -10.6; 302 -10.0; 332 -9.4; 365 -8.8; 402 -8.3; 442 -7.6; 486 -7.2; 535 -6.7; 588 -6.0; 647 -6.0; 712 -5.8; 783 -5.6; 861 -5.8; 947 -6.2; 1042 -6.7; 1146 -7.2; 1261 -7.8; 1387 -8.7; 1526 -9.7; 1678 -10.5; 1846 -10.8; 2031 -10.7; 2234 -10.3; 2457 -9.2; 2703 -8.1; 2973 -6.1; 3270 -3.8; 3597 -1.0; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `NHT Super Buds GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NHT Super Buds ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
 | Peaking | 26 Hz   | 0.1  | -10.0 dB |
-| Peaking | 717 Hz  | 0.66 | 3.0 dB   |
-| Peaking | 2017 Hz | 1.04 | -6.7 dB  |
-| Peaking | 4357 Hz | 1.23 | 8.4 dB   |
-| Peaking | 3638 Hz | 6.22 | 1.9 dB   |
-| Peaking | 4479 Hz | 2.64 | -1.2 dB  |
-| Peaking | 6362 Hz | 2.64 | 4.2 dB   |
-| Peaking | 7443 Hz | 0.79 | -1.2 dB  |
-| Peaking | 7471 Hz | 3.18 | -2.3 dB  |
+| Peaking | 719 Hz  | 0.66 | 3.0 dB   |
+| Peaking | 2016 Hz | 1.04 | -6.7 dB  |
+| Peaking | 4363 Hz | 1.2  | 8.4 dB   |
+| Peaking | 3679 Hz | 6.14 | 2.1 dB   |
+| Peaking | 4411 Hz | 1.96 | -1.5 dB  |
+| Peaking | 6305 Hz | 2.58 | 4.1 dB   |
+| Peaking | 7525 Hz | 3.27 | -2.3 dB  |
+| Peaking | 8342 Hz | 1.02 | -1.2 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -10.8 dB |
+| Peaking | 62 Hz    | 1.41 | -6.7 dB  |
+| Peaking | 125 Hz   | 1.41 | -6.6 dB  |
+| Peaking | 250 Hz   | 1.41 | -3.8 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.7 dB   |
+| Peaking | 1000 Hz  | 1.41 | 1.4 dB   |
+| Peaking | 2000 Hz  | 1.41 | -6.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | 8.0 dB   |
+| Peaking | 8000 Hz  | 1.41 | 0.5 dB   |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NHT%20Super%20Buds/NHT%20Super%20Buds.png)

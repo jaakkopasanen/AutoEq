@@ -1,18 +1,16 @@
 # Apple ME186 In-Ear Headphones
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.2dB
-GraphicEQ: 21 0.0; 23 0.2; 25 0.2; 28 0.1; 31 0.1; 34 0.1; 37 -0.0; 41 -0.1; 45 -0.1; 49 -0.2; 54 -0.4; 60 -0.6; 66 -0.9; 72 -1.2; 79 -1.5; 87 -1.9; 96 -2.3; 106 -2.6; 116 -2.9; 128 -3.2; 141 -3.4; 155 -3.5; 170 -3.7; 187 -3.8; 206 -3.8; 227 -3.8; 249 -3.8; 274 -3.7; 302 -3.5; 332 -3.3; 365 -3.1; 402 -2.9; 442 -2.6; 486 -2.4; 535 -2.1; 588 -1.7; 647 -1.3; 712 -0.8; 783 -0.4; 861 -0.1; 947 0.0; 1042 -0.1; 1146 -0.2; 1261 -0.3; 1387 -0.1; 1526 0.4; 1678 1.1; 1846 1.7; 2031 2.0; 2234 1.8; 2457 0.8; 2703 -0.6; 2973 -1.7; 3270 -0.5; 3597 1.3; 3957 1.9; 4353 2.2; 4788 3.2; 5267 4.4; 5793 5.1; 6373 5.1; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -0.5; 15026 -1.8; 16529 -0.9; 18182 -1.6; 20000 -10.8
+GraphicEQ: 21 -5.4; 23 -5.4; 25 -5.4; 28 -5.5; 31 -5.5; 34 -5.6; 37 -5.6; 41 -5.7; 45 -5.7; 49 -5.8; 54 -6.0; 60 -6.2; 66 -6.5; 72 -6.8; 79 -7.1; 87 -7.5; 96 -7.9; 106 -8.2; 116 -8.5; 128 -8.8; 141 -9.0; 155 -9.1; 170 -9.3; 187 -9.4; 206 -9.4; 227 -9.4; 249 -9.4; 274 -9.3; 302 -9.1; 332 -9.0; 365 -8.7; 402 -8.5; 442 -8.2; 486 -8.0; 535 -7.7; 588 -7.3; 647 -6.9; 712 -6.5; 783 -6.0; 861 -5.7; 947 -5.6; 1042 -5.7; 1146 -5.9; 1261 -5.9; 1387 -5.7; 1526 -5.3; 1678 -4.6; 1846 -3.9; 2031 -3.6; 2234 -3.8; 2457 -4.8; 2703 -6.2; 2973 -7.3; 3270 -6.1; 3597 -4.4; 3957 -3.7; 4353 -3.4; 4788 -2.4; 5267 -1.2; 5793 -0.6; 6373 -0.5; 7010 -3.1; 7711 -5.3; 8482 -5.6; 9330 -5.6; 10263 -5.6; 11289 -5.6; 12418 -5.6; 13660 -6.1; 15026 -7.4; 16529 -6.5; 18182 -7.3; 20000 -16.4
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Apple ME186 In-Ear Headphones GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-52**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Apple ME186 In-Ear Headphones ParametricEQ.txt`.
@@ -24,15 +22,35 @@ When using independent subset of filters, apply preamp of **-5.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 220 Hz   | 0.52 | -4.0 dB  |
-| Peaking | 2227 Hz  | 1.41 | 2.2 dB   |
-| Peaking | 2907 Hz  | 4.61 | -3.5 dB  |
-| Peaking | 5719 Hz  | 2.42 | 5.5 dB   |
-| Peaking | 20112 Hz | 2.21 | -10.8 dB |
-| Peaking | 886 Hz   | 3.84 | 0.7 dB   |
-| Peaking | 1326 Hz  | 4.76 | -0.6 dB  |
-| Peaking | 6630 Hz  | 8.05 | 2.1 dB   |
-| Peaking | 7700 Hz  | 2.63 | -1.4 dB  |
-| Peaking | 17679 Hz | 7    | 1.2 dB   |
+| Peaking | 219 Hz   | 0.53 | -4.0 dB  |
+| Peaking | 2096 Hz  | 1.86 | 2.2 dB   |
+| Peaking | 2917 Hz  | 5.09 | -3.0 dB  |
+| Peaking | 5699 Hz  | 2.29 | 5.5 dB   |
+| Peaking | 20118 Hz | 1.34 | -10.7 dB |
+| Peaking | 878 Hz   | 4.59 | 0.8 dB   |
+| Peaking | 4111 Hz  | 1.93 | 1.5 dB   |
+| Peaking | 6612 Hz  | 6.91 | 2.6 dB   |
+| Peaking | 7743 Hz  | 0.52 | -1.6 dB  |
+| Peaking | 10824 Hz | 1.6  | 1.1 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 0.4 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.2 dB |
+| Peaking | 125 Hz   | 1.41 | -2.7 dB |
+| Peaking | 250 Hz   | 1.41 | -3.4 dB |
+| Peaking | 500 Hz   | 1.41 | -1.8 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 4000 Hz  | 1.41 | 1.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -2.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Apple%20ME186%20In-Ear%20Headphones/Apple%20ME186%20In-Ear%20Headphones.png)

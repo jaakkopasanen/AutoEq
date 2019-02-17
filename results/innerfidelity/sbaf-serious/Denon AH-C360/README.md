@@ -1,38 +1,56 @@
 # Denon AH-C360
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.2dB
-GraphicEQ: 21 -7.7; 23 -7.8; 25 -7.9; 28 -8.0; 31 -8.2; 34 -8.3; 37 -8.4; 41 -8.5; 45 -8.6; 49 -8.7; 54 -9.0; 60 -9.1; 66 -9.3; 72 -9.5; 79 -9.8; 87 -10.0; 96 -10.3; 106 -10.3; 116 -10.3; 128 -10.3; 141 -10.3; 155 -10.2; 170 -10.0; 187 -9.7; 206 -9.4; 227 -8.9; 249 -8.5; 274 -7.9; 302 -7.3; 332 -6.7; 365 -6.0; 402 -5.3; 442 -4.5; 486 -4.0; 535 -3.2; 588 -2.3; 647 -1.6; 712 -1.1; 783 -0.4; 861 -0.1; 947 0.0; 1042 0.1; 1146 0.0; 1261 0.0; 1387 -0.6; 1526 -1.3; 1678 -1.1; 1846 0.5; 2031 0.9; 2234 0.4; 2457 0.7; 2703 0.4; 2973 0.2; 3270 -0.1; 3597 -1.2; 3957 -2.9; 4353 -5.7; 4788 -7.5; 5267 -8.0; 5793 -7.5; 6373 -5.0; 7010 -3.3; 7711 -3.8; 8482 -4.6; 9330 -2.4; 10263 0.0
+GraphicEQ: 21 -9.1; 23 -9.2; 25 -9.3; 28 -9.4; 31 -9.6; 34 -9.7; 37 -9.9; 41 -9.9; 45 -10.0; 49 -10.1; 54 -10.4; 60 -10.5; 66 -10.7; 72 -10.9; 79 -11.2; 87 -11.4; 96 -11.7; 106 -11.7; 116 -11.7; 128 -11.7; 141 -11.7; 155 -11.6; 170 -11.4; 187 -11.1; 206 -10.8; 227 -10.3; 249 -9.9; 274 -9.3; 302 -8.7; 332 -8.1; 365 -7.4; 402 -6.7; 442 -5.9; 486 -5.4; 535 -4.6; 588 -3.7; 647 -3.0; 712 -2.5; 783 -1.8; 861 -1.5; 947 -1.4; 1042 -1.4; 1146 -1.4; 1261 -1.4; 1387 -2.0; 1526 -2.7; 1678 -2.6; 1846 -0.9; 2031 -0.5; 2234 -1.0; 2457 -0.7; 2703 -1.0; 2973 -1.2; 3270 -1.5; 3597 -2.6; 3957 -4.3; 4353 -7.1; 4788 -8.9; 5267 -9.5; 5793 -8.9; 6373 -6.4; 7010 -4.7; 7711 -5.2; 8482 -6.0; 9330 -3.8; 10263 -1.4; 11289 -1.4; 12418 -1.4; 13660 -1.4; 15026 -1.4; 16529 -1.4; 18182 -1.4; 20000 -1.4
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Denon AH-C360 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-11**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C360 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 36 Hz    | 0.24 | -7.8 dB |
-| Peaking | 151 Hz   | 0.7  | -5.8 dB |
-| Peaking | 314 Hz   | 1.24 | -3.3 dB |
-| Peaking | 5423 Hz  | 1.99 | -8.5 dB |
+| Peaking | 35 Hz    | 0.24 | -7.8 dB |
+| Peaking | 150 Hz   | 0.7  | -5.8 dB |
+| Peaking | 314 Hz   | 1.23 | -3.3 dB |
+| Peaking | 5424 Hz  | 1.99 | -8.5 dB |
 | Peaking | 22050 Hz | 2.32 | -2.3 dB |
-| Peaking | 896 Hz   | 3.47 | 1.0 dB  |
+| Peaking | 896 Hz   | 3.49 | 1.0 dB  |
 | Peaking | 2891 Hz  | 1.54 | 1.6 dB  |
-| Peaking | 4480 Hz  | 4.99 | -2.3 dB |
-| Peaking | 8508 Hz  | 3.5  | -5.5 dB |
-| Peaking | 8671 Hz  | 1.21 | 2.3 dB  |
+| Peaking | 4482 Hz  | 4.99 | -2.2 dB |
+| Peaking | 8503 Hz  | 3.5  | -5.6 dB |
+| Peaking | 8683 Hz  | 1.23 | 2.3 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -8.0 dB |
+| Peaking | 62 Hz    | 1.41 | -6.6 dB |
+| Peaking | 125 Hz   | 1.41 | -8.6 dB |
+| Peaking | 250 Hz   | 1.41 | -7.1 dB |
+| Peaking | 500 Hz   | 1.41 | -2.1 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | -4.2 dB |
+| Peaking | 8000 Hz  | 1.41 | -4.2 dB |
+| Peaking | 16000 Hz | 1.41 | 0.8 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-C360/Denon%20AH-C360.png)

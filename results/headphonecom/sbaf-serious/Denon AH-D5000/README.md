@@ -1,38 +1,56 @@
 # Denon AH-D5000
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -2.6dB
-GraphicEQ: 21 0.0; 23 1.4; 25 0.8; 28 0.2; 31 -0.1; 34 -0.4; 37 -0.7; 41 -0.9; 45 -0.7; 49 -0.7; 54 -0.9; 60 -1.0; 66 -1.2; 72 -1.4; 79 -1.6; 87 -1.8; 96 -2.1; 106 -2.0; 116 -2.2; 128 -2.4; 141 -2.5; 155 -2.6; 170 -2.5; 187 -2.3; 206 -2.2; 227 -2.1; 249 -2.1; 274 -2.1; 302 -1.9; 332 -1.6; 365 -1.2; 402 -0.8; 442 -0.4; 486 0.0; 535 0.6; 588 1.4; 647 1.5; 712 0.3; 783 -1.7; 861 -0.9; 947 1.1; 1042 -0.6; 1146 -1.3; 1261 -1.9; 1387 -2.5; 1526 -3.2; 1678 -3.7; 1846 -3.7; 2031 -3.3; 2234 -2.6; 2457 -1.4; 2703 1.1; 2973 1.1; 3270 0.5; 3597 -0.5; 3957 -2.1; 4353 -3.8; 4788 -3.2; 5267 -1.7; 5793 -0.3; 6373 -2.0; 7010 -4.3; 7711 -3.9; 8482 -3.6; 9330 -5.2; 10263 -1.0; 11289 0.0; 12418 -0.0; 13660 -0.9; 15026 0.0; 16529 0.0; 18182 0.0; 20000 -7.6
+GraphicEQ: 21 -0.5; 23 -1.2; 25 -1.8; 28 -2.4; 31 -2.7; 34 -3.0; 37 -3.3; 41 -3.5; 45 -3.3; 49 -3.3; 54 -3.5; 60 -3.7; 66 -3.8; 72 -4.0; 79 -4.2; 87 -4.5; 96 -4.7; 106 -4.7; 116 -4.8; 128 -5.1; 141 -5.1; 155 -5.2; 170 -5.1; 187 -4.9; 206 -4.8; 227 -4.7; 249 -4.7; 274 -4.7; 302 -4.6; 332 -4.2; 365 -3.8; 402 -3.4; 442 -3.0; 486 -2.6; 535 -2.0; 588 -1.2; 647 -1.1; 712 -2.3; 783 -4.3; 861 -3.5; 947 -1.6; 1042 -3.3; 1146 -4.0; 1261 -4.5; 1387 -5.2; 1526 -5.8; 1678 -6.3; 1846 -6.3; 2031 -5.9; 2234 -5.2; 2457 -4.0; 2703 -1.5; 2973 -1.5; 3270 -2.2; 3597 -3.1; 3957 -4.7; 4353 -6.4; 4788 -5.8; 5267 -4.3; 5793 -2.9; 6373 -4.7; 7010 -6.9; 7711 -6.6; 8482 -6.2; 9330 -7.8; 10263 -3.7; 11289 -2.6; 12418 -2.6; 13660 -3.5; 15026 -2.6; 16529 -2.6; 18182 -2.6; 20000 -10.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Denon AH-D5000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-26**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-D5000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-1.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 2.63 | 2.6 dB  |
+| Peaking | 20 Hz    | 2.65 | 2.6 dB  |
 | Peaking | 146 Hz   | 0.65 | -2.6 dB |
-| Peaking | 1731 Hz  | 2.33 | -4.0 dB |
-| Peaking | 7938 Hz  | 1.58 | -4.3 dB |
-| Peaking | 19902 Hz | 4.24 | -7.2 dB |
-| Peaking | 18 Hz    | 1.87 | 0.9 dB  |
-| Peaking | 606 Hz   | 5.06 | 2.3 dB  |
-| Peaking | 2915 Hz  | 5.63 | 2.5 dB  |
-| Peaking | 4400 Hz  | 5.69 | -3.5 dB |
-| Peaking | 13820 Hz | 0.37 | 0.4 dB  |
+| Peaking | 1729 Hz  | 2.34 | -4.0 dB |
+| Peaking | 7987 Hz  | 1.51 | -4.3 dB |
+| Peaking | 19837 Hz | 2.6  | -7.5 dB |
+| Peaking | 606 Hz   | 5.04 | 2.3 dB  |
+| Peaking | 2957 Hz  | 4.62 | 2.5 dB  |
+| Peaking | 4455 Hz  | 3.69 | -3.2 dB |
+| Peaking | 5825 Hz  | 6.98 | 2.3 dB  |
+| Peaking | 16526 Hz | 0.56 | 0.5 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 0.4 dB  |
+| Peaking | 62 Hz    | 1.41 | -1.0 dB |
+| Peaking | 125 Hz   | 1.41 | -2.0 dB |
+| Peaking | 250 Hz   | 1.41 | -2.3 dB |
+| Peaking | 500 Hz   | 1.41 | 1.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.7 dB |
+| Peaking | 4000 Hz  | 1.41 | 0.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.1 dB |
+| Peaking | 16000 Hz | 1.41 | 0.2 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-D5000/Denon%20AH-D5000.png)

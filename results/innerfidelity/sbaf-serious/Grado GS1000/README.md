@@ -1,24 +1,22 @@
 # Grado GS1000
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.7; 34 5.0; 37 4.2; 41 3.1; 45 1.8; 49 0.5; 54 -0.8; 60 -2.3; 66 -3.6; 72 -4.6; 79 -5.7; 87 -6.6; 96 -7.3; 106 -7.4; 116 -7.2; 128 -6.8; 141 -6.3; 155 -5.7; 170 -5.0; 187 -4.4; 206 -3.8; 227 -3.1; 249 -2.6; 274 -2.0; 302 -1.9; 332 -2.0; 365 -1.6; 402 -1.3; 442 -0.8; 486 -0.7; 535 -0.7; 588 -0.3; 647 -0.2; 712 -0.3; 783 0.1; 861 -0.1; 947 -0.0; 1042 -0.0; 1146 -0.4; 1261 -0.7; 1387 -1.3; 1526 -1.7; 1678 -0.7; 1846 -1.9; 2031 -1.6; 2234 -1.3; 2457 -1.2; 2703 -1.4; 2973 -1.2; 3270 -0.8; 3597 -2.9; 3957 -5.3; 4353 -9.9; 4788 -6.7; 5267 -8.4; 5793 -10.5; 6373 -11.3; 7010 -9.0; 7711 -5.9; 8482 -6.7; 9330 -10.4; 10263 -9.7; 11289 -4.8; 12418 -2.2; 13660 -1.7; 15026 -0.0; 16529 0.0; 18182 0.0; 20000 -1.4
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.8; 34 -1.5; 37 -2.3; 41 -3.4; 45 -4.7; 49 -6.0; 54 -7.3; 60 -8.8; 66 -10.1; 72 -11.1; 79 -12.2; 87 -13.1; 96 -13.8; 106 -13.9; 116 -13.7; 128 -13.3; 141 -12.8; 155 -12.2; 170 -11.5; 187 -10.9; 206 -10.3; 227 -9.6; 249 -9.1; 274 -8.5; 302 -8.4; 332 -8.5; 365 -8.1; 402 -7.8; 442 -7.3; 486 -7.2; 535 -7.2; 588 -6.8; 647 -6.7; 712 -6.8; 783 -6.4; 861 -6.6; 947 -6.5; 1042 -6.5; 1146 -6.9; 1261 -7.2; 1387 -7.8; 1526 -8.2; 1678 -7.2; 1846 -8.4; 2031 -8.1; 2234 -7.8; 2457 -7.7; 2703 -7.9; 2973 -7.7; 3270 -7.3; 3597 -9.4; 3957 -11.8; 4353 -16.4; 4788 -13.2; 5267 -14.9; 5793 -17.0; 6373 -17.8; 7010 -15.5; 7711 -12.4; 8482 -13.2; 9330 -16.9; 10263 -16.2; 11289 -11.3; 12418 -8.7; 13660 -8.2; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -7.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Grado GS1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado GS1000 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.3dB**.
 
@@ -34,5 +32,25 @@ When using independent subset of filters, apply preamp of **-6.3dB**.
 | Peaking | 3471 Hz | 2.23 | 2.6 dB   |
 | Peaking | 4306 Hz | 5.73 | -5.9 dB  |
 | Peaking | 4924 Hz | 7.29 | 3.1 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 8.1 dB   |
+| Peaking | 62 Hz    | 1.41 | -3.9 dB  |
+| Peaking | 125 Hz   | 1.41 | -7.3 dB  |
+| Peaking | 250 Hz   | 1.41 | -1.3 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.0 dB   |
+| Peaking | 2000 Hz  | 1.41 | 0.2 dB   |
+| Peaking | 4000 Hz  | 1.41 | -4.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | -10.4 dB |
+| Peaking | 16000 Hz | 1.41 | 0.4 dB   |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20GS1000/Grado%20GS1000.png)

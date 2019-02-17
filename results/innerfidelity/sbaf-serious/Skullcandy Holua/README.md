@@ -1,38 +1,56 @@
 # Skullcandy Holua
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.0dB
-GraphicEQ: 21 -9.9; 23 -9.9; 25 -9.8; 28 -9.6; 31 -9.5; 34 -9.4; 37 -9.2; 41 -9.1; 45 -9.0; 49 -8.8; 54 -8.7; 60 -8.6; 66 -8.5; 72 -8.4; 79 -8.3; 87 -8.2; 96 -8.1; 106 -7.9; 116 -7.6; 128 -7.4; 141 -7.1; 155 -6.8; 170 -6.3; 187 -5.9; 206 -5.4; 227 -4.9; 249 -4.4; 274 -3.8; 302 -3.3; 332 -2.7; 365 -2.2; 402 -1.7; 442 -1.0; 486 -0.7; 535 -0.3; 588 0.4; 647 0.7; 712 0.7; 783 1.0; 861 0.8; 947 0.4; 1042 -0.3; 1146 -0.7; 1261 -1.3; 1387 -2.3; 1526 -3.5; 1678 -4.5; 1846 -5.5; 2031 -6.6; 2234 -8.4; 2457 -8.4; 2703 -4.9; 2973 -1.1; 3270 2.2; 3597 3.4; 3957 1.1; 4353 -3.3; 4788 -10.1; 5267 -5.4; 5793 1.0; 6373 4.8; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -15.3; 23 -15.2; 25 -15.1; 28 -15.0; 31 -14.8; 34 -14.7; 37 -14.6; 41 -14.4; 45 -14.3; 49 -14.2; 54 -14.0; 60 -13.9; 66 -13.8; 72 -13.7; 79 -13.6; 87 -13.5; 96 -13.4; 106 -13.2; 116 -12.9; 128 -12.7; 141 -12.4; 155 -12.1; 170 -11.6; 187 -11.2; 206 -10.7; 227 -10.2; 249 -9.7; 274 -9.1; 302 -8.6; 332 -8.1; 365 -7.5; 402 -7.0; 442 -6.4; 486 -6.0; 535 -5.6; 588 -4.9; 647 -4.7; 712 -4.6; 783 -4.3; 861 -4.6; 947 -4.9; 1042 -5.6; 1146 -6.1; 1261 -6.7; 1387 -7.6; 1526 -8.8; 1678 -9.9; 1846 -10.9; 2031 -11.9; 2234 -13.7; 2457 -13.7; 2703 -10.2; 2973 -6.4; 3270 -3.1; 3597 -1.9; 3957 -4.3; 4353 -8.6; 4788 -15.4; 5267 -10.7; 5793 -4.3; 6373 -0.5; 7010 -2.8; 7711 -5.0; 8482 -5.3; 9330 -5.3; 10263 -5.3; 11289 -5.3; 12418 -5.3; 13660 -5.3; 15026 -5.3; 16529 -5.3; 18182 -5.3; 20000 -5.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Skullcandy Holua GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-50**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Holua ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.5dB**.
+When using independent subset of filters, apply preamp of **-2.6dB**.
 
-| Type    | Fc      |     Q | Gain     |
-|:--------|:--------|:------|:---------|
-| Peaking | 23 Hz   |  0.21 | -9.6 dB  |
-| Peaking | 154 Hz  |  0.82 | -3.5 dB  |
-| Peaking | 2348 Hz |  1.69 | -14.7 dB |
-| Peaking | 3630 Hz |  0.83 | 9.8 dB   |
-| Peaking | 4768 Hz |  4.89 | -16.6 dB |
-| Peaking | 757 Hz  |  1.88 | 1.8 dB   |
-| Peaking | 1583 Hz |  4.28 | -1.5 dB  |
-| Peaking | 5242 Hz | 10.16 | -2.8 dB  |
-| Peaking | 6427 Hz |  4.84 | 4.8 dB   |
-| Peaking | 8165 Hz |  1.69 | -2.1 dB  |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 22 Hz   | 0.2  | -9.6 dB  |
+| Peaking | 154 Hz  | 0.82 | -3.5 dB  |
+| Peaking | 2342 Hz | 1.67 | -15.0 dB |
+| Peaking | 3598 Hz | 0.81 | 10.0 dB  |
+| Peaking | 4804 Hz | 4.79 | -16.7 dB |
+| Peaking | 757 Hz  | 1.9  | 1.8 dB   |
+| Peaking | 1580 Hz | 4.23 | -1.5 dB  |
+| Peaking | 5325 Hz | 9.15 | -1.9 dB  |
+| Peaking | 6468 Hz | 4.5  | 5.2 dB   |
+| Peaking | 7903 Hz | 1.45 | -2.2 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.3dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -10.0 dB |
+| Peaking | 62 Hz    | 1.41 | -6.0 dB  |
+| Peaking | 125 Hz   | 1.41 | -6.1 dB  |
+| Peaking | 250 Hz   | 1.41 | -3.5 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.5 dB   |
+| Peaking | 1000 Hz  | 1.41 | 2.0 dB   |
+| Peaking | 2000 Hz  | 1.41 | -7.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.0 dB   |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Holua/Skullcandy%20Holua.png)

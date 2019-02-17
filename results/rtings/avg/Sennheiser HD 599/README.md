@@ -1,38 +1,56 @@
 # Sennheiser HD 599
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.2dB
-GraphicEQ: 21 0.0; 23 4.3; 25 3.8; 28 3.1; 31 2.6; 34 2.1; 37 1.7; 41 1.3; 45 0.9; 49 0.5; 54 0.0; 60 -0.6; 66 -1.2; 72 -1.7; 79 -2.1; 87 -2.7; 96 -3.2; 106 -3.7; 116 -4.2; 128 -4.6; 141 -4.9; 155 -5.0; 170 -5.0; 187 -4.9; 206 -4.6; 227 -4.3; 249 -4.0; 274 -3.8; 302 -3.6; 332 -3.4; 365 -3.2; 402 -2.9; 442 -2.7; 486 -2.5; 535 -2.3; 588 -2.0; 647 -1.4; 712 -0.9; 783 -0.5; 861 -0.3; 947 -0.1; 1042 0.1; 1146 0.4; 1261 0.7; 1387 1.2; 1526 2.1; 1678 2.3; 1846 1.4; 2031 0.0; 2234 -0.4; 2457 0.4; 2703 -0.3; 2973 -1.9; 3270 -3.2; 3597 -2.8; 3957 -2.8; 4353 -4.3; 4788 -2.9; 5267 -1.3; 5793 -1.4; 6373 0.1; 7010 1.5; 7711 0.2; 8482 -2.8; 9330 -2.3; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 -0.7; 18182 -6.1; 20000 -6.6
+GraphicEQ: 21 -0.5; 23 -1.0; 25 -1.5; 28 -2.1; 31 -2.7; 34 -3.2; 37 -3.6; 41 -4.0; 45 -4.4; 49 -4.8; 54 -5.3; 60 -5.9; 66 -6.5; 72 -7.0; 79 -7.4; 87 -8.0; 96 -8.5; 106 -9.0; 116 -9.5; 128 -9.9; 141 -10.2; 155 -10.3; 170 -10.3; 187 -10.2; 206 -9.9; 227 -9.6; 249 -9.3; 274 -9.1; 302 -8.9; 332 -8.7; 365 -8.5; 402 -8.2; 442 -8.0; 486 -7.8; 535 -7.6; 588 -7.3; 647 -6.7; 712 -6.2; 783 -5.8; 861 -5.6; 947 -5.4; 1042 -5.2; 1146 -4.8; 1261 -4.6; 1387 -4.1; 1526 -3.2; 1678 -3.0; 1846 -3.9; 2031 -5.3; 2234 -5.7; 2457 -4.9; 2703 -5.6; 2973 -7.2; 3270 -8.5; 3597 -8.0; 3957 -8.1; 4353 -9.6; 4788 -8.2; 5267 -6.5; 5793 -6.7; 6373 -5.2; 7010 -3.8; 7711 -5.1; 8482 -8.1; 9330 -7.6; 10263 -5.3; 11289 -5.3; 12418 -5.3; 13660 -5.3; 15026 -5.3; 16529 -6.0; 18182 -11.4; 20000 -11.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 599 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-51**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 599 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.8dB**.
+When using independent subset of filters, apply preamp of **-4.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 11 Hz    | 0.3  | 5.7 dB  |
-| Peaking | 166 Hz   | 0.44 | -5.1 dB |
-| Peaking | 1578 Hz  | 2.14 | 2.7 dB  |
-| Peaking | 4016 Hz  | 1.86 | -3.8 dB |
-| Peaking | 19160 Hz | 1.99 | -8.1 dB |
-| Peaking | 846 Hz   | 4.92 | 0.4 dB  |
-| Peaking | 6099 Hz  | 4.69 | -1.4 dB |
-| Peaking | 6863 Hz  | 3.76 | 2.9 dB  |
-| Peaking | 8795 Hz  | 6.95 | -3.9 dB |
-| Peaking | 15078 Hz | 2.3  | 1.1 dB  |
+| Peaking | 10 Hz    | 0.27 | 5.8 dB  |
+| Peaking | 165 Hz   | 0.44 | -5.2 dB |
+| Peaking | 1578 Hz  | 2.13 | 2.7 dB  |
+| Peaking | 4020 Hz  | 1.84 | -3.8 dB |
+| Peaking | 19344 Hz | 1.28 | -8.2 dB |
+| Peaking | 6028 Hz  | 3.97 | -1.3 dB |
+| Peaking | 6944 Hz  | 3.88 | 3.0 dB  |
+| Peaking | 8888 Hz  | 6.27 | -3.9 dB |
+| Peaking | 16765 Hz | 0.81 | 1.5 dB  |
+| Peaking | 17833 Hz | 2.63 | -3.3 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.7 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.7 dB |
+| Peaking | 125 Hz   | 1.41 | -4.4 dB |
+| Peaking | 250 Hz   | 1.41 | -3.5 dB |
+| Peaking | 500 Hz   | 1.41 | -2.0 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | 1.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | -3.8 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -1.6 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sennheiser%20HD%20599/Sennheiser%20HD%20599.png)

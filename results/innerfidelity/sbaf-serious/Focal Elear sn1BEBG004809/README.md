@@ -1,38 +1,56 @@
 # Focal Elear sn1BEBG004809
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 3.7; 25 3.4; 28 3.0; 31 2.8; 34 2.5; 37 2.4; 41 2.2; 45 2.0; 49 1.8; 54 1.5; 60 1.1; 66 0.7; 72 0.4; 79 0.1; 87 -0.2; 96 -0.6; 106 -0.8; 116 -0.9; 128 -1.2; 141 -1.2; 155 -1.3; 170 -1.3; 187 -1.4; 206 -1.3; 227 -1.2; 249 -1.1; 274 -0.9; 302 -0.9; 332 -0.7; 365 -0.5; 402 -0.4; 442 -0.2; 486 -0.2; 535 -0.1; 588 0.3; 647 0.5; 712 0.4; 783 0.6; 861 0.4; 947 0.1; 1042 -0.0; 1146 -0.5; 1261 -0.7; 1387 -1.0; 1526 -1.6; 1678 -2.4; 1846 -2.2; 2031 -2.3; 2234 -2.0; 2457 -1.9; 2703 -1.5; 2973 -0.3; 3270 0.7; 3597 1.3; 3957 4.7; 4353 5.4; 4788 5.9; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.2; 8482 -2.2; 9330 -1.4; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 -0.5; 20000 -1.2
+GraphicEQ: 21 -2.5; 23 -2.8; 25 -3.1; 28 -3.5; 31 -3.7; 34 -4.0; 37 -4.1; 41 -4.3; 45 -4.5; 49 -4.7; 54 -5.0; 60 -5.4; 66 -5.8; 72 -6.1; 79 -6.4; 87 -6.7; 96 -7.0; 106 -7.3; 116 -7.4; 128 -7.7; 141 -7.7; 155 -7.8; 170 -7.8; 187 -7.8; 206 -7.8; 227 -7.7; 249 -7.6; 274 -7.4; 302 -7.3; 332 -7.2; 365 -7.0; 402 -6.9; 442 -6.7; 486 -6.7; 535 -6.6; 588 -6.2; 647 -6.0; 712 -6.1; 783 -5.9; 861 -6.1; 947 -6.4; 1042 -6.5; 1146 -7.0; 1261 -7.2; 1387 -7.5; 1526 -8.1; 1678 -8.9; 1846 -8.7; 2031 -8.8; 2234 -8.5; 2457 -8.4; 2703 -7.9; 2973 -6.8; 3270 -5.8; 3597 -5.2; 3957 -1.8; 4353 -1.1; 4788 -0.6; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.3; 8482 -8.7; 9330 -7.9; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -7.0; 20000 -7.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Focal Elear sn1BEBG004809 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Elear sn1BEBG004809 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 14 Hz   | 0.35 | 4.2 dB  |
-| Peaking | 152 Hz  | 0.83 | -1.7 dB |
-| Peaking | 2338 Hz | 1.21 | -3.8 dB |
-| Peaking | 5291 Hz | 1.09 | 7.7 dB  |
-| Peaking | 8460 Hz | 2.66 | -5.1 dB |
-| Peaking | 770 Hz  | 2.08 | 0.9 dB  |
-| Peaking | 1658 Hz | 7.57 | -0.9 dB |
-| Peaking | 4021 Hz | 2.92 | -1.7 dB |
-| Peaking | 4073 Hz | 8.06 | 3.3 dB  |
-| Peaking | 6451 Hz | 9.85 | 0.9 dB  |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 14 Hz   |  0.34 | 4.2 dB  |
+| Peaking | 152 Hz  |  0.83 | -1.7 dB |
+| Peaking | 2354 Hz |  1.19 | -3.9 dB |
+| Peaking | 5304 Hz |  1.04 | 7.7 dB  |
+| Peaking | 8464 Hz |  2.52 | -5.2 dB |
+| Peaking | 769 Hz  |  2.09 | 0.9 dB  |
+| Peaking | 1654 Hz |  7.52 | -0.9 dB |
+| Peaking | 3998 Hz |  3.05 | -1.6 dB |
+| Peaking | 4076 Hz |  8.16 | 3.3 dB  |
+| Peaking | 6396 Hz | 11.7  | 0.9 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.5 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.6 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.3 dB |
+| Peaking | 250 Hz   | 1.41 | -1.1 dB |
+| Peaking | 500 Hz   | 1.41 | 0.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.9 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Focal%20Elear%20sn1BEBG004809/Focal%20Elear%20sn1BEBG004809.png)

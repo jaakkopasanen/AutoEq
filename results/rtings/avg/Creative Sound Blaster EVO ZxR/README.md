@@ -1,38 +1,56 @@
 # Creative Sound Blaster EVO ZxR
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 2.3; 25 1.4; 28 0.3; 31 -0.7; 34 -1.5; 37 -2.3; 41 -3.1; 45 -3.9; 49 -4.5; 54 -5.2; 60 -5.9; 66 -6.5; 72 -7.0; 79 -7.4; 87 -8.0; 96 -8.4; 106 -8.9; 116 -9.4; 128 -9.8; 141 -10.1; 155 -10.5; 170 -10.7; 187 -10.8; 206 -10.8; 227 -10.7; 249 -10.6; 274 -10.4; 302 -10.6; 332 -10.4; 365 -9.6; 402 -8.7; 442 -7.7; 486 -6.5; 535 -5.0; 588 -3.5; 647 -1.7; 712 0.1; 783 1.3; 861 0.7; 947 0.4; 1042 0.1; 1146 0.7; 1261 1.3; 1387 2.6; 1526 3.8; 1678 4.8; 1846 5.6; 2031 6.0; 2234 6.0; 2457 6.0; 2703 5.3; 2973 2.5; 3270 0.9; 3597 1.7; 3957 0.0; 4353 -1.9; 4788 1.5; 5267 0.2; 5793 -0.1; 6373 -1.1; 7010 -1.8; 7711 -5.1; 8482 -7.4; 9330 -6.1; 10263 -3.6; 11289 -2.6; 12418 -1.9; 13660 -0.7; 15026 0.0
+GraphicEQ: 21 -3.3; 23 -4.2; 25 -5.1; 28 -6.2; 31 -7.2; 34 -8.0; 37 -8.8; 41 -9.6; 45 -10.4; 49 -11.0; 54 -11.7; 60 -12.4; 66 -13.0; 72 -13.5; 79 -13.9; 87 -14.5; 96 -14.9; 106 -15.4; 116 -15.9; 128 -16.3; 141 -16.6; 155 -17.0; 170 -17.2; 187 -17.3; 206 -17.3; 227 -17.2; 249 -17.1; 274 -16.9; 302 -17.1; 332 -16.9; 365 -16.1; 402 -15.2; 442 -14.2; 486 -13.0; 535 -11.5; 588 -10.0; 647 -8.2; 712 -6.4; 783 -5.2; 861 -5.8; 947 -6.1; 1042 -6.4; 1146 -5.8; 1261 -5.2; 1387 -3.9; 1526 -2.7; 1678 -1.7; 1846 -0.9; 2031 -0.5; 2234 -0.5; 2457 -0.5; 2703 -1.2; 2973 -4.0; 3270 -5.6; 3597 -4.8; 3957 -6.5; 4353 -8.4; 4788 -5.0; 5267 -6.3; 5793 -6.6; 6373 -7.6; 7010 -8.3; 7711 -11.6; 8482 -13.9; 9330 -12.6; 10263 -10.1; 11289 -9.1; 12418 -8.4; 13660 -7.2; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Creative Sound Blaster EVO ZxR GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Creative Sound Blaster EVO ZxR ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.94 | 4.4 dB  |
-| Peaking | 131 Hz  | 0.47 | -9.5 dB |
-| Peaking | 330 Hz  | 1.28 | -6.0 dB |
-| Peaking | 2021 Hz | 1.23 | 6.7 dB  |
-| Peaking | 8744 Hz | 2.38 | -7.7 dB |
-| Peaking | 486 Hz  | 3.79 | -1.2 dB |
+| Peaking | 21 Hz   | 2.03 | 4.4 dB  |
+| Peaking | 135 Hz  | 0.48 | -9.5 dB |
+| Peaking | 331 Hz  | 1.28 | -6.0 dB |
+| Peaking | 2026 Hz | 1.23 | 6.7 dB  |
+| Peaking | 8755 Hz | 2.26 | -7.7 dB |
+| Peaking | 488 Hz  | 3.95 | -1.2 dB |
 | Peaking | 760 Hz  | 4.69 | 2.9 dB  |
-| Peaking | 2585 Hz | 9.27 | 1.6 dB  |
-| Peaking | 4329 Hz | 5.37 | -4.2 dB |
-| Peaking | 4772 Hz | 5.29 | 3.1 dB  |
+| Peaking | 2592 Hz | 9.34 | 1.5 dB  |
+| Peaking | 4355 Hz | 5.2  | -4.4 dB |
+| Peaking | 4746 Hz | 5.08 | 3.2 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 1.1 dB   |
+| Peaking | 62 Hz    | 1.41 | -5.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -7.5 dB  |
+| Peaking | 250 Hz   | 1.41 | -10.1 dB |
+| Peaking | 500 Hz   | 1.41 | -4.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.2 dB   |
+| Peaking | 2000 Hz  | 1.41 | 6.5 dB   |
+| Peaking | 4000 Hz  | 1.41 | 0.7 dB   |
+| Peaking | 8000 Hz  | 1.41 | -5.7 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.1 dB   |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Creative%20Sound%20Blaster%20EVO%20ZxR/Creative%20Sound%20Blaster%20EVO%20ZxR.png)

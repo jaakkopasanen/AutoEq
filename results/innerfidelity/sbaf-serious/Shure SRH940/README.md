@@ -1,38 +1,56 @@
 # Shure SRH940
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.7; 37 5.1; 41 4.1; 45 3.4; 49 2.7; 54 2.1; 60 1.6; 66 1.3; 72 1.3; 79 2.0; 87 2.9; 96 3.4; 106 2.2; 116 1.3; 128 0.9; 141 0.3; 155 -0.3; 170 -0.8; 187 -2.5; 206 -3.3; 227 -3.6; 249 -3.8; 274 -3.6; 302 -3.3; 332 -4.5; 365 -3.7; 402 -3.0; 442 -2.5; 486 -2.2; 535 -1.7; 588 -0.9; 647 -0.4; 712 -0.2; 783 0.3; 861 0.3; 947 0.1; 1042 -0.0; 1146 -0.1; 1261 -0.2; 1387 -1.0; 1526 -1.8; 1678 -2.6; 1846 -3.1; 2031 -3.1; 2234 -3.0; 2457 -2.0; 2703 -2.2; 2973 -1.8; 3270 -1.7; 3597 -2.1; 3957 -2.1; 4353 -2.6; 4788 -1.9; 5267 -0.0; 5793 1.4; 6373 1.1; 7010 0.1; 7711 -3.4; 8482 -7.7; 9330 -9.5; 10263 -5.2; 11289 -0.0; 12418 0.0; 13660 -1.9; 15026 -2.8; 16529 -0.0; 18182 -0.4; 20000 -5.4
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.8; 37 -1.4; 41 -2.4; 45 -3.1; 49 -3.8; 54 -4.4; 60 -4.9; 66 -5.2; 72 -5.2; 79 -4.5; 87 -3.6; 96 -3.1; 106 -4.3; 116 -5.2; 128 -5.6; 141 -6.2; 155 -6.8; 170 -7.3; 187 -9.0; 206 -9.8; 227 -10.1; 249 -10.3; 274 -10.1; 302 -9.8; 332 -11.0; 365 -10.2; 402 -9.5; 442 -9.0; 486 -8.7; 535 -8.2; 588 -7.4; 647 -6.9; 712 -6.7; 783 -6.2; 861 -6.2; 947 -6.4; 1042 -6.5; 1146 -6.6; 1261 -6.7; 1387 -7.5; 1526 -8.3; 1678 -9.1; 1846 -9.6; 2031 -9.6; 2234 -9.5; 2457 -8.5; 2703 -8.7; 2973 -8.3; 3270 -8.2; 3597 -8.6; 3957 -8.6; 4353 -9.1; 4788 -8.4; 5267 -6.5; 5793 -5.1; 6373 -5.4; 7010 -6.4; 7711 -9.9; 8482 -14.2; 9330 -16.0; 10263 -11.7; 11289 -6.5; 12418 -6.5; 13660 -8.4; 15026 -9.3; 16529 -6.5; 18182 -6.9; 20000 -11.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Shure SRH940 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Shure SRH940 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 27 Hz    | 0.93 | 6.5 dB   |
-| Peaking | 97 Hz    | 2.55 | 3.1 dB   |
-| Peaking | 289 Hz   | 1.13 | -4.4 dB  |
-| Peaking | 2235 Hz  | 1.35 | -3.0 dB  |
-| Peaking | 9147 Hz  | 4.21 | -10.6 dB |
-| Peaking | 885 Hz   | 2.15 | 1.2 dB   |
-| Peaking | 4471 Hz  | 3.69 | -2.1 dB  |
-| Peaking | 6095 Hz  | 2.81 | 3.7 dB   |
-| Peaking | 11634 Hz | 4.05 | 3.2 dB   |
-| Peaking | 21242 Hz | 0.08 | -1.8 dB  |
+| Peaking | 27 Hz    | 0.94 | 6.5 dB   |
+| Peaking | 98 Hz    | 2.55 | 3.1 dB   |
+| Peaking | 285 Hz   | 1.13 | -4.4 dB  |
+| Peaking | 2242 Hz  | 1.35 | -3.0 dB  |
+| Peaking | 9152 Hz  | 4.02 | -10.6 dB |
+| Peaking | 887 Hz   | 2.22 | 1.1 dB   |
+| Peaking | 4464 Hz  | 3.66 | -2.1 dB  |
+| Peaking | 6103 Hz  | 2.73 | 3.7 dB   |
+| Peaking | 11629 Hz | 3.72 | 3.2 dB   |
+| Peaking | 20355 Hz | 0.06 | -1.8 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.6 dB  |
+| Peaking | 125 Hz   | 1.41 | 2.1 dB  |
+| Peaking | 250 Hz   | 1.41 | -4.7 dB |
+| Peaking | 500 Hz   | 1.41 | -1.5 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.4 dB |
+| Peaking | 16000 Hz | 1.41 | -1.5 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Shure%20SRH940/Shure%20SRH940.png)

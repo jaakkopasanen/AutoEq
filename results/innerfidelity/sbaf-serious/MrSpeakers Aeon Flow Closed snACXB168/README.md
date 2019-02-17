@@ -1,38 +1,56 @@
 # MrSpeakers Aeon Flow Closed snACXB168
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.5dB
-GraphicEQ: 21 0.0; 23 0.5; 25 0.4; 28 0.4; 31 0.4; 34 0.3; 37 0.2; 41 0.2; 45 0.1; 49 0.0; 54 0.2; 60 0.6; 66 0.8; 72 0.6; 79 -0.0; 87 -0.5; 96 -0.6; 106 -0.2; 116 0.2; 128 0.2; 141 0.3; 155 0.9; 170 0.0; 187 -0.3; 206 -0.4; 227 -0.5; 249 -0.7; 274 -0.8; 302 -0.9; 332 -1.0; 365 -0.9; 402 -0.8; 442 -0.7; 486 -1.1; 535 -1.4; 588 -1.4; 647 -1.7; 712 -1.8; 783 -1.5; 861 -1.2; 947 -0.6; 1042 0.4; 1146 -0.6; 1261 -1.0; 1387 -1.4; 1526 -1.5; 1678 -1.4; 1846 -0.9; 2031 0.4; 2234 1.5; 2457 2.2; 2703 1.2; 2973 3.3; 3270 2.2; 3597 1.4; 3957 1.8; 4353 -0.0; 4788 1.7; 5267 3.1; 5793 1.7; 6373 0.7; 7010 -2.0; 7711 -3.5; 8482 -3.9; 9330 -2.2; 10263 0.0
+GraphicEQ: 21 -3.2; 23 -3.3; 25 -3.3; 28 -3.4; 31 -3.4; 34 -3.5; 37 -3.6; 41 -3.6; 45 -3.7; 49 -3.8; 54 -3.6; 60 -3.2; 66 -3.0; 72 -3.2; 79 -3.8; 87 -4.3; 96 -4.4; 106 -4.0; 116 -3.6; 128 -3.6; 141 -3.4; 155 -2.9; 170 -3.8; 187 -4.1; 206 -4.2; 227 -4.3; 249 -4.5; 274 -4.6; 302 -4.7; 332 -4.8; 365 -4.6; 402 -4.6; 442 -4.5; 486 -4.9; 535 -5.2; 588 -5.2; 647 -5.5; 712 -5.6; 783 -5.3; 861 -5.0; 947 -4.4; 1042 -3.4; 1146 -4.4; 1261 -4.8; 1387 -5.2; 1526 -5.3; 1678 -5.2; 1846 -4.7; 2031 -3.4; 2234 -2.3; 2457 -1.6; 2703 -2.6; 2973 -0.5; 3270 -1.6; 3597 -2.4; 3957 -2.0; 4353 -3.8; 4788 -2.1; 5267 -0.7; 5793 -2.1; 6373 -3.1; 7010 -5.8; 7711 -7.3; 8482 -7.7; 9330 -6.0; 10263 -3.8; 11289 -3.8; 12418 -3.8; 13660 -3.8; 15026 -3.8; 16529 -3.8; 18182 -3.8; 20000 -3.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `MrSpeakers Aeon Flow Closed snACXB168 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-34**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon Flow Closed snACXB168 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-3.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 596 Hz  | 0.97 | -1.5 dB |
+| Peaking | 595 Hz  | 0.97 | -1.5 dB |
 | Peaking | 1625 Hz | 2.88 | -2.0 dB |
-| Peaking | 2825 Hz | 1.56 | 2.7 dB  |
-| Peaking | 5368 Hz | 4.51 | 3.0 dB  |
-| Peaking | 8123 Hz | 3.38 | -4.6 dB |
-| Peaking | 24 Hz   | 0.54 | 0.7 dB  |
-| Peaking | 67 Hz   | 3.17 | 1.6 dB  |
-| Peaking | 118 Hz  | 0.51 | -1.6 dB |
-| Peaking | 144 Hz  | 1.63 | 2.1 dB  |
-| Peaking | 440 Hz  | 3.14 | 0.6 dB  |
+| Peaking | 2827 Hz | 1.56 | 2.7 dB  |
+| Peaking | 5371 Hz | 4.41 | 3.0 dB  |
+| Peaking | 8128 Hz | 3.24 | -4.6 dB |
+| Peaking | 24 Hz   | 0.51 | 0.7 dB  |
+| Peaking | 66 Hz   | 3.19 | 1.6 dB  |
+| Peaking | 119 Hz  | 0.51 | -1.6 dB |
+| Peaking | 147 Hz  | 1.61 | 2.1 dB  |
+| Peaking | 436 Hz  | 3.15 | 0.6 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 0.3 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.1 dB  |
+| Peaking | 125 Hz   | 1.41 | 0.3 dB  |
+| Peaking | 250 Hz   | 1.41 | -0.5 dB |
+| Peaking | 500 Hz   | 1.41 | -1.2 dB |
+| Peaking | 1000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.9 dB |
+| Peaking | 16000 Hz | 1.41 | 0.4 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20Flow%20Closed%20snACXB168/MrSpeakers%20Aeon%20Flow%20Closed%20snACXB168.png)

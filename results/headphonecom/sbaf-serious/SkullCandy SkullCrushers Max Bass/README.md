@@ -1,38 +1,56 @@
 # SkullCandy SkullCrushers Max Bass
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 4.8; 28 2.2; 31 3.2; 34 5.4; 37 6.0; 41 5.5; 45 3.1; 49 1.4; 54 0.7; 60 0.8; 66 -1.6; 72 -8.0; 79 -14.3; 87 -18.2; 96 -11.8; 106 -5.9; 116 -1.6; 128 2.4; 141 4.0; 155 6.0; 170 6.0; 187 6.0; 206 6.0; 227 6.0; 249 4.0; 274 2.7; 302 2.9; 332 2.9; 365 2.2; 402 2.2; 442 1.5; 486 0.6; 535 0.3; 588 0.5; 647 0.4; 712 0.5; 783 0.4; 861 0.3; 947 0.1; 1042 -0.2; 1146 -0.5; 1261 -0.8; 1387 -1.2; 1526 -1.3; 1678 -1.2; 1846 -3.3; 2031 -4.7; 2234 -2.1; 2457 2.1; 2703 5.7; 2973 6.0; 3270 6.0; 3597 3.3; 3957 0.7; 4353 3.3; 4788 5.9; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 -0.8; 9330 -2.4; 10263 -0.6; 11289 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -1.7; 28 -4.3; 31 -3.3; 34 -1.1; 37 -0.5; 41 -1.0; 45 -3.4; 49 -5.1; 54 -5.8; 60 -5.7; 66 -8.1; 72 -14.5; 79 -20.8; 87 -24.7; 96 -18.3; 106 -12.4; 116 -8.1; 128 -4.1; 141 -2.5; 155 -0.5; 170 -0.5; 187 -0.5; 206 -0.5; 227 -0.5; 249 -2.5; 274 -3.8; 302 -3.6; 332 -3.6; 365 -4.3; 402 -4.3; 442 -5.0; 486 -5.9; 535 -6.2; 588 -6.0; 647 -6.1; 712 -6.0; 783 -6.1; 861 -6.2; 947 -6.4; 1042 -6.7; 1146 -7.0; 1261 -7.3; 1387 -7.7; 1526 -7.8; 1678 -7.7; 1846 -9.8; 2031 -11.2; 2234 -8.6; 2457 -4.4; 2703 -0.8; 2973 -0.5; 3270 -0.5; 3597 -3.2; 3957 -5.8; 4353 -3.2; 4788 -0.6; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -7.3; 9330 -8.9; 10263 -7.1; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `SkullCandy SkullCrushers Max Bass GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `SkullCandy SkullCrushers Max Bass ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-8.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 42 Hz   | 0.57 | 7.9 dB   |
-| Peaking | 86 Hz   | 2.3  | -27.1 dB |
-| Peaking | 163 Hz  | 1.03 | 10.1 dB  |
-| Peaking | 3040 Hz | 4.85 | 6.7 dB   |
-| Peaking | 5480 Hz | 2.83 | 6.9 dB   |
-| Peaking | 21 Hz   | 3    | 2.4 dB   |
-| Peaking | 96 Hz   | 6.15 | -1.3 dB  |
-| Peaking | 2050 Hz | 2.91 | -5.9 dB  |
-| Peaking | 2584 Hz | 4.65 | 4.2 dB   |
-| Peaking | 9230 Hz | 5.5  | -3.2 dB  |
+| Peaking | 43 Hz   | 0.56 | 8.3 dB   |
+| Peaking | 86 Hz   | 2.23 | -27.8 dB |
+| Peaking | 161 Hz  | 1.02 | 10.4 dB  |
+| Peaking | 3040 Hz | 4.84 | 6.7 dB   |
+| Peaking | 5484 Hz | 2.77 | 6.9 dB   |
+| Peaking | 20 Hz   | 3.33 | 2.4 dB   |
+| Peaking | 98 Hz   | 5.89 | -1.2 dB  |
+| Peaking | 2043 Hz | 2.92 | -5.8 dB  |
+| Peaking | 2575 Hz | 4.71 | 4.1 dB   |
+| Peaking | 9206 Hz | 5.27 | -3.2 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 9.8 dB  |
+| Peaking | 62 Hz    | 1.41 | -9.7 dB |
+| Peaking | 125 Hz   | 1.41 | -0.9 dB |
+| Peaking | 250 Hz   | 1.41 | 6.8 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.6 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/SkullCandy%20SkullCrushers%20Max%20Bass/SkullCandy%20SkullCrushers%20Max%20Bass.png)

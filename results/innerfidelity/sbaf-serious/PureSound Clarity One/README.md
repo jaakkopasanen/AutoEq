@@ -1,38 +1,56 @@
 # PureSound Clarity One
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -0.1dB
-GraphicEQ: 21 -4.2; 23 -4.6; 25 -5.0; 28 -5.7; 31 -6.2; 34 -6.6; 37 -7.0; 41 -7.4; 45 -7.8; 49 -8.1; 54 -8.5; 60 -8.9; 66 -9.3; 72 -9.6; 79 -9.9; 87 -10.2; 96 -10.5; 106 -10.6; 116 -10.6; 128 -10.7; 141 -10.6; 155 -10.5; 170 -10.3; 187 -9.9; 206 -9.6; 227 -9.1; 249 -8.6; 274 -8.0; 302 -7.4; 332 -6.8; 365 -6.1; 402 -5.4; 442 -4.5; 486 -4.0; 535 -3.3; 588 -2.3; 647 -1.6; 712 -1.2; 783 -0.5; 861 -0.3; 947 -0.0; 1042 0.0; 1146 -0.1; 1261 -0.4; 1387 -1.0; 1526 -2.0; 1678 -2.6; 1846 -2.6; 2031 -2.2; 2234 -2.0; 2457 -1.5; 2703 -1.7; 2973 -2.2; 3270 -2.9; 3597 -3.3; 3957 -3.4; 4353 -4.9; 4788 -5.6; 5267 -6.1; 5793 -9.6; 6373 -13.6; 7010 -8.6; 7711 -4.7; 8482 -3.1; 9330 -4.0; 10263 -4.2; 11289 -1.0; 12418 0.0; 13660 0.0; 15026 -0.7; 16529 -3.5; 18182 -1.9; 20000 0.0
+GraphicEQ: 21 -4.7; 23 -5.1; 25 -5.5; 28 -6.2; 31 -6.7; 34 -7.1; 37 -7.5; 41 -7.9; 45 -8.3; 49 -8.6; 54 -9.0; 60 -9.4; 66 -9.8; 72 -10.1; 79 -10.4; 87 -10.7; 96 -11.0; 106 -11.1; 116 -11.1; 128 -11.2; 141 -11.1; 155 -11.0; 170 -10.8; 187 -10.4; 206 -10.1; 227 -9.6; 249 -9.1; 274 -8.5; 302 -7.9; 332 -7.3; 365 -6.6; 402 -5.9; 442 -5.0; 486 -4.5; 535 -3.8; 588 -2.8; 647 -2.1; 712 -1.7; 783 -1.0; 861 -0.8; 947 -0.5; 1042 -0.5; 1146 -0.6; 1261 -0.9; 1387 -1.5; 1526 -2.5; 1678 -3.1; 1846 -3.1; 2031 -2.7; 2234 -2.5; 2457 -2.0; 2703 -2.2; 2973 -2.7; 3270 -3.4; 3597 -3.8; 3957 -3.9; 4353 -5.4; 4788 -6.1; 5267 -6.6; 5793 -10.1; 6373 -14.1; 7010 -9.1; 7711 -5.2; 8482 -3.6; 9330 -4.5; 10263 -4.7; 11289 -1.5; 12418 -0.5; 13660 -0.5; 15026 -1.2; 16529 -4.0; 18182 -2.4; 20000 -0.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `PureSound Clarity One GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-1**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `PureSound Clarity One ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.1dB**.
+When using independent subset of filters, apply preamp of **--0.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 53 Hz    | 0.39 | -6.4 dB  |
-| Peaking | 145 Hz   | 0.63 | -6.4 dB  |
-| Peaking | 303 Hz   | 1.03 | -3.2 dB  |
-| Peaking | 6215 Hz  | 1.81 | -11.7 dB |
-| Peaking | 16855 Hz | 3.47 | -3.8 dB  |
-| Peaking | 1867 Hz  | 2.84 | -2.1 dB  |
-| Peaking | 8094 Hz  | 5.39 | 2.4 dB   |
-| Peaking | 10159 Hz | 3.26 | -3.5 dB  |
-| Peaking | 11966 Hz | 1.94 | 2.3 dB   |
-| Peaking | 16089 Hz | 2.99 | -0.5 dB  |
+| Peaking | 56 Hz    | 0.37 | -6.7 dB  |
+| Peaking | 151 Hz   | 0.64 | -6.1 dB  |
+| Peaking | 311 Hz   | 1.08 | -3.0 dB  |
+| Peaking | 6219 Hz  | 1.76 | -11.7 dB |
+| Peaking | 17011 Hz | 2.58 | -3.8 dB  |
+| Peaking | 1842 Hz  | 3.16 | -2.1 dB  |
+| Peaking | 8032 Hz  | 4.91 | 2.4 dB   |
+| Peaking | 10175 Hz | 3.74 | -3.6 dB  |
+| Peaking | 11962 Hz | 1.27 | 2.6 dB   |
+| Peaking | 12498 Hz | 0.34 | -0.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -5.3 dB |
+| Peaking | 62 Hz    | 1.41 | -7.1 dB |
+| Peaking | 125 Hz   | 1.41 | -8.9 dB |
+| Peaking | 250 Hz   | 1.41 | -7.2 dB |
+| Peaking | 500 Hz   | 1.41 | -2.2 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -4.0 dB |
+| Peaking | 8000 Hz  | 1.41 | -6.8 dB |
+| Peaking | 16000 Hz | 1.41 | -1.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/PureSound%20Clarity%20One/PureSound%20Clarity%20One.png)

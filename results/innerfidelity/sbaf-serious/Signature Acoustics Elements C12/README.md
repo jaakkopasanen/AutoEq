@@ -1,38 +1,56 @@
 # Signature Acoustics Elements C12
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.6dB
-GraphicEQ: 21 -7.6; 23 -8.2; 25 -8.6; 28 -9.2; 31 -9.7; 34 -10.2; 37 -10.6; 41 -11.0; 45 -11.4; 49 -11.7; 54 -12.1; 60 -12.6; 66 -12.9; 72 -13.3; 79 -13.7; 87 -14.1; 96 -14.6; 106 -14.7; 116 -14.8; 128 -15.0; 141 -15.1; 155 -15.1; 170 -15.0; 187 -14.8; 206 -14.5; 227 -14.1; 249 -13.7; 274 -13.2; 302 -12.5; 332 -11.9; 365 -11.2; 402 -10.4; 442 -9.4; 486 -8.6; 535 -7.6; 588 -6.3; 647 -5.1; 712 -4.1; 783 -2.8; 861 -1.7; 947 -0.6; 1042 0.4; 1146 1.4; 1261 2.2; 1387 1.5; 1526 -0.5; 1678 -1.9; 1846 -2.4; 2031 -2.7; 2234 -2.2; 2457 -0.7; 2703 0.7; 2973 2.3; 3270 3.3; 3597 3.0; 3957 0.9; 4353 -2.6; 4788 -5.2; 5267 -7.1; 5793 -9.5; 6373 -7.7; 7010 -4.3; 7711 -2.3; 8482 -2.4; 9330 -4.2; 10263 -4.2; 11289 -0.2; 12418 0.0; 13660 0.0; 15026 -0.2; 16529 -5.3; 18182 -6.3; 20000 -1.0
+GraphicEQ: 21 -11.4; 23 -12.0; 25 -12.4; 28 -13.0; 31 -13.5; 34 -14.0; 37 -14.4; 41 -14.8; 45 -15.2; 49 -15.5; 54 -15.9; 60 -16.4; 66 -16.7; 72 -17.1; 79 -17.5; 87 -17.9; 96 -18.4; 106 -18.5; 116 -18.6; 128 -18.8; 141 -18.9; 155 -18.9; 170 -18.8; 187 -18.6; 206 -18.3; 227 -17.9; 249 -17.5; 274 -17.0; 302 -16.4; 332 -15.7; 365 -15.0; 402 -14.2; 442 -13.2; 486 -12.4; 535 -11.4; 588 -10.1; 647 -8.9; 712 -7.9; 783 -6.6; 861 -5.5; 947 -4.4; 1042 -3.4; 1146 -2.4; 1261 -1.6; 1387 -2.3; 1526 -4.3; 1678 -5.7; 1846 -6.2; 2031 -6.5; 2234 -6.0; 2457 -4.5; 2703 -3.1; 2973 -1.5; 3270 -0.5; 3597 -0.8; 3957 -2.9; 4353 -6.4; 4788 -9.0; 5267 -10.9; 5793 -13.3; 6373 -11.5; 7010 -8.1; 7711 -6.1; 8482 -6.2; 9330 -8.0; 10263 -8.0; 11289 -4.0; 12418 -3.8; 13660 -3.8; 15026 -4.0; 16529 -9.1; 18182 -10.1; 20000 -4.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Signature Acoustics Elements C12 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Signature Acoustics Elements C12 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 60 Hz    | 0.3  | -11.0 dB |
+| Peaking | 59 Hz    | 0.3  | -11.0 dB |
 | Peaking | 185 Hz   | 0.7  | -7.9 dB  |
-| Peaking | 398 Hz   | 1.33 | -5.1 dB  |
-| Peaking | 5895 Hz  | 3.09 | -10.0 dB |
-| Peaking | 17829 Hz | 2.04 | -7.3 dB  |
-| Peaking | 1231 Hz  | 1.85 | 6.4 dB   |
-| Peaking | 2963 Hz  | 0.44 | -6.8 dB  |
-| Peaking | 3287 Hz  | 1.78 | 10.4 dB  |
-| Peaking | 9276 Hz  | 0.87 | 5.0 dB   |
-| Peaking | 9736 Hz  | 3.07 | -7.4 dB  |
+| Peaking | 398 Hz   | 1.32 | -5.1 dB  |
+| Peaking | 5906 Hz  | 3.05 | -10.0 dB |
+| Peaking | 17866 Hz | 1.43 | -7.2 dB  |
+| Peaking | 1239 Hz  | 1.84 | 6.5 dB   |
+| Peaking | 3149 Hz  | 0.43 | -7.3 dB  |
+| Peaking | 3268 Hz  | 1.77 | 10.6 dB  |
+| Peaking | 9235 Hz  | 0.76 | 5.5 dB   |
+| Peaking | 9686 Hz  | 2.81 | -7.6 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -8.6 dB  |
+| Peaking | 62 Hz    | 1.41 | -9.4 dB  |
+| Peaking | 125 Hz   | 1.41 | -12.1 dB |
+| Peaking | 250 Hz   | 1.41 | -11.1 dB |
+| Peaking | 500 Hz   | 1.41 | -6.7 dB  |
+| Peaking | 1000 Hz  | 1.41 | 2.6 dB   |
+| Peaking | 2000 Hz  | 1.41 | -1.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -5.5 dB  |
+| Peaking | 16000 Hz | 1.41 | -3.1 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Signature%20Acoustics%20Elements%20C12/Signature%20Acoustics%20Elements%20C12.png)

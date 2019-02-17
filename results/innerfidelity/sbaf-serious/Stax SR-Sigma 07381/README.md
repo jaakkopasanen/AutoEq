@@ -1,18 +1,16 @@
 # Stax SR-Sigma 07381
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 4.9; 79 3.5; 87 2.3; 96 1.5; 106 1.2; 116 1.4; 128 1.5; 141 2.1; 155 2.9; 170 1.9; 187 -1.8; 206 -0.6; 227 -0.7; 249 -1.3; 274 -0.9; 302 -0.6; 332 0.0; 365 0.6; 402 0.9; 442 1.6; 486 2.0; 535 2.5; 588 3.0; 647 2.2; 712 1.0; 783 0.7; 861 0.0; 947 0.4; 1042 0.7; 1146 0.9; 1261 2.3; 1387 3.5; 1526 5.2; 1678 5.9; 1846 6.0; 2031 6.0; 2234 6.0; 2457 6.0; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 5.6; 5793 2.7; 6373 2.9; 7010 2.4; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -1.6; 79 -3.0; 87 -4.2; 96 -5.0; 106 -5.3; 116 -5.1; 128 -5.0; 141 -4.4; 155 -3.6; 170 -4.6; 187 -8.3; 206 -7.1; 227 -7.2; 249 -7.8; 274 -7.4; 302 -7.1; 332 -6.5; 365 -5.9; 402 -5.6; 442 -4.9; 486 -4.5; 535 -4.0; 588 -3.5; 647 -4.3; 712 -5.5; 783 -5.8; 861 -6.5; 947 -6.1; 1042 -5.8; 1146 -5.6; 1261 -4.2; 1387 -3.0; 1526 -1.3; 1678 -0.6; 1846 -0.5; 2031 -0.5; 2234 -0.5; 2457 -0.5; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.9; 5793 -3.8; 6373 -3.6; 7010 -4.1; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Stax SR-Sigma 07381 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Stax SR-Sigma 07381 ParametricEQ.txt`.
@@ -24,15 +22,35 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 29 Hz   | 0.42 | 6.2 dB  |
-| Peaking | 62 Hz   | 3.18 | 2.3 dB  |
-| Peaking | 562 Hz  | 1.29 | 8.1 dB  |
-| Peaking | 687 Hz  | 0.57 | -7.7 dB |
-| Peaking | 2216 Hz | 0.5  | 8.3 dB  |
-| Peaking | 164 Hz  | 5.33 | 4.6 dB  |
-| Peaking | 181 Hz  | 4.78 | -3.5 dB |
-| Peaking | 1178 Hz | 7.08 | -0.7 dB |
-| Peaking | 4875 Hz | 3.75 | 2.4 dB  |
-| Peaking | 8860 Hz | 1.35 | -1.6 dB |
+| Peaking | 28 Hz   | 0.42 | 6.2 dB  |
+| Peaking | 62 Hz   | 3.17 | 2.4 dB  |
+| Peaking | 559 Hz  | 1.3  | 7.9 dB  |
+| Peaking | 700 Hz  | 0.57 | -7.6 dB |
+| Peaking | 2207 Hz | 0.49 | 8.4 dB  |
+| Peaking | 162 Hz  | 5.21 | 4.9 dB  |
+| Peaking | 181 Hz  | 4.28 | -3.6 dB |
+| Peaking | 1625 Hz | 4.09 | 1.7 dB  |
+| Peaking | 4798 Hz | 1.36 | 4.9 dB  |
+| Peaking | 5238 Hz | 0.54 | -3.3 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.3 dB  |
+| Peaking | 125 Hz   | 1.41 | 1.0 dB  |
+| Peaking | 250 Hz   | 1.41 | -2.0 dB |
+| Peaking | 500 Hz   | 1.41 | 2.6 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 2000 Hz  | 1.41 | 5.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.2 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-Sigma%2007381/Stax%20SR-Sigma%2007381.png)

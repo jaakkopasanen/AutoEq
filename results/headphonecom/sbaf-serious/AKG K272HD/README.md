@@ -1,38 +1,56 @@
 # AKG K272HD
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.9; 49 5.6; 54 4.8; 60 3.3; 66 2.0; 72 1.3; 79 1.4; 87 2.1; 96 3.0; 106 2.1; 116 0.3; 128 -0.8; 141 -1.5; 155 -2.0; 170 -1.4; 187 -0.9; 206 -0.5; 227 -0.7; 249 -0.7; 274 -0.9; 302 -0.8; 332 -0.8; 365 -1.1; 402 -1.4; 442 -1.5; 486 -1.5; 535 -1.7; 588 -2.2; 647 -3.4; 712 -0.9; 783 0.2; 861 0.6; 947 0.3; 1042 -0.3; 1146 -0.9; 1261 -1.5; 1387 -2.3; 1526 -3.5; 1678 -4.1; 1846 -3.4; 2031 0.3; 2234 3.2; 2457 3.7; 2703 2.9; 2973 2.8; 3270 2.8; 3597 4.2; 3957 4.8; 4353 4.0; 4788 4.7; 5267 6.0; 5793 6.0; 6373 3.3; 7010 2.4; 7711 0.3; 8482 -2.7; 9330 -6.8; 10263 -3.8; 11289 -0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.6; 49 -0.9; 54 -1.7; 60 -3.2; 66 -4.5; 72 -5.2; 79 -5.1; 87 -4.4; 96 -3.5; 106 -4.4; 116 -6.2; 128 -7.3; 141 -8.0; 155 -8.5; 170 -7.9; 187 -7.4; 206 -7.0; 227 -7.2; 249 -7.2; 274 -7.4; 302 -7.3; 332 -7.3; 365 -7.6; 402 -7.9; 442 -8.0; 486 -8.0; 535 -8.2; 588 -8.7; 647 -9.9; 712 -7.4; 783 -6.3; 861 -5.9; 947 -6.2; 1042 -6.8; 1146 -7.4; 1261 -8.0; 1387 -8.8; 1526 -10.0; 1678 -10.6; 1846 -9.9; 2031 -6.2; 2234 -3.3; 2457 -2.8; 2703 -3.6; 2973 -3.7; 3270 -3.7; 3597 -2.3; 3957 -1.7; 4353 -2.5; 4788 -1.8; 5267 -0.5; 5793 -0.5; 6373 -3.2; 7010 -4.1; 7711 -6.2; 8482 -9.2; 9330 -13.3; 10263 -10.3; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `AKG K272HD GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K272HD ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 32 Hz   | 0.86 | 6.9 dB  |
-| Peaking | 1822 Hz | 1.79 | -8.4 dB |
-| Peaking | 2209 Hz | 2.36 | 7.5 dB  |
-| Peaking | 5170 Hz | 1    | 5.9 dB  |
-| Peaking | 9303 Hz | 3.73 | -9.1 dB |
-| Peaking | 100 Hz  | 5.13 | 2.6 dB  |
-| Peaking | 147 Hz  | 2.22 | -2.3 dB |
-| Peaking | 505 Hz  | 1.02 | -1.9 dB |
-| Peaking | 663 Hz  | 4.8  | -4.2 dB |
-| Peaking | 747 Hz  | 1.76 | 3.0 dB  |
+| Peaking | 32 Hz   | 0.87 | 6.9 dB  |
+| Peaking | 1830 Hz | 1.76 | -8.9 dB |
+| Peaking | 2205 Hz | 2.27 | 8.0 dB  |
+| Peaking | 5167 Hz | 0.99 | 5.9 dB  |
+| Peaking | 9329 Hz | 3.56 | -9.0 dB |
+| Peaking | 99 Hz   | 5.18 | 2.6 dB  |
+| Peaking | 149 Hz  | 2.26 | -2.3 dB |
+| Peaking | 513 Hz  | 1    | -2.0 dB |
+| Peaking | 656 Hz  | 4.93 | -4.0 dB |
+| Peaking | 758 Hz  | 1.69 | 3.0 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 7.1 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.5 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.8 dB |
+| Peaking | 250 Hz   | 1.41 | -0.6 dB |
+| Peaking | 500 Hz   | 1.41 | -1.7 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.1 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K272HD/AKG%20K272HD.png)

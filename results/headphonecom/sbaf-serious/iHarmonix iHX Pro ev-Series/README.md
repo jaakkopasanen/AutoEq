@@ -1,24 +1,22 @@
 # iHarmonix iHX Pro ev-Series
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.9dB
-GraphicEQ: 21 -3.7; 23 -3.7; 25 -3.7; 28 -3.8; 31 -3.7; 34 -3.7; 37 -3.7; 41 -3.7; 45 -3.7; 49 -3.8; 54 -3.9; 60 -4.0; 66 -4.2; 72 -4.3; 79 -4.4; 87 -4.5; 96 -4.5; 106 -4.5; 116 -4.5; 128 -4.4; 141 -4.4; 155 -4.3; 170 -4.1; 187 -3.8; 206 -3.5; 227 -3.0; 249 -2.6; 274 -2.6; 302 -2.2; 332 -1.7; 365 -1.2; 402 -0.7; 442 -0.3; 486 -0.1; 535 0.1; 588 0.5; 647 0.8; 712 1.0; 783 0.9; 861 0.7; 947 0.3; 1042 -0.3; 1146 -0.8; 1261 -1.4; 1387 -2.3; 1526 -4.0; 1678 -5.8; 1846 -7.1; 2031 -8.3; 2234 -9.5; 2457 -10.3; 2703 -8.3; 2973 -4.1; 3270 -0.3; 3597 1.5; 3957 0.2; 4353 -3.2; 4788 -6.3; 5267 -4.4; 5793 1.4; 6373 4.7; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -0.5; 10263 0.0
+GraphicEQ: 21 -8.9; 23 -8.9; 25 -8.9; 28 -9.0; 31 -8.9; 34 -8.9; 37 -8.9; 41 -8.9; 45 -9.0; 49 -9.0; 54 -9.1; 60 -9.2; 66 -9.4; 72 -9.5; 79 -9.6; 87 -9.7; 96 -9.7; 106 -9.7; 116 -9.7; 128 -9.6; 141 -9.6; 155 -9.5; 170 -9.3; 187 -9.0; 206 -8.7; 227 -8.2; 249 -7.8; 274 -7.8; 302 -7.4; 332 -6.9; 365 -6.4; 402 -5.9; 442 -5.5; 486 -5.3; 535 -5.1; 588 -4.7; 647 -4.5; 712 -4.3; 783 -4.3; 861 -4.5; 947 -4.9; 1042 -5.5; 1146 -6.0; 1261 -6.6; 1387 -7.5; 1526 -9.2; 1678 -11.0; 1846 -12.4; 2031 -13.5; 2234 -14.7; 2457 -15.5; 2703 -13.5; 2973 -9.3; 3270 -5.5; 3597 -3.7; 3957 -5.0; 4353 -8.4; 4788 -11.6; 5267 -9.6; 5793 -3.8; 6373 -0.5; 7010 -2.7; 7711 -4.9; 8482 -5.2; 9330 -5.7; 10263 -5.2; 11289 -5.2; 12418 -5.2; 13660 -5.2; 15026 -5.2; 16529 -5.2; 18182 -5.2; 20000 -5.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `iHarmonix iHX Pro ev-Series GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-49**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `iHarmonix iHX Pro ev-Series ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-4.9dB**.
 
@@ -26,13 +24,33 @@ When using independent subset of filters, apply preamp of **-4.9dB**.
 |:--------|:--------|:-----|:---------|
 | Peaking | 37 Hz   | 0.31 | -3.7 dB  |
 | Peaking | 151 Hz  | 0.9  | -3.0 dB  |
-| Peaking | 2239 Hz | 2.27 | -10.8 dB |
-| Peaking | 4955 Hz | 6.57 | -7.4 dB  |
-| Peaking | 6383 Hz | 4.52 | 5.8 dB   |
-| Peaking | 752 Hz  | 1.74 | 1.7 dB   |
-| Peaking | 1655 Hz | 5.57 | -2.2 dB  |
-| Peaking | 2690 Hz | 7.1  | -3.5 dB  |
-| Peaking | 3622 Hz | 3.17 | 4.4 dB   |
-| Peaking | 4440 Hz | 5.26 | -2.6 dB  |
+| Peaking | 2240 Hz | 2.27 | -10.8 dB |
+| Peaking | 4956 Hz | 6.44 | -7.4 dB  |
+| Peaking | 6382 Hz | 4.36 | 5.7 dB   |
+| Peaking | 751 Hz  | 1.73 | 1.7 dB   |
+| Peaking | 1638 Hz | 5.56 | -2.2 dB  |
+| Peaking | 2718 Hz | 7.06 | -3.5 dB  |
+| Peaking | 3638 Hz | 3.12 | 4.4 dB   |
+| Peaking | 4470 Hz | 5.18 | -2.6 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -3.6 dB |
+| Peaking | 62 Hz    | 1.41 | -3.0 dB |
+| Peaking | 125 Hz   | 1.41 | -3.9 dB |
+| Peaking | 250 Hz   | 1.41 | -2.4 dB |
+| Peaking | 500 Hz   | 1.41 | 0.7 dB  |
+| Peaking | 1000 Hz  | 1.41 | 2.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | -9.6 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/iHarmonix%20iHX%20Pro%20ev-Series/iHarmonix%20iHX%20Pro%20ev-Series.png)

@@ -1,37 +1,55 @@
 # Techfusion Ecoofers
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.4dB
-GraphicEQ: 21 -14.9; 23 -14.9; 25 -14.9; 28 -15.0; 31 -15.0; 34 -15.0; 37 -15.0; 41 -14.9; 45 -14.9; 49 -14.9; 54 -14.9; 60 -14.9; 66 -14.9; 72 -14.9; 79 -14.9; 87 -15.0; 96 -14.9; 106 -14.8; 116 -14.5; 128 -14.3; 141 -14.0; 155 -13.7; 170 -13.2; 187 -12.7; 206 -12.2; 227 -11.5; 249 -10.9; 274 -10.2; 302 -9.4; 332 -8.6; 365 -7.8; 402 -7.0; 442 -6.0; 486 -5.3; 535 -4.3; 588 -3.3; 647 -2.4; 712 -1.6; 783 -0.6; 861 -0.4; 947 -0.0; 1042 0.0; 1146 0.1; 1261 0.1; 1387 -0.2; 1526 -0.6; 1678 -1.2; 1846 -2.7; 2031 -2.8; 2234 -2.7; 2457 -2.5; 2703 -3.0; 2973 -3.3; 3270 -1.3; 3597 1.0; 3957 0.9; 4353 -0.7; 4788 -1.6; 5267 -1.9; 5793 -3.5; 6373 -5.3; 7010 -3.6; 7711 -0.9; 8482 0.0; 9330 0.0; 10263 0.0; 11289 -0.6; 12418 0.0; 13660 0.0; 15026 0.0; 16529 -1.8; 18182 -2.5; 20000 0.0
+GraphicEQ: 21 -16.4; 23 -16.5; 25 -16.5; 28 -16.5; 31 -16.6; 34 -16.5; 37 -16.5; 41 -16.5; 45 -16.4; 49 -16.4; 54 -16.4; 60 -16.4; 66 -16.4; 72 -16.5; 79 -16.5; 87 -16.5; 96 -16.5; 106 -16.3; 116 -16.0; 128 -15.9; 141 -15.5; 155 -15.2; 170 -14.8; 187 -14.3; 206 -13.7; 227 -13.1; 249 -12.5; 274 -11.7; 302 -11.0; 332 -10.2; 365 -9.4; 402 -8.5; 442 -7.6; 486 -6.8; 535 -5.9; 588 -4.8; 647 -3.9; 712 -3.1; 783 -2.1; 861 -1.9; 947 -1.6; 1042 -1.5; 1146 -1.5; 1261 -1.5; 1387 -1.8; 1526 -2.1; 1678 -2.8; 1846 -4.2; 2031 -4.3; 2234 -4.2; 2457 -4.0; 2703 -4.5; 2973 -4.8; 3270 -2.9; 3597 -0.5; 3957 -0.6; 4353 -2.3; 4788 -3.2; 5267 -3.5; 5793 -5.1; 6373 -6.8; 7010 -5.1; 7711 -2.4; 8482 -1.5; 9330 -1.5; 10263 -1.5; 11289 -2.2; 12418 -1.5; 13660 -1.5; 15026 -1.5; 16529 -3.3; 18182 -4.1; 20000 -1.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Techfusion Ecoofers GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-13**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Techfusion Ecoofers ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-0.4dB**.
+When using independent subset of filters, apply preamp of **-0.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 57 Hz    | 0.09 | -15.4 dB |
-| Peaking | 1464 Hz  | 0.3  | 7.7 dB   |
-| Peaking | 2271 Hz  | 0.92 | -8.7 dB  |
-| Peaking | 6286 Hz  | 2.76 | -6.6 dB  |
-| Peaking | 17633 Hz | 2.73 | -3.2 dB  |
-| Peaking | 2397 Hz  | 7.36 | 0.9 dB   |
-| Peaking | 3074 Hz  | 4.52 | -2.6 dB  |
-| Peaking | 3611 Hz  | 3.66 | 2.6 dB   |
-| Peaking | 4583 Hz  | 6.01 | -1.6 dB  |
+| Peaking | 1491 Hz  | 0.29 | 8.1 dB   |
+| Peaking | 2277 Hz  | 0.89 | -9.1 dB  |
+| Peaking | 6278 Hz  | 2.64 | -6.6 dB  |
+| Peaking | 17701 Hz | 1.97 | -3.2 dB  |
+| Peaking | 2447 Hz  | 3.27 | 2.5 dB   |
+| Peaking | 3114 Hz  | 1.52 | -3.4 dB  |
+| Peaking | 3626 Hz  | 4.25 | 4.3 dB   |
+| Peaking | 8044 Hz  | 7.89 | 1.0 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -15.6 dB |
+| Peaking | 62 Hz    | 1.41 | -10.1 dB |
+| Peaking | 125 Hz   | 1.41 | -11.4 dB |
+| Peaking | 250 Hz   | 1.41 | -8.6 dB  |
+| Peaking | 500 Hz   | 1.41 | -3.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | 2.1 dB   |
+| Peaking | 2000 Hz  | 1.41 | -2.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.9 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Techfusion%20Ecoofers/Techfusion%20Ecoofers.png)

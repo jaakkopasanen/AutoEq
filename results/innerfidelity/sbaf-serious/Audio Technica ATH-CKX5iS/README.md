@@ -1,38 +1,56 @@
 # Audio Technica ATH-CKX5iS
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.3dB
-GraphicEQ: 21 -6.8; 23 -6.8; 25 -6.9; 28 -6.8; 31 -6.8; 34 -6.8; 37 -6.8; 41 -6.8; 45 -6.8; 49 -6.7; 54 -6.7; 60 -6.6; 66 -6.6; 72 -6.7; 79 -6.7; 87 -6.7; 96 -6.7; 106 -6.5; 116 -6.3; 128 -6.2; 141 -5.9; 155 -5.6; 170 -5.3; 187 -4.9; 206 -4.5; 227 -3.9; 249 -3.5; 274 -3.0; 302 -2.5; 332 -2.0; 365 -1.5; 402 -1.0; 442 -0.5; 486 -0.2; 535 0.2; 588 0.8; 647 1.0; 712 1.0; 783 1.2; 861 0.8; 947 0.4; 1042 -0.3; 1146 -0.8; 1261 -1.5; 1387 -2.2; 1526 -3.4; 1678 -4.1; 1846 -4.2; 2031 -3.5; 2234 -4.1; 2457 -4.5; 2703 -5.6; 2973 -5.5; 3270 -4.0; 3597 -2.3; 3957 -2.7; 4353 -5.1; 4788 -7.3; 5267 -8.5; 5793 -6.8; 6373 -3.4; 7010 -0.7; 7711 0.2; 8482 -0.1; 9330 -2.5; 10263 -5.7; 11289 -4.9; 12418 -2.9; 13660 -4.8; 15026 -3.5; 16529 0.0
+GraphicEQ: 21 -8.5; 23 -8.6; 25 -8.6; 28 -8.6; 31 -8.5; 34 -8.5; 37 -8.5; 41 -8.5; 45 -8.5; 49 -8.4; 54 -8.4; 60 -8.4; 66 -8.4; 72 -8.4; 79 -8.4; 87 -8.4; 96 -8.4; 106 -8.2; 116 -8.0; 128 -7.9; 141 -7.6; 155 -7.4; 170 -7.0; 187 -6.6; 206 -6.2; 227 -5.7; 249 -5.2; 274 -4.7; 302 -4.3; 332 -3.7; 365 -3.2; 402 -2.7; 442 -2.2; 486 -1.9; 535 -1.5; 588 -0.9; 647 -0.7; 712 -0.7; 783 -0.5; 861 -0.9; 947 -1.4; 1042 -2.0; 1146 -2.5; 1261 -3.2; 1387 -4.0; 1526 -5.1; 1678 -5.8; 1846 -5.9; 2031 -5.2; 2234 -5.8; 2457 -6.3; 2703 -7.3; 2973 -7.2; 3270 -5.7; 3597 -4.1; 3957 -4.4; 4353 -6.8; 4788 -9.0; 5267 -10.2; 5793 -8.5; 6373 -5.1; 7010 -2.4; 7711 -1.5; 8482 -1.8; 9330 -4.2; 10263 -7.4; 11289 -6.6; 12418 -4.6; 13660 -6.5; 15026 -5.2; 16529 -1.7; 18182 -1.7; 20000 -1.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio Technica ATH-CKX5iS GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-13**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-CKX5iS ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.1dB**.
+When using independent subset of filters, apply preamp of **--0.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 50 Hz    | 0.25 | -7.3 dB |
 | Peaking | 1715 Hz  | 3.22 | -3.6 dB |
 | Peaking | 2750 Hz  | 2.6  | -5.1 dB |
-| Peaking | 5189 Hz  | 3.5  | -8.5 dB |
-| Peaking | 12248 Hz | 1.45 | -4.7 dB |
-| Peaking | 20 Hz    | 1.95 | -1.0 dB |
-| Peaking | 679 Hz   | 1.9  | 2.1 dB  |
-| Peaking | 7952 Hz  | 4.08 | 2.6 dB  |
-| Peaking | 10286 Hz | 6.97 | -3.1 dB |
-| Peaking | 16748 Hz | 5.57 | 1.3 dB  |
+| Peaking | 5190 Hz  | 3.45 | -8.5 dB |
+| Peaking | 12430 Hz | 1.27 | -4.7 dB |
+| Peaking | 21 Hz    | 2.45 | -0.9 dB |
+| Peaking | 181 Hz   | 1.54 | -0.9 dB |
+| Peaking | 664 Hz   | 1.66 | 2.1 dB  |
+| Peaking | 7954 Hz  | 3.92 | 2.6 dB  |
+| Peaking | 10323 Hz | 6.56 | -3.3 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -6.9 dB |
+| Peaking | 62 Hz    | 1.41 | -4.9 dB |
+| Peaking | 125 Hz   | 1.41 | -5.2 dB |
+| Peaking | 250 Hz   | 1.41 | -2.9 dB |
+| Peaking | 500 Hz   | 1.41 | 1.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.0 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.0 dB |
+| Peaking | 4000 Hz  | 1.41 | -4.7 dB |
+| Peaking | 8000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 16000 Hz | 1.41 | -3.0 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-CKX5iS/Audio%20Technica%20ATH-CKX5iS.png)

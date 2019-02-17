@@ -1,38 +1,56 @@
 # Etymotic hf5
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 5.8; 106 4.9; 116 4.0; 128 3.1; 141 2.3; 155 1.6; 170 1.1; 187 0.6; 206 0.2; 227 -0.1; 249 -0.1; 274 -0.2; 302 -0.3; 332 -0.3; 365 -0.4; 402 -0.4; 442 -0.3; 486 -0.3; 535 -0.1; 588 0.1; 647 0.4; 712 0.7; 783 0.8; 861 0.7; 947 0.4; 1042 -0.3; 1146 -1.1; 1261 -1.9; 1387 -2.5; 1526 -2.9; 1678 -3.4; 1846 -3.8; 2031 -4.0; 2234 -3.4; 2457 -2.3; 2703 -1.7; 2973 -1.6; 3270 -1.7; 3597 -2.2; 3957 -2.9; 4353 -3.0; 4788 -2.1; 5267 -0.1; 5793 2.6; 6373 4.0; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -0.1; 15026 -2.4; 16529 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.7; 106 -1.6; 116 -2.5; 128 -3.4; 141 -4.2; 155 -4.9; 170 -5.4; 187 -5.9; 206 -6.3; 227 -6.6; 249 -6.6; 274 -6.7; 302 -6.8; 332 -6.8; 365 -6.9; 402 -6.9; 442 -6.8; 486 -6.8; 535 -6.6; 588 -6.4; 647 -6.1; 712 -5.8; 783 -5.7; 861 -5.8; 947 -6.1; 1042 -6.8; 1146 -7.6; 1261 -8.4; 1387 -9.0; 1526 -9.4; 1678 -9.9; 1846 -10.3; 2031 -10.5; 2234 -9.9; 2457 -8.8; 2703 -8.2; 2973 -8.1; 3270 -8.2; 3597 -8.7; 3957 -9.4; 4353 -9.5; 4788 -8.6; 5267 -6.6; 5793 -3.9; 6373 -2.5; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.6; 15026 -8.9; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Etymotic hf5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Etymotic hf5 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 44 Hz    | 0.46 | 6.9 dB  |
-| Peaking | 1873 Hz  | 1.71 | -4.0 dB |
-| Peaking | 4301 Hz  | 2.44 | -3.2 dB |
-| Peaking | 6300 Hz  | 3.93 | 5.2 dB  |
-| Peaking | 14931 Hz | 6.2  | -2.7 dB |
-| Peaking | 17 Hz    | 1.02 | 2.4 dB  |
-| Peaking | 42 Hz    | 0.96 | -1.4 dB |
-| Peaking | 96 Hz    | 1.54 | 2.7 dB  |
-| Peaking | 189 Hz   | 0.43 | -1.4 dB |
-| Peaking | 779 Hz   | 2.44 | 1.5 dB  |
+| Peaking | 45 Hz    | 0.46 | 6.9 dB  |
+| Peaking | 1873 Hz  | 1.7  | -4.0 dB |
+| Peaking | 4302 Hz  | 2.42 | -3.2 dB |
+| Peaking | 6301 Hz  | 3.84 | 5.2 dB  |
+| Peaking | 14838 Hz | 5.22 | -2.7 dB |
+| Peaking | 18 Hz    | 1.09 | 2.4 dB  |
+| Peaking | 43 Hz    | 0.98 | -1.4 dB |
+| Peaking | 96 Hz    | 1.55 | 2.7 dB  |
+| Peaking | 193 Hz   | 0.45 | -1.4 dB |
+| Peaking | 782 Hz   | 2.45 | 1.5 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 5.8 dB  |
+| Peaking | 62 Hz    | 1.41 | 5.4 dB  |
+| Peaking | 125 Hz   | 1.41 | 2.8 dB  |
+| Peaking | 250 Hz   | 1.41 | -1.3 dB |
+| Peaking | 500 Hz   | 1.41 | 0.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.8 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.5 dB |
+| Peaking | 8000 Hz  | 1.41 | 2.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -1.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Etymotic%20hf5/Etymotic%20hf5.png)

@@ -1,24 +1,22 @@
 # Advanced Alpha Shallow Pads
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.0dB
-GraphicEQ: 21 0.0; 23 1.1; 25 1.1; 28 1.1; 31 1.2; 34 1.2; 37 1.3; 41 1.2; 45 1.2; 49 1.2; 54 1.2; 60 1.0; 66 0.9; 72 0.8; 79 0.8; 87 0.3; 96 -0.2; 106 -0.5; 116 -0.8; 128 -1.3; 141 -1.6; 155 -2.0; 170 -2.1; 187 -2.4; 206 -2.5; 227 -2.6; 249 -2.7; 274 -2.8; 302 -2.5; 332 -2.5; 365 -2.3; 402 -1.9; 442 -1.4; 486 -1.2; 535 -1.2; 588 -0.3; 647 -0.0; 712 0.1; 783 0.2; 861 -0.0; 947 -0.2; 1042 -0.0; 1146 -0.2; 1261 -0.5; 1387 0.3; 1526 0.2; 1678 0.0; 1846 1.2; 2031 -0.9; 2234 -3.0; 2457 -4.8; 2703 -6.4; 2973 -7.0; 3270 -5.6; 3597 -4.3; 3957 -1.1; 4353 3.7; 4788 -1.9; 5267 -2.4; 5793 -0.1; 6373 -0.2; 7010 0.2; 7711 -0.7; 8482 -2.6; 9330 -2.9; 10263 -0.4; 11289 0.0; 12418 0.0; 13660 -2.5; 15026 -3.7; 16529 0.0
+GraphicEQ: 21 -3.0; 23 -3.0; 25 -3.0; 28 -3.0; 31 -3.0; 34 -2.9; 37 -2.9; 41 -2.9; 45 -2.9; 49 -3.0; 54 -3.0; 60 -3.1; 66 -3.2; 72 -3.3; 79 -3.4; 87 -3.8; 96 -4.4; 106 -4.7; 116 -5.0; 128 -5.5; 141 -5.8; 155 -6.2; 170 -6.3; 187 -6.6; 206 -6.7; 227 -6.7; 249 -6.8; 274 -6.9; 302 -6.7; 332 -6.7; 365 -6.4; 402 -6.0; 442 -5.6; 486 -5.4; 535 -5.3; 588 -4.5; 647 -4.2; 712 -4.1; 783 -4.0; 861 -4.2; 947 -4.4; 1042 -4.2; 1146 -4.4; 1261 -4.7; 1387 -3.8; 1526 -3.9; 1678 -4.1; 1846 -3.0; 2031 -5.1; 2234 -7.2; 2457 -9.0; 2703 -10.5; 2973 -11.2; 3270 -9.8; 3597 -8.4; 3957 -5.3; 4353 -0.5; 4788 -6.1; 5267 -6.6; 5793 -4.2; 6373 -4.4; 7010 -4.0; 7711 -4.9; 8482 -6.7; 9330 -7.1; 10263 -4.6; 11289 -4.2; 12418 -4.2; 13660 -6.7; 15026 -7.9; 16529 -4.2; 18182 -4.2; 20000 -4.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Advanced Alpha Shallow Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-39**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Advanced Alpha Shallow Pads ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.1dB**.
 
@@ -26,13 +24,33 @@ When using independent subset of filters, apply preamp of **-0.1dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 251 Hz   | 1.03 | -3.0 dB |
 | Peaking | 2907 Hz  | 2.99 | -7.7 dB |
-| Peaking | 14312 Hz | 3.53 | -1.8 dB |
-| Peaking | 14630 Hz | 4.42 | -3.0 dB |
+| Peaking | 14304 Hz | 4.4  | -3.0 dB |
+| Peaking | 14625 Hz | 3.49 | -1.8 dB |
 | Peaking | 22050 Hz | 2.06 | -0.4 dB |
-| Peaking | 40 Hz    | 0.86 | 1.5 dB  |
-| Peaking | 1978 Hz  | 2.59 | 2.5 dB  |
-| Peaking | 2258 Hz  | 4.13 | -2.8 dB |
-| Peaking | 9019 Hz  | 3.36 | -4.7 dB |
-| Peaking | 9603 Hz  | 1.16 | 1.6 dB  |
+| Peaking | 39 Hz    | 0.86 | 1.6 dB  |
+| Peaking | 1970 Hz  | 2.6  | 2.5 dB  |
+| Peaking | 2268 Hz  | 4.09 | -2.8 dB |
+| Peaking | 9049 Hz  | 3.3  | -4.8 dB |
+| Peaking | 9657 Hz  | 1.14 | 1.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 1.2 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.3 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.0 dB |
+| Peaking | 250 Hz   | 1.41 | -2.9 dB |
+| Peaking | 500 Hz   | 1.41 | -0.8 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.3 dB |
+| Peaking | 8000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 16000 Hz | 1.41 | -2.0 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Advanced%20Alpha%20Shallow%20Pads/Advanced%20Alpha%20Shallow%20Pads.png)

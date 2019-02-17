@@ -1,24 +1,22 @@
 # Astro A50
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.2dB
-GraphicEQ: 21 0.0; 23 4.1; 25 3.8; 28 3.4; 31 3.0; 34 2.8; 37 2.6; 41 2.3; 45 2.0; 49 1.7; 54 1.4; 60 1.1; 66 0.6; 72 0.3; 79 -0.0; 87 -0.3; 96 -0.6; 106 -0.8; 116 -1.1; 128 -1.2; 141 -1.2; 155 -1.1; 170 -1.0; 187 -0.8; 206 -0.6; 227 -0.5; 249 -0.4; 274 -0.4; 302 -0.3; 332 -0.2; 365 0.2; 402 1.0; 442 1.7; 486 2.4; 535 3.1; 588 4.4; 647 5.0; 712 3.7; 783 3.0; 861 2.7; 947 0.5; 1042 -0.2; 1146 -0.1; 1261 0.1; 1387 0.6; 1526 1.2; 1678 1.7; 1846 2.1; 2031 2.0; 2234 2.8; 2457 3.5; 2703 3.9; 2973 3.3; 3270 3.0; 3597 3.2; 3957 3.7; 4353 3.5; 4788 3.0; 5267 -0.1; 5793 0.4; 6373 -4.3; 7010 -3.7; 7711 -1.7; 8482 -1.5; 9330 -0.5; 10263 0.0; 11289 -0.0; 12418 -2.6; 13660 -2.8; 15026 -0.1; 16529 0.0; 18182 0.0; 20000 -4.5
+GraphicEQ: 21 -1.0; 23 -1.4; 25 -1.7; 28 -2.1; 31 -2.5; 34 -2.7; 37 -2.9; 41 -3.2; 45 -3.5; 49 -3.7; 54 -4.0; 60 -4.4; 66 -4.9; 72 -5.2; 79 -5.5; 87 -5.8; 96 -6.1; 106 -6.3; 116 -6.5; 128 -6.7; 141 -6.7; 155 -6.6; 170 -6.5; 187 -6.3; 206 -6.1; 227 -5.9; 249 -5.9; 274 -5.9; 302 -5.8; 332 -5.6; 365 -5.3; 402 -4.5; 442 -3.7; 486 -3.1; 535 -2.4; 588 -1.0; 647 -0.5; 712 -1.8; 783 -2.5; 861 -2.7; 947 -5.0; 1042 -5.7; 1146 -5.6; 1261 -5.4; 1387 -4.9; 1526 -4.2; 1678 -3.8; 1846 -3.4; 2031 -3.5; 2234 -2.7; 2457 -2.0; 2703 -1.6; 2973 -2.1; 3270 -2.5; 3597 -2.3; 3957 -1.8; 4353 -1.9; 4788 -2.5; 5267 -5.5; 5793 -5.1; 6373 -9.8; 7010 -9.2; 7711 -7.2; 8482 -6.9; 9330 -6.0; 10263 -5.5; 11289 -5.5; 12418 -8.1; 13660 -8.3; 15026 -5.6; 16529 -5.5; 18182 -5.5; 20000 -10.0
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Astro A50 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-52**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Astro A50 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.3dB**.
 
@@ -26,13 +24,33 @@ When using independent subset of filters, apply preamp of **-5.3dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 24 Hz    | 1.15 | 4.3 dB  |
 | Peaking | 632 Hz   | 2.58 | 5.1 dB  |
-| Peaking | 2579 Hz  | 1.81 | 3.4 dB  |
-| Peaking | 4295 Hz  | 2.36 | 3.6 dB  |
-| Peaking | 6723 Hz  | 3.32 | -5.2 dB |
-| Peaking | 48 Hz    | 2.03 | 0.9 dB  |
-| Peaking | 119 Hz   | 1.42 | -1.0 dB |
-| Peaking | 174 Hz   | 1.24 | -0.7 dB |
-| Peaking | 1094 Hz  | 6.08 | -1.2 dB |
-| Peaking | 13139 Hz | 4.99 | -3.7 dB |
+| Peaking | 2576 Hz  | 1.81 | 3.3 dB  |
+| Peaking | 4287 Hz  | 2.31 | 3.6 dB  |
+| Peaking | 6664 Hz  | 3.25 | -5.1 dB |
+| Peaking | 29 Hz    | 2.26 | -1.1 dB |
+| Peaking | 41 Hz    | 0.87 | 1.1 dB  |
+| Peaking | 133 Hz   | 0.98 | -1.5 dB |
+| Peaking | 1088 Hz  | 6.27 | -1.2 dB |
+| Peaking | 13155 Hz | 4.4  | -3.7 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.8 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.3 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.3 dB |
+| Peaking | 250 Hz   | 1.41 | -1.5 dB |
+| Peaking | 500 Hz   | 1.41 | 3.7 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 2000 Hz  | 1.41 | 1.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.3 dB |
+| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Astro%20A50/Astro%20A50.png)

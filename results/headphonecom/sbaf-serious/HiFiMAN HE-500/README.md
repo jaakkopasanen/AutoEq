@@ -1,38 +1,56 @@
 # HiFiMAN HE-500
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.1dB
-GraphicEQ: 21 0.0; 23 2.4; 25 2.1; 28 1.7; 31 1.4; 34 1.2; 37 1.1; 41 1.1; 45 1.1; 49 1.2; 54 1.1; 60 0.6; 66 0.4; 72 0.4; 79 0.4; 87 0.1; 96 -0.1; 106 -0.2; 116 -0.2; 128 -0.4; 141 -0.6; 155 -0.6; 170 -0.7; 187 -0.9; 206 -0.8; 227 -1.0; 249 -1.1; 274 -1.2; 302 -1.0; 332 -0.9; 365 -1.1; 402 -0.7; 442 -0.9; 486 -1.1; 535 -0.8; 588 -1.0; 647 -0.7; 712 -0.1; 783 0.6; 861 0.1; 947 0.1; 1042 -0.4; 1146 0.1; 1261 0.4; 1387 1.1; 1526 0.6; 1678 1.1; 1846 2.4; 2031 2.7; 2234 0.8; 2457 2.5; 2703 2.4; 2973 0.9; 3270 0.4; 3597 0.6; 3957 0.1; 4353 -1.6; 4788 -1.3; 5267 2.0; 5793 2.2; 6373 0.4; 7010 -0.1; 7711 -0.5; 8482 -3.7; 9330 -6.0; 10263 -1.4; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 -2.8; 20000 -5.5
+GraphicEQ: 21 -0.5; 23 -0.9; 25 -1.2; 28 -1.6; 31 -1.9; 34 -2.1; 37 -2.2; 41 -2.2; 45 -2.2; 49 -2.1; 54 -2.2; 60 -2.7; 66 -2.8; 72 -2.9; 79 -2.9; 87 -3.2; 96 -3.3; 106 -3.5; 116 -3.5; 128 -3.7; 141 -3.9; 155 -3.9; 170 -4.0; 187 -4.1; 206 -4.0; 227 -4.2; 249 -4.3; 274 -4.5; 302 -4.3; 332 -4.2; 365 -4.4; 402 -4.0; 442 -4.2; 486 -4.4; 535 -4.1; 588 -4.3; 647 -4.0; 712 -3.3; 783 -2.6; 861 -3.2; 947 -3.2; 1042 -3.6; 1146 -3.1; 1261 -2.8; 1387 -2.2; 1526 -2.7; 1678 -2.2; 1846 -0.8; 2031 -0.5; 2234 -2.4; 2457 -0.7; 2703 -0.8; 2973 -2.4; 3270 -2.8; 3597 -2.7; 3957 -3.2; 4353 -4.9; 4788 -4.5; 5267 -1.3; 5793 -1.1; 6373 -2.9; 7010 -3.4; 7711 -3.8; 8482 -7.0; 9330 -9.3; 10263 -4.7; 11289 -3.3; 12418 -3.3; 13660 -3.3; 15026 -3.3; 16529 -3.3; 18182 -6.1; 20000 -8.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `HiFiMAN HE-500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-30**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-500 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.7dB**.
+When using independent subset of filters, apply preamp of **-2.8dB**.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 20 Hz   | 0.94 | 2.6 dB  |
+| Peaking | 2237 Hz | 1.6  | 2.3 dB  |
+| Peaking | 4641 Hz | 4.19 | -3.3 dB |
+| Peaking | 5416 Hz | 3.98 | 3.6 dB  |
+| Peaking | 9102 Hz | 4.98 | -6.7 dB |
+| Peaking | 54 Hz   | 2.37 | 0.7 dB  |
+| Peaking | 302 Hz  | 0.58 | -1.1 dB |
+| Peaking | 2276 Hz | 7.92 | -3.5 dB |
+| Peaking | 2335 Hz | 2.42 | 2.1 dB  |
+| Peaking | 3075 Hz | 5.82 | -1.0 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.7dB** and set
+gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 20 Hz    | 0.93 | 2.6 dB  |
-| Peaking | 2237 Hz  | 1.61 | 2.3 dB  |
-| Peaking | 4628 Hz  | 4.28 | -3.2 dB |
-| Peaking | 5414 Hz  | 4.17 | 3.6 dB  |
-| Peaking | 9092 Hz  | 5.24 | -6.7 dB |
-| Peaking | 53 Hz    | 1.79 | 0.6 dB  |
-| Peaking | 322 Hz   | 0.48 | -1.1 dB |
-| Peaking | 771 Hz   | 8.04 | 1.2 dB  |
-| Peaking | 1876 Hz  | 9.56 | 1.0 dB  |
-| Peaking | 19651 Hz | 2.29 | -5.6 dB |
+| Peaking | 31 Hz    | 1.41 | 1.9 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.4 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.4 dB |
+| Peaking | 250 Hz   | 1.41 | -1.0 dB |
+| Peaking | 500 Hz   | 1.41 | -0.8 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.2 dB |
+| Peaking | 2000 Hz  | 1.41 | 2.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.1 dB |
+| Peaking | 16000 Hz | 1.41 | -0.5 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/HiFiMAN%20HE-500/HiFiMAN%20HE-500.png)

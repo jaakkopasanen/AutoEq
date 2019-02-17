@@ -1,38 +1,56 @@
 # V-Moda Crossfade LP
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 2.7; 25 2.0; 28 1.0; 31 0.2; 34 -0.6; 37 -1.3; 41 -2.0; 45 -2.5; 49 -2.8; 54 -3.1; 60 -3.2; 66 -3.3; 72 -3.8; 79 -4.1; 87 -3.9; 96 -4.4; 106 -4.7; 116 -5.0; 128 -5.2; 141 -5.4; 155 -5.4; 170 -5.2; 187 -5.2; 206 -4.8; 227 -3.9; 249 -2.8; 274 -1.8; 302 -0.1; 332 1.5; 365 2.6; 402 3.3; 442 4.2; 486 4.2; 535 3.9; 588 3.3; 647 2.1; 712 0.9; 783 0.5; 861 0.2; 947 -0.0; 1042 0.0; 1146 -0.3; 1261 -0.9; 1387 -1.7; 1526 -2.1; 1678 -2.4; 1846 -2.4; 2031 -2.7; 2234 -3.5; 2457 -2.8; 2703 -2.3; 2973 -1.5; 3270 -1.6; 3597 -0.5; 3957 2.0; 4353 3.5; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -0.1; 10263 -0.6; 11289 0.0
+GraphicEQ: 21 -2.9; 23 -3.8; 25 -4.5; 28 -5.5; 31 -6.3; 34 -7.1; 37 -7.8; 41 -8.5; 45 -9.0; 49 -9.3; 54 -9.6; 60 -9.7; 66 -9.8; 72 -10.3; 79 -10.6; 87 -10.4; 96 -10.9; 106 -11.2; 116 -11.5; 128 -11.7; 141 -11.9; 155 -11.9; 170 -11.7; 187 -11.7; 206 -11.3; 227 -10.4; 249 -9.3; 274 -8.3; 302 -6.6; 332 -5.0; 365 -3.9; 402 -3.2; 442 -2.3; 486 -2.3; 535 -2.6; 588 -3.2; 647 -4.4; 712 -5.6; 783 -6.0; 861 -6.3; 947 -6.5; 1042 -6.5; 1146 -6.8; 1261 -7.4; 1387 -8.2; 1526 -8.6; 1678 -8.9; 1846 -8.9; 2031 -9.2; 2234 -9.9; 2457 -9.3; 2703 -8.8; 2973 -8.0; 3270 -8.1; 3597 -6.9; 3957 -4.5; 4353 -3.0; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.6; 10263 -7.1; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `V-Moda Crossfade LP GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda Crossfade LP ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-7.0dB**.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 19 Hz   | 1.31 | 5.0 dB  |
+| Peaking | 224 Hz  | 0.71 | -6.9 dB |
+| Peaking | 409 Hz  | 0.57 | 12.8 dB |
+| Peaking | 593 Hz  | 0.07 | -5.5 dB |
+| Peaking | 5299 Hz | 1.51 | 10.4 dB |
+| Peaking | 780 Hz  | 2.47 | -2.2 dB |
+| Peaking | 873 Hz  | 1.22 | 1.4 dB  |
+| Peaking | 2267 Hz | 6.77 | -1.0 dB |
+| Peaking | 6556 Hz | 6.57 | 2.9 dB  |
+| Peaking | 7048 Hz | 2.63 | -1.6 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.1dB** and set
+gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 1.23 | 5.5 dB  |
-| Peaking | 225 Hz   | 0.7  | -7.2 dB |
-| Peaking | 407 Hz   | 0.56 | 13.3 dB |
-| Peaking | 579 Hz   | 0.07 | -5.6 dB |
-| Peaking | 5296 Hz  | 1.53 | 10.4 dB |
-| Peaking | 740 Hz   | 5.26 | -1.0 dB |
-| Peaking | 1151 Hz  | 4.53 | 0.9 dB  |
-| Peaking | 6533 Hz  | 6.1  | 2.8 dB  |
-| Peaking | 7183 Hz  | 2.39 | -1.6 dB |
-| Peaking | 13130 Hz | 1.14 | 0.5 dB  |
+| Peaking | 31 Hz    | 1.41 | 1.1 dB  |
+| Peaking | 62 Hz    | 1.41 | -2.9 dB |
+| Peaking | 125 Hz   | 1.41 | -5.1 dB |
+| Peaking | 250 Hz   | 1.41 | -2.9 dB |
+| Peaking | 500 Hz   | 1.41 | 5.6 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 2000 Hz  | 1.41 | -4.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.6 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/V-Moda%20Crossfade%20LP/V-Moda%20Crossfade%20LP.png)

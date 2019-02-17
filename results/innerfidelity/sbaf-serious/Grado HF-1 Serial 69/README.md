@@ -1,38 +1,56 @@
 # Grado HF-1 Serial 69
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.9; 37 5.4; 41 4.2; 45 2.9; 49 1.8; 54 0.7; 60 -0.5; 66 -1.3; 72 -1.7; 79 -2.2; 87 -2.7; 96 -3.1; 106 -3.0; 116 -2.8; 128 -2.7; 141 -2.5; 155 -2.3; 170 -2.0; 187 -1.8; 206 -1.5; 227 -1.1; 249 -0.8; 274 -0.7; 302 -0.5; 332 -0.1; 365 -0.3; 402 -0.2; 442 0.1; 486 0.1; 535 0.1; 588 0.4; 647 0.5; 712 0.4; 783 0.5; 861 0.3; 947 -0.0; 1042 -0.2; 1146 -0.4; 1261 -1.0; 1387 -2.1; 1526 -3.3; 1678 -4.0; 1846 -4.7; 2031 -5.7; 2234 -5.6; 2457 -5.9; 2703 -5.5; 2973 -3.5; 3270 -1.6; 3597 -0.7; 3957 -2.7; 4353 -3.7; 4788 -3.0; 5267 -1.7; 5793 0.6; 6373 0.6; 7010 -3.7; 7711 -4.9; 8482 -8.3; 9330 -9.4; 10263 -1.8; 11289 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.6; 37 -1.1; 41 -2.3; 45 -3.6; 49 -4.7; 54 -5.8; 60 -7.0; 66 -7.8; 72 -8.2; 79 -8.7; 87 -9.2; 96 -9.6; 106 -9.5; 116 -9.3; 128 -9.2; 141 -9.0; 155 -8.8; 170 -8.5; 187 -8.3; 206 -8.0; 227 -7.6; 249 -7.3; 274 -7.2; 302 -7.0; 332 -6.6; 365 -6.8; 402 -6.7; 442 -6.4; 486 -6.4; 535 -6.4; 588 -6.1; 647 -6.0; 712 -6.1; 783 -6.0; 861 -6.2; 947 -6.5; 1042 -6.7; 1146 -6.9; 1261 -7.5; 1387 -8.6; 1526 -9.8; 1678 -10.5; 1846 -11.2; 2031 -12.2; 2234 -12.1; 2457 -12.4; 2703 -12.0; 2973 -10.0; 3270 -8.1; 3597 -7.2; 3957 -9.2; 4353 -10.2; 4788 -9.5; 5267 -8.2; 5793 -5.9; 6373 -5.9; 7010 -10.2; 7711 -11.4; 8482 -14.8; 9330 -15.9; 10263 -8.3; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Grado HF-1 Serial 69 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Grado HF-1 Serial 69 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6dB**.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 29 Hz    | 0.73 | 7.3 dB   |
 | Peaking | 89 Hz    | 0.74 | -4.4 dB  |
-| Peaking | 1770 Hz  | 2.84 | -2.4 dB  |
-| Peaking | 2427 Hz  | 1.82 | -5.4 dB  |
-| Peaking | 8854 Hz  | 3.97 | -10.4 dB |
-| Peaking | 3583 Hz  | 4.67 | 2.9 dB   |
-| Peaking | 4354 Hz  | 2.96 | -3.7 dB  |
-| Peaking | 6198 Hz  | 4.52 | 3.9 dB   |
-| Peaking | 7053 Hz  | 4.96 | -2.8 dB  |
-| Peaking | 10947 Hz | 5.89 | 2.2 dB   |
+| Peaking | 1764 Hz  | 2.89 | -2.4 dB  |
+| Peaking | 2422 Hz  | 1.82 | -5.4 dB  |
+| Peaking | 8859 Hz  | 3.78 | -10.4 dB |
+| Peaking | 748 Hz   | 1.12 | 0.9 dB   |
+| Peaking | 3486 Hz  | 4.01 | 3.5 dB   |
+| Peaking | 5140 Hz  | 1.13 | -4.3 dB  |
+| Peaking | 5907 Hz  | 3.73 | 6.0 dB   |
+| Peaking | 11079 Hz | 3.9  | 2.5 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 7.9 dB  |
+| Peaking | 62 Hz    | 1.41 | -2.1 dB |
+| Peaking | 125 Hz   | 1.41 | -3.1 dB |
+| Peaking | 250 Hz   | 1.41 | -0.4 dB |
+| Peaking | 500 Hz   | 1.41 | 0.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.4 dB  |
+| Peaking | 2000 Hz  | 1.41 | -6.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 0.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -5.5 dB |
+| Peaking | 16000 Hz | 1.41 | 0.7 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20HF-1%20Serial%2069/Grado%20HF-1%20Serial%2069.png)

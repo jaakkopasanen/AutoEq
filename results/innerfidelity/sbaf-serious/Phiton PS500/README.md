@@ -1,38 +1,56 @@
 # Phiton PS500
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.5; 31 4.6; 34 3.7; 37 2.9; 41 2.2; 45 1.7; 49 1.2; 54 0.9; 60 0.4; 66 0.0; 72 -0.2; 79 -1.0; 87 -1.5; 96 -2.1; 106 -2.4; 116 -2.7; 128 -3.2; 141 -3.3; 155 -3.2; 170 -2.9; 187 -2.9; 206 -2.5; 227 -1.9; 249 -1.2; 274 0.1; 302 1.5; 332 2.4; 365 2.8; 402 2.8; 442 2.8; 486 2.5; 535 2.5; 588 2.6; 647 2.2; 712 1.5; 783 1.3; 861 1.6; 947 0.6; 1042 -0.3; 1146 -0.9; 1261 -1.4; 1387 -2.1; 1526 -2.4; 1678 -2.6; 1846 -2.2; 2031 -0.8; 2234 1.3; 2457 4.3; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 4.2; 4788 6.0; 5267 6.0; 5793 5.2; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.6; 28 -1.0; 31 -1.9; 34 -2.8; 37 -3.6; 41 -4.3; 45 -4.8; 49 -5.3; 54 -5.6; 60 -6.1; 66 -6.5; 72 -6.7; 79 -7.5; 87 -8.0; 96 -8.6; 106 -8.9; 116 -9.2; 128 -9.7; 141 -9.8; 155 -9.7; 170 -9.4; 187 -9.4; 206 -9.0; 227 -8.4; 249 -7.7; 274 -6.4; 302 -5.0; 332 -4.1; 365 -3.7; 402 -3.7; 442 -3.7; 486 -4.0; 535 -4.0; 588 -3.9; 647 -4.3; 712 -5.0; 783 -5.2; 861 -4.9; 947 -5.9; 1042 -6.8; 1146 -7.4; 1261 -7.9; 1387 -8.6; 1526 -8.9; 1678 -9.1; 1846 -8.7; 2031 -7.3; 2234 -5.2; 2457 -2.2; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -2.3; 4788 -0.5; 5267 -0.5; 5793 -1.3; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Phiton PS500 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Phiton PS500 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 17 Hz   | 0.26 | 7.3 dB  |
-| Peaking | 506 Hz  | 0.49 | 12.3 dB |
-| Peaking | 620 Hz  | 0.09 | -9.4 dB |
-| Peaking | 2923 Hz | 1.65 | 10.1 dB |
-| Peaking | 5269 Hz | 1.23 | 9.4 dB  |
-| Peaking | 192 Hz  | 3.52 | -0.7 dB |
-| Peaking | 921 Hz  | 4.76 | 1.2 dB  |
-| Peaking | 1778 Hz | 3.37 | -1.1 dB |
-| Peaking | 2497 Hz | 9.05 | 1.5 dB  |
-| Peaking | 7888 Hz | 8.05 | -1.3 dB |
+| Type    | Fc      |     Q | Gain    |
+|:--------|:--------|:------|:--------|
+| Peaking | 17 Hz   |  0.26 | 7.2 dB  |
+| Peaking | 507 Hz  |  0.49 | 12.4 dB |
+| Peaking | 638 Hz  |  0.09 | -9.4 dB |
+| Peaking | 2926 Hz |  1.65 | 10.1 dB |
+| Peaking | 5257 Hz |  1.2  | 9.5 dB  |
+| Peaking | 191 Hz  |  3.48 | -0.7 dB |
+| Peaking | 917 Hz  |  5.24 | 1.2 dB  |
+| Peaking | 1775 Hz |  3.52 | -1.1 dB |
+| Peaking | 2507 Hz | 10.03 | 1.6 dB  |
+| Peaking | 7824 Hz |  8.5  | -1.4 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 5.5 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.2 dB |
+| Peaking | 125 Hz   | 1.41 | -3.8 dB |
+| Peaking | 250 Hz   | 1.41 | -0.9 dB |
+| Peaking | 500 Hz   | 1.41 | 4.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.1 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 8.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Phiton%20PS500/Phiton%20PS500.png)

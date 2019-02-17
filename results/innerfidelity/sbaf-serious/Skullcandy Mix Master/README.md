@@ -1,38 +1,56 @@
 # Skullcandy Mix Master
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 4.3; 25 3.6; 28 2.7; 31 2.0; 34 1.6; 37 1.2; 41 0.9; 45 0.7; 49 0.5; 54 0.3; 60 0.2; 66 0.2; 72 0.1; 79 -0.3; 87 -0.7; 96 -1.2; 106 -1.3; 116 -1.5; 128 -1.8; 141 -2.1; 155 -2.3; 170 -2.2; 187 -2.5; 206 -2.7; 227 -2.6; 249 -2.3; 274 -1.8; 302 -1.5; 332 -1.5; 365 -1.0; 402 -1.1; 442 -0.6; 486 -0.2; 535 0.7; 588 1.5; 647 1.6; 712 1.4; 783 1.4; 861 0.6; 947 0.0; 1042 -0.0; 1146 -0.2; 1261 -0.9; 1387 -2.2; 1526 -2.8; 1678 -3.0; 1846 -2.0; 2031 -1.4; 2234 -0.0; 2457 1.9; 2703 3.5; 2973 4.8; 3270 5.5; 3597 2.0; 3957 -1.4; 4353 0.8; 4788 3.2; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -1.4; 23 -2.2; 25 -2.9; 28 -3.8; 31 -4.5; 34 -4.9; 37 -5.3; 41 -5.6; 45 -5.8; 49 -6.0; 54 -6.2; 60 -6.3; 66 -6.3; 72 -6.4; 79 -6.8; 87 -7.2; 96 -7.7; 106 -7.8; 116 -8.0; 128 -8.3; 141 -8.6; 155 -8.8; 170 -8.7; 187 -9.0; 206 -9.2; 227 -9.1; 249 -8.8; 274 -8.3; 302 -8.0; 332 -8.0; 365 -7.5; 402 -7.6; 442 -7.1; 486 -6.6; 535 -5.8; 588 -5.0; 647 -4.9; 712 -5.1; 783 -5.1; 861 -5.9; 947 -6.5; 1042 -6.5; 1146 -6.7; 1261 -7.4; 1387 -8.7; 1526 -9.3; 1678 -9.5; 1846 -8.5; 2031 -7.9; 2234 -6.5; 2457 -4.6; 2703 -3.0; 2973 -1.7; 3270 -1.0; 3597 -4.5; 3957 -7.9; 4353 -5.7; 4788 -3.3; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Skullcandy Mix Master GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Mix Master ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 19 Hz   | 1.25 | 5.5 dB  |
-| Peaking | 184 Hz  | 1.07 | -2.8 dB |
+| Peaking | 183 Hz  | 1.05 | -2.8 dB |
 | Peaking | 1649 Hz | 3.13 | -3.6 dB |
-| Peaking | 3018 Hz | 4.09 | 5.7 dB  |
-| Peaking | 5762 Hz | 3.4  | 6.8 dB  |
-| Peaking | 641 Hz  | 0.66 | -1.8 dB |
-| Peaking | 671 Hz  | 1.47 | 3.7 dB  |
-| Peaking | 3963 Hz | 1.9  | 2.5 dB  |
-| Peaking | 3991 Hz | 5.65 | -5.8 dB |
-| Peaking | 8276 Hz | 3.86 | -1.0 dB |
+| Peaking | 3018 Hz | 4.07 | 5.7 dB  |
+| Peaking | 5765 Hz | 3.33 | 6.8 dB  |
+| Peaking | 671 Hz  | 2.8  | 2.1 dB  |
+| Peaking | 3396 Hz | 9.12 | 2.9 dB  |
+| Peaking | 3899 Hz | 5.16 | -3.5 dB |
+| Peaking | 4993 Hz | 8.34 | 2.0 dB  |
+| Peaking | 8263 Hz | 4.79 | -0.9 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 2.8 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.1 dB |
+| Peaking | 125 Hz   | 1.41 | -1.6 dB |
+| Peaking | 250 Hz   | 1.41 | -2.6 dB |
+| Peaking | 500 Hz   | 1.41 | 1.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.0 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.9 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Mix%20Master/Skullcandy%20Mix%20Master.png)

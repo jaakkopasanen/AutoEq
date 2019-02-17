@@ -1,38 +1,56 @@
 # AKG K712 (Dekoni Sheepskin Earpads)
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 1.4; 25 1.0; 28 0.6; 31 0.3; 34 0.0; 37 -0.2; 41 -0.4; 45 -0.6; 49 -0.8; 54 -1.0; 60 -1.2; 66 -1.4; 72 -1.6; 79 -1.8; 87 -2.1; 96 -2.4; 106 -2.7; 116 -3.1; 128 -3.6; 141 -4.1; 155 -4.4; 170 -4.7; 187 -4.8; 206 -5.0; 227 -5.0; 249 -5.0; 274 -4.8; 302 -4.4; 332 -3.9; 365 -3.3; 402 -2.8; 442 -2.3; 486 -1.8; 535 -1.0; 588 -0.2; 647 0.6; 712 0.5; 783 0.1; 861 -0.1; 947 -0.1; 1042 0.2; 1146 0.9; 1261 1.6; 1387 1.4; 1526 0.3; 1678 -1.2; 1846 -2.4; 2031 -3.9; 2234 -4.9; 2457 -4.6; 2703 -2.4; 2973 1.8; 3270 5.8; 3597 6.0; 3957 6.0; 4353 5.4; 4788 2.3; 5267 -2.1; 5793 -3.3; 6373 -0.5; 7010 -1.8; 7711 -2.3; 8482 -0.2; 9330 0.0; 10263 0.0; 11289 -1.0; 12418 -2.6; 13660 -0.9; 15026 -1.3; 16529 -5.0; 18182 -8.3; 20000 -8.5
+GraphicEQ: 21 -4.8; 23 -5.1; 25 -5.5; 28 -5.9; 31 -6.2; 34 -6.5; 37 -6.7; 41 -6.9; 45 -7.1; 49 -7.3; 54 -7.5; 60 -7.7; 66 -7.9; 72 -8.1; 79 -8.3; 87 -8.6; 96 -8.9; 106 -9.2; 116 -9.6; 128 -10.1; 141 -10.6; 155 -10.9; 170 -11.2; 187 -11.3; 206 -11.5; 227 -11.5; 249 -11.5; 274 -11.3; 302 -10.9; 332 -10.4; 365 -9.8; 402 -9.3; 442 -8.8; 486 -8.3; 535 -7.5; 588 -6.7; 647 -5.9; 712 -6.0; 783 -6.4; 861 -6.6; 947 -6.6; 1042 -6.3; 1146 -5.6; 1261 -4.9; 1387 -5.1; 1526 -6.2; 1678 -7.7; 1846 -8.9; 2031 -10.4; 2234 -11.4; 2457 -11.1; 2703 -8.9; 2973 -4.7; 3270 -0.7; 3597 -0.5; 3957 -0.5; 4353 -1.1; 4788 -4.2; 5267 -8.6; 5793 -9.8; 6373 -7.0; 7010 -8.3; 7711 -8.8; 8482 -6.7; 9330 -6.5; 10263 -6.5; 11289 -7.5; 12418 -9.1; 13660 -7.4; 15026 -7.8; 16529 -11.5; 18182 -14.8; 20000 -15.0
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `AKG K712 (Dekoni Sheepskin Earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K712 (Dekoni Sheepskin Earpads) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 215 Hz   | 0.63 | -5.3 dB  |
-| Peaking | 2351 Hz  | 1.55 | -13.3 dB |
-| Peaking | 3919 Hz  | 0.71 | 20.6 dB  |
-| Peaking | 5438 Hz  | 0.93 | -15.0 dB |
-| Peaking | 19135 Hz | 0.65 | -9.5 dB  |
-| Peaking | 20 Hz    | 2.06 | 1.9 dB   |
-| Peaking | 664 Hz   | 2.73 | 2.1 dB   |
-| Peaking | 846 Hz   | 1    | -1.4 dB  |
-| Peaking | 1302 Hz  | 4.48 | 1.7 dB   |
-| Peaking | 18915 Hz | 4.02 | 0.4 dB   |
+| Peaking | 2352 Hz  | 1.55 | -13.4 dB |
+| Peaking | 3917 Hz  | 0.71 | 20.6 dB  |
+| Peaking | 5440 Hz  | 0.93 | -14.9 dB |
+| Peaking | 19136 Hz | 0.65 | -9.5 dB  |
+| Peaking | 22 Hz    | 1.94 | 1.9 dB   |
+| Peaking | 662 Hz   | 2.7  | 2.1 dB   |
+| Peaking | 850 Hz   | 0.99 | -1.4 dB  |
+| Peaking | 1308 Hz  | 4.46 | 1.7 dB   |
+| Peaking | 14590 Hz | 6.62 | 1.9 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 0.8 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.8 dB |
+| Peaking | 125 Hz   | 1.41 | -2.8 dB |
+| Peaking | 250 Hz   | 1.41 | -5.0 dB |
+| Peaking | 500 Hz   | 1.41 | -0.8 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.5 dB |
+| Peaking | 16000 Hz | 1.41 | -5.0 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20K712%20(Dekoni%20Sheepskin%20Earpads)/AKG%20K712%20(Dekoni%20Sheepskin%20Earpads).png)

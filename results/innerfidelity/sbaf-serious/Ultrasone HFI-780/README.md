@@ -1,24 +1,22 @@
 # Ultrasone HFI-780
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 5.8; 66 5.6; 72 5.5; 79 5.7; 87 5.4; 96 5.0; 106 5.0; 116 5.1; 128 5.3; 141 5.3; 155 5.5; 170 6.0; 187 6.0; 206 6.0; 227 5.7; 249 3.9; 274 2.7; 302 1.1; 332 -0.2; 365 -1.0; 402 -1.2; 442 -0.8; 486 -0.5; 535 -0.1; 588 0.5; 647 0.7; 712 0.6; 783 0.7; 861 0.4; 947 0.1; 1042 0.1; 1146 0.2; 1261 -0.2; 1387 -1.0; 1526 -2.2; 1678 -2.9; 1846 -3.1; 2031 -1.5; 2234 3.7; 2457 5.9; 2703 3.6; 2973 3.5; 3270 1.7; 3597 1.2; 3957 2.4; 4353 2.1; 4788 1.3; 5267 2.8; 5793 5.8; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -1.5; 10263 -2.3; 11289 -1.7; 12418 -1.5; 13660 -0.4; 15026 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.7; 66 -0.9; 72 -1.0; 79 -0.8; 87 -1.1; 96 -1.5; 106 -1.5; 116 -1.4; 128 -1.2; 141 -1.2; 155 -1.0; 170 -0.5; 187 -0.5; 206 -0.5; 227 -0.8; 249 -2.6; 274 -3.8; 302 -5.4; 332 -6.7; 365 -7.5; 402 -7.7; 442 -7.3; 486 -7.0; 535 -6.6; 588 -6.0; 647 -5.8; 712 -5.9; 783 -5.8; 861 -6.1; 947 -6.4; 1042 -6.4; 1146 -6.3; 1261 -6.7; 1387 -7.5; 1526 -8.7; 1678 -9.4; 1846 -9.6; 2031 -8.0; 2234 -2.8; 2457 -0.6; 2703 -2.9; 2973 -3.0; 3270 -4.8; 3597 -5.3; 3957 -4.1; 4353 -4.4; 4788 -5.2; 5267 -3.7; 5793 -0.7; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -8.0; 10263 -8.8; 11289 -8.2; 12418 -8.0; 13660 -6.9; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Ultrasone HFI-780 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone HFI-780 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.7dB**.
 
@@ -26,12 +24,33 @@ When using independent subset of filters, apply preamp of **-6.7dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 39 Hz    | 0.33 | 6.3 dB  |
 | Peaking | 188 Hz   | 1.99 | 4.6 dB  |
-| Peaking | 1922 Hz  | 2.34 | -7.9 dB |
-| Peaking | 2361 Hz  | 2.27 | 9.2 dB  |
-| Peaking | 6049 Hz  | 4.34 | 6.3 dB  |
-| Peaking | 372 Hz   | 0.83 | 2.6 dB  |
-| Peaking | 387 Hz   | 1.71 | -4.9 dB |
-| Peaking | 4112 Hz  | 8.25 | 1.5 dB  |
-| Peaking | 10551 Hz | 2.44 | -2.6 dB |
+| Peaking | 1912 Hz  | 2.34 | -7.8 dB |
+| Peaking | 2372 Hz  | 2.27 | 9.1 dB  |
+| Peaking | 6033 Hz  | 4.22 | 6.3 dB  |
+| Peaking | 12 Hz    | 2.54 | 0.7 dB  |
+| Peaking | 377 Hz   | 0.83 | 2.7 dB  |
+| Peaking | 387 Hz   | 1.68 | -5.1 dB |
+| Peaking | 9095 Hz  | 0.79 | 1.5 dB  |
+| Peaking | 10325 Hz | 1.48 | -3.8 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.2 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.0 dB  |
+| Peaking | 125 Hz   | 1.41 | 4.7 dB  |
+| Peaking | 250 Hz   | 1.41 | 3.3 dB  |
+| Peaking | 500 Hz   | 1.41 | -1.7 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ultrasone%20HFI-780/Ultrasone%20HFI-780.png)

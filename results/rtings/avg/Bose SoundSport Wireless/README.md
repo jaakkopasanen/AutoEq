@@ -1,38 +1,56 @@
 # Bose SoundSport Wireless
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.9dB
-GraphicEQ: 21 0.0; 23 -0.1; 25 -0.5; 28 -0.8; 31 -1.1; 34 -1.3; 37 -1.5; 41 -1.7; 45 -1.7; 49 -1.7; 54 -1.8; 60 -2.0; 66 -2.1; 72 -2.2; 79 -2.2; 87 -2.3; 96 -2.4; 106 -2.6; 116 -2.7; 128 -2.9; 141 -2.8; 155 -2.8; 170 -2.7; 187 -2.5; 206 -2.3; 227 -2.1; 249 -1.8; 274 -1.6; 302 -1.1; 332 -1.7; 365 -0.7; 402 -0.2; 442 0.1; 486 0.4; 535 0.8; 588 1.2; 647 1.6; 712 1.8; 783 1.7; 861 1.3; 947 0.5; 1042 -0.2; 1146 -0.4; 1261 -0.3; 1387 -0.3; 1526 -0.6; 1678 -1.3; 1846 -2.0; 2031 -2.4; 2234 -1.4; 2457 -0.4; 2703 -0.2; 2973 -0.8; 3270 -2.0; 3597 -3.1; 3957 -4.0; 4353 -5.1; 4788 -4.7; 5267 -2.8; 5793 -0.3; 6373 -0.8; 7010 -2.6; 7711 -0.6; 8482 0.0; 9330 0.0; 10263 -0.1; 11289 -0.2; 12418 0.0; 13660 -2.2; 15026 -2.3; 16529 0.0
+GraphicEQ: 21 -2.1; 23 -2.5; 25 -2.8; 28 -3.2; 31 -3.4; 34 -3.7; 37 -3.9; 41 -4.0; 45 -4.0; 49 -4.1; 54 -4.2; 60 -4.3; 66 -4.5; 72 -4.6; 79 -4.5; 87 -4.6; 96 -4.8; 106 -5.0; 116 -5.1; 128 -5.2; 141 -5.1; 155 -5.1; 170 -5.0; 187 -4.9; 206 -4.7; 227 -4.4; 249 -4.2; 274 -3.9; 302 -3.5; 332 -4.0; 365 -3.1; 402 -2.5; 442 -2.3; 486 -1.9; 535 -1.5; 588 -1.1; 647 -0.7; 712 -0.5; 783 -0.6; 861 -1.1; 947 -1.9; 1042 -2.6; 1146 -2.7; 1261 -2.7; 1387 -2.6; 1526 -2.9; 1678 -3.6; 1846 -4.3; 2031 -4.7; 2234 -3.7; 2457 -2.7; 2703 -2.6; 2973 -3.2; 3270 -4.3; 3597 -5.4; 3957 -6.3; 4353 -7.5; 4788 -7.0; 5267 -5.1; 5793 -2.6; 6373 -3.2; 7010 -4.9; 7711 -2.9; 8482 -2.3; 9330 -2.3; 10263 -2.4; 11289 -2.5; 12418 -2.3; 13660 -4.5; 15026 -4.6; 16529 -2.3; 18182 -2.3; 20000 -2.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Bose SoundSport Wireless GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-19**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bose SoundSport Wireless ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-2.0dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 46 Hz    |  1.11 | -1.0 dB |
-| Peaking | 144 Hz   |  0.58 | -2.8 dB |
-| Peaking | 673 Hz   |  1.86 | 2.3 dB  |
-| Peaking | 1923 Hz  |  3.89 | -2.3 dB |
-| Peaking | 4382 Hz  |  2.5  | -5.3 dB |
-| Peaking | 1110 Hz  |  5.84 | -0.7 dB |
-| Peaking | 2700 Hz  |  8.41 | 0.8 dB  |
-| Peaking | 7093 Hz  | 10.27 | -2.6 dB |
-| Peaking | 11499 Hz |  0.48 | 0.5 dB  |
-| Peaking | 14370 Hz |  4.23 | -3.8 dB |
+| Peaking | 45 Hz    |  1.11 | -1.0 dB |
+| Peaking | 143 Hz   |  0.58 | -2.8 dB |
+| Peaking | 674 Hz   |  1.86 | 2.3 dB  |
+| Peaking | 1922 Hz  |  3.89 | -2.3 dB |
+| Peaking | 4383 Hz  |  2.48 | -5.3 dB |
+| Peaking | 1109 Hz  |  5.69 | -0.7 dB |
+| Peaking | 2697 Hz  |  8.39 | 0.8 dB  |
+| Peaking | 7116 Hz  | 10.03 | -2.6 dB |
+| Peaking | 12014 Hz |  0.44 | 0.5 dB  |
+| Peaking | 14398 Hz |  3.56 | -3.8 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -0.8 dB |
+| Peaking | 62 Hz    | 1.41 | -1.6 dB |
+| Peaking | 125 Hz   | 1.41 | -2.4 dB |
+| Peaking | 250 Hz   | 1.41 | -2.0 dB |
+| Peaking | 500 Hz   | 1.41 | 1.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 4000 Hz  | 1.41 | -3.8 dB |
+| Peaking | 8000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 16000 Hz | 1.41 | -1.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Bose%20SoundSport%20Wireless/Bose%20SoundSport%20Wireless.png)

@@ -1,38 +1,56 @@
 # Beats Solo3 Wired
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -2.8dB
-GraphicEQ: 21 -5.8; 23 -6.0; 25 -6.1; 28 -6.2; 31 -6.2; 34 -6.3; 37 -6.4; 41 -6.4; 45 -6.4; 49 -6.5; 54 -6.5; 60 -6.6; 66 -6.8; 72 -6.9; 79 -7.1; 87 -7.2; 96 -7.5; 106 -7.9; 116 -7.8; 128 -7.9; 141 -8.0; 155 -8.1; 170 -7.8; 187 -8.0; 206 -7.7; 227 -7.2; 249 -6.8; 274 -6.1; 302 -5.3; 332 -4.5; 365 -3.8; 402 -2.7; 442 -2.1; 486 -2.0; 535 -1.5; 588 -0.6; 647 -0.0; 712 0.3; 783 0.7; 861 0.4; 947 0.2; 1042 -0.1; 1146 -0.3; 1261 -0.6; 1387 -1.2; 1526 -1.5; 1678 -1.8; 1846 -1.5; 2031 -1.0; 2234 -0.9; 2457 -0.7; 2703 -1.2; 2973 -1.7; 3270 -2.4; 3597 -2.5; 3957 -0.3; 4353 -1.8; 4788 -2.1; 5267 0.8; 5793 2.7; 6373 1.5; 7010 1.7; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 -0.6; 20000 -1.0
+GraphicEQ: 21 -9.0; 23 -9.2; 25 -9.3; 28 -9.4; 31 -9.4; 34 -9.5; 37 -9.6; 41 -9.5; 45 -9.6; 49 -9.7; 54 -9.7; 60 -9.8; 66 -10.0; 72 -10.0; 79 -10.3; 87 -10.4; 96 -10.7; 106 -11.1; 116 -11.0; 128 -11.0; 141 -11.2; 155 -11.3; 170 -11.0; 187 -11.2; 206 -10.9; 227 -10.4; 249 -10.0; 274 -9.2; 302 -8.5; 332 -7.7; 365 -7.0; 402 -5.9; 442 -5.3; 486 -5.2; 535 -4.7; 588 -3.7; 647 -3.2; 712 -2.8; 783 -2.5; 861 -2.8; 947 -3.0; 1042 -3.2; 1146 -3.5; 1261 -3.8; 1387 -4.3; 1526 -4.6; 1678 -4.9; 1846 -4.7; 2031 -4.2; 2234 -4.1; 2457 -3.9; 2703 -4.4; 2973 -4.9; 3270 -5.6; 3597 -5.7; 3957 -3.5; 4353 -5.0; 4788 -5.2; 5267 -2.4; 5793 -0.5; 6373 -1.6; 7010 -1.5; 7711 -2.9; 8482 -3.2; 9330 -3.2; 10263 -3.2; 11289 -3.2; 12418 -3.2; 13660 -3.2; 15026 -3.2; 16529 -3.2; 18182 -3.8; 20000 -4.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Beats Solo3 Wired GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-27**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beats Solo3 Wired ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.6dB**.
+When using independent subset of filters, apply preamp of **-2.7dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 32 Hz   |  0.29 | -5.9 dB |
-| Peaking | 136 Hz  |  0.86 | -4.5 dB |
-| Peaking | 246 Hz  |  1.34 | -3.9 dB |
-| Peaking | 4012 Hz |  0.85 | -2.5 dB |
-| Peaking | 5949 Hz |  2.73 | 4.1 dB  |
-| Peaking | 785 Hz  |  2.68 | 1.5 dB  |
-| Peaking | 1629 Hz |  3.23 | -1.2 dB |
-| Peaking | 2468 Hz |  6.34 | 0.7 dB  |
-| Peaking | 4078 Hz | 11.78 | 2.1 dB  |
-| Peaking | 4658 Hz |  8.7  | -1.8 dB |
+| Peaking | 33 Hz   |  0.29 | -5.9 dB |
+| Peaking | 137 Hz  |  0.85 | -4.6 dB |
+| Peaking | 247 Hz  |  1.35 | -3.9 dB |
+| Peaking | 4022 Hz |  0.84 | -2.5 dB |
+| Peaking | 6016 Hz |  2.68 | 4.1 dB  |
+| Peaking | 785 Hz  |  2.61 | 1.5 dB  |
+| Peaking | 1628 Hz |  3.18 | -1.2 dB |
+| Peaking | 2462 Hz |  5.94 | 0.7 dB  |
+| Peaking | 4063 Hz | 11.47 | 2.1 dB  |
+| Peaking | 4638 Hz |  9.15 | -1.7 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -6.2 dB |
+| Peaking | 62 Hz    | 1.41 | -4.6 dB |
+| Peaking | 125 Hz   | 1.41 | -6.7 dB |
+| Peaking | 250 Hz   | 1.41 | -6.0 dB |
+| Peaking | 500 Hz   | 1.41 | -0.1 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.8 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.5 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.3 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beats%20Solo3%20Wired/Beats%20Solo3%20Wired.png)

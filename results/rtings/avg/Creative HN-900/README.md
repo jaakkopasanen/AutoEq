@@ -1,38 +1,56 @@
 # Creative HN-900
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.8; 41 4.9; 45 3.4; 49 1.8; 54 0.1; 60 -0.7; 66 0.1; 72 -1.7; 79 -4.6; 87 -6.7; 96 -7.8; 106 -8.5; 116 -8.9; 128 -9.0; 141 -8.8; 155 -8.7; 170 -8.5; 187 -7.9; 206 -7.4; 227 -6.8; 249 -6.3; 274 -5.8; 302 -5.3; 332 -4.9; 365 -4.5; 402 -4.4; 442 -4.5; 486 -4.9; 535 -5.6; 588 -6.5; 647 -7.3; 712 -7.0; 783 -5.5; 861 -3.0; 947 -0.7; 1042 -0.4; 1146 -1.9; 1261 0.0; 1387 2.0; 1526 2.9; 1678 4.0; 1846 5.9; 2031 5.0; 2234 3.6; 2457 1.8; 2703 3.8; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 4.2; 5267 -1.0; 5793 0.3; 6373 -0.9; 7010 -0.0; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 -3.4; 13660 -7.7; 15026 -7.3; 16529 -5.0; 18182 -4.4; 20000 -7.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.7; 41 -1.6; 45 -3.1; 49 -4.7; 54 -6.4; 60 -7.2; 66 -6.4; 72 -8.2; 79 -11.1; 87 -13.2; 96 -14.3; 106 -15.0; 116 -15.4; 128 -15.5; 141 -15.3; 155 -15.2; 170 -15.0; 187 -14.4; 206 -13.9; 227 -13.3; 249 -12.8; 274 -12.3; 302 -11.8; 332 -11.4; 365 -11.0; 402 -10.9; 442 -11.0; 486 -11.4; 535 -12.1; 588 -13.0; 647 -13.8; 712 -13.5; 783 -12.0; 861 -9.5; 947 -7.2; 1042 -6.9; 1146 -8.4; 1261 -6.5; 1387 -4.5; 1526 -3.6; 1678 -2.5; 1846 -0.6; 2031 -1.5; 2234 -2.9; 2457 -4.7; 2703 -2.7; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -2.3; 5267 -7.5; 5793 -6.2; 6373 -7.4; 7010 -6.5; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -9.9; 13660 -14.2; 15026 -13.8; 16529 -11.5; 18182 -10.9; 20000 -13.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Creative HN-900 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Creative HN-900 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.4dB**.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 38 Hz    | 0.38 | 10.3 dB  |
-| Peaking | 113 Hz   | 0.51 | -13.7 dB |
-| Peaking | 674 Hz   | 1.99 | -6.7 dB  |
-| Peaking | 2836 Hz  | 0.66 | 5.7 dB   |
-| Peaking | 15953 Hz | 0.82 | -6.9 dB  |
-| Peaking | 1845 Hz  | 6.33 | 2.6 dB   |
-| Peaking | 2486 Hz  | 6.6  | -4.0 dB  |
-| Peaking | 4643 Hz  | 2.51 | 6.8 dB   |
-| Peaking | 5173 Hz  | 2.82 | -7.7 dB  |
-| Peaking | 10967 Hz | 4.83 | 2.9 dB   |
+| Peaking | 38 Hz    | 0.38 | 10.4 dB  |
+| Peaking | 113 Hz   | 0.5  | -13.9 dB |
+| Peaking | 673 Hz   | 1.98 | -6.7 dB  |
+| Peaking | 2888 Hz  | 0.64 | 5.8 dB   |
+| Peaking | 17103 Hz | 0.44 | -6.4 dB  |
+| Peaking | 2499 Hz  | 8.61 | -4.2 dB  |
+| Peaking | 4701 Hz  | 2.23 | 8.0 dB   |
+| Peaking | 5208 Hz  | 2.76 | -9.4 dB  |
+| Peaking | 10876 Hz | 4.23 | 2.9 dB   |
+| Peaking | 20028 Hz | 4.02 | -3.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 8.1 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.6 dB |
+| Peaking | 125 Hz   | 1.41 | -9.9 dB |
+| Peaking | 250 Hz   | 1.41 | -3.6 dB |
+| Peaking | 500 Hz   | 1.41 | -5.1 dB |
+| Peaking | 1000 Hz  | 1.41 | -2.2 dB |
+| Peaking | 2000 Hz  | 1.41 | 4.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 16000 Hz | 1.41 | -8.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Creative%20HN-900/Creative%20HN-900.png)

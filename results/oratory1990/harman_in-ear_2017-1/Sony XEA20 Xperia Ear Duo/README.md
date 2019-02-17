@@ -1,38 +1,56 @@
 # Sony XEA20 Xperia Ear Duo
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 6.0; 141 6.0; 155 6.0; 170 6.0; 187 6.0; 206 6.0; 227 6.0; 249 5.9; 274 4.9; 302 4.4; 332 4.2; 365 3.8; 402 3.4; 442 3.2; 486 2.9; 535 2.9; 588 2.7; 647 2.5; 712 2.3; 783 1.9; 861 1.4; 947 0.8; 1042 -0.8; 1146 -2.2; 1261 -3.0; 1387 -0.5; 1526 3.3; 1678 5.9; 1846 6.0; 2031 6.0; 2234 6.0; 2457 4.5; 2703 2.2; 2973 2.5; 3270 4.7; 3597 5.7; 3957 4.9; 4353 3.5; 4788 2.3; 5267 3.3; 5793 5.3; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -5.4; 15026 -14.0; 16529 -11.1; 18182 -0.1; 20000 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.5; 155 -0.5; 170 -0.5; 187 -0.5; 206 -0.5; 227 -0.5; 249 -0.6; 274 -1.6; 302 -2.1; 332 -2.3; 365 -2.7; 402 -3.1; 442 -3.3; 486 -3.6; 535 -3.6; 588 -3.8; 647 -4.0; 712 -4.2; 783 -4.6; 861 -5.1; 947 -5.7; 1042 -7.3; 1146 -8.7; 1261 -9.5; 1387 -7.0; 1526 -3.2; 1678 -0.6; 1846 -0.5; 2031 -0.5; 2234 -0.5; 2457 -2.0; 2703 -4.3; 2973 -4.0; 3270 -1.8; 3597 -0.8; 3957 -1.6; 4353 -3.0; 4788 -4.2; 5267 -3.2; 5793 -1.2; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -11.9; 15026 -20.5; 16529 -17.6; 18182 -6.6; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony XEA20 Xperia Ear Duo GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony XEA20 Xperia Ear Duo ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 66 Hz    | 0.16 | 6.4 dB   |
-| Peaking | 1979 Hz  | 3.32 | 5.7 dB   |
-| Peaking | 4717 Hz  | 0.91 | 4.5 dB   |
-| Peaking | 12569 Hz | 4.1  | 3.8 dB   |
-| Peaking | 15363 Hz | 2.55 | -16.7 dB |
-| Peaking | 1237 Hz  | 3.96 | -5.2 dB  |
-| Peaking | 1626 Hz  | 6.06 | 3.3 dB   |
-| Peaking | 4905 Hz  | 7.85 | -2.8 dB  |
-| Peaking | 6211 Hz  | 7.33 | 3.0 dB   |
-| Peaking | 18407 Hz | 4.92 | 3.4 dB   |
+| Peaking | 1981 Hz  | 3.31 | 5.7 dB   |
+| Peaking | 4784 Hz  | 0.88 | 4.6 dB   |
+| Peaking | 12575 Hz | 3.65 | 4.3 dB   |
+| Peaking | 15383 Hz | 2.01 | -16.6 dB |
+| Peaking | 1242 Hz  | 2.72 | -5.7 dB  |
+| Peaking | 1618 Hz  | 7.23 | 3.5 dB   |
+| Peaking | 2450 Hz  | 0.16 | 1.0 dB   |
+| Peaking | 6169 Hz  | 1.56 | -5.7 dB  |
+| Peaking | 6229 Hz  | 3.84 | 7.8 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 6.1 dB   |
+| Peaking | 62 Hz    | 1.41 | 4.3 dB   |
+| Peaking | 125 Hz   | 1.41 | 4.8 dB   |
+| Peaking | 250 Hz   | 1.41 | 4.4 dB   |
+| Peaking | 500 Hz   | 1.41 | 2.8 dB   |
+| Peaking | 1000 Hz  | 1.41 | -2.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | 5.1 dB   |
+| Peaking | 4000 Hz  | 1.41 | 3.7 dB   |
+| Peaking | 8000 Hz  | 1.41 | 2.2 dB   |
+| Peaking | 16000 Hz | 1.41 | -12.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sony%20XEA20%20Xperia%20Ear%20Duo/Sony%20XEA20%20Xperia%20Ear%20Duo.png)

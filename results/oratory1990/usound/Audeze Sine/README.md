@@ -1,38 +1,56 @@
 # Audeze Sine
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.9; 34 5.9; 37 5.9; 41 5.8; 45 5.5; 49 5.3; 54 5.0; 60 4.6; 66 4.1; 72 3.8; 79 3.7; 87 3.3; 96 2.6; 106 2.2; 116 1.9; 128 1.5; 141 1.4; 155 1.1; 170 1.1; 187 1.2; 206 1.4; 227 1.0; 249 0.7; 274 0.5; 302 0.4; 332 0.4; 365 0.4; 402 0.4; 442 0.1; 486 -0.1; 535 -0.0; 588 0.0; 647 0.3; 712 0.4; 783 0.4; 861 0.4; 947 0.1; 1042 -0.0; 1146 -0.5; 1261 -0.9; 1387 -1.3; 1526 -1.1; 1678 -1.0; 1846 -1.4; 2031 -1.8; 2234 -2.1; 2457 -1.7; 2703 -2.4; 2973 -2.8; 3270 -3.0; 3597 -2.8; 3957 -0.7; 4353 1.9; 4788 3.1; 5267 3.2; 5793 3.9; 6373 4.6; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 -2.2; 11289 -5.2; 12418 -4.6; 13660 -3.4; 15026 -3.5; 16529 -5.8; 18182 -7.7; 20000 -7.1
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.6; 34 -0.6; 37 -0.6; 41 -0.7; 45 -1.0; 49 -1.2; 54 -1.5; 60 -1.9; 66 -2.4; 72 -2.7; 79 -2.8; 87 -3.2; 96 -3.9; 106 -4.3; 116 -4.6; 128 -5.0; 141 -5.1; 155 -5.4; 170 -5.4; 187 -5.3; 206 -5.1; 227 -5.5; 249 -5.8; 274 -6.0; 302 -6.1; 332 -6.1; 365 -6.1; 402 -6.1; 442 -6.4; 486 -6.6; 535 -6.5; 588 -6.5; 647 -6.2; 712 -6.1; 783 -6.1; 861 -6.1; 947 -6.4; 1042 -6.5; 1146 -7.0; 1261 -7.4; 1387 -7.8; 1526 -7.6; 1678 -7.5; 1846 -7.9; 2031 -8.3; 2234 -8.6; 2457 -8.2; 2703 -8.9; 2973 -9.3; 3270 -9.5; 3597 -9.3; 3957 -7.2; 4353 -4.6; 4788 -3.4; 5267 -3.3; 5793 -2.6; 6373 -1.9; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -8.7; 11289 -11.7; 12418 -11.1; 13660 -9.9; 15026 -10.0; 16529 -12.3; 18182 -14.2; 20000 -13.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audeze Sine GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audeze Sine ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.2dB**.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 29 Hz    |  0.37 | 6.1 dB  |
-| Peaking | 3467 Hz  |  1.04 | -6.3 dB |
-| Peaking | 5169 Hz  |  1.13 | 7.6 dB  |
-| Peaking | 11519 Hz |  3.22 | -4.6 dB |
-| Peaking | 18896 Hz |  0.82 | -8.1 dB |
-| Peaking | 529 Hz   |  2.27 | -0.7 dB |
-| Peaking | 732 Hz   |  0.79 | 0.8 dB  |
-| Peaking | 1351 Hz  |  2.65 | -0.9 dB |
-| Peaking | 6607 Hz  | 10.94 | 2.1 dB  |
-| Peaking | 7630 Hz  |  5.84 | -1.5 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 29 Hz    | 0.37 | 6.1 dB  |
+| Peaking | 3434 Hz  | 1.05 | -5.9 dB |
+| Peaking | 5213 Hz  | 1.14 | 7.3 dB  |
+| Peaking | 11437 Hz | 3.09 | -4.5 dB |
+| Peaking | 18893 Hz | 0.55 | -8.2 dB |
+| Peaking | 840 Hz   | 2.36 | 0.6 dB  |
+| Peaking | 1376 Hz  | 3.43 | -0.7 dB |
+| Peaking | 5658 Hz  | 3.51 | -2.4 dB |
+| Peaking | 6715 Hz  | 2.01 | 3.7 dB  |
+| Peaking | 7504 Hz  | 4.06 | -3.7 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.7 dB  |
+| Peaking | 62 Hz    | 1.41 | 3.5 dB  |
+| Peaking | 125 Hz   | 1.41 | 0.8 dB  |
+| Peaking | 250 Hz   | 1.41 | 0.5 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.1 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.9 dB  |
+| Peaking | 16000 Hz | 1.41 | -8.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Audeze%20Sine/Audeze%20Sine.png)

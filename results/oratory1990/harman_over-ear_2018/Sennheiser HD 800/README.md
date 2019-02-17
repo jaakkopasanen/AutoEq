@@ -1,38 +1,56 @@
 # Sennheiser HD 800
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.5; 31 5.1; 34 4.8; 37 4.5; 41 4.1; 45 3.8; 49 3.7; 54 3.8; 60 3.9; 66 3.5; 72 2.7; 79 2.0; 87 1.4; 96 0.8; 106 0.3; 116 -0.2; 128 -0.6; 141 -0.9; 155 -1.2; 170 -1.4; 187 -1.5; 206 -1.7; 227 -1.8; 249 -1.7; 274 -1.6; 302 -1.4; 332 -1.2; 365 -1.0; 402 -0.9; 442 -0.9; 486 -0.8; 535 -0.7; 588 -0.6; 647 -0.5; 712 -0.4; 783 -0.3; 861 -0.3; 947 -0.1; 1042 0.1; 1146 0.3; 1261 0.9; 1387 1.7; 1526 2.2; 1678 2.5; 1846 2.5; 2031 2.7; 2234 2.4; 2457 1.1; 2703 0.3; 2973 0.1; 3270 0.9; 3597 1.2; 3957 0.5; 4353 -0.7; 4788 -2.5; 5267 -5.6; 5793 -8.2; 6373 -4.4; 7010 -2.2; 7711 -3.5; 8482 -0.4; 9330 0.0; 10263 -0.1; 11289 -4.8; 12418 -6.7; 13660 -6.0; 15026 -4.0; 16529 -3.2; 18182 -4.5; 20000 -8.4
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.6; 28 -1.0; 31 -1.4; 34 -1.7; 37 -2.0; 41 -2.4; 45 -2.7; 49 -2.8; 54 -2.7; 60 -2.6; 66 -3.0; 72 -3.8; 79 -4.5; 87 -5.1; 96 -5.7; 106 -6.2; 116 -6.7; 128 -7.1; 141 -7.4; 155 -7.7; 170 -7.9; 187 -8.0; 206 -8.2; 227 -8.3; 249 -8.2; 274 -8.1; 302 -7.9; 332 -7.7; 365 -7.5; 402 -7.4; 442 -7.4; 486 -7.3; 535 -7.2; 588 -7.1; 647 -7.0; 712 -6.9; 783 -6.8; 861 -6.8; 947 -6.6; 1042 -6.4; 1146 -6.2; 1261 -5.6; 1387 -4.8; 1526 -4.3; 1678 -4.0; 1846 -4.0; 2031 -3.8; 2234 -4.1; 2457 -5.4; 2703 -6.2; 2973 -6.4; 3270 -5.6; 3597 -5.3; 3957 -6.0; 4353 -7.2; 4788 -9.0; 5267 -12.1; 5793 -14.7; 6373 -10.9; 7010 -8.7; 7711 -10.0; 8482 -6.9; 9330 -6.5; 10263 -6.6; 11289 -11.3; 12418 -13.2; 13660 -12.5; 15026 -10.5; 16529 -9.7; 18182 -11.0; 20000 -14.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 800 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 800 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.5dB**.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 26 Hz    | 1.12 | 6.2 dB  |
-| Peaking | 59 Hz    | 2.6  | 3.1 dB  |
-| Peaking | 1911 Hz  | 1.77 | 3.0 dB  |
-| Peaking | 5713 Hz  | 5.16 | -8.0 dB |
-| Peaking | 21371 Hz | 0.17 | -6.2 dB |
-| Peaking | 242 Hz   | 0.84 | -1.9 dB |
-| Peaking | 3667 Hz  | 5.93 | 1.7 dB  |
-| Peaking | 9599 Hz  | 4.11 | 3.0 dB  |
-| Peaking | 10358 Hz | 5.32 | 1.1 dB  |
-| Peaking | 12217 Hz | 3.45 | -4.1 dB |
+| Peaking | 25 Hz    | 1.12 | 6.3 dB  |
+| Peaking | 59 Hz    | 2.61 | 3.1 dB  |
+| Peaking | 1914 Hz  | 1.77 | 3.0 dB  |
+| Peaking | 5705 Hz  | 5.05 | -8.0 dB |
+| Peaking | 20594 Hz | 0.11 | -5.9 dB |
+| Peaking | 241 Hz   | 0.85 | -1.9 dB |
+| Peaking | 3705 Hz  | 4.96 | 1.8 dB  |
+| Peaking | 9893 Hz  | 2.4  | 7.0 dB  |
+| Peaking | 11864 Hz | 1.01 | -6.2 dB |
+| Peaking | 16036 Hz | 1.36 | 3.6 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 5.7 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.8 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.0 dB |
+| Peaking | 250 Hz   | 1.41 | -1.8 dB |
+| Peaking | 500 Hz   | 1.41 | -0.5 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | -1.6 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.1 dB |
+| Peaking | 16000 Hz | 1.41 | -6.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)

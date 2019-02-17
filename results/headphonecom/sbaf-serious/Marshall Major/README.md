@@ -1,38 +1,56 @@
 # Marshall Major
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 5.8; 116 5.2; 128 4.5; 141 4.1; 155 3.5; 170 3.3; 187 3.0; 206 2.7; 227 2.5; 249 2.6; 274 2.9; 302 2.2; 332 2.1; 365 2.3; 402 2.1; 442 1.9; 486 2.2; 535 2.9; 588 3.5; 647 3.7; 712 3.6; 783 3.1; 861 2.3; 947 1.0; 1042 -0.4; 1146 -0.7; 1261 -2.3; 1387 -5.0; 1526 -7.2; 1678 -8.2; 1846 -8.4; 2031 -6.4; 2234 -3.6; 2457 -0.5; 2703 2.1; 2973 3.9; 3270 4.8; 3597 5.2; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 5.1; 6373 1.2; 7010 -3.2; 7711 -2.1; 8482 -1.4; 9330 -3.0; 10263 -0.5; 11289 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.7; 116 -1.3; 128 -2.0; 141 -2.4; 155 -3.0; 170 -3.2; 187 -3.5; 206 -3.8; 227 -4.0; 249 -3.9; 274 -3.6; 302 -4.3; 332 -4.4; 365 -4.2; 402 -4.4; 442 -4.6; 486 -4.3; 535 -3.6; 588 -3.0; 647 -2.8; 712 -2.9; 783 -3.4; 861 -4.2; 947 -5.5; 1042 -6.9; 1146 -7.2; 1261 -8.8; 1387 -11.5; 1526 -13.7; 1678 -14.7; 1846 -14.9; 2031 -12.9; 2234 -10.1; 2457 -7.0; 2703 -4.4; 2973 -2.6; 3270 -1.7; 3597 -1.3; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -1.4; 6373 -5.3; 7010 -9.7; 7711 -8.6; 8482 -7.9; 9330 -9.5; 10263 -7.0; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Marshall Major GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Marshall Major ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 32 Hz   | 0.19 | 5.7 dB   |
-| Peaking | 89 Hz   | 1.08 | 1.3 dB   |
-| Peaking | 702 Hz  | 1.28 | 3.9 dB   |
-| Peaking | 1739 Hz | 1.9  | -10.7 dB |
-| Peaking | 3861 Hz | 1.46 | 7.7 dB   |
-| Peaking | 2138 Hz | 5.93 | -1.2 dB  |
-| Peaking | 2936 Hz | 2.42 | 2.1 dB   |
-| Peaking | 3635 Hz | 2.9  | -2.0 dB  |
-| Peaking | 5667 Hz | 2.54 | 7.4 dB   |
-| Peaking | 6919 Hz | 1.68 | -6.8 dB  |
+| Peaking | 26 Hz   | 0.15 | 6.0 dB   |
+| Peaking | 94 Hz   | 2.01 | 1.2 dB   |
+| Peaking | 699 Hz  | 1.38 | 3.9 dB   |
+| Peaking | 1741 Hz | 1.93 | -10.6 dB |
+| Peaking | 3872 Hz | 1.45 | 7.7 dB   |
+| Peaking | 2137 Hz | 5.94 | -1.2 dB  |
+| Peaking | 2940 Hz | 2.44 | 2.1 dB   |
+| Peaking | 3636 Hz | 2.86 | -2.0 dB  |
+| Peaking | 5676 Hz | 2.51 | 7.5 dB   |
+| Peaking | 6888 Hz | 1.61 | -6.8 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.9 dB  |
+| Peaking | 125 Hz   | 1.41 | 3.9 dB  |
+| Peaking | 250 Hz   | 1.41 | 1.0 dB  |
+| Peaking | 500 Hz   | 1.41 | 3.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -9.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 10.5 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.5 dB |
+| Peaking | 16000 Hz | 1.41 | 0.3 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Marshall%20Major/Marshall%20Major.png)

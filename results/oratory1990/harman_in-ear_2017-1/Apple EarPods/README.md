@@ -1,38 +1,56 @@
 # Apple EarPods
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 5.8; 79 4.8; 87 3.8; 96 3.1; 106 2.6; 116 2.3; 128 2.1; 141 2.1; 155 2.1; 170 2.2; 187 2.3; 206 2.4; 227 2.5; 249 2.5; 274 2.5; 302 2.5; 332 2.6; 365 2.6; 402 2.4; 442 2.2; 486 2.2; 535 2.1; 588 1.9; 647 1.7; 712 1.5; 783 1.2; 861 0.8; 947 0.3; 1042 -0.3; 1146 -1.0; 1261 -1.9; 1387 -3.0; 1526 -4.4; 1678 -5.8; 1846 -6.7; 2031 -6.7; 2234 -6.3; 2457 -5.8; 2703 -5.4; 2973 -4.7; 3270 -3.7; 3597 -2.9; 3957 -2.5; 4353 -2.8; 4788 -3.9; 5267 -5.9; 5793 -7.7; 6373 -4.3; 7010 -1.0; 7711 -0.4; 8482 -2.6; 9330 -4.6; 10263 -3.4; 11289 -0.2; 12418 -2.5; 13660 -12.0; 15026 -17.0; 16529 -13.2; 18182 -9.2; 20000 -9.3
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.7; 79 -1.7; 87 -2.7; 96 -3.4; 106 -3.9; 116 -4.2; 128 -4.4; 141 -4.4; 155 -4.4; 170 -4.3; 187 -4.2; 206 -4.1; 227 -4.0; 249 -4.0; 274 -4.0; 302 -4.0; 332 -3.9; 365 -3.9; 402 -4.1; 442 -4.3; 486 -4.3; 535 -4.4; 588 -4.6; 647 -4.8; 712 -5.0; 783 -5.3; 861 -5.7; 947 -6.2; 1042 -6.8; 1146 -7.5; 1261 -8.4; 1387 -9.5; 1526 -10.9; 1678 -12.3; 1846 -13.2; 2031 -13.2; 2234 -12.8; 2457 -12.3; 2703 -11.9; 2973 -11.2; 3270 -10.2; 3597 -9.4; 3957 -9.0; 4353 -9.3; 4788 -10.4; 5267 -12.4; 5793 -14.2; 6373 -10.8; 7010 -7.5; 7711 -6.9; 8482 -9.1; 9330 -11.1; 10263 -9.9; 11289 -6.7; 12418 -9.0; 13660 -18.5; 15026 -23.5; 16529 -19.7; 18182 -15.7; 20000 -15.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Apple EarPods GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Apple EarPods ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-4.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 17 Hz    | 0.03 | 4.1 dB   |
-| Peaking | 2103 Hz  | 1.27 | -7.2 dB  |
-| Peaking | 5645 Hz  | 4.35 | -6.8 dB  |
-| Peaking | 15026 Hz | 2.86 | -14.8 dB |
-| Peaking | 18719 Hz | 0.89 | -8.5 dB  |
-| Peaking | 107 Hz   | 0.26 | 5.7 dB   |
-| Peaking | 143 Hz   | 0.53 | -7.3 dB  |
-| Peaking | 7479 Hz  | 3.63 | 4.1 dB   |
-| Peaking | 10587 Hz | 1.1  | -5.4 dB  |
-| Peaking | 11640 Hz | 3.42 | 9.4 dB   |
+| Peaking | 14 Hz    | 0.03 | 4.1 dB   |
+| Peaking | 2104 Hz  | 1.27 | -7.2 dB  |
+| Peaking | 5646 Hz  | 4.39 | -6.9 dB  |
+| Peaking | 15074 Hz | 2.37 | -14.8 dB |
+| Peaking | 18981 Hz | 0.6  | -8.9 dB  |
+| Peaking | 106 Hz   | 0.26 | 5.4 dB   |
+| Peaking | 144 Hz   | 0.54 | -7.1 dB  |
+| Peaking | 7433 Hz  | 3.59 | 4.0 dB   |
+| Peaking | 10739 Hz | 0.98 | -5.4 dB  |
+| Peaking | 11735 Hz | 3.11 | 9.8 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 6.1 dB   |
+| Peaking | 62 Hz    | 1.41 | 5.0 dB   |
+| Peaking | 125 Hz   | 1.41 | 0.7 dB   |
+| Peaking | 250 Hz   | 1.41 | 2.0 dB   |
+| Peaking | 500 Hz   | 1.41 | 2.1 dB   |
+| Peaking | 1000 Hz  | 1.41 | 1.0 dB   |
+| Peaking | 2000 Hz  | 1.41 | -6.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | -2.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.5 dB  |
+| Peaking | 16000 Hz | 1.41 | -18.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Apple%20EarPods/Apple%20EarPods.png)

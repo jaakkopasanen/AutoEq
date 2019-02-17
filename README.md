@@ -404,14 +404,6 @@ python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400
 
 Feel free to experiment more.
 
-### More Data!
-If data for you headphone cannot be found in this project but you have an image of the frequency response you might be
-able to use [https://apps.automeris.io/wpd/](https://apps.automeris.io/wpd/) to parse the image. You'll have to add
-header row to the CSV file. Header row is the first line of the file and must be exactly `frequency,raw`. The produced
-CSV file is the input data not the actual result. Save the file to an empty folder in a convenient location and point
-`--input_dir` to the folder path when running `frequency_response.py`. For more instructions on the usage of
-WebPlotDigitizer see the [tutorial video](https://www.youtube.com/watch?v=P7GbGdMvopU).
-
 ### Server
 AutoEQ has a HTTP server for clients such as graphical user interfaces or web apps. This is the API documentation.
 Currently only one route [/process]() exists.

@@ -1,38 +1,56 @@
 # Denon AH-C710
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -0.4dB
-GraphicEQ: 21 -10.8; 23 -10.8; 25 -10.9; 28 -10.8; 31 -10.8; 34 -10.8; 37 -10.8; 41 -10.8; 45 -10.7; 49 -10.7; 54 -10.7; 60 -10.6; 66 -10.6; 72 -10.6; 79 -10.7; 87 -10.7; 96 -10.7; 106 -10.5; 116 -10.2; 128 -10.0; 141 -9.8; 155 -9.5; 170 -9.1; 187 -8.6; 206 -8.1; 227 -7.5; 249 -6.9; 274 -6.3; 302 -5.7; 332 -5.0; 365 -4.3; 402 -3.7; 442 -2.9; 486 -2.4; 535 -1.8; 588 -1.0; 647 -0.5; 712 -0.2; 783 0.2; 861 0.2; 947 0.1; 1042 -0.0; 1146 -0.1; 1261 0.1; 1387 -0.7; 1526 -1.4; 1678 -2.0; 1846 -2.2; 2031 -2.5; 2234 -3.2; 2457 -4.2; 2703 -5.3; 2973 -4.8; 3270 -2.8; 3597 -1.3; 3957 -2.0; 4353 -4.7; 4788 -7.4; 5267 -10.9; 5793 -9.8; 6373 -4.5; 7010 -1.9; 7711 -2.7; 8482 -6.8; 9330 -6.8; 10263 -0.4; 11289 0.0
+GraphicEQ: 21 -11.6; 23 -11.6; 25 -11.6; 28 -11.6; 31 -11.6; 34 -11.6; 37 -11.5; 41 -11.5; 45 -11.5; 49 -11.4; 54 -11.4; 60 -11.4; 66 -11.4; 72 -11.4; 79 -11.4; 87 -11.4; 96 -11.4; 106 -11.2; 116 -11.0; 128 -10.8; 141 -10.6; 155 -10.2; 170 -9.8; 187 -9.4; 206 -8.9; 227 -8.2; 249 -7.6; 274 -7.1; 302 -6.4; 332 -5.8; 365 -5.0; 402 -4.5; 442 -3.6; 486 -3.2; 535 -2.5; 588 -1.8; 647 -1.2; 712 -0.9; 783 -0.5; 861 -0.6; 947 -0.6; 1042 -0.8; 1146 -0.9; 1261 -0.6; 1387 -1.5; 1526 -2.2; 1678 -2.8; 1846 -3.0; 2031 -3.3; 2234 -4.0; 2457 -5.0; 2703 -6.0; 2973 -5.5; 3270 -3.5; 3597 -2.1; 3957 -2.7; 4353 -5.4; 4788 -8.1; 5267 -11.6; 5793 -10.6; 6373 -5.2; 7010 -2.6; 7711 -3.5; 8482 -7.6; 9330 -7.5; 10263 -1.2; 11289 -0.7; 12418 -0.7; 13660 -0.7; 15026 -0.7; 16529 -0.7; 18182 -0.7; 20000 -0.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Denon AH-C710 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-3**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-C710 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-0.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 46 Hz    | 0.11 | -11.0 dB |
-| Peaking | 643 Hz   | 0.78 | 2.9 dB   |
-| Peaking | 2589 Hz  | 2.09 | -4.7 dB  |
-| Peaking | 5389 Hz  | 3.89 | -11.8 dB |
-| Peaking | 9018 Hz  | 5.54 | -7.5 dB  |
-| Peaking | 1705 Hz  | 5.38 | -1.2 dB  |
-| Peaking | 2970 Hz  | 4.98 | -2.6 dB  |
-| Peaking | 3483 Hz  | 1.88 | 2.3 dB   |
-| Peaking | 4532 Hz  | 5.46 | -2.1 dB  |
-| Peaking | 10646 Hz | 6.99 | 1.7 dB   |
+| Peaking | 45 Hz    | 0.12 | -11.0 dB |
+| Peaking | 644 Hz   | 0.82 | 2.9 dB   |
+| Peaking | 2566 Hz  | 2.39 | -4.5 dB  |
+| Peaking | 5450 Hz  | 2.68 | -11.0 dB |
+| Peaking | 21395 Hz | 2.21 | -4.3 dB  |
+| Peaking | 1686 Hz  | 6.3  | -1.1 dB  |
+| Peaking | 6600 Hz  | 5.48 | 1.8 dB   |
+| Peaking | 7327 Hz  | 5.65 | 2.4 dB   |
+| Peaking | 9008 Hz  | 3.46 | -8.9 dB  |
+| Peaking | 10326 Hz | 2.54 | 3.1 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -11.2 dB |
+| Peaking | 62 Hz    | 1.41 | -7.5 dB  |
+| Peaking | 125 Hz   | 1.41 | -8.3 dB  |
+| Peaking | 250 Hz   | 1.41 | -5.5 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.9 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.5 dB   |
+| Peaking | 2000 Hz  | 1.41 | -2.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | -4.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | -5.1 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.8 dB   |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Denon%20AH-C710/Denon%20AH-C710.png)

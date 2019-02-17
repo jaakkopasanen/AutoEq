@@ -1,38 +1,56 @@
 # Blue MOFI Active On
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 2.4; 25 2.1; 28 1.9; 31 1.6; 34 1.5; 37 1.3; 41 1.2; 45 1.1; 49 1.0; 54 0.8; 60 0.6; 66 0.4; 72 0.2; 79 -0.1; 87 -0.4; 96 -0.9; 106 -1.0; 116 -0.9; 128 -1.1; 141 -1.8; 155 -2.2; 170 -1.3; 187 -1.9; 206 -1.9; 227 -1.5; 249 -0.8; 274 0.2; 302 1.1; 332 1.3; 365 1.2; 402 1.2; 442 3.1; 486 3.4; 535 3.0; 588 2.8; 647 2.4; 712 1.8; 783 1.5; 861 0.9; 947 0.3; 1042 -0.0; 1146 -0.2; 1261 -0.1; 1387 -0.3; 1526 -0.6; 1678 -0.5; 1846 0.1; 2031 1.3; 2234 2.2; 2457 2.4; 2703 3.5; 2973 4.1; 3270 4.4; 3597 5.4; 3957 3.4; 4353 -0.2; 4788 4.8; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -3.9; 23 -4.1; 25 -4.4; 28 -4.6; 31 -4.9; 34 -5.0; 37 -5.2; 41 -5.3; 45 -5.4; 49 -5.5; 54 -5.7; 60 -5.9; 66 -6.1; 72 -6.3; 79 -6.6; 87 -6.9; 96 -7.4; 106 -7.5; 116 -7.4; 128 -7.6; 141 -8.3; 155 -8.7; 170 -7.8; 187 -8.4; 206 -8.4; 227 -7.9; 249 -7.3; 274 -6.3; 302 -5.4; 332 -5.2; 365 -5.3; 402 -5.3; 442 -3.4; 486 -3.1; 535 -3.5; 588 -3.7; 647 -4.1; 712 -4.7; 783 -5.0; 861 -5.6; 947 -6.2; 1042 -6.5; 1146 -6.7; 1261 -6.6; 1387 -6.8; 1526 -7.1; 1678 -7.0; 1846 -6.4; 2031 -5.2; 2234 -4.3; 2457 -4.1; 2703 -3.0; 2973 -2.4; 3270 -2.1; 3597 -1.1; 3957 -3.1; 4353 -6.7; 4788 -1.7; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Blue MOFI Active On GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Blue MOFI Active On ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 14 Hz   | 0.43 | 2.9 dB  |
-| Peaking | 167 Hz  | 1.11 | -2.3 dB |
-| Peaking | 500 Hz  | 1.58 | 3.6 dB  |
-| Peaking | 3198 Hz | 2.42 | 4.7 dB  |
-| Peaking | 5726 Hz | 3.2  | 6.4 dB  |
-| Peaking | 709 Hz  | 4.44 | 0.5 dB  |
-| Peaking | 1468 Hz | 2.57 | -1.2 dB |
-| Peaking | 4184 Hz | 3.02 | 3.8 dB  |
-| Peaking | 4263 Hz | 8.68 | -8.0 dB |
-| Peaking | 8262 Hz | 3.73 | -1.1 dB |
+| Peaking | 13 Hz   | 0.41 | 2.9 dB  |
+| Peaking | 166 Hz  | 1.11 | -2.3 dB |
+| Peaking | 502 Hz  | 1.58 | 3.6 dB  |
+| Peaking | 3199 Hz | 2.41 | 4.7 dB  |
+| Peaking | 5730 Hz | 3.13 | 6.4 dB  |
+| Peaking | 713 Hz  | 4.53 | 0.4 dB  |
+| Peaking | 1468 Hz | 2.55 | -1.2 dB |
+| Peaking | 4213 Hz | 2.85 | 3.4 dB  |
+| Peaking | 4244 Hz | 8.95 | -7.6 dB |
+| Peaking | 8263 Hz | 3.69 | -1.1 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 2.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.5 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.7 dB |
+| Peaking | 250 Hz   | 1.41 | -1.3 dB |
+| Peaking | 500 Hz   | 1.41 | 3.9 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Blue%20MOFI%20Active%20On/Blue%20MOFI%20Active%20On.png)

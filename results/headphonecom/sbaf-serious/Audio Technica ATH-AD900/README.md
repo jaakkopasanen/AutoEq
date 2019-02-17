@@ -1,38 +1,56 @@
 # Audio Technica ATH-AD900
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 5.9; 66 5.6; 72 5.2; 79 5.4; 87 5.8; 96 4.0; 106 3.4; 116 3.2; 128 2.5; 141 1.9; 155 1.5; 170 1.3; 187 1.1; 206 1.0; 227 0.8; 249 0.6; 274 0.7; 302 0.8; 332 1.0; 365 1.0; 402 1.0; 442 0.9; 486 0.8; 535 0.8; 588 0.8; 647 0.9; 712 0.9; 783 0.8; 861 0.3; 947 0.3; 1042 -0.1; 1146 -0.2; 1261 -0.9; 1387 -2.0; 1526 -4.0; 1678 -3.6; 1846 -1.9; 2031 -0.3; 2234 0.9; 2457 2.3; 2703 1.3; 2973 0.8; 3270 1.8; 3597 -2.1; 3957 -4.9; 4353 -5.9; 4788 -3.6; 5267 -0.4; 5793 2.4; 6373 2.7; 7010 2.4; 7711 0.3; 8482 -0.6; 9330 -3.1; 10263 -1.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 0.0; 20000 -0.8
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.6; 66 -0.9; 72 -1.3; 79 -1.1; 87 -0.7; 96 -2.5; 106 -3.1; 116 -3.3; 128 -4.0; 141 -4.6; 155 -5.0; 170 -5.2; 187 -5.4; 206 -5.5; 227 -5.7; 249 -5.9; 274 -5.8; 302 -5.7; 332 -5.5; 365 -5.5; 402 -5.5; 442 -5.6; 486 -5.7; 535 -5.7; 588 -5.7; 647 -5.6; 712 -5.6; 783 -5.7; 861 -6.2; 947 -6.2; 1042 -6.6; 1146 -6.7; 1261 -7.4; 1387 -8.5; 1526 -10.5; 1678 -10.1; 1846 -8.4; 2031 -6.8; 2234 -5.6; 2457 -4.2; 2703 -5.2; 2973 -5.7; 3270 -4.7; 3597 -8.6; 3957 -11.4; 4353 -12.4; 4788 -10.1; 5267 -6.9; 5793 -4.1; 6373 -3.8; 7010 -4.1; 7711 -6.2; 8482 -7.1; 9330 -9.6; 10263 -7.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -7.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio Technica ATH-AD900 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-AD900 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 39 Hz    | 0.39 | 6.5 dB   |
-| Peaking | 1616 Hz  | 2.72 | -6.1 dB  |
-| Peaking | 4269 Hz  | 2.33 | -13.0 dB |
-| Peaking | 4504 Hz  | 0.55 | 6.9 dB   |
-| Peaking | 9335 Hz  | 2.68 | -5.5 dB  |
-| Peaking | 41 Hz    | 2.62 | -0.5 dB  |
-| Peaking | 86 Hz    | 6.89 | 1.7 dB   |
-| Peaking | 160 Hz   | 2.44 | -0.7 dB  |
-| Peaking | 6578 Hz  | 8.66 | 1.0 dB   |
-| Peaking | 14664 Hz | 1.62 | -0.6 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 39 Hz   | 0.4  | 6.5 dB  |
+| Peaking | 1596 Hz | 2.4  | -4.6 dB |
+| Peaking | 3928 Hz | 0.36 | 2.6 dB  |
+| Peaking | 4245 Hz | 2.87 | -7.3 dB |
+| Peaking | 8840 Hz | 2.46 | -2.7 dB |
+| Peaking | 1683 Hz | 1.35 | -3.3 dB |
+| Peaking | 2198 Hz | 0.62 | 2.9 dB  |
+| Peaking | 4615 Hz | 1.62 | -3.8 dB |
+| Peaking | 6034 Hz | 2.09 | 3.5 dB  |
+| Peaking | 9584 Hz | 5.97 | -2.8 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 5.2 dB  |
+| Peaking | 125 Hz   | 1.41 | 1.7 dB  |
+| Peaking | 250 Hz   | 1.41 | -0.1 dB |
+| Peaking | 500 Hz   | 1.41 | 1.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.1 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.3 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Audio%20Technica%20ATH-AD900/Audio%20Technica%20ATH-AD900.png)

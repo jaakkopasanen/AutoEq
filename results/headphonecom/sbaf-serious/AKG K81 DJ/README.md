@@ -1,39 +1,56 @@
 # AKG K81 DJ
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 6.0; 141 6.0; 155 5.8; 170 5.5; 187 5.5; 206 5.6; 227 5.9; 249 5.5; 274 4.8; 302 3.9; 332 2.7; 365 1.3; 402 0.0; 442 -0.3; 486 -0.1; 535 0.1; 588 0.0; 647 0.4; 712 0.5; 783 0.5; 861 0.5; 947 0.2; 1042 -0.1; 1146 -0.3; 1261 -0.5; 1387 -1.0; 1526 -1.7; 1678 -1.6; 1846 -1.3; 2031 -1.2; 2234 -1.6; 2457 -0.0; 2703 1.3; 2973 2.7; 3270 3.8; 3597 3.2; 3957 1.2; 4353 -0.0; 4788 1.7; 5267 5.2; 5793 3.1; 6373 -1.4; 7010 -1.5; 7711 0.0; 8482 0.0; 9330 -0.9; 10263 -0.2; 11289 0.0; 12418 0.0; 13660 -0.4; 15026 -5.8; 16529 -5.6; 18182 -2.8; 20000 -2.1
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.5; 155 -0.7; 170 -1.0; 187 -1.0; 206 -0.9; 227 -0.6; 249 -1.0; 274 -1.7; 302 -2.6; 332 -3.8; 365 -5.2; 402 -6.5; 442 -6.8; 486 -6.6; 535 -6.4; 588 -6.5; 647 -6.1; 712 -6.0; 783 -6.0; 861 -6.0; 947 -6.3; 1042 -6.6; 1146 -6.8; 1261 -7.0; 1387 -7.5; 1526 -8.2; 1678 -8.1; 1846 -7.8; 2031 -7.7; 2234 -8.1; 2457 -6.5; 2703 -5.2; 2973 -3.8; 3270 -2.7; 3597 -3.3; 3957 -5.3; 4353 -6.5; 4788 -4.8; 5267 -1.3; 5793 -3.4; 6373 -7.9; 7010 -8.0; 7711 -6.5; 8482 -6.5; 9330 -7.4; 10263 -6.7; 11289 -6.5; 12418 -6.5; 13660 -6.9; 15026 -12.3; 16529 -12.1; 18182 -9.3; 20000 -8.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `AKG K81 DJ GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K81 DJ ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 69 Hz    | 0.17 | 6.5 dB  |
-| Peaking | 4079 Hz  | 0.85 | 5.2 dB  |
-| Peaking | 4353 Hz  | 0.08 | -2.6 dB |
-| Peaking | 13338 Hz | 1.52 | 5.5 dB  |
-| Peaking | 15384 Hz | 1.75 | -7.5 dB |
-| Peaking | 427 Hz   | 4.97 | -2.4 dB |
-| Peaking | 3330 Hz  | 4.65 | 3.1 dB  |
-| Peaking | 4405 Hz  | 2.49 | -3.9 dB |
-| Peaking | 5422 Hz  | 4.76 | 6.4 dB  |
-| Peaking | 6484 Hz  | 6.12 | -3.4 dB |
+| Peaking | 2282 Hz  | 0.16 | -2.5 dB |
+| Peaking | 4077 Hz  | 0.85 | 5.1 dB  |
+| Peaking | 13082 Hz | 1.51 | 5.5 dB  |
+| Peaking | 15555 Hz | 1.04 | -8.1 dB |
+| Peaking | 427 Hz   | 4.85 | -2.4 dB |
+| Peaking | 3319 Hz  | 4.31 | 3.5 dB  |
+| Peaking | 4378 Hz  | 2.09 | -4.0 dB |
+| Peaking | 5437 Hz  | 4.73 | 6.6 dB  |
+| Peaking | 6503 Hz  | 5.92 | -3.3 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.1 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.3 dB  |
+| Peaking | 125 Hz   | 1.41 | 4.7 dB  |
+| Peaking | 250 Hz   | 1.41 | 4.7 dB  |
+| Peaking | 500 Hz   | 1.41 | -1.4 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 16000 Hz | 1.41 | -5.9 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20K81%20DJ/AKG%20K81%20DJ.png)

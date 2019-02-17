@@ -1,37 +1,55 @@
 # JBL J88i
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 2.9; 25 2.6; 28 2.2; 31 1.9; 34 1.6; 37 1.4; 41 1.2; 45 1.0; 49 0.8; 54 0.6; 60 0.3; 66 0.0; 72 -0.3; 79 -0.6; 87 -1.0; 96 -1.5; 106 -1.7; 116 -2.0; 128 -2.5; 141 -2.9; 155 -3.2; 170 -2.8; 187 -3.2; 206 -3.4; 227 -3.5; 249 -3.6; 274 -3.3; 302 -2.8; 332 -1.8; 365 -0.5; 402 1.8; 442 4.9; 486 5.6; 535 6.0; 588 6.0; 647 4.9; 712 2.4; 783 1.3; 861 0.5; 947 0.2; 1042 -0.0; 1146 -0.2; 1261 -0.8; 1387 -1.1; 1526 -0.8; 1678 0.6; 1846 3.1; 2031 5.6; 2234 6.0; 2457 6.0; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -3.2; 23 -3.6; 25 -3.9; 28 -4.3; 31 -4.6; 34 -4.9; 37 -5.1; 41 -5.3; 45 -5.5; 49 -5.7; 54 -5.9; 60 -6.2; 66 -6.5; 72 -6.8; 79 -7.1; 87 -7.5; 96 -8.0; 106 -8.2; 116 -8.5; 128 -9.0; 141 -9.4; 155 -9.7; 170 -9.3; 187 -9.7; 206 -9.9; 227 -10.0; 249 -10.1; 274 -9.8; 302 -9.3; 332 -8.3; 365 -7.0; 402 -4.7; 442 -1.6; 486 -0.9; 535 -0.5; 588 -0.5; 647 -1.6; 712 -4.1; 783 -5.2; 861 -6.0; 947 -6.3; 1042 -6.5; 1146 -6.7; 1261 -7.3; 1387 -7.6; 1526 -7.3; 1678 -5.9; 1846 -3.4; 2031 -0.9; 2234 -0.5; 2457 -0.5; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `JBL J88i GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `JBL J88i ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 406 Hz  | 0.39 | -7.6 dB |
-| Peaking | 520 Hz  | 1.33 | 13.5 dB |
-| Peaking | 1444 Hz | 2.68 | -4.0 dB |
-| Peaking | 2964 Hz | 0.6  | 7.6 dB  |
-| Peaking | 17 Hz   | 0.8  | 3.5 dB  |
-| Peaking | 56 Hz   | 0.95 | 0.7 dB  |
-| Peaking | 3267 Hz | 4.23 | -1.1 dB |
-| Peaking | 6195 Hz | 2.13 | 5.0 dB  |
-| Peaking | 7611 Hz | 1.47 | -4.1 dB |
+| Peaking | 405 Hz  | 0.39 | -7.6 dB |
+| Peaking | 521 Hz  | 1.33 | 13.4 dB |
+| Peaking | 1449 Hz | 2.65 | -4.0 dB |
+| Peaking | 2951 Hz | 0.58 | 7.6 dB  |
+| Peaking | 17 Hz   | 0.83 | 3.5 dB  |
+| Peaking | 55 Hz   | 0.86 | 0.8 dB  |
+| Peaking | 3251 Hz | 4.09 | -1.0 dB |
+| Peaking | 6188 Hz | 2.03 | 5.4 dB  |
+| Peaking | 7570 Hz | 1.44 | -4.6 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.3dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 2.5 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.1 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.8 dB |
+| Peaking | 250 Hz   | 1.41 | -5.5 dB |
+| Peaking | 500 Hz   | 1.41 | 7.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | -2.7 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 7.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/JBL%20J88i/JBL%20J88i.png)

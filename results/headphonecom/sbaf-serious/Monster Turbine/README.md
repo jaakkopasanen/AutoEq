@@ -1,38 +1,56 @@
 # Monster Turbine
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.1dB
-GraphicEQ: 21 -13.1; 23 -12.9; 25 -12.8; 28 -12.5; 31 -12.3; 34 -12.0; 37 -11.8; 41 -11.5; 45 -11.2; 49 -10.9; 54 -10.7; 60 -10.4; 66 -10.2; 72 -9.9; 79 -9.7; 87 -9.4; 96 -9.0; 106 -8.6; 116 -8.2; 128 -7.9; 141 -7.4; 155 -7.2; 170 -6.9; 187 -6.4; 206 -5.9; 227 -5.3; 249 -4.8; 274 -4.1; 302 -3.6; 332 -2.9; 365 -2.2; 402 -1.7; 442 -1.2; 486 -0.8; 535 -0.3; 588 0.1; 647 0.5; 712 0.7; 783 0.9; 861 0.7; 947 0.3; 1042 -0.3; 1146 -0.9; 1261 -1.7; 1387 -2.0; 1526 -2.8; 1678 -4.0; 1846 -5.2; 2031 -5.9; 2234 -6.7; 2457 -7.3; 2703 -7.5; 2973 -6.7; 3270 -4.8; 3597 -4.0; 3957 -5.4; 4353 -7.6; 4788 -6.7; 5267 -2.1; 5793 2.6; 6373 5.0; 7010 2.5; 7711 0.3; 8482 -0.8; 9330 -3.4; 10263 -0.5; 11289 0.0; 12418 0.0; 13660 0.0; 15026 -1.9; 16529 -0.4; 18182 0.0
+GraphicEQ: 21 -18.6; 23 -18.4; 25 -18.2; 28 -18.0; 31 -17.7; 34 -17.5; 37 -17.2; 41 -16.9; 45 -16.6; 49 -16.4; 54 -16.1; 60 -15.8; 66 -15.6; 72 -15.4; 79 -15.1; 87 -14.8; 96 -14.4; 106 -14.1; 116 -13.6; 128 -13.3; 141 -12.9; 155 -12.7; 170 -12.4; 187 -11.9; 206 -11.3; 227 -10.7; 249 -10.2; 274 -9.6; 302 -9.0; 332 -8.4; 365 -7.7; 402 -7.2; 442 -6.7; 486 -6.2; 535 -5.8; 588 -5.3; 647 -4.9; 712 -4.7; 783 -4.6; 861 -4.7; 947 -5.1; 1042 -5.7; 1146 -6.4; 1261 -7.2; 1387 -7.5; 1526 -8.3; 1678 -9.4; 1846 -10.6; 2031 -11.4; 2234 -12.1; 2457 -12.7; 2703 -13.0; 2973 -12.1; 3270 -10.3; 3597 -9.5; 3957 -10.9; 4353 -13.0; 4788 -12.1; 5267 -7.5; 5793 -2.9; 6373 -0.5; 7010 -2.9; 7711 -5.2; 8482 -6.3; 9330 -8.8; 10263 -5.9; 11289 -5.5; 12418 -5.5; 13660 -5.5; 15026 -7.4; 16529 -5.8; 18182 -5.5; 20000 -5.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Monster Turbine GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-50**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Turbine ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 0.21 | -12.7 dB |
+| Peaking | 22 Hz    | 0.2  | -12.7 dB |
 | Peaking | 165 Hz   | 0.94 | -3.1 dB  |
-| Peaking | 2460 Hz  | 1.54 | -7.5 dB  |
-| Peaking | 4546 Hz  | 3.7  | -7.2 dB  |
-| Peaking | 6271 Hz  | 4.58 | 7.0 dB   |
-| Peaking | 285 Hz   | 2.09 | -0.8 dB  |
-| Peaking | 748 Hz   | 1.56 | 1.9 dB   |
-| Peaking | 1708 Hz  | 3.75 | -1.1 dB  |
-| Peaking | 9301 Hz  | 7.62 | -3.7 dB  |
-| Peaking | 15430 Hz | 7.27 | -2.8 dB  |
+| Peaking | 2459 Hz  | 1.54 | -7.5 dB  |
+| Peaking | 4543 Hz  | 3.65 | -7.2 dB  |
+| Peaking | 6258 Hz  | 4.47 | 7.0 dB   |
+| Peaking | 290 Hz   | 3.01 | -0.7 dB  |
+| Peaking | 747 Hz   | 1.55 | 1.9 dB   |
+| Peaking | 1708 Hz  | 3.74 | -1.1 dB  |
+| Peaking | 9285 Hz  | 7.29 | -3.7 dB  |
+| Peaking | 15494 Hz | 6.06 | -2.8 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -13.4 dB |
+| Peaking | 62 Hz    | 1.41 | -7.0 dB  |
+| Peaking | 125 Hz   | 1.41 | -6.2 dB  |
+| Peaking | 250 Hz   | 1.41 | -3.8 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.5 dB   |
+| Peaking | 1000 Hz  | 1.41 | 1.8 dB   |
+| Peaking | 2000 Hz  | 1.41 | -6.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | -5.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | 2.1 dB   |
+| Peaking | 16000 Hz | 1.41 | -1.4 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Monster%20Turbine/Monster%20Turbine.png)

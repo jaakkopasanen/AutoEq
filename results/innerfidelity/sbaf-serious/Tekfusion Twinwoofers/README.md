@@ -1,38 +1,56 @@
 # Tekfusion Twinwoofers
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -10.2; 23 -10.3; 25 -10.3; 28 -10.5; 31 -10.6; 34 -10.6; 37 -10.6; 41 -10.6; 45 -10.7; 49 -10.8; 54 -10.8; 60 -11.0; 66 -11.1; 72 -11.2; 79 -11.4; 87 -11.5; 96 -11.6; 106 -11.5; 116 -11.4; 128 -11.3; 141 -11.1; 155 -10.8; 170 -10.4; 187 -10.0; 206 -9.4; 227 -8.8; 249 -8.2; 274 -7.3; 302 -6.6; 332 -5.7; 365 -4.8; 402 -3.8; 442 -2.8; 486 -2.0; 535 -1.1; 588 -0.2; 647 -0.0; 712 -0.3; 783 -0.4; 861 1.1; 947 0.3; 1042 -0.1; 1146 -0.2; 1261 -0.1; 1387 -0.0; 1526 0.1; 1678 0.6; 1846 1.5; 2031 2.5; 2234 3.6; 2457 5.1; 2703 6.0; 2973 6.0; 3270 6.0; 3597 5.8; 3957 3.6; 4353 0.2; 4788 -2.5; 5267 -4.2; 5793 -2.7; 6373 1.4; 7010 2.3; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -16.7; 23 -16.8; 25 -16.8; 28 -17.0; 31 -17.1; 34 -17.1; 37 -17.1; 41 -17.1; 45 -17.2; 49 -17.3; 54 -17.3; 60 -17.5; 66 -17.6; 72 -17.7; 79 -17.9; 87 -18.0; 96 -18.1; 106 -18.0; 116 -17.9; 128 -17.8; 141 -17.6; 155 -17.3; 170 -16.9; 187 -16.5; 206 -15.9; 227 -15.3; 249 -14.7; 274 -13.8; 302 -13.1; 332 -12.2; 365 -11.3; 402 -10.3; 442 -9.3; 486 -8.5; 535 -7.6; 588 -6.7; 647 -6.5; 712 -6.8; 783 -6.9; 861 -5.4; 947 -6.2; 1042 -6.6; 1146 -6.7; 1261 -6.6; 1387 -6.5; 1526 -6.4; 1678 -5.9; 1846 -5.0; 2031 -4.0; 2234 -2.9; 2457 -1.4; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.7; 3957 -2.9; 4353 -6.3; 4788 -9.0; 5267 -10.7; 5793 -9.2; 6373 -5.1; 7010 -4.2; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Tekfusion Twinwoofers GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Tekfusion Twinwoofers ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 28 Hz   | 0.26 | -9.9 dB |
-| Peaking | 127 Hz  | 0.73 | -6.2 dB |
-| Peaking | 251 Hz  | 1.29 | -3.7 dB |
-| Peaking | 3160 Hz | 1.34 | 7.0 dB  |
-| Peaking | 5061 Hz | 3.85 | -6.9 dB |
-| Peaking | 606 Hz  | 3.21 | 1.8 dB  |
-| Peaking | 885 Hz  | 4.4  | 1.9 dB  |
-| Peaking | 2038 Hz | 0.35 | -1.7 dB |
-| Peaking | 2577 Hz | 1.03 | 1.9 dB  |
-| Peaking | 6776 Hz | 7.54 | 3.4 dB  |
+| Peaking | 29 Hz   | 0.25 | -9.9 dB |
+| Peaking | 128 Hz  | 0.74 | -6.1 dB |
+| Peaking | 253 Hz  | 1.31 | -3.7 dB |
+| Peaking | 3162 Hz | 1.34 | 7.0 dB  |
+| Peaking | 5061 Hz | 3.8  | -6.9 dB |
+| Peaking | 611 Hz  | 3.39 | 1.7 dB  |
+| Peaking | 878 Hz  | 4.69 | 1.9 dB  |
+| Peaking | 2172 Hz | 0.39 | -1.8 dB |
+| Peaking | 2593 Hz | 1.02 | 2.1 dB  |
+| Peaking | 6751 Hz | 7.46 | 3.4 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -10.5 dB |
+| Peaking | 62 Hz    | 1.41 | -7.9 dB  |
+| Peaking | 125 Hz   | 1.41 | -9.4 dB  |
+| Peaking | 250 Hz   | 1.41 | -6.9 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.2 dB   |
+| Peaking | 1000 Hz  | 1.41 | -0.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | 3.2 dB   |
+| Peaking | 4000 Hz  | 1.41 | 2.3 dB   |
+| Peaking | 8000 Hz  | 1.41 | -0.8 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.0 dB   |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Tekfusion%20Twinwoofers/Tekfusion%20Twinwoofers.png)

@@ -1,38 +1,56 @@
 # Sennheiser PXC150
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 5.7; 60 4.1; 66 2.7; 72 1.5; 79 0.8; 87 1.0; 96 1.5; 106 1.0; 116 0.4; 128 0.1; 141 0.1; 155 0.3; 170 1.0; 187 1.2; 206 1.1; 227 1.1; 249 1.2; 274 1.6; 302 1.7; 332 2.1; 365 2.3; 402 2.4; 442 2.5; 486 2.6; 535 2.8; 588 2.6; 647 2.4; 712 2.1; 783 1.7; 861 1.1; 947 0.4; 1042 -0.4; 1146 -1.1; 1261 -2.0; 1387 -2.5; 1526 -3.9; 1678 -4.8; 1846 -5.3; 2031 -5.3; 2234 -3.2; 2457 -1.6; 2703 0.1; 2973 1.6; 3270 3.2; 3597 4.6; 3957 4.1; 4353 0.2; 4788 -0.1; 5267 1.5; 5793 5.4; 6373 5.5; 7010 2.5; 7711 0.3; 8482 -3.9; 9330 -6.8; 10263 -6.0; 11289 -1.5; 12418 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.8; 60 -2.4; 66 -3.8; 72 -5.0; 79 -5.7; 87 -5.5; 96 -5.0; 106 -5.5; 116 -6.1; 128 -6.4; 141 -6.4; 155 -6.2; 170 -5.5; 187 -5.3; 206 -5.4; 227 -5.4; 249 -5.3; 274 -4.9; 302 -4.8; 332 -4.4; 365 -4.2; 402 -4.1; 442 -4.0; 486 -3.9; 535 -3.7; 588 -3.9; 647 -4.1; 712 -4.4; 783 -4.8; 861 -5.4; 947 -6.1; 1042 -6.9; 1146 -7.6; 1261 -8.5; 1387 -9.0; 1526 -10.4; 1678 -11.3; 1846 -11.8; 2031 -11.8; 2234 -9.7; 2457 -8.1; 2703 -6.4; 2973 -4.9; 3270 -3.3; 3597 -1.9; 3957 -2.4; 4353 -6.3; 4788 -6.6; 5267 -5.0; 5793 -1.1; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -10.4; 9330 -13.3; 10263 -12.5; 11289 -8.0; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser PXC150 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser PXC150 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 31 Hz   | 0.67 | 6.7 dB  |
-| Peaking | 1852 Hz | 2.49 | -6.2 dB |
-| Peaking | 3551 Hz | 3.86 | 5.4 dB  |
-| Peaking | 6253 Hz | 4.21 | 6.9 dB  |
-| Peaking | 9538 Hz | 3.49 | -8.0 dB |
-| Peaking | 52 Hz   | 4.23 | 1.7 dB  |
-| Peaking | 75 Hz   | 3.87 | -1.8 dB |
-| Peaking | 130 Hz  | 4.1  | -1.1 dB |
-| Peaking | 480 Hz  | 1.03 | 2.9 dB  |
-| Peaking | 4628 Hz | 8.91 | -2.0 dB |
+| Peaking | 1853 Hz | 2.49 | -6.2 dB |
+| Peaking | 3552 Hz | 3.84 | 5.4 dB  |
+| Peaking | 6256 Hz | 4.1  | 6.9 dB  |
+| Peaking | 9546 Hz | 3.28 | -8.0 dB |
+| Peaking | 53 Hz   | 4.23 | 1.8 dB  |
+| Peaking | 75 Hz   | 3.96 | -1.7 dB |
+| Peaking | 131 Hz  | 4.12 | -1.1 dB |
+| Peaking | 483 Hz  | 1.02 | 2.9 dB  |
+| Peaking | 4635 Hz | 8.63 | -2.0 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 7.4 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.3 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.7 dB |
+| Peaking | 250 Hz   | 1.41 | 0.9 dB  |
+| Peaking | 500 Hz   | 1.41 | 3.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -6.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.4 dB |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20PXC150/Sennheiser%20PXC150.png)

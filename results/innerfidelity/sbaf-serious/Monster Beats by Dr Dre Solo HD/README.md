@@ -1,37 +1,55 @@
 # Monster Beats by Dr Dre Solo HD
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -6.9; 23 -6.7; 25 -6.5; 28 -6.2; 31 -5.9; 34 -5.5; 37 -5.2; 41 -4.7; 45 -4.3; 49 -3.8; 54 -2.4; 60 -0.5; 66 -0.8; 72 -4.3; 79 -7.8; 87 -8.8; 96 -8.0; 106 -6.7; 116 -5.4; 128 -6.9; 141 -6.8; 155 -5.5; 170 -5.6; 187 -4.6; 206 -3.6; 227 -2.5; 249 -2.8; 274 -3.2; 302 -2.1; 332 -0.7; 365 0.6; 402 2.3; 442 3.5; 486 3.1; 535 3.2; 588 2.6; 647 1.7; 712 0.9; 783 0.7; 861 0.2; 947 0.2; 1042 0.1; 1146 0.3; 1261 0.2; 1387 0.1; 1526 0.6; 1678 1.2; 1846 1.9; 2031 2.8; 2234 3.6; 2457 4.5; 2703 5.0; 2973 5.0; 3270 4.9; 3597 4.8; 3957 4.0; 4353 2.3; 4788 2.5; 5267 5.4; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -13.4; 23 -13.2; 25 -13.0; 28 -12.7; 31 -12.3; 34 -12.0; 37 -11.7; 41 -11.2; 45 -10.8; 49 -10.2; 54 -8.8; 60 -7.0; 66 -7.2; 72 -10.8; 79 -14.3; 87 -15.2; 96 -14.5; 106 -13.2; 116 -11.8; 128 -13.4; 141 -13.2; 155 -11.9; 170 -12.1; 187 -11.0; 206 -10.0; 227 -9.0; 249 -9.3; 274 -9.6; 302 -8.5; 332 -7.2; 365 -5.8; 402 -4.2; 442 -2.9; 486 -3.3; 535 -3.3; 588 -3.9; 647 -4.7; 712 -5.5; 783 -5.8; 861 -6.2; 947 -6.3; 1042 -6.4; 1146 -6.2; 1261 -6.2; 1387 -6.3; 1526 -5.8; 1678 -5.2; 1846 -4.6; 2031 -3.6; 2234 -2.9; 2457 -2.0; 2703 -1.4; 2973 -1.4; 3270 -1.6; 3597 -1.7; 3957 -2.4; 4353 -4.2; 4788 -3.9; 5267 -1.1; 5793 -0.5; 6373 -1.0; 7010 -3.9; 7711 -6.2; 8482 -6.4; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Monster Beats by Dr Dre Solo HD GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Monster Beats by Dr Dre Solo HD ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 25 Hz   | 1.26 | -6.3 dB |
-| Peaking | 112 Hz  | 0.99 | -7.4 dB |
-| Peaking | 2922 Hz | 1.33 | 5.2 dB  |
-| Peaking | 5895 Hz | 3.86 | 5.7 dB  |
-| Peaking | 64 Hz   | 3.21 | 9.0 dB  |
-| Peaking | 75 Hz   | 1.26 | -5.9 dB |
-| Peaking | 113 Hz  | 3.57 | 4.6 dB  |
-| Peaking | 425 Hz  | 0.63 | -3.9 dB |
-| Peaking | 479 Hz  | 1.36 | 8.0 dB  |
+| Peaking | 112 Hz  | 1    | -7.4 dB |
+| Peaking | 2923 Hz | 1.32 | 5.2 dB  |
+| Peaking | 5898 Hz | 3.77 | 5.7 dB  |
+| Peaking | 64 Hz   | 3.11 | 8.6 dB  |
+| Peaking | 81 Hz   | 0.95 | -6.1 dB |
+| Peaking | 109 Hz  | 3.27 | 5.5 dB  |
+| Peaking | 280 Hz  | 4.28 | -1.9 dB |
+| Peaking | 472 Hz  | 2.06 | 4.4 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -6.4 dB |
+| Peaking | 62 Hz    | 1.41 | -1.0 dB |
+| Peaking | 125 Hz   | 1.41 | -7.2 dB |
+| Peaking | 250 Hz   | 1.41 | -2.3 dB |
+| Peaking | 500 Hz   | 1.41 | 4.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.6 dB |
+| Peaking | 2000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Beats%20by%20Dr%20Dre%20Solo%20HD/Monster%20Beats%20by%20Dr%20Dre%20Solo%20HD.png)

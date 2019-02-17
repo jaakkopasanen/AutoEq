@@ -1,38 +1,56 @@
 # Sennheiser HD 540 reference-II
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.3; 31 4.6; 34 4.0; 37 3.5; 41 3.0; 45 2.5; 49 2.1; 54 1.6; 60 1.2; 66 1.0; 72 0.7; 79 -0.4; 87 -1.6; 96 -2.5; 106 -3.1; 116 -3.8; 128 -4.3; 141 -4.7; 155 -5.0; 170 -5.2; 187 -5.3; 206 -5.4; 227 -5.4; 249 -5.3; 274 -5.1; 302 -4.8; 332 -4.5; 365 -4.2; 402 -3.9; 442 -3.7; 486 -3.5; 535 -3.2; 588 -2.8; 647 -2.5; 712 -2.2; 783 -2.0; 861 -1.4; 947 0.1; 1042 -0.0; 1146 -0.2; 1261 0.1; 1387 0.7; 1526 1.4; 1678 2.0; 1846 2.3; 2031 1.9; 2234 1.0; 2457 0.1; 2703 -0.8; 2973 -1.1; 3270 -0.4; 3597 1.0; 3957 -0.9; 4353 -1.2; 4788 -3.9; 5267 -3.0; 5793 -3.1; 6373 -5.7; 7010 -1.4; 7711 -2.3; 8482 -2.0; 9330 0.0; 10263 0.0; 11289 -2.9; 12418 -9.2; 13660 -8.3; 15026 -3.0; 16529 -2.4; 18182 -5.7; 20000 -6.7
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.6; 28 -1.2; 31 -1.9; 34 -2.5; 37 -3.0; 41 -3.5; 45 -4.0; 49 -4.4; 54 -4.9; 60 -5.3; 66 -5.5; 72 -5.8; 79 -6.9; 87 -8.1; 96 -9.0; 106 -9.6; 116 -10.3; 128 -10.8; 141 -11.2; 155 -11.5; 170 -11.7; 187 -11.8; 206 -11.9; 227 -11.9; 249 -11.8; 274 -11.6; 302 -11.3; 332 -11.0; 365 -10.7; 402 -10.4; 442 -10.2; 486 -10.0; 535 -9.7; 588 -9.3; 647 -9.0; 712 -8.7; 783 -8.5; 861 -7.9; 947 -6.4; 1042 -6.5; 1146 -6.7; 1261 -6.4; 1387 -5.8; 1526 -5.1; 1678 -4.5; 1846 -4.2; 2031 -4.6; 2234 -5.5; 2457 -6.4; 2703 -7.3; 2973 -7.6; 3270 -6.9; 3597 -5.5; 3957 -7.4; 4353 -7.7; 4788 -10.4; 5267 -9.5; 5793 -9.6; 6373 -12.2; 7010 -7.9; 7711 -8.8; 8482 -8.5; 9330 -6.5; 10263 -6.5; 11289 -9.4; 12418 -15.7; 13660 -14.8; 15026 -9.5; 16529 -8.9; 18182 -12.2; 20000 -13.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 540 reference-II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 540 reference-II ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 17 Hz    | 0.18 | 6.5 dB   |
+| Peaking | 15 Hz    | 0.15 | 6.5 dB   |
 | Peaking | 172 Hz   | 0.38 | -6.7 dB  |
-| Peaking | 1734 Hz  | 2.21 | 2.9 dB   |
-| Peaking | 6011 Hz  | 2.62 | -4.4 dB  |
-| Peaking | 13153 Hz | 2.93 | -10.2 dB |
-| Peaking | 989 Hz   | 4.92 | 1.5 dB   |
-| Peaking | 1697 Hz  | 0.39 | -0.4 dB  |
-| Peaking | 2016 Hz  | 5.36 | 0.9 dB   |
-| Peaking | 10212 Hz | 4.7  | 2.8 dB   |
-| Peaking | 19259 Hz | 1.77 | -7.2 dB  |
+| Peaking | 1733 Hz  | 2.2  | 2.9 dB   |
+| Peaking | 6017 Hz  | 2.58 | -4.4 dB  |
+| Peaking | 13137 Hz | 2.71 | -10.4 dB |
+| Peaking | 840 Hz   | 2.34 | -1.1 dB  |
+| Peaking | 952 Hz   | 4.32 | 2.0 dB   |
+| Peaking | 2845 Hz  | 6.78 | -1.2 dB  |
+| Peaking | 10242 Hz | 4.58 | 2.8 dB   |
+| Peaking | 19277 Hz | 1.08 | -7.4 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 5.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.0 dB  |
+| Peaking | 125 Hz   | 1.41 | -4.1 dB |
+| Peaking | 250 Hz   | 1.41 | -4.7 dB |
+| Peaking | 500 Hz   | 1.41 | -2.8 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.1 dB |
+| Peaking | 2000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | -1.9 dB |
+| Peaking | 8000 Hz  | 1.41 | -2.3 dB |
+| Peaking | 16000 Hz | 1.41 | -6.6 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20540%20reference-II/Sennheiser%20HD%20540%20reference-II.png)

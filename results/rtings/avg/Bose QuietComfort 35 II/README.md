@@ -1,38 +1,56 @@
 # Bose QuietComfort 35 II
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -2.3dB
-GraphicEQ: 21 -5.7; 23 -5.1; 25 -4.7; 28 -4.4; 31 -4.3; 34 -4.3; 37 -4.3; 41 -4.4; 45 -4.4; 49 -4.4; 54 -4.4; 60 -4.3; 66 -4.2; 72 -4.2; 79 -4.1; 87 -4.0; 96 -4.0; 106 -3.9; 116 -3.9; 128 -3.8; 141 -3.8; 155 -3.7; 170 -3.5; 187 -3.4; 206 -3.1; 227 -2.8; 249 -2.6; 274 -2.5; 302 -2.4; 332 -2.2; 365 -2.0; 402 -1.9; 442 -1.9; 486 -1.8; 535 -1.6; 588 -1.4; 647 -1.1; 712 -0.9; 783 -0.5; 861 -0.1; 947 -0.1; 1042 0.1; 1146 0.6; 1261 0.8; 1387 0.3; 1526 -0.3; 1678 -1.9; 1846 -3.8; 2031 -5.1; 2234 -4.5; 2457 -3.1; 2703 -2.2; 2973 -1.6; 3270 -0.1; 3597 -2.8; 3957 -4.8; 4353 -3.3; 4788 -1.5; 5267 1.6; 5793 -1.5; 6373 -6.1; 7010 -1.6; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 -0.1; 12418 -4.3; 13660 -5.7; 15026 -5.2; 16529 -2.6; 18182 -0.0
+GraphicEQ: 21 -7.8; 23 -7.2; 25 -6.8; 28 -6.5; 31 -6.4; 34 -6.4; 37 -6.4; 41 -6.4; 45 -6.5; 49 -6.5; 54 -6.4; 60 -6.4; 66 -6.3; 72 -6.2; 79 -6.2; 87 -6.1; 96 -6.1; 106 -6.0; 116 -6.0; 128 -5.9; 141 -5.8; 155 -5.8; 170 -5.6; 187 -5.4; 206 -5.2; 227 -4.9; 249 -4.7; 274 -4.6; 302 -4.5; 332 -4.3; 365 -4.1; 402 -4.0; 442 -3.9; 486 -3.9; 535 -3.7; 588 -3.5; 647 -3.2; 712 -2.9; 783 -2.6; 861 -2.2; 947 -2.2; 1042 -2.0; 1146 -1.5; 1261 -1.3; 1387 -1.8; 1526 -2.4; 1678 -4.0; 1846 -5.8; 2031 -7.1; 2234 -6.6; 2457 -5.2; 2703 -4.2; 2973 -3.7; 3270 -2.2; 3597 -4.9; 3957 -6.8; 4353 -5.4; 4788 -3.5; 5267 -0.5; 5793 -3.6; 6373 -8.2; 7010 -3.7; 7711 -1.8; 8482 -2.1; 9330 -2.1; 10263 -2.1; 11289 -2.1; 12418 -6.3; 13660 -7.8; 15026 -7.3; 16529 -4.7; 18182 -2.1; 20000 -2.1
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Bose QuietComfort 35 II GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-23**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bose QuietComfort 35 II ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.1dB**.
+When using independent subset of filters, apply preamp of **--0.0dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 14 Hz    |  1.12 | -6.6 dB |
-| Peaking | 79 Hz    |  0.24 | -4.0 dB |
-| Peaking | 2159 Hz  |  2.61 | -5.0 dB |
-| Peaking | 6298 Hz  |  9.44 | -6.8 dB |
-| Peaking | 14243 Hz |  2.3  | -6.5 dB |
-| Peaking | 1299 Hz  |  2.25 | 1.6 dB  |
-| Peaking | 1837 Hz  |  6.97 | -1.2 dB |
-| Peaking | 3322 Hz  |  5.53 | 2.6 dB  |
-| Peaking | 3904 Hz  |  3.62 | -5.1 dB |
-| Peaking | 5390 Hz  | 10.25 | 4.1 dB  |
+| Peaking | 14 Hz    |  1.13 | -6.5 dB |
+| Peaking | 78 Hz    |  0.24 | -4.0 dB |
+| Peaking | 2157 Hz  |  2.61 | -5.0 dB |
+| Peaking | 6298 Hz  |  9.2  | -6.7 dB |
+| Peaking | 14303 Hz |  1.96 | -6.5 dB |
+| Peaking | 1300 Hz  |  2.29 | 1.6 dB  |
+| Peaking | 1846 Hz  |  7    | -1.2 dB |
+| Peaking | 3339 Hz  |  5.51 | 2.6 dB  |
+| Peaking | 3911 Hz  |  3.58 | -5.1 dB |
+| Peaking | 5410 Hz  | 10.18 | 4.1 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -4.7 dB |
+| Peaking | 62 Hz    | 1.41 | -3.0 dB |
+| Peaking | 125 Hz   | 1.41 | -3.1 dB |
+| Peaking | 250 Hz   | 1.41 | -1.9 dB |
+| Peaking | 500 Hz   | 1.41 | -1.7 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.4 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 8000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 16000 Hz | 1.41 | -5.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Bose%20QuietComfort%2035%20II/Bose%20QuietComfort%2035%20II.png)

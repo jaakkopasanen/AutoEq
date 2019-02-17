@@ -1,38 +1,56 @@
 # Torque t096z Midcentric Filter
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.4dB
-GraphicEQ: 21 0.0; 23 5.6; 25 5.3; 28 4.9; 31 4.5; 34 4.2; 37 4.0; 41 3.7; 45 3.4; 49 3.1; 54 2.8; 60 2.3; 66 2.0; 72 1.5; 79 1.1; 87 0.6; 96 0.1; 106 -0.2; 116 -0.4; 128 -0.8; 141 -1.3; 155 -1.5; 170 -1.7; 187 -1.8; 206 -2.0; 227 -1.8; 249 -1.9; 274 -1.8; 302 -1.7; 332 -1.5; 365 -1.3; 402 -1.0; 442 -0.6; 486 -0.5; 535 -0.2; 588 0.3; 647 0.5; 712 0.6; 783 0.8; 861 0.6; 947 0.2; 1042 -0.2; 1146 -0.5; 1261 -0.8; 1387 -1.4; 1526 -1.9; 1678 -2.3; 1846 -1.9; 2031 -1.5; 2234 -1.0; 2457 0.4; 2703 0.9; 2973 1.9; 3270 2.4; 3597 0.8; 3957 -1.8; 4353 -4.3; 4788 -3.0; 5267 0.9; 5793 4.1; 6373 5.2; 7010 2.5; 7711 0.3; 8482 0.0; 9330 -0.3; 10263 -1.9; 11289 -1.4; 12418 -0.0
+GraphicEQ: 21 -0.5; 23 -0.9; 25 -1.2; 28 -1.6; 31 -2.0; 34 -2.3; 37 -2.6; 41 -2.9; 45 -3.2; 49 -3.4; 54 -3.8; 60 -4.2; 66 -4.6; 72 -5.0; 79 -5.5; 87 -5.9; 96 -6.4; 106 -6.7; 116 -7.0; 128 -7.4; 141 -7.8; 155 -8.0; 170 -8.2; 187 -8.3; 206 -8.5; 227 -8.3; 249 -8.5; 274 -8.3; 302 -8.2; 332 -8.0; 365 -7.8; 402 -7.5; 442 -7.1; 486 -7.0; 535 -6.7; 588 -6.2; 647 -6.0; 712 -5.9; 783 -5.7; 861 -6.0; 947 -6.3; 1042 -6.7; 1146 -7.0; 1261 -7.3; 1387 -8.0; 1526 -8.4; 1678 -8.8; 1846 -8.4; 2031 -8.0; 2234 -7.5; 2457 -6.2; 2703 -5.7; 2973 -4.6; 3270 -4.1; 3597 -5.7; 3957 -8.3; 4353 -10.8; 4788 -9.5; 5267 -5.6; 5793 -2.4; 6373 -1.3; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.8; 10263 -8.4; 11289 -7.9; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Torque t096z Midcentric Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-63**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t096z Midcentric Filter ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.2dB**.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 1.36 | 5.9 dB   |
-| Peaking | 47 Hz    | 2.01 | 2.5 dB   |
-| Peaking | 3317 Hz  | 1.8  | 11.0 dB  |
-| Peaking | 4354 Hz  | 0.88 | -13.5 dB |
-| Peaking | 6017 Hz  | 2    | 12.7 dB  |
+| Peaking | 23 Hz    | 1.37 | 5.8 dB   |
+| Peaking | 47 Hz    | 1.98 | 2.5 dB   |
+| Peaking | 3299 Hz  | 1.75 | 11.0 dB  |
+| Peaking | 4411 Hz  | 0.87 | -13.9 dB |
+| Peaking | 6010 Hz  | 1.93 | 13.0 dB  |
 | Peaking | 232 Hz   | 0.92 | -2.2 dB  |
-| Peaking | 774 Hz   | 1.57 | 1.5 dB   |
-| Peaking | 1626 Hz  | 4.1  | -1.2 dB  |
-| Peaking | 10693 Hz | 5.06 | -2.1 dB  |
-| Peaking | 12329 Hz | 1.3  | 1.0 dB   |
+| Peaking | 776 Hz   | 1.58 | 1.5 dB   |
+| Peaking | 1642 Hz  | 3.35 | -1.3 dB  |
+| Peaking | 10688 Hz | 4.22 | -2.3 dB  |
+| Peaking | 11657 Hz | 1.13 | 1.1 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 5.4 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.5 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.0 dB |
+| Peaking | 250 Hz   | 1.41 | -2.2 dB |
+| Peaking | 500 Hz   | 1.41 | 0.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.1 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t096z%20Midcentric%20Filter/Torque%20t096z%20Midcentric%20Filter.png)

@@ -1,38 +1,56 @@
 # Sony MDR-ZX110NC
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 2.8; 25 2.1; 28 1.2; 31 0.4; 34 -0.3; 37 -0.8; 41 -1.5; 45 -2.1; 49 -2.5; 54 -3.1; 60 -3.6; 66 -4.2; 72 -4.6; 79 -4.9; 87 -5.3; 96 -5.5; 106 -5.6; 116 -5.7; 128 -5.6; 141 -5.4; 155 -5.3; 170 -5.0; 187 -4.8; 206 -4.4; 227 -4.1; 249 -3.8; 274 -3.6; 302 -3.3; 332 -2.7; 365 -1.7; 402 -0.3; 442 0.2; 486 -0.1; 535 -0.2; 588 -0.2; 647 -0.2; 712 -0.2; 783 -0.1; 861 0.3; 947 0.3; 1042 -0.5; 1146 -1.8; 1261 -2.3; 1387 -2.7; 1526 -2.4; 1678 -1.7; 1846 -0.5; 2031 0.6; 2234 2.0; 2457 3.3; 2703 3.6; 2973 3.1; 3270 2.9; 3597 3.9; 3957 5.0; 4353 5.6; 4788 6.0; 5267 6.0; 5793 5.8; 6373 2.3; 7010 -1.3; 7711 -3.9; 8482 -6.4; 9330 -6.9; 10263 -2.9; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 -1.1; 18182 -1.2; 20000 0.0
+GraphicEQ: 21 -3.0; 23 -3.7; 25 -4.4; 28 -5.3; 31 -6.1; 34 -6.8; 37 -7.3; 41 -8.0; 45 -8.6; 49 -9.0; 54 -9.6; 60 -10.1; 66 -10.7; 72 -11.1; 79 -11.4; 87 -11.8; 96 -12.0; 106 -12.1; 116 -12.2; 128 -12.1; 141 -11.9; 155 -11.8; 170 -11.5; 187 -11.3; 206 -10.9; 227 -10.6; 249 -10.3; 274 -10.1; 302 -9.8; 332 -9.2; 365 -8.2; 402 -6.8; 442 -6.3; 486 -6.6; 535 -6.7; 588 -6.7; 647 -6.7; 712 -6.7; 783 -6.6; 861 -6.2; 947 -6.2; 1042 -7.0; 1146 -8.3; 1261 -8.8; 1387 -9.2; 1526 -8.9; 1678 -8.2; 1846 -7.0; 2031 -5.9; 2234 -4.5; 2457 -3.2; 2703 -2.9; 2973 -3.4; 3270 -3.6; 3597 -2.6; 3957 -1.5; 4353 -0.9; 4788 -0.5; 5267 -0.5; 5793 -0.7; 6373 -4.2; 7010 -7.8; 7711 -10.4; 8482 -12.9; 9330 -13.4; 10263 -9.4; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -7.6; 18182 -7.7; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony MDR-ZX110NC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-ZX110NC ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 20 Hz    | 1.43 | 4.2 dB  |
-| Peaking | 104 Hz   | 0.61 | -5.6 dB |
-| Peaking | 233 Hz   | 1.5  | -1.8 dB |
-| Peaking | 4962 Hz  | 1.22 | 7.4 dB  |
-| Peaking | 8583 Hz  | 2.45 | -9.5 dB |
-| Peaking | 1015 Hz  | 0.9  | 2.0 dB  |
-| Peaking | 1376 Hz  | 1.44 | -4.7 dB |
-| Peaking | 2488 Hz  | 3.55 | 2.7 dB  |
-| Peaking | 11324 Hz | 6.33 | 1.7 dB  |
-| Peaking | 17446 Hz | 4    | -1.9 dB |
+| Peaking | 20 Hz    | 1.45 | 4.2 dB  |
+| Peaking | 103 Hz   | 0.61 | -5.6 dB |
+| Peaking | 233 Hz   | 1.56 | -1.7 dB |
+| Peaking | 4957 Hz  | 1.21 | 7.4 dB  |
+| Peaking | 8595 Hz  | 2.35 | -9.4 dB |
+| Peaking | 1007 Hz  | 0.95 | 2.3 dB  |
+| Peaking | 1376 Hz  | 1.4  | -4.8 dB |
+| Peaking | 2500 Hz  | 3.49 | 2.7 dB  |
+| Peaking | 11231 Hz | 6.03 | 1.8 dB  |
+| Peaking | 17508 Hz | 2.96 | -1.9 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 1.9 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.9 dB |
+| Peaking | 125 Hz   | 1.41 | -5.0 dB |
+| Peaking | 250 Hz   | 1.41 | -3.4 dB |
+| Peaking | 500 Hz   | 1.41 | 1.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 8.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -5.0 dB |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sony%20MDR-ZX110NC/Sony%20MDR-ZX110NC.png)

@@ -1,38 +1,56 @@
 # Cowin E7 Pro
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.9; 37 5.0; 41 3.2; 45 1.7; 49 0.6; 54 -0.3; 60 -1.4; 66 -2.6; 72 -2.9; 79 -1.9; 87 -1.0; 96 -0.5; 106 -0.3; 116 -0.2; 128 -0.2; 141 -0.0; 155 0.1; 170 0.3; 187 0.6; 206 1.0; 227 1.5; 249 1.8; 274 2.2; 302 2.9; 332 4.1; 365 5.5; 402 6.0; 442 5.6; 486 4.3; 535 3.7; 588 3.8; 647 4.0; 712 3.6; 783 3.4; 861 2.3; 947 0.9; 1042 -0.6; 1146 -2.3; 1261 -4.5; 1387 -6.0; 1526 -6.7; 1678 -6.1; 1846 -3.9; 2031 -2.1; 2234 -0.0; 2457 2.7; 2703 4.5; 2973 5.5; 3270 5.5; 3597 4.9; 3957 3.5; 4353 1.4; 4788 -0.3; 5267 -1.7; 5793 0.1; 6373 -1.4; 7010 -3.3; 7711 -2.8; 8482 -3.5; 9330 -5.0; 10263 -4.4; 11289 -2.1; 12418 -0.8; 13660 -2.9; 15026 -7.1; 16529 -7.4; 18182 -4.8; 20000 -6.7
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.6; 37 -1.5; 41 -3.3; 45 -4.8; 49 -5.9; 54 -6.8; 60 -7.9; 66 -9.1; 72 -9.4; 79 -8.4; 87 -7.5; 96 -7.0; 106 -6.8; 116 -6.7; 128 -6.7; 141 -6.5; 155 -6.4; 170 -6.2; 187 -5.9; 206 -5.5; 227 -5.0; 249 -4.7; 274 -4.3; 302 -3.6; 332 -2.4; 365 -1.0; 402 -0.5; 442 -0.9; 486 -2.2; 535 -2.8; 588 -2.7; 647 -2.5; 712 -2.9; 783 -3.1; 861 -4.2; 947 -5.6; 1042 -7.1; 1146 -8.8; 1261 -11.0; 1387 -12.5; 1526 -13.2; 1678 -12.6; 1846 -10.4; 2031 -8.6; 2234 -6.5; 2457 -3.8; 2703 -2.0; 2973 -1.0; 3270 -1.0; 3597 -1.6; 3957 -3.0; 4353 -5.1; 4788 -6.8; 5267 -8.2; 5793 -6.4; 6373 -7.9; 7010 -9.8; 7711 -9.3; 8482 -10.0; 9330 -11.5; 10263 -10.9; 11289 -8.6; 12418 -7.3; 13660 -9.4; 15026 -13.6; 16529 -13.9; 18182 -11.3; 20000 -13.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Cowin E7 Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Cowin E7 Pro ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 27 Hz    | 2    | 7.6 dB  |
+| Peaking | 27 Hz    | 1.96 | 7.3 dB  |
 | Peaking | 497 Hz   | 0.88 | 5.6 dB  |
-| Peaking | 1541 Hz  | 1.82 | -8.8 dB |
-| Peaking | 3114 Hz  | 1.66 | 7.9 dB  |
-| Peaking | 20977 Hz | 0.09 | -5.4 dB |
-| Peaking | 38 Hz    | 3.16 | 2.7 dB  |
-| Peaking | 69 Hz    | 1.84 | -3.3 dB |
-| Peaking | 381 Hz   | 7.18 | 1.8 dB  |
-| Peaking | 12636 Hz | 2.51 | 8.8 dB  |
-| Peaking | 13598 Hz | 1.05 | -5.0 dB |
+| Peaking | 1542 Hz  | 1.82 | -8.8 dB |
+| Peaking | 3114 Hz  | 1.65 | 7.9 dB  |
+| Peaking | 19958 Hz | 0.08 | -5.3 dB |
+| Peaking | 38 Hz    | 3.45 | 2.7 dB  |
+| Peaking | 69 Hz    | 1.86 | -3.3 dB |
+| Peaking | 380 Hz   | 7.1  | 1.8 dB  |
+| Peaking | 12606 Hz | 3.73 | 4.6 dB  |
+| Peaking | 15689 Hz | 2.57 | -3.4 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 7.8 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.7 dB |
+| Peaking | 125 Hz   | 1.41 | -0.3 dB |
+| Peaking | 250 Hz   | 1.41 | 1.2 dB  |
+| Peaking | 500 Hz   | 1.41 | 6.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 2000 Hz  | 1.41 | -3.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.8 dB |
+| Peaking | 16000 Hz | 1.41 | -8.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Cowin%20E7%20Pro/Cowin%20E7%20Pro.png)

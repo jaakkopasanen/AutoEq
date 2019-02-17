@@ -1,38 +1,56 @@
 # Beyerdynamic DT 100 2X2kOhm
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.2dB
-GraphicEQ: 21 0.0; 23 3.3; 25 2.7; 28 1.9; 31 1.3; 34 0.8; 37 0.3; 41 -0.2; 45 -0.5; 49 -0.8; 54 -1.2; 60 -1.3; 66 -1.5; 72 -1.6; 79 -1.2; 87 -2.4; 96 -1.9; 106 -0.8; 116 -4.3; 128 -7.9; 141 -8.8; 155 -8.2; 170 -7.6; 187 -9.5; 206 -9.2; 227 -8.9; 249 -8.7; 274 -8.3; 302 -7.8; 332 -7.3; 365 -6.6; 402 -6.0; 442 -5.0; 486 -4.5; 535 -3.7; 588 -2.6; 647 -1.9; 712 -1.6; 783 -1.0; 861 -0.6; 947 -0.3; 1042 0.6; 1146 0.3; 1261 0.3; 1387 -0.5; 1526 -2.3; 1678 -3.6; 1846 -4.3; 2031 -3.4; 2234 -2.0; 2457 -0.4; 2703 2.2; 2973 3.8; 3270 4.1; 3597 3.2; 3957 2.8; 4353 3.1; 4788 4.8; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 -0.6; 8482 -4.5; 9330 -5.7; 10263 -0.4; 11289 0.0
+GraphicEQ: 21 -2.6; 23 -3.3; 25 -3.9; 28 -4.6; 31 -5.2; 34 -5.8; 37 -6.2; 41 -6.7; 45 -7.1; 49 -7.4; 54 -7.7; 60 -7.8; 66 -8.0; 72 -8.1; 79 -7.7; 87 -9.0; 96 -8.4; 106 -7.3; 116 -10.8; 128 -14.4; 141 -15.3; 155 -14.8; 170 -14.2; 187 -16.0; 206 -15.7; 227 -15.4; 249 -15.2; 274 -14.9; 302 -14.3; 332 -13.8; 365 -13.2; 402 -12.5; 442 -11.6; 486 -11.0; 535 -10.2; 588 -9.1; 647 -8.4; 712 -8.1; 783 -7.5; 861 -7.1; 947 -6.8; 1042 -5.9; 1146 -6.2; 1261 -6.2; 1387 -7.1; 1526 -8.8; 1678 -10.1; 1846 -10.8; 2031 -9.9; 2234 -8.6; 2457 -6.9; 2703 -4.3; 2973 -2.7; 3270 -2.4; 3597 -3.3; 3957 -3.8; 4353 -3.4; 4788 -1.7; 5267 -0.5; 5793 -0.6; 6373 -1.1; 7010 -4.0; 7711 -7.2; 8482 -11.1; 9330 -12.3; 10263 -6.9; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Beyerdynamic DT 100 2X2kOhm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 100 2X2kOhm ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 1.64 | 4.1 dB  |
-| Peaking | 139 Hz  | 4.45 | -4.5 dB |
-| Peaking | 246 Hz  | 0.79 | -9.1 dB |
+| Peaking | 21 Hz   | 1.65 | 4.1 dB  |
+| Peaking | 139 Hz  | 4.56 | -4.5 dB |
+| Peaking | 245 Hz  | 0.79 | -9.1 dB |
 | Peaking | 5646 Hz | 1.38 | 6.8 dB  |
-| Peaking | 8852 Hz | 3.63 | -8.4 dB |
-| Peaking | 107 Hz  | 6.48 | 4.5 dB  |
-| Peaking | 113 Hz  | 2.79 | -1.7 dB |
-| Peaking | 1264 Hz | 1.44 | 4.7 dB  |
-| Peaking | 1768 Hz | 1.2  | -6.8 dB |
-| Peaking | 2976 Hz | 2.94 | 4.9 dB  |
+| Peaking | 8842 Hz | 3.48 | -8.4 dB |
+| Peaking | 107 Hz  | 6.26 | 4.6 dB  |
+| Peaking | 112 Hz  | 2.91 | -2.0 dB |
+| Peaking | 1274 Hz | 1.44 | 4.8 dB  |
+| Peaking | 1759 Hz | 1.19 | -6.9 dB |
+| Peaking | 2957 Hz | 2.85 | 4.9 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 1.7 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.1 dB  |
+| Peaking | 125 Hz   | 1.41 | -4.6 dB |
+| Peaking | 250 Hz   | 1.41 | -8.9 dB |
+| Peaking | 500 Hz   | 1.41 | -2.7 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.8 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.8 dB |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20100%202X2kOhm/Beyerdynamic%20DT%20100%202X2kOhm.png)

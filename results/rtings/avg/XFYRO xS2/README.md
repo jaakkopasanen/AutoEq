@@ -5,20 +5,18 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.0dB
-GraphicEQ: 21 0.0; 23 4.2; 25 3.9; 28 3.4; 31 3.0; 34 2.7; 37 2.4; 41 2.0; 45 1.7; 49 1.4; 54 0.9; 60 0.2; 66 -0.5; 72 -1.0; 79 -1.7; 87 -2.4; 96 -3.2; 106 -4.0; 116 -4.7; 128 -5.4; 141 -6.1; 155 -6.6; 170 -7.0; 187 -7.4; 206 -7.6; 227 -7.6; 249 -7.4; 274 -7.1; 302 -6.7; 332 -6.3; 365 -5.8; 402 -5.3; 442 -4.7; 486 -4.0; 535 -3.1; 588 -2.3; 647 -1.4; 712 -0.7; 783 -0.1; 861 0.3; 947 0.2; 1042 -0.1; 1146 -0.5; 1261 0.2; 1387 0.4; 1526 0.6; 1678 1.0; 1846 1.4; 2031 1.9; 2234 3.1; 2457 4.2; 2703 4.1; 2973 2.9; 3270 0.9; 3597 -1.2; 3957 -2.9; 4353 -4.8; 4788 -6.4; 5267 -8.6; 5793 -8.5; 6373 -5.5; 7010 -2.2; 7711 -1.2; 8482 -3.7; 9330 -4.4; 10263 -0.5; 11289 0.0; 12418 0.0; 13660 -0.4; 15026 -8.5; 16529 -14.4; 18182 -13.0; 20000 -6.0
+GraphicEQ: 21 -0.5; 23 -0.9; 25 -1.3; 28 -1.7; 31 -2.1; 34 -2.5; 37 -2.7; 41 -3.1; 45 -3.4; 49 -3.7; 54 -4.2; 60 -4.9; 66 -5.6; 72 -6.2; 79 -6.8; 87 -7.5; 96 -8.3; 106 -9.1; 116 -9.9; 128 -10.6; 141 -11.2; 155 -11.7; 170 -12.2; 187 -12.5; 206 -12.8; 227 -12.8; 249 -12.5; 274 -12.2; 302 -11.8; 332 -11.4; 365 -11.0; 402 -10.4; 442 -9.8; 486 -9.1; 535 -8.2; 588 -7.4; 647 -6.6; 712 -5.8; 783 -5.3; 861 -4.9; 947 -5.0; 1042 -5.2; 1146 -5.6; 1261 -4.9; 1387 -4.7; 1526 -4.5; 1678 -4.1; 1846 -3.7; 2031 -3.2; 2234 -2.1; 2457 -1.0; 2703 -1.0; 2973 -2.2; 3270 -4.2; 3597 -6.3; 3957 -8.1; 4353 -10.0; 4788 -11.5; 5267 -13.7; 5793 -13.7; 6373 -10.7; 7010 -7.3; 7711 -6.3; 8482 -8.8; 9330 -9.5; 10263 -5.6; 11289 -5.1; 12418 -5.1; 13660 -5.5; 15026 -13.6; 16529 -19.5; 18182 -18.1; 20000 -11.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `XFYRO xS2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-49**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `XFYRO xS2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-4.6dB**.
 
@@ -30,10 +28,27 @@ When using independent subset of filters, apply preamp of **-4.6dB**.
 | Peaking | 5293 Hz  | 2.17 | -9.2 dB  |
 | Peaking | 17569 Hz | 1.25 | -16.3 dB |
 | Peaking | 833 Hz   | 3.27 | 1.6 dB   |
-| Peaking | 7426 Hz  | 5.85 | 2.7 dB   |
-| Peaking | 9028 Hz  | 6.47 | -3.4 dB  |
-| Peaking | 12457 Hz | 1.77 | 5.6 dB   |
-| Peaking | 18593 Hz | 0.16 | -2.1 dB  |
+| Peaking | 7425 Hz  | 5.85 | 2.7 dB   |
+| Peaking | 9024 Hz  | 6.47 | -3.4 dB  |
+| Peaking | 12455 Hz | 1.77 | 5.6 dB   |
+| Peaking | 18580 Hz | 0.16 | -2.1 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 4.1 dB   |
+| Peaking | 62 Hz    | 1.41 | 0.4 dB   |
+| Peaking | 125 Hz   | 1.41 | -4.6 dB  |
+| Peaking | 250 Hz   | 1.41 | -7.4 dB  |
+| Peaking | 500 Hz   | 1.41 | -2.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | 4.5 dB   |
+| Peaking | 4000 Hz  | 1.41 | -4.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -12.8 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

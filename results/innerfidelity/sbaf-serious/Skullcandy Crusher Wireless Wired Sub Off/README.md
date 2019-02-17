@@ -1,37 +1,55 @@
 # Skullcandy Crusher Wireless Wired Sub Off
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -2.4dB
-GraphicEQ: 21 -4.9; 23 -5.4; 25 -5.7; 28 -6.2; 31 -6.6; 34 -7.0; 37 -7.3; 41 -7.5; 45 -7.5; 49 -7.5; 54 -8.2; 60 -8.0; 66 -6.7; 72 -5.3; 79 -5.9; 87 -8.3; 96 -9.3; 106 -9.0; 116 -9.4; 128 -10.6; 141 -10.9; 155 -9.9; 170 -9.5; 187 -9.3; 206 -8.2; 227 -6.8; 249 -5.5; 274 -4.2; 302 -2.9; 332 -2.1; 365 -0.9; 402 -0.1; 442 0.7; 486 1.1; 535 1.5; 588 2.3; 647 1.4; 712 0.2; 783 -0.3; 861 -0.2; 947 -0.0; 1042 -0.0; 1146 0.1; 1261 0.4; 1387 -0.0; 1526 -0.7; 1678 -1.3; 1846 -1.8; 2031 -2.1; 2234 -2.9; 2457 -3.1; 2703 -3.9; 2973 -4.7; 3270 -4.7; 3597 -4.1; 3957 -3.6; 4353 -4.4; 4788 -2.8; 5267 -0.8; 5793 -3.7; 6373 -3.6; 7010 -4.1; 7711 -5.6; 8482 -7.6; 9330 -8.8; 10263 -8.5; 11289 -6.9; 12418 -4.8; 13660 -1.9; 15026 -0.0
+GraphicEQ: 21 -7.7; 23 -8.1; 25 -8.5; 28 -9.0; 31 -9.4; 34 -9.7; 37 -10.1; 41 -10.3; 45 -10.3; 49 -10.3; 54 -11.0; 60 -10.8; 66 -9.5; 72 -8.1; 79 -8.7; 87 -11.1; 96 -12.1; 106 -11.8; 116 -12.2; 128 -13.4; 141 -13.7; 155 -12.7; 170 -12.3; 187 -12.1; 206 -11.0; 227 -9.6; 249 -8.3; 274 -7.0; 302 -5.7; 332 -4.9; 365 -3.7; 402 -2.9; 442 -2.1; 486 -1.7; 535 -1.3; 588 -0.5; 647 -1.4; 712 -2.6; 783 -3.1; 861 -3.0; 947 -2.8; 1042 -2.8; 1146 -2.7; 1261 -2.4; 1387 -2.8; 1526 -3.5; 1678 -4.1; 1846 -4.6; 2031 -4.9; 2234 -5.7; 2457 -5.9; 2703 -6.7; 2973 -7.5; 3270 -7.5; 3597 -6.9; 3957 -6.4; 4353 -7.1; 4788 -5.6; 5267 -3.6; 5793 -6.5; 6373 -6.4; 7010 -6.9; 7711 -8.4; 8482 -10.4; 9330 -11.6; 10263 -11.3; 11289 -9.7; 12418 -7.6; 13660 -4.7; 15026 -2.8; 16529 -2.8; 18182 -2.8; 20000 -2.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Skullcandy Crusher Wireless Wired Sub Off GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-23**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Crusher Wireless Wired Sub Off ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.4dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.1dB**.
+When using independent subset of filters, apply preamp of **-0.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 42 Hz    | 0.48 | -6.8 dB |
 | Peaking | 151 Hz   | 1.19 | -9.1 dB |
-| Peaking | 3143 Hz  | 1.5  | -4.4 dB |
-| Peaking | 9660 Hz  | 1.55 | -9.2 dB |
-| Peaking | 74 Hz    | 6.45 | 2.6 dB  |
-| Peaking | 92 Hz    | 5.62 | -1.8 dB |
-| Peaking | 228 Hz   | 3.59 | -1.7 dB |
-| Peaking | 536 Hz   | 1.88 | 2.8 dB  |
-| Peaking | 15287 Hz | 3.54 | 1.6 dB  |
+| Peaking | 3134 Hz  | 1.52 | -4.4 dB |
+| Peaking | 9697 Hz  | 1.43 | -9.1 dB |
+| Peaking | 77 Hz    | 6.71 | 2.5 dB  |
+| Peaking | 94 Hz    | 5.55 | -1.8 dB |
+| Peaking | 229 Hz   | 3.61 | -1.7 dB |
+| Peaking | 534 Hz   | 1.88 | 2.8 dB  |
+| Peaking | 15164 Hz | 3.34 | 1.6 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.3dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -6.9 dB |
+| Peaking | 62 Hz    | 1.41 | -3.9 dB |
+| Peaking | 125 Hz   | 1.41 | -9.8 dB |
+| Peaking | 250 Hz   | 1.41 | -4.7 dB |
+| Peaking | 500 Hz   | 1.41 | 3.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.1 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.3 dB |
+| Peaking | 8000 Hz  | 1.41 | -7.5 dB |
+| Peaking | 16000 Hz | 1.41 | -0.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Crusher%20Wireless%20Wired%20Sub%20Off/Skullcandy%20Crusher%20Wireless%20Wired%20Sub%20Off.png)

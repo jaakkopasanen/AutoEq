@@ -1,38 +1,56 @@
 # Logitech G533
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -2.4dB
-GraphicEQ: 21 -3.5; 23 -3.7; 25 -3.9; 28 -4.2; 31 -4.4; 34 -4.4; 37 -4.4; 41 -4.2; 45 -4.1; 49 -4.0; 54 -3.9; 60 -3.9; 66 -4.0; 72 -4.0; 79 -4.1; 87 -4.3; 96 -4.5; 106 -4.7; 116 -4.8; 128 -4.8; 141 -4.7; 155 -4.7; 170 -4.6; 187 -4.5; 206 -4.2; 227 -4.0; 249 -4.0; 274 -4.3; 302 -4.7; 332 -4.7; 365 -4.2; 402 -3.4; 442 -2.8; 486 -2.4; 535 -1.7; 588 -1.1; 647 -0.8; 712 -0.3; 783 0.7; 861 1.1; 947 0.3; 1042 -0.2; 1146 -0.5; 1261 -0.1; 1387 1.1; 1526 2.2; 1678 1.6; 1846 0.6; 2031 -0.2; 2234 -0.0; 2457 0.5; 2703 -2.5; 2973 -2.2; 3270 -1.7; 3597 -2.8; 3957 -3.8; 4353 -4.5; 4788 -2.5; 5267 -0.7; 5793 -1.1; 6373 -3.2; 7010 -3.0; 7711 -3.4; 8482 -6.7; 9330 -6.3; 10263 -1.0; 11289 -0.4; 12418 -5.1; 13660 -7.5; 15026 -5.5; 16529 -5.5; 18182 -10.0; 20000 -15.6
+GraphicEQ: 21 -6.2; 23 -6.5; 25 -6.7; 28 -6.9; 31 -7.1; 34 -7.2; 37 -7.1; 41 -7.0; 45 -6.8; 49 -6.7; 54 -6.7; 60 -6.7; 66 -6.7; 72 -6.7; 79 -6.9; 87 -7.0; 96 -7.3; 106 -7.4; 116 -7.5; 128 -7.5; 141 -7.5; 155 -7.5; 170 -7.4; 187 -7.2; 206 -7.0; 227 -6.7; 249 -6.7; 274 -7.1; 302 -7.4; 332 -7.4; 365 -6.9; 402 -6.1; 442 -5.5; 486 -5.1; 535 -4.4; 588 -3.9; 647 -3.5; 712 -3.1; 783 -2.0; 861 -1.6; 947 -2.4; 1042 -3.0; 1146 -3.3; 1261 -2.9; 1387 -1.7; 1526 -0.5; 1678 -1.1; 1846 -2.2; 2031 -2.9; 2234 -2.8; 2457 -2.2; 2703 -5.2; 2973 -5.0; 3270 -4.4; 3597 -5.6; 3957 -6.5; 4353 -7.2; 4788 -5.3; 5267 -3.4; 5793 -3.9; 6373 -5.9; 7010 -5.7; 7711 -6.1; 8482 -9.4; 9330 -9.0; 10263 -3.8; 11289 -3.1; 12418 -7.8; 13660 -10.2; 15026 -8.3; 16529 -8.2; 18182 -12.7; 20000 -18.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Logitech G533 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-24**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Logitech G533 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.3dB**.
+When using independent subset of filters, apply preamp of **--0.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 32 Hz    | 0.38 | -3.9 dB  |
-| Peaking | 146 Hz   | 0.84 | -3.6 dB  |
-| Peaking | 334 Hz   | 1.84 | -3.5 dB  |
-| Peaking | 7444 Hz  | 0.58 | -3.0 dB  |
-| Peaking | 20243 Hz | 0.78 | -15.3 dB |
-| Peaking | 1579 Hz  | 3.42 | 2.7 dB   |
-| Peaking | 4391 Hz  | 2.47 | -3.9 dB  |
-| Peaking | 5262 Hz  | 3    | 4.2 dB   |
-| Peaking | 8920 Hz  | 5.91 | -4.4 dB  |
-| Peaking | 10767 Hz | 6.43 | 5.0 dB   |
+| Peaking | 147 Hz   | 0.86 | -3.6 dB  |
+| Peaking | 334 Hz   | 1.86 | -3.5 dB  |
+| Peaking | 18571 Hz | 0.09 | -4.2 dB  |
+| Peaking | 19789 Hz | 0.95 | -11.2 dB |
+| Peaking | 1585 Hz  | 3.15 | 2.8 dB   |
+| Peaking | 4363 Hz  | 2.64 | -3.5 dB  |
+| Peaking | 5283 Hz  | 3.57 | 3.6 dB   |
+| Peaking | 8920 Hz  | 5.45 | -4.5 dB  |
+| Peaking | 10819 Hz | 5.38 | 5.3 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -4.3 dB |
+| Peaking | 62 Hz    | 1.41 | -2.7 dB |
+| Peaking | 125 Hz   | 1.41 | -3.8 dB |
+| Peaking | 250 Hz   | 1.41 | -3.8 dB |
+| Peaking | 500 Hz   | 1.41 | -1.7 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | 1.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | -2.8 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.5 dB |
+| Peaking | 16000 Hz | 1.41 | -9.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Logitech%20G533/Logitech%20G533.png)

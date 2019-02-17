@@ -1,38 +1,56 @@
 # Torque t402v OverEar Black
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.3dB
-GraphicEQ: 21 0.0; 23 -0.2; 25 -0.9; 28 -1.8; 31 -2.5; 34 -3.2; 37 -3.7; 41 -4.4; 45 -4.9; 49 -5.3; 54 -5.8; 60 -6.3; 66 -6.6; 72 -6.8; 79 -7.0; 87 -7.6; 96 -8.5; 106 -9.1; 116 -9.5; 128 -10.0; 141 -10.1; 155 -10.5; 170 -10.1; 187 -10.8; 206 -11.2; 227 -11.4; 249 -11.7; 274 -11.6; 302 -10.9; 332 -9.8; 365 -8.1; 402 -6.1; 442 -3.4; 486 -1.6; 535 0.4; 588 2.8; 647 4.4; 712 5.1; 783 4.7; 861 3.0; 947 1.2; 1042 -0.8; 1146 0.1; 1261 -0.8; 1387 -2.4; 1526 -4.7; 1678 -6.5; 1846 -4.4; 2031 -2.3; 2234 -2.0; 2457 -1.9; 2703 -1.3; 2973 -0.8; 3270 1.3; 3597 2.4; 3957 2.5; 4353 2.4; 4788 2.8; 5267 2.0; 5793 0.1; 6373 -4.2; 7010 -5.3; 7711 -4.9; 8482 -4.9; 9330 -1.2; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -1.2; 15026 -0.2; 16529 0.0
+GraphicEQ: 21 -5.1; 23 -5.8; 25 -6.5; 28 -7.4; 31 -8.2; 34 -8.8; 37 -9.4; 41 -10.0; 45 -10.5; 49 -11.0; 54 -11.4; 60 -11.9; 66 -12.3; 72 -12.5; 79 -12.6; 87 -13.2; 96 -14.1; 106 -14.8; 116 -15.2; 128 -15.7; 141 -15.8; 155 -16.1; 170 -15.8; 187 -16.5; 206 -16.8; 227 -17.0; 249 -17.3; 274 -17.2; 302 -16.6; 332 -15.5; 365 -13.7; 402 -11.7; 442 -9.1; 486 -7.3; 535 -5.2; 588 -2.9; 647 -1.2; 712 -0.5; 783 -0.9; 861 -2.6; 947 -4.5; 1042 -6.4; 1146 -5.6; 1261 -6.4; 1387 -8.1; 1526 -10.3; 1678 -12.2; 1846 -10.0; 2031 -7.9; 2234 -7.7; 2457 -7.5; 2703 -7.0; 2973 -6.5; 3270 -4.3; 3597 -3.2; 3957 -3.1; 4353 -3.2; 4788 -2.9; 5267 -3.7; 5793 -5.6; 6373 -9.9; 7010 -10.9; 7711 -10.6; 8482 -10.5; 9330 -6.8; 10263 -5.6; 11289 -5.6; 12418 -5.6; 13660 -6.9; 15026 -5.8; 16529 -5.6; 18182 -5.6; 20000 -5.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Torque t402v OverEar Black GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-52**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Torque t402v OverEar Black ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 127 Hz  | 0.42 | -8.5 dB |
-| Peaking | 288 Hz  | 1.13 | -7.0 dB |
+| Peaking | 125 Hz  | 0.42 | -8.4 dB |
+| Peaking | 287 Hz  | 1.11 | -7.1 dB |
 | Peaking | 675 Hz  | 1.68 | 8.3 dB  |
-| Peaking | 1666 Hz | 3.27 | -6.7 dB |
-| Peaking | 7580 Hz | 3.59 | -6.1 dB |
-| Peaking | 20 Hz   | 2.57 | 1.8 dB  |
-| Peaking | 2764 Hz | 2.52 | -2.0 dB |
-| Peaking | 3589 Hz | 2.77 | 2.9 dB  |
-| Peaking | 5028 Hz | 2.6  | 3.0 dB  |
-| Peaking | 6479 Hz | 6.84 | -3.8 dB |
+| Peaking | 1665 Hz | 3.26 | -6.7 dB |
+| Peaking | 7590 Hz | 3.48 | -6.2 dB |
+| Peaking | 18 Hz   | 2.77 | 2.5 dB  |
+| Peaking | 2753 Hz | 2.53 | -1.9 dB |
+| Peaking | 3585 Hz | 2.82 | 2.9 dB  |
+| Peaking | 5035 Hz | 2.52 | 3.1 dB  |
+| Peaking | 6504 Hz | 6.61 | -3.8 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.6dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -1.3 dB  |
+| Peaking | 62 Hz    | 1.41 | -4.9 dB  |
+| Peaking | 125 Hz   | 1.41 | -6.8 dB  |
+| Peaking | 250 Hz   | 1.41 | -12.8 dB |
+| Peaking | 500 Hz   | 1.41 | 2.4 dB   |
+| Peaking | 1000 Hz  | 1.41 | 3.1 dB   |
+| Peaking | 2000 Hz  | 1.41 | -6.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.8 dB   |
+| Peaking | 8000 Hz  | 1.41 | -5.1 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.4 dB   |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Black/Torque%20t402v%20OverEar%20Black.png)

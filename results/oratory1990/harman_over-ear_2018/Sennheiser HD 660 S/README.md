@@ -1,38 +1,56 @@
 # Sennheiser HD 660 S
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 5.8; 37 5.4; 41 4.7; 45 4.2; 49 3.7; 54 3.2; 60 2.8; 66 2.2; 72 1.9; 79 2.4; 87 1.9; 96 0.7; 106 0.2; 116 -0.3; 128 -0.7; 141 -1.3; 155 -1.7; 170 -2.0; 187 -1.9; 206 -2.1; 227 -2.1; 249 -2.1; 274 -1.9; 302 -1.6; 332 -1.1; 365 -0.7; 402 -0.4; 442 -0.4; 486 -0.2; 535 0.1; 588 0.3; 647 0.4; 712 0.2; 783 -0.2; 861 -0.3; 947 0.2; 1042 -0.4; 1146 -0.6; 1261 -0.6; 1387 -0.1; 1526 1.0; 1678 2.0; 1846 3.0; 2031 4.1; 2234 4.3; 2457 3.5; 2703 2.6; 2973 1.9; 3270 1.5; 3597 1.4; 3957 2.0; 4353 3.4; 4788 3.7; 5267 -1.3; 5793 -0.4; 6373 4.8; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 0.0; 20000 -0.2
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.7; 37 -1.1; 41 -1.8; 45 -2.3; 49 -2.8; 54 -3.3; 60 -3.7; 66 -4.3; 72 -4.6; 79 -4.1; 87 -4.6; 96 -5.8; 106 -6.3; 116 -6.8; 128 -7.2; 141 -7.8; 155 -8.2; 170 -8.5; 187 -8.4; 206 -8.6; 227 -8.6; 249 -8.6; 274 -8.4; 302 -8.1; 332 -7.6; 365 -7.2; 402 -6.9; 442 -6.9; 486 -6.7; 535 -6.4; 588 -6.2; 647 -6.1; 712 -6.3; 783 -6.7; 861 -6.8; 947 -6.3; 1042 -6.9; 1146 -7.1; 1261 -7.1; 1387 -6.6; 1526 -5.5; 1678 -4.5; 1846 -3.5; 2031 -2.4; 2234 -2.2; 2457 -3.0; 2703 -3.9; 2973 -4.6; 3270 -5.0; 3597 -5.1; 3957 -4.5; 4353 -3.1; 4788 -2.8; 5267 -7.8; 5793 -6.9; 6373 -1.7; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser HD 660 S GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 660 S ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 0.43 | 6.2 dB  |
-| Peaking | 192 Hz   | 0.95 | -2.8 dB |
-| Peaking | 2284 Hz  | 1.73 | 4.2 dB  |
-| Peaking | 6555 Hz  | 7.6  | 5.0 dB  |
+| Peaking | 24 Hz    | 0.44 | 6.2 dB  |
+| Peaking | 191 Hz   | 0.94 | -2.8 dB |
+| Peaking | 2285 Hz  | 1.73 | 4.2 dB  |
+| Peaking | 6546 Hz  | 7.61 | 5.0 dB  |
 | Peaking | 22050 Hz | 2.27 | 1.1 dB  |
-| Peaking | 628 Hz   | 1.94 | 0.9 dB  |
-| Peaking | 1670 Hz  | 0.93 | -2.7 dB |
-| Peaking | 1837 Hz  | 1.92 | 3.1 dB  |
-| Peaking | 4641 Hz  | 4.31 | 4.8 dB  |
-| Peaking | 5362 Hz  | 6.57 | -4.2 dB |
+| Peaking | 628 Hz   | 1.97 | 0.9 dB  |
+| Peaking | 1661 Hz  | 0.93 | -2.7 dB |
+| Peaking | 1841 Hz  | 1.95 | 3.1 dB  |
+| Peaking | 4635 Hz  | 4.32 | 4.8 dB  |
+| Peaking | 5355 Hz  | 6.53 | -4.2 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.3dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.0 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.0 dB |
+| Peaking | 250 Hz   | 1.41 | -2.5 dB |
+| Peaking | 500 Hz   | 1.41 | 0.8 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.4 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | 1.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20660%20S/Sennheiser%20HD%20660%20S.png)

@@ -1,38 +1,56 @@
 # Sennheiser Amperior
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.0dB
-GraphicEQ: 21 0.0; 23 3.2; 25 2.7; 28 2.0; 31 1.3; 34 0.8; 37 0.3; 41 -0.2; 45 -0.6; 49 -0.9; 54 -1.4; 60 -1.8; 66 -2.0; 72 -2.1; 79 -2.9; 87 -3.6; 96 -3.9; 106 -4.5; 116 -4.7; 128 -5.1; 141 -5.2; 155 -5.1; 170 -4.6; 187 -4.4; 206 -3.8; 227 -2.8; 249 -1.8; 274 -1.0; 302 -0.2; 332 0.6; 365 1.3; 402 1.8; 442 2.0; 486 1.7; 535 1.4; 588 1.5; 647 1.2; 712 0.9; 783 0.9; 861 0.5; 947 0.1; 1042 -0.2; 1146 -0.4; 1261 -0.9; 1387 -1.5; 1526 -2.2; 1678 -2.9; 1846 -3.3; 2031 -3.3; 2234 -2.4; 2457 -0.5; 2703 0.9; 2973 2.1; 3270 2.3; 3597 2.2; 3957 2.4; 4353 3.0; 4788 3.2; 5267 4.6; 5793 5.3; 6373 5.5; 7010 2.5; 7711 -1.0; 8482 -5.3; 9330 -4.5; 10263 -0.2; 11289 0.0
+GraphicEQ: 21 -2.1; 23 -2.7; 25 -3.3; 28 -4.0; 31 -4.6; 34 -5.2; 37 -5.6; 41 -6.1; 45 -6.5; 49 -6.9; 54 -7.3; 60 -7.8; 66 -7.9; 72 -8.1; 79 -8.9; 87 -9.6; 96 -9.9; 106 -10.5; 116 -10.7; 128 -11.1; 141 -11.2; 155 -11.1; 170 -10.6; 187 -10.4; 206 -9.8; 227 -8.8; 249 -7.8; 274 -6.9; 302 -6.2; 332 -5.4; 365 -4.7; 402 -4.2; 442 -4.0; 486 -4.3; 535 -4.5; 588 -4.4; 647 -4.7; 712 -5.0; 783 -5.1; 861 -5.5; 947 -5.9; 1042 -6.1; 1146 -6.4; 1261 -6.8; 1387 -7.5; 1526 -8.2; 1678 -8.9; 1846 -9.3; 2031 -9.2; 2234 -8.3; 2457 -6.5; 2703 -5.1; 2973 -3.9; 3270 -3.7; 3597 -3.8; 3957 -3.6; 4353 -3.0; 4788 -2.7; 5267 -1.4; 5793 -0.6; 6373 -0.5; 7010 -3.4; 7711 -6.9; 8482 -11.3; 9330 -10.5; 10263 -6.2; 11289 -6.0; 12418 -6.0; 13660 -6.0; 15026 -6.0; 16529 -6.0; 18182 -6.0; 20000 -6.0
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser Amperior GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-59**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser Amperior ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.2dB**.
+When using independent subset of filters, apply preamp of **-5.4dB**.
 
-| Type    | Fc      |    Q | Gain     |
-|:--------|:--------|:-----|:---------|
-| Peaking | 21 Hz   | 1.98 | 4.1 dB   |
-| Peaking | 129 Hz  | 1.13 | -5.7 dB  |
-| Peaking | 1886 Hz | 2.6  | -4.4 dB  |
-| Peaking | 6555 Hz | 0.97 | 7.6 dB   |
-| Peaking | 8577 Hz | 2.62 | -11.2 dB |
-| Peaking | 209 Hz  | 2.52 | -1.8 dB  |
-| Peaking | 444 Hz  | 1.05 | 2.4 dB   |
-| Peaking | 1391 Hz | 2.71 | -0.8 dB  |
-| Peaking | 3040 Hz | 6.04 | 1.3 dB   |
-| Peaking | 4686 Hz | 4.6  | -0.7 dB  |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 21 Hz    | 1.98 | 4.0 dB   |
+| Peaking | 130 Hz   | 1.12 | -5.7 dB  |
+| Peaking | 1889 Hz  | 2.58 | -4.4 dB  |
+| Peaking | 6567 Hz  | 0.94 | 7.7 dB   |
+| Peaking | 8668 Hz  | 2.5  | -11.4 dB |
+| Peaking | 210 Hz   | 2.64 | -1.8 dB  |
+| Peaking | 452 Hz   | 0.96 | 2.8 dB   |
+| Peaking | 2606 Hz  | 0.09 | -0.5 dB  |
+| Peaking | 3042 Hz  | 4.32 | 1.6 dB   |
+| Peaking | 10209 Hz | 4.75 | 1.7 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 2.3 dB  |
+| Peaking | 62 Hz    | 1.41 | -1.4 dB |
+| Peaking | 125 Hz   | 1.41 | -5.5 dB |
+| Peaking | 250 Hz   | 1.41 | -1.5 dB |
+| Peaking | 500 Hz   | 1.41 | 2.8 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.5 dB |
+| Peaking | 16000 Hz | 1.41 | -0.0 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20Amperior/Sennheiser%20Amperior.png)

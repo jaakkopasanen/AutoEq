@@ -1,24 +1,22 @@
 # 64 Audio N8
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.9dB
-GraphicEQ: 21 0.0; 23 -0.3; 25 -0.8; 28 -0.8; 31 -0.9; 34 -1.0; 37 -1.1; 41 -1.2; 45 -1.4; 49 -1.5; 54 -1.8; 60 -2.0; 66 -2.4; 72 -2.4; 79 -2.7; 87 -2.8; 96 -2.3; 106 -2.8; 116 -2.6; 128 -2.8; 141 -2.8; 155 -2.7; 170 -2.8; 187 -2.9; 206 -2.9; 227 -2.9; 249 -2.9; 274 -2.9; 302 -2.8; 332 -2.8; 365 -2.6; 402 -2.5; 442 -2.4; 486 -2.2; 535 -2.0; 588 -1.7; 647 -1.4; 712 -1.0; 783 -0.5; 861 -0.1; 947 0.0; 1042 -0.2; 1146 -0.9; 1261 -1.9; 1387 -2.7; 1526 -3.0; 1678 -2.9; 1846 -2.7; 2031 -2.4; 2234 -1.9; 2457 -1.1; 2703 -0.0; 2973 0.9; 3270 1.5; 3597 1.7; 3957 1.3; 4353 0.8; 4788 0.2; 5267 0.7; 5793 4.2; 6373 4.6; 7010 2.4; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 -1.9; 15026 -4.2; 16529 -1.0; 18182 0.0
+GraphicEQ: 21 -4.4; 23 -5.4; 25 -5.9; 28 -5.9; 31 -6.0; 34 -6.1; 37 -6.2; 41 -6.3; 45 -6.5; 49 -6.6; 54 -6.9; 60 -7.1; 66 -7.6; 72 -7.5; 79 -7.8; 87 -7.9; 96 -7.4; 106 -7.9; 116 -7.7; 128 -7.9; 141 -7.9; 155 -7.8; 170 -7.9; 187 -8.0; 206 -8.0; 227 -8.0; 249 -8.0; 274 -8.0; 302 -7.9; 332 -7.9; 365 -7.7; 402 -7.6; 442 -7.5; 486 -7.3; 535 -7.1; 588 -6.8; 647 -6.5; 712 -6.1; 783 -5.6; 861 -5.2; 947 -5.1; 1042 -5.3; 1146 -6.0; 1261 -7.0; 1387 -7.8; 1526 -8.1; 1678 -8.0; 1846 -7.8; 2031 -7.5; 2234 -7.0; 2457 -6.2; 2703 -5.1; 2973 -4.2; 3270 -3.6; 3597 -3.4; 3957 -3.8; 4353 -4.3; 4788 -4.9; 5267 -4.4; 5793 -0.9; 6373 -0.5; 7010 -2.7; 7711 -4.8; 8482 -5.1; 9330 -5.1; 10263 -5.1; 11289 -5.1; 12418 -5.1; 13660 -7.0; 15026 -9.4; 16529 -6.1; 18182 -5.1; 20000 -5.1
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `64 Audio N8 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-49**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `64 Audio N8 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.2dB**.
 
@@ -26,13 +24,33 @@ When using independent subset of filters, apply preamp of **-5.2dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 115 Hz   | 0.43 | -2.7 dB |
 | Peaking | 361 Hz   | 1.05 | -1.7 dB |
-| Peaking | 1658 Hz  | 2.37 | -3.3 dB |
-| Peaking | 6163 Hz  | 4.08 | 5.2 dB  |
-| Peaking | 14872 Hz | 3.92 | -4.8 dB |
-| Peaking | 940 Hz   | 2.45 | 2.4 dB  |
-| Peaking | 965 Hz   | 1.29 | -1.4 dB |
-| Peaking | 2270 Hz  | 4.93 | -1.2 dB |
-| Peaking | 3405 Hz  | 2.36 | 1.9 dB  |
-| Peaking | 5017 Hz  | 8    | -1.6 dB |
+| Peaking | 1659 Hz  | 2.36 | -3.3 dB |
+| Peaking | 6189 Hz  | 3.98 | 5.2 dB  |
+| Peaking | 14932 Hz | 3.3  | -4.8 dB |
+| Peaking | 944 Hz   | 2.46 | 2.3 dB  |
+| Peaking | 962 Hz   | 1.26 | -1.3 dB |
+| Peaking | 2286 Hz  | 4.87 | -1.2 dB |
+| Peaking | 3411 Hz  | 2.32 | 1.9 dB  |
+| Peaking | 5008 Hz  | 7.88 | -1.6 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -0.4 dB |
+| Peaking | 62 Hz    | 1.41 | -1.9 dB |
+| Peaking | 125 Hz   | 1.41 | -2.2 dB |
+| Peaking | 250 Hz   | 1.41 | -2.5 dB |
+| Peaking | 500 Hz   | 1.41 | -1.7 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -3.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/64%20Audio%20N8/64%20Audio%20N8.png)

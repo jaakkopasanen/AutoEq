@@ -5,6 +5,10 @@ can be found in the [full index](https://github.com/jaakkopasanen/AutoEq/blob/ma
 Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com. This means if there are
 measurements from multiple sources for the same headphone model only the highest priority result will be shown
 in this list.
+
+This list has 1430 headphone models covered but if your headphone is missing you can create settings for it
+yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
+
 - [1MORE Crystal Piston](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Crystal%20Piston)
 - [1MORE MK801](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20MK801)
 - [1MORE Multi Unit Earphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Multi%20Unit%20Earphones)
@@ -953,7 +957,7 @@ in this list.
 - [RHA T20 Bass Filter](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20T20%20Bass%20Filter)
 - [RHA T20 Reference Filter](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20T20%20Reference%20Filter)
 - [RHA T20 Treble Filter](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20T20%20Treble%20Filter)
-- [Rock Jaw Alpha Genus Black Filter (Left Channel Only, black filter in right ear faulty)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Rock%20Jaw%20Alpha%20Genus%20Black%20Filter%20(Left%20Channel%20Only,%20black%20filter%20in%20right%20ear%20faulty))
+- [Rock Jaw Alpha Genus Black Filter](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Rock%20Jaw%20Alpha%20Genus%20Black%20Filter)
 - [Rock Jaw Alpha Genus Silver Filters](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Rock%20Jaw%20Alpha%20Genus%20Silver%20Filters)
 - [Rock Zircon](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Rock%20Zircon)
 - [RockIt Sounds R30](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RockIt%20Sounds%20R30)

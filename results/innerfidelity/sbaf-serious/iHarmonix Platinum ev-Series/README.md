@@ -1,38 +1,56 @@
 # iHarmonix Platinum ev-Series
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.4dB
-GraphicEQ: 21 -10.0; 23 -10.0; 25 -10.0; 28 -10.0; 31 -10.0; 34 -10.0; 37 -10.0; 41 -10.0; 45 -10.1; 49 -10.1; 54 -10.2; 60 -10.2; 66 -10.3; 72 -10.4; 79 -10.6; 87 -10.6; 96 -10.7; 106 -10.7; 116 -10.6; 128 -10.5; 141 -10.4; 155 -10.1; 170 -9.8; 187 -9.5; 206 -9.1; 227 -8.6; 249 -8.2; 274 -7.6; 302 -6.9; 332 -6.5; 365 -5.7; 402 -5.2; 442 -4.2; 486 -3.6; 535 -3.1; 588 -2.1; 647 -1.6; 712 -1.2; 783 -0.4; 861 -0.3; 947 -0.2; 1042 -0.3; 1146 -0.6; 1261 -0.7; 1387 -1.1; 1526 -1.5; 1678 -1.8; 1846 -1.9; 2031 -2.0; 2234 -2.2; 2457 -2.1; 2703 -2.0; 2973 0.4; 3270 3.3; 3597 4.3; 3957 2.8; 4353 -1.2; 4788 -5.8; 5267 -6.9; 5793 -0.9; 6373 2.2; 7010 2.3; 7711 0.1; 8482 -2.0; 9330 -0.1; 10263 0.0
+GraphicEQ: 21 -14.8; 23 -14.8; 25 -14.8; 28 -14.8; 31 -14.8; 34 -14.8; 37 -14.8; 41 -14.8; 45 -14.9; 49 -14.9; 54 -15.0; 60 -15.0; 66 -15.1; 72 -15.2; 79 -15.4; 87 -15.4; 96 -15.5; 106 -15.5; 116 -15.4; 128 -15.3; 141 -15.2; 155 -14.9; 170 -14.6; 187 -14.3; 206 -13.9; 227 -13.4; 249 -13.0; 274 -12.4; 302 -11.7; 332 -11.3; 365 -10.5; 402 -10.0; 442 -9.0; 486 -8.4; 535 -7.9; 588 -6.9; 647 -6.5; 712 -6.0; 783 -5.2; 861 -5.2; 947 -5.0; 1042 -5.1; 1146 -5.4; 1261 -5.5; 1387 -5.9; 1526 -6.3; 1678 -6.6; 1846 -6.7; 2031 -6.8; 2234 -7.0; 2457 -6.9; 2703 -6.8; 2973 -4.4; 3270 -1.5; 3597 -0.5; 3957 -2.0; 4353 -6.0; 4788 -10.7; 5267 -11.7; 5793 -5.7; 6373 -2.6; 7010 -2.5; 7711 -4.7; 8482 -6.8; 9330 -4.9; 10263 -4.8; 11289 -4.8; 12418 -4.8; 13660 -4.8; 15026 -4.8; 16529 -4.8; 18182 -4.8; 20000 -4.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `iHarmonix Platinum ev-Series GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `iHarmonix Platinum ev-Series ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.0dB**.
+When using independent subset of filters, apply preamp of **-4.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 30 Hz   | 0.15 | -9.8 dB  |
-| Peaking | 198 Hz  | 0.58 | -4.7 dB  |
-| Peaking | 2665 Hz | 1.34 | -9.8 dB  |
-| Peaking | 3379 Hz | 1.12 | 11.4 dB  |
-| Peaking | 4961 Hz | 4.27 | -11.7 dB |
-| Peaking | 392 Hz  | 2.47 | -0.7 dB  |
-| Peaking | 839 Hz  | 1.88 | 1.1 dB   |
-| Peaking | 1611 Hz | 3.67 | -0.9 dB  |
-| Peaking | 6669 Hz | 6.61 | 3.2 dB   |
-| Peaking | 8460 Hz | 5.27 | -2.7 dB  |
+| Peaking | 30 Hz   | 0.16 | -9.7 dB  |
+| Peaking | 198 Hz  | 0.58 | -4.8 dB  |
+| Peaking | 2628 Hz | 1.34 | -9.4 dB  |
+| Peaking | 3421 Hz | 1.1  | 11.0 dB  |
+| Peaking | 4974 Hz | 4.15 | -11.9 dB |
+| Peaking | 852 Hz  | 2.58 | 1.2 dB   |
+| Peaking | 1616 Hz | 4.93 | -0.8 dB  |
+| Peaking | 5354 Hz | 5.64 | -1.8 dB  |
+| Peaking | 6499 Hz | 3.89 | 3.3 dB   |
+| Peaking | 8354 Hz | 4.53 | -2.9 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -10.1 dB |
+| Peaking | 62 Hz    | 1.41 | -7.3 dB  |
+| Peaking | 125 Hz   | 1.41 | -8.6 dB  |
+| Peaking | 250 Hz   | 1.41 | -6.7 dB  |
+| Peaking | 500 Hz   | 1.41 | -2.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.9 dB   |
+| Peaking | 2000 Hz  | 1.41 | -2.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 0.6 dB   |
+| Peaking | 8000 Hz  | 1.41 | -0.5 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.1 dB   |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/iHarmonix%20Platinum%20ev-Series/iHarmonix%20Platinum%20ev-Series.png)

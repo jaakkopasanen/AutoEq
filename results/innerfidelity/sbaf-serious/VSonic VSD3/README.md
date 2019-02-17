@@ -1,36 +1,54 @@
 # VSonic VSD3
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.5dB
-GraphicEQ: 21 -0.1; 23 -0.5; 25 -0.8; 28 -1.2; 31 -1.5; 34 -1.8; 37 -2.0; 41 -2.3; 45 -2.5; 49 -2.7; 54 -3.0; 60 -3.3; 66 -3.6; 72 -3.9; 79 -4.2; 87 -4.6; 96 -5.0; 106 -5.2; 116 -5.2; 128 -5.4; 141 -5.5; 155 -5.5; 170 -5.4; 187 -5.3; 206 -5.2; 227 -4.9; 249 -4.7; 274 -4.3; 302 -4.0; 332 -3.7; 365 -3.3; 402 -3.0; 442 -2.5; 486 -2.3; 535 -1.9; 588 -1.2; 647 -0.9; 712 -0.7; 783 -0.2; 861 -0.2; 947 -0.0; 1042 0.0; 1146 -0.1; 1261 -0.1; 1387 -0.1; 1526 0.1; 1678 0.2; 1846 0.6; 2031 1.1; 2234 1.6; 2457 2.5; 2703 2.7; 2973 3.7; 3270 4.8; 3597 5.4; 3957 4.6; 4353 2.3; 4788 0.7; 5267 -0.4; 5793 -1.6; 6373 -0.6; 7010 1.6; 7711 0.3; 8482 0.0; 9330 -2.5; 10263 -5.3; 11289 -4.4; 12418 -1.2; 13660 0.0
+GraphicEQ: 21 -6.0; 23 -6.4; 25 -6.7; 28 -7.1; 31 -7.4; 34 -7.7; 37 -7.9; 41 -8.2; 45 -8.4; 49 -8.6; 54 -8.9; 60 -9.2; 66 -9.5; 72 -9.8; 79 -10.1; 87 -10.5; 96 -10.9; 106 -11.1; 116 -11.1; 128 -11.3; 141 -11.4; 155 -11.4; 170 -11.3; 187 -11.2; 206 -11.1; 227 -10.8; 249 -10.6; 274 -10.2; 302 -9.9; 332 -9.6; 365 -9.2; 402 -8.9; 442 -8.4; 486 -8.2; 535 -7.8; 588 -7.1; 647 -6.8; 712 -6.6; 783 -6.1; 861 -6.1; 947 -5.9; 1042 -5.9; 1146 -6.0; 1261 -6.0; 1387 -6.0; 1526 -5.8; 1678 -5.7; 1846 -5.3; 2031 -4.8; 2234 -4.3; 2457 -3.4; 2703 -3.2; 2973 -2.2; 3270 -1.1; 3597 -0.5; 3957 -1.3; 4353 -3.6; 4788 -5.2; 5267 -6.3; 5793 -7.5; 6373 -6.5; 7010 -4.3; 7711 -5.6; 8482 -5.9; 9330 -8.4; 10263 -11.2; 11289 -10.3; 12418 -7.1; 13660 -5.9; 15026 -5.9; 16529 -5.9; 18182 -5.9; 20000 -5.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `VSonic VSD3 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-55**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `VSonic VSD3 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 99 Hz    | 0.51 | -3.8 dB |
-| Peaking | 234 Hz   | 0.65 | -3.1 dB |
-| Peaking | 3526 Hz  | 1.58 | 5.5 dB  |
-| Peaking | 5488 Hz  | 3.86 | -2.9 dB |
-| Peaking | 10590 Hz | 3.99 | -6.2 dB |
-| Peaking | 837 Hz   | 3.73 | 0.5 dB  |
-| Peaking | 6189 Hz  | 6.98 | -1.5 dB |
-| Peaking | 6976 Hz  | 4.87 | 1.9 dB  |
+| Peaking | 98 Hz    | 0.51 | -3.7 dB |
+| Peaking | 231 Hz   | 0.64 | -3.2 dB |
+| Peaking | 3525 Hz  | 1.58 | 5.5 dB  |
+| Peaking | 5490 Hz  | 3.83 | -2.9 dB |
+| Peaking | 10599 Hz | 3.72 | -6.2 dB |
+| Peaking | 835 Hz   | 3.57 | 0.5 dB  |
+| Peaking | 6139 Hz  | 7.75 | -1.5 dB |
+| Peaking | 7006 Hz  | 4.9  | 1.8 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -0.9 dB |
+| Peaking | 62 Hz    | 1.41 | -2.7 dB |
+| Peaking | 125 Hz   | 1.41 | -4.7 dB |
+| Peaking | 250 Hz   | 1.41 | -4.0 dB |
+| Peaking | 500 Hz   | 1.41 | -1.3 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.0 dB  |
+| Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.6 dB |
+| Peaking | 16000 Hz | 1.41 | -0.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/VSonic%20VSD3/VSonic%20VSD3.png)

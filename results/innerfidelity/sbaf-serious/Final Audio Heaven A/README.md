@@ -1,38 +1,56 @@
 # Final Audio Heaven A
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.1dB
-GraphicEQ: 21 0.0; 23 4.6; 25 4.3; 28 3.8; 31 3.4; 34 3.1; 37 2.8; 41 2.4; 45 2.1; 49 1.7; 54 1.4; 60 0.9; 66 0.5; 72 0.1; 79 -0.4; 87 -0.8; 96 -1.4; 106 -1.6; 116 -1.9; 128 -2.3; 141 -2.6; 155 -2.7; 170 -2.9; 187 -3.0; 206 -3.1; 227 -3.0; 249 -2.9; 274 -2.8; 302 -2.6; 332 -2.4; 365 -2.2; 402 -1.9; 442 -1.4; 486 -1.2; 535 -0.9; 588 -0.3; 647 -0.1; 712 0.0; 783 0.4; 861 0.3; 947 0.1; 1042 -0.2; 1146 -0.4; 1261 -0.6; 1387 -1.2; 1526 -1.6; 1678 -2.0; 1846 -2.3; 2031 -2.4; 2234 -2.6; 2457 -2.8; 2703 -2.9; 2973 -1.6; 3270 0.8; 3597 3.3; 3957 3.8; 4353 2.6; 4788 1.9; 5267 1.4; 5793 -1.3; 6373 -5.9; 7010 -3.9; 7711 -2.2; 8482 -3.6; 9330 -2.2; 10263 0.0
+GraphicEQ: 21 -0.5; 23 -0.8; 25 -1.1; 28 -1.6; 31 -2.0; 34 -2.3; 37 -2.6; 41 -3.0; 45 -3.3; 49 -3.6; 54 -4.0; 60 -4.4; 66 -4.9; 72 -5.3; 79 -5.7; 87 -6.2; 96 -6.7; 106 -7.0; 116 -7.2; 128 -7.6; 141 -7.9; 155 -8.1; 170 -8.3; 187 -8.3; 206 -8.4; 227 -8.3; 249 -8.3; 274 -8.2; 302 -8.0; 332 -7.8; 365 -7.5; 402 -7.2; 442 -6.8; 486 -6.6; 535 -6.2; 588 -5.7; 647 -5.5; 712 -5.3; 783 -5.0; 861 -5.0; 947 -5.2; 1042 -5.5; 1146 -5.7; 1261 -6.0; 1387 -6.5; 1526 -7.0; 1678 -7.4; 1846 -7.6; 2031 -7.8; 2234 -8.0; 2457 -8.2; 2703 -8.2; 2973 -7.0; 3270 -4.5; 3597 -2.1; 3957 -1.6; 4353 -2.8; 4788 -3.5; 5267 -4.0; 5793 -6.7; 6373 -11.2; 7010 -9.3; 7711 -7.6; 8482 -8.9; 9330 -7.6; 10263 -5.4; 11289 -5.4; 12418 -5.4; 13660 -5.4; 15026 -5.4; 16529 -5.4; 18182 -5.4; 20000 -5.4
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Final Audio Heaven A GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-50**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Final Audio Heaven A ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.9dB**.
+When using independent subset of filters, apply preamp of **-5.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 17 Hz   | 0.47 | 5.0 dB  |
-| Peaking | 190 Hz  | 0.65 | -3.4 dB |
-| Peaking | 2629 Hz | 1.15 | -8.8 dB |
-| Peaking | 3975 Hz | 0.77 | 10.2 dB |
-| Peaking | 6601 Hz | 1.53 | -9.1 dB |
-| Peaking | 833 Hz  | 2.3  | 1.0 dB  |
-| Peaking | 1852 Hz | 1.34 | -1.1 dB |
-| Peaking | 2207 Hz | 3.54 | 1.2 dB  |
-| Peaking | 8622 Hz | 2.47 | 2.2 dB  |
-| Peaking | 8798 Hz | 6.32 | -4.4 dB |
+| Peaking | 18 Hz   | 0.49 | 5.0 dB  |
+| Peaking | 189 Hz  | 0.66 | -3.4 dB |
+| Peaking | 2619 Hz | 1.22 | -7.9 dB |
+| Peaking | 3974 Hz | 0.87 | 9.0 dB  |
+| Peaking | 6625 Hz | 1.66 | -8.2 dB |
+| Peaking | 813 Hz  | 2.59 | 1.0 dB  |
+| Peaking | 1587 Hz | 4.52 | -0.8 dB |
+| Peaking | 7566 Hz | 8.7  | 2.2 dB  |
+| Peaking | 8956 Hz | 4.61 | -3.1 dB |
+| Peaking | 9817 Hz | 4.03 | 1.8 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 4.3 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.3 dB  |
+| Peaking | 125 Hz   | 1.41 | -2.2 dB |
+| Peaking | 250 Hz   | 1.41 | -2.9 dB |
+| Peaking | 500 Hz   | 1.41 | -0.6 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.2 dB |
+| Peaking | 16000 Hz | 1.41 | 0.6 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Final%20Audio%20Heaven%20A/Final%20Audio%20Heaven%20A.png)

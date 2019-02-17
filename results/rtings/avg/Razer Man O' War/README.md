@@ -1,38 +1,56 @@
 # Razer Man O' War
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.7dB
-GraphicEQ: 21 0.0; 23 -0.0; 25 -1.1; 28 -2.5; 31 -3.6; 34 -4.5; 37 -5.1; 41 -5.7; 45 -6.1; 49 -6.4; 54 -6.5; 60 -6.6; 66 -6.7; 72 -6.8; 79 -7.0; 87 -7.2; 96 -7.4; 106 -7.5; 116 -7.6; 128 -7.7; 141 -7.7; 155 -7.6; 170 -7.2; 187 -6.7; 206 -6.3; 227 -7.4; 249 -7.0; 274 -6.2; 302 -5.4; 332 -4.1; 365 -3.4; 402 -3.3; 442 -3.6; 486 -3.1; 535 -1.1; 588 0.4; 647 0.1; 712 -1.3; 783 -1.1; 861 -0.6; 947 -0.2; 1042 0.0; 1146 0.2; 1261 0.6; 1387 0.9; 1526 1.3; 1678 1.0; 1846 1.3; 2031 2.0; 2234 4.3; 2457 3.1; 2703 1.5; 2973 0.6; 3270 1.1; 3597 3.6; 3957 3.1; 4353 -0.6; 4788 -0.4; 5267 -0.7; 5793 -0.6; 6373 -1.6; 7010 0.5; 7711 -2.5; 8482 -6.6; 9330 -5.9; 10263 -1.6; 11289 0.0; 12418 -0.2; 13660 -3.8; 15026 -6.9; 16529 -5.9; 18182 -3.9; 20000 -4.2
+GraphicEQ: 21 -3.6; 23 -4.8; 25 -5.9; 28 -7.3; 31 -8.4; 34 -9.2; 37 -9.8; 41 -10.5; 45 -10.9; 49 -11.1; 54 -11.2; 60 -11.3; 66 -11.5; 72 -11.6; 79 -11.7; 87 -11.9; 96 -12.1; 106 -12.2; 116 -12.4; 128 -12.5; 141 -12.5; 155 -12.4; 170 -12.0; 187 -11.4; 206 -11.0; 227 -12.1; 249 -11.7; 274 -11.0; 302 -10.1; 332 -8.9; 365 -8.1; 402 -8.1; 442 -8.3; 486 -7.9; 535 -5.8; 588 -4.4; 647 -4.6; 712 -6.0; 783 -5.9; 861 -5.4; 947 -5.0; 1042 -4.7; 1146 -4.5; 1261 -4.2; 1387 -3.8; 1526 -3.5; 1678 -3.7; 1846 -3.5; 2031 -2.8; 2234 -0.5; 2457 -1.7; 2703 -3.3; 2973 -4.1; 3270 -3.6; 3597 -1.2; 3957 -1.7; 4353 -5.3; 4788 -5.2; 5267 -5.4; 5793 -5.3; 6373 -6.3; 7010 -4.3; 7711 -7.2; 8482 -11.4; 9330 -10.6; 10263 -6.4; 11289 -4.8; 12418 -4.9; 13660 -8.5; 15026 -11.7; 16529 -10.6; 18182 -8.6; 20000 -9.0
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Razer Man O' War GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-46**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Razer Man O' War ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 48 Hz    | 1.11 | -4.7 dB |
+| Peaking | 48 Hz    | 1.1  | -4.7 dB |
 | Peaking | 119 Hz   | 0.78 | -6.4 dB |
-| Peaking | 260 Hz   | 1.32 | -4.2 dB |
-| Peaking | 16037 Hz | 0.86 | -5.7 dB |
-| Peaking | 20989 Hz | 1.89 | -4.5 dB |
-| Peaking | 3016 Hz  | 0.76 | 3.4 dB  |
-| Peaking | 7157 Hz  | 5.28 | 4.0 dB  |
-| Peaking | 8787 Hz  | 3.76 | -5.3 dB |
-| Peaking | 8876 Hz  | 0.6  | -3.9 dB |
-| Peaking | 11494 Hz | 2.01 | 6.6 dB  |
+| Peaking | 259 Hz   | 1.31 | -4.3 dB |
+| Peaking | 16071 Hz | 0.72 | -5.8 dB |
+| Peaking | 20467 Hz | 1.51 | -4.3 dB |
+| Peaking | 3056 Hz  | 0.75 | 3.5 dB  |
+| Peaking | 7164 Hz  | 5.23 | 4.0 dB  |
+| Peaking | 8796 Hz  | 3.55 | -5.5 dB |
+| Peaking | 9193 Hz  | 0.51 | -4.0 dB |
+| Peaking | 11525 Hz | 1.75 | 7.0 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -2.4 dB |
+| Peaking | 62 Hz    | 1.41 | -5.7 dB |
+| Peaking | 125 Hz   | 1.41 | -6.1 dB |
+| Peaking | 250 Hz   | 1.41 | -5.7 dB |
+| Peaking | 500 Hz   | 1.41 | -0.6 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.2 dB |
+| Peaking | 2000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | 1.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.6 dB |
+| Peaking | 16000 Hz | 1.41 | -7.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Razer%20Man%20O'%20War/Razer%20Man%20O'%20War.png)

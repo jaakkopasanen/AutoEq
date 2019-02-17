@@ -1,38 +1,56 @@
 # Yamaha YH100 Sn130216
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 5.9; 34 5.8; 37 5.6; 41 5.4; 45 5.3; 49 5.2; 54 5.1; 60 5.0; 66 4.9; 72 4.7; 79 4.5; 87 4.2; 96 3.8; 106 3.6; 116 3.4; 128 3.1; 141 2.8; 155 2.6; 170 2.5; 187 2.4; 206 2.2; 227 2.2; 249 2.2; 274 2.2; 302 2.3; 332 2.1; 365 2.0; 402 1.9; 442 1.9; 486 1.5; 535 1.3; 588 1.2; 647 0.8; 712 0.2; 783 -0.1; 861 -0.6; 947 -0.1; 1042 0.6; 1146 2.2; 1261 5.1; 1387 6.0; 1526 6.0; 1678 6.0; 1846 5.9; 2031 3.5; 2234 1.2; 2457 4.1; 2703 5.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.6; 34 -0.7; 37 -0.9; 41 -1.1; 45 -1.2; 49 -1.3; 54 -1.4; 60 -1.5; 66 -1.6; 72 -1.8; 79 -2.0; 87 -2.3; 96 -2.7; 106 -2.9; 116 -3.1; 128 -3.4; 141 -3.7; 155 -3.9; 170 -4.0; 187 -4.1; 206 -4.3; 227 -4.3; 249 -4.3; 274 -4.3; 302 -4.2; 332 -4.4; 365 -4.5; 402 -4.6; 442 -4.6; 486 -5.0; 535 -5.2; 588 -5.3; 647 -5.7; 712 -6.3; 783 -6.6; 861 -7.1; 947 -6.6; 1042 -5.9; 1146 -4.3; 1261 -1.4; 1387 -0.5; 1526 -0.5; 1678 -0.5; 1846 -0.6; 2031 -3.0; 2234 -5.3; 2457 -2.4; 2703 -1.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Yamaha YH100 Sn130216 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yamaha YH100 Sn130216 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 19 Hz   | 0.7  | 3.9 dB  |
-| Peaking | 60 Hz   | 0.39 | 4.1 dB  |
-| Peaking | 338 Hz  | 1.57 | 1.4 dB  |
-| Peaking | 1526 Hz | 2.64 | 5.8 dB  |
-| Peaking | 4145 Hz | 1.03 | 6.7 dB  |
-| Peaking | 921 Hz  | 3.15 | -1.9 dB |
-| Peaking | 1271 Hz | 7.26 | 1.9 dB  |
-| Peaking | 4258 Hz | 5.71 | -1.2 dB |
-| Peaking | 6347 Hz | 2.54 | 4.6 dB  |
-| Peaking | 7526 Hz | 1.78 | -3.8 dB |
+| Peaking | 20 Hz   | 0.68 | 4.0 dB  |
+| Peaking | 60 Hz   | 0.4  | 4.0 dB  |
+| Peaking | 339 Hz  | 1.57 | 1.4 dB  |
+| Peaking | 1525 Hz | 2.64 | 5.8 dB  |
+| Peaking | 4156 Hz | 1.01 | 6.7 dB  |
+| Peaking | 919 Hz  | 3.24 | -1.9 dB |
+| Peaking | 1283 Hz | 8.15 | 1.9 dB  |
+| Peaking | 4282 Hz | 5.51 | -1.2 dB |
+| Peaking | 6384 Hz | 2.42 | 4.7 dB  |
+| Peaking | 7471 Hz | 1.75 | -4.0 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.1 dB  |
+| Peaking | 62 Hz    | 1.41 | 3.8 dB  |
+| Peaking | 125 Hz   | 1.41 | 2.1 dB  |
+| Peaking | 250 Hz   | 1.41 | 1.7 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.7 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | 4.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 6.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20YH100%20Sn130216/Yamaha%20YH100%20Sn130216.png)

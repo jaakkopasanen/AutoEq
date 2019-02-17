@@ -1,38 +1,56 @@
 # Jaybird X4
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.8dB
-GraphicEQ: 21 -1.4; 23 -1.3; 25 -1.3; 28 -1.2; 31 -1.1; 34 -1.0; 37 -1.0; 41 -1.0; 45 -1.0; 49 -0.9; 54 -0.9; 60 -1.1; 66 -1.3; 72 -1.4; 79 -1.5; 87 -1.8; 96 -1.9; 106 -2.2; 116 -3.0; 128 -4.1; 141 -5.0; 155 -5.2; 170 -5.1; 187 -4.9; 206 -4.7; 227 -4.3; 249 -3.9; 274 -3.4; 302 -2.9; 332 -2.4; 365 -1.9; 402 -1.5; 442 -0.9; 486 -0.4; 535 0.1; 588 0.7; 647 1.1; 712 1.5; 783 1.7; 861 1.6; 947 0.7; 1042 -0.6; 1146 -1.7; 1261 -2.2; 1387 -2.6; 1526 -2.9; 1678 -3.2; 1846 -3.6; 2031 -4.3; 2234 -4.7; 2457 -5.1; 2703 -5.0; 2973 -3.7; 3270 -2.1; 3597 -0.9; 3957 -0.2; 4353 -0.2; 4788 -0.0; 5267 -0.7; 5793 -3.1; 6373 -9.6; 7010 -8.4; 7711 -1.6; 8482 0.0; 9330 0.0; 10263 -2.2; 11289 -7.0; 12418 -8.1; 13660 -7.3; 15026 -7.9; 16529 -5.4; 18182 -0.4; 20000 0.0
+GraphicEQ: 21 -3.6; 23 -3.6; 25 -3.5; 28 -3.4; 31 -3.3; 34 -3.2; 37 -3.2; 41 -3.2; 45 -3.2; 49 -3.1; 54 -3.1; 60 -3.3; 66 -3.5; 72 -3.6; 79 -3.8; 87 -4.0; 96 -4.1; 106 -4.4; 116 -5.2; 128 -6.3; 141 -7.2; 155 -7.5; 170 -7.3; 187 -7.1; 206 -6.9; 227 -6.6; 249 -6.1; 274 -5.6; 302 -5.1; 332 -4.6; 365 -4.1; 402 -3.7; 442 -3.2; 486 -2.6; 535 -2.1; 588 -1.6; 647 -1.1; 712 -0.7; 783 -0.5; 861 -0.7; 947 -1.5; 1042 -2.8; 1146 -3.9; 1261 -4.5; 1387 -4.8; 1526 -5.1; 1678 -5.4; 1846 -5.8; 2031 -6.5; 2234 -6.9; 2457 -7.3; 2703 -7.2; 2973 -5.9; 3270 -4.3; 3597 -3.1; 3957 -2.4; 4353 -2.4; 4788 -2.2; 5267 -2.9; 5793 -5.4; 6373 -11.8; 7010 -10.6; 7711 -3.8; 8482 -2.2; 9330 -2.2; 10263 -4.4; 11289 -9.2; 12418 -10.3; 13660 -9.5; 15026 -10.1; 16529 -7.6; 18182 -2.6; 20000 -2.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Jaybird X4 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-18**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Jaybird X4 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-2.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 178 Hz   | 0.84 | -5.2 dB  |
-| Peaking | 740 Hz   | 2.23 | 2.8 dB   |
-| Peaking | 2165 Hz  | 1.39 | -5.0 dB  |
-| Peaking | 6619 Hz  | 7.36 | -10.9 dB |
-| Peaking | 13943 Hz | 1.48 | -8.9 dB  |
-| Peaking | 23 Hz    | 1.16 | -1.3 dB  |
-| Peaking | 2763 Hz  | 5.85 | -1.7 dB  |
-| Peaking | 4172 Hz  | 2.85 | 1.6 dB   |
-| Peaking | 9302 Hz  | 3.68 | 3.2 dB   |
-| Peaking | 11505 Hz | 5.5  | -3.8 dB  |
+| Peaking | 173 Hz   | 0.91 | -5.0 dB  |
+| Peaking | 766 Hz   | 1.21 | 5.5 dB   |
+| Peaking | 1645 Hz  | 0.31 | -4.3 dB  |
+| Peaking | 12061 Hz | 3.53 | -5.9 dB  |
+| Peaking | 15071 Hz | 1.54 | -7.6 dB  |
+| Peaking | 23 Hz    | 1.09 | -1.3 dB  |
+| Peaking | 2582 Hz  | 2.51 | -2.9 dB  |
+| Peaking | 4559 Hz  | 1.13 | 4.1 dB   |
+| Peaking | 6649 Hz  | 4.23 | -12.3 dB |
+| Peaking | 8385 Hz  | 2.93 | 3.6 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -1.3 dB |
+| Peaking | 62 Hz    | 1.41 | 0.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -3.5 dB |
+| Peaking | 250 Hz   | 1.41 | -4.2 dB |
+| Peaking | 500 Hz   | 1.41 | 1.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -5.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.9 dB |
+| Peaking | 16000 Hz | 1.41 | -8.8 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Jaybird%20X4/Jaybird%20X4.png)

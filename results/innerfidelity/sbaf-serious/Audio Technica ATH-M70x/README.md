@@ -1,38 +1,56 @@
 # Audio Technica ATH-M70x
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.1dB
-GraphicEQ: 21 -0.7; 23 -1.2; 25 -1.6; 28 -2.0; 31 -2.4; 34 -2.6; 37 -2.7; 41 -2.8; 45 -2.7; 49 -2.3; 54 -1.6; 60 -0.9; 66 -0.3; 72 0.9; 79 2.5; 87 3.7; 96 2.8; 106 0.0; 116 -1.9; 128 -1.7; 141 0.1; 155 1.5; 170 1.4; 187 -0.8; 206 0.1; 227 0.2; 249 0.2; 274 0.4; 302 0.7; 332 0.9; 365 1.2; 402 1.4; 442 1.7; 486 1.8; 535 2.1; 588 2.8; 647 3.7; 712 2.4; 783 1.6; 861 0.7; 947 0.2; 1042 -0.1; 1146 -0.4; 1261 -0.7; 1387 -1.4; 1526 -2.3; 1678 -3.2; 1846 -3.6; 2031 -3.5; 2234 -2.8; 2457 -1.3; 2703 0.6; 2973 1.3; 3270 0.3; 3597 -0.5; 3957 -1.1; 4353 -4.2; 4788 -3.8; 5267 -1.1; 5793 3.0; 6373 4.0; 7010 2.4; 7711 -0.7; 8482 -4.1; 9330 -5.6; 10263 -3.7; 11289 -0.0
+GraphicEQ: 21 -5.3; 23 -5.7; 25 -6.1; 28 -6.6; 31 -6.9; 34 -7.1; 37 -7.2; 41 -7.3; 45 -7.2; 49 -6.8; 54 -6.1; 60 -5.4; 66 -4.8; 72 -3.6; 79 -2.0; 87 -0.9; 96 -1.8; 106 -4.5; 116 -6.4; 128 -6.2; 141 -4.4; 155 -3.0; 170 -3.1; 187 -5.3; 206 -4.4; 227 -4.3; 249 -4.4; 274 -4.1; 302 -3.8; 332 -3.6; 365 -3.3; 402 -3.2; 442 -2.8; 486 -2.7; 535 -2.5; 588 -1.7; 647 -0.9; 712 -2.1; 783 -2.9; 861 -3.9; 947 -4.3; 1042 -4.6; 1146 -4.9; 1261 -5.3; 1387 -5.9; 1526 -6.8; 1678 -7.7; 1846 -8.1; 2031 -8.0; 2234 -7.3; 2457 -5.8; 2703 -3.9; 2973 -3.2; 3270 -4.2; 3597 -5.0; 3957 -5.6; 4353 -8.7; 4788 -8.3; 5267 -5.6; 5793 -1.5; 6373 -0.5; 7010 -2.1; 7711 -5.2; 8482 -8.6; 9330 -10.1; 10263 -8.3; 11289 -4.5; 12418 -4.5; 13660 -4.5; 15026 -4.5; 16529 -4.5; 18182 -4.5; 20000 -4.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio Technica ATH-M70x GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-41**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M70x ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.3dB**.
+When using independent subset of filters, apply preamp of **-4.1dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 87 Hz    | 6.99 | 4.3 dB   |
-| Peaking | 1817 Hz  | 0.99 | -9.3 dB  |
-| Peaking | 4659 Hz  | 2.37 | -11.4 dB |
-| Peaking | 6623 Hz  | 0.36 | 30.3 dB  |
-| Peaking | 8576 Hz  | 0.54 | -29.2 dB |
-| Peaking | 38 Hz    | 1.49 | -3.1 dB  |
-| Peaking | 234 Hz   | 2.11 | -0.5 dB  |
-| Peaking | 635 Hz   | 4.38 | 1.9 dB   |
-| Peaking | 926 Hz   | 3.6  | -1.2 dB  |
-| Peaking | 11363 Hz | 7.46 | 2.1 dB   |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 87 Hz   | 6.88 | 4.0 dB   |
+| Peaking | 1890 Hz | 0.78 | -13.6 dB |
+| Peaking | 2685 Hz | 0.28 | 10.7 dB  |
+| Peaking | 4506 Hz | 3.08 | -9.9 dB  |
+| Peaking | 9266 Hz | 2.38 | -10.1 dB |
+| Peaking | 37 Hz   | 1.52 | -3.1 dB  |
+| Peaking | 237 Hz  | 2.08 | -0.6 dB  |
+| Peaking | 641 Hz  | 4.57 | 2.0 dB   |
+| Peaking | 936 Hz  | 3.46 | -1.2 dB  |
+| Peaking | 6366 Hz | 7.5  | 2.2 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -3.5 dB |
+| Peaking | 62 Hz    | 1.41 | 1.1 dB  |
+| Peaking | 125 Hz   | 1.41 | 0.1 dB  |
+| Peaking | 250 Hz   | 1.41 | -0.3 dB |
+| Peaking | 500 Hz   | 1.41 | 2.8 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.4 dB |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Audio%20Technica%20ATH-M70x/Audio%20Technica%20ATH-M70x.png)

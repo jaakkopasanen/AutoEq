@@ -1,18 +1,16 @@
 # Sennheiser RS 180
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.2dB
-GraphicEQ: 21 0.0; 23 2.0; 25 1.3; 28 0.5; 31 -0.2; 34 -0.8; 37 -1.3; 41 -1.8; 45 -2.3; 49 -2.7; 54 -2.9; 60 -3.1; 66 -4.0; 72 -4.3; 79 -4.3; 87 -4.8; 96 -5.1; 106 -5.4; 116 -5.3; 128 -5.4; 141 -5.6; 155 -5.7; 170 -5.7; 187 -5.8; 206 -5.5; 227 -4.9; 249 -4.6; 274 -4.5; 302 -4.0; 332 -3.6; 365 -3.3; 402 -3.0; 442 -2.7; 486 -2.3; 535 -2.0; 588 -1.8; 647 -1.4; 712 -1.4; 783 -0.5; 861 0.7; 947 0.2; 1042 0.1; 1146 0.4; 1261 0.7; 1387 1.0; 1526 -0.7; 1678 -3.0; 1846 -4.8; 2031 -5.9; 2234 -6.1; 2457 -4.3; 2703 -1.3; 2973 2.3; 3270 -2.3; 3597 1.9; 3957 1.1; 4353 -0.2; 4788 -5.2; 5267 -4.1; 5793 -2.1; 6373 -3.0; 7010 2.2; 7711 -1.7; 8482 -7.1; 9330 -8.3; 10263 -2.8; 11289 0.0
+GraphicEQ: 21 -0.5; 23 -1.2; 25 -1.9; 28 -2.7; 31 -3.4; 34 -4.0; 37 -4.5; 41 -5.0; 45 -5.5; 49 -5.9; 54 -6.1; 60 -6.3; 66 -7.2; 72 -7.5; 79 -7.5; 87 -8.0; 96 -8.3; 106 -8.6; 116 -8.5; 128 -8.6; 141 -8.8; 155 -8.9; 170 -8.9; 187 -9.0; 206 -8.7; 227 -8.1; 249 -7.8; 274 -7.7; 302 -7.2; 332 -6.8; 365 -6.5; 402 -6.2; 442 -5.9; 486 -5.5; 535 -5.2; 588 -5.0; 647 -4.6; 712 -4.6; 783 -3.6; 861 -2.5; 947 -3.0; 1042 -3.1; 1146 -2.8; 1261 -2.5; 1387 -2.2; 1526 -3.9; 1678 -6.2; 1846 -8.0; 2031 -9.1; 2234 -9.3; 2457 -7.5; 2703 -4.5; 2973 -0.9; 3270 -5.5; 3597 -1.3; 3957 -2.1; 4353 -3.4; 4788 -8.4; 5267 -7.3; 5793 -5.3; 6373 -6.1; 7010 -1.0; 7711 -4.9; 8482 -10.3; 9330 -11.5; 10263 -6.0; 11289 -3.2; 12418 -3.2; 13660 -3.2; 15026 -3.2; 16529 -3.2; 18182 -3.2; 20000 -3.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser RS 180 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-31**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser RS 180 ParametricEQ.txt`.
@@ -29,10 +27,30 @@ When using independent subset of filters, apply preamp of **-0.1dB**.
 | Peaking | 2107 Hz  | 3.68 | -6.8 dB |
 | Peaking | 9040 Hz  | 4.45 | -9.5 dB |
 | Peaking | 22050 Hz | 2.17 | -5.7 dB |
-| Peaking | 21 Hz    | 2.62 | 3.4 dB  |
-| Peaking | 1266 Hz  | 3.77 | 1.8 dB  |
-| Peaking | 4147 Hz  | 2.78 | 5.3 dB  |
-| Peaking | 4835 Hz  | 2.86 | -7.6 dB |
-| Peaking | 7041 Hz  | 9.9  | 4.7 dB  |
+| Peaking | 21 Hz    | 2.47 | 3.4 dB  |
+| Peaking | 1265 Hz  | 3.77 | 1.8 dB  |
+| Peaking | 4163 Hz  | 2.74 | 5.5 dB  |
+| Peaking | 4823 Hz  | 2.84 | -7.8 dB |
+| Peaking | 7038 Hz  | 9.9  | 4.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 0.9 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.2 dB |
+| Peaking | 125 Hz   | 1.41 | -4.9 dB |
+| Peaking | 250 Hz   | 1.41 | -3.9 dB |
+| Peaking | 500 Hz   | 1.41 | -1.9 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 2000 Hz  | 1.41 | -5.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.6 dB |
+| Peaking | 16000 Hz | 1.41 | 0.5 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20RS%20180/Sennheiser%20RS%20180.png)

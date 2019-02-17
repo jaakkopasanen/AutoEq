@@ -1,18 +1,16 @@
 # Skullcandy Roc Nation Aviator
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 5.9; 28 5.3; 31 4.3; 34 3.2; 37 2.2; 41 1.1; 45 0.1; 49 -0.7; 54 -1.5; 60 -2.4; 66 -3.1; 72 -3.7; 79 -4.3; 87 -4.9; 96 -5.5; 106 -5.7; 116 -5.8; 128 -6.1; 141 -6.2; 155 -6.3; 170 -6.2; 187 -6.1; 206 -6.1; 227 -5.7; 249 -5.6; 274 -5.3; 302 -5.0; 332 -4.7; 365 -4.4; 402 -4.2; 442 -3.8; 486 -3.6; 535 -3.0; 588 -2.3; 647 -2.2; 712 -1.4; 783 0.3; 861 0.6; 947 0.8; 1042 0.1; 1146 -0.1; 1261 -0.7; 1387 -2.6; 1526 -3.7; 1678 -4.1; 1846 -4.1; 2031 -3.6; 2234 -2.9; 2457 -2.0; 2703 -2.0; 2973 -2.9; 3270 -3.7; 3597 -3.3; 3957 -4.6; 4353 -8.3; 4788 -7.8; 5267 -3.7; 5793 -0.1; 6373 0.7; 7010 0.8; 7711 0.0; 8482 -4.1; 9330 -6.5; 10263 -5.4; 11289 -2.7; 12418 -0.2; 13660 -0.7; 15026 -0.9; 16529 0.0; 18182 0.0; 20000 -0.3
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.6; 28 -1.2; 31 -2.2; 34 -3.3; 37 -4.3; 41 -5.4; 45 -6.4; 49 -7.2; 54 -8.0; 60 -8.9; 66 -9.6; 72 -10.2; 79 -10.8; 87 -11.4; 96 -12.0; 106 -12.2; 116 -12.3; 128 -12.6; 141 -12.7; 155 -12.8; 170 -12.7; 187 -12.6; 206 -12.6; 227 -12.2; 249 -12.1; 274 -11.8; 302 -11.5; 332 -11.2; 365 -10.9; 402 -10.7; 442 -10.3; 486 -10.1; 535 -9.5; 588 -8.8; 647 -8.7; 712 -7.9; 783 -6.2; 861 -5.9; 947 -5.7; 1042 -6.4; 1146 -6.6; 1261 -7.2; 1387 -9.1; 1526 -10.2; 1678 -10.6; 1846 -10.6; 2031 -10.1; 2234 -9.4; 2457 -8.5; 2703 -8.5; 2973 -9.4; 3270 -10.2; 3597 -9.8; 3957 -11.1; 4353 -14.8; 4788 -14.3; 5267 -10.2; 5793 -6.6; 6373 -5.8; 7010 -5.7; 7711 -6.5; 8482 -10.6; 9330 -13.0; 10263 -11.9; 11289 -9.2; 12418 -6.7; 13660 -7.2; 15026 -7.4; 16529 -6.5; 18182 -6.5; 20000 -6.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Skullcandy Roc Nation Aviator GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Roc Nation Aviator ParametricEQ.txt`.
@@ -20,19 +18,39 @@ In case of using Peace, click *Import* in Peace GUI and select `Skullcandy Roc N
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.5dB**.
+When using independent subset of filters, apply preamp of **-6.1dB**.
+
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 25 Hz   | 0.98 | 7.1 dB  |
+| Peaking | 151 Hz  | 0.41 | -6.7 dB |
+| Peaking | 1853 Hz | 2.34 | -4.1 dB |
+| Peaking | 4458 Hz | 3.9  | -8.9 dB |
+| Peaking | 9661 Hz | 3.75 | -7.0 dB |
+| Peaking | 562 Hz  | 0.99 | -3.4 dB |
+| Peaking | 872 Hz  | 0.63 | 4.1 dB  |
+| Peaking | 1456 Hz | 3.74 | -2.6 dB |
+| Peaking | 4394 Hz | 0.38 | -1.6 dB |
+| Peaking | 6544 Hz | 2.33 | 3.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.8dB** and set
+gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 0.97 | 7.2 dB  |
-| Peaking | 151 Hz   | 0.41 | -6.7 dB |
-| Peaking | 1834 Hz  | 2.46 | -4.1 dB |
-| Peaking | 4460 Hz  | 3.23 | -8.6 dB |
-| Peaking | 21963 Hz | 1.44 | -4.9 dB |
-| Peaking | 820 Hz   | 0.85 | -2.7 dB |
-| Peaking | 898 Hz   | 1.68 | 4.9 dB  |
-| Peaking | 3142 Hz  | 7.38 | -1.8 dB |
-| Peaking | 7059 Hz  | 2.09 | 3.7 dB  |
-| Peaking | 9396 Hz  | 2.66 | -7.8 dB |
+| Peaking | 31 Hz    | 1.41 | 6.0 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.3 dB |
+| Peaking | 125 Hz   | 1.41 | -5.5 dB |
+| Peaking | 250 Hz   | 1.41 | -4.7 dB |
+| Peaking | 500 Hz   | 1.41 | -2.6 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.0 dB |
+| Peaking | 4000 Hz  | 1.41 | -4.4 dB |
+| Peaking | 8000 Hz  | 1.41 | -1.9 dB |
+| Peaking | 16000 Hz | 1.41 | -0.7 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Roc%20Nation%20Aviator/Skullcandy%20Roc%20Nation%20Aviator.png)

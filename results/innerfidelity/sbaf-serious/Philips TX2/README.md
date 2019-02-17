@@ -1,38 +1,56 @@
 # Philips TX2
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.7dB
-GraphicEQ: 21 -6.5; 23 -6.5; 25 -6.5; 28 -6.5; 31 -6.5; 34 -6.4; 37 -6.4; 41 -6.4; 45 -6.4; 49 -6.4; 54 -6.4; 60 -6.5; 66 -6.5; 72 -6.6; 79 -6.7; 87 -6.8; 96 -6.9; 106 -6.8; 116 -6.6; 128 -6.6; 141 -6.4; 155 -6.2; 170 -5.9; 187 -5.5; 206 -5.2; 227 -4.6; 249 -4.2; 274 -3.7; 302 -3.2; 332 -2.7; 365 -2.2; 402 -1.8; 442 -1.3; 486 -0.4; 535 -0.4; 588 0.3; 647 0.6; 712 0.6; 783 0.8; 861 0.6; 947 0.3; 1042 -0.2; 1146 -0.5; 1261 -1.1; 1387 -1.8; 1526 -2.6; 1678 -3.3; 1846 -3.8; 2031 -4.2; 2234 -4.2; 2457 -3.0; 2703 -1.4; 2973 0.9; 3270 2.8; 3597 3.5; 3957 2.5; 4353 -0.3; 4788 -2.2; 5267 -3.6; 5793 -3.8; 6373 -3.5; 7010 -1.5; 7711 -0.7; 8482 -1.5; 9330 -1.4; 10263 -0.1
+GraphicEQ: 21 -10.5; 23 -10.5; 25 -10.5; 28 -10.5; 31 -10.4; 34 -10.4; 37 -10.4; 41 -10.4; 45 -10.4; 49 -10.4; 54 -10.4; 60 -10.5; 66 -10.5; 72 -10.6; 79 -10.7; 87 -10.8; 96 -10.9; 106 -10.8; 116 -10.6; 128 -10.6; 141 -10.4; 155 -10.2; 170 -9.9; 187 -9.5; 206 -9.1; 227 -8.6; 249 -8.2; 274 -7.7; 302 -7.2; 332 -6.7; 365 -6.2; 402 -5.8; 442 -5.2; 486 -4.4; 535 -4.3; 588 -3.7; 647 -3.4; 712 -3.4; 783 -3.1; 861 -3.4; 947 -3.7; 1042 -4.1; 1146 -4.5; 1261 -5.1; 1387 -5.8; 1526 -6.6; 1678 -7.3; 1846 -7.8; 2031 -8.2; 2234 -8.2; 2457 -7.0; 2703 -5.3; 2973 -3.0; 3270 -1.1; 3597 -0.5; 3957 -1.5; 4353 -4.2; 4788 -6.2; 5267 -7.5; 5793 -7.8; 6373 -7.5; 7010 -5.4; 7711 -4.7; 8482 -5.4; 9330 -5.4; 10263 -4.1; 11289 -4.0; 12418 -4.0; 13660 -4.0; 15026 -4.0; 16529 -4.0; 18182 -4.0; 20000 -4.0
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Philips TX2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-36**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Philips TX2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-3.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 60 Hz   | 0.25 | -7.2 dB |
-| Peaking | 2093 Hz | 2.04 | -5.0 dB |
-| Peaking | 3548 Hz | 2.73 | 5.4 dB  |
-| Peaking | 5554 Hz | 2.28 | -4.6 dB |
-| Peaking | 8989 Hz | 6.77 | -1.2 dB |
-| Peaking | 18 Hz   | 1.07 | -1.8 dB |
-| Peaking | 55 Hz   | 0.88 | 1.2 dB  |
-| Peaking | 172 Hz  | 0.63 | -1.0 dB |
-| Peaking | 686 Hz  | 1.11 | 1.9 dB  |
-| Peaking | 1499 Hz | 3.35 | -1.2 dB |
+| Peaking | 2094 Hz | 2.04 | -5.0 dB |
+| Peaking | 3556 Hz | 2.7  | 5.4 dB  |
+| Peaking | 5558 Hz | 2.24 | -4.6 dB |
+| Peaking | 8933 Hz | 6.21 | -1.1 dB |
+| Peaking | 16 Hz   | 1.09 | -1.9 dB |
+| Peaking | 52 Hz   | 0.84 | 1.2 dB  |
+| Peaking | 180 Hz  | 0.67 | -1.0 dB |
+| Peaking | 687 Hz  | 1.11 | 1.9 dB  |
+| Peaking | 1479 Hz | 3.38 | -1.2 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -6.5 dB |
+| Peaking | 62 Hz    | 1.41 | -4.7 dB |
+| Peaking | 125 Hz   | 1.41 | -5.6 dB |
+| Peaking | 250 Hz   | 1.41 | -3.5 dB |
+| Peaking | 500 Hz   | 1.41 | 0.5 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.7 dB |
+| Peaking | 16000 Hz | 1.41 | 0.4 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Philips%20TX2/Philips%20TX2.png)

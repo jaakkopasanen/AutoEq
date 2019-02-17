@@ -1,38 +1,56 @@
 # Bose QuietControl 30
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.7dB
-GraphicEQ: 21 -3.5; 23 -3.6; 25 -3.7; 28 -3.7; 31 -3.6; 34 -3.4; 37 -3.2; 41 -2.9; 45 -2.6; 49 -2.3; 54 -2.1; 60 -2.1; 66 -2.2; 72 -2.2; 79 -2.4; 87 -2.6; 96 -2.7; 106 -2.9; 116 -3.0; 128 -3.0; 141 -3.0; 155 -2.9; 170 -2.7; 187 -2.4; 206 -2.1; 227 -1.8; 249 -1.6; 274 -1.5; 302 -1.4; 332 -1.4; 365 -1.4; 402 -1.2; 442 -0.7; 486 -0.0; 535 0.7; 588 1.1; 647 1.4; 712 1.5; 783 1.6; 861 1.1; 947 0.4; 1042 -0.2; 1146 -0.4; 1261 -0.5; 1387 -0.5; 1526 -0.9; 1678 -1.8; 1846 -2.9; 2031 -3.2; 2234 -2.0; 2457 -0.7; 2703 -0.3; 2973 -0.6; 3270 -0.9; 3597 -1.3; 3957 -2.3; 4353 -4.8; 4788 -4.0; 5267 -3.1; 5793 -1.5; 6373 -0.9; 7010 1.4; 7711 0.3; 8482 0.0; 9330 0.0; 10263 -1.8; 11289 -0.0; 12418 0.0; 13660 0.0; 15026 -3.5; 16529 -2.8; 18182 0.0
+GraphicEQ: 21 -5.6; 23 -5.7; 25 -5.8; 28 -5.8; 31 -5.7; 34 -5.5; 37 -5.3; 41 -5.0; 45 -4.7; 49 -4.5; 54 -4.3; 60 -4.2; 66 -4.3; 72 -4.4; 79 -4.5; 87 -4.7; 96 -4.9; 106 -5.0; 116 -5.1; 128 -5.1; 141 -5.1; 155 -5.0; 170 -4.8; 187 -4.5; 206 -4.2; 227 -4.0; 249 -3.8; 274 -3.6; 302 -3.5; 332 -3.5; 365 -3.5; 402 -3.3; 442 -2.8; 486 -2.1; 535 -1.5; 588 -1.0; 647 -0.7; 712 -0.6; 783 -0.5; 861 -1.0; 947 -1.7; 1042 -2.3; 1146 -2.5; 1261 -2.6; 1387 -2.6; 1526 -3.0; 1678 -3.9; 1846 -5.0; 2031 -5.3; 2234 -4.2; 2457 -2.8; 2703 -2.4; 2973 -2.7; 3270 -3.0; 3597 -3.4; 3957 -4.4; 4353 -6.9; 4788 -6.1; 5267 -5.2; 5793 -3.6; 6373 -3.0; 7010 -0.7; 7711 -1.8; 8482 -2.1; 9330 -2.1; 10263 -3.9; 11289 -2.1; 12418 -2.1; 13660 -2.1; 15026 -5.6; 16529 -4.9; 18182 -2.1; 20000 -2.1
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Bose QuietControl 30 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-17**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bose QuietControl 30 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-1.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-2.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-0.0dB**.
+When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
 | Peaking | 25 Hz    |  0.7  | -3.6 dB |
-| Peaking | 138 Hz   |  0.82 | -2.9 dB |
+| Peaking | 138 Hz   |  0.81 | -2.9 dB |
 | Peaking | 1952 Hz  |  3.99 | -3.4 dB |
-| Peaking | 4572 Hz  |  3.48 | -5.0 dB |
-| Peaking | 15710 Hz |  4.37 | -4.8 dB |
-| Peaking | 370 Hz   |  2.42 | -1.0 dB |
-| Peaking | 683 Hz   |  2.14 | 2.1 dB  |
-| Peaking | 5474 Hz  |  7.87 | -0.8 dB |
-| Peaking | 7183 Hz  |  8.72 | 1.9 dB  |
-| Peaking | 10287 Hz | 12.55 | -1.8 dB |
+| Peaking | 4573 Hz  |  3.44 | -5.0 dB |
+| Peaking | 15648 Hz |  3.57 | -4.8 dB |
+| Peaking | 370 Hz   |  2.46 | -1.0 dB |
+| Peaking | 684 Hz   |  2.15 | 2.1 dB  |
+| Peaking | 7123 Hz  |  9.71 | 1.9 dB  |
+| Peaking | 10293 Hz | 10.08 | -1.8 dB |
+| Peaking | 13302 Hz |  3.68 | 0.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -3.9 dB |
+| Peaking | 62 Hz    | 1.41 | -1.0 dB |
+| Peaking | 125 Hz   | 1.41 | -2.7 dB |
+| Peaking | 250 Hz   | 1.41 | -1.7 dB |
+| Peaking | 500 Hz   | 1.41 | 0.7 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.0 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.7 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.6 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 16000 Hz | 1.41 | -2.9 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Bose%20QuietControl%2030/Bose%20QuietControl%2030.png)

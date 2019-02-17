@@ -1,38 +1,56 @@
 # Etymotic ER-6i- Black
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 5.9; 41 5.7; 45 5.5; 49 5.3; 54 5.0; 60 4.6; 66 4.3; 72 4.0; 79 3.7; 87 3.1; 96 2.8; 106 2.6; 116 2.3; 128 2.0; 141 1.7; 155 1.5; 170 1.3; 187 1.2; 206 1.1; 227 0.8; 249 0.9; 274 0.9; 302 1.1; 332 1.3; 365 1.4; 402 1.1; 442 1.0; 486 1.1; 535 1.2; 588 1.4; 647 1.4; 712 1.4; 783 1.3; 861 1.0; 947 0.4; 1042 -0.4; 1146 -1.0; 1261 -1.7; 1387 -2.6; 1526 -3.7; 1678 -4.5; 1846 -5.1; 2031 -5.5; 2234 -5.3; 2457 -4.5; 2703 -3.0; 2973 -0.9; 3270 1.4; 3597 2.9; 3957 2.2; 4353 0.5; 4788 0.4; 5267 2.7; 5793 5.1; 6373 5.5; 7010 2.5; 7711 0.3; 8482 -2.1; 9330 -0.9; 10263 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.6; 41 -0.8; 45 -1.0; 49 -1.2; 54 -1.5; 60 -1.9; 66 -2.2; 72 -2.5; 79 -2.8; 87 -3.4; 96 -3.7; 106 -3.9; 116 -4.2; 128 -4.5; 141 -4.8; 155 -5.0; 170 -5.2; 187 -5.3; 206 -5.4; 227 -5.7; 249 -5.6; 274 -5.6; 302 -5.4; 332 -5.2; 365 -5.1; 402 -5.4; 442 -5.5; 486 -5.4; 535 -5.3; 588 -5.1; 647 -5.1; 712 -5.1; 783 -5.2; 861 -5.5; 947 -6.1; 1042 -6.9; 1146 -7.5; 1261 -8.2; 1387 -9.1; 1526 -10.2; 1678 -11.0; 1846 -11.6; 2031 -12.0; 2234 -11.8; 2457 -11.0; 2703 -9.5; 2973 -7.4; 3270 -5.1; 3597 -3.6; 3957 -4.3; 4353 -6.0; 4788 -6.1; 5267 -3.8; 5793 -1.4; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -8.6; 9330 -7.4; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Etymotic ER-6i- Black GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Etymotic ER-6i- Black ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 17 Hz   | 0.17 | 6.2 dB  |
+| Peaking | 16 Hz   | 0.17 | 6.2 dB  |
 | Peaking | 2062 Hz | 1.71 | -6.2 dB |
-| Peaking | 3550 Hz | 4.41 | 4.1 dB  |
-| Peaking | 6148 Hz | 3.65 | 6.4 dB  |
-| Peaking | 8675 Hz | 5.53 | -3.0 dB |
-| Peaking | 360 Hz  | 4.05 | 0.8 dB  |
-| Peaking | 710 Hz  | 1.4  | 1.7 dB  |
-| Peaking | 1254 Hz | 3.25 | -0.7 dB |
-| Peaking | 1540 Hz | 5.83 | -0.9 dB |
-| Peaking | 9892 Hz | 5.99 | 0.3 dB  |
+| Peaking | 3558 Hz | 4.39 | 4.1 dB  |
+| Peaking | 6142 Hz | 3.58 | 6.4 dB  |
+| Peaking | 8661 Hz | 5.41 | -3.1 dB |
+| Peaking | 359 Hz  | 3.82 | 0.9 dB  |
+| Peaking | 578 Hz  | 2.3  | 1.0 dB  |
+| Peaking | 797 Hz  | 2.48 | 1.3 dB  |
+| Peaking | 1464 Hz | 3.87 | -1.0 dB |
+| Peaking | 9889 Hz | 4.92 | 0.3 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 3.3 dB  |
+| Peaking | 125 Hz   | 1.41 | 1.2 dB  |
+| Peaking | 250 Hz   | 1.41 | 0.3 dB  |
+| Peaking | 500 Hz   | 1.41 | 1.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | -7.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Etymotic%20ER-6i-%20Black/Etymotic%20ER-6i-%20Black.png)

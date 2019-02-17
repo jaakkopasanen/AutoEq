@@ -1,38 +1,56 @@
 # AKG K240 MKII
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 5.7; 49 5.0; 54 4.2; 60 3.1; 66 2.2; 72 1.3; 79 0.5; 87 -0.5; 96 -1.3; 106 -2.2; 116 -2.8; 128 -3.4; 141 -3.9; 155 -4.1; 170 -4.1; 187 -4.0; 206 -3.5; 227 -3.4; 249 -3.3; 274 -3.5; 302 -3.6; 332 -3.6; 365 -3.5; 402 -3.4; 442 -3.3; 486 -2.3; 535 -1.5; 588 -1.8; 647 -1.6; 712 -1.2; 783 -0.9; 861 -0.5; 947 -0.2; 1042 0.2; 1146 0.7; 1261 1.0; 1387 1.5; 1526 2.2; 1678 1.8; 1846 0.9; 2031 -0.3; 2234 -1.1; 2457 -1.4; 2703 -1.7; 2973 -1.0; 3270 0.7; 3597 3.7; 3957 0.2; 4353 0.6; 4788 1.3; 5267 3.3; 5793 3.3; 6373 0.9; 7010 -0.8; 7711 -2.9; 8482 -5.4; 9330 -6.5; 10263 -4.3; 11289 -0.8; 12418 -0.0; 13660 -1.5; 15026 -1.1; 16529 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.8; 49 -1.5; 54 -2.3; 60 -3.4; 66 -4.3; 72 -5.2; 79 -6.0; 87 -7.0; 96 -7.8; 106 -8.7; 116 -9.3; 128 -9.9; 141 -10.4; 155 -10.6; 170 -10.6; 187 -10.5; 206 -10.0; 227 -9.9; 249 -9.8; 274 -10.0; 302 -10.1; 332 -10.1; 365 -10.0; 402 -9.9; 442 -9.8; 486 -8.8; 535 -8.0; 588 -8.3; 647 -8.1; 712 -7.7; 783 -7.4; 861 -7.0; 947 -6.7; 1042 -6.3; 1146 -5.8; 1261 -5.5; 1387 -5.0; 1526 -4.3; 1678 -4.7; 1846 -5.6; 2031 -6.8; 2234 -7.6; 2457 -7.9; 2703 -8.2; 2973 -7.5; 3270 -5.8; 3597 -2.8; 3957 -6.3; 4353 -5.9; 4788 -5.2; 5267 -3.2; 5793 -3.2; 6373 -5.6; 7010 -7.3; 7711 -9.4; 8482 -11.9; 9330 -13.0; 10263 -10.8; 11289 -7.3; 12418 -6.5; 13660 -8.0; 15026 -7.6; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `AKG K240 MKII GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `AKG K240 MKII ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 34 Hz   | 0.46 | 7.0 dB  |
-| Peaking | 137 Hz  | 0.7  | -5.4 dB |
-| Peaking | 382 Hz  | 1.54 | -2.5 dB |
-| Peaking | 5560 Hz | 2.95 | 4.2 dB  |
-| Peaking | 9050 Hz | 2.69 | -7.1 dB |
-| Peaking | 1592 Hz | 1.47 | 5.1 dB  |
-| Peaking | 2349 Hz | 0.66 | -3.9 dB |
-| Peaking | 3584 Hz | 5.86 | 5.6 dB  |
-| Peaking | 3956 Hz | 7.14 | -1.4 dB |
-| Peaking | 4999 Hz | 0.95 | 1.1 dB  |
+| Peaking | 33 Hz   | 0.46 | 7.0 dB  |
+| Peaking | 137 Hz  | 0.69 | -5.4 dB |
+| Peaking | 381 Hz  | 1.54 | -2.5 dB |
+| Peaking | 5563 Hz | 2.87 | 4.2 dB  |
+| Peaking | 9057 Hz | 2.55 | -7.1 dB |
+| Peaking | 1591 Hz | 1.8  | 4.1 dB  |
+| Peaking | 2437 Hz | 0.83 | -2.9 dB |
+| Peaking | 3595 Hz | 5.83 | 5.6 dB  |
+| Peaking | 3933 Hz | 6.77 | -1.3 dB |
+| Peaking | 5506 Hz | 2.73 | 0.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 7.4 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.4 dB  |
+| Peaking | 125 Hz   | 1.41 | -3.9 dB |
+| Peaking | 250 Hz   | 1.41 | -3.1 dB |
+| Peaking | 500 Hz   | 1.41 | -2.4 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -0.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.8 dB |
+| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/AKG%20K240%20MKII/AKG%20K240%20MKII.png)

@@ -1,38 +1,56 @@
 # Steelseries Flux InEar Pro
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.0dB
-GraphicEQ: 21 0.0; 23 1.4; 25 1.4; 28 1.3; 31 1.2; 34 1.0; 37 1.0; 41 0.8; 45 0.7; 49 0.6; 54 0.3; 60 0.1; 66 -0.2; 72 -0.6; 79 -0.9; 87 -1.4; 96 -1.8; 106 -2.1; 116 -2.3; 128 -2.5; 141 -2.8; 155 -2.9; 170 -3.1; 187 -3.1; 206 -3.1; 227 -2.9; 249 -2.9; 274 -2.7; 302 -2.5; 332 -2.2; 365 -1.9; 402 -1.7; 442 -1.2; 486 -1.0; 535 -0.7; 588 -0.1; 647 0.2; 712 0.4; 783 0.7; 861 0.5; 947 0.2; 1042 -0.2; 1146 -0.5; 1261 -0.9; 1387 -1.5; 1526 -2.1; 1678 -2.5; 1846 -2.6; 2031 -2.7; 2234 -2.4; 2457 -1.2; 2703 0.1; 2973 2.1; 3270 4.1; 3597 4.3; 3957 2.4; 4353 -0.7; 4788 -0.4; 5267 3.3; 5793 5.8; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -4.8; 23 -4.8; 25 -4.9; 28 -4.9; 31 -5.1; 34 -5.2; 37 -5.3; 41 -5.4; 45 -5.5; 49 -5.7; 54 -5.9; 60 -6.2; 66 -6.5; 72 -6.8; 79 -7.2; 87 -7.6; 96 -8.1; 106 -8.4; 116 -8.6; 128 -8.8; 141 -9.1; 155 -9.2; 170 -9.3; 187 -9.3; 206 -9.4; 227 -9.2; 249 -9.1; 274 -8.9; 302 -8.7; 332 -8.4; 365 -8.2; 402 -7.9; 442 -7.5; 486 -7.3; 535 -7.0; 588 -6.3; 647 -6.1; 712 -5.9; 783 -5.5; 861 -5.8; 947 -6.0; 1042 -6.5; 1146 -6.7; 1261 -7.2; 1387 -7.8; 1526 -8.3; 1678 -8.7; 1846 -8.8; 2031 -9.0; 2234 -8.7; 2457 -7.5; 2703 -6.1; 2973 -4.1; 3270 -2.2; 3597 -2.0; 3957 -3.9; 4353 -7.0; 4788 -6.7; 5267 -2.9; 5793 -0.5; 6373 -0.8; 7010 -3.7; 7711 -6.0; 8482 -6.2; 9330 -6.3; 10263 -6.3; 11289 -6.3; 12418 -6.3; 13660 -6.3; 15026 -6.3; 16529 -6.3; 18182 -6.3; 20000 -6.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Steelseries Flux InEar Pro GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-59**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Steelseries Flux InEar Pro ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 27 Hz    | 0.62 | 1.5 dB  |
-| Peaking | 179 Hz   | 0.7  | -3.4 dB |
-| Peaking | 1951 Hz  | 1.96 | -3.2 dB |
+| Peaking | 27 Hz    | 0.62 | 1.6 dB  |
+| Peaking | 177 Hz   | 0.7  | -3.4 dB |
+| Peaking | 1953 Hz  | 1.96 | -3.2 dB |
 | Peaking | 3380 Hz  | 4.35 | 5.3 dB  |
 | Peaking | 6062 Hz  | 4.49 | 6.6 dB  |
-| Peaking | 787 Hz   | 2.71 | 1.3 dB  |
-| Peaking | 1468 Hz  | 5.01 | -0.7 dB |
-| Peaking | 4564 Hz  | 5.99 | -4.8 dB |
-| Peaking | 4600 Hz  | 2.46 | 2.1 dB  |
+| Peaking | 788 Hz   | 2.77 | 1.3 dB  |
+| Peaking | 1469 Hz  | 5.04 | -0.7 dB |
+| Peaking | 4568 Hz  | 5.87 | -4.9 dB |
+| Peaking | 4590 Hz  | 2.5  | 2.2 dB  |
 | Peaking | 22050 Hz | 1.71 | 0.3 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 1.5 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.1 dB  |
+| Peaking | 125 Hz   | 1.41 | -2.4 dB |
+| Peaking | 250 Hz   | 1.41 | -2.8 dB |
+| Peaking | 500 Hz   | 1.41 | -0.2 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.8 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.1 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Steelseries%20Flux%20InEar%20Pro/Steelseries%20Flux%20InEar%20Pro.png)

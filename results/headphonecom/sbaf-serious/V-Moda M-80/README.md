@@ -1,38 +1,56 @@
 # V-Moda M-80
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -5.3dB
-GraphicEQ: 21 0.0; 23 1.1; 25 0.6; 28 0.0; 31 -0.5; 34 -0.8; 37 -1.1; 41 -1.5; 45 -1.7; 49 -1.9; 54 -2.2; 60 -2.4; 66 -2.6; 72 -2.6; 79 -2.6; 87 -2.8; 96 -3.0; 106 -2.7; 116 -2.7; 128 -2.8; 141 -2.9; 155 -2.9; 170 -2.8; 187 -2.6; 206 -2.4; 227 -2.7; 249 -2.8; 274 -1.8; 302 -0.8; 332 -0.4; 365 0.2; 402 0.9; 442 1.5; 486 2.5; 535 3.6; 588 4.2; 647 4.0; 712 3.6; 783 2.9; 861 1.9; 947 0.7; 1042 -0.5; 1146 -1.7; 1261 -2.8; 1387 -3.3; 1526 -3.4; 1678 -3.0; 1846 -1.3; 2031 0.1; 2234 1.0; 2457 1.5; 2703 1.1; 2973 0.2; 3270 -0.8; 3597 -0.2; 3957 1.7; 4353 2.0; 4788 1.9; 5267 4.3; 5793 4.7; 6373 3.9; 7010 2.5; 7711 0.3; 8482 -0.3; 9330 -0.6; 10263 0.0
+GraphicEQ: 21 -3.6; 23 -4.2; 25 -4.6; 28 -5.2; 31 -5.7; 34 -6.1; 37 -6.4; 41 -6.7; 45 -7.0; 49 -7.2; 54 -7.4; 60 -7.7; 66 -7.9; 72 -7.9; 79 -7.8; 87 -8.0; 96 -8.2; 106 -8.0; 116 -7.9; 128 -8.1; 141 -8.2; 155 -8.1; 170 -8.0; 187 -7.9; 206 -7.7; 227 -8.0; 249 -8.1; 274 -7.1; 302 -6.1; 332 -5.7; 365 -5.0; 402 -4.3; 442 -3.7; 486 -2.7; 535 -1.7; 588 -1.1; 647 -1.2; 712 -1.6; 783 -2.3; 861 -3.3; 947 -4.5; 1042 -5.7; 1146 -7.0; 1261 -8.1; 1387 -8.6; 1526 -8.7; 1678 -8.2; 1846 -6.5; 2031 -5.1; 2234 -4.3; 2457 -3.8; 2703 -4.1; 2973 -5.1; 3270 -6.0; 3597 -5.5; 3957 -3.5; 4353 -3.2; 4788 -3.3; 5267 -0.9; 5793 -0.5; 6373 -1.3; 7010 -2.7; 7711 -5.0; 8482 -5.5; 9330 -5.8; 10263 -5.2; 11289 -5.2; 12418 -5.2; 13660 -5.2; 15026 -5.2; 16529 -5.2; 18182 -5.2; 20000 -5.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `V-Moda M-80 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-52**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `V-Moda M-80 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 75 Hz   | 0.85 | -2.3 dB |
-| Peaking | 210 Hz  | 0.81 | -2.7 dB |
+| Peaking | 209 Hz  | 0.8  | -2.8 dB |
 | Peaking | 614 Hz  | 1.25 | 5.0 dB  |
-| Peaking | 1379 Hz | 2.35 | -4.6 dB |
-| Peaking | 5695 Hz | 2.73 | 5.1 dB  |
-| Peaking | 16 Hz   | 2    | 1.9 dB  |
-| Peaking | 1701 Hz | 5.17 | -1.7 dB |
-| Peaking | 2528 Hz | 1.39 | 1.7 dB  |
-| Peaking | 3304 Hz | 5.63 | -2.4 dB |
-| Peaking | 8830 Hz | 5.15 | -1.6 dB |
+| Peaking | 1380 Hz | 2.34 | -4.6 dB |
+| Peaking | 5699 Hz | 2.67 | 5.1 dB  |
+| Peaking | 17 Hz   | 2.25 | 1.9 dB  |
+| Peaking | 1688 Hz | 5.15 | -1.7 dB |
+| Peaking | 2521 Hz | 1.39 | 1.7 dB  |
+| Peaking | 3320 Hz | 5.6  | -2.4 dB |
+| Peaking | 8893 Hz | 4.99 | -1.6 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.3dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 0.3 dB  |
+| Peaking | 62 Hz    | 1.41 | -2.4 dB |
+| Peaking | 125 Hz   | 1.41 | -2.2 dB |
+| Peaking | 250 Hz   | 1.41 | -3.1 dB |
+| Peaking | 500 Hz   | 1.41 | 4.7 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.9 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.1 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/V-Moda%20M-80/V-Moda%20M-80.png)

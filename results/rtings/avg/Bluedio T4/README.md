@@ -1,38 +1,56 @@
 # Bluedio T4
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -4.3; 23 -3.7; 25 -3.0; 28 -2.1; 31 -1.1; 34 -0.2; 37 0.7; 41 1.6; 45 2.4; 49 3.1; 54 3.8; 60 4.5; 66 5.0; 72 5.5; 79 5.8; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 6.0; 141 6.0; 155 6.0; 170 6.0; 187 6.0; 206 6.0; 227 6.0; 249 6.0; 274 6.0; 302 6.0; 332 6.0; 365 6.0; 402 6.0; 442 6.0; 486 6.0; 535 6.0; 588 6.0; 647 6.0; 712 5.9; 783 3.4; 861 1.7; 947 0.2; 1042 -0.5; 1146 -2.3; 1261 -2.0; 1387 -0.6; 1526 -0.5; 1678 -1.2; 1846 -2.2; 2031 -2.9; 2234 -3.3; 2457 -2.2; 2703 -0.8; 2973 -0.1; 3270 0.6; 3597 1.4; 3957 0.9; 4353 -1.7; 4788 -1.3; 5267 -0.6; 5793 -1.2; 6373 1.2; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -10.8; 23 -10.2; 25 -9.5; 28 -8.6; 31 -7.6; 34 -6.7; 37 -5.8; 41 -4.9; 45 -4.1; 49 -3.4; 54 -2.7; 60 -2.0; 66 -1.5; 72 -1.0; 79 -0.7; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.5; 155 -0.5; 170 -0.5; 187 -0.5; 206 -0.5; 227 -0.5; 249 -0.5; 274 -0.5; 302 -0.5; 332 -0.5; 365 -0.5; 402 -0.5; 442 -0.5; 486 -0.5; 535 -0.5; 588 -0.5; 647 -0.5; 712 -0.6; 783 -3.1; 861 -4.8; 947 -6.3; 1042 -7.0; 1146 -8.8; 1261 -8.5; 1387 -7.1; 1526 -7.0; 1678 -7.7; 1846 -8.7; 2031 -9.4; 2234 -9.8; 2457 -8.7; 2703 -7.3; 2973 -6.6; 3270 -5.9; 3597 -5.1; 3957 -5.6; 4353 -8.2; 4788 -7.8; 5267 -7.1; 5793 -7.7; 6373 -5.3; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Bluedio T4 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Bluedio T4 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.4dB**.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 0.74 | -7.6 dB |
-| Peaking | 86 Hz   | 0.25 | 6.5 dB  |
-| Peaking | 680 Hz  | 0.71 | 5.7 dB  |
-| Peaking | 1088 Hz | 1.63 | -6.0 dB |
-| Peaking | 2132 Hz | 3.16 | -4.0 dB |
-| Peaking | 1378 Hz | 2.99 | -0.8 dB |
-| Peaking | 1421 Hz | 6.27 | 1.3 dB  |
-| Peaking | 3782 Hz | 3.61 | 4.2 dB  |
-| Peaking | 4287 Hz | 2.31 | -3.5 dB |
-| Peaking | 6806 Hz | 8.2  | 3.5 dB  |
+| Peaking | 22 Hz   | 0.78 | -7.6 dB |
+| Peaking | 94 Hz   | 0.22 | 6.5 dB  |
+| Peaking | 670 Hz  | 0.85 | 5.1 dB  |
+| Peaking | 1081 Hz | 1.67 | -5.3 dB |
+| Peaking | 2140 Hz | 3.32 | -3.8 dB |
+| Peaking | 80 Hz   | 3.25 | 0.4 dB  |
+| Peaking | 142 Hz  | 2.46 | -0.3 dB |
+| Peaking | 3797 Hz | 3.59 | 4.2 dB  |
+| Peaking | 4260 Hz | 2.27 | -3.4 dB |
+| Peaking | 6777 Hz | 7.99 | 3.5 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -2.9 dB |
+| Peaking | 62 Hz    | 1.41 | 5.0 dB  |
+| Peaking | 125 Hz   | 1.41 | 4.9 dB  |
+| Peaking | 250 Hz   | 1.41 | 4.2 dB  |
+| Peaking | 500 Hz   | 1.41 | 6.5 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Bluedio%20T4/Bluedio%20T4.png)

@@ -1,38 +1,56 @@
 # Piaton Moderna MS200
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 0.4; 25 -0.2; 28 -1.0; 31 -1.7; 34 -2.3; 37 -2.8; 41 -3.5; 45 -4.1; 49 -4.6; 54 -5.2; 60 -5.8; 66 -6.4; 72 -6.9; 79 -7.5; 87 -8.0; 96 -8.7; 106 -9.0; 116 -9.2; 128 -9.5; 141 -9.9; 155 -10.0; 170 -10.0; 187 -10.1; 206 -10.0; 227 -9.8; 249 -9.7; 274 -9.4; 302 -9.0; 332 -8.6; 365 -8.2; 402 -7.4; 442 -6.4; 486 -6.5; 535 -6.0; 588 -4.9; 647 -3.9; 712 -2.9; 783 -1.8; 861 -1.0; 947 -0.3; 1042 0.1; 1146 0.4; 1261 0.4; 1387 -0.5; 1526 -1.8; 1678 -2.5; 1846 -3.3; 2031 -3.5; 2234 -3.5; 2457 -1.9; 2703 0.4; 2973 3.2; 3270 5.3; 3597 6.0; 3957 5.5; 4353 3.0; 4788 1.8; 5267 2.3; 5793 1.8; 6373 -0.9; 7010 -2.5; 7711 -3.4; 8482 -3.7; 9330 -3.3; 10263 -2.4; 11289 -0.2; 12418 0.0
+GraphicEQ: 21 -5.5; 23 -6.1; 25 -6.7; 28 -7.5; 31 -8.2; 34 -8.8; 37 -9.3; 41 -10.0; 45 -10.6; 49 -11.1; 54 -11.7; 60 -12.3; 66 -12.9; 72 -13.4; 79 -14.0; 87 -14.5; 96 -15.2; 106 -15.5; 116 -15.7; 128 -16.0; 141 -16.4; 155 -16.5; 170 -16.5; 187 -16.6; 206 -16.5; 227 -16.3; 249 -16.2; 274 -15.9; 302 -15.5; 332 -15.1; 365 -14.7; 402 -13.9; 442 -12.9; 486 -13.0; 535 -12.5; 588 -11.4; 647 -10.4; 712 -9.4; 783 -8.3; 861 -7.5; 947 -6.8; 1042 -6.4; 1146 -6.1; 1261 -6.1; 1387 -7.0; 1526 -8.3; 1678 -9.0; 1846 -9.8; 2031 -10.0; 2234 -10.0; 2457 -8.4; 2703 -6.1; 2973 -3.3; 3270 -1.2; 3597 -0.5; 3957 -1.0; 4353 -3.5; 4788 -4.7; 5267 -4.2; 5793 -4.7; 6373 -7.4; 7010 -9.0; 7711 -9.9; 8482 -10.2; 9330 -9.8; 10263 -8.9; 11289 -6.7; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Piaton Moderna MS200 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Piaton Moderna MS200 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 137 Hz  | 0.44 | -8.9 dB  |
-| Peaking | 415 Hz  | 0.64 | -5.0 dB  |
-| Peaking | 2156 Hz | 1.08 | -16.5 dB |
-| Peaking | 2969 Hz | 0.41 | 15.5 dB  |
-| Peaking | 7650 Hz | 0.95 | -9.7 dB  |
-| Peaking | 21 Hz   | 2.22 | 2.3 dB   |
-| Peaking | 2651 Hz | 5.43 | -1.2 dB  |
-| Peaking | 3660 Hz | 2.53 | 2.1 dB   |
-| Peaking | 4607 Hz | 3.43 | -3.0 dB  |
-| Peaking | 5689 Hz | 5.56 | 1.6 dB   |
+| Peaking | 140 Hz  | 0.43 | -9.0 dB  |
+| Peaking | 426 Hz  | 0.66 | -5.0 dB  |
+| Peaking | 2164 Hz | 1.01 | -17.5 dB |
+| Peaking | 2991 Hz | 0.4  | 16.8 dB  |
+| Peaking | 7653 Hz | 0.88 | -10.2 dB |
+| Peaking | 21 Hz   | 2.44 | 2.4 dB   |
+| Peaking | 2681 Hz | 5.96 | -1.2 dB  |
+| Peaking | 3731 Hz | 2.53 | 2.0 dB   |
+| Peaking | 4560 Hz | 3.42 | -3.0 dB  |
+| Peaking | 5641 Hz | 6.04 | 1.6 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -0.3 dB |
+| Peaking | 62 Hz    | 1.41 | -4.9 dB |
+| Peaking | 125 Hz   | 1.41 | -7.9 dB |
+| Peaking | 250 Hz   | 1.41 | -8.2 dB |
+| Peaking | 500 Hz   | 1.41 | -5.2 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.7 dB |
+| Peaking | 16000 Hz | 1.41 | 0.5 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Piaton%20Moderna%20MS200/Piaton%20Moderna%20MS200.png)

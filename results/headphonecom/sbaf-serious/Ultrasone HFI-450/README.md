@@ -1,38 +1,56 @@
 # Ultrasone HFI-450
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 5.4; 60 3.9; 66 2.7; 72 2.5; 79 3.1; 87 1.9; 96 0.4; 106 -0.4; 116 -0.6; 128 0.2; 141 0.1; 155 0.1; 170 1.1; 187 1.1; 206 1.3; 227 1.3; 249 0.8; 274 -0.6; 302 -1.6; 332 -2.3; 365 -1.9; 402 -1.4; 442 -1.9; 486 -1.1; 535 -0.6; 588 -0.4; 647 -0.2; 712 -0.2; 783 -0.0; 861 0.1; 947 -0.1; 1042 0.1; 1146 0.1; 1261 0.0; 1387 0.0; 1526 0.2; 1678 -0.2; 1846 -2.2; 2031 -1.9; 2234 -1.0; 2457 0.3; 2703 2.1; 2973 2.7; 3270 2.2; 3597 1.7; 3957 6.0; 4353 6.0; 4788 5.8; 5267 2.0; 5793 3.8; 6373 5.5; 7010 1.7; 7711 0.3; 8482 -0.4; 9330 -3.1; 10263 -2.3; 11289 -0.2; 12418 -1.1; 13660 -0.9; 15026 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -1.1; 60 -2.6; 66 -3.8; 72 -4.0; 79 -3.4; 87 -4.6; 96 -6.1; 106 -6.9; 116 -7.1; 128 -6.3; 141 -6.4; 155 -6.4; 170 -5.4; 187 -5.4; 206 -5.2; 227 -5.2; 249 -5.7; 274 -7.1; 302 -8.1; 332 -8.8; 365 -8.4; 402 -7.9; 442 -8.4; 486 -7.6; 535 -7.1; 588 -6.9; 647 -6.7; 712 -6.7; 783 -6.5; 861 -6.4; 947 -6.6; 1042 -6.4; 1146 -6.4; 1261 -6.5; 1387 -6.5; 1526 -6.3; 1678 -6.7; 1846 -8.7; 2031 -8.4; 2234 -7.5; 2457 -6.2; 2703 -4.4; 2973 -3.8; 3270 -4.3; 3597 -4.8; 3957 -0.5; 4353 -0.5; 4788 -0.7; 5267 -4.5; 5793 -2.7; 6373 -1.0; 7010 -4.8; 7711 -6.2; 8482 -6.9; 9330 -9.6; 10263 -8.8; 11289 -6.7; 12418 -7.6; 13660 -7.4; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Ultrasone HFI-450 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Ultrasone HFI-450 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 33 Hz   | 0.79 | 6.9 dB  |
-| Peaking | 2888 Hz | 4.02 | 4.0 dB  |
-| Peaking | 4346 Hz | 2.32 | 10.6 dB |
-| Peaking | 4794 Hz | 0.56 | -4.8 dB |
-| Peaking | 6322 Hz | 4.1  | 7.4 dB  |
-| Peaking | 111 Hz  | 4.36 | -1.8 dB |
-| Peaking | 230 Hz  | 2.16 | 2.3 dB  |
-| Peaking | 329 Hz  | 1.61 | -2.9 dB |
-| Peaking | 1608 Hz | 1.46 | 1.7 dB  |
-| Peaking | 1916 Hz | 4    | -2.7 dB |
+| Peaking | 33 Hz   | 0.78 | 6.9 dB  |
+| Peaking | 2888 Hz | 4.03 | 4.0 dB  |
+| Peaking | 4342 Hz | 2.33 | 10.4 dB |
+| Peaking | 4880 Hz | 0.54 | -4.7 dB |
+| Peaking | 6328 Hz | 3.9  | 7.4 dB  |
+| Peaking | 111 Hz  | 4.26 | -1.8 dB |
+| Peaking | 229 Hz  | 2.16 | 2.3 dB  |
+| Peaking | 327 Hz  | 1.62 | -2.9 dB |
+| Peaking | 1615 Hz | 1.45 | 1.7 dB  |
+| Peaking | 1899 Hz | 3.97 | -2.7 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 7.1 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.8 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.8 dB |
+| Peaking | 250 Hz   | 1.41 | 0.5 dB  |
+| Peaking | 500 Hz   | 1.41 | -1.8 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.0 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20HFI-450/Ultrasone%20HFI-450.png)

@@ -1,38 +1,56 @@
 # Turtle Beach Elite Pro 2 SuperAmp
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.2dB
-GraphicEQ: 21 -3.6; 23 -3.6; 25 -3.7; 28 -3.7; 31 -3.8; 34 -3.7; 37 -3.6; 41 -3.5; 45 -3.4; 49 -3.4; 54 -3.3; 60 -3.4; 66 -3.5; 72 -3.7; 79 -3.8; 87 -4.0; 96 -4.1; 106 -4.1; 116 -4.1; 128 -4.2; 141 -4.4; 155 -4.5; 170 -4.5; 187 -4.3; 206 -3.4; 227 -2.4; 249 -1.1; 274 0.9; 302 0.7; 332 1.8; 365 4.2; 402 4.0; 442 1.6; 486 -0.8; 535 -2.6; 588 -3.4; 647 -2.8; 712 -1.0; 783 0.2; 861 0.9; 947 0.6; 1042 -0.3; 1146 -0.7; 1261 -1.0; 1387 -1.1; 1526 -0.9; 1678 -1.0; 1846 -1.2; 2031 -1.3; 2234 -0.9; 2457 0.6; 2703 0.6; 2973 0.7; 3270 0.5; 3597 -1.1; 3957 -2.8; 4353 -1.2; 4788 2.4; 5267 5.8; 5793 4.8; 6373 2.0; 7010 0.9; 7711 -3.7; 8482 -8.6; 9330 -7.6; 10263 -3.0; 11289 -2.7; 12418 -4.5; 13660 -2.8; 15026 -0.0; 16529 0.0; 18182 -1.4; 20000 -4.9
+GraphicEQ: 21 -9.9; 23 -9.9; 25 -10.0; 28 -10.0; 31 -10.1; 34 -10.0; 37 -9.9; 41 -9.8; 45 -9.7; 49 -9.7; 54 -9.6; 60 -9.7; 66 -9.9; 72 -10.0; 79 -10.2; 87 -10.3; 96 -10.4; 106 -10.5; 116 -10.5; 128 -10.5; 141 -10.7; 155 -10.8; 170 -10.8; 187 -10.6; 206 -9.7; 227 -8.7; 249 -7.4; 274 -5.4; 302 -5.7; 332 -4.5; 365 -2.1; 402 -2.3; 442 -4.7; 486 -7.1; 535 -8.9; 588 -9.7; 647 -9.1; 712 -7.3; 783 -6.1; 861 -5.4; 947 -5.7; 1042 -6.6; 1146 -7.0; 1261 -7.3; 1387 -7.4; 1526 -7.2; 1678 -7.3; 1846 -7.5; 2031 -7.7; 2234 -7.2; 2457 -5.7; 2703 -5.7; 2973 -5.6; 3270 -5.8; 3597 -7.4; 3957 -9.1; 4353 -7.5; 4788 -3.9; 5267 -0.5; 5793 -1.5; 6373 -4.3; 7010 -5.4; 7711 -10.1; 8482 -14.9; 9330 -13.9; 10263 -9.3; 11289 -9.0; 12418 -10.8; 13660 -9.1; 15026 -6.4; 16529 -6.3; 18182 -7.7; 20000 -11.2
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Turtle Beach Elite Pro 2 SuperAmp GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Turtle Beach Elite Pro 2 SuperAmp ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 24 Hz    | 0.84 | -2.9 dB |
-| Peaking | 182 Hz   | 0.29 | -4.6 dB |
-| Peaking | 358 Hz   | 2.08 | 8.0 dB  |
-| Peaking | 5610 Hz  | 3.94 | 7.4 dB  |
-| Peaking | 8899 Hz  | 2.64 | -9.2 dB |
-| Peaking | 412 Hz   | 6.29 | 1.6 dB  |
-| Peaking | 591 Hz   | 3.02 | -3.0 dB |
-| Peaking | 844 Hz   | 2.55 | 2.8 dB  |
-| Peaking | 1610 Hz  | 1.42 | -0.7 dB |
-| Peaking | 19949 Hz | 1.95 | -4.8 dB |
+| Peaking | 181 Hz   | 0.29 | -4.6 dB |
+| Peaking | 358 Hz   | 2.07 | 8.0 dB  |
+| Peaking | 5612 Hz  | 3.87 | 7.4 dB  |
+| Peaking | 8902 Hz  | 2.54 | -9.2 dB |
+| Peaking | 415 Hz   | 6.51 | 1.6 dB  |
+| Peaking | 592 Hz   | 3.03 | -3.0 dB |
+| Peaking | 846 Hz   | 2.47 | 2.9 dB  |
+| Peaking | 1559 Hz  | 1.26 | -0.8 dB |
+| Peaking | 20122 Hz | 1.12 | -4.8 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -3.8 dB |
+| Peaking | 62 Hz    | 1.41 | -2.0 dB |
+| Peaking | 125 Hz   | 1.41 | -5.0 dB |
+| Peaking | 250 Hz   | 1.41 | 0.6 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.2 dB |
+| Peaking | 16000 Hz | 1.41 | -1.4 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Turtle%20Beach%20Elite%20Pro%202%20SuperAmp/Turtle%20Beach%20Elite%20Pro%202%20SuperAmp.png)

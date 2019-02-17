@@ -1,38 +1,56 @@
 # Oppo PM1
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 4.6; 25 4.1; 28 3.7; 31 3.3; 34 3.0; 37 2.9; 41 2.7; 45 2.6; 49 2.7; 54 3.1; 60 2.3; 66 1.6; 72 1.2; 79 0.7; 87 0.4; 96 -0.1; 106 -0.4; 116 -0.6; 128 -0.9; 141 -1.3; 155 -1.5; 170 -1.6; 187 -1.7; 206 -1.9; 227 -1.7; 249 -2.0; 274 -2.3; 302 -2.5; 332 -2.3; 365 -0.7; 402 0.5; 442 -0.1; 486 -1.0; 535 -1.5; 588 -1.5; 647 -1.9; 712 -2.4; 783 -2.5; 861 -2.8; 947 -0.4; 1042 -0.3; 1146 -0.4; 1261 -0.5; 1387 -1.0; 1526 -1.1; 1678 -1.0; 1846 -0.3; 2031 0.4; 2234 1.1; 2457 2.0; 2703 2.4; 2973 3.2; 3270 3.5; 3597 3.8; 3957 4.6; 4353 4.4; 4788 5.2; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 -0.0; 9330 -0.6; 10263 0.0
+GraphicEQ: 21 -1.5; 23 -1.9; 25 -2.4; 28 -2.8; 31 -3.2; 34 -3.5; 37 -3.6; 41 -3.8; 45 -3.9; 49 -3.8; 54 -3.4; 60 -4.2; 66 -4.9; 72 -5.3; 79 -5.8; 87 -6.1; 96 -6.6; 106 -6.9; 116 -7.1; 128 -7.4; 141 -7.8; 155 -8.0; 170 -8.1; 187 -8.2; 206 -8.3; 227 -8.2; 249 -8.4; 274 -8.8; 302 -9.0; 332 -8.8; 365 -7.1; 402 -6.0; 442 -6.6; 486 -7.5; 535 -8.0; 588 -8.0; 647 -8.4; 712 -8.9; 783 -9.0; 861 -9.3; 947 -6.9; 1042 -6.8; 1146 -6.9; 1261 -7.0; 1387 -7.5; 1526 -7.6; 1678 -7.5; 1846 -6.8; 2031 -6.1; 2234 -5.4; 2457 -4.5; 2703 -4.1; 2973 -3.3; 3270 -3.0; 3597 -2.7; 3957 -1.9; 4353 -2.0; 4788 -1.3; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -7.1; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Oppo PM1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 0.72 | 5.2 dB  |
-| Peaking | 54 Hz   | 2.21 | 2.0 dB  |
-| Peaking | 216 Hz  | 0.89 | -2.2 dB |
-| Peaking | 769 Hz  | 2.31 | -2.6 dB |
-| Peaking | 4845 Hz | 1.32 | 6.1 dB  |
-| Peaking | 1000 Hz | 6.65 | 1.1 dB  |
-| Peaking | 1606 Hz | 2.72 | -1.6 dB |
-| Peaking | 2924 Hz | 1.87 | 1.8 dB  |
-| Peaking | 6247 Hz | 2.89 | 6.1 dB  |
-| Peaking | 6497 Hz | 1.15 | -4.2 dB |
+| Peaking | 19 Hz   | 0.69 | 5.2 dB  |
+| Peaking | 54 Hz   | 2.22 | 2.0 dB  |
+| Peaking | 218 Hz  | 0.91 | -2.1 dB |
+| Peaking | 768 Hz  | 2.3  | -2.6 dB |
+| Peaking | 4856 Hz | 1.3  | 6.1 dB  |
+| Peaking | 1001 Hz | 6.74 | 1.1 dB  |
+| Peaking | 1604 Hz | 2.69 | -1.6 dB |
+| Peaking | 2950 Hz | 1.85 | 1.8 dB  |
+| Peaking | 6215 Hz | 2.82 | 6.1 dB  |
+| Peaking | 6555 Hz | 1.14 | -4.3 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 4.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.6 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.1 dB |
+| Peaking | 250 Hz   | 1.41 | -1.9 dB |
+| Peaking | 500 Hz   | 1.41 | -0.6 dB |
+| Peaking | 1000 Hz  | 1.41 | -1.5 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM1/Oppo%20PM1.png)

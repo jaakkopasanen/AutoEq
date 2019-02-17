@@ -1,38 +1,56 @@
 # Denon AH-NC732K
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.7dB
-GraphicEQ: 21 0.0; 23 5.3; 25 4.7; 28 4.2; 31 3.8; 34 3.4; 37 3.1; 41 3.3; 45 3.5; 49 3.7; 54 4.0; 60 4.3; 66 4.7; 72 4.8; 79 4.5; 87 4.6; 96 4.6; 106 4.8; 116 4.9; 128 5.0; 141 5.2; 155 5.5; 170 5.3; 187 5.4; 206 5.4; 227 5.4; 249 5.4; 274 5.6; 302 5.6; 332 5.5; 365 5.4; 402 5.3; 442 5.2; 486 4.7; 535 4.4; 588 4.0; 647 3.6; 712 3.6; 783 3.4; 861 2.1; 947 0.6; 1042 -0.3; 1146 -0.8; 1261 -2.5; 1387 -3.9; 1526 -0.8; 1678 -0.5; 1846 1.3; 2031 5.2; 2234 6.0; 2457 6.0; 2703 6.0; 2973 6.0; 3270 6.0; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.1; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -0.5; 23 -1.3; 25 -1.9; 28 -2.4; 31 -2.8; 34 -3.2; 37 -3.4; 41 -3.3; 45 -3.0; 49 -2.9; 54 -2.6; 60 -2.2; 66 -1.9; 72 -1.8; 79 -2.0; 87 -2.0; 96 -1.9; 106 -1.8; 116 -1.7; 128 -1.6; 141 -1.4; 155 -1.0; 170 -1.3; 187 -1.2; 206 -1.2; 227 -1.2; 249 -1.2; 274 -1.0; 302 -1.0; 332 -1.1; 365 -1.2; 402 -1.3; 442 -1.4; 486 -1.8; 535 -2.2; 588 -2.5; 647 -3.0; 712 -3.0; 783 -3.2; 861 -4.4; 947 -6.0; 1042 -6.9; 1146 -7.4; 1261 -9.1; 1387 -10.5; 1526 -7.4; 1678 -7.1; 1846 -5.3; 2031 -1.4; 2234 -0.6; 2457 -0.6; 2703 -0.6; 2973 -0.6; 3270 -0.6; 3597 -0.6; 3957 -0.6; 4353 -0.6; 4788 -0.6; 5267 -0.6; 5793 -0.6; 6373 -1.5; 7010 -4.1; 7711 -6.3; 8482 -6.6; 9330 -6.6; 10263 -6.6; 11289 -6.6; 12418 -6.6; 13660 -6.6; 15026 -6.6; 16529 -6.6; 18182 -6.6; 20000 -6.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Denon AH-NC732K GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-66**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Denon AH-NC732K ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 19 Hz   | 1.54 | 5.7 dB  |
-| Peaking | 92 Hz   | 0.37 | 3.8 dB  |
+| Peaking | 19 Hz   | 1.55 | 5.6 dB  |
+| Peaking | 89 Hz   | 0.36 | 3.9 dB  |
 | Peaking | 393 Hz  | 0.49 | 4.0 dB  |
-| Peaking | 1362 Hz | 1.96 | -7.7 dB |
-| Peaking | 3121 Hz | 0.64 | 7.1 dB  |
-| Peaking | 1788 Hz | 8.97 | -3.3 dB |
-| Peaking | 2083 Hz | 2.43 | 2.4 dB  |
-| Peaking | 3002 Hz | 1.46 | -1.4 dB |
-| Peaking | 6132 Hz | 1.91 | 5.4 dB  |
-| Peaking | 7576 Hz | 1.4  | -4.5 dB |
+| Peaking | 1366 Hz | 1.93 | -7.8 dB |
+| Peaking | 3114 Hz | 0.62 | 7.1 dB  |
+| Peaking | 1801 Hz | 8.53 | -3.7 dB |
+| Peaking | 2006 Hz | 1.9  | 3.6 dB  |
+| Peaking | 2651 Hz | 0.86 | -2.0 dB |
+| Peaking | 6254 Hz | 1.72 | 6.1 dB  |
+| Peaking | 7407 Hz | 1.4  | -5.1 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.8 dB  |
+| Peaking | 62 Hz    | 1.41 | 3.0 dB  |
+| Peaking | 125 Hz   | 1.41 | 3.9 dB  |
+| Peaking | 250 Hz   | 1.41 | 4.3 dB  |
+| Peaking | 500 Hz   | 1.41 | 5.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | -2.4 dB |
+| Peaking | 2000 Hz  | 1.41 | 1.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | 7.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Denon%20AH-NC732K/Denon%20AH-NC732K.png)

@@ -1,38 +1,56 @@
 # Rock Zircon
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -1.2dB
-GraphicEQ: 21 -1.6; 23 -1.9; 25 -2.1; 28 -2.4; 31 -2.7; 34 -2.9; 37 -3.1; 41 -3.4; 45 -3.6; 49 -3.8; 54 -4.1; 60 -4.5; 66 -4.9; 72 -5.2; 79 -5.6; 87 -6.1; 96 -6.5; 106 -6.8; 116 -7.1; 128 -7.2; 141 -7.2; 155 -6.9; 170 -5.7; 187 -7.1; 206 -7.1; 227 -6.5; 249 -5.8; 274 -5.0; 302 -4.1; 332 -3.1; 365 -2.3; 402 -1.6; 442 -0.9; 486 -0.3; 535 0.2; 588 0.6; 647 0.9; 712 1.0; 783 1.1; 861 0.9; 947 0.4; 1042 -0.3; 1146 -1.1; 1261 -1.8; 1387 -2.3; 1526 -2.7; 1678 -3.1; 1846 -3.1; 2031 -2.6; 2234 -2.0; 2457 -2.3; 2703 -2.6; 2973 -3.3; 3270 -3.0; 3597 -2.4; 3957 -2.0; 4353 -2.6; 4788 -4.5; 5267 -8.2; 5793 -11.9; 6373 -9.2; 7010 -7.7; 7711 -8.2; 8482 -6.2; 9330 -2.7; 10263 -0.2; 11289 0.0; 12418 -4.9; 13660 -17.5; 15026 -27.3; 16529 -29.6; 18182 -26.0; 20000 -17.0
+GraphicEQ: 21 -3.2; 23 -3.4; 25 -3.7; 28 -4.0; 31 -4.2; 34 -4.5; 37 -4.7; 41 -4.9; 45 -5.2; 49 -5.4; 54 -5.7; 60 -6.1; 66 -6.4; 72 -6.8; 79 -7.2; 87 -7.6; 96 -8.0; 106 -8.4; 116 -8.7; 128 -8.8; 141 -8.8; 155 -8.5; 170 -7.2; 187 -8.6; 206 -8.7; 227 -8.0; 249 -7.3; 274 -6.5; 302 -5.6; 332 -4.7; 365 -3.9; 402 -3.2; 442 -2.5; 486 -1.9; 535 -1.4; 588 -1.0; 647 -0.7; 712 -0.5; 783 -0.5; 861 -0.7; 947 -1.2; 1042 -1.9; 1146 -2.7; 1261 -3.3; 1387 -3.9; 1526 -4.3; 1678 -4.7; 1846 -4.6; 2031 -4.1; 2234 -3.6; 2457 -3.9; 2703 -4.1; 2973 -4.9; 3270 -4.6; 3597 -4.0; 3957 -3.6; 4353 -4.2; 4788 -6.1; 5267 -9.7; 5793 -13.4; 6373 -10.7; 7010 -9.3; 7711 -9.8; 8482 -7.8; 9330 -4.3; 10263 -1.7; 11289 -1.6; 12418 -6.5; 13660 -19.1; 15026 -28.8; 16529 -31.2; 18182 -27.6; 20000 -18.6
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Rock Zircon GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-11**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Rock Zircon ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-0.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-1.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **--0.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 11 Hz    | 0.1  | -2.2 dB  |
-| Peaking | 115 Hz   | 0.82 | -5.7 dB  |
-| Peaking | 227 Hz   | 1.8  | -4.1 dB  |
-| Peaking | 5811 Hz  | 3.93 | -9.2 dB  |
-| Peaking | 17030 Hz | 1.34 | -32.7 dB |
-| Peaking | 1926 Hz  | 1.48 | -2.7 dB  |
-| Peaking | 7271 Hz  | 2.37 | -2.4 dB  |
-| Peaking | 7978 Hz  | 4.59 | -3.5 dB  |
-| Peaking | 11577 Hz | 1.53 | 15.7 dB  |
-| Peaking | 14586 Hz | 1.8  | -15.3 dB |
+| Peaking | 14 Hz    | 0.13 | -2.1 dB  |
+| Peaking | 115 Hz   | 0.83 | -5.7 dB  |
+| Peaking | 227 Hz   | 1.81 | -4.1 dB  |
+| Peaking | 5808 Hz  | 4.07 | -9.0 dB  |
+| Peaking | 17187 Hz | 1    | -32.5 dB |
+| Peaking | 756 Hz   | 1.62 | 2.1 dB   |
+| Peaking | 1628 Hz  | 1.4  | -2.8 dB  |
+| Peaking | 2996 Hz  | 4.53 | -1.5 dB  |
+| Peaking | 11451 Hz | 2.5  | 13.4 dB  |
+| Peaking | 14908 Hz | 2.15 | -12.3 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-0.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -2.0 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.4 dB  |
+| Peaking | 125 Hz   | 1.41 | -6.3 dB  |
+| Peaking | 250 Hz   | 1.41 | -5.3 dB  |
+| Peaking | 500 Hz   | 1.41 | 1.5 dB   |
+| Peaking | 1000 Hz  | 1.41 | 0.4 dB   |
+| Peaking | 2000 Hz  | 1.41 | -2.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | -2.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.5 dB   |
+| Peaking | 16000 Hz | 1.41 | -36.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Rock%20Zircon/Rock%20Zircon.png)

@@ -1,38 +1,56 @@
 # MrSpeakers Aeon Flow Closed PreProduction
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.3dB
-GraphicEQ: 21 0.0; 23 1.1; 25 1.0; 28 0.9; 31 0.8; 34 0.7; 37 0.7; 41 0.7; 45 0.6; 49 0.6; 54 0.4; 60 0.4; 66 0.5; 72 0.4; 79 0.2; 87 -0.5; 96 -1.4; 106 -2.2; 116 -2.3; 128 -2.0; 141 -1.2; 155 -0.0; 170 0.2; 187 0.1; 206 0.3; 227 0.4; 249 0.3; 274 0.2; 302 0.1; 332 -0.1; 365 -0.2; 402 -0.2; 442 0.1; 486 0.1; 535 0.2; 588 0.4; 647 0.4; 712 0.4; 783 0.7; 861 0.9; 947 -0.0; 1042 -0.4; 1146 -0.7; 1261 -0.8; 1387 -1.2; 1526 -1.7; 1678 -2.1; 1846 -1.6; 2031 -0.5; 2234 0.1; 2457 0.7; 2703 2.3; 2973 3.1; 3270 2.8; 3597 1.4; 3957 0.9; 4353 1.0; 4788 1.4; 5267 3.6; 5793 3.4; 6373 3.5; 7010 2.5; 7711 0.3; 8482 -2.4; 9330 -3.2; 10263 -0.2; 11289 0.0
+GraphicEQ: 21 -2.9; 23 -3.0; 25 -3.1; 28 -3.3; 31 -3.4; 34 -3.4; 37 -3.4; 41 -3.5; 45 -3.5; 49 -3.5; 54 -3.7; 60 -3.7; 66 -3.6; 72 -3.7; 79 -3.9; 87 -4.6; 96 -5.6; 106 -6.3; 116 -6.4; 128 -6.2; 141 -5.3; 155 -4.1; 170 -4.0; 187 -4.1; 206 -3.8; 227 -3.7; 249 -3.8; 274 -3.9; 302 -4.0; 332 -4.2; 365 -4.3; 402 -4.3; 442 -4.0; 486 -4.0; 535 -3.9; 588 -3.8; 647 -3.7; 712 -3.7; 783 -3.5; 861 -3.3; 947 -4.1; 1042 -4.5; 1146 -4.8; 1261 -5.0; 1387 -5.4; 1526 -5.9; 1678 -6.2; 1846 -5.8; 2031 -4.6; 2234 -4.0; 2457 -3.4; 2703 -1.9; 2973 -1.0; 3270 -1.3; 3597 -2.8; 3957 -3.3; 4353 -3.2; 4788 -2.7; 5267 -0.5; 5793 -0.7; 6373 -0.6; 7010 -1.6; 7711 -3.9; 8482 -6.5; 9330 -7.3; 10263 -4.4; 11289 -4.1; 12418 -4.1; 13660 -4.1; 15026 -4.1; 16529 -4.1; 18182 -4.1; 20000 -4.1
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `MrSpeakers Aeon Flow Closed PreProduction GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-42**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `MrSpeakers Aeon Flow Closed PreProduction ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-4.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 114 Hz  | 3.69 | -2.7 dB |
+| Peaking | 115 Hz  | 3.69 | -2.7 dB |
 | Peaking | 1661 Hz | 2.75 | -2.4 dB |
-| Peaking | 2970 Hz | 3.43 | 3.2 dB  |
-| Peaking | 6064 Hz | 2.48 | 4.3 dB  |
-| Peaking | 8948 Hz | 4.57 | -4.3 dB |
-| Peaking | 21 Hz   | 0.87 | 1.1 dB  |
-| Peaking | 68 Hz   | 3.44 | 0.5 dB  |
-| Peaking | 219 Hz  | 3.58 | 0.5 dB  |
-| Peaking | 849 Hz  | 2.24 | 1.3 dB  |
-| Peaking | 1038 Hz | 2.35 | -0.9 dB |
+| Peaking | 2970 Hz | 3.41 | 3.2 dB  |
+| Peaking | 6067 Hz | 2.43 | 4.4 dB  |
+| Peaking | 8940 Hz | 4.37 | -4.3 dB |
+| Peaking | 22 Hz   | 0.84 | 1.1 dB  |
+| Peaking | 66 Hz   | 3.77 | 0.4 dB  |
+| Peaking | 218 Hz  | 3.4  | 0.5 dB  |
+| Peaking | 846 Hz  | 2.24 | 1.3 dB  |
+| Peaking | 1039 Hz | 2.35 | -0.9 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 0.9 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.6 dB  |
+| Peaking | 125 Hz   | 1.41 | -2.0 dB |
+| Peaking | 250 Hz   | 1.41 | 0.7 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.1 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20Flow%20Closed%20PreProduction/MrSpeakers%20Aeon%20Flow%20Closed%20PreProduction.png)

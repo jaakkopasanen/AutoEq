@@ -1,38 +1,56 @@
 # Sleek SA1- Normal Filter
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -5.3; 23 -5.4; 25 -5.5; 28 -5.6; 31 -5.6; 34 -5.7; 37 -5.7; 41 -5.8; 45 -5.9; 49 -6.1; 54 -6.3; 60 -6.6; 66 -6.9; 72 -7.2; 79 -7.5; 87 -7.8; 96 -7.9; 106 -8.2; 116 -8.2; 128 -8.5; 141 -8.5; 155 -8.6; 170 -8.5; 187 -8.5; 206 -8.2; 227 -8.0; 249 -7.7; 274 -7.3; 302 -6.8; 332 -6.2; 365 -5.6; 402 -4.9; 442 -4.4; 486 -3.9; 535 -3.2; 588 -2.5; 647 -1.8; 712 -1.1; 783 -0.6; 861 -0.2; 947 -0.1; 1042 0.1; 1146 0.2; 1261 0.2; 1387 0.3; 1526 0.3; 1678 0.5; 1846 1.2; 2031 1.9; 2234 2.7; 2457 3.5; 2703 4.4; 2973 6.0; 3270 6.0; 3597 6.0; 3957 4.6; 4353 1.6; 4788 -0.9; 5267 -3.1; 5793 -2.2; 6373 2.4; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -11.8; 23 -11.9; 25 -12.0; 28 -12.1; 31 -12.1; 34 -12.2; 37 -12.2; 41 -12.3; 45 -12.4; 49 -12.6; 54 -12.8; 60 -13.1; 66 -13.4; 72 -13.7; 79 -14.0; 87 -14.3; 96 -14.4; 106 -14.7; 116 -14.7; 128 -15.0; 141 -15.0; 155 -15.1; 170 -15.0; 187 -15.0; 206 -14.7; 227 -14.5; 249 -14.2; 274 -13.8; 302 -13.3; 332 -12.7; 365 -12.1; 402 -11.4; 442 -10.9; 486 -10.4; 535 -9.7; 588 -9.0; 647 -8.3; 712 -7.6; 783 -7.1; 861 -6.7; 947 -6.6; 1042 -6.4; 1146 -6.3; 1261 -6.3; 1387 -6.2; 1526 -6.2; 1678 -6.0; 1846 -5.3; 2031 -4.6; 2234 -3.8; 2457 -3.0; 2703 -2.1; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -1.9; 4353 -4.9; 4788 -7.4; 5267 -9.6; 5793 -8.7; 6373 -4.1; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sleek SA1- Normal Filter GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sleek SA1- Normal Filter ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 26 Hz   | 0.19 | -5.0 dB |
-| Peaking | 136 Hz  | 0.64 | -4.4 dB |
-| Peaking | 291 Hz  | 0.82 | -4.1 dB |
-| Peaking | 3388 Hz | 1.26 | 6.6 dB  |
-| Peaking | 5170 Hz | 4.2  | -6.2 dB |
-| Peaking | 512 Hz  | 2.96 | -0.7 dB |
-| Peaking | 854 Hz  | 1.57 | 0.7 dB  |
-| Peaking | 1627 Hz | 3.89 | -0.7 dB |
-| Peaking | 6532 Hz | 2.08 | -2.1 dB |
-| Peaking | 6706 Hz | 6.01 | 5.5 dB  |
+| Peaking | 27 Hz   | 0.18 | -5.0 dB |
+| Peaking | 141 Hz  | 0.63 | -4.5 dB |
+| Peaking | 297 Hz  | 0.85 | -3.8 dB |
+| Peaking | 3392 Hz | 1.25 | 6.6 dB  |
+| Peaking | 5146 Hz | 4.12 | -6.2 dB |
+| Peaking | 520 Hz  | 2.44 | -0.9 dB |
+| Peaking | 1353 Hz | 0.55 | 1.5 dB  |
+| Peaking | 1579 Hz | 1.22 | -1.9 dB |
+| Peaking | 6522 Hz | 1.98 | -2.4 dB |
+| Peaking | 6618 Hz | 5.72 | 5.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -5.3 dB |
+| Peaking | 62 Hz    | 1.41 | -4.8 dB |
+| Peaking | 125 Hz   | 1.41 | -7.0 dB |
+| Peaking | 250 Hz   | 1.41 | -6.7 dB |
+| Peaking | 500 Hz   | 1.41 | -2.3 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | 2.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.6 dB |
+| Peaking | 16000 Hz | 1.41 | -0.0 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sleek%20SA1-%20Normal%20Filter/Sleek%20SA1-%20Normal%20Filter.png)

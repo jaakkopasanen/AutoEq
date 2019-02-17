@@ -1,38 +1,56 @@
 # Oppo PM1 Velour Pads
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 3.3; 25 2.9; 28 2.6; 31 2.3; 34 2.2; 37 2.2; 41 2.1; 45 1.9; 49 2.1; 54 2.1; 60 1.1; 66 0.2; 72 -0.2; 79 -0.5; 87 -1.0; 96 -1.4; 106 -1.7; 116 -1.9; 128 -2.2; 141 -2.5; 155 -2.7; 170 -2.8; 187 -3.0; 206 -3.0; 227 -3.0; 249 -2.9; 274 -3.1; 302 -3.4; 332 -3.4; 365 -2.9; 402 -0.7; 442 -0.8; 486 -1.9; 535 -2.2; 588 -2.0; 647 -2.3; 712 -2.7; 783 -2.6; 861 -3.1; 947 -1.5; 1042 0.2; 1146 -0.0; 1261 -0.1; 1387 -0.4; 1526 -0.7; 1678 -0.5; 1846 0.1; 2031 0.7; 2234 1.4; 2457 2.1; 2703 2.4; 2973 2.9; 3270 3.1; 3597 3.0; 3957 3.4; 4353 3.3; 4788 4.2; 5267 5.9; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 -1.7; 9330 -2.9; 10263 -0.1
+GraphicEQ: 21 -2.8; 23 -3.2; 25 -3.5; 28 -3.9; 31 -4.1; 34 -4.2; 37 -4.2; 41 -4.4; 45 -4.6; 49 -4.3; 54 -4.3; 60 -5.4; 66 -6.3; 72 -6.6; 79 -7.0; 87 -7.5; 96 -7.9; 106 -8.1; 116 -8.4; 128 -8.7; 141 -9.0; 155 -9.1; 170 -9.2; 187 -9.5; 206 -9.4; 227 -9.4; 249 -9.3; 274 -9.6; 302 -9.8; 332 -9.8; 365 -9.3; 402 -7.2; 442 -7.3; 486 -8.3; 535 -8.7; 588 -8.5; 647 -8.7; 712 -9.1; 783 -9.0; 861 -9.5; 947 -8.0; 1042 -6.3; 1146 -6.5; 1261 -6.5; 1387 -6.9; 1526 -7.1; 1678 -7.0; 1846 -6.4; 2031 -5.7; 2234 -5.0; 2457 -4.4; 2703 -4.0; 2973 -3.5; 3270 -3.4; 3597 -3.5; 3957 -3.1; 4353 -3.2; 4788 -2.2; 5267 -0.6; 5793 -0.5; 6373 -1.0; 7010 -3.9; 7711 -6.2; 8482 -8.2; 9330 -9.4; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Oppo PM1 Velour Pads GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Oppo PM1 Velour Pads ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.6dB**.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 19 Hz   | 0.23 | 3.5 dB  |
-| Peaking | 177 Hz  | 0.44 | -3.6 dB |
-| Peaking | 795 Hz  | 2.8  | -2.4 dB |
-| Peaking | 6492 Hz | 0.89 | 9.3 dB  |
-| Peaking | 8403 Hz | 1.53 | -8.8 dB |
-| Peaking | 344 Hz  | 4.2  | -1.2 dB |
-| Peaking | 412 Hz  | 6.37 | 2.2 dB  |
-| Peaking | 1095 Hz | 3.02 | 1.9 dB  |
-| Peaking | 1795 Hz | 0.65 | -1.7 dB |
-| Peaking | 2594 Hz | 1.7  | 2.2 dB  |
+| Peaking | 19 Hz   | 0.24 | 3.5 dB  |
+| Peaking | 177 Hz  | 0.45 | -3.6 dB |
+| Peaking | 791 Hz  | 2.81 | -2.4 dB |
+| Peaking | 6348 Hz | 0.86 | 8.4 dB  |
+| Peaking | 8529 Hz | 1.61 | -8.0 dB |
+| Peaking | 414 Hz  | 1.92 | -2.4 dB |
+| Peaking | 418 Hz  | 4.68 | 4.0 dB  |
+| Peaking | 1668 Hz | 2.12 | -2.5 dB |
+| Peaking | 1912 Hz | 0.74 | 1.6 dB  |
+| Peaking | 4426 Hz | 4.98 | -1.6 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.2 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.7 dB  |
+| Peaking | 125 Hz   | 1.41 | -2.2 dB |
+| Peaking | 250 Hz   | 1.41 | -2.8 dB |
+| Peaking | 500 Hz   | 1.41 | -1.4 dB |
+| Peaking | 1000 Hz  | 1.41 | -1.3 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Oppo%20PM1%20Velour%20Pads/Oppo%20PM1%20Velour%20Pads.png)

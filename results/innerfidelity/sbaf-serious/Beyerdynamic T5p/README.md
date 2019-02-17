@@ -1,38 +1,56 @@
 # Beyerdynamic T5p
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 0.4; 25 0.3; 28 0.3; 31 0.4; 34 0.5; 37 0.5; 41 0.7; 45 0.8; 49 0.9; 54 1.1; 60 1.4; 66 1.8; 72 2.1; 79 1.9; 87 0.7; 96 -0.8; 106 -2.2; 116 -2.7; 128 -3.1; 141 -2.9; 155 -2.0; 170 -1.2; 187 -2.0; 206 -1.6; 227 -0.9; 249 -0.4; 274 0.2; 302 0.7; 332 1.0; 365 1.2; 402 1.2; 442 1.4; 486 1.1; 535 1.1; 588 2.1; 647 4.7; 712 2.0; 783 1.7; 861 0.6; 947 0.4; 1042 0.1; 1146 -0.4; 1261 -1.5; 1387 -2.0; 1526 -2.1; 1678 -2.4; 1846 -1.9; 2031 -1.8; 2234 -3.0; 2457 -1.0; 2703 0.7; 2973 1.5; 3270 2.7; 3597 3.7; 3957 4.7; 4353 2.4; 4788 6.0; 5267 5.5; 5793 0.8; 6373 0.1; 7010 2.3; 7711 0.2; 8482 -2.2; 9330 -0.5; 10263 0.0
+GraphicEQ: 21 -6.0; 23 -6.1; 25 -6.2; 28 -6.2; 31 -6.1; 34 -6.0; 37 -6.0; 41 -5.8; 45 -5.7; 49 -5.6; 54 -5.4; 60 -5.1; 66 -4.7; 72 -4.4; 79 -4.6; 87 -5.8; 96 -7.3; 106 -8.7; 116 -9.2; 128 -9.6; 141 -9.4; 155 -8.5; 170 -7.7; 187 -8.5; 206 -8.1; 227 -7.4; 249 -6.9; 274 -6.3; 302 -5.8; 332 -5.5; 365 -5.3; 402 -5.3; 442 -5.1; 486 -5.4; 535 -5.4; 588 -4.4; 647 -1.8; 712 -4.5; 783 -4.8; 861 -5.9; 947 -6.1; 1042 -6.4; 1146 -6.9; 1261 -8.0; 1387 -8.5; 1526 -8.6; 1678 -8.9; 1846 -8.4; 2031 -8.3; 2234 -9.5; 2457 -7.5; 2703 -5.8; 2973 -5.0; 3270 -3.8; 3597 -2.8; 3957 -1.8; 4353 -4.1; 4788 -0.5; 5267 -1.0; 5793 -5.7; 6373 -6.4; 7010 -4.2; 7711 -6.3; 8482 -8.7; 9330 -7.0; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Beyerdynamic T5p GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T5p ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.0dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
-| Peaking | 78 Hz   |  1.31 | 3.9 dB  |
-| Peaking | 117 Hz  |  1.31 | -4.8 dB |
-| Peaking | 646 Hz  |  1.68 | 3.5 dB  |
-| Peaking | 1816 Hz |  1.1  | -3.2 dB |
-| Peaking | 4207 Hz |  1.58 | 5.5 dB  |
-| Peaking | 332 Hz  |  1.07 | -2.0 dB |
-| Peaking | 343 Hz  |  1.78 | 3.0 dB  |
-| Peaking | 5110 Hz |  9.48 | 3.2 dB  |
-| Peaking | 5995 Hz | 10.29 | -2.6 dB |
-| Peaking | 8604 Hz |  7.62 | -3.1 dB |
+| Peaking | 77 Hz   |  1.31 | 3.9 dB  |
+| Peaking | 118 Hz  |  1.31 | -4.8 dB |
+| Peaking | 646 Hz  |  1.69 | 3.5 dB  |
+| Peaking | 1819 Hz |  1.1  | -3.2 dB |
+| Peaking | 4211 Hz |  1.56 | 5.5 dB  |
+| Peaking | 345 Hz  |  1.86 | 2.9 dB  |
+| Peaking | 349 Hz  |  1.14 | -1.9 dB |
+| Peaking | 5092 Hz |  9.3  | 3.1 dB  |
+| Peaking | 5968 Hz | 10.01 | -2.6 dB |
+| Peaking | 8646 Hz |  7.36 | -3.0 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -0.2 dB |
+| Peaking | 62 Hz    | 1.41 | 2.9 dB  |
+| Peaking | 125 Hz   | 1.41 | -3.4 dB |
+| Peaking | 250 Hz   | 1.41 | -0.4 dB |
+| Peaking | 500 Hz   | 1.41 | 2.5 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 16000 Hz | 1.41 | 0.0 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20T5p/Beyerdynamic%20T5p.png)

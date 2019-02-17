@@ -1,24 +1,22 @@
 # Focal Spirit One
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.0dB
-GraphicEQ: 21 -4.8; 23 -4.9; 25 -4.9; 28 -4.9; 31 -5.0; 34 -5.1; 37 -5.1; 41 -5.0; 45 -5.0; 49 -5.1; 54 -5.2; 60 -5.1; 66 -5.1; 72 -5.2; 79 -5.2; 87 -5.0; 96 -4.5; 106 -5.2; 116 -6.3; 128 -6.7; 141 -6.7; 155 -6.6; 170 -6.4; 187 -6.5; 206 -5.9; 227 -5.5; 249 -4.9; 274 -4.4; 302 -3.8; 332 -3.3; 365 -2.8; 402 -2.6; 442 -2.8; 486 -2.8; 535 -2.6; 588 -2.5; 647 -2.2; 712 -1.8; 783 -1.1; 861 -0.7; 947 -0.5; 1042 -0.0; 1146 -1.1; 1261 -0.9; 1387 -1.0; 1526 -1.4; 1678 -1.5; 1846 -0.8; 2031 0.2; 2234 1.6; 2457 3.0; 2703 4.3; 2973 4.9; 3270 4.8; 3597 3.5; 3957 1.4; 4353 0.4; 4788 0.6; 5267 1.8; 5793 5.1; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -10.7; 23 -10.8; 25 -10.9; 28 -10.9; 31 -11.0; 34 -11.0; 37 -11.0; 41 -10.9; 45 -11.0; 49 -11.1; 54 -11.1; 60 -11.1; 66 -11.1; 72 -11.2; 79 -11.1; 87 -10.9; 96 -10.5; 106 -11.2; 116 -12.3; 128 -12.7; 141 -12.7; 155 -12.5; 170 -12.3; 187 -12.4; 206 -11.9; 227 -11.4; 249 -10.9; 274 -10.4; 302 -9.7; 332 -9.3; 365 -8.8; 402 -8.6; 442 -8.8; 486 -8.8; 535 -8.6; 588 -8.5; 647 -8.2; 712 -7.7; 783 -7.1; 861 -6.7; 947 -6.4; 1042 -6.0; 1146 -7.0; 1261 -6.9; 1387 -7.0; 1526 -7.4; 1678 -7.4; 1846 -6.8; 2031 -5.7; 2234 -4.4; 2457 -2.9; 2703 -1.7; 2973 -1.1; 3270 -1.2; 3597 -2.4; 3957 -4.5; 4353 -5.5; 4788 -5.4; 5267 -4.2; 5793 -0.9; 6373 -0.5; 7010 -3.4; 7711 -5.7; 8482 -5.9; 9330 -6.0; 10263 -6.0; 11289 -6.0; 12418 -6.0; 13660 -6.0; 15026 -6.0; 16529 -6.0; 18182 -6.0; 20000 -6.0
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Focal Spirit One GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-59**.
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Focal Spirit One ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.5dB**.
 
@@ -33,5 +31,25 @@ When using independent subset of filters, apply preamp of **-6.5dB**.
 | Peaking | 573 Hz   | 3.1  | -0.9 dB |
 | Peaking | 1622 Hz  | 4.06 | -1.8 dB |
 | Peaking | 22050 Hz | 1.84 | 0.3 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -5.2 dB |
+| Peaking | 62 Hz    | 1.41 | -3.1 dB |
+| Peaking | 125 Hz   | 1.41 | -5.5 dB |
+| Peaking | 250 Hz   | 1.41 | -4.0 dB |
+| Peaking | 500 Hz   | 1.41 | -1.6 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.9 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Focal%20Spirit%20One/Focal%20Spirit%20One.png)

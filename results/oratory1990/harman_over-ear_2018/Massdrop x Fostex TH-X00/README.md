@@ -1,38 +1,56 @@
 # Massdrop x Fostex TH-X00
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.3dB
-GraphicEQ: 21 0.0; 23 4.3; 25 3.3; 28 2.3; 31 1.7; 34 1.3; 37 1.1; 41 1.0; 45 1.0; 49 0.9; 54 0.9; 60 1.0; 66 1.0; 72 0.9; 79 0.8; 87 0.6; 96 0.5; 106 0.2; 116 -0.0; 128 -0.2; 141 -0.3; 155 -0.4; 170 -0.4; 187 -0.4; 206 -0.4; 227 -0.3; 249 -0.2; 274 0.0; 302 0.3; 332 0.6; 365 0.9; 402 1.3; 442 1.7; 486 2.1; 535 2.7; 588 3.1; 647 2.0; 712 0.2; 783 0.8; 861 1.3; 947 0.2; 1042 0.0; 1146 0.2; 1261 0.1; 1387 -0.1; 1526 -0.1; 1678 0.1; 1846 0.4; 2031 0.8; 2234 0.9; 2457 1.0; 2703 1.8; 2973 5.9; 3270 6.0; 3597 6.0; 3957 5.9; 4353 3.2; 4788 0.1; 5267 -1.1; 5793 -0.1; 6373 4.3; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 -0.7; 11289 -4.2; 12418 -6.9; 13660 -6.1; 15026 -2.7; 16529 -1.3; 18182 -2.8; 20000 -6.5
+GraphicEQ: 21 -1.0; 23 -2.2; 25 -3.2; 28 -4.2; 31 -4.8; 34 -5.2; 37 -5.4; 41 -5.5; 45 -5.5; 49 -5.6; 54 -5.6; 60 -5.5; 66 -5.5; 72 -5.6; 79 -5.7; 87 -5.9; 96 -6.0; 106 -6.3; 116 -6.5; 128 -6.7; 141 -6.8; 155 -6.9; 170 -6.9; 187 -6.9; 206 -6.9; 227 -6.8; 249 -6.7; 274 -6.5; 302 -6.2; 332 -5.9; 365 -5.6; 402 -5.2; 442 -4.8; 486 -4.4; 535 -3.8; 588 -3.4; 647 -4.5; 712 -6.3; 783 -5.7; 861 -5.2; 947 -6.3; 1042 -6.5; 1146 -6.3; 1261 -6.4; 1387 -6.6; 1526 -6.6; 1678 -6.4; 1846 -6.1; 2031 -5.7; 2234 -5.6; 2457 -5.5; 2703 -4.7; 2973 -0.6; 3270 -0.5; 3597 -0.5; 3957 -0.6; 4353 -3.3; 4788 -6.4; 5267 -7.6; 5793 -6.6; 6373 -2.2; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -7.2; 11289 -10.7; 12418 -13.4; 13660 -12.6; 15026 -9.2; 16529 -7.8; 18182 -9.3; 20000 -13.0
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Massdrop x Fostex TH-X00 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-63**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Massdrop x Fostex TH-X00 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
-| Peaking | 14 Hz    |  1.18 | 8.9 dB  |
+| Peaking | 16 Hz    |  1.2  | 8.9 dB  |
 | Peaking | 546 Hz   |  2.55 | 3.0 dB  |
-| Peaking | 3447 Hz  |  2.72 | 7.1 dB  |
-| Peaking | 6595 Hz  |  8.22 | 4.9 dB  |
-| Peaking | 12975 Hz |  2.25 | -7.5 dB |
-| Peaking | 73 Hz    |  1.75 | 0.7 dB  |
-| Peaking | 168 Hz   |  1.56 | -0.7 dB |
-| Peaking | 4118 Hz  | 10.02 | 2.3 dB  |
-| Peaking | 5261 Hz  |  5.51 | -2.6 dB |
-| Peaking | 9681 Hz  |  5.42 | 1.5 dB  |
+| Peaking | 3448 Hz  |  2.7  | 7.1 dB  |
+| Peaking | 6599 Hz  |  7.99 | 4.9 dB  |
+| Peaking | 12984 Hz |  2.06 | -7.5 dB |
+| Peaking | 75 Hz    |  2.23 | 0.7 dB  |
+| Peaking | 173 Hz   |  1.62 | -0.6 dB |
+| Peaking | 4096 Hz  | 10    | 2.3 dB  |
+| Peaking | 5237 Hz  |  5.45 | -2.6 dB |
+| Peaking | 9674 Hz  |  5.08 | 1.5 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 2.4 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.6 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.2 dB |
+| Peaking | 250 Hz   | 1.41 | -0.8 dB |
+| Peaking | 500 Hz   | 1.41 | 2.7 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 16000 Hz | 1.41 | -5.2 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Fostex%20TH-X00/Massdrop%20x%20Fostex%20TH-X00.png)

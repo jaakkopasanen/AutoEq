@@ -1,38 +1,56 @@
 # Audio-Technica ATH-ANC23
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 5.9; 45 5.6; 49 5.2; 54 4.7; 60 3.9; 66 3.1; 72 2.5; 79 1.8; 87 0.9; 96 0.0; 106 -0.9; 116 -1.9; 128 -2.8; 141 -3.6; 155 -4.3; 170 -4.9; 187 -5.3; 206 -5.7; 227 -6.0; 249 -6.1; 274 -6.2; 302 -6.3; 332 -6.3; 365 -6.3; 402 -6.1; 442 -5.8; 486 -5.3; 535 -4.5; 588 -3.4; 647 -2.1; 712 -1.8; 783 -1.1; 861 -0.6; 947 -0.2; 1042 0.1; 1146 0.1; 1261 -0.3; 1387 -1.3; 1526 -2.5; 1678 -3.0; 1846 -2.8; 2031 -2.0; 2234 -0.5; 2457 0.8; 2703 0.8; 2973 -0.2; 3270 -1.7; 3597 -2.8; 3957 -3.5; 4353 -4.4; 4788 -5.4; 5267 -7.2; 5793 -7.9; 6373 -6.0; 7010 -3.4; 7711 -3.1; 8482 -5.0; 9330 -4.0; 10263 -0.1; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 -0.5; 20000 -6.2
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.6; 45 -0.9; 49 -1.3; 54 -1.8; 60 -2.6; 66 -3.4; 72 -4.0; 79 -4.7; 87 -5.6; 96 -6.5; 106 -7.4; 116 -8.4; 128 -9.3; 141 -10.1; 155 -10.8; 170 -11.4; 187 -11.8; 206 -12.2; 227 -12.5; 249 -12.6; 274 -12.7; 302 -12.8; 332 -12.8; 365 -12.8; 402 -12.6; 442 -12.3; 486 -11.8; 535 -11.0; 588 -9.9; 647 -8.6; 712 -8.3; 783 -7.6; 861 -7.1; 947 -6.7; 1042 -6.4; 1146 -6.4; 1261 -6.8; 1387 -7.8; 1526 -9.0; 1678 -9.5; 1846 -9.3; 2031 -8.5; 2234 -7.0; 2457 -5.7; 2703 -5.7; 2973 -6.7; 3270 -8.2; 3597 -9.3; 3957 -10.0; 4353 -10.9; 4788 -11.9; 5267 -13.7; 5793 -14.4; 6373 -12.5; 7010 -9.9; 7711 -9.6; 8482 -11.5; 9330 -10.5; 10263 -6.6; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -7.0; 20000 -12.7
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio-Technica ATH-ANC23 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio-Technica ATH-ANC23 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 33 Hz    | 0.4  | 6.7 dB  |
-| Peaking | 196 Hz   | 0.64 | -6.3 dB |
-| Peaking | 413 Hz   | 1.53 | -3.6 dB |
-| Peaking | 5488 Hz  | 1.93 | -7.7 dB |
-| Peaking | 8931 Hz  | 5.78 | -3.9 dB |
-| Peaking | 1139 Hz  | 1.78 | 2.2 dB  |
-| Peaking | 1745 Hz  | 1.57 | -3.8 dB |
-| Peaking | 2573 Hz  | 2.35 | 3.3 dB  |
-| Peaking | 3540 Hz  | 3.66 | -1.3 dB |
-| Peaking | 10656 Hz | 5.04 | 1.3 dB  |
+| Peaking | 33 Hz    | 0.41 | 6.7 dB  |
+| Peaking | 195 Hz   | 0.66 | -6.2 dB |
+| Peaking | 411 Hz   | 1.51 | -3.7 dB |
+| Peaking | 5664 Hz  | 1.47 | -7.4 dB |
+| Peaking | 19756 Hz | 2.08 | -6.1 dB |
+| Peaking | 1176 Hz  | 1.19 | 4.9 dB  |
+| Peaking | 1799 Hz  | 0.75 | -6.9 dB |
+| Peaking | 2538 Hz  | 1.9  | 6.3 dB  |
+| Peaking | 8745 Hz  | 1.3  | 3.7 dB  |
+| Peaking | 8896 Hz  | 3.83 | -6.9 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.9 dB  |
+| Peaking | 62 Hz    | 1.41 | 3.5 dB  |
+| Peaking | 125 Hz   | 1.41 | -2.5 dB |
+| Peaking | 250 Hz   | 1.41 | -6.1 dB |
+| Peaking | 500 Hz   | 1.41 | -4.2 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 4000 Hz  | 1.41 | -3.5 dB |
+| Peaking | 8000 Hz  | 1.41 | -4.5 dB |
+| Peaking | 16000 Hz | 1.41 | 0.6 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Audio-Technica%20ATH-ANC23/Audio-Technica%20ATH-ANC23.png)

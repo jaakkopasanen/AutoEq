@@ -1,38 +1,56 @@
 # Yamaha HP1
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 5.0; 25 4.6; 28 4.0; 31 3.6; 34 3.3; 37 3.0; 41 2.7; 45 2.5; 49 2.3; 54 2.0; 60 1.8; 66 1.6; 72 1.3; 79 1.1; 87 0.9; 96 0.5; 106 0.1; 116 -0.0; 128 -0.4; 141 -0.7; 155 -0.8; 170 -0.9; 187 -1.1; 206 -1.2; 227 -1.1; 249 -1.2; 274 -1.0; 302 -0.9; 332 -1.0; 365 -0.9; 402 -1.0; 442 -0.8; 486 -1.0; 535 -1.1; 588 -0.8; 647 -0.8; 712 -1.0; 783 -0.6; 861 -0.5; 947 -0.2; 1042 0.3; 1146 1.2; 1261 2.4; 1387 2.9; 1526 2.8; 1678 3.3; 1846 3.2; 2031 2.1; 2234 0.6; 2457 1.4; 2703 1.3; 2973 3.0; 3270 4.6; 3597 5.2; 3957 4.6; 4353 3.6; 4788 4.7; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 0.0; 16529 0.0; 18182 0.0; 20000 -0.5
+GraphicEQ: 21 -1.1; 23 -1.5; 25 -1.9; 28 -2.5; 31 -2.9; 34 -3.2; 37 -3.5; 41 -3.8; 45 -4.0; 49 -4.2; 54 -4.5; 60 -4.7; 66 -4.9; 72 -5.2; 79 -5.4; 87 -5.6; 96 -6.0; 106 -6.4; 116 -6.5; 128 -6.9; 141 -7.2; 155 -7.3; 170 -7.4; 187 -7.6; 206 -7.7; 227 -7.6; 249 -7.7; 274 -7.5; 302 -7.4; 332 -7.5; 365 -7.4; 402 -7.5; 442 -7.3; 486 -7.5; 535 -7.6; 588 -7.3; 647 -7.3; 712 -7.5; 783 -7.1; 861 -7.0; 947 -6.6; 1042 -6.1; 1146 -5.3; 1261 -4.1; 1387 -3.6; 1526 -3.7; 1678 -3.2; 1846 -3.3; 2031 -4.4; 2234 -5.9; 2457 -5.1; 2703 -5.2; 2973 -3.5; 3270 -1.9; 3597 -1.3; 3957 -1.9; 4353 -2.9; 4788 -1.8; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Yamaha HP1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Yamaha HP1 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 1.2  | 5.1 dB  |
-| Peaking | 48 Hz   | 1.85 | 1.6 dB  |
-| Peaking | 1605 Hz | 2.63 | 3.4 dB  |
-| Peaking | 3574 Hz | 3.06 | 4.7 dB  |
-| Peaking | 5651 Hz | 2.77 | 6.2 dB  |
-| Peaking | 79 Hz   | 1.5  | 1.2 dB  |
-| Peaking | 298 Hz  | 0.25 | -1.2 dB |
-| Peaking | 1252 Hz | 5.07 | 1.6 dB  |
-| Peaking | 1886 Hz | 9.19 | 1.1 dB  |
-| Peaking | 8181 Hz | 4.97 | -1.2 dB |
+| Peaking | 22 Hz   | 1.19 | 5.2 dB  |
+| Peaking | 50 Hz   | 1.82 | 1.6 dB  |
+| Peaking | 1605 Hz | 2.62 | 3.4 dB  |
+| Peaking | 3574 Hz | 3.05 | 4.7 dB  |
+| Peaking | 5653 Hz | 2.71 | 6.2 dB  |
+| Peaking | 81 Hz   | 2.14 | 0.7 dB  |
+| Peaking | 202 Hz  | 0.77 | -1.2 dB |
+| Peaking | 655 Hz  | 0.95 | -0.9 dB |
+| Peaking | 1257 Hz | 5.44 | 1.4 dB  |
+| Peaking | 8209 Hz | 4.73 | -1.2 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 4.3 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.6 dB |
+| Peaking | 250 Hz   | 1.41 | -1.0 dB |
+| Peaking | 500 Hz   | 1.41 | -1.2 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.9 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Yamaha%20HP1/Yamaha%20HP1.png)

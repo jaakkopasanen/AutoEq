@@ -1,38 +1,56 @@
 # Sennheiser AMBEO Smart Headset
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.1dB
-GraphicEQ: 21 0.0; 23 2.4; 25 1.6; 28 0.7; 31 0.1; 34 -0.4; 37 -0.7; 41 -1.1; 45 -1.4; 49 -1.6; 54 -2.0; 60 -2.6; 66 -3.1; 72 -3.6; 79 -4.1; 87 -4.7; 96 -5.3; 106 -5.9; 116 -6.5; 128 -7.0; 141 -7.4; 155 -7.6; 170 -7.6; 187 -7.5; 206 -7.5; 227 -7.4; 249 -7.1; 274 -6.7; 302 -6.2; 332 -5.6; 365 -5.0; 402 -4.4; 442 -3.7; 486 -3.1; 535 -2.3; 588 -1.5; 647 -0.7; 712 0.1; 783 0.7; 861 0.7; 947 0.3; 1042 -0.3; 1146 -0.9; 1261 -1.5; 1387 -1.7; 1526 -1.7; 1678 -1.6; 1846 -1.4; 2031 -1.0; 2234 0.2; 2457 1.7; 2703 2.5; 2973 2.5; 3270 2.1; 3597 1.4; 3957 0.6; 4353 -0.3; 4788 -0.6; 5267 -1.4; 5793 -3.2; 6373 -6.6; 7010 -5.9; 7711 -3.7; 8482 -6.0; 9330 -10.5; 10263 -11.0; 11289 -8.4; 12418 -7.3; 13660 -4.6; 15026 -0.1
+GraphicEQ: 21 -0.5; 23 -1.5; 25 -2.3; 28 -3.2; 31 -3.8; 34 -4.3; 37 -4.6; 41 -5.0; 45 -5.3; 49 -5.5; 54 -5.9; 60 -6.5; 66 -7.0; 72 -7.5; 79 -8.0; 87 -8.6; 96 -9.2; 106 -9.8; 116 -10.4; 128 -10.9; 141 -11.3; 155 -11.5; 170 -11.5; 187 -11.4; 206 -11.4; 227 -11.3; 249 -11.0; 274 -10.6; 302 -10.1; 332 -9.5; 365 -8.9; 402 -8.3; 442 -7.6; 486 -7.0; 535 -6.2; 588 -5.4; 647 -4.6; 712 -3.8; 783 -3.2; 861 -3.2; 947 -3.6; 1042 -4.2; 1146 -4.8; 1261 -5.4; 1387 -5.6; 1526 -5.6; 1678 -5.5; 1846 -5.3; 2031 -4.9; 2234 -3.7; 2457 -2.2; 2703 -1.4; 2973 -1.4; 3270 -1.8; 3597 -2.5; 3957 -3.3; 4353 -4.2; 4788 -4.5; 5267 -5.3; 5793 -7.1; 6373 -10.5; 7010 -9.8; 7711 -7.6; 8482 -9.9; 9330 -14.4; 10263 -14.9; 11289 -12.3; 12418 -11.2; 13660 -8.5; 15026 -4.0; 16529 -3.9; 18182 -3.9; 20000 -3.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser AMBEO Smart Headset GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-40**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser AMBEO Smart Headset ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.0dB**.
+When using independent subset of filters, apply preamp of **-3.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 20 Hz    | 1.88 | 4.2 dB   |
-| Peaking | 175 Hz   | 0.55 | -8.0 dB  |
-| Peaking | 3033 Hz  | 2.81 | 3.3 dB   |
-| Peaking | 6498 Hz  | 5.95 | -5.1 dB  |
-| Peaking | 10291 Hz | 1.8  | -11.4 dB |
-| Peaking | 370 Hz   | 1.92 | -0.8 dB  |
-| Peaking | 802 Hz   | 2.04 | 2.4 dB   |
-| Peaking | 1493 Hz  | 2.02 | -1.9 dB  |
-| Peaking | 13084 Hz | 3.82 | -4.5 dB  |
-| Peaking | 14486 Hz | 1.45 | 2.7 dB   |
+| Peaking | 19 Hz    | 1.95 | 4.4 dB   |
+| Peaking | 176 Hz   | 0.56 | -8.0 dB  |
+| Peaking | 3039 Hz  | 2.76 | 3.4 dB   |
+| Peaking | 6511 Hz  | 6.3  | -5.1 dB  |
+| Peaking | 10318 Hz | 1.62 | -11.3 dB |
+| Peaking | 818 Hz   | 2.47 | 2.6 dB   |
+| Peaking | 1594 Hz  | 1.32 | -1.8 dB  |
+| Peaking | 2508 Hz  | 4.66 | 1.5 dB   |
+| Peaking | 13144 Hz | 3.76 | -4.1 dB  |
+| Peaking | 14487 Hz | 1.22 | 2.3 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 1.2 dB   |
+| Peaking | 62 Hz    | 1.41 | -2.0 dB  |
+| Peaking | 125 Hz   | 1.41 | -6.0 dB  |
+| Peaking | 250 Hz   | 1.41 | -6.7 dB  |
+| Peaking | 500 Hz   | 1.41 | -1.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.5 dB   |
+| Peaking | 2000 Hz  | 1.41 | -0.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.4 dB   |
+| Peaking | 8000 Hz  | 1.41 | -10.0 dB |
+| Peaking | 16000 Hz | 1.41 | -1.6 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sennheiser%20AMBEO%20Smart%20Headset/Sennheiser%20AMBEO%20Smart%20Headset.png)

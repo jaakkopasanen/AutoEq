@@ -1,38 +1,56 @@
 # Thinksound ts02
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.2dB
-GraphicEQ: 21 -7.3; 23 -7.4; 25 -7.4; 28 -7.5; 31 -7.7; 34 -7.7; 37 -7.8; 41 -7.9; 45 -8.0; 49 -8.2; 54 -8.4; 60 -8.6; 66 -8.7; 72 -9.0; 79 -9.3; 87 -9.5; 96 -9.7; 106 -9.8; 116 -9.8; 128 -9.9; 141 -9.9; 155 -10.0; 170 -9.8; 187 -9.6; 206 -9.3; 227 -8.9; 249 -8.5; 274 -8.0; 302 -7.4; 332 -6.7; 365 -6.0; 402 -5.2; 442 -4.7; 486 -4.1; 535 -3.3; 588 -2.5; 647 -1.7; 712 -1.0; 783 -0.4; 861 -0.1; 947 0.2; 1042 -0.1; 1146 1.0; 1261 1.1; 1387 0.8; 1526 0.6; 1678 0.6; 1846 0.8; 2031 1.1; 2234 1.3; 2457 1.4; 2703 1.1; 2973 0.8; 3270 2.0; 3597 3.8; 3957 3.8; 4353 1.7; 4788 0.1; 5267 -2.0; 5793 -7.4; 6373 -6.2; 7010 -1.6; 7711 -0.2; 8482 -2.7; 9330 -5.2; 10263 -0.8; 11289 0.0
+GraphicEQ: 21 -11.6; 23 -11.6; 25 -11.7; 28 -11.8; 31 -11.9; 34 -12.0; 37 -12.1; 41 -12.2; 45 -12.3; 49 -12.4; 54 -12.7; 60 -12.9; 66 -13.0; 72 -13.3; 79 -13.6; 87 -13.7; 96 -14.0; 106 -14.0; 116 -14.1; 128 -14.2; 141 -14.2; 155 -14.2; 170 -14.1; 187 -13.9; 206 -13.6; 227 -13.2; 249 -12.8; 274 -12.3; 302 -11.7; 332 -11.0; 365 -10.2; 402 -9.5; 442 -8.9; 486 -8.4; 535 -7.6; 588 -6.8; 647 -6.0; 712 -5.3; 783 -4.7; 861 -4.3; 947 -4.1; 1042 -4.4; 1146 -3.3; 1261 -3.2; 1387 -3.5; 1526 -3.7; 1678 -3.7; 1846 -3.4; 2031 -3.2; 2234 -3.0; 2457 -2.9; 2703 -3.2; 2973 -3.4; 3270 -2.3; 3597 -0.5; 3957 -0.5; 4353 -2.5; 4788 -4.2; 5267 -6.2; 5793 -11.7; 6373 -10.4; 7010 -5.8; 7711 -4.4; 8482 -7.0; 9330 -9.5; 10263 -5.0; 11289 -4.3; 12418 -4.3; 13660 -4.3; 15026 -4.3; 16529 -4.3; 18182 -4.3; 20000 -4.3
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Thinksound ts02 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-42**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Thinksound ts02 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-3.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 36 Hz   | 0.24 | -7.3 dB |
+| Peaking | 35 Hz   | 0.23 | -7.3 dB |
 | Peaking | 154 Hz  | 0.7  | -5.5 dB |
-| Peaking | 313 Hz  | 1.19 | -3.4 dB |
-| Peaking | 3843 Hz | 1.68 | 4.1 dB  |
-| Peaking | 5992 Hz | 4    | -9.5 dB |
-| Peaking | 1199 Hz | 2.21 | 1.3 dB  |
-| Peaking | 2311 Hz | 1.97 | 0.7 dB  |
-| Peaking | 3009 Hz | 5.98 | -1.6 dB |
-| Peaking | 7441 Hz | 4.59 | 1.9 dB  |
-| Peaking | 9190 Hz | 5.87 | -5.7 dB |
+| Peaking | 312 Hz  | 1.18 | -3.4 dB |
+| Peaking | 3845 Hz | 1.65 | 4.1 dB  |
+| Peaking | 5987 Hz | 3.92 | -9.5 dB |
+| Peaking | 1194 Hz | 2.1  | 1.2 dB  |
+| Peaking | 2609 Hz | 1.53 | 0.9 dB  |
+| Peaking | 2977 Hz | 4.79 | -2.0 dB |
+| Peaking | 7568 Hz | 4.14 | 1.8 dB  |
+| Peaking | 9249 Hz | 5.42 | -5.7 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -7.3 dB |
+| Peaking | 62 Hz    | 1.41 | -6.2 dB |
+| Peaking | 125 Hz   | 1.41 | -8.2 dB |
+| Peaking | 250 Hz   | 1.41 | -7.2 dB |
+| Peaking | 500 Hz   | 1.41 | -2.5 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | 0.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | 2.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.4 dB |
+| Peaking | 16000 Hz | 1.41 | 0.6 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Thinksound%20ts02/Thinksound%20ts02.png)

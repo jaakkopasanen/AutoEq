@@ -1,38 +1,56 @@
 # JBL Everest Elite 700 Wired Passive
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 3.8; 25 3.8; 28 3.8; 31 3.9; 34 4.0; 37 4.1; 41 4.2; 45 4.3; 49 4.5; 54 4.7; 60 4.7; 66 4.9; 72 5.3; 79 5.6; 87 5.4; 96 4.5; 106 4.2; 116 4.1; 128 4.0; 141 3.8; 155 3.9; 170 3.5; 187 2.8; 206 2.3; 227 2.1; 249 1.8; 274 1.7; 302 1.8; 332 1.9; 365 2.4; 402 1.7; 442 0.0; 486 -0.2; 535 -0.1; 588 0.4; 647 0.3; 712 0.1; 783 0.3; 861 0.3; 947 0.2; 1042 -0.1; 1146 -0.1; 1261 -0.7; 1387 -0.4; 1526 -0.6; 1678 -0.9; 1846 -1.1; 2031 -0.8; 2234 -0.3; 2457 0.7; 2703 1.9; 2973 2.9; 3270 4.7; 3597 6.0; 3957 6.0; 4353 6.0; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -2.8; 23 -2.7; 25 -2.7; 28 -2.7; 31 -2.6; 34 -2.5; 37 -2.4; 41 -2.3; 45 -2.2; 49 -2.0; 54 -1.8; 60 -1.8; 66 -1.6; 72 -1.2; 79 -0.9; 87 -1.1; 96 -2.0; 106 -2.3; 116 -2.4; 128 -2.5; 141 -2.7; 155 -2.6; 170 -3.0; 187 -3.7; 206 -4.2; 227 -4.4; 249 -4.7; 274 -4.8; 302 -4.7; 332 -4.6; 365 -4.1; 402 -4.8; 442 -6.5; 486 -6.7; 535 -6.6; 588 -6.1; 647 -6.2; 712 -6.4; 783 -6.2; 861 -6.2; 947 -6.3; 1042 -6.6; 1146 -6.6; 1261 -7.2; 1387 -6.9; 1526 -7.1; 1678 -7.4; 1846 -7.6; 2031 -7.3; 2234 -6.8; 2457 -5.8; 2703 -4.6; 2973 -3.6; 3270 -1.8; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `JBL Everest Elite 700 Wired Passive GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `JBL Everest Elite 700 Wired Passive ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 23 Hz   | 0.6  | 3.1 dB  |
-| Peaking | 75 Hz   | 0.8  | 3.8 dB  |
-| Peaking | 174 Hz  | 0.65 | 1.8 dB  |
-| Peaking | 1919 Hz | 1.5  | -2.4 dB |
-| Peaking | 4363 Hz | 1.17 | 7.1 dB  |
-| Peaking | 384 Hz  | 4.78 | 2.8 dB  |
-| Peaking | 430 Hz  | 2.67 | -1.8 dB |
-| Peaking | 4553 Hz | 6.34 | -1.2 dB |
-| Peaking | 6397 Hz | 2.73 | 4.3 dB  |
-| Peaking | 7500 Hz | 1.86 | -3.5 dB |
+| Peaking | 23 Hz   | 0.61 | 3.1 dB  |
+| Peaking | 75 Hz   | 0.79 | 3.9 dB  |
+| Peaking | 175 Hz  | 0.66 | 1.8 dB  |
+| Peaking | 1923 Hz | 1.49 | -2.4 dB |
+| Peaking | 4368 Hz | 1.15 | 7.1 dB  |
+| Peaking | 383 Hz  | 4.89 | 2.7 dB  |
+| Peaking | 433 Hz  | 2.82 | -1.7 dB |
+| Peaking | 4559 Hz | 6.18 | -1.2 dB |
+| Peaking | 6396 Hz | 2.7  | 4.1 dB  |
+| Peaking | 7517 Hz | 1.84 | -3.4 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.3 dB  |
+| Peaking | 125 Hz   | 1.41 | 3.3 dB  |
+| Peaking | 250 Hz   | 1.41 | 1.5 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/JBL%20Everest%20Elite%20700%20Wired%20Passive/JBL%20Everest%20Elite%20700%20Wired%20Passive.png)

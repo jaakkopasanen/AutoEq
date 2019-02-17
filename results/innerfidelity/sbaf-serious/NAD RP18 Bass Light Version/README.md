@@ -1,24 +1,22 @@
 # NAD RP18 Bass Light Version
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 0.0; 23 6.0; 25 6.0; 28 6.0; 31 6.0; 34 6.0; 37 6.0; 41 6.0; 45 6.0; 49 6.0; 54 6.0; 60 6.0; 66 6.0; 72 6.0; 79 6.0; 87 6.0; 96 6.0; 106 6.0; 116 6.0; 128 6.0; 141 6.0; 155 6.0; 170 6.0; 187 6.0; 206 6.0; 227 6.0; 249 5.4; 274 4.2; 302 3.4; 332 2.3; 365 2.1; 402 1.6; 442 1.0; 486 0.4; 535 1.0; 588 0.9; 647 0.2; 712 -0.2; 783 -0.1; 861 -0.6; 947 -0.1; 1042 0.2; 1146 0.5; 1261 0.2; 1387 0.1; 1526 -0.2; 1678 -0.8; 1846 -0.0; 2031 0.4; 2234 0.2; 2457 -0.7; 2703 -0.1; 2973 1.3; 3270 1.7; 3597 3.2; 3957 2.4; 4353 1.2; 4788 -0.4; 5267 5.2; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.5; 155 -0.5; 170 -0.5; 187 -0.5; 206 -0.5; 227 -0.5; 249 -1.1; 274 -2.3; 302 -3.1; 332 -4.2; 365 -4.4; 402 -4.9; 442 -5.5; 486 -6.1; 535 -5.5; 588 -5.6; 647 -6.3; 712 -6.7; 783 -6.6; 861 -7.1; 947 -6.6; 1042 -6.3; 1146 -6.0; 1261 -6.3; 1387 -6.4; 1526 -6.7; 1678 -7.3; 1846 -6.5; 2031 -6.1; 2234 -6.3; 2457 -7.2; 2703 -6.6; 2973 -5.2; 3270 -4.8; 3597 -3.3; 3957 -4.1; 4353 -5.3; 4788 -6.9; 5267 -1.3; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `NAD RP18 Bass Light Version GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-61**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `NAD RP18 Bass Light Version ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
@@ -27,12 +25,32 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 | Peaking | 46 Hz   |  0.13 | 6.1 dB  |
 | Peaking | 217 Hz  |  1.33 | 2.7 dB  |
 | Peaking | 415 Hz  |  0.52 | -1.8 dB |
-| Peaking | 3621 Hz |  5.47 | 3.2 dB  |
-| Peaking | 5939 Hz |  4.06 | 6.8 dB  |
-| Peaking | 1152 Hz |  8.72 | 0.7 dB  |
-| Peaking | 2553 Hz | 15.55 | -1.6 dB |
-| Peaking | 4780 Hz |  9.81 | -2.7 dB |
-| Peaking | 5276 Hz | 11.84 | 2.5 dB  |
-| Peaking | 8223 Hz |  5.31 | -0.8 dB |
+| Peaking | 3618 Hz |  5.62 | 3.2 dB  |
+| Peaking | 5942 Hz |  3.96 | 6.8 dB  |
+| Peaking | 1153 Hz |  8.6  | 0.7 dB  |
+| Peaking | 2553 Hz | 14.13 | -1.5 dB |
+| Peaking | 4836 Hz |  8.71 | -3.1 dB |
+| Peaking | 5326 Hz |  8.05 | 2.5 dB  |
+| Peaking | 8243 Hz |  4.74 | -0.8 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.1 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.2 dB  |
+| Peaking | 125 Hz   | 1.41 | 4.9 dB  |
+| Peaking | 250 Hz   | 1.41 | 4.5 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.5 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/NAD%20RP18%20Bass%20Light%20Version/NAD%20RP18%20Bass%20Light%20Version.png)

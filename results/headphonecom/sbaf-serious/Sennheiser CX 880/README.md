@@ -1,38 +1,56 @@
 # Sennheiser CX 880
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.5dB
-GraphicEQ: 21 -4.6; 23 -5.1; 25 -5.4; 28 -5.9; 31 -6.3; 34 -6.6; 37 -6.9; 41 -7.2; 45 -7.5; 49 -7.7; 54 -7.9; 60 -8.2; 66 -8.5; 72 -8.8; 79 -8.9; 87 -9.1; 96 -9.2; 106 -9.2; 116 -9.2; 128 -9.2; 141 -9.0; 155 -8.9; 170 -8.7; 187 -8.3; 206 -7.9; 227 -7.4; 249 -6.9; 274 -6.4; 302 -5.7; 332 -5.0; 365 -4.2; 402 -3.5; 442 -3.1; 486 -2.5; 535 -1.8; 588 -1.2; 647 -0.6; 712 -0.0; 783 0.2; 861 0.3; 947 0.2; 1042 -0.1; 1146 -0.3; 1261 -0.9; 1387 -1.1; 1526 -1.9; 1678 -2.2; 1846 -2.2; 2031 -2.0; 2234 -1.6; 2457 -0.9; 2703 -0.1; 2973 1.1; 3270 2.7; 3597 3.4; 3957 2.0; 4353 -0.8; 4788 -2.8; 5267 -4.5; 5793 -6.5; 6373 -6.4; 7010 -4.9; 7711 -5.6; 8482 -9.1; 9330 -10.4; 10263 -4.8; 11289 0.0
+GraphicEQ: 21 -8.5; 23 -9.0; 25 -9.4; 28 -9.8; 31 -10.2; 34 -10.5; 37 -10.8; 41 -11.1; 45 -11.4; 49 -11.6; 54 -11.8; 60 -12.1; 66 -12.4; 72 -12.7; 79 -12.8; 87 -13.0; 96 -13.2; 106 -13.1; 116 -13.1; 128 -13.1; 141 -13.0; 155 -12.8; 170 -12.6; 187 -12.2; 206 -11.8; 227 -11.3; 249 -10.8; 274 -10.3; 302 -9.6; 332 -8.9; 365 -8.1; 402 -7.5; 442 -7.0; 486 -6.4; 535 -5.8; 588 -5.1; 647 -4.5; 712 -4.0; 783 -3.7; 861 -3.6; 947 -3.7; 1042 -4.0; 1146 -4.2; 1261 -4.8; 1387 -5.0; 1526 -5.8; 1678 -6.1; 1846 -6.1; 2031 -6.0; 2234 -5.6; 2457 -4.8; 2703 -4.0; 2973 -2.8; 3270 -1.3; 3597 -0.5; 3957 -1.9; 4353 -4.8; 4788 -6.8; 5267 -8.4; 5793 -10.4; 6373 -10.3; 7010 -8.9; 7711 -9.5; 8482 -13.0; 9330 -14.4; 10263 -8.8; 11289 -3.9; 12418 -3.9; 13660 -3.9; 15026 -3.9; 16529 -3.9; 18182 -3.9; 20000 -3.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sennheiser CX 880 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-35**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sennheiser CX 880 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-3.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-0.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 47 Hz    | 0.38 | -6.3 dB  |
-| Peaking | 133 Hz   | 0.69 | -5.1 dB  |
-| Peaking | 263 Hz   | 1.12 | -3.0 dB  |
-| Peaking | 6015 Hz  | 3.66 | -6.5 dB  |
-| Peaking | 8995 Hz  | 3.89 | -11.1 dB |
+| Peaking | 45 Hz    | 0.39 | -6.0 dB  |
+| Peaking | 129 Hz   | 0.68 | -5.4 dB  |
+| Peaking | 258 Hz   | 1.08 | -3.2 dB  |
+| Peaking | 6013 Hz  | 3.62 | -6.5 dB  |
+| Peaking | 8999 Hz  | 3.67 | -11.1 dB |
 | Peaking | 855 Hz   | 2.08 | 1.4 dB   |
 | Peaking | 1894 Hz  | 1.42 | -2.5 dB  |
-| Peaking | 3628 Hz  | 2.5  | 5.5 dB   |
-| Peaking | 4614 Hz  | 2.54 | -2.5 dB  |
-| Peaking | 11333 Hz | 5.96 | 2.2 dB   |
+| Peaking | 3637 Hz  | 2.49 | 5.4 dB   |
+| Peaking | 4696 Hz  | 2.58 | -2.5 dB  |
+| Peaking | 11425 Hz | 5.94 | 2.2 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -5.5 dB |
+| Peaking | 62 Hz    | 1.41 | -6.5 dB |
+| Peaking | 125 Hz   | 1.41 | -7.7 dB |
+| Peaking | 250 Hz   | 1.41 | -5.8 dB |
+| Peaking | 500 Hz   | 1.41 | -0.8 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.9 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -9.5 dB |
+| Peaking | 16000 Hz | 1.41 | 1.3 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20CX%20880/Sennheiser%20CX%20880.png)

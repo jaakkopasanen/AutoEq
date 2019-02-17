@@ -1,38 +1,56 @@
 # Sony MH1C
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -10.9; 23 -10.7; 25 -10.6; 28 -10.4; 31 -10.2; 34 -10.0; 37 -9.8; 41 -9.5; 45 -9.2; 49 -9.0; 54 -8.8; 60 -8.5; 66 -8.3; 72 -8.2; 79 -8.0; 87 -7.8; 96 -7.7; 106 -7.4; 116 -7.1; 128 -6.9; 141 -6.5; 155 -6.2; 170 -5.8; 187 -5.4; 206 -4.9; 227 -4.4; 249 -4.0; 274 -3.5; 302 -3.0; 332 -2.5; 365 -2.0; 402 -1.6; 442 -1.0; 486 -0.8; 535 -0.4; 588 0.2; 647 0.4; 712 0.4; 783 0.6; 861 0.4; 947 -0.0; 1042 -0.1; 1146 -1.1; 1261 -1.2; 1387 -1.5; 1526 -2.1; 1678 -2.7; 1846 -2.9; 2031 -2.8; 2234 -2.7; 2457 -2.1; 2703 -1.6; 2973 -0.4; 3270 1.4; 3597 2.8; 3957 3.1; 4353 2.4; 4788 3.2; 5267 5.3; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 0.0; 11289 0.0; 12418 0.0; 13660 0.0; 15026 -1.5; 16529 -0.1
+GraphicEQ: 21 -17.3; 23 -17.2; 25 -17.0; 28 -16.8; 31 -16.6; 34 -16.4; 37 -16.2; 41 -15.9; 45 -15.7; 49 -15.5; 54 -15.2; 60 -15.0; 66 -14.8; 72 -14.6; 79 -14.5; 87 -14.3; 96 -14.2; 106 -13.9; 116 -13.5; 128 -13.3; 141 -13.0; 155 -12.6; 170 -12.2; 187 -11.8; 206 -11.4; 227 -10.9; 249 -10.5; 274 -9.9; 302 -9.4; 332 -9.0; 365 -8.5; 402 -8.0; 442 -7.5; 486 -7.2; 535 -6.9; 588 -6.3; 647 -6.1; 712 -6.0; 783 -5.8; 861 -6.1; 947 -6.5; 1042 -6.5; 1146 -7.6; 1261 -7.6; 1387 -7.9; 1526 -8.6; 1678 -9.2; 1846 -9.3; 2031 -9.2; 2234 -9.2; 2457 -8.6; 2703 -8.1; 2973 -6.8; 3270 -5.0; 3597 -3.7; 3957 -3.3; 4353 -4.1; 4788 -3.2; 5267 -1.1; 5793 -0.5; 6373 -1.0; 7010 -3.9; 7711 -6.2; 8482 -6.4; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -7.9; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Sony MH1C GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Sony MH1C ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.8dB**.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 18 Hz    | 0.18 | -10.6 dB |
+| Peaking | 18 Hz    | 0.19 | -10.5 dB |
 | Peaking | 156 Hz   | 0.8  | -3.1 dB  |
-| Peaking | 2073 Hz  | 1.58 | -3.4 dB  |
-| Peaking | 3718 Hz  | 3.25 | 3.2 dB   |
-| Peaking | 5788 Hz  | 3.07 | 6.6 dB   |
-| Peaking | 308 Hz   | 1.88 | -0.6 dB  |
-| Peaking | 782 Hz   | 1.14 | 1.5 dB   |
-| Peaking | 1271 Hz  | 1.72 | -0.9 dB  |
-| Peaking | 15158 Hz | 3.45 | -0.1 dB  |
-| Peaking | 15249 Hz | 5.06 | -1.5 dB  |
+| Peaking | 2078 Hz  | 1.57 | -3.4 dB  |
+| Peaking | 3712 Hz  | 3.18 | 3.2 dB   |
+| Peaking | 5842 Hz  | 3.01 | 6.6 dB   |
+| Peaking | 320 Hz   | 1.43 | -0.8 dB  |
+| Peaking | 899 Hz   | 0.81 | 2.0 dB   |
+| Peaking | 1252 Hz  | 1.35 | -1.8 dB  |
+| Peaking | 8068 Hz  | 4.93 | -1.1 dB  |
+| Peaking | 15268 Hz | 4.76 | -1.6 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -11.0 dB |
+| Peaking | 62 Hz    | 1.41 | -5.8 dB  |
+| Peaking | 125 Hz   | 1.41 | -5.6 dB  |
+| Peaking | 250 Hz   | 1.41 | -3.1 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.4 dB   |
+| Peaking | 1000 Hz  | 1.41 | 0.8 dB   |
+| Peaking | 2000 Hz  | 1.41 | -4.5 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.5 dB   |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB   |
+| Peaking | 16000 Hz | 1.41 | -1.0 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sony%20MH1C/Sony%20MH1C.png)

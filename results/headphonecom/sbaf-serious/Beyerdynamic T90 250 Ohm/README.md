@@ -1,18 +1,16 @@
 # Beyerdynamic T90 250 Ohm
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -3.9dB
-GraphicEQ: 21 0.0; 23 0.8; 25 0.6; 28 0.4; 31 0.2; 34 -0.0; 37 -0.2; 41 -0.2; 45 -0.2; 49 -0.2; 54 -0.1; 60 0.7; 66 -0.7; 72 -1.7; 79 -2.3; 87 -2.6; 96 -3.0; 106 -3.3; 116 -3.7; 128 -4.1; 141 -4.5; 155 -4.7; 170 -4.6; 187 -4.9; 206 -4.9; 227 -4.9; 249 -4.8; 274 -4.7; 302 -4.4; 332 -4.1; 365 -3.7; 402 -3.2; 442 -3.0; 486 -2.5; 535 -1.9; 588 -1.1; 647 -0.9; 712 -0.1; 783 0.2; 861 0.6; 947 0.3; 1042 0.1; 1146 -0.2; 1261 -0.5; 1387 -1.5; 1526 -2.2; 1678 -2.7; 1846 -3.5; 2031 -3.7; 2234 -3.3; 2457 -3.4; 2703 -3.9; 2973 -4.7; 3270 -5.1; 3597 -4.5; 3957 -4.4; 4353 -4.1; 4788 3.2; 5267 1.6; 5793 -1.1; 6373 -8.1; 7010 -8.7; 7711 -10.2; 8482 -11.4; 9330 -11.2; 10263 -9.2; 11289 -8.2; 12418 -7.9; 13660 -5.0; 15026 -2.9; 16529 -6.7; 18182 -9.4; 20000 -0.7
+GraphicEQ: 21 -2.7; 23 -2.9; 25 -3.1; 28 -3.3; 31 -3.6; 34 -3.7; 37 -3.9; 41 -3.9; 45 -3.9; 49 -3.9; 54 -3.8; 60 -3.0; 66 -4.4; 72 -5.4; 79 -6.0; 87 -6.3; 96 -6.7; 106 -7.1; 116 -7.4; 128 -7.8; 141 -8.2; 155 -8.4; 170 -8.3; 187 -8.6; 206 -8.6; 227 -8.6; 249 -8.5; 274 -8.4; 302 -8.2; 332 -7.8; 365 -7.5; 402 -6.9; 442 -6.7; 486 -6.3; 535 -5.6; 588 -4.8; 647 -4.6; 712 -3.8; 783 -3.5; 861 -3.1; 947 -3.4; 1042 -3.7; 1146 -3.9; 1261 -4.2; 1387 -5.2; 1526 -5.9; 1678 -6.4; 1846 -7.2; 2031 -7.4; 2234 -7.0; 2457 -7.1; 2703 -7.6; 2973 -8.4; 3270 -8.8; 3597 -8.2; 3957 -8.1; 4353 -7.8; 4788 -0.5; 5267 -2.1; 5793 -4.8; 6373 -11.8; 7010 -12.4; 7711 -13.9; 8482 -15.1; 9330 -14.9; 10263 -13.0; 11289 -11.9; 12418 -11.6; 13660 -8.7; 15026 -6.7; 16529 -10.4; 18182 -13.2; 20000 -4.4
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Beyerdynamic T90 250 Ohm GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-38**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic T90 250 Ohm ParametricEQ.txt`.
@@ -25,14 +23,34 @@ When using independent subset of filters, apply preamp of **--0.0dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 201 Hz   | 0.65 | -5.3 dB  |
-| Peaking | 1979 Hz  | 2.64 | -3.2 dB  |
-| Peaking | 3187 Hz  | 3.44 | -4.3 dB  |
-| Peaking | 9061 Hz  | 1.45 | -11.9 dB |
-| Peaking | 17978 Hz | 1.71 | -9.2 dB  |
-| Peaking | 872 Hz   | 1.77 | 2.0 dB   |
-| Peaking | 2374 Hz  | 0.14 | -0.7 dB  |
-| Peaking | 4252 Hz  | 4.14 | -7.6 dB  |
-| Peaking | 4943 Hz  | 2.6  | 10.3 dB  |
-| Peaking | 6630 Hz  | 5.48 | -5.5 dB  |
+| Peaking | 1979 Hz  | 2.63 | -3.2 dB  |
+| Peaking | 3188 Hz  | 3.44 | -4.3 dB  |
+| Peaking | 9052 Hz  | 1.4  | -11.8 dB |
+| Peaking | 17974 Hz | 1.12 | -9.3 dB  |
+| Peaking | 876 Hz   | 1.77 | 2.0 dB   |
+| Peaking | 2213 Hz  | 0.15 | -0.7 dB  |
+| Peaking | 4297 Hz  | 4.08 | -7.6 dB  |
+| Peaking | 4899 Hz  | 2.56 | 10.4 dB  |
+| Peaking | 6588 Hz  | 5.26 | -5.5 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.1dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 0.5 dB   |
+| Peaking | 62 Hz    | 1.41 | 0.1 dB   |
+| Peaking | 125 Hz   | 1.41 | -3.7 dB  |
+| Peaking | 250 Hz   | 1.41 | -4.5 dB  |
+| Peaking | 500 Hz   | 1.41 | -1.6 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.9 dB   |
+| Peaking | 2000 Hz  | 1.41 | -4.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 0.4 dB   |
+| Peaking | 8000 Hz  | 1.41 | -11.1 dB |
+| Peaking | 16000 Hz | 1.41 | -7.7 dB  |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20T90%20250%20Ohm/Beyerdynamic%20T90%20250%20Ohm.png)

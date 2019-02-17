@@ -1,38 +1,56 @@
 # Audio Technica ATH-M50x (Massdrop Velours Earpads)
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -4.4dB
-GraphicEQ: 21 0.0; 23 3.0; 25 2.2; 28 1.2; 31 0.3; 34 -0.4; 37 -0.9; 41 -1.5; 45 -1.7; 49 -1.8; 54 -1.8; 60 -1.6; 66 -1.4; 72 -1.3; 79 -0.6; 87 -0.5; 96 -0.9; 106 -2.1; 116 -2.0; 128 -2.1; 141 -2.5; 155 -2.2; 170 -1.6; 187 -0.8; 206 0.1; 227 1.5; 249 2.9; 274 3.9; 302 4.0; 332 3.3; 365 2.6; 402 1.6; 442 0.8; 486 0.3; 535 0.0; 588 -0.0; 647 -0.0; 712 0.0; 783 0.1; 861 0.0; 947 -0.0; 1042 0.1; 1146 -0.2; 1261 -0.6; 1387 -0.7; 1526 -0.8; 1678 -0.8; 1846 -1.0; 2031 -1.4; 2234 -2.3; 2457 -3.3; 2703 -3.6; 2973 -3.3; 3270 -1.8; 3597 -0.1; 3957 -2.2; 4353 -5.6; 4788 -3.3; 5267 -1.2; 5793 -1.5; 6373 -2.5; 7010 -4.0; 7711 -4.3; 8482 -3.5; 9330 -2.8; 10263 -2.1; 11289 -2.7; 12418 -7.1; 13660 -12.5; 15026 -14.1; 16529 -11.2; 18182 -9.6; 20000 -15.4
+GraphicEQ: 21 -0.6; 23 -1.5; 25 -2.3; 28 -3.3; 31 -4.2; 34 -4.9; 37 -5.5; 41 -6.0; 45 -6.2; 49 -6.3; 54 -6.3; 60 -6.1; 66 -5.9; 72 -5.8; 79 -5.1; 87 -5.0; 96 -5.4; 106 -6.6; 116 -6.5; 128 -6.6; 141 -7.0; 155 -6.7; 170 -6.1; 187 -5.3; 206 -4.4; 227 -3.0; 249 -1.7; 274 -0.6; 302 -0.5; 332 -1.2; 365 -1.9; 402 -2.9; 442 -3.7; 486 -4.2; 535 -4.5; 588 -4.5; 647 -4.5; 712 -4.5; 783 -4.4; 861 -4.5; 947 -4.5; 1042 -4.4; 1146 -4.7; 1261 -5.1; 1387 -5.2; 1526 -5.3; 1678 -5.3; 1846 -5.5; 2031 -5.9; 2234 -6.8; 2457 -7.8; 2703 -8.1; 2973 -7.8; 3270 -6.3; 3597 -4.6; 3957 -6.7; 4353 -10.2; 4788 -7.8; 5267 -5.7; 5793 -6.0; 6373 -7.0; 7010 -8.5; 7711 -8.8; 8482 -8.0; 9330 -7.3; 10263 -6.6; 11289 -7.2; 12418 -11.6; 13660 -17.1; 15026 -18.6; 16529 -15.7; 18182 -14.1; 20000 -19.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `Audio Technica ATH-M50x (Massdrop Velours Earpads) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-44**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `Audio Technica ATH-M50x (Massdrop Velours Earpads) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-4.7dB**.
 
+| Type    | Fc       |     Q | Gain     |
+|:--------|:---------|:------|:---------|
+| Peaking | 20 Hz    |  3.53 | 3.5 dB   |
+| Peaking | 302 Hz   |  3.1  | 4.6 dB   |
+| Peaking | 3897 Hz  |  0.58 | -2.6 dB  |
+| Peaking | 14713 Hz |  1.78 | -11.8 dB |
+| Peaking | 20123 Hz |  0.51 | -14.1 dB |
+| Peaking | 21 Hz    |  1.29 | 3.2 dB   |
+| Peaking | 46 Hz    |  1.29 | -2.3 dB  |
+| Peaking | 137 Hz   |  2.31 | -2.7 dB  |
+| Peaking | 4378 Hz  | 12.28 | -2.9 dB  |
+| Peaking | 10790 Hz |  6.12 | 2.6 dB   |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.4dB** and set
+gains manually with these parameters.
+
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 21 Hz    | 3.66 | 4.4 dB   |
-| Peaking | 302 Hz   | 3.1  | 4.6 dB   |
-| Peaking | 3944 Hz  | 0.57 | -2.6 dB  |
-| Peaking | 14692 Hz | 2.07 | -11.9 dB |
-| Peaking | 20253 Hz | 0.89 | -14.1 dB |
-| Peaking | 22 Hz    | 1.01 | 2.4 dB   |
-| Peaking | 46 Hz    | 1.27 | -2.5 dB  |
-| Peaking | 137 Hz   | 2.29 | -2.7 dB  |
-| Peaking | 5552 Hz  | 8.21 | 1.7 dB   |
-| Peaking | 20642 Hz | 2.14 | -0.2 dB  |
+| Peaking | 31 Hz    | 1.41 | 0.6 dB   |
+| Peaking | 62 Hz    | 1.41 | -1.0 dB  |
+| Peaking | 125 Hz   | 1.41 | -3.2 dB  |
+| Peaking | 250 Hz   | 1.41 | 3.5 dB   |
+| Peaking | 500 Hz   | 1.41 | 0.2 dB   |
+| Peaking | 1000 Hz  | 1.41 | 0.2 dB   |
+| Peaking | 2000 Hz  | 1.41 | -1.5 dB  |
+| Peaking | 4000 Hz  | 1.41 | -2.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.5 dB  |
+| Peaking | 16000 Hz | 1.41 | -18.1 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audio%20Technica%20ATH-M50x%20(Massdrop%20Velours%20Earpads)/Audio%20Technica%20ATH-M50x%20(Massdrop%20Velours%20Earpads).png)

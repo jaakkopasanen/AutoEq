@@ -1,38 +1,56 @@
 # KZ ES4
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.1dB
-GraphicEQ: 21 -8.9; 23 -9.5; 25 -9.7; 28 -9.5; 31 -9.4; 34 -9.4; 37 -9.3; 41 -9.3; 45 -9.2; 49 -9.1; 54 -9.2; 60 -9.3; 66 -9.5; 72 -9.3; 79 -9.5; 87 -9.2; 96 -8.8; 106 -8.9; 116 -8.4; 128 -8.4; 141 -7.9; 155 -7.6; 170 -7.3; 187 -6.9; 206 -6.5; 227 -6.1; 249 -5.6; 274 -5.2; 302 -4.6; 332 -4.0; 365 -3.4; 402 -2.9; 442 -2.5; 486 -2.0; 535 -1.5; 588 -1.1; 647 -0.7; 712 -0.3; 783 0.1; 861 0.3; 947 0.3; 1042 -0.3; 1146 -1.0; 1261 -1.8; 1387 -2.4; 1526 -2.8; 1678 -3.3; 1846 -4.1; 2031 -4.9; 2234 -5.3; 2457 -4.6; 2703 -3.0; 2973 -1.6; 3270 -1.7; 3597 -3.0; 3957 -2.3; 4353 3.3; 4788 6.0; 5267 6.0; 5793 6.0; 6373 5.5; 7010 2.5; 7711 0.3; 8482 0.0; 9330 0.0; 10263 -0.2; 11289 -1.3; 12418 -4.7; 13660 -11.6; 15026 -16.2; 16529 -18.6; 18182 -22.2; 20000 -21.4
+GraphicEQ: 21 -15.4; 23 -16.0; 25 -16.2; 28 -16.0; 31 -15.9; 34 -15.9; 37 -15.8; 41 -15.8; 45 -15.7; 49 -15.6; 54 -15.7; 60 -15.8; 66 -16.0; 72 -15.8; 79 -16.0; 87 -15.7; 96 -15.3; 106 -15.4; 116 -14.9; 128 -14.9; 141 -14.4; 155 -14.1; 170 -13.8; 187 -13.4; 206 -13.0; 227 -12.6; 249 -12.1; 274 -11.7; 302 -11.1; 332 -10.5; 365 -9.9; 402 -9.4; 442 -9.0; 486 -8.5; 535 -8.0; 588 -7.6; 647 -7.2; 712 -6.8; 783 -6.4; 861 -6.2; 947 -6.2; 1042 -6.8; 1146 -7.5; 1261 -8.3; 1387 -8.9; 1526 -9.3; 1678 -9.8; 1846 -10.6; 2031 -11.4; 2234 -11.8; 2457 -11.1; 2703 -9.5; 2973 -8.1; 3270 -8.2; 3597 -9.5; 3957 -8.8; 4353 -3.2; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.7; 11289 -7.8; 12418 -11.2; 13660 -18.1; 15026 -22.7; 16529 -25.1; 18182 -28.7; 20000 -27.9
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `KZ ES4 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-60**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `KZ ES4 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.9dB**.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 45 Hz    | 0.13 | -9.5 dB  |
-| Peaking | 2246 Hz  | 0.66 | -18.9 dB |
-| Peaking | 3770 Hz  | 4.21 | -8.4 dB  |
-| Peaking | 4656 Hz  | 0.27 | 22.8 dB  |
-| Peaking | 18052 Hz | 0.33 | -28.8 dB |
-| Peaking | 3616 Hz  | 1.57 | -0.7 dB  |
-| Peaking | 6123 Hz  | 1.07 | 1.5 dB   |
-| Peaking | 7728 Hz  | 2.86 | -4.2 dB  |
-| Peaking | 11701 Hz | 1.93 | 4.0 dB   |
-| Peaking | 14266 Hz | 3.04 | -4.5 dB  |
+| Peaking | 2246 Hz  | 0.67 | -18.4 dB |
+| Peaking | 3769 Hz  | 4.36 | -8.1 dB  |
+| Peaking | 4696 Hz  | 0.26 | 21.7 dB  |
+| Peaking | 18054 Hz | 0.24 | -27.2 dB |
+| Peaking | 1330 Hz  | 6.02 | -0.9 dB  |
+| Peaking | 6361 Hz  | 1.92 | 2.1 dB   |
+| Peaking | 7629 Hz  | 2.44 | -4.6 dB  |
+| Peaking | 11698 Hz | 1.59 | 4.4 dB   |
+| Peaking | 14150 Hz | 2.53 | -4.5 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.7dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -9.6 dB  |
+| Peaking | 62 Hz    | 1.41 | -6.9 dB  |
+| Peaking | 125 Hz   | 1.41 | -6.7 dB  |
+| Peaking | 250 Hz   | 1.41 | -4.4 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.8 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.5 dB   |
+| Peaking | 2000 Hz  | 1.41 | -6.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 2.3 dB   |
+| Peaking | 8000 Hz  | 1.41 | 7.4 dB   |
+| Peaking | 16000 Hz | 1.41 | -27.5 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/KZ%20ES4/KZ%20ES4.png)

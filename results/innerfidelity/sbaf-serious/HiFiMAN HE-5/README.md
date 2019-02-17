@@ -1,38 +1,56 @@
 # HiFiMAN HE-5
-See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options.
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-Preamp: -6.6dB
-GraphicEQ: 21 0.0; 23 5.5; 25 5.0; 28 4.4; 31 3.9; 34 3.6; 37 3.4; 41 3.1; 45 2.9; 49 2.8; 54 3.0; 60 2.8; 66 2.2; 72 1.9; 79 1.7; 87 1.4; 96 1.1; 106 0.9; 116 0.7; 128 0.4; 141 0.1; 155 -0.2; 170 -0.3; 187 -0.4; 206 -0.7; 227 -0.8; 249 -1.0; 274 -0.9; 302 -0.9; 332 -0.8; 365 -0.9; 402 -1.3; 442 -0.9; 486 -0.7; 535 -1.1; 588 -0.9; 647 -0.8; 712 -0.5; 783 0.1; 861 -0.2; 947 -0.4; 1042 0.2; 1146 1.3; 1261 1.6; 1387 1.7; 1526 1.3; 1678 2.2; 1846 4.1; 2031 3.7; 2234 2.8; 2457 3.3; 2703 2.2; 2973 0.5; 3270 -0.4; 3597 -0.7; 3957 -1.2; 4353 -3.7; 4788 -2.4; 5267 0.4; 5793 -1.2; 6373 -4.0; 7010 -4.4; 7711 -4.4; 8482 -7.5; 9330 -9.4; 10263 -5.6; 11289 -2.5; 12418 -4.6; 13660 -6.8; 15026 -5.0; 16529 -0.8; 18182 -0.1; 20000 -5.1
+GraphicEQ: 21 -0.5; 23 -1.1; 25 -1.6; 28 -2.2; 31 -2.7; 34 -3.0; 37 -3.3; 41 -3.5; 45 -3.7; 49 -3.8; 54 -3.6; 60 -3.8; 66 -4.5; 72 -4.7; 79 -4.9; 87 -5.2; 96 -5.5; 106 -5.7; 116 -5.9; 128 -6.2; 141 -6.5; 155 -6.8; 170 -6.9; 187 -7.0; 206 -7.3; 227 -7.4; 249 -7.6; 274 -7.5; 302 -7.5; 332 -7.4; 365 -7.6; 402 -7.9; 442 -7.5; 486 -7.3; 535 -7.7; 588 -7.5; 647 -7.5; 712 -7.1; 783 -6.5; 861 -6.9; 947 -7.0; 1042 -6.4; 1146 -5.3; 1261 -5.1; 1387 -4.9; 1526 -5.3; 1678 -4.4; 1846 -2.6; 2031 -2.9; 2234 -3.8; 2457 -3.3; 2703 -4.4; 2973 -6.1; 3270 -7.0; 3597 -7.3; 3957 -7.8; 4353 -10.3; 4788 -9.0; 5267 -6.2; 5793 -7.8; 6373 -10.7; 7010 -11.1; 7711 -11.0; 8482 -14.1; 9330 -16.0; 10263 -12.2; 11289 -9.1; 12418 -11.2; 13660 -13.5; 15026 -11.6; 16529 -7.4; 18182 -6.7; 20000 -11.8
 ```
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
 `HiFiMAN HE-5 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-Set volume attenuation in the Connection tab for both channels to **-65**
 
 ### Peace
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE-5 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.9dB**.
 
 | Type    | Fc       |     Q | Gain    |
 |:--------|:---------|:------|:--------|
 | Peaking | 14 Hz    |  0.36 | 6.3 dB  |
-| Peaking | 2082 Hz  |  1.73 | 4.3 dB  |
-| Peaking | 4354 Hz  |  8.4  | -2.6 dB |
-| Peaking | 9822 Hz  |  0.87 | -6.9 dB |
-| Peaking | 20059 Hz |  3.94 | -4.5 dB |
-| Peaking | 363 Hz   |  0.8  | -1.3 dB |
-| Peaking | 5424 Hz  | 10.14 | 3.6 dB  |
-| Peaking | 9279 Hz  |  5.6  | -4.0 dB |
-| Peaking | 11201 Hz |  3.62 | 4.7 dB  |
-| Peaking | 13955 Hz |  3.67 | -4.3 dB |
+| Peaking | 2044 Hz  |  1.95 | 4.1 dB  |
+| Peaking | 4381 Hz  |  5.62 | -3.5 dB |
+| Peaking | 8951 Hz  |  2.24 | -8.7 dB |
+| Peaking | 14154 Hz |  2.5  | -6.6 dB |
+| Peaking | 390 Hz   |  0.66 | -1.2 dB |
+| Peaking | 1239 Hz  |  5.01 | 1.2 dB  |
+| Peaking | 5472 Hz  |  8.7  | 3.1 dB  |
+| Peaking | 6298 Hz  |  5.58 | -2.6 dB |
+| Peaking | 11114 Hz | 10.23 | 1.7 dB  |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.5dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 4.7 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.7 dB  |
+| Peaking | 125 Hz   | 1.41 | 0.2 dB  |
+| Peaking | 250 Hz   | 1.41 | -1.0 dB |
+| Peaking | 500 Hz   | 1.41 | -1.0 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 2000 Hz  | 1.41 | 4.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 8000 Hz  | 1.41 | -6.9 dB |
+| Peaking | 16000 Hz | 1.41 | -4.3 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE-5/HiFiMAN%20HE-5.png)
