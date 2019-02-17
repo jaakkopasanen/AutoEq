@@ -79,7 +79,6 @@ class FrequencyResponse:
         self.equalized_raw = self._init_data(equalized_raw)
         self.equalized_smoothed = self._init_data(equalized_smoothed)
         self.target = self._init_data(target)
-
         self._sort()
 
     @staticmethod
@@ -93,6 +92,11 @@ class FrequencyResponse:
     def _sort(self):
         sorted_inds = self.frequency.argsort()
         self.frequency = self.frequency[sorted_inds]
+        for i in range(1, len(self.frequency)):
+            if self.frequency[i] == self.frequency[i-1]:
+                raise ValueError('Duplicate values found at frequency {}. Remove duplicates manually.'.format(
+                    self.frequency[i])
+                )
         if len(self.raw):
             self.raw = self.raw[sorted_inds]
         if len(self.error):
@@ -168,7 +172,12 @@ class FrequencyResponse:
 
         f = open(file_path)
         df = pd.read_csv(f, sep=',', header=0)
-        frequency = list(df['frequency']) if 'frequency' in df else None
+        if 'frequency' not in df:
+            raise AttributeError('Column "frequency" missing from file "{fp}". Found columns are "{columns}".'.format(
+                fp=file_path,
+                columns='", "'.join(df.columns)
+            ))
+        frequency = list(df['frequency'])
         raw = list(df['raw']) if 'raw' in df else None
         error = list(df['error']) if 'error' in df else None
         smoothed = list(df['smoothed']) if 'smoothed' in df else None
@@ -255,6 +264,8 @@ class FrequencyResponse:
             if max_filters is not None:
                 raise TypeError('"max_filters" must not be given when "fc" and "q" are given.')
 
+        parametric = fc is None
+
         # Reset graph to be able to run this again
         tf.reset_default_graph()
         # Sampling frequency
@@ -269,7 +280,7 @@ class FrequencyResponse:
 
         n_ls = n_hs = 0
 
-        if fc is None:
+        if parametric:
             # Fc and Q not given, parametric equalizer, find initial estimation of peaks and gains
             fr_target_pos = np.clip(fr_target.smoothed, a_min=0.0, a_max=None)
             peak_inds = find_peaks(fr_target_pos)[0]
@@ -391,7 +402,7 @@ class FrequencyResponse:
             # Fc and Q given, fixed band equalizer
             Q = tf.get_variable(
                 'Q',
-                initializer=np.expand_dims(np.log10(fc), axis=1),
+                initializer=np.expand_dims(q, axis=1),
                 dtype='float32',
                 trainable=False
             )
@@ -523,11 +534,17 @@ class FrequencyResponse:
         # Fold center frequencies back to normal
         _fc = np.abs(np.round(_fc / fs) * fs - _fc)
 
-        # Filter selection slice
-        sl = np.logical_and(np.abs(_gain) > 0.1, _fc > 10)
-        _fc = _fc[sl]
-        _Q = np.abs(_Q[sl])
-        _gain = _gain[sl]
+        # Squeeze to rank-1 arrays
+        _fc = np.squeeze(_fc)
+        _Q = np.squeeze(_Q)
+        _gain = np.squeeze(_gain)
+
+        if parametric:
+            # Filter selection slice
+            sl = np.logical_and(np.abs(_gain) > 0.1, _fc > 10)
+            _fc = _fc[sl]
+            _Q = np.abs(_Q[sl])
+            _gain = _gain[sl]
 
         # Sort filters by center frequency
         sorted_inds = np.argsort(_fc)
@@ -539,7 +556,6 @@ class FrequencyResponse:
         _fc = np.expand_dims(_fc, axis=1)
         _Q = np.expand_dims(np.abs(_Q), axis=1)
         _gain = np.expand_dims(_gain, axis=1)
-
         # Re-compute eq
         a0, a1, a2, b0, b1, b2 = biquad.peaking(_fc, _Q, _gain, fs=fs)
         frequency = np.repeat(np.expand_dims(frequency, axis=0), len(_fc), axis=0)
@@ -599,7 +615,8 @@ class FrequencyResponse:
             coeffs_a = np.vstack((coeffs_a, _coeffs_a))
             coeffs_b = np.vstack((coeffs_b, _coeffs_b))
 
-        return np.transpose(np.vstack([fc, Q, gain])), n_produced, max_gains
+        filters = np.transpose(np.vstack([fc, Q, gain]))
+        return filters, n_produced, max_gains
 
     def optimize_fixed_band_eq(self, fc=None, q=None, fs=DEFAULT_FS):
         """Fits multiple fixed Fc and Q biquad filters to equalization curve.
@@ -622,7 +639,8 @@ class FrequencyResponse:
             fs=fs
         )
         self.fixed_band_eq = eq
-        return np.transpose(np.vstack([fc, q, gain])), len(fc), np.max(self.fixed_band_eq)
+        filters = np.transpose(np.vstack([fc, Q, gain]))
+        return filters, len(fc), np.max(self.fixed_band_eq)
 
     @staticmethod
     def write_eqapo_parametric_eq(file_path, filters):
