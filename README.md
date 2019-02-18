@@ -158,6 +158,8 @@ with improved USB audio drivers for usage with USB DACs. USB Audio Player
 PRO is not system-wide but works with local files and many streaming services though not with Spotify. USB Audio Player
 has Toneboosters Morphit plugin which has parametric equalizer. This app and the plugin are not free.
 
+![usb-audio-player-pro](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/usb-audio-player-pro.png)
+
 ### Music EQ Equalizer
 The best app for system wide equalization on Android (without rooting) is
 [Music Equalizer EQ](https://play.google.com/store/apps/details?id=mediam.music.equalizer) which is a 10-band standard
