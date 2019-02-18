@@ -140,22 +140,39 @@ by clicking *Import* button and select the *<model> ParametricEQ.txt* file.
 
 *Peace with full GUI for EqualizerAPO*
 
+### PulseEffects
+[PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
+processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter andset type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
+
+
+![pulseeffects](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/pulseeffects.png)
+
 ### USB Audio Player PRO
 [USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is and Android app
 with improved USB audio drivers for usage with USB DACs. USB Audio Player
 PRO is not system-wide but works with local files and many streaming services though not with Spotify. USB Audio Player
 has Toneboosters Morphit plugin which has parametric equalizer. This app and the plugin are not free.
 
-### PulseEffects
-[PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
-processing tools including parametric equalizer. Adjust filter parameters by clicking the cog button on each filter and
-set type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
+### Music EQ Equalizer and Other Fixed Band Equalizers
+The best app for system wide equalization on Android (without rooting) is Music EQ Equalizer which is a 10-band standard
+equalizer. Gains for each band can be adjusted with only 1 dB resolution but this isn't a problem because the average
+error is then only 0.25 dB, hardly noticeable. Bigger problem is the potential narrow peaks and notches between the
+bands' center frequencies since there isn't really anything that can be done for those. Fixed band equalizer should be
+avoided if there are more powerful options available.
+
+App starts in presets view so you need to click the left arrow in the top left corner to get to manual view. Here you
+can adjust the bands. Set each band level to closest value to what the equalization settings ask. Pre-computed results
+only support standard 10-band equalizers which have band center frequencies at 31, 63, 125, 250, 500, 1000, 2000, 4000,
+8000 and 16000 Hz. Q values are not adjustable so you don't have to worry about those even though they are given in the
+result settings.
+
+![music-eq-equalizer](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/music-eq-equalizer.png)
 
 
 ### Viper4Android and Other Convolution Engines
-Some software don't have parametric eq but have convolution engine which uses impulse response for processing. AutoEQ
-produces impulse responses with 44.1 kHz and 48 kHz. Import the WAV file with correct sampling frequency into the
-software.
+Some software don't have parametric eq but have convolution engine which uses impulse response for processing.
+Pre-computed results include impulse responses with 44.1 kHz and 48 kHz and other sampling rates are supported as well.
+Import the WAV file with correct sampling frequency into the software.
 
 ## Results
 The main principle used by AutoEQ for producing the equalization function is to invert error curve. Error is the
