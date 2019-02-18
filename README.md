@@ -69,16 +69,18 @@ parametric equalizers such as [Roon](https://roonlabs.com/) and [Foobar2000](htt
 #### Android
 doesn't have any system-wide parametric equalizers but there are several options which all have different caveats.
 
+Android has a native ten band equalizer which can be controlled with
+[Music Equalizer EQ](#music-eq-equalizer) app for system wide equalization without rooting. This is the best option for
+non-rooted users who use Spotify.
+
 [USB Audio Player PRO](#usb-audio-player-pro) with Toneboosters
 plugin and [Neutron Music Player](https://play.google.com/store/apps/details?id=com.neutroncode.mp) are the most popular
-music players with parametric equalizers but are not free or provide system-wide equalization.
+music players with parametric equalizers but are not free or provide system-wide equalization. USB Audio Player PRO
+might be the best option for non-rooted users who use Tidal.
 
 [Viper4Android](https://forum.xda-developers.com/showthread.php?t=2191223) is a system-wide
 convolution based equalizer (and much more) on Android but it requires rooting of the device. Viper4Android is supported
 with impulse response (WAV) files. For rooted users this is the best option.
-
-Android has a native ten band equalizer which can be controlled with
-[Music Equalizer EQ](#music-eq-equalizer) app for system wide equalization without rooting.
 
 #### Linux
 has [PulseEffects](#pulseeffects) for PulseAudio which has parametric eq and convolution eq.
