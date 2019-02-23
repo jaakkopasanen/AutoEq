@@ -765,7 +765,7 @@ class FrequencyResponse:
 
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
-        if os.path.isfile(parametric_eq_path):
+        if os.path.isfile(parametric_eq_path) and self.parametric_eq and len(self.parametric_eq):
             preamp = np.min([0.0, float(-np.max(self.parametric_eq))]) - 0.5
 
             # Read Parametric eq
@@ -843,7 +843,7 @@ class FrequencyResponse:
 
         # Add fixed band eq
         fixed_band_eq_path = os.path.join(dir_path, model + ' FixedBandEQ.txt')
-        if os.path.isfile(fixed_band_eq_path):
+        if os.path.isfile(fixed_band_eq_path) and self.parametric_eq and len(self.parametric_eq):
             preamp = np.min([0.0, float(-np.max(self.fixed_band_eq))]) - 0.5
 
             # Read Parametric eq
@@ -1008,7 +1008,8 @@ class FrequencyResponse:
                    bass_boost=None,
                    bass_boost_f_lower=None,
                    bass_boost_f_upper=None,
-                   tilt=None):
+                   tilt=None,
+                   min_mean_error=False):
         """Sets target and error curves."""
         # Copy and center compensation data
         compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
@@ -1019,6 +1020,7 @@ class FrequencyResponse:
         compensation.center()
         compensation.raw = compensation.smoothed
         compensation.smoothed = np.array([])
+
         # Set target
         self.target = compensation.raw + self._target(
             bass_boost=bass_boost,
@@ -1026,8 +1028,15 @@ class FrequencyResponse:
             bass_boost_f_upper=bass_boost_f_upper,
             tilt=tilt
         )
+
         # Set error
         self.error = self.raw - self.target
+        if min_mean_error:
+            # Shift error by it's mean in range 100 Hz to 10 kHz
+            delta = np.mean(self.error[np.logical_and(self.frequency >= 100, self.frequency <= 10000)])
+            self.error -= delta
+            self.target += delta
+
         # Smoothed error and equalization results are affected by compensation, reset them
         self.reset(
             raw=False,
@@ -1337,6 +1346,7 @@ class FrequencyResponse:
     def process(self,
                 calibration=None,
                 compensation=None,
+                min_mean_error=False,
                 equalize=False,
                 parametric_eq=False,
                 fixed_band_eq=False,
@@ -1358,6 +1368,9 @@ class FrequencyResponse:
         Args:
             calibration: Calibration FrequencyResponse. Must be interpolated and centered.
             compensation: Compensation FrequencyResponse. Must be interpolated and centered.
+            min_mean_error: Minimize mean error. Normally all curves cross at 1 kHz but this makes it possible to shift
+                            error curve so that mean between 100 Hz and 10 kHz is at minimum. Target curve is shifted
+                            accordingly. Useful for avoiding large bias caused by a narrow notch or peak at 1 kHz.
             equalize: Run equalization?
             parametric_eq: Optimize peaking filters for parametric eq?
             fixed_band_eq: Optimize peaking filters for fixed band (graphic) eq?
@@ -1427,7 +1440,8 @@ class FrequencyResponse:
                 bass_boost=bass_boost,
                 bass_boost_f_lower=bass_boost_f_lower,
                 bass_boost_f_upper=bass_boost_f_upper,
-                tilt=tilt
+                tilt=tilt,
+                min_mean_error=min_mean_error
             )
 
         # Smooth data
@@ -1541,6 +1555,7 @@ class FrequencyResponse:
             peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gains = fr.process(
                 calibration=calibration,
                 compensation=compensation,
+                min_mean_error=True,
                 equalize=equalize,
                 parametric_eq=parametric_eq,
                 fixed_band_eq=fixed_band_eq,
