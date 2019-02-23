@@ -5,7 +5,7 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.5; 155 -0.5; 170 -0.5; 187 -0.8; 206 -2.5; 227 -4.1; 249 -5.7; 274 -7.0; 302 -8.4; 332 -9.5; 365 -10.4; 402 -10.8; 442 -10.3; 486 -9.7; 535 -8.8; 588 -6.8; 647 -6.4; 712 -6.6; 783 -6.5; 861 -6.2; 947 -5.8; 1042 -6.2; 1146 -5.9; 1261 -5.9; 1387 -5.9; 1526 -6.0; 1678 -6.0; 1846 -4.9; 2031 -3.1; 2234 -0.8; 2457 -0.5; 2703 -1.4; 2973 -2.8; 3270 -2.9; 3597 -1.5; 3957 -1.5; 4353 -2.9; 4788 -3.0; 5267 -3.1; 5793 -3.0; 6373 -5.4; 7010 -5.1; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.5; 79 -0.5; 87 -0.5; 96 -0.5; 106 -0.5; 116 -0.5; 128 -0.5; 141 -0.5; 155 -0.6; 170 -2.0; 187 -3.5; 206 -5.2; 227 -6.9; 249 -8.4; 274 -9.7; 302 -11.1; 332 -12.3; 365 -13.1; 402 -13.5; 442 -13.0; 486 -12.4; 535 -11.6; 588 -9.5; 647 -9.2; 712 -9.3; 783 -9.2; 861 -8.9; 947 -8.5; 1042 -8.9; 1146 -8.7; 1261 -8.7; 1387 -8.6; 1526 -8.7; 1678 -8.7; 1846 -7.6; 2031 -5.8; 2234 -3.5; 2457 -2.7; 2703 -4.1; 2973 -5.5; 3270 -5.6; 3597 -4.3; 3957 -4.2; 4353 -5.6; 4788 -5.7; 5267 -5.8; 5793 -5.7; 6373 -8.1; 7010 -7.8; 7711 -6.8; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
@@ -16,22 +16,22 @@ HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be 
 In case of using Peace, click *Import* in Peace GUI and select `WalMart Three DOllar Buds ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6dB**.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 71 Hz   | 0.16 | 6.6 dB  |
-| Peaking | 307 Hz  | 2.26 | -4.1 dB |
-| Peaking | 426 Hz  | 1.63 | -6.5 dB |
-| Peaking | 2379 Hz | 3.66 | 5.1 dB  |
-| Peaking | 4068 Hz | 1.37 | 4.4 dB  |
-| Peaking | 12 Hz   | 2.36 | 0.5 dB  |
-| Peaking | 176 Hz  | 5.61 | 1.4 dB  |
-| Peaking | 1620 Hz | 5.52 | -0.8 dB |
-| Peaking | 5723 Hz | 8.67 | 1.7 dB  |
-| Peaking | 8589 Hz | 1.28 | -0.5 dB |
+| Type    | Fc      |    Q | Gain     |
+|:--------|:--------|:-----|:---------|
+| Peaking | 79 Hz   | 0.17 | 6.9 dB   |
+| Peaking | 276 Hz  | 1.99 | -4.1 dB  |
+| Peaking | 413 Hz  | 1.22 | -9.6 dB  |
+| Peaking | 1898 Hz | 0.85 | -10.6 dB |
+| Peaking | 2263 Hz | 1.12 | 12.3 dB  |
+| Peaking | 16 Hz   | 2.26 | 0.8 dB   |
+| Peaking | 151 Hz  | 5.92 | 1.4 dB   |
+| Peaking | 3149 Hz | 4.56 | -3.3 dB  |
+| Peaking | 3477 Hz | 2.35 | 2.4 dB   |
+| Peaking | 6644 Hz | 6.53 | -2.2 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB** and set
@@ -41,14 +41,14 @@ gains manually with these parameters.
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | 6.2 dB  |
 | Peaking | 62 Hz    | 1.41 | 3.9 dB  |
-| Peaking | 125 Hz   | 1.41 | 6.5 dB  |
-| Peaking | 250 Hz   | 1.41 | 0.0 dB  |
-| Peaking | 500 Hz   | 1.41 | -3.9 dB |
-| Peaking | 1000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 2000 Hz  | 1.41 | 2.6 dB  |
-| Peaking | 4000 Hz  | 1.41 | 4.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.3 dB |
-| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+| Peaking | 125 Hz   | 1.41 | 7.1 dB  |
+| Peaking | 250 Hz   | 1.41 | -2.8 dB |
+| Peaking | 500 Hz   | 1.41 | -5.9 dB |
+| Peaking | 1000 Hz  | 1.41 | -1.6 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 2.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 16000 Hz | 1.41 | 0.1 dB  |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

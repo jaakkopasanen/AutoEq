@@ -16,39 +16,39 @@ HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be 
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 770 250 Ohm (old earpads) ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 74 Hz    | 4.47 | 4.7 dB  |
-| Peaking | 3400 Hz  | 3.88 | 5.5 dB  |
-| Peaking | 6617 Hz  | 4    | -5.0 dB |
-| Peaking | 13043 Hz | 3.59 | -6.0 dB |
-| Peaking | 18802 Hz | 0.62 | -9.5 dB |
-| Peaking | 33 Hz    | 1.98 | -2.2 dB |
-| Peaking | 123 Hz   | 3.74 | -2.7 dB |
-| Peaking | 210 Hz   | 3.6  | 3.2 dB  |
-| Peaking | 2372 Hz  | 6.95 | -1.5 dB |
-| Peaking | 10357 Hz | 7.77 | 2.3 dB  |
+| Peaking | 73 Hz    | 4.31 | 4.7 dB  |
+| Peaking | 3401 Hz  | 3.77 | 5.6 dB  |
+| Peaking | 6612 Hz  | 4.08 | -5.0 dB |
+| Peaking | 13044 Hz | 3.64 | -6.0 dB |
+| Peaking | 18800 Hz | 0.62 | -9.5 dB |
+| Peaking | 32 Hz    | 2.02 | -2.0 dB |
+| Peaking | 123 Hz   | 3.78 | -2.7 dB |
+| Peaking | 210 Hz   | 3.46 | 3.2 dB  |
+| Peaking | 2379 Hz  | 7.17 | -1.5 dB |
+| Peaking | 10295 Hz | 7.71 | 2.3 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.4dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.6dB** and set
 gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | -3.2 dB |
-| Peaking | 62 Hz    | 1.41 | 3.9 dB  |
+| Peaking | 62 Hz    | 1.41 | 4.0 dB  |
 | Peaking | 125 Hz   | 1.41 | -2.1 dB |
-| Peaking | 250 Hz   | 1.41 | 2.4 dB  |
-| Peaking | 500 Hz   | 1.41 | -1.5 dB |
-| Peaking | 1000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 250 Hz   | 1.41 | 2.5 dB  |
+| Peaking | 500 Hz   | 1.41 | -1.4 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 4000 Hz  | 1.41 | 3.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.7 dB |
-| Peaking | 16000 Hz | 1.41 | -9.7 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.6 dB |
+| Peaking | 16000 Hz | 1.41 | -9.6 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

@@ -23,18 +23,18 @@ When using independent subset of filters, apply preamp of **-6.0dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 39 Hz    | 0.33 | -4.8 dB  |
-| Peaking | 166 Hz   | 1.01 | -2.9 dB  |
-| Peaking | 3023 Hz  | 3.07 | 3.9 dB   |
-| Peaking | 9595 Hz  | 0.36 | 8.6 dB   |
+| Peaking | 166 Hz   | 1    | -2.9 dB  |
+| Peaking | 3023 Hz  | 3.08 | 3.9 dB   |
+| Peaking | 9597 Hz  | 0.36 | 8.6 dB   |
 | Peaking | 16447 Hz | 0.78 | -28.8 dB |
-| Peaking | 1298 Hz  | 4.73 | -1.8 dB  |
-| Peaking | 6157 Hz  | 4.07 | 3.4 dB   |
-| Peaking | 9456 Hz  | 1.3  | -3.4 dB  |
-| Peaking | 12358 Hz | 2.27 | 5.6 dB   |
-| Peaking | 14822 Hz | 4.24 | -4.1 dB  |
+| Peaking | 1303 Hz  | 4.71 | -1.9 dB  |
+| Peaking | 6134 Hz  | 4.07 | 3.4 dB   |
+| Peaking | 9449 Hz  | 1.33 | -3.4 dB  |
+| Peaking | 12405 Hz | 2.28 | 5.6 dB   |
+| Peaking | 14889 Hz | 4.24 | -4.0 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.7dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.6dB** and set
 gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -48,7 +48,7 @@ gains manually with these parameters.
 | Peaking | 2000 Hz  | 1.41 | 1.2 dB   |
 | Peaking | 4000 Hz  | 1.41 | 5.1 dB   |
 | Peaking | 8000 Hz  | 1.41 | 4.0 dB   |
-| Peaking | 16000 Hz | 1.41 | -25.3 dB |
+| Peaking | 16000 Hz | 1.41 | -25.4 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

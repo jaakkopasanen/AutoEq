@@ -5,7 +5,7 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-GraphicEQ: 21 -4.3; 23 -4.6; 25 -4.9; 28 -5.3; 31 -5.6; 34 -5.9; 37 -6.1; 41 -6.4; 45 -6.6; 49 -6.9; 54 -7.2; 60 -7.7; 66 -8.0; 72 -8.2; 79 -8.7; 87 -9.1; 96 -9.4; 106 -9.7; 116 -9.9; 128 -10.2; 141 -10.2; 155 -10.5; 170 -10.7; 187 -10.6; 206 -10.6; 227 -10.5; 249 -10.4; 274 -10.3; 302 -10.0; 332 -9.6; 365 -9.2; 402 -8.8; 442 -8.5; 486 -8.1; 535 -7.6; 588 -7.1; 647 -6.7; 712 -6.4; 783 -6.1; 861 -6.2; 947 -6.3; 1042 -6.6; 1146 -6.8; 1261 -7.2; 1387 -7.6; 1526 -8.1; 1678 -8.1; 1846 -7.1; 2031 -5.7; 2234 -3.8; 2457 -1.4; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -9.4; 10263 -8.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
+GraphicEQ: 21 -6.0; 23 -6.3; 25 -6.6; 28 -7.0; 31 -7.3; 34 -7.6; 37 -7.8; 41 -8.1; 45 -8.3; 49 -8.6; 54 -8.9; 60 -9.4; 66 -9.7; 72 -10.0; 79 -10.4; 87 -10.8; 96 -11.1; 106 -11.4; 116 -11.6; 128 -11.9; 141 -12.0; 155 -12.2; 170 -12.4; 187 -12.3; 206 -12.4; 227 -12.2; 249 -12.2; 274 -12.0; 302 -11.7; 332 -11.3; 365 -10.9; 402 -10.5; 442 -10.2; 486 -9.8; 535 -9.3; 588 -8.8; 647 -8.5; 712 -8.2; 783 -7.8; 861 -7.9; 947 -8.0; 1042 -8.3; 1146 -8.6; 1261 -8.9; 1387 -9.3; 1526 -9.8; 1678 -9.8; 1846 -8.9; 2031 -7.4; 2234 -5.5; 2457 -3.1; 2703 -1.0; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.8; 9330 -11.1; 10263 -10.2; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
@@ -20,34 +20,34 @@ In case of using other parametric equalizer, apply preamp of **-6.6dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.7dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 13 Hz    | 0.5  | 2.9 dB  |
-| Peaking | 195 Hz   | 0.42 | -4.4 dB |
-| Peaking | 1646 Hz  | 1.29 | -8.1 dB |
-| Peaking | 3029 Hz  | 0.37 | 8.4 dB  |
-| Peaking | 9402 Hz  | 1.97 | -6.0 dB |
-| Peaking | 2606 Hz  | 5.48 | 1.7 dB  |
-| Peaking | 4524 Hz  | 0.8  | -1.3 dB |
-| Peaking | 6676 Hz  | 1.57 | 3.1 dB  |
-| Peaking | 7375 Hz  | 5.01 | -3.6 dB |
-| Peaking | 14825 Hz | 1.51 | -0.6 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 89 Hz   | 0.72 | -1.7 dB |
+| Peaking | 230 Hz  | 0.46 | -5.4 dB |
+| Peaking | 1688 Hz | 1.18 | -9.1 dB |
+| Peaking | 3186 Hz | 0.46 | 8.9 dB  |
+| Peaking | 9504 Hz | 2.86 | -7.8 dB |
+| Peaking | 19 Hz   | 2.12 | 1.0 dB  |
+| Peaking | 2780 Hz | 5.54 | 1.6 dB  |
+| Peaking | 4759 Hz | 0.86 | -1.4 dB |
+| Peaking | 6453 Hz | 1.65 | 3.0 dB  |
+| Peaking | 7382 Hz | 5.51 | -3.3 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.8dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.1dB** and set
 gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 1.6 dB  |
-| Peaking | 62 Hz    | 1.41 | -1.1 dB |
-| Peaking | 125 Hz   | 1.41 | -3.2 dB |
-| Peaking | 250 Hz   | 1.41 | -3.8 dB |
-| Peaking | 500 Hz   | 1.41 | -0.5 dB |
-| Peaking | 1000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 2000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 4000 Hz  | 1.41 | 8.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 31 Hz    | 1.41 | -0.1 dB |
+| Peaking | 62 Hz    | 1.41 | -2.3 dB |
+| Peaking | 125 Hz   | 1.41 | -4.5 dB |
+| Peaking | 250 Hz   | 1.41 | -5.1 dB |
+| Peaking | 500 Hz   | 1.41 | -1.8 dB |
+| Peaking | 1000 Hz  | 1.41 | -1.5 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 9.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.5 dB |
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Impulse Response

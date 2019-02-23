@@ -16,22 +16,22 @@ HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be 
 In case of using Peace, click *Import* in Peace GUI and select `HiFiMAN HE1000 PreProduction ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-3.8dB**.
 
 | Type    | Fc      |     Q | Gain    |
 |:--------|:--------|:------|:--------|
 | Peaking | 27 Hz   |  0.7  | 3.1 dB  |
-| Peaking | 1333 Hz |  6.15 | 1.6 dB  |
-| Peaking | 2326 Hz |  1.48 | 3.8 dB  |
-| Peaking | 4636 Hz |  5.95 | -2.9 dB |
-| Peaking | 7156 Hz |  2.86 | -4.4 dB |
-| Peaking | 68 Hz   |  1.75 | 0.7 dB  |
-| Peaking | 146 Hz  |  1.61 | -0.6 dB |
-| Peaking | 174 Hz  |  5.01 | -0.9 dB |
-| Peaking | 310 Hz  |  4.13 | -1.9 dB |
-| Peaking | 3740 Hz | 11.47 | 1.3 dB  |
+| Peaking | 1330 Hz |  6.43 | 1.7 dB  |
+| Peaking | 2324 Hz |  1.49 | 3.8 dB  |
+| Peaking | 4636 Hz |  5.94 | -2.9 dB |
+| Peaking | 7159 Hz |  2.85 | -4.4 dB |
+| Peaking | 67 Hz   |  1.64 | 0.8 dB  |
+| Peaking | 155 Hz  |  0.12 | -0.2 dB |
+| Peaking | 168 Hz  |  3.05 | -1.1 dB |
+| Peaking | 309 Hz  |  5    | -1.8 dB |
+| Peaking | 3742 Hz | 12.14 | 1.3 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.3dB** and set
@@ -47,7 +47,7 @@ gains manually with these parameters.
 | Peaking | 1000 Hz  | 1.41 | -0.3 dB |
 | Peaking | 2000 Hz  | 1.41 | 4.1 dB  |
 | Peaking | 4000 Hz  | 1.41 | -0.4 dB |
-| Peaking | 8000 Hz  | 1.41 | -3.0 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.1 dB |
 | Peaking | 16000 Hz | 1.41 | 0.2 dB  |
 
 ### Impulse Response

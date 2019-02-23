@@ -18,20 +18,20 @@ In case of using Peace, click *Import* in Peace GUI and select `Bowers & Wilkins
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-3.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.8dB**.
+When using independent subset of filters, apply preamp of **-2.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 37 Hz    | 0.05 | -3.4 dB  |
-| Peaking | 547 Hz   | 0.97 | 5.0 dB   |
-| Peaking | 1679 Hz  | 2    | -5.7 dB  |
-| Peaking | 2482 Hz  | 1.74 | 3.5 dB   |
+| Peaking | 42 Hz    | 0.07 | -3.4 dB  |
+| Peaking | 546 Hz   | 0.99 | 4.8 dB   |
+| Peaking | 1678 Hz  | 2.01 | -5.7 dB  |
+| Peaking | 2488 Hz  | 1.76 | 3.4 dB   |
 | Peaking | 18488 Hz | 1.4  | -10.0 dB |
-| Peaking | 813 Hz   | 4.74 | 0.3 dB   |
-| Peaking | 3648 Hz  | 3.43 | 1.3 dB   |
-| Peaking | 4388 Hz  | 3.42 | -2.1 dB  |
-| Peaking | 6956 Hz  | 9.67 | 2.6 dB   |
-| Peaking | 14503 Hz | 2.83 | 1.7 dB   |
+| Peaking | 24 Hz    | 2.23 | -0.5 dB  |
+| Peaking | 3660 Hz  | 3.47 | 1.3 dB   |
+| Peaking | 4403 Hz  | 3.38 | -2.1 dB  |
+| Peaking | 7009 Hz  | 9.55 | 2.6 dB   |
+| Peaking | 14494 Hz | 2.83 | 1.7 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.5dB** and set

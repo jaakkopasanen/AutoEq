@@ -5,7 +5,7 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -1.1; 72 -1.9; 79 -2.6; 87 -3.2; 96 -3.8; 106 -4.3; 116 -4.8; 128 -5.1; 141 -5.3; 155 -5.4; 170 -5.4; 187 -5.3; 206 -5.2; 227 -5.1; 249 -5.1; 274 -5.0; 302 -5.0; 332 -4.9; 365 -4.8; 402 -4.9; 442 -4.9; 486 -5.0; 535 -5.0; 588 -5.1; 647 -5.2; 712 -5.4; 783 -5.6; 861 -5.9; 947 -6.2; 1042 -6.7; 1146 -7.3; 1261 -8.1; 1387 -9.0; 1526 -9.9; 1678 -10.8; 1846 -11.2; 2031 -11.0; 2234 -10.6; 2457 -10.2; 2703 -10.2; 2973 -9.5; 3270 -8.1; 3597 -7.5; 3957 -7.4; 4353 -7.6; 4788 -8.3; 5267 -9.8; 5793 -9.0; 6373 -4.7; 7010 -4.1; 7711 -6.2; 8482 -8.6; 9330 -11.2; 10263 -9.7; 11289 -6.9; 12418 -9.8; 13660 -19.6; 15026 -26.1; 16529 -24.6; 18182 -17.6; 20000 -6.5
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.8; 72 -1.6; 79 -2.3; 87 -2.9; 96 -3.5; 106 -4.0; 116 -4.4; 128 -4.7; 141 -4.9; 155 -5.0; 170 -5.0; 187 -4.9; 206 -4.8; 227 -4.8; 249 -4.7; 274 -4.7; 302 -4.6; 332 -4.5; 365 -4.5; 402 -4.5; 442 -4.6; 486 -4.6; 535 -4.6; 588 -4.7; 647 -4.8; 712 -5.0; 783 -5.2; 861 -5.5; 947 -5.9; 1042 -6.4; 1146 -7.0; 1261 -7.7; 1387 -8.6; 1526 -9.6; 1678 -10.4; 1846 -10.9; 2031 -10.7; 2234 -10.2; 2457 -9.8; 2703 -9.8; 2973 -9.1; 3270 -7.8; 3597 -7.1; 3957 -7.1; 4353 -7.3; 4788 -8.0; 5267 -9.5; 5793 -8.7; 6373 -4.3; 7010 -4.0; 7711 -6.2; 8482 -8.2; 9330 -10.8; 10263 -9.3; 11289 -6.5; 12418 -9.5; 13660 -19.2; 15026 -25.7; 16529 -24.2; 18182 -17.2; 20000 -6.5
 ```
 
 ### HeSuVi
@@ -22,33 +22,33 @@ When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 32 Hz    | 0.38 | 6.3 dB   |
-| Peaking | 1752 Hz  | 2.72 | -4.0 dB  |
-| Peaking | 2536 Hz  | 1.98 | -3.1 dB  |
-| Peaking | 14903 Hz | 2.82 | -13.7 dB |
-| Peaking | 16894 Hz | 1.46 | -15.4 dB |
-| Peaking | 492 Hz   | 1.08 | 1.6 dB   |
-| Peaking | 5552 Hz  | 3.79 | -6.1 dB  |
-| Peaking | 6734 Hz  | 1.79 | 8.0 dB   |
-| Peaking | 9969 Hz  | 0.98 | -6.7 dB  |
-| Peaking | 11501 Hz | 3.09 | 8.9 dB   |
+| Peaking | 18 Hz    | 0.16 | 6.3 dB   |
+| Peaking | 1776 Hz  | 2.91 | -4.0 dB  |
+| Peaking | 2538 Hz  | 2.42 | -2.9 dB  |
+| Peaking | 14875 Hz | 2.89 | -13.8 dB |
+| Peaking | 16894 Hz | 1.53 | -15.2 dB |
+| Peaking | 529 Hz   | 1.08 | 1.9 dB   |
+| Peaking | 7004 Hz  | 3.47 | 7.1 dB   |
+| Peaking | 8274 Hz  | 0.86 | -3.9 dB  |
+| Peaking | 11677 Hz | 3.36 | 6.3 dB   |
+| Peaking | 13653 Hz | 6.45 | -2.8 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB** and set
 gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | 6.3 dB   |
-| Peaking | 62 Hz    | 1.41 | 4.6 dB   |
-| Peaking | 125 Hz   | 1.41 | 0.2 dB   |
-| Peaking | 250 Hz   | 1.41 | 1.0 dB   |
-| Peaking | 500 Hz   | 1.41 | 1.7 dB   |
-| Peaking | 1000 Hz  | 1.41 | 0.6 dB   |
-| Peaking | 2000 Hz  | 1.41 | -5.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | -0.6 dB  |
-| Peaking | 8000 Hz  | 1.41 | 2.4 dB   |
-| Peaking | 16000 Hz | 1.41 | -22.8 dB |
+| Peaking | 31 Hz    | 1.41 | 6.2 dB   |
+| Peaking | 62 Hz    | 1.41 | 4.8 dB   |
+| Peaking | 125 Hz   | 1.41 | 0.5 dB   |
+| Peaking | 250 Hz   | 1.41 | 1.3 dB   |
+| Peaking | 500 Hz   | 1.41 | 2.0 dB   |
+| Peaking | 1000 Hz  | 1.41 | 0.8 dB   |
+| Peaking | 2000 Hz  | 1.41 | -4.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | 2.5 dB   |
+| Peaking | 16000 Hz | 1.41 | -22.2 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

@@ -5,7 +5,7 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.6; 60 -1.1; 66 -1.6; 72 -2.0; 79 -2.6; 87 -3.1; 96 -3.6; 106 -4.1; 116 -4.6; 128 -5.1; 141 -5.6; 155 -5.9; 170 -6.3; 187 -6.5; 206 -6.8; 227 -6.9; 249 -7.0; 274 -6.9; 302 -6.8; 332 -6.7; 365 -6.6; 402 -6.6; 442 -6.6; 486 -6.6; 535 -6.6; 588 -6.6; 647 -6.6; 712 -6.6; 783 -6.7; 861 -6.7; 947 -6.6; 1042 -6.3; 1146 -6.1; 1261 -5.5; 1387 -4.5; 1526 -3.6; 1678 -2.7; 1846 -2.3; 2031 -2.4; 2234 -3.0; 2457 -4.4; 2703 -6.4; 2973 -7.0; 3270 -6.2; 3597 -4.8; 3957 -5.0; 4353 -7.4; 4788 -9.4; 5267 -7.8; 5793 -7.7; 6373 -9.7; 7010 -9.2; 7711 -9.1; 8482 -8.2; 9330 -6.5; 10263 -7.7; 11289 -13.2; 12418 -13.6; 13660 -11.1; 15026 -12.6; 16529 -16.7; 18182 -18.1; 20000 -17.4
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.6; 54 -0.9; 60 -1.5; 66 -1.9; 72 -2.4; 79 -2.9; 87 -3.5; 96 -4.0; 106 -4.5; 116 -5.0; 128 -5.5; 141 -6.0; 155 -6.3; 170 -6.6; 187 -6.9; 206 -7.1; 227 -7.3; 249 -7.4; 274 -7.3; 302 -7.2; 332 -7.1; 365 -7.0; 402 -7.0; 442 -7.0; 486 -7.0; 535 -6.9; 588 -6.9; 647 -6.9; 712 -7.0; 783 -7.1; 861 -7.1; 947 -6.9; 1042 -6.7; 1146 -6.5; 1261 -5.8; 1387 -4.9; 1526 -3.9; 1678 -3.1; 1846 -2.7; 2031 -2.8; 2234 -3.4; 2457 -4.8; 2703 -6.8; 2973 -7.4; 3270 -6.5; 3597 -5.2; 3957 -5.4; 4353 -7.8; 4788 -9.8; 5267 -8.2; 5793 -8.1; 6373 -10.1; 7010 -9.6; 7711 -9.5; 8482 -8.6; 9330 -6.5; 10263 -8.0; 11289 -13.6; 12418 -14.0; 13660 -11.4; 15026 -13.0; 16529 -17.1; 18182 -18.5; 20000 -17.8
 ```
 
 ### HeSuVi
@@ -22,33 +22,33 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 36 Hz    | 0.57 | 6.8 dB  |
-| Peaking | 1883 Hz  | 2.22 | 4.7 dB  |
-| Peaking | 6559 Hz  | 4.54 | -2.6 dB |
-| Peaking | 17734 Hz | 0.42 | -4.6 dB |
-| Peaking | 19385 Hz | 0.42 | -7.9 dB |
-| Peaking | 2936 Hz  | 6.55 | -1.7 dB |
-| Peaking | 3802 Hz  | 4.67 | 2.3 dB  |
-| Peaking | 4777 Hz  | 7.13 | -2.9 dB |
-| Peaking | 9773 Hz  | 4.65 | 3.5 dB  |
-| Peaking | 11707 Hz | 5.35 | -4.6 dB |
+| Peaking | 35 Hz    | 0.63 | 6.8 dB  |
+| Peaking | 1889 Hz  | 2.57 | 4.4 dB  |
+| Peaking | 6495 Hz  | 3.31 | -2.6 dB |
+| Peaking | 17617 Hz | 0.43 | -5.4 dB |
+| Peaking | 19606 Hz | 0.4  | -7.7 dB |
+| Peaking | 296 Hz   | 0.71 | -1.1 dB |
+| Peaking | 3798 Hz  | 7.91 | 2.2 dB  |
+| Peaking | 4736 Hz  | 7.62 | -2.8 dB |
+| Peaking | 9721 Hz  | 4.91 | 3.8 dB  |
+| Peaking | 11696 Hz | 5.33 | -4.6 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB** and set
 gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | 6.5 dB   |
-| Peaking | 62 Hz    | 1.41 | 4.4 dB   |
-| Peaking | 125 Hz   | 1.41 | 0.6 dB   |
-| Peaking | 250 Hz   | 1.41 | -0.9 dB  |
-| Peaking | 500 Hz   | 1.41 | -0.0 dB  |
-| Peaking | 1000 Hz  | 1.41 | -0.6 dB  |
-| Peaking | 2000 Hz  | 1.41 | 4.3 dB   |
-| Peaking | 4000 Hz  | 1.41 | -1.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.7 dB  |
-| Peaking | 16000 Hz | 1.41 | -12.8 dB |
+| Peaking | 31 Hz    | 1.41 | 6.6 dB   |
+| Peaking | 62 Hz    | 1.41 | 4.1 dB   |
+| Peaking | 125 Hz   | 1.41 | 0.3 dB   |
+| Peaking | 250 Hz   | 1.41 | -1.2 dB  |
+| Peaking | 500 Hz   | 1.41 | -0.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.9 dB  |
+| Peaking | 2000 Hz  | 1.41 | 4.1 dB   |
+| Peaking | 4000 Hz  | 1.41 | -1.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.9 dB  |
+| Peaking | 16000 Hz | 1.41 | -13.5 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

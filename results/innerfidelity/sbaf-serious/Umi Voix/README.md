@@ -5,7 +5,7 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-GraphicEQ: 21 -10.1; 23 -10.2; 25 -10.2; 28 -10.3; 31 -10.4; 34 -10.4; 37 -10.5; 41 -10.5; 45 -10.6; 49 -10.7; 54 -10.8; 60 -10.8; 66 -11.0; 72 -11.2; 79 -11.4; 87 -11.6; 96 -11.7; 106 -11.8; 116 -11.7; 128 -11.7; 141 -11.6; 155 -11.5; 170 -11.3; 187 -10.9; 206 -10.6; 227 -10.0; 249 -9.5; 274 -8.8; 302 -8.0; 332 -7.3; 365 -6.4; 402 -5.6; 442 -4.5; 486 -4.0; 535 -3.8; 588 -3.2; 647 -3.4; 712 -3.8; 783 -4.2; 861 -5.0; 947 -5.9; 1042 -6.9; 1146 -7.6; 1261 -8.3; 1387 -9.0; 1526 -9.2; 1678 -8.7; 1846 -7.2; 2031 -5.2; 2234 -3.0; 2457 -0.7; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -1.2; 4353 -3.8; 4788 -1.0; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
+GraphicEQ: 21 -12.7; 23 -12.8; 25 -12.9; 28 -12.9; 31 -13.0; 34 -13.1; 37 -13.1; 41 -13.2; 45 -13.2; 49 -13.3; 54 -13.4; 60 -13.5; 66 -13.7; 72 -13.9; 79 -14.0; 87 -14.2; 96 -14.4; 106 -14.4; 116 -14.4; 128 -14.4; 141 -14.3; 155 -14.1; 170 -14.0; 187 -13.5; 206 -13.2; 227 -12.7; 249 -12.1; 274 -11.5; 302 -10.7; 332 -9.9; 365 -9.0; 402 -8.3; 442 -7.1; 486 -6.7; 535 -6.5; 588 -5.8; 647 -6.0; 712 -6.5; 783 -6.8; 861 -7.7; 947 -8.5; 1042 -9.5; 1146 -10.3; 1261 -11.0; 1387 -11.6; 1526 -11.9; 1678 -11.3; 1846 -9.9; 2031 -7.8; 2234 -5.7; 2457 -3.1; 2703 -1.0; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -3.5; 4353 -6.5; 4788 -3.1; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 ### HeSuVi
@@ -16,38 +16,38 @@ HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be 
 In case of using Peace, click *Import* in Peace GUI and select `Umi Voix ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.5dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 35 Hz   | 0.5  | -3.9 dB |
-| Peaking | 108 Hz  | 1.26 | -3.8 dB |
-| Peaking | 188 Hz  | 2.15 | -3.1 dB |
-| Peaking | 3044 Hz | 2.14 | 6.6 dB  |
-| Peaking | 5601 Hz | 2.59 | 6.0 dB  |
-| Peaking | 280 Hz  | 2.18 | -1.6 dB |
-| Peaking | 604 Hz  | 1.08 | 3.9 dB  |
-| Peaking | 1479 Hz | 1.56 | -4.2 dB |
-| Peaking | 2362 Hz | 4.45 | 3.1 dB  |
-| Peaking | 8268 Hz | 4.7  | -1.3 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 12 Hz    | 1.37 | -5.9 dB |
+| Peaking | 43 Hz    | 0.32 | -5.7 dB |
+| Peaking | 162 Hz   | 0.66 | -5.2 dB |
+| Peaking | 3342 Hz  | 2.22 | 6.7 dB  |
+| Peaking | 21314 Hz | 2.61 | 3.7 dB  |
+| Peaking | 612 Hz   | 1.58 | 2.7 dB  |
+| Peaking | 1515 Hz  | 1.15 | -6.1 dB |
+| Peaking | 2564 Hz  | 3.16 | 4.2 dB  |
+| Peaking | 4323 Hz  | 6.64 | -4.5 dB |
+| Peaking | 5652 Hz  | 2.75 | 6.4 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB** and set
 gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -3.7 dB |
-| Peaking | 62 Hz    | 1.41 | -3.3 dB |
-| Peaking | 125 Hz   | 1.41 | -4.7 dB |
-| Peaking | 250 Hz   | 1.41 | -3.2 dB |
-| Peaking | 500 Hz   | 1.41 | 4.4 dB  |
-| Peaking | 1000 Hz  | 1.41 | -1.4 dB |
-| Peaking | 2000 Hz  | 1.41 | -0.1 dB |
-| Peaking | 4000 Hz  | 1.41 | 7.2 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 31 Hz    | 1.41 | -6.3 dB |
+| Peaking | 62 Hz    | 1.41 | -5.1 dB |
+| Peaking | 125 Hz   | 1.41 | -6.7 dB |
+| Peaking | 250 Hz   | 1.41 | -5.2 dB |
+| Peaking | 500 Hz   | 1.41 | 2.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | -3.5 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Impulse Response

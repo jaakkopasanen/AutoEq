@@ -16,39 +16,39 @@ HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be 
 In case of using Peace, click *Import* in Peace GUI and select `Audio-Technica ATH-M40x ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.6dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-3.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **--0.1dB**.
+When using independent subset of filters, apply preamp of **-3.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 56 Hz    | 1.1  | -2.9 dB |
-| Peaking | 135 Hz   | 1.64 | -5.7 dB |
-| Peaking | 1724 Hz  | 2.33 | -2.4 dB |
-| Peaking | 9209 Hz  | 3.19 | -5.5 dB |
-| Peaking | 16226 Hz | 0.97 | -9.5 dB |
-| Peaking | 199 Hz   | 3.21 | -1.9 dB |
-| Peaking | 350 Hz   | 1.51 | 2.4 dB  |
-| Peaking | 810 Hz   | 4.06 | 0.8 dB  |
-| Peaking | 4367 Hz  | 4.66 | -2.2 dB |
-| Peaking | 6008 Hz  | 4.89 | 3.3 dB  |
+| Peaking | 21 Hz    | 2.69 | 3.3 dB  |
+| Peaking | 174 Hz   | 0.64 | -8.7 dB |
+| Peaking | 288 Hz   | 0.64 | 7.9 dB  |
+| Peaking | 9318 Hz  | 3.96 | -4.8 dB |
+| Peaking | 16045 Hz | 1.33 | -8.7 dB |
+| Peaking | 901 Hz   | 2.35 | 1.6 dB  |
+| Peaking | 2506 Hz  | 0.62 | -2.6 dB |
+| Peaking | 2660 Hz  | 2.11 | 3.9 dB  |
+| Peaking | 6066 Hz  | 2.83 | 4.6 dB  |
+| Peaking | 8073 Hz  | 5.12 | -1.9 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.1dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.6dB** and set
 gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -0.9 dB  |
-| Peaking | 62 Hz    | 1.41 | -2.0 dB  |
-| Peaking | 125 Hz   | 1.41 | -5.9 dB  |
-| Peaking | 250 Hz   | 1.41 | -0.0 dB  |
-| Peaking | 500 Hz   | 1.41 | 2.0 dB   |
-| Peaking | 1000 Hz  | 1.41 | -0.4 dB  |
-| Peaking | 2000 Hz  | 1.41 | -1.9 dB  |
-| Peaking | 4000 Hz  | 1.41 | 0.6 dB   |
-| Peaking | 8000 Hz  | 1.41 | -3.1 dB  |
-| Peaking | 16000 Hz | 1.41 | -11.3 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 0.5 dB  |
+| Peaking | 62 Hz    | 1.41 | -1.0 dB |
+| Peaking | 125 Hz   | 1.41 | -4.9 dB |
+| Peaking | 250 Hz   | 1.41 | 1.0 dB  |
+| Peaking | 500 Hz   | 1.41 | 3.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.9 dB |
+| Peaking | 16000 Hz | 1.41 | -9.2 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

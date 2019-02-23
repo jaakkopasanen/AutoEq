@@ -765,7 +765,7 @@ class FrequencyResponse:
 
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
-        if os.path.isfile(parametric_eq_path) and self.parametric_eq and len(self.parametric_eq):
+        if os.path.isfile(parametric_eq_path) and self.parametric_eq is not None and len(self.parametric_eq):
             preamp = np.min([0.0, float(-np.max(self.parametric_eq))]) - 0.5
 
             # Read Parametric eq
@@ -843,7 +843,7 @@ class FrequencyResponse:
 
         # Add fixed band eq
         fixed_band_eq_path = os.path.join(dir_path, model + ' FixedBandEQ.txt')
-        if os.path.isfile(fixed_band_eq_path) and self.parametric_eq and len(self.parametric_eq):
+        if os.path.isfile(fixed_band_eq_path) and self.parametric_eq is not None and len(self.parametric_eq):
             preamp = np.min([0.0, float(-np.max(self.fixed_band_eq))]) - 0.5
 
             # Read Parametric eq

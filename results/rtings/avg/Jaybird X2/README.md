@@ -16,39 +16,39 @@ HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be 
 In case of using Peace, click *Import* in Peace GUI and select `Jaybird X2 ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-2.7dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-4.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.3dB**.
+When using independent subset of filters, apply preamp of **-3.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 56 Hz    | 0.29 | 2.8 dB   |
-| Peaking | 168 Hz   | 0.58 | -5.3 dB  |
-| Peaking | 674 Hz   | 2.44 | 3.0 dB   |
-| Peaking | 11376 Hz | 2.02 | -9.2 dB  |
-| Peaking | 19139 Hz | 0.87 | -12.7 dB |
-| Peaking | 850 Hz   | 4.02 | 1.2 dB   |
-| Peaking | 1572 Hz  | 1.23 | -1.7 dB  |
-| Peaking | 6343 Hz  | 2.23 | 3.3 dB   |
-| Peaking | 8386 Hz  | 4.1  | -3.6 dB  |
-| Peaking | 14974 Hz | 5.74 | 2.3 dB   |
+| Peaking | 33 Hz    | 1.14 | 3.6 dB   |
+| Peaking | 725 Hz   | 2.61 | 3.6 dB   |
+| Peaking | 5930 Hz  | 2.1  | 4.1 dB   |
+| Peaking | 11198 Hz | 1.64 | -8.0 dB  |
+| Peaking | 19154 Hz | 0.98 | -11.6 dB |
+| Peaking | 62 Hz    | 1.92 | 1.4 dB   |
+| Peaking | 186 Hz   | 1.18 | -2.9 dB  |
+| Peaking | 12549 Hz | 5.43 | -2.0 dB  |
+| Peaking | 14899 Hz | 2.5  | 2.8 dB   |
+| Peaking | 17486 Hz | 3.06 | -2.2 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.7dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.1dB** and set
 gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | 2.1 dB   |
-| Peaking | 62 Hz    | 1.41 | 1.2 dB   |
-| Peaking | 125 Hz   | 1.41 | -2.5 dB  |
-| Peaking | 250 Hz   | 1.41 | -3.8 dB  |
-| Peaking | 500 Hz   | 1.41 | 1.3 dB   |
-| Peaking | 1000 Hz  | 1.41 | 0.6 dB   |
-| Peaking | 2000 Hz  | 1.41 | -2.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.9 dB   |
-| Peaking | 8000 Hz  | 1.41 | -3.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -10.1 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 3.2 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.1 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.6 dB |
+| Peaking | 250 Hz   | 1.41 | -2.9 dB |
+| Peaking | 500 Hz   | 1.41 | 2.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.6 dB |
+| Peaking | 16000 Hz | 1.41 | -8.1 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.

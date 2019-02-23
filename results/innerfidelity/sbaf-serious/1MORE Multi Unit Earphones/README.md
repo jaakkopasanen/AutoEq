@@ -5,7 +5,7 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-GraphicEQ: 21 -7.1; 23 -7.6; 25 -8.0; 28 -8.5; 31 -9.0; 34 -9.3; 37 -9.6; 41 -9.9; 45 -10.2; 49 -10.5; 54 -10.8; 60 -11.1; 66 -11.3; 72 -11.7; 79 -11.9; 87 -12.2; 96 -12.4; 106 -12.5; 116 -12.5; 128 -12.6; 141 -12.5; 155 -12.4; 170 -12.2; 187 -11.9; 206 -11.7; 227 -11.2; 249 -10.8; 274 -10.3; 302 -9.9; 332 -9.4; 365 -8.8; 402 -8.3; 442 -7.7; 486 -7.4; 535 -6.8; 588 -6.2; 647 -5.9; 712 -5.8; 783 -5.5; 861 -5.8; 947 -6.1; 1042 -6.7; 1146 -7.3; 1261 -7.8; 1387 -8.9; 1526 -10.1; 1678 -11.2; 1846 -12.0; 2031 -12.4; 2234 -12.2; 2457 -10.2; 2703 -7.8; 2973 -5.3; 3270 -4.2; 3597 -5.1; 3957 -8.1; 4353 -8.4; 4788 -2.8; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -7.5; 10263 -10.2; 11289 -9.0; 12418 -6.6; 13660 -6.6; 15026 -8.3; 16529 -10.2; 18182 -10.5; 20000 -8.7
+GraphicEQ: 21 -6.3; 23 -6.8; 25 -7.2; 28 -7.7; 31 -8.1; 34 -8.5; 37 -8.8; 41 -9.1; 45 -9.4; 49 -9.6; 54 -10.0; 60 -10.3; 66 -10.5; 72 -10.8; 79 -11.0; 87 -11.4; 96 -11.6; 106 -11.7; 116 -11.7; 128 -11.7; 141 -11.7; 155 -11.6; 170 -11.4; 187 -11.1; 206 -10.8; 227 -10.3; 249 -10.0; 274 -9.5; 302 -9.0; 332 -8.5; 365 -8.0; 402 -7.5; 442 -6.9; 486 -6.5; 535 -6.0; 588 -5.4; 647 -5.1; 712 -5.0; 783 -4.7; 861 -4.9; 947 -5.3; 1042 -5.8; 1146 -6.5; 1261 -7.0; 1387 -8.0; 1526 -9.3; 1678 -10.4; 1846 -11.2; 2031 -11.6; 2234 -11.4; 2457 -9.4; 2703 -7.0; 2973 -4.5; 3270 -3.4; 3597 -4.3; 3957 -7.3; 4353 -7.6; 4788 -2.0; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.9; 10263 -9.3; 11289 -8.1; 12418 -6.5; 13660 -6.5; 15026 -7.4; 16529 -9.3; 18182 -9.7; 20000 -7.9
 ```
 
 ### HeSuVi
@@ -22,33 +22,33 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 83 Hz    | 0.54 | -5.1 dB |
-| Peaking | 195 Hz   | 1.07 | -3.1 dB |
-| Peaking | 1966 Hz  | 2.49 | -6.7 dB |
-| Peaking | 5792 Hz  | 2.72 | 7.6 dB  |
-| Peaking | 19180 Hz | 0.18 | -3.0 dB |
-| Peaking | 749 Hz   | 2.62 | 1.7 dB  |
-| Peaking | 3271 Hz  | 5.2  | 3.3 dB  |
-| Peaking | 4163 Hz  | 8.97 | -4.6 dB |
-| Peaking | 10488 Hz | 5.33 | -3.2 dB |
-| Peaking | 13202 Hz | 2.8  | 2.6 dB  |
+| Peaking | 86 Hz    | 0.68 | -4.5 dB |
+| Peaking | 188 Hz   | 1.31 | -3.0 dB |
+| Peaking | 1992 Hz  | 3.06 | -6.0 dB |
+| Peaking | 5654 Hz  | 2.45 | 7.3 dB  |
+| Peaking | 18750 Hz | 0.22 | -2.2 dB |
+| Peaking | 745 Hz   | 2.19 | 2.4 dB  |
+| Peaking | 3278 Hz  | 5.18 | 3.6 dB  |
+| Peaking | 4182 Hz  | 8.4  | -4.4 dB |
+| Peaking | 10483 Hz | 5.17 | -2.7 dB |
+| Peaking | 13258 Hz | 2.47 | 1.9 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.1dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.8dB** and set
 gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -1.7 dB |
-| Peaking | 62 Hz    | 1.41 | -3.9 dB |
-| Peaking | 125 Hz   | 1.41 | -5.3 dB |
-| Peaking | 250 Hz   | 1.41 | -3.8 dB |
-| Peaking | 500 Hz   | 1.41 | 0.4 dB  |
-| Peaking | 1000 Hz  | 1.41 | 1.6 dB  |
-| Peaking | 2000 Hz  | 1.41 | -6.8 dB |
-| Peaking | 4000 Hz  | 1.41 | 3.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -4.1 dB |
+| Peaking | 31 Hz    | 1.41 | -0.8 dB |
+| Peaking | 62 Hz    | 1.41 | -3.3 dB |
+| Peaking | 125 Hz   | 1.41 | -4.7 dB |
+| Peaking | 250 Hz   | 1.41 | -3.2 dB |
+| Peaking | 500 Hz   | 1.41 | 1.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 2.2 dB  |
+| Peaking | 2000 Hz  | 1.41 | -6.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -3.0 dB |
 
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
