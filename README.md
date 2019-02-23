@@ -64,8 +64,9 @@ filter parameters look like this:
 #### Convolution Equalizers
 Convolution equalizer settings are finite impulse responses (FIR filters) and are the most advanced kind of (LTI)
 filters. FIR filters make it possible to produce linear phase filters which some may prefer though generally minimum
-phase filters are recommended. EqualizerAPO GraphicEQ is actually convolution eq under the hood. Minimum phase impulse
-response looks like this:
+phase filters are recommended. Convolution equalizer settings are provided as WAV files.
+
+Minimum phase impulse response looks like this:
 
 ![minimum-phase-FIR](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/minimum-phase-FIR.png)
 
@@ -80,6 +81,21 @@ is [Sennheiser HD 800](https://github.com/jaakkopasanen/AutoEq/tree/master/resul
 with it's 6 kHz peak that is right in between 4 kHz and 8 kHz bands of standard 10-band equalizer.
 When using 10-band equalizer check if the fixed band equalization curve is very different than the desired equalization
 curve at some frequency and adjust the nearby filters by ear for best results.
+
+Fixed band equalizer settings look like this:
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 6.1 dB  |
+| Peaking | 62 Hz    | 1.41 | 3.0 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.1 dB |
+| Peaking | 250 Hz   | 1.41 | -2.2 dB |
+| Peaking | 500 Hz   | 1.41 | -0.9 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | 3.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 8000 Hz  | 1.41 | -4.1 dB |
+| Peaking | 16000 Hz | 1.41 | -7.5 dB |
 
 #### Windows
 has [EqualizerAPO](#plain-equalizerapo), [HeSuVi](#hesuvi), [Peace](#peace) and many media players with
