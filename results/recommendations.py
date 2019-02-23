@@ -8,7 +8,7 @@ import re
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from frequency_response import FrequencyResponse
 
-RESULTS_DIR = os.path.abspath(os.path.join(__file__, os.pardir))
+DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 
 def form_url(rel_path):
@@ -22,7 +22,8 @@ def get_urls(files):
     urls = dict()
     skipped = dict()
     for path in files:
-        rel_path = os.path.relpath(path, RESULTS_DIR)
+        rel_path = os.path.relpath(path, DIR_PATH)
+        print(path, rel_path)
         model = os.path.split(rel_path)[-1]
         if model == 'README.md':
             continue
@@ -47,20 +48,20 @@ def get_urls(files):
 def main():
     urls = dict()
     # Get links to Reference Audio Analyzer results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join('results', 'referenceaudioanalyzer', 'zero', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'zero', '*')))))
     # Get links to Headphone.com results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join('results', 'headphonecom', 'sbaf-serious', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'sbaf-serious', '*')))))
     # Get links to Rtings results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join('results', 'rtings', 'avg', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'avg', '*')))))
     # Get links to Innerfidelity results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join('results', 'innerfidelity', 'sbaf-serious', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'sbaf-serious', '*')))))
     # Get links to oratory1990 results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join('results', 'oratory1990', 'harman_over-ear_2018', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(os.path.join('results', 'oratory1990', 'harman_in-ear_2017-1', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2017-1', '*')))))
     # Get links to custom results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join('results', 'custom', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'custom', '*')))))
 
-    with open('results/README.md', 'w') as f:
+    with open(os.path.join(DIR_PATH, 'README.md'), 'w') as f:
         keys = sorted(urls.keys())
         s = '''# Recommended Results
         This is a list of recommended results. Results for other measurements are available for many headphones, these

@@ -11,6 +11,8 @@ sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from image_graph_parser import ImageGraphParser
 from frequency_response import FrequencyResponse
 
+DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+
 
 def parse_image(im, model, channel):
     """Parses graph image downloaded from innerfidelity.com"""
@@ -113,10 +115,14 @@ def parse_image(im, model, channel):
 
 def main():
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('--input_dir', type=str, default='rtings/images', help='Path to images directory.')
-    arg_parser.add_argument('--inspection_dir', type=str, default='rtings/inspection', help='Path to inspection directory.')
-    arg_parser.add_argument('--output_dir', type=str, default='rtings/new_data', help='Path to data directory.')
-    arg_parser.add_argument('--compensation', type=str, default='rtings/resources/rtings_compensation_w_bass.csv',
+    arg_parser.add_argument('--input_dir', type=str, default=os.path.join(DIR_PATH, 'images'),
+                            help='Path to images directory.')
+    arg_parser.add_argument('--inspection_dir', type=str, default=os.path.join(DIR_PATH, 'inspection'),
+                            help='Path to inspection directory.')
+    arg_parser.add_argument('--output_dir', type=str, default=os.path.join(DIR_PATH, 'new_data'),
+                            help='Path to data directory.')
+    arg_parser.add_argument('--compensation', type=str,
+                            default=os.path.join(DIR_PATH, 'resources', 'rtings_compensation_w_bass.csv'),
                             help='Path to compensation file.')
     cli_args = arg_parser.parse_args()
 
