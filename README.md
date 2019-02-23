@@ -64,7 +64,9 @@ filter parameters look like this:
 #### Convolution Equalizers
 Convolution equalizer settings are finite impulse responses (FIR filters) and are the most advanced kind of (LTI)
 filters. FIR filters make it possible to produce linear phase filters which some may prefer though generally minimum
-phase filters are recommended. Convolution equalizer settings are provided as WAV files.
+phase filters are recommended. Convolution equalizer settings are provided as WAV files. Pre-computed results include
+impulse responses with 44.1 kHz and 48 kHz and other sampling rates are supported as well. Import the WAV file with
+correct sampling frequency into the software to use convolution equalizer.
 
 Minimum phase impulse response looks like this:
 
@@ -199,12 +201,6 @@ only support standard 10-band equalizers which have band center frequencies at 3
 result settings.
 
 ![music-eq-equalizer](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/music-eq-equalizer.png)
-
-
-### Convolution Equalizers
-Some software don't have parametric eq but have convolution engine which uses impulse response for processing.
-Pre-computed results include impulse responses with 44.1 kHz and 48 kHz and other sampling rates are supported as well.
-Import the WAV file with correct sampling frequency into the software.
 
 ## Results
 The main principle used by AutoEQ for producing the equalization function is to invert error curve. Error is the
