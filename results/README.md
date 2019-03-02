@@ -6,7 +6,7 @@ Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com
 measurements from multiple sources for the same headphone model only the highest priority result will be shown
 in this list.
 
-This list has 1430 headphone models covered but if your headphone is missing you can create settings for it
+This list has 1438 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1MORE Crystal Piston](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Crystal%20Piston)
@@ -78,6 +78,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [AKG K81 DJ](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/AKG%20K81%20DJ)
 - [AKG K812](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/AKG%20K812)
 - [AKG K81DJ](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/AKG%20K81DJ)
+- [AKG N200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/AKG%20N200)
 - [AKG N60 NC Wireless Bluetooth](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/AKG%20N60%20NC%20Wireless%20Bluetooth)
 - [AKG N60NC Wired Passive](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/AKG%20N60NC%20Wired%20Passive)
 - [AKG N60NC Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/AKG%20N60NC%20Wireless)
@@ -97,6 +98,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Anker SoundBuds Life](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Anker%20SoundBuds%20Life)
 - [Anker SoundBuds Sport](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Anker%20SoundBuds%20Sport)
 - [Anker SoundCore Liberty Air](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Anker%20SoundCore%20Liberty%20Air)
+- [Anker SoundCore Space NC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Anker%20SoundCore%20Space%20NC)
 - [Anker Soundcore Spirit X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Anker%20Soundcore%20Spirit%20X)
 - [Apple AirPods](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Apple%20AirPods)
 - [Apple EarPods](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Apple%20EarPods)
@@ -259,6 +261,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Beyerdynamic DT 770 32 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20770%2032%20Ohm)
 - [Beyerdynamic DT 770 600 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20770%20600%20Ohm)
 - [Beyerdynamic DT 770 M 80 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20M%2080%20Ohm)
+- [Beyerdynamic DT 770 Pro 250 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beyerdynamic%20DT%20770%20Pro%20250%20Ohm)
 - [Beyerdynamic DT 880 250 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20880%20250%20Ohm)
 - [Beyerdynamic DT 880 250 Ohm (old earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20880%20250%20Ohm%20(old%20earpads))
 - [Beyerdynamic DT 880 250 Ohm balanced](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20880%20250%20Ohm%20balanced)
@@ -344,12 +347,14 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Comradz NW-STUDIO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Comradz%20NW-STUDIO)
 - [Comradz NW-STUDIO PRO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Comradz%20NW-STUDIO%20PRO)
 - [Corsair HS60](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20HS60)
+- [Corsair HS70 Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20HS70%20Wireless)
 - [Corsair Void RGB](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20Void%20RGB)
 - [Cougar Immersa](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cougar%20Immersa)
 - [Cowin E7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cowin%20E7)
 - [Cowin E7 Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cowin%20E7%20Pro)
 - [Cowin E7 Wired NC off](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Cowin%20E7%20Wired%20NC%20off)
 - [Cowin E8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cowin%20E8)
+- [Cowin SE7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cowin%20SE7)
 - [Creative Aurvana](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Creative%20Aurvana)
 - [Creative Aurvana Gold](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20Aurvana%20Gold)
 - [Creative Aurvana In Ear 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Creative%20Aurvana%20In%20Ear%203)
@@ -609,7 +614,9 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [JBL E50BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20E50BT)
 - [JBL E55BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20E55BT)
 - [JBL E65BTNC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20E65BTNC)
+- [JBL Endurance Peak](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Endurance%20Peak)
 - [JBL Endurance Sprint](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Endurance%20Sprint)
+- [JBL Everest 310](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Everest%20310)
 - [JBL Everest Elite 700](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Everest%20Elite%20700)
 - [JBL Everest Elite 700 Wired Active](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JBL%20Everest%20Elite%20700%20Wired%20Active)
 - [JBL Everest Elite 700 Wired Passive](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JBL%20Everest%20Elite%20700%20Wired%20Passive)
@@ -1336,6 +1343,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Torque t402v OverEar Red](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Red)
 - [Torque t402v OverEar Yellow](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Yellow)
 - [Toshiba HR-810 Low Gain](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Toshiba%20HR-810%20Low%20Gain)
+- [TREBLAB X5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/TREBLAB%20X5)
 - [Turtle Beach Elite 800](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Turtle%20Beach%20Elite%20800)
 - [Turtle Beach Elite Atlas](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Turtle%20Beach%20Elite%20Atlas)
 - [Turtle Beach Elite Pro 2 SuperAmp](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Turtle%20Beach%20Elite%20Pro%202%20SuperAmp)
