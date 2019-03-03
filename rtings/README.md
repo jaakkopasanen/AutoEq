@@ -15,4 +15,4 @@ folders in `rtings/data` depending on the heaphone type
 10. Update full index: `python results/index.py`
 11. Add files to git: `git add results/rtings results/README.md results/INDEX.md rtings/links.json rtings/data`
 12. Commit: `git commit -m "New Rtings measurements with pre-computed results."`
-12. Push: `git push`
+13. Push: `git push`

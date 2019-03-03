@@ -15,4 +15,4 @@ https://new.reddit.com/r/headphones/comments/9o2f5n/psa_oratory1990s_list_of_eq_
 10. Update full index: `python results/index.py`
 11. Add files to git: `git add results/oratory1990 results/README.md results/INDEX.md oratory1990/links.json oratory1990/data`
 12. Commit: `git commit -m "New oratory1990 measurements with pre-computed results."`
-12. Push: `git push`
+13. Push: `git push`

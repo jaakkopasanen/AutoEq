@@ -18,8 +18,11 @@ def main():
         if name in old:
             del new[name]
 
-    print()
-    print('\n'.join(new.keys()))
+    with open(os.path.join(DIR_PATH, 'links_new.json'), 'w') as f:
+        f.write(json.dumps(new, ensure_ascii=False, intend=2))
+
+    with open(os.path.join(DIR_PATH, 'names.txt'), 'w+') as f:
+        f.write('\n'.join(new.keys()))
 
 
 if __name__ == '__main__':
