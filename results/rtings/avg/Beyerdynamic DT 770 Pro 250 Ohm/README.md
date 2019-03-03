@@ -16,22 +16,22 @@ HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be 
 In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic DT 770 Pro 250 Ohm ParametricEQ.txt`.
 
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.8dB**.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |     Q | Gain     |
 |:--------|:---------|:------|:---------|
 | Peaking | 215 Hz   |  2.13 | 4.1 dB   |
-| Peaking | 2152 Hz  |  3.57 | -2.4 dB  |
-| Peaking | 3421 Hz  |  6.45 | 7.2 dB   |
-| Peaking | 8629 Hz  |  3.57 | -7.7 dB  |
-| Peaking | 20229 Hz |  0.31 | -11.3 dB |
-| Peaking | 35 Hz    |  1.56 | -1.7 dB  |
-| Peaking | 6498 Hz  | 10.42 | -3.3 dB  |
-| Peaking | 11262 Hz |  4.96 | 4.0 dB   |
-| Peaking | 13705 Hz |  3.94 | -3.6 dB  |
-| Peaking | 19681 Hz |  2.86 | -0.5 dB  |
+| Peaking | 2155 Hz  |  3.59 | -2.4 dB  |
+| Peaking | 3413 Hz  |  6.44 | 7.2 dB   |
+| Peaking | 8673 Hz  |  3.5  | -7.6 dB  |
+| Peaking | 19801 Hz |  0.35 | -10.9 dB |
+| Peaking | 34 Hz    |  1.59 | -1.7 dB  |
+| Peaking | 6453 Hz  | 10.76 | -3.3 dB  |
+| Peaking | 11195 Hz |  4.71 | 4.2 dB   |
+| Peaking | 13611 Hz |  4.52 | -3.4 dB  |
+| Peaking | 20095 Hz |  4.14 | -0.9 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.9dB** and set
@@ -39,7 +39,7 @@ gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -1.6 dB |
+| Peaking | 31 Hz    | 1.41 | -1.7 dB |
 | Peaking | 62 Hz    | 1.41 | 0.2 dB  |
 | Peaking | 125 Hz   | 1.41 | -0.3 dB |
 | Peaking | 250 Hz   | 1.41 | 3.7 dB  |

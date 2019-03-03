@@ -23,9 +23,8 @@ def get_urls(files):
     skipped = dict()
     for path in files:
         rel_path = os.path.relpath(path, DIR_PATH)
-        print(path, rel_path)
         model = os.path.split(rel_path)[-1]
-        if model == 'README.md':
+        if model == 'README.md' or 'fake' in model.lower():
             continue
         if re.search(' sample [a-zA-Z0-9]$', model, re.IGNORECASE) or re.search(' sn[a-zA-Z0-9]+$', model, re.IGNORECASE):
             # Skip measurements with sample or serial number, those have averaged results
