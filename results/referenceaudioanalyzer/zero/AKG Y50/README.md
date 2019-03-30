@@ -1,4 +1,4 @@
-# AKG Y50BT
+# AKG Y50
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
@@ -10,10 +10,10 @@ GraphicEQ: 21 -7.7; 23 -8.5; 25 -9.1; 28 -9.7; 31 -10.2; 34 -10.6; 37 -10.9; 41 
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`AKG Y50BT GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+`AKG Y50 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `AKG Y50BT ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `AKG Y50 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
@@ -53,4 +53,4 @@ gains manually with these parameters.
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/AKG%20Y50BT/AKG%20Y50BT.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/AKG%20Y50/AKG%20Y50.png)
