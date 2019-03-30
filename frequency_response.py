@@ -40,6 +40,7 @@ DEFAULT_TILT = 0.0
 DEFAULT_FS = 44100
 DEFAULT_BIT_DEPTH = 16
 DEFAULT_PHASE = 'minimum'
+DEFAULT_F_RES = 10
 
 DEFAULT_OE_BASS_BOOST_F_LOWER = 35
 DEFAULT_OE_BASS_BOOST_F_UPPER = 280
@@ -263,6 +264,8 @@ class FrequencyResponse:
                 raise TypeError('"q" must be give nif "fc" is given.')
             if max_filters is not None:
                 raise TypeError('"max_filters" must not be given when "fc" and "q" are given.')
+            fc = np.array(fc, dtype='float32')
+            q = np.array(q, dtype='float32')
 
         parametric = fc is None
 
@@ -674,7 +677,7 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=5):
+    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES):
         """Generates minimum phase impulse response
 
         Inspired by:
@@ -686,6 +689,8 @@ class FrequencyResponse:
         Returns:
             Minimum phase impulse response
         """
+        # Double frequency resolution because it will be halved when converting linear phase IR to minimum phase
+        f_res /= 2
         # Interpolate to even sample interval
         fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
         fr.interpolate(np.arange(0, fs // 2, f_res))
@@ -707,7 +712,7 @@ class FrequencyResponse:
         ir = minimum_phase(ir)
         return ir
 
-    def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=10):
+    def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES):
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
         fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
@@ -1490,6 +1495,7 @@ class FrequencyResponse:
              fs=DEFAULT_FS,
              bit_depth=DEFAULT_BIT_DEPTH,
              phase=DEFAULT_PHASE,
+             f_res=DEFAULT_F_RES,
              bass_boost=None,
              iem_bass_boost=None,
              tilt=None,
@@ -1596,7 +1602,7 @@ class FrequencyResponse:
                     for _fs in fss:
                         if phase in ['linear', 'both']:
                             # Write linear phase impulse response
-                            linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs)
+                            linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res)
                             linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
                             sf.write(
                                 output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
@@ -1606,7 +1612,7 @@ class FrequencyResponse:
                             )
                         if phase in ['minimum', 'both']:
                             # Write minimum phase impulse response
-                            minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs)
+                            minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res)
                             minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
                             sf.write(
                                 output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
@@ -1679,13 +1685,18 @@ class FrequencyResponse:
                                      'for equalizers with different number of bands available. '
                                      'Not limited by default.')
         arg_parser.add_argument('--fs', type=int, default=DEFAULT_FS,
-                                help='Sampling frequency for impulse response and paramteric eq filters.'
+                                help='Sampling frequency for impulse response and parametric eq filters.'
                                      'Defaults to {}.'.format(DEFAULT_FS))
         arg_parser.add_argument('--bit_depth', type=int, default=DEFAULT_BIT_DEPTH,
-                                help='Number of bits for every sample. Defaults to {}.'.format(DEFAULT_BIT_DEPTH))
+                                help='Number of bits for every sample in impulse response.'
+                                     'Defaults to {}.'.format(DEFAULT_BIT_DEPTH))
         arg_parser.add_argument('--phase', type=str, default=DEFAULT_PHASE,
                                 help='Impulse response phase characteristic. "minimum", "linear" or "both". '
                                      'Defaults to "{}"'.format(DEFAULT_PHASE))
+        arg_parser.add_argument('--f_res', type=float, default=DEFAULT_F_RES,
+                                help='Frequency resolution for impulse responses. If this is 20 then impulse response'
+                                     'frequency domain will be sampled every 20 Hz. Filter length for'
+                                     'impulse responses will be fs/f_res. Defaults to {}.'.format(DEFAULT_F_RES))
         arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
                                 help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
                                      ' Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(

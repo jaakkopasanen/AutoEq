@@ -242,21 +242,20 @@ def main():
                 max_filters=[5, 5]
             )
 
-    if onear:
-        if referenceaudioanalyzer:
-            # Reference Audio Analyzer on-ear
-            print('\nProcessing Reference Audio Analyzer on-ear measurements...')
-            FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'referenceaudioanalyzer', 'data', 'onear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'zero'),
-                new_only=new_only,
-                compensation=os.path.join(ROOT_DIR, 'compensation', 'zero.csv'),
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost=4.0
-            )
+    if referenceaudioanalyzer:
+        # Reference Audio Analyzer on-ear
+        print('\nProcessing Reference Audio Analyzer measurements...')
+        FrequencyResponse.main(
+            input_dir=os.path.join(ROOT_DIR, 'referenceaudioanalyzer', 'data'),
+            output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'zero'),
+            new_only=new_only,
+            compensation=os.path.join(ROOT_DIR, 'compensation', 'zero.csv'),
+            equalize=True,
+            parametric_eq=True,
+            max_filters=[5, 5],
+            ten_band_eq=True,
+            bass_boost=0.0
+        )
 
 
 if __name__ == '__main__':
