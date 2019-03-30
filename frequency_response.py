@@ -1654,14 +1654,14 @@ class FrequencyResponse:
                                 help='Path to input data directory. Will look for CSV files in the data directory and '
                                      'recursively in sub-directories.')
         arg_parser.add_argument('--output_dir', type=str, default=argparse.SUPPRESS,
-                                help='Path to results directory. Will keep the same relative paths for files found'
+                                help='Path to results directory. Will keep the same relative paths for files found '
                                      'in input_dir.')
         arg_parser.add_argument('--standardize_input', action='store_true',
                                 help='Overwrite input data in standardized sampling and bias?')
         arg_parser.add_argument('--new_only', action='store_true',
                                 help='Only process input files which don\'t have results in output directory.')
         arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
-                                help='File path to CSV containing calibration data. Needed when using target responses'
+                                help='File path to CSV containing calibration data. Needed when using target responses '
                                      'not developed for the source measurement system. See `calibration` directory.')
         arg_parser.add_argument('--compensation', type=str,
                                 help='File path to CSV containing compensation (target) curve. Compensation is '
@@ -1678,35 +1678,35 @@ class FrequencyResponse:
         arg_parser.add_argument('--ten_band_eq', action='store_true',
                                 help='Shortcut parameter for activating standard ten band eq optimization.')
         arg_parser.add_argument('--max_filters', type=str, default=argparse.SUPPRESS,
-                                help='Maximum number of filters for parametric EQ. Multiple cumulative optimization runs'
-                                     'can be done by giving multiple filter counts separated by "+". "5+5" would create'
-                                     '10 filters where the first 5 are usable independently from the rest 5 and the last'
-                                     '5 can only be used with the first 5. This allows to have muliple configurations'
-                                     'for equalizers with different number of bands available. '
+                                help='Maximum number of filters for parametric EQ. Multiple cumulative optimization '
+                                     'runs can be done by giving multiple filter counts separated by "+". "5+5" would '
+                                     'create 10 filters where the first 5 are usable independently from the rest 5 and '
+                                     'the last 5 can only be used with the first 5. This allows to have muliple '
+                                     'configurations for equalizers with different number of bands available. '
                                      'Not limited by default.')
         arg_parser.add_argument('--fs', type=int, default=DEFAULT_FS,
-                                help='Sampling frequency for impulse response and parametric eq filters.'
+                                help='Sampling frequency for impulse response and parametric eq filters. '
                                      'Defaults to {}.'.format(DEFAULT_FS))
         arg_parser.add_argument('--bit_depth', type=int, default=DEFAULT_BIT_DEPTH,
-                                help='Number of bits for every sample in impulse response.'
+                                help='Number of bits for every sample in impulse response. '
                                      'Defaults to {}.'.format(DEFAULT_BIT_DEPTH))
         arg_parser.add_argument('--phase', type=str, default=DEFAULT_PHASE,
                                 help='Impulse response phase characteristic. "minimum", "linear" or "both". '
                                      'Defaults to "{}"'.format(DEFAULT_PHASE))
         arg_parser.add_argument('--f_res', type=float, default=DEFAULT_F_RES,
-                                help='Frequency resolution for impulse responses. If this is 20 then impulse response'
-                                     'frequency domain will be sampled every 20 Hz. Filter length for'
+                                help='Frequency resolution for impulse responses. If this is 20 then impulse response '
+                                     'frequency domain will be sampled every 20 Hz. Filter length for '
                                      'impulse responses will be fs/f_res. Defaults to {}.'.format(DEFAULT_F_RES))
         arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
-                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
-                                     ' Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
+                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to '
+                                     '{f_max} Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
                                         f_min=DEFAULT_OE_BASS_BOOST_F_LOWER,
                                         f_max=DEFAULT_OE_BASS_BOOST_F_UPPER
                                      )
                                 )
         arg_parser.add_argument('--iem_bass_boost', type=float, default=argparse.SUPPRESS,
-                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to {f_max}'
-                                     ' Hz. "--iem_bass_boost" is mutually exclusive with "--bass_boost".'.format(
+                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to '
+                                     '{f_max} Hz. "--iem_bass_boost" is mutually exclusive with "--bass_boost".'.format(
                                         f_min=DEFAULT_IE_BASS_BOOST_F_LOWER,
                                         f_max=DEFAULT_IE_BASS_BOOST_F_UPPER
                                      )

@@ -66,9 +66,9 @@ def main():
         This is a list of recommended results. Results for other measurements are available for many headphones, these
         can be found in the [full index](https://github.com/jaakkopasanen/AutoEq/blob/master/results/INDEX.md).
         
-        Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com. This means if there are
-        measurements from multiple sources for the same headphone model only the highest priority result will be shown
-        in this list.
+        Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com > Reference Audio Analyzer.
+        This means if there are measurements from multiple sources for the same headphone model only the highest
+        priority result will be shown in this list.
         
         This list has {} headphone models covered but if your headphone is missing you can create settings for it
         yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)

@@ -6,10 +6,10 @@ and follow instructions in [Usage](https://github.com/jaakkopasanen/AutoEq#usage
 ## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
 frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
-This project currently has 1000+ headphones covered in the
+This project currently has almost 2000 headphones covered in the
 [results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder.
 See [Usage](https://github.com/jaakkopasanen/AutoEq#usage) for instructions how to use the results with
-[EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and
+different equalizer softwares and
 [Results](https://github.com/jaakkopasanen/AutoEq#results) section for details about parameters and how the results were
 obtained.
 
@@ -65,7 +65,7 @@ filter parameters look like this:
 Convolution equalizer settings are finite impulse responses (FIR filters) and are the most advanced kind of (LTI)
 filters. FIR filters make it possible to produce linear phase filters which some may prefer though generally minimum
 phase filters are recommended. Convolution equalizer settings are provided as WAV files. Pre-computed results include
-impulse responses with 44.1 kHz and 48 kHz and other sampling rates are supported as well. Import the WAV file with
+impulse responses with 44.1 kHz and 48 kHz but other sampling rates are supported as well. Import the WAV file with
 correct sampling frequency into the software to use convolution equalizer.
 
 Minimum phase impulse response looks like this:
@@ -106,7 +106,7 @@ parametric equalizers such as [Roon](https://roonlabs.com/) and [Foobar2000](htt
 #### Android
 doesn't have any system-wide parametric equalizers but there are several options which all have different caveats.
 
-Android has a native ten band equalizer which can be controlled with
+Android has a native equalizer which can be controlled with
 [Music Equalizer EQ](#music-eq-equalizer) app for system wide equalization without rooting. This is the best option for
 non-rooted users who use Spotify.
 
@@ -211,12 +211,13 @@ not sufficient since measurements and equalization have several problems that ne
 
 Results provided in this project currently have all the headphone measurements from
 [Innerfidelity](https://www.innerfidelity.com/headphone-measurements), [Headphone.com](http://graphs.headphone.com/),
-[oratory1990](https://www.reddit.com/user/oratory1990) and [Rtings](https://www.rtings.com/headphones).
+[oratory1990](https://www.reddit.com/user/oratory1990), [Rtings](https://www.rtings.com/headphones) and
+[Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1).
 Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
 [target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 would be found in
 [innerfidelity/sbaf-serious/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650).
-Multiple measurements of a same heaphone by a same measurement entity are averaged. All different measurements for
+Multiple measurements of a same headphone by a same measurement entity are averaged. All different measurements for
 averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
 averaged data which has no suffixes in the name.
 
@@ -244,6 +245,12 @@ Innerfidelity uses so in theory the uncalibrated SBAF Serious target should work
 tests found the treble average target to be slightly better. Rtings have
 [a very informative video](https://www.youtube.com/watch?v=HNEI3qLZEKo) about how they are doing the measurements and
 how did they came up with the target they use.
+
+Reference Audio Analyzer measurements are done one multiple different measurement systems and the compensation curve
+used in the images is not known. Results in this project take the Reference Audio Analyzer measurements as is and no
+compensation curve has been developed. There also is no bass boost applied to Reference Audio Analyzer measurements
+since they look to be lacking bass in many cases compared to other measurements leading to natural bass boost when using
+zero vector as the compensation curve.
 
 Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
 reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
@@ -313,7 +320,7 @@ usage: frequency_response.py [-h] --input_dir INPUT_DIR
                              [--q Q] [--ten_band_eq]
                              [--max_filters MAX_FILTERS] [--fs FS]
                              [--bit_depth BIT_DEPTH] [--phase PHASE]
-                             [--bass_boost BASS_BOOST]
+                             [--f_res F_RES] [--bass_boost BASS_BOOST]
                              [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
                              [--max_gain MAX_GAIN]
                              [--treble_f_lower TREBLE_F_LOWER]
@@ -329,14 +336,14 @@ optional arguments:
                         directories.
   --output_dir OUTPUT_DIR
                         Path to results directory. Will keep the same relative
-                        paths for files foundin input_dir.
+                        paths for files found in input_dir.
   --standardize_input   Overwrite input data in standardized sampling and
                         bias?
   --new_only            Only process input files which don't have results in
                         output directory.
   --calibration CALIBRATION
                         File path to CSV containing calibration data. Needed
-                        when using target responsesnot developed for the
+                        when using target responses not developed for the
                         source measurement system. See `calibration`
                         directory.
   --compensation COMPENSATION
@@ -358,19 +365,24 @@ optional arguments:
                         optimization.
   --max_filters MAX_FILTERS
                         Maximum number of filters for parametric EQ. Multiple
-                        cumulative optimization runscan be done by giving
+                        cumulative optimization runs can be done by giving
                         multiple filter counts separated by "+". "5+5" would
-                        create10 filters where the first 5 are usable
-                        independently from the rest 5 and the last5 can only
+                        create 10 filters where the first 5 are usable
+                        independently from the rest 5 and the last 5 can only
                         be used with the first 5. This allows to have muliple
-                        configurationsfor equalizers with different number of
+                        configurations for equalizers with different number of
                         bands available. Not limited by default.
-  --fs FS               Sampling frequency for impulse response and paramteric
-                        eq filters.Defaults to 44100.
+  --fs FS               Sampling frequency for impulse response and parametric
+                        eq filters. Defaults to 44100.
   --bit_depth BIT_DEPTH
-                        Number of bits for every sample. Defaults to 16.
+                        Number of bits for every sample in impulse response.
+                        Defaults to 16.
   --phase PHASE         Impulse response phase characteristic. "minimum",
                         "linear" or "both". Defaults to "minimum"
+  --f_res F_RES         Frequency resolution for impulse responses. If this is
+                        20 then impulse response frequency domain will be
+                        sampled every 20 Hz. Filter length for impulse
+                        responses will be fs/f_res. Defaults to 10.
   --bass_boost BASS_BOOST
                         Target gain for sub-bass in dB. Has sigmoid slope down
                         from 35 Hz to 280 Hz. "--bass_boost" is mutually
@@ -615,9 +627,9 @@ Compensation curves used for oratory1990 measurements are the Harman target curv
 Rtings measurements were obtained in a similar fashion as the Headphone.com measurements were. Two new compensation
 curves were developed in addition to the native curve used by Rtings in their measurement reports.
 
+Reference Audio Analyzer measurements were gotten the same way. Images downloaded and a image parser was developed to
+read the numerical data. Reference Audio Analyzer doesn't have compensation curve by AutoEQ project but instead simply
+trusts the compensated data provided by Reference Audio Analyzer.
+
 Data processing tools are not meant as a user friendly and robust software but instead to be able to be ran once to
 obtain the raw data.
-
-Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com. This means if there are
-measurements from multiple sources for the same headphone model only the highest priority result will be shown
-in this list.
