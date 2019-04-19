@@ -1,4 +1,4 @@
-t = document.getElementsByClassName('s90z9tc-19 iDFCDm')[0]
+t = document.getElementsByTagName("table")[0]
 rows = t.getElementsByTagName('tr')
 
 manufacturer = '';
