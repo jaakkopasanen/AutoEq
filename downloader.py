@@ -31,7 +31,7 @@ class Downloader:
         if old_image_urls is not None:
             keys = list(image_urls.keys())
             for key in keys:
-                if key in old_image_urls.keys():
+                if key in old_image_urls.keys() and image_urls[key] == old_image_urls[key]:
                     del image_urls[key]
         self.image_urls = image_urls
 
