@@ -12,6 +12,7 @@ const ignore = [
   '(?:(?:RME ADI-2)|(?:preferred)) setting',
   'v(?:1|2)',
   '-',
+  '\\(|\\)',
 ];
 
 const manufacturer_replacements = [
@@ -20,7 +21,7 @@ const manufacturer_replacements = [
 ];
 
 const model_replacements = [
-    ['DT', 'DT '],
+    [/DT(\d\d\d)/g, 'DT $1'],
     ['QC', 'QuietComfort '],
     ['WH1000XM2', 'WH-1000XM2'],
     ['/', ''],
@@ -33,6 +34,7 @@ const model_replacements = [
 ];
 
 const massdrop = [
+    'Beyerdynamic DT 177X Go',
     'Focal Elex',
     'Fostex T-X0',
     'Fostex TH-X00 Ebony',
@@ -45,6 +47,7 @@ const massdrop = [
     'Koss ESP95X',
     'MEE Audio Pinnacle PX',
     'MEE Audio Planamic IEM',
+    'Meze 99 Noir',
     'NuForce EDC3',
     'NuForce Stride',
     'Sennheiser HD 58X',
