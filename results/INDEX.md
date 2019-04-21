@@ -663,6 +663,7 @@ from the same source.
 - [Bedphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bedphones) by Innerfidelity
 - [Behringer HPS5000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Behringer%20HPS5000) by Innerfidelity
 - [Betron YSM1000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Betron%20YSM1000) by Rtings
+- [Beyerdynamic Amiron Home](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20Amiron%20Home) by oratory1990
 - [Beyerdynamic Aventho Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20Aventho%20Wireless) by oratory1990
 - [Beyerdynamic Custom One Pro linear bass position](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20Custom%20One%20Pro%20linear%20bass%20position) by Headphone.com
 - [Beyerdynamic Custom One Pro switch position 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20Custom%20One%20Pro%20switch%20position%202) by Innerfidelity
@@ -749,6 +750,7 @@ from the same source.
 - [Beyerdynamic DTX 101 iE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DTX%20101%20iE) by Reference Audio Analyzer
 - [Beyerdynamic DTX 300 p](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DTX%20300%20p) by Reference Audio Analyzer
 - [Beyerdynamic DTX 350](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DTX%20350) by Reference Audio Analyzer
+- [Beyerdynamic DTX 350p](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DTX%20350p) by oratory1990
 - [Beyerdynamic DTX 71 iE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DTX%2071%20iE) by Reference Audio Analyzer
 - [Beyerdynamic DTX 710](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DTX%20710) by Reference Audio Analyzer
 - [Beyerdynamic DTX 910](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DTX%20910) by Reference Audio Analyzer
@@ -1606,6 +1608,7 @@ from the same source.
 - [Hifiman HE6se](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Hifiman%20HE6se) by oratory1990
 - [Hifiman RE400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Hifiman%20RE400) by Crinacle (Harman in-ear 2017-1)
 - [Hifiman RE400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Hifiman%20RE400) by Crinacle (Usound)
+- [Hifiman Shangri-La](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Hifiman%20Shangri-La) by oratory1990
 - [House of Marley Exodus Second Pair](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/House%20of%20Marley%20Exodus%20Second%20Pair) by Innerfidelity
 - [House of Marley Legend](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/House%20of%20Marley%20Legend) by Innerfidelity
 - [House of Marley Liberate XLBT Wired](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/House%20of%20Marley%20Liberate%20XLBT%20Wired) by Innerfidelity
@@ -1656,6 +1659,8 @@ from the same source.
 - [InEar PhoPhile-8 Treble](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/InEar%20PhoPhile-8%20Treble) by Crinacle (Usound)
 - [InEar PhoPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20PhoPhile-8) by Crinacle (Harman in-ear 2017-1)
 - [InEar PhoPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/InEar%20PhoPhile-8) by Crinacle (Usound)
+- [InEar ProPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/InEar%20ProPhile-8) by oratory1990 (Harman in-ear 2017-1)
+- [InEar ProPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/InEar%20ProPhile-8) by oratory1990 (Usound)
 - [InEar StageDiver SD2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20StageDiver%20SD2) by Crinacle (Harman in-ear 2017-1)
 - [InEar StageDiver SD2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/InEar%20StageDiver%20SD2) by Crinacle (Usound)
 - [InEar StageDiver SD3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20StageDiver%20SD3) by Crinacle (Harman in-ear 2017-1)
@@ -2067,6 +2072,8 @@ from the same source.
 - [Massdrop Plus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Massdrop%20Plus) by oratory1990 (Harman in-ear 2017-1)
 - [Massdrop Plus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Massdrop%20Plus) by oratory1990 (Usound)
 - [Massdrop x AKG K7XX](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Massdrop%20x%20AKG%20K7XX) by Innerfidelity
+- [Massdrop x Beyerdynamic DT 177X Go (Leather Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Beyerdynamic%20DT%20177X%20Go%20(Leather%20Earpads)) by oratory1990
+- [Massdrop x Beyerdynamic DT 177X Go (Velours Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Beyerdynamic%20DT%20177X%20Go%20(Velours%20Earpads)) by oratory1990
 - [Massdrop x E-Mu Purpleheart](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Massdrop%20x%20E-Mu%20Purpleheart) by Innerfidelity
 - [Massdrop x Focal Elex](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Focal%20Elex) by oratory1990
 - [Massdrop x Fostex T-X0](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Fostex%20T-X0) by oratory1990
@@ -2088,6 +2095,7 @@ from the same source.
 - [Massdrop x MEE Audio Planamic IEM](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Massdrop%20x%20MEE%20Audio%20Planamic%20IEM) by oratory1990 (Usound)
 - [Massdrop x MEE Planamic](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Massdrop%20x%20MEE%20Planamic) by Crinacle (Harman in-ear 2017-1)
 - [Massdrop x MEE Planamic](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Massdrop%20x%20MEE%20Planamic) by Crinacle (Usound)
+- [Massdrop x Meze 99 Noir](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Meze%2099%20Noir) by oratory1990
 - [Massdrop x NuForce EDC3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Massdrop%20x%20NuForce%20EDC3) by Crinacle (Harman in-ear 2017-1)
 - [Massdrop x NuForce EDC3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Massdrop%20x%20NuForce%20EDC3) by Crinacle (Usound)
 - [Massdrop x NuForce EDC3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Massdrop%20x%20NuForce%20EDC3) by oratory1990 (Harman in-ear 2017-1)
@@ -2435,6 +2443,7 @@ from the same source.
 - [Philips SHL 5905 BK](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Philips%20SHL%205905%20BK) by Reference Audio Analyzer
 - [Philips SHM 6110 U](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Philips%20SHM%206110%20U) by Reference Audio Analyzer
 - [Philips SHM 6500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Philips%20SHM%206500) by Reference Audio Analyzer
+- [Philips SHP9500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Philips%20SHP9500) by oratory1990
 - [Philips SHP9500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Philips%20SHP9500) by Rtings
 - [Philips SHS8000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Philips%20SHS8000) by oratory1990 (Harman in-ear 2017-1)
 - [Philips SHS8000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Philips%20SHS8000) by oratory1990 (Usound)
@@ -2751,7 +2760,7 @@ from the same source.
 - [Sennheiser HD1 In-Ear Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sennheiser%20HD1%20In-Ear%20Wireless) by Rtings
 - [Sennheiser HD7 DJ](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sennheiser%20HD7%20DJ) by Reference Audio Analyzer
 - [Sennheiser HE 60](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HE%2060) by Innerfidelity
-- [Sennheiser HE1 Orpheus 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HE1%20Orpheus%202) by oratory1990
+- [Sennheiser HE1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HE1) by oratory1990
 - [Sennheiser IE 6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20IE%206) by Innerfidelity
 - [Sennheiser IE 80 S](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20IE%2080%20S) by oratory1990 (Harman in-ear 2017-1)
 - [Sennheiser IE 80 S](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Sennheiser%20IE%2080%20S) by oratory1990 (Usound)
@@ -2941,6 +2950,7 @@ from the same source.
 - [Shure SRH1440](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Shure%20SRH1440) by Reference Audio Analyzer
 - [Shure SRH1540](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Shure%20SRH1540) by Headphone.com
 - [Shure SRH1540](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Shure%20SRH1540) by Innerfidelity
+- [Shure SRH1540](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Shure%20SRH1540) by oratory1990
 - [Shure SRH1540](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Shure%20SRH1540) by Reference Audio Analyzer
 - [Shure SRH1840](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Shure%20SRH1840) by Headphone.com
 - [Shure SRH1840](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Shure%20SRH1840) by Innerfidelity
@@ -3253,8 +3263,10 @@ from the same source.
 - [Stax SR-303](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Stax%20SR-303) by Reference Audio Analyzer
 - [Stax SR-3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-3) by Innerfidelity
 - [Stax SR-40 Electret SR4 Adapter](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-40%20Electret%20SR4%20Adapter) by Innerfidelity
+- [Stax SR-404 (with perfect seal)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Stax%20SR-404%20(with%20perfect%20seal)) by oratory1990
 - [Stax SR-404 Ltd SSL-0670](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-404%20Ltd%20SSL-0670) by Innerfidelity
 - [Stax SR-404 S 2742](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-404%20S%202742) by Innerfidelity
+- [Stax SR-404](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Stax%20SR-404) by oratory1990
 - [Stax SR-404](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Stax%20SR-404) by Reference Audio Analyzer
 - [Stax SR-40](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Stax%20SR-40) by Reference Audio Analyzer
 - [Stax SR-507 SE1-1049](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-507%20SE1-1049) by Innerfidelity

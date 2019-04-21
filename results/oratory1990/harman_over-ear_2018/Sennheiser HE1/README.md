@@ -1,4 +1,4 @@
-# Sennheiser HE1 Orpheus 2
+# Sennheiser HE1
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### EqualizerAPO
@@ -10,10 +10,10 @@ GraphicEQ: 21 -4.9; 23 -5.3; 25 -5.5; 28 -5.6; 31 -5.5; 34 -5.2; 37 -5.0; 41 -5.
 
 ### HeSuVi
 HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`Sennheiser HE1 Orpheus 2 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+`Sennheiser HE1 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
 
 ### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HE1 Orpheus 2 ParametricEQ.txt`.
+In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HE1 ParametricEQ.txt`.
 
 ### Parametric EQs
 In case of using other parametric equalizer, apply preamp of **-4.8dB** and build filters manually
@@ -50,4 +50,4 @@ gains manually with these parameters.
 ### Impulse Response
 In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HE1%20Orpheus%202/Sennheiser%20HE1%20Orpheus%202.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HE1/Sennheiser%20HE1.png)
