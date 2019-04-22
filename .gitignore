@@ -108,3 +108,6 @@ my_results/
 */images
 */inspection
 */pdf
+crinacle/data/
+crinacle/raw_data/
+results/crinacle/*/*/*.csv
