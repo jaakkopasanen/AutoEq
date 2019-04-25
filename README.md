@@ -633,3 +633,9 @@ trusts the compensated data provided by Reference Audio Analyzer.
 
 Data processing tools are not meant as a user friendly and robust software but instead to be able to be ran once to
 obtain the raw data.
+
+
+## Contact
+[Issues](https://github.com/jaakkopasanen/AutoEq/issues) are the way to go if you are experiencing problems, have ideas or if there is something unclear about how things are done or documented.
+
+You can find me in [Reddit](https://www.reddit.com/user/jaakkopasanen) and [Head-fi](https://www.head-fi.org/members/jaakkopasanen.491235/) if you just want to say hello.
