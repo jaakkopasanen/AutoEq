@@ -27,16 +27,32 @@ def main():
     unknown = []
     for file_path in glob(os.path.join(DIR_PATH, 'raw_data', '*')):
         name = os.path.split(file_path)[1]
-        name = name[:-6]  # Remove ".txt" and " R" or " L" suffix
+        # Remove ".txt" and " R" or " L" suffix
+        name = re.sub('\.txt$', '', name)
+        name = re.sub(' (L|R)', '', name)
         if name in name_index:
             continue
+
         name_index[name] = set()
-        match = False
+
+        # Look for full names where current name is the last word
         for full_name in full_names:
-            if re.search('( |-|^){}( |$)'.format(re.escape(name)), full_name, flags=re.IGNORECASE):
-                match = True
+            if re.search(' {}$'.format(re.escape(name)), full_name, flags=re.IGNORECASE):
                 name_index[name].add(full_name)
-        if not match:
+
+        if len(name_index[name]) == 0:
+            # No end matches, find full words anywhere
+            for full_name in full_names:
+                if re.search('( |-|^){}( |$)'.format(re.escape(name)), full_name, flags=re.IGNORECASE):
+                    name_index[name].add(full_name)
+
+        if len(name_index[name]) == 0:
+            # No full word matches, find partials
+            for full_name in full_names:
+                if re.search(re.escape(name), full_name, flags=re.IGNORECASE):
+                    name_index[name].add(full_name)
+
+        if len(name_index[name]) == 0:
             unknown.append(name)
 
     print('{} unknown IEMs'.format(len(unknown)))
