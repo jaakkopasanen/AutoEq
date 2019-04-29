@@ -24,7 +24,7 @@
 8SH	qdc 8SH	
 8SL	qdc 8SL	
 8SS	qdc 8SS	
-A-HE03	"Whizzer A-HE03 ""Kylin"""	
+A-HE03	Whizzer A-HE03 Kylin	
 A12t	64 Audio A12t	
 A15	Whizzer A15	
 A15 Pro	Whizzer A15 Pro	
@@ -37,28 +37,28 @@ A6t DEC14	64 Audio A6
 A6t	64 Audio A6t	
 A6t M20	64 Audio A6t M20	
 A71	Fidue A71	
-A91	"Fidue A91 ""Sirius"""	
+A91	Fidue A91 Sirius	
 Adagio 3	Final Audio III	
-ADX5000 #1	Audio Technica ATH-ADX5000 #1	ignore
-ADX5000 #2	Audio Technica ATH-ADX5000 #2	ignore
-ADX5000 #3	Audio Technica ATH-ADX5000 #3	ignore
-ADX5000 #4	Audio Technica ATH-ADX5000 #4	ignore
-ADX5000 #5	Audio Technica ATH-ADX5000 #5	ignore
+ADX5000 #1	Audio Technica ATH-ADX5000 #1	onear
+ADX5000 #2	Audio Technica ATH-ADX5000 #2	onear
+ADX5000 #3	Audio Technica ATH-ADX5000 #3	onear
+ADX5000 #4	Audio Technica ATH-ADX5000 #4	onear
+ADX5000 #5	Audio Technica ATH-ADX5000 #5	onear
 Aether Bass	Lime Ears Aether Bass	
 Aether	Lime Ears Aether	
 AG2	Audio Genetic AG2	
-Air 2	FitEar Air 2/Titan	
+Air 2	FitEar Air 2	
 AM16	Ambient Acoustics AM16	
 AM24	Ambient Acoustics AM24	
 AM7 Blue	Ambient Acoustics AM7 Blue	
 AM7	Ambient Acoustics AM7	
 AM7ed	Ambient Acoustics AM7 Red	
 AM7 Yellow	Ambient Acoustics AM7 Yellow	
-Andromeda	Campfire Audio Andromeda	
-Andromeda S2		
-Andromeda S3 IEMatch		
-Andromeda S3		
-Andromeda SS		
+Andromeda	Campfire Audio Andromeda sample 1	
+Andromeda S2	Campfire Audio Andromeda sample 2	
+Andromeda S3 IEMatch	Campfire Audio Andromeda sample 3 IEMatch	ignore
+Andromeda S3	Campfire Audio Andromeda sample 3	
+Andromeda SS	Campfire Audio Andromeda SS	
 Angie 2oclock	JH Audio Angie 2 o’clock	
 Angie Max	JH Audio Angie Max	
 Angie Min	JH Audio Angie Min	
@@ -75,7 +75,7 @@ Anole VX Bass	qdc Anole VX Bass
 Anole VX	qdc Anole VX	
 Anole VX Mids	qdc Anole VX Mids	
 Anole VX Treble	qdc Anole VX Treble	
-Answer	Dita Answer	
+Answer	Dita Audio Answer	
 Ares	VSonic Ares	
 Artemis	Elysian Artemis	
 AS10	KZ AS10	
@@ -96,8 +96,8 @@ BD4-2	Lear LCM BD4.2
 Be	Periodic Audio Be	
 Bella	NCM Bella	
 Bevi	Lypertek Bevi	
-BG	Shozy & Neo BG	
-BG S2	Shozy & Neo BG S2	
+BG	Shozy & Neo BG sample 1	
+BG S2	Shozy & Neo BG sample 2	
 Biggie	VE Monk IE Biggie	
 Billets		
 Billie Jean	JH Audio Billie Jean	
@@ -111,8 +111,8 @@ CD2000 #2
 CD2000 #3		
 CD2000 #4		
 CD2000 #5		
-CE-5	Hyla CE-5	
-CE5 S2	Hyla CE-5 S2	
+CE-5	Hyla CE-5 sample 1	
+CE5 S2	Hyla CE-5 sample 2	
 CL1	RHA CL1	
 CL750	RHA CL750	
 Clipper	Rhapsodio Clipper	
@@ -124,15 +124,15 @@ Cozoy Trio	Cozoy Trio
 CP	Shozy & Neo CP	
 CT200	Clear Tune CT-200	
 CT300P	Clear Tune CT-300P	
-CT500E	Clear Tune CT-500E	
-CT500E S2	Clear Tune CT-500E S2	
-CT6E	Clear Tune CT-6E	
-CT6E S2	Clear Tune CT-6E S2	
-D8000 #1	Final Audio D8000 #1	ignore
-D8000 #2	Final Audio D8000 #2	ignore
-D8000 #3	Final Audio D8000 #3	ignore
-D8000 #4	Final Audio D8000 #4	ignore
-D8000 #5	Final Audio D8000 #5	ignore
+CT500E	Clear Tune CT-500E sample 1	
+CT500E S2	Clear Tune CT-500E sample 2	
+CT6E	Clear Tune CT-6E sample 1	
+CT6E S2	Clear Tune CT-6E sample 2	
+D8000 #1	Final Audio D8000 #1	onear
+D8000 #2	Final Audio D8000 #2	onear
+D8000 #3	Final Audio D8000 #3	onear
+D8000 #4	Final Audio D8000 #4	onear
+D8000 #5	Final Audio D8000 #5	onear
 Daiso	Daiso $2 earphones	
 DEC 17 Test		
 Delphinus 5	Astrotec Delphinus 5	
@@ -160,21 +160,21 @@ Donguri Keyaki	Ocharaku Donguri Keyaki
 Donguri Ti Plus	Ocharaku Donguri Ti Plus	
 Doppio	Zero Audio Carbo Doppio ZH-BX700	
 Dorado	Campfire Audio Dorado	
-Dream	Dita Audio Dream	
-Dream S2	Dita Audio DreamS2	
+Dream	Dita Audio Dream sample 1	
+Dream S2	Dita Audio Dream sample 2	
 Dual		
 Dulce Bass	Noble Audio Dulce Bass	
 Duoza	Zero Audio Duoza ZH-DWX10	
 E1000	Final Audio E1000	
 E11	SoundMAGIC E11	
-E2000	Final Audio E2000	
-E2000 S2	Final Audio E2000 S2	
-E3000 S2	Final Audio E3000 S2	
-E3000 S3	Final Audio E3000 S3	
-E4000	Final Audio E4000	
-E4000 S2	Final Audio E4000 S2	
-E5000	Final Audio E5000	
-E5000 S2	Final Audio E5000 S2	
+E2000	Final Audio E2000 sample 1	
+E2000 S2	Final Audio E2000 sample 2	
+E3000 S2	Final Audio E3000 sample 2	
+E3000 S3	Final Audio E3000 sample 3	
+E4000	Final Audio E4000 sample 1	
+E4000 S2	Final Audio E4000 sample 2	
+E5000	Final Audio E5000 sample 1	
+E5000 S2	Final Audio E5000 sample 2	
 E70	Audio Technica ATH-E70	
 E900	Onkyo E900	
 ED16	KZ ED16	
@@ -191,16 +191,16 @@ EM5	Simgot EM5
 EM5H	Simgot EM5H	
 EM6	Earsonics EM6	
 EM6W	Eternal Melody EM6W	
-Empyrean #1	Meze Empyrean #1	ignore
-Empyrean #2	Meze Empyrean #2	ignore
-Empyrean #3	Meze Empyrean #3	ignore
-Empyrean #4	Meze Empyrean #4	ignore
-Empyrean #5	Meze Empyrean #5	ignore
+Empyrean #1	Meze Empyrean #1	onear
+Empyrean #2	Meze Empyrean #2	onear
+Empyrean #3	Meze Empyrean #3	onear
+Empyrean #4	Meze Empyrean #4	onear
+Empyrean #5	Meze Empyrean #5	onear
 EN700	Simgot EN700	
 EN700 Pro	Simgot EN700 Pro	
 EPH100	Yamha EPH-100	
 ER4P	Etymotic ER4P	
-ER4S C	Etymotic ER4S C	
+ER4S C	Etymotic ER4S custom	
 ER4S	Etymotic ER4S	
 ER4SR	Etymotic ER4SR	
 ER4XR	Etymotic ER4XR	
@@ -218,10 +218,10 @@ ESR	Empire Ears ESR
 EST	FitEar EST	
 Evo X	Advanced Evo X	
 EVR	Empire Ears EVR	
-EX1000 S1	Sony MDR-EX1000 S1	
-EX1000 S2	Sony MDR-EX1000 S2	
-EX1000 S3	Sony MDR-EX1000 S3	
-EX1000 S4	Sony MDR-EX1000 S4	
+EX1000 S1	Sony MDR-EX1000 sample 1	
+EX1000 S2	Sony MDR-EX1000 sample 2	
+EX1000 S3	Sony MDR-EX1000 sample 3	
+EX1000 S4	Sony MDR-EX1000 sample 4	
 EX510 Filterless	Sony MDR-EX510 Filterless	
 EX800	Sony MDR-EX800ST	
 Exclusive 1	TFZ Exclusive 1	
@@ -249,18 +249,18 @@ Fidelity	Dita Audio Fidelity
 Finschi	Oriolus Finschi	
 Fitear	FitEar Fitear	
 Flamenco Bass	Jomo Flamenco Bass	
-Flamenco Bass Treble	Jomo Flamenco Bass Treble	
-Flamenco	Jomo Flamenco	
-Flamenco S2 Bass Treble	Jomo Flamenco S2 Bass Treble	
-Flamenco S2	Jomo Flamenco S2	
+Flamenco Bass Treble	Jomo Flamenco Bass Treble sample 1	
+Flamenco	Jomo Flamenco sample 1	
+Flamenco S2 Bass Treble	Jomo Flamenco Bass Treble sample 2	
+Flamenco S2	Jomo Flamenco sample 2	
 Flamenco Treble	Jomo Flamenco Treble	
 Flat-4 Akakeyaki	Ocharaku Flat-4 Akakeyaki	
 Flat-4 Akazakura	Ocharaku Flat-4 Akazakura	
 Flat-4 Kaede Type 1	Ocharaku Flat-4 Kaede Type 1	
 Flat-4 Kaede Type 2	Ocharaku Flat-4 Kaede Type 2	
 Flat-4 Ti Plus	Ocharaku Flat-4 Ti Plus	
-Forsteni	Oriolus Forsteni	
-Forsteni S2	Oriolus Forsteni S2	
+Forsteni	Oriolus Forsteni sample 1	
+Forsteni S2	Oriolus Forsteni sample 2	
 Fourte	64 Audio Tia Fourte	
 FW01	JVC HA-FW01	
 FW02	JVC HA-FW02	
@@ -285,28 +285,28 @@ GT3 Treble	Advanced GT3 Treble
 Hades	Elysian Hades	
 Haka	Jomo Haka	
 Harmony 8.2	Custom Art Harmony 8.2	
-HD600 #1	Sennheiser HD600 #1	ignore
-HD600 #2	Sennheiser HD600 #2	ignore
-HD600 #3	Sennheiser HD600 #3	ignore
-HD600 #4	Sennheiser HD600 #4	ignore
-HD600 #5	Sennheiser HD600 #5	ignore
-HD650 #1	Sennheiser HD650 #1	ignore
-HD650 #2	Sennheiser HD650 #2	ignore
-HD650 #3	Sennheiser HD650 #3	ignore
-HD650 #4	Sennheiser HD650 #4	ignore
-HD650 #5	Sennheiser HD650 #5	ignore
-HD800 #1	Sennheiser HD800 #1	ignore
-HD800 #2	Sennheiser HD800 #2	ignore
-HD800 #3	Sennheiser HD800 #3	ignore
-HD800 #4	Sennheiser HD800 #4	ignore
-HD800 #5	Sennheiser HD800 #5	ignore
-HD800 avg	Sennheiser HD800 avg	ignore
-HD800 S2	Sennheiser HD800 S2	ignore
-HD800S #1	Sennheiser HD800S #1	ignore
-HD800S #2	Sennheiser HD800S #2	ignore
-HD800S #3	Sennheiser HD800S #3	ignore
-HD800S #4	Sennheiser HD800S #4	ignore
-HD800S #5	Sennheiser HD800S #5	ignore
+HD600 #1	Sennheiser HD600 #1	onear
+HD600 #2	Sennheiser HD600 #2	onear
+HD600 #3	Sennheiser HD600 #3	onear
+HD600 #4	Sennheiser HD600 #4	onear
+HD600 #5	Sennheiser HD600 #5	onear
+HD650 #1	Sennheiser HD650 #1	onear
+HD650 #2	Sennheiser HD650 #2	onear
+HD650 #3	Sennheiser HD650 #3	onear
+HD650 #4	Sennheiser HD650 #4	onear
+HD650 #5	Sennheiser HD650 #5	onear
+HD800 #1	Sennheiser HD800 #1	onear
+HD800 #2	Sennheiser HD800 #2	onear
+HD800 #3	Sennheiser HD800 #3	onear
+HD800 #4	Sennheiser HD800 #4	onear
+HD800 #5	Sennheiser HD800 #5	onear
+HD800 avg	Sennheiser HD800 avg	onear
+HD800 S2	Sennheiser HD800 sample 2	onear
+HD800S #1	Sennheiser HD800S #1	onear
+HD800S #2	Sennheiser HD800S #2	onear
+HD800S #3	Sennheiser HD800S #3	onear
+HD800S #4	Sennheiser HD800S #4	onear
+HD800S #5	Sennheiser HD800S #5	onear
 Heaven 4	Final Audio Heaven 4	
 Heaven 7	Final Audio Heaven 7	
 Heaven 8	Final Audio Heaven 8	
@@ -315,22 +315,22 @@ HEM1	NuForce HEM1
 Hibiki	Shozy x AAW Hibiki	
 Hibiki SE	Shozy x AAW Hibiki SE	
 Horizon	AZLA Horizon	
-HP3 #1		ignore
-HP3 #2		ignore
-HP3 #3		ignore
-HP3 #4		ignore
-HP3 #5		ignore
+HP3 #1		onear
+HP3 #2		onear
+HP3 #3		onear
+HP3 #4		onear
+HP3 #5		onear
 HS1001	Acoustune HS1001	
 HS1003	Acoustune HS1003	
-HS1004	Acoustune HS1004	
-HS1004 S2	Acoustune HS1004 S2	
+HS1004	Acoustune HS1004 sample 1	
+HS1004 S2	Acoustune HS1004 sample 2	
 HS1501	Acoustune HS1501	
 HS1503	Acoustune HS1503	
 HS1551	Acoustune HS1551	
 HS1650	Acoustune HS1650	
 HS1670	Acoustune HS1670	
-Idun	Kinera Idun	
-Idun S2	Kinera Idun S2	
+Idun	Kinera Idun sample 1	
+Idun S2	Kinera Idun sample 2	
 IE80 Half	Sennheiser IE80 Half	
 IE80 Max	Sennheiser IE80 Max	
 IE80 Min	Sennheiser IE80 Min	
@@ -349,8 +349,8 @@ iSine 10	Audeze iSine 10
 iSIne 10	Audeze iSine 10	
 iSine 20 Cipher	Audeze iSine 20 Cipher	
 iSine 20	Audeze iSine 20	
-IT01	iBasso IT01	
-IT01 S2	iBasso IT01 S2	
+IT01	iBasso IT01 sample 1	
+IT01 S2	iBasso IT01 sample 2	
 IT01S	iBasso IT01S	
 IT03	iBasso IT03	
 IT04	iBasso IT04	
@@ -368,8 +368,8 @@ K10	Noble Audio K10
 Katana	Noble Audio Katana	
 Khan	Noble Audio Khan	
 King Pro	TFZ King Pro	
-KL-Corona	Kumitate KL-Corona	
-KL-Corona S2	Kumitate KL-Corona S2	
+KL-Corona	Kumitate KL-Corona sample 1	
+KL-Corona S2	Kumitate KL-Corona sample 2	
 KL-Kanon 6-Minus	Kumitate KL-Kanon 6-Minus	
 KL-Kanon 6-Plus	Kumitate KL-Kanon 6-Plus	
 KL-Meteo	Kumitate KL-Meteo	
@@ -379,7 +379,7 @@ KL-REF Type-S Max Bass	Kumitate KL-REF Type-S Max Bass
 KL-Sanka B	Kumitate KL-Sanka B	
 KL-Sanka K	Kumitate KL-Sanka K	
 KL-Sanka	Kumitate KL-Sanka	
-KL-Sirius C	Kumitate KL-Sirius C	
+KL-Sirius C	Kumitate KL-Sirius custom	
 KL-Sirius	Kumitate KL-Sirius	
 KL-Trio Half	Kumitate KL-Trio Half	
 KL-Trio Max	Kumitate KL-Trio Max	
@@ -403,8 +403,8 @@ LCD-i4	Audeze LCD-i4
 LE2	Lime Ears LE2	
 Legacy	Unique Melody Legacy	
 Legend Omega	EarWerkz Legend Omega	
-Legend X	Empire Ears Legend X	
-Legend X S2	Empire Ears Legend S2	
+Legend X	Empire Ears Legend X sample 1	
+Legend X S2	Empire Ears Legend X sample 2	
 Live S2		
 LS200	Audio Technica ATH-LS200	
 LS300	Audio Technica ATH-LS300	
@@ -436,12 +436,12 @@ Merlin V2	Unique Melody Merlin V2
 Meze 12	Meze 12 Classics	
 Mg	Periodic Audio Mg	
 MH334	FitEar MH334	
-MH334SR C	FitEar MH334SR C	
+MH334SR C	FitEar MH334SR custom	
 MH335DW	FitEar MH335DW	
 MH750	Sony MH750	
-MH755	Sony MH755	
-MH755 S2	Sony MH755 S2	
-MH755 S3	Sony MH755 S3	
+MH755	Sony MH755 sample 1	
+MH755 S2	Sony MH755 sample 2	
+MH755 S3	Sony MH755 sample 3	
 Micro BL Bass Off	iFi micro iDSD Black-Label Bass Off	ignore
 Micro BL Bass On	iFi micro iDSD Black-Label Bass On	ignore
 Minerva	Elysian Minerva	
@@ -451,10 +451,10 @@ Mirage	Symphonium Audio Mirage
 Mk2		
 Mk2 S2		
 Mk2 S3		
-Model X Bass	Lime Ears Model X Bass	
-Model X Bass S2	Lime Ears Model X Bass S2	
-Model X	Lime Ears Model X	
-Model X S2	Lime Ears Model X S2	
+Model X Bass	Lime Ears Model X Bass sample 1	
+Model X Bass S2	Lime Ears Model X Bass sample 2	
+Model X	Lime Ears Model X sample 1	
+Model X S2	Lime Ears Model X sample 2	
 Momentum	Sennheiser Momentum In-Ear	
 Monet 17	FitEar Monet 17	
 Mylove	TFZ Mylove 2	
@@ -463,25 +463,25 @@ N5005 Bass Boost	AKG N5005 Bass Boost
 N5005 High	AKG N5005 High	
 N5005 Mid High	AKG N5005 Mid High	
 N5005eference	AKG N5005 Reference	
-N8 DD disabled		
-N8 M15 C S2		
-N8 M15 C S3		
-N8 M15 C S4		
-N8 M15 C S5		
-N8 M15		
-N8 M15 pre-RMA		
-N8 M15MA		
-N8 M15 S3		
-N8 M15 S4		
-N8 M20 C		
-N8 Mod		
-N8 Mod M20		
-N8 Mod None		
-N8 None C		
-N8 None C S2		
-N8 None C S3		
-N8 Vent Blocked		
-N8t M15		
+N8 DD disabled	64 Audio N8 (dd disabled)	
+N8 M15 C S2	64 Audio N8 M15 custom sample 2	
+N8 M15 C S3	64 Audio N8 M15 custom sample 3	
+N8 M15 C S4	64 Audio N8 M15 custom sample 4	
+N8 M15 C S5	64 Audio N8 M15 custom sample 5	
+N8 M15	64 Audio N8 M15 sample 1	
+N8 M15 pre-RMA	64 Audio N8 M15 pre-RMA	
+N8 M15MA	64 Audio N8 M15MA	
+N8 M15 S3	64 Audio N8 M15 sample 3	
+N8 M15 S4	64 Audio N8 M15 sample 4	
+N8 M20 C	64 Audio N8 M20 custom	
+N8 Mod	64 Audio N8 modded	
+N8 Mod M20	64 Audio N8 M20 modded	
+N8 Mod None	64 Audio N8 modded	ignore
+N8 None C	64 Audio N8 custom sample 1	
+N8 None C S2	64 Audio N8 custom sample 2	
+N8 None C S3	64 Audio N8 custom sample 3	
+N8 Vent Blocked	64 Audio N8 vent blocked	
+N8t M15	64 Audio N8t M15	
 nemesis	Empire Ears Nemesis	
 Nemesis	Empire Ears Nemesis	
 Neptune	qdc Neptune	
@@ -498,21 +498,21 @@ OH1	ikko OH1
 Omega Spark	Fischer Omega Spark	
 Orion	Campfire Orion	
 OS V3	HiFi BOY OS V3	
-Parterre	FitEar Parterre	
-Parterre S2	FitEar Parterre S2	
+Parterre	FitEar Parterre sample 1	
+Parterre S2	FitEar Parterre sample 2	
 PFE		
-Phantom CE	Empire Ears Phantom CE	
-Phantom Eu	Empire Ears Phantom Eu	
+Phantom CE	Empire Ears Phantom custom emulated sample 1	ignore
+Phantom Eu	Empire Ears Phantom custom emulated sample 2	ignore
 Phantom	Empire Ears Phantom	
 Planamic	Massdrop x MEE Planamic	
-Plus	Massdrop Plus	
-Plus S2	Massdrop Plus S2	
+Plus	Massdrop Plus sample 1	
+Plus S2	Massdrop Plus sample 2	
 Pola	Shozy x AAW Pola	
-Polaris	Campfire Audio Polaris	
-Polaris S2	Campfire Audio Polaris S2	
+Polaris	Campfire Audio Polaris sample 1	
+Polaris S2	Campfire Audio Polaris sample 2	
 Pollux	ARC Pollux	
-Prelude	Warbler Prelude	
-Prelude S2	Warbler Prelude S2	
+Prelude	Warbler Prelude sample 1	
+Prelude S2	Warbler Prelude sample 2	
 Primo8	NuForce Primo8	
 Pristine	HUM Pristine Reference	
 Pro330v2	Custom Art Pro330v2	
@@ -555,12 +555,12 @@ SE215td
 SE315	Shure SE315	
 SE425	Shure SE425	
 SE535	Shure SE535	
-SE5U	Spiral Ears SE5U	
-SE5U S2		
-SE846 Black	Shure SE846 Black	
-SE846 Black S2	Shure SE846 Black S2	
+SE5U	Spiral Ears SE5U sample 1	
+SE5U S2	Spiral Ears SE5U sample 2	
+SE846 Black	Shure SE846 Black sample 1	
+SE846 Black S2	Shure SE846 Black sample 2	
 SE846 Blue	Shure SE846 Blue	
-SE846 Clone	Shure SE846 Clone	ignore
+SE846 Clone	Fake Shure SE846	
 SE846 White	Shure SE846 White	
 Secret Garden	TFZ Secret Garden	
 SEED	Kinera SEED	
@@ -568,17 +568,17 @@ Sendy	Sendy Aiya
 SH3	PEARS SH3	
 SIA	SIA complimentary earphones	
 Singolo	Zero Audio Carbo Singolo ZH-BS150-CS	
-Sirius C S2	Fidue A91 Sirius	
+Sirius C S2	Fidue A91 Sirius custom	
 SK3		
-Smalls	VE Monk IE Smalls	
-Solaris	Campfire Audio Solaris	
-Solaris S2	Campfire Audio Solaris S2	
-Solaris S3	Campfire Audio Solaris S3	
-Solaris S3-1	Campfire Audio Solaris S3-1	
-Solaris S3-2	Campfire Audio Solaris S3-2	
-Solaris S3-3	Campfire Audio Solaris S3-3	
-Solaris S3-4	Campfire Audio Solaris S3-4	
-Solaris S3-5	Campfire Audio Solaris S3-5	
+Smalls	Venture Electronics Monk IE Smalls	
+Solaris	Campfire Audio Solaris sample 1	
+Solaris S2	Campfire Audio Solaris sample 2	
+Solaris S3	Campfire Audio Solaris sample 3	
+Solaris S3-1	Campfire Audio Solaris sample 3 tip 1	ignore
+Solaris S3-2	Campfire Audio Solaris sample 3 tip 2	ignore
+Solaris S3-3	Campfire Audio Solaris sample 3 tip 3	ignore
+Solaris S3-4	Campfire Audio Solaris sample 3 tip 4	ignore
+Solaris S3-5	Campfire Audio Solaris sample 3 tip 5	ignore
 Sonic		
 Sora	Intime Sora	
 SP3	Soranic SP3	
@@ -600,9 +600,9 @@ Tenore	Zero Audio Carbo Tenore
 Tequila 1	TFZ Tequila 1	
 Terminator	Elysian Terminator	
 TF10	Ultimate Ears TripleFi 10	
-TG334	FitEar TG334	
-TG334 S1	FitEar TG334 S1	
-TG334 S2	FitEar TG334 S2	
+TG334	FitEar TG334 sample 3	
+TG334 S1	FitEar TG334 sample 1	
+TG334 S2	FitEar TG334 sample 2	
 Thirteen 6	Fender Thirteen 6	
 Ti Galaxy	TFZ Ti Galaxy	
 Ti	Periodic Audio Ti	
@@ -623,17 +623,17 @@ U12t DEC17	64 Audio U12t (December 2017)	ignore
 U12t	64 Audio U12t	
 U18Tzar DEC14		
 U18Tzar DEC17		
-U18Tzar	64 Audio U18Tzar	
-U18Tzar M20		
-U18Tzar S2		
+U18Tzar	64 Audio U18Tzar sample 1	
+U18Tzar M20	64 Audio U18Tzar M20	
+U18Tzar S2	64 Audio U18Tzar sample 2	
 U2	Stealthsonics U2	
 U4	Stealthsonics U4	
 U9 JDM	Stealthsonics U9 JDM	
 U9	Stealthsonics U9	
 UE11	Ultimate Ears UE11	
 UE18+ 3rd Gen	Ultimate Ears UE18+ 3rd Gen	
-UE18+	Ultimate Ears UE18+	
-UE18+ S2	Ultimate Ears UE18+ S2	
+UE18+	Ultimate Ears UE18+ sample 1	
+UE18+ S2	Ultimate Ears UE18+ sample 2	
 UE5	Ultimate Ears UE5	
 UE6	Ultimate Ears UE6	
 UE7	Ultimate Ears UE7	
@@ -644,25 +644,25 @@ UM Pro 20	Westone UM Pro 20
 UM Pro 30	Westone UM Pro 30	
 UM pro 50	Westone UM Pro 50	
 UM Pro 50	Westone UM Pro 50	
-Utopia #1	Focal Utopia #1	ignore
-Utopia #2	Focal Utopia #2	ignore
-Utopia #3	Focal Utopia #3	ignore
-Utopia #4	Focal Utopia #4	ignore
-Utopia #5	Focal Utopia #5	ignore
+Utopia #1	Focal Utopia #1	onear
+Utopia #2	Focal Utopia #2	onear
+Utopia #3	Focal Utopia #3	onear
+Utopia #4	Focal Utopia #4	onear
+Utopia #5	Focal Utopia #5	onear
 Vantage	Empire Ears Vantage	
 VC02	Vsonic VC02	
 VE5	Vision Ears VE5	
 VE6X1	Vision Ears VE6X1	
 VE6X2	Vision Ears VE6X2	
-VE8 C	Vision Ears VE8 C	
+VE8 C	Vision Ears VE8 custom	
 VE8	Vision Ears VE8	
-Vega	Campfire Audio Vega	
-Vega S2	Campfire Audio Vega S2	
-Verite #1	ZMF Verite #1	ignore
-Verite #2	ZMF Verite #2	ignore
-Verite #3	ZMF Verite #3	ignore
-Verite #4	ZMF Verite #4	ignore
-Verite #5	ZMF Verite #5	ignore
+Vega	Campfire Audio Vega sample 1	
+Vega S2	Campfire Audio Vega sample 2	
+Verite #1	ZMF Verite #1	onear
+Verite #2	ZMF Verite #2	onear
+Verite #3	ZMF Verite #3	onear
+Verite #4	ZMF Verite #4	onear
+Verite #5	ZMF Verite #5	onear
 VSD1S	VSonic VSD1S	
 VSD2S	VSonic VSD2S	
 VSD3S	VSonic VSD3S	
@@ -682,14 +682,14 @@ XBA-A3 S3	Sony XBA-A3 S3
 XBA300	Sony XBA-300	
 Xelento	Beyerdynamic Xelento	
 Z1R Filterless	Sony IER-Z1R Filterless	
-Z1R	Sony IER-Z1R	
-Z1R S2	Sony IER-Z1R S2	
+Z1R	Sony IER-Z1R sample 1	
+Z1R S2	Sony IER-Z1R sample 2	
 Z5	Sony XBA-Z5	
 Zeus-R	Empire Ears Zeus-R	
 Zeus-XIV	Empire Ears Zeus-XIV	
 ZS3	KZ ZS3	
-ZS5v1	KZ ZS5v1	
-ZS5v1 S2	KZ ZS5v1 S2	
+ZS5v1	KZ ZS5v1 sample 1	
+ZS5v1 S2	KZ ZS5v1 sample 2	
 ZS5v2	KZ ZS5v2	
 ZS6	KZ ZS6	
 ZSR	KZ ZSR	

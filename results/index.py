@@ -51,6 +51,15 @@ def main():
         glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'sbaf-serious', '*'))),
         'Innerfidelity'
     ))
+    # Get links to Crinacle results
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2017-1', '*'))),
+        'Crinacle (Harman in-ear 2017-1)'
+    ))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'usound', '*'))),
+        'Crinacle (Usound)'
+    ))
     # Get links to oratory1990 results
     lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*'))),

@@ -54,6 +54,8 @@ def main():
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'avg', '*')))))
     # Get links to Innerfidelity results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'sbaf-serious', '*')))))
+    # Get links to Crinacle results
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2017-1', '*')))))
     # Get links to oratory1990 results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*')))))
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2017-1', '*')))))
@@ -63,8 +65,9 @@ def main():
     with open(os.path.join(DIR_PATH, 'README.md'), 'w') as f:
         keys = sorted(urls.keys())
         s = '''# Recommended Results
-        This is a list of recommended results. Results for other measurements are available for many headphones, these
-        can be found in the [full index](https://github.com/jaakkopasanen/AutoEq/blob/master/results/INDEX.md).
+        This is a list of recommended results. Results for other measurements and target curves are available for many
+        headphones, these can be found in the
+        [full index](https://github.com/jaakkopasanen/AutoEq/blob/master/results/INDEX.md).
         
         Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com > Reference Audio Analyzer.
         This means if there are measurements from multiple sources for the same headphone model only the highest

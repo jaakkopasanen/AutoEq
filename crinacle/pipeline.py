@@ -4,20 +4,44 @@ import os
 import sys
 from glob import glob
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import re
+import warnings
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from frequency_response import FrequencyResponse
-import warnings
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 
 def main():
+    # Read name index
+    name_index = dict()
+    df = pd.read_csv(os.path.join(DIR_PATH, 'name_index.tsv'), sep='\t', header=None)
+    # Replace empty cells with empty strings
+    df = df.fillna('')
+    df.columns = ['name', 'full_name', 'comment']
+    records = df.to_dict('records')
+    full_names = set()
+    for record in records:
+        if record['full_name'] in full_names:
+            warnings.warn('Duplicate entry in name index with full name: "{}".'.format(record['full_name']))
+            continue
+        name_index[record['name']] = record
+
     data = dict()
     for file_path in glob(os.path.join(DIR_PATH, 'raw_data', '*.txt')):
-        # Read name of the IEM from file path
-        _, file_name = os.path.split(file_path)
-        name = '.'.join(file_name.split('.')[:-1])
-        name = name[:-2]  # Remove channel from name
+        name = os.path.split(file_path)[1]
+        # Remove ".txt" and " R" or " L" suffix
+        name = re.sub('\.txt$', '', name)
+        name = re.sub(' (L|R)', '', name)
+        if name not in name_index:
+            warnings.warn('"{}" missing from name index, skipping.'.format(name))
+            continue
+        if name_index[name]['comment'] in ['ignore', 'onear'] or not name_index[name]['full_name']:
+            warnings.warn('Skipping "{}".'.format(name))
+            continue
+        name = name_index[name]['full_name']
         if name not in data:
             data[name] = []
 
@@ -62,7 +86,7 @@ def main():
         fr.center()
         data[name].append(fr)
 
-    if os.path.exists(os.path.join(DIR_PATH, 'inspection')):
+    if not os.path.isdir(os.path.join(DIR_PATH, 'inspection')):
         os.makedirs(os.path.join(DIR_PATH, 'inspection'))
 
     # Iterate all models
@@ -71,9 +95,13 @@ def main():
         raw = np.mean([fr.raw for fr in frs], axis=0)
         # Save as CSV
         fr = FrequencyResponse(name=name, frequency=frs[0].frequency, raw=raw)
-        fr.write_to_csv(os.path.join(DIR_PATH, 'data', name + '.csv'))
+        dir_path = os.path.join(DIR_PATH, 'data', 'inear', name)
+        if not os.path.isdir(dir_path):
+            os.makedirs(dir_path)
+        fr.write_to_csv(os.path.join(dir_path, name + '.csv'))
         # Save inspection image
         fr.plot_graph(show=False, file_path=os.path.join(DIR_PATH, 'inspection', name + '.png'))
+        plt.close()
 
 
 if __name__ == '__main__':

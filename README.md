@@ -20,10 +20,10 @@ curves, apply tilt for making the headphones brighter/darker and adding a bass b
 headphone sound (roughly) like another headphone. For more info about equalizing see
 [Equalizing](https://github.com/jaakkopasanen/AutoEq#equalizing)
 
-Third major contribution of this project is the measurement data and compensation curves all in a
-numerical format. Everything is stored as CSV files so they are easy to process with any programming language or even
-Microsoft Excel. See [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing) for more technical
-description about how things were obtained and processed.
+Third major contribution of this project is the measurement data and compensation curves all in a numerical format
+except for Crinacle's raw data. Everything is stored as CSV files so they are easy to process with any programming
+language or even Microsoft Excel. See [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing)
+for more technical description about how things were obtained and processed.
 
 ![sennheiser-hd650](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650/Sennheiser%20HD%20650.png)
 
@@ -211,8 +211,10 @@ not sufficient since measurements and equalization have several problems that ne
 
 Results provided in this project currently have all the headphone measurements from
 [Innerfidelity](https://www.innerfidelity.com/headphone-measurements), [Headphone.com](http://graphs.headphone.com/),
-[oratory1990](https://www.reddit.com/user/oratory1990), [Rtings](https://www.rtings.com/headphones) and
-[Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1).
+[oratory1990](https://www.reddit.com/r/oratory1990), [Rtings](https://www.rtings.com/headphones),
+[Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1) and
+[Crinacle](https://crinacle.com/), although Crinacle has some experimental stuff in his numerical data files which have
+not been included.
 Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
 [target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 would be found in
@@ -221,9 +223,18 @@ Multiple measurements of a same headphone by a same measurement entity are avera
 averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
 averaged data which has no suffixes in the name.
 
-oratory1990 measurements have been done on Gras 43AG and 43AC couplers, the same which were used to develop Harman target
-responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results are
-recommended over all other measurements because of this reason. Harman target data is in the `compensation` folder.
+oratory1990 measurements have been done on Gras 43AG and 43AC couplers, the same which were used to develop Harman
+target responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results
+are recommended over all other measurements because of this reason. Harman target data is in the `compensation` folder.
+
+Crinacle's measurements only include in-ear headphones. These measurements have been performed with IEC 60318-4
+couplers and are therefore compatible with Harman in-ear targets. This fact also earns Crinacle's measurements second
+highest ranking recommendation after oratory1990.
+
+Both oratory1990 and Crinacle results also include Usound or oratory1990 target for in-ear headphones. Usound target is
+a result of research in the company where oratory1990 works. This target curve might be preferred by some who find
+Harman in-ear target missing "body" or "meat". Usound results are not listed on recommended results but can be found in
+the full index.
 
 Innerfidelity and Headphone.com measured headphones have
 [SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
@@ -461,47 +472,6 @@ python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400
 
 Feel free to experiment more.
 
-### Server
-AutoEQ has a HTTP server for clients such as graphical user interfaces or web apps. This is the API documentation.
-Currently only one route [/process]() exists.
-
-#### `POST` /process
-**Request**  
-JSON request with MIME-type of `application/json` and data:
-- **calibration** `[float]|str` Calibration data. Either name of the calibration curve as string
-(see below for supported curve names) or list of floats matching frequency data.
-- **compensation** `[float]|str` Compensation data. Either name of the compensation curve as string
-(see below for supported curve names) or list of floats matching frequency data.
-- **equalize** `bool` Run equalization?
-- **parametric_eq** `bool` Optimize peaking filters for parametric eq?
-- **max_filters** `int|[int]` Maximum number of peaking filters for filter optimization run. Can be omitted for
-automatic selection. Can also be a list in which case there will be multiple runs, each building on top of the previous
-filters.
-- **bass_boost** `float` Bass boost amount in dB for over-ear headphones. Mutually exclusive with `iem_bass_boost`.
-- **iem_bass_boost** `float` Bass boost amount in dB for in-ear headphones. Mutually exclusive with `bass_boost`.
-- **tilt** `float` Target frequency response tilt in db / octave.
-- **max_gain** `float` Maximum positive gain in dB. Higher equalization values will be clipped.
-- **treble_f_lower** `float` Lower bound for treble transition region.
-- **treble_f_upper** `float` Upper boud for treble transition region.
-- **treble_max_gain** `float` Maximum gain in treble region.
-- **treble_gain_k** `float` Gain coefficient in treble region.
-
-**Response**  
-JSON response with data:
-- **equalization** `[float]` Equalization curve.
-- **equalized_raw** `[float]` Raw frequency response after equalization.
-- **equalized_smoothed** `[float]` Smoothed frequency response after equalization.
-- **error** `[float]` Error curve.
-- **error_smoothed** `[float]` Smoothed error curve.
-- **filters** `[[float]]` List of parametric eq peaking filters. Each item contains center frequency (Fc), quality (Q)
-and gain.
-- **frequency** `[float]` Frequency data.
-- **max_gains** `[float]` List of maximum gains for each parametric eq filter group frequency response.
-- **n_filters** `[float]` List of number of filters in each parametric eq filter group
-- **raw** `[float]` Raw frequency response.
-- **smoothed** `[float]` Smoothed frequency response.
-- **target** `[float]` Target frequency response.
-
 
 ## Calibration
 Innerfidelity and Headphone.com have different kind of measurement systems and since there is no any kind of standard
@@ -631,11 +601,15 @@ Reference Audio Analyzer measurements were gotten the same way. Images downloade
 read the numerical data. Reference Audio Analyzer doesn't have compensation curve by AutoEQ project but instead simply
 trusts the compensated data provided by Reference Audio Analyzer.
 
-Data processing tools are not meant as a user friendly and robust software but instead to be able to be ran once to
-obtain the raw data.
+Crinacles data comes from his numerical data dump to which he graciously gave an access for this project. Crinacle has a
+patreon tier which grants access to his numerical data dump and therefore it was his wish that numerical data would not
+be shared in this project for free. Data files in Crinacle's data dump are processed to AutoEQ standard CSV format with
+scripts in Crinacle folder and you can even do it yourself if you have access to original data files. 
 
 
 ## Contact
-[Issues](https://github.com/jaakkopasanen/AutoEq/issues) are the way to go if you are experiencing problems, have ideas or if there is something unclear about how things are done or documented.
+[Issues](https://github.com/jaakkopasanen/AutoEq/issues) are the way to go if you are experiencing problems, have
+ideas or if there is something unclear about how things are done or documented.
 
-You can find me in [Reddit](https://www.reddit.com/user/jaakkopasanen) and [Head-fi](https://www.head-fi.org/members/jaakkopasanen.491235/) if you just want to say hello.
+You can find me in [Reddit](https://www.reddit.com/user/jaakkopasanen) and
+[Head-fi](https://www.head-fi.org/members/jaakkopasanen.491235/) if you just want to say hello.

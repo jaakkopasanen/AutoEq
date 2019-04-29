@@ -18,6 +18,7 @@ def main():
     arg_parser.add_argument('--rtings', action='store_true', help='Process Rtings measurements?')
     arg_parser.add_argument('--referenceaudioanalyzer', action='store_true',
                             help='Process Reference Audio Analyzer measurements?')
+    arg_parser.add_argument('--crinacle', action='store_true', help='Process Crinacle measurements?')
     arg_parser.add_argument('--onear', action='store_true', help='Process on-ear measurements?')
     arg_parser.add_argument('--inear', action='store_true', help='Process in-ear measurements?')
     arg_parser.add_argument('--earbud', action='store_true', help='Process ear bud measurements?')
@@ -29,16 +30,19 @@ def main():
     oratory1990 = bool(cli_args.oratory1990)
     rtings = bool(cli_args.rtings)
     referenceaudioanalyzer = bool(cli_args.referenceaudioanalyzer)
+    crinacle = bool(cli_args.crinacle)
+
     onear = bool(cli_args.onear)
     inear = bool(cli_args.inear)
     earbud = bool(cli_args.earbud)
 
-    if not innerfidelity and not headphonecom and not oratory1990 and not rtings and not referenceaudioanalyzer:
+    if not innerfidelity and not headphonecom and not oratory1990 and not rtings and not referenceaudioanalyzer and not crinacle:
         innerfidelity = True
         headphonecom = True
         oratory1990 = True
         rtings = True
         referenceaudioanalyzer = True
+        crinacle = True
     if not onear and not inear and not earbud:
         onear = True
         inear = True
@@ -47,6 +51,8 @@ def main():
     if_compensation = os.path.join(ROOT_DIR, 'innerfidelity', 'resources', 'innerfidelity_compensation_sbaf-serious.csv')
     hp_compensation = os.path.join(ROOT_DIR, 'headphonecom', 'resources', 'headphonecom_compensation_sbaf-serious.csv')
     rtings_compensation = os.path.join(ROOT_DIR, 'rtings', 'resources', 'rtings_compensation_avg.csv')
+    harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2017-1_wo_bass.csv')
+    usound = os.path.join(ROOT_DIR, 'compensation', 'usound_wo_bass.csv')
 
     if innerfidelity:
         if onear:
@@ -161,7 +167,7 @@ def main():
                 input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2017-1'),
                 new_only=new_only,
-                compensation=os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2017-1_wo_bass.csv'),
+                compensation=harman_inear,
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
@@ -175,7 +181,7 @@ def main():
                 input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'usound'),
                 new_only=new_only,
-                compensation=os.path.join(ROOT_DIR, 'compensation', 'usound_wo_bass.csv'),
+                compensation=usound,
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
@@ -190,7 +196,7 @@ def main():
                 input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2017-1'),
                 new_only=new_only,
-                compensation=os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2017-1_wo_bass.csv'),
+                compensation=harman_inear,
                 equalize=True,
                 parametric_eq=True,
                 ten_band_eq=True,
@@ -255,6 +261,34 @@ def main():
             max_filters=[5, 5],
             ten_band_eq=True,
             bass_boost=0.0
+        )
+
+    if crinacle:
+        # Crinacle in-ear
+        print('\nProcessing Crinacle measurements with Harman 2017-1 target...')
+        FrequencyResponse.main(
+            input_dir=os.path.join(ROOT_DIR, 'crinacle', 'data', 'inear'),
+            output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2017-1'),
+            new_only=new_only,
+            compensation=harman_inear,
+            equalize=True,
+            parametric_eq=True,
+            max_filters=[5, 5],
+            ten_band_eq=True,
+            iem_bass_boost=6.0
+        )
+
+        print('\nProcessing Crinacle measurements with Usound target...')
+        FrequencyResponse.main(
+            input_dir=os.path.join(ROOT_DIR, 'crinacle', 'data', 'inear'),
+            output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'usound'),
+            new_only=new_only,
+            compensation=usound,
+            equalize=True,
+            parametric_eq=True,
+            max_filters=[5, 5],
+            ten_band_eq=True,
+            iem_bass_boost=6.0
         )
 
 

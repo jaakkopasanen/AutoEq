@@ -61,7 +61,7 @@ def main():
     for name, full_names in name_index.items():
         s += '{n}\t{fns}\n'.format(n=name, fns='\t'.join(full_names))
 
-    with open(os.path.join(DIR_PATH, 'name_index.tsv'), 'w') as f:
+    with open(os.path.join(DIR_PATH, 'name_proposals.tsv'), 'w') as f:
         f.write(s)
 
 
