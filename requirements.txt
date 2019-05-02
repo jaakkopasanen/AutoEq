@@ -6,7 +6,7 @@ scipy
 numpy
 PyPDF2
 ghostscript
-tensorflow==1.8
+tensorflow>=1.12.1
 tabulate
 flask
 gevent
