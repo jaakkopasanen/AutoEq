@@ -744,34 +744,10 @@ class FrequencyResponse:
         s += 'See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and ' \
              'info.\n'
 
-        # Add GraphicEQ settings
-        graphic_eq_path = os.path.join(dir_path, model + ' GraphicEQ.txt')
-        if os.path.isfile(graphic_eq_path):
-            # Read Graphig eq
-            with open(graphic_eq_path, 'r') as f:
-                graphic_eq_str = f.read().strip()
-
-            # Produce text
-            s += '''
-            ### EqualizerAPO
-            In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-            with:
-            ```
-            {graphic_eq}
-            ```
-            
-            ### HeSuVi
-            HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-            `{model} GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-            '''.format(
-                model=model,
-                graphic_eq=graphic_eq_str
-            )
-
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
         if os.path.isfile(parametric_eq_path) and self.parametric_eq is not None and len(self.parametric_eq):
-            preamp = np.min([0.0, float(-np.max(self.parametric_eq))]) - 0.5
+            max_gains = [x + 0.5 for x in max_gains]
 
             # Read Parametric eq
             with open(parametric_eq_path, 'r') as f:
@@ -829,18 +805,15 @@ class FrequencyResponse:
                 preamp_str = _s.format(preamp_str)
 
             s += '''
-            ### Peace
-            In case of using Peace, click *Import* in Peace GUI and select `{model} ParametricEQ.txt`.
-            
             ### Parametric EQs
-            In case of using other parametric equalizer, apply preamp of **{preamp:.1f}dB** and build filters manually
+            In case of using parametric equalizer, apply preamp of **-{preamp:.1f}dB** and build filters manually
             with these parameters. {max_filters_str}
             {preamp_str}
 
             {filters_table}
             '''.format(
                 model=model,
-                preamp=preamp,
+                preamp=max_gains[-1],
                 max_filters_str=max_filters_str,
                 preamp_str=preamp_str,
                 filters_table=filters_table_str
@@ -879,8 +852,8 @@ class FrequencyResponse:
 
             s += '''
             ### Fixed Band EQs
-            In case of using fixed band (also called graphic) equalizer, apply preamp of **{preamp:.1f}dB** and set
-            gains manually with these parameters.
+            In case of using fixed band (also called graphic) equalizer, apply preamp of **{preamp:.1f}dB**
+            (if available) and set gains manually with these parameters.
 
             {filters_table}
             '''.format(
@@ -889,12 +862,6 @@ class FrequencyResponse:
                 filters_table=filters_table_str
             )
 
-        # Write impulse response
-        s += '''
-        ### Impulse Response
-        In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-        '''
-
         # Write image link
         img_path = os.path.join(dir_path, model + '.png')
         if os.path.isfile(img_path):
@@ -902,7 +869,10 @@ class FrequencyResponse:
             img_url = '/'.join(self._split_path(img_rel_path))
             img_url = 'https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/{}'.format(img_url)
             img_url = urllib.parse.quote(img_url, safe="%/:=&?~#+!$,;'@()*[]")
-            s += '\n![]({})'.format(img_url)
+            s += '''
+            ### Graphs
+            ![]({})
+            '''.format(img_url)
 
         # Write file
         with open(file_path, 'w') as f:
@@ -1205,7 +1175,6 @@ class FrequencyResponse:
         Args:
             max_gain: Maximum positive gain in dB
             smoothen: Smooth kinks caused by clipping gain to max gain?
-            window_size: Smoothing average window size in octaves
             treble_f_lower: Lower frequency boundary for transition region between normal parameters and treble parameters
             treble_f_upper: Upper frequency boundary for transition reqion between normal parameters and treble parameters
             treble_max_gain: Maximum positive gain in dB in treble region

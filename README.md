@@ -41,13 +41,15 @@ GraphicEQ: 20 0.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.
 
 ##### Parametric Equalizers
 Parametric equalizers have filters with user adjustable gain,  center frequency and quality Q. Keep in mind that
-parametric eq produced is not as accurate as graphic eq because there is limited number of filters. This might not have
-any significant difference in practice if there are enough filters available. Usually 10 filters produce very good
+parametric eq accuracy depends on the number of filters available. Usually 10 filters produce very good
 results but as little as 5 can be good enough.
 
 All parametric equalizer except Peace require you to configure the filter parameters manually with the software user
 interface. Some parametric equalizer use filter width (band width) instead of Q. Filter width can be calculated as:
 `bw = Fc / Q` where `bw` is the band width, `Fc` is center frequency and `Q` is quality.
+
+It's very important to set preamp according to the value given in the result README.md document. Parametric eq filters
+will produce positive gains and to avoid clipping a preamp with negative gain is required.
 
 Parametric eq settings can be used with Peace or any other parametric eq which has at least 5 bands available. Even
 fewer bands is possible but pre-computed results require to use minimum five first of the filters. Parametric equalizer
@@ -145,13 +147,12 @@ both channels to the highest positive gain value in preset.
 ### Plain EqualizerAPO
 It's possible to use plain [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
 `C:\Program Files\EqualizerAPO\config\config.txt`. Disable `Include: example.txt`, replace `GraphicEQ: ...` line with
-the one found in results and set `Preamp: ...`. Using
+the one found in results. Preamp is no longer needed because it is incorporated into the GraphicEQ line. Using
 [Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/innerfidelity/sbaf-serious/Sennheiser%20HD%20650)
 would make config file look like this:
 ```
-Preamp: -6 dB
 # Include: example.txt
-GraphicEQ: 20 0.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.6; 31 -1.1; 34 -1.7; 37 -2.2; 41 -2.8; 45 -3.3; 49 -3.6; 54 -3.8; 60 -4.4; 66 -4.8; 72 -4.6; 79 -5.2; 87 -6.4; 96 -7.0; 106 -7.4; 116 -7.7; 128 -8.0; 141 -8.2; 155 -8.4; 170 -8.3; 187 -8.5; 206 -8.5; 227 -8.3; 249 -8.3; 274 -8.0; 302 -7.9; 332 -7.7; 365 -7.5; 402 -7.4; 442 -7.1; 486 -7.0; 535 -7.0; 588 -6.6; 647 -6.5; 712 -6.4; 783 -6.2; 861 -6.5; 947 -6.5; 1042 -6.3; 1146 -6.8; 1261 -7.0; 1387 -7.3; 1526 -7.3; 1678 -7.6; 1846 -7.5; 2031 -6.8; 2234 -6.7; 2457 -6.3; 2703 -6.0; 2973 -6.5; 3270 -7.1; 3597 -6.9; 3957 -6.0; 4353 -6.1; 4788 -5.3; 5267 -1.4; 5793 -0.6; 6373 -1.7; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
 ```
 
 EqualizerAPO has a graphical user interface for adjusting configurations. Launch the editor from
@@ -165,7 +166,8 @@ EqualizerAPO has a graphical user interface for adjusting configurations. Launch
 [Peace](https://sourceforge.net/projects/peace-equalizer-apo-extension/) is a GUI for manipulating parametric eq filters
 with EqualizerAPO. Peace also has visualization for the end result equalization frequency response, profile manager for
 multiple different eq settings and a switch for disabling everything among other features. Load eq settings into Peace
-by clicking *Import* button and select the *<model> ParametricEQ.txt* file.
+by clicking *Import* button and select the *<model> ParametricEQ.txt* file. Set the preamp to value mentioned in the
+results.
 
 ![peace](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
 
@@ -173,8 +175,8 @@ by clicking *Import* button and select the *<model> ParametricEQ.txt* file.
 
 ### PulseEffects
 [PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
-processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter andset type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
-
+processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter
+and set type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
 
 ![pulseeffects](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/pulseeffects.png)
 
