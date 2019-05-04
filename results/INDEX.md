@@ -608,7 +608,6 @@ from the same source.
 - [Axelvox HD 271](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Axelvox%20HD%20271) by Reference Audio Analyzer
 - [Axelvox HD 272](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Axelvox%20HD%20272) by Reference Audio Analyzer
 - [Axelvox HD 990](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Axelvox%20HD%20990) by Reference Audio Analyzer
-- [B&O H9i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/B&O%20H9i) by oratory1990
 - [B&O PLAY E8 2.0](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/B&O%20PLAY%20E8%202.0) by Rtings
 - [BGVP DM6 20 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/BGVP%20DM6%2020%20Ohm) by Crinacle (Harman in-ear 2017-1)
 - [BGVP DM6 20 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/BGVP%20DM6%2020%20Ohm) by Crinacle (Usound)
@@ -633,6 +632,7 @@ from the same source.
 - [BOSS BA-PC15](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/BOSS%20BA-PC15) by Reference Audio Analyzer
 - [BRAINWAVZ HM5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/BRAINWAVZ%20HM5) by Rtings
 - [Bang & Olufsen Beoplay 3i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%203i) by Rtings
+- [Bang & Olufsen Beoplay E8 2.0](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%202.0) by Rtings
 - [Bang & Olufsen Beoplay E8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8) by Rtings
 - [Bang & Olufsen Beoplay Earset Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20Earset%20Wireless) by Rtings
 - [Bang & Olufsen Beoplay H6 2nd Gen](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6%202nd%20Gen) by Innerfidelity
@@ -640,6 +640,7 @@ from the same source.
 - [Bang & Olufsen Beoplay H6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6) by Innerfidelity
 - [Bang & Olufsen Beoplay H6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20H6) by Rtings
 - [Bang & Olufsen Beoplay H9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20H9) by Rtings
+- [Bang & Olufsen Beoplay H9i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9i) by oratory1990
 - [Bang & Olufsen Beoplay H9i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20H9i) by Rtings
 - [Base Audio G12](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Base%20Audio%20G12) by oratory1990
 - [Beats BeatsX](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beats%20BeatsX) by Rtings
@@ -1877,6 +1878,7 @@ from the same source.
 - [KZ ZS6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/KZ%20ZS6) by Crinacle (Usound)
 - [KZ ZS6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/KZ%20ZS6) by oratory1990 (Usound)
 - [KZ ZS6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/KZ%20ZS6) by Reference Audio Analyzer
+- [KZ ZSN](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/KZ%20ZSN) by Rtings
 - [KZ ZSR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20ZSR) by Crinacle (Harman in-ear 2017-1)
 - [KZ ZSR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/KZ%20ZSR) by Crinacle (Usound)
 - [KZ ZST](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20ZST) by Crinacle (Harman in-ear 2017-1)

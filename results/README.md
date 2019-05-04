@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2481 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2482 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/1Custom%20SA03)
@@ -398,15 +398,15 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Axelvox HD 990](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Axelvox%20HD%20990)
 - [AZLA 01R Mk2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AZLA%2001R%20Mk2)
 - [AZLA Horizon](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AZLA%20Horizon)
-- [B&O H9i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/B&O%20H9i)
 - [B&O PLAY E8 2.0](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/B&O%20PLAY%20E8%202.0)
 - [Bang & Olufsen Beoplay 3i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%203i)
 - [Bang & Olufsen Beoplay E8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8)
+- [Bang & Olufsen Beoplay E8 2.0](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%202.0)
 - [Bang & Olufsen Beoplay Earset Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20Earset%20Wireless)
 - [Bang & Olufsen Beoplay H6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6)
 - [Bang & Olufsen Beoplay H6 2nd Gen](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6%202nd%20Gen)
 - [Bang & Olufsen Beoplay H9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20H9)
-- [Bang & Olufsen Beoplay H9i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20H9i)
+- [Bang & Olufsen Beoplay H9i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9i)
 - [Base Audio G12](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Base%20Audio%20G12)
 - [Beats BeatsX](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beats%20BeatsX)
 - [Beats EP On-Ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beats%20EP%20On-Ear)
@@ -1305,6 +1305,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [KZ ZS5v1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20ZS5v1)
 - [KZ ZS5v2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20ZS5v2)
 - [KZ ZS6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20ZS6)
+- [KZ ZSN](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/KZ%20ZSN)
 - [KZ ZSR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20ZSR)
 - [KZ ZST](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/KZ%20ZST)
 - [Lark Studio LSX](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Lark%20Studio%20LSX)
