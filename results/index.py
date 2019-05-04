@@ -67,10 +67,10 @@ def main():
     ))
     lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2017-1', '*'))),
-        'oratory1990 (Harman in-ear 2017-1'
+        'oratory1990 (Harman in-ear 2017-1)'
     ))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join('oratory1990', 'usound', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'usound', '*'))),
         'oratory1990 (Usound)'
     ))
     # Get links to custom results
