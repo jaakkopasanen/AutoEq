@@ -1,0 +1,56 @@
+# JBL Live 650BTNC
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
+
+### EqualizerAPO
+In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
+with:
+```
+GraphicEQ: 21 -11.9; 23 -11.3; 25 -10.8; 28 -10.0; 31 -9.4; 34 -8.9; 37 -8.4; 41 -7.9; 45 -7.5; 49 -7.2; 54 -6.9; 60 -6.8; 66 -6.8; 72 -6.9; 79 -7.0; 87 -7.0; 96 -6.9; 106 -6.5; 116 -6.0; 128 -5.3; 141 -4.4; 155 -3.7; 170 -3.1; 187 -2.6; 206 -2.3; 227 -2.2; 249 -2.2; 274 -2.1; 302 -1.9; 332 -2.0; 365 -2.1; 402 -2.3; 442 -2.5; 486 -2.6; 535 -2.3; 588 -2.2; 647 -2.1; 712 -1.9; 783 -1.9; 861 -2.2; 947 -2.9; 1042 -3.8; 1146 -4.8; 1261 -5.4; 1387 -5.9; 1526 -5.9; 1678 -5.5; 1846 -5.1; 2031 -4.7; 2234 -3.9; 2457 -2.5; 2703 -0.5; 2973 -1.5; 3270 -6.4; 3597 -7.4; 3957 -5.6; 4353 -3.9; 4788 -1.4; 5267 -2.0; 5793 -4.4; 6373 -6.5; 7010 -7.2; 7711 -4.2; 8482 -3.4; 9330 -3.5; 10263 -3.5; 11289 -3.5; 12418 -3.5; 13660 -3.9; 15026 -5.1; 16529 -3.5; 18182 -3.5; 20000 -3.5
+```
+
+### HeSuVi
+HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
+`JBL Live 650BTNC GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
+
+### Peace
+In case of using Peace, click *Import* in Peace GUI and select `JBL Live 650BTNC ParametricEQ.txt`.
+
+### Parametric EQs
+In case of using other parametric equalizer, apply preamp of **-3.9dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-0.1dB**.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 21 Hz    | 0.67 | -8.2 dB |
+| Peaking | 89 Hz    | 2.25 | -2.9 dB |
+| Peaking | 1481 Hz  | 3.67 | -2.9 dB |
+| Peaking | 3557 Hz  | 7.73 | -4.6 dB |
+| Peaking | 20905 Hz | 2.01 | -1.7 dB |
+| Peaking | 442 Hz   | 0.54 | 1.7 dB  |
+| Peaking | 2760 Hz  | 4.2  | 6.0 dB  |
+| Peaking | 2843 Hz  | 0.92 | -2.4 dB |
+| Peaking | 4952 Hz  | 5.41 | 3.7 dB  |
+| Peaking | 6727 Hz  | 5.83 | -4.3 dB |
+
+### Fixed Band EQs
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.2dB** and set
+gains manually with these parameters.
+
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -6.8 dB |
+| Peaking | 62 Hz    | 1.41 | -2.4 dB |
+| Peaking | 125 Hz   | 1.41 | -1.8 dB |
+| Peaking | 250 Hz   | 1.41 | 1.9 dB  |
+| Peaking | 500 Hz   | 1.41 | 1.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 16000 Hz | 1.41 | -0.5 dB |
+
+### Impulse Response
+In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
+
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/JBL%20Live%20650BTNC/JBL%20Live%20650BTNC.png)

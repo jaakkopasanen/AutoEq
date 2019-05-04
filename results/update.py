@@ -236,7 +236,7 @@ def main():
 
         if earbud:
             # Rtings earbud Avg
-            print('\nProcessing Rtings in-ear measurements...')
+            print('\nProcessing Rtings earbud measurements...')
             FrequencyResponse.main(
                 input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
@@ -244,8 +244,8 @@ def main():
                 compensation=rtings_compensation,
                 equalize=True,
                 parametric_eq=True,
-                ten_band_eq=True,
-                max_filters=[5, 5]
+                max_filters=[5, 5],
+                ten_band_eq=True
             )
 
     if referenceaudioanalyzer:

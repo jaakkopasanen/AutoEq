@@ -1290,7 +1290,8 @@ class FrequencyResponse:
                    f_max=DEFAULT_F_MAX,
                    a_min=None,
                    a_max=None,
-                   color='black'):
+                   color='black',
+                   close=True):
         """Plots frequency response graph."""
         if fig is None:
             fig, ax = plt.subplots()
@@ -1346,6 +1347,8 @@ class FrequencyResponse:
             im.save(file_path, optimize=True)
         if show:
             plt.show()
+        elif close:
+            plt.close()
         return fig, ax
 
     def process(self,

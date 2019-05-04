@@ -5,7 +5,7 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
 with:
 ```
-GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.6; 45 -1.1; 49 -1.8; 54 -2.5; 60 -3.3; 66 -4.0; 72 -4.6; 79 -5.1; 87 -5.8; 96 -6.4; 106 -6.9; 116 -7.4; 128 -7.9; 141 -8.2; 155 -8.4; 170 -8.5; 187 -8.4; 206 -8.2; 227 -8.0; 249 -7.8; 274 -7.6; 302 -7.5; 332 -7.3; 365 -7.1; 402 -6.8; 442 -6.7; 486 -6.8; 535 -6.5; 588 -5.6; 647 -5.6; 712 -5.4; 783 -5.2; 861 -5.0; 947 -4.9; 1042 -4.8; 1146 -4.7; 1261 -4.8; 1387 -4.9; 1526 -4.8; 1678 -4.8; 1846 -5.0; 2031 -5.6; 2234 -6.0; 2457 -5.9; 2703 -6.0; 2973 -6.1; 3270 -7.1; 3597 -7.7; 3957 -8.2; 4353 -9.4; 4788 -7.5; 5267 -5.9; 5793 -6.2; 6373 -5.1; 7010 -4.1; 7711 -6.2; 8482 -7.6; 9330 -8.4; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.6; 18182 -11.2; 20000 -13.3
+GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -1.0; 49 -1.6; 54 -2.3; 60 -3.1; 66 -3.8; 72 -4.4; 79 -5.0; 87 -5.7; 96 -6.3; 106 -6.8; 116 -7.3; 128 -7.7; 141 -8.0; 155 -8.3; 170 -8.4; 187 -8.3; 206 -8.2; 227 -8.0; 249 -7.8; 274 -7.6; 302 -7.5; 332 -7.3; 365 -7.0; 402 -6.8; 442 -6.7; 486 -6.8; 535 -6.5; 588 -5.7; 647 -5.7; 712 -5.5; 783 -5.3; 861 -5.0; 947 -4.9; 1042 -4.9; 1146 -4.7; 1261 -4.9; 1387 -5.0; 1526 -4.9; 1678 -4.9; 1846 -5.3; 2031 -6.1; 2234 -6.9; 2457 -6.9; 2703 -6.5; 2973 -6.2; 3270 -6.8; 3597 -7.4; 3957 -8.0; 4353 -9.0; 4788 -7.8; 5267 -6.3; 5793 -6.2; 6373 -4.2; 7010 -4.1; 7711 -6.2; 8482 -7.4; 9330 -6.8; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.6; 18182 -11.1; 20000 -13.1
 ```
 
 ### HeSuVi
@@ -20,32 +20,32 @@ In case of using other parametric equalizer, apply preamp of **-6.8dB** and buil
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.4dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 31 Hz   |  0.44 | 6.7 dB  |
-| Peaking | 139 Hz  |  0.59 | -3.2 dB |
-| Peaking | 1146 Hz |  0.76 | 2.0 dB  |
-| Peaking | 4217 Hz |  4.36 | -3.2 dB |
-| Peaking | 6791 Hz |  8.07 | 3.1 dB  |
-| Peaking | 3423 Hz | 10.76 | -0.8 dB |
-| Peaking | 5278 Hz |  8.19 | 1.0 dB  |
-| Peaking | 9015 Hz |  7.77 | -2.7 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 32 Hz    | 0.41 | 6.8 dB  |
+| Peaking | 133 Hz   | 0.58 | -3.5 dB |
+| Peaking | 1063 Hz  | 0.94 | 1.9 dB  |
+| Peaking | 4276 Hz  | 3.75 | -2.6 dB |
+| Peaking | 6663 Hz  | 6.68 | 3.5 dB  |
+| Peaking | 1704 Hz  | 5.23 | 0.8 dB  |
+| Peaking | 2280 Hz  | 5.41 | -1.0 dB |
+| Peaking | 19396 Hz | 1.31 | -7.4 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB** and set
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB** and set
 gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | 7.1 dB  |
-| Peaking | 62 Hz    | 1.41 | 2.3 dB  |
-| Peaking | 125 Hz   | 1.41 | -2.0 dB |
+| Peaking | 62 Hz    | 1.41 | 2.5 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.9 dB |
 | Peaking | 250 Hz   | 1.41 | -1.4 dB |
-| Peaking | 500 Hz   | 1.41 | 0.1 dB  |
-| Peaking | 1000 Hz  | 1.41 | 1.8 dB  |
-| Peaking | 2000 Hz  | 1.41 | 1.3 dB  |
-| Peaking | 4000 Hz  | 1.41 | -1.7 dB |
-| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.9 dB  |
+| Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | -1.6 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.1 dB  |
 | Peaking | 16000 Hz | 1.41 | -1.3 dB |
 
 ### Impulse Response
