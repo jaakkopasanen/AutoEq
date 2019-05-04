@@ -291,32 +291,32 @@ location. Or just git clone if you know what that means.
 - Download and install [Python3.6](https://www.python.org/getit/). Python 3.7 is not supported yet. Make sure to check
 *Install Python3 to PATH*
 - Install virtualenv. Run this on command prompt. Search `cmd` in Windows start menu.  
-```commandline
+```bash
 pip install virtualenv
 ```
 - Go to AutoEQ location  
-```commandline
+```bash
 cd C:\path\to\AutoEq-master
 ```
 - Create virtual environment  
-```commandline
+```bash
 virtualenv venv
 ```
 - Activate virtualenv  
-```commandline
+```bash
 venv\Scripts\activate
 ```
 - Install required packages  
-```commandline
+```bash
 pip install -r requirements.txt
 ```
 - Verify installation  
-```commandline
+```bash
 python frequency_response.py -H
 ```
 
 When coming back at a later time you'll only need to activate virtual environment again
-```commandline
+```bash
 cd C:\path\to\AutoEq-master
 venv\Scripts\activate
 ```
@@ -333,6 +333,7 @@ usage: frequency_response.py [-h] --input_dir INPUT_DIR
                              [--bit_depth BIT_DEPTH] [--phase PHASE]
                              [--f_res F_RES] [--bass_boost BASS_BOOST]
                              [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
+                             [--sound_signature SOUND_SIGNATURE]
                              [--max_gain MAX_GAIN]
                              [--treble_f_lower TREBLE_F_LOWER]
                              [--treble_f_upper TREBLE_F_UPPER]
@@ -409,6 +410,20 @@ optional arguments:
                         dB difference in desired value between 20 Hz and 20
                         kHz. Tilt is applied with bass boost and both will
                         affect the bass gain.
+  --sound_signature SOUND_SIGNATURE
+                        File path to a sound signature CSV file. The CSV file
+                        must be in an AutoEQ understandable format. Error data
+                        will be used as the sound signature target if the CSV
+                        file contains an error column and otherwise the raw
+                        column will be used. This means there are two
+                        different options for using sound signature: 1st is
+                        pointing it to a result CSV file of a previous run and
+                        the 2nd is to create a CSV file with just frequency
+                        and raw columns by hand (or other means). The Sound
+                        signature graph will be interpolated so any number of
+                        point at any frequencies will do, making it easy to
+                        create simple signatures with as little as two or
+                        three points.
   --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain
                         allows to equalize deeper dips in frequency response
                         but will limit output volume if no analog gain is
@@ -437,43 +452,91 @@ optional arguments:
 ```
 
 ### Examples
+
+#### Reproducing Results
+Reproducing pre-computed results for oratory1990 measured on-ear headphones:
+```bash
+python frequency_response.py --input_dir="oratory1990\data\onear" --output_dir="my_results\oratory1990\harman_over-ear_2018" --compensation="compensation\harman_over-ear_2018_wo_bass.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0
+```
+
+Reproducing pre-computed results for Rtings measured IEMs:
+```bash
+python frequency_response.py --input_dir="rtings\data\inear" --output_dir="my_results\rtings\avg" --compensation="rtings\resources\rtings_compensation_avg.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --iem_bass_boost=6.0
+```
+
+All parameters used for pre-computed results can be found in the `results\update.py` script.
+
+#### Equalizing Individual Headphones
 Equalizing Sennheiser HD 650 and saving results to `my_results/HD650`:
-```commandline
+```bash
 python frequency_response.py --input_dir="innerfidelity\data\onear\Sennheiser HD 650" --output_dir="my_results\HD650" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
 ```
 
-Equalizing Beyerdynamic DT990 without saving results
-```commandline
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="headphonecom\resources\headphonecom_compensation.csv" --equalize --bass_boost=4 --show_plot
+Equalizing Beyerdynamic DT 990 600 Ohm measured by Headphone.com to Headphone.com native target without saving results
+```bash
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT 990 600 Ohm" --compensation="headphonecom\resources\headphonecom_compensation.csv" --equalize --bass_boost=4 --show_plot
 ```
 
-Equalizing Beyerdynamic DT990 to SBAF-Serious target
-```commandline
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT990" --compensation="headphonecom\resources\headphonecom_compensation_sbaf-serious-brighter.csv" --equalize --bass_boost=4 --show_plot
+Equalizing Beyerdynamic DT 990 600 Ohm measured by Headphone.com to SBAF-Serious target without saving results
+```bash
+python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT 990 600 Ohm" --compensation="headphonecom\resources\headphonecom_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
 ```
 
-Equalizing all Headphone.com on-ear headphones and saving results to `results\onear\sbaf-serious\headphonecom`.
-There is a lot of headphones and we don't want to inspect all visually so we'll omit `--show_plot`
-```commandline
-python frequency_response.py --input_dir="headphonecom\data\onear" --output_dir="results\headphonecom\sbaf-serious" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4
+#### Using Sound Signatures
+AutoEQ provides a way to play around with different sound signatures easily. The use-cases include making headphones
+deviate from neutral target or making one headphone sound like another.
+
+Equalizing Sennheiser HD 800 to sound like Sennheiser HD 650 using pre-computed results. Both have been measured by
+oratory1990 so we'll use those measurments. Pre-computed results include 4dB of bass boost for over-ear headphones and
+therefore we need to apply bass boost of 4dB here as well.
+```bash
+python frequency_response.py --input_dir="oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results\Sennheiser HD 800 (HD 650)" --compensation="compensation\harman_over-ear_2018_wo_bass.csv" --sound_signature="results\oratory1990\harman_over-ear_2018\Sennheiser HD 650\Sennheiser HD 650.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4
 ```
 
-Equalizing Beyerdynamic DT 770 to sound like HiFiMAN HE400S. 80ohm version of DT 770 is only available in Headphone.com
-measurements and HE400S only in Innerfidelity measurements so we'll use calibration. To make the bass sound
-the same we'll omit bass boost.
-```commandline
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT770" --output_dir="my_results\Beyerdynamic DT770" --compensation="innerfidelity\data\onear\HiFiMAN HE400S\HiFiMAN HE400S.csv" --calibration="calibration\headphonecom_raw_to_innerfidelity_raw.csv" --equalize --show_plot
+Equalizing Massdrop x Sennheiser HD 6XX to sound like AKG K701. There is no K701 measurement made by oratory1990 so
+we'll use Innerfidelity's measurement for the sound signature. The list of recommended results always points to best
+measurement so you can check there which one to use (measurement system can be found in the URL).
+```bash
+python frequency_response.py --input_dir="oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results\Sennheiser HD 800 (K701)" --compensation="compensation\harman_over-ear_2018_wo_bass.csv" --sound_signature="results\innerfidelity\sbaf-serious\AKG K701\AKG K701.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4
 ```
 
+Equalizing HiFiMAN HE400S to sound like Massdrop x Meze 99 Noir. HE400S is measured only by Innerfidelity so we'll point
+compensation file pointing to Innerfidelity SBAF-Serious target. Meze 99 Noir has massive natural bass boost and to
+capture that we need to relax max gain to +12dB.
+```bash
+python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400S" --output_dir="my_results\HE400S (99 Noir)" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --sound_signature="results\oratory1990\harman_over-ear_2018\Massdrop x Meze 99 Noir\Massdrop x Meze 99 Noir.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --max_gain=8
+```
+
+Applying V-shaped sound signature to Audeze Mobius. First step is to create the sound signature file. Save this to
+`my_data\v.csv`:
+```csv
+frequency,raw
+20,4.0
+1000,-4.0
+10000,4.0
+20000,0.0
+```
+Then use it by providing the path to `--sound_signature` parameter. We'll set bass boost to 0dB because the sound
+signature already has significant bass boost. Of course it's possible to add bass boost on top of the sound signature
+file if you want even more bass.
+```bash
+python frequency_response.py --input_dir="rtings\data\onear\Audeze Mobius" --output_dir="my_results\Audeze Mobius" --compensation="rtings\resources\rtings_compensation_avg.csv" --sound_signature="my_data\v.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=0.0
+```
+
+#### Plotting Measurement Data
 Viewing HiFiMAN HE400S raw microphone data
-```commandline
+```bash
 python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400S" --show_plot
 ```
 
-Feel free to experiment more.
-
 
 ## Calibration
+**Note!** Static calibration between two measurement systems which have different acoustical impedances does not work as
+one would wish. These calibration efforts were used for creating and testing different compensation curves. There even
+was as a parameter to pass calibration file to `frequency_response.py` for making one headphone measured on a system A
+sound like another headphone measured on system B. Calibration option for equalization is no longer supported.
+Headphones can be made sound like other headphones with sound signature parameter.
+
 Innerfidelity and Headphone.com have different kind of measurement systems and since there is no any kind of standard
 calibration for headphone frequency response measurements the data produced by these systems are not directly compatible
 with each other. Same individual headphone will measure differently in the two systems. This actually applies for all of
@@ -497,7 +560,8 @@ Calibration data is not used as is in the results but instead Innerfidelity SBAF
 was calibrated to be suitable for Headphone.com measurements. Calibration can be used between Innerfidelity and
 Headphone.com mainly to make headphones sound like other headphones when both models are from different sources.
 
-Same calibration procedure was done for Innerfidelity and Rtings measurements.
+Same calibration procedure was done for Innerfidelity and Rtings measurements in the experiments for testing different
+target curves.
 
 
 ## Technical Challenges

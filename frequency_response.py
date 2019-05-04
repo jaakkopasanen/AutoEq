@@ -949,12 +949,6 @@ class FrequencyResponse:
         # Everything but raw data is affected by interpolating, reset them
         self.reset(raw=False)
 
-    def calibrate(self, calibration):
-        """Calibrates measurement to match calibration. Changes raw data."""
-        self.raw -= calibration.raw
-        # Everything but raw data is affected by calibrating, reset them
-        self.reset(raw=False)
-
     def center(self):
         """Removed bias from frequency response."""
         interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=1)
@@ -1014,6 +1008,7 @@ class FrequencyResponse:
                    bass_boost_f_lower=None,
                    bass_boost_f_upper=None,
                    tilt=None,
+                   sound_signature=None,
                    min_mean_error=False):
         """Sets target and error curves."""
         # Copy and center compensation data
@@ -1033,6 +1028,12 @@ class FrequencyResponse:
             bass_boost_f_upper=bass_boost_f_upper,
             tilt=tilt
         )
+        if sound_signature is not None:
+            # Sound signature give, add it to target curve
+            if not np.all(sound_signature.frequency == self.frequency):
+                # Interpolate sound signature to match self on the frequency axis
+                sound_signature.interpolate(self.frequency)
+            self.target += sound_signature.raw
 
         # Set error
         self.error = self.raw - self.target
@@ -1352,7 +1353,6 @@ class FrequencyResponse:
         return fig, ax
 
     def process(self,
-                calibration=None,
                 compensation=None,
                 min_mean_error=False,
                 equalize=False,
@@ -1365,16 +1365,16 @@ class FrequencyResponse:
                 bass_boost=None,
                 iem_bass_boost=None,
                 tilt=None,
+                sound_signature=None,
                 max_gain=DEFAULT_MAX_GAIN,
                 treble_f_lower=DEFAULT_TREBLE_F_LOWER,
                 treble_f_upper=DEFAULT_TREBLE_F_UPPER,
                 treble_max_gain=DEFAULT_TREBLE_MAX_GAIN,
                 treble_gain_k=DEFAULT_TREBLE_GAIN_K,
                 fs=DEFAULT_FS):
-        """Runs processing pipeline with interpolation, centering, compensation, calibration and equalization.
+        """Runs processing pipeline with interpolation, centering, compensation and equalization.
 
         Args:
-            calibration: Calibration FrequencyResponse. Must be interpolated and centered.
             compensation: Compensation FrequencyResponse. Must be interpolated and centered.
             min_mean_error: Minimize mean error. Normally all curves cross at 1 kHz but this makes it possible to shift
                             error curve so that mean between 100 Hz and 10 kHz is at minimum. Target curve is shifted
@@ -1389,6 +1389,7 @@ class FrequencyResponse:
             bass_boost: Bass boost amount in dB for over-ear headphones.
             iem_bass_boost: Bass boost amount in dB for in-ear headphones.
             tilt: Target frequency response tilt in db / octave
+            sound_signature: Sound signature as FrequencyResponse instance. Raw data will be used.
             max_gain: Maximum positive gain in dB
             treble_f_lower: Lower bound for treble transition region
             treble_f_upper: Upper boud for treble transition region
@@ -1434,10 +1435,6 @@ class FrequencyResponse:
         # Interpolate to standard frequency vector
         self.interpolate()
 
-        if calibration is not None:
-            # Calibrate
-            self.calibrate(calibration)
-
         # Center by 1kHz
         self.center()
 
@@ -1449,6 +1446,7 @@ class FrequencyResponse:
                 bass_boost_f_lower=bass_boost_f_lower,
                 bass_boost_f_upper=bass_boost_f_upper,
                 tilt=tilt,
+                sound_signature=sound_signature,
                 min_mean_error=min_mean_error
             )
 
@@ -1486,7 +1484,6 @@ class FrequencyResponse:
              output_dir=None,
              new_only=False,
              standardize_input=False,
-             calibration=None,
              compensation=None,
              equalize=False,
              parametric_eq=False,
@@ -1502,6 +1499,7 @@ class FrequencyResponse:
              bass_boost=None,
              iem_bass_boost=None,
              tilt=None,
+             sound_signature=None,
              max_gain=DEFAULT_MAX_GAIN,
              treble_f_lower=DEFAULT_TREBLE_F_LOWER,
              treble_f_upper=DEFAULT_TREBLE_F_UPPER,
@@ -1518,13 +1516,6 @@ class FrequencyResponse:
         if len(glob_files) == 0:
             raise FileNotFoundError('No CSV files found in "{}"'.format(input_dir))
 
-        if calibration:
-            # Creates FrequencyResponse for compensation data
-            calibration_path = os.path.abspath(calibration)
-            calibration = FrequencyResponse.read_from_csv(calibration_path)
-            calibration.interpolate()
-            calibration.center()
-
         if compensation:
             # Creates FrequencyResponse for compensation data
             compensation_path = os.path.abspath(compensation)
@@ -1540,6 +1531,14 @@ class FrequencyResponse:
             bit_depth = "PCM_32"
         else:
             raise ValueError('Invalid bit depth. Accepted values are 16, 24 e 32.')
+
+        if sound_signature is not None:
+            sound_signature = FrequencyResponse.read_from_csv(sound_signature)
+            if len(sound_signature.error) > 0:
+                # Error data present, replace raw data with it
+                sound_signature.raw = sound_signature.error
+            sound_signature.interpolate()
+            sound_signature.center()
 
         n = 0
         for input_file_path in glob_files:
@@ -1562,7 +1561,6 @@ class FrequencyResponse:
 
             # Process and equalize
             peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gains = fr.process(
-                calibration=calibration,
                 compensation=compensation,
                 min_mean_error=True,
                 equalize=equalize,
@@ -1575,6 +1573,7 @@ class FrequencyResponse:
                 bass_boost=bass_boost,
                 iem_bass_boost=iem_bass_boost,
                 tilt=tilt,
+                sound_signature=sound_signature,
                 max_gain=max_gain,
                 treble_f_lower=treble_f_lower,
                 treble_f_upper=treble_f_upper,
@@ -1620,7 +1619,7 @@ class FrequencyResponse:
                             sf.write(
                                 output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
                                 minimum_phase_ir,
-                                fs,
+                                _fs,
                                 bit_depth
                             )
 
@@ -1663,9 +1662,6 @@ class FrequencyResponse:
                                 help='Overwrite input data in standardized sampling and bias?')
         arg_parser.add_argument('--new_only', action='store_true',
                                 help='Only process input files which don\'t have results in output directory.')
-        arg_parser.add_argument('--calibration', type=str, default=argparse.SUPPRESS,
-                                help='File path to CSV containing calibration data. Needed when using target responses '
-                                     'not developed for the source measurement system. See `calibration` directory.')
         arg_parser.add_argument('--compensation', type=str,
                                 help='File path to CSV containing compensation (target) curve. Compensation is '
                                      'necessary when equalizing because all input data is raw microphone data. See '
@@ -1720,6 +1716,16 @@ class FrequencyResponse:
                                      'frequency response. 1 dB/octave will produce nearly 10 dB difference in '
                                      'desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both '
                                      'will affect the bass gain.')
+        arg_parser.add_argument('--sound_signature', type=str,
+                                help='File path to a sound signature CSV file. The CSV file must be in an AutoEQ '
+                                     'understandable format. Error data will be used as the sound signature target if '
+                                     'the CSV file contains an error column and otherwise the raw column will be used. '
+                                     'This means there are two different options for using sound signature: 1st is '
+                                     'pointing it to a result CSV file of a previous run and the 2nd is to create a '
+                                     'CSV file with just frequency and raw columns by hand (or other means). The Sound '
+                                     'signature graph will be interpolated so any number of point at any frequencies '
+                                     'will do, making it easy to create simple signatures with as little as two or '
+                                     'three points.')
         arg_parser.add_argument('--max_gain', type=float, default=DEFAULT_MAX_GAIN,
                                 help='Maximum positive gain in equalization. Higher max gain allows to equalize deeper '
                                      'dips in  frequency response but will limit output volume if no analog gain is '
