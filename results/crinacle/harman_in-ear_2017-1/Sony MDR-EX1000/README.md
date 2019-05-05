@@ -1,48 +1,34 @@
 # Sony MDR-EX1000
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.7; 28 -0.9; 31 -1.2; 34 -1.5; 37 -1.7; 41 -2.0; 45 -2.3; 49 -2.5; 54 -2.9; 60 -3.3; 66 -3.7; 72 -4.1; 79 -4.5; 87 -5.0; 96 -5.5; 106 -6.0; 116 -6.5; 128 -6.9; 141 -7.3; 155 -7.7; 170 -7.9; 187 -8.2; 206 -8.4; 227 -8.6; 249 -8.7; 274 -8.8; 302 -8.9; 332 -8.7; 365 -8.6; 402 -8.5; 442 -8.5; 486 -8.3; 535 -8.0; 588 -7.7; 647 -7.2; 712 -6.7; 783 -6.1; 861 -5.7; 947 -5.6; 1042 -5.8; 1146 -6.5; 1261 -7.1; 1387 -7.3; 1526 -7.4; 1678 -7.6; 1846 -7.7; 2031 -7.7; 2234 -7.3; 2457 -6.4; 2703 -4.9; 2973 -3.1; 3270 -1.4; 3597 -0.6; 3957 -0.6; 4353 -1.6; 4788 -4.3; 5267 -9.3; 5793 -9.9; 6373 -4.6; 7010 -4.0; 7711 -6.2; 8482 -6.7; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -8.5; 15026 -11.2; 16529 -11.2; 18182 -10.9; 20000 -13.0
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`Sony MDR-EX1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Sony MDR-EX1000 ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-8.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.5dB**.
+When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 22 Hz    | 0.67 | 5.7 dB  |
-| Peaking | 57 Hz    | 1.03 | 1.9 dB  |
-| Peaking | 259 Hz   | 0.78 | -2.6 dB |
-| Peaking | 3734 Hz  | 2.14 | 8.3 dB  |
-| Peaking | 20078 Hz | 0.01 | -2.1 dB |
-| Peaking | 922 Hz   | 3.09 | 2.1 dB  |
-| Peaking | 4627 Hz  | 4.58 | 2.4 dB  |
-| Peaking | 5594 Hz  | 4.25 | -6.7 dB |
-| Peaking | 6668 Hz  | 3.87 | 5.7 dB  |
-| Peaking | 10762 Hz | 2.51 | 2.1 dB  |
+| Peaking | 22 Hz    | 0.65 | 5.7 dB  |
+| Peaking | 57 Hz    | 0.94 | 2.0 dB  |
+| Peaking | 265 Hz   | 0.69 | -2.6 dB |
+| Peaking | 3697 Hz  | 3.06 | 7.0 dB  |
+| Peaking | 18982 Hz | 0.5  | -5.7 dB |
+| Peaking | 918 Hz   | 3.23 | 1.7 dB  |
+| Peaking | 1869 Hz  | 1.75 | -1.8 dB |
+| Peaking | 5256 Hz  | 1.39 | 2.9 dB  |
+| Peaking | 5537 Hz  | 4.87 | -8.4 dB |
+| Peaking | 6672 Hz  | 8.13 | 3.4 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.9dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.8dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 5.9 dB  |
+| Peaking | 31 Hz    | 1.41 | 6.0 dB  |
 | Peaking | 62 Hz    | 1.41 | 2.4 dB  |
 | Peaking | 125 Hz   | 1.41 | -0.5 dB |
-| Peaking | 250 Hz   | 1.41 | -2.3 dB |
+| Peaking | 250 Hz   | 1.41 | -2.4 dB |
 | Peaking | 500 Hz   | 1.41 | -1.5 dB |
 | Peaking | 1000 Hz  | 1.41 | 1.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | -2.1 dB |
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | -0.5 dB |
 | Peaking | 16000 Hz | 1.41 | -5.7 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Sony%20MDR-EX1000/Sony%20MDR-EX1000.png)

@@ -1,46 +1,32 @@
 # Monster Lady Gaga
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -11.4; 23 -11.8; 25 -12.1; 28 -12.6; 31 -12.9; 34 -13.2; 37 -13.4; 41 -13.6; 45 -13.9; 49 -14.1; 54 -14.2; 60 -14.3; 66 -14.5; 72 -14.6; 79 -14.7; 87 -14.7; 96 -14.6; 106 -14.5; 116 -14.4; 128 -14.2; 141 -14.0; 155 -13.7; 170 -13.4; 187 -12.9; 206 -12.5; 227 -12.0; 249 -11.4; 274 -10.9; 302 -10.3; 332 -9.7; 365 -9.0; 402 -8.5; 442 -8.0; 486 -7.5; 535 -7.0; 588 -6.5; 647 -6.0; 712 -5.9; 783 -5.2; 861 -5.1; 947 -5.2; 1042 -5.3; 1146 -4.7; 1261 -5.1; 1387 -5.6; 1526 -6.3; 1678 -6.9; 1846 -6.9; 2031 -6.5; 2234 -5.8; 2457 -4.9; 2703 -3.8; 2973 -2.7; 3270 -1.5; 3597 -0.5; 3957 -0.5; 4353 -1.0; 4788 -0.6; 5267 -0.5; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`Monster Lady Gaga GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Monster Lady Gaga ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.7dB**.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 28 Hz   | 0.45 | -3.6 dB |
 | Peaking | 119 Hz  | 0.35 | -7.2 dB |
-| Peaking | 1205 Hz | 0.38 | 2.9 dB  |
-| Peaking | 1841 Hz | 1.71 | -3.7 dB |
-| Peaking | 4504 Hz | 1.18 | 5.9 dB  |
-| Peaking | 2441 Hz | 4.84 | -0.3 dB |
-| Peaking | 3493 Hz | 3.37 | 1.2 dB  |
-| Peaking | 4368 Hz | 4.98 | -1.4 dB |
-| Peaking | 6310 Hz | 2.95 | 4.5 dB  |
-| Peaking | 7420 Hz | 1.59 | -3.3 dB |
+| Peaking | 1206 Hz | 0.38 | 2.9 dB  |
+| Peaking | 1827 Hz | 1.71 | -3.7 dB |
+| Peaking | 4505 Hz | 1.18 | 5.9 dB  |
+| Peaking | 2461 Hz | 4.18 | -0.5 dB |
+| Peaking | 3563 Hz | 2.6  | 1.2 dB  |
+| Peaking | 4315 Hz | 4.49 | -1.6 dB |
+| Peaking | 6257 Hz | 2.99 | 4.4 dB  |
+| Peaking | 7496 Hz | 1.59 | -3.3 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | -5.9 dB |
-| Peaking | 62 Hz    | 1.41 | -6.3 dB |
+| Peaking | 62 Hz    | 1.41 | -6.4 dB |
 | Peaking | 125 Hz   | 1.41 | -6.5 dB |
 | Peaking | 250 Hz   | 1.41 | -4.0 dB |
 | Peaking | 500 Hz   | 1.41 | -0.1 dB |
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Monster%20Lady%20Gaga/Monster%20Lady%20Gaga.png)

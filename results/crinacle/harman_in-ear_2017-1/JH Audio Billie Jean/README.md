@@ -1,41 +1,27 @@
 # JH Audio Billie Jean
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -8.7; 23 -8.8; 25 -8.9; 28 -9.0; 31 -9.1; 34 -9.1; 37 -9.2; 41 -9.3; 45 -9.4; 49 -9.5; 54 -9.7; 60 -9.8; 66 -10.1; 72 -10.4; 79 -10.7; 87 -11.0; 96 -11.4; 106 -11.7; 116 -11.9; 128 -12.1; 141 -12.3; 155 -12.4; 170 -12.5; 187 -12.4; 206 -12.3; 227 -12.2; 249 -12.0; 274 -11.7; 302 -11.3; 332 -10.9; 365 -10.4; 402 -10.0; 442 -9.6; 486 -9.1; 535 -8.6; 588 -8.1; 647 -7.6; 712 -7.1; 783 -6.6; 861 -6.3; 947 -6.3; 1042 -6.7; 1146 -7.6; 1261 -8.4; 1387 -9.0; 1526 -8.9; 1678 -8.1; 1846 -5.9; 2031 -2.6; 2234 -1.0; 2457 -1.2; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.9; 4353 -0.5; 4788 -0.5; 5267 -1.8; 5793 -3.5; 6373 -2.6; 7010 -5.1; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -8.8; 15026 -19.5; 16529 -20.5; 18182 -8.2; 20000 -6.5
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`JH Audio Billie Jean GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `JH Audio Billie Jean ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6dB**.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 27 Hz    | 0.11 | -1.9 dB  |
-| Peaking | 208 Hz   | 0.44 | -4.9 dB  |
-| Peaking | 1518 Hz  | 1.65 | -8.7 dB  |
-| Peaking | 2482 Hz  | 0.5  | 8.3 dB   |
-| Peaking | 15976 Hz | 2.45 | -17.9 dB |
-| Peaking | 4840 Hz  | 6.82 | 1.7 dB   |
-| Peaking | 8050 Hz  | 3.26 | -1.9 dB  |
-| Peaking | 12806 Hz | 2.85 | 1.9 dB   |
-| Peaking | 13435 Hz | 5.57 | 1.8 dB   |
-| Peaking | 14944 Hz | 5.72 | -4.0 dB  |
+| Peaking | 207 Hz   | 0.45 | -4.9 dB  |
+| Peaking | 1522 Hz  | 1.67 | -8.6 dB  |
+| Peaking | 2496 Hz  | 0.5  | 8.3 dB   |
+| Peaking | 15905 Hz | 2.45 | -17.9 dB |
+| Peaking | 1191 Hz  | 6.3  | -0.4 dB  |
+| Peaking | 4864 Hz  | 6.49 | 1.7 dB   |
+| Peaking | 8035 Hz  | 3.35 | -1.9 dB  |
+| Peaking | 13131 Hz | 3.13 | 3.6 dB   |
+| Peaking | 14755 Hz | 5.18 | -3.7 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | 1.0 dB   |
 | Peaking | 16000 Hz | 1.41 | -13.2 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/JH%20Audio%20Billie%20Jean/JH%20Audio%20Billie%20Jean.png)

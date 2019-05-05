@@ -1,41 +1,27 @@
 # Samsung EO-IG955 (AKG)
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -6.6; 23 -6.9; 25 -7.2; 28 -7.6; 31 -7.8; 34 -8.1; 37 -8.3; 41 -8.5; 45 -8.7; 49 -8.9; 54 -9.1; 60 -9.3; 66 -9.6; 72 -9.7; 79 -10.0; 87 -10.2; 96 -10.3; 106 -10.5; 116 -10.5; 128 -10.5; 141 -10.4; 155 -10.2; 170 -9.9; 187 -9.2; 206 -9.3; 227 -9.2; 249 -8.7; 274 -8.2; 302 -7.6; 332 -7.0; 365 -6.4; 402 -5.9; 442 -5.3; 486 -4.8; 535 -4.2; 588 -3.7; 647 -3.2; 712 -2.8; 783 -2.4; 861 -2.2; 947 -2.3; 1042 -2.7; 1146 -3.0; 1261 -3.2; 1387 -3.2; 1526 -3.2; 1678 -3.1; 1846 -3.1; 2031 -2.9; 2234 -2.6; 2457 -2.5; 2703 -2.5; 2973 -2.9; 3270 -3.5; 3597 -3.8; 3957 -3.7; 4353 -3.4; 4788 -4.0; 5267 -5.0; 5793 -3.3; 6373 -0.5; 7010 -2.7; 7711 -5.2; 8482 -8.2; 9330 -10.1; 10263 -11.6; 11289 -10.5; 12418 -11.4; 13660 -21.1; 15026 -32.1; 16529 -34.5; 18182 -28.3; 20000 -15.5
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`Samsung EO-IG955 (AKG) GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Samsung EO-IG955 (AKG) ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.8dB**.
+When using independent subset of filters, apply preamp of **-3.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 102 Hz   | 0.4  | -5.4 dB  |
 | Peaking | 253 Hz   | 0.97 | -2.2 dB  |
-| Peaking | 2420 Hz  | 0.08 | 3.1 dB   |
-| Peaking | 15589 Hz | 1.79 | -20.0 dB |
-| Peaking | 17806 Hz | 0.79 | -20.8 dB |
-| Peaking | 804 Hz   | 4.18 | 1.0 dB   |
-| Peaking | 6637 Hz  | 3.53 | 6.7 dB   |
-| Peaking | 8469 Hz  | 0.64 | -2.8 dB  |
-| Peaking | 12236 Hz | 3.38 | 7.9 dB   |
-| Peaking | 12989 Hz | 1.29 | -2.2 dB  |
+| Peaking | 2427 Hz  | 0.08 | 3.1 dB   |
+| Peaking | 15597 Hz | 1.76 | -20.3 dB |
+| Peaking | 17793 Hz | 0.79 | -20.5 dB |
+| Peaking | 801 Hz   | 4.52 | 1.0 dB   |
+| Peaking | 5597 Hz  | 2.04 | -2.4 dB  |
+| Peaking | 6426 Hz  | 4.03 | 6.1 dB   |
+| Peaking | 9337 Hz  | 4.91 | -2.6 dB  |
+| Peaking | 22049 Hz | 1.9  | 0.8 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.5dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.5dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | 7.9 dB   |
 | Peaking | 16000 Hz | 1.41 | -38.0 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Samsung%20EO-IG955%20(AKG)/Samsung%20EO-IG955%20(AKG).png)

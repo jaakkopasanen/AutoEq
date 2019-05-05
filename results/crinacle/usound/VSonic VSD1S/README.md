@@ -1,41 +1,27 @@
 # VSonic VSD1S
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -1.5; 23 -2.0; 25 -2.6; 28 -3.2; 31 -3.8; 34 -4.3; 37 -4.7; 41 -5.2; 45 -5.6; 49 -6.0; 54 -6.4; 60 -6.9; 66 -7.3; 72 -7.8; 79 -8.3; 87 -8.8; 96 -9.3; 106 -9.7; 116 -10.1; 128 -10.4; 141 -10.7; 155 -11.0; 170 -11.0; 187 -11.0; 206 -11.0; 227 -10.9; 249 -10.7; 274 -10.4; 302 -10.0; 332 -9.6; 365 -9.2; 402 -8.8; 442 -8.3; 486 -7.8; 535 -7.1; 588 -6.5; 647 -5.8; 712 -5.1; 783 -4.3; 861 -3.6; 947 -3.3; 1042 -3.4; 1146 -4.0; 1261 -4.7; 1387 -5.3; 1526 -5.2; 1678 -4.7; 1846 -4.4; 2031 -4.0; 2234 -3.8; 2457 -3.6; 2703 -3.2; 2973 -2.5; 3270 -1.7; 3597 -0.9; 3957 -0.5; 4353 -0.7; 4788 -1.8; 5267 -4.2; 5793 -6.1; 6373 -4.2; 7010 -3.6; 7711 -6.2; 8482 -7.3; 9330 -6.1; 10263 -6.1; 11289 -6.1; 12418 -6.1; 13660 -6.1; 15026 -6.1; 16529 -6.1; 18182 -6.1; 20000 -12.9
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`VSonic VSD1S GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `VSonic VSD1S ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.8dB**.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
-| Type    | Fc       |     Q | Gain    |
-|:--------|:---------|:------|:--------|
-| Peaking | 14 Hz    |  0.55 | 5.8 dB  |
-| Peaking | 186 Hz   |  0.47 | -5.2 dB |
-| Peaking | 907 Hz   |  1.4  | 3.5 dB  |
-| Peaking | 3774 Hz  |  1.53 | 5.6 dB  |
-| Peaking | 22050 Hz |  2.15 | 0.4 dB  |
-| Peaking | 1419 Hz  |  4.79 | -0.7 dB |
-| Peaking | 2041 Hz  |  2.79 | 0.8 dB  |
-| Peaking | 5927 Hz  |  3.35 | -1.2 dB |
-| Peaking | 6770 Hz  | 10.13 | 3.3 dB  |
-| Peaking | 8233 Hz  |  6.71 | -2.1 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 14 Hz    | 0.56 | 5.9 dB  |
+| Peaking | 185 Hz   | 0.46 | -5.2 dB |
+| Peaking | 904 Hz   | 1.4  | 3.5 dB  |
+| Peaking | 3772 Hz  | 1.53 | 5.6 dB  |
+| Peaking | 22048 Hz | 2.14 | 0.4 dB  |
+| Peaking | 1999 Hz  | 1.06 | -0.7 dB |
+| Peaking | 2082 Hz  | 2.41 | 1.5 dB  |
+| Peaking | 6889 Hz  | 8    | 2.3 dB  |
+| Peaking | 8129 Hz  | 4.49 | -2.0 dB |
+| Peaking | 21453 Hz | 0.27 | -0.8 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | -0.9 dB |
 | Peaking | 16000 Hz | 1.41 | -0.1 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/VSonic%20VSD1S/VSonic%20VSD1S.png)

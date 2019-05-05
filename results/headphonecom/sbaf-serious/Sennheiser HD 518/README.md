@@ -1,56 +1,40 @@
 # Sennheiser HD 518
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -0.5; 23 -0.8; 25 -1.2; 28 -2.0; 31 -2.8; 34 -3.5; 37 -4.0; 41 -4.7; 45 -5.2; 49 -5.7; 54 -6.2; 60 -6.9; 66 -7.4; 72 -7.7; 79 -8.2; 87 -8.0; 96 -7.3; 106 -8.4; 116 -9.1; 128 -9.7; 141 -9.9; 155 -10.3; 170 -10.0; 187 -10.3; 206 -10.1; 227 -10.1; 249 -10.1; 274 -9.9; 302 -9.7; 332 -9.3; 365 -9.1; 402 -8.7; 442 -8.5; 486 -8.2; 535 -7.6; 588 -7.2; 647 -7.2; 712 -7.3; 783 -6.1; 861 -6.5; 947 -5.8; 1042 -5.5; 1146 -4.3; 1261 -3.8; 1387 -2.5; 1526 -1.8; 1678 -0.8; 1846 -1.4; 2031 -2.8; 2234 -3.8; 2457 -3.4; 2703 -4.3; 2973 -5.4; 3270 -6.0; 3597 -4.4; 3957 -4.3; 4353 -7.6; 4788 -7.5; 5267 -6.1; 5793 -4.1; 6373 -2.5; 7010 -4.0; 7711 -6.2; 8482 -6.7; 9330 -6.5; 10263 -6.4; 11289 -6.4; 12418 -6.4; 13660 -6.4; 15026 -6.4; 16529 -6.4; 18182 -8.1; 20000 -8.8
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`Sennheiser HD 518 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Sennheiser HD 518 ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.8dB**.
+When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 0.98 | 6.0 dB  |
-| Peaking | 196 Hz  | 0.53 | -4.0 dB |
-| Peaking | 1651 Hz | 1.77 | 5.7 dB  |
-| Peaking | 2525 Hz | 3.95 | 1.1 dB  |
-| Peaking | 6399 Hz | 5.76 | 4.2 dB  |
-| Peaking | 88 Hz   | 2.02 | -1.1 dB |
-| Peaking | 96 Hz   | 5.12 | 2.1 dB  |
-| Peaking | 3809 Hz | 7.86 | 2.6 dB  |
-| Peaking | 4499 Hz | 6.03 | -2.5 dB |
-| Peaking | 8787 Hz | 7.37 | -0.7 dB |
+| Peaking | 22 Hz   | 0.99 | 6.1 dB  |
+| Peaking | 202 Hz  | 0.53 | -4.0 dB |
+| Peaking | 1646 Hz | 1.76 | 5.7 dB  |
+| Peaking | 2515 Hz | 3.68 | 1.1 dB  |
+| Peaking | 6410 Hz | 5.58 | 4.1 dB  |
+| Peaking | 90 Hz   | 1.9  | -1.3 dB |
+| Peaking | 97 Hz   | 4.64 | 2.1 dB  |
+| Peaking | 3787 Hz | 7.79 | 2.5 dB  |
+| Peaking | 4518 Hz | 6.24 | -2.5 dB |
+| Peaking | 8714 Hz | 7.22 | -0.7 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.3dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.3dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | 5.0 dB  |
 | Peaking | 62 Hz    | 1.41 | -1.1 dB |
-| Peaking | 125 Hz   | 1.41 | -2.5 dB |
+| Peaking | 125 Hz   | 1.41 | -2.6 dB |
 | Peaking | 250 Hz   | 1.41 | -3.4 dB |
 | Peaking | 500 Hz   | 1.41 | -1.4 dB |
 | Peaking | 1000 Hz  | 1.41 | 0.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | 4.8 dB  |
 | Peaking | 4000 Hz  | 1.41 | -0.5 dB |
 | Peaking | 8000 Hz  | 1.41 | 1.1 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+| Peaking | 16000 Hz | 1.41 | -0.5 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20518/Sennheiser%20HD%20518.png)

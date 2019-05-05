@@ -1,41 +1,27 @@
 # Final Audio E3000
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -2.3; 23 -3.0; 25 -3.6; 28 -4.5; 31 -5.2; 34 -5.8; 37 -6.3; 41 -6.8; 45 -7.3; 49 -7.7; 54 -8.2; 60 -8.8; 66 -9.3; 72 -9.7; 79 -10.1; 87 -10.5; 96 -11.0; 106 -11.3; 116 -11.5; 128 -11.6; 141 -11.7; 155 -11.7; 170 -11.6; 187 -11.4; 206 -11.1; 227 -10.8; 249 -10.4; 274 -10.0; 302 -9.7; 332 -9.3; 365 -8.8; 402 -8.2; 442 -7.7; 486 -7.2; 535 -6.6; 588 -6.1; 647 -5.5; 712 -4.8; 783 -3.9; 861 -3.6; 947 -3.5; 1042 -3.5; 1146 -4.2; 1261 -4.9; 1387 -5.2; 1526 -4.9; 1678 -4.3; 1846 -3.7; 2031 -3.4; 2234 -3.3; 2457 -3.2; 2703 -3.4; 2973 -3.1; 3270 -2.5; 3597 -2.0; 3957 -1.3; 4353 -0.6; 4788 -0.5; 5267 -0.7; 5793 -1.3; 6373 -2.4; 7010 -3.5; 7711 -5.5; 8482 -5.8; 9330 -5.8; 10263 -5.8; 11289 -5.8; 12418 -5.8; 13660 -5.8; 15026 -5.8; 16529 -5.8; 18182 -5.8; 20000 -5.8
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`Final Audio E3000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Final Audio E3000 ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.6dB**.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 18 Hz   | 0.96 | 4.7 dB  |
-| Peaking | 129 Hz  | 0.73 | -1.8 dB |
-| Peaking | 188 Hz  | 0.29 | -4.6 dB |
-| Peaking | 831 Hz  | 0.72 | 3.6 dB  |
-| Peaking | 4570 Hz | 1.26 | 5.4 dB  |
-| Peaking | 1002 Hz | 2.24 | 1.6 dB  |
-| Peaking | 1317 Hz | 1.23 | -2.1 dB |
-| Peaking | 2022 Hz | 1.83 | 1.8 dB  |
-| Peaking | 6210 Hz | 2.26 | 3.2 dB  |
-| Peaking | 6978 Hz | 1.18 | -2.6 dB |
+| Peaking | 18 Hz   | 0.95 | 4.8 dB  |
+| Peaking | 127 Hz  | 0.74 | -1.8 dB |
+| Peaking | 188 Hz  | 0.28 | -4.6 dB |
+| Peaking | 826 Hz  | 0.71 | 3.6 dB  |
+| Peaking | 4531 Hz | 1.27 | 5.4 dB  |
+| Peaking | 996 Hz  | 1.88 | 2.1 dB  |
+| Peaking | 1317 Hz | 1.03 | -2.6 dB |
+| Peaking | 1998 Hz | 1.67 | 2.2 dB  |
+| Peaking | 6159 Hz | 2.2  | 3.4 dB  |
+| Peaking | 6818 Hz | 1.13 | -2.7 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | 0.4 dB  |
 | Peaking | 16000 Hz | 1.41 | -0.2 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Final%20Audio%20E3000/Final%20Audio%20E3000.png)

@@ -1,41 +1,27 @@
 # AKG Y50BT
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -0.5; 23 -1.1; 25 -1.7; 28 -2.5; 31 -3.1; 34 -3.7; 37 -4.2; 41 -4.6; 45 -5.0; 49 -5.2; 54 -5.5; 60 -5.7; 66 -5.9; 72 -6.1; 79 -6.3; 87 -6.5; 96 -6.6; 106 -6.6; 116 -6.4; 128 -5.9; 141 -5.0; 155 -3.6; 170 -2.0; 187 -1.4; 206 -2.4; 227 -4.1; 249 -5.3; 274 -6.4; 302 -7.6; 332 -8.5; 365 -8.5; 402 -8.0; 442 -7.5; 486 -7.3; 535 -7.3; 588 -7.4; 647 -7.7; 712 -8.1; 783 -8.6; 861 -9.1; 947 -8.7; 1042 -7.8; 1146 -9.4; 1261 -10.3; 1387 -10.4; 1526 -10.2; 1678 -9.3; 1846 -8.0; 2031 -6.7; 2234 -5.3; 2457 -3.4; 2703 -2.1; 2973 -3.8; 3270 -7.3; 3597 -6.0; 3957 -5.0; 4353 -6.6; 4788 -8.0; 5267 -9.5; 5793 -9.7; 6373 -8.7; 7010 -6.5; 7711 -6.3; 8482 -6.5; 9330 -6.6; 10263 -6.6; 11289 -6.6; 12418 -7.4; 13660 -10.5; 15026 -12.1; 16529 -12.5; 18182 -11.7; 20000 -10.4
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`AKG Y50BT GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `AKG Y50BT ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.2dB**.
+When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 20 Hz    | 1.11 | 6.0 dB  |
+| Peaking | 21 Hz    | 1.11 | 6.0 dB  |
 | Peaking | 185 Hz   | 3.26 | 5.8 dB  |
-| Peaking | 1805 Hz  | 0.51 | -4.5 dB |
-| Peaking | 2561 Hz  | 2.04 | 8.0 dB  |
-| Peaking | 17267 Hz | 0.86 | -6.6 dB |
-| Peaking | 344 Hz   | 4.89 | -2.1 dB |
-| Peaking | 3984 Hz  | 7.39 | 2.6 dB  |
-| Peaking | 5699 Hz  | 3.11 | -3.3 dB |
-| Peaking | 8201 Hz  | 1.22 | 1.8 dB  |
-| Peaking | 19955 Hz | 2.38 | -2.2 dB |
+| Peaking | 1797 Hz  | 0.52 | -4.5 dB |
+| Peaking | 2600 Hz  | 2.04 | 8.0 dB  |
+| Peaking | 17268 Hz | 0.86 | -6.6 dB |
+| Peaking | 345 Hz   | 4.92 | -2.1 dB |
+| Peaking | 3989 Hz  | 8.35 | 2.6 dB  |
+| Peaking | 5704 Hz  | 3.12 | -3.3 dB |
+| Peaking | 8229 Hz  | 1.23 | 1.8 dB  |
+| Peaking | 19952 Hz | 2.39 | -2.2 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.9dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.9dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | -0.2 dB |
 | Peaking | 16000 Hz | 1.41 | -7.2 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20Y50BT/AKG%20Y50BT.png)

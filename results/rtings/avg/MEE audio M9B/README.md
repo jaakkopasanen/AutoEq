@@ -1,24 +1,10 @@
 # MEE audio M9B
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -20.6; 23 -20.0; 25 -19.3; 28 -18.4; 31 -17.4; 34 -16.6; 37 -16.0; 41 -15.6; 45 -15.5; 49 -15.5; 54 -15.4; 60 -15.0; 66 -14.4; 72 -13.8; 79 -12.9; 87 -12.1; 96 -11.4; 106 -10.7; 116 -10.1; 128 -9.6; 141 -8.9; 155 -8.4; 170 -7.8; 187 -7.2; 206 -6.6; 227 -5.9; 249 -5.3; 274 -4.9; 302 -4.5; 332 -4.0; 365 -3.4; 402 -2.8; 442 -2.2; 486 -1.7; 535 -1.1; 588 -0.7; 647 -0.5; 712 -0.5; 783 -0.7; 861 -1.3; 947 -1.9; 1042 -2.0; 1146 -2.0; 1261 -2.2; 1387 -2.1; 1526 -2.0; 1678 -2.0; 1846 -2.1; 2031 -2.2; 2234 -2.0; 2457 -2.0; 2703 -3.6; 2973 -6.0; 3270 -8.5; 3597 -9.6; 3957 -8.9; 4353 -8.0; 4788 -7.9; 5267 -8.4; 5793 -10.6; 6373 -15.1; 7010 -13.6; 7711 -8.2; 8482 -5.3; 9330 -7.9; 10263 -12.3; 11289 -9.7; 12418 -5.3; 13660 -5.3; 15026 -9.5; 16529 -11.8; 18182 -11.6; 20000 -16.1
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`MEE audio M9B GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `MEE audio M9B ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-5.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.6dB**.
+When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -29,13 +15,13 @@ When using independent subset of filters, apply preamp of **-4.6dB**.
 | Peaking | 20290 Hz | 0.34 | -9.5 dB  |
 | Peaking | 2380 Hz  | 2.64 | 2.7 dB   |
 | Peaking | 3487 Hz  | 3.73 | -4.9 dB  |
-| Peaking | 8565 Hz  | 4.9  | 4.9 dB   |
-| Peaking | 10525 Hz | 3.53 | -6.5 dB  |
-| Peaking | 12812 Hz | 3.14 | 3.9 dB   |
+| Peaking | 8492 Hz  | 4.9  | 4.9 dB   |
+| Peaking | 10444 Hz | 3.52 | -6.5 dB  |
+| Peaking | 12751 Hz | 3.14 | 3.9 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.0dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.0dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | -4.4 dB  |
 | Peaking | 16000 Hz | 1.41 | -6.1 dB  |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/MEE%20audio%20M9B/MEE%20audio%20M9B.png)

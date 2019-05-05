@@ -1,41 +1,27 @@
 # Beyerdynamic ET1000
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.5; 31 -0.5; 34 -0.5; 37 -0.5; 41 -0.5; 45 -0.5; 49 -0.5; 54 -0.5; 60 -0.5; 66 -0.5; 72 -0.7; 79 -2.3; 87 -4.1; 96 -5.8; 106 -7.0; 116 -7.7; 128 -8.1; 141 -8.2; 155 -8.1; 170 -7.8; 187 -7.7; 206 -7.5; 227 -7.3; 249 -7.2; 274 -7.0; 302 -6.8; 332 -6.7; 365 -6.8; 402 -6.7; 442 -6.5; 486 -6.2; 535 -5.9; 588 -5.7; 647 -5.8; 712 -5.6; 783 -5.7; 861 -6.9; 947 -8.0; 1042 -8.2; 1146 -8.0; 1261 -7.8; 1387 -7.8; 1526 -8.1; 1678 -8.6; 1846 -9.1; 2031 -8.8; 2234 -7.9; 2457 -7.5; 2703 -7.6; 2973 -7.9; 3270 -7.6; 3597 -6.5; 3957 -5.2; 4353 -4.5; 4788 -5.4; 5267 -4.5; 5793 -2.3; 6373 -2.2; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -9.7; 12418 -13.0; 13660 -11.2; 15026 -8.2; 16529 -8.5; 18182 -11.0; 20000 -18.4
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`Beyerdynamic ET1000 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Beyerdynamic ET1000 ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 57 Hz    | 0.35 | 8.5 dB  |
-| Peaking | 128 Hz   | 0.84 | -7.8 dB |
-| Peaking | 1821 Hz  | 1.2  | -2.3 dB |
-| Peaking | 6189 Hz  | 2.17 | 5.5 dB  |
-| Peaking | 21040 Hz | 0.1  | -6.1 dB |
-| Peaking | 18 Hz    | 2.46 | 1.3 dB  |
-| Peaking | 741 Hz   | 2.47 | 1.5 dB  |
-| Peaking | 974 Hz   | 3.74 | -1.6 dB |
-| Peaking | 12638 Hz | 4.19 | -5.1 dB |
-| Peaking | 15984 Hz | 1.9  | 3.2 dB  |
+| Peaking | 62 Hz    | 0.34 | 9.2 dB  |
+| Peaking | 128 Hz   | 0.78 | -8.6 dB |
+| Peaking | 1833 Hz  | 1.2  | -2.4 dB |
+| Peaking | 6178 Hz  | 2.02 | 5.4 dB  |
+| Peaking | 20889 Hz | 0.1  | -5.8 dB |
+| Peaking | 20 Hz    | 2.66 | 1.4 dB  |
+| Peaking | 688 Hz   | 4.41 | 1.1 dB  |
+| Peaking | 10354 Hz | 3.8  | 3.2 dB  |
+| Peaking | 12417 Hz | 2.14 | -5.1 dB |
+| Peaking | 15640 Hz | 1.76 | 3.9 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
 | Peaking | 16000 Hz | 1.41 | -5.3 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20ET1000/Beyerdynamic%20ET1000.png)

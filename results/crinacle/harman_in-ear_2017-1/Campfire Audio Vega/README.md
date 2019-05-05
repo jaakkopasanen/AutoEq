@@ -1,40 +1,27 @@
 # Campfire Audio Vega
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -13.1; 23 -13.2; 25 -13.3; 28 -13.4; 31 -13.4; 34 -13.4; 37 -13.5; 41 -13.5; 45 -13.6; 49 -13.6; 54 -13.6; 60 -13.7; 66 -13.8; 72 -13.9; 79 -14.1; 87 -14.2; 96 -14.3; 106 -14.4; 116 -14.4; 128 -14.4; 141 -14.3; 155 -14.2; 170 -13.9; 187 -13.7; 206 -13.3; 227 -12.9; 249 -12.5; 274 -12.0; 302 -11.5; 332 -10.8; 365 -10.2; 402 -9.7; 442 -9.2; 486 -8.7; 535 -8.2; 588 -7.8; 647 -7.3; 712 -6.9; 783 -6.5; 861 -6.3; 947 -6.5; 1042 -6.7; 1146 -7.1; 1261 -7.9; 1387 -7.3; 1526 -6.2; 1678 -5.6; 1846 -4.6; 2031 -2.7; 2234 -0.6; 2457 -0.5; 2703 -0.5; 2973 -0.5; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -0.5; 4788 -0.5; 5267 -0.9; 5793 -2.7; 6373 -5.1; 7010 -5.8; 7711 -7.4; 8482 -9.3; 9330 -8.5; 10263 -6.6; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -8.5; 16529 -12.6; 18182 -12.3; 20000 -6.5
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`Campfire Audio Vega GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Campfire Audio Vega ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.7dB** and build filters manually
-with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 30 Hz    | 0.31 | -5.8 dB |
-| Peaking | 166 Hz   | 0.5  | -5.9 dB |
+| Peaking | 10 Hz    | 1.61 | -6.1 dB |
+| Peaking | 30 Hz    | 0.33 | -5.6 dB |
+| Peaking | 162 Hz   | 0.49 | -6.2 dB |
 | Peaking | 3391 Hz  | 1.03 | 7.1 dB  |
-| Peaking | 17379 Hz | 1.49 | -7.5 dB |
-| Peaking | 1347 Hz  | 3.69 | -2.2 dB |
+| Peaking | 17375 Hz | 1.49 | -7.5 dB |
+| Peaking | 1347 Hz  | 3.71 | -2.2 dB |
 | Peaking | 2279 Hz  | 4.63 | 2.4 dB  |
 | Peaking | 3403 Hz  | 2.95 | -1.3 dB |
-| Peaking | 5110 Hz  | 3.87 | 2.6 dB  |
-| Peaking | 8563 Hz  | 3.8  | -3.9 dB |
+| Peaking | 5109 Hz  | 3.87 | 2.6 dB  |
+| Peaking | 8560 Hz  | 3.79 | -3.9 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -49,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | -1.8 dB |
 | Peaking | 16000 Hz | 1.41 | -4.8 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Vega/Campfire%20Audio%20Vega.png)

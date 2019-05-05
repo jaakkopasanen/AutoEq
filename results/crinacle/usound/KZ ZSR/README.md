@@ -1,41 +1,27 @@
 # KZ ZSR
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -6.6; 23 -7.0; 25 -7.4; 28 -7.9; 31 -8.2; 34 -8.6; 37 -8.8; 41 -9.1; 45 -9.3; 49 -9.5; 54 -9.7; 60 -9.9; 66 -10.2; 72 -10.4; 79 -10.6; 87 -10.8; 96 -11.1; 106 -11.2; 116 -11.3; 128 -11.3; 141 -11.2; 155 -11.2; 170 -10.9; 187 -10.7; 206 -10.4; 227 -10.0; 249 -9.6; 274 -9.2; 302 -8.7; 332 -8.2; 365 -7.8; 402 -7.4; 442 -7.0; 486 -6.5; 535 -6.1; 588 -5.8; 647 -5.4; 712 -5.0; 783 -4.6; 861 -4.4; 947 -4.5; 1042 -4.6; 1146 -5.2; 1261 -6.2; 1387 -7.0; 1526 -7.4; 1678 -7.4; 1846 -6.9; 2031 -6.0; 2234 -4.9; 2457 -3.7; 2703 -2.9; 2973 -2.8; 3270 -3.2; 3597 -2.7; 3957 -0.5; 4353 -0.5; 4788 -1.4; 5267 -1.7; 5793 -1.1; 6373 -2.6; 7010 -7.9; 7711 -14.3; 8482 -14.2; 9330 -11.4; 10263 -11.1; 11289 -12.2; 12418 -13.7; 13660 -15.4; 15026 -11.9; 16529 -6.6; 18182 -8.9; 20000 -27.0
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`KZ ZSR GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `KZ ZSR ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.7dB**.
+When using independent subset of filters, apply preamp of **-6.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 111 Hz   | 0.55 | -5.1 dB  |
-| Peaking | 4318 Hz  | 1.07 | 6.0 dB   |
+| Peaking | 4317 Hz  | 1.07 | 6.0 dB   |
 | Peaking | 6299 Hz  | 3.26 | 5.4 dB   |
-| Peaking | 7893 Hz  | 2.71 | -10.5 dB |
-| Peaking | 13342 Hz | 1.43 | -8.6 dB  |
+| Peaking | 7892 Hz  | 2.71 | -10.5 dB |
+| Peaking | 13343 Hz | 1.43 | -8.6 dB  |
 | Peaking | 39 Hz    | 2.3  | -0.8 dB  |
 | Peaking | 944 Hz   | 1.24 | 3.5 dB   |
-| Peaking | 1577 Hz  | 1.05 | -2.9 dB  |
-| Peaking | 2530 Hz  | 3.29 | 2.1 dB   |
-| Peaking | 16422 Hz | 5.56 | 2.9 dB   |
+| Peaking | 1576 Hz  | 1.05 | -2.9 dB  |
+| Peaking | 2531 Hz  | 3.3  | 2.1 dB   |
+| Peaking | 16315 Hz | 5.55 | 2.9 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -50,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | -6.8 dB |
 | Peaking | 16000 Hz | 1.41 | -6.1 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/KZ%20ZSR/KZ%20ZSR.png)

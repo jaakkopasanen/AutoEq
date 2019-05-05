@@ -1,40 +1,27 @@
 # Panasonic HJE120
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
-### EqualizerAPO
-In case of using EqualizerAPO without any GUI, replace `C:\Program Files\EqualizerAPO\config\config.txt`
-with:
-```
-GraphicEQ: 21 -13.0; 23 -13.1; 25 -13.2; 28 -13.3; 31 -13.3; 34 -13.0; 37 -12.8; 41 -12.8; 45 -13.0; 49 -13.3; 54 -13.5; 60 -13.4; 66 -13.5; 72 -13.8; 79 -13.9; 87 -14.1; 96 -14.1; 106 -14.1; 116 -13.9; 128 -13.9; 141 -13.9; 155 -13.6; 170 -13.3; 187 -13.1; 206 -12.7; 227 -12.2; 249 -11.8; 274 -11.1; 302 -10.7; 332 -10.1; 365 -9.5; 402 -8.9; 442 -8.2; 486 -7.8; 535 -7.2; 588 -6.5; 647 -6.0; 712 -5.8; 783 -5.2; 861 -5.2; 947 -5.4; 1042 -5.9; 1146 -6.3; 1261 -6.9; 1387 -7.9; 1526 -9.4; 1678 -11.1; 1846 -13.0; 2031 -13.3; 2234 -11.2; 2457 -7.0; 2703 -4.4; 2973 -1.7; 3270 -0.5; 3597 -0.5; 3957 -0.5; 4353 -1.1; 4788 -3.7; 5267 -1.8; 5793 -0.5; 6373 -1.0; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
-```
-
-### HeSuVi
-HeSuVi 2.0 ships with most of the pre-processed results. If this model can't be found in HeSuVi add
-`Panasonic HJE120 GraphicEQ.txt` to `C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom\` folder.
-
-### Peace
-In case of using Peace, click *Import* in Peace GUI and select `Panasonic HJE120 ParametricEQ.txt`.
-
 ### Parametric EQs
-In case of using other parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6dB**.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 35 Hz   | 0.24 | -6.5 dB |
 | Peaking | 166 Hz  | 0.77 | -4.3 dB |
-| Peaking | 2001 Hz | 2.66 | -9.9 dB |
-| Peaking | 3390 Hz | 1.3  | 7.3 dB  |
-| Peaking | 6052 Hz | 4.7  | 4.8 dB  |
-| Peaking | 329 Hz  | 1.96 | -0.9 dB |
-| Peaking | 819 Hz  | 1.43 | 2.0 dB  |
-| Peaking | 1591 Hz | 4.44 | -1.3 dB |
-| Peaking | 8401 Hz | 3.44 | -1.1 dB |
+| Peaking | 2009 Hz | 2.67 | -9.8 dB |
+| Peaking | 3405 Hz | 1.31 | 7.3 dB  |
+| Peaking | 5944 Hz | 4.64 | 4.8 dB  |
+| Peaking | 331 Hz  | 1.99 | -0.9 dB |
+| Peaking | 818 Hz  | 1.4  | 2.0 dB  |
+| Peaking | 1597 Hz | 4.7  | -1.4 dB |
+| Peaking | 6660 Hz | 7.63 | 2.3 dB  |
+| Peaking | 7665 Hz | 1.74 | -1.3 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB** and set
-gains manually with these parameters.
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB**
+(if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
@@ -49,7 +36,5 @@ gains manually with these parameters.
 | Peaking | 8000 Hz  | 1.41 | -0.0 dB |
 | Peaking | 16000 Hz | 1.41 | -0.2 dB |
 
-### Impulse Response
-In case of using Viper4Android or other convolution engine select WAV file with correct sampling frequency.
-
+### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Panasonic%20HJE120/Panasonic%20HJE120.png)
