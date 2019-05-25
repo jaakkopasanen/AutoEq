@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2482 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2490 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/1Custom%20SA03)
@@ -218,6 +218,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Astro A10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A10)
 - [Astro A20](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A20)
 - [Astro A40](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A40)
+- [Astro A40 2019](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A40%202019)
 - [Astro A50](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A50)
 - [ASTRO Gaming A10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/ASTRO%20Gaming%20A10)
 - [ASTRO Gaming A40](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/ASTRO%20Gaming%20A40)
@@ -427,6 +428,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Beats Tour](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beats%20Tour)
 - [Beats Tour 2014](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beats%20Tour%202014)
 - [Beats urBeats](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beats%20urBeats)
+- [Beats urBeats3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beats%20urBeats3)
 - [Bedphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bedphones)
 - [Behringer HPS5000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Behringer%20HPS5000)
 - [Betron YSM1000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Betron%20YSM1000)
@@ -1111,6 +1113,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Jabra Elite 45e](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%2045e)
 - [Jabra Elite 65e](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%2065e)
 - [Jabra Elite 65t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%2065t)
+- [Jabra Elite 85h](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%2085h)
 - [Jabra Elite Active 65t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%20Active%2065t)
 - [Jabra Elite Sport](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%20Sport)
 - [Jabra Evolve 65t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Evolve%2065t)
@@ -1328,6 +1331,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Lime Ears Model X Bass](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Lime%20Ears%20Model%20X%20Bass)
 - [Logitech G Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G%20Pro)
 - [Logitech G430](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G430)
+- [Logitech G432](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G432)
 - [Logitech G433](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G433)
 - [Logitech G533](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G533)
 - [Logitech G635](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G635)
@@ -1877,6 +1881,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Sennheiser HD7 DJ](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sennheiser%20HD7%20DJ)
 - [Sennheiser HE 60](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HE%2060)
 - [Sennheiser HE1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HE1)
+- [Sennheiser IE 40 PRO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sennheiser%20IE%2040%20PRO)
 - [Sennheiser IE 6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20IE%206)
 - [Sennheiser IE 8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Sennheiser%20IE%208)
 - [Sennheiser IE 80 S](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20IE%2080%20S)
@@ -2107,6 +2112,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Sony WF-SP700N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WF-SP700N)
 - [Sony WH-1000XM2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sony%20WH-1000XM2)
 - [Sony WH-1000XM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-1000XM3)
+- [Sony WH-CH400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-CH400)
 - [Sony WH-CH500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-CH500)
 - [Sony WH-CH700N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-CH700N)
 - [Sony WH-H900N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-H900N)
@@ -2247,6 +2253,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Takstar Pro 80](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Takstar%20Pro%2080)
 - [Taobao 3 driver](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Taobao%203%20driver)
 - [Taobao 6 driver](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Taobao%206%20driver)
+- [TaoTronics TT-BH060](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/TaoTronics%20TT-BH060)
 - [Tascam TH-02](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Tascam%20TH-02)
 - [TDK BA-200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/TDK%20BA-200)
 - [TDK BA200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/TDK%20BA200)
@@ -2357,6 +2364,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Ultrasone TIO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Ultrasone%20TIO)
 - [Ultrasone Zino](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Ultrasone%20Zino)
 - [Umi Voix](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Umi%20Voix)
+- [Under Armour True Wireless Flash](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Under%20Armour%20True%20Wireless%20Flash)
 - [Unique Melody 3DD-Ti](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%203DD-Ti)
 - [Unique Melody 3DD-Ti Open](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%203DD-Ti%20Open)
 - [Unique Melody 3X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%203X)
