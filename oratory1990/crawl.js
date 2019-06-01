@@ -18,6 +18,7 @@ const ignore = [
 const manufacturer_replacements = [
     ['Mee Audio', 'MEE Audio'],
     ['1More', '1MORE'],
+    ['Knowledge Zenith', 'KZ']
 ];
 
 const model_replacements = [
@@ -78,6 +79,10 @@ rows.forEach(row => {
           model = model.replace(search, replacement);
       });
       notes = {};
+  }
+
+  if (model === '') {
+    return
   }
 
   new_notes = row.children[2].children[0].innerText.replace(ignore_regexp, '').trim();
