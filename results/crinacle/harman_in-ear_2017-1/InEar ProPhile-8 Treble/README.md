@@ -1,4 +1,4 @@
-# InEar PhoPhile-8 Treble
+# InEar ProPhile-8 Treble
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -13,11 +13,11 @@ When using independent subset of filters, apply preamp of **-5.1dB**.
 | Peaking | 3740 Hz  | 0.56 | 11.6 dB  |
 | Peaking | 12341 Hz | 0.59 | 23.1 dB  |
 | Peaking | 17438 Hz | 0.19 | -34.0 dB |
-| Peaking | 849 Hz   | 0.89 | 5.9 dB   |
-| Peaking | 1110 Hz  | 0.53 | -5.2 dB  |
-| Peaking | 2530 Hz  | 2.11 | 3.0 dB   |
-| Peaking | 5707 Hz  | 7.84 | -1.8 dB  |
-| Peaking | 6675 Hz  | 4.99 | 1.9 dB   |
+| Peaking | 843 Hz   | 1    | 4.7 dB   |
+| Peaking | 1180 Hz  | 0.55 | -4.0 dB  |
+| Peaking | 2537 Hz  | 2.22 | 2.8 dB   |
+| Peaking | 5701 Hz  | 6.88 | -1.8 dB  |
+| Peaking | 6637 Hz  | 4.85 | 1.9 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.2dB**
@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -23.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/InEar%20PhoPhile-8%20Treble/InEar%20PhoPhile-8%20Treble.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8%20Treble/InEar%20ProPhile-8%20Treble.png)

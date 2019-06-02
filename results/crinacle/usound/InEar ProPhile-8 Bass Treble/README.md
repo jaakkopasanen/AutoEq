@@ -1,4 +1,4 @@
-# InEar PhoPhile-8 Bass Treble
+# InEar ProPhile-8 Bass Treble
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.0 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/InEar%20PhoPhile-8%20Bass%20Treble/InEar%20PhoPhile-8%20Bass%20Treble.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/InEar%20ProPhile-8%20Bass%20Treble/InEar%20ProPhile-8%20Bass%20Treble.png)

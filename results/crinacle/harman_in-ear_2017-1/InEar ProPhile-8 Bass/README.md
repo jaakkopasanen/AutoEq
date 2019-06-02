@@ -1,23 +1,23 @@
-# InEar PhoPhile-8 Bass
+# InEar ProPhile-8 Bass
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-5.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.8dB**.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 94 Hz    | 0.62 | -2.8 dB  |
-| Peaking | 178 Hz   | 0.97 | -2.4 dB  |
-| Peaking | 3698 Hz  | 0.73 | 9.3 dB   |
-| Peaking | 12604 Hz | 0.42 | 25.3 dB  |
-| Peaking | 17045 Hz | 0.19 | -34.2 dB |
-| Peaking | 945 Hz   | 1.17 | 2.3 dB   |
-| Peaking | 1332 Hz  | 1.79 | -2.1 dB  |
-| Peaking | 1909 Hz  | 0.3  | -0.9 dB  |
-| Peaking | 2566 Hz  | 2.88 | 2.3 dB   |
-| Peaking | 6826 Hz  | 7.75 | 2.6 dB   |
+| Peaking | 95 Hz    | 0.62 | -2.9 dB  |
+| Peaking | 179 Hz   | 1    | -2.3 dB  |
+| Peaking | 3691 Hz  | 0.72 | 9.3 dB   |
+| Peaking | 12625 Hz | 0.42 | 25.5 dB  |
+| Peaking | 17031 Hz | 0.19 | -34.6 dB |
+| Peaking | 950 Hz   | 1.15 | 2.4 dB   |
+| Peaking | 1328 Hz  | 1.78 | -2.1 dB  |
+| Peaking | 1844 Hz  | 0.29 | -0.9 dB  |
+| Peaking | 2557 Hz  | 2.91 | 2.3 dB   |
+| Peaking | 6808 Hz  | 7.77 | 2.6 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.8dB**
@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -18.7 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/InEar%20PhoPhile-8%20Bass/InEar%20PhoPhile-8%20Bass.png)
+![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8%20Bass/InEar%20ProPhile-8%20Bass.png)

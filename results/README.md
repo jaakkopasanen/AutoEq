@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2504 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2503 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/1Custom%20SA03)
@@ -1097,11 +1097,10 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [IMR R1 (orange close)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/IMR%20R1%20(orange%20close))
 - [IMR R1 (pink close)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/IMR%20R1%20(pink%20close))
 - [IMR R1 (yellow close)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/IMR%20R1%20(yellow%20close))
-- [InEar PhoPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20PhoPhile-8)
-- [InEar PhoPhile-8 Bass](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20PhoPhile-8%20Bass)
-- [InEar PhoPhile-8 Bass Treble](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20PhoPhile-8%20Bass%20Treble)
-- [InEar PhoPhile-8 Treble](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20PhoPhile-8%20Treble)
 - [InEar ProPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/InEar%20ProPhile-8)
+- [InEar ProPhile-8 Bass](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8%20Bass)
+- [InEar ProPhile-8 Bass Treble](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8%20Bass%20Treble)
+- [InEar ProPhile-8 Treble](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8%20Treble)
 - [InEar StageDiver SD2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20StageDiver%20SD2)
 - [InEar StageDiver SD3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20StageDiver%20SD3)
 - [InEar StageDiver SD4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20StageDiver%20SD4)
