@@ -1097,7 +1097,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [IMR R1 (orange close)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/IMR%20R1%20(orange%20close))
 - [IMR R1 (pink close)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/IMR%20R1%20(pink%20close))
 - [IMR R1 (yellow close)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/IMR%20R1%20(yellow%20close))
-- [InEar ProPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/InEar%20ProPhile-8)
+- [InEar ProPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8)
 - [InEar ProPhile-8 Bass](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8%20Bass)
 - [InEar ProPhile-8 Bass Treble](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8%20Bass%20Treble)
 - [InEar ProPhile-8 Treble](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8%20Treble)

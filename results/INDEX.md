@@ -1678,8 +1678,6 @@ from the same source.
 - [InEar ProPhile-8 Treble](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/InEar%20ProPhile-8%20Treble) by Crinacle (Usound)
 - [InEar ProPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20ProPhile-8) by Crinacle (Harman in-ear 2017-1)
 - [InEar ProPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/InEar%20ProPhile-8) by Crinacle (Usound)
-- [InEar ProPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/InEar%20ProPhile-8) by oratory1990 (Harman in-ear 2017-1)
-- [InEar ProPhile-8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/InEar%20ProPhile-8) by oratory1990 (Usound)
 - [InEar StageDiver SD2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20StageDiver%20SD2) by Crinacle (Harman in-ear 2017-1)
 - [InEar StageDiver SD2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/InEar%20StageDiver%20SD2) by Crinacle (Usound)
 - [InEar StageDiver SD3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/InEar%20StageDiver%20SD3) by Crinacle (Harman in-ear 2017-1)
