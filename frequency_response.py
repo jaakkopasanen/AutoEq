@@ -264,16 +264,17 @@ class FrequencyResponse:
         df = pd.DataFrame(self.to_dict())
         df.to_csv(file_path, header=True, index=False, float_format='%.2f')
 
-    def write_eqapo_graphic_eq(self, file_path):
+    def write_eqapo_graphic_eq(self, file_path, normalize=True):
         """Writes equalization graph to a file as Equalizer APO config."""
         file_path = os.path.abspath(file_path)
 
         fr = FrequencyResponse(name='hack', frequency=self.frequency, raw=self.equalization)
         fr.interpolate(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=GRAPHIC_EQ_STEP)
-        fr.raw -= np.max(fr.raw) + 0.5
-        if fr.raw[0] > 0.0:
-            # Prevent bass boost below lowest frequency
-            fr.raw[0] = 0.0
+        if normalize:
+            fr.raw -= np.max(fr.raw) + 0.5
+            if fr.raw[0] > 0.0:
+                # Prevent bass boost below lowest frequency
+                fr.raw[0] = 0.0
 
         # Remove leading zeros
         while np.abs(fr.raw[-1]) < 0.1 and np.abs(fr.raw[-2]) < 0.1:  # Last two are zeros
@@ -707,7 +708,7 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES):
+    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True):
         """Generates minimum phase impulse response
 
         Inspired by:
@@ -726,9 +727,10 @@ class FrequencyResponse:
         fr.interpolate(np.arange(0, fs // 2, f_res))
         n = len(fr.frequency)
         fr.raw[fr.frequency < f_res] = 0.0
-        # Reduce by max gain to avoid clipping with 1 dB of headroom
-        fr.raw -= np.max(fr.raw)
-        fr.raw -= 0.5
+        if normalize:
+            # Reduce by max gain to avoid clipping with 1 dB of headroom
+            fr.raw -= np.max(fr.raw)
+            fr.raw -= 0.5
         # Minimum phase transformation halves dB gain
         # Maybe because it's only half long filter?
         fr.raw *= 2
@@ -742,16 +744,17 @@ class FrequencyResponse:
         ir = minimum_phase(ir)
         return ir
 
-    def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES):
+    def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True):
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
         fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
         fr.interpolate(np.arange(0, fs // 2, f_res))
         n = len(fr.frequency)
         fr.raw[fr.frequency < f_res] = 0.0
-        # Reduce by max gain to avoid clipping with 1 dB of headroom
-        fr.raw -= np.max(fr.raw)
-        fr.raw -= 0.5
+        if normalize:
+            # Reduce by max gain to avoid clipping with 1 dB of headroom
+            fr.raw -= np.max(fr.raw)
+            fr.raw -= 0.5
         # Convert amplitude to linear scale
         fr.raw = 10**(fr.raw / 20)
         # Calculate response
@@ -1588,7 +1591,7 @@ class FrequencyResponse:
 
                 if equalize:
                     # Write EqualizerAPO GraphicEq settings to file
-                    fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'))
+                    fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True)
                     if parametric_eq:
                         # Write ParametricEq settings to file
                         fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), peq_filters)
@@ -1603,7 +1606,7 @@ class FrequencyResponse:
                     for _fs in fss:
                         if phase in ['linear', 'both']:
                             # Write linear phase impulse response
-                            linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res)
+                            linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
                             linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
                             sf.write(
                                 output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
@@ -1613,7 +1616,7 @@ class FrequencyResponse:
                             )
                         if phase in ['minimum', 'both']:
                             # Write minimum phase impulse response
-                            minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res)
+                            minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
                             minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
                             sf.write(
                                 output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
