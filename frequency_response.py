@@ -716,6 +716,8 @@ class FrequencyResponse:
 
         Args:
             fs: Sampling frequency in Hz
+            f_res: Frequency resolution as sampling interval. 20 would result in sampling at 0 Hz, 20 Hz, 40 Hz, ...
+            normalize: Normalize gain to -0.5 dB
 
         Returns:
             Minimum phase impulse response
@@ -723,10 +725,15 @@ class FrequencyResponse:
         # Double frequency resolution because it will be halved when converting linear phase IR to minimum phase
         f_res /= 2
         # Interpolate to even sample interval
-        fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
-        fr.interpolate(np.arange(0, fs // 2, f_res))
-        n = len(fr.frequency)
-        fr.raw[fr.frequency < f_res] = 0.0
+        fr = FrequencyResponse(name='fr_data', frequency=self.frequency.copy(), raw=self.equalization.copy())
+        # Save gain at lowest available frequency
+        f_min = np.max([fr.frequency[0], f_res])
+        interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
+        gain_f_min = interpolator(np.log10(f_min))
+        # Run interpolation
+        fr.interpolate(np.arange(0, fs // 2, f_res), pol_order=1)
+        # Set gain for all frequencies below original minimum frequency to match gain at the original minimum frequency
+        fr.raw[fr.frequency <= f_min] = gain_f_min
         if normalize:
             # Reduce by max gain to avoid clipping with 1 dB of headroom
             fr.raw -= np.max(fr.raw)
@@ -739,7 +746,7 @@ class FrequencyResponse:
         # Calculate response
         fr.frequency = np.append(fr.frequency, fs // 2)
         fr.raw = np.append(fr.raw, 0.0)
-        ir = firwin2(n*2, fr.frequency, fr.raw, fs=fs)
+        ir = firwin2(len(fr.frequency)*2, fr.frequency, fr.raw, fs=fs)
         # Convert to minimum phase
         ir = minimum_phase(ir)
         return ir
@@ -748,9 +755,14 @@ class FrequencyResponse:
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
         fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
+        # Save gain at lowest available frequency
+        f_min = np.max([fr.frequency[0], f_res])
+        interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
+        gain_f_min = interpolator(np.log10(f_min))
+        # Run interpolation
         fr.interpolate(np.arange(0, fs // 2, f_res))
-        n = len(fr.frequency)
-        fr.raw[fr.frequency < f_res] = 0.0
+        # Set gain for all frequencies below original minimum frequency to match gain at the original minimum frequency
+        fr.raw[fr.frequency <= f_min] = gain_f_min
         if normalize:
             # Reduce by max gain to avoid clipping with 1 dB of headroom
             fr.raw -= np.max(fr.raw)
@@ -760,7 +772,7 @@ class FrequencyResponse:
         # Calculate response
         fr.frequency = np.append(fr.frequency, fs // 2)
         fr.raw = np.append(fr.raw, 0.0)
-        ir = firwin2(n*2, fr.frequency, fr.raw, fs=fs)
+        ir = firwin2(len(fr.frequency)*2, fr.frequency, fr.raw, fs=fs)
         return ir
 
     def write_readme(self,
