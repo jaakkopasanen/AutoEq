@@ -128,7 +128,7 @@ def main():
             os.makedirs(dir_path)
 
         # Plot
-        fr.plot_graph(show=False, file_path=os.path.join(inspection_dir, 'fr', name + '.png'))
+        fr.plot_graph(show=False, close=True, file_path=os.path.join(inspection_dir, 'fr', name + '.png'))
 
         # Write to CSV
         fr.write_to_csv(os.path.join(output_dir, name, name + '.csv'))

@@ -199,7 +199,7 @@ def main():
         fr.center()
 
         # Save inspection images
-        fr.plot_graph(show=False, file_path=os.path.join(inspection_dir, name + '.png'))
+        fr.plot_graph(show=False, close=True, file_path=os.path.join(inspection_dir, name + '.png'))
 
         # Create directory
         dir_path = os.path.join(output_dir, hp_type, name)

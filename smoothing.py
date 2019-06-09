@@ -11,11 +11,11 @@ from frequency_response import FrequencyResponse
 def main():
     for file_path in glob('results/innerfidelity/sbaf-serious/*/*.csv'):
         fr = FrequencyResponse.read_from_csv(file_path)
-        fr.smoothen()
+        fr.smoothen_fractional_octave()
 
         light = fr.copy()
         light.name = 'Light'
-        light.smoothen(
+        light.smoothen_fractional_octave(
             window_size=1 / 6,
             iterations=1,
             treble_f_lower=100,
@@ -26,25 +26,43 @@ def main():
 
         heavy = fr.copy()
         heavy.name = 'Heavy'
-        heavy.smoothen(
+        heavy.smoothen_fractional_octave(
             window_size=1 / 3,
             iterations=1,
             treble_f_lower=1000,
             treble_f_upper=6000,
-            treble_window_size=1 / 2,
-            treble_iterations=100
+            treble_window_size=1.3,
+            treble_iterations=1
         )
 
         combination = fr.copy()
         combination.name = 'Combination'
         combination.error = np.max(np.vstack([light.error_smoothed, heavy.error_smoothed]), axis=0)
-        combination.smoothen(
+        combination.smoothen_fractional_octave(
             window_size=1 / 3,
             iterations=1,
             treble_f_lower=100,
             treble_f_upper=10000,
             treble_window_size=1 / 3,
             treble_iterations=1
+        )
+
+        window = fr.copy()
+        window.name = 'Window'
+        window.smoothen_fractional_octave(
+            window_size=1.0,
+            iterations=1,
+            treble_window_size=1.0,
+            treble_iterations=1
+        )
+
+        iterations = fr.copy()
+        iterations.name = 'Iterations'
+        iterations.smoothen_fractional_octave(
+            window_size=1/3,
+            iterations=100,
+            treble_window_size=1/3,
+            treble_iterations=60
         )
 
         fig, ax = fr.plot_graph(
@@ -63,18 +81,22 @@ def main():
         legend = []
         ax.plot(fr.frequency, fr.error)
         legend.append('Raw error')
-        #ax.plot(fr.frequency, fr.error_smoothed)
-        #legend.append('Default smoothing')
-        #ax.plot(light.frequency, light.error_smoothed)
-        #legend.append('Light smoothing')
+        # ax.plot(fr.frequency, fr.error_smoothed)
+        # legend.append('Default smoothed error')
+        # ax.plot(light.frequency, light.error_smoothed)
+        # legend.append('Ligthly smoothed error)
         ax.plot(heavy.frequency, heavy.error_smoothed)
-        legend.append('Heavy smoothing')
+        legend.append('Heavily smoothed error')
         ax.plot(combination.frequency, combination.error_smoothed)
-        legend.append('Combination')
-        ax.plot(combination.frequency, -combination.error_smoothed)
-        legend.append('Equalization')
+        legend.append('Combination smoothed error')
+        # ax.plot(combination.frequency, -combination.error_smoothed)
+        # legend.append('Equalization')
         ax.plot(light.frequency, fr.error - combination.error_smoothed)
         legend.append('Equalized')
+        # ax.plot(window.frequency, window.error_smoothed)
+        # legend.append(window.name)
+        # ax.plot(iterations.frequency, iterations.error_smoothed)
+        # legend.append(iterations.name)
         ax.set_ylim([-20, 20])
 
         ax.legend(legend)

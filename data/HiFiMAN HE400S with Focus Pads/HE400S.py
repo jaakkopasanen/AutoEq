@@ -22,7 +22,7 @@ def main():
     _fr = FrequencyResponse(name='debug', frequency=stock.frequency, raw=base.raw, smoothed=diff.raw, equalization=fr.raw)
     _fr.plot_graph()
 
-    fr.smoothen(window_size=1 / 5, iterations=10, treble_window_size=1 / 2, treble_iterations=100)
+    fr.smoothen_fractional_octave(window_size=1 / 5, iterations=10, treble_window_size=1 / 2, treble_iterations=100)
 
 
     #stock.plot_graph()

@@ -62,7 +62,7 @@ def main():
     std = np.std(diffs, axis=0)
     diff = FrequencyResponse(name='Rtings Raw to Innerfidelity Raw', frequency=f, raw=diff)
     #diff.smoothen(window_size=1/7, iterations=10)
-    diff.smoothen(window_size=1/5, iterations=100)
+    diff.smoothen_fractional_octave(window_size=1 / 5, iterations=100)
     diff.raw = diff.smoothed
     diff.smoothed = np.array([])
 

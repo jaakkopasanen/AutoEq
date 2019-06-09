@@ -100,8 +100,7 @@ def main():
             os.makedirs(dir_path)
         fr.write_to_csv(os.path.join(dir_path, name + '.csv'))
         # Save inspection image
-        fr.plot_graph(show=False, file_path=os.path.join(DIR_PATH, 'inspection', name + '.png'))
-        plt.close()
+        fr.plot_graph(show=False, close=True, file_path=os.path.join(DIR_PATH, 'inspection', name + '.png'))
 
 
 if __name__ == '__main__':

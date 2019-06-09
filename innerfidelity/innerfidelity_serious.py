@@ -21,7 +21,7 @@ def main():
     plt.show()
 
     comp.write_to_csv('resources\innerfidelity_compensation_SBAF-Serious.csv')
-    comp.plot_graph(file_path='resources\innerfidelity_compensation_SBAF_Serious.png')
+    comp.plot_graph(show=False, close=True, file_path='resources\innerfidelity_compensation_SBAF_Serious.png')
 
 
 if __name__ == '__main__':

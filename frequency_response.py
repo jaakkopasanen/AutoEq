@@ -32,10 +32,14 @@ DEFAULT_TREBLE_F_LOWER = 6000.0
 DEFAULT_TREBLE_F_UPPER = 8000.0
 DEFAULT_TREBLE_MAX_GAIN = 0.0
 DEFAULT_TREBLE_GAIN_K = 1.0
-DEFAULT_SMOOTHING_WINDOW_SIZE = 1 / 5
-DEFAULT_SMOOTHING_ITERATIONS = 10
-DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 5
-DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 100
+
+DEFAULT_SMOOTHING_METHOD = 'max'
+DEFAULT_SMOOTHING_WINDOW_SIZE = 1 / 6
+DEFAULT_SMOOTHING_ITERATIONS = 1
+DEFAULT_TREBLE_SMOOTHING_F_LOWER = 100.0
+DEFAULT_TREBLE_SMOOTHING_F_UPPER = 10000.0
+DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 1 / 3
+DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 1
 DEFAULT_TILT = 0.0
 DEFAULT_FS = 44100
 DEFAULT_BIT_DEPTH = 16
@@ -307,7 +311,7 @@ class FrequencyResponse:
 
         # Smoothen heavily
         fr_target = FrequencyResponse(name='Filter Initialization', frequency=frequency, raw=target)
-        fr_target.smoothen(window_size=1 / 7, iterations=1000)
+        fr_target.smoothen_fractional_octave(window_size=1 / 7, iterations=1000)
 
         # Equalization target
         eq_target = tf.constant(target, name='eq_target', dtype='float32')
@@ -1028,7 +1032,7 @@ class FrequencyResponse:
         """Sets target and error curves."""
         # Copy and center compensation data
         compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
-        compensation.smoothen(
+        compensation.smoothen_fractional_octave(
             window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
             iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS
         )
@@ -1100,14 +1104,14 @@ class FrequencyResponse:
         a = a * -(a_normal - a_treble) + a_normal
         return a
 
-    def _smoothen_data(self,
-                       data,
-                       window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-                       iterations=DEFAULT_SMOOTHING_ITERATIONS,
-                       treble_window_size=None,
-                       treble_iterations=None,
-                       treble_f_lower=DEFAULT_TREBLE_F_LOWER,
-                       treble_f_upper=DEFAULT_TREBLE_F_UPPER):
+    def _smoothen_fractional_octave(self,
+                                    data,
+                                    window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
+                                    iterations=DEFAULT_SMOOTHING_ITERATIONS,
+                                    treble_window_size=None,
+                                    treble_iterations=None,
+                                    treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,
+                                    treble_f_upper=DEFAULT_TREBLE_SMOOTHING_F_UPPER):
         """Smooths data.
 
         Args:
@@ -1143,13 +1147,14 @@ class FrequencyResponse:
         k_normal = k_treble * -1 + 1
         return y_normal * k_normal + y_treble * k_treble
 
-    def smoothen(self,
-                 window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-                 iterations=DEFAULT_SMOOTHING_ITERATIONS,
-                 treble_window_size=None,
-                 treble_iterations=None,
-                 treble_f_lower=DEFAULT_TREBLE_F_LOWER,
-                 treble_f_upper=DEFAULT_TREBLE_F_UPPER):
+    def smoothen_fractional_octave(self,
+                                   method='max',
+                                   window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
+                                   iterations=DEFAULT_SMOOTHING_ITERATIONS,
+                                   treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
+                                   treble_iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS,
+                                   treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,
+                                   treble_f_upper=DEFAULT_TREBLE_SMOOTHING_F_UPPER):
         """Smooths data.
 
         Args:
@@ -1165,14 +1170,8 @@ class FrequencyResponse:
         if treble_f_upper <= treble_f_lower:
             raise ValueError('Upper transition boundary must be greater than lower boundary')
 
-        # Use normal filter parameters for treble filter if treble filter parameters are not given
-        if treble_window_size is None:
-            treble_window_size = window_size
-        if treble_iterations is None:
-            treble_iterations = iterations
-
         # Smoothen raw data
-        self.smoothed = self._smoothen_data(
+        self.smoothed = self._smoothen_fractional_octave(
             self.raw,
             window_size=window_size,
             iterations=iterations,
@@ -1184,7 +1183,7 @@ class FrequencyResponse:
 
         if len(self.error):
             # Smoothen error data
-            self.error_smoothed = self._smoothen_data(
+            self.error_smoothed = self._smoothen_fractional_octave(
                 self.error,
                 window_size=window_size,
                 iterations=iterations,
@@ -1193,6 +1192,63 @@ class FrequencyResponse:
                 treble_f_lower=treble_f_lower,
                 treble_f_upper=treble_f_upper
             )
+
+        # Equalization is affected by smoothing, reset equalization results
+        self.reset(
+            raw=False,
+            smoothed=False,
+            error=False,
+            error_smoothed=False,
+            equalization=True,
+            parametric_eq=True,
+            fixed_band_eq=True,
+            equalized_raw=True,
+            equalized_smoothed=True,
+            target=False
+        )
+
+    def smoothen_heavy_light(self):
+        """Smoothens data by combining light and heavy smoothing and taking maximum.
+
+        Returns:
+            None
+        """
+        light = self.copy()
+        light.name = 'Light'
+        light.smoothen_fractional_octave(
+            window_size=1 / 6,
+            iterations=1,
+            treble_f_lower=100,
+            treble_f_upper=10000,
+            treble_window_size=1 / 3,
+            treble_iterations=1
+        )
+
+        heavy = self.copy()
+        heavy.name = 'Heavy'
+        heavy.smoothen_fractional_octave(
+            window_size=1 / 3,
+            iterations=1,
+            treble_f_lower=1000,
+            treble_f_upper=6000,
+            treble_window_size=1.3,
+            treble_iterations=1
+        )
+
+        combination = self.copy()
+        combination.name = 'Combination'
+        combination.error = np.max(np.vstack([light.error_smoothed, heavy.error_smoothed]), axis=0)
+        combination.smoothen_fractional_octave(
+            window_size=1 / 3,
+            iterations=1,
+            treble_f_lower=100,
+            treble_f_upper=10000,
+            treble_window_size=1 / 3,
+            treble_iterations=1
+        )
+
+        self.smoothed = combination.smoothed.copy()
+        self.error_smoothed = combination.error_smoothed.copy()
 
         # Equalization is affected by smoothing, reset equalization results
         self.reset(
@@ -1306,10 +1362,11 @@ class FrequencyResponse:
                    a_min=None,
                    a_max=None,
                    color='black',
-                   close=True):
+                   close=False):
         """Plots frequency response graph."""
         if fig is None:
             fig, ax = plt.subplots()
+            fig.set_size_inches(12, 8)
         legend = []
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
@@ -1361,7 +1418,7 @@ class FrequencyResponse:
             im = im.convert('P', palette=Image.ADAPTIVE, colors=60)
             im.save(file_path, optimize=True)
         if show:
-            fig.show()
+            plt.show(fig)
         elif close:
             plt.close(fig)
         return fig, ax
@@ -1465,14 +1522,7 @@ class FrequencyResponse:
             )
 
         # Smooth data
-        self.smoothen(
-            window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-            iterations=DEFAULT_SMOOTHING_ITERATIONS,
-            treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
-            treble_iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS,
-            treble_f_lower=treble_f_lower,
-            treble_f_upper=treble_f_upper
-        )
+        self.smoothen_heavy_light()
 
         peq_filters = n_peq_filters = peq_max_gains = fbeq_filters = n_fbeq_filters = nfbeq_max_gains = None
         # Equalize
@@ -1639,12 +1689,13 @@ class FrequencyResponse:
 
                 # Write results to CSV file
                 fr.write_to_csv(output_file_path)
+
                 # Write plots to file and optionally display them
-                fig, ax = fr.plot_graph(
+                fr.plot_graph(
                     show=show_plot,
+                    close=not show_plot,
                     file_path=output_file_path.replace('.csv', '.png'),
                 )
-                plt.close(fig)
 
                 # Write README.md
                 _readme_path = os.path.join(output_dir_path, 'README.md')
@@ -1655,10 +1706,8 @@ class FrequencyResponse:
                 )
 
             elif show_plot:
-                fig, ax = fr.plot_graph(show=show_plot)
-                plt.close(fig)
+                fr.plot_graph(show=True, close=False)
 
-            print(fr.name)
             n += 1
         print('Processed {n} headphones in {t:.0f}s'.format(n=n, t=time()-start_time))
 
@@ -1747,11 +1796,11 @@ class FrequencyResponse:
                                      'maximum positive gain. Defaults to {}.'.format(DEFAULT_MAX_GAIN))
         arg_parser.add_argument('--treble_f_lower', type=float, default=DEFAULT_TREBLE_F_LOWER,
                                 help='Lower bound for transition region between normal and treble frequencies. Treble '
-                                     'frequencies can have different smoothing, max gain and gain K. Defaults to '
+                                     'frequencies can have different max gain and gain K. Defaults to '
                                      '{}.'.format(DEFAULT_TREBLE_F_LOWER))
         arg_parser.add_argument('--treble_f_upper', type=float, default=DEFAULT_TREBLE_F_UPPER,
                                 help='Upper bound for transition region between normal and treble frequencies. Treble '
-                                     'frequencies can have different smoothing, max gain and gain K. Defaults to '
+                                     'frequencies can have different max gain and gain K. Defaults to '
                                      '{}.'.format(DEFAULT_TREBLE_F_UPPER))
         arg_parser.add_argument('--treble_max_gain', type=float, default=DEFAULT_TREBLE_MAX_GAIN,
                                 help='Maximum positive gain for equalization in treble region. Defaults to '

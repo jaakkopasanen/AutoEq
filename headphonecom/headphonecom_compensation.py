@@ -30,7 +30,7 @@ def main():
     diffs = np.vstack(diffs)
     diff = np.mean(diffs, axis=0)
     diff = FrequencyResponse(name='Headphone.com Compensation', frequency=f, raw=diff)
-    diff.smoothen(window_size=1 / 9, iterations=10)
+    diff.smoothen_fractional_octave(window_size=1 / 9, iterations=10)
     diff.raw = diff.smoothed
     diff.smoothed = np.array([])
 
@@ -46,7 +46,7 @@ def main():
     plt.show()
 
     diff.write_to_csv('headphonecom_compensation.csv')
-    diff.plot_graph(f_min=10, f_max=20000, file_path='headphonecom_compensation.png')
+    diff.plot_graph(show=True, f_min=10, f_max=20000, file_path='headphonecom_compensation.png')
 
 
 if __name__ == '__main__':
