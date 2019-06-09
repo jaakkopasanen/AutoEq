@@ -82,6 +82,22 @@ class FrequencyResponse:
         self.target = self._init_data(target)
         self._sort()
 
+    def copy(self, name=None):
+        return FrequencyResponse(
+            name=self.name + '_copy' if name is None else name,
+            frequency=self._init_data(self.frequency),
+            raw=self._init_data(self.raw),
+            error=self._init_data(self.error),
+            smoothed=self._init_data(self.smoothed),
+            error_smoothed=self._init_data(self.error_smoothed),
+            equalization=self._init_data(self.equalization),
+            parametric_eq=self._init_data(self.parametric_eq),
+            fixed_band_eq=self._init_data(self.fixed_band_eq),
+            equalized_raw=self._init_data(self.equalized_raw),
+            equalized_smoothed=self._init_data(self.equalized_smoothed),
+            target=self._init_data(self.target)
+        )
+
     @staticmethod
     def _init_data(data):
         """Initializes data to a clean format. If None is passed and empty array is created. Non-numbers are removed."""
@@ -131,19 +147,31 @@ class FrequencyResponse:
               equalized_smoothed=True,
               target=True):
         """Resets data."""
-        if (
-                (raw and len(self.raw)) or
-                (smoothed and len(self.smoothed)) or
-                (error and len(self.error)) or
-                (error_smoothed and len(self.error_smoothed)) or
-                (equalization and len(self.equalization)) or
-                (parametric_eq and len(self.parametric_eq)) or
-                (fixed_band_eq and len(self.fixed_band_eq)) or
-                (equalized_raw and len(self.equalized_raw)) or
-                (equalized_smoothed and len(self.equalized_smoothed)) or
-                (target and len(self.target))
-        ):
-            warn('Resetting data, existing results will be affected!')
+        reset_data = []
+        if raw and len(self.raw):
+            reset_data.append('raw')
+        if smoothed and len(self.smoothed):
+            reset_data.append('smoothed')
+        if error and len(self.error):
+            reset_data.append('error')
+        if error_smoothed and len(self.error_smoothed):
+            reset_data.append('error_smoothed')
+        if equalization and len(self.equalization):
+            reset_data.append('equalization')
+        if parametric_eq and len(self.parametric_eq):
+            reset_data.append('parametric_eq')
+        if fixed_band_eq and len(self.fixed_band_eq):
+            reset_data.append('fixed_band_eq')
+        if equalized_raw and len(self.equalized_raw):
+            reset_data.append('equalized_raw')
+        if equalized_smoothed and len(self.equalized_smoothed):
+            reset_data.append('equalized_smoothed')
+        if target and len(self.target):
+            reset_data.append('target')
+        if len(reset_data):
+            warn('Resetting data of "{}". These need to be regenerated if they are still needed!'.format(
+                '", "'.join(reset_data)
+            ))
         if raw:
             self.raw = self._init_data(None)
         if smoothed:
@@ -180,8 +208,9 @@ class FrequencyResponse:
             ))
         frequency = list(df['frequency'])
         raw = list(df['raw']) if 'raw' in df else None
-        error = list(df['error']) if 'error' in df else None
         smoothed = list(df['smoothed']) if 'smoothed' in df else None
+        error = list(df['error']) if 'error' in df else None
+        error_smoothed = list(df['error_smoothed']) if 'error_smoothed' in df else None
         equalization = list(df['equalization']) if 'equalization' in df else None
         parametric_eq = list(df['parametric_eq']) if 'parametric_eq' in df else None
         equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
@@ -193,8 +222,9 @@ class FrequencyResponse:
             name=name,
             frequency=frequency,
             raw=raw,
-            error=error,
             smoothed=smoothed,
+            error=error,
+            error_smoothed=error_smoothed,
             equalization=equalization,
             parametric_eq=parametric_eq,
             equalized_raw=equalized_raw,
@@ -1085,7 +1115,7 @@ class FrequencyResponse:
             # Savgol filter uses array indexing which is not future proof, ignoring the warning and trusting that this
             # will be fixed in the future release
             warnings.simplefilter("ignore")
-            for _ in range(iterations):
+            for i in range(iterations):
                 y_normal = savgol_filter(y_normal, self._window_size(window_size), 2)
 
             # Treble filter
@@ -1269,45 +1299,45 @@ class FrequencyResponse:
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
         if target and len(self.target):
-            plt.plot(self.frequency, self.target, linewidth=5, color='lightblue')
+            ax.plot(self.frequency, self.target, linewidth=5, color='lightblue')
             legend.append('Target')
         if smoothed and len(self.smoothed):
-            plt.plot(self.frequency, self.smoothed, linewidth=5, color='lightgrey')
+            ax.plot(self.frequency, self.smoothed, linewidth=5, color='lightgrey')
             legend.append('Raw Smoothed')
         if error_smoothed and len(self.error_smoothed):
-            plt.plot(self.frequency, self.error_smoothed, linewidth=5, color='pink')
+            ax.plot(self.frequency, self.error_smoothed, linewidth=5, color='pink')
             legend.append('Error Smoothed')
         if raw and len(self.raw):
-            plt.plot(self.frequency, self.raw, linewidth=1, color=color)
+            ax.plot(self.frequency, self.raw, linewidth=1, color=color)
             legend.append('Raw')
         if error and len(self.error):
-            plt.plot(self.frequency, self.error, linewidth=1, color='red')
+            ax.plot(self.frequency, self.error, linewidth=1, color='red')
             legend.append('Error')
         if parametric_eq and len(self.parametric_eq):
-            plt.plot(self.frequency, self.parametric_eq, linewidth=5, color='lightgreen')
+            ax.plot(self.frequency, self.parametric_eq, linewidth=5, color='lightgreen')
             legend.append('Parametric Eq')
         if fixed_band_eq and len(self.fixed_band_eq):
-            plt.plot(self.frequency, self.fixed_band_eq, linewidth=5, color='limegreen')
+            ax.plot(self.frequency, self.fixed_band_eq, linewidth=5, color='limegreen')
             legend.append('Fixed Band Eq')
         if equalization and len(self.equalization):
-            plt.plot(self.frequency, self.equalization, linewidth=1, color='darkgreen')
+            ax.plot(self.frequency, self.equalization, linewidth=1, color='darkgreen')
             legend.append('Equalization')
         if equalized and len(self.equalized_raw) and not len(self.equalized_smoothed):
-            plt.plot(self.frequency, self.equalized_raw, linewidth=1, color='magenta')
+            ax.plot(self.frequency, self.equalized_raw, linewidth=1, color='magenta')
             legend.append('Equalized raw')
         if equalized and len(self.equalized_smoothed):
-            plt.plot(self.frequency, self.equalized_smoothed, linewidth=1, color='blue')
+            ax.plot(self.frequency, self.equalized_smoothed, linewidth=1, color='blue')
             legend.append('Equalized smoothed')
 
-        plt.xlabel('Frequency (Hz)')
-        plt.semilogx()
-        plt.xlim([f_min, f_max])
-        plt.ylabel('Amplitude (dBr)')
-        plt.ylim([a_min, a_max])
-        plt.title(self.name)
-        plt.legend(legend, fontsize=8)
-        plt.grid(True, which='major')
-        plt.grid(True, which='minor')
+        ax.set_xlabel('Frequency (Hz)')
+        ax.semilogx()
+        ax.set_xlim([f_min, f_max])
+        ax.set_ylabel('Amplitude (dBr)')
+        ax.set_ylim([a_min, a_max])
+        ax.set_title(self.name)
+        ax.legend(legend, fontsize=8)
+        ax.grid(True, which='major')
+        ax.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
         if file_path is not None:
             file_path = os.path.abspath(file_path)
@@ -1316,9 +1346,9 @@ class FrequencyResponse:
             im = im.convert('P', palette=Image.ADAPTIVE, colors=60)
             im.save(file_path, optimize=True)
         if show:
-            plt.show()
+            fig.show()
         elif close:
-            plt.close()
+            plt.close(fig)
         return fig, ax
 
     def process(self,
