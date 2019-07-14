@@ -978,7 +978,7 @@ class FrequencyResponse:
         Returns:
             Gain shifted
         """
-        equal_energy_fr = self.copy()
+        equal_energy_fr = FrequencyResponse(name='equal_energy', frequency=self.frequency.copy(), raw=self.raw.copy())
         equal_energy_fr.interpolate()
         interpolator = InterpolatedUnivariateSpline(np.log10(equal_energy_fr.frequency), equal_energy_fr.raw, k=1)
         if type(frequency) in [list, np.ndarray] and len(frequency) > 1:
@@ -1319,8 +1319,7 @@ class FrequencyResponse:
 
         if None in error or None in self.equalization or None in self.equalized_raw:
             # Must not contain None values
-            warn('None values detected during equalization, interpolating data with default parameters.')
-            self.interpolate()
+            raise ValueError('None values detected during equalization, interpolating data with default parameters.')
 
         # Invert with max gain clipping
         previous_clipped = False
