@@ -742,15 +742,14 @@ class FrequencyResponse:
             # Reduce by max gain to avoid clipping with 1 dB of headroom
             fr.raw -= np.max(fr.raw)
             fr.raw -= 0.5
-        # Minimum phase transformation halves dB gain
-        # Maybe because it's only half long filter?
+        # Minimum phase transformation by scipy's homomorphic method halves dB gain
         fr.raw *= 2
         # Convert amplitude to linear scale
         fr.raw = 10**(fr.raw / 20)
         # Calculate response
         fr.frequency = np.append(fr.frequency, fs // 2)
         fr.raw = np.append(fr.raw, 0.0)
-        ir = firwin2(len(fr.frequency)*2, fr.frequency, fr.raw, fs=fs)
+        ir = firwin2(len(fr.frequency)*2+1, fr.frequency, fr.raw, fs=fs)
         # Convert to minimum phase
         ir = minimum_phase(ir)
         return ir

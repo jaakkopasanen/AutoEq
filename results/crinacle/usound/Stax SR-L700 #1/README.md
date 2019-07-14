@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.2dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 33 Hz    | 0.56 | 6.6 dB  |
-| Peaking | 1390 Hz  | 0.75 | -5.6 dB |
-| Peaking | 1942 Hz  | 1.47 | 5.2 dB  |
-| Peaking | 3983 Hz  | 2.74 | 7.2 dB  |
-| Peaking | 19543 Hz | 0.45 | -8.8 dB |
-| Peaking | 86 Hz    | 4.18 | -0.4 dB |
-| Peaking | 4643 Hz  | 8.09 | 1.9 dB  |
-| Peaking | 5775 Hz  | 7.17 | -3.3 dB |
-| Peaking | 9130 Hz  | 6.54 | -3.0 dB |
-| Peaking | 11473 Hz | 3.14 | 2.0 dB  |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 33 Hz    | 0.58 | 6.6 dB   |
+| Peaking | 1058 Hz  | 1.24 | -4.1 dB  |
+| Peaking | 4326 Hz  | 1.36 | 10.7 dB  |
+| Peaking | 5448 Hz  | 1.25 | -7.1 dB  |
+| Peaking | 19573 Hz | 0.52 | -10.7 dB |
+| Peaking | 2014 Hz  | 4.29 | 1.4 dB   |
+| Peaking | 2794 Hz  | 5.93 | -1.4 dB  |
+| Peaking | 9175 Hz  | 5.66 | -4.2 dB  |
+| Peaking | 12281 Hz | 1.12 | 2.9 dB   |
+| Peaking | 13859 Hz | 3.67 | -4.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.4 dB |
 | Peaking | 1000 Hz  | 1.41 | -4.1 dB |
 | Peaking | 2000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 4000 Hz  | 1.41 | 5.4 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.0 dB |
-| Peaking | 16000 Hz | 1.41 | -6.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.8 dB |
+| Peaking | 16000 Hz | 1.41 | -6.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Stax%20SR-L700%20#1/Stax%20SR-L700%20#1.png)

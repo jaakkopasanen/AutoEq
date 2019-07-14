@@ -110,5 +110,6 @@ my_results/
 */pdf
 rtings/raw_data/
 crinacle/data/
+crinacle/data.bak/
 crinacle/raw_data/
 results/crinacle/*/*/*.csv

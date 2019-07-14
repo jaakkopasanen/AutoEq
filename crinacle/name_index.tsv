@@ -39,11 +39,11 @@ A6t M20	64 Audio A6t M20
 A71	Fidue A71	
 A91	Fidue A91 Sirius	
 Adagio 3	Final Audio III	
-ADX5000 #1	Audio Technica ATH-ADX5000 #1	onear
-ADX5000 #2	Audio Technica ATH-ADX5000 #2	onear
-ADX5000 #3	Audio Technica ATH-ADX5000 #3	onear
-ADX5000 #4	Audio Technica ATH-ADX5000 #4	onear
-ADX5000 #5	Audio Technica ATH-ADX5000 #5	onear
+ADX5000 #1	Audio-Technica ATH-ADX5000 #1	onear
+ADX5000 #2	Audio-Technica ATH-ADX5000 #2	onear
+ADX5000 #3	Audio-Technica ATH-ADX5000 #3	onear
+ADX5000 #4	Audio-Technica ATH-ADX5000 #4	onear
+ADX5000 #5	Audio-Technica ATH-ADX5000 #5	onear
 Aether Bass	Lime Ears Aether Bass	
 Aether	Lime Ears Aether	
 AG2	Audio Genetic AG2	
@@ -80,7 +80,7 @@ Ares	VSonic Ares
 Artemis	Elysian Artemis	
 AS10	KZ AS10	
 Atlantis	NocturnaL Audio Atlantis	
-Atlas	Campfire Atlas	
+Atlas	Campfire Audio Atlas sample 1
 Aurora	Symphonium Audio Aurora	
 Aurvana Trio	Creative Aurvana Trio	
 Avalon	NocturnaL Audio Avalon	
@@ -175,7 +175,7 @@ E4000	Final Audio E4000 sample 1
 E4000 S2	Final Audio E4000 sample 2	
 E5000	Final Audio E5000 sample 1	
 E5000 S2	Final Audio E5000 sample 2	
-E70	Audio Technica ATH-E70	
+E70	Audio-Technica ATH-E70	
 E900	Onkyo E900	
 ED16	KZ ED16	
 EDC3	Massdrop x NuForce EDC3	
@@ -239,7 +239,7 @@ FD01 Brass
 FD02	JVC HA-FD02	
 Fealty	Dita Fealty	
 FH1	FiiO FH1	
-FH5	FiiO FH5	
+FH5	FiiO FH5 sample 1
 FIBAE 1	Custom Art FIBAE 1	
 FIBAE 2	Custom Art FIBAE 2	
 FIBAE 3	Custom Art FIBAE 3	
@@ -341,9 +341,9 @@ IE80S	Sennheiser IE80S
 IE80S max	Sennheiser IE80S Max	
 IE80S Max	Sennheiser IE80S Max	
 iGE	Grado iGE	
-IM01	Audio Technica ATH-IM01	
-IM02	Audio Technica ATH-IM02	
-IM03	Audio Technica ATH-IM03	
+IM01	Audio-Technica ATH-IM01	
+IM02	Audio-Technica ATH-IM02	
+IM03	Audio-Technica ATH-IM03	
 In Air		
 iSine 10	Audeze iSine 10	
 iSIne 10	Audeze iSine 10	
@@ -387,7 +387,7 @@ KL-Trio Min	Kumitate KL-Trio Min
 KL-Trio Min Test	Kumitate KL-Trio Min Test	ignore
 KL-Unknown Max Treble		
 KL-Unknown Min Treble		
-KSE1200	Shure KSE1200	
+KSE1200	Shure KSE1200 sample 1
 L700 #1	Stax SR-L700 #1	
 L700 #2	Stax SR-L700 #2	
 L700 #3	Stax SR-L700 #3	
@@ -406,10 +406,10 @@ Legend Omega	EarWerkz Legend Omega
 Legend X	Empire Ears Legend X sample 1	
 Legend X S2	Empire Ears Legend X sample 2	
 Live S2		
-LS200	Audio Technica ATH-LS200	
-LS300	Audio Technica ATH-LS300	
-LS400	Audio Technica ATH-LS400	
-LS50	Audio Technica ATH-LS50	
+LS200	Audio-Technica ATH-LS200	
+LS300	Audio-Technica ATH-LS300	
+LS400	Audio-Technica ATH-LS400	
+LS50	Audio-Technica ATH-LS50	
 LSX S2	Lark Studio LSX	
 M3	Advanced M3	
 M4	Advanced M4	
@@ -694,3 +694,74 @@ ZS5v2	KZ ZS5v2
 ZS6	KZ ZS6	
 ZSR	KZ ZSR	
 ZST	KZ ZST	
+A12t C	64 Audio A12t custom
+A3H 2019	AAW A3H 2019
+ACME 8	Fearless Audio ACME 8
+ASH	AAW ASH
+Atlas S2	Campfire Audio Atlas sample 2
+AWK-009	Seahf AWK-009
+AXH 2019	AAW AXH 2019
+BIE	Venture Electronics Bonus In-Ears (BIE)
+Big Bus	Big Bus Earbuds
+Canary	AAW Canary
+Crescent	Moondrop Crescent
+Diana	JH Audio Diana
+DM7	BGVP DM7
+DMS	BGVP DMS
+DT6	Senfer DT6
+Duke C	Venture Electronics Duke custom
+EK3 1
+EK3 2
+EK3 All
+EK3	Simgot EK3
+Equinox	Campfire Equinox
+ER2XR	Etymotic ER2XR
+ER2XR TF
+FA1	FiiO FA1
+FA7	FiiO FA7
+FD01 Modded	JVC FD01 modded
+FH5 S2	FiiO FH5 sample 2
+FH7	FiiO FH7
+FIBAE 4	Custom Art FIBAE 4
+FIBAE 7	Custom Art FIBAE 7
+Fusion itsfitlabs
+Fusion	Itsfit Lab Fusion
+Galaxy Buds	Samsung Galaxy Buds
+Hyper S 12	Fearless Audio HyperS 12
+I8	I-INTO i8
+IDUN Deluxe	Kinera IDUN Deluxe
+IE40 Pro	Sennheiser IE40 Pro
+IE400 Pro	Sennheiser IE400 Pro
+IE500 Pro	Sennheiser IE500 Pro
+IO	Campfire Audio IO sample 1
+IO S2	Campfire Audio IO sample 2
+Kanas Pro	Moondrop Kanas Pro
+KS3	Alpha & Delta KS3
+KSE1200 S2	Shure KSE1200 sample 2
+M2 FiR	Fir Audio M2
+M3 FiR	Fir Audio M3
+M4 FiR	Fir Audio M4
+M5	FiR Audio M5
+MG5HX	Future Sonics MG5HX
+Mockingbird	AAW Mockingbird
+P1 (Front vent sealed)	Tin Audio P1 (front vent sealed)
+P1	Tin Audio P1
+Phantom S3	Empire Ears Phantom sample 3	ignore
+Phantom X	Empire Ears Phantom X
+Polaris V2 S2	Campfire Audio Polaris V2
+R3 C
+R3
+Solaris S1	Campfire Audio Solaris sample 1	ignore
+TD1	Tiandirenhe TD1
+TP10	Tripowin TP10
+Tzar 350	Heir Audio Tzar 350
+VE3.2 C	Vision Ears VE 3.2 custom
+VE8 C S2	Vision Ears VE 8 custom
+Viento Bass	Hidition Viento Bass
+Viento Bass Mids	Hidition Viento Bass Mids
+Viento	Hidition Viento
+Viento Mids	Hidition Viento Mids
+Viento-A C
+Violet	Hidition Violet
+VS7	VSonic VS7
+ZS10 Pro	KZ ZS10 Pro

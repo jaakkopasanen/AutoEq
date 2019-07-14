@@ -18,7 +18,8 @@ const ignore = [
 const manufacturer_replacements = [
     ['Mee Audio', 'MEE Audio'],
     ['1More', '1MORE'],
-    ['Knowledge Zenith', 'KZ']
+    ['Knowledge Zenith', 'KZ'],
+    ['Audio Technica', 'Audio-Technica']
 ];
 
 const model_replacements = [
