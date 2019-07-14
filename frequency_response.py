@@ -870,7 +870,7 @@ class FrequencyResponse:
 
         # Add fixed band eq
         fixed_band_eq_path = os.path.join(dir_path, model + ' FixedBandEQ.txt')
-        if os.path.isfile(fixed_band_eq_path) and self.parametric_eq is not None and len(self.parametric_eq):
+        if os.path.isfile(fixed_band_eq_path) and self.fixed_band_eq is not None and len(self.fixed_band_eq):
             preamp = np.min([0.0, float(-np.max(self.fixed_band_eq))]) - 0.5
 
             # Read Parametric eq
@@ -968,15 +968,40 @@ class FrequencyResponse:
         # Everything but raw data is affected by interpolating, reset them
         self.reset(raw=False)
 
-    def center(self):
-        """Removed bias from frequency response."""
-        interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=1)
-        diff = interpolator(np.log10(1000))
+    def center(self, frequency=1000):
+        """Removed bias from frequency response.
+
+        Args:
+            frequency: Frequency which is set to 0 dB. If this is a list with two values then an average between the two
+                       frequencies is set to 0 dB.
+
+        Returns:
+            Gain shifted
+        """
+        equal_energy_fr = self.copy()
+        equal_energy_fr.interpolate()
+        interpolator = InterpolatedUnivariateSpline(np.log10(equal_energy_fr.frequency), equal_energy_fr.raw, k=1)
+        if type(frequency) in [list, np.ndarray] and len(frequency) > 1:
+            # Use the average of the gain values between the given frequencies as the difference to be subtracted
+            diff = np.mean(equal_energy_fr.raw[np.logical_and(
+                equal_energy_fr.frequency >= frequency[0],
+                equal_energy_fr.frequency <= frequency[1]
+            )])
+        else:
+            if type(frequency) in [list, np.ndarray]:
+                # List or array with only one element
+                frequency = frequency[0]
+            # Use the gain value at the given frequency as the difference to be subtracted
+            diff = interpolator(np.log10(frequency))
+
         self.raw -= diff
         if len(self.smoothed):
             self.smoothed -= diff
+
         # Everything but raw, smoothed and target is affected by centering, reset them
         self.reset(raw=False, smoothed=False, target=False)
+
+        return -diff
 
     def _tilt(self, tilt=DEFAULT_TILT):
         """Creates a tilt for equalization.
@@ -1478,10 +1503,27 @@ class FrequencyResponse:
         """
         if parametric_eq and not equalize:
             raise ValueError('equalize must be True when parametric_eq is True.')
+
+        if fixed_band_eq:
+            if fc is not None:
+                if q is None:
+                    raise ValueError('q must be given when fc is give.')
+                # Center frequencies are given but Q is a single value
+                # Repeat Q to length of Fc
+                if type(q) in [list, np.ndarray]:
+                    if len(q) == 1:
+                        q = np.repeat(q[0], len(fc))
+                    elif len(q) != len(fc):
+                        raise ValueError('q must have one elemet or the same number of elements as fc.')
+                elif type(q) not in [list, np.ndarray]:
+                    q = np.repeat(q, len(fc))
+
         if ten_band_eq:
+            # Ten band eq is a shortcut for setting Fc and Q values to standard 10-band equalizer filters parameters
             fixed_band_eq = True
             fc = np.array([31.25, 62.5, 125, 250, 500, 1000, 2000, 4000, 8000, 16000], dtype='float32')
             q = np.ones(10, dtype='float32') * np.sqrt(2)
+
         if fixed_band_eq and not equalize:
             raise ValueError('equalize must be True when fixed_band_eq or ten_band_eq is True.')
 

@@ -27,12 +27,14 @@ def main():
         fr.raw = np.array([])
 
         mp = fr.minimum_phase_impulse_response(fs=fs, f_res=f_res, normalize=False)
+        mp = np.concatenate([mp, np.zeros(fs//10 - len(mp))])
         f_mp, mp = fft(mp, fs)
         f_mp[0] = 0.1
         mp = FrequencyResponse(name='Minimum phase', frequency=f_mp, raw=mp)
         mp.center()
 
         lp = fr.linear_phase_impulse_response(fs=fs, f_res=f_res, normalize=False)
+        lp = np.concatenate([lp, np.zeros(fs//10 - len(lp))])
         f_lp, lp = fft(lp, fs)
         f_lp[0] = 0.1
         lp = FrequencyResponse(name='Linear phase', frequency=f_lp, raw=lp)
@@ -46,7 +48,7 @@ def main():
         plt.legend(['Raw', 'Minimum phase', 'Linear phase'])
         plt.semilogx()
         plt.xlabel('Frequency (Hz)')
-        plt.xlim([0.01, 20000])
+        plt.xlim([1, 20000])
         plt.ylabel('Gain (dBr)')
         plt.ylim([-20, 20])
         plt.title(fr.name)

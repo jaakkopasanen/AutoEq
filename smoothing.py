@@ -9,6 +9,7 @@ from frequency_response import FrequencyResponse
 
 
 def main():
+    os.makedirs('smoothing', exist_ok=True)
     for file_path in glob('results/innerfidelity/sbaf-serious/*/*.csv'):
         fr = FrequencyResponse.read_from_csv(file_path)
         fr.smoothen_fractional_octave()
@@ -100,9 +101,9 @@ def main():
         ax.set_ylim([-20, 20])
 
         ax.legend(legend)
-        plt.show(fig)
-        #fig.savefig(os.path.join('smoothing', fr.name + '.png'), dpi=150)
-        #plt.close(fig)
+        #plt.show(fig)
+        fig.savefig(os.path.join('smoothing', fr.name + '.png'), dpi=150)
+        plt.close(fig)
 
 
 if __name__ == '__main__':
