@@ -328,10 +328,9 @@ venv\Scripts\activate
 ```
 usage: frequency_response.py [-h] --input_dir INPUT_DIR
                              [--output_dir OUTPUT_DIR] [--standardize_input]
-                             [--new_only] [--calibration CALIBRATION]
-                             [--compensation COMPENSATION] [--equalize]
-                             [--parametric_eq] [--fixed_band_eq] [--fc FC]
-                             [--q Q] [--ten_band_eq]
+                             [--new_only] [--compensation COMPENSATION]
+                             [--equalize] [--parametric_eq] [--fixed_band_eq]
+                             [--fc FC] [--q Q] [--ten_band_eq]
                              [--max_filters MAX_FILTERS] [--fs FS]
                              [--bit_depth BIT_DEPTH] [--phase PHASE]
                              [--f_res F_RES] [--bass_boost BASS_BOOST]
@@ -356,11 +355,6 @@ optional arguments:
                         bias?
   --new_only            Only process input files which don't have results in
                         output directory.
-  --calibration CALIBRATION
-                        File path to CSV containing calibration data. Needed
-                        when using target responses not developed for the
-                        source measurement system. See `calibration`
-                        directory.
   --compensation COMPENSATION
                         File path to CSV containing compensation (target)
                         curve. Compensation is necessary when equalizing
@@ -375,7 +369,8 @@ optional arguments:
                         exists, no value needed.
   --fc FC               Comma separated list of center frequencies for fixed
                         band eq.
-  --q Q                 Comma separated list of Q values for fixed band eq.
+  --q Q                 Comma separated list of Q values for fixed band eq. If
+                        only one value is passed it is used for all bands.
   --ten_band_eq         Shortcut parameter for activating standard ten band eq
                         optimization.
   --max_filters MAX_FILTERS
@@ -436,13 +431,11 @@ optional arguments:
   --treble_f_lower TREBLE_F_LOWER
                         Lower bound for transition region between normal and
                         treble frequencies. Treble frequencies can have
-                        different smoothing, max gain and gain K. Defaults to
-                        6000.0.
+                        different max gain and gain K. Defaults to 6000.0.
   --treble_f_upper TREBLE_F_UPPER
                         Upper bound for transition region between normal and
                         treble frequencies. Treble frequencies can have
-                        different smoothing, max gain and gain K. Defaults to
-                        8000.0.
+                        different max gain and gain K. Defaults to 8000.0.
   --treble_max_gain TREBLE_MAX_GAIN
                         Maximum positive gain for equalization in treble
                         region. Defaults to 0.0.
