@@ -77,7 +77,7 @@ def main():
     lines.extend(get_lines(glob(os.path.abspath(os.path.join('custom', '*'))), 'AutoEQ'))
 
     with open(os.path.join(DIR_PATH, 'INDEX.md'), 'w') as f:
-        lines = sorted(lines)
+        lines = sorted(lines, key=lambda s: s.lower())
         s = '''# Index
         This is a list of all equalization profiles. Target is in parentheses if there are results with multiple targets
         from the same source.

@@ -63,7 +63,7 @@ def main():
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'custom', '*')))))
 
     with open(os.path.join(DIR_PATH, 'README.md'), 'w') as f:
-        keys = sorted(urls.keys())
+        keys = sorted(urls.keys(), key=lambda s: s.lower())
         s = '''# Recommended Results
         This is a list of recommended results. Results for other measurements and target curves are available for many
         headphones, these can be found in the
