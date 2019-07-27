@@ -540,14 +540,14 @@ class FrequencyResponse:
         train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(loss)
 
         # Optimization loop
-        t = time()
         min_loss = None
         threshold = 0.01
-        momentum = 300
+        momentum = 100
         bad_steps = 0
 
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
+            t = time()
             while time() - t < max_time:
                 step_loss, _ = sess.run([loss, train_step], feed_dict={learning_rate: learning_rate_value})
                 if min_loss is None or step_loss < min_loss:
@@ -601,7 +601,6 @@ class FrequencyResponse:
 
         coeffs_a = np.hstack((np.tile(a0, a1.shape), a1, a2))
         coeffs_b = np.hstack((b0, b1, b2))
-
         return _eq, rmse, np.squeeze(_fc, axis=1), np.squeeze(_Q, axis=1), np.squeeze(_gain, axis=1), coeffs_a, coeffs_b
 
     def optimize_parametric_eq(self, max_filters=None, fs=DEFAULT_FS):
@@ -1502,25 +1501,24 @@ class FrequencyResponse:
         if parametric_eq and not equalize:
             raise ValueError('equalize must be True when parametric_eq is True.')
 
-        if fixed_band_eq:
-            if fc is not None:
-                if q is None:
-                    raise ValueError('q must be given when fc is give.')
-                # Center frequencies are given but Q is a single value
-                # Repeat Q to length of Fc
-                if type(q) in [list, np.ndarray]:
-                    if len(q) == 1:
-                        q = np.repeat(q[0], len(fc))
-                    elif len(q) != len(fc):
-                        raise ValueError('q must have one elemet or the same number of elements as fc.')
-                elif type(q) not in [list, np.ndarray]:
-                    q = np.repeat(q, len(fc))
-
         if ten_band_eq:
             # Ten band eq is a shortcut for setting Fc and Q values to standard 10-band equalizer filters parameters
             fixed_band_eq = True
             fc = np.array([31.25, 62.5, 125, 250, 500, 1000, 2000, 4000, 8000, 16000], dtype='float32')
             q = np.ones(10, dtype='float32') * np.sqrt(2)
+
+        if fixed_band_eq:
+            if fc is None or q is None:
+                raise ValueError('"fc" and "q" must be given when "fixed_band_eq" is given.')
+            # Center frequencies are given but Q is a single value
+            # Repeat Q to length of Fc
+            if type(q) in [list, np.ndarray]:
+                if len(q) == 1:
+                    q = np.repeat(q[0], len(fc))
+                elif len(q) != len(fc):
+                    raise ValueError('q must have one elemet or the same number of elements as fc.')
+            elif type(q) not in [list, np.ndarray]:
+                q = np.repeat(q, len(fc))
 
         if fixed_band_eq and not equalize:
             raise ValueError('equalize must be True when fixed_band_eq or ten_band_eq is True.')
@@ -1749,7 +1747,7 @@ class FrequencyResponse:
                 fr.plot_graph(show=True, close=False)
 
             n += 1
-        print('Processed {n} headphones in {t:.0f}s'.format(n=n, t=time()-start_time))
+        print('Processed {n} headphones in {t:.1f}s'.format(n=n, t=time()-start_time))
 
     @staticmethod
     def cli_args():
