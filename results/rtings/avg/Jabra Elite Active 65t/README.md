@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.6dB**.
+When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 19 Hz    | 1.82 | 5.6 dB  |
-| Peaking | 117 Hz   | 0.45 | -2.9 dB |
-| Peaking | 706 Hz   | 1.53 | 3.7 dB  |
-| Peaking | 6612 Hz  | 4.74 | 4.5 dB  |
-| Peaking | 10255 Hz | 2.79 | -6.9 dB |
-| Peaking | 2151 Hz  | 2.65 | -1.4 dB |
-| Peaking | 3338 Hz  | 1.7  | 2.0 dB  |
-| Peaking | 4940 Hz  | 4.94 | -1.8 dB |
-| Peaking | 13493 Hz | 3.03 | 1.3 dB  |
-| Peaking | 17824 Hz | 2.48 | -3.8 dB |
+| Peaking | 20 Hz    | 1.84 | 5.5 dB  |
+| Peaking | 116 Hz   | 0.44 | -2.9 dB |
+| Peaking | 704 Hz   | 1.53 | 3.7 dB  |
+| Peaking | 10445 Hz | 3.55 | -8.0 dB |
+| Peaking | 17782 Hz | 2.62 | -4.3 dB |
+| Peaking | 2111 Hz  | 3.28 | -1.2 dB |
+| Peaking | 3232 Hz  | 3.27 | 1.9 dB  |
+| Peaking | 6847 Hz  | 3.81 | 3.2 dB  |
+| Peaking | 8455 Hz  | 3.73 | -2.0 dB |
+| Peaking | 22043 Hz | 1.58 | -0.1 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.7dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.8 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.2 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.8 dB |
-| Peaking | 16000 Hz | 1.41 | -1.9 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.6 dB |
+| Peaking | 16000 Hz | 1.41 | -2.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Jabra%20Elite%20Active%2065t/Jabra%20Elite%20Active%2065t.png)

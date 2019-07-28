@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.7dB**.
+When using independent subset of filters, apply preamp of **-5.6dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 15 Hz   | 0.72 | 4.4 dB  |
-| Peaking | 149 Hz  | 0.52 | -3.9 dB |
-| Peaking | 901 Hz  | 0.89 | 5.0 dB  |
-| Peaking | 2934 Hz | 0.71 | -5.5 dB |
-| Peaking | 3552 Hz | 2.91 | 10.8 dB |
-| Peaking | 1318 Hz | 3.07 | 1.0 dB  |
-| Peaking | 1546 Hz | 1.55 | -0.8 dB |
-| Peaking | 5377 Hz | 1.31 | 2.4 dB  |
-| Peaking | 5471 Hz | 4.25 | -8.0 dB |
-| Peaking | 6666 Hz | 5.63 | 4.5 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 18 Hz    | 0.93 | 3.8 dB  |
+| Peaking | 145 Hz   | 0.6  | -3.9 dB |
+| Peaking | 803 Hz   | 1.58 | 4.3 dB  |
+| Peaking | 3679 Hz  | 5.16 | 5.2 dB  |
+| Peaking | 5397 Hz  | 6.29 | -6.6 dB |
+| Peaking | 1197 Hz  | 2.82 | 1.8 dB  |
+| Peaking | 2258 Hz  | 1.39 | -3.2 dB |
+| Peaking | 3213 Hz  | 4.37 | 2.7 dB  |
+| Peaking | 6926 Hz  | 6.07 | 2.5 dB  |
+| Peaking | 10608 Hz | 7.75 | -2.5 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB**
@@ -30,11 +30,11 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 125 Hz   | 1.41 | -3.4 dB |
 | Peaking | 250 Hz   | 1.41 | -2.7 dB |
 | Peaking | 500 Hz   | 1.41 | 1.1 dB  |
-| Peaking | 1000 Hz  | 1.41 | 4.4 dB  |
-| Peaking | 2000 Hz  | 1.41 | -3.3 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.4 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 16000 Hz | 1.41 | 0.1 dB  |
+| Peaking | 1000 Hz  | 1.41 | 4.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -3.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 16000 Hz | 1.41 | -0.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Rock%20Jaw%20Alpha%20Genus%20Black%20Filter/Rock%20Jaw%20Alpha%20Genus%20Black%20Filter.png)

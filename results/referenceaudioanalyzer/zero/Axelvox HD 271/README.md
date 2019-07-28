@@ -6,21 +6,21 @@ In case of using parametric equalizer, apply preamp of **-7.0dB** and build filt
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 22 Hz    | 0.4  | 6.0 dB  |
-| Peaking | 144 Hz   | 1.14 | 5.6 dB  |
-| Peaking | 3829 Hz  | 1.98 | 13.8 dB |
-| Peaking | 5843 Hz  | 0.5  | -9.8 dB |
-| Peaking | 13292 Hz | 2.97 | -5.5 dB |
-| Peaking | 1115 Hz  | 0.35 | -0.6 dB |
-| Peaking | 1863 Hz  | 4.73 | 2.3 dB  |
-| Peaking | 6203 Hz  | 6.9  | 2.8 dB  |
-| Peaking | 7980 Hz  | 6.34 | -2.7 dB |
-| Peaking | 17073 Hz | 2.67 | 1.7 dB  |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 23 Hz    | 0.41 | 6.0 dB   |
+| Peaking | 143 Hz   | 1.13 | 5.6 dB   |
+| Peaking | 3779 Hz  | 1.63 | 12.7 dB  |
+| Peaking | 6008 Hz  | 0.46 | -10.6 dB |
+| Peaking | 13242 Hz | 2.78 | -4.6 dB  |
+| Peaking | 1078 Hz  | 0.33 | -0.6 dB  |
+| Peaking | 1824 Hz  | 4.58 | 2.1 dB   |
+| Peaking | 6340 Hz  | 3.58 | 1.2 dB   |
+| Peaking | 7987 Hz  | 5.54 | -1.9 dB  |
+| Peaking | 17442 Hz | 2.15 | 1.6 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | 1.7 dB   |
 | Peaking | 500 Hz   | 1.41 | -0.8 dB  |
 | Peaking | 1000 Hz  | 1.41 | -1.1 dB  |
-| Peaking | 2000 Hz  | 1.41 | -1.4 dB  |
-| Peaking | 4000 Hz  | 1.41 | 4.6 dB   |
-| Peaking | 8000 Hz  | 1.41 | -11.2 dB |
-| Peaking | 16000 Hz | 1.41 | -3.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.0 dB   |
+| Peaking | 8000 Hz  | 1.41 | -11.9 dB |
+| Peaking | 16000 Hz | 1.41 | -3.8 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Axelvox%20HD%20271/Axelvox%20HD%20271.png)

@@ -2,20 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.5dB**.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 52 Hz   | 0.4  | -3.8 dB |
-| Peaking | 163 Hz  | 0.47 | -4.6 dB |
-| Peaking | 916 Hz  | 0.6  | 5.6 dB  |
-| Peaking | 2694 Hz | 1.76 | 4.6 dB  |
-| Peaking | 5608 Hz | 3.1  | -8.2 dB |
-| Peaking | 6044 Hz | 8.11 | -2.1 dB |
-| Peaking | 7198 Hz | 2.53 | 2.7 dB  |
-| Peaking | 9038 Hz | 5.12 | -6.1 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 58 Hz    | 0.35 | -4.1 dB |
+| Peaking | 221 Hz   | 0.4  | -6.1 dB |
+| Peaking | 1232 Hz  | 0.2  | 6.9 dB  |
+| Peaking | 5840 Hz  | 1.19 | -9.5 dB |
+| Peaking | 21171 Hz | 2.08 | -4.7 dB |
+| Peaking | 5786 Hz  | 2.43 | -4.1 dB |
+| Peaking | 6528 Hz  | 5.66 | 3.3 dB  |
+| Peaking | 7378 Hz  | 0.62 | 2.3 dB  |
+| Peaking | 9226 Hz  | 5.42 | -6.9 dB |
+| Peaking | 15172 Hz | 4.21 | -2.7 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB**
@@ -29,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -3.5 dB |
 | Peaking | 500 Hz   | 1.41 | 1.8 dB  |
 | Peaking | 1000 Hz  | 1.41 | 4.3 dB  |
-| Peaking | 2000 Hz  | 1.41 | 5.4 dB  |
-| Peaking | 4000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 8000 Hz  | 1.41 | -3.6 dB |
-| Peaking | 16000 Hz | 1.41 | 0.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | 5.5 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 8000 Hz  | 1.41 | -5.1 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/AKG%20Q350%20Quincy%20Jones/AKG%20Q350%20Quincy%20Jones.png)

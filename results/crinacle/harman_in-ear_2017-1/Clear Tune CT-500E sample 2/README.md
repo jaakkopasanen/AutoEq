@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 370 Hz   | 0.39 | -6.1 dB  |
-| Peaking | 1152 Hz  | 0.55 | 10.0 dB  |
-| Peaking | 1596 Hz  | 1.46 | -10.5 dB |
-| Peaking | 6062 Hz  | 5.05 | 6.2 dB   |
-| Peaking | 15161 Hz | 3.45 | -6.1 dB  |
-| Peaking | 23 Hz    | 1.25 | 2.1 dB   |
-| Peaking | 46 Hz    | 2.14 | 0.9 dB   |
-| Peaking | 2129 Hz  | 3.91 | -1.8 dB  |
-| Peaking | 3119 Hz  | 1.24 | 1.4 dB   |
-| Peaking | 4572 Hz  | 5.38 | -3.2 dB  |
+| Peaking | 237 Hz   | 0.59 | -4.4 dB  |
+| Peaking | 972 Hz   | 1.46 | 4.6 dB   |
+| Peaking | 1576 Hz  | 2.55 | -4.7 dB  |
+| Peaking | 6069 Hz  | 3.99 | 6.6 dB   |
+| Peaking | 14941 Hz | 4.33 | -10.1 dB |
+| Peaking | 25 Hz    | 0.88 | 2.0 dB   |
+| Peaking | 2024 Hz  | 4.45 | -1.7 dB  |
+| Peaking | 3112 Hz  | 2.03 | 2.9 dB   |
+| Peaking | 4821 Hz  | 2.97 | -3.1 dB  |
+| Peaking | 5432 Hz  | 5.94 | 2.4 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.1dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -1.4 dB |
 | Peaking | 1000 Hz  | 1.41 | 3.5 dB  |
 | Peaking | 2000 Hz  | 1.41 | -3.3 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | 1.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -3.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -5.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Clear%20Tune%20CT-500E%20sample%202/Clear%20Tune%20CT-500E%20sample%202.png)

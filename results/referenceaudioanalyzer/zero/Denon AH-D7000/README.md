@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-4.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.2dB**.
+When using independent subset of filters, apply preamp of **-3.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 52 Hz    | 0.66 | -2.7 dB |
-| Peaking | 392 Hz   | 1.07 | 1.7 dB  |
-| Peaking | 2899 Hz  | 2.18 | 3.9 dB  |
-| Peaking | 7824 Hz  | 2.15 | -7.0 dB |
-| Peaking | 11533 Hz | 2.96 | -3.9 dB |
-| Peaking | 572 Hz   | 4.02 | 0.8 dB  |
-| Peaking | 804 Hz   | 4.19 | -1.7 dB |
-| Peaking | 1565 Hz  | 1.71 | 0.8 dB  |
-| Peaking | 4409 Hz  | 4.59 | -1.6 dB |
-| Peaking | 5982 Hz  | 7.84 | 1.2 dB  |
+| Peaking | 391 Hz   | 1.11 | 1.7 dB  |
+| Peaking | 2846 Hz  | 1.81 | 3.6 dB  |
+| Peaking | 7914 Hz  | 1.59 | -6.8 dB |
+| Peaking | 11648 Hz | 2.34 | -3.4 dB |
+| Peaking | 587 Hz   | 3.13 | 0.8 dB  |
+| Peaking | 798 Hz   | 3.54 | -1.7 dB |
+| Peaking | 1443 Hz  | 2.36 | 0.6 dB  |
+| Peaking | 4280 Hz  | 3.97 | -2.3 dB |
+| Peaking | 4401 Hz  | 1.73 | 1.1 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.8dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.6 dB  |
 | Peaking | 1000 Hz  | 1.41 | -1.0 dB |
 | Peaking | 2000 Hz  | 1.41 | 2.3 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | -7.2 dB |
-| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | -7.9 dB |
+| Peaking | 16000 Hz | 1.41 | -0.6 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Denon%20AH-D7000/Denon%20AH-D7000.png)

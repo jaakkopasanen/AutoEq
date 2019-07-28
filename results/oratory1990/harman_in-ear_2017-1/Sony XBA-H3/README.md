@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-8.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.5dB**.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 139 Hz   | 0.68 | -4.1 dB  |
-| Peaking | 2687 Hz  | 2.38 | 7.2 dB   |
-| Peaking | 6531 Hz  | 4.89 | 7.0 dB   |
-| Peaking | 16790 Hz | 0.83 | -17.5 dB |
-| Peaking | 19054 Hz | 0.9  | -8.6 dB  |
-| Peaking | 1431 Hz  | 1.59 | -2.4 dB  |
-| Peaking | 2590 Hz  | 0.21 | 1.1 dB   |
-| Peaking | 4878 Hz  | 5.48 | -4.2 dB  |
-| Peaking | 10042 Hz | 5.56 | -4.7 dB  |
-| Peaking | 12270 Hz | 5.15 | 3.9 dB   |
+| Peaking | 140 Hz   | 0.68 | -4.1 dB  |
+| Peaking | 2706 Hz  | 2.17 | 7.1 dB   |
+| Peaking | 16055 Hz | 0.94 | -11.9 dB |
+| Peaking | 19596 Hz | 0.63 | -18.5 dB |
+| Peaking | 22050 Hz | 1.58 | 3.3 dB   |
+| Peaking | 4963 Hz  | 3.45 | -4.3 dB  |
+| Peaking | 5494 Hz  | 2.52 | -1.2 dB  |
+| Peaking | 6380 Hz  | 2    | 6.8 dB   |
+| Peaking | 9958 Hz  | 4.59 | -5.1 dB  |
+| Peaking | 17908 Hz | 3.14 | -1.6 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -2.6 dB  |
 | Peaking | 500 Hz   | 1.41 | 1.0 dB   |
 | Peaking | 1000 Hz  | 1.41 | -1.5 dB  |
-| Peaking | 2000 Hz  | 1.41 | 3.5 dB   |
-| Peaking | 4000 Hz  | 1.41 | 2.2 dB   |
-| Peaking | 8000 Hz  | 1.41 | 3.0 dB   |
-| Peaking | 16000 Hz | 1.41 | -26.4 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.6 dB   |
+| Peaking | 4000 Hz  | 1.41 | 2.0 dB   |
+| Peaking | 8000 Hz  | 1.41 | 3.5 dB   |
+| Peaking | 16000 Hz | 1.41 | -29.5 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sony%20XBA-H3/Sony%20XBA-H3.png)

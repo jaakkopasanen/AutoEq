@@ -2,24 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.3dB**.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 29 Hz    | 0.68 | 5.2 dB   |
-| Peaking | 1903 Hz  | 0.34 | -23.1 dB |
-| Peaking | 2881 Hz  | 0.32 | 25.3 dB  |
-| Peaking | 12461 Hz | 4.19 | 9.5 dB   |
-| Peaking | 15663 Hz | 1.39 | -32.3 dB |
-| Peaking | 195 Hz   | 1.45 | -1.1 dB  |
-| Peaking | 783 Hz   | 1.89 | 1.3 dB   |
-| Peaking | 4725 Hz  | 0.12 | -0.2 dB  |
-| Peaking | 5541 Hz  | 4.55 | 1.8 dB   |
+| Peaking | 29 Hz    | 0.88 | 5.4 dB   |
+| Peaking | 3467 Hz  | 2.56 | 6.1 dB   |
+| Peaking | 8056 Hz  | 0.69 | 5.2 dB   |
+| Peaking | 15216 Hz | 3.69 | -7.2 dB  |
+| Peaking | 16180 Hz | 1.15 | -28.3 dB |
+| Peaking | 1312 Hz  | 0.17 | -2.8 dB  |
+| Peaking | 5264 Hz  | 0.67 | 3.7 dB   |
+| Peaking | 7273 Hz  | 5.35 | -4.1 dB  |
+| Peaking | 10561 Hz | 5.89 | -3.6 dB  |
+| Peaking | 11622 Hz | 6.06 | 3.5 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -30,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -2.0 dB  |
 | Peaking | 500 Hz   | 1.41 | -0.6 dB  |
 | Peaking | 1000 Hz  | 1.41 | -2.7 dB  |
-| Peaking | 2000 Hz  | 1.41 | -1.9 dB  |
-| Peaking | 4000 Hz  | 1.41 | 7.4 dB   |
-| Peaking | 8000 Hz  | 1.41 | 3.2 dB   |
-| Peaking | 16000 Hz | 1.41 | -25.2 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | 7.7 dB   |
+| Peaking | 8000 Hz  | 1.41 | 4.7 dB   |
+| Peaking | 16000 Hz | 1.41 | -31.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%20Martian/Unique%20Melody%20Martian.png)

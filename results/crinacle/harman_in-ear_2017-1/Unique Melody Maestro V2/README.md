@@ -4,20 +4,20 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.0dB**.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 27 Hz    | 0.76 | 3.2 dB   |
-| Peaking | 257 Hz   | 0.08 | -3.4 dB  |
-| Peaking | 6402 Hz  | 1.71 | -11.8 dB |
-| Peaking | 6471 Hz  | 0.35 | 13.5 dB  |
-| Peaking | 17679 Hz | 0.56 | -23.9 dB |
-| Peaking | 823 Hz   | 1.03 | 2.5 dB   |
-| Peaking | 1447 Hz  | 1.1  | -3.6 dB  |
-| Peaking | 2719 Hz  | 1.61 | 2.1 dB   |
-| Peaking | 9081 Hz  | 4    | -1.9 dB  |
-| Peaking | 12677 Hz | 5.18 | 4.1 dB   |
+| Peaking | 14 Hz    | 0.7  | 2.3 dB   |
+| Peaking | 162 Hz   | 0.46 | -4.1 dB  |
+| Peaking | 1449 Hz  | 1.79 | -3.0 dB  |
+| Peaking | 3257 Hz  | 0.99 | 7.3 dB   |
+| Peaking | 18969 Hz | 0.69 | -23.5 dB |
+| Peaking | 3452 Hz  | 3.86 | -1.0 dB  |
+| Peaking | 4409 Hz  | 3.34 | 2.2 dB   |
+| Peaking | 6062 Hz  | 3.52 | -4.5 dB  |
+| Peaking | 12534 Hz | 1.3  | 9.2 dB   |
+| Peaking | 15215 Hz | 1.19 | -8.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.7dB**
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 1.5 dB   |
 | Peaking | 4000 Hz  | 1.41 | 6.3 dB   |
 | Peaking | 8000 Hz  | 1.41 | 0.8 dB   |
-| Peaking | 16000 Hz | 1.41 | -19.4 dB |
+| Peaking | 16000 Hz | 1.41 | -20.6 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%20Maestro%20V2/Unique%20Melody%20Maestro%20V2.png)

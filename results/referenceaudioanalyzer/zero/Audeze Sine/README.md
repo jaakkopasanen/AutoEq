@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-4.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 64 Hz    | 2.73 | 1.7 dB   |
-| Peaking | 587 Hz   | 0.76 | 3.9 dB   |
-| Peaking | 1315 Hz  | 1.36 | -2.4 dB  |
-| Peaking | 5108 Hz  | 2.11 | -6.0 dB  |
-| Peaking | 13356 Hz | 1.59 | -11.4 dB |
-| Peaking | 6585 Hz  | 3.6  | -3.1 dB  |
-| Peaking | 9214 Hz  | 1.42 | 4.3 dB   |
-| Peaking | 11176 Hz | 3.67 | -4.9 dB  |
-| Peaking | 16349 Hz | 3.57 | -1.3 dB  |
-| Peaking | 18077 Hz | 2.04 | -1.6 dB  |
+| Peaking | 64 Hz    | 2.79 | 1.6 dB   |
+| Peaking | 585 Hz   | 0.78 | 3.9 dB   |
+| Peaking | 1322 Hz  | 1.37 | -2.3 dB  |
+| Peaking | 5055 Hz  | 2.1  | -5.8 dB  |
+| Peaking | 13805 Hz | 1.26 | -11.3 dB |
+| Peaking | 6534 Hz  | 3.88 | -2.8 dB  |
+| Peaking | 8857 Hz  | 1.86 | 4.5 dB   |
+| Peaking | 11699 Hz | 2.59 | -4.3 dB  |
+| Peaking | 13938 Hz | 2.92 | 2.8 dB   |
+| Peaking | 16625 Hz | 1.49 | -2.0 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.6dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -0.0 dB  |
+| Peaking | 31 Hz    | 1.41 | -0.1 dB  |
 | Peaking | 62 Hz    | 1.41 | 1.4 dB   |
-| Peaking | 125 Hz   | 1.41 | -0.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.3 dB  |
 | Peaking | 250 Hz   | 1.41 | 0.5 dB   |
 | Peaking | 500 Hz   | 1.41 | 4.1 dB   |
 | Peaking | 1000 Hz  | 1.41 | -0.2 dB  |
 | Peaking | 2000 Hz  | 1.41 | 0.2 dB   |
-| Peaking | 4000 Hz  | 1.41 | -4.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.1 dB  |
-| Peaking | 16000 Hz | 1.41 | -10.1 dB |
+| Peaking | 4000 Hz  | 1.41 | -4.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.9 dB  |
+| Peaking | 16000 Hz | 1.41 | -11.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Audeze%20Sine/Audeze%20Sine.png)

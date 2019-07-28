@@ -4,23 +4,23 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.6dB**.
+When using independent subset of filters, apply preamp of **-7.5dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 125 Hz   | 0.93 | -2.7 dB  |
-| Peaking | 2174 Hz  | 2.66 | 6.9 dB   |
-| Peaking | 5033 Hz  | 5.46 | -10.7 dB |
-| Peaking | 6042 Hz  | 3.12 | 12.4 dB  |
-| Peaking | 8000 Hz  | 2.32 | -11.5 dB |
-| Peaking | 20 Hz    | 1.86 | 1.3 dB   |
-| Peaking | 636 Hz   | 1.58 | 1.7 dB   |
-| Peaking | 1224 Hz  | 3.02 | -1.9 dB  |
-| Peaking | 11068 Hz | 9.99 | 1.8 dB   |
-| Peaking | 12573 Hz | 4.59 | 1.0 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 125 Hz   | 0.92 | -2.7 dB |
+| Peaking | 2168 Hz  | 2.7  | 7.0 dB  |
+| Peaking | 4784 Hz  | 6.6  | -5.8 dB |
+| Peaking | 8579 Hz  | 2.99 | -9.4 dB |
+| Peaking | 11786 Hz | 3.35 | 1.1 dB  |
+| Peaking | 3979 Hz  | 3.74 | -2.2 dB |
+| Peaking | 5183 Hz  | 9    | -5.8 dB |
+| Peaking | 5994 Hz  | 2.46 | 6.4 dB  |
+| Peaking | 7398 Hz  | 6.59 | -6.1 dB |
+| Peaking | 15495 Hz | 5.53 | -2.3 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -30,11 +30,11 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 125 Hz   | 1.41 | -2.4 dB |
 | Peaking | 250 Hz   | 1.41 | -1.4 dB |
 | Peaking | 500 Hz   | 1.41 | 2.1 dB  |
-| Peaking | 1000 Hz  | 1.41 | -1.9 dB |
-| Peaking | 2000 Hz  | 1.41 | 5.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 8000 Hz  | 1.41 | -5.0 dB |
-| Peaking | 16000 Hz | 1.41 | 0.4 dB  |
+| Peaking | 1000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 2000 Hz  | 1.41 | 6.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | -1.6 dB |
+| Peaking | 8000 Hz  | 1.41 | -5.8 dB |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ocharaku%20Flat4%20Kuro%20Type%20II/Ocharaku%20Flat4%20Kuro%20Type%20II.png)

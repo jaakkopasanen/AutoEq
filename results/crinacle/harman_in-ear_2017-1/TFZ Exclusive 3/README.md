@@ -4,20 +4,20 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-3.8dB**.
+When using independent subset of filters, apply preamp of **-3.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 25 Hz    | 0.11 | -7.0 dB  |
-| Peaking | 709 Hz   | 1.41 | 3.7 dB   |
-| Peaking | 5191 Hz  | 7.45 | -10.0 dB |
-| Peaking | 10599 Hz | 0.34 | 7.4 dB   |
-| Peaking | 16614 Hz | 0.79 | -22.8 dB |
-| Peaking | 2254 Hz  | 1.97 | -3.3 dB  |
-| Peaking | 3413 Hz  | 2.9  | 4.2 dB   |
-| Peaking | 8482 Hz  | 3.74 | -2.5 dB  |
-| Peaking | 12754 Hz | 3.73 | 4.0 dB   |
-| Peaking | 14812 Hz | 4.01 | -3.0 dB  |
+| Peaking | 26 Hz    | 0.11 | -7.0 dB  |
+| Peaking | 712 Hz   | 1.34 | 3.7 dB   |
+| Peaking | 5200 Hz  | 6.59 | -8.2 dB  |
+| Peaking | 11199 Hz | 0.38 | 14.0 dB  |
+| Peaking | 16541 Hz | 0.4  | -25.9 dB |
+| Peaking | 2211 Hz  | 2.08 | -2.8 dB  |
+| Peaking | 3409 Hz  | 3.18 | 4.9 dB   |
+| Peaking | 8852 Hz  | 2.56 | -1.6 dB  |
+| Peaking | 12709 Hz | 3.03 | 4.4 dB   |
+| Peaking | 14489 Hz | 3.9  | -4.1 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.2dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -2.5 dB  |
 | Peaking | 500 Hz   | 1.41 | 1.6 dB   |
 | Peaking | 1000 Hz  | 1.41 | 2.8 dB   |
-| Peaking | 2000 Hz  | 1.41 | -1.9 dB  |
-| Peaking | 4000 Hz  | 1.41 | 2.8 dB   |
-| Peaking | 8000 Hz  | 1.41 | 2.5 dB   |
-| Peaking | 16000 Hz | 1.41 | -17.9 dB |
+| Peaking | 2000 Hz  | 1.41 | -1.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | 2.0 dB   |
+| Peaking | 8000 Hz  | 1.41 | 2.3 dB   |
+| Peaking | 16000 Hz | 1.41 | -19.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/TFZ%20Exclusive%203/TFZ%20Exclusive%203.png)

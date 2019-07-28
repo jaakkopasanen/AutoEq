@@ -4,20 +4,20 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.0dB**.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 107 Hz   | 0.42 | -1.5 dB  |
-| Peaking | 211 Hz   | 0.36 | -5.8 dB  |
-| Peaking | 1277 Hz  | 1.35 | -7.4 dB  |
-| Peaking | 2650 Hz  | 0.32 | 7.8 dB   |
-| Peaking | 15726 Hz | 2.24 | -25.9 dB |
-| Peaking | 15 Hz    | 2.04 | 1.3 dB   |
-| Peaking | 6159 Hz  | 3.94 | 3.2 dB   |
-| Peaking | 7399 Hz  | 2.09 | -3.3 dB  |
-| Peaking | 12457 Hz | 2.6  | 5.9 dB   |
-| Peaking | 14321 Hz | 3.6  | -6.3 dB  |
+| Peaking | 91 Hz    | 0.46 | -1.8 dB  |
+| Peaking | 211 Hz   | 0.4  | -5.8 dB  |
+| Peaking | 1273 Hz  | 1.44 | -6.8 dB  |
+| Peaking | 2983 Hz  | 0.34 | 7.5 dB   |
+| Peaking | 15817 Hz | 1.94 | -27.4 dB |
+| Peaking | 7642 Hz  | 4.06 | -2.3 dB  |
+| Peaking | 11412 Hz | 3.24 | 4.0 dB   |
+| Peaking | 14151 Hz | 3.51 | -4.2 dB  |
+| Peaking | 17025 Hz | 4.23 | -6.6 dB  |
+| Peaking | 18842 Hz | 1.21 | 5.1 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -3.0 dB  |
 | Peaking | 2000 Hz  | 1.41 | 3.3 dB   |
 | Peaking | 4000 Hz  | 1.41 | 7.1 dB   |
-| Peaking | 8000 Hz  | 1.41 | 3.0 dB   |
-| Peaking | 16000 Hz | 1.41 | -20.3 dB |
+| Peaking | 8000 Hz  | 1.41 | 3.2 dB   |
+| Peaking | 16000 Hz | 1.41 | -23.2 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Elysian%20Minerva/Elysian%20Minerva.png)

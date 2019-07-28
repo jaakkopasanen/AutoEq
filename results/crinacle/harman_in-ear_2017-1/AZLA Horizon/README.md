@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-4.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.3dB**.
+When using independent subset of filters, apply preamp of **-2.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 0.29 | -5.2 dB  |
-| Peaking | 152 Hz   | 0.59 | -3.5 dB  |
-| Peaking | 808 Hz   | 1.02 | 3.1 dB   |
-| Peaking | 3604 Hz  | 1.79 | 4.1 dB   |
-| Peaking | 17610 Hz | 1.09 | -24.6 dB |
-| Peaking | 1178 Hz  | 2.23 | 0.6 dB   |
-| Peaking | 1279 Hz  | 3.6  | -0.9 dB  |
-| Peaking | 5552 Hz  | 5.27 | -3.2 dB  |
-| Peaking | 12658 Hz | 1.24 | 10.3 dB  |
-| Peaking | 15081 Hz | 1.81 | -13.2 dB |
+| Peaking | 20 Hz    | 0.15 | -5.3 dB  |
+| Peaking | 190 Hz   | 0.72 | -2.9 dB  |
+| Peaking | 4321 Hz  | 0.17 | 17.8 dB  |
+| Peaking | 12308 Hz | 0.81 | 24.7 dB  |
+| Peaking | 15141 Hz | 0.18 | -43.6 dB |
+| Peaking | 1815 Hz  | 1.73 | -1.4 dB  |
+| Peaking | 3801 Hz  | 2.57 | 2.9 dB   |
+| Peaking | 5642 Hz  | 2.67 | -3.2 dB  |
+| Peaking | 8596 Hz  | 1.98 | 0.9 dB   |
+| Peaking | 17673 Hz | 1.59 | -0.6 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.1dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -2.6 dB  |
 | Peaking | 500 Hz   | 1.41 | 1.1 dB   |
 | Peaking | 1000 Hz  | 1.41 | 2.4 dB   |
-| Peaking | 2000 Hz  | 1.41 | 0.5 dB   |
-| Peaking | 4000 Hz  | 1.41 | 2.4 dB   |
-| Peaking | 8000 Hz  | 1.41 | 3.4 dB   |
-| Peaking | 16000 Hz | 1.41 | -25.0 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.6 dB   |
+| Peaking | 4000 Hz  | 1.41 | 2.2 dB   |
+| Peaking | 8000 Hz  | 1.41 | 3.8 dB   |
+| Peaking | 16000 Hz | 1.41 | -27.2 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/AZLA%20Horizon/AZLA%20Horizon.png)

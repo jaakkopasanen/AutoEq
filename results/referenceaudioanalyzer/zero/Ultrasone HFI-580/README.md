@@ -2,24 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-7.7dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 25 Hz    | 1.5  | 6.7 dB  |
-| Peaking | 191 Hz   | 1.55 | 6.3 dB  |
-| Peaking | 3300 Hz  | 2.96 | -5.2 dB |
-| Peaking | 8712 Hz  | 3.44 | -9.5 dB |
-| Peaking | 12288 Hz | 1.93 | -8.0 dB |
-| Peaking | 443 Hz   | 3.31 | -1.4 dB |
-| Peaking | 915 Hz   | 1.45 | 1.1 dB  |
-| Peaking | 6074 Hz  | 4.74 | 2.7 dB  |
-| Peaking | 15944 Hz | 4.72 | 1.7 dB  |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 25 Hz    | 1.53 | 6.7 dB   |
+| Peaking | 191 Hz   | 1.55 | 6.3 dB   |
+| Peaking | 3254 Hz  | 3.2  | -4.6 dB  |
+| Peaking | 10324 Hz | 1.21 | -10.6 dB |
+| Peaking | 22050 Hz | 1.97 | -7.2 dB  |
+| Peaking | 5884 Hz  | 3.2  | 3.7 dB   |
+| Peaking | 8291 Hz  | 3.73 | -4.4 dB  |
+| Peaking | 10505 Hz | 2.53 | 2.5 dB   |
+| Peaking | 13261 Hz | 2.71 | -3.9 dB  |
+| Peaking | 15925 Hz | 1.5  | 2.1 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -1.8 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.0 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.4 dB |
-| Peaking | 4000 Hz  | 1.41 | -0.9 dB |
-| Peaking | 8000 Hz  | 1.41 | -7.6 dB |
-| Peaking | 16000 Hz | 1.41 | -2.9 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 8000 Hz  | 1.41 | -8.6 dB |
+| Peaking | 16000 Hz | 1.41 | -3.1 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Ultrasone%20HFI-580/Ultrasone%20HFI-580.png)

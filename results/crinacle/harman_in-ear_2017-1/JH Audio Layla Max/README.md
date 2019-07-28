@@ -2,21 +2,21 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2dB**.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 47 Hz    | 0.21 | -6.4 dB  |
-| Peaking | 453 Hz   | 0.15 | -3.8 dB  |
-| Peaking | 3694 Hz  | 0.43 | 8.7 dB   |
-| Peaking | 18854 Hz | 0.71 | -25.1 dB |
-| Peaking | 1315 Hz  | 3.7  | -3.2 dB  |
-| Peaking | 2061 Hz  | 3.88 | 2.6 dB   |
-| Peaking | 8538 Hz  | 3.6  | -4.0 dB  |
-| Peaking | 13061 Hz | 1.71 | 6.7 dB   |
-| Peaking | 16181 Hz | 1.5  | -5.5 dB  |
+| Peaking | 22 Hz    | 0.33 | -5.1 dB  |
+| Peaking | 149 Hz   | 0.33 | -7.2 dB  |
+| Peaking | 1272 Hz  | 2.65 | -4.2 dB  |
+| Peaking | 3020 Hz  | 0.71 | 7.3 dB   |
+| Peaking | 345 Hz   | 2.93 | 0.2 dB   |
+| Peaking | 5935 Hz  | 1.79 | 5.9 dB   |
+| Peaking | 12399 Hz | 1.55 | 11.5 dB  |
+| Peaking | 18935 Hz | 0.17 | -12.2 dB |
+| Peaking | 19849 Hz | 0.59 | -17.8 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
@@ -32,8 +32,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -2.8 dB  |
 | Peaking | 2000 Hz  | 1.41 | 4.2 dB   |
 | Peaking | 4000 Hz  | 1.41 | 6.9 dB   |
-| Peaking | 8000 Hz  | 1.41 | 2.7 dB   |
-| Peaking | 16000 Hz | 1.41 | -19.3 dB |
+| Peaking | 8000 Hz  | 1.41 | 3.0 dB   |
+| Peaking | 16000 Hz | 1.41 | -20.6 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/JH%20Audio%20Layla%20Max/JH%20Audio%20Layla%20Max.png)

@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 40 Hz    | 0.28 | -4.8 dB  |
-| Peaking | 165 Hz   | 0.83 | -3.9 dB  |
-| Peaking | 5143 Hz  | 0.88 | 11.4 dB  |
-| Peaking | 12505 Hz | 1.35 | 14.2 dB  |
-| Peaking | 16950 Hz | 0.28 | -20.6 dB |
-| Peaking | 882 Hz   | 0.95 | 7.1 dB   |
-| Peaking | 1612 Hz  | 0.44 | -7.4 dB  |
-| Peaking | 2978 Hz  | 1.23 | 6.6 dB   |
-| Peaking | 4810 Hz  | 8.51 | -2.2 dB  |
-| Peaking | 6368 Hz  | 5.37 | 2.6 dB   |
+| Peaking | 34 Hz    | 0.34 | -4.6 dB  |
+| Peaking | 126 Hz   | 0.96 | -3.7 dB  |
+| Peaking | 232 Hz   | 1.53 | -2.6 dB  |
+| Peaking | 3703 Hz  | 2.21 | 6.2 dB   |
+| Peaking | 5740 Hz  | 3.56 | 5.6 dB   |
+| Peaking | 828 Hz   | 2.07 | 2.5 dB   |
+| Peaking | 1624 Hz  | 1.89 | -3.0 dB  |
+| Peaking | 6209 Hz  | 0.56 | 5.8 dB   |
+| Peaking | 12034 Hz | 1.73 | 11.0 dB  |
+| Peaking | 19195 Hz | 0.16 | -20.4 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -3.8 dB  |
 | Peaking | 500 Hz   | 1.41 | 0.7 dB   |
 | Peaking | 1000 Hz  | 1.41 | 1.2 dB   |
-| Peaking | 2000 Hz  | 1.41 | -2.8 dB  |
-| Peaking | 4000 Hz  | 1.41 | 8.1 dB   |
-| Peaking | 8000 Hz  | 1.41 | 1.9 dB   |
-| Peaking | 16000 Hz | 1.41 | -18.8 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | 8.2 dB   |
+| Peaking | 8000 Hz  | 1.41 | 2.2 dB   |
+| Peaking | 16000 Hz | 1.41 | -20.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/FiiO%20FH1/FiiO%20FH1.png)

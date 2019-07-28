@@ -8,19 +8,19 @@ When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 132 Hz   | 0.48 | -5.0 dB  |
-| Peaking | 295 Hz   | 0.86 | -2.7 dB  |
-| Peaking | 2807 Hz  | 4.01 | 1.2 dB   |
-| Peaking | 3932 Hz  | 0.68 | 6.3 dB   |
-| Peaking | 15739 Hz | 1.98 | -26.1 dB |
-| Peaking | 923 Hz   | 3.35 | 1.1 dB   |
-| Peaking | 1372 Hz  | 3.11 | -0.8 dB  |
-| Peaking | 6928 Hz  | 5.4  | -3.4 dB  |
-| Peaking | 12071 Hz | 2.19 | 6.8 dB   |
-| Peaking | 14189 Hz | 2.93 | -7.6 dB  |
+| Peaking | 106 Hz   | 0.48 | -3.4 dB  |
+| Peaking | 253 Hz   | 0.59 | -4.3 dB  |
+| Peaking | 6951 Hz  | 2.07 | -9.5 dB  |
+| Peaking | 7032 Hz  | 0.43 | 12.9 dB  |
+| Peaking | 15378 Hz | 1.29 | -31.3 dB |
+| Peaking | 1492 Hz  | 3.39 | -1.1 dB  |
+| Peaking | 2834 Hz  | 4.43 | 1.2 dB   |
+| Peaking | 11529 Hz | 3.63 | 5.9 dB   |
+| Peaking | 12370 Hz | 1.28 | -2.7 dB  |
+| Peaking | 16727 Hz | 5.12 | -2.8 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | 0.6 dB   |
 | Peaking | 2000 Hz  | 1.41 | 2.0 dB   |
 | Peaking | 4000 Hz  | 1.41 | 7.1 dB   |
-| Peaking | 8000 Hz  | 1.41 | 2.2 dB   |
-| Peaking | 16000 Hz | 1.41 | -22.7 dB |
+| Peaking | 8000 Hz  | 1.41 | 2.5 dB   |
+| Peaking | 16000 Hz | 1.41 | -25.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/NocturnaL%20Audio%20Gorham/NocturnaL%20Audio%20Gorham.png)

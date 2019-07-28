@@ -9,18 +9,18 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 30 Hz    | 0.55 | 6.4 dB  |
-| Peaking | 1520 Hz  | 1.62 | 1.4 dB  |
-| Peaking | 5747 Hz  | 5.54 | 4.4 dB  |
-| Peaking | 7693 Hz  | 2.94 | -6.4 dB |
-| Peaking | 18717 Hz | 0.95 | -4.2 dB |
-| Peaking | 344 Hz   | 3.11 | -0.7 dB |
-| Peaking | 1598 Hz  | 4.77 | -1.5 dB |
-| Peaking | 1926 Hz  | 1.62 | 1.4 dB  |
-| Peaking | 3071 Hz  | 1.85 | -1.4 dB |
-| Peaking | 11319 Hz | 2.41 | 1.1 dB  |
+| Peaking | 1464 Hz  | 1.72 | 1.3 dB  |
+| Peaking | 7850 Hz  | 2.85 | -7.7 dB |
+| Peaking | 9755 Hz  | 0.7  | 1.8 dB  |
+| Peaking | 19963 Hz | 0.43 | -6.0 dB |
+| Peaking | 2111 Hz  | 2.92 | 1.5 dB  |
+| Peaking | 3573 Hz  | 0.87 | -1.7 dB |
+| Peaking | 5480 Hz  | 2.31 | 2.3 dB  |
+| Peaking | 6694 Hz  | 1.29 | 0.4 dB  |
+| Peaking | 6977 Hz  | 5.25 | -1.6 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.3 dB |
 | Peaking | 1000 Hz  | 1.41 | 0.6 dB  |
 | Peaking | 2000 Hz  | 1.41 | 1.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.3 dB |
-| Peaking | 16000 Hz | 1.41 | -2.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.6 dB |
+| Peaking | 16000 Hz | 1.41 | -2.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/HiFiMan%20HE-400i/HiFiMan%20HE-400i.png)

@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 33 Hz    | 0.51 | 6.4 dB   |
-| Peaking | 1320 Hz  | 2.5  | -2.0 dB  |
-| Peaking | 4938 Hz  | 1.93 | 4.2 dB   |
-| Peaking | 16088 Hz | 1.6  | -8.4 dB  |
-| Peaking | 19207 Hz | 0.59 | -17.5 dB |
-| Peaking | 261 Hz   | 1.91 | -1.6 dB  |
-| Peaking | 6321 Hz  | 4.18 | 1.1 dB   |
-| Peaking | 9353 Hz  | 2.54 | -4.4 dB  |
-| Peaking | 11737 Hz | 2.45 | 5.6 dB   |
-| Peaking | 14275 Hz | 3.72 | -3.1 dB  |
+| Peaking | 33 Hz    | 0.52 | 6.4 dB   |
+| Peaking | 1323 Hz  | 2.44 | -2.0 dB  |
+| Peaking | 5028 Hz  | 1.66 | 4.6 dB   |
+| Peaking | 15084 Hz | 2.58 | -6.0 dB  |
+| Peaking | 19403 Hz | 0.47 | -21.9 dB |
+| Peaking | 262 Hz   | 1.92 | -1.6 dB  |
+| Peaking | 9426 Hz  | 3.7  | -3.8 dB  |
+| Peaking | 11288 Hz | 2.35 | 3.6 dB   |
+| Peaking | 17253 Hz | 2.82 | -0.7 dB  |
+| Peaking | 17304 Hz | 3.07 | -1.2 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | 6.6 dB   |
+| Peaking | 31 Hz    | 1.41 | 6.5 dB   |
 | Peaking | 62 Hz    | 1.41 | 3.6 dB   |
-| Peaking | 125 Hz   | 1.41 | 1.2 dB   |
+| Peaking | 125 Hz   | 1.41 | 1.3 dB   |
 | Peaking | 250 Hz   | 1.41 | -1.5 dB  |
 | Peaking | 500 Hz   | 1.41 | 0.2 dB   |
 | Peaking | 1000 Hz  | 1.41 | -0.7 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | 3.6 dB   |
+| Peaking | 4000 Hz  | 1.41 | 3.7 dB   |
 | Peaking | 8000 Hz  | 1.41 | 0.5 dB   |
-| Peaking | 16000 Hz | 1.41 | -21.6 dB |
+| Peaking | 16000 Hz | 1.41 | -23.7 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Akoustyx%20R-220/Akoustyx%20R-220.png)

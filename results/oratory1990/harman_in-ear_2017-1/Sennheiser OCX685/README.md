@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.1dB**.
+When using independent subset of filters, apply preamp of **-2.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 198 Hz   | 0.55 | -5.7 dB |
-| Peaking | 1081 Hz  | 0.24 | 2.7 dB  |
-| Peaking | 5124 Hz  | 5.53 | -6.1 dB |
-| Peaking | 6420 Hz  | 6.38 | 5.7 dB  |
-| Peaking | 16260 Hz | 1.39 | -7.2 dB |
-| Peaking | 19 Hz    | 1.39 | 1.7 dB  |
-| Peaking | 788 Hz   | 4.59 | 1.0 dB  |
-| Peaking | 3666 Hz  | 6.23 | 1.6 dB  |
-| Peaking | 9757 Hz  | 6.69 | -4.0 dB |
-| Peaking | 12386 Hz | 3.51 | 2.0 dB  |
+| Peaking | 205 Hz   | 0.52 | -5.7 dB |
+| Peaking | 1983 Hz  | 0.18 | 4.1 dB  |
+| Peaking | 4841 Hz  | 0.3  | -3.0 dB |
+| Peaking | 15535 Hz | 2    | -6.6 dB |
+| Peaking | 19945 Hz | 0.55 | -4.3 dB |
+| Peaking | 20 Hz    | 1.27 | 1.7 dB  |
+| Peaking | 3531 Hz  | 3.48 | 2.0 dB  |
+| Peaking | 5192 Hz  | 3.26 | -6.7 dB |
+| Peaking | 6334 Hz  | 3.46 | 6.8 dB  |
+| Peaking | 9721 Hz  | 7.55 | -5.2 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.9dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -4.0 dB |
 | Peaking | 500 Hz   | 1.41 | 0.3 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.2 dB  |
-| Peaking | 2000 Hz  | 1.41 | 1.6 dB  |
-| Peaking | 4000 Hz  | 1.41 | 0.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
-| Peaking | 16000 Hz | 1.41 | -7.0 dB |
+| Peaking | 2000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 16000 Hz | 1.41 | -8.2 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20OCX685/Sennheiser%20OCX685.png)

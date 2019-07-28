@@ -9,18 +9,18 @@ When using independent subset of filters, apply preamp of **-7.2dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 38 Hz    | 0.42 | 6.5 dB   |
-| Peaking | 619 Hz   | 0.44 | 4.6 dB   |
-| Peaking | 2035 Hz  | 1.65 | -10.7 dB |
-| Peaking | 8122 Hz  | 1.37 | -4.8 dB  |
-| Peaking | 22050 Hz | 2.12 | -3.8 dB  |
-| Peaking | 2767 Hz  | 4.36 | -3.1 dB  |
-| Peaking | 3677 Hz  | 1.92 | 5.2 dB   |
-| Peaking | 7490 Hz  | 0.87 | -7.2 dB  |
-| Peaking | 7545 Hz  | 2.77 | 8.1 dB   |
-| Peaking | 11638 Hz | 1.63 | 4.1 dB   |
+| Peaking | 619 Hz   | 0.45 | 4.6 dB   |
+| Peaking | 2039 Hz  | 1.62 | -10.6 dB |
+| Peaking | 7977 Hz  | 1.35 | -5.5 dB  |
+| Peaking | 22049 Hz | 2.13 | -3.9 dB  |
+| Peaking | 2718 Hz  | 4.86 | -2.4 dB  |
+| Peaking | 3664 Hz  | 3.09 | 2.9 dB   |
+| Peaking | 5726 Hz  | 4.16 | -2.6 dB  |
+| Peaking | 9807 Hz  | 4.44 | -5.4 dB  |
+| Peaking | 10487 Hz | 1.47 | 3.1 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | 2.5 dB  |
 | Peaking | 500 Hz   | 1.41 | 3.8 dB  |
 | Peaking | 1000 Hz  | 1.41 | 4.1 dB  |
-| Peaking | 2000 Hz  | 1.41 | -9.9 dB |
-| Peaking | 4000 Hz  | 1.41 | 1.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -5.4 dB |
-| Peaking | 16000 Hz | 1.41 | 0.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | -9.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -6.0 dB |
+| Peaking | 16000 Hz | 1.41 | 0.4 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Apple%20EarPods/Apple%20EarPods.png)

@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-5.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 11 Hz    | 0.25 | 4.3 dB  |
-| Peaking | 205 Hz   | 0.44 | -3.6 dB |
-| Peaking | 1009 Hz  | 0.98 | 5.7 dB  |
-| Peaking | 4178 Hz  | 4.74 | 2.5 dB  |
-| Peaking | 6513 Hz  | 2.12 | -5.3 dB |
-| Peaking | 2251 Hz  | 6.94 | -1.2 dB |
-| Peaking | 2901 Hz  | 6.49 | 1.5 dB  |
-| Peaking | 7467 Hz  | 7.21 | -3.2 dB |
-| Peaking | 8477 Hz  | 2.62 | 2.0 dB  |
-| Peaking | 16512 Hz | 3.67 | -2.0 dB |
+| Peaking | 12 Hz    | 0.24 | 4.2 dB  |
+| Peaking | 208 Hz   | 0.42 | -3.7 dB |
+| Peaking | 1005 Hz  | 0.93 | 5.7 dB  |
+| Peaking | 6642 Hz  | 2.55 | -6.1 dB |
+| Peaking | 16320 Hz | 3.22 | -2.3 dB |
+| Peaking | 4170 Hz  | 2.5  | 1.6 dB  |
+| Peaking | 5340 Hz  | 3.17 | -2.1 dB |
+| Peaking | 6741 Hz  | 4.57 | 2.1 dB  |
+| Peaking | 7501 Hz  | 5.19 | -4.2 dB |
+| Peaking | 8504 Hz  | 2.64 | 2.3 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.7 dB |
 | Peaking | 1000 Hz  | 1.41 | 5.6 dB  |
 | Peaking | 2000 Hz  | 1.41 | 0.8 dB  |
-| Peaking | 4000 Hz  | 1.41 | 0.4 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.3 dB |
-| Peaking | 16000 Hz | 1.41 | -0.4 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.1 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.6 dB |
+| Peaking | 16000 Hz | 1.41 | -0.7 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Jomo%20Flamenco%20Bass%20Treble%20sample%201/Jomo%20Flamenco%20Bass%20Treble%20sample%201.png)

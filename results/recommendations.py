@@ -69,7 +69,7 @@ def main():
         headphones, these can be found in the
         [full index](https://github.com/jaakkopasanen/AutoEq/blob/master/results/INDEX.md).
         
-        Recommendation priority is: oratory1990 > Innerfidelity > Rtings > Headphone.com > Reference Audio Analyzer.
+        Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > Headphone.com > Reference Audio Analyzer.
         This means if there are measurements from multiple sources for the same headphone model only the highest
         priority result will be shown in this list.
         

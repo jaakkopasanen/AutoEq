@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-4.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-4.6dB**.
 
-| Type    | Fc      |    Q | Gain     |
-|:--------|:--------|:-----|:---------|
-| Peaking | 31 Hz   | 0.78 | -2.0 dB  |
-| Peaking | 131 Hz  | 0.34 | -4.4 dB  |
-| Peaking | 387 Hz  | 0.75 | 6.5 dB   |
-| Peaking | 2205 Hz | 1.36 | -10.0 dB |
-| Peaking | 3124 Hz | 0.99 | 4.0 dB   |
-| Peaking | 560 Hz  | 3.13 | -1.1 dB  |
-| Peaking | 928 Hz  | 0.66 | 0.6 dB   |
-| Peaking | 1545 Hz | 3.29 | -1.0 dB  |
-| Peaking | 2645 Hz | 7.98 | -1.1 dB  |
-| Peaking | 3154 Hz | 9.02 | 1.3 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 32 Hz    | 0.61 | -2.3 dB |
+| Peaking | 131 Hz   | 0.39 | -4.0 dB |
+| Peaking | 389 Hz   | 0.8  | 6.1 dB  |
+| Peaking | 2160 Hz  | 1.42 | -9.0 dB |
+| Peaking | 3260 Hz  | 0.95 | 2.7 dB  |
+| Peaking | 555 Hz   | 2.55 | -1.9 dB |
+| Peaking | 582 Hz   | 1.22 | 1.2 dB  |
+| Peaking | 6962 Hz  | 1.86 | -0.6 dB |
+| Peaking | 7078 Hz  | 5.07 | 1.6 dB  |
+| Peaking | 19925 Hz | 1.62 | -3.1 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.5dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 4.0 dB  |
 | Peaking | 1000 Hz  | 1.41 | 1.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | -7.6 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Bowers%20&%20Wilkins%20P5%20Series%202/Bowers%20&%20Wilkins%20P5%20Series%202.png)

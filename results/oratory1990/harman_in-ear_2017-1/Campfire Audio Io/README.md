@@ -4,23 +4,23 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.8dB**.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 212 Hz   | 0.46 | -5.8 dB  |
-| Peaking | 1492 Hz  | 2.4  | -11.9 dB |
-| Peaking | 3845 Hz  | 0.42 | 10.2 dB  |
-| Peaking | 17241 Hz | 0.36 | -20.1 dB |
-| Peaking | 21474 Hz | 0.58 | -8.0 dB  |
-| Peaking | 21 Hz    | 1.29 | 2.6 dB   |
-| Peaking | 2171 Hz  | 5.85 | 3.5 dB   |
-| Peaking | 6400 Hz  | 1.53 | 9.2 dB   |
-| Peaking | 8267 Hz  | 0.58 | -7.7 dB  |
-| Peaking | 12521 Hz | 2.56 | 8.4 dB   |
+| Peaking | 236 Hz   | 0.4  | -6.0 dB  |
+| Peaking | 1476 Hz  | 2.27 | -12.6 dB |
+| Peaking | 5867 Hz  | 0.27 | 17.7 dB  |
+| Peaking | 9465 Hz  | 2.07 | -6.9 dB  |
+| Peaking | 16858 Hz | 0.21 | -25.7 dB |
+| Peaking | 21 Hz    | 1.22 | 2.7 dB   |
+| Peaking | 2225 Hz  | 3.95 | 3.8 dB   |
+| Peaking | 2679 Hz  | 0.61 | -1.3 dB  |
+| Peaking | 6404 Hz  | 3.62 | 2.9 dB   |
+| Peaking | 7210 Hz  | 4.65 | -2.1 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.4dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.5dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -5.1 dB  |
 | Peaking | 500 Hz   | 1.41 | -0.9 dB  |
 | Peaking | 1000 Hz  | 1.41 | -2.9 dB  |
-| Peaking | 2000 Hz  | 1.41 | -0.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 9.8 dB   |
-| Peaking | 8000 Hz  | 1.41 | 0.5 dB   |
-| Peaking | 16000 Hz | 1.41 | -27.8 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 10.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.8 dB   |
+| Peaking | 16000 Hz | 1.41 | -30.6 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Campfire%20Audio%20Io/Campfire%20Audio%20Io.png)

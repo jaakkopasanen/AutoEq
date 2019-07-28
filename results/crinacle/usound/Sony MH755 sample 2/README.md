@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-2.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-3.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.8dB**.
+When using independent subset of filters, apply preamp of **-0.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 21 Hz    | 0.68 | -6.8 dB |
-| Peaking | 73 Hz    | 0.43 | -1.9 dB |
-| Peaking | 724 Hz   | 1.11 | 2.4 dB  |
-| Peaking | 3178 Hz  | 2.47 | -3.2 dB |
-| Peaking | 16848 Hz | 1.07 | -2.3 dB |
-| Peaking | 995 Hz   | 4.78 | 0.9 dB  |
-| Peaking | 1412 Hz  | 3.64 | -1.0 dB |
-| Peaking | 6114 Hz  | 3.22 | 2.3 dB  |
-| Peaking | 7230 Hz  | 2.42 | -2.4 dB |
-| Peaking | 8426 Hz  | 1.98 | 1.1 dB  |
+| Peaking | 20 Hz    | 0.41 | -7.5 dB |
+| Peaking | 127 Hz   | 1.7  | -1.2 dB |
+| Peaking | 3226 Hz  | 2.78 | -3.2 dB |
+| Peaking | 14143 Hz | 4.45 | -3.3 dB |
+| Peaking | 18092 Hz | 1.82 | -3.1 dB |
+| Peaking | 880 Hz   | 1    | 2.8 dB  |
+| Peaking | 1392 Hz  | 1.83 | -1.6 dB |
+| Peaking | 5501 Hz  | 4.7  | 0.7 dB  |
+| Peaking | 7466 Hz  | 3.89 | -1.6 dB |
+| Peaking | 8682 Hz  | 1.88 | 0.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.5dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.3 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.0 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.1 dB |
-| Peaking | 4000 Hz  | 1.41 | -1.7 dB |
-| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -2.5 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.8 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -2.6 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Sony%20MH755%20sample%202/Sony%20MH755%20sample%202.png)

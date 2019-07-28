@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 36 Hz    | 0.79 | -6.6 dB |
-| Peaking | 169 Hz   | 1.82 | -5.2 dB |
-| Peaking | 295 Hz   | 1.19 | 7.1 dB  |
-| Peaking | 920 Hz   | 1.33 | -4.2 dB |
-| Peaking | 3011 Hz  | 6.46 | 5.4 dB  |
-| Peaking | 2234 Hz  | 4.3  | 2.5 dB  |
-| Peaking | 3856 Hz  | 6.57 | -4.0 dB |
-| Peaking | 13143 Hz | 5.24 | -3.5 dB |
-| Peaking | 18292 Hz | 1.94 | -2.2 dB |
-| Peaking | 19637 Hz | 2.96 | -1.5 dB |
+| Peaking | 35 Hz    | 0.78 | -6.6 dB |
+| Peaking | 167 Hz   | 1.88 | -5.0 dB |
+| Peaking | 296 Hz   | 1.26 | 6.9 dB  |
+| Peaking | 920 Hz   | 1.53 | -4.3 dB |
+| Peaking | 13231 Hz | 4.5  | -6.1 dB |
+| Peaking | 2280 Hz  | 3.77 | 2.1 dB  |
+| Peaking | 3095 Hz  | 4.08 | 4.1 dB  |
+| Peaking | 3772 Hz  | 3.27 | -2.1 dB |
+| Peaking | 3834 Hz  | 4.13 | -1.9 dB |
+| Peaking | 17559 Hz | 1.71 | -2.9 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.3dB**
@@ -28,13 +28,13 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 31 Hz    | 1.41 | -7.1 dB |
 | Peaking | 62 Hz    | 1.41 | -1.5 dB |
 | Peaking | 125 Hz   | 1.41 | -3.7 dB |
-| Peaking | 250 Hz   | 1.41 | 4.3 dB  |
+| Peaking | 250 Hz   | 1.41 | 4.4 dB  |
 | Peaking | 500 Hz   | 1.41 | 2.2 dB  |
 | Peaking | 1000 Hz  | 1.41 | -5.3 dB |
 | Peaking | 2000 Hz  | 1.41 | 2.4 dB  |
-| Peaking | 4000 Hz  | 1.41 | -0.0 dB |
-| Peaking | 8000 Hz  | 1.41 | -0.8 dB |
-| Peaking | 16000 Hz | 1.41 | -1.4 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 8000 Hz  | 1.41 | -1.1 dB |
+| Peaking | 16000 Hz | 1.41 | -3.2 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/JBL%20Duet%20NC%20(ANC%20Off)/JBL%20Duet%20NC%20(ANC%20Off).png)

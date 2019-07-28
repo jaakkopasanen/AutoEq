@@ -8,30 +8,33 @@ When using independent subset of filters, apply preamp of **-6.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 15 Hz   | 0.79 | 7.2 dB  |
-| Peaking | 147 Hz  | 0.55 | -3.3 dB |
-| Peaking | 891 Hz  | 1.91 | 2.7 dB  |
-| Peaking | 4703 Hz | 2.25 | 4.7 dB  |
-| Peaking | 7121 Hz | 3.5  | -3.8 dB |
-| Peaking | 2484 Hz | 3.07 | -1.1 dB |
-| Peaking | 3623 Hz | 4.71 | 0.7 dB  |
+| Peaking | 16 Hz   | 0.81 | 6.6 dB  |
+| Peaking | 146 Hz  | 0.55 | -3.3 dB |
+| Peaking | 889 Hz  | 1.91 | 2.7 dB  |
+| Peaking | 4570 Hz | 2.41 | 4.4 dB  |
+| Peaking | 7266 Hz | 3.32 | -3.5 dB |
+| Peaking | 2549 Hz | 2.5  | -1.2 dB |
+| Peaking | 3425 Hz | 2.5  | 0.7 dB  |
+| Peaking | 8126 Hz | 2.14 | -0.4 dB |
+| Peaking | 8407 Hz | 1.52 | -0.2 dB |
+| Peaking | 8976 Hz | 3.03 | 1.0 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 3.9 dB  |
+| Peaking | 31 Hz    | 1.41 | 3.8 dB  |
 | Peaking | 62 Hz    | 1.41 | -1.1 dB |
-| Peaking | 125 Hz   | 1.41 | -2.8 dB |
+| Peaking | 125 Hz   | 1.41 | -2.9 dB |
 | Peaking | 250 Hz   | 1.41 | -2.2 dB |
 | Peaking | 500 Hz   | 1.41 | -0.1 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.6 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.8 dB |
-| Peaking | 4000 Hz  | 1.41 | 3.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.8 dB |
-| Peaking | 16000 Hz | 1.41 | 0.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 16000 Hz | 1.41 | 0.3 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Kumitate%20KL-Corona%20sample%202/Kumitate%20KL-Corona%20sample%202.png)

@@ -4,23 +4,23 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-3.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 258 Hz   | 0.54 | -4.5 dB  |
-| Peaking | 1949 Hz  | 0.87 | 2.7 dB   |
-| Peaking | 3203 Hz  | 4.27 | 3.7 dB   |
-| Peaking | 6114 Hz  | 3.27 | 6.5 dB   |
-| Peaking | 17661 Hz | 0.95 | -15.0 dB |
-| Peaking | 23 Hz    | 1.22 | 1.7 dB   |
-| Peaking | 55 Hz    | 2.59 | 0.8 dB   |
-| Peaking | 4388 Hz  | 7.29 | -1.8 dB  |
-| Peaking | 13306 Hz | 1.83 | 5.8 dB   |
-| Peaking | 15384 Hz | 2.9  | -7.8 dB  |
+| Peaking | 265 Hz   | 0.51 | -4.4 dB  |
+| Peaking | 981 Hz   | 2.35 | 1.3 dB   |
+| Peaking | 2424 Hz  | 1.04 | 2.7 dB   |
+| Peaking | 9678 Hz  | 0.48 | 8.3 dB   |
+| Peaking | 19174 Hz | 0.22 | -18.1 dB |
+| Peaking | 4489 Hz  | 4.41 | -2.6 dB  |
+| Peaking | 5877 Hz  | 5.14 | 4.2 dB   |
+| Peaking | 13244 Hz | 3.75 | 6.4 dB   |
+| Peaking | 15156 Hz | 4.24 | -8.3 dB  |
+| Peaking | 21422 Hz | 1.61 | 1.8 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.5dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -2.6 dB  |
 | Peaking | 1000 Hz  | 1.41 | 0.6 dB   |
 | Peaking | 2000 Hz  | 1.41 | 2.6 dB   |
-| Peaking | 4000 Hz  | 1.41 | 2.6 dB   |
-| Peaking | 8000 Hz  | 1.41 | 3.2 dB   |
-| Peaking | 16000 Hz | 1.41 | -15.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.3 dB   |
+| Peaking | 8000 Hz  | 1.41 | 3.7 dB   |
+| Peaking | 16000 Hz | 1.41 | -17.1 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20VE6X2/Vision%20Ears%20VE6X2.png)

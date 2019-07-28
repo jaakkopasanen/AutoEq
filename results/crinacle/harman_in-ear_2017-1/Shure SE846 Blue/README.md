@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 11 Hz    | 0.42 | -2.9 dB |
-| Peaking | 169 Hz   | 0.21 | -4.2 dB |
-| Peaking | 1515 Hz  | 1.35 | -4.5 dB |
-| Peaking | 4538 Hz  | 0.43 | 10.3 dB |
-| Peaking | 9008 Hz  | 0.43 | -5.7 dB |
-| Peaking | 3969 Hz  | 6.39 | -1.2 dB |
-| Peaking | 6346 Hz  | 3.3  | 3.1 dB  |
-| Peaking | 7554 Hz  | 2.16 | -3.3 dB |
-| Peaking | 14431 Hz | 0.86 | 3.1 dB  |
-| Peaking | 14945 Hz | 3.11 | -6.6 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 22 Hz    | 0.84 | -2.1 dB  |
+| Peaking | 153 Hz   | 0.22 | -4.2 dB  |
+| Peaking | 1475 Hz  | 1.72 | -3.1 dB  |
+| Peaking | 3710 Hz  | 0.77 | 7.0 dB   |
+| Peaking | 14670 Hz | 4.74 | -10.5 dB |
+| Peaking | 2781 Hz  | 4.93 | 1.2 dB   |
+| Peaking | 3858 Hz  | 2.85 | -1.2 dB  |
+| Peaking | 6276 Hz  | 2.39 | 4.2 dB   |
+| Peaking | 7685 Hz  | 1.74 | -3.6 dB  |
+| Peaking | 13175 Hz | 4.94 | 1.6 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB**
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 0.3 dB  |
 | Peaking | 4000 Hz  | 1.41 | 7.9 dB  |
 | Peaking | 8000 Hz  | 1.41 | 0.4 dB  |
-| Peaking | 16000 Hz | 1.41 | -2.7 dB |
+| Peaking | 16000 Hz | 1.41 | -4.2 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Shure%20SE846%20Blue/Shure%20SE846%20Blue.png)

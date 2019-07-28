@@ -6,18 +6,18 @@ In case of using parametric equalizer, apply preamp of **-7.4dB** and build filt
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.4dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 35 Hz    | 0.63 | 6.8 dB   |
-| Peaking | 1940 Hz  | 2.09 | 4.3 dB   |
-| Peaking | 2814 Hz  | 5.96 | -1.3 dB  |
-| Peaking | 6060 Hz  | 2.58 | -1.9 dB  |
-| Peaking | 19889 Hz | 0.28 | -14.0 dB |
-| Peaking | 234 Hz   | 1.43 | -1.3 dB  |
-| Peaking | 870 Hz   | 1.03 | -0.8 dB  |
-| Peaking | 1494 Hz  | 3.66 | 0.9 dB   |
-| Peaking | 9556 Hz  | 4.8  | 3.7 dB   |
-| Peaking | 11773 Hz | 4.79 | -3.0 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 35 Hz    | 0.63 | 6.8 dB  |
+| Peaking | 1890 Hz  | 2.41 | 4.3 dB  |
+| Peaking | 5601 Hz  | 2.25 | -1.7 dB |
+| Peaking | 19774 Hz | 0.2  | -3.9 dB |
+| Peaking | 20205 Hz | 0.21 | -9.3 dB |
+| Peaking | 278 Hz   | 0.85 | -1.1 dB |
+| Peaking | 3785 Hz  | 4.23 | 1.5 dB  |
+| Peaking | 4217 Hz  | 1.04 | -0.7 dB |
+| Peaking | 9684 Hz  | 3.13 | 2.0 dB  |
+| Peaking | 11634 Hz | 4.28 | -2.8 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.3 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.8 dB  |
 | Peaking | 2000 Hz  | 1.41 | 4.0 dB   |
-| Peaking | 4000 Hz  | 1.41 | -1.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.7 dB  |
-| Peaking | 16000 Hz | 1.41 | -13.1 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.1 dB  |
+| Peaking | 16000 Hz | 1.41 | -14.7 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800%20S%20(Dekoni%20Fenestrated%20Sheepskin%20earpads)/Sennheiser%20HD%20800%20S%20(Dekoni%20Fenestrated%20Sheepskin%20earpads).png)

@@ -8,15 +8,16 @@ When using independent subset of filters, apply preamp of **-2.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 17 Hz    | 0.32 | -6.6 dB |
-| Peaking | 136 Hz   | 1.08 | -1.3 dB |
-| Peaking | 766 Hz   | 1.3  | 2.3 dB  |
-| Peaking | 3173 Hz  | 3.11 | -3.0 dB |
-| Peaking | 15840 Hz | 1.92 | -2.2 dB |
-| Peaking | 1000 Hz  | 5.61 | 0.8 dB  |
-| Peaking | 1403 Hz  | 4.02 | -1.0 dB |
-| Peaking | 5550 Hz  | 3.57 | 1.4 dB  |
-| Peaking | 7127 Hz  | 7.1  | -1.7 dB |
+| Peaking | 23 Hz    | 0.58 | -6.3 dB |
+| Peaking | 104 Hz   | 0.62 | -1.8 dB |
+| Peaking | 756 Hz   | 1.21 | 2.3 dB  |
+| Peaking | 3173 Hz  | 2.83 | -3.0 dB |
+| Peaking | 15023 Hz | 2.87 | -2.4 dB |
+| Peaking | 1007 Hz  | 3.99 | 0.7 dB  |
+| Peaking | 1388 Hz  | 3.32 | -1.0 dB |
+| Peaking | 6638 Hz  | 1.35 | 1.4 dB  |
+| Peaking | 7181 Hz  | 3.67 | -2.7 dB |
+| Peaking | 18965 Hz | 1.41 | -1.0 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.3dB**
@@ -29,11 +30,11 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 125 Hz   | 1.41 | -1.9 dB |
 | Peaking | 250 Hz   | 1.41 | -0.6 dB |
 | Peaking | 500 Hz   | 1.41 | 1.2 dB  |
-| Peaking | 1000 Hz  | 1.41 | 1.8 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | -0.9 dB |
-| Peaking | 4000 Hz  | 1.41 | -1.2 dB |
-| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -1.9 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.3 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 16000 Hz | 1.41 | -1.7 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Sony%20MH755/Sony%20MH755.png)

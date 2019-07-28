@@ -4,23 +4,23 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.9dB**.
+When using independent subset of filters, apply preamp of **-5.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 20 Hz    | 1.55 | 3.7 dB   |
-| Peaking | 119 Hz   | 0.53 | -6.3 dB  |
-| Peaking | 266 Hz   | 0.86 | -2.7 dB  |
-| Peaking | 9171 Hz  | 0.24 | 9.9 dB   |
-| Peaking | 16376 Hz | 0.77 | -28.1 dB |
-| Peaking | 1444 Hz  | 4.24 | -1.5 dB  |
-| Peaking | 6355 Hz  | 1.5  | 3.3 dB   |
-| Peaking | 7793 Hz  | 2.08 | -5.6 dB  |
-| Peaking | 12832 Hz | 2.89 | 5.8 dB   |
-| Peaking | 14811 Hz | 3.94 | -4.9 dB  |
+| Peaking | 20 Hz    | 1.46 | 3.7 dB   |
+| Peaking | 102 Hz   | 0.54 | -4.9 dB  |
+| Peaking | 229 Hz   | 0.63 | -4.1 dB  |
+| Peaking | 9280 Hz  | 0.26 | 15.2 dB  |
+| Peaking | 16346 Hz | 0.46 | -30.5 dB |
+| Peaking | 1465 Hz  | 3.4  | -1.8 dB  |
+| Peaking | 6164 Hz  | 1.33 | 2.8 dB   |
+| Peaking | 7862 Hz  | 2.14 | -5.3 dB  |
+| Peaking | 12448 Hz | 2.76 | 5.1 dB   |
+| Peaking | 14815 Hz | 4.77 | -5.4 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | 1.2 dB   |
 | Peaking | 2000 Hz  | 1.41 | 1.5 dB   |
 | Peaking | 4000 Hz  | 1.41 | 6.8 dB   |
-| Peaking | 8000 Hz  | 1.41 | 3.8 dB   |
-| Peaking | 16000 Hz | 1.41 | -21.3 dB |
+| Peaking | 8000 Hz  | 1.41 | 4.5 dB   |
+| Peaking | 16000 Hz | 1.41 | -23.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Final%20Audio%20E3000%20sample%203/Final%20Audio%20E3000%20sample%203.png)

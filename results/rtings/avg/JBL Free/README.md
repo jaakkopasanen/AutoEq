@@ -8,15 +8,16 @@ When using independent subset of filters, apply preamp of **-3.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 43 Hz    | 0.29 | -5.6 dB |
-| Peaking | 783 Hz   | 1.56 | 3.4 dB  |
-| Peaking | 4950 Hz  | 1.63 | 4.2 dB  |
-| Peaking | 7971 Hz  | 0.2  | -1.7 dB |
-| Peaking | 17728 Hz | 1.39 | -7.1 dB |
-| Peaking | 6055 Hz  | 8.93 | 1.4 dB  |
-| Peaking | 7112 Hz  | 5.68 | -3.7 dB |
-| Peaking | 11286 Hz | 1.18 | 3.9 dB  |
-| Peaking | 11995 Hz | 3.06 | -6.6 dB |
+| Peaking | 43 Hz    | 0.3  | -5.6 dB |
+| Peaking | 767 Hz   | 1.88 | 3.2 dB  |
+| Peaking | 12339 Hz | 3.65 | -3.8 dB |
+| Peaking | 17279 Hz | 1.12 | -8.6 dB |
+| Peaking | 20788 Hz | 1.45 | -4.2 dB |
+| Peaking | 14 Hz    | 1.57 | -0.7 dB |
+| Peaking | 4982 Hz  | 2.7  | 2.6 dB  |
+| Peaking | 7324 Hz  | 5.02 | -4.9 dB |
+| Peaking | 8547 Hz  | 2.18 | 1.8 dB  |
+| Peaking | 22048 Hz | 1.65 | 0.2 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.7dB**
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.8 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.7 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 16000 Hz | 1.41 | -6.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 16000 Hz | 1.41 | -8.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/JBL%20Free/JBL%20Free.png)

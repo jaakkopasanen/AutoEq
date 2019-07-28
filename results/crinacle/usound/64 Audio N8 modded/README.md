@@ -8,19 +8,19 @@ When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 23 Hz    | 0.03 | -1.7 dB  |
-| Peaking | 1726 Hz  | 2.11 | -3.1 dB  |
-| Peaking | 3436 Hz  | 2.25 | 3.2 dB   |
-| Peaking | 5948 Hz  | 3.4  | 6.5 dB   |
-| Peaking | 18968 Hz | 0.89 | -10.1 dB |
-| Peaking | 22 Hz    | 0.68 | -2.1 dB  |
-| Peaking | 72 Hz    | 0.62 | 1.6 dB   |
-| Peaking | 403 Hz   | 0.3  | -0.9 dB  |
-| Peaking | 892 Hz   | 2.18 | 1.9 dB   |
-| Peaking | 12044 Hz | 5.23 | 1.1 dB   |
+| Peaking | 194 Hz   | 0.34 | -1.9 dB  |
+| Peaking | 1719 Hz  | 2.09 | -3.2 dB  |
+| Peaking | 3383 Hz  | 2.25 | 2.9 dB   |
+| Peaking | 5949 Hz  | 3.29 | 6.5 dB   |
+| Peaking | 19401 Hz | 0.76 | -12.2 dB |
+| Peaking | 25 Hz    | 1.51 | -3.5 dB  |
+| Peaking | 928 Hz   | 4.21 | 1.3 dB   |
+| Peaking | 8863 Hz  | 5.1  | -1.2 dB  |
+| Peaking | 11752 Hz | 3.23 | 1.3 dB   |
+| Peaking | 18009 Hz | 4.01 | -1.5 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -1.4 dB |
 | Peaking | 1000 Hz  | 1.41 | 0.4 dB  |
 | Peaking | 2000 Hz  | 1.41 | -3.2 dB |
-| Peaking | 4000 Hz  | 1.41 | 4.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | 1.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -5.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.6 dB  |
+| Peaking | 16000 Hz | 1.41 | -6.6 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/64%20Audio%20N8%20modded/64%20Audio%20N8%20modded.png)

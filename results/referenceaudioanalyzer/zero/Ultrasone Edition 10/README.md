@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-8.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-8.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 25 Hz    | 0.76 | 6.2 dB   |
-| Peaking | 428 Hz   | 0.54 | 4.0 dB   |
-| Peaking | 2499 Hz  | 1.89 | 11.3 dB  |
-| Peaking | 5554 Hz  | 1    | -16.6 dB |
-| Peaking | 12949 Hz | 2.48 | -6.7 dB  |
-| Peaking | 1388 Hz  | 5.26 | -2.3 dB  |
-| Peaking | 4173 Hz  | 3.1  | -7.5 dB  |
-| Peaking | 4773 Hz  | 1.26 | 5.8 dB   |
-| Peaking | 6736 Hz  | 3.21 | -6.4 dB  |
-| Peaking | 8752 Hz  | 4.78 | 4.7 dB   |
+| Peaking | 25 Hz    | 0.77 | 6.2 dB   |
+| Peaking | 429 Hz   | 0.53 | 4.0 dB   |
+| Peaking | 2502 Hz  | 1.81 | 11.8 dB  |
+| Peaking | 5549 Hz  | 0.95 | -17.4 dB |
+| Peaking | 13163 Hz | 2.16 | -6.4 dB  |
+| Peaking | 1386 Hz  | 3.56 | -2.9 dB  |
+| Peaking | 2813 Hz  | 0.38 | 1.1 dB   |
+| Peaking | 3990 Hz  | 5.06 | -3.3 dB  |
+| Peaking | 6896 Hz  | 5.22 | -4.0 dB  |
+| Peaking | 8847 Hz  | 3.84 | 2.7 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB**
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -1.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | 9.1 dB   |
 | Peaking | 4000 Hz  | 1.41 | -9.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -11.1 dB |
-| Peaking | 16000 Hz | 1.41 | -3.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -12.3 dB |
+| Peaking | 16000 Hz | 1.41 | -4.3 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Ultrasone%20Edition%2010/Ultrasone%20Edition%2010.png)

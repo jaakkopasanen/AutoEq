@@ -8,19 +8,19 @@ When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 53 Hz    | 0.36 | 6.9 dB   |
-| Peaking | 1004 Hz  | 1.16 | -6.6 dB  |
-| Peaking | 4836 Hz  | 7.02 | -2.9 dB  |
-| Peaking | 15490 Hz | 2.54 | -22.8 dB |
-| Peaking | 22050 Hz | 1.19 | -15.6 dB |
-| Peaking | 1890 Hz  | 3.82 | 5.9 dB   |
-| Peaking | 3045 Hz  | 0.09 | -1.1 dB  |
-| Peaking | 6754 Hz  | 4.34 | 4.2 dB   |
-| Peaking | 12087 Hz | 1.52 | 6.6 dB   |
-| Peaking | 13973 Hz | 2.4  | -6.8 dB  |
+| Peaking | 53 Hz    | 0.37 | 6.9 dB   |
+| Peaking | 1011 Hz  | 1.21 | -6.7 dB  |
+| Peaking | 2905 Hz  | 5.25 | -2.3 dB  |
+| Peaking | 14669 Hz | 2.88 | -10.9 dB |
+| Peaking | 15858 Hz | 2.61 | -19.0 dB |
+| Peaking | 1285 Hz  | 5.62 | -4.4 dB  |
+| Peaking | 1853 Hz  | 3.2  | 4.7 dB   |
+| Peaking | 4906 Hz  | 3.27 | -3.0 dB  |
+| Peaking | 6745 Hz  | 4.43 | 3.9 dB   |
+| Peaking | 10589 Hz | 3.99 | 2.6 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -28,13 +28,13 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 31 Hz    | 1.41 | 6.2 dB   |
 | Peaking | 62 Hz    | 1.41 | 4.1 dB   |
 | Peaking | 125 Hz   | 1.41 | 6.1 dB   |
-| Peaking | 250 Hz   | 1.41 | -0.5 dB  |
+| Peaking | 250 Hz   | 1.41 | -0.6 dB  |
 | Peaking | 500 Hz   | 1.41 | -1.4 dB  |
 | Peaking | 1000 Hz  | 1.41 | -7.0 dB  |
 | Peaking | 2000 Hz  | 1.41 | 2.1 dB   |
-| Peaking | 4000 Hz  | 1.41 | -2.4 dB  |
-| Peaking | 8000 Hz  | 1.41 | 3.7 dB   |
-| Peaking | 16000 Hz | 1.41 | -19.1 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | 4.1 dB   |
+| Peaking | 16000 Hz | 1.41 | -21.4 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sony%20XEA20%20Xperia%20Ear%20Duo/Sony%20XEA20%20Xperia%20Ear%20Duo.png)

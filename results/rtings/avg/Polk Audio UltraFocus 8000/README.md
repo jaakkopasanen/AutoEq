@@ -2,24 +2,23 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-4.4dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.5dB**.
+When using independent subset of filters, apply preamp of **-4.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 3194 Hz  | 2.32 | 6.1 dB  |
-| Peaking | 4060 Hz  | 0.98 | -5.4 dB |
-| Peaking | 6388 Hz  | 3.43 | 7.4 dB  |
-| Peaking | 16192 Hz | 0.67 | -2.2 dB |
-| Peaking | 16 Hz    | 0.57 | -7.0 dB |
-| Peaking | 120 Hz   | 0.95 | -0.8 dB |
-| Peaking | 233 Hz   | 2.05 | -0.9 dB |
-| Peaking | 9134 Hz  | 4.56 | 0.4 dB  |
-| Peaking | 10040 Hz | 7.2  | 0.8 dB  |
+| Peaking | 4711 Hz  | 3.72 | -3.8 dB |
+| Peaking | 6457 Hz  | 3.62 | 4.5 dB  |
+| Peaking | 13804 Hz | 1.22 | -2.9 dB |
+| Peaking | 17888 Hz | 1.79 | -2.7 dB |
+| Peaking | 15 Hz    | 0.5  | -7.1 dB |
+| Peaking | 175 Hz   | 0.86 | -1.1 dB |
+| Peaking | 2000 Hz  | 3.3  | -1.7 dB |
+| Peaking | 2900 Hz  | 3.99 | 2.2 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-1.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,9 +30,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.1 dB  |
 | Peaking | 1000 Hz  | 1.41 | 0.4 dB  |
 | Peaking | 2000 Hz  | 1.41 | -0.4 dB |
-| Peaking | 4000 Hz  | 1.41 | -0.9 dB |
-| Peaking | 8000 Hz  | 1.41 | 1.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -3.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -4.4 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Polk%20Audio%20UltraFocus%208000/Polk%20Audio%20UltraFocus%208000.png)

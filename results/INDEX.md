@@ -20,6 +20,12 @@ from the same source.
 - [1MORE Triple Driver](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Triple%20Driver) by Innerfidelity
 - [1MORE Triple Driver](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/1MORE%20Triple%20Driver) by Rtings
 - [1MORE Voice of China](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/1MORE%20Voice%20of%20China) by Innerfidelity
+- [64 Audio 1964 Ears V2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%201964%20Ears%20V2) by Crinacle (Harman in-ear 2017-1)
+- [64 Audio 1964 Ears V2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%201964%20Ears%20V2) by Crinacle (Usound)
+- [64 Audio A12t custom sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20A12t%20custom%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [64 Audio A12t custom sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%20A12t%20custom%20sample%201) by Crinacle (Usound)
+- [64 Audio A12t custom sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20A12t%20custom%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [64 Audio A12t custom sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%20A12t%20custom%20sample%202) by Crinacle (Usound)
 - [64 Audio A12t custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20A12t%20custom) by Crinacle (Harman in-ear 2017-1)
 - [64 Audio A12t custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%20A12t%20custom) by Crinacle (Usound)
 - [64 Audio A12t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20A12t) by Crinacle (Harman in-ear 2017-1)
@@ -76,6 +82,12 @@ from the same source.
 - [64 Audio N8 vent blocked](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%20N8%20vent%20blocked) by Crinacle (Usound)
 - [64 Audio N8t M15](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20N8t%20M15) by Crinacle (Harman in-ear 2017-1)
 - [64 Audio N8t M15](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%20N8t%20M15) by Crinacle (Usound)
+- [64 Audio Tia Fourte Noir](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20Tia%20Fourte%20Noir) by Crinacle (Harman in-ear 2017-1)
+- [64 Audio Tia Fourte Noir](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%20Tia%20Fourte%20Noir) by Crinacle (Usound)
+- [64 Audio Tia Fourte sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20Tia%20Fourte%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [64 Audio Tia Fourte sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%20Tia%20Fourte%20sample%201) by Crinacle (Usound)
+- [64 Audio Tia Fourte sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20Tia%20Fourte%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [64 Audio Tia Fourte sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%20Tia%20Fourte%20sample%202) by Crinacle (Usound)
 - [64 Audio Tia Fourte](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20Tia%20Fourte) by Crinacle (Harman in-ear 2017-1)
 - [64 Audio Tia Fourte](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/64%20Audio%20Tia%20Fourte) by Crinacle (Usound)
 - [64 Audio U12t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20U12t) by Crinacle (Harman in-ear 2017-1)
@@ -99,6 +111,10 @@ from the same source.
 - [AAW A3H V2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AAW%20A3H%20V2) by Crinacle (Usound)
 - [AAW A3H](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AAW%20A3H) by Crinacle (Harman in-ear 2017-1)
 - [AAW A3H](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AAW%20A3H) by Crinacle (Usound)
+- [AAW ASH sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AAW%20ASH%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [AAW ASH sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AAW%20ASH%20sample%201) by Crinacle (Usound)
+- [AAW ASH sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AAW%20ASH%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [AAW ASH sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AAW%20ASH%20sample%202) by Crinacle (Usound)
 - [AAW ASH](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AAW%20ASH) by Crinacle (Harman in-ear 2017-1)
 - [AAW ASH](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AAW%20ASH) by Crinacle (Usound)
 - [AAW AXH 2019](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AAW%20AXH%202019) by Crinacle (Harman in-ear 2017-1)
@@ -109,6 +125,8 @@ from the same source.
 - [AAW Canary](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AAW%20Canary) by Crinacle (Usound)
 - [AAW Mockingbird](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AAW%20Mockingbird) by Crinacle (Harman in-ear 2017-1)
 - [AAW Mockingbird](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AAW%20Mockingbird) by Crinacle (Usound)
+- [AAW Nightingale](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AAW%20Nightingale) by Crinacle (Harman in-ear 2017-1)
+- [AAW Nightingale](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AAW%20Nightingale) by Crinacle (Usound)
 - [AAW W500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AAW%20W500) by Crinacle (Harman in-ear 2017-1)
 - [AAW W500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AAW%20W500) by Crinacle (Usound)
 - [AAW W900](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AAW%20W900) by Crinacle (Harman in-ear 2017-1)
@@ -286,6 +304,8 @@ from the same source.
 - [AKG N5005 Mid High](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AKG%20N5005%20Mid%20High) by Crinacle (Usound)
 - [AKG N5005 Reference](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AKG%20N5005%20Reference) by Crinacle (Harman in-ear 2017-1)
 - [AKG N5005 Reference](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AKG%20N5005%20Reference) by Crinacle (Usound)
+- [AKG N5005](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/AKG%20N5005) by oratory1990 (Harman in-ear 2017-1)
+- [AKG N5005](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/AKG%20N5005) by oratory1990 (Usound)
 - [AKG N60 NC Wireless Bluetooth](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/AKG%20N60%20NC%20Wireless%20Bluetooth) by oratory1990
 - [AKG N60NC Wired Passive](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/AKG%20N60NC%20Wired%20Passive) by Innerfidelity
 - [AKG N60NC Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/AKG%20N60NC%20Wireless) by Rtings
@@ -396,6 +416,10 @@ from the same source.
 - [Audeo PFE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Audeo%20PFE) by Reference Audio Analyzer
 - [Audeze EL8 Closed](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20EL8%20Closed) by Innerfidelity
 - [Audeze EL8 Open](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20EL8%20Open) by Innerfidelity
+- [Audeze iSine 10 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Audeze%20iSine%2010%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Audeze iSine 10 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Audeze%20iSine%2010%20sample%201) by Crinacle (Usound)
+- [Audeze iSine 10 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Audeze%20iSine%2010%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [Audeze iSine 10 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Audeze%20iSine%2010%20sample%202) by Crinacle (Usound)
 - [Audeze iSine 10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Audeze%20iSine%2010) by Crinacle (Harman in-ear 2017-1)
 - [Audeze iSine 10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Audeze%20iSine%2010) by Crinacle (Usound)
 - [Audeze iSine 20 Cipher](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Audeze%20iSine%2020%20Cipher) by Crinacle (Harman in-ear 2017-1)
@@ -462,6 +486,8 @@ from the same source.
 - [Audeze Sine](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Audeze%20Sine) by Reference Audio Analyzer
 - [Audio Genetic AG2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Audio%20Genetic%20AG2) by Crinacle (Harman in-ear 2017-1)
 - [Audio Genetic AG2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Audio%20Genetic%20AG2) by Crinacle (Usound)
+- [Audio Technica ATH-SPORT7TW](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Audio%20Technica%20ATH-SPORT7TW) by Crinacle (Harman in-ear 2017-1)
+- [Audio Technica ATH-SPORT7TW](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Audio%20Technica%20ATH-SPORT7TW) by Crinacle (Usound)
 - [Audio Zenith PMx2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audio%20Zenith%20PMx2) by Innerfidelity
 - [Audio-Technica ATH-A1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audio-Technica%20ATH-A1000X) by Innerfidelity
 - [Audio-Technica ATH-A1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Audio-Technica%20ATH-A1000X) by Reference Audio Analyzer
@@ -560,6 +586,7 @@ from the same source.
 - [Audio-Technica ATH-M50x](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Audio-Technica%20ATH-M50x) by Reference Audio Analyzer
 - [Audio-Technica ATH-M50x](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Audio-Technica%20ATH-M50x) by Rtings
 - [Audio-Technica ATH-M50xBT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Audio-Technica%20ATH-M50xBT) by Rtings
+- [Audio-Technica ATH-M60x](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Audio-Technica%20ATH-M60x) by oratory1990
 - [Audio-Technica ATH-M60x](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Audio-Technica%20ATH-M60x) by Rtings
 - [Audio-Technica ATH-M70x](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audio-Technica%20ATH-M70x) by Innerfidelity
 - [Audio-Technica ATH-M70x](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Audio-Technica%20ATH-M70x) by Reference Audio Analyzer
@@ -615,6 +642,10 @@ from the same source.
 - [AUKEY Latitude](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/AUKEY%20Latitude) by Rtings
 - [Aurex HR V9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Aurex%20HR%20V9) by Innerfidelity
 - [Aurisonic Rockets](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Aurisonic%20Rockets) by Innerfidelity
+- [AVIOT TE-D01b](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AVIOT%20TE-D01b) by Crinacle (Harman in-ear 2017-1)
+- [AVIOT TE-D01b](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AVIOT%20TE-D01b) by Crinacle (Usound)
+- [AVIOT TE-D01d](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AVIOT%20TE-D01d) by Crinacle (Harman in-ear 2017-1)
+- [AVIOT TE-D01d](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AVIOT%20TE-D01d) by Crinacle (Usound)
 - [Axelvox HD 241](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Axelvox%20HD%20241) by Reference Audio Analyzer
 - [Axelvox HD 242](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Axelvox%20HD%20242) by Reference Audio Analyzer
 - [Axelvox HD 271](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Axelvox%20HD%20271) by Reference Audio Analyzer
@@ -624,9 +655,13 @@ from the same source.
 - [AZLA 01R Mk2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AZLA%2001R%20Mk2) by Crinacle (Usound)
 - [AZLA Horizon](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AZLA%20Horizon) by Crinacle (Harman in-ear 2017-1)
 - [AZLA Horizon](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AZLA%20Horizon) by Crinacle (Usound)
+- [AZLA Orta](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/AZLA%20Orta) by Crinacle (Harman in-ear 2017-1)
+- [AZLA Orta](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/AZLA%20Orta) by Crinacle (Usound)
 - [B&O PLAY E8 2.0](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/B&O%20PLAY%20E8%202.0) by Rtings
 - [Bang & Olufsen Beoplay 3i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%203i) by Rtings
 - [Bang & Olufsen Beoplay E8 2.0](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%202.0) by Rtings
+- [Bang & Olufsen Beoplay E8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Bang%20&%20Olufsen%20Beoplay%20E8) by Crinacle (Harman in-ear 2017-1)
+- [Bang & Olufsen Beoplay E8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Bang%20&%20Olufsen%20Beoplay%20E8) by Crinacle (Usound)
 - [Bang & Olufsen Beoplay E8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8) by Rtings
 - [Bang & Olufsen Beoplay Earset Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20Earset%20Wireless) by Rtings
 - [Bang & Olufsen Beoplay H6 2nd Gen](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6%202nd%20Gen) by Innerfidelity
@@ -636,6 +671,7 @@ from the same source.
 - [Bang & Olufsen Beoplay H9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20H9) by Rtings
 - [Bang & Olufsen Beoplay H9i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9i) by oratory1990
 - [Bang & Olufsen Beoplay H9i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bang%20&%20Olufsen%20Beoplay%20H9i) by Rtings
+- [Bang & Olufsen H9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Bang%20&%20Olufsen%20H9) by oratory1990
 - [Base Audio G12](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Base%20Audio%20G12) by oratory1990
 - [Beats BeatsX](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beats%20BeatsX) by Rtings
 - [Beats EP On-Ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beats%20EP%20On-Ear) by Rtings
@@ -697,6 +733,7 @@ from the same source.
 - [Beyerdynamic DT 235](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20235) by Innerfidelity
 - [Beyerdynamic DT 235](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20235) by Reference Audio Analyzer
 - [Beyerdynamic DT 240 Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20240%20Pro) by Innerfidelity
+- [Beyerdynamic DT 240](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20240) by oratory1990
 - [Beyerdynamic DT 250 250 ohm Mod](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20250%20250%20ohm%20Mod) by Reference Audio Analyzer
 - [Beyerdynamic DT 250 250 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20250%20250%20ohm) by Reference Audio Analyzer
 - [Beyerdynamic DT 250 80 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20250%2080%20ohm) by Reference Audio Analyzer
@@ -836,6 +873,7 @@ from the same source.
 - [Bose AE2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Bose%20AE2) by Reference Audio Analyzer
 - [Bose AE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Bose%20AE) by Reference Audio Analyzer
 - [Bose Hearphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bose%20Hearphones) by Rtings
+- [Bose Noise Cancelling Headphones 700](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bose%20Noise%20Cancelling%20Headphones%20700) by Rtings
 - [Bose On-ear headphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Bose%20On-ear%20headphones) by Reference Audio Analyzer
 - [Bose QuietComfort 15](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Bose%20QuietComfort%2015) by Headphone.com
 - [Bose QuietComfort 15](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bose%20QuietComfort%2015) by Innerfidelity
@@ -858,6 +896,8 @@ from the same source.
 - [Bose QuietControl 30](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bose%20QuietControl%2030) by Rtings
 - [Bose SoundLink Around-Ear II](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bose%20SoundLink%20Around-Ear%20II) by Rtings
 - [Bose SoundLink On-Ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bose%20SoundLink%20On-Ear) by Rtings
+- [Bose SoundSport Free](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Bose%20SoundSport%20Free) by Crinacle (Harman in-ear 2017-1)
+- [Bose SoundSport Free](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Bose%20SoundSport%20Free) by Crinacle (Usound)
 - [Bose SoundSport Free](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Bose%20SoundSport%20Free) by oratory1990 (Harman in-ear 2017-1)
 - [Bose SoundSport Free](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Bose%20SoundSport%20Free) by oratory1990 (Usound)
 - [Bose SoundSport Free](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bose%20SoundSport%20Free) by Rtings
@@ -869,6 +909,8 @@ from the same source.
 - [Bose SoundWear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bose%20SoundWear) by Rtings
 - [Bose TriPort ie](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Bose%20TriPort%20ie) by Reference Audio Analyzer
 - [BOSS BA-PC15](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/BOSS%20BA-PC15) by Reference Audio Analyzer
+- [Bowers & Wilkins C5 series 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Bowers%20&%20Wilkins%20C5%20series%202) by oratory1990 (Harman in-ear 2017-1)
+- [Bowers & Wilkins C5 series 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Bowers%20&%20Wilkins%20C5%20series%202) by oratory1990 (Usound)
 - [Bowers & Wilkins C5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bowers%20&%20Wilkins%20C5) by Innerfidelity
 - [Bowers & Wilkins P3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Bowers%20&%20Wilkins%20P3) by Innerfidelity
 - [Bowers & Wilkins P3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Bowers%20&%20Wilkins%20P3) by Reference Audio Analyzer
@@ -885,6 +927,10 @@ from the same source.
 - [Bowers & Wilkins P7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Bowers%20&%20Wilkins%20P7) by Reference Audio Analyzer
 - [Bowers & Wilkins P7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bowers%20&%20Wilkins%20P7) by Rtings
 - [Bowers & Wilkins PX](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Bowers%20&%20Wilkins%20PX) by Rtings
+- [Brainwavz B400 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Brainwavz%20B400%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Brainwavz B400 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Brainwavz%20B400%20sample%201) by Crinacle (Usound)
+- [Brainwavz B400 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Brainwavz%20B400%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [Brainwavz B400 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Brainwavz%20B400%20sample%202) by Crinacle (Usound)
 - [Brainwavz B400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Brainwavz%20B400) by Crinacle (Harman in-ear 2017-1)
 - [Brainwavz B400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Brainwavz%20B400) by Crinacle (Usound)
 - [Brainwavz HM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Brainwavz%20HM3) by Reference Audio Analyzer
@@ -924,6 +970,8 @@ from the same source.
 - [Campfire Audio Comet](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Campfire%20Audio%20Comet) by oratory1990 (Usound)
 - [Campfire Audio Dorado](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Dorado) by Crinacle (Harman in-ear 2017-1)
 - [Campfire Audio Dorado](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20Dorado) by Crinacle (Usound)
+- [Campfire Audio Equinox](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Equinox) by Crinacle (Harman in-ear 2017-1)
+- [Campfire Audio Equinox](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20Equinox) by Crinacle (Usound)
 - [Campfire Audio IO sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20IO%20sample%201) by Crinacle (Harman in-ear 2017-1)
 - [Campfire Audio IO sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20IO%20sample%201) by Crinacle (Usound)
 - [Campfire Audio IO sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20IO%20sample%202) by Crinacle (Harman in-ear 2017-1)
@@ -932,6 +980,8 @@ from the same source.
 - [Campfire Audio IO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20IO) by Crinacle (Usound)
 - [Campfire Audio Io](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Campfire%20Audio%20Io) by oratory1990 (Harman in-ear 2017-1)
 - [Campfire Audio Io](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Campfire%20Audio%20Io) by oratory1990 (Usound)
+- [Campfire Audio Orion](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Orion) by Crinacle (Harman in-ear 2017-1)
+- [Campfire Audio Orion](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20Orion) by Crinacle (Usound)
 - [Campfire Audio Polaris sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Polaris%20sample%201) by Crinacle (Harman in-ear 2017-1)
 - [Campfire Audio Polaris sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20Polaris%20sample%201) by Crinacle (Usound)
 - [Campfire Audio Polaris sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Polaris%20sample%202) by Crinacle (Harman in-ear 2017-1)
@@ -940,6 +990,8 @@ from the same source.
 - [Campfire Audio Polaris V2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20Polaris%20V2) by Crinacle (Usound)
 - [Campfire Audio Polaris](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Polaris) by Crinacle (Harman in-ear 2017-1)
 - [Campfire Audio Polaris](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20Polaris) by Crinacle (Usound)
+- [Campfire Audio Polaris](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Campfire%20Audio%20Polaris) by oratory1990 (Harman in-ear 2017-1)
+- [Campfire Audio Polaris](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Campfire%20Audio%20Polaris) by oratory1990 (Usound)
 - [Campfire Audio Solaris sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Solaris%20sample%201) by Crinacle (Harman in-ear 2017-1)
 - [Campfire Audio Solaris sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20Solaris%20sample%201) by Crinacle (Usound)
 - [Campfire Audio Solaris sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Solaris%20sample%202) by Crinacle (Harman in-ear 2017-1)
@@ -956,10 +1008,6 @@ from the same source.
 - [Campfire Audio Vega sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20Vega%20sample%202) by Crinacle (Usound)
 - [Campfire Audio Vega](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Vega) by Crinacle (Harman in-ear 2017-1)
 - [Campfire Audio Vega](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Audio%20Vega) by Crinacle (Usound)
-- [Campfire Equinox](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Equinox) by Crinacle (Harman in-ear 2017-1)
-- [Campfire Equinox](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Equinox) by Crinacle (Usound)
-- [Campfire Orion](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Orion) by Crinacle (Harman in-ear 2017-1)
-- [Campfire Orion](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Campfire%20Orion) by Crinacle (Usound)
 - [Cardas EM5813](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Cardas%20EM5813) by Headphone.com
 - [Cardas EM5813](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Cardas%20EM5813) by Innerfidelity
 - [Cardas EM5813](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Cardas%20EM5813) by Reference Audio Analyzer
@@ -1139,6 +1187,8 @@ from the same source.
 - [Dunu Falcon-C](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Dunu%20Falcon-C) by Reference Audio Analyzer
 - [Dunu Hephaes (DN-16)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Dunu%20Hephaes%20(DN-16)) by Reference Audio Analyzer
 - [Dunu Landmine (DN-23)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Dunu%20Landmine%20(DN-23)) by Reference Audio Analyzer
+- [DUNU Titan 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/DUNU%20Titan%201) by Crinacle (Harman in-ear 2017-1)
+- [DUNU Titan 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/DUNU%20Titan%201) by Crinacle (Usound)
 - [Dunu Titan 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Dunu%20Titan%201) by Innerfidelity
 - [Dunu Titan 1es](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Dunu%20Titan%201es) by Reference Audio Analyzer
 - [Dunu Titan 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Dunu%20Titan%203) by Crinacle (Harman in-ear 2017-1)
@@ -1147,6 +1197,8 @@ from the same source.
 - [Dunu Titan 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Dunu%20Titan%203) by oratory1990 (Harman in-ear 2017-1)
 - [Dunu Titan 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Dunu%20Titan%203) by oratory1990 (Usound)
 - [Dunu Titan 5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Dunu%20Titan%205) by Innerfidelity
+- [Dynamic Motion DM200H](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Dynamic%20Motion%20DM200H) by Crinacle (Harman in-ear 2017-1)
+- [Dynamic Motion DM200H](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Dynamic%20Motion%20DM200H) by Crinacle (Usound)
 - [E-Mu Teak 2016](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/E-Mu%20Teak%202016) by Innerfidelity
 - [E-Mu Teak Mahogany Cups](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/E-Mu%20Teak%20Mahogany%20Cups) by Innerfidelity
 - [E-Mu Teak Rosewood Cups](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/E-Mu%20Teak%20Rosewood%20Cups) by Innerfidelity
@@ -1235,8 +1287,18 @@ from the same source.
 - [Etymotic ER-4S](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Etymotic%20ER-4S) by Headphone.com
 - [Etymotic ER-6i- Black](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Etymotic%20ER-6i-%20Black) by Headphone.com
 - [Etymotic ER-6i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Etymotic%20ER-6i) by Headphone.com
+- [Etymotic ER2XR sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Etymotic%20ER2XR%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Etymotic ER2XR sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Etymotic%20ER2XR%20sample%201) by Crinacle (Usound)
+- [Etymotic ER2XR sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Etymotic%20ER2XR%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [Etymotic ER2XR sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Etymotic%20ER2XR%20sample%202) by Crinacle (Usound)
 - [Etymotic ER2XR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Etymotic%20ER2XR) by Crinacle (Harman in-ear 2017-1)
 - [Etymotic ER2XR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Etymotic%20ER2XR) by Crinacle (Usound)
+- [Etymotic ER3SE 75 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Etymotic%20ER3SE%2075%20ohm) by Crinacle (Harman in-ear 2017-1)
+- [Etymotic ER3SE 75 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Etymotic%20ER3SE%2075%20ohm) by Crinacle (Usound)
+- [Etymotic ER3SE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Etymotic%20ER3SE) by Crinacle (Harman in-ear 2017-1)
+- [Etymotic ER3SE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Etymotic%20ER3SE) by Crinacle (Usound)
+- [Etymotic ER3XR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Etymotic%20ER3XR) by Crinacle (Harman in-ear 2017-1)
+- [Etymotic ER3XR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Etymotic%20ER3XR) by Crinacle (Usound)
 - [Etymotic ER4P](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Etymotic%20ER4P) by Crinacle (Harman in-ear 2017-1)
 - [Etymotic ER4P](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Etymotic%20ER4P) by Crinacle (Usound)
 - [Etymotic ER4PT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Etymotic%20ER4PT) by Innerfidelity
@@ -1276,6 +1338,30 @@ from the same source.
 - [Fearless Audio ACME 8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20ACME%208) by Crinacle (Usound)
 - [Fearless Audio HyperS 12](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20HyperS%2012) by Crinacle (Harman in-ear 2017-1)
 - [Fearless Audio HyperS 12](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20HyperS%2012) by Crinacle (Usound)
+- [Fearless Audio S4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20S4) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio S4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20S4) by Crinacle (Usound)
+- [Fearless Audio S5H](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20S5H) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio S5H](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20S5H) by Crinacle (Usound)
+- [Fearless Audio S5T](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20S5T) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio S5T](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20S5T) by Crinacle (Usound)
+- [Fearless Audio S6Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20S6Pro) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio S6Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20S6Pro) by Crinacle (Usound)
+- [Fearless Audio S6Rui](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20S6Rui) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio S6Rui](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20S6Rui) by Crinacle (Usound)
+- [Fearless Audio S8F sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20S8F%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio S8F sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20S8F%20sample%201) by Crinacle (Usound)
+- [Fearless Audio S8F sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20S8F%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio S8F sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20S8F%20sample%202) by Crinacle (Usound)
+- [Fearless Audio S8F](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20S8F) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio S8F](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20S8F) by Crinacle (Usound)
+- [Fearless Audio S8Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20S8Pro) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio S8Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20S8Pro) by Crinacle (Usound)
+- [Fearless Audio Start](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Audio%20Start) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Audio Start](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Audio%20Start) by Crinacle (Usound)
+- [Fearless Crystal Ball](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20Crystal%20Ball) by Crinacle (Harman in-ear 2017-1)
+- [Fearless Crystal Ball](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20Crystal%20Ball) by Crinacle (Usound)
+- [Fearless S10 Genie](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fearless%20S10%20Genie) by Crinacle (Harman in-ear 2017-1)
+- [Fearless S10 Genie](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fearless%20S10%20Genie) by Crinacle (Usound)
 - [Fender FXA6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Fender%20FXA6) by Innerfidelity
 - [Fender FXA9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fender%20FXA9) by Crinacle (Harman in-ear 2017-1)
 - [Fender FXA9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fender%20FXA9) by Crinacle (Usound)
@@ -1283,6 +1369,8 @@ from the same source.
 - [Fender Ten 5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fender%20Ten%205) by Crinacle (Usound)
 - [Fender Thirteen 6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fender%20Thirteen%206) by Crinacle (Harman in-ear 2017-1)
 - [Fender Thirteen 6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fender%20Thirteen%206) by Crinacle (Usound)
+- [Fengru HE-200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fengru%20HE-200) by Crinacle (Harman in-ear 2017-1)
+- [Fengru HE-200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fengru%20HE-200) by Crinacle (Usound)
 - [Ferrari Cavallino T350](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Ferrari%20Cavallino%20T350) by Reference Audio Analyzer
 - [Ferrari r100i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Ferrari%20r100i) by Reference Audio Analyzer
 - [Fidue A31s](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Fidue%20A31s) by Innerfidelity
@@ -1315,6 +1403,7 @@ from the same source.
 - [FiiO FH1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FiiO%20FH1) by Crinacle (Usound)
 - [FiiO FH5 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FiiO%20FH5%20sample%201) by Crinacle (Harman in-ear 2017-1)
 - [FiiO FH5 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FiiO%20FH5%20sample%201) by Crinacle (Usound)
+- [FiiO FH5 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FiiO%20FH5%20sample%202) by Crinacle (Harman in-ear 2017-1)
 - [FiiO FH5 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FiiO%20FH5%20sample%202) by Crinacle (Usound)
 - [FiiO FH5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FiiO%20FH5) by Crinacle (Harman in-ear 2017-1)
 - [FiiO FH5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FiiO%20FH5) by Crinacle (Usound)
@@ -1323,6 +1412,12 @@ from the same source.
 - [FiiO FH7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FiiO%20FH7) by Crinacle (Harman in-ear 2017-1)
 - [FiiO FH7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FiiO%20FH7) by Crinacle (Usound)
 - [Final Audio Adagio III](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Final%20Audio%20Adagio%20III) by Innerfidelity
+- [Final Audio B1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Final%20Audio%20B1) by Crinacle (Harman in-ear 2017-1)
+- [Final Audio B1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Final%20Audio%20B1) by Crinacle (Usound)
+- [Final Audio B2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Final%20Audio%20B2) by Crinacle (Harman in-ear 2017-1)
+- [Final Audio B2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Final%20Audio%20B2) by Crinacle (Usound)
+- [Final Audio B3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Final%20Audio%20B3) by Crinacle (Harman in-ear 2017-1)
+- [Final Audio B3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Final%20Audio%20B3) by Crinacle (Usound)
 - [Final Audio Design Adagio III](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Final%20Audio%20Design%20Adagio%20III) by Reference Audio Analyzer
 - [Final Audio Design Adagio V](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Final%20Audio%20Design%20Adagio%20V) by Reference Audio Analyzer
 - [Final Audio Design F4100](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Final%20Audio%20Design%20F4100) by Reference Audio Analyzer
@@ -1382,13 +1477,31 @@ from the same source.
 - [Final Audio Lab 1 Fit 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Final%20Audio%20Lab%201%20Fit%202) by Crinacle (Usound)
 - [Final Audio Lab 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Final%20Audio%20Lab%201) by Crinacle (Harman in-ear 2017-1)
 - [Final Audio Lab 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Final%20Audio%20Lab%201) by Crinacle (Usound)
+- [Final Audio Make 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Final%20Audio%20Make%202) by Crinacle (Harman in-ear 2017-1)
+- [Final Audio Make 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Final%20Audio%20Make%202) by Crinacle (Usound)
 - [Final Audio Pandora Hope 4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Final%20Audio%20Pandora%20Hope%204) by Innerfidelity
+- [fineEars TSH-HR1000K](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/fineEars%20TSH-HR1000K) by Crinacle (Harman in-ear 2017-1)
+- [fineEars TSH-HR1000K](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/fineEars%20TSH-HR1000K) by Crinacle (Usound)
 - [Fir Audio M2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fir%20Audio%20M2) by Crinacle (Harman in-ear 2017-1)
 - [Fir Audio M2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fir%20Audio%20M2) by Crinacle (Usound)
+- [Fir Audio M3 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fir%20Audio%20M3%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Fir Audio M3 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fir%20Audio%20M3%20sample%201) by Crinacle (Usound)
+- [Fir Audio M3 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fir%20Audio%20M3%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [Fir Audio M3 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fir%20Audio%20M3%20sample%202) by Crinacle (Usound)
 - [Fir Audio M3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fir%20Audio%20M3) by Crinacle (Harman in-ear 2017-1)
 - [Fir Audio M3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fir%20Audio%20M3) by Crinacle (Usound)
+- [Fir Audio M4 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fir%20Audio%20M4%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Fir Audio M4 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fir%20Audio%20M4%20sample%201) by Crinacle (Usound)
+- [Fir Audio M4 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fir%20Audio%20M4%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [Fir Audio M4 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fir%20Audio%20M4%20sample%202) by Crinacle (Usound)
 - [Fir Audio M4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fir%20Audio%20M4) by Crinacle (Harman in-ear 2017-1)
 - [Fir Audio M4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fir%20Audio%20M4) by Crinacle (Usound)
+- [Fir Audio M5 custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fir%20Audio%20M5%20custom) by Crinacle (Harman in-ear 2017-1)
+- [Fir Audio M5 custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fir%20Audio%20M5%20custom) by Crinacle (Usound)
+- [FiR Audio M5 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FiR%20Audio%20M5%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [FiR Audio M5 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FiR%20Audio%20M5%20sample%201) by Crinacle (Usound)
+- [Fir Audio M5 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Fir%20Audio%20M5%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [Fir Audio M5 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Fir%20Audio%20M5%20sample%202) by Crinacle (Usound)
 - [FiR Audio M5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FiR%20Audio%20M5) by Crinacle (Harman in-ear 2017-1)
 - [FiR Audio M5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FiR%20Audio%20M5) by Crinacle (Usound)
 - [First Harmonic IEB6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/First%20Harmonic%20IEB6) by Innerfidelity
@@ -1456,6 +1569,8 @@ from the same source.
 - [FitEar Private 223](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FitEar%20Private%20223) by Crinacle (Usound)
 - [FitEar Private 333](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FitEar%20Private%20333) by Crinacle (Harman in-ear 2017-1)
 - [FitEar Private 333](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FitEar%20Private%20333) by Crinacle (Usound)
+- [FitEar Private C435](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FitEar%20Private%20C435) by Crinacle (Harman in-ear 2017-1)
+- [FitEar Private C435](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FitEar%20Private%20C435) by Crinacle (Usound)
 - [FitEar TG334 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FitEar%20TG334%20sample%201) by Crinacle (Harman in-ear 2017-1)
 - [FitEar TG334 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/FitEar%20TG334%20sample%201) by Crinacle (Usound)
 - [FitEar TG334 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/FitEar%20TG334%20sample%202) by Crinacle (Harman in-ear 2017-1)
@@ -1477,7 +1592,7 @@ from the same source.
 - [Focal Elear with Utopia Pads](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Focal%20Elear%20with%20Utopia%20Pads) by Innerfidelity
 - [Focal Elear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Focal%20Elear) by oratory1990
 - [Focal Elear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Focal%20Elear) by Rtings
-- [Focal Elegia (preliminary)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Focal%20Elegia%20(preliminary)) by oratory1990
+- [Focal Elegia](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Focal%20Elegia) by oratory1990
 - [Focal Elegia](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Focal%20Elegia) by Rtings
 - [Focal Listen](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Focal%20Listen) by Innerfidelity
 - [Focal Sphear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Focal%20Sphear) by Crinacle (Harman in-ear 2017-1)
@@ -1555,6 +1670,7 @@ from the same source.
 - [Grado GS1000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Grado%20GS1000) by Innerfidelity
 - [Grado GS1000i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Grado%20GS1000i) by Reference Audio Analyzer
 - [Grado GS2000e](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Grado%20GS2000e) by Reference Audio Analyzer
+- [Grado GW100](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Grado%20GW100) by oratory1990
 - [Grado GW100](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Grado%20GW100) by Rtings
 - [Grado HF-1 Prototype](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Grado%20HF-1%20Prototype) by Innerfidelity
 - [Grado HF-1 Serial 69](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Grado%20HF-1%20Serial%2069) by Innerfidelity
@@ -1680,6 +1796,7 @@ from the same source.
 - [HiFiMAN HE6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/HiFiMAN%20HE6) by Headphone.com
 - [HiFiMAN HE6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE6) by Innerfidelity
 - [Hifiman HE6se](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Hifiman%20HE6se) by oratory1990
+- [Hifiman Jade II](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Hifiman%20Jade%20II) by oratory1990
 - [HiFiMan LE-5LE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/HiFiMan%20LE-5LE) by Reference Audio Analyzer
 - [HiFiMan RE0](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/HiFiMan%20RE0) by Reference Audio Analyzer
 - [HiFiMan RE240](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/HiFiMan%20RE240) by Reference Audio Analyzer
@@ -1743,14 +1860,22 @@ from the same source.
 - [iBasso IT03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/iBasso%20IT03) by Crinacle (Harman in-ear 2017-1)
 - [iBasso IT03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/iBasso%20IT03) by Crinacle (Usound)
 - [iBasso IT03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/iBasso%20IT03) by Reference Audio Analyzer
+- [iBasso IT03w](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/iBasso%20IT03w) by Crinacle (Harman in-ear 2017-1)
+- [iBasso IT03w](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/iBasso%20IT03w) by Crinacle (Usound)
 - [iBasso IT04](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/iBasso%20IT04) by Crinacle (Harman in-ear 2017-1)
 - [iBasso IT04](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/iBasso%20IT04) by Crinacle (Usound)
 - [iHarmonix iHX Pro ev-Series](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/iHarmonix%20iHX%20Pro%20ev-Series) by Headphone.com
 - [iHarmonix Platinum ev-Series](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/iHarmonix%20Platinum%20ev-Series) by Innerfidelity
 - [Ikko OH-1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Ikko%20OH-1) by oratory1990 (Harman in-ear 2017-1)
 - [Ikko OH-1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Ikko%20OH-1) by oratory1990 (Usound)
+- [ikko OH10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/ikko%20OH10) by Crinacle (Harman in-ear 2017-1)
+- [ikko OH10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/ikko%20OH10) by Crinacle (Usound)
+- [Ikko OH10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Ikko%20OH10) by oratory1990 (Harman in-ear 2017-1)
+- [Ikko OH10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Ikko%20OH10) by oratory1990 (Usound)
 - [ikko OH1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/ikko%20OH1) by Crinacle (Harman in-ear 2017-1)
 - [ikko OH1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/ikko%20OH1) by Crinacle (Usound)
+- [Ikko OH1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Ikko%20OH1) by oratory1990 (Harman in-ear 2017-1)
+- [Ikko OH1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Ikko%20OH1) by oratory1990 (Usound)
 - [iMetal iM590](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/iMetal%20iM590) by Innerfidelity
 - [IMR Acoustics R1 Black](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/IMR%20Acoustics%20R1%20Black) by Crinacle (Harman in-ear 2017-1)
 - [IMR Acoustics R1 Black](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/IMR%20Acoustics%20R1%20Black) by Crinacle (Usound)
@@ -1798,6 +1923,8 @@ from the same source.
 - [Jabra Elite 65t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%2065t) by Rtings
 - [Jabra Elite 85h](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%2085h) by Rtings
 - [Jabra Elite Active 45e](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%20Active%2045e) by Rtings
+- [Jabra Elite Active 65t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Jabra%20Elite%20Active%2065t) by Crinacle (Harman in-ear 2017-1)
+- [Jabra Elite Active 65t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Jabra%20Elite%20Active%2065t) by Crinacle (Usound)
 - [Jabra Elite Active 65t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%20Active%2065t) by Rtings
 - [Jabra Elite Sport](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Elite%20Sport) by Rtings
 - [Jabra Evolve 65t](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jabra%20Evolve%2065t) by Rtings
@@ -1849,6 +1976,7 @@ from the same source.
 - [JBL J55i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JBL%20J55i) by Innerfidelity
 - [JBL J88i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JBL%20J88i) by Innerfidelity
 - [JBL Live 200BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Live%20200BT) by Rtings
+- [JBL Live 400BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Live%20400BT) by Rtings
 - [JBL Live 500BT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Live%20500BT) by Rtings
 - [JBL Live 650BTNC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Live%20650BTNC) by Rtings
 - [JBL Reflect Mini 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/JBL%20Reflect%20Mini%202) by Rtings
@@ -1939,6 +2067,10 @@ from the same source.
 - [JVC HA-FW02](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/JVC%20HA-FW02) by Crinacle (Usound)
 - [JVC HA-FW03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/JVC%20HA-FW03) by Crinacle (Harman in-ear 2017-1)
 - [JVC HA-FW03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/JVC%20HA-FW03) by Crinacle (Usound)
+- [JVC HA-FW10000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/JVC%20HA-FW10000) by Crinacle (Harman in-ear 2017-1)
+- [JVC HA-FW10000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/JVC%20HA-FW10000) by Crinacle (Usound)
+- [JVC HA-FW1000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/JVC%20HA-FW1000) by oratory1990 (Harman in-ear 2017-1)
+- [JVC HA-FW1000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/JVC%20HA-FW1000) by oratory1990 (Usound)
 - [JVC HA-FX1X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/JVC%20HA-FX1X) by Reference Audio Analyzer
 - [JVC HA-FX77-B](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/JVC%20HA-FX77-B) by Reference Audio Analyzer
 - [JVC HA-FXT90](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/JVC%20HA-FXT90) by Innerfidelity
@@ -1981,6 +2113,8 @@ from the same source.
 - [Kinera Odin](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kinera%20Odin) by Crinacle (Usound)
 - [Kinera SEED](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Kinera%20SEED) by Crinacle (Harman in-ear 2017-1)
 - [Kinera SEED](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kinera%20SEED) by Crinacle (Usound)
+- [Kinera SIF](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Kinera%20SIF) by Crinacle (Harman in-ear 2017-1)
+- [Kinera SIF](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kinera%20SIF) by Crinacle (Usound)
 - [KLH Ultimate One](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/KLH%20Ultimate%20One) by oratory1990
 - [Klipsch Image One B](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Klipsch%20Image%20One%20B) by Innerfidelity
 - [Klipsch Image One](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Klipsch%20Image%20One) by Headphone.com
@@ -2055,6 +2189,14 @@ from the same source.
 - [Kumitate KL-Corona sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kumitate%20KL-Corona%20sample%202) by Crinacle (Usound)
 - [Kumitate KL-Corona](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Kumitate%20KL-Corona) by Crinacle (Harman in-ear 2017-1)
 - [Kumitate KL-Corona](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kumitate%20KL-Corona) by Crinacle (Usound)
+- [Kumitate KL-Focus Max Bass](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Kumitate%20KL-Focus%20Max%20Bass) by Crinacle (Harman in-ear 2017-1)
+- [Kumitate KL-Focus Max Bass](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kumitate%20KL-Focus%20Max%20Bass) by Crinacle (Usound)
+- [Kumitate KL-Focus Min Bass](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Kumitate%20KL-Focus%20Min%20Bass) by Crinacle (Harman in-ear 2017-1)
+- [Kumitate KL-Focus Min Bass](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kumitate%20KL-Focus%20Min%20Bass) by Crinacle (Usound)
+- [Kumitate KL-Focus Setting 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Kumitate%20KL-Focus%20Setting%202) by Crinacle (Harman in-ear 2017-1)
+- [Kumitate KL-Focus Setting 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kumitate%20KL-Focus%20Setting%202) by Crinacle (Usound)
+- [Kumitate KL-Focus Setting 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Kumitate%20KL-Focus%20Setting%203) by Crinacle (Harman in-ear 2017-1)
+- [Kumitate KL-Focus Setting 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kumitate%20KL-Focus%20Setting%203) by Crinacle (Usound)
 - [Kumitate KL-Kanon 6-Minus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Kumitate%20KL-Kanon%206-Minus) by Crinacle (Harman in-ear 2017-1)
 - [Kumitate KL-Kanon 6-Minus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Kumitate%20KL-Kanon%206-Minus) by Crinacle (Usound)
 - [Kumitate KL-Kanon 6-Plus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Kumitate%20KL-Kanon%206-Plus) by Crinacle (Harman in-ear 2017-1)
@@ -2086,6 +2228,8 @@ from the same source.
 - [KZ AS-10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/KZ%20AS-10) by Rtings
 - [KZ AS10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20AS10) by Crinacle (Harman in-ear 2017-1)
 - [KZ AS10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/KZ%20AS10) by Crinacle (Usound)
+- [KZ ATE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/KZ%20ATE) by oratory1990 (Harman in-ear 2017-1)
+- [KZ ATE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/KZ%20ATE) by oratory1990 (Usound)
 - [KZ ATR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/KZ%20ATR) by Reference Audio Analyzer
 - [KZ ED12](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/KZ%20ED12) by Reference Audio Analyzer
 - [KZ ED16](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20ED16) by Crinacle (Harman in-ear 2017-1)
@@ -2110,6 +2254,8 @@ from the same source.
 - [KZ ZS6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20ZS6) by Crinacle (Harman in-ear 2017-1)
 - [KZ ZS6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/KZ%20ZS6) by Crinacle (Usound)
 - [KZ ZS6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/KZ%20ZS6) by Reference Audio Analyzer
+- [KZ ZS7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/KZ%20ZS7) by oratory1990 (Harman in-ear 2017-1)
+- [KZ ZS7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/KZ%20ZS7) by oratory1990 (Usound)
 - [KZ ZSN](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/KZ%20ZSN) by Rtings
 - [KZ ZSR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/KZ%20ZSR) by Crinacle (Harman in-ear 2017-1)
 - [KZ ZSR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/KZ%20ZSR) by Crinacle (Usound)
@@ -2230,6 +2376,8 @@ from the same source.
 - [Massdrop x Sennheiser PC37X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Sennheiser%20PC37X) by oratory1990
 - [Massdrop x Tanchim Cora](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Massdrop%20x%20Tanchim%20Cora) by Crinacle (Harman in-ear 2017-1)
 - [Massdrop x Tanchim Cora](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Massdrop%20x%20Tanchim%20Cora) by Crinacle (Usound)
+- [Master & Dynamic MW07](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Master%20&%20Dynamic%20MW07) by Crinacle (Harman in-ear 2017-1)
+- [Master & Dynamic MW07](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Master%20&%20Dynamic%20MW07) by Crinacle (Usound)
 - [Master Dynamic ME05](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Master%20Dynamic%20ME05) by Innerfidelity
 - [Master Dynamic MH30](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Master%20Dynamic%20MH30) by Innerfidelity
 - [Master Dynamic MH40](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Master%20Dynamic%20MH40) by Innerfidelity
@@ -2240,6 +2388,8 @@ from the same source.
 - [Mayflower Electronics T50RP Version 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Mayflower%20Electronics%20T50RP%20Version%202) by Innerfidelity
 - [MB Quart QP 200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/MB%20Quart%20QP%20200) by Reference Audio Analyzer
 - [MB Quart QP 400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/MB%20Quart%20QP%20400) by Reference Audio Analyzer
+- [Meccaudio ME20](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Meccaudio%20ME20) by Crinacle (Harman in-ear 2017-1)
+- [Meccaudio ME20](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Meccaudio%20ME20) by Crinacle (Usound)
 - [MEE A161P](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/MEE%20A161P) by Innerfidelity
 - [MEE audio M6 PRO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/MEE%20audio%20M6%20PRO) by Rtings
 - [MEE audio M6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/MEE%20audio%20M6) by Rtings
@@ -2267,6 +2417,10 @@ from the same source.
 - [Meze Classics 66](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Meze%20Classics%2066) by Innerfidelity
 - [Meze Classics 88](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Meze%20Classics%2088) by Innerfidelity
 - [Meze Empyrean (microfiber earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Meze%20Empyrean%20(microfiber%20earpads)) by oratory1990
+- [Meze Rai Penta](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Meze%20Rai%20Penta) by Crinacle (Harman in-ear 2017-1)
+- [Meze Rai Penta](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Meze%20Rai%20Penta) by Crinacle (Usound)
+- [Meze Rai Penta](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Meze%20Rai%20Penta) by oratory1990 (Harman in-ear 2017-1)
+- [Meze Rai Penta](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Meze%20Rai%20Penta) by oratory1990 (Usound)
 - [Microsoft Surface Headphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Microsoft%20Surface%20Headphones) by Rtings
 - [MOE SS01](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/MOE%20SS01) by Innerfidelity
 - [Monoprice 8320](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Monoprice%208320) by Innerfidelity
@@ -2313,6 +2467,8 @@ from the same source.
 - [Monster Turbine-Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Monster%20Turbine-Pro) by Headphone.com
 - [Monster Turbine](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Monster%20Turbine) by Headphone.com
 - [Monster Turbine](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Monster%20Turbine) by Innerfidelity
+- [Moondrop A8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Moondrop%20A8) by Crinacle (Harman in-ear 2017-1)
+- [Moondrop A8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Moondrop%20A8) by Crinacle (Usound)
 - [Moondrop Blessing](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Moondrop%20Blessing) by Crinacle (Harman in-ear 2017-1)
 - [Moondrop Blessing](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Moondrop%20Blessing) by Crinacle (Usound)
 - [Moondrop Crescent](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Moondrop%20Crescent) by Crinacle (Harman in-ear 2017-1)
@@ -2323,6 +2479,8 @@ from the same source.
 - [Moondrop Kanas Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Moondrop%20Kanas%20Pro) by Crinacle (Usound)
 - [Moondrop Kanas Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Moondrop%20Kanas%20Pro) by oratory1990 (Harman in-ear 2017-1)
 - [Moondrop Kanas Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Moondrop%20Kanas%20Pro) by oratory1990 (Usound)
+- [Moondrop Spaceship](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Moondrop%20Spaceship) by Crinacle (Harman in-ear 2017-1)
+- [Moondrop Spaceship](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Moondrop%20Spaceship) by Crinacle (Usound)
 - [Mpow Bluetooth Over-Ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Mpow%20Bluetooth%20Over-Ear) by Rtings
 - [Mpow H10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Mpow%20H10) by Rtings
 - [Mpow H5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Mpow%20H5) by Rtings
@@ -2376,6 +2534,7 @@ from the same source.
 - [NarMoo W1M](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/NarMoo%20W1M) by Innerfidelity
 - [NCM Bella](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/NCM%20Bella) by Crinacle (Harman in-ear 2017-1)
 - [NCM Bella](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/NCM%20Bella) by Crinacle (Usound)
+- [Neumann NDH20](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Neumann%20NDH20) by oratory1990
 - [NHT Super Buds](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/NHT%20Super%20Buds) by Innerfidelity
 - [Nixon RPM](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Nixon%20RPM) by Innerfidelity
 - [Noble Audio Django](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Noble%20Audio%20Django) by Crinacle (Harman in-ear 2017-1)
@@ -2388,6 +2547,8 @@ from the same source.
 - [Noble Audio K10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Noble%20Audio%20K10) by Crinacle (Usound)
 - [Noble Audio Katana](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Noble%20Audio%20Katana) by Crinacle (Harman in-ear 2017-1)
 - [Noble Audio Katana](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Noble%20Audio%20Katana) by Crinacle (Usound)
+- [Noble Audio Khan sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Noble%20Audio%20Khan%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Noble Audio Khan sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Noble%20Audio%20Khan%20sample%201) by Crinacle (Usound)
 - [Noble Audio Khan](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Noble%20Audio%20Khan) by Crinacle (Harman in-ear 2017-1)
 - [Noble Audio Khan](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Noble%20Audio%20Khan) by Crinacle (Usound)
 - [Noble Audio Savanna](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Noble%20Audio%20Savanna) by Crinacle (Harman in-ear 2017-1)
@@ -2461,6 +2622,8 @@ from the same source.
 - [Ocharaku Flat-4 Ti Plus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Ocharaku%20Flat-4%20Ti%20Plus) by Crinacle (Harman in-ear 2017-1)
 - [Ocharaku Flat-4 Ti Plus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Ocharaku%20Flat-4%20Ti%20Plus) by Crinacle (Usound)
 - [Ocharaku Flat4 Kuro Type II](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Ocharaku%20Flat4%20Kuro%20Type%20II) by Innerfidelity
+- [Oluv x EarFun Free](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Oluv%20x%20EarFun%20Free) by Crinacle (Harman in-ear 2017-1)
+- [Oluv x EarFun Free](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Oluv%20x%20EarFun%20Free) by Crinacle (Usound)
 - [Onkyo E900](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Onkyo%20E900) by Crinacle (Harman in-ear 2017-1)
 - [Onkyo E900](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Onkyo%20E900) by Crinacle (Usound)
 - [Onkyo ES-FC300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Onkyo%20ES-FC300) by Innerfidelity
@@ -2483,6 +2646,8 @@ from the same source.
 - [Oppo PM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Oppo%20PM3) by oratory1990
 - [OPPO PM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/OPPO%20PM3) by Reference Audio Analyzer
 - [Oppo PM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Oppo%20PM3) by Rtings
+- [Oriolus Finschi Hifi](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Oriolus%20Finschi%20Hifi) by Crinacle (Harman in-ear 2017-1)
+- [Oriolus Finschi Hifi](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Oriolus%20Finschi%20Hifi) by Crinacle (Usound)
 - [Oriolus Finschi](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Oriolus%20Finschi) by Crinacle (Harman in-ear 2017-1)
 - [Oriolus Finschi](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Oriolus%20Finschi) by Crinacle (Usound)
 - [Oriolus Forsteni sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Oriolus%20Forsteni%20sample%201) by Crinacle (Harman in-ear 2017-1)
@@ -2496,16 +2661,24 @@ from the same source.
 - [Oriolus Mellianus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Oriolus%20Mellianus) by Crinacle (Usound)
 - [Oriolus Mellianus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Oriolus%20Mellianus) by Reference Audio Analyzer
 - [Oriolus MK2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Oriolus%20MK2) by Reference Audio Analyzer
+- [Oriolus Percivali](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Oriolus%20Percivali) by Crinacle (Harman in-ear 2017-1)
+- [Oriolus Percivali](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Oriolus%20Percivali) by Crinacle (Usound)
 - [Oriveti Basic](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Oriveti%20Basic) by Crinacle (Harman in-ear 2017-1)
 - [Oriveti Basic](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Oriveti%20Basic) by Crinacle (Usound)
 - [Oriveti New Primacy](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Oriveti%20New%20Primacy) by Crinacle (Harman in-ear 2017-1)
 - [Oriveti New Primacy](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Oriveti%20New%20Primacy) by Crinacle (Usound)
+- [Oriveti OH300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Oriveti%20OH300) by Crinacle (Harman in-ear 2017-1)
+- [Oriveti OH300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Oriveti%20OH300) by Crinacle (Usound)
+- [Oriveti OH500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Oriveti%20OH500) by Crinacle (Harman in-ear 2017-1)
+- [Oriveti OH500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Oriveti%20OH500) by Crinacle (Usound)
 - [Ortofon 0-One](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Ortofon%200-One) by Innerfidelity
 - [Ortofon 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Ortofon%201) by Headphone.com
 - [Ortofon 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Ortofon%202) by Headphone.com
 - [Ortofon e-Q7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Ortofon%20e-Q7) by Reference Audio Analyzer
 - [Ortofon e-Q8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Ortofon%20e-Q8) by Reference Audio Analyzer
 - [Ostry KC06](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Ostry%20KC06) by Innerfidelity
+- [Pai Audio DM2A](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Pai%20Audio%20DM2A) by Crinacle (Harman in-ear 2017-1)
+- [Pai Audio DM2A](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Pai%20Audio%20DM2A) by Crinacle (Usound)
 - [Panasonic HJE 120](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Panasonic%20HJE%20120) by Reference Audio Analyzer
 - [Panasonic HJE120](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Panasonic%20HJE120) by Innerfidelity
 - [Panasonic RP HT600 S](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Panasonic%20RP%20HT600%20S) by Innerfidelity
@@ -2559,6 +2732,7 @@ from the same source.
 - [Philips Fidelio M1 Mk1 2012](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Philips%20Fidelio%20M1%20Mk1%202012) by Innerfidelity
 - [Philips Fidelio M1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Philips%20Fidelio%20M1) by Innerfidelity
 - [Philips Fidelio M1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Philips%20Fidelio%20M1) by oratory1990
+- [Philips Fidelio M2L](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Philips%20Fidelio%20M2L) by oratory1990
 - [Philips Fidelio NC1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Philips%20Fidelio%20NC1) by Rtings
 - [Philips Fidelio S1 Early 2013](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Philips%20Fidelio%20S1%20Early%202013) by Innerfidelity
 - [Philips Fidelio S2 2013](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Philips%20Fidelio%20S2%202013) by Innerfidelity
@@ -2659,6 +2833,7 @@ from the same source.
 - [PSB M4U 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/PSB%20M4U%202) by Innerfidelity
 - [PSB M4U 4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/PSB%20M4U%204) by Innerfidelity
 - [PSB M4U 8 Wired Passive](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/PSB%20M4U%208%20Wired%20Passive) by Innerfidelity
+- [PSB M4U 8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/PSB%20M4U%208) by oratory1990
 - [Pump Audio Earphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Pump%20Audio%20Earphones) by Innerfidelity
 - [PureSound Clarity One](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/PureSound%20Clarity%20One) by Innerfidelity
 - [Puretone Micro Monitor Classic 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Puretone%20Micro%20Monitor%20Classic%203) by Reference Audio Analyzer
@@ -2728,6 +2903,8 @@ from the same source.
 - [Remax RM-580](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Remax%20RM-580) by Reference Audio Analyzer
 - [RHA CL1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/RHA%20CL1) by Crinacle (Harman in-ear 2017-1)
 - [RHA CL1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/RHA%20CL1) by Crinacle (Usound)
+- [RHA CL2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/RHA%20CL2) by Crinacle (Harman in-ear 2017-1)
+- [RHA CL2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/RHA%20CL2) by Crinacle (Usound)
 - [RHA CL750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/RHA%20CL750) by Crinacle (Harman in-ear 2017-1)
 - [RHA CL750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/RHA%20CL750) by Crinacle (Usound)
 - [RHA MA450i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20MA450i) by Innerfidelity
@@ -2918,6 +3095,8 @@ from the same source.
 - [Sennheiser HD 598](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20598) by Innerfidelity
 - [Sennheiser HD 598](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sennheiser%20HD%20598) by Reference Audio Analyzer
 - [Sennheiser HD 598](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sennheiser%20HD%20598) by Rtings
+- [Sennheiser HD 599 (filter 5 is optional)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20599%20(filter%205%20is%20optional)) by oratory1990
+- [Sennheiser HD 599](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20599) by oratory1990
 - [Sennheiser HD 599](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sennheiser%20HD%20599) by Reference Audio Analyzer
 - [Sennheiser HD 599](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sennheiser%20HD%20599) by Rtings
 - [Sennheiser HD 600](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Sennheiser%20HD%20600) by Headphone.com
@@ -2959,7 +3138,9 @@ from the same source.
 - [Sennheiser HD1 In-Ear Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sennheiser%20HD1%20In-Ear%20Wireless) by Rtings
 - [Sennheiser HD7 DJ](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sennheiser%20HD7%20DJ) by Reference Audio Analyzer
 - [Sennheiser HE 60](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HE%2060) by Innerfidelity
+- [Sennheiser HE1 Orpheus 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HE1%20Orpheus%202) by oratory1990
 - [Sennheiser HE1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HE1) by oratory1990
+- [Sennheiser HE90 HEV90 Orpheus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HE90%20HEV90%20Orpheus) by oratory1990
 - [Sennheiser IE 40 PRO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sennheiser%20IE%2040%20PRO) by Rtings
 - [Sennheiser IE 6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20IE%206) by Innerfidelity
 - [Sennheiser IE 80 S](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20IE%2080%20S) by oratory1990 (Harman in-ear 2017-1)
@@ -3025,6 +3206,8 @@ from the same source.
 - [Sennheiser Momentum On-Ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Sennheiser%20Momentum%20On-Ear) by Headphone.com
 - [Sennheiser Momentum On-Ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20Momentum%20On-Ear) by Innerfidelity
 - [Sennheiser Momentum on-ear](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sennheiser%20Momentum%20on-ear) by Reference Audio Analyzer
+- [Sennheiser Momentum True Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sennheiser%20Momentum%20True%20Wireless) by Crinacle (Harman in-ear 2017-1)
+- [Sennheiser Momentum True Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sennheiser%20Momentum%20True%20Wireless) by Crinacle (Usound)
 - [Sennheiser Momentum True Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20Momentum%20True%20Wireless) by oratory1990 (Harman in-ear 2017-1)
 - [Sennheiser Momentum True Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Sennheiser%20Momentum%20True%20Wireless) by oratory1990 (Usound)
 - [Sennheiser Momentum True Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sennheiser%20Momentum%20True%20Wireless) by Rtings
@@ -3081,6 +3264,8 @@ from the same source.
 - [SENSO ActivBuds S-250](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/SENSO%20ActivBuds%20S-250) by Rtings
 - [Shanling ME100](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Shanling%20ME100) by Crinacle (Harman in-ear 2017-1)
 - [Shanling ME100](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Shanling%20ME100) by Crinacle (Usound)
+- [Shanling ME500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Shanling%20ME500) by Crinacle (Harman in-ear 2017-1)
+- [Shanling ME500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Shanling%20ME500) by Crinacle (Usound)
 - [Shozy & Neo BG sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Shozy%20&%20Neo%20BG%20sample%201) by Crinacle (Harman in-ear 2017-1)
 - [Shozy & Neo BG sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Shozy%20&%20Neo%20BG%20sample%201) by Crinacle (Usound)
 - [Shozy & Neo BG sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Shozy%20&%20Neo%20BG%20sample%202) by Crinacle (Harman in-ear 2017-1)
@@ -3093,6 +3278,8 @@ from the same source.
 - [Shozy x AAW Hibiki SE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Shozy%20x%20AAW%20Hibiki%20SE) by Crinacle (Usound)
 - [Shozy x AAW Hibiki](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Shozy%20x%20AAW%20Hibiki) by Crinacle (Harman in-ear 2017-1)
 - [Shozy x AAW Hibiki](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Shozy%20x%20AAW%20Hibiki) by Crinacle (Usound)
+- [Shozy x AAW Pola sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Shozy%20x%20AAW%20Pola%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Shozy x AAW Pola sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Shozy%20x%20AAW%20Pola%20sample%201) by Crinacle (Usound)
 - [Shozy x AAW Pola](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Shozy%20x%20AAW%20Pola) by Crinacle (Harman in-ear 2017-1)
 - [Shozy x AAW Pola](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Shozy%20x%20AAW%20Pola) by Crinacle (Usound)
 - [Shozy Zero](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Shozy%20Zero) by Reference Audio Analyzer
@@ -3177,6 +3364,7 @@ from the same source.
 - [Shure SRH750DJ](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Shure%20SRH750DJ) by Reference Audio Analyzer
 - [Shure SRH840](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Shure%20SRH840) by Headphone.com
 - [Shure SRH840](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Shure%20SRH840) by Innerfidelity
+- [Shure SRH840](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Shure%20SRH840) by oratory1990
 - [Shure SRH840](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Shure%20SRH840) by Reference Audio Analyzer
 - [Shure SRH940](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Shure%20SRH940) by Headphone.com
 - [Shure SRH940](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Shure%20SRH940) by Innerfidelity
@@ -3242,6 +3430,12 @@ from the same source.
 - [Sony IER-M7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-M7) by Crinacle (Usound)
 - [Sony IER-M7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sony%20IER-M7) by oratory1990 (Harman in-ear 2017-1)
 - [Sony IER-M7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Sony%20IER-M7) by oratory1990 (Usound)
+- [Sony IER-M9 Filterless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-M9%20Filterless) by Crinacle (Harman in-ear 2017-1)
+- [Sony IER-M9 Filterless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-M9%20Filterless) by Crinacle (Usound)
+- [Sony IER-M9 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-M9%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Sony IER-M9 sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-M9%20sample%201) by Crinacle (Usound)
+- [Sony IER-M9 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-M9%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [Sony IER-M9 sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-M9%20sample%202) by Crinacle (Usound)
 - [Sony IER-M9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-M9) by Crinacle (Harman in-ear 2017-1)
 - [Sony IER-M9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-M9) by Crinacle (Usound)
 - [Sony IER-M9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sony%20IER-M9) by oratory1990 (Harman in-ear 2017-1)
@@ -3252,6 +3446,14 @@ from the same source.
 - [Sony IER-Z1R sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-Z1R%20sample%201) by Crinacle (Usound)
 - [Sony IER-Z1R sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-Z1R%20sample%202) by Crinacle (Harman in-ear 2017-1)
 - [Sony IER-Z1R sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-Z1R%20sample%202) by Crinacle (Usound)
+- [Sony IER-Z1R sample 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-Z1R%20sample%203) by Crinacle (Harman in-ear 2017-1)
+- [Sony IER-Z1R sample 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-Z1R%20sample%203) by Crinacle (Usound)
+- [Sony IER-Z1R sample 4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-Z1R%20sample%204) by Crinacle (Harman in-ear 2017-1)
+- [Sony IER-Z1R sample 4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-Z1R%20sample%204) by Crinacle (Usound)
+- [Sony IER-Z1R sample 5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-Z1R%20sample%205) by Crinacle (Harman in-ear 2017-1)
+- [Sony IER-Z1R sample 5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-Z1R%20sample%205) by Crinacle (Usound)
+- [Sony IER-Z1R sample 6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-Z1R%20sample%206) by Crinacle (Harman in-ear 2017-1)
+- [Sony IER-Z1R sample 6](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-Z1R%20sample%206) by Crinacle (Usound)
 - [Sony IER-Z1R](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20IER-Z1R) by Crinacle (Harman in-ear 2017-1)
 - [Sony IER-Z1R](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20IER-Z1R) by Crinacle (Usound)
 - [Sony IER-Z1R](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sony%20IER-Z1R) by oratory1990 (Harman in-ear 2017-1)
@@ -3312,6 +3514,12 @@ from the same source.
 - [Sony MDR-EX56LP](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Sony%20MDR-EX56LP) by Headphone.com
 - [Sony MDR-EX57LP](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Sony%20MDR-EX57LP) by Headphone.com
 - [Sony MDR-EX600](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sony%20MDR-EX600) by Innerfidelity
+- [Sony MDR-EX800ST sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20MDR-EX800ST%20sample%201) by Crinacle (Harman in-ear 2017-1)
+- [Sony MDR-EX800ST sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20MDR-EX800ST%20sample%201) by Crinacle (Usound)
+- [Sony MDR-EX800ST sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20MDR-EX800ST%20sample%202) by Crinacle (Harman in-ear 2017-1)
+- [Sony MDR-EX800ST sample 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20MDR-EX800ST%20sample%202) by Crinacle (Usound)
+- [Sony MDR-EX800ST sample 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20MDR-EX800ST%20sample%203) by Crinacle (Harman in-ear 2017-1)
+- [Sony MDR-EX800ST sample 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20MDR-EX800ST%20sample%203) by Crinacle (Usound)
 - [Sony MDR-EX800ST](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20MDR-EX800ST) by Crinacle (Harman in-ear 2017-1)
 - [Sony MDR-EX800ST](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20MDR-EX800ST) by Crinacle (Usound)
 - [Sony MDR-G75](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Sony%20MDR-G75) by Headphone.com
@@ -3378,7 +3586,13 @@ from the same source.
 - [Sony MH755](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Sony%20MH755) by oratory1990 (Usound)
 - [Sony SA1000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sony%20SA1000) by Reference Audio Analyzer
 - [Sony SA3000](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sony%20SA3000) by Reference Audio Analyzer
+- [Sony WF-1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sony%20WF-1000X) by oratory1990 (Harman in-ear 2017-1)
+- [Sony WF-1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Sony%20WF-1000X) by oratory1990 (Usound)
 - [Sony WF-1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WF-1000X) by Rtings
+- [Sony WF-1000XM3 NC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20WF-1000XM3%20NC) by Crinacle (Harman in-ear 2017-1)
+- [Sony WF-1000XM3 NC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20WF-1000XM3%20NC) by Crinacle (Usound)
+- [Sony WF-1000XM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20WF-1000XM3) by Crinacle (Harman in-ear 2017-1)
+- [Sony WF-1000XM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20WF-1000XM3) by Crinacle (Usound)
 - [Sony WF-SP700N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WF-SP700N) by Rtings
 - [Sony WH-1000XM2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sony%20WH-1000XM2) by oratory1990
 - [Sony WH-1000XM2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-1000XM2) by Rtings
@@ -3389,6 +3603,7 @@ from the same source.
 - [Sony WH-H900N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-H900N) by Rtings
 - [Sony WH-XB700](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-XB700) by Rtings
 - [Sony WH-XB900N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-XB900N) by Rtings
+- [Sony WH1000XM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sony%20WH1000XM3) by oratory1990
 - [Sony WI-1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sony%20WI-1000X) by oratory1990 (Harman in-ear 2017-1)
 - [Sony WI-1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Sony%20WI-1000X) by oratory1990 (Usound)
 - [Sony WI-1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WI-1000X) by Rtings
@@ -3418,6 +3633,8 @@ from the same source.
 - [Sony XBA-A3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sony%20XBA-A3) by Reference Audio Analyzer
 - [Sony XBA-C10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sony%20XBA-C10) by Reference Audio Analyzer
 - [Sony XBA-H1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sony%20XBA-H1) by Reference Audio Analyzer
+- [Sony XBA-H3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20XBA-H3) by Crinacle (Harman in-ear 2017-1)
+- [Sony XBA-H3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Sony%20XBA-H3) by Crinacle (Usound)
 - [Sony XBA-H3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sony%20XBA-H3) by oratory1990 (Harman in-ear 2017-1)
 - [Sony XBA-H3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Sony%20XBA-H3) by oratory1990 (Usound)
 - [Sony XBA-H3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Sony%20XBA-H3) by Reference Audio Analyzer
@@ -3507,6 +3724,8 @@ from the same source.
 - [Stax SR-Alpha Pro Excellent](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-Alpha%20Pro%20Excellent) by Innerfidelity
 - [Stax SR-Alpha Pro wYax1 Pads](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-Alpha%20Pro%20wYax1%20Pads) by Innerfidelity
 - [Stax SR-Gamma Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-Gamma%20Pro) by Innerfidelity
+- [Stax SR-L300 LTD (L700 Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Stax%20SR-L300%20LTD%20(L700%20Earpads)) by oratory1990
+- [Stax SR-L300 LTD](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Stax%20SR-L300%20LTD) by oratory1990
 - [Stax SR-L300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-L300) by Innerfidelity
 - [Stax SR-L300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Stax%20SR-L300) by Rtings
 - [Stax SR-L700 #1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Stax%20SR-L700%20#1) by Crinacle (Harman in-ear 2017-1)
@@ -3640,10 +3859,14 @@ from the same source.
 - [Tin Audio P1 (front vent sealed)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Tin%20Audio%20P1%20(front%20vent%20sealed)) by Crinacle (Usound)
 - [Tin Audio P1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Tin%20Audio%20P1) by Crinacle (Harman in-ear 2017-1)
 - [Tin Audio P1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Tin%20Audio%20P1) by Crinacle (Usound)
+- [Tin Audio P1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Tin%20Audio%20P1) by oratory1990 (Harman in-ear 2017-1)
+- [Tin Audio P1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Tin%20Audio%20P1) by oratory1990 (Usound)
 - [Tin Audio T2 (Foam Eartips)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Tin%20Audio%20T2%20(Foam%20Eartips)) by oratory1990 (Harman in-ear 2017-1)
 - [Tin Audio T2 (Foam Eartips)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Tin%20Audio%20T2%20(Foam%20Eartips)) by oratory1990 (Usound)
 - [Tin Audio T2 (front vent mod)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Tin%20Audio%20T2%20(front%20vent%20mod)) by oratory1990 (Harman in-ear 2017-1)
 - [Tin Audio T2 (front vent mod)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Tin%20Audio%20T2%20(front%20vent%20mod)) by oratory1990 (Usound)
+- [Tin Audio T2 Galaxy Mod](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Tin%20Audio%20T2%20Galaxy%20Mod) by Crinacle (Harman in-ear 2017-1)
+- [Tin Audio T2 Galaxy Mod](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Tin%20Audio%20T2%20Galaxy%20Mod) by Crinacle (Usound)
 - [Tin Audio T2 Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Tin%20Audio%20T2%20Pro) by Crinacle (Harman in-ear 2017-1)
 - [Tin Audio T2 Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Tin%20Audio%20T2%20Pro) by Crinacle (Usound)
 - [Tin Audio T2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Tin%20Audio%20T2) by Crinacle (Harman in-ear 2017-1)
@@ -3674,6 +3897,12 @@ from the same source.
 - [Torque t402v OverEar Red](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Red) by Innerfidelity
 - [Torque t402v OverEar Yellow](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Yellow) by Innerfidelity
 - [Toshiba HR-810 Low Gain](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Toshiba%20HR-810%20Low%20Gain) by Innerfidelity
+- [Tralucent 1Plus1.2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Tralucent%201Plus1.2) by Crinacle (Harman in-ear 2017-1)
+- [Tralucent 1Plus1.2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Tralucent%201Plus1.2) by Crinacle (Usound)
+- [Tralucent 1Plus2.3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Tralucent%201Plus2.3) by Crinacle (Harman in-ear 2017-1)
+- [Tralucent 1Plus2.3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Tralucent%201Plus2.3) by Crinacle (Usound)
+- [Tralucent 1Plus5.2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Tralucent%201Plus5.2) by Crinacle (Harman in-ear 2017-1)
+- [Tralucent 1Plus5.2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Tralucent%201Plus5.2) by Crinacle (Usound)
 - [Translucent Audio 1Plus 2.2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Translucent%20Audio%201Plus%202.2) by Crinacle (Harman in-ear 2017-1)
 - [Translucent Audio 1Plus 2.2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Translucent%20Audio%201Plus%202.2) by Crinacle (Usound)
 - [TREBLAB X5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/TREBLAB%20X5) by Rtings
@@ -3782,12 +4011,16 @@ from the same source.
 - [Unique Melody Mason V3 Ported](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Unique%20Melody%20Mason%20V3%20Ported) by Crinacle (Usound)
 - [Unique Melody Mason V3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%20Mason%20V3) by Crinacle (Harman in-ear 2017-1)
 - [Unique Melody Mason V3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Unique%20Melody%20Mason%20V3) by Crinacle (Usound)
+- [Unique Melody Maven](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%20Maven) by Crinacle (Harman in-ear 2017-1)
+- [Unique Melody Maven](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Unique%20Melody%20Maven) by Crinacle (Usound)
 - [Unique Melody ME1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%20ME1) by Crinacle (Harman in-ear 2017-1)
 - [Unique Melody ME1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Unique%20Melody%20ME1) by Crinacle (Usound)
 - [Unique Melody Merlin V2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%20Merlin%20V2) by Crinacle (Harman in-ear 2017-1)
 - [Unique Melody Merlin V2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Unique%20Melody%20Merlin%20V2) by Crinacle (Usound)
 - [Unique Melody Miracle V2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%20Miracle%20V2) by Crinacle (Harman in-ear 2017-1)
 - [Unique Melody Miracle V2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Unique%20Melody%20Miracle%20V2) by Crinacle (Usound)
+- [Unique Melody Mirage](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%20Mirage) by Crinacle (Harman in-ear 2017-1)
+- [Unique Melody Mirage](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Unique%20Melody%20Mirage) by Crinacle (Usound)
 - [Urbanears Plattan](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Urbanears%20Plattan) by Headphone.com
 - [V-MODA BassFit Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/V-MODA%20BassFit%20Wireless) by Rtings
 - [V-MODA Crossfade II Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/V-MODA%20Crossfade%20II%20Wireless) by Rtings
@@ -3822,6 +4055,8 @@ from the same source.
 - [Venture Electronics Monk Plus](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Venture%20Electronics%20Monk%20Plus) by Reference Audio Analyzer
 - [Venture Electronics Monk](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Venture%20Electronics%20Monk) by Reference Audio Analyzer
 - [ViSang VS-K1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/ViSang%20VS-K1) by Innerfidelity
+- [Vision Ears Elysium](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20Elysium) by Crinacle (Harman in-ear 2017-1)
+- [Vision Ears Elysium](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Vision%20Ears%20Elysium) by Crinacle (Usound)
 - [Vision Ears Erlkönig 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20Erlk%C3%B6nig%201) by Crinacle (Harman in-ear 2017-1)
 - [Vision Ears Erlkönig 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Vision%20Ears%20Erlk%C3%B6nig%201) by Crinacle (Usound)
 - [Vision Ears Erlkönig 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20Erlk%C3%B6nig%202) by Crinacle (Harman in-ear 2017-1)
@@ -3830,10 +4065,14 @@ from the same source.
 - [Vision Ears Erlkönig 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Vision%20Ears%20Erlk%C3%B6nig%203) by Crinacle (Usound)
 - [Vision Ears Erlkönig 4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20Erlk%C3%B6nig%204) by Crinacle (Harman in-ear 2017-1)
 - [Vision Ears Erlkönig 4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Vision%20Ears%20Erlk%C3%B6nig%204) by Crinacle (Usound)
+- [Vision Ears Erlkönig](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Vision%20Ears%20Erlk%C3%B6nig) by oratory1990 (Harman in-ear 2017-1)
+- [Vision Ears Erlkönig](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Vision%20Ears%20Erlk%C3%B6nig) by oratory1990 (Usound)
 - [Vision Ears VE 3.2 custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20VE%203.2%20custom) by Crinacle (Harman in-ear 2017-1)
 - [Vision Ears VE 3.2 custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Vision%20Ears%20VE%203.2%20custom) by Crinacle (Usound)
 - [Vision Ears VE 8 custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20VE%208%20custom) by Crinacle (Harman in-ear 2017-1)
 - [Vision Ears VE 8 custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Vision%20Ears%20VE%208%20custom) by Crinacle (Usound)
+- [Vision Ears VE3.2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20VE3.2) by Crinacle (Harman in-ear 2017-1)
+- [Vision Ears VE3.2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Vision%20Ears%20VE3.2) by Crinacle (Usound)
 - [Vision Ears VE5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20VE5) by Crinacle (Harman in-ear 2017-1)
 - [Vision Ears VE5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Vision%20Ears%20VE5) by Crinacle (Usound)
 - [Vision Ears VE6X1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Vision%20Ears%20VE6X1) by Crinacle (Harman in-ear 2017-1)
@@ -3867,6 +4106,8 @@ from the same source.
 - [VSonic VS05](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/VSonic%20VS05) by Innerfidelity
 - [VSonic VS7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/VSonic%20VS7) by Crinacle (Harman in-ear 2017-1)
 - [VSonic VS7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/VSonic%20VS7) by Crinacle (Usound)
+- [Vsonic VS7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Vsonic%20VS7) by oratory1990 (Harman in-ear 2017-1)
+- [Vsonic VS7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Vsonic%20VS7) by oratory1990 (Usound)
 - [VSonic VSD1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/VSonic%20VSD1) by Innerfidelity
 - [VSonic VSD1S](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/VSonic%20VSD1S) by Crinacle (Harman in-ear 2017-1)
 - [VSonic VSD1S](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/VSonic%20VSD1S) by Crinacle (Usound)
@@ -3896,6 +4137,8 @@ from the same source.
 - [Westone 4R](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Westone%204R) by Innerfidelity
 - [Westone ADV Alpha](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Westone%20ADV%20Alpha) by Innerfidelity
 - [Westone Adv Alpha](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Westone%20Adv%20Alpha) by Reference Audio Analyzer
+- [Westone ES60 custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Westone%20ES60%20custom) by Crinacle (Harman in-ear 2017-1)
+- [Westone ES60 custom](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Westone%20ES60%20custom) by Crinacle (Usound)
 - [Westone UM Pro 10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Westone%20UM%20Pro%2010) by Crinacle (Harman in-ear 2017-1)
 - [Westone UM Pro 10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Westone%20UM%20Pro%2010) by Crinacle (Usound)
 - [Westone UM Pro 10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Westone%20UM%20Pro%2010) by Reference Audio Analyzer
@@ -3976,6 +4219,8 @@ from the same source.
 - [Yamaha YH3 Sn180629](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Yamaha%20YH3%20Sn180629) by Innerfidelity
 - [Yamha EPH-100](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Yamha%20EPH-100) by Crinacle (Harman in-ear 2017-1)
 - [Yamha EPH-100](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Yamha%20EPH-100) by Crinacle (Usound)
+- [Yinyoo Topaz Filterless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Yinyoo%20Topaz%20Filterless) by Crinacle (Harman in-ear 2017-1)
+- [Yinyoo Topaz Filterless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Yinyoo%20Topaz%20Filterless) by Crinacle (Usound)
 - [Yuin G1A](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Yuin%20G1A) by Headphone.com
 - [Yuin G2A](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Yuin%20G2A) by Headphone.com
 - [Yuin PK1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Yuin%20PK1) by Headphone.com

@@ -8,19 +8,19 @@ When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 31 Hz   | 0.81 | 8.2 dB  |
-| Peaking | 298 Hz  | 0.1  | -2.7 dB |
-| Peaking | 1344 Hz | 4.89 | 5.1 dB  |
-| Peaking | 2989 Hz | 1.55 | 6.5 dB  |
-| Peaking | 5185 Hz | 6.93 | -4.7 dB |
-| Peaking | 820 Hz  | 1.69 | -4.4 dB |
-| Peaking | 969 Hz  | 0.72 | 3.4 dB  |
-| Peaking | 2059 Hz | 1.63 | -3.9 dB |
-| Peaking | 2308 Hz | 3.79 | 3.5 dB  |
-| Peaking | 6696 Hz | 8.54 | 3.2 dB  |
+| Peaking | 31 Hz   | 0.82 | 8.2 dB  |
+| Peaking | 303 Hz  | 0.1  | -2.7 dB |
+| Peaking | 1340 Hz | 4.62 | 5.1 dB  |
+| Peaking | 2959 Hz | 1.75 | 6.7 dB  |
+| Peaking | 5184 Hz | 5.69 | -4.1 dB |
+| Peaking | 502 Hz  | 1.01 | 0.8 dB  |
+| Peaking | 783 Hz  | 2.98 | -1.8 dB |
+| Peaking | 4050 Hz | 2.12 | 0.9 dB  |
+| Peaking | 5018 Hz | 1.03 | -1.0 dB |
+| Peaking | 6927 Hz | 4.99 | 2.6 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -2.1 dB |
 | Peaking | 1000 Hz  | 1.41 | -1.6 dB |
 | Peaking | 2000 Hz  | 1.41 | 2.3 dB  |
-| Peaking | 4000 Hz  | 1.41 | 2.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.3 dB |
-| Peaking | 16000 Hz | 1.41 | -0.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 16000 Hz | 1.41 | 0.0 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20235/Beyerdynamic%20DT%20235.png)

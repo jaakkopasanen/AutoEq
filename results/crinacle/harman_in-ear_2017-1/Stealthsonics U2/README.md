@@ -2,24 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.7dB** and build filters manually
-with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.7dB**.
+In case of using parametric equalizer, apply preamp of **-5.5dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 33 Hz   | 0.32 | -4.4 dB |
-| Peaking | 161 Hz  | 0.53 | -5.8 dB |
-| Peaking | 851 Hz  | 1.28 | 4.2 dB  |
-| Peaking | 2830 Hz | 1.79 | 6.9 dB  |
-| Peaking | 16 Hz   | 0.58 | -0.6 dB |
-| Peaking | 1529 Hz | 5.15 | -0.5 dB |
-| Peaking | 3712 Hz | 9.07 | 2.8 dB  |
-| Peaking | 5421 Hz | 8.65 | 1.1 dB  |
-| Peaking | 6287 Hz | 6.15 | -6.6 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 45 Hz    | 0.28 | -5.5 dB  |
+| Peaking | 176 Hz   | 0.76 | -4.5 dB  |
+| Peaking | 5089 Hz  | 0.25 | 7.3 dB   |
+| Peaking | 6153 Hz  | 1.74 | -9.8 dB  |
+| Peaking | 20281 Hz | 0.22 | -16.4 dB |
+| Peaking | 847 Hz   | 2.13 | 2.3 dB   |
+| Peaking | 1567 Hz  | 3    | -3.1 dB  |
+| Peaking | 13336 Hz | 3.05 | 7.0 dB   |
+| Peaking | 14976 Hz | 2.32 | -10.1 dB |
+| Peaking | 17086 Hz | 2.28 | 4.9 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -30,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -4.8 dB  |
 | Peaking | 500 Hz   | 1.41 | 0.5 dB   |
 | Peaking | 1000 Hz  | 1.41 | 2.7 dB   |
-| Peaking | 2000 Hz  | 1.41 | 3.3 dB   |
-| Peaking | 4000 Hz  | 1.41 | 3.6 dB   |
-| Peaking | 8000 Hz  | 1.41 | -1.1 dB  |
-| Peaking | 16000 Hz | 1.41 | -10.2 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.4 dB   |
+| Peaking | 4000 Hz  | 1.41 | 3.4 dB   |
+| Peaking | 8000 Hz  | 1.41 | -1.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -12.1 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Stealthsonics%20U2/Stealthsonics%20U2.png)

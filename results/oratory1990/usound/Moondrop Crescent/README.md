@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.0dB**.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 42 Hz    | 0.55 | -3.4 dB |
+| Peaking | 42 Hz    | 0.54 | -3.4 dB |
 | Peaking | 117 Hz   | 1.1  | -2.3 dB |
-| Peaking | 6008 Hz  | 2.19 | 5.8 dB  |
-| Peaking | 8257 Hz  | 4.16 | -4.7 dB |
-| Peaking | 14956 Hz | 3.13 | -3.1 dB |
-| Peaking | 738 Hz   | 1.18 | 0.9 dB  |
-| Peaking | 1296 Hz  | 2.33 | -1.8 dB |
-| Peaking | 2387 Hz  | 1.31 | 2.4 dB  |
-| Peaking | 3448 Hz  | 2.3  | -2.9 dB |
-| Peaking | 4766 Hz  | 4.7  | 0.9 dB  |
+| Peaking | 5769 Hz  | 2.53 | 5.4 dB  |
+| Peaking | 8377 Hz  | 4.4  | -4.7 dB |
+| Peaking | 21274 Hz | 0.6  | -2.9 dB |
+| Peaking | 732 Hz   | 1.2  | 0.9 dB  |
+| Peaking | 1308 Hz  | 2.3  | -1.9 dB |
+| Peaking | 2234 Hz  | 1.33 | 2.0 dB  |
+| Peaking | 3404 Hz  | 3.45 | -2.4 dB |
+| Peaking | 22047 Hz | 1.86 | -2.2 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.2dB**
@@ -26,15 +26,15 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | -3.0 dB |
-| Peaking | 62 Hz    | 1.41 | -3.0 dB |
+| Peaking | 62 Hz    | 1.41 | -2.9 dB |
 | Peaking | 125 Hz   | 1.41 | -2.9 dB |
-| Peaking | 250 Hz   | 1.41 | -0.4 dB |
-| Peaking | 500 Hz   | 1.41 | 0.9 dB  |
+| Peaking | 250 Hz   | 1.41 | -0.5 dB |
+| Peaking | 500 Hz   | 1.41 | 0.8 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.4 dB |
 | Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -2.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 16000 Hz | 1.41 | -2.2 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Moondrop%20Crescent/Moondrop%20Crescent.png)

@@ -2,24 +2,24 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.8dB** and build filters manually
 with these parameters. The first 4 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 35 Hz   | 0.56 | -3.0 dB |
-| Peaking | 119 Hz  | 0.56 | -5.5 dB |
-| Peaking | 3318 Hz | 2.31 | 7.0 dB  |
-| Peaking | 5815 Hz | 4.78 | 5.3 dB  |
-| Peaking | 573 Hz  | 2.23 | 1.0 dB  |
-| Peaking | 1530 Hz | 1.23 | -2.7 dB |
-| Peaking | 2420 Hz | 3.64 | 1.6 dB  |
-| Peaking | 2729 Hz | 7.87 | 1.8 dB  |
-| Peaking | 8621 Hz | 4.38 | -0.5 dB |
+| Peaking | 35 Hz   | 0.54 | -3.1 dB |
+| Peaking | 120 Hz  | 0.56 | -5.4 dB |
+| Peaking | 3336 Hz | 2.28 | 7.0 dB  |
+| Peaking | 5997 Hz | 3.49 | 2.8 dB  |
+| Peaking | 1528 Hz | 1.63 | -2.8 dB |
+| Peaking | 2613 Hz | 4.49 | 2.3 dB  |
+| Peaking | 5859 Hz | 1.26 | -0.5 dB |
+| Peaking | 6569 Hz | 1.17 | 1.0 dB  |
+| Peaking | 8260 Hz | 1.79 | -1.0 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -30,10 +30,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -2.3 dB |
 | Peaking | 500 Hz   | 1.41 | 0.7 dB  |
 | Peaking | 1000 Hz  | 1.41 | -2.0 dB |
-| Peaking | 2000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 4000 Hz  | 1.41 | 6.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Ceaden%20Linea%20No%2010%20Passive%20Wired/Ceaden%20Linea%20No%2010%20Passive%20Wired.png)

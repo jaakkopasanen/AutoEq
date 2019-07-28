@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 374 Hz   | 0.35 | -6.5 dB  |
-| Peaking | 1764 Hz  | 0.97 | -10.2 dB |
-| Peaking | 3980 Hz  | 0.26 | 20.1 dB  |
-| Peaking | 12203 Hz | 1.36 | 16.7 dB  |
-| Peaking | 15440 Hz | 0.35 | -37.1 dB |
-| Peaking | 23 Hz    | 1.2  | 1.8 dB   |
-| Peaking | 45 Hz    | 2.17 | 0.7 dB   |
-| Peaking | 2820 Hz  | 8.58 | 1.7 dB   |
-| Peaking | 5508 Hz  | 9.8  | -3.0 dB  |
-| Peaking | 6316 Hz  | 7.04 | 3.1 dB   |
+| Peaking | 302 Hz   | 0.43 | -6.7 dB  |
+| Peaking | 1792 Hz  | 1.14 | -7.2 dB  |
+| Peaking | 3668 Hz  | 0.23 | 26.2 dB  |
+| Peaking | 12149 Hz | 0.72 | 24.7 dB  |
+| Peaking | 14965 Hz | 0.21 | -50.6 dB |
+| Peaking | 24 Hz    | 0.82 | 1.7 dB   |
+| Peaking | 2821 Hz  | 6.37 | 1.3 dB   |
+| Peaking | 6184 Hz  | 2    | -2.1 dB  |
+| Peaking | 6496 Hz  | 5.72 | 4.6 dB   |
+| Peaking | 17295 Hz | 4.9  | 1.3 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -2.1 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.9 dB  |
-| Peaking | 4000 Hz  | 1.41 | 8.1 dB   |
-| Peaking | 8000 Hz  | 1.41 | 6.5 dB   |
-| Peaking | 16000 Hz | 1.41 | -30.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 8.2 dB   |
+| Peaking | 8000 Hz  | 1.41 | 7.8 dB   |
+| Peaking | 16000 Hz | 1.41 | -33.5 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/InEar%20StageDiver%20SD2/InEar%20StageDiver%20SD2.png)

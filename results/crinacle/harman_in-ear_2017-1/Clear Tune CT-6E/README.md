@@ -9,15 +9,15 @@ When using independent subset of filters, apply preamp of **-7.2dB**.
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 233 Hz   | 0.61 | -4.3 dB  |
-| Peaking | 971 Hz   | 2.67 | 7.8 dB   |
-| Peaking | 1765 Hz  | 2.64 | -6.4 dB  |
-| Peaking | 5595 Hz  | 2.19 | 6.8 dB   |
-| Peaking | 15914 Hz | 2.17 | -10.5 dB |
-| Peaking | 26 Hz    | 0.89 | 1.8 dB   |
-| Peaking | 2817 Hz  | 1.32 | -2.4 dB  |
-| Peaking | 2902 Hz  | 2.71 | 4.7 dB   |
-| Peaking | 7959 Hz  | 6.37 | -1.3 dB  |
-| Peaking | 13071 Hz | 4.92 | 2.4 dB   |
+| Peaking | 972 Hz   | 2.65 | 7.8 dB   |
+| Peaking | 1763 Hz  | 2.57 | -6.4 dB  |
+| Peaking | 5644 Hz  | 2.22 | 6.7 dB   |
+| Peaking | 15458 Hz | 2.59 | -12.6 dB |
+| Peaking | 26 Hz    | 0.86 | 1.7 dB   |
+| Peaking | 2909 Hz  | 3.84 | 2.9 dB   |
+| Peaking | 3053 Hz  | 0.71 | -0.7 dB  |
+| Peaking | 13016 Hz | 3.94 | 3.1 dB   |
+| Peaking | 19970 Hz | 1.07 | -6.6 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.1dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -3.8 dB |
 | Peaking | 500 Hz   | 1.41 | -2.3 dB |
 | Peaking | 1000 Hz  | 1.41 | 6.3 dB  |
-| Peaking | 2000 Hz  | 1.41 | -6.6 dB |
-| Peaking | 4000 Hz  | 1.41 | 4.6 dB  |
-| Peaking | 8000 Hz  | 1.41 | 2.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -8.7 dB |
+| Peaking | 2000 Hz  | 1.41 | -6.7 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -9.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Clear%20Tune%20CT-6E/Clear%20Tune%20CT-6E.png)

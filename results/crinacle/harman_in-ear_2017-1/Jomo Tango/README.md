@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.5dB**.
+When using independent subset of filters, apply preamp of **-5.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 43 Hz    | 0.3  | -2.7 dB  |
-| Peaking | 182 Hz   | 0.48 | -5.8 dB  |
-| Peaking | 867 Hz   | 1.21 | 4.2 dB   |
-| Peaking | 2497 Hz  | 0.83 | 4.7 dB   |
-| Peaking | 17101 Hz | 1.27 | -16.3 dB |
-| Peaking | 3857 Hz  | 3.4  | 1.2 dB   |
-| Peaking | 5191 Hz  | 3.61 | -4.3 dB  |
-| Peaking | 6489 Hz  | 4.46 | 3.6 dB   |
-| Peaking | 13081 Hz | 1.81 | 5.3 dB   |
-| Peaking | 15055 Hz | 2.87 | -6.8 dB  |
+| Peaking | 42 Hz    | 0.32 | -2.6 dB  |
+| Peaking | 181 Hz   | 0.48 | -5.9 dB  |
+| Peaking | 862 Hz   | 1.25 | 4.1 dB   |
+| Peaking | 2474 Hz  | 0.79 | 4.7 dB   |
+| Peaking | 18817 Hz | 0.58 | -16.2 dB |
+| Peaking | 5280 Hz  | 3.81 | -4.5 dB  |
+| Peaking | 6541 Hz  | 2.43 | 3.2 dB   |
+| Peaking | 11153 Hz | 3.07 | 2.1 dB   |
+| Peaking | 12688 Hz | 3.09 | 5.3 dB   |
+| Peaking | 15191 Hz | 2.51 | -7.8 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.4 dB  |
 | Peaking | 1000 Hz  | 1.41 | 3.7 dB   |
 | Peaking | 2000 Hz  | 1.41 | 4.3 dB   |
-| Peaking | 4000 Hz  | 1.41 | 1.6 dB   |
+| Peaking | 4000 Hz  | 1.41 | 1.3 dB   |
 | Peaking | 8000 Hz  | 1.41 | 2.1 dB   |
-| Peaking | 16000 Hz | 1.41 | -15.5 dB |
+| Peaking | 16000 Hz | 1.41 | -17.1 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Jomo%20Tango/Jomo%20Tango.png)

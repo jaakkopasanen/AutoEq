@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-4.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 13 Hz   | 0.23 | 3.7 dB  |
-| Peaking | 202 Hz  | 0.61 | -1.3 dB |
-| Peaking | 2330 Hz | 1.03 | 4.0 dB  |
-| Peaking | 4958 Hz | 8.35 | -5.1 dB |
-| Peaking | 7395 Hz | 2.57 | -5.2 dB |
-| Peaking | 221 Hz  | 8.04 | 1.4 dB  |
-| Peaking | 344 Hz  | 3.71 | -2.4 dB |
-| Peaking | 403 Hz  | 5.72 | 3.2 dB  |
-| Peaking | 1114 Hz | 4.04 | -2.3 dB |
-| Peaking | 1245 Hz | 4.64 | 2.1 dB  |
+| Peaking | 26 Hz   | 0.84 | 3.4 dB  |
+| Peaking | 2302 Hz | 1.23 | 4.1 dB  |
+| Peaking | 4976 Hz | 3.83 | -3.4 dB |
+| Peaking | 6437 Hz | 2.9  | -2.2 dB |
+| Peaking | 7704 Hz | 2.1  | -3.3 dB |
+| Peaking | 171 Hz  | 2.74 | -1.4 dB |
+| Peaking | 320 Hz  | 4.73 | -2.5 dB |
+| Peaking | 9103 Hz | 3.2  | -0.7 dB |
+| Peaking | 9141 Hz | 5.89 | -2.3 dB |
+| Peaking | 9807 Hz | 2.39 | 1.9 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.8dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 3.3 dB  |
+| Peaking | 31 Hz    | 1.41 | 3.2 dB  |
 | Peaking | 62 Hz    | 1.41 | 1.1 dB  |
 | Peaking | 125 Hz   | 1.41 | -0.5 dB |
-| Peaking | 250 Hz   | 1.41 | -1.3 dB |
+| Peaking | 250 Hz   | 1.41 | -1.4 dB |
 | Peaking | 500 Hz   | 1.41 | 0.3 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.8 dB |
-| Peaking | 2000 Hz  | 1.41 | 4.5 dB  |
-| Peaking | 4000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | -4.1 dB |
-| Peaking | 16000 Hz | 1.41 | 0.5 dB  |
+| Peaking | 2000 Hz  | 1.41 | 4.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 8000 Hz  | 1.41 | -4.5 dB |
+| Peaking | 16000 Hz | 1.41 | 0.6 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/HiFiMAN%20HE1000/HiFiMAN%20HE1000.png)

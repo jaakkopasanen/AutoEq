@@ -4,23 +4,23 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-7.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.6dB**.
+When using independent subset of filters, apply preamp of **-7.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 35 Hz    | 0.85 | 7.1 dB  |
-| Peaking | 1043 Hz  | 1.61 | 5.1 dB  |
-| Peaking | 3121 Hz  | 6.41 | -5.2 dB |
-| Peaking | 15408 Hz | 1.88 | -7.4 dB |
-| Peaking | 22050 Hz | 1.67 | -4.9 dB |
-| Peaking | 267 Hz   | 1.13 | -3.4 dB |
-| Peaking | 4945 Hz  | 5.75 | -6.6 dB |
-| Peaking | 7316 Hz  | 0.92 | 5.0 dB  |
-| Peaking | 8342 Hz  | 3.06 | -9.1 dB |
-| Peaking | 19033 Hz | 2.8  | 0.5 dB  |
+| Peaking | 35 Hz    | 0.86 | 7.1 dB  |
+| Peaking | 1067 Hz  | 1.49 | 5.0 dB  |
+| Peaking | 3346 Hz  | 2.07 | -3.4 dB |
+| Peaking | 15584 Hz | 1.47 | -7.1 dB |
+| Peaking | 20582 Hz | 1.87 | -5.1 dB |
+| Peaking | 268 Hz   | 1.15 | -3.5 dB |
+| Peaking | 5011 Hz  | 4.89 | -5.2 dB |
+| Peaking | 5566 Hz  | 1.26 | 2.6 dB  |
+| Peaking | 8584 Hz  | 4.38 | -8.5 dB |
+| Peaking | 10262 Hz | 1.9  | 2.6 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -3.4 dB |
 | Peaking | 500 Hz   | 1.41 | -1.0 dB |
 | Peaking | 1000 Hz  | 1.41 | 5.4 dB  |
-| Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | -1.9 dB |
-| Peaking | 8000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 16000 Hz | 1.41 | -6.3 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | -2.7 dB |
+| Peaking | 8000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 16000 Hz | 1.41 | -6.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Ocharaku%20Donguri%20Keyaki/Ocharaku%20Donguri%20Keyaki.png)

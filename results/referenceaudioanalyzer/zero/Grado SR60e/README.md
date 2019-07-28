@@ -4,20 +4,20 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 28 Hz    | 1.09 | 6.8 dB  |
-| Peaking | 801 Hz   | 0.3  | 3.6 dB  |
-| Peaking | 2295 Hz  | 1.57 | -8.4 dB |
-| Peaking | 6089 Hz  | 2.48 | -6.7 dB |
-| Peaking | 22050 Hz | 2.38 | -4.4 dB |
-| Peaking | 18 Hz    | 3.04 | 1.6 dB  |
-| Peaking | 1883 Hz  | 1.83 | 2.6 dB  |
-| Peaking | 1943 Hz  | 4.32 | -4.0 dB |
-| Peaking | 3759 Hz  | 7.41 | -2.6 dB |
-| Peaking | 8407 Hz  | 6.81 | 1.7 dB  |
+| Peaking | 28 Hz    | 1.1  | 6.8 dB  |
+| Peaking | 809 Hz   | 0.3  | 3.6 dB  |
+| Peaking | 2302 Hz  | 1.51 | -8.3 dB |
+| Peaking | 6084 Hz  | 2.02 | -6.4 dB |
+| Peaking | 22050 Hz | 2.29 | -4.6 dB |
+| Peaking | 14 Hz    | 1.6  | 1.2 dB  |
+| Peaking | 1828 Hz  | 1.71 | 1.9 dB  |
+| Peaking | 1929 Hz  | 4.9  | -3.2 dB |
+| Peaking | 3801 Hz  | 5.47 | -1.9 dB |
+| Peaking | 8601 Hz  | 5.52 | 1.8 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
@@ -28,13 +28,13 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 31 Hz    | 1.41 | 7.5 dB  |
 | Peaking | 62 Hz    | 1.41 | -0.4 dB |
 | Peaking | 125 Hz   | 1.41 | 0.2 dB  |
-| Peaking | 250 Hz   | 1.41 | 2.4 dB  |
+| Peaking | 250 Hz   | 1.41 | 2.3 dB  |
 | Peaking | 500 Hz   | 1.41 | 1.7 dB  |
 | Peaking | 1000 Hz  | 1.41 | 4.2 dB  |
-| Peaking | 2000 Hz  | 1.41 | -4.7 dB |
-| Peaking | 4000 Hz  | 1.41 | -3.1 dB |
-| Peaking | 8000 Hz  | 1.41 | -2.2 dB |
-| Peaking | 16000 Hz | 1.41 | 0.4 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.6 dB |
+| Peaking | 4000 Hz  | 1.41 | -3.6 dB |
+| Peaking | 8000 Hz  | 1.41 | -2.4 dB |
+| Peaking | 16000 Hz | 1.41 | 0.5 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Grado%20SR60e/Grado%20SR60e.png)

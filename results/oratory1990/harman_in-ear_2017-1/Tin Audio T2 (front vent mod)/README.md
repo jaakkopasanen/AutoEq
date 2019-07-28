@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.8dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.8dB**.
+When using independent subset of filters, apply preamp of **-4.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 16 Hz    | 0.47 | -6.9 dB  |
-| Peaking | 99 Hz    | 0.29 | -6.0 dB  |
-| Peaking | 6804 Hz  | 0.27 | 14.3 dB  |
-| Peaking | 13211 Hz | 1.01 | 11.8 dB  |
-| Peaking | 15324 Hz | 0.38 | -32.4 dB |
-| Peaking | 1174 Hz  | 2.73 | -1.4 dB  |
-| Peaking | 5170 Hz  | 3.1  | -7.5 dB  |
-| Peaking | 6246 Hz  | 1.32 | 7.5 dB   |
-| Peaking | 7653 Hz  | 2.45 | -5.8 dB  |
-| Peaking | 11455 Hz | 4.95 | -1.2 dB  |
+| Peaking | 14 Hz    | 0.43 | -6.9 dB  |
+| Peaking | 98 Hz    | 0.27 | -6.0 dB  |
+| Peaking | 5857 Hz  | 0.27 | 13.7 dB  |
+| Peaking | 13469 Hz | 0.6  | 12.8 dB  |
+| Peaking | 15421 Hz | 0.39 | -37.1 dB |
+| Peaking | 3766 Hz  | 1.24 | 1.3 dB   |
+| Peaking | 5170 Hz  | 2.66 | -3.6 dB  |
+| Peaking | 5892 Hz  | 4.64 | 1.8 dB   |
+| Peaking | 6477 Hz  | 4.46 | 1.6 dB   |
+| Peaking | 7498 Hz  | 3.64 | -0.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.1dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -3.4 dB  |
 | Peaking | 500 Hz   | 1.41 | -0.4 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.0 dB  |
-| Peaking | 2000 Hz  | 1.41 | 4.0 dB   |
-| Peaking | 4000 Hz  | 1.41 | 3.8 dB   |
-| Peaking | 8000 Hz  | 1.41 | 3.7 dB   |
-| Peaking | 16000 Hz | 1.41 | -21.7 dB |
+| Peaking | 2000 Hz  | 1.41 | 4.1 dB   |
+| Peaking | 4000 Hz  | 1.41 | 3.5 dB   |
+| Peaking | 8000 Hz  | 1.41 | 4.6 dB   |
+| Peaking | 16000 Hz | 1.41 | -25.6 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Tin%20Audio%20T2%20(front%20vent%20mod)/Tin%20Audio%20T2%20(front%20vent%20mod).png)

@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.6dB**.
+When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 62 Hz    | 0.3  | -4.2 dB  |
-| Peaking | 201 Hz   | 0.69 | -4.8 dB  |
-| Peaking | 6079 Hz  | 0.23 | 26.6 dB  |
-| Peaking | 12232 Hz | 1.9  | 17.8 dB  |
-| Peaking | 15465 Hz | 0.27 | -49.2 dB |
-| Peaking | 1018 Hz  | 1.91 | 2.0 dB   |
-| Peaking | 2505 Hz  | 2.59 | -4.5 dB  |
-| Peaking | 3526 Hz  | 2.61 | 2.9 dB   |
-| Peaking | 4782 Hz  | 2.92 | -2.0 dB  |
-| Peaking | 5877 Hz  | 5.91 | 2.3 dB   |
+| Peaking | 65 Hz    | 0.32 | -4.5 dB  |
+| Peaking | 206 Hz   | 0.74 | -5.0 dB  |
+| Peaking | 5304 Hz  | 0.2  | 29.3 dB  |
+| Peaking | 11861 Hz | 1.34 | 18.5 dB  |
+| Peaking | 15265 Hz | 0.22 | -54.2 dB |
+| Peaking | 1025 Hz  | 1.69 | 2.4 dB   |
+| Peaking | 2439 Hz  | 3.61 | -3.9 dB  |
+| Peaking | 6508 Hz  | 3.27 | 2.8 dB   |
+| Peaking | 7749 Hz  | 6.34 | -3.3 dB  |
+| Peaking | 17065 Hz | 5.07 | 1.5 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -30,11 +30,11 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 125 Hz   | 1.41 | -5.8 dB  |
 | Peaking | 250 Hz   | 1.41 | -4.9 dB  |
 | Peaking | 500 Hz   | 1.41 | -0.7 dB  |
-| Peaking | 1000 Hz  | 1.41 | 4.6 dB   |
-| Peaking | 2000 Hz  | 1.41 | -0.4 dB  |
-| Peaking | 4000 Hz  | 1.41 | 6.0 dB   |
-| Peaking | 8000 Hz  | 1.41 | 10.0 dB  |
-| Peaking | 16000 Hz | 1.41 | -36.3 dB |
+| Peaking | 1000 Hz  | 1.41 | 4.7 dB   |
+| Peaking | 2000 Hz  | 1.41 | -0.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 6.5 dB   |
+| Peaking | 8000 Hz  | 1.41 | 12.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -41.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Zero%20Audio%20Duoza%20ZH-DWX10/Zero%20Audio%20Duoza%20ZH-DWX10.png)

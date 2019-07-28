@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 18 Hz    | 0.56 | 2.5 dB   |
-| Peaking | 203 Hz   | 0.58 | -5.0 dB  |
-| Peaking | 3947 Hz  | 0.61 | 16.5 dB  |
-| Peaking | 11003 Hz | 0.79 | 23.9 dB  |
-| Peaking | 15615 Hz | 0.21 | -37.2 dB |
-| Peaking | 923 Hz   | 2.93 | 1.8 dB   |
-| Peaking | 2382 Hz  | 2    | -3.1 dB  |
-| Peaking | 2794 Hz  | 4.23 | 4.2 dB   |
-| Peaking | 6052 Hz  | 6.35 | -4.3 dB  |
-| Peaking | 6769 Hz  | 2.75 | 2.4 dB   |
+| Peaking | 15 Hz    | 0.47 | 2.7 dB   |
+| Peaking | 206 Hz   | 0.57 | -5.0 dB  |
+| Peaking | 3950 Hz  | 0.65 | 16.0 dB  |
+| Peaking | 10924 Hz | 0.79 | 23.2 dB  |
+| Peaking | 15746 Hz | 0.22 | -36.3 dB |
+| Peaking | 2272 Hz  | 3.07 | -2.6 dB  |
+| Peaking | 2793 Hz  | 4.76 | 3.0 dB   |
+| Peaking | 6026 Hz  | 5.71 | -3.9 dB  |
+| Peaking | 6851 Hz  | 3.32 | 2.7 dB   |
+| Peaking | 14523 Hz | 6.26 | -1.9 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.3dB**
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | -1.1 dB  |
 | Peaking | 4000 Hz  | 1.41 | 7.9 dB   |
 | Peaking | 8000 Hz  | 1.41 | 7.5 dB   |
-| Peaking | 16000 Hz | 1.41 | -35.9 dB |
+| Peaking | 16000 Hz | 1.41 | -35.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Audio-Technica%20ATH-IM02/Audio-Technica%20ATH-IM02.png)

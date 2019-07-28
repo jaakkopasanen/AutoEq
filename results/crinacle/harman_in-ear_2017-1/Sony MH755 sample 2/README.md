@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-3.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-2.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.2dB**.
+When using independent subset of filters, apply preamp of **-1.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 16 Hz    | 0.3  | -9.0 dB  |
-| Peaking | 148 Hz   | 0.76 | -1.9 dB  |
-| Peaking | 761 Hz   | 1.57 | 1.8 dB   |
-| Peaking | 10738 Hz | 0.54 | 14.4 dB  |
-| Peaking | 16190 Hz | 0.53 | -29.0 dB |
-| Peaking | 1369 Hz  | 6.06 | -0.9 dB  |
-| Peaking | 6300 Hz  | 2.17 | 3.7 dB   |
-| Peaking | 7954 Hz  | 0.96 | -2.7 dB  |
-| Peaking | 12280 Hz | 3.77 | 4.7 dB   |
-| Peaking | 14202 Hz | 4.54 | -3.4 dB  |
+| Peaking | 14 Hz    | 0.24 | -9.2 dB  |
+| Peaking | 148 Hz   | 1.14 | -1.9 dB  |
+| Peaking | 12218 Hz | 0.75 | 13.4 dB  |
+| Peaking | 14687 Hz | 1.5  | -17.7 dB |
+| Peaking | 18788 Hz | 0.38 | -20.2 dB |
+| Peaking | 782 Hz   | 1.87 | 1.8 dB   |
+| Peaking | 3506 Hz  | 3.23 | -0.9 dB  |
+| Peaking | 6273 Hz  | 1.9  | 2.2 dB   |
+| Peaking | 9625 Hz  | 0.75 | -1.5 dB  |
+| Peaking | 12001 Hz | 3.15 | 2.5 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.9 dB   |
 | Peaking | 1000 Hz  | 1.41 | 1.0 dB   |
 | Peaking | 2000 Hz  | 1.41 | -0.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | -0.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | 5.5 dB   |
-| Peaking | 16000 Hz | 1.41 | -25.0 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | 5.9 dB   |
+| Peaking | 16000 Hz | 1.41 | -26.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Sony%20MH755%20sample%202/Sony%20MH755%20sample%202.png)

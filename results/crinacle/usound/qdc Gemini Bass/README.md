@@ -2,24 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 38 Hz    | 0.44 | -2.7 dB |
-| Peaking | 116 Hz   | 1.1  | -2.7 dB |
-| Peaking | 197 Hz   | 1.8  | -1.8 dB |
-| Peaking | 3111 Hz  | 2.91 | 3.4 dB  |
-| Peaking | 5495 Hz  | 4.12 | 6.5 dB  |
-| Peaking | 735 Hz   | 1.23 | 1.2 dB  |
-| Peaking | 1374 Hz  | 2.16 | -2.3 dB |
-| Peaking | 2138 Hz  | 2.1  | 0.6 dB  |
-| Peaking | 20237 Hz | 0.71 | -7.8 dB |
+| Peaking | 43 Hz    | 0.39 | -2.9 dB |
+| Peaking | 145 Hz   | 0.97 | -2.9 dB |
+| Peaking | 3096 Hz  | 2.79 | 3.1 dB  |
+| Peaking | 5517 Hz  | 3.81 | 5.8 dB  |
+| Peaking | 20073 Hz | 0.6  | -7.6 dB |
+| Peaking | 690 Hz   | 1.28 | 1.2 dB  |
+| Peaking | 1356 Hz  | 2.85 | -2.2 dB |
+| Peaking | 8096 Hz  | 5.13 | -4.2 dB |
+| Peaking | 8414 Hz  | 1.04 | 1.2 dB  |
+| Peaking | 14343 Hz | 4.7  | -1.5 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.4 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.6 dB |
 | Peaking | 2000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 4000 Hz  | 1.41 | 4.2 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.2 dB  |
-| Peaking | 16000 Hz | 1.41 | -2.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 16000 Hz | 1.41 | -3.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/qdc%20Gemini%20Bass/qdc%20Gemini%20Bass.png)

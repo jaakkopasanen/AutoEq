@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-4.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-4.1dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 812 Hz  | 1.1  | 4.3 dB  |
-| Peaking | 2399 Hz | 0.99 | -9.4 dB |
-| Peaking | 3421 Hz | 0.93 | 7.9 dB  |
-| Peaking | 4958 Hz | 3.99 | -8.1 dB |
-| Peaking | 7288 Hz | 7.81 | -5.0 dB |
-| Peaking | 18 Hz   | 1.02 | 1.7 dB  |
-| Peaking | 131 Hz  | 0.82 | -1.5 dB |
-| Peaking | 385 Hz  | 1.72 | 0.8 dB  |
-| Peaking | 1422 Hz | 7.25 | -1.1 dB |
-| Peaking | 1847 Hz | 6.75 | 0.8 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 22 Hz    | 2.46 | 1.3 dB  |
+| Peaking | 767 Hz   | 1.22 | 3.7 dB  |
+| Peaking | 2031 Hz  | 1.97 | -4.5 dB |
+| Peaking | 5836 Hz  | 1.99 | -4.3 dB |
+| Peaking | 22047 Hz | 2.35 | -3.1 dB |
+| Peaking | 125 Hz   | 1.13 | -1.6 dB |
+| Peaking | 2487 Hz  | 4.27 | -2.8 dB |
+| Peaking | 4707 Hz  | 0.94 | 4.1 dB  |
+| Peaking | 4855 Hz  | 3.7  | -6.3 dB |
+| Peaking | 7378 Hz  | 6.85 | -4.8 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.3dB**
@@ -27,14 +27,14 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | 0.8 dB  |
 | Peaking | 62 Hz    | 1.41 | -0.4 dB |
-| Peaking | 125 Hz   | 1.41 | -1.5 dB |
+| Peaking | 125 Hz   | 1.41 | -1.6 dB |
 | Peaking | 250 Hz   | 1.41 | -0.3 dB |
 | Peaking | 500 Hz   | 1.41 | 2.2 dB  |
-| Peaking | 1000 Hz  | 1.41 | 3.2 dB  |
-| Peaking | 2000 Hz  | 1.41 | -4.6 dB |
-| Peaking | 4000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.7 dB |
-| Peaking | 16000 Hz | 1.41 | 0.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | 3.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | -4.4 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 8000 Hz  | 1.41 | -2.5 dB |
+| Peaking | 16000 Hz | 1.41 | 0.5 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/TFZ%20Secret%20Garden/TFZ%20Secret%20Garden.png)

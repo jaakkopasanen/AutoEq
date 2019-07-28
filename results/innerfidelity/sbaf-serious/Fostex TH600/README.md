@@ -2,21 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
-with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 31 Hz   | 0.74 | -3.2 dB |
-| Peaking | 125 Hz  | 0.47 | -5.4 dB |
-| Peaking | 495 Hz  | 1.71 | 5.2 dB  |
-| Peaking | 3071 Hz | 2.47 | 6.3 dB  |
-| Peaking | 2130 Hz | 4.01 | -0.9 dB |
-| Peaking | 2462 Hz | 4.99 | 3.1 dB  |
-| Peaking | 2766 Hz | 6.51 | -1.9 dB |
-| Peaking | 3843 Hz | 6.57 | 3.2 dB  |
-| Peaking | 5682 Hz | 1.76 | -2.9 dB |
+| Peaking | 31 Hz   | 0.67 | -3.4 dB |
+| Peaking | 126 Hz  | 0.51 | -5.3 dB |
+| Peaking | 449 Hz  | 2.35 | 2.2 dB  |
+| Peaking | 535 Hz  | 1.92 | 3.4 dB  |
+| Peaking | 3056 Hz | 2.62 | 6.2 dB  |
+| Peaking | 2424 Hz | 6.96 | 2.3 dB  |
+| Peaking | 3830 Hz | 3.59 | 4.3 dB  |
+| Peaking | 4154 Hz | 1.23 | -2.0 dB |
+| Peaking | 6574 Hz | 1.26 | -2.8 dB |
+| Peaking | 8561 Hz | 2.11 | 1.8 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.1dB**
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 4.5 dB  |
 | Peaking | 1000 Hz  | 1.41 | -1.2 dB |
 | Peaking | 2000 Hz  | 1.41 | 2.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | 3.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.2 dB |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.3 dB |
+| Peaking | 16000 Hz | 1.41 | -0.4 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fostex%20TH600/Fostex%20TH600.png)

@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 25 Hz    | 0.63 | 2.7 dB   |
-| Peaking | 64 Hz    | 1.22 | 1.4 dB   |
-| Peaking | 674 Hz   | 0.29 | -2.7 dB  |
-| Peaking | 1694 Hz  | 1.39 | 9.1 dB   |
-| Peaking | 3772 Hz  | 2.33 | -3.8 dB  |
-| Peaking | 859 Hz   | 1.16 | 3.0 dB   |
-| Peaking | 877 Hz   | 2.4  | -5.0 dB  |
-| Peaking | 5632 Hz  | 6.73 | 2.8 dB   |
-| Peaking | 7296 Hz  | 6.81 | -1.6 dB  |
-| Peaking | 19238 Hz | 1.29 | -10.8 dB |
+| Peaking | 32 Hz    | 0.37 | 2.9 dB   |
+| Peaking | 580 Hz   | 0.25 | -2.6 dB  |
+| Peaking | 1705 Hz  | 1.4  | 9.0 dB   |
+| Peaking | 3794 Hz  | 2.22 | -4.1 dB  |
+| Peaking | 19294 Hz | 1.1  | -10.6 dB |
+| Peaking | 865 Hz   | 1.09 | 2.7 dB   |
+| Peaking | 882 Hz   | 2.44 | -4.8 dB  |
+| Peaking | 7463 Hz  | 6.59 | -1.4 dB  |
+| Peaking | 16145 Hz | 1.18 | 2.6 dB   |
+| Peaking | 17403 Hz | 2.53 | -4.0 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.9dB**
@@ -30,11 +30,11 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 125 Hz   | 1.41 | -0.3 dB |
 | Peaking | 250 Hz   | 1.41 | -1.9 dB |
 | Peaking | 500 Hz   | 1.41 | -1.5 dB |
-| Peaking | 1000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 2000 Hz  | 1.41 | 7.4 dB  |
-| Peaking | 4000 Hz  | 1.41 | -4.4 dB |
-| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
-| Peaking | 16000 Hz | 1.41 | -2.3 dB |
+| Peaking | 1000 Hz  | 1.41 | -1.1 dB |
+| Peaking | 2000 Hz  | 1.41 | 7.5 dB  |
+| Peaking | 4000 Hz  | 1.41 | -4.8 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 16000 Hz | 1.41 | -2.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Hifiman%20HE6se/Hifiman%20HE6se.png)

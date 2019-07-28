@@ -2,23 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-2.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.2dB**.
+When using independent subset of filters, apply preamp of **-2.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 974 Hz   | 2.86 | 2.5 dB  |
-| Peaking | 2017 Hz  | 4.27 | -3.8 dB |
-| Peaking | 3875 Hz  | 1.43 | -3.9 dB |
-| Peaking | 5321 Hz  | 2.37 | 5.6 dB  |
-| Peaking | 16308 Hz | 1.31 | -4.3 dB |
-| Peaking | 25 Hz    | 1.43 | -1.9 dB |
-| Peaking | 155 Hz   | 1.4  | -0.7 dB |
-| Peaking | 11954 Hz | 4.09 | 1.0 dB  |
+| Peaking | 2066 Hz  | 2.01 | -6.4 dB |
+| Peaking | 3011 Hz  | 0.42 | 4.1 dB  |
+| Peaking | 3437 Hz  | 1.77 | -5.9 dB |
+| Peaking | 14130 Hz | 4.03 | -2.4 dB |
+| Peaking | 17750 Hz | 0.99 | -4.6 dB |
+| Peaking | 26 Hz    | 1.48 | -1.9 dB |
+| Peaking | 945 Hz   | 3.69 | 1.8 dB  |
+| Peaking | 2000 Hz  | 0.04 | -0.6 dB |
+| Peaking | 6644 Hz  | 0.32 | 0.9 dB  |
+| Peaking | 8580 Hz  | 3.47 | -1.4 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.5dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -30,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.4 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.7 dB  |
 | Peaking | 2000 Hz  | 1.41 | -3.6 dB |
-| Peaking | 4000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.9 dB |
 | Peaking | 8000 Hz  | 1.41 | 1.9 dB  |
-| Peaking | 16000 Hz | 1.41 | -4.7 dB |
+| Peaking | 16000 Hz | 1.41 | -5.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Bose%20SoundLink%20Around-Ear%20II/Bose%20SoundLink%20Around-Ear%20II.png)

@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-3.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.1dB**.
+When using independent subset of filters, apply preamp of **-3.8dB**.
 
-| Type    | Fc      |     Q | Gain     |
-|:--------|:--------|:------|:---------|
-| Peaking | 14 Hz   |  0.25 | 2.9 dB   |
-| Peaking | 178 Hz  |  0.5  | -3.3 dB  |
-| Peaking | 824 Hz  |  1    | 3.0 dB   |
-| Peaking | 5424 Hz |  1.08 | 5.2 dB   |
-| Peaking | 7227 Hz |  2.97 | -10.6 dB |
-| Peaking | 2238 Hz |  5.07 | 1.5 dB   |
-| Peaking | 2872 Hz |  4.46 | -3.2 dB  |
-| Peaking | 3609 Hz |  3.68 | 2.4 dB   |
-| Peaking | 4491 Hz |  5.85 | -1.2 dB  |
-| Peaking | 9127 Hz | 11.07 | 1.1 dB   |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 16 Hz   | 0.29 | 2.8 dB  |
+| Peaking | 179 Hz  | 0.48 | -3.3 dB |
+| Peaking | 832 Hz  | 0.93 | 3.1 dB  |
+| Peaking | 4603 Hz | 1.7  | 3.7 dB  |
+| Peaking | 7243 Hz | 3.56 | -8.3 dB |
+| Peaking | 2242 Hz | 3.9  | 1.6 dB  |
+| Peaking | 2911 Hz | 3.9  | -2.6 dB |
+| Peaking | 3416 Hz | 0.57 | -0.4 dB |
+| Peaking | 3492 Hz | 3.49 | 1.9 dB  |
+| Peaking | 9754 Hz | 3.75 | 0.8 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.5 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.7 dB  |
 | Peaking | 2000 Hz  | 1.41 | -0.3 dB |
-| Peaking | 4000 Hz  | 1.41 | 4.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -4.1 dB |
-| Peaking | 16000 Hz | 1.41 | 0.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.4 dB |
+| Peaking | 16000 Hz | 1.41 | 0.7 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Venture%20Electronics%20Duke/Venture%20Electronics%20Duke.png)

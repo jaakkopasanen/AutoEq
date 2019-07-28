@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 210 Hz   | 0.43 | -5.7 dB  |
-| Peaking | 1902 Hz  | 1.36 | -10.9 dB |
-| Peaking | 2507 Hz  | 1.15 | 8.1 dB   |
-| Peaking | 3886 Hz  | 0.11 | 4.0 dB   |
-| Peaking | 17366 Hz | 1.12 | -23.2 dB |
-| Peaking | 20 Hz    | 1.73 | 2.2 dB   |
-| Peaking | 4791 Hz  | 3.25 | 3.6 dB   |
-| Peaking | 6837 Hz  | 0.79 | -2.2 dB  |
-| Peaking | 13221 Hz | 2.09 | 4.8 dB   |
-| Peaking | 15688 Hz | 3.18 | -4.5 dB  |
+| Peaking | 200 Hz   | 0.44 | -5.4 dB  |
+| Peaking | 1827 Hz  | 1.21 | -8.8 dB  |
+| Peaking | 2610 Hz  | 2.73 | 4.5 dB   |
+| Peaking | 5921 Hz  | 0.14 | 7.9 dB   |
+| Peaking | 18022 Hz | 0.49 | -24.4 dB |
+| Peaking | 21 Hz    | 1.68 | 2.1 dB   |
+| Peaking | 6317 Hz  | 5.78 | -2.0 dB  |
+| Peaking | 8103 Hz  | 3.52 | -2.1 dB  |
+| Peaking | 12746 Hz | 2.32 | 4.7 dB   |
+| Peaking | 16070 Hz | 2.65 | -4.0 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.7 dB  |
 | Peaking | 1000 Hz  | 1.41 | 1.0 dB   |
 | Peaking | 2000 Hz  | 1.41 | -1.3 dB  |
-| Peaking | 4000 Hz  | 1.41 | 7.3 dB   |
-| Peaking | 8000 Hz  | 1.41 | 1.8 dB   |
-| Peaking | 16000 Hz | 1.41 | -17.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.4 dB   |
+| Peaking | 8000 Hz  | 1.41 | 2.0 dB   |
+| Peaking | 16000 Hz | 1.41 | -18.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Shozy%20&%20Neo%20BG%20sample%201/Shozy%20&%20Neo%20BG%20sample%201.png)

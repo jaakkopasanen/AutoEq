@@ -6,21 +6,21 @@ In case of using parametric equalizer, apply preamp of **-7.0dB** and build filt
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.0dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 181 Hz  | 0.71 | -3.9 dB |
-| Peaking | 1949 Hz | 2.44 | -3.3 dB |
-| Peaking | 3446 Hz | 2.08 | 6.1 dB  |
-| Peaking | 5862 Hz | 2.45 | 5.8 dB  |
-| Peaking | 9108 Hz | 4.13 | -4.9 dB |
-| Peaking | 40 Hz   | 0.09 | 0.8 dB  |
-| Peaking | 92 Hz   | 1.23 | -1.2 dB |
-| Peaking | 360 Hz  | 1.24 | -1.2 dB |
-| Peaking | 795 Hz  | 1.49 | 1.4 dB  |
-| Peaking | 1525 Hz | 4.46 | -0.9 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 181 Hz   | 0.71 | -3.9 dB |
+| Peaking | 1946 Hz  | 2.44 | -3.2 dB |
+| Peaking | 3435 Hz  | 2.14 | 6.1 dB  |
+| Peaking | 5882 Hz  | 2.4  | 5.9 dB  |
+| Peaking | 9114 Hz  | 3.75 | -5.0 dB |
+| Peaking | 24 Hz    | 1.05 | 0.8 dB  |
+| Peaking | 807 Hz   | 1.47 | 2.2 dB  |
+| Peaking | 2735 Hz  | 0.15 | -1.3 dB |
+| Peaking | 5360 Hz  | 0.22 | 1.2 dB  |
+| Peaking | 15270 Hz | 5.13 | -1.1 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.4 dB |
 | Peaking | 1000 Hz  | 1.41 | 1.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | -3.4 dB |
-| Peaking | 4000 Hz  | 1.41 | 7.9 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.1 dB |
+| Peaking | 16000 Hz | 1.41 | -0.5 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/TDK%20BA200/TDK%20BA200.png)

@@ -2,25 +2,24 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 20 Hz   | 0.17 | 6.8 dB  |
-| Peaking | 587 Hz  | 0.97 | 2.1 dB  |
-| Peaking | 1988 Hz | 2.23 | -5.8 dB |
-| Peaking | 5405 Hz | 2.93 | -3.8 dB |
-| Peaking | 7560 Hz | 2.63 | -1.6 dB |
-| Peaking | 83 Hz   | 4.5  | 1.6 dB  |
-| Peaking | 2473 Hz | 5.77 | -1.4 dB |
-| Peaking | 3469 Hz | 4.66 | 3.4 dB  |
-| Peaking | 7371 Hz | 3.77 | 6.8 dB  |
-| Peaking | 7552 Hz | 1.69 | -3.9 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 41 Hz    | 0.39 | 6.6 dB  |
+| Peaking | 580 Hz   | 0.9  | 2.1 dB  |
+| Peaking | 1987 Hz  | 2.23 | -5.8 dB |
+| Peaking | 5555 Hz  | 2.23 | -4.1 dB |
+| Peaking | 21417 Hz | 2.24 | -1.7 dB |
+| Peaking | 86 Hz    | 5.35 | 1.3 dB  |
+| Peaking | 2509 Hz  | 4.43 | -1.3 dB |
+| Peaking | 3389 Hz  | 4.11 | 2.6 dB  |
+| Peaking | 8675 Hz  | 5.76 | -3.1 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +31,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 2.1 dB  |
 | Peaking | 1000 Hz  | 1.41 | 1.4 dB  |
 | Peaking | 2000 Hz  | 1.41 | -5.1 dB |
-| Peaking | 4000 Hz  | 1.41 | 0.2 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.1 dB |
-| Peaking | 16000 Hz | 1.41 | 0.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.0 dB |
+| Peaking | 8000 Hz  | 1.41 | -2.8 dB |
+| Peaking | 16000 Hz | 1.41 | 0.4 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Yuin%20PK2/Yuin%20PK2.png)

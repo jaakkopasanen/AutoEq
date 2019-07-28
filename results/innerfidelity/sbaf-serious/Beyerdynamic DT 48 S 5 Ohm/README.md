@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 114 Hz   | 0.14 | 7.1 dB   |
-| Peaking | 748 Hz   | 1.11 | -14.9 dB |
-| Peaking | 1817 Hz  | 1.26 | -10.4 dB |
-| Peaking | 6100 Hz  | 1.71 | 7.9 dB   |
-| Peaking | 9184 Hz  | 2.36 | -8.6 dB  |
-| Peaking | 21 Hz    | 2.67 | 1.6 dB   |
-| Peaking | 284 Hz   | 3.3  | 2.5 dB   |
-| Peaking | 510 Hz   | 3.26 | -1.4 dB  |
-| Peaking | 3141 Hz  | 6.27 | 1.6 dB   |
-| Peaking | 15553 Hz | 5.05 | -2.8 dB  |
+| Peaking | 113 Hz   | 0.14 | 7.1 dB   |
+| Peaking | 744 Hz   | 1.12 | -14.7 dB |
+| Peaking | 1813 Hz  | 1.2  | -10.5 dB |
+| Peaking | 6210 Hz  | 1.62 | 9.3 dB   |
+| Peaking | 9082 Hz  | 1.62 | -8.8 dB  |
+| Peaking | 21 Hz    | 2.53 | 1.4 dB   |
+| Peaking | 280 Hz   | 4.14 | 2.5 dB   |
+| Peaking | 10524 Hz | 6.15 | -4.2 dB  |
+| Peaking | 11919 Hz | 2    | 3.3 dB   |
+| Peaking | 14838 Hz | 3.68 | -4.5 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | 6.0 dB   |
+| Peaking | 31 Hz    | 1.41 | 6.1 dB   |
 | Peaking | 62 Hz    | 1.41 | 4.5 dB   |
 | Peaking | 125 Hz   | 1.41 | 4.2 dB   |
 | Peaking | 250 Hz   | 1.41 | 7.7 dB   |
 | Peaking | 500 Hz   | 1.41 | -4.7 dB  |
 | Peaking | 1000 Hz  | 1.41 | -10.5 dB |
 | Peaking | 2000 Hz  | 1.41 | -10.1 dB |
-| Peaking | 4000 Hz  | 1.41 | 4.5 dB   |
-| Peaking | 8000 Hz  | 1.41 | -1.4 dB  |
-| Peaking | 16000 Hz | 1.41 | -1.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.4 dB   |
+| Peaking | 8000 Hz  | 1.41 | -1.7 dB  |
+| Peaking | 16000 Hz | 1.41 | -2.6 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%2048%20S%205%20Ohm/Beyerdynamic%20DT%2048%20S%205%20Ohm.png)

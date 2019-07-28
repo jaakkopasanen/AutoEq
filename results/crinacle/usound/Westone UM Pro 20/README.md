@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 43 Hz   | 0.28 | -2.7 dB |
-| Peaking | 132 Hz  | 0.79 | -2.6 dB |
-| Peaking | 288 Hz  | 0.59 | -4.9 dB |
-| Peaking | 4056 Hz | 0.62 | 7.0 dB  |
-| Peaking | 8270 Hz | 4.04 | -6.7 dB |
-| Peaking | 946 Hz  | 2.13 | 1.6 dB  |
-| Peaking | 1400 Hz | 2.9  | -1.2 dB |
-| Peaking | 2457 Hz | 2.94 | 2.5 dB  |
-| Peaking | 4184 Hz | 0.19 | -1.0 dB |
-| Peaking | 6213 Hz | 3.1  | 2.4 dB  |
+| Peaking | 38 Hz   | 0.32 | -2.6 dB |
+| Peaking | 123 Hz  | 0.86 | -2.1 dB |
+| Peaking | 263 Hz  | 0.54 | -5.6 dB |
+| Peaking | 4043 Hz | 0.62 | 7.0 dB  |
+| Peaking | 8260 Hz | 3.96 | -7.6 dB |
+| Peaking | 956 Hz  | 2.02 | 1.8 dB  |
+| Peaking | 1392 Hz | 2.37 | -1.2 dB |
+| Peaking | 2450 Hz | 2.81 | 2.4 dB  |
+| Peaking | 3724 Hz | 0.21 | -1.0 dB |
+| Peaking | 6078 Hz | 3.24 | 2.3 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.5dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | -2.7 dB |
-| Peaking | 62 Hz    | 1.41 | -2.8 dB |
+| Peaking | 62 Hz    | 1.41 | -2.9 dB |
 | Peaking | 125 Hz   | 1.41 | -5.5 dB |
 | Peaking | 250 Hz   | 1.41 | -5.9 dB |
 | Peaking | 500 Hz   | 1.41 | -2.9 dB |
 | Peaking | 1000 Hz  | 1.41 | 0.0 dB  |
 | Peaking | 2000 Hz  | 1.41 | 2.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | 7.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 8.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.6 dB |
+| Peaking | 16000 Hz | 1.41 | -0.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Westone%20UM%20Pro%2020/Westone%20UM%20Pro%2020.png)

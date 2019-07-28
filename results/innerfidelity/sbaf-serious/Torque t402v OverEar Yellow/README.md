@@ -8,15 +8,15 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 115 Hz  | 0.11 | -5.3 dB  |
-| Peaking | 231 Hz  | 0.53 | -13.2 dB |
-| Peaking | 595 Hz  | 0.59 | 15.1 dB  |
-| Peaking | 4031 Hz | 1.27 | 5.9 dB   |
-| Peaking | 27 Hz   | 0.98 | -2.3 dB  |
-| Peaking | 1232 Hz | 7.46 | -3.5 dB  |
-| Peaking | 1823 Hz | 4.6  | 2.7 dB   |
-| Peaking | 5322 Hz | 4.65 | 3.4 dB   |
-| Peaking | 6750 Hz | 0.98 | -1.7 dB  |
+| Peaking | 57 Hz   | 0.12 | -6.4 dB  |
+| Peaking | 226 Hz  | 0.6  | -11.2 dB |
+| Peaking | 600 Hz  | 0.66 | 12.0 dB  |
+| Peaking | 3897 Hz | 1.27 | 6.1 dB   |
+| Peaking | 125 Hz  | 4.77 | -0.8 dB  |
+| Peaking | 1227 Hz | 6.57 | -3.4 dB  |
+| Peaking | 1816 Hz | 4.18 | 2.7 dB   |
+| Peaking | 5365 Hz | 2.89 | 4.0 dB   |
+| Peaking | 6378 Hz | 1.04 | -2.8 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB**
@@ -30,10 +30,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -12.3 dB |
 | Peaking | 500 Hz   | 1.41 | 5.6 dB   |
 | Peaking | 1000 Hz  | 1.41 | 4.4 dB   |
-| Peaking | 2000 Hz  | 1.41 | 2.2 dB   |
-| Peaking | 4000 Hz  | 1.41 | 6.6 dB   |
-| Peaking | 8000 Hz  | 1.41 | -0.9 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | 2.1 dB   |
+| Peaking | 4000 Hz  | 1.41 | 6.7 dB   |
+| Peaking | 8000 Hz  | 1.41 | -1.4 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.0 dB   |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Yellow/Torque%20t402v%20OverEar%20Yellow.png)

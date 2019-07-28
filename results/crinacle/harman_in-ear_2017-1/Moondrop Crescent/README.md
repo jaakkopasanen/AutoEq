@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.9dB**.
+When using independent subset of filters, apply preamp of **-6.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 18 Hz    | 0.06 | -8.3 dB  |
-| Peaking | 824 Hz   | 6.45 | 0.7 dB   |
-| Peaking | 5389 Hz  | 0.22 | 28.9 dB  |
-| Peaking | 12232 Hz | 1.11 | 18.8 dB  |
-| Peaking | 16049 Hz | 0.13 | -46.8 dB |
-| Peaking | 1384 Hz  | 3.26 | -2.4 dB  |
-| Peaking | 2462 Hz  | 1.61 | 3.2 dB   |
-| Peaking | 3710 Hz  | 2.22 | -3.3 dB  |
-| Peaking | 5726 Hz  | 3.92 | 1.8 dB   |
-| Peaking | 22050 Hz | 2.09 | 0.4 dB   |
+| Peaking | 23 Hz    | 0.08 | -8.2 dB  |
+| Peaking | 813 Hz   | 5.53 | 0.5 dB   |
+| Peaking | 5668 Hz  | 0.3  | 24.4 dB  |
+| Peaking | 12039 Hz | 1.43 | 16.5 dB  |
+| Peaking | 16641 Hz | 0.15 | -39.0 dB |
+| Peaking | 1385 Hz  | 2.67 | -2.6 dB  |
+| Peaking | 2405 Hz  | 1.51 | 2.7 dB   |
+| Peaking | 3701 Hz  | 3.29 | -3.2 dB  |
+| Peaking | 13334 Hz | 4.28 | 0.7 dB   |
+| Peaking | 20093 Hz | 3.59 | -7.2 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.9dB**
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 2.9 dB   |
 | Peaking | 4000 Hz  | 1.41 | 4.2 dB   |
 | Peaking | 8000 Hz  | 1.41 | 10.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -35.4 dB |
+| Peaking | 16000 Hz | 1.41 | -35.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Moondrop%20Crescent/Moondrop%20Crescent.png)

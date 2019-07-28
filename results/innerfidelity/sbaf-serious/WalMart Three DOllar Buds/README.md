@@ -6,18 +6,18 @@ In case of using parametric equalizer, apply preamp of **-7.2dB** and build filt
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.2dB**.
 
-| Type    | Fc      |    Q | Gain     |
-|:--------|:--------|:-----|:---------|
-| Peaking | 80 Hz   | 0.16 | 6.9 dB   |
-| Peaking | 275 Hz  | 2    | -4.1 dB  |
-| Peaking | 411 Hz  | 1.22 | -9.7 dB  |
-| Peaking | 1908 Hz | 0.84 | -10.9 dB |
-| Peaking | 2253 Hz | 1.1  | 12.5 dB  |
-| Peaking | 22 Hz   | 2.78 | 0.8 dB   |
-| Peaking | 150 Hz  | 5.98 | 1.4 dB   |
-| Peaking | 3143 Hz | 4.72 | -2.9 dB  |
-| Peaking | 3548 Hz | 2.47 | 2.2 dB   |
-| Peaking | 6713 Hz | 6.51 | -2.1 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 83 Hz    | 0.17 | 7.0 dB  |
+| Peaking | 319 Hz   | 1.27 | -8.2 dB |
+| Peaking | 457 Hz   | 1.49 | -5.3 dB |
+| Peaking | 1553 Hz  | 0.69 | -4.2 dB |
+| Peaking | 2421 Hz  | 1.49 | 5.6 dB  |
+| Peaking | 21 Hz    | 2.56 | 1.1 dB  |
+| Peaking | 151 Hz   | 5.55 | 1.5 dB  |
+| Peaking | 3988 Hz  | 5.11 | 1.2 dB  |
+| Peaking | 6685 Hz  | 6.74 | -2.0 dB |
+| Peaking | 14533 Hz | 5.88 | -1.6 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -5.9 dB |
 | Peaking | 1000 Hz  | 1.41 | -1.6 dB |
 | Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | 2.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 16000 Hz | 1.41 | 0.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | 1.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 16000 Hz | 1.41 | -0.4 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/WalMart%20Three%20DOllar%20Buds/WalMart%20Three%20DOllar%20Buds.png)

@@ -2,21 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-4.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.3dB**.
+When using independent subset of filters, apply preamp of **-4.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 23 Hz    | 0.6  | -2.9 dB  |
-| Peaking | 169 Hz   | 0.57 | -4.9 dB  |
-| Peaking | 746 Hz   | 0.95 | 4.2 dB   |
-| Peaking | 2677 Hz  | 3.57 | 3.4 dB   |
-| Peaking | 19002 Hz | 0.95 | -10.9 dB |
-| Peaking | 3279 Hz  | 3.37 | 1.4 dB   |
-| Peaking | 3755 Hz  | 3.28 | -0.9 dB  |
-| Peaking | 4959 Hz  | 3.01 | -3.6 dB  |
-| Peaking | 6573 Hz  | 4.14 | 4.0 dB   |
+| Peaking | 22 Hz    | 0.6  | -2.9 dB  |
+| Peaking | 168 Hz   | 0.58 | -4.9 dB  |
+| Peaking | 746 Hz   | 0.97 | 4.2 dB   |
+| Peaking | 2653 Hz  | 3.46 | 3.2 dB   |
+| Peaking | 19137 Hz | 0.78 | -11.6 dB |
+| Peaking | 4929 Hz  | 3.18 | -3.8 dB  |
+| Peaking | 6581 Hz  | 3.82 | 3.9 dB   |
+| Peaking | 8901 Hz  | 5.84 | -1.8 dB  |
+| Peaking | 12052 Hz | 1.58 | 1.7 dB   |
+| Peaking | 13605 Hz | 4.54 | -2.1 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.5dB**
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.9 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.5 dB  |
 | Peaking | 2000 Hz  | 1.41 | 2.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 8000 Hz  | 1.41 | 1.2 dB  |
-| Peaking | 16000 Hz | 1.41 | -5.6 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.1 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.1 dB  |
+| Peaking | 16000 Hz | 1.41 | -6.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Samsung%20Level%20U%20Pro/Samsung%20Level%20U%20Pro.png)

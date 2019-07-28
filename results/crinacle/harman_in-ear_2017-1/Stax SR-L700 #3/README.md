@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.7dB**.
+When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 32 Hz    | 0.86 | 7.0 dB   |
-| Peaking | 1115 Hz  | 0.62 | -10.3 dB |
-| Peaking | 6015 Hz  | 0.16 | 13.3 dB  |
-| Peaking | 15002 Hz | 3.49 | -9.5 dB  |
-| Peaking | 18959 Hz | 0.24 | -33.5 dB |
-| Peaking | 3922 Hz  | 2.79 | 2.2 dB   |
-| Peaking | 5840 Hz  | 5.34 | -4.0 dB  |
-| Peaking | 9553 Hz  | 5.89 | -4.3 dB  |
-| Peaking | 11646 Hz | 2.7  | 4.5 dB   |
-| Peaking | 17007 Hz | 3.68 | -3.1 dB  |
+| Peaking | 1116 Hz  | 0.64 | -9.8 dB  |
+| Peaking | 6002 Hz  | 0.17 | 12.4 dB  |
+| Peaking | 15045 Hz | 3.24 | -9.4 dB  |
+| Peaking | 18959 Hz | 0.27 | -32.9 dB |
+| Peaking | 9692 Hz  | 2.42 | -5.0 dB  |
+| Peaking | 11532 Hz | 1.92 | 5.8 dB   |
+| Peaking | 14109 Hz | 6    | -3.5 dB  |
+| Peaking | 17055 Hz | 3.67 | -1.7 dB  |
+| Peaking | 17073 Hz | 3.02 | -1.5 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 1.5 dB   |
 | Peaking | 4000 Hz  | 1.41 | 7.0 dB   |
 | Peaking | 8000 Hz  | 1.41 | 5.2 dB   |
-| Peaking | 16000 Hz | 1.41 | -34.6 dB |
+| Peaking | 16000 Hz | 1.41 | -34.5 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Stax%20SR-L700%20#3/Stax%20SR-L700%20#3.png)

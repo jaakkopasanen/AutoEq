@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 104 Hz   | 0.54 | -2.8 dB  |
-| Peaking | 259 Hz   | 0.51 | -4.9 dB  |
-| Peaking | 1720 Hz  | 1.28 | -9.7 dB  |
-| Peaking | 2930 Hz  | 0.55 | 9.4 dB   |
-| Peaking | 15391 Hz | 2.13 | -14.3 dB |
-| Peaking | 18 Hz    | 2.02 | 1.5 dB   |
-| Peaking | 1293 Hz  | 5.83 | -0.6 dB  |
-| Peaking | 6302 Hz  | 2.99 | 4.2 dB   |
-| Peaking | 7434 Hz  | 1.95 | -3.7 dB  |
-| Peaking | 12691 Hz | 5.65 | 3.5 dB   |
+| Peaking | 99 Hz    | 0.56 | -2.5 dB  |
+| Peaking | 248 Hz   | 0.49 | -5.2 dB  |
+| Peaking | 1698 Hz  | 1.34 | -9.2 dB  |
+| Peaking | 3029 Hz  | 0.54 | 9.0 dB   |
+| Peaking | 15185 Hz | 2.72 | -19.5 dB |
+| Peaking | 6241 Hz  | 3.38 | 3.7 dB   |
+| Peaking | 7521 Hz  | 2.38 | -3.8 dB  |
+| Peaking | 11275 Hz | 2.03 | 0.5 dB   |
+| Peaking | 12718 Hz | 4.61 | 4.3 dB   |
+| Peaking | 19422 Hz | 1.1  | -6.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.9dB**
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -1.2 dB  |
 | Peaking | 2000 Hz  | 1.41 | -2.1 dB  |
 | Peaking | 4000 Hz  | 1.41 | 8.8 dB   |
-| Peaking | 8000 Hz  | 1.41 | 1.2 dB   |
-| Peaking | 16000 Hz | 1.41 | -11.4 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB   |
+| Peaking | 16000 Hz | 1.41 | -14.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/EarWerkz%20Legend%20Omega/EarWerkz%20Legend%20Omega.png)

@@ -2,24 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 31 Hz   | 0.31 | -2.8 dB |
-| Peaking | 121 Hz  | 0.93 | -1.5 dB |
-| Peaking | 304 Hz  | 0.48 | -2.4 dB |
-| Peaking | 2955 Hz | 1.94 | 4.4 dB  |
-| Peaking | 5597 Hz | 2.6  | 6.2 dB  |
-| Peaking | 934 Hz  | 3.73 | 1.0 dB  |
-| Peaking | 1352 Hz | 4.44 | -1.3 dB |
-| Peaking | 6556 Hz | 7.71 | 2.0 dB  |
-| Peaking | 8056 Hz | 2.81 | -1.6 dB |
+| Peaking | 22 Hz   | 0.86 | -1.5 dB |
+| Peaking | 60 Hz   | 0.33 | -1.6 dB |
+| Peaking | 204 Hz  | 0.32 | -2.7 dB |
+| Peaking | 2939 Hz | 1.8  | 4.2 dB  |
+| Peaking | 5584 Hz | 2.69 | 6.2 dB  |
+| Peaking | 937 Hz  | 3.75 | 1.1 dB  |
+| Peaking | 1357 Hz | 4.22 | -1.3 dB |
+| Peaking | 6504 Hz | 6.58 | 0.6 dB  |
+| Peaking | 6523 Hz | 6.2  | 0.9 dB  |
+| Peaking | 8434 Hz | 4.39 | -2.4 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -30,9 +31,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -2.4 dB |
 | Peaking | 500 Hz   | 1.41 | -1.9 dB |
 | Peaking | 1000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | 0.6 dB  |
 | Peaking | 4000 Hz  | 1.41 | 5.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.5 dB  |
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs

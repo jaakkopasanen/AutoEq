@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 34 Hz   | 0.47 | 6.9 dB   |
-| Peaking | 149 Hz  | 0.67 | -4.4 dB  |
-| Peaking | 2575 Hz | 1.58 | -19.3 dB |
-| Peaking | 2662 Hz | 0.33 | 7.6 dB   |
-| Peaking | 4171 Hz | 3.79 | -13.4 dB |
-| Peaking | 3614 Hz | 3.21 | -1.8 dB  |
-| Peaking | 4148 Hz | 7.95 | 3.3 dB   |
-| Peaking | 4719 Hz | 4.63 | -7.3 dB  |
-| Peaking | 5786 Hz | 2.02 | 10.4 dB  |
-| Peaking | 7590 Hz | 1.01 | -4.6 dB  |
+| Peaking | 34 Hz   | 0.46 | 6.9 dB   |
+| Peaking | 148 Hz  | 0.66 | -4.5 dB  |
+| Peaking | 2572 Hz | 1.58 | -18.2 dB |
+| Peaking | 2649 Hz | 0.32 | 7.1 dB   |
+| Peaking | 4114 Hz | 3.22 | -13.0 dB |
+| Peaking | 3510 Hz | 4.99 | -2.9 dB  |
+| Peaking | 4054 Hz | 3.75 | 3.3 dB   |
+| Peaking | 4654 Hz | 5.65 | -6.0 dB  |
+| Peaking | 5966 Hz | 2.74 | 8.3 dB   |
+| Peaking | 7878 Hz | 1    | -3.3 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
 (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 7.1 dB  |
-| Peaking | 62 Hz    | 1.41 | 2.9 dB  |
-| Peaking | 125 Hz   | 1.41 | -2.9 dB |
-| Peaking | 250 Hz   | 1.41 | -2.3 dB |
-| Peaking | 500 Hz   | 1.41 | 1.1 dB  |
-| Peaking | 1000 Hz  | 1.41 | 4.1 dB  |
-| Peaking | 2000 Hz  | 1.41 | -5.1 dB |
-| Peaking | 4000 Hz  | 1.41 | -9.7 dB |
-| Peaking | 8000 Hz  | 1.41 | 4.9 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | 7.1 dB   |
+| Peaking | 62 Hz    | 1.41 | 2.9 dB   |
+| Peaking | 125 Hz   | 1.41 | -2.8 dB  |
+| Peaking | 250 Hz   | 1.41 | -2.4 dB  |
+| Peaking | 500 Hz   | 1.41 | 1.1 dB   |
+| Peaking | 1000 Hz  | 1.41 | 4.1 dB   |
+| Peaking | 2000 Hz  | 1.41 | -5.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | -10.4 dB |
+| Peaking | 8000 Hz  | 1.41 | 5.0 dB   |
+| Peaking | 16000 Hz | 1.41 | -0.6 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Final%20Audio%20Design%20Piano%20Forte%20IX/Final%20Audio%20Design%20Piano%20Forte%20IX.png)

@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 123 Hz   | 0.45 | -4.8 dB  |
-| Peaking | 297 Hz   | 0.85 | -2.6 dB  |
+| Peaking | 106 Hz   | 0.5  | -4.1 dB  |
+| Peaking | 271 Hz   | 0.72 | -3.6 dB  |
 | Peaking | 3762 Hz  | 1    | 6.9 dB   |
-| Peaking | 14934 Hz | 3.8  | -16.6 dB |
-| Peaking | 17620 Hz | 0.85 | -3.6 dB  |
-| Peaking | 18 Hz    | 2.18 | 1.3 dB   |
-| Peaking | 5618 Hz  | 4.89 | 2.7 dB   |
-| Peaking | 7486 Hz  | 6.17 | -5.8 dB  |
-| Peaking | 12994 Hz | 3.06 | 4.4 dB   |
-| Peaking | 14152 Hz | 5.46 | -4.6 dB  |
+| Peaking | 15046 Hz | 3.62 | -16.0 dB |
+| Peaking | 17567 Hz | 0.84 | -3.6 dB  |
+| Peaking | 19 Hz    | 2.16 | 1.3 dB   |
+| Peaking | 5793 Hz  | 3.13 | 3.1 dB   |
+| Peaking | 7386 Hz  | 3.5  | -5.3 dB  |
+| Peaking | 12317 Hz | 2.34 | 3.2 dB   |
+| Peaking | 12739 Hz | 2.76 | -2.4 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
@@ -25,7 +25,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -0.7 dB  |
+| Peaking | 31 Hz    | 1.41 | -0.6 dB  |
 | Peaking | 62 Hz    | 1.41 | -2.8 dB  |
 | Peaking | 125 Hz   | 1.41 | -4.6 dB  |
 | Peaking | 250 Hz   | 1.41 | -4.9 dB  |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 1.2 dB   |
 | Peaking | 4000 Hz  | 1.41 | 7.7 dB   |
 | Peaking | 8000 Hz  | 1.41 | -0.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -12.5 dB |
+| Peaking | 16000 Hz | 1.41 | -12.4 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Audio-Technica%20ATH-IM03/Audio-Technica%20ATH-IM03.png)

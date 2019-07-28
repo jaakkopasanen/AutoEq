@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-3.6dB**.
+When using independent subset of filters, apply preamp of **-2.4dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 0.1  | -3.7 dB  |
-| Peaking | 503 Hz   | 1.28 | 0.6 dB   |
-| Peaking | 1906 Hz  | 1.42 | -5.9 dB  |
-| Peaking | 8858 Hz  | 0.18 | 23.7 dB  |
-| Peaking | 16519 Hz | 0.28 | -44.1 dB |
-| Peaking | 2512 Hz  | 4.33 | -3.4 dB  |
-| Peaking | 4590 Hz  | 1.32 | 6.1 dB   |
-| Peaking | 6193 Hz  | 1.89 | -8.0 dB  |
-| Peaking | 12424 Hz | 3.06 | 9.7 dB   |
-| Peaking | 14653 Hz | 3.41 | -8.4 dB  |
+| Peaking | 43 Hz    | 0.22 | -3.9 dB  |
+| Peaking | 6691 Hz  | 4.23 | -7.4 dB  |
+| Peaking | 8566 Hz  | 0.29 | 33.5 dB  |
+| Peaking | 8807 Hz  | 4.51 | -8.6 dB  |
+| Peaking | 16676 Hz | 0.17 | -44.8 dB |
+| Peaking | 2243 Hz  | 1.97 | -4.2 dB  |
+| Peaking | 3830 Hz  | 2.57 | 5.5 dB   |
+| Peaking | 11498 Hz | 5.99 | 4.5 dB   |
+| Peaking | 12905 Hz | 4.33 | 5.4 dB   |
+| Peaking | 14919 Hz | 4.69 | -10.7 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -1.3 dB  |
 | Peaking | 500 Hz   | 1.41 | 1.3 dB   |
 | Peaking | 1000 Hz  | 1.41 | 1.7 dB   |
-| Peaking | 2000 Hz  | 1.41 | -3.8 dB  |
-| Peaking | 4000 Hz  | 1.41 | 7.0 dB   |
-| Peaking | 8000 Hz  | 1.41 | 5.1 dB   |
-| Peaking | 16000 Hz | 1.41 | -32.5 dB |
+| Peaking | 2000 Hz  | 1.41 | -3.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 7.3 dB   |
+| Peaking | 8000 Hz  | 1.41 | 6.2 dB   |
+| Peaking | 16000 Hz | 1.41 | -36.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Zero%20Audio%20Carbo%20Tenore/Zero%20Audio%20Carbo%20Tenore.png)

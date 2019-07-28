@@ -2,24 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.0dB**.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 14 Hz   | 0.65 | 3.0 dB  |
-| Peaking | 110 Hz  | 1.05 | -0.9 dB |
-| Peaking | 188 Hz  | 0.56 | -3.4 dB |
-| Peaking | 3734 Hz | 1.28 | 6.7 dB  |
-| Peaking | 6879 Hz | 4.33 | -8.5 dB |
-| Peaking | 990 Hz  | 2.01 | 2.1 dB  |
-| Peaking | 1334 Hz | 0.92 | -2.2 dB |
-| Peaking | 2012 Hz | 1.6  | 2.1 dB  |
-| Peaking | 2674 Hz | 3.76 | -0.7 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 13 Hz    | 0.44 | 2.8 dB  |
+| Peaking | 164 Hz   | 0.51 | -3.9 dB |
+| Peaking | 3798 Hz  | 1.17 | 6.8 dB  |
+| Peaking | 6755 Hz  | 3.84 | -8.6 dB |
+| Peaking | 18913 Hz | 0.45 | -6.1 dB |
+| Peaking | 2119 Hz  | 2.54 | 0.2 dB  |
+| Peaking | 5581 Hz  | 3.15 | -0.5 dB |
+| Peaking | 7660 Hz  | 2    | -0.4 dB |
+| Peaking | 7729 Hz  | 1.92 | -0.3 dB |
+| Peaking | 8958 Hz  | 2.33 | 1.8 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.9 dB |
 | Peaking | 1000 Hz  | 1.41 | -0.0 dB |
 | Peaking | 2000 Hz  | 1.41 | 1.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | 6.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.6 dB |
-| Peaking | 16000 Hz | 1.41 | -4.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -4.0 dB |
+| Peaking | 16000 Hz | 1.41 | -5.4 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Onkyo%20E900/Onkyo%20E900.png)

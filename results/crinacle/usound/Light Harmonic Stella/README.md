@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.8dB**.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 143 Hz   | 0.49 | -5.7 dB  |
-| Peaking | 2663 Hz  | 3.49 | 3.7 dB   |
-| Peaking | 6698 Hz  | 0.69 | 10.1 dB  |
-| Peaking | 8293 Hz  | 2.35 | -12.8 dB |
-| Peaking | 16908 Hz | 0.53 | -6.8 dB  |
-| Peaking | 29 Hz    | 1.36 | -1.1 dB  |
-| Peaking | 861 Hz   | 2.1  | 2.3 dB   |
-| Peaking | 1496 Hz  | 3.21 | -2.4 dB  |
-| Peaking | 12074 Hz | 4.88 | 1.6 dB   |
-| Peaking | 14254 Hz | 4.07 | -1.6 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 142 Hz   | 0.49 | -5.7 dB |
+| Peaking | 2625 Hz  | 3.06 | 3.8 dB  |
+| Peaking | 5602 Hz  | 0.87 | 7.7 dB  |
+| Peaking | 8114 Hz  | 3.29 | -8.9 dB |
+| Peaking | 18858 Hz | 0.28 | -6.4 dB |
+| Peaking | 28 Hz    | 1.34 | -1.1 dB |
+| Peaking | 864 Hz   | 2.1  | 2.4 dB  |
+| Peaking | 1495 Hz  | 3.28 | -2.2 dB |
+| Peaking | 12440 Hz | 3.6  | 1.5 dB  |
+| Peaking | 14529 Hz | 4.29 | -2.4 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.3 dB |
 | Peaking | 1000 Hz  | 1.41 | 0.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | 0.4 dB  |
-| Peaking | 4000 Hz  | 1.41 | 7.9 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.9 dB |
-| Peaking | 16000 Hz | 1.41 | -7.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 8.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.5 dB |
+| Peaking | 16000 Hz | 1.41 | -7.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Light%20Harmonic%20Stella/Light%20Harmonic%20Stella.png)

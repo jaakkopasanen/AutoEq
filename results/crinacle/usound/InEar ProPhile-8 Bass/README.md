@@ -2,24 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-3.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.4dB**.
+When using independent subset of filters, apply preamp of **-3.3dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 19 Hz   |  1.5  | 1.4 dB  |
-| Peaking | 131 Hz  |  0.8  | -3.3 dB |
-| Peaking | 2752 Hz |  3.14 | 2.6 dB  |
-| Peaking | 4346 Hz |  3.01 | 3.6 dB  |
-| Peaking | 7775 Hz |  6.1  | -1.9 dB |
-| Peaking | 45 Hz   |  1.33 | -0.3 dB |
-| Peaking | 1192 Hz |  0.96 | 2.7 dB  |
-| Peaking | 1403 Hz |  1.86 | -4.2 dB |
-| Peaking | 5788 Hz | 11.91 | -1.4 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 18 Hz    | 1.17 | 1.6 dB  |
+| Peaking | 135 Hz   | 0.63 | -3.2 dB |
+| Peaking | 1534 Hz  | 1.37 | -4.9 dB |
+| Peaking | 2356 Hz  | 0.37 | 4.0 dB  |
+| Peaking | 7291 Hz  | 1.86 | -3.4 dB |
+| Peaking | 5074 Hz  | 2.79 | 1.1 dB  |
+| Peaking | 5584 Hz  | 5.83 | -1.7 dB |
+| Peaking | 15773 Hz | 0.78 | 1.3 dB  |
+| Peaking | 16766 Hz | 2.96 | 1.7 dB  |
+| Peaking | 19842 Hz | 0.6  | -7.7 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.6 dB  |
 | Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 4000 Hz  | 1.41 | 3.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.2 dB |
-| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 3.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.8 dB |
+| Peaking | 16000 Hz | 1.41 | -0.7 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/InEar%20ProPhile-8%20Bass/InEar%20ProPhile-8%20Bass.png)

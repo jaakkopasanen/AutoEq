@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 136 Hz   | 0.41 | -5.9 dB  |
-| Peaking | 2444 Hz  | 0.22 | 5.6 dB   |
-| Peaking | 9094 Hz  | 1.59 | -10.2 dB |
-| Peaking | 11950 Hz | 2.69 | 14.3 dB  |
-| Peaking | 15643 Hz | 1.54 | -31.6 dB |
-| Peaking | 1302 Hz  | 5.37 | -1.5 dB  |
-| Peaking | 2316 Hz  | 4.88 | -3.2 dB  |
-| Peaking | 3608 Hz  | 1.64 | 2.9 dB   |
-| Peaking | 4685 Hz  | 5.55 | -3.5 dB  |
-| Peaking | 16817 Hz | 5.68 | -5.4 dB  |
+| Peaking | 185 Hz   | 0.34 | -8.7 dB  |
+| Peaking | 1490 Hz  | 0.11 | 6.4 dB   |
+| Peaking | 9202 Hz  | 1.63 | -11.1 dB |
+| Peaking | 11454 Hz | 2.21 | 11.8 dB  |
+| Peaking | 15600 Hz | 1.23 | -33.9 dB |
+| Peaking | 2326 Hz  | 5.23 | -2.4 dB  |
+| Peaking | 3460 Hz  | 1.78 | 4.9 dB   |
+| Peaking | 3944 Hz  | 0.65 | -2.2 dB  |
+| Peaking | 8518 Hz  | 8.12 | 2.0 dB   |
+| Peaking | 18263 Hz | 5.21 | 2.2 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.2 dB   |
 | Peaking | 1000 Hz  | 1.41 | 3.4 dB   |
 | Peaking | 2000 Hz  | 1.41 | 3.3 dB   |
-| Peaking | 4000 Hz  | 1.41 | 5.8 dB   |
+| Peaking | 4000 Hz  | 1.41 | 6.2 dB   |
 | Peaking | 8000 Hz  | 1.41 | -4.8 dB  |
-| Peaking | 16000 Hz | 1.41 | -24.5 dB |
+| Peaking | 16000 Hz | 1.41 | -29.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Kumitate%20KL-Sanka%20K/Kumitate%20KL-Sanka%20K.png)

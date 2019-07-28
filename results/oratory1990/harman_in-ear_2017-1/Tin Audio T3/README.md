@@ -2,30 +2,30 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.8dB**.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 14 Hz    | 0.53 | 6.4 dB   |
-| Peaking | 197 Hz   | 0.57 | -4.5 dB  |
-| Peaking | 3959 Hz  | 0.97 | 7.8 dB   |
-| Peaking | 11066 Hz | 1.15 | 9.8 dB   |
-| Peaking | 14946 Hz | 0.46 | -15.5 dB |
-| Peaking | 907 Hz   | 2.67 | 1.6 dB   |
-| Peaking | 2765 Hz  | 0.88 | -2.0 dB  |
-| Peaking | 3016 Hz  | 3    | 3.3 dB   |
-| Peaking | 6421 Hz  | 5.39 | 3.1 dB   |
-| Peaking | 7657 Hz  | 6.94 | -2.0 dB  |
+| Peaking | 16 Hz    | 0.6  | 5.8 dB   |
+| Peaking | 196 Hz   | 0.59 | -4.5 dB  |
+| Peaking | 3629 Hz  | 1.33 | 6.7 dB   |
+| Peaking | 14731 Hz | 2.53 | -12.2 dB |
+| Peaking | 18870 Hz | 0.65 | -10.0 dB |
+| Peaking | 894 Hz   | 2.24 | 1.8 dB   |
+| Peaking | 4461 Hz  | 0.08 | -0.6 dB  |
+| Peaking | 7219 Hz  | 0.98 | 1.5 dB   |
+| Peaking | 7766 Hz  | 5.26 | -3.8 dB  |
+| Peaking | 10229 Hz | 2.78 | 1.8 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | 4.0 dB   |
+| Peaking | 31 Hz    | 1.41 | 3.9 dB   |
 | Peaking | 62 Hz    | 1.41 | -0.3 dB  |
 | Peaking | 125 Hz   | 1.41 | -3.0 dB  |
 | Peaking | 250 Hz   | 1.41 | -3.9 dB  |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | 0.9 dB   |
 | Peaking | 2000 Hz  | 1.41 | 0.1 dB   |
 | Peaking | 4000 Hz  | 1.41 | 6.8 dB   |
-| Peaking | 8000 Hz  | 1.41 | 0.3 dB   |
-| Peaking | 16000 Hz | 1.41 | -15.8 dB |
+| Peaking | 8000 Hz  | 1.41 | -0.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -16.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Tin%20Audio%20T3/Tin%20Audio%20T3.png)

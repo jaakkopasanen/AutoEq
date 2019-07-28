@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 23 Hz    | 2.57 | 6.3 dB   |
+| Peaking | 22 Hz    | 2.56 | 6.1 dB   |
 | Peaking | 274 Hz   | 2.64 | 5.7 dB   |
-| Peaking | 1620 Hz  | 0.3  | 4.2 dB   |
-| Peaking | 5047 Hz  | 1.05 | -12.8 dB |
-| Peaking | 13200 Hz | 1.25 | -6.1 dB  |
-| Peaking | 96 Hz    | 1.36 | -2.0 dB  |
-| Peaking | 598 Hz   | 6.78 | 2.5 dB   |
-| Peaking | 2263 Hz  | 1.44 | -3.6 dB  |
-| Peaking | 2382 Hz  | 3.48 | 6.7 dB   |
-| Peaking | 22050 Hz | 1.96 | -0.1 dB  |
+| Peaking | 1526 Hz  | 0.32 | 4.1 dB   |
+| Peaking | 5100 Hz  | 1.02 | -12.6 dB |
+| Peaking | 13236 Hz | 1.2  | -5.9 dB  |
+| Peaking | 97 Hz    | 1.37 | -2.0 dB  |
+| Peaking | 603 Hz   | 6.58 | 2.2 dB   |
+| Peaking | 1819 Hz  | 2.89 | -2.5 dB  |
+| Peaking | 2372 Hz  | 2.78 | 3.3 dB   |
+| Peaking | 3381 Hz  | 3.61 | -1.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 3.6 dB  |
+| Peaking | 31 Hz    | 1.41 | 3.7 dB  |
 | Peaking | 62 Hz    | 1.41 | -1.6 dB |
 | Peaking | 125 Hz   | 1.41 | -2.4 dB |
 | Peaking | 250 Hz   | 1.41 | 5.5 dB  |
 | Peaking | 500 Hz   | 1.41 | 2.0 dB  |
-| Peaking | 1000 Hz  | 1.41 | 2.5 dB  |
-| Peaking | 2000 Hz  | 1.41 | 4.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | -8.6 dB |
-| Peaking | 8000 Hz  | 1.41 | -6.3 dB |
-| Peaking | 16000 Hz | 1.41 | -5.0 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | 3.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | -8.5 dB |
+| Peaking | 8000 Hz  | 1.41 | -7.0 dB |
+| Peaking | 16000 Hz | 1.41 | -5.1 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Ultrasone%20PRO%20900/Ultrasone%20PRO%20900.png)

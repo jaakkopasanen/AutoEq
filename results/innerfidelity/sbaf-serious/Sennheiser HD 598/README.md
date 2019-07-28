@@ -6,20 +6,21 @@ In case of using parametric equalizer, apply preamp of **-6.7dB** and build filt
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.7dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 0.48 | 6.3 dB  |
-| Peaking | 163 Hz  | 0.67 | -3.4 dB |
-| Peaking | 1708 Hz | 1.04 | 3.1 dB  |
-| Peaking | 4594 Hz | 5.28 | -3.3 dB |
-| Peaking | 6418 Hz | 4.61 | 3.1 dB  |
-| Peaking | 613 Hz  | 7.42 | 1.2 dB  |
-| Peaking | 1339 Hz | 6.76 | -0.5 dB |
-| Peaking | 8026 Hz | 1.23 | 0.4 dB  |
-| Peaking | 9024 Hz | 5.5  | -2.6 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 24 Hz    | 0.44 | 6.3 dB  |
+| Peaking | 163 Hz   | 0.6  | -3.5 dB |
+| Peaking | 1953 Hz  | 0.69 | 3.4 dB  |
+| Peaking | 5526 Hz  | 0.89 | -4.9 dB |
+| Peaking | 6450 Hz  | 2.55 | 7.0 dB  |
+| Peaking | 2330 Hz  | 1.64 | 0.9 dB  |
+| Peaking | 2340 Hz  | 4.39 | -1.7 dB |
+| Peaking | 9224 Hz  | 5.89 | -3.6 dB |
+| Peaking | 9899 Hz  | 2.64 | 1.3 dB  |
+| Peaking | 10703 Hz | 1.55 | 0.4 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.1 dB |
 | Peaking | 1000 Hz  | 1.41 | 1.0 dB  |
 | Peaking | 2000 Hz  | 1.41 | 3.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | -1.1 dB |
-| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -1.4 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20598/Sennheiser%20HD%20598.png)

@@ -8,18 +8,19 @@ When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 30 Hz    | 0.18 | -4.2 dB  |
-| Peaking | 143 Hz   | 0.7  | -3.8 dB  |
-| Peaking | 310 Hz   | 0.75 | -3.9 dB  |
-| Peaking | 3258 Hz  | 0.49 | 6.6 dB   |
-| Peaking | 15673 Hz | 2.35 | -17.6 dB |
-| Peaking | 6278 Hz  | 3.24 | 3.5 dB   |
-| Peaking | 7533 Hz  | 2.73 | -3.7 dB  |
-| Peaking | 12985 Hz | 5    | 4.2 dB   |
-| Peaking | 19226 Hz | 1.85 | -1.2 dB  |
+| Peaking | 29 Hz    | 0.23 | -4.2 dB  |
+| Peaking | 126 Hz   | 0.78 | -3.1 dB  |
+| Peaking | 272 Hz   | 0.65 | -5.1 dB  |
+| Peaking | 3171 Hz  | 0.51 | 6.6 dB   |
+| Peaking | 15593 Hz | 2.57 | -20.1 dB |
+| Peaking | 5956 Hz  | 2.72 | 2.2 dB   |
+| Peaking | 7667 Hz  | 3.08 | -3.7 dB  |
+| Peaking | 12790 Hz | 2.82 | 4.0 dB   |
+| Peaking | 14394 Hz | 4.41 | -5.1 dB  |
+| Peaking | 18766 Hz | 2.64 | 1.9 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -32,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | 1.3 dB   |
 | Peaking | 2000 Hz  | 1.41 | 4.2 dB   |
 | Peaking | 4000 Hz  | 1.41 | 6.6 dB   |
-| Peaking | 8000 Hz  | 1.41 | 1.7 dB   |
-| Peaking | 16000 Hz | 1.41 | -13.3 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB   |
+| Peaking | 16000 Hz | 1.41 | -14.7 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/FitEar%20Parterre/FitEar%20Parterre.png)

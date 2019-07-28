@@ -10,14 +10,14 @@ When using independent subset of filters, apply preamp of **-7.4dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 34 Hz    | 0.3  | 5.9 dB  |
 | Peaking | 165 Hz   | 1.41 | 4.7 dB  |
-| Peaking | 7893 Hz  | 1.48 | -9.8 dB |
-| Peaking | 13288 Hz | 1.87 | -7.6 dB |
-| Peaking | 22050 Hz | 2.11 | -6.8 dB |
-| Peaking | 229 Hz   | 5    | 2.5 dB  |
-| Peaking | 371 Hz   | 2.68 | -2.9 dB |
-| Peaking | 1935 Hz  | 0.71 | -1.3 dB |
-| Peaking | 4073 Hz  | 3.43 | 6.3 dB  |
-| Peaking | 4970 Hz  | 4.83 | -5.3 dB |
+| Peaking | 7817 Hz  | 1.23 | -9.8 dB |
+| Peaking | 13178 Hz | 1.56 | -6.9 dB |
+| Peaking | 22050 Hz | 2.1  | -7.3 dB |
+| Peaking | 229 Hz   | 4.81 | 2.4 dB  |
+| Peaking | 371 Hz   | 2.55 | -2.9 dB |
+| Peaking | 3814 Hz  | 2.94 | 5.4 dB  |
+| Peaking | 3895 Hz  | 0.48 | -2.2 dB |
+| Peaking | 7013 Hz  | 1.87 | 1.4 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | 2.8 dB   |
 | Peaking | 500 Hz   | 1.41 | -1.7 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.2 dB  |
-| Peaking | 2000 Hz  | 1.41 | -1.6 dB  |
-| Peaking | 4000 Hz  | 1.41 | 2.4 dB   |
-| Peaking | 8000 Hz  | 1.41 | -12.1 dB |
-| Peaking | 16000 Hz | 1.41 | -4.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | 1.7 dB   |
+| Peaking | 8000 Hz  | 1.41 | -12.9 dB |
+| Peaking | 16000 Hz | 1.41 | -4.4 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Axelvox%20HD%20272/Axelvox%20HD%20272.png)

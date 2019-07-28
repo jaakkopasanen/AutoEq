@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 26 Hz    | 1    | 6.1 dB   |
-| Peaking | 57 Hz    | 1.68 | 2.7 dB   |
-| Peaking | 1596 Hz  | 1.13 | -3.9 dB  |
-| Peaking | 5748 Hz  | 1.51 | 6.3 dB   |
-| Peaking | 15789 Hz | 2.7  | -25.3 dB |
-| Peaking | 285 Hz   | 0.88 | -1.6 dB  |
-| Peaking | 907 Hz   | 3.7  | 1.2 dB   |
-| Peaking | 7836 Hz  | 4.81 | -2.0 dB  |
-| Peaking | 13134 Hz | 2.31 | 8.4 dB   |
-| Peaking | 14535 Hz | 3.1  | -9.6 dB  |
+| Peaking | 25 Hz    | 1    | 6.1 dB   |
+| Peaking | 58 Hz    | 1.66 | 2.7 dB   |
+| Peaking | 1947 Hz  | 0.63 | -7.3 dB  |
+| Peaking | 6416 Hz  | 0.25 | 7.4 dB   |
+| Peaking | 15576 Hz | 1.86 | -31.8 dB |
+| Peaking | 6044 Hz  | 3.28 | 4.7 dB   |
+| Peaking | 8479 Hz  | 1.09 | -4.4 dB  |
+| Peaking | 12552 Hz | 1.68 | 6.2 dB   |
+| Peaking | 14741 Hz | 5.05 | -5.8 dB  |
+| Peaking | 16153 Hz | 4.01 | -2.2 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 31 Hz    | 1.41 | 6.2 dB   |
-| Peaking | 62 Hz    | 1.41 | 2.7 dB   |
+| Peaking | 62 Hz    | 1.41 | 2.6 dB   |
 | Peaking | 125 Hz   | 1.41 | -0.2 dB  |
 | Peaking | 250 Hz   | 1.41 | -1.6 dB  |
 | Peaking | 500 Hz   | 1.41 | -0.6 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.7 dB  |
-| Peaking | 2000 Hz  | 1.41 | -4.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | 3.6 dB   |
-| Peaking | 8000 Hz  | 1.41 | 4.2 dB   |
-| Peaking | 16000 Hz | 1.41 | -19.5 dB |
+| Peaking | 2000 Hz  | 1.41 | -4.1 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.7 dB   |
+| Peaking | 8000 Hz  | 1.41 | 4.7 dB   |
+| Peaking | 16000 Hz | 1.41 | -22.6 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Etymotic%20ER4SR/Etymotic%20ER4SR.png)

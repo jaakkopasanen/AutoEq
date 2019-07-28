@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2dB**.
+When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 119 Hz   | 0.41 | -4.3 dB  |
-| Peaking | 1863 Hz  | 1.09 | -11.6 dB |
-| Peaking | 3700 Hz  | 0.42 | 12.1 dB  |
-| Peaking | 15247 Hz | 2.82 | -9.8 dB  |
-| Peaking | 19463 Hz | 0.27 | -25.7 dB |
-| Peaking | 2990 Hz  | 4.09 | 2.2 dB   |
-| Peaking | 3489 Hz  | 1.22 | -1.3 dB  |
-| Peaking | 6189 Hz  | 3.42 | 2.7 dB   |
-| Peaking | 9246 Hz  | 5.55 | -6.8 dB  |
-| Peaking | 11074 Hz | 2.09 | 3.4 dB   |
+| Peaking | 118 Hz   | 0.42 | -4.3 dB  |
+| Peaking | 1831 Hz  | 1.35 | -9.6 dB  |
+| Peaking | 4160 Hz  | 0.47 | 10.6 dB  |
+| Peaking | 15319 Hz | 2.52 | -10.1 dB |
+| Peaking | 19611 Hz | 0.27 | -25.6 dB |
+| Peaking | 4338 Hz  | 3.91 | -0.9 dB  |
+| Peaking | 6315 Hz  | 3.47 | 2.6 dB   |
+| Peaking | 7009 Hz  | 2.66 | -0.5 dB  |
+| Peaking | 9352 Hz  | 5.27 | -7.0 dB  |
+| Peaking | 11067 Hz | 1.97 | 3.5 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.2dB**
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | -4.7 dB  |
 | Peaking | 4000 Hz  | 1.41 | 10.6 dB  |
 | Peaking | 8000 Hz  | 1.41 | 4.8 dB   |
-| Peaking | 16000 Hz | 1.41 | -34.6 dB |
+| Peaking | 16000 Hz | 1.41 | -34.5 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Shure%20KSE1200%20sample%202/Shure%20KSE1200%20sample%202.png)

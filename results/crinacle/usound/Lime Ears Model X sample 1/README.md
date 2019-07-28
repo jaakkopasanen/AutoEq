@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-5.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 22 Hz   | 0.6  | 4.3 dB  |
-| Peaking | 57 Hz   | 1.12 | 1.7 dB  |
-| Peaking | 225 Hz  | 0.91 | -1.9 dB |
-| Peaking | 3670 Hz | 1.94 | 3.7 dB  |
-| Peaking | 7921 Hz | 5.23 | -5.8 dB |
-| Peaking | 450 Hz  | 1.88 | -0.6 dB |
-| Peaking | 949 Hz  | 1.8  | 1.9 dB  |
-| Peaking | 1385 Hz | 2.68 | -1.1 dB |
-| Peaking | 5063 Hz | 8.21 | -1.5 dB |
-| Peaking | 6245 Hz | 7.11 | 1.7 dB  |
+| Peaking | 21 Hz   | 0.66 | 4.2 dB  |
+| Peaking | 56 Hz   | 1.06 | 1.8 dB  |
+| Peaking | 223 Hz  | 0.92 | -1.9 dB |
+| Peaking | 3589 Hz | 2.09 | 3.6 dB  |
+| Peaking | 7980 Hz | 4.56 | -6.4 dB |
+| Peaking | 943 Hz  | 2.56 | 1.9 dB  |
+| Peaking | 1415 Hz | 3.09 | -0.8 dB |
+| Peaking | 5004 Hz | 4.03 | -0.3 dB |
+| Peaking | 7473 Hz | 3.58 | -0.7 dB |
+| Peaking | 9502 Hz | 2.26 | 0.8 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.4dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.5dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 4.5 dB  |
+| Peaking | 31 Hz    | 1.41 | 4.6 dB  |
 | Peaking | 62 Hz    | 1.41 | 2.2 dB  |
 | Peaking | 125 Hz   | 1.41 | -0.6 dB |
 | Peaking | 250 Hz   | 1.41 | -1.8 dB |
 | Peaking | 500 Hz   | 1.41 | -0.6 dB |
 | Peaking | 1000 Hz  | 1.41 | 1.4 dB  |
 | Peaking | 2000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 4000 Hz  | 1.41 | 3.9 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.2 dB |
-| Peaking | 16000 Hz | 1.41 | 0.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.9 dB |
+| Peaking | 16000 Hz | 1.41 | 0.6 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Lime%20Ears%20Model%20X%20sample%201/Lime%20Ears%20Model%20X%20sample%201.png)

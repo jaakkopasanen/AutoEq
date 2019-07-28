@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-5.2dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 13 Hz   | 1.24 | 4.2 dB  |
-| Peaking | 40 Hz   | 0.41 | 3.6 dB  |
-| Peaking | 1553 Hz | 2.72 | -5.0 dB |
-| Peaking | 7527 Hz | 0.97 | 2.9 dB  |
-| Peaking | 9311 Hz | 2.85 | -7.4 dB |
-| Peaking | 478 Hz  | 1.23 | 0.7 dB  |
-| Peaking | 1077 Hz | 4.17 | -0.5 dB |
-| Peaking | 2340 Hz | 4.15 | 2.6 dB  |
-| Peaking | 2824 Hz | 0.85 | -1.0 dB |
-| Peaking | 4091 Hz | 7.31 | 2.2 dB  |
+| Peaking | 13 Hz   | 1.01 | 4.2 dB  |
+| Peaking | 42 Hz   | 0.43 | 3.5 dB  |
+| Peaking | 1555 Hz | 2.7  | -5.0 dB |
+| Peaking | 7388 Hz | 1.24 | 2.8 dB  |
+| Peaking | 9218 Hz | 2.86 | -7.1 dB |
+| Peaking | 1826 Hz | 4.89 | -1.1 dB |
+| Peaking | 2263 Hz | 3.24 | 1.9 dB  |
+| Peaking | 4254 Hz | 2.89 | 2.1 dB  |
+| Peaking | 4657 Hz | 0.92 | -1.5 dB |
+| Peaking | 6969 Hz | 4.92 | 1.4 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.3dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.2 dB  |
 | Peaking | 1000 Hz  | 1.41 | -1.6 dB |
 | Peaking | 2000 Hz  | 1.41 | -2.5 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.4 dB |
-| Peaking | 16000 Hz | 1.41 | -0.9 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.8 dB |
+| Peaking | 16000 Hz | 1.41 | -1.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Stax%20SR-404%20Ltd%20SSL-0670/Stax%20SR-404%20Ltd%20SSL-0670.png)

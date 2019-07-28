@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 213 Hz   | 0.5  | -4.1 dB  |
-| Peaking | 309 Hz   | 0.14 | -3.0 dB  |
-| Peaking | 3401 Hz  | 0.59 | 8.0 dB   |
-| Peaking | 15648 Hz | 2.23 | -12.7 dB |
-| Peaking | 19307 Hz | 0.56 | -16.7 dB |
-| Peaking | 1429 Hz  | 4.02 | -1.4 dB  |
-| Peaking | 2165 Hz  | 6.13 | 2.0 dB   |
-| Peaking | 6183 Hz  | 4.06 | 3.0 dB   |
-| Peaking | 8884 Hz  | 3.08 | -4.9 dB  |
-| Peaking | 12082 Hz | 3.64 | 5.5 dB   |
+| Peaking | 193 Hz   | 0.86 | -1.4 dB  |
+| Peaking | 342 Hz   | 0.19 | -6.2 dB  |
+| Peaking | 8696 Hz  | 0.15 | 12.1 dB  |
+| Peaking | 15419 Hz | 0.61 | -27.0 dB |
+| Peaking | 19679 Hz | 1.05 | -17.6 dB |
+| Peaking | 1402 Hz  | 4.32 | -2.1 dB  |
+| Peaking | 6761 Hz  | 1.04 | 2.3 dB   |
+| Peaking | 8632 Hz  | 2.44 | -6.9 dB  |
+| Peaking | 12010 Hz | 2.95 | 4.6 dB   |
+| Peaking | 18518 Hz | 2.96 | -1.5 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -3.7 dB  |
 | Peaking | 1000 Hz  | 1.41 | -1.6 dB  |
 | Peaking | 2000 Hz  | 1.41 | 3.4 dB   |
-| Peaking | 4000 Hz  | 1.41 | 7.5 dB   |
-| Peaking | 8000 Hz  | 1.41 | 2.0 dB   |
-| Peaking | 16000 Hz | 1.41 | -22.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.7 dB   |
+| Peaking | 8000 Hz  | 1.41 | 2.6 dB   |
+| Peaking | 16000 Hz | 1.41 | -25.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Westone%20W30/Westone%20W30.png)

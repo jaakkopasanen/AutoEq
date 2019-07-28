@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 254 Hz   | 0.37 | -5.9 dB  |
-| Peaking | 965 Hz   | 1.17 | 10.0 dB  |
-| Peaking | 1783 Hz  | 2.21 | -9.1 dB  |
-| Peaking | 5704 Hz  | 2.55 | 6.9 dB   |
-| Peaking | 15580 Hz | 2.39 | -11.6 dB |
-| Peaking | 2917 Hz  | 3.21 | 3.2 dB   |
-| Peaking | 3125 Hz  | 1.32 | -1.5 dB  |
-| Peaking | 8132 Hz  | 4.3  | -0.9 dB  |
-| Peaking | 13180 Hz | 3.29 | 3.3 dB   |
-| Peaking | 15764 Hz | 3.16 | -2.2 dB  |
+| Peaking | 252 Hz   | 0.37 | -5.9 dB  |
+| Peaking | 968 Hz   | 1.17 | 10.0 dB  |
+| Peaking | 1782 Hz  | 2.14 | -9.1 dB  |
+| Peaking | 5746 Hz  | 2.58 | 6.9 dB   |
+| Peaking | 15142 Hz | 3.13 | -15.1 dB |
+| Peaking | 3009 Hz  | 4.13 | 1.5 dB   |
+| Peaking | 4075 Hz  | 6.15 | -1.7 dB  |
+| Peaking | 7919 Hz  | 4.74 | -0.8 dB  |
+| Peaking | 12703 Hz | 4.02 | 3.5 dB   |
+| Peaking | 19705 Hz | 1.06 | -7.3 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB**
 (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -0.4 dB |
-| Peaking | 62 Hz    | 1.41 | -0.9 dB |
-| Peaking | 125 Hz   | 1.41 | -3.8 dB |
-| Peaking | 250 Hz   | 1.41 | -5.0 dB |
-| Peaking | 500 Hz   | 1.41 | -2.5 dB |
-| Peaking | 1000 Hz  | 1.41 | 8.7 dB  |
-| Peaking | 2000 Hz  | 1.41 | -8.0 dB |
-| Peaking | 4000 Hz  | 1.41 | 4.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | 2.4 dB  |
-| Peaking | 16000 Hz | 1.41 | -9.4 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 31 Hz    | 1.41 | -0.4 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.9 dB  |
+| Peaking | 125 Hz   | 1.41 | -3.8 dB  |
+| Peaking | 250 Hz   | 1.41 | -5.0 dB  |
+| Peaking | 500 Hz   | 1.41 | -2.5 dB  |
+| Peaking | 1000 Hz  | 1.41 | 8.7 dB   |
+| Peaking | 2000 Hz  | 1.41 | -8.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.8 dB   |
+| Peaking | 8000 Hz  | 1.41 | 2.7 dB   |
+| Peaking | 16000 Hz | 1.41 | -10.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Clear%20Tune%20CT-6E%20sample%201/Clear%20Tune%20CT-6E%20sample%201.png)

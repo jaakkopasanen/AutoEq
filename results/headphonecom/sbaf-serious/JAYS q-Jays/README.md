@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 162 Hz   | 0.56 | -3.1 dB  |
-| Peaking | 390 Hz   | 0.58 | -1.7 dB  |
-| Peaking | 2007 Hz  | 1.15 | -9.4 dB  |
-| Peaking | 3624 Hz  | 0.53 | 9.5 dB   |
-| Peaking | 9122 Hz  | 3.28 | -10.6 dB |
-| Peaking | 2605 Hz  | 5.22 | -1.7 dB  |
-| Peaking | 3007 Hz  | 3.59 | 2.3 dB   |
-| Peaking | 4017 Hz  | 1.99 | -1.1 dB  |
-| Peaking | 6163 Hz  | 6.07 | 1.5 dB   |
-| Peaking | 14557 Hz | 1.88 | -0.5 dB  |
+| Peaking | 197 Hz   | 0.47 | -3.3 dB  |
+| Peaking | 483 Hz   | 0.23 | -0.8 dB  |
+| Peaking | 2003 Hz  | 1.31 | -8.3 dB  |
+| Peaking | 3777 Hz  | 0.55 | 8.9 dB   |
+| Peaking | 9088 Hz  | 3.66 | -11.5 dB |
+| Peaking | 2624 Hz  | 5.06 | -1.4 dB  |
+| Peaking | 3031 Hz  | 4.9  | 2.2 dB   |
+| Peaking | 4205 Hz  | 2.22 | -0.9 dB  |
+| Peaking | 6130 Hz  | 5.69 | 1.4 dB   |
+| Peaking | 20140 Hz | 0.87 | -2.2 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.0dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -3.4 dB |
 | Peaking | 500 Hz   | 1.41 | -1.7 dB |
 | Peaking | 1000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 2000 Hz  | 1.41 | -4.7 dB |
-| Peaking | 4000 Hz  | 1.41 | 9.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.7 dB |
-| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+| Peaking | 2000 Hz  | 1.41 | -4.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 9.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.9 dB |
+| Peaking | 16000 Hz | 1.41 | -0.2 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/JAYS%20q-Jays/JAYS%20q-Jays.png)

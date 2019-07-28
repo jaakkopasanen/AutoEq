@@ -8,15 +8,15 @@ When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 29 Hz    | 1.02 | 6.8 dB   |
-| Peaking | 462 Hz   | 0.44 | 5.6 dB   |
-| Peaking | 3147 Hz  | 2.24 | -13.2 dB |
-| Peaking | 9858 Hz  | 1.78 | -12.2 dB |
-| Peaking | 79 Hz    | 3.41 | -1.3 dB  |
-| Peaking | 3786 Hz  | 5.51 | -2.7 dB  |
-| Peaking | 5267 Hz  | 3.05 | 3.9 dB   |
-| Peaking | 7917 Hz  | 4.5  | -2.2 dB  |
-| Peaking | 17521 Hz | 3.56 | 0.5 dB   |
+| Peaking | 29 Hz    | 1.04 | 6.8 dB   |
+| Peaking | 466 Hz   | 0.43 | 5.6 dB   |
+| Peaking | 3136 Hz  | 2.15 | -13.0 dB |
+| Peaking | 9986 Hz  | 1.6  | -12.0 dB |
+| Peaking | 78 Hz    | 3.51 | -1.2 dB  |
+| Peaking | 3812 Hz  | 4.64 | -2.6 dB  |
+| Peaking | 5400 Hz  | 2.36 | 3.5 dB   |
+| Peaking | 7931 Hz  | 4.17 | -2.4 dB  |
+| Peaking | 13141 Hz | 4.18 | -1.2 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.5dB**
@@ -31,9 +31,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 4.5 dB  |
 | Peaking | 1000 Hz  | 1.41 | 4.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | -3.9 dB |
-| Peaking | 4000 Hz  | 1.41 | -5.7 dB |
-| Peaking | 8000 Hz  | 1.41 | -7.6 dB |
-| Peaking | 16000 Hz | 1.41 | -2.3 dB |
+| Peaking | 4000 Hz  | 1.41 | -5.9 dB |
+| Peaking | 8000 Hz  | 1.41 | -7.7 dB |
+| Peaking | 16000 Hz | 1.41 | -3.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Sennheiser%20PX%2090/Sennheiser%20PX%2090.png)

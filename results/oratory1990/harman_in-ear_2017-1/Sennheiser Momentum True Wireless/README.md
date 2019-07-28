@@ -8,19 +8,19 @@ When using independent subset of filters, apply preamp of **-7.7dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 30 Hz    | 0.51 | -3.4 dB  |
-| Peaking | 161 Hz   | 0.43 | -5.5 dB  |
-| Peaking | 3883 Hz  | 0.92 | 7.8 dB   |
-| Peaking | 15643 Hz | 1.35 | -22.8 dB |
-| Peaking | 17474 Hz | 1.68 | -10.2 dB |
-| Peaking | 1493 Hz  | 1.84 | -1.7 dB  |
-| Peaking | 2432 Hz  | 4.93 | 2.8 dB   |
-| Peaking | 5557 Hz  | 7.78 | 2.8 dB   |
-| Peaking | 9916 Hz  | 4.59 | -5.6 dB  |
-| Peaking | 12125 Hz | 4.89 | 6.2 dB   |
+| Peaking | 29 Hz    | 0.53 | -3.3 dB  |
+| Peaking | 158 Hz   | 0.42 | -5.6 dB  |
+| Peaking | 4280 Hz  | 0.8  | 9.5 dB   |
+| Peaking | 15197 Hz | 3.13 | -9.1 dB  |
+| Peaking | 16976 Hz | 0.46 | -21.0 dB |
+| Peaking | 1502 Hz  | 1.79 | -1.9 dB  |
+| Peaking | 2432 Hz  | 4.38 | 2.9 dB   |
+| Peaking | 5597 Hz  | 6.84 | 1.7 dB   |
+| Peaking | 10120 Hz | 4.24 | -4.7 dB  |
+| Peaking | 11363 Hz | 3.65 | 4.5 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.8dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.7 dB  |
 | Peaking | 1000 Hz  | 1.41 | -1.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | 1.7 dB   |
-| Peaking | 4000 Hz  | 1.41 | 8.7 dB   |
-| Peaking | 8000 Hz  | 1.41 | 1.5 dB   |
-| Peaking | 16000 Hz | 1.41 | -29.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 9.6 dB   |
+| Peaking | 8000 Hz  | 1.41 | 1.6 dB   |
+| Peaking | 16000 Hz | 1.41 | -34.5 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Sennheiser%20Momentum%20True%20Wireless/Sennheiser%20Momentum%20True%20Wireless.png)

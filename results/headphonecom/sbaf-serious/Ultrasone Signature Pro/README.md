@@ -8,19 +8,19 @@ When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 43 Hz    | 1.27 | -3.5 dB |
-| Peaking | 142 Hz   | 1.02 | -7.7 dB |
-| Peaking | 2651 Hz  | 2.71 | 4.6 dB  |
-| Peaking | 4888 Hz  | 1.37 | 6.6 dB  |
-| Peaking | 10775 Hz | 1.66 | -6.5 dB |
-| Peaking | 81 Hz    | 5.25 | 5.3 dB  |
-| Peaking | 82 Hz    | 2.05 | -2.6 dB |
-| Peaking | 312 Hz   | 3.04 | 1.7 dB  |
-| Peaking | 641 Hz   | 1.4  | -1.6 dB |
-| Peaking | 1511 Hz  | 6.15 | -2.4 dB |
+| Peaking | 130 Hz   | 0.71 | -7.4 dB |
+| Peaking | 2631 Hz  | 2.76 | 4.3 dB  |
+| Peaking | 4855 Hz  | 1.31 | 6.6 dB  |
+| Peaking | 9972 Hz  | 1.78 | -4.6 dB |
+| Peaking | 11610 Hz | 2.98 | -4.3 dB |
+| Peaking | 44 Hz    | 0.91 | -2.5 dB |
+| Peaking | 80 Hz    | 4.36 | 4.5 dB  |
+| Peaking | 319 Hz   | 1.68 | 3.6 dB  |
+| Peaking | 436 Hz   | 0.43 | -1.8 dB |
+| Peaking | 16017 Hz | 4.14 | 0.4 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -1.5 dB |
 | Peaking | 500 Hz   | 1.41 | -0.6 dB |
 | Peaking | 1000 Hz  | 1.41 | -1.7 dB |
-| Peaking | 2000 Hz  | 1.41 | 1.4 dB  |
-| Peaking | 4000 Hz  | 1.41 | 7.6 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.4 dB |
-| Peaking | 16000 Hz | 1.41 | -1.6 dB |
+| Peaking | 2000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 7.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.7 dB |
+| Peaking | 16000 Hz | 1.41 | -2.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Ultrasone%20Signature%20Pro/Ultrasone%20Signature%20Pro.png)

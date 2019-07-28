@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.6dB**.
+When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 148 Hz  | 0.45 | -4.3 dB  |
-| Peaking | 896 Hz  | 0.69 | 7.7 dB   |
-| Peaking | 1798 Hz | 0.73 | -11.9 dB |
-| Peaking | 5079 Hz | 0.65 | 12.2 dB  |
-| Peaking | 8354 Hz | 2.1  | -16.1 dB |
-| Peaking | 19 Hz   | 1.81 | 0.9 dB   |
-| Peaking | 2245 Hz | 5.17 | 1.6 dB   |
-| Peaking | 2866 Hz | 4.23 | -3.3 dB  |
-| Peaking | 3464 Hz | 4.78 | 3.2 dB   |
-| Peaking | 4761 Hz | 6.17 | -1.3 dB  |
+| Peaking | 144 Hz  | 0.47 | -4.3 dB  |
+| Peaking | 858 Hz  | 0.77 | 6.8 dB   |
+| Peaking | 1880 Hz | 0.74 | -10.7 dB |
+| Peaking | 4618 Hz | 0.74 | 11.2 dB  |
+| Peaking | 8350 Hz | 2.36 | -14.0 dB |
+| Peaking | 2893 Hz | 4.94 | -4.8 dB  |
+| Peaking | 3332 Hz | 1.89 | 3.7 dB   |
+| Peaking | 4542 Hz | 2.24 | -2.9 dB  |
+| Peaking | 6087 Hz | 2.08 | 2.0 dB   |
+| Peaking | 7186 Hz | 5.56 | -2.3 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -30,11 +30,11 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 125 Hz   | 1.41 | -3.7 dB |
 | Peaking | 250 Hz   | 1.41 | -2.8 dB |
 | Peaking | 500 Hz   | 1.41 | 2.1 dB  |
-| Peaking | 1000 Hz  | 1.41 | 2.9 dB  |
-| Peaking | 2000 Hz  | 1.41 | -8.3 dB |
+| Peaking | 1000 Hz  | 1.41 | 3.0 dB  |
+| Peaking | 2000 Hz  | 1.41 | -8.4 dB |
 | Peaking | 4000 Hz  | 1.41 | 10.3 dB |
-| Peaking | 8000 Hz  | 1.41 | -6.1 dB |
-| Peaking | 16000 Hz | 1.41 | 0.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | -6.6 dB |
+| Peaking | 16000 Hz | 1.41 | 0.6 dB  |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fidue%20A83/Fidue%20A83.png)

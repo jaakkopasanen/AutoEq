@@ -2,24 +2,24 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-4.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.1dB**.
+When using independent subset of filters, apply preamp of **-4.2dB**.
 
-| Type    | Fc      |     Q | Gain    |
-|:--------|:--------|:------|:--------|
-| Peaking | 43 Hz   |  0.13 | -7.3 dB |
-| Peaking | 1182 Hz |  0.5  | 4.0 dB  |
-| Peaking | 2882 Hz |  2.65 | 2.4 dB  |
-| Peaking | 3524 Hz |  2.51 | -3.4 dB |
-| Peaking | 5365 Hz |  2.89 | 2.3 dB  |
-| Peaking | 1666 Hz | 10.14 | 0.4 dB  |
-| Peaking | 6416 Hz |  7.87 | -0.3 dB |
-| Peaking | 6986 Hz |  8.52 | 1.2 dB  |
-| Peaking | 8294 Hz |  2.18 | -0.4 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 43 Hz   | 0.14 | -7.3 dB |
+| Peaking | 874 Hz  | 0.74 | 3.0 dB  |
+| Peaking | 1770 Hz | 1.19 | 2.5 dB  |
+| Peaking | 5801 Hz | 2.79 | 1.6 dB  |
+| Peaking | 9297 Hz | 1.93 | -0.2 dB |
+| Peaking | 2121 Hz | 3.83 | -0.7 dB |
+| Peaking | 2731 Hz | 2.69 | 1.7 dB  |
+| Peaking | 3658 Hz | 3.11 | -2.3 dB |
+| Peaking | 4816 Hz | 3.35 | 0.7 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,9 +31,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.0 dB  |
 | Peaking | 1000 Hz  | 1.41 | 3.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | 3.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | 0.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.8 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.2 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Audeo%20PFE%20232/Audeo%20PFE%20232.png)

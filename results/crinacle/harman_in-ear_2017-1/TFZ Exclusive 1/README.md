@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-2.2dB**.
+When using independent subset of filters, apply preamp of **-5.7dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 41 Hz    | 0.35 | -4.8 dB  |
-| Peaking | 155 Hz   | 0.94 | -2.9 dB  |
-| Peaking | 8709 Hz  | 0.18 | 25.1 dB  |
-| Peaking | 12550 Hz | 1.74 | 9.6 dB   |
-| Peaking | 14763 Hz | 0.15 | -34.6 dB |
-| Peaking | 827 Hz   | 0.76 | 4.3 dB   |
-| Peaking | 1591 Hz  | 0.26 | -3.2 dB  |
-| Peaking | 3530 Hz  | 2.14 | 3.8 dB   |
-| Peaking | 4865 Hz  | 4.17 | -3.7 dB  |
-| Peaking | 6233 Hz  | 4.72 | 5.9 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 29 Hz    | 0.43 | -4.0 dB |
+| Peaking | 137 Hz   | 0.48 | -4.1 dB |
+| Peaking | 604 Hz   | 0.77 | 2.1 dB  |
+| Peaking | 905 Hz   | 2.05 | 1.3 dB  |
+| Peaking | 6365 Hz  | 5.68 | 5.1 dB  |
+| Peaking | 7652 Hz  | 0.54 | 3.4 dB  |
+| Peaking | 10742 Hz | 2.25 | 4.5 dB  |
+| Peaking | 12436 Hz | 3    | 5.8 dB  |
+| Peaking | 19014 Hz | 0.21 | -8.8 dB |
+| Peaking | 19345 Hz | 0.19 | -8.6 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.7dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -4.7 dB  |
+| Peaking | 31 Hz    | 1.41 | -4.8 dB  |
 | Peaking | 62 Hz    | 1.41 | -3.7 dB  |
 | Peaking | 125 Hz   | 1.41 | -4.2 dB  |
 | Peaking | 250 Hz   | 1.41 | -2.3 dB  |
 | Peaking | 500 Hz   | 1.41 | 1.4 dB   |
-| Peaking | 1000 Hz  | 1.41 | 2.2 dB   |
-| Peaking | 2000 Hz  | 1.41 | -0.6 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.4 dB   |
-| Peaking | 8000 Hz  | 1.41 | 3.3 dB   |
-| Peaking | 16000 Hz | 1.41 | -17.7 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.1 dB   |
+| Peaking | 2000 Hz  | 1.41 | -0.5 dB  |
+| Peaking | 4000 Hz  | 1.41 | 1.1 dB   |
+| Peaking | 8000 Hz  | 1.41 | 3.4 dB   |
+| Peaking | 16000 Hz | 1.41 | -19.1 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/TFZ%20Exclusive%201/TFZ%20Exclusive%201.png)

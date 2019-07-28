@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 101 Hz   | 0.44 | -4.4 dB |
-| Peaking | 232 Hz   | 0.8  | -3.5 dB |
-| Peaking | 1643 Hz  | 2.2  | -2.8 dB |
-| Peaking | 4209 Hz  | 0.94 | 6.9 dB  |
-| Peaking | 16054 Hz | 2.03 | -7.8 dB |
-| Peaking | 857 Hz   | 3.14 | 1.4 dB  |
-| Peaking | 3569 Hz  | 0.07 | -0.2 dB |
-| Peaking | 6335 Hz  | 3.44 | 3.8 dB  |
-| Peaking | 7515 Hz  | 2.12 | -2.9 dB |
-| Peaking | 13564 Hz | 4.52 | 2.0 dB  |
+| Peaking | 93 Hz    | 0.44 | -4.0 dB |
+| Peaking | 222 Hz   | 0.74 | -4.0 dB |
+| Peaking | 1650 Hz  | 2.17 | -2.9 dB |
+| Peaking | 4218 Hz  | 0.92 | 6.9 dB  |
+| Peaking | 15398 Hz | 2.35 | -9.0 dB |
+| Peaking | 859 Hz   | 3.97 | 1.3 dB  |
+| Peaking | 6331 Hz  | 3.35 | 4.5 dB  |
+| Peaking | 7278 Hz  | 1.7  | -3.3 dB |
+| Peaking | 13200 Hz | 3.59 | 2.5 dB  |
+| Peaking | 19812 Hz | 1.12 | -5.3 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.3dB**
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.7 dB |
 | Peaking | 4000 Hz  | 1.41 | 8.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.8 dB  |
-| Peaking | 16000 Hz | 1.41 | -6.2 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.9 dB  |
+| Peaking | 16000 Hz | 1.41 | -7.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Massdrop%20Plus%20sample%201/Massdrop%20Plus%20sample%201.png)

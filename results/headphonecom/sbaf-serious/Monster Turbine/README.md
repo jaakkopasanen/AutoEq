@@ -2,21 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.7dB** and build filters manually
-with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 58 Hz   | 0.23 | -5.8 dB |
-| Peaking | 937 Hz  | 0.48 | 7.2 dB  |
-| Peaking | 2242 Hz | 0.54 | -6.9 dB |
-| Peaking | 6124 Hz | 4.02 | 8.5 dB  |
-| Peaking | 17 Hz   | 0.74 | -5.2 dB |
-| Peaking | 33 Hz   | 0.57 | -1.2 dB |
-| Peaking | 2737 Hz | 2.19 | -3.4 dB |
-| Peaking | 3559 Hz | 1.38 | 4.7 dB  |
-| Peaking | 4474 Hz | 4.06 | -5.9 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 26 Hz    | 0.44 | -9.6 dB |
+| Peaking | 109 Hz   | 1.1  | -3.1 dB |
+| Peaking | 2555 Hz  | 2.99 | -4.7 dB |
+| Peaking | 4499 Hz  | 3.52 | -5.6 dB |
+| Peaking | 6069 Hz  | 3.73 | 7.1 dB  |
+| Peaking | 63 Hz    | 3.3  | -0.7 dB |
+| Peaking | 205 Hz   | 1.83 | -1.5 dB |
+| Peaking | 744 Hz   | 0.83 | 4.3 dB  |
+| Peaking | 1909 Hz  | 2.53 | -2.1 dB |
+| Peaking | 20871 Hz | 1.04 | -0.6 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.5dB**
@@ -30,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -1.4 dB |
 | Peaking | 500 Hz   | 1.41 | 2.9 dB  |
 | Peaking | 1000 Hz  | 1.41 | 4.2 dB  |
-| Peaking | 2000 Hz  | 1.41 | -3.7 dB |
-| Peaking | 4000 Hz  | 1.41 | -2.0 dB |
-| Peaking | 8000 Hz  | 1.41 | 2.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.4 dB |
+| Peaking | 2000 Hz  | 1.41 | -3.6 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.7 dB |
+| Peaking | 8000 Hz  | 1.41 | 2.6 dB  |
+| Peaking | 16000 Hz | 1.41 | -1.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Monster%20Turbine/Monster%20Turbine.png)

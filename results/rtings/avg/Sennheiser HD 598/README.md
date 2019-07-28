@@ -6,19 +6,21 @@ In case of using parametric equalizer, apply preamp of **-6.9dB** and build filt
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 32 Hz    | 0.41 | 6.8 dB  |
-| Peaking | 133 Hz   | 0.58 | -3.5 dB |
-| Peaking | 1063 Hz  | 0.94 | 1.9 dB  |
-| Peaking | 4276 Hz  | 3.75 | -2.6 dB |
-| Peaking | 6663 Hz  | 6.68 | 3.5 dB  |
-| Peaking | 1704 Hz  | 5.23 | 0.8 dB  |
-| Peaking | 2280 Hz  | 5.41 | -1.0 dB |
-| Peaking | 19396 Hz | 1.31 | -7.4 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 32 Hz   | 0.42 | 6.8 dB  |
+| Peaking | 135 Hz  | 0.58 | -3.4 dB |
+| Peaking | 1078 Hz | 0.91 | 1.9 dB  |
+| Peaking | 4291 Hz | 2.19 | -2.3 dB |
+| Peaking | 6485 Hz | 4.14 | 2.3 dB  |
+| Peaking | 1293 Hz | 1.81 | -0.7 dB |
+| Peaking | 1803 Hz | 1.26 | 1.2 dB  |
+| Peaking | 2248 Hz | 3.71 | -1.7 dB |
+| Peaking | 7935 Hz | 2.96 | 0.7 dB  |
+| Peaking | 8607 Hz | 4.69 | -1.8 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -29,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -1.4 dB |
 | Peaking | 500 Hz   | 1.41 | 0.0 dB  |
 | Peaking | 1000 Hz  | 1.41 | 1.9 dB  |
-| Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | -1.6 dB |
-| Peaking | 8000 Hz  | 1.41 | 1.1 dB  |
-| Peaking | 16000 Hz | 1.41 | -1.3 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | -1.7 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -1.5 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sennheiser%20HD%20598/Sennheiser%20HD%20598.png)

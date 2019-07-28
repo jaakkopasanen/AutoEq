@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.8dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-3.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.7dB**.
+When using independent subset of filters, apply preamp of **-3.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 48 Hz    | 0.45 | -3.3 dB |
-| Peaking | 1388 Hz  | 3.02 | -5.3 dB |
-| Peaking | 3932 Hz  | 4.59 | 4.2 dB  |
-| Peaking | 6144 Hz  | 4.91 | 4.0 dB  |
-| Peaking | 8580 Hz  | 1.72 | -2.1 dB |
-| Peaking | 133 Hz   | 2.04 | -1.1 dB |
-| Peaking | 498 Hz   | 0.79 | 1.7 dB  |
-| Peaking | 1060 Hz  | 2.28 | -1.1 dB |
-| Peaking | 8841 Hz  | 1.52 | 1.8 dB  |
-| Peaking | 15693 Hz | 3.53 | -3.9 dB |
+| Peaking | 60 Hz    | 0.2  | -3.1 dB |
+| Peaking | 399 Hz   | 0.56 | 2.5 dB  |
+| Peaking | 1363 Hz  | 2.06 | -5.4 dB |
+| Peaking | 4049 Hz  | 2.39 | 2.9 dB  |
+| Peaking | 16335 Hz | 4.03 | -7.8 dB |
+| Peaking | 2061 Hz  | 4.29 | 0.7 dB  |
+| Peaking | 2772 Hz  | 6.25 | -1.7 dB |
+| Peaking | 4940 Hz  | 6.52 | -2.0 dB |
+| Peaking | 5797 Hz  | 3.17 | 2.0 dB  |
+| Peaking | 22050 Hz | 1.97 | -0.4 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.5dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.8dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | 0.2 dB  |
 | Peaking | 500 Hz   | 1.41 | 2.4 dB  |
 | Peaking | 1000 Hz  | 1.41 | -2.3 dB |
-| Peaking | 2000 Hz  | 1.41 | -2.4 dB |
-| Peaking | 4000 Hz  | 1.41 | 3.4 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -2.4 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -3.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Massdrop%20x%20Tanchim%20Cora/Massdrop%20x%20Tanchim%20Cora.png)

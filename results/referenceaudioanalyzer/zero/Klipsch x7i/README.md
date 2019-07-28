@@ -2,21 +2,20 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-4.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.8dB**.
+When using independent subset of filters, apply preamp of **-4.5dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 36 Hz   | 0.46 | -1.3 dB |
-| Peaking | 73 Hz   | 0.3  | -3.5 dB |
-| Peaking | 1571 Hz | 0.41 | 2.2 dB  |
-| Peaking | 2946 Hz | 2.63 | -6.6 dB |
-| Peaking | 6715 Hz | 8.88 | 3.9 dB  |
-| Peaking | 3432 Hz | 5.75 | -0.9 dB |
-| Peaking | 4334 Hz | 2.5  | 1.1 dB  |
-| Peaking | 5416 Hz | 6.81 | -1.1 dB |
-| Peaking | 9510 Hz | 1.77 | -0.4 dB |
+| Peaking | 30 Hz   | 0.56 | -1.6 dB |
+| Peaking | 79 Hz   | 0.35 | -3.6 dB |
+| Peaking | 1389 Hz | 0.52 | 2.2 dB  |
+| Peaking | 2944 Hz | 2.55 | -6.1 dB |
+| Peaking | 6707 Hz | 7.12 | 3.9 dB  |
+| Peaking | 4331 Hz | 4.21 | 1.1 dB  |
+| Peaking | 4406 Hz | 1.5  | -0.4 dB |
+| Peaking | 9342 Hz | 1.8  | -0.2 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.6dB**
@@ -31,9 +30,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.1 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | -0.4 dB |
-| Peaking | 4000 Hz  | 1.41 | -1.6 dB |
-| Peaking | 8000 Hz  | 1.41 | 1.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.0 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.6 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Klipsch%20x7i/Klipsch%20x7i.png)

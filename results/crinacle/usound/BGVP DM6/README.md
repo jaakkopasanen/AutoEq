@@ -4,20 +4,20 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.0dB**.
+When using independent subset of filters, apply preamp of **-5.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 16 Hz    | 0.86 | 4.5 dB   |
-| Peaking | 182 Hz   | 0.49 | -5.2 dB  |
-| Peaking | 5258 Hz  | 0.32 | 8.2 dB   |
-| Peaking | 6947 Hz  | 1.6  | -13.5 dB |
-| Peaking | 16522 Hz | 1.41 | -12.9 dB |
-| Peaking | 950 Hz   | 1.39 | 3.9 dB   |
-| Peaking | 1409 Hz  | 0.69 | -4.3 dB  |
-| Peaking | 2365 Hz  | 1.06 | 3.1 dB   |
-| Peaking | 4351 Hz  | 6.93 | -3.3 dB  |
-| Peaking | 5243 Hz  | 8.49 | 2.3 dB   |
+| Peaking | 17 Hz    | 0.83 | 4.2 dB   |
+| Peaking | 184 Hz   | 0.48 | -5.2 dB  |
+| Peaking | 6939 Hz  | 1.31 | -14.9 dB |
+| Peaking | 7921 Hz  | 0.22 | 10.9 dB  |
+| Peaking | 16721 Hz | 0.73 | -16.5 dB |
+| Peaking | 1556 Hz  | 1.75 | -3.9 dB  |
+| Peaking | 1800 Hz  | 0.61 | 2.3 dB   |
+| Peaking | 4327 Hz  | 5.55 | -2.5 dB  |
+| Peaking | 13713 Hz | 3.97 | 3.4 dB   |
+| Peaking | 14200 Hz | 1.31 | -1.3 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.5dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -4.3 dB |
 | Peaking | 500 Hz   | 1.41 | -1.2 dB |
 | Peaking | 1000 Hz  | 1.41 | 1.4 dB  |
-| Peaking | 2000 Hz  | 1.41 | 4.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 4.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.6 dB |
-| Peaking | 16000 Hz | 1.41 | -8.4 dB |
+| Peaking | 2000 Hz  | 1.41 | 4.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -3.8 dB |
+| Peaking | 16000 Hz | 1.41 | -8.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/BGVP%20DM6/BGVP%20DM6.png)

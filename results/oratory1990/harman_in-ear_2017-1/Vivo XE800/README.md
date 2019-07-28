@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.2dB**.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 2315 Hz  | 0.51 | -11.2 dB |
-| Peaking | 3346 Hz  | 0.6  | 15.7 dB  |
-| Peaking | 9069 Hz  | 6.75 | -4.3 dB  |
-| Peaking | 11246 Hz | 2.79 | 6.6 dB   |
-| Peaking | 16524 Hz | 0.44 | -13.2 dB |
-| Peaking | 20 Hz    | 0.6  | 1.4 dB   |
-| Peaking | 56 Hz    | 1.28 | 0.8 dB   |
-| Peaking | 191 Hz   | 0.92 | -1.1 dB  |
-| Peaking | 5961 Hz  | 6.14 | -2.1 dB  |
-| Peaking | 6991 Hz  | 5.51 | 2.1 dB   |
+| Peaking | 2036 Hz  | 0.56 | -4.6 dB  |
+| Peaking | 3527 Hz  | 0.96 | 9.1 dB   |
+| Peaking | 9014 Hz  | 6.24 | -5.1 dB  |
+| Peaking | 14372 Hz | 2.43 | -6.1 dB  |
+| Peaking | 18700 Hz | 0.59 | -13.4 dB |
+| Peaking | 30 Hz    | 0.37 | 1.5 dB   |
+| Peaking | 185 Hz   | 0.78 | -1.3 dB  |
+| Peaking | 11757 Hz | 3.21 | 1.6 dB   |
+| Peaking | 13261 Hz | 3.16 | -0.8 dB  |
+| Peaking | 16890 Hz | 4.78 | -1.6 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.8dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.2 dB  |
 | Peaking | 1000 Hz  | 1.41 | -1.6 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.8 dB  |
-| Peaking | 4000 Hz  | 1.41 | 7.0 dB   |
-| Peaking | 8000 Hz  | 1.41 | -0.8 dB  |
-| Peaking | 16000 Hz | 1.41 | -15.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.1 dB   |
+| Peaking | 8000 Hz  | 1.41 | -1.6 dB  |
+| Peaking | 16000 Hz | 1.41 | -16.8 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Vivo%20XE800/Vivo%20XE800.png)

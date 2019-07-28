@@ -1643,6 +1643,7 @@ class FrequencyResponse:
             sound_signature.center()
 
         n = 0
+        n_total = len(list(glob_files))
         for input_file_path in glob_files:
             if output_dir:
                 relative_path = os.path.relpath(input_file_path, input_dir)
@@ -1747,7 +1748,7 @@ class FrequencyResponse:
                 fr.plot_graph(show=True, close=False)
 
             n += 1
-        print('Processed {n} headphones in {t:.1f}s'.format(n=n, t=time()-start_time))
+            print(f'{n}/{n_total} ({n/n_total*100:.1f}%) {time()-start_time:.0f}s: {fr.name}')
 
     @staticmethod
     def cli_args():

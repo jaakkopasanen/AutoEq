@@ -2,21 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
-with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2dB**.
+In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 253 Hz   | 0.34 | -5.7 dB  |
-| Peaking | 3773 Hz  | 1.52 | 6.8 dB   |
-| Peaking | 6379 Hz  | 7.75 | 4.3 dB   |
-| Peaking | 20207 Hz | 1.66 | -12.7 dB |
-| Peaking | 16 Hz    | 0.74 | 3.9 dB   |
-| Peaking | 60 Hz    | 1.4  | 0.6 dB   |
-| Peaking | 2082 Hz  | 5.65 | 0.7 dB   |
-| Peaking | 14840 Hz | 3.78 | -5.9 dB  |
-| Peaking | 17862 Hz | 2.07 | 2.0 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 12 Hz    | 0.26 | 3.4 dB  |
+| Peaking | 252 Hz   | 0.31 | -5.6 dB |
+| Peaking | 4109 Hz  | 0.98 | 6.7 dB  |
+| Peaking | 11852 Hz | 2.67 | 3.0 dB  |
+| Peaking | 20693 Hz | 0.11 | -6.1 dB |
+| Peaking | 5510 Hz  | 5.18 | -3.0 dB |
+| Peaking | 6371 Hz  | 5.32 | 3.3 dB  |
+| Peaking | 13282 Hz | 5.19 | 3.3 dB  |
+| Peaking | 14702 Hz | 3.02 | -6.5 dB |
+| Peaking | 17123 Hz | 2.25 | 4.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.2dB**
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -3.7 dB |
 | Peaking | 1000 Hz  | 1.41 | -1.6 dB |
 | Peaking | 2000 Hz  | 1.41 | 0.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 6.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -3.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 16000 Hz | 1.41 | -6.4 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Simgot%20EM5H/Simgot%20EM5H.png)

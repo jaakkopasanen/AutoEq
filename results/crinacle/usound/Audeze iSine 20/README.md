@@ -8,19 +8,19 @@ When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 25 Hz    | 0.73 | 5.1 dB  |
+| Peaking | 24 Hz    | 0.73 | 5.1 dB  |
 | Peaking | 59 Hz    | 1.27 | 2.4 dB  |
-| Peaking | 906 Hz   | 0.56 | -7.1 dB |
-| Peaking | 1515 Hz  | 2.29 | -7.1 dB |
-| Peaking | 2844 Hz  | 0.69 | 9.4 dB  |
-| Peaking | 2252 Hz  | 5.67 | 1.1 dB  |
-| Peaking | 3191 Hz  | 3.13 | -1.1 dB |
-| Peaking | 5667 Hz  | 2.94 | 3.2 dB  |
-| Peaking | 8907 Hz  | 2.25 | -3.6 dB |
-| Peaking | 14570 Hz | 5.63 | -1.5 dB |
+| Peaking | 871 Hz   | 0.57 | -6.6 dB |
+| Peaking | 1507 Hz  | 2.21 | -7.1 dB |
+| Peaking | 2899 Hz  | 0.73 | 9.1 dB  |
+| Peaking | 859 Hz   | 5.39 | -0.6 dB |
+| Peaking | 3304 Hz  | 4.29 | -1.2 dB |
+| Peaking | 5752 Hz  | 2.47 | 3.6 dB  |
+| Peaking | 8660 Hz  | 1.77 | -3.8 dB |
+| Peaking | 14390 Hz | 5.57 | -2.8 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.9dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -1.5 dB |
 | Peaking | 500 Hz   | 1.41 | -2.1 dB |
 | Peaking | 1000 Hz  | 1.41 | -8.3 dB |
-| Peaking | 2000 Hz  | 1.41 | 0.5 dB  |
-| Peaking | 4000 Hz  | 1.41 | 8.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.1 dB |
-| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | 8.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.4 dB |
+| Peaking | 16000 Hz | 1.41 | -1.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Audeze%20iSine%2020/Audeze%20iSine%2020.png)

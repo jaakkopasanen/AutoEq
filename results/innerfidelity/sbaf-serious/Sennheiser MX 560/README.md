@@ -2,21 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
-with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.9dB**.
+In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-6.7dB**.
 
-| Type    | Fc      |    Q | Gain     |
-|:--------|:--------|:-----|:---------|
-| Peaking | 108 Hz  | 0.33 | 5.0 dB   |
-| Peaking | 779 Hz  | 0.56 | 3.7 dB   |
-| Peaking | 2352 Hz | 1.5  | -10.9 dB |
-| Peaking | 5814 Hz | 1.62 | -7.2 dB  |
-| Peaking | 18 Hz   | 0.63 | 3.8 dB   |
-| Peaking | 34 Hz   | 0.47 | 1.1 dB   |
-| Peaking | 3704 Hz | 8.85 | 1.8 dB   |
-| Peaking | 8298 Hz | 5.26 | -3.7 dB  |
-| Peaking | 9547 Hz | 2.32 | 2.1 dB   |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 41 Hz    | 0.12 | 6.1 dB   |
+| Peaking | 844 Hz   | 0.59 | 3.6 dB   |
+| Peaking | 2356 Hz  | 1.41 | -10.8 dB |
+| Peaking | 5965 Hz  | 1.47 | -7.2 dB  |
+| Peaking | 14493 Hz | 4.25 | -3.7 dB  |
+| Peaking | 4936 Hz  | 4.9  | -1.0 dB  |
+| Peaking | 8453 Hz  | 5.45 | -4.6 dB  |
+| Peaking | 9948 Hz  | 1.1  | 2.2 dB   |
+| Peaking | 14851 Hz | 7.2  | -2.5 dB  |
+| Peaking | 16084 Hz | 3.64 | 0.6 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
@@ -28,12 +29,12 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 62 Hz    | 1.41 | 4.4 dB  |
 | Peaking | 125 Hz   | 1.41 | 4.6 dB  |
 | Peaking | 250 Hz   | 1.41 | 3.4 dB  |
-| Peaking | 500 Hz   | 1.41 | 3.4 dB  |
+| Peaking | 500 Hz   | 1.41 | 3.3 dB  |
 | Peaking | 1000 Hz  | 1.41 | 4.5 dB  |
 | Peaking | 2000 Hz  | 1.41 | -8.1 dB |
-| Peaking | 4000 Hz  | 1.41 | -5.2 dB |
-| Peaking | 8000 Hz  | 1.41 | -3.9 dB |
-| Peaking | 16000 Hz | 1.41 | 0.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | -5.5 dB |
+| Peaking | 8000 Hz  | 1.41 | -4.3 dB |
+| Peaking | 16000 Hz | 1.41 | -0.9 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20MX%20560/Sennheiser%20MX%20560.png)

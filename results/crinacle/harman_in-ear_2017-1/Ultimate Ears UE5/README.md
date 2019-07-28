@@ -10,14 +10,14 @@ When using independent subset of filters, apply preamp of **-7.5dB**.
 |:--------|:---------|:-----|:---------|
 | Peaking | 119 Hz   | 0.59 | -2.7 dB  |
 | Peaking | 256 Hz   | 0.62 | -4.0 dB  |
-| Peaking | 4042 Hz  | 0.98 | 7.0 dB   |
-| Peaking | 14931 Hz | 2.96 | -13.5 dB |
-| Peaking | 22050 Hz | 1.54 | -7.4 dB  |
-| Peaking | 1453 Hz  | 3.99 | -1.5 dB  |
-| Peaking | 2701 Hz  | 5.42 | 1.3 dB   |
-| Peaking | 6140 Hz  | 5.67 | 2.7 dB   |
-| Peaking | 9028 Hz  | 5.57 | -5.2 dB  |
-| Peaking | 17682 Hz | 2.77 | 1.4 dB   |
+| Peaking | 4053 Hz  | 0.99 | 7.1 dB   |
+| Peaking | 14756 Hz | 3.91 | -18.8 dB |
+| Peaking | 22050 Hz | 1.8  | -15.3 dB |
+| Peaking | 5740 Hz  | 4.29 | 0.5 dB   |
+| Peaking | 6214 Hz  | 5.76 | 2.2 dB   |
+| Peaking | 9241 Hz  | 5.25 | -6.1 dB  |
+| Peaking | 12318 Hz | 4.27 | 3.1 dB   |
+| Peaking | 17065 Hz | 5.58 | 2.4 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.5dB**
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -0.0 dB |
 | Peaking | 2000 Hz  | 1.41 | 0.4 dB  |
 | Peaking | 4000 Hz  | 1.41 | 8.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 16000 Hz | 1.41 | -8.5 dB |
+| Peaking | 8000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 16000 Hz | 1.41 | -9.7 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Ultimate%20Ears%20UE5/Ultimate%20Ears%20UE5.png)

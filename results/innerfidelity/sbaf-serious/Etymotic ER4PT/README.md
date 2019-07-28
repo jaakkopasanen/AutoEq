@@ -2,24 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.8dB**.
+When using independent subset of filters, apply preamp of **-6.9dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 30 Hz   | 0.39 | 6.2 dB  |
-| Peaking | 1951 Hz | 1.52 | -5.8 dB |
-| Peaking | 3453 Hz | 5.15 | 3.0 dB  |
-| Peaking | 6158 Hz | 3.62 | 6.4 dB  |
-| Peaking | 8497 Hz | 5.47 | -3.6 dB |
-| Peaking | 699 Hz  | 1.33 | 1.5 dB  |
-| Peaking | 1334 Hz | 2.65 | -1.0 dB |
-| Peaking | 4562 Hz | 5.74 | -3.0 dB |
-| Peaking | 4694 Hz | 2.34 | 1.3 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 0.4  | 6.2 dB  |
+| Peaking | 1890 Hz  | 1.76 | -5.9 dB |
+| Peaking | 6181 Hz  | 3.06 | 5.4 dB  |
+| Peaking | 8599 Hz  | 5.71 | -5.0 dB |
+| Peaking | 20828 Hz | 1.75 | -1.0 dB |
+| Peaking | 757 Hz   | 1.21 | 1.8 dB  |
+| Peaking | 1179 Hz  | 1.27 | -1.3 dB |
+| Peaking | 3559 Hz  | 3.64 | 2.0 dB  |
+| Peaking | 4447 Hz  | 4.86 | -1.8 dB |
+| Peaking | 21201 Hz | 1.75 | -1.2 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.2 dB  |
 | Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | -6.3 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -1.0 dB |
 
 ### Graphs
 ![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Etymotic%20ER4PT/Etymotic%20ER4PT.png)
