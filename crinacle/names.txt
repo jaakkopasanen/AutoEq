@@ -1,4 +1,5 @@
 
+1964 Ears V2
 1Custom SA02
 1Custom SA03
 1Custom SA05
@@ -23,6 +24,7 @@
 64 Audio N8 "Nate"
 64 Audio tia Fourte
 64 Audio Tia Fourte
+64 Audio tia Fourte Noir
 64 Audio Tia Trio
 64 Audio U12t
 64 Audio U18Tzar
@@ -134,8 +136,8 @@ AVIOT TE-D01b
 AVIOT TE-D01d
 Azla 01R Mk2
 AZLA 01R Mk2
-Azla Horizon
 AZLA Horizon
+Azla Horizon
 AZLA Orta
 B1 module
 Bang & Olufsen Beoplay E8
@@ -151,6 +153,7 @@ Black nozzle + Red vent
 Blue nozzle + Black vent
 Blue nozzle + Blue vent
 Blue nozzle + Red vent
+Bose Soundsport Free
 Bragi Dash
 Brainwavz B100
 Brainwavz B200
@@ -228,15 +231,17 @@ Dita Truth Answer Edition
 Dita Truth Brass Edition
 Dunu DK-3001
 DUNU DK-4001
-Dunu DN-1000
 DUNU DN-1000
-Dunu DN-2000
+Dunu DN-1000
 DUNU DN-2000
-Dunu DN-2002
+Dunu DN-2000
 DUNU DN-2002
+Dunu DN-2002
+DUNU Titan 1
 Dunu Titan 3
 DUNU Titan 3
 Dynamic Motion DM200H
+EarFun x Oluv Free
 Earsonics EM10
 Earsonics EM32
 Earsonics EM4
@@ -293,8 +298,17 @@ Etymotic ER4SR
 Etymotic ER4XR
 Etymotic HF5
 Fearless ACME8
+Fearless Crystal Ball
 Fearless HyperS 12BA
+Fearless S10 Genie
+Fearless S4
+Fearless S5H
+Fearless S5T
+Fearless S6Pro
+Fearless S6Rui
 Fearless S8F
+Fearless S8Pro
+Fearless Start
 Fender DXA1
 Fender FXA2
 Fender FXA5
@@ -374,6 +388,7 @@ FitEar Parterre
 FitEar Private 222
 FitEar Private 223
 FitEar Private 333
+FitEar Private C435
 FitEar TG334
 FitEar Titan
 FitEar To Go! 334 (TG334)
@@ -437,6 +452,7 @@ Ice Lab Zen12
 ikko OH1
 ikko OH10
 IMR R1
+IMR Zenith
 INAIR M360
 InEar Prophile-8
 InEar ProPhile-8
@@ -449,8 +465,8 @@ InEar StageDiver SD-2
 InEar StageDiver SD-3
 InEar StageDiver SD-4
 InEar StageDiver SD-5
-InEar StageDiver SD2
 InEar Stagediver SD2
+InEar StageDiver SD2
 InEar StageDiver SD3
 InEar StageDiver SD4
 InEar StageDiver SD5
@@ -458,6 +474,7 @@ InEarz Nirvana
 Intime Sora
 Itsfit Lab Fusion
 Itsfit Lab R3
+Jabra Elite Active 65t
 JH Audio Angie
 JH Audio Billie Jean
 JH Audio Diana
@@ -518,8 +535,10 @@ Kinera Idun
 Kinera IDUN Deluxe
 Kinera Odin
 Kinera SEED
+Kinera SIF
 Klipsch R6i
 Kumitate KL-Corona
+Kumitate KL-Focus
 Kumitate KL-Kanon
 Kumitate KL-Lakh
 Kumitate KL-Meteo
@@ -568,14 +587,17 @@ Massdrop x MEE Planamic
 Massdrop x NuForce EDC3
 Master & Dynamic MW07
 Max treble
+Meccaudio ME20
 MEE Audio Pinnacle P1
 MEE Pinnacle P1
 Meze 12 Classics
+Meze Rai Penta
 Min treble
 Moondrop A8
 Moondrop Blessing
 Moondrop Crescent
 Moondrop Kanas Pro
+Moondrop Spaceship
 MUNITIO Billets
 MUNITIO Bullet In-Ear
 NCM Bella
@@ -627,10 +649,13 @@ Oppo MH130
 Oriolus Finschi
 Oriolus Forsteni
 Oriolus Mellianus
-Oriolus Mk2
 Oriolus MK2
+Oriolus Mk2
+Oriolus Percivali
 Oriveti Basic
 Oriveti New Primacy
+Oriveti OH300
+Oriveti OH500
 Pai Audio DM2A
 Pai Audio MR2
 Pai Audio MR3
@@ -652,8 +677,8 @@ QDC 3SH
 qdc 4SS
 QDC 5CH
 qdc 5SH
-qdc 8SH
 QDC 8SH
+qdc 8SH
 qdc 8SL
 qdc 8SL/Gemini/Anole VX
 qdc 8SS
@@ -709,6 +734,7 @@ Sensaphonics 2MAX
 Sensaphonics 2X-S
 Sensaphonics 3MAX
 Shanling ME100
+Shanling ME500
 Shozy & Neo BG
 Shozy & Neo CP
 Shozy Hibiki
@@ -745,9 +771,11 @@ Sony MDR-EX800ST/MDR7550
 Sony MDR7550
 Sony MH750
 Sony MH755
+Sony WF-1000XM3
 Sony XBA-300
 Sony XBA-300AP
 Sony XBA-A3
+Sony XBA-H3
 Sony XBA-N3
 Sony XBA-Z5
 Soranik Ion
@@ -773,8 +801,8 @@ Symphonium Audio Aurora
 Symphonium Audio Mirage
 Symphonium Aurora
 Symphonium Mirage
-Taobao 3 driver
 Taobao 3 Driver
+Taobao 3 driver
 Taobao 6 Driver
 Taobao 6 driver
 Taobao F111
@@ -799,8 +827,11 @@ Tin Audio P1
 Tin Audio T2
 Tin Audio T2 Pro
 Tin Audio T3
-Tralucent 1Plus2.2
+Tralucent 1Plus1.2
 Tralucent 1plus2.2
+Tralucent 1Plus2.2
+Tralucent 1Plus2.3
+Tralucent 1Plus5.2
 Trinity Audio Phantom Master
 Tripowin TP10
 TTPod T2
@@ -853,6 +884,7 @@ Venture Electronics Smalls
 Vision Ears Elysium
 Vision Ears Erlkonig
 Vision Ears VE3.2
+Vision Ears VE4.2
 Vision Ears VE5
 Vision Ears VE6
 Vision Ears VE6 XControl (custom)
@@ -903,6 +935,7 @@ X2
 Xiaomi Hybrid
 Yamaha EPH-100
 Yamaha EPH100
+Yinyoo Topaz
 Zero Audio Carbo Basso ZH-DX210-CB
 Zero Audio Carbo Doppio ZH-BX700
 Zero Audio Carbo Singolo ZH-BS150-CS

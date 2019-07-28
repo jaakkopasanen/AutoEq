@@ -86,7 +86,7 @@ Aurvana Trio	Creative Aurvana Trio
 Avalon	NocturnaL Audio Avalon	
 AXH	AAW AXH	
 Aya	FitEar Aya	
-B400	Brainwavz B400	
+B400	Brainwavz B400 sample 1
 Balance 2M	TFZ Balance 2M	
 Basic	Oriveti Basic	
 Bass		
@@ -223,7 +223,7 @@ EX1000 S2	Sony MDR-EX1000 sample 2
 EX1000 S3	Sony MDR-EX1000 sample 3	
 EX1000 S4	Sony MDR-EX1000 sample 4	
 EX510 Filterless	Sony MDR-EX510 Filterless	
-EX800	Sony MDR-EX800ST	
+EX800	Sony MDR-EX800ST sample 1
 Exclusive 1	TFZ Exclusive 1	
 Exclusive 3	TFZ Exclusive 3	
 Exclusive 5	TFZ Exclusive 5	
@@ -261,7 +261,7 @@ Flat-4 Kaede Type 2	Ocharaku Flat-4 Kaede Type 2
 Flat-4 Ti Plus	Ocharaku Flat-4 Ti Plus	
 Forsteni	Oriolus Forsteni sample 1	
 Forsteni S2	Oriolus Forsteni sample 2	
-Fourte	64 Audio Tia Fourte	
+Fourte	64 Audio Tia Fourte sample 1
 FW01	JVC HA-FW01	
 FW02	JVC HA-FW02	
 FW03	JVC HA-FW03	
@@ -345,7 +345,7 @@ IM01	Audio-Technica ATH-IM01
 IM02	Audio-Technica ATH-IM02	
 IM03	Audio-Technica ATH-IM03	
 In Air		
-iSine 10	Audeze iSine 10	
+iSine 10	Audeze iSine 10 sample 1
 iSIne 10	Audeze iSine 10	
 iSine 20 Cipher	Audeze iSine 20 Cipher	
 iSine 20	Audeze iSine 20	
@@ -366,7 +366,7 @@ Jimo	Kennerton Jimo
 K10 Encore	Noble Audio K10 Encore	
 K10	Noble Audio K10	
 Katana	Noble Audio Katana	
-Khan	Noble Audio Khan	
+Khan	Noble Audio Khan sample 1
 King Pro	TFZ King Pro	
 KL-Corona	Kumitate KL-Corona sample 1	
 KL-Corona S2	Kumitate KL-Corona sample 2	
@@ -416,7 +416,7 @@ M4	Advanced M4
 M51D	Advanced M51D	
 M55D	Advanced M55D	
 M7	Sony IER-M7	
-M9	Sony IER-M9	
+M9	Sony IER-M9 sample 1
 MA750	RHA MA750	
 Maestro V2	Unique Melody Maestro V2	
 Martian	Unique Melody Martian	
@@ -496,7 +496,7 @@ NT8	Hidition NT8
 Odin	Kinera Odin	
 OH1	ikko OH1	
 Omega Spark	Fischer Omega Spark	
-Orion	Campfire Orion	
+Orion	Campfire Audio Orion
 OS V3	HiFi BOY OS V3	
 Parterre	FitEar Parterre sample 1	
 Parterre S2	FitEar Parterre sample 2	
@@ -507,7 +507,7 @@ Phantom	Empire Ears Phantom
 Planamic	Massdrop x MEE Planamic	
 Plus	Massdrop Plus sample 1	
 Plus S2	Massdrop Plus sample 2	
-Pola	Shozy x AAW Pola	
+Pola	Shozy x AAW Pola sample 1
 Polaris	Campfire Audio Polaris sample 1	
 Polaris S2	Campfire Audio Polaris sample 2	
 Pollux	ARC Pollux	
@@ -694,10 +694,10 @@ ZS5v2	KZ ZS5v2
 ZS6	KZ ZS6	
 ZSR	KZ ZSR	
 ZST	KZ ZST	
-A12t C	64 Audio A12t custom
+A12t C	64 Audio A12t custom sample 1
 A3H 2019	AAW A3H 2019
 ACME 8	Fearless Audio ACME 8
-ASH	AAW ASH
+ASH	AAW ASH sample 1
 Atlas S2	Campfire Audio Atlas sample 2
 AWK-009	Seahf AWK-009
 AXH 2019	AAW AXH 2019
@@ -714,8 +714,8 @@ EK3 1
 EK3 2
 EK3 All
 EK3	Simgot EK3
-Equinox	Campfire Equinox
-ER2XR	Etymotic ER2XR
+Equinox	Campfire Audio Equinox
+ER2XR	Etymotic ER2XR sample 1
 ER2XR TF
 FA1	FiiO FA1
 FA7	FiiO FA7
@@ -739,9 +739,9 @@ Kanas Pro	Moondrop Kanas Pro
 KS3	Alpha & Delta KS3
 KSE1200 S2	Shure KSE1200 sample 2
 M2 FiR	Fir Audio M2
-M3 FiR	Fir Audio M3
-M4 FiR	Fir Audio M4
-M5	FiR Audio M5
+M3 FiR	Fir Audio M3 sample 1
+M4 FiR	Fir Audio M4 sample 1
+M5	FiR Audio M5 sample 1
 MG5HX	Future Sonics MG5HX
 Mockingbird	AAW Mockingbird
 P1 (Front vent sealed)	Tin Audio P1 (front vent sealed)
@@ -765,3 +765,109 @@ Viento-A C
 Violet	Hidition Violet
 VS7	VSonic VS7
 ZS10 Pro	KZ ZS10 Pro
+10 Flat S2
+1plus1.2	Tralucent 1Plus1.2
+1plus2.3	Tralucent 1Plus2.3
+1plus5.2	Tralucent 1Plus5.2
+435	FitEar Private C435
+A12t C S2	64 Audio A12t custom sample 2
+A8	Moondrop A8
+Active65	Jabra Elite Active 65t
+ASH S2	AAW ASH sample 2
+B1	Final Audio B1
+B2	Final Audio B2
+B3	Final Audio B3
+B400 S2	Brainwavz B400 sample 2
+CL2	RHA CL2
+Crystal Ball	Fearless Crystal Ball
+DM200H	Dynamic Motion DM200H
+DM2A	Pai Audio DM2A
+E8	Bang & Olufsen Beoplay E8
+Elysium	Vision Ears Elysium
+ER2XR S2	Etymotic ER2XR sample 2
+ER3SE	Etymotic ER3SE
+ER3XR 75ohm	Etymotic ER3SE 75 ohm
+ER3XR	Etymotic ER3XR
+ES60 C	Westone ES60 custom
+EX800ST S2	Sony MDR-EX800ST sample 2
+EX800ST S3	Sony MDR-EX800ST sample 3
+Finschi Hifi	Oriolus Finschi Hifi
+Fourte Noir	64 Audio Tia Fourte Noir
+Fourte S2	64 Audio Tia Fourte sample 2
+FW10000	JVC HA-FW10000
+HE200	Fengru HE-200
+iSine 10 S2	Audeze iSine 10 sample 2
+IT03w	iBasso IT03w
+Khan S2	Noble Audio Khan sample 1
+KL-Focus Max Bass	Kumitate KL-Focus Max Bass
+KL-Focus Min Bass	Kumitate KL-Focus Min Bass
+KL-Focus Setting 2	Kumitate KL-Focus Setting 2
+KL-Focus Setting 3	Kumitate KL-Focus Setting 3
+M3 FiR S2	Fir Audio M3 sample 2
+M4 FiR S2	Fir Audio M4 sample 2
+M5 C	Fir Audio M5 custom
+M5 S2	Fir Audio M5 sample 2
+M9 S2 Filterless	Sony IER-M9 Filterless
+M9 S2	Sony IER-M9 sample 2
+Make 2	Final Audio Make 2
+Maven	Unique Melody Maven
+ME20	Meccaudio ME20
+ME500	Shanling ME500
+Mirage UM	Unique Melody Mirage
+Momentum TW	Sennheiser Momentum True Wireless
+MW07	Master & Dynamic MW07
+Nightingale	AAW Nightingale
+OH10	ikko OH10
+OH300	Oriveti OH300
+OH500	Oriveti OH500
+Oluv x EarFun Free	Oluv x EarFun Free
+Orta	AZLA Orta
+Percivali	Oriolus Percivali
+Pola S2	Shozy x AAW Pola
+Purple Standard
+R1 S2 Black mod
+R1 S2 Blue mod
+R1 S2 Blue mod Open
+Rai Penta	Meze Rai Penta
+S10	Fearless S10 Genie
+S4 Fearless	Fearless Audio S4
+S5H	Fearless Audio S5H
+S5T	Fearless Audio S5T
+S6Pro	Fearless Audio S6Pro
+S6Rui	Fearless Audio S6Rui
+S8F	Fearless Audio S8F sample 1
+S8F S2	Fearless Audio S8F sample 2
+S8Pro	Fearless Audio S8Pro
+Samba C
+Sif	Kinera SIF
+Soundsport Free	Bose SoundSport Free
+Spaceship	Moondrop Spaceship
+SPORT7TW	Audio Technica ATH-SPORT7TW
+Start	Fearless Audio Start
+T2 Galaxy Mod	Tin Audio T2 Galaxy Mod
+TE-D01b	AVIOT TE-D01b
+TE-D01d	AVIOT TE-D01d
+Titan 1	DUNU Titan 1	Dunu Titan 1
+Topaz Filterless	Yinyoo Topaz Filterless
+TSH-HR1000K	fineEars TSH-HR1000K
+V2	64 Audio 1964 Ears V2
+VE3.2	Vision Ears VE3.2
+VE32
+VE42
+Velver Tight
+Velver Warm
+Velvet Standard
+Velvet Tight
+Velvet Warm
+WF-1000XM3	Sony WF-1000XM3
+WF-1000XM3 NC	Sony WF-1000XM3 NC
+XBA-H3	Sony XBA-H3
+Z1R S3	Sony IER-Z1R sample 3
+Z1R S4	Sony IER-Z1R sample 4
+Z1R S5	Sony IER-Z1R sample 5
+Z1R S6	Sony IER-Z1R sample 6
+Zenith Black
+Zenith Blue
+Zenith Gold
+Zenith Orange
+Zenith Pink

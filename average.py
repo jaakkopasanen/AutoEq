@@ -44,8 +44,6 @@ def main(input_dir=None, output_dir=None):
             d = os.path.join(output_dir, norm)
             if not os.path.isdir(d):
                 os.makedirs(d)
-            if os.path.isfile(os.path.join(d, norm + '.csv')):
-                warnings.warn('Target file for "{}" already exists, skipping.'.format(norm))
             fr.write_to_csv(os.path.join(d, norm + '.csv'))
             #fr.plot_graph()
 
