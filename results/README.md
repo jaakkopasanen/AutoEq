@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2625 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2635 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/1Custom%20SA03)
@@ -600,6 +600,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Caeden Linea No10 Active Wired](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Caeden%20Linea%20No10%20Active%20Wired)
 - [California Headphone Lorado](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/California%20Headphone%20Lorado)
 - [California Headphone Silverado](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/California%20Headphone%20Silverado)
+- [Cambridge Audio Melomania 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cambridge%20Audio%20Melomania%201)
 - [Campfire Audio Andromeda](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Campfire%20Audio%20Andromeda)
 - [Campfire Audio Andromeda SS](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Andromeda%20SS)
 - [Campfire Audio Atlas](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Campfire%20Audio%20Atlas)
@@ -649,6 +650,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Creative HS-930 i2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Creative%20HS-930%20i2)
 - [Creative In-Ear 3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Creative%20In-Ear%203)
 - [Creative MA 200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Creative%20MA%20200)
+- [Creative Outlier Air](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20Outlier%20Air)
 - [Creative Sound Blaster EVO ZxR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20Sound%20Blaster%20EVO%20ZxR)
 - [Creative Sound BlasterX H5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20Sound%20BlasterX%20H5)
 - [Creative SoundBlaster EVO Zx](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Creative%20SoundBlaster%20EVO%20Zx)
@@ -1178,6 +1180,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Jaybird Run XT](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jaybird%20Run%20XT)
 - [Jaybird Tarah](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jaybird%20Tarah)
 - [Jaybird Tarah Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jaybird%20Tarah%20Pro)
+- [Jaybird Vista](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jaybird%20Vista)
 - [Jaybird X2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jaybird%20X2)
 - [Jaybird X3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jaybird%20X3)
 - [Jaybird X4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Jaybird%20X4)
@@ -1400,6 +1403,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Lime Ears Model X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Lime%20Ears%20Model%20X)
 - [Lime Ears Model X Bass](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Lime%20Ears%20Model%20X%20Bass)
 - [Logitech G Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G%20Pro)
+- [Logitech G Pro X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G%20Pro%20X)
 - [Logitech G430](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G430)
 - [Logitech G432](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G432)
 - [Logitech G433](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Logitech%20G433)
@@ -1620,6 +1624,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [NuForce NE700M 2013](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/NuForce%20NE700M%202013)
 - [NuForce Primo 8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/NuForce%20Primo%208)
 - [NuForce Primo8](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/NuForce%20Primo8)
+- [Nura Nuraphone](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Nura%20Nuraphone)
 - [NVX EX10S](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/NVX%20EX10S)
 - [NVX XPT100](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/NVX%20XPT100)
 - [NVX XPT100 Flat Pads](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/NVX%20XPT100%20Flat%20Pads)
@@ -1819,6 +1824,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Razer Kraken Pro V2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Razer%20Kraken%20Pro%20V2)
 - [Razer Kraken Tournament Edition](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Razer%20Kraken%20Tournament%20Edition)
 - [Razer Kraken USB](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Razer%20Kraken%20USB)
+- [Razer Kraken X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Razer%20Kraken%20X)
 - [Razer Man O' War](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Razer%20Man%20O'%20War)
 - [Razer Nari Ultimate](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Razer%20Nari%20Ultimate)
 - [RBH EP1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RBH%20EP1)
@@ -1852,6 +1858,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Rose BR5 Mk2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Rose%20BR5%20Mk2)
 - [Rose Mini2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Rose%20Mini2)
 - [Rovking V1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Rovking%20V1)
+- [Sabbat E12](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sabbat%20E12)
 - [Samsung EO-IG955 (AKG)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Samsung%20EO-IG955%20(AKG))
 - [Samsung Galaxy Buds](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Samsung%20Galaxy%20Buds)
 - [Samsung Gear IconX](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Samsung%20Gear%20IconX)
@@ -2224,7 +2231,9 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Sony WH-XB900N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-XB900N)
 - [Sony WH1000XM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sony%20WH1000XM3)
 - [Sony WI-1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sony%20WI-1000X)
+- [Sony WI-C200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WI-C200)
 - [Sony WI-C300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WI-C300)
+- [Sony WI-C310](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WI-C310)
 - [Sony WI-C400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WI-C400)
 - [Sony WI-C600N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WI-C600N)
 - [Sony WI-SP500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WI-SP500)
@@ -2325,6 +2334,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Stealthsonics U4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Stealthsonics%20U4)
 - [Stealthsonics U9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Stealthsonics%20U9)
 - [Stealthsonics U9 JDM](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Stealthsonics%20U9%20JDM)
+- [SteelSeries Arctis 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/SteelSeries%20Arctis%201)
 - [SteelSeries Arctis 3 2019 Edition](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/SteelSeries%20Arctis%203%202019%20Edition)
 - [SteelSeries Arctis 5 2019 Edition](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/SteelSeries%20Arctis%205%202019%20Edition)
 - [SteelSeries Arctis 7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/SteelSeries%20Arctis%207)
