@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2630 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2625 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/1Custom%20SA03)
@@ -2317,11 +2317,6 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Stax SR-L300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-L300)
 - [Stax SR-L300 LTD](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Stax%20SR-L300%20LTD)
 - [Stax SR-L300 LTD (L700 Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Stax%20SR-L300%20LTD%20(L700%20Earpads))
-- [Stax SR-L700 #1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Stax%20SR-L700%20#1)
-- [Stax SR-L700 #2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Stax%20SR-L700%20#2)
-- [Stax SR-L700 #3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Stax%20SR-L700%20#3)
-- [Stax SR-L700 #4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Stax%20SR-L700%20#4)
-- [Stax SR-L700 #5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Stax%20SR-L700%20#5)
 - [Stax SR-Lambda Signature](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-Lambda%20Signature)
 - [Stax SR-Sigma 07381](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-Sigma%2007381)
 - [Stax SR-X Mk3 Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Stax%20SR-X%20Mk3%20Pro)

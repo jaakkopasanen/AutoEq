@@ -106,11 +106,11 @@ BR5 Mk2	Rose BR5 Mk2
 Brass		
 Bravado	Empire Ears Bravado	
 Bullet In-Ear		
-CD2000 #1		
-CD2000 #2		
-CD2000 #3		
-CD2000 #4		
-CD2000 #5		
+CD2000 #1		onear
+CD2000 #2		onear
+CD2000 #3		onear
+CD2000 #4		onear
+CD2000 #5		onear
 CE-5	Hyla CE-5 sample 1	
 CE5 S2	Hyla CE-5 sample 2	
 CL1	RHA CL1	
@@ -388,11 +388,11 @@ KL-Trio Min Test	Kumitate KL-Trio Min Test	ignore
 KL-Unknown Max Treble		
 KL-Unknown Min Treble		
 KSE1200	Shure KSE1200 sample 1
-L700 #1	Stax SR-L700 #1	
-L700 #2	Stax SR-L700 #2	
-L700 #3	Stax SR-L700 #3	
-L700 #4	Stax SR-L700 #4	
-L700 #5	Stax SR-L700 #5	
+L700 #1	Stax SR-L700 #1	onear
+L700 #2	Stax SR-L700 #2	onear
+L700 #3	Stax SR-L700 #3	onear
+L700 #4	Stax SR-L700 #4	onear
+L700 #5	Stax SR-L700 #5	onear
 LAB1	Final Audio Lab 1	
 LAB2 Fit 1	Final Audio Lab 1 Fit 1	
 LAB2 Fit 2	Final Audio Lab 1 Fit 2	
@@ -423,11 +423,11 @@ Martian	Unique Melody Martian
 Martin		
 Mason V3	Unique Melody Mason V3	
 Mason V3 Ported	Unique Melody Mason V3 Ported	
-MDR-3 #1		ignore
-MDR-3 #2		ignore
-MDR-3 #3		ignore
-MDR-3 #4		ignore
-MDR-3 #5		ignore
+MDR-3 #1		onear
+MDR-3 #2		onear
+MDR-3 #3		onear
+MDR-3 #4		onear
+MDR-3 #5		onear
 MDR7550	Sony MDR7550	
 ME1	Unique Melody ME1	
 ME100	Shanling ME100	
