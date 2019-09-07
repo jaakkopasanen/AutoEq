@@ -11,8 +11,7 @@ https://old.reddit.com/r/oratory1990/wiki/index
 7. Manually move new headphone folders from `oratory1990/new_data` into `oratory1990/onear`, `oratory1990/inear` or
 `oratory1990/earbud` folders in `rtings/data` depending on the headphone type
 8. Run results update: `python results/update.py --new_only --oratory1990`
-9. Update recommendations: `python results/recommendations.py`
-10. Update full index: `python results/index.py`
-11. Add files to git: `git add results/oratory1990 results/README.md results/INDEX.md oratory1990/links.json oratory1990/data`
-12. Commit: `git commit -m "New oratory1990 measurements with pre-computed results."`
-13. Push: `git push`
+9. Update indexes: `python results/update_indexes.py`
+10. Add files to git: `git add results/oratory1990 results/README.md results/INDEX.md oratory1990/links.json oratory1990/data`
+11. Commit: `git commit -m "New oratory1990 measurements with pre-computed results."`
+12. Push: `git push`
