@@ -723,10 +723,10 @@ from the same source.
 - [Beyerdynamic DT 150 250 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20150%20250%20Ohm) by Innerfidelity
 - [Beyerdynamic DT 150 250 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20150%20250%20ohm) by Reference Audio Analyzer
 - [Beyerdynamic DT 1770 (Leatherette Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201770%20(Leatherette%20Earpads)) by oratory1990
+- [Beyerdynamic DT 1770 (Velour Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beyerdynamic%20DT%201770%20(Velour%20Earpads)) by Rtings
 - [Beyerdynamic DT 1770 (Velours Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201770%20(Velours%20Earpads)) by oratory1990
-- [Beyerdynamic DT 1770](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beyerdynamic%20DT%201770) by Rtings
 - [Beyerdynamic DT 1990 (Analytic Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201990%20(Analytic%20Earpads)) by oratory1990
-- [Beyerdynamic DT 1990](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beyerdynamic%20DT%201990) by Rtings
+- [Beyerdynamic DT 1990 (Balanced Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beyerdynamic%20DT%201990%20(Balanced%20Earpads)) by Rtings
 - [Beyerdynamic DT 231 PRO](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20231%20PRO) by Reference Audio Analyzer
 - [Beyerdynamic DT 231](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20231) by Headphone.com
 - [Beyerdynamic DT 235](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20235) by Headphone.com
@@ -735,10 +735,10 @@ from the same source.
 - [Beyerdynamic DT 240 Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20240%20Pro) by Innerfidelity
 - [Beyerdynamic DT 240](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20240) by oratory1990
 - [Beyerdynamic DT 250 250 ohm Mod](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20250%20250%20ohm%20Mod) by Reference Audio Analyzer
+- [Beyerdynamic DT 250 250 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20250%20250%20Ohm) by Innerfidelity
 - [Beyerdynamic DT 250 250 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20250%20250%20ohm) by Reference Audio Analyzer
 - [Beyerdynamic DT 250 80 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20250%2080%20ohm) by Reference Audio Analyzer
 - [Beyerdynamic DT 250-250](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20250-250) by Headphone.com
-- [Beyerdynamic DT 250-250](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%20250-250) by Innerfidelity
 - [Beyerdynamic DT 440](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20440) by Reference Audio Analyzer
 - [Beyerdynamic DT 48 E 120 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Beyerdynamic%20DT%2048%20E%20120%20Ohm) by Innerfidelity
 - [Beyerdynamic DT 48 E 200 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%2048%20E%20200%20ohm) by Reference Audio Analyzer
@@ -751,10 +751,10 @@ from the same source.
 - [Beyerdynamic DT 660](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20660) by Reference Audio Analyzer
 - [Beyerdynamic DT 770 250 Ohm (Dekoni Hybrid Earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm%20(Dekoni%20Hybrid%20Earpads)) by oratory1990
 - [Beyerdynamic DT 770 250 Ohm (new earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm%20(new%20earpads)) by oratory1990
+- [Beyerdynamic DT 770 250 Ohm (new earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beyerdynamic%20DT%20770%20250%20Ohm%20(new%20earpads)) by Rtings
 - [Beyerdynamic DT 770 250 Ohm (old earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm%20(old%20earpads)) by oratory1990
 - [Beyerdynamic DT 770 250 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20770%20250%20Ohm) by Headphone.com
 - [Beyerdynamic DT 770 250 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20770%20250%20ohm) by Reference Audio Analyzer
-- [Beyerdynamic DT 770 250 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beyerdynamic%20DT%20770%20250%20Ohm) by Rtings
 - [Beyerdynamic DT 770 32 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20770%2032%20Ohm) by Headphone.com
 - [Beyerdynamic DT 770 32 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20770%2032%20ohm) by Reference Audio Analyzer
 - [Beyerdynamic DT 770 600 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20770%20600%20Ohm) by Headphone.com
@@ -762,7 +762,6 @@ from the same source.
 - [Beyerdynamic DT 770 600 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20770%20600%20ohm) by Reference Audio Analyzer
 - [Beyerdynamic DT 770 80 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20770%2080%20ohm) by Reference Audio Analyzer
 - [Beyerdynamic DT 770 M 80 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20M%2080%20Ohm) by oratory1990
-- [Beyerdynamic DT 770 Pro 250 Ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Beyerdynamic%20DT%20770%20Pro%20250%20Ohm) by Rtings
 - [Beyerdynamic DT 770 Pro 32 ohm LE](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20770%20Pro%2032%20ohm%20LE) by Reference Audio Analyzer
 - [Beyerdynamic DT 770 Pro 32 ohm](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20770%20Pro%2032%20ohm) by Reference Audio Analyzer
 - [Beyerdynamic DT 797](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20797) by Reference Audio Analyzer
@@ -2901,10 +2900,6 @@ from the same source.
 - [Razer Nari Ultimate](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Razer%20Nari%20Ultimate) by Rtings
 - [RBH EP1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RBH%20EP1) by Innerfidelity
 - [RBH EP3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RBH%20EP3) by Innerfidelity
-- [Read and Heath Acoustics MA-350](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Read%20and%20Heath%20Acoustics%20MA-350) by Innerfidelity
-- [Read Heath Acoustics MA750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Read%20Heath%20Acoustics%20MA750) by Innerfidelity
-- [Read Heath Audio MA600](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Read%20Heath%20Audio%20MA600) by Innerfidelity
-- [Reid and Heath Acoustics SA-850](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Reid%20and%20Heath%20Acoustics%20SA-850) by Innerfidelity
 - [Remax RM-580](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Remax%20RM-580) by Reference Audio Analyzer
 - [RHA CL1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/RHA%20CL1) by Crinacle (Harman in-ear 2017-1)
 - [RHA CL1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/RHA%20CL1) by Crinacle (Usound)
@@ -2912,11 +2907,16 @@ from the same source.
 - [RHA CL2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/RHA%20CL2) by Crinacle (Usound)
 - [RHA CL750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/RHA%20CL750) by Crinacle (Harman in-ear 2017-1)
 - [RHA CL750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/RHA%20CL750) by Crinacle (Usound)
+- [RHA MA-350](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20MA-350) by Innerfidelity
 - [RHA MA450i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20MA450i) by Innerfidelity
+- [RHA MA600](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20MA600) by Innerfidelity
 - [RHA MA750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/RHA%20MA750) by Crinacle (Harman in-ear 2017-1)
 - [RHA MA750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/RHA%20MA750) by Crinacle (Usound)
-- [RHA MA750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/RHA%20MA750) by oratory1990
+- [RHA MA750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20MA750) by Innerfidelity
+- [RHA MA750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/RHA%20MA750) by oratory1990 (Harman in-ear 2017-1)
+- [RHA MA750](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/RHA%20MA750) by oratory1990 (Usound)
 - [RHA S500i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20S500i) by Innerfidelity
+- [RHA SA-850](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20SA-850) by Innerfidelity
 - [RHA SA950i](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20SA950i) by Innerfidelity
 - [RHA T10i Bass Filter](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20T10i%20Bass%20Filter) by Innerfidelity
 - [RHA T10i Reference Filter](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/RHA%20T10i%20Reference%20Filter) by Innerfidelity
