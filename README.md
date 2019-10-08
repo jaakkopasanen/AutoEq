@@ -307,7 +307,10 @@ virtualenv venv
 ```
 - Activate virtualenv  
 ```bash
+# On Windows
 venv\Scripts\activate
+# On Linux and Mac
+source venv/Scripts/activate
 ```
 - Install required packages  
 ```bash
@@ -315,13 +318,17 @@ pip install -r requirements.txt
 ```
 - Verify installation  
 ```bash
-python frequency_response.py -H
+python frequency_response.py -h
 ```
 
 When coming back at a later time you'll only need to activate virtual environment again
 ```bash
+# On Windows
 cd C:\path\to\AutoEq-master
 venv\Scripts\activate
+# On Linux and Mac
+cd /path/to/AutoEq-master
+source venv/Scripts/activate
 ```
 
 ### Command Line Arguments
@@ -452,30 +459,30 @@ optional arguments:
 #### Reproducing Results
 Reproducing pre-computed results for oratory1990 measured on-ear headphones:
 ```bash
-python frequency_response.py --input_dir="oratory1990\data\onear" --output_dir="my_results\oratory1990\harman_over-ear_2018" --compensation="compensation\harman_over-ear_2018_wo_bass.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0
+python frequency_response.py --input_dir="oratory1990/data/onear" --output_dir="my_results/oratory1990/harman_over-ear_2018" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0
 ```
 
 Reproducing pre-computed results for Rtings measured IEMs:
 ```bash
-python frequency_response.py --input_dir="rtings\data\inear" --output_dir="my_results\rtings\avg" --compensation="rtings\resources\rtings_compensation_avg.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --iem_bass_boost=6.0
+python frequency_response.py --input_dir="rtings/data/inear" --output_dir="my_results/rtings/avg" --compensation="rtings/resources/rtings_compensation_avg.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --iem_bass_boost=6.0
 ```
 
-All parameters used for pre-computed results can be found in the `results\update.py` script.
+All parameters used for pre-computed results can be found in the `results/update.py` script.
 
 #### Equalizing Individual Headphones
 Equalizing Sennheiser HD 650 and saving results to `my_results/HD650`:
 ```bash
-python frequency_response.py --input_dir="innerfidelity\data\onear\Sennheiser HD 650" --output_dir="my_results\HD650" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
+python frequency_response.py --input_dir="innerfidelity/data/onear/Sennheiser HD 650" --output_dir="my_results/HD650" --compensation="innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
 ```
 
 Equalizing Beyerdynamic DT 990 600 Ohm measured by Headphone.com to Headphone.com native target without saving results
 ```bash
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT 990 600 Ohm" --compensation="headphonecom\resources\headphonecom_compensation.csv" --equalize --bass_boost=4 --show_plot
+python frequency_response.py --input_dir="headphonecom/data/onear/Beyerdynamic DT 990 600 Ohm" --compensation="headphonecom/resources/headphonecom_compensation.csv" --equalize --bass_boost=4 --show_plot
 ```
 
 Equalizing Beyerdynamic DT 990 600 Ohm measured by Headphone.com to SBAF-Serious target without saving results
 ```bash
-python frequency_response.py --input_dir="headphonecom\data\onear\Beyerdynamic DT 990 600 Ohm" --compensation="headphonecom\resources\headphonecom_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
+python frequency_response.py --input_dir="headphonecom/data/onear/Beyerdynamic DT 990 600 Ohm" --compensation="headphonecom/resources/headphonecom_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
 ```
 
 #### Using Sound Signatures
@@ -486,25 +493,25 @@ Equalizing Sennheiser HD 800 to sound like Sennheiser HD 650 using pre-computed 
 oratory1990 so we'll use those measurments. Pre-computed results include 4dB of bass boost for over-ear headphones and
 therefore we need to apply bass boost of 4dB here as well.
 ```bash
-python frequency_response.py --input_dir="oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results\Sennheiser HD 800 (HD 650)" --compensation="compensation\harman_over-ear_2018_wo_bass.csv" --sound_signature="results\oratory1990\harman_over-ear_2018\Sennheiser HD 650\Sennheiser HD 650.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4
+python frequency_response.py --input_dir="oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (HD 650)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Sennheiser HD 650/Sennheiser HD 650.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4
 ```
 
 Equalizing Massdrop x Sennheiser HD 6XX to sound like AKG K701. There is no K701 measurement made by oratory1990 so
 we'll use Innerfidelity's measurement for the sound signature. The list of recommended results always points to best
 measurement so you can check there which one to use (measurement system can be found in the URL).
 ```bash
-python frequency_response.py --input_dir="oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results\Sennheiser HD 800 (K701)" --compensation="compensation\harman_over-ear_2018_wo_bass.csv" --sound_signature="results\innerfidelity\sbaf-serious\AKG K701\AKG K701.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4
+python frequency_response.py --input_dir="oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (K701)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/innerfidelity/sbaf-serious/AKG K701/AKG K701.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4
 ```
 
 Equalizing HiFiMAN HE400S to sound like Massdrop x Meze 99 Noir. HE400S is measured only by Innerfidelity so we'll point
 compensation file pointing to Innerfidelity SBAF-Serious target. Meze 99 Noir has massive natural bass boost and to
 capture that we need to relax max gain to +12dB.
 ```bash
-python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400S" --output_dir="my_results\HE400S (99 Noir)" --compensation="innerfidelity\resources\innerfidelity_compensation_sbaf-serious.csv" --sound_signature="results\oratory1990\harman_over-ear_2018\Massdrop x Meze 99 Noir\Massdrop x Meze 99 Noir.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --max_gain=8
+python frequency_response.py --input_dir="innerfidelity/data/onear/HiFiMAN HE400S" --output_dir="my_results/HE400S (99 Noir)" --compensation="innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Massdrop x Meze 99 Noir/Massdrop x Meze 99 Noir.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --max_gain=8
 ```
 
 Applying V-shaped sound signature to Audeze Mobius. First step is to create the sound signature file. Save this to
-`my_data\v.csv`:
+`my_data/v.csv`:
 ```csv
 frequency,raw
 20,4.0
@@ -516,13 +523,13 @@ Then use it by providing the path to `--sound_signature` parameter. We'll set ba
 signature already has significant bass boost. Of course it's possible to add bass boost on top of the sound signature
 file if you want even more bass.
 ```bash
-python frequency_response.py --input_dir="rtings\data\onear\Audeze Mobius" --output_dir="my_results\Audeze Mobius" --compensation="rtings\resources\rtings_compensation_avg.csv" --sound_signature="my_data\v.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=0.0
+python frequency_response.py --input_dir="rtings/data/onear/Audeze Mobius" --output_dir="my_results/Audeze Mobius" --compensation="rtings/resources/rtings_compensation_avg.csv" --sound_signature="my_data/v.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=0.0
 ```
 
 #### Plotting Measurement Data
 Viewing HiFiMAN HE400S raw microphone data
 ```bash
-python frequency_response.py --input_dir="innerfidelity\data\onear\HiFiMAN HE400S" --show_plot
+python frequency_response.py --input_dir="innerfidelity/data/onear/HiFiMAN HE400S" --show_plot
 ```
 
 
