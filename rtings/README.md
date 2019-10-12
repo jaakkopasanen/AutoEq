@@ -11,8 +11,7 @@ https://www.rtings.com/headphones/1-2/graph
 6. Add new headphones to name index `rtings/name_index.tsv`
 7. Run Rtings pipeline: `python rtings/rtings_pipeline.py`
 8. Run results update: `python results/update.py --new_only --rtings`
-9. Update recommendations: `python results/recommendations.py`
-10. Update full index: `python results/index.py`
-11. Add files to git: `git add results/rtings results/README.md results/INDEX.md rtings/links.json rtings/data`
-12. Commit: `git commit -m "New Rtings measurements with pre-computed results."`
-13. Push: `git push`
+9. Update indexes: `python results/update_indexes.py`
+10. Add files to git: `git add results/rtings results/README.md results/INDEX.md rtings/links.json rtings/data rtings/name_index.tsv`
+11. Commit: `git commit -m "New Rtings measurements with pre-computed results."`
+12. Push: `git push`
