@@ -291,8 +291,8 @@ fancy graphical user interface but instead it is used from command line.
 ### Installing
 - Download [AutoEQ zip](https://github.com/jaakkopasanen/AutoEq/archive/master.zip) and exctract to a convenient
 location. Or just git clone if you know what that means.
-- Download and install [Python3](https://www.python.org/getit/). Make sure to check
-*Install Python3 to PATH*
+- Download and install 64-bit [Python3](https://www.python.org/getit/). Make sure to check
+*Install Python 3 to PATH*
 - Install virtualenv. Run this on command prompt. Search `cmd` in Windows start menu.  
 ```bash
 pip install virtualenv
