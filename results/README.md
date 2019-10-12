@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2632 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2635 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/1Custom%20SA03)
@@ -231,6 +231,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Astro A40](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A40)
 - [Astro A40 2019](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A40%202019)
 - [Astro A50](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A50)
+- [Astro A50 Gen 4 2019](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A50%20Gen%204%202019)
 - [ASTRO Gaming A10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/ASTRO%20Gaming%20A10)
 - [ASTRO Gaming A40](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/ASTRO%20Gaming%20A40)
 - [Astrotec AM90](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Astrotec%20AM90)
@@ -653,6 +654,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Creative Sound Blaster EVO ZxR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20Sound%20Blaster%20EVO%20ZxR)
 - [Creative Sound BlasterX H5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20Sound%20BlasterX%20H5)
 - [Creative SoundBlaster EVO Zx](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Creative%20SoundBlaster%20EVO%20Zx)
+- [Creative SXFI Air](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20SXFI%20Air)
 - [Custom Art Ei.3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Custom%20Art%20Ei.3)
 - [Custom Art FIBAE 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Custom%20Art%20FIBAE%201)
 - [Custom Art FIBAE 2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Custom%20Art%20FIBAE%202)
@@ -1495,6 +1497,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Meze Empyrean (microfiber earpads)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Meze%20Empyrean%20(microfiber%20earpads))
 - [Meze Rai Penta](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Meze%20Rai%20Penta)
 - [Microsoft Surface Headphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Microsoft%20Surface%20Headphones)
+- [Mixcder E9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Mixcder%20E9)
 - [MOE SS01](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/MOE%20SS01)
 - [Monoprice 8320](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Monoprice%208320)
 - [Monoprice 8323](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Monoprice%208323)

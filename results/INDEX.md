@@ -391,6 +391,7 @@ from the same source.
 - [Astro A20](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A20) by Rtings
 - [Astro A40 2019](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A40%202019) by Rtings
 - [Astro A40](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A40) by Rtings
+- [Astro A50 Gen 4 2019](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A50%20Gen%204%202019) by Rtings
 - [Astro A50](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Astro%20A50) by Rtings
 - [ASTRO Gaming A10](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/ASTRO%20Gaming%20A10) by Reference Audio Analyzer
 - [ASTRO Gaming A40](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/ASTRO%20Gaming%20A40) by Reference Audio Analyzer
@@ -1066,6 +1067,7 @@ from the same source.
 - [Creative Sound Blaster EVO ZxR](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20Sound%20Blaster%20EVO%20ZxR) by Rtings
 - [Creative Sound BlasterX H5](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20Sound%20BlasterX%20H5) by Rtings
 - [Creative SoundBlaster EVO Zx](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Creative%20SoundBlaster%20EVO%20Zx) by Reference Audio Analyzer
+- [Creative SXFI Air](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Creative%20SXFI%20Air) by Rtings
 - [Custom Art Ei.3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Custom%20Art%20Ei.3) by Crinacle (Harman in-ear 2017-1)
 - [Custom Art Ei.3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Custom%20Art%20Ei.3) by Crinacle (Usound)
 - [Custom Art FIBAE 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Custom%20Art%20FIBAE%201) by Crinacle (Harman in-ear 2017-1)
@@ -2425,6 +2427,7 @@ from the same source.
 - [Meze Rai Penta](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Meze%20Rai%20Penta) by oratory1990 (Harman in-ear 2017-1)
 - [Meze Rai Penta](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/usound/Meze%20Rai%20Penta) by oratory1990 (Usound)
 - [Microsoft Surface Headphones](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Microsoft%20Surface%20Headphones) by Rtings
+- [Mixcder E9](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Mixcder%20E9) by Rtings
 - [MOE SS01](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/MOE%20SS01) by Innerfidelity
 - [Monoprice 8320](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Monoprice%208320) by Innerfidelity
 - [Monoprice 8320](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Monoprice%208320) by Reference Audio Analyzer
