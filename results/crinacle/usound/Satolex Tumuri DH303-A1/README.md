@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Satolex%20Tumuri%20DH303-A1/Satolex%20Tumuri%20DH303-A1.png)
+![](./Satolex%20Tumuri%20DH303-A1.png)

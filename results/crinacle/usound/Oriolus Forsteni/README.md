@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.6 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Oriolus%20Forsteni/Oriolus%20Forsteni.png)
+![](./Oriolus%20Forsteni.png)

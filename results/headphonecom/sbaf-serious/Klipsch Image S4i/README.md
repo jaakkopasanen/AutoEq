@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.0 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Klipsch%20Image%20S4i/Klipsch%20Image%20S4i.png)
+![](./Klipsch%20Image%20S4i.png)

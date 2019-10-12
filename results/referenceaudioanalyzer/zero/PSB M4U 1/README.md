@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.4 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/PSB%20M4U%201/PSB%20M4U%201.png)
+![](./PSB%20M4U%201.png)

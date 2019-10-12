@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -3.1 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Sony%20MH750/Sony%20MH750.png)
+![](./Sony%20MH750.png)

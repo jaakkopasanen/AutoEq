@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -3.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Ambient%20Acoustics%20AM7%20Blue/Ambient%20Acoustics%20AM7%20Blue.png)
+![](./Ambient%20Acoustics%20AM7%20Blue.png)

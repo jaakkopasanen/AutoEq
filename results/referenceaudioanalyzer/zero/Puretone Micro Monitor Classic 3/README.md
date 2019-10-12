@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.3 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Puretone%20Micro%20Monitor%20Classic%203/Puretone%20Micro%20Monitor%20Classic%203.png)
+![](./Puretone%20Micro%20Monitor%20Classic%203.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.3 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Thinksound%20ts01%20-%20Silver%20Cherry/Thinksound%20ts01%20-%20Silver%20Cherry.png)
+![](./Thinksound%20ts01%20-%20Silver%20Cherry.png)

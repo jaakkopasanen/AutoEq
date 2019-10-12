@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.2 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/FLC%20Technologies%20FLC8%20Bk%20Gy%20Bk/FLC%20Technologies%20FLC8%20Bk%20Gy%20Bk.png)
+![](./FLC%20Technologies%20FLC8%20Bk%20Gy%20Bk.png)

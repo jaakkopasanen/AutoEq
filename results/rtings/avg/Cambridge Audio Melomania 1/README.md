@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -7.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Cambridge%20Audio%20Melomania%201/Cambridge%20Audio%20Melomania%201.png)
+![](./Cambridge%20Audio%20Melomania%201.png)

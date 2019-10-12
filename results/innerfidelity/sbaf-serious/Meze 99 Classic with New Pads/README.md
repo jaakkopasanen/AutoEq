@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Meze%2099%20Classic%20with%20New%20Pads/Meze%2099%20Classic%20with%20New%20Pads.png)
+![](./Meze%2099%20Classic%20with%20New%20Pads.png)

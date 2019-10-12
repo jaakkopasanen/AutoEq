@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.2 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/AUKEY%20Latitude/AUKEY%20Latitude.png)
+![](./AUKEY%20Latitude.png)

@@ -36,4 +36,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.0 dB   |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Yellow/Torque%20t402v%20OverEar%20Yellow.png)
+![](./Torque%20t402v%20OverEar%20Yellow.png)

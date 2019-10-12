@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.1 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Bose%20QuietComfort%2035%20Wireless%20Active/Bose%20QuietComfort%2035%20Wireless%20Active.png)
+![](./Bose%20QuietComfort%2035%20Wireless%20Active.png)

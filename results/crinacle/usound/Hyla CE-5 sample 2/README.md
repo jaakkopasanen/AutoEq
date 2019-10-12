@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Hyla%20CE-5%20sample%202/Hyla%20CE-5%20sample%202.png)
+![](./Hyla%20CE-5%20sample%202.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -8.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/qdc%20Anole%20V6%20Bass%20Mids/qdc%20Anole%20V6%20Bass%20Mids.png)
+![](./qdc%20Anole%20V6%20Bass%20Mids.png)

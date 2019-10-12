@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Audio%20Technica%20ATH-SPORT7TW/Audio%20Technica%20ATH-SPORT7TW.png)
+![](./Audio%20Technica%20ATH-SPORT7TW.png)

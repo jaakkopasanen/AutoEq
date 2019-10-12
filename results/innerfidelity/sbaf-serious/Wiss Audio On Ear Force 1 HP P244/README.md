@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Wiss%20Audio%20On%20Ear%20Force%201%20HP%20P244/Wiss%20Audio%20On%20Ear%20Force%201%20HP%20P244.png)
+![](./Wiss%20Audio%20On%20Ear%20Force%201%20HP%20P244.png)

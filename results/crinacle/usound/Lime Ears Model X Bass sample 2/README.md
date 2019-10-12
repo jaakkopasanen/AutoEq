@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.1 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Lime%20Ears%20Model%20X%20Bass%20sample%202/Lime%20Ears%20Model%20X%20Bass%20sample%202.png)
+![](./Lime%20Ears%20Model%20X%20Bass%20sample%202.png)

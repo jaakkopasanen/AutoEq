@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Monster%20Beats%20by%20Dr%20Dre%20Solo%20HD/Monster%20Beats%20by%20Dr%20Dre%20Solo%20HD.png)
+![](./Monster%20Beats%20by%20Dr%20Dre%20Solo%20HD.png)

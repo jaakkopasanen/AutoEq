@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.7 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/BGVP%20DMG%20(foam%20eartips)/BGVP%20DMG%20(foam%20eartips).png)
+![](./BGVP%20DMG%20(foam%20eartips).png)

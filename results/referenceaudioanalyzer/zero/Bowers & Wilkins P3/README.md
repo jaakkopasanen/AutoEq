@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 1.0 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Bowers%20&%20Wilkins%20P3/Bowers%20&%20Wilkins%20P3.png)
+![](./Bowers%20&%20Wilkins%20P3.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -3.2 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Ocharaku%20Flat-4%20Kaede%20Type%202/Ocharaku%20Flat-4%20Kaede%20Type%202.png)
+![](./Ocharaku%20Flat-4%20Kaede%20Type%202.png)

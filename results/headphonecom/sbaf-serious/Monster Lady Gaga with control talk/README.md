@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Monster%20Lady%20Gaga%20with%20control%20talk/Monster%20Lady%20Gaga%20with%20control%20talk.png)
+![](./Monster%20Lady%20Gaga%20with%20control%20talk.png)

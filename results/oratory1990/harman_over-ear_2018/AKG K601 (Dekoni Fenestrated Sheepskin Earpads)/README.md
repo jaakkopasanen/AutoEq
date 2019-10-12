@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -5.2 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/AKG%20K601%20(Dekoni%20Fenestrated%20Sheepskin%20Earpads)/AKG%20K601%20(Dekoni%20Fenestrated%20Sheepskin%20Earpads).png)
+![](./AKG%20K601%20(Dekoni%20Fenestrated%20Sheepskin%20Earpads).png)

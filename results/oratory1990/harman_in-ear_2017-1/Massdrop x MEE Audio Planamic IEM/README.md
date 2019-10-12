@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -16.6 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Massdrop%20x%20MEE%20Audio%20Planamic%20IEM/Massdrop%20x%20MEE%20Audio%20Planamic%20IEM.png)
+![](./Massdrop%20x%20MEE%20Audio%20Planamic%20IEM.png)

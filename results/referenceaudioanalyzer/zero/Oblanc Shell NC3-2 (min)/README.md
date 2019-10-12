@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.4 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Oblanc%20Shell%20NC3-2%20(min)/Oblanc%20Shell%20NC3-2%20(min).png)
+![](./Oblanc%20Shell%20NC3-2%20(min).png)

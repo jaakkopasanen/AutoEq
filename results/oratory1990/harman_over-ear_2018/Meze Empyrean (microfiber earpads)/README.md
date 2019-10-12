@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -9.1 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Meze%20Empyrean%20(microfiber%20earpads)/Meze%20Empyrean%20(microfiber%20earpads).png)
+![](./Meze%20Empyrean%20(microfiber%20earpads).png)

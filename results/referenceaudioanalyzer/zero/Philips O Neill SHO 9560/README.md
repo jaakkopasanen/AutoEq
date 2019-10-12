@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -3.0 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Philips%20O%20Neill%20SHO%209560/Philips%20O%20Neill%20SHO%209560.png)
+![](./Philips%20O%20Neill%20SHO%209560.png)

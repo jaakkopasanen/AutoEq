@@ -36,4 +36,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Klipsch%20Image%20X10/Klipsch%20Image%20X10.png)
+![](./Klipsch%20Image%20X10.png)

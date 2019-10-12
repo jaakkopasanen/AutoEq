@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -21.0 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Oluv%20x%20EarFun%20Free/Oluv%20x%20EarFun%20Free.png)
+![](./Oluv%20x%20EarFun%20Free.png)

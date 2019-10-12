@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.3 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Ferrari%20Cavallino%20T350/Ferrari%20Cavallino%20T350.png)
+![](./Ferrari%20Cavallino%20T350.png)

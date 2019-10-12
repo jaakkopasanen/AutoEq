@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -16.0 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm%20(Dekoni%20Hybrid%20Earpads)/Beyerdynamic%20DT%20770%20250%20Ohm%20(Dekoni%20Hybrid%20Earpads).png)
+![](./Beyerdynamic%20DT%20770%20250%20Ohm%20(Dekoni%20Hybrid%20Earpads).png)

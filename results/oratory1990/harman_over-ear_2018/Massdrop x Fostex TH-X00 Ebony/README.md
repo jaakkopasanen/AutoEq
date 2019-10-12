@@ -36,4 +36,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -3.1 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Fostex%20TH-X00%20Ebony/Massdrop%20x%20Fostex%20TH-X00%20Ebony.png)
+![](./Massdrop%20x%20Fostex%20TH-X00%20Ebony.png)

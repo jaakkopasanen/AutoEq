@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.4 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Massdrop%20x%20Beyerdynamic%20DT%20177X%20Go%20(Velours%20Earpads)/Massdrop%20x%20Beyerdynamic%20DT%20177X%20Go%20(Velours%20Earpads).png)
+![](./Massdrop%20x%20Beyerdynamic%20DT%20177X%20Go%20(Velours%20Earpads).png)

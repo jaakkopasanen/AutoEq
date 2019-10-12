@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Satolex%20Tubomi%20DH302-A1Bs/Satolex%20Tubomi%20DH302-A1Bs.png)
+![](./Satolex%20Tubomi%20DH302-A1Bs.png)

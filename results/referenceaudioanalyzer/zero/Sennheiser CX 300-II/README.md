@@ -35,4 +35,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.7 dB   |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Sennheiser%20CX%20300-II/Sennheiser%20CX%20300-II.png)
+![](./Sennheiser%20CX%20300-II.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -10.8 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201990%20(Analytic%20Earpads)/Beyerdynamic%20DT%201990%20(Analytic%20Earpads).png)
+![](./Beyerdynamic%20DT%201990%20(Analytic%20Earpads).png)

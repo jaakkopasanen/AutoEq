@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.1 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Anker%20Soundcore%20Spirit%20X/Anker%20Soundcore%20Spirit%20X.png)
+![](./Anker%20Soundcore%20Spirit%20X.png)

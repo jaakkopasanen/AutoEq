@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -19.1 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audio-Technica%20ATH-M50x%20(Massdrop%20Velours%20Earpads)/Audio-Technica%20ATH-M50x%20(Massdrop%20Velours%20Earpads).png)
+![](./Audio-Technica%20ATH-M50x%20(Massdrop%20Velours%20Earpads).png)

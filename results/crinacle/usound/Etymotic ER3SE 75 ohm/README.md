@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -4.7 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Etymotic%20ER3SE%2075%20ohm/Etymotic%20ER3SE%2075%20ohm.png)
+![](./Etymotic%20ER3SE%2075%20ohm.png)

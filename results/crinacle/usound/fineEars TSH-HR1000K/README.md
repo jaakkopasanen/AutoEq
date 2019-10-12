@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -4.9 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/fineEars%20TSH-HR1000K/fineEars%20TSH-HR1000K.png)
+![](./fineEars%20TSH-HR1000K.png)

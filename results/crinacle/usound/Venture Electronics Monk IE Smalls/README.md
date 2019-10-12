@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.2 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Venture%20Electronics%20Monk%20IE%20Smalls/Venture%20Electronics%20Monk%20IE%20Smalls.png)
+![](./Venture%20Electronics%20Monk%20IE%20Smalls.png)

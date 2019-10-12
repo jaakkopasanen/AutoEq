@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -7.9 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Hidition%20Viento%20Bass%20Mids/Hidition%20Viento%20Bass%20Mids.png)
+![](./Hidition%20Viento%20Bass%20Mids.png)

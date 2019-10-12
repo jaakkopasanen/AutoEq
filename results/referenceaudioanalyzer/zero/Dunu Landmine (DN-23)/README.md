@@ -33,4 +33,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.1 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Dunu%20Landmine%20(DN-23)/Dunu%20Landmine%20(DN-23).png)
+![](./Dunu%20Landmine%20(DN-23).png)

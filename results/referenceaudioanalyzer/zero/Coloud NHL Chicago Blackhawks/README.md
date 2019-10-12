@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.3 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Coloud%20NHL%20Chicago%20Blackhawks/Coloud%20NHL%20Chicago%20Blackhawks.png)
+![](./Coloud%20NHL%20Chicago%20Blackhawks.png)

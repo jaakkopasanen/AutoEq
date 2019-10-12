@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -18.7 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/JH%20Audio%20Angie%202%20o%E2%80%99clock/JH%20Audio%20Angie%202%20o%E2%80%99clock.png)
+![](./JH%20Audio%20Angie%202%20o%E2%80%99clock.png)

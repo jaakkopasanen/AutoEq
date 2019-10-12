@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.1 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Woodees%20iESW100L%2024K%20Blues/Woodees%20iESW100L%2024K%20Blues.png)
+![](./Woodees%20iESW100L%2024K%20Blues.png)

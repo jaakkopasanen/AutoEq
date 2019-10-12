@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.5 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Altec%20Lansing%20True%20Evo/Altec%20Lansing%20True%20Evo.png)
+![](./Altec%20Lansing%20True%20Evo.png)

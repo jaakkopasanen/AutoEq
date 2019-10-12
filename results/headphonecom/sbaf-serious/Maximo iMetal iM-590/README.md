@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.3 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Maximo%20iMetal%20iM-590/Maximo%20iMetal%20iM-590.png)
+![](./Maximo%20iMetal%20iM-590.png)

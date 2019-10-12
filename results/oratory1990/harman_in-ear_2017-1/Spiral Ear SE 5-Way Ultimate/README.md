@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -27.7 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Spiral%20Ear%20SE%205-Way%20Ultimate/Spiral%20Ear%20SE%205-Way%20Ultimate.png)
+![](./Spiral%20Ear%20SE%205-Way%20Ultimate.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -6.6 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Focusrite%20HP60%20(Scarlett%20Studio)/Focusrite%20HP60%20(Scarlett%20Studio).png)
+![](./Focusrite%20HP60%20(Scarlett%20Studio).png)

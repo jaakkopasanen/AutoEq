@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -18.9 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Kumitate%20KL-Focus%20Max%20Bass/Kumitate%20KL-Focus%20Max%20Bass.png)
+![](./Kumitate%20KL-Focus%20Max%20Bass.png)

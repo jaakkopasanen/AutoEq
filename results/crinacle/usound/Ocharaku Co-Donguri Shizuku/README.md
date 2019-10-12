@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Ocharaku%20Co-Donguri%20Shizuku/Ocharaku%20Co-Donguri%20Shizuku.png)
+![](./Ocharaku%20Co-Donguri%20Shizuku.png)

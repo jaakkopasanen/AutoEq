@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -39.9 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/64%20Audio%20A12t%20custom%20sample%202/64%20Audio%20A12t%20custom%20sample%202.png)
+![](./64%20Audio%20A12t%20custom%20sample%202.png)

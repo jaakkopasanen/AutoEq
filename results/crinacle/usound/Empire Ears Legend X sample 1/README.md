@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -5.6 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Empire%20Ears%20Legend%20X%20sample%201/Empire%20Ears%20Legend%20X%20sample%201.png)
+![](./Empire%20Ears%20Legend%20X%20sample%201.png)

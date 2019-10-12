@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -14.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Lime%20Ears%20Model%20X%20Bass%20sample%201/Lime%20Ears%20Model%20X%20Bass%20sample%201.png)
+![](./Lime%20Ears%20Model%20X%20Bass%20sample%201.png)

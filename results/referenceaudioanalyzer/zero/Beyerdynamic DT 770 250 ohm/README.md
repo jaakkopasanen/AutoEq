@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.7 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Beyerdynamic%20DT%20770%20250%20ohm/Beyerdynamic%20DT%20770%20250%20ohm.png)
+![](./Beyerdynamic%20DT%20770%20250%20ohm.png)

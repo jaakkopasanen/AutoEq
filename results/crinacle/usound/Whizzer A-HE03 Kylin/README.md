@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -3.6 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Whizzer%20A-HE03%20Kylin/Whizzer%20A-HE03%20Kylin.png)
+![](./Whizzer%20A-HE03%20Kylin.png)

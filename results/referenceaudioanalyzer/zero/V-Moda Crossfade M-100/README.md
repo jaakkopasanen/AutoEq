@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/V-Moda%20Crossfade%20M-100/V-Moda%20Crossfade%20M-100.png)
+![](./V-Moda%20Crossfade%20M-100.png)

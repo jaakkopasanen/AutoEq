@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20580%20(HD600%20headband)/Sennheiser%20HD%20580%20(HD600%20headband).png)
+![](./Sennheiser%20HD%20580%20(HD600%20headband).png)

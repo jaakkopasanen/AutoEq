@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.9 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/E-Mu%20Teak%20Rosewood%20Cups/E-Mu%20Teak%20Rosewood%20Cups.png)
+![](./E-Mu%20Teak%20Rosewood%20Cups.png)

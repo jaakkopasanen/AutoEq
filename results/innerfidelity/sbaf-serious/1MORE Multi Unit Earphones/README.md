@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -3.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/1MORE%20Multi%20Unit%20Earphones/1MORE%20Multi%20Unit%20Earphones.png)
+![](./1MORE%20Multi%20Unit%20Earphones.png)

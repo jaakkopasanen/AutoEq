@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -4.7 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Enigmacoustics%20Dharma%20Production%202015/Enigmacoustics%20Dharma%20Production%202015.png)
+![](./Enigmacoustics%20Dharma%20Production%202015.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -4.8 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Moondrop%20Kanas%20Pro/Moondrop%20Kanas%20Pro.png)
+![](./Moondrop%20Kanas%20Pro.png)

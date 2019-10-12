@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.3 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/JBL%20Synchros%20S500%20(on)/JBL%20Synchros%20S500%20(on).png)
+![](./JBL%20Synchros%20S500%20(on).png)

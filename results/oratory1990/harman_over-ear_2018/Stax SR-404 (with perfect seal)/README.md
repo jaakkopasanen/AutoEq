@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -10.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Stax%20SR-404%20(with%20perfect%20seal)/Stax%20SR-404%20(with%20perfect%20seal).png)
+![](./Stax%20SR-404%20(with%20perfect%20seal).png)

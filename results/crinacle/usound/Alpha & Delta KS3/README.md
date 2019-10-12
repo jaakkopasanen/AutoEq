@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Alpha%20&%20Delta%20KS3/Alpha%20&%20Delta%20KS3.png)
+![](./Alpha%20&%20Delta%20KS3.png)

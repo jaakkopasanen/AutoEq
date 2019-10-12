@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -16.7 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Unique%20Melody%203DD-Ti%20Open/Unique%20Melody%203DD-Ti%20Open.png)
+![](./Unique%20Melody%203DD-Ti%20Open.png)

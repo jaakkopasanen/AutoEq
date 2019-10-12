@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Polk%20Audio%20UltraFocus%208000%20NC/Polk%20Audio%20UltraFocus%208000%20NC.png)
+![](./Polk%20Audio%20UltraFocus%208000%20NC.png)

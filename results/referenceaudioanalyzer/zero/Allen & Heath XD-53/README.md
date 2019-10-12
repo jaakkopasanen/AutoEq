@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.9 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Allen%20&%20Heath%20XD-53/Allen%20&%20Heath%20XD-53.png)
+![](./Allen%20&%20Heath%20XD-53.png)

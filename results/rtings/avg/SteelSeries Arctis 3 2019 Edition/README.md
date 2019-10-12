@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.1 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/SteelSeries%20Arctis%203%202019%20Edition/SteelSeries%20Arctis%203%202019%20Edition.png)
+![](./SteelSeries%20Arctis%203%202019%20Edition.png)

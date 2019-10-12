@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Symphonium%20Audio%20Mirage/Symphonium%20Audio%20Mirage.png)
+![](./Symphonium%20Audio%20Mirage.png)

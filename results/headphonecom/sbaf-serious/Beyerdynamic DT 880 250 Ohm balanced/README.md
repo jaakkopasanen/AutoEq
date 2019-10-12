@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.5 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20DT%20880%20250%20Ohm%20balanced/Beyerdynamic%20DT%20880%20250%20Ohm%20balanced.png)
+![](./Beyerdynamic%20DT%20880%20250%20Ohm%20balanced.png)

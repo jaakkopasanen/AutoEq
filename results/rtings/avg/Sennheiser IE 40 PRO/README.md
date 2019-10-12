@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -6.1 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Sennheiser%20IE%2040%20PRO/Sennheiser%20IE%2040%20PRO.png)
+![](./Sennheiser%20IE%2040%20PRO.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -9.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Venture%20Electronics%20Duke%20custom/Venture%20Electronics%20Duke%20custom.png)
+![](./Venture%20Electronics%20Duke%20custom.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.4 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/MrSpeakers%20Aeon%20Flow%20Closed%20w%20Filters%20snACXB168s/MrSpeakers%20Aeon%20Flow%20Closed%20w%20Filters%20snACXB168s.png)
+![](./MrSpeakers%20Aeon%20Flow%20Closed%20w%20Filters%20snACXB168s.png)

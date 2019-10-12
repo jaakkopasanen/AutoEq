@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.1 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/InEar%20ProPhile-8%20Bass%20Treble/InEar%20ProPhile-8%20Bass%20Treble.png)
+![](./InEar%20ProPhile-8%20Bass%20Treble.png)

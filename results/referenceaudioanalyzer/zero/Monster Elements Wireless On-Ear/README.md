@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Monster%20Elements%20Wireless%20On-Ear/Monster%20Elements%20Wireless%20On-Ear.png)
+![](./Monster%20Elements%20Wireless%20On-Ear.png)

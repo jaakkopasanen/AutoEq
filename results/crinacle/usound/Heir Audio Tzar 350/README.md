@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -3.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Heir%20Audio%20Tzar%20350/Heir%20Audio%20Tzar%20350.png)
+![](./Heir%20Audio%20Tzar%20350.png)

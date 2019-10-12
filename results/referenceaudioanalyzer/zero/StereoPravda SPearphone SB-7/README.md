@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.1 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/StereoPravda%20SPearphone%20SB-7/StereoPravda%20SPearphone%20SB-7.png)
+![](./StereoPravda%20SPearphone%20SB-7.png)

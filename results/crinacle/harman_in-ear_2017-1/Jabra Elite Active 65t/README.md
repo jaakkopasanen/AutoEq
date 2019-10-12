@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.8 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Jabra%20Elite%20Active%2065t/Jabra%20Elite%20Active%2065t.png)
+![](./Jabra%20Elite%20Active%2065t.png)

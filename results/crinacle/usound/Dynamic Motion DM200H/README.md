@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -4.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Dynamic%20Motion%20DM200H/Dynamic%20Motion%20DM200H.png)
+![](./Dynamic%20Motion%20DM200H.png)

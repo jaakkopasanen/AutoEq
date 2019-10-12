@@ -35,4 +35,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.2 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/64%20Audio%201964%20Ears%20V2/64%20Audio%201964%20Ears%20V2.png)
+![](./64%20Audio%201964%20Ears%20V2.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -17.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Tin%20Audio%20P1%20(front%20vent%20sealed)/Tin%20Audio%20P1%20(front%20vent%20sealed).png)
+![](./Tin%20Audio%20P1%20(front%20vent%20sealed).png)

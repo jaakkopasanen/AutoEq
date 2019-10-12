@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.0 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9i/Bang%20&%20Olufsen%20Beoplay%20H9i.png)
+![](./Bang%20&%20Olufsen%20Beoplay%20H9i.png)

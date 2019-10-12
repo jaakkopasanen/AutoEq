@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -3.0 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Ultimate%20Ears%20TripleFi%2010/Ultimate%20Ears%20TripleFi%2010.png)
+![](./Ultimate%20Ears%20TripleFi%2010.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -26.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Audeze%20iSine%2010%20sample%202/Audeze%20iSine%2010%20sample%202.png)
+![](./Audeze%20iSine%2010%20sample%202.png)

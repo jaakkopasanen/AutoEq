@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -7.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Stax%20SR-L300%20LTD%20(L700%20Earpads)/Stax%20SR-L300%20LTD%20(L700%20Earpads).png)
+![](./Stax%20SR-L300%20LTD%20(L700%20Earpads).png)

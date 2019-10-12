@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.3 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/SENSO%20ActivBuds%20S-250/SENSO%20ActivBuds%20S-250.png)
+![](./SENSO%20ActivBuds%20S-250.png)

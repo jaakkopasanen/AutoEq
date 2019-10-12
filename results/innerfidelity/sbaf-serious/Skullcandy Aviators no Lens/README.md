@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.7 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Skullcandy%20Aviators%20no%20Lens/Skullcandy%20Aviators%20no%20Lens.png)
+![](./Skullcandy%20Aviators%20no%20Lens.png)

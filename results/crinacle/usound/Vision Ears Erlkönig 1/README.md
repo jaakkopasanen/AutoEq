@@ -36,4 +36,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.2 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Vision%20Ears%20Erlk%C3%B6nig%201/Vision%20Ears%20Erlk%C3%B6nig%201.png)
+![](./Vision%20Ears%20Erlk%C3%B6nig%201.png)

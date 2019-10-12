@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.2 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Kumitate%20KL-Focus%20Min%20Bass/Kumitate%20KL-Focus%20Min%20Bass.png)
+![](./Kumitate%20KL-Focus%20Min%20Bass.png)

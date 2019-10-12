@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -25.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_in-ear_2017-1/Tin%20Audio%20T2%20(Foam%20Eartips)/Tin%20Audio%20T2%20(Foam%20Eartips).png)
+![](./Tin%20Audio%20T2%20(Foam%20Eartips).png)

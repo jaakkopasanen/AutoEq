@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -14.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/usound/Samsung%20EO-IG955%20(AKG)/Samsung%20EO-IG955%20(AKG).png)
+![](./Samsung%20EO-IG955%20(AKG).png)

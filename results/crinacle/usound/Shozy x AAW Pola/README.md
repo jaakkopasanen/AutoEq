@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -13.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Shozy%20x%20AAW%20Pola/Shozy%20x%20AAW%20Pola.png)
+![](./Shozy%20x%20AAW%20Pola.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -11.8 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Astell%20&%20Kern%20T8iE%20Mk1/Astell%20&%20Kern%20T8iE%20Mk1.png)
+![](./Astell%20&%20Kern%20T8iE%20Mk1.png)

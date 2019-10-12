@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -8.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Meze%2099%20Classics%20(Brainwavz%20Memory%20Foam%20Hybrid%20Earpads)/Meze%2099%20Classics%20(Brainwavz%20Memory%20Foam%20Hybrid%20Earpads).png)
+![](./Meze%2099%20Classics%20(Brainwavz%20Memory%20Foam%20Hybrid%20Earpads).png)

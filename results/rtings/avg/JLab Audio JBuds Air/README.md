@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.3 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/JLab%20Audio%20JBuds%20Air/JLab%20Audio%20JBuds%20Air.png)
+![](./JLab%20Audio%20JBuds%20Air.png)

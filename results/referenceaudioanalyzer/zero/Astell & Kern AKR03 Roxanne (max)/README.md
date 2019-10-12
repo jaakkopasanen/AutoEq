@@ -36,4 +36,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -0.3 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Astell%20&%20Kern%20AKR03%20Roxanne%20(max)/Astell%20&%20Kern%20AKR03%20Roxanne%20(max).png)
+![](./Astell%20&%20Kern%20AKR03%20Roxanne%20(max).png)

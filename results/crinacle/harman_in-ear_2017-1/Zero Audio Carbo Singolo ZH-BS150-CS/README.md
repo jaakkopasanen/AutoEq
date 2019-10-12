@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.3 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Zero%20Audio%20Carbo%20Singolo%20ZH-BS150-CS/Zero%20Audio%20Carbo%20Singolo%20ZH-BS150-CS.png)
+![](./Zero%20Audio%20Carbo%20Singolo%20ZH-BS150-CS.png)

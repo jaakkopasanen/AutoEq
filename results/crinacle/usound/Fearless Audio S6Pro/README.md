@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.8 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Fearless%20Audio%20S6Pro/Fearless%20Audio%20S6Pro.png)
+![](./Fearless%20Audio%20S6Pro.png)

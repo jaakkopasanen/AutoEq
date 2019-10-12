@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -4.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/headphonecom/sbaf-serious/Beyerdynamic%20T90%20250%20Ohm/Beyerdynamic%20T90%20250%20Ohm.png)
+![](./Beyerdynamic%20T90%20250%20Ohm.png)

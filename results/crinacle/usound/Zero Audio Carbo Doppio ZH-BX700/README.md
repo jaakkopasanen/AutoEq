@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.1 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Zero%20Audio%20Carbo%20Doppio%20ZH-BX700/Zero%20Audio%20Carbo%20Doppio%20ZH-BX700.png)
+![](./Zero%20Audio%20Carbo%20Doppio%20ZH-BX700.png)

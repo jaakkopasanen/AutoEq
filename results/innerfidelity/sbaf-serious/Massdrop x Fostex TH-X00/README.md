@@ -32,4 +32,4 @@ these parameters. The first 5 filters can be used independently.
 | Peaking | 6743 Hz  | 7.26 | 2.2 dB  |
 | Peaking | 10269 Hz | 5.47 | -1.1 dB |
 
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Massdrop%20x%20Fostex%20TH-X00/Massdrop%20x%20Fostex%20TH-X00.png)
+![](./Massdrop%20x%20Fostex%20TH-X00.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -6.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Audio-Technica%20ATH-W1000%20Sovereign/Audio-Technica%20ATH-W1000%20Sovereign.png)
+![](./Audio-Technica%20ATH-W1000%20Sovereign.png)

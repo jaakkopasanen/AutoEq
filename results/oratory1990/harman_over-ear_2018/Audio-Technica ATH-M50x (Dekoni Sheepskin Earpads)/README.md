@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -12.8 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Audio-Technica%20ATH-M50x%20(Dekoni%20Sheepskin%20Earpads)/Audio-Technica%20ATH-M50x%20(Dekoni%20Sheepskin%20Earpads).png)
+![](./Audio-Technica%20ATH-M50x%20(Dekoni%20Sheepskin%20Earpads).png)

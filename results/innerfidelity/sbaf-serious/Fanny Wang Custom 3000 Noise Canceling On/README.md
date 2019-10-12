@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -1.9 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Fanny%20Wang%20Custom%203000%20Noise%20Canceling%20On/Fanny%20Wang%20Custom%203000%20Noise%20Canceling%20On.png)
+![](./Fanny%20Wang%20Custom%203000%20Noise%20Canceling%20On.png)

@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -5.8 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/harman_in-ear_2017-1/Lear%20NS-U1%20NS%20On/Lear%20NS-U1%20NS%20On.png)
+![](./Lear%20NS-U1%20NS%20On.png)

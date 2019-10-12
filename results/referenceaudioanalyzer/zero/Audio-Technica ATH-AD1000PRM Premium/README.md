@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -2.0 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/referenceaudioanalyzer/zero/Audio-Technica%20ATH-AD1000PRM%20Premium/Audio-Technica%20ATH-AD1000PRM%20Premium.png)
+![](./Audio-Technica%20ATH-AD1000PRM%20Premium.png)

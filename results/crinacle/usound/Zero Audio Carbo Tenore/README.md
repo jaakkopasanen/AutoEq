@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -10.0 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Zero%20Audio%20Carbo%20Tenore/Zero%20Audio%20Carbo%20Tenore.png)
+![](./Zero%20Audio%20Carbo%20Tenore.png)

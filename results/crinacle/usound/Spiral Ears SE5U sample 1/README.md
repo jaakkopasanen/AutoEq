@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -8.5 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/Spiral%20Ears%20SE5U%20sample%201/Spiral%20Ears%20SE5U%20sample%201.png)
+![](./Spiral%20Ears%20SE5U%20sample%201.png)

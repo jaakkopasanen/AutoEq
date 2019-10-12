@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -4.4 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/rtings/avg/Under%20Armour%20True%20Wireless%20Flash/Under%20Armour%20True%20Wireless%20Flash.png)
+![](./Under%20Armour%20True%20Wireless%20Flash.png)

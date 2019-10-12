@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.8 dB  |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/innerfidelity/sbaf-serious/Grado%20SR225i%20%20Bowls%20Tape%20Mod/Grado%20SR225i%20%20Bowls%20Tape%20Mod.png)
+![](./Grado%20SR225i%20%20Bowls%20Tape%20Mod.png)

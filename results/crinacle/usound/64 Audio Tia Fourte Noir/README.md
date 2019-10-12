@@ -36,4 +36,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -8.6 dB |
 
 ### Graphs
-![](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/crinacle/usound/64%20Audio%20Tia%20Fourte%20Noir/64%20Audio%20Tia%20Fourte%20Noir.png)
+![](./64%20Audio%20Tia%20Fourte%20Noir.png)
