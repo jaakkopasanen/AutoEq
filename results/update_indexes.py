@@ -201,7 +201,7 @@ def get_graphic_eqs(files):
 def main():
     write_recommendations()
     write_full_index()
-    write_hesuvi_index()
+    #write_hesuvi_index()
 
 
 if __name__ == '__main__':
