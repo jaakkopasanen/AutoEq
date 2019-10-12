@@ -1751,8 +1751,10 @@ class FrequencyResponse:
         arg_parser.add_argument('--fixed_band_eq', action='store_true',
                                 help='Will produce fixed band eq settings if this parameter exists, no value needed.')
         arg_parser.add_argument('--fc', type=str, help='Comma separated list of center frequencies for fixed band eq.')
-        arg_parser.add_argument('--q', type=str, help='Comma separated list of Q values for fixed band eq. If only one '
-                                                      'value is passed it is used for all bands.')
+        arg_parser.add_argument('--q', type=str,
+                                help='Comma separated list of Q values for fixed band eq. If only one '
+                                     'value is passed it is used for all bands. Q value can be '
+                                     'calculated from bandwidth in N octaves by Q = 2^(N/2)/(2^N-1).')
         arg_parser.add_argument('--ten_band_eq', action='store_true',
                                 help='Shortcut parameter for activating standard ten band eq optimization.')
         arg_parser.add_argument('--max_filters', type=str, default=argparse.SUPPRESS,

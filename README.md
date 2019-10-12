@@ -377,7 +377,9 @@ optional arguments:
   --fc FC               Comma separated list of center frequencies for fixed
                         band eq.
   --q Q                 Comma separated list of Q values for fixed band eq. If
-                        only one value is passed it is used for all bands.
+                        only one value is passed it is used for all bands. Q
+                        value can be calculated from bandwidth in N octaves by
+                        Q = 2^(N/2)/(2^N-1)
   --ten_band_eq         Shortcut parameter for activating standard ten band eq
                         optimization.
   --max_filters MAX_FILTERS
