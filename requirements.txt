@@ -6,7 +6,7 @@ scipy
 numpy
 PyPDF2
 ghostscript
-tensorflow<1.15.0
+tensorflow
 tabulate
 flask
 gevent

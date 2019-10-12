@@ -14,13 +14,15 @@ import numpy as np
 from glob import glob
 import urllib
 from warnings import warn
-import tensorflow as tf
 from time import time
 from tabulate import tabulate
 from PIL import Image
 import re
 import biquad
 import warnings
+import tensorflow.compat.v1 as tf
+
+tf.disable_v2_behavior()
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_F_MIN = 20
