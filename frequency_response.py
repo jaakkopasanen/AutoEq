@@ -20,8 +20,9 @@ from PIL import Image
 import re
 import biquad
 import warnings
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tensorflow.compat.v1 as tf
-
+tf.get_logger().setLevel('ERROR')
 tf.disable_v2_behavior()
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
@@ -153,31 +154,6 @@ class FrequencyResponse:
               equalized_smoothed=True,
               target=True):
         """Resets data."""
-        reset_data = []
-        if raw and len(self.raw):
-            reset_data.append('raw')
-        if smoothed and len(self.smoothed):
-            reset_data.append('smoothed')
-        if error and len(self.error):
-            reset_data.append('error')
-        if error_smoothed and len(self.error_smoothed):
-            reset_data.append('error_smoothed')
-        if equalization and len(self.equalization):
-            reset_data.append('equalization')
-        if parametric_eq and len(self.parametric_eq):
-            reset_data.append('parametric_eq')
-        if fixed_band_eq and len(self.fixed_band_eq):
-            reset_data.append('fixed_band_eq')
-        if equalized_raw and len(self.equalized_raw):
-            reset_data.append('equalized_raw')
-        if equalized_smoothed and len(self.equalized_smoothed):
-            reset_data.append('equalized_smoothed')
-        if target and len(self.target):
-            reset_data.append('target')
-        if len(reset_data):
-            warn('Resetting data of "{}". These need to be regenerated if they are still needed!'.format(
-                '", "'.join(reset_data)
-            ))
         if raw:
             self.raw = self._init_data(None)
         if smoothed:
