@@ -182,20 +182,20 @@ def get_graphic_eqs(files):
     return data
 
 
-def write_hesuvi_index():
-    geq = dict()
-    geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'zero', '*', '* GraphicEQ.txt'))))
-    geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'headphonecom', 'sbaf-serious', '*', '* GraphicEQ.txt'))))
-    geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'rtings', 'avg', '*', '* GraphicEQ.txt'))))
-    geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'innerfidelity', 'sbaf-serious', '*', '* GraphicEQ.txt'))))
-    geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'crinacle', 'usound', '*', '* GraphicEQ.txt'))))
-    geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*', '* GraphicEQ.txt'))))
-    geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'oratory1990', 'usound', '*', '* GraphicEQ.txt'))))
-    ordered = OrderedDict()
-    for key in sorted(geq, key=lambda x: x.lower()):
-        ordered[geq[key]['model']] = geq[key]['eq']
-    with open('hesuvi.json', 'w', encoding='utf8') as f:
-        f.write(json.dumps(ordered, indent=2, ensure_ascii=False))
+# def write_hesuvi_index():
+#     geq = dict()
+#     geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'zero', '*', '* GraphicEQ.txt'))))
+#     geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'headphonecom', 'sbaf-serious', '*', '* GraphicEQ.txt'))))
+#     geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'rtings', 'avg', '*', '* GraphicEQ.txt'))))
+#     geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'innerfidelity', 'sbaf-serious', '*', '* GraphicEQ.txt'))))
+#     geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'crinacle', 'usound', '*', '* GraphicEQ.txt'))))
+#     geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*', '* GraphicEQ.txt'))))
+#     geq.update(get_graphic_eqs(glob(os.path.join(DIR_PATH, 'oratory1990', 'usound', '*', '* GraphicEQ.txt'))))
+#     ordered = OrderedDict()
+#     for key in sorted(geq, key=lambda x: x.lower()):
+#         ordered[geq[key]['model']] = geq[key]['eq']
+#     with open('hesuvi.json', 'w', encoding='utf8') as f:
+#         f.write(json.dumps(ordered, indent=2, ensure_ascii=False))
 
 
 def main():
