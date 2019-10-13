@@ -20,9 +20,6 @@ import re
 import biquad
 import warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-import tensorflow.compat.v1 as tf
-tf.get_logger().setLevel('ERROR')
-tf.disable_v2_behavior()
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 
@@ -270,6 +267,10 @@ class FrequencyResponse:
 
     @staticmethod
     def optimize_biquad_filters(frequency, target, max_time=5, max_filters=None, fs=DEFAULT_FS, fc=None, q=None):
+        import tensorflow.compat.v1 as tf
+        tf.get_logger().setLevel('ERROR')
+        tf.disable_v2_behavior()
+
         if fc is not None or q is not None:
             if fc is None:
                 raise TypeError('"fc" must be given if "q" is given.')
