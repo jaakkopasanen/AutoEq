@@ -6,6 +6,7 @@ import matplotlib.ticker as ticker
 import argparse
 import math
 import pandas as pd
+from io import StringIO
 from scipy.interpolate import InterpolatedUnivariateSpline
 from scipy.signal import savgol_filter, find_peaks, minimum_phase, firwin2
 from scipy.special import expit
@@ -174,41 +175,57 @@ class FrequencyResponse:
     @classmethod
     def read_from_csv(cls, file_path):
         """Reads data from CSV file and constructs class instance."""
-        file_path = os.path.abspath(file_path)
         name = os.path.split(file_path)[-1].split('.')[0]
 
-        f = open(file_path)
-        df = pd.read_csv(f, sep=',', header=0)
-        if 'frequency' not in df:
-            raise AttributeError('Column "frequency" missing from file "{fp}". Found columns are "{columns}".'.format(
-                fp=file_path,
-                columns='", "'.join(df.columns)
-            ))
-        frequency = list(df['frequency'])
-        raw = list(df['raw']) if 'raw' in df else None
-        smoothed = list(df['smoothed']) if 'smoothed' in df else None
-        error = list(df['error']) if 'error' in df else None
-        error_smoothed = list(df['error_smoothed']) if 'error_smoothed' in df else None
-        equalization = list(df['equalization']) if 'equalization' in df else None
-        parametric_eq = list(df['parametric_eq']) if 'parametric_eq' in df else None
-        equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
-        equalized_smoothed = list(df['equalized_smoothed']) if 'equalized_smoothed' in df else None
-        target = list(df['target']) if 'target' in df else None
-        f.close()
+        # Read file
+        f = open(file_path, 'r')
+        s = f.read()
 
-        return cls(
-            name=name,
-            frequency=frequency,
-            raw=raw,
-            smoothed=smoothed,
-            error=error,
-            error_smoothed=error_smoothed,
-            equalization=equalization,
-            parametric_eq=parametric_eq,
-            equalized_raw=equalized_raw,
-            equalized_smoothed=equalized_smoothed,
-            target=target
-        )
+        # Regex for AutoEq style CSV
+        header_pattern = r'frequency(,(raw|smoothed|error|error_smoothed|equalization|parametric_eq|equalized_raw|equalized_smoothed|target))+'
+        float_pattern = r'-?\d+\.?\d+'
+        data_2_pattern = r'{fl}[ ,;:\t]+{fl}?'.format(fl=float_pattern)
+        data_n_pattern = r'{fl}([ ,;:\t]+{fl})+?'.format(fl=float_pattern)
+        autoeq_pattern = r'^{header}(\n{data})+\n*$'.format(header=header_pattern, data=data_n_pattern)
+
+        if re.match(autoeq_pattern, s):
+            # Known AutoEq CSV format
+            df = pd.read_csv(StringIO(s), sep=',', header=0)
+            frequency = list(df['frequency'])
+            raw = list(df['raw']) if 'raw' in df else None
+            smoothed = list(df['smoothed']) if 'smoothed' in df else None
+            error = list(df['error']) if 'error' in df else None
+            error_smoothed = list(df['error_smoothed']) if 'error_smoothed' in df else None
+            equalization = list(df['equalization']) if 'equalization' in df else None
+            parametric_eq = list(df['parametric_eq']) if 'parametric_eq' in df else None
+            equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
+            equalized_smoothed = list(df['equalized_smoothed']) if 'equalized_smoothed' in df else None
+            target = list(df['target']) if 'target' in df else None
+            return cls(
+                name=name,
+                frequency=frequency,
+                raw=raw,
+                smoothed=smoothed,
+                error=error,
+                error_smoothed=error_smoothed,
+                equalization=equalization,
+                parametric_eq=parametric_eq,
+                equalized_raw=equalized_raw,
+                equalized_smoothed=equalized_smoothed,
+                target=target
+            )
+        else:
+            # Unknown format, try to guess
+            lines = s.split('\n')
+            frequency = []
+            raw = []
+            for line in lines:
+                if re.match(data_2_pattern, line):  # float separator float
+                    floats = re.findall(float_pattern, line)
+                    frequency.append(float(floats[0]))  # Assume first to be frequency
+                    raw.append(float(floats[1]))  # Assume second to be raw
+                # Discard all lines which don't match data pattern
+            return cls(name=name, frequency=frequency, raw=raw)
     
     def to_dict(self):
         d = dict()
