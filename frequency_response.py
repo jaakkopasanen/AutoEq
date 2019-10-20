@@ -33,7 +33,6 @@ DEFAULT_TREBLE_F_UPPER = 8000.0
 DEFAULT_TREBLE_MAX_GAIN = 0.0
 DEFAULT_TREBLE_GAIN_K = 1.0
 
-DEFAULT_SMOOTHING_METHOD = 'max'
 DEFAULT_SMOOTHING_WINDOW_SIZE = 1 / 6
 DEFAULT_SMOOTHING_ITERATIONS = 1
 DEFAULT_TREBLE_SMOOTHING_F_LOWER = 100.0
@@ -1148,7 +1147,6 @@ class FrequencyResponse:
         return y_normal * k_normal + y_treble * k_treble
 
     def smoothen_fractional_octave(self,
-                                   method='max',
                                    window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
                                    iterations=DEFAULT_SMOOTHING_ITERATIONS,
                                    treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
