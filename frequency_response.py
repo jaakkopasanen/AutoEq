@@ -1432,7 +1432,7 @@ class FrequencyResponse:
             im = im.convert('P', palette=Image.ADAPTIVE, colors=60)
             im.save(file_path, optimize=True)
         if show:
-            plt.show(fig)
+            plt.show()
         elif close:
             plt.close(fig)
         return fig, ax
