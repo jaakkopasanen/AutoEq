@@ -164,7 +164,24 @@ and set type to "Peak", frequency to given center frequency to Fc and width to `
 
 ![pulseeffects](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/pulseeffects.png)
 
+### OSX
+#### SoundSource
+[SoundSource](https://rogueamoeba.com/soundsource/) is a system audio control app and can host any Audio Unit plugins
+for system wide parametric equalizer. One such plugin is [Voxengo PrimeEQ](https://www.voxengo.com/product/primeeq/).
+Neither of these are free and have not been tested by me. [Contact me](https://www.voxengo.com/product/primeeq/) if you
+know any alternatives.
+
+#### eqMac2
+[eqMac2](https://bitgapp.com/eqmac/) is a free system wide 31-band equalizer on Mac. AutoEQ results don't have 31 band
+presets but can be created by passing parameters
+
+```
+--fixed_band_eq --q=4.47 --fc=20,25,31.5,40,50,63,80,100,125,160,200,250,315,400,500,630,800,1000,1250,1600,2000,2500,3150,4000,5000,6300,8000,10000,12500,16000,20000
+```
+
 ### iOS
+[Contact me](https://www.voxengo.com/product/primeeq/) if you know good solutions for iOS.
+
 #### EQE
 [EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer on iOS but requires a jailbreaking. Here
 are instructions on how to set it up: https://www.reddit.com/r/headphones/comments/dqbt81/psa_if_you_have_a_jailbroken_iphone_you_can/
