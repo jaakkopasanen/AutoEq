@@ -29,7 +29,7 @@ for more technical description about how things were obtained and processed.
 
 ![Sennheiser HD 800](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)
 
-*Sennheiser HD 650 equalization results plotted*
+*Sennheiser HD 800 equalization results plotted*
 
 
 ## Usage
