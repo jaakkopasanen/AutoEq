@@ -95,10 +95,10 @@ Fixed band equalizer settings look like this:
 | Peaking | 16000 Hz | 1.41 | -7.5 dB |
 
 ### Windows
-has [EqualizerAPO](#plain-equalizerapo), [HeSuVi](#hesuvi), [Peace](#peace) and many media players with
+has [EqualizerAPO](#plain-equalizerapo), [Peace](#peace) and many media players with
 parametric equalizers such as [Roon](https://roonlabs.com/) and [Foobar2000](https://www.foobar2000.org/).
 
-##### Plain EqualizerAPO
+#### EqualizerAPO
 It's possible to use plain [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
 `C:\Program Files\EqualizerAPO\config\config.txt`. Replace contents of the file with the GraphicEQ.txt file found in
 results. Preamp is not needed because it is incorporated into the GraphicEQ line. Using
@@ -115,7 +115,7 @@ EqualizerAPO has a graphical user interface for adjusting configurations. Launch
 
 *EqualizerAPO Editor GUI*
 
-##### Peace
+#### Peace
 [Peace](https://sourceforge.net/projects/peace-equalizer-apo-extension/) is a GUI for manipulating parametric eq filters
 with EqualizerAPO. Peace also has visualization for the end result equalization frequency response, profile manager for
 multiple different eq settings and a switch for disabling everything among other features. Load eq settings into Peace
@@ -131,13 +131,13 @@ doesn't have any system-wide parametric equalizers but there are several options
 devices have a built-in fixed band equalizer which works system wide but the center frequencies and Q values change from
 device to device so might need to [produce your own results](https://github.com/jaakkopasanen/AutoEq#equalizing).
 
-##### USB Audio Player PRO
+#### USB Audio Player PRO
 [USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is an Android app
 with improved USB audio drivers for usage with USB DACs. USB Audio Player
 PRO is not system-wide but works with local files and many streaming services though not with Spotify. USB Audio Player
 has Toneboosters Morphit plugin which has parametric equalizer. This app and the plugin are not free.
 
-##### Music EQ Equalizer
+#### Music EQ Equalizer
 The best app for system wide equalization on Android (without rooting) is
 [Music Equalizer EQ](https://play.google.com/store/apps/details?id=mediam.music.equalizer) which is a 10-band standard
 equalizer. Gains for each band can be adjusted with only 1 dB resolution but this isn't a problem because the average
@@ -151,13 +151,13 @@ only support standard 10-band equalizers which have band center frequencies at 3
 8000 and 16000 Hz. Q values are not adjustable so you don't have to worry about those even though they are given in the
 result settings.
 
-##### Viper4Android
+#### Viper4Android
 [Viper4Android](https://forum.xda-developers.com/showthread.php?t=2191223) is a system-wide
 convolution based equalizer (and much more) on Android but it requires rooting of the device. Viper4Android is supported
 with impulse response (WAV) files. For rooted users this is the best option.
 
 ### Linux
-##### PulseEffects
+#### PulseEffects
 [PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
 processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter
 and set type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
