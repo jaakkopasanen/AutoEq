@@ -33,18 +33,13 @@ for more technical description about how things were obtained and processed.
 
 
 ## Usage
-AutoEQ produces settings for EqualizerAPO GraphicEQ, parametric equalizers, convolution equalizer and fixed band eqs.
+AutoEQ produces settings for basically all types of equalizer apps.
 
-#### EqualizerAPO GraphicEQ
-EqualizerAPO GraphicEQ settings look like this:
-```
-GraphicEQ: 20 0.0; 22 6.0; 23 6.0; 25 6.0; 26 5.9; 28 5.6; 30 5.3; 32 4.8; 35 4.3; 37 3.9; 40 3.5; 42 3.3; 45 3.0; 49 2.7; 52 2.6; 56 2.5; 59 2.1; 64 1.8; 68 1.9; 73 2.2; 78 1.7; 83 0.9; 89 0.3; 95 -0.2; 102 -0.7; 109 -1.1; 117 -1.5; 125 -1.9; 134 -2.2; 143 -2.5; 153 -2.6; 164 -2.5; 175 -2.5; 188 -2.6; 201 -2.7; 215 -2.5; 230 -2.4; 246 -2.3; 263 -2.2; 282 -2.0; 301 -1.9; 323 -1.8; 345 -1.5; 369 -1.5; 395 -1.4; 423 -1.2; 452 -1.0; 484 -1.0; 518 -1.0; 554 -0.8; 593 -0.5; 635 -0.4; 679 -0.5; 726 -0.3; 777 -0.2; 832 -0.4; 890 -0.6; 952 -0.4; 1019 -0.1; 1090 -0.5; 1167 -0.8; 1248 -1.0; 1336 -1.1; 1429 -1.3; 1529 -1.3; 1636 -1.6; 1751 -1.6; 1873 -1.4; 2004 -0.9; 2145 -0.7; 2295 -0.5; 2455 -0.2; 2627 0.1; 2811 -0.1; 3008 -0.6; 3219 -1.1; 3444 -1.0; 3685 -0.6; 3943 0.0; 4219 -0.0; 4514 -0.1; 4830 0.9; 5168 3.8; 5530 5.9; 5917 5.2; 6331 4.4; 6775 3.9; 7249 1.3; 7756 0.3; 8299 0.0; 8880 0.0; 9502 0.0; 10167 0.0; 10879 0.0; 11640 0.0; 12455 0.0; 13327 0.0; 14260 0.0; 15258 0.0; 16326 0.0; 17469 0.0; 18692 0.0; 20000 0.0
-```
-
-##### Parametric Equalizers
+### Parametric Equalizers
 Parametric equalizers have filters with user adjustable gain,  center frequency and quality Q. Keep in mind that
 parametric eq accuracy depends on the number of filters available. Usually 10 filters produce very good
-results but as little as 5 can be good enough.
+results but as little as 5 can be good enough. Parametric equalizer is typically the safe bet if you're system, app or
+player has that available.
 
 All parametric equalizer except Peace require you to configure the filter parameters manually with the software user
 interface. Some parametric equalizer use filter width (band width) instead of Q. Filter width can be calculated as:
@@ -65,18 +60,14 @@ filter parameters look like this:
 | Peaking | 6093 Hz  | 2.26 | -4.7 dB |
 | Peaking | 8251 Hz  | 3.71 | -2.9 dB |
 
-#### Convolution Equalizers
+### Convolution Equalizers
 Convolution equalizer settings are finite impulse responses (FIR filters) and are the most advanced kind of (LTI)
 filters. FIR filters make it possible to produce linear phase filters which some may prefer though generally minimum
 phase filters are recommended. Convolution equalizer settings are provided as WAV files. Pre-computed results include
 impulse responses with 44.1 kHz and 48 kHz but other sampling rates are supported as well. Import the WAV file with
 correct sampling frequency into the software to use convolution equalizer.
 
-Minimum phase impulse response looks like this:
-
-![minimum-phase-FIR](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/minimum-phase-FIR.png)
-
-#### Fixed Band Equalizers
+### Fixed Band Equalizers
 Fixed band eq is more commonly known as graphic equalizer but in order not to confuse with EqualizerAPO GraphicEQ it is
 called like that in this project. Fixed band equalizer is like parametric equalizer with several peaking filters but
 don't have adjustable frequency information, only gain. All other types are preferred over fixed band equalizers but on
@@ -103,50 +94,11 @@ Fixed band equalizer settings look like this:
 | Peaking | 8000 Hz  | 1.41 | -4.1 dB |
 | Peaking | 16000 Hz | 1.41 | -7.5 dB |
 
-#### Windows
+### Windows
 has [EqualizerAPO](#plain-equalizerapo), [HeSuVi](#hesuvi), [Peace](#peace) and many media players with
 parametric equalizers such as [Roon](https://roonlabs.com/) and [Foobar2000](https://www.foobar2000.org/).
 
-#### Android
-doesn't have any system-wide parametric equalizers but there are several options which all have different caveats.
-
-Android has a native equalizer which can be controlled with
-[Music Equalizer EQ](#music-eq-equalizer) app for system wide equalization without rooting. This is the best option for
-non-rooted users who use Spotify.
-
-[USB Audio Player PRO](#usb-audio-player-pro) with Toneboosters
-plugin and [Neutron Music Player](https://play.google.com/store/apps/details?id=com.neutroncode.mp) are the most popular
-music players with parametric equalizers but are not free or provide system-wide equalization. USB Audio Player PRO
-might be the best option for non-rooted users who use Tidal.
-
-[Viper4Android](https://forum.xda-developers.com/showthread.php?t=2191223) is a system-wide
-convolution based equalizer (and much more) on Android but it requires rooting of the device. Viper4Android is supported
-with impulse response (WAV) files. For rooted users this is the best option.
-
-#### Linux
-has [PulseEffects](#pulseeffects) for PulseAudio which has parametric eq and convolution eq.
-
-### HeSuVi
-Easiest way is to install [HeSuVi](https://sourceforge.net/projects/hesuvi/) and select correct headphone model from the
-Equalizer tab. There is no need to download results from the results folder because HeSuVi ships with all of the
-recommended results. Please note that after installing HeSuVi will have surround virtualization on and if you don't
-want to use it you can select **none.wav** from the left side list on the Virtualization tab.
-
-HeSuVi is GUI for EqualizerAPO which has almost all headphone surround virtualizations available. HeSuVi also provides
-a convenient graphical user interface for adjusting the equalizer, toggling eq on and off, adjusting preamp and saving
-and restoring multiple different configurations making it very easy to compare different eq settings.
-
-If some reason HeSuVi doesn't include a headphone available in this project or if you wish to try out some other than
-the recommended result the file can be added manually. To add a preset into HeSuVi add the GraphicEq file into
-`C:\Program Files\EqualizerAPO\config\HeSuVi\eq\custom`.
-Then restart HeSuVi, select the new preset from the **custom** group in Equalizer tab and set volume attenuation for
-both channels to the highest positive gain value in preset.
-
-![hesuvi](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/HeSuVi2.PNG)
-
-*HeSuVi GUI for EqualizerAPO*
-
-### Plain EqualizerAPO
+##### Plain EqualizerAPO
 It's possible to use plain [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
 `C:\Program Files\EqualizerAPO\config\config.txt`. Replace contents of the file with the GraphicEQ.txt file found in
 results. Preamp is not needed because it is incorporated into the GraphicEQ line. Using
@@ -163,7 +115,7 @@ EqualizerAPO has a graphical user interface for adjusting configurations. Launch
 
 *EqualizerAPO Editor GUI*
 
-### Peace
+##### Peace
 [Peace](https://sourceforge.net/projects/peace-equalizer-apo-extension/) is a GUI for manipulating parametric eq filters
 with EqualizerAPO. Peace also has visualization for the end result equalization frequency response, profile manager for
 multiple different eq settings and a switch for disabling everything among other features. Load eq settings into Peace
@@ -174,22 +126,18 @@ results.
 
 *Peace with full GUI for EqualizerAPO*
 
-### PulseEffects
-[PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
-processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter
-and set type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
+### Android
+doesn't have any system-wide parametric equalizers but there are several options which all have different caveats. Some
+devices have a built-in fixed band equalizer which works system wide but the center frequencies and Q values change from
+device to device so might need to [produce your own results](https://github.com/jaakkopasanen/AutoEq#equalizing).
 
-![pulseeffects](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/pulseeffects.png)
-
-### USB Audio Player PRO
-[USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is and Android app
+##### USB Audio Player PRO
+[USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is an Android app
 with improved USB audio drivers for usage with USB DACs. USB Audio Player
 PRO is not system-wide but works with local files and many streaming services though not with Spotify. USB Audio Player
 has Toneboosters Morphit plugin which has parametric equalizer. This app and the plugin are not free.
 
-![usb-audio-player-pro](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/usb-audio-player-pro.png)
-
-### Music EQ Equalizer
+##### Music EQ Equalizer
 The best app for system wide equalization on Android (without rooting) is
 [Music Equalizer EQ](https://play.google.com/store/apps/details?id=mediam.music.equalizer) which is a 10-band standard
 equalizer. Gains for each band can be adjusted with only 1 dB resolution but this isn't a problem because the average
@@ -203,86 +151,18 @@ only support standard 10-band equalizers which have band center frequencies at 3
 8000 and 16000 Hz. Q values are not adjustable so you don't have to worry about those even though they are given in the
 result settings.
 
-![music-eq-equalizer](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/music-eq-equalizer.png)
+##### Viper4Android
+[Viper4Android](https://forum.xda-developers.com/showthread.php?t=2191223) is a system-wide
+convolution based equalizer (and much more) on Android but it requires rooting of the device. Viper4Android is supported
+with impulse response (WAV) files. For rooted users this is the best option.
 
-## Results
-The main principle used by AutoEQ for producing the equalization function is to invert error curve. Error is the
-difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
-below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. In reality simply inverting the error is
-not sufficient since measurements and equalization have several problems that need to be addressed, see
-[Technical Challenges](https://github.com/jaakkopasanen/AutoEq#technical-challenges) for more details.
+### Linux
+##### PulseEffects
+[PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
+processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter
+and set type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
 
-Results provided in this project currently have all the headphone measurements from
-[Innerfidelity](https://www.innerfidelity.com/headphone-measurements), [Headphone.com](http://graphs.headphone.com/),
-[oratory1990](https://www.reddit.com/r/oratory1990), [Rtings](https://www.rtings.com/headphones),
-[Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1) and
-[Crinacle](https://crinacle.com/), although Crinacle has some experimental stuff in his numerical data files which have
-not been included.
-Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
-[target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
-would be found in
-[innerfidelity/sbaf-serious/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650).
-Multiple measurements of a same headphone by a same measurement entity are averaged. All different measurements for
-averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
-averaged data which has no suffixes in the name.
-
-oratory1990 measurements have been done on Gras 43AG and 43AC couplers, the same which were used to develop Harman
-target responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results
-are recommended over all other measurements because of this reason. Harman target data is in the `compensation` folder.
-
-Crinacle's measurements only include in-ear headphones. These measurements have been performed with IEC 60318-4
-couplers and are therefore compatible with Harman in-ear targets. This fact also earns Crinacle's measurements second
-highest ranking recommendation after oratory1990.
-
-Both oratory1990 and Crinacle results also include Usound or oratory1990 target for in-ear headphones. Usound target is
-a result of research in the company where oratory1990 works. This target curve might be preferred by some who find
-Harman in-ear target missing "body" or "meat". Usound results are not listed on recommended results but can be found in
-the full index.
-
-Innerfidelity and Headphone.com measured headphones have
-[SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
-only. This is a modified version of Innerfidelity target curve produced by Serious user on Super Best Audio Friends
-forum. This curve doesn't have any glaring problems and is quite well balanced overall. Curve was turned into a
-compensation for raw microphone data and tilted 0.2 dB / octave brighter. Innerfidelity measurements are recommended
-over Headphone.com measurements because SBAF-Serious target was developed for Innerfidelity. SBAF-Serious curve was
-modified to be suitable for Headphone.com measurements by
-[calibrating](https://github.com/jaakkopasanen/AutoEq#calibration) it. CSV data files for Innerfidelity and
-Headphone.com are at `innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv` and
-`headphonecom/resources/headphonecom_compensation_sbaf-serious.csv`, respectively.
-
-Rtings measured headphones have frequency response made for this project. This treble average target is using an average
-of frequency responses of all Rtings measured headphones in the treble range with small manual reduction of the 9kHz
-peak and the Rtings native response below 2500 Hz without bass boost. Three different targets were compared in listening
-tests and the treble average target was found to sound the best. Other two were the Rtings native target curve and
-calibrated and uncalibrated versions of SBAF Serious target curve. Rtings uses the same measurement system as
-Innerfidelity uses so in theory the uncalibrated SBAF Serious target should work similarly with Rtings but listening
-tests found the treble average target to be slightly better. Rtings have
-[a very informative video](https://www.youtube.com/watch?v=HNEI3qLZEKo) about how they are doing the measurements and
-how did they came up with the target they use.
-
-Reference Audio Analyzer measurements are done one multiple different measurement systems and the compensation curve
-used in the images is not known. Results in this project take the Reference Audio Analyzer measurements as is and no
-compensation curve has been developed. There also is no bass boost applied to Reference Audio Analyzer measurements
-since they look to be lacking bass in many cases compared to other measurements leading to natural bass boost when using
-zero vector as the compensation curve.
-
-Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
-reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
-curve seems to underestimate 2 to 5 kHZ region by several dB leading the equalization to boost those frequencies too
-much. See [the original post](https://www.innerfidelity.com/content/new-compensation-curve-innerfidelity-measurements)
-and [the sequel](https://www.innerfidelity.com/content/compensation-curve-innerfidelity-measurements-dialog-part-1)
-on Innerfidelity for more details. Data can be found in `innerfidelity/resources/innerfidelity_compensation_2017.csv`
-
-Headphone.com compensation curve is used by Headphone.com with their Frequency Response graphs but this seems to
-underestimate treble even more than the 2017 Innerfidelity curve leading to even brighter equalization. Data location:
-`headphonecom/resources/headphonecom_compensation.csv`
-
-None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
-on-ear headphones, +6dB for in-ear headphones and no boost for earbuds. Harman targets actually ask for about +6dB for
-on-ears and +10dB for in-ears but since most headphones cannot achieve this with positive gain limited to +6dB a smaller
-boost was selected. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain
-(boost) is applied. In the upper treble measurements are less reliable and boosting them too much will cause serious
-problems while having some narrow dips is not a problem at all.
+![pulseeffects](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/pulseeffects.png)
 
 ## Equalizing
 `frequency_response.py` is the tool used to produce the equalization results from measurement data. There is no
@@ -534,39 +414,83 @@ Viewing HiFiMAN HE400S raw microphone data
 python frequency_response.py --input_dir="innerfidelity/data/onear/HiFiMAN HE400S" --show_plot
 ```
 
+## Results
+The main principle used by AutoEQ for producing the equalization function is to invert error curve. Error is the
+difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
+below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. In reality simply inverting the error is
+not sufficient since measurements and equalization have several problems that need to be addressed, see
+[Technical Challenges](https://github.com/jaakkopasanen/AutoEq#technical-challenges) for more details.
 
-## Calibration
-**Note!** Static calibration between two measurement systems which have different acoustical impedances does not work as
-one would wish. These calibration efforts were used for creating and testing different compensation curves. There even
-was as a parameter to pass calibration file to `frequency_response.py` for making one headphone measured on a system A
-sound like another headphone measured on system B. Calibration option for equalization is no longer supported.
-Headphones can be made sound like other headphones with sound signature parameter.
+Results provided in this project currently have all the headphone measurements from
+[Innerfidelity](https://www.innerfidelity.com/headphone-measurements), [Headphone.com](http://graphs.headphone.com/),
+[oratory1990](https://www.reddit.com/r/oratory1990), [Rtings](https://www.rtings.com/headphones),
+[Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1) and
+[Crinacle](https://crinacle.com/), although Crinacle has some experimental stuff in his numerical data files which have
+not been included.
+Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
+[target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
+would be found in
+[innerfidelity/sbaf-serious/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650).
+Multiple measurements of a same headphone by a same measurement entity are averaged. All different measurements for
+averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
+averaged data which has no suffixes in the name.
 
-Innerfidelity and Headphone.com have different kind of measurement systems and since there is no any kind of standard
-calibration for headphone frequency response measurements the data produced by these systems are not directly compatible
-with each other. Same individual headphone will measure differently in the two systems. This actually applies for all of
-the existing measurement systems.
+oratory1990 measurements have been done on Gras 43AG and 43AC couplers, the same which were used to develop Harman
+target responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results
+are recommended over all other measurements because of this reason. Harman target data is in the `compensation` folder.
 
-To have comparable equalization results and to be able to use all compensation curves
-for both measurements a calibration was done. Calibration made is not as reliable as a real calibration where a set of
-reference headphones are measured on both systems and outputs compared but instead a same headphone models but different
-individual units were used. All headphones with same name were selected from Headphone.com measurement database and
-Innerfidelity measurement database and results were compared model-wise. Final calibration curve was produced by
-averaging all the measurement pairs and smoothing the averaged curve. This method is problematic because there are large
-differences between individual headphones due to manufacturing and placement on the measurement head. Standard deviation
-is quite high about 5dB at 20Hz but still it's probably closer to truth than not using any calibration at all.
+Crinacle's measurements only include in-ear headphones. These measurements have been performed with IEC 60318-4
+couplers and are therefore compatible with Harman in-ear targets. This fact also earns Crinacle's measurements second
+highest ranking recommendation after oratory1990.
 
-![calibration](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/calibration/headphonecom_to_innerfidelity.png)
+Both oratory1990 and Crinacle results also include Usound or oratory1990 target for in-ear headphones. Usound target is
+a result of research in the company where oratory1990 works. This target curve might be preferred by some who find
+Harman in-ear target missing "body" or "meat". Usound results are not listed on recommended results but can be found in
+the full index.
 
-Pictured data is for calibrating Headphone.com measurement to Innerfidelity measurement or in other words estimating how
-an individual headphone measured by Headphone.com would look like if it was measured by Innerfidelity.
+Innerfidelity and Headphone.com measured headphones have
+[SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
+only. This is a modified version of Innerfidelity target curve produced by a user called Serious on Super Best Audio
+Friends forum. This curve doesn't have any glaring problems and is quite well balanced overall. Curve was turned into a
+compensation for raw microphone data and tilted 0.2 dB / octave brighter. Innerfidelity measurements are recommended
+over Headphone.com measurements because SBAF-Serious target was developed for Innerfidelity. SBAF-Serious curve was
+modified to be suitable for Headphone.com measurements. CSV data files for Innerfidelity and
+Headphone.com are at `innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv` and
+`headphonecom/resources/headphonecom_compensation_sbaf-serious.csv`, respectively.
 
-Calibration data is not used as is in the results but instead Innerfidelity SBAF-Serious compensation curve
-was calibrated to be suitable for Headphone.com measurements. Calibration can be used between Innerfidelity and
-Headphone.com mainly to make headphones sound like other headphones when both models are from different sources.
+Rtings measured headphones have frequency response made for this project. This treble average target is using an average
+of frequency responses of all Rtings measured headphones in the treble range with small manual reduction of the 9kHz
+peak and the Rtings native response below 2500 Hz without bass boost. Three different targets were compared in listening
+tests and the treble average target was found to sound the best. Other two were the Rtings native target curve and
+calibrated and uncalibrated versions of SBAF Serious target curve. Rtings uses the same measurement system as
+Innerfidelity uses so in theory the uncalibrated SBAF Serious target should work similarly with Rtings but listening
+tests found the treble average target to be slightly better. Rtings have
+[a very informative video](https://www.youtube.com/watch?v=HNEI3qLZEKo) about how they are doing the measurements and
+how did they came up with the target they use.
 
-Same calibration procedure was done for Innerfidelity and Rtings measurements in the experiments for testing different
-target curves.
+Reference Audio Analyzer measurements are done one multiple different measurement systems and the compensation curve
+used in the images is not known. Results in this project take the Reference Audio Analyzer measurements as is and no
+compensation curve has been developed. There also is no bass boost applied to Reference Audio Analyzer measurements
+since they look to be lacking bass in many cases compared to other measurements leading to natural bass boost when using
+zero vector as the compensation curve.
+
+Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
+reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
+curve seems to underestimate 2 to 5 kHZ region by several dB leading the equalization to boost those frequencies too
+much. See [the original post](https://www.innerfidelity.com/content/new-compensation-curve-innerfidelity-measurements)
+and [the sequel](https://www.innerfidelity.com/content/compensation-curve-innerfidelity-measurements-dialog-part-1)
+on Innerfidelity for more details. Data can be found in `innerfidelity/resources/innerfidelity_compensation_2017.csv`
+
+Headphone.com compensation curve is used by Headphone.com with their Frequency Response graphs but this seems to
+underestimate treble even more than the 2017 Innerfidelity curve leading to even brighter equalization. Data location:
+`headphonecom/resources/headphonecom_compensation.csv`
+
+None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
+on-ear headphones, +6dB for in-ear headphones and no boost for earbuds. Harman targets actually ask for about +6dB for
+on-ears and +10dB for in-ears but since most headphones cannot achieve this with positive gain limited to +6dB a smaller
+boost was selected. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain
+(boost) is applied. In the upper treble measurements are less reliable and boosting them too much will cause serious
+problems while having some narrow dips is not a problem at all.
 
 
 ## Technical Challenges
@@ -606,7 +530,7 @@ in it. Sharp changes in equalization may produce unwanted equalization artifacts
 corners whenever max gain clips the curve.
 
 
-## Parametric Equalizer
+## Parametric Equalizer Optimization
 AutoEQ has an optimizer to fit several peaking filters to the desired equalization curve. Optimization is part heuristic
 initialization and part mathematical optimization.
 
