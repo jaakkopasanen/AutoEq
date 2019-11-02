@@ -164,6 +164,12 @@ and set type to "Peak", frequency to given center frequency to Fc and width to `
 
 ![pulseeffects](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/pulseeffects.png)
 
+### iOS
+iOS devices can't have system wide equalizers without jailbreaking.
+
+### Hardware
+Some devices have built-in equalizers
+
 ## Equalizing
 `frequency_response.py` is the tool used to produce the equalization results from measurement data. There is no
 fancy graphical user interface but instead it is used from command line.
@@ -359,9 +365,9 @@ python frequency_response.py --input_dir="innerfidelity/data/onear/Sennheiser HD
 
 #### Fixed Band Equalizers
 Filter parameters for fixed band equalizers can be adjusted with `--q` and `--fc` parameters. Producing fixed band
-equalizer settings for 5 band Android equalizer:
+equalizer settings for Sony WH-1000XM3 app:
 ```bash
-python frequency_response.py --input_dir="oratory1990/data/inear/Campfire Audio Andromeda" --output_dir="my_results/Campfire Audio Andromeda" --compensation="compensation/usound_wo_bass.csv" --equalize --parametric_eq --max_filters=5+5 --iem_bass_boost=6.0 --fc=60,230,910,3000,14000 --q=0.67
+python frequency_response.py --input_dir="oratory1990/data/onear/Sony WH-1000XM3" --output_dir="my_results/Sony WH-1000XM3 (app)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --bass_boost=4.0 --fixed_band_eq --fc=400,1000,2500,6300,16000 --q=1.05
 ```
 
 #### Using Sound Signatures

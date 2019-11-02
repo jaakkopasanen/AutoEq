@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2660 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2659 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/1Custom%20SA03)
@@ -2241,14 +2241,13 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Sony WF-1000XM3 NC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Sony%20WF-1000XM3%20NC)
 - [Sony WF-SP700N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WF-SP700N)
 - [Sony WH-1000XM2](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sony%20WH-1000XM2)
-- [Sony WH-1000XM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-1000XM3)
+- [Sony WH-1000XM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sony%20WH-1000XM3)
 - [Sony WH-CH400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-CH400)
 - [Sony WH-CH500](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-CH500)
 - [Sony WH-CH700N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-CH700N)
 - [Sony WH-H900N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-H900N)
 - [Sony WH-XB700](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-XB700)
 - [Sony WH-XB900N](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WH-XB900N)
-- [Sony WH1000XM3](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sony%20WH1000XM3)
 - [Sony WI-1000X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Sony%20WI-1000X)
 - [Sony WI-C200](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WI-C200)
 - [Sony WI-C300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Sony%20WI-C300)

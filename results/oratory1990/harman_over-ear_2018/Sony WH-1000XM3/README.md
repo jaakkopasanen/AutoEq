@@ -1,4 +1,4 @@
-# Sony WH1000XM3
+# Sony WH-1000XM3
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -10,14 +10,14 @@ When using independent subset of filters, apply preamp of **-6.0dB**.
 |:--------|:---------|:-----|:--------|
 | Peaking | 25 Hz    | 0.53 | -6.0 dB |
 | Peaking | 121 Hz   | 0.73 | -6.8 dB |
-| Peaking | 1339 Hz  | 2.75 | 4.5 dB  |
-| Peaking | 1959 Hz  | 1.95 | 2.8 dB  |
-| Peaking | 4130 Hz  | 1.94 | 4.4 dB  |
-| Peaking | 545 Hz   | 3.79 | -1.5 dB |
-| Peaking | 780 Hz   | 3.59 | -0.7 dB |
-| Peaking | 4657 Hz  | 2.28 | 0.1 dB  |
-| Peaking | 10946 Hz | 2.22 | -0.3 dB |
-| Peaking | 11258 Hz | 2.73 | -0.8 dB |
+| Peaking | 1340 Hz  | 2.74 | 4.5 dB  |
+| Peaking | 1964 Hz  | 1.95 | 2.8 dB  |
+| Peaking | 4134 Hz  | 1.94 | 4.4 dB  |
+| Peaking | 545 Hz   | 3.83 | -1.6 dB |
+| Peaking | 781 Hz   | 3.64 | -0.7 dB |
+| Peaking | 4657 Hz  | 2.26 | 0.1 dB  |
+| Peaking | 10837 Hz | 2.29 | -0.5 dB |
+| Peaking | 11227 Hz | 2.52 | -0.5 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.8dB**
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 3.4 dB  |
 | Peaking | 4000 Hz  | 1.41 | 3.5 dB  |
 | Peaking | 8000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 16000 Hz | 1.41 | -0.1 dB |
 
 ### Graphs
-![](./Sony%20WH1000XM3.png)
+![](./Sony%20WH-1000XM3.png)
