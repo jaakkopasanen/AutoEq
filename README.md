@@ -165,10 +165,14 @@ and set type to "Peak", frequency to given center frequency to Fc and width to `
 ![pulseeffects](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/pulseeffects.png)
 
 ### iOS
-iOS devices can't have system wide equalizers without jailbreaking.
+#### EQE
+[EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer on iOS but requires a jailbreaking. Here
+are instructions on how to set it up: https://www.reddit.com/r/headphones/comments/dqbt81/psa_if_you_have_a_jailbroken_iphone_you_can/
 
 ### Hardware
-Some devices have built-in equalizers
+Some devices have built-in equalizers one of these is [Radsone EasStudio ES100](https://www.radsone.com/earstudio).
+ES100 is a Bluetooth DAC and amp with built-in 10 band equalizer. Since this is a hardware solution it will work with
+practically any source.
 
 ## Equalizing
 `frequency_response.py` is the tool used to produce the equalization results from measurement data. There is no
