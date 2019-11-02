@@ -357,14 +357,11 @@ Equalizing Sennheiser HD 650 and saving results to `my_results/HD650`:
 python frequency_response.py --input_dir="innerfidelity/data/onear/Sennheiser HD 650" --output_dir="my_results/HD650" --compensation="innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
 ```
 
-Equalizing Beyerdynamic DT 990 600 Ohm measured by Headphone.com to Headphone.com native target without saving results
+#### Fixed Band Equalizers
+Filter parameters for fixed band equalizers can be adjusted with `--q` and `--fc` parameters. Producing fixed band
+equalizer settings for 5 band Android equalizer:
 ```bash
-python frequency_response.py --input_dir="headphonecom/data/onear/Beyerdynamic DT 990 600 Ohm" --compensation="headphonecom/resources/headphonecom_compensation.csv" --equalize --bass_boost=4 --show_plot
-```
-
-Equalizing Beyerdynamic DT 990 600 Ohm measured by Headphone.com to SBAF-Serious target without saving results
-```bash
-python frequency_response.py --input_dir="headphonecom/data/onear/Beyerdynamic DT 990 600 Ohm" --compensation="headphonecom/resources/headphonecom_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
+python frequency_response.py --input_dir="oratory1990/data/inear/Campfire Audio Andromeda" --output_dir="my_results/Campfire Audio Andromeda" --compensation="compensation/usound_wo_bass.csv" --equalize --parametric_eq --max_filters=5+5 --iem_bass_boost=6.0 --fc=60,230,910,3000,14000 --q=0.67
 ```
 
 #### Using Sound Signatures
@@ -406,12 +403,6 @@ signature already has significant bass boost. Of course it's possible to add bas
 file if you want even more bass.
 ```bash
 python frequency_response.py --input_dir="rtings/data/onear/Audeze Mobius" --output_dir="my_results/Audeze Mobius" --compensation="rtings/resources/rtings_compensation_avg.csv" --sound_signature="my_data/v.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=0.0
-```
-
-#### Plotting Measurement Data
-Viewing HiFiMAN HE400S raw microphone data
-```bash
-python frequency_response.py --input_dir="innerfidelity/data/onear/HiFiMAN HE400S" --show_plot
 ```
 
 ## Results
