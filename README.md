@@ -27,7 +27,7 @@ except for Crinacle's raw data. Everything is stored as CSV files so they are ea
 language or even Microsoft Excel. See [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing)
 for more technical description about how things were obtained and processed.
 
-![Sennheiser HD 800](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser HD 800/Sennheiser HD 800.png)
+![Sennheiser HD 800](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)
 
 *Sennheiser HD 650 equalization results plotted*
 
