@@ -1,16 +1,16 @@
 # AutoEQ
 **TL;DR** If you are here just looking to make your headphones sound better, find your headphone model in
 [results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder's recommended headphones list
-and follow instructions in [Usage](https://github.com/jaakkopasanen/AutoEq#usage) section. 
+and follow instructions in [Usage](#usage) section. 
 
 ## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
 frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
 This project currently has almost 2000 headphones covered in the
 [results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder.
-See [Usage](https://github.com/jaakkopasanen/AutoEq#usage) for instructions how to use the results with
+See [Usage](#usage) for instructions how to use the results with
 different equalizer softwares and
-[Results](https://github.com/jaakkopasanen/AutoEq#results) section for details about parameters and how the results were
+[Results](#results) section for details about parameters and how the results were
 obtained.
 
 AutoEQ is not just a collection of automatically produced headphone equalization settings but also a tool for equalizing
@@ -18,13 +18,13 @@ headphones for yourself. `frequency_response.py` provides methods for reading da
 response and saving the results for usage with EqualizerAPO. It's possible to use different compensation (target)
 curves, apply tilt for making the headphones brighter/darker and adding a bass boost. It's even possible to make one
 headphone sound (roughly) like another headphone. For more info about equalizing see
-[Equalizing](https://github.com/jaakkopasanen/AutoEq#equalizing). If you're looking for something light weight to
+[Equalizing](#equalizing). If you're looking for something light weight to
 install as a dependency for your own project, you'll find [autoeq-pkg](https://github.com/jaakkopasanen/autoeq-pkg)
 much more suited for your needs.
 
 Third major contribution of this project is the measurement data and compensation curves all in a numerical format
 except for Crinacle's raw data. Everything is stored as CSV files so they are easy to process with any programming
-language or even Microsoft Excel. See [Data Processing](https://github.com/jaakkopasanen/AutoEq#data-processing)
+language or even Microsoft Excel. See [Data Processing](#data-processing)
 for more technical description about how things were obtained and processed.
 
 ![Sennheiser HD 800](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)
@@ -129,7 +129,7 @@ results.
 ### Android
 doesn't have any system-wide parametric equalizers but there are several options which all have different caveats. Some
 devices have a built-in fixed band equalizer which works system wide but the center frequencies and Q values change from
-device to device so might need to [produce your own results](https://github.com/jaakkopasanen/AutoEq#equalizing).
+device to device so might need to [produce your own results](#equalizing).
 
 #### USB Audio Player PRO
 [USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is an Android app
@@ -165,11 +165,23 @@ and set type to "Peak", frequency to given center frequency to Fc and width to `
 ![pulseeffects](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/pulseeffects.png)
 
 ### OSX
-#### SoundSource
-[SoundSource](https://rogueamoeba.com/soundsource/) is a system audio control app and can host any Audio Unit plugins
-for system wide parametric equalizer. One such plugin is [Voxengo PrimeEQ](https://www.voxengo.com/product/primeeq/).
-Neither of these are free and have not been tested by me. [Contact me](https://www.voxengo.com/product/primeeq/) if you
-know any alternatives.
+System wide parametric EQ solutions on OSX typically rely on separate plugin hosting software and the actual plugin
+which does the actual equalization.
+
+Audio plugin hosts include:
+- [MenuBus](https://www.menubus.audio/versions) has a free version but is no longer actively developed.
+- [SoundSource](https://rogueamoeba.com/soundsource/) is in active development but not free.
+
+EQ plugins include:
+- [Voxengo PrimeEQ](https://www.voxengo.com/product/primeeq/) is a parametric EQ plugin but is not free.
+- [LAConvolver plugin](http://audio.lernvall.com/) is a free convolver EQ which works with impulse response WAV files.
+
+#### Hosting AU + BlackHole
+The combination of Hosting AU in combination with Blackhole offers system-wide EQ on Mac osx.
+
+BlackHole is a virtual audio driver, while Hosting AU offers routing between inputs/outputs and adding AU to the chain.
+
+![hostingau+blackhole](https://user-images.githubusercontent.com/38220377/71527191-9706ac80-28da-11ea-8f70-88caf57c4821.png)
 
 #### eqMac2
 [eqMac2](https://bitgapp.com/eqmac/) is a free system wide 31-band equalizer on Mac. AutoEQ results don't have 31 band
@@ -180,7 +192,7 @@ presets but can be created by passing parameters
 ```
 
 ### iOS
-[Contact me](https://www.voxengo.com/product/primeeq/) if you know good solutions for iOS.
+[Contact me](#contact) if you know good solutions for iOS.
 
 #### EQE
 [EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer on iOS but requires a jailbreaking. Here
@@ -437,7 +449,7 @@ The main principle used by AutoEQ for producing the equalization function is to 
 difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
 below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. In reality simply inverting the error is
 not sufficient since measurements and equalization have several problems that need to be addressed, see
-[Technical Challenges](https://github.com/jaakkopasanen/AutoEq#technical-challenges) for more details.
+[Technical Challenges](#technical-challenges) for more details.
 
 Results provided in this project currently have all the headphone measurements from
 [Innerfidelity](https://www.innerfidelity.com/headphone-measurements), [Headphone.com](http://graphs.headphone.com/),
