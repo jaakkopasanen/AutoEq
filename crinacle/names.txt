@@ -22,8 +22,8 @@
 64 Audio A8
 64 Audio N8
 64 Audio N8 "Nate"
-64 Audio tia Fourte
 64 Audio Tia Fourte
+64 Audio tia Fourte
 64 Audio tia Fourte Noir
 64 Audio Tia Trio
 64 Audio U12t
@@ -233,13 +233,13 @@ Dunu DK-3001
 DUNU DK-4001
 DUNU DN-1000
 Dunu DN-1000
-DUNU DN-2000
 Dunu DN-2000
+DUNU DN-2000
 DUNU DN-2002
 Dunu DN-2002
 DUNU Titan 1
-Dunu Titan 3
 DUNU Titan 3
+Dunu Titan 3
 Dynamic Motion DM200H
 EarFun x Oluv Free
 Earsonics EM10
@@ -403,8 +403,8 @@ G1 module
 Geek Wold GK3
 Grado GR10e
 Grado GR8
-Grado iGe
 Grado iGE
+Grado iGe
 Green nozzle + Black vent
 Green nozzle + Blue vent
 Green nozzle + Red vent
@@ -430,14 +430,14 @@ HUM Dolores
 HUM Pristine
 HUM Pristine Reference
 HUM Reference
-Hyla CE-5
 HYLA CE-5
+Hyla CE-5
 Hyla Nerva X
 HYLA Nerva-X
 HYLA TE-5B
 Hyla TE-5B
-Hyla TE-5T
 HYLA TE-5T
+Hyla TE-5T
 I-INTO i8
 iBasso IT01
 iBasso IT01S
@@ -465,8 +465,8 @@ InEar StageDiver SD-2
 InEar StageDiver SD-3
 InEar StageDiver SD-4
 InEar StageDiver SD-5
-InEar Stagediver SD2
 InEar StageDiver SD2
+InEar Stagediver SD2
 InEar StageDiver SD3
 InEar StageDiver SD4
 InEar StageDiver SD5
@@ -530,8 +530,8 @@ JVC HA-FW10000
 Kennerton Jimo
 Kinera BD005
 Kinera H3
-Kinera IDUN
 Kinera Idun
+Kinera IDUN
 Kinera IDUN Deluxe
 Kinera Odin
 Kinera SEED
@@ -569,8 +569,8 @@ Lark Studio LSX
 Lear BTC-01 Bluetooth IEM cable (AAW A3H reference)
 Lear LCM-4
 Lear LCM-5
-LEAR LCM-BD4.2
 Lear LCM-BD4.2
+LEAR LCM-BD4.2
 LEAR NatroSound NS-U1
 LH Stella
 Lime Ears Aether
@@ -635,8 +635,8 @@ Ocharaku Donguri Keyaki
 Ocharaku Donguri Ti Plus
 Ocharaku Donguri-Keyaki
 Ocharaku Flat 4 Nami
-Ocharaku Flat-4 AKAKEYAKI
 Ocharaku Flat-4 Akakeyaki
+Ocharaku Flat-4 AKAKEYAKI
 Ocharaku Flat-4 Akazakura
 Ocharaku Flat-4 AKAZAKURA Plus
 Ocharaku Flat-4 KAEDE
@@ -649,8 +649,8 @@ Oppo MH130
 Oriolus Finschi
 Oriolus Forsteni
 Oriolus Mellianus
-Oriolus MK2
 Oriolus Mk2
+Oriolus MK2
 Oriolus Percivali
 Oriveti Basic
 Oriveti New Primacy
@@ -801,10 +801,10 @@ Symphonium Audio Aurora
 Symphonium Audio Mirage
 Symphonium Aurora
 Symphonium Mirage
-Taobao 3 Driver
 Taobao 3 driver
-Taobao 6 Driver
+Taobao 3 Driver
 Taobao 6 driver
+Taobao 6 Driver
 Taobao F111
 TFZ 1S
 TFZ 2S

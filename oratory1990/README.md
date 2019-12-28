@@ -2,7 +2,7 @@
 This is a process for getting new oratory1990 measurements and updating pre-computed results
 
 1. Copy-paste contents of `oratory1990/crawl.js` into Chrome (of Firefox) developer console on page:
-https://old.reddit.com/r/oratory1990/wiki/index
+https://old.reddit.com/r/oratory1990/wiki/index/list_of_presets
 2. Copy-paste results to a file called `oratory1990/links_new.json` and optionally reformat the file with some JSON prettifier
 3. Run downloader: `python downloader.py --json_path=oratory1990/links_new.json --old_json=oratory1990/links.json --output_dir=oratory1990/pdf --file_type=pdf`
 4. Copy-paste contents of `oratory1990/links_new.json` to `oratory1990/links.json`
