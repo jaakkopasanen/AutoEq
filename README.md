@@ -168,18 +168,19 @@ and set type to "Peak", frequency to given center frequency to Fc and width to `
 System wide parametric EQ solutions on OSX typically rely on separate plugin hosting software and the actual plugin
 which does the actual equalization.
 
+Pardon the lack of documentation for these. I have not tested any of the methods myself but they have been suggested by
+helpful AutoEQ users.
+
 Audio plugin hosts include:
 - [MenuBus](https://www.menubus.audio/versions) has a free version but is no longer actively developed.
 - [SoundSource](https://rogueamoeba.com/soundsource/) is in active development but not free.
+- [Hosting AU](http://ju-x.com/hostingau.html) with [BlackHole](https://github.com/ExistentialAudio/BlackHole) or
+[Soundflower](https://github.com/mattingalls/Soundflower) can be used as system wide AU plugin host.
 
 EQ plugins include:
 - [Voxengo PrimeEQ](https://www.voxengo.com/product/primeeq/) is a parametric EQ plugin but is not free.
 - [LAConvolver plugin](http://audio.lernvall.com/) is a free convolver EQ which works with impulse response WAV files.
-
-#### Hosting AU + BlackHole
-The combination of Hosting AU in combination with Blackhole offers system-wide EQ on Mac osx.
-
-BlackHole is a virtual audio driver, while Hosting AU offers routing between inputs/outputs and adding AU to the chain.
+- AUNBandEq comes built in with Mac OSX. Works at least with HostingAU + BlackHole
 
 ![hostingau+blackhole](https://user-images.githubusercontent.com/38220377/71527191-9706ac80-28da-11ea-8f70-88caf57c4821.png)
 
