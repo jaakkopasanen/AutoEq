@@ -215,7 +215,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Anker Zolo Liberty+](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Anker%20Zolo%20Liberty+)
 - [Apple AirPods](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Apple%20AirPods)
 - [Apple AirPods 2 2019](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Apple%20AirPods%202%202019)
-- [Apple AirPods Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Apple%20AirPods%20Pro)
+- [Apple AirPods Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Apple%20AirPods%20Pro)
 - [Apple EarPods](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Apple%20EarPods)
 - [Apple EarPods Mic](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Apple%20EarPods%20Mic)
 - [Apple In-Ear 2013](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Apple%20In-Ear%202013)

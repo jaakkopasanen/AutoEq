@@ -363,6 +363,8 @@ from the same source.
 - [Anker Soundcore Spirit X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Anker%20Soundcore%20Spirit%20X) by Rtings
 - [Anker Zolo Liberty+](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Anker%20Zolo%20Liberty+) by Rtings
 - [Apple AirPods 2 2019](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Apple%20AirPods%202%202019) by Rtings
+- [Apple AirPods Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2017-1/Apple%20AirPods%20Pro) by Crinacle (Harman in-ear 2017-1)
+- [Apple AirPods Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/usound/Apple%20AirPods%20Pro) by Crinacle (Usound)
 - [Apple AirPods Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Apple%20AirPods%20Pro) by Rtings
 - [Apple AirPods](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_in-ear_2017-1/Apple%20AirPods) by oratory1990 (Harman in-ear 2017-1)
 - [Apple AirPods](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Apple%20AirPods) by Reference Audio Analyzer
