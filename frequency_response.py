@@ -102,11 +102,17 @@ class FrequencyResponse:
             target=self._init_data(self.target)
         )
 
-    @staticmethod
-    def _init_data(data):
+    def _init_data(self, data):
         """Initializes data to a clean format. If None is passed and empty array is created. Non-numbers are removed."""
-        data = data if data is not None else []
+        if data is None:
+            # None means empty array
+            data = []
+        elif type(data) == float or type(data) == int:
+            # Scalar means all values are that, same shape as frequency
+            data = np.ones(self.frequency.shape) * data
+        # Replace nans with Nones
         data = [None if x is None or math.isnan(x) else x for x in data]
+        # Wrap in Numpy array
         data = np.array(data)
         return data
 
@@ -772,10 +778,7 @@ class FrequencyResponse:
         ir = firwin2(len(fr.frequency)*2, fr.frequency, fr.raw, fs=fs)
         return ir
 
-    def write_readme(self,
-                     file_path,
-                     max_filters=None,
-                     max_gains=None):
+    def write_readme(self, file_path, max_filters=None, max_gains=None):
         """Writes README.md with picture and Equalizer APO settings."""
         file_path = os.path.abspath(file_path)
         dir_path = os.path.dirname(file_path)
@@ -921,12 +924,12 @@ class FrequencyResponse:
     @staticmethod
     def generate_frequencies(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=DEFAULT_STEP):
         freq_new = []
-        # Frequencies from 20kHz down
+        # Frequencies from 20 kHz down
         f = np.min([20000, f_max])
         while f > f_min:
             freq_new.append(int(round(f)))
             f = f / f_step
-        # Frequencies from 20kHZ up
+        # Frequencies from 20 kHz up
         f = np.min([20000, f_max])
         while f < f_max:
             freq_new.append(int(round(f)))
@@ -944,20 +947,38 @@ class FrequencyResponse:
                 self.frequency = np.delete(self.frequency, i)
             else:
                 i += 1
-        interpolator = InterpolatedUnivariateSpline(np.log10(self.frequency), self.raw, k=pol_order)
+
+        # Interpolation functions
+        keys = 'raw error error_smoothed equalization equalized_raw equalized_smoothed target'.split()
+        interpolators = dict()
+        log_f = np.log10(self.frequency)
+        for key in keys:
+            if len(self.__dict__[key]):
+                interpolators[key] = InterpolatedUnivariateSpline(log_f, self.__dict__[key], k=pol_order)
 
         if f is None:
             self.frequency = self.generate_frequencies(f_min=f_min, f_max=f_max, f_step=f_step)
         else:
             self.frequency = f
+
+        # Prevent log10 from exploding by replacing zero frequency with small value
+        zero_freq_fix = False
         if self.frequency[0] == 0:
-            self.frequency[0] = 1  # Prevent log10 from exploding
-            self.raw = interpolator(np.log10(self.frequency))
+            self.frequency[0] = 0.001
+            zero_freq_fix = True
+
+        # Run interpolators
+        log_f = np.log10(self.frequency)
+        for key in keys:
+            if len(self.__dict__[key]) and key in interpolators:
+                self.__dict__[key] = interpolators[key](log_f)
+
+        if zero_freq_fix:
+            # Restore zero frequency
             self.frequency[0] = 0
-        else:
-            self.raw = interpolator(np.log10(self.frequency))
-        # Everything but raw data is affected by interpolating, reset them
-        self.reset(raw=False)
+
+        # Everything but the interpolated data is affected by interpolating, reset them
+        self.reset(**{key: False for key in keys})
 
     def center(self, frequency=1000):
         """Removed bias from frequency response.
@@ -988,9 +1009,13 @@ class FrequencyResponse:
         self.raw -= diff
         if len(self.smoothed):
             self.smoothed -= diff
+        if len(self.error):
+            self.error += diff
+        if len(self.error_smoothed):
+            self.error_smoothed += diff
 
-        # Everything but raw, smoothed and target is affected by centering, reset them
-        self.reset(raw=False, smoothed=False, target=False)
+        # Everything but raw, smoothed, errors and target is affected by centering, reset them
+        self.reset(raw=False, smoothed=False, error=False, error_smoothed=False, target=False)
 
         return -diff
 
