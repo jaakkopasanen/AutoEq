@@ -45,11 +45,9 @@ DEFAULT_FS = 44100
 DEFAULT_BIT_DEPTH = 16
 DEFAULT_PHASE = 'minimum'
 DEFAULT_F_RES = 10
-
-DEFAULT_OE_BASS_BOOST_F_LOWER = 35
-DEFAULT_OE_BASS_BOOST_F_UPPER = 280
-DEFAULT_IE_BASS_BOOST_F_LOWER = 25
-DEFAULT_IE_BASS_BOOST_F_UPPER = 350
+DEFAULT_BASS_BOOST_GAIN = 0
+DEFAULT_BASS_BOOST_FC = 100
+DEFAULT_BASS_BOOST_Q = 0.65
 
 GRAPHIC_EQ_STEP = 1.1
 
@@ -1035,27 +1033,25 @@ class FrequencyResponse:
         return n_oct * tilt
 
     def _target(self,
-                bass_boost=None,
-                bass_boost_f_lower=None,
-                bass_boost_f_upper=None,
+                bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
+                bass_boost_fc=DEFAULT_BASS_BOOST_FC,
+                bass_boost_q=DEFAULT_BASS_BOOST_Q,
                 tilt=None):
         """Creates target curve with bass boost as described by harman target response.
 
         Args:
-            bass_boost: Bass boost in dB
+            bass_boost_gain: Bass boost amount in dB
+            bass_boost_fc: Bass boost low shelf center frequency
+            bass_boost_q: Bass boost low shelf quality
 
         Returns:
             Target for equalization
         """
-        if bass_boost is not None:
-            bass_boost = self._sigmoid(
-                f_lower=bass_boost_f_lower,
-                f_upper=bass_boost_f_upper,
-                a_normal=bass_boost,
-                a_treble=0.0
-            )
-        else:
-            bass_boost = np.zeros(len(self.frequency))
+        bass_boost = biquad.digital_coeffs(
+            self.frequency,
+            DEFAULT_FS,
+            *biquad.low_shelf(bass_boost_fc, bass_boost_q, bass_boost_gain, DEFAULT_FS)
+        )
         if tilt is not None:
             tilt = self._tilt(tilt=tilt)
         else:
@@ -1064,9 +1060,9 @@ class FrequencyResponse:
 
     def compensate(self,
                    compensation,
-                   bass_boost=None,
-                   bass_boost_f_lower=None,
-                   bass_boost_f_upper=None,
+                   bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
+                   bass_boost_fc=DEFAULT_BASS_BOOST_FC,
+                   bass_boost_q=DEFAULT_BASS_BOOST_Q,
                    tilt=None,
                    sound_signature=None,
                    min_mean_error=False):
@@ -1083,9 +1079,9 @@ class FrequencyResponse:
 
         # Set target
         self.target = compensation.raw + self._target(
-            bass_boost=bass_boost,
-            bass_boost_f_lower=bass_boost_f_lower,
-            bass_boost_f_upper=bass_boost_f_upper,
+            bass_boost_gain=bass_boost_gain,
+            bass_boost_fc=bass_boost_fc,
+            bass_boost_q=bass_boost_q,
             tilt=tilt
         )
         if sound_signature is not None:
@@ -1472,8 +1468,9 @@ class FrequencyResponse:
                 q=None,
                 ten_band_eq=None,
                 max_filters=None,
-                bass_boost=None,
-                iem_bass_boost=None,
+                bass_boost_gain=None,
+                bass_boost_fc=None,
+                bass_boost_q=None,
                 tilt=None,
                 sound_signature=None,
                 max_gain=DEFAULT_MAX_GAIN,
@@ -1496,8 +1493,9 @@ class FrequencyResponse:
             q: List of Q values for fixed band eq
             ten_band_eq: Optimize filters for standard ten band eq?
             max_filters: List of maximum number of peaking filters for each additive filter optimization run.
-            bass_boost: Bass boost amount in dB for over-ear headphones.
-            iem_bass_boost: Bass boost amount in dB for in-ear headphones.
+            bass_boost_gain: Bass boost amount in dB.
+            bass_boost_fc: Bass boost low shelf center frequency.
+            bass_boost_q: Bass boost low shelf quality.
             tilt: Target frequency response tilt in db / octave
             sound_signature: Sound signature as FrequencyResponse instance. Raw data will be used.
             max_gain: Maximum positive gain in dB
@@ -1540,21 +1538,6 @@ class FrequencyResponse:
         if fixed_band_eq and not equalize:
             raise ValueError('equalize must be True when fixed_band_eq or ten_band_eq is True.')
 
-        # Use either normal bass boost (for on-ears) or iem bass boost
-        if bass_boost is not None and iem_bass_boost is not None:
-            raise TypeError('"bass_boost" or "iem_bass_boost" can be given but not both')
-        elif bass_boost is not None and iem_bass_boost is None:
-            bass_boost_f_lower = DEFAULT_OE_BASS_BOOST_F_LOWER
-            bass_boost_f_upper = DEFAULT_OE_BASS_BOOST_F_UPPER
-        elif iem_bass_boost is not None and bass_boost is None:
-            bass_boost = iem_bass_boost
-            bass_boost_f_lower = DEFAULT_IE_BASS_BOOST_F_LOWER
-            bass_boost_f_upper = DEFAULT_IE_BASS_BOOST_F_UPPER
-        else:
-            bass_boost = None
-            bass_boost_f_lower = None
-            bass_boost_f_upper = None
-
         if max_filters is not None and type(max_filters) != list:
             max_filters = [max_filters]
 
@@ -1568,9 +1551,9 @@ class FrequencyResponse:
             # Compensate
             self.compensate(
                 compensation,
-                bass_boost=bass_boost,
-                bass_boost_f_lower=bass_boost_f_lower,
-                bass_boost_f_upper=bass_boost_f_upper,
+                bass_boost_gain=bass_boost_gain,
+                bass_boost_fc=bass_boost_fc,
+                bass_boost_q=bass_boost_q,
                 tilt=tilt,
                 sound_signature=sound_signature,
                 min_mean_error=min_mean_error
@@ -1615,8 +1598,9 @@ class FrequencyResponse:
              bit_depth=DEFAULT_BIT_DEPTH,
              phase=DEFAULT_PHASE,
              f_res=DEFAULT_F_RES,
-             bass_boost=None,
-             iem_bass_boost=None,
+             bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
+             bass_boost_fc=DEFAULT_BASS_BOOST_FC,
+             bass_boost_q=DEFAULT_BASS_BOOST_Q,
              tilt=None,
              sound_signature=None,
              max_gain=DEFAULT_MAX_GAIN,
@@ -1626,7 +1610,6 @@ class FrequencyResponse:
              treble_gain_k=DEFAULT_TREBLE_GAIN_K,
              show_plot=False):
         """Parses files in input directory and produces equalization results in output directory."""
-
         start_time = time()
 
         # Dir paths to absolute
@@ -1690,8 +1673,9 @@ class FrequencyResponse:
                 q=q,
                 ten_band_eq=ten_band_eq,
                 max_filters=max_filters,
-                bass_boost=bass_boost,
-                iem_bass_boost=iem_bass_boost,
+                bass_boost_gain=bass_boost_gain,
+                bass_boost_fc=bass_boost_fc,
+                bass_boost_q=bass_boost_q,
                 tilt=tilt,
                 sound_signature=sound_signature,
                 max_gain=max_gain,
@@ -1818,20 +1802,16 @@ class FrequencyResponse:
                                 help='Frequency resolution for impulse responses. If this is 20 then impulse response '
                                      'frequency domain will be sampled every 20 Hz. Filter length for '
                                      'impulse responses will be fs/f_res. Defaults to {}.'.format(DEFAULT_F_RES))
-        arg_parser.add_argument('--bass_boost', type=float, default=argparse.SUPPRESS,
-                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to '
-                                     '{f_max} Hz. "--bass_boost" is mutually exclusive with "--iem_bass_boost".'.format(
-                                        f_min=DEFAULT_OE_BASS_BOOST_F_LOWER,
-                                        f_max=DEFAULT_OE_BASS_BOOST_F_UPPER
-                                     )
-                                )
+        arg_parser.add_argument('--bass_boost', type=str, default=argparse.SUPPRESS,
+                                help='Bass boost shelf. Sub-bass frequencies will be boosted by this amount. Can be '
+                                     'either a single value for a gain in dB or a comma separated list of three values '
+                                     'for parameters of a low shelf filter, where the first is gain in dB, second is '
+                                     'center frequency (Fc) in Hz and the last is quality (Q). When only a single '
+                                     'value (gain) is given, default values for Fc and Q are used which are '
+                                     f'{DEFAULT_BASS_BOOST_FC} Hz and {DEFAULT_BASS_BOOST_Q}, '
+                                     'respectively. For example "--bass_boost=6" or "--bass_boost=9.5,150,0.69".')
         arg_parser.add_argument('--iem_bass_boost', type=float, default=argparse.SUPPRESS,
-                                help='Target gain for sub-bass in dB. Has sigmoid slope down from {f_min} Hz to '
-                                     '{f_max} Hz. "--iem_bass_boost" is mutually exclusive with "--bass_boost".'.format(
-                                        f_min=DEFAULT_IE_BASS_BOOST_F_LOWER,
-                                        f_max=DEFAULT_IE_BASS_BOOST_F_UPPER
-                                     )
-                                )
+                                help='iem_bass_boost argument has been removed, use "--bass_boost" instead!')
         arg_parser.add_argument('--tilt', type=float, default=argparse.SUPPRESS,
                                 help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
                                      'frequency response and negative value (downwards slope) will result in darker '
@@ -1871,8 +1851,21 @@ class FrequencyResponse:
         arg_parser.add_argument('--show_plot', action='store_true',
                                 help='Plot will be shown if this parameter exists, no value needed.')
         args = vars(arg_parser.parse_args())
-        if 'bass_boost' in args and 'iem_bass_boost' in args:
-            raise TypeError('"--bass_boost" or "--iem_bass_boost" can be given but not both')
+        if 'iem_bass_boost' in args:
+            raise TypeError('iem_bass_boost argument has been removed, use "--bass_boost" instead!')
+        if 'bass_boost' in args:
+            bass_boost = args['bass_boost'].split(',')
+            if len(bass_boost) == 1:
+                args['bass_boost_gain'] = float(bass_boost[0])
+                args['bass_boost_fc'] = DEFAULT_BASS_BOOST_FC
+                args['bass_boost_q'] = DEFAULT_BASS_BOOST_Q
+            elif len(bass_boost) == 3:
+                args['bass_boost_gain'] = float(bass_boost[0])
+                args['bass_boost_fc'] = float(bass_boost[1])
+                args['bass_boost_q'] = float(bass_boost[2])
+            else:
+                raise ValueError('"--bass_boost" must have one value or three values separated by commas!')
+            del args['bass_boost']
         if 'max_filters' in args:
             args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
         if 'fc' in args and args['fc'] is not None:

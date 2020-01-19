@@ -8,15 +8,15 @@ When using independent subset of filters, apply preamp of **-7.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 41 Hz    | 0.76 | 7.3 dB  |
-| Peaking | 1864 Hz  | 1.53 | 10.4 dB |
-| Peaking | 2440 Hz  | 1.54 | -8.3 dB |
+| Peaking | 41 Hz    | 0.75 | 7.3 dB  |
+| Peaking | 1865 Hz  | 1.53 | 10.5 dB |
+| Peaking | 2436 Hz  | 1.52 | -8.4 dB |
 | Peaking | 12924 Hz | 1.41 | -9.4 dB |
-| Peaking | 17218 Hz | 1.48 | -4.7 dB |
-| Peaking | 21 Hz    | 3.1  | 2.7 dB  |
-| Peaking | 81 Hz    | 3.35 | 3.6 dB  |
-| Peaking | 228 Hz   | 0.83 | -2.9 dB |
-| Peaking | 4387 Hz  | 6.33 | -2.5 dB |
+| Peaking | 17223 Hz | 1.48 | -4.7 dB |
+| Peaking | 20 Hz    | 3.01 | 2.6 dB  |
+| Peaking | 83 Hz    | 3.36 | 3.6 dB  |
+| Peaking | 230 Hz   | 0.83 | -3.0 dB |
+| Peaking | 4379 Hz  | 6.85 | -2.6 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
@@ -26,14 +26,14 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 |:--------|:---------|:-----|:---------|
 | Peaking | 31 Hz    | 1.41 | 5.8 dB   |
 | Peaking | 62 Hz    | 1.41 | 6.4 dB   |
-| Peaking | 125 Hz   | 1.41 | -0.5 dB  |
-| Peaking | 250 Hz   | 1.41 | -2.8 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.3 dB  |
+| Peaking | 250 Hz   | 1.41 | -2.9 dB  |
 | Peaking | 500 Hz   | 1.41 | -1.0 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.9 dB   |
 | Peaking | 2000 Hz  | 1.41 | 2.8 dB   |
-| Peaking | 4000 Hz  | 1.41 | -2.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | -2.8 dB  |
 | Peaking | 8000 Hz  | 1.41 | -2.0 dB  |
-| Peaking | 16000 Hz | 1.41 | -10.9 dB |
+| Peaking | 16000 Hz | 1.41 | -11.0 dB |
 
 ### Graphs
 ![](./Jabra%20Elite%20Active%2045e.png)

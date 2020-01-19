@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-8.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.5dB**.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 27 Hz    | 1.57 | 7.1 dB  |
-| Peaking | 348 Hz   | 3.4  | 5.0 dB  |
-| Peaking | 3359 Hz  | 2.94 | 6.4 dB  |
+| Peaking | 26 Hz    | 1.53 | 7.0 dB  |
+| Peaking | 348 Hz   | 3.43 | 5.0 dB  |
+| Peaking | 3358 Hz  | 2.94 | 6.4 dB  |
 | Peaking | 5228 Hz  | 3.32 | -7.3 dB |
 | Peaking | 13936 Hz | 1.29 | -7.3 dB |
-| Peaking | 135 Hz   | 0.75 | -4.9 dB |
-| Peaking | 349 Hz   | 0.12 | 2.9 dB  |
-| Peaking | 985 Hz   | 0.57 | -3.6 dB |
-| Peaking | 8071 Hz  | 2.46 | 4.0 dB  |
-| Peaking | 8186 Hz  | 1    | -2.2 dB |
+| Peaking | 135 Hz   | 0.74 | -5.0 dB |
+| Peaking | 343 Hz   | 0.12 | 2.9 dB  |
+| Peaking | 992 Hz   | 0.56 | -3.6 dB |
+| Peaking | 8054 Hz  | 2.59 | 3.8 dB  |
+| Peaking | 8116 Hz  | 0.94 | -1.9 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.2dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 1.4 dB  |
 | Peaking | 4000 Hz  | 1.41 | 0.7 dB  |
 | Peaking | 8000 Hz  | 1.41 | -2.6 dB |
-| Peaking | 16000 Hz | 1.41 | -6.8 dB |
+| Peaking | 16000 Hz | 1.41 | -6.9 dB |
 
 ### Graphs
 ![](./Audio-Technica%20ATH-PRO500.png)

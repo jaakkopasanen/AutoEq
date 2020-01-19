@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 23 Hz    | 0.69 | 6.3 dB   |
-| Peaking | 205 Hz   | 0.54 | -6.4 dB  |
-| Peaking | 1921 Hz  | 1.45 | -16.6 dB |
-| Peaking | 2207 Hz  | 0.33 | 11.0 dB  |
-| Peaking | 6778 Hz  | 2.99 | -8.8 dB  |
-| Peaking | 2447 Hz  | 4.75 | -2.1 dB  |
-| Peaking | 2830 Hz  | 3.34 | -1.0 dB  |
-| Peaking | 3101 Hz  | 3.82 | 2.3 dB   |
-| Peaking | 4495 Hz  | 2.03 | 1.2 dB   |
-| Peaking | 11091 Hz | 1.33 | -1.8 dB  |
+| Peaking | 22 Hz    | 0.65 | 6.3 dB   |
+| Peaking | 208 Hz   | 0.56 | -6.3 dB  |
+| Peaking | 1914 Hz  | 1.45 | -16.5 dB |
+| Peaking | 2229 Hz  | 0.33 | 10.9 dB  |
+| Peaking | 6809 Hz  | 3.03 | -8.8 dB  |
+| Peaking | 766 Hz   | 4.33 | 1.4 dB   |
+| Peaking | 2492 Hz  | 3.96 | -2.4 dB  |
+| Peaking | 3167 Hz  | 3.78 | 2.0 dB   |
+| Peaking | 4571 Hz  | 3.54 | 1.4 dB   |
+| Peaking | 11177 Hz | 1.43 | -1.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 6.0 dB  |
-| Peaking | 62 Hz    | 1.41 | -0.5 dB |
-| Peaking | 125 Hz   | 1.41 | -3.9 dB |
-| Peaking | 250 Hz   | 1.41 | -5.1 dB |
-| Peaking | 500 Hz   | 1.41 | 0.5 dB  |
+| Peaking | 31 Hz    | 1.41 | 5.8 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.1 dB |
+| Peaking | 125 Hz   | 1.41 | -3.7 dB |
+| Peaking | 250 Hz   | 1.41 | -5.2 dB |
+| Peaking | 500 Hz   | 1.41 | 0.6 dB  |
 | Peaking | 1000 Hz  | 1.41 | 4.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | -7.0 dB |
 | Peaking | 4000 Hz  | 1.41 | 8.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.7 dB |
-| Peaking | 16000 Hz | 1.41 | 0.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.9 dB |
+| Peaking | 16000 Hz | 1.41 | 0.3 dB  |
 
 ### Graphs
 ![](./Accidentally%20Extraordinary%20Bamboo.png)

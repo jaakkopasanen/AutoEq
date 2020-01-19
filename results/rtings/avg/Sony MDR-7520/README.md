@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-6.8dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 106 Hz   | 0.66 | -8.4 dB  |
-| Peaking | 167 Hz   | 0.1  | 3.8 dB   |
-| Peaking | 2886 Hz  | 1.14 | -10.6 dB |
-| Peaking | 4336 Hz  | 1.37 | 11.5 dB  |
-| Peaking | 9087 Hz  | 2.39 | -10.0 dB |
-| Peaking | 21 Hz    | 3.05 | 2.0 dB   |
-| Peaking | 327 Hz   | 5.68 | 2.7 dB   |
-| Peaking | 1120 Hz  | 3.83 | 1.2 dB   |
-| Peaking | 16889 Hz | 3.78 | -4.0 dB  |
-| Peaking | 19730 Hz | 1.58 | -2.4 dB  |
+| Peaking | 103 Hz   | 0.64 | -8.4 dB  |
+| Peaking | 158 Hz   | 0.09 | 3.8 dB   |
+| Peaking | 2890 Hz  | 1.1  | -10.7 dB |
+| Peaking | 4336 Hz  | 1.38 | 11.6 dB  |
+| Peaking | 9092 Hz  | 2.38 | -10.0 dB |
+| Peaking | 17 Hz    | 3.12 | 2.0 dB   |
+| Peaking | 326 Hz   | 5.62 | 2.7 dB   |
+| Peaking | 1125 Hz  | 3.83 | 1.2 dB   |
+| Peaking | 16910 Hz | 3.78 | -4.0 dB  |
+| Peaking | 19702 Hz | 1.58 | -2.4 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 2.1 dB  |
-| Peaking | 62 Hz    | 1.41 | -1.9 dB |
-| Peaking | 125 Hz   | 1.41 | -5.4 dB |
+| Peaking | 31 Hz    | 1.41 | 1.9 dB  |
+| Peaking | 62 Hz    | 1.41 | -2.1 dB |
+| Peaking | 125 Hz   | 1.41 | -5.3 dB |
 | Peaking | 250 Hz   | 1.41 | 2.5 dB  |
 | Peaking | 500 Hz   | 1.41 | 0.8 dB  |
-| Peaking | 1000 Hz  | 1.41 | 4.0 dB  |
+| Peaking | 1000 Hz  | 1.41 | 3.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | -6.3 dB |
-| Peaking | 4000 Hz  | 1.41 | 5.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -5.2 dB |
-| Peaking | 16000 Hz | 1.41 | -2.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | -5.3 dB |
+| Peaking | 16000 Hz | 1.41 | -2.2 dB |
 
 ### Graphs
 ![](./Sony%20MDR-7520.png)

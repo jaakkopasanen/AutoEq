@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 62 Hz    | 0.52 | -3.4 dB |
-| Peaking | 162 Hz   | 0.6  | -4.0 dB |
-| Peaking | 805 Hz   | 0.84 | 4.4 dB  |
-| Peaking | 3433 Hz  | 2.44 | 6.6 dB  |
-| Peaking | 8526 Hz  | 2.09 | -6.9 dB |
-| Peaking | 4250 Hz  | 2.24 | 0.8 dB  |
-| Peaking | 5739 Hz  | 3.17 | -2.5 dB |
-| Peaking | 8164 Hz  | 4.37 | 2.0 dB  |
-| Peaking | 9253 Hz  | 5.25 | -5.1 dB |
-| Peaking | 10539 Hz | 2.54 | 3.2 dB  |
+| Peaking | 57 Hz    | 0.53 | -3.0 dB |
+| Peaking | 160 Hz   | 0.6  | -4.3 dB |
+| Peaking | 804 Hz   | 0.84 | 4.4 dB  |
+| Peaking | 3434 Hz  | 2.46 | 6.6 dB  |
+| Peaking | 8521 Hz  | 2.07 | -6.9 dB |
+| Peaking | 4137 Hz  | 3.09 | 0.8 dB  |
+| Peaking | 5751 Hz  | 3.32 | -2.4 dB |
+| Peaking | 8295 Hz  | 4.4  | 2.1 dB  |
+| Peaking | 9388 Hz  | 5.14 | -5.2 dB |
+| Peaking | 10403 Hz | 2.53 | 3.3 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.3dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -1.9 dB |
-| Peaking | 62 Hz    | 1.41 | -4.0 dB |
-| Peaking | 125 Hz   | 1.41 | -5.0 dB |
-| Peaking | 250 Hz   | 1.41 | -3.1 dB |
+| Peaking | 31 Hz    | 1.41 | -2.0 dB |
+| Peaking | 62 Hz    | 1.41 | -3.6 dB |
+| Peaking | 125 Hz   | 1.41 | -4.8 dB |
+| Peaking | 250 Hz   | 1.41 | -3.2 dB |
 | Peaking | 500 Hz   | 1.41 | 1.9 dB  |
 | Peaking | 1000 Hz  | 1.41 | 3.7 dB  |
-| Peaking | 2000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | 0.5 dB  |
 | Peaking | 4000 Hz  | 1.41 | 5.5 dB  |
 | Peaking | 8000 Hz  | 1.41 | -6.9 dB |
-| Peaking | 16000 Hz | 1.41 | 0.8 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.9 dB  |
 
 ### Graphs
 ![](./Sennheiser%20CX%20880.png)

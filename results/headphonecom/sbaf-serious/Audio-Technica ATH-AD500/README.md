@@ -8,32 +8,32 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 37 Hz    | 0.5  | 6.7 dB   |
-| Peaking | 4436 Hz  | 2.85 | -10.4 dB |
-| Peaking | 5796 Hz  | 0.85 | 7.9 dB   |
-| Peaking | 9028 Hz  | 1.61 | -13.5 dB |
-| Peaking | 12688 Hz | 2.41 | 2.4 dB   |
-| Peaking | 1258 Hz  | 0.56 | 2.6 dB   |
-| Peaking | 1276 Hz  | 1.44 | -4.6 dB  |
-| Peaking | 5226 Hz  | 6.02 | -3.0 dB  |
-| Peaking | 6137 Hz  | 2.86 | 2.2 dB   |
-| Peaking | 7110 Hz  | 4.98 | -2.5 dB  |
+| Peaking | 37 Hz    | 0.48 | 6.7 dB   |
+| Peaking | 4524 Hz  | 2.85 | -10.3 dB |
+| Peaking | 5690 Hz  | 0.85 | 7.9 dB   |
+| Peaking | 8980 Hz  | 1.6  | -13.6 dB |
+| Peaking | 12761 Hz | 2.53 | 2.5 dB   |
+| Peaking | 1238 Hz  | 0.51 | 2.1 dB   |
+| Peaking | 1272 Hz  | 1.55 | -4.1 dB  |
+| Peaking | 4044 Hz  | 4.12 | -1.4 dB  |
+| Peaking | 6141 Hz  | 2.79 | 0.4 dB   |
+| Peaking | 16186 Hz | 2.13 | 0.3 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | 6.1 dB  |
-| Peaking | 62 Hz    | 1.41 | 5.2 dB  |
-| Peaking | 125 Hz   | 1.41 | 0.3 dB  |
+| Peaking | 62 Hz    | 1.41 | 5.1 dB  |
+| Peaking | 125 Hz   | 1.41 | 0.4 dB  |
 | Peaking | 250 Hz   | 1.41 | 0.1 dB  |
-| Peaking | 500 Hz   | 1.41 | 1.6 dB  |
-| Peaking | 1000 Hz  | 1.41 | -1.4 dB |
-| Peaking | 2000 Hz  | 1.41 | 1.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 8000 Hz  | 1.41 | -5.7 dB |
+| Peaking | 500 Hz   | 1.41 | 1.5 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.5 dB |
+| Peaking | 2000 Hz  | 1.41 | 1.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 8000 Hz  | 1.41 | -5.8 dB |
 | Peaking | 16000 Hz | 1.41 | 0.2 dB  |
 
 ### Graphs

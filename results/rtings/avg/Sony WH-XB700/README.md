@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 35 Hz    | 0.29 | -9.1 dB  |
-| Peaking | 5731 Hz  | 2.01 | 10.7 dB  |
-| Peaking | 7581 Hz  | 2.04 | -10.4 dB |
-| Peaking | 17434 Hz | 1.6  | -8.4 dB  |
-| Peaking | 19581 Hz | 1.01 | -10.8 dB |
-| Peaking | 219 Hz   | 0.92 | -4.8 dB  |
-| Peaking | 380 Hz   | 0.51 | 4.9 dB   |
-| Peaking | 2203 Hz  | 1.45 | -1.4 dB  |
-| Peaking | 11033 Hz | 4.83 | -2.9 dB  |
-| Peaking | 12201 Hz | 3.22 | 2.8 dB   |
+| Peaking | 35 Hz    | 0.3  | -9.3 dB  |
+| Peaking | 5724 Hz  | 2.04 | 10.6 dB  |
+| Peaking | 7585 Hz  | 2.04 | -10.3 dB |
+| Peaking | 17450 Hz | 1.55 | -8.6 dB  |
+| Peaking | 19664 Hz | 1.03 | -10.6 dB |
+| Peaking | 221 Hz   | 0.92 | -4.7 dB  |
+| Peaking | 382 Hz   | 0.52 | 4.9 dB   |
+| Peaking | 2195 Hz  | 1.5  | -1.4 dB  |
+| Peaking | 11088 Hz | 4.77 | -2.8 dB  |
+| Peaking | 12278 Hz | 3.42 | 2.8 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.2dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -9.5 dB |
-| Peaking | 62 Hz    | 1.41 | -5.5 dB |
-| Peaking | 125 Hz   | 1.41 | -4.6 dB |
-| Peaking | 250 Hz   | 1.41 | -2.0 dB |
+| Peaking | 31 Hz    | 1.41 | -9.6 dB |
+| Peaking | 62 Hz    | 1.41 | -5.6 dB |
+| Peaking | 125 Hz   | 1.41 | -4.5 dB |
+| Peaking | 250 Hz   | 1.41 | -1.9 dB |
 | Peaking | 500 Hz   | 1.41 | 3.4 dB  |
-| Peaking | 1000 Hz  | 1.41 | 1.8 dB  |
-| Peaking | 2000 Hz  | 1.41 | -2.1 dB |
+| Peaking | 1000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.2 dB |
 | Peaking | 4000 Hz  | 1.41 | 4.7 dB  |
 | Peaking | 8000 Hz  | 1.41 | -3.6 dB |
-| Peaking | 16000 Hz | 1.41 | -9.0 dB |
+| Peaking | 16000 Hz | 1.41 | -9.1 dB |
 
 ### Graphs
 ![](./Sony%20WH-XB700.png)

@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 131 Hz  | 0.65 | -3.8 dB |
-| Peaking | 280 Hz  | 1.25 | -2.0 dB |
-| Peaking | 2460 Hz | 1.65 | -3.2 dB |
+| Peaking | 138 Hz  | 0.67 | -3.8 dB |
+| Peaking | 285 Hz  | 1.29 | -2.0 dB |
+| Peaking | 2461 Hz | 1.63 | -3.3 dB |
 | Peaking | 3702 Hz | 1.95 | 7.3 dB  |
-| Peaking | 6097 Hz | 3.57 | 4.2 dB  |
-| Peaking | 851 Hz  | 2.42 | 1.0 dB  |
-| Peaking | 1612 Hz | 4.73 | -0.7 dB |
-| Peaking | 5038 Hz | 2.31 | 0.4 dB  |
-| Peaking | 6707 Hz | 6.3  | 1.8 dB  |
-| Peaking | 7437 Hz | 1.87 | -1.4 dB |
+| Peaking | 6103 Hz | 3.61 | 4.2 dB  |
+| Peaking | 850 Hz  | 2.42 | 1.0 dB  |
+| Peaking | 1608 Hz | 4.82 | -0.7 dB |
+| Peaking | 5090 Hz | 2.5  | 0.7 dB  |
+| Peaking | 6779 Hz | 6.45 | 2.0 dB  |
+| Peaking | 7107 Hz | 1.62 | -1.5 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | -0.3 dB |
-| Peaking | 62 Hz    | 1.41 | -1.3 dB |
-| Peaking | 125 Hz   | 1.41 | -3.6 dB |
+| Peaking | 62 Hz    | 1.41 | -1.0 dB |
+| Peaking | 125 Hz   | 1.41 | -3.4 dB |
 | Peaking | 250 Hz   | 1.41 | -3.6 dB |
 | Peaking | 500 Hz   | 1.41 | -0.8 dB |
 | Peaking | 1000 Hz  | 1.41 | 1.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | -3.3 dB |
-| Peaking | 4000 Hz  | 1.41 | 6.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | 6.7 dB  |
 | Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
 ![](./Klipsch%20X20i.png)

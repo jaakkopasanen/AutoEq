@@ -51,8 +51,7 @@ def main():
     if_compensation = os.path.join(ROOT_DIR, 'innerfidelity', 'resources', 'innerfidelity_compensation_sbaf-serious.csv')
     hp_compensation = os.path.join(ROOT_DIR, 'headphonecom', 'resources', 'headphonecom_compensation_sbaf-serious.csv')
     rtings_compensation = os.path.join(ROOT_DIR, 'rtings', 'resources', 'rtings_compensation_avg.csv')
-    harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2017-1_wo_bass.csv')
-    usound = os.path.join(ROOT_DIR, 'compensation', 'usound_wo_bass.csv')
+    harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2_wo_bass.csv')
 
     if innerfidelity:
         if onear:
@@ -67,7 +66,7 @@ def main():
                 parametric_eq=True,
                 max_filters=[5, 5],
                 ten_band_eq=True,
-                bass_boost=4.0
+                bass_boost_gain=4.0
             )
 
         if inear:
@@ -82,7 +81,7 @@ def main():
                 parametric_eq=True,
                 max_filters=[5, 5],
                 ten_band_eq=True,
-                iem_bass_boost=6.0
+                bass_boost_gain=6.0
             )
 
         if earbud:
@@ -112,7 +111,7 @@ def main():
                 parametric_eq=True,
                 max_filters=[5, 5],
                 ten_band_eq=True,
-                bass_boost=4.0
+                bass_boost_gain=4.0
             )
 
         if inear:
@@ -127,7 +126,7 @@ def main():
                 parametric_eq=True,
                 max_filters=[5, 5],
                 ten_band_eq=True,
-                iem_bass_boost=6.0
+                bass_boost_gain=6.0
             )
 
         if earbud:
@@ -157,36 +156,22 @@ def main():
                 parametric_eq=True,
                 max_filters=[5, 5],
                 ten_band_eq=True,
-                bass_boost=4.0
+                bass_boost_gain=4.0
             )
 
         if inear:
             # Oratory1990 in-ear Harman in-ear 2017-1
-            print('\nProcessing oratory1990 in-ear measurements with Harman in-ear 2017-1 target...')
+            print('\nProcessing oratory1990 in-ear measurements...')
             FrequencyResponse.main(
                 input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'inear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2017-1'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2'),
                 new_only=new_only,
                 compensation=harman_inear,
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
                 ten_band_eq=True,
-                iem_bass_boost=6.0
-            )
-
-            # Oratory1990 in-ear Usound
-            print('\nProcessing oratory1990 in-ear measurements with Usound target...')
-            FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'inear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'usound'),
-                new_only=new_only,
-                compensation=usound,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                iem_bass_boost=6.0
+                bass_boost_gain=6.0
             )
 
         if earbud:
@@ -194,7 +179,7 @@ def main():
             print('\nProcessing oratory1990 ear bud measurements...')
             FrequencyResponse.main(
                 input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'earbud'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2017-1'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2'),
                 new_only=new_only,
                 compensation=harman_inear,
                 equalize=True,
@@ -216,7 +201,7 @@ def main():
                 parametric_eq=True,
                 max_filters=[5, 5],
                 ten_band_eq=True,
-                bass_boost=4.0
+                bass_boost_gain=4.0
             )
 
         if inear:
@@ -231,7 +216,7 @@ def main():
                 parametric_eq=True,
                 max_filters=[5, 5],
                 ten_band_eq=True,
-                iem_bass_boost=6.0
+                bass_boost_gain=6.0
             )
 
         if earbud:
@@ -260,35 +245,21 @@ def main():
             parametric_eq=True,
             max_filters=[5, 5],
             ten_band_eq=True,
-            bass_boost=0.0
         )
 
     if crinacle:
         # Crinacle in-ear
-        print('\nProcessing Crinacle measurements with Harman 2017-1 target...')
+        print('\nProcessing Crinacle in-ear measurements...')
         FrequencyResponse.main(
             input_dir=os.path.join(ROOT_DIR, 'crinacle', 'data', 'inear'),
-            output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2017-1'),
+            output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2'),
             new_only=new_only,
             compensation=harman_inear,
             equalize=True,
             parametric_eq=True,
             max_filters=[5, 5],
             ten_band_eq=True,
-            iem_bass_boost=6.0
-        )
-
-        print('\nProcessing Crinacle measurements with Usound target...')
-        FrequencyResponse.main(
-            input_dir=os.path.join(ROOT_DIR, 'crinacle', 'data', 'inear'),
-            output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'usound'),
-            new_only=new_only,
-            compensation=usound,
-            equalize=True,
-            parametric_eq=True,
-            max_filters=[5, 5],
-            ten_band_eq=True,
-            iem_bass_boost=6.0
+            bass_boost_gain=6.0
         )
 
 

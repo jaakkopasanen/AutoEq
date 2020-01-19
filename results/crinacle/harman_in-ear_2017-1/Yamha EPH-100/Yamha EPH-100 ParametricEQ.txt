@@ -1,9 +1,0 @@
-Filter 1: ON PK Fc 27 Hz Gain -3.0 dB Q 0.65
-Filter 2: ON PK Fc 122 Hz Gain -5.8 dB Q 0.36
-Filter 3: ON PK Fc 8103 Hz Gain 23.8 dB Q 0.34
-Filter 4: ON PK Fc 16703 Hz Gain -43.3 dB Q 0.32
-Filter 5: ON PK Fc 2113 Hz Gain -10.5 dB Q 1.19
-Filter 6: ON PK Fc 3146 Hz Gain 8.0 dB Q 0.64
-Filter 7: ON PK Fc 7728 Hz Gain -7.1 dB Q 2.96
-Filter 8: ON PK Fc 11818 Hz Gain 7.5 dB Q 2.99
-Filter 9: ON PK Fc 14823 Hz Gain -8.3 dB Q 3.83

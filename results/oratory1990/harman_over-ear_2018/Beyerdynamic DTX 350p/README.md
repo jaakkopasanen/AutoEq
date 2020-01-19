@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-0.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 28 Hz    | 0.73 | -4.4 dB  |
-| Peaking | 99 Hz    | 2.52 | -6.6 dB  |
-| Peaking | 9629 Hz  | 2.46 | -4.5 dB  |
-| Peaking | 13725 Hz | 1.81 | -4.6 dB  |
-| Peaking | 19859 Hz | 1.55 | -14.5 dB |
-| Peaking | 352 Hz   | 1.49 | 4.6 dB   |
-| Peaking | 1073 Hz  | 1.61 | -2.3 dB  |
-| Peaking | 3129 Hz  | 2.59 | 4.2 dB   |
-| Peaking | 3954 Hz  | 1.77 | -4.2 dB  |
-| Peaking | 5078 Hz  | 3.22 | 4.8 dB   |
+| Peaking | 28 Hz    | 0.73 | -4.5 dB  |
+| Peaking | 98 Hz    | 2.53 | -6.6 dB  |
+| Peaking | 9386 Hz  | 2.39 | -4.5 dB  |
+| Peaking | 13807 Hz | 1.83 | -4.6 dB  |
+| Peaking | 19941 Hz | 1.55 | -14.5 dB |
+| Peaking | 351 Hz   | 1.47 | 4.6 dB   |
+| Peaking | 1078 Hz  | 1.54 | -2.4 dB  |
+| Peaking | 3201 Hz  | 2.66 | 4.2 dB   |
+| Peaking | 3812 Hz  | 2.42 | -4.4 dB  |
+| Peaking | 5131 Hz  | 3.4  | 3.9 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.8dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -3.8 dB |
-| Peaking | 62 Hz    | 1.41 | -3.0 dB |
-| Peaking | 125 Hz   | 1.41 | -4.8 dB |
-| Peaking | 250 Hz   | 1.41 | 3.7 dB  |
-| Peaking | 500 Hz   | 1.41 | 2.7 dB  |
+| Peaking | 31 Hz    | 1.41 | -3.9 dB |
+| Peaking | 62 Hz    | 1.41 | -3.2 dB |
+| Peaking | 125 Hz   | 1.41 | -4.7 dB |
+| Peaking | 250 Hz   | 1.41 | 3.8 dB  |
+| Peaking | 500 Hz   | 1.41 | 2.6 dB  |
 | Peaking | 1000 Hz  | 1.41 | -2.9 dB |
 | Peaking | 2000 Hz  | 1.41 | 0.5 dB  |
 | Peaking | 4000 Hz  | 1.41 | 1.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.5 dB |
-| Peaking | 16000 Hz | 1.41 | -5.6 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.6 dB |
+| Peaking | 16000 Hz | 1.41 | -5.7 dB |
 
 ### Graphs
 ![](./Beyerdynamic%20DTX%20350p.png)

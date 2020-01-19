@@ -10,14 +10,14 @@ When using independent subset of filters, apply preamp of **-2.7dB**.
 |:--------|:--------|:-----|:--------|
 | Peaking | 54 Hz   | 0.81 | -3.7 dB |
 | Peaking | 139 Hz  | 1.29 | -5.0 dB |
-| Peaking | 874 Hz  | 0.1  | 2.4 dB  |
+| Peaking | 870 Hz  | 0.1  | 2.4 dB  |
 | Peaking | 2357 Hz | 2.57 | -4.6 dB |
-| Peaking | 5626 Hz | 2.44 | -8.4 dB |
-| Peaking | 3004 Hz | 3.26 | -2.5 dB |
-| Peaking | 3793 Hz | 2.12 | 3.7 dB  |
-| Peaking | 4719 Hz | 6.52 | -3.8 dB |
-| Peaking | 7004 Hz | 4.45 | -1.8 dB |
-| Peaking | 7692 Hz | 5.79 | 1.5 dB  |
+| Peaking | 5627 Hz | 2.44 | -8.4 dB |
+| Peaking | 2950 Hz | 3.85 | -2.1 dB |
+| Peaking | 3837 Hz | 2.39 | 3.5 dB  |
+| Peaking | 4735 Hz | 6.39 | -3.4 dB |
+| Peaking | 7469 Hz | 1.98 | -1.1 dB |
+| Peaking | 7989 Hz | 4.51 | 1.5 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-2.9dB**
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | 1.1 dB  |
 | Peaking | 500 Hz   | 1.41 | 1.6 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.3 dB  |
-| Peaking | 2000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.8 dB |
 | Peaking | 4000 Hz  | 1.41 | -1.3 dB |
 | Peaking | 8000 Hz  | 1.41 | -2.1 dB |
-| Peaking | 16000 Hz | 1.41 | 0.5 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.4 dB  |
 
 ### Graphs
 ![](./Takstar%20Pro%2080.png)

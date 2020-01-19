@@ -8,15 +8,16 @@ When using independent subset of filters, apply preamp of **-3.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 110 Hz   | 0.18 | -4.3 dB |
-| Peaking | 464 Hz   | 1    | 5.2 dB  |
-| Peaking | 2512 Hz  | 0.75 | 2.9 dB  |
-| Peaking | 5870 Hz  | 2.68 | -5.7 dB |
-| Peaking | 7908 Hz  | 4.92 | -3.4 dB |
-| Peaking | 5271 Hz  | 1.54 | -0.4 dB |
-| Peaking | 7353 Hz  | 0.93 | 0.4 dB  |
-| Peaking | 16465 Hz | 1.18 | 1.5 dB  |
-| Peaking | 19805 Hz | 0.65 | -7.0 dB |
+| Peaking | 81 Hz    | 0.23 | -4.2 dB |
+| Peaking | 465 Hz   | 1.21 | 4.0 dB  |
+| Peaking | 2546 Hz  | 0.85 | 2.8 dB  |
+| Peaking | 5854 Hz  | 2.74 | -5.5 dB |
+| Peaking | 7977 Hz  | 4.4  | -3.2 dB |
+| Peaking | 5806 Hz  | 1.2  | -0.4 dB |
+| Peaking | 8357 Hz  | 5.47 | -1.7 dB |
+| Peaking | 9993 Hz  | 1.09 | 2.0 dB  |
+| Peaking | 11289 Hz | 5.27 | -2.9 dB |
+| Peaking | 19671 Hz | 0.89 | -7.1 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.4dB**
@@ -24,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -3.2 dB |
-| Peaking | 62 Hz    | 1.41 | -2.8 dB |
-| Peaking | 125 Hz   | 1.41 | -3.8 dB |
-| Peaking | 250 Hz   | 1.41 | -1.7 dB |
+| Peaking | 31 Hz    | 1.41 | -3.3 dB |
+| Peaking | 62 Hz    | 1.41 | -3.0 dB |
+| Peaking | 125 Hz   | 1.41 | -3.7 dB |
+| Peaking | 250 Hz   | 1.41 | -1.6 dB |
 | Peaking | 500 Hz   | 1.41 | 3.1 dB  |
-| Peaking | 1000 Hz  | 1.41 | -0.2 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.3 dB |
 | Peaking | 2000 Hz  | 1.41 | 2.9 dB  |
 | Peaking | 4000 Hz  | 1.41 | 0.2 dB  |
 | Peaking | 8000 Hz  | 1.41 | -3.6 dB |
-| Peaking | 16000 Hz | 1.41 | -1.1 dB |
+| Peaking | 16000 Hz | 1.41 | -1.2 dB |
 
 ### Graphs
 ![](./Fostex%20TH900mk2.png)

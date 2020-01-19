@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 27 Hz    | 0.78 | 9.5 dB  |
-| Peaking | 120 Hz   | 0.21 | -6.4 dB |
-| Peaking | 957 Hz   | 1.88 | -8.3 dB |
-| Peaking | 1948 Hz  | 0.52 | 8.2 dB  |
-| Peaking | 12188 Hz | 1.79 | -4.5 dB |
-| Peaking | 1506 Hz  | 4.63 | 1.9 dB  |
-| Peaking | 2104 Hz  | 1.58 | -1.2 dB |
-| Peaking | 4859 Hz  | 2.2  | 5.1 dB  |
-| Peaking | 5836 Hz  | 3.16 | -6.9 dB |
-| Peaking | 10178 Hz | 5.89 | 1.5 dB  |
+| Peaking | 27 Hz    | 0.81 | 9.5 dB  |
+| Peaking | 121 Hz   | 0.21 | -6.3 dB |
+| Peaking | 958 Hz   | 1.92 | -8.2 dB |
+| Peaking | 1963 Hz  | 0.53 | 8.1 dB  |
+| Peaking | 12195 Hz | 1.77 | -4.6 dB |
+| Peaking | 1509 Hz  | 4.61 | 1.9 dB  |
+| Peaking | 2105 Hz  | 1.57 | -1.2 dB |
+| Peaking | 4862 Hz  | 2.19 | 5.1 dB  |
+| Peaking | 5818 Hz  | 3.16 | -6.9 dB |
+| Peaking | 10158 Hz | 5.86 | 1.5 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
@@ -26,15 +26,15 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | 6.7 dB  |
-| Peaking | 62 Hz    | 1.41 | -3.5 dB |
-| Peaking | 125 Hz   | 1.41 | -5.2 dB |
+| Peaking | 62 Hz    | 1.41 | -3.8 dB |
+| Peaking | 125 Hz   | 1.41 | -5.0 dB |
 | Peaking | 250 Hz   | 1.41 | -3.7 dB |
-| Peaking | 500 Hz   | 1.41 | -2.3 dB |
-| Peaking | 1000 Hz  | 1.41 | -4.2 dB |
+| Peaking | 500 Hz   | 1.41 | -2.4 dB |
+| Peaking | 1000 Hz  | 1.41 | -4.3 dB |
 | Peaking | 2000 Hz  | 1.41 | 7.6 dB  |
-| Peaking | 4000 Hz  | 1.41 | 5.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.1 dB  |
 | Peaking | 8000 Hz  | 1.41 | -2.1 dB |
-| Peaking | 16000 Hz | 1.41 | -1.6 dB |
+| Peaking | 16000 Hz | 1.41 | -1.7 dB |
 
 ### Graphs
 ![](./TaoTronics%20TT-BH060.png)

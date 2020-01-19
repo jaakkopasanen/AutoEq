@@ -43,7 +43,9 @@ player has that available.
 
 All parametric equalizer except Peace require you to configure the filter parameters manually with the software user
 interface. Some parametric equalizer use filter width (band width) instead of Q. Filter width can be calculated as:
-`bw = Fc / Q` where `bw` is the band width, `Fc` is center frequency and `Q` is quality.
+`bw = Fc / Q` where `bw` is the band width in Herts, `Fc` is center frequency and `Q` is quality. Filter width in
+octaves can be calculated as: `N = ln(1 + 1/(2*Q^2) + sqrt(((2*Q^2 + 1) / Q^2 )^2 / 4 - 1)) / ln(2)` where `ln` is the
+natural logarithm. See http://www.sengpielaudio.com/calculator-bandwidth.htm for an online calculator.
 
 It's very important to set preamp according to the value given in the result README.md document. Parametric eq filters
 will produce positive gains and to avoid clipping a preamp with negative gain is required.
@@ -299,7 +301,7 @@ optional arguments:
   --q Q                 Comma separated list of Q values for fixed band eq. If
                         only one value is passed it is used for all bands. Q
                         value can be calculated from bandwidth in N octaves by
-                        Q = 2^(N/2)/(2^N-1)
+                        Q = 2^(N/2)/(2^N-1).
   --ten_band_eq         Shortcut parameter for activating standard ten band eq
                         optimization.
   --max_filters MAX_FILTERS
@@ -323,13 +325,18 @@ optional arguments:
                         sampled every 20 Hz. Filter length for impulse
                         responses will be fs/f_res. Defaults to 10.
   --bass_boost BASS_BOOST
-                        Target gain for sub-bass in dB. Has sigmoid slope down
-                        from 35 Hz to 280 Hz. "--bass_boost" is mutually
-                        exclusive with "--iem_bass_boost".
+                        Bass boost shelf. Sub-bass frequencies will be boosted
+                        by this amount. Can be either a single value for a
+                        gain in dB or a comma separated list of three values
+                        for parameters of a low shelf filter, where the first
+                        is gain in dB, second is center frequency (Fc) in Hz
+                        and the last is quality (Q). When only a single value
+                        (gain) is given, default values for Fc and Q are used
+                        which are 100 Hz and 0.65, respectively. For example "
+                        --bass_boost=6" or "--bass_boost=6,150,0.69".
   --iem_bass_boost IEM_BASS_BOOST
-                        Target gain for sub-bass in dB. Has sigmoid slope down
-                        from 25 Hz to 350 Hz. "--iem_bass_boost" is mutually
-                        exclusive with "--bass_boost".
+                        iem_bass_boost argument has been removed, use "--
+                        bass_boost" instead!
   --tilt TILT           Target tilt in dB/octave. Positive value (upwards
                         slope) will result in brighter frequency response and
                         negative value (downwards slope) will result in darker
@@ -376,6 +383,7 @@ optional arguments:
                         needed.
 ```
 
+
 ### Examples
 
 #### Reproducing Results
@@ -386,7 +394,7 @@ python frequency_response.py --input_dir="oratory1990/data/onear" --output_dir="
 
 Reproducing pre-computed results for Rtings measured IEMs:
 ```bash
-python frequency_response.py --input_dir="rtings/data/inear" --output_dir="my_results/rtings/avg" --compensation="rtings/resources/rtings_compensation_avg.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --iem_bass_boost=6.0
+python frequency_response.py --input_dir="rtings/data/inear" --output_dir="my_results/rtings/avg" --compensation="rtings/resources/rtings_compensation_avg.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=6.0
 ```
 
 All parameters used for pre-computed results can be found in the `results/update.py` script.

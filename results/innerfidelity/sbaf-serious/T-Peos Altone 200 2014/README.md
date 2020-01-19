@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-5.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 74 Hz    | 0.84 | -2.8 dB |
-| Peaking | 154 Hz   | 0.83 | -3.7 dB |
-| Peaking | 753 Hz   | 1.28 | 4.9 dB  |
-| Peaking | 5248 Hz  | 2.8  | 4.2 dB  |
-| Peaking | 9652 Hz  | 2.7  | -6.1 dB |
-| Peaking | 18 Hz    | 2.38 | 1.7 dB  |
-| Peaking | 1212 Hz  | 2.83 | 1.7 dB  |
-| Peaking | 2137 Hz  | 1.84 | -3.5 dB |
-| Peaking | 3168 Hz  | 2.05 | 1.5 dB  |
-| Peaking | 12192 Hz | 3.87 | 1.1 dB  |
+| Peaking | 73 Hz    | 0.82 | -2.5 dB |
+| Peaking | 156 Hz   | 0.85 | -3.7 dB |
+| Peaking | 752 Hz   | 1.29 | 4.9 dB  |
+| Peaking | 5249 Hz  | 2.83 | 4.2 dB  |
+| Peaking | 9652 Hz  | 2.69 | -6.2 dB |
+| Peaking | 19 Hz    | 2.11 | 1.4 dB  |
+| Peaking | 1211 Hz  | 2.84 | 1.7 dB  |
+| Peaking | 2138 Hz  | 1.86 | -3.6 dB |
+| Peaking | 3163 Hz  | 2    | 1.4 dB  |
+| Peaking | 12992 Hz | 3.4  | 1.0 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.1dB**
@@ -26,15 +26,15 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | -0.1 dB |
-| Peaking | 62 Hz    | 1.41 | -3.1 dB |
-| Peaking | 125 Hz   | 1.41 | -4.4 dB |
+| Peaking | 62 Hz    | 1.41 | -2.7 dB |
+| Peaking | 125 Hz   | 1.41 | -4.2 dB |
 | Peaking | 250 Hz   | 1.41 | -2.4 dB |
 | Peaking | 500 Hz   | 1.41 | 2.4 dB  |
 | Peaking | 1000 Hz  | 1.41 | 4.9 dB  |
-| Peaking | 2000 Hz  | 1.41 | -3.8 dB |
+| Peaking | 2000 Hz  | 1.41 | -3.9 dB |
 | Peaking | 4000 Hz  | 1.41 | 3.9 dB  |
 | Peaking | 8000 Hz  | 1.41 | -3.1 dB |
-| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+| Peaking | 16000 Hz | 1.41 | -0.0 dB |
 
 ### Graphs
 ![](./T-Peos%20Altone%20200%202014.png)
