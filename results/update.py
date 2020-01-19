@@ -160,7 +160,7 @@ def main():
             )
 
         if inear:
-            # Oratory1990 in-ear Harman in-ear 2017-1
+            # Oratory1990 in-ear
             print('\nProcessing oratory1990 in-ear measurements...')
             FrequencyResponse.main(
                 input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'inear'),

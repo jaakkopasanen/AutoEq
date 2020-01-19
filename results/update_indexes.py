@@ -59,10 +59,10 @@ def write_recommendations():
     # Get links to Innerfidelity results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'sbaf-serious', '*')))))
     # Get links to Crinacle results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2017-1', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2', '*')))))
     # Get links to oratory1990 results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2017-1', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2019v2', '*')))))
     # Get links to custom results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'custom', '*')))))
 
@@ -120,12 +120,8 @@ def write_full_index():
     ))
     # Get links to Crinacle results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2017-1', '*'))),
-        'Crinacle (Harman in-ear 2017-1)'
-    ))
-    lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'usound', '*'))),
-        'Crinacle (Usound)'
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2', '*'))),
+        'Crinacle'
     ))
     # Get links to oratory1990 results
     lines.extend(get_lines(
@@ -133,15 +129,9 @@ def write_full_index():
         'oratory1990'
     ))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2017-1', '*'))),
-        'oratory1990 (Harman in-ear 2017-1)'
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2019v2', '*'))),
+        'oratory1990'
     ))
-    lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'usound', '*'))),
-        'oratory1990 (Usound)'
-    ))
-    # Get links to custom results
-    lines.extend(get_lines(glob(os.path.abspath(os.path.join('custom', '*'))), 'AutoEQ'))
 
     with open(os.path.join(DIR_PATH, 'INDEX.md'), 'w') as f:
         lines = sorted(lines, key=lambda s: s.lower())
