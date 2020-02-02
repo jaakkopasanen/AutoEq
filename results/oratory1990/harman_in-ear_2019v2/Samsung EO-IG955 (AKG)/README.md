@@ -8,14 +8,14 @@ When using independent subset of filters, apply preamp of **-0.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 65 Hz    | 0.59 | -3.6 dB |
+| Peaking | 65 Hz    | 0.58 | -3.6 dB |
 | Peaking | 161 Hz   | 1.17 | -3.5 dB |
-| Peaking | 13800 Hz | 1.13 | -4.5 dB |
-| Peaking | 15444 Hz | 1.69 | -4.5 dB |
+| Peaking | 13799 Hz | 1.13 | -4.5 dB |
+| Peaking | 15443 Hz | 1.69 | -4.5 dB |
 | Peaking | 18819 Hz | 0.64 | -9.7 dB |
 | Peaking | 816 Hz   | 1.62 | 2.8 dB  |
 | Peaking | 2060 Hz  | 0.72 | 2.3 dB  |
-| Peaking | 6418 Hz  | 2.26 | 1.7 dB  |
+| Peaking | 6418 Hz  | 2.27 | 1.7 dB  |
 | Peaking | 7045 Hz  | 2.46 | 3.1 dB  |
 | Peaking | 8153 Hz  | 2.87 | -5.3 dB |
 

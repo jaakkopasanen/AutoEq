@@ -8,6 +8,8 @@ from glob import glob
 from PIL import Image, ImageDraw
 import colorsys
 import numpy as np
+import pandas as pd
+import shutil
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from image_graph_parser import ImageGraphParser
 from frequency_response import FrequencyResponse
@@ -98,6 +100,12 @@ def pdf_to_image(input_file, output_file):
     f = open(input_file, 'rb')
 
     # Convert to image with ghostscript
+    # Using temporary paths with Ghostscript because it seems to be unable to work with non-ascii characters
+    tmp_in = os.path.join(os.path.split(input_file)[0], '__tmp.pdf')
+    tmp_out = os.path.join(os.path.split(output_file)[0], '__tmp.png')
+    if tmp_in == input_file or tmp_out == output_file:
+        return
+    shutil.copy(input_file, tmp_in)
     Ghostscript(
         b'pdf2png',
         b'-dNOPAUSE',
@@ -105,9 +113,10 @@ def pdf_to_image(input_file, output_file):
         b'-dBATCH',
         b'-r600',
         b'-dUseCropBox',
-        '-sOutputFile={}'.format(output_file).encode('utf-8'),
-        input_file.encode('utf-8')
+        f'-sOutputFile={tmp_out}'.encode('utf-8'),
+        tmp_in.encode('utf-8')
     )
+    shutil.copy(tmp_out, output_file)
     print('\nSaved image to "{}"\n'.format(output_file))
     f.close()
 
@@ -131,24 +140,45 @@ def main():
     inspection_dir = os.path.abspath(cli_args.inspection_dir)
     output_dir = os.path.abspath(cli_args.output_dir)
 
-    if not os.path.isdir(image_dir):
-        os.makedirs(image_dir)
-    if not os.path.isdir(inspection_dir):
-        os.makedirs(inspection_dir)
-    if not os.path.isdir(output_dir):
-        os.makedirs(output_dir)
+    os.makedirs(image_dir, exist_ok=True)
+    os.makedirs(inspection_dir, exist_ok=True)
+    os.makedirs(os.path.join(output_dir, 'onear'), exist_ok=True)
+    os.makedirs(os.path.join(output_dir, 'inear'), exist_ok=True)
+    os.makedirs(os.path.join(output_dir, 'earbud'), exist_ok=True)
+    os.makedirs(os.path.join(output_dir, 'unknown'), exist_ok=True)
+
+    new_data = [os.path.split(p)[1].replace('.pdf', '') for p in glob(os.path.join(output_dir, '*', '*'))]
+
+    name_index = pd.read_csv(
+        os.path.join(DIR_PATH, 'name_index.tsv'),
+        sep='\t', header=None, encoding='utf-8'
+    )
+    name_index.columns = ['original', 'correct', 'type']
 
     for file_path in glob(os.path.join(input_dir, '*.pdf')):
         print(file_path)
-        name = os.path.split(file_path)[-1].replace('.pdf', '')
+        hp_type = 'unknown'
+        name = os.path.split(file_path)[1].replace('.pdf', '')
+        item = name_index.loc[name_index['original'] == name]
+        if len(item) > 0:
+            name = item.iloc[0]['correct']
+            hp_type = item.iloc[0]['type']
+        else:
+            print(f'"{name}" not found in name index!')
+
+        if hp_type == 'ignore' or name in new_data:
+            continue
+
         output_file = os.path.join(image_dir, name + '.png')
         im = pdf_to_image(file_path, output_file)
+        if im is None:
+            continue
         fr, inspection = parse_image(im, name)
         inspection.save(os.path.join(inspection_dir, name + '.png'))
-        dir_path = os.path.join(output_dir, name)
+        dir_path = os.path.join(output_dir, hp_type, name)
         if not os.path.isdir(dir_path):
             os.makedirs(dir_path)
-        fr.write_to_csv(os.path.join(output_dir, name, name + '.csv'))
+        fr.write_to_csv(os.path.join(dir_path, name + '.csv'))
 
 
 if __name__ == '__main__':

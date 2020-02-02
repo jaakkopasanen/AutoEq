@@ -478,14 +478,27 @@ oratory1990 measurements have been done on Gras 43AG and 43AC couplers, the same
 target responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results
 are recommended over all other measurements because of this reason. Harman target data is in the `compensation` folder.
 
-Crinacle's measurements only include in-ear headphones. These measurements have been performed with IEC 60318-4
+Crinacle's measurements include only include in-ear headphones. These measurements have been performed with IEC 60318-4
 couplers and are therefore compatible with Harman in-ear targets. This fact also earns Crinacle's measurements second
 highest ranking recommendation after oratory1990.
 
-Both oratory1990 and Crinacle results also include Usound or oratory1990 target for in-ear headphones. Usound target is
-a result of research in the company where oratory1990 works. This target curve might be preferred by some who find
-Harman in-ear target missing "body" or "meat". Usound results are not listed on recommended results but can be found in
-the full index.
+In-ear results with oratory1990 target (formerly "Usound" target) are not longer given because the new 2019 Harman
+in-ear fixes the +10 kHz problems of the 2017 target. Also it is easy to transform results created for Harman 2019 to
+oratory1990 target without running the processing yourself if you are using parametric equalizer and have two filters
+(bands) available by adding these two to your eq software:
+
+| Type    |   Fc |    Q |  Gain |
+|:--------|:-----|:-----|:------|
+| Peaking |  113 | 0.75 |   3.5 |
+| Peaking | 3766 | 0.63 |  -2.3 |
+
+The results will be remarkably similar to results produced with the actual oratory1990 target:
+
+![oratory1990 vs Harman in-ear 2019](https://i.imgur.com/kGYBOev.png)
+
+Of course it's still possible to produce native results with oratory1990 target by pointing compensation to the
+oratory1990 target file: `--compensation="compensation/oratory1990.csv` or
+`--compensation="compensation/oratory1990_wo_bass.csv`
 
 Innerfidelity and Headphone.com measured headphones have
 [SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
