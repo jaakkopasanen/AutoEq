@@ -1032,17 +1032,18 @@ class FrequencyResponse:
         n_oct = np.log2(self.frequency / c)
         return n_oct * tilt
 
-    def _target(self,
-                bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
-                bass_boost_fc=DEFAULT_BASS_BOOST_FC,
-                bass_boost_q=DEFAULT_BASS_BOOST_Q,
-                tilt=None):
+    def create_target(self,
+                      bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
+                      bass_boost_fc=DEFAULT_BASS_BOOST_FC,
+                      bass_boost_q=DEFAULT_BASS_BOOST_Q,
+                      tilt=None):
         """Creates target curve with bass boost as described by harman target response.
 
         Args:
             bass_boost_gain: Bass boost amount in dB
             bass_boost_fc: Bass boost low shelf center frequency
             bass_boost_q: Bass boost low shelf quality
+            tilt: Frequency response tilt (slope) in dB per octave, positive values make it brighter
 
         Returns:
             Target for equalization
@@ -1078,7 +1079,7 @@ class FrequencyResponse:
         compensation.smoothed = np.array([])
 
         # Set target
-        self.target = compensation.raw + self._target(
+        self.target = compensation.raw + self.create_target(
             bass_boost_gain=bass_boost_gain,
             bass_boost_fc=bass_boost_fc,
             bass_boost_q=bass_boost_q,
