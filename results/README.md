@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2702 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2701 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA03](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2019v2/1Custom%20SA03)
@@ -280,7 +280,6 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Audeze LCD-i4](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2019v2/Audeze%20LCD-i4)
 - [Audeze LCD-X](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-X)
 - [Audeze LCD-XC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-XC)
-- [Audeze LCD2 Classic](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Audeze%20LCD2%20Classic)
 - [Audeze Mobius](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Audeze%20Mobius)
 - [Audeze Sine](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Audeze%20Sine)
 - [Audeze Sine (Cipher Cable)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Audeze%20Sine%20(Cipher%20Cable))
@@ -645,6 +644,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Corsair HS50](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20HS50)
 - [Corsair HS60](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20HS60)
 - [Corsair HS70 Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20HS70%20Wireless)
+- [Corsair Virtuoso RGB Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20Virtuoso%20RGB%20Wireless)
 - [Corsair Void RGB](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20Void%20RGB)
 - [Cougar Immersa](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cougar%20Immersa)
 - [Cowin E7](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cowin%20E7)
@@ -728,7 +728,6 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Denon AH-MM300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Denon%20AH-MM300)
 - [Denon AH-MM400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Denon%20AH-MM400)
 - [Denon AH-NC732K](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Denon%20AH-NC732K)
-- [Denon AHGC20](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Denon%20AHGC20)
 - [Diskin Wireless Bluetooth](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Diskin%20Wireless%20Bluetooth)
 - [Dita Audio Answer](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2019v2/Dita%20Audio%20Answer)
 - [Dita Audio Dream](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2019v2/Dita%20Audio%20Dream)

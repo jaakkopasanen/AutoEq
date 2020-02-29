@@ -377,7 +377,6 @@ from the same source.
 - [Audeze LCD-XC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Audeze%20LCD-XC) by Headphone.com
 - [Audeze LCD-XC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20LCD-XC) by Innerfidelity
 - [Audeze LCD-XC](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Audeze%20LCD-XC) by Reference Audio Analyzer
-- [Audeze LCD2 Classic](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Audeze%20LCD2%20Classic) by Rtings
 - [Audeze Mobius](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Audeze%20Mobius) by Rtings
 - [Audeze Sine (Cipher Cable)](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Audeze%20Sine%20(Cipher%20Cable)) by oratory1990
 - [Audeze Sine DX](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Audeze%20Sine%20DX) by Innerfidelity
@@ -869,6 +868,7 @@ from the same source.
 - [Corsair HS50](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20HS50) by Rtings
 - [Corsair HS60](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20HS60) by Rtings
 - [Corsair HS70 Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20HS70%20Wireless) by Rtings
+- [Corsair Virtuoso RGB Wireless](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20Virtuoso%20RGB%20Wireless) by Rtings
 - [Corsair Void RGB](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Corsair%20Void%20RGB) by Rtings
 - [Cougar Immersa](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cougar%20Immersa) by Rtings
 - [Cowin E7 Pro](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Cowin%20E7%20Pro) by Rtings
@@ -969,7 +969,6 @@ from the same source.
 - [Denon AH-MM300](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Denon%20AH-MM300) by Reference Audio Analyzer
 - [Denon AH-MM400](https://github.com/jaakkopasanen/AutoEq/tree/master/results/referenceaudioanalyzer/zero/Denon%20AH-MM400) by Reference Audio Analyzer
 - [Denon AH-NC732K](https://github.com/jaakkopasanen/AutoEq/tree/master/results/headphonecom/sbaf-serious/Denon%20AH-NC732K) by Headphone.com
-- [Denon AHGC20](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Denon%20AHGC20) by Rtings
 - [Diskin Wireless Bluetooth](https://github.com/jaakkopasanen/AutoEq/tree/master/results/rtings/avg/Diskin%20Wireless%20Bluetooth) by Rtings
 - [Dita Audio Answer](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2019v2/Dita%20Audio%20Answer) by Crinacle
 - [Dita Audio Dream sample 1](https://github.com/jaakkopasanen/AutoEq/tree/master/results/crinacle/harman_in-ear_2019v2/Dita%20Audio%20Dream%20sample%201) by Crinacle
