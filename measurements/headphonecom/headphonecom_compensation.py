@@ -1,10 +1,12 @@
 # -*- coding:utf-8 -*-
 
 import os
+import sys
 from glob import glob
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import numpy as np
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from frequency_response import FrequencyResponse
 
 

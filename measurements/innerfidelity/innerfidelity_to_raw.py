@@ -9,7 +9,9 @@ Specify input path glob in a loop.
 """
 
 import os
+import sys
 from glob import glob
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from frequency_response import FrequencyResponse
 
 

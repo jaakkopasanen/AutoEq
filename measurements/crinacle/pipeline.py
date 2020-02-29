@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import re
 import warnings
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from frequency_response import FrequencyResponse
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))

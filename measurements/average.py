@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 import re
 import argparse
 from glob import glob
 import numpy as np
 import warnings
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from frequency_response import FrequencyResponse
 
 

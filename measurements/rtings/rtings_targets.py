@@ -5,7 +5,7 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np
 from glob import glob
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from frequency_response import FrequencyResponse
 
 

@@ -113,7 +113,7 @@ GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.6; 31 -1.1; 34 -1.7; 37 -2.2; 41 -2.
 EqualizerAPO has a graphical user interface for adjusting configurations. Launch the editor from
 `C:\Program Files\EqualizerAPO\Editor.exe`.
 
-![equalizerapo-editor](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/EqualizerAPOEditor.PNG)
+![equalizerapo-editor](./img/EqualizerAPOEditor.PNG)
 
 *EqualizerAPO Editor GUI*
 
@@ -124,7 +124,7 @@ multiple different eq settings and a switch for disabling everything among other
 by clicking *Import* button and select the *<model> ParametricEQ.txt* file. Set the preamp to value mentioned in the
 results.
 
-![peace](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Peace.PNG)
+![peace](./img/Peace.PNG)
 
 *Peace with full GUI for EqualizerAPO*
 
@@ -164,7 +164,7 @@ with impulse response (WAV) files. For rooted users this is the best option.
 processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter
 and set type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
 
-![pulseeffects](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/pulseeffects.png)
+![pulseeffects](./img/pulseeffects.png)
 
 ### OSX
 System wide parametric EQ solutions on OSX typically rely on separate plugin hosting software and the actual plugin
@@ -597,7 +597,7 @@ mid point of the merged filters. If merging filters did not reduce the count eno
 count matches maximum allowed number of filters. Image below shows initialization for 1More MK801 headphone. Red dots
 are the peaks of filters before reduction and green dots are the peaks after reduction.
 
-![filter-initialization](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/FilterInitialization.png)
+![filter-initialization](./img/FilterInitialization.png)
 
 *Equalization target and initial peak filters for optimization before and after filter number limitation*
 
@@ -608,7 +608,7 @@ squared error between the sum frequency response of the filters and the target. 
 getting too small to make a practical difference the optimization is stopped. Animation below shows progress from the
 initialization to a close finished curve.
 
-![optimization-animation](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/Optimization.gif)
+![optimization-animation](./img/Optimization.gif)
 
 *Optimization of parametric eq filters (click to play)*
 
@@ -617,7 +617,7 @@ eq curve deviates from the fine equalization curve in some points but all in all
 The two equalization curves have hardly audible difference. Some headphones are not as easy to equalize properly with
 limited number of bands because highly erratic curves are impossible to be estimated with only a few peaking filters.
 
-![1more-mk801-plot](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/img/1More%20MK801.png)
+![1more-mk801-plot](./img/1More%20MK801.png)
 
 *1More MK801 with parametric equalization*
 

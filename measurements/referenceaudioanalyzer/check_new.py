@@ -3,8 +3,8 @@
 import os
 import sys
 import json
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
+DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 
 
 def main():

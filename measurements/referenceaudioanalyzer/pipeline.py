@@ -7,11 +7,11 @@ from glob import glob
 from PIL import Image, ImageDraw
 import numpy as np
 import warnings
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from image_graph_parser import ImageGraphParser
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
+from measurements.image_graph_parser import ImageGraphParser
 from frequency_response import FrequencyResponse
 
-DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 
 
 def parse_image(im, model):
