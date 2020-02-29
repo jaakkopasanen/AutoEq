@@ -16,9 +16,9 @@ def main():
         _path, source = os.path.split(_path)
         if source == 'referenceaudioanalyzer':
             # Reference Audio Analyzer measurements are not organized by type
-            measurements = list(glob(os.path.join(ROOT_DIR, source, 'data', '*')))
+            measurements = list(glob(os.path.join(ROOT_DIR, 'measurements', source, 'data', '*')))
         else:
-            measurements = list(glob(os.path.join(ROOT_DIR, source, 'data', '*', '*')))
+            measurements = list(glob(os.path.join(ROOT_DIR, 'measurements', source, 'data', '*', '*')))
         measurements = [os.path.split(measurement)[1].lower() for measurement in measurements]
         if name.lower() not in measurements and name != 'README.md':
             print(f'Removing "{path}" ...')

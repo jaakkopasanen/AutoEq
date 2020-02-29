@@ -48,17 +48,19 @@ def main():
         inear = True
         earbud = True
 
-    if_compensation = os.path.join(ROOT_DIR, 'innerfidelity', 'resources', 'innerfidelity_compensation_sbaf-serious.csv')
-    hp_compensation = os.path.join(ROOT_DIR, 'headphonecom', 'resources', 'headphonecom_compensation_sbaf-serious.csv')
-    rtings_compensation = os.path.join(ROOT_DIR, 'rtings', 'resources', 'rtings_compensation_avg.csv')
+    if_compensation = os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'resources', 'innerfidelity_compensation_sbaf-serious.csv')
+    hp_compensation = os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'resources', 'headphonecom_compensation_sbaf-serious.csv')
+    rtings_compensation = os.path.join(ROOT_DIR, 'measurements', 'rtings', 'resources', 'rtings_compensation_avg.csv')
     harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2_wo_bass.csv')
+    harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
+    zero = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
 
     if innerfidelity:
         if onear:
             # Innerfidelity on-ear SBAF-Serious
             print('\nProcessing Innerfidelity on-ear measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'innerfidelity', 'data', 'onear'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'onear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
                 new_only=new_only,
                 compensation=if_compensation,
@@ -73,7 +75,7 @@ def main():
             # Innerfidelity in-ear SBAF-Serious
             print('\nProcessing Innerfidelity in-ear measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'innerfidelity', 'data', 'inear'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
                 new_only=new_only,
                 compensation=if_compensation,
@@ -88,7 +90,7 @@ def main():
             # Innerfidelity earbud SBAF-Serious
             print('\nProcessing Innerfidelity earbud measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'innerfidelity', 'data', 'earbud'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
                 new_only=new_only,
                 compensation=if_compensation,
@@ -103,7 +105,7 @@ def main():
             # Headphone.com on-ear SBAF-Serious
             print('\nProcessing Headphone.com on-ear measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'headphonecom', 'data', 'onear'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'onear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'headphonecom', 'sbaf-serious'),
                 new_only=new_only,
                 compensation=hp_compensation,
@@ -118,7 +120,7 @@ def main():
             # Headphone.com in-ear SBAF-Serious
             print('\nProcessing Headphone.com in-ear measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'headphonecom', 'data', 'inear'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'headphonecom', 'sbaf-serious'),
                 new_only=new_only,
                 compensation=hp_compensation,
@@ -133,7 +135,7 @@ def main():
             # Headphone.com earbud SBAF-Serious
             print('\nProcessing Headphone.com earbud measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'headphonecom', 'data', 'earbud'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'headphonecom', 'sbaf-serious'),
                 new_only=new_only,
                 compensation=hp_compensation,
@@ -148,10 +150,10 @@ def main():
             # Oratory1990 on-ear
             print('\nProcessing oratory1990 on-ear measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'onear'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'onear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018'),
                 new_only=new_only,
-                compensation=os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv'),
+                compensation=harman_overear,
                 equalize=True,
                 parametric_eq=True,
                 max_filters=[5, 5],
@@ -163,7 +165,7 @@ def main():
             # Oratory1990 in-ear
             print('\nProcessing oratory1990 in-ear measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'inear'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2'),
                 new_only=new_only,
                 compensation=harman_inear,
@@ -178,7 +180,7 @@ def main():
             # Oratory1990 earbud
             print('\nProcessing oratory1990 ear bud measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'oratory1990', 'data', 'earbud'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2'),
                 new_only=new_only,
                 compensation=harman_inear,
@@ -193,7 +195,7 @@ def main():
             # Rtings on-ear Avg
             print('\nProcessing Rtings on-ear measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'onear'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'onear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
                 new_only=new_only,
                 compensation=rtings_compensation,
@@ -208,7 +210,7 @@ def main():
             # Rtings in-ear Avg
             print('\nProcessing Rtings in-ear measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'inear'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
                 new_only=new_only,
                 compensation=rtings_compensation,
@@ -223,7 +225,7 @@ def main():
             # Rtings earbud Avg
             print('\nProcessing Rtings earbud measurements...')
             FrequencyResponse.main(
-                input_dir=os.path.join(ROOT_DIR, 'rtings', 'data', 'earbud'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
                 new_only=new_only,
                 compensation=rtings_compensation,
@@ -237,10 +239,10 @@ def main():
         # Reference Audio Analyzer on-ear
         print('\nProcessing Reference Audio Analyzer measurements...')
         FrequencyResponse.main(
-            input_dir=os.path.join(ROOT_DIR, 'referenceaudioanalyzer', 'data'),
+            input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data'),
             output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'zero'),
             new_only=new_only,
-            compensation=os.path.join(ROOT_DIR, 'compensation', 'zero.csv'),
+            compensation=zero,
             equalize=True,
             parametric_eq=True,
             max_filters=[5, 5],
@@ -251,7 +253,7 @@ def main():
         # Crinacle in-ear
         print('\nProcessing Crinacle in-ear measurements...')
         FrequencyResponse.main(
-            input_dir=os.path.join(ROOT_DIR, 'crinacle', 'data', 'inear'),
+            input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'inear'),
             output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2'),
             new_only=new_only,
             compensation=harman_inear,
