@@ -105,9 +105,9 @@ env/
 inspect/
 my_data/
 my_results/
-*/images
-*/inspection
-*/pdf
+**/images
+**/inspection
+**/pdf
 rtings/raw_data/
 measurements/crinacle/data/
 measurements/crinacle/data.bak/
