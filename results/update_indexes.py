@@ -16,7 +16,7 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 def form_url(rel_path):
     url = '/'.join(FrequencyResponse._split_path(rel_path))
-    url = 'https://github.com/jaakkopasanen/AutoEq/tree/master/results/{}'.format(url)
+    url = './{}'.format(url)
     url = urllib.parse.quote(url, safe="%/:=&?~#+!$,;'@()*[]")
     return url
 

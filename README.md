@@ -1,13 +1,13 @@
 # AutoEQ
 **TL;DR** If you are here just looking to make your headphones sound better, find your headphone model in
-[results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder's recommended headphones list
+[results](./results) folder's recommended headphones list
 and follow instructions in [Usage](#usage) section. 
 
 ## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
 frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
 This project currently has almost 2000 headphones covered in the
-[results](https://github.com/jaakkopasanen/AutoEq/tree/master/results) folder.
+[results](./results) folder.
 See [Usage](#usage) for instructions how to use the results with
 different equalizer softwares and
 [Results](#results) section for details about parameters and how the results were
@@ -27,7 +27,7 @@ except for Crinacle's raw data. Everything is stored as CSV files so they are ea
 language or even Microsoft Excel. See [Data Processing](#data-processing)
 for more technical description about how things were obtained and processed.
 
-![Sennheiser HD 800](https://raw.githubusercontent.com/jaakkopasanen/AutoEq/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)
+![Sennheiser HD 800](./master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)
 
 *Sennheiser HD 800 equalization results plotted*
 
@@ -76,7 +76,7 @@ don't have adjustable frequency information, only gain. All other types are pref
 some devices these are the only available ones.
 
 Fixed band equalizers have trouble compensating for narrow notches and peaks that fall between two bands. Good example
-is [Sennheiser HD 800](https://github.com/jaakkopasanen/AutoEq/tree/master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800)
+is [Sennheiser HD 800](./results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800)
 with it's 6 kHz peak that is right in between 4 kHz and 8 kHz bands of standard 10-band equalizer.
 When using 10-band equalizer check if the fixed band equalization curve is very different than the desired equalization
 curve at some frequency and adjust the nearby filters by ear for best results.
@@ -104,7 +104,7 @@ parametric equalizers such as [Roon](https://roonlabs.com/) and [Foobar2000](htt
 It's possible to use plain [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
 `C:\Program Files\EqualizerAPO\config\config.txt`. Replace contents of the file with the GraphicEQ.txt file found in
 results. Preamp is not needed because it is incorporated into the GraphicEQ line. Using
-[Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/innerfidelity/sbaf-serious/Sennheiser%20HD%20650)
+[Sennheiser HD 650](./innerfidelity/sbaf-serious/Sennheiser%20HD%20650)
 would make config file look like this:
 ```
 GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.6; 31 -1.1; 34 -1.7; 37 -2.2; 41 -2.8; 45 -3.3; 49 -3.6; 54 -3.8; 60 -4.4; 66 -4.8; 72 -4.6; 79 -5.2; 87 -6.4; 96 -7.0; 106 -7.4; 116 -7.7; 128 -8.0; 141 -8.2; 155 -8.4; 170 -8.3; 187 -8.5; 206 -8.5; 227 -8.3; 249 -8.3; 274 -8.0; 302 -7.9; 332 -7.7; 365 -7.5; 402 -7.4; 442 -7.1; 486 -7.0; 535 -7.0; 588 -6.6; 647 -6.5; 712 -6.4; 783 -6.2; 861 -6.5; 947 -6.5; 1042 -6.3; 1146 -6.8; 1261 -7.0; 1387 -7.3; 1526 -7.3; 1678 -7.6; 1846 -7.5; 2031 -6.8; 2234 -6.7; 2457 -6.3; 2703 -6.0; 2973 -6.5; 3270 -7.1; 3597 -6.9; 3957 -6.0; 4353 -6.1; 4788 -5.3; 5267 -1.4; 5793 -0.6; 6373 -1.7; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
@@ -469,7 +469,7 @@ not been included.
 Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
 [target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 would be found in
-[innerfidelity/sbaf-serious/Sennheiser HD 650](https://github.com/jaakkopasanen/AutoEq/tree/master/results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650).
+[innerfidelity/sbaf-serious/Sennheiser HD 650](./results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650).
 Multiple measurements of a same headphone by a same measurement entity are averaged. All different measurements for
 averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
 averaged data which has no suffixes in the name.
