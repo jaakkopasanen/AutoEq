@@ -41,16 +41,13 @@ def download(urls, output_dir, file_type=None):
         if r.status_code != 200:
             warnings.warn(f'Failed to download "{model}" at "{url}"')
             continue
-        try:
-            if file_type is None:
-                file_type = url.split('.')[-1]
-            file_path = os.path.join(output_dir, '{}.{}'.format(model, file_type))
-            with open(file_path, 'wb') as f:
-                r.raw.decode_content = True
-                shutil.copyfileobj(r.raw, f)
-        except OSError as err:
-            print(f'Failed to save "{model}"')
-            continue
+        if file_type is None:
+            file_type = url.split('.')[-1]
+            file_type = file_type.split('?')[0]
+        file_path = os.path.join(output_dir, '{}.{}'.format(model, file_type))
+        with open(file_path, 'wb') as f:
+            r.raw.decode_content = True
+            shutil.copyfileobj(r.raw, f)
         del r
         print('Downloaded to "{}"'.format(file_path))
 

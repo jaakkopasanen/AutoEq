@@ -66,7 +66,7 @@ def write_recommendations():
     # Get links to custom results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'custom', '*')))))
 
-    with open(os.path.join(DIR_PATH, 'README.md'), 'w') as f:
+    with open(os.path.join(DIR_PATH, 'README.md'), 'w', encoding='utf-8') as f:
         keys = sorted(urls.keys(), key=lambda s: s.lower())
         s = '''# Recommended Results
         This is a list of recommended results. Results for other measurements and target curves are available for many
@@ -133,7 +133,7 @@ def write_full_index():
         'oratory1990'
     ))
 
-    with open(os.path.join(DIR_PATH, 'INDEX.md'), 'w') as f:
+    with open(os.path.join(DIR_PATH, 'INDEX.md'), 'w', encoding='utf-8') as f:
         lines = sorted(lines, key=lambda s: s.lower())
         s = '''# Index
         This is a list of all equalization profiles. Target is in parentheses if there are results with multiple targets

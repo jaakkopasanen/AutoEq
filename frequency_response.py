@@ -179,7 +179,7 @@ class FrequencyResponse:
     @classmethod
     def read_from_csv(cls, file_path):
         """Reads data from CSV file and constructs class instance."""
-        name = os.path.split(file_path)[-1].split('.')[0]
+        name = '.'.join(os.path.split(file_path)[1].split('.')[:-1])
 
         # Read file
         f = open(file_path, 'r')

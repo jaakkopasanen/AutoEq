@@ -108,7 +108,8 @@ my_results/
 **/images
 **/inspection
 **/pdf
-rtings/raw_data/
+**/json
+**/data/ignore
 measurements/crinacle/data/
 measurements/crinacle/data.bak/
 measurements/crinacle/raw_data/

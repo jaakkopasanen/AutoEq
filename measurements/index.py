@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 
+import os
+import sys
+from glob import glob
 import pandas as pd
+import re
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
+from measurements.utils import split_path
 
 
 class Item:
@@ -20,28 +26,6 @@ class Index:
             for item in items:
                 self.add(item)
 
-    @property
-    def items(self):
-        items = []
-        for i, row in self.df.iterrows():
-            items.append(Item(row['false_name'], row['true_name'], row['form']))
-        return items
-
-    @classmethod
-    def read(cls, file_path):
-        index = cls()
-        df = pd.read_csv(file_path, sep='\t', header=0, encoding='utf-8')
-        if not df.columns.all(['false_name', 'true_name', 'form']):
-            raise TypeError(f'"{file_path}" columns {df.columns} are corrupted')
-        df.fillna('', inplace=True)
-        for i, row in df.iterrows():
-            index.add(Item(row['false_name'], row['true_name'], row['form']))
-        return index
-
-    def write(self, file_path):
-        df = self.df.sort_values(by=['false_name'])
-        df.to_csv(file_path, sep='\t', header=True, index=False)
-
     def add(self, item):
         """Add an item to index
 
@@ -51,7 +35,47 @@ class Index:
         Returns:
             None
         """
-        self.df = self.df.append(pd.DataFrame([[item.false_name, item.true_name, item.form]], columns=self.df.columns))
+        form = item.form
+        if form is None:
+            form = ''
+        self.df = self.df.append(pd.DataFrame([[item.false_name, item.true_name, form]], columns=self.df.columns))
+
+    @property
+    def items(self):
+        items = []
+        for i, row in self.df.iterrows():
+            items.append(Item(row['false_name'], row['true_name'], row['form']))
+        return items
+
+    @classmethod
+    def read_files(cls, glob_pattern):
+        index = cls()
+        for file in glob(glob_pattern):
+            form = None
+            path_components = split_path(os.path.abspath(file))
+            name = path_components[-1]
+            for component in path_components:
+                if component in ['onear', 'inear', 'earbud']:
+                    form = component
+            name = re.sub(r'\.[tc]sv$', '', name)
+            item = Item(name, name, form)
+            index.add(item)
+        return index
+
+    @classmethod
+    def read_tsv(cls, file_path):
+        index = cls()
+        df = pd.read_csv(file_path, sep='\t', header=0, encoding='utf-8')
+        if not df.columns.all(['false_name', 'true_name', 'form']):
+            raise TypeError(f'"{file_path}" columns {df.columns} are corrupted')
+        df.fillna('', inplace=True)
+        for i, row in df.iterrows():
+            index.add(Item(row['false_name'], row['true_name'], row['form']))
+        return index
+
+    def write_tsv(self, file_path):
+        df = self.df.iloc[self.df['false_name'].str.lower().argsort()]
+        df.to_csv(file_path, sep='\t', header=True, index=False, encoding='utf-8')
 
     def find_by_false_name(self, name):
         """Find a single Item by false name
