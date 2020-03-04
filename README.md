@@ -27,7 +27,7 @@ except for Crinacle's raw data. Everything is stored as CSV files so they are ea
 language or even Microsoft Excel. See [Data Processing](#data-processing)
 for more technical description about how things were obtained and processed.
 
-![Sennheiser HD 800](./master/results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)
+![Sennheiser HD 800](./results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)
 
 *Sennheiser HD 800 equalization results plotted*
 
@@ -162,7 +162,8 @@ with impulse response (WAV) files. For rooted users this is the best option.
 #### PulseEffects
 [PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
 processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter
-and set type to "Peak", frequency to given center frequency to Fc and width to `Fc / Q`. Adjust gain with the slider.
+and set type to "Bell" and the gain with the slider. Number of filters can be changed by clicking the screwdriver and
+wrench button. Pre-amp can be adjusted with the input slider.
 
 ![pulseeffects](./img/pulseeffects.png)
 
