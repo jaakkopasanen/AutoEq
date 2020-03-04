@@ -162,8 +162,8 @@ with impulse response (WAV) files. For rooted users this is the best option.
 #### PulseEffects
 [PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
 processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter
-and set type to "Bell" and the gain with the slider. Number of filters can be changed by clicking the screwdriver and
-wrench button. Pre-amp can be adjusted with the input slider.
+and set type to "Bell" and adjust the gain with the slider. Number of filters can be changed by clicking the screwdriver
+and wrench button. Pre-amp can be adjusted with the input slider.
 
 ![pulseeffects](./img/pulseeffects.png)
 
