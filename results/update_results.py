@@ -250,19 +250,34 @@ def main():
         )
 
     if crinacle:
-        # Crinacle in-ear
-        print('\nProcessing Crinacle in-ear measurements...')
-        FrequencyResponse.main(
-            input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'inear'),
-            output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2'),
-            new_only=new_only,
-            compensation=harman_inear,
-            equalize=True,
-            parametric_eq=True,
-            max_filters=[5, 5],
-            ten_band_eq=True,
-            bass_boost_gain=6.0
-        )
+        # if onear:
+        #     # Crinacle on-ear
+        #     print('\nProcessing Crinacle on-ear measurements...')
+        #     FrequencyResponse.main(
+        #         input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear'),
+        #         output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_over-ear_2018'),
+        #         new_only=new_only,
+        #         compensation=harman_overear,
+        #         equalize=True,
+        #         parametric_eq=True,
+        #         max_filters=[5, 5],
+        #         ten_band_eq=True,
+        #         bass_boost_gain=4.0
+        #     )
+        if inear:
+            # Crinacle in-ear
+            print('\nProcessing Crinacle in-ear measurements...')
+            FrequencyResponse.main(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'inear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2'),
+                new_only=new_only,
+                compensation=harman_inear,
+                equalize=True,
+                parametric_eq=True,
+                max_filters=[5, 5],
+                ten_band_eq=True,
+                bass_boost_gain=6.0
+            )
 
 
 if __name__ == '__main__':

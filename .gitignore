@@ -110,8 +110,6 @@ my_results/
 **/pdf
 **/json
 **/data/ignore
-measurements/crinacle/data/
-measurements/crinacle/data.bak/
-measurements/crinacle/raw_data/
+measurements/crinacle/*data*/
 results/crinacle/*/*/*.csv
 chromedriver*

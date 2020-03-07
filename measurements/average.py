@@ -11,7 +11,7 @@ sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from frequency_response import FrequencyResponse
 
 
-def main(input_dir=None, output_dir=None):
+def average_measurements(input_dir=None, output_dir=None):
     if input_dir is None:
         raise TypeError('Input directory path is required!')
     if output_dir is None:
@@ -22,10 +22,9 @@ def main(input_dir=None, output_dir=None):
     models = {}
     for file_path in glob(os.path.join(input_dir, '*')):
         model = os.path.split(file_path)[-1]
-        if not (re.search(' sample [a-zA-Z0-9]$', model, re.IGNORECASE) or re.search(' sn[a-zA-Z0-9]+$', model, re.IGNORECASE)):
+        if not re.search(r' \((sample |sn)[a-zA-Z0-9]+\)$', model, re.IGNORECASE):
             continue
-        norm = re.sub(' sample [a-zA-Z0-9]$', '', model, 0, re.IGNORECASE)
-        norm = re.sub(' sn[a-zA-Z0-9]+$', '', norm, 0, re.IGNORECASE)
+        norm = re.sub(r' \((sample |sn)[a-zA-Z0-9]+\)$', '', model, 0, flags=re.IGNORECASE)
         try:
             models[norm].append(model)
         except KeyError as err:
@@ -33,9 +32,8 @@ def main(input_dir=None, output_dir=None):
 
     for norm, origs in models.items():
         if len(origs) > 1:
-            print(norm, origs)
-            avg = np.zeros(613)
             f = FrequencyResponse.generate_frequencies()
+            avg = np.zeros(len(f))
             for model in origs:
                 fr = FrequencyResponse.read_from_csv(os.path.join(input_dir, model, model + '.csv'))
                 fr.interpolate()
@@ -44,10 +42,8 @@ def main(input_dir=None, output_dir=None):
             avg /= len(origs)
             fr = FrequencyResponse(name=norm, frequency=f, raw=avg)
             d = os.path.join(output_dir, norm)
-            if not os.path.isdir(d):
-                os.makedirs(d)
+            os.makedirs(d, exist_ok=True)
             fr.write_to_csv(os.path.join(d, norm + '.csv'))
-            #fr.plot_graph()
 
 
 def create_cli():
@@ -59,4 +55,4 @@ def create_cli():
 
 
 if __name__ == '__main__':
-    main(**create_cli())
+    average_measurements(**create_cli())

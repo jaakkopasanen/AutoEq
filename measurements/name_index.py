@@ -5,6 +5,7 @@ import sys
 from glob import glob
 import pandas as pd
 import re
+from fuzzywuzzy import fuzz
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.utils import split_path
 
@@ -17,6 +18,9 @@ class NameItem:
 
     def __str__(self):
         return '\t'.join([self.false_name, self.true_name, self.form])
+
+    def copy(self):
+        return NameItem(self.false_name, self.true_name, self.form)
 
 
 class NameIndex:
@@ -39,6 +43,13 @@ class NameIndex:
         true_name = item.true_name if item.true_name is not None else ''
         form = item.form if item.form is not None else ''
         self.df = self.df.append(pd.DataFrame([[false_name, true_name, form]], columns=self.df.columns))
+
+    def update_by_false_name(self, item):
+        """Finds items by false name and updates them to the give item."""
+        if self.find_by_false_name(item.false_name):
+            self.df.loc[self.df['false_name'] == item.false_name] = [item.false_name, item.true_name, item.form]
+        else:
+            self.add(item)
 
     @property
     def items(self):
@@ -99,19 +110,37 @@ class NameIndex:
             name: True name
 
         Returns:
-            List of matching Items
+            List of matching NameItems
         """
         arr = self.df.loc[self.df['true_name'] == name].to_numpy()
         return [NameItem(*row) for row in arr]
 
     def find_by_form(self, form):
-        """Find all Items by form name
+        """Find all NameItems by form name
 
         Args:
             form: Form name
 
         Returns:
-            List of matching Items
+            List of matching NameItems
         """
         arr = self.df.loc[self.df['form'] == form].to_numpy()
         return [NameItem(*row) for row in arr]
+
+    def search_by_false_name(self, name, threshold=80):
+        """Finds all items which match closely to given name query
+
+        Args:
+            name: Name to find
+            threshold: Threshold for matching with FuzzyWuzzy token_set_ratio
+
+        Returns:
+            NameIndex with closely matching NameItems
+        """
+        matches = []
+        for item in self.items:
+            ratio = fuzz.ratio(item.false_name, name)
+            token_set_ratio = fuzz.token_set_ratio(item.false_name.lower(), name.lower())
+            if ratio > threshold or token_set_ratio > threshold:
+                matches.append([item, ratio, token_set_ratio])
+        return sorted(matches, key=lambda x: x[1], reverse=True)

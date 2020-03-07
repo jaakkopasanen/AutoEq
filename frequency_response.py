@@ -1643,16 +1643,20 @@ class FrequencyResponse:
             sound_signature.interpolate()
             sound_signature.center()
 
-        n = 0
-        n_total = len(list(glob_files))
+        # Add files
+        n_total = 0
+        file_paths = []
         for input_file_path in glob_files:
-            if output_dir:
-                relative_path = os.path.relpath(input_file_path, input_dir)
-                output_file_path = os.path.join(output_dir, relative_path)
-                if os.path.isfile(output_file_path) and new_only:
-                    # Skip file for which result already exists
-                    continue
-                output_dir_path = os.path.dirname(output_file_path)
+            relative_path = os.path.relpath(input_file_path, input_dir)
+            output_file_path = os.path.join(output_dir, relative_path) if output_dir else None
+            if not (os.path.isfile(output_file_path) and new_only):
+                file_paths.append((input_file_path, output_file_path))
+                n_total += 1
+
+        n = 0
+        for input_file_path, output_file_path in file_paths:
+            if output_file_path is not None:
+                output_dir_path, _ = os.path.split(output_file_path)
 
             # Read data from input file
             fr = FrequencyResponse.read_from_csv(input_file_path)
@@ -1689,8 +1693,7 @@ class FrequencyResponse:
 
             if output_dir:
                 # Copy relative path to output directory
-                if not os.path.isdir(output_dir_path):
-                    os.makedirs(output_dir_path, exist_ok=True)
+                os.makedirs(output_dir_path, exist_ok=True)
 
                 if equalize:
                     # Write EqualizerAPO GraphicEq settings to file

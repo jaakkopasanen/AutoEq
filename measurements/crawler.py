@@ -7,14 +7,15 @@ import shutil
 import json
 from abc import ABC, abstractmethod
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from measurements.name_index import NameItem
+from measurements.name_index import NameIndex, NameItem
 from measurements.utils import prompt_name, prompt_form
 
 
 class Crawler(ABC):
-    def __init__(self, driver=None):
+    def __init__(self, driver=None, names=None):
         self.driver = driver
         self.name_index = self.read_name_index()
+        self.names = names
         self.existing = self.get_existing()
         self.links = self.get_links()
 
@@ -81,7 +82,9 @@ class Crawler(ABC):
         for false_name, link in self.links.items():
             try:
                 item = self.name_index.find_by_false_name(false_name)
-                if item:
+                if item and item.form == 'ignore':
+                    continue
+                if item and item.true_name:
                     # Name index contains the entry
                     if self.existing.find_by_true_name(item.true_name):
                         # Exists already, skip
@@ -89,15 +92,24 @@ class Crawler(ABC):
                     self.process(item, link)
                 else:
                     if prompt:
-                        print(f'"{false_name}" is not known.')
-                        true_name = prompt_name([false_name])
+                        print(f'\n"{false_name}" is not known.')
+                        if self.names is not None:
+                            name_options = self.names.search_by_false_name(false_name)
+                            name_options = [match[0].true_name + (' ✓' if match[1] == 100 else '') for match in name_options]
+                        else:
+                            name_options = [false_name]
+                        true_name = prompt_name(name_options)
+                        if true_name is None:
+                            self.name_index.update_by_false_name(NameItem(false_name, None, 'ignore'))
+                            continue
+                        true_name = true_name.replace(' ✓', '')
                         form = prompt_form()
                         item = NameItem(false_name, true_name, form)
-                        self.name_index.add(item)
+                        self.name_index.update_by_false_name(item)
                         self.process(item, link)
                     else:
                         print(f'"{false_name}" is not known. Add true name and form to name index and run this again.')
-                        self.name_index.add(NameItem(false_name, None, None))
+                        self.name_index.update_by_false_name(NameItem(false_name, None, None))
 
             except Exception as err:
                 raise err

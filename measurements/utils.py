@@ -5,15 +5,19 @@ import os
 
 def prompt_name(options=None):
     options = options if options is not None else []
+    if 'skip' not in options:
+        options.insert(0, 'skip')
     s = 'What is it\'s true name?'
     if len(options):
         s += ' Select a number or write the name if none of the options.'
     print(s)
     if len(options):
-        print(f'\n'.join(f'[{i+1}] {o}' for i, o in enumerate(options)))
+        print(f'\n'.join(f'[{i}] {o}' for i, o in enumerate(options)))
     name = input('> ')
     try:
-        name = options[int(name) - 1]
+        name = options[int(name)]
+        if name == 'skip':
+            return None
     except (KeyError, ValueError):
         pass
     return name

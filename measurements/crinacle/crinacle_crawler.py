@@ -1,0 +1,147 @@
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+from glob import glob
+import re
+import numpy as np
+import requests
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
+from measurements.name_index import NameIndex, NameItem
+from measurements.crawler import Crawler
+from frequency_response import FrequencyResponse
+
+DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+
+
+class CrinacleCrawler(Crawler):
+    def __init__(self, driver=None, names=None):
+        super().__init__(names=self.get_names())
+
+    def get_names(self):
+        """Downloads parses phone books to get names
+
+        Returns:
+            NameIndex
+        """
+        names = NameIndex()
+        res = requests.get('https://crinacle.com/graphing/data_hp/phone_book.json')  # Headphone book
+        hp_book = self.parse_book(res.json())
+        for false_name, true_name in hp_book.items():
+            names.add(NameItem(false_name, true_name, 'onear'))
+        res = requests.get('https://crinacle.com/graphing/data/phone_book.json')  # IEM book
+        iem_book = self.parse_book(res.json())
+        for false_name, true_name in iem_book.items():
+            names.add(NameItem(false_name, true_name, 'inear'))
+        return names
+
+    @staticmethod
+    def parse_book(data):
+        """Parses a phone book as dict with false names as keys and true names as values.
+
+        Args:
+            data: Phone book object
+
+        Returns:
+            Dict with false names and true names
+        """
+        book = dict()
+        for manufacturer in data:
+            manufacturer_name = manufacturer['name']
+            if 'suffix' in manufacturer:
+                manufacturer_name += f' {manufacturer["suffix"]}'
+            for model in manufacturer['phones']:
+                if type(model) == str:
+                    # Plain string
+                    book[model.strip()] = f'{manufacturer_name} {model}'.strip()
+
+                else:
+                    # Object
+                    if type(model['file']) == str:
+                        # Single file as string, wrap in list
+                        model['file'] = [model['file']]
+
+                    if 'suffix' in model:
+                        for f, suffix in zip(model['file'], model['suffix']):
+                            book[f.strip()] = f'{manufacturer_name} {model["name"]} {suffix}'.strip()
+                    else:
+                        for f in model['file']:
+                            book[f.strip()] = f'{manufacturer_name} {model["name"]}'.strip()
+
+        return book
+
+    @staticmethod
+    def read_name_index():
+        return NameIndex.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
+
+    def write_name_index(self):
+        self.name_index.write_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
+
+    @staticmethod
+    def get_existing():
+        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*'))
+
+    def get_links(self):
+        # Link source is not a web page but raw_data folder
+        links = dict()
+        for fp in glob(os.path.join(DIR_PATH, 'raw_data', '*')):
+            name = os.path.split(fp)[1]
+            name = re.sub(r' [LR]\d*\.txt', '', name).replace('.txt', '')
+            name = re.sub(r' #\d$', '', name)
+            if name not in links:
+                links[name] = []
+            links[name].append(fp)
+        return links
+
+    @staticmethod
+    def process(item, links):
+        fr = FrequencyResponse(name=item.true_name)
+        fr.raw = np.zeros(fr.frequency.shape)
+        for fp in links:
+            # Read file
+            with open(fp, 'r') as fh:
+                s = fh.read()
+
+            freq = []
+            raw = []
+            for line in s.split('\n'):
+                if len(line) == 0 or line[0] == '*':
+                    # Skip empty lines and comments
+                    if 'C-weighting compensation: On' in line:
+                        print(f'C-weighted measurement: {item.false_name}')
+                    continue
+
+                frp = line.split(' ')
+                if len(frp) == 1:
+                    frp = line.split('\t')
+                if len(frp) == 2:
+                    f, r = frp
+                elif len(frp) == 3:
+                    f, r, p = frp
+                else:
+                    # Must be comment line
+                    continue
+
+                if f == '?' or r == '?':
+                    # Skip lines with missing data
+                    continue
+
+                try:
+                    freq.append(float(f))
+                    raw.append(float(r))
+                except ValueError as err:
+                    # Failed to convert values to floats, must be header or comment row, skip
+                    continue
+
+            # Create standard fr object
+            _fr = FrequencyResponse(name=item.true_name, frequency=freq, raw=raw)
+            _fr.interpolate()
+            _fr.center()
+            fr.raw += _fr.raw
+
+        # Save
+        dir_path = os.path.join(DIR_PATH, 'data', item.form, fr.name)
+        os.makedirs(dir_path, exist_ok=True)
+        file_path = os.path.join(dir_path, f'{fr.name}.csv')
+        fr.write_to_csv(file_path)
+        print(f'Saved "{fr.name}" to "{file_path}"')
