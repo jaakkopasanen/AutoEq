@@ -7,7 +7,7 @@ import json
 import numpy as np
 from bs4 import BeautifulSoup
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.index import Index
+from measurements.name_index import NameIndex
 from measurements.crawler import Crawler
 from frequency_response import FrequencyResponse
 
@@ -25,17 +25,16 @@ INEAR_TARGET = FrequencyResponse.read_from_csv(
 class RtingsCrawler(Crawler):
     @staticmethod
     def read_name_index():
-        return Index.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
+        return NameIndex.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
 
     def write_name_index(self):
         self.name_index.write_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
 
     @staticmethod
     def get_existing():
-        return Index.read_files(os.path.join(DIR_PATH, 'data', '*', '*'))
+        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*'))
 
-    @staticmethod
-    def get_links():
+    def get_links(self):
         res = requests.get('https://www.rtings.com/headphones/1-4/graph')
         document = BeautifulSoup(res.content, 'html.parser')
         links = {}
@@ -98,7 +97,7 @@ class RtingsCrawler(Crawler):
         dir_path = os.path.join(DIR_PATH, 'inspection')
         os.makedirs(dir_path, exist_ok=True)
         file_path = os.path.join(dir_path, f'{fr.name}.png')
-        fr.plot_graph(file_path=file_path)
+        fr.plot_graph(file_path=file_path, show=False)
 
         # Write to file
         dir_path = os.path.join(DIR_PATH, 'data', item.form, fr.name)

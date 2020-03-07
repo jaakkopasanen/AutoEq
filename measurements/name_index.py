@@ -9,17 +9,17 @@ sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.utils import split_path
 
 
-class Item:
+class NameItem:
     def __init__(self, false_name, true_name, form):
         self.false_name = false_name
-        self.true_name = true_name if true_name else false_name
+        self.true_name = true_name
         self.form = form
 
     def __str__(self):
         return '\t'.join([self.false_name, self.true_name, self.form])
 
 
-class Index:
+class NameIndex:
     def __init__(self, items=None):
         self.df = pd.DataFrame([], columns=['false_name', 'true_name', 'form'])
         if items is not None:
@@ -35,16 +35,16 @@ class Index:
         Returns:
             None
         """
-        form = item.form
-        if form is None:
-            form = ''
-        self.df = self.df.append(pd.DataFrame([[item.false_name, item.true_name, form]], columns=self.df.columns))
+        false_name = item.false_name if item.false_name is not None else ''
+        true_name = item.true_name if item.true_name is not None else ''
+        form = item.form if item.form is not None else ''
+        self.df = self.df.append(pd.DataFrame([[false_name, true_name, form]], columns=self.df.columns))
 
     @property
     def items(self):
         items = []
         for i, row in self.df.iterrows():
-            items.append(Item(row['false_name'], row['true_name'], row['form']))
+            items.append(NameItem(row['false_name'], row['true_name'], row['form']))
         return items
 
     @classmethod
@@ -58,7 +58,7 @@ class Index:
                 if component in ['onear', 'inear', 'earbud']:
                     form = component
             name = re.sub(r'\.[tc]sv$', '', name)
-            item = Item(name, name, form)
+            item = NameItem(name, name, form)
             index.add(item)
         return index
 
@@ -70,7 +70,7 @@ class Index:
             raise TypeError(f'"{file_path}" columns {df.columns} are corrupted')
         df.fillna('', inplace=True)
         for i, row in df.iterrows():
-            index.add(Item(row['false_name'], row['true_name'], row['form']))
+            index.add(NameItem(row['false_name'], row['true_name'], row['form']))
         return index
 
     def write_tsv(self, file_path):
@@ -88,7 +88,7 @@ class Index:
         """
         try:
             row = self.df.loc[self.df['false_name'] == name].to_numpy()[0]
-            return Item(*row)
+            return NameItem(*row)
         except IndexError:
             return None
 
@@ -102,7 +102,7 @@ class Index:
             List of matching Items
         """
         arr = self.df.loc[self.df['true_name'] == name].to_numpy()
-        return [Item(*row) for row in arr]
+        return [NameItem(*row) for row in arr]
 
     def find_by_form(self, form):
         """Find all Items by form name
@@ -114,4 +114,4 @@ class Index:
             List of matching Items
         """
         arr = self.df.loc[self.df['form'] == form].to_numpy()
-        return [Item(*row) for row in arr]
+        return [NameItem(*row) for row in arr]

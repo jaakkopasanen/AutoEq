@@ -4,13 +4,16 @@ import os
 import sys
 import requests
 import shutil
+import json
 from abc import ABC, abstractmethod
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from measurements.index import Item
+from measurements.name_index import NameItem
+from measurements.utils import prompt_name, prompt_form
 
 
 class Crawler(ABC):
-    def __init__(self):
+    def __init__(self, driver=None):
+        self.driver = driver
         self.name_index = self.read_name_index()
         self.existing = self.get_existing()
         self.links = self.get_links()
@@ -44,9 +47,8 @@ class Crawler(ABC):
         """
         pass
 
-    @staticmethod
     @abstractmethod
-    def get_links():
+    def get_links(self):
         """Crawls measurement links
 
         Returns:
@@ -68,7 +70,7 @@ class Crawler(ABC):
         """
         pass
 
-    def process_new(self):
+    def process_new(self, prompt=True):
         """Processes all new measurements
 
         Updates name index with the new entries now found in the name index previously.
@@ -86,8 +88,16 @@ class Crawler(ABC):
                         continue
                     self.process(item, link)
                 else:
-                    print(f'"{false_name}" is not known. Add true name and form to name index and run this again.')
-                    self.name_index.add(Item(false_name, '', None))
+                    if prompt:
+                        print(f'"{false_name}" is not known.')
+                        true_name = prompt_name([false_name])
+                        form = prompt_form()
+                        item = NameItem(false_name, true_name, form)
+                        self.name_index.add(item)
+                        self.process(item, link)
+                    else:
+                        print(f'"{false_name}" is not known. Add true name and form to name index and run this again.')
+                        self.name_index.add(NameItem(false_name, None, None))
 
             except Exception as err:
                 raise err

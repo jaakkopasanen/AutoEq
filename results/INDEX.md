@@ -552,6 +552,7 @@ from the same source.
 - [AZLA Orta](./crinacle/harman_in-ear_2019v2/AZLA%20Orta) by Crinacle
 - [Bang & Olufsen Beoplay 3i](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%203i) by Rtings
 - [Bang & Olufsen Beoplay E8 2.0](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%202.0) by Rtings
+- [Bang & Olufsen Beoplay E8 3.0](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%203.0) by Rtings
 - [Bang & Olufsen Beoplay E8](./crinacle/harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8) by Crinacle
 - [Bang & Olufsen Beoplay E8](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8) by Rtings
 - [Bang & Olufsen Beoplay Earset Wireless](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20Earset%20Wireless) by Rtings
@@ -1579,6 +1580,7 @@ from the same source.
 - [Jabra Elite Active 45e](./rtings/avg/Jabra%20Elite%20Active%2045e) by Rtings
 - [Jabra Elite Active 65t](./crinacle/harman_in-ear_2019v2/Jabra%20Elite%20Active%2065t) by Crinacle
 - [Jabra Elite Active 65t](./rtings/avg/Jabra%20Elite%20Active%2065t) by Rtings
+- [Jabra Elite Active 75t](./rtings/avg/Jabra%20Elite%20Active%2075t) by Rtings
 - [Jabra Elite Sport](./rtings/avg/Jabra%20Elite%20Sport) by Rtings
 - [Jabra Evolve 65t](./rtings/avg/Jabra%20Evolve%2065t) by Rtings
 - [Jabra Evolve 75e](./oratory1990/harman_in-ear_2019v2/Jabra%20Evolve%2075e) by oratory1990
@@ -3003,6 +3005,7 @@ from the same source.
 - [Sony WH1000XM3](./oratory1990/harman_over-ear_2018/Sony%20WH1000XM3) by oratory1990
 - [Sony WI-1000X](./oratory1990/harman_in-ear_2019v2/Sony%20WI-1000X) by oratory1990
 - [Sony WI-1000X](./rtings/avg/Sony%20WI-1000X) by Rtings
+- [Sony WI-1000XM2](./rtings/avg/Sony%20WI-1000XM2) by Rtings
 - [Sony WI-C200](./rtings/avg/Sony%20WI-C200) by Rtings
 - [Sony WI-C300](./rtings/avg/Sony%20WI-C300) by Rtings
 - [Sony WI-C310](./rtings/avg/Sony%20WI-C310) by Rtings

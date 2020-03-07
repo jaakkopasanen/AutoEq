@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2723 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2726 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA03](./crinacle/harman_in-ear_2019v2/1Custom%20SA03)
@@ -412,6 +412,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Bang & Olufsen Beoplay 3i](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%203i)
 - [Bang & Olufsen Beoplay E8](./crinacle/harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8)
 - [Bang & Olufsen Beoplay E8 2.0](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%202.0)
+- [Bang & Olufsen Beoplay E8 3.0](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%203.0)
 - [Bang & Olufsen Beoplay Earset Wireless](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20Earset%20Wireless)
 - [Bang & Olufsen Beoplay H6](./innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6)
 - [Bang & Olufsen Beoplay H6 2nd Gen](./innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6%202nd%20Gen)
@@ -1212,6 +1213,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Jabra Elite 85h](./rtings/avg/Jabra%20Elite%2085h)
 - [Jabra Elite Active 45e](./rtings/avg/Jabra%20Elite%20Active%2045e)
 - [Jabra Elite Active 65t](./crinacle/harman_in-ear_2019v2/Jabra%20Elite%20Active%2065t)
+- [Jabra Elite Active 75t](./rtings/avg/Jabra%20Elite%20Active%2075t)
 - [Jabra Elite Sport](./rtings/avg/Jabra%20Elite%20Sport)
 - [Jabra Evolve 65t](./rtings/avg/Jabra%20Evolve%2065t)
 - [Jabra Evolve 75e](./oratory1990/harman_in-ear_2019v2/Jabra%20Evolve%2075e)
@@ -2297,6 +2299,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Sony WH-XB900N](./rtings/avg/Sony%20WH-XB900N)
 - [Sony WH1000XM3](./oratory1990/harman_over-ear_2018/Sony%20WH1000XM3)
 - [Sony WI-1000X](./oratory1990/harman_in-ear_2019v2/Sony%20WI-1000X)
+- [Sony WI-1000XM2](./rtings/avg/Sony%20WI-1000XM2)
 - [Sony WI-C200](./rtings/avg/Sony%20WI-C200)
 - [Sony WI-C300](./rtings/avg/Sony%20WI-C300)
 - [Sony WI-C310](./rtings/avg/Sony%20WI-C310)

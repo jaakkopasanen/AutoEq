@@ -9,9 +9,8 @@ from PIL import Image, ImageDraw
 import colorsys
 import numpy as np
 import shutil
-import requests
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.index import Index
+from measurements.name_index import NameIndex
 from measurements.crawler import Crawler
 from measurements.image_graph_parser import ImageGraphParser
 from frequency_response import FrequencyResponse
@@ -22,23 +21,22 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 class Oratory1990Crawler(Crawler):
     @staticmethod
     def read_name_index():
-        return Index.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
+        return NameIndex.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
 
     def write_name_index(self):
         self.name_index.write_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
 
     @staticmethod
     def get_existing():
-        return Index.read_files(os.path.join(DIR_PATH, 'data', '*', '*'))
+        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*'))
 
-    @staticmethod
-    def get_links():
-        res = requests.get('https://www.reddit.com/r/oratory1990/wiki/index/list_of_presets')
-        with open(os.path.join(DIR_PATH, 'reddit.html'), 'w') as fh:
-           fh.write(res.text)
-        document = BeautifulSoup(res.content, 'html.parser')
-        # with open(os.path.join(DIR_PATH, 'reddit.html')) as fh:
-        #     document = BeautifulSoup(fh.read(), 'html.parser')
+    def get_links(self):
+        if self.driver is None:
+            raise TypeError('self.driver cannot be None')
+
+        self.driver.get('https://www.reddit.com/r/oratory1990/wiki/index/list_of_presets')
+        html = self.driver.find_element_by_tag_name('html').get_attribute('outerHTML')
+        document = BeautifulSoup(html, 'html.parser')
         links = {}
         table_header = document.find(id='wiki_full_list.3A')
         if table_header is None:

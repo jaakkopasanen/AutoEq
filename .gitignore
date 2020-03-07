@@ -114,3 +114,4 @@ measurements/crinacle/data/
 measurements/crinacle/data.bak/
 measurements/crinacle/raw_data/
 results/crinacle/*/*/*.csv
+chromedriver*

@@ -3,13 +3,30 @@
 import os
 
 
-def prompt_type():
-    types = ['onear', 'inear', 'earbud']
-    print(f'What is it\'s type?\n' + '\n'.join(f'[{i}] {t}' for i, t in enumerate(types)))
+def prompt_name(options=None):
+    options = options if options is not None else []
+    s = 'What is it\'s true name?'
+    if len(options):
+        s += ' Select a number or write the name if none of the options.'
+    print(s)
+    if len(options):
+        print(f'\n'.join(f'[{i+1}] {o}' for i, o in enumerate(options)))
+    name = input('> ')
+    try:
+        name = options[int(name) - 1]
+    except (KeyError, ValueError):
+        pass
+    return name
+
+
+def prompt_form():
+    options = ['onear', 'inear', 'earbud']
+    print('What is it\'s type?')
+    print(f'\n'.join(f'[{i+1}] {o}' for i, o in enumerate(options)))
     while True:
         form = input('> ')
         try:
-            return types[int(form)]
+            return options[int(form) - 1]
         except:
             print('That didn\'t work, try again.')
 
