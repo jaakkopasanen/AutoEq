@@ -239,7 +239,7 @@ from the same source.
 - [AKG N5005 (bass boost)](./crinacle/harman_in-ear_2019v2/AKG%20N5005%20(bass%20boost)) by Crinacle
 - [AKG N5005 (high)](./crinacle/harman_in-ear_2019v2/AKG%20N5005%20(high)) by Crinacle
 - [AKG N5005 (mid high)](./crinacle/harman_in-ear_2019v2/AKG%20N5005%20(mid%20high)) by Crinacle
-- [AKG N5005 (reference)](./crinacle/crinacle_over-ear/AKG%20N5005%20(reference)) by Crinacle
+- [AKG N5005 (reference)](./crinacle/harman_in-ear_2019v2/AKG%20N5005%20(reference)) by Crinacle
 - [AKG N5005](./oratory1990/harman_in-ear_2019v2/AKG%20N5005) by oratory1990
 - [AKG N60 NC Wireless Bluetooth](./oratory1990/harman_over-ear_2018/AKG%20N60%20NC%20Wireless%20Bluetooth) by oratory1990
 - [AKG N60NC Wired Passive](./innerfidelity/sbaf-serious/AKG%20N60NC%20Wired%20Passive) by Innerfidelity
