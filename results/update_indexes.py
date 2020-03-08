@@ -29,15 +29,14 @@ def get_urls(files):
         model = os.path.split(rel_path)[-1]
         if model == 'README.md' or 'fake' in model.lower():
             continue
-        if re.search(' sample [a-zA-Z0-9]$', model, re.IGNORECASE) or re.search(' sn[a-zA-Z0-9]+$', model,
-                                                                                re.IGNORECASE):
+        if re.search(r' \(?(sample |sn)[a-zA-Z0-9]+\)?$', model, flags=re.IGNORECASE):
             # Skip measurements with sample or serial number, those have averaged results
-            model = re.sub(' sample [a-zA-Z0-9]$', '', model, 0, re.IGNORECASE)
-            model = re.sub(' sn[a-zA-Z0-9]+$', '', model, 0, re.IGNORECASE)
+            normalized = re.sub(r' \(?(sample |sn)[a-zA-Z0-9]+\)?$', '', model, flags=re.IGNORECASE)
             try:
-                skipped[model].append(rel_path)
+                skipped[normalized].append(rel_path)
             except KeyError as err:
-                skipped[model] = [rel_path]
+                skipped[normalized] = [rel_path]
+            print(f'Skipped "{model}"')
             continue
         urls[model.lower()] = '- [{model}]({url})'.format(model=model, url=form_url(rel_path))
 
@@ -152,14 +151,14 @@ def get_graphic_eqs(files):
         model = model.replace(' GraphicEQ.txt', '')
         if model == 'README.md' or 'fake' in model.lower():
             continue
-        if re.search(' sample [a-zA-Z0-9]$', model, re.IGNORECASE) or re.search(' sn[a-zA-Z0-9]+$', model, re.IGNORECASE):
+        if re.search(r' \(?(sample |sn)[a-zA-Z0-9]+\)?$', model, re.IGNORECASE):
             # Skip measurements with sample or serial number, those have averaged results
-            model = re.sub(' sample [a-zA-Z0-9]$', '', model, 0, re.IGNORECASE)
-            model = re.sub(' sn[a-zA-Z0-9]+$', '', model, 0, re.IGNORECASE)
+            normalized = re.sub(r' \(?(sample |sn)[a-zA-Z0-9]+\)?$', '', model, flags=re.IGNORECASE)
             try:
-                skipped[model.lower()].append(path)
+                skipped[normalized].append(path)
             except KeyError as err:
-                skipped[model.lower()] = [path]
+                skipped[normalized] = [path]
+            print(f'Skipped "{model}"')
             continue
         with open(path, 'r') as f:
             data[model.lower()] = {'model': model, 'eq': f.read()}
