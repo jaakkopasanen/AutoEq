@@ -139,6 +139,8 @@ class CrinacleCrawler(Crawler):
             _fr.center()
             fr.raw += _fr.raw
 
+        fr.raw /= len(links)
+
         # Save
         dir_path = os.path.join(DIR_PATH, 'data', item.form, fr.name)
         os.makedirs(dir_path, exist_ok=True)

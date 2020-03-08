@@ -36,7 +36,6 @@ def get_urls(files):
                 skipped[normalized].append(rel_path)
             except KeyError as err:
                 skipped[normalized] = [rel_path]
-            print(f'Skipped "{model}"')
             continue
         urls[model.lower()] = '- [{model}]({url})'.format(model=model, url=form_url(rel_path))
 
@@ -58,6 +57,7 @@ def write_recommendations():
     # Get links to Innerfidelity results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'sbaf-serious', '*')))))
     # Get links to Crinacle results
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'crinacle_over-ear', '*')))))
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2', '*')))))
     # Get links to oratory1990 results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*')))))
@@ -119,6 +119,10 @@ def write_full_index():
     ))
     # Get links to Crinacle results
     lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'crinacle_over-ear', '*'))),
+        'Crinacle'
+    ))
+    lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2', '*'))),
         'Crinacle'
     ))
@@ -158,7 +162,6 @@ def get_graphic_eqs(files):
                 skipped[normalized].append(path)
             except KeyError as err:
                 skipped[normalized] = [path]
-            print(f'Skipped "{model}"')
             continue
         with open(path, 'r') as f:
             data[model.lower()] = {'model': model, 'eq': f.read()}

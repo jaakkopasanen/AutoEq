@@ -53,6 +53,7 @@ def main():
     rtings_compensation = os.path.join(ROOT_DIR, 'measurements', 'rtings', 'resources', 'rtings_compensation_avg.csv')
     harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2_wo_bass.csv')
     harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
+    crinacle_overear = os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'resources', 'crinacle_over-ear.csv')
     zero = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
 
     if innerfidelity:
@@ -250,20 +251,20 @@ def main():
         )
 
     if crinacle:
-        # if onear:
-        #     # Crinacle on-ear
-        #     print('\nProcessing Crinacle on-ear measurements...')
-        #     FrequencyResponse.main(
-        #         input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear'),
-        #         output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_over-ear_2018'),
-        #         new_only=new_only,
-        #         compensation=harman_overear,
-        #         equalize=True,
-        #         parametric_eq=True,
-        #         max_filters=[5, 5],
-        #         ten_band_eq=True,
-        #         bass_boost_gain=4.0
-        #     )
+        if onear:
+            # Crinacle on-ear
+            print('\nProcessing Crinacle on-ear measurements...')
+            FrequencyResponse.main(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'crinacle_over-ear'),
+                new_only=new_only,
+                compensation=crinacle_overear,
+                equalize=True,
+                parametric_eq=True,
+                max_filters=[5, 5],
+                ten_band_eq=True,
+                bass_boost_gain=4.0
+            )
         if inear:
             # Crinacle in-ear
             print('\nProcessing Crinacle in-ear measurements...')
