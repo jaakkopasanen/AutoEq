@@ -26,6 +26,9 @@ def main():
     harman_nobass = FrequencyResponse.read_from_csv(os.path.join(
         DIR_PATH, os.pardir, os.pardir, 'compensation', 'harman_over-ear_2018_wo_bass.csv'
     ))
+    harman = FrequencyResponse.read_from_csv(os.path.join(
+        DIR_PATH, os.pardir, os.pardir, 'compensation', 'harman_over-ear_2018.csv'
+    ))
     oratory1990 = measurements(os.path.join(DIR_PATH, os.pardir, 'oratory1990', 'data', 'onear'))
     crinacle = measurements(os.path.join(DIR_PATH, 'data', 'onear'))
     pairs = []
@@ -74,6 +77,8 @@ def main():
     axs[1].set_ylim([-15, 15])
 
     harman_nobass.plot_graph(fig=fig, ax=axs[2], show=False, color='C0')
+    crinacle_bass = harman.copy()
+    crinacle_bass.raw += fr.raw
     crinacle_nobass = harman_nobass.copy()
     crinacle_nobass.raw += fr.raw
     crinacle_nobass.plot_graph(fig=fig, ax=axs[2], show=False, color='C1')
@@ -87,6 +92,11 @@ def main():
     resources_dir = os.path.join(DIR_PATH, 'resources')
     os.makedirs(resources_dir, exist_ok=True)
     fig.savefig(os.path.join(DIR_PATH, 'resources', 'calibration.png'), bbox_inches='tight')
+
+    crinacle_bass.name = 'Crinacle Over-ear Target with Harman Bass Boost'
+    crinacle_bass.plot_graph(show=False, file_path=os.path.join(resources_dir, 'crinacle_over-ear_bass.png'), color='C0')
+    crinacle_bass.write_to_csv(file_path=os.path.join(resources_dir, 'crinacle_over-ear_bass.csv'))
+
     crinacle_nobass.name = 'Crinacle Over-ear Target'
     crinacle_nobass.plot_graph(show=False, file_path=os.path.join(resources_dir, 'crinacle_over-ear.png'), color='C0')
     crinacle_nobass.write_to_csv(file_path=os.path.join(resources_dir, 'crinacle_over-ear.csv'))
