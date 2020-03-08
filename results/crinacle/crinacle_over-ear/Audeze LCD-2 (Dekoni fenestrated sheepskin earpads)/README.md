@@ -1,23 +1,23 @@
-# Audece LCD-2 (Dekoni fenestrated sheepskin earpads)
+# Audeze LCD-2 (Dekoni fenestrated sheepskin earpads)
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-5.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 660 Hz   | 0.17 | -2.7 dB  |
-| Peaking | 1716 Hz  | 1.97 | 5.7 dB   |
-| Peaking | 4725 Hz  | 0.77 | 8.2 dB   |
-| Peaking | 5698 Hz  | 2.26 | -9.3 dB  |
-| Peaking | 20374 Hz | 0.24 | -11.2 dB |
-| Peaking | 16 Hz    | 0.65 | 1.8 dB   |
-| Peaking | 947 Hz   | 4.45 | -0.9 dB  |
-| Peaking | 7410 Hz  | 2.35 | -0.7 dB  |
-| Peaking | 11803 Hz | 2.31 | 2.8 dB   |
-| Peaking | 13337 Hz | 4    | -5.3 dB  |
+| Peaking | 637 Hz   | 0.16 | -2.7 dB  |
+| Peaking | 1725 Hz  | 1.94 | 5.8 dB   |
+| Peaking | 4698 Hz  | 0.8  | 8.2 dB   |
+| Peaking | 5709 Hz  | 2.26 | -9.3 dB  |
+| Peaking | 20137 Hz | 0.25 | -10.9 dB |
+| Peaking | 14 Hz    | 0.55 | 1.9 dB   |
+| Peaking | 946 Hz   | 4.76 | -1.0 dB  |
+| Peaking | 8060 Hz  | 1.67 | -0.9 dB  |
+| Peaking | 11985 Hz | 1.19 | 3.2 dB   |
+| Peaking | 13608 Hz | 4.01 | -6.2 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.3dB**
@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | -9.2 dB |
 
 ### Graphs
-![](./Audece%20LCD-2%20(Dekoni%20fenestrated%20sheepskin%20earpads).png)
+![](./Audeze%20LCD-2%20(Dekoni%20fenestrated%20sheepskin%20earpads).png)

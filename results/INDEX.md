@@ -354,7 +354,6 @@ from the same source.
 - [ASUS ROG Strix Fusion 700 (leather pads)](./referenceaudioanalyzer/zero/ASUS%20ROG%20Strix%20Fusion%20700%20(leather%20pads)) by Reference Audio Analyzer
 - [ASUS Strix Fusion 300](./referenceaudioanalyzer/zero/ASUS%20Strix%20Fusion%20300) by Reference Audio Analyzer
 - [Atomic Floyd SuperDarts](./crinacle/harman_in-ear_2019v2/Atomic%20Floyd%20SuperDarts) by Crinacle
-- [Audece LCD-2 (Dekoni fenestrated sheepskin earpads)](./crinacle/crinacle_over-ear/Audece%20LCD-2%20(Dekoni%20fenestrated%20sheepskin%20earpads)) by Crinacle
 - [Audeo PFE 121 Black Filter](./innerfidelity/sbaf-serious/Audeo%20PFE%20121%20Black%20Filter) by Innerfidelity
 - [Audeo PFE 121 Gray Filter](./innerfidelity/sbaf-serious/Audeo%20PFE%20121%20Gray%20Filter) by Innerfidelity
 - [Audeo PFE 121 Green Filter](./innerfidelity/sbaf-serious/Audeo%20PFE%20121%20Green%20Filter) by Innerfidelity
@@ -375,6 +374,7 @@ from the same source.
 - [Audeze LCD-1](./innerfidelity/sbaf-serious/Audeze%20LCD-1) by Innerfidelity
 - [Audeze LCD-1](./oratory1990/harman_over-ear_2018/Audeze%20LCD-1) by oratory1990
 - [Audeze LCD-1](./rtings/avg/Audeze%20LCD-1) by Rtings
+- [Audeze LCD-2 (Dekoni fenestrated sheepskin earpads)](./crinacle/crinacle_over-ear/Audeze%20LCD-2%20(Dekoni%20fenestrated%20sheepskin%20earpads)) by Crinacle
 - [Audeze LCD-2 Classic](./crinacle/crinacle_over-ear/Audeze%20LCD-2%20Classic) by Crinacle
 - [Audeze LCD-2 Classic](./innerfidelity/sbaf-serious/Audeze%20LCD-2%20Classic) by Innerfidelity
 - [Audeze LCD-2 Classic](./oratory1990/harman_over-ear_2018/Audeze%20LCD-2%20Classic) by oratory1990
