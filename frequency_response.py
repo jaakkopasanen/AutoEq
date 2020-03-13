@@ -733,7 +733,7 @@ class FrequencyResponse:
         interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
         gain_f_min = interpolator(np.log10(f_min))
         # Run interpolation
-        fr.interpolate(np.arange(0, fs // 2, f_res), pol_order=1)
+        fr.interpolate(np.arange(0.0, fs // 2, f_res), pol_order=1)
         # Set gain for all frequencies below original minimum frequency to match gain at the original minimum frequency
         fr.raw[fr.frequency <= f_min] = gain_f_min
         if normalize:
@@ -761,7 +761,7 @@ class FrequencyResponse:
         interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
         gain_f_min = interpolator(np.log10(f_min))
         # Run interpolation
-        fr.interpolate(np.arange(0, fs // 2, f_res))
+        fr.interpolate(np.arange(0.0, fs // 2, f_res), pol_order=1)
         # Set gain for all frequencies below original minimum frequency to match gain at the original minimum frequency
         fr.raw[fr.frequency <= f_min] = gain_f_min
         if normalize:
