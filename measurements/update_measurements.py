@@ -15,7 +15,7 @@ from measurements.average import average_measurements
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 
-def main(crinacle=False, oratory1990=False, rtings=False):
+def main(crinacle=False, oratory1990=False, rtings=False, prompt=False):
     classes = []
     if crinacle or (not oratory1990 and not rtings):
         classes.append(CrinacleCrawler)
@@ -34,7 +34,7 @@ def main(crinacle=False, oratory1990=False, rtings=False):
     for cls in classes:
         print(f'Running {cls.__name__}')
         crawler = cls(driver=driver)
-        crawler.process_new(prompt=True)
+        crawler.process_new(prompt=prompt)
         crawler.write_name_index()
 
     for dir_path in glob(os.path.join(DIR_PATH, '*', 'data', '*')):
@@ -49,6 +49,7 @@ def create_cli():
     parser.add_argument('--crinacle', action='store_true', help='Update Crinacle measurements?')
     parser.add_argument('--oratory1990', action='store_true', help='Update oratory1990 measurements?')
     parser.add_argument('--rtings', action='store_true', help='Update Rtings measurements?')
+    parser.add_argument('--prompt', action='store_true', help='Prompt for true names and forms?')
     return vars(parser.parse_args())
 
 

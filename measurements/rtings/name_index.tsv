@@ -69,8 +69,8 @@ AUKEY Latitude	AUKEY Latitude	inear
 B&O PLAY E8	Bang & Olufsen Beoplay E8	inear
 B&O PLAY E8 2.0	Bang & Olufsen Beoplay E8 2.0	inear
 B&O PLAY E8 3.0	Bang & Olufsen Beoplay E8 3.0	inear
-B&O PLAY Earset 3i	Bang & Olufsen Beoplay 3i	inear
-B&O PLAY Earset Wireless	Bang & Olufsen Beoplay Earset Wireless	inear
+B&O PLAY Earset 3i	Bang & Olufsen Beoplay Earset 3i	earbud
+B&O PLAY Earset Wireless	Bang & Olufsen Beoplay Earset Wireless	earbud
 B&O PLAY H6	Bang & Olufsen Beoplay H6	onear
 B&O PLAY H9	Bang & Olufsen Beoplay H9	onear
 B&O PLAY H9i	Bang & Olufsen Beoplay H9i	onear
@@ -88,6 +88,7 @@ Beats Studio3 Wireless	Beats Studio3 Wireless	onear
 Beats urBeats	Beats urBeats	inear
 Beats urBeats3	Beats urBeats3	inear
 Betron YSM1000	Betron YSM1000	inear
+Beyerdynamic Amiron Wireless	Beyerdynamic Amiron Wireless	onear
 Beyerdynamic DT 1770 PRO	Beyerdynamic DT 1770 (Velour Earpads)	onear
 Beyerdynamic DT 1990 PRO	Beyerdynamic DT 1990 (Balanced Earpads)	onear
 Beyerdynamic DT 770 Pro	Beyerdynamic DT 770 250 Ohm (new earpads)	onear
@@ -165,6 +166,7 @@ HiFiMan Sundara	HiFiMan Sundara	onear
 HyperX Cloud Alpha	HyperX Cloud Alpha	onear
 HyperX Cloud Core	HyperX Cloud Core	onear
 HyperX Cloud Flight	HyperX Cloud Flight	onear
+HyperX Cloud Flight S	HyperX Cloud Flight S	onear
 HyperX Cloud II	HyperX Cloud II	onear
 HyperX Cloud Mix	HyperX Cloud Mix	onear
 HyperX Cloud Revolver	HyperX Cloud Revolver	onear
@@ -248,6 +250,7 @@ Microsoft Surface Headphones	Microsoft Surface Headphones	onear
 Mixcder E9	Mixcder E9	onear
 Monoprice Enhanced Active	Monoprice Enhanced Active	inear
 Monoprice Noise Cancelling	Monoprice Noise Cancelling	onear
+Monster Clarity 101 AirLinks	Monster Clarity 101 AirLinks	inear
 Monster Inspiration	Monster Inspiration	onear
 Mpow Bluetooth Over-Ear	Mpow Bluetooth Over-Ear	onear
 Mpow H10	Mpow H10	onear
@@ -412,6 +415,7 @@ Tascam TH-02	Tascam TH-02	onear
 TIN Audio T2	TIN Audio T2	inear
 TIN Audio T3	TIN Audio T3	inear
 TOZO T10	TOZO T10	inear
+TOZO T6	TOZO T6	inear
 TREBLAB X5	TREBLAB X5	inear
 Turtle Beach Battle Buds	Turtle Beach Battle Buds	inear
 Turtle Beach Elite 800	Turtle Beach Elite 800	onear

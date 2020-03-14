@@ -600,15 +600,14 @@ from the same source.
 - [AZLA 01R Mk2](./crinacle/harman_in-ear_2019v2/AZLA%2001R%20Mk2) by Crinacle
 - [AZLA Horizon](./crinacle/harman_in-ear_2019v2/AZLA%20Horizon) by Crinacle
 - [AZLA Orta](./crinacle/harman_in-ear_2019v2/AZLA%20Orta) by Crinacle
-- [Bang & Olufsen Beoplay 3i](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%203i) by Rtings
 - [Bang & Olufsen Beoplay E8 2.0](./crinacle/harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8%202.0) by Crinacle
 - [Bang & Olufsen Beoplay E8 2.0](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%202.0) by Rtings
 - [Bang & Olufsen Beoplay E8 3.0](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%203.0) by Rtings
 - [Bang & Olufsen Beoplay E8](./crinacle/harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8) by Crinacle
 - [Bang & Olufsen Beoplay E8](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8) by Rtings
+- [Bang & Olufsen Beoplay Earset 3i](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20Earset%203i) by Rtings
 - [Bang & Olufsen Beoplay Earset Wireless](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20Earset%20Wireless) by Rtings
 - [Bang & Olufsen Beoplay H6 2nd Gen](./innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6%202nd%20Gen) by Innerfidelity
-- [Bang & Olufsen Beoplay H6 2nd Gen](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20H6%202nd%20Gen) by Rtings
 - [Bang & Olufsen Beoplay H6](./innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6) by Innerfidelity
 - [Bang & Olufsen Beoplay H6](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20H6) by Rtings
 - [Bang & Olufsen Beoplay H9](./oratory1990/harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9) by oratory1990
@@ -650,6 +649,7 @@ from the same source.
 - [Behringer HPS5000](./innerfidelity/sbaf-serious/Behringer%20HPS5000) by Innerfidelity
 - [Betron YSM1000](./rtings/avg/Betron%20YSM1000) by Rtings
 - [Beyerdynamic Amiron Home](./oratory1990/harman_over-ear_2018/Beyerdynamic%20Amiron%20Home) by oratory1990
+- [Beyerdynamic Amiron Wireless](./rtings/avg/Beyerdynamic%20Amiron%20Wireless) by Rtings
 - [Beyerdynamic Aventho Wireless](./oratory1990/harman_over-ear_2018/Beyerdynamic%20Aventho%20Wireless) by oratory1990
 - [Beyerdynamic Blue Byrd](./oratory1990/harman_in-ear_2019v2/Beyerdynamic%20Blue%20Byrd) by oratory1990
 - [Beyerdynamic Custom One Pro linear bass position](./headphonecom/sbaf-serious/Beyerdynamic%20Custom%20One%20Pro%20linear%20bass%20position) by Headphone.com
@@ -1654,6 +1654,7 @@ from the same source.
 - [HyperX Cloud Alpha](./oratory1990/harman_over-ear_2018/HyperX%20Cloud%20Alpha) by oratory1990
 - [HyperX Cloud Alpha](./rtings/avg/HyperX%20Cloud%20Alpha) by Rtings
 - [HyperX Cloud Core](./rtings/avg/HyperX%20Cloud%20Core) by Rtings
+- [HyperX Cloud Flight S](./rtings/avg/HyperX%20Cloud%20Flight%20S) by Rtings
 - [HyperX Cloud Flight](./rtings/avg/HyperX%20Cloud%20Flight) by Rtings
 - [HyperX Cloud II](./rtings/avg/HyperX%20Cloud%20II) by Rtings
 - [HyperX Cloud Mix](./rtings/avg/HyperX%20Cloud%20Mix) by Rtings
@@ -2179,6 +2180,7 @@ from the same source.
 - [Monster Beats Solo](./innerfidelity/sbaf-serious/Monster%20Beats%20Solo) by Innerfidelity
 - [Monster Beats Studio](./innerfidelity/sbaf-serious/Monster%20Beats%20Studio) by Innerfidelity
 - [Monster Beats Tour](./innerfidelity/sbaf-serious/Monster%20Beats%20Tour) by Innerfidelity
+- [Monster Clarity 101 AirLinks](./rtings/avg/Monster%20Clarity%20101%20AirLinks) by Rtings
 - [Monster Diesel Vektr](./referenceaudioanalyzer/zero/Monster%20Diesel%20Vektr) by Reference Audio Analyzer
 - [Monster DNA Pro2](./innerfidelity/sbaf-serious/Monster%20DNA%20Pro2) by Innerfidelity
 - [Monster Elements Wireless On-Ear](./referenceaudioanalyzer/zero/Monster%20Elements%20Wireless%20On-Ear) by Reference Audio Analyzer
@@ -3511,6 +3513,7 @@ from the same source.
 - [Torque t402v OverEar Yellow](./innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Yellow) by Innerfidelity
 - [Toshiba HR-810 Low Gain](./innerfidelity/sbaf-serious/Toshiba%20HR-810%20Low%20Gain) by Innerfidelity
 - [TOZO T10](./rtings/avg/TOZO%20T10) by Rtings
+- [TOZO T6](./rtings/avg/TOZO%20T6) by Rtings
 - [Tralucent 1Plus1.2](./crinacle/harman_in-ear_2019v2/Tralucent%201Plus1.2) by Crinacle
 - [Tralucent 1Plus2.3](./crinacle/harman_in-ear_2019v2/Tralucent%201Plus2.3) by Crinacle
 - [Tralucent 1Plus5.2](./crinacle/harman_in-ear_2019v2/Tralucent%201Plus5.2) by Crinacle

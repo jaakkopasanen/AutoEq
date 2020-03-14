@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2937 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2941 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA02](./crinacle/harman_in-ear_2019v2/1Custom%20SA02)
@@ -448,10 +448,10 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [AZLA 01R Mk2](./crinacle/harman_in-ear_2019v2/AZLA%2001R%20Mk2)
 - [AZLA Horizon](./crinacle/harman_in-ear_2019v2/AZLA%20Horizon)
 - [AZLA Orta](./crinacle/harman_in-ear_2019v2/AZLA%20Orta)
-- [Bang & Olufsen Beoplay 3i](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%203i)
 - [Bang & Olufsen Beoplay E8](./crinacle/harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8)
 - [Bang & Olufsen Beoplay E8 2.0](./crinacle/harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8%202.0)
 - [Bang & Olufsen Beoplay E8 3.0](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20E8%203.0)
+- [Bang & Olufsen Beoplay Earset 3i](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20Earset%203i)
 - [Bang & Olufsen Beoplay Earset Wireless](./rtings/avg/Bang%20&%20Olufsen%20Beoplay%20Earset%20Wireless)
 - [Bang & Olufsen Beoplay H6](./innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6)
 - [Bang & Olufsen Beoplay H6 2nd Gen](./innerfidelity/sbaf-serious/Bang%20&%20Olufsen%20Beoplay%20H6%202nd%20Gen)
@@ -484,6 +484,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Behringer HPS5000](./innerfidelity/sbaf-serious/Behringer%20HPS5000)
 - [Betron YSM1000](./rtings/avg/Betron%20YSM1000)
 - [Beyerdynamic Amiron Home](./oratory1990/harman_over-ear_2018/Beyerdynamic%20Amiron%20Home)
+- [Beyerdynamic Amiron Wireless](./rtings/avg/Beyerdynamic%20Amiron%20Wireless)
 - [Beyerdynamic Aventho Wireless](./oratory1990/harman_over-ear_2018/Beyerdynamic%20Aventho%20Wireless)
 - [Beyerdynamic Blue Byrd](./oratory1990/harman_in-ear_2019v2/Beyerdynamic%20Blue%20Byrd)
 - [Beyerdynamic Custom One Pro](./referenceaudioanalyzer/zero/Beyerdynamic%20Custom%20One%20Pro)
@@ -1256,6 +1257,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [HyperX Cloud Alpha](./oratory1990/harman_over-ear_2018/HyperX%20Cloud%20Alpha)
 - [HyperX Cloud Core](./rtings/avg/HyperX%20Cloud%20Core)
 - [HyperX Cloud Flight](./rtings/avg/HyperX%20Cloud%20Flight)
+- [HyperX Cloud Flight S](./rtings/avg/HyperX%20Cloud%20Flight%20S)
 - [HyperX Cloud II](./rtings/avg/HyperX%20Cloud%20II)
 - [HyperX Cloud Mix](./rtings/avg/HyperX%20Cloud%20Mix)
 - [HyperX Cloud Revolver](./rtings/avg/HyperX%20Cloud%20Revolver)
@@ -1711,6 +1713,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Monster Beats Solo with ControlTalk Headphones](./referenceaudioanalyzer/zero/Monster%20Beats%20Solo%20with%20ControlTalk%20Headphones)
 - [Monster Beats Studio](./innerfidelity/sbaf-serious/Monster%20Beats%20Studio)
 - [Monster Beats Tour](./innerfidelity/sbaf-serious/Monster%20Beats%20Tour)
+- [Monster Clarity 101 AirLinks](./rtings/avg/Monster%20Clarity%20101%20AirLinks)
 - [Monster Diesel Vektr](./referenceaudioanalyzer/zero/Monster%20Diesel%20Vektr)
 - [Monster DNA Pro2](./innerfidelity/sbaf-serious/Monster%20DNA%20Pro2)
 - [Monster Elements Wireless On-Ear](./referenceaudioanalyzer/zero/Monster%20Elements%20Wireless%20On-Ear)
@@ -2712,6 +2715,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Torque t402v OverEar Yellow](./innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20Yellow)
 - [Toshiba HR-810 Low Gain](./innerfidelity/sbaf-serious/Toshiba%20HR-810%20Low%20Gain)
 - [TOZO T10](./rtings/avg/TOZO%20T10)
+- [TOZO T6](./rtings/avg/TOZO%20T6)
 - [Tralucent 1Plus1.2](./crinacle/harman_in-ear_2019v2/Tralucent%201Plus1.2)
 - [Tralucent 1Plus2.3](./crinacle/harman_in-ear_2019v2/Tralucent%201Plus2.3)
 - [Tralucent 1Plus5.2](./crinacle/harman_in-ear_2019v2/Tralucent%201Plus5.2)

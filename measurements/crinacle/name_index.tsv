@@ -4,7 +4,6 @@ false_name	true_name	form
 10 Flat	Sound Linear Fitz 10 Flat (sample 1)	inear
 10 Flat S2	Sound Linear Fitz 10 Flat (sample 2)	inear
 18+		ignore
-18+		ignore
 18Plus C	Ultimate Ears UE18+ Custom	inear
 18Plus S3	Ultimate Ears UE18+ (sample 3)	inear
 1Custom Dual	1Custom SA02	inear
@@ -205,10 +204,7 @@ DEC 17 Test		ignore
 Delphinus 5	Astrotec Delphinus 5	inear
 Delta Air	Delta Air complimentary earphones	inear
 DES-R		ignore
-DES-R		ignore
 DES-Revised		ignore
-DES-Revised		ignore
-DES-S		ignore
 DES-S		ignore
 DH298	Satolex Tubomi DH298-A1Bk	inear
 DH302	Satolex Tubomi DH302-A1Bs	inear
@@ -297,7 +293,6 @@ ER2SE	Etymotic ER2SE	inear
 ER2XR	Etymotic ER2XR (sample 1)	inear
 ER2XR S2	Etymotic ER2XR (sample 2)	inear
 ER2XR S3	Etymotic ER2XR (sample 3)	inear
-ER2XR TF		ignore
 ER2XR TF		ignore
 ER3SE	Etymotic ER3SE	inear
 ER3XR	Etymotic ER3XR	inear
@@ -618,7 +613,6 @@ Maestro V2	Unique Melody Maestro V2	inear
 Make 2	Final Audio Make 2	inear
 Martian	Unique Melody Martian	inear
 Martin		ignore
-Martin		ignore
 Mason V3	Unique Melody Mason V3	inear
 Mason V3 Ported	Unique Melody Mason V3 Ported	inear
 Mason V3+	Unique Melody Mason V3+	inear
@@ -891,7 +885,6 @@ Stellia	Focal Stellia	onear
 Stylish	1More Stylish	inear
 Sundara	Hifiman Sundara	onear
 Superdarts	Atomic Floyd SuperDarts	inear
-SV Grey		ignore
 SV Grey		ignore
 Symphony	Effect Audio Symphony	inear
 T1	Tin Audio T1	inear

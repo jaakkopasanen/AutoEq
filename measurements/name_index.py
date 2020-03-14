@@ -24,32 +24,17 @@ class NameItem:
 
 
 class NameIndex:
-    def __init__(self, items=None):
-        self.df = pd.DataFrame([], columns=['false_name', 'true_name', 'form'])
+    def __init__(self, rows=None, items=None):
+        self.df = pd.DataFrame(rows if rows is not None else [], columns=['false_name', 'true_name', 'form'])
         if items is not None:
             for item in items:
                 self.add(item)
 
-    def add(self, item):
-        """Add an item to index
+    def __len__(self):
+        return self.df.shape[0]
 
-        Args:
-            item: Item instance
-
-        Returns:
-            None
-        """
-        false_name = item.false_name if item.false_name is not None else ''
-        true_name = item.true_name if item.true_name is not None else ''
-        form = item.form if item.form is not None else ''
-        self.df = self.df.append(pd.DataFrame([[false_name, true_name, form]], columns=self.df.columns))
-
-    def update_by_false_name(self, item):
-        """Finds items by false name and updates them to the give item."""
-        if self.find_by_false_name(item.false_name):
-            self.df.loc[self.df['false_name'] == item.false_name] = [item.false_name, item.true_name, item.form]
-        else:
-            self.add(item)
+    def __bool__(self):
+        return len(self) > 0
 
     @property
     def items(self):
@@ -60,7 +45,7 @@ class NameIndex:
 
     @classmethod
     def read_files(cls, glob_pattern):
-        index = cls()
+        rows = []
         for file in glob(glob_pattern):
             form = None
             path_components = split_path(os.path.abspath(file))
@@ -69,9 +54,8 @@ class NameIndex:
                 if component in ['onear', 'inear', 'earbud']:
                     form = component
             name = re.sub(r'\.[tc]sv$', '', name)
-            item = NameItem(name, name, form)
-            index.add(item)
-        return index
+            rows.append([name, name, form])
+        return cls(rows=rows)
 
     @classmethod
     def read_tsv(cls, file_path):
@@ -80,67 +64,104 @@ class NameIndex:
         if not df.columns.all(['false_name', 'true_name', 'form']):
             raise TypeError(f'"{file_path}" columns {df.columns} are corrupted')
         df.fillna('', inplace=True)
-        for i, row in df.iterrows():
-            index.add(NameItem(row['false_name'], row['true_name'], row['form']))
+        index.df = df
         return index
 
     def write_tsv(self, file_path):
         df = self.df.iloc[self.df['false_name'].str.lower().argsort()]
         df.to_csv(file_path, sep='\t', header=True, index=False, encoding='utf-8')
 
-    def find_by_false_name(self, name):
-        """Find a single Item by false name
+    def mask(self, false_name=None, true_name=None, form=None):
+        """Creates a filter mask for rows which match the given query parameters."""
+        mask = None
+        if false_name is not None:
+            mask = (self.df.false_name == false_name)
+        if true_name is not None:
+            m = (self.df.true_name == true_name)
+            mask = m if mask is None else mask & m
+        if form is not None:
+            m = (self.df.form == form)
+            mask = m if mask is None else mask & m
+        return mask
+
+    def concat(self, name_index):
+        """Merges another NameIndex to this."""
+        self.df = pd.concat([self.df, name_index.df])
+
+    def add(self, item):
+        """Adds an item to index."""
+        false_name = item.false_name if item.false_name is not None else ''
+        true_name = item.true_name if item.true_name is not None else ''
+        form = item.form if item.form is not None else ''
+        self.df = self.df.append(pd.DataFrame([[false_name, true_name, form]], columns=self.df.columns))
+        self.df = self.df.drop_duplicates()
+
+    def update(self, item, false_name=None, true_name=None, form=None):
+        """Updates all items which match the given query parameters to the given item.
 
         Args:
-            name: False name
+            item: New value as NameItem
+            false_name: False name of the items to update
+            true_name: True name of the items to update
+            form: Form of the items to update
 
         Returns:
-            Matching Item or None
+            None
         """
-        try:
-            row = self.df.loc[self.df['false_name'] == name].to_numpy()[0]
-            return NameItem(*row)
-        except IndexError:
-            return None
+        if self.find(false_name=item.false_name):
+            mask = self.mask(false_name=false_name, true_name=true_name, form=form)
+            self.df.loc[mask] = [[item.false_name, item.true_name, item.form]]
+        else:
+            self.add(item)
 
-    def find_by_true_name(self, name):
-        """Find all items by their true name.
+    def find(self, false_name=None, true_name=None, form=None):
+        """Finds all items which match the given query parameters.
 
         Args:
-            name: True name
+            false_name: False name of the items to find
+            true_name: True name of the items to find
+            form: Form of the items to find
 
         Returns:
-            List of matching NameItems
+            New NameIndex instance with the matching items
         """
-        arr = self.df.loc[self.df['true_name'] == name].to_numpy()
-        return [NameItem(*row) for row in arr]
-
-    def find_by_form(self, form):
-        """Find all NameItems by form name
-
-        Args:
-            form: Form name
-
-        Returns:
-            List of matching NameItems
-        """
-        arr = self.df.loc[self.df['form'] == form].to_numpy()
-        return [NameItem(*row) for row in arr]
+        mask = self.mask(false_name=false_name, true_name=true_name, form=form)
+        return NameIndex(rows=self.df.loc[mask].copy())
 
     def search_by_false_name(self, name, threshold=80):
-        """Finds all items which match closely to given name query
+        """Finds all items which match closely to all given query parameters.
 
         Args:
-            name: Name to find
-            threshold: Threshold for matching with FuzzyWuzzy token_set_ratio
+            name: Name to search by. Ignored if None.
+            threshold: Threshold for matching with FuzzyWuzzy.
 
         Returns:
-            NameIndex with closely matching NameItems
+            List of matching triplets with NameItem, FuzzyWuzzy ratio and FuzzyWuzzy token_set_ratio
         """
         matches = []
         for item in self.items:
+            # Search with false name
             ratio = fuzz.ratio(item.false_name, name)
             token_set_ratio = fuzz.token_set_ratio(item.false_name.lower(), name.lower())
             if ratio > threshold or token_set_ratio > threshold:
-                matches.append([item, ratio, token_set_ratio])
+                matches.append((item, ratio, token_set_ratio))
+        return sorted(matches, key=lambda x: x[1], reverse=True)
+
+    def search_by_true_name(self, name, threshold=80):
+        """Finds all items which match closely to all given query parameters.
+
+        Args:
+            name: Name to search by. Ignored if None.
+            threshold: Threshold for matching with FuzzyWuzzy.
+
+        Returns:
+            List of matching triplets with NameItem, FuzzyWuzzy ratio and FuzzyWuzzy token_set_ratio
+        """
+        matches = []
+        for item in self.items:
+            # Search with false name
+            ratio = fuzz.ratio(item.true_name, name)
+            token_set_ratio = fuzz.token_set_ratio(item.true_name.lower(), name.lower())
+            if ratio > threshold or token_set_ratio > threshold:
+                matches.append((item, ratio, token_set_ratio))
         return sorted(matches, key=lambda x: x[1], reverse=True)

@@ -7,7 +7,7 @@ import re
 import numpy as np
 import requests
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex, NameItem
+from measurements.name_index import NameIndex
 from measurements.crawler import Crawler
 from frequency_response import FrequencyResponse
 
@@ -15,24 +15,23 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 
 class CrinacleCrawler(Crawler):
-    def __init__(self, driver=None, names=None):
-        super().__init__(names=self.get_names())
-
-    def get_names(self):
+    def get_name_proposals(self):
         """Downloads parses phone books to get names
 
         Returns:
             NameIndex
         """
-        names = NameIndex()
+        names = super().get_name_proposals()
+        rows = []
         res = requests.get('https://crinacle.com/graphing/data_hp/phone_book.json')  # Headphone book
         hp_book = self.parse_book(res.json())
         for false_name, true_name in hp_book.items():
-            names.add(NameItem(false_name, true_name, 'onear'))
+            rows.append([false_name, true_name, 'onear'])
         res = requests.get('https://crinacle.com/graphing/data/phone_book.json')  # IEM book
         iem_book = self.parse_book(res.json())
         for false_name, true_name in iem_book.items():
-            names.add(NameItem(false_name, true_name, 'inear'))
+            rows.append([false_name, true_name, 'inear'])
+        names.concat(NameIndex(rows))
         return names
 
     @staticmethod

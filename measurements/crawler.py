@@ -4,18 +4,18 @@ import os
 import sys
 import requests
 import shutil
-import json
 from abc import ABC, abstractmethod
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.name_index import NameIndex, NameItem
-from measurements.utils import prompt_name, prompt_form
+
+DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 
 class Crawler(ABC):
-    def __init__(self, driver=None, names=None):
+    def __init__(self, driver=None):
         self.driver = driver
         self.name_index = self.read_name_index()
-        self.names = names
+        self.name_proposals = self.get_name_proposals()
         self.existing = self.get_existing()
         self.links = self.get_links()
 
@@ -25,9 +25,21 @@ class Crawler(ABC):
         """Reads name index as Index
 
         Returns:
-            Index
+            NameIndex
         """
         pass
+
+    def get_name_proposals(self):
+        """Gets name proposals for new measurements
+
+        Returns:
+            NameIndex
+        """
+        name_proposals = NameIndex()
+        for db in ['crinacle', 'oratory1990', 'rtings']:
+            name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db, 'name_index.tsv'))
+            name_proposals.concat(name_index)
+        return name_proposals
 
     @abstractmethod
     def write_name_index(self):
@@ -71,6 +83,88 @@ class Crawler(ABC):
         """
         pass
 
+    @staticmethod
+    def prompt_true_name(name_options):
+        """Prompts true name from the user."""
+        name_options = name_options if name_options is not None else []
+        if 'skip' not in name_options:
+            name_options.insert(0, 'skip')
+        s = 'What is it\'s true name?'
+        if len(name_options):
+            s += ' Select a number or write the name if none of the options.'
+        print(s)
+        if len(name_options):
+            print(f'\n'.join(f'[{i}] {o}' for i, o in enumerate(name_options)))
+        name = input('> ')
+        try:
+            name = name_options[int(name)]
+            if name == 'skip':
+                return None
+        except (KeyError, ValueError):
+            pass
+        return name
+
+    @staticmethod
+    def prompt_form():
+        """Prompts form from the user."""
+        options = ['onear', 'inear', 'earbud']
+        print('What is it\'s type?')
+        print(f'\n'.join(f'[{i + 1}] {o}' for i, o in enumerate(options)))
+        while True:
+            form = input('> ')
+            try:
+                return options[int(form) - 1]
+            except (IndexError, ValueError):
+                print('That didn\'t work, try again.')
+
+    def prompt(self, false_name):
+        """Prompts user for true name and form based on false name."""
+        form = None
+        if self.name_proposals is not None:
+            # Name proposals initialized, add matching entries to options in prompt
+            matches = [(NameItem(false_name, false_name, None), 0, 0)]  # Add the false name
+            matches += self.name_proposals.search_by_false_name(false_name)
+            matches += self.name_proposals.search_by_true_name(false_name)
+            name_options = []
+            for match in matches:
+                if match[1] == 100:
+                    # Exact match
+                    match[0].true_name += ' ✓'
+                if match[0].true_name not in [x[0] for x in name_options]:
+                    # New match
+                    name_options.append((match[0].true_name, match[1], match[0].form))
+                else:
+                    # Existing match, update ratio
+                    for i in range(len(name_options)):
+                        if match[0].true_name == name_options[i][0] and match[1] > name_options[i][1]:
+                            name_options[i] = (name_options[i][0], match[1], name_options[i][2])
+
+            # Prompt
+            true_name = self.prompt_true_name(
+                [x[0] for x in sorted(name_options, key=lambda x: x[1], reverse=True)]
+            )
+
+            # Find the answer and select form
+            for name, ratio, f in name_options:
+                if true_name == name:
+                    form = f
+                    continue
+            true_name = true_name.replace(' ✓', '')
+
+        else:
+            true_name = self.prompt_true_name([false_name])
+            form = None
+
+        if true_name is None:
+            # User skipped
+            return None
+
+        if form is None:
+            # Form not found in name proposals, prompt it
+            form = self.prompt_form()
+
+        return NameItem(false_name, true_name, form)
+
     def process_new(self, prompt=True):
         """Processes all new measurements
 
@@ -80,43 +174,46 @@ class Crawler(ABC):
             None
         """
         for false_name, link in self.links.items():
-            try:
-                item = self.name_index.find_by_false_name(false_name)
-                if item and item.form == 'ignore':
-                    continue
-                if item and item.true_name:
-                    # Name index contains the entry
-                    if self.existing.find_by_true_name(item.true_name):
-                        # Exists already, skip
+            ni = self.name_index.find(false_name=false_name)
+            item = ni.items[0] if ni else None
+
+            if item and item.form == 'ignore':
+                continue
+
+            if item and item.true_name:
+                # Name index contains the entry
+                if not self.existing.find(true_name=item.true_name):
+                    # Doesn't exist already
+                    self.process(item, link)
+
+            else:
+                # Unknown item
+                if prompt:
+                    # Prompt true name and form
+                    print(f'\n"{false_name}" is not known.')
+                    item = self.prompt(false_name)
+                    if item is None:
+                        self.name_index.update(NameItem(false_name, None, 'ignore'), false_name=false_name)
                         continue
+                    self.name_index.update(item, false_name=false_name)
                     self.process(item, link)
                 else:
-                    if prompt:
-                        print(f'\n"{false_name}" is not known.')
-                        if self.names is not None:
-                            name_options = self.names.search_by_false_name(false_name)
-                            name_options = [match[0].true_name + (' ✓' if match[1] == 100 else '') for match in name_options]
-                        else:
-                            name_options = [false_name]
-                        true_name = prompt_name(name_options)
-                        if true_name is None:
-                            self.name_index.update_by_false_name(NameItem(false_name, None, 'ignore'))
-                            continue
-                        true_name = true_name.replace(' ✓', '')
-                        form = prompt_form()
-                        item = NameItem(false_name, true_name, form)
-                        self.name_index.update_by_false_name(item)
-                        self.process(item, link)
-                    else:
-                        print(f'"{false_name}" is not known. Add true name and form to name index and run this again.')
-                        self.name_index.update_by_false_name(NameItem(false_name, None, None))
-
-            except Exception as err:
-                raise err
-                print(f'Failed to process {false_name}: {str(err)}')
+                    print(f'"{false_name}" is not known. Add true name and form to name index and run again.')
+                    self.name_index.update(NameItem(false_name, None, None), false_name=false_name)
 
     @staticmethod
     def download(url, true_name, output_dir, file_type=None):
+        """Downloads a file from a URL
+
+        Args:
+            url: URL to download
+            true_name: True name of the item to download
+            output_dir: Where to write the downloaded file
+            file_type: File extension. Detected automatically if None.
+
+        Returns:
+            Bool depicting if download succeeded or not
+        """
         output_dir = os.path.abspath(output_dir)
         os.makedirs(output_dir, exist_ok=True)
         res = requests.get(url, stream=True)
