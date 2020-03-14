@@ -4,6 +4,7 @@ import os
 import sys
 import requests
 import shutil
+from bs4 import BeautifulSoup
 from abc import ABC, abstractmethod
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.name_index import NameIndex, NameItem
@@ -17,7 +18,7 @@ class Crawler(ABC):
         self.name_index = self.read_name_index()
         self.name_proposals = self.get_name_proposals()
         self.existing = self.get_existing()
-        self.links = self.get_links()
+        self.urls = self.get_urls()
 
     @staticmethod
     @abstractmethod
@@ -61,22 +62,21 @@ class Crawler(ABC):
         pass
 
     @abstractmethod
-    def get_links(self):
-        """Crawls measurement links
+    def get_urls(self):
+        """Crawls measurement URLs
 
         Returns:
             Dict where headphone names are keys and URLs are values
         """
         pass
 
-    @staticmethod
     @abstractmethod
-    def process(item, link):
-        """Downloads a single link and processes it
+    def process(self, item, url):
+        """Downloads a single URL and processes it
 
         Args:
             item: Item
-            link: URL to measurement
+            url: URL to measurement
 
         Returns:
             None
@@ -173,33 +173,38 @@ class Crawler(ABC):
         Returns:
             None
         """
-        for false_name, link in self.links.items():
-            ni = self.name_index.find(false_name=false_name)
-            item = ni.items[0] if ni else None
+        for false_name, url in self.urls.items():
+            try:
+                ni = self.name_index.find(false_name=false_name)
+                item = ni.items[0] if ni else None
 
-            if item and item.form == 'ignore':
-                continue
+                if item and item.form == 'ignore':
+                    continue
 
-            if item and item.true_name:
-                # Name index contains the entry
-                if not self.existing.find(true_name=item.true_name):
-                    # Doesn't exist already
-                    self.process(item, link)
+                if item and item.true_name:
+                    # Name index contains the entry
+                    if not self.existing.find(true_name=item.true_name):
+                        # Doesn't exist already
+                        self.process(item, url)
 
-            else:
-                # Unknown item
-                if prompt:
-                    # Prompt true name and form
-                    print(f'\n"{false_name}" is not known.')
-                    item = self.prompt(false_name)
-                    if item is None:
-                        self.name_index.update(NameItem(false_name, None, 'ignore'), false_name=false_name)
-                        continue
-                    self.name_index.update(item, false_name=false_name)
-                    self.process(item, link)
                 else:
-                    print(f'"{false_name}" is not known. Add true name and form to name index and run again.')
-                    self.name_index.update(NameItem(false_name, None, None), false_name=false_name)
+                    # Unknown item
+                    if prompt:
+                        # Prompt true name and form
+                        print(f'\n"{false_name}" is not known.')
+                        item = self.prompt(false_name)
+                        if item is None:
+                            self.name_index.update(NameItem(false_name, None, 'ignore'), false_name=false_name)
+                            continue
+                        self.name_index.update(item, false_name=false_name)
+                        self.process(item, url)
+                    else:
+                        print(f'"{false_name}" is not known. Add true name and form to name index and run again.')
+                        self.name_index.update(NameItem(false_name, None, None), false_name=false_name)
+                    self.write_name_index()
+            except Exception as err:
+                print(f'Processing failed for "{false_name}"')
+                raise err
 
     @staticmethod
     def download(url, true_name, output_dir, file_type=None):
@@ -229,3 +234,8 @@ class Crawler(ABC):
             shutil.copyfileobj(res.raw, f)
         print('Downloaded to "{}"'.format(file_path))
         return True
+
+    def get_beautiful_soup(self, url):
+        self.driver.get(url)
+        html = self.driver.find_element_by_tag_name('html').get_attribute('outerHTML')
+        return BeautifulSoup(html, 'html.parser')

@@ -30,14 +30,12 @@ class Oratory1990Crawler(Crawler):
     def get_existing():
         return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*'))
 
-    def get_links(self):
+    def get_urls(self):
         if self.driver is None:
             raise TypeError('self.driver cannot be None')
 
-        self.driver.get('https://www.reddit.com/r/oratory1990/wiki/index/list_of_presets')
-        html = self.driver.find_element_by_tag_name('html').get_attribute('outerHTML')
-        document = BeautifulSoup(html, 'html.parser')
-        links = {}
+        document = self.get_beautiful_soup('https://www.reddit.com/r/oratory1990/wiki/index/list_of_presets')
+        urls = {}
         table_header = document.find(id='wiki_full_list.3A')
         if table_header is None:
             raise RedditCrawlFailed('Could not read data in Reddit. Open reddit.html in browser and re-run!')
@@ -69,8 +67,8 @@ class Oratory1990Crawler(Crawler):
             false_name = f'{manufacturer} {model}'
             if notes:
                 false_name += f' ({notes})'
-            links[false_name] = url
-        return links
+            urls[false_name] = url
+        return urls
 
     @staticmethod
     def parse_image(im, model, px_top=800, px_bottom=4400, px_left=0, px_right=2500):
@@ -180,8 +178,7 @@ class Oratory1990Crawler(Crawler):
 
         return Image.open(output_file)
 
-    @staticmethod
-    def process(item, link):
+    def process(self, item, url):
         pdf_dir = os.path.join(DIR_PATH, 'pdf')
         image_dir = os.path.join(DIR_PATH, 'images')
         inspection_dir = os.path.join(DIR_PATH, 'inspection')
@@ -193,7 +190,7 @@ class Oratory1990Crawler(Crawler):
         os.makedirs(inspection_dir, exist_ok=True)
         os.makedirs(out_dir, exist_ok=True)
 
-        Crawler.download(link, item.true_name, pdf_dir)
+        Crawler.download(url, item.true_name, pdf_dir)
         im = Oratory1990Crawler.pdf_to_image(
             os.path.join(pdf_dir, f'{item.true_name}.pdf'),
             os.path.join(image_dir, f'{item.true_name}.png')

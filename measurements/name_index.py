@@ -60,6 +60,8 @@ class NameIndex:
     @classmethod
     def read_tsv(cls, file_path):
         index = cls()
+        if not os.path.isfile(file_path):
+            return index
         df = pd.read_csv(file_path, sep='\t', header=0, encoding='utf-8')
         if not df.columns.all(['false_name', 'true_name', 'form']):
             raise TypeError(f'"{file_path}" columns {df.columns} are corrupted')

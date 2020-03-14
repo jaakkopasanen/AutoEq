@@ -80,7 +80,7 @@ class CrinacleCrawler(Crawler):
     def get_existing():
         return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*'))
 
-    def get_links(self):
+    def get_urls(self):
         # Link source is not a web page but raw_data folder
         links = dict()
         for fp in glob(os.path.join(DIR_PATH, 'raw_data', '*')):

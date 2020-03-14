@@ -34,14 +34,14 @@ class RtingsCrawler(Crawler):
     def get_existing():
         return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*'))
 
-    def get_links(self):
+    def get_urls(self):
         res = requests.get('https://www.rtings.com/headphones/1-4/graph')
         document = BeautifulSoup(res.content, 'html.parser')
-        links = {}
+        urls = {}
         for child in document.find(id='product_select').find_all('option'):
             name = child.text.strip()
-            links[name] = f'https://www.rtings.com/images/graphs/{child["data-urlpart"]}/graph-frequency-response-14.json'
-        return links
+            urls[name] = f'https://www.rtings.com/images/graphs/{child["data-urlpart"]}/graph-frequency-response-14.json'
+        return urls
 
     @staticmethod
     def parse_json(json_data):
@@ -68,9 +68,8 @@ class RtingsCrawler(Crawler):
         target = FrequencyResponse(name='', frequency=frequency, raw=target)
         return fr, target
 
-    @staticmethod
-    def process(item, link):
-        if not Crawler.download(link, item.true_name, os.path.join(DIR_PATH, 'json')):
+    def process(self, item, url):
+        if not Crawler.download(url, item.true_name, os.path.join(DIR_PATH, 'json')):
             return
         with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}.json'), 'r') as fh:
             json_data = json.load(fh)
