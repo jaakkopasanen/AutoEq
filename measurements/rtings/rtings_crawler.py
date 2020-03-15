@@ -32,7 +32,7 @@ class RtingsCrawler(Crawler):
 
     @staticmethod
     def get_existing():
-        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*'))
+        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*', '*'))
 
     def get_urls(self):
         res = requests.get('https://www.rtings.com/headphones/1-4/graph')

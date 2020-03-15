@@ -46,7 +46,7 @@ class NameIndex:
     @classmethod
     def read_files(cls, glob_pattern):
         rows = []
-        for file in glob(glob_pattern):
+        for file in glob(glob_pattern, recursive=True):
             form = None
             path_components = split_path(os.path.abspath(file))
             name = path_components[-1]

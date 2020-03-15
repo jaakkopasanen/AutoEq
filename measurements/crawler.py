@@ -37,8 +37,11 @@ class Crawler(ABC):
             NameIndex
         """
         name_proposals = NameIndex()
-        for db in ['crinacle', 'oratory1990', 'rtings']:
+        for db in ['crinacle', 'oratory1990', 'rtings', 'referenceaudioanalyzer']:
             name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db, 'name_index.tsv'))
+            name_proposals.concat(name_index)
+        for db in ['innerfidelity', 'headphonecom']:
+            name_index = NameIndex.read_files(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'))
             name_proposals.concat(name_index)
         return name_proposals
 
@@ -144,6 +147,9 @@ class Crawler(ABC):
                 [x[0] for x in sorted(name_options, key=lambda x: x[1], reverse=True)]
             )
 
+            if true_name is None:
+                return None
+
             # Find the answer and select form
             for name, ratio, f in name_options:
                 if true_name == name:
@@ -224,7 +230,7 @@ class Crawler(ABC):
         res = requests.get(url, stream=True)
         if res.status_code != 200:
             print(f'Failed to download "{true_name}" at "{url}"')
-            return False
+            return None
         if file_type is None:
             file_type = url.split('.')[-1]
             file_type = file_type.split('?')[0]
@@ -233,7 +239,7 @@ class Crawler(ABC):
             res.raw.decode_content = True
             shutil.copyfileobj(res.raw, f)
         print('Downloaded to "{}"'.format(file_path))
-        return True
+        return file_path
 
     def get_beautiful_soup(self, url):
         self.driver.get(url)
