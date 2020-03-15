@@ -797,7 +797,7 @@ from the same source.
 - [Big Bus Earbuds](./crinacle/harman_in-ear_2019v2/Big%20Bus%20Earbuds) by Crinacle
 - [BKHC BK9](./innerfidelity/sbaf-serious/BKHC%20BK9) by Innerfidelity
 - [Bloc Roc Galvanize S2](./innerfidelity/sbaf-serious/Bloc%20Roc%20Galvanize%20S2) by Innerfidelity
-- [BLON B20](./crinacle/harman_in-ear_2019v2/BLON%20B20) by Crinacle
+- [BLON B20](./crinacle/crinacle_over-ear/BLON%20B20) by Crinacle
 - [BLON BL-03 (sample 3)](./crinacle/harman_in-ear_2019v2/BLON%20BL-03%20(sample%203)) by Crinacle
 - [BLON BL-03](./crinacle/harman_in-ear_2019v2/BLON%20BL-03) by Crinacle
 - [Blue Lola](./innerfidelity/sbaf-serious/Blue%20Lola) by Innerfidelity

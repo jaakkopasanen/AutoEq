@@ -598,7 +598,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Big Bus Earbuds](./crinacle/harman_in-ear_2019v2/Big%20Bus%20Earbuds)
 - [BKHC BK9](./innerfidelity/sbaf-serious/BKHC%20BK9)
 - [Bloc Roc Galvanize S2](./innerfidelity/sbaf-serious/Bloc%20Roc%20Galvanize%20S2)
-- [BLON B20](./crinacle/harman_in-ear_2019v2/BLON%20B20)
+- [BLON B20](./crinacle/crinacle_over-ear/BLON%20B20)
 - [BLON BL-03](./crinacle/harman_in-ear_2019v2/BLON%20BL-03%20(sample%203))
 - [Blue Lola](./innerfidelity/sbaf-serious/Blue%20Lola)
 - [Blue MOFI Active On](./innerfidelity/sbaf-serious/Blue%20MOFI%20Active%20On)
