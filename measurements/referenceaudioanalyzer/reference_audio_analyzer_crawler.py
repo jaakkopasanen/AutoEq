@@ -125,7 +125,6 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
         # Create frequency response
         fr = FrequencyResponse(model, f, amplitude)
         fr.interpolate()
-        fr.plot_graph()
         fr.smoothen_fractional_octave(window_size=1/3, treble_window_size=1/3)
         fr.raw = fr.smoothed.copy()
         fr.smoothed = np.array([])

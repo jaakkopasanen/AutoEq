@@ -125,33 +125,35 @@ class Crawler(ABC):
         form = None
         if self.name_proposals is not None:
             # Name proposals initialized, add matching entries to options in prompt
-            matches = [(NameItem(false_name, false_name, None), 0, 0)]  # Add the false name
+            matches = []
             matches += self.name_proposals.search_by_false_name(false_name)
             matches += self.name_proposals.search_by_true_name(false_name)
-            name_options = []
+            names_and_ratios = []
             for match in matches:
                 if match[1] == 100:
                     # Exact match
                     match[0].true_name += ' ✓'
-                if match[0].true_name not in [x[0] for x in name_options]:
+                if match[0].true_name not in [x[0] for x in names_and_ratios]:
                     # New match
-                    name_options.append((match[0].true_name, match[1], match[0].form))
+                    names_and_ratios.append((match[0].true_name, match[1], match[0].form))
                 else:
                     # Existing match, update ratio
-                    for i in range(len(name_options)):
-                        if match[0].true_name == name_options[i][0] and match[1] > name_options[i][1]:
-                            name_options[i] = (name_options[i][0], match[1], name_options[i][2])
+                    for i in range(len(names_and_ratios)):
+                        if match[0].true_name == names_and_ratios[i][0] and match[1] > names_and_ratios[i][1]:
+                            names_and_ratios[i] = (names_and_ratios[i][0], match[1], names_and_ratios[i][2])
 
             # Prompt
-            true_name = self.prompt_true_name(
-                [x[0] for x in sorted(name_options, key=lambda x: x[1], reverse=True)]
-            )
+            name_options = [x[0] for x in sorted(names_and_ratios, key=lambda x: x[1], reverse=True)[:8]]
+            if false_name not in name_options:
+                name_options.append(false_name)  # Add the false name
+
+            true_name = self.prompt_true_name(name_options)
 
             if true_name is None:
                 return None
 
             # Find the answer and select form
-            for name, ratio, f in name_options:
+            for name, ratio, f in names_and_ratios:
                 if true_name == name:
                     form = f
                     continue
