@@ -68,6 +68,9 @@ from the same source.
 - [A Audio Elite Bass Mode](./innerfidelity/sbaf-serious/A%20Audio%20Elite%20Bass%20Mode) by Innerfidelity
 - [A Audio Elite NC Active](./innerfidelity/sbaf-serious/A%20Audio%20Elite%20NC%20Active) by Innerfidelity
 - [A Audio Elite Passive](./innerfidelity/sbaf-serious/A%20Audio%20Elite%20Passive) by Innerfidelity
+- [A-Audio Elite Bass Mode](./innerfidelity/sbaf-serious/A-Audio%20Elite%20Bass%20Mode) by Innerfidelity
+- [A-Audio Elite NC Active](./innerfidelity/sbaf-serious/A-Audio%20Elite%20NC%20Active) by Innerfidelity
+- [A-Audio Elite Passive](./innerfidelity/sbaf-serious/A-Audio%20Elite%20Passive) by Innerfidelity
 - [AAW A2H V2](./crinacle/harman_in-ear_2019v2/AAW%20A2H%20V2) by Crinacle
 - [AAW A3H 2019](./crinacle/harman_in-ear_2019v2/AAW%20A3H%202019) by Crinacle
 - [AAW A3H V2](./crinacle/harman_in-ear_2019v2/AAW%20A3H%20V2) by Crinacle
