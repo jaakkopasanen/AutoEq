@@ -1094,6 +1094,7 @@ from the same source.
 - [E-Mu Walnut](./innerfidelity/sbaf-serious/E-Mu%20Walnut) by Innerfidelity
 - [EarFun Free](./rtings/avg/EarFun%20Free) by Rtings
 - [Earfun Wave](./oratory1990/harman_over-ear_2018/Earfun%20Wave) by oratory1990
+- [EarFun x Oluv Free](./crinacle/harman_in-ear_2019v2/EarFun%20x%20Oluv%20Free) by Crinacle
 - [Earsonic Velvet (warm)](./crinacle/harman_in-ear_2019v2/Earsonic%20Velvet%20(warm)) by Crinacle
 - [Earsonics Blade](./crinacle/harman_in-ear_2019v2/Earsonics%20Blade) by Crinacle
 - [Earsonics EM10](./crinacle/harman_in-ear_2019v2/Earsonics%20EM10) by Crinacle
@@ -2192,9 +2193,6 @@ from the same source.
 - [Monster Jamz](./headphonecom/sbaf-serious/Monster%20Jamz) by Headphone.com
 - [Monster Jamz](./innerfidelity/sbaf-serious/Monster%20Jamz) by Innerfidelity
 - [Monster Jamz](./referenceaudioanalyzer/zero/Monster%20Jamz) by Reference Audio Analyzer
-- [Monster Lady Gaga with control talk](./headphonecom/sbaf-serious/Monster%20Lady%20Gaga%20with%20control%20talk) by Headphone.com
-- [Monster Lady Gaga](./headphonecom/sbaf-serious/Monster%20Lady%20Gaga) by Headphone.com
-- [Monster Lady Gaga](./innerfidelity/sbaf-serious/Monster%20Lady%20Gaga) by Innerfidelity
 - [Monster Lil Jamz](./headphonecom/sbaf-serious/Monster%20Lil%20Jamz) by Headphone.com
 - [Monster Miles Davis Tribute](./innerfidelity/sbaf-serious/Monster%20Miles%20Davis%20Tribute) by Innerfidelity
 - [Monster Miles Davis Tribute](./referenceaudioanalyzer/zero/Monster%20Miles%20Davis%20Tribute) by Reference Audio Analyzer
@@ -2353,7 +2351,6 @@ from the same source.
 - [Ocharaku Flat-4 Kaede Type 2](./crinacle/harman_in-ear_2019v2/Ocharaku%20Flat-4%20Kaede%20Type%202) by Crinacle
 - [Ocharaku Flat-4 Ti Plus](./crinacle/harman_in-ear_2019v2/Ocharaku%20Flat-4%20Ti%20Plus) by Crinacle
 - [Ocharaku Flat4 Kuro Type II](./innerfidelity/sbaf-serious/Ocharaku%20Flat4%20Kuro%20Type%20II) by Innerfidelity
-- [Oluv x EarFun Free](./crinacle/harman_in-ear_2019v2/Oluv%20x%20EarFun%20Free) by Crinacle
 - [Onkyo E900](./crinacle/harman_in-ear_2019v2/Onkyo%20E900) by Crinacle
 - [Onkyo ES-FC300](./innerfidelity/sbaf-serious/Onkyo%20ES-FC300) by Innerfidelity
 - [Onkyo IE-FC300](./referenceaudioanalyzer/zero/Onkyo%20IE-FC300) by Reference Audio Analyzer
@@ -2817,7 +2814,6 @@ from the same source.
 - [Sennheiser HD 700](./rtings/avg/Sennheiser%20HD%20700) by Rtings
 - [Sennheiser HD 800 (sample 1)](./crinacle/crinacle_over-ear/Sennheiser%20HD%20800%20(sample%201)) by Crinacle
 - [Sennheiser HD 800 (sample 2)](./crinacle/crinacle_over-ear/Sennheiser%20HD%20800%20(sample%202)) by Crinacle
-- [Sennheiser HD 800 Balanced](./headphonecom/sbaf-serious/Sennheiser%20HD%20800%20Balanced) by Headphone.com
 - [Sennheiser HD 800 S (Dekoni Fenestrated Sheepskin Earpads)](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800%20S%20(Dekoni%20Fenestrated%20Sheepskin%20Earpads)) by oratory1990
 - [Sennheiser HD 800 S sample 1](./innerfidelity/sbaf-serious/Sennheiser%20HD%20800%20S%20sample%201) by Innerfidelity
 - [Sennheiser HD 800 S sn01067](./innerfidelity/sbaf-serious/Sennheiser%20HD%20800%20S%20sn01067) by Innerfidelity
@@ -3080,6 +3076,8 @@ from the same source.
 - [Sleek SA1- Normal Filter](./headphonecom/sbaf-serious/Sleek%20SA1-%20Normal%20Filter) by Headphone.com
 - [Sleek SA6 Neutral](./headphonecom/sbaf-serious/Sleek%20SA6%20Neutral) by Headphone.com
 - [SMS Audio STREET by 50 Active Noise Cancelling](./rtings/avg/SMS%20Audio%20STREET%20by%2050%20Active%20Noise%20Cancelling) by Rtings
+- [SMS Audio Street by 50 Cent](./innerfidelity/sbaf-serious/SMS%20Audio%20Street%20by%2050%20Cent) by Innerfidelity
+- [SMS Audio Sync by 50 Cent](./innerfidelity/sbaf-serious/SMS%20Audio%20Sync%20by%2050%20Cent) by Innerfidelity
 - [SMS DJ Pro](./innerfidelity/sbaf-serious/SMS%20DJ%20Pro) by Innerfidelity
 - [SMS Over Ear ANC](./innerfidelity/sbaf-serious/SMS%20Over%20Ear%20ANC) by Innerfidelity
 - [SoftEars Cerberus](./oratory1990/harman_in-ear_2019v2/SoftEars%20Cerberus) by oratory1990
@@ -3391,7 +3389,6 @@ from the same source.
 - [StereoPravda SPearphone SB-7](./referenceaudioanalyzer/zero/StereoPravda%20SPearphone%20SB-7) by Reference Audio Analyzer
 - [StereoPravda SPearphone SB-7A](./referenceaudioanalyzer/zero/StereoPravda%20SPearphone%20SB-7A) by Reference Audio Analyzer
 - [Sterling TE-400](./innerfidelity/sbaf-serious/Sterling%20TE-400) by Innerfidelity
-- [Street by 50](./innerfidelity/sbaf-serious/Street%20by%2050) by Innerfidelity
 - [Sunrise Dragon](./referenceaudioanalyzer/zero/Sunrise%20Dragon) by Reference Audio Analyzer
 - [Sunrise Feeling 2](./referenceaudioanalyzer/zero/Sunrise%20Feeling%202) by Reference Audio Analyzer
 - [Sunrise Xcape](./referenceaudioanalyzer/zero/Sunrise%20Xcape) by Reference Audio Analyzer
@@ -3408,7 +3405,6 @@ from the same source.
 - [Symphonium Audio Aurora](./crinacle/harman_in-ear_2019v2/Symphonium%20Audio%20Aurora) by Crinacle
 - [Symphonium Audio Mirage](./crinacle/harman_in-ear_2019v2/Symphonium%20Audio%20Mirage) by Crinacle
 - [Symphonized NRG 3.0](./rtings/avg/Symphonized%20NRG%203.0) by Rtings
-- [Sync by 50](./innerfidelity/sbaf-serious/Sync%20by%2050) by Innerfidelity
 - [Syun ME1 Gold](./innerfidelity/sbaf-serious/Syun%20ME1%20Gold) by Innerfidelity
 - [Syun Mix1 Gold](./innerfidelity/sbaf-serious/Syun%20Mix1%20Gold) by Innerfidelity
 - [T-Peos Altone 200 2014](./innerfidelity/sbaf-serious/T-Peos%20Altone%20200%202014) by Innerfidelity

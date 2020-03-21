@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2941 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2938 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA02](./crinacle/harman_in-ear_2019v2/1Custom%20SA02)
@@ -826,6 +826,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [E-Mu Walnut](./innerfidelity/sbaf-serious/E-Mu%20Walnut)
 - [EarFun Free](./rtings/avg/EarFun%20Free)
 - [Earfun Wave](./oratory1990/harman_over-ear_2018/Earfun%20Wave)
+- [EarFun x Oluv Free](./crinacle/harman_in-ear_2019v2/EarFun%20x%20Oluv%20Free)
 - [Earsonic Velvet (warm)](./crinacle/harman_in-ear_2019v2/Earsonic%20Velvet%20(warm))
 - [Earsonics Blade](./crinacle/harman_in-ear_2019v2/Earsonics%20Blade)
 - [Earsonics EM10](./crinacle/harman_in-ear_2019v2/Earsonics%20EM10)
@@ -1721,8 +1722,6 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Monster Inspiration](./innerfidelity/sbaf-serious/Monster%20Inspiration)
 - [Monster iSport Victory In-Ear Wireless](./referenceaudioanalyzer/zero/Monster%20iSport%20Victory%20In-Ear%20Wireless)
 - [Monster Jamz](./innerfidelity/sbaf-serious/Monster%20Jamz)
-- [Monster Lady Gaga](./innerfidelity/sbaf-serious/Monster%20Lady%20Gaga)
-- [Monster Lady Gaga with control talk](./headphonecom/sbaf-serious/Monster%20Lady%20Gaga%20with%20control%20talk)
 - [Monster Lil Jamz](./headphonecom/sbaf-serious/Monster%20Lil%20Jamz)
 - [Monster Miles Davis Tribute](./innerfidelity/sbaf-serious/Monster%20Miles%20Davis%20Tribute)
 - [Monster Solo](./headphonecom/sbaf-serious/Monster%20Solo)
@@ -1857,7 +1856,6 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Ocharaku Flat-4 Kaede Type 2](./crinacle/harman_in-ear_2019v2/Ocharaku%20Flat-4%20Kaede%20Type%202)
 - [Ocharaku Flat-4 Ti Plus](./crinacle/harman_in-ear_2019v2/Ocharaku%20Flat-4%20Ti%20Plus)
 - [Ocharaku Flat4 Kuro Type II](./innerfidelity/sbaf-serious/Ocharaku%20Flat4%20Kuro%20Type%20II)
-- [Oluv x EarFun Free](./crinacle/harman_in-ear_2019v2/Oluv%20x%20EarFun%20Free)
 - [Onkyo E900](./crinacle/harman_in-ear_2019v2/Onkyo%20E900)
 - [Onkyo ES-FC300](./innerfidelity/sbaf-serious/Onkyo%20ES-FC300)
 - [Onkyo IE-FC300](./referenceaudioanalyzer/zero/Onkyo%20IE-FC300)
@@ -2201,7 +2199,6 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Sennheiser HD 660 S](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20660%20S)
 - [Sennheiser HD 700](./innerfidelity/sbaf-serious/Sennheiser%20HD%20700)
 - [Sennheiser HD 800](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800)
-- [Sennheiser HD 800 Balanced](./headphonecom/sbaf-serious/Sennheiser%20HD%20800%20Balanced)
 - [Sennheiser HD 800 S](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800%20S)
 - [Sennheiser HD 800 S (Dekoni Fenestrated Sheepskin Earpads)](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800%20S%20(Dekoni%20Fenestrated%20Sheepskin%20Earpads))
 - [Sennheiser HD 820](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20820)
@@ -2374,6 +2371,8 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Sleek SA1- Normal Filter](./headphonecom/sbaf-serious/Sleek%20SA1-%20Normal%20Filter)
 - [Sleek SA6 Neutral](./headphonecom/sbaf-serious/Sleek%20SA6%20Neutral)
 - [SMS Audio STREET by 50 Active Noise Cancelling](./rtings/avg/SMS%20Audio%20STREET%20by%2050%20Active%20Noise%20Cancelling)
+- [SMS Audio Street by 50 Cent](./innerfidelity/sbaf-serious/SMS%20Audio%20Street%20by%2050%20Cent)
+- [SMS Audio Sync by 50 Cent](./innerfidelity/sbaf-serious/SMS%20Audio%20Sync%20by%2050%20Cent)
 - [SMS DJ Pro](./innerfidelity/sbaf-serious/SMS%20DJ%20Pro)
 - [SMS Over Ear ANC](./innerfidelity/sbaf-serious/SMS%20Over%20Ear%20ANC)
 - [SoftEars Cerberus](./oratory1990/harman_in-ear_2019v2/SoftEars%20Cerberus)
@@ -2608,7 +2607,6 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [StereoPravda SPearphone SB-7](./referenceaudioanalyzer/zero/StereoPravda%20SPearphone%20SB-7)
 - [StereoPravda SPearphone SB-7A](./referenceaudioanalyzer/zero/StereoPravda%20SPearphone%20SB-7A)
 - [Sterling TE-400](./innerfidelity/sbaf-serious/Sterling%20TE-400)
-- [Street by 50](./innerfidelity/sbaf-serious/Street%20by%2050)
 - [Sunrise Dragon](./referenceaudioanalyzer/zero/Sunrise%20Dragon)
 - [Sunrise Feeling 2](./referenceaudioanalyzer/zero/Sunrise%20Feeling%202)
 - [Sunrise Xcape](./referenceaudioanalyzer/zero/Sunrise%20Xcape)
@@ -2621,7 +2619,6 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Symphonium Audio Aurora](./crinacle/harman_in-ear_2019v2/Symphonium%20Audio%20Aurora)
 - [Symphonium Audio Mirage](./crinacle/harman_in-ear_2019v2/Symphonium%20Audio%20Mirage)
 - [Symphonized NRG 3.0](./rtings/avg/Symphonized%20NRG%203.0)
-- [Sync by 50](./innerfidelity/sbaf-serious/Sync%20by%2050)
 - [Syun ME1 Gold](./innerfidelity/sbaf-serious/Syun%20ME1%20Gold)
 - [Syun Mix1 Gold](./innerfidelity/sbaf-serious/Syun%20Mix1%20Gold)
 - [T-Peos Altone 200 2014](./innerfidelity/sbaf-serious/T-Peos%20Altone%20200%202014)

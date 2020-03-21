@@ -279,7 +279,7 @@ class FrequencyResponse:
         while np.abs(fr.raw[-1]) < 0.1 and np.abs(fr.raw[-2]) < 0.1:  # Last two are zeros
             fr.raw = fr.raw[:-1]
 
-        with open(file_path, 'w') as f:
+        with open(file_path, 'w', encoding='utf-8') as f:
             s = '; '.join(['{f} {a:.1f}'.format(f=f, a=a) for f, a in zip(fr.frequency, fr.raw)])
             s = 'GraphicEQ: ' + s
             f.write(s)
@@ -683,7 +683,7 @@ class FrequencyResponse:
         """Writes EqualizerAPO Parameteric eq settings to a file."""
         file_path = os.path.abspath(file_path)
 
-        with open(file_path, 'w') as f:
+        with open(file_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(['Filter {i}: ON {type} Fc {fc:.0f} Hz Gain {gain:.1f} dB Q {Q:.2f}'.format(
                 i=i+1,
                 type='PK',
@@ -916,7 +916,7 @@ class FrequencyResponse:
             '''.format(img_url)
 
         # Write file
-        with open(file_path, 'w') as f:
+        with open(file_path, 'w', encoding='utf-8') as f:
             f.write(re.sub('\n[ \t]+', '\n', s).strip())
 
     @staticmethod
