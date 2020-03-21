@@ -65,9 +65,6 @@ from the same source.
 - [64 Audio U18Tzar (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20U18Tzar%20(sample%202)) by Crinacle
 - [64 Audio U18Tzar M20](./crinacle/harman_in-ear_2019v2/64%20Audio%20U18Tzar%20M20) by Crinacle
 - [64 Audio U18Tzar](./crinacle/harman_in-ear_2019v2/64%20Audio%20U18Tzar) by Crinacle
-- [A Audio Elite Bass Mode](./innerfidelity/sbaf-serious/A%20Audio%20Elite%20Bass%20Mode) by Innerfidelity
-- [A Audio Elite NC Active](./innerfidelity/sbaf-serious/A%20Audio%20Elite%20NC%20Active) by Innerfidelity
-- [A Audio Elite Passive](./innerfidelity/sbaf-serious/A%20Audio%20Elite%20Passive) by Innerfidelity
 - [A-Audio Elite Bass Mode](./innerfidelity/sbaf-serious/A-Audio%20Elite%20Bass%20Mode) by Innerfidelity
 - [A-Audio Elite NC Active](./innerfidelity/sbaf-serious/A-Audio%20Elite%20NC%20Active) by Innerfidelity
 - [A-Audio Elite Passive](./innerfidelity/sbaf-serious/A-Audio%20Elite%20Passive) by Innerfidelity

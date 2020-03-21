@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 3089 headphone models covered but if your headphone is missing you can create settings for it
+This list has 3086 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA02](./crinacle/harman_in-ear_2019v2/1Custom%20SA02)
@@ -52,9 +52,6 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [64 Audio U18Tzar (December 2014)](./crinacle/harman_in-ear_2019v2/64%20Audio%20U18Tzar%20(December%202014))
 - [64 Audio U18Tzar (December 2017)](./crinacle/harman_in-ear_2019v2/64%20Audio%20U18Tzar%20(December%202017))
 - [64 Audio U18Tzar M20](./crinacle/harman_in-ear_2019v2/64%20Audio%20U18Tzar%20M20)
-- [A Audio Elite Bass Mode](./innerfidelity/sbaf-serious/A%20Audio%20Elite%20Bass%20Mode)
-- [A Audio Elite NC Active](./innerfidelity/sbaf-serious/A%20Audio%20Elite%20NC%20Active)
-- [A Audio Elite Passive](./innerfidelity/sbaf-serious/A%20Audio%20Elite%20Passive)
 - [A-Audio Elite Bass Mode](./innerfidelity/sbaf-serious/A-Audio%20Elite%20Bass%20Mode)
 - [A-Audio Elite NC Active](./innerfidelity/sbaf-serious/A-Audio%20Elite%20NC%20Active)
 - [A-Audio Elite Passive](./innerfidelity/sbaf-serious/A-Audio%20Elite%20Passive)
