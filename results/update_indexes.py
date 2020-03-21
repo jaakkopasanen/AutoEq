@@ -163,13 +163,13 @@ def get_graphic_eqs(files):
             except KeyError as err:
                 skipped[normalized] = [path]
             continue
-        with open(path, 'r') as f:
+        with open(path, 'r', encoding='utf-8') as f:
             data[model.lower()] = {'model': model, 'eq': f.read()}
 
     for model, paths in skipped.items():
         # Add skipped models with only one item, these have no averaged results
         if len(paths) == 1:
-            with open(paths[0], 'r') as f:
+            with open(paths[0], 'r', encoding='utf-8') as f:
                 data[model.lower()] = {'model': model, 'eq': f.read()}
     return data
 

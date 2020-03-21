@@ -98,7 +98,7 @@ class CrinacleCrawler(Crawler):
         fr.raw = np.zeros(fr.frequency.shape)
         for fp in links:
             # Read file
-            with open(fp, 'r') as fh:
+            with open(fp, 'r', encoding='utf-8') as fh:
                 s = fh.read()
 
             freq = []

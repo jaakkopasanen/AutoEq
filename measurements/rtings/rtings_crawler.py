@@ -71,7 +71,7 @@ class RtingsCrawler(Crawler):
     def process(self, item, url):
         if not Crawler.download(url, item.true_name, os.path.join(DIR_PATH, 'json')):
             return
-        with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}.json'), 'r') as fh:
+        with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}.json'), 'r', encoding='utf-8') as fh:
             json_data = json.load(fh)
 
         fr, target = RtingsCrawler.parse_json(json_data)

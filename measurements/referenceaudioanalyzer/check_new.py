@@ -8,10 +8,10 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 
 
 def main():
-    with open(os.path.join(DIR_PATH, 'names.txt'), 'r') as f:
+    with open(os.path.join(DIR_PATH, 'names.txt'), 'r', encoding='utf-8') as f:
         old = f.read().split('\n')
 
-    with open(os.path.join(DIR_PATH, 'links.json'), 'r') as f:
+    with open(os.path.join(DIR_PATH, 'links.json'), 'r', encoding='utf-8') as f:
         new = json.loads(f.read())
 
     for name in list(new.keys()):

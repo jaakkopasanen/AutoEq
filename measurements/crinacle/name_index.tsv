@@ -335,7 +335,7 @@ Exclusive 1	TFZ Exclusive 1	inear
 Exclusive 3	TFZ Exclusive 3	inear
 Exclusive 5	TFZ Exclusive 5	inear
 F111	FitEar F111	inear
-F111 Clone	Fake Taobao F111	inear
+F111 Clone	Fake Taobao F111	ignore
 F3	FiiO F3	inear
 F4100	Final Audio F4100	inear
 F5	FiiO F5	inear
@@ -835,7 +835,7 @@ SE5U S2	Spiral Ears SE5U (sample 2)	inear
 SE846 Black	Shure SE846 (black) (sample 1)	inear
 SE846 Black S2	Shure SE846 (black) (sample 2)	inear
 SE846 Blue	Shure SE846 (blue)	inear
-SE846 Clone	Fake Shure SE846	inear
+SE846 Clone	Fake Shure SE846	ignore
 SE846 White	Shure SE846 White	inear
 Secret Garden	TFZ Secret Garden	inear
 SEED	Kinera SEED	inear

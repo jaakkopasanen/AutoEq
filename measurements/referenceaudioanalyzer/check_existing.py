@@ -9,7 +9,7 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 
 
 def main():
-    with open(os.path.join(DIR_PATH, os.pardir, 'results', 'README.md'), 'r') as f:
+    with open(os.path.join(DIR_PATH, os.pardir, 'results', 'README.md'), 'r', encoding='utf-8') as f:
         lines = f.read().split('\n')
 
     non_alphanumeric = re.compile(r'\W+')

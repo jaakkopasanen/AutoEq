@@ -793,7 +793,7 @@ class FrequencyResponse:
             max_gains = [x + 0.5 for x in max_gains]
 
             # Read Parametric eq
-            with open(parametric_eq_path, 'r') as f:
+            with open(parametric_eq_path, 'r', encoding='utf-8') as f:
                 parametric_eq_str = f.read().strip()
 
             # Filters as Markdown table
@@ -868,7 +868,7 @@ class FrequencyResponse:
             preamp = np.min([0.0, float(-np.max(self.fixed_band_eq))]) - 0.5
 
             # Read Parametric eq
-            with open(fixed_band_eq_path, 'r') as f:
+            with open(fixed_band_eq_path, 'r', encoding='utf-8') as f:
                 fixed_band_eq_str = f.read().strip()
 
             # Filters as Markdown table
