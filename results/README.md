@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 This means if there are measurements from multiple sources for the same headphone model only the highest
 priority result will be shown in this list.
 
-This list has 2937 headphone models covered but if your headphone is missing you can create settings for it
+This list has 2938 headphone models covered but if your headphone is missing you can create settings for it
 yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 - [1Custom SA02](./crinacle/harman_in-ear_2019v2/1Custom%20SA02)
@@ -1745,6 +1745,7 @@ yourself by following this guide: [Equalizing Headphones the Easy Way](https://m
 - [Moondrop Spaceship](./oratory1990/harman_in-ear_2019v2/Moondrop%20Spaceship)
 - [Moondrop Starfield](./crinacle/harman_in-ear_2019v2/Moondrop%20Starfield)
 - [Mpow Bluetooth Over-Ear](./rtings/avg/Mpow%20Bluetooth%20Over-Ear)
+- [Mpow Flame Pro](./rtings/avg/Mpow%20Flame%20Pro)
 - [Mpow H10](./rtings/avg/Mpow%20H10)
 - [Mpow H5](./rtings/avg/Mpow%20H5)
 - [Mpow Jaws](./rtings/avg/Mpow%20Jaws)

@@ -2222,6 +2222,7 @@ from the same source.
 - [Moondrop Spaceship](./oratory1990/harman_in-ear_2019v2/Moondrop%20Spaceship) by oratory1990
 - [Moondrop Starfield](./crinacle/harman_in-ear_2019v2/Moondrop%20Starfield) by Crinacle
 - [Mpow Bluetooth Over-Ear](./rtings/avg/Mpow%20Bluetooth%20Over-Ear) by Rtings
+- [Mpow Flame Pro](./rtings/avg/Mpow%20Flame%20Pro) by Rtings
 - [Mpow H10](./rtings/avg/Mpow%20H10) by Rtings
 - [Mpow H5](./rtings/avg/Mpow%20H5) by Rtings
 - [Mpow Jaws](./rtings/avg/Mpow%20Jaws) by Rtings
