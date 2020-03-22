@@ -47,12 +47,16 @@ def main():
             if true_name is None:
                 print(f'"{name}" not found in manufacturers')
                 continue
-            dir_path = os.path.abspath(os.path.join(dir_path, os.pardir, true_name))
-            new_path = os.path.join(dir_path, f'{true_name}.csv')
-            os.makedirs(dir_path, exist_ok=True)
-            if new_path != fp:
-                print(f'Moved "{os.path.relpath(fp, DIR_PATH)}" to "{os.path.relpath(new_path, DIR_PATH)}"')
-                shutil.move(fp, new_path)
+            new_dir_path = os.path.abspath(os.path.join(dir_path, os.pardir, true_name))
+            new_file_path = os.path.join(new_dir_path, f'{true_name}.csv')
+            os.makedirs(new_dir_path, exist_ok=True)
+            if os.path.normcase(os.path.normpath(new_file_path)) != os.path.normcase(os.path.normpath(fp)):
+                print(f'Moved "{os.path.relpath(fp, DIR_PATH)}" to "{os.path.relpath(new_file_path, DIR_PATH)}"')
+                shutil.move(fp, new_file_path)
+                try:
+                    os.rmdir(dir_path)
+                except OSError:
+                    pass
 
 
 if __name__ == '__main__':

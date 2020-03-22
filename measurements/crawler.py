@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 from abc import ABC, abstractmethod
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.name_index import NameIndex, NameItem
+from measurements.manufacturer_index import ManufacturerIndex
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
@@ -19,6 +20,7 @@ class Crawler(ABC):
         self.name_proposals = self.get_name_proposals()
         self.existing = self.get_existing()
         self.urls = self.get_urls()
+        self.manufacturers = ManufacturerIndex()
 
     @staticmethod
     @abstractmethod
@@ -98,14 +100,41 @@ class Crawler(ABC):
         print(s)
         if len(name_options):
             print(f'\n'.join(f'[{i}] {o}' for i, o in enumerate(name_options)))
-        name = input('> ')
-        try:
-            name = name_options[int(name)]
-            if name == 'skip':
-                return None
-        except (KeyError, ValueError):
-            pass
+        while True:
+            name = input('> ')
+            try:
+                name = name_options[int(name)]
+                if name == 'skip':
+                    return None
+                break
+            except (KeyError, ValueError):
+                break
+            except IndexError:
+                print('That didn\'t work, try again.')
         return name
+
+    @staticmethod
+    def prompt_manufacturer(name_options):
+        """Prompts true manufacturer from the user."""
+        name_options = name_options if name_options is not None else []
+        s = 'What is it\'s true manufacturer name?'
+        if len(name_options):
+            s += ' Select a number or write the name if none of the options.'
+        print(s)
+        if len(name_options):
+            print(f'\n'.join(f'[{i + 1}] {o}' for i, o in enumerate(name_options)))
+        while True:
+            name = input('> ')
+            try:
+                name = name_options[int(name) - 1]
+                break
+            except (KeyError, ValueError):
+                break
+            except IndexError:
+                print('That didn\'t work, try again.')
+        print('Which part of the name to replace')
+        replace = input('> ')
+        return name, replace
 
     @staticmethod
     def prompt_form():
@@ -143,7 +172,7 @@ class Crawler(ABC):
                             names_and_ratios[i] = (names_and_ratios[i][0], match[1], names_and_ratios[i][2])
 
             # Prompt
-            name_options = [x[0] for x in sorted(names_and_ratios, key=lambda x: x[1], reverse=True)[:8]]
+            name_options = [x[0] for x in sorted(names_and_ratios, key=lambda x: x[1], reverse=True)[:4]]
             if false_name not in name_options:
                 name_options.append(false_name)  # Add the false name
 
@@ -152,11 +181,37 @@ class Crawler(ABC):
             if true_name is None:
                 return None
 
+            # Find and replace true manufacturer name or prompt it
+            if self.manufacturers.find(true_name)[0] is None:
+                # Unknown manufacturer, find options with the two first words and prompt it
+                manufacturer_options = []
+                for i in range(1, min(3, len(true_name.split()))):
+                    candidate = ' '.join(true_name.split()[:i])
+                    print(candidate)
+                    manufacturer_options += self.manufacturers.search(candidate)
+                    if candidate not in [x[0] for x in manufacturer_options]:
+                        manufacturer_options.append((candidate, 0))
+                manufacturer_options = sorted(manufacturer_options, key=lambda x: x[1], reverse=True)
+                manufacturer_options = [x[0] for x in manufacturer_options]
+                manufacturer, replace = self.prompt_manufacturer(manufacturer_options)
+                _, match = self.manufacturers.find(manufacturer)
+                if match:
+                    # Add as a new variant in existing manufacturer
+                    for m in self.manufacturers.manufacturers:
+                        if m[0] == match:
+                            m.append(replace)
+                else:
+                    # Add new manufacturer
+                    self.manufacturers.manufacturers.append([manufacturer])
+                self.manufacturers.write()
+            # Replace
+            true_name = self.manufacturers.replace(true_name)
+
             # Find the answer and select form
             for name, ratio, f in names_and_ratios:
                 if true_name == name:
                     form = f
-                    continue
+                    break
             true_name = true_name.replace(' ✓', '')
 
         else:
