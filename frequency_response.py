@@ -263,10 +263,7 @@ class FrequencyResponse:
         df = pd.DataFrame(self.to_dict())
         df.to_csv(file_path, header=True, index=False, float_format='%.2f')
 
-    def write_eqapo_graphic_eq(self, file_path, normalize=True):
-        """Writes equalization graph to a file as Equalizer APO config."""
-        file_path = os.path.abspath(file_path)
-
+    def eqapo_graphic_eq(self, normalize=True):
         fr = FrequencyResponse(name='hack', frequency=self.frequency, raw=self.equalization)
         fr.interpolate(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=GRAPHIC_EQ_STEP)
         if normalize:
@@ -279,9 +276,15 @@ class FrequencyResponse:
         while np.abs(fr.raw[-1]) < 0.1 and np.abs(fr.raw[-2]) < 0.1:  # Last two are zeros
             fr.raw = fr.raw[:-1]
 
+        s = '; '.join(['{f} {a:.1f}'.format(f=f, a=a) for f, a in zip(fr.frequency, fr.raw)])
+        s = 'GraphicEQ: ' + s
+        return s
+
+    def write_eqapo_graphic_eq(self, file_path, normalize=True):
+        """Writes equalization graph to a file as Equalizer APO config."""
+        file_path = os.path.abspath(file_path)
+        s = self.eqapo_graphic_eq(normalize=normalize)
         with open(file_path, 'w', encoding='utf-8') as f:
-            s = '; '.join(['{f} {a:.1f}'.format(f=f, a=a) for f, a in zip(fr.frequency, fr.raw)])
-            s = 'GraphicEQ: ' + s
             f.write(s)
         return s
 
