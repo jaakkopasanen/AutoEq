@@ -27,7 +27,6 @@ class ManufacturerIndex:
                 if re.search(f'^{variant}', name, flags=re.IGNORECASE):
                     # Case insensitive match with manufacturer, add true manufacturer and the matching variant
                     matches.append((manufacturer[0], variant))
-                    break
 
         if not matches:
             return None, None

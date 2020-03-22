@@ -125,6 +125,9 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
         # Create frequency response
         fr = FrequencyResponse(model, f, amplitude)
         fr.interpolate()
+        if len(fr.frequency) < 2:
+            im.show()
+            raise ValueError(f'Failed to parse image for {fr.name}')
         fr.smoothen_fractional_octave(window_size=1/3, treble_window_size=1/3)
         fr.raw = fr.smoothed.copy()
         fr.smoothed = np.array([])
