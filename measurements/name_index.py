@@ -5,7 +5,7 @@ import sys
 from glob import glob
 import pandas as pd
 import re
-from fuzzywuzzy import fuzz
+from rapidfuzz import fuzz
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.utils import split_path
 
@@ -135,10 +135,10 @@ class NameIndex:
 
         Args:
             name: Name to search by. Ignored if None.
-            threshold: Threshold for matching with FuzzyWuzzy.
+            threshold: Threshold for matching with RapidFuzz.
 
         Returns:
-            List of matching triplets with NameItem, FuzzyWuzzy ratio and FuzzyWuzzy token_set_ratio
+            List of matching triplets with NameItem, RapidFuzz ratio and RapidFuzz token_set_ratio
         """
         matches = []
         for item in self.items:
@@ -154,10 +154,10 @@ class NameIndex:
 
         Args:
             name: Name to search by. Ignored if None.
-            threshold: Threshold for matching with FuzzyWuzzy.
+            threshold: Threshold for matching with RapidFuzz.
 
         Returns:
-            List of matching triplets with NameItem, FuzzyWuzzy ratio and FuzzyWuzzy token_set_ratio
+            List of matching triplets with NameItem, RapidFuzz ratio and RapidFuzz token_set_ratio
         """
         matches = []
         for item in self.items:

@@ -11,4 +11,4 @@ tabulate~=0.8.5
 soundfile~=0.10.2
 beautifulsoup4~=4.8.2
 selenium~=3.141.0
-fuzzywuzzy~=0.18.0
+rapidfuzz~=0.2.1

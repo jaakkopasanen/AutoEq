@@ -3,7 +3,7 @@
 import os
 import sys
 import re
-from fuzzywuzzy import fuzz
+from rapidfuzz import fuzz
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
