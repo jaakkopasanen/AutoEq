@@ -11,8 +11,6 @@ ROOT_DIR = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 
 def main():
     for db in ['crinacle', 'headphonecom', 'innerfidelity', 'oratory1990', 'referenceaudioanalyzer', 'rtings']:
-        if db == 'referenceaudioanalyzer':
-            continue
         measurements = list(glob(
             os.path.join(ROOT_DIR, 'measurements', db, 'data', '**', '*.csv'),
             recursive=True

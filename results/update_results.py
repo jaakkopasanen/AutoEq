@@ -4,7 +4,7 @@ import os
 import sys
 import argparse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from frequency_response import FrequencyResponse
+from autoeq import batch_processing
 
 ROOT_DIR = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 
@@ -55,229 +55,196 @@ def main():
     harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
     crinacle_overear = os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'resources', 'crinacle_over-ear.csv')
     zero = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
+    hdmx = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_hdm-x.csv')
+    hdm1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_hdm1.csv')
+    sf1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_sf1.csv')
+    siec = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_siec.csv')
+    eq_kwargs = {
+        'equalize': True, 'parametric_eq': True, 'max_filters': [5, 5], 'ten_band_eq': True, 'new_only': new_only
+    }
+    onear_kwargs = eq_kwargs.copy().update({'bass_boost_gain': 4.0})
+    inear_kwargs = eq_kwargs.copy().update({'bass_boost_gain': 6.0})
+    earbud_kwargs = eq_kwargs.copy().update({'bass_boost_gain': 0.0})
 
     if innerfidelity:
         if onear:
-            # Innerfidelity on-ear SBAF-Serious
             print('\nProcessing Innerfidelity on-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'onear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
-                new_only=new_only,
                 compensation=if_compensation,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=4.0
+                **onear_kwargs
             )
 
         if inear:
-            # Innerfidelity in-ear SBAF-Serious
             print('\nProcessing Innerfidelity in-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
-                new_only=new_only,
                 compensation=if_compensation,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=6.0
+                **inear_kwargs
             )
 
         if earbud:
-            # Innerfidelity earbud SBAF-Serious
             print('\nProcessing Innerfidelity earbud measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'sbaf-serious'),
-                new_only=new_only,
                 compensation=if_compensation,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
+                **earbud_kwargs
             )
 
     if headphonecom:
         if onear:
-            # Headphone.com on-ear SBAF-Serious
             print('\nProcessing Headphone.com on-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'onear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'headphonecom', 'sbaf-serious'),
-                new_only=new_only,
                 compensation=hp_compensation,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=4.0
+                **onear_kwargs
             )
 
         if inear:
-            # Headphone.com in-ear SBAF-Serious
             print('\nProcessing Headphone.com in-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'headphonecom', 'sbaf-serious'),
-                new_only=new_only,
                 compensation=hp_compensation,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=6.0
+                **inear_kwargs
             )
 
         if earbud:
-            # Headphone.com earbud SBAF-Serious
             print('\nProcessing Headphone.com earbud measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'headphonecom', 'sbaf-serious'),
-                new_only=new_only,
                 compensation=hp_compensation,
-                equalize=True,
-                parametric_eq=True,
-                ten_band_eq=True,
-                max_filters=[5, 5],
+                **earbud_kwargs
             )
 
     if oratory1990:
         if onear:
-            # Oratory1990 on-ear
             print('\nProcessing oratory1990 on-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'onear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018'),
-                new_only=new_only,
                 compensation=harman_overear,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=4.0
+                **onear_kwargs
             )
 
         if inear:
-            # Oratory1990 in-ear
             print('\nProcessing oratory1990 in-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2'),
-                new_only=new_only,
                 compensation=harman_inear,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=6.0
+                **inear_kwargs
             )
 
         if earbud:
-            # Oratory1990 earbud
             print('\nProcessing oratory1990 ear bud measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2'),
-                new_only=new_only,
                 compensation=harman_inear,
-                equalize=True,
-                parametric_eq=True,
-                ten_band_eq=True,
-                max_filters=[5, 5],
+                **earbud_kwargs
             )
 
     if rtings:
         if onear:
             # Rtings on-ear Avg
             print('\nProcessing Rtings on-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'onear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
-                new_only=new_only,
                 compensation=rtings_compensation,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=4.0
+                **onear_kwargs
             )
 
         if inear:
-            # Rtings in-ear Avg
             print('\nProcessing Rtings in-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
-                new_only=new_only,
                 compensation=rtings_compensation,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=6.0
+                **inear_kwargs
             )
 
         if earbud:
-            # Rtings earbud Avg
             print('\nProcessing Rtings earbud measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'earbud'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'avg'),
-                new_only=new_only,
                 compensation=rtings_compensation,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True
+                **earbud_kwargs
             )
 
     if referenceaudioanalyzer:
-        # Reference Audio Analyzer on-ear
-        print('\nProcessing Reference Audio Analyzer measurements...')
-        FrequencyResponse.main(
-            input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data'),
-            output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'zero'),
-            new_only=new_only,
-            compensation=zero,
-            equalize=True,
-            parametric_eq=True,
-            max_filters=[5, 5],
-            ten_band_eq=True,
-        )
+        if onear:
+            print('\nProcessing Reference Audio Analyzer on-ear measurements...')
+            batch_processing(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'onear', 'HDM-X'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'HDM-X'),
+                compensation=hdmx,
+                **onear_kwargs
+            )
+            batch_processing(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'onear', 'HDM1'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'HDM1'),
+                compensation=hdm1,
+                **onear_kwargs
+            )
+            batch_processing(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'onear', 'SF1'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'SF1'),
+                compensation=sf1,
+                **onear_kwargs
+            )
+        if inear:
+            print('\nProcessing Reference Audio Analyzer in-ear measurements...')
+            batch_processing(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'inear', 'SIEC'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'SIEC'),
+                compensation=siec,
+                **inear_kwargs
+            )
+            batch_processing(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'inear', 'SIEC CUSTOM'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'SIEC'),
+                compensation=siec,
+                **inear_kwargs
+            )
+        if earbud:
+            print('\nProcessing Reference Audio Analyzer earbud measurements...')
+            batch_processing(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'onear', 'HDM-X'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'HDM-X'),
+                compensation=hdmx,
+                **earbud_kwargs
+            )
+            batch_processing(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'inear', 'SIEC'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'SIEC'),
+                compensation=siec,
+                **earbud_kwargs
+            )
 
     if crinacle:
         if onear:
-            # Crinacle on-ear
             print('\nProcessing Crinacle on-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'crinacle_over-ear'),
-                new_only=new_only,
                 compensation=crinacle_overear,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=4.0
+                **onear_kwargs
             )
         if inear:
-            # Crinacle in-ear
             print('\nProcessing Crinacle in-ear measurements...')
-            FrequencyResponse.main(
+            batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'inear'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2'),
-                new_only=new_only,
                 compensation=harman_inear,
-                equalize=True,
-                parametric_eq=True,
-                max_filters=[5, 5],
-                ten_band_eq=True,
-                bass_boost_gain=6.0
+                **inear_kwargs
             )
 
 
