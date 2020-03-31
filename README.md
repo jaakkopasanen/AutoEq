@@ -199,7 +199,7 @@ presets but can be created by passing parameters
 [Contact me](#contact) if you know good solutions for iOS.
 
 #### EQE
-[EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer on iOS but requires jailbreaking your iOS device. [This](https://github.com/rweichler/AutoEQE) repository contains converted lua scripts that can be dropped into `/var/tweak/com.r333d.eqe/db/presets/` folder to load these presets and includes a script to convert AutoEQ presets into `lua` scripts
+[EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer tweak on iOS but requires jailbreaking your iOS device. [This](https://github.com/rweichler/AutoEQE) repository contains lua scripts converted from the presets on this repo, that can be dropped into `/var/tweak/com.r333d.eqe/db/presets/` folder to load the equalizer. AutoEQE also includes a lua script to convert AutoEQ presets into EQE compatible presets.
 
 ### Hardware
 Some devices have built-in equalizers one of these is [Radsone EasStudio ES100](https://www.radsone.com/earstudio).
