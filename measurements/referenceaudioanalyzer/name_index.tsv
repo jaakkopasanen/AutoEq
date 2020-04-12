@@ -51,6 +51,8 @@ AKG K 77 PRO	AKG K77 Pro	onear
 AKG K 80	AKG K80	onear
 AKG K 92	AKG K92	onear
 AKG K 99 PRO	AKG K99 Pro	onear
+AKG K1000 (0 degress)	AKG K1000 (0 degrees)	onear
+AKG K1000 (30 degress)	AKG K1000 (30 degrees)	onear
 AKG N 20	AKG N20	inear
 AKG Q 460	AKG Q460	onear
 AKG Q 701	AKG Q701	onear
@@ -58,6 +60,7 @@ AKG Y 20	AKG Y20	inear
 AKG Y 30	AKG Y30	onear
 AKG Y 50	AKG Y50	onear
 Aleks Headphones Live Sound	Aleks Headphones Live Sound	onear
+Alessandro Music Series One	Alessandro Music Series One	onear
 Alessandro Music Series Two	Alessandro Music Series Two	onear
 Allen & Heath XD-53	Allen & Heath XD-53	onear
 Ambient Acoustics AM10	Ambient Acoustics AM10	inear
@@ -281,9 +284,9 @@ DITA Audio Dream	Dita Audio Dream	inear
 DIY MDR-XB950AP-Beyerdynamic DT250		ignore
 DIY Snowy88 hybrid 5		ignore
 Dunu Crius (DN13)	DUNU DN13 Crius	inear
-Dunu DK-3001	DUNU DK-3001	inear
+Dunu DK-3001	DUNU DK3001	inear
 Dunu DK-3001 Pro	DUNU DK3001 Pro	inear
-Dunu DK-4001	DUNU DK-4001	inear
+Dunu DK-4001	DUNU DK4001	inear
 Dunu DN-1000	DUNU DN1000	inear
 Dunu DN-12	DUNU DN12	inear
 Dunu DN-2000	DUNU DN2000	inear
@@ -555,7 +558,7 @@ Klipsch Image X10	Klipsch Image X10	inear
 Klipsch One	Klipsch Image One	onear
 Klipsch X11i	Klipsch X11i	inear
 Klipsch x7i	Klipsch x7i	inear
-Koss ESP 950	Koss ESP950	onear
+Koss ESP 950	Koss ESP950	ignore
 Koss ESP950 (default cushions without the shell)		ignore
 Koss ESP950 (leather cushions)		ignore
 Koss Porta Pro	Koss Porta Pro	onear
@@ -621,8 +624,8 @@ MrSpeakers Mad Dog	Dan Clark Audio Mad Dog	onear
 Musical Fidelity EB-50	Musical Fidelity EB-50	inear
 MyST Izo-OS	MyST Izo-OS	onear
 MyST IzoEM-1		ignore
-MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30		ignore
+MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
@@ -769,6 +772,7 @@ Sennheiser PC 350 Xense	Sennheiser PC 350	onear
 Sennheiser PX 100 II	Sennheiser PX 100 II	onear
 Sennheiser PX 200 II	Sennheiser PX 200 II	onear
 Sennheiser PX 90	Sennheiser PX 90	onear
+Sennheiser PXC 550 Wireless	Sennheiser PXC 550 Wireless	onear
 Sennheiser URBANITE XL	Sennheiser Urbanite XL	onear
 Shozy Hibiki Mk.2	Shozy Hibiki MK2	inear
 Shozy Zero	Shozy Zero	inear
@@ -840,6 +844,7 @@ SoundMAGIC PL50	SoundMAGIC PL50	inear
 Stax SR-001	Stax SR-001	inear
 Stax SR-007 Mk2	Stax SR-007 Mk2	onear
 Stax SR-303	Stax SR-303	onear
+Stax SR-40	Stax SR-40	onear
 Stax SR-40 & SRD4	Stax SR-40	onear
 Stax SR-404	Stax SR-404	onear
 Stax SR-507	Stax SR-507	onear
@@ -919,8 +924,8 @@ Westone UM3X	Westone UM3X	inear
 Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 xDuoo EP1	xDuoo EP1	inear

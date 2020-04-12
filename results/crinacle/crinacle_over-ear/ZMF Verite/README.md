@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 13 Hz    | 0.43 | 3.8 dB   |
-| Peaking | 264 Hz   | 0.26 | -3.2 dB  |
-| Peaking | 4241 Hz  | 1.35 | 7.6 dB   |
-| Peaking | 5717 Hz  | 3.91 | -7.5 dB  |
-| Peaking | 18721 Hz | 0.78 | -11.1 dB |
-| Peaking | 931 Hz   | 3.17 | -1.9 dB  |
-| Peaking | 1594 Hz  | 3.28 | 3.7 dB   |
-| Peaking | 2617 Hz  | 2.58 | -3.9 dB  |
-| Peaking | 3101 Hz  | 4.66 | 3.7 dB   |
-| Peaking | 11005 Hz | 3.19 | 1.0 dB   |
+| Peaking | 15 Hz    | 0.67 | 4.2 dB   |
+| Peaking | 276 Hz   | 0.28 | -3.2 dB  |
+| Peaking | 4114 Hz  | 1.43 | 7.2 dB   |
+| Peaking | 5737 Hz  | 4.35 | -6.9 dB  |
+| Peaking | 19058 Hz | 0.85 | -12.4 dB |
+| Peaking | 931 Hz   | 3.18 | -1.9 dB  |
+| Peaking | 1579 Hz  | 3.5  | 3.3 dB   |
+| Peaking | 2475 Hz  | 5.2  | -3.0 dB  |
+| Peaking | 16134 Hz | 0.81 | 1.8 dB   |
+| Peaking | 17075 Hz | 2.39 | -3.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.4dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 2.0 dB  |
-| Peaking | 62 Hz    | 1.41 | -0.3 dB |
+| Peaking | 31 Hz    | 1.41 | 2.3 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.5 dB |
 | Peaking | 125 Hz   | 1.41 | -2.4 dB |
 | Peaking | 250 Hz   | 1.41 | -2.6 dB |
 | Peaking | 500 Hz   | 1.41 | -1.9 dB |
 | Peaking | 1000 Hz  | 1.41 | -2.1 dB |
-| Peaking | 2000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 4000 Hz  | 1.41 | 5.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.9 dB |
-| Peaking | 16000 Hz | 1.41 | -7.8 dB |
+| Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 16000 Hz | 1.41 | -6.6 dB |
 
 ### Graphs
 ![](./ZMF%20Verite.png)

@@ -58,7 +58,9 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
     for input_file_path in glob_files:
         relative_path = os.path.relpath(input_file_path, input_dir)
         output_file_path = os.path.join(output_dir, relative_path) if output_dir else None
-        if not (os.path.isfile(output_file_path) and new_only):
+        output_file_dir = os.path.split(output_file_path)[0]
+        if not new_only or not os.path.isdir(output_file_dir) or not len(os.listdir(output_file_dir)):
+            # Not looking for only new ones or the output directory doesn't exist or it's empty
             file_paths.append((input_file_path, output_file_path))
             n_total += 1
 

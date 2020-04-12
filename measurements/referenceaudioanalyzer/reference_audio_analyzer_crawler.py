@@ -3,6 +3,7 @@
 import os
 import sys
 import numpy as np
+import pandas as pd
 import re
 import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw
@@ -30,8 +31,14 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
     def get_existing():
         suffix_regex = re.compile(r' \(.*\)$')
         name_index = NameIndex.read_files(os.path.join(DIR_PATH, 'data', '**', '*.csv'))
+        # Add models without mod suffixes which don't exist
         for i, row in name_index.df.iterrows():
-            row.true_name = re.sub(suffix_regex, '', row.true_name)
+            model = re.sub(suffix_regex, '', row.true_name)
+            if model != row.true_name:
+                name_index.df = name_index.df.append(pd.DataFrame(
+                    [[row.false_name, model, row.form]],
+                    columns=name_index.df.columns
+                ))
         name_index.df.drop_duplicates()
         return name_index
 
@@ -157,7 +164,8 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
                 name = mods.items[0].true_name
             else:
                 # Not in the name index, prompt user
-                self.prompt_true_name([name])
+                print(f'Mod of "{name}" is not known.')
+                name = self.prompt_true_name([name])
 
             report_urls[name] = f'https://reference-audio-analyzer.pro{anchor["href"]}'
 

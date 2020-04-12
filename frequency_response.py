@@ -340,9 +340,9 @@ class FrequencyResponse:
                     # Interpolate between the two points
                     f_0 = peak_fc[pair_ind]
                     g_0 = peak_g[pair_ind]
-                    i_0 = np.where(frequency == f_0)[0][0]
+                    i_0 = np.argmin(np.abs(frequency - f_0))
                     f_1 = peak_fc[pair_ind + 1]
-                    i_1 = np.where(frequency == f_1)[0][0]
+                    i_1 = np.argmin(np.abs(frequency - f_1))
                     g_1 = peak_g[pair_ind]
                     interp = InterpolatedUnivariateSpline(np.log10([f_0, f_1]), [g_0, g_1], k=1)
                     line = interp(frequency[i_0:i_1 + 1])

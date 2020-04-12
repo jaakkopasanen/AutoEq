@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-5.2dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 28 Hz    | 0.68 | 4.6 dB   |
-| Peaking | 1726 Hz  | 0.74 | -5.9 dB  |
-| Peaking | 2150 Hz  | 2.01 | 7.8 dB   |
-| Peaking | 6366 Hz  | 3.47 | 5.1 dB   |
-| Peaking | 19686 Hz | 0.38 | -15.0 dB |
-| Peaking | 5042 Hz  | 6.69 | -4.4 dB  |
-| Peaking | 5401 Hz  | 4.21 | 2.0 dB   |
-| Peaking | 10086 Hz | 2.59 | 3.4 dB   |
-| Peaking | 13339 Hz | 1.2  | -1.6 dB  |
-| Peaking | 18239 Hz | 2.82 | 1.5 dB   |
+| Peaking | 26 Hz    | 0.59 | 4.5 dB   |
+| Peaking | 1895 Hz  | 0.67 | -6.5 dB  |
+| Peaking | 2179 Hz  | 1.9  | 8.7 dB   |
+| Peaking | 7242 Hz  | 1.14 | 4.0 dB   |
+| Peaking | 19780 Hz | 0.29 | -14.4 dB |
+| Peaking | 728 Hz   | 5.38 | 1.3 dB   |
+| Peaking | 5017 Hz  | 5.46 | -5.3 dB  |
+| Peaking | 5908 Hz  | 1.94 | 4.2 dB   |
+| Peaking | 7320 Hz  | 2.85 | -3.0 dB  |
+| Peaking | 10182 Hz | 5.4  | 2.0 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.5dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 31 Hz    | 1.41 | 5.0 dB   |
 | Peaking | 62 Hz    | 1.41 | 1.3 dB   |
-| Peaking | 125 Hz   | 1.41 | -0.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.1 dB  |
 | Peaking | 250 Hz   | 1.41 | -0.5 dB  |
 | Peaking | 500 Hz   | 1.41 | 0.3 dB   |
-| Peaking | 1000 Hz  | 1.41 | -3.9 dB  |
+| Peaking | 1000 Hz  | 1.41 | -3.8 dB  |
 | Peaking | 2000 Hz  | 1.41 | 1.3 dB   |
 | Peaking | 4000 Hz  | 1.41 | -1.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | 2.4 dB   |
-| Peaking | 16000 Hz | 1.41 | -13.9 dB |
+| Peaking | 8000 Hz  | 1.41 | 2.3 dB   |
+| Peaking | 16000 Hz | 1.41 | -13.5 dB |
 
 ### Graphs
 ![](./Stax%20SR-009.png)

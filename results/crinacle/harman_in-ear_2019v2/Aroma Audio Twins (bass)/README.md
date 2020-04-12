@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 40 Hz    | 0.57 | -5.0 dB |
-| Peaking | 124 Hz   | 0.65 | -5.0 dB |
-| Peaking | 303 Hz   | 0.49 | -8.3 dB |
-| Peaking | 1398 Hz  | 0.49 | 7.8 dB  |
-| Peaking | 4643 Hz  | 3.24 | 4.3 dB  |
-| Peaking | 1633 Hz  | 2.07 | -0.6 dB |
-| Peaking | 3148 Hz  | 2.06 | 2.1 dB  |
-| Peaking | 3402 Hz  | 6.68 | -3.6 dB |
-| Peaking | 8023 Hz  | 6.92 | -3.6 dB |
-| Peaking | 22050 Hz | 1.38 | 0.2 dB  |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 81 Hz    | 0.33 | -2.0 dB  |
+| Peaking | 241 Hz   | 0.44 | -6.0 dB  |
+| Peaking | 2210 Hz  | 0.76 | 6.3 dB   |
+| Peaking | 4733 Hz  | 2.08 | 4.1 dB   |
+| Peaking | 19652 Hz | 0.83 | -10.7 dB |
+| Peaking | 931 Hz   | 3.64 | 0.6 dB   |
+| Peaking | 1294 Hz  | 4.65 | -0.7 dB  |
+| Peaking | 6964 Hz  | 5.07 | 1.8 dB   |
+| Peaking | 7821 Hz  | 3.61 | -2.0 dB  |
+| Peaking | 13877 Hz | 2.77 | 1.2 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -5.0 dB |
-| Peaking | 62 Hz    | 1.41 | -5.8 dB |
-| Peaking | 125 Hz   | 1.41 | -8.4 dB |
-| Peaking | 250 Hz   | 1.41 | -8.7 dB |
-| Peaking | 500 Hz   | 1.41 | -3.8 dB |
-| Peaking | 1000 Hz  | 1.41 | 4.9 dB  |
-| Peaking | 2000 Hz  | 1.41 | 5.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 5.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 16000 Hz | 1.41 | -0.0 dB |
+| Peaking | 31 Hz    | 1.41 | -1.5 dB |
+| Peaking | 62 Hz    | 1.41 | -2.3 dB |
+| Peaking | 125 Hz   | 1.41 | -5.1 dB |
+| Peaking | 250 Hz   | 1.41 | -6.0 dB |
+| Peaking | 500 Hz   | 1.41 | -3.3 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | 5.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -3.6 dB |
 
 ### Graphs
 ![](./Aroma%20Audio%20Twins%20(bass).png)

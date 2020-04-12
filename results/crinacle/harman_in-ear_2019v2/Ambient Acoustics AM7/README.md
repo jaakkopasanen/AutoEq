@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 13 Hz    | 0.38 | 6.4 dB   |
-| Peaking | 194 Hz   | 0.97 | -3.2 dB  |
-| Peaking | 1978 Hz  | 4.47 | -7.4 dB  |
-| Peaking | 4483 Hz  | 2.32 | 7.3 dB   |
-| Peaking | 7358 Hz  | 3.33 | -6.5 dB  |
-| Peaking | 878 Hz   | 1.2  | 4.0 dB   |
-| Peaking | 2099 Hz  | 0.23 | -2.9 dB  |
-| Peaking | 5791 Hz  | 0.21 | 2.7 dB   |
-| Peaking | 15647 Hz | 1.24 | 5.8 dB   |
-| Peaking | 19714 Hz | 0.56 | -19.1 dB |
+| Peaking | 13 Hz    | 0.36 | 6.5 dB   |
+| Peaking | 199 Hz   | 0.98 | -3.2 dB  |
+| Peaking | 1981 Hz  | 4.33 | -7.3 dB  |
+| Peaking | 4479 Hz  | 2.35 | 7.3 dB   |
+| Peaking | 7369 Hz  | 3.4  | -6.5 dB  |
+| Peaking | 870 Hz   | 0.51 | -2.1 dB  |
+| Peaking | 877 Hz   | 1.12 | 4.6 dB   |
+| Peaking | 12561 Hz | 0.75 | 2.6 dB   |
+| Peaking | 16010 Hz | 1.64 | 5.7 dB   |
+| Peaking | 19813 Hz | 0.56 | -19.2 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 4.7 dB  |
-| Peaking | 62 Hz    | 1.41 | 1.1 dB  |
-| Peaking | 125 Hz   | 1.41 | -1.7 dB |
+| Peaking | 31 Hz    | 1.41 | 5.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.9 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.6 dB |
 | Peaking | 250 Hz   | 1.41 | -2.8 dB |
 | Peaking | 500 Hz   | 1.41 | -0.3 dB |
-| Peaking | 1000 Hz  | 1.41 | 3.5 dB  |
-| Peaking | 2000 Hz  | 1.41 | -6.6 dB |
+| Peaking | 1000 Hz  | 1.41 | 3.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | -6.7 dB |
 | Peaking | 4000 Hz  | 1.41 | 7.1 dB  |
 | Peaking | 8000 Hz  | 1.41 | -3.6 dB |
-| Peaking | 16000 Hz | 1.41 | -3.0 dB |
+| Peaking | 16000 Hz | 1.41 | -2.8 dB |
 
 ### Graphs
 ![](./Ambient%20Acoustics%20AM7.png)

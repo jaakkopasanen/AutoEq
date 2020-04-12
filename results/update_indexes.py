@@ -52,7 +52,9 @@ def get_urls(files):
 def write_recommendations():
     urls = dict()
     # Get links to Reference Audio Analyzer results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'zero', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'siec', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'hdm1', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'hdm-x', '*')))))
     # Get links to Headphone.com results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'sbaf-serious', '*')))))
     # Get links to Rtings results
@@ -70,19 +72,20 @@ def write_recommendations():
 
     with open(os.path.join(DIR_PATH, 'README.md'), 'w', encoding='utf-8') as f:
         keys = sorted(urls.keys(), key=lambda s: s.lower())
-        s = '''# Recommended Results
+        s = f'''# Recommended Results
         This is a list of recommended results. Results for other measurements and target curves are available for many
         headphones, these can be found in the
         [full index](https://github.com/jaakkopasanen/AutoEq/blob/master/results/INDEX.md).
 
-        Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > Headphone.com > Reference Audio Analyzer.
-        This means if there are measurements from multiple sources for the same headphone model only the highest
-        priority result will be shown in this list.
+        Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > Headphone.com >
+        Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
+        model only the highest priority result will be shown in this list.
 
-        This list has {} headphone models covered but if your headphone is missing you can create settings for it
-        yourself by following this guide: [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
+        This list has {len(urls)} headphone models covered but if your headphone is missing you can create settings for
+        it yourself by following this guide:
+        [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
-        '''.format(len(urls))
+        '''
         s += '\n'.join([urls[key] for key in keys])
         f.write(re.sub('\n[ \t]+', '\n', s).strip())
 
@@ -102,7 +105,15 @@ def write_full_index():
     lines = []
     # Get links to Reference Audio Analyzer results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'zero', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'hdm-x', '*'))),
+        'Reference Audio Analyzer'
+    ))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'hdm1', '*'))),
+        'Reference Audio Analyzer'
+    ))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'siec', '*'))),
         'Reference Audio Analyzer'
     ))
     # Get links to Headphone.com results
@@ -156,11 +167,11 @@ def write_hesuvi_index():
     zip_object = ZipFile(os.path.join(DIR_PATH, 'hesuvi.zip'), 'w')
     dir_paths = [
         os.path.join(DIR_PATH, 'oratory1990'),
-        os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2'),
-        os.path.join(DIR_PATH, 'crinacle', 'crinacl_over-ear'),
+        os.path.join(DIR_PATH, 'crinacle'),
         os.path.join(DIR_PATH, 'innerfidelity'),
         os.path.join(DIR_PATH, 'rtings'),
         os.path.join(DIR_PATH, 'headphonecom'),
+        os.path.join(DIR_PATH, 'referenceaudioanalyzer'),
     ]
     zip_files = set()
     for dir_path in dir_paths:

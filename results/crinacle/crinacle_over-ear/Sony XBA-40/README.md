@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 24 Hz    | 0.23 | -8.0 dB  |
-| Peaking | 168 Hz   | 0.65 | -4.5 dB  |
-| Peaking | 2147 Hz  | 1.88 | 6.6 dB   |
-| Peaking | 13689 Hz | 4.22 | -5.0 dB  |
-| Peaking | 16859 Hz | 2.25 | -10.9 dB |
-| Peaking | 883 Hz   | 2.44 | 1.4 dB   |
-| Peaking | 2799 Hz  | 4.01 | 3.3 dB   |
-| Peaking | 3776 Hz  | 2.65 | -6.5 dB  |
-| Peaking | 5940 Hz  | 3.09 | 6.9 dB   |
-| Peaking | 19634 Hz | 2.19 | 0.7 dB   |
+| Peaking | 23 Hz    | 0.21 | -8.0 dB  |
+| Peaking | 170 Hz   | 0.66 | -4.4 dB  |
+| Peaking | 2140 Hz  | 1.88 | 6.6 dB   |
+| Peaking | 13552 Hz | 5    | -4.6 dB  |
+| Peaking | 16890 Hz | 1.96 | -10.3 dB |
+| Peaking | 882 Hz   | 2.45 | 1.4 dB   |
+| Peaking | 2794 Hz  | 3.98 | 3.0 dB   |
+| Peaking | 3767 Hz  | 2.81 | -6.4 dB  |
+| Peaking | 5963 Hz  | 2.95 | 6.3 dB   |
+| Peaking | 14846 Hz | 2.12 | 0.2 dB   |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.4dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -8.6 dB |
-| Peaking | 62 Hz    | 1.41 | -5.2 dB |
-| Peaking | 125 Hz   | 1.41 | -6.2 dB |
+| Peaking | 31 Hz    | 1.41 | -8.9 dB |
+| Peaking | 62 Hz    | 1.41 | -5.0 dB |
+| Peaking | 125 Hz   | 1.41 | -6.3 dB |
 | Peaking | 250 Hz   | 1.41 | -4.0 dB |
 | Peaking | 500 Hz   | 1.41 | -0.7 dB |
 | Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 2000 Hz  | 1.41 | 6.3 dB  |
+| Peaking | 2000 Hz  | 1.41 | 6.2 dB  |
 | Peaking | 4000 Hz  | 1.41 | -2.3 dB |
-| Peaking | 8000 Hz  | 1.41 | 3.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -9.9 dB |
+| Peaking | 8000 Hz  | 1.41 | 3.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -9.3 dB |
 
 ### Graphs
 ![](./Sony%20XBA-40.png)

@@ -6,18 +6,18 @@ In case of using parametric equalizer, apply preamp of **-7.0dB** and build filt
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.8dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 214 Hz   | 0.35 | -6.6 dB  |
-| Peaking | 2065 Hz  | 0.22 | 2.7 dB   |
-| Peaking | 5671 Hz  | 1.58 | 5.0 dB   |
-| Peaking | 7694 Hz  | 4.43 | -8.5 dB  |
-| Peaking | 16251 Hz | 2.7  | -10.0 dB |
-| Peaking | 2384 Hz  | 5.14 | -2.2 dB  |
-| Peaking | 3185 Hz  | 2.05 | 2.0 dB   |
-| Peaking | 3936 Hz  | 3.91 | -2.6 dB  |
-| Peaking | 4506 Hz  | 4.85 | 0.9 dB   |
-| Peaking | 20266 Hz | 1.97 | -0.2 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 209 Hz   | 0.34 | -6.5 dB |
+| Peaking | 2421 Hz  | 0.19 | 2.8 dB  |
+| Peaking | 5544 Hz  | 1.76 | 4.5 dB  |
+| Peaking | 7783 Hz  | 4.57 | -8.1 dB |
+| Peaking | 16353 Hz | 2    | -9.3 dB |
+| Peaking | 28 Hz    | 1.78 | -0.9 dB |
+| Peaking | 2377 Hz  | 4.5  | -2.5 dB |
+| Peaking | 3063 Hz  | 1.55 | 1.8 dB  |
+| Peaking | 3913 Hz  | 5.13 | -2.1 dB |
+| Peaking | 13890 Hz | 5.86 | 1.8 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.2dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -2.4 dB |
 | Peaking | 1000 Hz  | 1.41 | 1.2 dB  |
 | Peaking | 2000 Hz  | 1.41 | 1.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 5.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 16000 Hz | 1.41 | -6.1 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.4 dB |
+| Peaking | 16000 Hz | 1.41 | -6.5 dB |
 
 ### Graphs
 ![](./Audio-Technica%20ATH-LS400.png)

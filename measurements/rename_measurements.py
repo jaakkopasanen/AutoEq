@@ -159,6 +159,6 @@ def rename_groups():
 
 
 if __name__ == '__main__':
-    rename_manufacturers()
+    # rename_manufacturers()
     # group_measurements()
-    # rename_groups()
+    rename_groups()

@@ -15,9 +15,9 @@ def main():
             recursive=True
         ))
         measurements = [os.path.split(measurement)[1].replace('.csv', '') for measurement in measurements]
-        for path in glob(os.path.join(ROOT_DIR, 'results', db, '**', '*.csv'), recursive=True):
+        for path in glob(os.path.join(ROOT_DIR, 'results', db, '**', '*.png'), recursive=True):
             dir_path, file_name = os.path.split(path)
-            name = file_name.replace('.csv', '')
+            name = file_name.replace('.png', '')
             if name not in measurements and name != 'README.md':
                 print(f'Removing "{dir_path}"')
                 shutil.rmtree(dir_path)

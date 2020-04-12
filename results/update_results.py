@@ -54,15 +54,20 @@ def main():
     harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2_wo_bass.csv')
     harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
     crinacle_overear = os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'resources', 'crinacle_over-ear.csv')
-    hdmx = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_compensation_hdm-x.csv')
-    hdm1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_compensation_hdm1.csv')
-    siec = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_compensation_siec.csv')
+    hdmx = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_compensation_hdm-x.csv')
+    hdm1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_compensation_hdm1.csv')
+    siec = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_compensation_siec.csv')
+
     eq_kwargs = {
         'equalize': True, 'parametric_eq': True, 'max_filters': [5, 5], 'ten_band_eq': True, 'new_only': new_only
     }
-    onear_kwargs = eq_kwargs.copy().update({'bass_boost_gain': 4.0})
-    inear_kwargs = eq_kwargs.copy().update({'bass_boost_gain': 6.0})
-    earbud_kwargs = eq_kwargs.copy().update({'bass_boost_gain': 0.0})
+    onear_kwargs = eq_kwargs.copy()
+    onear_kwargs.update({'bass_boost_gain': 4.0})
+    inear_kwargs = eq_kwargs.copy()
+    inear_kwargs.update({'bass_boost_gain': 6.0})
+    earbud_kwargs = eq_kwargs.copy()
+    earbud_kwargs.update({'bass_boost_gain': 0.0})
+
 
     if innerfidelity:
         if onear:

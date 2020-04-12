@@ -157,6 +157,10 @@ result settings.
 convolution based equalizer (and much more) on Android but it requires rooting of the device. Viper4Android is supported
 with impulse response (WAV) files. For rooted users this is the best option.
 
+#### JamesDSP
+[JamesDSP](https://forum.xda-developers.com/android/apps-games/app-reformed-dsp-manager-t3607970) is an alternative to
+Viper4Android. It provides a system wide solution, has a convolution engine but requires rooting.
+
 ### Linux
 #### PulseEffects
 [PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
@@ -458,11 +462,14 @@ not sufficient since measurements and equalization have several problems that ne
 [Technical Challenges](#technical-challenges) for more details.
 
 Results provided in this project currently have all the headphone measurements from
-[Innerfidelity](https://www.innerfidelity.com/headphone-measurements), [Headphone.com](http://graphs.headphone.com/),
-[oratory1990](https://www.reddit.com/r/oratory1990), [Rtings](https://www.rtings.com/headphones),
-[Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1) and
-[Crinacle](https://crinacle.com/), although Crinacle has some experimental stuff in his numerical data files which have
-not been included.
+- [Crinacle](https://crinacle.com/)
+- [Headphone.com](http://graphs.headphone.com/)
+- [Innerfidelity](https://www.innerfidelity.com/headphone-measurements)
+- [oratory1990](https://www.reddit.com/r/oratory1990), [Rtings](https://www.rtings.com/headphones)
+- [Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1)
+- [Rtings](https://www.rtings.com/headphones)
+with the exception of Reference Audio Analyzer measurements done on SF1 system.
+
 Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
 [target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
 would be found in
@@ -475,27 +482,12 @@ oratory1990 measurements have been done on Gras 43AG and 43AC couplers, the same
 target responses by Olive et al. and therefore use Harman target responses for the equalization targets. These results
 are recommended over all other measurements because of this reason. Harman target data is in the `compensation` folder.
 
-Crinacle's measurements include only include in-ear headphones. These measurements have been performed with IEC 60318-4
-couplers and are therefore compatible with Harman in-ear targets. This fact also earns Crinacle's measurements second
-highest ranking recommendation after oratory1990.
-
-In-ear results with oratory1990 target (formerly "Usound" target) are not longer given because the new 2019 Harman
-in-ear fixes the +10 kHz problems of the 2017 target. Also it is easy to transform results created for Harman 2019 to
-oratory1990 target without running the processing yourself if you are using parametric equalizer and have two filters
-(bands) available by adding these two to your eq software:
-
-| Type    |   Fc |    Q |  Gain |
-|:--------|:-----|:-----|:------|
-| Peaking |  113 | 0.75 |   3.5 |
-| Peaking | 3766 | 0.63 |  -2.3 |
-
-The results will be remarkably similar to results produced with the actual oratory1990 target:
-
-![oratory1990 vs Harman in-ear 2019](https://i.imgur.com/kGYBOev.png)
-
-Of course it's still possible to produce native results with oratory1990 target by pointing compensation to the
-oratory1990 target file: `--compensation="compensation/oratory1990.csv` or
-`--compensation="compensation/oratory1990_wo_bass.csv`
+Crinacle's in-ear measurements have been performed with IEC 60318-4 coupler and are therefore compatible with
+Harman in-ear targets. This fact also earns Crinacle's measurements second highest ranking recommendation after
+oratory1990. Crinacle's over-ear measurements use the same ear simulator attached to a MiniDSP ears pinna. The
+measurements done on this system are not as accurate as oratory1990's but because of the high quality ear simulator,
+these are better than rest. A new target curve was created for Crinacle's over-ear measurements by calibrating
+Crinacle's measurements against oratory1990's measurements.
 
 Innerfidelity and Headphone.com measured headphones have
 [SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
@@ -517,29 +509,38 @@ tests found the treble average target to be slightly better. Rtings have
 [a very informative video](https://www.youtube.com/watch?v=HNEI3qLZEKo) about how they are doing the measurements and
 how did they came up with the target they use.
 
-Reference Audio Analyzer measurements are done one multiple different measurement systems and the compensation curve
-used in the images is not known. Results in this project take the Reference Audio Analyzer measurements as is and no
-compensation curve has been developed. There also is no bass boost applied to Reference Audio Analyzer measurements
-since they look to be lacking bass in many cases compared to other measurements leading to natural bass boost when using
-zero vector as the compensation curve.
-
-Innerfidelity 2017 compensation curve is the result of Tyll Hertsens calibrating his measurement head on the Harman
-reference listening room and is a significant improvement over the old compensation curve used in PDFs. However 2017
-curve seems to underestimate 2 to 5 kHZ region by several dB leading the equalization to boost those frequencies too
-much. See [the original post](https://www.innerfidelity.com/content/new-compensation-curve-innerfidelity-measurements)
-and [the sequel](https://www.innerfidelity.com/content/compensation-curve-innerfidelity-measurements-dialog-part-1)
-on Innerfidelity for more details. Data can be found in `innerfidelity/resources/innerfidelity_compensation_2017.csv`
-
-Headphone.com compensation curve is used by Headphone.com with their Frequency Response graphs but this seems to
-underestimate treble even more than the 2017 Innerfidelity curve leading to even brighter equalization. Data location:
-`headphonecom/resources/headphonecom_compensation.csv`
+Reference Audio Analyzer have [three different measurement systems](https://reference-audio-analyzer.pro/en/stands.php)
+none of which seem to represent human hearing particularly well. The most recent HDM-X system is close to the H.A.T.S.
+systems but seems to suffer a bit more in the bass range. HDM1 is clearly worse than other systems and the measurements
+done on SF1 system are not included at all because that is a flat plate coupler. IEM measurements are done with a what
+looks like a tubing coupler and these don't look very accurate. Reference Audio Analyzer measurements and results are a
+last resort. New target curves were created by calibration for all Reference Audio Analyzer systems.
 
 None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
 on-ear headphones, +6dB for in-ear headphones and no boost for earbuds. Harman targets actually ask for about +6dB for
-on-ears and +10dB for in-ears but since most headphones cannot achieve this with positive gain limited to +6dB a smaller
+on-ears and +10dB for in-ears but since some headphones cannot achieve this with positive gain limited to +6dB a smaller
 boost was selected. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain
 (boost) is applied. In the upper treble measurements are less reliable and boosting them too much will cause serious
 problems while having some narrow dips is not a problem at all.
+
+### oratory1990 IEM Target
+In-ear results with oratory1990 target (formerly "Usound" target) are not longer given because the new 2019 Harman
+in-ear fixes the +10 kHz problems of the 2017 target. Also it is easy to transform results created for Harman 2019 to
+oratory1990 target without running the processing yourself if you are using parametric equalizer and have two filters
+(bands) available by adding these two to your eq software:
+
+| Type    |   Fc |    Q |  Gain |
+|:--------|:-----|:-----|:------|
+| Peaking |  113 | 0.75 |   3.5 |
+| Peaking | 3766 | 0.63 |  -2.3 |
+
+The results will be remarkably similar to results produced with the actual oratory1990 target:
+
+![oratory1990 vs Harman in-ear 2019](https://i.imgur.com/kGYBOev.png)
+
+Of course it's still possible to produce native results with oratory1990 target by pointing compensation to the
+oratory1990 target file: `--compensation="compensation/oratory1990.csv` or
+`--compensation="compensation/oratory1990_wo_bass.csv`
 
 
 ## Technical Challenges
@@ -617,36 +618,6 @@ limited number of bands because highly erratic curves are impossible to be estim
 ![1more-mk801-plot](./img/1More%20MK801.png)
 
 *1More MK801 with parametric equalization*
-
-
-## Data Processing
-Measurement data for this project was obtained by crawling Innerfidelity, Headphone.com, oratory1990 and Rtings
-databases. For Innerfidelity
-that means downloading all PDFs, turning them into images with Ghostscript, parsing images with Python PIL package and
-saving the numerical data. Numerical data obtained this way is an average of the blue and red curves in the frequency
-response. These curves have been compensated with the old compensation curve which does not match human perception at
-all. The old compensation curve was then applied in inverse to turn the compensated data into raw microphone data. This
-raw microphone data is stored in `innerfidelity/data`. On-ear, in-ear and ear-bud data is separated because they ask for
-different AutoEQ parameters.
-
-Headphone.com measurements were downloaded as images, both raw and compensated data. Images were parsed into numerical
-format and raw data saved to `headphonecom/data`. Both datas were used to obtain Headphone.com compensation curve by
-calculating differences between raw and compensated data.
-
-oratory1990 data processing is similar to Innerfidelity because oratory1990 measurements are distributed as PDFs.
-Compensation curves used for oratory1990 measurements are the Harman target curves.
-
-Rtings measurements were obtained in a similar fashion as the Headphone.com measurements were. Two new compensation
-curves were developed in addition to the native curve used by Rtings in their measurement reports.
-
-Reference Audio Analyzer measurements were gotten the same way. Images downloaded and a image parser was developed to
-read the numerical data. Reference Audio Analyzer doesn't have compensation curve by AutoEQ project but instead simply
-trusts the compensated data provided by Reference Audio Analyzer.
-
-Crinacles data comes from his numerical data dump to which he graciously gave an access for this project. Crinacle has a
-patreon tier which grants access to his numerical data dump and therefore it was his wish that numerical data would not
-be shared in this project for free. Data files in Crinacle's data dump are processed to AutoEQ standard CSV format with
-scripts in Crinacle folder and you can even do it yourself if you have access to original data files. 
 
 
 ## Contact

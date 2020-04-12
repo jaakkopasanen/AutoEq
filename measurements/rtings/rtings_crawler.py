@@ -64,8 +64,8 @@ class RtingsCrawler(Crawler):
         raw = np.mean([left, right], axis=0)
         if np.std(target) > 0:
             raw += target
-        fr = FrequencyResponse(name='', frequency=frequency, raw=raw)
-        target = FrequencyResponse(name='', frequency=frequency, raw=target)
+        fr = FrequencyResponse(name='fr', frequency=frequency, raw=raw)
+        target = FrequencyResponse(name='target', frequency=frequency, raw=target)
         return fr, target
 
     def process(self, item, url):

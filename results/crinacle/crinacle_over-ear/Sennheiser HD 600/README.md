@@ -2,30 +2,30 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 0.85 | 6.8 dB  |
-| Peaking | 1423 Hz  | 3.61 | -1.5 dB |
-| Peaking | 3163 Hz  | 3.29 | -2.2 dB |
-| Peaking | 16615 Hz | 1.41 | -5.2 dB |
-| Peaking | 20150 Hz | 0.63 | -5.4 dB |
-| Peaking | 67 Hz    | 2.08 | 1.5 dB  |
-| Peaking | 146 Hz   | 1.16 | -1.6 dB |
-| Peaking | 6656 Hz  | 3.26 | 1.6 dB  |
-| Peaking | 11120 Hz | 2.85 | 1.5 dB  |
-| Peaking | 12145 Hz | 4.59 | -2.9 dB |
+| Peaking | 30 Hz    | 0.72 | 6.6 dB  |
+| Peaking | 1423 Hz  | 3.51 | -1.5 dB |
+| Peaking | 3171 Hz  | 3.2  | -2.2 dB |
+| Peaking | 16836 Hz | 1.4  | -5.5 dB |
+| Peaking | 19691 Hz | 0.99 | -5.3 dB |
+| Peaking | 65 Hz    | 1.89 | 1.3 dB  |
+| Peaking | 142 Hz   | 1.1  | -1.8 dB |
+| Peaking | 6646 Hz  | 3.57 | 1.5 dB  |
+| Peaking | 11309 Hz | 1.74 | 1.3 dB  |
+| Peaking | 12366 Hz | 4.91 | -3.4 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 6.8 dB  |
+| Peaking | 31 Hz    | 1.41 | 7.0 dB  |
 | Peaking | 62 Hz    | 1.41 | 2.9 dB  |
 | Peaking | 125 Hz   | 1.41 | -1.5 dB |
 | Peaking | 250 Hz   | 1.41 | -0.7 dB |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | -0.8 dB |
 | Peaking | 4000 Hz  | 1.41 | -1.0 dB |
 | Peaking | 8000 Hz  | 1.41 | 1.4 dB  |
-| Peaking | 16000 Hz | 1.41 | -7.2 dB |
+| Peaking | 16000 Hz | 1.41 | -6.7 dB |
 
 ### Graphs
 ![](./Sennheiser%20HD%20600.png)
