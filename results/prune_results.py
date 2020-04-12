@@ -5,22 +5,22 @@ import sys
 import shutil
 from glob import glob
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-
-ROOT_DIR = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
+from constants import DBS, ROOT_DIR
 
 
 def main():
-    for db in ['crinacle', 'headphonecom', 'innerfidelity', 'oratory1990', 'referenceaudioanalyzer', 'rtings']:
+    for db in DBS:
         measurements = list(glob(
             os.path.join(ROOT_DIR, 'measurements', db, 'data', '**', '*.csv'),
             recursive=True
         ))
         measurements = [os.path.split(measurement)[1].lower().replace('.csv', '') for measurement in measurements]
-        for path in glob(os.path.join(ROOT_DIR, 'results', db, '*', '*')):
-            _, name = os.path.split(path)
+        for path in glob(os.path.join(ROOT_DIR, 'results', db, '**', '*.csv'), recursive=True):
+            dir_path, file_name = os.path.split(path)
+            name = file_name.replace('.csv', '')
             if name.lower() not in measurements and name != 'README.md':
-                print(f'Removing "{path}" ...')
-                shutil.rmtree(path)
+                print(f'Removing "{dir_path}"')
+                shutil.rmtree(dir_path)
 
 
 if __name__ == '__main__':
