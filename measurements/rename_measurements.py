@@ -8,9 +8,9 @@ import re
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.name_index import NameIndex, NameItem
 from measurements.manufacturer_index import ManufacturerIndex
+from constants import DBS
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
-DBS = ['crinacle', 'headphonecom', 'innerfidelity', 'oratory1990', 'referenceaudioanalyzer', 'rtings']
 
 
 def rename_manufacturers():
