@@ -73,7 +73,9 @@ def group_measurements():
                 groups[norm_name] = set()
             groups[norm_name].add(name)
 
-    with open(os.path.join(DIR_PATH, 'groups.tsv'), 'w', encoding='utf-8') as fh:
+    groups = {norm: group for norm, group in groups.items() if len(group) > 1}
+
+    with open(os.path.join(DIR_PATH, 'name_groups.tsv'), 'w', encoding='utf-8') as fh:
         s = '\n'.join(sorted(['\t'.join(names) for norm_name, names in groups.items()], key=lambda x: x.lower()))
         fh.write(s + '\n')
 

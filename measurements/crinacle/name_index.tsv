@@ -730,7 +730,7 @@ Panda Passive	Massdrop Panda (passive)	onear
 Parterre	FitEar Parterre (sample 1)	inear
 Parterre S2	FitEar Parterre (sample 2)	inear
 Percivali	Oriolus Percivali	inear
-PFE	Phonak PFE232	inear
+PFE	Phonak PFE 232	inear
 Phantom	Empire Ears Phantom	inear
 Phantom CE	Empire Ears Phantom (CIEM) emulated (sample 1)	ignore
 Phantom Eu	Empire Ears Phantom (CIEM) emulated (sample 2)	ignore
@@ -993,8 +993,8 @@ V33	Shozy V33	inear
 Valkyrie	Empire Ears Valkyrie	inear
 Vantage	Empire Ears Vantage	inear
 VC02	VSonic VC02	inear
-VE3.2	Vision Ears VE3.2	inear
-VE3.2 C	Vision Ears VE 3.2 (CIEM)	inear
+VE3.2	Vision Ears VE3.2 (sample 1)	inear
+VE3.2 C	Vision Ears VE3.2 (CIEM)	inear
 VE32	Vision Ears VE3.2 (sample 2)	inear
 VE42	Vision Ears VE4.2	inear
 VE5	Vision Ears VE5	inear
