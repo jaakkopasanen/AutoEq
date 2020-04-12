@@ -54,11 +54,9 @@ def main():
     harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2_wo_bass.csv')
     harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
     crinacle_overear = os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'resources', 'crinacle_over-ear.csv')
-    zero = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
-    hdmx = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_hdm-x.csv')
-    hdm1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_hdm1.csv')
-    sf1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_sf1.csv')
-    siec = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_siec.csv')
+    hdmx = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_compensation_hdm-x.csv')
+    hdm1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_compensation_hdm1.csv')
+    siec = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'refereceaudioanalyzer_compensation_siec.csv')
     eq_kwargs = {
         'equalize': True, 'parametric_eq': True, 'max_filters': [5, 5], 'ten_band_eq': True, 'new_only': new_only
     }
@@ -192,12 +190,6 @@ def main():
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'onear', 'HDM1'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'HDM1'),
                 compensation=hdm1,
-                **onear_kwargs
-            )
-            batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'onear', 'SF1'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'SF1'),
-                compensation=sf1,
                 **onear_kwargs
             )
         if inear:

@@ -19,7 +19,7 @@ MEASUREMENTS = os.path.join(ROOT_DIR, 'measurements')
 
 def get_measurements(dir_path):
     frs = []
-    for fp in glob(os.path.join(dir_path, '*', '*.csv')):
+    for fp in glob(os.path.join(dir_path, '**', '*.csv'), recursive=True):
         frs.append(FrequencyResponse.read_from_csv(fp))
     return frs
 
@@ -31,50 +31,50 @@ def main():
     oratory1990_inear = get_measurements(os.path.join(MEASUREMENTS, 'oratory1990', 'data', 'inear'))
 
     dbs = [
-        ('crinacle-inear', get_measurements(os.path.join(MEASUREMENTS, 'crinacle', 'data', 'inear')), None),
-        ('crinacle-onear', get_measurements(os.path.join(MEASUREMENTS, 'crinacle', 'data', 'onear')), None),
+        ('crinacle_inear', get_measurements(os.path.join(MEASUREMENTS, 'crinacle', 'data', 'inear')), None),
+        ('crinacle_onear', get_measurements(os.path.join(MEASUREMENTS, 'crinacle', 'data', 'onear')), None),
         (
-            'headphonecom-onear',
+            'headphonecom_onear',
             get_measurements(os.path.join(MEASUREMENTS, 'headphonecom', 'data', 'onear')),
             FrequencyResponse.read_from_csv(os.path.join(MEASUREMENTS, 'headphonecom', 'resources', 'headphonecom_compensation_sbaf-serious.csv'))
         ),
         (
-            'headphonecom-inear',
+            'headphonecom_inear',
             get_measurements(os.path.join(MEASUREMENTS, 'headphonecom', 'data', 'inear')),
             FrequencyResponse.read_from_csv(os.path.join(MEASUREMENTS, 'headphonecom', 'resources', 'headphonecom_compensation_sbaf-serious.csv'))
         ),
         (
-            'innerfidelity-onear',
+            'innerfidelity_onear',
             get_measurements(os.path.join(MEASUREMENTS, 'innerfidelity', 'data', 'onear')),
             FrequencyResponse.read_from_csv(os.path.join(MEASUREMENTS, 'innerfidelity', 'resources', 'innerfidelity_compensation_sbaf-serious.csv'))
         ),
         (
-            'innerfidelity-inear',
+            'innerfidelity_inear',
             get_measurements(os.path.join(MEASUREMENTS, 'innerfidelity', 'data', 'inear')),
             FrequencyResponse.read_from_csv(os.path.join(MEASUREMENTS, 'innerfidelity', 'resources', 'innerfidelity_compensation_sbaf-serious.csv'))
         ),
         (
-            'referenceaudioanalyzer-onear-hdm-x',
+            'referenceaudioanalyzer_onear-hdm-x',
             get_measurements(os.path.join(MEASUREMENTS, 'referenceaudioanalyzer', 'data', 'onear', 'HDM-X')),
             None
         ),
         (
-            'referenceaudioanalyzer-onear-hdm1',
+            'referenceaudioanalyzer_onear-hdm1',
             get_measurements(os.path.join(MEASUREMENTS, 'referenceaudioanalyzer', 'data', 'onear', 'HDM1')),
             None
         ),
         (
-            'referenceaudioanalyzer-inear-siec',
+            'referenceaudioanalyzer_inear-siec',
             get_measurements(os.path.join(MEASUREMENTS, 'referenceaudioanalyzer', 'data', 'inear', 'SIEC')),
             None
         ),
         (
-            'rtings-onear',
+            'rtings_onear',
             get_measurements(os.path.join(MEASUREMENTS, 'rtings', 'data', 'onear')),
             FrequencyResponse.read_from_csv(os.path.join(MEASUREMENTS, 'rtings', 'resources', 'rtings_compensation_avg.csv'))
         ),
         (
-            'rtings-inear',
+            'rtings_inear',
             get_measurements(os.path.join(MEASUREMENTS, 'rtings', 'data', 'inear')),
             FrequencyResponse.read_from_csv(os.path.join(MEASUREMENTS, 'rtings', 'resources', 'rtings_compensation_avg.csv'))
         ),
@@ -146,9 +146,9 @@ def main():
         axs[2].set_ylim([-15, 15])
 
 
-        fig.savefig(os.path.join(DIR_PATH, f'calibration-{name}.png'), bbox_inches='tight')
+        fig.savefig(os.path.join(DIR_PATH, f'calibration_{name}.png'), bbox_inches='tight')
 
-        target.plot_graph(show=False, file_path=os.path.join(DIR_PATH, f'target-{name}.png'), color='C0')
+        target.plot_graph(show=False, file_path=os.path.join(DIR_PATH, f'target_{name}.png'), color='C0')
         target.write_to_csv(file_path=os.path.join(DIR_PATH, f'{name}.csv'))
         plt.close(fig)
 
@@ -165,6 +165,8 @@ def main():
             inear_labels.append(fr.name)
     axs[0].legend(onear_labels)
     axs[1].legend(inear_labels)
+    axs[0].set_title('On-ear')
+    axs[1].set_title('In-ear')
     axs[0].set_ylim([0, 15])
     axs[1].set_ylim([0, 15])
     fig.savefig(os.path.join(DIR_PATH, 'STDs.png'))
