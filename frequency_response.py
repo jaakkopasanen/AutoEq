@@ -39,6 +39,8 @@ class FrequencyResponse:
                  equalized_raw=None,
                  equalized_smoothed=None,
                  target=None):
+        if not name:
+            raise TypeError('Name must not be a non-empty string.')
         self.name = name.strip()
 
         self.frequency = self._init_data(frequency)
@@ -898,19 +900,12 @@ class FrequencyResponse:
 
     @staticmethod
     def generate_frequencies(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=DEFAULT_STEP):
-        freq_new = []
-        # Frequencies from 20 kHz down
-        f = np.min([20000, f_max])
-        while f > f_min:
-            freq_new.append(int(round(f)))
-            f = f / f_step
-        # Frequencies from 20 kHz up
-        f = np.min([20000, f_max])
-        while f < f_max:
-            freq_new.append(int(round(f)))
-            f = f * f_step
-        freq_new = sorted(set(freq_new))  # Remove duplicates and sort ascending
-        return np.array(freq_new)
+        freq = []
+        f = f_min
+        while f <= f_max:
+            freq.append(f)
+            f *= f_step
+        return np.array(freq)
 
     def interpolate(self, f=None, f_step=DEFAULT_STEP, pol_order=1, f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX):
         """Interpolates missing values from previous and next value. Resets all but raw data."""

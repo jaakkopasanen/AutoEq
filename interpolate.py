@@ -11,10 +11,9 @@ def main():
     paths = list(glob(os.path.join(ROOT_DIR, 'measurements', '**', '*.csv'), recursive=True))
     paths += list(glob(os.path.join(ROOT_DIR, 'compensation', '*.csv'), recursive=True))
     for file_path in paths:
-        print(f'Interpolating: "{file_path}"')
         fr = FrequencyResponse.read_from_csv(file_path)
         fr.interpolate()
-        #fr.write_to_csv(file_path)
+        fr.write_to_csv(file_path)
 
 
 if __name__ == '__main__':
