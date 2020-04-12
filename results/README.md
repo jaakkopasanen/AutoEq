@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 2731 headphone models covered but if your headphone is missing you can create settings for
+This list has 2729 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -632,10 +632,9 @@ it yourself by following this guide:
 - [Boqari Q1](./innerfidelity/sbaf-serious/Boqari%20Q1)
 - [Bose AE](./referenceaudioanalyzer/HDM1/Bose%20AE)
 - [Bose AE2](./innerfidelity/sbaf-serious/Bose%20AE2)
-- [Bose Headphone 700](./oratory1990/harman_over-ear_2018/Bose%20Headphone%20700)
 - [Bose Hearphones](./rtings/avg/Bose%20Hearphones)
 - [Bose IE2](./referenceaudioanalyzer/SIEC/Bose%20IE2)
-- [Bose Noise Cancelling Headphones 700](./rtings/avg/Bose%20Noise%20Cancelling%20Headphones%20700)
+- [Bose Noise Cancelling Headphones 700](./oratory1990/harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700)
 - [Bose On-ear headphones](./referenceaudioanalyzer/HDM1/Bose%20On-ear%20headphones)
 - [Bose QuietComfort 15](./innerfidelity/sbaf-serious/Bose%20QuietComfort%2015)
 - [Bose QuietComfort 20](./oratory1990/harman_in-ear_2019v2/Bose%20QuietComfort%2020)
@@ -1268,7 +1267,6 @@ it yourself by following this guide:
 - [HIFIMAN HE-500 (leather earpads)](./referenceaudioanalyzer/HDM1/HIFIMAN%20HE-500%20(leather%20earpads))
 - [HIFIMAN HE-500 (velour earpads)](./referenceaudioanalyzer/HDM1/HIFIMAN%20HE-500%20(velour%20earpads))
 - [HIFIMAN HE-5LE](./innerfidelity/sbaf-serious/HIFIMAN%20HE-5LE)
-- [HIFIMAN HE100](./crinacle/crinacle_over-ear/HIFIMAN%20HE100)
 - [HIFIMAN HE1000](./crinacle/crinacle_over-ear/HIFIMAN%20HE1000)
 - [HIFIMAN HE1000 PreProduction](./innerfidelity/sbaf-serious/HIFIMAN%20HE1000%20PreProduction)
 - [HIFIMAN HE1000 V2](./oratory1990/harman_over-ear_2018/HIFIMAN%20HE1000%20V2)

@@ -865,9 +865,9 @@ from the same source.
 - [Bose AE2](./innerfidelity/sbaf-serious/Bose%20AE2) by Innerfidelity
 - [Bose AE2](./referenceaudioanalyzer/HDM1/Bose%20AE2) by Reference Audio Analyzer
 - [Bose AE](./referenceaudioanalyzer/HDM1/Bose%20AE) by Reference Audio Analyzer
-- [Bose Headphone 700](./oratory1990/harman_over-ear_2018/Bose%20Headphone%20700) by oratory1990
 - [Bose Hearphones](./rtings/avg/Bose%20Hearphones) by Rtings
 - [Bose IE2](./referenceaudioanalyzer/SIEC/Bose%20IE2) by Reference Audio Analyzer
+- [Bose Noise Cancelling Headphones 700](./oratory1990/harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700) by oratory1990
 - [Bose Noise Cancelling Headphones 700](./rtings/avg/Bose%20Noise%20Cancelling%20Headphones%20700) by Rtings
 - [Bose On-ear headphones](./referenceaudioanalyzer/HDM1/Bose%20On-ear%20headphones) by Reference Audio Analyzer
 - [Bose QuietComfort 15](./headphonecom/sbaf-serious/Bose%20QuietComfort%2015) by Headphone.com
@@ -1750,7 +1750,6 @@ from the same source.
 - [HIFIMAN HE1000 V2](./oratory1990/harman_over-ear_2018/HIFIMAN%20HE1000%20V2) by oratory1990
 - [HIFIMAN HE1000](./crinacle/crinacle_over-ear/HIFIMAN%20HE1000) by Crinacle
 - [HIFIMAN HE1000](./innerfidelity/sbaf-serious/HIFIMAN%20HE1000) by Innerfidelity
-- [HIFIMAN HE100](./crinacle/crinacle_over-ear/HIFIMAN%20HE100) by Crinacle
 - [HIFIMAN HE350](./oratory1990/harman_over-ear_2018/HIFIMAN%20HE350) by oratory1990
 - [HIFIMAN HE35X](./oratory1990/harman_over-ear_2018/HIFIMAN%20HE35X) by oratory1990
 - [HIFIMAN HE400i](./oratory1990/harman_over-ear_2018/HIFIMAN%20HE400i) by oratory1990
