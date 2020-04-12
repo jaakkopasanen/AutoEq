@@ -3,6 +3,7 @@
 import os
 import sys
 from glob import glob
+import numpy as np
 import pandas as pd
 import re
 from rapidfuzz import fuzz
@@ -17,7 +18,7 @@ class NameItem:
         self.form = form
 
     def __str__(self):
-        return '\t'.join([self.false_name, self.true_name, self.form])
+        return '\t'.join([self.false_name or '', self.true_name or '', self.form or ''])
 
     def copy(self):
         return NameItem(self.false_name, self.true_name, self.form)
@@ -110,9 +111,15 @@ class NameIndex:
         Returns:
             None
         """
-        if self.find(false_name=item.false_name):
+        if self.find(false_name=item.false_name, true_name=true_name, form=form):
             mask = self.mask(false_name=false_name, true_name=true_name, form=form)
-            self.df.loc[mask] = [[item.false_name, item.true_name, item.form]]
+            try:
+                self.df.loc[mask] = np.tile([item.false_name, item.true_name, item.form], (sum(mask), 1))
+            except Exception as err:
+                print(false_name, true_name, form)
+                print(item)
+                print(mask)
+                raise err
         else:
             self.add(item)
 

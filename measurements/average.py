@@ -9,6 +9,7 @@ import numpy as np
 import warnings
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from frequency_response import FrequencyResponse
+from constants import MOD_REGEX
 
 
 def average_measurements(input_dir=None, output_dir=None):
@@ -22,9 +23,9 @@ def average_measurements(input_dir=None, output_dir=None):
     models = {}
     for file_path in glob(os.path.join(input_dir, '*')):
         model = os.path.split(file_path)[-1]
-        if not re.search(r' \((sample |sn)[a-zA-Z0-9]+\)$', model, re.IGNORECASE):
+        if not re.search(MOD_REGEX, model, re.IGNORECASE):
             continue
-        norm = re.sub(r' \((sample |sn)[a-zA-Z0-9]+\)$', '', model, 0, flags=re.IGNORECASE)
+        norm = re.sub(MOD_REGEX, '', model, 0, flags=re.IGNORECASE)
         try:
             models[norm].append(model)
         except KeyError as err:

@@ -10,12 +10,13 @@ from measurements.name_index import NameIndex, NameItem
 from measurements.manufacturer_index import ManufacturerIndex
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+DBS = ['crinacle', 'headphonecom', 'innerfidelity', 'oratory1990', 'referenceaudioanalyzer', 'rtings']
 
 
 def rename_manufacturers():
     manufacturers = ManufacturerIndex()
 
-    for db in ['crinacle', 'headphonecom', 'innerfidelity', 'oratory1990', 'referenceaudioanalyzer', 'rtings']:
+    for db in DBS:
         if os.path.isfile(os.path.join(DIR_PATH, db, 'name_index.tsv')):
             # Rename entries in name index if such exists
             name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db, 'name_index.tsv'))
@@ -61,7 +62,7 @@ def rename_manufacturers():
 
 def group_measurements():
     groups = dict()
-    for db in ['crinacle', 'headphonecom', 'innerfidelity', 'oratory1990', 'referenceaudioanalyzer', 'rtings']:
+    for db in DBS:
         # Rename existing files
         existing_files = list(glob(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'), recursive=True))
         for fp in existing_files:
@@ -77,6 +78,86 @@ def group_measurements():
         fh.write(s + '\n')
 
 
+def rename_groups():
+    with open(os.path.join(DIR_PATH, 'name_groups.tsv'), 'r', encoding='utf-8') as fh:
+        lines = fh.read().strip().split('\n')
+
+    # First column is always the true name
+    # Create dict with each false name as key and it's true name as value
+    name_map = dict()
+    for line in lines:
+        names = line.split('\t')
+        if len(names) > 1:
+            for i in range(1, len(names)):
+                name_map[names[i]] = names[0]
+
+    # Read name indexes and existing files for all supported measurement databases
+    dbs = []
+    for db in DBS:
+        if os.path.isfile(os.path.join(DIR_PATH, db, 'name_index.tsv')):
+            # Read name index
+            name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db, 'name_index.tsv'))
+        else:
+            # No name index, create one anew
+            name_index = NameIndex()
+        # Read all the existing files for the database
+        files = list(glob(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'), recursive=True))
+        files = [{'name': os.path.split(file)[1].replace('.csv', ''), 'path': file} for file in files]
+        # Save both to dbs
+        dbs.append({'name': db, 'name_index': name_index, 'files': files})
+
+    for old_name, new_name in name_map.items():
+        print(f'"{old_name}" -> "{new_name}"')
+        for db in dbs:
+            name_index = db['name_index']
+            # Replace true names in name index with the new name
+            updated_item = False
+            matches = name_index.find(true_name=old_name)
+            for item in matches.items:
+                if new_name == 'ignore':
+                    name_index.update(
+                        NameItem(false_name=item.false_name, true_name=item.true_name, form='ignore'),
+                        true_name=old_name
+                    )
+                    print(f'    Updated item: "{item.false_name}", "{new_name}", "ignore"')
+                else:
+                    name_index.update(
+                        NameItem(false_name=item.false_name, true_name=new_name, form=item.form),
+                        true_name=old_name
+                    )
+                    print(f'    Updated item: "{item.false_name}", "{new_name}", "{item.form}"')
+                updated_item = True
+
+            # Rename existing files
+            for name, path in [(f['name'], f['path']) for f in db['files'] if f['name'].lower() == old_name.lower()]:
+                if new_name == 'ignore':
+                    # shutil.rmtree(os.path.split(path)[0])
+                    print(f'    Removed "{os.path.split(path)[0]}"')
+                    if not updated_item:
+                        name_index.add(NameItem(false_name=old_name, true_name=None, form='ignore'))
+                        print(f'    Added item: "{old_name}", "", "ignore"')
+                    continue
+
+                new_path = re.sub(re.escape(name), new_name, path)
+                print(f'    Moved "{os.path.relpath(path, DIR_PATH)}" to "{os.path.relpath(new_path, DIR_PATH)}"')
+                # TODO: shutil.move(path, new_path)
+                matches = name_index.find(true_name=new_name)
+                if not matches:
+                    d = path
+                    while True:
+                        d, f = os.path.split(d)
+                        if f in ['onear', 'inear', 'earbud']:
+                            form = f
+                            break
+                    name_index.add(NameItem(false_name=old_name, true_name=new_name, form=form))
+                    print(f'    Added item: "{old_name}", "{new_name}", "{form}"')
+        print()
+
+    for db in dbs:
+        db['name_index'].write_tsv(os.path.join(DIR_PATH, db['name'], 'name_index.tsv'))
+
+
 if __name__ == '__main__':
     # rename_manufacturers()
-    group_measurements()
+    # group_measurements()
+    rename_groups()

@@ -12,6 +12,7 @@ from zipfile import ZipFile
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from frequency_response import FrequencyResponse
 from measurements.manufacturer_index import ManufacturerIndex
+from constants import MOD_REGEX
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
@@ -31,9 +32,9 @@ def get_urls(files):
         model = os.path.split(rel_path)[-1]
         if model == 'README.md' or 'fake' in model.lower():
             continue
-        if re.search(r' \(?(sample |sn)[a-zA-Z0-9]+\)?$', model, flags=re.IGNORECASE):
+        if re.search(MOD_REGEX, model, flags=re.IGNORECASE):
             # Skip measurements with sample or serial number, those have averaged results
-            normalized = re.sub(r' \(?(sample |sn)[a-zA-Z0-9]+\)?$', '', model, flags=re.IGNORECASE)
+            normalized = re.sub(MOD_REGEX, '', model, flags=re.IGNORECASE)
             try:
                 skipped[normalized].append(rel_path)
             except KeyError as err:
@@ -166,7 +167,7 @@ def write_hesuvi_index():
         for fp in glob(os.path.join(dir_path, '**', '* GraphicEQ.txt'), recursive=True):
             _, name = os.path.split(fp)
             name = name.replace(' GraphicEQ.txt', '')
-            if re.search(r' \(?(sample |sn)[a-zA-Z0-9]+\)?$', name, flags=re.IGNORECASE):
+            if re.search(MOD_REGEX, name, flags=re.IGNORECASE):
                 # Skip samples, there are averaged results available
                 continue
             manufacturer, _ = manufacturers.find(name)

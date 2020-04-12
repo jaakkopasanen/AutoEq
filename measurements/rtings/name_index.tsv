@@ -14,7 +14,7 @@ AKG K701	AKG K701	onear
 AKG K702	AKG K702	onear
 AKG K712 PRO	AKG K712 PRO	onear
 AKG N200	AKG N200	inear
-AKG N60NC Wireless	AKG N60NC Wireless	onear
+AKG N60NC Wireless	AKG N60 NC Wireless	onear
 AKG N700NC	AKG N700NC	onear
 AKG Q701	AKG Q701	onear
 Altec Lansing True Evo	Altec Lansing True Evo	inear
@@ -35,7 +35,7 @@ Anker SoundCore Space NC	Anker SoundCore Space NC	onear
 Anker Soundcore Spirit X	Anker Soundcore Spirit X	inear
 Anker Zolo Liberty+	Anker Zolo Liberty+	inear
 Apple AirPods	Apple AirPods	earbud
-Apple AirPods 2 2019	Apple AirPods 2 2019	earbud
+Apple AirPods 2 2019	Apple AirPods 2	earbud
 Apple AirPods Pro	Apple AirPods Pro	inear
 Apple EarPods	Apple EarPods	earbud
 Astro A10	Astro A10	onear
@@ -89,9 +89,9 @@ Beats urBeats	Beats urBeats	inear
 Beats urBeats3	Beats urBeats3	inear
 Betron YSM1000	Betron YSM1000	inear
 Beyerdynamic Amiron Wireless	Beyerdynamic Amiron Wireless	onear
-Beyerdynamic DT 1770 PRO	Beyerdynamic DT 1770 (Velour Earpads)	onear
+Beyerdynamic DT 1770 PRO	Beyerdynamic DT 1770 (velour earpads)	onear
 Beyerdynamic DT 1990 PRO	Beyerdynamic DT 1990 (Balanced Earpads)	onear
-Beyerdynamic DT 770 Pro	Beyerdynamic DT 770 250 Ohm (new earpads)	onear
+Beyerdynamic DT 770 Pro	Beyerdynamic DT 770 250 Ohm	onear
 Beyerdynamic DT 880	Beyerdynamic DT 880 32 Ohm	onear
 Beyerdynamic DT 990 PRO	Beyerdynamic DT 990 250 Ohm	onear
 Beyerdynamic T1 2nd Generation	Beyerdynamic T1 2nd Generation	onear
@@ -161,7 +161,7 @@ Grado SR80e	Grado SR80e	onear
 Harman/Kardon NC	Harman Kardon NC	onear
 HiFiMan Ananda	HIFIMAN Ananda	onear
 HiFiMan Edition X	HIFIMAN Edition X	onear
-HiFiMan HE-400i	HIFIMAN HE-400i	onear
+HiFiMan HE-400i	HIFIMAN HE400i	onear
 HiFiMan Sundara	HIFIMAN Sundara	onear
 HyperX Cloud Alpha	HyperX Cloud Alpha	onear
 HyperX Cloud Core	HyperX Cloud Core	onear
@@ -223,9 +223,9 @@ Koss Porta Pro	Koss Porta Pro	onear
 Koss Porta Pro Wireless	Koss Porta Pro Wireless	onear
 Koss QZ900	Koss QZ900	onear
 Koss QZPro	Koss QZPro	onear
-Koss UR-20	Koss UR-20	onear
-KZ AS-10	KZ AS-10	inear
-KZ ZS-10	KZ ZS-10	inear
+Koss UR-20	Koss UR 20	onear
+KZ AS-10	KZ AS10	inear
+KZ ZS-10	KZ ZS10	inear
 KZ ZSN	KZ ZSN	inear
 KZ ZST	KZ ZST	inear
 Logitech G Pro	Logitech G Pro	onear
@@ -303,7 +303,7 @@ Samsung Level U Pro	Samsung Level U Pro	onear
 Samsung U Flex	Samsung U Flex	onear
 Sennheiser AMBEO Smart Headset	Sennheiser AMBEO Smart Headset	inear
 Sennheiser CXC-700	Sennheiser CXC-700	inear
-Sennheiser Game One	Sennheiser Game One	onear
+Sennheiser Game One	Sennheiser GAME ONE	onear
 Sennheiser HD 201	Sennheiser HD 201	onear
 Sennheiser HD 202 II	Sennheiser HD 202 II	onear
 Sennheiser HD 280 Pro	Sennheiser HD 280 Pro	onear
@@ -332,7 +332,7 @@ Sennheiser Momentum In-Ear	Sennheiser Momentum In-Ear	inear
 Sennheiser Momentum True Wireless	Sennheiser Momentum True Wireless	inear
 Sennheiser PXC 250 II	Sennheiser PXC 250 II	onear
 Sennheiser PXC 450	Sennheiser PXC 450	onear
-Sennheiser PXC 550 Wireless	Sennheiser PXC 550 Wireless	onear
+Sennheiser PXC 550 Wireless	Sennheiser PXC 550 (wireless, ANC on)	onear
 Sennheiser PXC 550-II Wireless	Sennheiser PXC 550-II Wireless	onear
 Sennheiser RS 165	Sennheiser RS 165	onear
 Sennheiser RS 175	Sennheiser RS 175	onear
@@ -355,7 +355,7 @@ Skullcandy Jib	Skullcandy Jib	inear
 Skullcandy Push	Skullcandy Push	inear
 Skullcandy Sesh	Skullcandy Sesh	inear
 Skullcandy Venue	Skullcandy Venue	onear
-SMS Audio STREET by 50 Active Noise Cancelling	SMS Audio STREET by 50 Active Noise Cancelling	onear
+SMS Audio STREET by 50 Active Noise Cancelling	SMS Audio Street by 50 Cent	onear
 Sony MDR-1000X	Sony MDR-1000X	onear
 Sony MDR-100AAP	Sony MDR-100AAP	onear
 Sony MDR-1A	Sony MDR-1A	onear

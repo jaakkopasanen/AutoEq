@@ -219,8 +219,7 @@ AKG N5005 (bass boost)
 AKG N5005 (high)
 AKG N5005 (mid high)
 AKG N5005 (reference)
-AKG N60 NC	AKG N60NC Wireless
-AKG N60 NC (wireless)	AKG N60 NC Wireless Bluetooth
+AKG N60 NC Wireless	AKG N60 NC Wireless Bluetooth
 AKG N60 NC (wired, passive)	AKG N60NC Wired Passive
 AKG N700NC
 AKG N90Q Nominal
@@ -926,7 +925,7 @@ Dolby Dimension
 DUNU DK-3001
 DUNU DK-4001
 DUNU DK3001 Pro	DUNU DK-3001 Pro
-DUNU DN-1000	DUNU DN1000
+DUNU DN1000	DUNU DN-1000
 DUNU DN12
 DUNU DN13 Crius
 DUNU DN16 Hephaes
@@ -1024,7 +1023,7 @@ Erzetich Phobos (gap sealed)
 Eskuche 33 1 3 B
 Eternal Melody EM6W
 Etymotic EK5
-Etymotic ER-2SR
+Etymotic ER2SR	Etymotic ER-2SR
 Etymotic ER4S (single flange eartips)	Etymotic ER-4S (1x pads)
 Etymotic ER4S (triple flange eartips)	Etymotic ER-4S (3x pads)
 Etymotic ER6i	Etymotic ER-6i
@@ -1884,9 +1883,9 @@ Martin Logan Mikros 70
 Massdrop Nobel X
 Massdrop Panda (active)
 Massdrop Panda (passive)
-Massdrop Plus	Massdrop Plus Universal IEM
-Massdrop Plus (sample 1)
-Massdrop Plus (sample 2)
+Massdrop Plus Universal IEM	Massdrop Plus
+Massdrop Plus Universal IEM (sample 1)	Massdrop Plus (sample 1)
+Massdrop Plus Universal IEM (sample 2)	Massdrop Plus (sample 2)
 Master & Dynamic ME05
 Master & Dynamic MH30
 Master & Dynamic MH40
@@ -2831,7 +2830,7 @@ Spiral Ear SE 5-Way Ultimate
 Spiral Ears SE5U
 Spiral Ears SE5U (sample 1)
 Spiral Ears SE5U (sample 2)
-Status Audio BT One (wireless)	Status Audio BT One (bluetooth)
+Status Audio BT One (wireless)	Status Audio BT One (Bluetooth)
 Status Audio BT One (wired)
 Status Audio SM-CB1
 Status Audio SM-OB1
@@ -3199,8 +3198,8 @@ Westone W50
 Westone W60
 Westone W80
 Whizzer A-HE03 Kylin	Whizzer HE03
-Whizzer A-HE03 (vector)	Whizzer HE03 (vector)
-Whizzer A-HE03 (vent sealed)	Whizzer HE03 (vent sealed)
+Whizzer A-HE03 Kylin (vector)	Whizzer HE03 (vector)
+Whizzer A-HE03 Kylin (vent sealed)	Whizzer HE03 (vent sealed)
 Whizzer A15
 Whizzer A15 Pro
 Wicked Audio Deuce

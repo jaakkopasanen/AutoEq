@@ -30,3 +30,4 @@ DEFAULT_BASS_BOOST_Q = 0.65
 DEFAULT_GRAPHIC_EQ_STEP = 1.1
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
+MOD_REGEX = r' \((sample|serial number) [a-zA-Z0-9\-]+\)$'

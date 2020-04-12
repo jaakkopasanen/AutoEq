@@ -147,12 +147,23 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
             name = item.true_name
             if suffix != item.false_name.lower() and suffix != 'default':
                 name += f' ({suffix})'
+
+            # The suffixes above are read automatically from the reports compilation page.
+            # However these might not be the names that should exist in AutoEq.
+            mods = self.name_index.find(false_name=name)
+            if mods:
+                # Find an item in name index which has the given name with automatic
+                # suffixes as false name and replace the name with it's true name.
+                name = mods.items[0].true_name
+            else:
+                # Not in the name index, prompt user
+                self.prompt_true_name([name])
+
             report_urls[name] = f'https://reference-audio-analyzer.pro{anchor["href"]}'
 
         results = []
         for name, url in report_urls.items():
             document = self.get_beautiful_soup(url)  # Sets the driver also
-            # TODO: Read measurement rig "Measurements were performed on the stand:"
             el = document.find(name='li', text=self.performed_on_stand_regex)
             rig = el.parent.find(name='ul').find(name='a').text
             graph = self.driver.find_element_by_id('response9').find_element_by_tag_name('div')  # FR Graph
@@ -180,9 +191,13 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
         for result in results:
             im = Image.open(result['image_path'])
             name = result['name']
+            mod = self.name_index.find(true_name=name)
+            # Get the form from name index if an entry already exists
+            form = mod.items[0].form if mod else item.form
+
             fr, inspection = ReferenceAudioAnalyzerCrawler.parse_image(im, name)
 
-            out_dir = os.path.join(data_dir, item.form, result['rig'], name)
+            out_dir = os.path.join(data_dir, form, result['rig'], name)
             os.makedirs(out_dir, exist_ok=True)
 
             if im is None:
