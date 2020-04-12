@@ -551,7 +551,7 @@ from the same source.
 - [Audio-Technica ATH-M50](./referenceaudioanalyzer/hdm-x/Audio-Technica%20ATH-M50) by Reference Audio Analyzer
 - [Audio-Technica ATH-M50x (Dekoni sheepskin earpads)](./oratory1990/harman_over-ear_2018/Audio-Technica%20ATH-M50x%20(Dekoni%20sheepskin%20earpads)) by oratory1990
 - [Audio-Technica ATH-M50x (Massdrop velours earpads)](./oratory1990/harman_over-ear_2018/Audio-Technica%20ATH-M50x%20(Massdrop%20velours%20earpads)) by oratory1990
-- [Audio-Technica ATH-M50x](./crinacle/crinacle_over-ear/Audio-Technica%20ATH-M50x) by Crinacle
+- [Audio-Technica ATH-M50X](./crinacle/crinacle_over-ear/Audio-Technica%20ATH-M50X) by Crinacle
 - [Audio-Technica ATH-M50x](./headphonecom/sbaf-serious/Audio-Technica%20ATH-M50x) by Headphone.com
 - [Audio-Technica ATH-M50x](./innerfidelity/sbaf-serious/Audio-Technica%20ATH-M50x) by Innerfidelity
 - [Audio-Technica ATH-M50x](./oratory1990/harman_over-ear_2018/Audio-Technica%20ATH-M50x) by oratory1990
@@ -1144,7 +1144,9 @@ from the same source.
 - [Dolby Dimension](./rtings/avg/Dolby%20Dimension) by Rtings
 - [DUNU DK3001 Pro](./crinacle/harman_in-ear_2019v2/DUNU%20DK3001%20Pro) by Crinacle
 - [DUNU DK3001 Pro](./referenceaudioanalyzer/siec/DUNU%20DK3001%20Pro) by Reference Audio Analyzer
+- [DUNU DK3001](./referenceaudioanalyzer/siec/DUNU%20DK3001) by Reference Audio Analyzer
 - [DUNU DK4001](./crinacle/harman_in-ear_2019v2/DUNU%20DK4001) by Crinacle
+- [DUNU DK4001](./referenceaudioanalyzer/siec/DUNU%20DK4001) by Reference Audio Analyzer
 - [DUNU DN1000](./crinacle/harman_in-ear_2019v2/DUNU%20DN1000) by Crinacle
 - [DUNU DN1000](./innerfidelity/sbaf-serious/DUNU%20DN1000) by Innerfidelity
 - [DUNU DN1000](./referenceaudioanalyzer/siec/DUNU%20DN1000) by Reference Audio Analyzer
@@ -1715,7 +1717,7 @@ from the same source.
 - [Hidition Viento](./crinacle/harman_in-ear_2019v2/Hidition%20Viento) by Crinacle
 - [Hidition Violet](./crinacle/harman_in-ear_2019v2/Hidition%20Violet) by Crinacle
 - [Hidition Waltz](./crinacle/harman_in-ear_2019v2/Hidition%20Waltz) by Crinacle
-- [HiFi Boy OS V3](./crinacle/harman_in-ear_2019v2/HiFi%20Boy%20OS%20V3) by Crinacle
+- [HiFi BOY OS V3](./crinacle/harman_in-ear_2019v2/HiFi%20BOY%20OS%20V3) by Crinacle
 - [HiFi Boy OS V3](./referenceaudioanalyzer/siec/HiFi%20Boy%20OS%20V3) by Reference Audio Analyzer
 - [HIFIMAN Ananda](./crinacle/crinacle_over-ear/HIFIMAN%20Ananda) by Crinacle
 - [HIFIMAN Ananda](./oratory1990/harman_over-ear_2018/HIFIMAN%20Ananda) by oratory1990
@@ -1855,19 +1857,19 @@ from the same source.
 - [IMR Acoustics R1 (pink)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R1%20(pink)) by Crinacle
 - [IMR Acoustics R1 (yellow close)](./referenceaudioanalyzer/siec/IMR%20Acoustics%20R1%20(yellow%20close)) by Reference Audio Analyzer
 - [IMR Acoustics R1 (yellow)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R1%20(yellow)) by Crinacle
-- [IMR Acoustics R2 Aten (black nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(black%20nozzle,%20black%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (black nozzle, blue filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(black%20nozzle,%20blue%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (black nozzle, gold filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(black%20nozzle,%20gold%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (black nozzle, green filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(black%20nozzle,%20green%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (black nozzle, purple filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(black%20nozzle,%20purple%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (black nozzle, red filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(black%20nozzle,%20red%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (gold nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(gold%20nozzle,%20black%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (gold nozzle, blue filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(gold%20nozzle,%20blue%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (green nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(green%20nozzle,%20black%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (purple nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(purple%20nozzle,%20black%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (purple nozzle, purple filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(purple%20nozzle,%20purple%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (red nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(red%20nozzle,%20black%20filter)) by Crinacle
-- [IMR Acoustics R2 Aten (red nozzle, red filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(red%20nozzle,%20red%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Black nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Black%20nozzle,%20black%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Black nozzle, blue filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Black%20nozzle,%20blue%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Black nozzle, gold filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Black%20nozzle,%20gold%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Black nozzle, green filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Black%20nozzle,%20green%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Black nozzle, purple filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Black%20nozzle,%20purple%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Black nozzle, red filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Black%20nozzle,%20red%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Gold nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Gold%20nozzle,%20black%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Gold nozzle, blue filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Gold%20nozzle,%20blue%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Green nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Green%20nozzle,%20black%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Purple nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Purple%20nozzle,%20black%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Purple nozzle, purple filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Purple%20nozzle,%20purple%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Red nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Red%20nozzle,%20black%20filter)) by Crinacle
+- [IMR Acoustics R2 Aten (Red nozzle, red filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(Red%20nozzle,%20red%20filter)) by Crinacle
 - [IMR Acoustics Zenith (black)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20Zenith%20(black)) by Crinacle
 - [IMR Acoustics Zenith (blue)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20Zenith%20(blue)) by Crinacle
 - [IMR Acoustics Zenith (gold)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20Zenith%20(gold)) by Crinacle
@@ -1887,7 +1889,7 @@ from the same source.
 - [Intime Sora](./crinacle/harman_in-ear_2019v2/Intime%20Sora) by Crinacle
 - [Intro RX-190](./referenceaudioanalyzer/siec/Intro%20RX-190) by Reference Audio Analyzer
 - [Itsfit Lab Fusion](./crinacle/harman_in-ear_2019v2/Itsfit%20Lab%20Fusion) by Crinacle
-- [Itsfit Lab R3 (CIEM)](./crinacle/harman_in-ear_2019v2/Itsfit%20Lab%20R3%20(CIEM)) by Crinacle
+- [ItsFit Lab R3 (CIEM)](./crinacle/harman_in-ear_2019v2/ItsFit%20Lab%20R3%20(CIEM)) by Crinacle
 - [Itsfit Lab R3](./crinacle/harman_in-ear_2019v2/Itsfit%20Lab%20R3) by Crinacle
 - [Ivery IS-1](./innerfidelity/sbaf-serious/Ivery%20IS-1) by Innerfidelity
 - [Jabra Elite 25e](./rtings/avg/Jabra%20Elite%2025e) by Rtings
