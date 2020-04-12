@@ -1,23 +1,22 @@
-# Hifiman Ananda
+# HIFIMAN Ananda
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.6dB**.
+When using independent subset of filters, apply preamp of **-5.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 179 Hz   | 1.14 | -1.8 dB  |
-| Peaking | 473 Hz   | 2.1  | -2.2 dB  |
-| Peaking | 1717 Hz  | 1.93 | 5.2 dB   |
-| Peaking | 2855 Hz  | 4.96 | -1.9 dB  |
-| Peaking | 19814 Hz | 0.96 | -16.8 dB |
-| Peaking | 25 Hz    | 0.72 | 1.5 dB   |
-| Peaking | 862 Hz   | 5.8  | -1.2 dB  |
-| Peaking | 6302 Hz  | 2.57 | -3.3 dB  |
-| Peaking | 7185 Hz  | 0.72 | 1.3 dB   |
-| Peaking | 18698 Hz | 2.78 | -2.2 dB  |
+| Peaking | 32 Hz    | 0.4  | 1.8 dB   |
+| Peaking | 246 Hz   | 0.24 | -1.9 dB  |
+| Peaking | 1694 Hz  | 1.59 | 5.5 dB   |
+| Peaking | 2841 Hz  | 4.31 | -2.0 dB  |
+| Peaking | 19793 Hz | 0.96 | -16.8 dB |
+| Peaking | 1123 Hz  | 1.91 | -0.1 dB  |
+| Peaking | 6371 Hz  | 2.8  | -3.1 dB  |
+| Peaking | 7478 Hz  | 0.74 | 1.2 dB   |
+| Peaking | 18175 Hz | 2.48 | -1.8 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB**
@@ -34,7 +33,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 4.1 dB  |
 | Peaking | 4000 Hz  | 1.41 | -1.2 dB |
 | Peaking | 8000 Hz  | 1.41 | -0.1 dB |
-| Peaking | 16000 Hz | 1.41 | -5.1 dB |
+| Peaking | 16000 Hz | 1.41 | -5.3 dB |
 
 ### Graphs
-![](./Hifiman%20Ananda.png)
+![](./HIFIMAN%20Ananda.png)

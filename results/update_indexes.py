@@ -72,6 +72,7 @@ def write_recommendations():
 
     with open(os.path.join(DIR_PATH, 'README.md'), 'w', encoding='utf-8') as f:
         keys = sorted(urls.keys(), key=lambda s: s.lower())
+        unique = len(set(re.sub(r'\(.+\)$', '', x) for x in urls.keys()))
         s = f'''# Recommended Results
         This is a list of recommended results. Results for other measurements and target curves are available for many
         headphones, these can be found in the
@@ -81,7 +82,7 @@ def write_recommendations():
         Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
         model only the highest priority result will be shown in this list.
 
-        This list has {len(urls)} headphone models covered but if your headphone is missing you can create settings for
+        This list has {unique} headphone models covered but if your headphone is missing you can create settings for
         it yourself by following this guide:
         [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
