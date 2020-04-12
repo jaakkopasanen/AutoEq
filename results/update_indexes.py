@@ -52,9 +52,9 @@ def get_urls(files):
 def write_recommendations():
     urls = dict()
     # Get links to Reference Audio Analyzer results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'siec', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'hdm1', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'hdm-x', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'SIEC', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'HDM1', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'HDM-X', '*')))))
     # Get links to Headphone.com results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'sbaf-serious', '*')))))
     # Get links to Rtings results
@@ -106,15 +106,15 @@ def write_full_index():
     lines = []
     # Get links to Reference Audio Analyzer results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'hdm-x', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'HDM-X', '*'))),
         'Reference Audio Analyzer'
     ))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'hdm1', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'HDM1', '*'))),
         'Reference Audio Analyzer'
     ))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'siec', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'SIEC', '*'))),
         'Reference Audio Analyzer'
     ))
     # Get links to Headphone.com results
