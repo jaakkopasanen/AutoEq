@@ -80,8 +80,8 @@ Astell&Kern AK T8iE MKII	Astell & Kern K T8iE MKII	inear
 Astell&Kern AKR03 Roxanne	Astell & Kern AKR03 Roxanne	inear
 Astell&Kern AngieII	Astell & Kern Angie II	inear
 Astell&Kern Billie Jean	Astell & Kern Billie Jean	inear
-ASTRO Gaming A10	Astro A10	onear
-ASTRO Gaming A40	Astro A40	onear
+ASTRO Gaming A10	ASTRO Gaming A10	onear
+ASTRO Gaming A40	ASTRO Gaming A40	onear
 Astrotec AX-60	Astrotec AX-60	inear
 Astrotec AX-7	Astrotec AX7	inear
 ASUS ROG Delta Type-C	ASUS ROG Delta Type-C	onear
@@ -154,9 +154,9 @@ Audio-Technica FAKE ATH-ES55 		ignore
 Audio-Technica FAKE ATH-ES7		ignore
 Audio-Technica FAKE ATH-ES7 2		ignore
 Audio-Technica FAKE ATH-FC700		ignore
-Audiofly AF33	Audiofly AF33	inear
-Audiofly AF45	Audiofly AF45	inear
-Audiofly AF56	Audiofly AF56	inear
+Audiofly AF33	AudioFly AF33	inear
+Audiofly AF45	AudioFly AF45	inear
+Audiofly AF56	AudioFly AF56	inear
 AuGlamour R8	AuGlamour R8	inear
 Axelvox HD 241	Axelvox HD 241	onear
 Axelvox HD 242	Axelvox HD 242	onear
@@ -167,8 +167,8 @@ Beats Dr.Dre Fake Pro		ignore
 Beats Dr.Dre Fake Solo with ControlTalk Headphones Fake		ignore
 Beats Dr.Dre Fake Tour		ignore
 Beats Dr.Dre Fake UrBeats	Beats urBeats	inear
-Beats Dr.Dre Pro	Beats by Dr. Dre Pro	onear
-Beats Dr.Dre Tour	Beats by Dr. Dre Tour	inear
+Beats Dr.Dre Pro	Beats Pro	onear
+Beats Dr.Dre Tour	Beats Tour	inear
 Beats Dr.Dre UrBeats	Beats urBeats	inear
 Beyerdynamic Amiron Home	Beyerdynamic Amiron Home	onear
 Beyerdynamic Aventho Wired	Beyerdynamic Aventho Wired	onear

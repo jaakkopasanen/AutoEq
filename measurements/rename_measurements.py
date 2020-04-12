@@ -131,16 +131,17 @@ def rename_groups():
             # Rename existing files
             for name, path in [(f['name'], f['path']) for f in db['files'] if f['name'].lower() == old_name.lower()]:
                 if new_name == 'ignore':
-                    # shutil.rmtree(os.path.split(path)[0])
-                    print(f'    Removed "{os.path.split(path)[0]}"')
+                    print(f'    Removing "{os.path.split(path)[0]}"')
+                    shutil.rmtree(os.path.split(path)[0])
                     if not updated_item:
                         name_index.add(NameItem(false_name=old_name, true_name=None, form='ignore'))
                         print(f'    Added item: "{old_name}", "", "ignore"')
                     continue
 
                 new_path = re.sub(re.escape(name), new_name, path)
-                print(f'    Moved "{os.path.relpath(path, DIR_PATH)}" to "{os.path.relpath(new_path, DIR_PATH)}"')
-                # TODO: shutil.move(path, new_path)
+                print(f'    Moving "{os.path.relpath(path, DIR_PATH)}" to "{os.path.relpath(new_path, DIR_PATH)}"')
+                os.makedirs(os.path.split(new_path)[0], exist_ok=True)
+                shutil.move(path, new_path)
                 matches = name_index.find(true_name=new_name)
                 if not matches:
                     d = path
@@ -158,6 +159,6 @@ def rename_groups():
 
 
 if __name__ == '__main__':
-    # rename_manufacturers()
+    rename_manufacturers()
     # group_measurements()
-    rename_groups()
+    # rename_groups()

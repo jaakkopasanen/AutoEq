@@ -408,9 +408,9 @@ GR07 Mk2	VSonic GR07 Mk2	inear
 GR8	Grado GR8	inear
 Grace	EarSonics Grace	inear
 GT3 Bass	Advanced GT3	inear
-GT3 Ref	Advanced Sound Group GT3	inear
+GT3 Ref	Advanced GT3	inear
 GT3 Superbass Bass	Advanced GT3 Superbass (bass)	inear
-GT3 Superbass Ref	Advanced Sound Group GT3 Superbass	inear
+GT3 Superbass Ref	Advanced GT3 Superbass	inear
 GT3 Superbass Treble	Advanced GT3 Superbass (treble)	inear
 GT3 Superbassef	Advanced GT3 Superbassef	inear
 GT3 Treble	Advanced GT3 (treble)	inear
@@ -500,7 +500,7 @@ JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	inear
 JH16v2 Max	JH Audio 16v2 (max)	inear
 JH16v2 Min	JH Audio 16v2 (min)	inear
 Jimo	Kennerton Jimo	inear
-Juno Max Bass	Unknown Customs Juno	inear
+Juno Max Bass	Unknown Custom Juno	inear
 Juno Min Bass	Unknown Custom Juno (min bass)	inear
 K10	Noble Audio K10	inear
 K10 Encore	Noble Audio K10 Encore	inear
@@ -759,7 +759,7 @@ ProPhile8 Bass Treble	InEar ProPhile-8 (bass, treble)	inear
 ProPhile8 Treble	InEar ProPhile-8 (treble)	inear
 Purple Standard	EarSonics Purple (standard)	inear
 Quad	1MORE Quad Driver	inear
-Quad 2.0	Unknown Customs Quad 2.0	inear
+Quad 2.0	Unknown Custom Quad 2.0	inear
 Quad Eartech	Eartech Quad	inear
 Quatre Black	Jomo Audio Quatre (black)	inear
 Quatre Filterless	Jomo Audio Quatre (no filter)	inear
@@ -831,8 +831,8 @@ SE215 Ltd	Shure SE215 Ltd	inear
 SE315	Shure SE315	inear
 SE425	Shure SE425	inear
 SE535	Shure SE535	inear
-SE5U	Spiral Ears SE5U (sample 1)	inear
-SE5U S2	Spiral Ears SE5U (sample 2)	inear
+SE5U	Spiral Ear SE5U (sample 1)	inear
+SE5U S2	Spiral Ear SE5U (sample 2)	inear
 SE846 Black	Shure SE846 (black) (sample 1)	inear
 SE846 Black S2	Shure SE846 (black) (sample 2)	inear
 SE846 Blue	Shure SE846 (blue)	inear
@@ -970,8 +970,8 @@ U2	Stealthsonics U2	inear
 U4	Stealthsonics U4	inear
 U9	Stealthsonics U9	inear
 U9 JDM	Stealthsonics U9 JDM	inear
-UCD-2	Unknown Customs UCD-2	inear
-UCD-3	Unknown Customs UCD-3	inear
+UCD-2	Unknown Custom UCD-2	inear
+UCD-3	Unknown Custom UCD-3	inear
 UE11	Ultimate Ears UE11	inear
 UE18+	Ultimate Ears UE18+ (sample 1)	inear
 UE18+ 3rd Gen	Ultimate Ears UE18+ 3rd Gen	inear
@@ -1020,7 +1020,7 @@ Viento Mids	Hidition Viento (mids)	inear
 Viento-A C	Hidition Viento-A (CIEM)	inear
 Viento-B C	Hidition Viento-B (CIEM)	inear
 Violet	Hidition Violet	inear
-Vista	Jaybirds Vista	inear
+Vista	Jaybird Vista	inear
 VS7	VSonic VS7	inear
 VSD1S	VSonic VSD1S	inear
 VSD2S	VSonic VSD2S	inear
