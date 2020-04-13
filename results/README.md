@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 2729 headphone models covered but if your headphone is missing you can create settings for
+This list has 2736 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -366,6 +366,7 @@ it yourself by following this guide:
 - [Audio-Technica ATH-ANC7b](./innerfidelity/sbaf-serious/Audio-Technica%20ATH-ANC7b)
 - [Audio-Technica ATH-ANC7B SVIS](./rtings/avg/Audio-Technica%20ATH-ANC7B%20SVIS)
 - [Audio-Technica ATH-ANC9](./innerfidelity/sbaf-serious/Audio-Technica%20ATH-ANC9)
+- [Audio-Technica ATH-C770](./referenceaudioanalyzer/HDM-X/Audio-Technica%20ATH-C770)
 - [Audio-Technica ATH-CK1](./referenceaudioanalyzer/SIEC/Audio-Technica%20ATH-CK1)
 - [Audio-Technica ATH-CK3TW](./crinacle/harman_in-ear_2019v2/Audio-Technica%20ATH-CK3TW)
 - [Audio-Technica ATH-CK7](./referenceaudioanalyzer/SIEC/Audio-Technica%20ATH-CK7)
@@ -1026,6 +1027,7 @@ it yourself by following this guide:
 - [Final Audio Make 2](./crinacle/harman_in-ear_2019v2/Final%20Audio%20Make%202)
 - [Final Audio MURAMASA VIII](./referenceaudioanalyzer/HDM1/Final%20Audio%20MURAMASA%20VIII)
 - [Final Audio Pandora Hope 4](./innerfidelity/sbaf-serious/Final%20Audio%20Pandora%20Hope%204)
+- [Final Audio Piano Forte II](./referenceaudioanalyzer/HDM-X/Final%20Audio%20Piano%20Forte%20II)
 - [Final Audio Piano Forte IX](./referenceaudioanalyzer/SIEC/Final%20Audio%20Piano%20Forte%20IX)
 - [Final Audio Piano Forte VIII](./referenceaudioanalyzer/SIEC/Final%20Audio%20Piano%20Forte%20VIII)
 - [Final Audio Piano Forte X](./referenceaudioanalyzer/SIEC/Final%20Audio%20Piano%20Forte%20X)
@@ -1829,6 +1831,7 @@ it yourself by following this guide:
 - [NiceHCK NX7 Pro (blue)](./crinacle/harman_in-ear_2019v2/NiceHCK%20NX7%20Pro%20(blue))
 - [NiceHCK NX7 Pro (red)](./crinacle/harman_in-ear_2019v2/NiceHCK%20NX7%20Pro%20(red))
 - [NiceHCK NX7 Pro (stock)](./crinacle/harman_in-ear_2019v2/NiceHCK%20NX7%20Pro%20(stock))
+- [NiceHCK Vido](./referenceaudioanalyzer/SIEC/NiceHCK%20Vido)
 - [Nixon RPM](./innerfidelity/sbaf-serious/Nixon%20RPM)
 - [Noble Audio Django](./crinacle/harman_in-ear_2019v2/Noble%20Audio%20Django)
 - [Noble Audio Dulce (bass)](./crinacle/harman_in-ear_2019v2/Noble%20Audio%20Dulce%20(bass))
@@ -2650,6 +2653,10 @@ it yourself by following this guide:
 - [StereoPravda SPearphone SB-7](./referenceaudioanalyzer/SIEC/StereoPravda%20SPearphone%20SB-7)
 - [StereoPravda SPearphone SB-7A](./referenceaudioanalyzer/SIEC/StereoPravda%20SPearphone%20SB-7A)
 - [Sterling TE-400](./innerfidelity/sbaf-serious/Sterling%20TE-400)
+- [Sunrise Dragon](./referenceaudioanalyzer/HDM-X/Sunrise%20Dragon)
+- [Sunrise Dragon (ear tips earbuds r130)](./referenceaudioanalyzer/SIEC/Sunrise%20Dragon%20(ear%20tips%20earbuds%20r130))
+- [Sunrise Dragon (ear tips earbuds r130, vent sealed)](./referenceaudioanalyzer/SIEC/Sunrise%20Dragon%20(ear%20tips%20earbuds%20r130,%20vent%20sealed))
+- [Sunrise Feeling 2](./referenceaudioanalyzer/HDM-X/Sunrise%20Feeling%202)
 - [Sunrise Xcape](./referenceaudioanalyzer/SIEC/Sunrise%20Xcape)
 - [Sunrise Xcited](./referenceaudioanalyzer/SIEC/Sunrise%20Xcited)
 - [Superlux HD 668B](./innerfidelity/sbaf-serious/Superlux%20HD%20668B)
@@ -2869,6 +2876,7 @@ it yourself by following this guide:
 - [Venture Electronics Bonus In-Ears (BIE)](./crinacle/harman_in-ear_2019v2/Venture%20Electronics%20Bonus%20In-Ears%20(BIE))
 - [Venture Electronics Duke](./innerfidelity/sbaf-serious/Venture%20Electronics%20Duke)
 - [Venture Electronics Duke (CIEM)](./crinacle/harman_in-ear_2019v2/Venture%20Electronics%20Duke%20(CIEM))
+- [Venture Electronics Monk](./referenceaudioanalyzer/HDM-X/Venture%20Electronics%20Monk)
 - [Venture Electronics Monk IE Biggie](./crinacle/harman_in-ear_2019v2/Venture%20Electronics%20Monk%20IE%20Biggie)
 - [Venture Electronics Monk IE Smalls](./crinacle/harman_in-ear_2019v2/Venture%20Electronics%20Monk%20IE%20Smalls)
 - [Venture Electronics Monk Plus](./innerfidelity/sbaf-serious/Venture%20Electronics%20Monk%20Plus)

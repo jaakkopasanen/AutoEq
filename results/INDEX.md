@@ -331,10 +331,12 @@ from the same source.
 - [Apple AirPods Pro](./crinacle/harman_in-ear_2019v2/Apple%20AirPods%20Pro) by Crinacle
 - [Apple AirPods Pro](./rtings/avg/Apple%20AirPods%20Pro) by Rtings
 - [Apple AirPods](./oratory1990/harman_in-ear_2019v2/Apple%20AirPods) by oratory1990
+- [Apple AirPods](./referenceaudioanalyzer/HDM-X/Apple%20AirPods) by Reference Audio Analyzer
 - [Apple AirPods](./rtings/avg/Apple%20AirPods) by Rtings
 - [Apple EarPods](./headphonecom/sbaf-serious/Apple%20EarPods) by Headphone.com
 - [Apple EarPods](./innerfidelity/sbaf-serious/Apple%20EarPods) by Innerfidelity
 - [Apple EarPods](./oratory1990/harman_in-ear_2019v2/Apple%20EarPods) by oratory1990
+- [Apple EarPods](./referenceaudioanalyzer/HDM-X/Apple%20EarPods) by Reference Audio Analyzer
 - [Apple EarPods](./rtings/avg/Apple%20EarPods) by Rtings
 - [Apple In-Ear 2013](./innerfidelity/sbaf-serious/Apple%20In-Ear%202013) by Innerfidelity
 - [Apple iPod Ear Buds (sample A)](./innerfidelity/sbaf-serious/Apple%20iPod%20Ear%20Buds%20(sample%20A)) by Innerfidelity
@@ -501,6 +503,7 @@ from the same source.
 - [Audio-Technica ATH-ANC7b](./rtings/avg/Audio-Technica%20ATH-ANC7b) by Rtings
 - [Audio-Technica ATH-ANC9](./innerfidelity/sbaf-serious/Audio-Technica%20ATH-ANC9) by Innerfidelity
 - [Audio-Technica ATH-ANC9](./rtings/avg/Audio-Technica%20ATH-ANC9) by Rtings
+- [Audio-Technica ATH-C770](./referenceaudioanalyzer/HDM-X/Audio-Technica%20ATH-C770) by Reference Audio Analyzer
 - [Audio-Technica ATH-CK1](./referenceaudioanalyzer/SIEC/Audio-Technica%20ATH-CK1) by Reference Audio Analyzer
 - [Audio-Technica ATH-CK3TW](./crinacle/harman_in-ear_2019v2/Audio-Technica%20ATH-CK3TW) by Crinacle
 - [Audio-Technica ATH-CK7](./referenceaudioanalyzer/SIEC/Audio-Technica%20ATH-CK7) by Reference Audio Analyzer
@@ -1404,6 +1407,7 @@ from the same source.
 - [Final Audio Make 2](./crinacle/harman_in-ear_2019v2/Final%20Audio%20Make%202) by Crinacle
 - [Final Audio MURAMASA VIII](./referenceaudioanalyzer/HDM1/Final%20Audio%20MURAMASA%20VIII) by Reference Audio Analyzer
 - [Final Audio Pandora Hope 4](./innerfidelity/sbaf-serious/Final%20Audio%20Pandora%20Hope%204) by Innerfidelity
+- [Final Audio Piano Forte II](./referenceaudioanalyzer/HDM-X/Final%20Audio%20Piano%20Forte%20II) by Reference Audio Analyzer
 - [Final Audio Piano Forte IX](./referenceaudioanalyzer/SIEC/Final%20Audio%20Piano%20Forte%20IX) by Reference Audio Analyzer
 - [Final Audio Piano Forte VIII](./referenceaudioanalyzer/SIEC/Final%20Audio%20Piano%20Forte%20VIII) by Reference Audio Analyzer
 - [Final Audio Piano Forte X](./referenceaudioanalyzer/SIEC/Final%20Audio%20Piano%20Forte%20X) by Reference Audio Analyzer
@@ -2434,6 +2438,7 @@ from the same source.
 - [NiceHCK NX7 Pro (blue)](./crinacle/harman_in-ear_2019v2/NiceHCK%20NX7%20Pro%20(blue)) by Crinacle
 - [NiceHCK NX7 Pro (red)](./crinacle/harman_in-ear_2019v2/NiceHCK%20NX7%20Pro%20(red)) by Crinacle
 - [NiceHCK NX7 Pro (stock)](./crinacle/harman_in-ear_2019v2/NiceHCK%20NX7%20Pro%20(stock)) by Crinacle
+- [NiceHCK Vido](./referenceaudioanalyzer/SIEC/NiceHCK%20Vido) by Reference Audio Analyzer
 - [Nixon RPM](./innerfidelity/sbaf-serious/Nixon%20RPM) by Innerfidelity
 - [Noble Audio Django](./crinacle/harman_in-ear_2019v2/Noble%20Audio%20Django) by Crinacle
 - [Noble Audio Dulce (bass)](./crinacle/harman_in-ear_2019v2/Noble%20Audio%20Dulce%20(bass)) by Crinacle
@@ -3600,6 +3605,10 @@ from the same source.
 - [StereoPravda SPearphone SB-7](./referenceaudioanalyzer/SIEC/StereoPravda%20SPearphone%20SB-7) by Reference Audio Analyzer
 - [StereoPravda SPearphone SB-7A](./referenceaudioanalyzer/SIEC/StereoPravda%20SPearphone%20SB-7A) by Reference Audio Analyzer
 - [Sterling TE-400](./innerfidelity/sbaf-serious/Sterling%20TE-400) by Innerfidelity
+- [Sunrise Dragon (ear tips earbuds r130)](./referenceaudioanalyzer/SIEC/Sunrise%20Dragon%20(ear%20tips%20earbuds%20r130)) by Reference Audio Analyzer
+- [Sunrise Dragon (ear tips earbuds r130, vent sealed)](./referenceaudioanalyzer/SIEC/Sunrise%20Dragon%20(ear%20tips%20earbuds%20r130,%20vent%20sealed)) by Reference Audio Analyzer
+- [Sunrise Dragon](./referenceaudioanalyzer/HDM-X/Sunrise%20Dragon) by Reference Audio Analyzer
+- [Sunrise Feeling 2](./referenceaudioanalyzer/HDM-X/Sunrise%20Feeling%202) by Reference Audio Analyzer
 - [Sunrise Xcape](./referenceaudioanalyzer/SIEC/Sunrise%20Xcape) by Reference Audio Analyzer
 - [Sunrise Xcited](./referenceaudioanalyzer/SIEC/Sunrise%20Xcited) by Reference Audio Analyzer
 - [Superlux HD 668B](./headphonecom/sbaf-serious/Superlux%20HD%20668B) by Headphone.com
@@ -3875,6 +3884,8 @@ from the same source.
 - [Venture Electronics Monk IE Biggie](./crinacle/harman_in-ear_2019v2/Venture%20Electronics%20Monk%20IE%20Biggie) by Crinacle
 - [Venture Electronics Monk IE Smalls](./crinacle/harman_in-ear_2019v2/Venture%20Electronics%20Monk%20IE%20Smalls) by Crinacle
 - [Venture Electronics Monk Plus](./innerfidelity/sbaf-serious/Venture%20Electronics%20Monk%20Plus) by Innerfidelity
+- [Venture Electronics Monk Plus](./referenceaudioanalyzer/HDM-X/Venture%20Electronics%20Monk%20Plus) by Reference Audio Analyzer
+- [Venture Electronics Monk](./referenceaudioanalyzer/HDM-X/Venture%20Electronics%20Monk) by Reference Audio Analyzer
 - [Verum One (leather earpads)](./oratory1990/harman_over-ear_2018/Verum%20One%20(leather%20earpads)) by oratory1990
 - [Verum One (ZMF Ori earpads)](./oratory1990/harman_over-ear_2018/Verum%20One%20(ZMF%20Ori%20earpads)) by oratory1990
 - [Verum One](./oratory1990/harman_over-ear_2018/Verum%20One) by oratory1990
