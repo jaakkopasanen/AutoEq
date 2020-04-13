@@ -59,7 +59,8 @@ def main():
     siec = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_compensation_siec.csv')
 
     eq_kwargs = {
-        'equalize': True, 'parametric_eq': True, 'max_filters': [5, 5], 'ten_band_eq': True, 'new_only': new_only
+        'equalize': True, 'parametric_eq': True, 'max_filters': [5, 5], 'ten_band_eq': True, 'new_only': new_only,
+        'convolution_eq': True, 'fs': [44100, 48000]
     }
     onear_kwargs = eq_kwargs.copy()
     onear_kwargs.update({'bass_boost_gain': 4.0})
@@ -67,7 +68,6 @@ def main():
     inear_kwargs.update({'bass_boost_gain': 6.0})
     earbud_kwargs = eq_kwargs.copy()
     earbud_kwargs.update({'bass_boost_gain': 0.0})
-
 
     if innerfidelity:
         if onear:

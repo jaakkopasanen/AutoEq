@@ -390,12 +390,12 @@ optional arguments:
 #### Reproducing Results
 Reproducing pre-computed results for oratory1990 measured on-ear headphones:
 ```bash
-python autoeq.py --input_dir="oratory1990/data/onear" --output_dir="my_results/oratory1990/harman_over-ear_2018" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0
+python autoeq.py --input_dir="measurements/oratory1990/data/onear" --output_dir="my_results/oratory1990/harman_over-ear_2018" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0 --convolution_eq --fs=44100,48000
 ```
 
 Reproducing pre-computed results for Rtings measured IEMs:
 ```bash
-python autoeq.py --input_dir="rtings/data/inear" --output_dir="my_results/rtings/avg" --compensation="rtings/resources/rtings_compensation_avg.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=6.0
+python autoeq.py --input_dir="measurements/rtings/data/inear" --output_dir="my_results/rtings/avg" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=6.0 --convolution_eq --fs=44100,48000
 ```
 
 All parameters used for pre-computed results can be found in the `results/update.py` script.
@@ -403,14 +403,14 @@ All parameters used for pre-computed results can be found in the `results/update
 #### Equalizing Individual Headphones
 Equalizing Sennheiser HD 650 and saving results to `my_results/HD650`:
 ```bash
-python autoeq.py --input_dir="innerfidelity/data/onear/Sennheiser HD 650" --output_dir="my_results/HD650" --compensation="innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot
+python autoeq.py --input_dir="measurements/innerfidelity/data/onear/Sennheiser HD 650" --output_dir="my_results/HD650" --compensation="measurements/innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot --convolution_eq --fs=44100,48000
 ```
 
 #### Fixed Band Equalizers
 Filter parameters for fixed band equalizers can be adjusted with `--q` and `--fc` parameters. Producing fixed band
 equalizer settings for Sony WH-1000XM3 app:
 ```bash
-python autoeq.py --input_dir="oratory1990/data/onear/Sony WH-1000XM3" --output_dir="my_results/Sony WH-1000XM3 (app)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --bass_boost=4.0 --fixed_band_eq --fc=400,1000,2500,6300,16000 --q=1.05
+python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sony WH-1000XM3" --output_dir="my_results/Sony WH-1000XM3 (app)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --bass_boost=4.0 --fixed_band_eq --fc=400,1000,2500,6300,16000 --q=1.05
 ```
 
 #### Using Sound Signatures
@@ -421,21 +421,21 @@ Equalizing Sennheiser HD 800 to sound like Sennheiser HD 650 using pre-computed 
 oratory1990 so we'll use those measurments. Pre-computed results include 4dB of bass boost for over-ear headphones and
 therefore we need to apply bass boost of 4dB here as well.
 ```bash
-python autoeq.py --input_dir="oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (HD 650)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Sennheiser HD 650/Sennheiser HD 650.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4
+python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (HD 650)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Sennheiser HD 650/Sennheiser HD 650.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
 ```
 
-Equalizing Massdrop x Sennheiser HD 6XX to sound like AKG K701. There is no K701 measurement made by oratory1990 so
+Equalizing Massdrop x Sennheiser HD 800 to sound like AKG K701. There is no K701 measurement made by oratory1990 so
 we'll use Innerfidelity's measurement for the sound signature. The list of recommended results always points to best
 measurement so you can check there which one to use (measurement system can be found in the URL).
 ```bash
-python autoeq.py --input_dir="oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (K701)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/innerfidelity/sbaf-serious/AKG K701/AKG K701.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4
+python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (K701)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/innerfidelity/sbaf-serious/AKG K701/AKG K701.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
 ```
 
 Equalizing HiFiMAN HE400S to sound like Massdrop x Meze 99 Noir. HE400S is measured only by Innerfidelity so we'll point
 compensation file pointing to Innerfidelity SBAF-Serious target. Meze 99 Noir has massive natural bass boost and to
 capture that we need to relax max gain to +12dB.
 ```bash
-python autoeq.py --input_dir="innerfidelity/data/onear/HiFiMAN HE400S" --output_dir="my_results/HE400S (99 Noir)" --compensation="innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Massdrop x Meze 99 Noir/Massdrop x Meze 99 Noir.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --max_gain=8
+python autoeq.py --input_dir="measurements/innerfidelity/data/onear/HiFiMAN HE400S" --output_dir="my_results/HE400S (99 Noir)" --compensation="measurements/innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Meze 99 Noir/Meze 99 Noir.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --max_gain=8
 ```
 
 Applying V-shaped sound signature to Audeze Mobius. First step is to create the sound signature file. Save this to
@@ -451,7 +451,7 @@ Then use it by providing the path to `--sound_signature` parameter. We'll set ba
 signature already has significant bass boost. Of course it's possible to add bass boost on top of the sound signature
 file if you want even more bass.
 ```bash
-python autoeq.py --input_dir="rtings/data/onear/Audeze Mobius" --output_dir="my_results/Audeze Mobius" --compensation="rtings/resources/rtings_compensation_avg.csv" --sound_signature="my_data/v.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=0.0
+python autoeq.py --input_dir="measurements/rtings/data/onear/Audeze Mobius" --output_dir="my_results/Audeze Mobius (V-signature)" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --sound_signature="my_data/v.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0
 ```
 
 ## Results

@@ -238,9 +238,13 @@ class FrequencyResponse:
         df = pd.DataFrame(self.to_dict())
         df.to_csv(file_path, header=True, index=False, float_format='%.2f')
 
-    def eqapo_graphic_eq(self, normalize=True):
+    def eqapo_graphic_eq(self, normalize=True, f_step=DEFAULT_GRAPHIC_EQ_STEP):
+        """Generates EqualizerAPO GraphicEQ string from equalization curve."""
         fr = FrequencyResponse(name='hack', frequency=self.frequency, raw=self.equalization)
-        fr.interpolate(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=DEFAULT_GRAPHIC_EQ_STEP)
+        n = np.ceil(np.log(20000 / 20) / np.log(f_step))
+        f = 20 * f_step**np.arange(n)
+        f = np.sort(np.unique(f.astype('int')))
+        fr.interpolate(f=f)
         if normalize:
             fr.raw -= np.max(fr.raw) + 0.5
             if fr.raw[0] > 0.0:

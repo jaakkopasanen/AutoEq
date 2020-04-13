@@ -27,7 +27,7 @@ DEFAULT_BASS_BOOST_GAIN = 0
 DEFAULT_BASS_BOOST_FC = 100
 DEFAULT_BASS_BOOST_Q = 0.65
 
-DEFAULT_GRAPHIC_EQ_STEP = 1.1
+DEFAULT_GRAPHIC_EQ_STEP = 1.0563  # Produces 127 samples with greatest frequency of 19871
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 MOD_REGEX = r' \((sample|serial number) [a-zA-Z0-9\-]+\)$'

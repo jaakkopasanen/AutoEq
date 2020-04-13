@@ -14,11 +14,12 @@ from frequency_response import FrequencyResponse
 
 def batch_processing(input_dir=None, output_dir=None, new_only=False, standardize_input=False, compensation=None,
                      equalize=False, parametric_eq=False, fixed_band_eq=False, fc=None, q=None, ten_band_eq=False,
-                     max_filters=None, fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE,
-                     f_res=DEFAULT_F_RES, bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
-                     bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=None, sound_signature=None, max_gain=DEFAULT_MAX_GAIN,
-                     treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                     treble_max_gain=DEFAULT_TREBLE_MAX_GAIN, treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False):
+                     max_filters=None, convolution_eq=False, fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH,
+                     phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES, bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
+                     bass_boost_fc=DEFAULT_BASS_BOOST_FC, bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=None,
+                     sound_signature=None, max_gain=DEFAULT_MAX_GAIN, treble_f_lower=DEFAULT_TREBLE_F_LOWER,
+                     treble_f_upper=DEFAULT_TREBLE_F_UPPER, treble_max_gain=DEFAULT_TREBLE_MAX_GAIN,
+                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False):
     """Parses files in input directory and produces equalization results in output directory."""
     start_time = time()
 
@@ -96,7 +97,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
             treble_f_upper=treble_f_upper,
             treble_max_gain=treble_max_gain,
             treble_gain_k=treble_gain_k,
-            fs=fs
+            fs=fs[0] if type(fs) == list else fs
         )
 
         if output_file_path is not None:
@@ -117,28 +118,28 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                     fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' FixedBandEQ.txt'), fbeq_filters)
 
                 # Write impulse response as WAV
-                fss = [44100, 48000] if fs in [44100, 48000] else [fs]
-                for _fs in fss:
-                    if phase in ['linear', 'both']:
-                        # Write linear phase impulse response
-                        linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
-                        linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
-                        sf.write(
-                            output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
-                            linear_phase_ir,
-                            _fs,
-                            bit_depth
-                        )
-                    if phase in ['minimum', 'both']:
-                        # Write minimum phase impulse response
-                        minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
-                        minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
-                        sf.write(
-                            output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
-                            minimum_phase_ir,
-                            _fs,
-                            bit_depth
-                        )
+                if convolution_eq:
+                    for _fs in fs:
+                        if phase in ['linear', 'both']:
+                            # Write linear phase impulse response
+                            linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
+                            linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
+                            sf.write(
+                                output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
+                                linear_phase_ir,
+                                _fs,
+                                bit_depth
+                            )
+                        if phase in ['minimum', 'both']:
+                            # Write minimum phase impulse response
+                            minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
+                            minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
+                            sf.write(
+                                output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
+                                minimum_phase_ir,
+                                _fs,
+                                bit_depth
+                            )
 
             # Write results to CSV file
             fr.write_to_csv(output_file_path)
@@ -202,8 +203,13 @@ def cli_args():
                                  'the last 5 can only be used with the first 5. This allows to have muliple '
                                  'configurations for equalizers with different number of bands available. '
                                  'Not limited by default.')
-    arg_parser.add_argument('--fs', type=int, default=DEFAULT_FS,
-                            help='Sampling frequency for impulse response and parametric eq filters. '
+    arg_parser.add_argument('--convolution_eq', action='store_true',
+                            help='Will produce impulse response for convolution equalizers if this parameter exists, '
+                                 'no value needed.')
+    arg_parser.add_argument('--fs', type=str, default=str(DEFAULT_FS),
+                            help='Sampling frequency in Hertz for impulse response and parametric eq filters. Single '
+                                 'value or multiple values separated by commas eg 44100,48000. When multiple values '
+                                 'are given only the first one will be used for parametric eq. '
                                  'Defaults to {}.'.format(DEFAULT_FS))
     arg_parser.add_argument('--bit_depth', type=int, default=DEFAULT_BIT_DEPTH,
                             help='Number of bits for every sample in impulse response. '
@@ -285,6 +291,8 @@ def cli_args():
         args['fc'] = [float(x) for x in args['fc'].split(',')]
     if 'q' in args and args['q'] is not None:
         args['q'] = [float(x) for x in args['q'].split(',')]
+    if 'fs' in args and args['fs'] is not None:
+        args['fs'] = [int(x) for x in args['fs'].split(',')]
     return args
 
 
