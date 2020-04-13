@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 49 Hz    | 0.5  | -2.2 dB |
-| Peaking | 143 Hz   | 0.77 | -3.0 dB |
-| Peaking | 2717 Hz  | 2.73 | 6.6 dB  |
-| Peaking | 18282 Hz | 1.39 | -6.2 dB |
-| Peaking | 18511 Hz | 0.53 | -3.5 dB |
-| Peaking | 1436 Hz  | 3.49 | -1.9 dB |
-| Peaking | 3619 Hz  | 5.29 | -1.0 dB |
-| Peaking | 4937 Hz  | 3.16 | 2.1 dB  |
-| Peaking | 10394 Hz | 4.13 | 1.3 dB  |
-| Peaking | 11794 Hz | 4.47 | -2.2 dB |
+| Peaking | 44 Hz    | 0.61 | -2.1 dB |
+| Peaking | 136 Hz   | 0.73 | -3.4 dB |
+| Peaking | 2712 Hz  | 2.74 | 6.5 dB  |
+| Peaking | 18270 Hz | 1.15 | -6.8 dB |
+| Peaking | 20150 Hz | 0.35 | -3.0 dB |
+| Peaking | 1440 Hz  | 3.39 | -1.9 dB |
+| Peaking | 3707 Hz  | 4.16 | -1.6 dB |
+| Peaking | 4674 Hz  | 1.93 | 1.9 dB  |
+| Peaking | 10540 Hz | 3.49 | 1.1 dB  |
+| Peaking | 11789 Hz | 4.19 | -2.5 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.4dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.6 dB  |
 | Peaking | 1000 Hz  | 1.41 | -1.3 dB |
 | Peaking | 2000 Hz  | 1.41 | 2.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | 2.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.4 dB |
-| Peaking | 16000 Hz | 1.41 | -6.6 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 16000 Hz | 1.41 | -6.1 dB |
 
 ### Graphs
 ![](./Sony%20IER-Z1R.png)

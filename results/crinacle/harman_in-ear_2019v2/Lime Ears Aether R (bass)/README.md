@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.8dB**.
+When using independent subset of filters, apply preamp of **-6.3dB**.
 
 | Type    | Fc      |    Q | Gain     |
 |:--------|:--------|:-----|:---------|
-| Peaking | 152 Hz  | 0.48 | -8.1 dB  |
-| Peaking | 716 Hz  | 0.87 | 10.5 dB  |
-| Peaking | 2352 Hz | 0.95 | -18.3 dB |
-| Peaking | 3925 Hz | 0.98 | 15.3 dB  |
-| Peaking | 8023 Hz | 4.97 | -9.7 dB  |
-| Peaking | 20 Hz   | 2.35 | 4.2 dB   |
-| Peaking | 2997 Hz | 6.29 | -3.8 dB  |
-| Peaking | 3351 Hz | 5.01 | 5.1 dB   |
-| Peaking | 3984 Hz | 2.46 | -2.0 dB  |
-| Peaking | 5522 Hz | 5.82 | 2.3 dB   |
+| Peaking | 19 Hz   | 1.21 | 3.2 dB   |
+| Peaking | 163 Hz  | 0.61 | -5.5 dB  |
+| Peaking | 2115 Hz | 0.96 | -14.1 dB |
+| Peaking | 3115 Hz | 0.37 | 12.5 dB  |
+| Peaking | 8310 Hz | 1.45 | -7.1 dB  |
+| Peaking | 695 Hz  | 2.59 | 1.7 dB   |
+| Peaking | 1316 Hz | 2.32 | -2.0 dB  |
+| Peaking | 2037 Hz | 2.79 | 1.2 dB   |
+| Peaking | 2885 Hz | 4.04 | -3.6 dB  |
+| Peaking | 3237 Hz | 2.72 | 2.5 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
 (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | 1.2 dB   |
-| Peaking | 62 Hz    | 1.41 | -4.0 dB  |
-| Peaking | 125 Hz   | 1.41 | -6.5 dB  |
-| Peaking | 250 Hz   | 1.41 | -5.5 dB  |
-| Peaking | 500 Hz   | 1.41 | 5.2 dB   |
-| Peaking | 1000 Hz  | 1.41 | 6.7 dB   |
-| Peaking | 2000 Hz  | 1.41 | -14.2 dB |
-| Peaking | 4000 Hz  | 1.41 | 10.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.4 dB  |
-| Peaking | 16000 Hz | 1.41 | 0.4 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | 1.8 dB  |
+| Peaking | 62 Hz    | 1.41 | -1.5 dB |
+| Peaking | 125 Hz   | 1.41 | -4.1 dB |
+| Peaking | 250 Hz   | 1.41 | -4.5 dB |
+| Peaking | 500 Hz   | 1.41 | 1.2 dB  |
+| Peaking | 1000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | -5.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 8.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.4 dB |
+| Peaking | 16000 Hz | 1.41 | -1.1 dB |
 
 ### Graphs
 ![](./Lime%20Ears%20Aether%20R%20(bass).png)

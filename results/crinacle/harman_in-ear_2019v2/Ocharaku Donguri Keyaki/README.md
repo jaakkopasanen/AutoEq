@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 32 Hz    | 0.31 | 6.5 dB  |
-| Peaking | 270 Hz   | 0.39 | -5.4 dB |
-| Peaking | 930 Hz   | 0.84 | 6.2 dB  |
-| Peaking | 15367 Hz | 1.97 | -6.1 dB |
-| Peaking | 20371 Hz | 0.35 | -6.3 dB |
-| Peaking | 2538 Hz  | 1.79 | 2.7 dB  |
-| Peaking | 2976 Hz  | 2.44 | -1.8 dB |
-| Peaking | 3006 Hz  | 2.82 | -2.6 dB |
-| Peaking | 17123 Hz | 1.49 | -3.0 dB |
-| Peaking | 17156 Hz | 1.32 | 2.0 dB  |
+| Peaking | 33 Hz    | 0.29 | 6.6 dB  |
+| Peaking | 264 Hz   | 0.37 | -5.6 dB |
+| Peaking | 923 Hz   | 0.84 | 6.3 dB  |
+| Peaking | 15231 Hz | 2.16 | -5.7 dB |
+| Peaking | 20123 Hz | 0.38 | -7.5 dB |
+| Peaking | 2446 Hz  | 1.8  | 2.5 dB  |
+| Peaking | 2980 Hz  | 2.16 | -1.6 dB |
+| Peaking | 3013 Hz  | 2.59 | -2.3 dB |
+| Peaking | 16357 Hz | 1.2  | 2.3 dB  |
+| Peaking | 16497 Hz | 1.5  | -2.7 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 6.6 dB  |
-| Peaking | 62 Hz    | 1.41 | 3.3 dB  |
-| Peaking | 125 Hz   | 1.41 | -1.0 dB |
+| Peaking | 31 Hz    | 1.41 | 6.9 dB  |
+| Peaking | 62 Hz    | 1.41 | 3.1 dB  |
+| Peaking | 125 Hz   | 1.41 | -0.9 dB |
 | Peaking | 250 Hz   | 1.41 | -4.3 dB |
-| Peaking | 500 Hz   | 1.41 | -1.4 dB |
-| Peaking | 1000 Hz  | 1.41 | 4.7 dB  |
-| Peaking | 2000 Hz  | 1.41 | 1.5 dB  |
-| Peaking | 4000 Hz  | 1.41 | -1.1 dB |
-| Peaking | 8000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 16000 Hz | 1.41 | -9.3 dB |
+| Peaking | 500 Hz   | 1.41 | -1.5 dB |
+| Peaking | 1000 Hz  | 1.41 | 4.8 dB  |
+| Peaking | 2000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 8000 Hz  | 1.41 | -0.7 dB |
+| Peaking | 16000 Hz | 1.41 | -9.4 dB |
 
 ### Graphs
 ![](./Ocharaku%20Donguri%20Keyaki.png)

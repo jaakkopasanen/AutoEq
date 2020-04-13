@@ -8,13 +8,13 @@ When using independent subset of filters, apply preamp of **-4.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 74 Hz    | 0.4  | -1.5 dB |
-| Peaking | 194 Hz   | 0.51 | -3.9 dB |
-| Peaking | 887 Hz   | 1.11 | 3.3 dB  |
-| Peaking | 2598 Hz  | 1.89 | 3.7 dB  |
-| Peaking | 5736 Hz  | 2.98 | 1.8 dB  |
-| Peaking | 14355 Hz | 2.3  | 0.9 dB  |
-| Peaking | 19985 Hz | 0.79 | -7.9 dB |
+| Peaking | 68 Hz    | 0.48 | -1.5 dB |
+| Peaking | 194 Hz   | 0.53 | -4.1 dB |
+| Peaking | 888 Hz   | 1.13 | 3.3 dB  |
+| Peaking | 2593 Hz  | 1.85 | 3.7 dB  |
+| Peaking | 5712 Hz  | 2.84 | 1.8 dB  |
+| Peaking | 14488 Hz | 2.17 | 0.9 dB  |
+| Peaking | 19997 Hz | 0.82 | -8.0 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.4dB**
@@ -22,16 +22,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -1.0 dB |
+| Peaking | 31 Hz    | 1.41 | -0.9 dB |
 | Peaking | 62 Hz    | 1.41 | -1.9 dB |
 | Peaking | 125 Hz   | 1.41 | -3.8 dB |
 | Peaking | 250 Hz   | 1.41 | -3.8 dB |
 | Peaking | 500 Hz   | 1.41 | -0.2 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.5 dB  |
 | Peaking | 2000 Hz  | 1.41 | 2.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 1.8 dB  |
 | Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -1.9 dB |
+| Peaking | 16000 Hz | 1.41 | -1.8 dB |
 
 ### Graphs
 ![](./Fearless%20Audio%20S8F.png)

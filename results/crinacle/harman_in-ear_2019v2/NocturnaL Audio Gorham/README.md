@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 140 Hz   | 0.55 | -5.1 dB |
-| Peaking | 311 Hz   | 1.09 | -2.8 dB |
-| Peaking | 3421 Hz  | 1.05 | 6.8 dB  |
-| Peaking | 14318 Hz | 1.9  | -2.0 dB |
-| Peaking | 15211 Hz | 2.27 | -5.9 dB |
-| Peaking | 947 Hz   | 3.41 | 1.2 dB  |
-| Peaking | 5038 Hz  | 4.77 | 2.7 dB  |
-| Peaking | 7061 Hz  | 4.59 | -4.7 dB |
-| Peaking | 11598 Hz | 3.57 | 1.0 dB  |
-| Peaking | 17682 Hz | 4.25 | 1.2 dB  |
+| Peaking | 133 Hz   | 0.53 | -4.7 dB |
+| Peaking | 297 Hz   | 0.99 | -3.0 dB |
+| Peaking | 3415 Hz  | 1.04 | 6.7 dB  |
+| Peaking | 14988 Hz | 1.98 | -7.4 dB |
+| Peaking | 22050 Hz | 1.79 | -5.7 dB |
+| Peaking | 945 Hz   | 3.41 | 1.3 dB  |
+| Peaking | 4981 Hz  | 4.83 | 2.5 dB  |
+| Peaking | 7083 Hz  | 4.88 | -4.7 dB |
+| Peaking | 11512 Hz | 3.66 | 1.0 dB  |
+| Peaking | 17793 Hz | 3.77 | 1.2 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
@@ -25,7 +25,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -0.6 dB |
+| Peaking | 31 Hz    | 1.41 | -0.5 dB |
 | Peaking | 62 Hz    | 1.41 | -1.9 dB |
 | Peaking | 125 Hz   | 1.41 | -4.5 dB |
 | Peaking | 250 Hz   | 1.41 | -5.2 dB |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 1.8 dB  |
 | Peaking | 4000 Hz  | 1.41 | 7.2 dB  |
 | Peaking | 8000 Hz  | 1.41 | -1.8 dB |
-| Peaking | 16000 Hz | 1.41 | -5.6 dB |
+| Peaking | 16000 Hz | 1.41 | -5.7 dB |
 
 ### Graphs
 ![](./NocturnaL%20Audio%20Gorham.png)

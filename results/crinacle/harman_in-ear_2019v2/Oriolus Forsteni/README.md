@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-7.3dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 30 Hz    | 0.93 | -1.2 dB  |
-| Peaking | 160 Hz   | 0.43 | -3.1 dB  |
-| Peaking | 4049 Hz  | 0.88 | 7.8 dB   |
-| Peaking | 7155 Hz  | 2.96 | -13.7 dB |
-| Peaking | 18948 Hz | 1.05 | -12.2 dB |
-| Peaking | 1371 Hz  | 4.12 | -2.7 dB  |
-| Peaking | 8499 Hz  | 4.44 | -2.9 dB  |
-| Peaking | 9404 Hz  | 2.84 | 1.8 dB   |
-| Peaking | 15435 Hz | 0.78 | 1.6 dB   |
-| Peaking | 17320 Hz | 2.96 | -3.7 dB  |
+| Peaking | 30 Hz    | 0.85 | -1.2 dB  |
+| Peaking | 162 Hz   | 0.44 | -3.1 dB  |
+| Peaking | 3969 Hz  | 0.92 | 7.7 dB   |
+| Peaking | 7161 Hz  | 2.9  | -13.3 dB |
+| Peaking | 19065 Hz | 1.07 | -12.6 dB |
+| Peaking | 1409 Hz  | 3.11 | -2.8 dB  |
+| Peaking | 2144 Hz  | 2.82 | 1.4 dB   |
+| Peaking | 8331 Hz  | 4.2  | -1.6 dB  |
+| Peaking | 14515 Hz | 0.65 | 1.8 dB   |
+| Peaking | 17363 Hz | 2.85 | -3.9 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -1.2 dB |
 | Peaking | 2000 Hz  | 1.41 | 1.8 dB  |
 | Peaking | 4000 Hz  | 1.41 | 7.9 dB  |
-| Peaking | 8000 Hz  | 1.41 | -7.3 dB |
-| Peaking | 16000 Hz | 1.41 | -4.1 dB |
+| Peaking | 8000 Hz  | 1.41 | -7.5 dB |
+| Peaking | 16000 Hz | 1.41 | -3.8 dB |
 
 ### Graphs
 ![](./Oriolus%20Forsteni.png)

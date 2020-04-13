@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-5.6dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 29 Hz    | 0.59 | -8.0 dB  |
-| Peaking | 96 Hz    | 0.45 | -8.4 dB  |
-| Peaking | 700 Hz   | 0.89 | 7.2 dB   |
-| Peaking | 14994 Hz | 2.59 | -21.0 dB |
-| Peaking | 18929 Hz | 0.65 | -16.6 dB |
-| Peaking | 4210 Hz  | 4.35 | 3.0 dB   |
-| Peaking | 5485 Hz  | 3.6  | 6.2 dB   |
-| Peaking | 7239 Hz  | 3.55 | -11.5 dB |
-| Peaking | 11152 Hz | 1.74 | 8.1 dB   |
-| Peaking | 13597 Hz | 3.29 | -7.6 dB  |
+| Peaking | 69 Hz    | 0.28 | -5.6 dB  |
+| Peaking | 5150 Hz  | 0.52 | 13.8 dB  |
+| Peaking | 7179 Hz  | 4.65 | -4.7 dB  |
+| Peaking | 10504 Hz | 1.96 | 9.7 dB   |
+| Peaking | 18055 Hz | 0.12 | -20.5 dB |
+| Peaking | 819 Hz   | 1.44 | 2.2 dB   |
+| Peaking | 1472 Hz  | 1.85 | -1.7 dB  |
+| Peaking | 14528 Hz | 3.97 | -3.2 dB  |
+| Peaking | 15416 Hz | 2.17 | -0.4 dB  |
+| Peaking | 17232 Hz | 2.15 | 2.6 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.4dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -11.1 dB |
-| Peaking | 62 Hz    | 1.41 | -8.4 dB  |
-| Peaking | 125 Hz   | 1.41 | -7.3 dB  |
-| Peaking | 250 Hz   | 1.41 | -2.8 dB  |
-| Peaking | 500 Hz   | 1.41 | 4.3 dB   |
-| Peaking | 1000 Hz  | 1.41 | 5.6 dB   |
-| Peaking | 2000 Hz  | 1.41 | -2.3 dB  |
-| Peaking | 4000 Hz  | 1.41 | 4.3 dB   |
-| Peaking | 8000 Hz  | 1.41 | -0.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -28.9 dB |
+| Peaking | 31 Hz    | 1.41 | -4.5 dB  |
+| Peaking | 62 Hz    | 1.41 | -3.7 dB  |
+| Peaking | 125 Hz   | 1.41 | -4.7 dB  |
+| Peaking | 250 Hz   | 1.41 | -3.1 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.7 dB   |
+| Peaking | 1000 Hz  | 1.41 | 1.4 dB   |
+| Peaking | 2000 Hz  | 1.41 | 0.5 dB   |
+| Peaking | 4000 Hz  | 1.41 | 6.0 dB   |
+| Peaking | 8000 Hz  | 1.41 | 1.4 dB   |
+| Peaking | 16000 Hz | 1.41 | -26.0 dB |
 
 ### Graphs
 ![](./NiceHCK%20NX7%20Pro%20(blue).png)

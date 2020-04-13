@@ -2,38 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
-with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.1dB**.
+In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
-| Type    | Fc      |    Q | Gain     |
-|:--------|:--------|:-----|:---------|
-| Peaking | 40 Hz   | 0.32 | -6.7 dB  |
-| Peaking | 201 Hz  | 1.09 | -4.2 dB  |
-| Peaking | 3859 Hz | 0.96 | 7.4 dB   |
-| Peaking | 4825 Hz | 4.3  | -12.6 dB |
-| Peaking | 17 Hz   | 0.74 | -4.8 dB  |
-| Peaking | 916 Hz  | 2.02 | 5.0 dB   |
-| Peaking | 2270 Hz | 1.69 | -4.4 dB  |
-| Peaking | 2745 Hz | 3.18 | 2.4 dB   |
-| Peaking | 2820 Hz | 2.99 | 1.9 dB   |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 21 Hz    | 0.51 | -3.8 dB |
+| Peaking | 206 Hz   | 0.44 | -4.6 dB |
+| Peaking | 887 Hz   | 1.93 | 1.8 dB  |
+| Peaking | 3127 Hz  | 1.77 | 6.8 dB  |
+| Peaking | 6390 Hz  | 4.82 | 2.8 dB  |
+| Peaking | 1433 Hz  | 3.43 | -0.2 dB |
+| Peaking | 4033 Hz  | 5.3  | 1.9 dB  |
+| Peaking | 5008 Hz  | 3.94 | -3.3 dB |
+| Peaking | 5563 Hz  | 4.84 | 2.1 dB  |
+| Peaking | 19393 Hz | 1.33 | -4.7 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.7dB**
 (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -10.3 dB |
-| Peaking | 62 Hz    | 1.41 | -4.2 dB  |
-| Peaking | 125 Hz   | 1.41 | -4.9 dB  |
-| Peaking | 250 Hz   | 1.41 | -4.8 dB  |
-| Peaking | 500 Hz   | 1.41 | -0.3 dB  |
-| Peaking | 1000 Hz  | 1.41 | 4.4 dB   |
-| Peaking | 2000 Hz  | 1.41 | 0.0 dB   |
-| Peaking | 4000 Hz  | 1.41 | 2.6 dB   |
-| Peaking | 8000 Hz  | 1.41 | -0.0 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.1 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 31 Hz    | 1.41 | -4.2 dB |
+| Peaking | 62 Hz    | 1.41 | -1.5 dB |
+| Peaking | 125 Hz   | 1.41 | -3.4 dB |
+| Peaking | 250 Hz   | 1.41 | -4.1 dB |
+| Peaking | 500 Hz   | 1.41 | -1.6 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.9 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.1 dB |
+| Peaking | 16000 Hz | 1.41 | -0.7 dB |
 
 ### Graphs
 ![](./Jomo%20Audio%20Quatre%20(black).png)

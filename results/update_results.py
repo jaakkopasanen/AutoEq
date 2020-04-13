@@ -184,13 +184,14 @@ def main():
 
     if referenceaudioanalyzer:
         if onear:
-            print('\nProcessing Reference Audio Analyzer on-ear measurements...')
+            print('\nProcessing Reference Audio Analyzer HDM-X on-ear measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'onear', 'HDM-X'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'HDM-X'),
                 compensation=hdmx,
                 **onear_kwargs
             )
+            print('\nProcessing Reference Audio Analyzer HDM1 on-ear measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'onear', 'HDM1'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'HDM1'),
@@ -198,13 +199,14 @@ def main():
                 **onear_kwargs
             )
         if inear:
-            print('\nProcessing Reference Audio Analyzer in-ear measurements...')
+            print('\nProcessing Reference Audio Analyzer SIEC in-ear measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'inear', 'SIEC'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'SIEC'),
                 compensation=siec,
                 **inear_kwargs
             )
+            print('\nProcessing Reference Audio Analyzer SIEC CUSTOM in-ear measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'inear', 'SIEC CUSTOM'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'SIEC'),
@@ -212,15 +214,16 @@ def main():
                 **inear_kwargs
             )
         if earbud:
-            print('\nProcessing Reference Audio Analyzer earbud measurements...')
+            print('\nProcessing Reference Audio Analyzer HDM-X earbud measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'onear', 'HDM-X'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'earbud', 'HDM-X'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'HDM-X'),
                 compensation=hdmx,
                 **earbud_kwargs
             )
+            print('\nProcessing Reference Audio Analyzer SIEC earbud measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'inear', 'SIEC'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'data', 'earbud', 'SIEC'),
                 output_dir=os.path.join(ROOT_DIR, 'results', 'referenceaudioanalyzer', 'SIEC'),
                 compensation=siec,
                 **earbud_kwargs

@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
 When using independent subset of filters, apply preamp of **-6.9dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 70 Hz    | 0.3  | -4.4 dB |
-| Peaking | 4463 Hz  | 2.05 | 5.6 dB  |
-| Peaking | 5822 Hz  | 3.52 | 5.6 dB  |
-| Peaking | 7329 Hz  | 2.55 | -5.2 dB |
-| Peaking | 19315 Hz | 1.11 | -9.7 dB |
-| Peaking | 689 Hz   | 1.36 | 1.9 dB  |
-| Peaking | 1890 Hz  | 1.41 | -3.3 dB |
-| Peaking | 2821 Hz  | 2.96 | 2.8 dB  |
-| Peaking | 15760 Hz | 1.32 | 2.1 dB  |
-| Peaking | 17707 Hz | 2.82 | -3.3 dB |
+| Peaking | 65 Hz    | 0.27 | -4.3 dB |
+| Peaking | 4316 Hz  | 2.24 | 4.4 dB  |
+| Peaking | 5761 Hz  | 2.47 | 6.7 dB  |
+| Peaking | 7267 Hz  | 2.48 | -6.0 dB |
+| Peaking | 19163 Hz | 1.18 | -9.4 dB |
+| Peaking | 685 Hz   | 1.38 | 1.9 dB  |
+| Peaking | 1886 Hz  | 1.43 | -3.3 dB |
+| Peaking | 2815 Hz  | 2.86 | 2.6 dB  |
+| Peaking | 15851 Hz | 1.24 | 2.1 dB  |
+| Peaking | 17357 Hz | 2.74 | -3.2 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.8dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.2 dB  |
 | Peaking | 1000 Hz  | 1.41 | 0.7 dB  |
 | Peaking | 2000 Hz  | 1.41 | -3.7 dB |
-| Peaking | 4000 Hz  | 1.41 | 7.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.3 dB |
-| Peaking | 16000 Hz | 1.41 | -2.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.2 dB |
+| Peaking | 16000 Hz | 1.41 | -2.4 dB |
 
 ### Graphs
 ![](./Oriveti%20OH300.png)

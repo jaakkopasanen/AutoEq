@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 249 Hz   | 0.55 | -3.3 dB  |
-| Peaking | 3256 Hz  | 0.36 | 12.0 dB  |
-| Peaking | 6102 Hz  | 1.09 | -11.8 dB |
-| Peaking | 11024 Hz | 1.32 | 17.8 dB  |
-| Peaking | 20048 Hz | 0.14 | -33.9 dB |
-| Peaking | 6903 Hz  | 4.21 | 2.4 dB   |
-| Peaking | 7956 Hz  | 3.79 | -5.4 dB  |
-| Peaking | 9093 Hz  | 4.99 | 4.4 dB   |
-| Peaking | 15448 Hz | 5.54 | -3.9 dB  |
-| Peaking | 22050 Hz | 1.83 | -2.0 dB  |
+| Peaking | 251 Hz   | 0.57 | -3.3 dB  |
+| Peaking | 3317 Hz  | 0.35 | 11.7 dB  |
+| Peaking | 6074 Hz  | 1.08 | -12.0 dB |
+| Peaking | 11000 Hz | 1.36 | 16.9 dB  |
+| Peaking | 19991 Hz | 0.18 | -36.3 dB |
+| Peaking | 6875 Hz  | 4.36 | 2.5 dB   |
+| Peaking | 7894 Hz  | 3.51 | -5.4 dB  |
+| Peaking | 9032 Hz  | 4.96 | 4.5 dB   |
+| Peaking | 15237 Hz | 5.29 | -3.7 dB  |
+| Peaking | 22050 Hz | 1.75 | -1.9 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.4 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.7 dB   |
 | Peaking | 2000 Hz  | 1.41 | 7.8 dB   |
-| Peaking | 4000 Hz  | 1.41 | -2.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -29.2 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -29.6 dB |
 
 ### Graphs
 ![](./RHA%20CL750.png)

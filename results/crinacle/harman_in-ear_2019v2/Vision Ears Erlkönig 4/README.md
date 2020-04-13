@@ -1,4 +1,4 @@
-# Vision Ears Erlkönig 4
+# Vision Ears ErlkÃ¶nig 4
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -8,25 +8,25 @@ When using independent subset of filters, apply preamp of **-5.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 15 Hz    | 0.42 | 5.5 dB  |
-| Peaking | 205 Hz   | 0.56 | -4.6 dB |
-| Peaking | 3755 Hz  | 0.55 | 2.7 dB  |
-| Peaking | 6249 Hz  | 2    | 4.5 dB  |
-| Peaking | 7702 Hz  | 1.37 | -2.9 dB |
-| Peaking | 430 Hz   | 2.2  | -0.5 dB |
-| Peaking | 931 Hz   | 1.8  | 1.2 dB  |
-| Peaking | 1324 Hz  | 3    | -1.0 dB |
-| Peaking | 9593 Hz  | 2.51 | 0.1 dB  |
-| Peaking | 16772 Hz | 4.31 | -3.2 dB |
+| Peaking | 15 Hz    | 0.42 | 5.6 dB  |
+| Peaking | 205 Hz   | 0.58 | -4.6 dB |
+| Peaking | 3298 Hz  | 0.79 | 2.7 dB  |
+| Peaking | 5822 Hz  | 2.87 | 3.3 dB  |
+| Peaking | 16689 Hz | 3.77 | -2.9 dB |
+| Peaking | 843 Hz   | 0.71 | -0.9 dB |
+| Peaking | 869 Hz   | 1.77 | 2.0 dB  |
+| Peaking | 4394 Hz  | 3.83 | 0.8 dB  |
+| Peaking | 6755 Hz  | 6.11 | 2.5 dB  |
+| Peaking | 7307 Hz  | 1.77 | -1.6 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 4.3 dB  |
-| Peaking | 62 Hz    | 1.41 | 0.3 dB  |
+| Peaking | 31 Hz    | 1.41 | 4.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.1 dB  |
 | Peaking | 125 Hz   | 1.41 | -2.9 dB |
 | Peaking | 250 Hz   | 1.41 | -4.0 dB |
 | Peaking | 500 Hz   | 1.41 | -1.5 dB |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 0.6 dB  |
 | Peaking | 4000 Hz  | 1.41 | 4.0 dB  |
 | Peaking | 8000 Hz  | 1.41 | 0.9 dB  |
-| Peaking | 16000 Hz | 1.41 | -1.3 dB |
+| Peaking | 16000 Hz | 1.41 | -1.4 dB |
 
 ### Graphs
 ![](./Vision%20Ears%20Erlk%C3%B6nig%204.png)

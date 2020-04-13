@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.9dB**.
+When using independent subset of filters, apply preamp of **-6.0dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 47 Hz    | 0.6  | -2.3 dB |
-| Peaking | 159 Hz   | 0.51 | -5.9 dB |
-| Peaking | 1093 Hz  | 0.89 | 5.7 dB  |
-| Peaking | 2282 Hz  | 2.76 | 3.2 dB  |
-| Peaking | 19770 Hz | 0.38 | -9.6 dB |
-| Peaking | 5077 Hz  | 2.93 | -5.4 dB |
-| Peaking | 6457 Hz  | 1.51 | 3.0 dB  |
-| Peaking | 8462 Hz  | 5.74 | -4.2 dB |
-| Peaking | 12704 Hz | 1.15 | 3.1 dB  |
-| Peaking | 14000 Hz | 3.57 | -6.3 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 43 Hz    | 0.77 | -2.0 dB  |
+| Peaking | 150 Hz   | 0.49 | -6.2 dB  |
+| Peaking | 1089 Hz  | 0.9  | 5.7 dB   |
+| Peaking | 2273 Hz  | 2.8  | 3.2 dB   |
+| Peaking | 20123 Hz | 0.37 | -11.5 dB |
+| Peaking | 5138 Hz  | 3.21 | -4.5 dB  |
+| Peaking | 6126 Hz  | 3.08 | 2.3 dB   |
+| Peaking | 12163 Hz | 2.4  | 2.9 dB   |
+| Peaking | 14083 Hz | 4.61 | -4.8 dB  |
+| Peaking | 22050 Hz | 1.8  | -1.8 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.8dB**
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | 4.7 dB  |
 | Peaking | 2000 Hz  | 1.41 | 4.8 dB  |
 | Peaking | 4000 Hz  | 1.41 | -1.8 dB |
-| Peaking | 8000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -7.9 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 16000 Hz | 1.41 | -7.6 dB |
 
 ### Graphs
 ![](./Periodic%20Audio%20Ti.png)
