@@ -167,8 +167,8 @@ def main():
     axs[1].legend(inear_labels)
     axs[0].set_title('On-ear')
     axs[1].set_title('In-ear')
-    axs[0].set_ylim([0, 15])
-    axs[1].set_ylim([0, 15])
+    axs[0].set_ylim([0, 8])
+    axs[1].set_ylim([0, 8])
     fig.savefig(os.path.join(DIR_PATH, 'STDs.png'))
     plt.close(fig)
 
