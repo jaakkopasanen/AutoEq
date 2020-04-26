@@ -41,8 +41,8 @@ Audeze LCD-X sn7456406	Audeze LCD-X (serial number 7456406)	onear
 Audeze LCD-XC sample 1	Audeze LCD-XC (sample 1)	onear
 Audeze LCD-XC sample 2	Audeze LCD-XC (sample 2)	onear
 Audeze Sine	Audeze SINE	onear
-Audio-Technica ATH-M50 B2012	ignore	onear
 Audio-Technica ATH-M50 B2012		ignore
+Audio-Technica ATH-M50 B2012	ignore	onear
 Audio-Technica ATH-M50X	Audio-Technica ATH-M50x	onear
 Audio-Technica ATH-MSR7NC ANC Active	Audio-Technica ATH-MSR7NC (ANC on)	onear
 Audio-Technica ATH-MSR7NC Passive	Audio-Technica ATH-MSR7NC (passive)	onear
@@ -116,7 +116,9 @@ Fostex T50RP 2011 B	Fostex T50RP (sample 2)	onear
 Fostex TH-X00 sample 1	Fostex TH-X00 Mahogany (sample 1)	onear
 Fostex TH-X00 sn1927	Fostex TH-X00 Mahogany (serial number 1927)	onear
 Fostex TH900mk2 TH610Pads	Fostex TH900mk2 (TH610 earpads)	onear
+Grado HF-1 Prototype	Grado HF1 Prototype	onear
 Grado HF-1 Serial 69	Grado HF1	onear
+Grado HF-2	Grado HF2	onear
 Grado RS1e Bowl Pads	Grado RS1e (bowl earpads)	onear
 Grado RS1e Flat Pads	Grado RS1e (flat earpads)	onear
 Grado RS1e S Cushions	Grado RS1e (S earpads)	onear
@@ -236,14 +238,14 @@ Torque t096z Warm Tilt Filter	Torque t096z (warm tilt filter)	inear
 Torque t103z Clear	Torque t103z (yellow filter)	inear
 Torque t103z Deep	Torque t103z (black filter)	inear
 Torque t103z Reference	Torque t103z (red filter)	inear
-Torque t402v OnEar Black	Torque t402v (black on-ear earpads)	onear
-Torque t402v OnEar Blue	Torque t402v (blue on-ear earpads)	onear
-Torque t402v OnEar Red	Torque t402v (red on-ear earpads)	onear
-Torque t402v OnEar Yellow	Torque t402v (yellow on-ear earpads)	onear
-Torque t402v OverEar Black	Torque t402v (black over-ear earpads)	onear
-Torque t402v OverEar Blue	Torque t402v (blue over-ear earpads)	onear
-Torque t402v OverEar Red	Torque t402v (red over-ear earpads)	onear
-Torque t402v OverEar Yellow	Torque t402v (yellow over-ear earpads)	onear
+Torque t402v OnEar Black	Torque t402v (on-ear earpads, black vent)	onear
+Torque t402v OnEar Blue	Torque t402v (on-ear earpads, blue vent)	onear
+Torque t402v OnEar Red	Torque t402v (on-ear earpads, red vent)	onear
+Torque t402v OnEar Yellow	Torque t402v (on-ear earpads, yellow vent)	onear
+Torque t402v OverEar Black	Torque t402v (around-ear earpads, black vent)	onear
+Torque t402v OverEar Blue	Torque t402v (around-ear earpads, blue vent)	onear
+Torque t402v OverEar Red	Torque t402v (around-ear earpads, red vent)	onear
+Torque t402v OverEar Yellow	Torque t402v (around-ear earpads, yellow vent)	onear
 Ultrasone HFi-780	Ultrasone HFI-780	onear
 V-MODA Crossfade Wireless Bluetooth	V-MODA Crossfade Wireless (wireless)	onear
 V-MODA Crossfade Wireless Wired Mode	V-MODA Crossfade Wireless (wired)	onear

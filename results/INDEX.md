@@ -1638,9 +1638,9 @@ from the same source.
 - [Grado GW100 (wireless)](./referenceaudioanalyzer/HDM-X/Grado%20GW100%20(wireless)) by Reference Audio Analyzer
 - [Grado GW100](./oratory1990/harman_over-ear_2018/Grado%20GW100) by oratory1990
 - [Grado GW100](./rtings/avg/Grado%20GW100) by Rtings
-- [Grado HF-1 Prototype](./innerfidelity/sbaf-serious/Grado%20HF-1%20Prototype) by Innerfidelity
-- [Grado HF-2](./innerfidelity/sbaf-serious/Grado%20HF-2) by Innerfidelity
+- [Grado HF1 Prototype](./innerfidelity/sbaf-serious/Grado%20HF1%20Prototype) by Innerfidelity
 - [Grado HF1](./innerfidelity/sbaf-serious/Grado%20HF1) by Innerfidelity
+- [Grado HF2](./innerfidelity/sbaf-serious/Grado%20HF2) by Innerfidelity
 - [Grado iGE](./crinacle/harman_in-ear_2019v2/Grado%20iGE) by Crinacle
 - [Grado iGe](./referenceaudioanalyzer/SIEC/Grado%20iGe) by Reference Audio Analyzer
 - [Grado iGi](./headphonecom/sbaf-serious/Grado%20iGi) by Headphone.com
@@ -3738,14 +3738,14 @@ from the same source.
 - [Torque t103z (black filter)](./innerfidelity/sbaf-serious/Torque%20t103z%20(black%20filter)) by Innerfidelity
 - [Torque t103z (red filter)](./innerfidelity/sbaf-serious/Torque%20t103z%20(red%20filter)) by Innerfidelity
 - [Torque t103z (yellow filter)](./innerfidelity/sbaf-serious/Torque%20t103z%20(yellow%20filter)) by Innerfidelity
-- [Torque t402v (black on-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(black%20on-ear%20earpads)) by Innerfidelity
-- [Torque t402v (black over-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(black%20over-ear%20earpads)) by Innerfidelity
-- [Torque t402v (blue on-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(blue%20on-ear%20earpads)) by Innerfidelity
-- [Torque t402v (blue over-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(blue%20over-ear%20earpads)) by Innerfidelity
-- [Torque t402v (red on-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(red%20on-ear%20earpads)) by Innerfidelity
-- [Torque t402v (red over-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(red%20over-ear%20earpads)) by Innerfidelity
-- [Torque t402v (yellow on-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(yellow%20on-ear%20earpads)) by Innerfidelity
-- [Torque t402v (yellow over-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(yellow%20over-ear%20earpads)) by Innerfidelity
+- [Torque t402v (around-ear earpads, black vent)](./innerfidelity/sbaf-serious/Torque%20t402v%20(around-ear%20earpads,%20black%20vent)) by Innerfidelity
+- [Torque t402v (around-ear earpads, blue vent)](./innerfidelity/sbaf-serious/Torque%20t402v%20(around-ear%20earpads,%20blue%20vent)) by Innerfidelity
+- [Torque t402v (around-ear earpads, red vent)](./innerfidelity/sbaf-serious/Torque%20t402v%20(around-ear%20earpads,%20red%20vent)) by Innerfidelity
+- [Torque t402v (around-ear earpads, yellow vent)](./innerfidelity/sbaf-serious/Torque%20t402v%20(around-ear%20earpads,%20yellow%20vent)) by Innerfidelity
+- [Torque t402v (on-ear earpads, black vent)](./innerfidelity/sbaf-serious/Torque%20t402v%20(on-ear%20earpads,%20black%20vent)) by Innerfidelity
+- [Torque t402v (on-ear earpads, blue vent)](./innerfidelity/sbaf-serious/Torque%20t402v%20(on-ear%20earpads,%20blue%20vent)) by Innerfidelity
+- [Torque t402v (on-ear earpads, red vent)](./innerfidelity/sbaf-serious/Torque%20t402v%20(on-ear%20earpads,%20red%20vent)) by Innerfidelity
+- [Torque t402v (on-ear earpads, yellow vent)](./innerfidelity/sbaf-serious/Torque%20t402v%20(on-ear%20earpads,%20yellow%20vent)) by Innerfidelity
 - [Toshiba HR-810 Low Gain](./innerfidelity/sbaf-serious/Toshiba%20HR-810%20Low%20Gain) by Innerfidelity
 - [TOZO T10](./rtings/avg/TOZO%20T10) by Rtings
 - [TOZO T6](./rtings/avg/TOZO%20T6) by Rtings
