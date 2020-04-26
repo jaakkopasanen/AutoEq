@@ -6,6 +6,7 @@ import requests
 import json
 import numpy as np
 from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_index import NameIndex
 from measurements.crawler import Crawler
@@ -50,7 +51,7 @@ class RtingsCrawler(Crawler):
         frequency = data[:, header.index('Frequency')]
         target = data[:, header.index('Target Response')]
         left_col = header.index('Left')
-        right_col = header.index('Left')
+        right_col = header.index('Right')
 
         for row in data:
             if row[left_col] == np.array(None):
@@ -69,13 +70,46 @@ class RtingsCrawler(Crawler):
         return fr, target
 
     def process(self, item, url):
-        if not Crawler.download(url, item.true_name, os.path.join(DIR_PATH, 'json')):
-            return
-        with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}.json'), 'r', encoding='utf-8') as fh:
-            json_data = json.load(fh)
+        json_file = Crawler.download(url, item.true_name, os.path.join(DIR_PATH, 'json'))
+        if json_file is not None:
+            with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}.json'), 'r', encoding='utf-8') as fh:
+                json_data = json.load(fh)
+            fr, target = RtingsCrawler.parse_json(json_data)
+            fr.name = item.true_name
+        else:
+            # No frequency response available, download bass, mid and treble
+            # Bass
+            Crawler.download(
+                url.replace('frequency-response-14.json', 'bass.json'),
+                f'{item.true_name}-bass', os.path.join(DIR_PATH, 'json')
+            )
+            with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}-bass.json'), 'r', encoding='utf-8') as fh:
+                bass_fr, bass_target = self.parse_json(json.load(fh))
+            # Mid
+            Crawler.download(
+                url.replace('frequency-response-14.json', 'mid.json'),
+                f'{item.true_name}-mid', os.path.join(DIR_PATH, 'json')
+            )
+            with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}-mid.json'), 'r', encoding='utf-8') as fh:
+                mid_fr, mid_target = self.parse_json(json.load(fh))
+            # Treble
+            Crawler.download(
+                url.replace('frequency-response-14.json', 'treble.json'),
+                f'{item.true_name}-treble', os.path.join(DIR_PATH, 'json')
+            )
+            with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}-treble.json'), 'r', encoding='utf-8') as fh:
+                treble_fr, treble_target = self.parse_json(json.load(fh))
+            fr = FrequencyResponse(
+                name=item.true_name,
+                frequency=np.concatenate([bass_fr.frequency, mid_fr.frequency, treble_fr.frequency]),
+                raw=np.concatenate([bass_fr.raw, mid_fr.raw, treble_fr.raw])
+            )
+            target = FrequencyResponse(
+                name=item.true_name,
+                frequency=np.concatenate([bass_target.frequency, mid_target.frequency, treble_target.frequency]),
+                raw=np.concatenate([bass_target.raw, mid_target.raw, treble_target.raw])
+            )
 
-        fr, target = RtingsCrawler.parse_json(json_data)
-        fr.name = item.true_name
         fr.interpolate()
         if np.std(fr.raw) == 0:
             # Frequency response data has non-zero target response, use that
@@ -96,7 +130,8 @@ class RtingsCrawler(Crawler):
         dir_path = os.path.join(DIR_PATH, 'inspection')
         os.makedirs(dir_path, exist_ok=True)
         file_path = os.path.join(dir_path, f'{fr.name}.png')
-        fr.plot_graph(file_path=file_path, show=False)
+        fig, ax = fr.plot_graph(file_path=file_path, show=False)
+        plt.close(fig)
 
         # Write to file
         dir_path = os.path.join(DIR_PATH, 'data', item.form, fr.name)

@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-6.7dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 27 Hz   | 0.36 | 6.4 dB  |
-| Peaking | 155 Hz  | 0.43 | -2.1 dB |
-| Peaking | 3408 Hz | 0.37 | -1.9 dB |
-| Peaking | 4587 Hz | 1.66 | 3.6 dB  |
-| Peaking | 6017 Hz | 2.2  | 3.8 dB  |
-| Peaking | 1012 Hz | 3.84 | 0.7 dB  |
-| Peaking | 2066 Hz | 2.08 | -1.4 dB |
-| Peaking | 2455 Hz | 2.19 | 0.7 dB  |
-| Peaking | 2696 Hz | 2.3  | 1.0 dB  |
-| Peaking | 3516 Hz | 3.79 | -0.7 dB |
+| Peaking | 26 Hz   | 0.43 | 6.2 dB  |
+| Peaking | 166 Hz  | 0.69 | -1.9 dB |
+| Peaking | 505 Hz  | 1.67 | -0.9 dB |
+| Peaking | 1852 Hz | 1.56 | -2.0 dB |
+| Peaking | 5399 Hz | 1.97 | 4.5 dB  |
+| Peaking | 2870 Hz | 2.18 | 0.5 dB  |
+| Peaking | 3451 Hz | 4.37 | -0.8 dB |
+| Peaking | 4534 Hz | 4.03 | 1.4 dB  |
+| Peaking | 6433 Hz | 4.12 | 2.9 dB  |
+| Peaking | 6551 Hz | 1.26 | -1.9 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 6.7 dB  |
-| Peaking | 62 Hz    | 1.41 | 2.3 dB  |
+| Peaking | 31 Hz    | 1.41 | 6.9 dB  |
+| Peaking | 63 Hz    | 1.41 | 2.1 dB  |
 | Peaking | 125 Hz   | 1.41 | -0.9 dB |
 | Peaking | 250 Hz   | 1.41 | -1.1 dB |
 | Peaking | 500 Hz   | 1.41 | -1.0 dB |
-| Peaking | 1000 Hz  | 1.41 | 0.0 dB  |
-| Peaking | 2000 Hz  | 1.41 | -2.6 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | -2.5 dB |
 | Peaking | 4000 Hz  | 1.41 | 2.9 dB  |
 | Peaking | 8000 Hz  | 1.41 | 1.1 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.4 dB |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
 ![](./Sennheiser%20HD%20660%20S.png)

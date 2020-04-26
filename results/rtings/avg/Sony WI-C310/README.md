@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-4.4dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 110 Hz   | 0.67 | -3.0 dB |
-| Peaking | 727 Hz   | 1.15 | 4.0 dB  |
-| Peaking | 4679 Hz  | 2.53 | -5.0 dB |
-| Peaking | 17020 Hz | 2.28 | -4.7 dB |
-| Peaking | 19823 Hz | 1.46 | -3.3 dB |
-| Peaking | 2126 Hz  | 3.04 | -1.4 dB |
-| Peaking | 5610 Hz  | 3.9  | -2.6 dB |
-| Peaking | 6561 Hz  | 2.48 | 3.0 dB  |
-| Peaking | 10449 Hz | 4.58 | -7.3 dB |
-| Peaking | 11430 Hz | 1.19 | 1.7 dB  |
+| Peaking | 110 Hz   | 0.67 | -3.1 dB |
+| Peaking | 727 Hz   | 1.13 | 4.0 dB  |
+| Peaking | 4644 Hz  | 2.44 | -4.9 dB |
+| Peaking | 16929 Hz | 2.54 | -4.0 dB |
+| Peaking | 18585 Hz | 1.18 | -2.1 dB |
+| Peaking | 2119 Hz  | 2.95 | -1.3 dB |
+| Peaking | 5553 Hz  | 4.12 | -2.8 dB |
+| Peaking | 6515 Hz  | 2.33 | 3.1 dB  |
+| Peaking | 10406 Hz | 4.3  | -6.8 dB |
+| Peaking | 11452 Hz | 1.25 | 1.7 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.8dB**
@@ -26,15 +26,15 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | 0.1 dB  |
-| Peaking | 62 Hz    | 1.41 | -1.8 dB |
+| Peaking | 63 Hz    | 1.41 | -1.8 dB |
 | Peaking | 125 Hz   | 1.41 | -2.8 dB |
 | Peaking | 250 Hz   | 1.41 | -0.9 dB |
 | Peaking | 500 Hz   | 1.41 | 2.3 dB  |
 | Peaking | 1000 Hz  | 1.41 | 3.1 dB  |
-| Peaking | 2000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 4000 Hz  | 1.41 | -3.3 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 4000 Hz  | 1.41 | -3.4 dB |
 | Peaking | 8000 Hz  | 1.41 | 0.2 dB  |
-| Peaking | 16000 Hz | 1.41 | -3.2 dB |
+| Peaking | 16000 Hz | 1.41 | -3.3 dB |
 
 ### Graphs
 ![](./Sony%20WI-C310.png)

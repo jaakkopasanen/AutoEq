@@ -8,16 +8,16 @@ When using independent subset of filters, apply preamp of **-4.8dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 36 Hz    | 0.31 | -2.9 dB |
-| Peaking | 169 Hz   | 0.38 | -5.6 dB |
-| Peaking | 812 Hz   | 0.81 | 5.5 dB  |
-| Peaking | 4967 Hz  | 1.08 | 3.9 dB  |
-| Peaking | 5152 Hz  | 3.39 | -7.2 dB |
-| Peaking | 5266 Hz  | 2.41 | -1.0 dB |
-| Peaking | 6737 Hz  | 2.75 | 3.1 dB  |
-| Peaking | 7881 Hz  | 2.77 | -1.8 dB |
-| Peaking | 13482 Hz | 0.4  | -0.5 dB |
-| Peaking | 21139 Hz | 1.32 | -2.7 dB |
+| Peaking | 46 Hz    | 0.3  | -3.4 dB |
+| Peaking | 185 Hz   | 0.4  | -5.0 dB |
+| Peaking | 814 Hz   | 0.79 | 5.5 dB  |
+| Peaking | 5009 Hz  | 1    | 3.2 dB  |
+| Peaking | 5101 Hz  | 3.49 | -6.3 dB |
+| Peaking | 5744 Hz  | 6.06 | -1.7 dB |
+| Peaking | 6607 Hz  | 3.89 | 3.6 dB  |
+| Peaking | 7756 Hz  | 2.08 | -1.8 dB |
+| Peaking | 15913 Hz | 4.04 | -1.4 dB |
+| Peaking | 19984 Hz | 2.58 | -3.5 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.1dB**
@@ -26,15 +26,15 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | -3.7 dB |
-| Peaking | 62 Hz    | 1.41 | -4.1 dB |
-| Peaking | 125 Hz   | 1.41 | -5.8 dB |
+| Peaking | 63 Hz    | 1.41 | -4.1 dB |
+| Peaking | 125 Hz   | 1.41 | -5.9 dB |
 | Peaking | 250 Hz   | 1.41 | -4.3 dB |
-| Peaking | 500 Hz   | 1.41 | 0.7 dB  |
+| Peaking | 500 Hz   | 1.41 | 0.8 dB  |
 | Peaking | 1000 Hz  | 1.41 | 4.4 dB  |
-| Peaking | 2000 Hz  | 1.41 | 1.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 0.2 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -1.0 dB |
+| Peaking | 2000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 0.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.9 dB |
 
 ### Graphs
 ![](./Panasonic%20RP-HJE120.png)
