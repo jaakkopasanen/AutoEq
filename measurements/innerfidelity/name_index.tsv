@@ -130,6 +130,8 @@ Grado SR225i Small Flat Pads	Grado SR225i (small flat earpads)	onear
 Grado SR225i TTVJ Flat Pads	Grado SR225i (TTVJ flat earpads)	onear
 HIFIMAN HE-400 2014	HIFIMAN HE-400	onear
 Jabra Move Wired	Jabra Move (wired)	onear
+JAYS a Jays 5	JAYS a-JAYS FIVE	inear
+JAYS q-JAY	JAYS q-JAYS	inear
 JBL Everest Elite 700 Wired Active	JBL Everest Elite 700 (wired, active)	onear
 JBL Everest Elite 700 Wired Passive	JBL Everest Elite 700 (wired, passive)	onear
 JBL Everest Elite 700 Wireless Active	JBL Everest Elite 700 (wireless)	onear
@@ -226,22 +228,22 @@ Stax SR-Alpha Pro Excellent		ignore
 Stax SR-Alpha Pro wYax1 Pads		ignore
 Thinksound TS01	Thinksound ts01	inear
 Torque t096z Bass Boost Filter	Torque t096z (bass boost filter)	inear
-Torque t096z Flat Filter	Torque t096z (flat filter)	inear
-Torque t096z Midcentric Filter	Torque t096z (mic centric filter)	inear
+Torque t096z Flat Filter	Torque t096z (neutral filter)	inear
+Torque t096z Midcentric Filter	Torque t096z (mid centric filter)	inear
 Torque t096z Treble Boost Filter	Torque t096z (treble boost filter)	inear
 Torque t096z Ushaped Filter	Torque t096z (U-shaped filter)	inear
 Torque t096z Warm Tilt Filter	Torque t096z (warm tilt filter)	inear
 Torque t103z Clear	Torque t103z (yellow filter)	inear
 Torque t103z Deep	Torque t103z (black filter)	inear
 Torque t103z Reference	Torque t103z (red filter)	inear
-Torque t402v OnEar Black	Torque t402v (on-ear earpads, black filter)	onear
-Torque t402v OnEar Blue	Torque t402v (on-ear earpads, blue filter)	onear
-Torque t402v OnEar Red	Torque t402v (on-ear earpads, red filter)	onear
-Torque t402v OnEar Yellow	Torque t402v (on-ear earpads, yellow filter)	onear
-Torque t402v OverEar Black	Torque t402v (over-ear earpads, black filter)	onear
-Torque t402v OverEar Blue	Torque t402v OverEar (over-ear earpads, blue filter)	onear
-Torque t402v OverEar Red	Torque t402v OverEar (over-ear earpads, red filter)	onear
-Torque t402v OverEar Yellow	Torque t402v OverEar (over-ear earpads, yellow filter)	onear
+Torque t402v OnEar Black	Torque t402v (black on-ear earpads)	onear
+Torque t402v OnEar Blue	Torque t402v (blue on-ear earpads)	onear
+Torque t402v OnEar Red	Torque t402v (red on-ear earpads)	onear
+Torque t402v OnEar Yellow	Torque t402v (yellow on-ear earpads)	onear
+Torque t402v OverEar Black	Torque t402v (black over-ear earpads)	onear
+Torque t402v OverEar Blue	Torque t402v (blue over-ear earpads)	onear
+Torque t402v OverEar Red	Torque t402v (red over-ear earpads)	onear
+Torque t402v OverEar Yellow	Torque t402v (yellow over-ear earpads)	onear
 Ultrasone HFi-780	Ultrasone HFI-780	onear
 V-MODA Crossfade Wireless Bluetooth	V-MODA Crossfade Wireless (wireless)	onear
 V-MODA Crossfade Wireless Wired Mode	V-MODA Crossfade Wireless (wired)	onear

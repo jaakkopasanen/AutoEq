@@ -38,7 +38,7 @@ def main(crinacle=False, oratory1990=False, rtings=False, referenceaudioanalyzer
         # oratory1990 and Reference Audio Analyzer crawlers require Selenium Web Driver
         opts = Options()
         opts.add_argument('--headless')
-        driver = webdriver.Chrome(options=opts)
+        driver = webdriver.Chrome(os.path.join(DIR_PATH, 'chromedriver'), options=opts)
     else:
         driver = None
 

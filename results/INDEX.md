@@ -268,7 +268,6 @@ from the same source.
 - [AKG N60 NC Wireless](./oratory1990/harman_over-ear_2018/AKG%20N60%20NC%20Wireless) by oratory1990
 - [AKG N60 NC Wireless](./rtings/avg/AKG%20N60%20NC%20Wireless) by Rtings
 - [AKG N700NC](./rtings/avg/AKG%20N700NC) by Rtings
-- [AKG N90Q Nominal](./innerfidelity/sbaf-serious/AKG%20N90Q%20Nominal) by Innerfidelity
 - [AKG N90Q](./innerfidelity/sbaf-serious/AKG%20N90Q) by Innerfidelity
 - [AKG Q350 Quincy Jones](./headphonecom/sbaf-serious/AKG%20Q350%20Quincy%20Jones) by Headphone.com
 - [AKG Q350 Quincy Jones](./innerfidelity/sbaf-serious/AKG%20Q350%20Quincy%20Jones) by Innerfidelity
@@ -1062,7 +1061,6 @@ from the same source.
 - [CyberHome KUBT 803](./referenceaudioanalyzer/HDM-X/CyberHome%20KUBT%20803) by Reference Audio Analyzer
 - [Cyclone PR2](./referenceaudioanalyzer/SIEC/Cyclone%20PR2) by Reference Audio Analyzer
 - [Cypher Labs Astru IEM (bass boost filter)](./innerfidelity/sbaf-serious/Cypher%20Labs%20Astru%20IEM%20(bass%20boost%20filter)) by Innerfidelity
-- [Cypher Labs Astru IEM Bass Boo](./innerfidelity/sbaf-serious/Cypher%20Labs%20Astru%20IEM%20Bass%20Boo) by Innerfidelity
 - [Cypher Labs Astru IEM](./innerfidelity/sbaf-serious/Cypher%20Labs%20Astru%20IEM) by Innerfidelity
 - [Daiso $2 earphones](./crinacle/harman_in-ear_2019v2/Daiso%20$2%20earphones) by Crinacle
 - [Dan Clark Audio Aeon 2 Closed](./oratory1990/harman_over-ear_2018/Dan%20Clark%20Audio%20Aeon%202%20Closed) by oratory1990
@@ -1641,7 +1639,6 @@ from the same source.
 - [Grado GW100](./oratory1990/harman_over-ear_2018/Grado%20GW100) by oratory1990
 - [Grado GW100](./rtings/avg/Grado%20GW100) by Rtings
 - [Grado HF-1 Prototype](./innerfidelity/sbaf-serious/Grado%20HF-1%20Prototype) by Innerfidelity
-- [Grado HF-1 Serial 69](./innerfidelity/sbaf-serious/Grado%20HF-1%20Serial%2069) by Innerfidelity
 - [Grado HF-2](./innerfidelity/sbaf-serious/Grado%20HF-2) by Innerfidelity
 - [Grado HF1](./innerfidelity/sbaf-serious/Grado%20HF1) by Innerfidelity
 - [Grado iGE](./crinacle/harman_in-ear_2019v2/Grado%20iGE) by Crinacle
@@ -1925,18 +1922,18 @@ from the same source.
 - [Jaybird X2](./rtings/avg/Jaybird%20X2) by Rtings
 - [Jaybird X3](./rtings/avg/Jaybird%20X3) by Rtings
 - [Jaybird X4](./rtings/avg/Jaybird%20X4) by Rtings
-- [JAYS A Jays 5](./innerfidelity/sbaf-serious/JAYS%20A%20Jays%205) by Innerfidelity
-- [JAYS d-Jays](./headphonecom/sbaf-serious/JAYS%20d-Jays) by Headphone.com
-- [JAYS d-Jays](./referenceaudioanalyzer/SIEC/JAYS%20d-Jays) by Reference Audio Analyzer
-- [JAYS j-Jays](./headphonecom/sbaf-serious/JAYS%20j-Jays) by Headphone.com
-- [JAYS q-JAY](./innerfidelity/sbaf-serious/JAYS%20q-JAY) by Innerfidelity
-- [JAYS q-JAYS v2](./referenceaudioanalyzer/SIEC/JAYS%20q-JAYS%20v2) by Reference Audio Analyzer
-- [JAYS q-Jays](./headphonecom/sbaf-serious/JAYS%20q-Jays) by Headphone.com
-- [JAYS s-Jays](./referenceaudioanalyzer/SIEC/JAYS%20s-Jays) by Reference Audio Analyzer
+- [JAYS a-JAYS FIVE](./innerfidelity/sbaf-serious/JAYS%20a-JAYS%20FIVE) by Innerfidelity
+- [JAYS d-JAYS](./headphonecom/sbaf-serious/JAYS%20d-JAYS) by Headphone.com
+- [JAYS d-JAYS](./referenceaudioanalyzer/SIEC/JAYS%20d-JAYS) by Reference Audio Analyzer
+- [JAYS j-JAYS](./headphonecom/sbaf-serious/JAYS%20j-JAYS) by Headphone.com
+- [JAYS q-JAYS v2.0](./referenceaudioanalyzer/SIEC/JAYS%20q-JAYS%20v2.0) by Reference Audio Analyzer
+- [JAYS q-JAYS](./headphonecom/sbaf-serious/JAYS%20q-JAYS) by Headphone.com
+- [JAYS q-JAYS](./innerfidelity/sbaf-serious/JAYS%20q-JAYS) by Innerfidelity
+- [JAYS s-JAYS](./referenceaudioanalyzer/SIEC/JAYS%20s-JAYS) by Reference Audio Analyzer
 - [JAYS u-JAYS](./innerfidelity/sbaf-serious/JAYS%20u-JAYS) by Innerfidelity
-- [JAYS v-Jays (large)](./referenceaudioanalyzer/HDM-X/JAYS%20v-Jays%20(large)) by Reference Audio Analyzer
-- [JAYS v-Jays (medium)](./referenceaudioanalyzer/HDM-X/JAYS%20v-Jays%20(medium)) by Reference Audio Analyzer
-- [JAYS v-Jays (small)](./referenceaudioanalyzer/HDM-X/JAYS%20v-Jays%20(small)) by Reference Audio Analyzer
+- [JAYS v-JAYS (large)](./referenceaudioanalyzer/HDM-X/JAYS%20v-JAYS%20(large)) by Reference Audio Analyzer
+- [JAYS v-JAYS (medium)](./referenceaudioanalyzer/HDM-X/JAYS%20v-JAYS%20(medium)) by Reference Audio Analyzer
+- [JAYS v-JAYS (small)](./referenceaudioanalyzer/HDM-X/JAYS%20v-JAYS%20(small)) by Reference Audio Analyzer
 - [JAYS v-JAYS](./innerfidelity/sbaf-serious/JAYS%20v-JAYS) by Innerfidelity
 - [JBL Duet NC (ANC Off)](./oratory1990/harman_over-ear_2018/JBL%20Duet%20NC%20(ANC%20Off)) by oratory1990
 - [JBL Duet NC (ANC On)](./oratory1990/harman_over-ear_2018/JBL%20Duet%20NC%20(ANC%20On)) by oratory1990
@@ -1973,7 +1970,7 @@ from the same source.
 - [JBL Synchros S500 (on)](./referenceaudioanalyzer/HDM-X/JBL%20Synchros%20S500%20(on)) by Reference Audio Analyzer
 - [JBL Synchros S700](./referenceaudioanalyzer/HDM-X/JBL%20Synchros%20S700) by Reference Audio Analyzer
 - [JBL T450BT](./rtings/avg/JBL%20T450BT) by Rtings
-- [JBL Tune 120](./rtings/avg/JBL%20Tune%20120) by Rtings
+- [JBL TUNE 120TWS](./rtings/avg/JBL%20TUNE%20120TWS) by Rtings
 - [JBL TUNE 220TWS](./rtings/avg/JBL%20TUNE%20220TWS) by Rtings
 - [JBL V310 BT (bluetooth)](./referenceaudioanalyzer/HDM-X/JBL%20V310%20BT%20(bluetooth)) by Reference Audio Analyzer
 - [JBL V310 BT (wired)](./referenceaudioanalyzer/HDM-X/JBL%20V310%20BT%20(wired)) by Reference Audio Analyzer
@@ -3292,7 +3289,6 @@ from the same source.
 - [Skullcandy Smokin Buds](./headphonecom/sbaf-serious/Skullcandy%20Smokin%20Buds) by Headphone.com
 - [Skullcandy Venue](./rtings/avg/Skullcandy%20Venue) by Rtings
 - [Sleek SA1](./headphonecom/sbaf-serious/Sleek%20SA1) by Headphone.com
-- [Sleek SA6 Neutral](./headphonecom/sbaf-serious/Sleek%20SA6%20Neutral) by Headphone.com
 - [Sleek SA6](./headphonecom/sbaf-serious/Sleek%20SA6) by Headphone.com
 - [SMS Audio DJ Pro](./innerfidelity/sbaf-serious/SMS%20Audio%20DJ%20Pro) by Innerfidelity
 - [SMS Audio Over Ear ANC](./innerfidelity/sbaf-serious/SMS%20Audio%20Over%20Ear%20ANC) by Innerfidelity
@@ -3449,7 +3445,6 @@ from the same source.
 - [Sony MH755 (sample 5)](./crinacle/harman_in-ear_2019v2/Sony%20MH755%20(sample%205)) by Crinacle
 - [Sony MH755](./crinacle/harman_in-ear_2019v2/Sony%20MH755) by Crinacle
 - [Sony MH755](./oratory1990/harman_in-ear_2019v2/Sony%20MH755) by oratory1990
-- [Sony MRD-7550 (sample 2)](./crinacle/harman_in-ear_2019v2/Sony%20MRD-7550%20(sample%202)) by Crinacle
 - [Sony WF-1000X](./oratory1990/harman_in-ear_2019v2/Sony%20WF-1000X) by oratory1990
 - [Sony WF-1000X](./rtings/avg/Sony%20WF-1000X) by Rtings
 - [Sony WF-1000XM3 NC](./crinacle/harman_in-ear_2019v2/Sony%20WF-1000XM3%20NC) by Crinacle
@@ -3577,7 +3572,6 @@ from the same source.
 - [Stax SR-40](./referenceaudioanalyzer/HDM-X/Stax%20SR-40) by Reference Audio Analyzer
 - [Stax SR-40](./referenceaudioanalyzer/HDM1/Stax%20SR-40) by Reference Audio Analyzer
 - [Stax SR-5 Gold](./oratory1990/harman_over-ear_2018/Stax%20SR-5%20Gold) by oratory1990
-- [Stax SR-507 SE1-1049](./innerfidelity/sbaf-serious/Stax%20SR-507%20SE1-1049) by Innerfidelity
 - [Stax SR-507](./innerfidelity/sbaf-serious/Stax%20SR-507) by Innerfidelity
 - [Stax SR-507](./referenceaudioanalyzer/HDM1/Stax%20SR-507) by Reference Audio Analyzer
 - [Stax SR-Gamma Pro](./innerfidelity/sbaf-serious/Stax%20SR-Gamma%20Pro) by Innerfidelity
@@ -3736,22 +3730,22 @@ from the same source.
 - [Tin HiFi T4](./crinacle/harman_in-ear_2019v2/Tin%20HiFi%20T4) by Crinacle
 - [Tin HiFi T4](./oratory1990/harman_in-ear_2019v2/Tin%20HiFi%20T4) by oratory1990
 - [Torque t096z (bass boost filter)](./innerfidelity/sbaf-serious/Torque%20t096z%20(bass%20boost%20filter)) by Innerfidelity
-- [Torque t096z (flat filter)](./innerfidelity/sbaf-serious/Torque%20t096z%20(flat%20filter)) by Innerfidelity
-- [Torque t096z (mic centric filter)](./innerfidelity/sbaf-serious/Torque%20t096z%20(mic%20centric%20filter)) by Innerfidelity
+- [Torque t096z (mid centric filter)](./innerfidelity/sbaf-serious/Torque%20t096z%20(mid%20centric%20filter)) by Innerfidelity
+- [Torque t096z (neutral filter)](./innerfidelity/sbaf-serious/Torque%20t096z%20(neutral%20filter)) by Innerfidelity
 - [Torque t096z (treble boost filter)](./innerfidelity/sbaf-serious/Torque%20t096z%20(treble%20boost%20filter)) by Innerfidelity
 - [Torque t096z (U-shaped filter)](./innerfidelity/sbaf-serious/Torque%20t096z%20(U-shaped%20filter)) by Innerfidelity
 - [Torque t096z (warm tilt filter)](./innerfidelity/sbaf-serious/Torque%20t096z%20(warm%20tilt%20filter)) by Innerfidelity
 - [Torque t103z (black filter)](./innerfidelity/sbaf-serious/Torque%20t103z%20(black%20filter)) by Innerfidelity
 - [Torque t103z (red filter)](./innerfidelity/sbaf-serious/Torque%20t103z%20(red%20filter)) by Innerfidelity
 - [Torque t103z (yellow filter)](./innerfidelity/sbaf-serious/Torque%20t103z%20(yellow%20filter)) by Innerfidelity
-- [Torque t402v (on-ear earpads, black filter)](./innerfidelity/sbaf-serious/Torque%20t402v%20(on-ear%20earpads,%20black%20filter)) by Innerfidelity
-- [Torque t402v (on-ear earpads, blue filter)](./innerfidelity/sbaf-serious/Torque%20t402v%20(on-ear%20earpads,%20blue%20filter)) by Innerfidelity
-- [Torque t402v (on-ear earpads, red filter)](./innerfidelity/sbaf-serious/Torque%20t402v%20(on-ear%20earpads,%20red%20filter)) by Innerfidelity
-- [Torque t402v (on-ear earpads, yellow filter)](./innerfidelity/sbaf-serious/Torque%20t402v%20(on-ear%20earpads,%20yellow%20filter)) by Innerfidelity
-- [Torque t402v (over-ear earpads, black filter)](./innerfidelity/sbaf-serious/Torque%20t402v%20(over-ear%20earpads,%20black%20filter)) by Innerfidelity
-- [Torque t402v OverEar (over-ear earpads, blue filter)](./innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20(over-ear%20earpads,%20blue%20filter)) by Innerfidelity
-- [Torque t402v OverEar (over-ear earpads, red filter)](./innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20(over-ear%20earpads,%20red%20filter)) by Innerfidelity
-- [Torque t402v OverEar (over-ear earpads, yellow filter)](./innerfidelity/sbaf-serious/Torque%20t402v%20OverEar%20(over-ear%20earpads,%20yellow%20filter)) by Innerfidelity
+- [Torque t402v (black on-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(black%20on-ear%20earpads)) by Innerfidelity
+- [Torque t402v (black over-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(black%20over-ear%20earpads)) by Innerfidelity
+- [Torque t402v (blue on-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(blue%20on-ear%20earpads)) by Innerfidelity
+- [Torque t402v (blue over-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(blue%20over-ear%20earpads)) by Innerfidelity
+- [Torque t402v (red on-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(red%20on-ear%20earpads)) by Innerfidelity
+- [Torque t402v (red over-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(red%20over-ear%20earpads)) by Innerfidelity
+- [Torque t402v (yellow on-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(yellow%20on-ear%20earpads)) by Innerfidelity
+- [Torque t402v (yellow over-ear earpads)](./innerfidelity/sbaf-serious/Torque%20t402v%20(yellow%20over-ear%20earpads)) by Innerfidelity
 - [Toshiba HR-810 Low Gain](./innerfidelity/sbaf-serious/Toshiba%20HR-810%20Low%20Gain) by Innerfidelity
 - [TOZO T10](./rtings/avg/TOZO%20T10) by Rtings
 - [TOZO T6](./rtings/avg/TOZO%20T6) by Rtings
