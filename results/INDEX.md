@@ -269,6 +269,7 @@ from the same source.
 - [AKG N60 NC Wireless](./rtings/avg/AKG%20N60%20NC%20Wireless) by Rtings
 - [AKG N700NC](./rtings/avg/AKG%20N700NC) by Rtings
 - [AKG N90Q Nominal](./innerfidelity/sbaf-serious/AKG%20N90Q%20Nominal) by Innerfidelity
+- [AKG N90Q](./innerfidelity/sbaf-serious/AKG%20N90Q) by Innerfidelity
 - [AKG Q350 Quincy Jones](./headphonecom/sbaf-serious/AKG%20Q350%20Quincy%20Jones) by Headphone.com
 - [AKG Q350 Quincy Jones](./innerfidelity/sbaf-serious/AKG%20Q350%20Quincy%20Jones) by Innerfidelity
 - [AKG Q460 Quincy Jones](./headphonecom/sbaf-serious/AKG%20Q460%20Quincy%20Jones) by Headphone.com
@@ -1060,6 +1061,7 @@ from the same source.
 - [Cyberdrive Forte Impact Bass](./innerfidelity/sbaf-serious/Cyberdrive%20Forte%20Impact%20Bass) by Innerfidelity
 - [CyberHome KUBT 803](./referenceaudioanalyzer/HDM-X/CyberHome%20KUBT%20803) by Reference Audio Analyzer
 - [Cyclone PR2](./referenceaudioanalyzer/SIEC/Cyclone%20PR2) by Reference Audio Analyzer
+- [Cypher Labs Astru IEM (bass boost filter)](./innerfidelity/sbaf-serious/Cypher%20Labs%20Astru%20IEM%20(bass%20boost%20filter)) by Innerfidelity
 - [Cypher Labs Astru IEM Bass Boo](./innerfidelity/sbaf-serious/Cypher%20Labs%20Astru%20IEM%20Bass%20Boo) by Innerfidelity
 - [Cypher Labs Astru IEM](./innerfidelity/sbaf-serious/Cypher%20Labs%20Astru%20IEM) by Innerfidelity
 - [Daiso $2 earphones](./crinacle/harman_in-ear_2019v2/Daiso%20$2%20earphones) by Crinacle
@@ -1641,6 +1643,7 @@ from the same source.
 - [Grado HF-1 Prototype](./innerfidelity/sbaf-serious/Grado%20HF-1%20Prototype) by Innerfidelity
 - [Grado HF-1 Serial 69](./innerfidelity/sbaf-serious/Grado%20HF-1%20Serial%2069) by Innerfidelity
 - [Grado HF-2](./innerfidelity/sbaf-serious/Grado%20HF-2) by Innerfidelity
+- [Grado HF1](./innerfidelity/sbaf-serious/Grado%20HF1) by Innerfidelity
 - [Grado iGE](./crinacle/harman_in-ear_2019v2/Grado%20iGE) by Crinacle
 - [Grado iGe](./referenceaudioanalyzer/SIEC/Grado%20iGe) by Reference Audio Analyzer
 - [Grado iGi](./headphonecom/sbaf-serious/Grado%20iGi) by Headphone.com
@@ -2696,9 +2699,10 @@ from the same source.
 - [Pioneer HDJ-500-K](./referenceaudioanalyzer/HDM1/Pioneer%20HDJ-500-K) by Reference Audio Analyzer
 - [Pioneer HDJ-500](./headphonecom/sbaf-serious/Pioneer%20HDJ-500) by Headphone.com
 - [Pioneer HDJ-500](./innerfidelity/sbaf-serious/Pioneer%20HDJ-500) by Innerfidelity
+- [Pioneer Monitor 10 II (sample 1)](./innerfidelity/sbaf-serious/Pioneer%20Monitor%2010%20II%20(sample%201)) by Innerfidelity
+- [Pioneer Monitor 10 II (sample 2)](./innerfidelity/sbaf-serious/Pioneer%20Monitor%2010%20II%20(sample%202)) by Innerfidelity
 - [Pioneer Monitor 10 II](./innerfidelity/sbaf-serious/Pioneer%20Monitor%2010%20II) by Innerfidelity
 - [Pioneer Monitor 10 II](./oratory1990/harman_over-ear_2018/Pioneer%20Monitor%2010%20II) by oratory1990
-- [Pioneer Monitor 10II B in box](./innerfidelity/sbaf-serious/Pioneer%20Monitor%2010II%20B%20in%20box) by Innerfidelity
 - [Pioneer SE-700](./referenceaudioanalyzer/HDM-X/Pioneer%20SE-700) by Reference Audio Analyzer
 - [Pioneer SE-A1000](./innerfidelity/sbaf-serious/Pioneer%20SE-A1000) by Innerfidelity
 - [Pioneer SE-CH5](./referenceaudioanalyzer/SIEC/Pioneer%20SE-CH5) by Reference Audio Analyzer
@@ -3289,6 +3293,7 @@ from the same source.
 - [Skullcandy Venue](./rtings/avg/Skullcandy%20Venue) by Rtings
 - [Sleek SA1](./headphonecom/sbaf-serious/Sleek%20SA1) by Headphone.com
 - [Sleek SA6 Neutral](./headphonecom/sbaf-serious/Sleek%20SA6%20Neutral) by Headphone.com
+- [Sleek SA6](./headphonecom/sbaf-serious/Sleek%20SA6) by Headphone.com
 - [SMS Audio DJ Pro](./innerfidelity/sbaf-serious/SMS%20Audio%20DJ%20Pro) by Innerfidelity
 - [SMS Audio Over Ear ANC](./innerfidelity/sbaf-serious/SMS%20Audio%20Over%20Ear%20ANC) by Innerfidelity
 - [SMS Audio Street by 50 Cent](./innerfidelity/sbaf-serious/SMS%20Audio%20Street%20by%2050%20Cent) by Innerfidelity
@@ -3351,6 +3356,8 @@ from the same source.
 - [Sony MDR-7520](./innerfidelity/sbaf-serious/Sony%20MDR-7520) by Innerfidelity
 - [Sony MDR-7520](./rtings/avg/Sony%20MDR-7520) by Rtings
 - [Sony MDR-7550 (sample 1)](./crinacle/harman_in-ear_2019v2/Sony%20MDR-7550%20(sample%201)) by Crinacle
+- [Sony MDR-7550 (sample 2)](./crinacle/harman_in-ear_2019v2/Sony%20MDR-7550%20(sample%202)) by Crinacle
+- [Sony MDR-7550](./crinacle/harman_in-ear_2019v2/Sony%20MDR-7550) by Crinacle
 - [Sony MDR-7550](./headphonecom/sbaf-serious/Sony%20MDR-7550) by Headphone.com
 - [Sony MDR-7550](./innerfidelity/sbaf-serious/Sony%20MDR-7550) by Innerfidelity
 - [Sony MDR-7550](./oratory1990/harman_in-ear_2019v2/Sony%20MDR-7550) by oratory1990
@@ -3482,8 +3489,9 @@ from the same source.
 - [Sony XBA-4](./referenceaudioanalyzer/SIEC/Sony%20XBA-4) by Reference Audio Analyzer
 - [Sony XBA-A1AP](./referenceaudioanalyzer/SIEC/Sony%20XBA-A1AP) by Reference Audio Analyzer
 - [Sony XBA-A2](./referenceaudioanalyzer/SIEC/Sony%20XBA-A2) by Reference Audio Analyzer
-- [Sony XBA-A3 Mod](./crinacle/harman_in-ear_2019v2/Sony%20XBA-A3%20Mod) by Crinacle
-- [Sony XBA-A3 S3](./crinacle/harman_in-ear_2019v2/Sony%20XBA-A3%20S3) by Crinacle
+- [Sony XBA-A3 (modded)](./crinacle/harman_in-ear_2019v2/Sony%20XBA-A3%20(modded)) by Crinacle
+- [Sony XBA-A3 (sample 1)](./crinacle/harman_in-ear_2019v2/Sony%20XBA-A3%20(sample%201)) by Crinacle
+- [Sony XBA-A3 (sample 3)](./crinacle/harman_in-ear_2019v2/Sony%20XBA-A3%20(sample%203)) by Crinacle
 - [Sony XBA-A3](./crinacle/harman_in-ear_2019v2/Sony%20XBA-A3) by Crinacle
 - [Sony XBA-A3](./referenceaudioanalyzer/SIEC/Sony%20XBA-A3) by Reference Audio Analyzer
 - [Sony XBA-C10](./referenceaudioanalyzer/SIEC/Sony%20XBA-C10) by Reference Audio Analyzer
@@ -3546,7 +3554,6 @@ from the same source.
 - [Stax SR-002](./crinacle/harman_in-ear_2019v2/Stax%20SR-002) by Crinacle
 - [Stax SR-003 SA-1993](./innerfidelity/sbaf-serious/Stax%20SR-003%20SA-1993) by Innerfidelity
 - [Stax SR-007 Mk2](./referenceaudioanalyzer/HDM1/Stax%20SR-007%20Mk2) by Reference Audio Analyzer
-- [Stax SR-007 SZ3-1576](./innerfidelity/sbaf-serious/Stax%20SR-007%20SZ3-1576) by Innerfidelity
 - [Stax SR-007](./crinacle/crinacle_over-ear/Stax%20SR-007) by Crinacle
 - [Stax SR-007](./innerfidelity/sbaf-serious/Stax%20SR-007) by Innerfidelity
 - [Stax SR-009 (sample 1)](./innerfidelity/sbaf-serious/Stax%20SR-009%20(sample%201)) by Innerfidelity
@@ -3571,6 +3578,7 @@ from the same source.
 - [Stax SR-40](./referenceaudioanalyzer/HDM1/Stax%20SR-40) by Reference Audio Analyzer
 - [Stax SR-5 Gold](./oratory1990/harman_over-ear_2018/Stax%20SR-5%20Gold) by oratory1990
 - [Stax SR-507 SE1-1049](./innerfidelity/sbaf-serious/Stax%20SR-507%20SE1-1049) by Innerfidelity
+- [Stax SR-507](./innerfidelity/sbaf-serious/Stax%20SR-507) by Innerfidelity
 - [Stax SR-507](./referenceaudioanalyzer/HDM1/Stax%20SR-507) by Reference Audio Analyzer
 - [Stax SR-Gamma Pro](./innerfidelity/sbaf-serious/Stax%20SR-Gamma%20Pro) by Innerfidelity
 - [Stax SR-L300 LTD (L700 earpads)](./oratory1990/harman_over-ear_2018/Stax%20SR-L300%20LTD%20(L700%20earpads)) by oratory1990

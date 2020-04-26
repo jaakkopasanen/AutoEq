@@ -44,7 +44,9 @@ def average_measurements(input_dir=None, output_dir=None):
             fr = FrequencyResponse(name=norm, frequency=f, raw=avg)
             d = os.path.join(output_dir, norm)
             os.makedirs(d, exist_ok=True)
-            fr.write_to_csv(os.path.join(d, norm + '.csv'))
+            file_path = os.path.join(d, norm + '.csv')
+            print(f'Created averaged measurement: "{file_path}"')
+            fr.write_to_csv(file_path)
 
 
 def create_cli():

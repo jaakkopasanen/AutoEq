@@ -16,6 +16,7 @@ AKG K702 65th Anv Ed 2014	AKG K702 65th Anniversary Edition	onear
 AKG K812 sn001130	AKG K812 (serial number 001130)	onear
 AKG K81DJ	AKG K81 DJ	onear
 AKG N60NC Wired Passive	AKG N60 NC (wired, passive)	onear
+AKG N90Q Nominal	AKG N90Q	onear
 Apple iPod Ear Buds sample A	Apple iPod Ear Buds (sample A)	earbud
 Apple iPod Ear Buds sample B	Apple iPod Ear Buds (sample B)	earbud
 Audeo PFE 121 Black Filter	Phonak PFE 121 (black filter)	inear
@@ -40,8 +41,8 @@ Audeze LCD-X sn7456406	Audeze LCD-X (serial number 7456406)	onear
 Audeze LCD-XC sample 1	Audeze LCD-XC (sample 1)	onear
 Audeze LCD-XC sample 2	Audeze LCD-XC (sample 2)	onear
 Audeze Sine	Audeze SINE	onear
-Audio-Technica ATH-M50 B2012		ignore
 Audio-Technica ATH-M50 B2012	ignore	onear
+Audio-Technica ATH-M50 B2012		ignore
 Audio-Technica ATH-M50X	Audio-Technica ATH-M50x	onear
 Audio-Technica ATH-MSR7NC ANC Active	Audio-Technica ATH-MSR7NC (ANC on)	onear
 Audio-Technica ATH-MSR7NC Passive	Audio-Technica ATH-MSR7NC (passive)	onear
@@ -83,6 +84,7 @@ Caeden Linea No 10 Passive Wired	Caeden Linea No 10 (wired, passive)	onear
 Caeden Linea No10 Active Wired	Caeden Linea No 10 (wired, active)	onear
 Cowin E7 Wired NC off	Cowin E7 (wired, ANC off)	onear
 Creative Aurvana Live 2	Creative Aurvana Live! 2	onear
+Cypher Labs Astru IEM Bass Boo	Cypher Labs Astru IEM (bass boost filter)	inear
 Dan Clark Audio Aeon Flow Closed PreProduction		ignore
 Dan Clark Audio Aeon Flow Closed snACXB168	Dan Clark Audio Aeon Flow Closed	onear
 Dan Clark Audio Aeon Flow Closed w Filters snACXB168s	Dan Clark Audio Aeon Flow Closed (filters)	onear
@@ -114,6 +116,7 @@ Fostex T50RP 2011 B	Fostex T50RP (sample 2)	onear
 Fostex TH-X00 sample 1	Fostex TH-X00 Mahogany (sample 1)	onear
 Fostex TH-X00 sn1927	Fostex TH-X00 Mahogany (serial number 1927)	onear
 Fostex TH900mk2 TH610Pads	Fostex TH900mk2 (TH610 earpads)	onear
+Grado HF-1 Serial 69	Grado HF1	onear
 Grado RS1e Bowl Pads	Grado RS1e (bowl earpads)	onear
 Grado RS1e Flat Pads	Grado RS1e (flat earpads)	onear
 Grado RS1e S Cushions	Grado RS1e (S earpads)	onear
@@ -212,11 +215,13 @@ Sony MDR-1000X Wireless NC Off	Sony MDR-1000X (wireless, ANC off)	onear
 Sony MDR-Z1R sn3922	Sony MDR-Z1R	onear
 Sony MDRV-CD3000	Sony MDR-CD3000	onear
 Sony MDRV-SA5000	Sony MDR-SA5000	onear
+Stax SR-007 SZ3-1576	Stax SR-007 (serial number SZ3-1576)	ignore
 Stax SR-009 SN SZ9 2251 KGSS		ignore
 Stax SR-009 SZ9-1278	Stax SR-009 (serial number SZ9-1278)	onear
 Stax SR-009 SZ9-1278 after burnin		ignore
 Stax SR-207 EP507 Leather Pads SerNum SB2 2217	Stax SR-207 (EP-507 leather earpads)	onear
 Stax SR-207 SB2217	Stax SR-207	onear
+Stax SR-507 SE1-1049	Stax SR-507	onear
 Stax SR-Alpha Pro Excellent		ignore
 Stax SR-Alpha Pro wYax1 Pads		ignore
 Thinksound TS01	Thinksound ts01	inear
