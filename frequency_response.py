@@ -9,6 +9,7 @@ from io import StringIO
 from scipy.interpolate import InterpolatedUnivariateSpline
 from scipy.signal import savgol_filter, find_peaks, minimum_phase, firwin2
 from scipy.special import expit
+from scipy.stats import linregress
 import numpy as np
 import urllib
 from time import time
@@ -22,7 +23,8 @@ from constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GA
     DEFAULT_SMOOTHING_ITERATIONS, DEFAULT_TREBLE_SMOOTHING_F_LOWER, DEFAULT_TREBLE_SMOOTHING_F_UPPER, \
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_ITERATIONS, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
-    DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, ROOT_DIR
+    DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, ROOT_DIR, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
+    HARMAN_ONEAR_PREFERENCE_FREQUENCIES
 
 
 class FrequencyResponse:
@@ -933,7 +935,7 @@ class FrequencyResponse:
         if f is None:
             self.frequency = self.generate_frequencies(f_min=f_min, f_max=f_max, f_step=f_step)
         else:
-            self.frequency = f
+            self.frequency = np.array(f)
 
         # Prevent log10 from exploding by replacing zero frequency with small value
         zero_freq_fix = False
@@ -1434,6 +1436,52 @@ class FrequencyResponse:
         elif close:
             plt.close(fig)
         return fig, ax
+
+    def harman_onear_preference_score(self):
+        """Calculates Harman preference score for over-ear and on-ear headphones.
+
+        Returns:
+            - score: Preference score
+            - std: Standard deviation of error
+            - slope: Slope of linear regression of error
+        """
+        fr = self.copy()
+        fr.interpolate(HARMAN_ONEAR_PREFERENCE_FREQUENCIES)
+        sl = np.logical_and(fr.frequency >= 50, fr.frequency <= 10000)
+        x = fr.frequency[sl]
+        y = fr.error[sl]
+
+        std = np.std(y, ddof=1)  # ddof=1 is required to get the exact same numbers as the Excel from Listen Inc gives
+        slope, _, _, _, _ = linregress(np.log(x), y)
+        score = 114.490443008238 - 12.62 * std - 15.5163857197367 * np.abs(slope)
+
+        return score, std, slope
+
+    def harman_inear_preference_score(self):
+        """Calculates Harman preference score for in-ear headphones.
+
+        Returns:
+            - score: Preference score
+            - std: Standard deviation of error
+            - slope: Slope of linear regression of error
+            - mean: Mean of absolute error
+        """
+        fr = self.copy()
+        fr.interpolate(HARMAN_INEAR_PREFENCE_FREQUENCIES)
+        sl = np.logical_and(fr.frequency >= 20, fr.frequency <= 10000)
+        x = fr.frequency[sl]
+        y = fr.error[sl]
+
+        std = np.std(y, ddof=1)  # ddof=1 is required to get the exact same numbers as the Excel from Listen Inc gives
+        slope, _, _, _, _ = linregress(np.log(x), y)
+        # Mean of absolute of error centered by 500 Hz
+        delta = fr.error[np.where(fr.frequency == 500.0)[0][0]]
+        y = fr.error[np.logical_and(fr.frequency >= 40, fr.frequency <= 10000)] - delta
+        mean = np.mean(np.abs(y))
+        # Final score
+        score = 100.0795 - 8.5 * std - 6.796 * np.abs(slope) - 3.475 * mean
+
+        return score, std, slope, mean
 
     def process(self,
                 compensation=None,
