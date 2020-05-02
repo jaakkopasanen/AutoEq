@@ -2029,7 +2029,7 @@ it yourself by following this guide:
 - [Pioneer HDJ-2000](./innerfidelity/sbaf-serious/Pioneer%20HDJ-2000)
 - [Pioneer HDJ-500](./innerfidelity/sbaf-serious/Pioneer%20HDJ-500)
 - [Pioneer HDJ-500-K](./referenceaudioanalyzer/HDM1/Pioneer%20HDJ-500-K)
-- [Pioneer Monitor 10 II](./oratory1990/harman_over-ear_2018/Pioneer%20Monitor%2010%20II)
+- [Pioneer Monitor 10 II](./innerfidelity/sbaf-serious/Pioneer%20Monitor%2010%20II)
 - [Pioneer SE-700](./referenceaudioanalyzer/HDM-X/Pioneer%20SE-700)
 - [Pioneer SE-A1000](./innerfidelity/sbaf-serious/Pioneer%20SE-A1000)
 - [Pioneer SE-CH5](./referenceaudioanalyzer/SIEC/Pioneer%20SE-CH5)

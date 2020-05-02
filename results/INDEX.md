@@ -2699,7 +2699,6 @@ from the same source.
 - [Pioneer Monitor 10 II (sample 1)](./innerfidelity/sbaf-serious/Pioneer%20Monitor%2010%20II%20(sample%201)) by Innerfidelity
 - [Pioneer Monitor 10 II (sample 2)](./innerfidelity/sbaf-serious/Pioneer%20Monitor%2010%20II%20(sample%202)) by Innerfidelity
 - [Pioneer Monitor 10 II](./innerfidelity/sbaf-serious/Pioneer%20Monitor%2010%20II) by Innerfidelity
-- [Pioneer Monitor 10 II](./oratory1990/harman_over-ear_2018/Pioneer%20Monitor%2010%20II) by oratory1990
 - [Pioneer SE-700](./referenceaudioanalyzer/HDM-X/Pioneer%20SE-700) by Reference Audio Analyzer
 - [Pioneer SE-A1000](./innerfidelity/sbaf-serious/Pioneer%20SE-A1000) by Innerfidelity
 - [Pioneer SE-CH5](./referenceaudioanalyzer/SIEC/Pioneer%20SE-CH5) by Reference Audio Analyzer

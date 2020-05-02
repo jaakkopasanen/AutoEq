@@ -9,10 +9,11 @@ import json
 from collections import OrderedDict
 import numpy as np
 from zipfile import ZipFile
+from tabulate import tabulate
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from frequency_response import FrequencyResponse
 from measurements.manufacturer_index import ManufacturerIndex
-from constants import MOD_REGEX
+from constants import MOD_REGEX, ROOT_DIR
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
@@ -201,10 +202,85 @@ def write_hesuvi_index():
     zip_object.close()
 
 
+def ranking_row(file_path, target, form='onear'):
+    dir_path = os.path.abspath(os.path.join(file_path, os.pardir))
+    rel_path = os.path.relpath(dir_path, os.path.join(ROOT_DIR, 'results'))
+    url = form_url(rel_path)
+    fr = FrequencyResponse.read_from_csv(file_path)
+    if re.search(MOD_REGEX, fr.name):
+        return None
+    fr.interpolate()
+    fr.compensate(target, bass_boost_gain=0.0)  # Pre-computed results are with Harman target without bass
+    if form == 'onear':
+        score, std, slope = fr.harman_onear_preference_score()
+        return [f'[{fr.name}]({url})', f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}']
+    elif form == 'inear':
+        score, std, slope, mean = fr.harman_inear_preference_score()
+        return [f'[{fr.name}]({url})', f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}', f'{mean:.2f}']
+    if '|' in f'[{fr.name}]({url})':
+        print(file_path)
+        print(fr.name)
+        print(f'[{fr.name}]({url})')
+
+
+def write_ranking_table():
+    harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2.csv')
+    harman_inear = FrequencyResponse.read_from_csv(harman_inear)
+    harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018.csv')
+    harman_overear = FrequencyResponse.read_from_csv(harman_overear)
+
+    onear_rows = []
+    # oratory1990 over-ear
+    for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018', '*', '*.csv')):
+        row = ranking_row(fp, harman_overear, 'onear')
+        if row:
+            onear_rows.append(row)
+    onear_rows = sorted(onear_rows, key=lambda row: float(row[1]), reverse=True)
+    onear_str = tabulate(onear_rows, headers=['Name', 'Score', 'STD (dB)', 'Slope'], tablefmt='orgtbl')
+    onear_str = onear_str.replace('+', '|').replace('|-', '|:')
+
+    inear_rows = []
+    # oratory1990 and Crinacle in-ear
+    files = list(glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2', '*', '*.csv')))
+    files += list(glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2', '*', '*.csv')))
+    for fp in files:
+        row = ranking_row(fp, harman_inear, 'inear')
+        if row:
+            inear_rows.append(row)
+    inear_str = sorted(inear_rows, key=lambda row: float(row[1]), reverse=True)
+    inear_str = tabulate(inear_str, headers=['Name', 'Score', 'STD (dB)', 'Slope', 'Average (dB)'], tablefmt='orgtbl')
+    inear_str = inear_str.replace('-+-', '-|-').replace('|-', '|:')
+
+    s = f'''# Headphone Ranking
+    Headphones ranked by Harman headphone listener preference scores.
+
+    Tables include the preference score (Score), standard deviation of the error (STD), slope of the logarithimc
+    regression fit of the error (Slope) for both headphone types and average of the absolute error (Average) for in-ear
+    headphones. STD tells how much the headphone deviates from neutral and slope tells if the headphone is warm (< 0) or
+    bright (> 0).
+
+    Keep in mind that these numbers are calculated with deviations from Harman targets. The linked results use different
+    levels of bass boost so the slope numbers here won't match the error curves you see in the linked results.
+
+    Over-ear table includes headphones measured by oratory1990. In-ear table includes headphones measured by oratory1990
+    and Crinacale. Measurements from other databases are not included because they are not compatible with measurements,
+    targets and preference scoring developed by Sean Olive et al.
+    
+    ## Over-ear Headphones    
+    {onear_str}
+
+    ## In-ear Headphones
+    {inear_str}
+    '''
+    with open(os.path.join(ROOT_DIR, 'results', 'RANKING.md'), 'w', encoding='utf-8') as fh:
+        fh.write(re.sub('\n[ \t]+', '\n', s).strip())
+
+
 def main():
     write_recommendations()
     write_full_index()
     write_hesuvi_index()
+    write_ranking_table()
 
 
 if __name__ == '__main__':
