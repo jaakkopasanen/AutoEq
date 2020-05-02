@@ -88,7 +88,7 @@ def write_recommendations():
         [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
         Headphone ranking based on Harman listener preference scores can be found in the
-        [Headphone Ranking](./RANKING.md)
+        [Headphone Ranking](./RANKING.md).
 
         '''
         s += '\n'.join([urls[key] for key in keys])
@@ -274,6 +274,7 @@ def write_ranking_table():
 
     ## In-ear Headphones
     {inear_str}
+
     '''
     with open(os.path.join(ROOT_DIR, 'results', 'RANKING.md'), 'w', encoding='utf-8') as fh:
         fh.write(re.sub('\n[ \t]+', '\n', s).strip())

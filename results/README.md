@@ -12,7 +12,7 @@ it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
 Headphone ranking based on Harman listener preference scores can be found in the
-[Headphone Ranking](./RANKING.md)
+[Headphone Ranking](./RANKING.md).
 
 - [1Custom SA02](./crinacle/harman_in-ear_2019v2/1Custom%20SA02)
 - [1Custom SA03](./crinacle/harman_in-ear_2019v2/1Custom%20SA03)
