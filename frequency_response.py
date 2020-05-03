@@ -225,7 +225,7 @@ class FrequencyResponse:
         if len(self.parametric_eq):
             d['parametric_eq'] = [x if x is not None else 'NaN' for x in self.parametric_eq]
         if len(self.fixed_band_eq):
-            d['parametric_eq'] = [x if x is not None else 'NaN' for x in self.fixed_band_eq]
+            d['fixed_band_eq'] = [x if x is not None else 'NaN' for x in self.fixed_band_eq]
         if len(self.equalized_raw):
             d['equalized_raw'] = [x if x is not None else 'NaN' for x in self.equalized_raw]
         if len(self.equalized_smoothed):
@@ -1048,13 +1048,7 @@ class FrequencyResponse:
         """Sets target and error curves."""
         # Copy and center compensation data
         compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
-        compensation.smoothen_fractional_octave(
-            window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
-            iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS
-        )
         compensation.center()
-        compensation.raw = compensation.smoothed
-        compensation.smoothed = np.array([])
 
         # Set target
         self.target = compensation.raw + self.create_target(
@@ -1357,6 +1351,17 @@ class FrequencyResponse:
         if len(self.smoothed):
             self.equalized_smoothed = self.smoothed + self.equalization
 
+    @staticmethod
+    def kwarg_defaults(kwargs, **defaults):
+        if kwargs is None:
+            kwargs = {}
+        else:
+            kwargs = {key: val for key, val in kwargs.items()}
+        for key, val in defaults.items():
+            if key not in kwargs:
+                kwargs[key] = val
+        return kwargs
+
     def plot_graph(self,
                    fig=None,
                    ax=None,
@@ -1376,44 +1381,82 @@ class FrequencyResponse:
                    a_min=None,
                    a_max=None,
                    color='black',
+                   raw_plot_kwargs=None,
+                   smoothed_plot_kwargs=None,
+                   error_plot_kwargs=None,
+                   error_smoothed_plot_kwargs=None,
+                   equalization_plot_kwargs=None,
+                   parametric_eq_plot_kwargs=None,
+                   fixed_band_eq_plot_kwargs=None,
+                   equalized_plot_kwargs=None,
+                   target_plot_kwargs=None,
                    close=False):
         """Plots frequency response graph."""
         if fig is None:
             fig, ax = plt.subplots()
             fig.set_size_inches(12, 8)
-        legend = []
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
+
         if target and len(self.target):
-            ax.plot(self.frequency, self.target, linewidth=5, color='lightblue')
-            legend.append('Target')
+            ax.plot(
+                self.frequency, self.target,
+                **self.kwarg_defaults(target_plot_kwargs, label='Taret', linewidth=5, color='lightblue')
+            )
+
         if smoothed and len(self.smoothed):
-            ax.plot(self.frequency, self.smoothed, linewidth=5, color='lightgrey')
-            legend.append('Raw Smoothed')
+            ax.plot(
+                self.frequency, self.smoothed,
+                **self.kwarg_defaults(smoothed_plot_kwargs, label='Raw Smoothed', linewidth=5, color='lightgrey')
+            )
+
         if error_smoothed and len(self.error_smoothed):
-            ax.plot(self.frequency, self.error_smoothed, linewidth=5, color='pink')
-            legend.append('Error Smoothed')
+            ax.plot(
+                self.frequency, self.error_smoothed,
+                **self.kwarg_defaults(error_smoothed_plot_kwargs, label='Error Smoothed', linewidth=5, color='pink')
+            )
+
         if raw and len(self.raw):
-            ax.plot(self.frequency, self.raw, linewidth=1, color=color)
-            legend.append('Raw')
+            ax.plot(
+                self.frequency, self.raw,
+                **self.kwarg_defaults(raw_plot_kwargs, label='Raw', linewidth=1, color=color)
+            )
+
         if error and len(self.error):
-            ax.plot(self.frequency, self.error, linewidth=1, color='red')
-            legend.append('Error')
-        if parametric_eq and len(self.parametric_eq):
-            ax.plot(self.frequency, self.parametric_eq, linewidth=5, color='lightgreen')
-            legend.append('Parametric Eq')
-        if fixed_band_eq and len(self.fixed_band_eq):
-            ax.plot(self.frequency, self.fixed_band_eq, linewidth=5, color='limegreen')
-            legend.append('Fixed Band Eq')
+            ax.plot(
+                self.frequency, self.error,
+                **self.kwarg_defaults(error_plot_kwargs, label='Error', linewidth=1, color='red')
+            )
+
         if equalization and len(self.equalization):
-            ax.plot(self.frequency, self.equalization, linewidth=1, color='darkgreen')
-            legend.append('Equalization')
+            ax.plot(
+                self.frequency, self.equalization,
+                **self.kwarg_defaults(equalization_plot_kwargs, label='Equalization', linewidth=5, color='lightgreen')
+            )
+
+        if parametric_eq and len(self.parametric_eq):
+            ax.plot(
+                self.frequency, self.parametric_eq,
+                **self.kwarg_defaults(parametric_eq_plot_kwargs, label='Parametric Eq', linewidth=1, color='darkgreen')
+            )
+
+        if fixed_band_eq and len(self.fixed_band_eq):
+            ax.plot(
+                self.frequency, self.fixed_band_eq,
+                **self.kwarg_defaults(fixed_band_eq_plot_kwargs, label='Fixed Band Eq', linewidth=1, color='limegreen')
+            )
+
         if equalized and len(self.equalized_raw) and not len(self.equalized_smoothed):
-            ax.plot(self.frequency, self.equalized_raw, linewidth=1, color='magenta')
-            legend.append('Equalized raw')
+            ax.plot(
+                self.frequency, self.equalized_raw,
+                **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized Raw', linewidth=1, color='blue')
+            )
+
         if equalized and len(self.equalized_smoothed):
-            ax.plot(self.frequency, self.equalized_smoothed, linewidth=1, color='blue')
-            legend.append('Equalized smoothed')
+            ax.plot(
+                self.frequency, self.equalized_smoothed,
+                **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized Smoothed', linewidth=1, color='blue')
+            )
 
         ax.set_xlabel('Frequency (Hz)')
         ax.semilogx()
@@ -1421,7 +1464,7 @@ class FrequencyResponse:
         ax.set_ylabel('Amplitude (dBr)')
         ax.set_ylim([a_min, a_max])
         ax.set_title(self.name)
-        ax.legend(legend, fontsize=8)
+        ax.legend(fontsize=8)
         ax.grid(True, which='major')
         ax.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
@@ -1586,6 +1629,12 @@ class FrequencyResponse:
 
         # Smooth data
         self.smoothen_heavy_light()
+        self.smoothen_fractional_octave(
+            window_size=1/3,
+            treble_window_size=1.4,
+            treble_f_lower=6000,
+            treble_f_upper=12000
+        )
 
         peq_filters = n_peq_filters = peq_max_gains = fbeq_filters = n_fbeq_filters = nfbeq_max_gains = None
         # Equalize

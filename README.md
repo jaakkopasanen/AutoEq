@@ -103,10 +103,10 @@ parametric equalizers such as [Roon](https://roonlabs.com/) and [Foobar2000](htt
 It's possible to use plain [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
 `C:\Program Files\EqualizerAPO\config\config.txt`. Replace contents of the file with the GraphicEQ.txt file found in
 results. Preamp is not needed because it is incorporated into the GraphicEQ line. Using
-[Sennheiser HD 650](./innerfidelity/sbaf-serious/Sennheiser%20HD%20650)
+[Sennheiser HD 650](./results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20650)
 would make config file look like this:
 ```
-GraphicEQ: 21 -0.5; 23 -0.5; 25 -0.5; 28 -0.6; 31 -1.1; 34 -1.7; 37 -2.2; 41 -2.8; 45 -3.3; 49 -3.6; 54 -3.8; 60 -4.4; 66 -4.8; 72 -4.6; 79 -5.2; 87 -6.4; 96 -7.0; 106 -7.4; 116 -7.7; 128 -8.0; 141 -8.2; 155 -8.4; 170 -8.3; 187 -8.5; 206 -8.5; 227 -8.3; 249 -8.3; 274 -8.0; 302 -7.9; 332 -7.7; 365 -7.5; 402 -7.4; 442 -7.1; 486 -7.0; 535 -7.0; 588 -6.6; 647 -6.5; 712 -6.4; 783 -6.2; 861 -6.5; 947 -6.5; 1042 -6.3; 1146 -6.8; 1261 -7.0; 1387 -7.3; 1526 -7.3; 1678 -7.6; 1846 -7.5; 2031 -6.8; 2234 -6.7; 2457 -6.3; 2703 -6.0; 2973 -6.5; 3270 -7.1; 3597 -6.9; 3957 -6.0; 4353 -6.1; 4788 -5.3; 5267 -1.4; 5793 -0.6; 6373 -1.7; 7010 -4.0; 7711 -6.2; 8482 -6.5; 9330 -6.5; 10263 -6.5; 11289 -6.5; 12418 -6.5; 13660 -6.5; 15026 -6.5; 16529 -6.5; 18182 -6.5; 20000 -6.5
+GraphicEQ: 20 -0.5; 21 -0.5; 22 -0.5; 23 -0.5; 24 -0.5; 26 -0.5; 27 -0.5; 29 -0.5; 30 -0.5; 32 -0.9; 34 -1.2; 36 -1.5; 38 -1.8; 40 -2.1; 43 -2.4; 45 -2.4; 48 -2.5; 50 -2.6; 53 -3.0; 56 -3.2; 59 -3.3; 63 -3.6; 66 -4.0; 70 -4.5; 74 -5.0; 78 -5.5; 83 -5.9; 87 -6.3; 92 -6.7; 97 -7.0; 103 -7.3; 109 -7.6; 115 -7.8; 121 -8.0; 128 -8.1; 136 -8.4; 143 -8.6; 151 -8.7; 160 -8.8; 169 -8.8; 178 -8.9; 188 -8.9; 199 -9.0; 210 -9.0; 222 -9.0; 235 -8.9; 248 -8.8; 262 -8.6; 277 -8.5; 292 -8.4; 309 -8.3; 326 -8.2; 345 -8.1; 364 -7.9; 385 -7.8; 406 -7.7; 429 -7.6; 453 -7.6; 479 -7.5; 506 -7.4; 534 -7.2; 565 -7.1; 596 -7.0; 630 -7.0; 665 -7.0; 703 -7.0; 743 -7.0; 784 -7.1; 829 -7.1; 875 -7.1; 924 -7.0; 977 -7.1; 1032 -7.2; 1090 -7.3; 1151 -7.2; 1216 -7.0; 1284 -6.9; 1357 -6.7; 1433 -6.4; 1514 -6.2; 1599 -6.1; 1689 -5.9; 1784 -5.6; 1885 -5.4; 1991 -5.2; 2103 -5.1; 2221 -5.2; 2347 -5.5; 2479 -5.8; 2618 -6.2; 2766 -6.6; 2921 -6.9; 3086 -7.0; 3260 -6.8; 3443 -6.2; 3637 -5.6; 3842 -5.1; 4058 -4.6; 4287 -4.2; 4528 -4.2; 4783 -4.8; 5052 -5.2; 5337 -4.8; 5637 -4.3; 5955 -4.7; 6290 -4.9; 6644 -4.7; 7018 -4.8; 7414 -5.7; 7831 -6.3; 8272 -6.5; 8738 -6.5; 9230 -6.5; 9749 -6.5; 10298 -6.5; 10878 -6.5; 11490 -6.5; 12137 -6.5; 12821 -7.8; 13543 -9.9; 14305 -9.7; 15110 -9.0; 15961 -11.0; 16860 -13.5; 17809 -14.5; 18812 -15.2; 19871 -15.7
 ```
 
 EqualizerAPO has a graphical user interface for adjusting configurations. Launch the editor from
@@ -403,7 +403,7 @@ All parameters used for pre-computed results can be found in the `results/update
 #### Equalizing Individual Headphones
 Equalizing Sennheiser HD 650 and saving results to `my_results/HD650`:
 ```bash
-python autoeq.py --input_dir="measurements/innerfidelity/data/onear/Sennheiser HD 650" --output_dir="my_results/HD650" --compensation="measurements/innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv" --equalize --bass_boost=4 --show_plot --convolution_eq --fs=44100,48000
+python autoeq.py --input_dir="measurements/innerfidelity/data/onear/Sennheiser HD 650" --output_dir="my_results/HD650" --compensation="measurements/innerfidelity/resources/innerfidelity_harman_over-ear_2018_wo_bass.csv" --equalize --bass_boost=4 --show_plot --convolution_eq --fs=44100,48000
 ```
 
 #### Fixed Band Equalizers
@@ -428,14 +428,14 @@ Equalizing Massdrop x Sennheiser HD 800 to sound like AKG K701. There is no K701
 we'll use Innerfidelity's measurement for the sound signature. The list of recommended results always points to best
 measurement so you can check there which one to use (measurement system can be found in the URL).
 ```bash
-python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (K701)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/innerfidelity/sbaf-serious/AKG K701/AKG K701.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
+python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (K701)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/innerfidelity/innerfidelity_harman_over-ear_2018/AKG K701/AKG K701.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
 ```
 
 Equalizing HiFiMAN HE400S to sound like Massdrop x Meze 99 Noir. HE400S is measured only by Innerfidelity so we'll point
-compensation file pointing to Innerfidelity SBAF-Serious target. Meze 99 Noir has massive natural bass boost and to
-capture that we need to relax max gain to +12dB.
+compensation file pointing to Innerfidelity's calibrated Harman target. Meze 99 Noir has massive natural bass boost and
+to capture that we need to relax max gain to +12dB.
 ```bash
-python autoeq.py --input_dir="measurements/innerfidelity/data/onear/HiFiMAN HE400S" --output_dir="my_results/HE400S (99 Noir)" --compensation="measurements/innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Meze 99 Noir/Meze 99 Noir.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --max_gain=8
+python autoeq.py --input_dir="measurements/innerfidelity/data/onear/HiFiMAN HE400S" --output_dir="my_results/HE400S (99 Noir)" --compensation="measurements/innerfidelity/resources/innerfidelity_harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Meze 99 Noir/Meze 99 Noir.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --max_gain=8
 ```
 
 Applying V-shaped sound signature to Audeze Mobius. First step is to create the sound signature file. Save this to
@@ -465,15 +465,14 @@ Results provided in this project currently have all the headphone measurements f
 - [Crinacle](https://crinacle.com/)
 - [Headphone.com](http://graphs.headphone.com/)
 - [Innerfidelity](https://www.innerfidelity.com/headphone-measurements)
-- [oratory1990](https://www.reddit.com/r/oratory1990), [Rtings](https://www.rtings.com/headphones)
+- [oratory1990](https://www.reddit.com/r/oratory1990)
 - [Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1)
 - [Rtings](https://www.rtings.com/headphones)
 with the exception of Reference Audio Analyzer measurements done on SF1 system.
 
 Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
-[target by SBAF-Serious](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
-would be found in
-[innerfidelity/sbaf-serious/Sennheiser HD 650](./results/innerfidelity/sbaf-serious/Sennheiser%20HD%20650).
+calibrated Harman target would be found in
+[innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser HD 650](./results/innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20HD%20650).
 Multiple measurements of a same headphone by a same measurement entity are averaged. All different measurements for
 averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
 averaged data which has no suffixes in the name.
@@ -486,42 +485,28 @@ Crinacle's in-ear measurements have been performed with IEC 60318-4 coupler and 
 Harman in-ear targets. This fact also earns Crinacle's measurements second highest ranking recommendation after
 oratory1990. Crinacle's over-ear measurements use the same ear simulator attached to a MiniDSP ears pinna. The
 measurements done on this system are not as accurate as oratory1990's but because of the high quality ear simulator,
-these are better than rest. A new target curve was created for Crinacle's over-ear measurements by calibrating
-Crinacle's measurements against oratory1990's measurements.
+these are a bit better than rest.
 
-Innerfidelity and Headphone.com measured headphones have
-[SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/)
-only. This is a modified version of Innerfidelity target curve produced by a user called Serious on Super Best Audio
-Friends forum. This curve doesn't have any glaring problems and is quite well balanced overall. Curve was turned into a
-compensation for raw microphone data and tilted 0.2 dB / octave brighter. Innerfidelity measurements are recommended
-over Headphone.com measurements because SBAF-Serious target was developed for Innerfidelity. SBAF-Serious curve was
-modified to be suitable for Headphone.com measurements. CSV data files for Innerfidelity and
-Headphone.com are at `innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv` and
-`headphonecom/resources/headphonecom_compensation_sbaf-serious.csv`, respectively.
-
-Rtings measured headphones have frequency response made for this project. This treble average target is using an average
-of frequency responses of all Rtings measured headphones in the treble range with small manual reduction of the 9kHz
-peak and the Rtings native response below 2500 Hz without bass boost. Three different targets were compared in listening
-tests and the treble average target was found to sound the best. Other two were the Rtings native target curve and
-calibrated and uncalibrated versions of SBAF Serious target curve. Rtings uses the same measurement system as
-Innerfidelity uses so in theory the uncalibrated SBAF Serious target should work similarly with Rtings but listening
-tests found the treble average target to be slightly better. Rtings have
-[a very informative video](https://www.youtube.com/watch?v=HNEI3qLZEKo) about how they are doing the measurements and
-how did they came up with the target they use.
+Innerfidelity, Rtings and Headphone.com measurements have been performed on Head Acoustics HMSII.3 measurement system.
+This system is not an industry standard anymore because of the rigid pinnae.
 
 Reference Audio Analyzer have [three different measurement systems](https://reference-audio-analyzer.pro/en/stands.php)
-none of which seem to represent human hearing particularly well. The most recent HDM-X system is close to the H.A.T.S.
-systems but seems to suffer a bit more in the bass range. HDM1 is clearly worse than other systems and the measurements
-done on SF1 system are not included at all because that is a flat plate coupler. IEM measurements are done with a what
-looks like a tubing coupler and these don't look very accurate. Reference Audio Analyzer measurements and results are a
-last resort. New target curves were created by calibration for all Reference Audio Analyzer systems.
+none of which seem to represent human hearing particularly well. The most recent HDM-X system is close to the Head
+Acoustics HMSII.3 systems but seems to suffer a bit more in the bass range. HDM1 is clearly worse than other systems
+and the measurements done on SF1 system are not included at all because that is a flat plate coupler. IEM measurements
+are done with a what looks like a tubing coupler and these don't look very accurate. Reference Audio Analyzer
+measurements and results are a last resort.
+
+All of the results use frequency response targets that were specifically developed for this project except oratory1990
+and Crinacle's IEM measurements which use standard Harman targets. The target curves were developed by calibrating
+measurements against reference measurements by oratory1990 and Crinacle (IEMs) and modifying the Harman 2018 over-ear
+and 2019 in-ear targets with the calibration data.
 
 None of these targets have bass boost seen in Harman target responses and therefore a +4dB boost was applied for all
-on-ear headphones, +6dB for in-ear headphones and no boost for earbuds. Harman targets actually ask for about +6dB for
-on-ears and +10dB for in-ears but since some headphones cannot achieve this with positive gain limited to +6dB a smaller
-boost was selected. Above 6 to 8kHz data is filtered more heavily to avoid measurement artifacts and no positive gain
-(boost) is applied. In the upper treble measurements are less reliable and boosting them too much will cause serious
-problems while having some narrow dips is not a problem at all.
+over-ear headphones, +6dB for in-ear headphones and no boost for earbuds. Harman targets actually ask for about +6dB for
+over-ears and +9dB for in-ears but since some headphones cannot achieve this with positive gain limited to +6dB, a
+smaller boost was selected. Above 6 to 12 kHz data is filtered more heavily to avoid equalizing the narrow dips and
+notches that depend heavily on the listener's own ears.
 
 ### oratory1990 IEM Target
 In-ear results with oratory1990 target (formerly "Usound" target) are not longer given because the new 2019 Harman
@@ -542,6 +527,30 @@ Of course it's still possible to produce native results with oratory1990 target 
 oratory1990 target file: `--compensation="compensation/oratory1990.csv` or
 `--compensation="compensation/oratory1990_wo_bass.csv`
 
+### Innerfidelity Target by Super Best Audio Friends Forum User "Serious"
+Innerfidelity and Headphone.com measured headphones previously used
+[SBAF-Serious target](https://www.superbestaudiofriends.org/index.php?threads/innerfidelity-fr-target.5560/) only.
+The SBAF-Serious curve is no longer used for these measurements since a new targets were developed by calibrating Harman
+targets. This is a modified version of Innerfidelity target curve produced by a user called Serious on Super Best Audio
+Friends forum. This curve doesn't have any glaring problems and is quite well balanced overall. Curve was turned into a
+compensation for raw microphone data and tilted 0.2 dB / octave brighter. Innerfidelity measurements are recommended
+over Headphone.com measurements because SBAF-Serious target was developed for Innerfidelity. SBAF-Serious curve was
+modified to be suitable for Headphone.com measurements. CSV data files for Innerfidelity and
+Headphone.com are at `innerfidelity/resources/innerfidelity_compensation_sbaf-serious.csv` and
+`headphonecom/resources/headphonecom_compensation_sbaf-serious.csv`, respectively.
+
+### Rtings Targets
+Rtings measured headphones have frequency response target made for this project. This treble average target is using an
+average of frequency responses of all Rtings measured headphones in the treble range with small manual reduction of the
+9kHz peak and the Rtings native response below 2500 Hz without bass boost. Three different targets were compared in
+listening tests and the treble average target was found to sound the best. Other two were the Rtings native target curve
+and calibrated and uncalibrated versions of SBAF Serious target curve. Rtings uses the same measurement system as
+Innerfidelity uses so in theory the uncalibrated SBAF Serious target should work similarly with Rtings but listening
+tests found the treble average target to be slightly better. Rtings have
+[a very informative video](https://www.youtube.com/watch?v=HNEI3qLZEKo) about how they are doing the measurements and
+how did they came up with the target they use.
+
+All of these Rtings targets retired when a new calibrated Harman targets were developed for Rtings measurements.
 
 ## Technical Challenges
 Simply inverting headphone frequency response deviation from target response does not usually produce sufficient

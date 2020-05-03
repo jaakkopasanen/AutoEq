@@ -53,23 +53,24 @@ def get_urls(files):
 def write_recommendations():
     urls = dict()
     # Get links to Reference Audio Analyzer results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'SIEC', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'HDM1', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'HDM-X', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_siec_harman_in-ear_2019v2', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm1_harman_over-ear_2018', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018', '*')))))
     # Get links to Headphone.com results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'sbaf-serious', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_over-ear_2018', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_in-ear_2019v2', '*')))))
     # Get links to Rtings results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'avg', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'rtings_harman_over-ear_2018', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'rtings_harman_in-ear_2019v2', '*')))))
     # Get links to Innerfidelity results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'sbaf-serious', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_over-ear_2018', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_in-ear_2019v2', '*')))))
     # Get links to Crinacle results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'crinacle_over-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'crinacle_harman_over-ear_2018', '*')))))
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2', '*')))))
     # Get links to oratory1990 results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*')))))
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2019v2', '*')))))
-    # Get links to custom results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'custom', '*')))))
 
     with open(os.path.join(DIR_PATH, 'README.md'), 'w', encoding='utf-8') as f:
         keys = sorted(urls.keys(), key=lambda s: s.lower())
@@ -110,35 +111,47 @@ def write_full_index():
     lines = []
     # Get links to Reference Audio Analyzer results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'HDM-X', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018', '*'))),
         'Reference Audio Analyzer'
     ))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'HDM1', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm1_harman_over-ear_2018', '*'))),
         'Reference Audio Analyzer'
     ))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'SIEC', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_siec_harman_in-ear_2019v2', '*'))),
         'Reference Audio Analyzer'
     ))
     # Get links to Headphone.com results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'sbaf-serious', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_over-ear_2018', '*'))),
+        'Headphone.com'
+    ))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_in-ear_2019v2', '*'))),
         'Headphone.com'
     ))
     # Get links to Rtings results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'avg', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'rtings_harman_over-ear_2018', '*'))),
+        'Rtings'
+    ))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'rtings_harman_in-ear_2019v2', '*'))),
         'Rtings'
     ))
     # Get links to Innerfidelity results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'sbaf-serious', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_over-ear_2018', '*'))),
+        'Innerfidelity'
+    ))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_in-ear_2019v2', '*'))),
         'Innerfidelity'
     ))
     # Get links to Crinacle results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'crinacle_over-ear', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'crinacle_harman_over-ear_2018', '*'))),
         'Crinacle'
     ))
     lines.extend(get_lines(
