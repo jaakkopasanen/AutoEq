@@ -1,0 +1,6 @@
+requests~=2.22.0
+PyPDF2~=1.26.0
+ghostscript~=0.6
+beautifulsoup4~=4.8.2
+selenium~=3.141.0
+rapidfuzz~=0.2.1
