@@ -1401,7 +1401,7 @@ class FrequencyResponse:
         if target and len(self.target):
             ax.plot(
                 self.frequency, self.target,
-                **self.kwarg_defaults(target_plot_kwargs, label='Taret', linewidth=5, color='lightblue')
+                **self.kwarg_defaults(target_plot_kwargs, label='Target', linewidth=5, color='lightblue')
             )
 
         if smoothed and len(self.smoothed):
@@ -1443,19 +1443,16 @@ class FrequencyResponse:
         if fixed_band_eq and len(self.fixed_band_eq):
             ax.plot(
                 self.frequency, self.fixed_band_eq,
-                **self.kwarg_defaults(fixed_band_eq_plot_kwargs, label='Fixed Band Eq', linewidth=1, color='limegreen')
+                **self.kwarg_defaults(
+                    fixed_band_eq_plot_kwargs,
+                    label='Fixed Band Eq', linewidth=1, color='darkgreen', linestyle='--'
+                )
             )
 
-        if equalized and len(self.equalized_raw) and not len(self.equalized_smoothed):
+        if equalized and len(self.equalized_raw):
             ax.plot(
                 self.frequency, self.equalized_raw,
-                **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized Raw', linewidth=1, color='blue')
-            )
-
-        if equalized and len(self.equalized_smoothed):
-            ax.plot(
-                self.frequency, self.equalized_smoothed,
-                **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized Smoothed', linewidth=1, color='blue')
+                **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized', linewidth=1, color='blue')
             )
 
         ax.set_xlabel('Frequency (Hz)')
