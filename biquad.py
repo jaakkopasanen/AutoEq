@@ -110,6 +110,13 @@ def high_shelf(fc, Q, gain, fs=48000):
 
 
 def digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2):
+    f = np.array(f)
+    a0 = np.array(a0)
+    a1 = np.array(a1)
+    a2 = np.array(a2)
+    b0 = np.array(b0)
+    b1 = np.array(b1)
+    b2 = np.array(b2)
     w = 2 * np.pi * f / fs
     phi = 4 * np.sin(w / 2) ** 2
 
