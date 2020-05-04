@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 28 Hz    | 0.67 | 6.4 dB  |
-| Peaking | 256 Hz   | 0.85 | 6.0 dB  |
-| Peaking | 560 Hz   | 0.48 | -4.5 dB |
-| Peaking | 8102 Hz  | 3.36 | -2.2 dB |
-| Peaking | 19945 Hz | 2.18 | -3.3 dB |
-| Peaking | 1436 Hz  | 3.35 | -1.6 dB |
-| Peaking | 2140 Hz  | 3.81 | 1.6 dB  |
-| Peaking | 4167 Hz  | 3.53 | 3.3 dB  |
-| Peaking | 4851 Hz  | 5.23 | -4.9 dB |
-| Peaking | 21189 Hz | 1.84 | -1.6 dB |
+| Peaking | 28 Hz    | 0.64 | 6.4 dB  |
+| Peaking | 247 Hz   | 0.87 | 5.5 dB  |
+| Peaking | 1566 Hz  | 0.16 | -5.1 dB |
+| Peaking | 3123 Hz  | 0.57 | 5.4 dB  |
+| Peaking | 13621 Hz | 1.02 | 3.8 dB  |
+| Peaking | 3169 Hz  | 4.73 | -2.9 dB |
+| Peaking | 4106 Hz  | 3.62 | 5.5 dB  |
+| Peaking | 4831 Hz  | 4.81 | -6.4 dB |
+| Peaking | 7040 Hz  | 2.81 | 3.1 dB  |
+| Peaking | 7963 Hz  | 5.6  | -3.6 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 7.3 dB  |
-| Peaking | 62 Hz    | 1.41 | 1.0 dB  |
-| Peaking | 125 Hz   | 1.41 | 1.3 dB  |
-| Peaking | 250 Hz   | 1.41 | 4.1 dB  |
-| Peaking | 500 Hz   | 1.41 | -2.5 dB |
+| Peaking | 31 Hz    | 1.41 | 7.4 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.9 dB  |
+| Peaking | 125 Hz   | 1.41 | 1.4 dB  |
+| Peaking | 250 Hz   | 1.41 | 3.7 dB  |
+| Peaking | 500 Hz   | 1.41 | -2.4 dB |
 | Peaking | 1000 Hz  | 1.41 | -3.0 dB |
-| Peaking | 2000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 4000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.6 dB |
-| Peaking | 16000 Hz | 1.41 | -0.2 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.2 dB |
+| Peaking | 16000 Hz | 1.41 | 3.3 dB  |
 
 ### Graphs
 ![](./Ritmix%20RH-508.png)

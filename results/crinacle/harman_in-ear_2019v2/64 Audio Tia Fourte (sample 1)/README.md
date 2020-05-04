@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-7.1dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 27 Hz    | 0.03 | -2.5 dB  |
-| Peaking | 738 Hz   | 1.44 | -4.7 dB  |
-| Peaking | 1150 Hz  | 1.27 | 6.0 dB   |
-| Peaking | 3897 Hz  | 2.1  | 6.9 dB   |
-| Peaking | 19487 Hz | 0.54 | -18.5 dB |
-| Peaking | 20 Hz    | 1.91 | -1.0 dB  |
-| Peaking | 4681 Hz  | 6.03 | 0.8 dB   |
-| Peaking | 8227 Hz  | 4.05 | -4.9 dB  |
-| Peaking | 9183 Hz  | 3.51 | 2.8 dB   |
-| Peaking | 11086 Hz | 2.6  | 1.3 dB   |
+| Peaking | 55 Hz    | 0.03 | -2.3 dB  |
+| Peaking | 734 Hz   | 1.34 | -4.5 dB  |
+| Peaking | 1168 Hz  | 1.19 | 6.9 dB   |
+| Peaking | 3905 Hz  | 1.91 | 6.8 dB   |
+| Peaking | 19397 Hz | 0.63 | -17.8 dB |
+| Peaking | 17 Hz    | 1.77 | -0.7 dB  |
+| Peaking | 8042 Hz  | 5.77 | -4.5 dB  |
+| Peaking | 8848 Hz  | 2.22 | 1.1 dB   |
+| Peaking | 12277 Hz | 0.95 | 1.7 dB   |
+| Peaking | 16427 Hz | 1.56 | -1.8 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.2dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -3.7 dB  |
-| Peaking | 62 Hz    | 1.41 | -0.9 dB  |
-| Peaking | 125 Hz   | 1.41 | -1.8 dB  |
-| Peaking | 250 Hz   | 1.41 | -1.5 dB  |
+| Peaking | 31 Hz    | 1.41 | -2.8 dB  |
+| Peaking | 62 Hz    | 1.41 | -1.2 dB  |
+| Peaking | 125 Hz   | 1.41 | -1.5 dB  |
+| Peaking | 250 Hz   | 1.41 | -1.7 dB  |
 | Peaking | 500 Hz   | 1.41 | -4.2 dB  |
-| Peaking | 1000 Hz  | 1.41 | 1.9 dB   |
+| Peaking | 1000 Hz  | 1.41 | 2.0 dB   |
 | Peaking | 2000 Hz  | 1.41 | 1.1 dB   |
-| Peaking | 4000 Hz  | 1.41 | 6.0 dB   |
-| Peaking | 8000 Hz  | 1.41 | -2.2 dB  |
-| Peaking | 16000 Hz | 1.41 | -13.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 5.8 dB   |
+| Peaking | 8000 Hz  | 1.41 | -1.2 dB  |
+| Peaking | 16000 Hz | 1.41 | -11.5 dB |
 
 ### Graphs
 ![](./64%20Audio%20Tia%20Fourte%20(sample%201).png)

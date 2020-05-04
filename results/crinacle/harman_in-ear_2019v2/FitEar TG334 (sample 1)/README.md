@@ -2,38 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
-with these parameters. The first 4 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+In case of using parametric equalizer, apply preamp of **-7.5dB** and build filters manually
+with these parameters. The first 5 filters can be used independently.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 117 Hz  | 0.95 | -1.4 dB |
-| Peaking | 237 Hz  | 0.61 | -4.8 dB |
-| Peaking | 2866 Hz | 1.63 | 5.8 dB  |
-| Peaking | 4565 Hz | 2.44 | 4.9 dB  |
-| Peaking | 931 Hz  | 2.55 | 1.3 dB  |
-| Peaking | 1484 Hz | 1.63 | -1.4 dB |
-| Peaking | 2041 Hz | 3.45 | 1.3 dB  |
-| Peaking | 5268 Hz | 5.21 | 1.5 dB  |
-| Peaking | 6116 Hz | 1.85 | -1.0 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 32 Hz    | 1.05 | 0.8 dB  |
+| Peaking | 208 Hz   | 0.5  | -5.3 dB |
+| Peaking | 3360 Hz  | 1.1  | 6.6 dB  |
+| Peaking | 11189 Hz | 1.79 | 3.6 dB  |
+| Peaking | 18204 Hz | 0.4  | 6.4 dB  |
+| Peaking | 1483 Hz  | 5.2  | -1.5 dB |
+| Peaking | 5010 Hz  | 4.74 | 2.3 dB  |
+| Peaking | 6270 Hz  | 5.13 | -2.5 dB |
+| Peaking | 8019 Hz  | 5.32 | -2.3 dB |
+| Peaking | 9200 Hz  | 4.04 | 1.9 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-10.2dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -0.2 dB |
-| Peaking | 62 Hz    | 1.41 | -0.6 dB |
-| Peaking | 125 Hz   | 1.41 | -3.6 dB |
-| Peaking | 250 Hz   | 1.41 | -4.7 dB |
+| Peaking | 31 Hz    | 1.41 | 0.7 dB  |
+| Peaking | 62 Hz    | 1.41 | -1.0 dB |
+| Peaking | 125 Hz   | 1.41 | -3.3 dB |
+| Peaking | 250 Hz   | 1.41 | -4.9 dB |
 | Peaking | 500 Hz   | 1.41 | -1.8 dB |
 | Peaking | 1000 Hz  | 1.41 | -0.3 dB |
-| Peaking | 2000 Hz  | 1.41 | 1.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | 7.2 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.1 dB |
-| Peaking | 16000 Hz | 1.41 | -0.0 dB |
+| Peaking | 2000 Hz  | 1.41 | 2.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 6.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.7 dB  |
+| Peaking | 16000 Hz | 1.41 | 9.6 dB  |
 
 ### Graphs
 ![](./FitEar%20TG334%20(sample%201).png)

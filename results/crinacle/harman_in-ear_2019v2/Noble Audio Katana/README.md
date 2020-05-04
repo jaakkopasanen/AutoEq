@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 18 Hz    | 1.1  | 1.7 dB  |
-| Peaking | 128 Hz   | 0.83 | -3.1 dB |
-| Peaking | 262 Hz   | 0.98 | -3.1 dB |
-| Peaking | 4349 Hz  | 1.09 | 8.2 dB  |
-| Peaking | 6760 Hz  | 1.38 | -5.3 dB |
-| Peaking | 871 Hz   | 3.72 | 1.1 dB  |
-| Peaking | 11649 Hz | 1.05 | 1.7 dB  |
-| Peaking | 15824 Hz | 1.61 | 3.6 dB  |
-| Peaking | 17435 Hz | 1.54 | 1.6 dB  |
-| Peaking | 19687 Hz | 0.39 | -9.5 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 22 Hz    | 0.83 | 2.1 dB   |
+| Peaking | 183 Hz   | 0.59 | -4.7 dB  |
+| Peaking | 4103 Hz  | 1.15 | 6.9 dB   |
+| Peaking | 7374 Hz  | 1.43 | -6.1 dB  |
+| Peaking | 11085 Hz | 1.1  | 8.1 dB   |
+| Peaking | 5769 Hz  | 6.81 | -4.1 dB  |
+| Peaking | 6048 Hz  | 2.39 | 2.1 dB   |
+| Peaking | 14233 Hz | 3.17 | 2.9 dB   |
+| Peaking | 16013 Hz | 1.94 | 2.2 dB   |
+| Peaking | 20106 Hz | 0.58 | -10.2 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 1.0 dB  |
-| Peaking | 62 Hz    | 1.41 | -0.7 dB |
-| Peaking | 125 Hz   | 1.41 | -3.4 dB |
-| Peaking | 250 Hz   | 1.41 | -4.0 dB |
+| Peaking | 31 Hz    | 1.41 | 1.9 dB  |
+| Peaking | 62 Hz    | 1.41 | -1.0 dB |
+| Peaking | 125 Hz   | 1.41 | -3.1 dB |
+| Peaking | 250 Hz   | 1.41 | -4.2 dB |
 | Peaking | 500 Hz   | 1.41 | -0.9 dB |
-| Peaking | 1000 Hz  | 1.41 | 0.7 dB  |
-| Peaking | 2000 Hz  | 1.41 | 0.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | 7.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.8 dB |
-| Peaking | 16000 Hz | 1.41 | -1.5 dB |
+| Peaking | 1000 Hz  | 1.41 | 0.8 dB  |
+| Peaking | 2000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 6.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 16000 Hz | 1.41 | 3.6 dB  |
 
 ### Graphs
 ![](./Noble%20Audio%20Katana.png)

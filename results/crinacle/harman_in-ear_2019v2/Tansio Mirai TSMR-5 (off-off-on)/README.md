@@ -8,33 +8,33 @@ When using independent subset of filters, apply preamp of **-6.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 21 Hz    | 0.65 | 5.6 dB  |
-| Peaking | 56 Hz    | 1.16 | 2.1 dB  |
-| Peaking | 834 Hz   | 1.09 | 4.2 dB  |
-| Peaking | 1963 Hz  | 1.83 | -2.9 dB |
-| Peaking | 6926 Hz  | 0.82 | -3.6 dB |
-| Peaking | 4511 Hz  | 4.37 | -2.4 dB |
-| Peaking | 6559 Hz  | 1.88 | 2.7 dB  |
-| Peaking | 7562 Hz  | 4.29 | -4.0 dB |
-| Peaking | 12679 Hz | 2.03 | 1.3 dB  |
-| Peaking | 16160 Hz | 4.1  | -2.2 dB |
+| Peaking | 26 Hz    | 0.51 | 6.0 dB  |
+| Peaking | 850 Hz   | 1.11 | 4.2 dB  |
+| Peaking | 1735 Hz  | 1.85 | -1.8 dB |
+| Peaking | 2146 Hz  | 3.15 | -2.0 dB |
+| Peaking | 4613 Hz  | 1.96 | -3.5 dB |
+| Peaking | 226 Hz   | 1.62 | -1.0 dB |
+| Peaking | 483 Hz   | 2.72 | 0.5 dB  |
+| Peaking | 7876 Hz  | 3.37 | -6.2 dB |
+| Peaking | 16446 Hz | 0.24 | 2.7 dB  |
+| Peaking | 18234 Hz | 0.54 | 2.5 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.5dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 5.8 dB  |
-| Peaking | 62 Hz    | 1.41 | 2.4 dB  |
-| Peaking | 125 Hz   | 1.41 | 0.1 dB  |
-| Peaking | 250 Hz   | 1.41 | -0.8 dB |
+| Peaking | 31 Hz    | 1.41 | 6.6 dB  |
+| Peaking | 62 Hz    | 1.41 | 2.0 dB  |
+| Peaking | 125 Hz   | 1.41 | 0.4 dB  |
+| Peaking | 250 Hz   | 1.41 | -1.1 dB |
 | Peaking | 500 Hz   | 1.41 | 2.0 dB  |
-| Peaking | 1000 Hz  | 1.41 | 3.8 dB  |
+| Peaking | 1000 Hz  | 1.41 | 3.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | -2.7 dB |
 | Peaking | 4000 Hz  | 1.41 | -1.5 dB |
-| Peaking | 8000 Hz  | 1.41 | -3.7 dB |
-| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+| Peaking | 8000 Hz  | 1.41 | -2.8 dB |
+| Peaking | 16000 Hz | 1.41 | 6.6 dB  |
 
 ### Graphs
 ![](./Tansio%20Mirai%20TSMR-5%20(off-off-on).png)

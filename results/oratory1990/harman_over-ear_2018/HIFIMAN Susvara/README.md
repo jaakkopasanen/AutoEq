@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-4.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.5dB**.
+When using independent subset of filters, apply preamp of **-4.6dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 22 Hz    | 0.76 | 3.7 dB   |
-| Peaking | 55 Hz    | 1.26 | 1.6 dB   |
-| Peaking | 1731 Hz  | 1.97 | 4.4 dB   |
-| Peaking | 3148 Hz  | 1.6  | -3.8 dB  |
-| Peaking | 20148 Hz | 0.43 | -10.2 dB |
-| Peaking | 360 Hz   | 1.08 | -1.0 dB  |
-| Peaking | 826 Hz   | 4.93 | -1.5 dB  |
-| Peaking | 1379 Hz  | 7.52 | 1.4 dB   |
-| Peaking | 8980 Hz  | 2.49 | 1.2 dB   |
-| Peaking | 14424 Hz | 0.72 | -1.2 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 16 Hz    | 0.24 | 4.1 dB  |
+| Peaking | 267 Hz   | 0.76 | -1.1 dB |
+| Peaking | 1668 Hz  | 1.47 | 7.1 dB  |
+| Peaking | 9211 Hz  | 0.56 | 11.0 dB |
+| Peaking | 15444 Hz | 0.07 | -9.4 dB |
+| Peaking | 444 Hz   | 5.37 | -0.5 dB |
+| Peaking | 2226 Hz  | 4.05 | 1.3 dB  |
+| Peaking | 2846 Hz  | 3.72 | -1.4 dB |
+| Peaking | 7742 Hz  | 2.26 | 2.3 dB  |
+| Peaking | 7744 Hz  | 6.55 | -4.4 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 3.9 dB  |
-| Peaking | 62 Hz    | 1.41 | 1.6 dB  |
-| Peaking | 125 Hz   | 1.41 | 0.2 dB  |
-| Peaking | 250 Hz   | 1.41 | -0.7 dB |
+| Peaking | 31 Hz    | 1.41 | 4.3 dB  |
+| Peaking | 62 Hz    | 1.41 | 1.4 dB  |
+| Peaking | 125 Hz   | 1.41 | 0.3 dB  |
+| Peaking | 250 Hz   | 1.41 | -1.1 dB |
 | Peaking | 500 Hz   | 1.41 | -0.9 dB |
 | Peaking | 1000 Hz  | 1.41 | 0.3 dB  |
-| Peaking | 2000 Hz  | 1.41 | 2.8 dB  |
-| Peaking | 4000 Hz  | 1.41 | -3.8 dB |
-| Peaking | 8000 Hz  | 1.41 | 0.9 dB  |
-| Peaking | 16000 Hz | 1.41 | -7.3 dB |
+| Peaking | 2000 Hz  | 1.41 | 3.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | -4.3 dB |
+| Peaking | 8000 Hz  | 1.41 | 3.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -7.5 dB |
 
 ### Graphs
 ![](./HIFIMAN%20Susvara.png)

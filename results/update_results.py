@@ -57,8 +57,9 @@ def main():
     harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2_wo_bass.csv')
     harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
     crinacle_overear = os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'resources', 'crinacle_over-ear.csv')
+    #measurements/referenceaudioanalyzer/resources/referenceaudioanalyzer_hdm1_harman_over-ear_2018_wo_bass.csv
     raa_hdmx = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018_wo_bass.csv')
-    raa_hdm1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_hdm_harman_over-ear_2018_wo_bass1.csv')
+    raa_hdm1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_hdm1_harman_over-ear_2018_wo_bass.csv')
     raa_siec = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_siec_harman_in-ear_2019v2_wo_bass.csv')
 
     eq_kwargs = {

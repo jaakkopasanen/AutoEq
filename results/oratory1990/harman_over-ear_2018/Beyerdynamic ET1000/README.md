@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.8dB**.
+When using independent subset of filters, apply preamp of **-7.5dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 37 Hz    | 0.85 | 7.2 dB   |
-| Peaking | 1849 Hz  | 1.11 | -2.4 dB  |
-| Peaking | 6160 Hz  | 2.47 | 5.1 dB   |
-| Peaking | 12812 Hz | 2.58 | -6.7 dB  |
-| Peaking | 20495 Hz | 0.41 | -10.0 dB |
-| Peaking | 40 Hz    | 3.46 | -1.4 dB  |
-| Peaking | 70 Hz    | 1.96 | 4.1 dB   |
-| Peaking | 121 Hz   | 0.97 | -3.2 dB  |
-| Peaking | 643 Hz   | 2.9  | 1.3 dB   |
-| Peaking | 19861 Hz | 2.09 | -1.9 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 34 Hz    | 0.66 | 6.9 dB  |
+| Peaking | 4178 Hz  | 2.75 | 2.0 dB  |
+| Peaking | 6926 Hz  | 2.24 | 4.2 dB  |
+| Peaking | 7389 Hz  | 0.65 | 7.9 dB  |
+| Peaking | 16076 Hz | 0.07 | -7.2 dB |
+| Peaking | 71 Hz    | 1.84 | 5.3 dB  |
+| Peaking | 105 Hz   | 0.67 | -3.6 dB |
+| Peaking | 638 Hz   | 2.15 | 1.6 dB  |
+| Peaking | 2516 Hz  | 3.98 | 1.0 dB  |
+| Peaking | 14510 Hz | 2.42 | 0.4 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
@@ -26,15 +26,15 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 31 Hz    | 1.41 | 6.1 dB  |
-| Peaking | 62 Hz    | 1.41 | 5.9 dB  |
-| Peaking | 125 Hz   | 1.41 | -2.8 dB |
-| Peaking | 250 Hz   | 1.41 | -0.6 dB |
-| Peaking | 500 Hz   | 1.41 | 1.0 dB  |
+| Peaking | 62 Hz    | 1.41 | 5.8 dB  |
+| Peaking | 125 Hz   | 1.41 | -2.7 dB |
+| Peaking | 250 Hz   | 1.41 | -0.9 dB |
+| Peaking | 500 Hz   | 1.41 | 0.9 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.7 dB |
-| Peaking | 2000 Hz  | 1.41 | -2.8 dB |
-| Peaking | 4000 Hz  | 1.41 | 1.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | 1.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -9.0 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.0 dB  |
+| Peaking | 8000 Hz  | 1.41 | 4.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -8.6 dB |
 
 ### Graphs
 ![](./Beyerdynamic%20ET1000.png)

@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.6dB**.
+When using independent subset of filters, apply preamp of **-6.5dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 11 Hz    | 0.3  | 3.7 dB  |
-| Peaking | 305 Hz   | 0.37 | -6.2 dB |
-| Peaking | 928 Hz   | 0.45 | 6.6 dB  |
-| Peaking | 6735 Hz  | 2.83 | -5.3 dB |
-| Peaking | 19673 Hz | 0.63 | -5.1 dB |
-| Peaking | 2153 Hz  | 2.07 | -2.7 dB |
-| Peaking | 5042 Hz  | 0.52 | 2.7 dB  |
-| Peaking | 5370 Hz  | 3.34 | -4.0 dB |
-| Peaking | 7615 Hz  | 5.64 | -3.1 dB |
-| Peaking | 16227 Hz | 4.19 | -2.4 dB |
+| Peaking | 15 Hz    | 0.4  | 4.1 dB  |
+| Peaking | 354 Hz   | 0.32 | -6.6 dB |
+| Peaking | 934 Hz   | 0.49 | 8.0 dB  |
+| Peaking | 7145 Hz  | 2.14 | -8.8 dB |
+| Peaking | 10438 Hz | 0.97 | 7.2 dB  |
+| Peaking | 2263 Hz  | 2.84 | -2.2 dB |
+| Peaking | 2875 Hz  | 2.99 | 1.9 dB  |
+| Peaking | 4255 Hz  | 3.78 | 3.2 dB  |
+| Peaking | 5251 Hz  | 2.94 | -3.0 dB |
+| Peaking | 6471 Hz  | 4.83 | 1.3 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 2.5 dB  |
-| Peaking | 62 Hz    | 1.41 | -0.1 dB |
-| Peaking | 125 Hz   | 1.41 | -2.9 dB |
-| Peaking | 250 Hz   | 1.41 | -3.9 dB |
+| Peaking | 31 Hz    | 1.41 | 3.3 dB  |
+| Peaking | 62 Hz    | 1.41 | -0.5 dB |
+| Peaking | 125 Hz   | 1.41 | -2.6 dB |
+| Peaking | 250 Hz   | 1.41 | -4.1 dB |
 | Peaking | 500 Hz   | 1.41 | -1.1 dB |
-| Peaking | 1000 Hz  | 1.41 | 4.9 dB  |
+| Peaking | 1000 Hz  | 1.41 | 5.0 dB  |
 | Peaking | 2000 Hz  | 1.41 | 1.6 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.6 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.2 dB |
-| Peaking | 16000 Hz | 1.41 | -2.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 1.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.9 dB |
+| Peaking | 16000 Hz | 1.41 | 3.2 dB  |
 
 ### Graphs
 ![](./Jomo%20Audio%20Flamenco%20(bass,%20treble)%20(sample%201).png)

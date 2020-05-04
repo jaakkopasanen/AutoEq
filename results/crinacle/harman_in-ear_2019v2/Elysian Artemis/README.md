@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.0dB**.
+When using independent subset of filters, apply preamp of **-7.4dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 114 Hz  | 0.58 | -1.8 dB |
-| Peaking | 270 Hz  | 0.4  | -5.7 dB |
-| Peaking | 947 Hz  | 0.55 | 2.8 dB  |
-| Peaking | 3145 Hz | 1.85 | 5.2 dB  |
-| Peaking | 4526 Hz | 3.22 | 4.4 dB  |
-| Peaking | 18 Hz   | 2.19 | 1.4 dB  |
-| Peaking | 1410 Hz | 3.3  | -1.5 dB |
-| Peaking | 1619 Hz | 2.15 | 1.1 dB  |
-| Peaking | 5276 Hz | 3.99 | 0.7 dB  |
-| Peaking | 7045 Hz | 3.73 | -2.0 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 78 Hz    | 1.19 | -2.4 dB |
+| Peaking | 245 Hz   | 0.5  | -6.2 dB |
+| Peaking | 937 Hz   | 1.44 | 2.1 dB  |
+| Peaking | 3453 Hz  | 1.27 | 5.7 dB  |
+| Peaking | 19097 Hz | 0.16 | 6.8 dB  |
+| Peaking | 13 Hz    | 0.75 | 2.1 dB  |
+| Peaking | 1822 Hz  | 3.96 | 1.4 dB  |
+| Peaking | 4818 Hz  | 4.43 | 1.7 dB  |
+| Peaking | 7301 Hz  | 2.77 | -7.0 dB |
+| Peaking | 8491 Hz  | 1.92 | 4.4 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-10.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -0.1 dB |
-| Peaking | 62 Hz    | 1.41 | -2.0 dB |
-| Peaking | 125 Hz   | 1.41 | -4.7 dB |
-| Peaking | 250 Hz   | 1.41 | -5.4 dB |
+| Peaking | 31 Hz    | 1.41 | 0.7 dB  |
+| Peaking | 62 Hz    | 1.41 | -2.3 dB |
+| Peaking | 125 Hz   | 1.41 | -4.4 dB |
+| Peaking | 250 Hz   | 1.41 | -5.7 dB |
 | Peaking | 500 Hz   | 1.41 | -2.3 dB |
 | Peaking | 1000 Hz  | 1.41 | 1.1 dB  |
-| Peaking | 2000 Hz  | 1.41 | 1.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | 6.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.7 dB |
-| Peaking | 16000 Hz | 1.41 | 0.1 dB  |
+| Peaking | 2000 Hz  | 1.41 | 2.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | 2.0 dB  |
+| Peaking | 16000 Hz | 1.41 | 9.6 dB  |
 
 ### Graphs
 ![](./Elysian%20Artemis.png)

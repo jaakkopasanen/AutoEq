@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-7.6dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 13 Hz    | 0.27 | 2.3 dB  |
-| Peaking | 229 Hz   | 0.64 | -5.2 dB |
-| Peaking | 1896 Hz  | 1.05 | -5.2 dB |
-| Peaking | 3862 Hz  | 0.63 | 8.1 dB  |
-| Peaking | 15085 Hz | 0.83 | -8.4 dB |
-| Peaking | 798 Hz   | 4.14 | 2.2 dB  |
-| Peaking | 1154 Hz  | 3.19 | -1.3 dB |
-| Peaking | 8036 Hz  | 3.59 | -3.0 dB |
-| Peaking | 10915 Hz | 0.8  | 2.0 dB  |
-| Peaking | 13513 Hz | 2.12 | -2.2 dB |
+| Peaking | 241 Hz   | 0.84 | -5.2 dB |
+| Peaking | 3244 Hz  | 2.1  | 5.9 dB  |
+| Peaking | 5241 Hz  | 0.85 | 7.5 dB  |
+| Peaking | 7907 Hz  | 1.37 | 3.8 dB  |
+| Peaking | 14616 Hz | 0.06 | -4.2 dB |
+| Peaking | 24 Hz    | 0.87 | 2.7 dB  |
+| Peaking | 796 Hz   | 2.34 | 3.8 dB  |
+| Peaking | 902 Hz   | 0.58 | -1.8 dB |
+| Peaking | 9844 Hz  | 5.32 | 2.4 dB  |
+| Peaking | 12524 Hz | 0.83 | -1.0 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 1.9 dB  |
-| Peaking | 62 Hz    | 1.41 | 0.4 dB  |
-| Peaking | 125 Hz   | 1.41 | -2.4 dB |
-| Peaking | 250 Hz   | 1.41 | -4.9 dB |
+| Peaking | 31 Hz    | 1.41 | 2.8 dB  |
+| Peaking | 62 Hz    | 1.41 | 0.1 dB  |
+| Peaking | 125 Hz   | 1.41 | -2.2 dB |
+| Peaking | 250 Hz   | 1.41 | -5.1 dB |
 | Peaking | 500 Hz   | 1.41 | -1.5 dB |
-| Peaking | 1000 Hz  | 1.41 | -0.4 dB |
-| Peaking | 2000 Hz  | 1.41 | -2.4 dB |
-| Peaking | 4000 Hz  | 1.41 | 8.2 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -9.9 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.3 dB |
+| Peaking | 2000 Hz  | 1.41 | -2.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | 3.3 dB  |
+| Peaking | 16000 Hz | 1.41 | -6.7 dB |
 
 ### Graphs
 ![](./Itsfit%20Lab%20Fusion.png)

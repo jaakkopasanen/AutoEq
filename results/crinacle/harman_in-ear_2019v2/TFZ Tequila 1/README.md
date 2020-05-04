@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.0dB**.
+When using independent subset of filters, apply preamp of **-7.2dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 64 Hz   | 0.47 | -1.9 dB |
-| Peaking | 191 Hz  | 0.43 | -5.6 dB |
-| Peaking | 924 Hz  | 0.56 | 3.2 dB  |
-| Peaking | 3399 Hz | 1.87 | 4.9 dB  |
-| Peaking | 8478 Hz | 2.5  | -0.6 dB |
-| Peaking | 1357 Hz | 2.89 | -1.6 dB |
-| Peaking | 1413 Hz | 1.26 | 1.0 dB  |
-| Peaking | 5309 Hz | 6.1  | -2.3 dB |
-| Peaking | 7259 Hz | 2.25 | 1.8 dB  |
-| Peaking | 7930 Hz | 5.94 | -2.4 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 92 Hz    | 0.59 | -4.6 dB |
+| Peaking | 237 Hz   | 0.79 | -4.1 dB |
+| Peaking | 2198 Hz  | 0.37 | 3.4 dB  |
+| Peaking | 10642 Hz | 1.97 | 3.7 dB  |
+| Peaking | 15794 Hz | 0.72 | 5.6 dB  |
+| Peaking | 3842 Hz  | 1.7  | 6.6 dB  |
+| Peaking | 4783 Hz  | 0.69 | -4.4 dB |
+| Peaking | 5234 Hz  | 4.97 | -2.6 dB |
+| Peaking | 6494 Hz  | 5.33 | 4.5 dB  |
+| Peaking | 9217 Hz  | 5.53 | 2.7 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.2dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -1.5 dB |
-| Peaking | 62 Hz    | 1.41 | -3.1 dB |
-| Peaking | 125 Hz   | 1.41 | -5.4 dB |
-| Peaking | 250 Hz   | 1.41 | -4.6 dB |
+| Peaking | 31 Hz    | 1.41 | -0.6 dB |
+| Peaking | 62 Hz    | 1.41 | -3.5 dB |
+| Peaking | 125 Hz   | 1.41 | -5.1 dB |
+| Peaking | 250 Hz   | 1.41 | -4.8 dB |
 | Peaking | 500 Hz   | 1.41 | -0.5 dB |
-| Peaking | 1000 Hz  | 1.41 | 2.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | 2.4 dB  |
 | Peaking | 2000 Hz  | 1.41 | 2.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | 4.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.9 dB |
-| Peaking | 16000 Hz | 1.41 | 0.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | 3.0 dB  |
+| Peaking | 16000 Hz | 1.41 | 8.5 dB  |
 
 ### Graphs
 ![](./TFZ%20Tequila%201.png)
