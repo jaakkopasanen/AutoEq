@@ -231,7 +231,7 @@ def main():
             print('\nProcessing Crinacle on-ear measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'crinacle__harman_over-ear_2018'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'crinacle_harman_over-ear_2018'),
                 compensation=crinacle_overear,
                 **onear_kwargs
             )
