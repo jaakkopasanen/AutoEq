@@ -242,9 +242,9 @@ source venv/Scripts/activate
 ```bash
 pip install -r requirements.txt
 ```
-- Verify installation  
+- Verify installation. If everything went well, you'll see list of command line parameters autoeq accepts.  
 ```bash
-python autoeq.py -h
+python autoeq.py --help
 ```
 
 When coming back at a later time you'll only need to activate virtual environment again
