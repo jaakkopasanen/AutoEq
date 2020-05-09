@@ -89,7 +89,7 @@ Dan Clark Audio Aeon 2 Closed (preliminary)	Dan Clark Audio Aeon 2 Closed	onear
 Dan Clark Audio Aeon X Open	Dan Clark Audio Aeon X Open	onear
 Denon AH-D7200	Denon AH-D7200	onear
 Dunu DK-3001 Pro	Dunu DK-3001 Pro	ignore
-Dunu Titan 3	DUNU Titan 3	inear
+Dunu Titan 3	DUNU Titan 3	ignore
 Earfun Wave	EarFun Wave	onear
 Etymotic Research ER-2XR	Etymotic ER2XR	inear
 Etymotic Research ER-4SR	Etymotic ER4SR	inear
@@ -153,7 +153,7 @@ Koss ESP/95X (6 band parametric)	Massdrop x Koss ESP95X (6 band parametric)	igno
 KZ ATE	KZ ATE	inear
 KZ ES4	KZ ES4	inear
 KZ ZS10	KZ ZS10	inear
-KZ ZS6	KZ ZS6	inear
+KZ ZS6	KZ ZS6	ignore
 KZ ZS7	KZ ZS7	inear
 KZ ZS7 (preliminary)	KZ ZS7	inear
 KZ ZST	KZ ZST	inear
@@ -171,10 +171,10 @@ Monoprice M1060	Monoprice M1060	onear
 Monoprice M650	Monoprice M650	onear
 Moondrop Blessing	Moondrop Blessing	inear
 Moondrop Crescent	Moondrop Crescent	inear
-Moondrop Kanas Pro	Moondrop Kanas Pro	inear
+Moondrop Kanas Pro	Moondrop Kanas Pro	ignore
 Moondrop Kanas Pro (Crinacle Target)	Moondrop Kanas Pro (Crinacle Target)	ignore
-Moondrop KXXS	Moondrop KXXS	inear
-Moondrop Spaceship	Moondrop Spaceship	inear
+Moondrop KXXS	Moondrop KXXS	ignore
+Moondrop Spaceship	Moondrop Spaceship	ignore
 MrSpeakers Aeon Flow Closed	Dan Clark Audio Aeon Flow Closed	onear
 MrSpeakers Ether C Flow	Dan Clark Audio Ether C Flow	onear
 MrSpeakers Ether C Flow 1.1	Dan Clark Audio Ether C Flow 1.1	onear
@@ -190,7 +190,7 @@ NuForce EDC3	NuForce EDC3	inear
 NuForce Stride	NuForce Stride	inear
 oBravo Cupid	oBravo Cupid	inear
 Oppo PM3	Oppo PM3	onear
-Oriolus Finischi	Oriolus Finschi	inear
+Oriolus Finischi	Oriolus Finschi	ignore
 Periodic Audio Be	Periodic Audio Be	inear
 Philips Fidelio M1	Philips Fidelio M1	onear
 Philips Fidelio M2L	Philips Fidelio M2L	onear
@@ -201,7 +201,7 @@ Philips SHP9500	Philips SHP9500	onear
 Philips SHS8000	Philips SHS8000	inear
 PSB M4U 8	PSB M4U 8	onear
 Quad Era-1	QUAD Era-1	onear
-RHA MA750	RHA MA750	inear
+RHA MA750	RHA MA750	ignore
 Ritmix RH-508	Ritmix RH-508	onear
 Rock Zircon	Rock Zircon	inear
 Samsung EO-IG955 (AKG)	Samsung EO-IG955 (AKG)	inear
@@ -272,7 +272,7 @@ Sony XEA20 Xperia Ear Duo	Sony XEA20 Xperia Ear Duo	earbud
 Spiral Ear SE 5-Way Ultimate	Spiral Ear SE 5-Way Ultimate	inear
 Status Audio BT One (Bluetooth)	Status Audio BT One (wireless)	onear
 Status Audio BT One (wired)	Status Audio BT One (wired)	onear
-Stax ED-1	Stax ED-1	onear
+Stax ED-1	Stax ED-1	ignore
 Stax Lambda Nova Basic	Stax Lambda Nova Basic	onear
 Stax Lambda Pro	Stax Lambda Pro	onear
 Stax Lambda Pro (ED1  Setting)	Stax Lambda Pro (ED1  Setting)	ignore
@@ -289,9 +289,9 @@ Tin Audio P1	Tin HiFi P1	inear
 Tin Audio T2	Tin HiFi T2	inear
 Tin Audio T2 (Foam Eartips)	Tin HiFi T2 (foam eartips)	inear
 Tin Audio T2 (front vent mod)	Tin HiFi T2 (front vent mod)	inear
-Tin Audio T2 Pro	Tin HiFi T2 Pro	inear
+Tin Audio T2 Pro	Tin HiFi T2 Pro	ignore
 Tin Audio T3	Tin HiFi T3	inear
-Tin Audio T4	Tin HiFi T4	inear
+Tin Audio T4	Tin HiFi T4	ignore
 Ultrasone Edition 15	Ultrasone Edition 15	onear
 Verum One	Verum One	onear
 Verum One (leather earpads)	Verum One (leather earpads)	onear

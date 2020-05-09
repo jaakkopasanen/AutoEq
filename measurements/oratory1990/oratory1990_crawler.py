@@ -5,12 +5,13 @@ import sys
 import re
 from bs4 import BeautifulSoup
 from ghostscript import Ghostscript
+import PyPDF2
 from PIL import Image, ImageDraw
 import colorsys
 import numpy as np
 import shutil
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex
+from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
 from measurements.image_graph_parser import ImageGraphParser
 from frequency_response import FrequencyResponse
@@ -52,7 +53,7 @@ class Oratory1990Crawler(Crawler):
             url = cells[2].find('a')['href'].replace('?dl=0', '?dl=1')
 
             # Find target curve name
-            target = re.search(r'(Harman AE/OE|Harman IE)', notes)
+            target = re.search(r'(Harman AE/OE|Harman IE|oratory1990)', notes)
             if not target:
                 # Skip all but Harman target results
                 continue
@@ -67,7 +68,8 @@ class Oratory1990Crawler(Crawler):
             false_name = f'{manufacturer} {model}'
             if notes:
                 false_name += f' ({notes})'
-            urls[false_name] = url
+            if false_name not in urls:
+                urls[false_name] = url
         return urls
 
     @staticmethod
@@ -152,6 +154,9 @@ class Oratory1990Crawler(Crawler):
 
         # Read headphone model from the PDF
         f = open(input_file, 'rb')
+        text = PyPDF2.PdfFileReader(f).getPage(0).extractText()
+        if 'crinacle' in text.lower():
+            raise ValueError('Measured by Crinacle')
 
         # Convert to image with ghostscript
         # Using temporary paths with Ghostscript because it seems to be unable to work with non-ascii characters
@@ -159,7 +164,7 @@ class Oratory1990Crawler(Crawler):
         tmp_out = os.path.join(os.path.split(output_file)[0], '__tmp.png')
         if tmp_in == input_file or tmp_out == output_file:
             # Skip tmp files in case it was passed as input
-            return
+            raise ValueError('tmp file')
         shutil.copy(input_file, tmp_in)
         gs = Ghostscript(
             b'pdf2png',
@@ -190,12 +195,21 @@ class Oratory1990Crawler(Crawler):
         os.makedirs(inspection_dir, exist_ok=True)
         os.makedirs(out_dir, exist_ok=True)
 
-        Crawler.download(url, item.true_name, pdf_dir)
-        im = Oratory1990Crawler.pdf_to_image(
-            os.path.join(pdf_dir, f'{item.true_name}.pdf'),
-            os.path.join(image_dir, f'{item.true_name}.png')
-        )
-        if im is None:
+        pdf_path = Crawler.download(url, item.true_name, pdf_dir)
+        if not pdf_path:
+            return
+        try:
+            im = Oratory1990Crawler.pdf_to_image(
+                os.path.join(pdf_dir, f'{item.true_name}.pdf'),
+                os.path.join(image_dir, f'{item.true_name}.png')
+            )
+        except ValueError as err:
+            if str(err) == 'Measured by Crinacle':
+                ignored = item.copy()
+                ignored.form = 'ignore'
+                self.name_index.update(ignored, false_name=item.false_name, true_name=item.true_name, form=item.form)
+                self.write_name_index()
+                print(f'Ignored {item.false_name} because it is measured by Crinacle.')
             return
         fr, inspection = Oratory1990Crawler.parse_image(im, item.true_name)
         inspection.save(os.path.join(inspection_dir, f'{item.true_name}.png'))
