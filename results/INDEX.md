@@ -628,9 +628,20 @@ from the same source.
 - [Bang & Olufsen Beoplay E8](./rtings/rtings_harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8) by Rtings
 - [Bang & Olufsen Beoplay Earset 3i](./rtings/rtings_harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20Earset%203i) by Rtings
 - [Bang & Olufsen Beoplay Earset Wireless](./rtings/rtings_harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20Earset%20Wireless) by Rtings
+- [Bang & Olufsen Beoplay H4 2nd Gen (wired)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H4%202nd%20Gen%20(wired)) by Reference Audio Analyzer
+- [Bang & Olufsen Beoplay H4 2nd Gen (wireless)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H4%202nd%20Gen%20(wireless)) by Reference Audio Analyzer
 - [Bang & Olufsen Beoplay H6 2nd Gen](./innerfidelity/innerfidelity_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H6%202nd%20Gen) by Innerfidelity
 - [Bang & Olufsen Beoplay H6](./innerfidelity/innerfidelity_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H6) by Innerfidelity
 - [Bang & Olufsen Beoplay H6](./rtings/rtings_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H6) by Rtings
+- [Bang & Olufsen Beoplay H8i (wired)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H8i%20(wired)) by Reference Audio Analyzer
+- [Bang & Olufsen Beoplay H8i (wired, power on, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H8i%20(wired,%20power%20on,%20ANC%20off)) by Reference Audio Analyzer
+- [Bang & Olufsen Beoplay H8i (wired, power on, ANC on)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H8i%20(wired,%20power%20on,%20ANC%20on)) by Reference Audio Analyzer
+- [Bang & Olufsen Beoplay H8i (wireless, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H8i%20(wireless,%20ANC%20off)) by Reference Audio Analyzer
+- [Bang & Olufsen Beoplay H8i (wireless, ANC on)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H8i%20(wireless,%20ANC%20on)) by Reference Audio Analyzer
+- [Bang & Olufsen Beoplay H9 3rd Gen (wired, power off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9%203rd%20Gen%20(wired,%20power%20off)) by Reference Audio Analyzer
+- [Bang & Olufsen Beoplay H9 3rd Gen (wired, power on, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9%203rd%20Gen%20(wired,%20power%20on,%20ANC%20off)) by Reference Audio Analyzer
+- [Bang & Olufsen Beoplay H9 3rd Gen (wired, power on, ANC on)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9%203rd%20Gen%20(wired,%20power%20on,%20ANC%20on)) by Reference Audio Analyzer
+- [Bang & Olufsen Beoplay H9 3rd Gen (wireless, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9%203rd%20Gen%20(wireless,%20ANC%20off)) by Reference Audio Analyzer
 - [Bang & Olufsen Beoplay H9](./oratory1990/harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9) by oratory1990
 - [Bang & Olufsen Beoplay H9](./rtings/rtings_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9) by Rtings
 - [Bang & Olufsen Beoplay H9i](./oratory1990/harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H9i) by oratory1990
@@ -867,6 +878,10 @@ from the same source.
 - [Bose AE](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Bose%20AE) by Reference Audio Analyzer
 - [Bose Hearphones](./rtings/rtings_harman_in-ear_2019v2/Bose%20Hearphones) by Rtings
 - [Bose IE2](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20IE2) by Reference Audio Analyzer
+- [Bose Noise Cancelling Headphones 700 (wired)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wired)) by Reference Audio Analyzer
+- [Bose Noise Cancelling Headphones 700 (wireless, ANC 0)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless,%20ANC%200)) by Reference Audio Analyzer
+- [Bose Noise Cancelling Headphones 700 (wireless, ANC 10)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless,%20ANC%2010)) by Reference Audio Analyzer
+- [Bose Noise Cancelling Headphones 700 (wireless, ANC 5)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless,%20ANC%205)) by Reference Audio Analyzer
 - [Bose Noise Cancelling Headphones 700](./oratory1990/harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700) by oratory1990
 - [Bose Noise Cancelling Headphones 700](./rtings/rtings_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700) by Rtings
 - [Bose On-ear headphones](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Bose%20On-ear%20headphones) by Reference Audio Analyzer
@@ -883,6 +898,11 @@ from the same source.
 - [Bose QuietComfort 35 (wired, active)](./innerfidelity/innerfidelity_harman_over-ear_2018/Bose%20QuietComfort%2035%20(wired,%20active)) by Innerfidelity
 - [Bose QuietComfort 35 (wired, passive)](./innerfidelity/innerfidelity_harman_over-ear_2018/Bose%20QuietComfort%2035%20(wired,%20passive)) by Innerfidelity
 - [Bose QuietComfort 35 (wireless)](./innerfidelity/innerfidelity_harman_over-ear_2018/Bose%20QuietComfort%2035%20(wireless)) by Innerfidelity
+- [Bose QuietComfort 35 II (wired, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wired,%20ANC%20off)) by Reference Audio Analyzer
+- [Bose QuietComfort 35 II (wired, ANC on)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wired,%20ANC%20on)) by Reference Audio Analyzer
+- [Bose QuietComfort 35 II (wireless, ANC 1)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wireless,%20ANC%201)) by Reference Audio Analyzer
+- [Bose QuietComfort 35 II (wireless, ANC 2)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wireless,%20ANC%202)) by Reference Audio Analyzer
+- [Bose QuietComfort 35 II (wireless, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wireless,%20ANC%20off)) by Reference Audio Analyzer
 - [Bose QuietComfort 35 II](./rtings/rtings_harman_over-ear_2018/Bose%20QuietComfort%2035%20II) by Rtings
 - [Bose QuietComfort 35](./rtings/rtings_harman_over-ear_2018/Bose%20QuietComfort%2035) by Rtings
 - [Bose QuietComfort 3](./headphonecom/headphonecom_harman_over-ear_2018/Bose%20QuietComfort%203) by Headphone.com
@@ -918,6 +938,15 @@ from the same source.
 - [Bowers & Wilkins P7](./innerfidelity/innerfidelity_harman_over-ear_2018/Bowers%20&%20Wilkins%20P7) by Innerfidelity
 - [Bowers & Wilkins P7](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20P7) by Reference Audio Analyzer
 - [Bowers & Wilkins P7](./rtings/rtings_harman_over-ear_2018/Bowers%20&%20Wilkins%20P7) by Rtings
+- [Bowers & Wilkins PX5](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX5) by Reference Audio Analyzer
+- [Bowers & Wilkins PX7 (wired, ANC auto)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX7%20(wired,%20ANC%20auto)) by Reference Audio Analyzer
+- [Bowers & Wilkins PX7 (wired, ANC hi)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX7%20(wired,%20ANC%20hi)) by Reference Audio Analyzer
+- [Bowers & Wilkins PX7 (wired, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX7%20(wired,%20ANC%20off)) by Reference Audio Analyzer
+- [Bowers & Wilkins PX7 (wired, power off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX7%20(wired,%20power%20off)) by Reference Audio Analyzer
+- [Bowers & Wilkins PX7 (wireless, ANC auto)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX7%20(wireless,%20ANC%20auto)) by Reference Audio Analyzer
+- [Bowers & Wilkins PX7 (wireless, ANC hi)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX7%20(wireless,%20ANC%20hi)) by Reference Audio Analyzer
+- [Bowers & Wilkins PX7 (wireless, ANC low)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX7%20(wireless,%20ANC%20low)) by Reference Audio Analyzer
+- [Bowers & Wilkins PX7 (wireless, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX7%20(wireless,%20ANC%20off)) by Reference Audio Analyzer
 - [Bowers & Wilkins PX7](./rtings/rtings_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX7) by Rtings
 - [Bowers & Wilkins PX](./rtings/rtings_harman_over-ear_2018/Bowers%20&%20Wilkins%20PX) by Rtings
 - [BQEYZ BQ3](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/BQEYZ%20BQ3) by Reference Audio Analyzer
@@ -2403,8 +2432,10 @@ from the same source.
 - [MyST IzoPhones-60](./innerfidelity/innerfidelity_harman_over-ear_2018/MyST%20IzoPhones-60) by Innerfidelity
 - [MyST IzoPhones-60](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/MyST%20IzoPhones-60) by Reference Audio Analyzer
 - [MyST IzoPhones-7](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/MyST%20IzoPhones-7) by Reference Audio Analyzer
+- [MyST Nail 1](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/MyST%20Nail%201) by Reference Audio Analyzer
 - [MyST Nail 3](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/MyST%20Nail%203) by Reference Audio Analyzer
 - [MyST Nail 4](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/MyST%20Nail%204) by Reference Audio Analyzer
+- [MyST Nail2v2](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/MyST%20Nail2v2) by Reference Audio Analyzer
 - [NAD RP18 Bass Light Version](./innerfidelity/innerfidelity_harman_over-ear_2018/NAD%20RP18%20Bass%20Light%20Version) by Innerfidelity
 - [NAD VISO HP50](./headphonecom/headphonecom_harman_over-ear_2018/NAD%20VISO%20HP50) by Headphone.com
 - [NAD VISO HP50](./innerfidelity/innerfidelity_harman_over-ear_2018/NAD%20VISO%20HP50) by Innerfidelity
@@ -3398,7 +3429,7 @@ from the same source.
 - [Sony MDR-XB500](./innerfidelity/innerfidelity_harman_over-ear_2018/Sony%20MDR-XB500) by Innerfidelity
 - [Sony MDR-XB500](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Sony%20MDR-XB500) by Reference Audio Analyzer
 - [Sony MDR-XB50](./oratory1990/harman_in-ear_2019v2/Sony%20MDR-XB50) by oratory1990
-- [Sony MDR-XB50AP](./rtings/rtings_harman_over-ear_2018/Sony%20MDR-XB50AP) by Rtings
+- [Sony MDR-XB50AP](./rtings/rtings_harman_in-ear_2019v2/Sony%20MDR-XB50AP) by Rtings
 - [Sony MDR-XB600](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Sony%20MDR-XB600) by Reference Audio Analyzer
 - [Sony MDR-XB700](./headphonecom/headphonecom_harman_over-ear_2018/Sony%20MDR-XB700) by Headphone.com
 - [Sony MDR-XB700](./innerfidelity/innerfidelity_harman_over-ear_2018/Sony%20MDR-XB700) by Innerfidelity
@@ -3419,6 +3450,7 @@ from the same source.
 - [Sony MDR-ZX1000](./innerfidelity/innerfidelity_harman_over-ear_2018/Sony%20MDR-ZX1000) by Innerfidelity
 - [Sony MDR-ZX110](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Sony%20MDR-ZX110) by Reference Audio Analyzer
 - [Sony MDR-ZX110NC](./rtings/rtings_harman_over-ear_2018/Sony%20MDR-ZX110NC) by Rtings
+- [Sony MDR-ZX220BT](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Sony%20MDR-ZX220BT) by Reference Audio Analyzer
 - [Sony MDR-ZX550BN](./rtings/rtings_harman_over-ear_2018/Sony%20MDR-ZX550BN) by Rtings
 - [Sony MDR-ZX700](./headphonecom/headphonecom_harman_over-ear_2018/Sony%20MDR-ZX700) by Headphone.com
 - [Sony MDR-ZX700](./innerfidelity/innerfidelity_harman_over-ear_2018/Sony%20MDR-ZX700) by Innerfidelity

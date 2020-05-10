@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw
 import colorsys
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex
+from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
 from frequency_response import FrequencyResponse
 
@@ -161,20 +161,31 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
             if mods:
                 # Find an item in name index which has the given name with automatic
                 # suffixes as false name and replace the name with it's true name.
-                name = mods.items[0].true_name
+                true_name = mods.items[0].true_name
             else:
                 # Not in the name index, prompt user
                 print(f'Mod of "{name}" is not known.')
-                name = self.prompt_true_name([name])
+                false_name = name
+                true_name = self.prompt_true_name([false_name])
+                self.name_index.add(NameItem(false_name, true_name, item.form))
+                self.write_name_index()
 
-            report_urls[name] = f'https://reference-audio-analyzer.pro{anchor["href"]}'
+            report_urls[true_name] = f'https://reference-audio-analyzer.pro{anchor["href"]}'
 
         results = []
         for name, url in report_urls.items():
             document = self.get_beautiful_soup(url)  # Sets the driver also
             el = document.find(name='li', text=self.performed_on_stand_regex)
-            rig = el.parent.find(name='ul').find(name='a').text
-            graph = self.driver.find_element_by_id('response9').find_element_by_tag_name('div')  # FR Graph
+            try:
+                rig = el.parent.find(name='ul').find(name='a').text
+            except AttributeError as err:
+                rig = 'HDM-X' if item.form == 'onear' else 'SIEC'
+                print(f'Measurement rig could not be read for "{item.false_name}", guessing {rig}')
+            try:
+                graph = self.driver.find_element_by_id('response9').find_element_by_tag_name('div')  # FR Graph
+            except Exception:
+                print(f'No graph for {item.false_name}')
+                continue
             # Background image
             url = graph.value_of_css_property('background-image').replace('url("', '').replace('")', '')
             file_path = self.download(url, name, image_dir)

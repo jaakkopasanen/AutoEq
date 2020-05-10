@@ -159,6 +159,9 @@ class Crawler(ABC):
             matches += self.name_proposals.search_by_true_name(false_name)
             names_and_ratios = []
             for match in matches:
+                if not match[0].true_name:
+                    # Skip items without true name
+                    continue
                 if match[1] == 100:
                     # Exact match
                     match[0].true_name += ' ✓'
@@ -171,11 +174,11 @@ class Crawler(ABC):
                         if match[0].true_name == names_and_ratios[i][0] and match[1] > names_and_ratios[i][1]:
                             names_and_ratios[i] = (names_and_ratios[i][0], match[1], names_and_ratios[i][2])
 
-            # Prompt
             name_options = [x[0] for x in sorted(names_and_ratios, key=lambda x: x[1], reverse=True)[:4]]
             if false_name not in name_options:
                 name_options.append(false_name)  # Add the false name
 
+            # Prompt
             true_name = self.prompt_true_name(name_options)
 
             if true_name is None:

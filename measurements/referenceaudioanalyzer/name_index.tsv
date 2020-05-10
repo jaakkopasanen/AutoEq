@@ -166,9 +166,19 @@ Axelvox HD 242	Axelvox HD 242	onear
 Axelvox HD 271	Axelvox HD 271	onear
 Axelvox HD 272	Axelvox HD 272	onear
 Axelvox HD 990	Axelvox HD 990	onear
-Bang & Olufsen Beoplay H4 2nd Generation		
-Bang & Olufsen BeoPlay H8i		
-Bang & Olufsen BeoPlay H9 3rd Generation		
+Bang & Olufsen Beoplay H4 2nd Generation	Bang & Olufsen Beoplay H4 2nd Gen	onear
+Bang & Olufsen BeoPlay H8i	Bang & Olufsen Beoplay H8i	onear
+Bang & Olufsen Beoplay H8i (bluetooth noise cancelation off)	Bang & Olufsen Beoplay H8i (wireless, ANC off)	onear
+Bang & Olufsen Beoplay H8i (bluetooth noise cancelation on)	Bang & Olufsen Beoplay H8i (wireless, ANC on)	onear
+Bang & Olufsen Beoplay H8i (wire connection power on noise cancelation off)	Bang & Olufsen Beoplay H8i (wired, power on, ANC off)	onear
+Bang & Olufsen Beoplay H8i (wire connection power on noise cancelation on)	Bang & Olufsen Beoplay H8i (wired, power on, ANC on)	onear
+Bang & Olufsen Beoplay H8i (wire connection)	Bang & Olufsen Beoplay H8i (wired)	onear
+Bang & Olufsen Beoplay H9 3rd Gen (bluetooth noise cancelation off)	Bang & Olufsen Beoplay H9 3rd Gen (wireless, ANC off)	onear
+Bang & Olufsen Beoplay H9 3rd Gen (bluetooth noise cancelation on)	Bang & Olufsen Beoplay H9 3rd Gen (wireless, ANC on)	onear
+Bang & Olufsen Beoplay H9 3rd Gen (wire connection power off)	Bang & Olufsen Beoplay H9 3rd Gen (wired, power off)	onear
+Bang & Olufsen Beoplay H9 3rd Gen (wire connection power on noise cancelation off)	Bang & Olufsen Beoplay H9 3rd Gen (wired, power on, ANC off)	onear
+Bang & Olufsen Beoplay H9 3rd Gen (wire connection power on noise cancelation on)	Bang & Olufsen Beoplay H9 3rd Gen (wired, power on, ANC on)	onear
+Bang & Olufsen BeoPlay H9 3rd Generation	Bang & Olufsen Beoplay H9 3rd Gen	onear
 Beats Dr.Dre Fake Pro		ignore
 Beats Dr.Dre Fake Solo with ControlTalk Headphones Fake		ignore
 Beats Dr.Dre Fake Tour		ignore
@@ -230,10 +240,21 @@ BlackBerry WS-510	BlackBerry WS-510	inear
 Bose AE	Bose AE	onear
 Bose AE2	Bose AE2	onear
 Bose IE2	Bose IE2	inear
-Bose Noise Cancelling Headphones 700		
+Bose Noise Cancelling Headphones 700	Bose Noise Cancelling Headphones 700	onear
+Bose Noise Cancelling Headphones 700 (bluetooth noise cancelation 0)	Bose Noise Cancelling Headphones 700 (wireless, ANC 0)	onear
+Bose Noise Cancelling Headphones 700 (bluetooth noise cancelation 10)	Bose Noise Cancelling Headphones 700 (wireless, ANC 10)	onear
+Bose Noise Cancelling Headphones 700 (bluetooth noise cancelation 5)	Bose Noise Cancelling Headphones 700 (wireless, ANC 5)	onear
+Bose Noise Cancelling Headphones 700 (wire connection)	Bose Noise Cancelling Headphones 700 (wired)	onear
 Bose On-ear headphones	Bose On-ear headphones	onear
-Bose QuietComfort 20		
-Bose QuietComfort 35 II		
+Bose QuietComfort 20	Bose QuietComfort 20	onear
+Bose QuietComfort 20 (noise cancelation off)	Bose QuietComfort 20 (ANC off)	onear
+Bose QuietComfort 20 (noise cancelation on)	Bose QuietComfort 20 (ANC on)	onear
+Bose QuietComfort 35 II	Bose QuietComfort 35 II	onear
+Bose QuietComfort 35 II (bluetooth noise cancelation off)	Bose QuietComfort 35 II (wireless, ANC off)	onear
+Bose QuietComfort 35 II (bluetooth noise cancelation on 1)	Bose QuietComfort 35 II (wireless, ANC 1)	onear
+Bose QuietComfort 35 II (bluetooth noise cancelation on 2)	Bose QuietComfort 35 II (wireless, ANC 2)	onear
+Bose QuietComfort 35 II (wire connection noise cancelation off)	Bose QuietComfort 35 II (wired, ANC off)	onear
+Bose QuietComfort 35 II (wire connection noise cancelation on)	Bose QuietComfort 35 II (wired, ANC on)	onear
 Bose SoundLink Around-Ear Wireless Headphones II (bluetooth)	Bose SoundLink Around-Ear Wireless Headphones II (wireless)	onear
 Bose SoundLink Around-Ear Wireless Headphones II (wire connection)	Bose SoundLink Around-Ear Wireless Headphones II (wired)	onear
 Bose Soundlink Around-Ear Wireless II	Bose SoundLink Around-Ear Wireless Headphones II	onear
@@ -244,8 +265,16 @@ Bowers & Wilkins P3	Bowers & Wilkins P3	onear
 Bowers & Wilkins P5	Bowers & Wilkins P5	onear
 Bowers & Wilkins P5 MK2	Bowers & Wilkins P5 Series 2	onear
 Bowers & Wilkins P7	Bowers & Wilkins P7	onear
-Bowers & Wilkins PX5		
-Bowers & Wilkins PX7		
+Bowers & Wilkins PX5	Bowers & Wilkins PX5	onear
+Bowers & Wilkins PX7	Bowers & Wilkins PX7	onear
+Bowers & Wilkins PX7 (bluetooth noise cancelation off)	Bowers & Wilkins PX7 (wireless, ANC off)	onear
+Bowers & Wilkins PX7 (bluetooth noise cancelation on auto)	Bowers & Wilkins PX7 (wireless, ANC auto)	onear
+Bowers & Wilkins PX7 (bluetooth noise cancelation on hi)	Bowers & Wilkins PX7 (wireless, ANC hi)	onear
+Bowers & Wilkins PX7 (bluetooth noise cancelation on low)	Bowers & Wilkins PX7 (wireless, ANC low)	onear
+Bowers & Wilkins PX7 (wire connection amp off)	Bowers & Wilkins PX7 (wired, power off)	onear
+Bowers & Wilkins PX7 (wire connection noise cancelation auto)	Bowers & Wilkins PX7 (wired, ANC auto)	onear
+Bowers & Wilkins PX7 (wire connection noise cancelation hi)	Bowers & Wilkins PX7 (wired, ANC hi)	onear
+Bowers & Wilkins PX7 (wire connection noise cancelation off)	Bowers & Wilkins PX7 (wired, ANC off)	onear
 BQEYZ BQ3	BQEYZ BQ3	inear
 BQEYZ KB100	BQEYZ KB100	inear
 BQEYZ Spring 1	BQEYZ Spring 1	inear
@@ -640,8 +669,10 @@ MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
+MyST Nail 1	MyST Nail 1	inear
 MyST Nail 3	MyST Nail 3	inear
 MyST Nail 4	MyST Nail 4	inear
+MyST Nail2v2	MyST Nail2v2	inear
 NAD Viso HP50	NAD Viso HP50	onear
 Nakamichi NBE 250	Nakamichi NBE-250	inear
 Nakamichi NEP-MV5	Nakamichi NEP-MV5	inear
@@ -830,6 +861,7 @@ Sony MDR-XB950	Sony MDR-XB950	onear
 Sony MDR-Z1000	Sony MDR-Z1000	onear
 Sony MDR-Z7	Sony MDR-Z7	onear
 Sony MDR-ZX110	Sony MDR-ZX110	onear
+Sony MDR-ZX220BT	Sony MDR-ZX220BT	onear
 Sony MDR-ZX700	Sony MDR-ZX700	onear
 Sony SA1000	Sony MDR-SA1000	onear
 Sony SA3000	Sony MDR-SA3000	onear
@@ -849,7 +881,7 @@ Sony XBA-H1	Sony XBA-H1	inear
 Sony XBA-H3	Sony XBA-H3	inear
 Sony XBA-N1	Sony XBA-N1	inear
 Sony XBA-Z5	Sony XBA-Z5	inear
-Sony ZX220BT		
+Sony ZX220BT	Sony MDR-ZX220BT	onear
 SoundMAGIC E10	SoundMAGIC E10	inear
 SoundMAGIC MP21	SoundMAGIC MP21	inear
 SoundMAGIC PL50	SoundMAGIC PL50	inear
@@ -936,8 +968,8 @@ Westone UM3X	Westone UM3X	inear
 Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 xDuoo EP1	xDuoo EP1	inear
