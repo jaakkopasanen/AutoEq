@@ -128,9 +128,18 @@ results.
 *Peace with full GUI for EqualizerAPO*
 
 ### Android
-doesn't have any system-wide parametric equalizers but there are several options which all have different caveats. Some
-devices have a built-in fixed band equalizer which works system wide but the center frequencies and Q values change from
-device to device so might need to [produce your own results](#equalizing).
+Android has several different equalizer options but not too many powerful apps which work with all apps. Wavelet is the best
+option for newer Androids (version 9 and up) but older devices have a built-in fixed band equalizer which works system wide
+but the center frequencies and Q values vary so might need to [produce your own results](#equalizing).
+
+#### Wavelet
+[Wavelet](https://play.google.com/store/apps/details?id=com.pittvandewitt.wavelet) is an Android app which comes with all the
+AutoEq eq profiles built in. The app works with all music apps so is closest to system-wide equalizer one can have on
+Android without rooting. The equalizer built into this app is very powerful and can represent the AutoEq profiles very
+accurately. There is also an option to tune the sound with graphic equalizer. Wavelet has the best Bluetooth device compatibility of all the tested eq apps on Android.
+
+The main functionalities of Wavelet are free (including AutoEq profiles and graphic eq) but some extra features can be 
+unlocked with an in-app purchase. 
 
 #### USB Audio Player PRO
 [USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is an Android app
@@ -139,7 +148,7 @@ PRO is not system-wide but works with local files and many streaming services th
 has Toneboosters Morphit plugin which has parametric equalizer. This app and the plugin are not free.
 
 #### Music EQ Equalizer
-The best app for system wide equalization on Android (without rooting) is
+The best app for system wide equalization on older Android phones (without rooting) is
 [Music Equalizer EQ](https://play.google.com/store/apps/details?id=mediam.music.equalizer) which is a 10-band standard
 equalizer. Gains for each band can be adjusted with only 1 dB resolution but this isn't a problem because the average
 error is then only 0.25 dB, hardly noticeable. Bigger problem is the potential narrow peaks and notches between the
