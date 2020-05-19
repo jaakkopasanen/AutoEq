@@ -139,7 +139,9 @@ Android without rooting. The equalizer built into this app is very powerful and 
 accurately. There is also an option to tune the sound with graphic equalizer. Wavelet has the best Bluetooth device compatibility of all the tested eq apps on Android.
 
 The main functionalities of Wavelet are free (including AutoEq profiles and graphic eq) but some extra features can be 
-unlocked with an in-app purchase. 
+unlocked with an in-app purchase.
+
+![Wavelet](https://i.imgur.com/UGiBwFX.png)
 
 #### USB Audio Player PRO
 [USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is an Android app
