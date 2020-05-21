@@ -4,3 +4,5 @@ ghostscript~=0.6
 beautifulsoup4~=4.8.2
 selenium~=3.141.0
 rapidfuzz~=0.2.1
+ipywidgets
+jupyterlab

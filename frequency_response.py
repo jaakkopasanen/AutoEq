@@ -10,6 +10,7 @@ from scipy.interpolate import InterpolatedUnivariateSpline
 from scipy.signal import savgol_filter, find_peaks, minimum_phase, firwin2
 from scipy.special import expit
 from scipy.stats import linregress
+from scipy.fftpack import next_fast_len
 import numpy as np
 import urllib
 from time import time
@@ -159,7 +160,7 @@ class FrequencyResponse:
         name = '.'.join(os.path.split(file_path)[1].split('.')[:-1])
 
         # Read file
-        f = open(file_path, 'r')
+        f = open(file_path, 'r', encoding='utf-8')
         s = f.read()
 
         # Regex for AutoEq style CSV
@@ -717,8 +718,12 @@ class FrequencyResponse:
         f_min = np.max([fr.frequency[0], f_res])
         interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
         gain_f_min = interpolator(np.log10(f_min))
+        # Filter length, optimized for FFT speed
+        n = round(fs // 2 / f_res)
+        n = next_fast_len(n)
+        f = np.linspace(0.0, fs // 2, n)
         # Run interpolation
-        fr.interpolate(np.arange(0.0, fs // 2, f_res), pol_order=1)
+        fr.interpolate(f, pol_order=1)
         # Set gain for all frequencies below original minimum frequency to match gain at the original minimum frequency
         fr.raw[fr.frequency <= f_min] = gain_f_min
         if normalize:
@@ -729,12 +734,12 @@ class FrequencyResponse:
         fr.raw *= 2
         # Convert amplitude to linear scale
         fr.raw = 10**(fr.raw / 20)
+        # Zero gain at Nyquist frequency
+        fr.raw[-1] = 0.0
         # Calculate response
-        fr.frequency = np.append(fr.frequency, fs // 2)
-        fr.raw = np.append(fr.raw, 0.0)
-        ir = firwin2(len(fr.frequency)*2+1, fr.frequency, fr.raw, fs=fs)
+        ir = firwin2(len(fr.frequency)*2, fr.frequency, fr.raw, fs=fs)
         # Convert to minimum phase
-        ir = minimum_phase(ir)
+        ir = minimum_phase(ir, n_fft=len(ir))
         return ir
 
     def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True):
