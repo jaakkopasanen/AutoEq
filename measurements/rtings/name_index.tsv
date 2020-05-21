@@ -74,10 +74,19 @@ B&O PLAY Earset Wireless	Bang & Olufsen Beoplay Earset Wireless	earbud
 B&O PLAY H6	Bang & Olufsen Beoplay H6	onear
 B&O PLAY H9	Bang & Olufsen Beoplay H9	onear
 B&O PLAY H9i	Bang & Olufsen Beoplay H9i	onear
+Bang & Olufsen E8	Bang & Olufsen Beoplay E8	inear
+Bang & Olufsen E8 2.0	Bang & Olufsen Beoplay E8 2.0	inear
+Bang & Olufsen E8 3.0	Bang & Olufsen Beoplay E8 3.0	inear
+Bang & Olufsen Earset 3i	Bang & Olufsen Beoplay Earset 3i	earbud
+Bang & Olufsen Earset Wireless	Bang & Olufsen Beoplay Earset Wireless	earbud
+Bang & Olufsen H6	Bang & Olufsen Beoplay H6	onear
+Bang & Olufsen H9	Bang & Olufsen Beoplay H9	onear
+Bang & Olufsen H9i	Bang & Olufsen Beoplay H9i	onear
 Beats BeatsX	Beats BeatsX	inear
 Beats EP On-Ear	Beats EP On-Ear	onear
 Beats Executive	Beats Executive	onear
 Beats Powerbeats 2 Wireless	Beats Powerbeats 2 Wireless	inear
+Beats Powerbeats 4	Beats Powerbeats 4	inear
 Beats Powerbeats Pro	Beats Powerbeats Pro	inear
 Beats Powerbeats3 Wireless	Beats Powerbeats3 Wireless	inear
 Beats Solo Pro	Beats Solo Pro	onear
@@ -182,6 +191,7 @@ Jabra Elite Active 65t	Jabra Elite Active 65t	inear
 Jabra Elite Active 75t	Jabra Elite Active 75t	inear
 Jabra Elite Sport	Jabra Elite Sport	inear
 Jabra Evolve 65t	Jabra Evolve 65t	inear
+Jabra Steel		ignore
 Jaybird Freedom	Jaybird Freedom	inear
 Jaybird Freedom 2	Jaybird Freedom 2	inear
 Jaybird Run	Jaybird Run	inear
@@ -270,6 +280,7 @@ Panasonic RP-HJE120	Panasonic RP-HJE120	inear
 Parrot Zik 2.0	Parrot Zik 2.0	onear
 Parrot Zik 3.0	Parrot Zik 3.0	onear
 Philips Fidelio NC1	Philips Fidelio NC1	onear
+Philips Fidelio X2HR	Philips Fidelio X2HR	onear
 Philips SHP9500	Philips SHP9500	onear
 Plane Quiet Platinum	Plane Quiet Platinum	onear
 Plantronics BackBeat Fit	Plantronics BackBeat Fit	earbud
@@ -278,6 +289,7 @@ Plantronics Backbeat Go 810	Plantronics Backbeat Go 810	onear
 Plantronics Backbeat Pro	Plantronics Backbeat Pro	onear
 Plantronics BackBeat Pro 2	Plantronics BackBeat Pro 2	onear
 Plantronics RIG 800LX	Plantronics RIG 800LX	onear
+Plantronics Voyager 5200		ignore
 Polk Audio Buckle	Polk Audio Buckle	onear
 Polk Audio UltraFocus 8000	Polk Audio UltraFocus 8000	onear
 Raycon E100	Raycon E100	inear
@@ -331,6 +343,7 @@ Sennheiser Momentum 2.0 Wireless	Sennheiser Momentum 2.0 Wireless	onear
 Sennheiser Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	onear
 Sennheiser Momentum In-Ear	Sennheiser Momentum In-Ear	inear
 Sennheiser Momentum True Wireless	Sennheiser Momentum True Wireless	inear
+Sennheiser MOMENTUM True Wireless 2	Sennheiser Momentum True Wireless 2	inear
 Sennheiser PXC 250 II	Sennheiser PXC 250 II	onear
 Sennheiser PXC 450	Sennheiser PXC 450	onear
 Sennheiser PXC 550 Wireless	Sennheiser PXC 550 Wireless	onear
@@ -412,6 +425,7 @@ Superlux HD 681	Superlux HD 681	onear
 Superlux HD 681 EVO	Superlux HD 681 EVO	onear
 Swimbuds Swimbuds	Swimbuds Swimbuds	inear
 Symphonized NRG 3.0	Symphonized NRG 3.0	inear
+TaoTronics SoundLiberty 79	TaoTronics SoundLiberty 79	inear
 TaoTronics TT-BH060	TaoTronics TT-BH060	onear
 Tascam TH-02	Tascam TH-02	onear
 TIN Audio T2	Tin HiFi T2	inear

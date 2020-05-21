@@ -383,6 +383,10 @@ from the same source.
 - [ASUS ROG Delta Type-C (fabric earpads)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/ASUS%20ROG%20Delta%20Type-C%20(fabric%20earpads)) by Reference Audio Analyzer
 - [ASUS ROG Delta Type-C (leather earpads)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/ASUS%20ROG%20Delta%20Type-C%20(leather%20earpads)) by Reference Audio Analyzer
 - [ASUS ROG Strix Fusion 300](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/ASUS%20ROG%20Strix%20Fusion%20300) by Reference Audio Analyzer
+- [ASUS ROG Strix Fusion 700 (fabric earpads)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/ASUS%20ROG%20Strix%20Fusion%20700%20(fabric%20earpads)) by Reference Audio Analyzer
+- [ASUS ROG Strix Fusion 700 (fabric earpads, 7.1)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/ASUS%20ROG%20Strix%20Fusion%20700%20(fabric%20earpads,%207.1)) by Reference Audio Analyzer
+- [ASUS ROG Strix Fusion 700 (leather earpads)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/ASUS%20ROG%20Strix%20Fusion%20700%20(leather%20earpads)) by Reference Audio Analyzer
+- [ASUS ROG Strix Fusion 700 (leather earpads, 7.1)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/ASUS%20ROG%20Strix%20Fusion%20700%20(leather%20earpads,%207.1)) by Reference Audio Analyzer
 - [Atomic Floyd SuperDarts](./crinacle/harman_in-ear_2019v2/Atomic%20Floyd%20SuperDarts) by Crinacle
 - [Audeze EL8 Closed](./innerfidelity/innerfidelity_harman_over-ear_2018/Audeze%20EL8%20Closed) by Innerfidelity
 - [Audeze EL8 Closed](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Audeze%20EL8%20Closed) by Reference Audio Analyzer
@@ -621,7 +625,9 @@ from the same source.
 - [AZLA 01R Mk2](./crinacle/harman_in-ear_2019v2/AZLA%2001R%20Mk2) by Crinacle
 - [AZLA Horizon](./crinacle/harman_in-ear_2019v2/AZLA%20Horizon) by Crinacle
 - [AZLA Orta](./crinacle/harman_in-ear_2019v2/AZLA%20Orta) by Crinacle
+- [Bang & Olufsen Beoplay E6 Motion](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E6%20Motion) by Reference Audio Analyzer
 - [Bang & Olufsen Beoplay E8 2.0](./crinacle/harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8%202.0) by Crinacle
+- [Bang & Olufsen Beoplay E8 2.0](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8%202.0) by Reference Audio Analyzer
 - [Bang & Olufsen Beoplay E8 2.0](./rtings/rtings_harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8%202.0) by Rtings
 - [Bang & Olufsen Beoplay E8 3.0](./rtings/rtings_harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8%203.0) by Rtings
 - [Bang & Olufsen Beoplay E8](./crinacle/harman_in-ear_2019v2/Bang%20&%20Olufsen%20Beoplay%20E8) by Crinacle
@@ -656,6 +662,7 @@ from the same source.
 - [Beats Mixr](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Beats%20Mixr) by Reference Audio Analyzer
 - [Beats PowerBeats 2 Wireless](./innerfidelity/innerfidelity_harman_over-ear_2018/Beats%20PowerBeats%202%20Wireless) by Innerfidelity
 - [Beats Powerbeats 2 Wireless](./rtings/rtings_harman_in-ear_2019v2/Beats%20Powerbeats%202%20Wireless) by Rtings
+- [Beats Powerbeats 4](./rtings/rtings_harman_in-ear_2019v2/Beats%20Powerbeats%204) by Rtings
 - [Beats Powerbeats Pro](./rtings/rtings_harman_in-ear_2019v2/Beats%20Powerbeats%20Pro) by Rtings
 - [Beats Powerbeats3 Wireless](./rtings/rtings_harman_in-ear_2019v2/Beats%20Powerbeats3%20Wireless) by Rtings
 - [Beats Pro](./innerfidelity/innerfidelity_harman_over-ear_2018/Beats%20Pro) by Innerfidelity
@@ -887,6 +894,8 @@ from the same source.
 - [Bose On-ear headphones](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Bose%20On-ear%20headphones) by Reference Audio Analyzer
 - [Bose QuietComfort 15](./headphonecom/headphonecom_harman_over-ear_2018/Bose%20QuietComfort%2015) by Headphone.com
 - [Bose QuietComfort 15](./innerfidelity/innerfidelity_harman_over-ear_2018/Bose%20QuietComfort%2015) by Innerfidelity
+- [Bose QuietComfort 20 (noise cancelation off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2020%20(noise%20cancelation%20off)) by Reference Audio Analyzer
+- [Bose QuietComfort 20 (noise cancelation on)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2020%20(noise%20cancelation%20on)) by Reference Audio Analyzer
 - [Bose QuietComfort 20 (passive)](./innerfidelity/innerfidelity_harman_over-ear_2018/Bose%20QuietComfort%2020%20(passive)) by Innerfidelity
 - [Bose QuietComfort 20](./innerfidelity/innerfidelity_harman_over-ear_2018/Bose%20QuietComfort%2020) by Innerfidelity
 - [Bose QuietComfort 20](./oratory1990/harman_in-ear_2019v2/Bose%20QuietComfort%2020) by oratory1990
@@ -913,8 +922,10 @@ from the same source.
 - [Bose SoundLink On-Ear](./rtings/rtings_harman_over-ear_2018/Bose%20SoundLink%20On-Ear) by Rtings
 - [Bose SoundSport Free](./crinacle/harman_in-ear_2019v2/Bose%20SoundSport%20Free) by Crinacle
 - [Bose SoundSport Free](./oratory1990/harman_in-ear_2019v2/Bose%20SoundSport%20Free) by oratory1990
+- [Bose SoundSport Free](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20SoundSport%20Free) by Reference Audio Analyzer
 - [Bose SoundSport Free](./rtings/rtings_harman_in-ear_2019v2/Bose%20SoundSport%20Free) by Rtings
 - [Bose SoundSport In-Ear](./rtings/rtings_harman_in-ear_2019v2/Bose%20SoundSport%20In-Ear) by Rtings
+- [Bose SoundSport Wireless](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20SoundSport%20Wireless) by Reference Audio Analyzer
 - [Bose SoundSport Wireless](./rtings/rtings_harman_in-ear_2019v2/Bose%20SoundSport%20Wireless) by Rtings
 - [Bose SoundTrue Around-Ear II](./rtings/rtings_harman_over-ear_2018/Bose%20SoundTrue%20Around-Ear%20II) by Rtings
 - [Bose SoundTrue Around-Ear](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20SoundTrue%20Around-Ear) by Reference Audio Analyzer
@@ -1065,6 +1076,7 @@ from the same source.
 - [Creative HN-900](./rtings/rtings_harman_over-ear_2018/Creative%20HN-900) by Rtings
 - [Creative HS-930 i2](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Creative%20HS-930%20i2) by Reference Audio Analyzer
 - [Creative MA 200](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Creative%20MA%20200) by Reference Audio Analyzer
+- [Creative Outlier Air](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Creative%20Outlier%20Air) by Reference Audio Analyzer
 - [Creative Outlier Air](./rtings/rtings_harman_in-ear_2019v2/Creative%20Outlier%20Air) by Rtings
 - [Creative Sound Blaster EVO Zx](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Creative%20Sound%20Blaster%20EVO%20Zx) by Reference Audio Analyzer
 - [Creative Sound Blaster EVO ZxR](./rtings/rtings_harman_over-ear_2018/Creative%20Sound%20Blaster%20EVO%20ZxR) by Rtings
@@ -2662,6 +2674,7 @@ from the same source.
 - [Philips Fidelio X1](./innerfidelity/innerfidelity_harman_over-ear_2018/Philips%20Fidelio%20X1) by Innerfidelity
 - [Philips Fidelio X2](./innerfidelity/innerfidelity_harman_over-ear_2018/Philips%20Fidelio%20X2) by Innerfidelity
 - [Philips Fidelio X2HR](./oratory1990/harman_over-ear_2018/Philips%20Fidelio%20X2HR) by oratory1990
+- [Philips Fidelio X2HR](./rtings/rtings_harman_over-ear_2018/Philips%20Fidelio%20X2HR) by Rtings
 - [Philips L2](./innerfidelity/innerfidelity_harman_over-ear_2018/Philips%20L2) by Innerfidelity
 - [Philips O'Neil Bend](./innerfidelity/innerfidelity_harman_over-ear_2018/Philips%20O'Neil%20Bend) by Innerfidelity
 - [Philips O'Neil Crash](./innerfidelity/innerfidelity_harman_over-ear_2018/Philips%20O'Neil%20Crash) by Innerfidelity
@@ -3115,6 +3128,7 @@ from the same source.
 - [Sennheiser Momentum On-Ear](./headphonecom/headphonecom_harman_over-ear_2018/Sennheiser%20Momentum%20On-Ear) by Headphone.com
 - [Sennheiser Momentum On-Ear](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%20On-Ear) by Innerfidelity
 - [Sennheiser Momentum On-Ear](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Sennheiser%20Momentum%20On-Ear) by Reference Audio Analyzer
+- [Sennheiser Momentum True Wireless 2](./rtings/rtings_harman_in-ear_2019v2/Sennheiser%20Momentum%20True%20Wireless%202) by Rtings
 - [Sennheiser Momentum True Wireless](./crinacle/harman_in-ear_2019v2/Sennheiser%20Momentum%20True%20Wireless) by Crinacle
 - [Sennheiser Momentum True Wireless](./oratory1990/harman_in-ear_2019v2/Sennheiser%20Momentum%20True%20Wireless) by oratory1990
 - [Sennheiser Momentum True Wireless](./rtings/rtings_harman_in-ear_2019v2/Sennheiser%20Momentum%20True%20Wireless) by Rtings
@@ -3679,6 +3693,7 @@ from the same source.
 - [Tansio Mirai TSMR-5 (on-on-on)](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-5%20(on-on-on)) by Crinacle
 - [Taobao 3 driver](./crinacle/harman_in-ear_2019v2/Taobao%203%20driver) by Crinacle
 - [Taobao 6 driver](./crinacle/harman_in-ear_2019v2/Taobao%206%20driver) by Crinacle
+- [TaoTronics SoundLiberty 79](./rtings/rtings_harman_in-ear_2019v2/TaoTronics%20SoundLiberty%2079) by Rtings
 - [TaoTronics TT-BH060](./rtings/rtings_harman_over-ear_2018/TaoTronics%20TT-BH060) by Rtings
 - [Tascam TH-02](./rtings/rtings_harman_over-ear_2018/Tascam%20TH-02) by Rtings
 - [TDK BA200](./innerfidelity/innerfidelity_harman_in-ear_2019v2/TDK%20BA200) by Innerfidelity
