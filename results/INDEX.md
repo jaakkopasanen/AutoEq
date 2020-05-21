@@ -711,6 +711,10 @@ from the same source.
 - [Beyerdynamic Custom Street (step 1)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Street%20(step%201)) by Reference Audio Analyzer
 - [Beyerdynamic Custom Street (step 2)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Street%20(step%202)) by Reference Audio Analyzer
 - [Beyerdynamic Custom Street (step 3)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Street%20(step%203)) by Reference Audio Analyzer
+- [Beyerdynamic Custom Studio (step 1)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Studio%20(step%201)) by Reference Audio Analyzer
+- [Beyerdynamic Custom Studio (step 2)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Studio%20(step%202)) by Reference Audio Analyzer
+- [Beyerdynamic Custom Studio (step 3)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Studio%20(step%203)) by Reference Audio Analyzer
+- [Beyerdynamic Custom Studio (step 4)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Studio%20(step%204)) by Reference Audio Analyzer
 - [Beyerdynamic DJX-1](./innerfidelity/innerfidelity_harman_over-ear_2018/Beyerdynamic%20DJX-1) by Innerfidelity
 - [Beyerdynamic DT 100 2X2kOhm](./innerfidelity/innerfidelity_harman_over-ear_2018/Beyerdynamic%20DT%20100%202X2kOhm) by Innerfidelity
 - [Beyerdynamic DT 1350](./headphonecom/headphonecom_harman_over-ear_2018/Beyerdynamic%20DT%201350) by Headphone.com

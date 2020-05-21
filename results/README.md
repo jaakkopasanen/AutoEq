@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 2738 headphone models covered but if your headphone is missing you can create settings for
+This list has 2739 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -534,6 +534,10 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Beyerdynamic Custom Street (step 1)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Street%20(step%201))
 - [Beyerdynamic Custom Street (step 2)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Street%20(step%202))
 - [Beyerdynamic Custom Street (step 3)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Street%20(step%203))
+- [Beyerdynamic Custom Studio (step 1)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Studio%20(step%201))
+- [Beyerdynamic Custom Studio (step 2)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Studio%20(step%202))
+- [Beyerdynamic Custom Studio (step 3)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Studio%20(step%203))
+- [Beyerdynamic Custom Studio (step 4)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Beyerdynamic%20Custom%20Studio%20(step%204))
 - [Beyerdynamic DJX-1](./innerfidelity/innerfidelity_harman_over-ear_2018/Beyerdynamic%20DJX-1)
 - [Beyerdynamic DT 100 2X2kOhm](./innerfidelity/innerfidelity_harman_over-ear_2018/Beyerdynamic%20DT%20100%202X2kOhm)
 - [Beyerdynamic DT 1350](./headphonecom/headphonecom_harman_over-ear_2018/Beyerdynamic%20DT%201350)
