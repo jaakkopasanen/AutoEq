@@ -23,6 +23,9 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
     """Parses files in input directory and produces equalization results in output directory."""
     start_time = time()
 
+    if convolution_eq and not equalize:
+        raise ValueError('equalize must be True when convolution_eq is True.')
+
     # Dir paths to absolute
     input_dir = os.path.abspath(input_dir)
     glob_files = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)

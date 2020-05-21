@@ -164,7 +164,7 @@ class FrequencyResponse:
         s = f.read()
 
         # Regex for AutoEq style CSV
-        header_pattern = r'frequency(,(raw|smoothed|error|error_smoothed|equalization|parametric_eq|equalized_raw|equalized_smoothed|target))+'
+        header_pattern = r'frequency(,(raw|smoothed|error|error_smoothed|equalization|parametric_eq|fixed_band_eq|equalized_raw|equalized_smoothed|target))+'
         float_pattern = r'-?\d+\.?\d+'
         data_2_pattern = r'{fl}[ ,;:\t]+{fl}?'.format(fl=float_pattern)
         data_n_pattern = r'{fl}([ ,;:\t]+{fl})+?'.format(fl=float_pattern)
@@ -180,6 +180,7 @@ class FrequencyResponse:
             error_smoothed = list(df['error_smoothed']) if 'error_smoothed' in df else None
             equalization = list(df['equalization']) if 'equalization' in df else None
             parametric_eq = list(df['parametric_eq']) if 'parametric_eq' in df else None
+            fixed_band_eq = list(df['fixed_band_eq']) if 'fixed_band_eq' in df else None
             equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
             equalized_smoothed = list(df['equalized_smoothed']) if 'equalized_smoothed' in df else None
             target = list(df['target']) if 'target' in df else None
@@ -192,6 +193,7 @@ class FrequencyResponse:
                 error_smoothed=error_smoothed,
                 equalization=equalization,
                 parametric_eq=parametric_eq,
+                fixed_band_eq=fixed_band_eq,
                 equalized_raw=equalized_raw,
                 equalized_smoothed=equalized_smoothed,
                 target=target
