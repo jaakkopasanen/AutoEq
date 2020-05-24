@@ -248,6 +248,7 @@ from the same source.
 - [AKG K72](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/AKG%20K72) by Reference Audio Analyzer
 - [AKG K77 Pro](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/AKG%20K77%20Pro) by Reference Audio Analyzer
 - [AKG K7XX](./innerfidelity/innerfidelity_harman_over-ear_2018/AKG%20K7XX) by Innerfidelity
+- [AKG K7XX](./oratory1990/harman_over-ear_2018/AKG%20K7XX) by oratory1990
 - [AKG K80](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/AKG%20K80) by Reference Audio Analyzer
 - [AKG K81 DJ](./headphonecom/headphonecom_harman_over-ear_2018/AKG%20K81%20DJ) by Headphone.com
 - [AKG K81 DJ](./innerfidelity/innerfidelity_harman_over-ear_2018/AKG%20K81%20DJ) by Innerfidelity

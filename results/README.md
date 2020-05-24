@@ -193,7 +193,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [AKG K712 PRO](./rtings/rtings_harman_over-ear_2018/AKG%20K712%20PRO)
 - [AKG K72](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/AKG%20K72)
 - [AKG K77 Pro](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/AKG%20K77%20Pro)
-- [AKG K7XX](./innerfidelity/innerfidelity_harman_over-ear_2018/AKG%20K7XX)
+- [AKG K7XX](./oratory1990/harman_over-ear_2018/AKG%20K7XX)
 - [AKG K80](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/AKG%20K80)
 - [AKG K81 DJ](./innerfidelity/innerfidelity_harman_over-ear_2018/AKG%20K81%20DJ)
 - [AKG K812](./innerfidelity/innerfidelity_harman_over-ear_2018/AKG%20K812%20(serial%20number%20001130))

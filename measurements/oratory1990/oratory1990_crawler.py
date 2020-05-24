@@ -70,6 +70,10 @@ class Oratory1990Crawler(Crawler):
                 false_name += f' ({notes})'
             if false_name not in urls:
                 urls[false_name] = url
+
+        # Add missing from index
+        urls['AKG K7XX'] = 'https://www.dropbox.com/s/fa9gm1am98ndkqj/AKG%20K7XX.pdf?dl=1'
+
         return urls
 
     @staticmethod

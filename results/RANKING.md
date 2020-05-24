@@ -157,6 +157,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Dan Clark Audio Aeon 2 Closed](./oratory1990/harman_over-ear_2018/Dan%20Clark%20Audio%20Aeon%202%20Closed)                                                               |      55 |       2.98 |   -1.4  |
 | [Neumann NDH20](./oratory1990/harman_over-ear_2018/Neumann%20NDH20)                                                                                                       |      55 |       3.22 |   -1.19 |
 | [QUAD Era-1](./oratory1990/harman_over-ear_2018/QUAD%20Era-1)                                                                                                             |      55 |       3.56 |   -0.94 |
+| [AKG K7XX](./oratory1990/harman_over-ear_2018/AKG%20K7XX)                                                                                                                 |      54 |       3.25 |   -1.27 |
 | [Beyerdynamic DT 770 M 80 Ohm](./oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20M%2080%20Ohm)                                                                 |      53 |       4.56 |   -0.27 |
 | [Focal Stellia](./oratory1990/harman_over-ear_2018/Focal%20Stellia)                                                                                                       |      53 |       3.26 |   -1.34 |
 | [Logitech G930](./oratory1990/harman_over-ear_2018/Logitech%20G930)                                                                                                       |      53 |       3.61 |   -1.06 |
