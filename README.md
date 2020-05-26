@@ -6,7 +6,7 @@ and follow instructions in [Usage](#usage) section.
 ## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
 frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
-This project currently has almost 2000 headphones covered in the
+This project currently has over 2500 headphones covered in the
 [results](./results) folder.
 See [Usage](#usage) for instructions how to use the results with
 different equalizer softwares and
@@ -23,8 +23,7 @@ you're looking for something light weight to install as a dependency for your ow
 
 Third major contribution of this project is the measurement data and compensation curves all in a numerical format
 except for Crinacle's raw data. Everything is stored as CSV files so they are easy to process with any programming
-language or even Microsoft Excel. See [Data Processing](#data-processing) for more technical description about how
-things were obtained and processed.
+language or even Microsoft Excel.
 
 ![Sennheiser HD 800](./results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)
 
