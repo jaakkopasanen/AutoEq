@@ -959,6 +959,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Vision Ears Erlkönig 1](./crinacle/harman_in-ear_2019v2/Vision%20Ears%20Erlk%C3%B6nig%201)                                                                |      43 |       3.85 |   -1.58 |           3.79 |
 | [VSonic VS7](./crinacle/harman_in-ear_2019v2/VSonic%20VS7)                                                                                                 |      43 |       4.55 |   -0.21 |           4.82 |
 | [Yamaha EPH-100](./crinacle/harman_in-ear_2019v2/Yamaha%20EPH-100)                                                                                         |      43 |       4.24 |   -1.47 |           3.2  |
+| [Etymotic ER2SE](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER2SE)                                                                                      |      42 |       4.41 |    1.58 |           2.83 |
 | [Etymotic ER2SR](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER2SR)                                                                                      |      42 |       4.41 |    1.58 |           2.83 |
 | [Etymotic ER4SR](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER4SR)                                                                                      |      42 |       4.42 |    1.53 |           2.77 |
 | [NS Audio NS3](./oratory1990/harman_in-ear_2019v2/NS%20Audio%20NS3)                                                                                        |      42 |       4.48 |    1.62 |           2.55 |
@@ -993,6 +994,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Moondrop Crescent](./crinacle/harman_in-ear_2019v2/Moondrop%20Crescent)                                                                                   |      41 |       3.96 |   -1.98 |           3.44 |
 | [Sennheiser Momentum In-Ear](./crinacle/harman_in-ear_2019v2/Sennheiser%20Momentum%20In-Ear)                                                               |      41 |       4.32 |   -1.26 |           3.96 |
 | [Tin HiFi T2](./crinacle/harman_in-ear_2019v2/Tin%20HiFi%20T2)                                                                                             |      41 |       4.51 |    0.9  |           4.16 |
+| [Panasonic RP-HJE120](./oratory1990/harman_in-ear_2019v2/Panasonic%20RP-HJE120)                                                                            |      40 |       4.26 |   -1.39 |           4.14 |
 | [Clear Tune CT-300P](./crinacle/harman_in-ear_2019v2/Clear%20Tune%20CT-300P)                                                                               |      40 |       4.41 |   -0.9  |           4.86 |
 | [Custom Art FIBAE Black](./crinacle/harman_in-ear_2019v2/Custom%20Art%20FIBAE%20Black)                                                                     |      40 |       4.36 |   -1.01 |           4.52 |
 | [InEar StageDiver SD4](./crinacle/harman_in-ear_2019v2/InEar%20StageDiver%20SD4)                                                                           |      40 |       4.54 |   -0.75 |           4.59 |

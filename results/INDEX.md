@@ -1058,6 +1058,7 @@ from the same source.
 - [Coloud NHL Chicago Blackhawks](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Coloud%20NHL%20Chicago%20Blackhawks) by Reference Audio Analyzer
 - [Comradz NW-STUDIO PRO](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Comradz%20NW-STUDIO%20PRO) by Innerfidelity
 - [Comradz NW-STUDIO](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Comradz%20NW-STUDIO) by Innerfidelity
+- [Cooler Master MH630](./rtings/rtings_harman_over-ear_2018/Cooler%20Master%20MH630) by Rtings
 - [Corsair HS35](./rtings/rtings_harman_over-ear_2018/Corsair%20HS35) by Rtings
 - [Corsair HS50](./rtings/rtings_harman_over-ear_2018/Corsair%20HS50) by Rtings
 - [Corsair HS60](./rtings/rtings_harman_over-ear_2018/Corsair%20HS60) by Rtings
@@ -1313,6 +1314,7 @@ from the same source.
 - [Eternal Melody EM6W](./crinacle/harman_in-ear_2019v2/Eternal%20Melody%20EM6W) by Crinacle
 - [Etymotic EK5](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Etymotic%20EK5) by Innerfidelity
 - [Etymotic ER2SE](./crinacle/harman_in-ear_2019v2/Etymotic%20ER2SE) by Crinacle
+- [Etymotic ER2SE](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER2SE) by oratory1990
 - [Etymotic ER2SR](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER2SR) by oratory1990
 - [Etymotic ER2XR (sample 1)](./crinacle/harman_in-ear_2019v2/Etymotic%20ER2XR%20(sample%201)) by Crinacle
 - [Etymotic ER2XR (sample 2)](./crinacle/harman_in-ear_2019v2/Etymotic%20ER2XR%20(sample%202)) by Crinacle
@@ -2648,6 +2650,7 @@ from the same source.
 - [Panasonic RP-HC56](./rtings/rtings_harman_in-ear_2019v2/Panasonic%20RP-HC56) by Rtings
 - [Panasonic RP-HC800](./rtings/rtings_harman_over-ear_2018/Panasonic%20RP-HC800) by Rtings
 - [Panasonic RP-HJE120](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Panasonic%20RP-HJE120) by Innerfidelity
+- [Panasonic RP-HJE120](./oratory1990/harman_in-ear_2019v2/Panasonic%20RP-HJE120) by oratory1990
 - [Panasonic RP-HJE120](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Panasonic%20RP-HJE120) by Reference Audio Analyzer
 - [Panasonic RP-HJE120](./rtings/rtings_harman_in-ear_2019v2/Panasonic%20RP-HJE120) by Rtings
 - [Paradigm Shift E1](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Paradigm%20Shift%20E1) by Innerfidelity

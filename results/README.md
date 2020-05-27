@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 2756 headphone models covered but if your headphone is missing you can create settings for
+This list has 2757 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -771,6 +771,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Coloud NHL Chicago Blackhawks](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Coloud%20NHL%20Chicago%20Blackhawks)
 - [Comradz NW-STUDIO](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Comradz%20NW-STUDIO)
 - [Comradz NW-STUDIO PRO](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Comradz%20NW-STUDIO%20PRO)
+- [Cooler Master MH630](./rtings/rtings_harman_over-ear_2018/Cooler%20Master%20MH630)
 - [Corsair HS35](./rtings/rtings_harman_over-ear_2018/Corsair%20HS35)
 - [Corsair HS50](./rtings/rtings_harman_over-ear_2018/Corsair%20HS50)
 - [Corsair HS60](./rtings/rtings_harman_over-ear_2018/Corsair%20HS60)
@@ -975,7 +976,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Eskuche 33 1 3 B](./innerfidelity/innerfidelity_harman_over-ear_2018/Eskuche%2033%201%203%20B)
 - [Eternal Melody EM6W](./crinacle/harman_in-ear_2019v2/Eternal%20Melody%20EM6W)
 - [Etymotic EK5](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Etymotic%20EK5)
-- [Etymotic ER2SE](./crinacle/harman_in-ear_2019v2/Etymotic%20ER2SE)
+- [Etymotic ER2SE](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER2SE)
 - [Etymotic ER2SR](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER2SR)
 - [Etymotic ER2XR](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER2XR)
 - [Etymotic ER3SE](./crinacle/harman_in-ear_2019v2/Etymotic%20ER3SE)
@@ -2001,7 +2002,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Panasonic RP-HC200](./rtings/rtings_harman_over-ear_2018/Panasonic%20RP-HC200)
 - [Panasonic RP-HC56](./rtings/rtings_harman_in-ear_2019v2/Panasonic%20RP-HC56)
 - [Panasonic RP-HC800](./rtings/rtings_harman_over-ear_2018/Panasonic%20RP-HC800)
-- [Panasonic RP-HJE120](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Panasonic%20RP-HJE120)
+- [Panasonic RP-HJE120](./oratory1990/harman_in-ear_2019v2/Panasonic%20RP-HJE120)
 - [Paradigm Shift E1](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Paradigm%20Shift%20E1)
 - [Paradigm Shift E3m](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Paradigm%20Shift%20E3m)
 - [Parrot Zik 2.0](./innerfidelity/innerfidelity_harman_over-ear_2018/Parrot%20Zik%202.0)

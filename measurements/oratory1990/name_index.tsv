@@ -104,6 +104,7 @@ Drop + THX Panda (prototype)		ignore
 Dunu DK-3001 Pro	Dunu DK-3001 Pro	ignore
 Dunu Titan 3	DUNU Titan 3	ignore
 Earfun Wave	EarFun Wave	onear
+Etymotic Research ER-2SE	Etymotic ER2SE	inear
 Etymotic Research ER-2XR	Etymotic ER2XR	inear
 Etymotic Research ER-4SR	Etymotic ER4SR	inear
 Etymotic Research ER-4XR	Etymotic ER4XR	inear
@@ -220,7 +221,7 @@ oBravo Cupid	oBravo Cupid	inear
 Onkyo A800	Onkyo A800	onear
 Oppo PM3	Oppo PM3	onear
 Oriolus Finischi	Oriolus Finschi	ignore
-Panasonic RP-HJE		ignore
+Panasonic RP-HJE120	Panasonic RP-HJE120	inear
 Periodic Audio Be	Periodic Audio Be	inear
 Philips Fidelio M1	Philips Fidelio M1	onear
 Philips Fidelio M2L	Philips Fidelio M2L	onear
