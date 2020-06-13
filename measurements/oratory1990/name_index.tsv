@@ -4,6 +4,7 @@ false_name	true_name	form
 64 Audio N8	64 Audio N8	inear
 Adam SP-5	Adam SP-5	onear
 Advanced GT-R	Advanced GT-R	onear
+AIAIAI TMA-2 HD Wireless	Aiaiai TMA-2 HD Wireless	onear
 AKG K240 Sextett	AKG K240 Sextett	onear
 AKG K271 MK.II	AKG K271 MKII	onear
 AKG K280 Parabolic	AKG K280 Parabolic	onear
@@ -17,6 +18,7 @@ AKG K612	AKG K612	onear
 AKG K702 65th Anniversary Edition	AKG K702 65th Anniversary Edition	onear
 AKG K712	AKG K712	onear
 AKG K712 (Dekoni Fenestrated Sheepskin Earpads)	AKG K712 (Dekoni fenestrated sheepskin earpads)	onear
+AKG K712 (RME ADI-2)		ignore
 AKG K7XX	AKG K7XX	onear
 AKG N20	AKG N20	inear
 AKG N400NC	AKG N400NC	inear
@@ -46,8 +48,10 @@ Audio Technica ATH-M50x	Audio-Technica ATH-M50x	onear
 Audio Technica ATH-M50x (Dekoni Sheepskin Earpads)	Audio-Technica ATH-M50x (Dekoni sheepskin earpads)	onear
 Audio Technica ATH-M50x (Massdrop Velours Earpads)	Audio-Technica ATH-M50x (Massdrop velours earpads)	onear
 Audio Technica ATH-M60x	Audio-Technica ATH-M60x	onear
+Audio Zenith PMx2 v1	Audio Zenith PMx2 v1	onear
 Audio Zenith PMx2 v2	Audio Zenith PMx2 v2	onear
 AuGlamour F300 (preliminary)	AuGlamour F300	inear
+Austrian Audio Hi-X55	Austrian Audio Hi-X55	onear
 Bang & Olufsen H9	Bang & Olufsen Beoplay H9	onear
 Bang & Olufsen H9i	Bang & Olufsen Beoplay H9i	onear
 Base Audio G12 (preliminary)	Base Audio G12	onear
@@ -219,8 +223,10 @@ NuForce EDC3	NuForce EDC3	inear
 NuForce Stride	NuForce Stride	inear
 oBravo Cupid	oBravo Cupid	inear
 Onkyo A800	Onkyo A800	onear
+Oppo PM2	Oppo PM2	onear
 Oppo PM3	Oppo PM3	onear
 Oriolus Finischi	Oriolus Finschi	ignore
+Panasonic RP-HJE	Panasonic RP-HJE120	inear
 Panasonic RP-HJE120	Panasonic RP-HJE120	inear
 Periodic Audio Be	Periodic Audio Be	inear
 Philips Fidelio M1	Philips Fidelio M1	onear
@@ -316,6 +322,7 @@ Stax ED-1	Stax ED-1	ignore
 Stax Lambda Nova Basic	Stax Lambda Nova Basic	onear
 Stax Lambda Pro	Stax Lambda Pro	onear
 Stax Lambda Pro (ED1  Setting)	Stax Lambda Pro (ED1  Setting)	ignore
+Stax SR-007	Stax SR-007	onear
 Stax SR-009S	Stax SR-009S	onear
 Stax SR-404	Stax SR-404	onear
 Stax SR-404 (with perfect seal)	Stax SR-404 (with perfect seal)	onear

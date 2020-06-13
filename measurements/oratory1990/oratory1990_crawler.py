@@ -61,7 +61,7 @@ class Oratory1990Crawler(Crawler):
             notes = notes.replace(target, '').strip()  # Remove target from the notes
 
             words = [x.strip().lower() for x in notes.split()]
-            if bool([x for x in ['band', 'eq', 'setting', 'crinacle'] if x in words]):
+            if bool([x for x in ['band', 'eq', 'setting', 'crinacle', 'adi-2'] if x in words]):
                 # Skip various EQ settings
                 continue
 

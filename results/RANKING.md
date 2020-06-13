@@ -58,6 +58,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [HIFIMAN Edition X](./oratory1990/harman_over-ear_2018/HIFIMAN%20Edition%20X)                                                                                             |      81 |       2.2  |   -0.39 |
 | [Oppo PM3](./oratory1990/harman_over-ear_2018/Oppo%20PM3)                                                                                                                 |      81 |       2.36 |    0.26 |
 | [Warwick Audio Aperio](./oratory1990/harman_over-ear_2018/Warwick%20Audio%20Aperio)                                                                                       |      81 |       2.24 |   -0.33 |
+| [Audio Zenith PMx2 v1](./oratory1990/harman_over-ear_2018/Audio%20Zenith%20PMx2%20v1)                                                                                     |      80 |       2.37 |   -0.31 |
 | [Beyerdynamic DT 770 250 Ohm (worn earpads)](./oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm%20(worn%20earpads))                                   |      80 |       2.03 |    0.59 |
 | [Cleer Next](./oratory1990/harman_over-ear_2018/Cleer%20Next)                                                                                                             |      80 |       2.17 |   -0.46 |
 | [HIFIMAN Susvara](./oratory1990/harman_over-ear_2018/HIFIMAN%20Susvara)                                                                                                   |      80 |       2.23 |    0.4  |
@@ -82,6 +83,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Audio-Technica ATH-M40x](./oratory1990/harman_over-ear_2018/Audio-Technica%20ATH-M40x)                                                                                   |      77 |       2.23 |    0.59 |
 | [Bose QuietComfort 25](./oratory1990/harman_over-ear_2018/Bose%20QuietComfort%2025)                                                                                       |      77 |       2.25 |   -0.55 |
 | [Focal Spirit Classic](./oratory1990/harman_over-ear_2018/Focal%20Spirit%20Classic)                                                                                       |      77 |       2.15 |   -0.65 |
+| [Oppo PM2](./oratory1990/harman_over-ear_2018/Oppo%20PM2)                                                                                                                 |      77 |       2.54 |   -0.37 |
 | [Sennheiser HD 700](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20700)                                                                                             |      77 |       2.86 |    0.11 |
 | [Stax SR-L500 (Vesper earpads)](./oratory1990/harman_over-ear_2018/Stax%20SR-L500%20(Vesper%20earpads))                                                                   |      77 |       2.89 |   -0.08 |
 | [AKG K280 Parabolic](./oratory1990/harman_over-ear_2018/AKG%20K280%20Parabolic)                                                                                           |      76 |       2.59 |   -0.36 |
@@ -111,6 +113,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Sennheiser HD 555](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20555)                                                                                             |      73 |       3.22 |    0.08 |
 | [Sennheiser HD 660 S](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20660%20S)                                                                                       |      73 |       2.66 |   -0.52 |
 | [Status Audio BT One (wired)](./oratory1990/harman_over-ear_2018/Status%20Audio%20BT%20One%20(wired))                                                                     |      73 |       2.35 |   -0.73 |
+| [Stax SR-007](./oratory1990/harman_over-ear_2018/Stax%20SR-007)                                                                                                           |      73 |       2.61 |   -0.57 |
 | [Beyerdynamic DT 770 250 Ohm (Dekoni hybrid earpads)](./oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20770%20250%20Ohm%20(Dekoni%20hybrid%20earpads))               |      72 |       2.56 |    0.62 |
 | [Monoprice M1060](./oratory1990/harman_over-ear_2018/Monoprice%20M1060)                                                                                                   |      72 |       3.02 |   -0.28 |
 | [Sony WH-1000XM2](./oratory1990/harman_over-ear_2018/Sony%20WH-1000XM2)                                                                                                   |      72 |       2.75 |   -0.53 |
@@ -174,6 +177,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Beyerdynamic DT 240](./oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20240)                                                                                         |      57 |       3.2  |   -1.13 |
 | [Beyerdynamic ET1000](./oratory1990/harman_over-ear_2018/Beyerdynamic%20ET1000)                                                                                           |      57 |       3.74 |    0.64 |
 | [Kaldas Research Conquest RR1](./oratory1990/harman_over-ear_2018/Kaldas%20Research%20Conquest%20RR1)                                                                     |      57 |       3.58 |   -0.81 |
+| [Austrian Audio Hi-X55](./oratory1990/harman_over-ear_2018/Austrian%20Audio%20Hi-X55)                                                                                     |      56 |       3.93 |   -0.6  |
 | [Beyerdynamic Amiron Home](./oratory1990/harman_over-ear_2018/Beyerdynamic%20Amiron%20Home)                                                                               |      56 |       3.67 |   -0.81 |
 | [AKG K601](./oratory1990/harman_over-ear_2018/AKG%20K601)                                                                                                                 |      55 |       3.28 |    1.14 |
 | [Dan Clark Audio Aeon 2 Closed](./oratory1990/harman_over-ear_2018/Dan%20Clark%20Audio%20Aeon%202%20Closed)                                                               |      55 |       2.98 |   -1.4  |
@@ -214,6 +218,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Beyerdynamic DT 177X Go (velour earpads)](./oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%20177X%20Go%20(velour%20earpads))                                         |      32 |       4.25 |   -1.83 |
 | [Meze 99 Classics](./oratory1990/harman_over-ear_2018/Meze%2099%20Classics)                                                                                               |      32 |       4.35 |   -1.79 |
 | [Meze 99 Noir](./oratory1990/harman_over-ear_2018/Meze%2099%20Noir)                                                                                                       |      31 |       4.28 |   -1.92 |
+| [Aiaiai TMA-2 HD Wireless](./oratory1990/harman_over-ear_2018/Aiaiai%20TMA-2%20HD%20Wireless)                                                                             |      30 |       4.23 |   -2.03 |
 | [Monoprice M650](./oratory1990/harman_over-ear_2018/Monoprice%20M650)                                                                                                     |      30 |       4.35 |   -1.93 |
 | [Status Audio BT One (wireless)](./oratory1990/harman_over-ear_2018/Status%20Audio%20BT%20One%20(wireless))                                                               |      29 |       4.05 |   -2.23 |
 | [Beyerdynamic DT 1770 (leatherette earpads)](./oratory1990/harman_over-ear_2018/Beyerdynamic%20DT%201770%20(leatherette%20earpads))                                       |      26 |       4.59 |   -1.97 |
