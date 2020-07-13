@@ -155,20 +155,22 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
             if suffix != item.false_name.lower() and suffix != 'default':
                 name += f' ({suffix})'
 
-            # The suffixes above are read automatically from the reports compilation page.
-            # However these might not be the names that should exist in AutoEq.
-            mods = self.name_index.find(false_name=name)
-            if mods:
-                # Find an item in name index which has the given name with automatic
-                # suffixes as false name and replace the name with it's true name.
-                true_name = mods.items[0].true_name
+                # The suffixes above are read automatically from the reports compilation page.
+                # However these might not be the names that should exist in AutoEq.
+                mods = self.name_index.find(false_name=name)
+                if mods:
+                    # Find an item in name index which has the given name with automatic
+                    # suffixes as false name and replace the name with it's true name.
+                    true_name = mods.items[0].true_name
+                else:
+                    # Not in the name index, prompt user
+                    print(f'Mod of "{name}" is not known.')
+                    false_name = name
+                    true_name = self.prompt_true_name([false_name])
+                    self.name_index.add(NameItem(false_name, true_name, item.form))
+                    self.write_name_index()
             else:
-                # Not in the name index, prompt user
-                print(f'Mod of "{name}" is not known.')
-                false_name = name
-                true_name = self.prompt_true_name([false_name])
-                self.name_index.add(NameItem(false_name, true_name, item.form))
-                self.write_name_index()
+                true_name = name
 
             report_urls[true_name] = f'https://reference-audio-analyzer.pro{anchor["href"]}'
 
