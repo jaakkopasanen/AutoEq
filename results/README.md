@@ -1327,7 +1327,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [HIFIMAN HE-300](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE-300)
 - [HIFIMAN HE-300 Rev 2](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE-300%20Rev%202)
 - [HIFIMAN HE-4](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE-4)
-- [HIFIMAN HE-400](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE-400)
+- [HIFIMAN HE-400](./headphonecom/headphonecom_harman_over-ear_2018/HIFIMAN%20HE-400)
 - [HIFIMAN HE-5](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE-5)
 - [HIFIMAN HE-500](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE-500)
 - [HIFIMAN HE-500 (leather earpads)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/HIFIMAN%20HE-500%20(leather%20earpads))

@@ -1809,7 +1809,6 @@ from the same source.
 - [HIFIMAN HE-300](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE-300) by Innerfidelity
 - [HIFIMAN HE-300](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/HIFIMAN%20HE-300) by Reference Audio Analyzer
 - [HIFIMAN HE-400](./headphonecom/headphonecom_harman_over-ear_2018/HIFIMAN%20HE-400) by Headphone.com
-- [HIFIMAN HE-400](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE-400) by Innerfidelity
 - [HIFIMAN HE-400](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/HIFIMAN%20HE-400) by Reference Audio Analyzer
 - [HIFIMAN HE-4](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE-4) by Innerfidelity
 - [HIFIMAN HE-4](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/HIFIMAN%20HE-4) by Reference Audio Analyzer
@@ -1828,6 +1827,7 @@ from the same source.
 - [HIFIMAN HE1000](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE1000) by Innerfidelity
 - [HIFIMAN HE350](./oratory1990/harman_over-ear_2018/HIFIMAN%20HE350) by oratory1990
 - [HIFIMAN HE35X](./oratory1990/harman_over-ear_2018/HIFIMAN%20HE35X) by oratory1990
+- [HIFIMAN HE400i](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20HE400i) by Innerfidelity
 - [HIFIMAN HE400i](./oratory1990/harman_over-ear_2018/HIFIMAN%20HE400i) by oratory1990
 - [HIFIMAN HE400i](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/HIFIMAN%20HE400i) by Reference Audio Analyzer
 - [HIFIMAN HE400i](./rtings/rtings_harman_over-ear_2018/HIFIMAN%20HE400i) by Rtings
