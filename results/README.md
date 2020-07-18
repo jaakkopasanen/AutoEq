@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 2807 headphone models covered but if your headphone is missing you can create settings for
+This list has 2813 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -1538,6 +1538,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [JBL Live 400BT](./rtings/rtings_harman_over-ear_2018/JBL%20Live%20400BT)
 - [JBL Live 500BT](./rtings/rtings_harman_over-ear_2018/JBL%20Live%20500BT)
 - [JBL Live 650BTNC](./rtings/rtings_harman_over-ear_2018/JBL%20Live%20650BTNC)
+- [JBL Quantum 800](./rtings/rtings_harman_over-ear_2018/JBL%20Quantum%20800)
 - [JBL Reflect Flow](./rtings/rtings_harman_in-ear_2019v2/JBL%20Reflect%20Flow)
 - [JBL Reflect Mini 2](./rtings/rtings_harman_in-ear_2019v2/JBL%20Reflect%20Mini%202)
 - [JBL Synchros S500 (off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/JBL%20Synchros%20S500%20(off))
@@ -1761,6 +1762,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Lime Ears Aether (bass)](./crinacle/harman_in-ear_2019v2/Lime%20Ears%20Aether%20(bass))
 - [Lime Ears Aether R](./crinacle/harman_in-ear_2019v2/Lime%20Ears%20Aether%20R)
 - [Lime Ears Aether R (bass)](./crinacle/harman_in-ear_2019v2/Lime%20Ears%20Aether%20R%20(bass))
+- [Lime Ears Lambda](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Lime%20Ears%20Lambda)
 - [Lime Ears LE2](./crinacle/harman_in-ear_2019v2/Lime%20Ears%20LE2)
 - [Lime Ears Model X](./crinacle/harman_in-ear_2019v2/Lime%20Ears%20Model%20X)
 - [Lime Ears Model X (bass)](./crinacle/harman_in-ear_2019v2/Lime%20Ears%20Model%20X%20(bass))
@@ -1849,6 +1851,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Microsoft Surface Headphones](./oratory1990/harman_over-ear_2018/Microsoft%20Surface%20Headphones)
 - [Microsoft Surface Headphones 2](./rtings/rtings_harman_over-ear_2018/Microsoft%20Surface%20Headphones%202)
 - [Mifo O7 1BA](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Mifo%20O7%201BA)
+- [Mifo O7 2BA](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Mifo%20O7%202BA)
 - [Mixcder E9](./rtings/rtings_harman_over-ear_2018/Mixcder%20E9)
 - [Moe Audio SS01](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Moe%20Audio%20SS01)
 - [Mofasest M14 (00 setting)](./crinacle/harman_in-ear_2019v2/Mofasest%20M14%20(00%20setting))
@@ -2753,6 +2756,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Stealthsonics U9](./crinacle/harman_in-ear_2019v2/Stealthsonics%20U9)
 - [Stealthsonics U9 JDM](./crinacle/harman_in-ear_2019v2/Stealthsonics%20U9%20JDM)
 - [SteelSeries Arctis 1](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%201)
+- [SteelSeries Arctis 1 Wireless](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%201%20Wireless)
 - [SteelSeries Arctis 3 2019 Edition](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%203%202019%20Edition)
 - [SteelSeries Arctis 5 2019 Edition](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%205%202019%20Edition)
 - [SteelSeries Arctis 7](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%207)
@@ -2773,8 +2777,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Sunrise Xcape](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Sunrise%20Xcape)
 - [Sunrise Xcited](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Sunrise%20Xcited)
 - [Superlux HD 651](./oratory1990/harman_over-ear_2018/Superlux%20HD%20651)
-- [Superlux HD 668 (velour earpads)](./oratory1990/harman_over-ear_2018/Superlux%20HD%20668%20(velour%20earpads))
 - [Superlux HD 668B](./oratory1990/harman_over-ear_2018/Superlux%20HD%20668B)
+- [Superlux HD 668B (velour earpads)](./oratory1990/harman_over-ear_2018/Superlux%20HD%20668B%20(velour%20earpads))
 - [Superlux HD 681](./oratory1990/harman_over-ear_2018/Superlux%20HD%20681)
 - [Superlux HD 681 (velour earpads)](./oratory1990/harman_over-ear_2018/Superlux%20HD%20681%20(velour%20earpads))
 - [Superlux HD 681 EVO](./rtings/rtings_harman_over-ear_2018/Superlux%20HD%20681%20EVO)
@@ -2840,6 +2844,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [TFZ 4S](./crinacle/harman_in-ear_2019v2/TFZ%204S)
 - [TFZ 5S](./crinacle/harman_in-ear_2019v2/TFZ%205S)
 - [TFZ Balance 2M](./crinacle/harman_in-ear_2019v2/TFZ%20Balance%202M)
+- [TFZ COCO Q1 TWS](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/TFZ%20COCO%20Q1%20TWS)
 - [TFZ Exclusive 1](./crinacle/harman_in-ear_2019v2/TFZ%20Exclusive%201)
 - [TFZ Exclusive 3](./crinacle/harman_in-ear_2019v2/TFZ%20Exclusive%203)
 - [TFZ Exclusive 5](./crinacle/harman_in-ear_2019v2/TFZ%20Exclusive%205)
@@ -2907,6 +2912,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Tralucent Audio 1Plus5.2](./crinacle/harman_in-ear_2019v2/Tralucent%20Audio%201Plus5.2)
 - [Tralucent Audio Audio 1Plus 2.2](./crinacle/harman_in-ear_2019v2/Tralucent%20Audio%20Audio%201Plus%202.2)
 - [TREBLAB X5](./rtings/rtings_harman_in-ear_2019v2/TREBLAB%20X5)
+- [TREBLAB Z2](./rtings/rtings_harman_over-ear_2018/TREBLAB%20Z2)
 - [TRI i3](./crinacle/harman_in-ear_2019v2/TRI%20i3)
 - [Trinity Audio ICARUS III](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Trinity%20Audio%20ICARUS%20III)
 - [Tripowin TP10](./crinacle/harman_in-ear_2019v2/Tripowin%20TP10)

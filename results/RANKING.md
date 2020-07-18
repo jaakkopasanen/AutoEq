@@ -150,7 +150,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [AKG K712 (Dekoni fenestrated sheepskin earpads)](./oratory1990/harman_over-ear_2018/AKG%20K712%20(Dekoni%20fenestrated%20sheepskin%20earpads))                           |      64 |       3.09 |   -0.75 |
 | [HIFIMAN Shangri-La](./oratory1990/harman_over-ear_2018/HIFIMAN%20Shangri-La)                                                                                             |      64 |       2.98 |    0.85 |
 | [Sony MDR-Z7](./oratory1990/harman_over-ear_2018/Sony%20MDR-Z7)                                                                                                           |      64 |       2.81 |   -0.97 |
-| [Superlux HD 668 (velour earpads)](./oratory1990/harman_over-ear_2018/Superlux%20HD%20668%20(velour%20earpads))                                                           |      64 |       2.68 |    1.06 |
+| [Superlux HD 668B (velour earpads)](./oratory1990/harman_over-ear_2018/Superlux%20HD%20668B%20(velour%20earpads))                                                         |      64 |       2.68 |    1.06 |
 | [Sony MDR-R10](./oratory1990/harman_over-ear_2018/Sony%20MDR-R10)                                                                                                         |      63 |       3.39 |   -0.53 |
 | [Dan Clark Audio Ether Flow](./oratory1990/harman_over-ear_2018/Dan%20Clark%20Audio%20Ether%20Flow)                                                                       |      62 |       3.04 |   -0.88 |
 | [EarFun Wave](./oratory1990/harman_over-ear_2018/EarFun%20Wave)                                                                                                           |      62 |       3.05 |   -0.93 |

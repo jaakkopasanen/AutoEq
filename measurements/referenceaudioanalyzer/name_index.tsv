@@ -80,6 +80,7 @@ Apple AirPods	Apple AirPods	earbud
 Apple AirPods Pro	Apple AirPods Pro	inear
 Apple EarPods	Apple EarPods	earbud
 Apple EarPods Mic		ignore
+Apple ME186	Apple ME186 In-Ear Headphones	inear
 Astell&Kern AK T8iE MKII	Astell & Kern K T8iE MKII	inear
 Astell&Kern AKR03 Roxanne	Astell & Kern AKR03 Roxanne	inear
 Astell&Kern AngieII	Astell & Kern Angie II	inear
@@ -302,6 +303,7 @@ Campfire Audio Andromeda	Campfire Audio Andromeda	inear
 Campfire Audio Andromeda Gold	Campfire Audio Andromeda Gold	inear
 Campfire Audio Andromeda Limited Edition	Campfire Audio Andromeda SS	inear
 Campfire Audio Andromeda S	Campfire Audio Andromeda S	inear
+Campfire Audio IO	Campfire Audio Io	inear
 Campfire Audio Orion	Campfire Audio Orion	inear
 Campfire Audio Solaris	Campfire Audio Solaris	inear
 Campfire Audio Solaris Limited	Campfire Audio Solaris SE	inear
@@ -639,6 +641,7 @@ KZ (Knowledge Zenith) ED12	KZ ED12	inear
 KZ (Knowledge Zenith) ZS6	KZ ZS6	inear
 KZ (Knowledge Zenith) ZST	KZ ZST	inear
 Lenovo in-ear	Lenovo in-ear	inear
+Lime Ears Lambda	Lime Ears Lambda	inear
 LongLife E-107	LongLife E-107	inear
 Lypertek TEVI	Lypertek Tevi	inear
 LZ Hi-Fi Audio A4	LZ Hi-Fi Audio A4	inear
@@ -668,6 +671,7 @@ Meze 99 Classics (not pressed)		ignore
 Meze Empyrean	Meze Empyrean	onear
 Meze Rai Solo	Meze Rai Solo	inear
 Mifo O7 1BA	Mifo O7 1BA	inear
+Mifo O7 2BA	Mifo O7 2BA	inear
 Monoprice 8320	Monoprice 8320	inear
 Monster Beats by Dr. Dre Studio	Beats Studio	onear
 Monster Beats Lady Gaga HeartBeats		ignore
@@ -945,6 +949,7 @@ Telefunken TH-120	Telefunken TH-120	inear
 Telefunken TH-130	Telefunken TH-130	inear
 Telefunken TH-140	Telefunken TH-140	inear
 TFZ (The Fragrant Zither) 1S	TFZ 1S	inear
+TFZ (The Fragrant Zither) COCO Q1 TWS	TFZ COCO Q1 TWS	inear
 TFZ (The Fragrant Zither) No.3	TFZ No.3	inear
 TFZ (The Fragrant Zither) Queen	TFZ Queen	inear
 TFZ (The Fragrant Zither) Series 2	TFZ Series 2	inear
@@ -1004,8 +1009,8 @@ Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
-Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
+Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear
 Whizzer TP1 (closed vent)	Whizzer TP1 (closed vent)	inear
 Whizzer TWS B6	Whizzer B6	inear
