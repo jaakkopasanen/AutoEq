@@ -39,7 +39,7 @@ class Oratory1990Crawler(Crawler):
         urls = {}
         table_header = document.find(id='wiki_full_list.3A')
         if table_header is None:
-            raise RedditCrawlFailed('Could not read data in Reddit. Open reddit.html in browser and re-run!')
+            raise RedditCrawlFailed('Could not read data in Reddit.')
         tbody = table_header.parent.find('table').find('tbody')
         manufacturer = None
         model = None

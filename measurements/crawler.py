@@ -6,6 +6,7 @@ import requests
 import shutil
 from bs4 import BeautifulSoup
 from abc import ABC, abstractmethod
+from time import sleep
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.name_index import NameIndex, NameItem
 from measurements.manufacturer_index import ManufacturerIndex
@@ -303,5 +304,6 @@ class Crawler(ABC):
 
     def get_beautiful_soup(self, url):
         self.driver.get(url)
+        sleep(1)  # Giving some time for Selenium to render the page
         html = self.driver.find_element_by_tag_name('html').get_attribute('outerHTML')
         return BeautifulSoup(html, 'html.parser')

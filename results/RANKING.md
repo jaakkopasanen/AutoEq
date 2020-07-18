@@ -253,6 +253,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Samsung Galaxy Buds](./crinacle/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds)                                                                             |      77 |       1.95 |    0.1  |           1.72 |
 | [Tanchjim Oxygen](./crinacle/harman_in-ear_2019v2/Tanchjim%20Oxygen)                                                                                       |      77 |       2.08 |   -0.01 |           1.49 |
 | [Moondrop Starfield](./oratory1990/harman_in-ear_2019v2/Moondrop%20Starfield)                                                                              |      76 |       1.85 |   -0.4  |           1.48 |
+| [Samsung Galaxy Buds Plus](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Plus)                                                              |      76 |       1.82 |   -0.65 |           1.19 |
 | [Shure SE846](./oratory1990/harman_in-ear_2019v2/Shure%20SE846)                                                                                            |      76 |       1.9  |   -0.32 |           1.59 |
 | [Sony IER-Z1R](./oratory1990/harman_in-ear_2019v2/Sony%20IER-Z1R)                                                                                          |      76 |       2.05 |   -0.28 |           1.49 |
 | [Fir Audio M4](./crinacle/harman_in-ear_2019v2/Fir%20Audio%20M4)                                                                                           |      76 |       1.83 |   -0.28 |           1.77 |
@@ -269,6 +270,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [KZ ZS10](./oratory1990/harman_in-ear_2019v2/KZ%20ZS10)                                                                                                    |      74 |       2.01 |   -0.33 |           1.88 |
 | [Sony MH750](./oratory1990/harman_in-ear_2019v2/Sony%20MH750)                                                                                              |      74 |       1.78 |   -0.77 |           1.57 |
 | [AKG N5005 (reference)](./crinacle/harman_in-ear_2019v2/AKG%20N5005%20(reference))                                                                         |      74 |       2    |   -0.49 |           1.66 |
+| [Fearless Audio Dawn](./crinacle/harman_in-ear_2019v2/Fearless%20Audio%20Dawn)                                                                             |      74 |       1.91 |   -0.67 |           1.51 |
 | [Fir Audio M2](./crinacle/harman_in-ear_2019v2/Fir%20Audio%20M2)                                                                                           |      74 |       2.15 |   -0.21 |           1.84 |
 | [Kumitate Lab KL-Focus (max bass)](./crinacle/harman_in-ear_2019v2/Kumitate%20Lab%20KL-Focus%20(max%20bass))                                               |      74 |       2.07 |   -0.4  |           1.79 |
 | [qdc Gemini](./crinacle/harman_in-ear_2019v2/qdc%20Gemini)                                                                                                 |      74 |       2.23 |   -0.12 |           1.68 |
@@ -283,6 +285,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Fearless Audio S8Pro](./crinacle/harman_in-ear_2019v2/Fearless%20Audio%20S8Pro)                                                                           |      73 |       2.27 |   -0.15 |           1.87 |
 | [IKKO OH1](./crinacle/harman_in-ear_2019v2/IKKO%20OH1)                                                                                                     |      73 |       2.34 |   -0.2  |           1.57 |
 | [JVC HA-FD02](./crinacle/harman_in-ear_2019v2/JVC%20HA-FD02)                                                                                               |      73 |       2.47 |   -0.1  |           1.68 |
+| [Mofasest M14 (02 setting)](./crinacle/harman_in-ear_2019v2/Mofasest%20M14%20(02%20setting))                                                               |      73 |       2.38 |   -0.18 |           1.77 |
 | [Moondrop A8](./crinacle/harman_in-ear_2019v2/Moondrop%20A8)                                                                                               |      73 |       2.36 |   -0.17 |           1.65 |
 | [Sony IER-Z1R](./crinacle/harman_in-ear_2019v2/Sony%20IER-Z1R)                                                                                             |      73 |       2.17 |   -0.42 |           1.62 |
 | [TFZ King Pro](./crinacle/harman_in-ear_2019v2/TFZ%20King%20Pro)                                                                                           |      73 |       2.07 |   -0.49 |           1.85 |
@@ -293,6 +296,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Sony WF-1000X](./oratory1990/harman_in-ear_2019v2/Sony%20WF-1000X)                                                                                        |      72 |       2    |   -0.5  |           2.22 |
 | [Sony WF-1000XM3](./oratory1990/harman_in-ear_2019v2/Sony%20WF-1000XM3)                                                                                    |      72 |       2.41 |    0.05 |           2.13 |
 | [Acoustune HS1670](./crinacle/harman_in-ear_2019v2/Acoustune%20HS1670)                                                                                     |      72 |       2.34 |    0.18 |           2    |
+| [BLON BL-05](./crinacle/harman_in-ear_2019v2/BLON%20BL-05)                                                                                                 |      72 |       2.23 |   -0.37 |           1.77 |
 | [Etymotic ER2XR](./crinacle/harman_in-ear_2019v2/Etymotic%20ER2XR)                                                                                         |      72 |       2.48 |    0.01 |           2.01 |
 | [IKKO OH10](./crinacle/harman_in-ear_2019v2/IKKO%20OH10)                                                                                                   |      72 |       2    |   -0.64 |           1.89 |
 | [InEar ProPhile-8 (bass, treble)](./crinacle/harman_in-ear_2019v2/InEar%20ProPhile-8%20(bass,%20treble))                                                   |      72 |       2.35 |   -0.2  |           1.85 |
@@ -300,6 +304,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [JVC FD01 (modded)](./crinacle/harman_in-ear_2019v2/JVC%20FD01%20(modded))                                                                                 |      72 |       2.19 |   -0.31 |           2.09 |
 | [JVC HA-FDX1 (blue)](./crinacle/harman_in-ear_2019v2/JVC%20HA-FDX1%20(blue))                                                                               |      72 |       2.27 |   -0.32 |           1.92 |
 | [KZ ZSN Pro](./crinacle/harman_in-ear_2019v2/KZ%20ZSN%20Pro)                                                                                               |      72 |       2.24 |   -0.24 |           2.1  |
+| [Mofasest M14 (00 setting)](./crinacle/harman_in-ear_2019v2/Mofasest%20M14%20(00%20setting))                                                               |      72 |       2.24 |   -0.4  |           1.72 |
 | [Pai Audio DM2A](./crinacle/harman_in-ear_2019v2/Pai%20Audio%20DM2A)                                                                                       |      72 |       2.48 |    0.08 |           1.98 |
 | [qdc Anole V6 (mids)](./crinacle/harman_in-ear_2019v2/qdc%20Anole%20V6%20(mids))                                                                           |      72 |       2.52 |   -0.07 |           1.74 |
 | [TFZ Mylove 2](./crinacle/harman_in-ear_2019v2/TFZ%20Mylove%202)                                                                                           |      72 |       1.96 |   -0.62 |           1.98 |
@@ -326,8 +331,10 @@ targets and preference scoring developed by Sean Olive et al.
 | [Edifier TWS1](./crinacle/harman_in-ear_2019v2/Edifier%20TWS1)                                                                                             |      70 |       2.4  |   -0.43 |           1.98 |
 | [Fir Audio M5](./crinacle/harman_in-ear_2019v2/Fir%20Audio%20M5)                                                                                           |      70 |       2.34 |   -0.37 |           2.31 |
 | [Hidition Waltz](./crinacle/harman_in-ear_2019v2/Hidition%20Waltz)                                                                                         |      70 |       2.57 |   -0.27 |           1.93 |
+| [Hidizs Mermaid MS4](./crinacle/harman_in-ear_2019v2/Hidizs%20Mermaid%20MS4)                                                                               |      70 |       2.29 |   -0.29 |           2.54 |
 | [InEar ProPhile-8 (bass)](./crinacle/harman_in-ear_2019v2/InEar%20ProPhile-8%20(bass))                                                                     |      70 |       2.48 |   -0.33 |           1.97 |
 | [JVC HA-FD01](./crinacle/harman_in-ear_2019v2/JVC%20HA-FD01)                                                                                               |      70 |       2.67 |    0.13 |           1.74 |
+| [Moondrop Blessing 2](./crinacle/harman_in-ear_2019v2/Moondrop%20Blessing%202)                                                                             |      70 |       2.37 |    0.59 |           1.75 |
 | [Tansio Mirai TSMR-5 (on-off-off)](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-5%20(on-off-off))                                                 |      70 |       2.51 |    0.28 |           1.9  |
 | [1MORE Triple Driver LTNG](./oratory1990/harman_in-ear_2019v2/1MORE%20Triple%20Driver%20LTNG)                                                              |      69 |       2.66 |   -0.3  |           1.97 |
 | [Bose QuietComfort 20](./oratory1990/harman_in-ear_2019v2/Bose%20QuietComfort%2020)                                                                        |      69 |       2.63 |    0.12 |           2.2  |
@@ -372,6 +379,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [qdc Anole VX (mids)](./crinacle/harman_in-ear_2019v2/qdc%20Anole%20VX%20(mids))                                                                           |      68 |       2.87 |   -0.08 |           2.12 |
 | [Shuoer Tape](./crinacle/harman_in-ear_2019v2/Shuoer%20Tape)                                                                                               |      68 |       2.41 |   -0.65 |           2.15 |
 | [TFZ Exclusive 5](./crinacle/harman_in-ear_2019v2/TFZ%20Exclusive%205)                                                                                     |      68 |       2.75 |    0.2  |           2.09 |
+| [ThieAudio Voyager 14 (00 setting)](./crinacle/harman_in-ear_2019v2/ThieAudio%20Voyager%2014%20(00%20setting))                                             |      68 |       2.53 |   -0.23 |           2.71 |
 | [Unique Melody Mason V3+](./crinacle/harman_in-ear_2019v2/Unique%20Melody%20Mason%20V3+)                                                                   |      68 |       2.87 |   -0.16 |           1.89 |
 | [oBravo Cupid](./oratory1990/harman_in-ear_2019v2/oBravo%20Cupid)                                                                                          |      67 |       2.43 |   -0.55 |           2.45 |
 | [Sennheiser OCX 685](./oratory1990/harman_in-ear_2019v2/Sennheiser%20OCX%20685)                                                                            |      67 |       2.93 |    0.02 |           2.39 |
@@ -411,7 +419,9 @@ targets and preference scoring developed by Sean Olive et al.
 | [Shure SE846 (white)](./crinacle/harman_in-ear_2019v2/Shure%20SE846%20(white))                                                                             |      66 |       2.68 |   -0.5  |           2.4  |
 | [Sony XBA-300](./crinacle/harman_in-ear_2019v2/Sony%20XBA-300)                                                                                             |      66 |       2.73 |    0.39 |           2.25 |
 | [Sony XBA-A3 (modded)](./crinacle/harman_in-ear_2019v2/Sony%20XBA-A3%20(modded))                                                                           |      66 |       2.84 |   -0.24 |           2.36 |
-| [Tin HiFi T2 Galaxy Mod](./crinacle/harman_in-ear_2019v2/Tin%20HiFi%20T2%20Galaxy%20Mod)                                                                   |      66 |       2.38 |   -0.71 |           2.45 |
+| [ThieAudio Voyager 14 (02 setting)](./crinacle/harman_in-ear_2019v2/ThieAudio%20Voyager%2014%20(02%20setting))                                             |      66 |       2.88 |   -0.32 |           2.23 |
+| [Tin HiFi T2 (galaxy mod)](./crinacle/harman_in-ear_2019v2/Tin%20HiFi%20T2%20(galaxy%20mod))                                                               |      66 |       2.38 |   -0.71 |           2.45 |
+| [Tin HiFi TWS2000](./crinacle/harman_in-ear_2019v2/Tin%20HiFi%20TWS2000)                                                                                   |      66 |       2.85 |    0.21 |           2.31 |
 | [Unique Melody Maven](./crinacle/harman_in-ear_2019v2/Unique%20Melody%20Maven)                                                                             |      66 |       3.04 |    0.12 |           2.16 |
 | [Vivo XE800](./oratory1990/harman_in-ear_2019v2/Vivo%20XE800)                                                                                              |      65 |       2.73 |    0.65 |           2.05 |
 | [64 Audio A12t](./crinacle/harman_in-ear_2019v2/64%20Audio%20A12t)                                                                                         |      65 |       2.5  |   -0.87 |           2.15 |
@@ -423,10 +433,14 @@ targets and preference scoring developed by Sean Olive et al.
 | [Focal Sphear](./crinacle/harman_in-ear_2019v2/Focal%20Sphear)                                                                                             |      65 |       3.11 |    0.01 |           2.59 |
 | [Hidition NT6 Pro](./crinacle/harman_in-ear_2019v2/Hidition%20NT6%20Pro)                                                                                   |      65 |       3.04 |   -0.08 |           2.38 |
 | [Hidition Viento-A (CIEM)](./crinacle/harman_in-ear_2019v2/Hidition%20Viento-A%20(CIEM))                                                                   |      65 |       2.67 |    0.74 |           2.06 |
+| [KZ ZSX](./crinacle/harman_in-ear_2019v2/KZ%20ZSX)                                                                                                         |      65 |       2.73 |   -0.63 |           2.24 |
 | [LH Labs Verb](./crinacle/harman_in-ear_2019v2/LH%20Labs%20Verb)                                                                                           |      65 |       2.85 |    0.14 |           2.95 |
 | [Ocharaku Co-Donguri Shizuku](./crinacle/harman_in-ear_2019v2/Ocharaku%20Co-Donguri%20Shizuku)                                                             |      65 |       2.89 |   -0.16 |           2.58 |
 | [Oriolus Japan Mk2](./crinacle/harman_in-ear_2019v2/Oriolus%20Japan%20Mk2)                                                                                 |      65 |       2.71 |   -0.63 |           2.3  |
 | [qdc Anole V6](./crinacle/harman_in-ear_2019v2/qdc%20Anole%20V6)                                                                                           |      65 |       2.85 |   -0.62 |           1.9  |
+| [Queen of Audio Mojito](./crinacle/harman_in-ear_2019v2/Queen%20of%20Audio%20Mojito)                                                                       |      65 |       2.98 |    0.48 |           1.98 |
+| [Queen of Audio QM50](./crinacle/harman_in-ear_2019v2/Queen%20of%20Audio%20QM50)                                                                           |      65 |       2.88 |   -0.32 |           2.38 |
+| [Tansio Mirai TSMR-12 (003 setting)](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-12%20(003%20setting))                                           |      65 |       2.94 |   -0.1  |           2.75 |
 | [Tansio Mirai TSMR-3 Pro 020](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-3%20Pro%20020)                                                         |      65 |       2.98 |   -0.1  |           2.75 |
 | [Tansio Mirai TSMR-5 (off-on-off)](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-5%20(off-on-off))                                                 |      65 |       2.74 |    0.87 |           1.76 |
 | [64 Audio 1964 Ears V2](./crinacle/harman_in-ear_2019v2/64%20Audio%201964%20Ears%20V2)                                                                     |      64 |       2.99 |    0.27 |           2.64 |
@@ -474,10 +488,13 @@ targets and preference scoring developed by Sean Olive et al.
 | [Hidition NT6](./crinacle/harman_in-ear_2019v2/Hidition%20NT6)                                                                                             |      62 |       3.07 |    0.31 |           2.7  |
 | [HUM Dolores](./crinacle/harman_in-ear_2019v2/HUM%20Dolores)                                                                                               |      62 |       3.15 |    0.57 |           2.24 |
 | [Jomo Audio Samba](./crinacle/harman_in-ear_2019v2/Jomo%20Audio%20Samba)                                                                                   |      62 |       3.14 |   -0.16 |           2.86 |
+| [KZ S2](./crinacle/harman_in-ear_2019v2/KZ%20S2)                                                                                                           |      62 |       3.24 |    0.38 |           2.39 |
 | [Lime Ears Aether](./crinacle/harman_in-ear_2019v2/Lime%20Ears%20Aether)                                                                                   |      62 |       3.24 |   -0.14 |           2.63 |
+| [Mofasest M14 (12 setting)](./crinacle/harman_in-ear_2019v2/Mofasest%20M14%20(12%20setting))                                                               |      62 |       2.77 |   -0.93 |           2.3  |
 | [PEARS SH3 (custom)](./crinacle/harman_in-ear_2019v2/PEARS%20SH3%20(custom))                                                                               |      62 |       3.12 |    0.23 |           2.8  |
 | [SATOLEX Tumuri DH303-A1](./crinacle/harman_in-ear_2019v2/SATOLEX%20Tumuri%20DH303-A1)                                                                     |      62 |       3.21 |    0.25 |           2.56 |
 | [Sennheiser IE 80 S](./crinacle/harman_in-ear_2019v2/Sennheiser%20IE%2080%20S)                                                                             |      62 |       3.36 |   -0.09 |           2.71 |
+| [Shanling ME700](./crinacle/harman_in-ear_2019v2/Shanling%20ME700)                                                                                         |      62 |       2.89 |   -0.79 |           2.25 |
 | [Tansio Mirai TSMR-3 Pro 003](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-3%20Pro%20003)                                                         |      62 |       3.03 |    0.77 |           1.98 |
 | [TFZ Ti Galaxy](./crinacle/harman_in-ear_2019v2/TFZ%20Ti%20Galaxy)                                                                                         |      62 |       2.82 |   -0.97 |           2.24 |
 | [Vision Ears VE8](./crinacle/harman_in-ear_2019v2/Vision%20Ears%20VE8)                                                                                     |      62 |       3.08 |   -0.31 |           2.95 |
@@ -530,11 +547,13 @@ targets and preference scoring developed by Sean Olive et al.
 | [Kinera IDUN Deluxe](./crinacle/harman_in-ear_2019v2/Kinera%20IDUN%20Deluxe)                                                                               |      60 |       3.53 |    0.11 |           2.81 |
 | [KZ AS10](./crinacle/harman_in-ear_2019v2/KZ%20AS10)                                                                                                       |      60 |       2.91 |   -0.89 |           2.77 |
 | [Magaosi K5](./crinacle/harman_in-ear_2019v2/Magaosi%20K5)                                                                                                 |      60 |       3.42 |   -0.2  |           2.82 |
+| [Mofasest M14 (10 setting)](./crinacle/harman_in-ear_2019v2/Mofasest%20M14%20(10%20setting))                                                               |      60 |       2.86 |   -1.04 |           2.4  |
 | [NiceHCK NX7 Pro (blue)](./crinacle/harman_in-ear_2019v2/NiceHCK%20NX7%20Pro%20(blue))                                                                     |      60 |       2.87 |   -0.98 |           2.67 |
 | [Noble Audio K10 Encore](./crinacle/harman_in-ear_2019v2/Noble%20Audio%20K10%20Encore)                                                                     |      60 |       3.45 |    0.14 |           2.87 |
 | [qdc Neptune](./crinacle/harman_in-ear_2019v2/qdc%20Neptune)                                                                                               |      60 |       3.07 |   -0.4  |           3.16 |
 | [Samsung EO-IG955 (AKG)](./crinacle/harman_in-ear_2019v2/Samsung%20EO-IG955%20(AKG))                                                                       |      60 |       2.9  |   -0.96 |           2.59 |
 | [Shozy x AAW Hibiki](./crinacle/harman_in-ear_2019v2/Shozy%20x%20AAW%20Hibiki)                                                                             |      60 |       3.33 |   -0.22 |           2.86 |
+| [Tipsy Dunmer Pro](./crinacle/harman_in-ear_2019v2/Tipsy%20Dunmer%20Pro)                                                                                   |      60 |       3.26 |    0.42 |           2.68 |
 | [Unique Melody Maestro V2](./crinacle/harman_in-ear_2019v2/Unique%20Melody%20Maestro%20V2)                                                                 |      60 |       3.45 |   -0.18 |           2.67 |
 | [Anker SoundCore Liberty Air 2](./oratory1990/harman_in-ear_2019v2/Anker%20SoundCore%20Liberty%20Air%202)                                                  |      59 |       2.88 |   -1.14 |           2.45 |
 | [BGVP DMG](./oratory1990/harman_in-ear_2019v2/BGVP%20DMG)                                                                                                  |      59 |       3.24 |   -0.52 |           2.99 |
@@ -575,6 +594,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Hidition NT8](./crinacle/harman_in-ear_2019v2/Hidition%20NT8)                                                                                             |      58 |       3.42 |    0.41 |           2.88 |
 | [IMR Acoustics Zenith (black)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20Zenith%20(black))                                                         |      58 |       3.56 |    0.47 |           2.61 |
 | [Jabra Elite Active 65t](./crinacle/harman_in-ear_2019v2/Jabra%20Elite%20Active%2065t)                                                                     |      58 |       3.41 |   -0.49 |           2.81 |
+| [Jade Audio EA3](./crinacle/harman_in-ear_2019v2/Jade%20Audio%20EA3)                                                                                       |      58 |       3.64 |   -0.29 |           2.78 |
 | [Jomo Audio Trinity Brass](./crinacle/harman_in-ear_2019v2/Jomo%20Audio%20Trinity%20Brass)                                                                 |      58 |       2.87 |   -1.21 |           2.69 |
 | [Lime Ears Model X](./crinacle/harman_in-ear_2019v2/Lime%20Ears%20Model%20X)                                                                               |      58 |       3.17 |    0.97 |           2.45 |
 | [Nuarl NT01](./crinacle/harman_in-ear_2019v2/Nuarl%20NT01)                                                                                                 |      58 |       3.15 |   -0.85 |           2.73 |
@@ -584,6 +604,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [RHA T20i](./crinacle/harman_in-ear_2019v2/RHA%20T20i)                                                                                                     |      58 |       2.9  |   -1.24 |           2.58 |
 | [Shozy x AAW Hibiki SE](./crinacle/harman_in-ear_2019v2/Shozy%20x%20AAW%20Hibiki%20SE)                                                                     |      58 |       3.04 |   -1.12 |           2.53 |
 | [Simgot Audio EM2](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EM2)                                                                                   |      58 |       3.36 |   -0.36 |           3.33 |
+| [TRI i3](./crinacle/harman_in-ear_2019v2/TRI%20i3)                                                                                                         |      58 |       3.02 |   -1.19 |           2.32 |
 | [Whizzer A15](./crinacle/harman_in-ear_2019v2/Whizzer%20A15)                                                                                               |      58 |       3.45 |   -0.22 |           3.25 |
 | [Anker Soundcore Liberty 2 Pro](./oratory1990/harman_in-ear_2019v2/Anker%20Soundcore%20Liberty%202%20Pro)                                                  |      57 |       2.89 |   -0.97 |           3.33 |
 | [JVC HA-FW10000](./oratory1990/harman_in-ear_2019v2/JVC%20HA-FW10000)                                                                                      |      57 |       2.97 |    1.09 |           2.87 |
@@ -628,6 +649,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Clear Tune CT-6E](./crinacle/harman_in-ear_2019v2/Clear%20Tune%20CT-6E)                                                                                   |      56 |       3.81 |   -0    |           3.47 |
 | [DUNU DN1000](./crinacle/harman_in-ear_2019v2/DUNU%20DN1000)                                                                                               |      56 |       3.42 |    0.38 |           3.5  |
 | [Elysian Terminator](./crinacle/harman_in-ear_2019v2/Elysian%20Terminator)                                                                                 |      56 |       3.36 |   -0.71 |           3.01 |
+| [IMR Acoustics RAH (red nozzle, silver filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(red%20nozzle,%20silver%20filter))                 |      56 |       3.47 |   -0.62 |           3.02 |
 | [Jomo Audio Quatre (black)](./crinacle/harman_in-ear_2019v2/Jomo%20Audio%20Quatre%20(black))                                                               |      56 |       3.12 |   -0.96 |           3.07 |
 | [Kumitate Lab KL-Sanka B](./crinacle/harman_in-ear_2019v2/Kumitate%20Lab%20KL-Sanka%20B)                                                                   |      56 |       3.61 |   -0.4  |           3.06 |
 | [Kumitate Lab KL-Sirius](./crinacle/harman_in-ear_2019v2/Kumitate%20Lab%20KL-Sirius)                                                                       |      56 |       3.57 |    0.65 |           2.69 |
@@ -638,6 +660,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Simgot Audio EN700 Pro](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EN700%20Pro)                                                                     |      56 |       3.09 |   -1.29 |           2.57 |
 | [Sony IER-M7](./crinacle/harman_in-ear_2019v2/Sony%20IER-M7)                                                                                               |      56 |       3.23 |   -0.91 |           3    |
 | [Tansio Mirai TSMR-3 Pro 100](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-3%20Pro%20100)                                                         |      56 |       3.34 |   -0.57 |           3.35 |
+| [ThieAudio Legacy 9](./crinacle/harman_in-ear_2019v2/ThieAudio%20Legacy%209)                                                                               |      56 |       3.11 |   -1.33 |           2.58 |
 | [Tin HiFi T1](./crinacle/harman_in-ear_2019v2/Tin%20HiFi%20T1)                                                                                             |      56 |       3.38 |   -0.89 |           2.68 |
 | [TRN BA5](./crinacle/harman_in-ear_2019v2/TRN%20BA5)                                                                                                       |      56 |       3.59 |    0.82 |           2.44 |
 | [Ultimate Ears UE7](./crinacle/harman_in-ear_2019v2/Ultimate%20Ears%20UE7)                                                                                 |      56 |       3.46 |   -0.21 |           3.8  |
@@ -662,6 +685,9 @@ targets and preference scoring developed by Sean Olive et al.
 | [Final Audio B3](./crinacle/harman_in-ear_2019v2/Final%20Audio%20B3)                                                                                       |      55 |       3.75 |    0.23 |           3.4  |
 | [iBasso IT01](./crinacle/harman_in-ear_2019v2/iBasso%20IT01)                                                                                               |      55 |       3.12 |   -1.19 |           2.98 |
 | [IMR Acoustics R2 Aten (purple nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(purple%20nozzle,%20black%20filter))   |      55 |       3.6  |   -0.14 |           3.87 |
+| [IMR Acoustics RAH (black nozzle, silver filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(black%20nozzle,%20silver%20filter))             |      55 |       3.53 |   -0.62 |           3.06 |
+| [IMR Acoustics RAH (purle nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(purle%20nozzle,%20black%20filter))               |      55 |       3.79 |    0.14 |           3.51 |
+| [IMR Acoustics RAH (silver nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(silver%20nozzle,%20black%20filter))             |      55 |       3.49 |   -0.62 |           3.09 |
 | [Jabra Elite 75t](./crinacle/harman_in-ear_2019v2/Jabra%20Elite%2075t)                                                                                     |      55 |       3.52 |   -0.97 |           2.46 |
 | [Kumitate Lab KL-Meteo](./crinacle/harman_in-ear_2019v2/Kumitate%20Lab%20KL-Meteo)                                                                         |      55 |       2.95 |   -1.13 |           3.49 |
 | [Kumitate Lab KL-Sirius (CIEM)](./crinacle/harman_in-ear_2019v2/Kumitate%20Lab%20KL-Sirius%20(CIEM))                                                       |      55 |       3.65 |    0.48 |           3    |
@@ -672,6 +698,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Sennheiser IE 800](./crinacle/harman_in-ear_2019v2/Sennheiser%20IE%20800)                                                                                 |      55 |       3.64 |   -0.43 |           3.33 |
 | [Sony XBA-Z5](./crinacle/harman_in-ear_2019v2/Sony%20XBA-Z5)                                                                                               |      55 |       3.35 |   -0.85 |           3.09 |
 | [SoundMAGIC E11](./crinacle/harman_in-ear_2019v2/SoundMAGIC%20E11)                                                                                         |      55 |       3.8  |   -0.34 |           2.94 |
+| [ThieAudio Voyager 14 (12 setting)](./crinacle/harman_in-ear_2019v2/ThieAudio%20Voyager%2014%20(12%20setting))                                             |      55 |       3.25 |   -1.09 |           3.03 |
 | [Tin HiFi T3](./crinacle/harman_in-ear_2019v2/Tin%20HiFi%20T3)                                                                                             |      55 |       3.75 |    0.27 |           3.34 |
 | [Sennheiser IE 800 S](./oratory1990/harman_in-ear_2019v2/Sennheiser%20IE%20800%20S)                                                                        |      54 |       3.42 |   -1.09 |           2.7  |
 | [Sony XBA-N1](./oratory1990/harman_in-ear_2019v2/Sony%20XBA-N1)                                                                                            |      54 |       3.16 |   -1.3  |           2.91 |
@@ -749,6 +776,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Empire Ears Zeus](./crinacle/harman_in-ear_2019v2/Empire%20Ears%20Zeus)                                                                                   |      52 |       4.18 |    0.22 |           3.3  |
 | [Final Audio E4000](./crinacle/harman_in-ear_2019v2/Final%20Audio%20E4000)                                                                                 |      52 |       3.48 |   -1.04 |           3.24 |
 | [Final Audio Lab 1](./crinacle/harman_in-ear_2019v2/Final%20Audio%20Lab%201)                                                                               |      52 |       3.82 |   -0.45 |           3.74 |
+| [IMR Acoustics RAH (red nozzle, no filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(red%20nozzle,%20no%20filter))                         |      52 |       3.42 |   -1.23 |           3.11 |
 | [Jomo Audio Flamenco (treble)](./crinacle/harman_in-ear_2019v2/Jomo%20Audio%20Flamenco%20(treble))                                                         |      52 |       3.65 |    1.26 |           2.4  |
 | [Ocharaku Donguri Ti Plus](./crinacle/harman_in-ear_2019v2/Ocharaku%20Donguri%20Ti%20Plus)                                                                 |      52 |       4.01 |   -0.62 |           2.88 |
 | [RHA CL750](./crinacle/harman_in-ear_2019v2/RHA%20CL750)                                                                                                   |      52 |       3.95 |    0.53 |           3.25 |
@@ -776,6 +804,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [qdc Anole VX All](./crinacle/harman_in-ear_2019v2/qdc%20Anole%20VX%20All)                                                                                 |      51 |       3.6  |   -1.21 |           3.01 |
 | [Shure SE846 (blue)](./crinacle/harman_in-ear_2019v2/Shure%20SE846%20(blue))                                                                               |      51 |       3.58 |   -1.09 |           3.28 |
 | [Sony MDR-7550](./crinacle/harman_in-ear_2019v2/Sony%20MDR-7550)                                                                                           |      51 |       4.03 |    0.24 |           3.72 |
+| [Tansio Mirai TSMR-12 (020 setting)](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-12%20(020%20setting))                                           |      51 |       3.68 |   -0.76 |           3.78 |
 | [Unique Melody Mason V3 Ported](./crinacle/harman_in-ear_2019v2/Unique%20Melody%20Mason%20V3%20Ported)                                                     |      51 |       4.15 |    0.83 |           2.34 |
 | [Unique Melody Mavis 2](./crinacle/harman_in-ear_2019v2/Unique%20Melody%20Mavis%202)                                                                       |      51 |       3.81 |    1.19 |           2.46 |
 | [Vision Ears VE5](./crinacle/harman_in-ear_2019v2/Vision%20Ears%20VE5)                                                                                     |      51 |       4.11 |    0.12 |           3.71 |
@@ -807,6 +836,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Sony MDR-EX800ST](./crinacle/harman_in-ear_2019v2/Sony%20MDR-EX800ST)                                                                                     |      50 |       4.07 |    0.37 |           3.81 |
 | [Sound Linear Fitz 10 Flat](./crinacle/harman_in-ear_2019v2/Sound%20Linear%20Fitz%2010%20Flat)                                                             |      50 |       3.87 |   -0.4  |           4.29 |
 | [Taobao 6 driver](./crinacle/harman_in-ear_2019v2/Taobao%206%20driver)                                                                                     |      50 |       3.79 |   -0.83 |           3.6  |
+| [ThieAudio Voyager 14 (10 setting)](./crinacle/harman_in-ear_2019v2/ThieAudio%20Voyager%2014%20(10%20setting))                                             |      50 |       3.27 |   -1.12 |           4.25 |
 | [Ultimate Ears UE5](./crinacle/harman_in-ear_2019v2/Ultimate%20Ears%20UE5)                                                                                 |      50 |       3.85 |   -0.65 |           3.75 |
 | [Unique Melody Martian](./crinacle/harman_in-ear_2019v2/Unique%20Melody%20Martian)                                                                         |      50 |       3.92 |    0.93 |           3.02 |
 | [Venture Electronics Bonus In-Ears (BIE)](./crinacle/harman_in-ear_2019v2/Venture%20Electronics%20Bonus%20In-Ears%20(BIE))                                 |      50 |       3.41 |   -1.54 |           3    |
@@ -821,6 +851,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Final Audio Heaven S](./crinacle/harman_in-ear_2019v2/Final%20Audio%20Heaven%20S)                                                                         |      49 |       4.05 |   -0.62 |           3.68 |
 | [Grado GR8](./crinacle/harman_in-ear_2019v2/Grado%20GR8)                                                                                                   |      49 |       3.9  |   -0.51 |           4.24 |
 | [HiFi Boy OS V3](./crinacle/harman_in-ear_2019v2/HiFi%20Boy%20OS%20V3)                                                                                     |      49 |       3.72 |   -1.09 |           3.57 |
+| [IMR Acoustics RAH (red nozzle, blue filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(red%20nozzle,%20blue%20filter))                     |      49 |       3.64 |   -1.35 |           3.23 |
 | [Itsfit Lab R3](./crinacle/harman_in-ear_2019v2/Itsfit%20Lab%20R3)                                                                                         |      49 |       4    |   -0.24 |           4.35 |
 | [NuForce EDC3](./crinacle/harman_in-ear_2019v2/NuForce%20EDC3)                                                                                             |      49 |       4.26 |   -0.13 |           3.95 |
 | [Ocharaku Flat-4 Kaede Type 1](./crinacle/harman_in-ear_2019v2/Ocharaku%20Flat-4%20Kaede%20Type%201)                                                       |      49 |       4.45 |    0.12 |           3.52 |
@@ -906,6 +937,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [SATOLEX Tubomi DH302-A1Bs](./crinacle/harman_in-ear_2019v2/SATOLEX%20Tubomi%20DH302-A1Bs)                                                                 |      46 |       3.92 |   -1.13 |           3.65 |
 | [TFZ 1S](./crinacle/harman_in-ear_2019v2/TFZ%201S)                                                                                                         |      46 |       3.9  |   -1.51 |           3.12 |
 | [Tiandirenhe TD1](./crinacle/harman_in-ear_2019v2/Tiandirenhe%20TD1)                                                                                       |      46 |       3.6  |   -1.44 |           3.81 |
+| [Tin HiFi T2 Plus](./crinacle/harman_in-ear_2019v2/Tin%20HiFi%20T2%20Plus)                                                                                 |      46 |       4.12 |    1.59 |           2.52 |
 | [Vision Ears VE6X1](./crinacle/harman_in-ear_2019v2/Vision%20Ears%20VE6X1)                                                                                 |      46 |       4.08 |   -0.72 |           4.29 |
 | [VSonic Ares](./crinacle/harman_in-ear_2019v2/VSonic%20Ares)                                                                                               |      46 |       3.83 |   -1.59 |           3.03 |
 | [Zero Audio Carbo Singolo ZH-BS150-CS](./crinacle/harman_in-ear_2019v2/Zero%20Audio%20Carbo%20Singolo%20ZH-BS150-CS)                                       |      46 |       4.39 |   -0.47 |           3.9  |
@@ -922,6 +954,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Custom Art Pro330v2](./crinacle/harman_in-ear_2019v2/Custom%20Art%20Pro330v2)                                                                             |      45 |       4.09 |   -0.41 |           5    |
 | [Empire Ears Wraith](./crinacle/harman_in-ear_2019v2/Empire%20Ears%20Wraith)                                                                               |      45 |       4.61 |   -0.34 |           3.93 |
 | [Etymotic ER4S](./crinacle/harman_in-ear_2019v2/Etymotic%20ER4S)                                                                                           |      45 |       4.23 |    1.41 |           2.76 |
+| [IMR Acoustics RAH (red nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(red%20nozzle,%20black%20filter))                   |      45 |       3.92 |   -1.49 |           3.45 |
 | [JH Audio Billie Jean](./crinacle/harman_in-ear_2019v2/JH%20Audio%20Billie%20Jean)                                                                         |      45 |       4.11 |   -1.14 |           3.67 |
 | [Jomo Audio Haka](./crinacle/harman_in-ear_2019v2/Jomo%20Audio%20Haka)                                                                                     |      45 |       3.98 |   -1.11 |           3.99 |
 | [Meccaudio ME04](./crinacle/harman_in-ear_2019v2/Meccaudio%20ME04)                                                                                         |      45 |       4.33 |   -0.54 |           4.07 |
@@ -939,6 +972,8 @@ targets and preference scoring developed by Sean Olive et al.
 | [EarSonics Blade](./crinacle/harman_in-ear_2019v2/EarSonics%20Blade)                                                                                       |      44 |       4.05 |   -1.47 |           3.21 |
 | [Final Audio E1000](./crinacle/harman_in-ear_2019v2/Final%20Audio%20E1000)                                                                                 |      44 |       4.33 |    0.66 |           4.13 |
 | [Final Audio FI-DO6SS ANT20](./crinacle/harman_in-ear_2019v2/Final%20Audio%20FI-DO6SS%20ANT20)                                                             |      44 |       4.03 |   -1.24 |           3.87 |
+| [IMR Acoustics RAH (red nozzle, green filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(red%20nozzle,%20green%20filter))                   |      44 |       3.97 |   -1.52 |           3.52 |
+| [IMR Acoustics RAH (red nozzle, red filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(red%20nozzle,%20red%20filter))                       |      44 |       3.93 |   -1.49 |           3.46 |
 | [Meccaudio ME20](./crinacle/harman_in-ear_2019v2/Meccaudio%20ME20)                                                                                         |      44 |       4.33 |   -1.18 |           3.25 |
 | [Oriolus Finschi Hifi](./crinacle/harman_in-ear_2019v2/Oriolus%20Finschi%20Hifi)                                                                           |      44 |       3.95 |   -1.76 |           3.17 |
 | [Oriveti New Primacy](./crinacle/harman_in-ear_2019v2/Oriveti%20New%20Primacy)                                                                             |      44 |       4.3  |   -0.68 |           4.35 |
@@ -955,6 +990,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Empire Ears Vantage](./crinacle/harman_in-ear_2019v2/Empire%20Ears%20Vantage)                                                                             |      43 |       3.87 |   -1.91 |           3.18 |
 | [Final Audio Heaven 7](./crinacle/harman_in-ear_2019v2/Final%20Audio%20Heaven%207)                                                                         |      43 |       4.48 |    0.9  |           3.65 |
 | [IMR Acoustics R1 (black)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R1%20(black))                                                                 |      43 |       3.91 |   -1.65 |           3.66 |
+| [IMR Acoustics RAH (red nozzle, purple filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(red%20nozzle,%20purple%20filter))                 |      43 |       4.02 |   -1.53 |           3.52 |
 | [IMR Acoustics Zenith (pink)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20Zenith%20(pink))                                                           |      43 |       4.41 |    1.22 |           3.32 |
 | [JH Audio 16v2 (min)](./crinacle/harman_in-ear_2019v2/JH%20Audio%2016v2%20(min))                                                                           |      43 |       4.48 |   -0.54 |           4.36 |
 | [JH Audio Layla AION (min bass)](./crinacle/harman_in-ear_2019v2/JH%20Audio%20Layla%20AION%20(min%20bass))                                                 |      43 |       4.86 |   -0.07 |           4.45 |
@@ -964,6 +1000,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Vision Ears Erlkönig 1](./crinacle/harman_in-ear_2019v2/Vision%20Ears%20Erlk%C3%B6nig%201)                                                                |      43 |       3.85 |   -1.58 |           3.79 |
 | [VSonic VS7](./crinacle/harman_in-ear_2019v2/VSonic%20VS7)                                                                                                 |      43 |       4.55 |   -0.21 |           4.82 |
 | [Yamaha EPH-100](./crinacle/harman_in-ear_2019v2/Yamaha%20EPH-100)                                                                                         |      43 |       4.24 |   -1.47 |           3.2  |
+| [Yinyoo Ash](./crinacle/harman_in-ear_2019v2/Yinyoo%20Ash)                                                                                                 |      43 |       4.04 |   -1.53 |           3.66 |
 | [Etymotic ER2SE](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER2SE)                                                                                      |      42 |       4.41 |    1.58 |           2.83 |
 | [Etymotic ER2SR](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER2SR)                                                                                      |      42 |       4.41 |    1.58 |           2.83 |
 | [Etymotic ER4SR](./oratory1990/harman_in-ear_2019v2/Etymotic%20ER4SR)                                                                                      |      42 |       4.42 |    1.53 |           2.77 |
@@ -982,6 +1019,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Phonak PFE 232](./crinacle/harman_in-ear_2019v2/Phonak%20PFE%20232)                                                                                       |      42 |       4.29 |   -0.94 |           4.26 |
 | [Rhapsodio Clipper](./crinacle/harman_in-ear_2019v2/Rhapsodio%20Clipper)                                                                                   |      42 |       4.14 |   -1.53 |           3.68 |
 | [Sennheiser IE 80 (half)](./crinacle/harman_in-ear_2019v2/Sennheiser%20IE%2080%20(half))                                                                   |      42 |       4.12 |   -1.48 |           3.66 |
+| [Tansio Mirai TSMR-12 (100 setting)](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-12%20(100%20setting))                                           |      42 |       4.21 |   -1.11 |           4.37 |
 | [Ultimate Ears UE18+](./crinacle/harman_in-ear_2019v2/Ultimate%20Ears%20UE18+)                                                                             |      42 |       4.36 |   -0.65 |           4.71 |
 | [Whizzer A-HE03 Kylin](./crinacle/harman_in-ear_2019v2/Whizzer%20A-HE03%20Kylin)                                                                           |      42 |       4.03 |   -1.43 |           3.93 |
 | [Beyerdynamic Blue Byrd](./oratory1990/harman_in-ear_2019v2/Beyerdynamic%20Blue%20Byrd)                                                                    |      41 |       4.51 |    1.31 |           3.48 |
@@ -994,6 +1032,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Final Audio F7200](./crinacle/harman_in-ear_2019v2/Final%20Audio%20F7200)                                                                                 |      41 |       4.91 |    0.26 |           4.43 |
 | [HYLA Nerva X](./crinacle/harman_in-ear_2019v2/HYLA%20Nerva%20X)                                                                                           |      41 |       4.31 |   -1.37 |           3.85 |
 | [IMR Acoustics R1 (yellow)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R1%20(yellow))                                                               |      41 |       4.03 |   -1.81 |           3.61 |
+| [IMR Acoustics RAH (blue nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(blue%20nozzle,%20black%20filter))                 |      41 |       4.16 |   -1.7  |           3.64 |
 | [Itsfit Lab R3 (CIEM)](./crinacle/harman_in-ear_2019v2/Itsfit%20Lab%20R3%20(CIEM))                                                                         |      41 |       4.58 |   -0.51 |           4.88 |
 | [KZ S4](./crinacle/harman_in-ear_2019v2/KZ%20S4)                                                                                                           |      41 |       4.11 |   -1.63 |           3.64 |
 | [Moondrop Crescent](./crinacle/harman_in-ear_2019v2/Moondrop%20Crescent)                                                                                   |      41 |       3.96 |   -1.98 |           3.44 |
@@ -1002,6 +1041,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Panasonic RP-HJE120](./oratory1990/harman_in-ear_2019v2/Panasonic%20RP-HJE120)                                                                            |      40 |       4.26 |   -1.39 |           4.14 |
 | [Clear Tune CT-300P](./crinacle/harman_in-ear_2019v2/Clear%20Tune%20CT-300P)                                                                               |      40 |       4.41 |   -0.9  |           4.86 |
 | [Custom Art FIBAE Black](./crinacle/harman_in-ear_2019v2/Custom%20Art%20FIBAE%20Black)                                                                     |      40 |       4.36 |   -1.01 |           4.52 |
+| [IMR Acoustics RAH (black nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(black%20nozzle,%20black%20filter))               |      40 |       4.19 |   -1.79 |           3.64 |
 | [InEar StageDiver SD4](./crinacle/harman_in-ear_2019v2/InEar%20StageDiver%20SD4)                                                                           |      40 |       4.54 |   -0.75 |           4.59 |
 | [JH Audio Layla (min)](./crinacle/harman_in-ear_2019v2/JH%20Audio%20Layla%20(min))                                                                         |      40 |       4.91 |   -0.31 |           4.67 |
 | [Kumitate Lab KL-Sanka](./crinacle/harman_in-ear_2019v2/Kumitate%20Lab%20KL-Sanka)                                                                         |      40 |       4.37 |   -0.91 |           4.74 |
@@ -1017,6 +1057,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Campfire Audio IO](./crinacle/harman_in-ear_2019v2/Campfire%20Audio%20IO)                                                                                 |      39 |       4.99 |   -0.62 |           4.03 |
 | [Empire Ears Phantom](./crinacle/harman_in-ear_2019v2/Empire%20Ears%20Phantom)                                                                             |      39 |       4.46 |   -1.15 |           4.46 |
 | [Final Audio E5000](./crinacle/harman_in-ear_2019v2/Final%20Audio%20E5000)                                                                                 |      39 |       4.2  |   -1.81 |           3.69 |
+| [IMR Acoustics RAH (red nozzle, gold filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(red%20nozzle,%20gold%20filter))                     |      39 |       4.37 |   -1.67 |           3.74 |
 | [JH Audio Angie (2 o’clock)](./crinacle/harman_in-ear_2019v2/JH%20Audio%20Angie%20(2%20o%E2%80%99clock))                                                   |      39 |       5.02 |   -0.56 |           4.13 |
 | [Ocharaku Flat-4 Kaede Type 2](./crinacle/harman_in-ear_2019v2/Ocharaku%20Flat-4%20Kaede%20Type%202)                                                       |      39 |       4.93 |    1.03 |           3.42 |
 | [Oriolus Finschi](./crinacle/harman_in-ear_2019v2/Oriolus%20Finschi)                                                                                       |      39 |       4.4  |   -1.76 |           3.28 |
@@ -1062,6 +1103,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Final Audio Heaven 8](./crinacle/harman_in-ear_2019v2/Final%20Audio%20Heaven%208)                                                                         |      36 |       4.72 |   -1.16 |           4.52 |
 | [Kinera SEED](./crinacle/harman_in-ear_2019v2/Kinera%20SEED)                                                                                               |      36 |       5.48 |    0.94 |           3.27 |
 | [Stax SR-002](./crinacle/harman_in-ear_2019v2/Stax%20SR-002)                                                                                               |      36 |       5.01 |    0.07 |           6.15 |
+| [Tansio Mirai TSMR-12 (123 setting)](./crinacle/harman_in-ear_2019v2/Tansio%20Mirai%20TSMR-12%20(123%20setting))                                           |      36 |       4.49 |   -1.39 |           4.62 |
 | [Tralucent Audio 1Plus1.2](./crinacle/harman_in-ear_2019v2/Tralucent%20Audio%201Plus1.2)                                                                   |      36 |       5.11 |   -1.25 |           3.38 |
 | [Westone UM Pro 10](./crinacle/harman_in-ear_2019v2/Westone%20UM%20Pro%2010)                                                                               |      36 |       4.79 |   -0.86 |           4.95 |
 | [Ambient Acoustics AM7 (yellow)](./crinacle/harman_in-ear_2019v2/Ambient%20Acoustics%20AM7%20(yellow))                                                     |      35 |       5.21 |    1.39 |           3.36 |
@@ -1135,6 +1177,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Advanced Elise](./crinacle/harman_in-ear_2019v2/Advanced%20Elise)                                                                                         |      28 |       5.04 |   -1.84 |           4.82 |
 | [Audio-Technica ATH-CK3TW](./crinacle/harman_in-ear_2019v2/Audio-Technica%20ATH-CK3TW)                                                                     |      28 |       5.02 |   -1.91 |           4.58 |
 | [EarSonics S-EM9](./crinacle/harman_in-ear_2019v2/EarSonics%20S-EM9)                                                                                       |      28 |       5.52 |   -1.24 |           4.76 |
+| [Anthem Five E2 (CIEM)](./crinacle/harman_in-ear_2019v2/Anthem%20Five%20E2%20(CIEM))                                                                       |      27 |       4.95 |   -2.36 |           4.32 |
 | [Campfire Audio Vega](./crinacle/harman_in-ear_2019v2/Campfire%20Audio%20Vega)                                                                             |      27 |       5.28 |   -1.93 |           4.25 |
 | [Unknown Custom Juno](./crinacle/harman_in-ear_2019v2/Unknown%20Custom%20Juno)                                                                             |      27 |       5.39 |   -1.2  |           5.55 |
 | [Westone W30](./crinacle/harman_in-ear_2019v2/Westone%20W30)                                                                                               |      27 |       5.44 |   -1.18 |           5.4  |
@@ -1156,6 +1199,7 @@ targets and preference scoring developed by Sean Olive et al.
 | [Oriveti Basic](./crinacle/harman_in-ear_2019v2/Oriveti%20Basic)                                                                                           |      24 |       5.23 |   -2.32 |           4.64 |
 | [Fearless Audio ACME 8](./crinacle/harman_in-ear_2019v2/Fearless%20Audio%20ACME%208)                                                                       |      23 |       5.42 |   -2.01 |           4.9  |
 | [Fengru HE-200](./crinacle/harman_in-ear_2019v2/Fengru%20HE-200)                                                                                           |      23 |       5.2  |   -2.52 |           4.5  |
+| [Gold Planar GL20](./crinacle/harman_in-ear_2019v2/Gold%20Planar%20GL20)                                                                                   |      23 |       6.23 |   -0.17 |           6.64 |
 | [Lear NS-U1 (NS on)](./crinacle/harman_in-ear_2019v2/Lear%20NS-U1%20(NS%20on))                                                                             |      23 |       5.63 |   -2.06 |           4.44 |
 | [Fender FXA9](./crinacle/harman_in-ear_2019v2/Fender%20FXA9)                                                                                               |      21 |       5.75 |   -1.54 |           5.67 |
 | [JH Audio Diana](./crinacle/harman_in-ear_2019v2/JH%20Audio%20Diana)                                                                                       |      21 |       5.66 |   -1.4  |           6.06 |
@@ -1191,6 +1235,8 @@ targets and preference scoring developed by Sean Olive et al.
 | [Venture Electronics Monk IE Biggie](./crinacle/harman_in-ear_2019v2/Venture%20Electronics%20Monk%20IE%20Biggie)                                           |     -14 |       7.67 |   -2.5  |           9.09 |
 | [IMR Acoustics R2 Aten (gold nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(gold%20nozzle,%20black%20filter))       |     -16 |       7.98 |   -3.54 |           7.05 |
 | [IMR Acoustics R2 Aten (gold nozzle, blue filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20R2%20Aten%20(gold%20nozzle,%20blue%20filter))         |     -17 |       7.94 |   -3.64 |           7.14 |
+| [IMR Acoustics RAH (green nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(green%20nozzle,%20black%20filter))               |     -18 |       7.93 |    3    |           8.82 |
+| [IMR Acoustics RAH (gold nozzle, black filter)](./crinacle/harman_in-ear_2019v2/IMR%20Acoustics%20RAH%20(gold%20nozzle,%20black%20filter))                 |     -19 |       8.3  |   -3.54 |           7.03 |
 | [Singapore Airlines complimentary earphones](./crinacle/harman_in-ear_2019v2/Singapore%20Airlines%20complimentary%20earphones)                             |     -20 |       8.78 |   -2.68 |           7.94 |
 | [Lear NS-U1 (all Off)](./crinacle/harman_in-ear_2019v2/Lear%20NS-U1%20(all%20Off))                                                                         |     -23 |       8.75 |    4.09 |           5.94 |
 | [Final Audio Lab 1 Fit 1](./crinacle/harman_in-ear_2019v2/Final%20Audio%20Lab%201%20Fit%201)                                                               |     -24 |       8.65 |   -2.02 |          10.68 |
