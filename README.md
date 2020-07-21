@@ -5,7 +5,7 @@ and follow instructions in [Usage](#usage) section.
 
 ## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
-frequency response measurements and producing a equalization settings which correct the headphone to a neutral sound.
+frequency response measurements and producing equalization settings which correct the headphone to a neutral sound.
 This project currently has over 2500 headphones covered in the
 [results](./results) folder.
 See [Usage](#usage) for instructions how to use the results with
@@ -36,7 +36,7 @@ AutoEQ produces settings for basically all types of equalizer apps.
 ### Parametric Equalizers
 Parametric equalizers have filters with user adjustable gain,  center frequency and quality Q. Keep in mind that
 parametric eq accuracy depends on the number of filters available. Usually 10 filters produce very good
-results but as little as 5 can be good enough. Parametric equalizer is typically the safe bet if you're system, app or
+results but as little as 5 can be good enough. Parametric equalizer is typically the safe bet if your system, app or
 player has that available.
 
 All parametric equalizer except Peace require you to configure the filter parameters manually with the software user
@@ -156,8 +156,8 @@ error is then only 0.25 dB, hardly noticeable. Bigger problem is the potential n
 bands' center frequencies since there isn't really anything that can be done for those. See notes about
 [fixed band equalizers](#fixed-band-equalizers).
 
-App starts in presets view so you need to click the left arrow in the top left corner to get to manual view. Here you
-can adjust the bands. Set each band level to closest value to what the equalization settings ask. Pre-computed results
+The app starts in the presets view so you need to click the left arrow in the top left corner to get to the manual view. Here you
+can adjust the bands. Set each band level to the closest value to what the equalization settings ask. Pre-computed results
 only support standard 10-band equalizers which have band center frequencies at 31, 63, 125, 250, 500, 1000, 2000, 4000,
 8000 and 16000 Hz. Q values are not adjustable so you don't have to worry about those even though they are given in the
 result settings.
@@ -191,7 +191,7 @@ Audio plugin hosts include:
 - [MenuBus](https://www.menubus.audio/versions) has a free version but is no longer actively developed.
 - [SoundSource](https://rogueamoeba.com/soundsource/) is in active development but not free.
 - [Hosting AU](http://ju-x.com/hostingau.html) with [BlackHole](https://github.com/ExistentialAudio/BlackHole) or
-[Soundflower](https://github.com/mattingalls/Soundflower) can be used as system wide AU plugin host.
+[Soundflower](https://github.com/mattingalls/Soundflower) can be used as a system wide AU plugin host.
 
 EQ plugins include:
 - [Voxengo PrimeEQ](https://www.voxengo.com/product/primeeq/) is a parametric EQ plugin but is not free.
@@ -212,7 +212,7 @@ presets but can be created by passing parameters
 [Contact me](#contact) if you know good solutions for iOS.
 
 #### EQE
-[EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer on iOS but requires a jailbreaking. Here
+[EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer on iOS but requires jailbreaking. Here
 are instructions on how to set it up: https://www.reddit.com/r/headphones/comments/dqbt81/psa_if_you_have_a_jailbroken_iphone_you_can/
 
 ### Hardware
@@ -225,11 +225,11 @@ practically any source.
 fancy graphical user interface but instead it is used from command line.
 
 ### Installing
-- Download [AutoEQ zip](https://github.com/jaakkopasanen/AutoEq/archive/master.zip) and exctract to a convenient
+- Download [AutoEQ zip](https://github.com/jaakkopasanen/AutoEq/archive/master.zip) and extract to a convenient
 location. Or just git clone if you know what that means.
 - Download and install 64-bit [Python3](https://www.python.org/getit/). Python 3.8 doesn't work yet. Make sure to check
 *Install Python 3 to PATH*
-- Install virtualenv. Run this on command prompt. Search `cmd` in Windows start menu.  
+- Install virtualenv. Run this on command prompt. Search `cmd` in the Windows start menu.  
 ```bash
 pip install virtualenv
 ```
@@ -252,7 +252,7 @@ source venv/Scripts/activate
 ```bash
 pip install -r requirements.txt
 ```
-- Verify installation. If everything went well, you'll see list of command line parameters autoeq accepts.  
+- Verify installation. If everything went well, you'll see the list of command line parameters autoeq accepts.  
 ```bash
 python autoeq.py --help
 ```
@@ -310,7 +310,7 @@ optional arguments:
   --fc FC               Comma separated list of center frequencies for fixed
                         band eq.
   --q Q                 Comma separated list of Q values for fixed band eq. If
-                        only one value is passed it is used for all bands. Q
+                        only one value is passed, it is used for all bands. Q
                         value can be calculated from bandwidth in N octaves by
                         Q = 2^(N/2)/(2^N-1).
   --ten_band_eq         Shortcut parameter for activating standard ten band eq
@@ -321,7 +321,7 @@ optional arguments:
                         multiple filter counts separated by "+". "5+5" would
                         create 10 filters where the first 5 are usable
                         independently from the rest 5 and the last 5 can only
-                        be used with the first 5. This allows to have muliple
+                        be used with the first 5. This allows to have multiple
                         configurations for equalizers with different number of
                         bands available. Not limited by default.
   --fs FS               Sampling frequency for impulse response and parametric
@@ -384,12 +384,12 @@ optional arguments:
                         treble frequencies. Treble frequencies can have
                         different max gain and gain K. Defaults to 8000.0.
   --treble_max_gain TREBLE_MAX_GAIN
-                        Maximum positive gain for equalization in treble
+                        Maximum positive gain for equalization in the treble
                         region. Defaults to 0.0.
   --treble_gain_k TREBLE_GAIN_K
                         Coefficient for treble gain, affects both positive and
                         negative gain. Useful for disabling or reducing
-                        equalization power in treble region. Defaults to 1.0.
+                        equalization power in the treble region. Defaults to 1.0.
   --show_plot           Plot will be shown if this parameter exists, no value
                         needed.
 ```
@@ -425,11 +425,11 @@ python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sony WH-1000XM
 
 #### Using Sound Signatures
 AutoEQ provides a way to play around with different sound signatures easily. The use-cases include making headphones
-deviate from neutral target or making one headphone sound like another.
+deviate from the neutral target or making one headphone sound like another.
 
 Equalizing Sennheiser HD 800 to sound like Sennheiser HD 650 using pre-computed results. Both have been measured by
-oratory1990 so we'll use those measurments. Pre-computed results include 4dB of bass boost for over-ear headphones and
-therefore we need to apply bass boost of 4dB here as well.
+oratory1990 so we'll use those measurements. Pre-computed results include 4dB of bass boost for over-ear headphones and
+therefore we need to apply a bass boost of 4dB here as well.
 ```bash
 python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (HD 650)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Sennheiser HD 650/Sennheiser HD 650.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
 ```
@@ -458,14 +458,14 @@ frequency,raw
 20000,0.0
 ```
 Then use it by providing the path to `--sound_signature` parameter. We'll set bass boost to 0dB because the sound
-signature already has significant bass boost. Of course it's possible to add bass boost on top of the sound signature
+signature already has a significant bass boost. Of course it's possible to add bass boost on top of the sound signature
 file if you want even more bass.
 ```bash
 python autoeq.py --input_dir="measurements/rtings/data/onear/Audeze Mobius" --output_dir="my_results/Audeze Mobius (V-signature)" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --sound_signature="my_data/v.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0
 ```
 
 ## Results
-The main principle used by AutoEQ for producing the equalization function is to invert error curve. Error is the
+The main principle used by AutoEQ for producing the equalization function is to invert the error curve. Error is the
 difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
 below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. In reality simply inverting the error is
 not sufficient since measurements and equalization have several problems that need to be addressed, see
@@ -478,12 +478,12 @@ Results provided in this project currently have all the headphone measurements f
 - [oratory1990](https://www.reddit.com/r/oratory1990)
 - [Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1)
 - [Rtings](https://www.rtings.com/headphones)
-with the exception of Reference Audio Analyzer measurements done on SF1 system.
+with the exception of Reference Audio Analyzer measurements done on the SF1 system.
 
 Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
 calibrated Harman target would be found in
 [innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser HD 650](./results/innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20HD%20650).
-Multiple measurements of a same headphone by a same measurement entity are averaged. All different measurements for
+Multiple measurements of the same headphone by the same measurement entity are averaged. All different measurements for
 averaging have been renamed with snXXX (serial number) or sample X in the end of the name to distinguish from the
 averaged data which has no suffixes in the name.
 
@@ -503,8 +503,8 @@ This system is not an industry standard anymore because of the rigid pinnae.
 Reference Audio Analyzer have [three different measurement systems](https://reference-audio-analyzer.pro/en/stands.php)
 none of which seem to represent human hearing particularly well. The most recent HDM-X system is close to the Head
 Acoustics HMSII.3 systems but seems to suffer a bit more in the bass range. HDM1 is clearly worse than other systems
-and the measurements done on SF1 system are not included at all because that is a flat plate coupler. IEM measurements
-are done with a what looks like a tubing coupler and these don't look very accurate. Reference Audio Analyzer
+and the measurements done on the SF1 system are not included at all because that is a flat plate coupler. IEM measurements
+are done with what looks like a tubing coupler and these don't look very accurate. Reference Audio Analyzer
 measurements and results are a last resort.
 
 All of the results use frequency response targets that were specifically developed for this project except oratory1990
@@ -550,7 +550,7 @@ Headphone.com are at `innerfidelity/resources/innerfidelity_compensation_sbaf-se
 `headphonecom/resources/headphonecom_compensation_sbaf-serious.csv`, respectively.
 
 ### Rtings Targets
-Rtings measured headphones have frequency response target made for this project. This treble average target is using an
+Rtings measured headphones have a frequency response target made for this project. This treble average target is using an
 average of frequency responses of all Rtings measured headphones in the treble range with small manual reduction of the
 9kHz peak and the Rtings native response below 2500 Hz without bass boost. Three different targets were compared in
 listening tests and the treble average target was found to sound the best. Other two were the Rtings native target curve
@@ -558,16 +558,16 @@ and calibrated and uncalibrated versions of SBAF Serious target curve. Rtings us
 Innerfidelity uses so in theory the uncalibrated SBAF Serious target should work similarly with Rtings but listening
 tests found the treble average target to be slightly better. Rtings have
 [a very informative video](https://www.youtube.com/watch?v=HNEI3qLZEKo) about how they are doing the measurements and
-how did they came up with the target they use.
+how they came up with the target they use.
 
-All of these Rtings targets retired when a new calibrated Harman targets were developed for Rtings measurements.
+All of these Rtings targets retired when new calibrated Harman targets were developed for Rtings measurements.
 
 ## Technical Challenges
 Simply inverting headphone frequency response deviation from target response does not usually produce sufficient
 results. Some problems are caused by imperfections in measurements, some are reliability issues and some are practical
 end-user problems. Rtings has a good [video on Youtube](https://www.youtube.com/watch?v=HNEI3qLZEKo) about measurement
 system challenges and solutions which is definitely worth checking out. Innerfidelity also has a very
-educational [video on Youtube](https://www.youtube.com/watch?v=SDRHFNfFCFU) about measurments and what constitutes as a
+educational [video on Youtube](https://www.youtube.com/watch?v=SDRHFNfFCFU) about measurements and what constitutes as a
 neutral sound. Main takeoffs are that bass and treble measurements are very inconsistent, neutral sound is not very well
 defined yet and on-ear headphones have big reliability problems in 8 to 9kHz range due to resonances which move when
 headphone placement is changed. Harman international has done some solid research into preferred headphone frequency
@@ -576,25 +576,25 @@ Innerfidelity (Summer 2018) and Headphone.com measurements.
 
 There is very little that can be done for fighting bass inconsistencies because the same problems will be there whether
 equalization is used or not. Headphones simply have different bass responses on different listeners (heads). Therefore
-bass is taken as is in AutoEQ and equalized as if there was nothing wrong with it. You're mileage may wary. Luckily bass
+bass is taken as is in AutoEQ and equalized as if there was nothing wrong with it. Your mileage may vary. Luckily bass
 has smaller impact on music and having too much bass (especially sub-bass) doesn't create problems of the same magnitude
 as having too much treble.
 
 Moving resonances around 8 to 9kHz may cause big problems if not taken into account. Spikes and dips in this range are
 of great amplitude and very narrow. If one equalizes these spikes and dips according to frequency response measurement
-in worst case scenario a spike will move in a place of dip when headphone is moved and therefore the spike is amplified
-significantly leading to very sharp and piercing sound signature. To counter these problems by default AutoEQ uses heavy
+in worst case scenario a spike will move in a place of dip when headphone is moved, and therefore the spike is amplified
+significantly, leading to a very sharp and piercing sound signature. To counter these problems by default AutoEQ uses heavy
 smoothing and limited positive gain above 6 to 8kHz. This way the equalization will follow a broader trend of the region
 and will not care so much about narrow spikes and dips. Also positive gain is limited to 0dB as an extra safety measure
-against amplifying moved spike. Suppressing a narrow dip even further is not an optimal thing to do but in practice has
+against amplifying spikes due to moving the headphone. Suppressing a narrow dip even further is not an optimal thing to do but in practice has
 little negative effect on the sound. Both of these measures will also alleviate upper treble measurement inconsistencies
 above 11 to 12 kHz.
 
 A practical end-user problem is if too high positive gain is allowed which asks for equal amount of negative digital
 pre-amp to prevent clipping. This negative preamp will limit maximum volume produced by the system if there is no analog
 gain available. If a dedicated headphone amplifier is available or if the motherboard/soundcard can drive the headphones
-loud enough even when using high negative preamp larger `--max_gain` values can be uses. By default `--max_gain` is set
-to +6dB to not to cripple user's volume too much. Max gain will clip the equalization curve which produces sharp kinks
+loud enough even when using high negative preamp larger `--max_gain` values can be used. By default `--max_gain` is set
+to +6dB so as not to cripple the user's volume too much. Max gain will clip the equalization curve which produces sharp kinks
 in it. Sharp changes in equalization may produce unwanted equalization artifacts. To counter this AutoEQ rounds the
 corners whenever max gain clips the curve.
 
@@ -604,8 +604,8 @@ AutoEQ has an optimizer to fit several peaking filters to the desired equalizati
 initialization and part mathematical optimization.
 
 In the initialization phase peaks are detected from the target curve and a peaking filter is created to match the peak's
-height (gain) and location (frequency). This way the optimizer finds suitable number of filters to optimize. If bass
-region has no peaks and therefore is missing filters entirely, maximum of two filters will be added at 20 Hz and 60 Hz.
+height (gain) and location (frequency). This way, the optimizer finds a suitable number of filters to optimize. If the bass
+region has no peaks and therefore is missing filters entirely, a maximum of two filters will be added at 20 Hz and 60 Hz.
 
 A way to limit the number of filters used is provided with `max_filters` parameter. If there are too many filters after
 initialization, some filters are removed. First filters with small gain (< 0.2 dB and < 0.33 dB) are removed. If there are too
