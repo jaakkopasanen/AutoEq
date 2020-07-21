@@ -1,4 +1,4 @@
-# PEARS SH3 (custom)
+# PEARS SH3 (CIEM)
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -15,9 +15,9 @@ When using independent subset of filters, apply preamp of **-7.5dB**.
 | Peaking | 17654 Hz | 0.45 | 6.8 dB  |
 | Peaking | 933 Hz   | 2.53 | 2.0 dB  |
 | Peaking | 1731 Hz  | 3.67 | -2.0 dB |
-| Peaking | 6907 Hz  | 4.78 | 3.0 dB  |
-| Peaking | 7794 Hz  | 5.37 | -5.2 dB |
-| Peaking | 13411 Hz | 4.15 | 1.9 dB  |
+| Peaking | 6912 Hz  | 4.78 | 3.0 dB  |
+| Peaking | 7806 Hz  | 5.37 | -5.2 dB |
+| Peaking | 13418 Hz | 4.15 | 1.9 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.4dB**
@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 8.8 dB  |
 
 ### Graphs
-![](./PEARS%20SH3%20(custom).png)
+![](./PEARS%20SH3%20(CIEM).png)
