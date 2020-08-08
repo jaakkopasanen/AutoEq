@@ -202,7 +202,7 @@ EQ plugins include:
 ![hostingau+blackhole](https://user-images.githubusercontent.com/38220377/71527191-9706ac80-28da-11ea-8f70-88caf57c4821.png)
 
 Tutorials:
-- [Apple AU Lab + Soundflower + AUNBandEQ Tutorial](https://www.superbestaudiofriends.org/index.php?threads/systemwide-eq-on-mac.7435/)
+- [Apple AU Lab + Soundflower + AUNBandEQ Tutorial](https://www.superbestaudiofriends.org/index.php?threads/systemwide-eq-on-mac.7435/) [AU Lab Permission Issue](https://discussions.apple.com/thread/8552731)
 
 #### eqMac2
 [eqMac2](https://bitgapp.com/eqmac/) is a free system wide 31-band equalizer on Mac. AutoEQ results don't have 31 band
