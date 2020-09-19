@@ -174,9 +174,12 @@ Viper4Android. It provides a system wide solution, has a convolution engine but 
 ### Linux
 #### PulseEffects
 [PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
-processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter
+processing tools including parametric equalizer. Load eq settings by clicking the top center cog & clicking
+*Import ACO Presets* button and select the ParametricEQ.txt file.
+Pre-amp can be adjusted with the input slider.
+For versions prior to v4.8.0, adjust filter parameters by clicking the cog button on each filter
 and set type to "Bell" and adjust the gain with the slider. Number of filters can be changed by clicking the screwdriver
-and wrench button. Pre-amp can be adjusted with the input slider.
+and wrench button.
 
 ![pulseeffects](./img/pulseeffects.png)
 
