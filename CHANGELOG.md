@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.4 - 2020-09-120
+Upgraded Pillow version to 7.2.
+
 ## 1.2.3 - 2020-07-18
 New measurements and results.
 
