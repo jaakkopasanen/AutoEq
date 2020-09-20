@@ -174,18 +174,22 @@ Viper4Android. It provides a system wide solution, has a convolution engine but 
 ### Linux
 #### PulseEffects
 [PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
-processing tools including parametric equalizer. Adjust filter parameters  by clicking the cog button on each filter
+processing tools including parametric equalizer. Load eq settings by clicking the top center cog & clicking
+*Import ACO Presets* button and select the ParametricEQ.txt file.
+Pre-amp can be adjusted with the input slider.
+For versions prior to v4.8.0, adjust filter parameters by clicking the cog button on each filter
 and set type to "Bell" and adjust the gain with the slider. Number of filters can be changed by clicking the screwdriver
-and wrench button. Pre-amp can be adjusted with the input slider.
+and wrench button.
 
 ![pulseeffects](./img/pulseeffects.png)
 
-### OSX
+### OSX / MacOS
 System wide parametric EQ solutions on OSX typically rely on separate plugin hosting software and the actual plugin
 which does the actual equalization.
 
 Pardon the lack of documentation for these. I have not tested any of the methods myself but they have been suggested by
 helpful AutoEQ users.
+
 
 Audio plugin hosts include:
 - [MenuBus](https://www.menubus.audio/versions) has a free version but is no longer actively developed.
@@ -201,6 +205,9 @@ expensive than Voxengo but might be easier to install and use.
 - AUNBandEq comes built in with Mac OSX. Works at least with HostingAU + BlackHole
 
 ![hostingau+blackhole](https://user-images.githubusercontent.com/38220377/71527191-9706ac80-28da-11ea-8f70-88caf57c4821.png)
+
+Tutorials:
+- [Apple AU Lab + Soundflower + AUNBandEQ Tutorial](https://www.superbestaudiofriends.org/index.php?threads/systemwide-eq-on-mac.7435/) [AU Lab Permission Issue](https://discussions.apple.com/thread/8552731)
 
 #### eqMac2
 [eqMac2](https://bitgapp.com/eqmac/) is a free system wide 31-band equalizer on Mac. AutoEQ results don't have 31 band
