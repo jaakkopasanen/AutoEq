@@ -5,7 +5,11 @@ false_name	true_name	form
 64 Audio tia Fourte Noir	64 Audio Tia Fourte Noir	inear
 64 Audio tia Trio	64 Audio tia Trio	inear
 64 Audio U12t	64 Audio U12t	inear
+64 Audio U12t (m15 apex module)	64 Audio U12t M15	inear
+64 Audio U12t (m20 apex module)	64 Audio U12t M20	inear
 64 Audio U18t	64 Audio U18t	inear
+64 Audio U18t (m15 apex module)	64 Audio U18Tzar M15	inear
+64 Audio U18t (m20 apex module)	64 Audio U18Tzar M20	inear
 64 Audio U4	64 Audio U4	inear
 64 Audio U8	64 Audio U8	inear
 AAW (Advanced Acousticwerkes) A3H	AAW A3H	inear
@@ -83,6 +87,12 @@ Amphiton TDS 15	Amphiton TDS 15	onear
 Amphiton TDS 7	Amphiton TDS 7	onear
 Anew U1	Anew U1	inear
 Anew X-One	Anew X-One	inear
+Anew X-One (black)	Anew X-One (black)	inear
+Anew X-One (blue)	Anew X-One (blue)	inear
+Anew X-One (red)	Anew X-One (red)	inear
+Anew X-One (upturned black)	Anew X-One (upturned black)	inear
+Anew X-One (upturned blue)	Anew X-One (upturned blue)	inear
+Anew X-One (upturned red)	Anew X-One (upturned red)	inear
 Angry Birds Angry Birds		ignore
 Apple AirPods	Apple AirPods	earbud
 Apple AirPods Pro	Apple AirPods Pro	inear
@@ -262,6 +272,8 @@ BGVP DM7	BGVP DM7	inear
 BGVP DMG	BGVP DMG	inear
 BGVP DMS	BGVP DMS	inear
 BGVP Q2	BGVP Q2	inear
+BGVP Q2 (bluetooth)	BGVP Q2 (wireless)	inear
+BGVP Q2 (wire connection)	BGVP Q2 (wired)	inear
 BGVP VG4	BGVP VG4	inear
 BGVP Zero	BGVP ZERO	inear
 BlackBerry WS-510	BlackBerry WS-510	inear
@@ -490,6 +502,8 @@ Fischer Audio X-02	Fischer Audio X-02	onear
 Fischer Audio X01	Fischer Audio X01	onear
 FitEar 334	FitEar 334	inear
 FitEar 335 DW	FitEar 335 DW	inear
+Flare Audio Flares Gold (cone tips)	Flare Audio Flares Gold (cone tips)	inear
+Flare Audio Flares Gold (ordinary tips)	Flare Audio Flares Gold (ordinary tips)	inear
 Flares Gold	Flare Audio Flares Gold	inear
 FLC 8D	FLC Technology 8D	inear
 FLC 8S	FLC Technology 8S	inear
@@ -519,6 +533,7 @@ Fostex T60RP	Fostex T60RP	onear
 Fostex T7	Fostex T7	onear
 Fostex TH 900	Fostex TH900	onear
 Fostex TH-900 MK2 Sapphire Blue	Fostex TH900mk2	onear
+Fostex TH-X00	Fostex TH-X00	onear
 Fostex TH610	Fostex TH610	onear
 Fostex TH909	Fostex TH909	onear
 Fostex TM2	Fostex TM2	inear
@@ -531,8 +546,8 @@ Gerkules HDP DJ-PRO M1001	Gerkules HDP DJ-PRO M1001	onear
 German Maestro GMP 240	German Maestro GMP 240	onear
 German Maestro GMP 250	German Maestro GMP 250	onear
 German Maestro GMP 400	German Maestro GMP 400	onear
-German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
 German Maestro GMP 450 PRO	German Maestro GMP 450 PRO	onear
+German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
 German Maestro GMP 8.300 D	German Maestro GMP 8.300 D	onear
 German Maestro GMP 8.35 D	German Maestro GMP 8.35 D	onear
 Grado eGrado	Grado eGrado	onear
@@ -576,6 +591,7 @@ Grado SR325i (l-cush)	Grado SR325i (L earpads)	onear
 Grado SR325i (s-cush)	Grado SR325i (S earpads)	onear
 Haylou GT2 TWS	Xiaomi Haylou GT2	inear
 HiFiBoy OS V3	HiFi Boy OS V3	inear
+HiFiMan Ananda	HIFIMAN Ananda	onear
 HiFiMan HE 400i	HIFIMAN HE400i	onear
 HiFiMan HE-300	HIFIMAN HE-300	onear
 HiFiMan HE-4	HIFIMAN HE-4	onear
@@ -699,6 +715,8 @@ KZ (Knowledge Zenith) ZST	KZ ZST	inear
 Lark Studio LSX	Lark Studio LSX	inear
 Lenovo in-ear	Lenovo in-ear	inear
 Lime Ears Aether R	Lime Ears Aether R	inear
+Lime Ears Aether R (off (universal))	Lime Ears Aether R (off)	inear
+Lime Ears Aether R (on (universal))	Lime Ears Aether R (on)	inear
 Lime Ears Lambda	Lime Ears Lambda	inear
 Lime Ears Model X	Lime Ears Model X	inear
 Lime Ears Model X (off (universal))	Lime Ears Model X (off)	inear
@@ -986,6 +1004,7 @@ Sony MDR-1RBT	Sony MDR-1RBT	onear
 Sony MDR-7505	Sony MDR-7505	onear
 Sony MDR-7506	Sony MDR-7506	onear
 Sony MDR-7509 HD	Sony MDR-7509HD	onear
+Sony MDR-CD1700	Sony MDR-CD1700	onear
 Sony MDR-EX15LP	Sony MDR-EX15LP	inear
 Sony MDR-EX450	Sony MDR-EX450	inear
 Sony MDR-MA 900	Sony MDR-MA900	onear
@@ -1093,6 +1112,7 @@ Urbanears Plattan 2 Bluetooth	Urbanears Plattan 2 Bluetooth	onear
 V-Moda LP	V-MODA Crossfade LP	onear
 V-Moda M 80	V-MODA Crossfade M-80	onear
 V-Moda M100	V-MODA Crossfade M-100	onear
+VA Audio H-1	VA Audio H-1	onear
 VE (Venture Electronics) Monk	Venture Electronics Monk	earbud
 VE (Venture Electronics) Monk Plus	Venture Electronics Monk Plus	earbud
 Verum Audio Verum 1	Verum One	onear
@@ -1131,6 +1151,7 @@ Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear
 Whizzer TP1 (closed vent)	Whizzer TP1 (closed vent)	inear
 Whizzer TP1s	Whizzer TP1s	inear
+Whizzer TP1s (closed vent)	Whizzer TP1s (closed vent)	inear
 Whizzer TWS B6	Whizzer B6	inear
 xDuoo EP1	xDuoo EP1	inear
 Xiaomi Hybrid Pro HD	Xiaomi Hybrid Pro HD	inear
