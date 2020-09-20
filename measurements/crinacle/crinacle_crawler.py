@@ -23,14 +23,25 @@ class CrinacleCrawler(Crawler):
         """
         names = super().get_name_proposals()
         rows = []
-        res = requests.get('https://crinacle.com/graphing/data_hp/phone_book.json')  # Headphone book
+
+        # Ears-711 measurements name index
+        res = requests.get('https://crinacle.com/graphing/data_hp/phone_book.json')
         hp_book = self.parse_book(res.json())
         for false_name, true_name in hp_book.items():
             rows.append([false_name, true_name, 'onear'])
-        res = requests.get('https://crinacle.com/graphing/data/phone_book.json')  # IEM book
+
+        # IEM measurements name index
+        res = requests.get('https://crinacle.com/graphing/data/phone_book.json')
         iem_book = self.parse_book(res.json())
         for false_name, true_name in iem_book.items():
             rows.append([false_name, true_name, 'inear'])
+
+        # Gras measurments name index
+        res = requests.get('https://crinacle.com/graphing/data_hp_gras/phone_book.json')
+        gras_book = self.parse_book(res.json())
+        for false_name, true_name in gras_book.items():
+            rows.append([false_name, true_name, 'onear'])
+
         names.concat(NameIndex(rows))
         return names
 
@@ -82,24 +93,28 @@ class CrinacleCrawler(Crawler):
 
     def get_urls(self):
         # Link source is not a web page but raw_data folder
-        links = dict()
+        file_paths = dict()
         for fp in glob(os.path.join(DIR_PATH, 'raw_data', '*')):
             name = os.path.split(fp)[1]
             name = re.sub(r' [LR]\d*\.txt', '', name).replace('.txt', '')
             name = re.sub(r' #\d$', '', name)
-            if name not in links:
-                links[name] = []
-            links[name].append(fp)
-        return links
+            name = name.replace('.mdat', '')
+            if name not in file_paths:
+                file_paths[name] = []
+            file_paths[name].append(fp)
+        return file_paths
 
-    @staticmethod
-    def process(item, links):
+    def process(self, item, file_paths):
         fr = FrequencyResponse(name=item.true_name)
         fr.raw = np.zeros(fr.frequency.shape)
-        for fp in links:
-            # Read file
-            with open(fp, 'r', encoding='utf-8') as fh:
-                s = fh.read()
+        for fp in file_paths:
+            if re.search(r'\.mdat$', fp):
+                # Read mdat file for Gras headphone measurements
+                raise TypeError('Crinacle\'s Gras measurements are not supported yet!')
+            else:
+                # Read text file for IEM and Ears-711 headphone measurements
+                with open(fp, 'r', encoding='utf-8') as fh:
+                    s = fh.read()
 
             freq = []
             raw = []
@@ -138,7 +153,7 @@ class CrinacleCrawler(Crawler):
             _fr.center()
             fr.raw += _fr.raw
 
-        fr.raw /= len(links)
+        fr.raw /= len(file_paths)
 
         # Save
         dir_path = os.path.join(DIR_PATH, 'data', item.form, fr.name)
