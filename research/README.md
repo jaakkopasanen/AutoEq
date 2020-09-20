@@ -1,5 +1,10 @@
 # Research
 
+Install Jupyter Lab
+```bash
+python -m pip install -U jupyter jupyterlab ipywidgets
+```
+
 Install IPywidgets
 ```bash
 jupyter nbextension enable --py widgetsnbextension
