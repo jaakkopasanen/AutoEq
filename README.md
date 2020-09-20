@@ -195,6 +195,8 @@ Audio plugin hosts include:
 
 EQ plugins include:
 - [Voxengo PrimeEQ](https://www.voxengo.com/product/primeeq/) is a parametric EQ plugin but is not free.
+- [Fabfilter Pro Q3](https://www.fabfilter.com/products/pro-q-3-equalizer-plug-in) is another parametric EQ plugin, more
+expensive than Voxengo but might be easier to install and use.
 - [LAConvolver plugin](http://audio.lernvall.com/) is a free convolver EQ which works with impulse response WAV files.
 - AUNBandEq comes built in with Mac OSX. Works at least with HostingAU + BlackHole
 
