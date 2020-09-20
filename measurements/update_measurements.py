@@ -34,7 +34,7 @@ def main(crinacle=False, oratory1990=False, rtings=False, referenceaudioanalyzer
     if referenceaudioanalyzer:
         classes.append(ReferenceAudioAnalyzerCrawler)
 
-    if Oratory1990Crawler in classes or ReferenceAudioAnalyzerCrawler in classes:
+    if Oratory1990Crawler in classes or ReferenceAudioAnalyzerCrawler in classes or RtingsCrawler in classes:
         # oratory1990 and Reference Audio Analyzer crawlers require Selenium Web Driver
         opts = Options()
         opts.add_argument('--headless')

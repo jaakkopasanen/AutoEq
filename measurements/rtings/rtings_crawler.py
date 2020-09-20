@@ -36,12 +36,18 @@ class RtingsCrawler(Crawler):
         return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*', '*'))
 
     def get_urls(self):
-        res = requests.get('https://www.rtings.com/headphones/1-4/graph')
-        document = BeautifulSoup(res.content, 'html.parser')
+        if self.driver is None:
+            raise TypeError('self.driver cannot be None')
+        document = self.get_beautiful_soup('https://www.rtings.com/headphones/1-4/graph')
         urls = {}
         for child in document.find(id='product_select').find_all('option'):
+            try:
+                urlpart = child["data-urlpart"]
+            except KeyError:
+                # "Select a product" doesn't have data-urlpart, nor is it a headphone
+                continue
             name = child.text.strip()
-            urls[name] = f'https://www.rtings.com/images/graphs/{child["data-urlpart"]}/graph-frequency-response-14.json'
+            urls[name] = f'https://www.rtings.com/images/graphs/{urlpart}/graph-frequency-response-14.json'
         return urls
 
     @staticmethod

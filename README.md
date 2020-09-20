@@ -498,7 +498,9 @@ measurements done on this system are not as accurate as oratory1990's but becaus
 these are a bit better than rest.
 
 Innerfidelity, Rtings and Headphone.com measurements have been performed on Head Acoustics HMSII.3 measurement system.
-This system is not an industry standard anymore because of the rigid pinnae.
+This system is not an industry standard anymore because of the rigid pinnae. The Headphone.com measurements are the old
+ones which are no longer available. These are not to be consfused with the new measurements Resolve is producing using
+GRAS system.
 
 Reference Audio Analyzer have [three different measurement systems](https://reference-audio-analyzer.pro/en/stands.php)
 none of which seem to represent human hearing particularly well. The most recent HDM-X system is close to the Head

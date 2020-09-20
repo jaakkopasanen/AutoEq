@@ -110,6 +110,7 @@ Bluedio T2S Turbine	Bluedio T2S Turbine	onear
 Bluedio T3 Plus	Bluedio T3 Plus	onear
 Bluedio T4	Bluedio T4	onear
 Bluedio U Plus	Bluedio U Plus	onear
+Boltune BT-BH024	Boltune BT-BH024	inear
 Bose Hearphones	Bose Hearphones	inear
 Bose Noise Cancelling Headphones 700	Bose Noise Cancelling Headphones 700	onear
 Bose QuietComfort 20	Bose QuietComfort 20	onear
@@ -158,14 +159,17 @@ Denon AHGC20	Denon AH-GC20	onear
 Diskin Wireless Bluetooth	Diskin Wireless Bluetooth	onear
 Dolby Dimension	Dolby Dimension	onear
 EarFun Free	EarFun Free	inear
+ENACFIRE E60	ENACFIRE E60	inear
 Etymotic ER4XR	Etymotic ER4XR	inear
 Etymotic HF5	Etymotic hf5	inear
+FIIL T1X	FIIL T1X	inear
 Fitbit Flyer	Fitbit Flyer	inear
 Focal Elear	Focal Elear	onear
 Focal Elegia	Focal Elegia	onear
 Focal Stellia	Focal Stellia	onear
 Google Pixel Buds	Google Pixel Buds	earbud
 Google Pixel Buds 2	Google Pixel Buds 2	inear
+Google Pixel USB-C	Google Pixel USB-C Earbuds	earbud
 Grado GW100	Grado GW100	onear
 Grado SR125e	Grado SR125e	onear
 Grado SR225e	Grado SR225e	onear
@@ -174,6 +178,7 @@ Grado SR60e	Grado SR60e	onear
 Grado SR80e	Grado SR80e	onear
 Harman/Kardon NC	Harman Kardon NC	onear
 HiFiMan Ananda	HIFIMAN Ananda	onear
+HiFiMan ANANDA-BT	HIFIMAN Ananda BT	onear
 HiFiMan Edition X	HIFIMAN Edition X	onear
 HiFiMan HE-400i	HIFIMAN HE400i	onear
 HiFiMan Sundara	HIFIMAN Sundara	onear
@@ -197,6 +202,7 @@ Jabra Elite Active 65t	Jabra Elite Active 65t	inear
 Jabra Elite Active 75t	Jabra Elite Active 75t	inear
 Jabra Elite Sport	Jabra Elite Sport	inear
 Jabra Evolve 65t	Jabra Evolve 65t	inear
+Jabra Evolve2 65	Jabra Evolve2 65	onear
 Jabra Steel		ignore
 Jaybird Freedom	Jaybird Freedom	inear
 Jaybird Freedom 2	Jaybird Freedom 2	inear
@@ -225,6 +231,7 @@ JBL Everest 710	JBL Everest 710	onear
 JBL Everest Elite 700	JBL Everest Elite 700	onear
 JBL Free	JBL Free	inear
 JBL Free X	JBL Free X	inear
+JBL JR300BT	JBL JR300BT	onear
 JBL Live 200BT	JBL Live 200BT	inear
 JBL LIVE 300TWS	JBL Live 300TWS	inear
 JBL Live 400BT	JBL Live 400BT	onear
@@ -256,6 +263,7 @@ KZ ZSN	KZ ZSN	inear
 KZ ZST	KZ ZST	inear
 Logitech G Pro	Logitech G Pro	onear
 Logitech G Pro X	Logitech G Pro X	onear
+Logitech G PRO X WIRELESS LIGHTSPEED	Logitech G Pro X Lightspeed	onear
 Logitech G430	Logitech G430	onear
 Logitech G432	Logitech G432	onear
 Logitech G433	Logitech G433	onear
@@ -288,6 +296,7 @@ Mpow H10	Mpow H10	onear
 Mpow H5	Mpow H5	onear
 Mpow Jaws	Mpow Jaws	inear
 Mpow M30	Mpow M30	inear
+Mpow X3	Mpow X3	inear
 NAD VISO HP50	NAD VISO HP50	onear
 Noontec Hammo Go	Noontec Hammo Go	onear
 Nura NuraLoop	Nura NuraLoop	inear
@@ -318,6 +327,7 @@ Raycon E100	Raycon E100	inear
 Raycon E25	Raycon E25	inear
 Raycon E50	Raycon E50	inear
 Raycon E55	Raycon E55	inear
+Razer BlackShark V2	Razer BlackShark V2	onear
 Razer BlackShark V2 X	Razer BlackShark V2 X	onear
 Razer Hammerhead True Wireless	Razer Hammerhead True Wireless	earbud
 Razer Kraken Pro V2	Razer Kraken Pro V2	onear
@@ -416,8 +426,10 @@ Sony WF-1000X	Sony WF-1000X	inear
 Sony WF-1000XM3	Sony WF-1000XM3	inear
 Sony WF-SP700N	Sony WF-SP700N	inear
 Sony WF-SP800N	Sony WF-SP800N	inear
+Sony WF-XB700	Sony WF-XB700	inear
 Sony WH-1000XM2	Sony WH-1000XM2	onear
 Sony WH-1000XM3	Sony WH-1000XM3	onear
+Sony WH-1000XM4	Sony WH-1000XM4	onear
 Sony WH-CH400	Sony WH-CH400	onear
 Sony WH-CH500	Sony WH-CH500	onear
 Sony WH-CH510	Sony WH-CH510	onear
@@ -459,11 +471,14 @@ Superlux HD 681 EVO	Superlux HD 681 EVO	onear
 Swimbuds Swimbuds	Swimbuds Swimbuds	inear
 Symphonized NRG 3.0	Symphonized NRG 3.0	inear
 TaoTronics SoundLiberty 79	TaoTronics SoundLiberty 79	inear
+TaoTronics SoundLiberty 92	TaoTronics SoundLiberty 92	inear
+TaoTronics TT-BH041		ignore
 TaoTronics TT-BH060	TaoTronics TT-BH060	onear
 Tascam TH-02	Tascam TH-02	onear
 TIN Audio T2	Tin HiFi T2	inear
 TIN Audio T3	Tin HiFi T3	inear
 TOZO T10	TOZO T10	inear
+TOZO T12	TOZO T12	inear
 TOZO T6	TOZO T6	inear
 TREBLAB X5	TREBLAB X5	inear
 TREBLAB Z2	TREBLAB Z2	onear
