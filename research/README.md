@@ -13,7 +13,7 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 Create kernel
 ```bash
-python -m ipykernel install --user --name="ai-lab" --display-name="AutoEq (Python 3)"
+python -m ipykernel install --user --name="autoeq" --display-name="AutoEq (Python 3)"
 ```
 
 Run Jupyter Lab
