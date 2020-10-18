@@ -110,6 +110,7 @@ Bluedio T2S Turbine	Bluedio T2S Turbine	onear
 Bluedio T3 Plus	Bluedio T3 Plus	onear
 Bluedio T4	Bluedio T4	onear
 Bluedio U Plus	Bluedio U Plus	onear
+BlueParrott B450-XT		ignore
 Boltune BT-BH024	Boltune BT-BH024	inear
 Bose Hearphones	Bose Hearphones	inear
 Bose Noise Cancelling Headphones 700	Bose Noise Cancelling Headphones 700	onear
@@ -130,6 +131,7 @@ Bowers & Wilkins P5 S2	Bowers & Wilkins P5 Series 2	onear
 Bowers & Wilkins P5 Wireless	Bowers & Wilkins P5 Wireless	onear
 Bowers & Wilkins P7	Bowers & Wilkins P7	onear
 Bowers & Wilkins PX	Bowers & Wilkins PX	onear
+Bowers & Wilkins PX5	Bowers & Wilkins PX5	onear
 Bowers & Wilkins PX7	Bowers & Wilkins PX7	onear
 BRAINWAVZ HM5	Brainwavz HM5	onear
 BÖHM B-66	BÖHM B-66	onear
@@ -176,6 +178,7 @@ Grado SR225e	Grado SR225e	onear
 Grado SR325e	Grado SR325e	onear
 Grado SR60e	Grado SR60e	onear
 Grado SR80e	Grado SR80e	onear
+Grado The Hemp Headphone	Grado The Hemp Headphone	onear
 Harman/Kardon NC	Harman Kardon NC	onear
 HiFiMan Ananda	HIFIMAN Ananda	onear
 HiFiMan ANANDA-BT	HIFIMAN Ananda BT	onear
@@ -191,6 +194,8 @@ HyperX Cloud II	HyperX Cloud II	onear
 HyperX Cloud Mix	HyperX Cloud Mix	onear
 HyperX Cloud Revolver	HyperX Cloud Revolver	onear
 HyperX Cloud Stinger	HyperX Cloud Stinger	onear
+HyperX Cloud Stinger S	HyperX Cloud Stinger S	onear
+iClever BTH02	iClever BTH02	onear
 Jabra Elite 25e	Jabra Elite 25e	inear
 Jabra Elite 45e	Jabra Elite 45e	inear
 Jabra Elite 65e	Jabra Elite 65e	inear
@@ -203,7 +208,9 @@ Jabra Elite Active 75t	Jabra Elite Active 75t	inear
 Jabra Elite Sport	Jabra Elite Sport	inear
 Jabra Evolve 65t	Jabra Evolve 65t	inear
 Jabra Evolve2 65	Jabra Evolve2 65	onear
+Jabra Evolve2 85	Jabra Evolve2 85	onear
 Jabra Steel		ignore
+Jabra Talk 45		ignore
 Jaybird Freedom	Jaybird Freedom	inear
 Jaybird Freedom 2	Jaybird Freedom 2	inear
 Jaybird Run	Jaybird Run	inear
@@ -269,6 +276,7 @@ Logitech G432	Logitech G432	onear
 Logitech G433	Logitech G433	onear
 Logitech G533	Logitech G533	onear
 Logitech G635	Logitech G635	onear
+Logitech G733 LIGHTSPEED	Logitech G733 LIGHTSPEED	onear
 Logitech G930	Logitech G930	onear
 Logitech G933	Logitech G933	onear
 Logitech G935	Logitech G935	onear
@@ -289,7 +297,9 @@ Monoprice Enhanced Active	Monoprice Enhanced Active	inear
 Monoprice Noise Cancelling	Monoprice Noise Cancelling	onear
 Monster Clarity 101 AirLinks	Monster Clarity 101 AirLinks	inear
 Monster Inspiration	Monster Inspiration	onear
+Mpow BH015B Headset		ignore
 Mpow Bluetooth Over-Ear	Mpow Bluetooth Over-Ear	onear
+Mpow CH6	Mpow CH6	onear
 Mpow EM12 Wireless Earphone		ignore
 Mpow Flame Pro	Mpow Flame Pro	inear
 Mpow H10	Mpow H10	onear
@@ -312,6 +322,7 @@ Parrot Zik 3.0	Parrot Zik 3.0	onear
 Philips Fidelio NC1	Philips Fidelio NC1	onear
 Philips Fidelio X2HR	Philips Fidelio X2HR	onear
 Philips SHP9500	Philips SHP9500	onear
+Philips SHP9600	Philips SHP9600	onear
 Plane Quiet Platinum	Plane Quiet Platinum	onear
 Plantronics BackBeat Fit	Plantronics BackBeat Fit	earbud
 Plantronics BackBeat Go 600	Plantronics BackBeat Go 600	onear
@@ -319,10 +330,12 @@ Plantronics Backbeat Go 810	Plantronics Backbeat Go 810	onear
 Plantronics Backbeat Pro	Plantronics Backbeat Pro	onear
 Plantronics BackBeat Pro 2	Plantronics BackBeat Pro 2	onear
 Plantronics RIG 800LX	Plantronics RIG 800LX	onear
+Plantronics Voyager 3200		ignore
 Plantronics Voyager 5200		ignore
 Plantronics Voyager Legend		ignore
 Polk Audio Buckle	Polk Audio Buckle	onear
 Polk Audio UltraFocus 8000	Polk Audio UltraFocus 8000	onear
+Puro JuniorJams	Puro JuniorJams	onear
 Raycon E100	Raycon E100	inear
 Raycon E25	Raycon E25	inear
 Raycon E50	Raycon E50	inear
@@ -330,6 +343,7 @@ Raycon E55	Raycon E55	inear
 Razer BlackShark V2	Razer BlackShark V2	onear
 Razer BlackShark V2 X	Razer BlackShark V2 X	onear
 Razer Hammerhead True Wireless	Razer Hammerhead True Wireless	earbud
+Razer Hammerhead USB-C	Razer Hammerhead USB-C	inear
 Razer Kraken Pro V2	Razer Kraken Pro V2	onear
 Razer Kraken Tournament Edition	Razer Kraken Tournament Edition	onear
 Razer Kraken Ultimate	Razer Kraken Ultimate	onear
@@ -343,6 +357,7 @@ Rovking V1	Rovking V1	inear
 RUNMUS RGB K1 Gaming Headset	RUNMUS RGB K1 Gaming Headset	onear
 Sabbat E12	Sabbat E12	inear
 Samsung Galaxy Buds	Samsung Galaxy Buds	inear
+Samsung Galaxy Buds Live	Samsung Galaxy Buds Live	earbud
 Samsung Galaxy Buds Plus	Samsung Galaxy Buds Plus	inear
 Samsung Gear IconX	Samsung Gear IconX	onear
 Samsung Level On Wireless	Samsung Level On Wireless	onear
@@ -388,6 +403,7 @@ Sennheiser RS 165	Sennheiser RS 165	onear
 Sennheiser RS 175	Sennheiser RS 175	onear
 Sennheiser RS 185	Sennheiser RS 185	onear
 Sennheiser RS 195	Sennheiser RS 195	onear
+Sennheiser SC 160 USB-C Headset	Sennheiser SC 160 USB-C	onear
 SENSO ActivBuds S-250	SENSO ActivBuds S-250	inear
 Shure AONIC 50	Shure AONIC 50	onear
 Shure SE215	Shure SE215	inear
@@ -405,9 +421,11 @@ Skullcandy Indy	Skullcandy Indy	inear
 Skullcandy Indy Evo	Skullcandy Indy Evo	inear
 Skullcandy Indy Fuel	Skullcandy Indy Fuel	inear
 Skullcandy Jib	Skullcandy Jib	inear
+Skullcandy Jib True	Skullcandy Jib True	inear
 Skullcandy Push	Skullcandy Push	inear
 Skullcandy Push Ultra	Skullcandy Push Ultra	inear
 Skullcandy Sesh	Skullcandy Sesh	inear
+Skullcandy Sesh Evo	Skullcandy Sesh Evo	inear
 Skullcandy Venue	Skullcandy Venue	onear
 SMS Audio STREET by 50 Active Noise Cancelling	SMS Audio Street by 50 Cent	onear
 Sony MDR-1000X	Sony MDR-1000X	onear
@@ -434,6 +452,7 @@ Sony WH-CH400	Sony WH-CH400	onear
 Sony WH-CH500	Sony WH-CH500	onear
 Sony WH-CH510	Sony WH-CH510	onear
 Sony WH-CH700N	Sony WH-CH700N	onear
+Sony WH-CH710N	Sony WH-CH710N	onear
 Sony WH-H900N	Sony WH-H900N	onear
 Sony WH-H910N	Sony WH-H910N	onear
 Sony WH-XB700	Sony WH-XB700	onear
@@ -454,6 +473,7 @@ SoundPeats Q9A	SoundPeats Q9A	inear
 SoundPeats QY8	SoundPeats QY8	inear
 SoundPeats QY9	SoundPeats QY9	inear
 SoundPeats TrueFree	SoundPeats TrueFree	inear
+Status Audio BT One	Status Audio BT One	onear
 Stax SR-L300	Stax SR-L300	onear
 SteelSeries Arctis 1	SteelSeries Arctis 1	onear
 SteelSeries Arctis 1 Wireless	SteelSeries Arctis 1 Wireless	onear
@@ -480,6 +500,7 @@ TIN Audio T3	Tin HiFi T3	inear
 TOZO T10	TOZO T10	inear
 TOZO T12	TOZO T12	inear
 TOZO T6	TOZO T6	inear
+Tranya T10	Tranya T10	inear
 TREBLAB X5	TREBLAB X5	inear
 TREBLAB Z2	TREBLAB Z2	onear
 Turtle Beach Battle Buds	Turtle Beach Battle Buds	inear
@@ -492,6 +513,7 @@ Turtle Beach Recon 50X	Turtle Beach Recon 50X	onear
 Turtle Beach Recon 70	Turtle Beach Recon 70	inear
 Turtle Beach Stealth 300	Turtle Beach Stealth 300	onear
 Turtle Beach Stealth 600	Turtle Beach Stealth 600	onear
+Turtle Beach Stealth 600 Gen 2	Turtle Beach Stealth 600 Gen 2	onear
 Turtle Beach Stealth 700	Turtle Beach Stealth 700	onear
 V-MODA BassFit Wireless	V-MODA BassFit Wireless	inear
 V-MODA Crossfade II Wireless	V-MODA Crossfade II Wireless	onear
