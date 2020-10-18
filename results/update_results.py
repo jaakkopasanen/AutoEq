@@ -231,14 +231,14 @@ def main():
             print('\nProcessing Crinacle Ears-711 on-ear measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear', 'Ears-711'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'crinacle_ears-711_harman_over-ear_2018'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'ears-711_harman_over-ear_2018'),
                 compensation=crinacle_ears711_overear,
                 **onear_kwargs
             )
             print('\nProcessing Crinacle GRAS 43AG-7 on-ear measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear', 'GRAS 43AG-7'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_gras_43ag-7_over-ear_2018'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'gras_43ag-7_harman_over-ear_2018'),
                 compensation=harman_overear,
                 **onear_kwargs
             )

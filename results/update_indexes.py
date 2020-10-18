@@ -66,7 +66,8 @@ def write_recommendations():
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_over-ear_2018', '*')))))
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_in-ear_2019v2', '*')))))
     # Get links to Crinacle results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'crinacle_harman_over-ear_2018', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'ears-711_harman_over-ear_2018', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*')))))
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2', '*')))))
     # Get links to oratory1990 results
     urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*')))))
@@ -151,7 +152,11 @@ def write_full_index():
     ))
     # Get links to Crinacle results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'crinacle_harman_over-ear_2018', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'ears-711_harman_over-ear_2018', '*'))),
+        'Crinacle'
+    ))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*'))),
         'Crinacle'
     ))
     lines.extend(get_lines(
@@ -185,7 +190,8 @@ def write_hesuvi_index():
     zip_object = ZipFile(os.path.join(DIR_PATH, 'hesuvi.zip'), 'w')
     dir_paths = [
         os.path.join(DIR_PATH, 'oratory1990'),
-        os.path.join(DIR_PATH, 'crinacle'),
+        os.path.join(DIR_PATH, 'crinacle', 'gras_43ag-7_harman_over-ear_2018'),
+        os.path.join(DIR_PATH, 'crinacle', 'ears-711_harman_over-ear_2018'),
         os.path.join(DIR_PATH, 'innerfidelity'),
         os.path.join(DIR_PATH, 'rtings'),
         os.path.join(DIR_PATH, 'headphonecom'),
@@ -246,8 +252,10 @@ def write_ranking_table():
     harman_overear = FrequencyResponse.read_from_csv(harman_overear)
 
     onear_rows = []
-    # oratory1990 over-ear
-    for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018', '*', '*.csv')):
+    # Over-ear
+    files = list(glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018', '*', '*.csv')))
+    files += list(glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*', '*.csv')))
+    for fp in files:
         row = ranking_row(fp, harman_overear, 'onear')
         if row:
             onear_rows.append(row)
@@ -256,7 +264,7 @@ def write_ranking_table():
     onear_str = onear_str.replace('+', '|').replace('|-', '|:')
 
     inear_rows = []
-    # oratory1990 and Crinacle in-ear
+    # In-ear
     files = list(glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2', '*', '*.csv')))
     files += list(glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2', '*', '*.csv')))
     for fp in files:
@@ -278,9 +286,9 @@ def write_ranking_table():
     Keep in mind that these numbers are calculated with deviations from Harman targets. The linked results use different
     levels of bass boost so the slope numbers here won't match the error curves you see in the linked results.
 
-    Over-ear table includes headphones measured by oratory1990. In-ear table includes headphones measured by oratory1990
-    and Crinacale. Measurements from other databases are not included because they are not compatible with measurements,
-    targets and preference scoring developed by Sean Olive et al.
+    Over-ear table includes headphones measured by oratory1990 and Crinacle using GRAS systems. Measurements from
+    other databases and systems are not included because they are not compatible with measurements, targets and
+    preference scoring developed by Sean Olive et al.
     
     ## Over-ear Headphones    
     {onear_str}
