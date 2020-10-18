@@ -111,5 +111,6 @@ my_results/
 **/json
 **/data/ignore
 measurements/crinacle/*data*/
+measurements/crinacle/Raw measurements (Patreon)/
 results/crinacle/*/*/*.csv
 chromedriver*
