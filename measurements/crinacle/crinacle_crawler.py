@@ -292,7 +292,7 @@ class CrinacleCrawler(Crawler):
                     file_paths = [os.path.abspath(p) for p in file_paths]
                     if rig == 'gras':
                         form = 'onear'
-                        target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'GAS 43AG-7')
+                        target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'GRAS 43AG-7')
                     elif rig == 'legacy':
                         form = 'onear'
                         target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'Ears-711')

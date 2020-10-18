@@ -56,7 +56,7 @@ def main():
     rtings_inear = os.path.join(ROOT_DIR, 'measurements', 'rtings', 'resources', 'rtings_harman_in-ear_2019v2_wo_bass.csv')
     harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2_wo_bass.csv')
     harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
-    crinacle_overear = os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'resources', 'crinacle_over-ear.csv')
+    crinacle_ears711_overear = os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'resources', 'crinacle_harman_over-ear_2018_wo_bass.csv')
     #measurements/referenceaudioanalyzer/resources/referenceaudioanalyzer_hdm1_harman_over-ear_2018_wo_bass.csv
     raa_hdmx = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018_wo_bass.csv')
     raa_hdm1 = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_hdm1_harman_over-ear_2018_wo_bass.csv')
@@ -228,11 +228,18 @@ def main():
 
     if crinacle:
         if onear:
-            print('\nProcessing Crinacle on-ear measurements...')
+            print('\nProcessing Crinacle Ears-711 on-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'crinacle_harman_over-ear_2018'),
-                compensation=crinacle_overear,
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear', 'Ears-711'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'crinacle_ears-711_harman_over-ear_2018'),
+                compensation=crinacle_ears711_overear,
+                **onear_kwargs
+            )
+            print('\nProcessing Crinacle GRAS 43AG-7 on-ear measurements...')
+            batch_processing(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear', 'GRAS 43AG-7'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_gras_43ag-7_over-ear_2018'),
+                compensation=harman_overear,
                 **onear_kwargs
             )
         if inear:
