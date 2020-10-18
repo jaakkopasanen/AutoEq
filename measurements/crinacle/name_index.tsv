@@ -546,6 +546,7 @@ IE800	Sennheiser IE 800	inear
 IE800S	Sennheiser IE 800 S	inear
 IE80S	Sennheiser IE 80 S	inear
 IE80S Half	Sennheiser IE 80 S (half)	inear
+IE80S max	Sennheiser IE 80 S (max)	
 IE80S Max	Sennheiser IE 80 S (max)	inear
 IEX1	Audio-Technica ATH-IEX1	inear
 iGE	Grado iGE	inear
@@ -568,8 +569,8 @@ IT03	iBasso IT03	inear
 IT03w	iBasso IT03w	inear
 IT04	iBasso IT04	inear
 Jazz	Jomo Audio Jazz	inear
-JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
+JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 JH13v2 Max	JH Audio 13v2 (max)	inear
 JH13v2 Min	JH Audio 13v2 (min)	inear
 JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	inear
@@ -813,8 +814,8 @@ N8 Vent Blocked	64 Audio N8 (vent blocked)	inear
 N8t M15	64 Audio N8t M15	inear
 Nanna	Kinera Nanna	inear
 NDH20	Neumann NDH20	onear
-Nemesis	Empire Ears Nemesis	inear
 nemesis	Empire Ears Nemesis	inear
+Nemesis	Empire Ears Nemesis	inear
 Neptune	qdc Neptune	inear
 nerva X	HYLA Nerva X	inear
 New Primacy	Oriveti New Primacy	inear
@@ -1007,7 +1008,7 @@ Sirius C S2	Fidue A91 Sirius (CIEM)	inear
 SK3	Soranik SK3	inear
 Smalls	Venture Electronics Monk IE Smalls	inear
 Solaris	Campfire Audio Solaris (sample 1)	inear
-Solaris 2020	Campfire Audio Solaris (2020)	inear
+Solaris 2020	Campfire Audio Solaris 2020	inear
 Solaris S1	Campfire Audio Solaris (sample 1)	ignore
 Solaris S2	Campfire Audio Solaris (sample 2)	inear
 Solaris S3	Campfire Audio Solaris (sample 3)	inear

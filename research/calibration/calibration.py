@@ -29,8 +29,10 @@ def main():
     harman_onear_wo_bass = FrequencyResponse.read_from_csv(os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv'))
     harman_inear = FrequencyResponse.read_from_csv(os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2.csv'))
     harman_inear_wo_bass = FrequencyResponse.read_from_csv(os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2_wo_bass.csv'))
+
     oratory1990_onear = get_measurements(os.path.join(MEASUREMENTS, 'oratory1990', 'data', 'onear'))
     oratory1990_inear = get_measurements(os.path.join(MEASUREMENTS, 'oratory1990', 'data', 'inear'))
+
     crinacle_inear = get_measurements(os.path.join(MEASUREMENTS, 'crinacle', 'data', 'inear'))
     inear_ref = oratory1990_inear.copy()
     inear_names = [fr.name for fr in inear_ref]
@@ -44,8 +46,9 @@ def main():
             crinacle_inear, oratory1990_inear, None
         ),
         (
-            'crinacle_harman_over-ear_2018_wo_bass',
-            get_measurements(os.path.join(MEASUREMENTS, 'crinacle', 'data', 'onear')), oratory1990_onear, None
+            'crinacle_ears-711_harman_over-ear_2018_wo_bass',
+            get_measurements(os.path.join(MEASUREMENTS, 'crinacle', 'data', 'onear', 'Ears-711')),
+            oratory1990_onear, None
         ),
         (
             'headphonecom_harman_over-ear_2018_wo_bass',
@@ -101,6 +104,12 @@ def main():
             inear_ref,
             FrequencyResponse.read_from_csv(os.path.join(MEASUREMENTS, 'rtings', 'resources', 'rtings_compensation_avg.csv'))
         ),
+        (
+            'crinacle_gras_43ag-7_harman_over-ear_2018_wo_bass',
+            get_measurements(os.path.join(MEASUREMENTS, 'crinacle', 'data', 'onear', 'GRAS 43AG-7')),
+            oratory1990_onear,
+            None
+        )
     ]
 
     stds = []

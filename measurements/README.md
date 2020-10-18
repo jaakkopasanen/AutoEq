@@ -11,9 +11,14 @@ Microsoft Visual Studio build tools for this. https://visualstudio.microsoft.com
 
 oratory1990 and Innerfidelity require Ghostscript installed: https://www.ghostscript.com/download/gsdnld.html
 
-Numerical data for Crinacle's measurements is not available in this repository. Crinacle has Patreon and a certain subscription tier unlocks the raw numerical measurement data. If you are a patreon and have access to the Google Drive containing the measurement files, you can download those to `crinacle/raw_data/` folder. `update_measurements.py` will then process those files and create AutoEq compatible CSV files in `crinacle/data` organized by headphone type.
+Numerical data for Crinacle's measurements is not available in this repository. Crinacle has Patreon and a certain
+subscription tier unlocks the raw numerical measurement data. If you are a patreon and have access to the Google Drive
+containing the measurement files, you can download the entire folder to `crinacle/Raw measurements (Patreon)/` folder.
+You may receive several Zip files from Google Drive, extract all of them in `crinacle`, they should not contain
+duplicate files. `update_measurements.py` will then process those files and create AutoEq compatible CSV files in
+`crinacle/data` organized by headphone type.
 
-## Updating Measurements
+## Updating Measurements and Results
 1. Remove measurements that have updates
 2. Prune results: `python results/prune_results.py`
 3. Run measurements update: `python measurements/update_measurements.py --prompt`
