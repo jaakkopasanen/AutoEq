@@ -106,17 +106,20 @@ class CrinacleCrawler(Crawler):
                 file_paths[name][_rig] = []
             file_paths[name][_rig].append(fp)
 
-        patreon_dir = os.path.join(DIR_PATH, 'Raw measurements (Patreon)')
+        patreon_dir = os.path.join(DIR_PATH, 'raw_data')
 
-        iem_source_paths = list(glob(os.path.join(patreon_dir, '*.txt')))
+        # IEMs
+        iem_source_paths = list(glob(os.path.join(patreon_dir, 'IEM Measurements (TSV)', '*.txt')))
         for fp in iem_source_paths:
             add_to(fp, 'iem')
 
-        legacy_source_paths = list(glob(os.path.join(patreon_dir, 'HP measurements (legacy)', '*.txt')))
+        # Ears + 711
+        legacy_source_paths = list(glob(os.path.join(patreon_dir, 'Legacy Data (EARS + 711)', '*.txt')))
         for fp in legacy_source_paths:
             add_to(fp, 'legacy')
 
-        gras_source_paths = list(glob(os.path.join(patreon_dir, 'HP measurements (GRAS)', 'FR Data (CSV)', '*.txt')))
+        # Gras
+        gras_source_paths = list(glob(os.path.join(patreon_dir, 'FR Data (CSV)', '*.txt')))
         for fp in gras_source_paths:
             add_to(fp, 'gras')
 
@@ -269,7 +272,7 @@ class CrinacleCrawler(Crawler):
             # Form not found in name proposals, prompt it
             form = self.prompt_form()
 
-        return NameItem(false_name, true_name, None)
+        return NameItem(false_name, true_name, form)
 
     def process_new(self, prompt=True):
         """Processes all new measurements

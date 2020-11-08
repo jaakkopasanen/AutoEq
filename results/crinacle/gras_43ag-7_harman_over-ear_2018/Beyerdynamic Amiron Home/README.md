@@ -2,22 +2,22 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.2dB**.
+When using independent subset of filters, apply preamp of **-7.0dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 50 Hz    | 2.55 | -1.3 dB |
-| Peaking | 185 Hz   | 0.71 | -5.2 dB |
-| Peaking | 1829 Hz  | 0.8  | 5.8 dB  |
-| Peaking | 4008 Hz  | 7.96 | 2.9 dB  |
-| Peaking | 7072 Hz  | 2.49 | -5.8 dB |
-| Peaking | 2443 Hz  | 3.86 | 2.8 dB  |
-| Peaking | 2750 Hz  | 1.93 | -1.8 dB |
-| Peaking | 11577 Hz | 0.71 | -1.1 dB |
-| Peaking | 18848 Hz | 0.37 | 4.3 dB  |
-| Peaking | 20180 Hz | 0.56 | 2.0 dB  |
+| Peaking | 182 Hz   | 0.63 | -5.0 dB |
+| Peaking | 1950 Hz  | 0.61 | 5.6 dB  |
+| Peaking | 6220 Hz  | 1.29 | -2.8 dB |
+| Peaking | 7522 Hz  | 1.97 | -3.5 dB |
+| Peaking | 18891 Hz | 0.49 | 6.4 dB  |
+| Peaking | 19 Hz    | 2.63 | 0.6 dB  |
+| Peaking | 2390 Hz  | 2.67 | 3.2 dB  |
+| Peaking | 3081 Hz  | 1.37 | -3.5 dB |
+| Peaking | 3966 Hz  | 5.01 | 4.5 dB  |
+| Peaking | 15985 Hz | 2.17 | 0.3 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.8dB**
@@ -25,16 +25,16 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -0.3 dB |
-| Peaking | 62 Hz    | 1.41 | -0.9 dB |
+| Peaking | 31 Hz    | 1.41 | -0.2 dB |
+| Peaking | 62 Hz    | 1.41 | -0.7 dB |
 | Peaking | 125 Hz   | 1.41 | -3.5 dB |
-| Peaking | 250 Hz   | 1.41 | -4.3 dB |
-| Peaking | 500 Hz   | 1.41 | -0.2 dB |
-| Peaking | 1000 Hz  | 1.41 | 2.2 dB  |
-| Peaking | 2000 Hz  | 1.41 | 5.8 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.4 dB  |
+| Peaking | 250 Hz   | 1.41 | -4.2 dB |
+| Peaking | 500 Hz   | 1.41 | -0.0 dB |
+| Peaking | 1000 Hz  | 1.41 | 2.0 dB  |
+| Peaking | 2000 Hz  | 1.41 | 5.9 dB  |
+| Peaking | 4000 Hz  | 1.41 | 1.0 dB  |
 | Peaking | 8000 Hz  | 1.41 | -4.5 dB |
-| Peaking | 16000 Hz | 1.41 | 5.2 dB  |
+| Peaking | 16000 Hz | 1.41 | 6.4 dB  |
 
 ### Graphs
 ![](./Beyerdynamic%20Amiron%20Home.png)

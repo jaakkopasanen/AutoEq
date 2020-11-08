@@ -25,7 +25,7 @@ false_name	true_name	form
 4SS	qdc 4SS	inear
 5S	TFZ 5S	inear
 5SH	qdc 5SH	inear
-700	Bose Noise Cancelling Headphones 700	
+700	Bose Noise Cancelling Headphones 700	onear
 747	Advanced 747	inear
 747 NC	Advanced 747 NC	inear
 75t	Jabra Elite 75t	inear
@@ -33,7 +33,7 @@ false_name	true_name	form
 8SH	qdc 8SH	inear
 8SL	qdc 8SL	inear
 8SS	qdc 8SS	inear
-99 Classic	Meze Audio 99 Classic	
+99 Classic	Meze Audio 99 Classic	onear
 A-HE03	Whizzer A-HE03 Kylin	inear
 A10	CCA A10	inear
 A12t	64 Audio A12t	inear
@@ -41,11 +41,15 @@ A12t C	64 Audio A12t (CIEM) (sample 1)	inear
 A12t C S2	64 Audio A12t (CIEM) (sample 2)	inear
 A15	Whizzer A15	inear
 A15 Pro	Whizzer A15 Pro	inear
+A18S	64 Audio A18s (universal) (sample 1)	inear
+A18S C	64 Audio A18s (CIEM)	inear
+A18S S2	64 Audio A18s (universal) (sample 2)	inear
 A2e	64 Audio A2e	inear
 A2H V2	AAW A2H V2	inear
 A3H	AAW A3H	inear
 A3H 2019	AAW A3H 2019	inear
 A3H V2	AAW A3H V2	inear
+A40 TR	ASTRO Gaming A40 TR	onear
 A4t	64 Audio A4t	inear
 A6t	64 Audio A6t	inear
 A6t DEC14	64 Audio A6	inear
@@ -54,6 +58,7 @@ A71	Fidue A71	inear
 A8	Moondrop A8	inear
 A8 Cardas	Cardas A8	inear
 A8000	Final Audio A8000	inear
+A900X	Audio-Technica ATH-A900X	onear
 A91	Fidue A91 Sirius	inear
 A990Z	Audio-Technica ATH-A990Z	onear
 AB-1266 Phi CC Lite	Abyss AB-1266 Phi CC Lite	onear
@@ -67,17 +72,25 @@ ACME 8	Fearless Audio ACME 8	inear
 Active65	Jabra Elite Active 65t	inear
 Adagio 3	Final Audio III	inear
 ADX5000	Audio-Technica ATH-ADX5000	onear
+ADX5000 (A2000Z AD2000X)	Audio-Technica ATH-ADX5000 (Yaxi A2000Z,AD2000X earpads)	onear
+ADX5000 (Dekoni fensheep)	Audio-Technica ATH-ADX5000 (Dekoni fenestrated sheepskin earpads)	onear
 Aeolus	ZMF Aeolus	onear
-Aeolus (perf Universe suede)	ZMF Aeolus (universal perforated suede earpads)	
+Aeolus (perf Universe suede)	ZMF Aeolus (universal perforated suede earpads)	onear
 Aeolus UP	ZMF Aeolus (universal perforated earpads)	onear
-Aeon 2 Closed	Dan Clark Audio Aeon 2 Closed	
-Aeon 2 Open	Dan Clark Audio Aeon 2 Open	
+Aeon 2 Closed	Dan Clark Audio Aeon 2 Closed	onear
+Aeon 2 Open	Dan Clark Audio Aeon 2 Open	onear
+Aeon Flow Closed (Medium damping)	Dan Clark Audio Aeon Flow Closed (white filter with one notch)	onear
+Aeon Flow Closed (Minimum damping)	Dan Clark Audio Aeon Flow Closed (black filter)	onear
+Aeon Flow Open	Dan Clark Audio Aeon Flow Open	onear
 Aether	Lime Ears Aether	inear
 Aether Bass	Lime Ears Aether (bass)	inear
 Aether R	Lime Ears Aether R	inear
 Aether R Bass	Lime Ears Aether R (bass)	inear
 AG2	Audio Genetic AG2	inear
-AH-D5000	Denon AH-D5000	
+AH-D5000	Denon AH-D5000	onear
+AH-D5200	Denon AH-D5200	onear
+AH-D7200	Denon AH-D7200	onear
+AH-D9200	Denon AH-D9200	onear
 Air 2	FitEar Air 2	inear
 AirPods Pro	Apple AirPods Pro	inear
 Aiva	Sendy Aiva	onear
@@ -89,8 +102,11 @@ AM7 Blue	Ambient Acoustics AM7 (blue)	inear
 AM7 Red	Ambient Acoustics AM7 (red)	inear
 AM7 Yellow	Ambient Acoustics AM7 (yellow)	inear
 AM7ed	Ambient Acoustics AM7 (red)	inear
-Amiron Home	Beyerdynamic Amiron Home	
+Amiron Home	Beyerdynamic Amiron Home (sample 1)	onear
+Amiron Home S2	Beyerdynamic Amiron Home (sample 2)	onear
+Amperior	Sennheiser Amperior	onear
 Ananda	HIFIMAN Ananda	onear
+ANC300TW	Audio-Technica ATH-ANC300TW	inear
 Andromeda	Campfire Audio Andromeda (sample 1)	inear
 Andromeda 2020	Campfire Audio Andromeda 2020	inear
 Andromeda Gold	Campfire Audio Andromeda Gold	inear
@@ -116,9 +132,10 @@ Anole VX Bass	qdc Anole VX (bass)	inear
 Anole VX Mids	qdc Anole VX (mids)	inear
 Anole VX Treble	qdc Anole VX (treble)	inear
 Answer	Dita Audio Answer	inear
-Aonic 50	Shure AONIC 50	
+Aonic 50	Shure AONIC 50	onear
 AQ3	Audiosense AQ3	inear
-AR-H1	Acoustic Research AR-H1	
+AQ7	Audiosense AQ7	inear
+AR-H1	Acoustic Research AR-H1	onear
 Ara	Campfire Audio Ara	inear
 Ares	VSonic Ares	inear
 Artemis	Elysian Artemis	inear
@@ -127,30 +144,35 @@ Arya	HIFIMAN Arya	onear
 AS10	KZ AS10	inear
 AS16	KZ AS16	inear
 AS800	Sony MDR-AS800	onear
+ASF	KZ ASF	inear
 ASH	AAW ASH (sample 1)	inear
 ASH S2	AAW ASH (sample 2)	inear
 Ash Yinyoo	Yinyoo Ash	inear
+ASX	KZ ASX	inear
+Aten Blue-Silver	IMR Acoustics Aten (silver nozzle, blue filter)	inear
 Atlantis	NocturnaL Audio Atlantis	inear
 Atlas	Campfire Audio Atlas (sample 1)	inear
 Atlas S2	Campfire Audio Atlas (sample 2)	inear
 Atticus	ZMF Atticus	onear
-Atticus (Eikon suede)	ZMF Atticus (Eikon suede earpads)	
+Atticus (Eikon suede)	ZMF Atticus (Eikon suede earpads)	onear
 Aurora	Symphonium Audio Aurora	inear
 Aurvana Trio	Creative Aurvana Trio	inear
-Auteur (perflamb)	ZMF Auteur (perforated Auteur lambskin earpads)	
+Auteur (perflamb)	ZMF Auteur (perforated Auteur lambskin earpads)	onear
 Auteur Blackwood	ZMF Auteur Blackwood	onear
 Auteur Blackwood UP	ZMF Auteur Blackwood (universal perforated earpads)	onear
 Auteur Cocobolo	ZMF Auteur Cocobolo	onear
 Auteur Teak	ZMF Auteur Teak	onear
 Avalon	NocturnaL Audio Avalon	inear
-AWAS	Audio-Technica ATH-AWAS	
+Aventho Wireless	Beyerdynamic Aventho Wireless	onear
+AWAS	Audio-Technica ATH-AWAS	onear
 AWK-009	Seahf AWK-009	inear
-AWKT	Audio-Technica ATH-AWKT	
+AWKT	Audio-Technica ATH-AWKT	onear
 AXH	AAW AXH	inear
 AXH 2019	AAW AXH 2019	inear
 Aya	FitEar Aya	inear
 B1	Final Audio B1	inear
 B2	Final Audio B2	inear
+B2 Shozy	Shozy B2	inear
 B20	BLON B20	onear
 B3	Final Audio B3	inear
 B400	Brainwavz B400 (sample 1)	inear
@@ -162,13 +184,15 @@ Baldr	Kinera Baldr	inear
 Basic	Oriveti Basic	inear
 Bass	HYLA TE-5B	inear
 Basso	Zero Audio Carbo Basso ZH-DX210-CB	inear
+Basso NXEars	NXEars Basso	inear
 BD005	Kinera BD005	inear
 BD4-2	Lear LCM BD4.2	inear
 Be	Periodic Audio Be	inear
 Bella	NCM Bella	inear
-BeoPlay H7	Bang & Olufsen BeoPlay H7	
+BeoPlay H7	Bang & Olufsen BeoPlay H7	onear
 Bevi	Lypertek Bevi	inear
 BG	Shozy & Neo BG (sample 1)	inear
+BG BlueGold	Shozy BG Blue Limited Edition	inear
 BG S2	Shozy & Neo BG (sample 2)	inear
 BIE	Venture Electronics Bonus In-Ears (BIE)	inear
 Big Bus	Big Bus Earbuds	inear
@@ -184,10 +208,13 @@ Blessing 2	Moondrop Blessing 2	inear
 BR5 Mk2	Rose BR5 Mk2	inear
 Brass	Dita Audio Brass	inear
 Bravado	Empire Ears Bravado	inear
+Bravado Mk2	Empire Ears Bravado Mk2	inear
+Buds Plus	Samsung Galaxy Buds+	inear
 Bullet In-Ear	MUNITIO Bullet In-Ear	inear
 C10	CCA C10	inear
 C12	CCA C12	inear
 C16	CCA C16	inear
+C6 C	Craft Ears Craft SIX (CIEM)	inear
 Canary	AAW Canary (sample 1)	inear
 Canary S2	AAW Canary (sample 2)	inear
 Cascade	Campfire Audio Cascade	onear
@@ -201,10 +228,13 @@ CKR7TW	Audio-Technica ATH-CKR7TW	inear
 CL1	RHA CL1	inear
 CL2	RHA CL2	inear
 CL750	RHA CL750	inear
+Clairvoyance	ThieAudio Clairvoyance	inear
+Clairvoyance 100ohm	ThieAudio Clairvoyance (100 ohm resistor)	inear
 Clear	Focal Clear	onear
 Clipper	Rhapsodio Clipper	inear
 Club Sound	Just Ear Club Sound	inear
-Co-Donguri	Ocharaku Co-Donguri Shizuku	inear
+Co-Donguri	Ocharaku Co-Donguri Shizuku (sample 1)	inear
+Co-Donguri Shizuku S2	Ocharaku Co-Donguri Shizuku (sample 2)	inear
 Comet	Campfire Audio Comet	inear
 Cora	Tanchjim Cora	inear
 Cora V2	Elysian Cora V2	inear
@@ -212,8 +242,8 @@ Cozoy Trio	Cozoy Trio	inear
 CP	Shozy & Neo CP	inear
 Craft SIX	Craft Ears Craft SIX	inear
 Crescent	Moondrop Crescent	inear
-Crossfade 2 Wireless	V-MODA Crossfade 2 Wireless	
-Crossfade LP2	V-MODA Crossfade LP2	
+Crossfade 2 Wireless	V-MODA Crossfade 2 Wireless	onear
+Crossfade LP2	V-MODA Crossfade LP2	onear
 Crystal Ball	Fearless Audio Crystal Ball	inear
 CT200	Clear Tune CT-200	inear
 CT300P	Clear Tune CT-300P	inear
@@ -227,7 +257,7 @@ Cupid S3	oBravo Cupid (sample 3)	inear
 Cupid S4	oBravo Cupid (sample 4)	inear
 CX9	Pioneer SE-CX9	inear
 D8000	Final Audio D8000	onear
-D8000 Pro	Final Audio D8000 Pro	
+D8000 Pro	Final Audio D8000 Pro	onear
 Daiso	Daiso $2 earphones	inear
 Dawn S2	Fearless Audio Dawn (sample 2)	inear
 Dawn S3	Fearless Audio Dawn (sample 3)	inear
@@ -237,13 +267,15 @@ Delta Air	Delta Air complimentary earphones	inear
 DES-R		ignore
 DES-Revised		ignore
 DES-S		ignore
-Deva (Passive)	HIFIMAN Deva (passive)	
+Deva (Passive)	HIFIMAN Deva (passive)	onear
 DH298	SATOLEX Tubomi DH298-A1Bk	inear
 DH302	SATOLEX Tubomi DH302-A1Bs	inear
 DH310	SATOLEX Tubomi DH310-A1SS	inear
 Diana	JH Audio Diana	inear
 Dio	Elysian Annihilator (sample 1)	inear
+DIY violator73	violator73 DIY 16 BA	inear
 Django	Noble Audio Django	inear
+DK-2001	DUNU DK2001	inear
 DK3001 Pro	DUNU DK3001 Pro	inear
 DK4001	DUNU DK4001	inear
 DM200H	Dynamic Motion DM200H	inear
@@ -270,16 +302,16 @@ Dream	Dita Audio Dream (sample 1)	inear
 Dream S2	Dita Audio Dream (sample 2)	inear
 Dream XLS	Dita Audio Dream XLS	inear
 DS1 Pro	BGVP DS1 Pro	inear
-DT1770 Pro	Beyerdynamic DT 1770 Pro (velour earpads)	
-DT1990 Pro	Beyerdynamic DT 1990 (balanced earpads)	
+DT1770 Pro	Beyerdynamic DT 1770 Pro (velour earpads)	onear
+DT1990 Pro	Beyerdynamic DT 1990 (balanced earpads)	onear
 DT200	Audiosense DT200	inear
-DT250 (80Ω)	Beyerdynamic DT 250 80 Ohm	
+DT250 (80Ω)	Beyerdynamic DT 250 80 Ohm	onear
 DT6	Senfer DT6	inear
-DT770 Pro (250Ω)	Beyerdynamic DT 770 250 Ohm	
-DT770 Pro (80Ω)	Beyerdynamic DT 770 80 Ohm	
-DT860	Beyerdynamic DT 860	
-DT880 Pro (32Ω)	Beyerdynamic DT 880 32 Ohm	
-DT990 Pro (250Ω)	Beyerdynamic DT 990 250 Ohm	
+DT770 Pro (250Ω)	Beyerdynamic DT 770 250 Ohm	onear
+DT770 Pro (80Ω)	Beyerdynamic DT 770 80 Ohm	onear
+DT860	Beyerdynamic DT 860	onear
+DT880 Pro (32Ω)	Beyerdynamic DT 880 32 Ohm	onear
+DT990 Pro (250Ω)	Beyerdynamic DT 990 250 Ohm	onear
 Dual	Eartech Dual	inear
 Duke C	Venture Electronics Duke (CIEM)	inear
 Dulce Bass	Noble Audio Dulce Bass	inear
@@ -303,6 +335,7 @@ E8	Bang & Olufsen Beoplay E8	inear
 E8 2.0	Bang & Olufsen Beoplay E8 2.0	inear
 E900	Onkyo E900	inear
 EA3	Jade Audio EA3	inear
+EAH-AZ70W	Technics EAH-AZ70W	inear
 Early	Aroma Audio Early	inear
 ED SE	KZ ED Special Edition	inear
 ED16	KZ ED16	inear
@@ -313,13 +346,14 @@ EH	fix Event Horizon	inear
 EH3	FiiO EH3	inear
 Ei3	Custom Art Ei.3	inear
 Eikon	ZMF Eikon	onear
-Eikon (Eikon lambskin)	ZMF Eikon (Eikon lambskin earpads)	
+Eikon (Eikon lambskin)	ZMF Eikon (Eikon lambskin earpads)	onear
 EJ07	Shuoer EJ07	inear
 EK3	Simgot Audio EK3 (off-off)	inear
 EK3 1	Simgot Audio EK3 (off-on)	inear
 EK3 2	Simgot Audio EK3 (on-off)	inear
 EK3 All	Simgot Audio EK3 (on-on)	inear
-Elear	Focal Elear	onear
+Elear	Focal Elear (sample 1)	onear
+Elear S2	Focal Elear (sample 2)	onear
 Elegia	Focal Elegia	onear
 Elise	Advanced Elise	inear
 Elysium	Vision Ears Elysium	inear
@@ -332,7 +366,7 @@ EM5H	Simgot Audio EM5H	inear
 EM6	EarSonics EM6	inear
 EM6W	Eternal Melody EM6W	inear
 Empyrean	Meze Empyrean	onear
-Empyrean S2	Meze Empyrean (sample 2)	
+Empyrean S2	Meze Empyrean (sample 2)	onear
 EN700	Simgot Audio EN700	inear
 EN700 Pro	Simgot Audio EN700 Pro	inear
 EPH100	Yamaha EPH-100	inear
@@ -350,6 +384,8 @@ ER4S	Etymotic ER4S	inear
 ER4S C	Etymotic ER4S (CIEM)	inear
 ER4SR	Etymotic ER4SR	inear
 ER4XR	Etymotic ER4XR	inear
+ERA-1	QUAD Era-1	onear
+Ergo 2	Precide ERGO 2	onear
 Erlkonig 1	Vision Ears Erlkönig 1	inear
 Erlkonig 2	Vision Ears Erlkönig 2	inear
 Erlkonig 3	Vision Ears Erlkönig 3	inear
@@ -366,14 +402,19 @@ ES4	KZ ES4	inear
 ES5	EarSonics ES5	inear
 ES60 C	Westone ES60 (CIEM)	inear
 ES9	EarSonics S-EM9	inear
+ESP95X	Koss ESP95X	onear
 ESR	Empire Ears ESR	inear
+ESR Mk2	Empire Ears ESR Mk2	inear
 EST	FitEar EST	inear
-Ether 2	Dan Clark Audio Ether 2	
-Ether C Flow 1.1	Dan Clark Audio Ether C Flow 1.1	
-Ether Flow 1.1	Dan Clark Audio Ether Flow 1.1	
+Ether 2	Dan Clark Audio Ether 2	onear
+Ether C	Dan Clark Audio Ether C	onear
+Ether C Flow 1.1	Dan Clark Audio Ether C Flow 1.1	onear
+Ether Flow 1.1	Dan Clark Audio Ether Flow 1.1	onear
 Eve 20	Vision Ears EVE 20	inear
 Evo X	Advanced Evo X	inear
 EVR	Empire Ears EVR	inear
+EVR Mk2	Empire Ears EVR Mk2	inear
+EW9	Audio-Technica ATH-EW9	onear
 EX1000 S1	Sony MDR-EX1000 (sample 1)	inear
 EX1000 S2	Sony MDR-EX1000 (sample 2)	inear
 EX1000 S3	Sony MDR-EX1000 (sample 3)	inear
@@ -433,6 +474,7 @@ Flat-4 Akazakura	Ocharaku Flat-4 Akazakura	inear
 Flat-4 Kaede Type 1	Ocharaku Flat-4 Kaede Type 1	inear
 Flat-4 Kaede Type 2	Ocharaku Flat-4 Kaede Type 2	inear
 Flat-4 Ti Plus	Ocharaku Flat-4 Ti Plus	inear
+FLY ANC	Harman Kardon FLY ANC	onear
 Form 1.1	Shozy Form 1.1	inear
 Forsteni	Oriolus Forsteni (sample 1)	inear
 Forsteni S2	Oriolus Forsteni (sample 2)	inear
@@ -448,13 +490,18 @@ FW03	JVC HA-FW03	inear
 FW10000	JVC HA-FW10000	inear
 FX99X	JVC HA-FX99X-B	inear
 FXA9	Fender FXA9	inear
+G PRO X	Logitech G PRO X	onear
+G1	Audio-Technica ATH-G1	onear
 G10	Future Sonics G10	inear
+G431	Logitech G431	onear
+G933s	Logitech G933s	onear
 Galaxy Buds	Samsung Galaxy Buds	inear
 Gemini	qdc Gemini	inear
 Gemini Bass	qdc Gemini (bass)	inear
 GK3	Geek Wold GK3	inear
 GL20	Gold Planar GL20	inear
 GL20 EQ		ignore
+GL850	Gold Planar GL850	onear
 Gorham	NocturnaL Audio Gorham	inear
 GR01	VSonic GR01	inear
 GR07 BE	VSonic GR07 Bass Edition	inear
@@ -470,7 +517,7 @@ GT3 Superbass Treble	Advanced GT3 Superbass (treble)	inear
 GT3 Superbassef	Advanced GT3 Superbassef	inear
 GT3 Treble	Advanced GT3 (treble)	inear
 GT3ef	Advanced GT3ef	inear
-GW100	Grado GW100	
+GW100	Grado GW100	onear
 Hades	Elysian Hades	inear
 Hades V2 Flat	Elysian Hades V2	inear
 Hades V2 Music	Elysian Hades V2 (music)	inear
@@ -481,46 +528,63 @@ Halycon Norm	AAW Halcyon (norm filter)	inear
 Halycon Vokal	AAW Halcyon (Vokal filter)	inear
 Hana	Tanchjim Hana	inear
 Harmony 8.2	Custom Art Harmony 8.2	inear
-HD25 Plus	Sennheiser HD 25 Plus	
-HD400S	Sennheiser HD 400 S	
+HD25 Aluminium	Sennheiser HD 25 Aluminium	onear
+HD25 Plus	Sennheiser HD 25 Plus	onear
+HD400S	Sennheiser HD 400 S	onear
+HD559	Sennheiser HD 559	onear
+HD560S	Sennheiser HD 560S	onear
+HD579	Sennheiser HD 579	onear
 HD599	Sennheiser HD 599	onear
-HD600	Sennheiser HD 600	onear
+HD600	Sennheiser HD 600 (sample 1)	onear
+HD600 S1 (worn pads)	Sennheiser HD 600 (worn earpads) (sample 1)	onear
+HD600 S2	Sennheiser HD 600 (semi-worn earpads) (sample 2)	onear
+HD600 S3 (2020, fresh pads)	Sennheiser HD 600 (sample 3)	onear
+HD600 S3 (worn pads)	Sennheiser HD 600 (worn earpads) (sample 3)	onear
 HD650	Sennheiser HD 650	onear
+HD650 S1 (worn pads)	Sennheiser HD 650 (worn earpads) (sample 1)	onear
+HD650 S2 (2020, fresh pads)	Sennheiser HD 650 (sample 2)	onear
+HD650 S2 (2020, worn pads)	Sennheiser HD 650 (worn earpads) (sample 2)	onear
 HD660S	Sennheiser HD 660 S	onear
 HD800	Sennheiser HD 800 (sample 1)	onear
 HD800 avg		ignore
 HD800 S2	Sennheiser HD 800 (sample 2)	onear
 HD800 S2 SDR	Sennheiser HD 800 (SDR mod) (sample 2)	onear
-HD800 SDR	Sennheiser HD 800 (SDR mod) (sample 2)	
+HD800 SDR	Sennheiser HD 800 (SDR mod) (sample 1)	onear
 HD800S	Sennheiser HD 800 S	onear
 HD820	Sennheiser HD 820	onear
 HE1000 V1	HIFIMAN HE1000	onear
-HE1000 V2	HIFIMAN HE1000 V2	
+HE1000 V2	HIFIMAN HE1000 V2	onear
+HE1000se	HIFIMAN HE1000se	onear
 HE200	Fengru HE-200	inear
-HE400i (2016)	HIFIMAN HE400i	
+HE400i (2016)	HIFIMAN HE400i 2016	onear
+HE400i (2020)	HIFIMAN HE400i 2020	onear
+HE560	HIFIMAN HE560 V1	onear
 HE5SE	HIFIMAN HE5se	onear
-HE6 (6-screw) (Velour)	HIFIMAN HE6 (6-screw, velour earpads)	
+HE5se	HIFIMAN HE5se	onear
+HE6 (6-screw) (Velour)	HIFIMAN HE6 (6-screw, velour earpads)	onear
 Heaven 4	Final Audio Heaven 4	inear
 Heaven 7	Final Audio Heaven 7	inear
 Heaven 8	Final Audio Heaven 8	inear
 Heaven S	Final Audio Heaven S	inear
 HEDDphone	HEDD HEDDphone	onear
-HEDDphone S2	HEDD HEDDphone (sample 2)	
+HEDDphone S2	HEDD HEDDphone (sample 2)	onear
 HEK1K		ignore
 Helios	HarmonicDyne Helios	onear
 HEM1	NuForce HEM1	inear
+Hero	Empire Ears Hero	inear
 Hibiki	Shozy x AAW Hibiki	inear
 Hibiki SE	Shozy x AAW Hibiki SE	inear
 HL4300	Horluchs HL4300	inear
 Homunculus	Metal Magic Research Homunculus	inear
 Horizon	AZLA Horizon	inear
-HP-3	Klipsch Heritage HP-3	
+HP-3	Klipsch Heritage HP-3	onear
 HP3	Klipsch HP3	onear
 HS1001	Acoustune HS1001	inear
 HS1003	Acoustune HS1003	inear
 HS1004	Acoustune HS1004 (sample 1)	inear
 HS1004 S2	Acoustune HS1004 (sample 2)	inear
-HS1501	Acoustune HS1501	inear
+HS1501	Acoustune HS1501 (sample 1)	inear
+HS1501 S2	Acoustune HS1501 (sample 2)	inear
 HS1503	Acoustune HS1503	inear
 HS1551	Acoustune HS1551	inear
 HS1650	Acoustune HS1650	inear
@@ -546,8 +610,8 @@ IE800	Sennheiser IE 800	inear
 IE800S	Sennheiser IE 800 S	inear
 IE80S	Sennheiser IE 80 S	inear
 IE80S Half	Sennheiser IE 80 S (half)	inear
-IE80S max	Sennheiser IE 80 S (max)	
 IE80S Max	Sennheiser IE 80 S (max)	inear
+IE80S max	Sennheiser IE 80 S (max)	inear
 IEX1	Audio-Technica ATH-IEX1	inear
 iGE	Grado iGE	inear
 IM01	Audio-Technica ATH-IM01	inear
@@ -569,8 +633,8 @@ IT03	iBasso IT03	inear
 IT03w	iBasso IT03w	inear
 IT04	iBasso IT04	inear
 Jazz	Jomo Audio Jazz	inear
-Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
+Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 JH13v2 Max	JH Audio 13v2 (max)	inear
 JH13v2 Min	JH Audio 13v2 (min)	inear
 JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	inear
@@ -581,10 +645,19 @@ Juno Max Bass	Unknown Custom Juno	inear
 Juno Min Bass	Unknown Custom Juno (min bass)	inear
 K10	Noble Audio K10	inear
 K10 Encore	Noble Audio K10 Encore	inear
-K371	AKG K371	
+K240 Studio	AKG K240 Studio	onear
+K371	AKG K371	onear
 K5	Magaosi K5	inear
-K7XX	AKG K7XX	
-K812	AKG K812	
+K52	AKG K52	onear
+K612 Pro	AKG K612 Pro	onear
+K701	AKG K701	onear
+K702	AKG K702	onear
+K712 Pro	AKG K712 Pro	onear
+K72	AKG K72	onear
+K7XX	AKG K7XX	onear
+K812	AKG K812	onear
+K872 Pro	AKG K872 Pro	onear
+K92	AKG K92	onear
 Kanas Pro	Moondrop Kanas Pro	inear
 Katana	Noble Audio Katana	inear
 Khan	Noble Audio Khan (sample 1)	inear
@@ -618,7 +691,7 @@ KL-Trio Min Test	Kumitate KL-Trio (min) (test)	ignore
 KL-Unknown Max Treble	Kumitate Lab Unknown (max treble)	ignore
 KL-Unknown Min Treble	Kumitate Lab Unknown (min treble)	ignore
 KS3	Alpha & Delta KS3	inear
-KSC75	Koss KSC75	
+KSC75	Koss KSC75	onear
 KSE1200	Shure KSE1200 (sample 1)	inear
 KSE1200 S2	Shure KSE1200 (sample 2)	inear
 KXXS	Moondrop KXXS	inear
@@ -626,8 +699,13 @@ L3 00	ThieAudio Legacy 3 (00 setting)	inear
 L3 02	ThieAudio Legacy 3 (02 setting)	inear
 L3 10	ThieAudio Legacy 3 (10 setting)	onear
 L3 12	ThieAudio Legacy 3 (12 setting)	inear
-L300	Stax SR-L300	onear
-L500	Stax SR-L500	onear
+L3 C 00	ThieAudio Legacy 3 (CIEM, 00 setting)	inear
+L3 C 02	ThieAudio Legacy 3 (CIEM, 02 setting)	inear
+L3 C 10	ThieAudio Legacy 3 (CIEM, 10 setting)	inear
+L3 C 12	ThieAudio Legacy 3 (CIEM, 12 setting)	inear
+L300	Stax SR-L300 (sample 1)	onear
+L5	ThieAudio Legacy 5	inear
+L500	Stax SR-L500 (sample 1)	onear
 L700	Stax SR-L700	onear
 L9	ThieAudio Legacy 9	inear
 La Hire	Fearless Audio La Hire	inear
@@ -642,24 +720,24 @@ Layla AION Min Bass	JH Audio Layla AION (min bass)	inear
 Layla Max	JH Audio Layla (max)	inear
 Layla Min	JH Audio Layla (min)	inear
 LCD-1	Audeze LCD-1	onear
-LCD-2 (Rosewood)	Audeze LCD-2 (Rosewood)	
-LCD-2 Classic	Audeze LCD-2 Classic	
-LCD-2 Closed Back	Audeze LCD-2 Closed Back	
+LCD-2 (Rosewood)	Audeze LCD-2 (Rosewood)	onear
+LCD-2 Classic	Audeze LCD-2 Classic	onear
+LCD-2 Closed Back	Audeze LCD-2 Closed Back	onear
 LCD-2 Dekoni Fen	Audeze LCD-2 (Dekoni fenestrated sheepskin earpads)	onear
 LCD-24	Audeze LCD-24	onear
 LCD-2C	Audeze LCD-2 Classic	onear
-LCD-2C Closed	Audeze LCD-2 Closed-back	onear
-LCD-3	Audeze LCD-3	
+LCD-2C Closed	Audeze LCD-2 Closed Back	onear
+LCD-3	Audeze LCD-3	onear
 LCD-3 Dekoni Val		ignore
 LCD-4	Audeze LCD-4	onear
 LCD-i3	Audeze LCD-i3	inear
 LCD-i3 BT Cipher	Audeze LCD-i3 (Cipher bluetooth)	inear
 LCD-i4	Audeze LCD-i4	inear
-LCD-MX4	Audeze LCD-MX4	
+LCD-MX4	Audeze LCD-MX4	onear
 LCD-X	Audeze LCD-X	onear
-LCD-X (7454544)	Audeze LCD-X (worn earpads) (sample 2)	
-LCD-X (Fazor)	Audeze LCD-X	
-LCD-XC (Fazor)	Audeze LCD-XC	
+LCD-X (7454544)	Audeze LCD-X (worn earpads) (sample 2)	onear
+LCD-X (Fazor)	Audeze LCD-X	onear
+LCD-XC (Fazor)	Audeze LCD-XC	onear
 LE2	Lime Ears LE2	inear
 Legacy	Unique Melody Legacy	inear
 Legend Omega	EarWerkz Legend Omega	inear
@@ -667,8 +745,9 @@ Legend X	Empire Ears Legend X (sample 1)	inear
 Legend X S2	Empire Ears Legend X (sample 2)	inear
 Legend X SE	Empire Ears Legend X SE	inear
 Liberty 2 Pro	Anker Soundcore Liberty 2 Pro	inear
-Listen Professional	Focal Listen Professional	
+Listen Professional	Focal Listen Professional	onear
 Live S2	Ultimate Ears Live (sample 2)	inear
+LIVE300TWS	JBL Live 300TWS	inear
 LS200	Audio-Technica ATH-LS200	inear
 LS300	Audio-Technica ATH-LS300	inear
 LS400	Audio-Technica ATH-LS400	inear
@@ -693,23 +772,25 @@ M4 FiR	Fir Audio M4 (sample 1)	inear
 M4 FiR S2	Fir Audio M4 (sample 2)	inear
 M4 S3	Fir Audio M4 (sample 3)	inear
 M4 S4	Fir Audio M4 (sample 4)	inear
+M4 S5	Fir Audio M4 (sample 5)	inear
 M40	Audio-Technica ATH-M40	onear
-M40x	Audio-Technica ATH-M40x	
+M40x	Audio-Technica ATH-M40x	onear
 M5	Fir Audio M5 (sample 1)	inear
 M5 C	Fir Audio M5 (CIEM)	inear
 M5 S2	Fir Audio M5 (sample 2)	inear
 M5 S3	Fir Audio M5 (sample 3)	inear
 M5 S5	Fir Audio M5 (sample 4)	inear
 M5 S6	Fir Audio M5 (sample 5)	inear
-M50x	Audio-Technica ATH-M50x (sample 1)	
-M50X	Audio-Technica ATH-M50x (sample 1)	onear
-M50x S2	Audio-Technica ATH-M50x (sample 2)	
-M50xBT	Audio-Technica ATH-M50xBT	
+M5 S7	Fir Audio M5 (sample 7)	inear
+M50x	Audio-Technica ATH-M50x (sample 1)	onear
+M50X	Audio-Technica ATH-M50x	onear
+M50x S2	Audio-Technica ATH-M50x (sample 2)	onear
+M50xBT	Audio-Technica ATH-M50xBT	onear
 M51D	Advanced M51D	inear
 M55D	Advanced M55D	inear
 M6Pro	MEE Audio M6 Pro	inear
 M7	Sony IER-M7	inear
-M70x	Audio-Technica ATH-M70x	
+M70x	Audio-Technica ATH-M70x	onear
 M9	Sony IER-M9 (sample 1)	inear
 M9 S2	Sony IER-M9 (sample 2)	inear
 M9 S2 Filterless	Sony IER-M9 (no filter)	inear
@@ -724,10 +805,18 @@ Mason V3+	Unique Melody Mason V3+	inear
 Massdrop Plus	Massdrop Plus Universal IEM	inear
 Maven	Unique Melody Maven	inear
 Mavis 2	Unique Melody Mavis 2	inear
+MDR-1AM2	Sony MDR-1AM2	onear
 MDR-3	Sony MDR-3	onear
-MDR-CD380	Sony MDR-CD380	
-MDR-V6	Sony MDR-V6	
+MDR-7510	Sony MDR-7510	onear
+MDR-CD380	Sony MDR-CD380	onear
+MDR-CD900ST	Sony MDR-CD900ST	onear
+MDR-CD900ST (stPad microfiber)	Sony MDR-CD900ST (Yaxi stPad microfiber earpads)	onear
+MDR-CD900ST (stPad2)	Sony MDR-CD900ST (Yaxi stPad2 earpads)	onear
+MDR-M1ST	Sony MDR-M1ST	onear
+MDR-MA900	Sony MDR-MA900	onear
+MDR-V6	Sony MDR-V6	onear
 MDR-Z1R	Sony MDR-Z1R	onear
+MDR-Z7M2	Sony MDR-Z7M2	onear
 MDR7550	Sony MDR-7550 (sample 1)	inear
 MDR7550 S2	Sony MDR-7550 (sample 2)	inear
 ME04	Meccaudio ME04	inear
@@ -738,22 +827,26 @@ ME500	Shanling ME500	inear
 ME700	Shanling ME700	inear
 Mellianus	Oriolus Mellianus	inear
 Merlin V2	Unique Melody Merlin V2	inear
+MEST	Unique Melody MEST (universal)	inear
+MEST C	Unique Melody MEST (CIEM)	inear
 Meze 12	Meze 12 Classics	inear
 Mg	Periodic Audio Mg	inear
 MG5HX	Future Sonics MG5HX	inear
 MH334	FitEar MH334	inear
 MH334SR C	FitEar MH334SR (CIEM)	inear
 MH335DW	FitEar MH335DW	inear
-MH40	Master & Dynamic MH40	
+MH40	Master & Dynamic MH40	onear
 MH750	Sony MH750	inear
 MH755	Sony MH755 (sample 1)	inear
 MH755 S2	Sony MH755 (sample 2)	inear
 MH755 S3	Sony MH755 (sample 3)	inear
 MH755 S4	Sony MH755 (sample 4)	inear
 MH755 S5	Sony MH755 (sample 5)	inear
+Mia	Cat Ear Audio Mia	inear
 Micro BL Bass Off	iFi micro iDSD Black-Label Bass Off	ignore
 Micro BL Bass On	iFi micro iDSD Black-Label Bass On	ignore
 Minerva	Elysian Minerva	inear
+Mini MEST	Unique Melody Mini MEST	inear
 Mini2	Rose Mini2	inear
 Minor	FAudio Minor	inear
 Minor S2	FAudio Minor (sample 2)	inear
@@ -764,7 +857,14 @@ Mirage UM	Unique Melody Mirage	inear
 Mk2	Oriolus Japan Mk2 (sample 1)	inear
 Mk2 S2	Oriolus Japan Mk2 (sample 2)	inear
 Mk2 S3	Oriolus Japan Mk2 (sample 3)	inear
-MK801	1MORE MK801	
+MK801	1MORE MK801	onear
+Mobius (Ballistics preset)	Audeze Mobius (ballistics preset)	onear
+Mobius (Default preset)	Audeze Mobius (default preset)	onear
+Mobius (Flat preset)	Audeze Mobius (flat preset)	onear
+Mobius (Footsteps preset)	Audeze Mobius (footsteps preset)	onear
+Mobius (Music preset)	Audeze Mobius (music preset)	onear
+Mobius (Racing preset)	Audeze Mobius (racing preset)	onear
+Mobius (RPG preset)	Audeze Mobius (RPG preset)	onear
 Mockingbird	AAW Mockingbird	inear
 Model X	Lime Ears Model X (sample 1)	inear
 Model X Advanced	Advanced Model X	inear
@@ -773,12 +873,17 @@ Model X Bass S2	Lime Ears Model X (bass) (sample 2)	inear
 Model X S2	Lime Ears Model X (sample 2)	inear
 Mojito	Queen of Audio Mojito	inear
 Momentum	Sennheiser Momentum In-Ear	inear
-Momentum 2 Wireless	Sennheiser Momentum 2.0 Wireless	
+Momentum 2 Wireless	Sennheiser Momentum 2.0 Wireless	onear
 Momentum TW	Sennheiser Momentum True Wireless	inear
 Momentum TWS 2	Sennheiser Momentum True Wireless 2	inear
+Momentum TWS 2 HEST	Sennheiser Momentum True Wireless 2 (High-End Sound Tuning mode)	inear
+Monarch	ThieAudio Monarch (sample 1)	inear
+Monarch S2	ThieAudio Monarch (sample 2)	inear
+Monarch S2 100ohm	ThieAudio Monarch (100 ohm resistor)	inear
+Monarch S2 20ohm	ThieAudio Monarch (200 ohm resistor)	inear
 Monet 17	FitEar Monet 17	inear
 MS4	Hidizs Mermaid MS4	inear
-MSR7b	Audio-Technica ATH-MSR7b	
+MSR7b	Audio-Technica ATH-MSR7b	onear
 MW07	Master & Dynamic MW07	inear
 MW07 Go	Master & Dynamic MW07 Go	inear
 MW07 Plus	Master & Dynamic MW07 Plus	inear
@@ -813,14 +918,21 @@ N8 None C S3	64 Audio N8 (CIEM) (sample 3)	inear
 N8 Vent Blocked	64 Audio N8 (vent blocked)	inear
 N8t M15	64 Audio N8t M15	inear
 Nanna	Kinera Nanna	inear
+NDH 20	Neumann NDH20	onear
 NDH20	Neumann NDH20	onear
-nemesis	Empire Ears Nemesis	inear
 Nemesis	Empire Ears Nemesis	inear
+nemesis	Empire Ears Nemesis	inear
 Neptune	qdc Neptune	inear
 nerva X	HYLA Nerva X	inear
 New Primacy	Oriveti New Primacy	inear
-NightHawk	AudioQuest NightHawk	
+NightHawk	AudioQuest NightHawk	onear
 Nightingale	AAW Nightingale	inear
+Nio M15	64 Audio Nio M15 (sample 1)	inear
+Nio MX	64 Audio Nio (mX module) (sample 1)	inear
+Nio S2 M15	64 Audio Nio M15 (sample 2)	inear
+Nio S2 M20	64 Audio Nio M20 (sample 2)	inear
+Nio S2 MX	64 Audio Nio (mX module) (sample 2)	inear
+NM2 Plus	NF Audio NM2+	inear
 No.3	TFZ No.3	inear
 Norma	Flicker Ear Norma	inear
 NS-U1 All Off	Lear NS-U1 (all Off)	inear
@@ -832,28 +944,37 @@ NT6	Hidition NT6	inear
 NT6 Pro	Hidition NT6 Pro	inear
 NT6 Uni	Hidition NT6 Uni	inear
 NT8	Hidition NT8	inear
+NX7 Mk3 Black	NiceHCK NX7 Mk3 (black)	inear
+NX7 Mk3 Blue	NiceHCK NX7 Mk3 (blue)	inear
+NX7 Mk3 Red	NiceHCK NX7 Mk3 (red)	inear
 NX7 Pro Blue	NiceHCK NX7 Pro (blue)	inear
 NX7 Pro Red	NiceHCK NX7 Pro (red)	inear
 NX7 Pro White	NiceHCK NX7 Pro (stock)	inear
 Oculus	ARC Oculus	inear
 Odin	Kinera Odin	inear
+Odin (Bog Oak)	Kennerton Odin Bog Oak	onear
+Odin EE	Empire Ears Odin	inear
 OH1	IKKO OH1	inear
 OH10	IKKO OH10	inear
 OH300	Oriveti OH300	inear
 OH500	Oriveti OH500	inear
 OH7	IKKO OH7	inear
+Oldskool RPM (ZnC LE)	Fischer Audio Oldskool RPM 33 1-3 (Zeppelin & Co Limited Edition)	onear
 Oluv x EarFun Free	EarFun Free	inear
 Omega Spark	Fischer Audio Omega Spark	inear
+Opera	NXEars Opera	inear
 Orion	Campfire Audio Orion	inear
 Orta	AZLA Orta	inear
 OS V3	HiFi Boy OS V3	inear
 Oxygen	Tanchjim Oxygen	inear
 P1	Tin HiFi P1	inear
 P1 (Front vent sealed)	Tin HiFi P1 (front vent sealed)	inear
+P2	Tin HiFi P2	inear
 Panda	Massdrop Panda (active)	onear
 Panda Passive	Massdrop Panda (passive)	onear
 Parterre	FitEar Parterre (sample 1)	inear
 Parterre S2	FitEar Parterre (sample 2)	inear
+PC38X	Sennheiser PC38X	onear
 Percivali	Oriolus Percivali	inear
 PFE	Phonak PFE 232	inear
 Phantom	Empire Ears Phantom	inear
@@ -873,20 +994,23 @@ Polaris S2	Campfire Audio Polaris (sample 2)	inear
 Polaris V2 S2	Campfire Audio Polaris V2	inear
 Pollux	ARC Pollux	inear
 Pollux S2	ARC Pollux	inear
+Portapro	Koss Porta Pro	onear
 Poseidon	Elysian Poseidon	inear
 Prelude	Warbler Prelude (sample 1)	inear
 Prelude S2	Warbler Prelude (sample 2)	inear
 Primo8	NuForce Primo 8	inear
 Pristine	HUM Pristine Reference	inear
-PRO DJ100	Koss PRO DJ100	
+PRO DJ100	Koss PRO DJ100	onear
 Pro330v2	Custom Art Pro330v2	inear
 Prophile8	InEar ProPhile-8	inear
 ProPhile8 Bass	InEar ProPhile-8 (bass)	inear
 ProPhile8 Bass Treble	InEar ProPhile-8 (bass, treble)	inear
 ProPhile8 Treble	InEar ProPhile-8 (treble)	inear
+PS500e	Grado PS500e	onear
 Purple Standard	EarSonics Purple (standard)	inear
-QC35 II (Active)	Bose QuietComfort 33 II	
-QC35 II (Passive)	Bose QuietComfort 35 II (passive)	
+PX	Bowers & Wilkins PX	onear
+QC35 II (Active)	Bose QuietComfort 33 II	onear
+QC35 II (Passive)	Bose QuietComfort 35 II (passive)	onear
 QM50	Queen of Audio QM50	inear
 Quad	1MORE Quad Driver	inear
 Quad 2.0	Unknown Custom Quad 2.0	inear
@@ -921,8 +1045,8 @@ R3	Itsfit Lab R3	inear
 R3 C	Itsfit Lab R3 (CIEM)	inear
 R70x	Audio-Technica ATH-R70x	onear
 Ra C-Cu	oBravo Ra C-Cu	inear
-RAD-0	Rosson Audio Design RAD-0	
-Radiante	Spirit Torino Radiante	
+RAD-0	Rosson Audio Design RAD-0	onear
+Radiante	Spirit Torino Radiante	onear
 RAH Black-black	IMR Acoustics RAH (black nozzle, black filter)	inear
 RAH Black-blue	IMR Acoustics RAH (blue nozzle, black filter)	inear
 RAH Black-gold	IMR Acoustics RAH (gold nozzle, black filter)	inear
@@ -976,8 +1100,8 @@ SD2	InEar StageDiver SD2	inear
 SD3	InEar StageDiver SD3	inear
 SD4	InEar StageDiver SD4	inear
 SD5	InEar StageDiver SD5	inear
-SE-2P	Pioneer SE-2P	
-SE-Master1	Pioneer SE-Master1	
+SE-2P	Pioneer SE-2P	onear
+SE-Master1	Pioneer SE-Master1	onear
 SE215	Shure SE215	inear
 SE215 Ltd	Shure SE215 Ltd	inear
 SE315	Shure SE315	inear
@@ -998,11 +1122,11 @@ SH3	PEARS SH3 (sample 1)	inear
 SH3 C	PEARS SH3 (CIEM)	inear
 SH3 S2	PEARS SH3 (sample 2)	inear
 Shock	Aroma Audio Shock	inear
-SHP9500	Philips SHP9500	
+SHP9500	Philips SHP9500	onear
 SIA	Singapore Airlines complimentary earphones	inear
 Sif	Kinera SIF	inear
 Silver	Origami Audio Silver	inear
-Sine DX	Audeze SINE DX	
+Sine DX	Audeze SINE DX	onear
 Singolo	Zero Audio Carbo Singolo ZH-BS150-CS	inear
 Sirius C S2	Fidue A91 Sirius (CIEM)	inear
 SK3	Soranik SK3	inear
@@ -1021,29 +1145,50 @@ Solaris S4	Campfire Audio Solaris (sample 4)	inear
 Solaris SE	Campfire Audio Solaris SE (sample 1)	inear
 Solaris SE S2	Campfire Audio Solaris SE (sample 2)	inear
 Solstice	Campfire Audio Solstice	inear
+Sonata	NXEars Sonata	inear
 Sonic	Sonic Sonic	inear
+Sonoma Model One (M1)	Warwick Acoustics Sonoma Model One	onear
+Sonorous VIII	Final Audio Sonorous VIII	onear
+Sonorous X	Final Audio Sonorous X	onear
 Sora	Intime Sora	inear
 Soundsport Free	Bose SoundSport Free	inear
 SP3	Soranik SP3	inear
 SP3 SE	Soranik SP3 SE	inear
+SP540	Koss SP540	onear
 Spaceship	Moondrop Spaceship	inear
 Sphear	Focal Sphear	inear
 SPORT7TW	Audio-Technica ATH-SPORT7TW	inear
 Spring 1	BQEYZ Spring 1	inear
 Spring 1 S2 Mesh	BQEYZ Spring 1 (mesh mod) (sample 2)	inear
 SR-007	Stax SR-007	onear
-SR-007 Mk2.5	Stax SR-007 Mk2.5	
+SR-007 Mk2.5	Stax SR-007 Mk2.5	onear
 SR-009	Stax SR-009	onear
 SR-009S	Stax SR-009S	onear
+SR-4070	Stax SR-4070	onear
+SR-84	Stax SR-84	onear
+SR-L300	Stax SR-L300 (sample 1)	onear
+SR-L300 Limited	Stax SR-L300 Limited	onear
+SR-L300 S2	Stax SR-L300 (sample 2)	onear
+SR-L500 S2	Stax SR-L500 (sample 2)	onear
+SR-L700 S1 (fresh pads)	Stax SR-L700 (sample 1)	onear
+SR-L700 S2	Stax SR-L700 (sample 2)	onear
 SR001 Mk1	Stax SR-001 Mk1	inear
 SR001 Mk1 CES Stock	Stax SR-001 Mk1 CES (stock)	inear
 SR002	Stax SR-002	inear
-SR1	iBasso SR1	
-SR2	iBasso SR2	
-SR60e	Grado SR60e	
-SR80e	Grado SR80e	
-SRH840	Shure SRH840	
-SS-10	Sansui SS10	
+SR1	iBasso SR1	onear
+SR125e	Grado SR125e	onear
+SR1a (ear contact)	RAAL-requisite SR1a	onear
+SR1a (no ear contact)	RAAL-requisite SR1a (no ear contact)	onear
+SR2	iBasso SR2	onear
+SR325e	Grado SR325e	onear
+SR60e	Grado SR60e	onear
+SR80e	Grado SR80e	onear
+SRH1540	Shure SRH1540	onear
+SRH240A	Shure SRH240A	onear
+SRH440	Shure SRH440	onear
+SRH840	Shure SRH840 (sample 1)	onear
+SRH840 S2	Shure SRH840 (sample 2)	onear
+SS-10	Sansui SS10	onear
 SSR	Moondrop SSR	inear
 Star	Aroma Audio Star	inear
 Starfield	Moondrop Starfield	inear
@@ -1052,12 +1197,13 @@ Start	Fearless Audio Start	inear
 Stella	Light Harmonic Stella	inear
 Stellia	Focal Stellia	onear
 Stylish	1MORE Stylish	inear
+Sultan	Noble Audio Sultan	inear
 Sundara	HIFIMAN Sundara	onear
 Superdarts	Atomic Floyd SuperDarts	inear
 SV Grey		ignore
 Symphony	Effect Audio Symphony	inear
 T1	Tin HiFi T1	inear
-T1 (3rd Gen)	Beyerdynamic T1 3rd Generation	
+T1 (3rd Gen)	Beyerdynamic T1 3rd Generation	onear
 T2	Tin HiFi T2	inear
 T2 Galaxy Mod	Tin HiFi T2 (galaxy mod)	inear
 T2 Plus	Tin HiFi T2 Plus (sample 1)	inear
@@ -1067,11 +1213,13 @@ T20i	RHA T20i	inear
 T3	Tin HiFi T3	inear
 T4	Tin HiFi T4	inear
 T5	QCY T5	inear
-T5 (3rd Gen)	Beyerdynamic T5 3rd Generation	
-T5p (1st Gen)	Beyerdynamic T5p	
-T70	Beyerdynamic T70	
+T5 (3rd Gen)	Beyerdynamic T5 3rd Generation	onear
+T5 True Wireless	Klipsch T5 True Wireless	inear
+T5p (1st Gen)	Beyerdynamic T5p	onear
+T70	Beyerdynamic T70	onear
 T800	Audiosense T800	inear
-T8iE Mk1	Astell & Kern T8iE Mk1	inear
+T8iE Mk1	Astell & Kern T8iE Mk1 (sample 1)	inear
+T8iE Mk1 S2	Astell & Kern T8iE Mk1 (sample 2)	inear
 Tango	Jomo Audio Tango	inear
 Taobao 3 Driver	Taobao 3 driver	inear
 Taobao 3 driver	Taobao 3 driver	inear
@@ -1081,7 +1229,7 @@ TD1	Tiandirenhe TD1	inear
 TE-D01b	AVIOT TE-D01b	inear
 TE-D01d	AVIOT TE-D01d	inear
 Tea	Mangird Tea	inear
-Teak	E-Mu Teak	
+Teak	E-Mu Teak	onear
 Ten Five	Fender Ten 5	inear
 Tenore	Zero Audio Carbo Tenore	inear
 Tequila 1	TFZ Tequila 1	inear
@@ -1092,15 +1240,18 @@ TF10	Ultimate Ears TripleFi 10	inear
 TG334	FitEar TG334 (sample 3)	inear
 TG334 S1	FitEar TG334 (sample 1)	inear
 TG334 S2	FitEar TG334 (sample 2)	inear
+The Hemp Headphone	Grado The Hemp Headphone	onear
 Thirteen 6	Fender Thirteen 6	inear
-Thror Bog Oak	Kennerton Thror Bog Oak	
+Thror Bog Oak	Kennerton Thror Bog Oak	onear
 Thummim	Metal Magic Research Thummim	inear
 Ti	Periodic Audio Ti	inear
 Ti Galaxy	TFZ Ti Galaxy	inear
-Titan	FitEar Titan	inear
+Titan	FitEar Titan (sample 1)	inear
 Titan 1	DUNU Titan 1	inear
 Titan 3	DUNU Titan 3	inear
+Titan S3	FitEar Titan (sample 2)	inear
 TM2	Fostex TM2	inear
+Tone Free	LG Tone Free	inear
 Topaz Filterless	Yinyoo Topaz (no filter)	inear
 TP10	Tripowin TP10	inear
 Track Air Plus	Libratone Track Air Plus	inear
@@ -1141,7 +1292,7 @@ TWS2000 S2	Tin HiFi TWS2000	inear
 TWS5	Edifier TWS5	inear
 TWS6	Edifier TWS6	inear
 TWS600	HIFIMAN TWS600	inear
-TYGR 300 R	Beyerdynamic TYGR 300 R	
+TYGR 300 R	Beyerdynamic TYGR 300 R	onear
 Tzar 350	Heir Audio Tzar 350	inear
 U12t	64 Audio U12t	inear
 U12t DEC14	64 Audio U12t (December 2014)	ignore
@@ -1172,9 +1323,11 @@ UERR	Ultimate Ears Reference Remastered	inear
 UM Pro 10	Westone UM Pro 10	inear
 UM Pro 20	Westone UM Pro 20	inear
 UM Pro 30	Westone UM Pro 30	inear
-UM Pro 50	Westone UM Pro 50	inear
 UM pro 50	Westone UM Pro 50	inear
-Utopia	Focal Utopia	onear
+UM Pro 50	Westone UM Pro 50	inear
+Uranus	qdc Uranus	inear
+Utopia	Focal Utopia (sample 1)	onear
+Utopia S2	Focal Utopia (sample 2)	onear
 V14 00	ThieAudio Voyager 14 (00 setting)	inear
 V14 02	ThieAudio Voyager 14 (02 setting)	inear
 V14 10	ThieAudio Voyager 14 (10 setting)	inear
@@ -1182,6 +1335,7 @@ V14 12	ThieAudio Voyager 14 (12 setting)	inear
 V2	64 Audio 1964 Ears V2	inear
 V33	Shozy V33	inear
 Valkyrie	Empire Ears Valkyrie	inear
+Valkyrie Mk2	Empire Ears Valkyrie Mk2	inear
 Vantage	Empire Ears Vantage	inear
 VC02	VSonic VC02	inear
 VE3.2	Vision Ears VE3.2 (sample 1)	inear
@@ -1203,11 +1357,11 @@ Velvet Tight	EarSonics Velvet (tight)	inear
 Velvet Warm	EarSonics Velvet (warm)	inear
 Verb	LH Labs Verb	inear
 Verite	ZMF Verite	onear
-Verite (BE2)	ZMF Verite (perforated hybid BE2 earpads)	
-Verite (Verite)	ZMF Verite (perforated Verite lambskin earpads)	
+Verite (BE2)	ZMF Verite (perforated hybid BE2 earpads)	onear
+Verite (Verite)	ZMF Verite (perforated Verite lambskin earpads)	onear
 Verite Closed	ZMF Verite Closed	onear
-Verite Closed (Auteur lambskin)	ZMF Verite Closed (Auteur lambskin earpads)	
-Verite Closed (Universe hybrid)	ZMF Verite Closed (hybrid Universe earpads)	
+Verite Closed (Auteur lambskin)	ZMF Verite Closed (Auteur lambskin earpads)	onear
+Verite Closed (Universe hybrid)	ZMF Verite Closed (hybrid Universe earpads)	onear
 Verum 1	Verum One	onear
 Vesper	Queen of Audio Vesper	inear
 Viento	Hidition Viento	inear
@@ -1216,9 +1370,12 @@ Viento Bass Mids	Hidition Viento (bass, mids)	inear
 Viento Mids	Hidition Viento (mids)	inear
 Viento-A C	Hidition Viento-A (CIEM)	inear
 Viento-B C	Hidition Viento-B (CIEM)	inear
+Viento-D C	Hidition Viento-D (CIEM)	inear
 Violet	Hidition Violet	inear
 Vista	Jaybird Vista	inear
-Voce	Dan Clark Audio Voce	
+VK4	QKZ VK4	inear
+Voce	Dan Clark Audio Voce	onear
+Volans	Astrotec Volans	inear
 VS7	VSonic VS7	inear
 VSD1S	VSonic VSD1S	inear
 VSD2S	VSonic VSD2S	inear
@@ -1232,11 +1389,12 @@ W500	AAW W500	inear
 W60	Westone W60	inear
 W80	Westone W80	inear
 W900	AAW W900	inear
-Walnut	E-Mu Walnut	
+Walnut	E-Mu Walnut	onear
 Waltz	Hidition Waltz	inear
 WF-1000XM3	Sony WF-1000XM3	inear
 WF-1000XM3 NC	Sony WF-1000XM3 NC	inear
-WH-1000XM4	Sony WH-1000XM4	
+WH-1000XM4	Sony WH-1000XM4	onear
+WH3	HiBy WH3	inear
 Witch Girl Pro	Aroma Audio Witch Girl Pro	inear
 Witch Girl S	Aroma Audio Witch Girl S	inear
 Witch Girl W12	Aroma Audio Witch Girl W12	inear
@@ -1257,6 +1415,7 @@ Z1R S4	Sony IER-Z1R (sample 4)	inear
 Z1R S5	Sony IER-Z1R (sample 5)	inear
 Z1R S6	Sony IER-Z1R (sample 6)	inear
 Z5	Sony XBA-Z5	inear
+ZAX	KZ ZAX	inear
 Zenith Black	IMR Acoustics Zenith (black)	inear
 Zenith Blue	IMR Acoustics Zenith (blue)	inear
 Zenith Gold	IMR Acoustics Zenith (gold)	inear

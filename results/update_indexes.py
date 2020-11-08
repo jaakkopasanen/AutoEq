@@ -113,11 +113,11 @@ def write_full_index():
     # Get links to Reference Audio Analyzer results
     lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018', '*'))),
-        'Reference Audio Analyzer'
+        'Reference Audio Analyzer, HDM-X'
     ))
     lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm1_harman_over-ear_2018', '*'))),
-        'Reference Audio Analyzer'
+        'Reference Audio Analyzer, HDM1'
     ))
     lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_siec_harman_in-ear_2019v2', '*'))),
@@ -153,11 +153,11 @@ def write_full_index():
     # Get links to Crinacle results
     lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'ears-711_harman_over-ear_2018', '*'))),
-        'Crinacle'
+        'Crinacle, Ears-711'
     ))
     lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*'))),
-        'Crinacle'
+        'Crinacle, GRAS 43AG-7'
     ))
     lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2', '*'))),

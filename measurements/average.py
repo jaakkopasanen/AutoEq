@@ -16,7 +16,7 @@ def average_measurements(input_dir=None, output_dir=None):
     if input_dir is None:
         raise TypeError('Input directory path is required!')
     if output_dir is None:
-        raise TypeError('Output directory path is required!')
+        output_dir = os.path.abspath(input_dir)
     input_dir = os.path.abspath(input_dir)
     output_dir = os.path.abspath(output_dir)
 

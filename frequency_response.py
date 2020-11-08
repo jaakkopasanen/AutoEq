@@ -666,19 +666,23 @@ class FrequencyResponse:
         filters = np.transpose(np.vstack([fc, Q, gain]))
         return filters, len(fc), np.max(self.fixed_band_eq)
 
-    @staticmethod
-    def write_eqapo_parametric_eq(file_path, filters):
+    def write_eqapo_parametric_eq(self, file_path, filters, preamp=None):
         """Writes EqualizerAPO Parameteric eq settings to a file."""
         file_path = os.path.abspath(file_path)
 
+        if preamp is None:
+            # Calculate preamp from the cascade frequency response
+            fr = np.zeros(self.frequency.shape)
+            for filt in filters:
+                a0, a1, a2, b0, b1, b2 = biquad.peaking(filt[0], filt[1], filt[2], fs=48000)
+                fr += biquad.digital_coeffs(self.frequency, 48000, a0, a1, a2, b0, b1, b2)
+            preamp = -np.max(fr) - 0.1 if np.max(fr) > 0 else 0.0
+
         with open(file_path, 'w', encoding='utf-8') as f:
-            f.write('\n'.join(['Filter {i}: ON {type} Fc {fc:.0f} Hz Gain {gain:.1f} dB Q {Q:.2f}'.format(
-                i=i+1,
-                type='PK',
-                fc=filters[i, 0],
-                Q=filters[i, 1],
-                gain=filters[i, 2]
-            ) for i in range(len(filters))]))
+            s = f'Preamp: {preamp:.2f} dB\n'
+            for i, filt in enumerate(filters):
+                s += f'Filter {i+1}: ON PK Fc {filt[0]:.0f} Hz Gain {filt[2]:.1f} dB Q {filt[1]:.2f}\n'
+            f.write(s)
 
     @staticmethod
     def _split_path(path):
@@ -791,7 +795,7 @@ class FrequencyResponse:
             # Filters as Markdown table
             filters = []
             for line in parametric_eq_str.split('\n'):
-                if line == '':
+                if line == '' or line.split()[0] != 'Filter':
                     continue
                 filter_type = line[line.index('ON')+3:line.index('Fc')-1]
                 if filter_type == 'PK':
@@ -866,7 +870,7 @@ class FrequencyResponse:
             # Filters as Markdown table
             filters = []
             for line in fixed_band_eq_str.split('\n'):
-                if line == '':
+                if line == '' or line.split()[0] != 'Filter':
                     continue
                 filter_type = line[line.index('ON') + 3:line.index('Fc') - 1]
                 if filter_type == 'PK':

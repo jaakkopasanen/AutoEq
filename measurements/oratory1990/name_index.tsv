@@ -37,7 +37,7 @@ Audeze iSine20	Audeze iSINE 20	inear
 Audeze LCD-1	Audeze LCD-1	onear
 Audeze LCD-2	Audeze LCD-2	onear
 Audeze LCD-2 Classic	Audeze LCD-2 Classic	onear
-Audeze LCD-2 Closed-back	Audeze LCD-2 Closed-back	onear
+Audeze LCD-2 Closed-back	Audeze LCD-2 Closed Back	onear
 Audeze LCD-2 Fazor	Audeze LCD-2 Fazor	onear
 Audeze LCD-4	Audeze LCD-4	onear
 Audeze LCD-X	Audeze LCD-X	onear
@@ -257,7 +257,7 @@ Philips SHP9500	Philips SHP9500	onear
 Philips SHS8000	Philips SHS8000	inear
 PSB M4U 8	PSB M4U 8	onear
 Quad Era-1	QUAD Era-1	onear
-Raal SR1a (preliminary)	RAAL SR1a	onear
+Raal SR1a (preliminary)	RAAL-requisite SR1a	onear
 RHA MA750	RHA MA750	ignore
 Ritmix RH-508	Ritmix RH-508	onear
 Rock Zircon	Rock Zircon	inear
@@ -310,7 +310,7 @@ Shure SE215	Shure SE215	inear
 Shure SE535	Shure SE535	inear
 Shure SE846	Shure SE846	inear
 Shure SRH1540	Shure SRH1540	onear
-Shure SRH840	Shure SRH840	onear
+Shure SRH840	Shure SRH840 (sample 1)	onear
 SoftEars Cerberus	SoftEars Cerberus	inear
 SoftEars RS10	SoftEars RS10	inear
 Sony IER-M7	Sony IER-M7	inear

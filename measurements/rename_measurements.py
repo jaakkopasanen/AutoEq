@@ -2,6 +2,7 @@
 
 import os
 import sys
+from argparse import ArgumentParser
 from glob import glob
 import shutil
 import re
@@ -80,7 +81,7 @@ def group_measurements():
         fh.write(s + '\n')
 
 
-def rename_groups():
+def rename_groups(databases=DBS):
     with open(os.path.join(DIR_PATH, 'name_groups.tsv'), 'r', encoding='utf-8') as fh:
         lines = fh.read().strip().split('\n')
 
@@ -95,7 +96,7 @@ def rename_groups():
 
     # Read name indexes and existing files for all supported measurement databases
     dbs = []
-    for db in DBS:
+    for db in databases:
         if os.path.isfile(os.path.join(DIR_PATH, db, 'name_index.tsv')):
             # Read name index
             name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db, 'name_index.tsv'))
@@ -160,7 +161,18 @@ def rename_groups():
         db['name_index'].write_tsv(os.path.join(DIR_PATH, db['name'], 'name_index.tsv'))
 
 
+def _cli():
+    arg_parser = ArgumentParser()
+    arg_parser.add_argument('--databases', type=str, required=True,
+                            help='Comma separated list of measurement database names to modify. Use "all" to include '
+                                 'all of them.')
+    args = arg_parser.parse_args()
+    if args.databases.lower() != 'all':
+        return {'databases': args.databases.split(',')}
+    return {}
+
+
 if __name__ == '__main__':
     # rename_manufacturers()
     # group_measurements()
-    rename_groups()
+    rename_groups(**_cli())
