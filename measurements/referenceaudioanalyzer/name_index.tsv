@@ -1,17 +1,17 @@
 false_name	true_name	form
 1MORE E1010 Quad Driver	1MORE Quad Driver	inear
 64 Audio N8	64 Audio N8	inear
-64 Audio N8 (m15 apex module)	64 Audio N8 M15	inear
-64 Audio N8 (m20 apex module)	64 Audio N8 M20	inear
+64 Audio N8 (m15 apex module)	64 Audio N8 (m15 Apex module)	inear
+64 Audio N8 (m20 apex module)	64 Audio N8 (m20 Apex module)	inear
 64 Audio tia Fourte	64 Audio tia Fourte	inear
 64 Audio tia Fourte Noir	64 Audio Tia Fourte Noir	inear
 64 Audio tia Trio	64 Audio tia Trio	inear
 64 Audio U12t	64 Audio U12t	inear
-64 Audio U12t (m15 apex module)	64 Audio U12t M15	inear
-64 Audio U12t (m20 apex module)	64 Audio U12t M20	inear
-64 Audio U18t	64 Audio U18t	inear
-64 Audio U18t (m15 apex module)	64 Audio U18Tzar M15	inear
-64 Audio U18t (m20 apex module)	64 Audio U18Tzar M20	inear
+64 Audio U12t (m15 apex module)	64 Audio U12t (m15 Apex module)	inear
+64 Audio U12t (m20 apex module)	64 Audio U12t (m20 Apex module)	inear
+64 Audio U18t	64 Audio U18Tzar	inear
+64 Audio U18t (m15 apex module)	64 Audio U18Tzar (m15 Apex module)	inear
+64 Audio U18t (m20 apex module)	64 Audio U18Tzar (m20 Apex module)	inear
 64 Audio U4	64 Audio U4	inear
 64 Audio U8	64 Audio U8	inear
 AAW (Advanced Acousticwerkes) A3H	AAW A3H	inear
@@ -24,6 +24,9 @@ AAW A3H	AAW A3H	inear
 AAW ASH	AAW ASH	inear
 AAW Canary	AAW Canary	inear
 AAW Halcyon	AAW Halcyon	inear
+AAW Halcyon (bass)	AAW Halcyon (bass filter)	inear
+AAW Halcyon (normal)	AAW Halcyon (norm filter)	inear
+AAW Halcyon (vocal)	AAW Halcyon (Vokal filter)	inear
 AAW Nebula ONE	AAW Nebula ONE	inear
 AAW Nightingale Planar Magnetic	AAW Nightingale	inear
 AAW Q	AAW Q	inear
@@ -285,6 +288,7 @@ BGVP DM6	BGVP DM6	inear
 BGVP DM7	BGVP DM7	inear
 BGVP DMG	BGVP DMG	inear
 BGVP DMS	BGVP DMS	inear
+BGVP DS1 Pro	BGVP DS1 Pro	inear
 BGVP HIFI ArtMagic VG4	BGVP VG4	inear
 BGVP Q2	BGVP Q2	inear
 BGVP Q2 (bluetooth)	BGVP Q2 (wireless)	inear
@@ -344,6 +348,7 @@ Bowers & Wilkins PX7 (wire connection noise cancelation auto)	Bowers & Wilkins P
 Bowers & Wilkins PX7 (wire connection noise cancelation hi)	Bowers & Wilkins PX7 (wired, ANC hi)	onear
 Bowers & Wilkins PX7 (wire connection noise cancelation off)	Bowers & Wilkins PX7 (wired, ANC off)	onear
 BQEYZ BQ3	BQEYZ BQ3	inear
+BQEYZ K1	BQEYZ K1	inear
 BQEYZ KB100	BQEYZ KB100	inear
 BQEYZ Spring 1	BQEYZ Spring 1	inear
 BQEYZ Spring 2	BQEYZ Spring 2	inear
@@ -428,6 +433,7 @@ Dunu Titan 6	DUNU Titan 6	inear
 Earsonics ES3	EarSonics ES3	inear
 Earsonics SM3v2	EarSonics SM3 v2	inear
 Earsonics SM64	EarSonics SM64	inear
+Earsonics Velvet	EarSonics Velvet	inear
 Echo TDS 16	Echo TDS 16	onear
 Elecom EHP CL430	ELECOM EHP CL430	onear
 Electronica TDS-5m	Electronica TDS-5m	onear
@@ -544,7 +550,13 @@ Flare Audio Flares Gold (cone tips)	Flare Audio Flares Gold (cone tips)	inear
 Flare Audio Flares Gold (ordinary tips)	Flare Audio Flares Gold (ordinary tips)	inear
 Flares Gold	Flare Audio Flares Gold	inear
 FLC 8D	FLC Technology 8D	inear
+FLC 8d	FLC Technology 8D	inear
+FLC 8N	FLC Technology 8N	inear
 FLC 8S	FLC Technology 8S	inear
+FLC Technology 8D (black)	FLC Technology 8D (black)	inear
+FLC Technology 8D (blue)	FLC Technology 8D (blue)	inear
+FLC Technology 8D (gold)	FLC Technology 8D (gold)	inear
+FLC Technology 8D (green)	FLC Technology 8D (green)	inear
 Focal Clear	Focal Clear	onear
 Focal Elear	Focal Elear	onear
 Focal Elegia	Focal Elegia	onear
@@ -584,8 +596,8 @@ Gerkules HDP DJ-PRO M1001	Gerkules HDP DJ-PRO M1001	onear
 German Maestro GMP 240	German Maestro GMP 240	onear
 German Maestro GMP 250	German Maestro GMP 250	onear
 German Maestro GMP 400	German Maestro GMP 400	onear
-German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
 German Maestro GMP 450 PRO	German Maestro GMP 450 PRO	onear
+German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
 German Maestro GMP 8.300 D	German Maestro GMP 8.300 D	onear
 German Maestro GMP 8.35 D	German Maestro GMP 8.35 D	onear
 Grado eGrado	Grado eGrado	onear
@@ -724,6 +736,7 @@ Kennerton Vali 2019	Kennerton Vali 2019	onear
 Kennerton Wodan	Kennerton Wodan	onear
 Kenwood KH-K1000	Kenwood KH-K1000	onear
 Kinera BD005	Kinera BD005	inear
+Kinera Freya	Kinera Freya	inear
 Kinera IDUN	Kinera IDUN	inear
 Kinera Odin	Kinera Odin	inear
 Klipsch Heritage HP-3	Klipsch HP3	onear
@@ -776,6 +789,7 @@ Lime Ears PSI (on (universal))	Lime Ears PSI (switch on)	inear
 LongLife E-107	LongLife E-107	inear
 Lypertek TEVI	Lypertek Tevi	inear
 LZ Hi-Fi Audio A4	LZ Hi-Fi Audio A4	inear
+LZ Hi-Fi Audio A6 mini	LZ Hi-Fi Audio A6 Mini	inear
 M-Audio IE 40	M-Audio IE-40	inear
 M-Audio IE-30	M-Audio IE-30	inear
 Magaosi DT6	Magaosi DT6	inear
@@ -845,8 +859,8 @@ Musical Fidelity EB-50	Musical Fidelity EB-50	inear
 MyST Gatling	MyST Gatling	onear
 MyST Izo-OS	MyST Izo-OS	onear
 MyST IzoEM-1		ignore
-MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30		ignore
+MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
@@ -937,6 +951,8 @@ PSB M4U 1	PSB M4U 1	onear
 Puretone Micro Monitor Classic 3	Puretone Micro Monitor Classic 3	inear
 QCY T1C	QCY T1C	inear
 QCY T5	QCY T5	inear
+QCY T5Pro	QCY T5 Pro	inear
+QDC Neptune	qdc Neptune	inear
 QKZ X36M	QKZ X36M	inear
 Quad ERA-1	QUAD Era-1	onear
 QUAD Era-1 (hybride cushions)	QUAD Era-1 (hybrid earpads)	onear
@@ -1147,6 +1163,7 @@ Takstar PRO 82	Takstar Pro 80	onear
 TANCHJIM Blues	Tanchjim Blues	inear
 TANCHJIM Oxygen	Tanchjim Oxygen	inear
 Tansio Mirai TSMR-4 Pro	Tansio Mirai TSMR-4 Pro	inear
+Tansio Mirai TSMR8 Space	Tansio Mirai TSMR-8 Space	inear
 TDK BA-200	TDK BA200	inear
 Technics RP-F880	Technics RP-F880	onear
 Tecsun Wood Headphones	Tecsun Caogen	onear
@@ -1174,6 +1191,7 @@ TFZ Series 2	TFZ Series 2	inear
 TFZ Series 3s	TFZ Series 3S	inear
 TFZ Series 4	TFZ Series 4	inear
 TFZ Series 5S	TFZ Series 5S	inear
+TFZ Series 7	TFZ Series 7	inear
 TFZ T2 Galaxy	TFZ T2 Galaxy	inear
 TFZ X1	TFZ X1	inear
 TFZ X1e	TFZ X1e	inear
@@ -1185,6 +1203,7 @@ Tin HiFi T2 Pro	Tin HiFi T2 Pro	inear
 Tin HiFi T3	Tin HiFi T3	inear
 Tin HiFi T4	Tin HiFi T4	inear
 Trinity Audio ICARUS III	Trinity Audio ICARUS III	inear
+TY Hi-Z G3	TY Hi-Z G3	inear
 Ultimate Ears super.fi 5 Pro	Ultimate Ears Super.fi 5 Pro	inear
 Ultrasone DJ 1	Ultrasone DJ 1	onear
 Ultrasone DJ 1 Pro	Ultrasone DJ 1 Pro	onear
@@ -1245,8 +1264,8 @@ Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear

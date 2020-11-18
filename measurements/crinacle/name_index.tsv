@@ -25,6 +25,9 @@ false_name	true_name	form
 4SS	qdc 4SS	inear
 5S	TFZ 5S	inear
 5SH	qdc 5SH	inear
+64 Audio N8 M15	64 Audio N8 (m15 Apex module)	inear
+64 Audio N8 M15 (CIEM)	64 Audio N8 (CIEM, m15 Apex module)	inear
+64 Audio Nio M15	64 Audio Nio (m15 Apex module)	inear
 700	Bose Noise Cancelling Headphones 700	onear
 747	Advanced 747	inear
 747 NC	Advanced 747 NC	inear
@@ -53,7 +56,7 @@ A40 TR	ASTRO Gaming A40 TR	onear
 A4t	64 Audio A4t	inear
 A6t	64 Audio A6t	inear
 A6t DEC14	64 Audio A6	inear
-A6t M20	64 Audio A6t M20	inear
+A6t M20	64 Audio A6t (m20 Apex module)	inear
 A71	Fidue A71	inear
 A8	Moondrop A8	inear
 A8 Cardas	Cardas A8	inear
@@ -257,7 +260,7 @@ Cupid S3	oBravo Cupid (sample 3)	inear
 Cupid S4	oBravo Cupid (sample 4)	inear
 CX9	Pioneer SE-CX9	inear
 D8000	Final Audio D8000	onear
-D8000 Pro	Final Audio D8000 Pro	onear
+D8000 Pro	Final Audio D8000 Pro Edition	onear
 Daiso	Daiso $2 earphones	inear
 Dawn S2	Fearless Audio Dawn (sample 2)	inear
 Dawn S3	Fearless Audio Dawn (sample 3)	inear
@@ -608,7 +611,7 @@ IE80 Max	Sennheiser IE 80 (max)	inear
 IE80 Min	Sennheiser IE 80 (min)	inear
 IE800	Sennheiser IE 800	inear
 IE800S	Sennheiser IE 800 S	inear
-IE80S	Sennheiser IE 80 S	inear
+IE80S	Sennheiser IE 80 S (min)	inear
 IE80S Half	Sennheiser IE 80 S (half)	inear
 IE80S Max	Sennheiser IE 80 S (max)	inear
 IE80S max	Sennheiser IE 80 S (max)	inear
@@ -782,8 +785,8 @@ M5 S3	Fir Audio M5 (sample 3)	inear
 M5 S5	Fir Audio M5 (sample 4)	inear
 M5 S6	Fir Audio M5 (sample 5)	inear
 M5 S7	Fir Audio M5 (sample 7)	inear
-M50x	Audio-Technica ATH-M50x (sample 1)	onear
 M50X	Audio-Technica ATH-M50x	onear
+M50x	Audio-Technica ATH-M50x (sample 1)	onear
 M50x S2	Audio-Technica ATH-M50x (sample 2)	onear
 M50xBT	Audio-Technica ATH-M50xBT	onear
 M51D	Advanced M51D	inear
@@ -903,20 +906,20 @@ N8 M15 C S2	64 Audio N8 M15 (CIEM) (sample 2)	inear
 N8 M15 C S3	64 Audio N8 M15 (CIEM) (sample 3)	inear
 N8 M15 C S4	64 Audio N8 M15 (CIEM) (sample 4)	inear
 N8 M15 C S5	64 Audio N8 M15 (CIEM) (sample 5)	inear
-N8 M15 pre-RMA	64 Audio N8 M15 pre-RMA	inear
-N8 M15 RMA	64 Audio N8 M15 RMA	inear
+N8 M15 pre-RMA	64 Audio N8 (m15 Apex module, pre-RMA)	ignore
+N8 M15 RMA	64 Audio N8 (m15 Apex module, RMA)	ignore
 N8 M15 S3	64 Audio N8 M15 (sample 3)	inear
 N8 M15 S4	64 Audio N8 M15 (sample 4)	inear
 N8 M15MA	64 Audio N8 M15MA	inear
-N8 M20 C	64 Audio N8 M20 (CIEM)	inear
+N8 M20 C	64 Audio N8 (CIEM, m20 Apex module)	inear
 N8 Mod	64 Audio N8 (modded)	inear
-N8 Mod M20	64 Audio N8 M20 (modded)	inear
+N8 Mod M20	64 Audio N8 (m20 Apex module, modded)	inear
 N8 Mod None	64 Audio N8 (modded)	ignore
 N8 None C	64 Audio N8 (CIEM) (sample 1)	inear
 N8 None C S2	64 Audio N8 (CIEM) (sample 2)	inear
 N8 None C S3	64 Audio N8 (CIEM) (sample 3)	inear
 N8 Vent Blocked	64 Audio N8 (vent blocked)	inear
-N8t M15	64 Audio N8t M15	inear
+N8t M15	64 Audio N8t (m15 Apex module)	inear
 Nanna	Kinera Nanna	inear
 NDH 20	Neumann NDH20	onear
 NDH20	Neumann NDH20	onear
@@ -1302,7 +1305,7 @@ U12t L DEC17		ignore
 U18Tzar	64 Audio U18Tzar (sample 1)	inear
 U18Tzar DEC14	64 Audio U18Tzar (December 2014)	inear
 U18Tzar DEC17	64 Audio U18Tzar (December 2017)	inear
-U18Tzar M20	64 Audio U18Tzar M20	inear
+U18Tzar M20	64 Audio U18Tzar (m20 Apex module)	inear
 U18Tzar S2	64 Audio U18Tzar (sample 2)	inear
 U2	Stealthsonics U2	inear
 U4	Stealthsonics U4	inear

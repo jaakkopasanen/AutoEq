@@ -209,8 +209,15 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
 
         # Download and parse image
         results = self.download_images(url, item, image_dir)
+        if not len(results):
+            print(f'Graph image for "{item.true_name}" could not be downloaded from "{url}". Perhaps it hasn\'t been '
+                  f'published yet.')
         for result in results:
             im = Image.open(result['image_path'])
+            if im is None:
+                print(f'Could not open image in "{result["image_path"]}"')
+                return
+
             name = result['name']
             mod = self.name_index.find(true_name=name)
             # Get the form from name index if an entry already exists
@@ -221,13 +228,6 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
             out_dir = os.path.join(data_dir, form, result['rig'], name)
             os.makedirs(out_dir, exist_ok=True)
 
-            if im is None:
-                try:
-                    os.rmdir(out_dir)
-                except OSError:
-                    pass
-                return
-
             # Save inspection images
             inspection.save(os.path.join(inspection_dir, 'parse', f'{name}.png'))
             fig, ax = fr.plot_graph(show=False, file_path=os.path.join(inspection_dir, 'fr', f'{name}.png'))
@@ -235,3 +235,4 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
 
             # Write to CSV
             fr.write_to_csv(os.path.join(out_dir, f'{name}.csv'))
+            print(f'Wrote CSV to "{os.path.join(out_dir, f"{name}.csv")}"')

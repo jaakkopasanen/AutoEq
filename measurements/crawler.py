@@ -252,6 +252,7 @@ class Crawler(ABC):
                     # Name index contains the entry
                     if not self.existing.find(true_name=item.true_name):
                         # Doesn't exist already
+                        print(f'Didn\'t find {item.true_name} in existing')
                         self.process(item, url)
 
                 else:

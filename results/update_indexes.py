@@ -253,9 +253,12 @@ def write_ranking_table():
 
     onear_rows = []
     # Over-ear
-    files = list(glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018', '*', '*.csv')))
-    files += list(glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*', '*.csv')))
-    for fp in files:
+    files = dict()
+    for fp in glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*', '*.csv')):
+        files[os.path.split(fp)[1]] = fp
+    for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018', '*', '*.csv')):
+        files[os.path.split(fp)[1]] = fp
+    for fp in files.values():
         row = ranking_row(fp, harman_overear, 'onear')
         if row:
             onear_rows.append(row)
@@ -265,9 +268,12 @@ def write_ranking_table():
 
     inear_rows = []
     # In-ear
-    files = list(glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2', '*', '*.csv')))
-    files += list(glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2', '*', '*.csv')))
-    for fp in files:
+    files = dict()
+    for fp in glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2', '*', '*.csv')):
+        files[os.path.split(fp)[1]] = fp
+    for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2', '*', '*.csv')):
+        files[os.path.split(fp)[1]] = fp
+    for fp in files.values():
         row = ranking_row(fp, harman_inear, 'inear')
         if row:
             inear_rows.append(row)
