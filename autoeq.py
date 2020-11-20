@@ -8,7 +8,7 @@ from time import time
 import numpy as np
 from constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_MAX_GAIN, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, \
-    DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q
+    DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, PREAMP_HEADROOM
 from frequency_response import FrequencyResponse
 
 
@@ -80,7 +80,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
             fr.write_to_csv(input_file_path)
 
         # Process and equalize
-        peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gains = fr.process(
+        peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gain = fr.process(
             compensation=compensation,
             min_mean_error=True,
             equalize=equalize,
@@ -113,12 +113,16 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                 fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True)
                 if parametric_eq:
                     # Write ParametricEq settings to file
-                    fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), peq_filters)
+                    fr.write_eqapo_parametric_eq(
+                        output_file_path.replace('.csv', ' ParametricEQ.txt'), peq_filters,
+                        preamp=-(peq_max_gains[-1] + PREAMP_HEADROOM))
 
                 # Write fixed band eq
                 if fixed_band_eq or ten_band_eq:
                     # Write fixed band eq settings to file
-                    fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' FixedBandEQ.txt'), fbeq_filters)
+                    fr.write_eqapo_parametric_eq(
+                        output_file_path.replace('.csv', ' FixedBandEQ.txt'), fbeq_filters,
+                        preamp=-(fbeq_max_gain + PREAMP_HEADROOM))
 
                 # Write impulse response as WAV
                 if convolution_eq:

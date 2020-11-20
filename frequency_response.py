@@ -25,7 +25,7 @@ from constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GA
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_ITERATIONS, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
-    HARMAN_ONEAR_PREFERENCE_FREQUENCIES
+    HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM
 
 
 class FrequencyResponse:
@@ -251,7 +251,7 @@ class FrequencyResponse:
         f = np.sort(np.unique(f.astype('int')))
         fr.interpolate(f=f)
         if normalize:
-            fr.raw -= np.max(fr.raw) + 0.5
+            fr.raw -= np.max(fr.raw) + PREAMP_HEADROOM
             if fr.raw[0] > 0.0:
                 # Prevent bass boost below lowest frequency
                 fr.raw[0] = 0.0
@@ -674,12 +674,12 @@ class FrequencyResponse:
             # Calculate preamp from the cascade frequency response
             fr = np.zeros(self.frequency.shape)
             for filt in filters:
-                a0, a1, a2, b0, b1, b2 = biquad.peaking(filt[0], filt[1], filt[2], fs=48000)
-                fr += biquad.digital_coeffs(self.frequency, 48000, a0, a1, a2, b0, b1, b2)
-            preamp = -np.max(fr) - 0.1 if np.max(fr) > 0 else 0.0
+                a0, a1, a2, b0, b1, b2 = biquad.peaking(filt[0], filt[1], filt[2], fs=44100)
+                fr += biquad.digital_coeffs(self.frequency, 44100, a0, a1, a2, b0, b1, b2)
+            preamp = np.min([0.0, -(np.max(fr) + PREAMP_HEADROOM)])
 
         with open(file_path, 'w', encoding='utf-8') as f:
-            s = f'Preamp: {preamp:.2f} dB\n'
+            s = f'Preamp: {preamp:.1f} dB\n'
             for i, filt in enumerate(filters):
                 s += f'Filter {i+1}: ON PK Fc {filt[0]:.0f} Hz Gain {filt[2]:.1f} dB Q {filt[1]:.2f}\n'
             f.write(s)
@@ -711,7 +711,7 @@ class FrequencyResponse:
         Args:
             fs: Sampling frequency in Hz
             f_res: Frequency resolution as sampling interval. 20 would result in sampling at 0 Hz, 20 Hz, 40 Hz, ...
-            normalize: Normalize gain to -0.5 dB
+            normalize: Normalize gain to -0.2 dB
 
         Returns:
             Minimum phase impulse response
@@ -735,7 +735,7 @@ class FrequencyResponse:
         if normalize:
             # Reduce by max gain to avoid clipping with 1 dB of headroom
             fr.raw -= np.max(fr.raw)
-            fr.raw -= 0.5
+            fr.raw -= PREAMP_HEADROOM
         # Minimum phase transformation by scipy's homomorphic method halves dB gain
         fr.raw *= 2
         # Convert amplitude to linear scale
@@ -763,7 +763,7 @@ class FrequencyResponse:
         if normalize:
             # Reduce by max gain to avoid clipping with 1 dB of headroom
             fr.raw -= np.max(fr.raw)
-            fr.raw -= 0.5
+            fr.raw -= PREAMP_HEADROOM
         # Convert amplitude to linear scale
         fr.raw = 10**(fr.raw / 20)
         # Calculate response
@@ -786,7 +786,6 @@ class FrequencyResponse:
         # Add parametric EQ settings
         parametric_eq_path = os.path.join(dir_path, model + ' ParametricEQ.txt')
         if os.path.isfile(parametric_eq_path) and self.parametric_eq is not None and len(self.parametric_eq):
-            max_gains = [x + 0.5 for x in max_gains]
 
             # Read Parametric eq
             with open(parametric_eq_path, 'r', encoding='utf-8') as f:
@@ -821,38 +820,36 @@ class FrequencyResponse:
                     n.append(n[-1] + x)
                 del n[0]
                 if len(max_filters) > 3:
-                    max_filters_str = ', '.join([str(x) for x in n[:-2]]) + ' or {}'.format(n[-2])
+                    max_filters_str = ', '.join([str(x) for x in n[:-2]]) + f' or {n[-2]}'
                 if len(max_filters) == 3:
-                    max_filters_str = '{n0} or {n1}'.format(n0=n[0], n1=n[1])
+                    max_filters_str = f'{n[0]} or {n[1]}'
                 if len(max_filters) == 2:
                     max_filters_str = str(n[0])
-                max_filters_str = 'The first {} filters can be used independently.'.format(max_filters_str)
+                max_filters_str = f'The first {max_filters_str} filters can be used independently.'
 
             preamp_str = ''
             if type(max_gains) == list and len(max_gains) > 1:
-                max_gains = [x + 0.1 for x in max_gains]
                 if len(max_gains) > 3:
-                    _s = 'When using independent subset of filters, apply preamp of {}, respectively.'
-                    preamp_str = ', '.join(['-{:.1f}dB'.format(x) for x in max_gains[:-2]])
-                    preamp_str += ' or -{:.1f}dB'.format(max_gains[-2])
-                if len(max_gains) == 3:
-                    _s = 'When using independent subset of filters, apply preamp of {}, respectively.'
-                    preamp_str = '-{g0:.1f}dB or -{g1:.1f}dB'.format(g0=max_gains[0], g1=max_gains[1])
-                if len(max_gains) == 2:
-                    _s = 'When using independent subset of filters, apply preamp of **{}**.'
-                    preamp_str = '-{:.1f}dB'.format(max_gains[0])
-                preamp_str = _s.format(preamp_str)
+                    strs = f', '.join([f'{-(x + PREAMP_HEADROOM):.1f} dB' for x in max_gains[:-2]]) + f' or -{max_gains[-2]:.1f} dB'
+                    preamp_str = f'When using independent subset of filters, apply preamp of {strs}, respectively.'
+                elif len(max_gains) == 3:
+                    preamp_str = f'When using independent subset of filters, apply preamp of ' \
+                                 f'{-(max_gains[0] + PREAMP_HEADROOM):.1f} dB ' \
+                                 f'or {-(max_gains[1] + PREAMP_HEADROOM):.1f} dB, respectively.'
+                elif len(max_gains) == 2:
+                    preamp_str = f'When using independent subset of filters, apply preamp of ' \
+                                 f'**{-(max_gains[0] + PREAMP_HEADROOM):.1f} dB**.'
 
             s += '''
             ### Parametric EQs
-            In case of using parametric equalizer, apply preamp of **-{preamp:.1f}dB** and build filters manually
+            In case of using parametric equalizer, apply preamp of **{preamp:.1f}dB** and build filters manually
             with these parameters. {max_filters_str}
             {preamp_str}
 
             {filters_table}
             '''.format(
                 model=model,
-                preamp=max_gains[-1],
+                preamp=-(max_gains[-1] + PREAMP_HEADROOM),
                 max_filters_str=max_filters_str,
                 preamp_str=preamp_str,
                 filters_table=filters_table_str
@@ -861,7 +858,7 @@ class FrequencyResponse:
         # Add fixed band eq
         fixed_band_eq_path = os.path.join(dir_path, model + ' FixedBandEQ.txt')
         if os.path.isfile(fixed_band_eq_path) and self.fixed_band_eq is not None and len(self.fixed_band_eq):
-            preamp = np.min([0.0, float(-np.max(self.fixed_band_eq))]) - 0.5
+            preamp = np.min([0.0, -np.max(self.fixed_band_eq) - PREAMP_HEADROOM])
 
             # Read Parametric eq
             with open(fixed_band_eq_path, 'r', encoding='utf-8') as f:
@@ -1644,7 +1641,7 @@ class FrequencyResponse:
             treble_f_upper=12000
         )
 
-        peq_filters = n_peq_filters = peq_max_gains = fbeq_filters = n_fbeq_filters = nfbeq_max_gains = None
+        peq_filters = n_peq_filters = peq_max_gains = fbeq_filters = n_fbeq_filters = fbeq_max_gains = None
         # Equalize
         if equalize:
             self.equalize(
@@ -1659,6 +1656,6 @@ class FrequencyResponse:
                 # Get the filters
                 peq_filters, n_peq_filters, peq_max_gains = self.optimize_parametric_eq(max_filters=max_filters, fs=fs)
             if fixed_band_eq:
-                fbeq_filters, n_fbeq_filters, nfbeq_max_gains = self.optimize_fixed_band_eq(fc=fc, q=q, fs=fs)
+                fbeq_filters, n_fbeq_filters, fbeq_max_gains = self.optimize_fixed_band_eq(fc=fc, q=q, fs=fs)
 
-        return peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, nfbeq_max_gains
+        return peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gains
