@@ -23,8 +23,8 @@ def limited_slope_plots(fr, limit):
     notch_inds, notch_props = scipy.signal.find_peaks(-y, prominence=1)  # TODO: this affects which regions are protected
 
     # Find backward start index
-    backward_start = find_backward_start(y, peak_inds, notch_inds)
-    backward_start = 0
+    backward_start = find_backward_start(y, peak_inds, notch_inds)  # TODO: backward start
+    #backward_start = 0
 
     # Find forward and backward limitations
     # limited_forward is y but with slopes limited when traversing left to right
@@ -57,7 +57,7 @@ def limited_slope_plots(fr, limit):
                     alpha=0.1)
     ax.scatter(x[peak_inds], y[peak_inds], color='red')
     ax.scatter(x[notch_inds], y[notch_inds], color='blue')
-    ax.scatter(x[len(y) - backward_start - 1], y[len(y) - backward_start - 1], 300, marker='X', label='Backward start',
+    ax.scatter(x[backward_start], y[backward_start], 300, marker='X', label='Backward start',
                color='magenta', alpha=0.4)
     ax.legend()
     ax.set_xlim([300, 20000])
@@ -79,7 +79,9 @@ def limited_backward_slope(x, y, limit, start_index=0, peak_inds=None):
             mask: Boolean mask for clipped indexes
             regions: Clipped regions, one per row, 1st column is the start index, 2nd column is the end index (exclusive)
     """
-    peak_inds = len(x) - peak_inds - 1
+    start_index = len(x) - start_index - 1
+    if peak_inds is not None:
+        peak_inds = len(x) - peak_inds - 1
     limited_backward, clipped_backward, regions_backward = limited_forward_slope(
         x, np.flip(y), limit, start_index=start_index, peak_inds=peak_inds)
     limited_backward = np.flip(limited_backward)
@@ -96,6 +98,7 @@ def limited_forward_slope(x, y, limit, start_index=0, peak_inds=None):
         y: amplitudes
         limit: maximum slope in dB / oct
         start_index: Index where to start traversing, no limitations apply before this
+        peak_inds: Peak indexes. Regions will require to touch one of these if given.
 
     Returns:
         limited: Limited curve
@@ -118,7 +121,8 @@ def limited_forward_slope(x, y, limit, start_index=0, peak_inds=None):
         # Calculate slope and local limit
         slope = log_log_gradient(x[i], x[i - 1], y[i], limited[-1])
         # Local limit is 25% of the limit between 8 kHz and 10 kHz
-        local_limit = limit / 4 if 8000 <= x[i] <= 10000 else limit
+        # TODO: limit 9 kHz notch 8 kHz to 11 kHz?
+        local_limit = limit / 4 if 8000 <= x[i] <= 11500 else limit
 
         if slope > local_limit:
             # Slope between the two samples is greater than the local maximum slope, clip to the max
