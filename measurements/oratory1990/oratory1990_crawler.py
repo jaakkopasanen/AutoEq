@@ -71,6 +71,9 @@ class Oratory1990Crawler(Crawler):
             if false_name not in urls:
                 urls[false_name] = url
 
+        # Manual additions which have not been added to the list yet
+        urls['Avantone Planar'] = 'https://www.dropbox.com/s/o867ox65g124mp1/Avantone%20Planar.pdf?dl=1'
+
         return urls
 
     @staticmethod

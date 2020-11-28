@@ -35,8 +35,7 @@ def limited_slope_plots(fr, limit):
     limited_backward, clipped_backward, regions_backward = limited_backward_slope(
         x, y, limit, start_index=backward_start, peak_inds=peak_inds)
 
-    # TODO: Find notches which have backward region on left side, forward region on right side and are lower in level than adjacent notches
-
+    # TODO: Find notches which are lower in level than adjacent notches
     # TODO: Set detected notches as slope clipping free zones up to levels of adjacent notches
 
     # Forward and backward limited curves are combined with min function
@@ -60,9 +59,9 @@ def limited_slope_plots(fr, limit):
     ax.scatter(x[backward_start], y[backward_start], 300, marker='X', label='Backward start',
                color='magenta', alpha=0.4)
     ax.legend()
-    ax.set_xlim([300, 20000])
+    #ax.set_xlim([300, 20000])
 
-    return fig, ax
+    return fig, ax, limited
 
 
 def limited_backward_slope(x, y, limit, start_index=0, peak_inds=None):
