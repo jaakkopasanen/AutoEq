@@ -901,16 +901,16 @@ N5005 Reference	AKG N5005 (reference)	inear
 N5005eference	AKG N5005 Reference	inear
 N8 C S6	64 Audio N8 (CIEM) (sample 6)	inear
 N8 DD disabled	64 Audio N8 (dd disabled)	inear
-N8 M15	64 Audio N8 M15 (sample 1)	inear
-N8 M15 C S2	64 Audio N8 M15 (CIEM) (sample 2)	inear
-N8 M15 C S3	64 Audio N8 M15 (CIEM) (sample 3)	inear
-N8 M15 C S4	64 Audio N8 M15 (CIEM) (sample 4)	inear
-N8 M15 C S5	64 Audio N8 M15 (CIEM) (sample 5)	inear
+N8 M15	64 Audio N8 (m15 Apex module) (sample 1)	inear
+N8 M15 C S2	64 Audio N8 (m15 Apex module) (CIEM) (sample 2)	inear
+N8 M15 C S3	64 Audio N8 (m15 Apex module) (CIEM) (sample 3)	inear
+N8 M15 C S4	64 Audio N8 (m15 Apex module) (CIEM) (sample 4)	inear
+N8 M15 C S5	64 Audio N8 (m15 Apex module) (CIEM) (sample 5)	inear
 N8 M15 pre-RMA	64 Audio N8 (m15 Apex module, pre-RMA)	ignore
 N8 M15 RMA	64 Audio N8 (m15 Apex module, RMA)	ignore
-N8 M15 S3	64 Audio N8 M15 (sample 3)	inear
-N8 M15 S4	64 Audio N8 M15 (sample 4)	inear
-N8 M15MA	64 Audio N8 M15MA	inear
+N8 M15 S3	64 Audio N8 (m15 Apex module) (sample 3)	inear
+N8 M15 S4	64 Audio N8 (m15 Apex module) (sample 4)	inear
+N8 M15MA	64 Audio N8 M15MA	ignore
 N8 M20 C	64 Audio N8 (CIEM, m20 Apex module)	inear
 N8 Mod	64 Audio N8 (modded)	inear
 N8 Mod M20	64 Audio N8 (m20 Apex module, modded)	inear
@@ -930,10 +930,10 @@ nerva X	HYLA Nerva X	inear
 New Primacy	Oriveti New Primacy	inear
 NightHawk	AudioQuest NightHawk	onear
 Nightingale	AAW Nightingale	inear
-Nio M15	64 Audio Nio M15 (sample 1)	inear
+Nio M15	64 Audio Nio (m15 Apex module) (sample 1)	inear
 Nio MX	64 Audio Nio (mX module) (sample 1)	inear
-Nio S2 M15	64 Audio Nio M15 (sample 2)	inear
-Nio S2 M20	64 Audio Nio M20 (sample 2)	inear
+Nio S2 M15	64 Audio Nio (m15 Apex module) (sample 2)	inear
+Nio S2 M20	64 Audio Nio (m20 Apex module) (sample 2)	inear
 Nio S2 MX	64 Audio Nio (mX module) (sample 2)	inear
 NM2 Plus	NF Audio NM2+	inear
 No.3	TFZ No.3	inear

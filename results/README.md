@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 3126 headphone models covered but if your headphone is missing you can create settings for
+This list has 3123 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -31,8 +31,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [64 Audio 1964 Ears V2](./crinacle/harman_in-ear_2019v2/64%20Audio%201964%20Ears%20V2)
 - [64 Audio A12t](./crinacle/harman_in-ear_2019v2/64%20Audio%20A12t)
 - [64 Audio A12t (CIEM)](./crinacle/harman_in-ear_2019v2/64%20Audio%20A12t%20(CIEM))
-- [64 Audio A12t M15](./oratory1990/harman_in-ear_2019v2/64%20Audio%20A12t%20M15)
-- [64 Audio A12t M20](./oratory1990/harman_in-ear_2019v2/64%20Audio%20A12t%20M20)
+- [64 Audio A12t (m15 Apex module)](./oratory1990/harman_in-ear_2019v2/64%20Audio%20A12t%20(m15%20Apex%20module))
+- [64 Audio A12t (m20 Apex module)](./oratory1990/harman_in-ear_2019v2/64%20Audio%20A12t%20(m20%20Apex%20module))
 - [64 Audio A18s (CIEM)](./crinacle/harman_in-ear_2019v2/64%20Audio%20A18s%20(CIEM))
 - [64 Audio A18s (universal)](./crinacle/harman_in-ear_2019v2/64%20Audio%20A18s%20(universal))
 - [64 Audio A2e](./crinacle/harman_in-ear_2019v2/64%20Audio%20A2e)
@@ -52,8 +52,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [64 Audio N8 (vent blocked)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(vent%20blocked))
 - [64 Audio N8t (m15 Apex module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8t%20(m15%20Apex%20module))
 - [64 Audio Nio (m15 Apex module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(m15%20Apex%20module))
+- [64 Audio Nio (m20 Apex module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(m20%20Apex%20module)%20(sample%202))
 - [64 Audio Nio (mX module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(mX%20module))
-- [64 Audio Nio M20](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20M20%20(sample%202))
 - [64 Audio Tia Fourte](./crinacle/harman_in-ear_2019v2/64%20Audio%20Tia%20Fourte)
 - [64 Audio Tia Fourte Noir](./crinacle/harman_in-ear_2019v2/64%20Audio%20Tia%20Fourte%20Noir)
 - [64 Audio tia Trio](./crinacle/harman_in-ear_2019v2/64%20Audio%20tia%20Trio%20(sample%202))

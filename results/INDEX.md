@@ -26,8 +26,8 @@ from the same source.
 - [64 Audio A12t (CIEM) (sample 1)](./crinacle/harman_in-ear_2019v2/64%20Audio%20A12t%20(CIEM)%20(sample%201)) by Crinacle
 - [64 Audio A12t (CIEM) (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20A12t%20(CIEM)%20(sample%202)) by Crinacle
 - [64 Audio A12t (CIEM)](./crinacle/harman_in-ear_2019v2/64%20Audio%20A12t%20(CIEM)) by Crinacle
-- [64 Audio A12t M15](./oratory1990/harman_in-ear_2019v2/64%20Audio%20A12t%20M15) by oratory1990
-- [64 Audio A12t M20](./oratory1990/harman_in-ear_2019v2/64%20Audio%20A12t%20M20) by oratory1990
+- [64 Audio A12t (m15 Apex module)](./oratory1990/harman_in-ear_2019v2/64%20Audio%20A12t%20(m15%20Apex%20module)) by oratory1990
+- [64 Audio A12t (m20 Apex module)](./oratory1990/harman_in-ear_2019v2/64%20Audio%20A12t%20(m20%20Apex%20module)) by oratory1990
 - [64 Audio A12t](./crinacle/harman_in-ear_2019v2/64%20Audio%20A12t) by Crinacle
 - [64 Audio A18s (CIEM)](./crinacle/harman_in-ear_2019v2/64%20Audio%20A18s%20(CIEM)) by Crinacle
 - [64 Audio A18s (universal) (sample 1)](./crinacle/harman_in-ear_2019v2/64%20Audio%20A18s%20(universal)%20(sample%201)) by Crinacle
@@ -46,28 +46,28 @@ from the same source.
 - [64 Audio N8 (CIEM, m15 Apex module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(CIEM,%20m15%20Apex%20module)) by Crinacle
 - [64 Audio N8 (CIEM, m20 Apex module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(CIEM,%20m20%20Apex%20module)) by Crinacle
 - [64 Audio N8 (dd disabled)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(dd%20disabled)) by Crinacle
+- [64 Audio N8 (m15 Apex module) (CIEM) (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(m15%20Apex%20module)%20(CIEM)%20(sample%202)) by Crinacle
+- [64 Audio N8 (m15 Apex module) (CIEM) (sample 3)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(m15%20Apex%20module)%20(CIEM)%20(sample%203)) by Crinacle
+- [64 Audio N8 (m15 Apex module) (CIEM) (sample 4)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(m15%20Apex%20module)%20(CIEM)%20(sample%204)) by Crinacle
+- [64 Audio N8 (m15 Apex module) (CIEM) (sample 5)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(m15%20Apex%20module)%20(CIEM)%20(sample%205)) by Crinacle
+- [64 Audio N8 (m15 Apex module) (sample 1)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(m15%20Apex%20module)%20(sample%201)) by Crinacle
+- [64 Audio N8 (m15 Apex module) (sample 3)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(m15%20Apex%20module)%20(sample%203)) by Crinacle
+- [64 Audio N8 (m15 Apex module) (sample 4)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(m15%20Apex%20module)%20(sample%204)) by Crinacle
 - [64 Audio N8 (m15 Apex module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(m15%20Apex%20module)) by Crinacle
 - [64 Audio N8 (m15 Apex module)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/64%20Audio%20N8%20(m15%20Apex%20module)) by Reference Audio Analyzer
 - [64 Audio N8 (m20 Apex module)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/64%20Audio%20N8%20(m20%20Apex%20module)) by Reference Audio Analyzer
 - [64 Audio N8 (m20 Apex module, modded)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(m20%20Apex%20module,%20modded)) by Crinacle
 - [64 Audio N8 (modded)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(modded)) by Crinacle
 - [64 Audio N8 (vent blocked)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20(vent%20blocked)) by Crinacle
-- [64 Audio N8 M15 (CIEM) (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20M15%20(CIEM)%20(sample%202)) by Crinacle
-- [64 Audio N8 M15 (CIEM) (sample 3)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20M15%20(CIEM)%20(sample%203)) by Crinacle
-- [64 Audio N8 M15 (CIEM) (sample 4)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20M15%20(CIEM)%20(sample%204)) by Crinacle
-- [64 Audio N8 M15 (CIEM) (sample 5)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20M15%20(CIEM)%20(sample%205)) by Crinacle
-- [64 Audio N8 M15 (sample 1)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20M15%20(sample%201)) by Crinacle
-- [64 Audio N8 M15 (sample 3)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20M15%20(sample%203)) by Crinacle
-- [64 Audio N8 M15 (sample 4)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8%20M15%20(sample%204)) by Crinacle
 - [64 Audio N8](./oratory1990/harman_in-ear_2019v2/64%20Audio%20N8) by oratory1990
 - [64 Audio N8t (m15 Apex module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20N8t%20(m15%20Apex%20module)) by Crinacle
+- [64 Audio Nio (m15 Apex module) (sample 1)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(m15%20Apex%20module)%20(sample%201)) by Crinacle
+- [64 Audio Nio (m15 Apex module) (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(m15%20Apex%20module)%20(sample%202)) by Crinacle
 - [64 Audio Nio (m15 Apex module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(m15%20Apex%20module)) by Crinacle
+- [64 Audio Nio (m20 Apex module) (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(m20%20Apex%20module)%20(sample%202)) by Crinacle
 - [64 Audio Nio (mX module) (sample 1)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(mX%20module)%20(sample%201)) by Crinacle
 - [64 Audio Nio (mX module) (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(mX%20module)%20(sample%202)) by Crinacle
 - [64 Audio Nio (mX module)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20(mX%20module)) by Crinacle
-- [64 Audio Nio M15 (sample 1)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20M15%20(sample%201)) by Crinacle
-- [64 Audio Nio M15 (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20M15%20(sample%202)) by Crinacle
-- [64 Audio Nio M20 (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Nio%20M20%20(sample%202)) by Crinacle
 - [64 Audio Tia Fourte (sample 1)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Tia%20Fourte%20(sample%201)) by Crinacle
 - [64 Audio Tia Fourte (sample 2)](./crinacle/harman_in-ear_2019v2/64%20Audio%20Tia%20Fourte%20(sample%202)) by Crinacle
 - [64 Audio Tia Fourte Noir](./crinacle/harman_in-ear_2019v2/64%20Audio%20Tia%20Fourte%20Noir) by Crinacle
@@ -232,8 +232,6 @@ from the same source.
 - [AKG K3003](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/AKG%20K3003) by Reference Audio Analyzer
 - [AKG K340 Stock](./innerfidelity/innerfidelity_harman_over-ear_2018/AKG%20K340%20Stock) by Innerfidelity
 - [AKG K340ED](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/AKG%20K340ED) by Reference Audio Analyzer, HDM-X
-- [AKG K361 (sample 1)](./oratory1990/harman_over-ear_2018/AKG%20K361%20(sample%201)) by oratory1990
-- [AKG K361 (sample 2)](./oratory1990/harman_over-ear_2018/AKG%20K361%20(sample%202)) by oratory1990
 - [AKG K361](./oratory1990/harman_over-ear_2018/AKG%20K361) by oratory1990
 - [AKG K371](./crinacle/gras_43ag-7_harman_over-ear_2018/AKG%20K371) by Crinacle, GRAS 43AG-7
 - [AKG K371](./oratory1990/harman_over-ear_2018/AKG%20K371) by oratory1990

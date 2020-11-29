@@ -52,10 +52,6 @@ def main(crinacle=False, oratory1990=False, rtings=False, referenceaudioanalyzer
         average_measurements(input_dir=os.path.join(DIR_PATH, 'crinacle', 'data', 'onear', 'Ears-711'))
         average_measurements(input_dir=os.path.join(DIR_PATH, 'crinacle', 'data', 'onear', 'GRAS 43AG-7'))
         average_measurements(input_dir=os.path.join(DIR_PATH, 'crinacle', 'data', 'inear'))
-    if oratory1990:
-        average_measurements(input_dir=os.path.join(DIR_PATH, 'oratory1990', 'data', 'onear'))
-        average_measurements(input_dir=os.path.join(DIR_PATH, 'oratory1990', 'data', 'inear'))
-        average_measurements(input_dir=os.path.join(DIR_PATH, 'oratory1990', 'data', 'earbud'))
 
     if driver is not None:
         driver.close()

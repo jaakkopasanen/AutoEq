@@ -1,8 +1,8 @@
 false_name	true_name	form
 1More Quad Driver	1MORE Quad Driver	inear
 1More Triple Driver LTNG	1MORE Triple Driver LTNG	inear
-64 Audio A12t (M15 Apex Module)	64 Audio A12t M15	inear
-64 Audio A12t (M20 Apex Module)	64 Audio A12t M20	inear
+64 Audio A12t (M15 Apex Module)	64 Audio A12t (m15 Apex module)	inear
+64 Audio A12t (M20 Apex Module)	64 Audio A12t (m20 Apex module)	inear
 64 Audio N8	64 Audio N8	inear
 Adam SP-5	Adam SP-5	onear
 Advanced GT-R	Advanced GT-R	onear
@@ -11,8 +11,8 @@ AKG K240 Sextett	AKG K240 Sextett	onear
 AKG K271 MK.II	AKG K271 MKII	onear
 AKG K280 Parabolic	AKG K280 Parabolic	onear
 AKG K3003	AKG K3003	inear
-AKG K361 (variant 1)	AKG K361 (sample 1)	onear
-AKG K361 (variant 2)	AKG K361 (sample 2)	onear
+AKG K361 (variant 1)	AKG K361	onear
+AKG K361 (variant 2)	AKG K361 (sample 2)	ignore
 AKG K371	AKG K371	onear
 AKG K601	AKG K601	onear
 AKG K601 (Dekoni Fenestrated Sheepskin Earpads)	AKG K601 (Dekoni fenestrated sheepskin earpads)	onear
