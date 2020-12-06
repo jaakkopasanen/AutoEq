@@ -99,6 +99,10 @@ class NameIndex:
         self.df = self.df.append(pd.DataFrame([[false_name, true_name, form]], columns=self.df.columns))
         self.df = self.df.drop_duplicates()
 
+    def remove_duplicates(self):
+        """Removes duplicate entries."""
+        self.df = self.df.drop_duplicates()
+
     def update(self, item, false_name=None, true_name=None, form=None):
         """Updates all items which match the given query parameters to the given item.
 

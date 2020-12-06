@@ -46,6 +46,7 @@ class Crawler(ABC):
         for db in ['innerfidelity', 'headphonecom']:
             name_index = NameIndex.read_files(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'))
             name_proposals.concat(name_index)
+        name_proposals.remove_duplicates()
         return name_proposals
 
     @abstractmethod
@@ -252,7 +253,6 @@ class Crawler(ABC):
                     # Name index contains the entry
                     if not self.existing.find(true_name=item.true_name):
                         # Doesn't exist already
-                        print(f'Didn\'t find {item.true_name} in existing')
                         self.process(item, url)
 
                 else:

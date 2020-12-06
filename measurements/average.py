@@ -21,7 +21,7 @@ def average_measurements(input_dir=None, output_dir=None):
     output_dir = os.path.abspath(output_dir)
 
     models = {}
-    for file_path in glob(os.path.join(input_dir, '*')):
+    for file_path in glob(os.path.join(input_dir, '**', '*.csv'), recursive=True):
         model = os.path.split(file_path)[-1]
         if not re.search(MOD_REGEX, model, re.IGNORECASE):
             continue

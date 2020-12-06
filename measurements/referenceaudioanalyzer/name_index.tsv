@@ -21,12 +21,15 @@ AAW (Advanced Acousticwerkes) Nightingale Planar Magnetic	AAW Nightingale	inear
 AAW A1D	AAW A1D	inear
 AAW A2H	AAW A2H	inear
 AAW A3H	AAW A3H	inear
+AAW A3H +	AAW A3H+	inear
+AAW ACH Сeramic	AAW ACH Сeramic	inear
 AAW ASH	AAW ASH	inear
 AAW Canary	AAW Canary	inear
 AAW Halcyon	AAW Halcyon	inear
 AAW Halcyon (bass)	AAW Halcyon (bass filter)	inear
 AAW Halcyon (normal)	AAW Halcyon (norm filter)	inear
 AAW Halcyon (vocal)	AAW Halcyon (Vokal filter)	inear
+AAW Mockingbird	AAW Mockingbird	inear
 AAW Nebula ONE	AAW Nebula ONE	inear
 AAW Nightingale Planar Magnetic	AAW Nightingale	inear
 AAW Q	AAW Q	inear
@@ -152,6 +155,7 @@ Audeze Sine	Audeze SINE	onear
 Audio-Technica AHT-EP3	Audio-Technica ATH-EP3	inear
 Audio-Technica ATH-A1000X	Audio-Technica ATH-A1000X	onear
 Audio-Technica ATH-A500	Audio-Technica ATH-A500	onear
+Audio-Technica ATH-A550Z	Audio-Technica ATH-A550Z	onear
 Audio-Technica ATH-A700X	Audio-Technica ATH-A700X	onear
 Audio-Technica ATH-A900	Audio-Technica ATH-A900	onear
 Audio-Technica ATH-AD1000PRM Premium	Audio-Technica ATH-AD1000PRM Premium	onear
@@ -431,6 +435,7 @@ Dunu Titan 3	DUNU Titan 3	ignore
 Dunu Titan 5	DUNU Titan 5	inear
 Dunu Titan 6	DUNU Titan 6	inear
 Earsonics ES3	EarSonics ES3	inear
+Earsonics S-EM6 V2	EarSonics S-EM6 V2	inear
 Earsonics SM3v2	EarSonics SM3 v2	inear
 Earsonics SM64	EarSonics SM64	inear
 Earsonics Velvet	EarSonics Velvet	inear
@@ -549,14 +554,22 @@ FitEar 335 DW	FitEar 335 DW	inear
 Flare Audio Flares Gold (cone tips)	Flare Audio Flares Gold (cone tips)	inear
 Flare Audio Flares Gold (ordinary tips)	Flare Audio Flares Gold (ordinary tips)	inear
 Flares Gold	Flare Audio Flares Gold	inear
-FLC 8D	FLC Technology 8D	inear
 FLC 8d	FLC Technology 8D	inear
+FLC 8D	FLC Technology 8D	inear
 FLC 8N	FLC Technology 8N	inear
 FLC 8S	FLC Technology 8S	inear
 FLC Technology 8D (black)	FLC Technology 8D (black)	inear
 FLC Technology 8D (blue)	FLC Technology 8D (blue)	inear
 FLC Technology 8D (gold)	FLC Technology 8D (gold)	inear
 FLC Technology 8D (green)	FLC Technology 8D (green)	inear
+FLC Technology 8N (black black clear)	FLC 8N (black black clear)	inear
+FLC Technology 8N (black black gray)	FLC Technology 8N (black black gray)	inear
+FLC Technology 8N (black black red)	FLC Technology 8N (black black red)	inear
+FLC Technology 8N (black clear-gray)	FLC Technology 8N (black clear-gray)	inear
+FLC Technology 8N (black gray gray)	FLC Technology 8N (black gray gray)	inear
+FLC Technology 8N (blue gray gray)	FLC Technology 8N (blue gray gray)	inear
+FLC Technology 8N (gold gray gray)	FLC Technology 8N (gold gray gray)	inear
+FLC Technology 8N (green gray gray)	FLC Technology 8N (green gray gray)	inear
 Focal Clear	Focal Clear	onear
 Focal Elear	Focal Elear	onear
 Focal Elegia	Focal Elegia	onear
@@ -790,6 +803,9 @@ LongLife E-107	LongLife E-107	inear
 Lypertek TEVI	Lypertek Tevi	inear
 LZ Hi-Fi Audio A4	LZ Hi-Fi Audio A4	inear
 LZ Hi-Fi Audio A6 mini	LZ Hi-Fi Audio A6 Mini	inear
+LZ Hi-Fi Audio A6 Mini (black)	LZ Hi-Fi Audio A6 Mini (black)	inear
+LZ Hi-Fi Audio A6 Mini (blue)	LZ Hi-Fi Audio A6 Mini (blue)	inear
+LZ Hi-Fi Audio A6 Mini (red)	LZ Hi-Fi Audio A6 Mini (red)	inear
 M-Audio IE 40	M-Audio IE-40	inear
 M-Audio IE-30	M-Audio IE-30	inear
 Magaosi DT6	Magaosi DT6	inear
@@ -859,8 +875,8 @@ Musical Fidelity EB-50	Musical Fidelity EB-50	inear
 MyST Gatling	MyST Gatling	onear
 MyST Izo-OS	MyST Izo-OS	onear
 MyST IzoEM-1		ignore
-MyST Izophones-30		ignore
 MyST IzoPhones-30	MyST IzoPhones-30	onear
+MyST Izophones-30		ignore
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
@@ -974,6 +990,7 @@ RHA TrueConnect	RHA TrueConnect	inear
 Roland RH-200	Roland RH-200	onear
 Roland RH-A30	Roland RH-A30	onear
 SABBAT E12 ULTRA	Sabbat E12 Ultra	inear
+Sendy Audio Aiva	Sendy Aiva	onear
 Sennheiser Amperior	Sennheiser Amperior	onear
 Sennheiser CX 1.00	Sennheiser CX 1.00	inear
 Sennheiser CX 180 Street II	Sennheiser CX 180 Street II	inear
@@ -1077,6 +1094,8 @@ Simgot EN700 Pro	Simgot Audio EN700 Pro	inear
 Simgot ET1000	Simgot Audio ET1000	onear
 Simgot Meeture MTW5	Simgot Audio Meeture MTW5	inear
 Simgot MT3 Meeture	Simgot Audio Meeture MT3	inear
+Sivga Audio P-II	Sivga Audio P-II	onear
+Sivga Audio Phoenix	Sivga Audio Phoenix	onear
 Skullcandy SK Pro	Skullcandy SK Pro	onear
 Sony 10RBT	Sony MDR-10RBT	onear
 Sony CD3000	Sony MDR-CD3000	onear
@@ -1154,6 +1173,7 @@ Sunrise Dragon (ear tips earbuds r130 vent sealed)	Sunrise Dragon (ear tips earb
 Sunrise Feeling 2	Sunrise Feeling 2	earbud
 Sunrise Xcape	Sunrise Xcape	inear
 Sunrise Xcited	Sunrise Xcited	inear
+System Elements A3 Lead Solo Pro	System Elements A3 Lead Solo Pro	inear
 T-Peos H 200	T-Peos H-200	inear
 Takstar HD 5800	Takstar HD 5800	onear
 Takstar HD 6000	Takstar HD 6000	onear
@@ -1203,6 +1223,8 @@ Tin HiFi T2 Pro	Tin HiFi T2 Pro	inear
 Tin HiFi T3	Tin HiFi T3	inear
 Tin HiFi T4	Tin HiFi T4	inear
 Trinity Audio ICARUS III	Trinity Audio ICARUS III	inear
+TRN ST1	TRN ST1	inear
+TRN VX	TRN VX	inear
 TY Hi-Z G3	TY Hi-Z G3	inear
 Ultimate Ears super.fi 5 Pro	Ultimate Ears Super.fi 5 Pro	inear
 Ultrasone DJ 1	Ultrasone DJ 1	onear
@@ -1266,8 +1288,8 @@ Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
-Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
+Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear
 Whizzer TP1 (closed vent)	Whizzer TP1 (closed vent)	inear
 Whizzer TP1s	Whizzer TP1s	inear

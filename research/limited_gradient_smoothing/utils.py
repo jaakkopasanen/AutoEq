@@ -10,10 +10,10 @@ import scipy
 from frequency_response import FrequencyResponse
 
 
-def limited_slope_plots(fr, limit):
+def limited_slope_plots(fr, limit, limit_decay=0.0):
     fr.equalization = -fr.error
     limited, smoothed, limited_forward, clipped_forward, limited_backward, clipped_backward, peak_inds, dip_inds, \
-        backward_start, protection_mask = limited_slope(fr.frequency, fr.equalization, limit)
+        backward_start, protection_mask = limited_slope(fr.frequency, fr.equalization, limit, limit_decay=limit_decay)
 
     x = fr.frequency.copy()
     y = smoothed
@@ -40,13 +40,15 @@ def limited_slope_plots(fr, limit):
     return fig, ax
 
 
-def limited_slope(x, y, limit):
+def limited_slope(x, y, limit, limit_decay=0.0):
     """Bi-directional slope limitation for a frequency response curve
 
     Args:
-            x: frequencies
-            y: amplitudes
-        limit:
+        x: frequencies
+        y: amplitudes
+        limit: Maximum slope in dB per octave
+        limit_decay: Decay coefficient (per octave) for the limit. Value of 0.5 would reduce limit by 50% in an octave
+            when traversing a single limitation zone.
 
     Returns:
 
@@ -74,9 +76,9 @@ def limited_slope(x, y, limit):
     # clipped_forward is boolean mask for limited samples when traversing left to right
     # limited_backward is found using forward algorithm but with flipped data
     limited_forward, clipped_forward, regions_forward = limited_forward_slope(
-        x, y, limit, start_index=0, peak_inds=peak_inds, limit_free_mask=limit_free_mask)
+        x, y, limit, limit_decay=limit_decay, start_index=0, peak_inds=peak_inds, limit_free_mask=limit_free_mask)
     limited_backward, clipped_backward, regions_backward = limited_backward_slope(
-        x, y, limit, start_index=backward_start, peak_inds=peak_inds, limit_free_mask=limit_free_mask)
+        x, y, limit, limit_decay=limit_decay, start_index=backward_start, peak_inds=peak_inds, limit_free_mask=limit_free_mask)
 
     # TODO: Find notches which are lower in level than adjacent notches
     # TODO: Set detected notches as slope clipping free zones up to levels of adjacent notches
@@ -139,13 +141,14 @@ def protection_mask(y, dip_inds):
     return mask
 
 
-def limited_backward_slope(x, y, limit, start_index=0, peak_inds=None, limit_free_mask=None):
+def limited_backward_slope(x, y, limit, limit_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None):
     """Limits forwards slope of a frequency response curve while traversing backwards
 
         Args:
             x: frequencies
             y: amplitudes
             limit: maximum slope in dB / oct
+            limit_decay: Limit decay coefficient per octave
             start_index: Index where to start traversing, no limitations apply before this
             peak_inds: Peak indexes. Regions will require to touch one of these if given.
             limit_free_mask: Boolean mask for indices where limitation must not be applied
@@ -161,20 +164,22 @@ def limited_backward_slope(x, y, limit, start_index=0, peak_inds=None, limit_fre
     if limit_free_mask is not None:
         limit_free_mask = np.flip(limit_free_mask)
     limited_backward, clipped_backward, regions_backward = limited_forward_slope(
-        x, np.flip(y), limit, start_index=start_index, peak_inds=peak_inds, limit_free_mask=limit_free_mask)
+        x, np.flip(y), limit, limit_decay=limit_decay, start_index=start_index, peak_inds=peak_inds,
+        limit_free_mask=limit_free_mask)
     limited_backward = np.flip(limited_backward)
     clipped_backward = np.flip(clipped_backward)
     regions_backward = len(x) - regions_backward - 1
     return limited_backward, clipped_backward, regions_backward
 
 
-def limited_forward_slope(x, y, limit, start_index=0, peak_inds=None, limit_free_mask=None):
+def limited_forward_slope(x, y, limit, limit_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None):
     """Limits forwards slope of a frequency response curve
 
     Args:
         x: frequencies
         y: amplitudes
         limit: maximum slope in dB / oct
+        limit_decay: Limit decay coefficient per octave
         start_index: Index where to start traversing, no limitations apply before this
         peak_inds: Peak indexes. Regions will require to touch one of these if given.
         limit_free_mask: Boolean mask for indices where limitation must not be applied
@@ -202,6 +207,11 @@ def limited_forward_slope(x, y, limit, start_index=0, peak_inds=None, limit_free
         # Local limit is 25% of the limit between 8 kHz and 10 kHz
         # TODO: limit 9 kHz notch 8 kHz to 11 kHz?
         local_limit = limit / 4 if 8000 <= x[i] <= 11500 else limit
+
+        if clipped[-1]:
+            # Previous sample clipped, reduce limit
+            #print(f'{x[i]} -> {x[regions[-1][0]]} = {(1 - limit_decay) ** np.log2(x[i] / x[regions[-1][0]])}')
+            local_limit *= (1 - limit_decay) ** np.log2(x[i] / x[regions[-1][0]])
 
         if slope > local_limit and (limit_free_mask is None or not limit_free_mask[i]):
             # Slope between the two samples is greater than the local maximum slope, clip to the max
