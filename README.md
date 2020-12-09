@@ -238,24 +238,21 @@ fancy graphical user interface but instead it is used from command line.
 location. Or just git clone if you know what that means.
 - Download and install 64-bit [Python3](https://www.python.org/getit/). Python 3.8 doesn't work yet. Make sure to check
 *Install Python 3 to PATH*
-- Install virtualenv. Run this on command prompt. Search `cmd` in the Windows start menu.  
-```bash
-pip install virtualenv
-```
+- Open a command prompt. Search `cmd` in the Windows start menu.
 - Go to AutoEQ location  
 ```bash
 cd C:\path\to\AutoEq-master
 ```
-- Create virtual environment  
+- Create a python virtual environment
 ```bash
-virtualenv venv
+python -m venv venv
 ```
 - Activate virtualenv  
 ```bash
 # On Windows
-venv\Scripts\activate
+venv\Scripts\activate.bat
 # On Linux and Mac
-source venv/Scripts/activate
+source venv/bin/activate
 ```
 - Install required packages  
 ```bash
@@ -270,11 +267,13 @@ When coming back at a later time you'll only need to activate virtual environmen
 ```bash
 # On Windows
 cd C:\path\to\AutoEq-master
-venv\Scripts\activate
+venv\Scripts\activate.bat
 # On Linux and Mac
 cd /path/to/AutoEq-master
-source venv/Scripts/activate
+source venv/bin/activate
 ```
+
+To learn more about virtual environments, read [Python' venv documentation](https://docs.python.org/3.8/library/venv.html).
 
 ### Command Line Arguments
 ```
