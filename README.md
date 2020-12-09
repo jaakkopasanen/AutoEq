@@ -234,14 +234,26 @@ practically any source.
 fancy graphical user interface but instead it is used from command line.
 
 ### Installing
-- Download [AutoEQ zip](https://github.com/jaakkopasanen/AutoEq/archive/master.zip) and extract to a convenient
-location. Or just git clone if you know what that means.
-- Download and install 64-bit [Python3](https://www.python.org/getit/). Python 3.8 doesn't work yet. Make sure to check
-*Install Python 3 to PATH*
-- Open a command prompt. Search `cmd` in the Windows start menu.
-- Go to AutoEQ location  
+- Download and install Git: https://git-scm.com/downloads. When installing Git on Windows, use Windows SSL verification
+instead of Open SSL or you might run into problems when installing project dependencies.
+- Download and install 64-bit [Python3](https://www.python.org/getit/). Make sure to check *Install Python 3 to PATH*
+- You may need to install [libsndfile](http://www.mega-nerd.com/libsndfile/) if you're having problems with `soundfile`
+when installing `requirements.txt`
+- On Linux you may need to install Python dev packages  
 ```bash
-cd C:\path\to\AutoEq-master
+sudo apt install python3-dev python3-pip python3-venv
+```
+- On Linux you may need to install [pip](https://pip.pypa.io/en/stable/installing/)
+- On Windows you may need to install
+[Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+- Open a terminal / command prompt. On Windows, search `cmd` in the start menu.
+- Clone AutoEq  
+```bash
+git clone https://github.com/jaakkopasanen/AutoEq.git
+```
+- Go to AutoEq location  
+```bash
+cd AutoEq
 ```
 - Create a python virtual environment
 ```bash
@@ -252,13 +264,13 @@ python -m venv venv
 # On Windows
 venv\Scripts\activate.bat
 # On Linux and Mac
-source venv/bin/activate
+. venv/bin/activate
 ```
 - Install required packages  
 ```bash
 pip install -r requirements.txt
 ```
-- Verify installation. If everything went well, you'll see the list of command line parameters autoeq accepts.  
+- Verify installation. If everything went well, you'll see the list of command line parameters AutoEq accepts.  
 ```bash
 python autoeq.py --help
 ```
@@ -266,14 +278,26 @@ python autoeq.py --help
 When coming back at a later time you'll only need to activate virtual environment again
 ```bash
 # On Windows
-cd C:\path\to\AutoEq-master
+cd AutoEq
 venv\Scripts\activate.bat
 # On Linux and Mac
-cd /path/to/AutoEq-master
-source venv/bin/activate
+cd AutoEq
+. venv/bin/activate
 ```
 
 To learn more about virtual environments, read [Python' venv documentation](https://docs.python.org/3.8/library/venv.html).
+
+#### Updating
+AutoEq is in active development and gets new measurements, results and features all the time. You can get the latest
+version from git
+```bash
+git pull
+```
+
+Dependencies may change from time to time, you can update to the latest with
+```bash
+pip install -U -r requirements.txt
+```
 
 ### Command Line Arguments
 ```
