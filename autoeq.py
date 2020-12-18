@@ -13,13 +13,14 @@ from frequency_response import FrequencyResponse
 
 
 def batch_processing(input_dir=None, output_dir=None, new_only=False, standardize_input=False, compensation=None,
-                     equalize=False, parametric_eq=False, fixed_band_eq=False, fc=None, q=None, ten_band_eq=False,
-                     max_filters=None, convolution_eq=False, fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH,
-                     phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES, bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
-                     bass_boost_fc=DEFAULT_BASS_BOOST_FC, bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=None,
-                     sound_signature=None, max_gain=DEFAULT_MAX_GAIN, treble_f_lower=DEFAULT_TREBLE_F_LOWER,
-                     treble_f_upper=DEFAULT_TREBLE_F_UPPER, treble_max_gain=DEFAULT_TREBLE_MAX_GAIN,
-                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False):
+                     equalize=False, parametric_eq=False, fixed_band_eq=False, rockbox=False, fc=None, q=None,
+                     ten_band_eq=False, max_filters=None, convolution_eq=False, fs=DEFAULT_FS,
+                     bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
+                     bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
+                     bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=None, sound_signature=None, max_gain=DEFAULT_MAX_GAIN,
+                     treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
+                     treble_max_gain=DEFAULT_TREBLE_MAX_GAIN, treble_gain_k=DEFAULT_TREBLE_GAIN_K,
+                     show_plot=False):
     """Parses files in input directory and produces equalization results in output directory."""
     start_time = time()
 
@@ -124,6 +125,13 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                         output_file_path.replace('.csv', ' FixedBandEQ.txt'), fbeq_filters,
                         preamp=-(fbeq_max_gain + PREAMP_HEADROOM))
 
+                # Write 10 band fixed band eq to Rockbox .cfg file
+                if rockbox and ten_band_eq:
+                    # Write fixed band eq settings to file
+                    fr.write_rockbox_10_band_fixed_eq(
+                        output_file_path.replace('.csv', ' RockboxEQ.cfg'), fbeq_filters,
+                        preamp=-(fbeq_max_gain + PREAMP_HEADROOM))
+
                 # Write impulse response as WAV
                 if convolution_eq:
                     for _fs in fs:
@@ -196,6 +204,9 @@ def cli_args():
                             help='Will produce parametric eq settings if this parameter exists, no value needed.')
     arg_parser.add_argument('--fixed_band_eq', action='store_true',
                             help='Will produce fixed band eq settings if this parameter exists, no value needed.')
+    arg_parser.add_argument('--rockbox', action='store_true',
+                            help='Will produce a Rockbox .cfg file with 10 band eq settings if this parameter exists,'
+                            'no value needed.')
     arg_parser.add_argument('--fc', type=str, help='Comma separated list of center frequencies for fixed band eq.')
     arg_parser.add_argument('--q', type=str,
                             help='Comma separated list of Q values for fixed band eq. If only one '
