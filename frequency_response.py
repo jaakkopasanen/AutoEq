@@ -210,7 +210,7 @@ class FrequencyResponse:
                     raw.append(float(floats[1]))  # Assume second to be raw
                 # Discard all lines which don't match data pattern
             return cls(name=name, frequency=frequency, raw=raw)
-    
+
     def to_dict(self):
         d = dict()
         if len(self.frequency):
@@ -682,6 +682,29 @@ class FrequencyResponse:
             s = f'Preamp: {preamp:.1f} dB\n'
             for i, filt in enumerate(filters):
                 s += f'Filter {i+1}: ON PK Fc {filt[0]:.0f} Hz Gain {filt[2]:.1f} dB Q {filt[1]:.2f}\n'
+            f.write(s)
+
+    def write_rockbox_10_band_fixed_eq(self, file_path, filters, preamp=None):
+        """Writes Rockbox 10 band eq settings to a file."""
+        file_path = os.path.abspath(file_path)
+
+        if preamp is None:
+            # Calculate preamp from the cascade frequency response
+            fr = np.zeros(self.frequency.shape)
+            for filt in filters:
+                a0, a1, a2, b0, b1, b2 = biquad.peaking(filt[0], filt[1], filt[2], fs=44100)
+                fr += biquad.digital_coeffs(self.frequency, 44100, a0, a1, a2, b0, b1, b2)
+            preamp = np.min([0.0, -(np.max(fr) + PREAMP_HEADROOM)])
+
+        with open(file_path, 'w', encoding='utf-8') as f:
+            s = f'eq enabled: on\neq precut: {round(abs(preamp), 1) * 10:.0f}\n'
+            for i, filt in enumerate(filters):
+                if i == 0:
+                    s += f'eq low shelf filter: {filt[0]:.0f}, {round(filt[1], 1) * 10:.0f}, {round(filt[2], 1) * 10:.0f}\n'
+                elif i == len(filters) - 1:
+                    s += f'eq high shelf filter: {filt[0]:.0f}, {round(filt[1], 1) * 10:.0f}, {round(filt[2], 1) * 10:.0f}\n'
+                else:
+                    s += f'eq peak filter {i}: {filt[0]:.0f}, {round(filt[1], 1) * 10:.0f}, {round(filt[2], 1) * 10:.0f}\n'
             f.write(s)
 
     @staticmethod
@@ -1537,6 +1560,7 @@ class FrequencyResponse:
                 equalize=False,
                 parametric_eq=False,
                 fixed_band_eq=False,
+                rockbox=False,
                 fc=None,
                 q=None,
                 ten_band_eq=None,
@@ -1610,6 +1634,9 @@ class FrequencyResponse:
 
         if fixed_band_eq and not equalize:
             raise ValueError('equalize must be True when fixed_band_eq or ten_band_eq is True.')
+
+        if rockbox and not ten_band_eq:
+            raise ValueError('ten_band_eq must be True when rockbox is True.')
 
         if max_filters is not None and type(max_filters) != list:
             max_filters = [max_filters]
