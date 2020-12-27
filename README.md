@@ -111,7 +111,7 @@ GraphicEQ: 20 -0.5; 21 -0.5; 22 -0.5; 23 -0.5; 24 -0.5; 26 -0.5; 27 -0.5; 29 -0.
 EqualizerAPO has a graphical user interface for adjusting configurations. Launch the editor from
 `C:\Program Files\EqualizerAPO\Editor.exe`.
 
-![equalizerapo-editor](./img/EqualizerAPOEditor.PNG)
+![equalizerapo-editor](https://i.imgur.com/lHhRBuA.png)
 
 *EqualizerAPO Editor GUI*
 
@@ -122,7 +122,7 @@ multiple different eq settings and a switch for disabling everything among other
 by clicking *Import* button and select the *<model> ParametricEQ.txt* file. Set the preamp to value mentioned in the
 results.
 
-![peace](./img/Peace.PNG)
+![peace](https://i.imgur.com/e0POEbF.png)
 
 *Peace with full GUI for EqualizerAPO*
 
@@ -181,7 +181,7 @@ For versions prior to v4.8.0, adjust filter parameters by clicking the cog butto
 and set type to "Bell" and adjust the gain with the slider. Number of filters can be changed by clicking the screwdriver
 and wrench button.
 
-![pulseeffects](./img/pulseeffects.png)
+![pulseeffects](https://i.imgur.com/F51y5Kl.png)
 
 ### OSX / MacOS
 System wide parametric EQ solutions on OSX typically rely on separate plugin hosting software and the actual plugin
@@ -236,7 +236,7 @@ fancy graphical user interface but instead it is used from command line.
 ### Installing
 - Download and install Git: https://git-scm.com/downloads. When installing Git on Windows, use Windows SSL verification
 instead of Open SSL or you might run into problems when installing project dependencies.
-- Download and install 64-bit [Python3](https://www.python.org/getit/). Make sure to check *Install Python 3 to PATH*
+- Download and install 64-bit [Python 3.8](https://www.python.org/getit/). Make sure to check *Add Python 3.8 to PATH*.
 - You may need to install [libsndfile](http://www.mega-nerd.com/libsndfile/) if you're having problems with `soundfile`
 when installing `requirements.txt`
 - On Linux you may need to install Python dev packages  
@@ -266,9 +266,13 @@ venv\Scripts\activate.bat
 # On Linux and Mac
 . venv/bin/activate
 ```
+- Update pip
+```bash
+python -m pip install -U pip==20.3.3
+```
 - Install required packages  
 ```bash
-pip install -r requirements.txt
+python -m pip install -U -r requirements.txt
 ```
 - Verify installation. If everything went well, you'll see the list of command line parameters AutoEq accepts.  
 ```bash
@@ -296,7 +300,7 @@ git pull
 
 Dependencies may change from time to time, you can update to the latest with
 ```bash
-pip install -U -r requirements.txt
+python -m pip install -U -r requirements.txt
 ```
 
 ### Command Line Arguments
@@ -648,7 +652,7 @@ mid point of the merged filters. If merging filters did not reduce the count eno
 count matches maximum allowed number of filters. Image below shows initialization for 1More MK801 headphone. Red dots
 are the peaks of filters before reduction and green dots are the peaks after reduction.
 
-![filter-initialization](./img/FilterInitialization.png)
+![filter-initialization](https://i.imgur.com/UlMb2jK.png)
 
 *Equalization target and initial peak filters for optimization before and after filter number limitation*
 
@@ -659,18 +663,9 @@ squared error between the sum frequency response of the filters and the target. 
 getting too small to make a practical difference the optimization is stopped. Animation below shows progress from the
 initialization to a close finished curve.
 
-![optimization-animation](./img/Optimization.gif)
+![optimization-animation](https://i.imgur.com/pM7JYAb.gif)
 
 *Optimization of parametric eq filters (click to play)*
-
-Below is the end result of optimizing only 5 peaking filters to equalization curve of 1More MK801 headphone. Parametric
-eq curve deviates from the fine equalization curve in some points but all in all follows the target surprisingly well.
-The two equalization curves have hardly audible difference. Some headphones are not as easy to equalize properly with
-limited number of bands because highly erratic curves are impossible to be estimated with only a few peaking filters.
-
-![1more-mk801-plot](./img/1More%20MK801.png)
-
-*1More MK801 with parametric equalization*
 
 
 ## Contact

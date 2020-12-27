@@ -44,6 +44,7 @@ Audeze LCD-2 Fazor	Audeze LCD-2 Fazor	onear
 Audeze LCD-3	Audeze LCD-3	onear
 Audeze LCD-4	Audeze LCD-4	onear
 Audeze LCD-4z	Audeze LCD-4z	onear
+Audeze LCD-MX4	Audeze LCD-MX4	onear
 Audeze LCD-X	Audeze LCD-X	onear
 Audeze LCD-XC	Audeze LCD-XC	ignore
 Audeze Mobius (Default Preset)	Audeze Mobius (default preset)	onear
@@ -142,8 +143,12 @@ Fiio FH1	FiiO FH1	inear
 Fiio FH5	FiiO FH5	inear
 Final Audio A8000	Final Audio A8000	inear
 Final Audio D8000 Pro Edition	Final Audio D8000 Pro Edition	onear
+Final Audio E1000	Final Audio E1000	inear
 Final Audio E4000	Final Audio E4000	inear
 Final Audio E500	Final Audio E500	inear
+Final Audio E5000	Final Audio E5000	inear
+Final Audio Heaven IV	Final Audio Heaven IV	inear
+Final Audio Heaven V	Final Audio Heaven V	inear
 Focal Clear	Focal Clear	onear
 Focal Elear	Focal Elear	onear
 Focal Elegia	Focal Elegia	onear
@@ -209,6 +214,7 @@ Koss ESP/950	Koss ESP950	onear
 Koss ESP/95X	Koss ESP95X	onear
 Koss ESP/95X (6 band parametric)	Massdrop x Koss ESP95X (6 band parametric)	ignore
 Koss ESP/95X (RME ADI-2 settin (midrange precision))		ignore
+Koss KSC75	Koss KSC75	onear
 Koss Porta Pro	Koss Porta Pro	onear
 Koss Porta Pro (Yaxi Earpads)	Koss Porta Pro (Yaxi earpads)	onear
 KZ ATE	KZ ATE	inear
@@ -265,7 +271,9 @@ Ora GraphenEQ	ORA GrapheneQ	onear
 Oriolus Finischi	Oriolus Finschi	ignore
 Panasonic RP-HJE	Panasonic RP-HJE120	inear
 Panasonic RP-HJE120	Panasonic RP-HJE120	inear
+Peerless MB PMB 85 Double Action	Peerless MB PMB 85 Double Action	onear
 Periodic Audio Be	Periodic Audio Be	inear
+Philips Fidelio L2	Philips Fidelio L2	onear
 Philips Fidelio M1	Philips Fidelio M1	onear
 Philips Fidelio M2L	Philips Fidelio M2L	onear
 Philips Fidelio NC1	Philips Fidelio NC1	onear
@@ -281,6 +289,7 @@ RHA MA750	RHA MA750	ignore
 Ritmix RH-508	Ritmix RH-508	onear
 Rock Zircon	Rock Zircon	inear
 "Samsung ""EO-IC500 """"ANC Type-C"""""""	Samsung EO-IC500 ANC Type-C	inear
+"Samsung EO-IC500 ""ANC Type-C"""	Samsung EO-IC500 ANC Type-C	inear
 Samsung EO-IG955 (AKG)	Samsung EO-IG955 (AKG)	inear
 Samsung Galaxy Buds	Samsung Galaxy Buds	inear
 Samsung SM-R170 Galaxy Buds	Samsung Galaxy Buds	inear
@@ -293,6 +302,7 @@ Sennheiser CX2.00	Sennheiser CX 2.00	inear
 Sennheiser CX3.00	Sennheiser CX 3.00	inear
 Sennheiser G4ME ONE	Sennheiser GAME ONE	onear
 Sennheiser HD25-1 II	Sennheiser HD 25-1 II	onear
+Sennheiser HD518	Sennheiser HD 518	onear
 Sennheiser HD540 reference-II	Sennheiser HD 540 reference-II	onear
 Sennheiser HD555	Sennheiser HD 555	onear
 Sennheiser HD560S	Sennheiser HD 560S	onear
@@ -311,6 +321,8 @@ Sennheiser HD800	Sennheiser HD 800	onear
 Sennheiser HD800S	Sennheiser HD 800 S	onear
 Sennheiser HD800S (Dekoni Fenestrated Sheepskin Earpads)	Sennheiser HD 800 S (Dekoni fenestrated sheepskin earpads)	onear
 Sennheiser HD820	Sennheiser HD 820	onear
+Sennheiser HE1	Sennheiser HE 1 Orpheus 2	ignore
+"Sennheiser HE90 ""Orpheus"""	Sennheiser HE 90 Orpheus	onear
 Sennheiser IE4	Sennheiser IE 4	inear
 Sennheiser IE800	Sennheiser IE 800	inear
 Sennheiser IE800S	Sennheiser IE 800 S	inear
@@ -403,6 +415,7 @@ Superlux HD-681 (velours earpads)	Superlux HD 681 (velour earpads)	onear
 Superlux HD-681B (Brainwavz round hybrid earpads)	Superlux Hd 681B (Brainwavz round hybrid earpads)	onear
 Superlux HD-681B (pleather earpads)	Superlux HD 681B (pleather earpads)	onear
 Superlux HD-681B (velours earpads)	Superlux HD 681B (velour earpads)	onear
+Teufel Real Z	Teufel Real Z	onear
 TFZ Galaxy T2	TFZ T2 Galaxy	inear
 Tin Audio P1	Tin HiFi P1	inear
 Tin Audio T2	Tin HiFi T2	inear
