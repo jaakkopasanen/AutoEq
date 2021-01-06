@@ -193,10 +193,11 @@ class FrequencyResponseLimited(FrequencyResponse):
         # clipped_forward is boolean mask for limited samples when traversing left to right
         # limited_backward is found using forward algorithm but with flipped data
         limited_forward, clipped_forward, regions_forward = self.limited_forward_slope(
-            x, y, limit, limit_decay=limit_decay, start_index=0, peak_inds=peak_inds, limit_free_mask=limit_free_mask)
+            x, y, limit, limit_decay=limit_decay, start_index=0, peak_inds=peak_inds, limit_free_mask=limit_free_mask,
+            concha_interference=concha_interference)
         limited_backward, clipped_backward, regions_backward = self.limited_backward_slope(
             x, y, limit, limit_decay=limit_decay, start_index=backward_start, peak_inds=peak_inds,
-            limit_free_mask=limit_free_mask)
+            limit_free_mask=limit_free_mask, concha_interference=concha_interference)
 
         # Forward and backward limited curves are combined with min function
         combined = self.__class__(

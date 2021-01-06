@@ -1490,7 +1490,8 @@ class FrequencyResponse:
         ax.semilogx()
         ax.set_xlim([f_min, f_max])
         ax.set_ylabel('Amplitude (dBr)')
-        ax.set_ylim([a_min, a_max])
+        if a_min is not None or a_max is not None:
+            ax.set_ylim([a_min, a_max])
         ax.set_title(self.name)
         ax.legend(fontsize=8)
         ax.grid(True, which='major')
