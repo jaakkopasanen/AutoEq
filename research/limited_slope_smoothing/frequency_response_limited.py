@@ -326,7 +326,6 @@ class FrequencyResponseLimited(FrequencyResponse):
             # Calculate slope and local limit
             slope = cls.log_log_gradient(x[i], x[i - 1], y[i], limited[-1])
             # Local limit is 25% of the limit between 8 kHz and 10 kHz
-            # TODO: Only for on-ears
             local_limit = limit / 4 if 8000 <= x[i] <= 11500 and concha_interference else limit
 
             if clipped[-1]:
