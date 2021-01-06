@@ -2,9 +2,8 @@
 
 import sys
 from pathlib import Path
-ROOT_PATH = Path().resolve().parent.parent
-if str(ROOT_PATH) not in sys.path:
-    sys.path.insert(str(ROOT_PATH))
+if str(Path().resolve().parent.parent) not in sys.path:
+    sys.path.insert(1, str(Path().resolve().parent.parent))
 import numpy as np
 import scipy
 from frequency_response import FrequencyResponse
@@ -66,10 +65,11 @@ def limited_slope(x, y, limit, limit_decay=0.0):
     peak_inds, peak_props = scipy.signal.find_peaks(y, prominence=1)
     dip_inds, dip_props = scipy.signal.find_peaks(-y, prominence=1)
 
-    limit_free_mask = protection_mask(y, dip_inds)
+    limit_free_mask = protection_mask(y, peak_inds, dip_inds)
+    # TODO: 8 kHz - 11.5 kHz should not be limit free zone
 
     # Find backward start index
-    backward_start = find_backward_start(y, peak_inds, dip_inds)  # TODO: backward start
+    backward_start = find_backward_start(y, peak_inds, dip_inds)
 
     # Find forward and backward limitations
     # limited_forward is y but with slopes limited when traversing left to right
@@ -80,9 +80,6 @@ def limited_slope(x, y, limit, limit_decay=0.0):
     limited_backward, clipped_backward, regions_backward = limited_backward_slope(
         x, y, limit, limit_decay=limit_decay, start_index=backward_start, peak_inds=peak_inds, limit_free_mask=limit_free_mask)
 
-    # TODO: Find notches which are lower in level than adjacent notches
-    # TODO: Set detected notches as slope clipping free zones up to levels of adjacent notches
-
     # Forward and backward limited curves are combined with min function
     # Combination function is smoothed to get rid of hard kinks
     limiter = FrequencyResponse(
@@ -90,53 +87,43 @@ def limited_slope(x, y, limit, limit_decay=0.0):
     limiter.smoothen_fractional_octave(window_size=1 / 5, treble_window_size=1 / 5)
     #limiter.smoothed = limiter.raw.copy()
 
-    return limiter.smoothed.copy(), fr.smoothed.copy(), limited_forward, clipped_forward, limited_backward, clipped_backward, \
-        peak_inds, dip_inds, backward_start, limit_free_mask
+    return limiter.smoothed.copy(), fr.smoothed.copy(), limited_forward, clipped_forward, limited_backward,\
+           clipped_backward, peak_inds, dip_inds, backward_start, limit_free_mask
 
 
-def protection_mask(y, dip_inds):
+def protection_mask(y, peak_inds, dip_inds):
     """Finds zones around dips which are lower than their adjacent dips. Zones extend to the lower level of the adjacent
     dips.
 
     Args:
-        x: frequencies
         y: amplitudes
+        peak_inds: Indices of peaks
         dip_inds: Indices of dips
 
     Returns:
         Boolean mask for limitation-free indices
     """
+    if peak_inds[-1] > dip_inds[-1]:
+        # Last peak is after last dip, add new dip after the last peak at the minimum
+        last_dip_ind = np.argmin(y[peak_inds[-1]:]) + peak_inds[-1]
+        dip_inds = np.concatenate([dip_inds, [last_dip_ind]])
+        dip_levels = y[dip_inds]
+    else:
+        dip_inds = np.concatenate([dip_inds, [-1]])
+        dip_levels = y[dip_inds]
+        dip_levels[-1] = np.min(y)
+
     mask = np.zeros(len(y)).astype(bool)
     if len(dip_inds) < 3:
         return mask
-    # Find peaks which are lower in level than their adjacent dips
-    dip_levels = y[dip_inds]
-    # First row contains levels of previous dips
-    # Second row contains levels of current dips
-    # Third row contains levels of next dips
-    # First and last dips are ignored because they don't have both adjacent dips
-    stack = np.vstack([dip_levels[2:], dip_levels[1:-1], dip_levels[:-2]])
-    # Boolean mask for dips which are lower than their adjacent dips
-    null_mask = np.concatenate([[False], np.argmin(stack, axis=0) == 1, [False]])
-    # Indices of dips which are lower than their adjacent dips
-    null_inds = np.argwhere(null_mask)[:, 0]
-    if len(null_inds) < 1:
-        return mask
-    # First column is the level of the previous dip
-    # Second column is the level of the next dip
-    adjacent_dip_levels = np.vstack([dip_levels[null_inds - 1], dip_levels[null_inds + 1]])
-    adjacent_dip_levels = np.transpose(adjacent_dip_levels)
-    # Find indexes on both sides where the curve goes above the adjacent dips minimum level
-    for i in range(len(null_inds)):
-        dip_ind = dip_inds[null_inds[i]]
-        target_left = adjacent_dip_levels[i, 0]
-        target_right = adjacent_dip_levels[i, 1]
-        # TODO: Should left and right side targets be separate?
-        #target = np.min([target_left, target_right])
+
+    for i in range(1, len(dip_inds) - 1):
+        dip_ind = dip_inds[i]
+        target_left = dip_levels[i - 1]
+        target_right = dip_levels[i + 1]
         # TODO: Should target be where gradient reduces below certain threshold?
         left_ind = np.argwhere(y[:dip_ind] >= target_left)[-1, 0] + 1
-        right_ind = np.argwhere(y[dip_ind:] >= target_right)
-        right_ind = right_ind[0, 0] + dip_ind - 1
+        right_ind = np.argwhere(y[dip_ind:] >= target_right)[0, 0] + dip_ind - 1
         mask[left_ind:right_ind + 1] = np.ones(right_ind - left_ind + 1).astype(bool)
     return mask
 

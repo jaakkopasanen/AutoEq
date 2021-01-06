@@ -1174,7 +1174,7 @@ class FrequencyResponse:
         with warnings.catch_warnings():
             # Savgol filter uses array indexing which is not future proof, ignoring the warning and trusting that this
             # will be fixed in the future release
-            warnings.simplefilter("ignore")
+            warnings.simplefilter('ignore')
             for i in range(iterations):
                 y_normal = savgol_filter(y_normal, self._window_size(window_size), 2)
 
@@ -1496,6 +1496,7 @@ class FrequencyResponse:
         ax.grid(True, which='major')
         ax.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
+        ax.set_xticks([20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000])
         if file_path is not None:
             file_path = os.path.abspath(file_path)
             fig.savefig(file_path, dpi=120)
@@ -1660,7 +1661,6 @@ class FrequencyResponse:
             )
 
         # Smooth data
-        self.smoothen_heavy_light()
         self.smoothen_fractional_octave(
             window_size=1/3,
             treble_window_size=1.4,

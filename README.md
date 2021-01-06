@@ -36,8 +36,10 @@ AutoEQ produces settings for basically all types of equalizer apps.
 ### Parametric Equalizers
 Parametric equalizers have filters with user adjustable gain,  center frequency and quality Q. Keep in mind that
 parametric eq accuracy depends on the number of filters available. Usually 10 filters produce very good
-results but as little as 5 can be good enough. Parametric equalizer is typically the safe bet if your system, app or
-player has that available.
+results but as little as 5 can be good enough. Keep in mind that different parametric equalizers will produce different
+outcomes with the same parameter values. Parameters produced by AutoEq are equal with EqualizerAPO using 48 kHz sampling
+rate. When using other equalizers or sampling rates, it's always highly recommended to check that the frequency response
+of the equalizer matches the parametric eq curve in the graphs.
 
 All parametric equalizer except Peace require you to configure the filter parameters manually with the software user
 interface. Some parametric equalizer use filter width (band width) instead of Q. Filter width can be calculated as:
