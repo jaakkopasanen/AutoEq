@@ -63,7 +63,7 @@ class FrequencyResponse:
         self._sort()
 
     def copy(self, name=None):
-        return FrequencyResponse(
+        return self.__class__(
             name=self.name + '_copy' if name is None else name,
             frequency=self._init_data(self.frequency),
             raw=self._init_data(self.raw),
@@ -245,7 +245,7 @@ class FrequencyResponse:
 
     def eqapo_graphic_eq(self, normalize=True, f_step=DEFAULT_GRAPHIC_EQ_STEP):
         """Generates EqualizerAPO GraphicEQ string from equalization curve."""
-        fr = FrequencyResponse(name='hack', frequency=self.frequency, raw=self.equalization)
+        fr = self.__class__(name='hack', frequency=self.frequency, raw=self.equalization)
         n = np.ceil(np.log(20000 / 20) / np.log(f_step))
         f = 20 * f_step**np.arange(n)
         f = np.sort(np.unique(f.astype('int')))
@@ -297,7 +297,7 @@ class FrequencyResponse:
         fs_tf = tf.constant(fs, name='f', dtype='float32')
 
         # Smoothen heavily
-        fr_target = FrequencyResponse(name='Filter Initialization', frequency=frequency, raw=target)
+        fr_target = self.__class__(name='Filter Initialization', frequency=frequency, raw=target)
         fr_target.smoothen_fractional_octave(window_size=1 / 7, iterations=1000)
 
         # Equalization target
@@ -742,7 +742,7 @@ class FrequencyResponse:
         # Double frequency resolution because it will be halved when converting linear phase IR to minimum phase
         f_res /= 2
         # Interpolate to even sample interval
-        fr = FrequencyResponse(name='fr_data', frequency=self.frequency.copy(), raw=self.equalization.copy())
+        fr = self.__class__(name='fr_data', frequency=self.frequency.copy(), raw=self.equalization.copy())
         # Save gain at lowest available frequency
         f_min = np.max([fr.frequency[0], f_res])
         interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
@@ -774,7 +774,7 @@ class FrequencyResponse:
     def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True):
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
-        fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
+        fr = self.__class__(name='fr_data', frequency=self.frequency, raw=self.equalization)
         # Save gain at lowest available frequency
         f_min = np.max([fr.frequency[0], f_res])
         interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
@@ -997,7 +997,7 @@ class FrequencyResponse:
         Returns:
             Gain shifted
         """
-        equal_energy_fr = FrequencyResponse(name='equal_energy', frequency=self.frequency.copy(), raw=self.raw.copy())
+        equal_energy_fr = self.__class__(name='equal_energy', frequency=self.frequency.copy(), raw=self.raw.copy())
         equal_energy_fr.interpolate()
         interpolator = InterpolatedUnivariateSpline(np.log10(equal_energy_fr.frequency), equal_energy_fr.raw, k=1)
         if type(frequency) in [list, np.ndarray] and len(frequency) > 1:
@@ -1078,7 +1078,7 @@ class FrequencyResponse:
                    min_mean_error=False):
         """Sets target and error curves."""
         # Copy and center compensation data
-        compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
+        compensation = self.__class__(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
         compensation.center()
 
         # Set target
@@ -1330,7 +1330,7 @@ class FrequencyResponse:
         elif len(self.error):
             error = self.error
         else:
-            raise ValueError('Error data is missing. Call FrequencyResponse.compensate().')
+            raise ValueError(f'Error data is missing. Call {self.__class__.__name__}.compensate().')
 
         if None in error or None in self.equalization or None in self.equalized_raw:
             # Must not contain None values

@@ -180,50 +180,61 @@ class FrequencyResponseLimited(FrequencyResponse):
         peak_inds, peak_props = find_peaks(y, prominence=1)
         dip_inds, dip_props = find_peaks(-y, prominence=1)
 
-        limit_free_mask = self.protection_mask(y, peak_inds, dip_inds)
-        if concha_interference:
-            # 8 kHz - 11.5 kHz should not be limit free zone
-            limit_free_mask[np.logical_and(x >= 8000, x <= 11500)] = False
+        if not len(peak_inds) and not len(dip_inds):
+            self.equalization = y
+            # Equalized
+            self.equalized_raw = self.raw + self.equalization
+            if len(self.smoothed):
+                self.equalized_smoothed = self.smoothed + self.equalization
+            return y, fr.smoothed.copy(), np.array([]), np.array([False] * len(y)), np.array([]),\
+                np.array([False] * len(y)), np.array([]), np.array([]), len(y) - 1, np.array([False] * len(y))
 
-        # Find backward start index
-        backward_start = self.find_backward_start(y, peak_inds, dip_inds)
+        else:
+            limit_free_mask = self.protection_mask(y, peak_inds, dip_inds)
+            if concha_interference:
+                # 8 kHz - 11.5 kHz should not be limit free zone
+                limit_free_mask[np.logical_and(x >= 8000, x <= 11500)] = False
 
-        # Find forward and backward limitations
-        # limited_forward is y but with slopes limited when traversing left to right
-        # clipped_forward is boolean mask for limited samples when traversing left to right
-        # limited_backward is found using forward algorithm but with flipped data
-        limited_forward, clipped_forward, regions_forward = self.limited_forward_slope(
-            x, y, limit, limit_decay=limit_decay, start_index=0, peak_inds=peak_inds, limit_free_mask=limit_free_mask,
-            concha_interference=concha_interference)
-        limited_backward, clipped_backward, regions_backward = self.limited_backward_slope(
-            x, y, limit, limit_decay=limit_decay, start_index=backward_start, peak_inds=peak_inds,
-            limit_free_mask=limit_free_mask, concha_interference=concha_interference)
+            # Find backward start index
+            backward_start = self.find_backward_start(y, peak_inds, dip_inds)
 
-        # Forward and backward limited curves are combined with min function
-        combined = self.__class__(
-            name='limiter', frequency=x, raw=np.min(np.vstack([limited_forward, limited_backward]), axis=0))
-        # Gain can be reduced in the treble region
-        # Clip positive gain to max gain
-        combined.raw = np.min(np.vstack([combined.raw, np.ones(combined.raw.shape) * max_gain]), axis=0)
-        # Smoothen the curve to get rid of hard kinks
-        combined.smoothen_fractional_octave(window_size=1 / 5, treble_window_size=1 / 5)
+            # Find forward and backward limitations
+            # limited_forward is y but with slopes limited when traversing left to right
+            # clipped_forward is boolean mask for limited samples when traversing left to right
+            # limited_backward is found using forward algorithm but with flipped data
+            limited_forward, clipped_forward, regions_forward = self.limited_forward_slope(
+                x, y, limit, limit_decay=limit_decay, start_index=0, peak_inds=peak_inds,
+                limit_free_mask=limit_free_mask, concha_interference=concha_interference)
+            limited_backward, clipped_backward, regions_backward = self.limited_backward_slope(
+                x, y, limit, limit_decay=limit_decay, start_index=backward_start, peak_inds=peak_inds,
+                limit_free_mask=limit_free_mask, concha_interference=concha_interference)
 
-        # TODO: Fix trend by comparing super heavy smoothed equalizer frequency responses: limited vs unlimited
+            # Forward and backward limited curves are combined with min function
+            combined = self.__class__(
+                name='limiter', frequency=x, raw=np.min(np.vstack([limited_forward, limited_backward]), axis=0))
+            # Gain can be reduced in the treble region
+            # Clip positive gain to max gain
+            combined.raw = np.min(np.vstack([combined.raw, np.ones(combined.raw.shape) * max_gain]), axis=0)
+            # Smoothen the curve to get rid of hard kinks
+            combined.smoothen_fractional_octave(window_size=1 / 5, treble_window_size=1 / 5)
 
-        # Equalization curve
-        self.equalization = combined.smoothed
+            # TODO: Fix trend by comparing super heavy smoothed equalizer frequency responses: limited vs unlimited
+
+            # Equalization curve
+            self.equalization = combined.smoothed
+
         # Equalized
         self.equalized_raw = self.raw + self.equalization
         if len(self.smoothed):
             self.equalized_smoothed = self.smoothed + self.equalization
 
         return combined.smoothed.copy(), fr.smoothed.copy(), limited_forward, clipped_forward, limited_backward,\
-               clipped_backward, peak_inds, dip_inds, backward_start, limit_free_mask
+            clipped_backward, peak_inds, dip_inds, backward_start, limit_free_mask
 
     @staticmethod
     def protection_mask(y, peak_inds, dip_inds):
-        """Finds zones around dips which are lower than their adjacent dips. Zones extend to the lower level of the adjacent
-        dips.
+        """Finds zones around dips which are lower than their adjacent dips. Zones extend to the lower level of the
+        adjacent dips.
 
         Args:
             y: amplitudes
@@ -233,7 +244,7 @@ class FrequencyResponseLimited(FrequencyResponse):
         Returns:
             Boolean mask for limitation-free indices
         """
-        if peak_inds[-1] > dip_inds[-1]:
+        if len(peak_inds) and (not len(dip_inds) or peak_inds[-1] > dip_inds[-1]):
             # Last peak is after last dip, add new dip after the last peak at the minimum
             last_dip_ind = np.argmin(y[peak_inds[-1]:]) + peak_inds[-1]
             dip_inds = np.concatenate([dip_inds, [last_dip_ind]])
@@ -372,17 +383,21 @@ class FrequencyResponseLimited(FrequencyResponse):
         return gain / octaves
 
     @staticmethod
-    def find_backward_start(y, peak_inds, notch_inds):
+    def find_backward_start(y, peak_inds, dip_inds):
         # Find starting index for the backward pass
-        if peak_inds[-1] > notch_inds[-1]:
+        if len(peak_inds) and (not len(dip_inds) or peak_inds[-1] > dip_inds[-1]):
             # Last peak is a positive peak
-            # Find index on the right side of the peak where the curve crosses the left side minimum
-            backward_start = np.argwhere(y[peak_inds[-1]:] <= y[notch_inds[-1]])
+            if len(dip_inds):
+                # Find index on the right side of the peak where the curve crosses the last dip level
+                backward_start = np.argwhere(y[peak_inds[-1]:] <= y[dip_inds[-1]])
+            else:
+                # There are no dips, use the minimum of the first and the last value of y
+                backward_start = np.argwhere(y[peak_inds[-1]:] <= max(y[0], y[-1]))
             if len(backward_start):
                 backward_start = backward_start[0, 0] + peak_inds[-1]
             else:
                 backward_start = len(y) - 1
         else:
             # Last peak is a negative peak, start there
-            backward_start = notch_inds[-1]
+            backward_start = dip_inds[-1]
         return backward_start
