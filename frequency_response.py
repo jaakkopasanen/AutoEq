@@ -272,8 +272,8 @@ class FrequencyResponse:
             f.write(s)
         return s
 
-    @staticmethod
-    def optimize_biquad_filters(frequency, target, max_time=5, max_filters=None, fs=DEFAULT_FS, fc=None, q=None):
+    @classmethod
+    def optimize_biquad_filters(cls, frequency, target, max_time=5, max_filters=None, fs=DEFAULT_FS, fc=None, q=None):
         os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
         import tensorflow.compat.v1 as tf
         tf.get_logger().setLevel('ERROR')
@@ -297,7 +297,7 @@ class FrequencyResponse:
         fs_tf = tf.constant(fs, name='f', dtype='float32')
 
         # Smoothen heavily
-        fr_target = self.__class__(name='Filter Initialization', frequency=frequency, raw=target)
+        fr_target = cls(name='Filter Initialization', frequency=frequency, raw=target)
         fr_target.smoothen_fractional_octave(window_size=1 / 7, iterations=1000)
 
         # Equalization target
