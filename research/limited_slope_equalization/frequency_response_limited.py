@@ -148,7 +148,7 @@ class FrequencyResponseLimited(FrequencyResponse):
                  treble_window_size=2,
                  treble_f_lower=DEFAULT_TREBLE_F_LOWER,
                  treble_f_upper=DEFAULT_TREBLE_F_UPPER):
-        """Bi-directional slope limitation for a frequency response curve
+        """Creates equalization curve and equalized curve.
 
         Args:
             max_gain: Maximum positive gain in dB
@@ -195,23 +195,23 @@ class FrequencyResponseLimited(FrequencyResponse):
                 # 8 kHz - 11.5 kHz should not be limit free zone
                 limit_free_mask[np.logical_and(x >= 8000, x <= 11500)] = False
 
-            # Find backward start index
-            backward_start = self.find_backward_start(y, peak_inds, dip_inds)
+            # Find rtl start index
+            rtl_start = self.find_rtl_start(y, peak_inds, dip_inds)
 
-            # Find forward and backward limitations
-            # limited_forward is y but with slopes limited when traversing left to right
-            # clipped_forward is boolean mask for limited samples when traversing left to right
-            # limited_backward is found using forward algorithm but with flipped data
-            limited_forward, clipped_forward, regions_forward = self.limited_forward_slope(
+            # Find ltr and rtl limitations
+            # limited_ltr is y but with slopes limited when traversing left to right
+            # clipped_ltr is boolean mask for limited samples when traversing left to right
+            # limited_rtl is found using ltr algorithm but with flipped data
+            limited_ltr, clipped_ltr, regions_ltr = self.limited_ltr_slope(
                 x, y, limit, limit_decay=limit_decay, start_index=0, peak_inds=peak_inds,
                 limit_free_mask=limit_free_mask, concha_interference=concha_interference)
-            limited_backward, clipped_backward, regions_backward = self.limited_backward_slope(
-                x, y, limit, limit_decay=limit_decay, start_index=backward_start, peak_inds=peak_inds,
+            limited_rtl, clipped_rtl, regions_rtl = self.limited_rtl_slope(
+                x, y, limit, limit_decay=limit_decay, start_index=rtl_start, peak_inds=peak_inds,
                 limit_free_mask=limit_free_mask, concha_interference=concha_interference)
 
-            # Forward and backward limited curves are combined with min function
+            # ltr and rtl limited curves are combined with min function
             combined = self.__class__(
-                name='limiter', frequency=x, raw=np.min(np.vstack([limited_forward, limited_backward]), axis=0))
+                name='limiter', frequency=x, raw=np.min(np.vstack([limited_ltr, limited_rtl]), axis=0))
             # Gain can be reduced in the treble region
             # Clip positive gain to max gain
             combined.raw = np.min(np.vstack([combined.raw, np.ones(combined.raw.shape) * max_gain]), axis=0)
@@ -228,13 +228,12 @@ class FrequencyResponseLimited(FrequencyResponse):
         if len(self.smoothed):
             self.equalized_smoothed = self.smoothed + self.equalization
 
-        return combined.smoothed.copy(), fr.smoothed.copy(), limited_forward, clipped_forward, limited_backward,\
-            clipped_backward, peak_inds, dip_inds, backward_start, limit_free_mask
+        return combined.smoothed.copy(), fr.smoothed.copy(), limited_ltr, clipped_ltr, limited_rtl,\
+            clipped_rtl, peak_inds, dip_inds, rtl_start, limit_free_mask
 
     @staticmethod
     def protection_mask(y, peak_inds, dip_inds):
-        """Finds zones around dips which are lower than their adjacent dips. Zones extend to the lower level of the
-        adjacent dips.
+        """Finds zones around dips which are lower than their adjacent dips.
 
         Args:
             y: amplitudes
@@ -269,9 +268,9 @@ class FrequencyResponseLimited(FrequencyResponse):
         return mask
 
     @classmethod
-    def limited_backward_slope(cls, x, y, limit, limit_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None,
-                               concha_interference=False):
-        """Limits forwards slope of a frequency response curve while traversing backwards
+    def limited_rtl_slope(cls, x, y, limit, limit_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None,
+                          concha_interference=False):
+        """Limits right to left slope of an equalization curve.
 
             Args:
                 x: frequencies
@@ -293,18 +292,18 @@ class FrequencyResponseLimited(FrequencyResponse):
             peak_inds = len(x) - peak_inds - 1
         if limit_free_mask is not None:
             limit_free_mask = np.flip(limit_free_mask)
-        limited_backward, clipped_backward, regions_backward = cls.limited_forward_slope(
+        limited_rtl, clipped_rtl, regions_rtl = cls.limited_ltr_slope(
             x, np.flip(y), limit, limit_decay=limit_decay, start_index=start_index, peak_inds=peak_inds,
             limit_free_mask=limit_free_mask, concha_interference=concha_interference)
-        limited_backward = np.flip(limited_backward)
-        clipped_backward = np.flip(clipped_backward)
-        regions_backward = len(x) - regions_backward - 1
-        return limited_backward, clipped_backward, regions_backward
+        limited_rtl = np.flip(limited_rtl)
+        clipped_rtl = np.flip(clipped_rtl)
+        regions_rtl = len(x) - regions_rtl - 1
+        return limited_rtl, clipped_rtl, regions_rtl
 
     @classmethod
-    def limited_forward_slope(cls, x, y, limit, limit_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None,
-                              concha_interference=False):
-        """Limits forwards slope of a frequency response curve
+    def limited_ltr_slope(cls, x, y, limit, limit_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None,
+                          concha_interference=False):
+        """Limits left to right slope of a equalization curve.
 
         Args:
             x: frequencies
@@ -378,26 +377,37 @@ class FrequencyResponseLimited(FrequencyResponse):
 
     @staticmethod
     def log_log_gradient(f0, f1, g0, g1):
+        """Calculates gradient (derivative) in dB per octave."""
         octaves = np.log(f1 / f0) / np.log(2)
         gain = g1 - g0
         return gain / octaves
 
     @staticmethod
-    def find_backward_start(y, peak_inds, dip_inds):
-        # Find starting index for the backward pass
+    def find_rtl_start(y, peak_inds, dip_inds):
+        """Finds start index for right to left equalization curve traverse.
+
+        Args:
+            y: Gain data
+            peak_inds: Indices of peaks in the gain data
+            dip_inds: Indices of dips in the gain data
+
+        Returns:
+            Start index
+        """
+        # Find starting index for the rtl pass
         if len(peak_inds) and (not len(dip_inds) or peak_inds[-1] > dip_inds[-1]):
             # Last peak is a positive peak
             if len(dip_inds):
                 # Find index on the right side of the peak where the curve crosses the last dip level
-                backward_start = np.argwhere(y[peak_inds[-1]:] <= y[dip_inds[-1]])
+                rtl_start = np.argwhere(y[peak_inds[-1]:] <= y[dip_inds[-1]])
             else:
                 # There are no dips, use the minimum of the first and the last value of y
-                backward_start = np.argwhere(y[peak_inds[-1]:] <= max(y[0], y[-1]))
-            if len(backward_start):
-                backward_start = backward_start[0, 0] + peak_inds[-1]
+                rtl_start = np.argwhere(y[peak_inds[-1]:] <= max(y[0], y[-1]))
+            if len(rtl_start):
+                rtl_start = rtl_start[0, 0] + peak_inds[-1]
             else:
-                backward_start = len(y) - 1
+                rtl_start = len(y) - 1
         else:
             # Last peak is a negative peak, start there
-            backward_start = dip_inds[-1]
-        return backward_start
+            rtl_start = dip_inds[-1]
+        return rtl_start
