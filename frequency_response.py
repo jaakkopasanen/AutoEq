@@ -63,7 +63,7 @@ class FrequencyResponse:
         self._sort()
 
     def copy(self, name=None):
-        return FrequencyResponse(
+        return self.__class__(
             name=self.name + '_copy' if name is None else name,
             frequency=self._init_data(self.frequency),
             raw=self._init_data(self.raw),
@@ -210,7 +210,7 @@ class FrequencyResponse:
                     raw.append(float(floats[1]))  # Assume second to be raw
                 # Discard all lines which don't match data pattern
             return cls(name=name, frequency=frequency, raw=raw)
-    
+
     def to_dict(self):
         d = dict()
         if len(self.frequency):
@@ -245,7 +245,7 @@ class FrequencyResponse:
 
     def eqapo_graphic_eq(self, normalize=True, f_step=DEFAULT_GRAPHIC_EQ_STEP):
         """Generates EqualizerAPO GraphicEQ string from equalization curve."""
-        fr = FrequencyResponse(name='hack', frequency=self.frequency, raw=self.equalization)
+        fr = self.__class__(name='hack', frequency=self.frequency, raw=self.equalization)
         n = np.ceil(np.log(20000 / 20) / np.log(f_step))
         f = 20 * f_step**np.arange(n)
         f = np.sort(np.unique(f.astype('int')))
@@ -272,8 +272,8 @@ class FrequencyResponse:
             f.write(s)
         return s
 
-    @staticmethod
-    def optimize_biquad_filters(frequency, target, max_time=5, max_filters=None, fs=DEFAULT_FS, fc=None, q=None):
+    @classmethod
+    def optimize_biquad_filters(cls, frequency, target, max_time=5, max_filters=None, fs=DEFAULT_FS, fc=None, q=None):
         os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
         import tensorflow.compat.v1 as tf
         tf.get_logger().setLevel('ERROR')
@@ -297,7 +297,7 @@ class FrequencyResponse:
         fs_tf = tf.constant(fs, name='f', dtype='float32')
 
         # Smoothen heavily
-        fr_target = FrequencyResponse(name='Filter Initialization', frequency=frequency, raw=target)
+        fr_target = cls(name='Filter Initialization', frequency=frequency, raw=target)
         fr_target.smoothen_fractional_octave(window_size=1 / 7, iterations=1000)
 
         # Equalization target
@@ -684,6 +684,29 @@ class FrequencyResponse:
                 s += f'Filter {i+1}: ON PK Fc {filt[0]:.0f} Hz Gain {filt[2]:.1f} dB Q {filt[1]:.2f}\n'
             f.write(s)
 
+    def write_rockbox_10_band_fixed_eq(self, file_path, filters, preamp=None):
+        """Writes Rockbox 10 band eq settings to a file."""
+        file_path = os.path.abspath(file_path)
+
+        if preamp is None:
+            # Calculate preamp from the cascade frequency response
+            fr = np.zeros(self.frequency.shape)
+            for filt in filters:
+                a0, a1, a2, b0, b1, b2 = biquad.peaking(filt[0], filt[1], filt[2], fs=44100)
+                fr += biquad.digital_coeffs(self.frequency, 44100, a0, a1, a2, b0, b1, b2)
+            preamp = np.min([0.0, -(np.max(fr) + PREAMP_HEADROOM)])
+
+        with open(file_path, 'w', encoding='utf-8') as f:
+            s = f'eq enabled: on\neq precut: {round(abs(preamp), 1) * 10:.0f}\n'
+            for i, filt in enumerate(filters):
+                if i == 0:
+                    s += f'eq low shelf filter: {filt[0]:.0f}, {round(filt[1], 1) * 10:.0f}, {round(filt[2], 1) * 10:.0f}\n'
+                elif i == len(filters) - 1:
+                    s += f'eq high shelf filter: {filt[0]:.0f}, {round(filt[1], 1) * 10:.0f}, {round(filt[2], 1) * 10:.0f}\n'
+                else:
+                    s += f'eq peak filter {i}: {filt[0]:.0f}, {round(filt[1], 1) * 10:.0f}, {round(filt[2], 1) * 10:.0f}\n'
+            f.write(s)
+
     @staticmethod
     def _split_path(path):
         """Splits file system path into components."""
@@ -719,7 +742,7 @@ class FrequencyResponse:
         # Double frequency resolution because it will be halved when converting linear phase IR to minimum phase
         f_res /= 2
         # Interpolate to even sample interval
-        fr = FrequencyResponse(name='fr_data', frequency=self.frequency.copy(), raw=self.equalization.copy())
+        fr = self.__class__(name='fr_data', frequency=self.frequency.copy(), raw=self.equalization.copy())
         # Save gain at lowest available frequency
         f_min = np.max([fr.frequency[0], f_res])
         interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
@@ -751,7 +774,7 @@ class FrequencyResponse:
     def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True):
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
-        fr = FrequencyResponse(name='fr_data', frequency=self.frequency, raw=self.equalization)
+        fr = self.__class__(name='fr_data', frequency=self.frequency, raw=self.equalization)
         # Save gain at lowest available frequency
         f_min = np.max([fr.frequency[0], f_res])
         interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
@@ -974,7 +997,7 @@ class FrequencyResponse:
         Returns:
             Gain shifted
         """
-        equal_energy_fr = FrequencyResponse(name='equal_energy', frequency=self.frequency.copy(), raw=self.raw.copy())
+        equal_energy_fr = self.__class__(name='equal_energy', frequency=self.frequency.copy(), raw=self.raw.copy())
         equal_energy_fr.interpolate()
         interpolator = InterpolatedUnivariateSpline(np.log10(equal_energy_fr.frequency), equal_energy_fr.raw, k=1)
         if type(frequency) in [list, np.ndarray] and len(frequency) > 1:
@@ -1055,7 +1078,7 @@ class FrequencyResponse:
                    min_mean_error=False):
         """Sets target and error curves."""
         # Copy and center compensation data
-        compensation = FrequencyResponse(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
+        compensation = self.__class__(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
         compensation.center()
 
         # Set target
@@ -1151,7 +1174,7 @@ class FrequencyResponse:
         with warnings.catch_warnings():
             # Savgol filter uses array indexing which is not future proof, ignoring the warning and trusting that this
             # will be fixed in the future release
-            warnings.simplefilter("ignore")
+            warnings.simplefilter('ignore')
             for i in range(iterations):
                 y_normal = savgol_filter(y_normal, self._window_size(window_size), 2)
 
@@ -1307,7 +1330,7 @@ class FrequencyResponse:
         elif len(self.error):
             error = self.error
         else:
-            raise ValueError('Error data is missing. Call FrequencyResponse.compensate().')
+            raise ValueError(f'Error data is missing. Call {self.__class__.__name__}.compensate().')
 
         if None in error or None in self.equalization or None in self.equalized_raw:
             # Must not contain None values
@@ -1467,12 +1490,14 @@ class FrequencyResponse:
         ax.semilogx()
         ax.set_xlim([f_min, f_max])
         ax.set_ylabel('Amplitude (dBr)')
-        ax.set_ylim([a_min, a_max])
+        if a_min is not None or a_max is not None:
+            ax.set_ylim([a_min, a_max])
         ax.set_title(self.name)
         ax.legend(fontsize=8)
         ax.grid(True, which='major')
         ax.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
+        ax.set_xticks([20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000])
         if file_path is not None:
             file_path = os.path.abspath(file_path)
             fig.savefig(file_path, dpi=120)
@@ -1537,6 +1562,7 @@ class FrequencyResponse:
                 equalize=False,
                 parametric_eq=False,
                 fixed_band_eq=False,
+                rockbox=False,
                 fc=None,
                 q=None,
                 ten_band_eq=None,
@@ -1611,6 +1637,9 @@ class FrequencyResponse:
         if fixed_band_eq and not equalize:
             raise ValueError('equalize must be True when fixed_band_eq or ten_band_eq is True.')
 
+        if rockbox and not ten_band_eq:
+            raise ValueError('ten_band_eq must be True when rockbox is True.')
+
         if max_filters is not None and type(max_filters) != list:
             max_filters = [max_filters]
 
@@ -1633,7 +1662,6 @@ class FrequencyResponse:
             )
 
         # Smooth data
-        self.smoothen_heavy_light()
         self.smoothen_fractional_octave(
             window_size=1/3,
             treble_window_size=1.4,

@@ -154,6 +154,7 @@ Audeze Mobius (bluetooth)	Audeze Mobius (wireless)	onear
 Audeze Sine	Audeze SINE	onear
 Audio-Technica AHT-EP3	Audio-Technica ATH-EP3	inear
 Audio-Technica ATH-A1000X	Audio-Technica ATH-A1000X	onear
+Audio-Technica ATH-A1000Z	Audio-Technica ATH-A1000Z	onear
 Audio-Technica ATH-A500	Audio-Technica ATH-A500	onear
 Audio-Technica ATH-A550Z	Audio-Technica ATH-A550Z	onear
 Audio-Technica ATH-A700X	Audio-Technica ATH-A700X	onear
@@ -213,6 +214,7 @@ Audio-Technica FAKE ATH-FC700		ignore
 Audiofly AF33	AudioFly AF33	inear
 Audiofly AF45	AudioFly AF45	inear
 Audiofly AF56	AudioFly AF56	inear
+AUDIOSENSE T800	Audiosense T800	inear
 AuGlamour AT-1	AuGlamour AT-1	inear
 AuGlamour AT-1 (closed vent)	AuGlamour AT-1 (closed vent)	inear
 AuGlamour R8	AuGlamour R8	inear
@@ -439,6 +441,9 @@ Earsonics S-EM6 V2	EarSonics S-EM6 V2	inear
 Earsonics SM3v2	EarSonics SM3 v2	inear
 Earsonics SM64	EarSonics SM64	inear
 Earsonics Velvet	EarSonics Velvet	inear
+EarSonics Velvet (0)	EarSonics Velvet (warm)	inear
+EarSonics Velvet (100)	EarSonics Velvet (tight)	inear
+EarSonics Velvet (50)	EarSonics Velvet (standard)	inear
 Echo TDS 16	Echo TDS 16	onear
 Elecom EHP CL430	ELECOM EHP CL430	onear
 Electronica TDS-5m	Electronica TDS-5m	onear
@@ -554,8 +559,8 @@ FitEar 335 DW	FitEar 335 DW	inear
 Flare Audio Flares Gold (cone tips)	Flare Audio Flares Gold (cone tips)	inear
 Flare Audio Flares Gold (ordinary tips)	Flare Audio Flares Gold (ordinary tips)	inear
 Flares Gold	Flare Audio Flares Gold	inear
-FLC 8d	FLC Technology 8D	inear
 FLC 8D	FLC Technology 8D	inear
+FLC 8d	FLC Technology 8D	inear
 FLC 8N	FLC Technology 8N	inear
 FLC 8S	FLC Technology 8S	inear
 FLC Technology 8D (black)	FLC Technology 8D (black)	inear
@@ -609,8 +614,8 @@ Gerkules HDP DJ-PRO M1001	Gerkules HDP DJ-PRO M1001	onear
 German Maestro GMP 240	German Maestro GMP 240	onear
 German Maestro GMP 250	German Maestro GMP 250	onear
 German Maestro GMP 400	German Maestro GMP 400	onear
-German Maestro GMP 450 PRO	German Maestro GMP 450 PRO	onear
 German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
+German Maestro GMP 450 PRO	German Maestro GMP 450 PRO	onear
 German Maestro GMP 8.300 D	German Maestro GMP 8.300 D	onear
 German Maestro GMP 8.35 D	German Maestro GMP 8.35 D	onear
 Grado eGrado	Grado eGrado	onear
@@ -672,6 +677,7 @@ HiFiMan RE 800	HIFIMAN RE800	inear
 HiFiMan RE0	HIFIMAN RE0	inear
 HiFiMan Re2	HIFIMAN RE2	inear
 HiFiMan ReZero	HIFIMAN RE-ZERO	inear
+HiFiMan Sundara	HIFIMAN Sundara	onear
 Huawei  AM 12 plus	Huawei  AM 12 plus	inear
 iBasso AM05	iBasso AM05	inear
 iBasso IT00	iBasso IT00	inear
@@ -679,6 +685,7 @@ iBasso IT01	iBasso IT01	inear
 iBasso IT01s	iBasso IT01S	inear
 iBasso IT03	iBasso IT03	inear
 iBasso IT04	iBasso IT04	inear
+iBasso IT07	iBasso IT07	inear
 iBasso SR2	iBasso SR2	
 Ice Lab EX3	Ice Lab EX3	inear
 ikko OH-1	IKKO OH1	inear
@@ -733,6 +740,7 @@ Kennerton IKIZ	Kennerton IKIZ	inear
 Kennerton Jimo	Kennerton Jimo	inear
 Kennerton Jord	Kennerton Jord	onear
 Kennerton Laguz	Kennerton Laguz	inear
+Kennerton M12	Kennerton M12	onear
 Kennerton Magister Pro	Kennerton Magister Pro	onear
 Kennerton Magni	Kennerton Magni	onear
 Kennerton Odin	Kennerton Odin	onear
@@ -875,8 +883,8 @@ Musical Fidelity EB-50	Musical Fidelity EB-50	inear
 MyST Gatling	MyST Gatling	onear
 MyST Izo-OS	MyST Izo-OS	onear
 MyST IzoEM-1		ignore
-MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30		ignore
+MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
@@ -1097,6 +1105,7 @@ Simgot MT3 Meeture	Simgot Audio Meeture MT3	inear
 Sivga Audio P-II	Sivga Audio P-II	onear
 Sivga Audio Phoenix	Sivga Audio Phoenix	onear
 Skullcandy SK Pro	Skullcandy SK Pro	onear
+Snorry NM-1	Snorry NM-1	onear
 Sony 10RBT	Sony MDR-10RBT	onear
 Sony CD3000	Sony MDR-CD3000	onear
 Sony Fake MDR V 700 		ignore
@@ -1183,6 +1192,14 @@ Takstar PRO 82	Takstar Pro 80	onear
 TANCHJIM Blues	Tanchjim Blues	inear
 TANCHJIM Oxygen	Tanchjim Oxygen	inear
 Tansio Mirai TSMR-4 Pro	Tansio Mirai TSMR-4 Pro	inear
+Tansio Mirai TSMR-8 Space (off-off-off)	Tansio Mirai TSMR-8 Space (off-off-off)	inear
+Tansio Mirai TSMR-8 Space (off-off-on)	Tansio Mirai TSMR-8 Space (off-off-on)	inear
+Tansio Mirai TSMR-8 Space (off-on-off)	Tansio Mirai TSMR-8 Space (off-on-off)	inear
+Tansio Mirai TSMR-8 Space (off-on-on)	Tansio Mirai TSMR-8 Space (off-on-on)	inear
+Tansio Mirai TSMR-8 Space (on-off-off)	Tansio Mirai TSMR-8 Space (on-off-off)	inear
+Tansio Mirai TSMR-8 Space (on-off-on)	Tansio Mirai TSMR-8 Space (on-off-on)	inear
+Tansio Mirai TSMR-8 Space (on-on-off)	Tansio Mirai TSMR-8 Space (on-on-off)	inear
+Tansio Mirai TSMR-8 Space (on-on-on)	Tansio Mirai TSMR-8 Space (on-on-on)	inear
 Tansio Mirai TSMR8 Space	Tansio Mirai TSMR-8 Space	inear
 TDK BA-200	TDK BA200	inear
 Technics RP-F880	Technics RP-F880	onear
@@ -1286,10 +1303,10 @@ Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
-Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
+Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear
 Whizzer TP1 (closed vent)	Whizzer TP1 (closed vent)	inear
 Whizzer TP1s	Whizzer TP1s	inear

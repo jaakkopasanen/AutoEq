@@ -54,6 +54,7 @@ A2e	64 Audio A2e	inear
 A2H V2	AAW A2H V2	inear
 A3H	AAW A3H	inear
 A3H 2019	AAW A3H 2019	inear
+A3H Plus	AAW (Advanced AcousticWerkes) A3H Plus	inear
 A3H V2	AAW A3H V2	inear
 A40 TR	ASTRO Gaming A40 TR	onear
 A4t	64 Audio A4t	inear
@@ -102,6 +103,7 @@ AH-D5200	Denon AH-D5200	onear
 AH-D7200	Denon AH-D7200	onear
 AH-D9200	Denon AH-D9200	onear
 Air 2	FitEar Air 2	inear
+AirPods Max	Apple AirPods Max	onear
 AirPods Pro	Apple AirPods Pro	inear
 Aiva	Sendy Aiva	onear
 AM05	iBasso AM05	inear
@@ -309,6 +311,7 @@ Donguri Keyaki	Ocharaku Donguri Keyaki	inear
 Donguri Ti Plus	Ocharaku Donguri Ti Plus	inear
 Doppio	Zero Audio Carbo Doppio ZH-BX700	inear
 Dorado	Campfire Audio Dorado	inear
+Dorado 2020	Campfire Audio Dorado 2020	inear
 Dream	Dita Audio Dream (sample 1)	inear
 Dream S2	Dita Audio Dream (sample 2)	inear
 Dream XLS	Dita Audio Dream XLS	inear
@@ -459,6 +462,8 @@ FDX1 Green	JVC HA-FDX1 (green)	inear
 FDX1 Stock	JVC HA-FDX1	inear
 Fealty	Dita Audio Fealty	inear
 FH1	FiiO FH1	inear
+FH1S	FiiO FH1s	inear
+FH3	FiiO FH3	inear
 FH5	FiiO FH5 (sample 1)	inear
 FH5 S2	FiiO FH5 (sample 2)	inear
 FH7	FiiO FH7	inear
@@ -572,8 +577,8 @@ HE200	Fengru HE-200	inear
 HE400i (2016)	HIFIMAN HE400i 2016	onear
 HE400i (2020)	HIFIMAN HE400i 2020	onear
 HE560	HIFIMAN HE560 V1	onear
-HE5se	HIFIMAN HE5se	onear
 HE5SE	HIFIMAN HE5se	onear
+HE5se	HIFIMAN HE5se	onear
 HE6 (6-screw) (Velour)	HIFIMAN HE6 (6-screw, velour earpads)	onear
 Heaven 4	Final Audio Heaven 4	inear
 Heaven 7	Final Audio Heaven 7	inear
@@ -837,6 +842,7 @@ ME04	Meccaudio ME04	inear
 ME1	Unique Melody ME1	inear
 ME100	Shanling ME100	inear
 ME20	Meccaudio ME20	inear
+ME200	Shanling ME200	inear
 ME500	Shanling ME500	inear
 ME700	Shanling ME700	inear
 Mellianus	Oriolus Mellianus	inear
@@ -904,6 +910,7 @@ MW07 Go	Master & Dynamic MW07 Go	inear
 MW07 Plus	Master & Dynamic MW07 Plus	inear
 MX-4	Audeze MX-4	onear
 Mylove	TFZ Mylove 2	inear
+MYSPHERE 3.2	MySphere 3.2	onear
 N3AP	Sony XBA-N3AP	inear
 N400NC	AKG N400	inear
 N5005 Bass Boost	AKG N5005 (bass boost)	inear
@@ -1061,6 +1068,7 @@ R3 C	Itsfit Lab R3 (CIEM)	inear
 R70x	Audio-Technica ATH-R70x	onear
 Ra C-Cu	oBravo Ra C-Cu	inear
 RAD-0	Rosson Audio Design RAD-0	onear
+Radiance	Focal Radiance	onear
 Radiante	Spirit Torino Radiante	onear
 RAH Black-black	IMR Acoustics RAH (black nozzle, black filter)	inear
 RAH Black-blue	IMR Acoustics RAH (blue nozzle, black filter)	inear
@@ -1218,6 +1226,7 @@ Stark	EarSonics Stark	inear
 Start	Fearless Audio Start	inear
 Stella	Light Harmonic Stella	inear
 Stellia	Focal Stellia	onear
+Storm	Aur Audio Storm	inear
 Stylish	1MORE Stylish	inear
 Sultan	Noble Audio Sultan	inear
 Sundara	HIFIMAN Sundara	onear
@@ -1243,8 +1252,8 @@ T800	Audiosense T800	inear
 T8iE Mk1	Astell & Kern T8iE Mk1 (sample 1)	inear
 T8iE Mk1 S2	Astell & Kern T8iE Mk1 (sample 2)	inear
 Tango	Jomo Audio Tango	inear
-Taobao 3 Driver	Taobao 3 driver	inear
 Taobao 3 driver	Taobao 3 driver	inear
+Taobao 3 Driver	Taobao 3 driver	inear
 Taobao 6 Driver	Taobao 6 driver	inear
 Tape	Shuoer Tape	inear
 Tape Pro	Shuoer Tape Pro	inear
@@ -1294,14 +1303,14 @@ TrueConnect	RHA TrueConnect	inear
 TrueLevel		ignore
 Truth	Dita Audio Truth	inear
 TSH-HR1000K	fineEars TSH-HR1000K	inear
-TSMR-3 Pro 000	Tansio Mirai TSMR-3 Pro 000	inear
-TSMR-3 Pro 003	Tansio Mirai TSMR-3 Pro 003	inear
-TSMR-3 Pro 020	Tansio Mirai TSMR-3 Pro 020	inear
-TSMR-3 Pro 023	Tansio Mirai TSMR-3 Pro 023	inear
-TSMR-3 Pro 100	Tansio Mirai TSMR-3 Pro 100	inear
-TSMR-3 Pro 103	Tansio Mirai TSMR-3 Pro 103	inear
-TSMR-3 Pro 120	Tansio Mirai TSMR-3 Pro 120	inear
-TSMR-3 Pro 123	Tansio Mirai TSMR-3 Pro 123	inear
+TSMR-3 Pro 000	Tansio Mirai TSMR-3 Pro (off-off-off)	inear
+TSMR-3 Pro 003	Tansio Mirai TSMR-3 Pro (off-off-on)	inear
+TSMR-3 Pro 020	Tansio Mirai TSMR-3 Pro (off-on-off)	inear
+TSMR-3 Pro 023	Tansio Mirai TSMR-3 Pro (off-on-on)	inear
+TSMR-3 Pro 100	Tansio Mirai TSMR-3 Pro (on-off-off)	inear
+TSMR-3 Pro 103	Tansio Mirai TSMR-3 Pro (on-off-on)	inear
+TSMR-3 Pro 120	Tansio Mirai TSMR-3 Pro (on-on-off)	inear
+TSMR-3 Pro 123	Tansio Mirai TSMR-3 Pro (on-on-on)	inear
 TSMR-5 003	Tansio Mirai TSMR-5 (off-off-on)	inear
 TSMR-5 020	Tansio Mirai TSMR-5 (off-on-off)	inear
 TSMR-5 100	Tansio Mirai TSMR-5 (on-off-off)	inear
@@ -1374,6 +1383,7 @@ VE8	Vision Ears VE8	inear
 VE8 C	Vision Ears VE8 (CIEM)	inear
 VE8 C S2	Vision Ears VE8 (CIEM)	inear
 Vega	Campfire Audio Vega (sample 1)	inear
+Vega 2020	Campfire Audio Vega 2020	inear
 Vega S2	Campfire Audio Vega (sample 2)	inear
 Velver Tight		ignore
 Velver Warm		ignore
@@ -1405,6 +1415,7 @@ VS7	VSonic VS7	inear
 VSD1S	VSonic VSD1S	inear
 VSD2S	VSonic VSD2S	inear
 VSD3S	VSonic VSD3S	inear
+VxV	Fir Audio VxV	inear
 W10	Westone W10	inear
 W20	Westone W20	inear
 W30	Westone W30	inear
@@ -1450,10 +1461,10 @@ Zeus	Empire Ears Zeus	inear
 Zeus-R	Empire Ears Zeus-R	inear
 Zeus-XIV	Empire Ears Zeus-XIV	inear
 Zeus-XIV S2	Empire Ears Zeus-XIV	inear
-Zodiac 003	Tansio Mirai TSMR-12 (003 setting)	inear
-Zodiac 020	Tansio Mirai TSMR-12 (020 setting)	inear
-Zodiac 100	Tansio Mirai TSMR-12 (100 setting)	inear
-Zodiac 123	Tansio Mirai TSMR-12 (123 setting)	inear
+Zodiac 003	Tansio Mirai TSMR-12 (off-off-on)	inear
+Zodiac 020	Tansio Mirai TSMR-12 (off-on-off)	inear
+Zodiac 100	Tansio Mirai TSMR-12 (on-off-off)	inear
+Zodiac 123	Tansio Mirai TSMR-12 (on-on-on)	inear
 ZS10 Pro	KZ ZS10 Pro	inear
 ZS3	KZ ZS3	inear
 ZS3 S2	KZ ZS3	inear
