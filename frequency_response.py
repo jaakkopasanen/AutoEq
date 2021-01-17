@@ -1312,7 +1312,8 @@ class FrequencyResponse:
                  window_size=1 / 12,
                  treble_window_size=2,
                  treble_f_lower=DEFAULT_TREBLE_F_LOWER,
-                 treble_f_upper=DEFAULT_TREBLE_F_UPPER):
+                 treble_f_upper=DEFAULT_TREBLE_F_UPPER,
+                 treble_gain_k=DEFAULT_TREBLE_GAIN_K):
         """Creates equalization curve and equalized curve.
 
         Args:
@@ -1327,6 +1328,8 @@ class FrequencyResponse:
                             switched to treble filter with sigmoid weighting function.
             treble_f_upper: Upper boundary of transition frequency reqion. In the transition region normal filter is \
                             switched to treble filter with sigmoid weighting function.
+            treble_gain_k: Coefficient for treble gain, positive and negative. Useful for disabling or reducing \
+                           equalization power in treble region. Defaults to 1.0 (not limited).
 
         Returns:
 
@@ -1346,6 +1349,8 @@ class FrequencyResponse:
         dip_inds, dip_props = find_peaks(-y, prominence=1)
 
         if not len(peak_inds) and not len(dip_inds):
+            # No peaks or dips, it's a flat line
+            # Use the inverse error as the equalization target
             self.equalization = y
             # Equalized
             self.equalized_raw = self.raw + self.equalization
@@ -1377,6 +1382,11 @@ class FrequencyResponse:
             # ltr and rtl limited curves are combined with min function
             combined = self.__class__(
                 name='limiter', frequency=x, raw=np.min(np.vstack([limited_ltr, limited_rtl]), axis=0))
+
+            # Limit treble gain
+            gain_k = self._sigmoid(treble_f_lower, treble_f_upper, a_normal=1.0, a_treble=treble_gain_k)
+            combined.raw *= gain_k
+
             # Gain can be reduced in the treble region
             # Clip positive gain to max gain
             combined.raw = np.min(np.vstack([combined.raw, np.ones(combined.raw.shape) * max_gain]), axis=0)
@@ -1772,7 +1782,8 @@ class FrequencyResponse:
                 window_size=1 / 12,
                 treble_window_size=2,
                 treble_f_lower=DEFAULT_TREBLE_F_LOWER,
-                treble_f_upper=DEFAULT_TREBLE_F_UPPER):
+                treble_f_upper=DEFAULT_TREBLE_F_UPPER,
+                treble_gain_k=DEFAULT_TREBLE_GAIN_K):
         """Runs processing pipeline with interpolation, centering, compensation and equalization.
 
         Args:
@@ -1797,10 +1808,12 @@ class FrequencyResponse:
             concha_interference: Do measurements include concha interference which produced a narrow dip around 9 kHz?
             window_size: Smoothing window size in octaves.
             treble_window_size: Smoothing window size in octaves in the treble region.
-            treble_f_lower: Lower boundary of transition frequency region. In the transition region normal filter is \
+            treble_f_lower: Lower boundary of transition frequency region. In the transition region normal filter is
                             switched to treble filter with sigmoid weighting function.
-            treble_f_upper: Upper boundary of transition frequency reqion. In the transition region normal filter is \
+            treble_f_upper: Upper boundary of transition frequency region. In the transition region normal filter is
                             switched to treble filter with sigmoid weighting function.
+            treble_gain_k: Coefficient for treble gain, positive and negative. Useful for disabling or reducing
+                           equalization power in treble region. Defaults to 1.0 (not limited).
 
         Returns:
             - **peq_filters:** Numpy array of produced parametric eq peaking filters. Each row contains Fc, Q and gain
@@ -1869,7 +1882,7 @@ class FrequencyResponse:
         if equalize:
             self.equalize(
                 max_gain=max_gain, concha_interference=concha_interference, treble_f_lower=treble_f_lower,
-                treble_f_upper=treble_f_upper)
+                treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
             if parametric_eq:
                 # Get the filters
                 peq_filters, n_peq_filters, peq_max_gains = self.optimize_parametric_eq(max_filters=max_filters, fs=fs)

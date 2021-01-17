@@ -98,6 +98,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
             max_gain=max_gain,
             treble_f_lower=treble_f_lower,
             treble_f_upper=treble_f_upper,
+            treble_gain_k=treble_gain_k,
             fs=fs[0] if type(fs) == list else fs
         )
 
@@ -275,6 +276,10 @@ def cli_args():
                             help='Upper bound for transition region between normal and treble frequencies. Treble '
                                  'frequencies can have different max gain and gain K. Defaults to '
                                  '{}.'.format(DEFAULT_TREBLE_F_UPPER))
+    arg_parser.add_argument('--treble_gain_k', type=float, default=DEFAULT_TREBLE_GAIN_K,
+                            help='Coefficient for treble gain, affects both positive and negative gain. Useful for '
+                                 'disabling or reducing equalization power in treble region. Defaults to '
+                                 '{}.'.format(DEFAULT_TREBLE_GAIN_K))
     arg_parser.add_argument('--show_plot', action='store_true',
                             help='Plot will be shown if this parameter exists, no value needed.')
     args = vars(arg_parser.parse_args())
