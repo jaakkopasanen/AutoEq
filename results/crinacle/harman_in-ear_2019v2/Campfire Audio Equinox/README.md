@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-6.9 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 50 Hz    | 0.24 | -4.0 dB |
-| Peaking | 253 Hz   | 0.38 | -6.3 dB |
-| Peaking | 1151 Hz  | 0.36 | 6.0 dB  |
-| Peaking | 5301 Hz  | 2.66 | 5.0 dB  |
-| Peaking | 14825 Hz | 1.65 | 5.5 dB  |
-| Peaking | 6416 Hz  | 0.51 | 0.8 dB  |
-| Peaking | 6729 Hz  | 5.52 | 6.1 dB  |
-| Peaking | 7554 Hz  | 3.3  | -6.4 dB |
-| Peaking | 9484 Hz  | 2.14 | -3.6 dB |
-| Peaking | 11966 Hz | 2.79 | 2.8 dB  |
+| Peaking | 37 Hz    | 0.22 | -3.5 dB |
+| Peaking | 210 Hz   | 0.37 | -6.1 dB |
+| Peaking | 1067 Hz  | 0.59 | 5.7 dB  |
+| Peaking | 3255 Hz  | 2.7  | 4.1 dB  |
+| Peaking | 5556 Hz  | 2.31 | 5.8 dB  |
+| Peaking | 5857 Hz  | 3.81 | -0.6 dB |
+| Peaking | 6190 Hz  | 4.58 | 1.9 dB  |
+| Peaking | 7473 Hz  | 3.01 | -1.9 dB |
+| Peaking | 11018 Hz | 1.18 | -0.4 dB |
+| Peaking | 19751 Hz | 0.43 | 5.3 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -5.7 dB |
 | Peaking | 500 Hz   | 1.41 | -1.2 dB |
 | Peaking | 1000 Hz  | 1.41 | 4.5 dB  |
-| Peaking | 2000 Hz  | 1.41 | 2.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | 6.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.6 dB |
-| Peaking | 16000 Hz | 1.41 | 6.0 dB  |
+| Peaking | 2000 Hz  | 1.41 | 2.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
+| Peaking | 16000 Hz | 1.41 | 3.6 dB  |
 
 ### Graphs
 ![](./Campfire%20Audio%20Equinox.png)

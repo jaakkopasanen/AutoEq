@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.6dB**.
+When using independent subset of filters, apply preamp of **-6.7 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 169 Hz   | 0.99 | -4.5 dB |
-| Peaking | 4838 Hz  | 2.81 | -6.8 dB |
-| Peaking | 6238 Hz  | 2.47 | 3.5 dB  |
-| Peaking | 7571 Hz  | 2.12 | 4.1 dB  |
-| Peaking | 18283 Hz | 0.64 | 6.9 dB  |
-| Peaking | 21 Hz    | 1.23 | 2.7 dB  |
-| Peaking | 886 Hz   | 1.75 | 3.3 dB  |
-| Peaking | 2152 Hz  | 1.03 | 3.4 dB  |
-| Peaking | 2960 Hz  | 2.68 | -4.9 dB |
-| Peaking | 11465 Hz | 4.75 | -2.8 dB |
+| Peaking | 207 Hz   | 0.65 | -4.7 dB |
+| Peaking | 1107 Hz  | 0.51 | 4.0 dB  |
+| Peaking | 4986 Hz  | 1.01 | -7.5 dB |
+| Peaking | 6499 Hz  | 2.27 | 8.3 dB  |
+| Peaking | 17654 Hz | 0.31 | 6.6 dB  |
+| Peaking | 21 Hz    | 1.05 | 2.7 dB  |
+| Peaking | 2142 Hz  | 4.54 | 1.8 dB  |
+| Peaking | 3036 Hz  | 2.72 | -3.1 dB |
+| Peaking | 3966 Hz  | 2.11 | 3.0 dB  |
+| Peaking | 4813 Hz  | 6    | -3.1 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.8dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.5 dB  |
 | Peaking | 1000 Hz  | 1.41 | 3.5 dB  |
 | Peaking | 2000 Hz  | 1.41 | 2.4 dB  |
-| Peaking | 4000 Hz  | 1.41 | -4.9 dB |
-| Peaking | 8000 Hz  | 1.41 | 5.1 dB  |
-| Peaking | 16000 Hz | 1.41 | 6.5 dB  |
+| Peaking | 4000 Hz  | 1.41 | -4.7 dB |
+| Peaking | 8000 Hz  | 1.41 | 4.4 dB  |
+| Peaking | 16000 Hz | 1.41 | 8.4 dB  |
 
 ### Graphs
 ![](./Torque%20t096z%20(treble%20boost%20filter).png)

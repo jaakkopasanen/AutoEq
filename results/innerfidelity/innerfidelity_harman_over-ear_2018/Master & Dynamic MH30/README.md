@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2dB**.
+When using independent subset of filters, apply preamp of **-6.8 dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 15 Hz   | 0.08 | -4.8 dB |
-| Peaking | 685 Hz  | 0.1  | -2.8 dB |
-| Peaking | 1770 Hz | 1.51 | 5.7 dB  |
-| Peaking | 4344 Hz | 1.8  | 6.6 dB  |
-| Peaking | 9989 Hz | 0.86 | 6.7 dB  |
-| Peaking | 198 Hz  | 1.52 | -1.1 dB |
-| Peaking | 308 Hz  | 2.63 | 2.0 dB  |
-| Peaking | 5430 Hz | 5.77 | 2.5 dB  |
-| Peaking | 6406 Hz | 2.78 | -2.9 dB |
-| Peaking | 7573 Hz | 5    | 2.5 dB  |
+| Peaking | 11 Hz   | 0.06 | -4.8 dB |
+| Peaking | 605 Hz  | 0.11 | -2.8 dB |
+| Peaking | 1769 Hz | 1.51 | 5.7 dB  |
+| Peaking | 4281 Hz | 2.01 | 6.1 dB  |
+| Peaking | 9807 Hz | 0.78 | 6.3 dB  |
+| Peaking | 196 Hz  | 1.61 | -1.1 dB |
+| Peaking | 309 Hz  | 2.66 | 2.0 dB  |
+| Peaking | 5367 Hz | 5.52 | 2.4 dB  |
+| Peaking | 6149 Hz | 2.72 | -2.5 dB |
+| Peaking | 7288 Hz | 5.19 | 2.2 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 2.7 dB  |
 | Peaking | 4000 Hz  | 1.41 | 3.6 dB  |
 | Peaking | 8000 Hz  | 1.41 | 6.1 dB  |
-| Peaking | 16000 Hz | 1.41 | 2.5 dB  |
+| Peaking | 16000 Hz | 1.41 | 2.6 dB  |
 
 ### Graphs
 ![](./Master%20&%20Dynamic%20MH30.png)

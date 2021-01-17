@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2dB**.
+When using independent subset of filters, apply preamp of **-6.5 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 56 Hz    | 0.19 | -3.6 dB |
-| Peaking | 1776 Hz  | 2.33 | -4.2 dB |
-| Peaking | 3433 Hz  | 1.44 | 4.2 dB  |
-| Peaking | 6210 Hz  | 2.79 | 5.3 dB  |
-| Peaking | 12000 Hz | 1.75 | 5.9 dB  |
-| Peaking | 901 Hz   | 1.42 | 1.1 dB  |
-| Peaking | 1274 Hz  | 3.53 | -1.2 dB |
-| Peaking | 9855 Hz  | 6.06 | 1.3 dB  |
-| Peaking | 15163 Hz | 1.53 | 3.3 dB  |
-| Peaking | 20288 Hz | 0.43 | -8.4 dB |
+| Peaking | 1774 Hz  | 2.35 | -4.2 dB |
+| Peaking | 3366 Hz  | 1.55 | 3.9 dB  |
+| Peaking | 6290 Hz  | 1.99 | 4.7 dB  |
+| Peaking | 10157 Hz | 1.49 | 4.4 dB  |
+| Peaking | 881 Hz   | 1.49 | 1.0 dB  |
+| Peaking | 1265 Hz  | 3.69 | -1.1 dB |
+| Peaking | 3423 Hz  | 4.18 | -1.2 dB |
+| Peaking | 4141 Hz  | 2.88 | 2.2 dB  |
+| Peaking | 4416 Hz  | 7.08 | -2.9 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.1 dB  |
 | Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | -3.0 dB |
-| Peaking | 4000 Hz  | 1.41 | 5.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | 4.2 dB  |
-| Peaking | 16000 Hz | 1.41 | 1.2 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | 6.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.6 dB |
 
 ### Graphs
 ![](./ThieAudio%20Legacy%203%20(00%20setting).png)

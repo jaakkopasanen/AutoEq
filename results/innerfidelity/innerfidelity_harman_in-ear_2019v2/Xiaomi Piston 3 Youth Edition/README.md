@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-6.8 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 170 Hz   | 0.49 | -5.5 dB |
-| Peaking | 988 Hz   | 0.74 | 3.4 dB  |
-| Peaking | 4876 Hz  | 2.09 | -6.9 dB |
-| Peaking | 6711 Hz  | 1.3  | 5.6 dB  |
-| Peaking | 18776 Hz | 0.15 | 5.9 dB  |
-| Peaking | 18 Hz    | 1.04 | 2.7 dB  |
-| Peaking | 70 Hz    | 1.75 | -0.9 dB |
-| Peaking | 2145 Hz  | 2.94 | 1.4 dB  |
-| Peaking | 2963 Hz  | 1.74 | -1.5 dB |
-| Peaking | 3947 Hz  | 4.84 | 1.2 dB  |
+| Peaking | 85 Hz    | 1.35 | -2.5 dB |
+| Peaking | 200 Hz   | 0.66 | -4.9 dB |
+| Peaking | 930 Hz   | 1.06 | 3.1 dB  |
+| Peaking | 4542 Hz  | 2.19 | -6.6 dB |
+| Peaking | 13487 Hz | 0.2  | 6.7 dB  |
+| Peaking | 21 Hz    | 1.79 | 2.3 dB  |
+| Peaking | 1941 Hz  | 2.93 | 0.8 dB  |
+| Peaking | 2934 Hz  | 4.11 | -2.1 dB |
+| Peaking | 6766 Hz  | 4.06 | 2.1 dB  |
+| Peaking | 13864 Hz | 1.29 | -0.7 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.2 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | 2.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | -3.1 dB |
+| Peaking | 4000 Hz  | 1.41 | -3.2 dB |
 | Peaking | 8000 Hz  | 1.41 | 7.3 dB  |
-| Peaking | 16000 Hz | 1.41 | 7.9 dB  |
+| Peaking | 16000 Hz | 1.41 | 8.5 dB  |
 
 ### Graphs
 ![](./Xiaomi%20Piston%203%20Youth%20Edition.png)

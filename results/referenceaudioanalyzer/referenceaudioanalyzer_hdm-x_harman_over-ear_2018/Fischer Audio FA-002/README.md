@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-6.9 dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 24 Hz   | 0.95 | 4.2 dB  |
-| Peaking | 1487 Hz | 2.04 | 6.0 dB  |
-| Peaking | 3550 Hz | 3.02 | -6.8 dB |
-| Peaking | 5178 Hz | 2.3  | -9.8 dB |
-| Peaking | 8988 Hz | 0.35 | 7.0 dB  |
-| Peaking | 57 Hz   | 1.72 | 1.9 dB  |
-| Peaking | 255 Hz  | 0.48 | -3.7 dB |
-| Peaking | 1048 Hz | 2.38 | 1.7 dB  |
-| Peaking | 2505 Hz | 3.41 | 1.6 dB  |
-| Peaking | 2885 Hz | 2.7  | -0.9 dB |
+| Peaking | 24 Hz   | 0.96 | 4.3 dB  |
+| Peaking | 1494 Hz | 1.99 | 6.1 dB  |
+| Peaking | 3564 Hz | 3.06 | -6.7 dB |
+| Peaking | 5165 Hz | 2.32 | -9.6 dB |
+| Peaking | 9345 Hz | 0.37 | 7.1 dB  |
+| Peaking | 58 Hz   | 1.87 | 1.8 dB  |
+| Peaking | 257 Hz  | 0.49 | -3.6 dB |
+| Peaking | 1078 Hz | 2.38 | 1.7 dB  |
+| Peaking | 2488 Hz | 3.52 | 1.7 dB  |
+| Peaking | 2930 Hz | 2.75 | -0.9 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.9dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 6.2 dB  |
 | Peaking | 4000 Hz  | 1.41 | -8.1 dB |
 | Peaking | 8000 Hz  | 1.41 | 7.1 dB  |
-| Peaking | 16000 Hz | 1.41 | 5.7 dB  |
+| Peaking | 16000 Hz | 1.41 | 6.2 dB  |
 
 ### Graphs
 ![](./Fischer%20Audio%20FA-002.png)

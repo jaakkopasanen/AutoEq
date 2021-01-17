@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-7.0 dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 67 Hz    | 0.33 | -2.7 dB |
-| Peaking | 243 Hz   | 0.49 | -4.2 dB |
-| Peaking | 1704 Hz  | 1.24 | -4.1 dB |
-| Peaking | 3418 Hz  | 0.68 | 7.2 dB  |
-| Peaking | 11009 Hz | 1.59 | 5.8 dB  |
-| Peaking | 5807 Hz  | 3.66 | 3.0 dB  |
-| Peaking | 7015 Hz  | 1.85 | -3.1 dB |
-| Peaking | 8497 Hz  | 4.34 | 3.3 dB  |
-| Peaking | 13957 Hz | 1.86 | 2.9 dB  |
-| Peaking | 19834 Hz | 0.62 | -9.9 dB |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 22 Hz   | 0.72 | -0.8 dB |
+| Peaking | 76 Hz   | 0.37 | -1.9 dB |
+| Peaking | 223 Hz  | 0.35 | -4.2 dB |
+| Peaking | 3816 Hz | 1.16 | 6.3 dB  |
+| Peaking | 9541 Hz | 1.15 | 5.9 dB  |
+| Peaking | 1443 Hz | 2.2  | -4.1 dB |
+| Peaking | 2069 Hz | 3    | -4.0 dB |
+| Peaking | 2296 Hz | 0.69 | 4.7 dB  |
+| Peaking | 4178 Hz | 1.05 | -3.5 dB |
+| Peaking | 5277 Hz | 3.63 | 2.4 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -1.9 dB |
-| Peaking | 62 Hz    | 1.41 | -2.8 dB |
+| Peaking | 31 Hz    | 1.41 | -2.1 dB |
+| Peaking | 62 Hz    | 1.41 | -2.9 dB |
 | Peaking | 125 Hz   | 1.41 | -4.1 dB |
-| Peaking | 250 Hz   | 1.41 | -4.7 dB |
-| Peaking | 500 Hz   | 1.41 | -2.1 dB |
-| Peaking | 1000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 250 Hz   | 1.41 | -4.6 dB |
+| Peaking | 500 Hz   | 1.41 | -2.0 dB |
+| Peaking | 1000 Hz  | 1.41 | -0.9 dB |
 | Peaking | 2000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 4000 Hz  | 1.41 | 6.6 dB  |
-| Peaking | 8000 Hz  | 1.41 | 4.9 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.3 dB |
+| Peaking | 4000 Hz  | 1.41 | 6.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 6.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -0.6 dB |
 
 ### Graphs
 ![](./HYLA%20Nerva%20X.png)

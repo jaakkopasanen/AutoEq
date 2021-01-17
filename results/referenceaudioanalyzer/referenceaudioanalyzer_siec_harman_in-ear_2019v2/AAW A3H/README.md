@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.9dB**.
+When using independent subset of filters, apply preamp of **-5.8 dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 17 Hz    | 0.65 | 5.5 dB   |
-| Peaking | 206 Hz   | 0.39 | -3.4 dB  |
-| Peaking | 2614 Hz  | 1.97 | 4.3 dB   |
-| Peaking | 3601 Hz  | 2.99 | 3.6 dB   |
-| Peaking | 6699 Hz  | 3.8  | 3.9 dB   |
-| Peaking | 918 Hz   | 2.97 | 0.7 dB   |
-| Peaking | 1408 Hz  | 3.29 | -0.3 dB  |
-| Peaking | 3067 Hz  | 3.14 | 0.2 dB   |
-| Peaking | 9937 Hz  | 1.23 | 3.1 dB   |
-| Peaking | 19524 Hz | 0.41 | -14.5 dB |
+| Peaking | 16 Hz    | 0.62 | 5.8 dB   |
+| Peaking | 93 Hz    | 0.81 | -1.6 dB  |
+| Peaking | 276 Hz   | 0.57 | -3.1 dB  |
+| Peaking | 3011 Hz  | 1.52 | 5.7 dB   |
+| Peaking | 6722 Hz  | 3.65 | 3.3 dB   |
+| Peaking | 1516 Hz  | 3.77 | -0.5 dB  |
+| Peaking | 2201 Hz  | 4.83 | 0.6 dB   |
+| Peaking | 3885 Hz  | 8.53 | 1.4 dB   |
+| Peaking | 10128 Hz | 1.37 | 3.7 dB   |
+| Peaking | 19693 Hz | 0.35 | -14.0 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 2.3 dB   |
 | Peaking | 4000 Hz  | 1.41 | 3.6 dB   |
 | Peaking | 8000 Hz  | 1.41 | 2.7 dB   |
-| Peaking | 16000 Hz | 1.41 | -11.4 dB |
+| Peaking | 16000 Hz | 1.41 | -11.7 dB |
 
 ### Graphs
 ![](./AAW%20A3H.png)

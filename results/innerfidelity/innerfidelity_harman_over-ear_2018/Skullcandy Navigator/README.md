@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-6.5 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 17 Hz    | 0.09 | -3.2 dB |
 | Peaking | 202 Hz   | 0.66 | -4.3 dB |
-| Peaking | 3961 Hz  | 1.51 | 4.3 dB  |
-| Peaking | 10463 Hz | 0.65 | 3.8 dB  |
-| Peaking | 16398 Hz | 0.24 | 2.8 dB  |
-| Peaking | 712 Hz   | 1.93 | 1.6 dB  |
-| Peaking | 1128 Hz  | 1.28 | -1.9 dB |
-| Peaking | 2053 Hz  | 2.87 | 1.8 dB  |
-| Peaking | 5982 Hz  | 3.97 | -1.1 dB |
-| Peaking | 7721 Hz  | 4.17 | 0.9 dB  |
+| Peaking | 3957 Hz  | 1.47 | 4.0 dB  |
+| Peaking | 10292 Hz | 0.57 | 4.0 dB  |
+| Peaking | 15703 Hz | 0.32 | 2.8 dB  |
+| Peaking | 714 Hz   | 1.93 | 1.7 dB  |
+| Peaking | 1123 Hz  | 1.22 | -1.9 dB |
+| Peaking | 2050 Hz  | 2.85 | 1.8 dB  |
+| Peaking | 5843 Hz  | 4.9  | -1.4 dB |
+| Peaking | 7419 Hz  | 4.04 | 1.0 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -1.4 dB |
 | Peaking | 2000 Hz  | 1.41 | 1.0 dB  |
 | Peaking | 4000 Hz  | 1.41 | 4.4 dB  |
-| Peaking | 8000 Hz  | 1.41 | 5.8 dB  |
-| Peaking | 16000 Hz | 1.41 | 6.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | 5.9 dB  |
+| Peaking | 16000 Hz | 1.41 | 6.8 dB  |
 
 ### Graphs
 ![](./Skullcandy%20Navigator.png)

@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2dB**.
+When using independent subset of filters, apply preamp of **-7.0 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 19 Hz    | 0.74 | 5.5 dB  |
-| Peaking | 161 Hz   | 0.56 | -3.6 dB |
-| Peaking | 4390 Hz  | 2.09 | 3.3 dB  |
-| Peaking | 7362 Hz  | 2.54 | -7.5 dB |
-| Peaking | 13353 Hz | 0.29 | 6.8 dB  |
-| Peaking | 869 Hz   | 3.03 | 1.6 dB  |
-| Peaking | 8162 Hz  | 5.01 | -1.7 dB |
-| Peaking | 9308 Hz  | 3.57 | 2.4 dB  |
-| Peaking | 14024 Hz | 0.97 | -0.7 dB |
-| Peaking | 18132 Hz | 2.74 | 1.1 dB  |
+| Peaking | 17 Hz    | 0.59 | 5.8 dB  |
+| Peaking | 165 Hz   | 0.42 | -3.6 dB |
+| Peaking | 832 Hz   | 1.77 | 1.8 dB  |
+| Peaking | 4139 Hz  | 2.35 | 4.4 dB  |
+| Peaking | 16730 Hz | 0.31 | 6.8 dB  |
+| Peaking | 5260 Hz  | 3.47 | 2.6 dB  |
+| Peaking | 6605 Hz  | 2.5  | -4.0 dB |
+| Peaking | 9474 Hz  | 3.3  | 2.3 dB  |
+| Peaking | 11300 Hz | 2.39 | 0.9 dB  |
+| Peaking | 16372 Hz | 1.69 | -0.9 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-10.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -3.0 dB |
 | Peaking | 500 Hz   | 1.41 | -0.5 dB |
 | Peaking | 1000 Hz  | 1.41 | 1.3 dB  |
-| Peaking | 2000 Hz  | 1.41 | -1.1 dB |
-| Peaking | 4000 Hz  | 1.41 | 4.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.5 dB  |
-| Peaking | 16000 Hz | 1.41 | 9.7 dB  |
+| Peaking | 2000 Hz  | 1.41 | -1.0 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 2.3 dB  |
+| Peaking | 16000 Hz | 1.41 | 9.6 dB  |
 
 ### Graphs
 ![](./Kumitate%20Lab%20KL-Corona.png)

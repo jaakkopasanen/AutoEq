@@ -2,24 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-6.9 dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 57 Hz   | 0.32 | 8.4 dB  |
-| Peaking | 150 Hz  | 0.75 | -8.7 dB |
-| Peaking | 4655 Hz | 1.22 | 9.8 dB  |
-| Peaking | 6122 Hz | 0.23 | -4.0 dB |
-| Peaking | 7338 Hz | 3.19 | 6.0 dB  |
-| Peaking | 77 Hz   | 5.81 | 1.9 dB  |
-| Peaking | 994 Hz  | 3.14 | -1.9 dB |
-| Peaking | 2235 Hz | 1.45 | 2.5 dB  |
-| Peaking | 2769 Hz | 3.23 | -3.4 dB |
+| Peaking | 54 Hz   | 0.3  | 7.9 dB  |
+| Peaking | 150 Hz  | 0.85 | -8.4 dB |
+| Peaking | 4261 Hz | 2.37 | 5.2 dB  |
+| Peaking | 6090 Hz | 0.08 | -1.7 dB |
+| Peaking | 6097 Hz | 1.32 | 5.7 dB  |
+| Peaking | 79 Hz   | 5.05 | 2.4 dB  |
+| Peaking | 103 Hz  | 4.2  | -1.7 dB |
+| Peaking | 1015 Hz | 4.28 | -1.7 dB |
+| Peaking | 2248 Hz | 1.57 | 2.2 dB  |
+| Peaking | 2747 Hz | 3.54 | -3.0 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -2.0 dB |
 | Peaking | 2000 Hz  | 1.41 | -1.3 dB |
 | Peaking | 4000 Hz  | 1.41 | 5.2 dB  |
-| Peaking | 8000 Hz  | 1.41 | 2.3 dB  |
-| Peaking | 16000 Hz | 1.41 | -3.2 dB |
+| Peaking | 8000 Hz  | 1.41 | 2.0 dB  |
+| Peaking | 16000 Hz | 1.41 | -2.6 dB |
 
 ### Graphs
 ![](./Stax%20SR-1.png)

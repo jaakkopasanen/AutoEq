@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.6dB**.
+When using independent subset of filters, apply preamp of **-7.3 dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 167 Hz   | 0.4  | -4.9 dB  |
-| Peaking | 2803 Hz  | 3.16 | 5.8 dB   |
-| Peaking | 6061 Hz  | 1.28 | 8.7 dB   |
-| Peaking | 8367 Hz  | 2.11 | -10.4 dB |
-| Peaking | 18031 Hz | 0.38 | 6.6 dB   |
-| Peaking | 653 Hz   | 2.26 | 0.9 dB   |
-| Peaking | 925 Hz   | 2.18 | 1.6 dB   |
-| Peaking | 1571 Hz  | 2.03 | -5.4 dB  |
-| Peaking | 2267 Hz  | 3.96 | 3.4 dB   |
-| Peaking | 14771 Hz | 3.03 | 0.7 dB   |
+| Peaking | 166 Hz   | 0.43 | -5.1 dB  |
+| Peaking | 1639 Hz  | 1.86 | -10.7 dB |
+| Peaking | 2338 Hz  | 0.78 | 8.5 dB   |
+| Peaking | 5830 Hz  | 2.17 | 4.6 dB   |
+| Peaking | 18359 Hz | 0.81 | 7.1 dB   |
+| Peaking | 7190 Hz  | 2.99 | 1.1 dB   |
+| Peaking | 8643 Hz  | 1.62 | 0.4 dB   |
+| Peaking | 8676 Hz  | 1.56 | 0.4 dB   |
+| Peaking | 10376 Hz | 1.58 | -3.2 dB  |
+| Peaking | 15501 Hz | 2.68 | 2.4 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -30,11 +30,11 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 125 Hz   | 1.41 | -3.8 dB |
 | Peaking | 250 Hz   | 1.41 | -4.6 dB |
 | Peaking | 500 Hz   | 1.41 | -0.4 dB |
-| Peaking | 1000 Hz  | 1.41 | -1.1 dB |
-| Peaking | 2000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 4000 Hz  | 1.41 | 8.4 dB  |
-| Peaking | 8000 Hz  | 1.41 | -2.2 dB |
-| Peaking | 16000 Hz | 1.41 | 8.3 dB  |
+| Peaking | 1000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 2000 Hz  | 1.41 | -0.8 dB |
+| Peaking | 4000 Hz  | 1.41 | 7.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.2 dB  |
+| Peaking | 16000 Hz | 1.41 | 6.1 dB  |
 
 ### Graphs
 ![](./Magaosi%20DT6%20(off-off).png)

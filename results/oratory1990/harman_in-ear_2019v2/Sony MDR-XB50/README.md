@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-6.9 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 82 Hz    | 0.59 | -6.3 dB |
-| Peaking | 198 Hz   | 1.68 | -5.0 dB |
-| Peaking | 3374 Hz  | 1.25 | 6.6 dB  |
-| Peaking | 14829 Hz | 0.6  | 3.5 dB  |
-| Peaking | 20583 Hz | 0.24 | 3.3 dB  |
-| Peaking | 586 Hz   | 2.14 | 5.1 dB  |
-| Peaking | 1218 Hz  | 2.41 | -4.2 dB |
-| Peaking | 5291 Hz  | 4.72 | -3.7 dB |
-| Peaking | 7271 Hz  | 1.06 | 3.4 dB  |
-| Peaking | 9278 Hz  | 3.01 | -4.6 dB |
+| Peaking | 186 Hz   | 0.91 | -0.8 dB |
+| Peaking | 373 Hz   | 0.12 | -8.4 dB |
+| Peaking | 556 Hz   | 1.02 | 12.2 dB |
+| Peaking | 2945 Hz  | 0.9  | 10.1 dB |
+| Peaking | 18929 Hz | 0.19 | 4.9 dB  |
+| Peaking | 1270 Hz  | 2.33 | -3.0 dB |
+| Peaking | 1421 Hz  | 0.78 | 1.5 dB  |
+| Peaking | 3189 Hz  | 2.56 | -1.7 dB |
+| Peaking | 4604 Hz  | 1.86 | 2.2 dB  |
+| Peaking | 5208 Hz  | 6.6  | -4.1 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 2.1 dB  |
 | Peaking | 4000 Hz  | 1.41 | 5.9 dB  |
 | Peaking | 8000 Hz  | 1.41 | 1.5 dB  |
-| Peaking | 16000 Hz | 1.41 | 6.9 dB  |
+| Peaking | 16000 Hz | 1.41 | 6.6 dB  |
 
 ### Graphs
 ![](./Sony%20MDR-XB50.png)

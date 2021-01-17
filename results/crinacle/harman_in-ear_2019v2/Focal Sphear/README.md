@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-5.8 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 17 Hz    | 0.63 | 4.0 dB  |
-| Peaking | 198 Hz   | 0.42 | -5.4 dB |
-| Peaking | 1205 Hz  | 0.26 | 3.3 dB  |
-| Peaking | 12375 Hz | 1.9  | 4.3 dB  |
-| Peaking | 16805 Hz | 0.82 | 5.3 dB  |
-| Peaking | 1596 Hz  | 2.69 | -1.4 dB |
-| Peaking | 3771 Hz  | 2.98 | 2.0 dB  |
-| Peaking | 4697 Hz  | 2.31 | 3.4 dB  |
-| Peaking | 5450 Hz  | 3.35 | -2.5 dB |
-| Peaking | 5591 Hz  | 3.91 | -4.4 dB |
+| Peaking | 17 Hz    | 0.61 | 4.0 dB  |
+| Peaking | 202 Hz   | 0.45 | -5.4 dB |
+| Peaking | 1705 Hz  | 0.18 | 3.2 dB  |
+| Peaking | 5745 Hz  | 5.58 | -7.0 dB |
+| Peaking | 17759 Hz | 0.36 | 5.4 dB  |
+| Peaking | 923 Hz   | 1.49 | 2.5 dB  |
+| Peaking | 1264 Hz  | 0.72 | -2.0 dB |
+| Peaking | 3913 Hz  | 2.94 | 2.8 dB  |
+| Peaking | 8216 Hz  | 2.38 | -2.0 dB |
+| Peaking | 11148 Hz | 1.54 | 1.2 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.1 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.6 dB  |
 | Peaking | 2000 Hz  | 1.41 | 1.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | 3.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.1 dB |
-| Peaking | 16000 Hz | 1.41 | 9.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 16000 Hz | 1.41 | 8.2 dB  |
 
 ### Graphs
 ![](./Focal%20Sphear.png)

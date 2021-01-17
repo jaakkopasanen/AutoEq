@@ -2,39 +2,39 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-7.0 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 14 Hz    | 0.16 | -3.5 dB |
+| Peaking | 15 Hz    | 0.17 | -3.5 dB |
 | Peaking | 213 Hz   | 0.56 | -3.0 dB |
-| Peaking | 3321 Hz  | 2.05 | 5.9 dB  |
-| Peaking | 7047 Hz  | 2.48 | -7.3 dB |
-| Peaking | 12478 Hz | 0.42 | 6.9 dB  |
-| Peaking | 1601 Hz  | 2.69 | -1.2 dB |
-| Peaking | 2758 Hz  | 4.54 | 2.4 dB  |
-| Peaking | 3577 Hz  | 1.38 | -1.8 dB |
-| Peaking | 4025 Hz  | 5.31 | 2.9 dB  |
-| Peaking | 9412 Hz  | 5.32 | 1.3 dB  |
+| Peaking | 3349 Hz  | 1.95 | 6.1 dB  |
+| Peaking | 6601 Hz  | 2.7  | -4.5 dB |
+| Peaking | 15567 Hz | 0.26 | 5.4 dB  |
+| Peaking | 976 Hz   | 1.58 | 0.8 dB  |
+| Peaking | 1318 Hz  | 2.42 | -1.2 dB |
+| Peaking | 1924 Hz  | 1.81 | -1.2 dB |
+| Peaking | 2829 Hz  | 2.88 | 2.0 dB  |
+| Peaking | 3242 Hz  | 5.99 | -1.7 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.4dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -3.6 dB |
-| Peaking | 62 Hz    | 1.41 | -2.2 dB |
+| Peaking | 31 Hz    | 1.41 | -3.5 dB |
+| Peaking | 62 Hz    | 1.41 | -2.1 dB |
 | Peaking | 125 Hz   | 1.41 | -2.5 dB |
 | Peaking | 250 Hz   | 1.41 | -3.1 dB |
 | Peaking | 500 Hz   | 1.41 | -0.7 dB |
 | Peaking | 1000 Hz  | 1.41 | -0.4 dB |
 | Peaking | 2000 Hz  | 1.41 | 0.4 dB  |
-| Peaking | 4000 Hz  | 1.41 | 5.4 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.0 dB |
-| Peaking | 16000 Hz | 1.41 | 8.8 dB  |
+| Peaking | 4000 Hz  | 1.41 | 5.3 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.5 dB  |
+| Peaking | 16000 Hz | 1.41 | 8.2 dB  |
 
 ### Graphs
 ![](./Noble%20Audio%20Sultan.png)

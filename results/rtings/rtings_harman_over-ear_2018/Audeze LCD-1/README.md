@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-6.6 dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 25 Hz   | 0.92 | 6.4 dB  |
-| Peaking | 235 Hz  | 0.5  | -2.9 dB |
-| Peaking | 1910 Hz | 2.95 | 4.5 dB  |
-| Peaking | 7151 Hz | 3.23 | 5.3 dB  |
-| Peaking | 9572 Hz | 2.61 | 2.9 dB  |
-| Peaking | 2039 Hz | 0.94 | 0.9 dB  |
-| Peaking | 2283 Hz | 5.46 | 2.5 dB  |
-| Peaking | 2910 Hz | 1.39 | -3.2 dB |
-| Peaking | 3910 Hz | 3.06 | 0.3 dB  |
-| Peaking | 4835 Hz | 4.52 | 2.2 dB  |
+| Peaking | 25 Hz   | 0.92 | 6.5 dB  |
+| Peaking | 237 Hz  | 0.5  | -2.9 dB |
+| Peaking | 1907 Hz | 2.95 | 4.5 dB  |
+| Peaking | 7044 Hz | 2.62 | 4.0 dB  |
+| Peaking | 9522 Hz | 2.75 | 3.5 dB  |
+| Peaking | 2269 Hz | 5.46 | 1.7 dB  |
+| Peaking | 2448 Hz | 2.02 | 1.2 dB  |
+| Peaking | 2946 Hz | 2.01 | -3.3 dB |
+| Peaking | 4943 Hz | 4.78 | 2.0 dB  |
+| Peaking | 5734 Hz | 3.05 | -0.3 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.7dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -33,7 +33,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -0.7 dB |
 | Peaking | 2000 Hz  | 1.41 | 3.6 dB  |
 | Peaking | 4000 Hz  | 1.41 | -2.0 dB |
-| Peaking | 8000 Hz  | 1.41 | 6.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | 6.0 dB  |
 | Peaking | 16000 Hz | 1.41 | -6.0 dB |
 
 ### Graphs

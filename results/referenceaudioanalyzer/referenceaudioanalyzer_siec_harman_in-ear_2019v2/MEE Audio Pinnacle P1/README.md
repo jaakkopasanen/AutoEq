@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-5.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.5dB**.
+When using independent subset of filters, apply preamp of **-5.2 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 202 Hz   | 0.56 | -5.5 dB |
-| Peaking | 1732 Hz  | 0.76 | 5.1 dB  |
-| Peaking | 3726 Hz  | 4.63 | 3.2 dB  |
-| Peaking | 7170 Hz  | 2.95 | 4.8 dB  |
-| Peaking | 13128 Hz | 0.92 | -8.0 dB |
-| Peaking | 21 Hz    | 1.44 | 2.3 dB  |
-| Peaking | 4184 Hz  | 3.73 | 1.8 dB  |
-| Peaking | 5208 Hz  | 1.99 | -2.7 dB |
-| Peaking | 6226 Hz  | 5.53 | 2.5 dB  |
-| Peaking | 8874 Hz  | 5.97 | 1.3 dB  |
+| Peaking | 205 Hz   | 0.55 | -5.5 dB |
+| Peaking | 1942 Hz  | 0.65 | 7.1 dB  |
+| Peaking | 3788 Hz  | 3.76 | 4.7 dB  |
+| Peaking | 6847 Hz  | 2.34 | 6.2 dB  |
+| Peaking | 10374 Hz | 0.17 | -5.0 dB |
+| Peaking | 21 Hz    | 1.42 | 2.3 dB  |
+| Peaking | 2199 Hz  | 3.87 | 1.9 dB  |
+| Peaking | 2888 Hz  | 1.09 | -1.6 dB |
+| Peaking | 3454 Hz  | 2.51 | 1.5 dB  |
+| Peaking | 8589 Hz  | 5.12 | 0.8 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.9dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -1.4 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.3 dB  |
 | Peaking | 2000 Hz  | 1.41 | 4.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | 2.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.4 dB |
-| Peaking | 16000 Hz | 1.41 | -8.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.1 dB |
+| Peaking | 16000 Hz | 1.41 | -6.7 dB |
 
 ### Graphs
 ![](./MEE%20Audio%20Pinnacle%20P1.png)

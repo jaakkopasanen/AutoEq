@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-6.8 dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 181 Hz   | 0.23 | -5.3 dB  |
-| Peaking | 632 Hz   | 0.69 | -15.4 dB |
-| Peaking | 1439 Hz  | 0.5  | 9.4 dB   |
-| Peaking | 7062 Hz  | 4    | -12.0 dB |
-| Peaking | 11558 Hz | 0.21 | 6.6 dB   |
-| Peaking | 21 Hz    | 1.93 | -0.8 dB  |
-| Peaking | 3130 Hz  | 0.84 | 0.8 dB   |
-| Peaking | 3298 Hz  | 1.43 | -1.2 dB  |
-| Peaking | 5802 Hz  | 4.99 | 2.5 dB   |
-| Peaking | 6255 Hz  | 7.06 | -2.9 dB  |
+| Peaking | 71 Hz    | 0.16 | -1.9 dB  |
+| Peaking | 210 Hz   | 0.42 | -4.6 dB  |
+| Peaking | 615 Hz   | 0.85 | -14.0 dB |
+| Peaking | 1917 Hz  | 0.54 | 8.7 dB   |
+| Peaking | 17006 Hz | 0.29 | 6.6 dB   |
+| Peaking | 509 Hz   | 3.64 | 0.2 dB   |
+| Peaking | 4726 Hz  | 2.98 | 2.2 dB   |
+| Peaking | 6523 Hz  | 3.42 | -6.6 dB  |
+| Peaking | 8412 Hz  | 1.48 | 2.6 dB   |
+| Peaking | 16401 Hz | 1.6  | -0.8 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-10.2dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.8dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -6.0 dB  |
 | Peaking | 500 Hz   | 1.41 | -14.4 dB |
 | Peaking | 1000 Hz  | 1.41 | -2.7 dB  |
-| Peaking | 2000 Hz  | 1.41 | 7.3 dB   |
-| Peaking | 4000 Hz  | 1.41 | 5.2 dB   |
-| Peaking | 8000 Hz  | 1.41 | 0.9 dB   |
-| Peaking | 16000 Hz | 1.41 | 9.6 dB   |
+| Peaking | 2000 Hz  | 1.41 | 7.6 dB   |
+| Peaking | 4000 Hz  | 1.41 | 4.3 dB   |
+| Peaking | 8000 Hz  | 1.41 | 3.3 dB   |
+| Peaking | 16000 Hz | 1.41 | 9.3 dB   |
 
 ### Graphs
 ![](./Intro%20RX-190.png)

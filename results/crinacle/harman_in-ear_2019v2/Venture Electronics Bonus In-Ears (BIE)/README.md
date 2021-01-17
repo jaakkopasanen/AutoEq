@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.7dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-6.6 dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 28 Hz    | 0.12 | -7.1 dB  |
-| Peaking | 741 Hz   | 1.25 | 3.3 dB   |
-| Peaking | 3620 Hz  | 3.75 | 5.3 dB   |
-| Peaking | 9431 Hz  | 1.48 | 4.5 dB   |
-| Peaking | 11997 Hz | 2.68 | 4.1 dB   |
-| Peaking | 2192 Hz  | 3.54 | -1.8 dB  |
-| Peaking | 4441 Hz  | 3.24 | 2.8 dB   |
-| Peaking | 5140 Hz  | 4.22 | -6.0 dB  |
-| Peaking | 6504 Hz  | 5.1  | 4.9 dB   |
-| Peaking | 19613 Hz | 1.06 | -12.2 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 28 Hz    | 0.12 | -7.1 dB |
+| Peaking | 742 Hz   | 1.26 | 3.3 dB  |
+| Peaking | 3609 Hz  | 3.81 | 5.3 dB  |
+| Peaking | 7881 Hz  | 2.24 | 4.2 dB  |
+| Peaking | 10692 Hz | 2.17 | 5.4 dB  |
+| Peaking | 2384 Hz  | 2.29 | -2.3 dB |
+| Peaking | 2943 Hz  | 3.65 | 2.1 dB  |
+| Peaking | 4358 Hz  | 4.84 | 3.3 dB  |
+| Peaking | 5181 Hz  | 3.36 | -5.8 dB |
+| Peaking | 6175 Hz  | 5    | 4.3 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.1 dB  |
 | Peaking | 1000 Hz  | 1.41 | 2.7 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.7 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | 4.9 dB  |
-| Peaking | 16000 Hz | 1.41 | -1.2 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 5.9 dB  |
+| Peaking | 16000 Hz | 1.41 | -2.3 dB |
 
 ### Graphs
 ![](./Venture%20Electronics%20Bonus%20In-Ears%20(BIE).png)

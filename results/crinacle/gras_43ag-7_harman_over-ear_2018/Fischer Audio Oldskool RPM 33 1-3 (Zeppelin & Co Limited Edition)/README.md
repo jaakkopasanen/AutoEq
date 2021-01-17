@@ -2,25 +2,24 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.5dB**.
+When using independent subset of filters, apply preamp of **-7.0 dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
 | Peaking | 28 Hz    | 0.98 | 6.7 dB   |
-| Peaking | 682 Hz   | 1.59 | -5.0 dB  |
-| Peaking | 4712 Hz  | 1.42 | 12.3 dB  |
-| Peaking | 5952 Hz  | 2.1  | -14.8 dB |
-| Peaking | 11324 Hz | 1.36 | 7.2 dB   |
-| Peaking | 1557 Hz  | 1.56 | 4.4 dB   |
-| Peaking | 2198 Hz  | 0.62 | -3.5 dB  |
-| Peaking | 3139 Hz  | 3.11 | 3.0 dB   |
-| Peaking | 4968 Hz  | 3.83 | 1.5 dB   |
-| Peaking | 9554 Hz  | 3.77 | 1.0 dB   |
+| Peaking | 683 Hz   | 1.59 | -5.0 dB  |
+| Peaking | 4747 Hz  | 1.43 | 11.9 dB  |
+| Peaking | 5869 Hz  | 2.48 | -14.4 dB |
+| Peaking | 11110 Hz | 1.59 | 5.0 dB   |
+| Peaking | 1545 Hz  | 2.43 | 2.3 dB   |
+| Peaking | 2512 Hz  | 1.65 | -2.5 dB  |
+| Peaking | 3033 Hz  | 2.88 | 0.8 dB   |
+| Peaking | 3066 Hz  | 3.58 | 1.6 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -29,12 +28,12 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 62 Hz    | 1.41 | -0.1 dB |
 | Peaking | 125 Hz   | 1.41 | -0.5 dB |
 | Peaking | 250 Hz   | 1.41 | 0.1 dB  |
-| Peaking | 500 Hz   | 1.41 | -3.0 dB |
+| Peaking | 500 Hz   | 1.41 | -3.1 dB |
 | Peaking | 1000 Hz  | 1.41 | -2.0 dB |
 | Peaking | 2000 Hz  | 1.41 | 1.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | 4.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.3 dB |
-| Peaking | 16000 Hz | 1.41 | 2.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | 4.7 dB  |
+| Peaking | 8000 Hz  | 1.41 | -0.6 dB |
+| Peaking | 16000 Hz | 1.41 | 1.4 dB  |
 
 ### Graphs
 ![](./Fischer%20Audio%20Oldskool%20RPM%2033%201-3%20(Zeppelin%20&%20Co%20Limited%20Edition).png)

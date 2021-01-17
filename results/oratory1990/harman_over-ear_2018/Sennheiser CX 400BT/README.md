@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.0dB**.
+When using independent subset of filters, apply preamp of **-6.2 dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 0.29 | -7.1 dB  |
-| Peaking | 201 Hz   | 0.78 | -4.2 dB  |
-| Peaking | 1575 Hz  | 1.04 | -8.2 dB  |
-| Peaking | 4403 Hz  | 0.26 | 11.6 dB  |
-| Peaking | 9086 Hz  | 0.71 | -12.3 dB |
-| Peaking | 5606 Hz  | 3.63 | 3.0 dB   |
-| Peaking | 6766 Hz  | 1.6  | -1.8 dB  |
-| Peaking | 7172 Hz  | 2.66 | -1.2 dB  |
-| Peaking | 8551 Hz  | 2.45 | 2.1 dB   |
-| Peaking | 12728 Hz | 2.65 | -1.1 dB  |
+| Peaking | 30 Hz    | 0.31 | -7.0 dB  |
+| Peaking | 206 Hz   | 0.65 | -4.5 dB  |
+| Peaking | 1506 Hz  | 1.05 | -8.8 dB  |
+| Peaking | 6514 Hz  | 0.16 | 13.9 dB  |
+| Peaking | 10357 Hz | 0.54 | -17.1 dB |
+| Peaking | 5543 Hz  | 3.08 | 3.0 dB   |
+| Peaking | 6614 Hz  | 2.41 | -2.8 dB  |
+| Peaking | 10787 Hz | 3.34 | 1.3 dB   |
+| Peaking | 13793 Hz | 2.49 | -0.6 dB  |
+| Peaking | 15267 Hz | 3.01 | -0.9 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.7dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -0.5 dB |
 | Peaking | 2000 Hz  | 1.41 | 0.1 dB  |
 | Peaking | 4000 Hz  | 1.41 | 8.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.8 dB |
-| Peaking | 16000 Hz | 1.41 | -0.1 dB |
+| Peaking | 8000 Hz  | 1.41 | -3.5 dB |
+| Peaking | 16000 Hz | 1.41 | -0.3 dB |
 
 ### Graphs
 ![](./Sennheiser%20CX%20400BT.png)

@@ -8,19 +8,19 @@ When using independent subset of filters, apply preamp of **-6.9 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 297 Hz   | 0.63 | -4.0 dB |
-| Peaking | 1373 Hz  | 1.25 | -1.7 dB |
-| Peaking | 3152 Hz  | 1.77 | 6.2 dB  |
-| Peaking | 9404 Hz  | 2.27 | 5.0 dB  |
-| Peaking | 13962 Hz | 1.24 | 6.2 dB  |
-| Peaking | 36 Hz    | 1.09 | 1.5 dB  |
-| Peaking | 5198 Hz  | 5.85 | 6.4 dB  |
-| Peaking | 6036 Hz  | 2.51 | -4.6 dB |
-| Peaking | 7444 Hz  | 2.16 | -0.4 dB |
-| Peaking | 7972 Hz  | 5.34 | 3.2 dB  |
+| Peaking | 299 Hz   | 0.62 | -4.0 dB |
+| Peaking | 1345 Hz  | 1.42 | -1.6 dB |
+| Peaking | 3134 Hz  | 2    | 6.3 dB  |
+| Peaking | 8792 Hz  | 2.49 | 4.4 dB  |
+| Peaking | 13699 Hz | 0.95 | 6.3 dB  |
+| Peaking | 35 Hz    | 1.14 | 1.5 dB  |
+| Peaking | 5182 Hz  | 5.22 | 4.6 dB  |
+| Peaking | 6038 Hz  | 2.94 | -4.9 dB |
+| Peaking | 7447 Hz  | 4.01 | 0.3 dB  |
+| Peaking | 7495 Hz  | 5.63 | 2.7 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -31,10 +31,10 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 250 Hz   | 1.41 | -3.6 dB |
 | Peaking | 500 Hz   | 1.41 | -2.2 dB |
 | Peaking | 1000 Hz  | 1.41 | -1.8 dB |
-| Peaking | 2000 Hz  | 1.41 | 0.9 dB  |
-| Peaking | 4000 Hz  | 1.41 | 3.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | 3.6 dB  |
-| Peaking | 16000 Hz | 1.41 | 6.6 dB  |
+| Peaking | 2000 Hz  | 1.41 | 1.0 dB  |
+| Peaking | 4000 Hz  | 1.41 | 3.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 4.4 dB  |
+| Peaking | 16000 Hz | 1.41 | 6.8 dB  |
 
 ### Graphs
 ![](./Fearless%20Audio%20Tequila.png)

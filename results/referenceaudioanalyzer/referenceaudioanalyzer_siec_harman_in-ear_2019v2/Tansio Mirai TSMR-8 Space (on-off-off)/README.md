@@ -2,22 +2,20 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6 dB**.
+When using independent subset of filters, apply preamp of **-6.4 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 69 Hz    | 0.36 | -3.2 dB |
-| Peaking | 236 Hz   | 0.54 | -4.6 dB |
-| Peaking | 2925 Hz  | 0.87 | 5.8 dB  |
-| Peaking | 5402 Hz  | 2.17 | 3.6 dB  |
-| Peaking | 13861 Hz | 0.54 | 1.5 dB  |
-| Peaking | 913 Hz   | 4.31 | 0.6 dB  |
-| Peaking | 6185 Hz  | 3.8  | 1.0 dB  |
-| Peaking | 8445 Hz  | 1.33 | -1.6 dB |
-| Peaking | 8849 Hz  | 4.12 | 2.5 dB  |
-| Peaking | 12882 Hz | 2.92 | 0.4 dB  |
+| Peaking | 73 Hz    | 0.36 | -3.3 dB |
+| Peaking | 241 Hz   | 0.56 | -4.4 dB |
+| Peaking | 2779 Hz  | 0.95 | 5.3 dB  |
+| Peaking | 5408 Hz  | 1.44 | 4.0 dB  |
+| Peaking | 17406 Hz | 0.21 | 1.2 dB  |
+| Peaking | 11 Hz    | 0.85 | -0.6 dB |
+| Peaking | 938 Hz   | 3.47 | 0.7 dB  |
+| Peaking | 1587 Hz  | 2.96 | -0.5 dB |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.5dB**
@@ -32,9 +30,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -2.2 dB |
 | Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | 3.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 6.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | 2.0 dB  |
-| Peaking | 16000 Hz | 1.41 | 1.7 dB  |
+| Peaking | 4000 Hz  | 1.41 | 6.4 dB  |
+| Peaking | 8000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 16000 Hz | 1.41 | 1.4 dB  |
 
 ### Graphs
 ![](./Tansio%20Mirai%20TSMR-8%20Space%20(on-off-off).png)

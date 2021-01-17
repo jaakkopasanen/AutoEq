@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.2dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-3.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.2dB**.
+When using independent subset of filters, apply preamp of **-5.5 dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 21 Hz   | 0.86 | -6.5 dB |
-| Peaking | 70 Hz   | 0.75 | -7.6 dB |
-| Peaking | 302 Hz  | 1.79 | 4.5 dB  |
-| Peaking | 5871 Hz | 0.92 | 3.5 dB  |
-| Peaking | 7545 Hz | 3.09 | -8.4 dB |
-| Peaking | 2420 Hz | 2.62 | 0.8 dB  |
-| Peaking | 2873 Hz | 2.69 | 2.5 dB  |
-| Peaking | 3482 Hz | 1.64 | -2.9 dB |
-| Peaking | 4665 Hz | 3.68 | 1.0 dB  |
-| Peaking | 4682 Hz | 2.15 | 0.5 dB  |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 20 Hz    | 0.82 | -6.8 dB |
+| Peaking | 69 Hz    | 0.75 | -7.6 dB |
+| Peaking | 300 Hz   | 1.91 | 4.5 dB  |
+| Peaking | 10023 Hz | 1.38 | -4.8 dB |
+| Peaking | 18851 Hz | 0    | 2.3 dB  |
+| Peaking | 122 Hz   | 2.3  | -0.9 dB |
+| Peaking | 275 Hz   | 1.95 | -0.9 dB |
+| Peaking | 691 Hz   | 0.76 | -2.4 dB |
+| Peaking | 1642 Hz  | 2.19 | -1.4 dB |
+| Peaking | 7318 Hz  | 3.3  | -1.3 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.9dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 0.3 dB  |
 | Peaking | 1000 Hz  | 1.41 | -0.4 dB |
 | Peaking | 2000 Hz  | 1.41 | 0.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | 2.4 dB  |
-| Peaking | 8000 Hz  | 1.41 | -3.4 dB |
-| Peaking | 16000 Hz | 1.41 | 3.6 dB  |
+| Peaking | 4000 Hz  | 1.41 | 2.2 dB  |
+| Peaking | 8000 Hz  | 1.41 | -2.3 dB |
+| Peaking | 16000 Hz | 1.41 | 2.9 dB  |
 
 ### Graphs
 ![](./Anker%20SoundCore%20Life%202.png)

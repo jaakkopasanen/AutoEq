@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-6.5 dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 177 Hz   | 0.52 | -6.5 dB |
-| Peaking | 1224 Hz  | 1.87 | 4.1 dB  |
-| Peaking | 2869 Hz  | 1.7  | 6.0 dB  |
-| Peaking | 8740 Hz  | 2.36 | 5.5 dB  |
-| Peaking | 22050 Hz | 2.4  | 4.2 dB  |
-| Peaking | 23 Hz    | 1.71 | -2.1 dB |
-| Peaking | 4175 Hz  | 4.76 | 3.3 dB  |
-| Peaking | 4406 Hz  | 3.42 | 1.3 dB  |
-| Peaking | 5312 Hz  | 2.38 | -5.9 dB |
-| Peaking | 6538 Hz  | 4.34 | 4.8 dB  |
+| Type    | Fc      |    Q | Gain    |
+|:--------|:--------|:-----|:--------|
+| Peaking | 192 Hz  | 0.48 | -6.8 dB |
+| Peaking | 333 Hz  | 1.66 | 1.1 dB  |
+| Peaking | 1212 Hz | 1.63 | 4.2 dB  |
+| Peaking | 2888 Hz | 1.69 | 6.0 dB  |
+| Peaking | 9499 Hz | 2.03 | 4.8 dB  |
+| Peaking | 16 Hz   | 0.2  | -2.3 dB |
+| Peaking | 61 Hz   | 1.23 | 2.7 dB  |
+| Peaking | 4157 Hz | 5.61 | 4.0 dB  |
+| Peaking | 5358 Hz | 2.72 | -5.7 dB |
+| Peaking | 6424 Hz | 4    | 4.9 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.0dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -2.0 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | 4.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.9 dB  |
-| Peaking | 8000 Hz  | 1.41 | 4.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -5.4 dB |
+| Peaking | 4000 Hz  | 1.41 | 2.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | 3.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -5.2 dB |
 
 ### Graphs
 ![](./AudioQuest%20NightHawk.png)

@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.8dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4 dB**.
+When using independent subset of filters, apply preamp of **-7.1 dB**.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 23 Hz    | 0.23 | -2.8 dB  |
-| Peaking | 140 Hz   | 0.5  | -3.5 dB  |
-| Peaking | 762 Hz   | 1.39 | 3.8 dB   |
-| Peaking | 3169 Hz  | 4.32 | 3.8 dB   |
-| Peaking | 12044 Hz | 1.28 | 7.2 dB   |
-| Peaking | 1947 Hz  | 2.41 | -2.9 dB  |
-| Peaking | 7382 Hz  | 3.75 | -5.2 dB  |
-| Peaking | 7785 Hz  | 0.1  | 0.8 dB   |
-| Peaking | 8823 Hz  | 4.1  | 3.3 dB   |
-| Peaking | 19603 Hz | 1.26 | -11.3 dB |
+| Type    | Fc       |    Q | Gain    |
+|:--------|:---------|:-----|:--------|
+| Peaking | 25 Hz    | 0.23 | -2.8 dB |
+| Peaking | 141 Hz   | 0.51 | -3.4 dB |
+| Peaking | 763 Hz   | 1.4  | 3.8 dB  |
+| Peaking | 3161 Hz  | 4.52 | 3.9 dB  |
+| Peaking | 11427 Hz | 1.26 | 6.9 dB  |
+| Peaking | 1895 Hz  | 0.83 | 1.6 dB  |
+| Peaking | 1920 Hz  | 2.01 | -3.9 dB |
+| Peaking | 6890 Hz  | 4.65 | -2.6 dB |
+| Peaking | 9652 Hz  | 1.74 | 2.0 dB  |
+| Peaking | 11014 Hz | 3.51 | -2.1 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.6dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.5 dB  |
 | Peaking | 1000 Hz  | 1.41 | 3.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.7 dB |
-| Peaking | 4000 Hz  | 1.41 | 1.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | 2.4 dB  |
-| Peaking | 16000 Hz | 1.41 | 4.3 dB  |
+| Peaking | 4000 Hz  | 1.41 | 1.5 dB  |
+| Peaking | 8000 Hz  | 1.41 | 3.5 dB  |
+| Peaking | 16000 Hz | 1.41 | 3.4 dB  |
 
 ### Graphs
 ![](./BGVP%20DS1%20Pro.png)

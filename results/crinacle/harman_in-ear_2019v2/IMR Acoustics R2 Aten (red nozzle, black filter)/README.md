@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2dB**.
+When using independent subset of filters, apply preamp of **-6.7 dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 20 Hz    | 0.54 | -4.1 dB |
-| Peaking | 83 Hz    | 0.56 | -5.0 dB |
-| Peaking | 231 Hz   | 0.64 | -5.1 dB |
-| Peaking | 1539 Hz  | 0.53 | 5.1 dB  |
-| Peaking | 4068 Hz  | 2.8  | 4.6 dB  |
-| Peaking | 4510 Hz  | 0.81 | 1.9 dB  |
-| Peaking | 9875 Hz  | 2.83 | 4.4 dB  |
-| Peaking | 12527 Hz | 1.22 | 3.8 dB  |
-| Peaking | 18782 Hz | 0.1  | -5.6 dB |
-| Peaking | 19951 Hz | 0.6  | -6.6 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 21 Hz    | 0.58 | -4.0 dB  |
+| Peaking | 79 Hz    | 0.55 | -5.0 dB  |
+| Peaking | 229 Hz   | 0.61 | -5.2 dB  |
+| Peaking | 1530 Hz  | 0.53 | 5.0 dB   |
+| Peaking | 4068 Hz  | 2.66 | 4.5 dB   |
+| Peaking | 922 Hz   | 3.11 | 1.0 dB   |
+| Peaking | 1321 Hz  | 2.03 | -1.1 dB  |
+| Peaking | 2170 Hz  | 3.1  | 1.1 dB   |
+| Peaking | 9769 Hz  | 1.59 | 2.0 dB   |
+| Peaking | 19521 Hz | 0.35 | -10.0 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.8dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.9 dB |
 | Peaking | 1000 Hz  | 1.41 | 3.4 dB  |
 | Peaking | 2000 Hz  | 1.41 | 3.9 dB  |
-| Peaking | 4000 Hz  | 1.41 | 4.9 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.0 dB |
-| Peaking | 16000 Hz | 1.41 | -7.5 dB |
+| Peaking | 4000 Hz  | 1.41 | 4.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | 0.4 dB  |
+| Peaking | 16000 Hz | 1.41 | -8.4 dB |
 
 ### Graphs
 ![](./IMR%20Acoustics%20R2%20Aten%20(red%20nozzle,%20black%20filter).png)

@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-6.8 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 151 Hz   | 0.63 | -7.8 dB |
-| Peaking | 2518 Hz  | 2.74 | 4.8 dB  |
-| Peaking | 3869 Hz  | 1.79 | 4.9 dB  |
-| Peaking | 12858 Hz | 0.49 | 4.7 dB  |
-| Peaking | 20007 Hz | 0.4  | 5.2 dB  |
-| Peaking | 22 Hz    | 1.6  | 1.7 dB  |
-| Peaking | 291 Hz   | 2.23 | -2.1 dB |
-| Peaking | 559 Hz   | 1.57 | 3.5 dB  |
-| Peaking | 1219 Hz  | 1.38 | -3.3 dB |
-| Peaking | 1873 Hz  | 2.33 | 1.8 dB  |
+| Peaking | 2524 Hz  | 2.7  | 4.9 dB  |
+| Peaking | 3864 Hz  | 1.75 | 5.0 dB  |
+| Peaking | 11424 Hz | 0.67 | 3.3 dB  |
+| Peaking | 19080 Hz | 0.31 | 5.6 dB  |
+| Peaking | 21 Hz    | 1.57 | 1.6 dB  |
+| Peaking | 291 Hz   | 2.24 | -2.1 dB |
+| Peaking | 558 Hz   | 1.58 | 3.5 dB  |
+| Peaking | 1212 Hz  | 1.41 | -3.2 dB |
+| Peaking | 1876 Hz  | 2.61 | 1.7 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 3.0 dB  |
 | Peaking | 4000 Hz  | 1.41 | 5.6 dB  |
 | Peaking | 8000 Hz  | 1.41 | 3.1 dB  |
-| Peaking | 16000 Hz | 1.41 | 9.1 dB  |
+| Peaking | 16000 Hz | 1.41 | 9.2 dB  |
 
 ### Graphs
 ![](./Sony%20MDR-XB50AP.png)

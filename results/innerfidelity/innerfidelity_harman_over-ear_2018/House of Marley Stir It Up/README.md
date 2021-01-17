@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-6.9 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 30 Hz    | 0.67 | -3.3 dB |
-| Peaking | 122 Hz   | 0.67 | -6.0 dB |
-| Peaking | 679 Hz   | 0.93 | -6.1 dB |
-| Peaking | 2364 Hz  | 1.08 | 6.7 dB  |
-| Peaking | 12355 Hz | 0.44 | 5.9 dB  |
-| Peaking | 199 Hz   | 4.89 | -0.5 dB |
-| Peaking | 3852 Hz  | 4.16 | 2.9 dB  |
-| Peaking | 5532 Hz  | 2.59 | -7.0 dB |
-| Peaking | 6464 Hz  | 2.13 | 4.7 dB  |
-| Peaking | 14128 Hz | 2.79 | -1.2 dB |
+| Peaking | 30 Hz    | 0.68 | -3.3 dB |
+| Peaking | 121 Hz   | 0.68 | -6.0 dB |
+| Peaking | 681 Hz   | 0.92 | -6.1 dB |
+| Peaking | 2383 Hz  | 1.05 | 6.9 dB  |
+| Peaking | 12135 Hz | 0.55 | 6.5 dB  |
+| Peaking | 491 Hz   | 5.99 | -0.7 dB |
+| Peaking | 1120 Hz  | 2.98 | -0.2 dB |
+| Peaking | 3865 Hz  | 4.26 | 3.1 dB  |
+| Peaking | 5521 Hz  | 2.59 | -6.5 dB |
+| Peaking | 6569 Hz  | 2.73 | 5.0 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.3dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -34,7 +34,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | 6.9 dB  |
 | Peaking | 4000 Hz  | 1.41 | 2.2 dB  |
 | Peaking | 8000 Hz  | 1.41 | 5.8 dB  |
-| Peaking | 16000 Hz | 1.41 | 6.1 dB  |
+| Peaking | 16000 Hz | 1.41 | 6.7 dB  |
 
 ### Graphs
 ![](./House%20of%20Marley%20Stir%20It%20Up.png)

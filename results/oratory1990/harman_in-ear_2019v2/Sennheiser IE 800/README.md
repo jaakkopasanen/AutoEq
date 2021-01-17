@@ -4,23 +4,23 @@ See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more
 ### Parametric EQs
 In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.3dB**.
+When using independent subset of filters, apply preamp of **-6.8 dB**.
 
 | Type    | Fc       |    Q | Gain     |
 |:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 0.11 | -5.2 dB  |
-| Peaking | 494 Hz   | 0.14 | -1.4 dB  |
-| Peaking | 2948 Hz  | 0.94 | 7.5 dB   |
-| Peaking | 6014 Hz  | 0.95 | 7.4 dB   |
-| Peaking | 16276 Hz | 0.2  | -10.6 dB |
-| Peaking | 1357 Hz  | 3.3  | -1.1 dB  |
-| Peaking | 2212 Hz  | 5.1  | 1.5 dB   |
-| Peaking | 4592 Hz  | 3.61 | 3.2 dB   |
-| Peaking | 5119 Hz  | 1.55 | -2.7 dB  |
-| Peaking | 6403 Hz  | 3.71 | 2.1 dB   |
+| Peaking | 11 Hz    | 0.39 | -5.2 dB  |
+| Peaking | 118 Hz   | 0.3  | -5.4 dB  |
+| Peaking | 2543 Hz  | 1.95 | 4.6 dB   |
+| Peaking | 5004 Hz  | 0.85 | 8.4 dB   |
+| Peaking | 18491 Hz | 0.15 | -10.5 dB |
+| Peaking | 1220 Hz  | 1.43 | -2.7 dB  |
+| Peaking | 1259 Hz  | 0.6  | 1.3 dB   |
+| Peaking | 5642 Hz  | 4.44 | -2.4 dB  |
+| Peaking | 6169 Hz  | 5.32 | 1.5 dB   |
+| Peaking | 6352 Hz  | 5.85 | 1.1 dB   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain     |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | -1.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | 3.1 dB   |
 | Peaking | 4000 Hz  | 1.41 | 7.6 dB   |
-| Peaking | 8000 Hz  | 1.41 | -1.6 dB  |
-| Peaking | 16000 Hz | 1.41 | -16.2 dB |
+| Peaking | 8000 Hz  | 1.41 | -1.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -15.6 dB |
 
 ### Graphs
 ![](./Sennheiser%20IE%20800.png)

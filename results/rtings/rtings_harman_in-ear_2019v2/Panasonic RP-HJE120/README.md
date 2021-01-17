@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.8dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2dB**.
+When using independent subset of filters, apply preamp of **-6.8 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
 | Peaking | 56 Hz    | 0.33 | -4.8 dB |
 | Peaking | 237 Hz   | 0.38 | -6.2 dB |
-| Peaking | 986 Hz   | 0.41 | 4.8 dB  |
-| Peaking | 3748 Hz  | 3.36 | 3.5 dB  |
-| Peaking | 11446 Hz | 0.62 | 6.4 dB  |
-| Peaking | 398 Hz   | 3.53 | -0.2 dB |
-| Peaking | 5493 Hz  | 4.53 | -4.3 dB |
-| Peaking | 7143 Hz  | 1.52 | 1.2 dB  |
-| Peaking | 8995 Hz  | 0.5  | 1.1 dB  |
-| Peaking | 10756 Hz | 1.47 | -1.9 dB |
+| Peaking | 990 Hz   | 0.41 | 4.8 dB  |
+| Peaking | 3752 Hz  | 3.31 | 3.6 dB  |
+| Peaking | 11557 Hz | 0.63 | 6.5 dB  |
+| Peaking | 396 Hz   | 3.64 | -0.2 dB |
+| Peaking | 4637 Hz  | 2.63 | 1.2 dB  |
+| Peaking | 5384 Hz  | 4.44 | -4.5 dB |
+| Peaking | 7429 Hz  | 1.49 | 1.5 dB  |
+| Peaking | 10914 Hz | 2.73 | -1.0 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | 2.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | 2.9 dB  |
 | Peaking | 4000 Hz  | 1.41 | 2.9 dB  |
-| Peaking | 8000 Hz  | 1.41 | 5.8 dB  |
-| Peaking | 16000 Hz | 1.41 | 5.6 dB  |
+| Peaking | 8000 Hz  | 1.41 | 5.6 dB  |
+| Peaking | 16000 Hz | 1.41 | 5.7 dB  |
 
 ### Graphs
 ![](./Panasonic%20RP-HJE120.png)

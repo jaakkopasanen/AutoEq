@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.1dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.0 dB**.
+When using independent subset of filters, apply preamp of **-7.2 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 19 Hz    | 0.49 | 5.1 dB  |
-| Peaking | 209 Hz   | 1    | -2.6 dB |
-| Peaking | 3766 Hz  | 3.63 | 4.0 dB  |
-| Peaking | 6726 Hz  | 1.61 | -5.2 dB |
-| Peaking | 15927 Hz | 0.26 | 6.9 dB  |
-| Peaking | 881 Hz   | 2.04 | 2.3 dB  |
-| Peaking | 2022 Hz  | 1.91 | -2.5 dB |
-| Peaking | 5325 Hz  | 4.62 | -3.5 dB |
-| Peaking | 6395 Hz  | 1.1  | 2.9 dB  |
-| Peaking | 7449 Hz  | 5.16 | -4.0 dB |
+| Peaking | 15 Hz    | 0.35 | 5.4 dB  |
+| Peaking | 213 Hz   | 0.65 | -2.5 dB |
+| Peaking | 823 Hz   | 2.26 | 2.5 dB  |
+| Peaking | 3675 Hz  | 4.3  | 4.3 dB  |
+| Peaking | 17124 Hz | 0.43 | 7.0 dB  |
+| Peaking | 2060 Hz  | 1.43 | -3.6 dB |
+| Peaking | 3175 Hz  | 0.43 | 1.9 dB  |
+| Peaking | 5427 Hz  | 4.37 | -3.5 dB |
+| Peaking | 7092 Hz  | 4.16 | -3.1 dB |
+| Peaking | 12100 Hz | 2.73 | 1.4 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-10.3dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.9dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | 2.2 dB  |
 | Peaking | 2000 Hz  | 1.41 | -2.4 dB |
 | Peaking | 4000 Hz  | 1.41 | 3.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.1 dB  |
-| Peaking | 16000 Hz | 1.41 | 10.0 dB |
+| Peaking | 8000 Hz  | 1.41 | 0.2 dB  |
+| Peaking | 16000 Hz | 1.41 | 9.7 dB  |
 
 ### Graphs
 ![](./Tansio%20Mirai%20TSMR-3%20Pro%20(off-off-on).png)

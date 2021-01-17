@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9dB**.
+When using independent subset of filters, apply preamp of **-6.5 dB**.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 79 Hz    | 0.53 | -4.0 dB |
-| Peaking | 231 Hz   | 0.56 | -5.1 dB |
-| Peaking | 1756 Hz  | 0.44 | 6.7 dB  |
-| Peaking | 5865 Hz  | 2.69 | -9.9 dB |
-| Peaking | 11774 Hz | 2.2  | 6.2 dB  |
-| Peaking | 3195 Hz  | 3.3  | 2.2 dB  |
-| Peaking | 3649 Hz  | 5.72 | -3.4 dB |
-| Peaking | 7150 Hz  | 3.62 | 2.8 dB  |
-| Peaking | 8200 Hz  | 2.78 | -4.1 dB |
-| Peaking | 9894 Hz  | 4.62 | 2.7 dB  |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 79 Hz    | 0.53 | -4.0 dB  |
+| Peaking | 231 Hz   | 0.55 | -5.1 dB  |
+| Peaking | 1735 Hz  | 0.44 | 6.7 dB   |
+| Peaking | 5854 Hz  | 3.06 | -10.2 dB |
+| Peaking | 10906 Hz | 2.27 | 3.5 dB   |
+| Peaking | 3151 Hz  | 3.99 | 2.9 dB   |
+| Peaking | 3644 Hz  | 3.82 | -3.5 dB  |
+| Peaking | 4634 Hz  | 4.64 | 1.4 dB   |
+| Peaking | 13743 Hz | 1.61 | 1.9 dB   |
+| Peaking | 19913 Hz | 0.52 | -7.1 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.0dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -33,8 +33,8 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 1000 Hz  | 1.41 | 3.9 dB  |
 | Peaking | 2000 Hz  | 1.41 | 7.0 dB  |
 | Peaking | 4000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 8000 Hz  | 1.41 | -1.4 dB |
-| Peaking | 16000 Hz | 1.41 | 0.8 dB  |
+| Peaking | 8000 Hz  | 1.41 | -1.2 dB |
+| Peaking | 16000 Hz | 1.41 | -0.8 dB |
 
 ### Graphs
 ![](./AKG%20Q350%20Quincy%20Jones.png)

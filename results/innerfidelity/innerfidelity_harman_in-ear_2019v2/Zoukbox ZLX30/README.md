@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.4dB**.
+When using independent subset of filters, apply preamp of **-7.1 dB**.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 30 Hz   | 0.11 | -6.2 dB |
-| Peaking | 759 Hz  | 1.15 | 3.6 dB  |
-| Peaking | 4275 Hz | 3.33 | -9.8 dB |
-| Peaking | 5533 Hz | 1.91 | 7.6 dB  |
-| Peaking | 9454 Hz | 1.5  | 5.4 dB  |
-| Peaking | 1054 Hz | 2.91 | 0.5 dB  |
-| Peaking | 2460 Hz | 2.68 | -3.5 dB |
-| Peaking | 3088 Hz | 4    | 1.7 dB  |
-| Peaking | 3108 Hz | 2.01 | 1.7 dB  |
-| Peaking | 3690 Hz | 3.17 | -1.2 dB |
+| Type    | Fc       |    Q | Gain     |
+|:--------|:---------|:-----|:---------|
+| Peaking | 28 Hz    | 0.09 | -6.2 dB  |
+| Peaking | 751 Hz   | 0.9  | 3.4 dB   |
+| Peaking | 2349 Hz  | 2.61 | -3.6 dB  |
+| Peaking | 4181 Hz  | 3.82 | -11.3 dB |
+| Peaking | 6322 Hz  | 0.76 | 7.8 dB   |
+| Peaking | 5280 Hz  | 7.15 | 2.5 dB   |
+| Peaking | 6242 Hz  | 2.36 | 0.3 dB   |
+| Peaking | 6592 Hz  | 1.38 | -2.5 dB  |
+| Peaking | 9564 Hz  | 0.89 | 2.4 dB   |
+| Peaking | 19724 Hz | 0.47 | -6.0 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.5dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | 1.0 dB  |
 | Peaking | 1000 Hz  | 1.41 | 3.1 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 4000 Hz  | 1.41 | -3.0 dB |
+| Peaking | 4000 Hz  | 1.41 | -2.9 dB |
 | Peaking | 8000 Hz  | 1.41 | 8.9 dB  |
-| Peaking | 16000 Hz | 1.41 | -2.6 dB |
+| Peaking | 16000 Hz | 1.41 | -2.8 dB |
 
 ### Graphs
 ![](./Zoukbox%20ZLX30.png)

@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.3dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1dB**.
+When using independent subset of filters, apply preamp of **-6.7 dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
 | Peaking | 34 Hz   | 0.68 | -5.9 dB |
 | Peaking | 177 Hz  | 0.91 | -6.6 dB |
-| Peaking | 1514 Hz | 1.48 | 5.9 dB  |
-| Peaking | 3023 Hz | 1.85 | 5.6 dB  |
-| Peaking | 6913 Hz | 3.65 | -5.4 dB |
-| Peaking | 338 Hz  | 3.25 | 1.6 dB  |
-| Peaking | 462 Hz  | 2.93 | -2.5 dB |
-| Peaking | 4335 Hz | 7.59 | -1.4 dB |
-| Peaking | 7409 Hz | 0.04 | 0.1 dB  |
-| Peaking | 9487 Hz | 5.95 | 0.8 dB  |
+| Peaking | 1503 Hz | 1.52 | 5.8 dB  |
+| Peaking | 3038 Hz | 1.68 | 5.8 dB  |
+| Peaking | 6797 Hz | 1.91 | -3.4 dB |
+| Peaking | 337 Hz  | 3.16 | 1.6 dB  |
+| Peaking | 461 Hz  | 3.28 | -2.5 dB |
+| Peaking | 3594 Hz | 6.49 | 1.9 dB  |
+| Peaking | 4517 Hz | 1.89 | -1.8 dB |
+| Peaking | 5232 Hz | 5.3  | 2.6 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.1dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -1.7 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.4 dB  |
 | Peaking | 2000 Hz  | 1.41 | 6.3 dB  |
-| Peaking | 4000 Hz  | 1.41 | 2.4 dB  |
+| Peaking | 4000 Hz  | 1.41 | 2.5 dB  |
 | Peaking | 8000 Hz  | 1.41 | -3.2 dB |
-| Peaking | 16000 Hz | 1.41 | 0.7 dB  |
+| Peaking | 16000 Hz | 1.41 | 0.5 dB  |
 
 ### Graphs
 ![](./AKG%20K52.png)

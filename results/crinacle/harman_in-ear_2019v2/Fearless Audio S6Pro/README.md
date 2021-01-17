@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.0dB**.
+When using independent subset of filters, apply preamp of **-6.6 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 28 Hz    | 0.65 | 6.3 dB  |
-| Peaking | 938 Hz   | 2.51 | 2.3 dB  |
-| Peaking | 1921 Hz  | 3.76 | -2.1 dB |
-| Peaking | 4330 Hz  | 3.13 | -4.3 dB |
-| Peaking | 4576 Hz  | 0.97 | 2.3 dB  |
-| Peaking | 74 Hz    | 1.28 | 0.7 dB  |
-| Peaking | 263 Hz   | 0.79 | -1.8 dB |
-| Peaking | 638 Hz   | 1.25 | 0.7 dB  |
-| Peaking | 12203 Hz | 2.51 | 2.1 dB  |
-| Peaking | 19333 Hz | 1    | -8.1 dB |
+| Peaking | 28 Hz    | 0.64 | 6.4 dB  |
+| Peaking | 937 Hz   | 2.53 | 2.3 dB  |
+| Peaking | 1921 Hz  | 3.8  | -2.2 dB |
+| Peaking | 4367 Hz  | 2.86 | -4.6 dB |
+| Peaking | 4707 Hz  | 0.95 | 2.7 dB  |
+| Peaking | 258 Hz   | 1.17 | -1.8 dB |
+| Peaking | 689 Hz   | 3.04 | 0.6 dB  |
+| Peaking | 9987 Hz  | 2.21 | 1.1 dB  |
+| Peaking | 12294 Hz | 1.64 | 0.7 dB  |
+| Peaking | 19823 Hz | 0.38 | -5.3 dB |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.6dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -0.1 dB |
 | Peaking | 1000 Hz  | 1.41 | 2.2 dB  |
 | Peaking | 2000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 4000 Hz  | 1.41 | -0.4 dB |
-| Peaking | 8000 Hz  | 1.41 | 1.1 dB  |
-| Peaking | 16000 Hz | 1.41 | -2.5 dB |
+| Peaking | 4000 Hz  | 1.41 | -0.5 dB |
+| Peaking | 8000 Hz  | 1.41 | 1.8 dB  |
+| Peaking | 16000 Hz | 1.41 | -3.4 dB |
 
 ### Graphs
 ![](./Fearless%20Audio%20S6Pro.png)

@@ -2,25 +2,25 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.6dB** and build filters manually
+In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
 with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.5dB**.
+When using independent subset of filters, apply preamp of **-6.5 dB**.
 
 | Type    | Fc       |    Q | Gain    |
 |:--------|:---------|:-----|:--------|
-| Peaking | 24 Hz    | 0.61 | 2.2 dB  |
-| Peaking | 233 Hz   | 0.49 | -5.2 dB |
-| Peaking | 2886 Hz  | 0.91 | 5.5 dB  |
-| Peaking | 5144 Hz  | 2.96 | 3.3 dB  |
-| Peaking | 17358 Hz | 0.42 | 6.8 dB  |
-| Peaking | 6395 Hz  | 2.75 | 0.7 dB  |
-| Peaking | 6445 Hz  | 2.67 | 0.7 dB  |
-| Peaking | 7946 Hz  | 3.42 | -4.6 dB |
-| Peaking | 11654 Hz | 2.03 | 2.0 dB  |
-| Peaking | 20409 Hz | 3.36 | 0.6 dB  |
+| Peaking | 254 Hz   | 0.58 | -5.4 dB |
+| Peaking | 3082 Hz  | 0.79 | 5.6 dB  |
+| Peaking | 5334 Hz  | 2.71 | 2.8 dB  |
+| Peaking | 13914 Hz | 1.09 | 3.9 dB  |
+| Peaking | 19207 Hz | 0.47 | 5.8 dB  |
+| Peaking | 17 Hz    | 0.28 | 2.2 dB  |
+| Peaking | 86 Hz    | 1.05 | -1.3 dB |
+| Peaking | 1865 Hz  | 3.65 | 1.2 dB  |
+| Peaking | 2180 Hz  | 1.35 | -0.8 dB |
+| Peaking | 3358 Hz  | 2.89 | 0.5 dB  |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-10.1dB**
+In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.2dB**
 (if available) and set gains manually with these parameters.
 
 | Type    | Fc       |    Q | Gain    |
@@ -32,9 +32,9 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 500 Hz   | 1.41 | -2.6 dB |
 | Peaking | 1000 Hz  | 1.41 | 0.0 dB  |
 | Peaking | 2000 Hz  | 1.41 | 2.9 dB  |
-| Peaking | 4000 Hz  | 1.41 | 6.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 16000 Hz | 1.41 | 9.5 dB  |
+| Peaking | 4000 Hz  | 1.41 | 6.1 dB  |
+| Peaking | 8000 Hz  | 1.41 | 1.9 dB  |
+| Peaking | 16000 Hz | 1.41 | 8.9 dB  |
 
 ### Graphs
 ![](./Life%20Acoustics%20PreKickstarter.png)
