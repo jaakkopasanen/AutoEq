@@ -240,7 +240,7 @@ fancy graphical user interface but instead it is used from command line.
 instead of Open SSL or you might run into problems when installing project dependencies.
 - Download and install 64-bit [Python 3.8](https://www.python.org/getit/). Make sure to check *Add Python 3.8 to PATH*.
 - You may need to install [libsndfile](http://www.mega-nerd.com/libsndfile/) if you're having problems with `soundfile`
-when installing `requirements.txt`
+when installing `requirements.txt`.
 - On Linux you may need to install Python dev packages  
 ```bash
 sudo apt install python3-dev python3-pip python3-venv
@@ -270,7 +270,7 @@ venv\Scripts\activate.bat
 ```
 - Update pip
 ```bash
-python -m pip install -U pip==20.3.3
+python -m pip install -U pip
 ```
 - Install required packages  
 ```bash
