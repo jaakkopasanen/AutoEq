@@ -834,7 +834,7 @@ class FrequencyResponse:
                 filters,
                 headers=['Type', 'Fc', 'Q', 'Gain'],
                 tablefmt='orgtbl'
-            ).replace('+', '|').replace('|-', '|:')
+            ).replace('+', '|').replace('-|', ':|')
 
             max_filters_str = ''
             if type(max_filters) == list and len(max_filters) > 1:
@@ -907,7 +907,7 @@ class FrequencyResponse:
                 filters,
                 headers=['Type', 'Fc', 'Q', 'Gain'],
                 tablefmt='orgtbl'
-            ).replace('+', '|').replace('|-', '|:')
+            ).replace('+', '|').replace('-|', ':|')
 
             s += '''
             ### Fixed Band EQs
