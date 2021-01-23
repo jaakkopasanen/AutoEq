@@ -1,4 +1,4 @@
-# Sennheiser Momentum M2 (wired, passive)
+# Sennheiser Momentum 2.0 (wired, passive)
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 0.8 dB  |
 
 ### Graphs
-![](./Sennheiser%20Momentum%20M2%20(wired,%20passive).png)
+![](./Sennheiser%20Momentum%202.0%20(wired,%20passive).png)

@@ -3786,10 +3786,14 @@ from the same source.
 - [Sennheiser MM 50](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Sennheiser%20MM%2050) by Reference Audio Analyzer
 - [Sennheiser MM 550 Travel Bluetooth NC](./headphonecom/headphonecom_harman_over-ear_2018/Sennheiser%20MM%20550%20Travel%20Bluetooth%20NC) by Headphone.com
 - [Sennheiser MM 550-X](./rtings/rtings_harman_over-ear_2018/Sennheiser%20MM%20550-X) by Rtings
+- [Sennheiser Momentum 2.0 (wired, active)](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%202.0%20(wired,%20active)) by Innerfidelity
+- [Sennheiser Momentum 2.0 (wired, passive)](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%202.0%20(wired,%20passive)) by Innerfidelity
+- [Sennheiser Momentum 2.0 (wireless)](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%202.0%20(wireless)) by Innerfidelity
 - [Sennheiser Momentum 2.0 In-Ear](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Sennheiser%20Momentum%202.0%20In-Ear) by Reference Audio Analyzer
 - [Sennheiser Momentum 2.0 On-Ear](./rtings/rtings_harman_over-ear_2018/Sennheiser%20Momentum%202.0%20On-Ear) by Rtings
 - [Sennheiser Momentum 2.0 Wireless](./crinacle/gras_43ag-7_harman_over-ear_2018/Sennheiser%20Momentum%202.0%20Wireless) by Crinacle, GRAS 43AG-7
 - [Sennheiser Momentum 2.0 Wireless](./rtings/rtings_harman_over-ear_2018/Sennheiser%20Momentum%202.0%20Wireless) by Rtings
+- [Sennheiser Momentum 2.0](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%202.0) by Innerfidelity
 - [Sennheiser Momentum 2.0](./rtings/rtings_harman_over-ear_2018/Sennheiser%20Momentum%202.0) by Rtings
 - [Sennheiser Momentum 3 Wireless](./crinacle/gras_43ag-7_harman_over-ear_2018/Sennheiser%20Momentum%203%20Wireless) by Crinacle, GRAS 43AG-7
 - [Sennheiser Momentum 3 Wireless](./oratory1990/harman_over-ear_2018/Sennheiser%20Momentum%203%20Wireless) by oratory1990
@@ -3798,10 +3802,6 @@ from the same source.
 - [Sennheiser Momentum In-Ear](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Sennheiser%20Momentum%20In-Ear) by Innerfidelity
 - [Sennheiser Momentum In-Ear](./oratory1990/harman_in-ear_2019v2/Sennheiser%20Momentum%20In-Ear) by oratory1990
 - [Sennheiser Momentum In-Ear](./rtings/rtings_harman_in-ear_2019v2/Sennheiser%20Momentum%20In-Ear) by Rtings
-- [Sennheiser Momentum M2 (wired, active)](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%20M2%20(wired,%20active)) by Innerfidelity
-- [Sennheiser Momentum M2 (wired, passive)](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%20M2%20(wired,%20passive)) by Innerfidelity
-- [Sennheiser Momentum M2 (wireless)](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%20M2%20(wireless)) by Innerfidelity
-- [Sennheiser Momentum M2](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%20M2) by Innerfidelity
 - [Sennheiser Momentum On-Ear](./headphonecom/headphonecom_harman_over-ear_2018/Sennheiser%20Momentum%20On-Ear) by Headphone.com
 - [Sennheiser Momentum On-Ear](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Momentum%20On-Ear) by Innerfidelity
 - [Sennheiser Momentum On-Ear](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Sennheiser%20Momentum%20On-Ear) by Reference Audio Analyzer, HDM-X

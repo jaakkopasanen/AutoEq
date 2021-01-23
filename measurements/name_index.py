@@ -64,7 +64,7 @@ class NameIndex:
         if not os.path.isfile(file_path):
             return index
         df = pd.read_csv(file_path, sep='\t', header=0, encoding='utf-8')
-        if not df.columns.all(['false_name', 'true_name', 'form']):
+        if list(df.columns) != ['false_name', 'true_name', 'form']:
             raise TypeError(f'"{file_path}" columns {df.columns} are corrupted')
         df.fillna('', inplace=True)
         index.df = df
