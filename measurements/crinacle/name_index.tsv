@@ -518,6 +518,8 @@ Gemini Bass	qdc Gemini (bass)	inear
 GK3	Geek Wold GK3	inear
 GL20	Gold Planar GL20	inear
 GL20 EQ		ignore
+GL2000 (leather)	Gold Planar GL2000 (leather earpads)	onear
+GL2000 (perf hybrid)	Gold Planar GL2000 (perforated hybrid earpads)	onear
 GL850	Gold Planar GL850	onear
 Gorham	NocturnaL Audio Gorham	inear
 GR01	VSonic GR01	inear
@@ -628,8 +630,8 @@ IE800	Sennheiser IE 800	inear
 IE800S	Sennheiser IE 800 S	inear
 IE80S	Sennheiser IE 80 S (min)	inear
 IE80S Half	Sennheiser IE 80 S (half)	inear
-IE80S max	Sennheiser IE 80 S (max)	inear
 IE80S Max	Sennheiser IE 80 S (max)	inear
+IE80S max	Sennheiser IE 80 S (max)	inear
 IEX1	Audio-Technica ATH-IEX1	inear
 iGE	Grado iGE	inear
 IM01	Audio-Technica ATH-IM01	inear
@@ -651,8 +653,8 @@ IT03	iBasso IT03	inear
 IT03w	iBasso IT03w	inear
 IT04	iBasso IT04	inear
 Jazz	Jomo Audio Jazz	inear
-Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
+Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 JH13v2 Max	JH Audio 13v2 (max)	inear
 JH13v2 Min	JH Audio 13v2 (min)	inear
 JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	inear

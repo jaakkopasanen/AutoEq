@@ -214,6 +214,7 @@ Audio-Technica FAKE ATH-FC700		ignore
 Audiofly AF33	AudioFly AF33	inear
 Audiofly AF45	AudioFly AF45	inear
 Audiofly AF56	AudioFly AF56	inear
+AudioSense T800	Audiosense T800	inear
 AUDIOSENSE T800	Audiosense T800	inear
 AuGlamour AT-1	AuGlamour AT-1	inear
 AuGlamour AT-1 (closed vent)	AuGlamour AT-1 (closed vent)	inear
@@ -559,8 +560,8 @@ FitEar 335 DW	FitEar 335 DW	inear
 Flare Audio Flares Gold (cone tips)	Flare Audio Flares Gold (cone tips)	inear
 Flare Audio Flares Gold (ordinary tips)	Flare Audio Flares Gold (ordinary tips)	inear
 Flares Gold	Flare Audio Flares Gold	inear
-FLC 8D	FLC Technology 8D	inear
 FLC 8d	FLC Technology 8D	inear
+FLC 8D	FLC Technology 8D	inear
 FLC 8N	FLC Technology 8N	inear
 FLC 8S	FLC Technology 8S	inear
 FLC Technology 8D (black)	FLC Technology 8D (black)	inear
@@ -605,6 +606,8 @@ Fostex TH-X00	Fostex TH-X00	onear
 Fostex TH610	Fostex TH610	onear
 Fostex TH909	Fostex TH909	onear
 Fostex TM2	Fostex TM2	inear
+Fostex TM2 (bluetooth)	Fostex TM2 (wireless)	inear
+Fostex TM2 (wire connection)	Fostex TM2 (wired)	inear
 Fostex TM2 Bluetooth Receiver		ignore
 Fostex TR-70	Fostex TR-70	onear
 GAL MP10	GAL MP10	inear
@@ -614,8 +617,8 @@ Gerkules HDP DJ-PRO M1001	Gerkules HDP DJ-PRO M1001	onear
 German Maestro GMP 240	German Maestro GMP 240	onear
 German Maestro GMP 250	German Maestro GMP 250	onear
 German Maestro GMP 400	German Maestro GMP 400	onear
-German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
 German Maestro GMP 450 PRO	German Maestro GMP 450 PRO	onear
+German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
 German Maestro GMP 8.300 D	German Maestro GMP 8.300 D	onear
 German Maestro GMP 8.35 D	German Maestro GMP 8.35 D	onear
 Grado eGrado	Grado eGrado	onear
@@ -686,11 +689,17 @@ iBasso IT01s	iBasso IT01S	inear
 iBasso IT03	iBasso IT03	inear
 iBasso IT04	iBasso IT04	inear
 iBasso IT07	iBasso IT07	inear
+iBasso IT07 (black)	iBasso IT07 (black)	inear
+iBasso IT07 (gold)	iBasso IT07 (gold)	inear
+iBasso IT07 (silver)	iBasso IT07 (silver)	inear
+iBasso IT07 (without)	iBasso IT07	inear
 iBasso SR2	iBasso SR2	
 Ice Lab EX3	Ice Lab EX3	inear
 ikko OH-1	IKKO OH1	inear
 ikko OH-10	IKKO OH10	inear
+IMR Opus Mia	IMR Acoustics Opus Mia	inear
 IMR R1	IMR Acoustics R1	inear
+IMR Semper	IMR Acoustics Semper	inear
 Intro RX-190	Intro RX-190	inear
 Jamo wEAR In30	Jamo wEAR In30	inear
 Jays d-Jays	JAYS d-JAYS	inear
@@ -883,8 +892,8 @@ Musical Fidelity EB-50	Musical Fidelity EB-50	inear
 MyST Gatling	MyST Gatling	onear
 MyST Izo-OS	MyST Izo-OS	onear
 MyST IzoEM-1		ignore
-MyST Izophones-30		ignore
 MyST IzoPhones-30	MyST IzoPhones-30	onear
+MyST Izophones-30		ignore
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
@@ -1104,6 +1113,8 @@ Simgot Meeture MTW5	Simgot Audio Meeture MTW5	inear
 Simgot MT3 Meeture	Simgot Audio Meeture MT3	inear
 Sivga Audio P-II	Sivga Audio P-II	onear
 Sivga Audio Phoenix	Sivga Audio Phoenix	onear
+Sivga Audio Phoenix (cushions 1)	Sivga Audio Phoenix (perforated leather earpads)	onear
+Sivga Audio Phoenix (cushions 2)	Sivga Audio Phoenix (hybrid earpads)	onear
 Skullcandy SK Pro	Skullcandy SK Pro	onear
 Snorry NM-1	Snorry NM-1	onear
 Sony 10RBT	Sony MDR-10RBT	onear
@@ -1303,8 +1314,8 @@ Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear
