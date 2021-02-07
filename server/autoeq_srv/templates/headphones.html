@@ -1,0 +1,40 @@
+{% extends "page.html" %}
+{% block title %}Find my headphones{% endblock %}
+{% block page_content %}
+  <h1>The Big List of Headphones</h1>
+  <p class="lead">We've currently got {{ headphones|length }} headphones listed, use search and sort to find yours.</p>
+  <table  class="table table-striped" data-toggle="table" data-search="true">
+    <thead class="thead-dark">
+      <tr>
+        <th data-field="sect" data-sortable="true">Type</th>
+        <th data-field="id" data-sortable="true">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{ phone_rows(headphones) }}
+    </tbody>
+  </table>
+{% endblock page_content %}
+
+{% macro phone_rows(headphones) %}
+  {%- for model in headphones -%}
+    {{ phone_row(model) }}
+  {%- endfor -%}
+{% endmacro %}
+
+{% macro phone_row(model) %}
+    <tr>
+      <td>{{ model.type }}</td>
+      <td>{{ model.name }}</td>
+    </tr>
+{% endmacro %}
+
+{% macro req_row(section, requirement) %}
+    <tr>
+      <td>{{ section }}</td>
+      <td class="table-danger"><a href="./{{ requirement.id }}/index.html">{{ requirement.id }}</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+{% endmacro %}
