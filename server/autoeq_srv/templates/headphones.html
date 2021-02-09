@@ -6,8 +6,9 @@
   <table  class="table table-striped" data-toggle="table" data-search="true">
     <thead class="thead-dark">
       <tr>
-        <th data-field="sect" data-sortable="true">Type</th>
-        <th data-field="id" data-sortable="true">Name</th>
+        <th data-field="type" data-sortable="true">Type</th>
+        <th data-field="name" data-sortable="true">Name</th>
+        <th data-field="download" data-sortable="false" searchable="false">Filters</th>
       </tr>
     </thead>
     <tbody>
@@ -26,15 +27,6 @@
     <tr>
       <td>{{ model.type }}</td>
       <td>{{ model.name }}</td>
-    </tr>
-{% endmacro %}
-
-{% macro req_row(section, requirement) %}
-    <tr>
-      <td>{{ section }}</td>
-      <td class="table-danger"><a href="./{{ requirement.id }}/index.html">{{ requirement.id }}</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><a href="/api/filters/{{ model.type }}/{{ model.name }}" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Get Filters</a></td>
     </tr>
 {% endmacro %}

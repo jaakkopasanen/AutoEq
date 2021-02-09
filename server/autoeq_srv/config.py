@@ -31,6 +31,7 @@ from autoeq_srv.const import ConfKey
 # Template these values for flexible install
 HOST = 'localhost'
 TEMP = tempfile.gettempdir()
+DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 # pylint: disable=R0903
 class BaseConfig:
@@ -41,6 +42,9 @@ class BaseConfig:
     LOG_FILE = os.path.join(TEMP, 'autoeq-web.log')
     LOG_FORMAT = '[%(filename)-15s:%(lineno)-5d] %(message)s'
     SECRET_KEY = '3175b8e3f55408f2f14259f0'
+    AEQ_ROOT = os.environ.get('AEQ_ROOT',
+                              os.path.abspath(os.path.join(DIR_PATH, os.pardir,
+                                                           os.pardir)))
 
 # pylint: disable=R0903
 class DevConfig(BaseConfig):

@@ -6,3 +6,9 @@ a little more user friendly. To do this the app:
 - offers a convenient "filters in a zip file" suitable for upload to Roon software.
 
 # Usage
+Super brief at the moment,
+- Use a python 3.6+ virtualenv
+- go to the `./server` directory
+- define the Flask app env var `export FLASK_APP='autoeq_srv'`
+- issue command `flask run`
+- browse to <http://localhost:5000>

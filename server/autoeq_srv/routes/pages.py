@@ -24,20 +24,11 @@
 # SOFTWARE.
 """AutoEQ Headphone app pages."""
 
-from flask import render_template
+from flask import render_template, current_app
 
-from autoeq_srv.webapp import APP, __version__
-PHONES=[
-    {
-        'name': 'sony',
-        'type': 'overear'
-    },
-    {
-        'name': 'shure',
-        'type': 'inear'
-    }
-]
-@APP.route("/")
+from .api import ORATORY_RESULTS
+
+@current_app.route("/")
 def home():
     """Application home page."""
-    return render_template('headphones.html', headphones=PHONES)
+    return render_template('headphones.html', headphones=ORATORY_RESULTS)

@@ -27,15 +27,18 @@ import logging
 __version__ = '0.1.0'
 # Load the application
 from flask import Flask
-APP = Flask(__name__)
-
 from .config import configure_app # pylint: disable-msg=C0413
-# Get the appropriate config
-configure_app(APP)
 
-# Configure logging across all modules
-logging.basicConfig(filename=APP.config['LOG_FILE'], level=logging.DEBUG,
-                    format=APP.config['LOG_FORMAT'])
-logging.info("Started AutoEQ web.")
-logging.debug("Configured logging.")
-logging.info("Setting up application routes")
+def get_app():
+    """Return the initialised Flask application."""
+    app = Flask(__name__)
+    # Get the appropriate config
+    configure_app(app)
+
+    # Configure logging across all modules
+    logging.basicConfig(filename=app.config['LOG_FILE'], level=logging.DEBUG,
+                        format=app.config['LOG_FORMAT'])
+    logging.info("Started AutoEQ web.")
+    logging.debug("Configured logging.")
+    logging.info("Setting up application routes")
+    return app

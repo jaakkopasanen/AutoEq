@@ -35,3 +35,4 @@ class ConfKey:
     LOG_FORMAT = 'LOG_FORMAT'
     AEQ_PORT = 'AEQ_PORT'
     AEQ_CONF_NAME = 'AEQ_CONF_NAME'
+    AEQ_ROOT='AEQ_ROOT'

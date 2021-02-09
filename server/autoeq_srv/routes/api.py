@@ -23,11 +23,28 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 """AutoEQ Web REST API."""
-from flask import jsonify
-from autoeq_srv.webapp import APP
+from flask import jsonify, current_app, send_from_directory
 
-@APP.route("/api/models/")
-def upload():
+from .model import (get_manufacturers, get_oratory_phones, get_oratory_results,
+    get_oratory_filters)
+
+APP = current_app
+MANUFACTURERS = get_manufacturers()
+ORATORY_PHONES = get_oratory_phones()
+ORATORY_RESULTS = get_oratory_results()
+
+@APP.route("/api/manufacturers/")
+def manufacturers():
+    """Get a complete list of headphone manufacturers."""
+    return jsonify(manufacturers=MANUFACTURERS)
+
+@APP.route("/api/phones/")
+def phones():
     """Get a complete list of headphones."""
-    return jsonify(sha1='digest',
-                   url='')
+    return jsonify(ORATORY_PHONES)
+
+@APP.route("/api/filters/<phone_type>/<name>")
+def results(phone_type, name):
+    """Get a complete list of headphones."""
+    send_dir, zip_name = get_oratory_filters(phone_type, name)
+    return send_from_directory(send_dir, zip_name)

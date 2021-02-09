@@ -23,5 +23,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 """Initialisation module for package, kicks of the flask app."""
-from autoeq_srv.webapp import APP
-import autoeq_srv.routes
+from autoeq_srv.webapp import get_app
+
+def create_app():
+    """Create the flask application."""
+    app = get_app()
+    with app.app_context():
+        import autoeq_srv.routes #pylint: disable-msg=C0415,W0611
+    return app
