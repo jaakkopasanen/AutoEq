@@ -29,20 +29,18 @@ from urllib.parse import unquote
 
 from flask import current_app
 
+from autoeq_srv.routes.const import (
+    MNFCT_FILE,
+    ORTRY_NAMES,
+    ORTRY_RES_BY_TYPE,
+    OVER_EAR, IN_EAR
+)
+
 APP = current_app
-AEQ_ROOT = aeq_root = APP.config['AEQ_ROOT']
-MEAS_ROOT = os.path.join(AEQ_ROOT, 'measurements')
-ORATORY_MEAS_ROOT=os.path.join(MEAS_ROOT, 'oratory1990')
-RES_ROOT = os.path.join(AEQ_ROOT, 'results')
-ORATORY_RES_ROOT=os.path.join(RES_ROOT, 'oratory1990')
-ORATORY_TYPE_RESULTS = { 'inear': 'harman_in-ear_2019v2',
-                         'onear': 'harman_over-ear_2018'}
-ORATORY_INEAR_RES_ROOT=os.path.join(ORATORY_RES_ROOT, 'harman_in-ear_2019v2')
-ORATORY_ONEAR_RES_ROOT=os.path.join(ORATORY_RES_ROOT, 'harman_over-ear_2018')
 
 def _manufacturers_with_variants():
     """Return the raw manufacturers data including variants."""
-    with open(os.path.join(MEAS_ROOT, 'manufacturers.tsv'),
+    with open(MNFCT_FILE,
               encoding='utf-8') as _fh:
         raw_manufacturers = _fh.read().strip().split('\n')
         manufacturers = [m.strip().split('\t') for m in raw_manufacturers]
@@ -67,7 +65,7 @@ def resolve_manufacturer(name):
 def get_oratory_phones():
     """Return the list of headphones with Oratory measurements."""
     phones = []
-    with open(os.path.join(ORATORY_MEAS_ROOT, 'name_index.tsv'),
+    with open(ORTRY_NAMES,
               encoding='utf-8') as _fh:
         raw_names = _fh.read().strip().split('\n')
         phone_parts = [m.strip().split('\t') for m in raw_names]
@@ -80,22 +78,23 @@ def get_oratory_phones():
 def get_oratory_results():
     """Return the list of headphones with Oratory results."""
     phones = []
-    on_ear = [ name for name in os.listdir(ORATORY_ONEAR_RES_ROOT) \
-        if os.path.isdir(os.path.join(ORATORY_ONEAR_RES_ROOT, name)) ]
-    for phone_dir in on_ear:
-        phones.append({ 'name': phone_dir, 'type': 'onear' })
-    in_ear = [ name for name in os.listdir(ORATORY_INEAR_RES_ROOT) \
-        if os.path.isdir(os.path.join(ORATORY_INEAR_RES_ROOT, name)) ]
-    for phone_dir in in_ear:
-        phones.append({ 'name': phone_dir, 'type': 'inear' })
+    for phone_type in [IN_EAR, OVER_EAR]:
+        phones.extend(get_phone_results(ORTRY_RES_BY_TYPE[phone_type],
+                                        phone_type))
     return phones
 
+def get_phone_results(to_scan, phone_type):
+    """Return a list of phone directories."""
+    phones = []
+    for phone_dir in [ name for name in os.listdir(to_scan) \
+                       if os.path.isdir(os.path.join(to_scan, name)) ]:
+        phones.append({ 'name': phone_dir, 'type': phone_type })
+    return phones
 
 def get_oratory_filters(phone_type, name):
     """Return the zipped convolution filters for oratory results."""
     phone_name = unquote(name)
-    phone_path = os.path.join(ORATORY_RES_ROOT,
-                              ORATORY_TYPE_RESULTS[phone_type],
+    phone_path = os.path.join(ORTRY_RES_BY_TYPE[phone_type],
                               phone_name)
     if not os.path.isdir(phone_path):
         return None

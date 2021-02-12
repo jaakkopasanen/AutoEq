@@ -22,18 +22,38 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-"""AutoEQ Headphone app pages."""
+"""Code for the headphone data model."""
+import os
+from flask import current_app
 
-from flask import render_template, current_app
+# Root directory for measurement/result data, currently the GitHub checkout root
+AEQ_ROOT = aeq_root = current_app.config['AEQ_ROOT']
 
-from .api import ORATORY_RESULTS
+# Measurement types
+ORTRY = 'oratory1990'
 
-@current_app.route("/")
-def home():
-    """Application home page."""
-    return render_template('headphones.html', headphones=ORATORY_RESULTS)
+# Root dir for measurments, manufacturers, and type sub-dirs
+MEAS_ROOT = os.path.join(AEQ_ROOT, 'measurements')
+ORTRY_MEAS_ROOT = os.path.join(MEAS_ROOT, ORTRY)
+MNFCT_FILE_NAME = 'manufacturers.tsv'
+MNFCT_FILE = os.path.join(MEAS_ROOT, 'manufacturers.tsv')
 
-@current_app.route("/about/")
-def about():
-    """Application about page."""
-    return render_template('about.html')
+# Target types
+HRMN_INEAR_2019V2 = 'harman_in-ear_2019v2'
+HRMN_OVEAR_2018 = 'harman_over-ear_2018'
+
+# Phone types
+IN_EAR = 'inear'
+OVER_EAR = 'overear'
+
+# Results
+RES_ROOT = os.path.join(AEQ_ROOT, 'results')
+NAME_FILE_NAME = 'name_index.tsv'
+ORTRY_RES_ROOT = os.path.join(RES_ROOT, ORTRY)
+ORTRY_NAMES = os.path.join(ORTRY_MEAS_ROOT, NAME_FILE_NAME)
+ORTRY_INEAR_RES_ROOT = os.path.join(ORTRY_RES_ROOT, HRMN_INEAR_2019V2)
+ORTRY_OVEAR_RES_ROOT = os.path.join(ORTRY_RES_ROOT, HRMN_OVEAR_2018)
+ORTRY_RES_BY_TYPE = {
+    IN_EAR: ORTRY_INEAR_RES_ROOT,
+    OVER_EAR: ORTRY_OVEAR_RES_ROOT
+}

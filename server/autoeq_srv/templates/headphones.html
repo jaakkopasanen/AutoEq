@@ -2,7 +2,14 @@
 {% block title %}Find my headphones{% endblock %}
 {% block page_content %}
   <h1>The Big List of Headphones</h1>
-  <p class="lead">We've currently got {{ headphones|length }} headphones listed, use search and sort to find yours.</p>
+  <p class="lead">
+    We've currently got {{ headphones|length }} headphones listed, use search and sort to find yours.
+  </p>
+  <p>
+    Once you've found your headphones to download a zip archive containing a
+    pair of convolution filters (WAV files). These correct your headphones to an
+    appropriate Harman target. They should sound better using them.
+  </p>
   <table  class="table table-striped" data-toggle="table" data-search="true">
     <thead class="thead-dark">
       <tr>
