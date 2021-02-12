@@ -33,7 +33,8 @@ from autoeq_srv.routes.const import (
     MNFCT_FILE,
     ORTRY_NAMES,
     ORTRY_RES_BY_TYPE,
-    OVER_EAR, IN_EAR
+    OVER_EAR, IN_EAR,
+    PHONE_TYPE_DETAILS
 )
 
 APP = current_app
@@ -88,7 +89,10 @@ def get_phone_results(to_scan, phone_type):
     phones = []
     for phone_dir in [ name for name in os.listdir(to_scan) \
                        if os.path.isdir(os.path.join(to_scan, name)) ]:
-        phones.append({ 'name': phone_dir, 'type': phone_type })
+        phones.append({
+                'name': phone_dir,
+                'type': PHONE_TYPE_DETAILS[phone_type]
+                })
     return phones
 
 def get_oratory_filters(phone_type, name):

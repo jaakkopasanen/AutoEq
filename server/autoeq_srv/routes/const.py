@@ -57,3 +57,18 @@ ORTRY_RES_BY_TYPE = {
     IN_EAR: ORTRY_INEAR_RES_ROOT,
     OVER_EAR: ORTRY_OVEAR_RES_ROOT
 }
+
+PHONE_TYPE_DETAILS = {
+    IN_EAR: {
+        'code': IN_EAR,
+        'name': 'In Ear',
+        'icon': 'inear.png',
+        'alt': 'Created by Vectors Point for Noun project.'
+    },
+    OVER_EAR: {
+        'code': OVER_EAR,
+        'name': 'Over Ear',
+        'icon': 'overear.png',
+        'alt': 'Icon for over ear headphones'
+    }
+}
