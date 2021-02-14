@@ -33,8 +33,23 @@ language or even Microsoft Excel.
 ## Usage
 AutoEQ produces settings for basically all types of equalizer apps.
 
+### Convolution Equalizers
+Convolution equalizer is the most powerful type of equalizer software. These equalizers allow extremly precise control
+over the frequency response and the results are the same on all devices and platforms when using the same FIR filter.
+Convolution equalizer is the preferred way to use AutoEq results.
+
+AutoEq supports convolution equalizers with FIR filters as WAV files and with EqualizerAPO's GraphicEQ filter type. The
+default results contain FIR filters for both 44.1 kHz and 48 kHz sampling rates. Other sampling rates are supported but
+not given in the default results. EqualizerAPO's GraphicEQ works with any sampling rate.
+
+To use the FIR filters, download the appropriate WAV file and import it to the EQ software of your choice. Please keep
+in mind that not all EQ softwares support convolution. Some equalizers can load multiple FIR filters at the same time.
+Download both WAV files, create a Zip file containing both and load the Zip file to for example Roon.
+
+See [EqualizerApo](#EqualizerAPO) for instructions on how to use the GraphicEQ.
+
 ### Parametric Equalizers
-Parametric equalizers have filters with user adjustable gain,  center frequency and quality Q. Keep in mind that
+Parametric equalizers have filters (bands) with user adjustable gain,  center frequency and quality Q. Keep in mind that
 parametric eq accuracy depends on the number of filters available. Usually 10 filters produce very good
 results but as little as 5 can be good enough. Keep in mind that different parametric equalizers will produce different
 outcomes with the same parameter values. Parameters produced by AutoEq are equal with EqualizerAPO using 48 kHz sampling
@@ -61,13 +76,6 @@ filter parameters look like this:
 | Peaking | 2237 Hz  | 1.94 | -4.6 dB |
 | Peaking | 6093 Hz  | 2.26 | -4.7 dB |
 | Peaking | 8251 Hz  | 3.71 | -2.9 dB |
-
-### Convolution Equalizers
-Convolution equalizer settings are finite impulse responses (FIR filters) and are the most advanced kind of (LTI)
-filters. FIR filters make it possible to produce linear phase filters which some may prefer though generally minimum
-phase filters are recommended. Convolution equalizer settings are provided as WAV files. Pre-computed results include
-impulse responses with 44.1 kHz and 48 kHz but other sampling rates are supported as well. Import the WAV file with
-correct sampling frequency into the software to use convolution equalizer.
 
 ### Fixed Band Equalizers
 Fixed band eq is more commonly known as graphic equalizer but in order not to confuse with EqualizerAPO GraphicEQ it is
@@ -97,8 +105,9 @@ Fixed band equalizer settings look like this:
 | Peaking | 16000 Hz | 1.41 | -7.5 dB |
 
 ### Windows
-has [EqualizerAPO](#plain-equalizerapo), [Peace](#peace) and many media players with
-parametric equalizers such as [Roon](https://roonlabs.com/) and [Foobar2000](https://www.foobar2000.org/).
+has [EqualizerAPO](#plain-equalizerapo), [Peace](#peace) and many media players with parametric equalizers such as
+[Neutron](https://www.microsoft.com/en-us/p/neutron-music-player/9nblggh4vp2h?activetab=pivot:overviewtab),
+[Roon](https://roonlabs.com/) and [Foobar2000](https://www.foobar2000.org/).
 
 #### EqualizerAPO
 It's possible to use plain [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
@@ -134,15 +143,20 @@ option for newer Androids (version 9 and up) but older devices have a built-in f
 but the center frequencies and Q values vary so might need to [produce your own results](#equalizing).
 
 #### Wavelet
-[Wavelet](https://play.google.com/store/apps/details?id=com.pittvandewitt.wavelet) is an Android app which comes with all the
-AutoEq eq profiles built in. The app works with all music apps so is closest to system-wide equalizer one can have on
-Android without rooting. The equalizer built into this app is very powerful and can represent the AutoEq profiles very
-accurately. There is also an option to tune the sound with graphic equalizer. Wavelet has the best Bluetooth device compatibility of all the tested eq apps on Android.
+[Wavelet](https://play.google.com/store/apps/details?id=com.pittvandewitt.wavelet) is an Android app which comes with
+all the AutoEq eq profiles built in. The app works with all music apps so is closest to system-wide equalizer one can
+have on Android without rooting. The equalizer built into this app is very powerful and can represent the AutoEq
+profiles very accurately. There is also an option to tune the sound with graphic equalizer. Wavelet has the best
+Bluetooth device compatibility of all the tested eq apps on Android.
 
 The main functionalities of Wavelet are free (including AutoEq profiles and graphic eq) but some extra features can be 
 unlocked with an in-app purchase.
 
 ![Wavelet](https://i.imgur.com/UGiBwFX.png)
+
+#### Neutron
+[Neutron](https://play.google.com/store/apps/details?id=com.neutroncode.mp) is a music player with parametric equalizer
+and comes with all of the AutoEq profiles built in but is not free.
 
 #### USB Audio Player PRO
 [USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is an Android app
@@ -220,15 +234,26 @@ presets but can be created by passing parameters
 ```
 
 ### iOS
-[Contact me](#contact) if you know good solutions for iOS.
+iOS unfortunately doesn't allow system-wide equalizers, so the only options are either music players with built-in
+equalizer or [hardware solutions](#Hardware).
+
+#### Neutron
+[Neutron](https://apps.apple.com/app/neutron-music-player/id766858884) is a music player with parametric equalizer and
+comes with all of the AutoEq profiles built in but is not free.
 
 #### EQE
 [EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer on iOS but requires jailbreaking. Here
 are instructions on how to set it up: https://www.reddit.com/r/headphones/comments/dqbt81/psa_if_you_have_a_jailbroken_iphone_you_can/
 
 ### Hardware
-Some devices have built-in equalizers one of these is [Radsone EasStudio ES100](https://www.radsone.com/earstudio).
-ES100 is a Bluetooth DAC and amp with built-in 10 band equalizer. Since this is a hardware solution it will work with
+Some devices have built-in equalizers and since they do the processing in the device, they work with any source which
+can connect to the device.
+
+[Qudelix 5K](https://www.qudelix.com/products/qudelix-5k-dac-amp) is a portable DAC and amplifier
+with wired and Bluetooth connectivity and 10 band parametric equalizer.
+
+[Radsone EasStudio ES100](https://www.radsone.com/earstudio) is a Bluetooth DAC and amp with built-in 10 band
+equalizer. Since this is a hardware solution it will work with
 practically any source.
 
 ## Equalizing
