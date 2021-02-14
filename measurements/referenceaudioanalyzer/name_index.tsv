@@ -114,6 +114,7 @@ Anew X-One (upturned red)	Anew X-One (upturned red)	inear
 Angry Birds Angry Birds		ignore
 Apple AirPods	Apple AirPods	earbud
 Apple AirPods Pro	Apple AirPods Pro	inear
+Apple AirPods Pro Fake		ignore
 Apple EarPods	Apple EarPods	earbud
 Apple EarPods Mic		ignore
 Apple ME186	Apple ME186 In-Ear Headphones	inear
@@ -214,8 +215,8 @@ Audio-Technica FAKE ATH-FC700		ignore
 Audiofly AF33	AudioFly AF33	inear
 Audiofly AF45	AudioFly AF45	inear
 Audiofly AF56	AudioFly AF56	inear
-AudioSense T800	Audiosense T800	inear
 AUDIOSENSE T800	Audiosense T800	inear
+AudioSense T800	Audiosense T800	inear
 AuGlamour AT-1	AuGlamour AT-1	inear
 AuGlamour AT-1 (closed vent)	AuGlamour AT-1 (closed vent)	inear
 AuGlamour R8	AuGlamour R8	inear
@@ -293,6 +294,7 @@ Beyerdynamic T90	Beyerdynamic T90	onear
 BGVP DH3	BGVP DH3	inear
 BGVP DM6	BGVP DM6	inear
 BGVP DM7	BGVP DM7	inear
+BGVP DM8	BGVP DM8	inear
 BGVP DMG	BGVP DMG	inear
 BGVP DMS	BGVP DMS	inear
 BGVP DS1 Pro	BGVP DS1 Pro	inear
@@ -416,6 +418,7 @@ Denon AH-MM300	Denon AH-MM300	onear
 Denon AH-MM400	Denon AH-MM400	onear
 DITA Audio Dream	Dita Audio Dream	inear
 DITA Audio The Answer	Dita Audio Answer	inear
+DIY Jade 3		ignore
 DIY MDR-XB950AP-Beyerdynamic DT250		ignore
 DIY Snowy88 hybrid 5		ignore
 Dunu Crius (DN13)	DUNU DN13 Crius	inear
@@ -701,10 +704,14 @@ IMR Opus Mia	IMR Acoustics Opus Mia	inear
 IMR R1	IMR Acoustics R1	inear
 IMR Semper	IMR Acoustics Semper	inear
 Intro RX-190	Intro RX-190	inear
+Jade Audio EA1	Jade Audio EA1	inear
 Jamo wEAR In30	Jamo wEAR In30	inear
 Jays d-Jays	JAYS d-JAYS	inear
 Jays q-JAYS v2	JAYS q-JAYS v2.0	inear
 Jays s-Jays	JAYS s-JAYS	inear
+Jays u-Jays Wireless	JAYS u-JAYS Wireless	onear
+JAYS u-JAYS Wireless (bluetooth)	JAYS u-JAYS Wireless (wireless)	onear
+JAYS u-JAYS Wireless (wire)	JAYS u-JAYS Wireless (wired)	onear
 Jays v-Jays	JAYS v-JAYS	onear
 JAYS v-Jays (large)	JAYS v-JAYS (large)	onear
 JAYS v-Jays (medium)	JAYS v-JAYS (medium)	onear
@@ -714,6 +721,7 @@ JBL Everest v110BT GML	JBL Everest 110	inear
 JBL J55	JBL J55	onear
 JBL Synchros S500	JBL Synchros S500	onear
 JBL Synchros S700	JBL Synchros S700	onear
+JBL T150A	JBL T150A	inear
 JBL V310 BT	JBL V310 BT	onear
 JBL V310 BT (wire connection)	JBL V310 BT (wired)	onear
 JVC Esnsy HA-FR65	JVC HA-FR65	inear
@@ -881,6 +889,7 @@ Monster Inspiration (noise-cancelling on)	Monster Inspiration (ANC on)	onear
 Monster iSport Victory In-Ear Wireless	Monster iSport Victory In-Ear Wireless	inear
 Monster Jamz In-Ear	Monster Jamz	inear
 Monster Miles Davis	Monster Miles Davis Tribute	inear
+Moondrop Blessing 2	Moondrop Blessing 2	inear
 Moondrop Kanas Pro	Moondrop Kanas Pro	inear
 Moondrop KXXS	Moondrop KXXS	inear
 MrSpeakers AEON	Dan Clark Audio Aeon Flow Open	onear
@@ -892,8 +901,8 @@ Musical Fidelity EB-50	Musical Fidelity EB-50	inear
 MyST Gatling	MyST Gatling	onear
 MyST Izo-OS	MyST Izo-OS	onear
 MyST IzoEM-1		ignore
-MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30		ignore
+MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
@@ -907,6 +916,7 @@ Nakamichi NEP-MV5	Nakamichi NEP-MV5	inear
 Nakamichi NEP-S600	Nakamichi NEP-S600	inear
 Nakamichi NEP-S660	Nakamichi NEP-S660	inear
 Nakamichi NEP-S800	Nakamichi NEP-S800	inear
+Neumann NDH 20	Neumann NDH20	onear
 NICEHCK Vido	NiceHCK Vido	earbud
 Noble Audio Dulce Bass	Noble Audio Dulce Bass	inear
 Noble Audio EDC Bell	Noble Audio EDC Bell	inear
@@ -1097,6 +1107,8 @@ Shure SRH 840	Shure SRH840	onear
 Shure SRH 940	Shure SRH940	onear
 Simgot Audio EM1 (sealed)	Simgot Audio EM1 (sealed)	inear
 Simgot Audio EM2 (sealed)	Simgot Audio EM2 (sealed)	inear
+Simgot Audio EM5 (sealed)	Simgot Audio EM5 (sealed)	inear
+Simgot Audio EN700 Pro (sealed)	Simgot Audio EN700 Pro (sealed)	inear
 Simgot Audio ET1000 (hybrid cushions)	Simgot Audio ET1000 (hybrid earpads)	onear
 Simgot Audio ET1000 (leather cushions)	Simgot Audio ET1000 (leather earpads)	onear
 Simgot Audio Meeture MT3 (sealed)	Simgot Audio Meeture MT3 (sealed)	inear
@@ -1246,6 +1258,8 @@ TFZ X1e	TFZ X1e	inear
 TFZ X3	TFZ X3	inear
 TG 1		ignore
 Tin HiFi P1	Tin HiFi P1	inear
+Tin HiFi P2	Tin HiFi P2	inear
+Tin HiFi P2 (close)	Tin HiFi P2 (sealed)	inear
 Tin HiFi T2	Tin HiFi T2	inear
 Tin HiFi T2 Pro	Tin HiFi T2 Pro	inear
 Tin HiFi T3	Tin HiFi T3	inear
@@ -1297,6 +1311,8 @@ Westone 4	Westone W4	inear
 Westone Adv Alpha	Westone ADV Alpha	inear
 Westone B30	Westone B30	inear
 Westone B50	Westone B50	inear
+Westone B50 (wbtv1)	Westone B50 (WBTV1)	inear
+Westone B50 (wire connection)	Westone B50 (wired)	inear
 Westone UM Pro 10	Westone UM Pro 10	inear
 Westone UM Pro 20	Westone UM Pro 20	inear
 Westone UM1	Westone UM1	inear
@@ -1314,10 +1330,10 @@ Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
-Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
+Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear
 Whizzer TP1 (closed vent)	Whizzer TP1 (closed vent)	inear
 Whizzer TP1s	Whizzer TP1s	inear

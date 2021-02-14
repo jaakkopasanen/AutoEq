@@ -332,6 +332,7 @@ Duke C	Venture Electronics Duke (CIEM)	inear
 Dulce Bass	Noble Audio Dulce Bass	inear
 Dunmer Pro	Tipsy Dunmer Pro	inear
 Duoza	Zero Audio Duoza ZH-DWX10	inear
+Dusk S2	Moondrop x Crinacle Blessing2 Dusk	inear
 E10	KZ E10	inear
 E1000	Final Audio E1000	inear
 E11	SoundMAGIC E11	inear
@@ -603,6 +604,7 @@ HS1001	Acoustune HS1001	inear
 HS1003	Acoustune HS1003	inear
 HS1004	Acoustune HS1004 (sample 1)	inear
 HS1004 S2	Acoustune HS1004 (sample 2)	inear
+HS1300	Acoustune HS1300	inear
 HS1501	Acoustune HS1501 (sample 1)	inear
 HS1501 S2	Acoustune HS1501 (sample 2)	inear
 HS1503	Acoustune HS1503	inear
@@ -638,6 +640,7 @@ IM01	Audio-Technica ATH-IM01	inear
 IM02	Audio-Technica ATH-IM02	inear
 IM03	Audio-Technica ATH-IM03	inear
 In Air	INAIR M360	inear
+Infinity Mk2	Rhapsodio Infinity Mk2	inear
 IO	Campfire Audio IO (sample 1)	inear
 IO S2	Campfire Audio IO (sample 2)	inear
 iSine 10	Audeze iSINE 10 (sample 1)	inear
@@ -678,6 +681,7 @@ K7XX	AKG K7XX	onear
 K812	AKG K812	onear
 K872 Pro	AKG K872 Pro	onear
 K92	AKG K92	onear
+Kaguya	SeeAudio Kaguya	inear
 Kanas Pro	Moondrop Kanas Pro	inear
 Katana	Noble Audio Katana	inear
 Khan	Noble Audio Khan (sample 1)	inear
@@ -946,6 +950,7 @@ NDH 20	Neumann NDH20	onear
 NDH20	Neumann NDH20	onear
 Nemesis	Empire Ears Nemesis	inear
 nemesis	Empire Ears Nemesis	inear
+Neo	SeeAudio Neo	inear
 Neptune	qdc Neptune	inear
 nerva X	HYLA Nerva X	inear
 New Primacy	Oriveti New Primacy	inear
@@ -1153,6 +1158,7 @@ Sif	Kinera SIF	inear
 Silver	Origami Audio Silver	inear
 Sine DX	Audeze SINE DX	onear
 Singolo	Zero Audio Carbo Singolo ZH-BS150-CS	inear
+Siren	Aya Siren	inear
 Sirius C S2	Fidue A91 Sirius (CIEM)	inear
 SK3	Soranik SK3	inear
 Smalls	Venture Electronics Monk IE Smalls	inear
@@ -1254,8 +1260,8 @@ T800	Audiosense T800	inear
 T8iE Mk1	Astell & Kern T8iE Mk1 (sample 1)	inear
 T8iE Mk1 S2	Astell & Kern T8iE Mk1 (sample 2)	inear
 Tango	Jomo Audio Tango	inear
-Taobao 3 driver	Taobao 3 driver	inear
 Taobao 3 Driver	Taobao 3 driver	inear
+Taobao 3 driver	Taobao 3 driver	inear
 Taobao 6 Driver	Taobao 6 driver	inear
 Tape	Shuoer Tape	inear
 Tape Pro	Shuoer Tape Pro	inear
@@ -1295,6 +1301,7 @@ Treble	HYLA TE-5T	inear
 TRI i3	TRI i3	inear
 TRI i3 Deep		ignore
 Trident	Noble Audio Trident	inear
+Trident Aya	Aya Trident	inear
 Trinity	Jomo Audio Trinity	inear
 Trinity Brass	Jomo Audio Trinity Brass	inear
 Trio	64 Audio tia Trio	inear
@@ -1401,6 +1408,10 @@ Verite Closed (Auteur lambskin)	ZMF Verite Closed (Auteur lambskin earpads)	onea
 Verite Closed (Universe hybrid)	ZMF Verite Closed (hybrid Universe earpads)	onear
 Verum 1	Verum One	onear
 Vesper	Queen of Audio Vesper	inear
+VG4 000	BGVP VG4 (off-off-off)	inear
+VG4 003	BGVP VG4 (off-off-on)	inear
+VG4 020	BGVP VG4 (off-on-off)	inear
+VG4 100	BGVP VG4 (on-off-off)	inear
 Viento	Hidition Viento	inear
 Viento Bass	Hidition Viento (bass)	inear
 Viento Bass Mids	Hidition Viento (bass, mids)	inear
@@ -1445,6 +1456,7 @@ XBA-H3	Sony XBA-H3	inear
 XBA300	Sony XBA-300	inear
 Xelento	Beyerdynamic Xelento	inear
 YB04	Cayin YB04	inear
+Yume	SeeAudio Yume	inear
 Z1R	Sony IER-Z1R (sample 1)	inear
 Z1R Filterless	Sony IER-Z1R (no filter)	inear
 Z1R S2	Sony IER-Z1R (sample 2)	inear
@@ -1454,11 +1466,13 @@ Z1R S5	Sony IER-Z1R (sample 5)	inear
 Z1R S6	Sony IER-Z1R (sample 6)	inear
 Z5	Sony XBA-Z5	inear
 ZAX	KZ ZAX	inear
+Zen	DUNU Zen	inear
 Zenith Black	IMR Acoustics Zenith (black)	inear
 Zenith Blue	IMR Acoustics Zenith (blue)	inear
 Zenith Gold	IMR Acoustics Zenith (gold)	inear
 Zenith Orange	IMR Acoustics Zenith (orange)	inear
 Zenith Pink	IMR Acoustics Zenith (pink)	inear
+Zero	BGVP ZERO	inear
 Zeus	Empire Ears Zeus	inear
 Zeus-R	Empire Ears Zeus-R	inear
 Zeus-XIV	Empire Ears Zeus-XIV	inear
