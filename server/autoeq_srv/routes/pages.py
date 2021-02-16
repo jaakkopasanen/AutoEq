@@ -23,10 +23,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 """AutoEQ Headphone app pages."""
-
-from flask import render_template, current_app
+import os
+from flask import render_template, current_app, send_from_directory
 
 from .api import ORATORY_RESULTS
+
+FAVICO_DIR = os.path.join(current_app.root_path, 'static', 'favicon')
 
 @current_app.route("/")
 def home():
@@ -37,3 +39,45 @@ def home():
 def about():
     """Application about page."""
     return render_template('about.html')
+
+@current_app.route('/favicon.ico')
+def favicon():
+    """Serve the favicon."""
+    return send_from_directory(FAVICO_DIR,
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+@current_app.route('/favicon-16x16.png')
+def favicon16():
+    """Serve the favicon."""
+    return send_from_directory(FAVICO_DIR,
+                               'favicon-16x16.png', mimetype='image/png')
+
+@current_app.route('/favicon-32x32.png')
+def favicon32():
+    """Serve the favicon."""
+    return send_from_directory(FAVICO_DIR,
+                               'favicon-32x32.png', mimetype='image/png')
+
+@current_app.route('/apple-touch-icon.png')
+def faviconapple():
+    """Serve the favicon."""
+    return send_from_directory(FAVICO_DIR,
+                               'apple-touch-icon.png', mimetype='image/png')
+
+@current_app.route('/android-chrome-192x192.png')
+def favicon192():
+    """Serve the favicon."""
+    return send_from_directory(FAVICO_DIR,
+                               'android-chrome-192x192.png', mimetype='image/png')
+
+@current_app.route('/android-chrome-512x512.png')
+def favicon512():
+    """Serve the favicon."""
+    return send_from_directory(FAVICO_DIR,
+                               'android-chrome-512x512.png', mimetype='image/png')
+
+@current_app.route('/site-webmanifest')
+def webmanifest():
+    """Serve the favicon."""
+    return send_from_directory(FAVICO_DIR,
+                               'site-webmanifest', mimetype='application/manifest+json')
