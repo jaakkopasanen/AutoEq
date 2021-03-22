@@ -25,26 +25,26 @@
 """AutoEQ Web REST API."""
 from flask import jsonify, current_app, send_from_directory
 
-from .model import (get_manufacturers, get_oratory_phones, get_oratory_results,
-    get_oratory_filters)
+from .model import (
+    get_filters,
+    MANUFACTURERS,
+    RESULTS
+)
 
 APP = current_app
-MANUFACTURERS = get_manufacturers()
-ORATORY_PHONES = get_oratory_phones()
-ORATORY_RESULTS = get_oratory_results()
 
 @APP.route("/api/manufacturers/")
 def manufacturers():
     """Get a complete list of headphone manufacturers."""
     return jsonify(manufacturers=MANUFACTURERS)
 
-@APP.route("/api/phones/")
-def phones():
-    """Get a complete list of headphones."""
-    return jsonify(ORATORY_PHONES)
+@APP.route("/api/results/<source>")
+def results(source):
+    """Get a complete list of results by source."""
+    return jsonify(results=RESULTS[source])
 
-@APP.route("/api/filters/<phone_type>/<name>")
-def results(phone_type, name):
+@APP.route("/api/filters/<source>/<target>/<model>")
+def filters(source, target, model):
     """Get a complete list of headphones."""
-    send_dir, zip_name = get_oratory_filters(phone_type, name)
+    send_dir, zip_name = get_filters(source, target, model)
     return send_from_directory(send_dir, zip_name)

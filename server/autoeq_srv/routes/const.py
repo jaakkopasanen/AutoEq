@@ -30,32 +30,64 @@ from flask import current_app
 AEQ_ROOT = aeq_root = current_app.config['AEQ_ROOT']
 
 # Measurement types
-ORTRY = 'oratory1990'
+README = 'README.md'
 
 # Root dir for measurments, manufacturers, and type sub-dirs
 MEAS_ROOT = os.path.join(AEQ_ROOT, 'measurements')
-ORTRY_MEAS_ROOT = os.path.join(MEAS_ROOT, ORTRY)
+
 MNFCT_FILE_NAME = 'manufacturers.tsv'
+NAME_FILE_NAME = 'name_index.tsv'
 MNFCT_FILE = os.path.join(MEAS_ROOT, 'manufacturers.tsv')
 
-# Target types
+# Targets
 HRMN_INEAR_2019V2 = 'harman_in-ear_2019v2'
 HRMN_OVEAR_2018 = 'harman_over-ear_2018'
 
-# Phone types
-IN_EAR = 'inear'
-OVER_EAR = 'overear'
+# Target types
+IN_EAR = 'in-ear'
+OVER_EAR = 'over-ear'
 
 # Results
 RES_ROOT = os.path.join(AEQ_ROOT, 'results')
-NAME_FILE_NAME = 'name_index.tsv'
-ORTRY_RES_ROOT = os.path.join(RES_ROOT, ORTRY)
-ORTRY_NAMES = os.path.join(ORTRY_MEAS_ROOT, NAME_FILE_NAME)
-ORTRY_INEAR_RES_ROOT = os.path.join(ORTRY_RES_ROOT, HRMN_INEAR_2019V2)
-ORTRY_OVEAR_RES_ROOT = os.path.join(ORTRY_RES_ROOT, HRMN_OVEAR_2018)
-ORTRY_RES_BY_TYPE = {
-    IN_EAR: ORTRY_INEAR_RES_ROOT,
-    OVER_EAR: ORTRY_OVEAR_RES_ROOT
+REC_RESULTS = os.path.join(RES_ROOT, README)
+ALL_RESULTS = os.path.join(RES_ROOT, 'INDEX.md')
+
+
+REC_SRC = {
+    'name': 'Recommended',
+    'title': 'Recommended results.',
+    'description': """
+    The recommended filters for your headphonesRecommendation priority is:
+    oratory1990 > Crinacle > Innerfidelity > Rtings > Headphone.com > Reference Audio Analyzer.
+    This means if there are measurements from multiple sources for the same headphone
+    model only the highest priority result will be shown in this list."""
+}
+
+SOURCES = {
+    'oratory1990': {
+        'name': 'Oratory',
+        'title': 'All Oratory results.',
+    },
+    'crinacle': {
+        'name': 'Crinacle',
+        'title': 'All Crinacle results.'
+    },
+    'innerfidelity': {
+        'name': 'Inner Fidelity',
+        'title': 'All Inner Fidelity results.'
+    },
+    'rtings': {
+        'name': 'Rtings',
+        'title': 'All Rtings results.'
+    },
+    'headphonecom': {
+        'name': 'Headphones.com',
+        'title': 'All Headphones.com results.'
+    },
+    'referenceaudioanalyzer': {
+        'name': 'RAA',
+        'title': 'All Reference Audio Analyzer results.'
+    }
 }
 
 PHONE_TYPE_DETAILS = {
