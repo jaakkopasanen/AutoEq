@@ -7,10 +7,20 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/">Headphones</a>
+          <a class="nav-link" title="Recommended results for all headphones analysed." href="/">Recommended</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" title="Result sources" href="/results" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Results
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {%- for source, details in sources.items() -%}
+              <a class="dropdown-item" title="{{ details.title }}" href="/results/{{ source }}">{{ details.name }}</a>
+            {%- endfor -%}
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('about') }}">About</a>
+          <a class="nav-link" title="About the AutoEQ site." href="{{ url_for('about') }}">About</a>
         </li>
       </ul>
     </div>

@@ -26,14 +26,25 @@
 import os
 from flask import render_template, current_app, send_from_directory
 
-from .api import ORATORY_RESULTS
+from .model import RECOMMENDED, RESULTS
+from .const import SOURCES, REC_SRC
 
 FAVICO_DIR = os.path.join(current_app.root_path, 'static', 'favicon')
+
+@current_app.context_processor
+def inject_stage_and_region():
+    """Inject a global for sources."""
+    return dict(sources=SOURCES)
 
 @current_app.route("/")
 def home():
     """Application home page."""
-    return render_template('headphones.html', headphones=ORATORY_RESULTS)
+    return render_template('results.html', source=REC_SRC, headphones=RECOMMENDED)
+
+@current_app.route("/results/<source>")
+def results_by_source(source):
+    """Recommended filter sets according to preferences."""
+    return render_template('results.html', source=SOURCES[source], headphones=RESULTS[source])
 
 @current_app.route("/about/")
 def about():
