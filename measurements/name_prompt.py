@@ -8,13 +8,14 @@ import ipywidgets as widgets
 
 
 class NamePrompt:
-    def __init__(self, model, callback, manufacturer=None, name_proposals=None, search_callback=None, false_name=None):
+    def __init__(self, model, callback, manufacturer=None, name_proposals=None, search_callback=None, false_name=None, form=None):
         self.model = model
         self.callback = callback
         self.manufacturer = manufacturer
         self.name_proposals = name_proposals
         self.search_callback = search_callback
 
+        # Add button for each name proposal
         buttons = []
         if name_proposals is not None:
             for item in name_proposals.items:
@@ -23,6 +24,7 @@ class NamePrompt:
                 btn.on_click(self.on_click)
                 buttons.append(btn)
 
+        # Create HTML title
         title = '<h4 style="margin: 0">'
         if false_name:
             title += f'{false_name} → '
@@ -32,16 +34,24 @@ class NamePrompt:
         else:
             text = model
         title += f'{model}</h4>'
-        search_button = widgets.Button(description='🔎', layout=widgets.Layout(width='48px'))
-        search_button.on_click(self.on_search)
+
+        # Name input field
         self.text_field = widgets.Text(
             value=text,
             layout=widgets.Layout(width='404px'))
+
+        # Search button
+        search_button = widgets.Button(description='🔎', layout=widgets.Layout(width='48px'))
+        search_button.on_click(self.on_search)
+
+        # Form buttons
         form_buttons = []
-        for form in 'onear inear earbud'.split():
+        forms = ['onear', 'inear', 'earbud'] if form is None else [form]
+        for form in forms:
             btn = widgets.Button(description=form, button_style='success', layout=widgets.Layout(width='64px'))
             btn.on_click(self.on_submit)
             form_buttons.append(btn)
+
         self.widget = widgets.VBox([
             widgets.HBox([
                 widgets.HTML(value=title),

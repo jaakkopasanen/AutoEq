@@ -199,6 +199,11 @@ class CrinacleCrawler(Crawler):
         # Update name index
         self.update_name_index(item)
 
+    def prompt_callback(self, false_name, file_paths, target_dir):
+        def callback(true_name, form):
+            self.process(NameItem(false_name, true_name, form), file_paths, target_dir=target_dir)
+        return callback
+
     def process_new(self, prompt=True):
         """Processes all new measurements
 
@@ -208,16 +213,20 @@ class CrinacleCrawler(Crawler):
             None
         """
         prompts = []
+        unknown_manufacturers = []
         for false_name, rigs_and_file_paths in self.urls.items():
             for rig, file_paths in rigs_and_file_paths.items():
                 try:
                     file_paths = [os.path.abspath(p) for p in file_paths]
                     if rig == 'gras':
                         target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'GRAS 43AG-7')
+                        form = 'onear'
                     elif rig == 'legacy':
                         target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'Ears-711')
+                        form = 'onear'
                     else:
                         target_dir = os.path.join(DIR_PATH, 'data', 'inear')
+                        form = 'inear'
 
                     item = self.name_index.find_one(false_name=false_name)
                     if not item:
@@ -225,24 +234,27 @@ class CrinacleCrawler(Crawler):
                         intermediate_name = self.intermediate_name(false_name)
                         manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
                         if manufacturer:
-                            model = intermediate_name.replace(manufacturer_match, '').strip()
+                            model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE).strip()
                             name_proposals = self.get_name_proposals(model)
                         else:
+                            unknown_manufacturers.append(intermediate_name)
                             model = intermediate_name
                             name_proposals = None
                         # Not sure about the name, ask user
                         prompts.append(NamePrompt(
                             model,
-                            lambda true_name, form: self.process(
-                                NameItem(false_name, true_name, form), file_paths, target_dir=target_dir),
+                            self.prompt_callback(false_name, file_paths, target_dir),
                             manufacturer=manufacturer,
                             name_proposals=name_proposals,
                             search_callback=self.search,
-                            false_name=false_name
+                            false_name=false_name,
+                            form=form
                             ).widget)
                 except Exception as err:
                     print(f'Processing failed for "{false_name}"')
                     raise err
+        print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
+        print('Add them to manufacturers.tsv and run this cell again')
         self.prompts.children = prompts
 
     def intermediate_name(self, false_name):

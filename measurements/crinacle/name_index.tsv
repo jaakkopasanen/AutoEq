@@ -14,6 +14,7 @@ false_name	true_name	form
 1S	TFZ 1S	inear
 222	FitEar Private 222	inear
 223	FitEar Private 223	inear
+2HT	Unique Melody 2HT Terminator	inear
 2S	TFZ 2S	inear
 333	FitEar Private 333	inear
 3DD-Ti	Unique Melody 3DD-Ti	inear
@@ -88,6 +89,7 @@ AD500X	Audio-Technica ATH-AD500X	onear
 AD700X	Audio-Technica ATH-AD700X	onear
 AD900X	Audio-Technica ATH-AD900X	onear
 Adagio 3	Final Audio III	inear
+Adonis	Queen of Audio Adonis	inear
 ADX5000	Audio-Technica ATH-ADX5000	onear
 ADX5000 (A2000Z AD2000X)	Audio-Technica ATH-ADX5000 (Yaxi A2000Z,AD2000X earpads)	onear
 ADX5000 (Dekoni fensheep)	Audio-Technica ATH-ADX5000 (Dekoni fenestrated sheepskin earpads)	onear
@@ -205,6 +207,7 @@ Bass	HYLA TE-5B	inear
 Basso	Zero Audio Carbo Basso ZH-DX210-CB	inear
 Basso NXEars	NXEars Basso	inear
 BD005	Kinera BD005	inear
+BD005 Pro	Kinera BD005 Pro	inear
 BD4-2	Lear LCM BD4.2	inear
 Be	Periodic Audio Be	inear
 Bella	NCM Bella	inear
@@ -225,6 +228,7 @@ Black Hole	Shozy Black Hole	inear
 Blade	EarSonics Blade	inear
 Blessing	Moondrop Blessing	inear
 Blessing 2	Moondrop Blessing 2	inear
+Blessing 2 S2	Moondrop Blessing 2 (sample 2)	inear
 BR5 Mk2	Rose BR5 Mk2	inear
 Brass	Dita Audio Brass	inear
 Bravado	Empire Ears Bravado	inear
@@ -241,6 +245,7 @@ Cascade	Campfire Audio Cascade	onear
 CD2000	Sony MDR-CD2000	onear
 CD900ST	Sony MDR-CD900ST	onear
 CE-5	HYLA CE-5 (sample 1)	inear
+CE2	Craft Ears Craft TWO	inear
 CE5 S2	HYLA CE-5 (sample 2)	inear
 CK3TW	Audio-Technica ATH-CK3TW	inear
 CK5TW	Audio-Technica ATH-CKS5TW	inear
@@ -381,8 +386,10 @@ EK3 2	Simgot Audio EK3 (on-off)	inear
 EK3 All	Simgot Audio EK3 (on-on)	inear
 Elear	Focal Elear (sample 1)	onear
 Elear S2	Focal Elear (sample 2)	onear
+Electro	Alclair Electro	inear
 Elegia	Focal Elegia	onear
 Elise	Advanced Elise	inear
+Elixir	Aure Audio Elixir	inear
 Elysium	Vision Ears Elysium	inear
 EM10	EarSonics EM10	inear
 EM2	Simgot Audio EM2	inear
@@ -495,6 +502,7 @@ Finschi	Oriolus Finschi	inear
 Finschi Hifi	Oriolus Finschi Hifi	inear
 Fitear	FitEar Fitear	inear
 fixKen	fix Bespoke Edition (Leneo)	inear
+Flame	Aure Audio Flame	inear
 Flamenco	Jomo Audio Flamenco (sample 1)	inear
 Flamenco Bass	Jomo Audio Flamenco (bass)	inear
 Flamenco Bass Treble	Jomo Audio Flamenco (bass, treble) (sample 1)	inear
@@ -596,8 +604,8 @@ HE200	Fengru HE-200	inear
 HE400i (2016)	HIFIMAN HE400i 2016	onear
 HE400i (2020)	HIFIMAN HE400i 2020	onear
 HE560	HIFIMAN HE560 V1	onear
-HE5se	HIFIMAN HE5se	onear
 HE5SE	HIFIMAN HE5se	onear
+HE5se	HIFIMAN HE5se	onear
 HE6 (6-screw) (Velour)	HIFIMAN HE6 (6-screw, velour earpads)	onear
 Heaven 4	Final Audio Heaven 4	inear
 Heaven 7	Final Audio Heaven 7	inear
@@ -660,8 +668,9 @@ In Air	INAIR M360	inear
 Infinity Mk2	Rhapsodio Infinity Mk2	inear
 IO	Campfire Audio IO (sample 1)	inear
 IO S2	Campfire Audio IO (sample 2)	inear
-iSIne 10	Audeze iSINE 10	inear
+ION-4 Vietnam	Soranik ION-4 (Vietnamese domestic market edition)	inear
 iSine 10	Audeze iSINE 10 (sample 1)	inear
+iSIne 10	Audeze iSINE 10	inear
 iSine 10 S2	Audeze iSINE 10 (sample 2)	inear
 iSine 20	Audeze iSINE 20	inear
 iSine 20 Cipher	Audeze iSINE 20 (Cipher cable)	inear
@@ -673,9 +682,10 @@ IT03	iBasso IT03	inear
 IT03w	iBasso IT03w	inear
 IT04	iBasso IT04	inear
 Janus	ddHiFi E2020A Janus	inear
+Jasper	AUNE Jasper	inear
 Jazz	Jomo Audio Jazz	inear
-JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
+JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 JH13v2 Max	JH Audio 13v2 (max)	inear
 JH13v2 Min	JH Audio 13v2 (min)	inear
 JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	inear
@@ -1038,7 +1048,8 @@ Phantom Eu	Empire Ears Phantom (CIEM) emulated (sample 2)	ignore
 Phantom S3	Empire Ears Phantom (sample 3)	ignore
 Phantom X	Empire Ears Phantom X	inear
 Phi	Abyss Diana Phi	onear
-Pink Lady	Queen of Audio Pink Lady	inear
+Pink Lady	Queen of Audio Pink Lady (sample 1)	inear
+Pink Lady S2	Queen of Audio Pink Lady (sample 2)	inear
 Piston 1More	1MORE Piston	inear
 Planamic	MEE Audio Planamic	inear
 Plus	Massdrop Plus Universal IEM (sample 1)	inear
@@ -1270,6 +1281,8 @@ Start	Fearless Audio Start	inear
 Stella	Light Harmonic Stella	inear
 Stellia	Focal Stellia	onear
 Storm	Aure Audio Storm	inear
+Studio 3	Alclair Studio3	inear
+Studio 4	Alclair Studio4	inear
 Stylish	1MORE Stylish	inear
 Sultan	Noble Audio Sultan	inear
 Sundara	HIFIMAN Sundara	onear
@@ -1296,8 +1309,8 @@ T8iE Mk1	Astell & Kern T8iE Mk1 (sample 1)	inear
 T8iE Mk1 S2	Astell & Kern T8iE Mk1 (sample 2)	inear
 T9iE	Astell & Kern T9iE	inear
 Tango	Jomo Audio Tango	inear
-Taobao 3 driver	Taobao 3 driver	inear
 Taobao 3 Driver	Taobao 3 driver	inear
+Taobao 3 driver	Taobao 3 driver	inear
 Taobao 6 Driver	Taobao 6 driver	inear
 Tape	Shuoer Tape	inear
 Tape Pro	Shuoer Tape Pro	inear
@@ -1403,8 +1416,8 @@ UERR	Ultimate Ears Reference Remastered	inear
 UM Pro 10	Westone UM Pro 10	inear
 UM Pro 20	Westone UM Pro 20	inear
 UM Pro 30	Westone UM Pro 30	inear
-UM Pro 50	Westone UM Pro 50	inear
 UM pro 50	Westone UM Pro 50	inear
+UM Pro 50	Westone UM Pro 50	inear
 Uranus	qdc Uranus	inear
 Utopia	Focal Utopia (sample 1)	onear
 Utopia S2	Focal Utopia (sample 2)	onear
@@ -1443,8 +1456,10 @@ Verite (Verite)	ZMF Verite (perforated Verite lambskin earpads)	onear
 Verite Closed	ZMF Verite Closed	onear
 Verite Closed (Auteur lambskin)	ZMF Verite Closed (Auteur lambskin earpads)	onear
 Verite Closed (Universe hybrid)	ZMF Verite Closed (hybrid Universe earpads)	onear
+Versa	Alclair Versa	inear
 Verum 1	Verum One	onear
 Vesper	Queen of Audio Vesper	inear
+Vesper S2	Queen of Audio Vesper	inear
 VG4 000	BGVP VG4 (off-off-off)	inear
 VG4 003	BGVP VG4 (off-off-on)	inear
 VG4 020	BGVP VG4 (off-on-off)	inear
@@ -1458,7 +1473,8 @@ Viento-B C	Hidition Viento-B (CIEM)	inear
 Viento-D C	Hidition Viento-D (CIEM)	inear
 Violet	Hidition Violet	inear
 Vista	Jaybird Vista	inear
-VK4	QKZ VK4	inear
+VK4	QKZ VK4 (sample 1)	inear
+VK4 S2	QKZ VK4 (sample 2)	inear
 Voce	Dan Clark Audio Voce	onear
 Volans	Astrotec Volans	inear
 VS7	VSonic VS7	inear
