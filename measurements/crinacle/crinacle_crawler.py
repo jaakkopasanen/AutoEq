@@ -143,6 +143,7 @@ class CrinacleCrawler(Crawler):
     def process(self, item, file_paths, target_dir=None):
         if target_dir is None:
             raise TypeError('"target_dir" must be given')
+
         avg_fr = FrequencyResponse(name=item.true_name)
         avg_fr.raw = np.zeros(avg_fr.frequency.shape)
         for fp in file_paths:
@@ -201,6 +202,9 @@ class CrinacleCrawler(Crawler):
 
     def prompt_callback(self, false_name, file_paths, target_dir):
         def callback(true_name, form):
+            if form == 'ignore':
+                self.update_name_index(NameItem(false_name, None, form))
+                return
             self.process(NameItem(false_name, true_name, form), file_paths, target_dir=target_dir)
         return callback
 
@@ -259,7 +263,13 @@ class CrinacleCrawler(Crawler):
 
     def intermediate_name(self, false_name):
         """Gets intermediate name with false name."""
-        ni = self.book_name_index.find(false_name=false_name)
+        ni = self.book_name_index.find_one(false_name=false_name)
         if ni:
-            return ni.items[0].true_name
+            name = ni.true_name
+            name = name.replace('(w/ ', '(')
+            name = name.replace(' pads)', ' earpads)')
+            if re.search(r'S\d$', name):
+                match = re.search(r'S\d$', name)[0]
+                name = name.replace(match, match.replace('S', 'sample '))
+            return name
         return false_name

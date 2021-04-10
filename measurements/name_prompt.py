@@ -47,8 +47,12 @@ class NamePrompt:
         # Form buttons
         form_buttons = []
         forms = ['onear', 'inear', 'earbud'] if form is None else [form]
+        forms.append('ignore')
         for form in forms:
-            btn = widgets.Button(description=form, button_style='success', layout=widgets.Layout(width='64px'))
+            btn = widgets.Button(
+                description=form,
+                button_style='danger' if form == 'ignore' else 'success',
+                layout=widgets.Layout(width='64px'))
             btn.on_click(self.on_submit)
             form_buttons.append(btn)
 

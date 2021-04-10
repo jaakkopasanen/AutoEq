@@ -128,6 +128,11 @@ class Crawler(ABC):
             self.name_index.update(item, false_name=item.false_name)
             self.write_name_index()
 
+    def prompt_callback(self, false_name, url):
+        def callback(true_name, form):
+            self.process(NameItem(false_name, true_name, form), url)
+        return callback
+
     def process_new(self):
         """Processes all new measurements
 
@@ -140,7 +145,6 @@ class Crawler(ABC):
         for false_name, url in self.urls.items():
             ni = self.name_index.find(false_name=false_name)
             item = ni.items[0] if ni else None
-            print(false_name)
             if not item:
                 # Name doesn't exist in the name index
                 manufacturer, manufacturer_match = self.manufacturers.find(false_name)
@@ -165,8 +169,7 @@ class Crawler(ABC):
         manufacturer, manufacturer_match = self.manufacturers.find(false_name)
         if not manufacturer:
             return NameIndex([])
-            manufacturer, manufacturer_match = self.prompt_manufacturer(false_name)
-        false_model = false_name.replace(manufacturer_match, '').strip()
+        false_model = re.sub(re.escape(manufacturer_match), '', false_name, flags=re.IGNORECASE).strip()
         # Select only the items with the same manufacturer
         models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
         scores = [fuzz.ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]

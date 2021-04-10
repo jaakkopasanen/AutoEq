@@ -42,6 +42,7 @@ false_name	true_name	form
 8SL	qdc 8SL	inear
 8SS	qdc 8SS	inear
 99 Classic	Meze Audio 99 Classic	onear
+99 Neo	Meze 99 Neo	onear
 A-HE03	Whizzer A-HE03 Kylin	inear
 A10	CCA A10	inear
 A1000Z	Audio-Technica ATH-A1000Z	onear
@@ -247,6 +248,7 @@ CD900ST	Sony MDR-CD900ST	onear
 CE-5	HYLA CE-5 (sample 1)	inear
 CE2	Craft Ears Craft TWO	inear
 CE5 S2	HYLA CE-5 (sample 2)	inear
+Celestee	Focal Celestee	onear
 CK3TW	Audio-Technica ATH-CK3TW	inear
 CK5TW	Audio-Technica ATH-CKS5TW	inear
 CKR7TW	Audio-Technica ATH-CKR7TW	inear
@@ -257,6 +259,8 @@ CL750	RHA CL750	inear
 Clairvoyance	ThieAudio Clairvoyance	inear
 Clairvoyance 100ohm	ThieAudio Clairvoyance (100 ohm resistor)	inear
 Clear	Focal Clear	onear
+Clear (Mg pads)	Focal Clear (Focal Clear Mg earpads)	onear
+Clear Mg	Focal Clear Mg	onear
 Clipper	Rhapsodio Clipper	inear
 Club Sound	Just Ear Club Sound	inear
 Co-Donguri	Ocharaku Co-Donguri Shizuku (sample 1)	inear
@@ -374,6 +378,7 @@ ED16	KZ ED16	inear
 EDC3	NuForce EDC3	inear
 Eden	NocturnaL Audio Eden	inear
 Eden Fatfreq	Fatfreq Eden	inear
+Edition X V2	HIFIMAN Edition X V2	onear
 EH	fix Event Horizon	inear
 EH3	FiiO EH3	inear
 Ei3	Custom Art Ei.3	inear
@@ -596,6 +601,7 @@ HD800 SDR	Sennheiser HD 800 (SDR mod) (sample 1)	onear
 HD800S	Sennheiser HD 800 S	onear
 HD820	Sennheiser HD 820	onear
 HE-1	Sennheiser HE 1 Orpheus 2	onear
+HE-1 (fresh pads)		ignore
 HE01	Whizzer HE01	inear
 HE1000 V1	HIFIMAN HE1000	onear
 HE1000 V2	HIFIMAN HE1000 V2	onear
@@ -604,8 +610,9 @@ HE200	Fengru HE-200	inear
 HE400i (2016)	HIFIMAN HE400i 2016	onear
 HE400i (2020)	HIFIMAN HE400i 2020	onear
 HE560	HIFIMAN HE560 V1	onear
-HE5SE	HIFIMAN HE5se	onear
+HE560 V1 S2	HIFIMAN HE560 V1 (sample 2)	onear
 HE5se	HIFIMAN HE5se	onear
+HE5SE	HIFIMAN HE5se	onear
 HE6 (6-screw) (Velour)	HIFIMAN HE6 (6-screw, velour earpads)	onear
 Heaven 4	Final Audio Heaven 4	inear
 Heaven 7	Final Audio Heaven 7	inear
@@ -619,10 +626,13 @@ HEM1	NuForce HEM1	inear
 Hero	Empire Ears Hero	inear
 Hibiki	Shozy x AAW Hibiki	inear
 Hibiki SE	Shozy x AAW Hibiki SE	inear
+Hive	Nectar Hive	onear
 HL4300	Horluchs HL4300	inear
 Homunculus	Metal Magic Research Homunculus	inear
 Horizon	AZLA Horizon	inear
 HP-3	Klipsch Heritage HP-3	onear
+HP-300	Yamaha HP-300	onear
+HP-50S	Yamaha HP-50S	onear
 HP3	Klipsch HP3	onear
 HS1001	Acoustune HS1001	inear
 HS1003	Acoustune HS1003	inear
@@ -842,8 +852,8 @@ M5 S3	Fir Audio M5 (sample 3)	inear
 M5 S5	Fir Audio M5 (sample 4)	inear
 M5 S6	Fir Audio M5 (sample 5)	inear
 M5 S7	Fir Audio M5 (sample 7)	inear
-M50X	Audio-Technica ATH-M50x	onear
 M50x	Audio-Technica ATH-M50x (sample 1)	onear
+M50X	Audio-Technica ATH-M50x	onear
 M50x S2	Audio-Technica ATH-M50x (sample 2)	onear
 M50xBT	Audio-Technica ATH-M50xBT	onear
 M51D	Advanced M51D	inear
@@ -944,6 +954,7 @@ Monarch S2	ThieAudio Monarch (sample 2)	inear
 Monarch S2 100ohm	ThieAudio Monarch (100 ohm resistor)	inear
 Monarch S2 20ohm	ThieAudio Monarch (200 ohm resistor)	inear
 Monet 17	FitEar Monet 17	inear
+Monitor 10	Pioneer Monitor 10	onear
 MS4	Hidizs Mermaid MS4	inear
 MSR7b	Audio-Technica ATH-MSR7b	onear
 MW07	Master & Dynamic MW07	inear
@@ -984,8 +995,8 @@ Nanna	Kinera Nanna	inear
 Nanna 2.0	Kinera Nanna 2.0	inear
 NDH 20	Neumann NDH20	onear
 NDH20	Neumann NDH20	onear
-nemesis	Empire Ears Nemesis	inear
 Nemesis	Empire Ears Nemesis	inear
+nemesis	Empire Ears Nemesis	inear
 Neo	SeeAudio Neo	inear
 Neptune	qdc Neptune	inear
 nerva X	HYLA Nerva X	inear
@@ -1048,6 +1059,7 @@ Phantom Eu	Empire Ears Phantom (CIEM) emulated (sample 2)	ignore
 Phantom S3	Empire Ears Phantom (sample 3)	ignore
 Phantom X	Empire Ears Phantom X	inear
 Phi	Abyss Diana Phi	onear
+Phoenix	Sivga Audio Phoenix	onear
 Pink Lady	Queen of Audio Pink Lady (sample 1)	inear
 Pink Lady S2	Queen of Audio Pink Lady (sample 2)	inear
 Piston 1More	1MORE Piston	inear
@@ -1196,6 +1208,7 @@ SH2	PEARS SH2	inear
 SH3	PEARS SH3 (sample 1)	inear
 SH3 C	PEARS SH3 (CIEM)	inear
 SH3 S2	PEARS SH3 (sample 2)	inear
+Shangri-La Jr	HIFIMAN Shangri-La Jr	onear
 Shock	Aroma Audio Shock	inear
 SHP9500	Philips SHP9500	onear
 SIA	Singapore Airlines complimentary earphones	inear
@@ -1416,8 +1429,8 @@ UERR	Ultimate Ears Reference Remastered	inear
 UM Pro 10	Westone UM Pro 10	inear
 UM Pro 20	Westone UM Pro 20	inear
 UM Pro 30	Westone UM Pro 30	inear
-UM pro 50	Westone UM Pro 50	inear
 UM Pro 50	Westone UM Pro 50	inear
+UM pro 50	Westone UM Pro 50	inear
 Uranus	qdc Uranus	inear
 Utopia	Focal Utopia (sample 1)	onear
 Utopia S2	Focal Utopia (sample 2)	onear
