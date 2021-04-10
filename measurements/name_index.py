@@ -141,6 +141,11 @@ class NameIndex:
         mask = self.mask(false_name=false_name, true_name=true_name, form=form)
         return NameIndex(rows=self.df.loc[mask].copy())
 
+    def find_one(self, **kwargs):
+        results = self.find(**kwargs)
+        if results:
+            return results.items[0]
+
     def search_by_false_name(self, name, threshold=80):
         """Finds all items which match closely to all given query parameters.
 

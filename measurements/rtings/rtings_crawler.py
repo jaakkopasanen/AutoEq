@@ -7,6 +7,8 @@ import json
 import numpy as np
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_index import NameIndex
 from measurements.crawler import Crawler
@@ -24,6 +26,13 @@ INEAR_TARGET = FrequencyResponse.read_from_csv(
 
 
 class RtingsCrawler(Crawler):
+    def __init__(self, driver=None):
+        if driver is None:
+            opts = Options()
+            opts.add_argument('--headless')
+            driver = webdriver.Chrome(os.path.abspath(os.path.join(DIR_PATH, '..', 'chromedriver')), options=opts)
+        super().__init__(driver=driver)
+
     @staticmethod
     def read_name_index():
         return NameIndex.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
@@ -42,7 +51,7 @@ class RtingsCrawler(Crawler):
         urls = {}
         for child in document.find(id='product_select').find_all('option'):
             try:
-                urlpart = child["data-urlpart"]
+                urlpart = child['data-urlpart']
             except KeyError:
                 # "Select a product" doesn't have data-urlpart, nor is it a headphone
                 continue
