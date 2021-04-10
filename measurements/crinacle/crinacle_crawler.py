@@ -196,6 +196,8 @@ class CrinacleCrawler(Crawler):
         file_path = os.path.join(dir_path, f'{avg_fr.name}.csv')
         avg_fr.write_to_csv(file_path)
         print(f'Saved "{avg_fr.name}" to "{file_path}"')
+        # Update name index
+        self.update_name_index(item)
 
     def process_new(self, prompt=True):
         """Processes all new measurements
@@ -206,7 +208,6 @@ class CrinacleCrawler(Crawler):
             None
         """
         prompts = []
-        discovered = []
         for false_name, rigs_and_file_paths in self.urls.items():
             for rig, file_paths in rigs_and_file_paths.items():
                 try:
@@ -218,32 +219,30 @@ class CrinacleCrawler(Crawler):
                     else:
                         target_dir = os.path.join(DIR_PATH, 'data', 'inear')
 
-                    ni = self.name_index.find(false_name=false_name)
-                    item = ni.items[0] if ni else None
+                    item = self.name_index.find_one(false_name=false_name)
                     if not item:
                         # Name doesn't exist in the name index
-                        model = self.intermediate_name(false_name)
-                        manufacturer, manufacturer_match = self.manufacturers.find(model)
-                        name_proposals = None
+                        intermediate_name = self.intermediate_name(false_name)
+                        manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
                         if manufacturer:
-                            model = model.replace(manufacturer_match, '').strip()
+                            model = intermediate_name.replace(manufacturer_match, '').strip()
                             name_proposals = self.get_name_proposals(model)
-                            exact_match = name_proposals.find_one(true_name=f'{manufacturer} {model}')
-                            if exact_match:
-                                discovered.append(NameItem(false_name, exact_match.true_name, exact_match.form))
-                                continue
+                        else:
+                            model = intermediate_name
+                            name_proposals = None
+                        # Not sure about the name, ask user
                         prompts.append(NamePrompt(
                             model,
                             lambda true_name, form: self.process(
-                                NameItem(false_name, true_name, form), file_paths, target_dir),
+                                NameItem(false_name, true_name, form), file_paths, target_dir=target_dir),
                             manufacturer=manufacturer,
                             name_proposals=name_proposals,
-                            search_callback=self.search
-                        ).widget)
+                            search_callback=self.search,
+                            false_name=false_name
+                            ).widget)
                 except Exception as err:
                     print(f'Processing failed for "{false_name}"')
                     raise err
-        print('Discovered:', ', '.join([item.true_name for item in discovered]))
         self.prompts.children = prompts
 
     def intermediate_name(self, false_name):

@@ -8,7 +8,7 @@ import ipywidgets as widgets
 
 
 class NamePrompt:
-    def __init__(self, model, callback, manufacturer=None, name_proposals=None, search_callback=None):
+    def __init__(self, model, callback, manufacturer=None, name_proposals=None, search_callback=None, false_name=None):
         self.model = model
         self.callback = callback
         self.manufacturer = manufacturer
@@ -18,16 +18,20 @@ class NamePrompt:
         buttons = []
         if name_proposals is not None:
             for item in name_proposals.items:
-                btn = widgets.Button(description=f'{item.true_name}', layout=widgets.Layout(width='596px'))
+                btn = widgets.Button(
+                    description=f'{item.true_name}', button_style='primary', layout=widgets.Layout(width='596px'))
                 btn.on_click(self.on_click)
                 buttons.append(btn)
 
+        title = '<h4 style="margin: 0">'
+        if false_name:
+            title += f'{false_name} → '
         if manufacturer:
-            title = f'<h4 style="margin: 0"><span style="color: blue">{manufacturer}&nbsp;</span>{model}</h4>'
+            title += f'<span style="color: blue">{manufacturer}&nbsp;</span>'
             text = f'{manufacturer} {model}'
         else:
-            title = f'<h4 style="margin: 0">{model}</h4>'
             text = model
+        title += f'{model}</h4>'
         search_button = widgets.Button(description='🔎', layout=widgets.Layout(width='48px'))
         search_button.on_click(self.on_search)
         self.text_field = widgets.Text(

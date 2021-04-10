@@ -73,7 +73,6 @@ class Crawler(ABC):
                 continue
             manufacturer = re.search(manufacturer_pattern, item.true_name, flags=re.IGNORECASE)
             if not manufacturer:
-                print(item.true_name)
                 continue
             manufacturer = manufacturer[0]
             proposal_data['form'].append(item.form)
@@ -122,6 +121,13 @@ class Crawler(ABC):
         """
         pass
 
+    def update_name_index(self, item):
+        """Updates name index"""
+        exact_match = self.name_index.find_one(false_name=item.false_name, true_name=item.true_name, form=item.form)
+        if not exact_match:
+            self.name_index.update(item, false_name=item.false_name)
+            self.write_name_index()
+
     def process_new(self):
         """Processes all new measurements
 
@@ -146,16 +152,6 @@ class Crawler(ABC):
         url = f'https://google.com/search?q={name.replace(" ", "+")}&tbm=isch'
         webbrowser.open(url)
 
-    def prompt_and_update_name(self, false_name, prompt=True):
-        """Prompts the user and update name index."""
-        item = None
-        # Prompt true name and form
-        if item is None:
-            self.name_index.update(NameItem(false_name, None, 'ignore'), false_name=false_name)
-        self.name_index.update(item, false_name=false_name)
-        self.write_name_index()
-        return item
-
     def get_name_proposals(self, false_name):
         """Prompts manufacturer, model and form from the user
 
@@ -173,10 +169,10 @@ class Crawler(ABC):
         false_model = false_name.replace(manufacturer_match, '').strip()
         # Select only the items with the same manufacturer
         models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
-        scores = [fuzz.token_set_ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]
+        scores = [fuzz.ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]
         models = models.assign(score=scores)
         models = models[models.score > 60]
-        models.sort_values('score', inplace=True)
+        models.sort_values('score', ascending=False, inplace=True)
         proposals = []
         for i, row in models.iterrows():
             proposals.append(NameItem(None, f'{manufacturer} {row.model}', row.form))
@@ -185,12 +181,6 @@ class Crawler(ABC):
     def intermediate_name(self, false_name):
         """Gets intermediate name with false name."""
         return false_name
-
-    def prompt_manufacturer(self, false_name):
-        """Prompts the user for manufacturer name."""
-        # TODO
-        return None, None
-        return false_name.split()[0], false_name.split()[0]
 
     @staticmethod
     def download(url, true_name, output_dir, file_type=None):
