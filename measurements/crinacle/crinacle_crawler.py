@@ -197,15 +197,15 @@ class CrinacleCrawler(Crawler):
         file_path = os.path.join(dir_path, f'{avg_fr.name}.csv')
         avg_fr.write_to_csv(file_path)
         print(f'Saved "{avg_fr.name}" to "{file_path}"')
-        # Update name index
-        self.update_name_index(item)
 
     def prompt_callback(self, false_name, file_paths, target_dir):
         def callback(true_name, form):
             if form == 'ignore':
                 self.update_name_index(NameItem(false_name, None, form))
                 return
-            self.process(NameItem(false_name, true_name, form), file_paths, target_dir=target_dir)
+            item = NameItem(false_name, true_name, form)
+            self.process(item, file_paths, target_dir=target_dir)
+            self.update_name_index(item)
         return callback
 
     def process_new(self, prompt=True):
@@ -238,12 +238,16 @@ class CrinacleCrawler(Crawler):
                         intermediate_name = self.intermediate_name(false_name)
                         manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
                         if manufacturer:
-                            model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE).strip()
+                            model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE)
+                            model = model.strip()
                             name_proposals = self.get_name_proposals(model)
+                            similar_names = self.get_name_proposals(model, n=6, normalize_digits=True, threshold=0)
+                            similar_names = [item.true_name for item in similar_names.items]
                         else:
                             unknown_manufacturers.append(intermediate_name)
                             model = intermediate_name
                             name_proposals = None
+                            similar_names = None
                         # Not sure about the name, ask user
                         prompts.append(NamePrompt(
                             model,
@@ -252,7 +256,8 @@ class CrinacleCrawler(Crawler):
                             name_proposals=name_proposals,
                             search_callback=self.search,
                             false_name=false_name,
-                            form=form
+                            form=form,
+                            similar_names=similar_names
                             ).widget)
                 except Exception as err:
                     print(f'Processing failed for "{false_name}"')

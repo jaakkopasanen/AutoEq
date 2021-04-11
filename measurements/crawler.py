@@ -130,7 +130,12 @@ class Crawler(ABC):
 
     def prompt_callback(self, false_name, url):
         def callback(true_name, form):
+            if form == 'ignore':
+                self.update_name_index(NameItem(false_name, None, form))
+                return
+            item = NameItem(false_name, true_name, form)
             self.process(NameItem(false_name, true_name, form), url)
+            self.update_name_index(item)
         return callback
 
     def process_new(self):
@@ -142,25 +147,49 @@ class Crawler(ABC):
             None
         """
         prompts = []
+        unknown_manufacturers = []
         for false_name, url in self.urls.items():
-            ni = self.name_index.find(false_name=false_name)
-            item = ni.items[0] if ni else None
+            item = self.name_index.find_one(false_name=false_name)
             if not item:
                 # Name doesn't exist in the name index
-                manufacturer, manufacturer_match = self.manufacturers.find(false_name)
-                name_proposals = self.get_name_proposals(false_name)
-                prompts.append(NamePrompt(false_name, name_proposals, lambda *args, **kwargs: None).widget)
-        self.widget.children = prompts
+                intermediate_name = self.intermediate_name(false_name)
+                manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
+                if manufacturer:
+                    model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE).strip()
+                    name_proposals = self.get_name_proposals(false_name)
+                    similar_names = self.get_name_proposals(false_name, n=6, normalize_digits=True, threshold=0)
+                    similar_names = [item.true_name for item in similar_names.items]
+                else:
+                    unknown_manufacturers.append(intermediate_name)
+                    model = intermediate_name
+                    name_proposals = None
+                    similar_names = None
+                # Not sure about the name, ask user
+                prompts.append(NamePrompt(
+                    model,
+                    self.prompt_callback(false_name, url),
+                    manufacturer=manufacturer,
+                    name_proposals=name_proposals,
+                    search_callback=self.search,
+                    false_name=false_name,
+                    similar_names=similar_names
+                ).widget)
+        print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
+        print('Add them to manufacturers.tsv and run this cell again')
+        self.prompts.children = prompts
 
     def search(self, name):
         url = f'https://google.com/search?q={name.replace(" ", "+")}&tbm=isch'
         webbrowser.open(url)
 
-    def get_name_proposals(self, false_name):
+    def get_name_proposals(self, false_name, n=4, normalize_digits=False, threshold=60):
         """Prompts manufacturer, model and form from the user
 
         Args:
             false_name: Name as it exists in the measurement source
+            n: Number of proposals to return
+            normalize_digits: Normalize all digits to zeros before calculating fuzzy string matching score
+            threshold: Score threshold
 
         Returns:
             NameItem
@@ -172,10 +201,17 @@ class Crawler(ABC):
         false_model = re.sub(re.escape(manufacturer_match), '', false_name, flags=re.IGNORECASE).strip()
         # Select only the items with the same manufacturer
         models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
-        scores = [fuzz.ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]
+        if normalize_digits:
+            scores = [fuzz.partial_ratio(
+                re.sub(r'\d', '0', model.lower()),
+                re.sub(r'\d', '0', false_model.lower())
+            ) for model in models.model.tolist()]
+        else:
+            scores = [fuzz.partial_ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]
         models = models.assign(score=scores)
-        models = models[models.score > 60]
+        models = models[models.score >= threshold]
         models.sort_values('score', ascending=False, inplace=True)
+        models = models.head(n)
         proposals = []
         for i, row in models.iterrows():
             proposals.append(NameItem(None, f'{manufacturer} {row.model}', row.form))

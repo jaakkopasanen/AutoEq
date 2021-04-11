@@ -2,10 +2,8 @@
 
 import os
 import sys
-import requests
 import json
 import numpy as np
-from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options

@@ -8,7 +8,8 @@ import ipywidgets as widgets
 
 
 class NamePrompt:
-    def __init__(self, model, callback, manufacturer=None, name_proposals=None, search_callback=None, false_name=None, form=None):
+    def __init__(self, model, callback, manufacturer=None, name_proposals=None, search_callback=None, false_name=None,
+                 form=None, similar_names=None):
         self.model = model
         self.callback = callback
         self.manufacturer = manufacturer
@@ -56,15 +57,24 @@ class NamePrompt:
             btn.on_click(self.on_submit)
             form_buttons.append(btn)
 
+        # Similar names for establishing naming convention
+        if similar_names is None:
+            similar_names = []
+
         self.widget = widgets.VBox([
             widgets.HBox([
-                widgets.HTML(value=title),
-                search_button
+                widgets.VBox([
+                    widgets.HBox([
+                        widgets.HTML(value=title),
+                        search_button
+                    ]),
+                    *buttons,
+                    widgets.HBox([self.text_field, *form_buttons]),
+                ]),
+                widgets.HTML('<div style="margin-left: 12px">' + '<br>'.join(similar_names) + '</div>')
             ]),
-            *buttons,
-            widgets.HBox([self.text_field, *form_buttons]),
             widgets.HTML('<hr/>')
-        ], layout=widgets.Layout(width='600px'))
+        ], layout=widgets.Layout(width='1000px'))
 
     def on_search(self, btn):
         if self.manufacturer:

@@ -8,6 +8,8 @@ import re
 import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw
 import colorsys
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
@@ -19,6 +21,13 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 class ReferenceAudioAnalyzerCrawler(Crawler):
     pro_report_regex = re.compile(r'^pro report$', re.I)
     performed_on_stand_regex = re.compile(r'^Measurements were performed on the stands?:$')
+
+    def __init__(self, driver=None):
+        if driver is None:
+            opts = Options()
+            opts.add_argument('--headless')
+            driver = webdriver.Chrome(os.path.abspath(os.path.join(DIR_PATH, '..', 'chromedriver')), options=opts)
+        super().__init__(driver=driver)
 
     @staticmethod
     def read_name_index():
