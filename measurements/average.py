@@ -51,7 +51,8 @@ def average_measurements(input_dir=None, output_dir=None):
 def create_cli():
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument('--input_dir', type=str, required=True, help='Path to input directory.')
-    arg_parser.add_argument('--output_dir', type=str, required=True, help='Path to output directory.')
+    arg_parser.add_argument('--output_dir', type=str, required=False, default=argparse.SUPPRESS,
+                            help='Path to output directory.')
     cli_args = arg_parser.parse_args()
     return vars(cli_args)
 

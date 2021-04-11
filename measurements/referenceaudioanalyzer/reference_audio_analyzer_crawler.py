@@ -208,6 +208,9 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
         return results
 
     def process(self, item, url):
+        if item.form == 'ignore':
+            return
+
         image_dir = os.path.join(DIR_PATH, 'images')
         inspection_dir = os.path.join(DIR_PATH, 'inspection')
         data_dir = os.path.join(DIR_PATH, 'data')
@@ -245,3 +248,12 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
             # Write to CSV
             fr.write_to_csv(os.path.join(out_dir, f'{name}.csv'))
             print(f'Wrote CSV to "{os.path.join(out_dir, f"{name}.csv")}"')
+
+
+def main():
+    crawler = ReferenceAudioAnalyzerCrawler()
+    crawler.process_new(prompt=False)
+
+
+if __name__ == '__main__':
+    main()

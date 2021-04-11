@@ -105,6 +105,9 @@ class RtingsCrawler(Crawler):
         return fr, target
 
     def process(self, item, url):
+        if item.form == 'ignore':
+            return
+
         json_file = Crawler.download(url, item.true_name, os.path.join(DIR_PATH, 'json'), file_type='json')
         if json_file is not None:
             with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}.json'), 'r', encoding='utf-8') as fh:
@@ -178,3 +181,12 @@ class RtingsCrawler(Crawler):
 
     def intermediate_name(self, false_name):
         return re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', false_name).strip()
+
+
+def main():
+    crawler = RtingsCrawler()
+    crawler.process_new(prompt=False)
+
+
+if __name__ == '__main__':
+    main()

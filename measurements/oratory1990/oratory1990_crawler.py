@@ -197,6 +197,9 @@ class Oratory1990Crawler(Crawler):
         return Image.open(output_file)
 
     def process(self, item, url):
+        if item.form == 'ignore':
+            return
+
         pdf_dir = os.path.join(DIR_PATH, 'pdf')
         image_dir = os.path.join(DIR_PATH, 'images')
         inspection_dir = os.path.join(DIR_PATH, 'inspection')
@@ -231,3 +234,12 @@ class Oratory1990Crawler(Crawler):
 
 class RedditCrawlFailed(Exception):
     pass
+
+
+def main():
+    crawler = Oratory1990Crawler()
+    crawler.process_new(prompt=False)
+
+
+if __name__ == '__main__':
+    main()

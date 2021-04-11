@@ -143,7 +143,7 @@ class Crawler(ABC):
             self.update_name_index(item)
         return callback
 
-    def process_new(self):
+    def process_new(self, prompt=True):
         """Processes all new measurements
 
         Updates name index with the new entries now found in the name index previously.
@@ -155,7 +155,12 @@ class Crawler(ABC):
         unknown_manufacturers = []
         for false_name, url in self.urls.items():
             item = self.name_index.find_one(false_name=false_name)
+            if item and item.form == 'ignore':
+                continue
             if not item:
+                if not prompt:
+                    print(f'{false_name} is unknown and prompting is prohibited, skipping the item.')
+                    continue
                 # Name doesn't exist in the name index
                 intermediate_name = self.intermediate_name(false_name)
                 manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
@@ -179,6 +184,10 @@ class Crawler(ABC):
                     false_name=false_name,
                     similar_names=similar_names
                 ).widget)
+            else:
+                existing = self.existing.find_one(true_name=item.true_name)
+                if not existing:
+                    self.process(item, url)
         if len(unknown_manufacturers) > 0:
             print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
             print('Add them to manufacturers.tsv and run this cell again')

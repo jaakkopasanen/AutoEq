@@ -1,6 +1,7 @@
 # Measurements
 This folder contains all measurements in AutoEQ and tools to crawl them from the supported databases.
 
+## Installing Dependencies
 Additional Python packages are required for processing the measurements:
 ```bash
 python -m pip install -U -r measurements/dev-requirements.txt
@@ -14,7 +15,7 @@ Measurement crawlers also require C++. This should be installed by default on Li
 Microsoft Visual Studio build tools for this. https://visualstudio.microsoft.com/downloads/ ->
 "Tools for Visual Studio 2019" -> "Build Tools for Visual Studio 2019".
 
-oratory1990 and Innerfidelity require Ghostscript installed: https://www.ghostscript.com/download/gsdnld.html
+oratory1990 crawler requires Ghostscript installed: https://www.ghostscript.com/download/gsdnld.html
 
 Numerical data for Crinacle's measurements is not available in this repository. Crinacle has Patreon and a certain
 subscription tier unlocks the raw numerical measurement data. If you are a patreon and have access to the Google Drive
@@ -38,15 +39,48 @@ measurements
                 A990Z R2.txt
                 ...
 ```
-`update_measurements.py` will then process these files and create AutoEq compatible CSV files in
-`crinacle/data` organized by headphone type.
+
+Crawler Jupyter Notebook requires IPyWidgets and the extension
+```bash
+jupyter nbextension enable --py widgetsnbextension --sys-prefix
+```
+
+JupyterLab users need to install an additional extension which requires NodeJS >= 10 to be installed first
+```bash
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+```
+
+Finally install IPython kernel
+```bash
+python -m ipykernel install --user --name="autoeq"
+```
+
+## Crawling Measurement Data
+Crawlers are intended to be ran in a Jupyter Notebook (or Lab). The notebook has graphical user interface for prompting
+the headphone names and forms from the user. Run
+```bash
+jupyter lab measurements/crawl.ipynb
+```
+Make sure to select the IPython kernel you just installed. Run (Shift+Enter) the first two code blocks to import
+dependencies and then run the crawler blocks which you need.
+
+**Alternatively** you can run the individual crawlers but this will only process the measurements which have already
+been added to the respective name index. This would be most useful for processing the raw measurement data after you've
+become Crinacle's patreon.
+```bash
+python -m measurements.crinacle.crinacle_crawler
+python -m measurements.oratory1990.oratory1990_crawler
+python -m measurements.referenceaudioanalyzer.reference_audio_analyzer_crawler
+python -m measurements.rtings.rtings_crawler
+```
 
 ## Updating Measurements and Results
 1. Remove measurements that have updates
-2. Prune results: `python results/prune_results.py`
-3. Crawl new measurements: `python measurements/update_measurements.py --prompt`
-4. Run results update: `python results/update_results.py --new_only`
-5. Update result indexes: `python results/update_indexes.py`
-6. Add files to git: `git add results measurements/*/data measurements/*/name_index.tsv`
-7. Commit: `git commit -m "New measurements with pre-computed results."`
-8. Push: `git push`
+2. Check obsolete results: `python results/prune_results.py --dry-run --crinacle --oratory1990 --referenceaudioanalyzer --rtings`
+3. Prune results: `python results/prune_results.py --crinacle --oratory1990 --referenceaudioanalyzer --rtings`
+4. Crawl new measurements: `jupyter lab measurements/crawl.ipynb`
+5. Run results update: `python results/update_results.py --new_only`
+6. Update result indexes: `python results/update_indexes.py`
+7. Add files to git: `git add results measurements/*/data measurements/*/name_index.tsv`
+8. Commit: `git commit -m "New measurements with pre-computed results."`
+9. Push: `git push`

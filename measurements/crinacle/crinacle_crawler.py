@@ -141,6 +141,9 @@ class CrinacleCrawler(Crawler):
         return file_paths
 
     def process(self, item, file_paths, target_dir=None):
+        if item.form == 'ignore':
+            return
+
         if target_dir is None:
             raise TypeError('"target_dir" must be given')
 
@@ -233,7 +236,12 @@ class CrinacleCrawler(Crawler):
                         form = 'inear'
 
                     item = self.name_index.find_one(false_name=false_name)
-                    if not item:
+                    if item and item.form == 'ignore':
+                        continue
+                    if not item or not item.true_name or not item.form:
+                        if not prompt:
+                            print(f'{false_name} is unknown and prompting is prohibited, skipping the item.')
+                            continue
                         # Name doesn't exist in the name index
                         intermediate_name = self.intermediate_name(false_name)
                         manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
@@ -259,11 +267,16 @@ class CrinacleCrawler(Crawler):
                             form=form,
                             similar_names=similar_names
                             ).widget)
+                    else:
+                        existing = self.existing.find_one(true_name=item.true_name)
+                        if not existing:
+                            self.process(item, file_paths, target_dir=target_dir)
                 except Exception as err:
                     print(f'Processing failed for "{false_name}"')
                     raise err
-        print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
-        print('Add them to manufacturers.tsv and run this cell again')
+        if len(unknown_manufacturers) > 0:
+            print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
+            print('Add them to manufacturers.tsv and run this cell again')
         self.prompts.children = prompts
 
     def intermediate_name(self, false_name):
@@ -278,3 +291,12 @@ class CrinacleCrawler(Crawler):
                 name = name.replace(match, match.replace('S', 'sample '))
             return name
         return false_name
+
+
+def main():
+    crawler = CrinacleCrawler()
+    crawler.process_new(prompt=False)
+
+
+if __name__ == '__main__':
+    main()
