@@ -248,8 +248,9 @@ class CrinacleCrawler(Crawler):
                         if manufacturer:
                             model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE)
                             model = model.strip()
-                            name_proposals = self.get_name_proposals(model)
-                            similar_names = self.get_name_proposals(model, n=6, normalize_digits=True, threshold=0)
+                            name_proposals = self.get_name_proposals(intermediate_name)
+                            similar_names = self.get_name_proposals(
+                                intermediate_name, n=6, normalize_digits=True, normalize_extras=True, threshold=0)
                             similar_names = [item.true_name for item in similar_names.items]
                         else:
                             unknown_manufacturers.append(intermediate_name)

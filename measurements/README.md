@@ -39,6 +39,7 @@ measurements
                 A990Z R2.txt
                 ...
 ```
+Sometimes the Zip files don't contain all of the measurement files. This is a bug in Google Drive.
 
 Crawler Jupyter Notebook requires IPyWidgets and the extension
 ```bash
@@ -72,6 +73,13 @@ python -m measurements.crinacle.crinacle_crawler
 python -m measurements.oratory1990.oratory1990_crawler
 python -m measurements.referenceaudioanalyzer.reference_audio_analyzer_crawler
 python -m measurements.rtings.rtings_crawler
+```
+If you just downloaded the Crinacle's raw data and run the crawler like this, you need to create averaged measurements
+too.
+```bash
+python -m measurements.average --input_dir="measurements/crinacle/data/onear/GRAS 43AG-7"
+python -m measurements.average --input_dir="measurements/crinacle/data/onear/Ears-711"
+python -m measurements.average --input_dir="measurements/crinacle/data/inear"
 ```
 
 ## Updating Measurements and Results

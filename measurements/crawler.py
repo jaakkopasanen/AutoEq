@@ -198,37 +198,41 @@ class Crawler(ABC):
         url = f'https://google.com/search?q={quoted}&tbm=isch'
         webbrowser.open(url)
 
-    def get_name_proposals(self, false_name, n=4, normalize_digits=False, threshold=60):
+    def get_name_proposals(self, false_name, n=4, normalize_digits=False, normalize_extras=False, threshold=60):
         """Prompts manufacturer, model and form from the user
 
         Args:
             false_name: Name as it exists in the measurement source
             n: Number of proposals to return
             normalize_digits: Normalize all digits to zeros before calculating fuzzy string matching score
+            normalize_extras: Remove extra details in the parentheses
             threshold: Score threshold
 
         Returns:
             NameItem
         """
-        false_name = self.intermediate_name(false_name)
+        def fuzzy(fn, a, b):
+            a = a.lower()
+            b = b.lower()
+            if normalize_digits:
+                a = re.sub(r'\d', '0', a).strip()
+                b = re.sub(r'\d', '0', b).strip()
+            if normalize_extras:
+                a = re.sub(r'\(.+\)$', '', a).strip()
+                b = re.sub(r'\(.+\)$', '', b).strip()
+            return fn(a, b)
+
         manufacturer, manufacturer_match = self.manufacturers.find(false_name)
         if not manufacturer:
             return NameIndex([])
         false_model = re.sub(re.escape(manufacturer_match), '', false_name, flags=re.IGNORECASE).strip()
         # Select only the items with the same manufacturer
         models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
-        if normalize_digits:
-            partial_ratios = [fuzz.partial_ratio(
-                re.sub(r'\d', '0', model.lower()),
-                re.sub(r'\d', '0', false_model.lower())
-            ) for model in models.model.tolist()]
-            ratios = [fuzz.ratio(
-                re.sub(r'\d', '0', model.lower()),
-                re.sub(r'\d', '0', false_model.lower())
-            ) for model in models.model.tolist()]
-        else:
-            partial_ratios = [fuzz.partial_ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]
-            ratios = [fuzz.ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]
+
+        # Calculate ratios
+        partial_ratios = [fuzzy(fuzz.partial_ratio, model, false_model) for model in models.model.tolist()]
+        ratios = [fuzzy(fuzz.ratio, model, false_model) for model in models.model.tolist()]
+
         models = models.assign(partial_ratio=partial_ratios)
         models = models.assign(ratio=ratios)
         models = models[models.partial_ratio >= threshold]
