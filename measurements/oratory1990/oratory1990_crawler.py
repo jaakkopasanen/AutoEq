@@ -10,6 +10,8 @@ from PIL import Image, ImageDraw
 import colorsys
 import numpy as np
 import shutil
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
@@ -20,6 +22,13 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 
 class Oratory1990Crawler(Crawler):
+    def __init__(self, driver=None):
+        if driver is None:
+            opts = Options()
+            opts.add_argument('--headless')
+            driver = webdriver.Chrome(os.path.abspath(os.path.join(DIR_PATH, '..', 'chromedriver')), options=opts)
+        super().__init__(driver=driver)
+
     @staticmethod
     def read_name_index():
         return NameIndex.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
