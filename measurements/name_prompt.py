@@ -74,7 +74,7 @@ class NamePrompt:
                 widgets.HTML('<div style="margin-left: 12px">' + '<br>'.join(similar_names) + '</div>')
             ]),
             widgets.HTML('<hr/>')
-        ], layout=widgets.Layout(width='1000px'))
+        ], layout=widgets.Layout(width='1200px'))
 
     def on_search(self, btn):
         if self.manufacturer:

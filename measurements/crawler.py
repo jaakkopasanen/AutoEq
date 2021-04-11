@@ -13,6 +13,7 @@ import re
 from bs4 import BeautifulSoup
 import ipywidgets as widgets
 import webbrowser
+import urllib.parse
 from abc import ABC, abstractmethod
 from time import sleep
 from measurements.name_index import NameIndex, NameItem
@@ -134,7 +135,11 @@ class Crawler(ABC):
                 self.update_name_index(NameItem(false_name, None, form))
                 return
             item = NameItem(false_name, true_name, form)
-            self.process(NameItem(false_name, true_name, form), url)
+            try:
+                self.process(NameItem(false_name, true_name, form), url)
+            except FileNotFoundError as err:
+                print(err)
+                return
             self.update_name_index(item)
         return callback
 
@@ -174,12 +179,14 @@ class Crawler(ABC):
                     false_name=false_name,
                     similar_names=similar_names
                 ).widget)
-        print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
-        print('Add them to manufacturers.tsv and run this cell again')
+        if len(unknown_manufacturers) > 0:
+            print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
+            print('Add them to manufacturers.tsv and run this cell again')
         self.prompts.children = prompts
 
     def search(self, name):
-        url = f'https://google.com/search?q={name.replace(" ", "+")}&tbm=isch'
+        quoted = urllib.parse.quote_plus(name)
+        url = f'https://google.com/search?q={quoted}&tbm=isch'
         webbrowser.open(url)
 
     def get_name_proposals(self, false_name, n=4, normalize_digits=False, threshold=60):
@@ -202,20 +209,27 @@ class Crawler(ABC):
         # Select only the items with the same manufacturer
         models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
         if normalize_digits:
-            scores = [fuzz.partial_ratio(
+            partial_ratios = [fuzz.partial_ratio(
+                re.sub(r'\d', '0', model.lower()),
+                re.sub(r'\d', '0', false_model.lower())
+            ) for model in models.model.tolist()]
+            ratios = [fuzz.ratio(
                 re.sub(r'\d', '0', model.lower()),
                 re.sub(r'\d', '0', false_model.lower())
             ) for model in models.model.tolist()]
         else:
-            scores = [fuzz.partial_ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]
-        models = models.assign(score=scores)
-        models = models[models.score >= threshold]
-        models.sort_values('score', ascending=False, inplace=True)
-        models = models.head(n)
+            partial_ratios = [fuzz.partial_ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]
+            ratios = [fuzz.ratio(model.lower(), false_model.lower()) for model in models.model.tolist()]
+        models = models.assign(partial_ratio=partial_ratios)
+        models = models.assign(ratio=ratios)
+        models = models[models.partial_ratio >= threshold]
+        models.sort_values('ratio', ascending=False, inplace=True)
         proposals = []
         for i, row in models.iterrows():
             proposals.append(NameItem(None, f'{manufacturer} {row.model}', row.form))
-        return NameIndex(items=proposals)
+        ni = NameIndex(items=proposals)
+        ni.df = ni.df.head(n)
+        return ni
 
     def intermediate_name(self, false_name):
         """Gets intermediate name with false name."""
@@ -243,7 +257,7 @@ class Crawler(ABC):
         if file_type is None:
             file_type = url.split('.')[-1]
             file_type = file_type.split('?')[0]
-        file_path = os.path.join(output_dir, '{}.{}'.format(true_name, file_type))
+        file_path = os.path.join(output_dir, f'{true_name}.{file_type}')
         with open(file_path, 'wb') as f:
             res.raw.decode_content = True
             shutil.copyfileobj(res.raw, f)
