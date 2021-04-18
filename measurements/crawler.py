@@ -187,6 +187,7 @@ class Crawler(ABC):
             else:
                 existing = self.existing.find_one(true_name=item.true_name)
                 if not existing:
+                    # Name found in name index but the measurement doesn't exist
                     self.process(item, url)
         if len(unknown_manufacturers) > 0:
             print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))

@@ -216,8 +216,8 @@ Audio-Technica FAKE ATH-FC700		ignore
 Audiofly AF33	AudioFly AF33	inear
 Audiofly AF45	AudioFly AF45	inear
 Audiofly AF56	AudioFly AF56	inear
-AudioSense T800	Audiosense T800	inear
 AUDIOSENSE T800	Audiosense T800	inear
+AudioSense T800	Audiosense T800	inear
 AuGlamour AT-1	AuGlamour AT-1	inear
 AuGlamour AT-1 (closed vent)	AuGlamour AT-1 (closed vent)	inear
 AuGlamour R8	AuGlamour R8	inear
@@ -316,11 +316,14 @@ BlackBerry WS-510	BlackBerry WS-510	inear
 Bose AE	Bose AE	onear
 Bose AE2	Bose AE2	onear
 Bose IE2	Bose IE2	inear
+Bose Noise Cancelling 700 UC	Bose Noise Cancelling Headphones 700	onear
 Bose Noise Cancelling Headphones 700	Bose Noise Cancelling Headphones 700	onear
 Bose Noise Cancelling Headphones 700 (bluetooth noise cancelation 0)	Bose Noise Cancelling Headphones 700 (wireless, ANC 0)	onear
 Bose Noise Cancelling Headphones 700 (bluetooth noise cancelation 10)	Bose Noise Cancelling Headphones 700 (wireless, ANC 10)	onear
 Bose Noise Cancelling Headphones 700 (bluetooth noise cancelation 5)	Bose Noise Cancelling Headphones 700 (wireless, ANC 5)	onear
+Bose Noise Cancelling Headphones 700 (bluetooth)	Bose Noise Cancelling Headphones 700 (wireless)	onear
 Bose Noise Cancelling Headphones 700 (wire connection)	Bose Noise Cancelling Headphones 700 (wired)	onear
+Bose Noise Cancelling Headphones 700 (wire)	Bose Noise Cancelling Headphones 700 (wired)	onear
 Bose On-ear headphones	Bose On-ear headphones	onear
 Bose QuietComfort 20	Bose QuietComfort 20	onear
 Bose QuietComfort 20 (noise cancelation off)	Bose QuietComfort 20 (ANC off)	onear
@@ -331,6 +334,9 @@ Bose QuietComfort 35 II (bluetooth noise cancelation on 1)	Bose QuietComfort 35 
 Bose QuietComfort 35 II (bluetooth noise cancelation on 2)	Bose QuietComfort 35 II (wireless, ANC 2)	onear
 Bose QuietComfort 35 II (wire connection noise cancelation off)	Bose QuietComfort 35 II (wired, ANC off)	onear
 Bose QuietComfort 35 II (wire connection noise cancelation on)	Bose QuietComfort 35 II (wired, ANC on)	onear
+Bose QuietComfort Earbuds	Bose QuietComfort Earbuds	inear
+Bose QuietComfort Earbuds (nc off)	Bose QuietComfort Earbuds (ANC off)	inear
+Bose QuietComfort Earbuds (nc on)	Bose QuietComfort Earbuds (ANC on)	inear
 Bose QuietControl 30	Bose QuietControl 30	onear
 Bose SoundLink Around-Ear Wireless Headphones II (bluetooth)	Bose SoundLink Around-Ear Wireless Headphones II (wireless)	onear
 Bose SoundLink Around-Ear Wireless Headphones II (wire connection)	Bose SoundLink Around-Ear Wireless Headphones II (wired)	onear
@@ -390,6 +396,7 @@ Campfire Audio Solaris Limited	Campfire Audio Solaris SE	inear
 Cardas EM5813	Cardas EM5813	inear
 Coloud Colors C22M	Coloud Colors C22M	onear
 Coloud NHL Chicago Blackhawks	Coloud NHL Chicago Blackhawks	onear
+Cowon CK11 Pro	COWON CK11 Pro	inear
 Creative Aurvana Gold	Creative Aurvana Gold	onear
 Creative Aurvana Live! 2	Creative Aurvana Live! 2	onear
 Creative Aurvana Platinum	Creative Aurvana Platinum	onear
@@ -911,8 +918,8 @@ Musical Fidelity EB-50	Musical Fidelity EB-50	inear
 MyST Gatling	MyST Gatling	onear
 MyST Izo-OS	MyST Izo-OS	onear
 MyST IzoEM-1		ignore
-MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30		ignore
+MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
@@ -1176,6 +1183,9 @@ Sony MDR-ZX220BT	Sony MDR-ZX220BT	onear
 Sony MDR-ZX700	Sony MDR-ZX700	onear
 Sony SA1000	Sony MDR-SA1000	onear
 Sony SA3000	Sony MDR-SA3000	onear
+Sony WH-1000XM2	Sony WH-1000XM2	onear
+Sony WH-1000XM2 (bluetooth)	Sony WH-1000XM2 (wireless)	onear
+Sony WH-1000XM2 (wire connection)	Sony WH-1000XM2 (wired)	onear
 Sony XB-400	Sony WI-XB400	onear
 Sony XB-600	Sony MDR-XB600	onear
 Sony XB-900	Sony WH-XB900	onear
@@ -1343,8 +1353,8 @@ Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear

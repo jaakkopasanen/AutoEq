@@ -332,129 +332,61 @@ python -m pip install -U -r requirements.txt
 
 ### Command Line Arguments
 ```
-usage: autoeq.py [-h] --input_dir INPUT_DIR [--output_dir OUTPUT_DIR]
-                 [--standardize_input] [--new_only]
-                 [--compensation COMPENSATION] [--equalize] [--parametric_eq]
-                 [--fixed_band_eq] [--fc FC] [--q Q] [--ten_band_eq]
-                 [--max_filters MAX_FILTERS] [--fs FS] [--bit_depth BIT_DEPTH]
-                 [--phase PHASE] [--f_res F_RES] [--bass_boost BASS_BOOST]
-                 [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
-                 [--sound_signature SOUND_SIGNATURE] [--max_gain MAX_GAIN]
-                 [--treble_f_lower TREBLE_F_LOWER]
-                 [--treble_f_upper TREBLE_F_UPPER]
-                 [--treble_max_gain TREBLE_MAX_GAIN]
-                 [--treble_gain_k TREBLE_GAIN_K] [--show_plot]
+usage: autoeq.py [-h] --input_dir INPUT_DIR [--output_dir OUTPUT_DIR] [--standardize_input] [--new_only] [--compensation COMPENSATION] [--equalize] [--parametric_eq] [--fixed_band_eq] [--rockbox] [--fc FC] [--q Q]
+                 [--ten_band_eq] [--max_filters MAX_FILTERS] [--convolution_eq] [--fs FS] [--bit_depth BIT_DEPTH] [--phase PHASE] [--f_res F_RES] [--bass_boost BASS_BOOST] [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
+                 [--sound_signature SOUND_SIGNATURE] [--max_gain MAX_GAIN] [--treble_f_lower TREBLE_F_LOWER] [--treble_f_upper TREBLE_F_UPPER] [--treble_gain_k TREBLE_GAIN_K] [--show_plot]
 
 optional arguments:
   -h, --help            show this help message and exit
   --input_dir INPUT_DIR
-                        Path to input data directory. Will look for CSV files
-                        in the data directory and recursively in sub-
-                        directories.
+                        Path to input data directory. Will look for CSV files in the data directory and recursively in sub-directories.
   --output_dir OUTPUT_DIR
-                        Path to results directory. Will keep the same relative
-                        paths for files found in input_dir.
-  --standardize_input   Overwrite input data in standardized sampling and
-                        bias?
-  --new_only            Only process input files which don't have results in
-                        output directory.
+                        Path to results directory. Will keep the same relative paths for files found in input_dir.
+  --standardize_input   Overwrite input data in standardized sampling and bias?
+  --new_only            Only process input files which don't have results in output directory.
   --compensation COMPENSATION
-                        File path to CSV containing compensation (target)
-                        curve. Compensation is necessary when equalizing
-                        because all input data is raw microphone data. See
-                        "compensation", "innerfidelity/resources" and
+                        File path to CSV containing compensation (target) curve. Compensation is necessary when equalizing because all input data is raw microphone data. See "compensation", "innerfidelity/resources" and
                         "headphonecom/resources".
-  --equalize            Will run equalization if this parameter exists, no
-                        value needed.
-  --parametric_eq       Will produce parametric eq settings if this parameter
-                        exists, no value needed.
-  --fixed_band_eq       Will produce fixed band eq settings if this parameter
-                        exists, no value needed.
-  --fc FC               Comma separated list of center frequencies for fixed
-                        band eq.
-  --q Q                 Comma separated list of Q values for fixed band eq. If
-                        only one value is passed, it is used for all bands. Q
-                        value can be calculated from bandwidth in N octaves by
-                        Q = 2^(N/2)/(2^N-1).
-  --ten_band_eq         Shortcut parameter for activating standard ten band eq
-                        optimization.
+  --equalize            Will run equalization if this parameter exists, no value needed.
+  --parametric_eq       Will produce parametric eq settings if this parameter exists, no value needed.
+  --fixed_band_eq       Will produce fixed band eq settings if this parameter exists, no value needed.
+  --rockbox             Will produce a Rockbox .cfg file with 10 band eq settings if this parameter exists,no value needed.
+  --fc FC               Comma separated list of center frequencies for fixed band eq.
+  --q Q                 Comma separated list of Q values for fixed band eq. If only one value is passed it is used for all bands. Q value can be calculated from bandwidth in N octaves by Q = 2^(N/2)/(2^N-1).
+  --ten_band_eq         Shortcut parameter for activating standard ten band eq optimization.
   --max_filters MAX_FILTERS
-                        Maximum number of filters for parametric EQ. Multiple
-                        cumulative optimization runs can be done by giving
-                        multiple filter counts separated by "+". "5+5" would
-                        create 10 filters where the first 5 are usable
-                        independently from the rest 5 and the last 5 can only
-                        be used with the first 5. This allows to have multiple
-                        configurations for equalizers with different number of
-                        bands available. Not limited by default.
-  --fs FS               Sampling frequency for impulse response and parametric
-                        eq filters. Defaults to 44100.
+                        Maximum number of filters for parametric EQ. Multiple cumulative optimization runs can be done by giving multiple filter counts separated by "+". "5+5" would create 10 filters where the first 5 are
+                        usable independently from the rest 5 and the last 5 can only be used with the first 5. This allows to have muliple configurations for equalizers with different number of bands available. Not limited
+                        by default.
+  --convolution_eq      Will produce impulse response for convolution equalizers if this parameter exists, no value needed.
+  --fs FS               Sampling frequency in Hertz for impulse response and parametric eq filters. Single value or multiple values separated by commas eg 44100,48000. When multiple values are given only the first one will
+                        be used for parametric eq. Defaults to 44100.
   --bit_depth BIT_DEPTH
-                        Number of bits for every sample in impulse response.
-                        Defaults to 16.
-  --phase PHASE         Impulse response phase characteristic. "minimum",
-                        "linear" or "both". Defaults to "minimum"
-  --f_res F_RES         Frequency resolution for impulse responses. If this is
-                        20 then impulse response frequency domain will be
-                        sampled every 20 Hz. Filter length for impulse
-                        responses will be fs/f_res. Defaults to 10.
+                        Number of bits for every sample in impulse response. Defaults to 16.
+  --phase PHASE         Impulse response phase characteristic. "minimum", "linear" or "both". Defaults to "minimum"
+  --f_res F_RES         Frequency resolution for impulse responses. If this is 20 then impulse response frequency domain will be sampled every 20 Hz. Filter length for impulse responses will be fs/f_res. Defaults to 10.
   --bass_boost BASS_BOOST
-                        Bass boost shelf. Sub-bass frequencies will be boosted
-                        by this amount. Can be either a single value for a
-                        gain in dB or a comma separated list of three values
-                        for parameters of a low shelf filter, where the first
-                        is gain in dB, second is center frequency (Fc) in Hz
-                        and the last is quality (Q). When only a single value
-                        (gain) is given, default values for Fc and Q are used
-                        which are 100 Hz and 0.65, respectively. For example "
-                        --bass_boost=6" or "--bass_boost=9.5,150,0.69".
+                        Bass boost shelf. Sub-bass frequencies will be boosted by this amount. Can be either a single value for a gain in dB or a comma separated list of three values for parameters of a low shelf filter,
+                        where the first is gain in dB, second is center frequency (Fc) in Hz and the last is quality (Q). When only a single value (gain) is given, default values for Fc and Q are used which are 105.0 Hz and
+                        0.71, respectively. For example "--bass_boost=6" or "--bass_boost=9.5,150,0.69".
   --iem_bass_boost IEM_BASS_BOOST
-                        iem_bass_boost argument has been removed, use "--
-                        bass_boost" instead!
-  --tilt TILT           Target tilt in dB/octave. Positive value (upwards
-                        slope) will result in brighter frequency response and
-                        negative value (downwards slope) will result in darker
-                        frequency response. 1 dB/octave will produce nearly 10
-                        dB difference in desired value between 20 Hz and 20
-                        kHz. Tilt is applied with bass boost and both will
-                        affect the bass gain.
+                        iem_bass_boost argument has been removed, use "--bass_boost" instead!
+  --tilt TILT           Target tilt in dB/octave. Positive value (upwards slope) will result in brighter frequency response and negative value (downwards slope) will result in darker frequency response. 1 dB/octave will
+                        produce nearly 10 dB difference in desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both will affect the bass gain.
   --sound_signature SOUND_SIGNATURE
-                        File path to a sound signature CSV file. Sound
-                        signature is added to the compensation curve. Error
-                        data will be used as the sound signature target if the
-                        CSV file contains an error column and otherwise the
-                        raw column will be used. This means there are two
-                        different options for using sound signature: 1st is
-                        pointing it to a result CSV file of a previous run and
-                        the 2nd is to create a CSV file with just frequency
-                        and raw columns by hand (or other means). The Sound
-                        signature graph will be interpolated so any number of
-                        point at any frequencies will do, making it easy to
-                        create simple signatures with as little as two or
-                        three points.
-  --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain
-                        allows to equalize deeper dips in frequency response
-                        but will limit output volume if no analog gain is
-                        available because positive gain requires negative
-                        digital preamp equal to maximum positive gain.
-                        Defaults to 6.0.
+                        File path to a sound signature CSV file. Sound signature is added to the compensation curve. Error data will be used as the sound signature target if the CSV file contains an error column and
+                        otherwise the raw column will be used. This means there are two different options for using sound signature: 1st is pointing it to a result CSV file of a previous run and the 2nd is to create a CSV
+                        file with just frequency and raw columns by hand (or other means). The Sound signature graph will be interpolated so any number of point at any frequencies will do, making it easy to create simple
+                        signatures with as little as two or three points.
+  --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain allows to equalize deeper dips in frequency response but will limit output volume if no analog gain is available because positive gain requires
+                        negative digital preamp equal to maximum positive gain. Defaults to 6.0.
   --treble_f_lower TREBLE_F_LOWER
-                        Lower bound for transition region between normal and
-                        treble frequencies. Treble frequencies can have
-                        different max gain and gain K. Defaults to 6000.0.
+                        Lower bound for transition region between normal and treble frequencies. Treble frequencies can have different max gain and gain K. Defaults to 6000.0.
   --treble_f_upper TREBLE_F_UPPER
-                        Upper bound for transition region between normal and
-                        treble frequencies. Treble frequencies can have
-                        different max gain and gain K. Defaults to 8000.0.
-  --treble_max_gain TREBLE_MAX_GAIN
-                        Maximum positive gain for equalization in the treble
-                        region. Defaults to 0.0.
+                        Upper bound for transition region between normal and treble frequencies. Treble frequencies can have different max gain and gain K. Defaults to 8000.0.
   --treble_gain_k TREBLE_GAIN_K
-                        Coefficient for treble gain, affects both positive and
-                        negative gain. Useful for disabling or reducing
-                        equalization power in the treble region. Defaults to 1.0.
-  --show_plot           Plot will be shown if this parameter exists, no value
-                        needed.
+                        Coefficient for treble gain, affects both positive and negative gain. Useful for disabling or reducing equalization power in treble region. Defaults to 1.0.
+  --show_plot           Plot will be shown if this parameter exists, no value needed.
 ```
 
 

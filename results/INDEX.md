@@ -1134,6 +1134,7 @@ from the same source.
 - [Bose Hearphones](./rtings/rtings_harman_in-ear_2019v2/Bose%20Hearphones) by Rtings
 - [Bose IE2](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20IE2) by Reference Audio Analyzer
 - [Bose Noise Cancelling Headphones 700 (wired)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wired)) by Reference Audio Analyzer, HDM-X
+- [Bose Noise Cancelling Headphones 700 (wireless)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless)) by Reference Audio Analyzer, HDM-X
 - [Bose Noise Cancelling Headphones 700 (wireless, ANC 0)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless,%20ANC%200)) by Reference Audio Analyzer, HDM-X
 - [Bose Noise Cancelling Headphones 700 (wireless, ANC 10)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless,%20ANC%2010)) by Reference Audio Analyzer, HDM-X
 - [Bose Noise Cancelling Headphones 700 (wireless, ANC 5)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless,%20ANC%205)) by Reference Audio Analyzer, HDM-X
@@ -1167,6 +1168,8 @@ from the same source.
 - [Bose QuietComfort 35 II](./rtings/rtings_harman_over-ear_2018/Bose%20QuietComfort%2035%20II) by Rtings
 - [Bose QuietComfort 35](./rtings/rtings_harman_over-ear_2018/Bose%20QuietComfort%2035) by Rtings
 - [Bose QuietComfort 3](./headphonecom/headphonecom_harman_over-ear_2018/Bose%20QuietComfort%203) by Headphone.com
+- [Bose QuietComfort Earbuds (ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds%20(ANC%20off)) by Reference Audio Analyzer
+- [Bose QuietComfort Earbuds (ANC on)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds%20(ANC%20on)) by Reference Audio Analyzer
 - [Bose QuietComfort Earbuds](./rtings/rtings_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds) by Rtings
 - [Bose QuietControl 30](./rtings/rtings_harman_over-ear_2018/Bose%20QuietControl%2030) by Rtings
 - [Bose SoundLink Around-Ear II](./rtings/rtings_harman_over-ear_2018/Bose%20SoundLink%20Around-Ear%20II) by Rtings
@@ -1357,6 +1360,7 @@ from the same source.
 - [Cowin E7](./rtings/rtings_harman_over-ear_2018/Cowin%20E7) by Rtings
 - [Cowin E8](./rtings/rtings_harman_over-ear_2018/Cowin%20E8) by Rtings
 - [Cowin SE7](./rtings/rtings_harman_over-ear_2018/Cowin%20SE7) by Rtings
+- [COWON CK11 Pro](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/COWON%20CK11%20Pro) by Reference Audio Analyzer
 - [Cozoy Trio](./crinacle/harman_in-ear_2019v2/Cozoy%20Trio) by Crinacle
 - [Craft Ears Craft SIX (CIEM)](./crinacle/harman_in-ear_2019v2/Craft%20Ears%20Craft%20SIX%20(CIEM)) by Crinacle
 - [Craft Ears Craft SIX](./crinacle/harman_in-ear_2019v2/Craft%20Ears%20Craft%20SIX) by Crinacle
@@ -1517,11 +1521,13 @@ from the same source.
 - [Dita Audio Truth](./crinacle/harman_in-ear_2019v2/Dita%20Audio%20Truth) by Crinacle
 - [Dolby Dimension](./rtings/rtings_harman_over-ear_2018/Dolby%20Dimension) by Rtings
 - [DUNU DK2001](./crinacle/harman_in-ear_2019v2/DUNU%20DK2001) by Crinacle
+- [DUNU DK2001](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DK2001) by Reference Audio Analyzer
 - [DUNU DK3001 Pro](./crinacle/harman_in-ear_2019v2/DUNU%20DK3001%20Pro) by Crinacle
 - [DUNU DK3001 Pro](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DK3001%20Pro) by Reference Audio Analyzer
 - [DUNU DK3001](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DK3001) by Reference Audio Analyzer
 - [DUNU DK4001](./crinacle/harman_in-ear_2019v2/DUNU%20DK4001) by Crinacle
 - [DUNU DK4001](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DK4001) by Reference Audio Analyzer
+- [DUNU DM480](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DM480) by Reference Audio Analyzer
 - [DUNU DN1000](./crinacle/harman_in-ear_2019v2/DUNU%20DN1000) by Crinacle
 - [DUNU DN1000](./innerfidelity/innerfidelity_harman_in-ear_2019v2/DUNU%20DN1000) by Innerfidelity
 - [DUNU DN1000](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DN1000) by Reference Audio Analyzer
@@ -3022,6 +3028,7 @@ from the same source.
 - [Meze 11 Neo](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Meze%2011%20Neo) by Reference Audio Analyzer
 - [Meze 12 Classics](./crinacle/harman_in-ear_2019v2/Meze%2012%20Classics) by Crinacle
 - [Meze 12 Classics](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Meze%2012%20Classics) by Innerfidelity
+- [Meze 12 Classics](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Meze%2012%20Classics) by Reference Audio Analyzer
 - [Meze 66 Classics](./innerfidelity/innerfidelity_harman_over-ear_2018/Meze%2066%20Classics) by Innerfidelity
 - [Meze 88 Classics](./innerfidelity/innerfidelity_harman_over-ear_2018/Meze%2088%20Classics) by Innerfidelity
 - [Meze 99 Classics (Brainwavz memory foam hybrid earpads)](./oratory1990/harman_over-ear_2018/Meze%2099%20Classics%20(Brainwavz%20memory%20foam%20hybrid%20earpads)) by oratory1990
@@ -3623,6 +3630,7 @@ from the same source.
 - [Razer Kraken Tournament Edition](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20Tournament%20Edition) by Rtings
 - [Razer Kraken Ultimate](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20Ultimate) by Rtings
 - [Razer Kraken USB](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20USB) by Rtings
+- [Razer Kraken V3 X](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20V3%20X) by Rtings
 - [Razer Kraken X](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20X) by Rtings
 - [Razer Man O' War](./rtings/rtings_harman_over-ear_2018/Razer%20Man%20O'%20War) by Rtings
 - [Razer Nari Ultimate](./rtings/rtings_harman_over-ear_2018/Razer%20Nari%20Ultimate) by Rtings
@@ -3637,6 +3645,7 @@ from the same source.
 - [RHA CL2](./crinacle/harman_in-ear_2019v2/RHA%20CL2) by Crinacle
 - [RHA CL750](./crinacle/harman_in-ear_2019v2/RHA%20CL750) by Crinacle
 - [RHA MA-350](./innerfidelity/innerfidelity_harman_in-ear_2019v2/RHA%20MA-350) by Innerfidelity
+- [RHA MA390 Wireless](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/RHA%20MA390%20Wireless) by Reference Audio Analyzer
 - [RHA MA450i](./innerfidelity/innerfidelity_harman_in-ear_2019v2/RHA%20MA450i) by Innerfidelity
 - [RHA MA600](./innerfidelity/innerfidelity_harman_in-ear_2019v2/RHA%20MA600) by Innerfidelity
 - [RHA MA750 Wireless (sealed)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/RHA%20MA750%20Wireless%20(sealed)) by Reference Audio Analyzer
@@ -4064,6 +4073,7 @@ from the same source.
 - [Sennheiser Urbanite](./innerfidelity/innerfidelity_harman_over-ear_2018/Sennheiser%20Urbanite) by Innerfidelity
 - [SENSO ActivBuds S-250](./rtings/rtings_harman_in-ear_2019v2/SENSO%20ActivBuds%20S-250) by Rtings
 - [Shanling ME100](./crinacle/harman_in-ear_2019v2/Shanling%20ME100) by Crinacle
+- [Shanling ME100](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Shanling%20ME100) by Reference Audio Analyzer
 - [Shanling ME200](./crinacle/harman_in-ear_2019v2/Shanling%20ME200) by Crinacle
 - [Shanling ME500](./crinacle/harman_in-ear_2019v2/Shanling%20ME500) by Crinacle
 - [Shanling ME700](./crinacle/harman_in-ear_2019v2/Shanling%20ME700) by Crinacle
@@ -4188,10 +4198,12 @@ from the same source.
 - [Simgot Audio EM2 (sealed)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EM2%20(sealed)) by Reference Audio Analyzer
 - [Simgot Audio EM2](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EM2) by Crinacle
 - [Simgot Audio EM2](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EM2) by Reference Audio Analyzer
+- [Simgot Audio EM3](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EM3) by Reference Audio Analyzer
 - [Simgot Audio EM5 (sealed)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EM5%20(sealed)) by Reference Audio Analyzer
 - [Simgot Audio EM5](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EM5) by Crinacle
 - [Simgot Audio EM5](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EM5) by Reference Audio Analyzer
 - [Simgot Audio EM5H](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EM5H) by Crinacle
+- [Simgot Audio EN700 MKII](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EN700%20MKII) by Reference Audio Analyzer
 - [Simgot Audio EN700 Pro (sealed)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EN700%20Pro%20(sealed)) by Reference Audio Analyzer
 - [Simgot Audio EN700 Pro](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EN700%20Pro) by Crinacle
 - [Simgot Audio EN700 Pro](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EN700%20Pro) by Reference Audio Analyzer
@@ -4436,6 +4448,8 @@ from the same source.
 - [Sony WF-SP800N](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-SP800N) by Rtings
 - [Sony WF-XB700](./oratory1990/harman_in-ear_2019v2/Sony%20WF-XB700) by oratory1990
 - [Sony WF-XB700](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-XB700) by Rtings
+- [Sony WH-1000XM2 (wired)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Sony%20WH-1000XM2%20(wired)) by Reference Audio Analyzer, HDM-X
+- [Sony WH-1000XM2 (wireless)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Sony%20WH-1000XM2%20(wireless)) by Reference Audio Analyzer, HDM-X
 - [Sony WH-1000XM2](./oratory1990/harman_over-ear_2018/Sony%20WH-1000XM2) by oratory1990
 - [Sony WH-1000XM2](./rtings/rtings_harman_over-ear_2018/Sony%20WH-1000XM2) by Rtings
 - [Sony WH-1000XM3](./oratory1990/harman_over-ear_2018/Sony%20WH-1000XM3) by oratory1990
@@ -4946,6 +4960,7 @@ from the same source.
 - [Ultrasone HFI-780](./headphonecom/headphonecom_harman_over-ear_2018/Ultrasone%20HFI-780) by Headphone.com
 - [Ultrasone HFI-780](./innerfidelity/innerfidelity_harman_over-ear_2018/Ultrasone%20HFI-780) by Innerfidelity
 - [Ultrasone HFI-780](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Ultrasone%20HFI-780) by Reference Audio Analyzer, HDM1
+- [Ultrasone IQ Pro](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Ultrasone%20IQ%20Pro) by Reference Audio Analyzer
 - [Ultrasone IQ](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Ultrasone%20IQ) by Reference Audio Analyzer
 - [Ultrasone PRO 2500](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Ultrasone%20PRO%202500) by Reference Audio Analyzer, HDM1
 - [Ultrasone PRO 2900](./innerfidelity/innerfidelity_harman_over-ear_2018/Ultrasone%20PRO%202900) by Innerfidelity

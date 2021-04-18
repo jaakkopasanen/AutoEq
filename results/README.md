@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 3346 headphone models covered but if your headphone is missing you can create settings for
+This list has 3355 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -797,6 +797,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Bose IE2](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20IE2)
 - [Bose Noise Cancelling Headphones 700](./oratory1990/harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700)
 - [Bose Noise Cancelling Headphones 700 (wired)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wired))
+- [Bose Noise Cancelling Headphones 700 (wireless)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless))
 - [Bose Noise Cancelling Headphones 700 (wireless, ANC 0)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless,%20ANC%200))
 - [Bose Noise Cancelling Headphones 700 (wireless, ANC 10)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless,%20ANC%2010))
 - [Bose Noise Cancelling Headphones 700 (wireless, ANC 5)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20Noise%20Cancelling%20Headphones%20700%20(wireless,%20ANC%205))
@@ -822,6 +823,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Bose QuietComfort 35 II (wireless, ANC 2)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wireless,%20ANC%202))
 - [Bose QuietComfort 35 II (wireless, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wireless,%20ANC%20off))
 - [Bose QuietComfort Earbuds](./rtings/rtings_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds)
+- [Bose QuietComfort Earbuds (ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds%20(ANC%20off))
+- [Bose QuietComfort Earbuds (ANC on)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds%20(ANC%20on))
 - [Bose QuietControl 30](./rtings/rtings_harman_over-ear_2018/Bose%20QuietControl%2030)
 - [Bose SoundLink Around-Ear II](./rtings/rtings_harman_over-ear_2018/Bose%20SoundLink%20Around-Ear%20II)
 - [Bose SoundLink Around-Ear Wireless Headphones II (wired)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20SoundLink%20Around-Ear%20Wireless%20Headphones%20II%20(wired))
@@ -951,6 +954,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Cowin E7 Pro](./rtings/rtings_harman_over-ear_2018/Cowin%20E7%20Pro)
 - [Cowin E8](./rtings/rtings_harman_over-ear_2018/Cowin%20E8)
 - [Cowin SE7](./rtings/rtings_harman_over-ear_2018/Cowin%20SE7)
+- [COWON CK11 Pro](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/COWON%20CK11%20Pro)
 - [Cozoy Trio](./crinacle/harman_in-ear_2019v2/Cozoy%20Trio)
 - [Craft Ears Craft SIX](./crinacle/harman_in-ear_2019v2/Craft%20Ears%20Craft%20SIX)
 - [Craft Ears Craft SIX (CIEM)](./crinacle/harman_in-ear_2019v2/Craft%20Ears%20Craft%20SIX%20(CIEM))
@@ -1074,6 +1078,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [DUNU DK3001](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DK3001)
 - [DUNU DK3001 Pro](./crinacle/harman_in-ear_2019v2/DUNU%20DK3001%20Pro)
 - [DUNU DK4001](./crinacle/harman_in-ear_2019v2/DUNU%20DK4001)
+- [DUNU DM480](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DM480)
 - [DUNU DN1000](./crinacle/harman_in-ear_2019v2/DUNU%20DN1000)
 - [DUNU DN12](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DN12)
 - [DUNU DN13 Crius](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/DUNU%20DN13%20Crius)
@@ -2662,6 +2667,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Razer Kraken Tournament Edition](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20Tournament%20Edition)
 - [Razer Kraken Ultimate](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20Ultimate)
 - [Razer Kraken USB](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20USB)
+- [Razer Kraken V3 X](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20V3%20X)
 - [Razer Kraken X](./rtings/rtings_harman_over-ear_2018/Razer%20Kraken%20X)
 - [Razer Man O' War](./rtings/rtings_harman_over-ear_2018/Razer%20Man%20O'%20War)
 - [Razer Nari Ultimate](./rtings/rtings_harman_over-ear_2018/Razer%20Nari%20Ultimate)
@@ -2675,6 +2681,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [RHA CL2](./crinacle/harman_in-ear_2019v2/RHA%20CL2)
 - [RHA CL750](./crinacle/harman_in-ear_2019v2/RHA%20CL750)
 - [RHA MA-350](./innerfidelity/innerfidelity_harman_in-ear_2019v2/RHA%20MA-350)
+- [RHA MA390 Wireless](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/RHA%20MA390%20Wireless)
 - [RHA MA450i](./innerfidelity/innerfidelity_harman_in-ear_2019v2/RHA%20MA450i)
 - [RHA MA600](./innerfidelity/innerfidelity_harman_in-ear_2019v2/RHA%20MA600)
 - [RHA MA750](./crinacle/harman_in-ear_2019v2/RHA%20MA750)
@@ -2999,10 +3006,12 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Simgot Audio EM1 (sealed)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EM1%20(sealed))
 - [Simgot Audio EM2](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EM2)
 - [Simgot Audio EM2 (sealed)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EM2%20(sealed))
+- [Simgot Audio EM3](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EM3)
 - [Simgot Audio EM5](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EM5)
 - [Simgot Audio EM5 (sealed)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EM5%20(sealed))
 - [Simgot Audio EM5H](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EM5H)
 - [Simgot Audio EN700](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EN700)
+- [Simgot Audio EN700 MKII](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EN700%20MKII)
 - [Simgot Audio EN700 Pro](./crinacle/harman_in-ear_2019v2/Simgot%20Audio%20EN700%20Pro)
 - [Simgot Audio EN700 Pro (sealed)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Simgot%20Audio%20EN700%20Pro%20(sealed))
 - [Simgot Audio ET1000 (hybrid earpads)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Simgot%20Audio%20ET1000%20(hybrid%20earpads))
@@ -3162,6 +3171,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Sony WF-SP800N](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-SP800N)
 - [Sony WF-XB700](./oratory1990/harman_in-ear_2019v2/Sony%20WF-XB700)
 - [Sony WH-1000XM2](./oratory1990/harman_over-ear_2018/Sony%20WH-1000XM2)
+- [Sony WH-1000XM2 (wired)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Sony%20WH-1000XM2%20(wired))
+- [Sony WH-1000XM2 (wireless)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Sony%20WH-1000XM2%20(wireless))
 - [Sony WH-1000XM3](./oratory1990/harman_over-ear_2018/Sony%20WH-1000XM3)
 - [Sony WH-1000XM4](./oratory1990/harman_over-ear_2018/Sony%20WH-1000XM4)
 - [Sony WH-CH400](./rtings/rtings_harman_over-ear_2018/Sony%20WH-CH400)
@@ -3575,6 +3586,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Ultrasone HFI-680](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Ultrasone%20HFI-680)
 - [Ultrasone HFI-780](./innerfidelity/innerfidelity_harman_over-ear_2018/Ultrasone%20HFI-780)
 - [Ultrasone IQ](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Ultrasone%20IQ)
+- [Ultrasone IQ Pro](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Ultrasone%20IQ%20Pro)
 - [Ultrasone PRO 2500](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Ultrasone%20PRO%202500)
 - [Ultrasone PRO 2900](./innerfidelity/innerfidelity_harman_over-ear_2018/Ultrasone%20PRO%202900)
 - [Ultrasone PRO 550](./innerfidelity/innerfidelity_harman_over-ear_2018/Ultrasone%20PRO%20550)

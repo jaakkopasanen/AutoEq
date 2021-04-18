@@ -391,6 +391,7 @@
 - [Razer Kraken Tournament Edition](./rtings_harman_over-ear_2018/Razer%20Kraken%20Tournament%20Edition)
 - [Razer Kraken Ultimate](./rtings_harman_over-ear_2018/Razer%20Kraken%20Ultimate)
 - [Razer Kraken USB](./rtings_harman_over-ear_2018/Razer%20Kraken%20USB)
+- [Razer Kraken V3 X](./rtings_harman_over-ear_2018/Razer%20Kraken%20V3%20X)
 - [Razer Kraken X](./rtings_harman_over-ear_2018/Razer%20Kraken%20X)
 - [Razer Man O' War](./rtings_harman_over-ear_2018/Razer%20Man%20O'%20War)
 - [Razer Nari Ultimate](./rtings_harman_over-ear_2018/Razer%20Nari%20Ultimate)
