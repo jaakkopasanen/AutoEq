@@ -1,0 +1,27 @@
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="/"><img alt="Headphone fixer web logo" src="{{ url_for('static', filename='img/logo.png') }}"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" title="Recommended results for all headphones analysed." href="/">Recommended</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" title="Result sources" href="/results" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Results
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {%- for source, details in sources.items() -%}
+              <a class="dropdown-item" title="{{ details.title }}" href="/results/{{ source }}">{{ details.name }}</a>
+            {%- endfor -%}
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="About the AutoEQ site." href="{{ url_for('about') }}">About</a>
+        </li>
+      </ul>
+    </div>
+</nav>
