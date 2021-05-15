@@ -1631,6 +1631,8 @@ class FrequencyResponse:
         if fig is None:
             fig, ax = plt.subplots()
             fig.set_size_inches(12, 8)
+            fig.set_facecolor('white')
+            ax.set_facecolor('white')
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
 
@@ -1698,7 +1700,8 @@ class FrequencyResponse:
         if a_min is not None or a_max is not None:
             ax.set_ylim([a_min, a_max])
         ax.set_title(self.name)
-        ax.legend(fontsize=8)
+        if len(ax.lines) > 0:
+            ax.legend(fontsize=8)
         ax.grid(True, which='major')
         ax.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))

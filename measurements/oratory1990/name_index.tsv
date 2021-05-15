@@ -196,7 +196,7 @@ Grado GT220	Grado GT220	inear
 Grado GW100	Grado GW100	onear
 Grado SR60e	Grado SR60e	onear
 HarmonicDyne Zeus	HarmonicDyne Zeus	onear
-HEDD Heddphone	HEDD Heddphone	onear
+HEDD Heddphone	HEDD HEDDphone	onear
 HEDD Heddphone (preliminary)	HEDD Heddphone	onear
 Hidition Viento (Bass on)	Hidition Viento (bass)	inear
 Hifiman Ananda	HIFIMAN Ananda	onear
@@ -287,8 +287,8 @@ MrSpeakers Ether C Flow 1.1	Dan Clark Audio Ether C Flow 1.1	onear
 MrSpeakers Ether CX	Dan Clark Audio Ether CX	onear
 MrSpeakers Ether Flow	Dan Clark Audio Ether Flow	onear
 MySphere 3 (very preliminary)	MySphere 3	onear
-NAD Viso HP50	NAD Viso HP50	onear
-NAD Viso HP70	NAD Viso HP70	onear
+NAD Viso HP50	NAD VISO HP50	onear
+NAD Viso HP70	NAD VISO HP70	onear
 Neumann NDH20	Neumann NDH20	onear
 Noble K10 CIEM	Noble Audio K10 CIEM	inear
 NS Audio NS3	NS Audio NS3	inear
@@ -335,7 +335,7 @@ Samsung SM-R175 Galaxy Buds+	Samsung Galaxy Buds Plus	ignore
 "Sennheiser ""HE1 """"Orpheus 2"""""""	Sennheiser HE 1 Orpheus 2	ignore
 "Sennheiser ""HE1 """"Orpheus 2"""""" (v2)"	Sennheiser HE 1 Orpheus 2	onear
 "Sennheiser ""HE90 / HEV90 """"Orpheus"""""""	Sennheiser HE 90 Orpheus	onear
-Sennheiser CX 400BT	Sennheiser CX 400BT	onear
+Sennheiser CX 400BT	Sennheiser CX 400BT	inear
 Sennheiser CX2.00	Sennheiser CX 2.00	inear
 Sennheiser CX3.00	Sennheiser CX 3.00	inear
 Sennheiser G4ME ONE	Sennheiser GAME ONE	onear

@@ -244,7 +244,6 @@ def write_oratory1990_index():
 
 
 def write_hesuvi_zip():
-    os.makedirs(os.path.join(DIR_PATH, 'hesuvi'), exist_ok=True)
     manufacturers = ManufacturerIndex()
     zip_object = ZipFile(os.path.join(DIR_PATH, 'hesuvi.zip'), 'w')
     dir_paths = [

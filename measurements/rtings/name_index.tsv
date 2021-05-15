@@ -115,6 +115,7 @@ B&O PLAY H6	Bang & Olufsen Beoplay H6	onear
 B&O PLAY H9	Bang & Olufsen Beoplay H9	onear
 B&O PLAY H9i	Bang & Olufsen Beoplay H9i	onear
 Bang & Olufsen Beoplay H9i Wireless	Bang & Olufsen Beoplay H9i	onear
+Bang & Olufsen Beoplay Portal	Bang & Olufsen Beoplay Portal	onear
 Bang & Olufsen E8	Bang & Olufsen Beoplay E8	inear
 Bang & Olufsen E8 2.0	Bang & Olufsen Beoplay E8 2.0	inear
 Bang & Olufsen E8 3.0	Bang & Olufsen Beoplay E8 3.0	inear
@@ -152,7 +153,7 @@ Beats urBeats3 Earphones	Beats ur3	inear
 Betron YSM1000	Betron YSM1000	inear
 Beyerdynamic Amiron Wireless	Beyerdynamic Amiron Wireless	onear
 Beyerdynamic DT 1770 PRO	Beyerdynamic DT 1770 (velour earpads)	onear
-Beyerdynamic DT 1990 PRO	Beyerdynamic DT 1990 (Balanced Earpads)	onear
+Beyerdynamic DT 1990 PRO	Beyerdynamic DT 1990 (balanced earpads)	onear
 Beyerdynamic DT 770 PRO	Beyerdynamic DT 770 250 Ohm	onear
 Beyerdynamic DT 770 Pro	Beyerdynamic DT 770 250 Ohm	onear
 Beyerdynamic DT 880	Beyerdynamic DT 880 32 Ohm	onear
@@ -260,6 +261,7 @@ Etymotic HF5	Etymotic hf5	inear
 FIIL T1X	FIIL T1X	inear
 FIIL T1X True Wireless	FIIL T1X	inear
 Fitbit Flyer	Fitbit Flyer	inear
+Focal Clear Mg	Focal Clear Mg	onear
 Focal Elear	Focal Elear	onear
 Focal Elegia	Focal Elegia	onear
 Focal Stellia	Focal Stellia	onear
@@ -284,6 +286,7 @@ HiFiMan Arya	HIFIMAN Arya	onear
 HiFiMan Edition X	HIFIMAN Edition X	onear
 HiFiMan HE-400i	HIFIMAN HE400i	onear
 HiFiMan Sundara	HIFIMAN Sundara	onear
+HiFiMan Sundara 2018	HIFIMAN Sundara 2018	onear
 HyperX Cloud 2/Cloud II	HyperX Cloud II	onear
 HyperX Cloud 2/Cloud II Wireless	HyperX Cloud II Wireless	onear
 HyperX Cloud Alpha	HyperX Cloud Alpha	onear
@@ -385,10 +388,12 @@ JBL LIVE 300TWS	JBL Live 300TWS	inear
 JBL LIVE 300TWS Truly Wireless	JBL Live 300TWS	inear
 JBL Live 400BT	JBL Live 400BT	onear
 JBL Live 400BT Wireless	JBL Live 400BT	onear
+JBL Live 460NC Wireless	JBL Live 460NC	onear
 JBL Live 500BT	JBL Live 500BT	onear
 JBL Live 500BT Wireless	JBL Live 500BT	onear
 JBL Live 650 BTNC Wireless	JBL Live 650BTNC	onear
 JBL Live 650BTNC	JBL Live 650BTNC	onear
+JBL Live Pro+ TWS True Wireless	JBL Live Pro+ TWS	inear
 JBL Quantum 100	JBL Quantum 100	onear
 JBL Quantum 400	JBL Quantum 400	onear
 JBL Quantum 800	JBL Quantum 800	onear
@@ -408,6 +413,8 @@ JBL TUNE 220TWS	JBL TUNE 220TWS	inear
 JBL TUNE 220TWS Truly Wireless	JBL TUNE 220TWS	inear
 JBL Tune 225TWS	JBL Tune 225TWS	inear
 JBL Tune 225TWS True Wireless	JBL Tune 225TWS	inear
+JBL Tune 510BT Wireless	JBL Tune 510BT	onear
+JBL Tune 660NC Wireless	JBL Tune 660NC	onear
 JBL TUNE 750BTNC	JBL TUNE 750BTNC	onear
 JBL TUNE 750BTNC Wireless	JBL TUNE 750BTNC	onear
 JBL UA True Wireless Flash	Under Armour True Wireless Flash	inear
@@ -436,6 +443,7 @@ Logitech G Pro X	Logitech G Pro X	onear
 Logitech G Pro X Gaming Headset	Logitech G Pro X Lightspeed	onear
 Logitech G PRO X WIRELESS LIGHTSPEED	Logitech G Pro X Lightspeed	onear
 Logitech G PRO X WIRELESS LIGHTSPEED Gaming Headset	Logitech G Pro X Lightspeed	onear
+Logitech G333	Logitech G333	inear
 Logitech G430	Logitech G430	onear
 Logitech G432	Logitech G432	onear
 Logitech G432 Gaming Headset	Logitech G432	onear
@@ -458,7 +466,7 @@ Marshall Major II	Marshall Major II	onear
 Marshall MID ANC	Marshall MID ANC	onear
 Marshall MID ANC Wireless	Marshall MID ANC	onear
 MEE audio M6	MEE Audio M6	inear
-MEE audio M6 PRO	MEE Audio M6 PRO	inear
+MEE audio M6 PRO	MEE Audio M6 Pro	inear
 MEE audio M9B	MEE Audio M9B	inear
 MEE audio X6 Plus	MEE Audio X6 Plus	inear
 MEE audio X7	MEE Audio X7	inear
@@ -613,7 +621,7 @@ Sennheiser HD 518	Sennheiser HD 518	onear
 Sennheiser HD 560S	Sennheiser HD 560S	onear
 Sennheiser HD 58X Jubilee	Sennheiser HD 58X	onear
 Sennheiser HD 598	Sennheiser HD 598	onear
-Sennheiser HD 598 Cs	Sennheiser HD 598 Cs	onear
+Sennheiser HD 598 Cs	Sennheiser HD 598 CS	onear
 Sennheiser HD 599	Sennheiser HD 599	onear
 Sennheiser HD 600	Sennheiser HD 600	onear
 Sennheiser HD 650	Sennheiser HD 650	onear
@@ -657,6 +665,7 @@ Skullcandy Crusher Evo	Skullcandy Crusher Evo	onear
 Skullcandy Crusher Evo Wireless	Skullcandy Crusher Evo	onear
 Skullcandy Crusher Wireless	Skullcandy Crusher Wireless	onear
 Skullcandy Crusher Wireless 2016	Skullcandy Crusher Wireless	onear
+Skullcandy Dime True Wireless	Skullcandy Dime	inear
 Skullcandy Grind	Skullcandy Grind	onear
 Skullcandy Hesh 2	Skullcandy Hesh 2	onear
 Skullcandy Hesh 3	Skullcandy Hesh 3	onear
@@ -777,6 +786,7 @@ SteelSeries Arctis 7 2019 Edition	SteelSeries Arctis 7 2019 Edition	onear
 SteelSeries Arctis 7 2019 Edition Wireless	SteelSeries Arctis 7 2019 Edition	onear
 SteelSeries Arctis 7P	SteelSeries Arctis 7P	onear
 SteelSeries Arctis 7P Wireless	SteelSeries Arctis 7P	onear
+SteelSeries Arctis 7X Wireless	SteelSeries Arctis 7X	onear
 SteelSeries Arctis 9	SteelSeries Arctis 9	onear
 SteelSeries Arctis 9 Wireless	SteelSeries Arctis 9	onear
 SteelSeries Arctis 9X	SteelSeries Arctis 9X	onear
@@ -837,6 +847,7 @@ Turtle Beach Stealth 700	Turtle Beach Stealth 700	onear
 Turtle Beach Stealth 700 Gen 2	Turtle Beach Stealth 700 Gen 2	onear
 Turtle Beach Stealth 700 Gen 2 Wireless	Turtle Beach Stealth 700 Gen 2	onear
 Turtle Beach Stealth 700 Wireless	Turtle Beach Stealth 700	onear
+Ultimate Ears FITS Truly Wireless	Ultimate Ears FITS	inear
 V-MODA BassFit Wireless	V-MODA BassFit Wireless	inear
 V-MODA Crossfade II Wireless	V-MODA Crossfade II Wireless	onear
 V-MODA Crossfade M-100	V-MODA Crossfade M-100	onear

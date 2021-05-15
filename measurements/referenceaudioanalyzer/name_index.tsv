@@ -634,8 +634,8 @@ Gerkules HDP DJ-PRO M1001	Gerkules HDP DJ-PRO M1001	onear
 German Maestro GMP 240	German Maestro GMP 240	onear
 German Maestro GMP 250	German Maestro GMP 250	onear
 German Maestro GMP 400	German Maestro GMP 400	onear
-German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
 German Maestro GMP 450 PRO	German Maestro GMP 450 PRO	onear
+German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
 German Maestro GMP 8.300 D	German Maestro GMP 8.300 D	onear
 German Maestro GMP 8.35 D	German Maestro GMP 8.35 D	onear
 Grado eGrado	Grado eGrado	onear
@@ -927,7 +927,7 @@ MyST Nail 1	MyST Nail 1	inear
 MyST Nail 3	MyST Nail 3	inear
 MyST Nail 4	MyST Nail 4	inear
 MyST Nail2v2	MyST Nail2v2	inear
-NAD Viso HP50	NAD Viso HP50	onear
+NAD Viso HP50	NAD VISO HP50	onear
 Nakamichi NBE 250	Nakamichi NBE-250	inear
 Nakamichi NEP-MV5	Nakamichi NEP-MV5	inear
 Nakamichi NEP-S600	Nakamichi NEP-S600	inear
@@ -1178,6 +1178,7 @@ Sony MDR-XB70BT	Sony MDR-XB70BT	inear
 Sony MDR-XB950	Sony MDR-XB950	onear
 Sony MDR-Z1000	Sony MDR-Z1000	onear
 Sony MDR-Z7	Sony MDR-Z7	onear
+Sony MDR-Z7 MK2	Sony MDR-Z7M2	onear
 Sony MDR-ZX110	Sony MDR-ZX110	onear
 Sony MDR-ZX220BT	Sony MDR-ZX220BT	onear
 Sony MDR-ZX700	Sony MDR-ZX700	onear
@@ -1353,8 +1354,8 @@ Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear

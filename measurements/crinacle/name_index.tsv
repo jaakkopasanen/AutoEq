@@ -88,6 +88,7 @@ ACH	AAW ACH	inear
 ACME 8	Fearless Audio ACME 8	inear
 Active65	Jabra Elite Active 65t	inear
 AD1000X	Audio-Technica ATH-AD1000X	onear
+AD2000	Audio-Technica ATH-AD2000	onear
 AD500X	Audio-Technica ATH-AD500X	onear
 AD700X	Audio-Technica ATH-AD700X	onear
 AD900X	Audio-Technica ATH-AD900X	onear
@@ -217,6 +218,7 @@ Be	Periodic Audio Be	inear
 Bella	NCM Bella	inear
 BeoPlay H7	Bang & Olufsen BeoPlay H7	onear
 Bevi	Lypertek Bevi	inear
+Beyerdynamic DT 1990 (Balanced Earpads)	Beyerdynamic DT 1990 (balanced Earpads)	onear
 BG	Shozy & Neo BG (sample 1)	inear
 BG BlueGold	Shozy BG Blue Limited Edition	inear
 BG S2	Shozy & Neo BG (sample 2)	inear
@@ -377,6 +379,7 @@ E70	Audio-Technica ATH-E70	inear
 E8	Bang & Olufsen Beoplay E8	inear
 E8 2.0	Bang & Olufsen Beoplay E8 2.0	inear
 E900	Onkyo E900	inear
+E900 Pro	EKSA E900 Pro	onear
 EA3	Jade Audio EA3	inear
 EAH-AZ70W	Technics EAH-AZ70W	inear
 Early	Aroma Audio Early	inear
@@ -542,7 +545,7 @@ FW03	JVC HA-FW03	inear
 FW10000	JVC HA-FW10000	inear
 FX99X	JVC HA-FX99X-B	inear
 FXA9	Fender FXA9	inear
-G PRO X	Logitech G PRO X	onear
+G PRO X	Logitech G Pro X	onear
 G1	Audio-Technica ATH-G1	onear
 G10	Future Sonics G10	inear
 G431	Logitech G431	onear
@@ -595,10 +598,13 @@ HD599	Sennheiser HD 599	onear
 HD600	Sennheiser HD 600 (sample 1)	onear
 HD600 S1 (worn pads)	Sennheiser HD 600 (worn earpads) (sample 1)	onear
 HD600 S2	Sennheiser HD 600 (semi-worn earpads) (sample 2)	onear
+HD600 S3 (2020) (fresh pads)		ignore
 HD600 S3 (2020, fresh pads)	Sennheiser HD 600 (sample 3)	onear
 HD600 S3 (worn pads)	Sennheiser HD 600 (worn earpads) (sample 3)	onear
 HD650	Sennheiser HD 650	onear
 HD650 S1 (worn pads)	Sennheiser HD 650 (worn earpads) (sample 1)	onear
+HD650 S2 (2020) (fresh pads)		ignore
+HD650 S2 (2020) (worn pads)		ignore
 HD650 S2 (2020, fresh pads)	Sennheiser HD 650 (sample 2)	onear
 HD650 S2 (2020, worn pads)	Sennheiser HD 650 (worn earpads) (sample 2)	onear
 HD660S	Sennheiser HD 660 S	onear
@@ -620,14 +626,15 @@ HE400i (2016)	HIFIMAN HE400i 2016	onear
 HE400i (2020)	HIFIMAN HE400i 2020	onear
 HE560	HIFIMAN HE560 V1	onear
 HE560 V1 S2	HIFIMAN HE560 V1 (sample 2)	onear
-HE5se	HIFIMAN HE5se	onear
 HE5SE	HIFIMAN HE5se	onear
+HE5se	HIFIMAN HE5se	onear
 HE6 (6-screw) (Velour)	HIFIMAN HE6 (6-screw, velour earpads)	onear
 HE6se	HIFIMAN HE6se	onear
 Heaven 4	Final Audio Heaven 4	inear
 Heaven 7	Final Audio Heaven 7	inear
 Heaven 8	Final Audio Heaven 8	inear
 Heaven S	Final Audio Heaven S	inear
+HEDD Heddphone	HEDD HEDDphone	onear
 HEDDphone	HEDD HEDDphone	onear
 HEDDphone S2	HEDD HEDDphone (sample 2)	onear
 HEK1K		ignore
@@ -677,8 +684,8 @@ IE800	Sennheiser IE 800	inear
 IE800S	Sennheiser IE 800 S	inear
 IE80S	Sennheiser IE 80 S (min)	inear
 IE80S Half	Sennheiser IE 80 S (half)	inear
-IE80S Max	Sennheiser IE 80 S (max)	inear
 IE80S max	Sennheiser IE 80 S (max)	inear
+IE80S Max	Sennheiser IE 80 S (max)	inear
 IEX1	Audio-Technica ATH-IEX1	inear
 iGE	Grado iGE	inear
 IM01	Audio-Technica ATH-IM01	inear
@@ -689,8 +696,8 @@ Infinity Mk2	Rhapsodio Infinity Mk2	inear
 IO	Campfire Audio IO (sample 1)	inear
 IO S2	Campfire Audio IO (sample 2)	inear
 ION-4 Vietnam	Soranik ION-4 (Vietnamese domestic market edition)	inear
-iSine 10	Audeze iSINE 10 (sample 1)	inear
 iSIne 10	Audeze iSINE 10	inear
+iSine 10	Audeze iSINE 10 (sample 1)	inear
 iSine 10 S2	Audeze iSINE 10 (sample 2)	inear
 iSine 20	Audeze iSINE 20	inear
 iSine 20 Cipher	Audeze iSINE 20 (Cipher cable)	inear
@@ -705,8 +712,8 @@ Jade II	HIFIMAN Jade II	onear
 Janus	ddHiFi E2020A Janus	inear
 Jasper	AUNE Jasper	inear
 Jazz	Jomo Audio Jazz	inear
-Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
+Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 JH13v2 Max	JH Audio 13v2 (max)	inear
 JH13v2 Min	JH Audio 13v2 (min)	inear
 JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	inear
@@ -724,7 +731,7 @@ K52	AKG K52	onear
 K612 Pro	AKG K612 Pro	onear
 K701	AKG K701	onear
 K702	AKG K702	onear
-K712 Pro	AKG K712 Pro	onear
+K712 Pro	AKG K712	onear
 K72	AKG K72	onear
 K7XX	AKG K7XX	onear
 K812	AKG K812	onear
@@ -792,7 +799,9 @@ LAB2 Fit 1	Final Audio Lab 1 Fit 1	inear
 LAB2 Fit 2	Final Audio Lab 1 Fit 2	inear
 Lancelot	Fearless Audio Lancelot	inear
 Layla 2o_clock	JH Audio Layla (2 o’clock)	inear
+Layla 2oclock	JH Audio Layla (2 o’clock)	inear
 Layla AION 2o_clock	JH Audio Layla AION (2 o’clock)	inear
+Layla AION 2oclock	JH Audio Layla AION (2 o’clock)	inear
 Layla AION Max Bass	JH Audio Layla AION (max bass)	inear
 Layla AION Min Bass	JH Audio Layla AION (min bass)	inear
 Layla Max	JH Audio Layla (max)	inear
@@ -908,6 +917,7 @@ ME20	Meccaudio ME20	inear
 ME200	Shanling ME200	inear
 ME500	Shanling ME500	inear
 ME700	Shanling ME700	inear
+MEE Audio M6 PRO	MEE Audio M6 Pro	inear
 Mellianus	Oriolus Mellianus	inear
 Merlin V2	Unique Melody Merlin V2	inear
 MEST	Unique Melody MEST (universal)	inear
@@ -1261,6 +1271,7 @@ SP3	Soranik SP3	inear
 SP3 SE	Soranik SP3 SE	inear
 SP540	Koss SP540	onear
 Spaceship	Moondrop Spaceship	inear
+Sparks	Moondrop Sparks	inear
 Sphear	Focal Sphear	inear
 SPORT7TW	Audio-Technica ATH-SPORT7TW	inear
 Spring 1	BQEYZ Spring 1	inear
@@ -1396,6 +1407,7 @@ Triple Driver	1MORE Triple Driver	inear
 TrueConnect	RHA TrueConnect	inear
 TrueLevel		ignore
 Truth	Dita Audio Truth	inear
+TS-1024	Timsok TS-1024	onear
 TSH-HR1000K	fineEars TSH-HR1000K	inear
 TSMR-3 Pro 000	Tansio Mirai TSMR-3 Pro (off-off-off)	inear
 TSMR-3 Pro 003	Tansio Mirai TSMR-3 Pro (off-off-on)	inear
