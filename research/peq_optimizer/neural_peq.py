@@ -17,7 +17,8 @@ from constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP
 
 
 class NeuralPEQ:
-    def __init__(self, fs=46010.0, n_filters=10, frequency=None, hidden_size=16,
+    def __init__(self, fs=46010.0, n_filters=10, frequency=None,
+                 hidden_size=16, dropout=0.2,
                  learning_rate=1e-4, learning_rate_decay=0.0, warmup_epochs=3,
                  log_f=False, q_normalization=3.0, gain_normalization=10.0):
         self.fs = fs
@@ -26,6 +27,7 @@ class NeuralPEQ:
         if self.frequency is None:
             self.frequency = self.generate_frequencies()
         self.hidden_size = hidden_size
+        self.dropout = dropout
         self.learning_rate = learning_rate
         self.learning_rate_decay = learning_rate_decay
         self.warmup_epochs = warmup_epochs
@@ -35,7 +37,9 @@ class NeuralPEQ:
 
         # Construct model architecture
         inputs = keras.Input(shape=self.frequency.size)  # Input layer, take size data
-        x = layers.Dense(hidden_size, activation='sigmoid')(inputs)  # First hidden layer
+        x = layers.Dropout(rate=self.dropout)(inputs)
+        x = layers.Dense(hidden_size, activation='sigmoid')(x)  # First hidden layer
+        x = layers.Dropout(rate=self.dropout)(x)
         outputs = layers.Dense(self.n_filters * 3)(x)  # Output layer: 10 filters with 3 parameters each
         self.model = keras.Model(inputs=inputs, outputs=outputs, name='peq')
         self.model.compile(loss=self.loss, optimizer=tfa.optimizers.AdamW(
@@ -143,7 +147,7 @@ class NeuralPEQ:
             validation_split=0.2,
             callbacks=[
                 tf.keras.callbacks.LearningRateScheduler(self.scheduler_factory()),
-                tf.keras.callbacks.EarlyStopping(monitor='loss', patience=10, restore_best_weights=True)
+                tf.keras.callbacks.EarlyStopping(monitor='loss', patience=5, restore_best_weights=True)
             ]
         )
 
