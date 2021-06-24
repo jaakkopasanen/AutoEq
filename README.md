@@ -225,14 +225,13 @@ expensive than Voxengo but might be easier to install and use.
 Tutorials:
 - [Apple AU Lab + Soundflower + AUNBandEQ Tutorial](https://www.superbestaudiofriends.org/index.php?threads/systemwide-eq-on-mac.7435/) [AU Lab Permission Issue](https://discussions.apple.com/thread/8552731)
 
-#### eqMac2
-[eqMac2](https://bitgapp.com/eqmac/) is a free system wide 31-band equalizer on Mac. AutoEQ results don't have 31 band
-presets but can be created by passing parameters
-
-```
---fixed_band_eq --q=4.47 --fc=20,25,31.5,40,50,63,80,100,125,160,200,250,315,400,500,630,800,1000,1250,1600,2000,2500,3150,4000,5000,6300,8000,10000,12500,16000,20000
-```
-
+#### eqMac
+[eqMac](https://eqmac.app) is a Free & [Open Source](https://github.com/bitgapp/eqmac) System Wide equalizer for macOS.
+eqMac has a Free 10 Band EQ and an Unlimited Band EQ (paid) with built-in AutoEQ Integration! (Expert EQ)
+<p align="center">
+  <img width="512" src="https://raw.githubusercontent.com/bitgapp/eqMac/master/assets/screenshots/autoeq-promo.png"/>
+</p>
+  
 ### iOS
 iOS unfortunately doesn't allow system-wide equalizers, so the only options are either music players with built-in
 equalizer or [hardware solutions](#Hardware).
