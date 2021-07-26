@@ -2733,7 +2733,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Samsung Galaxy Buds](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds)
 - [Samsung Galaxy Buds Live](./rtings/rtings_harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Live)
 - [Samsung Galaxy Buds Pro](./crinacle/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Pro)
-- [Samsung Galaxy Buds+](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20+)
+- [Samsung Galaxy Buds+](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds+)
 - [Samsung Gear IconX](./rtings/rtings_harman_over-ear_2018/Samsung%20Gear%20IconX)
 - [Samsung Level On](./innerfidelity/innerfidelity_harman_over-ear_2018/Samsung%20Level%20On)
 - [Samsung Level On Wireless](./rtings/rtings_harman_over-ear_2018/Samsung%20Level%20On%20Wireless)
