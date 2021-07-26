@@ -188,9 +188,9 @@ with impulse response (WAV) files. For rooted users this is the best option.
 Viper4Android. It provides a system wide solution, has a convolution engine but requires rooting.
 
 ### Linux
-#### PulseEffects
-[PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
-processing tools including parametric equalizer. Load eq settings by clicking the top center cog & clicking
+#### PulseEffects / EasyEffects
+[PulseEffects / EasyEffects](https://github.com/wwmm/easyeffects) is a Linux module with wide variety of signal
+processing tools including parametric equalizer. From version 5.0.0 onwards, PulseEffects was renamed to EasyEffects and uses Pipewire instead of Pulseaudio as backend. Load eq settings by clicking the top center cog & clicking
 *Import ACO Presets* button and select the ParametricEQ.txt file.
 Pre-amp can be adjusted with the input slider.
 For versions prior to v4.8.0, adjust filter parameters by clicking the cog button on each filter
