@@ -3702,10 +3702,9 @@ from the same source.
 - [Samsung EO-IG955 (AKG)](./crinacle/harman_in-ear_2019v2/Samsung%20EO-IG955%20(AKG)) by Crinacle
 - [Samsung EO-IG955 (AKG)](./oratory1990/harman_in-ear_2019v2/Samsung%20EO-IG955%20(AKG)) by oratory1990
 - [Samsung Galaxy Buds Live](./rtings/rtings_harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Live) by Rtings
-- [Samsung Galaxy Buds Plus](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Plus) by oratory1990
-- [Samsung Galaxy Buds Plus](./rtings/rtings_harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Plus) by Rtings
 - [Samsung Galaxy Buds Pro](./crinacle/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Pro) by Crinacle
 - [Samsung Galaxy Buds Pro](./rtings/rtings_harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Pro) by Rtings
+- [Samsung Galaxy Buds+](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20+) by oratory1990
 - [Samsung Galaxy Buds+](./rtings/rtings_harman_in-ear_2019v2/Samsung%20Galaxy%20Buds+) by Rtings
 - [Samsung Galaxy Buds](./crinacle/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds) by Crinacle
 - [Samsung Galaxy Buds](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds) by oratory1990
