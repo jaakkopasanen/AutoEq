@@ -3704,7 +3704,7 @@ from the same source.
 - [Samsung Galaxy Buds Live](./rtings/rtings_harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Live) by Rtings
 - [Samsung Galaxy Buds Pro](./crinacle/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Pro) by Crinacle
 - [Samsung Galaxy Buds Pro](./rtings/rtings_harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20Pro) by Rtings
-- [Samsung Galaxy Buds+](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds%20+) by oratory1990
+- [Samsung Galaxy Buds+](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds+) by oratory1990
 - [Samsung Galaxy Buds+](./rtings/rtings_harman_in-ear_2019v2/Samsung%20Galaxy%20Buds+) by Rtings
 - [Samsung Galaxy Buds](./crinacle/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds) by Crinacle
 - [Samsung Galaxy Buds](./oratory1990/harman_in-ear_2019v2/Samsung%20Galaxy%20Buds) by oratory1990
