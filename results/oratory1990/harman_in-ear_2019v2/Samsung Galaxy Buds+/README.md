@@ -37,4 +37,4 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 16000 Hz | 1.41 | 4.9 dB  |
 
 ### Graphs
-![](./Samsung%20Galaxy%20Buds%20+.png)
+![](./Samsung%20Galaxy%20Buds+.png)
