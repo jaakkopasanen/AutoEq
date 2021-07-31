@@ -89,6 +89,6 @@ python -m measurements.average --input_dir="measurements/crinacle/data/inear"
 4. Crawl new measurements: `jupyter lab measurements/crawl.ipynb`
 5. Run results update: `python results/update_results.py --new_only`
 6. Update result indexes: `python results/update_indexes.py`
-7. Add files to git: `git add results measurements/*/data measurements/*/name_index.tsv`
+7. Add files to git: `git add results measurements/*/data/**/*.csv measurements/*/name_index.tsv`
 8. Commit: `git commit -m "New measurements with pre-computed results."`
 9. Push: `git push`
