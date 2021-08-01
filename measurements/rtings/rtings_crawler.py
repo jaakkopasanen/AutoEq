@@ -50,7 +50,7 @@ class RtingsCrawler(Crawler):
         # "https://www.rtings.com/graph/data/" + product1 + "/" + comparison_id
         if self.driver is None:
             raise TypeError('self.driver cannot be None')
-        document = self.get_beautiful_soup('https://www.rtings.com/headphones/1-4/graph')
+        document = self.get_beautiful_soup('https://www.rtings.com/headphones/1-5/graph')
         urls = {}
         style = 'display: block; visibility: visible;'
         for child in document.find(id='product_select').find_all('option', attrs={'style': style}):
