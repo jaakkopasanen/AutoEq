@@ -422,6 +422,7 @@ from the same source.
 - [Anker Soundcore Life Q30 (ANC off)](./oratory1990/harman_over-ear_2018/Anker%20Soundcore%20Life%20Q30%20(ANC%20off)) by oratory1990
 - [Anker Soundcore Life Q30 (ANC on)](./oratory1990/harman_over-ear_2018/Anker%20Soundcore%20Life%20Q30%20(ANC%20on)) by oratory1990
 - [Anker Soundcore Life Q30](./rtings/rtings_harman_over-ear_2018/Anker%20Soundcore%20Life%20Q30) by Rtings
+- [Anker Soundcore Life Q35](./rtings/rtings_harman_over-ear_2018/Anker%20Soundcore%20Life%20Q35) by Rtings
 - [Anker SoundCore Space NC](./rtings/rtings_harman_over-ear_2018/Anker%20SoundCore%20Space%20NC) by Rtings
 - [Anker Soundcore Spirit X](./rtings/rtings_harman_in-ear_2019v2/Anker%20Soundcore%20Spirit%20X) by Rtings
 - [Anker Zolo Liberty+](./rtings/rtings_harman_in-ear_2019v2/Anker%20Zolo%20Liberty+) by Rtings
@@ -889,6 +890,7 @@ from the same source.
 - [Beats Solo](./referenceaudioanalyzer/referenceaudioanalyzer_hdm1_harman_over-ear_2018/Beats%20Solo) by Reference Audio Analyzer, HDM1
 - [Beats Studio 2 2014](./innerfidelity/innerfidelity_harman_over-ear_2018/Beats%20Studio%202%202014) by Innerfidelity
 - [Beats Studio 2 Bluetooth](./innerfidelity/innerfidelity_harman_over-ear_2018/Beats%20Studio%202%20Bluetooth) by Innerfidelity
+- [Beats Studio Buds](./rtings/rtings_harman_in-ear_2019v2/Beats%20Studio%20Buds) by Rtings
 - [Beats Studio Wireless](./rtings/rtings_harman_over-ear_2018/Beats%20Studio%20Wireless) by Rtings
 - [Beats Studio3 Wireless](./rtings/rtings_harman_over-ear_2018/Beats%20Studio3%20Wireless) by Rtings
 - [Beats Studio](./innerfidelity/innerfidelity_harman_over-ear_2018/Beats%20Studio) by Innerfidelity
@@ -1358,6 +1360,7 @@ from the same source.
 - [Corsair HS70 Wireless](./rtings/rtings_harman_over-ear_2018/Corsair%20HS70%20Wireless) by Rtings
 - [Corsair HS75 XB WIRELESS](./rtings/rtings_harman_over-ear_2018/Corsair%20HS75%20XB%20WIRELESS) by Rtings
 - [Corsair Virtuoso RGB Wireless SE](./rtings/rtings_harman_over-ear_2018/Corsair%20Virtuoso%20RGB%20Wireless%20SE) by Rtings
+- [Corsair VIRTUOSO RGB Wireless XT](./rtings/rtings_harman_over-ear_2018/Corsair%20VIRTUOSO%20RGB%20Wireless%20XT) by Rtings
 - [Corsair Virtuoso RGB Wireless](./rtings/rtings_harman_over-ear_2018/Corsair%20Virtuoso%20RGB%20Wireless) by Rtings
 - [Corsair Void Elite](./rtings/rtings_harman_over-ear_2018/Corsair%20Void%20Elite) by Rtings
 - [Corsair Void PRO RGB](./rtings/rtings_harman_over-ear_2018/Corsair%20Void%20PRO%20RGB) by Rtings
@@ -2012,6 +2015,7 @@ from the same source.
 - [FLC Technology FLC8 GGBl](./innerfidelity/innerfidelity_harman_in-ear_2019v2/FLC%20Technology%20FLC8%20GGBl) by Innerfidelity
 - [Flicker Ear Norma](./crinacle/harman_in-ear_2019v2/Flicker%20Ear%20Norma) by Crinacle
 - [Focal Celestee](./crinacle/gras_43ag-7_harman_over-ear_2018/Focal%20Celestee) by Crinacle, GRAS 43AG-7
+- [Focal Celestee](./rtings/rtings_harman_over-ear_2018/Focal%20Celestee) by Rtings
 - [Focal Clear (Focal Clear Mg earpads)](./crinacle/gras_43ag-7_harman_over-ear_2018/Focal%20Clear%20(Focal%20Clear%20Mg%20earpads)) by Crinacle, GRAS 43AG-7
 - [Focal Clear Mg](./crinacle/gras_43ag-7_harman_over-ear_2018/Focal%20Clear%20Mg) by Crinacle, GRAS 43AG-7
 - [Focal Clear Mg](./rtings/rtings_harman_over-ear_2018/Focal%20Clear%20Mg) by Rtings
@@ -2363,6 +2367,7 @@ from the same source.
 - [HIFIMAN Shangri-La](./oratory1990/harman_over-ear_2018/HIFIMAN%20Shangri-La) by oratory1990
 - [HIFIMAN Sundara (2020 revised earpads)](./oratory1990/harman_over-ear_2018/HIFIMAN%20Sundara%20(2020%20revised%20earpads)) by oratory1990
 - [HIFIMAN Sundara 2018](./rtings/rtings_harman_over-ear_2018/HIFIMAN%20Sundara%202018) by Rtings
+- [HIFIMAN Sundara 2020](./rtings/rtings_harman_over-ear_2018/HIFIMAN%20Sundara%202020) by Rtings
 - [HIFIMAN Sundara](./crinacle/ears-711_harman_over-ear_2018/HIFIMAN%20Sundara) by Crinacle, Ears-711
 - [HIFIMAN Sundara](./crinacle/gras_43ag-7_harman_over-ear_2018/HIFIMAN%20Sundara) by Crinacle, GRAS 43AG-7
 - [HIFIMAN Sundara](./innerfidelity/innerfidelity_harman_over-ear_2018/HIFIMAN%20Sundara) by Innerfidelity
@@ -2541,6 +2546,7 @@ from the same source.
 - [Jaybird Run](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20Run) by Rtings
 - [Jaybird Tarah Pro](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20Tarah%20Pro) by Rtings
 - [Jaybird Tarah](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20Tarah) by Rtings
+- [Jaybird Vista 2](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20Vista%202) by Rtings
 - [Jaybird Vista](./crinacle/harman_in-ear_2019v2/Jaybird%20Vista) by Crinacle
 - [Jaybird Vista](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20Vista) by Rtings
 - [Jaybird X2](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20X2) by Rtings
@@ -2613,6 +2619,8 @@ from the same source.
 - [JBL Synchros S700](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/JBL%20Synchros%20S700) by Reference Audio Analyzer, HDM-X
 - [JBL T150A](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/JBL%20T150A) by Reference Audio Analyzer
 - [JBL T450BT](./rtings/rtings_harman_over-ear_2018/JBL%20T450BT) by Rtings
+- [JBL Tour One](./rtings/rtings_harman_over-ear_2018/JBL%20Tour%20One) by Rtings
+- [JBL Tour Pro+ TWS](./rtings/rtings_harman_in-ear_2019v2/JBL%20Tour%20Pro+%20TWS) by Rtings
 - [JBL TUNE 120TWS](./rtings/rtings_harman_in-ear_2019v2/JBL%20TUNE%20120TWS) by Rtings
 - [JBL Tune 125TWS](./rtings/rtings_harman_in-ear_2019v2/JBL%20Tune%20125TWS) by Rtings
 - [JBL TUNE 220TWS](./rtings/rtings_harman_in-ear_2019v2/JBL%20TUNE%20220TWS) by Rtings
@@ -3007,6 +3015,7 @@ from the same source.
 - [Massdrop Panda (active)](./crinacle/gras_43ag-7_harman_over-ear_2018/Massdrop%20Panda%20(active)) by Crinacle, GRAS 43AG-7
 - [Massdrop Panda (passive)](./crinacle/ears-711_harman_over-ear_2018/Massdrop%20Panda%20(passive)) by Crinacle, Ears-711
 - [Massdrop Panda](./oratory1990/harman_over-ear_2018/Massdrop%20Panda) by oratory1990
+- [Massdrop Panda](./rtings/rtings_harman_over-ear_2018/Massdrop%20Panda) by Rtings
 - [Massdrop Plus Universal IEM (sample 1)](./crinacle/harman_in-ear_2019v2/Massdrop%20Plus%20Universal%20IEM%20(sample%201)) by Crinacle
 - [Massdrop Plus Universal IEM (sample 2)](./crinacle/harman_in-ear_2019v2/Massdrop%20Plus%20Universal%20IEM%20(sample%202)) by Crinacle
 - [Massdrop Plus Universal IEM](./crinacle/harman_in-ear_2019v2/Massdrop%20Plus%20Universal%20IEM) by Crinacle
@@ -4071,6 +4080,7 @@ from the same source.
 - [Sennheiser PC38X (velour earpads)](./oratory1990/harman_over-ear_2018/Sennheiser%20PC38X%20(velour%20earpads)) by oratory1990
 - [Sennheiser PC38X](./crinacle/gras_43ag-7_harman_over-ear_2018/Sennheiser%20PC38X) by Crinacle, GRAS 43AG-7
 - [Sennheiser PC38X](./oratory1990/harman_over-ear_2018/Sennheiser%20PC38X) by oratory1990
+- [Sennheiser PC38X](./rtings/rtings_harman_over-ear_2018/Sennheiser%20PC38X) by Rtings
 - [Sennheiser PMX 100](./headphonecom/headphonecom_harman_over-ear_2018/Sennheiser%20PMX%20100) by Headphone.com
 - [Sennheiser PMX 680](./headphonecom/headphonecom_harman_in-ear_2019v2/Sennheiser%20PMX%20680) by Headphone.com
 - [Sennheiser PX 100 II](./headphonecom/headphonecom_harman_over-ear_2018/Sennheiser%20PX%20100%20II) by Headphone.com
@@ -4490,6 +4500,7 @@ from the same source.
 - [Sony WF-1000XM3](./crinacle/harman_in-ear_2019v2/Sony%20WF-1000XM3) by Crinacle
 - [Sony WF-1000XM3](./oratory1990/harman_in-ear_2019v2/Sony%20WF-1000XM3) by oratory1990
 - [Sony WF-1000XM3](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-1000XM3) by Rtings
+- [Sony WF-1000XM4](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-1000XM4) by Rtings
 - [Sony WF-SP700N](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-SP700N) by Rtings
 - [Sony WF-SP800N](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-SP800N) by Rtings
 - [Sony WF-XB700](./oratory1990/harman_in-ear_2019v2/Sony%20WF-XB700) by oratory1990
@@ -4700,6 +4711,7 @@ from the same source.
 - [SteelSeries Arctis 7X](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%207X) by Rtings
 - [SteelSeries Arctis 9](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%209) by Rtings
 - [SteelSeries Arctis 9X](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%209X) by Rtings
+- [SteelSeries Arctis Prime](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%20Prime) by Rtings
 - [SteelSeries Arctis Pro GameDAC](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%20Pro%20GameDAC) by Rtings
 - [SteelSeries Arctis Pro Wireless](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%20Pro%20Wireless) by Rtings
 - [SteelSeries Flux In-Ear](./innerfidelity/innerfidelity_harman_in-ear_2019v2/SteelSeries%20Flux%20In-Ear) by Innerfidelity
@@ -4957,6 +4969,7 @@ from the same source.
 - [Turtle Beach Elite Atlas](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Elite%20Atlas) by Rtings
 - [Turtle Beach Elite Pro 2 SuperAmp](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Elite%20Pro%202%20SuperAmp) by Rtings
 - [Turtle Beach Recon 200](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%20200) by Rtings
+- [Turtle Beach Recon 500](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%20500) by Rtings
 - [Turtle Beach Recon 50X](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%2050X) by Rtings
 - [Turtle Beach Recon 70](./rtings/rtings_harman_in-ear_2019v2/Turtle%20Beach%20Recon%2070) by Rtings
 - [Turtle Beach Stealth 300](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Stealth%20300) by Rtings

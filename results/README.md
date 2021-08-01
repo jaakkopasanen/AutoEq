@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 3393 headphone models covered but if your headphone is missing you can create settings for
+This list has 3403 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -319,6 +319,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Anker Soundcore Life Q30](./rtings/rtings_harman_over-ear_2018/Anker%20Soundcore%20Life%20Q30)
 - [Anker Soundcore Life Q30 (ANC off)](./oratory1990/harman_over-ear_2018/Anker%20Soundcore%20Life%20Q30%20(ANC%20off))
 - [Anker Soundcore Life Q30 (ANC on)](./oratory1990/harman_over-ear_2018/Anker%20Soundcore%20Life%20Q30%20(ANC%20on))
+- [Anker Soundcore Life Q35](./rtings/rtings_harman_over-ear_2018/Anker%20Soundcore%20Life%20Q35)
 - [Anker SoundCore Space NC](./rtings/rtings_harman_over-ear_2018/Anker%20SoundCore%20Space%20NC)
 - [Anker Soundcore Spirit X](./rtings/rtings_harman_in-ear_2019v2/Anker%20Soundcore%20Spirit%20X)
 - [Anker Zolo Liberty+](./rtings/rtings_harman_in-ear_2019v2/Anker%20Zolo%20Liberty+)
@@ -637,6 +638,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Beats Studio](./innerfidelity/innerfidelity_harman_over-ear_2018/Beats%20Studio)
 - [Beats Studio 2 2014](./innerfidelity/innerfidelity_harman_over-ear_2018/Beats%20Studio%202%202014)
 - [Beats Studio 2 Bluetooth](./innerfidelity/innerfidelity_harman_over-ear_2018/Beats%20Studio%202%20Bluetooth)
+- [Beats Studio Buds](./rtings/rtings_harman_in-ear_2019v2/Beats%20Studio%20Buds)
 - [Beats Studio Wireless](./rtings/rtings_harman_over-ear_2018/Beats%20Studio%20Wireless)
 - [Beats Studio3 Wireless](./rtings/rtings_harman_over-ear_2018/Beats%20Studio3%20Wireless)
 - [Beats Tour](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Beats%20Tour)
@@ -950,6 +952,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Corsair HS75 XB WIRELESS](./rtings/rtings_harman_over-ear_2018/Corsair%20HS75%20XB%20WIRELESS)
 - [Corsair Virtuoso RGB Wireless](./rtings/rtings_harman_over-ear_2018/Corsair%20Virtuoso%20RGB%20Wireless)
 - [Corsair Virtuoso RGB Wireless SE](./rtings/rtings_harman_over-ear_2018/Corsair%20Virtuoso%20RGB%20Wireless%20SE)
+- [Corsair VIRTUOSO RGB Wireless XT](./rtings/rtings_harman_over-ear_2018/Corsair%20VIRTUOSO%20RGB%20Wireless%20XT)
 - [Corsair Void Elite](./rtings/rtings_harman_over-ear_2018/Corsair%20Void%20Elite)
 - [Corsair Void PRO RGB](./rtings/rtings_harman_over-ear_2018/Corsair%20Void%20PRO%20RGB)
 - [Corsair Void RGB](./rtings/rtings_harman_over-ear_2018/Corsair%20Void%20RGB)
@@ -1658,6 +1661,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [HIFIMAN Sundara](./oratory1990/harman_over-ear_2018/HIFIMAN%20Sundara)
 - [HIFIMAN Sundara (2020 revised earpads)](./oratory1990/harman_over-ear_2018/HIFIMAN%20Sundara%20(2020%20revised%20earpads))
 - [HIFIMAN Sundara 2018](./rtings/rtings_harman_over-ear_2018/HIFIMAN%20Sundara%202018)
+- [HIFIMAN Sundara 2020](./rtings/rtings_harman_over-ear_2018/HIFIMAN%20Sundara%202020)
 - [HIFIMAN Susvara](./oratory1990/harman_over-ear_2018/HIFIMAN%20Susvara)
 - [HIFIMAN TWS600](./crinacle/harman_in-ear_2019v2/HIFIMAN%20TWS600)
 - [HiSoundAudio BA-100](./innerfidelity/innerfidelity_harman_in-ear_2019v2/HiSoundAudio%20BA-100)
@@ -1808,6 +1812,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Jaybird Tarah](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20Tarah)
 - [Jaybird Tarah Pro](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20Tarah%20Pro)
 - [Jaybird Vista](./crinacle/harman_in-ear_2019v2/Jaybird%20Vista)
+- [Jaybird Vista 2](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20Vista%202)
 - [Jaybird X2](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20X2)
 - [Jaybird X3](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20X3)
 - [Jaybird X4](./rtings/rtings_harman_in-ear_2019v2/Jaybird%20X4)
@@ -1872,6 +1877,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [JBL Synchros S700](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/JBL%20Synchros%20S700)
 - [JBL T150A](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/JBL%20T150A)
 - [JBL T450BT](./rtings/rtings_harman_over-ear_2018/JBL%20T450BT)
+- [JBL Tour One](./rtings/rtings_harman_over-ear_2018/JBL%20Tour%20One)
+- [JBL Tour Pro+ TWS](./rtings/rtings_harman_in-ear_2019v2/JBL%20Tour%20Pro+%20TWS)
 - [JBL TUNE 120TWS](./rtings/rtings_harman_in-ear_2019v2/JBL%20TUNE%20120TWS)
 - [JBL Tune 125TWS](./rtings/rtings_harman_in-ear_2019v2/JBL%20Tune%20125TWS)
 - [JBL TUNE 220TWS](./rtings/rtings_harman_in-ear_2019v2/JBL%20TUNE%20220TWS)
@@ -3203,6 +3210,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Sony WF-1000X](./oratory1990/harman_in-ear_2019v2/Sony%20WF-1000X)
 - [Sony WF-1000XM3](./oratory1990/harman_in-ear_2019v2/Sony%20WF-1000XM3)
 - [Sony WF-1000XM3 NC](./crinacle/harman_in-ear_2019v2/Sony%20WF-1000XM3%20NC)
+- [Sony WF-1000XM4](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-1000XM4)
 - [Sony WF-SP700N](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-SP700N)
 - [Sony WF-SP800N](./rtings/rtings_harman_in-ear_2019v2/Sony%20WF-SP800N)
 - [Sony WF-XB700](./oratory1990/harman_in-ear_2019v2/Sony%20WF-XB700)
@@ -3361,6 +3369,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [SteelSeries Arctis 7X](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%207X)
 - [SteelSeries Arctis 9](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%209)
 - [SteelSeries Arctis 9X](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%209X)
+- [SteelSeries Arctis Prime](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%20Prime)
 - [SteelSeries Arctis Pro GameDAC](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%20Pro%20GameDAC)
 - [SteelSeries Arctis Pro Wireless](./rtings/rtings_harman_over-ear_2018/SteelSeries%20Arctis%20Pro%20Wireless)
 - [SteelSeries Flux In-Ear](./innerfidelity/innerfidelity_harman_in-ear_2019v2/SteelSeries%20Flux%20In-Ear)
@@ -3587,6 +3596,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Turtle Beach Elite Atlas Aero](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Elite%20Atlas%20Aero)
 - [Turtle Beach Elite Pro 2 SuperAmp](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Elite%20Pro%202%20SuperAmp)
 - [Turtle Beach Recon 200](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%20200)
+- [Turtle Beach Recon 500](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%20500)
 - [Turtle Beach Recon 50X](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%2050X)
 - [Turtle Beach Recon 70](./rtings/rtings_harman_in-ear_2019v2/Turtle%20Beach%20Recon%2070)
 - [Turtle Beach Stealth 300](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Stealth%20300)
