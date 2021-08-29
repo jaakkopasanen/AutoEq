@@ -46,7 +46,7 @@ class Oratory1990Crawler(Crawler):
 
         document = self.get_beautiful_soup('https://www.reddit.com/r/oratory1990/wiki/index/list_of_presets')
         urls = {}
-        table_header = document.find(id='wiki_full_list.3A')
+        table_header = document.find(id='wiki_full_list_of_eq_settings.3A')
         if table_header is None:
             raise RedditCrawlFailed('Could not read data in Reddit.')
         tbody = table_header.parent.find('table').find('tbody')
