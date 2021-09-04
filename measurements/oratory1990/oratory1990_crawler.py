@@ -58,16 +58,8 @@ class Oratory1990Crawler(Crawler):
             # Parse cells
             manufacturer = cells[0].text.strip() if cells[0].text.strip() != '-' else manufacturer
             model = cells[1].text.strip() if cells[1].text.strip() != '-' else model
-            notes = cells[2].text.strip()
             url = cells[2].find('a')['href'].replace('?dl=0', '?dl=1')
-
-            # Find target curve name
-            target = re.search(r'(Harman AE/OE|Harman IE|oratory1990)', notes)
-            if not target:
-                # Skip all but Harman target results
-                continue
-            target = target[0]  # First match
-            notes = notes.replace(target, '').strip()  # Remove target from the notes
+            notes = cells[3].text.strip()
 
             words = [x.strip().lower() for x in notes.split()]
             if bool([x for x in ['band', 'eq', 'setting', 'crinacle', 'adi-2'] if x in words]):
@@ -81,7 +73,7 @@ class Oratory1990Crawler(Crawler):
                 urls[false_name] = url
 
         # Manual additions which have not been added to the list yet
-        urls['Avantone Planar'] = 'https://www.dropbox.com/s/o867ox65g124mp1/Avantone%20Planar.pdf?dl=1'
+        #urls['Avantone Planar'] = 'https://www.dropbox.com/s/o867ox65g124mp1/Avantone%20Planar.pdf?dl=1'
 
         return urls
 

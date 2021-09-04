@@ -8,11 +8,15 @@ false_name	true_name	form
 Adam SP-5	Adam SP-5	onear
 Advanced GT-R	Advanced GT-R	onear
 AIAIAI TMA-2 HD Wireless	Aiaiai TMA-2 HD Wireless	onear
+AKG K240 mk.II	AKG K240 MKII	onear
 AKG K240 Sextett	AKG K240 Sextett	onear
 AKG K240 Sextett (Dekoni Choice Leather DT earpads)	AKG K240 Sextett (Dekoni Choice Leather DT earpads)	onear
+AKG K240 Studio	AKG K240 Studio	onear
+AKG K250	AKG K250	onear
 AKG K271 MK.II	AKG K271 MKII	onear
 AKG K280 Parabolic	AKG K280 Parabolic	onear
 AKG K3003	AKG K3003	inear
+AKG K361		ignore
 AKG K361 (variant 1)	AKG K361	onear
 AKG K361 (variant 2)	AKG K361 (sample 2)	ignore
 AKG K371	AKG K371	onear
@@ -20,10 +24,14 @@ AKG K371 (Brainwavz oval earpads)	AKG K371 (Brainwavz oval earpads)	onear
 AKG K553	AKG K553	onear
 AKG K601	AKG K601	onear
 AKG K601 (Dekoni Fenestrated Sheepskin Earpads)	AKG K601 (Dekoni fenestrated sheepskin earpads)	onear
+AKG K601 (Dekoni Sheepskin Earpads)	AKG K601 (Dekoni sheepskin earpads)	onear
+AKG K601 (K701 earpads)	AKG K601 (K701 earpads)	onear
 AKG K612	AKG K612	onear
+AKG K702	AKG K702	onear
 AKG K702 65th Anniversary Edition	AKG K702 65th Anniversary Edition	onear
 AKG K712	AKG K712	onear
 AKG K712 (Dekoni Fenestrated Sheepskin Earpads)	AKG K712 (Dekoni fenestrated sheepskin earpads)	onear
+AKG K712 (Dekoni Sheepskin Earpads)	AKG K712 (Dekoni sheepskin Earpads)	onear
 AKG K712 (RME ADI-2)		ignore
 AKG K7XX	AKG K7XX	onear
 AKG N20	AKG N20	inear
@@ -50,17 +58,22 @@ Audeze LCD-2 Classic	Audeze LCD-2 Classic	onear
 Audeze LCD-2 Closed Back	Audeze LCD-2 Closed Back	onear
 Audeze LCD-2 Closed-back	Audeze LCD-2 Closed Back	onear
 Audeze LCD-2 Fazor	Audeze LCD-2 Fazor	onear
+Audeze LCD-24	Audeze LCD-24	onear
 Audeze LCD-3	Audeze LCD-3	onear
 Audeze LCD-4	Audeze LCD-4	onear
 Audeze LCD-4z	Audeze LCD-4z	onear
 Audeze LCD-MX4	Audeze LCD-MX4	onear
 Audeze LCD-X	Audeze LCD-X	onear
+Audeze LCD-X (2021 revision)	Audeze LCD-X 2021	onear
+Audeze LCD-X (pre 2021)	Audeze LCD-X pre-2021	onear
 Audeze LCD-XC	Audeze LCD-XC	ignore
+Audeze LCD-XC (pre 2021)	Audeze LCD-XC pre-2021	onear
 Audeze Mobius (Default Preset)	Audeze Mobius (default preset)	onear
 Audeze Sine	Audeze SINE	onear
 Audeze Sine (Cipher Cable)	Audeze SINE (Cipher cable)	onear
 Audeze Sine (MSR-7 Earpads)	Audeze SINE (MSR-7 earpads)	onear
 Audio Technica ATH-A2000Z	Audio-Technica ATH-A2000Z	onear
+Audio Technica ATH-ADX5000	Audio-Technica ATH-ADX5000	onear
 Audio Technica ATH-M40x	Audio-Technica ATH-M40x	onear
 Audio Technica ATH-M50x	Audio-Technica ATH-M50x	onear
 Audio Technica ATH-M50x (Dekoni Sheepskin Earpads)	Audio-Technica ATH-M50x (Dekoni sheepskin earpads)	onear
@@ -69,9 +82,13 @@ Audio Technica ATH-M60x	Audio-Technica ATH-M60x	onear
 Audio Zenith PMx2 v1	Audio Zenith PMx2 v1	onear
 Audio Zenith PMx2 v2	Audio Zenith PMx2 v2	onear
 Audioquest Nighthawk	AudioQuest NightHawk	onear
+Audioquest Nighthawk (Brainwavz HM5 Hybrid Earpads)	AudioQuest NightHawk (Brainwavz HM5 hybrid earpads)	onear
+Audioquest Nighthawk (Shure SRH1540 Alcantara Earpads)	AudioQuest NightHawk (Shure SRH1540 alcantara earpads)	onear
+Audioquest Nightowl	AudioQuest NightOwl	onear
 AuGlamour F300 (preliminary)	AuGlamour F300	inear
 Aurorus Borealis	Aurorus Borealis	onear
 Austrian Audio Hi-X55	Austrian Audio Hi-X55	onear
+Austrian Audio Hi-X65	Austrian Audio Hi-X65	onear
 Avantone Planar	Avantone Planar	onear
 Bang & Olufsen H9	Bang & Olufsen Beoplay H9	onear
 Bang & Olufsen H95	Bang & Olufsen Beoplay H95	onear
@@ -102,10 +119,12 @@ Beyerdynamic DT770M	Beyerdynamic DT 770 M 80 Ohm	onear
 Beyerdynamic DT880 (fresh earpads)	Beyerdynamic DT 880 250 Ohm	onear
 Beyerdynamic DT880 (worn earpads)	Beyerdynamic DT 880 250 Ohm (worn earpads)	onear
 Beyerdynamic DT880 Black Edition	Beyerdynamic DT880 Black Edition	onear
+Beyerdynamic DT990	Beyerdynamic DT 990	onear
 Beyerdynamic DT990 (fresh earpads)	Beyerdynamic DT 990 250 Ohm	onear
 Beyerdynamic DT990 (worn earpads)	Beyerdynamic DT 990 250 Ohm (worn earpads)	onear
 Beyerdynamic DTX 350p	Beyerdynamic DTX 350p	onear
 Beyerdynamic ET1000	Beyerdynamic ET1000	onear
+Beyerdynamic Lagoon	Beyerdynamic Lagoon	onear
 Beyerdynamic Lagoon (preliminary)	Beyerdynamic Lagoon	onear
 Beyerdynamic MMX300	Beyerdynamic MMX 300	onear
 Beyerdynamic MMX300 (Dekoni Choice Leather Earpads)	Beyerdynamic MMX 300 (Dekoni Choice leather earpads)	onear
@@ -116,6 +135,7 @@ Beyerdynamic T5 3rd Generation	Beyerdynamic T5 3rd Generation	onear
 Beyerdynamic Xelento	Beyerdynamic Xelento	inear
 BGVP DMG	BGVP DMG	inear
 BGVP DMG (foam eartips)	BGVP DMG (foam eartips)	inear
+Blon BL-01	BLON BL-01	inear
 Blon BL-03	BLON BL-03	inear
 Bose Headphone 700 (preliminary)	Bose Noise Cancelling Headphones 700	onear
 Bose QC20	Bose QuietComfort 20	inear
@@ -128,6 +148,7 @@ Brainwavz M5	Brainwavz M5	inear
 Campfire Audio Andromeda	Campfire Audio Andromeda	inear
 Campfire Audio Cascade	Campfire Audio Cascade	ignore
 Campfire Audio Comet	Campfire Audio Comet	inear
+Campfire Audio Io	Campfire Audio Io	inear
 Campfire Audio Io (preliminary)	Campfire Audio Io	inear
 Campfire Audio Polaris	Campfire Audio Polaris	inear
 Campfire Audio Vega (Foam Eartips)	Campfire Audio Vega (Foam Eartips)	inear
@@ -143,11 +164,17 @@ Dan Clark Audio Aeon 2 Closed (preliminary)	Dan Clark Audio Aeon 2 Closed	onear
 Dan Clark Audio Aeon 2 Noire	Dan Clark Audio Aeon 2 Noire	onear
 Dan Clark Audio Aeon 2 Open	Dan Clark Audio Aeon 2 Open	onear
 Dan Clark Audio Aeon Closed RT	Dan Clark Audio Aeon Closed RT	onear
+Dan Clark Audio Aeon Flow Closed	Dan Clark Audio Aeon Flow Closed	onear
+Dan Clark Audio Aeon Open	Dan Clark Audio Aeon Open	onear
 Dan Clark Audio Aeon X Open	Dan Clark Audio Aeon X Open	onear
 Dan Clark Audio Ether 2	Dan Clark Audio Ether 2	onear
+Dan Clark Audio Ether C Flow	Dan Clark Audio Ether C Flow	onear
 Dan Clark Audio Ether C Flow 1.1	Dan Clark Audio Ether C Flow 1.1	onear
+Dan Clark Audio Ether CX	Dan Clark Audio Ether CX	onear
+Dan Clark Audio Ether Flow	Dan Clark Audio Ether Flow	onear
 Denon AH-D7200	Denon AH-D7200	onear
 Denon AH-D9200	Denon AH-D9200	onear
+Drop + THX Panda	MPanda	onear
 Drop + THX Panda (pre-production / review version)	Massdrop Panda	onear
 Drop + THX Panda (prototype)		ignore
 Dunu DK-3001 Pro	Dunu DK-3001 Pro	ignore
@@ -166,15 +193,19 @@ Fiio F3	FiiO F3	inear
 Fiio FA7	FiiO FA7	inear
 Fiio FA9	FiiO FA9	inear
 Fiio FH1	FiiO FH1	inear
+Fiio FH3	FiiO FH3	inear
 Fiio FH5	FiiO FH5	inear
 Final Audio A8000	Final Audio A8000	inear
 Final Audio D8000 Pro Edition	Final Audio D8000 Pro Edition	onear
 Final Audio E1000	Final Audio E1000	inear
+Final Audio E3000	Final Audio E3000	inear
 Final Audio E4000	Final Audio E4000	inear
 Final Audio E500	Final Audio E500	inear
 Final Audio E5000	Final Audio E5000	inear
+Final Audio F3100	Final Audio F3100	inear
 Final Audio Heaven IV	Final Audio Heaven IV	inear
 Final Audio Heaven V	Final Audio Heaven V	inear
+Focal Celestee	Focal Celestee	onear
 Focal Clear	Focal Clear	onear
 Focal Elear	Focal Elear	onear
 Focal Elegia	Focal Elegia	onear
@@ -183,6 +214,8 @@ Focal Radiance	Focal Radiance	onear
 Focal Spirit Classic	Focal Spirit Classic	onear
 Focal Stellia	Focal Stellia	onear
 Focal Utopia	Focal Utopia	onear
+Focal Utopia (Dekoni Fenestrated Sheepskin Earpads)	Focal Utopia (Dekoni fenestrated Sheepskin Earpads)	onear
+Focal Utopia (Dekoni Sheepskin Earpads)	Focal Utopia (Dekoni sheepskin Earpads)	onear
 Focusrite HP60 (Scarlett Studio)	Focusrite HP60 (Scarlett Studio)	onear
 Fostex T-X0	Fostex T-X0	onear
 Fostex T60RP	Fostex T60RP	onear
@@ -194,6 +227,7 @@ Fostex TH900mk2	Fostex TH900mk2	onear
 Fostex TH909	Fostex TH909	onear
 Grado GT220	Grado GT220	inear
 Grado GW100	Grado GW100	onear
+Grado Hemp	Grado Hemp	onear
 Grado SR60e	Grado SR60e	onear
 HarmonicDyne Zeus	HarmonicDyne Zeus	onear
 HEDD Heddphone	HEDD HEDDphone	onear
@@ -203,6 +237,8 @@ Hifiman Ananda	HIFIMAN Ananda	onear
 Hifiman Arya	HIFIMAN Arya	onear
 Hifiman Deva (BT / Bluemini)	HIFIMAN Deva (wireless)	onear
 Hifiman Deva (wired)	HIFIMAN Deva (wired)	onear
+Hifiman Edition S (closed back)	HIFIMAN Edition S (closed back)	onear
+Hifiman Edition S (open back)	HIFIMAN Edition S (open back)	onear
 Hifiman Edition X	HIFIMAN Edition X	onear
 Hifiman Edition X V2	HIFIMAN Edition X V2	onear
 Hifiman Edition XX	HIFIMAN Edition XX	onear
@@ -212,14 +248,17 @@ Hifiman HE35X	HIFIMAN HE35X	onear
 Hifiman HE400i (2016)	HIFIMAN HE400i 2016	onear
 Hifiman HE400i (2020)	HIFIMAN HE400i 2020	onear
 Hifiman HE400i (preliminary)	HIFIMAN HE400i	onear
+Hifiman HE400se	HIFIMAN HE400se	onear
 Hifiman HE4XX	HIFIMAN HE4XX	onear
 Hifiman HE5XX	HIFIMAN HE5XX	onear
+Hifiman HE6	HIFIMAN HE6	onear
 Hifiman HE6se	HIFIMAN HE6se	onear
 Hifiman Jade II	HIFIMAN Jade II	onear
 Hifiman RE600S	HIFIMAN RE600S	inear
 Hifiman Shangri-La	HIFIMAN Shangri-La	onear
 Hifiman Sundara	HIFIMAN Sundara	onear
 Hifiman Sundara (2020 revised earpads)	HIFIMAN Sundara (2020 revised earpads)	onear
+Hifiman Sundara (pre 2020 earpad revision)	HIFIMAN Sundara (pre-2020 earpad revision)	onear
 Hifiman Susvara	HIFIMAN Susvara	onear
 HyperX Cloud Alpha	HyperX Cloud Alpha	onear
 Ikko OH-1	Ikko OH-1	ignore
@@ -243,10 +282,12 @@ Koss ESP/95X	Koss ESP95X	onear
 Koss ESP/95X (6 band parametric)	Massdrop x Koss ESP95X (6 band parametric)	ignore
 Koss ESP/95X (RME ADI-2 settin (midrange precision))		ignore
 Koss KSC75	Koss KSC75	onear
+Koss KSC75 (Diffuse-Field)		ignore
 Koss KSC75X (Yaxi earpads)	Koss KSC75X (Yaxi earpads)	onear
 Koss Porta Pro	Koss Porta Pro	onear
 Koss Porta Pro (Yaxi Earpads)	Koss Porta Pro (Yaxi earpads)	onear
 KZ ATE	KZ ATE	inear
+KZ EDSE	KZ EDSE	inear
 KZ ES4	KZ ES4	inear
 KZ ZS10	KZ ZS10	inear
 KZ ZS6	KZ ZS6	ignore
@@ -255,8 +296,11 @@ KZ ZS7 (preliminary)	KZ ZS7	inear
 KZ ZST	KZ ZST	inear
 Light Harmonic Mera	Light Harmonic Mera	inear
 Lindy HF-100	Lindy HF-100	onear
+Lioncast X55	Lioncast X55	onear
 Logitech G433	Logitech G433	onear
 Logitech G930	Logitech G930	onear
+LZ Audio Z05A	LZ Audio Z05A	inear
+Mackie MP-360	Mackie MP-360	inear
 Massdrop Plus Universal IEM	Massdrop Plus Universal IEM	inear
 Master & Dynamic MH40	Master & Dynamic MH40	onear
 Mee Audio Pinnacle PX	MEE Audio Pinnacle PX	inear
@@ -264,6 +308,8 @@ Mee Audio Planamic IEM	MEE Audio Planamic	inear
 Meze 99 Classics	Meze 99 Classics	onear
 Meze 99 Classics (Brainwavz Memory Foam Hybrid Earpads)	Meze 99 Classics (Brainwavz memory foam hybrid earpads)	onear
 Meze 99 Noir	Meze 99 Noir	onear
+Meze Empyrean (Alcantara earpads)	Meze Empyrean (alcantara earpads)	onear
+Meze Empyrean (Leather earpads)	Meze Empyrean (leather earpads)	onear
 Meze Empyrean (microfiber earpads)	Meze Empyrean (microfiber earpads)	onear
 Meze Rai Penta	Meze Rai Penta	inear
 Meze Rai Solo	Meze Rai Solo	inear
@@ -301,6 +347,7 @@ Oppo Enco X	Oppo Enco X	inear
 Oppo PM2	Oppo PM2	onear
 Oppo PM3	Oppo PM3	onear
 Oppo PM3 (Aliexpress Earpads)	Oppo PM3 (Aliexpress earpads)	onear
+Oppo PM3 (Aliexpress Leather earpads)	Oppo PM3 (Aliexpress leather earpads)	onear
 Ora GraphenEQ	ORA GrapheneQ	onear
 Oriolus Finischi	Oriolus Finschi	ignore
 Panasonic RP-HJE	Panasonic RP-HJE120	inear
@@ -326,6 +373,7 @@ Raal SR1a (preliminary)	RAAL-requisite SR1a	onear
 RHA MA750	RHA MA750	ignore
 Ritmix RH-508	Ritmix RH-508	onear
 Rock Zircon	Rock Zircon	inear
+Rosson Audio RAD-0	Rosson Audio Design RAD-0	onear
 "Samsung ""EO-IC500 """"ANC Type-C"""""""	Samsung EO-IC500 ANC Type-C	inear
 "Samsung EO-IC500 ""ANC Type-C"""	Samsung EO-IC500 ANC Type-C	inear
 Samsung EO-IG955 (AKG)	Samsung EO-IG955 (AKG)	inear
@@ -340,12 +388,17 @@ Sennheiser CX2.00	Sennheiser CX 2.00	inear
 Sennheiser CX3.00	Sennheiser CX 3.00	inear
 Sennheiser G4ME ONE	Sennheiser GAME ONE	onear
 Sennheiser HD25-1 II	Sennheiser HD 25-1 II	onear
+Sennheiser HD25-1 II (bad seal)		ignore
+Sennheiser HD25-1 II (good seal)	Sennheiser HD25-1 II	onear
 Sennheiser HD518	Sennheiser HD 518	onear
 Sennheiser HD540 reference-II	Sennheiser HD 540 reference-II	onear
 Sennheiser HD555	Sennheiser HD 555	onear
 Sennheiser HD560S	Sennheiser HD 560S	onear
 Sennheiser HD569	Sennheiser HD 569	onear
+Sennheiser HD579	Sennheiser HD 579	onear
+Sennheiser HD580 precision	Sennheiser HD 580 precision	onear
 Sennheiser HD58X	Sennheiser HD 58X	onear
+Sennheiser HD58X (Brainwavz microsuede oval earpads)	Sennheiser HD 58X (Brainwavz microsuede oval earpads)	onear
 Sennheiser HD58X (Brainwavz oval earpads)	Sennheiser HD 58X (Brainwavz oval earpads)	onear
 Sennheiser HD598	Sennheiser HD 598	onear
 Sennheiser HD598CS	Sennheiser HD 598 CS	onear
@@ -367,6 +420,7 @@ Sennheiser IE4	Sennheiser IE 4	inear
 Sennheiser IE800	Sennheiser IE 800	inear
 Sennheiser IE800S	Sennheiser IE 800 S	inear
 Sennheiser IE80S	Sennheiser IE 80 S	inear
+Sennheiser Momentum 2 (Wireless)	Sennheiser Momentum 2.0 (wireless)	onear
 Sennheiser Momentum 2 True Wireless	Sennheiser Momentum True Wireless 2	inear
 Sennheiser Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	onear
 Sennheiser Momentum In-Ear	Sennheiser Momentum In-Ear	inear
@@ -376,6 +430,7 @@ Sennheiser PC37X	Sennheiser PC37X	onear
 Sennheiser PC38X	Sennheiser PC38X	onear
 Sennheiser PC38X (Default earpads)	Sennheiser PC38X	onear
 Sennheiser PC38X (velours earpads)	Sennheiser PC38X (velour earpads)	onear
+Sennheiser PX 100-II	Sennheiser PX 100 II	onear
 Sennheiser PXC550-II	Sennheiser PXC 550-II Wireless	onear
 Shuoer Tape	Shuoer Tape	inear
 Shure Aonic 50	Shure AONIC 50	onear
@@ -388,6 +443,7 @@ Shure SE535	Shure SE535	inear
 Shure SE846	Shure SE846	inear
 Shure SRH1540	Shure SRH1540	onear
 Shure SRH840	Shure SRH840 (sample 1)	onear
+Sivga Phoenix	Sivga Audio Phoenix	onear
 SoftEars Cerberus	SoftEars Cerberus	inear
 SoftEars RS10	SoftEars RS10	inear
 Sony IER-M7	Sony IER-M7	inear
@@ -449,6 +505,8 @@ Stax SR-L500 (Vesper Earpads)	Stax SR-L500 (Vesper earpads)	onear
 Stax SR-L700	Stax SR-L700	onear
 Stax SR-L700 (blu-tac mod)	Stax SR-L700 (blu-tac mod)	onear
 Superlux HD-651	Superlux HD 651	onear
+Superlux HD-660	Superlux HD 660	onear
+Superlux HD-660 Pro 150 Ohm	Superlux HD 660 Pro 150 Ohm	onear
 Superlux HD-662F	Superlux HD 662F	onear
 Superlux HD-662F (Brainwavz round XL pleather earpads)	Superlux HD 662F (Brainwavz round XL pleather earpads)	onear
 Superlux HD-668B (stock earpads)	Superlux HD 668B	onear
@@ -458,6 +516,7 @@ Superlux HD-681 (velours earpads)	Superlux HD 681 (velour earpads)	onear
 Superlux HD-681B (Brainwavz round hybrid earpads)	Superlux Hd 681B (Brainwavz round hybrid earpads)	onear
 Superlux HD-681B (pleather earpads)	Superlux HD 681B (pleather earpads)	onear
 Superlux HD-681B (velours earpads)	Superlux HD 681B (velour earpads)	onear
+Takstar Pro 82	Takstar Pro 82	onear
 Teufel Real Z	Teufel Real Z	onear
 TFZ Galaxy T2	TFZ T2 Galaxy	inear
 Tin Audio P1	Tin HiFi P1	inear
@@ -468,7 +527,9 @@ Tin Audio T2 Plus	Tin HiFi T2 Plus	inear
 Tin Audio T2 Pro	Tin HiFi T2 Pro	ignore
 Tin Audio T3	Tin HiFi T3	inear
 Tin Audio T4	Tin HiFi T4	ignore
+Ultimate Ears Reference Monitor	Ultimate Ears Reference Monitor	inear
 Ultrasone Edition 15	Ultrasone Edition 15	onear
+Valco VMK20	Valco VMK20	onear
 Verum One	Verum One	onear
 Verum One (leather earpads)	Verum One (leather earpads)	onear
 Verum One (ZMF Ori earpads)	Verum One (ZMF Ori earpads)	onear
