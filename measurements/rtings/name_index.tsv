@@ -104,6 +104,7 @@ Audio-Technica ATH-M30x	Audio-Technica ATH-M30x	onear
 Audio-Technica ATH-M40x	Audio-Technica ATH-M40x	onear
 Audio-Technica ATH-M50x	Audio-Technica ATH-M50x	onear
 Audio-Technica ATH-M50xBT	Audio-Technica ATH-M50xBT	onear
+Audio-Technica ATH-M50xBT2 Wireless	Audio-Technica ATH-M50xBT2	onear
 Audio-Technica ATH-M60x	Audio-Technica ATH-M60x	onear
 Audio-Technica ATH-M70x	Audio-Technica ATH-M70x	onear
 Audio-Technica ATH-MSR7NC	Audio-Technica ATH-MSR7NC	onear
@@ -228,6 +229,7 @@ Corsair HS70 Bluetooth	Corsair HS70 Bluetooth	onear
 Corsair HS70 Wireless	Corsair HS70 Wireless	onear
 Corsair HS75 XB WIRELESS	Corsair HS75 XB WIRELESS	onear
 Corsair HS75 XB WIRELESS Gaming Headset	Corsair HS75 XB WIRELESS	onear
+Corsair HS80 RGB WIRELESS	Corsair HS80 RGB WIRELESS	onear
 Corsair Virtuoso RGB Wireless	Corsair Virtuoso RGB Wireless	onear
 Corsair Virtuoso RGB Wireless SE	Corsair Virtuoso RGB Wireless SE	onear
 Corsair VIRTUOSO RGB Wireless XT	Corsair VIRTUOSO RGB Wireless XT	onear
@@ -444,6 +446,7 @@ JLab Audio JBuds Air Executive	JLab Audio JBuds Air Executive	inear
 JLab Audio JBuds Air Executive Truly Wireless	JLab Audio JBuds Air Executive	inear
 JLab Audio JBuds Air Truly Wireless	JLab Audio JBuds Air	inear
 Klipsch T5 II	Klipsch T5 II	inear
+Klipsch T5 II True Wireless ANC	Klipsch T5 II True Wireless ANC	inear
 Klipsch T5 II True Wireless Sport	Klipsch T5 II True Wireless Sport	inear
 Klipsch T5 True Wireless	Klipsch T5 True Wireless	inear
 Koss KSC75	Koss KSC75	onear
@@ -620,7 +623,7 @@ Samsung Galaxy Buds Plus	Samsung Galaxy Buds Plus	inear
 Samsung Galaxy Buds Pro	Samsung Galaxy Buds Pro	inear
 Samsung Galaxy Buds Pro Truly Wireless	Samsung Galaxy Buds Pro	inear
 Samsung Galaxy Buds Truly Wireless	Samsung Galaxy Buds	inear
-Samsung Galaxy Buds+ Truly Wireless	Samsung Galaxy Buds+	inear
+Samsung Galaxy Buds+ Truly Wireless	Samsung Galaxy Buds Plus	inear
 Samsung Gear IconX	Samsung Gear IconX	onear
 Samsung Gear IconX Truly Wireless	Samsung Gear IconX	onear
 Samsung Level On Wireless	Samsung Level On Wireless	onear
@@ -738,6 +741,7 @@ Sony MDR-XB950N1	Sony MDR-XB950N1	onear
 Sony MDR-ZX110NC	Sony MDR-ZX110NC	onear
 Sony MDR-ZX550BN	Sony MDR-ZX550BN	onear
 Sony MDR-ZX770BN	Sony MDR-ZX770BN	onear
+Sony MH755 (Fake)		ignore
 Sony PULSE 3D	Sony PULSE 3D	onear
 Sony PULSE 3D Wireless	Sony PULSE 3D	onear
 Sony WF-1000X	Sony WF-1000X	inear
@@ -883,6 +887,7 @@ V-MODA Crossfade II Wireless	V-MODA Crossfade II Wireless	onear
 V-MODA Crossfade M-100	V-MODA Crossfade M-100	onear
 Venstone X1	Venstone X1	inear
 Westone W40	Westone W40	inear
+Wyze Buds Pro Truly Wireless	Wyze Buds Pro	inear
 Wyze Noise-Cancelling Headphones Wireless	Wyze Noise-Cancelling Headphones	onear
 Xbox Wireless Headset	Xbox Wireless Headset	onear
 XFYRO xS2	XFYRO xS2	inear

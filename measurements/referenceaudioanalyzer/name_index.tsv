@@ -530,6 +530,7 @@ FiiO F9	FiiO F9	inear
 FiiO F9 PRO	FiiO F9 Pro	inear
 FiiO FA7	FiiO FA7	inear
 FiiO FB1	FiiO FB1	inear
+FiiO FD5	FiiO FD5	inear
 FiiO FH1s	FiiO FH1s	inear
 FiiO FH5	FiiO FH5	inear
 FiiO Jade Audio EW1	Jade Audio EW1	inear
@@ -964,8 +965,8 @@ MyST Gatling AT Aineri Mode		ignore
 MyST Izo-OS	MyST Izo-OS	onear
 MyST IzoEM-1		ignore
 MyST IzoPhones Jr-C	MyST IzoPhones Jr-C	onear
-MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30		ignore
+MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
@@ -1146,6 +1147,7 @@ Sennheiser HD 800	Sennheiser HD 800	onear
 Sennheiser HD 800 (american cushions)		ignore
 Sennheiser HD 800s	Sennheiser HD 800 S	onear
 Sennheiser HD7 DJ	Sennheiser HD 7 DJ	onear
+Sennheiser IE 300	Sennheiser IE 300	inear
 Sennheiser IE 400 Pro	Sennheiser IE 400 Pro	inear
 Sennheiser ie 80	Sennheiser IE 80	inear
 Sennheiser ie 800	Sennheiser IE 800	inear
@@ -1214,6 +1216,7 @@ Sivga Audio Phoenix (cushions 1)	Sivga Audio Phoenix (perforated leather earpads
 Sivga Audio Phoenix (cushions 2)	Sivga Audio Phoenix (hybrid earpads)	onear
 Skullcandy SK Pro	Skullcandy SK Pro	onear
 Smabat ST 10s	Smabat ST 10s	inear
+Smabat X1	Smabat X1	inear
 Snorry NM-1	Snorry NM-1	onear
 Snowy88 Hybrid 5	Snowy88 Hybrid 5	inear
 Snowy88 А6	Snowy88 А6	inear
@@ -1309,6 +1312,7 @@ Takstar HF 580	Takstar HF 580	onear
 Takstar Pro 80	Takstar Pro 80	onear
 Takstar PRO 82	Takstar Pro 80	onear
 Takstar TS-660	Takstar TS-660	onear
+Takstar TS-662	Takstar TS-662	onear
 TANCHJIM Blues	Tanchjim Blues	inear
 TANCHJIM Oxygen	Tanchjim Oxygen	inear
 Tansio Mirai TSMR-4 Pro	Tansio Mirai TSMR-4 Pro	inear
@@ -1390,6 +1394,7 @@ Ultrasone Signature DJ	Ultrasone Signature DJ	onear
 Ultrasone TIO	Ultrasone TIO	inear
 Ultrasone Zino	Ultrasone Zino	onear
 Unique Melody 3D Terminator	Unique Melody 3D Terminator	inear
+Urbanears Plattan 2	Urbanears Plattan 2	onear
 Urbanears Plattan 2 Bluetooth	Urbanears Plattan 2 Bluetooth	onear
 V-Moda LP	V-MODA Crossfade LP	onear
 V-Moda M 80	V-MODA Crossfade M-80	onear
@@ -1430,10 +1435,10 @@ Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
-Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
+Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear
 Whizzer TP1 (closed vent)	Whizzer TP1 (closed vent)	inear
 Whizzer TP1s	Whizzer TP1s	inear
