@@ -124,7 +124,7 @@ preference scoring developed by Sean Olive et al.
 | [Koss KSC75X (Yaxi arpads)](./oratory1990/harman_over-ear_2018/Koss%20KSC75X%20(Yaxi%20arpads))                                                                                    |      78 |       2.36 |    0.44 |
 | [ORA GrapheneQ](./oratory1990/harman_over-ear_2018/ORA%20GrapheneQ)                                                                                                                |      78 |       2.91 |   -0.01 |
 | [Sennheiser HD 650](./oratory1990/harman_over-ear_2018/Sennheiser%20HD%20650)                                                                                                      |      78 |       2.37 |   -0.4  |
-| [T|A Solitaire P](./oratory1990/harman_over-ear_2018/T|A%20Solitaire%20P)                                                                                                          |      78 |       2.25 |   -0.55 |
+| [T&#124;A Solitaire P](./oratory1990/harman_over-ear_2018/T&#124;A%20Solitaire%20P)                                                                                                |      78 |       2.25 |   -0.55 |
 | [Focal Elear (Utopia earpads)](./crinacle/gras_43ag-7_harman_over-ear_2018/Focal%20Elear%20(Utopia%20earpads))                                                                     |      77 |       2.54 |   -0.34 |
 | [Fostex TH7](./crinacle/gras_43ag-7_harman_over-ear_2018/Fostex%20TH7)                                                                                                             |      77 |       2.51 |   -0.38 |
 | [HIFIMAN HE-5](./crinacle/gras_43ag-7_harman_over-ear_2018/HIFIMAN%20HE-5)                                                                                                         |      77 |       2.82 |    0.12 |
@@ -437,7 +437,7 @@ preference scoring developed by Sean Olive et al.
 | [Clariar i640](./crinacle/harman_in-ear_2019v2/Clariar%20i640)                                                                                     |      75 |       1.88 |   -0.51 |           1.52 |
 | [FiiO FH5s](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s)                                                                                           |      75 |       2.01 |    0.34 |           1.5  |
 | [FiiO FH5s (bass switch on)](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(bass%20switch%20on))                                                   |      75 |       2.21 |    0.01 |           1.74 |
-| [FiiO FH5s (mid switch on)](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(mid%20switch%20on)                                                      |      75 |       2    |    0.32 |           1.59 |
+| [FiiO FH5s (mid switch on)](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(mid%20switch%20on))                                                     |      75 |       2    |    0.32 |           1.59 |
 | [Neusonik direm E3](./crinacle/harman_in-ear_2019v2/Neusonik%20direm%20E3)                                                                         |      75 |       1.72 |   -0.71 |           1.59 |
 | [Oriolus Isabellae](./crinacle/harman_in-ear_2019v2/Oriolus%20Isabellae)                                                                           |      75 |       2.14 |    0.11 |           1.66 |
 | [Tanchjim Prism](./crinacle/harman_in-ear_2019v2/Tanchjim%20Prism)                                                                                 |      75 |       2.04 |   -0.4  |           1.5  |
