@@ -437,7 +437,7 @@ preference scoring developed by Sean Olive et al.
 | [Clariar i640](./crinacle/harman_in-ear_2019v2/Clariar%20i640)                                                                                     |      75 |       1.88 |   -0.51 |           1.52 |
 | [FiiO FH5s](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s)                                                                                           |      75 |       2.01 |    0.34 |           1.5  |
 | [FiiO FH5s (bass switch on)](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(bass%20switch%20on))                                                   |      75 |       2.21 |    0.01 |           1.74 |
-| [FiiO FH5s (mid switch on](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(mid%20switch%20on)                                                       |      75 |       2    |    0.32 |           1.59 |
+| [FiiO FH5s (mid switch on)](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(mid%20switch%20on)                                                      |      75 |       2    |    0.32 |           1.59 |
 | [Neusonik direm E3](./crinacle/harman_in-ear_2019v2/Neusonik%20direm%20E3)                                                                         |      75 |       1.72 |   -0.71 |           1.59 |
 | [Oriolus Isabellae](./crinacle/harman_in-ear_2019v2/Oriolus%20Isabellae)                                                                           |      75 |       2.14 |    0.11 |           1.66 |
 | [Tanchjim Prism](./crinacle/harman_in-ear_2019v2/Tanchjim%20Prism)                                                                                 |      75 |       2.04 |   -0.4  |           1.5  |
