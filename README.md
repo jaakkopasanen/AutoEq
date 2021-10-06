@@ -33,8 +33,23 @@ language or even Microsoft Excel.
 ## Usage
 AutoEQ produces settings for basically all types of equalizer apps.
 
+### Convolution Equalizers
+Convolution equalizer is the most powerful type of equalizer software. These equalizers allow extremly precise control
+over the frequency response and the results are the same on all devices and platforms when using the same FIR filter.
+Convolution equalizer is the preferred way to use AutoEq results.
+
+AutoEq supports convolution equalizers with FIR filters as WAV files and with EqualizerAPO's GraphicEQ filter type. The
+default results contain FIR filters for both 44.1 kHz and 48 kHz sampling rates. Other sampling rates are supported but
+not given in the default results. EqualizerAPO's GraphicEQ works with any sampling rate.
+
+To use the FIR filters, download the appropriate WAV file and import it to the EQ software of your choice. Please keep
+in mind that not all EQ softwares support convolution. Some equalizers can load multiple FIR filters at the same time.
+Download both WAV files, create a Zip file containing both and load the Zip file to for example Roon.
+
+See [EqualizerApo](#EqualizerAPO) for instructions on how to use the GraphicEQ.
+
 ### Parametric Equalizers
-Parametric equalizers have filters with user adjustable gain,  center frequency and quality Q. Keep in mind that
+Parametric equalizers have filters (bands) with user adjustable gain,  center frequency and quality Q. Keep in mind that
 parametric eq accuracy depends on the number of filters available. Usually 10 filters produce very good
 results but as little as 5 can be good enough. Keep in mind that different parametric equalizers will produce different
 outcomes with the same parameter values. Parameters produced by AutoEq are equal with EqualizerAPO using 48 kHz sampling
@@ -61,13 +76,6 @@ filter parameters look like this:
 | Peaking | 2237 Hz  | 1.94 | -4.6 dB |
 | Peaking | 6093 Hz  | 2.26 | -4.7 dB |
 | Peaking | 8251 Hz  | 3.71 | -2.9 dB |
-
-### Convolution Equalizers
-Convolution equalizer settings are finite impulse responses (FIR filters) and are the most advanced kind of (LTI)
-filters. FIR filters make it possible to produce linear phase filters which some may prefer though generally minimum
-phase filters are recommended. Convolution equalizer settings are provided as WAV files. Pre-computed results include
-impulse responses with 44.1 kHz and 48 kHz but other sampling rates are supported as well. Import the WAV file with
-correct sampling frequency into the software to use convolution equalizer.
 
 ### Fixed Band Equalizers
 Fixed band eq is more commonly known as graphic equalizer but in order not to confuse with EqualizerAPO GraphicEQ it is
@@ -97,8 +105,9 @@ Fixed band equalizer settings look like this:
 | Peaking | 16000 Hz | 1.41 | -7.5 dB |
 
 ### Windows
-has [EqualizerAPO](#plain-equalizerapo), [Peace](#peace) and many media players with
-parametric equalizers such as [Roon](https://roonlabs.com/) and [Foobar2000](https://www.foobar2000.org/).
+has [EqualizerAPO](#plain-equalizerapo), [Peace](#peace) and many media players with parametric equalizers such as
+[Neutron](https://www.microsoft.com/en-us/p/neutron-music-player/9nblggh4vp2h?activetab=pivot:overviewtab),
+[Roon](https://roonlabs.com/) and [Foobar2000](https://www.foobar2000.org/).
 
 #### EqualizerAPO
 It's possible to use plain [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) and edit configuration file in
@@ -134,15 +143,20 @@ option for newer Androids (version 9 and up) but older devices have a built-in f
 but the center frequencies and Q values vary so might need to [produce your own results](#equalizing).
 
 #### Wavelet
-[Wavelet](https://play.google.com/store/apps/details?id=com.pittvandewitt.wavelet) is an Android app which comes with all the
-AutoEq eq profiles built in. The app works with all music apps so is closest to system-wide equalizer one can have on
-Android without rooting. The equalizer built into this app is very powerful and can represent the AutoEq profiles very
-accurately. There is also an option to tune the sound with graphic equalizer. Wavelet has the best Bluetooth device compatibility of all the tested eq apps on Android.
+[Wavelet](https://play.google.com/store/apps/details?id=com.pittvandewitt.wavelet) is an Android app which comes with
+all the AutoEq eq profiles built in. The app works with all music apps so is closest to system-wide equalizer one can
+have on Android without rooting. The equalizer built into this app is very powerful and can represent the AutoEq
+profiles very accurately. There is also an option to tune the sound with graphic equalizer. Wavelet has the best
+Bluetooth device compatibility of all the tested eq apps on Android.
 
 The main functionalities of Wavelet are free (including AutoEq profiles and graphic eq) but some extra features can be 
 unlocked with an in-app purchase.
 
 ![Wavelet](https://i.imgur.com/UGiBwFX.png)
+
+#### Neutron
+[Neutron](https://play.google.com/store/apps/details?id=com.neutroncode.mp) is a music player with parametric equalizer
+and comes with all of the AutoEq profiles built in but is not free.
 
 #### USB Audio Player PRO
 [USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is an Android app
@@ -174,11 +188,11 @@ with impulse response (WAV) files. For rooted users this is the best option.
 Viper4Android. It provides a system wide solution, has a convolution engine but requires rooting.
 
 ### Linux
-#### PulseEffects
-[PulseEffects](https://github.com/wwmm/pulseeffects) is a PulseAudio (Linux) module with wide variety of signal
-processing tools including parametric equalizer. Load eq settings by clicking the top center cog & clicking
-*Import ACO Presets* button and select the ParametricEQ.txt file.
-Pre-amp can be adjusted with the input slider.
+#### PulseEffects / EasyEffects
+[PulseEffects / EasyEffects](https://github.com/wwmm/easyeffects) is a Linux module with wide variety of signal
+processing tools including parametric equalizer. From version 5.0.0 onwards, PulseEffects was renamed to EasyEffects and
+uses PipeWire instead of PulseAudio as backend. Load eq settings by clicking the top center cog & clicking
+*Import ACO Presets* button and select the ParametricEQ.txt file.  Pre-amp can be adjusted with the input slider.
 For versions prior to v4.8.0, adjust filter parameters by clicking the cog button on each filter
 and set type to "Bell" and adjust the gain with the slider. Number of filters can be changed by clicking the screwdriver
 and wrench button.
@@ -211,24 +225,34 @@ expensive than Voxengo but might be easier to install and use.
 Tutorials:
 - [Apple AU Lab + Soundflower + AUNBandEQ Tutorial](https://www.superbestaudiofriends.org/index.php?threads/systemwide-eq-on-mac.7435/) [AU Lab Permission Issue](https://discussions.apple.com/thread/8552731)
 
-#### eqMac2
-[eqMac2](https://bitgapp.com/eqmac/) is a free system wide 31-band equalizer on Mac. AutoEQ results don't have 31 band
-presets but can be created by passing parameters
-
-```
---fixed_band_eq --q=4.47 --fc=20,25,31.5,40,50,63,80,100,125,160,200,250,315,400,500,630,800,1000,1250,1600,2000,2500,3150,4000,5000,6300,8000,10000,12500,16000,20000
-```
-
+#### eqMac
+[eqMac](https://eqmac.app) is a Free & [Open Source](https://github.com/bitgapp/eqmac) System Wide equalizer for macOS.
+eqMac has a Free 10 Band EQ and an Unlimited Band EQ (paid) with built-in AutoEQ Integration! (Expert EQ)
+<p align="center">
+  <img width="512" src="https://raw.githubusercontent.com/bitgapp/eqMac/master/assets/screenshots/autoeq-promo.png"/>
+</p>
+  
 ### iOS
-[Contact me](#contact) if you know good solutions for iOS.
+iOS unfortunately doesn't allow system-wide equalizers, so the only options are either music players with built-in
+equalizer or [hardware solutions](#Hardware).
+
+#### Neutron
+[Neutron](https://apps.apple.com/app/neutron-music-player/id766858884) is a music player with parametric equalizer and
+comes with all of the AutoEq profiles built in but is not free.
 
 #### EQE
 [EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer on iOS but requires jailbreaking. Here
 are instructions on how to set it up: https://www.reddit.com/r/headphones/comments/dqbt81/psa_if_you_have_a_jailbroken_iphone_you_can/
 
 ### Hardware
-Some devices have built-in equalizers one of these is [Radsone EasStudio ES100](https://www.radsone.com/earstudio).
-ES100 is a Bluetooth DAC and amp with built-in 10 band equalizer. Since this is a hardware solution it will work with
+Some devices have built-in equalizers and since they do the processing in the device, they work with any source which
+can connect to the device.
+
+[Qudelix 5K](https://www.qudelix.com/products/qudelix-5k-dac-amp) is a portable DAC and amplifier
+with wired and Bluetooth connectivity and 10 band parametric equalizer.
+
+[Radsone EasStudio ES100](https://www.radsone.com/earstudio) is a Bluetooth DAC and amp with built-in 10 band
+equalizer. Since this is a hardware solution it will work with
 practically any source.
 
 ## Equalizing
@@ -307,129 +331,61 @@ python -m pip install -U -r requirements.txt
 
 ### Command Line Arguments
 ```
-usage: autoeq.py [-h] --input_dir INPUT_DIR [--output_dir OUTPUT_DIR]
-                 [--standardize_input] [--new_only]
-                 [--compensation COMPENSATION] [--equalize] [--parametric_eq]
-                 [--fixed_band_eq] [--fc FC] [--q Q] [--ten_band_eq]
-                 [--max_filters MAX_FILTERS] [--fs FS] [--bit_depth BIT_DEPTH]
-                 [--phase PHASE] [--f_res F_RES] [--bass_boost BASS_BOOST]
-                 [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
-                 [--sound_signature SOUND_SIGNATURE] [--max_gain MAX_GAIN]
-                 [--treble_f_lower TREBLE_F_LOWER]
-                 [--treble_f_upper TREBLE_F_UPPER]
-                 [--treble_max_gain TREBLE_MAX_GAIN]
-                 [--treble_gain_k TREBLE_GAIN_K] [--show_plot]
+usage: autoeq.py [-h] --input_dir INPUT_DIR [--output_dir OUTPUT_DIR] [--standardize_input] [--new_only] [--compensation COMPENSATION] [--equalize] [--parametric_eq] [--fixed_band_eq] [--rockbox] [--fc FC] [--q Q]
+                 [--ten_band_eq] [--max_filters MAX_FILTERS] [--convolution_eq] [--fs FS] [--bit_depth BIT_DEPTH] [--phase PHASE] [--f_res F_RES] [--bass_boost BASS_BOOST] [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
+                 [--sound_signature SOUND_SIGNATURE] [--max_gain MAX_GAIN] [--treble_f_lower TREBLE_F_LOWER] [--treble_f_upper TREBLE_F_UPPER] [--treble_gain_k TREBLE_GAIN_K] [--show_plot]
 
 optional arguments:
   -h, --help            show this help message and exit
   --input_dir INPUT_DIR
-                        Path to input data directory. Will look for CSV files
-                        in the data directory and recursively in sub-
-                        directories.
+                        Path to input data directory. Will look for CSV files in the data directory and recursively in sub-directories.
   --output_dir OUTPUT_DIR
-                        Path to results directory. Will keep the same relative
-                        paths for files found in input_dir.
-  --standardize_input   Overwrite input data in standardized sampling and
-                        bias?
-  --new_only            Only process input files which don't have results in
-                        output directory.
+                        Path to results directory. Will keep the same relative paths for files found in input_dir.
+  --standardize_input   Overwrite input data in standardized sampling and bias?
+  --new_only            Only process input files which don't have results in output directory.
   --compensation COMPENSATION
-                        File path to CSV containing compensation (target)
-                        curve. Compensation is necessary when equalizing
-                        because all input data is raw microphone data. See
-                        "compensation", "innerfidelity/resources" and
+                        File path to CSV containing compensation (target) curve. Compensation is necessary when equalizing because all input data is raw microphone data. See "compensation", "innerfidelity/resources" and
                         "headphonecom/resources".
-  --equalize            Will run equalization if this parameter exists, no
-                        value needed.
-  --parametric_eq       Will produce parametric eq settings if this parameter
-                        exists, no value needed.
-  --fixed_band_eq       Will produce fixed band eq settings if this parameter
-                        exists, no value needed.
-  --fc FC               Comma separated list of center frequencies for fixed
-                        band eq.
-  --q Q                 Comma separated list of Q values for fixed band eq. If
-                        only one value is passed, it is used for all bands. Q
-                        value can be calculated from bandwidth in N octaves by
-                        Q = 2^(N/2)/(2^N-1).
-  --ten_band_eq         Shortcut parameter for activating standard ten band eq
-                        optimization.
+  --equalize            Will run equalization if this parameter exists, no value needed.
+  --parametric_eq       Will produce parametric eq settings if this parameter exists, no value needed.
+  --fixed_band_eq       Will produce fixed band eq settings if this parameter exists, no value needed.
+  --rockbox             Will produce a Rockbox .cfg file with 10 band eq settings if this parameter exists,no value needed.
+  --fc FC               Comma separated list of center frequencies for fixed band eq.
+  --q Q                 Comma separated list of Q values for fixed band eq. If only one value is passed it is used for all bands. Q value can be calculated from bandwidth in N octaves by Q = 2^(N/2)/(2^N-1).
+  --ten_band_eq         Shortcut parameter for activating standard ten band eq optimization.
   --max_filters MAX_FILTERS
-                        Maximum number of filters for parametric EQ. Multiple
-                        cumulative optimization runs can be done by giving
-                        multiple filter counts separated by "+". "5+5" would
-                        create 10 filters where the first 5 are usable
-                        independently from the rest 5 and the last 5 can only
-                        be used with the first 5. This allows to have multiple
-                        configurations for equalizers with different number of
-                        bands available. Not limited by default.
-  --fs FS               Sampling frequency for impulse response and parametric
-                        eq filters. Defaults to 44100.
+                        Maximum number of filters for parametric EQ. Multiple cumulative optimization runs can be done by giving multiple filter counts separated by "+". "5+5" would create 10 filters where the first 5 are
+                        usable independently from the rest 5 and the last 5 can only be used with the first 5. This allows to have muliple configurations for equalizers with different number of bands available. Not limited
+                        by default.
+  --convolution_eq      Will produce impulse response for convolution equalizers if this parameter exists, no value needed.
+  --fs FS               Sampling frequency in Hertz for impulse response and parametric eq filters. Single value or multiple values separated by commas eg 44100,48000. When multiple values are given only the first one will
+                        be used for parametric eq. Defaults to 44100.
   --bit_depth BIT_DEPTH
-                        Number of bits for every sample in impulse response.
-                        Defaults to 16.
-  --phase PHASE         Impulse response phase characteristic. "minimum",
-                        "linear" or "both". Defaults to "minimum"
-  --f_res F_RES         Frequency resolution for impulse responses. If this is
-                        20 then impulse response frequency domain will be
-                        sampled every 20 Hz. Filter length for impulse
-                        responses will be fs/f_res. Defaults to 10.
+                        Number of bits for every sample in impulse response. Defaults to 16.
+  --phase PHASE         Impulse response phase characteristic. "minimum", "linear" or "both". Defaults to "minimum"
+  --f_res F_RES         Frequency resolution for impulse responses. If this is 20 then impulse response frequency domain will be sampled every 20 Hz. Filter length for impulse responses will be fs/f_res. Defaults to 10.
   --bass_boost BASS_BOOST
-                        Bass boost shelf. Sub-bass frequencies will be boosted
-                        by this amount. Can be either a single value for a
-                        gain in dB or a comma separated list of three values
-                        for parameters of a low shelf filter, where the first
-                        is gain in dB, second is center frequency (Fc) in Hz
-                        and the last is quality (Q). When only a single value
-                        (gain) is given, default values for Fc and Q are used
-                        which are 100 Hz and 0.65, respectively. For example "
-                        --bass_boost=6" or "--bass_boost=9.5,150,0.69".
+                        Bass boost shelf. Sub-bass frequencies will be boosted by this amount. Can be either a single value for a gain in dB or a comma separated list of three values for parameters of a low shelf filter,
+                        where the first is gain in dB, second is center frequency (Fc) in Hz and the last is quality (Q). When only a single value (gain) is given, default values for Fc and Q are used which are 105.0 Hz and
+                        0.71, respectively. For example "--bass_boost=6" or "--bass_boost=9.5,150,0.69".
   --iem_bass_boost IEM_BASS_BOOST
-                        iem_bass_boost argument has been removed, use "--
-                        bass_boost" instead!
-  --tilt TILT           Target tilt in dB/octave. Positive value (upwards
-                        slope) will result in brighter frequency response and
-                        negative value (downwards slope) will result in darker
-                        frequency response. 1 dB/octave will produce nearly 10
-                        dB difference in desired value between 20 Hz and 20
-                        kHz. Tilt is applied with bass boost and both will
-                        affect the bass gain.
+                        iem_bass_boost argument has been removed, use "--bass_boost" instead!
+  --tilt TILT           Target tilt in dB/octave. Positive value (upwards slope) will result in brighter frequency response and negative value (downwards slope) will result in darker frequency response. 1 dB/octave will
+                        produce nearly 10 dB difference in desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both will affect the bass gain.
   --sound_signature SOUND_SIGNATURE
-                        File path to a sound signature CSV file. Sound
-                        signature is added to the compensation curve. Error
-                        data will be used as the sound signature target if the
-                        CSV file contains an error column and otherwise the
-                        raw column will be used. This means there are two
-                        different options for using sound signature: 1st is
-                        pointing it to a result CSV file of a previous run and
-                        the 2nd is to create a CSV file with just frequency
-                        and raw columns by hand (or other means). The Sound
-                        signature graph will be interpolated so any number of
-                        point at any frequencies will do, making it easy to
-                        create simple signatures with as little as two or
-                        three points.
-  --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain
-                        allows to equalize deeper dips in frequency response
-                        but will limit output volume if no analog gain is
-                        available because positive gain requires negative
-                        digital preamp equal to maximum positive gain.
-                        Defaults to 6.0.
+                        File path to a sound signature CSV file. Sound signature is added to the compensation curve. Error data will be used as the sound signature target if the CSV file contains an error column and
+                        otherwise the raw column will be used. This means there are two different options for using sound signature: 1st is pointing it to a result CSV file of a previous run and the 2nd is to create a CSV
+                        file with just frequency and raw columns by hand (or other means). The Sound signature graph will be interpolated so any number of point at any frequencies will do, making it easy to create simple
+                        signatures with as little as two or three points.
+  --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain allows to equalize deeper dips in frequency response but will limit output volume if no analog gain is available because positive gain requires
+                        negative digital preamp equal to maximum positive gain. Defaults to 6.0.
   --treble_f_lower TREBLE_F_LOWER
-                        Lower bound for transition region between normal and
-                        treble frequencies. Treble frequencies can have
-                        different max gain and gain K. Defaults to 6000.0.
+                        Lower bound for transition region between normal and treble frequencies. Treble frequencies can have different max gain and gain K. Defaults to 6000.0.
   --treble_f_upper TREBLE_F_UPPER
-                        Upper bound for transition region between normal and
-                        treble frequencies. Treble frequencies can have
-                        different max gain and gain K. Defaults to 8000.0.
-  --treble_max_gain TREBLE_MAX_GAIN
-                        Maximum positive gain for equalization in the treble
-                        region. Defaults to 0.0.
+                        Upper bound for transition region between normal and treble frequencies. Treble frequencies can have different max gain and gain K. Defaults to 8000.0.
   --treble_gain_k TREBLE_GAIN_K
-                        Coefficient for treble gain, affects both positive and
-                        negative gain. Useful for disabling or reducing
-                        equalization power in the treble region. Defaults to 1.0.
-  --show_plot           Plot will be shown if this parameter exists, no value
-                        needed.
+                        Coefficient for treble gain, affects both positive and negative gain. Useful for disabling or reducing equalization power in treble region. Defaults to 1.0.
+  --show_plot           Plot will be shown if this parameter exists, no value needed.
 ```
 
 

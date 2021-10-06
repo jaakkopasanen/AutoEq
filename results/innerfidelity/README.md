@@ -138,7 +138,7 @@
 - [Bang & Olufsen Beoplay H6](./innerfidelity_harman_over-ear_2018/Bang%20&%20Olufsen%20Beoplay%20H6)
 - [Beats by Dr Dre Solo HD](./innerfidelity_harman_over-ear_2018/Beats%20by%20Dr%20Dre%20Solo%20HD)
 - [Beats Mixr 2014](./innerfidelity_harman_over-ear_2018/Beats%20Mixr%202014)
-- [Beats PowerBeats 2 Wireless](./innerfidelity_harman_over-ear_2018/Beats%20PowerBeats%202%20Wireless)
+- [Beats Powerbeats 2 Wireless](./innerfidelity_harman_over-ear_2018/Beats%20Powerbeats%202%20Wireless)
 - [Beats Pro](./innerfidelity_harman_over-ear_2018/Beats%20Pro)
 - [Beats Solo (sample 1)](./innerfidelity_harman_over-ear_2018/Beats%20Solo%20(sample%201))
 - [Beats Solo (sample 2)](./innerfidelity_harman_over-ear_2018/Beats%20Solo%20(sample%202))

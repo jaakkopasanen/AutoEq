@@ -38,6 +38,8 @@ Abyss AB1266	Abyss AB-1266	onear
 ACS Emotion	ACS Emotion	inear
 ACS Evoke	ACS Evoke	inear
 ACS Evolve	ACS Evolve	inear
+ADL EH008	ADL EH-008	inear
+ADL H128	ADL H128	onear
 ADVANCED M4	Advanced M4	inear
 ADVANCED M5-TWS	Advanced M5-TWS	inear
 AKG GHS1	AKG GHS1	onear
@@ -83,6 +85,8 @@ AKG K 99 PRO	AKG K99 Pro	onear
 AKG K1000 (0 degress)	AKG K1000 (0 degrees)	onear
 AKG K1000 (30 degress)	AKG K1000 (30 degrees)	onear
 AKG N 20	AKG N20	inear
+AKG N 30	AKG N30	inear
+AKG N 40	AKG N40	inear
 AKG Q 460	AKG Q460	onear
 AKG Q 701	AKG Q701	onear
 AKG Y 20	AKG Y20	inear
@@ -103,6 +107,7 @@ Ambient Acoustics MAD4	Ambient Acoustics MAD4	inear
 Ambient Acoustics MAD6	Ambient Acoustics MAD6	inear
 Amphiton TDS 15	Amphiton TDS 15	onear
 Amphiton TDS 7	Amphiton TDS 7	onear
+Amphiton TDS 7 Snorry Mod		ignore
 Anew U1	Anew U1	inear
 Anew X-One	Anew X-One	inear
 Anew X-One (black)	Anew X-One (black)	inear
@@ -112,15 +117,21 @@ Anew X-One (upturned black)	Anew X-One (upturned black)	inear
 Anew X-One (upturned blue)	Anew X-One (upturned blue)	inear
 Anew X-One (upturned red)	Anew X-One (upturned red)	inear
 Angry Birds Angry Birds		ignore
+ANKER Soundcore Liberty	Anker Soundcore Liberty	inear
+ANKER Soundcore Life Q30	Anker Soundcore Life Q30	onear
 Apple AirPods	Apple AirPods	earbud
 Apple AirPods Pro	Apple AirPods Pro	inear
+Apple AirPods Pro Fake		ignore
 Apple EarPods	Apple EarPods	earbud
 Apple EarPods Mic		ignore
+Apple Fake AirPods Pro Fake		ignore
 Apple ME186	Apple ME186 In-Ear Headphones	inear
+Astell&Kern AK T5p II	Astell & Kern AK T5p 2nd generation	onear
 Astell&Kern AK T8iE MKII	Astell & Kern K T8iE MKII	inear
 Astell&Kern AKR03 Roxanne	Astell & Kern AKR03 Roxanne	inear
 Astell&Kern AngieII	Astell & Kern Angie II	inear
 Astell&Kern Billie Jean	Astell & Kern Billie Jean	inear
+Astell&Kern Layla II	Astell & Kern Layla II	inear
 ASTRO Gaming A10	ASTRO Gaming A10	onear
 ASTRO Gaming A40	ASTRO Gaming A40	onear
 Astrotec AX-60	Astrotec AX-60	inear
@@ -135,6 +146,7 @@ ASUS ROG Strix Fusion 700 (leather cushions 7.1)	ASUS ROG Strix Fusion 700 (leat
 ASUS ROG Strix Fusion 700 (leather cushions)	ASUS ROG Strix Fusion 700 (leather earpads)	onear
 ASUS Strix Fusion 300	ASUS ROG Strix Fusion 300	onear
 Audeze EL-8 Closed	Audeze EL8 Closed	onear
+Audeze Euclid	Audeze Euclid	inear
 Audeze iSINE10	Audeze iSINE 10	inear
 Audeze LCD-1	Audeze LCD-1	onear
 Audeze LCD-2	Audeze LCD-2	onear
@@ -144,6 +156,7 @@ Audeze LCD-2C	Audeze LCD-2 Classic	onear
 Audeze LCD-3	Audeze LCD-3	onear
 Audeze LCD-3 Fazor	Audeze LCD-3 Fazor	onear
 Audeze LCD-4z	Audeze LCD-4z	onear
+Audeze LCD-GX	Audeze LCD-GX	onear
 Audeze LCD-i3	Audeze LCD-i3	inear
 Audeze LCD-MX4	Audeze LCD-MX4	onear
 Audeze LCD-X	Audeze LCD-X	onear
@@ -177,6 +190,7 @@ Audio-Technica ATH-ES10	Audio-Technica ATH-ES10	onear
 Audio-Technica ATH-ES3	Audio-Technica ATH-ES3	onear
 Audio-Technica ATH-ES55	Audio-Technica ATH-ES55	onear
 Audio-Technica ATH-ES7	Audio-Technica ATH-ES7	onear
+Audio-Technica ATH-ESW11LTD	Audio-Technica ATH-ESW11LTD	onear
 Audio-Technica ATH-FC700	Audio-Technica ATH-FC700	onear
 Audio-Technica ATH-LS200iS	Audio-Technica ATH-LS200iS	inear
 Audio-Technica ATH-M20	Audio-Technica ATH-M20	onear
@@ -185,6 +199,7 @@ Audio-Technica ATH-M30x	Audio-Technica ATH-M30x	onear
 Audio-Technica ATH-M35	Audio-Technica ATH-M35	onear
 Audio-Technica ATH-M40x	Audio-Technica ATH-M40x	onear
 Audio-Technica ATH-M50	Audio-Technica ATH-M50	onear
+Audio-Technica ATH-M50s	Audio-Technica ATH-M50s	onear
 Audio-Technica ATH-M50x	Audio-Technica ATH-M50x	onear
 Audio-Technica ATH-M60X	Audio-Technica ATH-M60x	onear
 Audio-Technica ATH-M70x	Audio-Technica ATH-M70x	onear
@@ -286,6 +301,7 @@ Beyerdynamic DTX 710	Beyerdynamic DTX 710	onear
 Beyerdynamic DTX 910	Beyerdynamic DTX 910	onear
 Beyerdynamic DX 120	Beyerdynamic DX 120	inear
 Beyerdynamic DX 160	Beyerdynamic DX 160	inear
+Beyerdynamic T 70	Beyerdynamic T70	onear
 Beyerdynamic T1 Tesla II	Beyerdynamic T1 2nd Generation	onear
 Beyerdynamic T5p	Beyerdynamic T5p	onear
 Beyerdynamic T70	Beyerdynamic T70	onear
@@ -293,6 +309,7 @@ Beyerdynamic T90	Beyerdynamic T90	onear
 BGVP DH3	BGVP DH3	inear
 BGVP DM6	BGVP DM6	inear
 BGVP DM7	BGVP DM7	inear
+BGVP DM8	BGVP DM8	inear
 BGVP DMG	BGVP DMG	inear
 BGVP DMS	BGVP DMS	inear
 BGVP DS1 Pro	BGVP DS1 Pro	inear
@@ -313,21 +330,28 @@ BlackBerry WS-510	BlackBerry WS-510	inear
 Bose AE	Bose AE	onear
 Bose AE2	Bose AE2	onear
 Bose IE2	Bose IE2	inear
+Bose Noise Cancelling 700 UC	Bose Noise Cancelling Headphones 700	onear
 Bose Noise Cancelling Headphones 700	Bose Noise Cancelling Headphones 700	onear
 Bose Noise Cancelling Headphones 700 (bluetooth noise cancelation 0)	Bose Noise Cancelling Headphones 700 (wireless, ANC 0)	onear
 Bose Noise Cancelling Headphones 700 (bluetooth noise cancelation 10)	Bose Noise Cancelling Headphones 700 (wireless, ANC 10)	onear
 Bose Noise Cancelling Headphones 700 (bluetooth noise cancelation 5)	Bose Noise Cancelling Headphones 700 (wireless, ANC 5)	onear
+Bose Noise Cancelling Headphones 700 (bluetooth)	Bose Noise Cancelling Headphones 700 (wireless)	onear
 Bose Noise Cancelling Headphones 700 (wire connection)	Bose Noise Cancelling Headphones 700 (wired)	onear
+Bose Noise Cancelling Headphones 700 (wire)	Bose Noise Cancelling Headphones 700 (wired)	onear
 Bose On-ear headphones	Bose On-ear headphones	onear
 Bose QuietComfort 20	Bose QuietComfort 20	onear
 Bose QuietComfort 20 (noise cancelation off)	Bose QuietComfort 20 (ANC off)	onear
 Bose QuietComfort 20 (noise cancelation on)	Bose QuietComfort 20 (ANC on)	onear
+Bose QuietComfort 35	Bose QuietComfort 35	onear
 Bose QuietComfort 35 II	Bose QuietComfort 35 II	onear
 Bose QuietComfort 35 II (bluetooth noise cancelation off)	Bose QuietComfort 35 II (wireless, ANC off)	onear
 Bose QuietComfort 35 II (bluetooth noise cancelation on 1)	Bose QuietComfort 35 II (wireless, ANC 1)	onear
 Bose QuietComfort 35 II (bluetooth noise cancelation on 2)	Bose QuietComfort 35 II (wireless, ANC 2)	onear
 Bose QuietComfort 35 II (wire connection noise cancelation off)	Bose QuietComfort 35 II (wired, ANC off)	onear
 Bose QuietComfort 35 II (wire connection noise cancelation on)	Bose QuietComfort 35 II (wired, ANC on)	onear
+Bose QuietComfort Earbuds	Bose QuietComfort Earbuds	inear
+Bose QuietComfort Earbuds (nc off)	Bose QuietComfort Earbuds (ANC off)	inear
+Bose QuietComfort Earbuds (nc on)	Bose QuietComfort Earbuds (ANC on)	inear
 Bose QuietControl 30	Bose QuietControl 30	onear
 Bose SoundLink Around-Ear Wireless Headphones II (bluetooth)	Bose SoundLink Around-Ear Wireless Headphones II (wireless)	onear
 Bose SoundLink Around-Ear Wireless Headphones II (wire connection)	Bose SoundLink Around-Ear Wireless Headphones II (wired)	onear
@@ -336,6 +360,7 @@ Bose SoundSport	Bose SoundSport Wireless	inear
 Bose SoundSport Free	Bose SoundSport Free	inear
 Bose SoundSport Wireless	Bose SoundSport Wireless	inear
 Bose SoundTrue Around-Ear	Bose SoundTrue Around-Ear	onear
+Bose Sport Earbuds	Bose Sport Earbuds	inear
 Bose TriPort ie	Bose TriPort IE	inear
 BOSS BA-PC15	BOSS BA-PC15	inear
 Bowers & Wilkins P3	Bowers & Wilkins P3	onear
@@ -344,6 +369,7 @@ Bowers & Wilkins P5 MK2	Bowers & Wilkins P5 Series 2	onear
 Bowers & Wilkins P7	Bowers & Wilkins P7	onear
 Bowers & Wilkins PI3	Bowers & Wilkins PI3	inear
 Bowers & Wilkins PI4	Bowers & Wilkins PI4	inear
+Bowers & Wilkins PX	Bowers & Wilkins PX	onear
 Bowers & Wilkins PX5	Bowers & Wilkins PX5	onear
 Bowers & Wilkins PX7	Bowers & Wilkins PX7	onear
 Bowers & Wilkins PX7 (bluetooth noise cancelation off)	Bowers & Wilkins PX7 (wireless, ANC off)	onear
@@ -368,6 +394,7 @@ Campfire Audio Andromeda 2020	Campfire Audio Andromeda 2020	inear
 Campfire Audio Andromeda Gold	Campfire Audio Andromeda Gold	inear
 Campfire Audio Andromeda Limited Edition	Campfire Audio Andromeda SS	inear
 Campfire Audio Andromeda S	Campfire Audio Andromeda S	inear
+Campfire Audio Ara	Campfire Audio Ara	inear
 Campfire Audio Atlas	Campfire Audio Atlas	inear
 Campfire Audio Cascade	Campfire Audio Cascade	onear
 Campfire Audio Cascade (2t dampfer)	Campfire Audio Cascade (2T filter)	onear
@@ -376,16 +403,21 @@ Campfire Audio Cascade (4t dampfer)	Campfire Audio Cascade (4T filter)	onear
 Campfire Audio Cascade (no dampfer)	Campfire Audio Cascade (no filter)	onear
 Campfire Audio Comet	Campfire Audio Comet	inear
 Campfire Audio IO	Campfire Audio Io	inear
+Campfire Audio Jupiter	Campfire Audio Jupiter	inear
 Campfire Audio Orion	Campfire Audio Orion	inear
 Campfire Audio Polaris	Campfire Audio Polaris	inear
 Campfire Audio Solaris	Campfire Audio Solaris	inear
 Campfire Audio Solaris 2020	Campfire Audio Solaris 2020	inear
 Campfire Audio Solaris Limited	Campfire Audio Solaris SE	inear
 Cardas EM5813	Cardas EM5813	inear
+CCA A10	CCA A10	inear
 Coloud Colors C22M	Coloud Colors C22M	onear
 Coloud NHL Chicago Blackhawks	Coloud NHL Chicago Blackhawks	onear
+Cowon CK11 Pro	COWON CK11 Pro	inear
 Creative Aurvana Gold	Creative Aurvana Gold	onear
+Creative Aurvana In-Ear2	Creative Aurvana In-Ear2	inear
 Creative Aurvana Live! 2	Creative Aurvana Live! 2	onear
+Creative Aurvana Live!2	Creative Aurvana Live! 2	onear
 Creative Aurvana Platinum	Creative Aurvana Platinum	onear
 Creative Aurvana Trio	Creative Aurvana Trio	inear
 Creative EP-600	Creative EP-600	inear
@@ -398,6 +430,7 @@ Creative SoundBlaster EVO Zx	Creative Sound Blaster EVO Zx	onear
 Creative WP-350	Creative WP-350	onear
 CyberHome KUBT 803	CyberHome KUBT 803	onear
 Cyclone PR2	Cyclone PR2	inear
+Dali IO-6	Dali IO-6	onear
 Dan Clark Audio Aeon Flow 2 Closed	Dan Clark Audio Aeon 2 Closed	onear
 Denon AH-A100	Denon AH-A100	onear
 Denon AH-C160W Wireless	Denon AH-C160W	inear
@@ -411,13 +444,19 @@ Denon AH-D5200	Denon AH-D5200	onear
 Denon AH-D7000	Denon AH-D7000	onear
 Denon AH-D7100	Denon AH-D7100	onear
 Denon AH-D7200	Denon AH-D7200	onear
+Denon AH-D9200	Denon AH-D9200	onear
 Denon AH-MM200	Denon AH-MM200	onear
 Denon AH-MM300	Denon AH-MM300	onear
 Denon AH-MM400	Denon AH-MM400	onear
+Dexp BT212	Dexp BT-212	onear
 DITA Audio Dream	Dita Audio Dream	inear
 DITA Audio The Answer	Dita Audio Answer	inear
+DIY Jade 3		ignore
 DIY MDR-XB950AP-Beyerdynamic DT250		ignore
 DIY Snowy88 hybrid 5		ignore
+Dope Audio Acid	Dope Audio Acid	inear
+Dope Audio Lucid	Dope Audio Lucid	inear
+Dope Audio Pure	Dope Audio Pure	inear
 Dunu Crius (DN13)	DUNU DN13 Crius	inear
 Dunu DK-2001	DUNU DK2001	inear
 Dunu DK-3001	DUNU DK3001	inear
@@ -446,7 +485,9 @@ EarSonics Velvet (0)	EarSonics Velvet (warm)	inear
 EarSonics Velvet (100)	EarSonics Velvet (tight)	inear
 EarSonics Velvet (50)	EarSonics Velvet (standard)	inear
 Echo TDS 16	Echo TDS 16	onear
+ELARI NanoPods	ELARI NanoPods	inear
 Elecom EHP CL430	ELECOM EHP CL430	onear
+Electronica TDS-3	Electronica TDS-3	onear
 Electronica TDS-5m	Electronica TDS-5m	onear
 Electronica TDS-5m (cushions of technics rp-dj1210)	Electronica TDS-5m (Technics RP-DJ1210 earpads)	onear
 Enigma Acoustics & Lotoo Dharma D200	ENIGMAcoustics & Lotoo Dharma D200	inear
@@ -474,6 +515,7 @@ Fearless Audio S8F Freedom	Fearless Audio S8F	inear
 Fearless Audio S8P	Fearless Audio S8Pro	inear
 Fearless Audio S8Z	Fearless Audio S8Z	inear
 Fearless Audio Y2K-G10	Fearless Audio Y2K-G10	inear
+Felix Audio Headphones		ignore
 Ferrari Cavallino T350	Ferrari Cavallino T350	onear
 Ferrari r100i	Ferrari r100i	inear
 Fidue A31s	Fidue A31s	inear
@@ -488,6 +530,7 @@ FiiO F9	FiiO F9	inear
 FiiO F9 PRO	FiiO F9 Pro	inear
 FiiO FA7	FiiO FA7	inear
 FiiO FB1	FiiO FB1	inear
+FiiO FD5	FiiO FD5	inear
 FiiO FH1s	FiiO FH1s	inear
 FiiO FH5	FiiO FH5	inear
 FiiO Jade Audio EW1	Jade Audio EW1	inear
@@ -504,6 +547,7 @@ Final Audio Design Piano Forte X	Final Audio Piano Forte X	inear
 Fischer Audio Bellicoso	Fischer Audio Bellicoso	inear
 Fischer Audio Bullets 6mm	Fischer Audio Bullets 6mm	inear
 Fischer Audio Coda	Fischer Audio Coda	onear
+Fischer Audio Con Brio	Fischer Audio Con Brio	onear
 Fischer Audio Con Fuoco	Fischer Audio Con Fuoco	onear
 Fischer Audio Con Moto	Fischer Audio Con Moto	onear
 Fischer Audio Consonance	Fischer Audio Consonance	inear
@@ -517,6 +561,7 @@ Fischer Audio Eterna v2	Fischer Audio Eterna v2	inear
 Fischer Audio FA-002	Fischer Audio FA-002	onear
 Fischer Audio FA-002w	Fischer Audio FA-002w	onear
 Fischer Audio FA-003	Fischer Audio FA-003	onear
+Fischer Audio FA-003 Ti Kennerton Cup		ignore
 Fischer Audio FA-004	Fischer Audio FA-004	onear
 Fischer Audio FA-005	Fischer Audio FA-005	onear
 Fischer Audio FA-005 (fubric cushions)	Fischer Audio FA-005 (fabric earpads)	onear
@@ -568,7 +613,7 @@ FLC Technology 8D (black)	FLC Technology 8D (black)	inear
 FLC Technology 8D (blue)	FLC Technology 8D (blue)	inear
 FLC Technology 8D (gold)	FLC Technology 8D (gold)	inear
 FLC Technology 8D (green)	FLC Technology 8D (green)	inear
-FLC Technology 8N (black black clear)	FLC 8N (black black clear)	inear
+FLC Technology 8N (black black clear)	FLC Technology 8N (black black clear)	inear
 FLC Technology 8N (black black gray)	FLC Technology 8N (black black gray)	inear
 FLC Technology 8N (black black red)	FLC Technology 8N (black black red)	inear
 FLC Technology 8N (black clear-gray)	FLC Technology 8N (black clear-gray)	inear
@@ -601,6 +646,7 @@ Fostex T50RP mod		ignore
 Fostex T60RP	Fostex T60RP	onear
 Fostex T7	Fostex T7	onear
 Fostex TH 900	Fostex TH900	onear
+Fostex TH-900 MK2	Fostex TH900mk2	onear
 Fostex TH-900 MK2 Sapphire Blue	Fostex TH900mk2	onear
 Fostex TH-X00	Fostex TH-X00	onear
 Fostex TH610	Fostex TH610	onear
@@ -621,6 +667,7 @@ German Maestro GMP 450 PRO	German Maestro GMP 450 PRO	onear
 German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
 German Maestro GMP 8.300 D	German Maestro GMP 8.300 D	onear
 German Maestro GMP 8.35 D	German Maestro GMP 8.35 D	onear
+Gold Planar GL20	Gold Planar GL20	inear
 Grado eGrado	Grado eGrado	onear
 Grado GH3 Limited Edition	Grado GH3 Limited Edition	onear
 Grado GH4 Limited Edition	Grado GH4 Limited Edition	onear
@@ -660,7 +707,11 @@ Grado SR 80i	Grado SR80i	onear
 Grado SR325i (g-cush)	Grado SR325i (G earpads)	onear
 Grado SR325i (l-cush)	Grado SR325i (L earpads)	onear
 Grado SR325i (s-cush)	Grado SR325i (S earpads)	onear
+HAAFEE HD7	HAAFEE HD7	onear
 Haylou GT2 TWS	Xiaomi Haylou GT2	inear
+Haylou GT3	Haylou GT3	inear
+HEDD HEDDphone ONE	HEDD phone	onear
+Hidizs H1	Hidizs H1	inear
 HiFiBoy OS V3	HiFi Boy OS V3	inear
 HiFiMan Ananda	HIFIMAN Ananda	onear
 HiFiMan HE 400i	HIFIMAN HE400i	onear
@@ -679,9 +730,11 @@ HiFiMan RE 600	HIFIMAN RE600	inear
 HiFiMan RE 800	HIFIMAN RE800	inear
 HiFiMan RE0	HIFIMAN RE0	inear
 HiFiMan Re2	HIFIMAN RE2	inear
+HiFiMan RE2000	HIFIMAN RE2000	inear
 HiFiMan ReZero	HIFIMAN RE-ZERO	inear
 HiFiMan Sundara	HIFIMAN Sundara	onear
 Huawei  AM 12 plus	Huawei  AM 12 plus	inear
+Huawei  Freebuds 4i	Huawei Freebuds 4i	inear
 iBasso AM05	iBasso AM05	inear
 iBasso IT00	iBasso IT00	inear
 iBasso IT01	iBasso IT01	inear
@@ -701,10 +754,15 @@ IMR Opus Mia	IMR Acoustics Opus Mia	inear
 IMR R1	IMR Acoustics R1	inear
 IMR Semper	IMR Acoustics Semper	inear
 Intro RX-190	Intro RX-190	inear
+Jade Audio EA1	Jade Audio EA1	inear
+Jade Audio Jade Audio EW1	Jade Audio EW1	inear
 Jamo wEAR In30	Jamo wEAR In30	inear
 Jays d-Jays	JAYS d-JAYS	inear
 Jays q-JAYS v2	JAYS q-JAYS v2.0	inear
 Jays s-Jays	JAYS s-JAYS	inear
+Jays u-Jays Wireless	JAYS u-JAYS Wireless	onear
+JAYS u-JAYS Wireless (bluetooth)	JAYS u-JAYS Wireless (wireless)	onear
+JAYS u-JAYS Wireless (wire)	JAYS u-JAYS Wireless (wired)	onear
 Jays v-Jays	JAYS v-JAYS	onear
 JAYS v-Jays (large)	JAYS v-JAYS (large)	onear
 JAYS v-Jays (medium)	JAYS v-JAYS (medium)	onear
@@ -714,6 +772,7 @@ JBL Everest v110BT GML	JBL Everest 110	inear
 JBL J55	JBL J55	onear
 JBL Synchros S500	JBL Synchros S500	onear
 JBL Synchros S700	JBL Synchros S700	onear
+JBL T150A	JBL T150A	inear
 JBL V310 BT	JBL V310 BT	onear
 JBL V310 BT (wire connection)	JBL V310 BT (wired)	onear
 JVC Esnsy HA-FR65	JVC HA-FR65	inear
@@ -754,6 +813,8 @@ Kennerton Magister Pro	Kennerton Magister Pro	onear
 Kennerton Magni	Kennerton Magni	onear
 Kennerton Odin	Kennerton Odin	onear
 Kennerton Odin 2019	Kennerton Odin 2019	onear
+Kennerton RIG		ignore
+Kennerton Rognir	Kennerton Rognir	onear
 Kennerton Stor	Kennerton Stor	onear
 Kennerton Tekk	Kennerton Tekk	onear
 Kennerton Thekk	Kennerton Thekk	onear
@@ -764,6 +825,7 @@ Kennerton Thror	Kennerton Thror	onear
 Kennerton Vali	Kennerton Vali	onear
 Kennerton Vali 2019	Kennerton Vali 2019	onear
 Kennerton Wodan	Kennerton Wodan	onear
+Kennerton Wodan Aluminum Driver 2021	Kennerton Wodan Aluminum Driver 2021	onear
 Kenwood KH-K1000	Kenwood KH-K1000	onear
 Kinera BD005	Kinera BD005	inear
 Kinera Freya	Kinera Freya	inear
@@ -772,9 +834,11 @@ Kinera Odin	Kinera Odin	inear
 Klipsch Heritage HP-3	Klipsch HP3	onear
 Klipsch Image X10	Klipsch Image X10	inear
 Klipsch One	Klipsch Image One	onear
+Klipsch T5 Sport	Klipsch T5 Sport	inear
 Klipsch X11i	Klipsch X11i	inear
 Klipsch x7i	Klipsch x7i	inear
 Koss ESP 950	Koss ESP950	ignore
+Koss ESP950	Koss ESP950	onear
 Koss ESP950 (default cushions without the shell)		ignore
 Koss ESP950 (leather cushions)		ignore
 Koss Porta Pro	Koss Porta Pro	onear
@@ -795,11 +859,14 @@ KZ (Knowledge Zenith) Z1	KZ Z1	inear
 KZ (Knowledge Zenith) ZS6	KZ ZS6	inear
 KZ (Knowledge Zenith) ZST	KZ ZST	inear
 KZ AS10	KZ AS10	inear
+KZ AS16	KZ AS16	inear
 KZ ATR	KZ ATR	inear
 KZ BA10	KZ BA10	inear
 KZ ED12	KZ ED12	inear
 KZ S1D	KZ S1D	inear
 KZ Z1	KZ Z1	inear
+KZ ZAX	KZ ZAX	inear
+KZ ZS10 Pro	KZ ZS10 Pro	inear
 KZ ZS6	KZ ZS6	ignore
 KZ ZS6 (close)	KZ ZS6 (closed vent)	ignore
 KZ ZS6 (open)	KZ ZS6 (open vent)	ignore
@@ -816,6 +883,8 @@ Lime Ears Model X (on (universal))	Lime Ears Model X (on)	inear
 Lime Ears PSI	Lime Ears PSI	inear
 Lime Ears PSI (off (universal))	Lime Ears PSI (switch off)	inear
 Lime Ears PSI (on (universal))	Lime Ears PSI (switch on)	inear
+Logitech 960	Logitech 960	onear
+Logitech h-151	Logitech H151	onear
 LongLife E-107	LongLife E-107	inear
 Lypertek TEVI	Lypertek Tevi	inear
 LZ Hi-Fi Audio A4	LZ Hi-Fi Audio A4	inear
@@ -826,6 +895,7 @@ LZ Hi-Fi Audio A6 Mini (red)	LZ Hi-Fi Audio A6 Mini (red)	inear
 M-Audio IE 40	M-Audio IE-40	inear
 M-Audio IE-30	M-Audio IE-30	inear
 Magaosi DT6	Magaosi DT6	inear
+MagicSound Bionic MK3		ignore
 Marantz MPH-1	Marantz MPH-1	onear
 Marantz MPH-2	Marantz MPH-2	onear
 Marantz MPH-3	Marantz MPH-3	onear
@@ -881,6 +951,7 @@ Monster Inspiration (noise-cancelling on)	Monster Inspiration (ANC on)	onear
 Monster iSport Victory In-Ear Wireless	Monster iSport Victory In-Ear Wireless	inear
 Monster Jamz In-Ear	Monster Jamz	inear
 Monster Miles Davis	Monster Miles Davis Tribute	inear
+Moondrop Blessing 2	Moondrop Blessing 2	inear
 Moondrop Kanas Pro	Moondrop Kanas Pro	inear
 Moondrop KXXS	Moondrop KXXS	inear
 MrSpeakers AEON	Dan Clark Audio Aeon Flow Open	onear
@@ -890,10 +961,12 @@ MrSpeakers ETHER C Flow Mod		ignore
 MrSpeakers Mad Dog	Dan Clark Audio Mad Dog	onear
 Musical Fidelity EB-50	Musical Fidelity EB-50	inear
 MyST Gatling	MyST Gatling	onear
+MyST Gatling AT Aineri Mode		ignore
 MyST Izo-OS	MyST Izo-OS	onear
 MyST IzoEM-1		ignore
-MyST IzoPhones-30	MyST IzoPhones-30	onear
+MyST IzoPhones Jr-C	MyST IzoPhones Jr-C	onear
 MyST Izophones-30		ignore
+MyST IzoPhones-30	MyST IzoPhones-30	onear
 MyST Izophones-30s	MyST Izophones-30s	onear
 MyST IzoPhones-60	MyST IzoPhones-60	onear
 MyST IzoPhones-7	MyST IzoPhones-7	onear
@@ -901,15 +974,19 @@ MyST Nail 1	MyST Nail 1	inear
 MyST Nail 3	MyST Nail 3	inear
 MyST Nail 4	MyST Nail 4	inear
 MyST Nail2v2	MyST Nail2v2	inear
-NAD Viso HP50	NAD Viso HP50	onear
+MyST Nail2x2	MyST Nail2x2	inear
+NAD Viso HP50	NAD VISO HP50	onear
 Nakamichi NBE 250	Nakamichi NBE-250	inear
 Nakamichi NEP-MV5	Nakamichi NEP-MV5	inear
 Nakamichi NEP-S600	Nakamichi NEP-S600	inear
 Nakamichi NEP-S660	Nakamichi NEP-S660	inear
 Nakamichi NEP-S800	Nakamichi NEP-S800	inear
+Neumann NDH 20	Neumann NDH20	onear
+NICEHCK HC5	NiceHCK HC5	inear
 NICEHCK Vido	NiceHCK Vido	earbud
 Noble Audio Dulce Bass	Noble Audio Dulce Bass	inear
 Noble Audio EDC Bell	Noble Audio EDC Bell	inear
+Noble Audio Falcon Pro	Noble Audio Falcon Pro	inear
 Noble Audio KAISER ENCORE	Noble Audio Kaiser Encore	inear
 Noble Audio KATANA	Noble Audio Katana	inear
 Noble Audio Khan	Noble Audio Khan	inear
@@ -948,9 +1025,11 @@ Ortofon e-Q8	Ortofon e-Q8	inear
 Ostry KC06	Ostry KC06	inear
 Ostry KC06A	Ostry KC06A	inear
 Ostry KC09	Ostry KC09	inear
+Padmate PaMu Quiet T10	Padmate PaMu Quiet T10	inear
 Paiaudio MR2	Paiaudio MR2	inear
 Paiaudio MR3	Paiaudio MR3	inear
 Panasonic HJE 120	Panasonic RP-HJE120	inear
+Perfect Sound Dido D901	Perfect Sound Dido D901	onear
 Periodic Audio Be	Periodic Audio Be	inear
 Phiaton MS 400	Phiaton MS 400	onear
 Phiaton PS 320	Phiaton PS 320	onear
@@ -971,6 +1050,7 @@ Philips SHL 5905 BK	Philips SHL5905BK	onear
 Philips SHM 6110 U	Philips SHM6110U	onear
 Philips SHM 6500	Philips SHM6500	onear
 Philips SPH 6000	Philips SPH6000	onear
+Philips TAE4105	Philips TAE4105	inear
 Phonak Audeo PFE 112	Phonak PFE 112	inear
 Phonak Audeo PFE 232	Phonak PFE 232	inear
 Pioneer HDJ-1000	Pioneer HDJ-1000	onear
@@ -979,19 +1059,24 @@ Pioneer HDJ-500-K	Pioneer HDJ-500-K	onear
 Pioneer SE 700	Pioneer SE-700	onear
 Pioneer SE-CH5	Pioneer SE-CH5	inear
 Pioneer SE-DJ5000	Pioneer SE-DJ5000	onear
+PMV PP	PMV PP	inear
 Prology PL170	Prology PL170	inear
 PSB M4U 1	PSB M4U 1	onear
 Puretone Micro Monitor Classic 3	Puretone Micro Monitor Classic 3	inear
+QCY T10	QCY T10	inear
 QCY T1C	QCY T1C	inear
 QCY T5	QCY T5	inear
 QCY T5Pro	QCY T5 Pro	inear
+QDC Anole VX	qdc Anole VX	inear
 QDC Neptune	qdc Neptune	inear
+QKZ VK4	QKZ VK4	inear
 QKZ X36M	QKZ X36M	inear
 Quad ERA-1	QUAD Era-1	onear
 QUAD Era-1 (hybride cushions)	QUAD Era-1 (hybrid earpads)	onear
 QUAD Era-1 (leather cushions)	QUAD Era-1 (leather earpads)	onear
 Radius HP-TWF-21	Radius HP-TWF21	inear
 Razer Kraken Pro V2	Razer Kraken Pro V2	onear
+Redragon Siren 2	Redragon H301 SIREN2	onear
 Remax RM-580	Remax RM-580	inear
 RHA CL1 (sealed)	RHA CL1 (sealed)	inear
 RHA CL1 Ceramic	RHA CL1	inear
@@ -1007,9 +1092,11 @@ RHA TrueConnect	RHA TrueConnect	inear
 Roland RH-200	Roland RH-200	onear
 Roland RH-A30	Roland RH-A30	onear
 SABBAT E12 ULTRA	Sabbat E12 Ultra	inear
+SeeAudio Yume	SeeAudio Yume	inear
 Sendy Audio Aiva	Sendy Aiva	onear
 Sennheiser Amperior	Sennheiser Amperior	onear
 Sennheiser CX 1.00	Sennheiser CX 1.00	inear
+Sennheiser CX 100	Sennheiser CX 100	inear
 Sennheiser CX 180 Street II	Sennheiser CX 180 Street II	inear
 Sennheiser CX 2.00	Sennheiser CX 2.00	inear
 Sennheiser CX 200 Street II	Sennheiser CX 200 Street II	inear
@@ -1023,6 +1110,7 @@ Sennheiser CX-400 II	Sennheiser CX 400-II	inear
 Sennheiser eH 2270	Sennheiser EH 2270	onear
 Sennheiser Fake IE 80		ignore
 Sennheiser HD 202	Sennheiser HD 202	onear
+Sennheiser HD 206	Sennheiser HD 206	onear
 Sennheiser HD 212 PRO	Sennheiser HD 212 PRO	onear
 Sennheiser HD 215	Sennheiser HD 215	onear
 Sennheiser HD 218	Sennheiser HD 218	onear
@@ -1031,6 +1119,7 @@ Sennheiser HD 25	Sennheiser HD 25	onear
 Sennheiser HD 25 II	Sennheiser HD 25-II	onear
 Sennheiser HD 25-C II	Sennheiser HD 25-C II	onear
 Sennheiser HD 280 Pro	Sennheiser HD 280 Pro	onear
+Sennheiser HD 280 Pro (mk2)	Sennheiser HD 280 Pro mk2	onear
 Sennheiser HD 280-13	Sennheiser HD 280-13	onear
 Sennheiser HD 380 Pro	Sennheiser HD 380 Pro	onear
 Sennheiser HD 4.20s	Sennheiser HD 4.20s	onear
@@ -1038,10 +1127,12 @@ Sennheiser HD 4.30	Sennheiser HD 4.30	onear
 Sennheiser HD 449	Sennheiser HD 449	onear
 Sennheiser HD 451	Sennheiser HD 451	onear
 Sennheiser HD 461G	Sennheiser HD 461G	onear
+Sennheiser HD 490	Sennheiser HD 490	onear
 Sennheiser HD 515	Sennheiser HD 515	onear
 Sennheiser HD 518	Sennheiser HD 518	onear
 Sennheiser HD 555	Sennheiser HD 555	onear
 Sennheiser HD 558	Sennheiser HD 558	onear
+Sennheiser HD 560s	Sennheiser HD 560S	onear
 Sennheiser HD 569	Sennheiser HD 569	onear
 Sennheiser HD 579	Sennheiser HD 579	onear
 Sennheiser HD 580	Sennheiser HD 580	onear
@@ -1056,6 +1147,8 @@ Sennheiser HD 800	Sennheiser HD 800	onear
 Sennheiser HD 800 (american cushions)		ignore
 Sennheiser HD 800s	Sennheiser HD 800 S	onear
 Sennheiser HD7 DJ	Sennheiser HD 7 DJ	onear
+Sennheiser IE 300	Sennheiser IE 300	inear
+Sennheiser IE 400 Pro	Sennheiser IE 400 Pro	inear
 Sennheiser ie 80	Sennheiser IE 80	inear
 Sennheiser ie 800	Sennheiser IE 800	inear
 Sennheiser ie 800s	Sennheiser IE 800 S	inear
@@ -1068,20 +1161,24 @@ Sennheiser MM80i	Sennheiser MM 80i	inear
 Sennheiser Momentum	Sennheiser Momentum	onear
 Sennheiser Momentum 2.0 In-Ear (M2 IEi IEG)	Sennheiser Momentum 2.0 In-Ear	inear
 Sennheiser Momentum on-ear	Sennheiser Momentum On-Ear	onear
+Sennheiser MOMENTUM True Wireless 2	Sennheiser Momentum True Wireless 2	inear
 Sennheiser Momentum TWS	Sennheiser Momentum True Wireless	inear
 Sennheiser PC 330 G4ME	Sennheiser PC 330 G4ME	onear
 Sennheiser PC 350 Xense	Sennheiser PC 350	onear
+Sennheiser PX 100	Sennheiser PX 100	onear
 Sennheiser PX 100 II	Sennheiser PX 100 II	onear
 Sennheiser PX 200 II	Sennheiser PX 200 II	onear
 Sennheiser PX 90	Sennheiser PX 90	onear
 Sennheiser PXC 550 Wireless	Sennheiser PXC 550 Wireless	onear
 Sennheiser URBANITE XL	Sennheiser Urbanite XL	onear
 Shanling ME100	Shanling ME100	inear
+Shanling ME80	Shanling ME80	inear
 Shanling MW100	Shanling MW100	inear
 Shozy Hibiki Mk.2	Shozy Hibiki MK2	inear
 Shozy V33	Shozy V33	inear
 Shozy V33 Pro	Shozy V33 Pro	inear
 Shozy Zero	Shozy Zero	inear
+Shuoer Tape Pro	Shuoer Tape Pro	inear
 Shure SE 102	Shure SE102	inear
 Shure SE 215	Shure SE215	inear
 Shure SE 315	Shure SE315	inear
@@ -1097,6 +1194,8 @@ Shure SRH 840	Shure SRH840	onear
 Shure SRH 940	Shure SRH940	onear
 Simgot Audio EM1 (sealed)	Simgot Audio EM1 (sealed)	inear
 Simgot Audio EM2 (sealed)	Simgot Audio EM2 (sealed)	inear
+Simgot Audio EM5 (sealed)	Simgot Audio EM5 (sealed)	inear
+Simgot Audio EN700 Pro (sealed)	Simgot Audio EN700 Pro (sealed)	inear
 Simgot Audio ET1000 (hybrid cushions)	Simgot Audio ET1000 (hybrid earpads)	onear
 Simgot Audio ET1000 (leather cushions)	Simgot Audio ET1000 (leather earpads)	onear
 Simgot Audio Meeture MT3 (sealed)	Simgot Audio Meeture MT3 (sealed)	inear
@@ -1116,7 +1215,11 @@ Sivga Audio Phoenix	Sivga Audio Phoenix	onear
 Sivga Audio Phoenix (cushions 1)	Sivga Audio Phoenix (perforated leather earpads)	onear
 Sivga Audio Phoenix (cushions 2)	Sivga Audio Phoenix (hybrid earpads)	onear
 Skullcandy SK Pro	Skullcandy SK Pro	onear
+Smabat ST 10s	Smabat ST 10s	inear
+Smabat X1	Smabat X1	inear
 Snorry NM-1	Snorry NM-1	onear
+Snowy88 Hybrid 5	Snowy88 Hybrid 5	inear
+Snowy88 А6	Snowy88 А6	inear
 Sony 10RBT	Sony MDR-10RBT	onear
 Sony CD3000	Sony MDR-CD3000	onear
 Sony Fake MDR V 700 		ignore
@@ -1146,14 +1249,22 @@ Sony MDR-XB70BT	Sony MDR-XB70BT	inear
 Sony MDR-XB950	Sony MDR-XB950	onear
 Sony MDR-Z1000	Sony MDR-Z1000	onear
 Sony MDR-Z7	Sony MDR-Z7	onear
+Sony MDR-Z7 MK2	Sony MDR-Z7M2	onear
 Sony MDR-ZX110	Sony MDR-ZX110	onear
 Sony MDR-ZX220BT	Sony MDR-ZX220BT	onear
 Sony MDR-ZX700	Sony MDR-ZX700	onear
 Sony SA1000	Sony MDR-SA1000	onear
 Sony SA3000	Sony MDR-SA3000	onear
+Sony WH-1000XM2	Sony WH-1000XM2	onear
+Sony WH-1000XM2 (bluetooth)	Sony WH-1000XM2 (wireless)	onear
+Sony WH-1000XM2 (wire connection)	Sony WH-1000XM2 (wired)	onear
+Sony WH-1000XM3	Sony WH-1000XM3	onear
+Sony WH-1000XM4	Sony WH-1000XM4	onear
+Sony WI-C310	Sony WI-C310	inear
 Sony XB-400	Sony WI-XB400	onear
 Sony XB-600	Sony MDR-XB600	onear
 Sony XB-900	Sony WH-XB900	onear
+Sony XB30EX	Sony MDR-XB30EX	inear
 Sony XB450BV	Sony MDR-XB450BV	onear
 Sony XBA-1	Sony XBA-1	inear
 Sony XBA-2	Sony XBA-2	inear
@@ -1200,6 +1311,8 @@ Takstar HD 6000	Takstar HD 6000	onear
 Takstar HF 580	Takstar HF 580	onear
 Takstar Pro 80	Takstar Pro 80	onear
 Takstar PRO 82	Takstar Pro 80	onear
+Takstar TS-660	Takstar TS-660	onear
+Takstar TS-662	Takstar TS-662	onear
 TANCHJIM Blues	Tanchjim Blues	inear
 TANCHJIM Oxygen	Tanchjim Oxygen	inear
 Tansio Mirai TSMR-4 Pro	Tansio Mirai TSMR-4 Pro	inear
@@ -1245,7 +1358,10 @@ TFZ X1	TFZ X1	inear
 TFZ X1e	TFZ X1e	inear
 TFZ X3	TFZ X3	inear
 TG 1		ignore
+THIEAUDIO Monarch	ThieAudio Monarch	inear
 Tin HiFi P1	Tin HiFi P1	inear
+Tin HiFi P2	Tin HiFi P2	inear
+Tin HiFi P2 (close)	Tin HiFi P2 (sealed)	inear
 Tin HiFi T2	Tin HiFi T2	inear
 Tin HiFi T2 Pro	Tin HiFi T2 Pro	inear
 Tin HiFi T3	Tin HiFi T3	inear
@@ -1254,6 +1370,7 @@ Trinity Audio ICARUS III	Trinity Audio ICARUS III	inear
 TRN ST1	TRN ST1	inear
 TRN VX	TRN VX	inear
 TY Hi-Z G3	TY Hi-Z G3	inear
+Ultimate Ears 900	Ultimate Ears UE900	inear
 Ultimate Ears super.fi 5 Pro	Ultimate Ears Super.fi 5 Pro	inear
 Ultrasone DJ 1	Ultrasone DJ 1	onear
 Ultrasone DJ 1 Pro	Ultrasone DJ 1 Pro	onear
@@ -1276,6 +1393,8 @@ Ultrasone Pyco	Ultrasone Pyco	inear
 Ultrasone Signature DJ	Ultrasone Signature DJ	onear
 Ultrasone TIO	Ultrasone TIO	inear
 Ultrasone Zino	Ultrasone Zino	onear
+Unique Melody 3D Terminator	Unique Melody 3D Terminator	inear
+Urbanears Plattan 2	Urbanears Plattan 2	onear
 Urbanears Plattan 2 Bluetooth	Urbanears Plattan 2 Bluetooth	onear
 V-Moda LP	V-MODA Crossfade LP	onear
 V-Moda M 80	V-MODA Crossfade M-80	onear
@@ -1297,6 +1416,8 @@ Westone 4	Westone W4	inear
 Westone Adv Alpha	Westone ADV Alpha	inear
 Westone B30	Westone B30	inear
 Westone B50	Westone B50	inear
+Westone B50 (wbtv1)	Westone B50 (WBTV1)	inear
+Westone B50 (wire connection)	Westone B50 (wired)	inear
 Westone UM Pro 10	Westone UM Pro 10	inear
 Westone UM Pro 20	Westone UM Pro 20	inear
 Westone UM1	Westone UM1	inear
@@ -1314,8 +1435,8 @@ Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear

@@ -2,14 +2,23 @@
 
 import os
 import sys
+from pathlib import Path
+if str(Path(__file__).resolve().parent) not in sys.path:
+    sys.path.insert(1, str(Path(__file__).resolve().parent))
+import pandas as pd
+from rapidfuzz import fuzz
 import requests
 import shutil
+import re
 from bs4 import BeautifulSoup
+import ipywidgets as widgets
+import webbrowser
+import urllib.parse
 from abc import ABC, abstractmethod
 from time import sleep
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.name_index import NameIndex, NameItem
 from measurements.manufacturer_index import ManufacturerIndex
+from measurements.name_prompt import NamePrompt
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
@@ -18,10 +27,16 @@ class Crawler(ABC):
     def __init__(self, driver=None):
         self.driver = driver
         self.name_index = self.read_name_index()
-        self.name_proposals = self.get_name_proposals()
+        self.manufacturers = ManufacturerIndex()
+        self.name_proposals = None
+        self.init_name_proposals()
         self.existing = self.get_existing()
         self.urls = self.get_urls()
-        self.manufacturers = ManufacturerIndex()
+
+        # UI
+        self.prompts = widgets.VBox([])
+        self.iframe = widgets.VBox([])
+        self.widget = widgets.HBox([self.prompts, self.iframe])
 
     @staticmethod
     @abstractmethod
@@ -33,7 +48,7 @@ class Crawler(ABC):
         """
         pass
 
-    def get_name_proposals(self):
+    def init_name_proposals(self):
         """Gets name proposals for new measurements
 
         Returns:
@@ -47,7 +62,24 @@ class Crawler(ABC):
             name_index = NameIndex.read_files(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'))
             name_proposals.concat(name_index)
         name_proposals.remove_duplicates()
-        return name_proposals
+
+        manufacturer_pattern = rf'^({"|".join([m[0] for m in self.manufacturers.manufacturers])})'
+        proposal_data = {
+            'form': [],
+            'manufacturer': [],
+            'model': []
+        }
+        for item in name_proposals.items:
+            if not item.true_name or item.form == 'ignore':
+                continue
+            manufacturer = re.search(manufacturer_pattern, item.true_name, flags=re.IGNORECASE)
+            if not manufacturer:
+                continue
+            manufacturer = manufacturer[0]
+            proposal_data['form'].append(item.form)
+            proposal_data['manufacturer'].append(manufacturer)
+            proposal_data['model'].append(item.true_name.replace(manufacturer, '').strip())
+        self.name_proposals = pd.DataFrame(proposal_data)
 
     @abstractmethod
     def write_name_index(self):
@@ -90,148 +122,26 @@ class Crawler(ABC):
         """
         pass
 
-    @staticmethod
-    def prompt_true_name(name_options):
-        """Prompts true name from the user."""
-        name_options = name_options if name_options is not None else []
-        if 'skip' not in name_options:
-            name_options.insert(0, 'skip')
-        s = 'What is it\'s true name?'
-        if len(name_options):
-            s += ' Select a number or write the name if none of the options.'
-        print(s)
-        if len(name_options):
-            print(f'\n'.join(f'[{i}] {o}' for i, o in enumerate(name_options)))
-        while True:
-            name = input('> ')
+    def update_name_index(self, item):
+        """Updates name index"""
+        exact_match = self.name_index.find_one(false_name=item.false_name, true_name=item.true_name, form=item.form)
+        if not exact_match:
+            self.name_index.update(item, false_name=item.false_name)
+            self.write_name_index()
+
+    def prompt_callback(self, false_name, url):
+        def callback(true_name, form):
+            if form == 'ignore':
+                self.update_name_index(NameItem(false_name, None, form))
+                return
+            item = NameItem(false_name, true_name, form)
             try:
-                name = name_options[int(name)]
-                if name == 'skip':
-                    return None
-                break
-            except (KeyError, ValueError):
-                break
-            except IndexError:
-                print('That didn\'t work, try again.')
-        return name
-
-    @staticmethod
-    def prompt_manufacturer(name_options):
-        """Prompts true manufacturer from the user."""
-        name_options = name_options if name_options is not None else []
-        s = 'What is it\'s true manufacturer name?'
-        if len(name_options):
-            s += ' Select a number or write the name if none of the options.'
-        print(s)
-        if len(name_options):
-            print(f'\n'.join(f'[{i + 1}] {o}' for i, o in enumerate(name_options)))
-        while True:
-            name = input('> ')
-            try:
-                name = name_options[int(name) - 1]
-                break
-            except (KeyError, ValueError):
-                break
-            except IndexError:
-                print('That didn\'t work, try again.')
-        print('Which part of the name to replace')
-        replace = input('> ')
-        return name, replace
-
-    @staticmethod
-    def prompt_form():
-        """Prompts form from the user."""
-        options = ['onear', 'inear', 'earbud']
-        print('What is it\'s type?')
-        print(f'\n'.join(f'[{i + 1}] {o}' for i, o in enumerate(options)))
-        while True:
-            form = input('> ')
-            try:
-                return options[int(form) - 1]
-            except (IndexError, ValueError):
-                print('That didn\'t work, try again.')
-
-    def prompt(self, false_name):
-        """Prompts user for true name and form based on false name."""
-        form = None
-        if self.name_proposals is not None:
-            # Name proposals initialized, add matching entries to options in prompt
-            matches = []
-            matches += self.name_proposals.search_by_false_name(false_name)
-            matches += self.name_proposals.search_by_true_name(false_name)
-            names_and_ratios = []
-            for match in matches:
-                if not match[0].true_name:
-                    # Skip items without true name
-                    continue
-                if match[1] == 100:
-                    # Exact match
-                    match[0].true_name += ' ✓'
-                if match[0].true_name not in [x[0] for x in names_and_ratios]:
-                    # New match
-                    names_and_ratios.append((match[0].true_name, match[1], match[0].form))
-                else:
-                    # Existing match, update ratio
-                    for i in range(len(names_and_ratios)):
-                        if match[0].true_name == names_and_ratios[i][0] and match[1] > names_and_ratios[i][1]:
-                            names_and_ratios[i] = (names_and_ratios[i][0], match[1], names_and_ratios[i][2])
-
-            name_options = [x[0] for x in sorted(names_and_ratios, key=lambda x: x[1], reverse=True)[:4]]
-            if false_name not in name_options:
-                name_options.append(false_name)  # Add the false name
-
-            # Prompt
-            true_name = self.prompt_true_name(name_options)
-
-            if true_name is None:
-                return None
-
-            # Find and replace true manufacturer name or prompt it
-            if self.manufacturers.find(true_name)[0] is None:
-                # Unknown manufacturer, find options with the two first words and prompt it
-                manufacturer_options = []
-                for i in range(1, min(3, len(true_name.split()))):
-                    candidate = ' '.join(true_name.split()[:i])
-                    print(candidate)
-                    manufacturer_options += self.manufacturers.search(candidate)
-                    if candidate not in [x[0] for x in manufacturer_options]:
-                        manufacturer_options.append((candidate, 0))
-                manufacturer_options = sorted(manufacturer_options, key=lambda x: x[1], reverse=True)
-                manufacturer_options = [x[0] for x in manufacturer_options]
-                manufacturer, replace = self.prompt_manufacturer(manufacturer_options)
-                _, match = self.manufacturers.find(manufacturer)
-                if match:
-                    # Add as a new variant in existing manufacturer
-                    for m in self.manufacturers.manufacturers:
-                        if m[0] == match:
-                            m.append(replace)
-                else:
-                    # Add new manufacturer
-                    self.manufacturers.manufacturers.append([manufacturer])
-                self.manufacturers.write()
-            # Replace
-            true_name = self.manufacturers.replace(true_name)
-
-            # Find the answer and select form
-            for name, ratio, f in names_and_ratios:
-                if true_name == name:
-                    form = f
-                    break
-            true_name = true_name.replace(' ✓', '')
-
-        else:
-            true_name = self.prompt_true_name([false_name])
-            form = None
-
-        if true_name is None:
-            # User skipped
-            return None
-
-        if form is None:
-            # Form not found in name proposals, prompt it
-            form = self.prompt_form()
-
-        return NameItem(false_name, true_name, form)
+                self.process(NameItem(false_name, true_name, form), url)
+            except FileNotFoundError as err:
+                print(err)
+                return
+            self.update_name_index(item)
+        return callback
 
     def process_new(self, prompt=True):
         """Processes all new measurements
@@ -241,38 +151,103 @@ class Crawler(ABC):
         Returns:
             None
         """
+        prompts = []
+        unknown_manufacturers = []
         for false_name, url in self.urls.items():
-            try:
-                ni = self.name_index.find(false_name=false_name)
-                item = ni.items[0] if ni else None
-
-                if item and item.form == 'ignore':
+            item = self.name_index.find_one(false_name=false_name)
+            if item and item.form == 'ignore':
+                continue
+            if not item:
+                if not prompt:
+                    print(f'{false_name} is unknown and prompting is prohibited, skipping the item.')
                     continue
-
-                if item and item.true_name:
-                    # Name index contains the entry
-                    if not self.existing.find(true_name=item.true_name):
-                        # Doesn't exist already
-                        self.process(item, url)
-
+                # Name doesn't exist in the name index
+                intermediate_name = self.intermediate_name(false_name)
+                manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
+                if manufacturer:
+                    model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE).strip()
+                    name_proposals = self.get_name_proposals(false_name)
+                    similar_names = self.get_name_proposals(false_name, n=6, normalize_digits=True, threshold=0)
+                    similar_names = [item.true_name for item in similar_names.items]
                 else:
-                    # Unknown item
-                    if prompt:
-                        # Prompt true name and form
-                        print(f'\n"{false_name}" is not known.')
-                        item = self.prompt(false_name)
-                        if item is None:
-                            self.name_index.update(NameItem(false_name, None, 'ignore'), false_name=false_name)
-                            continue
-                        self.name_index.update(item, false_name=false_name)
-                        self.process(item, url)
-                    else:
-                        print(f'"{false_name}" is not known. Add true name and form to name index and run again.')
-                        self.name_index.update(NameItem(false_name, None, None), false_name=false_name)
-                    self.write_name_index()
-            except Exception as err:
-                print(f'Processing failed for "{false_name}"')
-                raise err
+                    unknown_manufacturers.append(intermediate_name)
+                    model = intermediate_name
+                    name_proposals = None
+                    similar_names = None
+                # Not sure about the name, ask user
+                prompts.append(NamePrompt(
+                    model,
+                    self.prompt_callback(false_name, url),
+                    manufacturer=manufacturer,
+                    name_proposals=name_proposals,
+                    search_callback=self.search,
+                    false_name=false_name,
+                    similar_names=similar_names
+                ).widget)
+            else:
+                existing = self.existing.find_one(true_name=item.true_name)
+                if not existing:
+                    # Name found in name index but the measurement doesn't exist
+                    self.process(item, url)
+        if len(unknown_manufacturers) > 0:
+            print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
+            print('Add them to manufacturers.tsv and run this cell again')
+        self.prompts.children = prompts
+
+    def search(self, name):
+        quoted = urllib.parse.quote_plus(name)
+        url = f'https://google.com/search?q={quoted}&tbm=isch'
+        webbrowser.open(url)
+
+    def get_name_proposals(self, false_name, n=4, normalize_digits=False, normalize_extras=False, threshold=60):
+        """Prompts manufacturer, model and form from the user
+
+        Args:
+            false_name: Name as it exists in the measurement source
+            n: Number of proposals to return
+            normalize_digits: Normalize all digits to zeros before calculating fuzzy string matching score
+            normalize_extras: Remove extra details in the parentheses
+            threshold: Score threshold
+
+        Returns:
+            NameItem
+        """
+        def fuzzy(fn, a, b):
+            a = a.lower()
+            b = b.lower()
+            if normalize_digits:
+                a = re.sub(r'\d', '0', a).strip()
+                b = re.sub(r'\d', '0', b).strip()
+            if normalize_extras:
+                a = re.sub(r'\(.+\)$', '', a).strip()
+                b = re.sub(r'\(.+\)$', '', b).strip()
+            return fn(a, b)
+
+        manufacturer, manufacturer_match = self.manufacturers.find(false_name)
+        if not manufacturer:
+            return NameIndex([])
+        false_model = re.sub(re.escape(manufacturer_match), '', false_name, flags=re.IGNORECASE).strip()
+        # Select only the items with the same manufacturer
+        models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
+
+        # Calculate ratios
+        partial_ratios = [fuzzy(fuzz.partial_ratio, model, false_model) for model in models.model.tolist()]
+        ratios = [fuzzy(fuzz.ratio, model, false_model) for model in models.model.tolist()]
+
+        models = models.assign(partial_ratio=partial_ratios)
+        models = models.assign(ratio=ratios)
+        models = models[models.partial_ratio >= threshold]
+        models.sort_values('ratio', ascending=False, inplace=True)
+        proposals = []
+        for i, row in models.iterrows():
+            proposals.append(NameItem(None, f'{manufacturer} {row.model}', row.form))
+        ni = NameIndex(items=proposals)
+        ni.df = ni.df.head(n)
+        return ni
+
+    def intermediate_name(self, false_name):
+        """Gets intermediate name with false name."""
+        return false_name
 
     @staticmethod
     def download(url, true_name, output_dir, file_type=None):
@@ -296,7 +271,7 @@ class Crawler(ABC):
         if file_type is None:
             file_type = url.split('.')[-1]
             file_type = file_type.split('?')[0]
-        file_path = os.path.join(output_dir, '{}.{}'.format(true_name, file_type))
+        file_path = os.path.join(output_dir, f'{true_name}.{file_type}')
         with open(file_path, 'wb') as f:
             res.raw.decode_content = True
             shutil.copyfileobj(res.raw, f)

@@ -8,7 +8,6 @@ import pandas as pd
 import re
 from rapidfuzz import fuzz
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from measurements.utils import split_path
 
 
 class NameItem:
@@ -44,12 +43,26 @@ class NameIndex:
             items.append(NameItem(row['false_name'], row['true_name'], row['form']))
         return items
 
+    @staticmethod
+    def split_path(path):
+        components = []
+        while True:
+            path, file = os.path.split(path)
+            if file:
+                components.append(file)
+            elif path:
+                components.append(path)
+                break
+            else:
+                break
+        return components[::-1]
+
     @classmethod
     def read_files(cls, glob_pattern):
         rows = []
         for file in glob(glob_pattern, recursive=True):
             form = None
-            path_components = split_path(os.path.abspath(file))
+            path_components = cls.split_path(os.path.abspath(file))
             name = path_components[-1]
             for component in path_components:
                 if component in ['onear', 'inear', 'earbud']:
@@ -140,6 +153,11 @@ class NameIndex:
         """
         mask = self.mask(false_name=false_name, true_name=true_name, form=form)
         return NameIndex(rows=self.df.loc[mask].copy())
+
+    def find_one(self, **kwargs):
+        results = self.find(**kwargs)
+        if results:
+            return results.items[0]
 
     def search_by_false_name(self, name, threshold=80):
         """Finds all items which match closely to all given query parameters.

@@ -6,6 +6,9 @@ from glob import glob
 import re
 import numpy as np
 import requests
+
+from measurements.name_prompt import NamePrompt
+
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_index import NameIndex
 from measurements.crawler import Crawler
@@ -18,15 +21,15 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 class CrinacleCrawler(Crawler):
     def __init__(self, driver=None):
         self.book_name_index = None
+        self.parse_books()
         super().__init__(driver=driver)
 
-    def get_name_proposals(self):
+    def parse_books(self):
         """Downloads parses phone books to get names
 
         Returns:
             NameIndex
         """
-        names = super().get_name_proposals()
         rows = []
 
         # Ears-711 measurements name index
@@ -48,10 +51,6 @@ class CrinacleCrawler(Crawler):
             rows.append([false_name, true_name, 'onear'])
 
         self.book_name_index = NameIndex(rows)
-
-        names.concat(NameIndex(rows))
-        names.remove_duplicates()
-        return names
 
     @staticmethod
     def parse_book(data):
@@ -142,8 +141,12 @@ class CrinacleCrawler(Crawler):
         return file_paths
 
     def process(self, item, file_paths, target_dir=None):
+        if item.form == 'ignore':
+            return
+
         if target_dir is None:
             raise TypeError('"target_dir" must be given')
+
         avg_fr = FrequencyResponse(name=item.true_name)
         avg_fr.raw = np.zeros(avg_fr.frequency.shape)
         for fp in file_paths:
@@ -198,94 +201,15 @@ class CrinacleCrawler(Crawler):
         avg_fr.write_to_csv(file_path)
         print(f'Saved "{avg_fr.name}" to "{file_path}"')
 
-    def prompt(self, false_name, form=None):
-        """Prompts user for true name and form based on false name."""
-        if self.name_proposals is not None:
-            intermediate_name = self.book_name_index.find(false_name=false_name)
-            if len(intermediate_name) == 0:
-                intermediate_name = false_name
-            else:
-                intermediate_name = intermediate_name.items[0].true_name
-            # Name proposals initialized, add matching entries to options in prompt
-            matches = []
-            matches += self.name_proposals.search_by_false_name(intermediate_name)
-            matches += self.name_proposals.search_by_true_name(intermediate_name)
-            names_and_ratios = []
-            for match in matches:
-                if not match[0].true_name:
-                    # Skip items without true name
-                    continue
-                if form is not None and form != match[0].form:
-                    # Skip items which don't match the given form
-                    continue
-                if match[1] == 100:
-                    # Exact match
-                    match[0].true_name += ' ✓'
-                if match[0].true_name.replace(' ✓', '') not in [x[0].replace(' ✓', '') for x in names_and_ratios]:
-                    # New match
-                    names_and_ratios.append((match[0].true_name, match[1], match[0].form))
-                else:
-                    # Existing match, update ratio
-                    for i in range(len(names_and_ratios)):
-                        if match[0].true_name.replace(' ✓', '') == names_and_ratios[i][0].replace(' ✓', ''):
-                            if match[1] > names_and_ratios[i][1]:
-                                names_and_ratios[i] = (match[0].true_name, match[1], names_and_ratios[i][2])
-
-            name_options = [x[0] for x in sorted(names_and_ratios, key=lambda x: x[1], reverse=True)[:4]]
-            if intermediate_name not in [s.replace(' ✓', '') for s in name_options]:
-                name_options.append(intermediate_name)  # Add the false name
-
-            # Prompt
-            true_name = self.prompt_true_name(name_options)
-
-            if true_name is None:
-                return None
-
-            # Find and replace true manufacturer name or prompt it
-            if self.manufacturers.find(true_name)[0] is None:
-                # Unknown manufacturer, find options with the two first words and prompt it
-                manufacturer_options = []
-                for i in range(1, min(3, len(true_name.split()))):
-                    candidate = ' '.join(true_name.split()[:i])
-                    print(candidate)
-                    manufacturer_options += self.manufacturers.search(candidate)
-                    if candidate not in [x[0] for x in manufacturer_options]:
-                        manufacturer_options.append((candidate, 0))
-                manufacturer_options = sorted(manufacturer_options, key=lambda x: x[1], reverse=True)
-                manufacturer_options = [x[0] for x in manufacturer_options]
-                manufacturer, replace = self.prompt_manufacturer(manufacturer_options)
-                _, match = self.manufacturers.find(manufacturer)
-                if match:
-                    # Add as a new variant in existing manufacturer
-                    for m in self.manufacturers.manufacturers:
-                        if m[0] == match:
-                            m.append(replace)
-                else:
-                    # Add new manufacturer
-                    self.manufacturers.manufacturers.append([manufacturer])
-                self.manufacturers.write()
-            # Replace
-            true_name = self.manufacturers.replace(true_name)
-
-            # Find the answer and select form
-            for name, ratio, f in names_and_ratios:
-                if true_name == name:
-                    form = f
-                    break
-            true_name = true_name.replace(' ✓', '')
-
-        else:
-            true_name = self.prompt_true_name([false_name])
-
-        if true_name is None:
-            # User skipped
-            return None
-
-        if form is None:
-            # Form not found in name proposals, prompt it
-            form = self.prompt_form()
-
-        return NameItem(false_name, true_name, form)
+    def prompt_callback(self, false_name, file_paths, target_dir):
+        def callback(true_name, form):
+            if form == 'ignore':
+                self.update_name_index(NameItem(false_name, None, form))
+                return
+            item = NameItem(false_name, true_name, form)
+            self.process(item, file_paths, target_dir=target_dir)
+            self.update_name_index(item)
+        return callback
 
     def process_new(self, prompt=True):
         """Processes all new measurements
@@ -295,50 +219,85 @@ class CrinacleCrawler(Crawler):
         Returns:
             None
         """
+        prompts = []
+        unknown_manufacturers = []
         for false_name, rigs_and_file_paths in self.urls.items():
             for rig, file_paths in rigs_and_file_paths.items():
                 try:
-                    ni = self.name_index.find(false_name=false_name)
-                    item = ni.items[0] if ni else None
-
-                    if item and item.form == 'ignore':
-                        continue
-
-                    # TODO: Infer form from the file path
                     file_paths = [os.path.abspath(p) for p in file_paths]
                     if rig == 'gras':
-                        form = 'onear'
                         target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'GRAS 43AG-7')
-                    elif rig == 'legacy':
                         form = 'onear'
+                    elif rig == 'legacy':
                         target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'Ears-711')
+                        form = 'onear'
                     else:
-                        form = None
                         target_dir = os.path.join(DIR_PATH, 'data', 'inear')
+                        form = 'inear'
 
-                    if item and item.true_name:
-                        # Name index contains the entry
-                        if not self.existing.find(true_name=item.true_name):
-                            # Doesn't exist yet
-                            if form is not None:
-                                item.form = form
-                            self.process(item, file_paths, target_dir=target_dir)
-
-                    else:
-                        # Unknown item
-                        if prompt:
-                            # Prompt true name and form
-                            print(f'\n"{false_name}" is not known.')
-                            item = self.prompt(false_name, form=form)
-                            if item is None:
-                                self.name_index.update(NameItem(false_name, None, 'ignore'), false_name=false_name)
-                                continue
-                            self.name_index.update(item, false_name=false_name)
-                            self.process(item, file_paths, target_dir=target_dir)
+                    item = self.name_index.find_one(false_name=false_name)
+                    if item and item.form == 'ignore':
+                        continue
+                    if not item or not item.true_name or not item.form:
+                        if not prompt:
+                            print(f'{false_name} is unknown and prompting is prohibited, skipping the item.')
+                            continue
+                        # Name doesn't exist in the name index
+                        intermediate_name = self.intermediate_name(false_name)
+                        manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
+                        if manufacturer:
+                            model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE)
+                            model = model.strip()
+                            name_proposals = self.get_name_proposals(intermediate_name)
+                            similar_names = self.get_name_proposals(
+                                intermediate_name, n=6, normalize_digits=True, normalize_extras=True, threshold=0)
+                            similar_names = [item.true_name for item in similar_names.items]
                         else:
-                            print(f'"{false_name}" is not known. Add true name and form to name index and run again.')
-                            self.name_index.update(NameItem(false_name, None, None), false_name=false_name)
-                        self.write_name_index()
+                            unknown_manufacturers.append(intermediate_name)
+                            model = intermediate_name
+                            name_proposals = None
+                            similar_names = None
+                        # Not sure about the name, ask user
+                        prompts.append(NamePrompt(
+                            model,
+                            self.prompt_callback(false_name, file_paths, target_dir),
+                            manufacturer=manufacturer,
+                            name_proposals=name_proposals,
+                            search_callback=self.search,
+                            false_name=false_name,
+                            form=form,
+                            similar_names=similar_names
+                            ).widget)
+                    else:
+                        existing = self.existing.find_one(true_name=item.true_name)
+                        if not existing:
+                            self.process(item, file_paths, target_dir=target_dir)
                 except Exception as err:
                     print(f'Processing failed for "{false_name}"')
                     raise err
+        if len(unknown_manufacturers) > 0:
+            print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
+            print('Add them to manufacturers.tsv and run this cell again')
+        self.prompts.children = prompts
+
+    def intermediate_name(self, false_name):
+        """Gets intermediate name with false name."""
+        ni = self.book_name_index.find_one(false_name=false_name)
+        if ni:
+            name = ni.true_name
+            name = name.replace('(w/ ', '(')
+            name = name.replace(' pads)', ' earpads)')
+            if re.search(r'S\d$', name):
+                match = re.search(r'S\d$', name)[0]
+                name = name.replace(match, match.replace('S', 'sample '))
+            return name
+        return false_name
+
+
+def main():
+    crawler = CrinacleCrawler()
+    crawler.process_new(prompt=False)
+
+
+if __name__ == '__main__':
+    main()

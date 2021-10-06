@@ -22,14 +22,13 @@ def average_measurements(input_dir=None, output_dir=None):
 
     models = {}
     for file_path in glob(os.path.join(input_dir, '**', '*.csv'), recursive=True):
-        model = os.path.split(file_path)[-1]
+        model = os.path.split(file_path)[-1].replace('.csv', '')
         if not re.search(MOD_REGEX, model, re.IGNORECASE):
             continue
         norm = re.sub(MOD_REGEX, '', model, 0, flags=re.IGNORECASE)
-        try:
-            models[norm].append(model)
-        except KeyError as err:
-            models[norm] = [model]
+        if norm not in models:
+            models[norm] = []
+        models[norm].append(model)
 
     for norm, origs in models.items():
         if len(origs) > 1:
@@ -46,12 +45,14 @@ def average_measurements(input_dir=None, output_dir=None):
             os.makedirs(d, exist_ok=True)
             file_path = os.path.join(d, norm + '.csv')
             fr.write_to_csv(file_path)
+            print(f'Saved {norm} to {file_path}')
 
 
 def create_cli():
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument('--input_dir', type=str, required=True, help='Path to input directory.')
-    arg_parser.add_argument('--output_dir', type=str, required=True, help='Path to output directory.')
+    arg_parser.add_argument('--output_dir', type=str, required=False, default=argparse.SUPPRESS,
+                            help='Path to output directory.')
     cli_args = arg_parser.parse_args()
     return vars(cli_args)
 

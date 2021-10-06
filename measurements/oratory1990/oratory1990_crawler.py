@@ -10,6 +10,8 @@ from PIL import Image, ImageDraw
 import colorsys
 import numpy as np
 import shutil
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
@@ -20,6 +22,13 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 
 class Oratory1990Crawler(Crawler):
+    def __init__(self, driver=None):
+        if driver is None:
+            opts = Options()
+            opts.add_argument('--headless')
+            driver = webdriver.Chrome(os.path.abspath(os.path.join(DIR_PATH, '..', 'chromedriver')), options=opts)
+        super().__init__(driver=driver)
+
     @staticmethod
     def read_name_index():
         return NameIndex.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
@@ -37,7 +46,7 @@ class Oratory1990Crawler(Crawler):
 
         document = self.get_beautiful_soup('https://www.reddit.com/r/oratory1990/wiki/index/list_of_presets')
         urls = {}
-        table_header = document.find(id='wiki_full_list.3A')
+        table_header = document.find(id='wiki_full_list_of_eq_settings.3A')
         if table_header is None:
             raise RedditCrawlFailed('Could not read data in Reddit.')
         tbody = table_header.parent.find('table').find('tbody')
@@ -49,16 +58,8 @@ class Oratory1990Crawler(Crawler):
             # Parse cells
             manufacturer = cells[0].text.strip() if cells[0].text.strip() != '-' else manufacturer
             model = cells[1].text.strip() if cells[1].text.strip() != '-' else model
-            notes = cells[2].text.strip()
             url = cells[2].find('a')['href'].replace('?dl=0', '?dl=1')
-
-            # Find target curve name
-            target = re.search(r'(Harman AE/OE|Harman IE|oratory1990)', notes)
-            if not target:
-                # Skip all but Harman target results
-                continue
-            target = target[0]  # First match
-            notes = notes.replace(target, '').strip()  # Remove target from the notes
+            notes = cells[3].text.strip()
 
             words = [x.strip().lower() for x in notes.split()]
             if bool([x for x in ['band', 'eq', 'setting', 'crinacle', 'adi-2'] if x in words]):
@@ -72,7 +73,7 @@ class Oratory1990Crawler(Crawler):
                 urls[false_name] = url
 
         # Manual additions which have not been added to the list yet
-        urls['Avantone Planar'] = 'https://www.dropbox.com/s/o867ox65g124mp1/Avantone%20Planar.pdf?dl=1'
+        #urls['Avantone Planar'] = 'https://www.dropbox.com/s/o867ox65g124mp1/Avantone%20Planar.pdf?dl=1'
 
         return urls
 
@@ -188,6 +189,9 @@ class Oratory1990Crawler(Crawler):
         return Image.open(output_file)
 
     def process(self, item, url):
+        if item.form == 'ignore':
+            return
+
         pdf_dir = os.path.join(DIR_PATH, 'pdf')
         image_dir = os.path.join(DIR_PATH, 'images')
         inspection_dir = os.path.join(DIR_PATH, 'inspection')
@@ -222,3 +226,12 @@ class Oratory1990Crawler(Crawler):
 
 class RedditCrawlFailed(Exception):
     pass
+
+
+def main():
+    crawler = Oratory1990Crawler()
+    crawler.process_new(prompt=False)
+
+
+if __name__ == '__main__':
+    main()

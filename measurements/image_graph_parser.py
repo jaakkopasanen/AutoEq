@@ -14,7 +14,6 @@ sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from frequency_response import FrequencyResponse
 
 
-
 class ImageGraphParser:
     def __init__(self):
         self.images = dict()
