@@ -194,7 +194,8 @@ processing tools including parametric equalizer.
   
 From version 6.0.0 onwards, first select the `plugins` tab at
 the bottom of the screen, add the equalizer plugin, and load APO settings by clicking "Load APO Preset" and
-selecting the ParametricEQ.txt file. Pre-amp can be adjusted with the input slider.
+selecting the ParametricEQ.txt file. For EasyEffects <= 6.1.3, Pre-amp can be adjusted with the input slider.
+Later versions support reading this from ParametricEQ.txt.
 
 From version 5.0.0 onwards, PulseEffects was renamed to EasyEffects and
 uses PipeWire instead of PulseAudio as backend. Load eq settings by clicking the top center cog & clicking
