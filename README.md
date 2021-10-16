@@ -190,14 +190,26 @@ Viper4Android. It provides a system wide solution, has a convolution engine but 
 ### Linux
 #### PulseEffects / EasyEffects
 [PulseEffects / EasyEffects](https://github.com/wwmm/easyeffects) is a Linux module with wide variety of signal
-processing tools including parametric equalizer. From version 5.0.0 onwards, PulseEffects was renamed to EasyEffects and
-uses PipeWire instead of PulseAudio as backend. Load eq settings by clicking the top center cog & clicking
-*Import ACO Presets* button and select the ParametricEQ.txt file.  Pre-amp can be adjusted with the input slider.
+processing tools including convolution and parametric equalizers.
+  
+From version 4.7.2 onwards PulseEffects added support for convolution FIR filters. This is the recommended way to apply
+AutoEq presets. Click the waveform button above the stereo width controls, click "Import impulse" and select the AutoEq
+generated WAV file.
+  
+To use parametric eq, from version 6.0.0 onwards, first select the `plugins` tab at
+the bottom of the screen, add the equalizer plugin, and load APO settings by clicking "Load APO Preset" and
+selecting the ParametricEQ.txt file. For EasyEffects <= 6.1.3, Pre-amp can be adjusted with the input slider.
+Later versions support reading this from ParametricEQ.txt.
+  
+From version 5.0.0 onwards, PulseEffects was renamed to EasyEffects and uses PipeWire instead of PulseAudio as backend.
+Load eq settings by clicking the top center cog & clicking *Import ACO Presets* button and select the ParametricEQ.txt
+file.  Pre-amp can be adjusted with the input slider.
+  
 For versions prior to v4.8.0, adjust filter parameters by clicking the cog button on each filter
-and set type to "Bell" and adjust the gain with the slider. Number of filters can be changed by clicking the screwdriver
-and wrench button.
+and set type to "Bell", mode to "APO" and adjust the gain with the slider. Number of filters can be changed by clicking
+the screwdriver and wrench button.
 
-![pulseeffects](https://i.imgur.com/F51y5Kl.png)
+![pulseeffects](https://user-images.githubusercontent.com/32952512/112381638-6cd3b280-8d08-11eb-844a-b83600c6c02a.png)
 
 ### OSX / MacOS
 System wide parametric EQ solutions on OSX typically rely on separate plugin hosting software and the actual plugin
