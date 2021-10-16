@@ -206,10 +206,11 @@ which does the actual equalization.
 Pardon the lack of documentation for these. I have not tested any of the methods myself but they have been suggested by
 helpful AutoEQ users.
 
+[SoundSource](https://rogueamoeba.com/soundsource/) is the easiest way to use AutoEq on Mac since it comes with all of the
+profiles built in. The software is however not free.
 
 Audio plugin hosts include:
 - [MenuBus](https://www.menubus.audio/versions) has a free version but is no longer actively developed.
-- [SoundSource](https://rogueamoeba.com/soundsource/) is in active development but not free.
 - [Hosting AU](http://ju-x.com/hostingau.html) with [BlackHole](https://github.com/ExistentialAudio/BlackHole) or
 [Soundflower](https://github.com/mattingalls/Soundflower) can be used as a system wide AU plugin host.
 
