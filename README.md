@@ -194,7 +194,8 @@ processing tools including convolution and parametric equalizers.
   
 From version 4.7.2 onwards PulseEffects added support for convolution FIR filters. This is the recommended way to apply
 AutoEq presets. Click the waveform button above the stereo width controls, click "Import impulse" and select the AutoEq
-generated WAV file.
+generated WAV file. PulseEffects' convolver requires you to set the input gain to prevent clipping. The gain required
+by parametric eq should be sufficient, maybe 0.5 dB of negative gain more.
   
 To use parametric eq, from version 6.0.0 onwards, first select the `plugins` tab at
 the bottom of the screen, add the equalizer plugin, and load APO settings by clicking "Load APO Preset" and
