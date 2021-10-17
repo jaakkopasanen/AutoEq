@@ -3106,11 +3106,11 @@ from the same source.
 - [Lypertek Bevi](./crinacle/harman_in-ear_2019v2/Lypertek%20Bevi) by Crinacle
 - [Lypertek Tevi](./crinacle/harman_in-ear_2019v2/Lypertek%20Tevi) by Crinacle
 - [Lypertek Tevi](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Lypertek%20Tevi) by Reference Audio Analyzer
-- [LZ Audio Z05A](./oratory1990/harman_in-ear_2019v2/LZ%20Audio%20Z05A) by oratory1990
 - [LZ Hi-Fi Audio A4](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20A4) by Reference Audio Analyzer
 - [LZ Hi-Fi Audio A6 Mini (black)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20A6%20Mini%20(black)) by Reference Audio Analyzer
 - [LZ Hi-Fi Audio A6 Mini (blue)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20A6%20Mini%20(blue)) by Reference Audio Analyzer
 - [LZ Hi-Fi Audio A6 Mini (red)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20A6%20Mini%20(red)) by Reference Audio Analyzer
+- [LZ Hi-Fi Audio Z05A](./oratory1990/harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20Z05A) by oratory1990
 - [M-Audio IE-30](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/M-Audio%20IE-30) by Reference Audio Analyzer
 - [M-Audio IE-40](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/M-Audio%20IE-40) by Reference Audio Analyzer
 - [Mackie MP-360](./oratory1990/harman_in-ear_2019v2/Mackie%20MP-360) by oratory1990
@@ -3300,7 +3300,6 @@ from the same source.
 - [Moondrop x Crinacle Blessing2 Dusk (sample 5)](./crinacle/harman_in-ear_2019v2/Moondrop%20x%20Crinacle%20Blessing2%20Dusk%20(sample%205)) by Crinacle
 - [Moondrop x Crinacle Blessing2 Dusk](./crinacle/harman_in-ear_2019v2/Moondrop%20x%20Crinacle%20Blessing2%20Dusk) by Crinacle
 - [Motorola Squads 200](./rtings/rtings_harman_over-ear_2018/Motorola%20Squads%20200) by Rtings
-- [MPanda](./oratory1990/harman_over-ear_2018/MPanda) by oratory1990
 - [Mpow Bluetooth Over-Ear](./rtings/rtings_harman_over-ear_2018/Mpow%20Bluetooth%20Over-Ear) by Rtings
 - [Mpow CH1](./rtings/rtings_harman_over-ear_2018/Mpow%20CH1) by Rtings
 - [Mpow CH6](./rtings/rtings_harman_over-ear_2018/Mpow%20CH6) by Rtings

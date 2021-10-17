@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 3538 headphone models covered but if your headphone is missing you can create settings for
+This list has 3537 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -2269,11 +2269,11 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [LucidSound LS31](./rtings/rtings_harman_over-ear_2018/LucidSound%20LS31)
 - [Lypertek Bevi](./crinacle/harman_in-ear_2019v2/Lypertek%20Bevi)
 - [Lypertek Tevi](./crinacle/harman_in-ear_2019v2/Lypertek%20Tevi)
-- [LZ Audio Z05A](./oratory1990/harman_in-ear_2019v2/LZ%20Audio%20Z05A)
 - [LZ Hi-Fi Audio A4](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20A4)
 - [LZ Hi-Fi Audio A6 Mini (black)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20A6%20Mini%20(black))
 - [LZ Hi-Fi Audio A6 Mini (blue)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20A6%20Mini%20(blue))
 - [LZ Hi-Fi Audio A6 Mini (red)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20A6%20Mini%20(red))
+- [LZ Hi-Fi Audio Z05A](./oratory1990/harman_in-ear_2019v2/LZ%20Hi-Fi%20Audio%20Z05A)
 - [M-Audio IE-30](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/M-Audio%20IE-30)
 - [M-Audio IE-40](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/M-Audio%20IE-40)
 - [Mackie MP-360](./oratory1990/harman_in-ear_2019v2/Mackie%20MP-360)
@@ -2418,7 +2418,6 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Moondrop Variations](./crinacle/harman_in-ear_2019v2/Moondrop%20Variations)
 - [Moondrop x Crinacle Blessing2 Dusk](./crinacle/harman_in-ear_2019v2/Moondrop%20x%20Crinacle%20Blessing2%20Dusk%20(sample%205))
 - [Motorola Squads 200](./rtings/rtings_harman_over-ear_2018/Motorola%20Squads%20200)
-- [MPanda](./oratory1990/harman_over-ear_2018/MPanda)
 - [Mpow Bluetooth Over-Ear](./rtings/rtings_harman_over-ear_2018/Mpow%20Bluetooth%20Over-Ear)
 - [Mpow CH1](./rtings/rtings_harman_over-ear_2018/Mpow%20CH1)
 - [Mpow CH6](./rtings/rtings_harman_over-ear_2018/Mpow%20CH6)

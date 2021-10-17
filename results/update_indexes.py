@@ -262,6 +262,9 @@ def write_hesuvi_zip():
                 # Skip samples, there are averaged results available
                 continue
             manufacturer, _ = manufacturers.find(name)
+            if manufacturer is None:
+                print(f'Manufacturer could not be found for {name}')
+                continue
             name = manufacturers.model(name)
             arcname = f'eq/{manufacturer}/{name}.txt'
             if arcname in zip_files:
@@ -295,7 +298,6 @@ def ranking_row(file_path, target, form='onear'):
     elif form == 'inear':
         score, std, slope, mean = fr.harman_inear_preference_score()
         return [f'[{fr.name}]({url})', f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}', f'{mean:.2f}']
-
 
 
 def write_ranking_table():
