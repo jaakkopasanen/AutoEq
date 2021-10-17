@@ -368,7 +368,7 @@ def main():
     write_innerfidelity_index()
     write_crinacle_index()
     write_oratory1990_index()
-    #write_hesuvi_zip()
+    write_hesuvi_zip()
 
 
 if __name__ == '__main__':
