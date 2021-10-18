@@ -105,7 +105,7 @@ Fixed band equalizer settings look like this:
 | Peaking | 16000 Hz | 1.41 | -7.5 dB |
 
 ### Windows
-has [EqualizerAPO](#plain-equalizerapo), [Peace](#peace) and many media players with parametric equalizers such as
+has [EqualizerAPO](#equalizerapo), [Peace](#peace) and many media players with parametric equalizers such as
 [Neutron](https://www.microsoft.com/en-us/p/neutron-music-player/9nblggh4vp2h?activetab=pivot:overviewtab),
 [Roon](https://roonlabs.com/) and [Foobar2000](https://www.foobar2000.org/).
 
