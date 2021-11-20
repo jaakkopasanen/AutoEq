@@ -193,8 +193,8 @@ Viper4Android. It provides a system wide solution, has a convolution engine but 
 processing tools including convolution and parametric equalizers.
   
 From version 4.7.2 onwards PulseEffects added support for convolution FIR filters. This is the recommended way to apply
-AutoEq presets. Click the waveform button above the stereo width controls, click "Import impulse" and select the AutoEq
-generated WAV file. PulseEffects' convolver requires you to set the input gain to prevent clipping. The gain required
+AutoEq presets. Navigate to the plugins tab and add the convolver plugin, then click the waveform button above the stereo width controls (or just the 'Impulses' button as of 6.1.x), click "Import impulse" and select the AutoEq
+generated WAV file. You may also need to manually click 'load' in the Impulses menu for the filter to be fully loaded. PulseEffects' convolver requires you to set the input gain to prevent clipping. The gain required
 by parametric eq should be sufficient, maybe 0.5 dB of negative gain more.
   
 To use parametric eq, from version 6.0.0 onwards, first select the `plugins` tab at
