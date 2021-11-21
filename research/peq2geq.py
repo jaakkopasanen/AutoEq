@@ -60,19 +60,38 @@ def read_eqapo(file_path):
 
 
 def main():
-    parser = ArgumentParser()
-    parser.add_argument('--fc', type=float, nargs='+', help='Center frequencies in Hz')
-    parser.add_argument('--q', type=float, nargs='+', help='Qualities')
-    parser.add_argument('--gain', type=float, nargs='+', help='Gains')
+    parser = ArgumentParser('Turns parametric equalizer into EqualizerAPO\'s GraphicEQ.\nCan read filter parameters'
+                            'from fc, q, gain and type arguments and/or from EqualizerAPO configuration file.\n\n'
+                            'EqualizerAPO file has to contain lines such as\n'
+                            '    "Filter: ON PK Fc 15500 Hz Gain -18 dB Q 2"\n')
+    parser.add_argument('--fc', type=float, nargs='+',
+                        help='Center frequencies in Hz, separated by spaces')
+    parser.add_argument('--q', type=float, nargs='+',
+                        help='Qualities, separated by spaces')
+    parser.add_argument('--gain', type=float, nargs='+',
+                        help='Gains, separated by spaces')
     parser.add_argument('--type', nargs='+',
-                        help='Filter types. "PK" for peaking, LS for low-shelf and HS for high-shelf')
-    parser.add_argument('--file', type=str, default=SUPPRESS, help='Path to EqualizerAPO config file')
+                        help='Filter types. PK for peaking, LS for low-shelf and HS for high-shelf')
+    parser.add_argument('--file', type=str, default=SUPPRESS,
+                        help='Path to EqualizerAPO config file. Supports filters only.')
     parser.add_argument('--normalize', action='store_true', help='Normalize gain?')
     args = parser.parse_args()
-    if args.file:
-        print(peq2geq(*read_eqapo(args.file)))
+    if 'file' in args and args.file:
+        fcs, qs, gains, filts = read_eqapo(args.file)
     else:
-        print(peq2geq(args.fc, args.q, args.gain, args.type, normalize=args.normalize))
+        fcs, qs, gains, filts = [], [], [], []
+    if args.fc:
+        fcs += args.fc
+    if args.q:
+        qs += args.q
+    if args.gain:
+        gains += args.gain
+    if args.type:
+        filts += args.type
+    if not (len(fcs) == len(qs) == len(gains) == len(filts)):
+        print('Different number of Fc, Q, gain and filter types')
+        return
+    print(peq2geq(fcs, qs, gains, filts, normalize=args.normalize))
 
 
 if __name__ == '__main__':
