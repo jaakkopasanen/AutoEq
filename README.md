@@ -276,7 +276,7 @@ fancy graphical user interface but instead it is used from command line.
 ### Installing
 - Download and install Git: https://git-scm.com/downloads. When installing Git on Windows, use Windows SSL verification
 instead of Open SSL or you might run into problems when installing project dependencies.
-- Download and install 64-bit [Python 3.8](https://www.python.org/getit/). Make sure to check *Add Python 3.8 to PATH*.
+- Download and install 64-bit **[Python 3.8](https://www.python.org/getit/)**. Make sure to check *Add Python 3.8 to PATH*.
 - You may need to install [libsndfile](http://www.mega-nerd.com/libsndfile/) if you're having problems with `soundfile`
 when installing `requirements.txt`.
 - On Linux you may need to install Python dev packages  
@@ -294,6 +294,10 @@ git clone https://github.com/jaakkopasanen/AutoEq.git
 - Go to AutoEq location  
 ```bash
 cd AutoEq
+```
+- Check Python version. You should see Python 3.8.x printed out. If you see for example 3.9.x, you need to install Python **3.8**.
+```bash
+python --version
 ```
 - Create a python virtual environment
 ```bash
