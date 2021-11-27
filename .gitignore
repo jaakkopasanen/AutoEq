@@ -113,4 +113,5 @@ my_results/
 measurements/crinacle/*data*/
 measurements/crinacle/Raw measurements (Patreon)/
 results/crinacle/*/*/*.csv
+measurements/oratory1990/raw_data/
 chromedriver*
