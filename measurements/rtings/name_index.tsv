@@ -20,6 +20,7 @@ AKG N200	AKG N200	inear
 AKG N200 Wireless	AKG N200	inear
 AKG N60NC Wireless	AKG N60 NC Wireless	onear
 AKG N700NC	AKG N700NC	onear
+AKG N700NC M2 Wireless	AKG N700NC M2	onear
 AKG N700NC Wireless	AKG N700NC	onear
 AKG Q701	AKG Q701	onear
 Altec Lansing True Evo	Altec Lansing True Evo	inear
@@ -34,6 +35,7 @@ Anker SoundBuds Life	Anker SoundBuds Life	inear
 Anker SoundBuds Sport	Anker SoundBuds Sport	inear
 Anker Soundcore Liberty 2 Pro	Anker Soundcore Liberty 2 Pro	inear
 Anker Soundcore Liberty 2 Pro Truly Wireless	Anker Soundcore Liberty 2 Pro	inear
+Anker Soundcore Liberty 3 Pro Truly Wireless	Anker Soundcore Liberty 3 Pro	inear
 Anker SoundCore Liberty Air	Anker SoundCore Liberty Air	inear
 Anker SoundCore Liberty Air 2	Anker SoundCore Liberty Air 2	inear
 Anker Soundcore Liberty Air 2 Pro	Anker Soundcore Liberty Air 2 Pro	inear
@@ -62,6 +64,8 @@ Anker SoundCore Spirit X Wireless	Anker Soundcore Spirit X	inear
 Anker Zolo Liberty+	Anker Zolo Liberty+	inear
 Anker Zolo Liberty+ Truly Wireless	Anker Zolo Liberty+	inear
 Apple AirPods	Apple AirPods	earbud
+Apple AirPods (2nd generation) Truly Wireless	Apple AirPods 2nd generation	earbud
+Apple AirPods (3rd generation) Truly Wireless	Apple AirPods 3rd generation	earbud
 Apple AirPods 2 2019	Apple AirPods 2	earbud
 Apple AirPods 2 Truly Wireless 2019	Apple AirPods 2	earbud
 Apple AirPods Max	Apple AirPods Max	onear
@@ -185,6 +189,7 @@ Bose QuietComfort 25/QC25	Bose QuietComfort 25	onear
 Bose QuietComfort 35	Bose QuietComfort 35	onear
 Bose QuietComfort 35 II	Bose QuietComfort 35 II	onear
 Bose QuietComfort 35 II/QC35 II Wireless 2018	Bose QuietComfort 35 II	onear
+Bose QuietComfort 45/QC45 Wireless	Bose QuietComfort 45	onear
 Bose QuietComfort Earbuds	Bose QuietComfort Earbuds	inear
 Bose QuietComfort Earbuds Truly Wireless	Bose QuietComfort Earbuds	inear
 Bose QuietControl 30	Bose QuietControl 30	onear
@@ -259,6 +264,7 @@ Creative SXFI Air Wireless	Creative SXFI Air	onear
 Denon AHGC20	Denon AH-GC20	onear
 Diskin Wireless Bluetooth	Diskin Wireless Bluetooth	onear
 Dolby Dimension	Dolby Dimension	onear
+Drop + Sennheiser HD 8XX	Sennheiser HD 8XX	onear
 Drop + Sennheiser PC38X	Sennheiser PC38X	onear
 Drop + THX Panda Wireless	Massdrop Panda	onear
 EarFun Air Pro 2 True Wireless	EarFun Air Pro 2	inear
@@ -442,6 +448,7 @@ JBL TUNE 750BTNC Wireless	JBL TUNE 750BTNC	onear
 JBL Tune 760NC Wireless	JBL Tune 760NC	onear
 JBL UA True Wireless Flash	Under Armour True Wireless Flash	inear
 JBL Vibe 100TWS True Wireless	JBL Vibe 100TWS	inear
+JLab Audio GO Air POP True Wireless	JLab Audio GO Air POP	inear
 JLab Audio JBuds Air	JLab Audio JBuds Air	inear
 JLab Audio JBuds Air ANC	JLab Audio JBuds Air ANC	inear
 JLab Audio JBuds Air ANC Truly Wireless	JLab Audio JBuds Air ANC	inear
@@ -475,6 +482,7 @@ Logitech G432	Logitech G432	onear
 Logitech G432 Gaming Headset	Logitech G432	onear
 Logitech G433	Logitech G433	onear
 Logitech G433 Gaming Headset	Logitech G433	onear
+Logitech G435 LIGHTSPEED Wireless	Logitech G435 LIGHTSPEED	onear
 Logitech G533	Logitech G533	onear
 Logitech G533 Wireless Gaming Headset	Logitech G533	onear
 Logitech G635	Logitech G635	onear
@@ -600,6 +608,7 @@ Razer Hammerhead USB-C	Razer Hammerhead USB-C	inear
 Razer Hammerhead USB-C ANC	Razer Hammerhead USB-C ANC	inear
 Razer Kaira Pro	Razer Kaira Pro	onear
 Razer Kaira Pro Wireless	Razer Kaira Pro	onear
+Razer Kaira Pro Wireless for Xbox	Razer Kaira Pro for Xbox	onear
 Razer Kraken Pro V2	Razer Kraken Pro V2	onear
 Razer Kraken Tournament Edition	Razer Kraken Tournament Edition	onear
 Razer Kraken Ultimate	Razer Kraken Ultimate	onear
@@ -640,6 +649,7 @@ Samsung U Flex	Samsung U Flex	onear
 Sennheiser AMBEO Smart Headset	Sennheiser AMBEO Smart Headset	inear
 Sennheiser CX 400BT	Sennheiser CX 400BT	onear
 Sennheiser CX 400BT True Wireless	Sennheiser CX 400BT	onear
+Sennheiser CX Plus True Wireless	Sennheiser CX Plus True Wireless	inear
 Sennheiser CX True Wireless	Sennheiser CX True Wireless	inear
 Sennheiser CXC-700	Sennheiser CXC-700	inear
 Sennheiser Game One	Sennheiser GAME ONE	onear
@@ -756,6 +766,7 @@ Sony WF-1000X	Sony WF-1000X	inear
 Sony WF-1000XM3	Sony WF-1000XM3	inear
 Sony WF-1000XM3 Truly Wireless	Sony WF-1000XM3	inear
 Sony WF-1000XM4 Truly Wireless	Sony WF-1000XM4	inear
+Sony WF-C500 Truly Wireless	Sony WH-CH500	onear
 Sony WF-SP700N	Sony WF-SP700N	inear
 Sony WF-SP700N Truly Wireless	Sony WF-SP700N	inear
 Sony WF-SP800N	Sony WF-SP800N	inear
@@ -786,6 +797,7 @@ Sony WH-XB700	Sony WH-XB700	onear
 Sony WH-XB700 Wireless	Sony WH-XB700	onear
 Sony WH-XB900N	Sony WH-XB900N	onear
 Sony WH-XB900N Wireless	Sony WH-XB900N	onear
+Sony WH-XB910N Wireless	Sony WH-XB910N	onear
 Sony WI-1000X	Sony WI-1000X	inear
 Sony WI-1000X Wireless	Sony WI-1000X	inear
 Sony WI-1000XM2	Sony WI-1000XM2	inear
@@ -835,6 +847,7 @@ SteelSeries Arctis Prime	SteelSeries Arctis Prime	onear
 SteelSeries Arctis Pro GameDAC	SteelSeries Arctis Pro GameDAC	onear
 SteelSeries Arctis Pro Wireless	SteelSeries Arctis Pro Wireless	onear
 SteelSeries Siberia 200	SteelSeries Siberia 200	onear
+SteelSeries TUSQ	SteelSeries Tusq	inear
 Superlux HD 668B	Superlux HD 668B	onear
 Superlux HD 681	Superlux HD 681	onear
 Superlux HD 681 EVO	Superlux HD 681 EVO	onear
@@ -848,6 +861,7 @@ TaoTronics SoundLiberty 94	TaoTronics SoundLiberty 94	inear
 TaoTronics SoundLiberty 94 Truly Wireless	TaoTronics SoundLiberty 94	inear
 TaoTronics SoundLiberty 95	TaoTronics SoundLiberty 95	earbud
 TaoTronics SoundLiberty 95 Truly Wireless	TaoTronics SoundLiberty 95	earbud
+TaoTronics SoundSurge 60 Wireless	TaoTronics SoundSurge 60	onear
 TaoTronics TT-BH041		ignore
 TaoTronics TT-BH041 Bluetooth Headset		ignore
 TaoTronics TT-BH060	TaoTronics TT-BH060	onear
@@ -877,6 +891,7 @@ Turtle Beach Elite Atlas Aero	Turtle Beach Elite Atlas Aero	onear
 Turtle Beach Elite Atlas Aero Wireless	Turtle Beach Elite Atlas Aero	onear
 Turtle Beach Elite Pro 2 SuperAmp	Turtle Beach Elite Pro 2 SuperAmp	onear
 Turtle Beach Recon 200	Turtle Beach Recon 200	onear
+Turtle Beach Recon 200 Gen 2	Turtle Beach Recon 200 Gen 2	onear
 Turtle Beach Recon 500	Turtle Beach Recon 500	onear
 Turtle Beach Recon 50X	Turtle Beach Recon 50X	onear
 Turtle Beach Recon 70	Turtle Beach Recon 70	inear
@@ -897,6 +912,7 @@ Venstone X1	Venstone X1	inear
 Westone W40	Westone W40	inear
 Wyze Buds Pro Truly Wireless	Wyze Buds Pro	inear
 Wyze Noise-Cancelling Headphones Wireless	Wyze Noise-Cancelling Headphones	onear
+Xbox Stereo Headset	Xbox Stereo Headset	onear
 Xbox Wireless Headset	Xbox Wireless Headset	onear
 XFYRO xS2	XFYRO xS2	inear
 Ylife True Wireless Earbuds	Ylife True Wireless Earbuds	inear

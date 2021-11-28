@@ -381,6 +381,7 @@
 - [Sennheiser HD 800](./harman_over-ear_2018/Sennheiser%20HD%20800)
 - [Sennheiser HD 820](./harman_over-ear_2018/Sennheiser%20HD%20820)
 - [Sennheiser HD 8XX](./harman_over-ear_2018/Sennheiser%20HD%208XX)
+- [Sennheiser HD25-1 II](./harman_over-ear_2018/Sennheiser%20HD25-1%20II)
 - [Sennheiser HE 1 Orpheus 2](./harman_over-ear_2018/Sennheiser%20HE%201%20Orpheus%202)
 - [Sennheiser HE 90 Orpheus](./harman_over-ear_2018/Sennheiser%20HE%2090%20Orpheus)
 - [Sennheiser IE 4](./harman_in-ear_2019v2/Sennheiser%20IE%204)
