@@ -5,8 +5,6 @@ import sys
 from glob import glob
 import urllib
 import re
-import json
-from collections import OrderedDict
 import numpy as np
 from zipfile import ZipFile
 from tabulate import tabulate
@@ -264,6 +262,9 @@ def write_hesuvi_zip():
                 # Skip samples, there are averaged results available
                 continue
             manufacturer, _ = manufacturers.find(name)
+            if manufacturer is None:
+                print(f'Manufacturer could not be found for {name}')
+                continue
             name = manufacturers.model(name)
             arcname = f'eq/{manufacturer}/{name}.txt'
             if arcname in zip_files:
@@ -297,10 +298,6 @@ def ranking_row(file_path, target, form='onear'):
     elif form == 'inear':
         score, std, slope, mean = fr.harman_inear_preference_score()
         return [f'[{fr.name}]({url})', f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}', f'{mean:.2f}']
-    if '|' in f'[{fr.name}]({url})':
-        print(file_path)
-        print(fr.name)
-        print(f'[{fr.name}]({url})')
 
 
 def write_ranking_table():
@@ -321,8 +318,7 @@ def write_ranking_table():
         if row:
             onear_rows.append(row)
     onear_rows = sorted(onear_rows, key=lambda row: float(row[1]), reverse=True)
-    onear_str = tabulate(onear_rows, headers=['Name', 'Score', 'STD (dB)', 'Slope'], tablefmt='orgtbl')
-    onear_str = onear_str.replace('+', '|').replace('|-', '|:')
+    onear_str = tabulate(onear_rows, headers=['Name', 'Score', 'STD (dB)', 'Slope'], tablefmt='github')
 
     inear_rows = []
     # In-ear
@@ -336,8 +332,7 @@ def write_ranking_table():
         if row:
             inear_rows.append(row)
     inear_str = sorted(inear_rows, key=lambda row: float(row[1]), reverse=True)
-    inear_str = tabulate(inear_str, headers=['Name', 'Score', 'STD (dB)', 'Slope', 'Average (dB)'], tablefmt='orgtbl')
-    inear_str = inear_str.replace('-+-', '-|-').replace('|-', '|:')
+    inear_str = tabulate(inear_str, headers=['Name', 'Score', 'STD (dB)', 'Slope', 'Average (dB)'], tablefmt='github')
 
     s = f'''# Headphone Ranking
     Headphones ranked by Harman headphone listener preference scores.

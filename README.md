@@ -105,7 +105,7 @@ Fixed band equalizer settings look like this:
 | Peaking | 16000 Hz | 1.41 | -7.5 dB |
 
 ### Windows
-has [EqualizerAPO](#plain-equalizerapo), [Peace](#peace) and many media players with parametric equalizers such as
+has [EqualizerAPO](#equalizerapo), [Peace](#peace) and many media players with parametric equalizers such as
 [Neutron](https://www.microsoft.com/en-us/p/neutron-music-player/9nblggh4vp2h?activetab=pivot:overviewtab),
 [Roon](https://roonlabs.com/) and [Foobar2000](https://www.foobar2000.org/).
 
@@ -190,14 +190,27 @@ Viper4Android. It provides a system wide solution, has a convolution engine but 
 ### Linux
 #### PulseEffects / EasyEffects
 [PulseEffects / EasyEffects](https://github.com/wwmm/easyeffects) is a Linux module with wide variety of signal
-processing tools including parametric equalizer. From version 5.0.0 onwards, PulseEffects was renamed to EasyEffects and
-uses PipeWire instead of PulseAudio as backend. Load eq settings by clicking the top center cog & clicking
-*Import ACO Presets* button and select the ParametricEQ.txt file.  Pre-amp can be adjusted with the input slider.
+processing tools including convolution and parametric equalizers.
+  
+From version 4.7.2 onwards PulseEffects added support for convolution FIR filters. This is the recommended way to apply
+AutoEq presets. Navigate to the plugins tab and add the convolver plugin, then click the waveform button above the stereo width controls (or just the 'Impulses' button as of 6.1.x), click "Import impulse" and select the AutoEq
+generated WAV file. You may also need to manually click 'load' in the Impulses menu for the filter to be fully loaded. PulseEffects' convolver requires you to set the input gain to prevent clipping. The gain required
+by parametric eq should be sufficient, maybe 0.5 dB of negative gain more.
+  
+To use parametric eq, from version 6.0.0 onwards, first select the `plugins` tab at
+the bottom of the screen, add the equalizer plugin, and load APO settings by clicking "Load APO Preset" and
+selecting the ParametricEQ.txt file. For EasyEffects <= 6.1.3, Pre-amp can be adjusted with the input slider.
+Later versions support reading this from ParametricEQ.txt.
+  
+From version 5.0.0 onwards, PulseEffects was renamed to EasyEffects and uses PipeWire instead of PulseAudio as backend.
+Load eq settings by clicking the top center cog & clicking *Import ACO Presets* button and select the ParametricEQ.txt
+file.  Pre-amp can be adjusted with the input slider.
+  
 For versions prior to v4.8.0, adjust filter parameters by clicking the cog button on each filter
-and set type to "Bell" and adjust the gain with the slider. Number of filters can be changed by clicking the screwdriver
-and wrench button.
+and set type to "Bell", mode to "APO" and adjust the gain with the slider. Number of filters can be changed by clicking
+the screwdriver and wrench button.
 
-![pulseeffects](https://i.imgur.com/F51y5Kl.png)
+![pulseeffects](https://user-images.githubusercontent.com/32952512/112381638-6cd3b280-8d08-11eb-844a-b83600c6c02a.png)
 
 ### OSX / MacOS
 System wide parametric EQ solutions on OSX typically rely on separate plugin hosting software and the actual plugin
@@ -206,17 +219,18 @@ which does the actual equalization.
 Pardon the lack of documentation for these. I have not tested any of the methods myself but they have been suggested by
 helpful AutoEQ users.
 
+[SoundSource](https://rogueamoeba.com/soundsource/) is the easiest way to use AutoEq on Mac since it comes with all of the
+profiles built in. The software is however not free.
 
 Audio plugin hosts include:
 - [MenuBus](https://www.menubus.audio/versions) has a free version but is no longer actively developed.
-- [SoundSource](https://rogueamoeba.com/soundsource/) is in active development but not free.
 - [Hosting AU](http://ju-x.com/hostingau.html) with [BlackHole](https://github.com/ExistentialAudio/BlackHole) or
 [Soundflower](https://github.com/mattingalls/Soundflower) can be used as a system wide AU plugin host.
 
 EQ plugins include:
 - [Voxengo PrimeEQ](https://www.voxengo.com/product/primeeq/) is a parametric EQ plugin but is not free.
 - [Fabfilter Pro Q3](https://www.fabfilter.com/products/pro-q-3-equalizer-plug-in) is another parametric EQ plugin, more
-expensive than Voxengo but might be easier to install and use.
+expensive than Voxengo but might be easier to install and use. Note: Pro Q3 uses a different system and all Q values need to be multiplied by 1.41!
 - [LAConvolver plugin](http://audio.lernvall.com/) is a free convolver EQ which works with impulse response WAV files.
 - AUNBandEq comes built in with Mac OSX. Works at least with HostingAU + BlackHole
 
@@ -262,7 +276,7 @@ fancy graphical user interface but instead it is used from command line.
 ### Installing
 - Download and install Git: https://git-scm.com/downloads. When installing Git on Windows, use Windows SSL verification
 instead of Open SSL or you might run into problems when installing project dependencies.
-- Download and install 64-bit [Python 3.8](https://www.python.org/getit/). Make sure to check *Add Python 3.8 to PATH*.
+- Download and install 64-bit **[Python 3.8](https://www.python.org/getit/)**. Make sure to check *Add Python 3.8 to PATH*.
 - You may need to install [libsndfile](http://www.mega-nerd.com/libsndfile/) if you're having problems with `soundfile`
 when installing `requirements.txt`.
 - On Linux you may need to install Python dev packages  
@@ -280,6 +294,10 @@ git clone https://github.com/jaakkopasanen/AutoEq.git
 - Go to AutoEq location  
 ```bash
 cd AutoEq
+```
+- Check Python version. You should see Python 3.8.x printed out. If you see for example 3.9.x, you need to install Python **3.8**.
+```bash
+python --version
 ```
 - Create a python virtual environment
 ```bash
