@@ -30,6 +30,8 @@ from .model import RECOMMENDED, RESULTS
 from .const import SOURCES, REC_SRC
 
 FAVICO_DIR = os.path.join(current_app.root_path, 'static', 'favicon')
+MIME_IMG = 'image/'
+MIME_PNG = MIME_IMG + 'png'
 
 @current_app.context_processor
 def inject_stage_and_region():
@@ -61,34 +63,39 @@ def favicon():
 def favicon16():
     """Serve the favicon."""
     return send_from_directory(FAVICO_DIR,
-                               'favicon-16x16.png', mimetype='image/png')
+                               'favicon-16x16.png', mimetype=MIME_PNG)
 
 @current_app.route('/favicon-32x32.png')
 def favicon32():
     """Serve the favicon."""
     return send_from_directory(FAVICO_DIR,
-                               'favicon-32x32.png', mimetype='image/png')
+                               'favicon-32x32.png', mimetype=MIME_PNG)
 
 @current_app.route('/apple-touch-icon.png')
 def faviconapple():
     """Serve the favicon."""
     return send_from_directory(FAVICO_DIR,
-                               'apple-touch-icon.png', mimetype='image/png')
+                               'apple-touch-icon.png', mimetype=MIME_PNG)
 
 @current_app.route('/android-chrome-192x192.png')
 def favicon192():
     """Serve the favicon."""
     return send_from_directory(FAVICO_DIR,
-                               'android-chrome-192x192.png', mimetype='image/png')
+                               'android-chrome-192x192.png', mimetype=MIME_PNG)
 
 @current_app.route('/android-chrome-512x512.png')
 def favicon512():
     """Serve the favicon."""
     return send_from_directory(FAVICO_DIR,
-                               'android-chrome-512x512.png', mimetype='image/png')
+                               'android-chrome-512x512.png', mimetype=MIME_PNG)
 
 @current_app.route('/site-webmanifest')
 def webmanifest():
     """Serve the favicon."""
     return send_from_directory(FAVICO_DIR,
                                'site-webmanifest', mimetype='application/manifest+json')
+
+@current_app.route("/phones/<model>")
+def phones(model):
+    """Application home page."""
+    return render_template('phone.html', model=model)

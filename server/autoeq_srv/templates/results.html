@@ -15,12 +15,12 @@
     pair of convolution filters (WAV files). These correct your headphones to an
     appropriate Harman target. They should sound better using them, but YMMV.
   </p>
-  <table  class="table table-striped" data-toggle="table" data-search="true">
+  <table class="table table-striped" data-toggle="table" data-search="true" aria-describedby="Filters by headphone">
     <thead class="thead-dark">
       <tr>
-        <th data-field="type" data-sortable="false" searchable="false">Type</th>
-        <th data-field="name" data-sortable="true">Name</th>
-        <th data-field="download" data-sortable="false" searchable="false">Download Filters</th>
+        <th scope="col" data-field="type" data-sortable="false" searchable="false">Type</th>
+        <th scope="col" data-field="name" data-sortable="true">Name</th>
+        <th scope="col" data-field="download" data-sortable="false" searchable="false">Download Filters</th>
       </tr>
     </thead>
     <tbody>
@@ -38,7 +38,7 @@
 {% macro phone_row(model) %}
     <tr>
       <td><img src="{{ url_for('static', filename='img/' + model.type.icon) }}" alt="{{ model.type.alt }} headphones."/></td>
-      <td>{{ model.name }}</td>
+      <td><a href="/phones/{{ model.name }}">{{ model.name }}</a></td>
       <td><a href="/api/filters/{{ model.source }}/{{ model.target }}/{{ model.name }}"><i class="fas fa-file-archive fa-2x"></i></a></td>
     </tr>
 {% endmacro %}
