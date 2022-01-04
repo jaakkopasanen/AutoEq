@@ -335,6 +335,14 @@ cd AutoEq
 
 To learn more about virtual environments, read [Python' venv documentation](https://docs.python.org/3.8/library/venv.html).
 
+#### Docker Install
+[Docker](https://www.docker.com/) alleviates a lot of the problems with managing dependencies and runtime environment. In `Dockerfile`, you can edit the last line to change the EQ you want to generate. Note: only files saved in `my_results` directory will persist, edit `docker-compose.yml` accordingly to change it. 
+
+After you have installed Docker, run 
+```bash
+docker-compose up
+``` 
+
 #### Updating
 AutoEq is in active development and gets new measurements, results and features all the time. You can get the latest
 version from git
