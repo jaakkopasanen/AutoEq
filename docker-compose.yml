@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  autoeq:
+    build: .
+    volumes: 
+      - ./my_results:/myresults
