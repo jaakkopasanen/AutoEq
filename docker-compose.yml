@@ -4,4 +4,4 @@ services:
   autoeq:
     build: .
     volumes: 
-      - ./my_results:/myresults
+      - ./my_results:/my_results
