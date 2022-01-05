@@ -40,6 +40,7 @@ class FrequencyResponse:
                  parametric_eq=None,
                  fixed_band_eq=None,
                  equalized_raw=None,
+                 equalized_parametric=None,
                  equalized_smoothed=None,
                  target=None):
         if not name:
@@ -58,6 +59,7 @@ class FrequencyResponse:
         self.parametric_eq = self._init_data(parametric_eq)
         self.fixed_band_eq = self._init_data(fixed_band_eq)
         self.equalized_raw = self._init_data(equalized_raw)
+        self.equalized_parametric = self._init_data(equalized_parametric)
         self.equalized_smoothed = self._init_data(equalized_smoothed)
         self.target = self._init_data(target)
         self._sort()
@@ -74,6 +76,7 @@ class FrequencyResponse:
             parametric_eq=self._init_data(self.parametric_eq),
             fixed_band_eq=self._init_data(self.fixed_band_eq),
             equalized_raw=self._init_data(self.equalized_raw),
+            equalized_parametric=self._init_data(self.equalized_parametric),
             equalized_smoothed=self._init_data(self.equalized_smoothed),
             target=self._init_data(self.target)
         )
@@ -116,6 +119,8 @@ class FrequencyResponse:
             self.fixed_band_eq = self.fixed_band_eq[sorted_inds]
         if len(self.equalized_raw):
             self.equalized_raw = self.equalized_raw[sorted_inds]
+        if len(self.equalized_parametric):
+            self.equalized_parametric = self.equalized_parametric[sorted_inds]
         if len(self.equalized_smoothed):
             self.equalized_smoothed = self.equalized_smoothed[sorted_inds]
         if len(self.target):
@@ -130,6 +135,7 @@ class FrequencyResponse:
               fixed_band_eq=True,
               parametric_eq=True,
               equalized_raw=True,
+              equalized_parametric=True,
               equalized_smoothed=True,
               target=True):
         """Resets data."""
@@ -149,6 +155,8 @@ class FrequencyResponse:
             self.fixed_band_eq = self._init_data(None)
         if equalized_raw:
             self.equalized_raw = self._init_data(None)
+        if equalized_parametric:
+            self.equalized_parametric = self._init_data(None)
         if equalized_smoothed:
             self.equalized_smoothed = self._init_data(None)
         if target:
@@ -164,7 +172,7 @@ class FrequencyResponse:
         s = f.read()
 
         # Regex for AutoEq style CSV
-        header_pattern = r'frequency(,(raw|smoothed|error|error_smoothed|equalization|parametric_eq|fixed_band_eq|equalized_raw|equalized_smoothed|target))+'
+        header_pattern = r'frequency(,(raw|smoothed|error|error_smoothed|equalization|parametric_eq|fixed_band_eq|equalized_raw|equalized_parametric|equalized_smoothed|target))+'
         float_pattern = r'-?\d+\.?\d+'
         data_2_pattern = r'{fl}[ ,;:\t]+{fl}?'.format(fl=float_pattern)
         data_n_pattern = r'{fl}([ ,;:\t]+{fl})+?'.format(fl=float_pattern)
@@ -182,6 +190,7 @@ class FrequencyResponse:
             parametric_eq = list(df['parametric_eq']) if 'parametric_eq' in df else None
             fixed_band_eq = list(df['fixed_band_eq']) if 'fixed_band_eq' in df else None
             equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
+            equalized_parametric = list(df['equalised_parametric']) if 'equalized_parametric' in df else None
             equalized_smoothed = list(df['equalized_smoothed']) if 'equalized_smoothed' in df else None
             target = list(df['target']) if 'target' in df else None
             return cls(
@@ -195,6 +204,7 @@ class FrequencyResponse:
                 parametric_eq=parametric_eq,
                 fixed_band_eq=fixed_band_eq,
                 equalized_raw=equalized_raw,
+                equalized_parametric=equalized_parametric,
                 equalized_smoothed=equalized_smoothed,
                 target=target
             )
@@ -231,6 +241,8 @@ class FrequencyResponse:
             d['fixed_band_eq'] = [x if x is not None else 'NaN' for x in self.fixed_band_eq]
         if len(self.equalized_raw):
             d['equalized_raw'] = [x if x is not None else 'NaN' for x in self.equalized_raw]
+        if len(self.equalized_parametric):
+           d['equalized_parametric'] = [x if x is not None else 'NaN' for x in self.equalized_parametric] 
         if len(self.equalized_smoothed):
             d['equalized_smoothed'] = [x if x is not None else 'NaN' for x in self.equalized_smoothed]
         if len(self.target):
@@ -635,6 +647,7 @@ class FrequencyResponse:
             coeffs_a = np.vstack((coeffs_a, _coeffs_a))
             coeffs_b = np.vstack((coeffs_b, _coeffs_b))
 
+        self.equalized_parametric = self.raw + self.parametric_eq
         filters = np.transpose(np.vstack([fc, Q, gain]))
         return filters, n_produced, max_gains
 
@@ -1109,6 +1122,7 @@ class FrequencyResponse:
             parametric_eq=True,
             fixed_band_eq=True,
             equalized_raw=True,
+            equalized_parametric=True,
             equalized_smoothed=True,
             target=False
         )
@@ -1239,6 +1253,7 @@ class FrequencyResponse:
             parametric_eq=True,
             fixed_band_eq=True,
             equalized_raw=True,
+            equalized_parametric=True,
             equalized_smoothed=True,
             target=False
         )
@@ -1296,6 +1311,7 @@ class FrequencyResponse:
             parametric_eq=True,
             fixed_band_eq=True,
             equalized_raw=True,
+            equalized_parametric=True,
             equalized_smoothed=True,
             target=False
         )
@@ -1689,6 +1705,12 @@ class FrequencyResponse:
                 **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized', linewidth=1, color='blue')
             )
 
+        if parametric_eq and equalized and len(self.equalized_parametric):
+            ax.plot(
+                self.frequency, self.equalized_parametric,
+                **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized with Parametric', linewidth=1, color='blue', linestyle='--')
+            )
+            
         ax.set_xlabel('Frequency (Hz)')
         ax.semilogx()
         ax.set_xlim([f_min, f_max])
