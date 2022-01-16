@@ -223,6 +223,7 @@ helpful AutoEQ users.
 profiles built in. The software is however not free.
 
 Audio plugin hosts include:
+- Apple's own [AU Lab](https://www.apple.com/apple-music/apple-digital-masters/) hosts AU plugins and can be used as a system-wide audio output via [BlackHole](https://github.com/ExistentialAudio/BlackHole) or [Soundflower](https://github.com/mattingalls/Soundflower).
 - [MenuBus](https://www.menubus.audio/versions) has a free version but is no longer actively developed.
 - [Hosting AU](http://ju-x.com/hostingau.html) with [BlackHole](https://github.com/ExistentialAudio/BlackHole) or
 [Soundflower](https://github.com/mattingalls/Soundflower) can be used as a system wide AU plugin host.
