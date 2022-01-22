@@ -314,6 +314,7 @@ BGVP DMG	BGVP DMG	inear
 BGVP DMS	BGVP DMS	inear
 BGVP DS1 Pro	BGVP DS1 Pro	inear
 BGVP HIFI ArtMagic VG4	BGVP VG4	inear
+BGVP NS9	BGVP NS9	inear
 BGVP Q2	BGVP Q2	inear
 BGVP Q2 (bluetooth)	BGVP Q2 (wireless)	inear
 BGVP Q2 (wire connection)	BGVP Q2 (wired)	inear
@@ -608,6 +609,7 @@ Flares Gold	Flare Audio Flares Gold	inear
 FLC 8d	FLC Technology 8D	inear
 FLC 8D	FLC Technology 8D	inear
 FLC 8N	FLC Technology 8N	inear
+FLC 8P	FLC Technology 8P	inear
 FLC 8S	FLC Technology 8S	inear
 FLC Technology 8D (black)	FLC Technology 8D (black)	inear
 FLC Technology 8D (blue)	FLC Technology 8D (blue)	inear
@@ -664,8 +666,8 @@ Gerkules HDP DJ-PRO M1001	Gerkules HDP DJ-PRO M1001	onear
 German Maestro GMP 240	German Maestro GMP 240	onear
 German Maestro GMP 250	German Maestro GMP 250	onear
 German Maestro GMP 400	German Maestro GMP 400	onear
-German Maestro GMP 450 PRO	German Maestro GMP 450 PRO	onear
 German Maestro GMP 450 pro	German Maestro GMP 450 PRO	onear
+German Maestro GMP 450 PRO	German Maestro GMP 450 PRO	onear
 German Maestro GMP 8.300 D	German Maestro GMP 8.300 D	onear
 German Maestro GMP 8.35 D	German Maestro GMP 8.35 D	onear
 Gold Planar GL20	Gold Planar GL20	inear
@@ -865,9 +867,11 @@ KZ AS16	KZ AS16	inear
 KZ ATR	KZ ATR	inear
 KZ BA10	KZ BA10	inear
 KZ ED12	KZ ED12	inear
+KZ EDX	KZ EDX	inear
 KZ S1D	KZ S1D	inear
 KZ Z1	KZ Z1	inear
 KZ ZAX	KZ ZAX	inear
+KZ ZEX	KZ ZEX	inear
 KZ ZS10 Pro	KZ ZS10 Pro	inear
 KZ ZS6	KZ ZS6	ignore
 KZ ZS6 (close)	KZ ZS6 (closed vent)	ignore
@@ -1216,6 +1220,7 @@ Sivga Audio P-II	Sivga Audio P-II	onear
 Sivga Audio Phoenix	Sivga Audio Phoenix	onear
 Sivga Audio Phoenix (cushions 1)	Sivga Audio Phoenix (perforated leather earpads)	onear
 Sivga Audio Phoenix (cushions 2)	Sivga Audio Phoenix (hybrid earpads)	onear
+Sivga Audio Sivga SV021 Robin	Sivga Audio Robin	onear
 Skullcandy SK Pro	Skullcandy SK Pro	onear
 Smabat ST 10s	Smabat ST 10s	inear
 Smabat X1	Smabat X1	inear
@@ -1368,6 +1373,7 @@ Tin HiFi T2	Tin HiFi T2	inear
 Tin HiFi T2 Pro	Tin HiFi T2 Pro	inear
 Tin HiFi T3	Tin HiFi T3	inear
 Tin HiFi T4	Tin HiFi T4	inear
+Tin HiFi T5	Tin HiFi T5	inear
 Trinity Audio ICARUS III	Trinity Audio ICARUS III	inear
 TRN ST1	TRN ST1	inear
 TRN VX	TRN VX	inear
@@ -1437,10 +1443,10 @@ Whizzer A15	Whizzer A15	inear
 Whizzer A15pro	Whizzer A15 Pro	inear
 Whizzer C3	Whizzer C3	inear
 Whizzer HE03	Whizzer A-HE03 Kylin	inear
-Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vector)	Whizzer A-HE03 (vector)	inear
-Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
+Whizzer HE03 (vector)	Whizzer A-HE03 Kylin (vector)	inear
 Whizzer HE03 (vent sealed)	Whizzer A-HE03 Kylin (vent sealed)	inear
+Whizzer HE03 (vent sealed)	Whizzer A-HE03 (vent sealed)	inear
 Whizzer TP1	Whizzer TP1	inear
 Whizzer TP1 (closed vent)	Whizzer TP1 (closed vent)	inear
 Whizzer TP1s	Whizzer TP1s	inear
