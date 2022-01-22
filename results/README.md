@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 3593 headphone models covered but if your headphone is missing you can create settings for
+This list has 3595 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -1368,6 +1368,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [FiiO FH5s (mid switch on)](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(mid%20switch%20on))
 - [FiiO FH5s (treble switch on)](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(treble%20switch%20on))
 - [FiiO FH7](./crinacle/harman_in-ear_2019v2/FiiO%20FH7)
+- [FiiO FHE Eclipse](./crinacle/harman_in-ear_2019v2/FiiO%20FHE%20Eclipse)
 - [Final Audio A3000](./crinacle/harman_in-ear_2019v2/Final%20Audio%20A3000)
 - [Final Audio A4000](./crinacle/harman_in-ear_2019v2/Final%20Audio%20A4000)
 - [Final Audio A8000](./oratory1990/harman_in-ear_2019v2/Final%20Audio%20A8000)
@@ -2438,6 +2439,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Montblanc MB 01 (wired, ANC off)](./crinacle/gras_43ag-7_harman_over-ear_2018/Montblanc%20MB%2001%20(wired,%20ANC%20off))
 - [Montblanc MB 01 (wireless, ANC)](./crinacle/gras_43ag-7_harman_over-ear_2018/Montblanc%20MB%2001%20(wireless,%20ANC))
 - [Moondrop A8](./crinacle/harman_in-ear_2019v2/Moondrop%20A8)
+- [Moondrop Aria 2021](./crinacle/harman_in-ear_2019v2/Moondrop%20Aria%202021)
 - [Moondrop Blessing](./oratory1990/harman_in-ear_2019v2/Moondrop%20Blessing)
 - [Moondrop Blessing 2](./crinacle/harman_in-ear_2019v2/Moondrop%20Blessing%202)
 - [Moondrop Crescent](./oratory1990/harman_in-ear_2019v2/Moondrop%20Crescent)

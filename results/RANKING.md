@@ -472,6 +472,7 @@ preference scoring developed by Sean Olive et al.
 | [DUNU SA6 (default mode)](./crinacle/harman_in-ear_2019v2/DUNU%20SA6%20(default%20mode))                                                               |      73 |       2.33 |   -0.26 |           1.53 |
 | [Fearless Audio Shangri-la](./crinacle/harman_in-ear_2019v2/Fearless%20Audio%20Shangri-la)                                                             |      73 |       2.22 |   -0.37 |           1.63 |
 | [FiiO FH5s (treble switch on)](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(treble%20switch%20on))                                                   |      73 |       2.1  |    0.49 |           1.59 |
+| [Moondrop Aria 2021](./crinacle/harman_in-ear_2019v2/Moondrop%20Aria%202021)                                                                           |      73 |       2.15 |   -0.42 |           1.62 |
 | [Moondrop Kato (brass nozzle)](./crinacle/harman_in-ear_2019v2/Moondrop%20Kato%20(brass%20nozzle))                                                     |      73 |       2.21 |   -0.36 |           1.74 |
 | [Moondrop Quarks](./crinacle/harman_in-ear_2019v2/Moondrop%20Quarks)                                                                                   |      73 |       2.27 |   -0.24 |           1.92 |
 | [Simphonio RX10](./crinacle/harman_in-ear_2019v2/Simphonio%20RX10)                                                                                     |      73 |       2.21 |   -0.28 |           1.73 |
@@ -559,6 +560,7 @@ preference scoring developed by Sean Olive et al.
 | [Tanchjim Tanya](./crinacle/harman_in-ear_2019v2/Tanchjim%20Tanya)                                                                                     |      64 |       2.68 |   -0.78 |           2.39 |
 | [SoundMAGIC E50C](./oratory1990/harman_in-ear_2019v2/SoundMAGIC%20E50C)                                                                                |      64 |       2.96 |   -0.38 |           2.34 |
 | [Alclair Electro](./crinacle/harman_in-ear_2019v2/Alclair%20Electro)                                                                                   |      63 |       2.86 |   -0.79 |           2.26 |
+| [FiiO FHE Eclipse](./crinacle/harman_in-ear_2019v2/FiiO%20FHE%20Eclipse)                                                                               |      63 |       2.62 |   -1.18 |           2.1  |
 | [Oriolus Traillii](./crinacle/harman_in-ear_2019v2/Oriolus%20Traillii)                                                                                 |      63 |       2.82 |   -0.86 |           2.11 |
 | [qdc 8SL](./crinacle/harman_in-ear_2019v2/qdc%208SL)                                                                                                   |      63 |       2.79 |   -0.78 |           2.18 |
 | [Simphonio VR1](./crinacle/harman_in-ear_2019v2/Simphonio%20VR1)                                                                                       |      63 |       2.9  |   -0.55 |           2.38 |

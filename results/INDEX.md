@@ -1915,6 +1915,7 @@ from the same source.
 - [FiiO FH5s (treble switch on)](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s%20(treble%20switch%20on)) by Crinacle
 - [FiiO FH5s](./crinacle/harman_in-ear_2019v2/FiiO%20FH5s) by Crinacle
 - [FiiO FH7](./crinacle/harman_in-ear_2019v2/FiiO%20FH7) by Crinacle
+- [FiiO FHE Eclipse](./crinacle/harman_in-ear_2019v2/FiiO%20FHE%20Eclipse) by Crinacle
 - [Final Audio A3000](./crinacle/harman_in-ear_2019v2/Final%20Audio%20A3000) by Crinacle
 - [Final Audio A4000](./crinacle/harman_in-ear_2019v2/Final%20Audio%20A4000) by Crinacle
 - [Final Audio A8000](./crinacle/harman_in-ear_2019v2/Final%20Audio%20A8000) by Crinacle
@@ -3316,6 +3317,7 @@ from the same source.
 - [Montblanc MB 01 (wired, ANC off)](./crinacle/gras_43ag-7_harman_over-ear_2018/Montblanc%20MB%2001%20(wired,%20ANC%20off)) by Crinacle, GRAS 43AG-7
 - [Montblanc MB 01 (wireless, ANC)](./crinacle/gras_43ag-7_harman_over-ear_2018/Montblanc%20MB%2001%20(wireless,%20ANC)) by Crinacle, GRAS 43AG-7
 - [Moondrop A8](./crinacle/harman_in-ear_2019v2/Moondrop%20A8) by Crinacle
+- [Moondrop Aria 2021](./crinacle/harman_in-ear_2019v2/Moondrop%20Aria%202021) by Crinacle
 - [Moondrop Blessing 2 (sample 1)](./crinacle/harman_in-ear_2019v2/Moondrop%20Blessing%202%20(sample%201)) by Crinacle
 - [Moondrop Blessing 2 (sample 2)](./crinacle/harman_in-ear_2019v2/Moondrop%20Blessing%202%20(sample%202)) by Crinacle
 - [Moondrop Blessing 2](./crinacle/harman_in-ear_2019v2/Moondrop%20Blessing%202) by Crinacle
