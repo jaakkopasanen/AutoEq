@@ -212,6 +212,20 @@ the screwdriver and wrench button.
 
 ![pulseeffects](https://user-images.githubusercontent.com/32952512/112381638-6cd3b280-8d08-11eb-844a-b83600c6c02a.png)
 
+#### JamesDSP for Linux
+[JamesDSP for Linux](https://github.com/Audio4Linux/JDSP4Linux) is a digital signal processor for Linux systems using PipeWire or PulseAudio. JamesDSP mainly supports 3 ways to load AutoEQ profiles: the graphic equalizer, the DDC parametric equalizer, and the convolver.
+
+##### Graphic equalizer (AutoEQ support out of the box)
+JamesDSP's graphic equalizer feature supports AutoEQ presets right out of the box (with an internet connection). To use an AutoEQ preset, open JamesDSP and select the "Graphic EQ" tab. Enable the graphic equalizer using the checkbox in the top right, then select the "AutoEQ database..." button. There may be a prompt to download the latest AutoEQ database, if so press "OK" to download it. Filter headphones in the database using the "Filter..." bar, and select the headphones you'd like to equalize.
+
+##### Parametric EQ using DDCToolbox (AutoEQ support, requires a separate program to generate EQ profiles)
+JamesDSP ships with a parametric equalizer, however it is controlled with VDC files. To generate these files, a separate program like [DDCToolbox](https://github.com/thepbone/DDCToolbox) is needed. Once installed, open it and go to "Project" in the top bar and select "Download from AutoEQ...". A window will open where headphones can be searched. Once found, select your headphones and hit "OK". The interface should populate with the parametric EQ settings. Go to "Project" -> "Export" -> "VDC File" and save the file to a place where it can be found later. In JamesDSP, go to the "DDC" tab, check the "Enable ViPER-DDC" checkbox, and then browse to the folder where you saved the VDC file earlier. It should appear in the list of available files, where it can then be selected.
+
+##### Convolver
+JamesDSP also ships with a convolver, although it does not download the files from the AutoEQ database automatically. In JamesDSP, select the "Convolver" tab, and then enable the convolver using the checkbox. Browse to the folder where the impulse WAV was downloaded using the "..." button. It should be available in the list of WAV files, which then should be selected from.
+
+![Screenshot of JamesDSP for Linux](https://i.imgur.com/7hvGK5d.png "Screenshot of JamesDSP")
+
 ### OSX / MacOS
 System wide parametric EQ solutions on OSX typically rely on separate plugin hosting software and the actual plugin
 which does the actual equalization.
