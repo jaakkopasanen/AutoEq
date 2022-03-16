@@ -1752,7 +1752,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [HIFIMAN RE800](./crinacle/harman_in-ear_2019v2/HIFIMAN%20RE800)
 - [HIFIMAN Shangri-La](./oratory1990/harman_over-ear_2018/HIFIMAN%20Shangri-La)
 - [HIFIMAN Shangri-La Jr](./crinacle/gras_43ag-7_harman_over-ear_2018/HIFIMAN%20Shangri-La%20Jr)
-- [HIFIMAN Sundara](./crinacle/gras_43ag-7_harman_over-ear_2018/HIFIMAN%20Sundara)
+- [HIFIMAN Sundara](./oratory1990/harman_over-ear_2018/HIFIMAN%20Sundara)
 - [HIFIMAN Sundara (2020 revised earpads)](./oratory1990/harman_over-ear_2018/HIFIMAN%20Sundara%20(2020%20revised%20earpads))
 - [HIFIMAN Sundara (pre-2020 earpad revision)](./oratory1990/harman_over-ear_2018/HIFIMAN%20Sundara%20(pre-2020%20earpad%20revision))
 - [HIFIMAN Sundara 2018](./rtings/rtings_harman_over-ear_2018/HIFIMAN%20Sundara%202018)

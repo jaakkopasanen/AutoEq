@@ -241,6 +241,7 @@
 - [HIFIMAN Shangri-La](./harman_over-ear_2018/HIFIMAN%20Shangri-La)
 - [HIFIMAN Sundara (2020 revised earpads)](./harman_over-ear_2018/HIFIMAN%20Sundara%20(2020%20revised%20earpads))
 - [HIFIMAN Sundara (pre-2020 earpad revision)](./harman_over-ear_2018/HIFIMAN%20Sundara%20(pre-2020%20earpad%20revision))
+- [HIFIMAN Sundara](./harman_over-ear_2018/HIFIMAN%20Sundara)
 - [HIFIMAN Susvara](./harman_over-ear_2018/HIFIMAN%20Susvara)
 - [Huawei Freebuds 4i](./harman_in-ear_2019v2/Huawei%20Freebuds%204i)
 - [HyperX Cloud Alpha](./harman_over-ear_2018/HyperX%20Cloud%20Alpha)

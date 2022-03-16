@@ -57,6 +57,7 @@ preference scoring developed by Sean Olive et al.
 | [HIFIMAN Ananda](./oratory1990/harman_over-ear_2018/HIFIMAN%20Ananda)                                                                                                     |      84 |       2.32 |   -0.09 |
 | [Beyerdynamic DT880 Black Edition](./oratory1990/harman_over-ear_2018/Beyerdynamic%20DT880%20Black%20Edition)                                                             |      84 |       2.33 |   -0.06 |
 | [Stax SR-L700](./oratory1990/harman_over-ear_2018/Stax%20SR-L700)                                                                                                         |      84 |       2.38 |    0.03 |
+| [HIFIMAN Sundara](./oratory1990/harman_over-ear_2018/HIFIMAN%20Sundara)                                                                                                   |      84 |       2.17 |    0.22 |
 | [AKG K702 65th Anniversary Edition](./oratory1990/harman_over-ear_2018/AKG%20K702%2065th%20Anniversary%20Edition)                                                         |      84 |       2.28 |   -0.09 |
 | [Stax SR-Lambda Pro](./oratory1990/harman_over-ear_2018/Stax%20SR-Lambda%20Pro)                                                                                           |      83 |       2.32 |   -0.13 |
 | [Superlux HD 660 Pro 150 Ohm](./oratory1990/harman_over-ear_2018/Superlux%20HD%20660%20Pro%20150%20Ohm)                                                                   |      83 |       2.24 |   -0.22 |
