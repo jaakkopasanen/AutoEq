@@ -115,6 +115,8 @@ Beyerdynamic DT1990 (Balanced Earpads)	Beyerdynamic DT 1990 (balanced earpads)	o
 Beyerdynamic DT1990 (Dekoni Elite Velours Earpads)	Beyerdynamic DT1990 (Dekoni lite Velours Earpads)	onear
 Beyerdynamic DT240	Beyerdynamic DT 240	onear
 Beyerdynamic DT250	Beyerdynamic DT 250	onear
+Beyerdynamic DT250 (250 Ohm Version)	Beyerdynamic DT 250 250 Ohm	onear
+Beyerdynamic DT250 (80 Ohm version)	Beyerdynamic DT 250 80 Ohm	onear
 Beyerdynamic DT770 (Dekoni Hybrid Earpads)	Beyerdynamic DT 770 250 Ohm (Dekoni hybrid earpads)	onear
 Beyerdynamic DT770 (fresh earpads)	Beyerdynamic DT 770 250 Ohm	onear
 Beyerdynamic DT770 (fresh earpads,)	Beyerdynamic DT 770 250 Ohm (fresh earpads,)	ignore
@@ -134,7 +136,9 @@ Beyerdynamic Lagoon (preliminary)	Beyerdynamic Lagoon	onear
 Beyerdynamic MMX300	Beyerdynamic MMX 300	onear
 Beyerdynamic MMX300 (Dekoni Choice Leather Earpads)	Beyerdynamic MMX 300 (Dekoni Choice leather earpads)	onear
 Beyerdynamic T1 2nd	Beyerdynamic T1 2nd Generation	onear
+Beyerdynamic T1 2nd Generation	Beyerdynamic T1 2nd Generation	onear
 Beyerdynamic T1 3rd	Beyerdynamic T1 3rd Generation	onear
+Beyerdynamic T1 3rd Generation	Beyerdynamic T1 3rd Generation	onear
 Beyerdynamic T1.2	Beyerdynamic T1 2nd Generation	onear
 Beyerdynamic T5 3rd Generation	Beyerdynamic T5 3rd Generation	onear
 Beyerdynamic Xelento	Beyerdynamic Xelento	inear
@@ -296,8 +300,8 @@ Koss KPH30i	Koss KPH30i	onear
 Koss KPH30i (Grado GS1000 earpads)	Koss KPH30i (Grado GS1000 earpads)	onear
 Koss KSC75	Koss KSC75	onear
 Koss KSC75 (Diffuse-Field)		ignore
-Koss KSC75X (Yaxi Earpads)	Koss KSC75X (Yaxi arpads)	onear
 Koss KSC75X (Yaxi earpads)	Koss KSC75X (Yaxi earpads)	onear
+Koss KSC75X (Yaxi Earpads)	Koss KSC75X (Yaxi arpads)	onear
 Koss Porta Pro	Koss Porta Pro	onear
 Koss Porta Pro (Yaxi Earpads)	Koss Porta Pro (Yaxi earpads)	onear
 KZ ATE	KZ ATE	inear
@@ -405,7 +409,7 @@ Sennheiser CX2.00	Sennheiser CX 2.00	inear
 Sennheiser CX3.00	Sennheiser CX 3.00	inear
 Sennheiser G4ME ONE	Sennheiser GAME ONE	onear
 Sennheiser HD25-1 II		ignore
-Sennheiser HD25-1 II (bad seal)		ignore
+Sennheiser HD25-1 II (bad seal)	Sennheiser HD25-1 II (bad seal)	onear
 Sennheiser HD25-1 II (good seal)	Sennheiser HD25-1 II	onear
 Sennheiser HD518	Sennheiser HD 518	onear
 Sennheiser HD540 reference-II	Sennheiser HD 540 reference-II	onear
@@ -431,7 +435,7 @@ Sennheiser HD800S	Sennheiser HD 800 S	onear
 Sennheiser HD800S (Dekoni Fenestrated Sheepskin Earpads)	Sennheiser HD 800 S (Dekoni fenestrated sheepskin earpads)	onear
 Sennheiser HD820	Sennheiser HD 820	onear
 Sennheiser HD8XX (preliminary)	Sennheiser HD 8XX	onear
-Sennheiser HE1	Sennheiser HE 1 Orpheus 2	ignore
+Sennheiser HE1	Sennheiser HE 1 Orpheus 2	onear
 "Sennheiser HE90 ""Orpheus"""	Sennheiser HE 90 Orpheus	onear
 Sennheiser IE4	Sennheiser IE 4	inear
 Sennheiser IE800	Sennheiser IE 800	inear
@@ -484,7 +488,11 @@ Sony MH750	Sony MH750	inear
 Sony MH755	Sony MH755	inear
 Sony WF-1000X	Sony WF-1000X	inear
 Sony WF-1000XM3	Sony WF-1000XM3	inear
+Sony WF-1000XM4	Sony WF-1000XM4	inear
 Sony WF-XB700	Sony WF-XB700	inear
+Sony WH-1000XM2	Sony WH-1000XM2	onear
+Sony WH-1000XM3	Sony WH-1000XM3	onear
+Sony WH-1000XM4	Sony WH-1000XM4	onear
 Sony WH-H900N	Sony WH-H900N	onear
 Sony WH1000XM2	Sony WH-1000XM2	onear
 Sony WH1000XM3	Sony WH-1000XM3	onear
