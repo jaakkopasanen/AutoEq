@@ -212,7 +212,7 @@ the screwdriver and wrench button.
 
 ![pulseeffects](https://user-images.githubusercontent.com/32952512/112381638-6cd3b280-8d08-11eb-844a-b83600c6c02a.png)
 #### JamesDSP
-[JamesDSP](https://github.com/Audio4Linux/JDSP4Linux) is an alternative to PulseEffects / EasyEffects if it does not work. It has less features than EasyEffects, but it has support for AutoEQ lookups built-in. After the initial setup, go to the "Graphic EQ" tab, click 'Enable Graphic EQ', and click 'AutoEQ database...'. After downloading the database onto your system, you can look up the model of headphones to apply.
+[JamesDSP](https://github.com/Audio4Linux/JDSP4Linux) is an alternative to PulseEffects / EasyEffects if it does not work. It only supports PipeWire, but it has support for AutoEQ lookups built-in. After the initial setup, go to the "Graphic EQ" tab, click 'Enable Graphic EQ', and click 'AutoEQ database...'. After downloading the database onto your system, you can look up the model of headphones to apply.
 ![JamesDSP](https://i.imgur.com/TpX9rI9.png)
      
 ### OSX / MacOS
