@@ -214,6 +214,7 @@ the screwdriver and wrench button.
 #### JamesDSP
 [JamesDSP](https://github.com/Audio4Linux/JDSP4Linux) is an alternative to PulseEffects / EasyEffects if it does not work. It has less features than EasyEffects, but it has support for AutoEQ lookups built-in. After the initial setup, go to the "Graphic EQ" tab, click 'Enable Graphic EQ', and click 'AutoEQ database...'. After downloading the database onto your system, you can look up the model of headphones to apply.
 ![JamesDSP](https://i.imgur.com/TpX9rI9.png)
+     
 ### OSX / MacOS
 System wide parametric EQ solutions on OSX typically rely on separate plugin hosting software and the actual plugin
 which does the actual equalization.
