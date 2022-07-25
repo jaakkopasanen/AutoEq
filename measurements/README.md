@@ -8,7 +8,7 @@ python -m pip install -U -r measurements/dev-requirements.txt
 ```
 
 Measurement crawlers require [Google Chrome](https://www.google.com/chrome/) installed and
-[ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/home) binary in the measurements folder (or anywhere
+[ChromeDriver](https://sites.google.com/chromium.org/driver/) binary in the measurements folder (or anywhere
 in the PATH).
 
 Measurement crawlers also require C++. This should be installed by default on Linux but on Windows you need to install
