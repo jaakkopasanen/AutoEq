@@ -20,7 +20,7 @@ import re
 import warnings
 import biquad
 from constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, \
-    DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_MAX_GAIN, DEFAULT_TREBLE_GAIN_K, DEFAULT_SMOOTHING_WINDOW_SIZE, \
+    DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, DEFAULT_SMOOTHING_WINDOW_SIZE, \
     DEFAULT_SMOOTHING_ITERATIONS, DEFAULT_TREBLE_SMOOTHING_F_LOWER, DEFAULT_TREBLE_SMOOTHING_F_UPPER, \
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_ITERATIONS, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
@@ -1243,63 +1243,6 @@ class FrequencyResponse:
             target=False
         )
 
-    def smoothen_heavy_light(self):
-        """Smoothens data by combining light and heavy smoothing and taking maximum.
-
-        Returns:
-            None
-        """
-        light = self.copy()
-        light.name = 'Light'
-        light.smoothen_fractional_octave(
-            window_size=1 / 6,
-            iterations=1,
-            treble_f_lower=100,
-            treble_f_upper=10000,
-            treble_window_size=1 / 3,
-            treble_iterations=1
-        )
-
-        heavy = self.copy()
-        heavy.name = 'Heavy'
-        heavy.smoothen_fractional_octave(
-            window_size=1 / 3,
-            iterations=1,
-            treble_f_lower=1000,
-            treble_f_upper=6000,
-            treble_window_size=1.3,
-            treble_iterations=1
-        )
-
-        combination = self.copy()
-        combination.name = 'Combination'
-        combination.error = np.max(np.vstack([light.error_smoothed, heavy.error_smoothed]), axis=0)
-        combination.smoothen_fractional_octave(
-            window_size=1 / 3,
-            iterations=1,
-            treble_f_lower=100,
-            treble_f_upper=10000,
-            treble_window_size=1 / 3,
-            treble_iterations=1
-        )
-
-        self.smoothed = combination.smoothed.copy()
-        self.error_smoothed = combination.error_smoothed.copy()
-
-        # Equalization is affected by smoothing, reset equalization results
-        self.reset(
-            raw=False,
-            smoothed=False,
-            error=False,
-            error_smoothed=False,
-            equalization=True,
-            parametric_eq=True,
-            fixed_band_eq=True,
-            equalized_raw=True,
-            equalized_smoothed=True,
-            target=False
-        )
-
     def equalize(self,
                  max_gain=DEFAULT_MAX_GAIN,
                  limit=18,
@@ -1388,8 +1331,6 @@ class FrequencyResponse:
             combined.raw = np.min(np.vstack([combined.raw, np.ones(combined.raw.shape) * max_gain]), axis=0)
             # Smoothen the curve to get rid of hard kinks
             combined.smoothen_fractional_octave(window_size=1 / 5, treble_window_size=1 / 5)
-
-            # TODO: Fix trend by comparing super heavy smoothed equalizer frequency responses: limited vs unlimited
 
             # Equalization curve
             self.equalization = combined.smoothed
@@ -1778,8 +1719,8 @@ class FrequencyResponse:
                 max_gain=DEFAULT_MAX_GAIN,
                 fs=DEFAULT_FS,
                 concha_interference=False,
-                window_size=1 / 12,
-                treble_window_size=2,
+                window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
+                treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                 treble_f_lower=DEFAULT_TREBLE_F_LOWER,
                 treble_f_upper=DEFAULT_TREBLE_F_UPPER,
                 treble_gain_k=DEFAULT_TREBLE_GAIN_K):
@@ -1870,8 +1811,8 @@ class FrequencyResponse:
 
         # Smooth data
         self.smoothen_fractional_octave(
-            window_size=1 / 12,
-            treble_window_size=2,
+            window_size=window_size,
+            treble_window_size=treble_window_size,
             treble_f_lower=treble_f_lower,
             treble_f_upper=treble_f_upper
         )

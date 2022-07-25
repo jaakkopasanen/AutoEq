@@ -6,9 +6,10 @@ import argparse
 import soundfile as sf
 from time import time
 import numpy as np
-from constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_MAX_GAIN, \
+from constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, \
-    DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, PREAMP_HEADROOM
+    DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, PREAMP_HEADROOM, DEFAULT_SMOOTHING_WINDOW_SIZE, \
+    DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE
 from frequency_response import FrequencyResponse
 
 
@@ -18,6 +19,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                      bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
                      bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
                      bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=None, sound_signature=None, max_gain=DEFAULT_MAX_GAIN,
+                     window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
                      treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False):
     """Parses files in input directory and produces equalization results in output directory."""
@@ -96,6 +98,8 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
             tilt=tilt,
             sound_signature=sound_signature,
             max_gain=max_gain,
+            window_size=window_size,
+            treble_window_size=treble_window_size,
             treble_f_lower=treble_f_lower,
             treble_f_upper=treble_f_upper,
             treble_gain_k=treble_gain_k,
@@ -204,7 +208,7 @@ def cli_args():
                             help='Will produce fixed band eq settings if this parameter exists, no value needed.')
     arg_parser.add_argument('--rockbox', action='store_true',
                             help='Will produce a Rockbox .cfg file with 10 band eq settings if this parameter exists,'
-                            'no value needed.')
+                                 'no value needed.')
     arg_parser.add_argument('--fc', type=str, help='Comma separated list of center frequencies for fixed band eq.')
     arg_parser.add_argument('--q', type=str,
                             help='Comma separated list of Q values for fixed band eq. If only one '
@@ -268,6 +272,10 @@ def cli_args():
                                  'dips in  frequency response but will limit output volume if no analog gain is '
                                  'available because positive gain requires negative digital preamp equal to '
                                  'maximum positive gain. Defaults to {}.'.format(DEFAULT_MAX_GAIN))
+    arg_parser.add_argument('--window_size', type=float, default=DEFAULT_SMOOTHING_WINDOW_SIZE,
+                            help='Smoothing window size in octaves.')
+    arg_parser.add_argument('--treble_window_size', type=float, default=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
+                            help='Smoothing window size in octaves in the treble region.')
     arg_parser.add_argument('--treble_f_lower', type=float, default=DEFAULT_TREBLE_F_LOWER,
                             help='Lower bound for transition region between normal and treble frequencies. Treble '
                                  'frequencies can have different max gain and gain K. Defaults to '
