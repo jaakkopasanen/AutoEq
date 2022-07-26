@@ -297,7 +297,7 @@
 - [Aure Audio Flame](./harman_in-ear_2019v2/Aure%20Audio%20Flame)
 - [Aure Audio Storm](./harman_in-ear_2019v2/Aure%20Audio%20Storm)
 - [Aurisonics Kicker](./harman_in-ear_2019v2/Aurisonics%20Kicker)
-- [Aurorus Audio Australis](./gras_43ag-7_harman_over-ear_2018/Aurorus%20Audio%20Australis)
+- [Aurorus Australis](./gras_43ag-7_harman_over-ear_2018/Aurorus%20Australis)
 - [Aurorus Borealis](./gras_43ag-7_harman_over-ear_2018/Aurorus%20Borealis)
 - [AVIOT TE-D01b](./harman_in-ear_2019v2/AVIOT%20TE-D01b)
 - [AVIOT TE-D01d](./harman_in-ear_2019v2/AVIOT%20TE-D01d)

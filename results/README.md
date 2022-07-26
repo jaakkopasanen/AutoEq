@@ -600,7 +600,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Aurex HR V9](./innerfidelity/innerfidelity_harman_over-ear_2018/Aurex%20HR%20V9)
 - [Aurisonics Kicker](./crinacle/harman_in-ear_2019v2/Aurisonics%20Kicker)
 - [Aurisonics Rockets](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Aurisonics%20Rockets)
-- [Aurorus Audio Australis](./crinacle/gras_43ag-7_harman_over-ear_2018/Aurorus%20Audio%20Australis)
+- [Aurorus Australis](./crinacle/gras_43ag-7_harman_over-ear_2018/Aurorus%20Australis)
 - [Aurorus Borealis](./oratory1990/harman_over-ear_2018/Aurorus%20Borealis)
 - [Austrian Audio Hi-X55](./oratory1990/harman_over-ear_2018/Austrian%20Audio%20Hi-X55)
 - [Austrian Audio Hi-X60](./oratory1990/harman_over-ear_2018/Austrian%20Audio%20Hi-X60)

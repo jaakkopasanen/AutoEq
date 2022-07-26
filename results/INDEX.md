@@ -856,7 +856,7 @@ from the same source.
 - [Aurex HR V9](./innerfidelity/innerfidelity_harman_over-ear_2018/Aurex%20HR%20V9) by Innerfidelity
 - [Aurisonics Kicker](./crinacle/harman_in-ear_2019v2/Aurisonics%20Kicker) by Crinacle
 - [Aurisonics Rockets](./innerfidelity/innerfidelity_harman_in-ear_2019v2/Aurisonics%20Rockets) by Innerfidelity
-- [Aurorus Audio Australis](./crinacle/gras_43ag-7_harman_over-ear_2018/Aurorus%20Audio%20Australis) by Crinacle, GRAS 43AG-7
+- [Aurorus Australis](./crinacle/gras_43ag-7_harman_over-ear_2018/Aurorus%20Australis) by Crinacle, GRAS 43AG-7
 - [Aurorus Borealis](./crinacle/gras_43ag-7_harman_over-ear_2018/Aurorus%20Borealis) by Crinacle, GRAS 43AG-7
 - [Aurorus Borealis](./oratory1990/harman_over-ear_2018/Aurorus%20Borealis) by oratory1990
 - [Austrian Audio Hi-X55](./oratory1990/harman_over-ear_2018/Austrian%20Audio%20Hi-X55) by oratory1990
