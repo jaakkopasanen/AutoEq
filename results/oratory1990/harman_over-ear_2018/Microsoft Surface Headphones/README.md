@@ -8,16 +8,15 @@ When using independent subset of filters, apply preamp of **-6.6 dB**.
 
 | Type    | Fc      |    Q | Gain    |
 |:--------|:--------|:-----|:--------|
-| Peaking | 40 Hz   | 0.46 | -3.1 dB |
-| Peaking | 115 Hz  | 0.66 | -5.5 dB |
-| Peaking | 383 Hz  | 1.29 | -4.7 dB |
-| Peaking | 622 Hz  | 1.11 | 5.3 dB  |
-| Peaking | 5070 Hz | 1.42 | 6.4 dB  |
-| Peaking | 1106 Hz | 3.73 | -1.1 dB |
-| Peaking | 1302 Hz | 4.39 | 1.5 dB  |
-| Peaking | 1981 Hz | 4.37 | 1.1 dB  |
-| Peaking | 2848 Hz | 2.65 | -3.1 dB |
-| Peaking | 3383 Hz | 2.83 | 2.1 dB  |
+| Peaking | 38 Hz   | 0.49 | -3.0 dB |
+| Peaking | 114 Hz  | 0.66 | -5.7 dB |
+| Peaking | 386 Hz  | 1.25 | -4.8 dB |
+| Peaking | 616 Hz  | 1.09 | 5.5 dB  |
+| Peaking | 5071 Hz | 1.42 | 6.4 dB  |
+| Peaking | 1060 Hz | 3.82 | -1.9 dB |
+| Peaking | 1262 Hz | 1.92 | 1.5 dB  |
+| Peaking | 2842 Hz | 3.65 | -2.9 dB |
+| Peaking | 3335 Hz | 2.85 | 1.5 dB  |
 
 ### Fixed Band EQs
 In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.4dB**
@@ -34,7 +33,7 @@ In case of using fixed band (also called graphic) equalizer, apply preamp of **-
 | Peaking | 2000 Hz  | 1.41 | -1.1 dB |
 | Peaking | 4000 Hz  | 1.41 | 4.9 dB  |
 | Peaking | 8000 Hz  | 1.41 | 2.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.8 dB |
+| Peaking | 16000 Hz | 1.41 | -0.9 dB |
 
 ### Graphs
 ![](./Microsoft%20Surface%20Headphones.png)
