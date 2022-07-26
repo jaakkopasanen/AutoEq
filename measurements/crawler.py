@@ -280,6 +280,6 @@ class Crawler(ABC):
 
     def get_beautiful_soup(self, url):
         self.driver.get(url)
-        sleep(1)  # Giving some time for Selenium to render the page
+        sleep(2)  # Giving some time for Selenium to render the page
         html = self.driver.find_element_by_tag_name('html').get_attribute('outerHTML')
         return BeautifulSoup(html, 'html.parser')

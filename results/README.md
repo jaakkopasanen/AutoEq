@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 3664 headphone models covered but if your headphone is missing you can create settings for
+This list has 3665 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -1816,6 +1816,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [HYLA TE-5T](./crinacle/harman_in-ear_2019v2/HYLA%20TE-5T)
 - [HyperX Cloud Alpha](./oratory1990/harman_over-ear_2018/HyperX%20Cloud%20Alpha)
 - [HyperX Cloud Alpha S](./rtings/rtings_harman_over-ear_2018/HyperX%20Cloud%20Alpha%20S)
+- [HyperX Cloud Alpha Wireless](./rtings/rtings_harman_over-ear_2018/HyperX%20Cloud%20Alpha%20Wireless)
 - [HyperX Cloud Core](./rtings/rtings_harman_over-ear_2018/HyperX%20Cloud%20Core)
 - [HyperX Cloud Flight](./rtings/rtings_harman_over-ear_2018/HyperX%20Cloud%20Flight)
 - [HyperX Cloud Flight S](./rtings/rtings_harman_over-ear_2018/HyperX%20Cloud%20Flight%20S)

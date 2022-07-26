@@ -47,10 +47,10 @@ class ReferenceAudioAnalyzerCrawler(Crawler):
         for i, row in name_index.df.iterrows():
             model = re.sub(suffix_regex, '', row.true_name)
             if model != row.true_name:
-                name_index.df = name_index.df.append(pd.DataFrame(
+                name_index.df = pd.concat([name_index.df, pd.DataFrame(
                     [[row.false_name, model, row.form]],
                     columns=name_index.df.columns
-                ))
+                )])
         name_index.df.drop_duplicates()
         return name_index
 

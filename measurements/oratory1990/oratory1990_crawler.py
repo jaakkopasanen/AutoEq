@@ -48,7 +48,7 @@ class Oratory1990Crawler(Crawler):
         urls = {}
         table_header = document.find(id='wiki_full_list_of_eq_settings.3A')
         if table_header is None:
-            raise RedditCrawlFailed('Could not read data in Reddit.')
+            raise RedditCrawlFailed('Failed to parse Reddit page.')
         tbody = table_header.parent.find('table').find('tbody')
         manufacturer = None
         model = None
@@ -90,7 +90,10 @@ class Oratory1990Crawler(Crawler):
         h_lines = ImageGraphParser.find_lines(im, 'horizontal')
 
         # Crop by graph edges
-        box = (v_lines[0], h_lines[0], v_lines[1], h_lines[1])
+        try:
+            box = (v_lines[0], h_lines[0], v_lines[1], h_lines[1])
+        except IndexError as err:
+            raise GraphParseFailed('Failed to parse PDF')
         im = im.crop(box)
         # im.show()
 
@@ -183,7 +186,7 @@ class Oratory1990Crawler(Crawler):
         )
         gs.exit()
         shutil.copy(tmp_out, output_file)
-        print('\nSaved image to "{}"\n'.format(output_file))
+        print('  Saved image to "{}"\n'.format(output_file))
         f.close()
 
         return Image.open(output_file)
@@ -217,7 +220,7 @@ class Oratory1990Crawler(Crawler):
                 ignored.form = 'ignore'
                 self.name_index.update(ignored, false_name=item.false_name, true_name=item.true_name, form=item.form)
                 self.write_name_index()
-                print(f'Ignored {item.false_name} because it is measured by Crinacle.')
+                print(f'  Ignored {item.false_name} because it is measured by Crinacle.\n')
             return
         fr, inspection = Oratory1990Crawler.parse_image(im, item.true_name)
         inspection.save(os.path.join(inspection_dir, f'{item.true_name}.png'))
@@ -225,6 +228,9 @@ class Oratory1990Crawler(Crawler):
 
 
 class RedditCrawlFailed(Exception):
+    pass
+
+class GraphParseFailed(Exception):
     pass
 
 

@@ -237,6 +237,7 @@
 - [HIFIMAN Sundara 2020](./rtings_harman_over-ear_2018/HIFIMAN%20Sundara%202020)
 - [HIFIMAN Sundara](./rtings_harman_over-ear_2018/HIFIMAN%20Sundara)
 - [HyperX Cloud Alpha S](./rtings_harman_over-ear_2018/HyperX%20Cloud%20Alpha%20S)
+- [HyperX Cloud Alpha Wireless](./rtings_harman_over-ear_2018/HyperX%20Cloud%20Alpha%20Wireless)
 - [HyperX Cloud Alpha](./rtings_harman_over-ear_2018/HyperX%20Cloud%20Alpha)
 - [HyperX Cloud Core](./rtings_harman_over-ear_2018/HyperX%20Cloud%20Core)
 - [HyperX Cloud Flight S](./rtings_harman_over-ear_2018/HyperX%20Cloud%20Flight%20S)

@@ -195,7 +195,8 @@ processing tools including convolution and parametric equalizers.
 From version 4.7.2 onwards PulseEffects added support for convolution FIR filters. This is the recommended way to apply
 AutoEq presets. Navigate to the plugins tab and add the convolver plugin, then click the waveform button above the stereo width controls (or just the 'Impulses' button as of 6.1.x), click "Import impulse" and select the AutoEq
 generated WAV file. You may also need to manually click 'load' in the Impulses menu for the filter to be fully loaded. PulseEffects' convolver requires you to set the input gain to prevent clipping. The gain required
-by parametric eq should be sufficient, maybe 0.5 dB of negative gain more.
+by parametric eq should be sufficient, maybe 0.5 dB of negative gain more. Depending on the version, you may need to
+rename the `.wav` file as `.irs`.
   
 To use parametric eq, from version 6.0.0 onwards, first select the `plugins` tab at
 the bottom of the screen, add the equalizer plugin, and load APO settings by clicking "Load APO Preset" and
@@ -277,7 +278,7 @@ fancy graphical user interface but instead it is used from command line.
 ### Installing
 - Download and install Git: https://git-scm.com/downloads. When installing Git on Windows, use Windows SSL verification
 instead of Open SSL or you might run into problems when installing project dependencies.
-- Download and install 64-bit **[Python 3.8](https://www.python.org/getit/)**. Make sure to check *Add Python 3.8 to PATH*.
+- Download and install 64-bit **[Python 3.10](https://www.python.org/getit/)**. Make sure to check *Add Python 3.10 to PATH*.
 - You may need to install [libsndfile](http://www.mega-nerd.com/libsndfile/) if you're having problems with `soundfile`
 when installing `requirements.txt`.
 - On Linux you may need to install Python dev packages  
@@ -296,7 +297,7 @@ git clone https://github.com/jaakkopasanen/AutoEq.git
 ```bash
 cd AutoEq
 ```
-- Check Python version. You should see Python 3.8.x printed out. If you see for example 3.9.x, you need to install Python **3.8**.
+- Check Python version. You should see Python 3.10.x printed out. If you see for example 3.11.x, you need to install Python **3.10**.
 ```bash
 python --version
 ```

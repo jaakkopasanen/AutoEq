@@ -2578,6 +2578,7 @@ from the same source.
 - [HYLA TE-5B](./crinacle/harman_in-ear_2019v2/HYLA%20TE-5B) by Crinacle
 - [HYLA TE-5T](./crinacle/harman_in-ear_2019v2/HYLA%20TE-5T) by Crinacle
 - [HyperX Cloud Alpha S](./rtings/rtings_harman_over-ear_2018/HyperX%20Cloud%20Alpha%20S) by Rtings
+- [HyperX Cloud Alpha Wireless](./rtings/rtings_harman_over-ear_2018/HyperX%20Cloud%20Alpha%20Wireless) by Rtings
 - [HyperX Cloud Alpha](./oratory1990/harman_over-ear_2018/HyperX%20Cloud%20Alpha) by oratory1990
 - [HyperX Cloud Alpha](./rtings/rtings_harman_over-ear_2018/HyperX%20Cloud%20Alpha) by Rtings
 - [HyperX Cloud Core](./rtings/rtings_harman_over-ear_2018/HyperX%20Cloud%20Core) by Rtings

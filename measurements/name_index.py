@@ -109,7 +109,7 @@ class NameIndex:
         false_name = item.false_name if item.false_name is not None else ''
         true_name = item.true_name if item.true_name is not None else ''
         form = item.form if item.form is not None else ''
-        self.df = self.df.append(pd.DataFrame([[false_name, true_name, form]], columns=self.df.columns))
+        self.df = pd.concat([self.df, pd.DataFrame([[false_name, true_name, form]], columns=self.df.columns)])
         self.df = self.df.drop_duplicates()
 
     def remove_duplicates(self):

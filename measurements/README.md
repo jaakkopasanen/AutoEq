@@ -46,11 +46,6 @@ Crawler Jupyter Notebook requires IPyWidgets and the extension
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
 ```
 
-JupyterLab users need to install an additional extension which requires NodeJS >= 10 to be installed first
-```bash
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
-```
-
 Finally install IPython kernel
 ```bash
 python -m ipykernel install --user --name="autoeq"

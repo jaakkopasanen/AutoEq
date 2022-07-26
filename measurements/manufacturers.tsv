@@ -1,6 +1,7 @@
 1Custom
 1MORE
 64 Audio
+7Hz	7Hertz
 A-Audio	A Audio
 AAW	Advanced AcousticsWerkes	AAW (Advanced AcousticsWerkes)
 Abyss
@@ -35,7 +36,7 @@ Anthem Five
 Apple
 ARC
 Aroma Audio
-Astell & Kern	A&K (Astell & Kern)	A&K
+Astell & Kern	A&K (Astell & Kern)	A&K	Astell Kern
 ASTRO Gaming	Astro
 Astrotec
 ASUS
@@ -163,7 +164,7 @@ Final Audio	Final Audio Design	Final Audio Design (FAD)
 fineEars
 Fir Audio
 First Harmonic
-Fischer Audio	Fischer
+Fischer Audio	Fischer	Fischer-Audio
 Fitbit
 FitEar
 fix
@@ -179,7 +180,7 @@ Future Sonics
 GAL
 Geek Wold
 Gerkules
-German Maestro
+German Maestro	GermanMaestro
 Gold Planar
 Google
 Grado
@@ -203,7 +204,7 @@ Howard Leight
 Huawei
 HUM
 HYLA
-HyperX
+HyperX	HyperX Audio
 HZSOUND
 I-INTO
 I-Mego
@@ -245,6 +246,7 @@ Kotion Each
 KRK SYSTEMS	KRK
 Kumitate Lab	Kumitate
 KZ	Knowledge Zenith	KZ (Knowledge Zenith)
+Lafitear
 Lark Studio
 Lear
 Lenntek
@@ -263,7 +265,7 @@ Logitech
 LongLife
 LucidSound
 Lypertek
-LZ Hi-Fi Audio	LZ Audio
+LZ Hi-Fi Audio	LZ Audio	LZ
 M-Audio
 Mackie
 Magaosi
@@ -328,7 +330,7 @@ Ollo Audio
 OneOdio
 OnePlus
 Onkyo
-OperaFactory
+OperaFactory	OperaFactory
 Oppo
 ORA
 Origami Audio
@@ -346,6 +348,7 @@ Parrot
 PEARS
 Peerless
 Pendulumic
+Penon
 Periodic Audio
 Phiaton	Phiton	Piaton
 Philips
@@ -360,6 +363,7 @@ Polk Audio
 PopClik	Popclick
 Precide
 Prisma
+Proel Eikon
 Prology
 PSB
 Pump Audio
@@ -390,6 +394,7 @@ Rose
 Rosson Audio Design
 Rovking
 RUNMUS
+RØDE
 Sabbat
 Samson
 Samsung
@@ -399,11 +404,12 @@ SATOLEX
 Scosche
 Seahf
 SeeAudio
-Sendy
+Sendy	Sendy Audio
 Senfer
 Sennheiser	Massdrop x Sennheiser	Sennheiser Electronic
 SENSO
 Shanling
+Shokz
 Shozy
 Shuoer
 Shure
@@ -491,7 +497,7 @@ Under Armour
 Unique Melody
 Unknown Custom	Uknown Customs	Unknown Customs
 Urbanears
-V-MODA
+V-MODA	V Moda
 VA Audio
 Valco
 Valco
@@ -528,4 +534,5 @@ Zealot
 Zero Audio
 Zipbuds
 ZMF
+Zoom
 Zoukbox
