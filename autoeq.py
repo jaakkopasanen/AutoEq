@@ -314,8 +314,9 @@ def cli_args():
     arg_parser.add_argument('--show_plot', action='store_true',
                             help='Plot will be shown if this parameter exists, no value needed.')
     arg_parser.add_argument('--thread_count', default=1,
-                            help='Amount of threads to use for processing results. More threads result in higher '
-                                 'memory usage. Defaults to 1.')
+                            help='Amount of threads to use for processing results. If set to "max" all the threads '
+                                 'available will be used. Using more threads result in higher memory usage. '
+                                 'Defaults to 1.')
     args = vars(arg_parser.parse_args())
     if 'iem_bass_boost' in args:
         raise TypeError('iem_bass_boost argument has been removed, use "--bass_boost" instead!')
