@@ -23,9 +23,8 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                      bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=None, sound_signature=None, max_gain=DEFAULT_MAX_GAIN,
                      window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False):
+                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False, thread_count=1):
     """Parses files in input directory and produces equalization results in output directory."""
-    start_time = time()
 
     if convolution_eq and not equalize:
         raise ValueError('equalize must be True when convolution_eq is True.')
@@ -60,7 +59,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
         sound_signature.interpolate()
         sound_signature.center()
 
-    # Add files
+    # Prepare list of arguments for all the function calls to generate results.
     n_total = 0
     file_paths = []
     args_list = []
@@ -78,7 +77,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                     ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k)
             args_list.append(args)
 
-    with multiprocessing.Pool(multiprocessing.cpu_count()) as pool:
+    with multiprocessing.Pool(thread_count) as pool:
         results = []
         for result in tqdm.tqdm(pool.imap_unordered(process_file_wrapper, args_list, chunksize=1), total=len(args_list)):
             results.append(result)
@@ -314,6 +313,9 @@ def cli_args():
                                  '{}.'.format(DEFAULT_TREBLE_GAIN_K))
     arg_parser.add_argument('--show_plot', action='store_true',
                             help='Plot will be shown if this parameter exists, no value needed.')
+    arg_parser.add_argument('--thread_count', default=1,
+                            help='Amount of threads to use for processing results. More threads result in higher '
+                                 'memory usage. Defaults to 1.')
     args = vars(arg_parser.parse_args())
     if 'iem_bass_boost' in args:
         raise TypeError('iem_bass_boost argument has been removed, use "--bass_boost" instead!')
@@ -338,6 +340,17 @@ def cli_args():
         args['q'] = [float(x) for x in args['q'].split(',')]
     if 'fs' in args and args['fs'] is not None:
         args['fs'] = [int(x) for x in args['fs'].split(',')]
+    if thread_count := args.get('thread_count'):
+        if thread_count == 'max':
+            args['thread_count'] = multiprocessing.cpu_count()
+        else:
+            try:
+                thread_count = int(thread_count)
+            except ValueError:
+                raise ValueError('"--thread_count" must have a value greater than 0 or equal to "max"!')
+            if thread_count <= 0:
+                raise ValueError('"--thread_count" must have a value greater than 0 or equal to "max"!')
+            args['thread_count'] = thread_count
     return args
 
 
