@@ -6,4 +6,3 @@ numpy~=1.23.1
 tensorflow~=2.9.1
 tabulate~=0.8.10
 soundfile~=0.10.2
-tqdm~=4.63.0
