@@ -1,7 +1,7 @@
 # AutoEQ
 **TL;DR** If you are here just looking to make your headphones sound better, find your headphone model in
 [results](./results) folder's recommended headphones list
-and follow instructions in [Usage](#usage) section. 
+and follow instructions in [Usage](#usage) section.
 
 ## About This Project
 AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
@@ -69,13 +69,13 @@ Parametric eq settings can be used with Peace or any other parametric eq which h
 fewer bands is possible but pre-computed results require to use minimum five first of the filters. Parametric equalizer
 filter parameters look like this:
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 28 Hz    | 0.46 | 6.3 dB  |
-| Peaking | 162 Hz   | 0.91 | -2.3 dB |
-| Peaking | 2237 Hz  | 1.94 | -4.6 dB |
-| Peaking | 6093 Hz  | 2.26 | -4.7 dB |
-| Peaking | 8251 Hz  | 3.71 | -2.9 dB |
+| Type    | Fc      | Q    | Gain    |
+| :------ | :------ | :--- | :------ |
+| Peaking | 28 Hz   | 0.46 | 6.3 dB  |
+| Peaking | 162 Hz  | 0.91 | -2.3 dB |
+| Peaking | 2237 Hz | 1.94 | -4.6 dB |
+| Peaking | 6093 Hz | 2.26 | -4.7 dB |
+| Peaking | 8251 Hz | 3.71 | -2.9 dB |
 
 ### Fixed Band Equalizers
 Fixed band eq is more commonly known as graphic equalizer but in order not to confuse with EqualizerAPO GraphicEQ it is
@@ -91,8 +91,8 @@ curve at some frequency and adjust the nearby filters by ear for best results.
 
 Fixed band equalizer settings look like this:
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
+| Type    | Fc       | Q    | Gain    |
+| :------ | :------- | :--- | :------ |
 | Peaking | 31 Hz    | 1.41 | 6.1 dB  |
 | Peaking | 62 Hz    | 1.41 | 3.0 dB  |
 | Peaking | 125 Hz   | 1.41 | -1.1 dB |
@@ -149,7 +149,7 @@ have on Android without rooting. The equalizer built into this app is very power
 profiles very accurately. There is also an option to tune the sound with graphic equalizer. Wavelet has the best
 Bluetooth device compatibility of all the tested eq apps on Android.
 
-The main functionalities of Wavelet are free (including AutoEq profiles and graphic eq) but some extra features can be 
+The main functionalities of Wavelet are free (including AutoEq profiles and graphic eq) but some extra features can be
 unlocked with an in-app purchase.
 
 ![Wavelet](https://i.imgur.com/UGiBwFX.png)
@@ -191,22 +191,22 @@ Viper4Android. It provides a system wide solution, has a convolution engine but 
 #### PulseEffects / EasyEffects
 [PulseEffects / EasyEffects](https://github.com/wwmm/easyeffects) is a Linux module with wide variety of signal
 processing tools including convolution and parametric equalizers.
-  
+
 From version 4.7.2 onwards PulseEffects added support for convolution FIR filters. This is the recommended way to apply
 AutoEq presets. Navigate to the plugins tab and add the convolver plugin, then click the waveform button above the stereo width controls (or just the 'Impulses' button as of 6.1.x), click "Import impulse" and select the AutoEq
 generated WAV file. You may also need to manually click 'load' in the Impulses menu for the filter to be fully loaded. PulseEffects' convolver requires you to set the input gain to prevent clipping. The gain required
 by parametric eq should be sufficient, maybe 0.5 dB of negative gain more. Depending on the version, you may need to
 rename the `.wav` file as `.irs`.
-  
+
 To use parametric eq, from version 6.0.0 onwards, first select the `plugins` tab at
 the bottom of the screen, add the equalizer plugin, and load APO settings by clicking "Load APO Preset" and
 selecting the ParametricEQ.txt file. For EasyEffects <= 6.1.3, Pre-amp can be adjusted with the input slider.
 Later versions support reading this from ParametricEQ.txt.
-  
+
 From version 5.0.0 onwards, PulseEffects was renamed to EasyEffects and uses PipeWire instead of PulseAudio as backend.
 Load eq settings by clicking the top center cog & clicking *Import ACO Presets* button and select the ParametricEQ.txt
 file.  Pre-amp can be adjusted with the input slider.
-  
+
 For versions prior to v4.8.0, adjust filter parameters by clicking the cog button on each filter
 and set type to "Bell", mode to "APO" and adjust the gain with the slider. Number of filters can be changed by clicking
 the screwdriver and wrench button.
@@ -247,7 +247,7 @@ eqMac has a Free 10 Band EQ and an Unlimited Band EQ (paid) with built-in AutoEQ
 <p align="center">
   <img width="512" src="https://raw.githubusercontent.com/bitgapp/eqMac/master/assets/screenshots/autoeq-promo.png"/>
 </p>
-  
+
 ### iOS
 iOS unfortunately doesn't allow system-wide equalizers, so the only options are either music players with built-in
 equalizer or [hardware solutions](#Hardware).
@@ -281,7 +281,7 @@ instead of Open SSL or you might run into problems when installing project depen
 - Download and install 64-bit **[Python 3.10](https://www.python.org/getit/)**. Make sure to check *Add Python 3.10 to PATH*.
 - You may need to install [libsndfile](http://www.mega-nerd.com/libsndfile/) if you're having problems with `soundfile`
 when installing `requirements.txt`.
-- On Linux you may need to install Python dev packages  
+- On Linux you may need to install Python dev packages
 ```bash
 sudo apt install python3-dev python3-pip python3-venv
 ```
@@ -289,11 +289,11 @@ sudo apt install python3-dev python3-pip python3-venv
 - On Windows you may need to install
 [Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 - Open a terminal / command prompt. On Windows, search `cmd` in the start menu.
-- Clone AutoEq  
+- Clone AutoEq
 ```bash
 git clone https://github.com/jaakkopasanen/AutoEq.git
 ```
-- Go to AutoEq location  
+- Go to AutoEq location
 ```bash
 cd AutoEq
 ```
@@ -305,7 +305,7 @@ python --version
 ```bash
 python -m venv venv
 ```
-- Activate virtualenv  
+- Activate virtualenv
 ```bash
 # On Windows
 venv\Scripts\activate.bat
@@ -316,11 +316,11 @@ venv\Scripts\activate.bat
 ```bash
 python -m pip install -U pip
 ```
-- Install required packages  
+- Install required packages
 ```bash
 python -m pip install -U -r requirements.txt
 ```
-- Verify installation. If everything went well, you'll see the list of command line parameters AutoEq accepts.  
+- Verify installation. If everything went well, you'll see the list of command line parameters AutoEq accepts.
 ```bash
 python autoeq.py --help
 ```
@@ -353,7 +353,7 @@ python -m pip install -U -r requirements.txt
 ```
 usage: autoeq.py [-h] --input_dir INPUT_DIR [--output_dir OUTPUT_DIR] [--standardize_input] [--new_only] [--compensation COMPENSATION] [--equalize] [--parametric_eq] [--fixed_band_eq] [--rockbox] [--fc FC] [--q Q]
                  [--ten_band_eq] [--max_filters MAX_FILTERS] [--convolution_eq] [--fs FS] [--bit_depth BIT_DEPTH] [--phase PHASE] [--f_res F_RES] [--bass_boost BASS_BOOST] [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
-                 [--sound_signature SOUND_SIGNATURE] [--max_gain MAX_GAIN] [--treble_f_lower TREBLE_F_LOWER] [--treble_f_upper TREBLE_F_UPPER] [--treble_gain_k TREBLE_GAIN_K] [--show_plot]
+                 [--sound_signature SOUND_SIGNATURE] [--max_gain MAX_GAIN] [--treble_f_lower TREBLE_F_LOWER] [--treble_f_upper TREBLE_F_UPPER] [--treble_gain_k TREBLE_GAIN_K] [--show_plot] [--thread_count]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -406,6 +406,9 @@ optional arguments:
   --treble_gain_k TREBLE_GAIN_K
                         Coefficient for treble gain, affects both positive and negative gain. Useful for disabling or reducing equalization power in treble region. Defaults to 1.0.
   --show_plot           Plot will be shown if this parameter exists, no value needed.
+  --thread_count THREAD_COUNT
+                        Amount of threads to use for processing results. If set to "max" all the threads available will be used. Using more threads result in higher memory usage.
+                        Defaults to 1.
 ```
 
 
@@ -540,10 +543,10 @@ in-ear fixes the +10 kHz problems of the 2017 target. Also it is easy to transfo
 oratory1990 target without running the processing yourself if you are using parametric equalizer and have two filters
 (bands) available by adding these two to your eq software:
 
-| Type    |   Fc |    Q |  Gain |
-|:--------|:-----|:-----|:------|
-| Peaking |  113 | 0.75 |   3.5 |
-| Peaking | 3766 | 0.63 |  -2.3 |
+| Type    | Fc   | Q    | Gain |
+| :------ | :--- | :--- | :--- |
+| Peaking | 113  | 0.75 | 3.5  |
+| Peaking | 3766 | 0.63 | -2.3 |
 
 The results will be remarkably similar to results produced with the actual oratory1990 target:
 

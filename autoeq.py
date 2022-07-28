@@ -3,9 +3,11 @@
 import os
 from glob import glob
 import argparse
+import multiprocessing
 import soundfile as sf
 from time import time
 import numpy as np
+import tqdm
 from constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, \
     DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, PREAMP_HEADROOM, DEFAULT_SMOOTHING_WINDOW_SIZE, \
@@ -21,9 +23,8 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                      bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=None, sound_signature=None, max_gain=DEFAULT_MAX_GAIN,
                      window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False):
+                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False, thread_count=1):
     """Parses files in input directory and produces equalization results in output directory."""
-    start_time = time()
 
     if convolution_eq and not equalize:
         raise ValueError('equalize must be True when convolution_eq is True.')
@@ -58,9 +59,10 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
         sound_signature.interpolate()
         sound_signature.center()
 
-    # Add files
+    # Prepare list of arguments for all the function calls to generate results.
     n_total = 0
     file_paths = []
+    args_list = []
     for input_file_path in glob_files:
         relative_path = os.path.relpath(input_file_path, input_dir)
         output_file_path = os.path.join(output_dir, relative_path) if output_dir else None
@@ -69,119 +71,140 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
             # Not looking for only new ones or the output directory doesn't exist or it's empty
             file_paths.append((input_file_path, output_file_path))
             n_total += 1
+            args = (input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q, bit_depth,
+                    compensation, convolution_eq, equalize, f_res, fc, fixed_band_eq, fs, max_filters, max_gain, window_size, treble_window_size,
+                    parametric_eq, phase, q, rockbox, show_plot, sound_signature, standardize_input,
+                    ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k)
+            args_list.append(args)
 
-    n = 0
-    for input_file_path, output_file_path in file_paths:
-        # Read data from input file
-        fr = FrequencyResponse.read_from_csv(input_file_path)
+    with multiprocessing.Pool(thread_count) as pool:
+        results = []
+        for result in tqdm.tqdm(pool.imap_unordered(process_file_wrapper, args_list, chunksize=1), total=len(args_list)):
+            results.append(result)
 
-        if standardize_input:
-            # Overwrite input data in standard sampling and bias
-            fr.interpolate()
-            fr.center()
-            fr.write_to_csv(input_file_path)
+        print('Updated results:\n')
+        for result in results:
+            print(result)
 
-        # Process and equalize
-        peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gain = fr.process(
-            compensation=compensation,
-            min_mean_error=True,
-            equalize=equalize,
-            parametric_eq=parametric_eq,
-            fixed_band_eq=fixed_band_eq,
-            fc=fc,
-            q=q,
-            ten_band_eq=ten_band_eq,
-            max_filters=max_filters,
-            bass_boost_gain=bass_boost_gain,
-            bass_boost_fc=bass_boost_fc,
-            bass_boost_q=bass_boost_q,
-            tilt=tilt,
-            sound_signature=sound_signature,
-            max_gain=max_gain,
-            window_size=window_size,
-            treble_window_size=treble_window_size,
-            treble_f_lower=treble_f_lower,
-            treble_f_upper=treble_f_upper,
-            treble_gain_k=treble_gain_k,
-            fs=fs[0] if type(fs) == list else fs
+
+def process_file_wrapper(params):
+    return process_file(*params)
+
+
+def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q, bit_depth,
+                 compensation, convolution_eq, equalize, f_res,
+                 fc, fixed_band_eq, fs, max_filters, max_gain, window_size, treble_window_size,parametric_eq, phase, q, rockbox,
+                 show_plot, sound_signature, standardize_input, ten_band_eq, tilt, treble_f_lower,
+                 treble_f_upper, treble_gain_k):
+    start_time = time()
+    # Read data from input file
+    fr = FrequencyResponse.read_from_csv(input_file_path)
+
+    if standardize_input:
+        # Overwrite input data in standard sampling and bias
+        fr.interpolate()
+        fr.center()
+        fr.write_to_csv(input_file_path)
+
+    # Process and equalize
+    peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gain = fr.process(
+        compensation=compensation,
+        min_mean_error=True,
+        equalize=equalize,
+        parametric_eq=parametric_eq,
+        fixed_band_eq=fixed_band_eq,
+        fc=fc,
+        q=q,
+        ten_band_eq=ten_band_eq,
+        max_filters=max_filters,
+        bass_boost_gain=bass_boost_gain,
+        bass_boost_fc=bass_boost_fc,
+        bass_boost_q=bass_boost_q,
+        tilt=tilt,
+        sound_signature=sound_signature,
+        max_gain=max_gain,
+        window_size=window_size,
+        treble_window_size=treble_window_size,
+        treble_f_lower=treble_f_lower,
+        treble_f_upper=treble_f_upper,
+        treble_gain_k=treble_gain_k,
+        fs=fs[0] if type(fs) == list else fs
+    )
+
+    if output_file_path is not None:
+        # Copy relative path to output directory
+        output_dir_path, _ = os.path.split(output_file_path)
+        os.makedirs(output_dir_path, exist_ok=True)
+
+        if equalize:
+            # Write EqualizerAPO GraphicEq settings to file
+            fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True)
+            if parametric_eq:
+                # Write ParametricEq settings to file
+                fr.write_eqapo_parametric_eq(
+                    output_file_path.replace('.csv', ' ParametricEQ.txt'), peq_filters,
+                    preamp=-(peq_max_gains[-1] + PREAMP_HEADROOM))
+
+            # Write fixed band eq
+            if fixed_band_eq or ten_band_eq:
+                # Write fixed band eq settings to file
+                fr.write_eqapo_parametric_eq(
+                    output_file_path.replace('.csv', ' FixedBandEQ.txt'), fbeq_filters,
+                    preamp=-(fbeq_max_gain + PREAMP_HEADROOM))
+
+            # Write 10 band fixed band eq to Rockbox .cfg file
+            if rockbox and ten_band_eq:
+                # Write fixed band eq settings to file
+                fr.write_rockbox_10_band_fixed_eq(
+                    output_file_path.replace('.csv', ' RockboxEQ.cfg'), fbeq_filters,
+                    preamp=-(fbeq_max_gain + PREAMP_HEADROOM))
+
+            # Write impulse response as WAV
+            if convolution_eq:
+                for _fs in fs:
+                    if phase in ['linear', 'both']:
+                        # Write linear phase impulse response
+                        linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
+                        linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
+                        sf.write(
+                            output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
+                            linear_phase_ir,
+                            _fs,
+                            bit_depth
+                        )
+                    if phase in ['minimum', 'both']:
+                        # Write minimum phase impulse response
+                        minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
+                        minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
+                        sf.write(
+                            output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
+                            minimum_phase_ir,
+                            _fs,
+                            bit_depth
+                        )
+
+        # Write results to CSV file
+        fr.write_to_csv(output_file_path)
+
+        # Write plots to file and optionally display them
+        fr.plot_graph(
+            show=show_plot,
+            close=not show_plot,
+            file_path=output_file_path.replace('.csv', '.png'),
         )
 
-        if output_file_path is not None:
-            # Copy relative path to output directory
-            output_dir_path, _ = os.path.split(output_file_path)
-            os.makedirs(output_dir_path, exist_ok=True)
+        # Write README.md
+        _readme_path = os.path.join(output_dir_path, 'README.md')
+        fr.write_readme(
+            _readme_path,
+            max_filters=n_peq_filters,
+            max_gains=peq_max_gains
+        )
 
-            if equalize:
-                # Write EqualizerAPO GraphicEq settings to file
-                fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True)
-                if parametric_eq:
-                    # Write ParametricEq settings to file
-                    fr.write_eqapo_parametric_eq(
-                        output_file_path.replace('.csv', ' ParametricEQ.txt'), peq_filters,
-                        preamp=-(peq_max_gains[-1] + PREAMP_HEADROOM))
+    elif show_plot:
+        fr.plot_graph(show=True, close=False)
 
-                # Write fixed band eq
-                if fixed_band_eq or ten_band_eq:
-                    # Write fixed band eq settings to file
-                    fr.write_eqapo_parametric_eq(
-                        output_file_path.replace('.csv', ' FixedBandEQ.txt'), fbeq_filters,
-                        preamp=-(fbeq_max_gain + PREAMP_HEADROOM))
-
-                # Write 10 band fixed band eq to Rockbox .cfg file
-                if rockbox and ten_band_eq:
-                    # Write fixed band eq settings to file
-                    fr.write_rockbox_10_band_fixed_eq(
-                        output_file_path.replace('.csv', ' RockboxEQ.cfg'), fbeq_filters,
-                        preamp=-(fbeq_max_gain + PREAMP_HEADROOM))
-
-                # Write impulse response as WAV
-                if convolution_eq:
-                    for _fs in fs:
-                        if phase in ['linear', 'both']:
-                            # Write linear phase impulse response
-                            linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
-                            linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
-                            sf.write(
-                                output_file_path.replace('.csv', ' linear phase {}Hz.wav'.format(_fs)),
-                                linear_phase_ir,
-                                _fs,
-                                bit_depth
-                            )
-                        if phase in ['minimum', 'both']:
-                            # Write minimum phase impulse response
-                            minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
-                            minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
-                            sf.write(
-                                output_file_path.replace('.csv', ' minimum phase {}Hz.wav'.format(_fs)),
-                                minimum_phase_ir,
-                                _fs,
-                                bit_depth
-                            )
-
-            # Write results to CSV file
-            fr.write_to_csv(output_file_path)
-
-            # Write plots to file and optionally display them
-            fr.plot_graph(
-                show=show_plot,
-                close=not show_plot,
-                file_path=output_file_path.replace('.csv', '.png'),
-            )
-
-            # Write README.md
-            _readme_path = os.path.join(output_dir_path, 'README.md')
-            fr.write_readme(
-                _readme_path,
-                max_filters=n_peq_filters,
-                max_gains=peq_max_gains
-            )
-
-        elif show_plot:
-            fr.plot_graph(show=True, close=False)
-
-        n += 1
-        print(f'{n}/{n_total} ({n / n_total * 100:.1f}%) {time() - start_time:.0f}s: {fr.name}')
-
+    return f'{time() - start_time:.0f}s: {fr.name} done.'
 
 def cli_args():
     """Parses command line arguments."""
@@ -290,6 +313,10 @@ def cli_args():
                                  '{}.'.format(DEFAULT_TREBLE_GAIN_K))
     arg_parser.add_argument('--show_plot', action='store_true',
                             help='Plot will be shown if this parameter exists, no value needed.')
+    arg_parser.add_argument('--thread_count', default=1,
+                            help='Amount of threads to use for processing results. If set to "max" all the threads '
+                                 'available will be used. Using more threads result in higher memory usage. '
+                                 'Defaults to 1.')
     args = vars(arg_parser.parse_args())
     if 'iem_bass_boost' in args:
         raise TypeError('iem_bass_boost argument has been removed, use "--bass_boost" instead!')
@@ -314,6 +341,17 @@ def cli_args():
         args['q'] = [float(x) for x in args['q'].split(',')]
     if 'fs' in args and args['fs'] is not None:
         args['fs'] = [int(x) for x in args['fs'].split(',')]
+    if thread_count := args.get('thread_count'):
+        if thread_count == 'max':
+            args['thread_count'] = multiprocessing.cpu_count()
+        else:
+            try:
+                thread_count = int(thread_count)
+            except ValueError:
+                raise ValueError('"--thread_count" must have a value greater than 0 or equal to "max"!')
+            if thread_count <= 0:
+                raise ValueError('"--thread_count" must have a value greater than 0 or equal to "max"!')
+            args['thread_count'] = thread_count
     return args
 
 
