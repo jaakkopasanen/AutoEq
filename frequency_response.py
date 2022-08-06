@@ -579,7 +579,6 @@ class FrequencyResponse:
         _gain = np.expand_dims(_gain, axis=1)
         # Re-compute eq
         a0, a1, a2, b0, b1, b2 = biquad.peaking(_fc, _Q, _gain, fs=fs)
-        frequency = np.repeat(np.expand_dims(frequency, axis=0), len(_fc), axis=0)
         _eq = np.sum(biquad.digital_coeffs(frequency, fs, a0, a1, a2, b0, b1, b2), axis=0)
 
         coeffs_a = np.hstack((np.tile(a0, a1.shape), a1, a2))
