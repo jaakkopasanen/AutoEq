@@ -11,6 +11,7 @@ from scipy.signal import savgol_filter, find_peaks, minimum_phase, firwin2
 from scipy.special import expit
 from scipy.stats import linregress
 from scipy.fftpack import next_fast_len
+from scipy.optimize import fmin_slsqp
 import numpy as np
 import urllib
 from time import time
@@ -660,6 +661,74 @@ class FrequencyResponse:
         self.fixed_band_eq = eq
         filters = np.transpose(np.vstack([fc, Q, gain]))
         return filters, len(fc), np.max(self.fixed_band_eq)
+
+    @staticmethod
+    def _parse_peq_optimizer_params(params):
+        """Parses 1-D array of parametric equalizer parameters into Fc, Q and gain arrays.
+
+        Input 1-D array of parametric equalizer parameters. 3xN length where 1st third is Fc, the 2nd Q and 3rd gain.
+
+        Fc values need to be in log10 (eg. np.log10(8000))
+        Q values will be made positive values
+
+        Args:
+            params: Optimized parameter
+
+        Returns:
+            fc, q, gain
+        """
+        params = np.reshape(params, (3, len(params) // 3))
+        fc = 10 ** params[0, :]
+        q = np.abs(params[1, :])
+        gain = params[2, :]
+        return fc, q, gain  # Center frequency is optimized as logarithmic variable
+
+    def _peq_optimizer_loss(self, pars, fs, f, target):
+        """Calculates loss value for parametric equalizer optimizer"""
+        fc, q, gain = self._parse_peq_optimizer_params(pars)
+        a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, q, gain, fs=fs)
+        estimate = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2, reduce=True)
+        loss_val = np.mean(np.square(target - estimate))
+        return loss_val
+
+    @staticmethod
+    def _init_peq_optimizer_params(n_filters):
+        f_max = np.log10(20e3)
+        f_min = np.log10(20)
+        f_step = (f_max - f_min) / n_filters
+        # Space center frequencies evenly across the total range
+        fc = np.linspace(f_min + f_step / 2, f_max - f_step / 2, n_filters)
+        # Filter bandwidth is total range (~10 octaves) divided by number of filters
+        bw = np.log10(20e3 / 20) / np.log10(2) / n_filters
+        # Same initial quality for all filters
+        q = np.sqrt(2 ** bw) / (2 ** bw - 1)
+        q = [q] * n_filters
+        # Starting with zero gains
+        gain = [0.0] * n_filters
+        return np.concatenate([fc, q, gain])
+
+    def optimize_peq(self, max_filters=None, fs=DEFAULT_FS):
+        if np.isscalar(max_filters):
+            max_filters = np.array([max_filters])
+        fc = np.array([])
+        q = np.array([])
+        gain = np.array([])
+        peq_fr = np.zeros(self.frequency.shape)
+        for _n_filters in max_filters:
+            guess = self._init_peq_optimizer_params(_n_filters)
+            par = fmin_slsqp(
+                self._peq_optimizer_loss, guess,
+                args=(fs, self.frequency, self.equalization - peq_fr),
+                #iter=100,
+                #acc=0.001,
+                iprint=0,
+                full_output=False)
+            _fc, _q, _gain = self._parse_peq_optimizer_params(par)
+            peq_fr += biquad.digital_coeffs(self.frequency, fs, *biquad.peaking(_fc, _q, _gain, fs=fs), reduce=True)
+            fc = np.concatenate([fc, _fc])
+            q = np.concatenate([q, _q])
+            gain = np.concatenate([gain, _gain])
+        return fc, q, gain, peq_fr
 
     def write_eqapo_parametric_eq(self, file_path, filters, preamp=None):
         """Writes EqualizerAPO Parameteric eq settings to a file."""
