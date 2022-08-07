@@ -683,20 +683,35 @@ class FrequencyResponse:
         """
         params = np.reshape(params, (3, len(params) // 3))
         fc = 10 ** params[0, :]
-        q = np.abs(params[1, :])
+        q = params[1, :]
         gain = params[2, :]
         return fc, q, gain  # Center frequency is optimized as logarithmic variable
+
+    @staticmethod
+    def _penalty(x, x_scale=20):
+        return 1 / (1 + np.e ** (-x * x_scale))
+
+    @classmethod
+    def _sharpness_penalty(cls, q, gain):
+        # This polynomial function gives the gain for peaking filter which achieves 18 dB / octave max derivative
+        sharpness_limit = -0.09503189270199464 + 20.575128011847003 * (1 / q)
+        sharpness_penalties = cls._penalty(gain / sharpness_limit - 1)
+        return np.expand_dims(sharpness_penalties, 1)
 
     def _peq_optimizer_loss(self, pars, fs, f, target):
         """Calculates loss value for parametric equalizer optimizer"""
         # TODO: Penalize for transition band extending Nyquist frequency: https://github.com/jaakkopasanen/AutoEq/issues/240
-        # TODO: Penalize for high gain, high Q filters: https://github.com/jaakkopasanen/AutoEq/issues/86
         # TODO: Shelf filters: https://github.com/jaakkopasanen/AutoEq/issues/102
         max_ix = np.sum(f < 10e3)  # Optimizing up to 10 kHz only
         fc, q, gain = self._parse_peq_optimizer_params(pars)
         a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, q, gain, fs=fs)
-        estimate = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2, reduce=True)
-        loss_val = np.mean(np.square(target[:max_ix] - estimate[:max_ix]))
+        filter_frs = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2, reduce=False)
+
+        # 100% penalty means the filter's frequency response is negated entirely
+        filter_frs *= 1 - self._sharpness_penalty(q, gain)
+        eq_fr = np.sum(filter_frs, axis=0)
+
+        loss_val = np.mean(np.square(target[:max_ix] - eq_fr[:max_ix]))
         return loss_val
 
     @staticmethod
@@ -1506,7 +1521,6 @@ class FrequencyResponse:
             dip_ind = dip_inds[i]
             target_left = dip_levels[i - 1]
             target_right = dip_levels[i + 1]
-            # TODO: Should target be where gradient reduces below certain threshold?
             left_ind = np.argwhere(y[:dip_ind] >= target_left)[-1, 0] + 1
             right_ind = np.argwhere(y[dip_ind:] >= target_right)[0, 0] + dip_ind - 1
             mask[left_ind:right_ind + 1] = np.ones(right_ind - left_ind + 1).astype(bool)
