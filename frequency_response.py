@@ -692,11 +692,24 @@ class FrequencyResponse:
         return 1 / (1 + np.e ** (-x * x_scale))
 
     @classmethod
-    def _sharpness_penalty(cls, q, gain):
+    def _sharpness_penalty_coefficients(cls, q, gain):
         # This polynomial function gives the gain for peaking filter which achieves 18 dB / octave max derivative
         sharpness_limit = -0.09503189270199464 + 20.575128011847003 * (1 / q)
-        sharpness_penalties = cls._penalty(gain / sharpness_limit - 1)
-        return np.expand_dims(sharpness_penalties, 1)
+        # Scaled sigmoid function as penalty coefficient
+        x = gain / sharpness_limit - 1
+        sharpness_penalties = 1 / (1 + np.e ** (-x * 20))
+        return 1 - np.expand_dims(sharpness_penalties, 1)
+
+    def _band_penalty_coefficients(self, fc, q, gain, fr):
+        bw = np.log(1 + 1/(2 * q**2) + np.sqrt(((2 * q**2 + 1) / q**2)**2 / 4 - 1)) / np.log(2)
+        f_insp = fc / (2 ** (bw / 2))
+        ix_insp = np.argmin(np.abs(np.expand_dims(f_insp, 1) - np.tile(self.frequency, (len(fc), 1))), axis=1)
+        # Filter gain should be 50% of the maximum at half the bandwidth
+        # This won't be the case (is less) with cookbook filters if filter extends Nyquist frequency
+        # The ratio is the penalty
+        penalties = fr[np.arange(fr.shape[0]), ix_insp]
+        penalties[gain != 0.0] /= (0.5 * gain[gain != 0.0])
+        return np.expand_dims(penalties, 1)
 
     def _peq_optimizer_loss(self, pars, fs, f, target):
         """Calculates loss value for parametric equalizer optimizer"""
@@ -707,8 +720,15 @@ class FrequencyResponse:
         a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, q, gain, fs=fs)
         filter_frs = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2, reduce=False)
 
-        # 100% penalty means the filter's frequency response is negated entirely
-        filter_frs *= 1 - self._sharpness_penalty(q, gain)
+        # 0 penalty coefficient means the filter's frequency response is negated entirely
+        # Penalize too sharp high gain filters
+        sharpness_penalty_coefficients = self._sharpness_penalty_coefficients(q, gain)
+        # Penalize filters corrupted by having transitions bands which extend beyond Nyquist frequency
+        # FIXME: This type of regularization ruins high frequency precision
+        band_penalty_coefficients = self._band_penalty_coefficients(fc, q, gain, filter_frs)
+
+        filter_frs *= sharpness_penalty_coefficients
+        filter_frs *= band_penalty_coefficients
         eq_fr = np.sum(filter_frs, axis=0)
 
         loss_val = np.mean(np.square(target[:max_ix] - eq_fr[:max_ix]))
