@@ -590,7 +590,7 @@ class FrequencyResponse:
         coeffs_b = np.hstack((b0, b1, b2))
         return _eq, rmse, np.squeeze(_fc, axis=1), np.squeeze(_Q, axis=1), np.squeeze(_gain, axis=1), coeffs_a, coeffs_b
 
-    def optimize_parametric_eq(self, max_filters=None, fs=DEFAULT_FS):
+    def legacy_optimize_parametric_eq(self, max_filters=None, fs=DEFAULT_FS):
         """Fits multiple biquad filters to equalization curve. If max_filters is a list with more than one element, one
         optimization run will be ran for each element. Each optimization run will continue from the previous. Each
         optimization run results must be combined with results of all the previous runs but can be used independently of
@@ -642,7 +642,7 @@ class FrequencyResponse:
         filters = np.transpose(np.vstack([fc, Q, gain]))
         return filters, n_produced, max_gains
 
-    def optimize_fixed_band_eq(self, fc=None, q=None, fs=DEFAULT_FS):
+    def legacy_optimize_fixed_band_eq(self, fc=None, q=None, fs=DEFAULT_FS):
         """Fits multiple fixed Fc and Q biquad filters to equalization curve.
 
         Args:
@@ -720,7 +720,7 @@ class FrequencyResponse:
             [(-20, 20)] * n_filters
         ])
 
-    def optimize_peq(self, max_filters=None, fs=DEFAULT_FS):
+    def optimize_parametric_eq(self, max_filters=None, fs=DEFAULT_FS):
         if np.isscalar(max_filters):
             max_filters = np.array([max_filters])
         fc = np.array([])
@@ -752,6 +752,43 @@ class FrequencyResponse:
         ix = np.argsort(filters[:, 0])
         filters = filters[ix, :]
         return filters, n_filters, max_gains
+
+    def _fbeq_optimizer_loss(self, gain, fs, f, target, fc, q):
+        """Calculates loss value for parametric equalizer optimizer"""
+        a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, q, gain, fs=fs)
+        estimate = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2, reduce=True)
+        loss_val = np.mean(np.square(target - estimate))
+        return loss_val
+
+    def optimize_fixed_band_eq(self, fc=None, q=None, fs=DEFAULT_FS):
+        """Fits multiple fixed Fc and Q biquad filters to equalization curve.
+
+        Args:
+            fc: List of center frequencies for the filters
+            q: List of Q values for the filters or a scalar to be used with all the filters
+            fs: Sampling frequency
+
+        Returns:
+            - **filters:** Numpy array of filters where each row contains one filter fc, Q and gain
+            - **n_produced:** Number of filters. Equals to length or inputs.
+            - **max_gains:** Maximum gain value of the equalizer frequency response.
+        """
+        if np.isscalar(q):
+            q = [q] * len(fc)
+        gain = fmin_slsqp(
+            self._fbeq_optimizer_loss,
+            [0.0] * len(fc),  # Init all filter gains to 0 dB
+            args=(fs, self.frequency, self.equalization, fc, q),
+            # iter=100,
+            # acc=0.001,
+            bounds=[(-20, 20)] * len(fc),
+            iprint=0,
+            full_output=False)
+        self.fixed_band_eq = biquad.digital_coeffs(self.frequency, fs, *biquad.peaking(fc, q, gain, fs=fs), reduce=True)
+        filters = np.transpose(np.vstack([fc, q, gain]))
+        ix = np.argsort(filters[:, 0])
+        filters = filters[ix, :]
+        return filters, len(fc), np.max(self.fixed_band_eq)
 
     def write_eqapo_parametric_eq(self, file_path, filters, preamp=None):
         """Writes EqualizerAPO Parameteric eq settings to a file."""
@@ -1639,8 +1676,6 @@ class FrequencyResponse:
         ax.set_ylabel('Amplitude (dBr)')
         if a_min is not None or a_max is not None:
             ax.set_ylim([a_min, a_max])
-        if len(ax.lines) > 0:
-            ax.legend(fontsize=8)
         ax.grid(True, which='major')
         ax.grid(True, which='minor')
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
@@ -1740,6 +1775,8 @@ class FrequencyResponse:
             )
 
         ax.set_title(self.name)
+        if len(ax.lines) > 0:
+            ax.legend(fontsize=8)
 
         if file_path is not None:
             file_path = os.path.abspath(file_path)
@@ -1923,8 +1960,9 @@ class FrequencyResponse:
                 treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
             if parametric_eq:
                 # Get the filters
-                peq_filters, n_peq_filters, peq_max_gains = self.optimize_peq(max_filters=max_filters, fs=fs)
+                peq_filters, n_peq_filters, peq_max_gains = self.optimize_parametric_eq(max_filters=max_filters, fs=fs)
             if fixed_band_eq:
+                #fbeq_filters, n_fbeq_filters, fbeq_max_gains = self.optimize_fixed_band_eq(fc=fc, q=q, fs=fs)
                 fbeq_filters, n_fbeq_filters, fbeq_max_gains = self.optimize_fixed_band_eq(fc=fc, q=q, fs=fs)
 
         return peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gains
