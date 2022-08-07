@@ -64,7 +64,7 @@ def main():
 
     eq_kwargs = {
         'equalize': True, 'parametric_eq': True, 'max_filters': [5, 5], 'ten_band_eq': True, 'new_only': new_only,
-        'convolution_eq': True, 'fs': [44100, 48000]
+        'convolution_eq': True, 'fs': [44100, 48000], 'thread_count': 0,
     }
     onear_kwargs = eq_kwargs.copy()
     onear_kwargs.update({'bass_boost_gain': 4.0})
