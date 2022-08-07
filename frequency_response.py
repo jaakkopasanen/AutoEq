@@ -27,8 +27,8 @@ from constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GA
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_ITERATIONS, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
-    HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM
-
+    HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_FBEQ_FILTER_MAX_GAIN, DEFAULT_PEQ_FILTER_MAX_GAIN, \
+    DEFAULT_PEQ_FILTER_MIN_Q, DEFAULT_PEQ_FILTER_MAX_Q
 
 warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
 
@@ -689,6 +689,9 @@ class FrequencyResponse:
 
     def _peq_optimizer_loss(self, pars, fs, f, target):
         """Calculates loss value for parametric equalizer optimizer"""
+        # TODO: Penalize for transition band extending Nyquist frequency: https://github.com/jaakkopasanen/AutoEq/issues/240
+        # TODO: Penalize for high gain, high Q filters: https://github.com/jaakkopasanen/AutoEq/issues/86
+        # TODO: Shelf filters: https://github.com/jaakkopasanen/AutoEq/issues/102
         max_ix = np.sum(f < 10e3)  # Optimizing up to 10 kHz only
         fc, q, gain = self._parse_peq_optimizer_params(pars)
         a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, q, gain, fs=fs)
@@ -713,14 +716,14 @@ class FrequencyResponse:
         return np.concatenate([fc, q, gain])
 
     @staticmethod
-    def _init_peq_optimizer_bounds(n_filters):
+    def _init_peq_optimizer_bounds(n_filters, filter_max_gain=DEFAULT_PEQ_FILTER_MAX_GAIN):
         return np.concatenate([
             [(np.log10(20), np.log10(20e3))] * n_filters,
-            [(0.18248, 6)] * n_filters,  # AUNBandEq has maximum bandwidth of 5 octaves which is Q of 0.182479
-            [(-20, 20)] * n_filters
+            [(DEFAULT_PEQ_FILTER_MIN_Q, DEFAULT_PEQ_FILTER_MAX_Q)] * n_filters,
+            [(-filter_max_gain, filter_max_gain)] * n_filters
         ])
 
-    def optimize_parametric_eq(self, max_filters=None, fs=DEFAULT_FS):
+    def optimize_parametric_eq(self, max_filters=None, filter_max_gain=DEFAULT_PEQ_FILTER_MAX_GAIN, fs=DEFAULT_FS):
         if np.isscalar(max_filters):
             max_filters = np.array([max_filters])
         fc = np.array([])
@@ -736,7 +739,7 @@ class FrequencyResponse:
                 args=(fs, self.frequency,self.equalization - peq_fr),
                 #iter=100,
                 #acc=0.001,
-                bounds=self._init_peq_optimizer_bounds(_n_filters),
+                bounds=self._init_peq_optimizer_bounds(_n_filters, filter_max_gain=filter_max_gain),
                 iprint=0,
                 full_output=False)
             _fc, _q, _gain = self._parse_peq_optimizer_params(par)
@@ -753,19 +756,21 @@ class FrequencyResponse:
         filters = filters[ix, :]
         return filters, n_filters, max_gains
 
-    def _fbeq_optimizer_loss(self, gain, fs, f, target, fc, q):
+    @staticmethod
+    def _fbeq_optimizer_loss(gain, fs, f, target, fc, q):
         """Calculates loss value for parametric equalizer optimizer"""
         a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, q, gain, fs=fs)
         estimate = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2, reduce=True)
         loss_val = np.mean(np.square(target - estimate))
         return loss_val
 
-    def optimize_fixed_band_eq(self, fc=None, q=None, fs=DEFAULT_FS):
+    def optimize_fixed_band_eq(self, fc=None, q=None, filter_max_gain=DEFAULT_FBEQ_FILTER_MAX_GAIN, fs=DEFAULT_FS):
         """Fits multiple fixed Fc and Q biquad filters to equalization curve.
 
         Args:
             fc: List of center frequencies for the filters
             q: List of Q values for the filters or a scalar to be used with all the filters
+            filter_max_gain: Maximum gain range for filters in fixed band equalizer
             fs: Sampling frequency
 
         Returns:
@@ -781,7 +786,7 @@ class FrequencyResponse:
             args=(fs, self.frequency, self.equalization, fc, q),
             # iter=100,
             # acc=0.001,
-            bounds=[(-20, 20)] * len(fc),
+            bounds=[(-filter_max_gain, filter_max_gain)] * len(fc),
             iprint=0,
             full_output=False)
         self.fixed_band_eq = biquad.digital_coeffs(self.frequency, fs, *biquad.peaking(fc, q, gain, fs=fs), reduce=True)
@@ -1858,7 +1863,9 @@ class FrequencyResponse:
                 treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                 treble_f_lower=DEFAULT_TREBLE_F_LOWER,
                 treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                treble_gain_k=DEFAULT_TREBLE_GAIN_K):
+                treble_gain_k=DEFAULT_TREBLE_GAIN_K,
+                parametric_eq_filter_max_gain=DEFAULT_PEQ_FILTER_MAX_GAIN,
+                fixed_band_eq_filter_max_gain=DEFAULT_FBEQ_FILTER_MAX_GAIN):
         """Runs processing pipeline with interpolation, centering, compensation and equalization.
 
         Args:
@@ -1889,6 +1896,8 @@ class FrequencyResponse:
                             switched to treble filter with sigmoid weighting function.
             treble_gain_k: Coefficient for treble gain, positive and negative. Useful for disabling or reducing
                            equalization power in treble region. Defaults to 1.0 (not limited).
+            parametric_eq_filter_max_gain: Maximum gain range for parametric equalizer filters
+            fixed_band_eq_filter_max_gain: Maximum gain range for fixed band equalizer filters
 
         Returns:
             - **peq_filters:** Numpy array of produced parametric eq peaking filters. Each row contains Fc, Q and gain
@@ -1960,9 +1969,10 @@ class FrequencyResponse:
                 treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
             if parametric_eq:
                 # Get the filters
-                peq_filters, n_peq_filters, peq_max_gains = self.optimize_parametric_eq(max_filters=max_filters, fs=fs)
+                peq_filters, n_peq_filters, peq_max_gains = self.optimize_parametric_eq(
+                    max_filters=max_filters, filter_max_gain=parametric_eq_filter_max_gain, fs=fs)
             if fixed_band_eq:
-                #fbeq_filters, n_fbeq_filters, fbeq_max_gains = self.optimize_fixed_band_eq(fc=fc, q=q, fs=fs)
-                fbeq_filters, n_fbeq_filters, fbeq_max_gains = self.optimize_fixed_band_eq(fc=fc, q=q, fs=fs)
+                fbeq_filters, n_fbeq_filters, fbeq_max_gains = self.optimize_fixed_band_eq(
+                    fc=fc, q=q, filter_max_gain=fixed_band_eq_filter_max_gain, fs=fs)
 
         return peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gains
