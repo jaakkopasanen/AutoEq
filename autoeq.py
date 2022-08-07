@@ -77,6 +77,9 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                     ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k)
             args_list.append(args)
 
+    if not thread_count:
+        thread_count = multiprocessing.cpu_count()
+
     with multiprocessing.Pool(thread_count) as pool:
         results = []
         for result in tqdm.tqdm(pool.imap_unordered(process_file_wrapper, args_list, chunksize=1), total=len(args_list)):

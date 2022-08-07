@@ -6,6 +6,7 @@ import matplotlib.ticker as ticker
 import math
 import pandas as pd
 from io import StringIO
+import warnings
 from scipy.interpolate import InterpolatedUnivariateSpline
 from scipy.signal import savgol_filter, find_peaks, minimum_phase, firwin2
 from scipy.special import expit
@@ -27,6 +28,9 @@ from constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GA
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
     HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM
+
+
+warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
 
 
 class FrequencyResponse:
@@ -685,10 +689,11 @@ class FrequencyResponse:
 
     def _peq_optimizer_loss(self, pars, fs, f, target):
         """Calculates loss value for parametric equalizer optimizer"""
+        max_ix = np.sum(f < 10e3)  # Optimizing up to 10 kHz only
         fc, q, gain = self._parse_peq_optimizer_params(pars)
         a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, q, gain, fs=fs)
         estimate = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2, reduce=True)
-        loss_val = np.mean(np.square(target - estimate))
+        loss_val = np.mean(np.square(target[:max_ix] - estimate[:max_ix]))
         return loss_val
 
     @staticmethod
@@ -707,6 +712,14 @@ class FrequencyResponse:
         gain = [0.0] * n_filters
         return np.concatenate([fc, q, gain])
 
+    @staticmethod
+    def _init_peq_optimizer_bounds(n_filters):
+        return np.concatenate([
+            [(np.log10(20), np.log10(20e3))] * n_filters,
+            [(0.18248, 6)] * n_filters,  # AUNBandEq has maximum bandwidth of 5 octaves which is Q of 0.182479
+            [(-20, 20)] * n_filters
+        ])
+
     def optimize_peq(self, max_filters=None, fs=DEFAULT_FS):
         if np.isscalar(max_filters):
             max_filters = np.array([max_filters])
@@ -714,21 +727,31 @@ class FrequencyResponse:
         q = np.array([])
         gain = np.array([])
         peq_fr = np.zeros(self.frequency.shape)
+        n_filters = []
+        max_gains = []
         for _n_filters in max_filters:
-            guess = self._init_peq_optimizer_params(_n_filters)
             par = fmin_slsqp(
-                self._peq_optimizer_loss, guess,
-                args=(fs, self.frequency, self.equalization - peq_fr),
+                self._peq_optimizer_loss,
+                self._init_peq_optimizer_params(_n_filters),
+                args=(fs, self.frequency,self.equalization - peq_fr),
                 #iter=100,
                 #acc=0.001,
+                bounds=self._init_peq_optimizer_bounds(_n_filters),
                 iprint=0,
                 full_output=False)
             _fc, _q, _gain = self._parse_peq_optimizer_params(par)
-            peq_fr += biquad.digital_coeffs(self.frequency, fs, *biquad.peaking(_fc, _q, _gain, fs=fs), reduce=True)
+            n_filters.append(len(_fc))
+            _peq_fr = biquad.digital_coeffs(self.frequency, fs, *biquad.peaking(_fc, _q, _gain, fs=fs), reduce=True)
+            max_gains.append(np.max(_peq_fr))
+            peq_fr += _peq_fr
             fc = np.concatenate([fc, _fc])
             q = np.concatenate([q, _q])
             gain = np.concatenate([gain, _gain])
-        return fc, q, gain, peq_fr
+        self.parametric_eq = peq_fr
+        filters = np.transpose(np.vstack([fc, q, gain]))
+        ix = np.argsort(filters[:, 0])
+        filters = filters[ix, :]
+        return filters, n_filters, max_gains
 
     def write_eqapo_parametric_eq(self, file_path, filters, preamp=None):
         """Writes EqualizerAPO Parameteric eq settings to a file."""
@@ -1603,6 +1626,27 @@ class FrequencyResponse:
                 kwargs[key] = val
         return kwargs
 
+    @staticmethod
+    def init_plot(fig=None, ax=None, f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, a_min=None, a_max=None, ):
+        if fig is None:
+            fig, ax = plt.subplots()
+            fig.set_size_inches(12, 8)
+            fig.set_facecolor('white')
+            ax.set_facecolor('white')
+        ax.set_xlabel('Frequency (Hz)')
+        ax.semilogx()
+        ax.set_xlim([f_min, f_max])
+        ax.set_ylabel('Amplitude (dBr)')
+        if a_min is not None or a_max is not None:
+            ax.set_ylim([a_min, a_max])
+        if len(ax.lines) > 0:
+            ax.legend(fontsize=8)
+        ax.grid(True, which='major')
+        ax.grid(True, which='minor')
+        ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
+        ax.set_xticks([20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000])
+        return fig, ax
+
     def plot_graph(self,
                    fig=None,
                    ax=None,
@@ -1633,13 +1677,10 @@ class FrequencyResponse:
                    target_plot_kwargs=None,
                    close=False):
         """Plots frequency response graph."""
-        if fig is None:
-            fig, ax = plt.subplots()
-            fig.set_size_inches(12, 8)
-            fig.set_facecolor('white')
-            ax.set_facecolor('white')
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
+
+        fig, ax = self.__class__.init_plot(fig=fig, ax=ax, f_min=f_min, f_max=f_max, a_min=a_min, a_max=a_max)
 
         if target and len(self.target):
             ax.plot(
@@ -1698,19 +1739,8 @@ class FrequencyResponse:
                 **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized', linewidth=1, color='blue')
             )
 
-        ax.set_xlabel('Frequency (Hz)')
-        ax.semilogx()
-        ax.set_xlim([f_min, f_max])
-        ax.set_ylabel('Amplitude (dBr)')
-        if a_min is not None or a_max is not None:
-            ax.set_ylim([a_min, a_max])
         ax.set_title(self.name)
-        if len(ax.lines) > 0:
-            ax.legend(fontsize=8)
-        ax.grid(True, which='major')
-        ax.grid(True, which='minor')
-        ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
-        ax.set_xticks([20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000])
+
         if file_path is not None:
             file_path = os.path.abspath(file_path)
             fig.savefig(file_path, dpi=120)
@@ -1893,7 +1923,7 @@ class FrequencyResponse:
                 treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
             if parametric_eq:
                 # Get the filters
-                peq_filters, n_peq_filters, peq_max_gains = self.optimize_parametric_eq(max_filters=max_filters, fs=fs)
+                peq_filters, n_peq_filters, peq_max_gains = self.optimize_peq(max_filters=max_filters, fs=fs)
             if fixed_band_eq:
                 fbeq_filters, n_fbeq_filters, fbeq_max_gains = self.optimize_fixed_band_eq(fc=fc, q=q, fs=fs)
 
