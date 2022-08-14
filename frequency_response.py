@@ -694,44 +694,66 @@ class FrequencyResponse:
     @classmethod
     def _sharpness_penalty_coefficients(cls, q, gain):
         # This polynomial function gives the gain for peaking filter which achieves 18 dB / octave max derivative
-        sharpness_limit = -0.09503189270199464 + 20.575128011847003 * (1 / q)
+        gain_limit = -0.09503189270199464 + 20.575128011847003 * (1 / q)
         # Scaled sigmoid function as penalty coefficient
-        x = gain / sharpness_limit - 1
-        sharpness_penalties = 1 / (1 + np.e ** (-x * 20))
-        return 1 - np.expand_dims(sharpness_penalties, 1)
+        x = gain / gain_limit - 1
+        sharpness_penalties = 1 / (1 + np.e ** (-x * 100))
+        return np.expand_dims(sharpness_penalties, 1)
 
-    def _band_penalty_coefficients(self, fc, q, gain, fr):
-        bw = np.log(1 + 1/(2 * q**2) + np.sqrt(((2 * q**2 + 1) / q**2)**2 / 4 - 1)) / np.log(2)
-        f_insp = fc / (2 ** (bw / 2))
-        ix_insp = np.argmin(np.abs(np.expand_dims(f_insp, 1) - np.tile(self.frequency, (len(fc), 1))), axis=1)
-        # Filter gain should be 50% of the maximum at half the bandwidth
-        # This won't be the case (is less) with cookbook filters if filter extends Nyquist frequency
-        # The ratio is the penalty
-        penalties = fr[np.arange(fr.shape[0]), ix_insp]
-        penalties[gain != 0.0] /= (0.5 * gain[gain != 0.0])
-        return np.expand_dims(penalties, 1)
+    def _band_penalty_coefficients(self, fc, q, gain, filter_frs):
+        """Calculates penalty coefficients for filters if their transition bands extend beyond Nyquist frequency
 
-    def _peq_optimizer_loss(self, pars, fs, f, target):
+        The calculation is based on ratio of frequency response integrals between 44.1 kHz and 192 kHz
+
+        Args:
+            fc: Filter center frequencies, 1-D array
+            q: Filter qualities, 1-D array
+            gain: Filter gains, 1-D array
+            filter_frs: Filter frequency responses, 2-D array, one fr per row
+
+        Returns:
+            Column array of penalty coefficients, one per filter
+        """
+        ref_frs = biquad.digital_coeffs(self.frequency, 192e3, *biquad.peaking(fc, q, gain, fs=192e3))
+        est_sums = np.sum(filter_frs, axis=1)
+        ref_sums = np.sum(ref_frs, axis=1)
+        penalties = np.zeros((len(fc),))
+        mask = np.squeeze(ref_sums) != 0.0
+        penalties[mask] = est_sums[mask] / ref_sums[mask]
+        return 10 * (1 - np.expand_dims(penalties, 1))
+
+    def _peq_optimizer_loss(self, pars, fs, f, target, regularize_band, regularize_q):
         """Calculates loss value for parametric equalizer optimizer"""
-        # TODO: Penalize for transition band extending Nyquist frequency: https://github.com/jaakkopasanen/AutoEq/issues/240
-        # TODO: Shelf filters: https://github.com/jaakkopasanen/AutoEq/issues/102
-        max_ix = np.sum(f < 10e3)  # Optimizing up to 10 kHz only
+        ix10 = np.sum(f < 10e3)  # Index for 10 kHz
+        ix20 = np.sum(f < 20e3)  # Index for 20 kHz
         fc, q, gain = self._parse_peq_optimizer_params(pars)
         a0, a1, a2, b0, b1, b2 = biquad.peaking(fc, q, gain, fs=fs)
         filter_frs = biquad.digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2, reduce=False)
-
-        # 0 penalty coefficient means the filter's frequency response is negated entirely
-        # Penalize too sharp high gain filters
-        sharpness_penalty_coefficients = self._sharpness_penalty_coefficients(q, gain)
-        # Penalize filters corrupted by having transitions bands which extend beyond Nyquist frequency
-        # FIXME: This type of regularization ruins high frequency precision
-        band_penalty_coefficients = self._band_penalty_coefficients(fc, q, gain, filter_frs)
-
-        filter_frs *= sharpness_penalty_coefficients
-        filter_frs *= band_penalty_coefficients
         eq_fr = np.sum(filter_frs, axis=0)
 
-        loss_val = np.mean(np.square(target[:max_ix] - eq_fr[:max_ix]))
+        # Above 10 kHz only the total energy matters so we'll take mean of values between 10 kHz and 20 kHz
+        tc = target.copy()
+        tc[ix10:ix20] = np.mean(tc[ix10:ix20])
+        eq_fr[ix10:ix20] = np.mean(eq_fr[ix10:ix20])
+        # Mean squred error as loss, only up to 20 kHz
+        mse_fr = np.mean(np.square(target[:ix20] - eq_fr[:ix20]))
+        loss_val = mse_fr
+
+        if regularize_band:
+            # Penalize filters corrupted by having transitions bands which extend beyond Nyquist frequency
+            band_penalty_coefficients = self._band_penalty_coefficients(fc, q, gain, filter_frs)
+            band_penalties = filter_frs * band_penalty_coefficients  # Absolute penalties
+            mse_band = np.mean(np.square(band_penalties))  # MSE to add as penalty to loss
+            loss_val += mse_band
+
+        if regularize_q:
+            # 0 penalty coefficient means the filter's frequency response is negated entirely
+            # Penalize too sharp high gain filters
+            sharpness_penalty_coefficients = self._sharpness_penalty_coefficients(q, gain)
+            sharpness_penalties = filter_frs * sharpness_penalty_coefficients  # Absolute penalties
+            mse_sharpness = np.mean(np.square(sharpness_penalties))  # MSE to add as penalty to loss
+            loss_val += mse_sharpness
+
         return loss_val
 
     @staticmethod
@@ -758,7 +780,7 @@ class FrequencyResponse:
             [(-filter_max_gain, filter_max_gain)] * n_filters
         ])
 
-    def optimize_parametric_eq(self, max_filters=None, filter_max_gain=DEFAULT_PEQ_FILTER_MAX_GAIN, fs=DEFAULT_FS):
+    def optimize_parametric_eq(self, max_filters=None, filter_max_gain=DEFAULT_PEQ_FILTER_MAX_GAIN, fs=DEFAULT_FS, regularize_band=True, regularize_q=True):
         if np.isscalar(max_filters):
             max_filters = np.array([max_filters])
         fc = np.array([])
@@ -771,7 +793,7 @@ class FrequencyResponse:
             par = fmin_slsqp(
                 self._peq_optimizer_loss,
                 self._init_peq_optimizer_params(_n_filters),
-                args=(fs, self.frequency,self.equalization - peq_fr),
+                args=(fs, self.frequency, self.equalization - peq_fr, regularize_band, regularize_q),
                 #iter=100,
                 #acc=0.001,
                 bounds=self._init_peq_optimizer_bounds(_n_filters, filter_max_gain=filter_max_gain),
