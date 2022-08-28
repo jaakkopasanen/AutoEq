@@ -12,16 +12,22 @@ class PEQFilter(ABC):
         self.f = np.array(f)
         self.fs = fs
 
+        if not optimize_fc and fc is None:
+            raise TypeError('fc must be given when not optimizing it')
         self._fc = fc
         self.optimize_fc = optimize_fc
         self.min_fc = min_fc
         self.max_fc = max_fc
 
+        if not optimize_fc and fc is None:
+            raise TypeError('q must be given when not optimizing it')
         self._q = q
         self.optimize_q = optimize_q
         self.min_q = min_q
         self.max_q = max_q
 
+        if not optimize_fc and fc is None:
+            raise TypeError('gain must be given when not optimizing it')
         self._gain = gain
         self.optimize_gain = optimize_gain
         self.min_gain = min_gain
@@ -94,30 +100,42 @@ class PEQFilter(ABC):
 
 class Peaking(PEQFilter):
     def __init__(self, f, fs,
-                 fc=None, optimize_fc=None, min_fc=None, max_fc=None,
+                 fc=None, optimize_fc=None, min_fc=20, max_fc=20e3,
                  q=None, optimize_q=None, min_q=0.18248, max_q=6,
                  gain=None, optimize_gain=None, min_gain=-20, max_gain=20):
         super().__init__(f, fs, fc, optimize_fc, min_fc, max_fc, q, optimize_q, min_q, max_q, gain, optimize_gain,
                          min_gain, max_gain)
 
     def init(self, target):
+        """Initializes optimizable fc, q and gain"""
         peak_ixs, peak_props = find_peaks(np.clip(target, 0, None), width=0, prominence=0, height=0)
         dip_ixs, dip_props = find_peaks(np.clip(-target, 0, None), width=0, prominence=0, height=0)
 
-        widths = np.concatenate([peak_props['widths'], dip_props['widths']])
-        heights = np.concatenate([peak_props['peak_heights'], dip_props['peak_heights']])
-        sizes = widths * heights
-        ix = np.argmax(sizes)[::-1]
+        min_fc_ix = np.sum(self.f < self.min_fc)
+        max_fc_ix = np.sum(self.f < self.max_fc)
 
+        ixs = np.concatenate([peak_ixs, dip_ixs])
+        mask = np.logical_and(ixs >= min_fc_ix, ixs <= max_fc_ix)
+        ixs = ixs[mask]
+        widths = np.concatenate([peak_props['widths'], dip_props['widths']])[mask]
+        heights = np.concatenate([peak_props['peak_heights'], dip_props['peak_heights']])[mask]
+        sizes = widths * heights
+        ixs_ix = np.argmax(sizes)  # Index to indexes array which point to the peak with greatest size
+        ix = ixs[ixs_ix]  # Index to f and target
+
+        params = []
         if self.optimize_fc:
-            self.fc = self.f[ix]
+            self.fc = self.f[ixs_ix]
+            params.append(self.fc)
         if self.optimize_q:
-            width = widths[ix]
-            f_step = np.log(self.f[1] / self.f[0]) / np.log(2)
+            width = widths[ixs_ix]
+            f_step = np.log2(self.f[1] / self.f[0])
             bw = np.log2((2 ** f_step) ** width)
             self.q = np.sqrt(2 ** bw) / (2 ** bw - 1)
+            params.append(self.q)
         if self.gain:
-            self.gain = heights[ix] if target[ix] > 0 else -heights[ix]
+            self.gain = heights[ixs_ix] if target[ix] > 0 else - heights[ixs_ix]
+            params.append(self.gain)
 
     def biquad_coefficients(self):
         a = 10 ** (self.gain / 40)
@@ -145,7 +163,7 @@ class Peaking(PEQFilter):
         return np.mean(np.square(self.fr * sharpness_penalty_coefficient))
 
 
-class HighShelf(PEQFilter):
+class ShelfFilter(PEQFilter, ABC):
     def __init__(self, f, fs,
                  fc=None, optimize_fc=None, min_fc=None, max_fc=None,
                  q=None, optimize_q=None, min_q=0.4, max_q=0.7,
@@ -153,8 +171,29 @@ class HighShelf(PEQFilter):
         super().__init__(f, fs, fc, optimize_fc, min_fc, max_fc, q, optimize_q, min_q, max_q, gain, optimize_gain,
                          min_gain, max_gain)
 
+    @property
+    def sharpness_penalty(self):
+        # Shelf filters start to overshoot hard before they get anywhere near 18 dB per octave slope
+        return 0.0
+
+
+class HighShelf(ShelfFilter):
     def init(self, target):  # TODO
-        pass
+        params = []
+        if self.optimize_fc:
+            # Find point where the ratio of average level after the point and average level before the point is the
+            # greatest
+            ix = np.argmax([np.mean(target[ix:]) / np.mean(target[:ix + 1]) for ix in range(1, len(self.f))])
+            self.fc = self.f[ix]
+            params.append(self.fc)
+        if self.optimize_q:
+            self.q = 0.7
+            params.append(self.q)
+        if self.optimize_gain:
+            ix = np.argmin(np.abs(self.f - self.fc))
+            self.gain = -np.mean(target[ix:])
+            params.append(self.gain)
+        return params
 
     def biquad_coefficients(self):
         a = 10 ** (self.gain / 40)
@@ -171,21 +210,23 @@ class HighShelf(PEQFilter):
 
         return 1.0, a1, a2, b0, b1, b2
 
-    @property
-    def sharpness_penalty(self):  # TODO
-        return 0.0
 
-
-class LowShelf(PEQFilter):
-    def __init__(self, f, fs,
-                 fc=None, optimize_fc=None, min_fc=None, max_fc=None,
-                 q=None, optimize_q=None, min_q=0.4, max_q=0.7,
-                 gain=None, optimize_gain=None, min_gain=-20, max_gain=20):
-        super().__init__(f, fs, fc, optimize_fc, min_fc, max_fc, q, optimize_q, min_q, max_q, gain, optimize_gain,
-                         min_gain, max_gain)
-
-    def init(self, target):  # TODO
-        pass
+class LowShelf(ShelfFilter):
+    def init(self, target):
+        params = []
+        if self.optimize_fc:
+            # Find point where the ratio of average level before the point and average level after the point is the
+            # greatest
+            ix = np.argmax([np.mean(np.mean(target[:ix + 1] / target[ix:])) for ix in range(1, len(self.f))])
+            self.fc = self.f[ix]
+            params.append(self.fc)
+        if self.optimize_q:
+            self.q = 0.7
+            params.append(self.q)
+        if self.optimize_gain:
+            ix = np.argmin(np.abs(self.f - self.fc))
+            self.gain = -np.mean(target[:ix + 1])
+            params.append(self.gain)
 
     def biquad_coefficients(self):
         a = 10 ** (self.gain / 40)
@@ -202,10 +243,6 @@ class LowShelf(PEQFilter):
 
         return 1.0, a1, a2, b0, b1, b2
 
-    @property
-    def sharpness_penalty(self):  # TODO
-        return 0.0
-
 
 class PEQ:
     def __init__(self, f, fs, filters=None, target=None):
@@ -216,7 +253,7 @@ class PEQ:
         else:
             for filt in filters:
                 self.add_filter(filt)
-        self.target = np.array(target)
+        self.target = np.array(target) if target is not None else None
         self._ix10k = np.sum(self.f < 10e3)  # Index for ~10 kHz
         self._ix20k = np.sum(self.f < 20e3)  # Index for ~20 kHz
 
@@ -252,7 +289,7 @@ class PEQ:
         return np.sum([filt.fr() for filt in self.filters], axis=0)
 
     def _parse_optimizer_params(self, params):
-        """Extracts fc, q and gain parameters from input and updates filters
+        """Extracts fc, q and gain from optimizer params and updates filters
 
         Args:
             params: Parameter list/array passed by the optimizer. The values correspond to the initialized params
@@ -270,24 +307,30 @@ class PEQ:
                 i += 1
 
     def _optimizer_loss(self, params):
+        """Calculates optimizer loss value"""
+        # Update filters with latest iteration params
         self._parse_optimizer_params(params)
 
+        # Above 10 kHz only the total energy matters so we'll take mean of values between 10 kHz and 20 kHz
         fr = self.fr.copy()
         target = self.target.copy()
-
-        # Above 10 kHz only the total energy matters so we'll take mean of values between 10 kHz and 20 kHz
         target[self._ix10k:self._ix20k] = np.mean(target[self._ix10k:self._ix20k])
         fr[self._ix10k:self._ix20k] = np.mean(self.fr[self._ix10k:self._ix20k])
+
         # Mean squared error as loss, only up to 20 kHz
         loss_val = np.mean(np.square(self.target[:self._ix20k] - fr[:self._ix20k]))
 
-        # Penalize too sharp high gain filters
+        # Sum penalties from all filters to MSE
         for filt in self.filters:
             loss_val += filt.sharpness_penalty
 
         return loss_val
 
     def _init_optimizer_params(self):
+        """Creates a list of initial parameter values for the optimizer
+
+        The list is fc, q and gain from each filter. Non-optimizable parameters are skipped.
+        """
         order = [
             [Peaking, True, True],  # Peaking
             [LowShelf, True, True],  # Low shelfs
@@ -311,7 +354,7 @@ class PEQ:
         filters = sorted(self.filters, key=init_order, reverse=True)
         remaining_target = self.target.copy()
         for filt in filters:
-            filt.init(remaining_target)
+            init += filt.init(remaining_target)
             remaining_target += filt.fr
         return init
 
@@ -331,6 +374,7 @@ class PEQ:
         return bounds
 
     def optimize(self):
+        """Optimizes filter parameters"""
         params = fmin_slsqp(
             self._optimizer_loss,
             self._init_optimizer_params(),
