@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*
 
 import os
+import math
 
 DEFAULT_F_MIN = 20
 DEFAULT_F_MAX = 20000
@@ -31,6 +32,7 @@ DEFAULT_PEQ_FILTER_MAX_GAIN = 20
 DEFAULT_PEQ_FILTER_MIN_Q = 0.18248  # AUNBandEq has maximum bandwidth of 5 octaves which is Q of 0.182479
 DEFAULT_PEQ_FILTER_MAX_Q = 6
 DEFAULT_PEQ_N_FILTERS = 10
+DEFAULT_MAX_SLOPE = 18
 
 DEFAULT_GRAPHIC_EQ_STEP = 1.0563  # Produces 127 samples with greatest frequency of 19871
 
@@ -41,3 +43,47 @@ HARMAN_ONEAR_PREFERENCE_FREQUENCIES = [20.0, 21.0, 22.0, 24.0, 25.0, 27.0, 28.0,
 HARMAN_INEAR_PREFENCE_FREQUENCIES = [20.0, 21.2, 22.4, 23.6, 25.0, 26.5, 28.0, 30.0, 31.5, 33.5, 35.5, 37.5, 40.0, 42.5, 45.0, 47.5, 50.0, 53.0, 56.0, 60.0, 63.0, 67.0, 71.0, 75.0, 80.0, 85.0, 90.0, 95.0, 100.0, 106.0, 112.0, 118.0, 125.0, 132.0, 140.0, 150.0, 160.0, 170.0, 180.0, 190.0, 200.0, 212.0, 224.0, 236.0, 250.0, 265.0, 280.0, 300.0, 315.0, 335.0, 355.0, 375.0, 400.0, 425.0, 450.0, 475.0, 500.0, 530.0, 560.0, 600.0, 630.0, 670.0, 710.0, 750.0, 800.0, 850.0, 900.0, 950.0, 1000.0, 1060.0, 1120.0, 1180.0, 1250.0, 1320.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0, 2120.0, 2240.0, 2360.0, 2500.0, 2650.0, 2800.0, 3000.0, 3150.0, 3350.0, 3550.0, 3750.0, 4000.0, 4250.0, 4500.0, 4750.0, 5000.0, 5300.0, 5600.0, 6000.0, 6300.0, 6700.0, 7100.0, 7500.0, 8000.0, 8500.0, 9000.0, 9500.0, 10000.0, 10600.0, 11200.0, 11800.0, 12500.0, 13200.0, 14000.0, 15000.0, 16000.0, 17000.0, 18000.0, 19000.0, 20000.0]
 
 PREAMP_HEADROOM = 0.2
+
+PEQ_CONFIGS = {
+    '10_PEAKING': {
+        'filter_defaults': {
+            'fc_min': 20,
+            'fc_max': 20e3,
+            'q_min': DEFAULT_PEQ_FILTER_MIN_Q,
+            'q_max': DEFAULT_PEQ_FILTER_MAX_Q,
+            'gain_min': -DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'gain_max': DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'type': 'PEAKING'
+        },
+        'filters': [{}] * 10
+    },
+    '10_BAND_GRAPHIC_EQ': {
+        'filter_defaults': {
+            'gain_min': -DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'gain_max': DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'q': math.sqrt(2),
+            'type': 'PEAKING'
+        },
+        'filters': [{'fc': 31.25 * 2**i} for i in range(10)]
+    },
+    'LS8PKHS': {
+        'filter_defaults': {
+            'fc_min': 20,
+            'fc_max': 20e3,
+            'q_min': DEFAULT_PEQ_FILTER_MIN_Q,
+            'q_max': DEFAULT_PEQ_FILTER_MAX_Q,
+            'gain_min': -DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'gain_max': DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'type': 'PEAKING'
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105,
+            'q': 0.71
+        }] + [{}] * 8 + [{
+            'type': 'HIGH_SHELF',
+            'fc': 10e3,
+            'q': 0.71
+        }]
+    }
+}
