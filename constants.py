@@ -19,19 +19,34 @@ DEFAULT_TREBLE_SMOOTHING_F_LOWER = 100.0
 DEFAULT_TREBLE_SMOOTHING_F_UPPER = 10000.0
 DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE = 2
 DEFAULT_TREBLE_SMOOTHING_ITERATIONS = 1
-DEFAULT_TILT = 0.0
+
 DEFAULT_FS = 44100
 DEFAULT_BIT_DEPTH = 16
 DEFAULT_PHASE = 'minimum'
 DEFAULT_F_RES = 10
+
+DEFAULT_TILT = 0.0
 DEFAULT_BASS_BOOST_GAIN = 0.0
 DEFAULT_BASS_BOOST_FC = 105.0
 DEFAULT_BASS_BOOST_Q = 0.71
-DEFAULT_FBEQ_FILTER_MAX_GAIN = 12
-DEFAULT_PEQ_FILTER_MAX_GAIN = 20
-DEFAULT_PEQ_FILTER_MIN_Q = 0.18248  # AUNBandEq has maximum bandwidth of 5 octaves which is Q of 0.182479
-DEFAULT_PEQ_FILTER_MAX_Q = 6
-DEFAULT_PEQ_N_FILTERS = 10
+
+DEFAULT_FIXED_BAND_FILTER_MIN_GAIN = -12
+DEFAULT_FIXED_BAND_FILTER_MAX_GAIN = 12
+
+DEFAULT_PEAKING_FILTER_MIN_FC = 20
+DEFAULT_PEAKING_FILTER_MAX_FC = 10000
+DEFAULT_PEAKING_FILTER_MIN_Q = 0.18248  # AUNBandEq has maximum bandwidth of 5 octaves which is Q of 0.182479
+DEFAULT_PEAKING_FILTER_MAX_Q = 6
+DEFAULT_PEAKING_FILTER_MIN_GAIN = -20
+DEFAULT_PEAKING_FILTER_MAX_GAIN = 20
+
+DEFAULT_SHELF_FILTER_MIN_FC = 20
+DEFAULT_SHELF_FILTER_MAX_FC = 10000
+DEFAULT_SHELF_FILTER_MIN_Q = 0.4  # Shelf filters start to overshoot below 0.4
+DEFAULT_SHELF_FILTER_MAX_Q = 0.7  # Shelf filters start to overshoot above 0.7
+DEFAULT_SHELF_FILTER_MIN_GAIN = -20
+DEFAULT_SHELF_FILTER_MAX_GAIN = 20
+
 DEFAULT_MAX_SLOPE = 18
 
 DEFAULT_GRAPHIC_EQ_STEP = 1.0563  # Produces 127 samples with greatest frequency of 19871
@@ -45,45 +60,35 @@ HARMAN_INEAR_PREFENCE_FREQUENCIES = [20.0, 21.2, 22.4, 23.6, 25.0, 26.5, 28.0, 3
 PREAMP_HEADROOM = 0.2
 
 PEQ_CONFIGS = {
-    '10_PEAKING': {
-        'filter_defaults': {
-            'min_fc': 20,
-            'max_fc': 20e3,
-            'min_q': DEFAULT_PEQ_FILTER_MIN_Q,
-            'max_q': DEFAULT_PEQ_FILTER_MAX_Q,
-            'min_gain': -DEFAULT_PEQ_FILTER_MAX_GAIN,
-            'max_gain': DEFAULT_PEQ_FILTER_MAX_GAIN,
-            'type': 'PEAKING'
-        },
-        'filters': [{}] * 10
-    },
     '10_BAND_GRAPHIC_EQ': {
-        'filter_defaults': {
-            'min_gain': -DEFAULT_PEQ_FILTER_MAX_GAIN,
-            'max_gain': DEFAULT_PEQ_FILTER_MAX_GAIN,
-            'q': math.sqrt(2),
-            'type': 'PEAKING'
-        },
-        'filters': [{'fc': 31.25 * 2**i} for i in range(10)]
+        'filters': [{'fc': 31.25 * 2 ** i, 'q': math.sqrt(2), 'type': 'PEAKING'} for i in range(10)]
     },
-    'LS8PKHS': {
-        'filter_defaults': {
-            'min_fc': 20,
-            'max_fc': 20e3,
-            'min_q': DEFAULT_PEQ_FILTER_MIN_Q,
-            'max_q': DEFAULT_PEQ_FILTER_MAX_Q,
-            'min_gain': -DEFAULT_PEQ_FILTER_MAX_GAIN,
-            'max_gain': DEFAULT_PEQ_FILTER_MAX_GAIN,
-            'type': 'PEAKING'
-        },
+    '10_PEAKING': {
+        'filters': [{'type': 'PEAKING'}] * 10
+    },
+    '8_PEAKING_WITH_SHELVES': {
         'filters': [{
             'type': 'LOW_SHELF',
             'fc': 105,
-            'q': 0.71
-        }] + [{}] * 8 + [{
+            'q': 0.7
+        }, {
             'type': 'HIGH_SHELF',
             'fc': 10e3,
-            'q': 0.71
-        }]
-    }
+            'q': 0.7
+        }] + [{'type': 'PEAKING'}] * 8
+    },
+    '4_PEAKING_WITH_LOW_SHELF': {
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105,
+            'q': 0.7
+        }] + [{'type': 'PEAKING'}] * 4
+    },
+    '4_PEAKING_WITH_HIGH_SHELF': {
+        'filters': [{
+            'type': 'HIGH_SHELF',
+            'fc': 10000,
+            'q': 0.7
+        }] + [{'type': 'PEAKING'}] * 4
+    },
 }

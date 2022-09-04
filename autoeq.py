@@ -8,24 +8,24 @@ import soundfile as sf
 from time import time
 import numpy as np
 import tqdm
+import yaml
+
 from constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, \
-    DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, PREAMP_HEADROOM, DEFAULT_SMOOTHING_WINDOW_SIZE, \
-    DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_PEQ_FILTER_MAX_GAIN, DEFAULT_FBEQ_FILTER_MAX_GAIN, \
-    DEFAULT_PEQ_N_FILTERS
+    DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, \
+    DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, PEQ_CONFIGS
 from frequency_response import FrequencyResponse
 
 
 def batch_processing(input_dir=None, output_dir=None, new_only=False, standardize_input=False, compensation=None,
                      equalize=False, parametric_eq=False, fixed_band_eq=False, rockbox=False, fc=None, q=None,
-                     ten_band_eq=False, max_filters=None, convolution_eq=False, fs=DEFAULT_FS,
-                     bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
+                     ten_band_eq=False, parametric_eq_config=None, fixed_band_eq_config=None, convolution_eq=False,
+                     fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
                      bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
                      bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=None, sound_signature=None, max_gain=DEFAULT_MAX_GAIN,
                      window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, parametric_eq_filter_max_gain=DEFAULT_PEQ_FILTER_MAX_GAIN,
-                     fixed_band_eq_filter_max_gain=DEFAULT_FBEQ_FILTER_MAX_GAIN, show_plot=False, thread_count=1):
+                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False, thread_count=1):
     """Parses files in input directory and produces equalization results in output directory."""
 
     if convolution_eq and not equalize:
@@ -61,6 +61,21 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
         sound_signature.interpolate()
         sound_signature.center()
 
+    if parametric_eq_config is not None:
+        if type(parametric_eq_config) is str and os.path.isfile(parametric_eq_config):
+            # Parametric EQ config is a file path
+            with open(parametric_eq_config) as fh:
+                parametric_eq_config = yaml.safe_load(fh)
+        else:
+            if type(parametric_eq_config) is str:
+                parametric_eq_config = [parametric_eq_config]
+            parametric_eq_config = [PEQ_CONFIGS[config_name] for config_name in parametric_eq_config]
+
+    if fixed_band_eq_config is not None and os.path.isfile(fixed_band_eq_config):
+        # Parametric EQ config is a file path
+        with open(fixed_band_eq_config) as fh:
+            fixed_band_eq_config = yaml.safe_load(fh)
+
     # Prepare list of arguments for all the function calls to generate results.
     n_total = 0
     file_paths = []
@@ -74,11 +89,10 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
             file_paths.append((input_file_path, output_file_path))
             n_total += 1
             args = (input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q, bit_depth,
-                    compensation, convolution_eq, equalize, f_res, fc, fixed_band_eq, fs, max_filters, max_gain,
-                    window_size, treble_window_size,
+                    compensation, convolution_eq, equalize, f_res, fc, fixed_band_eq, fs, parametric_eq_config,
+                    fixed_band_eq_config, max_gain, window_size, treble_window_size,
                     parametric_eq, phase, q, rockbox, show_plot, sound_signature, standardize_input,
-                    ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, parametric_eq_filter_max_gain,
-                    fixed_band_eq_filter_max_gain)
+                    ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k)
             args_list.append(args)
 
     if not thread_count:
@@ -100,10 +114,10 @@ def process_file_wrapper(params):
 
 
 def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q, bit_depth,
-                 compensation, convolution_eq, equalize, f_res, fc, fixed_band_eq, fs, max_filters, max_gain,
-                 window_size, treble_window_size, parametric_eq, phase, q, rockbox, show_plot, sound_signature,
-                 standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k,
-                 parametric_eq_filter_max_gain, fixed_band_eq_filter_max_gain):
+                 compensation, convolution_eq, equalize, f_res, fc, fixed_band_eq, fs, parametric_eq_config,
+                 fixed_band_eq_config, max_gain, window_size, treble_window_size, parametric_eq, phase, q, rockbox,
+                 show_plot, sound_signature, standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper,
+                 treble_gain_k):
     start_time = time()
     # Read data from input file
     fr = FrequencyResponse.read_from_csv(input_file_path)
@@ -115,7 +129,7 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         fr.write_to_csv(input_file_path)
 
     # Process and equalize
-    peq_filters, n_peq_filters, peq_max_gains, fbeq_filters, n_fbeq_filters, fbeq_max_gain = fr.process(
+    parametric_eq_peqs, fixed_band_eq_peq = fr.process(
         compensation=compensation,
         min_mean_error=True,
         equalize=equalize,
@@ -124,7 +138,8 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         fc=fc,
         q=q,
         ten_band_eq=ten_band_eq,
-        max_filters=max_filters,
+        parametric_eq_config=parametric_eq_config,
+        fixed_band_eq_config=fixed_band_eq_config,
         bass_boost_gain=bass_boost_gain,
         bass_boost_fc=bass_boost_fc,
         bass_boost_q=bass_boost_q,
@@ -136,9 +151,7 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         treble_f_lower=treble_f_lower,
         treble_f_upper=treble_f_upper,
         treble_gain_k=treble_gain_k,
-        fs=fs[0] if type(fs) == list else fs,
-        parametric_eq_filter_max_gain=parametric_eq_filter_max_gain,
-        fixed_band_eq_filter_max_gain=fixed_band_eq_filter_max_gain,
+        fs=fs[0] if type(fs) == list else fs
     )
 
     if output_file_path is not None:
@@ -151,23 +164,19 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
             fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True)
             if parametric_eq:
                 # Write ParametricEq settings to file
-                fr.write_eqapo_parametric_eq(
-                    output_file_path.replace('.csv', ' ParametricEQ.txt'), peq_filters,
-                    preamp=-(peq_max_gains[-1] + PREAMP_HEADROOM))
+                fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), parametric_eq_peqs)
 
             # Write fixed band eq
             if fixed_band_eq or ten_band_eq:
                 # Write fixed band eq settings to file
-                fr.write_eqapo_parametric_eq(
-                    output_file_path.replace('.csv', ' FixedBandEQ.txt'), fbeq_filters,
-                    preamp=-(fbeq_max_gain + PREAMP_HEADROOM))
+                fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' FixedBandEQ.txt'), fixed_band_eq_peq)
 
             # Write 10 band fixed band eq to Rockbox .cfg file
             if rockbox and ten_band_eq:
                 # Write fixed band eq settings to file
                 fr.write_rockbox_10_band_fixed_eq(
-                    output_file_path.replace('.csv', ' RockboxEQ.cfg'), fbeq_filters,
-                    preamp=-(fbeq_max_gain + PREAMP_HEADROOM))
+                    output_file_path.replace('.csv', ' RockboxEQ.cfg'),
+                    fixed_band_eq_peq)
 
             # Write impulse response as WAV
             if convolution_eq:
@@ -204,12 +213,10 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         )
 
         # Write README.md
-        _readme_path = os.path.join(output_dir_path, 'README.md')
         fr.write_readme(
-            _readme_path,
-            max_filters=n_peq_filters,
-            max_gains=peq_max_gains
-        )
+            os.path.join(output_dir_path, 'README.md'),
+            parametric_eq_peqs=parametric_eq_peqs,
+            fixed_band_eq_peq=fixed_band_eq_peq[0])
 
     elif show_plot:
         fr.plot_graph(show=True, close=False)
@@ -250,13 +257,26 @@ def cli_args():
                                  'calculated from bandwidth in N octaves by Q = 2^(N/2)/(2^N-1).')
     arg_parser.add_argument('--ten_band_eq', action='store_true',
                             help='Shortcut parameter for activating standard ten band eq optimization.')
-    arg_parser.add_argument('--max_filters', type=str, default=str(DEFAULT_PEQ_N_FILTERS),
-                            help='Maximum number of filters for parametric EQ. Multiple cumulative optimization '
-                                 'runs can be done by giving multiple filter counts separated by "+". "5+5" would '
-                                 'create 10 filters where the first 5 are usable independently from the rest 5 and '
-                                 'the last 5 can only be used with the first 5. This allows to have multiple '
-                                 'configurations for equalizers with different number of bands available. '
-                                 f'Defaults to {DEFAULT_PEQ_N_FILTERS}.')
+    arg_parser.add_argument('--parametric_eq_config', type=str, default='4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF',
+                            help='Name of parametric equalizer configuration or a path to a configuration file. \n\n'
+                                 'Available named configurations are "10_PEAKING" for 10 peaking filters, '
+                                 '"8_PEAKING_WITH_SHELVES" for 8 peaking filters and a low shelf at 105 Hz for bass '
+                                 'adjustment and high shelf at 10 kHz for treble adjustment, '
+                                 '"4_PEAKING_WITH_LOW_SHELF" for 4 peaking filters and a low shelf at 105 Hz for bass '
+                                 'adjustment, "4_PEAKING_WITH_HIGH_SHELF" for 4 peaking filters and a high shelf '
+                                 'at 10 kHz for treble adjustments. You can give multiple named configurations by '
+                                 'separating the names with commas. \n\n'
+                                 'When the value is a file path, the file will be read and used as a configuration. '
+                                 'The file needs to be a YAML file with "filters" field as a list of filter '
+                                 'configurations, each of which can define "fc", "min_fc", "max_fc", "q", "min_q", '
+                                 '"max_q", "gain", "min_gain", "max_gain" and "type" fields. When the fc, q or gain '
+                                 'value is given, the parameter won\'t be optimized for the filter. "type" needs to '
+                                 'be either "LOW_SHELF", "PEAKING" or "HIGH_SHELF". Also "filter_defaults" field is '
+                                 'supported on the top level and it can have the same fields as the filters do.\n\n'
+                                 'Defaults to "4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF".'),
+    arg_parser.add_argument('--fixed_band_eq_config', type=str, default='10_BAND_GRAPHIC_EQ',
+                            help='Path to fixed band equalizer configuration. The file format is the same YAML as '
+                                 'for parametric equalizer.')
     arg_parser.add_argument('--convolution_eq', action='store_true',
                             help='Will produce impulse response for convolution equalizers if this parameter exists, '
                                  'no value needed.')
@@ -322,12 +342,6 @@ def cli_args():
                             help='Coefficient for treble gain, affects both positive and negative gain. Useful for '
                                  'disabling or reducing equalization power in treble region. Defaults to '
                                  f'{DEFAULT_TREBLE_GAIN_K}.')
-    arg_parser.add_argument('--parametric_eq_filter_max_gain', type=float, default=DEFAULT_PEQ_FILTER_MAX_GAIN,
-                            help='Maximum gain range for parametric equalizer filters. Defaults to '
-                                 f'{DEFAULT_PEQ_FILTER_MAX_GAIN} dB')
-    arg_parser.add_argument('--fixed_band_eq_filter_max_gain', type=float, default=DEFAULT_FBEQ_FILTER_MAX_GAIN,
-                            help='Maximum gain range for fixed band equalizer filters. Defaults to '
-                                 f'{DEFAULT_FBEQ_FILTER_MAX_GAIN} dB')
     arg_parser.add_argument('--show_plot', action='store_true',
                             help='Plot will be shown if this parameter exists, no value needed.')
     arg_parser.add_argument('--thread_count', default=1,
@@ -350,14 +364,20 @@ def cli_args():
         else:
             raise ValueError('"--bass_boost" must have one value or three values separated by commas!')
         del args['bass_boost']
-    if 'max_filters' in args:
-        args['max_filters'] = [int(x) for x in args['max_filters'].split('+')]
+
+    if 'parametric_eq_config' in args:
+        if not os.path.isfile(args['parametric_eq_config']):
+            # Named configurations, split by commas
+            args['parametric_eq_config'] = args['parametric_eq_config'].split(',')
+
     if 'fc' in args and args['fc'] is not None:
         args['fc'] = [float(x) for x in args['fc'].split(',')]
     if 'q' in args and args['q'] is not None:
         args['q'] = [float(x) for x in args['q'].split(',')]
+
     if 'fs' in args and args['fs'] is not None:
         args['fs'] = [int(x) for x in args['fs'].split(',')]
+
     if thread_count := args.get('thread_count'):
         if thread_count == 'max':
             args['thread_count'] = multiprocessing.cpu_count()
