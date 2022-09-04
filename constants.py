@@ -47,20 +47,20 @@ PREAMP_HEADROOM = 0.2
 PEQ_CONFIGS = {
     '10_PEAKING': {
         'filter_defaults': {
-            'fc_min': 20,
-            'fc_max': 20e3,
-            'q_min': DEFAULT_PEQ_FILTER_MIN_Q,
-            'q_max': DEFAULT_PEQ_FILTER_MAX_Q,
-            'gain_min': -DEFAULT_PEQ_FILTER_MAX_GAIN,
-            'gain_max': DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'min_fc': 20,
+            'max_fc': 20e3,
+            'min_q': DEFAULT_PEQ_FILTER_MIN_Q,
+            'max_q': DEFAULT_PEQ_FILTER_MAX_Q,
+            'min_gain': -DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'max_gain': DEFAULT_PEQ_FILTER_MAX_GAIN,
             'type': 'PEAKING'
         },
         'filters': [{}] * 10
     },
     '10_BAND_GRAPHIC_EQ': {
         'filter_defaults': {
-            'gain_min': -DEFAULT_PEQ_FILTER_MAX_GAIN,
-            'gain_max': DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'min_gain': -DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'max_gain': DEFAULT_PEQ_FILTER_MAX_GAIN,
             'q': math.sqrt(2),
             'type': 'PEAKING'
         },
@@ -68,12 +68,12 @@ PEQ_CONFIGS = {
     },
     'LS8PKHS': {
         'filter_defaults': {
-            'fc_min': 20,
-            'fc_max': 20e3,
-            'q_min': DEFAULT_PEQ_FILTER_MIN_Q,
-            'q_max': DEFAULT_PEQ_FILTER_MAX_Q,
-            'gain_min': -DEFAULT_PEQ_FILTER_MAX_GAIN,
-            'gain_max': DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'min_fc': 20,
+            'max_fc': 20e3,
+            'min_q': DEFAULT_PEQ_FILTER_MIN_Q,
+            'max_q': DEFAULT_PEQ_FILTER_MAX_Q,
+            'min_gain': -DEFAULT_PEQ_FILTER_MAX_GAIN,
+            'max_gain': DEFAULT_PEQ_FILTER_MAX_GAIN,
             'type': 'PEAKING'
         },
         'filters': [{

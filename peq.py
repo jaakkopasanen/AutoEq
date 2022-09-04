@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 import numpy as np
 from scipy.optimize import fmin_slsqp
 from scipy.signal import find_peaks
+from tabulate import tabulate
 
 
 class PEQFilter(ABC):
@@ -34,6 +35,9 @@ class PEQFilter(ABC):
         self.max_gain = max_gain
 
         self._fr = None
+
+    def __str__(self):
+        return f'{self.__class__.__name__} {self.fc:.0f} Hz, {self.q:.2f} Q, {self.gain:.1f} dB'
 
     @property
     def fc(self):
@@ -125,17 +129,18 @@ class Peaking(PEQFilter):
 
         params = []
         if self.optimize_fc:
-            self.fc = self.f[ixs_ix]
-            params.append(self.fc)
+            self.fc = self.f[ix]
+            params.append(np.log10(self.fc))
         if self.optimize_q:
             width = widths[ixs_ix]
             f_step = np.log2(self.f[1] / self.f[0])
             bw = np.log2((2 ** f_step) ** width)
             self.q = np.sqrt(2 ** bw) / (2 ** bw - 1)
             params.append(self.q)
-        if self.gain:
+        if self.optimize_gain:
             self.gain = heights[ixs_ix] if target[ix] > 0 else - heights[ixs_ix]
             params.append(self.gain)
+        return params
 
     def biquad_coefficients(self):
         a = 10 ** (self.gain / 40)
@@ -165,7 +170,7 @@ class Peaking(PEQFilter):
 
 class ShelfFilter(PEQFilter, ABC):
     def __init__(self, f, fs,
-                 fc=None, optimize_fc=None, min_fc=None, max_fc=None,
+                 fc=None, optimize_fc=None, min_fc=20, max_fc=20e3,
                  q=None, optimize_q=None, min_q=0.4, max_q=0.7,
                  gain=None, optimize_gain=None, min_gain=-20, max_gain=20):
         super().__init__(f, fs, fc, optimize_fc, min_fc, max_fc, q, optimize_q, min_q, max_q, gain, optimize_gain,
@@ -178,20 +183,20 @@ class ShelfFilter(PEQFilter, ABC):
 
 
 class HighShelf(ShelfFilter):
-    def init(self, target):  # TODO
+    def init(self, target):
         params = []
         if self.optimize_fc:
             # Find point where the ratio of average level after the point and average level before the point is the
             # greatest
             ix = np.argmax([np.mean(target[ix:]) / np.mean(target[:ix + 1]) for ix in range(1, len(self.f))])
             self.fc = self.f[ix]
-            params.append(self.fc)
+            params.append(np.log10(self.fc))
         if self.optimize_q:
             self.q = 0.7
             params.append(self.q)
         if self.optimize_gain:
             ix = np.argmin(np.abs(self.f - self.fc))
-            self.gain = -np.mean(target[ix:])
+            self.gain = np.mean(target[ix:])
             params.append(self.gain)
         return params
 
@@ -219,14 +224,15 @@ class LowShelf(ShelfFilter):
             # greatest
             ix = np.argmax([np.mean(np.mean(target[:ix + 1] / target[ix:])) for ix in range(1, len(self.f))])
             self.fc = self.f[ix]
-            params.append(self.fc)
+            params.append(np.log10(self.fc))
         if self.optimize_q:
             self.q = 0.7
             params.append(self.q)
         if self.optimize_gain:
             ix = np.argmin(np.abs(self.f - self.fc))
-            self.gain = -np.mean(target[:ix + 1])
+            self.gain = np.mean(target[:ix + 1])
             params.append(self.gain)
+        return params
 
     def biquad_coefficients(self):
         a = 10 ** (self.gain / 40)
@@ -248,12 +254,12 @@ class PEQ:
     def __init__(self, f, fs, filters=None, target=None):
         self.f = np.array(f)
         self.fs = fs
-        if filters is None:
-            self.filters = []
-        else:
+        self.filters = []
+        if filters is not None:
             for filt in filters:
                 self.add_filter(filt)
         self.target = np.array(target) if target is not None else None
+        self._ix50 = np.sum(self.f < 50)
         self._ix10k = np.sum(self.f < 10e3)  # Index for ~10 kHz
         self._ix20k = np.sum(self.f < 20e3)  # Index for ~20 kHz
 
@@ -266,14 +272,16 @@ class PEQ:
             f *= 1.01
         peq = cls(freq, config['fs'], target=target)
         filter_classes = {'LOW_SHELF': LowShelf, 'PEAKING': Peaking, 'HIGH_SHELF': HighShelf}
-        keys = ['fc', 'q', 'gain', 'fc_min', 'fc_max', 'q_min', 'q_max', 'gain_min', 'gain_max', 'type']
+        keys = ['fc', 'q', 'gain', 'min_fc', 'max_fc', 'min_q', 'max_q', 'min_gain', 'max_gain', 'type']
         for filt in config['filters']:
-            for key in keys:
-                if key not in filt and key in config['filter_defaults']:
-                    filt[key] = config['filter_defaults'][key]
+            if 'filter_defaults' in config:
+                for key in keys:
+                    if key not in filt and key in config['filter_defaults']:
+                        filt[key] = config['filter_defaults'][key]
             peq.add_filter(filter_classes[filt['type']](
-                **{key: filt[key] for key in keys if key != 'type'},
-                optimize_fc='fc' in filt, optimize_q='q' in filt, optimize_gain='gain' in filt
+                peq.f.copy(), peq.fs,
+                **{key: filt[key] for key in keys if key in filt and key != 'type'},
+                optimize_fc='fc' not in filt, optimize_q='q' not in filt, optimize_gain='gain' not in filt
             ))
         return peq
 
@@ -286,7 +294,23 @@ class PEQ:
 
     @property
     def fr(self):
-        return np.sum([filt.fr() for filt in self.filters], axis=0)
+        return np.sum([filt.fr for filt in self.filters], axis=0)
+
+    def markdown_table(self):
+        type_order = [LowShelf.__name__, Peaking.__name__, HighShelf.__name__]
+
+        def filter_sorter(filt):
+            return type_order.index(filt.__class__.__name__) + filt.fc / 1e6
+
+        table_data = [
+            [filt.__class__.__name__, f'{filt.fc:.0f}', f'{filt.q:.2f}', f'{filt.gain:.1f}']
+            for filt in sorted(self.filters, key=filter_sorter, reverse=False)
+        ]
+        return tabulate(
+            table_data,
+            headers=['Type', 'Fc (Hz)', 'Q', 'Gain (dB)'],
+            tablefmt='github'
+        )
 
     def _parse_optimizer_params(self, params):
         """Extracts fc, q and gain from optimizer params and updates filters
@@ -297,7 +321,7 @@ class PEQ:
         i = 0
         for filt in self.filters:
             if filt.optimize_fc:
-                filt.fc = params[i]
+                filt.fc = 10**params[i]
                 i += 1
             if filt.optimize_q:
                 filt.q = params[i]
@@ -315,16 +339,19 @@ class PEQ:
         fr = self.fr.copy()
         target = self.target.copy()
         target[self._ix10k:self._ix20k] = np.mean(target[self._ix10k:self._ix20k])
+        target[:self._ix50] = np.mean(target[:self._ix50])  # TODO: Is this good?
         fr[self._ix10k:self._ix20k] = np.mean(self.fr[self._ix10k:self._ix20k])
+        fr[:self._ix50] = np.mean(fr[:self._ix50])
 
         # Mean squared error as loss, only up to 20 kHz
         loss_val = np.mean(np.square(self.target[:self._ix20k] - fr[:self._ix20k]))
+        #loss_val = np.mean(np.square(self.target[:self._ix10k] - fr[:self._ix10k]))
 
         # Sum penalties from all filters to MSE
         for filt in self.filters:
             loss_val += filt.sharpness_penalty
 
-        return loss_val
+        return np.sqrt(loss_val)
 
     def _init_optimizer_params(self):
         """Creates a list of initial parameter values for the optimizer
@@ -332,31 +359,39 @@ class PEQ:
         The list is fc, q and gain from each filter. Non-optimizable parameters are skipped.
         """
         order = [
-            [Peaking, True, True],  # Peaking
-            [LowShelf, True, True],  # Low shelfs
-            [HighShelf, True, True],  # High shelfs
-            [Peaking, True, False],  # Peaking with fixed q
-            [LowShelf, True, False],  # Low shelfs with fixed q
-            [HighShelf, True, False],  # High shelfs with fixed q
-            [Peaking, False, True],  # Peaking with fixed fc
-            [LowShelf, False, True],  # Low shelfs with fixed fc
-            [HighShelf, False, True],  # High shelfs with fixed fc
-            [Peaking, False, False],  # Peaking with fixed fc and q
-            [LowShelf, False, False],  # Low shelfs with fixed fc and q
-            [HighShelf, False, False],  # High shelfs with fixed fc and q
+            [Peaking.__name__, True, True],  # Peaking
+            [LowShelf.__name__, True, True],  # Low shelfs
+            [HighShelf.__name__, True, True],  # High shelfs
+            [Peaking.__name__, True, False],  # Peaking with fixed q
+            [LowShelf.__name__, True, False],  # Low shelfs with fixed q
+            [HighShelf.__name__, True, False],  # High shelfs with fixed q
+            [Peaking.__name__, False, True],  # Peaking with fixed fc
+            [LowShelf.__name__, False, True],  # Low shelfs with fixed fc
+            [HighShelf.__name__, False, True],  # High shelfs with fixed fc
+            [Peaking.__name__, False, False],  # Peaking with fixed fc and q
+            [LowShelf.__name__, False, False],  # Low shelfs with fixed fc and q
+            [HighShelf.__name__, False, False],  # High shelfs with fixed fc and q
         ]
 
-        def init_order(filt):
-            ix = order.index([filt.__class__, filt.optimize_fc, filt.optimize_q])
-            return ix * 100 + 1 / np.log2(filt.max_fc / filt.min_fc)
+        def init_order(filter_ix):
+            filt = self.filters[filter_ix]
+            ix = order.index([filt.__class__.__name__, filt.optimize_fc, filt.optimize_q])
+            val = ix * 100
+            if filt.optimize_fc:
+                val += 1 / np.log2(filt.max_fc / filt.min_fc)
+            return val
 
-        init = []
-        filters = sorted(self.filters, key=init_order, reverse=True)
+        # Initialize filter params as list of empty lists, one per filter
+        filter_params = [[]] * len(self.filters)
+        # Indexes to self.filters sorted by filter init order
+        filter_argsort = sorted(list(range(len(self.filters))), key=init_order, reverse=True)
         remaining_target = self.target.copy()
-        for filt in filters:
-            init += filt.init(remaining_target)
-            remaining_target += filt.fr
-        return init
+        for ix in filter_argsort:  # Iterate sorted filter indexes
+            filt = self.filters[ix]  # Get filter
+            filter_params[ix] = filt.init(remaining_target)  # Init filter and place params to list of lists
+            remaining_target -= filt.fr  # Adjust target
+        filter_params = np.concatenate(filter_params).flatten().tolist()  # Flatten params list
+        return filter_params
 
     def _init_optimizer_bounds(self):
         """Creates optimizer bounds
@@ -378,8 +413,8 @@ class PEQ:
         params = fmin_slsqp(
             self._optimizer_loss,
             self._init_optimizer_params(),
-            # iter=100,
+            iter=1000,
             bounds=self._init_optimizer_bounds(),
-            iprint=0,
+            iprint=1,
             full_output=False)
         self._parse_optimizer_params(params)
