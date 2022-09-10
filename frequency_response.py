@@ -269,7 +269,7 @@ class FrequencyResponse:
             f.write(s)
         return s
 
-    def optimize_parametric_eq(self, config, fs, max_time=None, **peq_kwargs):
+    def optimize_parametric_eq(self, config, fs, max_time=None):
         if type(config) != list:
             config = [config]
         peqs = []
@@ -277,7 +277,7 @@ class FrequencyResponse:
         start_time = time()
         for config in config:
             remaining_time = max_time - (time() - start_time) if max_time is not None else None
-            peq = PEQ.from_dict(config, fs, target=target, max_time=remaining_time, **peq_kwargs)
+            peq = PEQ.from_dict(config, fs, target=target)
             peq.optimize()
             target -= peq.fr
             peqs.append(peq)

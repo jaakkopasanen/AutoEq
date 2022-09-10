@@ -9,7 +9,9 @@ from tabulate import tabulate
 from constants import DEFAULT_SHELF_FILTER_MIN_FC, DEFAULT_SHELF_FILTER_MAX_FC, DEFAULT_SHELF_FILTER_MIN_Q, \
     DEFAULT_SHELF_FILTER_MAX_Q, DEFAULT_SHELF_FILTER_MIN_GAIN, DEFAULT_SHELF_FILTER_MAX_GAIN, \
     DEFAULT_PEAKING_FILTER_MIN_FC, DEFAULT_PEAKING_FILTER_MAX_FC, DEFAULT_PEAKING_FILTER_MIN_Q, \
-    DEFAULT_PEAKING_FILTER_MAX_Q, DEFAULT_PEAKING_FILTER_MIN_GAIN, DEFAULT_PEAKING_FILTER_MAX_GAIN
+    DEFAULT_PEAKING_FILTER_MAX_Q, DEFAULT_PEAKING_FILTER_MIN_GAIN, DEFAULT_PEAKING_FILTER_MAX_GAIN, \
+    DEFAULT_PEQ_OPTIMIZER_MIN_F, DEFAULT_PEQ_OPTIMIZER_MAX_F, DEFAULT_PEQ_OPTIMIZER_MAX_TIME, \
+    DEFAULT_PEQ_OPTIMIZER_TARGET_LOSS, DEFAULT_PEQ_OPTIMIZER_MIN_CHANGE_RATE
 
 
 class PEQFilter(ABC):
@@ -341,12 +343,16 @@ class OptimizationHistory:
         self.time = []
         self.loss = []
         self.moving_avg_loss = []
-        self.change = []
+        self.change_rate = []
+        self.std = []
         self.params = []
 
 
 class PEQ:
-    def __init__(self, f, fs, filters=None, target=None, max_time=None, target_loss=None, min_change=None):
+    def __init__(self, f, fs, filters=None, target=None,
+                 min_f=DEFAULT_PEQ_OPTIMIZER_MIN_F, max_f=DEFAULT_PEQ_OPTIMIZER_MAX_F,
+                 max_time=DEFAULT_PEQ_OPTIMIZER_MAX_TIME, target_loss=DEFAULT_PEQ_OPTIMIZER_TARGET_LOSS,
+                 min_change_rate=DEFAULT_PEQ_OPTIMIZER_MIN_CHANGE_RATE):
         self.f = np.array(f)
         self.fs = fs
         self.filters = []
@@ -358,12 +364,15 @@ class PEQ:
         self._ix10k = np.sum(self.f < 10e3)  # Index for ~10 kHz
         self._ix20k = np.sum(self.f < 20e3)  # Index for ~20 kHz
         self.history = None
+        self._min_f = min_f
+        self._max_f = max_f
         self._max_time = max_time
         self._target_loss = target_loss
-        self._min_change = min_change
+        self._min_change_rate = min_change_rate
+        self._min_std = 0.1
 
     @classmethod
-    def from_dict(cls, config, fs, target=None, **kwargs):
+    def from_dict(cls, config, fs, target=None):
         """Initializes class instance with configuration dict and target
 
         Args:
@@ -384,7 +393,8 @@ class PEQ:
         while f <= 20e3:
             freq.append(f)
             f *= 1.01
-        peq = cls(freq, fs, target=target, **kwargs)
+        optimizer_kwargs = config['optimizer'] if 'optimizer' in config else {}
+        peq = cls(freq, fs, target=target, **optimizer_kwargs)
         filter_classes = {'LOW_SHELF': LowShelf, 'PEAKING': Peaking, 'HIGH_SHELF': HighShelf}
         keys = ['fc', 'q', 'gain', 'min_fc', 'max_fc', 'min_q', 'max_q', 'min_gain', 'max_gain', 'type']
         for filt in config['filters']:
@@ -535,24 +545,35 @@ class PEQ:
         n = 8
         t = time() - self.history.start_time
         loss = self._optimizer_loss(params, parse=False)
+
         self.history.time.append(t)
         self.history.loss.append(loss)
+
+        std = np.std(np.array(self.history.loss[-n:])) if len(self.history.loss) >= n else 0.0
+        self.history.std.append(std)
+
         moving_avg_loss = np.mean(np.array(self.history.loss[-n:])) if len(self.history.loss) >= n else 0.0
         self.history.moving_avg_loss.append(moving_avg_loss)
         if len(self.history.moving_avg_loss) > 1:
             d_loss = loss - self.history.moving_avg_loss[-2]
             d_time = t - self.history.time[-2]
-            change = d_loss / d_time if len(self.history.moving_avg_loss) > n else 0.0
+            change_rate = d_loss / d_time if len(self.history.moving_avg_loss) > n else 0.0
         else:
-            change = 0.0
-        self.history.change.append(change)
+            change_rate = 0.0
+        self.history.change_rate.append(change_rate)
         self.history.params.append(params)
         if self._max_time is not None and t >= self._max_time:
             raise OptimizationFinished('Maximum time reached')
         if self._target_loss is not None and loss <= self._target_loss:
             raise OptimizationFinished('Target loss reached')
-        if self._min_change is not None and len(self.history.moving_avg_loss) > n and -change < self._min_change:
+        if (
+                self._min_change_rate is not None
+                and len(self.history.moving_avg_loss) > n
+                and -change_rate < self._min_change_rate
+        ):
             raise OptimizationFinished('Change too small')
+        if self._min_std is not None and len(self.history.std) > n and std < self._min_std:
+            raise OptimizationFinished('STD too small')
 
     def optimize(self):
         """Optimizes filter parameters"""
@@ -561,7 +582,7 @@ class PEQ:
             minimize(
                 self._optimizer_loss,
                 self._init_optimizer_params(),
-                method='SLSQP',
+                method='SLSQP',  # Tested all of them, this is the best
                 bounds=self._init_optimizer_bounds(),
                 callback=self._callback)
         except OptimizationFinished as err:
