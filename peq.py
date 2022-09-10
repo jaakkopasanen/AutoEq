@@ -1,7 +1,8 @@
+from time import time
 from abc import ABC, abstractmethod
 import numpy as np
 from matplotlib import pyplot as plt, ticker
-from scipy.optimize import fmin_slsqp
+from scipy.optimize import minimize
 from scipy.signal import find_peaks
 from tabulate import tabulate
 
@@ -163,7 +164,7 @@ class Peaking(PEQFilter):
 
         params = []
         if self.optimize_fc:
-            self.fc = self.f[ix]
+            self.fc = np.clip(self.f[ix], self.min_fc, self.max_fc)
             params.append(np.log10(self.fc))  # Convert to logarithmic scale for optimizer
         if self.optimize_q:
             width = widths[ixs_ix]
@@ -172,10 +173,12 @@ class Peaking(PEQFilter):
             bw = np.log2((2 ** f_step) ** width)
             # Calculate quality with bandwidth
             self.q = np.sqrt(2 ** bw) / (2 ** bw - 1)
+            self.q = np.clip(self.q, self.min_q, self.max_q)
             params.append(self.q)
         if self.optimize_gain:
             # Target value at center frequency
             self.gain = heights[ixs_ix] if target[ix] > 0 else -heights[ixs_ix]
+            self.gain = np.clip(self.gain, self.min_gain, self.max_gain)
             params.append(self.gain)
         return params
 
@@ -248,14 +251,17 @@ class HighShelf(ShelfFilter):
             min_ix = np.sum(self.f < max(40, self.min_fc))
             max_ix = np.sum(self.f < min(10000, self.max_fc))
             ix = np.argmax([np.abs(np.mean(target[ix:])) for ix in range(min_ix, max_ix)])
-            self.fc = self.f[ix]
+            self.fc = np.clip(self.f[ix], self.min_fc, self.max_fc)
             params.append(np.log10(self.fc))
         if self.optimize_q:
-            self.q = 0.7
+            self.q = np.clip(0.7, self.min_q, self.max_q)
             params.append(self.q)
         if self.optimize_gain:
-            ix = np.argmin(np.abs(self.f - (self.fc * 2 ** (self.bandwidth / 2))))
-            self.gain = np.mean(target[ix:])
+            # Calculated weighted average from the target where the frequency response (dBs) of a 1 dB shelf is the
+            # weight vector
+            self.gain = 1
+            self.gain = np.dot(target, self.fr) / np.sum(self.fr)  # Weighted average
+            self.gain = np.clip(self.gain, self.min_gain, self.max_gain)
             params.append(self.gain)
         return params
 
@@ -298,14 +304,17 @@ class LowShelf(ShelfFilter):
             max_ix = np.sum(self.f < min(10000, self.max_fc))
             ix = np.argmax([np.abs(np.mean(target[:ix + 1])) for ix in range(min_ix, max_ix)])
             ix += min_ix
-            self.fc = self.f[ix]
+            self.fc = np.clip(self.f[ix], self.min_fc, self.max_fc)
             params.append(np.log10(self.fc))
         if self.optimize_q:
-            self.q = 0.7
+            self.q = np.clip(0.7, self.min_q, self.max_q)
             params.append(self.q)
         if self.optimize_gain:
-            ix = np.argmin(np.abs(self.f - (self.fc / 2 ** (self.bandwidth / 2))))
-            self.gain = np.mean(target[:ix + 1])
+            # Calculated weighted average from the target where the frequency response (dBs) of a 1 dB shelf is the
+            # weight vector
+            self.gain = 1
+            self.gain = np.dot(target, self.fr) / np.sum(self.fr)  # Weighted average
+            self.gain = np.clip(self.gain, self.min_gain, self.max_gain)
             params.append(self.gain)
         return params
 
@@ -326,8 +335,18 @@ class LowShelf(ShelfFilter):
         return 1.0, a1, a2, b0, b1, b2
 
 
+class OptimizationHistory:
+    def __init__(self):
+        self.start_time = time()
+        self.time = []
+        self.loss = []
+        self.moving_avg_loss = []
+        self.change = []
+        self.params = []
+
+
 class PEQ:
-    def __init__(self, f, fs, filters=None, target=None):
+    def __init__(self, f, fs, filters=None, target=None, max_time=None, target_loss=None, min_change=None):
         self.f = np.array(f)
         self.fs = fs
         self.filters = []
@@ -338,13 +357,16 @@ class PEQ:
         self._ix50 = np.sum(self.f < 50)
         self._ix10k = np.sum(self.f < 10e3)  # Index for ~10 kHz
         self._ix20k = np.sum(self.f < 20e3)  # Index for ~20 kHz
+        self.history = None
+        self._max_time = max_time
+        self._target_loss = target_loss
+        self._min_change = min_change
 
     @classmethod
-    def from_dict(cls, fs, config, target=None):
+    def from_dict(cls, config, fs, target=None, **kwargs):
         """Initializes class instance with configuration dict and target
 
         Args:
-            fs: Sampling rate
             config: Configuration dict with sampling rate "fs", filters and optionally filter defaults. Filters and
                 filter defaults are dicts with keys fc, q, gain, min_fc, max_fc, min_q, max_q, min_gain, max_gain and
                 type. The filter fc, q and gain are optimized if they are not present in the filter dicts, separately
@@ -352,6 +374,7 @@ class PEQ:
                 default values for filters to avoid repetition. Be wary of setting fc, q and gain in filter defaults
                 as these will disable optimization for all filters and there is no way to enable optimization for a
                 single filter after that. See `constants.py` for examples.
+            fs: Sampling rate
             target: Equalizer frequency response target. Needed if optimization is to be performed.
         Returns:
 
@@ -361,7 +384,7 @@ class PEQ:
         while f <= 20e3:
             freq.append(f)
             f *= 1.01
-        peq = cls(freq, fs, target=target)
+        peq = cls(freq, fs, target=target, **kwargs)
         filter_classes = {'LOW_SHELF': LowShelf, 'PEAKING': Peaking, 'HIGH_SHELF': HighShelf}
         keys = ['fc', 'q', 'gain', 'min_fc', 'max_fc', 'min_q', 'max_q', 'min_gain', 'max_gain', 'type']
         for filt in config['filters']:
@@ -428,10 +451,11 @@ class PEQ:
                 filt.gain = params[i]
                 i += 1
 
-    def _optimizer_loss(self, params):
+    def _optimizer_loss(self, params, parse=True):
         """Calculates optimizer loss value"""
         # Update filters with latest iteration params
-        self._parse_optimizer_params(params)
+        if parse:
+            self._parse_optimizer_params(params)
 
         # Above 10 kHz only the total energy matters so we'll take mean of values between 10 kHz and 20 kHz
         fr = self.fr.copy()
@@ -488,7 +512,7 @@ class PEQ:
             filt = self.filters[ix]  # Get filter
             filter_params[ix] = filt.init(remaining_target)  # Init filter and place params to list of lists
             remaining_target -= filt.fr  # Adjust target
-        filter_params = np.concatenate(filter_params).flatten().tolist()  # Flatten params list
+        filter_params = np.concatenate(filter_params).flatten()  # Flatten params list
         return filter_params
 
     def _init_optimizer_bounds(self):
@@ -506,17 +530,44 @@ class PEQ:
                 bounds.append((filt.min_gain, filt.max_gain))
         return bounds
 
+    def _callback(self, params):
+        """Optimization callback function"""
+        n = 8
+        t = time() - self.history.start_time
+        loss = self._optimizer_loss(params, parse=False)
+        self.history.time.append(t)
+        self.history.loss.append(loss)
+        moving_avg_loss = np.mean(np.array(self.history.loss[-n:])) if len(self.history.loss) >= n else 0.0
+        self.history.moving_avg_loss.append(moving_avg_loss)
+        if len(self.history.moving_avg_loss) > 1:
+            d_loss = loss - self.history.moving_avg_loss[-2]
+            d_time = t - self.history.time[-2]
+            change = d_loss / d_time if len(self.history.moving_avg_loss) > n else 0.0
+        else:
+            change = 0.0
+        self.history.change.append(change)
+        self.history.params.append(params)
+        if self._max_time is not None and t >= self._max_time:
+            raise OptimizationFinished('Maximum time reached')
+        if self._target_loss is not None and loss <= self._target_loss:
+            raise OptimizationFinished('Target loss reached')
+        if self._min_change is not None and len(self.history.moving_avg_loss) > n and -change < self._min_change:
+            raise OptimizationFinished('Change too small')
+
     def optimize(self):
         """Optimizes filter parameters"""
-        # TODO: Early stopping by calculating loss in callback every N iters and throwing when good enough
-        params = fmin_slsqp(
-            self._optimizer_loss,
-            self._init_optimizer_params(),
-            #iter=30,  # TODO
-            bounds=self._init_optimizer_bounds(),
-            iprint=0,
-            full_output=False)
-        self._parse_optimizer_params(params)
+        self.history = OptimizationHistory()
+        try:
+            minimize(
+                self._optimizer_loss,
+                self._init_optimizer_params(),
+                method='SLSQP',
+                bounds=self._init_optimizer_bounds(),
+                callback=self._callback)
+        except OptimizationFinished as err:
+            # Restore best params
+            self._parse_optimizer_params(self.history.params[np.argmin(self.history.loss)])
+            print(err)
 
     def plot(self, fig=None, ax=None):
         if fig is None:
@@ -532,8 +583,14 @@ class PEQ:
             ax.grid(True, which='minor')
             ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
             ax.set_xticks([20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000])
+        ax.plot(self.f, self.target, color='gray', linewidth=3, label='Target')
         for i, filt in enumerate(self.filters):
             ax.fill_between(filt.f, np.zeros(filt.fr.shape), filt.fr, alpha=0.3, color=f'C{i}')
             ax.plot(filt.f, filt.fr, color=f'C{i}', linewidth=1)
-        ax.plot(self.f, self.fr, color='black', linewidth=1)
+        ax.plot(self.f, self.fr, color='black', linewidth=1, label='FR')
+        ax.legend()
         return fig, ax
+
+
+class OptimizationFinished(Exception):
+    pass

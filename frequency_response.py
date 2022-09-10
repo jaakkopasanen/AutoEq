@@ -6,17 +6,14 @@ import matplotlib.ticker as ticker
 import math
 import pandas as pd
 from io import StringIO
-import warnings
 from scipy.interpolate import InterpolatedUnivariateSpline
 from scipy.signal import savgol_filter, find_peaks, minimum_phase, firwin2
 from scipy.special import expit
 from scipy.stats import linregress
 from scipy.fftpack import next_fast_len
-from scipy.optimize import fmin_slsqp
 import numpy as np
 import urllib
 from time import time
-from tabulate import tabulate
 from PIL import Image
 import re
 import warnings
@@ -28,7 +25,7 @@ from constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GA
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
     HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, PEQ_CONFIGS
-from peq import PEQ
+from peq import PEQ, OptimizationFinished
 
 warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
 
@@ -260,7 +257,6 @@ class FrequencyResponse:
             if fr.raw[0] > 0.0:
                 # Prevent bass boost below lowest frequency
                 fr.raw[0] = 0.0
-
         s = '; '.join(['{f} {a:.1f}'.format(f=f, a=a) for f, a in zip(fr.frequency, fr.raw)])
         s = 'GraphicEQ: ' + s
         return s
@@ -273,13 +269,15 @@ class FrequencyResponse:
             f.write(s)
         return s
 
-    def optimize_parametric_eq(self, config, fs):
+    def optimize_parametric_eq(self, config, fs, max_time=None, **peq_kwargs):
         if type(config) != list:
             config = [config]
         peqs = []
         target = self.equalization.copy()
+        start_time = time()
         for config in config:
-            peq = PEQ.from_dict(fs, config, target=target)
+            remaining_time = max_time - (time() - start_time) if max_time is not None else None
+            peq = PEQ.from_dict(config, fs, target=target, max_time=remaining_time, **peq_kwargs)
             peq.optimize()
             target -= peq.fr
             peqs.append(peq)
@@ -1346,7 +1344,7 @@ class FrequencyResponse:
             self.equalize(
                 max_gain=max_gain, concha_interference=concha_interference, treble_f_lower=treble_f_lower,
                 treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
-            parametric_peqs = self.optimize_parametric_eq(parametric_eq_config, fs) if parametric_eq else None
-            fixed_band_peq = self.optimize_parametric_eq(fixed_band_eq_config, fs) if fixed_band_eq else None
+            parametric_peqs = self.optimize_parametric_eq(fs, parametric_eq_config) if parametric_eq else None
+            fixed_band_peq = self.optimize_parametric_eq(fs, fixed_band_eq_config) if fixed_band_eq else None
             return parametric_peqs, fixed_band_peq
         return None, None
