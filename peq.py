@@ -1,3 +1,4 @@
+import warnings
 from time import time
 from abc import ABC, abstractmethod
 import numpy as np
@@ -144,8 +145,10 @@ class Peaking(PEQFilter):
             List of initialized optimizable parameter values for the optimizer
         """
         # Finds positive and negative peaks
-        positive_peak_ixs, peak_props = find_peaks(np.clip(target, 0, None), width=0, prominence=0, height=0)
-        negative_peak_ixs, dip_props = find_peaks(np.clip(-target, 0, None), width=0, prominence=0, height=0)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            positive_peak_ixs, peak_props = find_peaks(np.clip(target, 0, None), width=0, prominence=0, height=0)
+            negative_peak_ixs, dip_props = find_peaks(np.clip(-target, 0, None), width=0, prominence=0, height=0)
 
         # Indexes for minimum and maximum center frequency
         min_fc_ix = np.sum(self.f < self.min_fc)

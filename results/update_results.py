@@ -3,6 +3,9 @@
 import os
 import sys
 import argparse
+
+from constants import PEQ_CONFIGS
+
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from autoeq import batch_processing
 
@@ -63,8 +66,14 @@ def main():
     raa_siec = os.path.join(ROOT_DIR, 'measurements', 'referenceaudioanalyzer', 'resources', 'referenceaudioanalyzer_siec_harman_in-ear_2019v2_wo_bass.csv')
 
     eq_kwargs = {
-        'equalize': True, 'parametric_eq': True, 'max_filters': [5, 5], 'ten_band_eq': True, 'new_only': new_only,
-        'convolution_eq': True, 'fs': [44100, 48000], 'thread_count': 0,
+        'new_only': new_only,
+        'equalize': True,
+        'parametric_eq': True,
+        'parametric_eq_config': [PEQ_CONFIGS['4_PEAKING_WITH_LOW_SHELF'], PEQ_CONFIGS['4_PEAKING_WITH_HIGH_SHELF']],
+        'ten_band_eq': True,
+        'convolution_eq': True,
+        'fs': [44100, 48000],
+        'thread_count': 0,
     }
     onear_kwargs = eq_kwargs.copy()
     onear_kwargs.update({'bass_boost_gain': 4.0})
