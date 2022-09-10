@@ -27,7 +27,6 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
                      treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False, thread_count=1):
     """Parses files in input directory and produces equalization results in output directory."""
-
     if convolution_eq and not equalize:
         raise ValueError('equalize must be True when convolution_eq is True.')
 
@@ -128,6 +127,9 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         fr.center()
         fr.write_to_csv(input_file_path)
 
+    if ten_band_eq:
+        fixed_band_eq = True
+
     # Process and equalize
     parametric_eq_peqs, fixed_band_eq_peq = fr.process(
         compensation=compensation,
@@ -216,7 +218,7 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         fr.write_readme(
             os.path.join(output_dir_path, 'README.md'),
             parametric_eq_peqs=parametric_eq_peqs,
-            fixed_band_eq_peq=fixed_band_eq_peq[0])
+            fixed_band_eq_peq=fixed_band_eq_peq[0] if fixed_band_eq else None)
 
     elif show_plot:
         fr.plot_graph(show=True, close=False)

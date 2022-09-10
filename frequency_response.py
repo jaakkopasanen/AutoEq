@@ -98,7 +98,7 @@ class FrequencyResponse:
         sorted_inds = self.frequency.argsort()
         self.frequency = self.frequency[sorted_inds]
         for i in range(1, len(self.frequency)):
-            if self.frequency[i] == self.frequency[i-1]:
+            if self.frequency[i] == self.frequency[i - 1]:
                 raise ValueError('Duplicate values found at frequency {}. Remove duplicates manually.'.format(
                     self.frequency[i])
                 )
@@ -249,7 +249,7 @@ class FrequencyResponse:
         """Generates EqualizerAPO GraphicEQ string from equalization curve."""
         fr = self.__class__(name='hack', frequency=self.frequency, raw=self.equalization)
         n = np.ceil(np.log(20000 / 20) / np.log(f_step))
-        f = 20 * f_step**np.arange(n)
+        f = 20 * f_step ** np.arange(n)
         f = np.sort(np.unique(f.astype('int')))
         fr.interpolate(f=f)
         if normalize:
@@ -269,19 +269,31 @@ class FrequencyResponse:
             f.write(s)
         return s
 
-    def optimize_parametric_eq(self, config, fs, max_time=None):
-        if type(config) != list:
-            config = [config]
+    def _optimize_peq_filters(self, configs, fs, max_time=None):
+        if type(configs) != list:
+            configs = [configs]
         peqs = []
         target = self.equalization.copy()
         start_time = time()
-        for config in config:
-            remaining_time = max_time - (time() - start_time) if max_time is not None else None
+        for config in configs:
+            if 'optimizer' in config and max_time is not None:
+                config['optimizer']['max_time'] = max_time
             peq = PEQ.from_dict(config, fs, target=target)
             peq.optimize()
             target -= peq.fr
             peqs.append(peq)
+            if max_time is not None:
+                max_time = max_time - (time() - start_time)
+        return peqs
+
+    def optimize_parametric_eq(self, configs, fs, max_time=None):
+        peqs = self._optimize_peq_filters(configs, fs, max_time=max_time)
         self.parametric_eq = np.sum(np.vstack([peq.fr for peq in peqs]), axis=0)
+        return peqs
+
+    def optimize_fixed_band_eq(self, configs, fs, max_time=None):
+        peqs = self._optimize_peq_filters(configs, fs, max_time=max_time)
+        self.fixed_band_eq = np.sum(np.vstack([peq.fr for peq in peqs]), axis=0)
         return peqs
 
     def write_eqapo_parametric_eq(self, file_path, peqs):
@@ -292,10 +304,12 @@ class FrequencyResponse:
             for filt in peq.filters:
                 compound.add_filter(filt)
 
+        types = {'Peaking': 'PK', 'LowShelf': 'LS', 'HighShelf': 'HS'}
+
         with open(file_path, 'w', encoding='utf-8') as f:
             s = f'Preamp: {-compound.max_gain:.1f} dB\n'
             for i, filt in enumerate(compound.filters):
-                s += f'Filter {i + 1}: ON PK Fc {filt.fc:.0f} Hz Gain {filt.q:.1f} dB Q {filt.gain:.2f}\n'
+                s += f'Filter {i + 1}: ON {types[filt.__class__.__name__]} Fc {filt.fc:.0f} Hz Gain {filt.gain:.1f} dB Q {filt.q:.2f}\n'
             f.write(s)
 
     def write_rockbox_10_band_fixed_eq(self, file_path, peqs):
@@ -373,11 +387,11 @@ class FrequencyResponse:
         # Minimum phase transformation by scipy's homomorphic method halves dB gain
         fr.raw *= 2
         # Convert amplitude to linear scale
-        fr.raw = 10**(fr.raw / 20)
+        fr.raw = 10 ** (fr.raw / 20)
         # Zero gain at Nyquist frequency
         fr.raw[-1] = 0.0
         # Calculate response
-        ir = firwin2(len(fr.frequency)*2, fr.frequency, fr.raw, fs=fs)
+        ir = firwin2(len(fr.frequency) * 2, fr.frequency, fr.raw, fs=fs)
         # Convert to minimum phase
         ir = minimum_phase(ir, n_fft=len(ir))
         return ir
@@ -399,11 +413,11 @@ class FrequencyResponse:
             fr.raw -= np.max(fr.raw)
             fr.raw -= PREAMP_HEADROOM
         # Convert amplitude to linear scale
-        fr.raw = 10**(fr.raw / 20)
+        fr.raw = 10 ** (fr.raw / 20)
         # Calculate response
         fr.frequency = np.append(fr.frequency, fs // 2)
         fr.raw = np.append(fr.raw, 0.0)
-        ir = firwin2(len(fr.frequency)*2, fr.frequency, fr.raw, fs=fs)
+        ir = firwin2(len(fr.frequency) * 2, fr.frequency, fr.raw, fs=fs)
         return ir
 
     def write_readme(self, file_path, parametric_eq_peqs=None, fixed_band_eq_peq=None):
@@ -826,7 +840,7 @@ class FrequencyResponse:
             self.equalized_raw = self.raw + self.equalization
             if len(self.smoothed):
                 self.equalized_smoothed = self.smoothed + self.equalization
-            return y, fr.smoothed.copy(), np.array([]), np.array([False] * len(y)), np.array([]),\
+            return y, fr.smoothed.copy(), np.array([]), np.array([False] * len(y)), np.array([]), \
                 np.array([False] * len(y)), np.array([]), np.array([]), len(y) - 1, np.array([False] * len(y))
 
         else:
@@ -871,7 +885,7 @@ class FrequencyResponse:
         if len(self.smoothed):
             self.equalized_smoothed = self.smoothed + self.equalization
 
-        return combined.smoothed.copy(), fr.smoothed.copy(), limited_ltr, clipped_ltr, limited_rtl,\
+        return combined.smoothed.copy(), fr.smoothed.copy(), limited_ltr, clipped_ltr, limited_rtl, \
             clipped_rtl, peak_inds, dip_inds, rtl_start, limit_free_mask
 
     @staticmethod
@@ -982,7 +996,6 @@ class FrequencyResponse:
 
             if clipped[-1]:
                 # Previous sample clipped, reduce limit
-                # print(f'{x[i]} -> {x[regions[-1][0]]} = {(1 - limit_decay) ** np.log2(x[i] / x[regions[-1][0]])}')
                 local_limit *= (1 - limit_decay) ** np.log2(x[i] / x[regions[-1][0]])
 
             if slope > local_limit and (limit_free_mask is None or not limit_free_mask[i]):
@@ -1344,7 +1357,7 @@ class FrequencyResponse:
             self.equalize(
                 max_gain=max_gain, concha_interference=concha_interference, treble_f_lower=treble_f_lower,
                 treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
-            parametric_peqs = self.optimize_parametric_eq(fs, parametric_eq_config) if parametric_eq else None
-            fixed_band_peq = self.optimize_parametric_eq(fs, fixed_band_eq_config) if fixed_band_eq else None
+            parametric_peqs = self.optimize_parametric_eq(parametric_eq_config, fs) if parametric_eq else None
+            fixed_band_peq = self.optimize_fixed_band_eq(fixed_band_eq_config, fs) if fixed_band_eq else None
             return parametric_peqs, fixed_band_peq
         return None, None

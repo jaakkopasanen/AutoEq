@@ -11,7 +11,7 @@ from constants import DEFAULT_SHELF_FILTER_MIN_FC, DEFAULT_SHELF_FILTER_MAX_FC, 
     DEFAULT_PEAKING_FILTER_MIN_FC, DEFAULT_PEAKING_FILTER_MAX_FC, DEFAULT_PEAKING_FILTER_MIN_Q, \
     DEFAULT_PEAKING_FILTER_MAX_Q, DEFAULT_PEAKING_FILTER_MIN_GAIN, DEFAULT_PEAKING_FILTER_MAX_GAIN, \
     DEFAULT_PEQ_OPTIMIZER_MIN_F, DEFAULT_PEQ_OPTIMIZER_MAX_F, DEFAULT_PEQ_OPTIMIZER_MAX_TIME, \
-    DEFAULT_PEQ_OPTIMIZER_TARGET_LOSS, DEFAULT_PEQ_OPTIMIZER_MIN_CHANGE_RATE
+    DEFAULT_PEQ_OPTIMIZER_TARGET_LOSS, DEFAULT_PEQ_OPTIMIZER_MIN_CHANGE_RATE, DEFAULT_PEQ_OPTIMIZER_MIN_STD
 
 
 class PEQFilter(ABC):
@@ -352,7 +352,7 @@ class PEQ:
     def __init__(self, f, fs, filters=None, target=None,
                  min_f=DEFAULT_PEQ_OPTIMIZER_MIN_F, max_f=DEFAULT_PEQ_OPTIMIZER_MAX_F,
                  max_time=DEFAULT_PEQ_OPTIMIZER_MAX_TIME, target_loss=DEFAULT_PEQ_OPTIMIZER_TARGET_LOSS,
-                 min_change_rate=DEFAULT_PEQ_OPTIMIZER_MIN_CHANGE_RATE):
+                 min_change_rate=DEFAULT_PEQ_OPTIMIZER_MIN_CHANGE_RATE, min_std=DEFAULT_PEQ_OPTIMIZER_MIN_STD):
         self.f = np.array(f)
         self.fs = fs
         self.filters = []
@@ -369,7 +369,7 @@ class PEQ:
         self._max_time = max_time
         self._target_loss = target_loss
         self._min_change_rate = min_change_rate
-        self._min_std = 0.1
+        self._min_std = min_std
 
     @classmethod
     def from_dict(cls, config, fs, target=None):
@@ -416,6 +416,13 @@ class PEQ:
             raise ValueError('Filter frequency array (f) must match equalizer frequency array')
         self.filters.append(filt)
 
+    def sort_filters(self):
+        type_order = [LowShelf.__name__, Peaking.__name__, HighShelf.__name__]
+        self.filters = sorted(
+            self.filters,
+            key=lambda filt: type_order.index(filt.__class__.__name__) + filt.fc / 1e6,
+            reverse=False)
+
     @property
     def fr(self):
         """Calculates cascade frequency response"""
@@ -428,14 +435,9 @@ class PEQ:
 
     def markdown_table(self):
         """Formats filters as a Markdown table string"""
-        type_order = [LowShelf.__name__, Peaking.__name__, HighShelf.__name__]
-
-        def filter_sorter(filt):
-            return type_order.index(filt.__class__.__name__) + filt.fc / 1e6
-
         table_data = [
             [i + 1, filt.__class__.__name__, f'{filt.fc:.0f}', f'{filt.q:.2f}', f'{filt.gain:.1f}']
-            for i, filt in enumerate(sorted(self.filters, key=filter_sorter, reverse=False))
+            for i, filt in enumerate(self.filters)
         ]
         return tabulate(
             table_data,
@@ -549,7 +551,10 @@ class PEQ:
         self.history.time.append(t)
         self.history.loss.append(loss)
 
-        std = np.std(np.array(self.history.loss[-n:])) if len(self.history.loss) >= n else 0.0
+        # Standard deviation of the last N loss values
+        std = np.std(np.array(self.history.loss[-n:]))
+        # Standard deviation of the last N/2 loss values
+        std_np2 = np.std(np.array(self.history.loss[-n//2:]))
         self.history.std.append(std)
 
         moving_avg_loss = np.mean(np.array(self.history.loss[-n:])) if len(self.history.loss) >= n else 0.0
@@ -572,7 +577,12 @@ class PEQ:
                 and -change_rate < self._min_change_rate
         ):
             raise OptimizationFinished('Change too small')
-        if self._min_std is not None and len(self.history.std) > n and std < self._min_std:
+        if self._min_std is not None and (
+                # STD from last N loss values must be below min STD OR...
+                (len(self.history.std) > n and std < self._min_std)
+                # ...STD from the last N/2 loss values must be below half of the min STD
+                or (len(self.history.std) > n // 2 and std_np2 < self._min_std / 2)
+        ):
             raise OptimizationFinished('STD too small')
 
     def optimize(self):
@@ -588,7 +598,7 @@ class PEQ:
         except OptimizationFinished as err:
             # Restore best params
             self._parse_optimizer_params(self.history.params[np.argmin(self.history.loss)])
-            print(err)
+        self.sort_filters()
 
     def plot(self, fig=None, ax=None):
         if fig is None:

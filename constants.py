@@ -35,6 +35,7 @@ DEFAULT_PEQ_OPTIMIZER_MAX_F = 20000
 DEFAULT_PEQ_OPTIMIZER_MAX_TIME = None
 DEFAULT_PEQ_OPTIMIZER_TARGET_LOSS = None
 DEFAULT_PEQ_OPTIMIZER_MIN_CHANGE_RATE = None
+DEFAULT_PEQ_OPTIMIZER_MIN_STD = 0.1
 
 DEFAULT_FIXED_BAND_FILTER_MIN_GAIN = -12
 DEFAULT_FIXED_BAND_FILTER_MAX_GAIN = 12
@@ -67,6 +68,7 @@ PREAMP_HEADROOM = 0.2
 
 PEQ_CONFIGS = {
     '10_BAND_GRAPHIC_EQ': {
+        'optimizer': {'min_std': 0.01},
         'filters': [{'fc': 31.25 * 2 ** i, 'q': math.sqrt(2), 'type': 'PEAKING'} for i in range(10)]
     },
     '10_PEAKING': {
@@ -85,7 +87,7 @@ PEQ_CONFIGS = {
     },
     '4_PEAKING_WITH_LOW_SHELF': {
         'optimizer': {
-            'f_max': 10000
+            'max_f': 10000
         },
         'filters': [{
             'type': 'LOW_SHELF',
