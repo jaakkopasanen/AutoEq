@@ -123,11 +123,10 @@ class PEQFilter(ABC):
 
 
 class Peaking(PEQFilter):
-    def __init__(self, f, fs,
-                 fc=None, optimize_fc=None, min_fc=DEFAULT_PEAKING_FILTER_MIN_FC, max_fc=DEFAULT_PEAKING_FILTER_MAX_FC,
-                 q=None, optimize_q=None, min_q=DEFAULT_PEAKING_FILTER_MIN_Q, max_q=DEFAULT_PEAKING_FILTER_MAX_Q,
-                 gain=None, optimize_gain=None, min_gain=DEFAULT_PEAKING_FILTER_MIN_GAIN,
-                 max_gain=DEFAULT_PEAKING_FILTER_MAX_GAIN):
+    def __init__(self, f, fs, fc=None, optimize_fc=None, min_fc=DEFAULT_PEAKING_FILTER_MIN_FC,
+                 max_fc=DEFAULT_PEAKING_FILTER_MAX_FC, q=None, optimize_q=None, min_q=DEFAULT_PEAKING_FILTER_MIN_Q,
+                 max_q=DEFAULT_PEAKING_FILTER_MAX_Q, gain=None, optimize_gain=None,
+                 min_gain=DEFAULT_PEAKING_FILTER_MIN_GAIN, max_gain=DEFAULT_PEAKING_FILTER_MAX_GAIN):
         super().__init__(f, fs, fc, optimize_fc, min_fc, max_fc, q, optimize_q, min_q, max_q, gain, optimize_gain,
                          min_gain, max_gain)
 
@@ -221,11 +220,10 @@ class Peaking(PEQFilter):
 
 
 class ShelfFilter(PEQFilter, ABC):
-    def __init__(self, f, fs,
-                 fc=None, optimize_fc=None, min_fc=DEFAULT_SHELF_FILTER_MIN_FC, max_fc=DEFAULT_SHELF_FILTER_MAX_FC,
-                 q=None, optimize_q=None, min_q=DEFAULT_SHELF_FILTER_MIN_Q, max_q=DEFAULT_SHELF_FILTER_MAX_Q,
-                 gain=None, optimize_gain=None, min_gain=DEFAULT_SHELF_FILTER_MIN_GAIN,
-                 max_gain=DEFAULT_SHELF_FILTER_MAX_GAIN):
+    def __init__(self, f, fs, fc=None, optimize_fc=None, min_fc=DEFAULT_SHELF_FILTER_MIN_FC,
+                 max_fc=DEFAULT_SHELF_FILTER_MAX_FC, q=None, optimize_q=None, min_q=DEFAULT_SHELF_FILTER_MIN_Q,
+                 max_q=DEFAULT_SHELF_FILTER_MAX_Q, gain=None, optimize_gain=None,
+                 min_gain=DEFAULT_SHELF_FILTER_MIN_GAIN, max_gain=DEFAULT_SHELF_FILTER_MAX_GAIN):
         super().__init__(f, fs, fc, optimize_fc, min_fc, max_fc, q, optimize_q, min_q, max_q, gain, optimize_gain,
                          min_gain, max_gain)
 
@@ -363,16 +361,18 @@ class PEQ:
             for filt in filters:
                 self.add_filter(filt)
         self.target = np.array(target) if target is not None else None
-        self._ix50 = np.sum(self.f < 50)
-        self._ix10k = np.sum(self.f < 10e3)  # Index for ~10 kHz
-        self._ix20k = np.sum(self.f < 20e3)  # Index for ~20 kHz
-        self.history = None
         self._min_f = min_f
         self._max_f = max_f
+        self._min_f_ix = np.argmin(np.abs(self.f - self._min_f))
+        self._max_f_ix = np.argmin(np.abs(self.f - self._max_f))
+        self._ix50 = np.argmin(np.abs(self.f - 50))
+        self._10k_ix = np.argmin(np.abs(self.f - 10000))
+        self._20k_ix = np.argmin(np.abs(self.f - 20000))
         self._max_time = max_time
         self._target_loss = target_loss
         self._min_change_rate = min_change_rate
         self._min_std = min_std
+        self.history = None
 
     @classmethod
     def from_dict(cls, config, fs, target=None):
@@ -414,7 +414,7 @@ class PEQ:
 
     def add_filter(self, filt):
         if filt.fs != self.fs:
-            raise ValueError('Filter sampling rate (fs) must match equalizer sampling rate')
+            raise ValueError(f'Filter sampling rate ({filt.fs}) must match equalizer sampling rate ({self.fs})')
         if not np.array_equal(filt.f, self.f):
             raise ValueError('Filter frequency array (f) must match equalizer frequency array')
         self.filters.append(filt)
@@ -472,17 +472,16 @@ class PEQ:
         if parse:
             self._parse_optimizer_params(params)
 
-        # Above 10 kHz only the total energy matters so we'll take mean of values between 10 kHz and 20 kHz
+        # Above 10 kHz only the total energy matters so we'll take the average
         fr = self.fr.copy()
         target = self.target.copy()
-        target[self._ix10k:self._ix20k] = np.mean(target[self._ix10k:self._ix20k])
-        fr[self._ix10k:self._ix20k] = np.mean(self.fr[self._ix10k:self._ix20k])
+        target[self._10k_ix:] = np.mean(target[self._10k_ix:])
+        fr[self._10k_ix:] = np.mean(self.fr[self._10k_ix:])
         #target[:self._ix50] = np.mean(target[:self._ix50])  # TODO: Is this good?
         #fr[:self._ix50] = np.mean(fr[:self._ix50])
 
-        # Mean squared error as loss, only up to 20 kHz
-        loss_val = np.mean(np.square(target[:self._ix20k] - fr[:self._ix20k]))
-        # loss_val = np.mean(np.square(target[:self._ix10k] - fr[:self._ix10k]))
+        # Mean squared error as loss, between minimum and maximum frequencies
+        loss_val = np.mean(np.square(target[self._min_f_ix:self._max_f_ix] - fr[self._min_f_ix:self._max_f_ix]))
 
         # Sum penalties from all filters to MSE
         for filt in self.filters:
@@ -617,7 +616,8 @@ class PEQ:
             ax.grid(True, which='minor')
             ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.0f}'))
             ax.set_xticks([20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000])
-        ax.plot(self.f, self.target, color='gray', linewidth=3, label='Target')
+        if self.target is not None:
+            ax.plot(self.f, self.target, color='black', linestyle='--', linewidth=1, label='Target')
         for i, filt in enumerate(self.filters):
             ax.fill_between(filt.f, np.zeros(filt.fr.shape), filt.fr, alpha=0.3, color=f'C{i}')
             ax.plot(filt.f, filt.fr, color=f'C{i}', linewidth=1)
