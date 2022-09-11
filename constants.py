@@ -35,7 +35,7 @@ DEFAULT_PEQ_OPTIMIZER_MAX_F = 20000
 DEFAULT_PEQ_OPTIMIZER_MAX_TIME = None
 DEFAULT_PEQ_OPTIMIZER_TARGET_LOSS = None
 DEFAULT_PEQ_OPTIMIZER_MIN_CHANGE_RATE = None
-DEFAULT_PEQ_OPTIMIZER_MIN_STD = 0.1
+DEFAULT_PEQ_OPTIMIZER_MIN_STD = 0.002
 
 DEFAULT_FIXED_BAND_FILTER_MIN_GAIN = -12
 DEFAULT_FIXED_BAND_FILTER_MAX_GAIN = 12
@@ -75,6 +75,9 @@ PEQ_CONFIGS = {
         'filters': [{'type': 'PEAKING'}] * 10
     },
     '8_PEAKING_WITH_SHELVES': {
+        'optimizer': {
+            'min_std': 0.008
+        },
         'filters': [{
             'type': 'LOW_SHELF',
             'fc': 105,
@@ -87,7 +90,7 @@ PEQ_CONFIGS = {
     },
     '4_PEAKING_WITH_LOW_SHELF': {
         'optimizer': {
-            'max_f': 10000
+            'max_f': 10000,
         },
         'filters': [{
             'type': 'LOW_SHELF',

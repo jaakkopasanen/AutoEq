@@ -256,23 +256,33 @@ def cli_args():
                                  'no value needed.')
     arg_parser.add_argument('--ten_band_eq', action='store_true',
                             help='Shortcut parameter for activating standard ten band eq optimization.')
-    arg_parser.add_argument('--parametric_eq_config', type=str, default='4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF',
-                            help='Name of parametric equalizer configuration or a path to a configuration file. \n\n'
+    arg_parser.add_argument('--parametric_eq_config', type=str,
+                            default='4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF',
+                            help='Name of parametric equalizer configuration or a path to a configuration file. '
                                  'Available named configurations are "10_PEAKING" for 10 peaking filters, '
                                  '"8_PEAKING_WITH_SHELVES" for 8 peaking filters and a low shelf at 105 Hz for bass '
-                                 'adjustment and high shelf at 10 kHz for treble adjustment, '
+                                 'adjustment and a high shelf at 10 kHz for treble adjustment, '
                                  '"4_PEAKING_WITH_LOW_SHELF" for 4 peaking filters and a low shelf at 105 Hz for bass '
                                  'adjustment, "4_PEAKING_WITH_HIGH_SHELF" for 4 peaking filters and a high shelf '
                                  'at 10 kHz for treble adjustments. You can give multiple named configurations by '
-                                 'separating the names with commas. \n\n'
+                                 'separating the names with commas and filter sets will be built on top of each other. '
                                  'When the value is a file path, the file will be read and used as a configuration. '
                                  'The file needs to be a YAML file with "filters" field as a list of filter '
                                  'configurations, each of which can define "fc", "min_fc", "max_fc", "q", "min_q", '
                                  '"max_q", "gain", "min_gain", "max_gain" and "type" fields. When the fc, q or gain '
                                  'value is given, the parameter won\'t be optimized for the filter. "type" needs to '
                                  'be either "LOW_SHELF", "PEAKING" or "HIGH_SHELF". Also "filter_defaults" field is '
-                                 'supported on the top level and it can have the same fields as the filters do.\n\n'
-                                 'Defaults to "4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF".'),
+                                 'supported on the top level and it can have the same fields as the filters do. '
+                                 'All fields missing from the filters will be read from "filter_defaults". '
+                                 'Defaults to "4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF". '
+                                 'Optimizer behavior can be adjusted by defining "optimizer" field which has fields '
+                                 '"min_f" and "max_f" for lower and upper bounds of the optimization range, "max_time" '
+                                 'for maximum optimization duration in seconds, "target_loss" for RMSE target level '
+                                 'upon reaching which the optimization is ended, "min_change_rate" for minimum rate '
+                                 'of improvement in db/s and "min_std" for minimum standard deviation of the last few '
+                                 'loss values. "min_change_rate" and "min_std" end the optimization when further time '
+                                 'spent optimizing can\'t be expected to improve the results dramatically. See '
+                                 'peq.yaml for an example.'),
     arg_parser.add_argument('--fixed_band_eq_config', type=str, default='10_BAND_GRAPHIC_EQ',
                             help='Path to fixed band equalizer configuration. The file format is the same YAML as '
                                  'for parametric equalizer.')

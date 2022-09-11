@@ -600,7 +600,7 @@ class PEQ:
         except OptimizationFinished as err:
             # Restore best params
             self._parse_optimizer_params(self.history.params[np.argmin(self.history.loss)])
-        self.sort_filters()
+            #print(err)
 
     def plot(self, fig=None, ax=None):
         if fig is None:

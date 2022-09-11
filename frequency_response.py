@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*_
 
 import os
+from copy import deepcopy
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import math
@@ -438,6 +439,8 @@ class FrequencyResponse:
                 filter_ranges = ''
                 preamps = ''
                 for i, peq in enumerate(parametric_eq_peqs):
+                    peq = deepcopy(peq)
+                    peq.sort_filters()
                     for filt in peq.filters:
                         compound.add_filter(filt)
                     filter_ranges += f'1-{len(peq.filters) + n}'
@@ -453,6 +456,8 @@ class FrequencyResponse:
             else:
                 compound = PEQ(self.frequency.copy(), parametric_eq_peqs[0].fs, [])
                 for peq in parametric_eq_peqs:
+                    peq = deepcopy(peq)
+                    peq.sort_filters()
                     for filt in peq.filters:
                         compound.add_filter(filt)
                 s += f'Apply preamp of -{compound.max_gain + 0.1:.1f} dB when using parametric equalizer.\n\n'
