@@ -166,7 +166,7 @@ class FrequencyResponse:
 
         # Regex for AutoEq style CSV
         header_pattern = r'frequency(,(raw|smoothed|error|error_smoothed|equalization|parametric_eq|fixed_band_eq|equalized_raw|equalized_smoothed|target))+'
-        float_pattern = r'-?\d+\.?\d+'
+        float_pattern = r'-?\d+(\.\d+)?'
         data_2_pattern = r'{fl}[ ,;:\t]+{fl}?'.format(fl=float_pattern)
         data_n_pattern = r'{fl}([ ,;:\t]+{fl})+?'.format(fl=float_pattern)
         autoeq_pattern = r'^{header}(\n{data})+\n*$'.format(header=header_pattern, data=data_n_pattern)
@@ -1252,8 +1252,6 @@ class FrequencyResponse:
                 equalize=False,
                 parametric_eq=False,
                 fixed_band_eq=False,
-                fc=None,
-                q=None,
                 ten_band_eq=None,
                 parametric_eq_config=None,
                 fixed_band_eq_config=None,
@@ -1280,8 +1278,6 @@ class FrequencyResponse:
             equalize: Run equalization?
             parametric_eq: Optimize peaking filters for parametric eq?
             fixed_band_eq: Optimize peaking filters for fixed band (graphic) eq?
-            fc: List of center frequencies for fixed band eq
-            q: List of Q values for fixed band eq
             ten_band_eq: Optimize filters for standard ten band eq?
             parametric_eq_config: List of PEQ config dicts
             fixed_band_eq_config: PEQ config dict for fixed band equalizer

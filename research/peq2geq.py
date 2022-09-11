@@ -1,5 +1,6 @@
 import os
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 from argparse import ArgumentParser, SUPPRESS
@@ -11,7 +12,6 @@ if str(ROOT_PATH) not in sys.path:
 from frequency_response import FrequencyResponse
 from constants import DEFAULT_FS
 from peq import PEQ, Peaking, LowShelf, HighShelf
-
 
 classes = {'PK': Peaking, 'LS': LowShelf, 'HS': HighShelf}
 
@@ -33,19 +33,19 @@ def read_eqapo(file_path):
     fcs = []
     qs = []
     gains = []
-    filts = []
+    types = []
     for line in lines:
         if line[0] == '#':  # Comment line
             continue
         tokens = line.split()
-        if tokens[0] == 'Filter:':
+        if tokens[0] == 'Filter':
             fcs.append(float(tokens[tokens.index('Fc') + 1]))
             qs.append(float(tokens[tokens.index('Q') + 1]))
             gains.append(float(tokens[tokens.index('Gain') + 1]))
-            filts.append(re.search(r'(PK|LS|HS)', line)[0])
+            types.append(re.search(r'(PK|LS|HS)', line)[0])
         else:
             print(f'Unsupported EqualizerAPO control type "{line}"')
-    return fcs, qs, gains, filts
+    return fcs, qs, gains, types
 
 
 def main():
@@ -85,7 +85,7 @@ if __name__ == '__main__':
 
 
 class TestPeq2Geq(unittest.TestCase):
-    def test(self):
+    def test_peq2geq(self):
         f = FrequencyResponse.generate_frequencies()
         peq = PEQ(f, DEFAULT_FS, filters=[
             Peaking(f, DEFAULT_FS, fc=500, q=1.41, gain=2),
@@ -103,3 +103,19 @@ class TestPeq2Geq(unittest.TestCase):
         fr_geq.interpolate()
         fr_geq.raw -= np.mean(peq.fr - fr_geq.raw)
         self.assertLess(np.mean(np.abs(peq.fr - fr_geq.raw)), 0.1)
+
+    def test_read_eqapo(self):
+        s = 'Filter 1: ON LS Fc 105 Hz Gain -0.5 dB Q 0.70\n' \
+            'Filter 3: ON PK Fc 1773 Hz Gain 3.3 dB Q 1.83\n' \
+            'Filter 10: ON HS Fc 10000 Hz Gain -1.7 dB Q 0.70\n'
+        fp = Path('test_read_eqapo.txt')
+        with open(fp, 'w', encoding='utf-8') as fh:
+            fh.write(s)
+        fcs, qs, gains, types = read_eqapo(fp)
+        fp.unlink(missing_ok=True)
+        self.assertEqual(fcs, [105, 1773, 10000])
+        self.assertEqual(qs, [0.7, 1.83, 0.7])
+        self.assertEqual(gains, [-0.5, 3.3, -1.7])
+        self.assertEqual(types, ['LS', 'PK', 'HS'])
+
+
