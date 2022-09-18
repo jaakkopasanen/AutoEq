@@ -1,40 +1,29 @@
 import os
 import sys
+import tempfile
+import unittest
 from pathlib import Path
+from argparse import ArgumentParser, SUPPRESS
+import re
+import numpy as np
 ROOT_PATH = Path(__file__).resolve().parent.parent
 if str(ROOT_PATH) not in sys.path:
     sys.path.insert(1, str(ROOT_PATH))
-import numpy as np
-import re
 from frequency_response import FrequencyResponse
-from biquad import peaking, low_shelf, high_shelf, digital_coeffs
-from argparse import ArgumentParser, SUPPRESS
+from constants import DEFAULT_FS
+from peq import PEQ, Peaking, LowShelf, HighShelf
 
-fns = {'PK': peaking, 'LS': low_shelf, 'HS': high_shelf}
-fs = 48000
-
-
-def peq2fr(fc, q, gain, filts):
-    if type(fc) in [float, int]:
-        fc = np.array([fc])
-    if type(q) in [float, int]:
-        q = np.array([q])
-    if type(gain) in [float, int]:
-        gain = np.array([gain])
-    if type(filts) == str:
-        filts = [filts] * len(fc)
-    fr = FrequencyResponse(name='PEG')
-    c = np.zeros(fr.frequency.shape)
-    for i, filt in enumerate(filts):
-        a0, a1, a2, b0, b1, b2 = fns[filt](fc[i], q[i], gain[i], fs=fs)
-        c += digital_coeffs(fr.frequency, fs, a0, a1, a2, b0, b1, b2)
-    fr.raw = c
-    return fr
+classes = {'PK': Peaking, 'LS': LowShelf, 'HS': HighShelf}
 
 
-def peq2geq(fc, q, gain, filts, normalize=False):
-    fr = peq2fr(fc, q, gain, filts)
-    fr.equalization = fr.raw
+def peq2geq(fcs, qs, gains, types, normalize=False):
+    if not (len(fcs) == len(qs) == len(gains) == len(types)):
+        raise ValueError('Different number of Fc, Q, gain and filter types')
+    fr = FrequencyResponse(name='peq2geq')
+    peq = PEQ(fr.frequency, DEFAULT_FS)
+    for fc, q, gain, filter_type in zip(fcs, qs, gains, types):
+        peq.add_filter(classes[filter_type](fr.frequency, DEFAULT_FS, fc=fc, q=q, gain=gain))
+    fr.equalization = peq.fr
     return fr.eqapo_graphic_eq(normalize=normalize)
 
 
@@ -44,19 +33,19 @@ def read_eqapo(file_path):
     fcs = []
     qs = []
     gains = []
-    filts = []
+    types = []
     for line in lines:
         if line[0] == '#':  # Comment line
             continue
         tokens = line.split()
-        if tokens[0] == 'Filter:':
+        if tokens[0] == 'Filter':
             fcs.append(float(tokens[tokens.index('Fc') + 1]))
             qs.append(float(tokens[tokens.index('Q') + 1]))
             gains.append(float(tokens[tokens.index('Gain') + 1]))
-            filts.append(re.search(r'(PK|LS|HS)', line)[0])
+            types.append(re.search(r'(PK|LS|HS)', line)[0])
         else:
             print(f'Unsupported EqualizerAPO control type "{line}"')
-    return fcs, qs, gains, filts
+    return fcs, qs, gains, types
 
 
 def main():
@@ -77,9 +66,9 @@ def main():
     parser.add_argument('--normalize', action='store_true', help='Normalize gain?')
     args = parser.parse_args()
     if 'file' in args and args.file:
-        fcs, qs, gains, filts = read_eqapo(args.file)
+        fcs, qs, gains, types = read_eqapo(args.file)
     else:
-        fcs, qs, gains, filts = [], [], [], []
+        fcs, qs, gains, types = [], [], [], []
     if args.fc:
         fcs += args.fc
     if args.q:
@@ -87,12 +76,46 @@ def main():
     if args.gain:
         gains += args.gain
     if args.type:
-        filts += args.type
-    if not (len(fcs) == len(qs) == len(gains) == len(filts)):
-        print('Different number of Fc, Q, gain and filter types')
-        return
-    print(peq2geq(fcs, qs, gains, filts, normalize=args.normalize))
+        types += args.type
+    print(peq2geq(fcs, qs, gains, types, normalize=args.normalize))
 
 
 if __name__ == '__main__':
     main()
+
+
+class TestPeq2Geq(unittest.TestCase):
+    def test_peq2geq(self):
+        f = FrequencyResponse.generate_frequencies()
+        peq = PEQ(f, DEFAULT_FS, filters=[
+            Peaking(f, DEFAULT_FS, fc=500, q=1.41, gain=2),
+            HighShelf(f, DEFAULT_FS, fc=2000, q=0.7, gain=-3)
+        ])
+        geq = peq2geq(
+            [filt.fc for filt in peq.filters],
+            [filt.q for filt in peq.filters],
+            [filt.gain for filt in peq.filters],
+            ['PK', 'HS']
+        )
+        s = geq.split('GraphicEQ: ')[1]
+        pairs = [(float(p.split()[0]), float(p.split()[1])) for p in s.split('; ')]
+        fr_geq = FrequencyResponse(name='geq', frequency=[_f for _f, _g in pairs], raw=[_g for _f, _g in pairs])
+        fr_geq.interpolate()
+        fr_geq.raw -= np.mean(peq.fr - fr_geq.raw)
+        self.assertLess(np.mean(np.abs(peq.fr - fr_geq.raw)), 0.1)
+
+    def test_read_eqapo(self):
+        s = 'Filter 1: ON LS Fc 105 Hz Gain -0.5 dB Q 0.70\n' \
+            'Filter 3: ON PK Fc 1773 Hz Gain 3.3 dB Q 1.83\n' \
+            'Filter 10: ON HS Fc 10000 Hz Gain -1.7 dB Q 0.70\n'
+        fp = Path('test_read_eqapo.txt')
+        with open(fp, 'w', encoding='utf-8') as fh:
+            fh.write(s)
+        fcs, qs, gains, types = read_eqapo(fp)
+        fp.unlink(missing_ok=True)
+        self.assertEqual(fcs, [105, 1773, 10000])
+        self.assertEqual(qs, [0.7, 1.83, 0.7])
+        self.assertEqual(gains, [-0.5, 3.3, -1.7])
+        self.assertEqual(types, ['LS', 'PK', 'HS'])
+
+

@@ -1,0 +1,31 @@
+optimizer:
+  min_f: 20
+  max_f: 20000  # Only optimizing up to 10 kHz because of we only have 6 filters
+  max_time: null  # Letting optimizer finish since this is probably for a one-off custom optimization, not for API
+  min_change_rate: null  # Letting optimizer finish
+  min_std: null  # Letting optimizer finish
+filter_defaults:
+  min_fc: 20
+  max_fc: 10000
+  min_q: 0.18248
+  max_q: 6
+  min_gain: -20
+  max_gain: 20
+filters:
+  - type: PEAKING
+  - type: PEAKING
+  - type: PEAKING
+  - type: PEAKING
+  - type: PEAKING
+  - type: PEAKING
+  - type: PEAKING
+  - type: PEAKING
+  - type: LOW_SHELF
+    fc: 105  # Fixed center frequency at 105 Hz
+    q: 0.7  # Fixed quality of 0.7
+  - type: HIGH_SHELF
+    fc: 10000
+    min_fc: 5000  # Letting the optimizer adjust high shelf between 5 kHz and...
+    max_fc: 12000  # ...12 kHz
+    min_q: 0.4  # Shelf filters start to overshoot below 0.4
+    max_q: 0.7  # Shelf filters start to overshoot after 0.7

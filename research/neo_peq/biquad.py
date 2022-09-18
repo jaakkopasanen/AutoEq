@@ -109,14 +109,32 @@ def high_shelf(fc, Q, gain, fs=48000):
     return 1.0, a1, a2, b0, b1, b2
 
 
-def digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2):
+def digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2, reduce=False):
     f = np.array(f)
-    a0 = np.array(a0)
-    a1 = np.array(a1)
-    a2 = np.array(a2)
-    b0 = np.array(b0)
-    b1 = np.array(b1)
-    b2 = np.array(b2)
+
+    shape = None
+    coeffs = [a0, a1, a2, b0, b1, b2]
+    for i in range(len(coeffs)):
+        if not np.isscalar(coeffs[i]):
+            # Lists are made arrays
+            coeffs[i] = np.array(coeffs[i]).flatten()
+
+            if coeffs[i].size == 1:
+                # Len 1 arrays are made scalars
+                coeffs[i] = coeffs[i][0]
+            else:
+                # Make into column array
+                coeffs[i] = np.expand_dims(coeffs[i], axis=1)
+                # Record shape
+                if shape is not None and coeffs[i].shape != shape:
+                    raise ValueError('All coefficient shapes must be the same or scalar')
+                shape = coeffs[i].shape
+    a0, a1, a2, b0, b1, b2 = coeffs
+
+    if shape is not None:
+        # Coefficients are arrays, replicate frequency array for multiplications
+        f = np.tile(f, shape)
+
     w = 2 * np.pi * f / fs
     phi = 4 * np.sin(w / 2) ** 2
 
@@ -128,6 +146,10 @@ def digital_coeffs(f, fs, a0, a1, a2, b0, b1, b2):
     ) - 10 * np.log10(
         (a0 + a1 + a2) ** 2 + (a0 * a2 * phi - (a1 * (a0 + a2) + 4 * a0 * a2)) * phi
     )
+
+    if shape is not None and reduce:
+        return np.sum(c, axis=0)
+
     return c
 
 
