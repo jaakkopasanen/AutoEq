@@ -3,7 +3,7 @@ from time import time
 from abc import ABC, abstractmethod
 import numpy as np
 from matplotlib import pyplot as plt, ticker
-from scipy.optimize import minimize
+from scipy.optimize import minimize, fmin_slsqp
 from scipy.signal import find_peaks
 from tabulate import tabulate
 
@@ -21,7 +21,7 @@ class PEQFilter(ABC):
                  q=None, optimize_q=None, min_q=None, max_q=None,
                  gain=None, optimize_gain=None, min_gain=None, max_gain=None):
         self.f = np.array(f)
-        self.fs = fs
+        self._fs = fs
 
         if not optimize_fc and fc is None:
             raise TypeError('fc must be given when not optimizing it')
@@ -48,6 +48,15 @@ class PEQFilter(ABC):
 
     def __str__(self):
         return f'{self.__class__.__name__} {self.fc:.0f} Hz, {self.q:.2f} Q, {self.gain:.1f} dB'
+
+    @property
+    def fs(self):
+        return self._fs
+
+    @fs.setter
+    def fs(self, value):
+        self._fr = None
+        self._fs = value
 
     @property
     def fc(self):
@@ -86,6 +95,7 @@ class PEQFilter(ABC):
         """Calculates frequency response"""
         if self._fr is not None:
             return self._fr
+
         w = 2 * np.pi * self.f / self.fs
         phi = 4 * np.sin(w / 2) ** 2
 
@@ -94,11 +104,12 @@ class PEQFilter(ABC):
         a1 *= -1
         a2 *= -1
 
-        return 10 * np.log10(
+        self._fr = 10 * np.log10(
             (b0 + b1 + b2) ** 2 + (b0 * b2 * phi - (b1 * (b0 + b2) + 4 * b0 * b2)) * phi
         ) - 10 * np.log10(
             (a0 + a1 + a2) ** 2 + (a0 * a2 * phi - (a1 * (a0 + a2) + 4 * a0 * a2)) * phi
         )
+        return self._fr
 
     @abstractmethod
     def init(self, target):
@@ -119,6 +130,11 @@ class PEQFilter(ABC):
     @property
     @abstractmethod
     def sharpness_penalty(self):
+        pass
+
+    @property
+    @abstractmethod
+    def band_penalty(self):
         pass
 
 
@@ -150,8 +166,22 @@ class Peaking(PEQFilter):
             negative_peak_ixs, dip_props = find_peaks(np.clip(-target, 0, None), width=0, prominence=0, height=0)
 
         # Indexes for minimum and maximum center frequency
-        min_fc_ix = np.sum(self.f < self.min_fc)
-        max_fc_ix = np.sum(self.f < self.max_fc)
+        min_fc_ix = np.argmin(np.abs(self.f - self.min_fc))
+        max_fc_ix = np.argmin(np.abs(self.f - self.max_fc))
+
+        if len(positive_peak_ixs) == 0 and len(negative_peak_ixs) == 0:
+            # No peaks found
+            params = []
+            if self.optimize_fc:
+                self.fc = self.f[(min_fc_ix + max_fc_ix) // 2]
+                params.append(np.log10(self.fc))
+            if self.optimize_q:
+                self.q = np.sqrt(2)
+                params.append(self.q)
+            if self.optimize_gain:
+                self.gain = 0.0
+                params.append(self.gain)
+            return params
 
         # All peak indexes together
         peak_ixs = np.concatenate([positive_peak_ixs, negative_peak_ixs])
@@ -189,7 +219,7 @@ class Peaking(PEQFilter):
     def biquad_coefficients(self):
         """Calculates 2nd order biquad filter coefficients"""
         a = 10 ** (self.gain / 40)
-        w0 = 2 * np.pi * self.fc / self.fs
+        w0 = 2 * np.pi * self.fc / self._fs
         alpha = np.sin(w0) / (2 * self.q)
 
         a0 = 1 + alpha / a
@@ -206,7 +236,7 @@ class Peaking(PEQFilter):
     def sharpness_penalty(self):
         """Calculates penalty for having too steep slope
 
-        Multiplies the filter frequency response with a penalty coefficient and calculates mean squared error from it
+        Multiplies the filter frequency response with a penalty coefficient and calculates MSE from it
 
         The penalty coefficient is a sigmoid function which goes quickly from 0.0 to 1.0 around 18 dB / octave slope
         """
@@ -217,6 +247,22 @@ class Peaking(PEQFilter):
         x = self.gain / gain_limit - 1
         sharpness_penalty_coefficient = 1 / (1 + np.e ** (-x * 100))
         return np.mean(np.square(self.fr * sharpness_penalty_coefficient))
+
+    @property
+    def band_penalty(self):
+        """Calculates penalty for transition band extending Nyquist frequency
+
+        Biquad filter shape starts to get distorted when the transition band extends Nyquist frequency in such a way
+        that the right side gets compressed (greater slope). This method calculates the RMSE between
+        the left and right sides of the frequency response. If the right side is fully compressed, the penalty is the
+        entire effect of frequency response thus negating the filter entirely. Right side is mirrored around vertical
+        axis.
+        """
+        fc_ix = np.argmin(np.abs(self.f - self.fc))  # Index to frequency array closes to center frequency
+        n = min(fc_ix, len(self.fr) - fc_ix)  # Number of indexes on each side of center frequency, not extending out
+        if n == 0:
+            return 0.0
+        return np.mean(np.square(self.fr[fc_ix - n:fc_ix] - self.fr[fc_ix + n - 1:fc_ix - 1:-1]))
 
 
 class ShelfFilter(PEQFilter, ABC):
@@ -232,10 +278,25 @@ class ShelfFilter(PEQFilter, ABC):
         # Shelf filters start to overshoot hard before they get anywhere near 18 dB per octave slope
         return 0.0
 
+    @property
+    def band_penalty(self):
+        """Calculates penalty for transition band extending Nyquist frequency
+
+        Biquad filter shape starts to get distorted when the transition band extends Nyquist frequency in such a way
+        that the right side gets compressed (greater slope). This method calculates the MSE between
+        the left and right sides of the frequency response. If the right side is fully compressed, the penalty is the
+        entire effect of frequency response thus negating the filter entirely. Right side is mirrored around both axes.
+        """
+        fc_ix = np.argmin(np.abs(self.f - self.fc))  # Index to frequency array closes to center frequency
+        n = min(fc_ix, len(self.fr) - fc_ix)  # Number of indexes on each side of center frequency, not extending out
+        if n == 0:
+            return 0.0
+        return np.mean(np.square(self.fr[fc_ix - n:fc_ix] - (self.gain - self.fr[fc_ix + n - 1:fc_ix - 1:-1])))
+
 
 class HighShelf(ShelfFilter):
     def init(self, target):
-        """Initializes optimizable center frequency (fc), qualtiy (q) and gain
+        """Initializes optimizable center frequency (fc), quality (q) and gain
 
         The operating principle is to find a point after which the average level is greatest and set the center
         frequency there. Gain is set to average level of the target after the transition band. Quality is always set to
@@ -271,7 +332,7 @@ class HighShelf(ShelfFilter):
     def biquad_coefficients(self):
         """Calculates 2nd order biquad filter coefficients"""
         a = 10 ** (self.gain / 40)
-        w0 = 2 * np.pi * self.fc / self.fs
+        w0 = 2 * np.pi * self.fc / self._fs
         alpha = np.sin(w0) / (2 * self.q)
 
         a0 = (a + 1) - (a - 1) * np.cos(w0) + 2 * np.sqrt(a) * alpha
@@ -324,7 +385,7 @@ class LowShelf(ShelfFilter):
     def biquad_coefficients(self):
         """Calculates 2nd order biquad filter coefficients"""
         a = 10 ** (self.gain / 40)
-        w0 = 2 * np.pi * self.fc / self.fs
+        w0 = 2 * np.pi * self.fc / self._fs
         alpha = np.sin(w0) / (2 * self.q)
 
         a0 = (a + 1) + (a - 1) * np.cos(w0) + 2 * np.sqrt(a) * alpha
@@ -375,7 +436,7 @@ class PEQ:
         self.history = None
 
     @classmethod
-    def from_dict(cls, config, fs, target=None):
+    def from_dict(cls, config, f, fs, target=None):
         """Initializes class instance with configuration dict and target
 
         Args:
@@ -386,18 +447,16 @@ class PEQ:
                 default values for filters to avoid repetition. Be wary of setting fc, q and gain in filter defaults
                 as these will disable optimization for all filters and there is no way to enable optimization for a
                 single filter after that. See `constants.py` for examples.
+            f: Frequency array
             fs: Sampling rate
             target: Equalizer frequency response target. Needed if optimization is to be performed.
         Returns:
 
         """
-        freq = []
-        f = 20
-        while f <= 20e3:
-            freq.append(f)
-            f *= 1.01
+        if target is not None and len(f) != len(target):
+            raise ValueError('f and target must be the same length')
         optimizer_kwargs = config['optimizer'] if 'optimizer' in config else {}
-        peq = cls(freq, fs, target=target, **optimizer_kwargs)
+        peq = cls(f, fs, target=target, **optimizer_kwargs)
         filter_classes = {'LOW_SHELF': LowShelf, 'PEAKING': Peaking, 'HIGH_SHELF': HighShelf}
         keys = ['fc', 'q', 'gain', 'min_fc', 'max_fc', 'min_q', 'max_q', 'min_gain', 'max_gain', 'type']
         for filt in config['filters']:
@@ -406,7 +465,7 @@ class PEQ:
                     if key not in filt and key in config['filter_defaults']:
                         filt[key] = config['filter_defaults'][key]
             peq.add_filter(filter_classes[filt['type']](
-                peq.f.copy(), peq.fs,
+                peq.f, peq.fs,
                 **{key: filt[key] for key in keys if key in filt and key != 'type'},
                 optimize_fc='fc' not in filt, optimize_q='q' not in filt, optimize_gain='gain' not in filt
             ))
@@ -486,6 +545,7 @@ class PEQ:
         # Sum penalties from all filters to MSE
         for filt in self.filters:
             loss_val += filt.sharpness_penalty
+            #loss_val += filt.band_penalty  # TODO: Remove?
 
         return np.sqrt(loss_val)
 
@@ -591,12 +651,13 @@ class PEQ:
         """Optimizes filter parameters"""
         self.history = OptimizationHistory()
         try:
-            minimize(
+            fmin_slsqp(  # Tested all of the scipy minimize methods, this is the best
                 self._optimizer_loss,
                 self._init_optimizer_params(),
-                method='SLSQP',  # Tested all of them, this is the best
                 bounds=self._init_optimizer_bounds(),
-                callback=self._callback)
+                epsilon=self._epsilon,
+                callback=self._callback,
+                iprint=0)
         except OptimizationFinished as err:
             # Restore best params
             self._parse_optimizer_params(self.history.params[np.argmin(self.history.loss)])

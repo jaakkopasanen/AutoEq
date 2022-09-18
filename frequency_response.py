@@ -273,14 +273,15 @@ class FrequencyResponse:
         if type(configs) != list:
             configs = [configs]
         peqs = []
-        target = self.equalization.copy()
+        fr = self.__class__(name='optimizer', frequency=self.frequency, equalization=self.equalization)
+        fr.interpolate(f_step=1.02)
         start_time = time()
         for config in configs:
             if 'optimizer' in config and max_time is not None:
                 config['optimizer']['max_time'] = max_time
-            peq = PEQ.from_dict(config, fs, target=target)
+            peq = PEQ.from_dict(config, fr.frequency, fs, target=fr.equalization)
             peq.optimize()
-            target -= peq.fr
+            fr.equalization -= peq.fr
             peqs.append(peq)
             if max_time is not None:
                 max_time = max_time - (time() - start_time)
