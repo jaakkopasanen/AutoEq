@@ -26,7 +26,7 @@ from constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GA
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
     HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, PEQ_CONFIGS, \
     DEFAULT_BIQUAD_OPTIMIZATION_F_STEP
-from peq import PEQ, Peaking
+from peq import PEQ, LowShelf
 
 warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
 
@@ -614,7 +614,7 @@ class FrequencyResponse:
         Returns:
             Target for equalization
         """
-        bass_boost = Peaking(self.frequency, DEFAULT_FS, fc=bass_boost_fc, q=bass_boost_q, gain=bass_boost_gain)
+        bass_boost = LowShelf(self.frequency, DEFAULT_FS, fc=bass_boost_fc, q=bass_boost_q, gain=bass_boost_gain)
         if tilt is not None:
             tilt = self._tilt(tilt=tilt)
         else:
