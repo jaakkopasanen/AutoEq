@@ -44,10 +44,24 @@ class PEQFilter(ABC):
         self.min_gain = min_gain
         self.max_gain = max_gain
 
+        self._ix10k = None
+        self._ix20k = None
+
         self._fr = None
 
     def __str__(self):
         return f'{self.__class__.__name__} {self.fc:.0f} Hz, {self.q:.2f} Q, {self.gain:.1f} dB'
+
+    @property
+    def f(self):
+        return self._f
+
+    @f.setter
+    def f(self, value):
+        self._ix10k = None
+        self._ix20k = None
+        self._fr = None
+        self._f = value
 
     @property
     def fs(self):
@@ -86,9 +100,10 @@ class PEQFilter(ABC):
         self._gain = value
 
     @property
-    def bandwidth(self):
-        """Converts quality (q) to bandwidth in octaves"""
-        return np.log2(1 + 1 / (2 * self.q ** 2) + np.sqrt(((2 * self.q ** 2 + 1) / self.q ** 2) ** 2 / 4 - 1))
+    def ix10k(self):
+        if self._ix10k is not None:
+            return self._ix10k
+        return np.argmin(np.abs(self.f - self.fs))
 
     @property
     def fr(self):
@@ -259,7 +274,8 @@ class Peaking(PEQFilter):
         axis.
         """
         fc_ix = np.argmin(np.abs(self.f - self.fc))  # Index to frequency array closes to center frequency
-        n = min(fc_ix, len(self.fr) - fc_ix)  # Number of indexes on each side of center frequency, not extending out
+        # Number of indexes on each side of center frequency, not extending outside, only up to 10 kHz
+        n = min(fc_ix, self.ix10k - fc_ix)
         if n == 0:
             return 0.0
         return np.mean(np.square(self.fr[fc_ix - n:fc_ix] - self.fr[fc_ix + n - 1:fc_ix - 1:-1]))
@@ -288,7 +304,8 @@ class ShelfFilter(PEQFilter, ABC):
         entire effect of frequency response thus negating the filter entirely. Right side is mirrored around both axes.
         """
         fc_ix = np.argmin(np.abs(self.f - self.fc))  # Index to frequency array closes to center frequency
-        n = min(fc_ix, len(self.fr) - fc_ix)  # Number of indexes on each side of center frequency, not extending out
+        # Number of indexes on each side of center frequency, not extending outside, only up to 10 kHz
+        n = min(fc_ix, self.ix10k - fc_ix)
         if n == 0:
             return 0.0
         return np.mean(np.square(self.fr[fc_ix - n:fc_ix] - (self.gain - self.fr[fc_ix + n - 1:fc_ix - 1:-1])))
@@ -545,7 +562,7 @@ class PEQ:
         # Sum penalties from all filters to MSE
         for filt in self.filters:
             loss_val += filt.sharpness_penalty
-            #loss_val += filt.band_penalty  # TODO: Remove?
+            #loss_val += filt.band_penalty  # TODO
 
         return np.sqrt(loss_val)
 
@@ -655,7 +672,6 @@ class PEQ:
                 self._optimizer_loss,
                 self._init_optimizer_params(),
                 bounds=self._init_optimizer_bounds(),
-                epsilon=self._epsilon,
                 callback=self._callback,
                 iprint=0)
         except OptimizationFinished as err:
