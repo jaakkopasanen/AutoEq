@@ -4,9 +4,9 @@
 and follow instructions in [Usage](#usage) section.
 
 ## About This Project
-AutoEQ is a project for equalizing headphone frequency responses automatically and it achieves this by parsing
+AutoEQ is a project for equalizing headphone frequency responses automatically, and it achieves this by parsing
 frequency response measurements and producing equalization settings which correct the headphone to a neutral sound.
-This project currently has over 2500 headphones covered in the
+This project currently has over 4000 headphones covered in the
 [results](./results) folder.
 See [Usage](#usage) for instructions how to use the results with
 different equalizer softwares and
@@ -23,7 +23,7 @@ you're looking for something light weight to install as a dependency for your ow
 
 Third major contribution of this project is the measurement data and compensation curves all in a numerical format
 except for Crinacle's raw data. Everything is stored as CSV files so they are easy to process with any programming
-language or even Microsoft Excel.
+language or even Excel.
 
 ![Sennheiser HD 800](./results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800/Sennheiser%20HD%20800.png)
 
@@ -49,12 +49,12 @@ Download both WAV files, create a Zip file containing both and load the Zip file
 See [EqualizerApo](#EqualizerAPO) for instructions on how to use the GraphicEQ.
 
 ### Parametric Equalizers
-Parametric equalizers have filters (bands) with user adjustable gain,  center frequency and quality Q. Keep in mind that
+Parametric equalizers have filters (bands) with user adjustable gain, center frequency and quality Q. Keep in mind that
 parametric eq accuracy depends on the number of filters available. Usually 10 filters produce very good
 results but as little as 5 can be good enough. Keep in mind that different parametric equalizers will produce different
-outcomes with the same parameter values. Parameters produced by AutoEq are equal with EqualizerAPO using 48 kHz sampling
-rate. When using other equalizers or sampling rates, it's always highly recommended to check that the frequency response
-of the equalizer matches the parametric eq curve in the graphs.
+outcomes with the same parameter values. Parameters produced by AutoEq are equal with EqualizerAPO using 44.1 kHz
+sampling rate. When using other equalizers or sampling rates, it's always highly recommended to check that the frequency
+response of the equalizer matches the parametric eq curve in the graphs.
 
 All parametric equalizer except Peace require you to configure the filter parameters manually with the software user
 interface. Some parametric equalizer use filter width (band width) instead of Q. Filter width can be calculated as:
@@ -66,16 +66,16 @@ It's very important to set preamp according to the value given in the result REA
 will produce positive gains and to avoid clipping a preamp with negative gain is required.
 
 Parametric eq settings can be used with Peace or any other parametric eq which has at least 5 bands available. Even
-fewer bands is possible but pre-computed results require to use minimum five first of the filters. Parametric equalizer
-filter parameters look like this:
+fewer bands is possible but pre-computed results require you to use at least the five first of the filters.
+Parametric equalizer filter parameters look like this:
 
-| Type    | Fc      | Q    | Gain    |
-| :------ | :------ | :--- | :------ |
-| Peaking | 28 Hz   | 0.46 | 6.3 dB  |
-| Peaking | 162 Hz  | 0.91 | -2.3 dB |
-| Peaking | 2237 Hz | 1.94 | -4.6 dB |
-| Peaking | 6093 Hz | 2.26 | -4.7 dB |
-| Peaking | 8251 Hz | 3.71 | -2.9 dB |
+| Type     | Fc      | Q    | Gain    |
+| :------- | :------ | :--- | :------ |
+| LowShelf | 105 Hz  | 0.70 | 6.3 dB  |
+| Peaking  | 162 Hz  | 0.91 | -2.3 dB |
+| Peaking  | 2237 Hz | 1.94 | -4.6 dB |
+| Peaking  | 6093 Hz | 2.26 | -4.7 dB |
+| Peaking  | 8251 Hz | 3.71 | -2.9 dB |
 
 ### Fixed Band Equalizers
 Fixed band eq is more commonly known as graphic equalizer but in order not to confuse with EqualizerAPO GraphicEQ it is
