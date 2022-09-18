@@ -24,7 +24,8 @@ from constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GA
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_ITERATIONS, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
-    HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, PEQ_CONFIGS
+    HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, PEQ_CONFIGS, \
+    DEFAULT_BIQUAD_OPTIMIZATION_F_STEP
 from peq import PEQ, Peaking
 
 warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
@@ -274,7 +275,7 @@ class FrequencyResponse:
             configs = [configs]
         peqs = []
         fr = self.__class__(name='optimizer', frequency=self.frequency, equalization=self.equalization)
-        fr.interpolate(f_step=1.02)
+        fr.interpolate(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP)
         start_time = time()
         for config in configs:
             if 'optimizer' in config and max_time is not None:
@@ -289,18 +290,27 @@ class FrequencyResponse:
 
     def optimize_parametric_eq(self, configs, fs, max_time=None):
         peqs = self._optimize_peq_filters(configs, fs, max_time=max_time)
-        self.parametric_eq = np.sum(np.vstack([peq.fr for peq in peqs]), axis=0)
+        fr = FrequencyResponse(
+            name='PEQ', frequency=self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP),
+            raw=np.sum(np.vstack([peq.fr for peq in peqs]), axis=0))
+        fr.interpolate(f=self.frequency)
+        self.parametric_eq = fr.raw
         return peqs
 
     def optimize_fixed_band_eq(self, configs, fs, max_time=None):
         peqs = self._optimize_peq_filters(configs, fs, max_time=max_time)
-        self.fixed_band_eq = np.sum(np.vstack([peq.fr for peq in peqs]), axis=0)
+        fr = FrequencyResponse(
+            name='PEQ', frequency=self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP),
+            raw=np.sum(np.vstack([peq.fr for peq in peqs]), axis=0))
+        fr.interpolate(f=self.frequency)
+        self.fixed_band_eq = fr.raw
         return peqs
 
     def write_eqapo_parametric_eq(self, file_path, peqs):
         """Writes EqualizerAPO Parametric eq settings to a file."""
         file_path = os.path.abspath(file_path)
-        compound = PEQ(self.frequency.copy(), peqs[0].fs, [])
+        f = self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP)
+        compound = PEQ(f, peqs[0].fs, [])
         for peq in peqs:
             for filt in peq.filters:
                 compound.add_filter(filt)
@@ -317,7 +327,7 @@ class FrequencyResponse:
         """Writes Rockbox 10 band eq settings to a file."""
         file_path = os.path.abspath(file_path)
 
-        compound = PEQ(self.frequency.copy(), peqs[0].fs, [])
+        compound = PEQ(self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP), peqs[0].fs, [])
         for peq in peqs:
             for filt in peq.filters:
                 compound.add_filter(filt)
@@ -435,7 +445,8 @@ class FrequencyResponse:
         if parametric_eq_peqs is not None:
             s += '### Parametric EQs\n'
             if len(parametric_eq_peqs) > 1:
-                compound = PEQ(self.frequency.copy(), parametric_eq_peqs[0].fs, [])
+                compound = PEQ(
+                    self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP), parametric_eq_peqs[0].fs)
                 n = 0
                 filter_ranges = ''
                 preamps = ''
