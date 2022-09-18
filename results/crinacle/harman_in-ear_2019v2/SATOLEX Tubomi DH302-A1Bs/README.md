@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.2dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.1 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -6.7 dB or -7.2 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 70 Hz    | 0.78 | -3.4 dB |
-| Peaking | 200 Hz   | 0.52 | -6.3 dB |
-| Peaking | 919 Hz   | 0.9  | 2.7 dB  |
-| Peaking | 1955 Hz  | 0.54 | 3.1 dB  |
-| Peaking | 10535 Hz | 1.14 | 6.6 dB  |
-| Peaking | 2778 Hz  | 3.71 | -2.0 dB |
-| Peaking | 4057 Hz  | 2.17 | 0.9 dB  |
-| Peaking | 4236 Hz  | 2.43 | 2.4 dB  |
-| Peaking | 5567 Hz  | 3.95 | -6.8 dB |
-| Peaking | 6511 Hz  | 2.53 | 2.5 dB  |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         2.7 |
+|   2 | Peaking   |       114 | 0.26 |        -8.1 |
+|   3 | Peaking   |      1163 | 0.55 |         5.2 |
+|   4 | Peaking   |      3979 | 4.87 |         4   |
+|   5 | Peaking   |      8845 | 2.17 |         6.4 |
+|   6 | Peaking   |      2024 | 4.44 |         1.7 |
+|   7 | Peaking   |      2483 | 4.42 |        -1   |
+|   8 | Peaking   |      5611 | 6    |        -4.1 |
+|   9 | Peaking   |      6567 | 6    |         2.1 |
+|  10 | HighShelf |     10000 | 0.7  |         1.3 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.2dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.6 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -0.7 dB |
-| Peaking | 62 Hz    | 1.41 | -4.3 dB |
-| Peaking | 125 Hz   | 1.41 | -5.6 dB |
-| Peaking | 250 Hz   | 1.41 | -5.5 dB |
-| Peaking | 500 Hz   | 1.41 | -0.8 dB |
-| Peaking | 1000 Hz  | 1.41 | 3.9 dB  |
-| Peaking | 2000 Hz  | 1.41 | 3.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.3 dB  |
-| Peaking | 8000 Hz  | 1.41 | 5.7 dB  |
-| Peaking | 16000 Hz | 1.41 | 1.3 dB  |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -0.7 |
+|   2 | Peaking |        62 | 1.41 |        -4.4 |
+|   3 | Peaking |       125 | 1.41 |        -5.5 |
+|   4 | Peaking |       250 | 1.41 |        -5.5 |
+|   5 | Peaking |       500 | 1.41 |        -0.8 |
+|   6 | Peaking |      1000 | 1.41 |         3.6 |
+|   7 | Peaking |      2000 | 1.41 |         3.4 |
+|   8 | Peaking |      4000 | 1.41 |         1.6 |
+|   9 | Peaking |      8000 | 1.41 |         4   |
+|  10 | Peaking |     16000 | 1.41 |         4.2 |
 
 ### Graphs
 ![](./SATOLEX%20Tubomi%20DH302-A1Bs.png)

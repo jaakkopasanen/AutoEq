@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.0dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.0 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -4.9 dB or -4.8 dB, respectively.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 24 Hz    | 0.83 | 3.3 dB   |
-| Peaking | 1829 Hz  | 2.27 | 5.0 dB   |
-| Peaking | 4601 Hz  | 2.89 | -3.3 dB  |
-| Peaking | 4632 Hz  | 3.22 | -1.1 dB  |
-| Peaking | 19178 Hz | 0.44 | -10.6 dB |
-| Peaking | 137 Hz   | 2.1  | -0.9 dB  |
-| Peaking | 240 Hz   | 2.48 | -1.6 dB  |
-| Peaking | 972 Hz   | 5.58 | -1.3 dB  |
-| Peaking | 2990 Hz  | 5.62 | -1.7 dB  |
-| Peaking | 10006 Hz | 2.07 | 0.7 dB   |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         4.7 |
+|   2 | Peaking   |        70 | 0.39 |        -3.1 |
+|   3 | Peaking   |       571 | 2.73 |         0.9 |
+|   4 | Peaking   |      1848 | 2.1  |         5.1 |
+|   5 | Peaking   |      4653 | 1.67 |        -4   |
+|   6 | Peaking   |       962 | 5.12 |        -1.4 |
+|   7 | Peaking   |      3015 | 5.97 |        -1.8 |
+|   8 | Peaking   |      3713 | 6    |         1.8 |
+|   9 | Peaking   |      5726 | 6    |         1.7 |
+|  10 | HighShelf |     10000 | 0.7  |        -5.8 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.5dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.2 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 3.4 dB  |
-| Peaking | 62 Hz    | 1.41 | 0.4 dB  |
-| Peaking | 125 Hz   | 1.41 | -0.7 dB |
-| Peaking | 250 Hz   | 1.41 | -1.6 dB |
-| Peaking | 500 Hz   | 1.41 | 0.9 dB  |
-| Peaking | 1000 Hz  | 1.41 | -0.8 dB |
-| Peaking | 2000 Hz  | 1.41 | 5.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | -4.0 dB |
-| Peaking | 8000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 16000 Hz | 1.41 | -9.7 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         3.5 |
+|   2 | Peaking |        62 | 1.41 |         0.4 |
+|   3 | Peaking |       125 | 1.41 |        -0.6 |
+|   4 | Peaking |       250 | 1.41 |        -1.5 |
+|   5 | Peaking |       500 | 1.41 |         0.9 |
+|   6 | Peaking |      1000 | 1.41 |        -0.8 |
+|   7 | Peaking |      2000 | 1.41 |         5   |
+|   8 | Peaking |      4000 | 1.41 |        -4   |
+|   9 | Peaking |      8000 | 1.41 |         0   |
+|  10 | Peaking |     16000 | 1.41 |       -11.8 |
 
 ### Graphs
 ![](./HIFIMAN%20Arya%20Stealth.png)

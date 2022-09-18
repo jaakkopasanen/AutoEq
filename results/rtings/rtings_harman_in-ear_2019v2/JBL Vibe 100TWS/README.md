@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.2dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.1 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -5.3 dB or -5.3 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 34 Hz    | 0.33 | -6.3 dB |
-| Peaking | 1271 Hz  | 2.1  | -1.5 dB |
-| Peaking | 3914 Hz  | 3.18 | 1.4 dB  |
-| Peaking | 4655 Hz  | 1.9  | 4.4 dB  |
-| Peaking | 19179 Hz | 0.53 | -5.3 dB |
-| Peaking | 178 Hz   | 4.02 | 0.7 dB  |
-| Peaking | 777 Hz   | 6.29 | 0.9 dB  |
-| Peaking | 2922 Hz  | 5.08 | -0.5 dB |
-| Peaking | 6823 Hz  | 5.6  | -3.1 dB |
-| Peaking | 8011 Hz  | 1.97 | 1.9 dB  |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |        -5.5 |
+|   2 | Peaking   |        69 | 0.3  |        -0.8 |
+|   3 | Peaking   |       344 | 1.4  |        -0.5 |
+|   4 | Peaking   |      1285 | 1.91 |        -1.4 |
+|   5 | Peaking   |      4437 | 2    |         5.2 |
+|   6 | Peaking   |       769 | 4.52 |         0.7 |
+|   7 | Peaking   |      5687 | 5.65 |         1   |
+|   8 | Peaking   |      6689 | 6    |        -2.1 |
+|   9 | Peaking   |      8729 | 2.89 |         2.5 |
+|  10 | HighShelf |     10000 | 0.7  |        -2.9 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.5dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.4 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -6.4 dB |
-| Peaking | 62 Hz    | 1.41 | -4.5 dB |
-| Peaking | 125 Hz   | 1.41 | -1.8 dB |
-| Peaking | 250 Hz   | 1.41 | -0.3 dB |
-| Peaking | 500 Hz   | 1.41 | -0.2 dB |
-| Peaking | 1000 Hz  | 1.41 | -0.7 dB |
-| Peaking | 2000 Hz  | 1.41 | -1.2 dB |
-| Peaking | 4000 Hz  | 1.41 | 4.5 dB  |
-| Peaking | 8000 Hz  | 1.41 | 0.7 dB  |
-| Peaking | 16000 Hz | 1.41 | -4.5 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -6.5 |
+|   2 | Peaking |        62 | 1.41 |        -4.4 |
+|   3 | Peaking |       125 | 1.41 |        -1.9 |
+|   4 | Peaking |       250 | 1.41 |        -0.3 |
+|   5 | Peaking |       500 | 1.41 |        -0.2 |
+|   6 | Peaking |      1000 | 1.41 |        -0.5 |
+|   7 | Peaking |      2000 | 1.41 |        -1.4 |
+|   8 | Peaking |      4000 | 1.41 |         4.5 |
+|   9 | Peaking |      8000 | 1.41 |         0.8 |
+|  10 | Peaking |     16000 | 1.41 |        -5.7 |
 
 ### Graphs
 ![](./JBL%20Vibe%20100TWS.png)

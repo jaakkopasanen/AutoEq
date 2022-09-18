@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.9dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -3.9 dB or -6.5 dB, respectively.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 18 Hz    | 0.23 | -11.1 dB |
-| Peaking | 131 Hz   | 1.67 | -4.7 dB  |
-| Peaking | 907 Hz   | 2.36 | 1.1 dB   |
-| Peaking | 2018 Hz  | 0.94 | 3.1 dB   |
-| Peaking | 17173 Hz | 0.33 | 6.7 dB   |
-| Peaking | 234 Hz   | 1.11 | -1.6 dB  |
-| Peaking | 251 Hz   | 2.99 | 4.1 dB   |
-| Peaking | 4200 Hz  | 3.57 | 3.4 dB   |
-| Peaking | 5842 Hz  | 1.98 | -3.8 dB  |
-| Peaking | 9009 Hz  | 1.53 | 1.7 dB   |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |        -9.9 |
+|   2 | Peaking   |       146 | 2.03 |        -5.1 |
+|   3 | Peaking   |      1104 | 1.38 |         1.5 |
+|   4 | Peaking   |      2031 | 1.95 |         3.3 |
+|   5 | Peaking   |      3978 | 2.95 |         3.4 |
+|   6 | Peaking   |        57 | 2.48 |         1.2 |
+|   7 | Peaking   |       459 | 2.13 |        -0.7 |
+|   8 | Peaking   |      5834 | 4.15 |        -2.9 |
+|   9 | Peaking   |      8969 | 2.32 |         1.9 |
+|  10 | HighShelf |     10000 | 0.7  |         6.4 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-9.7dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-11.8 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -11.8 dB |
-| Peaking | 62 Hz    | 1.41 | -4.2 dB  |
-| Peaking | 125 Hz   | 1.41 | -7.4 dB  |
-| Peaking | 250 Hz   | 1.41 | 1.0 dB   |
-| Peaking | 500 Hz   | 1.41 | -0.9 dB  |
-| Peaking | 1000 Hz  | 1.41 | 1.6 dB   |
-| Peaking | 2000 Hz  | 1.41 | 2.9 dB   |
-| Peaking | 4000 Hz  | 1.41 | 1.2 dB   |
-| Peaking | 8000 Hz  | 1.41 | 2.1 dB   |
-| Peaking | 16000 Hz | 1.41 | 9.3 dB   |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |       -11.7 |
+|   2 | Peaking |        62 | 1.41 |        -4.2 |
+|   3 | Peaking |       125 | 1.41 |        -7.7 |
+|   4 | Peaking |       250 | 1.41 |         1.5 |
+|   5 | Peaking |       500 | 1.41 |        -1.1 |
+|   6 | Peaking |      1000 | 1.41 |         1.6 |
+|   7 | Peaking |      2000 | 1.41 |         3.1 |
+|   8 | Peaking |      4000 | 1.41 |         1.3 |
+|   9 | Peaking |      8000 | 1.41 |         1.3 |
+|  10 | Peaking |     16000 | 1.41 |        11.7 |
 
 ### Graphs
 ![](./Anker%20SoundBuds%20Curve.png)

@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.1dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.1 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -4.8 dB or -4.9 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 145 Hz   | 0.15 | -5.1 dB |
-| Peaking | 227 Hz   | 1    | 9.0 dB  |
-| Peaking | 1549 Hz  | 1.21 | -6.0 dB |
-| Peaking | 2572 Hz  | 1.3  | 7.4 dB  |
-| Peaking | 4539 Hz  | 4.31 | 3.2 dB  |
-| Peaking | 2544 Hz  | 2.27 | -0.1 dB |
-| Peaking | 6525 Hz  | 5.81 | -5.4 dB |
-| Peaking | 7519 Hz  | 1.76 | 3.7 dB  |
-| Peaking | 10058 Hz | 1.35 | -2.6 dB |
-| Peaking | 19746 Hz | 0.51 | 4.1 dB  |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |        -2.4 |
+|   2 | Peaking   |       228 | 1.1  |         7.9 |
+|   3 | Peaking   |       234 | 0.23 |        -3.7 |
+|   4 | Peaking   |      1661 | 0.94 |       -11.4 |
+|   5 | Peaking   |      2357 | 0.84 |        11.8 |
+|   6 | Peaking   |      3765 | 6    |        -0.8 |
+|   7 | Peaking   |      4561 | 5.92 |         2.5 |
+|   8 | Peaking   |      6460 | 6    |        -4.5 |
+|   9 | Peaking   |      7426 | 4.8  |         1.6 |
+|  10 | HighShelf |     10000 | 0.7  |         0.7 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.0dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.6 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -3.0 dB |
-| Peaking | 62 Hz    | 1.41 | -3.8 dB |
-| Peaking | 125 Hz   | 1.41 | -1.5 dB |
-| Peaking | 250 Hz   | 1.41 | 4.9 dB  |
-| Peaking | 500 Hz   | 1.41 | -2.3 dB |
-| Peaking | 1000 Hz  | 1.41 | -4.9 dB |
-| Peaking | 2000 Hz  | 1.41 | 0.1 dB  |
-| Peaking | 4000 Hz  | 1.41 | 5.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.0 dB |
-| Peaking | 16000 Hz | 1.41 | 2.0 dB  |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -2.9 |
+|   2 | Peaking |        62 | 1.41 |        -3.6 |
+|   3 | Peaking |       125 | 1.41 |        -1.8 |
+|   4 | Peaking |       250 | 1.41 |         5.2 |
+|   5 | Peaking |       500 | 1.41 |        -2.5 |
+|   6 | Peaking |      1000 | 1.41 |        -4.9 |
+|   7 | Peaking |      2000 | 1.41 |         0.2 |
+|   8 | Peaking |      4000 | 1.41 |         4.7 |
+|   9 | Peaking |      8000 | 1.41 |        -0.3 |
+|  10 | Peaking |     16000 | 1.41 |         1.2 |
 
 ### Graphs
 ![](./EarSonics%20Velvet%20(tight).png)

@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -6.7 dB or -6.7 dB, respectively.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 12 Hz    | 0.18 | -10.4 dB |
-| Peaking | 239 Hz   | 0.25 | -9.9 dB  |
-| Peaking | 1006 Hz  | 0.43 | 9.5 dB   |
-| Peaking | 5296 Hz  | 4.72 | -12.8 dB |
-| Peaking | 11215 Hz | 0.24 | 6.4 dB   |
-| Peaking | 3083 Hz  | 3.44 | 0.8 dB   |
-| Peaking | 3741 Hz  | 3.46 | -1.1 dB  |
-| Peaking | 5897 Hz  | 5.16 | -1.6 dB  |
-| Peaking | 6402 Hz  | 5.49 | 2.7 dB   |
-| Peaking | 10723 Hz | 2.16 | -0.5 dB  |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |       -10.7 |
+|   2 | Peaking   |       184 | 0.65 |        -8.7 |
+|   3 | Peaking   |       392 | 1.33 |        -2.3 |
+|   4 | Peaking   |      3747 | 0.18 |         7.4 |
+|   5 | Peaking   |      5268 | 3.94 |       -13.4 |
+|   6 | Peaking   |      1066 | 2.54 |         1.2 |
+|   7 | Peaking   |      2274 | 2.04 |        -0.6 |
+|   8 | Peaking   |      3751 | 3.44 |        -1.5 |
+|   9 | Peaking   |      6562 | 6    |         1.8 |
+|  10 | HighShelf |     10000 | 0.7  |         2.5 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.9dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-11.9 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -11.9 dB |
-| Peaking | 62 Hz    | 1.41 | -7.9 dB  |
-| Peaking | 125 Hz   | 1.41 | -8.6 dB  |
-| Peaking | 250 Hz   | 1.41 | -6.8 dB  |
-| Peaking | 500 Hz   | 1.41 | -1.7 dB  |
-| Peaking | 1000 Hz  | 1.41 | 4.8 dB   |
-| Peaking | 2000 Hz  | 1.41 | 6.5 dB   |
-| Peaking | 4000 Hz  | 1.41 | -0.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | 5.5 dB   |
-| Peaking | 16000 Hz | 1.41 | 8.4 dB   |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |       -12.2 |
+|   2 | Peaking |        62 | 1.41 |        -7.3 |
+|   3 | Peaking |       125 | 1.41 |        -8.6 |
+|   4 | Peaking |       250 | 1.41 |        -7   |
+|   5 | Peaking |       500 | 1.41 |        -1.9 |
+|   6 | Peaking |      1000 | 1.41 |         5.4 |
+|   7 | Peaking |      2000 | 1.41 |         5.6 |
+|   8 | Peaking |      4000 | 1.41 |         0.7 |
+|   9 | Peaking |      8000 | 1.41 |         3.6 |
+|  10 | Peaking |     16000 | 1.41 |        11.6 |
 
 ### Graphs
 ![](./MUNITIO%20Billets.png)

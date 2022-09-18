@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.6dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.4 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -4.1 dB or -4.8 dB, respectively.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 15 Hz    | 0.43 | 4.8 dB   |
-| Peaking | 213 Hz   | 0.51 | -2.5 dB  |
-| Peaking | 3385 Hz  | 2.41 | 5.1 dB   |
-| Peaking | 6418 Hz  | 3.33 | 2.8 dB   |
-| Peaking | 10004 Hz | 3.13 | 3.2 dB   |
-| Peaking | 1477 Hz  | 0.73 | 1.9 dB   |
-| Peaking | 1524 Hz  | 1.68 | -3.8 dB  |
-| Peaking | 8315 Hz  | 2.85 | 0.6 dB   |
-| Peaking | 12364 Hz | 1.64 | 2.6 dB   |
-| Peaking | 19800 Hz | 0.41 | -10.4 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         5.7 |
+|   2 | Peaking   |        84 | 0.31 |        -4.3 |
+|   3 | Peaking   |       946 | 1.9  |         0.6 |
+|   4 | Peaking   |      1615 | 1.37 |        -4   |
+|   5 | Peaking   |      3333 | 0.55 |         4.3 |
+|   6 | Peaking   |       156 | 1.97 |         0.8 |
+|   7 | Peaking   |       323 | 1.02 |        -0.4 |
+|   8 | Peaking   |      3361 | 3.38 |         1.3 |
+|   9 | Peaking   |      5127 | 6    |        -2.5 |
+|  10 | HighShelf |     10000 | 0.7  |        -2.6 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.6 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 4.0 dB  |
-| Peaking | 62 Hz    | 1.41 | -0.0 dB |
-| Peaking | 125 Hz   | 1.41 | -1.3 dB |
-| Peaking | 250 Hz   | 1.41 | -2.5 dB |
-| Peaking | 500 Hz   | 1.41 | -0.5 dB |
-| Peaking | 1000 Hz  | 1.41 | -0.4 dB |
-| Peaking | 2000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 4000 Hz  | 1.41 | 3.9 dB  |
-| Peaking | 8000 Hz  | 1.41 | 2.8 dB  |
-| Peaking | 16000 Hz | 1.41 | -5.7 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         4   |
+|   2 | Peaking |        62 | 1.41 |        -0.2 |
+|   3 | Peaking |       125 | 1.41 |        -1.2 |
+|   4 | Peaking |       250 | 1.41 |        -2.5 |
+|   5 | Peaking |       500 | 1.41 |        -0.6 |
+|   6 | Peaking |      1000 | 1.41 |        -0.2 |
+|   7 | Peaking |      2000 | 1.41 |        -0.6 |
+|   8 | Peaking |      4000 | 1.41 |         4.4 |
+|   9 | Peaking |      8000 | 1.41 |         1.9 |
+|  10 | Peaking |     16000 | 1.41 |        -5.8 |
 
 ### Graphs
 ![](./64%20Audio%20Nio%20(mX%20module)%20(sample%201).png)

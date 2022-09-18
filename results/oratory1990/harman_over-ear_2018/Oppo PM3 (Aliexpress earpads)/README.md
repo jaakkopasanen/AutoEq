@@ -2,38 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.7dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.6 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -4.2 dB or -4.2 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 44 Hz    | 0.89 | 6.4 dB  |
-| Peaking | 88 Hz    | 0.56 | -7.0 dB |
-| Peaking | 333 Hz   | 1.45 | 5.4 dB  |
-| Peaking | 2092 Hz  | 1.57 | -2.1 dB |
-| Peaking | 11336 Hz | 1.06 | 4.5 dB  |
-| Peaking | 40 Hz    | 3.13 | -1.6 dB |
-| Peaking | 51 Hz    | 1.43 | 1.7 dB  |
-| Peaking | 63 Hz    | 3.5  | -1.7 dB |
-| Peaking | 3930 Hz  | 8.31 | 1.2 dB  |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         1.5 |
+|   2 | Peaking   |        45 | 1.14 |         5.7 |
+|   3 | Peaking   |        84 | 0.53 |        -7.3 |
+|   4 | Peaking   |       331 | 1.41 |         5.6 |
+|   5 | Peaking   |      2006 | 2.06 |        -2.1 |
+|   6 | Peaking   |      2708 | 5.7  |        -1   |
+|   7 | Peaking   |      3894 | 5.99 |         1.3 |
+|   8 | Peaking   |      5115 | 5.98 |         1.5 |
+|   9 | Peaking   |      5863 | 6    |        -1.6 |
+|  10 | HighShelf |     10000 | 0.7  |         3.2 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.1dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-5.0 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 3.2 dB  |
-| Peaking | 62 Hz    | 1.41 | -0.9 dB |
-| Peaking | 125 Hz   | 1.41 | -6.0 dB |
-| Peaking | 250 Hz   | 1.41 | 2.6 dB  |
-| Peaking | 500 Hz   | 1.41 | 2.1 dB  |
-| Peaking | 1000 Hz  | 1.41 | -0.1 dB |
-| Peaking | 2000 Hz  | 1.41 | -2.1 dB |
-| Peaking | 4000 Hz  | 1.41 | -0.0 dB |
-| Peaking | 8000 Hz  | 1.41 | 2.8 dB  |
-| Peaking | 16000 Hz | 1.41 | 2.7 dB  |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         3.2 |
+|   2 | Peaking |        62 | 1.41 |        -1   |
+|   3 | Peaking |       125 | 1.41 |        -6   |
+|   4 | Peaking |       250 | 1.41 |         2.6 |
+|   5 | Peaking |       500 | 1.41 |         2.1 |
+|   6 | Peaking |      1000 | 1.41 |        -0.2 |
+|   7 | Peaking |      2000 | 1.41 |        -2   |
+|   8 | Peaking |      4000 | 1.41 |         0.1 |
+|   9 | Peaking |      8000 | 1.41 |         2   |
+|  10 | Peaking |     16000 | 1.41 |         4.9 |
 
 ### Graphs
 ![](./Oppo%20PM3%20(Aliexpress%20earpads).png)

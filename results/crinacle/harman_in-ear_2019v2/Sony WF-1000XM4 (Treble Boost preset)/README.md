@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.3dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.0 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -5.5 dB or -5.4 dB, respectively.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 86 Hz    | 0.5  | -2.7 dB  |
-| Peaking | 350 Hz   | 0.49 | -2.3 dB  |
-| Peaking | 951 Hz   | 1.92 | 1.4 dB   |
-| Peaking | 5142 Hz  | 1.2  | 4.6 dB   |
-| Peaking | 8380 Hz  | 2.54 | 4.3 dB   |
-| Peaking | 2444 Hz  | 4.98 | -0.7 dB  |
-| Peaking | 3135 Hz  | 3.38 | 0.7 dB   |
-| Peaking | 10561 Hz | 0.7  | 1.2 dB   |
-| Peaking | 11295 Hz | 1.46 | 2.2 dB   |
-| Peaking | 19679 Hz | 0.38 | -13.0 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         0.3 |
+|   2 | Peaking   |       146 | 0.24 |        -3.4 |
+|   3 | Peaking   |       966 | 2.51 |         1.4 |
+|   4 | Peaking   |      4300 | 1.37 |         1.9 |
+|   5 | Peaking   |      7656 | 0.85 |         5   |
+|   6 | Peaking   |        74 | 2.82 |        -0.3 |
+|   7 | Peaking   |      2380 | 4.97 |        -0.6 |
+|   8 | Peaking   |      5974 | 4.5  |         0.4 |
+|   9 | Peaking   |      9456 | 2.13 |         3.1 |
+|  10 | HighShelf |     10000 | 0.7  |        -7.1 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.6dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-6.3 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -0.8 dB |
-| Peaking | 62 Hz    | 1.41 | -2.3 dB |
-| Peaking | 125 Hz   | 1.41 | -2.7 dB |
-| Peaking | 250 Hz   | 1.41 | -2.4 dB |
-| Peaking | 500 Hz   | 1.41 | -2.0 dB |
-| Peaking | 1000 Hz  | 1.41 | 0.8 dB  |
-| Peaking | 2000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 4000 Hz  | 1.41 | 3.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | 6.5 dB  |
-| Peaking | 16000 Hz | 1.41 | -9.8 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -0.8 |
+|   2 | Peaking |        62 | 1.41 |        -2.2 |
+|   3 | Peaking |       125 | 1.41 |        -2.7 |
+|   4 | Peaking |       250 | 1.41 |        -2.4 |
+|   5 | Peaking |       500 | 1.41 |        -2   |
+|   6 | Peaking |      1000 | 1.41 |         0.8 |
+|   7 | Peaking |      2000 | 1.41 |        -0.6 |
+|   8 | Peaking |      4000 | 1.41 |         3.2 |
+|   9 | Peaking |      8000 | 1.41 |         6.5 |
+|  10 | Peaking |     16000 | 1.41 |       -11.7 |
 
 ### Graphs
 ![](./Sony%20WF-1000XM4%20(Treble%20Boost%20preset).png)

@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-4.9dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-3.7 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -4.1 dB or -4.8 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 43 Hz    | 1.37 | -1.3 dB |
-| Peaking | 129 Hz   | 0.59 | -6.2 dB |
-| Peaking | 356 Hz   | 1.67 | 4.7 dB  |
-| Peaking | 1709 Hz  | 2.19 | 1.2 dB  |
-| Peaking | 1927 Hz  | 1.19 | 2.5 dB  |
-| Peaking | 2858 Hz  | 4.57 | -1.8 dB |
-| Peaking | 3721 Hz  | 3.81 | 5.4 dB  |
-| Peaking | 5212 Hz  | 2.29 | -3.3 dB |
-| Peaking | 6796 Hz  | 4.78 | 3.6 dB  |
-| Peaking | 17400 Hz | 0.28 | -3.1 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         1.7 |
+|   2 | Peaking   |       118 | 0.29 |        -7   |
+|   3 | Peaking   |       355 | 1.22 |         6.8 |
+|   4 | Peaking   |      1748 | 1.83 |         4   |
+|   5 | Peaking   |      3659 | 5.34 |         3.6 |
+|   6 | Peaking   |       652 | 4.11 |        -0.7 |
+|   7 | Peaking   |      3968 | 4.4  |         2.8 |
+|   8 | Peaking   |      5097 | 1.97 |        -3.4 |
+|   9 | Peaking   |      6798 | 5.93 |         3.2 |
+|  10 | HighShelf |     10000 | 0.7  |        -3   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-3.5dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-3.4 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -1.1 dB |
-| Peaking | 62 Hz    | 1.41 | -3.0 dB |
-| Peaking | 125 Hz   | 1.41 | -6.5 dB |
-| Peaking | 250 Hz   | 1.41 | -0.1 dB |
-| Peaking | 500 Hz   | 1.41 | 1.8 dB  |
-| Peaking | 1000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 2000 Hz  | 1.41 | 3.2 dB  |
-| Peaking | 4000 Hz  | 1.41 | 0.8 dB  |
-| Peaking | 8000 Hz  | 1.41 | -1.2 dB |
-| Peaking | 16000 Hz | 1.41 | -4.2 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -1.2 |
+|   2 | Peaking |        62 | 1.41 |        -2.7 |
+|   3 | Peaking |       125 | 1.41 |        -6.8 |
+|   4 | Peaking |       250 | 1.41 |         0.2 |
+|   5 | Peaking |       500 | 1.41 |         1.7 |
+|   6 | Peaking |      1000 | 1.41 |        -0.3 |
+|   7 | Peaking |      2000 | 1.41 |         3.2 |
+|   8 | Peaking |      4000 | 1.41 |         0.8 |
+|   9 | Peaking |      8000 | 1.41 |        -0.9 |
+|  10 | Peaking |     16000 | 1.41 |        -5.2 |
 
 ### Graphs
 ![](./Corsair%20HS60.png)

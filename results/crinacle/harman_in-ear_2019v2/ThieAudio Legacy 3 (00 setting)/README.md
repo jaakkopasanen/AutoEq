@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.5 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -5.6 dB or -6.3 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 56 Hz    | 0.19 | -3.6 dB |
-| Peaking | 1774 Hz  | 2.35 | -4.2 dB |
-| Peaking | 3366 Hz  | 1.55 | 3.9 dB  |
-| Peaking | 6290 Hz  | 1.99 | 4.7 dB  |
-| Peaking | 10157 Hz | 1.49 | 4.4 dB  |
-| Peaking | 881 Hz   | 1.49 | 1.0 dB  |
-| Peaking | 1265 Hz  | 3.69 | -1.1 dB |
-| Peaking | 3423 Hz  | 4.18 | -1.2 dB |
-| Peaking | 4141 Hz  | 2.88 | 2.2 dB  |
-| Peaking | 4416 Hz  | 7.08 | -2.9 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |        -3.3 |
+|   2 | Peaking   |       186 | 0.73 |        -2.8 |
+|   3 | Peaking   |      1769 | 2.13 |        -4.3 |
+|   4 | Peaking   |      3200 | 1.94 |         2.3 |
+|   5 | Peaking   |      7338 | 0.63 |         5.4 |
+|   6 | Peaking   |       929 | 1.66 |         0.9 |
+|   7 | Peaking   |      1261 | 3.33 |        -1   |
+|   8 | Peaking   |      4606 | 6    |        -1.6 |
+|   9 | Peaking   |      5872 | 4.39 |         1.3 |
+|  10 | HighShelf |     10000 | 0.7  |        -1   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.7dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-6.1 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -3.4 dB |
-| Peaking | 62 Hz    | 1.41 | -2.6 dB |
-| Peaking | 125 Hz   | 1.41 | -2.5 dB |
-| Peaking | 250 Hz   | 1.41 | -2.4 dB |
-| Peaking | 500 Hz   | 1.41 | 0.1 dB  |
-| Peaking | 1000 Hz  | 1.41 | 0.1 dB  |
-| Peaking | 2000 Hz  | 1.41 | -3.0 dB |
-| Peaking | 4000 Hz  | 1.41 | 4.6 dB  |
-| Peaking | 8000 Hz  | 1.41 | 6.0 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.6 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -3.5 |
+|   2 | Peaking |        62 | 1.41 |        -2.6 |
+|   3 | Peaking |       125 | 1.41 |        -2.6 |
+|   4 | Peaking |       250 | 1.41 |        -2.3 |
+|   5 | Peaking |       500 | 1.41 |         0   |
+|   6 | Peaking |      1000 | 1.41 |         0.1 |
+|   7 | Peaking |      2000 | 1.41 |        -3.1 |
+|   8 | Peaking |      4000 | 1.41 |         4.9 |
+|   9 | Peaking |      8000 | 1.41 |         5.3 |
+|  10 | Peaking |     16000 | 1.41 |         0.2 |
 
 ### Graphs
 ![](./ThieAudio%20Legacy%203%20(00%20setting).png)

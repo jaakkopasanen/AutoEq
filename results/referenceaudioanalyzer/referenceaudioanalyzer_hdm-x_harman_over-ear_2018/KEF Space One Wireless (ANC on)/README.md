@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.4dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-7.2 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.2 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 37 Hz    | 0.37 | -4.3 dB |
-| Peaking | 142 Hz   | 0.65 | -3.7 dB |
-| Peaking | 405 Hz   | 1.21 | 8.3 dB  |
-| Peaking | 7781 Hz  | 2.13 | -3.1 dB |
-| Peaking | 16358 Hz | 0.41 | -3.8 dB |
-| Peaking | 625 Hz   | 3.73 | 2.4 dB  |
-| Peaking | 1101 Hz  | 2.4  | -3.5 dB |
-| Peaking | 2761 Hz  | 4.32 | -2.8 dB |
-| Peaking | 4481 Hz  | 1.23 | 2.8 dB  |
-| Peaking | 6438 Hz  | 4.97 | -3.4 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |        -4   |
+|   2 | Peaking   |       161 | 0.56 |        -4.6 |
+|   3 | Peaking   |       358 | 1.19 |         6.9 |
+|   4 | Peaking   |       571 | 1.49 |         3.9 |
+|   5 | Peaking   |      1095 | 2.27 |        -3.5 |
+|   6 | Peaking   |      2751 | 4.34 |        -3.1 |
+|   7 | Peaking   |      5058 | 0.88 |         2.8 |
+|   8 | Peaking   |      6582 | 3.21 |        -5.6 |
+|   9 | Peaking   |      8776 | 2.13 |        -2.9 |
+|  10 | HighShelf |     10000 | 0.7  |        -3.7 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-8.1 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -4.6 dB |
-| Peaking | 62 Hz    | 1.41 | -3.8 dB |
-| Peaking | 125 Hz   | 1.41 | -5.2 dB |
-| Peaking | 250 Hz   | 1.41 | 0.5 dB  |
-| Peaking | 500 Hz   | 1.41 | 8.3 dB  |
-| Peaking | 1000 Hz  | 1.41 | -3.0 dB |
-| Peaking | 2000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.1 dB  |
-| Peaking | 8000 Hz  | 1.41 | -4.8 dB |
-| Peaking | 16000 Hz | 1.41 | -4.7 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -4.7 |
+|   2 | Peaking |        62 | 1.41 |        -3.5 |
+|   3 | Peaking |       125 | 1.41 |        -5.4 |
+|   4 | Peaking |       250 | 1.41 |         0.3 |
+|   5 | Peaking |       500 | 1.41 |         8.7 |
+|   6 | Peaking |      1000 | 1.41 |        -3.2 |
+|   7 | Peaking |      2000 | 1.41 |        -0.4 |
+|   8 | Peaking |      4000 | 1.41 |         1.8 |
+|   9 | Peaking |      8000 | 1.41 |        -4.3 |
+|  10 | Peaking |     16000 | 1.41 |        -6.3 |
 
 ### Graphs
 ![](./KEF%20Space%20One%20Wireless%20(ANC%20on).png)

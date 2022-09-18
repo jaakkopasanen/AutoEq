@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.7dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.7 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -4.9 dB or -5.3 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 17 Hz    | 0.47 | -5.5 dB |
-| Peaking | 108 Hz   | 0.36 | -5.0 dB |
-| Peaking | 783 Hz   | 1.36 | 2.9 dB  |
-| Peaking | 3821 Hz  | 3.73 | 2.9 dB  |
-| Peaking | 8030 Hz  | 1.08 | 5.4 dB  |
-| Peaking | 1025 Hz  | 4.47 | 0.5 dB  |
-| Peaking | 2675 Hz  | 2.81 | -2.6 dB |
-| Peaking | 3130 Hz  | 3.44 | 1.8 dB  |
-| Peaking | 12367 Hz | 1.68 | 1.5 dB  |
-| Peaking | 19786 Hz | 0.52 | -5.3 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |        -5.8 |
+|   2 | Peaking   |       184 | 0.72 |        -4.1 |
+|   3 | Peaking   |       802 | 1.56 |         2.6 |
+|   4 | Peaking   |      2458 | 2.87 |        -3.1 |
+|   5 | Peaking   |      8393 | 0.36 |         4.8 |
+|   6 | Peaking   |        49 | 1.9  |         0.3 |
+|   7 | Peaking   |      3698 | 4.23 |         1.3 |
+|   8 | Peaking   |      5057 | 3.96 |        -1.5 |
+|   9 | Peaking   |      8560 | 1.62 |         1.4 |
+|  10 | HighShelf |     10000 | 0.7  |        -3.5 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-6.2dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-5.6 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -6.5 dB |
-| Peaking | 62 Hz    | 1.41 | -4.0 dB |
-| Peaking | 125 Hz   | 1.41 | -4.3 dB |
-| Peaking | 250 Hz   | 1.41 | -3.1 dB |
-| Peaking | 500 Hz   | 1.41 | 0.5 dB  |
-| Peaking | 1000 Hz  | 1.41 | 2.6 dB  |
-| Peaking | 2000 Hz  | 1.41 | -1.7 dB |
-| Peaking | 4000 Hz  | 1.41 | 2.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | 5.7 dB  |
-| Peaking | 16000 Hz | 1.41 | -1.7 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -6.2 |
+|   2 | Peaking |        62 | 1.41 |        -4.2 |
+|   3 | Peaking |       125 | 1.41 |        -4.2 |
+|   4 | Peaking |       250 | 1.41 |        -3.2 |
+|   5 | Peaking |       500 | 1.41 |         0.5 |
+|   6 | Peaking |      1000 | 1.41 |         2.6 |
+|   7 | Peaking |      2000 | 1.41 |        -1.7 |
+|   8 | Peaking |      4000 | 1.41 |         2.9 |
+|   9 | Peaking |      8000 | 1.41 |         5.1 |
+|  10 | Peaking |     16000 | 1.41 |        -1.3 |
 
 ### Graphs
 ![](./Monster%20Miles%20Davis%20Tribute.png)

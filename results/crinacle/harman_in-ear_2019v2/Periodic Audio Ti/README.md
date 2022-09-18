@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.7dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.7 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -5.4 dB or -5.4 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 72 Hz    | 0.6  | -3.7 dB |
-| Peaking | 195 Hz   | 0.6  | -4.8 dB |
-| Peaking | 1100 Hz  | 0.92 | 5.8 dB  |
-| Peaking | 2278 Hz  | 2.96 | 3.2 dB  |
-| Peaking | 9251 Hz  | 2.24 | 4.1 dB  |
-| Peaking | 5214 Hz  | 3.63 | -6.3 dB |
-| Peaking | 6149 Hz  | 2.23 | 2.3 dB  |
-| Peaking | 6420 Hz  | 2.84 | 1.3 dB  |
-| Peaking | 12451 Hz | 1.8  | 2.5 dB  |
-| Peaking | 19938 Hz | 0.45 | -9.4 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         2   |
+|   2 | Peaking   |       109 | 0.27 |        -7.2 |
+|   3 | Peaking   |      1185 | 0.54 |         6.1 |
+|   4 | Peaking   |      5044 | 3.02 |        -6.3 |
+|   5 | Peaking   |      8237 | 0.86 |         3.6 |
+|   6 | Peaking   |      1743 | 6    |        -0.9 |
+|   7 | Peaking   |      2374 | 3.71 |         1.5 |
+|   8 | Peaking   |      3325 | 3.96 |        -1.3 |
+|   9 | Peaking   |      6430 | 6    |         1.5 |
+|  10 | HighShelf |     10000 | 0.7  |        -3   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.7dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-5.6 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -1.2 dB |
-| Peaking | 62 Hz    | 1.41 | -3.9 dB |
-| Peaking | 125 Hz   | 1.41 | -5.3 dB |
-| Peaking | 250 Hz   | 1.41 | -4.5 dB |
-| Peaking | 500 Hz   | 1.41 | -0.2 dB |
-| Peaking | 1000 Hz  | 1.41 | 4.7 dB  |
-| Peaking | 2000 Hz  | 1.41 | 4.9 dB  |
-| Peaking | 4000 Hz  | 1.41 | -2.5 dB |
-| Peaking | 8000 Hz  | 1.41 | 4.2 dB  |
-| Peaking | 16000 Hz | 1.41 | -4.6 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -1.2 |
+|   2 | Peaking |        62 | 1.41 |        -3.9 |
+|   3 | Peaking |       125 | 1.41 |        -5.4 |
+|   4 | Peaking |       250 | 1.41 |        -4.5 |
+|   5 | Peaking |       500 | 1.41 |        -0.1 |
+|   6 | Peaking |      1000 | 1.41 |         4.7 |
+|   7 | Peaking |      2000 | 1.41 |         5   |
+|   8 | Peaking |      4000 | 1.41 |        -2.6 |
+|   9 | Peaking |      8000 | 1.41 |         4.1 |
+|  10 | Peaking |     16000 | 1.41 |        -5.5 |
 
 ### Graphs
 ![](./Periodic%20Audio%20Ti.png)

@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.0dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.0 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -5.8 dB or -5.8 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 25 Hz    | 0.61 | 3.0 dB  |
-| Peaking | 198 Hz   | 0.84 | -3.2 dB |
-| Peaking | 1238 Hz  | 2.63 | -3.8 dB |
-| Peaking | 2286 Hz  | 2.07 | 3.9 dB  |
-| Peaking | 4391 Hz  | 2.28 | 5.4 dB  |
-| Peaking | 647 Hz   | 1.4  | 1.7 dB  |
-| Peaking | 718 Hz   | 0.52 | -0.9 dB |
-| Peaking | 1802 Hz  | 1.09 | 0.3 dB  |
-| Peaking | 11227 Hz | 0.52 | 0.7 dB  |
-| Peaking | 19212 Hz | 0.2  | -1.9 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         3.4 |
+|   2 | Peaking   |       127 | 0.42 |        -3.3 |
+|   3 | Peaking   |      1243 | 2.6  |        -3.5 |
+|   4 | Peaking   |      2287 | 2.13 |         3.9 |
+|   5 | Peaking   |      4384 | 2.21 |         5.4 |
+|   6 | Peaking   |       136 | 1.72 |         0.4 |
+|   7 | Peaking   |       265 | 1.6  |        -0.9 |
+|   8 | Peaking   |       636 | 1.44 |         1.1 |
+|   9 | Peaking   |      1040 | 4.88 |        -1   |
+|  10 | HighShelf |     10000 | 0.7  |        -1   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.3dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-5.2 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 3.2 dB  |
-| Peaking | 62 Hz    | 1.41 | 0.4 dB  |
-| Peaking | 125 Hz   | 1.41 | -1.7 dB |
-| Peaking | 250 Hz   | 1.41 | -3.2 dB |
-| Peaking | 500 Hz   | 1.41 | 1.1 dB  |
-| Peaking | 1000 Hz  | 1.41 | -3.0 dB |
-| Peaking | 2000 Hz  | 1.41 | 1.7 dB  |
-| Peaking | 4000 Hz  | 1.41 | 5.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.2 dB |
-| Peaking | 16000 Hz | 1.41 | -1.8 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         3   |
+|   2 | Peaking |        62 | 1.41 |         0.6 |
+|   3 | Peaking |       125 | 1.41 |        -1.8 |
+|   4 | Peaking |       250 | 1.41 |        -3.1 |
+|   5 | Peaking |       500 | 1.41 |         1.1 |
+|   6 | Peaking |      1000 | 1.41 |        -3   |
+|   7 | Peaking |      2000 | 1.41 |         1.7 |
+|   8 | Peaking |      4000 | 1.41 |         4.9 |
+|   9 | Peaking |      8000 | 1.41 |         0   |
+|  10 | Peaking |     16000 | 1.41 |        -2.2 |
 
 ### Graphs
 ![](./Kinera%20Idun%20(sample%202).png)

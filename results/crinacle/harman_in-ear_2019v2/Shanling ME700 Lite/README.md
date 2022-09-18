@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.2dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.3 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -4.6 dB or -5.5 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 25 Hz    | 1.29 | 1.6 dB  |
-| Peaking | 1413 Hz  | 1.14 | -2.1 dB |
-| Peaking | 4846 Hz  | 2.14 | 4.9 dB  |
-| Peaking | 11958 Hz | 0.93 | 2.0 dB  |
-| Peaking | 18971 Hz | 0.38 | 2.6 dB  |
-| Peaking | 157 Hz   | 0.82 | -1.2 dB |
-| Peaking | 476 Hz   | 1.73 | 0.8 dB  |
-| Peaking | 3162 Hz  | 5.46 | 0.5 dB  |
-| Peaking | 6680 Hz  | 2.39 | -1.0 dB |
-| Peaking | 6723 Hz  | 6.33 | 2.0 dB  |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         2.1 |
+|   2 | Peaking   |        88 | 0.5  |        -2.1 |
+|   3 | Peaking   |       525 | 1.2  |         1.2 |
+|   4 | Peaking   |      1414 | 0.67 |        -2.2 |
+|   5 | Peaking   |      4965 | 1.28 |         4.8 |
+|   6 | Peaking   |      3939 | 4.89 |        -0.5 |
+|   7 | Peaking   |      4063 | 5.26 |        -0.2 |
+|   8 | Peaking   |      4858 | 5.65 |         1.2 |
+|   9 | Peaking   |      5881 | 6    |        -1.6 |
+|  10 | HighShelf |     10000 | 0.7  |         3   |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.4dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-5.7 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 1.6 dB  |
-| Peaking | 62 Hz    | 1.41 | -0.2 dB |
-| Peaking | 125 Hz   | 1.41 | -1.1 dB |
-| Peaking | 250 Hz   | 1.41 | -0.7 dB |
-| Peaking | 500 Hz   | 1.41 | 1.0 dB  |
-| Peaking | 1000 Hz  | 1.41 | -1.5 dB |
-| Peaking | 2000 Hz  | 1.41 | -2.0 dB |
-| Peaking | 4000 Hz  | 1.41 | 3.6 dB  |
-| Peaking | 8000 Hz  | 1.41 | 2.1 dB  |
-| Peaking | 16000 Hz | 1.41 | 4.1 dB  |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         1.7 |
+|   2 | Peaking |        62 | 1.41 |        -0.2 |
+|   3 | Peaking |       125 | 1.41 |        -1   |
+|   4 | Peaking |       250 | 1.41 |        -0.8 |
+|   5 | Peaking |       500 | 1.41 |         1   |
+|   6 | Peaking |      1000 | 1.41 |        -1.4 |
+|   7 | Peaking |      2000 | 1.41 |        -2.1 |
+|   8 | Peaking |      4000 | 1.41 |         3.8 |
+|   9 | Peaking |      8000 | 1.41 |         1.7 |
+|  10 | Peaking |     16000 | 1.41 |         5.5 |
 
 ### Graphs
 ![](./Shanling%20ME700%20Lite.png)

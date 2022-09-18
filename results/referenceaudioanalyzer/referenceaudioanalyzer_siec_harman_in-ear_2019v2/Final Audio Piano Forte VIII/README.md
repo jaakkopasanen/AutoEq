@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-7.0dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -6.8 dB or -6.9 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 39 Hz    | 0.37 | 7.0 dB  |
-| Peaking | 182 Hz   | 0.76 | -6.7 dB |
-| Peaking | 2465 Hz  | 4.17 | -7.2 dB |
-| Peaking | 4280 Hz  | 2.33 | -8.9 dB |
-| Peaking | 8542 Hz  | 0.78 | 7.3 dB  |
-| Peaking | 35 Hz    | 2.87 | -0.4 dB |
-| Peaking | 833 Hz   | 2.41 | 1.3 dB  |
-| Peaking | 1613 Hz  | 2.05 | 3.1 dB  |
-| Peaking | 2094 Hz  | 1.38 | -1.5 dB |
-| Peaking | 12119 Hz | 5.23 | 2.0 dB  |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         6.7 |
+|   2 | Peaking   |       190 | 0.66 |        -5.4 |
+|   3 | Peaking   |      1447 | 0.75 |         7.3 |
+|   4 | Peaking   |      3374 | 0.42 |       -11   |
+|   5 | Peaking   |      7672 | 0.93 |        12.3 |
+|   6 | Peaking   |      1837 | 3.79 |         1.8 |
+|   7 | Peaking   |      2396 | 4.2  |        -3.8 |
+|   8 | Peaking   |      3248 | 4.6  |         4.2 |
+|   9 | Peaking   |      4189 | 5.1  |        -2.7 |
+|  10 | HighShelf |     10000 | 0.7  |         0.1 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.4dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 6.6 dB  |
-| Peaking | 62 Hz    | 1.41 | 5.2 dB  |
-| Peaking | 125 Hz   | 1.41 | -2.6 dB |
-| Peaking | 250 Hz   | 1.41 | -4.9 dB |
-| Peaking | 500 Hz   | 1.41 | -0.7 dB |
-| Peaking | 1000 Hz  | 1.41 | 2.4 dB  |
-| Peaking | 2000 Hz  | 1.41 | -1.6 dB |
-| Peaking | 4000 Hz  | 1.41 | -7.4 dB |
-| Peaking | 8000 Hz  | 1.41 | 9.4 dB  |
-| Peaking | 16000 Hz | 1.41 | -0.7 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         6.5 |
+|   2 | Peaking |        62 | 1.41 |         5.2 |
+|   3 | Peaking |       125 | 1.41 |        -2.7 |
+|   4 | Peaking |       250 | 1.41 |        -4.9 |
+|   5 | Peaking |       500 | 1.41 |        -0.8 |
+|   6 | Peaking |      1000 | 1.41 |         2.2 |
+|   7 | Peaking |      2000 | 1.41 |        -1.5 |
+|   8 | Peaking |      4000 | 1.41 |        -7.2 |
+|   9 | Peaking |      8000 | 1.41 |         8.2 |
+|  10 | Peaking |     16000 | 1.41 |         1.4 |
 
 ### Graphs
 ![](./Final%20Audio%20Piano%20Forte%20VIII.png)

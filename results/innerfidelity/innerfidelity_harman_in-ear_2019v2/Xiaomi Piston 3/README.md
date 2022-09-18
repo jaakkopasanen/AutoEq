@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.2 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -6.5 dB or -6.4 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 77 Hz    | 1.05 | -2.8 dB |
-| Peaking | 189 Hz   | 0.63 | -5.3 dB |
-| Peaking | 832 Hz   | 1.32 | 3.4 dB  |
-| Peaking | 976 Hz   | 2.05 | 0.7 dB  |
-| Peaking | 12019 Hz | 0.38 | 6.0 dB  |
-| Peaking | 20 Hz    | 2.19 | 1.9 dB  |
-| Peaking | 2016 Hz  | 5.17 | 0.8 dB  |
-| Peaking | 4688 Hz  | 2.86 | -4.2 dB |
-| Peaking | 6141 Hz  | 1.94 | 3.2 dB  |
-| Peaking | 12887 Hz | 1.69 | -1.0 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         4.1 |
+|   2 | Peaking   |        91 | 0.31 |        -7.7 |
+|   3 | Peaking   |       848 | 1.24 |         4.2 |
+|   4 | Peaking   |      4587 | 3.55 |        -4.2 |
+|   5 | Peaking   |      7442 | 0.78 |         6.6 |
+|   6 | Peaking   |       135 | 2.05 |         0.2 |
+|   7 | Peaking   |      2078 | 4.12 |         0.8 |
+|   8 | Peaking   |      2885 | 4.2  |        -0.8 |
+|   9 | Peaking   |      8501 | 2.89 |        -1.4 |
+|  10 | HighShelf |     10000 | 0.7  |         3.5 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.8dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-8.7 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 0.5 dB  |
-| Peaking | 62 Hz    | 1.41 | -3.4 dB |
-| Peaking | 125 Hz   | 1.41 | -4.9 dB |
-| Peaking | 250 Hz   | 1.41 | -4.6 dB |
-| Peaking | 500 Hz   | 1.41 | 0.2 dB  |
-| Peaking | 1000 Hz  | 1.41 | 3.3 dB  |
-| Peaking | 2000 Hz  | 1.41 | 0.6 dB  |
-| Peaking | 4000 Hz  | 1.41 | -0.6 dB |
-| Peaking | 8000 Hz  | 1.41 | 7.3 dB  |
-| Peaking | 16000 Hz | 1.41 | 6.2 dB  |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         0.7 |
+|   2 | Peaking |        62 | 1.41 |        -3.5 |
+|   3 | Peaking |       125 | 1.41 |        -4.8 |
+|   4 | Peaking |       250 | 1.41 |        -4.6 |
+|   5 | Peaking |       500 | 1.41 |         0.2 |
+|   6 | Peaking |      1000 | 1.41 |         3.3 |
+|   7 | Peaking |      2000 | 1.41 |         0.7 |
+|   8 | Peaking |      4000 | 1.41 |        -0.5 |
+|   9 | Peaking |      8000 | 1.41 |         6.7 |
+|  10 | Peaking |     16000 | 1.41 |         8.3 |
 
 ### Graphs
 ![](./Xiaomi%20Piston%203.png)

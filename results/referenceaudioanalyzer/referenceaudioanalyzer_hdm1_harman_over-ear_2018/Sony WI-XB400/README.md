@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.6dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-4.9 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -4.1 dB or -6.5 dB, respectively.
 
-| Type    | Fc      |    Q | Gain    |
-|:--------|:--------|:-----|:--------|
-| Peaking | 37 Hz   | 0.56 | -8.8 dB |
-| Peaking | 84 Hz   | 1.1  | -6.8 dB |
-| Peaking | 139 Hz  | 2.05 | -7.3 dB |
-| Peaking | 3007 Hz | 0.78 | 4.5 dB  |
-| Peaking | 9280 Hz | 2.2  | 4.1 dB  |
-| Peaking | 316 Hz  | 2.05 | 10.2 dB |
-| Peaking | 414 Hz  | 0.9  | -6.3 dB |
-| Peaking | 1497 Hz | 2.56 | 2.2 dB  |
-| Peaking | 4391 Hz | 5.32 | 3.2 dB  |
-| Peaking | 6078 Hz | 5.73 | -4.3 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |        -5.9 |
+|   2 | Peaking   |       151 | 0.41 |       -12.7 |
+|   3 | Peaking   |       301 | 1.2  |        14.9 |
+|   4 | Peaking   |       469 | 1.2  |        -5.6 |
+|   5 | Peaking   |      2960 | 0.35 |         4.2 |
+|   6 | Peaking   |      2984 | 2.63 |        -0.8 |
+|   7 | Peaking   |      4288 | 3.82 |         3.1 |
+|   8 | Peaking   |      6132 | 3.71 |        -5.7 |
+|   9 | Peaking   |      8462 | 2.75 |         3.8 |
+|  10 | HighShelf |     10000 | 0.7  |        -0.1 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-4.7dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.4 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 31 Hz    | 1.41 | -8.3 dB  |
-| Peaking | 62 Hz    | 1.41 | -8.6 dB  |
-| Peaking | 125 Hz   | 1.41 | -12.9 dB |
-| Peaking | 250 Hz   | 1.41 | 4.2 dB   |
-| Peaking | 500 Hz   | 1.41 | -3.3 dB  |
-| Peaking | 1000 Hz  | 1.41 | 0.1 dB   |
-| Peaking | 2000 Hz  | 1.41 | 3.6 dB   |
-| Peaking | 4000 Hz  | 1.41 | 3.5 dB   |
-| Peaking | 8000 Hz  | 1.41 | 2.8 dB   |
-| Peaking | 16000 Hz | 1.41 | 0.0 dB   |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -8.2 |
+|   2 | Peaking |        62 | 1.41 |        -8.8 |
+|   3 | Peaking |       125 | 1.41 |       -12.9 |
+|   4 | Peaking |       250 | 1.41 |         4.2 |
+|   5 | Peaking |       500 | 1.41 |        -3.4 |
+|   6 | Peaking |      1000 | 1.41 |         0.3 |
+|   7 | Peaking |      2000 | 1.41 |         3.7 |
+|   8 | Peaking |      4000 | 1.41 |         3.3 |
+|   9 | Peaking |      8000 | 1.41 |         2.4 |
+|  10 | Peaking |     16000 | 1.41 |         0.1 |
 
 ### Graphs
 ![](./Sony%20WI-XB400.png)

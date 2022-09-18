@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.4dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.6 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -6.6 dB or -8.2 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 17 Hz    | 0.76 | 5.3 dB  |
-| Peaking | 181 Hz   | 0.38 | -7.6 dB |
-| Peaking | 1723 Hz  | 0.92 | 5.8 dB  |
-| Peaking | 2872 Hz  | 2.22 | 2.9 dB  |
-| Peaking | 13803 Hz | 0.49 | 6.3 dB  |
-| Peaking | 685 Hz   | 4.09 | 0.9 dB  |
-| Peaking | 4315 Hz  | 3.86 | 1.4 dB  |
-| Peaking | 6216 Hz  | 1.67 | -2.2 dB |
-| Peaking | 8974 Hz  | 2.14 | 2.1 dB  |
-| Peaking | 14516 Hz | 2.19 | -0.8 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         6.3 |
+|   2 | Peaking   |       114 | 0.26 |        -9.2 |
+|   3 | Peaking   |       687 | 3.39 |         0.9 |
+|   4 | Peaking   |      2106 | 0.73 |         6.9 |
+|   5 | Peaking   |      9253 | 2.72 |         5.8 |
+|   6 | Peaking   |        68 | 1.79 |        -0.9 |
+|   7 | Peaking   |       157 | 1.37 |         0.9 |
+|   8 | Peaking   |       332 | 1.94 |        -0.6 |
+|   9 | Peaking   |      6368 | 3.13 |        -1.7 |
+|  10 | HighShelf |     10000 | 0.7  |         4.9 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-8.3dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-11.3 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 3.0 dB  |
-| Peaking | 62 Hz    | 1.41 | -3.2 dB |
-| Peaking | 125 Hz   | 1.41 | -5.4 dB |
-| Peaking | 250 Hz   | 1.41 | -6.5 dB |
-| Peaking | 500 Hz   | 1.41 | -2.7 dB |
-| Peaking | 1000 Hz  | 1.41 | 1.0 dB  |
-| Peaking | 2000 Hz  | 1.41 | 6.8 dB  |
-| Peaking | 4000 Hz  | 1.41 | 1.6 dB  |
-| Peaking | 8000 Hz  | 1.41 | 3.9 dB  |
-| Peaking | 16000 Hz | 1.41 | 7.9 dB  |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         3.1 |
+|   2 | Peaking |        62 | 1.41 |        -3.2 |
+|   3 | Peaking |       125 | 1.41 |        -5.4 |
+|   4 | Peaking |       250 | 1.41 |        -6.7 |
+|   5 | Peaking |       500 | 1.41 |        -2.4 |
+|   6 | Peaking |      1000 | 1.41 |         1   |
+|   7 | Peaking |      2000 | 1.41 |         6.6 |
+|   8 | Peaking |      4000 | 1.41 |         1.9 |
+|   9 | Peaking |      8000 | 1.41 |         2.8 |
+|  10 | Peaking |     16000 | 1.41 |        11.1 |
 
 ### Graphs
 ![](./1MORE%20Piston%20Classic.png)

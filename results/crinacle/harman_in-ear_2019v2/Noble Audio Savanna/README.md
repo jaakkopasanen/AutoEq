@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-6.5dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-6.9 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -6.5 dB or -6.5 dB, respectively.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 28 Hz    | 0.49 | 6.4 dB  |
-| Peaking | 262 Hz   | 0.41 | -3.9 dB |
-| Peaking | 4279 Hz  | 0.88 | 7.3 dB  |
-| Peaking | 6521 Hz  | 3.41 | -7.4 dB |
-| Peaking | 11602 Hz | 1.43 | 3.4 dB  |
-| Peaking | 1426 Hz  | 2.24 | -2.0 dB |
-| Peaking | 2239 Hz  | 0.37 | 0.8 dB  |
-| Peaking | 4183 Hz  | 3.93 | -1.5 dB |
-| Peaking | 5224 Hz  | 4.62 | 2.0 dB  |
-| Peaking | 5928 Hz  | 1.6  | -1.0 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         7.3 |
+|   2 | Peaking   |       150 | 0.25 |        -4.3 |
+|   3 | Peaking   |      3563 | 1.14 |         6.2 |
+|   4 | Peaking   |      5190 | 3.82 |         3.7 |
+|   5 | Peaking   |      6333 | 5.06 |        -5.4 |
+|   6 | Peaking   |        35 | 3.05 |         0.9 |
+|   7 | Peaking   |        74 | 1.82 |        -1   |
+|   8 | Peaking   |       148 | 1.73 |         0.8 |
+|   9 | Peaking   |      1386 | 3.12 |        -0.8 |
+|  10 | HighShelf |     10000 | 0.7  |         2.1 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-7.4dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | 7.1 dB  |
-| Peaking | 62 Hz    | 1.41 | 1.5 dB  |
-| Peaking | 125 Hz   | 1.41 | -1.4 dB |
-| Peaking | 250 Hz   | 1.41 | -3.6 dB |
-| Peaking | 500 Hz   | 1.41 | -2.0 dB |
-| Peaking | 1000 Hz  | 1.41 | -0.8 dB |
-| Peaking | 2000 Hz  | 1.41 | 1.0 dB  |
-| Peaking | 4000 Hz  | 1.41 | 6.7 dB  |
-| Peaking | 8000 Hz  | 1.41 | -0.0 dB |
-| Peaking | 16000 Hz | 1.41 | 2.1 dB  |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         7   |
+|   2 | Peaking |        62 | 1.41 |         1.7 |
+|   3 | Peaking |       125 | 1.41 |        -1.5 |
+|   4 | Peaking |       250 | 1.41 |        -3.5 |
+|   5 | Peaking |       500 | 1.41 |        -2   |
+|   6 | Peaking |      1000 | 1.41 |        -0.8 |
+|   7 | Peaking |      2000 | 1.41 |         0.9 |
+|   8 | Peaking |      4000 | 1.41 |         7   |
+|   9 | Peaking |      8000 | 1.41 |        -1.3 |
+|  10 | Peaking |     16000 | 1.41 |         4.8 |
 
 ### Graphs
 ![](./Noble%20Audio%20Savanna.png)

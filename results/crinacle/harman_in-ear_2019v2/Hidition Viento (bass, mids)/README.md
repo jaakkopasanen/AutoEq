@@ -2,39 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-In case of using parametric equalizer, apply preamp of **-5.2dB** and build filters manually
-with these parameters. The first 5 filters can be used independently.
-When using independent subset of filters, apply preamp of **-5.3 dB**.
+You can use filters 1-5 or 1-10. Apply preamp of -5.0 dB or -5.1 dB, respectively.
 
-| Type    | Fc       |    Q | Gain     |
-|:--------|:---------|:-----|:---------|
-| Peaking | 209 Hz   | 1.78 | 1.0 dB   |
-| Peaking | 233 Hz   | 0.79 | -4.0 dB  |
-| Peaking | 3847 Hz  | 1.63 | 4.4 dB   |
-| Peaking | 5343 Hz  | 2.68 | 2.8 dB   |
-| Peaking | 9386 Hz  | 3.26 | 3.1 dB   |
-| Peaking | 959 Hz   | 4.46 | 1.7 dB   |
-| Peaking | 2285 Hz  | 5.92 | 0.8 dB   |
-| Peaking | 8107 Hz  | 1.79 | 0.5 dB   |
-| Peaking | 11728 Hz | 1.45 | 3.1 dB   |
-| Peaking | 19713 Hz | 0.4  | -12.8 dB |
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |        -0.4 |
+|   2 | Peaking   |       255 | 0.61 |        -3.1 |
+|   3 | Peaking   |       962 | 2.73 |         2.2 |
+|   4 | Peaking   |      4529 | 1.23 |         4.9 |
+|   5 | Peaking   |      9396 | 3.27 |         2.2 |
+|   6 | Peaking   |      2245 | 4.53 |         0.5 |
+|   7 | Peaking   |      5613 | 5.97 |         1.3 |
+|   8 | Peaking   |      6736 | 6    |        -1.8 |
+|   9 | Peaking   |      9263 | 1.97 |         2.4 |
+|  10 | HighShelf |     10000 | 0.7  |        -5.3 |
 
 ### Fixed Band EQs
-In case of using fixed band (also called graphic) equalizer, apply preamp of **-5.5dB**
-(if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.9 dB** (if available) and set gains manually with these parameters.
 
-| Type    | Fc       |    Q | Gain    |
-|:--------|:---------|:-----|:--------|
-| Peaking | 31 Hz    | 1.41 | -0.3 dB |
-| Peaking | 62 Hz    | 1.41 | 0.1 dB  |
-| Peaking | 125 Hz   | 1.41 | -1.3 dB |
-| Peaking | 250 Hz   | 1.41 | -3.0 dB |
-| Peaking | 500 Hz   | 1.41 | -1.6 dB |
-| Peaking | 1000 Hz  | 1.41 | 1.1 dB  |
-| Peaking | 2000 Hz  | 1.41 | -0.5 dB |
-| Peaking | 4000 Hz  | 1.41 | 5.0 dB  |
-| Peaking | 8000 Hz  | 1.41 | 3.1 dB  |
-| Peaking | 16000 Hz | 1.41 | -8.4 dB |
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |        -0.5 |
+|   2 | Peaking |        62 | 1.41 |        -0.4 |
+|   3 | Peaking |       125 | 1.41 |        -1.3 |
+|   4 | Peaking |       250 | 1.41 |        -3   |
+|   5 | Peaking |       500 | 1.41 |        -1.6 |
+|   6 | Peaking |      1000 | 1.41 |         1.6 |
+|   7 | Peaking |      2000 | 1.41 |        -0.2 |
+|   8 | Peaking |      4000 | 1.41 |         4.5 |
+|   9 | Peaking |      8000 | 1.41 |         2.4 |
+|  10 | Peaking |     16000 | 1.41 |        -9.3 |
 
 ### Graphs
 ![](./Hidition%20Viento%20(bass,%20mids).png)
