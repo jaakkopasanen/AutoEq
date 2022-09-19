@@ -282,7 +282,7 @@ instead of Open SSL or you might run into problems when installing project depen
 - You may need to install [libsndfile](http://www.mega-nerd.com/libsndfile/) if you're having problems with `soundfile`
 when installing `requirements.txt`.
 - On Linux you may need to install Python dev packages
-```bash
+```shell
 sudo apt install python3-dev python3-pip python3-venv
 ```
 - On Linux you may need to install [pip](https://pip.pypa.io/en/stable/installing/)
@@ -290,43 +290,43 @@ sudo apt install python3-dev python3-pip python3-venv
 [Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 - Open a terminal / command prompt. On Windows, search `cmd` in the start menu.
 - Clone AutoEq
-```bash
+```shell
 git clone https://github.com/jaakkopasanen/AutoEq.git
 ```
 - Go to AutoEq location
-```bash
+```shell
 cd AutoEq
 ```
 - Check Python version. You should see Python 3.10.x printed out. If you see for example 3.11.x, you need to install Python **3.10**.
-```bash
+```shell
 python --version
 ```
 - Create a python virtual environment
-```bash
+```shell
 python -m venv venv
 ```
 - Activate virtualenv
-```bash
+```shell
 # On Windows
 venv\Scripts\activate.bat
 # On Linux and Mac
 . venv/bin/activate
 ```
 - Update pip
-```bash
+```shell
 python -m pip install -U pip
 ```
 - Install required packages
-```bash
+```shell
 python -m pip install -U -r requirements.txt
 ```
 - Verify installation. If everything went well, you'll see the list of command line parameters AutoEq accepts.
-```bash
+```shell
 python autoeq.py --help
 ```
 
 When coming back at a later time you'll only need to activate virtual environment again
-```bash
+```shell
 # On Windows
 cd AutoEq
 venv\Scripts\activate.bat
@@ -340,22 +340,22 @@ To learn more about virtual environments, read [Python' venv documentation](http
 #### Updating
 AutoEq is in active development and gets new measurements, results and features all the time. You can get the latest
 version from git
-```bash
+```shell
 git pull
 ```
 
 Dependencies may change from time to time, you can update to the latest with
-```bash
+```shell
 python -m pip install -U -r requirements.txt
 ```
 
 ### Command Line Arguments
 ```
-usage: autoeq.py [-h] --input_dir INPUT_DIR [--output_dir OUTPUT_DIR] [--standardize_input] [--new_only] [--compensation COMPENSATION] [--equalize] [--parametric_eq] [--fixed_band_eq] [--rockbox] [--fc FC] [--q Q]
-                 [--ten_band_eq] [--max_filters MAX_FILTERS] [--convolution_eq] [--fs FS] [--bit_depth BIT_DEPTH] [--phase PHASE] [--f_res F_RES] [--bass_boost BASS_BOOST] [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT]
-                 [--sound_signature SOUND_SIGNATURE] [--max_gain MAX_GAIN] [--treble_f_lower TREBLE_F_LOWER] [--treble_f_upper TREBLE_F_UPPER] [--treble_gain_k TREBLE_GAIN_K] [--show_plot] [--thread_count]
+usage: autoeq.py [-h] --input_dir INPUT_DIR [--output_dir OUTPUT_DIR] [--standardize_input] [--new_only] [--compensation COMPENSATION] [--equalize] [--parametric_eq] [--fixed_band_eq] [--rockbox] [--ten_band_eq] [--parametric_eq_config PARAMETRIC_EQ_CONFIG] [--fixed_band_eq_config FIXED_BAND_EQ_CONFIG] [--convolution_eq]
+                 [--fs FS] [--bit_depth BIT_DEPTH] [--phase PHASE] [--f_res F_RES] [--bass_boost BASS_BOOST] [--iem_bass_boost IEM_BASS_BOOST] [--tilt TILT] [--sound_signature SOUND_SIGNATURE] [--max_gain MAX_GAIN] [--window_size WINDOW_SIZE] [--treble_window_size TREBLE_WINDOW_SIZE] [--treble_f_lower TREBLE_F_LOWER]
+                 [--treble_f_upper TREBLE_F_UPPER] [--treble_gain_k TREBLE_GAIN_K] [--show_plot] [--thread_count THREAD_COUNT]
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   --input_dir INPUT_DIR
                         Path to input data directory. Will look for CSV files in the data directory and recursively in sub-directories.
@@ -364,41 +364,44 @@ optional arguments:
   --standardize_input   Overwrite input data in standardized sampling and bias?
   --new_only            Only process input files which don't have results in output directory.
   --compensation COMPENSATION
-                        File path to CSV containing compensation (target) curve. Compensation is necessary when equalizing because all input data is raw microphone data. See "compensation", "innerfidelity/resources" and
-                        "headphonecom/resources".
+                        File path to CSV containing compensation (target) curve. Compensation is necessary when equalizing because all input data is raw microphone data. See "compensation", "innerfidelity/resources" and "headphonecom/resources".
   --equalize            Will run equalization if this parameter exists, no value needed.
   --parametric_eq       Will produce parametric eq settings if this parameter exists, no value needed.
   --fixed_band_eq       Will produce fixed band eq settings if this parameter exists, no value needed.
   --rockbox             Will produce a Rockbox .cfg file with 10 band eq settings if this parameter exists,no value needed.
-  --fc FC               Comma separated list of center frequencies for fixed band eq.
-  --q Q                 Comma separated list of Q values for fixed band eq. If only one value is passed it is used for all bands. Q value can be calculated from bandwidth in N octaves by Q = 2^(N/2)/(2^N-1).
   --ten_band_eq         Shortcut parameter for activating standard ten band eq optimization.
-  --max_filters MAX_FILTERS
-                        Maximum number of filters for parametric EQ. Multiple cumulative optimization runs can be done by giving multiple filter counts separated by "+". "5+5" would create 10 filters where the first 5 are
-                        usable independently from the rest 5 and the last 5 can only be used with the first 5. This allows to have muliple configurations for equalizers with different number of bands available. Not limited
-                        by default.
+  --parametric_eq_config PARAMETRIC_EQ_CONFIG
+                        Name of parametric equalizer configuration or a path to a configuration file. Available named configurations are "10_PEAKING" for 10 peaking filters, "8_PEAKING_WITH_SHELVES" for 8 peaking filters and a low shelf at 105 Hz for bass adjustment and a high shelf at 10 kHz for treble adjustment,
+                        "4_PEAKING_WITH_LOW_SHELF" for 4 peaking filters and a low shelf at 105 Hz for bass adjustment, "4_PEAKING_WITH_HIGH_SHELF" for 4 peaking filters and a high shelf at 10 kHz for treble adjustments. You can give multiple named configurations by separating the names with commas and filter sets will be
+                        built on top of each other. When the value is a file path, the file will be read and used as a configuration. The file needs to be a YAML file with "filters" field as a list of filter configurations, each of which can define "fc", "min_fc", "max_fc", "q", "min_q", "max_q", "gain", "min_gain",
+                        "max_gain" and "type" fields. When the fc, q or gain value is given, the parameter won't be optimized for the filter. "type" needs to be either "LOW_SHELF", "PEAKING" or "HIGH_SHELF". Also "filter_defaults" field is supported on the top level and it can have the same fields as the filters do. All
+                        fields missing from the filters will be read from "filter_defaults". Defaults to "4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF". Optimizer behavior can be adjusted by defining "optimizer" field which has fields "min_f" and "max_f" for lower and upper bounds of the optimization range, "max_time"
+                        for maximum optimization duration in seconds, "target_loss" for RMSE target level upon reaching which the optimization is ended, "min_change_rate" for minimum rate of improvement in db/s and "min_std" for minimum standard deviation of the last few loss values. "min_change_rate" and "min_std" end the
+                        optimization when further time spent optimizing can't be expected to improve the results dramatically. See peq.yaml for an example.
+  --fixed_band_eq_config FIXED_BAND_EQ_CONFIG
+                        Path to fixed band equalizer configuration. The file format is the same YAML as for parametric equalizer.
   --convolution_eq      Will produce impulse response for convolution equalizers if this parameter exists, no value needed.
-  --fs FS               Sampling frequency in Hertz for impulse response and parametric eq filters. Single value or multiple values separated by commas eg 44100,48000. When multiple values are given only the first one will
-                        be used for parametric eq. Defaults to 44100.
+  --fs FS               Sampling frequency in Hertz for impulse response and parametric eq filters. Single value or multiple values separated by commas eg 44100,48000. When multiple values are given only the first one will be used for parametric eq. Defaults to 44100.
   --bit_depth BIT_DEPTH
                         Number of bits for every sample in impulse response. Defaults to 16.
   --phase PHASE         Impulse response phase characteristic. "minimum", "linear" or "both". Defaults to "minimum"
   --f_res F_RES         Frequency resolution for impulse responses. If this is 20 then impulse response frequency domain will be sampled every 20 Hz. Filter length for impulse responses will be fs/f_res. Defaults to 10.
   --bass_boost BASS_BOOST
-                        Bass boost shelf. Sub-bass frequencies will be boosted by this amount. Can be either a single value for a gain in dB or a comma separated list of three values for parameters of a low shelf filter,
-                        where the first is gain in dB, second is center frequency (Fc) in Hz and the last is quality (Q). When only a single value (gain) is given, default values for Fc and Q are used which are 105.0 Hz and
-                        0.71, respectively. For example "--bass_boost=6" or "--bass_boost=9.5,150,0.69".
+                        Bass boost shelf. Sub-bass frequencies will be boosted by this amount. Can be either a single value for a gain in dB or a comma separated list of three values for parameters of a low shelf filter, where the first is gain in dB, second is center frequency (Fc) in Hz and the last is quality (Q). When
+                        only a single value (gain) is given, default values for Fc and Q are used which are 105.0 Hz and 0.71, respectively. For example "--bass_boost=6" or "--bass_boost=9.5,150,0.69".
   --iem_bass_boost IEM_BASS_BOOST
                         iem_bass_boost argument has been removed, use "--bass_boost" instead!
-  --tilt TILT           Target tilt in dB/octave. Positive value (upwards slope) will result in brighter frequency response and negative value (downwards slope) will result in darker frequency response. 1 dB/octave will
-                        produce nearly 10 dB difference in desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost and both will affect the bass gain.
+  --tilt TILT           Target tilt in dB/octave. Positive value (upwards slope) will result in brighter frequency response and negative value (downwards slope) will result in darker frequency response. 1 dB/octave will produce nearly 10 dB difference in desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost
+                        and both will affect the bass gain.
   --sound_signature SOUND_SIGNATURE
-                        File path to a sound signature CSV file. Sound signature is added to the compensation curve. Error data will be used as the sound signature target if the CSV file contains an error column and
-                        otherwise the raw column will be used. This means there are two different options for using sound signature: 1st is pointing it to a result CSV file of a previous run and the 2nd is to create a CSV
-                        file with just frequency and raw columns by hand (or other means). The Sound signature graph will be interpolated so any number of point at any frequencies will do, making it easy to create simple
-                        signatures with as little as two or three points.
-  --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain allows to equalize deeper dips in frequency response but will limit output volume if no analog gain is available because positive gain requires
-                        negative digital preamp equal to maximum positive gain. Defaults to 6.0.
+                        File path to a sound signature CSV file. Sound signature is added to the compensation curve. Error data will be used as the sound signature target if the CSV file contains an error column and otherwise the raw column will be used. This means there are two different options for using sound signature:
+                        1st is pointing it to a result CSV file of a previous run and the 2nd is to create a CSV file with just frequency and raw columns by hand (or other means). The Sound signature graph will be interpolated so any number of point at any frequencies will do, making it easy to create simple signatures with
+                        as little as two or three points.
+  --max_gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain allows to equalize deeper dips in frequency response but will limit output volume if no analog gain is available because positive gain requires negative digital preamp equal to maximum positive gain. Defaults to 6.0.
+  --window_size WINDOW_SIZE
+                        Smoothing window size in octaves.
+  --treble_window_size TREBLE_WINDOW_SIZE
+                        Smoothing window size in octaves in the treble region.
   --treble_f_lower TREBLE_F_LOWER
                         Lower bound for transition region between normal and treble frequencies. Treble frequencies can have different max gain and gain K. Defaults to 6000.0.
   --treble_f_upper TREBLE_F_UPPER
@@ -407,8 +410,7 @@ optional arguments:
                         Coefficient for treble gain, affects both positive and negative gain. Useful for disabling or reducing equalization power in treble region. Defaults to 1.0.
   --show_plot           Plot will be shown if this parameter exists, no value needed.
   --thread_count THREAD_COUNT
-                        Amount of threads to use for processing results. If set to "max" all the threads available will be used. Using more threads result in higher memory usage.
-                        Defaults to 1.
+                        Amount of threads to use for processing results. If set to "max" all the threads available will be used. Using more threads result in higher memory usage. Defaults to 1.
 ```
 
 
@@ -416,28 +418,39 @@ optional arguments:
 
 #### Reproducing Results
 Reproducing pre-computed results for oratory1990 measured on-ear headphones:
-```bash
-python autoeq.py --input_dir="measurements/oratory1990/data/onear" --output_dir="my_results/oratory1990/harman_over-ear_2018" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0 --convolution_eq --fs=44100,48000
+```shell
+python autoeq.py --input_dir="measurements/oratory1990/data/onear" --output_dir="my_results/oratory1990/harman_over-ear_2018" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --parametric_eq --parametric_eq_config=8_PEAKING_WITH_SHELVES --ten_band_eq --bass_boost=4.0 --convolution_eq --fs=44100,48000
 ```
 
 Reproducing pre-computed results for Rtings measured IEMs:
-```bash
-python autoeq.py --input_dir="measurements/rtings/data/inear" --output_dir="my_results/rtings/avg" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=6.0 --convolution_eq --fs=44100,48000
+```shell
+python autoeq.py --input_dir="measurements/rtings/data/inear" --output_dir="my_results/rtings/avg" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --equalize --parametric_eq --parametric_eq_config=8_PEAKING_WITH_SHELVES --ten_band_eq --bass_boost=6.0 --convolution_eq --fs=44100,48000
 ```
 
 All parameters used for pre-computed results can be found in the `results/update.py` script.
 
 #### Equalizing Individual Headphones
 Equalizing Sennheiser HD 650 and saving results to `my_results/HD650`:
-```bash
+```shell
 python autoeq.py --input_dir="measurements/innerfidelity/data/onear/Sennheiser HD 650" --output_dir="my_results/HD650" --compensation="measurements/innerfidelity/resources/innerfidelity_harman_over-ear_2018_wo_bass.csv" --equalize --bass_boost=4 --show_plot --convolution_eq --fs=44100,48000
 ```
 
 #### Fixed Band Equalizers
-Filter parameters for fixed band equalizers can be adjusted with `--q` and `--fc` parameters. Producing fixed band
-equalizer settings for Sony WH-1000XM3 app:
-```bash
-python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sony WH-1000XM3" --output_dir="my_results/Sony WH-1000XM3 (app)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --bass_boost=4.0 --fixed_band_eq --fc=400,1000,2500,6300,16000 --q=1.05
+Fixed band equalizer settings can be produced the same way as parametric eq. Create `fbeq.yaml` with contents
+```yaml
+filter_defaults:
+  type: PEAKING
+  q: 1.05
+filters:
+  - fc: 400
+  - fc: 1000
+  - fc: 2500
+  - fc: 6300
+  - fc: 16000
+```
+to optimize for Sony WH-1000XM3 app.
+```shell
+python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sony WH-1000XM3" --output_dir="my_results/Sony WH-1000XM3 (app)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --equalize --bass_boost=4.0 --fixed_band_eq --fixed_band_eq_config=fbeq.yaml
 ```
 
 #### Using Sound Signatures
@@ -447,21 +460,21 @@ deviate from the neutral target or making one headphone sound like another.
 Equalizing Sennheiser HD 800 to sound like Sennheiser HD 650 using pre-computed results. Both have been measured by
 oratory1990 so we'll use those measurements. Pre-computed results include 4dB of bass boost for over-ear headphones and
 therefore we need to apply a bass boost of 4dB here as well.
-```bash
+```shell
 python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (HD 650)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Sennheiser HD 650/Sennheiser HD 650.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
 ```
 
 Equalizing Massdrop x Sennheiser HD 800 to sound like AKG K701. There is no K701 measurement made by oratory1990 so
 we'll use Innerfidelity's measurement for the sound signature. The list of recommended results always points to best
 measurement so you can check there which one to use (measurement system can be found in the URL).
-```bash
+```shell
 python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (K701)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/innerfidelity/innerfidelity_harman_over-ear_2018/AKG K701/AKG K701.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
 ```
 
 Equalizing HiFiMAN HE400S to sound like Massdrop x Meze 99 Noir. HE400S is measured only by Innerfidelity so we'll point
 compensation file pointing to Innerfidelity's calibrated Harman target. Meze 99 Noir has massive natural bass boost and
 to capture that we need to relax max gain to +12dB.
-```bash
+```shell
 python autoeq.py --input_dir="measurements/innerfidelity/data/onear/HiFiMAN HE400S" --output_dir="my_results/HE400S (99 Noir)" --compensation="measurements/innerfidelity/resources/innerfidelity_harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Meze 99 Noir/Meze 99 Noir.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --max_gain=8
 ```
 
@@ -477,7 +490,7 @@ frequency,raw
 Then use it by providing the path to `--sound_signature` parameter. We'll set bass boost to 0dB because the sound
 signature already has a significant bass boost. Of course it's possible to add bass boost on top of the sound signature
 file if you want even more bass.
-```bash
+```shell
 python autoeq.py --input_dir="measurements/rtings/data/onear/Audeze Mobius" --output_dir="my_results/Audeze Mobius (V-signature)" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --sound_signature="my_data/v.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0
 ```
 
@@ -619,39 +632,40 @@ corners whenever max gain clips the curve.
 
 
 ## Parametric Equalizer Optimization
-AutoEQ has an optimizer to fit several peaking filters to the desired equalization curve. Optimization is part heuristic
-initialization and part mathematical optimization.
+AutoEQ has an optimizer to fit several filters to the desired equalization curve. Optimization is an iterative process
+where the filter parameters which provide the best results are searched until optimization finishes or any of the early
+stopping conditions are met.
 
-In the initialization phase peaks are detected from the target curve and a peaking filter is created to match the peak's
-height (gain) and location (frequency). This way, the optimizer finds a suitable number of filters to optimize. If the bass
-region has no peaks and therefore is missing filters entirely, a maximum of two filters will be added at 20 Hz and 60 Hz.
+The optimizer can be configured quite flexibly. The filter type (peaking, low shelf or high shelf) and minimum and
+maximum values for center frequency (fc), quality (q) and gain can be set as well as disable optimization for any of
+these in favor of fixed value. The optimizer itself can be configured to stop the process early when the changes being
+made are too small, a target error level has been reached or maximum amount of time has been used.
 
-A way to limit the number of filters used is provided with `max_filters` parameter. If there are too many filters after
-initialization, some filters are removed. First filters with small gain (< 0.2 dB and < 0.33 dB) are removed. If there are too
-many filters after reduction of small gain filters, nearby filters are attempted to merge. Merged filter will be in the
-mid point of the merged filters. If merging filters did not reduce the count enough, smallest filters are removed until
-count matches maximum allowed number of filters. Image below shows initialization for 1More MK801 headphone. Red dots
-are the peaks of filters before reduction and green dots are the peaks after reduction.
+[peq.yaml](./peq.yaml) has an example configuration. Feel free to adjust the file to your needs.
 
-![filter-initialization](https://i.imgur.com/UlMb2jK.png)
+Here's an animation of what happens during the optimization.
 
-*Equalization target and initial peak filters for optimization before and after filter number limitation*
+![optimization-animation](https://i.imgur.com/3breF6l.gif)
 
-After suitable number of filters have been achieved and filter center frequencies and gains have been set to appropriate
-values a mathematical optimization is performed to fit sum frequency response of all filters to match as close as
-possible the desired curve. Optimization is based on gradient descent and will attempt to minimize mean
-squared error between the sum frequency response of the filters and the target. When improvements in the error are
-getting too small to make a practical difference the optimization is stopped. Animation below shows progress from the
-initialization to a close finished curve.
+*Optimization of parametric eq filters (click to play again)*
 
-![optimization-animation](https://i.imgur.com/pM7JYAb.gif)
+Technically speaking the optimization is an error minimization process. The error is the root mean squared difference
+between the equalization target and the frequency response from the current set of filter parameters. The optimizer
+adjusts the filter parameters multiple times on each iteration to figure out in which direction each should be adjusted
+to decrease the error. In addition to the RMSE between target and current equalizer frequency response, the undesired
+combination of filter parameters is penalized. Currently that means adding more error if the filter has positive
+gain and too steep slope (as this can cause audible ringing). The additional error (regularization) ensures the
+optimizer doesn't produce these kinds of filter parameter combinations.
 
-*Optimization of parametric eq filters (click to play)*
-
+The > 10 kHz frequency range is treated as a single average level because research indicates that the perceived sound
+quality is not sensitive to accurately following a curve above 10 kHz but rather a total energy in the range.
 
 ## Contact
-[Issues](https://github.com/jaakkopasanen/AutoEq/issues) are the way to go if you are experiencing problems, have
-ideas or if there is something unclear about how things are done or documented.
+[Issues](https://github.com/jaakkopasanen/AutoEq/issues) are the way to go if you are experiencing problems or have
+ideas or feature requests. Issues are not the correct channel for headphone requests because this project sources the
+measurements from other databases and a headphone missing from AutoEq means it has not been measured by any of the
+supported sources.
 
-You can find me in [Reddit](https://www.reddit.com/user/jaakkopasanen) and
+You can find me in [Reddit](https://www.reddit.com/user/jaakkopasanen),
+[Audio Science Review](https://www.audiosciencereview.com/forum/index.php?members/jaakkopasanen.17838/) and
 [Head-fi](https://www.head-fi.org/members/jaakkopasanen.491235/) if you just want to say hello.
