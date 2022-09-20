@@ -5,12 +5,11 @@ import sys
 import shutil
 from glob import glob
 import argparse
+sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.crinacle.crinacle_crawler import CrinacleCrawler
 from measurements.oratory1990.oratory1990_crawler import Oratory1990Crawler
 from measurements.referenceaudioanalyzer.reference_audio_analyzer_crawler import ReferenceAudioAnalyzerCrawler
 from measurements.rtings.rtings_crawler import RtingsCrawler
-
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from constants import ROOT_DIR
 
 

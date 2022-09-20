@@ -91,7 +91,7 @@
 - [Audio-Technica ATH-M60x](./harman_over-ear_2018/Audio-Technica%20ATH-M60x)
 - [Audio-Technica ATH-MSR7b](./harman_over-ear_2018/Audio-Technica%20ATH-MSR7b)
 - [Audio-Technica ATH-R70x](./harman_over-ear_2018/Audio-Technica%20ATH-R70x)
-- [AudioQuest Nighthawk (Brainwavz HM5 hybrid Earpads)](./harman_over-ear_2018/AudioQuest%20Nighthawk%20(Brainwavz%20HM5%20hybrid%20Earpads))
+- [AudioQuest NightHawk (Brainwavz HM5 hybrid earpads)](./harman_over-ear_2018/AudioQuest%20NightHawk%20(Brainwavz%20HM5%20hybrid%20earpads))
 - [AudioQuest NightHawk (Shure SRH1540 alcantara earpads)](./harman_over-ear_2018/AudioQuest%20NightHawk%20(Shure%20SRH1540%20alcantara%20earpads))
 - [AudioQuest NightHawk](./harman_over-ear_2018/AudioQuest%20NightHawk)
 - [AudioQuest NightOwl](./harman_over-ear_2018/AudioQuest%20NightOwl)

@@ -263,7 +263,7 @@ def write_hesuvi_zip():
                 continue
             manufacturer, _ = manufacturers.find(name)
             if manufacturer is None:
-                print(f'Manufacturer could not be found for {name}')
+                print(f'Manufacturer could not be found for {name}. Will skip in hesuvi.zip.')
                 continue
             name = manufacturers.model(name)
             arcname = f'eq/{manufacturer}/{name}.txt'
