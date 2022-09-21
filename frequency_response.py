@@ -444,9 +444,9 @@ class FrequencyResponse:
         # Add parametric EQ settings
         if parametric_eq_peqs is not None:
             s += '### Parametric EQs\n'
+            f = self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP)
             if len(parametric_eq_peqs) > 1:
-                compound = PEQ(
-                    self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP), parametric_eq_peqs[0].fs)
+                compound = PEQ(f, parametric_eq_peqs[0].fs)
                 n = 0
                 filter_ranges = ''
                 preamps = ''
@@ -466,7 +466,7 @@ class FrequencyResponse:
                     n += len(peq.filters)
                 s += f'You can use filters {filter_ranges}. Apply preamp of {preamps}, respectively.\n\n'
             else:
-                compound = PEQ(self.frequency.copy(), parametric_eq_peqs[0].fs, [])
+                compound = PEQ(f, parametric_eq_peqs[0].fs, [])
                 for peq in parametric_eq_peqs:
                     peq = deepcopy(peq)
                     peq.sort_filters()
