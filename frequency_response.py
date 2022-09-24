@@ -167,11 +167,11 @@ class FrequencyResponse:
         s = f.read()
 
         # Regex for AutoEq style CSV
-        header_pattern = r'frequency(,(raw|smoothed|error|error_smoothed|equalization|parametric_eq|fixed_band_eq|equalized_raw|equalized_smoothed|target))+'
-        float_pattern = r'-?\d+(\.\d+)?'
+        header_pattern = r'frequency(?:,(?:raw|smoothed|error|error_smoothed|equalization|parametric_eq|fixed_band_eq|equalized_raw|equalized_smoothed|target))+'
+        float_pattern = r'-?\d+(?:\.\d+)?'
         data_2_pattern = r'{fl}[ ,;:\t]+{fl}?'.format(fl=float_pattern)
-        data_n_pattern = r'{fl}([ ,;:\t]+{fl})+?'.format(fl=float_pattern)
-        autoeq_pattern = r'^{header}(\n{data})+\n*$'.format(header=header_pattern, data=data_n_pattern)
+        data_n_pattern = r'{fl}(?:[ ,;:\t]+{fl})+?'.format(fl=float_pattern)
+        autoeq_pattern = r'^{header}(?:\n{data})+\n*$'.format(header=header_pattern, data=data_n_pattern)
 
         if re.match(autoeq_pattern, s):
             # Known AutoEq CSV format
