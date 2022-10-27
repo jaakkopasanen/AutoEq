@@ -461,21 +461,21 @@ Equalizing Sennheiser HD 800 to sound like Sennheiser HD 650 using pre-computed 
 oratory1990 so we'll use those measurements. Pre-computed results include 4dB of bass boost for over-ear headphones and
 therefore we need to apply a bass boost of 4dB here as well.
 ```shell
-python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (HD 650)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Sennheiser HD 650/Sennheiser HD 650.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
+python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (HD 650)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Sennheiser HD 650/Sennheiser HD 650.csv" --equalize --parametric_eq --parametric_eq_config=8_PEAKING_WITH_SHELVES --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
 ```
 
 Equalizing Massdrop x Sennheiser HD 800 to sound like AKG K701. There is no K701 measurement made by oratory1990 so
 we'll use Innerfidelity's measurement for the sound signature. The list of recommended results always points to best
 measurement so you can check there which one to use (measurement system can be found in the URL).
 ```shell
-python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (K701)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/innerfidelity/innerfidelity_harman_over-ear_2018/AKG K701/AKG K701.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
+python autoeq.py --input_dir="measurements/oratory1990/data/onear/Sennheiser HD 800" --output_dir="my_results/Sennheiser HD 800 (K701)" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --sound_signature="results/innerfidelity/innerfidelity_harman_over-ear_2018/AKG K701/AKG K701.csv" --equalize --parametric_eq --parametric_eq_config=8_PEAKING_WITH_SHELVES --ten_band_eq --bass_boost=4 --convolution_eq --fs=44100,48000
 ```
 
 Equalizing HiFiMAN HE400S to sound like Massdrop x Meze 99 Noir. HE400S is measured only by Innerfidelity so we'll point
 compensation file pointing to Innerfidelity's calibrated Harman target. Meze 99 Noir has massive natural bass boost and
 to capture that we need to relax max gain to +12dB.
 ```shell
-python autoeq.py --input_dir="measurements/innerfidelity/data/onear/HiFiMAN HE400S" --output_dir="my_results/HE400S (99 Noir)" --compensation="measurements/innerfidelity/resources/innerfidelity_harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Meze 99 Noir/Meze 99 Noir.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4 --max_gain=8
+python autoeq.py --input_dir="measurements/innerfidelity/data/onear/HiFiMAN HE400S" --output_dir="my_results/HE400S (99 Noir)" --compensation="measurements/innerfidelity/resources/innerfidelity_harman_over-ear_2018_wo_bass.csv" --sound_signature="results/oratory1990/harman_over-ear_2018/Meze 99 Noir/Meze 99 Noir.csv" --equalize --parametric_eq --parametric_eq_config=8_PEAKING_WITH_SHELVES --ten_band_eq --bass_boost=4 --max_gain=8
 ```
 
 Applying V-shaped sound signature to Audeze Mobius. First step is to create the sound signature file. Save this to
@@ -491,7 +491,7 @@ Then use it by providing the path to `--sound_signature` parameter. We'll set ba
 signature already has a significant bass boost. Of course it's possible to add bass boost on top of the sound signature
 file if you want even more bass.
 ```shell
-python autoeq.py --input_dir="measurements/rtings/data/onear/Audeze Mobius" --output_dir="my_results/Audeze Mobius (V-signature)" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --sound_signature="my_data/v.csv" --equalize --parametric_eq --max_filters=5+5 --ten_band_eq --bass_boost=4.0
+python autoeq.py --input_dir="measurements/rtings/data/onear/Audeze Mobius" --output_dir="my_results/Audeze Mobius (V-signature)" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --sound_signature="my_data/v.csv" --equalize --parametric_eq --parametric_eq_config=8_PEAKING_WITH_SHELVES --ten_band_eq --bass_boost=4.0
 ```
 
 ## Results
