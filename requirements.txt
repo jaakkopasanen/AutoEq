@@ -1,9 +1,0 @@
-Pillow~=9.2.0
-matplotlib~=3.5.2
-pandas~=1.4.3
-scipy~=1.8.1
-numpy~=1.23.1
-tabulate~=0.8.10
-soundfile~=0.10.2
-pyyaml~=6.0
-tqdm~=4.64.0

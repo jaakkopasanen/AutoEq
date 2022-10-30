@@ -4,16 +4,15 @@ import os
 from glob import glob
 import multiprocessing
 import soundfile as sf
-from time import time
 import numpy as np
 import tqdm
 import yaml
 
-from .constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
+from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, \
     DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, \
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, PEQ_CONFIGS
-from .frequency_response import FrequencyResponse
+from autoeq.frequency_response import FrequencyResponse
 
 
 def batch_processing(input_dir=None, output_dir=None, new_only=False, standardize_input=False, compensation=None,

@@ -326,7 +326,7 @@ python -m pip install -U pip
 ```
 - Install required packages
 ```shell
-python -m pip install -U -r requirements.txt
+python -m pip install -U -e .
 ```
 - Verify installation. If everything went well, you'll see the list of command line parameters AutoEq accepts.
 ```shell
