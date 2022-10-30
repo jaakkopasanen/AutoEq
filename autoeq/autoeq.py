@@ -70,10 +70,17 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
             parametric_eq_config = [
                 PEQ_CONFIGS[config] if type(config) is str else config for config in parametric_eq_config]
 
-    if fixed_band_eq_config is not None and os.path.isfile(fixed_band_eq_config):
-        # Parametric EQ config is a file path
-        with open(fixed_band_eq_config) as fh:
-            fixed_band_eq_config = yaml.safe_load(fh)
+    if fixed_band_eq_config is not None:
+        if os.path.isfile(fixed_band_eq_config):
+            # Parametric EQ config is a file path
+            with open(fixed_band_eq_config) as fh:
+                fixed_band_eq_config = yaml.safe_load(fh)
+        else:
+            if fixed_band_eq_config not in PEQ_CONFIGS:
+                raise ValueError(
+                    f'Unrecognized fixed band eq config "{fixed_band_eq_config}".'
+                    f'If this was meant to be a file, the file does not exist.')
+            fixed_band_eq_config = PEQ_CONFIGS[fixed_band_eq_config]
 
     # Prepare list of arguments for all the function calls to generate results.
     n_total = 0
