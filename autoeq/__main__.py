@@ -13,7 +13,7 @@ def cli_args():
     arg_parser.add_argument('--input_dir', type=str, required=True,
                             help='Path to input data directory. Will look for CSV files in the data directory and '
                                  'recursively in sub-directories.')
-    arg_parser.add_argument('--output_dir', type=str, default=argparse.SUPPRESS,
+    arg_parser.add_argument('--output_dir', type=str, required=True,
                             help='Path to results directory. Will keep the same relative paths for files found '
                                  'in input_dir.')
     arg_parser.add_argument('--standardize_input', action='store_true',
@@ -130,8 +130,6 @@ def cli_args():
                             help='Coefficient for treble gain, affects both positive and negative gain. Useful for '
                                  'disabling or reducing equalization power in treble region. Defaults to '
                                  f'{DEFAULT_TREBLE_GAIN_K}.')
-    arg_parser.add_argument('--show_plot', action='store_true',
-                            help='Plot will be shown if this parameter exists, no value needed.')
     arg_parser.add_argument('--thread_count', default=1,
                             help='Amount of threads to use for processing results. If set to "max" all the threads '
                                  'available will be used. Using more threads result in higher memory usage. '

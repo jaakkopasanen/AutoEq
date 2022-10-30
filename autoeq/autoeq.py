@@ -17,17 +17,17 @@ from .frequency_response import FrequencyResponse
 
 
 def batch_processing(input_dir=None, output_dir=None, new_only=False, standardize_input=False, compensation=None,
-                     equalize=False, parametric_eq=False, fixed_band_eq=False, rockbox=False,
+                     parametric_eq=False, fixed_band_eq=False, rockbox=False,
                      ten_band_eq=False, parametric_eq_config=None, fixed_band_eq_config=None, convolution_eq=False,
                      fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
                      bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
                      bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=None, sound_signature=None, max_gain=DEFAULT_MAX_GAIN,
                      window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False, thread_count=1):
+                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, thread_count=1):
     """Parses files in input directory and produces equalization results in output directory."""
-    if convolution_eq and not equalize:
-        raise ValueError('equalize must be True when convolution_eq is True.')
+    if not compensation and (parametric_eq or fixed_band_eq or rockbox or ten_band_eq or convolution_eq):
+        raise ValueError('Compensation must be specified when equalizing.')
 
     # Dir paths to absolute
     input_dir = os.path.abspath(input_dir)
@@ -88,9 +88,9 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
             file_paths.append((input_file_path, output_file_path))
             n_total += 1
             args = (input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q, bit_depth,
-                    compensation, convolution_eq, equalize, f_res, fixed_band_eq, fs, parametric_eq_config,
+                    compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
                     fixed_band_eq_config, max_gain, window_size, treble_window_size,
-                    parametric_eq, phase, rockbox, show_plot, sound_signature, standardize_input,
+                    parametric_eq, phase, rockbox, sound_signature, standardize_input,
                     ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k)
             args_list.append(args)
 
@@ -110,33 +110,35 @@ def process_file_wrapper(params):
 
 
 def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q, bit_depth,
-                 compensation, convolution_eq, equalize, f_res, fixed_band_eq, fs, parametric_eq_config,
+                 compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
                  fixed_band_eq_config, max_gain, window_size, treble_window_size, parametric_eq, phase, rockbox,
-                 show_plot, sound_signature, standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper,
+                 sound_signature, standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper,
                  treble_gain_k):
-    start_time = time()
     # Read data from input file
     fr = FrequencyResponse.read_from_csv(input_file_path)
 
+    # Copy relative path to output directory
+    output_dir_path, _ = os.path.split(output_file_path)
+    os.makedirs(output_dir_path, exist_ok=True)
+
     if standardize_input:
-        # Overwrite input data in standard sampling and bias
+        # Overwrite input data in standard sampling and zero bias
         fr.interpolate()
         fr.center()
         fr.write_to_csv(input_file_path)
 
     if ten_band_eq:
+        # Ten band eq is a shortcut for setting Fc and Q values to standard 10-band equalizer filters parameters
         fixed_band_eq = True
+        fixed_band_eq_config = PEQ_CONFIGS['10_BAND_GRAPHIC_EQ']
+
+    if rockbox and not ten_band_eq:
+        raise ValueError('Rockbox configuration requires ten-band eq')
 
     # Process and equalize
-    parametric_eq_peqs, fixed_band_eq_peq = fr.process(
+    fr.process(
         compensation=compensation,
         min_mean_error=True,
-        equalize=equalize,
-        parametric_eq=parametric_eq,
-        fixed_band_eq=fixed_band_eq,
-        ten_band_eq=ten_band_eq,
-        parametric_eq_config=parametric_eq_config,
-        fixed_band_eq_config=fixed_band_eq_config,
         bass_boost_gain=bass_boost_gain,
         bass_boost_fc=bass_boost_fc,
         bass_boost_q=bass_boost_q,
@@ -147,76 +149,50 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         treble_window_size=treble_window_size,
         treble_f_lower=treble_f_lower,
         treble_f_upper=treble_f_upper,
-        treble_gain_k=treble_gain_k,
-        fs=fs[0] if type(fs) == list else fs
+        treble_gain_k=treble_gain_k,)
+
+    fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True)
+
+    if parametric_eq:
+        parametric_peqs = fr.optimize_parametric_eq(parametric_eq_config, fs[0]) if parametric_eq else None
+        fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), parametric_peqs)
+    else:
+        parametric_peqs = None
+
+    if fixed_band_eq:
+        fixed_band_peq = fr.optimize_fixed_band_eq(fixed_band_eq_config, fs[0])[0] if fixed_band_eq else None
+        fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' FixedBandEQ.txt'), [fixed_band_peq])
+        if rockbox:
+            # Write 10 band eq to Rockbox .cfg file
+            fr.write_rockbox_10_band_fixed_eq(output_file_path.replace('.csv', ' RockboxEQ.cfg'), fixed_band_peq)
+    else:
+        fixed_band_peq = None
+
+    if convolution_eq:
+        for _fs in fs:
+            if phase in ['minimum', 'both']:  # Write minimum phase impulse response
+                minimum_phase_fir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
+                minimum_phase_ir = np.tile(minimum_phase_fir, (2, 1)).T
+                sf.write(
+                    output_file_path.replace('.csv', f' minimum phase {_fs}Hz.wav'), minimum_phase_ir, _fs, bit_depth)
+            if phase in ['linear', 'both']:  # Write linear phase impulse response
+                linear_phase_fir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
+                linear_phase_ir = np.tile(linear_phase_fir, (2, 1)).T
+                sf.write(
+                    output_file_path.replace('.csv', f' linear phase {_fs}Hz.wav'), linear_phase_ir, _fs, bit_depth)
+
+    fr.write_to_csv(output_file_path)
+
+    fr.plot_graph(
+        show=False,
+        close=True,
+        file_path=output_file_path.replace('.csv', '.png'),
     )
 
-    if output_file_path is not None:
-        # Copy relative path to output directory
-        output_dir_path, _ = os.path.split(output_file_path)
-        os.makedirs(output_dir_path, exist_ok=True)
-
-        if equalize:
-            # Write EqualizerAPO GraphicEq settings to file
-            fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True)
-            if parametric_eq:
-                # Write ParametricEq settings to file
-                fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), parametric_eq_peqs)
-
-            # Write fixed band eq
-            if fixed_band_eq or ten_band_eq:
-                # Write fixed band eq settings to file
-                fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' FixedBandEQ.txt'), fixed_band_eq_peq)
-
-            # Write 10 band fixed band eq to Rockbox .cfg file
-            if rockbox and ten_band_eq:
-                # Write fixed band eq settings to file
-                fr.write_rockbox_10_band_fixed_eq(
-                    output_file_path.replace('.csv', ' RockboxEQ.cfg'),
-                    fixed_band_eq_peq)
-
-            # Write impulse response as WAV
-            if convolution_eq:
-                for _fs in fs:
-                    if phase in ['linear', 'both']:
-                        # Write linear phase impulse response
-                        linear_phase_ir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
-                        linear_phase_ir = np.tile(linear_phase_ir, (2, 1)).T
-                        sf.write(
-                            output_file_path.replace('.csv', f' linear phase {_fs}Hz.wav'),
-                            linear_phase_ir,
-                            _fs,
-                            bit_depth
-                        )
-                    if phase in ['minimum', 'both']:
-                        # Write minimum phase impulse response
-                        minimum_phase_ir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
-                        minimum_phase_ir = np.tile(minimum_phase_ir, (2, 1)).T
-                        sf.write(
-                            output_file_path.replace('.csv', f' minimum phase {_fs}Hz.wav'),
-                            minimum_phase_ir,
-                            _fs,
-                            bit_depth
-                        )
-
-        # Write results to CSV file
-        fr.write_to_csv(output_file_path)
-
-        # Write plots to file and optionally display them
-        fr.plot_graph(
-            show=show_plot,
-            close=not show_plot,
-            file_path=output_file_path.replace('.csv', '.png'),
-        )
-
-        # Write README.md
-        fr.write_readme(
-            os.path.join(output_dir_path, 'README.md'),
-            parametric_eq_peqs=parametric_eq_peqs,
-            fixed_band_eq_peq=fixed_band_eq_peq[0] if fixed_band_eq else None)
-
-    elif show_plot:
-        fr.plot_graph(show=True, close=False)
+    fr.write_readme(
+        os.path.join(output_dir_path, 'README.md'),
+        parametric_peqs=parametric_peqs,
+        fixed_band_peq=fixed_band_peq)
 
     return fr
 

@@ -43,7 +43,7 @@ class TestAutoEq(unittest.TestCase):
         self.assertTrue(self._input.joinpath('Headphone 2', 'Headphone 2.csv').exists())
         frs = batch_processing(
             input_dir=self._input, output_dir=self._output, standardize_input=True, compensation=self._compensation,
-            equalize=True, parametric_eq=True, fixed_band_eq=True, rockbox=True,
+            parametric_eq=True, fixed_band_eq=True, rockbox=True,
             ten_band_eq=True,
             parametric_eq_config=['4_PEAKING_WITH_LOW_SHELF', PEQ_CONFIGS['4_PEAKING_WITH_HIGH_SHELF']],
             fixed_band_eq_config=None, convolution_eq=True,
@@ -53,7 +53,7 @@ class TestAutoEq(unittest.TestCase):
             max_gain=DEFAULT_MAX_GAIN,
             window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
             treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-            treble_gain_k=DEFAULT_TREBLE_GAIN_K, show_plot=False, thread_count=1
+            treble_gain_k=DEFAULT_TREBLE_GAIN_K, thread_count=1
         )
         self.assertEqual(len(frs), 2)
 

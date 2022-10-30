@@ -3,7 +3,7 @@ from time import time
 from abc import ABC, abstractmethod
 import numpy as np
 from matplotlib import pyplot as plt, ticker
-from scipy.optimize import minimize, fmin_slsqp
+from scipy.optimize import fmin_slsqp
 from scipy.signal import find_peaks
 from tabulate import tabulate
 

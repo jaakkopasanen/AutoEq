@@ -24,7 +24,7 @@ from .constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_G
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_ITERATIONS, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
-    HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, PEQ_CONFIGS, \
+    HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, \
     DEFAULT_BIQUAD_OPTIMIZATION_F_STEP
 from .peq import PEQ, LowShelf
 
@@ -323,21 +323,15 @@ class FrequencyResponse:
                 s += f'Filter {i + 1}: ON {types[filt.__class__.__name__]} Fc {filt.fc:.0f} Hz Gain {filt.gain:.1f} dB Q {filt.q:.2f}\n'
             f.write(s)
 
-    def write_rockbox_10_band_fixed_eq(self, file_path, peqs):
+    @staticmethod
+    def write_rockbox_10_band_fixed_eq(file_path, peq):
         """Writes Rockbox 10 band eq settings to a file."""
-        file_path = os.path.abspath(file_path)
-
-        compound = PEQ(self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP), peqs[0].fs, [])
-        for peq in peqs:
-            for filt in peq.filters:
-                compound.add_filter(filt)
-
         with open(file_path, 'w', encoding='utf-8') as f:
-            s = f'eq enabled: on\neq precut: {round(compound.max_gain, 1) * 10:.0f}\n'
-            for i, filt in enumerate(compound.filters):
+            s = f'eq enabled: on\neq precut: {round(peq.max_gain, 1) * 10:.0f}\n'
+            for i, filt in enumerate(peq.filters):
                 if i == 0:
                     s += f'eq low shelf filter: {filt.fc:.0f}, {round(filt.q, 1) * 10:.0f}, {round(filt.gain, 1) * 10:.0f}\n'
-                elif i == len(compound.filters) - 1:
+                elif i == len(peq.filters) - 1:
                     s += f'eq high shelf filter: {filt.fc:.0f}, {round(filt.q, 1) * 10:.0f}, {round(filt.gain, 1) * 10:.0f}\n'
                 else:
                     s += f'eq peak filter {i}: {filt.fc:.0f}, {round(filt.q, 1) * 10:.0f}, {round(filt.gain, 1) * 10:.0f}\n'
@@ -431,7 +425,7 @@ class FrequencyResponse:
         ir = firwin2(len(fr.frequency) * 2, fr.frequency, fr.raw, fs=fs)
         return ir
 
-    def write_readme(self, file_path, parametric_eq_peqs=None, fixed_band_eq_peq=None):
+    def write_readme(self, file_path, parametric_peqs=None, fixed_band_peq=None):
         """Writes README.md with picture and Equalizer APO settings."""
         file_path = os.path.abspath(file_path)
         dir_path = os.path.dirname(file_path)
@@ -442,32 +436,32 @@ class FrequencyResponse:
         s += 'See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.\n\n'
 
         # Add parametric EQ settings
-        if parametric_eq_peqs is not None:
+        if parametric_peqs is not None:
             s += '### Parametric EQs\n'
             f = self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP)
-            if len(parametric_eq_peqs) > 1:
-                compound = PEQ(f, parametric_eq_peqs[0].fs)
+            if len(parametric_peqs) > 1:
+                compound = PEQ(f, parametric_peqs[0].fs)
                 n = 0
                 filter_ranges = ''
                 preamps = ''
-                for i, peq in enumerate(parametric_eq_peqs):
+                for i, peq in enumerate(parametric_peqs):
                     peq = deepcopy(peq)
                     peq.sort_filters()
                     for filt in peq.filters:
                         compound.add_filter(filt)
                     filter_ranges += f'1-{len(peq.filters) + n}'
                     preamps += f'{-compound.max_gain - 0.1:.1f} dB'
-                    if i < len(parametric_eq_peqs) - 2:
+                    if i < len(parametric_peqs) - 2:
                         filter_ranges += ', '
                         preamps += ', '
-                    elif i == len(parametric_eq_peqs) - 2:
+                    elif i == len(parametric_peqs) - 2:
                         filter_ranges += ' or '
                         preamps += ' or '
                     n += len(peq.filters)
                 s += f'You can use filters {filter_ranges}. Apply preamp of {preamps}, respectively.\n\n'
             else:
-                compound = PEQ(f, parametric_eq_peqs[0].fs, [])
-                for peq in parametric_eq_peqs:
+                compound = PEQ(f, parametric_peqs[0].fs, [])
+                for peq in parametric_peqs:
                     peq = deepcopy(peq)
                     peq.sort_filters()
                     for filt in peq.filters:
@@ -476,10 +470,10 @@ class FrequencyResponse:
             s += compound.markdown_table() + '\n\n'
 
         # Add fixed band eq
-        if fixed_band_eq_peq is not None:
+        if fixed_band_peq is not None:
             s += f'### Fixed Band EQs\nWhen using fixed band (also called graphic) equalizer, apply preamp of ' \
-                 f'**-{fixed_band_eq_peq.max_gain + 0.1:.1f} dB** (if available) and set gains manually with these ' \
-                 f'parameters.\n\n{fixed_band_eq_peq.markdown_table()}\n\n'
+                 f'**-{fixed_band_peq.max_gain + 0.1:.1f} dB** (if available) and set gains manually with these ' \
+                 f'parameters.\n\n{fixed_band_peq.markdown_table()}\n\n'
 
         # Write image link
         img_path = os.path.join(dir_path, model + '.png')
@@ -1266,19 +1260,12 @@ class FrequencyResponse:
     def process(self,
                 compensation=None,
                 min_mean_error=False,
-                equalize=False,
-                parametric_eq=False,
-                fixed_band_eq=False,
-                ten_band_eq=None,
-                parametric_eq_config=None,
-                fixed_band_eq_config=None,
                 bass_boost_gain=None,
                 bass_boost_fc=None,
                 bass_boost_q=None,
                 tilt=None,
                 sound_signature=None,
                 max_gain=DEFAULT_MAX_GAIN,
-                fs=DEFAULT_FS,
                 concha_interference=False,
                 window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
                 treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
@@ -1292,19 +1279,12 @@ class FrequencyResponse:
             min_mean_error: Minimize mean error. Normally all curves cross at 1 kHz but this makes it possible to shift
                             error curve so that mean between 100 Hz and 10 kHz is at minimum. Target curve is shifted
                             accordingly. Useful for avoiding large bias caused by a narrow notch or peak at 1 kHz.
-            equalize: Run equalization?
-            parametric_eq: Optimize peaking filters for parametric eq?
-            fixed_band_eq: Optimize peaking filters for fixed band (graphic) eq?
-            ten_band_eq: Optimize filters for standard ten band eq?
-            parametric_eq_config: List of PEQ config dicts
-            fixed_band_eq_config: PEQ config dict for fixed band equalizer
             bass_boost_gain: Bass boost amount in dB.
             bass_boost_fc: Bass boost low shelf center frequency.
             bass_boost_q: Bass boost low shelf quality.
             tilt: Target frequency response tilt in db / octave
             sound_signature: Sound signature as FrequencyResponse instance. Raw data will be used.
             max_gain: Maximum positive gain in dB
-            fs: Sampling frequency
             concha_interference: Do measurements include concha interference which produced a narrow dip around 9 kHz?
             window_size: Smoothing window size in octaves.
             treble_window_size: Smoothing window size in octaves in the treble region.
@@ -1314,58 +1294,24 @@ class FrequencyResponse:
                             switched to treble filter with sigmoid weighting function.
             treble_gain_k: Coefficient for treble gain, positive and negative. Useful for disabling or reducing
                            equalization power in treble region. Defaults to 1.0 (not limited).
-
-        Returns:
-            - **peq_filters:** Numpy array of produced parametric eq peaking filters. Each row contains Fc, Q and gain
-            - **n_peq_filters:** Number of produced parametric eq peaking filters for each group.
-            - **peq_max_gains:** Maximum positive gains in each parametric eq peaking filter group.
-            - **fbeq_filters:** Numpy array of produced fixed band peaking filters. Each row contains Fc, Q and gain
-            - **n_fbeq_filters:** Number of produced fixed band peaking filters.
-            - **fbeq_max_gains:** Maximum positive gain for fixed band eq.
         """
-        if parametric_eq and not equalize:
-            raise ValueError('equalize must be True when parametric_eq is True.')
-
-        if ten_band_eq:
-            # Ten band eq is a shortcut for setting Fc and Q values to standard 10-band equalizer filters parameters
-            fixed_band_eq = True
-            fixed_band_eq_config = PEQ_CONFIGS['10_BAND_GRAPHIC_EQ']
-
-        if fixed_band_eq and not equalize:
-            raise ValueError('equalize must be True when fixed_band_eq or ten_band_eq is True.')
-
-        # Interpolate to standard frequency vector
         self.interpolate()
-
-        # Center by 1kHz
         self.center()
-
-        if compensation is not None:
-            # Compensate
-            self.compensate(
-                compensation,
-                bass_boost_gain=bass_boost_gain,
-                bass_boost_fc=bass_boost_fc,
-                bass_boost_q=bass_boost_q,
-                tilt=tilt,
-                sound_signature=sound_signature,
-                min_mean_error=min_mean_error
-            )
-
-        # Smoothen data
+        self.compensate(
+            compensation,
+            bass_boost_gain=bass_boost_gain,
+            bass_boost_fc=bass_boost_fc,
+            bass_boost_q=bass_boost_q,
+            tilt=tilt,
+            sound_signature=sound_signature,
+            min_mean_error=min_mean_error
+        )
         self.smoothen_fractional_octave(
             window_size=window_size,
             treble_window_size=treble_window_size,
             treble_f_lower=treble_f_lower,
             treble_f_upper=treble_f_upper
         )
-
-        # Equalize
-        if equalize:
-            self.equalize(
-                max_gain=max_gain, concha_interference=concha_interference, treble_f_lower=treble_f_lower,
-                treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
-            parametric_peqs = self.optimize_parametric_eq(parametric_eq_config, fs) if parametric_eq else None
-            fixed_band_peq = self.optimize_fixed_band_eq(fixed_band_eq_config, fs) if fixed_band_eq else None
-            return parametric_peqs, fixed_band_peq
-        return None, None
+        self.equalize(
+            max_gain=max_gain, concha_interference=concha_interference, treble_f_lower=treble_f_lower,
+            treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
