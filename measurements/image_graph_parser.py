@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import os
-import sys
 import argparse
 import numpy as np
 from glob import glob
@@ -10,8 +9,7 @@ import colorsys
 from operator import itemgetter
 from itertools import groupby
 import warnings
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from frequency_response import FrequencyResponse
+from autoeq.frequency_response import FrequencyResponse
 
 
 class ImageGraphParser:

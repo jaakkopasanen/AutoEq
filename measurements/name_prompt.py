@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import sys
-from pathlib import Path
-if str(Path(__file__).resolve().parent) not in sys.path:
-    sys.path.insert(1, str(Path(__file__).resolve().parent))
 import ipywidgets as widgets
 
 

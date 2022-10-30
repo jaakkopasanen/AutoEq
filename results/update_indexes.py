@@ -8,13 +8,13 @@ import re
 import numpy as np
 from zipfile import ZipFile
 from tabulate import tabulate
-
+from autoeq.constants import MOD_REGEX, ROOT_DIR
+from autoeq.frequency_response import FrequencyResponse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from frequency_response import FrequencyResponse
 from measurements.manufacturer_index import ManufacturerIndex
-from constants import MOD_REGEX, ROOT_DIR
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+ROOT_DIR = os.path.join(DIR_PATH, os.pardir,)
 
 
 def form_url(rel_path):

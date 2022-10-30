@@ -7,7 +7,6 @@ import numpy as np
 import pandas as pd
 import re
 from rapidfuzz import fuzz
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 
 
 class NameItem:

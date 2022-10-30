@@ -1,17 +1,12 @@
-import os
 import sys
-import tempfile
 import unittest
 from pathlib import Path
 from argparse import ArgumentParser, SUPPRESS
 import re
 import numpy as np
-ROOT_PATH = Path(__file__).resolve().parent.parent
-if str(ROOT_PATH) not in sys.path:
-    sys.path.insert(1, str(ROOT_PATH))
-from frequency_response import FrequencyResponse
-from constants import DEFAULT_FS
-from peq import PEQ, Peaking, LowShelf, HighShelf
+from autoeq.frequency_response import FrequencyResponse
+from autoeq.constants import DEFAULT_FS
+from autoeq.peq import PEQ, Peaking, LowShelf, HighShelf
 
 classes = {'PK': Peaking, 'LS': LowShelf, 'HS': HighShelf}
 

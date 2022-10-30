@@ -2,8 +2,6 @@
 
 import os
 import sys
-import re
-from bs4 import BeautifulSoup
 from ghostscript import Ghostscript
 import PyPDF2
 from PIL import Image, ImageDraw
@@ -12,11 +10,11 @@ import numpy as np
 import shutil
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from autoeq.frequency_response import FrequencyResponse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex, NameItem
+from measurements.name_index import NameIndex
 from measurements.crawler import Crawler
 from measurements.image_graph_parser import ImageGraphParser
-from frequency_response import FrequencyResponse
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 

@@ -4,10 +4,10 @@ import os
 import sys
 import argparse
 
-from constants import PEQ_CONFIGS
+from autoeq.constants import PEQ_CONFIGS
 
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from autoeq import batch_processing
+from autoeq.batch_processing import batch_processing
 
 ROOT_DIR = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 
@@ -67,7 +67,6 @@ def main():
 
     eq_kwargs = {
         'new_only': new_only,
-        'equalize': True,
         'parametric_eq': True,
         'parametric_eq_config': [PEQ_CONFIGS['4_PEAKING_WITH_LOW_SHELF'], PEQ_CONFIGS['4_PEAKING_WITH_HIGH_SHELF']],
         'ten_band_eq': True,

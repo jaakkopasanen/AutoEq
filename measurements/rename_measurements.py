@@ -6,10 +6,10 @@ from argparse import ArgumentParser
 from glob import glob
 import shutil
 import re
+from autoeq.constants import DBS
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.name_index import NameIndex, NameItem
 from measurements.manufacturer_index import ManufacturerIndex
-from constants import DBS
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 

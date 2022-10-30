@@ -8,10 +8,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from autoeq.frequency_response import FrequencyResponse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_index import NameIndex
 from measurements.crawler import Crawler
-from frequency_response import FrequencyResponse
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 

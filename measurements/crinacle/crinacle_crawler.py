@@ -6,14 +6,11 @@ from glob import glob
 import re
 import numpy as np
 import requests
-
-from measurements.name_prompt import NamePrompt
-
+from autoeq.frequency_response import FrequencyResponse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex
+from measurements.name_prompt import NamePrompt
+from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
-from frequency_response import FrequencyResponse
-from measurements.name_index import NameItem
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 

@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "autoeq"
-version = "2.0.0"
+version = "2.0.0.dev2"
 authors = [
   { name="Jaakko Pasanen", email="jaakko.o.pasanen@gmail.com" },
 ]
@@ -33,3 +33,20 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/jaakkopasanen/AutoEq"
 "Bug Tracker" = "https://github.com/jaakkopasanen/AutoEq/issues"
+
+[tool.hatch.build]
+include = [
+    "/autoeq",
+    "LICENCE",
+    "README.md",
+    "pyproject.toml",
+]
+exclude = [
+    "/.github",
+    "/compensation",
+    "/measurements",
+    "/research",
+    "/results",
+    "/tests",
+    ".gitignore",
+]

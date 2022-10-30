@@ -354,7 +354,7 @@ git pull
 
 Dependencies may change from time to time, you can update to the latest with
 ```shell
-python -m pip install -U -r requirements.txt
+python -m pip install -U -e .
 ```
 
 ### Command Line Usage

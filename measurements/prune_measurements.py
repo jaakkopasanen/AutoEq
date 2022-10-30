@@ -18,7 +18,7 @@ def main():
             _, form = os.path.split(d)
             if not name_index.find(true_name=name, form=form):
                 print(f'Removing: "{fp}"')
-                #shutil.rmtree(fp)
+                shutil.rmtree(fp)
 
 
 if __name__ == '__main__':

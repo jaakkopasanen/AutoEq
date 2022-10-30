@@ -100,6 +100,7 @@ Ace 10	Aroma Audio Ace (on-off)	inear
 Ace 12	Aroma Audio Ace (on-on)	inear
 ACH	AAW ACH	inear
 ACME 8	Fearless Audio ACME 8	inear
+Acoustic Deer	Heartfield Acoustic Deer	inear
 Active65	Jabra Elite Active 65t	inear
 AD1000X	Audio-Technica ATH-AD1000X	onear
 AD2000	Audio-Technica ATH-AD2000	onear
@@ -132,7 +133,11 @@ AH-D7200	Denon AH-D7200	onear
 AH-D9200	Denon AH-D9200	onear
 Air 2	FitEar Air 2	inear
 AirPods Max	Apple AirPods Max	onear
-AirPods Pro	Apple AirPods Pro	inear
+AirPods Pro	Apple AirPods Pro (sample 1)	inear
+AirPods Pro 2 ANC	Apple AirPods Pro 2 (ANC mode)	inear
+AirPods Pro 2 Passive	Apple AirPods Pro 2 (passive mode)	inear
+AirPods Pro 2 Transparency	Apple AirPods Pro 2 (transparency mode)	inear
+AirPods Pro S2	Apple AirPods Pro (sample 2)	inear
 Airship	Seek Real Audio Airship	inear
 Aiva	Sendy Aiva	onear
 AK6	QKZ AK6	inear
@@ -286,6 +291,16 @@ Bravado Mk2	Empire Ears Bravado Mk2	inear
 Bravery	SeeAudio Bravery	inear
 Buds Plus	Samsung Galaxy Buds Plus	inear
 Buds2	Samsung Galaxy Buds2	inear
+Buds2 Pro Ambient	Samsung Galaxy Buds2 Pro (ambient mode)	inear
+Buds2 Pro ANC	Samsung Galaxy Buds2 Pro (ANC mode)	inear
+Buds2 Pro ANC (Bass Boost)	Samsung Galaxy Buds2 Pro (bass boost EQ) (ANC mode)	inear
+Buds2 Pro ANC (Clear)	Samsung Galaxy Buds2 Pro (blear EQ) (ANC mode)	inear
+Buds2 Pro ANC (Dynamic)	Samsung Galaxy Buds2 Pro (dynamic EQ) (ANC mode)	inear
+Buds2 Pro ANC (Soft)	Samsung Galaxy Buds2 Pro (soft EQ) (ANC mode)	inear
+Buds2 Pro ANC (Treble Boost)	Samsung Galaxy Buds2 Pro (treble boost EQ) (ANC mode) (sample 1)	inear
+Buds2 Pro Passive	Samsung Galaxy Buds2 Pro (Passive mode)	inear
+Buds2 Pro S2		ignore
+Buds2 Pro S2 ANC (Treble Boost)		ignore
 Bullet In-Ear	MUNITIO Bullet In-Ear	inear
 C10	CCA C10	inear
 C12	CCA C12	inear
@@ -838,8 +853,8 @@ IE800	Sennheiser IE 800	inear
 IE800S	Sennheiser IE 800 S	inear
 IE80S	Sennheiser IE 80 S (min)	inear
 IE80S Half	Sennheiser IE 80 S (half)	inear
-IE80S max	Sennheiser IE 80 S (max)	inear
 IE80S Max	Sennheiser IE 80 S (max)	inear
+IE80S max	Sennheiser IE 80 S (max)	inear
 IE900	Sennheiser IE 900	inear
 IEX1	Audio-Technica ATH-IEX1	inear
 iGE	Grado iGE	inear
@@ -852,8 +867,8 @@ IO	Campfire Audio IO (sample 1)	inear
 IO S2	Campfire Audio IO (sample 2)	inear
 ION-4 Vietnam	Soranik ION-4 (Vietnamese domestic market edition)	inear
 Isabellae	Oriolus Isabellae	inear
-iSIne 10	Audeze iSINE 10	inear
 iSine 10	Audeze iSINE 10 (sample 1)	inear
+iSIne 10	Audeze iSINE 10	inear
 iSine 10 S2	Audeze iSINE 10 (sample 2)	inear
 iSine 20	Audeze iSINE 20	inear
 iSine 20 Cipher	Audeze iSINE 20 (Cipher cable)	inear
@@ -869,14 +884,15 @@ Jade II	HIFIMAN Jade II	onear
 Janus	ddHiFi E2020A Janus	inear
 Jasper	AUNE Jasper	inear
 Jazz	Jomo Audio Jazz	inear
-JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
+JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	inear
 JH13v2 Max	JH Audio 13v2 (max)	inear
 JH13v2 Min	JH Audio 13v2 (min)	inear
 JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	inear
 JH16v2 Max	JH Audio 16v2 (max)	inear
 JH16v2 Min	JH Audio 16v2 (min)	inear
 Jimo	Kennerton Jimo	inear
+JQ 4U Pro	JQ 4u Pro	inear
 Juno Max Bass	Unknown Custom Juno	inear
 Juno Min Bass	Unknown Custom Juno (min bass)	inear
 K10	Noble Audio K10	inear
@@ -999,6 +1015,7 @@ LCD-X (Fazor)	Audeze LCD-X	onear
 LCD-XC (Fazor)	Audeze LCD-XC	onear
 LE2	Lime Ears LE2	inear
 Lea	Tripowin Leá	inear
+Leaf	Raptgo Leaf D01	inear
 Legacy	Unique Melody Legacy	inear
 Legacy 2	ThieAudio Legacy 2	inear
 Legend EVO	Empire Ears Legend EVO	inear
@@ -1051,8 +1068,8 @@ M5 S3	Fir Audio M5 (sample 3)	inear
 M5 S5	Fir Audio M5 (sample 4)	inear
 M5 S6	Fir Audio M5 (sample 5)	inear
 M5 S7	Fir Audio M5 (sample 7)	inear
-M50X	Audio-Technica ATH-M50x	onear
 M50x	Audio-Technica ATH-M50x (sample 1)	onear
+M50X	Audio-Technica ATH-M50x	onear
 M50x S2	Audio-Technica ATH-M50x (sample 2)	onear
 M50xBT	Audio-Technica ATH-M50xBT	onear
 M51D	Advanced M51D	inear
@@ -1118,8 +1135,16 @@ MEST C	Unique Melody MEST (CIEM)	inear
 MEST Mk2	Unique Melody MEST Mk2	inear
 MEXT	Unique Melody MEXT	inear
 Meze 12	Meze 12 Classics	inear
+Mezzo 000	FAudio Mezzo (000 setting)	inear
+Mezzo 003	FAudio Mezzo (003 setting)	inear
+Mezzo 020	FAudio Mezzo (020 setting)	inear
+Mezzo 023	FAudio Mezzo (023 setting)	inear
+Mezzo 100	FAudio Mezzo (100 setting)	inear
+Mezzo 120	FAudio Mezzo (120 setting)	inear
+Mezzo 123	FAudio Mezzo (123 setting)	inear
 Mg	Periodic Audio Mg	inear
 MG5HX	Future Sonics MG5HX	inear
+MG600	Shanling MG600	inear
 MH334	FitEar MH334	inear
 MH334SR C	FitEar MH334SR (CIEM)	inear
 MH335DW	FitEar MH335DW	inear
@@ -1708,6 +1733,7 @@ TWS2000 S2	Tin HiFi TWS2000	inear
 TWS5	Edifier TWS5	inear
 TWS6	Edifier TWS6	inear
 TWS600	HIFIMAN TWS600	inear
+TX-901	Ovidius TX-901	onear
 TYGR 300 R	Beyerdynamic TYGR 300 R	onear
 Type 711	Madoo Type 711	inear
 Tzar 350	Heir Audio Tzar 350	inear
@@ -1854,6 +1880,7 @@ XBA-A3 S3	Sony XBA-A3 (sample 3)	inear
 XBA-H3	Sony XBA-H3	inear
 XBA300	Sony XBA-300	inear
 Xelento	Beyerdynamic Xelento	inear
+Xenon-6 C	Fir Audio Xenon 6 (CIEM)	inear
 Yao	Aroma Audio Yao	inear
 YB04	Cayin YB04	inear
 Yume	SeeAudio Yume	inear

@@ -10,7 +10,9 @@ from measurements.crinacle.crinacle_crawler import CrinacleCrawler
 from measurements.oratory1990.oratory1990_crawler import Oratory1990Crawler
 from measurements.referenceaudioanalyzer.reference_audio_analyzer_crawler import ReferenceAudioAnalyzerCrawler
 from measurements.rtings.rtings_crawler import RtingsCrawler
-from constants import ROOT_DIR
+
+DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+ROOT_DIR = os.path.join(DIR_PATH, os.pardir)
 
 
 def main():

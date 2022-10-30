@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
 
 import os
-import sys
 import re
 import argparse
 from glob import glob
 import numpy as np
-import warnings
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from frequency_response import FrequencyResponse
-from constants import MOD_REGEX
+from autoeq.frequency_response import FrequencyResponse
+from autoeq.constants import MOD_REGEX
 
 
 def average_measurements(input_dir=None, output_dir=None):
