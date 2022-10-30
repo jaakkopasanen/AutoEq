@@ -396,7 +396,7 @@ options:
   --f-res F_RES         Frequency resolution for impulse responses. If this is 20 then impulse response frequency domain will be sampled every 20 Hz. Filter length for impulse responses will be fs/f_res. Defaults to 10.
   --bass-boost BASS_BOOST
                         Bass boost shelf. Sub-bass frequencies will be boosted by this amount. Can be either a single value for a gain in dB or a comma separated list of three values for parameters of a low shelf filter, where the first is gain in dB, second is center frequency (Fc) in Hz and the last is quality (Q). When
-                        only a single value (gain) is given, default values for Fc and Q are used which are 105.0 Hz and 0.71, respectively. For example "--bass_boost=6" or "--bass_boost=9.5,150,0.69".
+                        only a single value (gain) is given, default values for Fc and Q are used which are 105.0 Hz and 0.7, respectively. For example "--bass-boost=6" or "--bass-boost=9.5,150,0.6".
   --tilt TILT           Target tilt in dB/octave. Positive value (upwards slope) will result in brighter frequency response and negative value (downwards slope) will result in darker frequency response. 1 dB/octave will produce nearly 10 dB difference in desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost
                         and both will affect the bass gain.
   --sound-signature SOUND_SIGNATURE

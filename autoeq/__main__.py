@@ -92,7 +92,7 @@ def cli_args():
                                  'center frequency (Fc) in Hz and the last is quality (Q). When only a single '
                                  'value (gain) is given, default values for Fc and Q are used which are '
                                  f'{DEFAULT_BASS_BOOST_FC} Hz and {DEFAULT_BASS_BOOST_Q}, '
-                                 'respectively. For example "--bass_boost=6" or "--bass_boost=9.5,150,0.69".')
+                                 'respectively. For example "--bass-boost=6" or "--bass-boost=9.5,150,0.69".')
     arg_parser.add_argument('--tilt', type=float, default=argparse.SUPPRESS,
                             help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
                                  'frequency response and negative value (downwards slope) will result in darker '
@@ -135,6 +135,8 @@ def cli_args():
                                  'available will be used. Using more threads result in higher memory usage. '
                                  'Defaults to 1.')
     args = vars(arg_parser.parse_args())
+
+    # Replace hyphens with underscores to be compatible with the batch_processing method signature
     args = {key.replace('-', '_'): val for key, val in args.items()}
 
     if 'equalize' in args and args['equalize']:
