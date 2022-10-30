@@ -5,7 +5,8 @@ import tempfile
 from pathlib import Path
 import unittest
 import pandas as pd
-from autoeq import FrequencyResponse, batch_processing
+from autoeq.frequency_response import FrequencyResponse
+from autoeq.autoeq import batch_processing
 from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, \
     DEFAULT_BIT_DEPTH, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, \
     DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, PEQ_CONFIGS
