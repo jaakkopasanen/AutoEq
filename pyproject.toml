@@ -25,7 +25,7 @@ dependencies = [
     'scipy~=1.8.1',
     'numpy~=1.23.1',
     'tabulate~=0.8.10',
-    'soundfile~=0.10.2',
+    'soundfile~=0.11.0',
     'pyyaml~=6.0',
     'tqdm~=4.64.0',
 ]
