@@ -526,8 +526,7 @@ python -m autoeq --input-dir="measurements/rtings/data/onear/Audeze Mobius" --ou
 ### Building
 Build PyPi package
 ```shell
-copy /y README.md README.md.bak && copy /y autoeq\README.md README.md && python -m build && copy /y README.md.bak README.md && del README
-.md.bak
+copy /y README.md README.md.bak && copy /y autoeq\README.md README.md && python -m build && copy /y README.md.bak README.md && del README.md.bak
 ```
 publish
 ```shell
