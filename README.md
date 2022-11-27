@@ -195,6 +195,9 @@ with impulse response (WAV) files. For rooted users this is the best option.
 [JamesDSP](https://forum.xda-developers.com/android/apps-games/app-reformed-dsp-manager-t3607970) is an alternative to
 Viper4Android. It provides a system wide solution, has a convolution engine but requires rooting.
 
+[RootlessJamesDSP](https://github.com/ThePBone/RootlessJamesDSP) works on non-rooted devices but does not work on some
+apps like Spotify.
+
 ### Linux
 #### PulseEffects / EasyEffects
 [PulseEffects / EasyEffects](https://github.com/wwmm/easyeffects) is a Linux module with wide variety of signal
