@@ -278,9 +278,9 @@ can connect to the device.
 [Qudelix 5K](https://www.qudelix.com/products/qudelix-5k-dac-amp) is a portable DAC and amplifier
 with wired and Bluetooth connectivity and 10 band parametric equalizer.
 
-[Radsone EasStudio ES100](https://www.radsone.com/earstudio) is a Bluetooth DAC and amp with built-in 10 band
-equalizer. Since this is a hardware solution it will work with
-practically any source.
+[MiniDSP IL-DSP](https://www.minidsp.com/products/plate-amplifiers/il-dsp-headphone-amp) is a smaller form factor mobile
+headphone dac/amp with 10 band parametric equalizer. The equalizer in the device doesn't have adjustable preamp but
+AutoEq can build that in with `--preamp` parameter.
 
 ## Equalizing
 `autoeq.py` is the tool used to produce the equalization results from measurement data. There is no
