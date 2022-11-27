@@ -359,11 +359,13 @@ python -m pip install -U -e .
 
 ### Command Line Usage
 ```
-usage: __main__.py [-h] --input-dir INPUT_DIR --output-dir OUTPUT_DIR [--standardize-input] [--new-only] [--compensation COMPENSATION] [--equalize] [--parametric-eq] [--fixed-band-eq] [--rockbox] [--ten-band-eq] [--parametric-eq-config PARAMETRIC_EQ_CONFIG] [--fixed-band-eq-config FIXED_BAND_EQ_CONFIG] [--convolution-eq]
-                   [--fs FS] [--bit-depth BIT_DEPTH] [--phase PHASE] [--f-res F_RES] [--bass-boost BASS_BOOST] [--tilt TILT] [--sound-signature SOUND_SIGNATURE] [--max-gain MAX_GAIN] [--window-size WINDOW_SIZE] [--treble-window-size TREBLE_WINDOW_SIZE] [--treble-f-lower TREBLE_F_LOWER] [--treble-f-upper TREBLE_F_UPPER]
-                   [--treble-gain-k TREBLE_GAIN_K] [--thread-count THREAD_COUNT]
+usage: __main__.py [-h] --input-dir INPUT_DIR --output-dir OUTPUT_DIR [--standardize-input] [--new-only] [--compensation COMPENSATION] [--equalize] [--parametric-eq]
+                   [--fixed-band-eq] [--rockbox] [--ten-band-eq] [--parametric-eq-config PARAMETRIC_EQ_CONFIG] [--fixed-band-eq-config FIXED_BAND_EQ_CONFIG]
+                   [--convolution-eq] [--fs FS] [--bit-depth BIT_DEPTH] [--phase PHASE] [--f-res F_RES] [--bass-boost BASS_BOOST] [--treble-boost TREBLE_BOOST]
+                   [--tilt TILT] [--sound-signature SOUND_SIGNATURE] [--max-gain MAX_GAIN] [--window-size WINDOW_SIZE] [--treble-window-size TREBLE_WINDOW_SIZE]
+                   [--treble-f-lower TREBLE_F_LOWER] [--treble-f-upper TREBLE_F_UPPER] [--treble-gain-k TREBLE_GAIN_K] [--thread-count THREAD_COUNT]
 
-options:
+optional arguments:
   -h, --help            show this help message and exit
   --input-dir INPUT_DIR
                         Path to input data directory. Will look for CSV files in the data directory and recursively in sub-directories.
@@ -372,50 +374,75 @@ options:
   --standardize-input   Overwrite input data in standardized sampling and bias?
   --new-only            Only process input files which don't have results in output directory.
   --compensation COMPENSATION
-                        File path to CSV containing compensation (target) curve. Compensation is necessary when equalizing because all input data is raw microphone data. See "compensation", "innerfidelity/resources" and "headphonecom/resources".
+                        File path to CSV containing compensation (target) curve. Compensation is necessary when equalizing because all input data is raw microphone data.
+                        See "compensation", "innerfidelity/resources" and "headphonecom/resources".
   --equalize            Will run equalization if this parameter exists, no value needed.
   --parametric-eq       Will produce parametric eq settings if this parameter exists, no value needed.
   --fixed-band-eq       Will produce fixed band eq settings if this parameter exists, no value needed.
   --rockbox             Will produce a Rockbox .cfg file with 10 band eq settings if this parameter exists,no value needed.
   --ten-band-eq         Shortcut parameter for activating standard ten band eq optimization.
   --parametric-eq-config PARAMETRIC_EQ_CONFIG
-                        Name of parametric equalizer configuration or a path to a configuration file. Available named configurations are "10_PEAKING" for 10 peaking filters, "8_PEAKING_WITH_SHELVES" for 8 peaking filters and a low shelf at 105 Hz for bass adjustment and a high shelf at 10 kHz for treble adjustment,
-                        "4_PEAKING_WITH_LOW_SHELF" for 4 peaking filters and a low shelf at 105 Hz for bass adjustment, "4_PEAKING_WITH_HIGH_SHELF" for 4 peaking filters and a high shelf at 10 kHz for treble adjustments. You can give multiple named configurations by separating the names with commas and filter sets will be
-                        built on top of each other. When the value is a file path, the file will be read and used as a configuration. The file needs to be a YAML file with "filters" field as a list of filter configurations, each of which can define "fc", "min_fc", "max_fc", "q", "min_q", "max_q", "gain", "min_gain",
-                        "max_gain" and "type" fields. When the fc, q or gain value is given, the parameter won't be optimized for the filter. "type" needs to be either "LOW_SHELF", "PEAKING" or "HIGH_SHELF". Also "filter_defaults" field is supported on the top level and it can have the same fields as the filters do. All
-                        fields missing from the filters will be read from "filter_defaults". Defaults to "4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF". Optimizer behavior can be adjusted by defining "optimizer" field which has fields "min_f" and "max_f" for lower and upper bounds of the optimization range, "max_time"
-                        for maximum optimization duration in seconds, "target_loss" for RMSE target level upon reaching which the optimization is ended, "min_change_rate" for minimum rate of improvement in db/s and "min_std" for minimum standard deviation of the last few loss values. "min_change_rate" and "min_std" end the
-                        optimization when further time spent optimizing can't be expected to improve the results dramatically. See peq.yaml for an example.
+                        Name of parametric equalizer configuration or a path to a configuration file. Available named configurations are "10_PEAKING" for 10 peaking
+                        filters, "8_PEAKING_WITH_SHELVES" for 8 peaking filters and a low shelf at 105 Hz for bass adjustment and a high shelf at 10 kHz for treble
+                        adjustment, "4_PEAKING_WITH_LOW_SHELF" for 4 peaking filters and a low shelf at 105 Hz for bass adjustment, "4_PEAKING_WITH_HIGH_SHELF" for 4
+                        peaking filters and a high shelf at 10 kHz for treble adjustments. You can give multiple named configurations by separating the names with commas
+                        and filter sets will be built on top of each other. When the value is a file path, the file will be read and used as a configuration. The file
+                        needs to be a YAML file with "filters" field as a list of filter configurations, each of which can define "fc", "min_fc", "max_fc", "q", "min_q",
+                        "max_q", "gain", "min_gain", "max_gain" and "type" fields. When the fc, q or gain value is given, the parameter won't be optimized for the filter.
+                        "type" needs to be either "LOW_SHELF", "PEAKING" or "HIGH_SHELF". Also "filter_defaults" field is supported on the top level and it can have the
+                        same fields as the filters do. All fields missing from the filters will be read from "filter_defaults". Defaults to
+                        "4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF". Optimizer behavior can be adjusted by defining "optimizer" field which has fields "min_f"
+                        and "max_f" for lower and upper bounds of the optimization range, "max_time" for maximum optimization duration in seconds, "target_loss" for RMSE
+                        target level upon reaching which the optimization is ended, "min_change_rate" for minimum rate of improvement in db/s and "min_std" for minimum
+                        standard deviation of the last few loss values. "min_change_rate" and "min_std" end the optimization when further time spent optimizing can't be
+                        expected to improve the results dramatically. See peq.yaml for an example.
   --fixed-band-eq-config FIXED_BAND_EQ_CONFIG
                         Path to fixed band equalizer configuration. The file format is the same YAML as for parametric equalizer.
   --convolution-eq      Will produce impulse response for convolution equalizers if this parameter exists, no value needed.
-  --fs FS               Sampling frequency in Hertz for impulse response and parametric eq filters. Single value or multiple values separated by commas eg 44100,48000. When multiple values are given only the first one will be used for parametric eq. Defaults to 44100.
+  --fs FS               Sampling frequency in Hertz for impulse response and parametric eq filters. Single value or multiple values separated by commas eg 44100,48000.
+                        When multiple values are given only the first one will be used for parametric eq. Defaults to 44100.
   --bit-depth BIT_DEPTH
                         Number of bits for every sample in impulse response. Defaults to 16.
   --phase PHASE         Impulse response phase characteristic. "minimum", "linear" or "both". Defaults to "minimum"
-  --f-res F_RES         Frequency resolution for impulse responses. If this is 20 then impulse response frequency domain will be sampled every 20 Hz. Filter length for impulse responses will be fs/f_res. Defaults to 10.
+  --f-res F_RES         Frequency resolution for impulse responses. If this is 20 then impulse response frequency domain will be sampled every 20 Hz. Filter length for
+                        impulse responses will be fs/f_res. Defaults to 10.0.
   --bass-boost BASS_BOOST
-                        Bass boost shelf. Sub-bass frequencies will be boosted by this amount. Can be either a single value for a gain in dB or a comma separated list of three values for parameters of a low shelf filter, where the first is gain in dB, second is center frequency (Fc) in Hz and the last is quality (Q). When
-                        only a single value (gain) is given, default values for Fc and Q are used which are 105.0 Hz and 0.7, respectively. For example "--bass-boost=6" or "--bass-boost=9.5,150,0.6".
-  --tilt TILT           Target tilt in dB/octave. Positive value (upwards slope) will result in brighter frequency response and negative value (downwards slope) will result in darker frequency response. 1 dB/octave will produce nearly 10 dB difference in desired value between 20 Hz and 20 kHz. Tilt is applied with bass boost
-                        and both will affect the bass gain.
+                        Bass boost shelf. Sub-bass frequencies will be boosted by this amount. Can be either a single value for a gain in dB or a comma separated list of
+                        three values for parameters of a low shelf filter, where the first is gain in dB, second is center frequency (Fc) in Hz and the last is quality
+                        (Q). When only a single value (gain) is given, default values for Fc and Q are used which are 105.0 Hz and 0.7, respectively. For example "--bass-
+                        boost=6" or "--bass-boost=9.5,150,0.69".
+  --treble-boost TREBLE_BOOST
+                        Treble boost shelf. > 10 kHz frequencies will be boosted by this amount. Can be either a single value for a gain in dB or a comma separated list
+                        of three values for parameters of a high shelf filter, where the first is gain in dB, second is center frequency (Fc) in Hz and the last is
+                        quality (Q). When only a single value (gain) is given, default values for Fc and Q are used which are 10000.0 Hz and 0.7, respectively. For
+                        example "--treble-boost=3" or "--treble-boost=-4,12000,0.69".
+  --tilt TILT           Target tilt in dB/octave. Positive value (upwards slope) will result in brighter frequency response and negative value (downwards slope) will
+                        result in darker frequency response. 1 dB/octave will produce nearly 10 dB difference in desired value between 20 Hz and 20 kHz. Tilt is applied
+                        with bass boost and both will affect the bass gain.
   --sound-signature SOUND_SIGNATURE
-                        File path to a sound signature CSV file. Sound signature is added to the compensation curve. Error data will be used as the sound signature target if the CSV file contains an error column and otherwise the raw column will be used. This means there are two different options for using sound signature:
-                        1st is pointing it to a result CSV file of a previous run and the 2nd is to create a CSV file with just frequency and raw columns by hand (or other means). The Sound signature graph will be interpolated so any number of point at any frequencies will do, making it easy to create simple signatures with
-                        as little as two or three points.
-  --max-gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain allows to equalize deeper dips in frequency response but will limit output volume if no analog gain is available because positive gain requires negative digital preamp equal to maximum positive gain. Defaults to 6.0.
+                        File path to a sound signature CSV file. Sound signature is added to the compensation curve. Error data will be used as the sound signature target
+                        if the CSV file contains an error column and otherwise the raw column will be used. This means there are two different options for using sound
+                        signature: 1st is pointing it to a result CSV file of a previous run and the 2nd is to create a CSV file with just frequency and raw columns by
+                        hand (or other means). The Sound signature graph will be interpolated so any number of point at any frequencies will do, making it easy to create
+                        simple signatures with as little as two or three points.
+  --max-gain MAX_GAIN   Maximum positive gain in equalization. Higher max gain allows to equalize deeper dips in frequency response but will limit output volume if no
+                        analog gain is available because positive gain requires negative digital preamp equal to maximum positive gain. Defaults to 6.0.
   --window-size WINDOW_SIZE
                         Smoothing window size in octaves.
   --treble-window-size TREBLE_WINDOW_SIZE
                         Smoothing window size in octaves in the treble region.
   --treble-f-lower TREBLE_F_LOWER
-                        Lower bound for transition region between normal and treble frequencies. Treble frequencies can have different max gain and gain K. Defaults to 6000.0.
+                        Lower bound for transition region between normal and treble frequencies. Treble frequencies can have different max gain and gain K. Defaults to
+                        6000.0.
   --treble-f-upper TREBLE_F_UPPER
-                        Upper bound for transition region between normal and treble frequencies. Treble frequencies can have different max gain and gain K. Defaults to 8000.0.
+                        Upper bound for transition region between normal and treble frequencies. Treble frequencies can have different max gain and gain K. Defaults to
+                        8000.0.
   --treble-gain-k TREBLE_GAIN_K
-                        Coefficient for treble gain, affects both positive and negative gain. Useful for disabling or reducing equalization power in treble region. Defaults to 1.0.
+                        Coefficient for treble gain, affects both positive and negative gain. Useful for disabling or reducing equalization power in treble region.
+                        Defaults to 1.0.
   --thread-count THREAD_COUNT
-                        Amount of threads to use for processing results. If set to "max" all the threads available will be used. Using more threads result in higher memory usage. Defaults to 1.
+                        Amount of threads to use for processing results. If set to "max" all the threads available will be used. Using more threads result in higher
+                        memory usage. Defaults to 1.
 ```
 
 
@@ -424,12 +451,12 @@ options:
 #### Reproducing Results
 Reproducing pre-computed results for oratory1990 measured on-ear headphones:
 ```shell
-python -m autoeq --input-dir="measurements/oratory1990/data/onear" --output-dir="my_results/oratory1990/harman_over-ear_2018" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --parametric-eq --parametric-eq-config=8_PEAKING_WITH_SHELVES --ten-band-eq --bass-boost=4.0 --convolution-eq --fs=44100,48000
+python -m autoeq --input-dir="measurements/oratory1990/data/onear" --output-dir="my_results/oratory1990/harman_over-ear_2018" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --parametric-eq --parametric-eq-config=4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF --ten-band-eq --bass-boost=4.0 --convolution-eq --fs=44100,48000
 ```
 
 Reproducing pre-computed results for Rtings measured IEMs:
 ```shell
-python -m autoeq --input-dir="measurements/rtings/data/inear" --output-dir="my_results/rtings/avg" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --parametric-eq --parametric-eq-config=8_PEAKING_WITH_SHELVES --ten-band-eq --bass-boost=6.0 --convolution-eq --fs=44100,48000
+python -m autoeq --input-dir="measurements/rtings/data/inear" --output-dir="my_results/rtings/avg" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --parametric-eq --parametric-eq-config=4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF --ten-band-eq --bass-boost=6.0 --convolution-eq --fs=44100,48000
 ```
 
 All parameters used for pre-computed results can be found in the `results/update.py` script.
@@ -437,7 +464,7 @@ All parameters used for pre-computed results can be found in the `results/update
 #### Equalizing Individual Headphones
 Equalizing Sennheiser HD 650 and saving results to `my_results/HD650`:
 ```shell
-python -m autoeq --input-dir="measurements/innerfidelity/data/onear/Sennheiser HD 650" --output-dir="my_results/HD650" --compensation="measurements/innerfidelity/resources/innerfidelity_harman_over-ear_2018_wo_bass.csv" --bass-boost=4 --convolution-eq --fs=44100,48000
+python -m autoeq --input-dir="measurements/innerfidelity/data/onear/Sennheiser HD 650" --output-dir="my_results/HD650" --compensation="measurements/innerfidelity/resources/innerfidelity_harman_over-ear_2018_wo_bass.csv" --bass-boost=4 --convolution-eq --parametric-eq --ten-band-eq --fs=44100,48000
 ```
 
 #### Fixed Band Equalizers
