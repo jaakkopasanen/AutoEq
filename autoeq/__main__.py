@@ -6,7 +6,7 @@ import warnings
 from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_BOOST_FC, \
-    DEFAULT_TREBLE_BOOST_Q
+    DEFAULT_TREBLE_BOOST_Q, DEFAULT_PREAMP
 from autoeq.batch_processing import batch_processing
 
 
@@ -143,6 +143,8 @@ def cli_args():
                             help='Amount of threads to use for processing results. If set to "max" all the threads '
                                  'available will be used. Using more threads result in higher memory usage. '
                                  'Defaults to 1.')
+    arg_parser.add_argument('--preamp', type=float, default=DEFAULT_PREAMP,
+                            help='Extra pre-amplification to be applied to equalizer settings in dB')
     args = vars(arg_parser.parse_args())
 
     # Replace hyphens with underscores to be compatible with the batch_processing method signature

@@ -57,7 +57,7 @@ class TestAutoEq(unittest.TestCase):
             max_gain=DEFAULT_MAX_GAIN,
             window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
             treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-            treble_gain_k=DEFAULT_TREBLE_GAIN_K, thread_count=1
+            treble_gain_k=DEFAULT_TREBLE_GAIN_K, preamp=-1.0, thread_count=1
         )
         self.assertEqual(len(frs), 2)
 

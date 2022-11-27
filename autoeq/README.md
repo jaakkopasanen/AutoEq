@@ -10,13 +10,21 @@ AutoEq [Github page](https://github.com/jaakkopasanen/AutoEq) also serves as a d
 measurements, pre-computed results and has documentation about different equalizers and how the implementation works.
 
 ### Updates
-**2022-11-27** Fixed dependencies for Apple Silicon and added `--treble-boost` parameter.
+#### 2.2.0
+Added `--preamp` parameter
 
-**2022-10-30** Restructured the project and published in PyPi. Source code moved under [autoeq](./autoeq) directory and 
+#### 2.1.1
+Fixed README in PyPi package
+
+#### 2.1.0
+Fixed dependencies for Apple Silicon and added `--treble-boost` parameter.
+
+#### 2.0.0
+Restructured the project and published in PyPi. Source code moved under [autoeq](./autoeq) directory and 
 command line usage changed from `python autoeq.py` to `python -m autoeq` with underscores `_` replaced with hyphens `-`
 in the parameter names. 
 
-**2022-09-18** Parametric eq optimizer reworked. The new optimizer supports shelf filters, has a powerful configuration
+Parametric eq optimizer reworked. The new optimizer supports shelf filters, has a powerful configuration
 system, run 10x faster, has limits for Fc, Q and gain value ranges and treats +10 kHz range as average value instead of
 trying to fix it precisely.
 

@@ -12,7 +12,7 @@ from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_T
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, \
     DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, \
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, PEQ_CONFIGS, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_Q, \
-    DEFAULT_TREBLE_BOOST_FC
+    DEFAULT_TREBLE_BOOST_FC, DEFAULT_PREAMP
 from autoeq.frequency_response import FrequencyResponse
 
 
@@ -26,7 +26,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                      tilt=None, sound_signature=None, max_gain=DEFAULT_MAX_GAIN,
                      window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, thread_count=0):
+                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, preamp=DEFAULT_PREAMP, thread_count=0):
     """Parses files in input directory and produces equalization results in output directory."""
     if not compensation and (parametric_eq or fixed_band_eq or rockbox or ten_band_eq or convolution_eq):
         raise ValueError('Compensation must be specified when equalizing.')
@@ -101,7 +101,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                     bit_depth, compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
                     fixed_band_eq_config, max_gain, window_size, treble_window_size,
                     parametric_eq, phase, rockbox, sound_signature, standardize_input,
-                    ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k)
+                    ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp)
             args_list.append(args)
 
     if not thread_count:
@@ -124,7 +124,7 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
                  compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
                  fixed_band_eq_config, max_gain, window_size, treble_window_size, parametric_eq, phase, rockbox,
                  sound_signature, standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper,
-                 treble_gain_k):
+                 treble_gain_k, preamp):
     # The method assumes fs is iterable, ensure it really is
     try:
         fs[0]
@@ -172,16 +172,18 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         treble_f_upper=treble_f_upper,
         treble_gain_k=treble_gain_k,)
 
-    fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True)
+    fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True, preamp=preamp)
 
     if parametric_eq:
-        parametric_peqs = fr.optimize_parametric_eq(parametric_eq_config, fs[0]) if parametric_eq else None
+        parametric_peqs = fr.optimize_parametric_eq(
+            parametric_eq_config, fs[0], preamp=preamp) if parametric_eq else None
         fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), parametric_peqs)
     else:
         parametric_peqs = None
 
     if fixed_band_eq:
-        fixed_band_peq = fr.optimize_fixed_band_eq(fixed_band_eq_config, fs[0])[0] if fixed_band_eq else None
+        fixed_band_peq = fr.optimize_fixed_band_eq(
+            fixed_band_eq_config, fs[0], preamp=preamp)[0] if fixed_band_eq else None
         fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' FixedBandEQ.txt'), [fixed_band_peq])
         if rockbox:
             # Write 10 band eq to Rockbox .cfg file
@@ -192,12 +194,14 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
     if convolution_eq:
         for _fs in fs:
             if phase in ['minimum', 'both']:  # Write minimum phase impulse response
-                minimum_phase_fir = fr.minimum_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
+                minimum_phase_fir = fr.minimum_phase_impulse_response(
+                    fs=_fs, f_res=f_res, normalize=True, preamp=preamp)
                 minimum_phase_ir = np.tile(minimum_phase_fir, (2, 1)).T
                 sf.write(
                     output_file_path.replace('.csv', f' minimum phase {_fs}Hz.wav'), minimum_phase_ir, _fs, bit_depth)
             if phase in ['linear', 'both']:  # Write linear phase impulse response
-                linear_phase_fir = fr.linear_phase_impulse_response(fs=_fs, f_res=f_res, normalize=True)
+                linear_phase_fir = fr.linear_phase_impulse_response(
+                    fs=_fs, f_res=f_res, normalize=True, preamp=preamp)
                 linear_phase_ir = np.tile(linear_phase_fir, (2, 1)).T
                 sf.write(
                     output_file_path.replace('.csv', f' linear phase {_fs}Hz.wav'), linear_phase_ir, _fs, bit_depth)
