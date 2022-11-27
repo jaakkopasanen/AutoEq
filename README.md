@@ -39,21 +39,6 @@ trying to fix it precisely.
 ## Usage
 AutoEq produces settings for basically all types of equalizer apps.
 
-### Convolution Equalizers
-Convolution equalizer is the most powerful type of equalizer software. These equalizers allow extremly precise control
-over the frequency response and the results are the same on all devices and platforms when using the same FIR filter.
-Convolution equalizer is the preferred way to use AutoEq results.
-
-AutoEq supports convolution equalizers with FIR filters as WAV files and with EqualizerAPO's GraphicEQ filter type. The
-default results contain FIR filters for both 44.1 kHz and 48 kHz sampling rates. Other sampling rates are supported but
-not given in the default results. EqualizerAPO's GraphicEQ works with any sampling rate.
-
-To use the FIR filters, download the appropriate WAV file and import it to the EQ software of your choice. Please keep
-in mind that not all EQ softwares support convolution. Some equalizers can load multiple FIR filters at the same time.
-Download both WAV files, create a Zip file containing both and load the Zip file to for example Roon.
-
-See [EqualizerApo](#EqualizerAPO) for instructions on how to use the GraphicEQ.
-
 ### Parametric Equalizers
 Parametric equalizers have filters (bands) with user adjustable gain, center frequency and quality Q. Keep in mind that
 parametric eq accuracy depends on the number of filters available. Usually 10 filters produce very good
@@ -109,6 +94,23 @@ Fixed band equalizer settings look like this:
 | Peaking | 4000 Hz  | 1.41 | -1.0 dB |
 | Peaking | 8000 Hz  | 1.41 | -4.1 dB |
 | Peaking | 16000 Hz | 1.41 | -7.5 dB |
+
+### Convolution Equalizers
+Convolution equalizer is the most powerful type of equalizer software. These equalizers allow extremely precise control
+over the frequency response and the results are the same on all devices and platforms when using the same FIR filter.
+
+AutoEq supports convolution equalizers with FIR filters as WAV files and with EqualizerAPO's GraphicEQ filter type. The
+default results contain FIR filters for both 44.1 kHz and 48 kHz sampling rates. Other sampling rates are supported but
+not given in the default results. EqualizerAPO's GraphicEQ works with any sampling rate.
+
+To use the FIR filters, download the appropriate WAV file and import it to the EQ software of your choice. Please keep
+in mind that not all EQ softwares support convolution. Some equalizers can load multiple FIR filters at the same time.
+Download both WAV files, create a Zip file containing both and load the Zip file to for example Roon.
+
+Convolution equalizers might produce clipping with AutoEq generated files despite the fact that AutoEq normalizes the
+impulse responses. You can add a few dB of negative preamp with `--preamp` parameter if you experience clipping.
+
+See [EqualizerApo](#EqualizerAPO) for instructions on how to use the GraphicEQ.
 
 ### Windows
 has [EqualizerAPO](#equalizerapo), [Peace](#peace) and many media players with parametric equalizers such as
