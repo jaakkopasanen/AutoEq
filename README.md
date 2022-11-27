@@ -1,10 +1,10 @@
-# AutoEQ
+# AutoEq
 **TL;DR** If you are here just looking to make your headphones sound better, find your headphone model in
 [results](./results) folder's recommended headphones list
 and follow instructions in [Usage](#usage) section.
 
 ## About This Project
-AutoEQ is a project for equalizing headphone frequency responses automatically, and it achieves this by parsing
+AutoEq is a project for equalizing headphone frequency responses automatically, and it achieves this by parsing
 frequency response measurements and producing equalization settings which correct the headphone to a neutral sound.
 This project currently has over 4000 headphones covered in the
 [results](./results) folder.
@@ -13,8 +13,8 @@ different equalizer softwares and
 [Results](#results) section for details about parameters and how the results were
 obtained.
 
-AutoEQ is not just a collection of automatically produced headphone equalization settings but also a tool for equalizing
-headphones for yourself. AutoEQ provides methods for reading data, equalizing it to a given target
+AutoEq is not just a collection of automatically produced headphone equalization settings but also a tool for equalizing
+headphones for yourself. AutoEq provides methods for reading data, equalizing it to a given target
 response and saving the results for usage with equalizers. It's possible to use different compensation (target)
 curves, apply tilt for making the headphones brighter/darker and adding a bass boost. It's even possible to make one
 headphone sound (roughly) like another headphone. For more info about equalizing see [Equalizing](#equalizing).
@@ -37,7 +37,7 @@ system, run 10x faster, has limits for Fc, Q and gain value ranges and treats +1
 trying to fix it precisely.
 
 ## Usage
-AutoEQ produces settings for basically all types of equalizer apps.
+AutoEq produces settings for basically all types of equalizer apps.
 
 ### Convolution Equalizers
 Convolution equalizer is the most powerful type of equalizer software. These equalizers allow extremly precise control
@@ -227,7 +227,7 @@ System wide parametric EQ solutions on OSX typically rely on separate plugin hos
 which does the actual equalization.
 
 Pardon the lack of documentation for these. I have not tested any of the methods myself but they have been suggested by
-helpful AutoEQ users.
+helpful AutoEq users.
 
 [SoundSource](https://rogueamoeba.com/soundsource/) is the easiest way to use AutoEq on Mac since it comes with all of the
 profiles built in. The software is however not free.
@@ -252,7 +252,7 @@ Tutorials:
 
 #### eqMac
 [eqMac](https://eqmac.app) is a Free & [Open Source](https://github.com/bitgapp/eqmac) System Wide equalizer for macOS.
-eqMac has a Free 10 Band EQ and an Unlimited Band EQ (paid) with built-in AutoEQ Integration! (Expert EQ)
+eqMac has a Free 10 Band EQ and an Unlimited Band EQ (paid) with built-in AutoEq Integration! (Expert EQ)
 <p align="center">
   <img width="512" src="https://raw.githubusercontent.com/bitgapp/eqMac/master/assets/screenshots/autoeq-promo.png"/>
 </p>
@@ -483,7 +483,7 @@ python -m autoeq --input-dir="measurements/oratory1990/data/onear/Sony WH-1000XM
 ```
 
 #### Using Sound Signatures
-AutoEQ provides a way to play around with different sound signatures easily. The use-cases include making headphones
+AutoEq provides a way to play around with different sound signatures easily. The use-cases include making headphones
 deviate from the neutral target or making one headphone sound like another.
 
 Equalizing Sennheiser HD 800 to sound like Sennheiser HD 650 using pre-computed results. Both have been measured by
@@ -524,7 +524,7 @@ python -m autoeq --input-dir="measurements/rtings/data/onear/Audeze Mobius" --ou
 ```
 
 ## Results
-The main principle used by AutoEQ for producing the equalization function is to invert the error curve. Error is the
+The main principle used by AutoEq for producing the equalization function is to invert the error curve. Error is the
 difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
 below the target at 20 Hz equalization function will have +4 dB boost at 20 Hz. In reality simply inverting the error is
 not sufficient since measurements and equalization have several problems that need to be addressed, see
@@ -637,14 +637,14 @@ Innerfidelity (Summer 2018) and Headphone.com measurements.
 
 There is very little that can be done for fighting bass inconsistencies because the same problems will be there whether
 equalization is used or not. Headphones simply have different bass responses on different listeners (heads). Therefore
-bass is taken as is in AutoEQ and equalized as if there was nothing wrong with it. Your mileage may vary. Luckily bass
+bass is taken as is in AutoEq and equalized as if there was nothing wrong with it. Your mileage may vary. Luckily bass
 has smaller impact on music and having too much bass (especially sub-bass) doesn't create problems of the same magnitude
 as having too much treble.
 
 Moving resonances around 8 to 9kHz may cause big problems if not taken into account. Spikes and dips in this range are
 of great amplitude and very narrow. If one equalizes these spikes and dips according to frequency response measurement
 in worst case scenario a spike will move in a place of dip when headphone is moved, and therefore the spike is amplified
-significantly, leading to a very sharp and piercing sound signature. To counter these problems by default AutoEQ uses heavy
+significantly, leading to a very sharp and piercing sound signature. To counter these problems by default AutoEq uses heavy
 smoothing and limited positive gain above 6 to 8kHz. This way the equalization will follow a broader trend of the region
 and will not care so much about narrow spikes and dips. Also positive gain is limited to 0dB as an extra safety measure
 against amplifying spikes due to moving the headphone. Suppressing a narrow dip even further is not an optimal thing to do but in practice has
@@ -656,12 +656,12 @@ pre-amp to prevent clipping. This negative preamp will limit maximum volume prod
 gain available. If a dedicated headphone amplifier is available or if the motherboard/soundcard can drive the headphones
 loud enough even when using high negative preamp larger `--max_gain` values can be used. By default `--max_gain` is set
 to +6dB so as not to cripple the user's volume too much. Max gain will clip the equalization curve which produces sharp kinks
-in it. Sharp changes in equalization may produce unwanted equalization artifacts. To counter this AutoEQ rounds the
+in it. Sharp changes in equalization may produce unwanted equalization artifacts. To counter this AutoEq rounds the
 corners whenever max gain clips the curve.
 
 
 ## Parametric Equalizer Optimization
-AutoEQ has an optimizer to fit several filters to the desired equalization curve. Optimization is an iterative process
+AutoEq has an optimizer to fit several filters to the desired equalization curve. Optimization is an iterative process
 where the filter parameters which provide the best results are searched until optimization finishes or any of the early
 stopping conditions are met.
 
