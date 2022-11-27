@@ -25,8 +25,8 @@ from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
     HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, \
-    DEFAULT_BIQUAD_OPTIMIZATION_F_STEP
-from autoeq.peq import PEQ, LowShelf
+    DEFAULT_BIQUAD_OPTIMIZATION_F_STEP, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q
+from autoeq.peq import PEQ, LowShelf, HighShelf
 
 warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
 
@@ -596,31 +596,45 @@ class FrequencyResponse:
                       bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
                       bass_boost_fc=DEFAULT_BASS_BOOST_FC,
                       bass_boost_q=DEFAULT_BASS_BOOST_Q,
-                      tilt=None):
+                      treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
+                      treble_boost_fc=DEFAULT_TREBLE_BOOST_FC,
+                      treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
+                      tilt=None,
+                      fs=DEFAULT_FS):
         """Creates target curve with bass boost as described by harman target response.
 
         Args:
             bass_boost_gain: Bass boost amount in dB
             bass_boost_fc: Bass boost low shelf center frequency
             bass_boost_q: Bass boost low shelf quality
+            treble_boost_gain: Treble boost amount in dB
+            treble_boost_fc: Treble boost high shelf center frequency
+            treble_boost_q: Treble boost high shelf quality
             tilt: Frequency response tilt (slope) in dB per octave, positive values make it brighter
+            fs: Sampling frequency
 
         Returns:
             Target for equalization
         """
-        bass_boost = LowShelf(self.frequency, DEFAULT_FS, fc=bass_boost_fc, q=bass_boost_q, gain=bass_boost_gain)
+        bass_boost = LowShelf(self.frequency, fs, fc=bass_boost_fc, q=bass_boost_q, gain=bass_boost_gain)
+        treble_boost = HighShelf(
+            self.frequency, fs, fc=treble_boost_fc, q=treble_boost_q, gain=treble_boost_gain)
         if tilt is not None:
             tilt = self._tilt(tilt=tilt)
         else:
             tilt = np.zeros(len(self.frequency))
-        return bass_boost.fr + tilt
+        return bass_boost.fr + treble_boost.fr + tilt
 
     def compensate(self,
                    compensation,
                    bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
                    bass_boost_fc=DEFAULT_BASS_BOOST_FC,
                    bass_boost_q=DEFAULT_BASS_BOOST_Q,
+                   treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
+                   treble_boost_fc=DEFAULT_TREBLE_BOOST_FC,
+                   treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
                    tilt=None,
+                   fs=DEFAULT_FS,
                    sound_signature=None,
                    min_mean_error=False):
         """Sets target and error curves."""
@@ -633,7 +647,11 @@ class FrequencyResponse:
             bass_boost_gain=bass_boost_gain,
             bass_boost_fc=bass_boost_fc,
             bass_boost_q=bass_boost_q,
-            tilt=tilt
+            treble_boost_gain=treble_boost_gain,
+            treble_boost_fc=treble_boost_fc,
+            treble_boost_q=treble_boost_q,
+            tilt=tilt,
+            fs=fs
         )
         if sound_signature is not None:
             # Sound signature give, add it to target curve
@@ -1263,7 +1281,11 @@ class FrequencyResponse:
                 bass_boost_gain=None,
                 bass_boost_fc=None,
                 bass_boost_q=None,
+                treble_boost_gain=None,
+                treble_boost_fc=None,
+                treble_boost_q=None,
                 tilt=None,
+                fs=DEFAULT_FS,
                 sound_signature=None,
                 max_gain=DEFAULT_MAX_GAIN,
                 concha_interference=False,
@@ -1282,6 +1304,10 @@ class FrequencyResponse:
             bass_boost_gain: Bass boost amount in dB.
             bass_boost_fc: Bass boost low shelf center frequency.
             bass_boost_q: Bass boost low shelf quality.
+            treble_boost_gain: Treble boost amount in dB.
+            treble_boost_fc: Treble boost high shelf center frequency.
+            treble_boost_q: Treble boost high shelf quality.
+            fs: Sampling frequency
             tilt: Target frequency response tilt in db / octave
             sound_signature: Sound signature as FrequencyResponse instance. Raw data will be used.
             max_gain: Maximum positive gain in dB
@@ -1302,7 +1328,11 @@ class FrequencyResponse:
             bass_boost_gain=bass_boost_gain,
             bass_boost_fc=bass_boost_fc,
             bass_boost_q=bass_boost_q,
+            treble_boost_gain=treble_boost_gain,
+            treble_boost_fc=treble_boost_fc,
+            treble_boost_q=treble_boost_q,
             tilt=tilt,
+            fs=fs,
             sound_signature=sound_signature,
             min_mean_error=min_mean_error
         )
