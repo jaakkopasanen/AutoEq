@@ -523,6 +523,17 @@ file if you want even more bass.
 python -m autoeq --input-dir="measurements/rtings/data/onear/Audeze Mobius" --output-dir="my_results/Audeze Mobius (V-signature)" --compensation="measurements/rtings/resources/rtings_compensation_avg.csv" --sound-signature="my_data/v.csv" --parametric-eq --parametric-eq-config=8_PEAKING_WITH_SHELVES --ten-band-eq --bass-boost=4.0
 ```
 
+### Building
+Build PyPi package
+```shell
+copy /y README.md README.md.bak && copy /y autoeq\README.md README.md && python -m build && copy /y README.md.bak README.md && del README
+.md.bak
+```
+publish
+```shell
+python -m twine upload dist/autoeq-<VERSION>*
+```
+
 ## Results
 The main principle used by AutoEq for producing the equalization function is to invert the error curve. Error is the
 difference between raw microphone data and the compensation (target) curve. If headphone's frequency response is 4 dB
