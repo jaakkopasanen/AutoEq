@@ -14,12 +14,10 @@ different equalizer softwares and
 obtained.
 
 AutoEQ is not just a collection of automatically produced headphone equalization settings but also a tool for equalizing
-headphones for yourself. `autoeq.py` provides methods for reading data, equalizing it to a given target
+headphones for yourself. AutoEQ provides methods for reading data, equalizing it to a given target
 response and saving the results for usage with equalizers. It's possible to use different compensation (target)
 curves, apply tilt for making the headphones brighter/darker and adding a bass boost. It's even possible to make one
-headphone sound (roughly) like another headphone. For more info about equalizing see [Equalizing](#equalizing). If
-you're looking for something light weight to install as a dependency for your own project, you'll find
-[autoeq-pkg](https://github.com/jaakkopasanen/autoeq-pkg) much more suited for your needs.
+headphone sound (roughly) like another headphone. For more info about equalizing see [Equalizing](#equalizing).
 
 Third major contribution of this project is the measurement data and compensation curves all in a numerical format
 except for Crinacle's raw data. Everything is stored as CSV files so they are easy to process with any programming
@@ -289,9 +287,9 @@ fancy graphical user interface but instead it is used from command line.
 ### Installing
 - Download and install Git: https://git-scm.com/downloads. When installing Git on Windows, use Windows SSL verification
 instead of Open SSL or you might run into problems when installing project dependencies.
-- Download and install 64-bit **[Python 3.10](https://www.python.org/getit/)**. Make sure to check *Add Python 3.10 to PATH*.
+- Download and install 64-bit **[Python 3](https://www.python.org/getit/)**. Make sure to check *Add Python 3.X to PATH*.
 - You may need to install [libsndfile](http://www.mega-nerd.com/libsndfile/) if you're having problems with `soundfile`
-when installing `requirements.txt`.
+when installing and/or running AutoEq.
 - On Linux you may need to install Python dev packages
 ```shell
 sudo apt install python3-dev python3-pip python3-venv
@@ -307,10 +305,6 @@ git clone https://github.com/jaakkopasanen/AutoEq.git
 - Go to AutoEq location
 ```shell
 cd AutoEq
-```
-- Check Python version. You should see Python 3.10.x printed out. If you see for example 3.11.x, you need to install Python **3.10**.
-```shell
-python --version
 ```
 - Create a python virtual environment
 ```shell
