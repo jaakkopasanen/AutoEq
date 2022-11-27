@@ -347,6 +347,8 @@ Cozoy Trio	Cozoy Trio	inear
 CP	Shozy & Neo CP	inear
 CRA	CCA CRA	inear
 Craft SIX	Craft Ears Craft SIX	inear
+CRBN S1	Audeze CRBN (sample 1)	onear
+CRBN S2	Audeze CRBN (sample 2)	onear
 Crescent	Moondrop Crescent	inear
 CRN Proto	KZ x Crinacle CRN (ZEX Pro)	inear
 CRN S2		ignore
@@ -853,8 +855,8 @@ IE800	Sennheiser IE 800	inear
 IE800S	Sennheiser IE 800 S	inear
 IE80S	Sennheiser IE 80 S (min)	inear
 IE80S Half	Sennheiser IE 80 S (half)	inear
-IE80S Max	Sennheiser IE 80 S (max)	inear
 IE80S max	Sennheiser IE 80 S (max)	inear
+IE80S Max	Sennheiser IE 80 S (max)	inear
 IE900	Sennheiser IE 900	inear
 IEX1	Audio-Technica ATH-IEX1	inear
 iGE	Grado iGE	inear
@@ -1008,6 +1010,7 @@ LCD-i3	Audeze LCD-i3	inear
 LCD-i3 BT Cipher	Audeze LCD-i3 (Cipher bluetooth)	inear
 LCD-i4	Audeze LCD-i4	inear
 LCD-MX4	Audeze LCD-MX4	onear
+LCD-R	Audeze LCD-R	onear
 LCD-X	Audeze LCD-X	onear
 LCD-X (2021)	Audeze LCD-X	onear
 LCD-X (7454544)	Audeze LCD-X (worn earpads) (sample 2)	onear
@@ -1172,6 +1175,7 @@ Mk2	Oriolus Japan Mk2 (sample 1)	inear
 Mk2 S2	Oriolus Japan Mk2 (sample 2)	inear
 Mk2 S3	Oriolus Japan Mk2 (sample 3)	inear
 MK801	1MORE MK801	onear
+MM-500	Audeze MM-500	onear
 Mobius (Ballistics preset)	Audeze Mobius (ballistics preset)	onear
 Mobius (Default preset)	Audeze Mobius (default preset)	onear
 Mobius (Flat preset)	Audeze Mobius (flat preset)	onear
@@ -1203,6 +1207,7 @@ Monarch S2 100ohm	ThieAudio Monarch (100 Ohm resistor)	inear
 Monarch S2 20ohm	ThieAudio Monarch (20 Ohm resistor)	inear
 Monet 17	FitEar Monet 17	inear
 Monitor 10	Pioneer Monitor 10	onear
+Moonlight	Yanyin Moonlight	inear
 MS4	Hidizs Mermaid MS4	inear
 MSR7b	Audio-Technica ATH-MSR7b	onear
 MT1	TRN MT1	inear

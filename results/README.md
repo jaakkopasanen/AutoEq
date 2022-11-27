@@ -7,7 +7,7 @@ Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > He
 Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
 model only the highest priority result will be shown in this list.
 
-This list has 3732 headphone models covered but if your headphone is missing you can create settings for
+This list has 3738 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -331,7 +331,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Anker Soundcore Life Dot 2](./rtings/rtings_harman_in-ear_2019v2/Anker%20Soundcore%20Life%20Dot%202)
 - [Anker SoundCore Life P2](./rtings/rtings_harman_in-ear_2019v2/Anker%20SoundCore%20Life%20P2)
 - [Anker SoundCore Life P3](./rtings/rtings_harman_in-ear_2019v2/Anker%20SoundCore%20Life%20P3)
-- [Anker Soundcore Life Q20](./rtings/rtings_harman_in-ear_2019v2/Anker%20Soundcore%20Life%20Q20)
+- [Anker Soundcore Life Q20](./rtings/rtings_harman_over-ear_2018/Anker%20Soundcore%20Life%20Q20)
 - [Anker Soundcore Life Q30](./rtings/rtings_harman_over-ear_2018/Anker%20Soundcore%20Life%20Q30)
 - [Anker Soundcore Life Q30 (ANC off)](./oratory1990/harman_over-ear_2018/Anker%20Soundcore%20Life%20Q30%20(ANC%20off))
 - [Anker Soundcore Life Q30 (ANC on)](./oratory1990/harman_over-ear_2018/Anker%20Soundcore%20Life%20Q30%20(ANC%20on))
@@ -408,6 +408,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [ASUS ROG Strix Fusion 700 (leather earpads)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/ASUS%20ROG%20Strix%20Fusion%20700%20(leather%20earpads))
 - [ASUS ROG Strix Fusion 700 (leather earpads, 7.1)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/ASUS%20ROG%20Strix%20Fusion%20700%20(leather%20earpads,%207.1))
 - [Atomic Floyd SuperDarts](./crinacle/harman_in-ear_2019v2/Atomic%20Floyd%20SuperDarts)
+- [Audeze CRBN](./crinacle/gras_43ag-7_harman_over-ear_2018/Audeze%20CRBN)
 - [Audeze EL8 Closed](./innerfidelity/innerfidelity_harman_over-ear_2018/Audeze%20EL8%20Closed)
 - [Audeze EL8 Open](./innerfidelity/innerfidelity_harman_over-ear_2018/Audeze%20EL8%20Open)
 - [Audeze Euclid](./oratory1990/harman_in-ear_2019v2/Audeze%20Euclid)
@@ -436,6 +437,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Audeze LCD-i3 (Cipher bluetooth)](./crinacle/harman_in-ear_2019v2/Audeze%20LCD-i3%20(Cipher%20bluetooth))
 - [Audeze LCD-i4](./crinacle/harman_in-ear_2019v2/Audeze%20LCD-i4)
 - [Audeze LCD-MX4](./oratory1990/harman_over-ear_2018/Audeze%20LCD-MX4)
+- [Audeze LCD-R](./crinacle/gras_43ag-7_harman_over-ear_2018/Audeze%20LCD-R)
 - [Audeze LCD-X](./oratory1990/harman_over-ear_2018/Audeze%20LCD-X)
 - [Audeze LCD-X (Dekoni sheepskin Earpads)](./oratory1990/harman_over-ear_2018/Audeze%20LCD-X%20(Dekoni%20sheepskin%20Earpads))
 - [Audeze LCD-X (worn earpads)](./crinacle/gras_43ag-7_harman_over-ear_2018/Audeze%20LCD-X%20(worn%20earpads)%20(sample%202))
@@ -443,6 +445,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Audeze LCD-X pre-2021](./oratory1990/harman_over-ear_2018/Audeze%20LCD-X%20pre-2021)
 - [Audeze LCD-XC](./oratory1990/harman_over-ear_2018/Audeze%20LCD-XC)
 - [Audeze LCD-XC pre-2021](./oratory1990/harman_over-ear_2018/Audeze%20LCD-XC%20pre-2021)
+- [Audeze MM-500](./crinacle/gras_43ag-7_harman_over-ear_2018/Audeze%20MM-500)
 - [Audeze Mobius](./rtings/rtings_harman_over-ear_2018/Audeze%20Mobius)
 - [Audeze Mobius (analog)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Audeze%20Mobius%20(analog))
 - [Audeze Mobius (ballistics preset)](./crinacle/gras_43ag-7_harman_over-ear_2018/Audeze%20Mobius%20(ballistics%20preset))
@@ -885,10 +888,12 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Bose QuietComfort 35 II (wireless, ANC 1)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wireless,%20ANC%201))
 - [Bose QuietComfort 35 II (wireless, ANC 2)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wireless,%20ANC%202))
 - [Bose QuietComfort 35 II (wireless, ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20(wireless,%20ANC%20off))
+- [Bose QuietComfort 35 II Gaming Headset​](./rtings/rtings_harman_over-ear_2018/Bose%20QuietComfort%2035%20II%20Gaming%20Headset%E2%80%8B)
 - [Bose QuietComfort 45](./rtings/rtings_harman_over-ear_2018/Bose%20QuietComfort%2045)
 - [Bose QuietComfort Earbuds](./rtings/rtings_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds)
 - [Bose QuietComfort Earbuds (ANC off)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds%20(ANC%20off))
 - [Bose QuietComfort Earbuds (ANC on)](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds%20(ANC%20on))
+- [Bose QuietComfort Earbuds II](./rtings/rtings_harman_in-ear_2019v2/Bose%20QuietComfort%20Earbuds%20II)
 - [Bose QuietControl 30](./rtings/rtings_harman_over-ear_2018/Bose%20QuietControl%2030)
 - [Bose SoundLink Around-Ear II](./rtings/rtings_harman_over-ear_2018/Bose%20SoundLink%20Around-Ear%20II)
 - [Bose SoundLink Around-Ear Wireless Headphones II (wired)](./referenceaudioanalyzer/referenceaudioanalyzer_hdm-x_harman_over-ear_2018/Bose%20SoundLink%20Around-Ear%20Wireless%20Headphones%20II%20(wired))
@@ -1960,7 +1965,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Jabra Elite 7 Active](./rtings/rtings_harman_in-ear_2019v2/Jabra%20Elite%207%20Active)
 - [Jabra Elite 7 Pro](./oratory1990/harman_in-ear_2019v2/Jabra%20Elite%207%20Pro)
 - [Jabra Elite 75t](./oratory1990/harman_in-ear_2019v2/Jabra%20Elite%2075t)
-- [Jabra Elite 85h](./rtings/rtings_harman_in-ear_2019v2/Jabra%20Elite%2085h)
+- [Jabra Elite 85h](./rtings/rtings_harman_over-ear_2018/Jabra%20Elite%2085h)
 - [Jabra Elite 85t](./rtings/rtings_harman_in-ear_2019v2/Jabra%20Elite%2085t)
 - [Jabra Elite Active 45e](./rtings/rtings_harman_in-ear_2019v2/Jabra%20Elite%20Active%2045e)
 - [Jabra Elite Active 65t](./crinacle/harman_in-ear_2019v2/Jabra%20Elite%20Active%2065t)
@@ -3985,7 +3990,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Turtle Beach Recon 200 Gen 2](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%20200%20Gen%202)
 - [Turtle Beach Recon 500](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%20500)
 - [Turtle Beach Recon 50X](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%2050X)
-- [Turtle Beach Recon 70](./rtings/rtings_harman_in-ear_2019v2/Turtle%20Beach%20Recon%2070)
+- [Turtle Beach Recon 70](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Recon%2070)
 - [Turtle Beach Stealth 300](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Stealth%20300)
 - [Turtle Beach Stealth 600](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Stealth%20600)
 - [Turtle Beach Stealth 600 Gen 2](./rtings/rtings_harman_over-ear_2018/Turtle%20Beach%20Stealth%20600%20Gen%202)
@@ -4225,6 +4230,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Yanyin Canon (020 setting)](./crinacle/harman_in-ear_2019v2/Yanyin%20Canon%20(020%20setting))
 - [Yanyin Canon (100 setting)](./crinacle/harman_in-ear_2019v2/Yanyin%20Canon%20(100%20setting))
 - [Yanyin Canon (123 setting)](./crinacle/harman_in-ear_2019v2/Yanyin%20Canon%20(123%20setting))
+- [Yanyin Moonlight](./crinacle/harman_in-ear_2019v2/Yanyin%20Moonlight)
 - [Yinyoo Ash](./crinacle/harman_in-ear_2019v2/Yinyoo%20Ash)
 - [Yinyoo SA18BA](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/Yinyoo%20SA18BA)
 - [Yinyoo Topaz (no filter)](./crinacle/harman_in-ear_2019v2/Yinyoo%20Topaz%20(no%20filter))
