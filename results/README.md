@@ -591,7 +591,6 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [AudioFly AF45](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/AudioFly%20AF45)
 - [AudioFly AF56](./referenceaudioanalyzer/referenceaudioanalyzer_siec_harman_in-ear_2019v2/AudioFly%20AF56)
 - [AudioQuest NightHawk](./oratory1990/harman_over-ear_2018/AudioQuest%20NightHawk)
-- [AudioQuest NightHawk (Brainwavz HM5 hybrid earpads)](./oratory1990/harman_over-ear_2018/AudioQuest%20NightHawk%20(Brainwavz%20HM5%20hybrid%20earpads))
 - [AudioQuest NightHawk (Shure SRH1540 alcantara earpads)](./oratory1990/harman_over-ear_2018/AudioQuest%20NightHawk%20(Shure%20SRH1540%20alcantara%20earpads))
 - [AudioQuest NightOwl](./oratory1990/harman_over-ear_2018/AudioQuest%20NightOwl)
 - [Audiosense AQ3](./crinacle/harman_in-ear_2019v2/Audiosense%20AQ3)
