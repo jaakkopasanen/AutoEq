@@ -25,7 +25,7 @@ class MeasurementData(BaseModel):
     raw: str
 
 
-class Optimizer:
+class Optimizer(BaseModel):
     min_f: Optional[float]
     max_f: Optional[float]
     max_time: Optional[float]
@@ -39,7 +39,7 @@ class FilterTypeEnum(str, Enum):
     PEAKING = 'PEAKING'
 
 
-class Filter:
+class Filter(BaseModel):
     type: Optional[str]
     min_fc: Optional[float]
     max_fc: Optional[float]
@@ -89,6 +89,7 @@ class EqualizeRequest(BaseModel):
     def only_one_eq_type(cls, values):
         keys = ['parametric_eq', 'fixed_band_eq', 'equalizer_apo_graphic_eq', 'convolution_eq']
         assert len([key for key in keys if values.get(key)]) < 2, 'Only one equalizer type is allowed'
+        return values
 
     @validator('parametric_eq_config')
     def parametric_eq_config_name(cls, v):
@@ -98,11 +99,13 @@ class EqualizeRequest(BaseModel):
             for config in v:
                 if type(config) == str:
                     assert config in PEQ_CONFIGS, f'Unknown parametric eq config name "{config}"'
+        return v
 
     @validator('fixed_band_eq_config')
     def fixed_band_eq_config_name(cls, v):
         if type(v) == str:
             assert v in PEQ_CONFIGS, f'Unknown fixed band eq config name "{v}"'
+        return v
 
 
 @app.get('/')
@@ -142,7 +145,7 @@ def equalize(req: EqualizeRequest):
         treble_f_upper=req.treble_f_upper,
         treble_gain_k=req.treble_gain_k)
 
-    res = fr.to_dict()
+    res = {'fr': fr.to_dict()}
 
     if req.parametric_eq:
         parametric_eq_config = req.parametric_eq_config
