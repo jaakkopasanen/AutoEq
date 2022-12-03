@@ -524,6 +524,13 @@ class PEQ:
             tablefmt='github'
         )
 
+    def to_dict(self):
+        """PEQ as dictionary"""
+        return {
+            'fs': self.fs,
+            'filters': [{'fc': filt.fc, 'q': filt.q, 'gain': filt.gain} for filt in self.filters]
+        }
+
     def _parse_optimizer_params(self, params):
         """Extracts fc, q and gain from optimizer params and updates filters
 
@@ -677,7 +684,6 @@ class PEQ:
         except OptimizationFinished as err:
             # Restore best params
             self._parse_optimizer_params(self.history.params[np.argmin(self.history.loss)])
-            #print(err)
 
     def plot(self, fig=None, ax=None):
         if fig is None:
