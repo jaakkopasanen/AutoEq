@@ -1,46 +1,88 @@
 import React from 'react';
-import {LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, Tooltip, ResponsiveContainer} from 'recharts';
+import {LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer} from 'recharts';
+import {Grid, Switch} from "@mui/material";
 
 class FrequencyResponseGraph extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            show: {
+                'Frequency Response': true,
+                'Error': true,
+                'Target': true,
+                'Equalizer': true,
+                'Equalized': true
+            },
+            smoothed: true,
         };
+        this.onSmoothedChanged = this.onSmoothedChanged.bind(this);
+        this.onLegendItemClick = this.onLegendItemClick.bind(this);
+    }
+
+    onSmoothedChanged(e) {
+        this.setState({ smoothed: e.target.checked });
     }
 
     onLegendItemClick(item) {
-        console.log(item);
+        const newState = { ...this.state };
+        newState.show[item.value] = !this.state.show[item.value];
+        this.setState(newState);
+    }
+
+    yRange(data) {
+        const vals = [];
+        for (const dataPoint of data) {
+            for (const [key, val] of Object.entries(dataPoint)) {
+                if (key === 'frequency') {
+                    continue;
+                }
+                vals.push(val);
+            }
+        }
+        const dataMin = Math.min(...vals);
+        const dataMax = Math.max(...vals);
+        const dataRange = dataMax - dataMin;
+        return [dataMin, dataMax, dataRange];
     }
 
     render() {
-        const data = [{frequency: 20, raw: 0.0}, {frequency: 613, raw: 0.8}, {frequency: 20e3, raw: 1}]
-        const dataMin = Math.min(...data.map(o => o.raw));
-        const dataMax = Math.max(...data.map(o => o.raw));
+        if (!this.props.data) {
+            return null;
+        }
+        const [dataMin, dataMax, dataRange] = this.yRange(this.props.data);
         return (
-            <ResponsiveContainer aspect={2.5}>
-                <LineChart data={data}>
-                    <Line dataKey='raw' type='linear' dot={true} stroke='#8884d8' isAnimationActive={false} />
-                    <CartesianGrid stroke='#cfcfcf' />
-                    <XAxis
-                        dataKey='frequency' scale='log' domain={[20, 20e3]} type='number'
-                        fontFamily={'"Roboto", "Helvetica", "Arial", sans-serif'}
-                    />
-                    <YAxis
-                        scale='linear'
-                        domain={[
-                            dataMin - (dataMax - dataMin) * 0.1,
-                            dataMax + (dataMax - dataMin) * 0.1
-                        ]}
-                        fontFamily={'"Roboto", "Helvetica", "Arial", sans-serif'}
-                    />
-                    <Legend
-                        layout='vertical' align='right' verticalAlign='middle' onClick={this.onLegendItemClick}
-                        wrapperStyle={{fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif'}}
-                    />
-                    <Tooltip />
-                </LineChart>
-            </ResponsiveContainer>
+            <Grid container>
+                <Grid item container xs={12}>
+                    <Switch checked={this.state.smoothed} label='Smoothed' onChange={this.onSmoothedChanged} />
+                </Grid>
+                <ResponsiveContainer aspect={2.5} xs={12}>
+                    <LineChart data={this.props.data}>
+                        <Line dataKey={this.state.show['Target'] ? 'target' : ''} name='Target' type='linear' dot={false} stroke={this.state.show['Target'] ? '#7bc8f6' : '#999'} strokeWidth={7.5} isAnimationActive={false} />
+                        <Line dataKey={this.state.show['Frequency Response'] ? this.state.smoothed ? 'smoothed' : 'raw' : ''} name='Frequency Response' type='linear' dot={false} stroke={this.state.show['Frequency Response'] ? '#000' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
+                        <Line dataKey={this.state.show['Error'] ? this.state.smoothed ? 'error_smoothed' : 'error' : ''} name='Error' type='linear' dot={false} stroke={this.state.show['Error'] ? '#d62728' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
+                        <Line dataKey={this.state.show['Equalizer'] ? 'equalization' : ''} name='Equalizer' type='linear' dot={false} stroke={this.state.show['Equalizer'] ? '#2ca02c' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
+                        <Line dataKey={this.state.show['Equalized'] ? this.state.smoothed ? 'equalized_smoothed' : 'equalized_raw' : ''} name='Equalized' type='linear' dot={false} stroke={this.state.show['Equalized'] ? '#0343df' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
+
+                        <CartesianGrid stroke='#cfcfcf' />
+                        <XAxis
+                            dataKey='frequency'
+                            scale='log' domain={[20, 20e3]} type='number'
+                            ticks={[20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000]}
+                            fontFamily={'"Roboto", "Helvetica", "Arial", sans-serif'}
+                        />
+                        <YAxis
+                            scale='linear' domain={[ dataMin - dataRange * 0.1, dataMax + dataRange * 0.1 ]}
+                            type='number'
+                            tickCount={10}
+                            fontFamily={'"Roboto", "Helvetica", "Arial", sans-serif'}
+                        />
+                        <Legend
+                            layout='vertical' align='right' verticalAlign='middle' onClick={this.onLegendItemClick}
+                            wrapperStyle={{fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif'}}
+                        />
+                    </LineChart>
+                </ResponsiveContainer>
+            </Grid>
         );
     }
 

@@ -1,3 +1,4 @@
+import json
 import os
 from enum import Enum
 from io import BytesIO
@@ -18,9 +19,16 @@ from autoeq.constants import DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEF
 from autoeq.frequency_response import FrequencyResponse
 
 ROOT_DIR = Path().resolve()
+
 app = FastAPI()
 if os.getenv('NODE_ENV') == 'production':
     app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('ui/build'), html=True), name='static')
+
+with open('measurements.json') as fh:
+    measurements = json.load(fh)
+
+with open('compensations.json') as fh:
+    compensations = json.load(fh)
 
 
 class MeasurementData(BaseModel):
@@ -58,13 +66,11 @@ class PEQConfig(BaseModel):
     filters: list[Filter]
 
 
-class PhaseEnum(str, Enum):
-    minimum = 'minimum'
-    linear = 'linear'
-
-
 class EqualizeRequest(BaseModel):
-    measurement: Union[str, MeasurementData]
+    measurement: Optional[MeasurementData]
+    name: Optional[str]
+    source: Optional[str]
+    rig: Optional[str]
     compensation: Union[str, MeasurementData]
     bass_boost_gain = DEFAULT_BASS_BOOST_GAIN
     bass_boost_fc = DEFAULT_BASS_BOOST_FC
@@ -90,6 +96,7 @@ class EqualizeRequest(BaseModel):
 
     @root_validator
     def only_one_eq_type(cls, values):
+        assert values.get('measurement') or (values.get('name') and values.get('source') and values.get('rig'))
         keys = ['parametric_eq', 'fixed_band_eq', 'equalizer_apo_graphic_eq', 'convolution_eq']
         assert len([key for key in keys if values.get(key)]) < 2, 'Only one equalizer type is allowed'
         return values
@@ -113,13 +120,16 @@ class EqualizeRequest(BaseModel):
 
 @app.post('/equalize')
 def equalize(req: EqualizeRequest):
-    if type(req.measurement) == str:
-        fr = FrequencyResponse.read_from_csv(ROOT_DIR.joinpath('measurements', f'{req.measurement}.csv'))
-    else:
+    if req.measurement:  # Custom measurement data provided
         fr = FrequencyResponse(name='fr', frequency=req.measurement.frequency, raw=req.measurement.raw)
-
+    else:  # Named measurement
+        measurement = measurements[req.name][req.source][req.rig]
+        fr = FrequencyResponse(name='fr', frequency=measurement['frequency'], raw=measurement['raw'])
     if type(req.compensation) == str:
-        compensation = FrequencyResponse.read_from_csv(ROOT_DIR.joinpath('compensation', f'{req.compensation}.csv'))
+        #compensation = FrequencyResponse.read_from_csv(ROOT_DIR.joinpath('compensation', f'{req.compensation}.csv'))
+        compensation = compensations[req.compensation]
+        compensation = FrequencyResponse(
+            name='compensation', frequency=compensation['frequency'], raw=compensation['raw'])
     else:
         compensation = FrequencyResponse(
             name='compensation', frequency=req.compensation.frequency, raw=req.compensation.raw)
@@ -176,6 +186,11 @@ class BitDepthEnum(int, Enum):
     PCM_16 = 16
     PCM_24 = 24
     PCM_32 = 32
+
+
+class PhaseEnum(str, Enum):
+    minimum = 'minimum'
+    linear = 'linear'
 
 
 class ConvolutionEqRequest(BaseModel):

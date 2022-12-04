@@ -11,12 +11,51 @@ function GitHubIcon(props) {
 }
 
 class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { measurements: null, measurement: null };
+        this.fetchMeasurements = this.fetchMeasurements.bind(this);
+        this.onHeadphonesSelected = this.onHeadphonesSelected.bind(this);
+    }
+
+    async fetchMeasurements() {
+        const data = await fetch('/entries.json').then(res => res.json()).catch((err) => {
+            throw err;
+        });
+        const measurements = [];
+        for (const [headphone, details] of Object.entries(data)) {
+            measurements.push({ label: headphone, ...details });
+        }
+        this.setState({measurements: measurements})
+    }
+
+    componentDidMount() {
+        this.fetchMeasurements();
+    }
+
+    async onHeadphonesSelected(e, val) {
+        const data = await fetch('/equalize', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                name: val.label, source: val[0].source, rig: val[0].rig,
+                compensation: 'harman_over-ear_2018',  // TODO!
+            })
+        }).then(res => res.json()).catch(err => {
+            throw err;
+        });
+        const measurement = [];
+        for (let i = 0; i < data.fr.frequency.length; ++i) {
+            const dataPoint = {};
+            for (const key of Object.keys(data.fr)) {
+                dataPoint[key] = data.fr[key][i];
+            }
+            measurement.push(dataPoint);
+        }
+        this.setState({ measurement });
+    }
+
     render() {
-        const measurements = [
-            {label: 'Sennheiser HD 800', source: 'oratory1990'},
-            {label: 'Sennheiser HD 600', source: 'oratory1990'},
-            {label: 'Sennheiser HD 600', source: 'Crinacle'},
-        ];
         return (
             <Grid container>
                 <Box item xs={12} sx={{width: '100%', padding: 1}}>
@@ -24,25 +63,38 @@ class App extends React.Component {
                         <Box item>
                             <Typography variant='h1' sx={{fontSize: '2rem'}}>AutoEq</Typography>
                         </Box>
-                        <Box item sx={{width: '50%'}}>
-                            <Autocomplete
-                                renderInput={(params) => <TextField {...params} label="Select headphones" />}
-                                options={measurements}
-                                size='large'
-                            />
+                        <Box item sx={{
+                            width: '50%',
+                            position: 'relative',
+                            top: this.state.measurement ? 0 : '40vh'
+                        }}>
+                            {this.state.measurements && (
+                                <Autocomplete
+                                    renderInput={(params) => <TextField {...params} label="Select headphones" />}
+                                    options={this.state.measurements}
+                                    size='large'
+                                    onChange={this.onHeadphonesSelected}
+                                />
+                            )}
                         </Box>
                         <Box item>
                             <Link href="https://github.com/jaakkopasanen/AutoEq" target="_blank" rel="noopener">
-                                <Button variant="contained" startIcon={<GitHubIcon />}>Watch</Button>
+                                <Button
+                                    variant="contained" color='inherit' size='large'
+                                    startIcon={<GitHubIcon />}
+                                    sx={{color: '#000'}}
+                                >Github</Button>
                             </Link>
                         </Box>
                     </Grid>
                 </Box>
-                <Container item sx={{marginTop: 1}}>
-                    <Paper>
-                        <FrequencyResponseGraph />
-                    </Paper>
-                </Container>
+                {this.state.measurement && (
+                    <Container item sx={{marginTop: 1}}>
+                        <Paper sx={{padding: 4}}>
+                            <FrequencyResponseGraph data={this.state.measurement} />
+                        </Paper>
+                    </Container>
+                )}
             </Grid>
         );
     }
