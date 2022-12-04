@@ -1,13 +1,14 @@
+import os
 from enum import Enum
 from io import BytesIO
 from pathlib import Path
 import numpy as np
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
-from pydantic import BaseModel, validator, root_validator, ValidationError
+from fastapi.responses import FileResponse, StreamingResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel, validator, root_validator
 from typing import Union, Optional
 import soundfile as sf
-from starlette.responses import StreamingResponse
 
 from autoeq.constants import DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, \
     DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, DEFAULT_TILT, DEFAULT_FS, \
@@ -16,8 +17,10 @@ from autoeq.constants import DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEF
     PEQ_CONFIGS, DEFAULT_BIT_DEPTH
 from autoeq.frequency_response import FrequencyResponse
 
-ROOT_DIR = Path().resolve().parent
+ROOT_DIR = Path().resolve()
 app = FastAPI()
+if os.getenv('NODE_ENV') == 'production':
+    app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('ui/build'), html=True), name='static')
 
 
 class MeasurementData(BaseModel):
@@ -108,12 +111,7 @@ class EqualizeRequest(BaseModel):
         return v
 
 
-@app.get('/')
-def read_root():
-    return 'Hello, world!'
-
-
-@app.post('/')
+@app.post('/equalize')
 def equalize(req: EqualizeRequest):
     if type(req.measurement) == str:
         fr = FrequencyResponse.read_from_csv(ROOT_DIR.joinpath('measurements', f'{req.measurement}.csv'))
