@@ -7,16 +7,32 @@ class FrequencyResponseGraph extends React.Component {
         super(props);
         this.state = {
             show: {
-                'Frequency Response': true,
-                'Error': true,
-                'Target': true,
-                'Equalizer': true,
-                'Equalized': true
+                raw: true,
+                error: true,
+                target: true,
+                equalization: true,
+                equalized: true
             },
             smoothed: true,
+            height: 0,
+            width: 0,
         };
         this.onSmoothedChanged = this.onSmoothedChanged.bind(this);
         this.onLegendItemClick = this.onLegendItemClick.bind(this);
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    }
+
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
 
     onSmoothedChanged(e) {
@@ -50,19 +66,25 @@ class FrequencyResponseGraph extends React.Component {
             return null;
         }
         const [dataMin, dataMax, dataRange] = this.yRange(this.props.data);
+        let aspect = 1.5;
+        if (this.state.width >= 900) {
+            aspect = 2.5;
+        } else if (this.state.width >= 600) {
+            aspect = 2.0;
+        }
         return (
             <Grid container>
                 <Grid item container xs={12} justifyContent='end' alignItems='center'>
                     <Typography>Smoothed</Typography>
                     <Switch checked={this.state.smoothed} label='Smoothed' onChange={this.onSmoothedChanged} />
                 </Grid>
-                <ResponsiveContainer aspect={1.5} xs={12}>
+                <ResponsiveContainer width='100%' aspect={aspect} xs={12}>
                     <LineChart data={this.props.data} margin={{top: 0, left: -30, bottom: 0, right: 0}}>
-                        <Line dataKey={this.state.show['Target'] ? 'target' : ''} name='Target' type='linear' dot={false} stroke={this.state.show['Target'] ? '#7bc8f6' : '#999'} strokeWidth={7.5} isAnimationActive={false} />
-                        <Line dataKey={this.state.show['Frequency Response'] ? this.state.smoothed ? 'smoothed' : 'raw' : ''} name='Frequency Response' type='linear' dot={false} stroke={this.state.show['Frequency Response'] ? '#000' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
-                        <Line dataKey={this.state.show['Error'] ? this.state.smoothed ? 'error_smoothed' : 'error' : ''} name='Error' type='linear' dot={false} stroke={this.state.show['Error'] ? '#d62728' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
-                        <Line dataKey={this.state.show['Equalizer'] ? 'equalization' : ''} name='Equalizer' type='linear' dot={false} stroke={this.state.show['Equalizer'] ? '#2ca02c' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
-                        <Line dataKey={this.state.show['Equalized'] ? this.state.smoothed ? 'equalized_smoothed' : 'equalized_raw' : ''} name='Equalized' type='linear' dot={false} stroke={this.state.show['Equalized'] ? '#0343df' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
+                        <Line dataKey={this.state.show.target ? 'target' : ''} name='Target' type='linear' dot={false} stroke={this.state.show.target ? '#7bc8f6' : '#999'} strokeWidth={7.5} isAnimationActive={false} />
+                        <Line dataKey={this.state.show.raw ? this.state.smoothed ? 'smoothed' : 'raw' : ''} name='Frequency Response' type='linear' dot={false} stroke={this.state.show.raw ? '#000' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
+                        <Line dataKey={this.state.show.error ? this.state.smoothed ? 'error_smoothed' : 'error' : ''} name='Error' type='linear' dot={false} stroke={this.state.show.error ? '#d62728' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
+                        <Line dataKey={this.state.show.equalization ? 'equalization' : ''} name='Equalizer' type='linear' dot={false} stroke={this.state.show.equalization ? '#2ca02c' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
+                        <Line dataKey={this.state.show.equalized ? this.state.smoothed ? 'equalized_smoothed' : 'equalized_raw' : ''} name='Equalized' type='linear' dot={false} stroke={this.state.show.equalized ? '#0343df' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
 
                         <CartesianGrid stroke='#cfcfcf' />
                         <XAxis
@@ -79,9 +101,8 @@ class FrequencyResponseGraph extends React.Component {
                         />
                         <Legend
                             onClick={this.onLegendItemClick}
-                            // layout='vertical' align='right' verticalAlign='middle'
-                            // margin={{top: 0, left: 10, right: 0, bottom: 0}}
-                            wrapperStyle={{fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif', right: -10}}
+                            padding={{top: 0, left: 10, right: 10, bottom: 0}}
+                            wrapperStyle={{fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif', left: 0, right: 0, width: 'auto'}}
                         />
                     </LineChart>
                 </ResponsiveContainer>

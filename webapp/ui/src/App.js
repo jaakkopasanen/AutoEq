@@ -90,7 +90,14 @@ class App extends React.Component {
                 </Box>
                 {this.state.measurement && (
                     <Container item sx={{marginTop: 1}}>
-                        <Paper sx={{padding: {xs: 0, sm: 2, md: 4}, paddingTop: 1}}>
+                        <Paper
+                            sx={{
+                                pt: 1,
+                                pl: {xs: 0, sm: 2, md: 4},
+                                pr: {xs: 0, sm: 2, md: 4},
+                                pb: {xs: 0, sm: 2, md: 4},
+                            }}
+                        >
                             <FrequencyResponseGraph data={this.state.measurement} />
                         </Paper>
                     </Container>
