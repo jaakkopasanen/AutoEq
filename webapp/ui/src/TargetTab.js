@@ -16,7 +16,7 @@ class TargetTab extends React.Component {
                                 }
                                 options={this.props.compensations}
                                 onChange={(e, val) => {
-                                    this.props.onEqParamChanged('compensation', val.name)
+                                    this.props.onEqParamChanged('compensation', val?.name)
                                 }}
                                 sx={{width: '100%'}}
                             />
@@ -31,7 +31,7 @@ class TargetTab extends React.Component {
                                 }
                                 options={this.props.measurements}
                                 onChange={(e, val) => {
-                                    this.props.onEqParamChanged('sound_signature', val.name)
+                                    this.props.onEqParamChanged('sound_signature', val?.name)
                                 }}
                                 sx={{width: '100%'}}
                             />

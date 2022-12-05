@@ -117,7 +117,7 @@ class App extends React.Component {
     render() {
         return (
             <Grid container direction='column'>
-                <Grid item sx={{width: '100%', padding: 1}}>
+                <Grid item sx={{width: '100%', padding: 1, background: '#fff'}}>
                     <TopBar
                         isMeasurementSelected={!!this.state.selectedMeasurement}
                         measurements={this.state.measurements}
@@ -142,20 +142,26 @@ class App extends React.Component {
                                 </Grid>
                                 <Grid item>
                                     <Paper>
-                                        <Tabs value={this.state.activeTab} onChange={this.onActiveTabChanged}>
-                                            <Tab label='Target' id='tab-target' value='target' />
-                                            <Tab label='Parametric Eq' id='tab-parametric-eq' value='parametric-eq' />
-                                            <Tab label='Fixed Band Eq' id='tab-graphic-eq' value='fixed-band-eq' />
-                                            <Tab label='Convolution Eq' id='tab-convolution-eq' value='convolution-eq' />
-                                        </Tabs>
-                                        {this.state.activeTab === 'target' && (
-                                            <TargetTab
-                                                compensations={ this.state.compensations }
-                                                measurements={ this.state.measurements }
-                                                eqParams={ this.state.eqParams }
-                                                onEqParamChanged={this.onEqParamChanged}
-                                            />
-                                        )}
+                                        <Grid container direction='column'>
+                                            <Grid item>
+                                                <Tabs value={this.state.activeTab} onChange={this.onActiveTabChanged}>
+                                                    <Tab label='Target' id='tab-target' value='target' />
+                                                    <Tab label='Parametric Eq' id='tab-parametric-eq' value='parametric-eq' />
+                                                    <Tab label='Fixed Band Eq' id='tab-graphic-eq' value='fixed-band-eq' />
+                                                    <Tab label='Convolution Eq' id='tab-convolution-eq' value='convolution-eq' />
+                                                </Tabs>
+                                            </Grid>
+                                            <Grid item sx={{pt: 1}}>
+                                                {this.state.activeTab === 'target' && (
+                                                    <TargetTab
+                                                        compensations={ this.state.compensations }
+                                                        measurements={ this.state.measurements }
+                                                        eqParams={ this.state.eqParams }
+                                                        onEqParamChanged={this.onEqParamChanged}
+                                                    />
+                                                )}
+                                            </Grid>
+                                        </Grid>
                                     </Paper>
                                 </Grid>
                             </Grid>

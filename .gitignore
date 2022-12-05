@@ -86,7 +86,6 @@ celerybeat-schedule
 .venv
 venv/
 ENV/
-env/
 
 # Spyder project settings
 .spyderproject
@@ -114,3 +113,4 @@ measurements/crinacle/*data*/
 measurements/crinacle/Raw measurements (Patreon)/
 results/crinacle/*/*/*.csv
 chromedriver*
+webapp/data/

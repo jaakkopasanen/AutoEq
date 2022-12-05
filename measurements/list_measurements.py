@@ -64,6 +64,36 @@ def write_compensations():
         {'name': 'harman_over-ear_2018', 'label': 'Harman Over-ear 2018', 'compatible': [
             ('crinacle', 'onear', 'GRAS 43AG-7'), ('oratory1990', 'onear', 'unknown')
         ]},
+        {'name': 'headphonecom_harman_in-ear_2019v2', 'label': 'Headphone.com (legacy) Harman In-ear 2019v2', 'compatible': [
+            ('headphonecom', 'inear', 'unknown')
+        ]},
+        {'name': 'headphonecom_harman_over-ear_2018', 'label': 'Headphone.com (legacy) Harman Over-ear 2018', 'compatible': [
+            ('headphonecom', 'onear', 'unknown')
+        ]},
+        {'name': 'innerfidelity_harman_in-ear_2019v2', 'label': 'Innerfidelity Harman In-ear 2019v2', 'compatible': [
+            ('innerfidelity', 'inear', 'unknown')
+        ]},
+        {'name': 'innerfidelity_harman_over-ear_2018', 'label': 'Innerfidelity Harman Over-ear 2018', 'compatible': [
+            ('innerfidelity', 'onear', 'unknown')
+        ]},
+        {'name': 'oratory1990', 'label': 'oratory1990', 'compatible': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ]},
+        {'name': 'referenceaudioanalyzer_hdm1_harman_over-ear_2018', 'label': 'RAA HDM-1 Harman Over-ear 2018', 'compatible': [
+            ('referenceaudioanalyzer', 'onear', 'HDM1')
+        ]},
+        {'name': 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018', 'label': 'RAA HDM-X Harman Over-ear 2018', 'compatible': [
+            ('referenceaudioanalyzer', 'onear', 'HDM-X')
+        ]},
+        {'name': 'referenceaudioanalyzer_siec_harman_in-ear_2019v2', 'label': 'RAA SIEC Harman Over-ear 2019', 'compatible': [
+            ('referenceaudioanalyzer', 'inear', 'SIEC')
+        ]},
+        {'name': 'rtings_harman_in-ear_2019v2', 'label': 'Rtings Harman In-ear 2019v2', 'compatible': [
+            ('rtings', 'inear', 'unknown')
+        ]},
+        {'name': 'rtings_harman_over-ear_2018', 'label': 'Rtings Harman Over-ear 2018', 'compatible': [
+            ('rtings', 'onear', 'unknown')
+        ]},
     ]
     for compensation in compensations:
         fp = path.parent.joinpath('compensation', f'{compensation["name"]}.csv')
@@ -73,7 +103,7 @@ def write_compensations():
 
 
 def main():
-    write_entries_and_measurements()
+    #write_entries_and_measurements()
     write_compensations()
 
 
