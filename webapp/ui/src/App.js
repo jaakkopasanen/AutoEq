@@ -19,7 +19,7 @@ class App extends React.Component {
     }
 
     async fetchMeasurements() {
-        const data = await fetch('/entries.json').then(res => res.json()).catch((err) => {
+        const data = await fetch('/entries').then(res => res.json()).catch((err) => {
             throw err;
         });
         const measurements = [];
@@ -60,11 +60,11 @@ class App extends React.Component {
             <Grid container>
                 <Box item xs={12} sx={{width: '100%', padding: 1}}>
                     <Grid container justifyContent='space-between' alignItems='center'>
-                        <Box item>
+                        <Box item sx={{display: {xs: 'none', sm: 'block'}}}>
                             <Typography variant='h1' sx={{fontSize: '2rem'}}>AutoEq</Typography>
                         </Box>
                         <Box item sx={{
-                            width: '50%',
+                            width: {xs: '100%', sm: '50%'},
                             position: 'relative',
                             top: this.state.measurement ? 0 : '40vh'
                         }}>
@@ -77,7 +77,7 @@ class App extends React.Component {
                                 />
                             )}
                         </Box>
-                        <Box item>
+                        <Box item sx={{display: {xs: 'none', sm: 'block'}}}>
                             <Link href="https://github.com/jaakkopasanen/AutoEq" target="_blank" rel="noopener">
                                 <Button
                                     variant="contained" color='inherit' size='large'
@@ -90,7 +90,7 @@ class App extends React.Component {
                 </Box>
                 {this.state.measurement && (
                     <Container item sx={{marginTop: 1}}>
-                        <Paper sx={{padding: 4}}>
+                        <Paper sx={{padding: {xs: 0, sm: 2, md: 4}, paddingTop: 1}}>
                             <FrequencyResponseGraph data={this.state.measurement} />
                         </Paper>
                     </Container>

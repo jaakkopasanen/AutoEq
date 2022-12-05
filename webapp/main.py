@@ -24,11 +24,19 @@ app = FastAPI()
 if os.getenv('NODE_ENV') == 'production':
     app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('ui/build'), html=True), name='static')
 
-with open('measurements.json') as fh:
+with open('data/entries.json') as fh:
+    entries = json.load(fh)
+
+with open('data/measurements.json') as fh:
     measurements = json.load(fh)
 
-with open('compensations.json') as fh:
+with open('data/compensations.json') as fh:
     compensations = json.load(fh)
+
+
+@app.get('/entries')
+def get_entries():
+    return entries
 
 
 class MeasurementData(BaseModel):

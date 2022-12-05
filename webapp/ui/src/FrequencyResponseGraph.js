@@ -1,6 +1,6 @@
 import React from 'react';
 import {LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer} from 'recharts';
-import {Grid, Switch} from "@mui/material";
+import {Grid, Switch, Typography} from "@mui/material";
 
 class FrequencyResponseGraph extends React.Component {
     constructor(props) {
@@ -52,11 +52,12 @@ class FrequencyResponseGraph extends React.Component {
         const [dataMin, dataMax, dataRange] = this.yRange(this.props.data);
         return (
             <Grid container>
-                <Grid item container xs={12}>
+                <Grid item container xs={12} justifyContent='end' alignItems='center'>
+                    <Typography>Smoothed</Typography>
                     <Switch checked={this.state.smoothed} label='Smoothed' onChange={this.onSmoothedChanged} />
                 </Grid>
-                <ResponsiveContainer aspect={2.5} xs={12}>
-                    <LineChart data={this.props.data}>
+                <ResponsiveContainer aspect={1.5} xs={12}>
+                    <LineChart data={this.props.data} margin={{top: 0, left: -30, bottom: 0, right: 0}}>
                         <Line dataKey={this.state.show['Target'] ? 'target' : ''} name='Target' type='linear' dot={false} stroke={this.state.show['Target'] ? '#7bc8f6' : '#999'} strokeWidth={7.5} isAnimationActive={false} />
                         <Line dataKey={this.state.show['Frequency Response'] ? this.state.smoothed ? 'smoothed' : 'raw' : ''} name='Frequency Response' type='linear' dot={false} stroke={this.state.show['Frequency Response'] ? '#000' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
                         <Line dataKey={this.state.show['Error'] ? this.state.smoothed ? 'error_smoothed' : 'error' : ''} name='Error' type='linear' dot={false} stroke={this.state.show['Error'] ? '#d62728' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
@@ -77,8 +78,10 @@ class FrequencyResponseGraph extends React.Component {
                             fontFamily={'"Roboto", "Helvetica", "Arial", sans-serif'}
                         />
                         <Legend
-                            layout='vertical' align='right' verticalAlign='middle' onClick={this.onLegendItemClick}
-                            wrapperStyle={{fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif'}}
+                            onClick={this.onLegendItemClick}
+                            // layout='vertical' align='right' verticalAlign='middle'
+                            // margin={{top: 0, left: 10, right: 0, bottom: 0}}
+                            wrapperStyle={{fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif', right: -10}}
                         />
                     </LineChart>
                 </ResponsiveContainer>
