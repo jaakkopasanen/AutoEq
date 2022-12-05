@@ -39,9 +39,9 @@ class FrequencyResponseGraph extends React.Component {
         this.setState({ smoothed: e.target.checked });
     }
 
-    onLegendItemClick(item) {
+    onLegendItemClick(legendItem) {
         const newState = { ...this.state };
-        newState.show[item.value] = !this.state.show[item.value];
+        newState.show[legendItem.value] = !this.state.show[legendItem.value];
         this.setState(newState);
     }
 
@@ -80,11 +80,57 @@ class FrequencyResponseGraph extends React.Component {
                 </Grid>
                 <ResponsiveContainer width='100%' aspect={aspect} xs={12}>
                     <LineChart data={this.props.data} margin={{top: 0, left: -30, bottom: 0, right: 0}}>
-                        <Line dataKey={this.state.show.target ? 'target' : ''} name='Target' type='linear' dot={false} stroke={this.state.show.target ? '#7bc8f6' : '#999'} strokeWidth={7.5} isAnimationActive={false} />
-                        <Line dataKey={this.state.show.raw ? this.state.smoothed ? 'smoothed' : 'raw' : ''} name='Frequency Response' type='linear' dot={false} stroke={this.state.show.raw ? '#000' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
-                        <Line dataKey={this.state.show.error ? this.state.smoothed ? 'error_smoothed' : 'error' : ''} name='Error' type='linear' dot={false} stroke={this.state.show.error ? '#d62728' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
-                        <Line dataKey={this.state.show.equalization ? 'equalization' : ''} name='Equalizer' type='linear' dot={false} stroke={this.state.show.equalization ? '#2ca02c' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
-                        <Line dataKey={this.state.show.equalized ? this.state.smoothed ? 'equalized_smoothed' : 'equalized_raw' : ''} name='Equalized' type='linear' dot={false} stroke={this.state.show.equalized ? '#0343df' : '#999'} strokeWidth={1.5} isAnimationActive={false} />
+                        {!!this.props.data[0].target && (
+                            <Line
+                                dataKey={this.state.show.target ? 'target' : ''}
+                                name='Target' type='linear' dot={false}
+                                stroke={this.state.show.target ? '#7bc8f6' : '#999'}
+                                strokeWidth={7.5} isAnimationActive={false}
+                            />
+                        )}
+
+                        {(
+                            (this.state.smoothed && !!this.props.data[0].smoothed)
+                            || (!this.state.smoothed && !!this.props.data[0].raw)
+                        ) && (
+                            <Line
+                                dataKey={this.state.show.raw ? this.state.smoothed ? 'smoothed' : 'raw' : ''}
+                                name='Frequency Response' type='linear' dot={false}
+                                stroke={this.state.show.raw ? '#000' : '#999'}
+                                strokeWidth={1.5} isAnimationActive={false}
+                            />
+                        )}
+
+                        {(
+                            (this.state.smoothed && !!this.props.data[0].error_smoothed)
+                            || (!this.state.smoothed && !!this.props.data[0].error)
+                        ) && (
+                            <Line
+                                dataKey={this.state.show.error ? this.state.smoothed ? 'error_smoothed' : 'error' : ''}
+                                name='Error' type='linear' dot={false}
+                                stroke={this.state.show.error ? '#d62728' : '#999'}
+                                strokeWidth={1.5} isAnimationActive={false}
+                            />
+                        )}
+                        {!!this.props.data[0].equalization && (
+                            <Line
+                                dataKey={this.state.show.equalization ? 'equalization' : ''}
+                                name='Equalizer' type='linear' dot={false}
+                                stroke={this.state.show.equalization ? '#2ca02c' : '#999'}
+                                strokeWidth={1.5} isAnimationActive={false}
+                            />
+                        )}
+                        {(
+                            (this.state.smoothed && !!this.props.data[0].equalized_smoothed)
+                            || (!this.state.smoothed && !!this.props.data[0].equalized_raw)
+                        ) && (
+                            <Line
+                                dataKey={this.state.show.equalized ? this.state.smoothed ? 'equalized_smoothed' : 'equalized_raw' : ''}
+                                name='Equalized' type='linear' dot={false}
+                                stroke={this.state.show.equalized ? '#0343df' : '#999'}
+                                strokeWidth={1.5} isAnimationActive={false}
+                            />
+                        )}
 
                         <CartesianGrid stroke='#cfcfcf' />
                         <XAxis

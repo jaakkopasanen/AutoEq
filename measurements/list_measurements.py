@@ -4,7 +4,7 @@ from pathlib import Path
 from autoeq.frequency_response import FrequencyResponse
 
 
-def main():
+def write_entries_and_measurements():
     path = Path().resolve()
     source_ranking = ['oratory1990', 'crinacle', 'rtings', 'innerfidelity', 'headphonecom', 'referenceaudioanalyzer']
     entries = dict()
@@ -34,12 +34,47 @@ def main():
     with open('entries.json', 'w', encoding='utf-8') as fh:
         json.dump(entries, fh, ensure_ascii=False, indent=4)
 
-    compensations = dict()
-    for fp in path.parent.joinpath('compensation').glob('*.csv'):
-        name = fp.name.replace('.csv', '')
-        compensations[name] = FrequencyResponse.read_from_csv(fp).to_dict()
+
+def write_compensations():
+    path = Path().resolve()
+    compensations = [
+        {'name': 'autoeq_in-ear', 'label': 'AutoEq In-ear', 'compatible': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ]},
+        {'name': 'diffuse_field', 'label': 'Diffuse Field', 'compatible': []},
+        {'name': 'free_field', 'label': 'Free Field', 'compatible': []},
+        {'name': 'harman_in-ear_2016', 'label': 'Harman In-ear 2016', 'compatible': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ]},
+        {'name': 'harman_in-ear_2017-1', 'label': 'Harman In-ear 2017-1', 'compatible': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ]},
+        {'name': 'harman_in-ear_2017-2', 'label': 'Harman In-ear 2017-2', 'compatible': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ]},
+        {'name': 'harman_in-ear_2019v2', 'label': 'Harman In-ear 2019', 'compatible': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ]},
+        {'name': 'harman_over-ear_2013', 'label': 'Harman Over-ear 2013', 'compatible': [
+            ('crinacle', 'onear', 'GRAS 43AG-7'), ('oratory1990', 'onear', 'unknown')
+        ]},
+        {'name': 'harman_over-ear_2015', 'label': 'Harman Over-ear 2015', 'compatible': [
+            ('crinacle', 'onear', 'GRAS 43AG-7'), ('oratory1990', 'onear', 'unknown')
+        ]},
+        {'name': 'harman_over-ear_2018', 'label': 'Harman Over-ear 2018', 'compatible': [
+            ('crinacle', 'onear', 'GRAS 43AG-7'), ('oratory1990', 'onear', 'unknown')
+        ]},
+    ]
+    for compensation in compensations:
+        fp = path.parent.joinpath('compensation', f'{compensation["name"]}.csv')
+        compensation['fr'] = FrequencyResponse.read_from_csv(fp).to_dict()
     with open('compensations.json', 'w', encoding='utf-8') as fh:
         json.dump(compensations, fh, ensure_ascii=False, indent=4)
+
+
+def main():
+    write_entries_and_measurements()
+    write_compensations()
 
 
 if __name__ == '__main__':

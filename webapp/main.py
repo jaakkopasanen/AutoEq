@@ -39,6 +39,11 @@ def get_entries():
     return entries
 
 
+@app.get('/compensations')
+def get_compensations():
+    return [{key: compensation[key] for key in ['name', 'label', 'compatible']} for compensation in compensations]
+
+
 class MeasurementData(BaseModel):
     frequency: str
     raw: str
@@ -79,7 +84,7 @@ class EqualizeRequest(BaseModel):
     name: Optional[str]
     source: Optional[str]
     rig: Optional[str]
-    compensation: Union[str, MeasurementData]
+    compensation: Optional[Union[str, MeasurementData]]
     bass_boost_gain = DEFAULT_BASS_BOOST_GAIN
     bass_boost_fc = DEFAULT_BASS_BOOST_FC
     bass_boost_q = DEFAULT_BASS_BOOST_Q
@@ -133,11 +138,24 @@ def equalize(req: EqualizeRequest):
     else:  # Named measurement
         measurement = measurements[req.name][req.source][req.rig]
         fr = FrequencyResponse(name='fr', frequency=measurement['frequency'], raw=measurement['raw'])
-    if type(req.compensation) == str:
-        #compensation = FrequencyResponse.read_from_csv(ROOT_DIR.joinpath('compensation', f'{req.compensation}.csv'))
-        compensation = compensations[req.compensation]
+
+    if req.compensation is None:
+        fr.smoothen_fractional_octave(
+            window_size=req.window_size,
+            treble_window_size=req.treble_window_size,
+            treble_f_lower=req.treble_f_lower,
+            treble_f_upper=req.treble_f_upper
+        )
+        return {'fr': fr.to_dict()}
+    elif type(req.compensation) == str:
+        compensation = None
+        for comp in compensations:
+            if comp['name'] == req.compensation:
+                compensation = comp
+        if compensation is None:
+            raise ValueError(f'Unknown compensation {req.compensation}')
         compensation = FrequencyResponse(
-            name='compensation', frequency=compensation['frequency'], raw=compensation['raw'])
+            name='compensation', frequency=compensation['fr']['frequency'], raw=compensation['fr']['raw'])
     else:
         compensation = FrequencyResponse(
             name='compensation', frequency=req.compensation.frequency, raw=req.compensation.raw)
