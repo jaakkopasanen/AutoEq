@@ -13,12 +13,28 @@ import TargetTab from "./TargetTab";
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { selectedEntry: null, measurements: null, measurement: null, activeTab: 'target' };
+        this.state = {
+            compensations: [],
+            measurements: null,
+            selectedMeasurement: null,
+            selectedMeasurementData: null,
+            activeTab: 'target',
+            eqParams: {
+                compensation: null,
+                soundSignature: null,
+                bass_boost_gain: 0.0,
+                treble_boost_gain: 0.0,
+                tilt: 0.0,
+                max_gain: 6.0,
+                window_size: 1/12,
+            }
+        };
         this.fetchMeasurements = this.fetchMeasurements.bind(this);
         this.equalize = this.equalize.bind(this);
-        this.onHeadphonesSelected = this.onHeadphonesSelected.bind(this);
+        this.onMeasurementSelected = this.onMeasurementSelected.bind(this);
         this.onActiveTabChanged = this.onActiveTabChanged.bind(this);
-        this.onCompensationChanged = this.onCompensationChanged.bind(this);
+        this.onEqParamChanged = this.onEqParamChanged.bind(this);
+        this.fetchCompensations = this.fetchCompensations.bind(this);
     }
 
     async fetchMeasurements() {
@@ -32,19 +48,33 @@ class App extends React.Component {
         this.setState({measurements: measurements});
     }
 
+    async fetchCompensations() {
+        const data = await fetch('/compensations').then(res => res.json()).catch(err => {
+            throw err;
+        });
+        const compensations = [];
+        for (const [name, fr] of Object.entries(data)) {
+            compensations.push({ label: name, ...fr });
+        }
+        this.setState({ compensations: compensations });
+    }
+
     componentDidMount() {
         this.fetchMeasurements();
+        this.fetchCompensations();
     }
 
     async equalize() {
+        // console.log('equalize');
+        // console.log(this.state.eqParams);
         const data = await fetch('/equalize', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                name: this.state.selectedEntry.label,
-                source: this.state.selectedEntry.source,
-                rig: this.state.selectedEntry.rig,
-                compensation: this.state.compensation?.name,
+                name: this.state.selectedMeasurement.label,
+                source: this.state.selectedMeasurement.source,
+                rig: this.state.selectedMeasurement.rig,
+                ...this.state.eqParams
             })
         }).then(res => res.json()).catch(err => {
             throw err;
@@ -57,12 +87,12 @@ class App extends React.Component {
             }
             measurement.push(dataPoint);
         }
-        this.setState({ measurement });
+        this.setState({ selectedMeasurementData: measurement });
     }
 
-    async onHeadphonesSelected(e, val) {
+    async onMeasurementSelected(e, val) {
         this.setState({
-            selectedEntry: {
+            selectedMeasurement: {
                 label: val.label,
                 source: val[0].source,
                 rig: val[0].rig,
@@ -76,8 +106,10 @@ class App extends React.Component {
         this.setState({ activeTab: value });
     }
 
-    onCompensationChanged(e, value) {
-        this.setState({ compensation: value }, () => {
+    onEqParamChanged(key, value) {
+        const newEqParams = { ...this.state.eqParams };
+        newEqParams[key] = value;
+        this.setState({ eqParams: newEqParams }, () => {
             this.equalize();
         });
     }
@@ -87,12 +119,12 @@ class App extends React.Component {
             <Grid container direction='column'>
                 <Grid item sx={{width: '100%', padding: 1}}>
                     <TopBar
-                        isMeasurementSelected={!!this.state.measurement}
+                        isMeasurementSelected={!!this.state.selectedMeasurement}
                         measurements={this.state.measurements}
-                        onMeasurementSelected={this.onHeadphonesSelected}
+                        onMeasurementSelected={this.onMeasurementSelected}
                     />
                 </Grid>
-                {!!this.state.measurement && (
+                {!!this.state.selectedMeasurementData && (
                     <Grid item>
                         <Container sx={{marginTop: 1}}>
                             <Grid container direction='column' rowGap={2}>
@@ -105,7 +137,7 @@ class App extends React.Component {
                                             pb: {xs: 0, sm: 2, md: 4},
                                         }}
                                     >
-                                        <FrequencyResponseGraph data={this.state.measurement} />
+                                        <FrequencyResponseGraph data={this.state.selectedMeasurementData} />
                                     </Paper>
                                 </Grid>
                                 <Grid item>
@@ -117,7 +149,12 @@ class App extends React.Component {
                                             <Tab label='Convolution Eq' id='tab-convolution-eq' value='convolution-eq' />
                                         </Tabs>
                                         {this.state.activeTab === 'target' && (
-                                            <TargetTab onCompensationChanged={this.onCompensationChanged} />
+                                            <TargetTab
+                                                compensations={ this.state.compensations }
+                                                measurements={ this.state.measurements }
+                                                eqParams={ this.state.eqParams }
+                                                onEqParamChanged={this.onEqParamChanged}
+                                            />
                                         )}
                                     </Paper>
                                 </Grid>
