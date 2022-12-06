@@ -15,13 +15,18 @@ class App extends React.Component {
     super(props);
     this.state = {
       compensations: [],
+      soundSignatures: [
+        {label: 'Custom', frequency: [], raw: []},
+        {label: 'Add current error as a new sound signature'}
+      ],
+      selectedSoundSignature: null,
       measurements: null,
       selectedMeasurement: null,
       selectedMeasurementData: null,
       activeTab: 'target',
       eqParams: {
         compensation: null,
-        soundSignature: null,
+        sound_signature: null,
         bass_boost_gain: 0.0,
         bass_boost_fc: 105.0,
         bass_boost_q: 0.7,
@@ -41,6 +46,8 @@ class App extends React.Component {
     this.equalize = this.equalize.bind(this);
     this.onMeasurementSelected = this.onMeasurementSelected.bind(this);
     this.onActiveTabChanged = this.onActiveTabChanged.bind(this);
+    this.onSoundSignatureChanged = this.onSoundSignatureChanged.bind(this);
+    this.onAddNewSoundSignature = this.onAddNewSoundSignature.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
   }
@@ -114,6 +121,43 @@ class App extends React.Component {
     this.setState({activeTab: value});
   }
 
+  onSoundSignatureChanged(value) {
+    if (value === null) {
+      this.setState({ selectedSoundSignature: null });
+      return;
+    } else if (value === 'Add current error as a new sound signature') {
+      this.setState({ selectedSoundSignature: value });
+      return;
+    }
+    const newState = {
+      eqParams: { ...this.state.eqParams },
+    };
+    newState.selectedSoundSignature = value;
+    for (const soundSignature of this.state.soundSignatures) {
+      if (soundSignature.label === value) {
+        newState.eqParams.sound_signature = {
+          frequency: [ ...soundSignature.frequency ],
+          raw: [ ...soundSignature.raw ],
+        }
+        this.setState(newState);
+        break;
+      }
+    }
+  }
+
+  onAddNewSoundSignature(label) {
+    const newState = { eqParams: { ...this.state.eqParams } };
+    const frequency = this.state.selectedMeasurementData.map((dataPoint) => dataPoint.frequency);
+    const error = this.state.selectedMeasurementData.map((dataPoint) => dataPoint.error);
+    newState.soundSignatures = [ ...this.state.soundSignatures ];
+    const newSig = { label: label, frequency, raw: error };
+    newState.soundSignatures.push(newSig);
+    newState.eqParams.sound_signature = { frequency, raw: error };
+    this.setState(newState, () => {
+      this.setState({ selectedSoundSignature: label });
+    });
+  }
+
   onEqParamChanged(newParams) {
     const newEqParams = {...this.state.eqParams, ...newParams};
     this.setState({eqParams: newEqParams}, () => {
@@ -124,12 +168,15 @@ class App extends React.Component {
   render() {
     return (
       <Grid container direction='column'>
-        <Grid item sx={{width: '100%', padding: 1, background: '#fff'}}>
-          <TopBar
-            isMeasurementSelected={!!this.state.selectedMeasurement}
-            measurements={this.state.measurements}
-            onMeasurementSelected={this.onMeasurementSelected}
-          />
+        <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
+          <Paper sx={{padding: 1, borderRadius: 0, background: (theme) => theme.palette.background.default}}>
+            <TopBar
+              isMeasurementSelected={!!this.state.selectedMeasurement}
+              measurements={this.state.measurements}
+              onMeasurementSelected={this.onMeasurementSelected}
+            />
+          </Paper>
+
         </Grid>
         {!!this.state.selectedMeasurementData && (
           <Grid item>
@@ -162,7 +209,10 @@ class App extends React.Component {
                         {this.state.activeTab === 'target' && (
                           <TargetTab
                             compensations={this.state.compensations}
-                            measurements={this.state.measurements}
+                            soundSignatures={this.state.soundSignatures}
+                            onSoundSignatureChanged={this.onSoundSignatureChanged}
+                            onAddNewSoundSignature={this.onAddNewSoundSignature}
+                            selectedSoundSignature={this.state.selectedSoundSignature}
                             eqParams={this.state.eqParams}
                             onEqParamChanged={this.onEqParamChanged}
                           />

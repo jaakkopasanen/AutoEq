@@ -45,8 +45,8 @@ def get_compensations():
 
 
 class MeasurementData(BaseModel):
-    frequency: str
-    raw: str
+    frequency: list[float]
+    raw: list[float]
 
 
 class Optimizer(BaseModel):
@@ -93,7 +93,7 @@ class EqualizeRequest(BaseModel):
     treble_boost_q = DEFAULT_TREBLE_BOOST_Q
     tilt = DEFAULT_TILT
     fs = DEFAULT_FS
-    sound_signature: Optional[Union[str, MeasurementData]] = None
+    sound_signature: Optional[MeasurementData]
     max_gain = DEFAULT_MAX_GAIN
     window_size = DEFAULT_SMOOTHING_WINDOW_SIZE
     treble_window_size = DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE
@@ -160,6 +160,12 @@ def equalize(req: EqualizeRequest):
         compensation = FrequencyResponse(
             name='compensation', frequency=req.compensation.frequency, raw=req.compensation.raw)
 
+    if req.sound_signature is not None:
+        sound_signature = FrequencyResponse(
+            name='sound signature', frequency=req.sound_signature.frequency, raw=req.sound_signature.raw)
+    else:
+        sound_signature = None
+
     fr.process(
         compensation=compensation,
         min_mean_error=True,
@@ -171,7 +177,7 @@ def equalize(req: EqualizeRequest):
         treble_boost_q=req.treble_boost_q,
         tilt=req.tilt,
         fs=req.fs,
-        sound_signature=req.sound_signature,
+        sound_signature=sound_signature,
         max_gain=req.max_gain,
         window_size=req.window_size,
         treble_window_size=req.treble_window_size,

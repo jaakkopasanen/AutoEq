@@ -1,21 +1,36 @@
 import React from 'react';
-import {Autocomplete, Checkbox, FormControlLabel, FormGroup, Grid, TextField} from "@mui/material";
+import {Autocomplete, Button, Checkbox, FormControlLabel, FormGroup, Grid, TextField} from "@mui/material";
 import InputSlider from "./InputSlider";
 
 class TargetTab extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {showAdvanced: false};
+    this.state = {
+      showAdvanced: false,
+      newSoundSignatureName: '',
+    };
   }
 
   render() {
+    let soundSignatureText = 'frequency,text';
+    if (
+      this.props.eqParams?.sound_signature?.frequency
+      && !!this.props.selectedSoundSignature
+      && this.props.selectedSoundSignature !== 'Add current error as a new sound signature'
+    ) {
+      for (let i = 0; i < this.props.eqParams.sound_signature.frequency.length; ++i) {
+        soundSignatureText += '\n' + this.props.eqParams.sound_signature.frequency[i].toFixed(1)
+          + ',' + this.props.eqParams.sound_signature.raw[i].toFixed(1);
+      }
+    } else {
+      soundSignatureText = '';
+    }
     return (
       <Grid container direction='row' spacing={2} sx={{p: 1}}>
         <Grid item xs={12} md={6} container direction='column' rowSpacing={1}>
           {!!this.props.compensations && (
             <Grid item>
               <Autocomplete
-                xs={6}
                 renderInput={(params) =>
                   <TextField {...params} label="Select compensation"/>
                 }
@@ -27,18 +42,49 @@ class TargetTab extends React.Component {
               />
             </Grid>
           )}
-          {!!this.props.measurements && (
+          {!!this.props.soundSignatures && (
             <Grid item>
               <Autocomplete
-                xs={6}
                 renderInput={(params) =>
                   <TextField {...params} label="Select sound signature"/>
                 }
-                options={this.props.measurements}
+                options={this.props.soundSignatures.map(sig => sig.label)}
+                value={this.props.selectedSoundSignature}
                 onChange={(e, val) => {
-                  this.props.onEqParamChanged({ sound_signature: val?.name })
+                  this.props.onSoundSignatureChanged(val);
                 }}
                 sx={{width: '100%'}}
+              />
+            </Grid>
+          )}
+          {this.props.selectedSoundSignature === 'Add current error as a new sound signature' && (
+            <Grid item container direction='row' alignItems='center' columnSpacing={1}>
+              <Grid item sx={{flexGrow: 1}}>
+                <TextField
+                  value={this.state.newSoundSignatureName}
+                  onChange={(e) => {
+                    this.setState({ newSoundSignatureName: e.target.value });
+                  }}
+                  size='small' sx={{width: '100%'}}
+                  label='Name of the new sound signature'
+                />
+              </Grid>
+              <Grid item>
+                <Button
+                  onClick={() => { this.props.onAddNewSoundSignature(this.state.newSoundSignatureName); }}
+                  variant='outlined' size='large'
+                >
+                  Save
+                </Button>
+              </Grid>
+            </Grid>
+          )}
+          {!!soundSignatureText && (
+            <Grid item>
+              <TextField
+                multiline rows={10} value={soundSignatureText}
+                sx={{width: '100%'}}
+                inputProps={{ style: { fontFamily: 'monospace' } }}
               />
             </Grid>
           )}
