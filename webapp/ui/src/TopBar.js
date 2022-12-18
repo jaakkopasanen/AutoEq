@@ -36,7 +36,7 @@ class TopBar extends React.Component {
         <Grid item sx={{display: {xs: 'none', sm: 'block'}}}>
           <Link href="https://github.com/jaakkopasanen/AutoEq" target="_blank" rel="noopener">
             <Button
-              variant="contained" color='inherit' size='large'
+              variant="outlined" color='inherit' size='large'
               startIcon={<GitHubIcon/>}
               sx={{color: '#000'}}
             >Github</Button>

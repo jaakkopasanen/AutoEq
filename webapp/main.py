@@ -41,7 +41,8 @@ def get_entries():
 
 @app.get('/compensations')
 def get_compensations():
-    return [{key: compensation[key] for key in ['name', 'label', 'compatible']} for compensation in compensations]
+    # return [{key: compensation[key] for key in ['name', 'label', 'compatible', 'recommended']} for compensation in compensations]
+    return {compensation['label']: {key: compensation[key] for key in ['compatible', 'recommended']} for compensation in compensations}
 
 
 class MeasurementData(BaseModel):
@@ -150,7 +151,7 @@ def equalize(req: EqualizeRequest):
     elif type(req.compensation) == str:
         compensation = None
         for comp in compensations:
-            if comp['name'] == req.compensation:
+            if comp['label'] == req.compensation:
                 compensation = comp
         if compensation is None:
             raise ValueError(f'Unknown compensation {req.compensation}')

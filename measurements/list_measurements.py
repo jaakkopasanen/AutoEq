@@ -40,60 +40,64 @@ def write_compensations():
     compensations = [
         {'name': 'autoeq_in-ear', 'label': 'AutoEq In-ear', 'compatible': [
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ], 'recommended': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
         ]},
-        {'name': 'diffuse_field', 'label': 'Diffuse Field', 'compatible': []},
-        {'name': 'free_field', 'label': 'Free Field', 'compatible': []},
+        {'name': 'diffuse_field', 'label': 'Diffuse Field', 'compatible': [], 'recommended': []},
+        {'name': 'free_field', 'label': 'Free Field', 'compatible': [], 'recommended': []},
         {'name': 'harman_in-ear_2016', 'label': 'Harman In-ear 2016', 'compatible': [
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
-        ]},
+        ], 'recommended': []},
         {'name': 'harman_in-ear_2017-1', 'label': 'Harman In-ear 2017-1', 'compatible': [
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
-        ]},
+        ], 'recommended': []},
         {'name': 'harman_in-ear_2017-2', 'label': 'Harman In-ear 2017-2', 'compatible': [
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
-        ]},
+        ], 'recommended': []},
         {'name': 'harman_in-ear_2019v2', 'label': 'Harman In-ear 2019', 'compatible': [
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
-        ]},
+        ], 'recommended': []},
         {'name': 'harman_over-ear_2013', 'label': 'Harman Over-ear 2013', 'compatible': [
             ('crinacle', 'onear', 'GRAS 43AG-7'), ('oratory1990', 'onear', 'unknown')
-        ]},
+        ], 'recommended': []},
         {'name': 'harman_over-ear_2015', 'label': 'Harman Over-ear 2015', 'compatible': [
             ('crinacle', 'onear', 'GRAS 43AG-7'), ('oratory1990', 'onear', 'unknown')
-        ]},
+        ], 'recommended': []},
         {'name': 'harman_over-ear_2018', 'label': 'Harman Over-ear 2018', 'compatible': [
+            ('crinacle', 'onear', 'GRAS 43AG-7'), ('oratory1990', 'onear', 'unknown')
+        ], 'recommended': [
             ('crinacle', 'onear', 'GRAS 43AG-7'), ('oratory1990', 'onear', 'unknown')
         ]},
         {'name': 'headphonecom_harman_in-ear_2019v2', 'label': 'Headphone.com (legacy) Harman In-ear 2019v2', 'compatible': [
             ('headphonecom', 'inear', 'unknown')
-        ]},
+        ], 'recommended': [('headphonecom', 'inear', 'unknown')]},
         {'name': 'headphonecom_harman_over-ear_2018', 'label': 'Headphone.com (legacy) Harman Over-ear 2018', 'compatible': [
             ('headphonecom', 'onear', 'unknown')
-        ]},
+        ], 'recommended': [('headphonecom', 'onear', 'unknown')]},
         {'name': 'innerfidelity_harman_in-ear_2019v2', 'label': 'Innerfidelity Harman In-ear 2019v2', 'compatible': [
             ('innerfidelity', 'inear', 'unknown')
-        ]},
+        ], 'recommended': [('innerfidelity', 'inear', 'unknown')]},
         {'name': 'innerfidelity_harman_over-ear_2018', 'label': 'Innerfidelity Harman Over-ear 2018', 'compatible': [
             ('innerfidelity', 'onear', 'unknown')
-        ]},
+        ], 'recommended': [('innerfidelity', 'onear', 'unknown')]},
         {'name': 'oratory1990', 'label': 'oratory1990', 'compatible': [
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
-        ]},
+        ], 'recommended': []},
         {'name': 'referenceaudioanalyzer_hdm1_harman_over-ear_2018', 'label': 'RAA HDM-1 Harman Over-ear 2018', 'compatible': [
             ('referenceaudioanalyzer', 'onear', 'HDM1')
-        ]},
+        ], 'recommended': [('referenceaudioanalyzer', 'onear', 'HDM1')]},
         {'name': 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018', 'label': 'RAA HDM-X Harman Over-ear 2018', 'compatible': [
             ('referenceaudioanalyzer', 'onear', 'HDM-X')
-        ]},
+        ], 'recommended': [('referenceaudioanalyzer', 'onear', 'HDM-X')]},
         {'name': 'referenceaudioanalyzer_siec_harman_in-ear_2019v2', 'label': 'RAA SIEC Harman Over-ear 2019', 'compatible': [
             ('referenceaudioanalyzer', 'inear', 'SIEC')
-        ]},
+        ], 'recommended': [('referenceaudioanalyzer', 'inear', 'SIEC')]},
         {'name': 'rtings_harman_in-ear_2019v2', 'label': 'Rtings Harman In-ear 2019v2', 'compatible': [
             ('rtings', 'inear', 'unknown')
-        ]},
+        ], 'recommended': [('rtings', 'inear', 'unknown')]},
         {'name': 'rtings_harman_over-ear_2018', 'label': 'Rtings Harman Over-ear 2018', 'compatible': [
             ('rtings', 'onear', 'unknown')
-        ]},
+        ], 'recommended': [('rtings', 'onear', 'unknown')]},
     ]
     for compensation in compensations:
         fp = path.parent.joinpath('compensation', f'{compensation["name"]}.csv')

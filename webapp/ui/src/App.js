@@ -15,31 +15,33 @@ class App extends React.Component {
     super(props);
     this.state = {
       compensations: [],
+      preferredCompensations: [],
+      selectedCompensation: null,
+
       soundSignatures: [
         {label: 'Add new', frequency: [], raw: []}
       ],
       selectedSoundSignature: null,
+
       measurements: null,
       selectedMeasurement: null,
       selectedMeasurementData: null,
+
       activeTab: 'target',
-      eqParams: {
-        compensation: null,
-        soundSignature: null,
-        bassBoostGain: 0.0,
-        bassBoostFc: 105.0,
-        bassBoostQ: 0.7,
-        trebleBoostGain: 0.0,
-        trebleBoostFc: 10000.0,
-        trebleBoostQ: 0.7,
-        tilt: 0.0,
-        maxGain: 6.0,
-        windowSize: 0.08,
-        trebleWindowSize: 2.0,
-        trebleFLower: 6000.0,
-        trebleFUpper: 8000.0,
-        trebleGainK: 1.0,
-      }
+      soundSignature: null,
+      bassBoostGain: 0.0,
+      bassBoostFc: 105.0,
+      bassBoostQ: 0.7,
+      trebleBoostGain: 0.0,
+      trebleBoostFc: 10000.0,
+      trebleBoostQ: 0.7,
+      tilt: 0.0,
+      maxGain: 6.0,
+      windowSize: 0.08,
+      trebleWindowSize: 2.0,
+      trebleFLower: 6000.0,
+      trebleFUpper: 8000.0,
+      trebleGainK: 1.0,
     };
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
     this.equalize = this.equalize.bind(this);
@@ -49,6 +51,7 @@ class App extends React.Component {
     this.onNewSoundSignatureCreated = this.onNewSoundSignatureCreated.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
+    this.onCompensationChanged = this.onCompensationChanged.bind(this);
   }
 
   async fetchMeasurements() {
@@ -63,14 +66,27 @@ class App extends React.Component {
   }
 
   async fetchCompensations() {
-    const data = await fetch('/compensations').then(res => res.json()).catch(err => {
+    const compensations = await fetch('/compensations').then(res => res.json()).catch(err => {
       throw err;
     });
-    const compensations = [];
-    for (const [name, fr] of Object.entries(data)) {
-      compensations.push({label: name, ...fr});
+    const preferredCompensations = {};
+    for (const [label, compensation] of Object.entries(compensations)) {
+      if (!compensation.recommended) {
+        continue;
+      }
+      for (const rigPath of compensation.recommended) {
+        if (!preferredCompensations[rigPath[0]]) {
+          preferredCompensations[rigPath[0]] = {};
+        }
+        if (!preferredCompensations[rigPath[0]][rigPath[1]]) {
+          preferredCompensations[rigPath[0]][rigPath[1]] = {};
+        }
+        if (!preferredCompensations[rigPath[0]][rigPath[1]][rigPath[2]]) {
+          preferredCompensations[rigPath[0]][rigPath[1]][rigPath[2]] = label;
+        }
+      }
     }
-    this.setState({compensations: compensations});
+    this.setState({ compensations, preferredCompensations });
   }
 
   componentDidMount() {
@@ -80,7 +96,7 @@ class App extends React.Component {
 
   async equalize() {
     // console.log('equalize');
-    // console.log(this.state.eqParams);
+    // console.log(this.state);
     const data = await fetch('/equalize', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
@@ -88,21 +104,21 @@ class App extends React.Component {
         name: this.state.selectedMeasurement.label,
         source: this.state.selectedMeasurement.source,
         rig: this.state.selectedMeasurement.rig,
-        compensation: this.state.eqParams.compensation,
-        sound_signature: this.state.eqParams.soundSignature,
-        bass_boost_gain: this.state.eqParams.bassBoostGain,
-        bass_boost_fc: this.state.eqParams.bassBoostFc,
-        bass_boost_q: this.state.eqParams.bassBoostQ,
-        treble_boost_gain: this.state.eqParams.trebleBoostGain,
-        treble_boost_fc: this.state.eqParams.trebleBoostFc,
-        treble_boost_q: this.state.eqParams.trebleBoostQ,
-        tilt: this.state.eqParams.tilt,
-        max_gain: this.state.eqParams.maxGain,
-        window_size: this.state.eqParams.windowSize,
-        treble_window_size: this.state.eqParams.trebleWindowSize,
-        treble_f_lower: this.state.eqParams.trebleFLower,
-        treble_f_upper: this.state.eqParams.trebleFUpper,
-        treble_gain_k: this.state.eqParams.trebleGainK,
+        compensation: this.state.selectedCompensation,
+        sound_signature: this.state.soundSignature,
+        bass_boost_gain: this.state.bassBoostGain,
+        bass_boost_fc: this.state.bassBoostFc,
+        bass_boost_q: this.state.bassBoostQ,
+        treble_boost_gain: this.state.trebleBoostGain,
+        treble_boost_fc: this.state.trebleBoostFc,
+        treble_boost_q: this.state.trebleBoostQ,
+        tilt: this.state.tilt,
+        max_gain: this.state.maxGain,
+        window_size: this.state.windowSize,
+        treble_window_size: this.state.trebleWindowSize,
+        treble_f_lower: this.state.trebleFLower,
+        treble_f_upper: this.state.trebleFUpper,
+        treble_gain_k: this.state.trebleGainK,
       })
     }).then(res => res.json()).catch(err => {
       throw err;
@@ -122,9 +138,12 @@ class App extends React.Component {
     this.setState({
       selectedMeasurement: {
         label: val.label,
+        form: val[0].form,
         source: val[0].source,
         rig: val[0].rig,
-      }
+      },
+      // TODO: not preferred for any?
+      selectedCompensation: this.state.preferredCompensations[val[0].source][val[0].form][val[0].rig],
     }, () => {
       this.equalize();
     });
@@ -135,52 +154,30 @@ class App extends React.Component {
   }
 
   onSoundSignatureChanged(name) {
-    if (name === null) {
-      const newEqParams = { ...this.state.eqParams, soundSignature: null };
-      this.setState({ selectedSoundSignature: null, eqParams: newEqParams }, () => {
-        this.equalize();
-      });
-      return;
-    } else if (name === 'Add new') {
-      this.setState({ selectedSoundSignature: name });
-      return;
-    }
-    const newState = {
-      eqParams: { ...this.state.eqParams },
-    };
-    newState.selectedSoundSignature = name;
-    for (const soundSignature of this.state.soundSignatures) {
-      if (soundSignature.label === name) {
-        newState.eqParams.soundSignature = {
-          frequency: [ ...soundSignature.frequency ],
-          raw: [ ...soundSignature.raw ],
-        }
-        this.setState(newState, () => {
-          this.equalize();
-        });
-        break;
-      }
-    }
+    this.setState({ soundSignature: name }, () => {
+      this.equalize();
+    });
   }
 
   onNewSoundSignatureCreated(name, frequency, raw) {
-    const newState = { eqParams: { ...this.state.eqParams } };
-    newState.soundSignatures = [ ...this.state.soundSignatures ];
-    const newSig = { label: name, frequency, raw };
-    newState.soundSignatures.push(newSig);
-    newState.eqParams.soundSignature = { frequency, raw };
-    this.setState(newState, () => {
-      this.setState({ selectedSoundSignature: name }, () => {
-        this.equalize();
-      });
+    this.setState({
+      soundSignature: name,
+      soundSignatures: [ ...this.state.soundSignatures, { label: name, frequency, raw } ]
+    }, () => {
+      this.equalize();
     });
   }
 
   onEqParamChanged(newParams) {
-    const newEqParams = {...this.state.eqParams, ...newParams};
-    this.setState({eqParams: newEqParams}, () => {
+    this.setState({ ...this.state, ...newParams }, () => {
       this.equalize();
     });
+  }
+
+  onCompensationChanged(label) {
+    const preferredCompensations = { ...this.state.preferredCompensations };
+    preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig] = label;
+    this.setState({ selectedCompensation: label, preferredCompensations }, () => { this.equalize(); });
   }
 
   render() {
@@ -201,12 +198,7 @@ class App extends React.Component {
               <Grid container direction='column' rowSpacing={{xs: 1, md: 2}}>
                 <Grid item>
                   <Paper
-                    sx={{
-                      pt: 1,
-                      pl: {xs: 0, sm: 2, md: 4},
-                      pr: {xs: 0, sm: 2, md: 4},
-                      pb: {xs: 0, sm: 2, md: 4},
-                    }}
+                    sx={{pt: 1, pl: {xs: 1, sm: 2, md: 0}, pr: {xs: 1, sm: 2, md: 0}, pb: {xs: 1, sm: 2, md: 0}}}
                   >
                     <FrequencyResponseGraph data={this.state.selectedMeasurementData}/>
                   </Paper>
@@ -225,15 +217,33 @@ class App extends React.Component {
                       <Grid item sx={{pt: 1}}>
                         {this.state.activeTab === 'target' && (
                           <TargetTab
-                            compensations={this.state.compensations}
+                            compensations={Object.keys(this.state.compensations)}
+                            selectedCompensation={this.state.selectedCompensation}
+
                             soundSignatures={this.state.soundSignatures}
+                            selectedSoundSignature={this.state.selectedSoundSignature}
+
                             selectedMeasurement={this.state.selectedMeasurement}
                             selectedMeasurementData={this.state.selectedMeasurementData}
+
+                            bassBoostGain={this.state.bassBoostGain}
+                            bassBoostFc={this.state.bassBoostFc}
+                            bassBoostQ={this.state.bassBoostQ}
+                            trebleBoostGain={this.state.trebleBoostGain}
+                            trebleBoostFc={this.state.trebleBoostFc}
+                            trebleBoostQ={this.state.trebleBoostQ}
+                            tilt={this.state.tilt}
+                            maxGain={this.state.maxGain}
+                            windowSize={this.state.windowSize}
+                            trebleWindowSize={this.state.trebleWindowSize}
+                            trebleFLower={this.state.trebleFLower}
+                            trebleFUpper={this.state.trebleFUpper}
+                            trebleGainK={this.state.trebleGainK}
+
                             onSoundSignatureChanged={this.onSoundSignatureChanged}
                             onNewSoundSignatureCreated={this.onNewSoundSignatureCreated}
-                            selectedSoundSignature={this.state.selectedSoundSignature}
-                            eqParams={this.state.eqParams}
                             onEqParamChanged={this.onEqParamChanged}
+                            onCompensationChanged={this.onCompensationChanged}
                           />
                         )}
                       </Grid>

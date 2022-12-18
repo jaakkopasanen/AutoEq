@@ -33,7 +33,10 @@ class FrequencyResponseGraph extends React.Component {
     const vals = [];
     for (const dataPoint of data) {
       for (const [key, val] of Object.entries(dataPoint)) {
-        if (key === 'frequency') {
+        if (key === 'frequency'
+          || (this.state.smoothed && ['raw', 'error', 'equalized_raw'].includes(key))
+          || !this.state.smoothed && ['smoothed', 'error_smoothed', 'equalized'].includes(key)
+        ) {
           continue;
         }
         vals.push(val);
@@ -52,7 +55,7 @@ class FrequencyResponseGraph extends React.Component {
     const [dataMin, dataMax, dataRange] = this.yRange(this.props.data);
     return (
       <Grid container direction={{xs: 'row', md: 'row'}} alignItems='center'>
-        <Grid item xs={12} md={10} lg={10}>
+        <Grid item xs={12} md={9.5} lg={10}>
           <ResponsiveContainer width='100%' aspect={2.3}>
             <LineChart
               data={this.props.data}
@@ -127,7 +130,7 @@ class FrequencyResponseGraph extends React.Component {
             </LineChart>
           </ResponsiveContainer>
         </Grid>
-        <Grid item xs={12} md={2} lg={2} sx={{pl: {xs: 1, sm: 0, md: 4}}} container direction={{xs: 'row', md: 'column'}}>
+        <Grid item xs={12} md={2.5} lg={2} sx={{pl: {md: 4}}} container direction={{xs: 'row', md: 'column'}}>
           <Grid item container alignItems='center'>
             <Grid item md={7}>
               <Typography>Smoothed</Typography>
