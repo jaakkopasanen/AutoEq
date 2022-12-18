@@ -8,23 +8,57 @@ class TargetTab extends React.Component {
     this.state = {
       showAdvanced: false,
       newSoundSignatureName: '',
+      newSoundSignatureText: 'frequency,raw\n',
     };
+    this.onUseCurrentErrorClicked = this.onUseCurrentErrorClicked.bind(this);
+    this.onSoundSignatureTextChanged = this.onSoundSignatureTextChanged.bind(this);
+    this.onSaveSoundSignatureClick = this.onSaveSoundSignatureClick.bind(this);
+  }
+
+  onUseCurrentErrorClicked() {
+    let newSoundSignatureText = 'frequency,raw\n';
+    for (let i = 0; i < this.props.selectedMeasurementData.length; ++i) {
+      newSoundSignatureText += this.props.selectedMeasurementData[i].frequency.toFixed(1)
+        + ',' + this.props.selectedMeasurementData[i].raw.toFixed(1) + '\n';
+    }
+    this.setState({ newSoundSignatureText, newSoundSignatureName: this.props.selectedMeasurement.label });
+  }
+
+  onSoundSignatureTextChanged(e) {
+    this.setState({
+      newSoundSignatureText: e.target.value,
+      newSoundSignatureError: false
+    });
+  }
+
+  onSaveSoundSignatureClick() {
+    const frequency = [];
+    const raw = [];
+    const rows = this.state.newSoundSignatureText.trim().split('\n');
+    for (const row of rows) {
+      if (row.trim() === '') {
+        continue;
+      }
+      const cells = row.trim().split(',');
+      if (cells.length !== 2) {
+        this.setState({ newSoundSignatureError: true });
+        return;
+      }
+      if (cells[0] === 'frequency') {
+        continue;
+      }
+      if (isNaN(parseFloat(cells[0].trim())) || isNaN(parseFloat(cells[1].trim()))) {
+        this.setState({ newSoundSignatureError: true });
+        return;
+      }
+      frequency.push(parseFloat(cells[0].trim()));
+      raw.push(parseFloat(cells[1].trim()));
+    }
+    this.props.onNewSoundSignatureCreated(this.state.newSoundSignatureName, frequency, raw);
+    this.setState({ newSoundSignatureName: '', newSoundSignatureText: 'frequency,raw\n' });
   }
 
   render() {
-    let soundSignatureText = 'frequency,text';
-    if (
-      this.props.eqParams?.sound_signature?.frequency
-      && !!this.props.selectedSoundSignature
-      && this.props.selectedSoundSignature !== 'Add current error as a new sound signature'
-    ) {
-      for (let i = 0; i < this.props.eqParams.sound_signature.frequency.length; ++i) {
-        soundSignatureText += '\n' + this.props.eqParams.sound_signature.frequency[i].toFixed(1)
-          + ',' + this.props.eqParams.sound_signature.raw[i].toFixed(1);
-      }
-    } else {
-      soundSignatureText = '';
-    }
     return (
       <Grid container direction='row' spacing={2} sx={{p: 1}}>
         <Grid item xs={12} md={6} container direction='column' rowSpacing={1}>
@@ -57,51 +91,61 @@ class TargetTab extends React.Component {
               />
             </Grid>
           )}
-          {this.props.selectedSoundSignature === 'Add current error as a new sound signature' && (
-            <Grid item container direction='row' alignItems='center' columnSpacing={1}>
-              <Grid item sx={{flexGrow: 1}}>
+          {this.props.selectedSoundSignature === 'Add new' && (
+            <Grid item container direction='column' rowSpacing={1} sx={{pl: 2, pr: 2}}>
+              <Grid item container direction='row' alignItems='center' columnSpacing={1}>
+                <Grid item sx={{flexGrow: 1}}>
+                  <TextField
+                    value={this.state.newSoundSignatureName}
+                    onChange={(e) => {
+                      this.setState({ newSoundSignatureName: e.target.value });
+                    }}
+                    size='small' sx={{width: '100%'}}
+                    label='Name of the new sound signature'
+                  />
+                </Grid>
+                <Grid item>
+                  <Button
+                    onClick={this.onSaveSoundSignatureClick}
+                    variant='outlined' size='large'
+                    disabled={this.state.newSoundSignatureName.trim().length === 0}
+                  >
+                    Save
+                  </Button>
+                </Grid>
+              </Grid>
+              <Grid item>
                 <TextField
-                  value={this.state.newSoundSignatureName}
-                  onChange={(e) => {
-                    this.setState({ newSoundSignatureName: e.target.value });
-                  }}
-                  size='small' sx={{width: '100%'}}
-                  label='Name of the new sound signature'
+                  multiline rows={10} value={this.state.newSoundSignatureText}
+                  sx={{width: '100%'}}
+                  inputProps={{ style: { fontFamily: 'monospace' } }}
+                  onChange={this.onSoundSignatureTextChanged}
                 />
               </Grid>
               <Grid item>
                 <Button
-                  onClick={() => { this.props.onAddNewSoundSignature(this.state.newSoundSignatureName); }}
-                  variant='outlined' size='large'
+                  variant='outlined' onClick={this.onUseCurrentErrorClicked}
+                  disabled={this.props.selectedMeasurementData.filter(x => !!x.error).length === 0}
                 >
-                  Save
+                  Use current error
                 </Button>
               </Grid>
-            </Grid>
-          )}
-          {!!soundSignatureText && (
-            <Grid item>
-              <TextField
-                multiline rows={10} value={soundSignatureText}
-                sx={{width: '100%'}}
-                inputProps={{ style: { fontFamily: 'monospace' } }}
-              />
             </Grid>
           )}
         </Grid>
         <Grid item xs={12} sm={6} container direction='column' rowSpacing={1}>
           <Grid item>
             <InputSlider
-              label='Bass boost (dB)' value={this.props.eqParams.bass_boost_gain} min={-10} max={20} step={0.5}
+              label='Bass boost (dB)' value={this.props.eqParams.bassBoostGain} min={-10} max={20} step={0.5}
               onChange={(v) => {
-                this.props.onEqParamChanged({bass_boost_gain: v})
+                this.props.onEqParamChanged({bassBoostGain: v})
               }}/>
           </Grid>
           <Grid item>
             <InputSlider
-              label='Treble boost (dB)' value={this.props.eqParams.treble_boost_gain} min={-20} max={20} step={0.5}
+              label='Treble boost (dB)' value={this.props.eqParams.trebleBoostGain} min={-20} max={20} step={0.5}
               onChange={(v) => {
-                this.props.onEqParamChanged({ treble_boost_gain: v })
+                this.props.onEqParamChanged({ trebleBoostGain: v })
               }}/>
           </Grid>
           <Grid item>
@@ -113,9 +157,9 @@ class TargetTab extends React.Component {
           </Grid>
           <Grid>
             <InputSlider
-              label='Max gain (dB)' value={this.props.eqParams.max_gain} min={0} max={30} step={0.5}
+              label='Max gain (dB)' value={this.props.eqParams.maxGain} min={0} max={30} step={0.5}
               onChange={(v) => {
-                this.props.onEqParamChanged({ max_gain: v })
+                this.props.onEqParamChanged({ maxGain: v })
               }}/>
           </Grid>
           <Grid item>
@@ -137,62 +181,70 @@ class TargetTab extends React.Component {
 
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
-              label='Bass boost center frequency (Hz)' value={this.props.eqParams.bass_boost_fc}
+              label='Bass boost center frequency (Hz)' value={this.props.eqParams.bassBoostFc}
               min={20.0} max={500.0} step={5.0}
               onChange={(v) => {
-                this.props.onEqParamChanged({ bass_boost_fc: v })
+                this.props.onEqParamChanged({ bassBoostFc: v })
               }}/>
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
-              label='Bass boost quality (Q)' value={this.props.eqParams.bass_boost_q}
+              label='Bass boost quality (Q)' value={this.props.eqParams.bassBoostQ}
               min={0.3} max={1.0} step={0.1}
               onChange={(v) => {
-                this.props.onEqParamChanged({ bass_boost_q: v })
+                this.props.onEqParamChanged({ bassBoostQ: v })
               }}/>
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
-              label='Treble boost center frequency (Hz)' value={this.props.eqParams.treble_boost_fc}
+              label='Treble boost center frequency (Hz)' value={this.props.eqParams.trebleBoostFc}
               min={1000.0} max={20000.0} step={5.0}
               onChange={(v) => {
-                this.props.onEqParamChanged({ treble_boost_fc: v })
+                this.props.onEqParamChanged({ trebleBoostFc: v })
               }}/>
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
-              label='Treble boost quality (Q)' value={this.props.eqParams.treble_boost_q}
+              label='Treble boost quality (Q)' value={this.props.eqParams.trebleBoostQ}
               min={0.3} max={1.0} step={0.1}
               onChange={(v) => {
-                this.props.onEqParamChanged({ treble_boost_q: v })
+                this.props.onEqParamChanged({ trebleBoostQ: v })
               }}/>
           </Grid>
           
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
-              label='Smoothing window size (octaves)' value={this.props.eqParams.window_size}
+              label='Smoothing window size (octaves)' value={this.props.eqParams.windowSize}
               min={0} max={1} step={0.01}
               onChange={(v) => {
-                this.props.onEqParamChanged({ window_size: v })
+                this.props.onEqParamChanged({ windowSize: v })
               }}/>
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
-              label='Treble region smoothing window size (octaves)' value={this.props.eqParams.treble_window_size}
+              label='Treble region smoothing window size (octaves)' value={this.props.eqParams.trebleWindowSize}
               min={0} max={3} step={0.01}
               onChange={(v) => {
-                this.props.onEqParamChanged({ treble_window_size: v })
+                this.props.onEqParamChanged({ trebleWindowSize: v })
               }}/>
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
               label='Treble transition region (Hz)' value={[
-                this.props.eqParams.treble_f_lower,
-                this.props.eqParams.treble_f_upper,
+                this.props.eqParams.trebleFLower,
+                this.props.eqParams.trebleFUpper,
               ]}
               min={1000} max={20000} step={100}
               onChange={(v) => {
-                this.props.onEqParamChanged({ treble_f_lower: v[0], treble_f_upper: v[1] })
+                this.props.onEqParamChanged({ trebleFLower: v[0], trebleFUpper: v[1] })
+              }}/>
+          </Grid>
+          <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
+            <InputSlider
+              label='Treble region gain multiplier' value={this.props.eqParams.trebleGainK}
+              min={0.0} max={1.0} step={0.01}
+              onChange={(v) => {
+                this.props.onEqParamChanged({ trebleGainK: v })
               }}/>
           </Grid>
         </Grid>
