@@ -185,7 +185,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Grid container direction='column'>
+      <Grid container direction='column' rowSpacing={{xs: 1, md: 2}}>
         <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
           <Paper sx={{padding: 1, borderRadius: 0, background: (theme) => theme.palette.background.default}}>
             <TopBar
@@ -194,12 +194,11 @@ class App extends React.Component {
               onMeasurementSelected={this.onMeasurementSelected}
             />
           </Paper>
-
         </Grid>
         {!!this.state.selectedMeasurementData && (
           <Grid item>
-            <Container sx={{marginTop: 1}}>
-              <Grid container direction='column' rowGap={2}>
+            <Container sx={{pl: {xs: 0, sm: 2}, pr: {xs: 0, sm: 2}}}>
+              <Grid container direction='column' rowSpacing={{xs: 1, md: 2}}>
                 <Grid item>
                   <Paper
                     sx={{
