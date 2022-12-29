@@ -4,11 +4,10 @@ import {
   Container,
   Grid,
   Paper,
-  Tab,
-  Tabs,
 } from "@mui/material";
 import TopBar from "./TopBar";
 import TargetTab from "./TargetTab";
+import EqTab from "./EqTab";
 
 class App extends React.Component {
   constructor(props) {
@@ -27,6 +26,8 @@ class App extends React.Component {
       selectedMeasurement: null,
       selectedMeasurementData: null,
 
+      selectedEqualizer: null,
+
       activeTab: 'target',
       soundSignature: null,
       bassBoostGain: 0.0,
@@ -42,6 +43,8 @@ class App extends React.Component {
       trebleFLower: 6000.0,
       trebleFUpper: 8000.0,
       trebleGainK: 1.0,
+
+      graphicEq: null
     };
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
     this.equalize = this.equalize.bind(this);
@@ -52,6 +55,7 @@ class App extends React.Component {
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
     this.onCompensationChanged = this.onCompensationChanged.bind(this);
+    this.onEqualizerChanged = this.onEqualizerChanged.bind(this);
   }
 
   async fetchMeasurements() {
@@ -119,6 +123,7 @@ class App extends React.Component {
         treble_f_lower: this.state.trebleFLower,
         treble_f_upper: this.state.trebleFUpper,
         treble_gain_k: this.state.trebleGainK,
+        graphic_eq: ['Wavelet', 'EqualizerAPO GraphicEq'].includes(this.state.selectedEqualizer)
       })
     }).then(res => res.json()).catch(err => {
       throw err;
@@ -131,7 +136,11 @@ class App extends React.Component {
       }
       measurement.push(dataPoint);
     }
-    this.setState({selectedMeasurementData: measurement});
+    const newState = { selectedMeasurementData: measurement };
+    if (!!data.graphic_eq) {
+      newState.graphicEq = data.graphic_eq;
+    }
+    this.setState(newState);
   }
 
   async onMeasurementSelected(e, val) {
@@ -180,6 +189,12 @@ class App extends React.Component {
     this.setState({ selectedCompensation: label, preferredCompensations }, () => { this.equalize(); });
   }
 
+  onEqualizerChanged(label) {
+    this.setState({ selectedEqualizer: label }, () => {
+      this.equalize();
+    });
+  }
+
   render() {
     return (
       <Grid container direction='column' rowSpacing={{xs: 1, md: 2}}>
@@ -195,7 +210,7 @@ class App extends React.Component {
         {!!this.state.selectedMeasurementData && (
           <Grid item>
             <Container sx={{pl: {xs: 0, sm: 2}, pr: {xs: 0, sm: 2}}}>
-              <Grid container direction='column' rowSpacing={{xs: 1, md: 2}}>
+              <Grid container direction='column' rowSpacing={{xs: 1, sm: 2}}>
                 <Grid item>
                   <Paper
                     sx={{pt: 1, pl: {xs: 1, sm: 2, md: 0}, pr: {xs: 1, sm: 2, md: 0}, pb: {xs: 1, sm: 2, md: 0}}}
@@ -203,52 +218,50 @@ class App extends React.Component {
                     <FrequencyResponseGraph data={this.state.selectedMeasurementData}/>
                   </Paper>
                 </Grid>
-                <Grid item>
-                  <Paper>
-                    <Grid container direction='column'>
-                      <Grid item>
-                        <Tabs value={this.state.activeTab} onChange={this.onActiveTabChanged}>
-                          <Tab label='Target' id='tab-target' value='target'/>
-                          <Tab label='Parametric Eq' id='tab-parametric-eq' value='parametric-eq'/>
-                          <Tab label='Fixed Band Eq' id='tab-graphic-eq' value='fixed-band-eq'/>
-                          <Tab label='Convolution Eq' id='tab-convolution-eq' value='convolution-eq'/>
-                        </Tabs>
-                      </Grid>
-                      <Grid item sx={{pt: 1}}>
-                        {this.state.activeTab === 'target' && (
-                          <TargetTab
-                            compensations={Object.keys(this.state.compensations)}
-                            selectedCompensation={this.state.selectedCompensation}
+                <Grid item container direction='row' columnSpacing={{xs: 1, sm: 2}}>
+                  <Grid item xs={6}>
+                    <Paper sx={{p: {xs: 1, sm: 2}}}>
+                      <TargetTab
+                        compensations={Object.keys(this.state.compensations)}
+                        selectedCompensation={this.state.selectedCompensation}
 
-                            soundSignatures={this.state.soundSignatures}
-                            selectedSoundSignature={this.state.selectedSoundSignature}
+                        soundSignatures={this.state.soundSignatures}
+                        selectedSoundSignature={this.state.selectedSoundSignature}
 
-                            selectedMeasurement={this.state.selectedMeasurement}
-                            selectedMeasurementData={this.state.selectedMeasurementData}
+                        selectedMeasurement={this.state.selectedMeasurement}
+                        selectedMeasurementData={this.state.selectedMeasurementData}
 
-                            bassBoostGain={this.state.bassBoostGain}
-                            bassBoostFc={this.state.bassBoostFc}
-                            bassBoostQ={this.state.bassBoostQ}
-                            trebleBoostGain={this.state.trebleBoostGain}
-                            trebleBoostFc={this.state.trebleBoostFc}
-                            trebleBoostQ={this.state.trebleBoostQ}
-                            tilt={this.state.tilt}
-                            maxGain={this.state.maxGain}
-                            windowSize={this.state.windowSize}
-                            trebleWindowSize={this.state.trebleWindowSize}
-                            trebleFLower={this.state.trebleFLower}
-                            trebleFUpper={this.state.trebleFUpper}
-                            trebleGainK={this.state.trebleGainK}
+                        bassBoostGain={this.state.bassBoostGain}
+                        bassBoostFc={this.state.bassBoostFc}
+                        bassBoostQ={this.state.bassBoostQ}
+                        trebleBoostGain={this.state.trebleBoostGain}
+                        trebleBoostFc={this.state.trebleBoostFc}
+                        trebleBoostQ={this.state.trebleBoostQ}
+                        tilt={this.state.tilt}
+                        maxGain={this.state.maxGain}
+                        windowSize={this.state.windowSize}
+                        trebleWindowSize={this.state.trebleWindowSize}
+                        trebleFLower={this.state.trebleFLower}
+                        trebleFUpper={this.state.trebleFUpper}
+                        trebleGainK={this.state.trebleGainK}
 
-                            onSoundSignatureChanged={this.onSoundSignatureChanged}
-                            onNewSoundSignatureCreated={this.onNewSoundSignatureCreated}
-                            onEqParamChanged={this.onEqParamChanged}
-                            onCompensationChanged={this.onCompensationChanged}
-                          />
-                        )}
-                      </Grid>
-                    </Grid>
-                  </Paper>
+                        onSoundSignatureChanged={this.onSoundSignatureChanged}
+                        onNewSoundSignatureCreated={this.onNewSoundSignatureCreated}
+                        onEqParamChanged={this.onEqParamChanged}
+                        onCompensationChanged={this.onCompensationChanged}
+                      />
+                    </Paper>
+                  </Grid>
+                  <Grid item xs={6}>
+                    <Paper sx={{p: {xs: 1, sm: 2}}}>
+                      <EqTab
+                        selectedMeasurement={this.state.selectedMeasurement.label}
+                        graphicEq={this.state.graphicEq}
+                        selectedEqualizer={this.state.selectedEqualizer}
+                        onEqualizerChanged={this.onEqualizerChanged}
+                      />
+                    </Paper>
+                  </Grid>
                 </Grid>
               </Grid>
             </Container>

@@ -60,8 +60,8 @@ class TargetTab extends React.Component {
 
   render() {
     return (
-      <Grid container direction='row' spacing={2} sx={{p: 1}}>
-        <Grid item xs={12} md={6} container direction='column' rowSpacing={1}>
+      <Grid container direction='row' columnSpacing={1}>
+        <Grid item xs={12} sm={12} container direction='column' rowSpacing={1}>
           {!!this.props.compensations && (
             <Grid item>
               <Autocomplete
@@ -134,7 +134,7 @@ class TargetTab extends React.Component {
             </Grid>
           )}
         </Grid>
-        <Grid item xs={12} sm={6} container direction='column' rowSpacing={1}>
+        <Grid item xs={12} sm={12} container direction='column' rowSpacing={1}>
           <Grid item>
             <InputSlider
               label='Bass boost (dB)' value={this.props.bassBoostGain} min={-10} max={20} step={0.5}
