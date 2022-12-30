@@ -14,22 +14,20 @@ class App extends React.Component {
     super(props);
     this.state = {
       compensations: [],
-      preferredCompensations: [],
-      selectedCompensation: null,
+      preferredCompensations: [], // Sound signatures preferred for each measurement rig
+      selectedCompensation: null, // Name (label) of the currently selected compensation. TODO: Custom compensation?
 
-      soundSignatures: [
-        {label: 'Add new', frequency: [], raw: []}
-      ],
-      selectedSoundSignature: null,
+      soundSignatures: [{label: 'Add new', frequency: [], raw: []}], // Sound signatures
+      selectedSoundSignature: null, // Currently selected sound signature
 
-      measurements: null,
-      selectedMeasurement: null,
-      selectedMeasurementData: null,
+      measurements: null, // { label, source, form, rig }
+      selectedMeasurement: null, // Currently selected measurement
+      graphData: null, // Data for the frequency response graph
 
-      selectedEqualizer: null,
+      equalizers: [],
+      selectedEqualizer: null, //Currently selected equalizer app: { label, type }
 
-      activeTab: 'target',
-      soundSignature: null,
+      // Request parameters
       bassBoostGain: 0.0,
       bassBoostFc: 105.0,
       bassBoostQ: 0.7,
@@ -49,7 +47,6 @@ class App extends React.Component {
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
     this.equalize = this.equalize.bind(this);
     this.onMeasurementSelected = this.onMeasurementSelected.bind(this);
-    this.onActiveTabChanged = this.onActiveTabChanged.bind(this);
     this.onSoundSignatureChanged = this.onSoundSignatureChanged.bind(this);
     this.onNewSoundSignatureCreated = this.onNewSoundSignatureCreated.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
@@ -101,6 +98,11 @@ class App extends React.Component {
   async equalize() {
     // console.log('equalize');
     // console.log(this.state);
+    const soundSignature = !!this.state.selectedSoundSignature ? { ...this.state.selectedSoundSignature } : null;
+    if (!!soundSignature) {
+      delete soundSignature.label;
+    }
+
     const data = await fetch('/equalize', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
@@ -109,7 +111,7 @@ class App extends React.Component {
         source: this.state.selectedMeasurement.source,
         rig: this.state.selectedMeasurement.rig,
         compensation: this.state.selectedCompensation,
-        sound_signature: this.state.soundSignature,
+        sound_signature: soundSignature,
         bass_boost_gain: this.state.bassBoostGain,
         bass_boost_fc: this.state.bassBoostFc,
         bass_boost_q: this.state.bassBoostQ,
@@ -123,7 +125,8 @@ class App extends React.Component {
         treble_f_lower: this.state.trebleFLower,
         treble_f_upper: this.state.trebleFUpper,
         treble_gain_k: this.state.trebleGainK,
-        graphic_eq: ['Wavelet', 'EqualizerAPO GraphicEq'].includes(this.state.selectedEqualizer)
+        graphic_eq: this.state.selectedEqualizer?.type === 'graphic',
+        parametric_eq: this.state.selectedEqualizer?.type === 'parametric'
       })
     }).then(res => res.json()).catch(err => {
       throw err;
@@ -136,9 +139,11 @@ class App extends React.Component {
       }
       measurement.push(dataPoint);
     }
-    const newState = { selectedMeasurementData: measurement };
+    const newState = { graphData: measurement };
     if (!!data.graphic_eq) {
       newState.graphicEq = data.graphic_eq;
+    } else if (!!data.parametric_eq) {
+      newState.parametricFilters = data.parametric_eq.filters.map(filt => { return { ...filt }; });
     }
     this.setState(newState);
   }
@@ -158,20 +163,21 @@ class App extends React.Component {
     });
   }
 
-  onActiveTabChanged(e, value) {
-    this.setState({activeTab: value});
-  }
-
-  onSoundSignatureChanged(name) {
-    this.setState({ soundSignature: name }, () => {
-      this.equalize();
-    });
+  onSoundSignatureChanged(soundSignature) {
+    if (soundSignature?.label === 'Add new') {
+      this.setState({ selectedSoundSignature: soundSignature });
+    } else {
+      this.setState({ selectedSoundSignature: soundSignature }, () => {
+        this.equalize();
+      });
+    }
   }
 
   onNewSoundSignatureCreated(name, frequency, raw) {
+    const newSoundSignature = { label: name, frequency, raw };
     this.setState({
-      soundSignature: name,
-      soundSignatures: [ ...this.state.soundSignatures, { label: name, frequency, raw } ]
+      selectedSoundSignature: newSoundSignature,
+      soundSignatures: [ ...this.state.soundSignatures, newSoundSignature ]
     }, () => {
       this.equalize();
     });
@@ -189,15 +195,19 @@ class App extends React.Component {
     this.setState({ selectedCompensation: label, preferredCompensations }, () => { this.equalize(); });
   }
 
-  onEqualizerChanged(label) {
-    this.setState({ selectedEqualizer: label }, () => {
-      this.equalize();
-    });
+  onEqualizerChanged(val) {
+    if (val === null) {
+      this.setState({ selectedEqualizer: null });
+    } else {
+      this.setState({ selectedEqualizer: { ...val } }, () => {
+        this.equalize();
+      });
+    }
   }
 
   render() {
     return (
-      <Grid container direction='column' rowSpacing={{xs: 1, md: 2}}>
+      <Grid container direction='column' rowSpacing={{xs: 1, md: 2}} sx={{pb: 1}}>
         <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
           <Paper sx={{padding: 1, borderRadius: 0, background: (theme) => theme.palette.background.default}}>
             <TopBar
@@ -207,7 +217,7 @@ class App extends React.Component {
             />
           </Paper>
         </Grid>
-        {!!this.state.selectedMeasurementData && (
+        {!!this.state.graphData && (
           <Grid item>
             <Container sx={{pl: {xs: 0, sm: 2}, pr: {xs: 0, sm: 2}}}>
               <Grid container direction='column' rowSpacing={{xs: 1, sm: 2}}>
@@ -215,10 +225,10 @@ class App extends React.Component {
                   <Paper
                     sx={{pt: 1, pl: {xs: 1, sm: 2, md: 0}, pr: {xs: 1, sm: 2, md: 0}, pb: {xs: 1, sm: 2, md: 0}}}
                   >
-                    <FrequencyResponseGraph data={this.state.selectedMeasurementData}/>
+                    <FrequencyResponseGraph data={this.state.graphData}/>
                   </Paper>
                 </Grid>
-                <Grid item container direction='row' columnSpacing={{xs: 1, sm: 2}}>
+                <Grid item container direction='row' columnSpacing={{xs: 1, sm: 2}} alignItems='stretch'>
                   <Grid item xs={6}>
                     <Paper sx={{p: {xs: 1, sm: 2}}}>
                       <TargetTab
@@ -229,7 +239,7 @@ class App extends React.Component {
                         selectedSoundSignature={this.state.selectedSoundSignature}
 
                         selectedMeasurement={this.state.selectedMeasurement}
-                        selectedMeasurementData={this.state.selectedMeasurementData}
+                        graphData={this.state.graphData}
 
                         bassBoostGain={this.state.bassBoostGain}
                         bassBoostFc={this.state.bassBoostFc}
@@ -256,9 +266,10 @@ class App extends React.Component {
                     <Paper sx={{p: {xs: 1, sm: 2}}}>
                       <EqTab
                         selectedMeasurement={this.state.selectedMeasurement.label}
-                        graphicEq={this.state.graphicEq}
                         selectedEqualizer={this.state.selectedEqualizer}
                         onEqualizerChanged={this.onEqualizerChanged}
+                        graphicEq={this.state.graphicEq}
+                        parametricFilters={this.state.parametricFilters}
                       />
                     </Paper>
                   </Grid>

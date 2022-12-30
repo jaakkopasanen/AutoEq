@@ -528,7 +528,7 @@ class PEQ:
         """PEQ as dictionary"""
         return {
             'fs': self.fs,
-            'filters': [{'fc': filt.fc, 'q': filt.q, 'gain': filt.gain} for filt in self.filters]
+            'filters': [{'type': filt.__class__.__name__, 'fc': filt.fc, 'q': filt.q, 'gain': filt.gain} for filt in self.filters]
         }
 
     def _parse_optimizer_params(self, params):

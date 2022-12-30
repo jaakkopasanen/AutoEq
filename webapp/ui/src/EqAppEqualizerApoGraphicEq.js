@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Grid, Tooltip} from '@mui/material';
 
-class EqAppWavelet extends React.Component {
+class EqAppEqualizerApoGraphicEq extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,7 +23,6 @@ class EqAppWavelet extends React.Component {
 
   onCopyToClipboardClick() {
     navigator.clipboard.writeText(this.props.graphicEq).then(() => {
-      console.log(this.props.graphicEq);
       this.setState({copyToClipboardTooltipOpen: true}, () => {
         setTimeout(() => {
           this.setState({copyToClipboardTooltipOpen: false})
@@ -45,7 +44,8 @@ class EqAppWavelet extends React.Component {
             borderWidth: '1px',
             borderColor: 'primary.main',
             borderRadius: 1,
-            padding: 1
+            padding: 1,
+            display: !!this.props.graphicEq ? 'block' : 'none'
           }}
           >
             <div>{this.props.graphicEq}</div>
@@ -79,4 +79,4 @@ class EqAppWavelet extends React.Component {
   }
 }
 
-export default EqAppWavelet;
+export default EqAppEqualizerApoGraphicEq;

@@ -11,7 +11,7 @@ class FrequencyResponseGraph extends React.Component {
         error: true,
         target: true,
         equalization: true,
-        equalized: true
+        equalized: true,
       },
       smoothed: true,
     };
@@ -98,7 +98,15 @@ class FrequencyResponseGraph extends React.Component {
                 <Line
                   dataKey={this.state.show.equalization ? 'equalization' : ''}
                   name='Equalizer' type='linear' dot={false}
-                  stroke={this.state.show.equalization ? '#2ca02c' : '#999'}
+                  stroke={this.state.show.equalization ? '#38d338' : '#999'}
+                  strokeWidth={1.5} isAnimationActive={false}
+                />
+              )}
+              {!!this.props.data[0].parametric_eq && (
+                <Line
+                  dataKey={this.state.show.parametricEq ? 'parametric_eq' : ''}
+                  name='Equalizer' type='linear' dot={false}
+                  stroke={this.state.show.parametricEq ? '#2b802b' : '#999'}
                   strokeWidth={1.5} isAnimationActive={false}
                 />
               )}
@@ -165,10 +173,10 @@ class FrequencyResponseGraph extends React.Component {
           </Grid>
           <Grid item>
             <FormControlLabel
-              label='Equalization'
+              label='Equalizer'
               control={<Checkbox size='small' checked={this.state.show.equalization}
                                  onChange={(e, val) => this.onLegendShowChanged('equalization', val)}/>}
-              sx={{color: '#2ca02c'}}
+              sx={{color: '#38d338'}}
             />
           </Grid>
           <Grid item>

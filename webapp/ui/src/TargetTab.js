@@ -17,9 +17,9 @@ class TargetTab extends React.Component {
 
   onUseCurrentErrorClicked() {
     let newSoundSignatureText = 'frequency,raw\n';
-    for (let i = 0; i < this.props.selectedMeasurementData.length; ++i) {
-      newSoundSignatureText += this.props.selectedMeasurementData[i].frequency.toFixed(1)
-        + ',' + this.props.selectedMeasurementData[i].raw.toFixed(1) + '\n';
+    for (let i = 0; i < this.props.graphData.length; ++i) {
+      newSoundSignatureText += this.props.graphData[i].frequency.toFixed(1)
+        + ',' + this.props.graphData[i].raw.toFixed(1) + '\n';
     }
     this.setState({ newSoundSignatureText, newSoundSignatureName: this.props.selectedMeasurement.label });
   }
@@ -83,16 +83,17 @@ class TargetTab extends React.Component {
                 renderInput={(params) =>
                   <TextField {...params} label="Select sound signature"/>
                 }
-                options={this.props.soundSignatures.map(sig => sig.label)}
+                options={this.props.soundSignatures}
                 value={this.props.selectedSoundSignature}
                 onChange={(e, val) => {
                   this.props.onSoundSignatureChanged(val);
                 }}
+                isOptionEqualToValue={(option, value) => option.label === value.label}
                 sx={{width: '100%'}}
               />
             </Grid>
           )}
-          {this.props.selectedSoundSignature === 'Add new' && (
+          {this.props.selectedSoundSignature?.label === 'Add new' && (
             <Grid item container direction='column' rowSpacing={1} sx={{pl: 2, pr: 2}}>
               <Grid item container direction='row' alignItems='center' columnSpacing={1}>
                 <Grid item sx={{flexGrow: 1}}>
@@ -126,7 +127,7 @@ class TargetTab extends React.Component {
               <Grid item>
                 <Button
                   variant='outlined' onClick={this.onUseCurrentErrorClicked}
-                  disabled={this.props.selectedMeasurementData.filter(x => !!x.error).length === 0}
+                  disabled={this.props.graphData.filter(x => !!x.error).length === 0}
                 >
                   Use current error
                 </Button>

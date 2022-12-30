@@ -196,8 +196,12 @@ def equalize(req: EqualizeRequest):
             PEQ_CONFIGS[config] if type(config) == str else config.dict() for config in parametric_eq_config
         ]
         parametric_peqs = fr.optimize_parametric_eq(parametric_eq_config, req.fs, preamp=req.preamp)
-        parametric_peqs = [peq.to_dict() for peq in parametric_peqs]
-        res.update({'parametric_eq': parametric_peqs})
+        peq = parametric_peqs[0]
+        peq.sort_filters()
+        res.update({'parametric_eq': peq.to_dict()})
+        peq_fr = FrequencyResponse(name='PEQ', frequency=peq.f, raw=peq.fr)
+        peq_fr.interpolate()
+        res['fr'].update({'parametric_eq': peq_fr.raw.tolist()})
 
     if req.fixed_band_eq:
         if type(req.fixed_band_eq_config) == str:
