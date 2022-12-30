@@ -14,8 +14,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       compensations: [],
-      preferredCompensations: [], // Sound signatures preferred for each measurement rig
-      selectedCompensation: null, // Name (label) of the currently selected compensation. TODO: Custom compensation?
+      preferredCompensations: [], // Sound signatures preferred for each measurement rig {source: {form: {rig: label}}}
+      selectedCompensation: null, // Name (label) of the currently selected compensation.
 
       soundSignatures: [{label: 'Add new', frequency: [], raw: []}], // Sound signatures
       selectedSoundSignature: null, // Currently selected sound signature
@@ -27,8 +27,7 @@ class App extends React.Component {
       equalizers: [
         {label: 'Wavelet', type: 'graphic'},
         {label: 'EqualizerAPO GraphicEq', type: 'graphic'},
-        //{label: 'EqualizerAPO ParametricEq', type: 'parametric', config: '8_PEAKING_WITH_SHELVES'},
-        {label: 'EqualizerAPO ParametricEq', type: 'parametric', config: '4_PEAKING_WITH_LOW_SHELF'},
+        {label: 'EqualizerAPO ParametricEq', type: 'parametric', config: '8_PEAKING_WITH_SHELVES'},
         {label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ'}
       ],
       selectedEqualizer: null, //Currently selected equalizer app: { label, type }
@@ -55,8 +54,8 @@ class App extends React.Component {
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
     this.equalize = this.equalize.bind(this);
     this.onMeasurementSelected = this.onMeasurementSelected.bind(this);
-    this.onSoundSignatureChanged = this.onSoundSignatureChanged.bind(this);
-    this.onNewSoundSignatureCreated = this.onNewSoundSignatureCreated.bind(this);
+    this.onSoundSignatureSelected = this.onSoundSignatureSelected.bind(this);
+    this.onSoundSignatureUpdated = this.onSoundSignatureUpdated.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
     this.onCompensationChanged = this.onCompensationChanged.bind(this);
@@ -215,21 +214,30 @@ class App extends React.Component {
     });
   }
 
-  onSoundSignatureChanged(soundSignature) {
-    if (soundSignature?.label === 'Add new') {
-      this.setState({ selectedSoundSignature: soundSignature });
-    } else {
-      this.setState({ selectedSoundSignature: soundSignature }, () => {
+  onSoundSignatureSelected(soundSignature) {
+    this.setState({ selectedSoundSignature: soundSignature }, () => {
+      if (soundSignature?.label !== 'Add new') {
         this.equalize();
-      });
-    }
+      }
+    });
   }
 
-  onNewSoundSignatureCreated(name, frequency, raw) {
-    const newSoundSignature = { label: name, frequency, raw };
+  onSoundSignatureUpdated(name, frequency, raw) {
+    const updatedSoundSignature = { label: name, frequency, raw };
+    const soundSignatures = [ ...this.state.soundSignatures ];
+    let match = false;
+    soundSignatures.forEach((soundSignature, i) => {
+      if (soundSignature.label === name) {
+        soundSignatures[i] = updatedSoundSignature;
+        match = true;
+      }
+    });
+    if (!match) {
+      soundSignatures.push(updatedSoundSignature);
+    }
     this.setState({
-      selectedSoundSignature: newSoundSignature,
-      soundSignatures: [ ...this.state.soundSignatures, newSoundSignature ]
+      selectedSoundSignature: updatedSoundSignature,
+      soundSignatures
     }, () => {
       this.equalize();
     });
@@ -307,8 +315,8 @@ class App extends React.Component {
                         trebleFUpper={this.state.trebleFUpper}
                         trebleGainK={this.state.trebleGainK}
 
-                        onSoundSignatureChanged={this.onSoundSignatureChanged}
-                        onNewSoundSignatureCreated={this.onNewSoundSignatureCreated}
+                        onSoundSignatureSelected={this.onSoundSignatureSelected}
+                        onSoundSignatureUpdated={this.onSoundSignatureUpdated}
                         onEqParamChanged={this.onEqParamChanged}
                         onCompensationChanged={this.onCompensationChanged}
                       />

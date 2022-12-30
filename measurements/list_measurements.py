@@ -38,13 +38,9 @@ def write_entries_and_measurements():
 def write_compensations():
     path = Path().resolve()
     compensations = [
-        {'name': 'autoeq_in-ear', 'label': 'AutoEq In-ear', 'compatible': [
-            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
-        ], 'recommended': [
-            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
-        ]},
         {'name': 'diffuse_field', 'label': 'Diffuse Field', 'compatible': [], 'recommended': []},
         {'name': 'free_field', 'label': 'Free Field', 'compatible': [], 'recommended': []},
+        {'name': 'zero', 'label': 'Flat', 'compatible': [], 'recommended': []}
         {'name': 'harman_in-ear_2016', 'label': 'Harman In-ear 2016', 'compatible': [
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
         ], 'recommended': []},
@@ -55,6 +51,14 @@ def write_compensations():
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
         ], 'recommended': []},
         {'name': 'harman_in-ear_2019v2', 'label': 'Harman In-ear 2019', 'compatible': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ], 'recommended': []},
+        {'name': 'autoeq_in-ear', 'label': 'AutoEq In-ear', 'compatible': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ], 'recommended': [
+            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
+        ]},
+        {'name': 'oratory1990', 'label': 'oratory1990', 'compatible': [
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
         ], 'recommended': []},
         {'name': 'harman_over-ear_2013', 'label': 'Harman Over-ear 2013', 'compatible': [
@@ -80,9 +84,6 @@ def write_compensations():
         {'name': 'innerfidelity_harman_over-ear_2018', 'label': 'Innerfidelity Harman Over-ear 2018', 'compatible': [
             ('innerfidelity', 'onear', 'unknown')
         ], 'recommended': [('innerfidelity', 'onear', 'unknown')]},
-        {'name': 'oratory1990', 'label': 'oratory1990', 'compatible': [
-            ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
-        ], 'recommended': []},
         {'name': 'referenceaudioanalyzer_hdm1_harman_over-ear_2018', 'label': 'RAA HDM-1 Harman Over-ear 2018', 'compatible': [
             ('referenceaudioanalyzer', 'onear', 'HDM1')
         ], 'recommended': [('referenceaudioanalyzer', 'onear', 'HDM1')]},

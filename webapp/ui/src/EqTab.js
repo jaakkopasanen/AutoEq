@@ -5,7 +5,6 @@ import EqAppParametricEq from './EqAppParametricEq';
 
 class EqTab extends React.Component {
   render() {
-    console.log(this.props.fixedBandFilters);
     return (
       <Grid container direction='column'>
         <Grid item>

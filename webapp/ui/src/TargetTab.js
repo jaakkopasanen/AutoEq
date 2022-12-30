@@ -7,55 +7,80 @@ class TargetTab extends React.Component {
     super(props);
     this.state = {
       showAdvanced: false,
-      newSoundSignatureName: '',
-      newSoundSignatureText: 'frequency,raw\n',
+      soundSignatureName: '',
+      soundSignatureText: this.constructSoundSignatureText([]),
     };
     this.onUseCurrentErrorClicked = this.onUseCurrentErrorClicked.bind(this);
     this.onSoundSignatureTextChanged = this.onSoundSignatureTextChanged.bind(this);
     this.onSaveSoundSignatureClick = this.onSaveSoundSignatureClick.bind(this);
+    this.onSoundSignatureSelected = this.onSoundSignatureSelected.bind(this);
+  }
+
+  constructSoundSignatureText(data) {
+    let soundSignatureText = 'frequency,raw\n';
+    if (data.length === 0) {
+      soundSignatureText += '20,0\n20000,0'
+    } else {
+      for (let i = 0; i < data.length; ++i) {
+        soundSignatureText += data[i].frequency.toFixed(1)
+          + ',' + data[i].raw.toFixed(1) + '\n';
+      }
+    }
+    return soundSignatureText;
   }
 
   onUseCurrentErrorClicked() {
-    let newSoundSignatureText = 'frequency,raw\n';
-    for (let i = 0; i < this.props.graphData.length; ++i) {
-      newSoundSignatureText += this.props.graphData[i].frequency.toFixed(1)
-        + ',' + this.props.graphData[i].raw.toFixed(1) + '\n';
-    }
-    this.setState({ newSoundSignatureText, newSoundSignatureName: this.props.selectedMeasurement.label });
+    const soundSignatureText = this.constructSoundSignatureText(this.props.graphData.map(dataPoint => ({
+      frequency: dataPoint.frequency,
+      raw: dataPoint.error,
+    })));
+    this.setState({ soundSignatureText, soundSignatureName: this.props.selectedMeasurement.label });
   }
 
   onSoundSignatureTextChanged(e) {
     this.setState({
-      newSoundSignatureText: e.target.value,
-      newSoundSignatureError: false
+      soundSignatureText: e.target.value,
+      soundSignatureError: false
     });
   }
 
   onSaveSoundSignatureClick() {
     const frequency = [];
     const raw = [];
-    const rows = this.state.newSoundSignatureText.trim().split('\n');
+    const rows = this.state.soundSignatureText.trim().split('\n');
     for (const row of rows) {
       if (row.trim() === '') {
         continue;
       }
       const cells = row.trim().split(',');
       if (cells.length !== 2) {
-        this.setState({ newSoundSignatureError: true });
+        this.setState({ soundSignatureError: true });
         return;
       }
       if (cells[0] === 'frequency') {
         continue;
       }
       if (isNaN(parseFloat(cells[0].trim())) || isNaN(parseFloat(cells[1].trim()))) {
-        this.setState({ newSoundSignatureError: true });
+        this.setState({ soundSignatureError: true });
         return;
       }
       frequency.push(parseFloat(cells[0].trim()));
       raw.push(parseFloat(cells[1].trim()));
     }
-    this.props.onNewSoundSignatureCreated(this.state.newSoundSignatureName, frequency, raw);
-    this.setState({ newSoundSignatureName: '', newSoundSignatureText: 'frequency,raw\n' });
+    this.props.onSoundSignatureUpdated(this.state.soundSignatureName, frequency, raw);
+    //this.setState({ soundSignatureName: '', soundSignatureText: 'frequency,raw\n' });
+  }
+
+  onSoundSignatureSelected(e, val) {
+    if (val !== null) {
+      this.setState({
+        soundSignatureName: val.label !== 'Add new' ? val.label : '',
+        soundSignatureText: this.constructSoundSignatureText(val.frequency.map((e, i) => (
+          {frequency: e, raw: val.raw[i]}
+        )))
+      });
+    }
+    this.props.onSoundSignatureSelected(val);
   }
 
   render() {
@@ -66,8 +91,9 @@ class TargetTab extends React.Component {
             <Grid item>
               <Autocomplete
                 renderInput={(params) =>
-                  <TextField {...params} label="Select compensation" />
+                  <TextField {...params} label='Select compensation'/>
                 }
+
                 options={this.props.compensations}
                 value={this.props.selectedCompensation}
                 onChange={(e, val) => {
@@ -85,32 +111,30 @@ class TargetTab extends React.Component {
                 }
                 options={this.props.soundSignatures}
                 value={this.props.selectedSoundSignature}
-                onChange={(e, val) => {
-                  this.props.onSoundSignatureChanged(val);
-                }}
+                onChange={this.onSoundSignatureSelected}
                 isOptionEqualToValue={(option, value) => option.label === value.label}
                 sx={{width: '100%'}}
               />
             </Grid>
           )}
-          {this.props.selectedSoundSignature?.label === 'Add new' && (
+          {this.props.selectedSoundSignature !== null && (
             <Grid item container direction='column' rowSpacing={1} sx={{pl: 2, pr: 2}}>
               <Grid item container direction='row' alignItems='center' columnSpacing={1}>
                 <Grid item sx={{flexGrow: 1}}>
                   <TextField
-                    value={this.state.newSoundSignatureName}
+                    value={this.state.soundSignatureName}
                     onChange={(e) => {
-                      this.setState({ newSoundSignatureName: e.target.value });
+                      this.setState({ soundSignatureName: e.target.value });
                     }}
                     size='small' sx={{width: '100%'}}
-                    label='Name of the new sound signature'
+                    label='Name of the sound signature'
                   />
                 </Grid>
                 <Grid item>
                   <Button
                     onClick={this.onSaveSoundSignatureClick}
                     variant='outlined' size='large'
-                    disabled={this.state.newSoundSignatureName.trim().length === 0}
+                    disabled={this.state.soundSignatureName.trim().length === 0}
                   >
                     Save
                   </Button>
@@ -118,10 +142,11 @@ class TargetTab extends React.Component {
               </Grid>
               <Grid item>
                 <TextField
-                  multiline rows={10} value={this.state.newSoundSignatureText}
+                  multiline rows={10} value={this.state.soundSignatureText}
                   sx={{width: '100%'}}
                   inputProps={{ style: { fontFamily: 'monospace' } }}
                   onChange={this.onSoundSignatureTextChanged}
+                  label='CSV data'
                 />
               </Grid>
               <Grid item>
