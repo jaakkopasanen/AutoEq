@@ -40,7 +40,7 @@ def write_compensations():
     compensations = [
         {'name': 'diffuse_field', 'label': 'Diffuse Field', 'compatible': [], 'recommended': []},
         {'name': 'free_field', 'label': 'Free Field', 'compatible': [], 'recommended': []},
-        {'name': 'zero', 'label': 'Flat', 'compatible': [], 'recommended': []}
+        {'name': 'zero', 'label': 'Flat', 'compatible': [], 'recommended': []},
         {'name': 'harman_in-ear_2016', 'label': 'Harman In-ear 2016', 'compatible': [
             ('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')
         ], 'recommended': []},

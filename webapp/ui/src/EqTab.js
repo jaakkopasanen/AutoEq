@@ -6,7 +6,7 @@ import EqAppParametricEq from './EqAppParametricEq';
 class EqTab extends React.Component {
   render() {
     return (
-      <Grid container direction='column'>
+      <Grid container direction='column' rowSpacing={1}>
         <Grid item>
           <Autocomplete
             renderInput={(params) =>
@@ -28,12 +28,20 @@ class EqTab extends React.Component {
         )}
         {this.props.selectedEqualizer?.type === 'parametric' && (
           <Grid item>
-            <EqAppParametricEq filters={this.props.parametricFilters} />
+            <EqAppParametricEq
+              filters={this.props.parametricFilters}
+              fs={this.props.fs}
+              onEqParamChanged={this.props.onEqParamChanged}
+            />
           </Grid>
         )}
         {this.props.selectedEqualizer?.type === 'fixedBand' && (
           <Grid item>
-            <EqAppParametricEq filters={this.props.fixedBandFilters} />
+            <EqAppParametricEq
+              filters={this.props.fixedBandFilters}
+              fs={this.props.fs}
+              onEqParamChanged={this.props.onEqParamChanged}
+            />
           </Grid>
         )}
       </Grid>

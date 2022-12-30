@@ -46,6 +46,7 @@ class App extends React.Component {
       trebleFLower: 6000.0,
       trebleFUpper: 8000.0,
       trebleGainK: 1.0,
+      fs: 44100, // TODO: read from audio manager or some such
 
       graphicEq: null,
       parametricFilters: null,
@@ -123,6 +124,7 @@ class App extends React.Component {
       treble_boost_fc: this.state.trebleBoostFc,
       treble_boost_q: this.state.trebleBoostQ,
       tilt: this.state.tilt,
+      fs: this.state.fs,
       max_gain: this.state.maxGain,
       window_size: this.state.windowSize,
       treble_window_size: this.state.trebleWindowSize,
@@ -332,6 +334,8 @@ class App extends React.Component {
                         graphicEq={this.state.graphicEq}
                         parametricFilters={this.state.parametricFilters}
                         fixedBandFilters={this.state.fixedBandFilters}
+                        fs={this.state.fs}
+                        onEqParamChanged={this.onEqParamChanged}
                       />
                     </Paper>
                   </Grid>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Table, TableBody, TableCell, TableHead, TableRow} from '@mui/material';
+import {Autocomplete, Grid, Table, TableBody, TableCell, TableHead, TableRow, TextField} from '@mui/material';
 
 class EqAppParametricEq extends React.Component {
   constructor(props) {
@@ -16,7 +16,22 @@ class EqAppParametricEq extends React.Component {
 
   render() {
     return (
-      <Grid container direction='column'>
+      <Grid container direction='column' rowSpacing={1}>
+        <Grid item>
+          <Autocomplete
+            freeSolo
+            renderInput={(params) =>
+              <TextField {...params} label='Sample rate (Hz)' type='number' required={!this.props.fs} />
+            }
+            value={this.props.fs?.toFixed(0)}
+            options={['44100', '48000', '96000', '192000', '384000']}
+            onChange={(e, val) => {
+              this.props.onEqParamChanged({ fs: parseFloat(val) })
+            }}
+            size='small'
+            disableClearable
+          />
+        </Grid>
         <Grid item>
           <Table size='small'>
             <TableHead>

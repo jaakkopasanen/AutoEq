@@ -93,7 +93,7 @@ class EqualizeRequest(BaseModel):
     treble_boost_fc = DEFAULT_TREBLE_BOOST_FC
     treble_boost_q = DEFAULT_TREBLE_BOOST_Q
     tilt = DEFAULT_TILT
-    fs = DEFAULT_FS
+    fs: Optional[float] = DEFAULT_FS
     sound_signature: Optional[MeasurementData]
     max_gain = DEFAULT_MAX_GAIN
     window_size = DEFAULT_SMOOTHING_WINDOW_SIZE
