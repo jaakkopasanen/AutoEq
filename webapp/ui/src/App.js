@@ -24,7 +24,13 @@ class App extends React.Component {
       selectedMeasurement: null, // Currently selected measurement
       graphData: null, // Data for the frequency response graph
 
-      equalizers: [],
+      equalizers: [
+        {label: 'Wavelet', type: 'graphic'},
+        {label: 'EqualizerAPO GraphicEq', type: 'graphic'},
+        //{label: 'EqualizerAPO ParametricEq', type: 'parametric', config: '8_PEAKING_WITH_SHELVES'},
+        {label: 'EqualizerAPO ParametricEq', type: 'parametric', config: '4_PEAKING_WITH_LOW_SHELF'},
+        {label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ'}
+      ],
       selectedEqualizer: null, //Currently selected equalizer app: { label, type }
 
       // Request parameters
@@ -42,7 +48,9 @@ class App extends React.Component {
       trebleFUpper: 8000.0,
       trebleGainK: 1.0,
 
-      graphicEq: null
+      graphicEq: null,
+      parametricFilters: null,
+      fixedBandFilters: null,
     };
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
     this.equalize = this.equalize.bind(this);
@@ -103,48 +111,92 @@ class App extends React.Component {
       delete soundSignature.label;
     }
 
+    const body = {
+      name: this.state.selectedMeasurement.label,
+      source: this.state.selectedMeasurement.source,
+      rig: this.state.selectedMeasurement.rig,
+      compensation: this.state.selectedCompensation,
+      sound_signature: soundSignature,
+      bass_boost_gain: this.state.bassBoostGain,
+      bass_boost_fc: this.state.bassBoostFc,
+      bass_boost_q: this.state.bassBoostQ,
+      treble_boost_gain: this.state.trebleBoostGain,
+      treble_boost_fc: this.state.trebleBoostFc,
+      treble_boost_q: this.state.trebleBoostQ,
+      tilt: this.state.tilt,
+      max_gain: this.state.maxGain,
+      window_size: this.state.windowSize,
+      treble_window_size: this.state.trebleWindowSize,
+      treble_f_lower: this.state.trebleFLower,
+      treble_f_upper: this.state.trebleFUpper,
+      treble_gain_k: this.state.trebleGainK,
+      graphic_eq: this.state.selectedEqualizer?.type === 'graphic',
+      parametric_eq: this.state.selectedEqualizer?.type === 'parametric',
+      fixed_band_eq: this.state.selectedEqualizer?.type === 'fixedBand',
+      convolution_eq: this.state.selectedEqualizer?.type === 'convolution',
+    };
+
+    if (this.state.selectedEqualizer?.type === 'parametric') {
+      body.parametric_eq_config = this.state.selectedEqualizer.config;
+    }
+
     const data = await fetch('/equalize', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        name: this.state.selectedMeasurement.label,
-        source: this.state.selectedMeasurement.source,
-        rig: this.state.selectedMeasurement.rig,
-        compensation: this.state.selectedCompensation,
-        sound_signature: soundSignature,
-        bass_boost_gain: this.state.bassBoostGain,
-        bass_boost_fc: this.state.bassBoostFc,
-        bass_boost_q: this.state.bassBoostQ,
-        treble_boost_gain: this.state.trebleBoostGain,
-        treble_boost_fc: this.state.trebleBoostFc,
-        treble_boost_q: this.state.trebleBoostQ,
-        tilt: this.state.tilt,
-        max_gain: this.state.maxGain,
-        window_size: this.state.windowSize,
-        treble_window_size: this.state.trebleWindowSize,
-        treble_f_lower: this.state.trebleFLower,
-        treble_f_upper: this.state.trebleFUpper,
-        treble_gain_k: this.state.trebleGainK,
-        graphic_eq: this.state.selectedEqualizer?.type === 'graphic',
-        parametric_eq: this.state.selectedEqualizer?.type === 'parametric'
-      })
+      body: JSON.stringify(body)
     }).then(res => res.json()).catch(err => {
-      throw err;
+      throw err; // TODO error handling
     });
-    const measurement = [];
+
+    const graphData = [];
+    const keyMap = {
+      frequency: 'frequency',
+      raw: 'raw',
+      error: 'error',
+      smoothed: 'smoothed',
+      error_smoothed: 'errorSmoothed',
+      equalization: 'equalization',
+      equalized_raw: 'equalizedRaw',
+      equalized_smoothed: 'equalizedSmoothed',
+      target: 'target',
+      parametric_eq: 'parametricEq',
+      fixed_band_eq: 'fixedBandEq',
+    };
+    if (this.state.selectedEqualizer?.type === 'parametric' && !!data.fr?.parametric_eq) {
+      // Use parametric eq curve as the equalization in the frequency response graph
+      keyMap.parametric_eq = 'equalization';
+      keyMap.equalization = null;
+    } else if (this.state.selectedEqualizer?.type === 'fixedBand' && !!data.fr?.fixed_band_eq) {
+      // Use fixed band eq curve as the equalization in the frequency response graph
+      keyMap.fixed_band_eq = 'equalization';
+      keyMap.equalization = null;
+    }
     for (let i = 0; i < data.fr.frequency.length; ++i) {
       const dataPoint = {};
       for (const key of Object.keys(data.fr)) {
-        dataPoint[key] = data.fr[key][i];
+        if (keyMap[key] === null) {
+          continue;
+        }
+        dataPoint[keyMap[key]] = data.fr[key][i];
       }
-      measurement.push(dataPoint);
+      graphData.push(dataPoint);
     }
-    const newState = { graphData: measurement };
+    if (!!data.fr?.equalization) {
+      for (let i = 0; i < graphData.length; ++i) {
+        graphData[i].equalizedRaw = graphData[i].raw + graphData[i].equalization;
+        graphData[i].equalizedSmoothed = graphData[i].smoothed + graphData[i].equalization;
+      }
+    }
+    const newState = { graphData };
+
     if (!!data.graphic_eq) {
       newState.graphicEq = data.graphic_eq;
     } else if (!!data.parametric_eq) {
       newState.parametricFilters = data.parametric_eq.filters.map(filt => { return { ...filt }; });
+    } else if (!!data.fixed_band_eq) {
+      newState.fixedBandFilters = data.fixed_band_eq.filters.map(filt => { return { ...filt }; });
     }
+
     this.setState(newState);
   }
 
@@ -266,10 +318,12 @@ class App extends React.Component {
                     <Paper sx={{p: {xs: 1, sm: 2}}}>
                       <EqTab
                         selectedMeasurement={this.state.selectedMeasurement.label}
+                        equalizers={this.state.equalizers}
                         selectedEqualizer={this.state.selectedEqualizer}
                         onEqualizerChanged={this.onEqualizerChanged}
                         graphicEq={this.state.graphicEq}
                         parametricFilters={this.state.parametricFilters}
+                        fixedBandFilters={this.state.fixedBandFilters}
                       />
                     </Paper>
                   </Grid>

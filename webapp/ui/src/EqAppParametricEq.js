@@ -27,9 +27,9 @@ class EqAppParametricEq extends React.Component {
                 <TableCell align='center'>Gain (dB)</TableCell>
               </TableRow>
             </TableHead>
-            {!!this.props.parametricFilters && (
+            {!!this.props.filters && (
               <TableBody>
-                {this.props.parametricFilters.map(filt => {
+                {this.props.filters.map(filt => {
                   return (
                     <TableRow key={filt.fc}>
                       <TableCell align='center'>{filt.type}</TableCell>

@@ -208,9 +208,13 @@ def equalize(req: EqualizeRequest):
             fixed_band_eq_config = PEQ_CONFIGS[req.fixed_band_eq_config]
         else:
             fixed_band_eq_config = req.fixed_band_eq_config.dict()
-        fixed_band_peq = fr.optimize_fixed_band_eq(fixed_band_eq_config, req.fs, preamp=req.preamp)
-        fixed_band_peq = fixed_band_peq.to_dict()
-        res.update({'fixed_band_eq': fixed_band_peq})
+        fixed_band_peqs = fr.optimize_fixed_band_eq(fixed_band_eq_config, req.fs, preamp=req.preamp)
+        fixed_band_peq = fixed_band_peqs[0]
+        fixed_band_peq.sort_filters()
+        res.update({'fixed_band_eq': fixed_band_peq.to_dict()})
+        fbpeq_fr = FrequencyResponse('FBPEQ', frequency=fixed_band_peq.f, raw=fixed_band_peq.fr)
+        fbpeq_fr.interpolate()
+        res['fr'].update({'fixed_band_eq': fbpeq_fr.raw.tolist()})
 
     if req.graphic_eq:
         graphic_eq = fr.eqapo_graphic_eq(normalize=True, preamp=req.preamp)

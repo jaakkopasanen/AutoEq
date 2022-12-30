@@ -34,8 +34,8 @@ class FrequencyResponseGraph extends React.Component {
     for (const dataPoint of data) {
       for (const [key, val] of Object.entries(dataPoint)) {
         if (key === 'frequency'
-          || (this.state.smoothed && ['raw', 'error', 'equalized_raw'].includes(key))
-          || !this.state.smoothed && ['smoothed', 'error_smoothed', 'equalized'].includes(key)
+          || (this.state.smoothed && ['raw', 'error', 'equalizedRaw'].includes(key))
+          || !this.state.smoothed && ['smoothed', 'errorSmoothed', 'equalized'].includes(key)
         ) {
           continue;
         }
@@ -84,11 +84,11 @@ class FrequencyResponseGraph extends React.Component {
               )}
 
               {(
-                (this.state.smoothed && !!this.props.data[0].error_smoothed)
+                (this.state.smoothed && !!this.props.data[0].errorSmoothed)
                 || (!this.state.smoothed && !!this.props.data[0].error)
               ) && (
                 <Line
-                  dataKey={this.state.show.error ? this.state.smoothed ? 'error_smoothed' : 'error' : ''}
+                  dataKey={this.state.show.error ? this.state.smoothed ? 'errorSmoothed' : 'error' : ''}
                   name='Error' type='linear' dot={false}
                   stroke={this.state.show.error ? '#d62728' : '#999'}
                   strokeWidth={1.5} isAnimationActive={false}
@@ -102,20 +102,12 @@ class FrequencyResponseGraph extends React.Component {
                   strokeWidth={1.5} isAnimationActive={false}
                 />
               )}
-              {!!this.props.data[0].parametric_eq && (
-                <Line
-                  dataKey={this.state.show.parametricEq ? 'parametric_eq' : ''}
-                  name='Equalizer' type='linear' dot={false}
-                  stroke={this.state.show.parametricEq ? '#2b802b' : '#999'}
-                  strokeWidth={1.5} isAnimationActive={false}
-                />
-              )}
               {(
-                (this.state.smoothed && !!this.props.data[0].equalized_smoothed)
-                || (!this.state.smoothed && !!this.props.data[0].equalized_raw)
+                (this.state.smoothed && !!this.props.data[0].equalizedSmoothed)
+                || (!this.state.smoothed && !!this.props.data[0].equalizedRaw)
               ) && (
                 <Line
-                  dataKey={this.state.show.equalized ? this.state.smoothed ? 'equalized_smoothed' : 'equalized_raw' : ''}
+                  dataKey={this.state.show.equalized ? this.state.smoothed ? 'equalizedSmoothed' : 'equalizedRaw' : ''}
                   name='Equalized' type='linear' dot={false}
                   stroke={this.state.show.equalized ? '#0343df' : '#999'}
                   strokeWidth={1.5} isAnimationActive={false}
