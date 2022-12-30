@@ -4,10 +4,14 @@ import {
   Container,
   Grid,
   Paper,
-} from "@mui/material";
-import TopBar from "./TopBar";
-import TargetTab from "./TargetTab";
-import EqTab from "./EqTab";
+} from '@mui/material';
+import TopBar from './TopBar';
+import TargetTab from './TargetTab';
+import EqTab from './EqTab';
+import cloneDeep from 'lodash/cloneDeep';
+import find from 'lodash/find';
+import findIndex from 'lodash/findIndex';
+import merge from 'lodash/merge';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,9 +32,16 @@ class App extends React.Component {
         {label: 'Wavelet', type: 'graphic'},
         {label: 'EqualizerAPO GraphicEq', type: 'graphic'},
         {label: 'EqualizerAPO ParametricEq', type: 'parametric', config: '8_PEAKING_WITH_SHELVES'},
+        {
+          label: 'Custom Parametric Eq', type: 'parametric', config: {
+            optimizer: {minF: null, maxF: null, maxTime: 0.5, minChangeRate: null, minStd: null},
+            filterDefaults: {type: null, minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null},
+            filters: []
+          }
+        },
         {label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ'}
       ],
-      selectedEqualizer: null, //Currently selected equalizer app: { label, type }
+      selectedEqualizer: null, // Name (label) of the currently selected equalizer app
 
       // Request parameters
       bassBoostGain: 0.0,
@@ -60,7 +71,11 @@ class App extends React.Component {
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
     this.onCompensationChanged = this.onCompensationChanged.bind(this);
-    this.onEqualizerChanged = this.onEqualizerChanged.bind(this);
+    this.onEqualizerSelected = this.onEqualizerSelected.bind(this);
+    this.onCustomPeqConfigChanged = this.onCustomPeqConfigChanged.bind(this);
+    this.onCustomPeqConfigFilterChanged = this.onCustomPeqConfigFilterChanged.bind(this);
+    this.onCustomPeqAddFilterClick = this.onCustomPeqAddFilterClick.bind(this);
+    this.onCustomPeqDeleteFilterClick = this.onCustomPeqDeleteFilterClick.bind(this);
   }
 
   async fetchMeasurements() {
@@ -111,6 +126,8 @@ class App extends React.Component {
       delete soundSignature.label;
     }
 
+    const selectedEqualizer = find(this.state.equalizers, (eq) => eq.label === this.state.selectedEqualizer);
+
     const body = {
       name: this.state.selectedMeasurement.label,
       source: this.state.selectedMeasurement.source,
@@ -131,14 +148,40 @@ class App extends React.Component {
       treble_f_lower: this.state.trebleFLower,
       treble_f_upper: this.state.trebleFUpper,
       treble_gain_k: this.state.trebleGainK,
-      graphic_eq: this.state.selectedEqualizer?.type === 'graphic',
-      parametric_eq: this.state.selectedEqualizer?.type === 'parametric',
-      fixed_band_eq: this.state.selectedEqualizer?.type === 'fixedBand',
-      convolution_eq: this.state.selectedEqualizer?.type === 'convolution',
+      graphic_eq: selectedEqualizer?.type === 'graphic',
+      parametric_eq: selectedEqualizer?.type === 'parametric',
+      fixed_band_eq: selectedEqualizer?.type === 'fixedBand',
+      convolution_eq: selectedEqualizer?.type === 'convolution',
     };
 
-    if (this.state.selectedEqualizer?.type === 'parametric') {
-      body.parametric_eq_config = this.state.selectedEqualizer.config;
+    if (selectedEqualizer?.type === 'parametric') {
+      if (typeof selectedEqualizer.config === 'string') {
+        body.parametric_eq_config = selectedEqualizer.config;
+      } else {
+        body.parametric_eq_config = {
+          optimizer: {
+            min_f: selectedEqualizer.config.optimizer.minF,
+            max_f: selectedEqualizer.config.optimizer.maxF,
+            max_time: selectedEqualizer.config.optimizer.maxTime,
+            min_change_rate: selectedEqualizer.config.optimizer.minChangeRate,
+            min_std: selectedEqualizer.config.optimizer.minStd,
+          },
+          filter_defaults: {
+            type: selectedEqualizer.config.filterDefaults.type,
+            min_fc: selectedEqualizer.config.filterDefaults.minFc,
+            max_fc: selectedEqualizer.config.filterDefaults.maxFc,
+            min_q: selectedEqualizer.config.filterDefaults.minQ,
+            max_q: selectedEqualizer.config.filterDefaults.maxQ,
+            min_gain: selectedEqualizer.config.filterDefaults.minGain
+          },
+          filters: selectedEqualizer.config.filters.map(filter => ({
+            type: filter.type,
+            min_fc: filter.minFc, max_fc: filter.maxFc,
+            min_q: filter.minQ, max_q: filter.maxQ,
+            min_gain: filter.minGain, max_gain: filter.maxGain
+          }))
+        };
+      }
     }
 
     const data = await fetch('/equalize', {
@@ -163,11 +206,11 @@ class App extends React.Component {
       parametric_eq: 'parametricEq',
       fixed_band_eq: 'fixedBandEq',
     };
-    if (this.state.selectedEqualizer?.type === 'parametric' && !!data.fr?.parametric_eq) {
+    if (selectedEqualizer?.type === 'parametric' && !!data.fr?.parametric_eq) {
       // Use parametric eq curve as the equalization in the frequency response graph
       keyMap.parametric_eq = 'equalization';
       keyMap.equalization = null;
-    } else if (this.state.selectedEqualizer?.type === 'fixedBand' && !!data.fr?.fixed_band_eq) {
+    } else if (selectedEqualizer?.type === 'fixedBand' && !!data.fr?.fixed_band_eq) {
       // Use fixed band eq curve as the equalization in the frequency response graph
       keyMap.fixed_band_eq = 'equalization';
       keyMap.equalization = null;
@@ -257,17 +300,70 @@ class App extends React.Component {
     this.setState({ selectedCompensation: label, preferredCompensations }, () => { this.equalize(); });
   }
 
-  onEqualizerChanged(val) {
+  onEqualizerSelected(val) {
     if (val === null) {
       this.setState({ selectedEqualizer: null });
     } else {
-      this.setState({ selectedEqualizer: { ...val } }, () => {
+      this.setState({ selectedEqualizer: val }, () => {
         this.equalize();
       });
     }
   }
 
+  onCustomPeqConfigChanged(newParams) {
+    const equalizers = cloneDeep(this.state.equalizers); // Ensure immutability
+    // Find custom parametric eq in the equalizers array
+    const ix = findIndex(equalizers, (equalizer) => equalizer.label === 'Custom Parametric Eq');
+    const equalizer = equalizers[ix];
+    equalizer.config = merge(equalizers[ix].config, newParams);
+    // Update custom parametric eq and replace in the array
+    equalizers.splice(ix, 1, equalizer);
+    this.setState({ equalizers }, () => {
+      this.equalize();
+    });
+  }
+
+  onCustomPeqConfigFilterChanged(newParams, i) {
+    const equalizers = cloneDeep(this.state.equalizers); // Ensure immutability
+    // Find custom parametric eq in the equalizers array
+    const ix = findIndex(equalizers, (equalizer) => equalizer.label === 'Custom Parametric Eq');
+    const equalizer = equalizers[ix];
+    const filter = merge(equalizer.config.filters[i], newParams);
+    equalizer.config.filters.splice(i, 1, filter);
+    equalizers.splice(ix, 1, equalizer);
+    this.setState({ equalizers }, () => {
+      this.equalize();
+    });
+  }
+
+  onCustomPeqAddFilterClick() {
+    const equalizers = cloneDeep(this.state.equalizers); // Ensure immutability
+    // Find custom parametric eq in the equalizers array
+    const ix = findIndex(equalizers, (equalizer) => equalizer.label === 'Custom Parametric Eq');
+    const equalizer = equalizers[ix];
+    equalizer.config.filters.push({ fc: null, q: null, gain: null, minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null});
+    equalizers.splice(ix, 1, equalizer);
+    this.setState({ equalizers }, () => {
+      this.equalize();
+    });
+  }
+
+  onCustomPeqDeleteFilterClick(i) {
+    const equalizers = cloneDeep(this.state.equalizers); // Ensure immutability
+    // Find custom parametric eq in the equalizers array
+    const ix = findIndex(equalizers, (equalizer) => equalizer.label === 'Custom Parametric Eq');
+    const equalizer = equalizers[ix];
+    equalizer.config.filters.splice(i, 1);
+    this.setState({ equalizers }, () => {
+      this.equalize();
+    });
+  }
+
   render() {
+    const customPeq = find(
+      this.state.equalizers,
+      (equalizer) => equalizer.label === 'Custom Parametric Eq');
+    const customPeqConfig = !!customPeq ? customPeq.config : null;
     return (
       <Grid container direction='column' rowSpacing={{xs: 1, md: 2}} sx={{pb: 1}}>
         <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
@@ -330,12 +426,17 @@ class App extends React.Component {
                         selectedMeasurement={this.state.selectedMeasurement.label}
                         equalizers={this.state.equalizers}
                         selectedEqualizer={this.state.selectedEqualizer}
-                        onEqualizerChanged={this.onEqualizerChanged}
+                        onEqualizerSelected={this.onEqualizerSelected}
                         graphicEq={this.state.graphicEq}
                         parametricFilters={this.state.parametricFilters}
                         fixedBandFilters={this.state.fixedBandFilters}
                         fs={this.state.fs}
                         onEqParamChanged={this.onEqParamChanged}
+                        customPeqConfig={customPeqConfig}
+                        onCustomPeqConfigChanged={this.onCustomPeqConfigChanged}
+                        onCustomPeqConfigFilterChanged={this.onCustomPeqConfigFilterChanged}
+                        onCustomPeqAddFilterClick={this.onCustomPeqAddFilterClick}
+                        onCustomPeqDeleteFilterClick={this.onCustomPeqDeleteFilterClick}
                       />
                     </Paper>
                   </Grid>

@@ -7,7 +7,7 @@ import numpy as np
 from fastapi import FastAPI
 from fastapi.responses import FileResponse, StreamingResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, validator, root_validator
+from pydantic import BaseModel, validator, root_validator, confloat, conlist
 from typing import Union, Optional
 import soundfile as sf
 
@@ -53,9 +53,10 @@ class MeasurementData(BaseModel):
 class Optimizer(BaseModel):
     min_f: Optional[float]
     max_f: Optional[float]
-    max_time: Optional[float]
+    max_time: Optional[confloat(ge=0.0, le=0.5)]
     min_change_rate: Optional[float]
     min_std: Optional[float]
+    target_loss: Optional[float]
 
 
 class FilterTypeEnum(str, Enum):
@@ -75,9 +76,9 @@ class Filter(BaseModel):
 
 
 class PEQConfig(BaseModel):
-    optimizer: Optimizer
+    optimizer: Optional[Optimizer]
     filter_defaults: Optional[Filter]
-    filters: list[Filter]
+    filters: conlist(Filter, min_items=1)
 
 
 class EqualizeRequest(BaseModel):

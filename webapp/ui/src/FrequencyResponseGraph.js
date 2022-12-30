@@ -35,7 +35,7 @@ class FrequencyResponseGraph extends React.Component {
       for (const [key, val] of Object.entries(dataPoint)) {
         if (key === 'frequency'
           || (this.state.smoothed && ['raw', 'error', 'equalizedRaw'].includes(key))
-          || !this.state.smoothed && ['smoothed', 'errorSmoothed', 'equalized'].includes(key)
+          || (!this.state.smoothed && ['smoothed', 'errorSmoothed', 'equalized'].includes(key))
         ) {
           continue;
         }

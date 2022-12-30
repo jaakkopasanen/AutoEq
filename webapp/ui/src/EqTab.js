@@ -2,9 +2,14 @@ import React from 'react';
 import {Autocomplete, Grid, TextField} from '@mui/material';
 import EqAppEqualizerApoGraphicEq from './EqAppEqualizerApoGraphicEq';
 import EqAppParametricEq from './EqAppParametricEq';
+import find from 'lodash/find';
 
 class EqTab extends React.Component {
   render() {
+    let selectedEqualizer = find(this.props.equalizers, (equalizer) => equalizer.label === this.props.selectedEqualizer);
+    if (typeof selectedEqualizer === 'undefined') {
+      selectedEqualizer = null;
+    }
     return (
       <Grid container direction='column' rowSpacing={1}>
         <Grid item>
@@ -13,12 +18,12 @@ class EqTab extends React.Component {
               <TextField {...params} label='Select equalizer app' />
             }
             options={this.props.equalizers}
-            value={this.props.selectedEqualizer}
+            value={selectedEqualizer}
             isOptionEqualToValue={(option, value) => option.label === value.label}
-            onChange={(e, val) => { this.props.onEqualizerChanged(val); }}
+            onChange={(e, val) => { this.props.onEqualizerSelected(val.label); }}
           />
         </Grid>
-        {this.props.selectedEqualizer?.type === 'graphic' && (
+        {selectedEqualizer?.type === 'graphic' && (
           <Grid item sx={{maxWidth: '100%', width: '100%'}}>
             <EqAppEqualizerApoGraphicEq
               selectedMeasurement={this.props.selectedMeasurement}
@@ -26,7 +31,7 @@ class EqTab extends React.Component {
             />
           </Grid>
         )}
-        {this.props.selectedEqualizer?.type === 'parametric' && (
+        {selectedEqualizer?.type === 'parametric' && selectedEqualizer?.label !== 'Custom Parametric Eq' && (
           <Grid item>
             <EqAppParametricEq
               filters={this.props.parametricFilters}
@@ -35,7 +40,22 @@ class EqTab extends React.Component {
             />
           </Grid>
         )}
-        {this.props.selectedEqualizer?.type === 'fixedBand' && (
+        {selectedEqualizer?.type === 'parametric' && selectedEqualizer?.label === 'Custom Parametric Eq' && (
+          <Grid item>
+            <EqAppParametricEq
+              filters={this.props.parametricFilters}
+              fs={this.props.fs}
+              onEqParamChanged={this.props.onEqParamChanged}
+              showConfig
+              config={this.props.customPeqConfig}
+              onConfigChanged={this.props.onCustomPeqConfigChanged}
+              onConfigFilterChanged={this.props.onCustomPeqConfigFilterChanged}
+              onAddFilterClick={this.props.onCustomPeqAddFilterClick}
+              onFilterDeleteClick={this.props.onCustomPeqDeleteFilterClick}
+            />
+          </Grid>
+        )}
+        {selectedEqualizer?.type === 'fixedBand' && (
           <Grid item>
             <EqAppParametricEq
               filters={this.props.fixedBandFilters}

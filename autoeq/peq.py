@@ -1,4 +1,5 @@
 import warnings
+from copy import deepcopy
 from time import time
 from abc import ABC, abstractmethod
 import numpy as np
@@ -439,17 +440,17 @@ class PEQ:
             for filt in filters:
                 self.add_filter(filt)
         self.target = np.array(target) if target is not None else None
-        self._min_f = min_f
-        self._max_f = max_f
+        self._min_f = min_f if min_f is not None else DEFAULT_PEQ_OPTIMIZER_MIN_F
+        self._max_f = max_f if max_f is not None else DEFAULT_PEQ_OPTIMIZER_MAX_F
         self._min_f_ix = np.argmin(np.abs(self.f - self._min_f))
         self._max_f_ix = np.argmin(np.abs(self.f - self._max_f))
         self._ix50 = np.argmin(np.abs(self.f - 50))
         self._10k_ix = np.argmin(np.abs(self.f - 10000))
         self._20k_ix = np.argmin(np.abs(self.f - 20000))
-        self._max_time = max_time
-        self._target_loss = target_loss
+        self._max_time = max_time if max_time is not None else DEFAULT_PEQ_OPTIMIZER_MAX_TIME
+        self._target_loss = target_loss if target_loss is not None else DEFAULT_PEQ_OPTIMIZER_TARGET_LOSS
         self._min_change_rate = min_change_rate
-        self._min_std = min_std
+        self._min_std = min_std if min_std is not None else DEFAULT_PEQ_OPTIMIZER_MIN_STD
         self.history = None
 
     @classmethod
@@ -476,11 +477,34 @@ class PEQ:
         peq = cls(f, fs, target=target, **optimizer_kwargs)
         filter_classes = {'LOW_SHELF': LowShelf, 'PEAKING': Peaking, 'HIGH_SHELF': HighShelf}
         keys = ['fc', 'q', 'gain', 'min_fc', 'max_fc', 'min_q', 'max_q', 'min_gain', 'max_gain', 'type']
+        global_filter_defaults = {
+            'LOW_SHELF': {
+                'min_fc': DEFAULT_SHELF_FILTER_MIN_FC,
+                'max_fc': DEFAULT_SHELF_FILTER_MAX_FC,
+                'min_q': DEFAULT_SHELF_FILTER_MIN_Q,
+                'max_q': DEFAULT_SHELF_FILTER_MAX_Q,
+                'min_gain': DEFAULT_SHELF_FILTER_MIN_GAIN,
+                'max_gain': DEFAULT_SHELF_FILTER_MAX_GAIN
+            },
+            'PEAKING': {
+                'min_fc': DEFAULT_PEAKING_FILTER_MIN_FC,
+                'max_fc': DEFAULT_PEAKING_FILTER_MAX_FC,
+                'min_q': DEFAULT_PEAKING_FILTER_MIN_Q,
+                'max_q': DEFAULT_PEAKING_FILTER_MAX_Q,
+                'min_gain': DEFAULT_PEAKING_FILTER_MIN_GAIN,
+                'max_gain': DEFAULT_PEAKING_FILTER_MAX_GAIN
+            }
+        }
+        global_filter_defaults['HIGH_SHELF'] = deepcopy(global_filter_defaults['LOW_SHELF'])
         for filt in config['filters']:
             if 'filter_defaults' in config:
                 for key in keys:
-                    if key not in filt and key in config['filter_defaults']:
+                    if (key not in filt or filt[key] is None) and key in config['filter_defaults']:
                         filt[key] = config['filter_defaults'][key]
+            print(filt)
+            for key in keys:
+                if (key not in filt or filt[key] is None) and key in global_filter_defaults[filt['type']]:
+                    filt[key] = global_filter_defaults[filt['type']][key]
             peq.add_filter(filter_classes[filt['type']](
                 peq.f, peq.fs,
                 **{key: filt[key] for key in keys if key in filt and key != 'type'},
