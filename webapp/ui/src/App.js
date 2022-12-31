@@ -63,6 +63,7 @@ class App extends React.Component {
       parametricFilters: null,
       fixedBandFilters: null,
     };
+    this.equalizeTimer = null;
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
     this.equalize = this.equalize.bind(this);
     this.onMeasurementSelected = this.onMeasurementSelected.bind(this);
@@ -70,7 +71,7 @@ class App extends React.Component {
     this.onSoundSignatureUpdated = this.onSoundSignatureUpdated.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
-    this.onCompensationChanged = this.onCompensationChanged.bind(this);
+    this.onCompensationSelected = this.onCompensationSelected.bind(this);
     this.onEqualizerSelected = this.onEqualizerSelected.bind(this);
     this.onCustomPeqConfigChanged = this.onCustomPeqConfigChanged.bind(this);
     this.onCustomPeqConfigFilterChanged = this.onCustomPeqConfigFilterChanged.bind(this);
@@ -118,7 +119,12 @@ class App extends React.Component {
     this.fetchCompensations();
   }
 
-  async equalize() {
+  async equalize(skipTimer) {
+    if (!!this.equalizeTimer) clearTimeout(this.equalizeTimer);
+    if (!skipTimer) {
+      this.equalizeTimer = setTimeout(() => { this.equalize(true); }, 500);
+      return;
+    }
     // console.log('equalize');
     // console.log(this.state);
     const soundSignature = !!this.state.selectedSoundSignature ? { ...this.state.selectedSoundSignature } : null;
@@ -255,14 +261,14 @@ class App extends React.Component {
       // TODO: not preferred for any?
       selectedCompensation: this.state.preferredCompensations[val[0].source][val[0].form][val[0].rig],
     }, () => {
-      this.equalize();
+      this.equalize(true);
     });
   }
 
   onSoundSignatureSelected(soundSignature) {
     this.setState({ selectedSoundSignature: soundSignature }, () => {
       if (soundSignature?.label !== 'Add new') {
-        this.equalize();
+        this.equalize(true);
       }
     });
   }
@@ -284,7 +290,7 @@ class App extends React.Component {
       selectedSoundSignature: updatedSoundSignature,
       soundSignatures
     }, () => {
-      this.equalize();
+      this.equalize(true);
     });
   }
 
@@ -294,10 +300,10 @@ class App extends React.Component {
     });
   }
 
-  onCompensationChanged(label) {
-    const preferredCompensations = { ...this.state.preferredCompensations };
+  onCompensationSelected(label) {
+    const preferredCompensations = cloneDeep(this.state.preferredCompensations);
     preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig] = label;
-    this.setState({ selectedCompensation: label, preferredCompensations }, () => { this.equalize(); });
+    this.setState({ selectedCompensation: label, preferredCompensations }, () => { this.equalize(true); });
   }
 
   onEqualizerSelected(val) {
@@ -305,7 +311,7 @@ class App extends React.Component {
       this.setState({ selectedEqualizer: null });
     } else {
       this.setState({ selectedEqualizer: val }, () => {
-        this.equalize();
+        this.equalize(true);
       });
     }
   }
@@ -416,7 +422,7 @@ class App extends React.Component {
                         onSoundSignatureSelected={this.onSoundSignatureSelected}
                         onSoundSignatureUpdated={this.onSoundSignatureUpdated}
                         onEqParamChanged={this.onEqParamChanged}
-                        onCompensationChanged={this.onCompensationChanged}
+                        onCompensationSelected={this.onCompensationSelected}
                       />
                     </Paper>
                   </Grid>

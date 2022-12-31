@@ -32,6 +32,7 @@ class FrequencyResponseGraph extends React.Component {
   yRange(data) {
     const vals = [];
     for (const dataPoint of data) {
+      if (dataPoint.frequency > 16000) break;
       for (const [key, val] of Object.entries(dataPoint)) {
         if (key === 'frequency'
           || (this.state.smoothed && ['raw', 'error', 'equalizedRaw'].includes(key))
@@ -122,10 +123,13 @@ class FrequencyResponseGraph extends React.Component {
                 label={{ value: 'Frequency (Hz)', position: 'outsideBottomCenter', dy: 20}}
               />
               <YAxis
-                scale='linear' domain={[dataMin - dataRange * 0.1, dataMax + dataRange * 0.1]}
+                scale='linear'
+                domain={[dataMin - dataRange * 0.1, dataMax + dataRange * 0.1]}
+                // domain={[0, dataMax + dataRange * 0.1]}
                 type='number'
                 tickCount={10}
                 label={{ value: 'dBr', dx: -10, angle: -90}}
+                allowDataOverflow={true}
               />
             </LineChart>
           </ResponsiveContainer>

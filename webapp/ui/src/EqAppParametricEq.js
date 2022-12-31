@@ -61,7 +61,7 @@ class EqAppParametricEq extends React.Component {
                   <TextField
                     value={this.parseTextFieldInput(this.props.config.optimizer?.minF)}
                     onChange={(e) => {
-                      this.props.onConfigChanged({optimizerMinF: this.parseTextFieldOutput(e.target.value)})
+                      this.props.onConfigChanged({ optimizer: { minF: this.parseTextFieldOutput(e.target.value) } })
                     }}
                     label='Min frequency (Hz)' size='small' sx={{width: '100%'}} type='number'
                     inputProps={{step: 1.0}}
@@ -71,7 +71,7 @@ class EqAppParametricEq extends React.Component {
                   <TextField
                     value={this.parseTextFieldInput(this.props.config.optimizer?.maxF)}
                     onChange={(e) => {
-                      this.props.onConfigChanged({optimizerMaxF: this.parseTextFieldOutput(e.target.value)})
+                      this.props.onConfigChanged({ optimizer: { maxF: this.parseTextFieldOutput(e.target.value) } })
                     }}
                     label='Max frequency (Hz)' size='small' sx={{width: '100%'}} type='number'
                     inputProps={{step: 1.0}}
@@ -106,7 +106,7 @@ class EqAppParametricEq extends React.Component {
                       this.props.onConfigChanged({ optimizer: { minStd: this.parseTextFieldOutput(e.target.value) } })
                     }}
                     label='Min STD' size='small' sx={{width: '100%'}} type='number'
-                    inputProps={{step: 0.01}}
+                    inputProps={{step: 0.001}}
                   />
                 </Grid>
               </Grid>

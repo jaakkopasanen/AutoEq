@@ -501,7 +501,6 @@ class PEQ:
                 for key in keys:
                     if (key not in filt or filt[key] is None) and key in config['filter_defaults']:
                         filt[key] = config['filter_defaults'][key]
-            print(filt)
             for key in keys:
                 if (key not in filt or filt[key] is None) and key in global_filter_defaults[filt['type']]:
                     filt[key] = global_filter_defaults[filt['type']][key]

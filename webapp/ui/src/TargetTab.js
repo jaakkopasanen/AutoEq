@@ -97,7 +97,7 @@ class TargetTab extends React.Component {
                 options={this.props.compensations}
                 value={this.props.selectedCompensation}
                 onChange={(e, val) => {
-                  this.props.onCompensationChanged(val)
+                  this.props.onCompensationSelected(val)
                 }}
                 sx={{width: '100%'}}
               />
@@ -210,9 +210,8 @@ class TargetTab extends React.Component {
             <InputSlider
               label='Bass boost center frequency (Hz)' value={this.props.bassBoostFc}
               min={20.0} max={500.0} step={5.0}
-              onChange={(v) => {
-                this.props.onEqParamChanged({ bassBoostFc: v })
-              }}/>
+              onChange={(v) => { this.props.onEqParamChanged({ bassBoostFc: v }); }}
+            />
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
