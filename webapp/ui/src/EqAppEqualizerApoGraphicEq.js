@@ -12,13 +12,13 @@ class EqAppEqualizerApoGraphicEq extends React.Component {
   }
 
   onDownloadClick() {
-    const element = document.createElement('a');
+    const anchor = document.createElement('a');
     const file = new Blob([this.props.graphicEq], {type: 'text/plain'});
-    element.href = URL.createObjectURL(file);
-    element.download = `${this.props.selectedMeasurement} GraphicEq.txt`;
-    document.body.appendChild(element); // Required for this to work in FireFox
-    element.click();
-    element.remove();
+    anchor.href = URL.createObjectURL(file);
+    anchor.download = `${this.props.selectedMeasurement} GraphicEq.txt`;
+    document.body.appendChild(anchor); // Required for this to work in FireFox
+    anchor.click();
+    anchor.remove();
   }
 
   onCopyToClipboardClick() {

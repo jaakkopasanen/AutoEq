@@ -1,5 +1,6 @@
 import json
 import os
+from base64 import b64encode
 from enum import Enum
 from io import BytesIO
 from pathlib import Path
@@ -94,7 +95,7 @@ class EqualizeRequest(BaseModel):
     treble_boost_fc = DEFAULT_TREBLE_BOOST_FC
     treble_boost_q = DEFAULT_TREBLE_BOOST_Q
     tilt = DEFAULT_TILT
-    fs: Optional[float] = DEFAULT_FS
+    fs: Optional[int] = DEFAULT_FS
     sound_signature: Optional[MeasurementData]
     max_gain = DEFAULT_MAX_GAIN
     window_size = DEFAULT_SMOOTHING_WINDOW_SIZE
@@ -107,6 +108,7 @@ class EqualizeRequest(BaseModel):
     fixed_band_eq = False
     fixed_band_eq_config: Optional[Union[str, PEQConfig]] = '10_BAND_GRAPHIC_EQ'
     graphic_eq = False
+    convolution_eq = False
     preamp = DEFAULT_PREAMP
 
     @root_validator
@@ -221,6 +223,11 @@ def equalize(req: EqualizeRequest):
         graphic_eq = fr.eqapo_graphic_eq(normalize=True, preamp=req.preamp)
         res.update({'graphic_eq': graphic_eq})
 
+    if req.convolution_eq:
+        buf = fir_buffer(fr, req.fs)
+        buf.seek(0)
+        res.update({'fir': b64encode(buf.read())})
+
     return res
 
 
@@ -235,39 +242,25 @@ class PhaseEnum(str, Enum):
     linear = 'linear'
 
 
-class ConvolutionEqRequest(BaseModel):
-    frequency: list[float]
-    equalization: list[float]
-    fs: int
-    phase: PhaseEnum = DEFAULT_PHASE
-    f_res: float = DEFAULT_F_RES
-    preamp: float = DEFAULT_PREAMP
-    bit_depth: int = DEFAULT_BIT_DEPTH
-    stereo: bool = False
-
-
-@app.post('/convolution_eq')
-def convolution_eq(req: ConvolutionEqRequest):
-    if req.bit_depth == 16:
+def fir_buffer(fr, fs, bit_depth=None, phase=None, f_res=None, preamp=None):
+    if bit_depth is None or bit_depth == 16:
         bit_depth = "PCM_16"
-    elif req.bit_depth == 24:
+    elif bit_depth == 24:
         bit_depth = "PCM_24"
-    elif req.bit_depth == 32:
+    elif bit_depth == 32:
         bit_depth = "PCM_32"
     else:
         raise ValueError('Invalid bit depth. Accepted values are 16, 24 and 32.')
-
-    fr = FrequencyResponse(name='fir', frequency=req.frequency, equalization=req.equalization)
-    if req.phase == PhaseEnum.minimum:
-        fir = fr.minimum_phase_impulse_response(
-            fs=req.fs, f_res=req.f_res, normalize=True, preamp=req.preamp)
-    elif req.phase == PhaseEnum.linear:
-        fir = fr.linear_phase_impulse_response(
-            fs=req.fs, f_res=req.f_res, normalize=True, preamp=req.preamp)
+    if f_res is None:
+        f_res = DEFAULT_F_RES
+    if preamp is None:
+        preamp = DEFAULT_PREAMP
+    if phase is None or phase == PhaseEnum.minimum:
+        fir = fr.minimum_phase_impulse_response(fs=fs, f_res=f_res, normalize=True, preamp=preamp).T
+    elif phase == PhaseEnum.linear:
+        fir = fr.linear_phase_impulse_response(fs=fs, f_res=f_res, normalize=True, preamp=preamp).T
     else:
         raise TypeError
-    fir = np.tile(fir, (2, 1)).T if req.stereo else fir.T
     buf = BytesIO()
-    sf.write(buf, fir, req.fs, bit_depth)
-
-    return StreamingResponse(buf, media_type='audio/x-wav')
+    sf.write(buf, fir, fs, bit_depth, format='WAV')
+    return buf

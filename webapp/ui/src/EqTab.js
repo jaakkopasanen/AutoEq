@@ -3,6 +3,7 @@ import {Autocomplete, Grid, TextField} from '@mui/material';
 import EqAppEqualizerApoGraphicEq from './EqAppEqualizerApoGraphicEq';
 import EqAppParametricEq from './EqAppParametricEq';
 import find from 'lodash/find';
+import EqAppConvolutionEq from "./EqAppConvolutionEq";
 
 class EqTab extends React.Component {
   render() {
@@ -60,6 +61,20 @@ class EqTab extends React.Component {
             <EqAppParametricEq
               filters={this.props.fixedBandFilters}
               fs={this.props.fs}
+              onEqParamChanged={this.props.onEqParamChanged}
+            />
+          </Grid>
+        )}
+        {selectedEqualizer?.type === 'convolution' && (
+          <Grid item>
+            <EqAppConvolutionEq
+              firAudioBuffer={this.props.firAudioBuffer}
+              fs={this.props.fs}
+              bitDepth={this.props.bitDepth}
+              phase={this.props.phase}
+              fRes={this.props.fRes}
+              preamp={this.props.preamp}
+              selectedMeasurement={this.props.selectedMeasurement}
               onEqParamChanged={this.props.onEqParamChanged}
             />
           </Grid>

@@ -12,10 +12,12 @@ import cloneDeep from 'lodash/cloneDeep';
 import find from 'lodash/find';
 import findIndex from 'lodash/findIndex';
 import merge from 'lodash/merge';
+import {decode} from 'base64-arraybuffer';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.audioContext = new AudioContext();
     this.state = {
       compensations: [],
       preferredCompensations: [], // Sound signatures preferred for each measurement rig {source: {form: {rig: label}}}
@@ -25,7 +27,7 @@ class App extends React.Component {
       selectedSoundSignature: null, // Currently selected sound signature
 
       measurements: null, // { label, source, form, rig }
-      selectedMeasurement: null, // Currently selected measurement
+      selectedMeasurement: null, // Name (label) of the currently selected measurement
       graphData: null, // Data for the frequency response graph
 
       equalizers: [
@@ -39,7 +41,8 @@ class App extends React.Component {
             filters: []
           }
         },
-        {label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ'}
+        {label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ'},
+        {label: 'Convolution Eq', type: 'convolution'}
       ],
       selectedEqualizer: null, // Name (label) of the currently selected equalizer app
 
@@ -57,11 +60,16 @@ class App extends React.Component {
       trebleFLower: 6000.0,
       trebleFUpper: 8000.0,
       trebleGainK: 1.0,
-      fs: 44100, // TODO: read from audio manager or some such
+      fs: this.audioContext.sampleRate,
+      bitDepth: 16,
+      phase: 'minimum',
+      fRes: 2.0,
+      preamp: 0.0,
 
       graphicEq: null,
       parametricFilters: null,
       fixedBandFilters: null,
+      firAudioBuffer: null
     };
     this.equalizeTimer = null;
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
@@ -245,8 +253,11 @@ class App extends React.Component {
       newState.parametricFilters = data.parametric_eq.filters.map(filt => { return { ...filt }; });
     } else if (!!data.fixed_band_eq) {
       newState.fixedBandFilters = data.fixed_band_eq.filters.map(filt => { return { ...filt }; });
+    } else if (!!data.fir) {
+      await this.audioContext.decodeAudioData(decode(data.fir), (audioBuffer) => {
+        newState.firAudioBuffer = audioBuffer;
+      });
     }
-
     this.setState(newState);
   }
 
@@ -436,7 +447,12 @@ class App extends React.Component {
                         graphicEq={this.state.graphicEq}
                         parametricFilters={this.state.parametricFilters}
                         fixedBandFilters={this.state.fixedBandFilters}
+                        firAudioBuffer={this.state.firAudioBuffer}
                         fs={this.state.fs}
+                        bitDepth={this.state.bitDepth}
+                        phase={this.state.phase}
+                        fRes={this.state.fRes}
+                        preamp={this.state.preamp}
                         onEqParamChanged={this.onEqParamChanged}
                         customPeqConfig={customPeqConfig}
                         onCustomPeqConfigChanged={this.onCustomPeqConfigChanged}

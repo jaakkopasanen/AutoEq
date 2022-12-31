@@ -166,28 +166,32 @@ class TargetTab extends React.Component {
               label='Bass boost (dB)' value={this.props.bassBoostGain} min={-10} max={20} step={0.5}
               onChange={(v) => {
                 this.props.onEqParamChanged({bassBoostGain: v})
-              }}/>
+              }}
+            />
           </Grid>
           <Grid item>
             <InputSlider
               label='Treble boost (dB)' value={this.props.trebleBoostGain} min={-20} max={20} step={0.5}
               onChange={(v) => {
                 this.props.onEqParamChanged({ trebleBoostGain: v })
-              }}/>
+              }}
+            />
           </Grid>
           <Grid item>
             <InputSlider
               label='Tilt (db/oct)' value={this.props.tilt} min={-2} max={2} step={0.1}
               onChange={(v) => {
                 this.props.onEqParamChanged({ tilt: v })
-              }}/>
+              }}
+            />
           </Grid>
           <Grid>
             <InputSlider
               label='Max gain (dB)' value={this.props.maxGain} min={0} max={30} step={0.5}
               onChange={(v) => {
                 this.props.onEqParamChanged({ maxGain: v })
-              }}/>
+              }}
+            />
           </Grid>
           <Grid item>
             <FormGroup>
@@ -219,7 +223,8 @@ class TargetTab extends React.Component {
               min={0.3} max={1.0} step={0.1}
               onChange={(v) => {
                 this.props.onEqParamChanged({ bassBoostQ: v })
-              }}/>
+              }}
+            />
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
@@ -227,7 +232,8 @@ class TargetTab extends React.Component {
               min={1000.0} max={20000.0} step={5.0}
               onChange={(v) => {
                 this.props.onEqParamChanged({ trebleBoostFc: v })
-              }}/>
+              }}
+            />
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
@@ -235,7 +241,8 @@ class TargetTab extends React.Component {
               min={0.3} max={1.0} step={0.1}
               onChange={(v) => {
                 this.props.onEqParamChanged({ trebleBoostQ: v })
-              }}/>
+              }}
+            />
           </Grid>
           
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
@@ -244,7 +251,8 @@ class TargetTab extends React.Component {
               min={0} max={1} step={0.01}
               onChange={(v) => {
                 this.props.onEqParamChanged({ windowSize: v })
-              }}/>
+              }}
+            />
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
@@ -252,7 +260,8 @@ class TargetTab extends React.Component {
               min={0} max={3} step={0.01}
               onChange={(v) => {
                 this.props.onEqParamChanged({ trebleWindowSize: v })
-              }}/>
+              }}
+            />
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
@@ -263,7 +272,8 @@ class TargetTab extends React.Component {
               min={1000} max={20000} step={100}
               onChange={(v) => {
                 this.props.onEqParamChanged({ trebleFLower: v[0], trebleFUpper: v[1] })
-              }}/>
+              }}
+            />
           </Grid>
           <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
@@ -271,7 +281,8 @@ class TargetTab extends React.Component {
               min={0.0} max={1.0} step={0.01}
               onChange={(v) => {
                 this.props.onEqParamChanged({ trebleGainK: v })
-              }}/>
+              }}
+            />
           </Grid>
         </Grid>
       </Grid>
