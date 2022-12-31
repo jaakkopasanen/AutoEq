@@ -8,7 +8,7 @@ import numpy as np
 from fastapi import FastAPI
 from fastapi.responses import FileResponse, StreamingResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, validator, root_validator, confloat, conlist
+from pydantic import BaseModel, validator, root_validator, confloat, conlist, conint
 from typing import Union, Optional
 import soundfile as sf
 
@@ -18,6 +18,7 @@ from autoeq.constants import DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEF
     DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, DEFAULT_PHASE, DEFAULT_PREAMP, DEFAULT_F_RES, \
     PEQ_CONFIGS, DEFAULT_BIT_DEPTH
 from autoeq.frequency_response import FrequencyResponse
+from webapp.utils import magnitude_response
 
 ROOT_DIR = Path().resolve()
 
@@ -82,6 +83,16 @@ class PEQConfig(BaseModel):
     filters: conlist(Filter, min_items=1)
 
 
+class BitDepthEnum(int, Enum):
+    PCM_16 = 16
+    PCM_32 = 32
+
+
+class PhaseEnum(str, Enum):
+    minimum = 'minimum'
+    linear = 'linear'
+
+
 class EqualizeRequest(BaseModel):
     measurement: Optional[MeasurementData]
     name: Optional[str]
@@ -96,6 +107,9 @@ class EqualizeRequest(BaseModel):
     treble_boost_q = DEFAULT_TREBLE_BOOST_Q
     tilt = DEFAULT_TILT
     fs: Optional[int] = DEFAULT_FS
+    bit_depth: Optional[BitDepthEnum] = DEFAULT_BIT_DEPTH
+    f_res: Optional[float] = DEFAULT_F_RES
+    phase: Optional[PhaseEnum] = DEFAULT_PHASE
     sound_signature: Optional[MeasurementData]
     max_gain = DEFAULT_MAX_GAIN
     window_size = DEFAULT_SMOOTHING_WINDOW_SIZE
@@ -201,10 +215,10 @@ def equalize(req: EqualizeRequest):
         parametric_peqs = fr.optimize_parametric_eq(parametric_eq_config, req.fs, preamp=req.preamp)
         peq = parametric_peqs[0]
         peq.sort_filters()
-        res.update({'parametric_eq': peq.to_dict()})
+        res['parametric_eq'] = peq.to_dict()
         peq_fr = FrequencyResponse(name='PEQ', frequency=peq.f, raw=peq.fr)
         peq_fr.interpolate()
-        res['fr'].update({'parametric_eq': peq_fr.raw.tolist()})
+        res['fr']['parametric_eq'] = peq_fr.raw.tolist()
 
     if req.fixed_band_eq:
         if type(req.fixed_band_eq_config) == str:
@@ -217,50 +231,33 @@ def equalize(req: EqualizeRequest):
         res.update({'fixed_band_eq': fixed_band_peq.to_dict()})
         fbpeq_fr = FrequencyResponse('FBPEQ', frequency=fixed_band_peq.f, raw=fixed_band_peq.fr)
         fbpeq_fr.interpolate()
-        res['fr'].update({'fixed_band_eq': fbpeq_fr.raw.tolist()})
+        res['fr']['fixed_band_eq'] = fbpeq_fr.raw.tolist()
 
     if req.graphic_eq:
         graphic_eq = fr.eqapo_graphic_eq(normalize=True, preamp=req.preamp)
         res.update({'graphic_eq': graphic_eq})
 
     if req.convolution_eq:
-        buf = fir_buffer(fr, req.fs)
+        bit_depth = req.bit_depth if req.bit_depth is not None else DEFAULT_BIT_DEPTH
+        bit_depth = 'PCM_16' if bit_depth == BitDepthEnum.PCM_16 else 'PCM_32'
+        f_res = req.f_res if req.f_res is not None else DEFAULT_F_RES
+        preamp = req.preamp if req.preamp is not None else DEFAULT_PREAMP
+        phase = req.phase if req.phase is not None else DEFAULT_PHASE
+        if phase is None or phase == PhaseEnum.minimum or phase == 'minimum':
+            fir = fr.minimum_phase_impulse_response(fs=req.fs, f_res=f_res, normalize=True, preamp=preamp).T
+        elif phase == PhaseEnum.linear:
+            fir = fr.linear_phase_impulse_response(fs=req.fs, f_res=f_res, normalize=True, preamp=preamp).T
+        else:
+            raise TypeError
+        buf = BytesIO()
+        sf.write(buf, fir, req.fs, bit_depth, format='WAV')
         buf.seek(0)
-        res.update({'fir': b64encode(buf.read())})
+        f, mag = magnitude_response(fir, req.fs)
+        fir_fr = FrequencyResponse(name='FIR', frequency=f[1:], raw=mag[1:])
+        fir_fr.interpolate()
+        ix200 = np.argmin(np.abs(fr.frequency - 200))
+        fir_fr.raw += np.mean(fr.equalization[ix200:] - fir_fr.raw[ix200:])
+        res['fir'] = b64encode(buf.read())
+        res['fr']['convolution_eq'] = fir_fr.raw.tolist()
 
     return res
-
-
-class BitDepthEnum(int, Enum):
-    PCM_16 = 16
-    PCM_24 = 24
-    PCM_32 = 32
-
-
-class PhaseEnum(str, Enum):
-    minimum = 'minimum'
-    linear = 'linear'
-
-
-def fir_buffer(fr, fs, bit_depth=None, phase=None, f_res=None, preamp=None):
-    if bit_depth is None or bit_depth == 16:
-        bit_depth = "PCM_16"
-    elif bit_depth == 24:
-        bit_depth = "PCM_24"
-    elif bit_depth == 32:
-        bit_depth = "PCM_32"
-    else:
-        raise ValueError('Invalid bit depth. Accepted values are 16, 24 and 32.')
-    if f_res is None:
-        f_res = DEFAULT_F_RES
-    if preamp is None:
-        preamp = DEFAULT_PREAMP
-    if phase is None or phase == PhaseEnum.minimum:
-        fir = fr.minimum_phase_impulse_response(fs=fs, f_res=f_res, normalize=True, preamp=preamp).T
-    elif phase == PhaseEnum.linear:
-        fir = fr.linear_phase_impulse_response(fs=fs, f_res=f_res, normalize=True, preamp=preamp).T
-    else:
-        raise TypeError
-    buf = BytesIO()
-    sf.write(buf, fir, fs, bit_depth, format='WAV')
-    return buf

@@ -54,7 +54,7 @@ class App extends React.Component {
       trebleBoostFc: 10000.0,
       trebleBoostQ: 0.7,
       tilt: 0.0,
-      maxGain: 6.0,
+      maxGain: 12.0,
       windowSize: 0.08,
       trebleWindowSize: 2.0,
       trebleFLower: 6000.0,
@@ -63,7 +63,7 @@ class App extends React.Component {
       fs: this.audioContext.sampleRate,
       bitDepth: 16,
       phase: 'minimum',
-      fRes: 2.0,
+      fRes: 16.0,
       preamp: 0.0,
 
       graphicEq: null,
@@ -156,6 +156,10 @@ class App extends React.Component {
       treble_boost_q: this.state.trebleBoostQ,
       tilt: this.state.tilt,
       fs: this.state.fs,
+      bit_depth: this.state.bitDepth,
+      phase: this.state.phase,
+      f_res: this.state.fRes,
+      preamp: this.state.preamp,
       max_gain: this.state.maxGain,
       window_size: this.state.windowSize,
       treble_window_size: this.state.trebleWindowSize,
@@ -227,6 +231,9 @@ class App extends React.Component {
     } else if (selectedEqualizer?.type === 'fixedBand' && !!data.fr?.fixed_band_eq) {
       // Use fixed band eq curve as the equalization in the frequency response graph
       keyMap.fixed_band_eq = 'equalization';
+      keyMap.equalization = null;
+    } else if (selectedEqualizer?.type === 'convolution' && !!data.fr?.convolution_eq) {
+      keyMap.convolution_eq = 'equalization';
       keyMap.equalization = null;
     }
     for (let i = 0; i < data.fr.frequency.length; ++i) {

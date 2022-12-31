@@ -18,7 +18,7 @@ class EqAppConvolutionEq extends React.Component {
   }
 
   onDownloadClick() {
-    const wav = audioBufferToWav(this.props.firAudioBuffer);
+    const wav = audioBufferToWav(this.props.firAudioBuffer, {float32: this.props.bitDepth === 32});
     const blob = new window.Blob([ new DataView(wav) ], { type: 'audio/wav' });
     const anchor = document.createElement('a');
     const url = window.URL.createObjectURL(blob);
@@ -52,7 +52,7 @@ class EqAppConvolutionEq extends React.Component {
             <Autocomplete
               renderInput={(params) => <TextField {...params} label='Bit depth' /> }
               value={this.props.bitDepth.toFixed(0)}
-              options={['16', '24', '32']}
+              options={['16', '32']}
               onChange={(e, val) => {
                 this.props.onEqParamChanged({ bitDepth: parseInt(val) })
               }}
