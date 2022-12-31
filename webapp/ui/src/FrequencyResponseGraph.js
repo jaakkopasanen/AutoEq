@@ -54,6 +54,10 @@ class FrequencyResponseGraph extends React.Component {
       return null;
     }
     const [dataMin, dataMax, dataRange] = this.yRange(this.props.data);
+    const yMin = Math.floor((dataMin - dataRange * 0.05) / 2) * 2; // min - 5% of range, rounded to 2 dB below
+    const yMax = Math.ceil((dataMax + dataRange * 0.05) / 2) * 2; // max + 5% of range, rounded to 2 dB above
+    const yTicks = [ ...Array((yMax - yMin) / 2 - 1).keys() ].map(x => yMin + 2 + x * 2) // Every 2 dB, excluding ends
+
     return (
       <Grid container direction={{xs: 'row', md: 'row'}} alignItems='center'>
         <Grid item xs={12} md={9.5} lg={10}>
@@ -119,15 +123,20 @@ class FrequencyResponseGraph extends React.Component {
               <XAxis
                 dataKey='frequency'
                 scale='log' domain={[20, 20e3]} type='number'
-                ticks={[20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000]}
+                ticks={[
+                  20, 30, 40, 50, 60, 70, 80, 90,
+                  100, 200, 300, 400, 500, 600, 700, 800, 900,
+                  1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000,
+                  10000, 20000
+                ]}
+                tickFormatter={(x => [1, 2, 5].includes(x / 10**Math.floor(Math.log10(x))) ? x.toFixed(0) : '')}
+                interval={0}
                 label={{ value: 'Frequency (Hz)', position: 'outsideBottomCenter', dy: 20}}
               />
               <YAxis
                 scale='linear'
-                domain={[dataMin - dataRange * 0.1, dataMax + dataRange * 0.1]}
-                // domain={[0, dataMax + dataRange * 0.1]}
+                domain={[yMin, yMax]} ticks={yTicks} interval={0}
                 type='number'
-                tickCount={10}
                 label={{ value: 'dBr', dx: -10, angle: -90}}
                 allowDataOverflow={true}
               />
