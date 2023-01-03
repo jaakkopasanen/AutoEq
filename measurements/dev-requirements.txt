@@ -1,8 +1,0 @@
-requests
-PyPDF2~=2.8.0
-ghostscript~=0.7
-beautifulsoup4~=4.8.2
-selenium~=3.141.0
-rapidfuzz~=2.3.0
-ipywidgets
-jupyterlab
