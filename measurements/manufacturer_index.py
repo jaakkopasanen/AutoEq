@@ -18,11 +18,11 @@ class ManufacturerIndex:
         with open(os.path.join(DIR_PATH, 'manufacturers.tsv'), 'w', encoding='utf-8') as fh:
             fh.write('\n'.join(['\t'.join(manufacturer) for manufacturer in manufacturers]) + '\n')
 
-    def find(self, name):
+    def find(self, name, ignore_case=True):
         matches = []
         for manufacturer in self.manufacturers:
             for variant in manufacturer:
-                if re.search(f'^{re.escape(variant)}', name, flags=re.IGNORECASE):
+                if re.search(f'^{re.escape(variant)}', name, flags=re.IGNORECASE if ignore_case else 0):
                     # Case insensitive match with manufacturer, add true manufacturer and the matching variant
                     matches.append((manufacturer[0], variant))
 

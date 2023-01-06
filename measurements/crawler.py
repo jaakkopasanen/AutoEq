@@ -134,12 +134,10 @@ class Crawler(ABC):
             if form == 'ignore':
                 self.update_name_index(NameItem(false_name, None, form))
                 return
+            if self.manufacturers.find(true_name, ignore_case=False)[0] is None:
+                raise ValueError(f'Manufacturer of "{true_name}" not recognized!')
             item = NameItem(false_name, true_name, form)
-            try:
-                self.process(NameItem(false_name, true_name, form), url)
-            except FileNotFoundError as err:
-                print(err)
-                return
+            self.process(NameItem(false_name, true_name, form), url)
             self.update_name_index(item)
         return callback
 
