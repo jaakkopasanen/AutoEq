@@ -444,7 +444,7 @@
 - [Koss Porta Pro](./innerfidelity_harman_over-ear_2018/Koss%20Porta%20Pro)
 - [Koss Pro4AA 1975](./innerfidelity_harman_over-ear_2018/Koss%20Pro4AA%201975)
 - [Koss Pro4AA 2014](./innerfidelity_harman_over-ear_2018/Koss%20Pro4AA%202014)
-- [Koss Pro4AA](./innerfidelity_harman_over-ear_2018/Koss%20Pro4AA)
+- [Koss Pro4AAA](./innerfidelity_harman_over-ear_2018/Koss%20Pro4AAA)
 - [Koss Pro4S](./innerfidelity_harman_over-ear_2018/Koss%20Pro4S)
 - [Koss SP330](./innerfidelity_harman_over-ear_2018/Koss%20SP330)
 - [Koss SP540](./innerfidelity_harman_over-ear_2018/Koss%20SP540)

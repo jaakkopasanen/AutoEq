@@ -163,8 +163,14 @@ unlocked with an in-app purchase.
 ![Wavelet](https://i.imgur.com/UGiBwFX.png)
 
 #### Neutron
-[Neutron](https://play.google.com/store/apps/details?id=com.neutroncode.mp) is a music player with parametric equalizer
-and comes with all of the AutoEq profiles built in but is not free.
+[Neutron](https://play.google.com/store/apps/details?id=com.neutroncode.mp) is a music player with parametric equalizer 
+and comes with all the AutoEq profiles built into a Frequency Response Correction DSP (FRC). It is also available on 
+Apple iOS and Windows platforms and not free. On Android it has a [trial version](https://play.google.com/store/apps/details?id=com.neutroncode.mpeval)
+where FRC with AutoEq is fully functional and can be freely evaluated. 
+
+<p align="center">
+  <img src="https://neutroncode.com/images/neutronmp/feature/feature_frc_autoeq_combined.png"/>
+</p>
 
 #### USB Audio Player PRO
 [USB Audio Player PRO](https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro) is an Android app
@@ -264,8 +270,9 @@ iOS unfortunately doesn't allow system-wide equalizers, so the only options are 
 equalizer or [hardware solutions](#Hardware).
 
 #### Neutron
-[Neutron](https://apps.apple.com/app/neutron-music-player/id766858884) is a music player with parametric equalizer and
-comes with all of the AutoEq profiles built in but is not free.
+[Neutron](https://apps.apple.com/app/neutron-music-player/id766858884) is a music player with parametric equalizer and 
+comes with all the AutoEq profiles built into a Frequency Response Correction DSP (FRC). It is also available
+on Android and Windows platforms and not free.
 
 #### EQE
 [EQE](https://github.com/rweichler/EQE) is a system wide parametric equalizer on iOS but requires jailbreaking. Here

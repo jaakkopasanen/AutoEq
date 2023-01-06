@@ -222,11 +222,14 @@ class Oratory1990Crawler(Crawler):
             return
         fr, inspection = Oratory1990Crawler.parse_image(im, item.true_name)
         inspection.save(os.path.join(inspection_dir, f'{item.true_name}.png'))
-        fr.write_to_csv(os.path.join(out_dir, f'{item.true_name}.csv'))
+        fr_path = os.path.join(out_dir, f'{item.true_name}.csv')
+        fr.write_to_csv(fr_path)
+        print(f'  Saved CSV to "{fr_path}"')
 
 
 class RedditCrawlFailed(Exception):
     pass
+
 
 class GraphParseFailed(Exception):
     pass
