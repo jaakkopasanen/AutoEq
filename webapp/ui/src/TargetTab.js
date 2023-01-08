@@ -163,7 +163,7 @@ class TargetTab extends React.Component {
         <Grid item xs={12} sm={12} container direction='column' rowSpacing={1}>
           <Grid item>
             <InputSlider
-              label='Bass boost (dB)' value={this.props.bassBoostGain} min={-10} max={20} step={0.5}
+              label='Bass boost (dB)' value={this.props.bassBoostGain} min={0} max={20} step={0.5}
               onChange={(v) => {
                 this.props.onEqParamChanged({bassBoostGain: v})
               }}

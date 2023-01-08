@@ -6,7 +6,6 @@ from io import BytesIO
 from pathlib import Path
 import numpy as np
 from fastapi import FastAPI
-from fastapi.responses import FileResponse, StreamingResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, validator, root_validator, confloat, conlist, conint
 from typing import Union, Optional
@@ -44,7 +43,7 @@ def get_entries():
 @app.get('/compensations')
 def get_compensations():
     # return [{key: compensation[key] for key in ['name', 'label', 'compatible', 'recommended']} for compensation in compensations]
-    return {compensation['label']: {key: compensation[key] for key in ['compatible', 'recommended']} for compensation in compensations}
+    return {compensation['label']: {key: compensation[key] for key in ['compatible', 'recommended', 'bassBoost']} for compensation in compensations}
 
 
 class MeasurementData(BaseModel):

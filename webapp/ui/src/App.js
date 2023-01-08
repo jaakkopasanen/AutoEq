@@ -20,7 +20,8 @@ class App extends React.Component {
     this.audioContext = new AudioContext();
     this.state = {
       compensations: [],
-      preferredCompensations: [], // Sound signatures preferred for each measurement rig {source: {form: {rig: label}}}
+      // Sound signatures preferred for each measurement rig: {source: {form: {rig: label}}
+      preferredCompensations: [],
       selectedCompensation: null, // Name (label) of the currently selected compensation.
 
       soundSignatures: [{label: 'Add new', frequency: [], raw: []}], // Sound signatures
@@ -269,18 +270,37 @@ class App extends React.Component {
   }
 
   async onMeasurementSelected(e, val) {
+    // TODO: not preferred for any?
+    const compensationLabel = this.state.preferredCompensations[val[0].source][val[0].form][val[0].rig];
     this.setState({
       selectedMeasurement: {
         label: val.label,
         form: val[0].form,
         source: val[0].source,
-        rig: val[0].rig,
+        rig: val[0].rig
       },
-      // TODO: not preferred for any?
-      selectedCompensation: this.state.preferredCompensations[val[0].source][val[0].form][val[0].rig],
+      selectedCompensation: compensationLabel,
+      bassBoostFc: this.state.compensations[compensationLabel].bassBoost.fc,
+      bassBoostQ: this.state.compensations[compensationLabel].bassBoost.q,
+      bassBoostGain: this.state.compensations[compensationLabel].bassBoost.gain,
     }, () => {
       this.equalize(true);
     });
+  }
+
+  onCompensationSelected(label) {
+    const preferredCompensations = cloneDeep(this.state.preferredCompensations);
+    preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig] = label;
+    this.setState(
+      {
+        selectedCompensation: label,
+        preferredCompensations,
+        bassBoostFc: this.state.compensations[label].bassBoost.fc,
+        bassBoostQ: this.state.compensations[label].bassBoost.q,
+        bassBoostGain: this.state.compensations[label].bassBoost.gain,
+      },
+      () => { this.equalize(true); }
+    );
   }
 
   onSoundSignatureSelected(soundSignature) {
@@ -313,15 +333,21 @@ class App extends React.Component {
   }
 
   onEqParamChanged(newParams) {
-    this.setState({ ...this.state, ...newParams }, () => {
+    const preferredCompensations = cloneDeep(this.state.preferredCompensations);
+    const compensations = cloneDeep(this.state.compensations);
+    const compensationLabel = preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig];
+    for (const [key, val] of Object.entries(newParams)) {
+      if (key === 'bassBoostFc') {
+        compensations[compensationLabel].bassBoost.fc = val;
+      } else  if (key === 'bassBoostQ') {
+        compensations[compensationLabel].bassBoost.q = val;
+      } else if (key === 'bassBoostGain') {
+        compensations[compensationLabel].bassBoost.gain = val;
+      }
+    }
+    this.setState({ ...newParams, preferredCompensations, compensations }, () => {
       this.equalize();
     });
-  }
-
-  onCompensationSelected(label) {
-    const preferredCompensations = cloneDeep(this.state.preferredCompensations);
-    preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig] = label;
-    this.setState({ selectedCompensation: label, preferredCompensations }, () => { this.equalize(true); });
   }
 
   onEqualizerSelected(val) {
