@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {Autocomplete, Button, Grid, IconButton, TextField, Typography} from '@mui/material';
 import {Download as DownloadIcon, Edit as EditIcon} from '@mui/icons-material';
 import {useDropzone} from "react-dropzone";
@@ -21,6 +21,15 @@ function CSVAutocomplete(props) {
   const [name, setName] = useState('');
   const [csvText, setCsvText] = useState(constructCsvText([]));
   const [error, setError] = useState('');
+
+  useEffect(() => {
+    if (props.newData?.length > 0) {
+      const newCsvText = constructCsvText(props.newData);
+      if (newCsvText !== csvText) {
+        setCsvText(newCsvText);
+      }
+    }
+  }, [props.newData])
 
   const onDrop = useCallback((acceptedFiles) => {
     acceptedFiles.forEach((file) => {
@@ -88,7 +97,11 @@ function CSVAutocomplete(props) {
   };
 
   const uploadButtonClick = () => {
-    setShowEdit(!showEdit);
+    if ('showEdit' in props) {
+      props.onShowEditChanged(!props.showEdit);
+    } else {
+      setShowEdit(!showEdit);
+    }
   };
 
   return (
@@ -100,7 +113,7 @@ function CSVAutocomplete(props) {
               <TextField
                 sx={{background: (theme) => theme.palette.background.default}}
                 {...params}
-                label='Select headphones'
+                label={props.autocompleteLabel}
               />
             }
             value={props.value}
@@ -113,19 +126,19 @@ function CSVAutocomplete(props) {
         {props.value === null && (
           <Grid item>
             <IconButton onClick={uploadButtonClick}>
-              <DownloadIcon color={showEdit ? 'primary' : 'gray'} />
+              <DownloadIcon color={!!props.showEdit || showEdit ? 'primary' : 'gray'} />
             </IconButton>
           </Grid>
         )}
         {props.value !== null && !!props.value.frequency && (
           <Grid item>
             <IconButton onClick={uploadButtonClick}>
-              <EditIcon color={showEdit ? 'primary' : 'gray'} />
+              <EditIcon color={!!props.showEdit || showEdit ? 'primary' : 'gray'} />
             </IconButton>
           </Grid>
         )}
       </Grid>
-      {showEdit && (
+      {(props.showEdit || showEdit) && (
         <Grid item container direction='column' rowSpacing={1}>
           <Grid item container direction='row' alignItems='center' columnSpacing={1}>
             <Grid item sx={{flexGrow: 1}}>

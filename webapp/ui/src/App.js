@@ -24,7 +24,7 @@ class App extends React.Component {
       preferredCompensations: [],
       selectedCompensation: null, // Name (label) of the currently selected compensation.
 
-      soundSignatures: [{label: 'Add new', frequency: [], raw: []}], // Sound signatures
+      soundSignatures: [], // Sound signatures
       selectedSoundSignature: null, // Currently selected sound signature
 
       measurements: null, // { label, source, form, rig }
@@ -79,6 +79,7 @@ class App extends React.Component {
     this.onMeasurementCreated = this.onMeasurementCreated.bind(this);
     this.onMeasurementUpdated = this.onMeasurementUpdated.bind(this);
     this.onSoundSignatureSelected = this.onSoundSignatureSelected.bind(this);
+    this.onSoundSignatureCreated = this.onSoundSignatureCreated.bind(this);
     this.onSoundSignatureUpdated = this.onSoundSignatureUpdated.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
@@ -354,25 +355,24 @@ class App extends React.Component {
     });
   }
 
-  onSoundSignatureUpdated(name, frequency, raw) {
-    const updatedSoundSignature = { label: name, frequency, raw };
-    const soundSignatures = [ ...this.state.soundSignatures ];
-    let match = false;
-    soundSignatures.forEach((soundSignature, i) => {
-      if (soundSignature.label === name) {
-        soundSignatures[i] = updatedSoundSignature;
-        match = true;
-      }
-    });
-    if (!match) {
-      soundSignatures.push(updatedSoundSignature);
-    }
-    this.setState({
-      selectedSoundSignature: updatedSoundSignature,
-      soundSignatures
-    }, () => {
-      this.equalize(true);
-    });
+  onSoundSignatureCreated(name, frequency, raw) {
+    const soundSignatures = cloneDeep(this.state.soundSignatures);
+    const soundSignature = { label: name, frequency, raw };
+    soundSignatures.push(soundSignature);
+    this.setState(
+      { selectedSoundSignature: soundSignature, soundSignatures },
+      () => { this.equalize(true); }
+    );
+  }
+
+  onSoundSignatureUpdated(label, name, frequency, raw) {
+    const soundSignatures = cloneDeep(this.state.soundSignatures);
+    const soundSignature = { label: name, frequency, raw };
+    const ix = findIndex(soundSignatures, (ss) => ss.label === label);
+    soundSignatures[ix] = soundSignature;
+    this.setState(
+      { selectedSoundSignature: soundSignature, soundSignatures },
+      () => { this.equalize(true); });
   }
 
   onEqParamChanged(newParams) {
@@ -510,6 +510,7 @@ class App extends React.Component {
                         trebleGainK={this.state.trebleGainK}
 
                         onSoundSignatureSelected={this.onSoundSignatureSelected}
+                        onSoundSignatureCreated={this.onSoundSignatureCreated}
                         onSoundSignatureUpdated={this.onSoundSignatureUpdated}
                         onEqParamChanged={this.onEqParamChanged}
                         onCompensationSelected={this.onCompensationSelected}
