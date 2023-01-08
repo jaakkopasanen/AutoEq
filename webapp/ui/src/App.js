@@ -28,7 +28,7 @@ class App extends React.Component {
       selectedSoundSignature: null, // Currently selected sound signature
 
       measurements: null, // { label, source, form, rig }
-      selectedMeasurement: null, // Name (label) of the currently selected measurement
+      selectedMeasurement: null, // { label, source, form, rig }
       graphData: null, // Data for the frequency response graph
 
       equalizers: [
@@ -269,7 +269,15 @@ class App extends React.Component {
     this.setState(newState);
   }
 
-  async onMeasurementSelected(e, val) {
+  async onMeasurementSelected(val) {
+    if (val === null) {
+      this.setState({
+        selectedMeasurement: null,
+        graphData: null
+      });
+      return;
+    }
+
     // TODO: not preferred for any?
     const compensationLabel = this.state.preferredCompensations[val[0].source][val[0].form][val[0].rig];
     this.setState({
@@ -419,6 +427,7 @@ class App extends React.Component {
         <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
           <Paper sx={{padding: 1, borderRadius: 0, background: (theme) => theme.palette.background.default}}>
             <TopBar
+              selectedMeasurement={this.state.selectedMeasurement}
               isMeasurementSelected={!!this.state.selectedMeasurement}
               measurements={this.state.measurements}
               onMeasurementSelected={this.onMeasurementSelected}
@@ -473,7 +482,7 @@ class App extends React.Component {
                   <Grid item xs={6}>
                     <Paper sx={{p: {xs: 1, sm: 2}}}>
                       <EqTab
-                        selectedMeasurement={this.state.selectedMeasurement.label}
+                        selectedMeasurement={this.state.selectedMeasurement?.label}
                         equalizers={this.state.equalizers}
                         selectedEqualizer={this.state.selectedEqualizer}
                         onEqualizerSelected={this.onEqualizerSelected}
