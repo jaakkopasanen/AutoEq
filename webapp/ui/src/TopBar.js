@@ -17,14 +17,19 @@ class TopBar extends React.Component {
       return null;
     }
     return (
-      <Grid container direction='row' justifyContent='space-between' alignItems='start' sx={{maxHeight: '56px'}}>
+      <Grid container direction='row' justifyContent='space-between' alignItems='start' sx={{height: '56px', overflowY: 'visible'}}>
         <Grid item sx={{display: {xs: 'none', sm: 'block'}}}>
           <Typography variant='h1' sx={{fontSize: '2rem'}}>AutoEq</Typography>
         </Grid>
         <Grid item sx={{
           width: {xs: '100%', sm: '50%'},
           position: 'relative',
-          transform: `translateY(${this.props.isMeasurementSelected ? 0 : '30vh'})`
+          transform: `translateY(${this.props.isMeasurementSelected ? 0 : '30vh'})`,
+          zIndex: 2,
+          background: this.props.isMeasurementSelected ? theme => theme.palette.background.default : 'none',
+          p: this.props.isMeasurementSelected ? 1 : 0,
+          boxShadow: this.props.isMeasurementSelected ? '0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)' : 'none',
+          borderRadius: this.props.isMeasurementSelected ? 0.75 : 0,
         }}>
           <CSVAutocomplete
             value={this.props.selectedMeasurement}
@@ -35,6 +40,8 @@ class TopBar extends React.Component {
               size: 'large',
               blurOnSelect: true,
             }}
+            onOptionCreated={this.props.onMeasurementCreated}
+            onOptionUpdated={this.props.onMeasurementUpdated}
           />
         </Grid>
         <Grid item sx={{display: {xs: 'none', sm: 'block'}}}>

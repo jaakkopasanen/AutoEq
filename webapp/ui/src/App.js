@@ -76,6 +76,8 @@ class App extends React.Component {
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
     this.equalize = this.equalize.bind(this);
     this.onMeasurementSelected = this.onMeasurementSelected.bind(this);
+    this.onMeasurementCreated = this.onMeasurementCreated.bind(this);
+    this.onMeasurementUpdated = this.onMeasurementUpdated.bind(this);
     this.onSoundSignatureSelected = this.onSoundSignatureSelected.bind(this);
     this.onSoundSignatureUpdated = this.onSoundSignatureUpdated.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
@@ -93,8 +95,8 @@ class App extends React.Component {
       throw err;
     });
     const measurements = [];
-    for (const [headphone, details] of Object.entries(data)) {
-      measurements.push({label: headphone, ...details});
+    for (const [headphone, items] of Object.entries(data)) {
+      measurements.push({label: headphone, ...items[0]});
     }
     this.setState({measurements: measurements});
   }
@@ -103,7 +105,7 @@ class App extends React.Component {
     const compensations = await fetch('/compensations').then(res => res.json()).catch(err => {
       throw err;
     });
-    const preferredCompensations = {};
+    const preferredCompensations = { 'unknown': { 'unknown': { 'unknown': 'Flat' } } };
     for (const [label, compensation] of Object.entries(compensations)) {
       if (!compensation.recommended) {
         continue;
@@ -134,8 +136,7 @@ class App extends React.Component {
       this.equalizeTimer = setTimeout(() => { this.equalize(true); }, 500);
       return;
     }
-    // console.log('equalize');
-    // console.log(this.state);
+
     const soundSignature = !!this.state.selectedSoundSignature ? { ...this.state.selectedSoundSignature } : null;
     if (!!soundSignature) {
       delete soundSignature.label;
@@ -144,9 +145,6 @@ class App extends React.Component {
     const selectedEqualizer = find(this.state.equalizers, (eq) => eq.label === this.state.selectedEqualizer);
 
     const body = {
-      name: this.state.selectedMeasurement.label,
-      source: this.state.selectedMeasurement.source,
-      rig: this.state.selectedMeasurement.rig,
       compensation: this.state.selectedCompensation,
       sound_signature: soundSignature,
       bass_boost_gain: this.state.bassBoostGain,
@@ -172,6 +170,17 @@ class App extends React.Component {
       fixed_band_eq: selectedEqualizer?.type === 'fixedBand',
       convolution_eq: selectedEqualizer?.type === 'convolution',
     };
+
+    if (this.state.selectedMeasurement.frequency?.length > 0) {
+      body.measurement = {
+        frequency: this.state.selectedMeasurement.frequency,
+        raw: this.state.selectedMeasurement.raw,
+      };
+    } else {
+      body.name = this.state.selectedMeasurement.label;
+      body.source = this.state.selectedMeasurement.source;
+      body.rig = this.state.selectedMeasurement.rig;
+    }
 
     if (selectedEqualizer?.type === 'parametric') {
       if (typeof selectedEqualizer.config === 'string') {
@@ -269,8 +278,8 @@ class App extends React.Component {
     this.setState(newState);
   }
 
-  async onMeasurementSelected(val) {
-    if (val === null) {
+  async onMeasurementSelected(measurement) {
+    if (measurement === null) {
       this.setState({
         selectedMeasurement: null,
         graphData: null
@@ -279,20 +288,46 @@ class App extends React.Component {
     }
 
     // TODO: not preferred for any?
-    const compensationLabel = this.state.preferredCompensations[val[0].source][val[0].form][val[0].rig];
+    const compensationLabel = this.state.preferredCompensations[measurement.source][measurement.form][measurement.rig];
     this.setState({
-      selectedMeasurement: {
-        label: val.label,
-        form: val[0].form,
-        source: val[0].source,
-        rig: val[0].rig
-      },
+      selectedMeasurement: { ...measurement },
       selectedCompensation: compensationLabel,
       bassBoostFc: this.state.compensations[compensationLabel].bassBoost.fc,
       bassBoostQ: this.state.compensations[compensationLabel].bassBoost.q,
       bassBoostGain: this.state.compensations[compensationLabel].bassBoost.gain,
     }, () => {
       this.equalize(true);
+    });
+  }
+
+  onMeasurementCreated(name, frequency, raw) {
+    const measurements = cloneDeep(this.state.measurements);
+    const measurement = {
+      label: name,
+      form: 'unknown',
+      rig: 'unknown',
+      source: 'unknown',
+      frequency, raw
+    };
+    measurements.push(measurement);
+    this.setState({ measurements }, () => {
+      this.onMeasurementSelected(measurement);
+    });
+  }
+
+  onMeasurementUpdated(label, name, frequency, raw) {
+    const measurements = cloneDeep(this.state.measurements);
+    const ix = findIndex(measurements, (measurement) => measurement.label === label);
+    const measurement = { ...measurements[ix], label: name };
+    if (!!frequency.length > 0) {
+      measurement.frequency = frequency;
+    }
+    if (raw.length > 0) {
+      measurement.raw = raw;
+    }
+    measurements[ix] = measurement;
+    this.setState({ measurements }, () => {
+      this.onMeasurementSelected(measurement);
     });
   }
 
@@ -431,6 +466,8 @@ class App extends React.Component {
               isMeasurementSelected={!!this.state.selectedMeasurement}
               measurements={this.state.measurements}
               onMeasurementSelected={this.onMeasurementSelected}
+              onMeasurementCreated={this.onMeasurementCreated}
+              onMeasurementUpdated={this.onMeasurementUpdated}
             />
           </Paper>
         </Grid>
