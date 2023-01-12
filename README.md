@@ -69,16 +69,16 @@ Parametric equalizer filter parameters look like this:
 | Peaking  | 8251 Hz | 3.71 | -2.9 dB |
 
 ### Fixed Band Equalizers
-Fixed band eq is more commonly known as graphic equalizer but in order not to confuse with EqualizerAPO GraphicEQ it is
-called like that in this project. Fixed band equalizer is like parametric equalizer with several peaking filters but
-don't have adjustable frequency information, only gain. All other types are preferred over fixed band equalizers but on
-some devices these are the only available ones.
+Fixed band EQ is more commonly known as a _graphic equalizer_, but in order not to confuse with EqualizerAPO, this project
+refers to its graphic equalizer as GraphicEQ. A fixed band equalizer is like a parametric equalizer with several peaking
+filters, but doesn't have adjustable frequency information, only gain. All other types are preferred over fixed band
+equalizers, but on some devices these are the only ones available.
 
-Fixed band equalizers have trouble compensating for narrow notches and peaks that fall between two bands. Good example
+Fixed band equalizers have trouble compensating for narrow notches and peaks that fall between two bands. A good example
 is [Sennheiser HD 800](./results/oratory1990/harman_over-ear_2018/Sennheiser%20HD%20800)
-with it's 6 kHz peak that is right in between 4 kHz and 8 kHz bands of standard 10-band equalizer.
-When using 10-band equalizer check if the fixed band equalization curve is very different than the desired equalization
-curve at some frequency and adjust the nearby filters by ear for best results.
+with its 6 kHz peak that is in-between 4 kHz and 8 kHz bands of the standard 10-band equalizer.
+When using a 10-band equalizer, check if the fixed band equalization curve is very different than the desired equalization
+curve at some frequency, and adjust the nearby filters by ear for best results.
 
 Fixed band equalizer settings look like this:
 
@@ -706,7 +706,7 @@ gain and too steep slope (as this can cause audible ringing). The additional err
 optimizer doesn't produce these kinds of filter parameter combinations.
 
 The > 10 kHz frequency range is treated as a single average level because research indicates that the perceived sound
-quality is not sensitive to accurately following a curve above 10 kHz but rather a total energy in the range.
+quality is not sensitive to the exact curve in that range. Rather, the total amount of energy in the range is percieved.
 
 ## Contact
 [Issues](https://github.com/jaakkopasanen/AutoEq/issues) are the way to go if you are experiencing problems or have
