@@ -95,6 +95,7 @@ class PhaseEnum(str, Enum):
 class ResponseRequirements(BaseModel):
     fr_f_step = DEFAULT_STEP
     fr_fields: Optional[list[str]]
+    base64fp16 = False
 
 
 class EqualizeRequest(BaseModel):
@@ -266,11 +267,14 @@ def equalize(req: EqualizeRequest):
         buf.seek(0)
         f, mag = magnitude_response(fir, req.fs)
         fir_fr = FrequencyResponse(name='FIR', frequency=f[1:], raw=mag[1:])
-        fir_fr.interpolate()
+        fir_fr.interpolate(f_step=f_step)
         ix200 = np.argmin(np.abs(fr.frequency - 200))
         fir_fr.raw += np.mean(fr.equalization[ix200:] - fir_fr.raw[ix200:])
-        fir_fr.interpolate(f_step=f_step)
         res['fir'] = b64encode(buf.read())
         res['fr']['convolution_eq'] = fir_fr.raw.tolist()
+
+    base64fp16 = req.response.base64fp16 if req.response is not None else ResponseRequirements.base64fp16
+    if base64fp16:
+        res['fr'] = {key: b64encode(np.array(val, dtype='float16')) for key, val in res['fr'].items()}
 
     return res

@@ -13,6 +13,7 @@ import find from 'lodash/find';
 import findIndex from 'lodash/findIndex';
 import merge from 'lodash/merge';
 import {decode} from 'base64-arraybuffer';
+import {decodeFloat16} from "./utils";
 
 class App extends React.Component {
   constructor(props) {
@@ -177,7 +178,8 @@ class App extends React.Component {
         fr_f_step: 1.02,
         fr_fields: this.state.smoothed
           ? ['frequency', 'smoothed', 'error_smoothed', 'target', 'equalization', 'equalized_smoothed']
-          : ['frequency', 'raw', 'error', 'target', 'equalization', 'equalized_raw']
+          : ['frequency', 'raw', 'error', 'target', 'equalization', 'equalized_raw'],
+        base64fp16: true
       }
     };
 
@@ -230,6 +232,17 @@ class App extends React.Component {
       throw err; // TODO error handling
     });
 
+    // Decode base64 encoded half-precision binary arrays
+    const fr = {};
+    for (const [key, val] of Object.entries(data.fr)) {
+      const uint16arr = new Uint16Array(decode(val));
+      const arr = [];
+      for (const x of uint16arr) {
+        arr.push(decodeFloat16(x));
+      }
+      fr[key] = arr;
+    }
+
     const graphData = [];
     const keyMap = {
       frequency: 'frequency',
@@ -244,29 +257,30 @@ class App extends React.Component {
       parametric_eq: 'parametricEq',
       fixed_band_eq: 'fixedBandEq',
     };
-    if (selectedEqualizer?.type === 'parametric' && !!data.fr?.parametric_eq) {
+    if (selectedEqualizer?.type === 'parametric' && !!fr?.parametric_eq) {
       // Use parametric eq curve as the equalization in the frequency response graph
       keyMap.parametric_eq = 'equalization';
       keyMap.equalization = null;
-    } else if (selectedEqualizer?.type === 'fixedBand' && !!data.fr?.fixed_band_eq) {
+    } else if (selectedEqualizer?.type === 'fixedBand' && !!fr?.fixed_band_eq) {
       // Use fixed band eq curve as the equalization in the frequency response graph
       keyMap.fixed_band_eq = 'equalization';
       keyMap.equalization = null;
-    } else if (selectedEqualizer?.type === 'convolution' && !!data.fr?.convolution_eq) {
+    } else if (selectedEqualizer?.type === 'convolution' && !!fr?.convolution_eq) {
       keyMap.convolution_eq = 'equalization';
       keyMap.equalization = null;
     }
-    for (let i = 0; i < data.fr.frequency.length; ++i) {
+
+    for (let i = 0; i < fr.frequency.length; ++i) {
       const dataPoint = {};
-      for (const key of Object.keys(data.fr)) {
+      for (const key of Object.keys(fr)) {
         if (keyMap[key] === null) {
           continue;
         }
-        dataPoint[keyMap[key]] = data.fr[key][i];
+        dataPoint[keyMap[key]] = fr[key][i];
       }
       graphData.push(dataPoint);
     }
-    if (!!data.fr?.equalization) {
+    if (!!fr?.equalization) {
       for (let i = 0; i < graphData.length; ++i) {
         graphData[i].equalizedRaw = graphData[i].raw + graphData[i].equalization;
         graphData[i].equalizedSmoothed = graphData[i].smoothed + graphData[i].equalization;
@@ -342,7 +356,9 @@ class App extends React.Component {
   }
 
   onSmoothedChanged(val) {
-    this.setState({smoothed: val});
+    this.setState({smoothed: val}, () => {
+      this.equalize(true);
+    });
   }
 
   onCompensationSelected(label) {
