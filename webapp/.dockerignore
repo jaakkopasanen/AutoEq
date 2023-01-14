@@ -1,5 +1,9 @@
-**/build
-**/node_modules
-.dockerignore
-Dockerfile
-**/README.md
+webapp/.dockerignore
+webapp/build/
+webapp/data
+webapp/Dockerfile
+webapp/create_data.py
+webapp/ui/node_modules/
+webapp/ui/.gitignore
+__pycache__
+webapp/__pycache__

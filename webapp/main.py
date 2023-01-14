@@ -10,6 +10,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, validator, root_validator, confloat, conlist, conint
 from typing import Union, Optional
 import soundfile as sf
+from scipy.fft import fft
 
 from autoeq.constants import DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, \
     DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, DEFAULT_TILT, DEFAULT_FS, \
@@ -17,21 +18,18 @@ from autoeq.constants import DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEF
     DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, DEFAULT_PHASE, DEFAULT_PREAMP, DEFAULT_F_RES, \
     PEQ_CONFIGS, DEFAULT_BIT_DEPTH, DEFAULT_STEP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
 from autoeq.frequency_response import FrequencyResponse
-from webapp.utils import magnitude_response
 
 ROOT_DIR = Path().resolve()
 
 app = FastAPI()
-if os.getenv('NODE_ENV') == 'production':
-    app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('ui/build'), html=True), name='static')
 
-with open('data/entries.json') as fh:
+with open(ROOT_DIR.joinpath('data/entries.json')) as fh:
     entries = json.load(fh)
 
-with open('data/measurements.json') as fh:
+with open(ROOT_DIR.joinpath('data/measurements.json')) as fh:
     measurements = json.load(fh)
 
-with open('data/compensations.json') as fh:
+with open(ROOT_DIR.joinpath('data/compensations.json')) as fh:
     compensations = json.load(fh)
 
 
@@ -42,7 +40,6 @@ def get_entries():
 
 @app.get('/compensations')
 def get_compensations():
-    # return [{key: compensation[key] for key in ['name', 'label', 'compatible', 'recommended']} for compensation in compensations]
     return {compensation['label']: {key: compensation[key] for key in ['compatible', 'recommended', 'bassBoost']} for compensation in compensations}
 
 
@@ -154,6 +151,25 @@ class EqualizeRequest(BaseModel):
         if type(v) == str:
             assert v in PEQ_CONFIGS, f'Unknown fixed band eq config name "{v}"'
         return v
+
+
+def magnitude_response(x, fs):
+    """Calculates frequency magnitude response
+
+    Args:
+        x: Audio data
+        fs: Sampling rate
+
+    Returns:
+        - **f:** Frequencies
+        - **X:** Magnitudes
+    """
+    nfft = len(x)
+    df = fs / nfft
+    f = np.arange(0, fs - df, df)
+    y = fft(x)
+    y_mag = 20 * np.log10(np.abs(y))
+    return f[0:int(np.ceil(nfft/2))], y_mag[0:int(np.ceil(nfft/2))]
 
 
 @app.post('/equalize')
@@ -301,3 +317,7 @@ def equalize(req: EqualizeRequest):
         res['fr'] = {key: b64encode(np.array(val, dtype='float16')) for key, val in res['fr'].items()}
 
     return res
+
+
+if os.getenv('APP_ENV') == 'production':
+    app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('ui/build'), html=True), name='static')
