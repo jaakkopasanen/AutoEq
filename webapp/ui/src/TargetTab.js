@@ -9,7 +9,8 @@ class TargetTab extends React.Component {
     this.state = {
       showAdvanced: false,
       showSoundSignatureEdit: false,
-      newSoundSignatureValue: null
+      newSoundSignatureValue: null,
+      soundSignatureSmoothingWindowSize: 0,
     };
     this.onUseCurrentErrorClicked = this.onUseCurrentErrorClicked.bind(this);
     this.onUseCurrentErrorClicked = this.onUseCurrentErrorClicked.bind(this);
@@ -58,11 +59,10 @@ class TargetTab extends React.Component {
                 autocompleteLabel='Sound signature'
                 onOptionCreated={(name, frequency, raw) => {
                   this.setState({ showSoundSignatureEdit: false });
-                  this.props.onSoundSignatureCreated(name, frequency, raw);
+                  this.props.onSoundSignatureCreated(name, frequency, raw, this.state.soundSignatureSmoothingWindowSize);
                 }}
                 onOptionUpdated={(label, name, frequency, raw) => {
-                  this.setState({ showSoundSignatureEdit: false });
-                  this.props.onSoundSignatureUpdated(label, name, frequency, raw);
+                  this.props.onSoundSignatureUpdated(label, name, frequency, raw, this.state.soundSignatureSmoothingWindowSize);
                 }}
                 showEdit={this.state.showSoundSignatureEdit}
                 onShowEditChanged={() => {
@@ -70,6 +70,16 @@ class TargetTab extends React.Component {
                 }}
               />
             </Grid>
+            {this.state.showSoundSignatureEdit && (
+              <Grid item>
+                <InputSlider
+                  label='Smoothing window size'
+                  value={this.state.soundSignatureSmoothingWindowSize}
+                  onChange={(val) => { this.setState({ soundSignatureSmoothingWindowSize: val}); }}
+                  step={0.01} min={0} max={2}
+                />
+              </Grid>
+            )}
             {this.state.showSoundSignatureEdit && (
               <Grid item>
                 <Button

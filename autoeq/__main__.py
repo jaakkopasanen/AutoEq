@@ -6,7 +6,7 @@ import warnings
 from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_BOOST_FC, \
-    DEFAULT_TREBLE_BOOST_Q, DEFAULT_PREAMP
+    DEFAULT_TREBLE_BOOST_Q, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
 from autoeq.batch_processing import batch_processing
 
 
@@ -118,6 +118,9 @@ def cli_args():
                                  'signature graph will be interpolated so any number of point at any frequencies '
                                  'will do, making it easy to create simple signatures with as little as two or '
                                  'three points.')
+    arg_parser.add_argument('--sound-signature-smoothing-window-size', type=float,
+                            help=f'Smoothing window size for sound signature. '
+                                 f'Defaults to {DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE}.')
     arg_parser.add_argument('--max-gain', type=float, default=DEFAULT_MAX_GAIN,
                             help='Maximum positive gain in equalization. Higher max gain allows to equalize deeper '
                                  'dips in  frequency response but will limit output volume if no analog gain is '

@@ -26,7 +26,7 @@ from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
     HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, \
     DEFAULT_BIQUAD_OPTIMIZATION_F_STEP, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, \
-    DEFAULT_PREAMP
+    DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
 from autoeq.peq import PEQ, LowShelf, HighShelf
 
 warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
@@ -646,6 +646,7 @@ class FrequencyResponse:
                    tilt=None,
                    fs=DEFAULT_FS,
                    sound_signature=None,
+                   sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
                    min_mean_error=False):
         """Sets target and error curves."""
         # Copy and center compensation data
@@ -668,7 +669,14 @@ class FrequencyResponse:
             if not np.all(sound_signature.frequency == self.frequency):
                 # Interpolate sound signature to match self on the frequency axis
                 sound_signature.interpolate(self.frequency)
-            self.target += sound_signature.raw
+            if sound_signature_smoothing_window_size:
+                print('SMOOTHING SOUND SIGNATURE')
+                sound_signature.smoothen_fractional_octave(
+                    window_size=sound_signature_smoothing_window_size,
+                    treble_window_size=sound_signature_smoothing_window_size)
+                self.target += sound_signature.smoothed
+            else:
+                self.target += sound_signature.raw
 
         # Set error
         self.error = self.raw - self.target
@@ -1297,6 +1305,7 @@ class FrequencyResponse:
                 tilt=None,
                 fs=DEFAULT_FS,
                 sound_signature=None,
+                sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
                 max_gain=DEFAULT_MAX_GAIN,
                 concha_interference=False,
                 window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
@@ -1320,6 +1329,7 @@ class FrequencyResponse:
             fs: Sampling frequency
             tilt: Target frequency response tilt in db / octave
             sound_signature: Sound signature as FrequencyResponse instance. Raw data will be used.
+            sound_signature_smoothing_window_size: Smoothing window size in octaves for sound signature
             max_gain: Maximum positive gain in dB
             concha_interference: Do measurements include concha interference which produced a narrow dip around 9 kHz?
             window_size: Smoothing window size in octaves.
@@ -1344,6 +1354,7 @@ class FrequencyResponse:
             tilt=tilt,
             fs=fs,
             sound_signature=sound_signature,
+            sound_signature_smoothing_window_size=sound_signature_smoothing_window_size,
             min_mean_error=min_mean_error
         )
         self.smoothen_fractional_octave(

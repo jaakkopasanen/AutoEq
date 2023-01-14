@@ -143,8 +143,11 @@ class App extends React.Component {
     }
 
     const soundSignature = !!this.state.selectedSoundSignature ? { ...this.state.selectedSoundSignature } : null;
+    let soundSignatureSmoothingWindowSize;
     if (!!soundSignature) {
       delete soundSignature.label;
+      soundSignatureSmoothingWindowSize = soundSignature.smoothingWindowSize;
+      delete soundSignature.smoothingWindowSize;
     }
 
     const selectedEqualizer = find(this.state.equalizers, (eq) => eq.label === this.state.selectedEqualizer);
@@ -152,6 +155,7 @@ class App extends React.Component {
     const body = {
       compensation: this.state.selectedCompensation,
       sound_signature: soundSignature,
+      sound_signature_smoothing_window_size: soundSignatureSmoothingWindowSize,
       bass_boost_gain: this.state.bassBoostGain,
       bass_boost_fc: this.state.bassBoostFc,
       bass_boost_q: this.state.bassBoostQ,
@@ -384,9 +388,9 @@ class App extends React.Component {
     });
   }
 
-  onSoundSignatureCreated(name, frequency, raw) {
+  onSoundSignatureCreated(name, frequency, raw, smoothingWindowSize) {
     const soundSignatures = cloneDeep(this.state.soundSignatures);
-    const soundSignature = { label: name, frequency, raw };
+    const soundSignature = { label: name, frequency, raw, smoothingWindowSize };
     soundSignatures.push(soundSignature);
     this.setState(
       { selectedSoundSignature: soundSignature, soundSignatures },
@@ -394,9 +398,9 @@ class App extends React.Component {
     );
   }
 
-  onSoundSignatureUpdated(label, name, frequency, raw) {
+  onSoundSignatureUpdated(label, name, frequency, raw, smoothingWindowSize) {
     const soundSignatures = cloneDeep(this.state.soundSignatures);
-    const soundSignature = { label: name, frequency, raw };
+    const soundSignature = { label: name, frequency, raw, smoothingWindowSize };
     const ix = findIndex(soundSignatures, (ss) => ss.label === label);
     soundSignatures[ix] = soundSignature;
     this.setState(

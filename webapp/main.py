@@ -15,7 +15,7 @@ from autoeq.constants import DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEF
     DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_MAX_GAIN, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_F_LOWER, \
     DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, DEFAULT_PHASE, DEFAULT_PREAMP, DEFAULT_F_RES, \
-    PEQ_CONFIGS, DEFAULT_BIT_DEPTH, DEFAULT_STEP
+    PEQ_CONFIGS, DEFAULT_BIT_DEPTH, DEFAULT_STEP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
 from autoeq.frequency_response import FrequencyResponse
 from webapp.utils import magnitude_response
 
@@ -116,6 +116,7 @@ class EqualizeRequest(BaseModel):
     f_res: Optional[float] = DEFAULT_F_RES
     phase: Optional[PhaseEnum] = DEFAULT_PHASE
     sound_signature: Optional[MeasurementData]
+    sound_signature_smoothing_window_size: Optional[float] = DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
     max_gain = DEFAULT_MAX_GAIN
     window_size = DEFAULT_SMOOTHING_WINDOW_SIZE
     treble_window_size = DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE
@@ -202,6 +203,7 @@ def equalize(req: EqualizeRequest):
         tilt=req.tilt,
         fs=req.fs,
         sound_signature=sound_signature,
+        sound_signature_smoothing_window_size=req.sound_signature_smoothing_window_size,
         max_gain=req.max_gain,
         window_size=req.window_size,
         treble_window_size=req.treble_window_size,
@@ -214,7 +216,7 @@ def equalize(req: EqualizeRequest):
     if fr_fields is None:
         fr_fields = list(fr.to_dict().keys())
 
-    fr.interpolate(f_step=f_step)  # TODO
+    fr.interpolate(f_step=f_step)
     d = fr.to_dict()
     res = {'fr': {key: d[key] for key in fr_fields}}
 
