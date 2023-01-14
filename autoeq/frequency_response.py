@@ -517,7 +517,7 @@ class FrequencyResponse:
                 i += 1
 
         # Interpolation functions
-        keys = 'raw error error_smoothed equalization equalized_raw equalized_smoothed target'.split()
+        keys = 'raw smoothed error error_smoothed equalization equalized_raw equalized_smoothed target'.split()
         interpolators = dict()
         log_f = np.log10(self.frequency)
         for key in keys:

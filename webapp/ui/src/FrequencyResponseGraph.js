@@ -15,13 +15,10 @@ class FrequencyResponseGraph extends React.Component {
       },
       smoothed: true,
     };
-    this.onSmoothedChanged = this.onSmoothedChanged.bind(this);
     this.onLegendShowChanged = this.onLegendShowChanged.bind(this);
   }
 
-  onSmoothedChanged(e) {
-    this.setState({smoothed: e.target.checked});
-  }
+
 
   onLegendShowChanged(name, value) {
     const newShow = {...this.state.show};
@@ -35,8 +32,8 @@ class FrequencyResponseGraph extends React.Component {
       if (dataPoint.frequency > 16000) break;
       for (const [key, val] of Object.entries(dataPoint)) {
         if (key === 'frequency'
-          || (this.state.smoothed && ['raw', 'error', 'equalizedRaw'].includes(key))
-          || (!this.state.smoothed && ['smoothed', 'errorSmoothed', 'equalized'].includes(key))
+          || (this.props.smoothed && ['raw', 'error', 'equalizedRaw'].includes(key))
+          || (!this.props.smoothed && ['smoothed', 'errorSmoothed', 'equalized'].includes(key))
         ) {
           continue;
         }
@@ -77,11 +74,11 @@ class FrequencyResponseGraph extends React.Component {
               )}
 
               {(
-                (this.state.smoothed && !!this.props.data[0].smoothed)
-                || (!this.state.smoothed && !!this.props.data[0].raw)
+                (this.props.smoothed && !!this.props.data[0].smoothed)
+                || (!this.props.smoothed && !!this.props.data[0].raw)
               ) && (
                 <Line
-                  dataKey={this.state.show.raw ? this.state.smoothed ? 'smoothed' : 'raw' : ''}
+                  dataKey={this.state.show.raw ? this.props.smoothed ? 'smoothed' : 'raw' : ''}
                   name='Frequency Response' type='linear' dot={false}
                   stroke={this.state.show.raw ? '#000' : '#999'}
                   strokeWidth={1.5} isAnimationActive={false}
@@ -89,11 +86,11 @@ class FrequencyResponseGraph extends React.Component {
               )}
 
               {(
-                (this.state.smoothed && !!this.props.data[0].errorSmoothed)
-                || (!this.state.smoothed && !!this.props.data[0].error)
+                (this.props.smoothed && !!this.props.data[0].errorSmoothed)
+                || (!this.props.smoothed && !!this.props.data[0].error)
               ) && (
                 <Line
-                  dataKey={this.state.show.error ? this.state.smoothed ? 'errorSmoothed' : 'error' : ''}
+                  dataKey={this.state.show.error ? this.props.smoothed ? 'errorSmoothed' : 'error' : ''}
                   name='Error' type='linear' dot={false}
                   stroke={this.state.show.error ? '#d62728' : '#999'}
                   strokeWidth={1.5} isAnimationActive={false}
@@ -108,11 +105,11 @@ class FrequencyResponseGraph extends React.Component {
                 />
               )}
               {(
-                (this.state.smoothed && !!this.props.data[0].equalizedSmoothed)
-                || (!this.state.smoothed && !!this.props.data[0].equalizedRaw)
+                (this.props.smoothed && !!this.props.data[0].equalizedSmoothed)
+                || (!this.props.smoothed && !!this.props.data[0].equalizedRaw)
               ) && (
                 <Line
-                  dataKey={this.state.show.equalized ? this.state.smoothed ? 'equalizedSmoothed' : 'equalizedRaw' : ''}
+                  dataKey={this.state.show.equalized ? this.props.smoothed ? 'equalizedSmoothed' : 'equalizedRaw' : ''}
                   name='Equalized' type='linear' dot={false}
                   stroke={this.state.show.equalized ? '#0343df' : '#999'}
                   strokeWidth={1.5} isAnimationActive={false}
@@ -149,7 +146,10 @@ class FrequencyResponseGraph extends React.Component {
               <Typography>Smoothed</Typography>
             </Grid>
             <Grid item md={5}>
-              <Switch checked={this.state.smoothed} label='Smoothed' onChange={this.onSmoothedChanged}/>
+              <Switch
+                checked={this.props.smoothed} label='Smoothed'
+                onChange={(e) => this.props.onSmoothedChanged(e.target.checked)}
+              />
             </Grid>
           </Grid>
           <Grid item>

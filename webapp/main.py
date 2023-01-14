@@ -15,7 +15,7 @@ from autoeq.constants import DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEF
     DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_MAX_GAIN, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_F_LOWER, \
     DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, DEFAULT_PHASE, DEFAULT_PREAMP, DEFAULT_F_RES, \
-    PEQ_CONFIGS, DEFAULT_BIT_DEPTH
+    PEQ_CONFIGS, DEFAULT_BIT_DEPTH, DEFAULT_STEP
 from autoeq.frequency_response import FrequencyResponse
 from webapp.utils import magnitude_response
 
@@ -92,6 +92,11 @@ class PhaseEnum(str, Enum):
     linear = 'linear'
 
 
+class ResponseRequirements(BaseModel):
+    fr_f_step = DEFAULT_STEP
+    fr_fields: Optional[list[str]]
+
+
 class EqualizeRequest(BaseModel):
     measurement: Optional[MeasurementData]
     name: Optional[str]
@@ -123,6 +128,7 @@ class EqualizeRequest(BaseModel):
     graphic_eq = False
     convolution_eq = False
     preamp = DEFAULT_PREAMP
+    response: Optional[ResponseRequirements]
 
     @root_validator
     def only_one_eq_type(cls, values):
@@ -202,7 +208,14 @@ def equalize(req: EqualizeRequest):
         treble_f_upper=req.treble_f_upper,
         treble_gain_k=req.treble_gain_k)
 
-    res = {'fr': fr.to_dict()}
+    f_step = req.response.fr_f_step if req.response is not None else ResponseRequirements.fr_f_step
+    fr_fields = req.response.fr_fields if req.response is not None else ResponseRequirements.fr_fields
+    if fr_fields is None:
+        fr_fields = list(fr.to_dict().keys())
+
+    fr.interpolate(f_step=f_step)  # TODO
+    d = fr.to_dict()
+    res = {'fr': {key: d[key] for key in fr_fields}}
 
     if req.parametric_eq:
         parametric_eq_config = req.parametric_eq_config
@@ -216,7 +229,7 @@ def equalize(req: EqualizeRequest):
         peq.sort_filters()
         res['parametric_eq'] = peq.to_dict()
         peq_fr = FrequencyResponse(name='PEQ', frequency=peq.f, raw=peq.fr)
-        peq_fr.interpolate()
+        peq_fr.interpolate(f_step=f_step)
         res['fr']['parametric_eq'] = peq_fr.raw.tolist()
 
     if req.fixed_band_eq:
@@ -229,7 +242,7 @@ def equalize(req: EqualizeRequest):
         fixed_band_peq.sort_filters()
         res.update({'fixed_band_eq': fixed_band_peq.to_dict()})
         fbpeq_fr = FrequencyResponse('FBPEQ', frequency=fixed_band_peq.f, raw=fixed_band_peq.fr)
-        fbpeq_fr.interpolate()
+        fbpeq_fr.interpolate(f_step=f_step)
         res['fr']['fixed_band_eq'] = fbpeq_fr.raw.tolist()
 
     if req.graphic_eq:
@@ -256,6 +269,7 @@ def equalize(req: EqualizeRequest):
         fir_fr.interpolate()
         ix200 = np.argmin(np.abs(fr.frequency - 200))
         fir_fr.raw += np.mean(fr.equalization[ix200:] - fir_fr.raw[ix200:])
+        fir_fr.interpolate(f_step=f_step)
         res['fir'] = b64encode(buf.read())
         res['fr']['convolution_eq'] = fir_fr.raw.tolist()
 

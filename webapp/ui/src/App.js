@@ -47,6 +47,8 @@ class App extends React.Component {
       ],
       selectedEqualizer: null, // Name (label) of the currently selected equalizer app
 
+      smoothed: true,
+
       // Request parameters
       bassBoostGain: 0.0,
       bassBoostFc: 105.0,
@@ -78,6 +80,7 @@ class App extends React.Component {
     this.onMeasurementSelected = this.onMeasurementSelected.bind(this);
     this.onMeasurementCreated = this.onMeasurementCreated.bind(this);
     this.onMeasurementUpdated = this.onMeasurementUpdated.bind(this);
+    this.onSmoothedChanged = this.onSmoothedChanged.bind(this);
     this.onSoundSignatureSelected = this.onSoundSignatureSelected.bind(this);
     this.onSoundSignatureCreated = this.onSoundSignatureCreated.bind(this);
     this.onSoundSignatureUpdated = this.onSoundSignatureUpdated.bind(this);
@@ -170,6 +173,12 @@ class App extends React.Component {
       parametric_eq: selectedEqualizer?.type === 'parametric',
       fixed_band_eq: selectedEqualizer?.type === 'fixedBand',
       convolution_eq: selectedEqualizer?.type === 'convolution',
+      response: {
+        fr_f_step: 1.02,
+        fr_fields: this.state.smoothed
+          ? ['frequency', 'smoothed', 'error_smoothed', 'target', 'equalization', 'equalized_smoothed']
+          : ['frequency', 'raw', 'error', 'target', 'equalization', 'equalized_raw']
+      }
     };
 
     if (this.state.selectedMeasurement.frequency?.length > 0) {
@@ -332,6 +341,10 @@ class App extends React.Component {
     });
   }
 
+  onSmoothedChanged(val) {
+    this.setState({smoothed: val});
+  }
+
   onCompensationSelected(label) {
     const preferredCompensations = cloneDeep(this.state.preferredCompensations);
     preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig] = label;
@@ -479,7 +492,11 @@ class App extends React.Component {
                   <Paper
                     sx={{pt: 1, pl: {xs: 1, sm: 2, md: 0}, pr: {xs: 1, sm: 2, md: 0}, pb: {xs: 1, sm: 2, md: 0}}}
                   >
-                    <FrequencyResponseGraph data={this.state.graphData}/>
+                    <FrequencyResponseGraph
+                      data={this.state.graphData}
+                      smoothed={this.state.smoothed}
+                      onSmoothedChanged={this.onSmoothedChanged}
+                    />
                   </Paper>
                 </Grid>
                 <Grid item container direction='row' columnSpacing={{xs: 1, sm: 2}} alignItems='stretch'>
