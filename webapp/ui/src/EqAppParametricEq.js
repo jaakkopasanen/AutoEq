@@ -343,9 +343,9 @@ class EqAppParametricEq extends React.Component {
             </TableHead>
             {!!this.props.filters && (
               <TableBody>
-                {this.props.filters.map(filt => {
+                {this.props.filters.map((filt, i) => {
                   return (
-                    <TableRow key={filt.fc}>
+                    <TableRow key={i}>
                       <TableCell align='center'>{filt.type}</TableCell>
                       <TableCell align='center'>{filt.fc.toFixed(0)}</TableCell>
                       <TableCell align='center'>

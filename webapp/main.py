@@ -134,7 +134,7 @@ class EqualizeRequest(BaseModel):
 
     @root_validator
     def only_one_eq_type(cls, values):
-        assert values.get('measurement') or (values.get('name') and values.get('source') and values.get('rig'))
+        assert values.get('measurement') or (values.get('name') and values.get('source') and values.get('rig')), 'Measurement is required'
         keys = ['parametric_eq', 'fixed_band_eq', 'equalizer_apo_graphic_eq', 'convolution_eq']
         assert len([key for key in keys if values.get(key)]) < 2, 'Only one equalizer type is allowed'
         return values
@@ -227,7 +227,20 @@ def equalize(req: EqualizeRequest):
         parametric_eq_config = [
             PEQ_CONFIGS[config] if type(config) == str else config.dict() for config in parametric_eq_config
         ]
-        parametric_peqs = fr.optimize_parametric_eq(parametric_eq_config, req.fs, preamp=req.preamp)
+        # Limit maximum optimization time to 500 ms
+        total_max_time = 0
+        for config in parametric_eq_config:
+            if 'optimizer' not in config:
+                config['optimizer'] = {'max_time': 0.5}
+            elif (
+                    'max_time' not in config['optimizer']
+                    or config['optimizer']['max_time'] is None
+                    or config['optimizer']['max_time'] > 0.5
+            ):
+                config['optimizer']['max_time'] = 0.5
+            total_max_time += config['optimizer']['max_time']
+        max_time = 0.5 if total_max_time > 0.5 else None
+        parametric_peqs = fr.optimize_parametric_eq(parametric_eq_config, req.fs, preamp=req.preamp, max_time=max_time)
         peq = parametric_peqs[0]
         peq.sort_filters()
         res['parametric_eq'] = peq.to_dict()
@@ -240,6 +253,14 @@ def equalize(req: EqualizeRequest):
             fixed_band_eq_config = PEQ_CONFIGS[req.fixed_band_eq_config]
         else:
             fixed_band_eq_config = req.fixed_band_eq_config.dict()
+        if 'optimizer' not in fixed_band_eq_config:
+            fixed_band_eq_config['optimizer'] = {'max_time': 0.5}
+        elif (
+                'max_time' not in fixed_band_eq_config['optimizer']
+                or fixed_band_eq_config['optimizer']['max_time'] is None
+                or fixed_band_eq_config['optimizer']['max_time'] > 0.5
+        ):
+            fixed_band_eq_config['optimizer']['max_time'] = 0.5
         fixed_band_peqs = fr.optimize_fixed_band_eq(fixed_band_eq_config, req.fs, preamp=req.preamp)
         fixed_band_peq = fixed_band_peqs[0]
         fixed_band_peq.sort_filters()

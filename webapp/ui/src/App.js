@@ -1,9 +1,10 @@
 import React from 'react';
 import FrequencyResponseGraph from './FrequencyResponseGraph';
 import {
+  Alert,
   Container,
   Grid,
-  Paper,
+  Paper, Snackbar,
 } from '@mui/material';
 import TopBar from './TopBar';
 import TargetTab from './TargetTab';
@@ -20,6 +21,9 @@ class App extends React.Component {
     super(props);
     this.audioContext = new AudioContext();
     this.state = {
+      isSnackbarOpen: false,
+      snackbarMessage: '',
+
       compensations: [],
       // Sound signatures preferred for each measurement rig: {source: {form: {rig: label}}
       preferredCompensations: [],
@@ -39,11 +43,12 @@ class App extends React.Component {
         {
           label: 'Custom Parametric Eq', type: 'parametric', config: {
             optimizer: {minF: null, maxF: null, maxTime: 0.5, minChangeRate: null, minStd: null},
-            filterDefaults: {type: null, minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null},
+            filterDefaults: {type: 'PEAKING', minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null},
             filters: []
           }
         },
         {label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ'},
+        {label: '31-band Graphic Eq', type: 'fixedBand', config: '31_BAND_GRAPHIC_EQ'},
         {label: 'Convolution Eq', type: 'convolution'}
       ],
       selectedEqualizer: null, // Name (label) of the currently selected equalizer app
@@ -94,6 +99,8 @@ class App extends React.Component {
     this.onCustomPeqAddFilterClick = this.onCustomPeqAddFilterClick.bind(this);
     this.onCustomPeqDeleteFilterClick = this.onCustomPeqDeleteFilterClick.bind(this);
   }
+
+
 
   async fetchMeasurements() {
     const data = await fetch('/entries').then(res => res.json()).catch((err) => {
@@ -202,6 +209,9 @@ class App extends React.Component {
       if (typeof selectedEqualizer.config === 'string') {
         body.parametric_eq_config = selectedEqualizer.config;
       } else {
+        if (!selectedEqualizer.config.filters.length) {
+          return;
+        }
         body.parametric_eq_config = {
           optimizer: {
             min_f: selectedEqualizer.config.optimizer.minF,
@@ -226,14 +236,22 @@ class App extends React.Component {
           }))
         };
       }
+    } else if (selectedEqualizer?.type === 'fixedBand') {
+      body.fixed_band_eq_config = selectedEqualizer.config;
     }
 
     const data = await fetch('/equalize', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(body)
-    }).then(res => res.json()).catch(err => {
-      throw err; // TODO error handling
+    }).then(async res => {
+      if (res.status >= 200 && res.status < 300) {
+        return res.json();
+      }
+      let errorMessage;
+      errorMessage = JSON.stringify((await res.json()), null, 4);
+      this.setState({ isSnackbarOpen: true, snackbarMessage: errorMessage});
+      throw new Error(errorMessage);
     });
 
     // Decode base64 encoded half-precision binary arrays
@@ -584,6 +602,20 @@ class App extends React.Component {
             </Container>
           </Grid>
         )}
+        <Grid item>
+          <Snackbar
+            open={this.state.isSnackbarOpen}
+            onClose={() => { this.setState({ isSnackBarOpen: false }); }}
+            sx={{background: theme => theme.palette.background.default}}
+          >
+            <Alert
+              onClose={() => { this.setState({ isSnackBarOpen: false }); }}
+              severity='error' variant='outlined' sx={{ width: '100%'}}
+            >
+              {this.state.snackbarMessage}
+            </Alert>
+          </Snackbar>
+        </Grid>
       </Grid>
     );
   }

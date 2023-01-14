@@ -78,6 +78,10 @@ PEQ_CONFIGS = {
         'optimizer': {'min_std': 0.01},
         'filters': [{'fc': 31.25 * 2 ** i, 'q': math.sqrt(2), 'type': 'PEAKING'} for i in range(10)]
     },
+    '31_BAND_GRAPHIC_EQ': {
+        'optimizer': {'min_std': 0.01},
+        'filters': [{'fc': 20 * 2 ** (i / 3), 'q': 4.318473, 'type': 'PEAKING'} for i in range(31)]
+    },
     '10_PEAKING': {
         'filters': [{'type': 'PEAKING'}] * 10
     },
