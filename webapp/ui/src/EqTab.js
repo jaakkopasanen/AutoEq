@@ -67,7 +67,7 @@ class EqTab extends React.Component {
               parametricEq={this.props.fixedBandEq}
               fs={this.props.fs}
               onEqParamChanged={this.props.onEqParamChanged}
-              hideQ
+              fixedBands
             />
           </Grid>
         )}

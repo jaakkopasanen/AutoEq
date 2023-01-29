@@ -48,7 +48,7 @@ class EqAppParametricEq extends React.Component {
       LOW_SHELF: 'Low shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High shelf', PREAMP: 'Preamp',
     };
     const columnNames = !!this.props.uiConfig?.columnNames ? this.props.uiConfig.columnNames : {
-      fc: 'Fc (Hz)', q: useBandwidth ? 'BW (oct)' : 'Q', gain: 'Gain (dB)',
+      fc: 'Frequency (Hz)', q: useBandwidth ? 'BW (oct)' : 'Q', gain: 'Gain (dB)',
     }
     return (
       <Grid container direction='column' rowSpacing={1}>
@@ -328,9 +328,9 @@ class EqAppParametricEq extends React.Component {
           <Table size='small'>
             <TableHead>
               <TableRow>
-                <TableCell align='left'>Filter Type</TableCell>
+                {!('fixedBands' in this.props && this.props.fixedBands !== false) && (<TableCell align='left'>Filter Type</TableCell>)}
                 <TableCell align='center'>{columnNames.fc}</TableCell>
-                {!('hideQ' in this.props && this.props.hideQ !== false) && (<TableCell align='center'>{columnNames.q}</TableCell>)}
+                {!('fixedBands' in this.props && this.props.fixedBands !== false) && (<TableCell align='center'>{columnNames.q}</TableCell>)}
                 <TableCell align='center'>{columnNames.gain}</TableCell>
               </TableRow>
             </TableHead>
@@ -339,9 +339,11 @@ class EqAppParametricEq extends React.Component {
                 {this.props.parametricEq.filters.map((filt, i) => {
                   return (
                     <TableRow key={i}>
-                      <TableCell align='left'>{filterNames[filt.type]}</TableCell>
+                      {!('fixedBands' in this.props && this.props.fixedBands !== false) && (
+                        <TableCell align='left'>{filterNames[filt.type]}</TableCell>
+                      )}
                       <TableCell align='center'>{filt.fc.toFixed(0)}</TableCell>
-                      {!('hideQ' in this.props && this.props.hideQ !== false) && (
+                      {!('fixedBands' in this.props && this.props.fixedBands !== false) && (
                         <TableCell align='center'>
                           {(useBandwidth ? this.bandwidth(filt.q) : filt.q).toFixed(2)}
                         </TableCell>
