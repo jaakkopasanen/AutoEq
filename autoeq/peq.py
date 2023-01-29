@@ -507,8 +507,11 @@ class PEQ:
             peq.add_filter(filter_classes[filt['type']](
                 peq.f, peq.fs,
                 **{key: filt[key] for key in keys if key in filt and key != 'type'},
-                optimize_fc='fc' not in filt, optimize_q='q' not in filt, optimize_gain='gain' not in filt
+                optimize_fc='fc' not in filt or filt['fc'] is None,
+                optimize_q='q' not in filt or filt['q'] is None,
+                optimize_gain='gain' not in filt or filt['gain'] is None
             ))
+        print(peq.to_dict())
         return peq
 
     def add_filter(self, filt):

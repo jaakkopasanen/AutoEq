@@ -65,10 +65,13 @@ class FilterTypeEnum(str, Enum):
 
 class Filter(BaseModel):
     type: Optional[str]
+    fc: Optional[float]
     min_fc: Optional[float]
     max_fc: Optional[float]
+    q: Optional[float]
     min_q: Optional[float]
     max_q: Optional[float]
+    gain: Optional[float]
     min_gain: Optional[float]
     max_gain: Optional[float]
 

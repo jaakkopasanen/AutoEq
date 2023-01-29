@@ -91,29 +91,193 @@ PEQ_CONFIGS = {
         },
         'filters': [{
             'type': 'LOW_SHELF',
-            'fc': 105,
+            'fc': 105.0,
             'q': 0.7
         }, {
             'type': 'HIGH_SHELF',
-            'fc': 10e3,
+            'fc': 10000.0,
             'q': 0.7
         }] + [{'type': 'PEAKING'}] * 8
     },
     '4_PEAKING_WITH_LOW_SHELF': {
         'optimizer': {
-            'max_f': 10000,
+            'max_f': 10000.0,
         },
         'filters': [{
             'type': 'LOW_SHELF',
-            'fc': 105,
+            'fc': 105.0,
             'q': 0.7
         }] + [{'type': 'PEAKING'}] * 4
     },
     '4_PEAKING_WITH_HIGH_SHELF': {
         'filters': [{
             'type': 'HIGH_SHELF',
-            'fc': 10000,
+            'fc': 10000.0,
             'q': 0.7
         }] + [{'type': 'PEAKING'}] * 4
+    },
+    'AUNBANDEQ': {
+        'optimizer': {
+            'min_std': 0.008
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105.0,
+            'q': 0.7
+        }, {
+            'type': 'HIGH_SHELF',
+            'fc': 10000.0,
+            'q': 0.7
+        }] + [{
+            'type': 'PEAKING',
+            'min_fc': 20.0,  # Can go to 16 Hz
+            'max_fc': 10000.0,  # Can go to 20 kHz
+            'min_q': 0.182479,  # Max bw of 5.0
+            'max_q': 10.0  # Min bw of 0.01 = 144.27 Q
+        }] * 8
+    },
+    'MINIDSP_2X4HD': {
+        'optimizer': {
+            'min_std': 0.008
+        },
+        'filter_defaults': {
+            'min_gain': -16.0,
+            'max_gain': 16.0,
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105.0,
+            'q': 0.7
+        }, {
+            'type': 'HIGH_SHELF',
+            'fc': 10000.0,
+            'q': 0.7
+        }] + [{
+            'type': 'PEAKING',
+            'min_q': 0.5,
+            'max_q': 6.0,
+            'min_fc': 20.0,
+            'max_fc': 10000.0,
+        }] * 8
+    },
+    'MINIDSP_IL_DSP': {
+        'optimizer': {
+            'min_std': 0.008
+        },
+        'filter_defaults': {
+            'min_gain': -16.0,
+            'max_gain': 16.0,
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105.0,
+            'q': 0.7
+        }, {
+            'type': 'HIGH_SHELF',
+            'fc': 10000.0,
+            'q': 0.7
+        }] + [{
+            'type': 'PEAKING',
+            'min_q': 0.5,
+            'max_q': 6.0,
+            'min_fc': 20.0,
+            'max_fc': 10000.0,
+        }] * 8
+    },
+    'NEUTRON_MUSIC_PLAYER': {
+        'optimizer': {
+            'min_std': 0.008
+        },
+        'filter_defaults': {
+            'min_gain': -12.0,
+            'max_gain': 12.0,
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105.0,
+            'q': 0.7
+        }, {
+            'type': 'HIGH_SHELF',
+            'fc': 10000.0,
+            'q': 0.7
+        }] + [{
+            'type': 'PEAKING',
+            'min_q': 0.1,
+            'max_q': 5.0,
+            'min_fc': 20.0,
+            'max_fc': 10000.0,
+        }] * 8
+    },
+    'POWERAMP_EQUALIZER': {
+        'optimizer': {
+            'min_std': 0.008
+        },
+        'filter_defaults': {
+            'min_gain': -15.0,
+            'max_gain': 15.0,
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105.0,
+            'q': 0.7
+        }, {
+            'type': 'HIGH_SHELF',
+            'fc': 10e3,
+            'q': 0.7
+        }] + [{
+            'type': 'PEAKING',
+            'min_q': 0.1,
+            'max_q': 12.0,
+            'min_fc': 20.0,
+            'max_fc': 10000.0,
+        }] * 8
+    },
+    'QUDELIX_5K': {
+        'optimizer': {
+            'min_std': 0.008
+        },
+        'filter_defaults': {
+            'min_gain': -12.0,
+            'max_gain': 12.0,
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105.0,
+            'q': 0.7
+        }, {
+            'type': 'HIGH_SHELF',
+            'fc': 10e3,
+            'q': 0.7
+        }] + [{
+            'type': 'PEAKING',
+            'min_q': 0.1,
+            'max_q': 7.0,
+            'min_fc': 20.0,
+            'max_fc': 10000.0,
+        }] * 8
+    },
+    'USB_AUDIO_PLAYER_PRO': {
+        'optimizer': {
+            'min_std': 0.008
+        },
+        'filter_defaults': {
+            'min_gain': -20.0,
+            'max_gain': 20.0,
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105.0,
+            'q': 0.7
+        }, {
+            'type': 'HIGH_SHELF',
+            'fc': 10000.0,
+            'q': 0.7
+        }] + [{
+            'type': 'PEAKING',
+            'min_q': 0.1,
+            'max_q': 10.0,
+            'min_fc': 20.0,
+            'max_fc': 10000.0,
+        }] * 4
     },
 }

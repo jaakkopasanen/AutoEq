@@ -1,32 +1,23 @@
 import React from 'react';
 import {
-  Autocomplete, Button,
-  Grid, IconButton,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  TextField, ToggleButton, ToggleButtonGroup, Tooltip,
-  Typography
+  Autocomplete, Button, Grid, IconButton, Table, TableBody, TableCell, TableHead, TableRow, TextField, ToggleButton,
+  ToggleButtonGroup, Typography
 } from '@mui/material';
 import { Delete as DeleteIcon } from '@mui/icons-material';
-import { downloadAsFile } from "./utils";
+import { downloadAsFile } from './utils';
+import InputSlider from './InputSlider';
 
 class EqAppParametricEq extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       showBandwidth: false,
-      copyToClipboardTooltipOpen: false,
     };
     this.equalizerApoParametricEqString = this.equalizerApoParametricEqString.bind(this);
     this.onDownloadClick = this.onDownloadClick.bind(this);
-    this.onCopyToClipboardClick = this.onCopyToClipboardClick.bind(this);
   }
 
   bandwidth(q) {
-    // TODO: LowShelf and HighShelf bandwidths
     return Math.log2((2*q**2+1) / (2*q**2) + Math.sqrt((((2*q**2 + 1) / q**2)**2)/4-1));
   }
 
@@ -51,25 +42,13 @@ class EqAppParametricEq extends React.Component {
     downloadAsFile(this.equalizerApoParametricEqString(), 'text/plain', `${this.props.selectedMeasurement} ParametricEq.txt`)
   }
 
-  onCopyToClipboardClick() {
-    navigator.clipboard.writeText(this.equalizerApoParametricEqString()).then(() => {
-      this.setState({copyToClipboardTooltipOpen: true}, () => {
-        setTimeout(() => {
-          this.setState({copyToClipboardTooltipOpen: false})
-        }, 2000);
-      });
-    }, (err) => {
-      console.error('Async: Could not copy text: ', err);
-    });
-  }
-
   render() {
     const useBandwidth = this.props.uiConfig?.bw || this.state.showBandwidth;
     const filterNames = !!this.props.uiConfig?.filterNames ? this.props.uiConfig.filterNames : {
-      'LOW_SHELF': 'Low shelf', 'PEAKING': 'Peaking', 'HIGH_SHELF': 'High shelf'
+      LOW_SHELF: 'Low shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High shelf', PREAMP: 'Preamp',
     };
     const columnNames = !!this.props.uiConfig?.columnNames ? this.props.uiConfig.columnNames : {
-      fc: 'Fc (Hz)', q: useBandwidth ? 'BW (oct)' : 'Q', gain: 'Gain (dB)'
+      fc: 'Fc (Hz)', q: useBandwidth ? 'BW (oct)' : 'Q', gain: 'Gain (dB)',
     }
     return (
       <Grid container direction='column' rowSpacing={1}>
@@ -88,7 +67,7 @@ class EqAppParametricEq extends React.Component {
             disableClearable
           />
         </Grid>
-        {'showConfig' in this.props && (
+        {'showConfig' in this.props && this.props.showConfig !== false && (
           <Grid item container direction='column' rowSpacing={2}>
             <Grid item container direction='column' rowSpacing={1}>
               <Grid item><Typography variant='h6'>Optimizer</Typography></Grid>
@@ -368,13 +347,22 @@ class EqAppParametricEq extends React.Component {
             </Grid>
           </Grid>
         )}
+        {!!this.props.uiConfig?.showPreampControl && (
+          <Grid item>
+            <InputSlider
+              label='Preamp' value={this.props.preamp}
+              min={-20} max={20} step={0.5}
+              onChange={(v) => { this.props.onEqParamChanged({ preamp: v }) }}
+            />
+          </Grid>
+        )}
         <Grid item>
           <Table size='small'>
             <TableHead>
               <TableRow>
                 <TableCell align='left'>Filter Type</TableCell>
                 <TableCell align='center'>{columnNames.fc}</TableCell>
-                {!('hideQ' in this.props) && (<TableCell align='center'>{columnNames.q}</TableCell>)}
+                {!('hideQ' in this.props && this.props.hideQ !== false) && (<TableCell align='center'>{columnNames.q}</TableCell>)}
                 <TableCell align='center'>{columnNames.gain}</TableCell>
               </TableRow>
             </TableHead>
@@ -385,7 +373,7 @@ class EqAppParametricEq extends React.Component {
                     <TableRow key={i}>
                       <TableCell align='left'>{filterNames[filt.type]}</TableCell>
                       <TableCell align='center'>{filt.fc.toFixed(0)}</TableCell>
-                      {!('hideQ' in this.props) && (
+                      {!('hideQ' in this.props && this.props.hideQ !== false) && (
                         <TableCell align='center'>
                           {(useBandwidth ? this.bandwidth(filt.q) : filt.q).toFixed(2)}
                         </TableCell>
@@ -399,31 +387,16 @@ class EqAppParametricEq extends React.Component {
           </Table>
         </Grid>
         <Grid item>
-          <Typography><b>Preamp:</b> {this.props.parametricEq?.preamp?.toFixed(1)} dB</Typography>
+          <Typography><b>{filterNames.PREAMP}:</b> {this.props.parametricEq?.preamp?.toFixed(1)} dB</Typography>
         </Grid>
-        <Grid item container direction='row' columnSpacing={1} justifyContent='center'>
-          <Grid item>
-            <Button variant='outlined' onClick={this.onDownloadClick}>Download</Button>
+        {!!this.props.uiConfig?.showDownload && (
+          <Grid item container direction='row' columnSpacing={1} justifyContent='center'>
+            <Grid item>
+              <Button variant='outlined' onClick={this.onDownloadClick}>Download</Button>
+            </Grid>
           </Grid>
-          <Grid item>
-            <Tooltip
-              PopperProps={{disablePortal: true}}
-              open={this.state.copyToClipboardTooltipOpen}
-              leaveDelay={500}
-              disableFocusListener
-              disableHoverListener
-              disableTouchListener
-              title='Coped to clipboard!'
-              componentsProps={{
-                tooltip: {
-                  sx: {p: [1, 1.5]}
-                }
-              }}
-            >
-              <Button variant='outlined' onClick={this.onCopyToClipboardClick}>Copy to Clipboard</Button>
-            </Tooltip>
-          </Grid>
-        </Grid>
+        )}
+
       </Grid>
     );
   }

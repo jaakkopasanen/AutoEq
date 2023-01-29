@@ -40,6 +40,7 @@ class EqTab extends React.Component {
               fs={this.props.fs}
               onEqParamChanged={this.props.onEqParamChanged}
               uiConfig={selectedEqualizer?.uiConfig}
+              preamp={this.props.preamp}
             />
           </Grid>
         )}

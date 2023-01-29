@@ -37,27 +37,100 @@ class App extends React.Component {
       graphData: null, // Data for the frequency response graph
 
       equalizers: [
-        { label: 'Wavelet', type: 'graphic' },
-        { label: 'EqualizerAPO GraphicEq', type: 'graphic' },
+        { label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ' },
+        { label: '31-band Graphic Eq', type: 'fixedBand', config: '31_BAND_GRAPHIC_EQ' },
         {
-          label: 'EqualizerAPO ParametricEq', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
+          label: 'AUNBandEq', type: 'parametric', config: 'AUNBANDEQ',
           uiConfig: {
-            bw: false,
-            filterNames: { LOW_SHELF: 'Low-shelf filter', PEAKING: 'Peaking filter', HIGH_SHELF: 'High-shelf filter' },
-            columnNames: { fc: 'Center frequency (Hz)', gain: 'Gain (dB)', q: 'Q factor' }
+            bw: true, showDownload: false,
+            filterNames: { LOW_SHELF: 'Low Shelf', PEAKING: 'Parametric', HIGH_SHELF: 'High Shelf', PREAMP: 'Global Gain' },
+            columnNames: { fc: 'Freq', gain: 'Gain (dB)', q: 'Width' }
           }
         },
+        { label: 'Convolution Eq', type: 'convolution' },
         {
           label: 'Custom Parametric Eq', type: 'parametric',
+          uiConfig: { showDownload: true },
           config: {
             optimizer: { minF: null, maxF: null, maxTime: 0.5, minChangeRate: null, minStd: null },
             filterDefaults: { type: 'PEAKING', minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null },
             filters: []
           },
         },
-        { label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ' },
-        { label: '31-band Graphic Eq', type: 'fixedBand', config: '31_BAND_GRAPHIC_EQ' },
-        { label: 'Convolution Eq', type: 'convolution' }
+        { label: 'EasyEffects / PulseEffects', type: 'convolution' },
+        { label: 'eqMac (Advanced Equalizer)', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ' },
+        { label: 'eqMac (Expert Equalizer)', type: 'parametric', config: '8_PEAKING_WITH_SHELVES' },
+        { label: 'EqualizerAPO GraphicEq', type: 'graphic' },
+        {
+          label: 'EqualizerAPO ParametricEq / Peace', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
+          uiConfig: {
+            bw: false, showDownload: true,
+            filterNames: { LOW_SHELF: 'Low-shelf filter', PEAKING: 'Peaking filter', HIGH_SHELF: 'High-shelf filter', PREAMP: 'Preamplification' },
+            columnNames: { fc: 'Center frequency (Hz)', gain: 'Gain (dB)', q: 'Q factor' }
+          }
+        },
+        // TODO: iTunes equalizer
+        { label: 'JamesDSP', type: 'convolution' },
+        { label: 'RootlessJamesDSP', type: 'convolution' },
+        {
+          label: 'MiniDSP 2x4HD', type: 'parametric', config: 'MINIDSP_2X4HD',
+          uiConfig: {
+            bw: false, showDownload: false,
+            filterNames: { LOW_SHELF: 'LOW_SHELF', PEAKING: 'PEAK', HIGH_SHELF: 'HIGH_SHELF', PREAMP: 'Preamp' },
+            columnNames: { fc: 'Frequency', gain: 'Gain', q: 'Q' }
+          },
+        },
+        {
+          label: 'MiniDSP IL-DSP', type: 'parametric', config: 'MINIDSP_IL_DSP',
+          uiConfig: {
+            bw: false, showDownload: false, showPreampControl: true,
+            filterNames: { LOW_SHELF: 'LOW_SHELF', PEAKING: 'PEAK', HIGH_SHELF: 'HIGH_SHELF', PREAMP: 'Preamp' },
+            columnNames: { fc: 'Frequency', gain: 'Gain', q: 'Q' },
+          },
+        },
+        {
+          label: 'Neutron Music Player', type: 'parametric', config: 'NEUTRON_MUSIC_PLAYER',
+          uiConfig: {
+            bw: false, showDownload: false,
+            filterNames: { LOW_SHELF: 'Low-shelf', PEAKING: 'Peak EQ', HIGH_SHELF: 'High-shelf', PREAMP: 'Preamp' },
+            columnNames: { fc: 'Center frequency (Hz)', gain: 'Gain (dB)', q: 'Q' }
+          },
+        },
+        {
+          label: 'Poweramp Equalizer', type: 'parametric', config: 'POWERAMP_EQUALIZER',
+          uiConfig: {
+            bw: false, showDownload: false,
+            filterNames: { LOW_SHELF: 'Low Shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High Shelf', PREAMP: 'Preamp' },
+            columnNames: { fc: 'Freq', gain: 'Gain', q: 'Q' }
+          }
+        },
+        {
+          label: 'Qudelix-5K', type: 'parametric', config: 'QUDELIX_5K',
+          uiConfig: {
+            bw: false, showDownload: false,
+            filterNames: { LOW_SHELF: 'LSHELF', PEAKING: 'PEAK', HIGH_SHELF: 'HSHELF', PREAMP: 'PRE GAIN(dB)' },
+            columnNames: { fc: 'FREQ(Hz)', gain: 'GAIN(db)', q: 'Q' }
+          }
+        },
+        {
+          label: 'SoundSource', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
+          uiConfig: {
+            bw: false, showDownload: true,
+            filterNames: { LOW_SHELF: 'Low Shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High Shelf', PREAMP: 'Preamp' },
+            columnNames: { fc: 'Frequency (Hz)', gain: 'Gain (dB)', q: 'Q' }
+          }
+        },
+        // TODO: Spotify equalizer
+        {
+          label: 'USB Audio Player PRO', type: 'parametric', config: 'USB_AUDIO_PLAYER_PRO',
+          uiConfig: {
+            bw: false, showDownload: false,
+            filterNames: { LOW_SHELF: 'Low shelf', PEAKING: 'Analog bell', HIGH_SHELF: 'High shelf', PREAMP: 'Preamp' },
+            columnNames: { fc: 'Frequency (Hz)', gain: 'Gain (dB)', q: 'Q factor' }
+          }
+        },
+        { label: 'Viper4Android', type: 'convolution' },
+        { label: 'Wavelet', type: 'graphic' },
       ],
       selectedEqualizer: null, // Name (label) of the currently selected equalizer app
 
@@ -238,9 +311,9 @@ class App extends React.Component {
           },
           filters: selectedEqualizer.config.filters.map(filter => ({
             type: filter.type,
-            min_fc: filter.minFc, max_fc: filter.maxFc,
-            min_q: filter.minQ, max_q: filter.maxQ,
-            min_gain: filter.minGain, max_gain: filter.maxGain
+            fc: filter.fc, min_fc: filter.minFc, max_fc: filter.maxFc,
+            q: filter.q, min_q: filter.minQ, max_q: filter.maxQ,
+            gain: filter.gain, min_gain: filter.minGain, max_gain: filter.maxGain
           }))
         };
       }
