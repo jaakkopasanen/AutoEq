@@ -670,7 +670,6 @@ class FrequencyResponse:
                 # Interpolate sound signature to match self on the frequency axis
                 sound_signature.interpolate(self.frequency)
             if sound_signature_smoothing_window_size:
-                print('SMOOTHING SOUND SIGNATURE')
                 sound_signature.smoothen_fractional_octave(
                     window_size=sound_signature_smoothing_window_size,
                     treble_window_size=sound_signature_smoothing_window_size)

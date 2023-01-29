@@ -511,7 +511,6 @@ class PEQ:
                 optimize_q='q' not in filt or filt['q'] is None,
                 optimize_gain='gain' not in filt or filt['gain'] is None
             ))
-        print(peq.to_dict())
         return peq
 
     def add_filter(self, filt):
