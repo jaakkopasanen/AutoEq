@@ -69,7 +69,7 @@ class App extends React.Component {
             columnNames: { fc: 'Center frequency (Hz)', gain: 'Gain (dB)', q: 'Q factor' }
           }
         },
-        // TODO: iTunes equalizer
+        { label: 'iTunes built-in equalizer', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ' },
         { label: 'JamesDSP', type: 'convolution' },
         { label: 'RootlessJamesDSP', type: 'convolution' },
         {
@@ -120,7 +120,9 @@ class App extends React.Component {
             columnNames: { fc: 'Frequency (Hz)', gain: 'Gain (dB)', q: 'Q' }
           }
         },
-        // TODO: Spotify equalizer
+        {
+          label: 'Spotify built-in equalizer', type: 'fixedBand', config: 'SPOTIFY',
+        },
         {
           label: 'USB Audio Player PRO', type: 'parametric', config: 'USB_AUDIO_PLAYER_PRO',
           uiConfig: {

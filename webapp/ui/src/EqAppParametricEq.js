@@ -243,38 +243,6 @@ class EqAppParametricEq extends React.Component {
                   <Grid item container direction='row' columnSpacing={1}>
                     <Grid item xs={4}>
                       <TextField
-                        value={this.parseTextFieldInput(filter.fc)}
-                        onChange={(e) => {
-                          this.props.onConfigFilterChanged({ fc: this.parseTextFieldOutput(e.target.value) }, i);
-                        }}
-                        label='Fc' size='small' sx={{width: '100%'}} type='number'
-                        inputProps={{step: 1.0}}
-                      />
-                    </Grid>
-                    <Grid item xs={4}>
-                      <TextField
-                        value={this.parseTextFieldInput(filter.q)}
-                        onChange={(e) => {
-                          this.props.onConfigFilterChanged({ q: this.parseTextFieldOutput(e.target.value) }, i);
-                        }}
-                        label='Q' size='small' sx={{width: '100%'}} type='number'
-                        inputProps={{step: 0.01}}
-                      />
-                    </Grid>
-                    <Grid item xs={4}>
-                      <TextField
-                        value={this.parseTextFieldInput(filter.gain)}
-                        onChange={(e) => {
-                          this.props.onConfigFilterChanged({ gain: this.parseTextFieldOutput(e.target.value) }, i);
-                        }}
-                        label='Gain' size='small' sx={{width: '100%'}} type='number'
-                        inputProps={{step: 0.01}}
-                      />
-                    </Grid>
-                  </Grid>
-                  <Grid item container direction='row' columnSpacing={1}>
-                    <Grid item xs={4}>
-                      <TextField
                         value={this.parseTextFieldInput(filter.minFc)}
                         onChange={(e) => {
                           this.props.onConfigFilterChanged({ minFc: this.parseTextFieldOutput(e.target.value) }, i);

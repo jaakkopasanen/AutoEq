@@ -76,11 +76,13 @@ PREAMP_HEADROOM = 0.2
 PEQ_CONFIGS = {
     '10_BAND_GRAPHIC_EQ': {
         'optimizer': {'min_std': 0.01},
-        'filters': [{'fc': 31.25 * 2 ** i, 'q': math.sqrt(2), 'type': 'PEAKING'} for i in range(10)]
+        'filter_defaults': {'q': math.sqrt(2), 'min_gain': -12.0, 'max_gain': 12.0, 'type': 'PEAKING'},
+        'filters': [{'fc': 31.25 * 2 ** i} for i in range(10)]
     },
     '31_BAND_GRAPHIC_EQ': {
         'optimizer': {'min_std': 0.01},
-        'filters': [{'fc': 20 * 2 ** (i / 3), 'q': 4.318473, 'type': 'PEAKING'} for i in range(31)]
+        'filter_defaults': {'q': 4.318473, 'min_gain': -12.0, 'max_gain': 12.0, 'type': 'PEAKING'},
+        'filters': [{'fc': 20 * 2 ** (i / 3), 'type': 'PEAKING'} for i in range(31)]
     },
     '10_PEAKING': {
         'filters': [{'type': 'PEAKING'}] * 10
@@ -255,6 +257,16 @@ PEQ_CONFIGS = {
             'min_fc': 20.0,
             'max_fc': 10000.0,
         }] * 8
+    },
+    'SPOTIFY': {
+        'optimizer': {'min_std': 0.01},
+        'filters': [
+            {'fc': 60.0, 'q': 1.0, 'type': 'PEAKING'},
+            {'fc': 150.0, 'q': 1.0, 'type': 'PEAKING'},
+            {'fc': 400.0, 'q': 1.0, 'type': 'PEAKING'},
+            {'fc': 2400.0, 'q': 1.0, 'type': 'PEAKING'},
+            {'fc': 15000.0, 'q': 1.0, 'type': 'PEAKING'},
+        ]
     },
     'USB_AUDIO_PLAYER_PRO': {
         'optimizer': {
