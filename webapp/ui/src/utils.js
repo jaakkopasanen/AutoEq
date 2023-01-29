@@ -1,4 +1,4 @@
-function decodeFloat16 (binary) {
+function decodeFloat16(binary) {
   'use strict';
   const exponent = (binary & 0x7C00) >> 10;
   const fraction = binary & 0x03FF;
@@ -13,4 +13,14 @@ function decodeFloat16 (binary) {
   );
 }
 
-export { decodeFloat16 };
+function downloadAsFile(data, fileType, fileName) {
+  const anchor = document.createElement('a');
+  const file = new Blob([data], {type: fileType});
+  anchor.href = URL.createObjectURL(file);
+  anchor.download = fileName;
+  document.body.appendChild(anchor); // Required for this to work in FireFox
+  anchor.click();
+  anchor.remove();
+}
+
+export { decodeFloat16, downloadAsFile };

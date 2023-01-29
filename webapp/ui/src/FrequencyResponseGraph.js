@@ -18,8 +18,6 @@ class FrequencyResponseGraph extends React.Component {
     this.onLegendShowChanged = this.onLegendShowChanged.bind(this);
   }
 
-
-
   onLegendShowChanged(name, value) {
     const newShow = {...this.state.show};
     newShow[name] = value;

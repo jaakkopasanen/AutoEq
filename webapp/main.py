@@ -260,6 +260,7 @@ def equalize(req: EqualizeRequest):
         peq = parametric_peqs[0]
         peq.sort_filters()
         res['parametric_eq'] = peq.to_dict()
+        res['parametric_eq']['preamp'] = peq.max_gain * -1 - 0.1
         peq_fr = FrequencyResponse(name='PEQ', frequency=peq.f, raw=peq.fr)
         peq_fr.interpolate(f_step=f_step)
         res['fr']['parametric_eq'] = peq_fr.raw.tolist()
@@ -280,14 +281,15 @@ def equalize(req: EqualizeRequest):
         fixed_band_peqs = fr.optimize_fixed_band_eq(fixed_band_eq_config, req.fs, preamp=req.preamp)
         fixed_band_peq = fixed_band_peqs[0]
         fixed_band_peq.sort_filters()
-        res.update({'fixed_band_eq': fixed_band_peq.to_dict()})
+        res['fixed_band_eq'] = fixed_band_peq.to_dict()
+        res['fixed_band_eq']['preamp'] = fixed_band_peq.max_gain * -1 - 0.1
         fbpeq_fr = FrequencyResponse('FBPEQ', frequency=fixed_band_peq.f, raw=fixed_band_peq.fr)
         fbpeq_fr.interpolate(f_step=f_step)
         res['fr']['fixed_band_eq'] = fbpeq_fr.raw.tolist()
 
     if req.graphic_eq:
         graphic_eq = fr.eqapo_graphic_eq(normalize=True, preamp=req.preamp)
-        res.update({'graphic_eq': graphic_eq})
+        res['graphic_eq'] = graphic_eq
 
     if req.convolution_eq:
         bit_depth = req.bit_depth if req.bit_depth is not None else DEFAULT_BIT_DEPTH

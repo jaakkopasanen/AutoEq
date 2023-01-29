@@ -7,17 +7,22 @@ import {
   TableCell,
   TableHead,
   TableRow,
-  TextField, ToggleButton, ToggleButtonGroup,
+  TextField, ToggleButton, ToggleButtonGroup, Tooltip,
   Typography
 } from '@mui/material';
 import { Delete as DeleteIcon } from '@mui/icons-material';
+import { downloadAsFile } from "./utils";
 
 class EqAppParametricEq extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showBandwidth: false
+      showBandwidth: false,
+      copyToClipboardTooltipOpen: false,
     };
+    this.equalizerApoParametricEqString = this.equalizerApoParametricEqString.bind(this);
+    this.onDownloadClick = this.onDownloadClick.bind(this);
+    this.onCopyToClipboardClick = this.onCopyToClipboardClick.bind(this);
   }
 
   bandwidth(q) {
@@ -33,7 +38,39 @@ class EqAppParametricEq extends React.Component {
     return value !== null && typeof value !== 'undefined' && value !== '' ? parseFloat(value) : null;
   }
 
+  equalizerApoParametricEqString() {
+    const typeMap = { LOW_SHELF: 'LS', PEAKING: 'PK', HIGH_SHELF: 'HS' };
+    let s = `Preamp: ${this.props.parametricEq?.preamp?.toFixed(2)} dB\n`
+    for (const [i, filt] of this.props.parametricEq?.filters?.entries()) {
+      s += `Filter ${i + 1}: ON ${typeMap[filt.type]} Fc ${filt.fc.toFixed(1)} Hz Gain ${filt.gain.toFixed(1)} dB Q ${filt.q.toFixed(2)}\n`
+    }
+    return s;
+  }
+
+  onDownloadClick() {
+    downloadAsFile(this.equalizerApoParametricEqString(), 'text/plain', `${this.props.selectedMeasurement} ParametricEq.txt`)
+  }
+
+  onCopyToClipboardClick() {
+    navigator.clipboard.writeText(this.equalizerApoParametricEqString()).then(() => {
+      this.setState({copyToClipboardTooltipOpen: true}, () => {
+        setTimeout(() => {
+          this.setState({copyToClipboardTooltipOpen: false})
+        }, 2000);
+      });
+    }, (err) => {
+      console.error('Async: Could not copy text: ', err);
+    });
+  }
+
   render() {
+    const useBandwidth = this.props.uiConfig?.bw || this.state.showBandwidth;
+    const filterNames = !!this.props.uiConfig?.filterNames ? this.props.uiConfig.filterNames : {
+      'LOW_SHELF': 'Low shelf', 'PEAKING': 'Peaking', 'HIGH_SHELF': 'High shelf'
+    };
+    const columnNames = !!this.props.uiConfig?.columnNames ? this.props.uiConfig.columnNames : {
+      fc: 'Fc (Hz)', q: useBandwidth ? 'BW (oct)' : 'Q', gain: 'Gain (dB)'
+    }
     return (
       <Grid container direction='column' rowSpacing={1}>
         <Grid item>
@@ -335,22 +372,24 @@ class EqAppParametricEq extends React.Component {
           <Table size='small'>
             <TableHead>
               <TableRow>
-                <TableCell align='center'>Type</TableCell>
-                <TableCell align='center'>Fc (Hz)</TableCell>
-                <TableCell align='center'>{this.state.showBandwidth ? 'BW (oct)' : 'Q'}</TableCell>
-                <TableCell align='center'>Gain (dB)</TableCell>
+                <TableCell align='left'>Filter Type</TableCell>
+                <TableCell align='center'>{columnNames.fc}</TableCell>
+                {!('hideQ' in this.props) && (<TableCell align='center'>{columnNames.q}</TableCell>)}
+                <TableCell align='center'>{columnNames.gain}</TableCell>
               </TableRow>
             </TableHead>
-            {!!this.props.filters && (
+            {!!this.props.parametricEq?.filters && (
               <TableBody>
-                {this.props.filters.map((filt, i) => {
+                {this.props.parametricEq.filters.map((filt, i) => {
                   return (
                     <TableRow key={i}>
-                      <TableCell align='center'>{filt.type}</TableCell>
+                      <TableCell align='left'>{filterNames[filt.type]}</TableCell>
                       <TableCell align='center'>{filt.fc.toFixed(0)}</TableCell>
-                      <TableCell align='center'>
-                        {(this.state.showBandwidth ? this.bandwidth(filt.q) : filt.q).toFixed(2)}
-                      </TableCell>
+                      {!('hideQ' in this.props) && (
+                        <TableCell align='center'>
+                          {(useBandwidth ? this.bandwidth(filt.q) : filt.q).toFixed(2)}
+                        </TableCell>
+                      )}
                       <TableCell align='center'>{filt.gain.toFixed(1)}</TableCell>
                     </TableRow>
                   );
@@ -358,6 +397,32 @@ class EqAppParametricEq extends React.Component {
               </TableBody>
             )}
           </Table>
+        </Grid>
+        <Grid item>
+          <Typography><b>Preamp:</b> {this.props.parametricEq?.preamp?.toFixed(1)} dB</Typography>
+        </Grid>
+        <Grid item container direction='row' columnSpacing={1} justifyContent='center'>
+          <Grid item>
+            <Button variant='outlined' onClick={this.onDownloadClick}>Download</Button>
+          </Grid>
+          <Grid item>
+            <Tooltip
+              PopperProps={{disablePortal: true}}
+              open={this.state.copyToClipboardTooltipOpen}
+              leaveDelay={500}
+              disableFocusListener
+              disableHoverListener
+              disableTouchListener
+              title='Coped to clipboard!'
+              componentsProps={{
+                tooltip: {
+                  sx: {p: [1, 1.5]}
+                }
+              }}
+            >
+              <Button variant='outlined' onClick={this.onCopyToClipboardClick}>Copy to Clipboard</Button>
+            </Tooltip>
+          </Grid>
         </Grid>
       </Grid>
     );

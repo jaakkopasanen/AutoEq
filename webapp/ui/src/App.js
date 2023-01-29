@@ -37,19 +37,27 @@ class App extends React.Component {
       graphData: null, // Data for the frequency response graph
 
       equalizers: [
-        {label: 'Wavelet', type: 'graphic'},
-        {label: 'EqualizerAPO GraphicEq', type: 'graphic'},
-        {label: 'EqualizerAPO ParametricEq', type: 'parametric', config: '8_PEAKING_WITH_SHELVES'},
+        { label: 'Wavelet', type: 'graphic' },
+        { label: 'EqualizerAPO GraphicEq', type: 'graphic' },
         {
-          label: 'Custom Parametric Eq', type: 'parametric', config: {
-            optimizer: {minF: null, maxF: null, maxTime: 0.5, minChangeRate: null, minStd: null},
-            filterDefaults: {type: 'PEAKING', minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null},
-            filters: []
+          label: 'EqualizerAPO ParametricEq', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
+          uiConfig: {
+            bw: false,
+            filterNames: { LOW_SHELF: 'Low-shelf filter', PEAKING: 'Peaking filter', HIGH_SHELF: 'High-shelf filter' },
+            columnNames: { fc: 'Center frequency (Hz)', gain: 'Gain (dB)', q: 'Q factor' }
           }
         },
-        {label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ'},
-        {label: '31-band Graphic Eq', type: 'fixedBand', config: '31_BAND_GRAPHIC_EQ'},
-        {label: 'Convolution Eq', type: 'convolution'}
+        {
+          label: 'Custom Parametric Eq', type: 'parametric',
+          config: {
+            optimizer: { minF: null, maxF: null, maxTime: 0.5, minChangeRate: null, minStd: null },
+            filterDefaults: { type: 'PEAKING', minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null },
+            filters: []
+          },
+        },
+        { label: '10-band Graphic Eq', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ' },
+        { label: '31-band Graphic Eq', type: 'fixedBand', config: '31_BAND_GRAPHIC_EQ' },
+        { label: 'Convolution Eq', type: 'convolution' }
       ],
       selectedEqualizer: null, // Name (label) of the currently selected equalizer app
 
@@ -76,8 +84,8 @@ class App extends React.Component {
       preamp: 0.0,
 
       graphicEq: null,
-      parametricFilters: null,
-      fixedBandFilters: null,
+      parametricEq: null,
+      fixedBandEq: null,
       firAudioBuffer: null
     };
     this.equalizeTimer = null;
@@ -313,9 +321,9 @@ class App extends React.Component {
     if (!!data.graphic_eq) {
       newState.graphicEq = data.graphic_eq;
     } else if (!!data.parametric_eq) {
-      newState.parametricFilters = data.parametric_eq.filters.map(filt => { return { ...filt }; });
+      newState.parametricEq = cloneDeep(data.parametric_eq);
     } else if (!!data.fixed_band_eq) {
-      newState.fixedBandFilters = data.fixed_band_eq.filters.map(filt => { return { ...filt }; });
+      newState.fixedBandEq = cloneDeep(data.fixed_band_eq);
     } else if (!!data.fir) {
       await this.audioContext.decodeAudioData(decode(data.fir), (audioBuffer) => {
         newState.firAudioBuffer = audioBuffer;
@@ -580,8 +588,8 @@ class App extends React.Component {
                         selectedEqualizer={this.state.selectedEqualizer}
                         onEqualizerSelected={this.onEqualizerSelected}
                         graphicEq={this.state.graphicEq}
-                        parametricFilters={this.state.parametricFilters}
-                        fixedBandFilters={this.state.fixedBandFilters}
+                        parametricEq={this.state.parametricEq}
+                        fixedBandEq={this.state.fixedBandEq}
                         firAudioBuffer={this.state.firAudioBuffer}
                         fs={this.state.fs}
                         bitDepth={this.state.bitDepth}

@@ -1,5 +1,6 @@
 import React from 'react';
-import {Button, Grid, Tooltip} from '@mui/material';
+import { Button, Grid, Tooltip } from '@mui/material';
+import { downloadAsFile } from "./utils";
 
 class EqAppEqualizerApoGraphicEq extends React.Component {
   constructor(props) {
@@ -12,13 +13,7 @@ class EqAppEqualizerApoGraphicEq extends React.Component {
   }
 
   onDownloadClick() {
-    const anchor = document.createElement('a');
-    const file = new Blob([this.props.graphicEq], {type: 'text/plain'});
-    anchor.href = URL.createObjectURL(file);
-    anchor.download = `${this.props.selectedMeasurement} GraphicEq.txt`;
-    document.body.appendChild(anchor); // Required for this to work in FireFox
-    anchor.click();
-    anchor.remove();
+    downloadAsFile(this.props.graphicEq, 'text/plain', `${this.props.selectedMeasurement} GraphicEq.txt`)
   }
 
   onCopyToClipboardClick() {

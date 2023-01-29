@@ -35,18 +35,22 @@ class EqTab extends React.Component {
         {selectedEqualizer?.type === 'parametric' && selectedEqualizer?.label !== 'Custom Parametric Eq' && (
           <Grid item>
             <EqAppParametricEq
-              filters={this.props.parametricFilters}
+              selectedMeasurement={this.props.selectedMeasurement}
+              parametricEq={this.props.parametricEq}
               fs={this.props.fs}
               onEqParamChanged={this.props.onEqParamChanged}
+              uiConfig={selectedEqualizer?.uiConfig}
             />
           </Grid>
         )}
         {selectedEqualizer?.type === 'parametric' && selectedEqualizer?.label === 'Custom Parametric Eq' && (
           <Grid item>
             <EqAppParametricEq
-              filters={this.props.parametricFilters}
+              selectedMeasurement={this.props.selectedMeasurement}
+              parametricEq={this.props.parametricEq}
               fs={this.props.fs}
               onEqParamChanged={this.props.onEqParamChanged}
+              uiConfig={selectedEqualizer?.uiConfig}
               showConfig
               config={this.props.customPeqConfig}
               onConfigChanged={this.props.onCustomPeqConfigChanged}
@@ -59,9 +63,10 @@ class EqTab extends React.Component {
         {selectedEqualizer?.type === 'fixedBand' && (
           <Grid item>
             <EqAppParametricEq
-              filters={this.props.fixedBandFilters}
+              parametricEq={this.props.fixedBandEq}
               fs={this.props.fs}
               onEqParamChanged={this.props.onEqParamChanged}
+              hideQ
             />
           </Grid>
         )}

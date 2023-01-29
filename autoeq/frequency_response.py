@@ -27,7 +27,7 @@ from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT
     HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, \
     DEFAULT_BIQUAD_OPTIMIZATION_F_STEP, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, \
     DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
-from autoeq.peq import PEQ, LowShelf, HighShelf
+from autoeq.peq import PEQ, LowShelf, HighShelf, Peaking
 
 warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
 
@@ -320,7 +320,7 @@ class FrequencyResponse:
             for filt in peq.filters:
                 compound.add_filter(filt)
 
-        types = {'Peaking': 'PK', 'LowShelf': 'LS', 'HighShelf': 'HS'}
+        types = {Peaking.__name__: 'PK', LowShelf.__name__: 'LS', HighShelf.__name__: 'HS'}
 
         with open(file_path, 'w', encoding='utf-8') as f:
             s = f'Preamp: {-compound.max_gain:.1f} dB\n'
