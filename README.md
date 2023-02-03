@@ -262,7 +262,7 @@ Tutorials:
 [eqMac](https://eqmac.app) is a Free & [Open Source](https://github.com/bitgapp/eqmac) System Wide equalizer for macOS.
 eqMac has a Free 10 Band EQ and an Unlimited Band EQ (paid) with built-in AutoEq Integration! (Expert EQ)
 <p align="center">
-  <img width="512" src="https://raw.githubusercontent.com/bitgapp/eqMac/master/assets/screenshots/autoeq-promo.png"/>
+  <img width="1024" src="https://raw.githubusercontent.com/bitgapp/eqMac/master/assets/screenshots/autoeq-promo.png"/>
 </p>
 
 ### iOS
