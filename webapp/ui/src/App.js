@@ -23,7 +23,9 @@ class App extends React.Component {
     this.audioContext = new AudioContext();
     this.gainNode = this.audioContext.createGain();
     this.gainNode.gain.value = 0.5;
-    this.gainNode.connect(this.audioContext.destination);
+    this.preampNode = this.audioContext.createGain();
+    this.preampNode.gain.value = 1.0;
+    this.gainNode.connect(this.preampNode);
     this.eqNodes = [];
 
     this.state = {
@@ -422,26 +424,28 @@ class App extends React.Component {
     if (!!data.parametric_eq) {
       newState.parametricEq = cloneDeep(data.parametric_eq);
       this.eqNodes = this.initParametricEqNodes(data.parametric_eq);
+      this.preampNode.gain.value = 10 ** (data.parametric_eq.preamp / 20);
     } else if (!!data.fixed_band_eq) {
       newState.fixedBandEq = cloneDeep(data.fixed_band_eq);
       this.eqNodes = this.initParametricEqNodes(data.fixed_band_eq);
+      this.preampNode.gain.value = 10 ** (data.fixed_band_eq.preamp / 20);
     } else if (!!data.fir) {
       await this.audioContext.decodeAudioData(decode(data.fir), (audioBuffer) => {
         newState.firAudioBuffer = audioBuffer;
         this.eqNodes = [this.initConvolutionNode(audioBuffer)];
+        this.preampNode.gain.value = 10 ** (Math.max(...data.fr.convolution_eq) / 20);
       });
     }
-    // TODO: Preamp for no eq
     if (this.state.isEqOn) {
       this.connectEqNodes();
+    } else {
+      this.disconnectEqNodes();
     }
     this.setState(newState);
   }
 
   initParametricEqNodes(parametricEq) {
-    const preampNode = this.audioContext.createGain();
-    preampNode.gain.value = 10 ** (parametricEq.preamp / 20);  // dB to linear
-    const biquadNodes = [preampNode];
+    const biquadNodes = [];
     const typeMap = { 'LOW_SHELF': 'lowshelf', 'HIGH_SHELF': 'highshelf', 'PEAKING': 'peaking' }
     for (const filter of parametricEq.filters) {
       const node = this.audioContext.createBiquadFilter();
@@ -466,7 +470,7 @@ class App extends React.Component {
   }
 
   connectEqNodes() {
-    const nodes = [this.gainNode, ...this.eqNodes, this.audioContext.destination];
+    const nodes = [this.preampNode, ...this.eqNodes, this.audioContext.destination];
     for (let i = 0; i < nodes.length - 1; ++i) {
       nodes[i].disconnect();
       nodes[i].connect(nodes[i + 1]);
@@ -474,10 +478,10 @@ class App extends React.Component {
   }
 
   disconnectEqNodes() {
-    for (const node of [this.gainNode, ...this.eqNodes]) {
+    for (const node of [this.preampNode, ...this.eqNodes]) {
       node.disconnect();
     }
-    this.gainNode.connect(this.audioContext.destination);
+    this.preampNode.connect(this.audioContext.destination);
   }
 
   async onMeasurementSelected(measurement) {
@@ -769,7 +773,7 @@ class App extends React.Component {
           </Grid>
         )}
         <Grid
-          item sx={{position: 'fixed', bottom: 0, width: '100%'}}
+          item sx={{position: 'fixed', bottom: theme => theme.spacing(1), width: '100%'}}
           container direction='column' justifyContent='center' alignItems='center'
         >
           <Player

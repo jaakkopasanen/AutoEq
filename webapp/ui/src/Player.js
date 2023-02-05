@@ -43,7 +43,7 @@ const Player = (props) => {
 
   const onSkipPreviousClick = () => {
     playlist[trackIx].audio.pause();
-    const newTrackIx = trackIx > 0 ? trackIx - 1 : 0;
+    const newTrackIx = trackIx > 0 ? trackIx - 1 : playlist.length - 1;
     initSourceNode(newTrackIx);
     playlist[newTrackIx].audio.fastSeek(0);
     playlist[newTrackIx].audio.play();
@@ -53,7 +53,7 @@ const Player = (props) => {
 
   const onSkipNextClick = () => {
     playlist[trackIx].audio.pause();
-    const newTrackIx = trackIx < playlist.length - 1 ? trackIx + 1 : playlist.length - 1;
+    const newTrackIx = trackIx < playlist.length - 1 ? trackIx + 1 : 0;
     initSourceNode(newTrackIx);
     playlist[newTrackIx].audio.fastSeek(0);
     playlist[newTrackIx].audio.play();
@@ -87,13 +87,15 @@ const Player = (props) => {
           <Grid
             container direction='row' justifyContent='center' alignItems='center' columnSpacing={1}
             sx={{
-              background: theme => theme.palette.grey["800"],
-              borderTopLeftRadius: 4, borderTopRightRadius: 4,
-              padding: '12px 18px'
+              background: 'rgba(255, 255, 255, 0.8)',
+              borderRadius: 2,
+              padding: '12px 18px',
+              borderStyle: 'solid', borderWidth: 1, borderColor: theme => theme.palette.grey.A400,
+              backdropFilter: 'blur(2px)'
             }}
           >
             <Grid item>
-              <IconButton onClick={onSkipPreviousClick} disabled={trackIx === 0} color='secondary'>
+              <IconButton onClick={onSkipPreviousClick} color='secondary'>
                 <SkipPreviousIcon />
               </IconButton>
             </Grid>
@@ -103,7 +105,7 @@ const Player = (props) => {
               </IconButton>
             </Grid>
             <Grid item>
-              <IconButton onClick={onSkipNextClick} disabled={trackIx === playlist.length - 1} color='secondary'>
+              <IconButton onClick={onSkipNextClick} color='secondary'>
                 <SkipNextIcon />
               </IconButton>
             </Grid>
