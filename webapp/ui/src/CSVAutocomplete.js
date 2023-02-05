@@ -124,7 +124,7 @@ function CSVAutocomplete(props) {
     const freqSet = new Set();
     for (const freq of frequency) {
       if ( freqSet.has(freq)) {
-        setError(`Duplicate frequency ${freq} in CSV data`);
+        setError(`Duplicate frequency "${freq}" in CSV data`);
         return;
       }
       freqSet.add(freq);
@@ -255,9 +255,9 @@ function CSVAutocomplete(props) {
               </Grid>
             </Grid>
           </Grid>
-          {!!error & (
+          {!!error && (
             <Grid item>
-              <Typography>Error: {error}</Typography>
+              <Typography color='error'>Error: {error}</Typography>
             </Grid>
           )}
         </Grid>

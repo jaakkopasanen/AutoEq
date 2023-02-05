@@ -25,6 +25,7 @@ class App extends React.Component {
     this.gainNode.gain.value = 0.5;
     this.preampNode = this.audioContext.createGain();
     this.preampNode.gain.value = 1.0;
+    this.preampNode.connect(this.audioContext.destination);
     this.gainNode.connect(this.preampNode);
     this.eqNodes = [];
 

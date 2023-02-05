@@ -85,7 +85,7 @@ const Player = (props) => {
       <Grid item>
         <div>
           <Grid
-            container direction='row' justifyContent='center' alignItems='center' columnSpacing={1}
+            item container direction='column' justifyContent='center' alignItems='center'
             sx={{
               background: 'rgba(255, 255, 255, 0.8)',
               borderRadius: 2,
@@ -95,48 +95,57 @@ const Player = (props) => {
             }}
           >
             <Grid item>
-              <IconButton onClick={onSkipPreviousClick} color='secondary'>
-                <SkipPreviousIcon />
-              </IconButton>
+              <Typography>{playlist[trackIx].name}</Typography>
             </Grid>
             <Grid item>
-              <IconButton onClick={onPlayClick} color='secondary'>
-                {isPlaying ? <PauseIcon /> : <PlayIcon />}
-              </IconButton>
-            </Grid>
-            <Grid item>
-              <IconButton onClick={onSkipNextClick} color='secondary'>
-                <SkipNextIcon />
-              </IconButton>
-            </Grid>
-            <Grid item sx={{width: '200px'}}>
-              <LinearProgress
-                sx={{ '& .MuiLinearProgress-bar': { transition: 'none' } }}
-                variant='determinate'
-                color='primary'
-                value={progress}
-              />
-            </Grid>
-            <Grid item container direction='row' justifyContent='center' alignItems='center' sx={{width: '120px'}}>
-              <Grid item>
-                <IconButton color='secondary'>
-                  <VolumeIcon />
-                </IconButton>
-              </Grid>
-              <Grid item sx={{flexGrow: 1}}>
-                <Slider value={props.gain} onChange={(e, val) => { props.onGainChange(val); }} size='medium' />
-              </Grid>
-            </Grid>
-            <Grid item container direction='row' justifyContent='center' alignItems='center' sx={{width: '120px'}}>
-              <Grid item>
-                <Typography>EQ</Typography>
-              </Grid>
-              <Grid item>
-                <Switch
-                  checked={props.isEqOn}
-                  onChange={(e, val) => { props.onIsEqOnChange(val); }}
-                  disabled={!props.isEqEnabled}
-                />
+              <Grid
+                container direction='row' justifyContent='center' alignItems='center' columnSpacing={1}
+              >
+                <Grid item>
+                  <IconButton onClick={onSkipPreviousClick} color='secondary'>
+                    <SkipPreviousIcon />
+                  </IconButton>
+                </Grid>
+                <Grid item>
+                  <IconButton onClick={onPlayClick} color='secondary'>
+                    {isPlaying ? <PauseIcon /> : <PlayIcon />}
+                  </IconButton>
+                </Grid>
+                <Grid item>
+                  <IconButton onClick={onSkipNextClick} color='secondary'>
+                    <SkipNextIcon />
+                  </IconButton>
+                </Grid>
+                <Grid item sx={{width: '200px'}}>
+                  <LinearProgress
+                    sx={{ '& .MuiLinearProgress-bar': { transition: 'none' } }}
+                    variant='determinate'
+                    color='primary'
+                    value={progress}
+                  />
+                </Grid>
+                <Grid item container direction='row' justifyContent='center' alignItems='center' sx={{width: '120px'}}>
+                  <Grid item>
+                    <IconButton color='secondary'>
+                      <VolumeIcon />
+                    </IconButton>
+                  </Grid>
+                  <Grid item sx={{flexGrow: 1}}>
+                    <Slider value={props.gain} onChange={(e, val) => { props.onGainChange(val); }} size='medium' />
+                  </Grid>
+                </Grid>
+                <Grid item container direction='row' justifyContent='center' alignItems='center' sx={{width: '120px'}}>
+                  <Grid item>
+                    <Typography>EQ</Typography>
+                  </Grid>
+                  <Grid item>
+                    <Switch
+                      checked={props.isEqOn}
+                      onChange={(e, val) => { props.onIsEqOnChange(val); }}
+                      disabled={!props.isEqEnabled}
+                    />
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
