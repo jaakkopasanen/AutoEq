@@ -65,7 +65,7 @@ class App extends React.Component {
           label: 'EqualizerAPO ParametricEq / Peace', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
           uiConfig: {
             bw: false, showDownload: true,
-            filterNames: { LOW_SHELF: 'Low-shelf filter', PEAKING: 'Peaking filter', HIGH_SHELF: 'High-shelf filter', PREAMP: 'Preamplification' },
+            filterNames: { LOW_SHELF: 'Low-shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High-shelf', PREAMP: 'Preamplification' },
             columnNames: { fc: 'Center frequency (Hz)', gain: 'Gain (dB)', q: 'Q factor' }
           }
         },
@@ -242,6 +242,8 @@ class App extends React.Component {
 
     const selectedEqualizer = find(this.state.equalizers, (eq) => eq.label === this.state.selectedEqualizer);
 
+    const base64fp16 = false;
+
     const body = {
       compensation: this.state.selectedCompensation,
       sound_signature: soundSignature,
@@ -273,7 +275,7 @@ class App extends React.Component {
         fr_fields: this.state.smoothed
           ? ['frequency', 'smoothed', 'error_smoothed', 'target', 'equalization', 'equalized_smoothed']
           : ['frequency', 'raw', 'error', 'target', 'equalization', 'equalized_raw'],
-        base64fp16: true
+        base64fp16: base64fp16
       }
     };
 
@@ -340,12 +342,16 @@ class App extends React.Component {
     // Decode base64 encoded half-precision binary arrays
     const fr = {};
     for (const [key, val] of Object.entries(data.fr)) {
-      const uint16arr = new Uint16Array(decode(val));
-      const arr = [];
-      for (const x of uint16arr) {
-        arr.push(decodeFloat16(x));
+      if (base64fp16) {
+        const uint16arr = new Uint16Array(decode(val));
+        const arr = [];
+        for (const x of uint16arr) {
+          arr.push(decodeFloat16(x));
+        }
+        fr[key] = arr;
+      } else {
+        fr[key] = [ ...val ];
       }
-      fr[key] = arr;
     }
 
     const graphData = [];

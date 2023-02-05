@@ -50,28 +50,84 @@ function CSVAutocomplete(props) {
     setError('');
   };
 
+  const findCsvSeparators = () => {
+    const rows = csvText.trim().split('\n')
+    const columnSeparatorCounts = { ',': 0, ';': 0, '\t': 0, '|': 0 };
+    let nNumericRows = 0;
+    for (const row of rows) {
+      if (!/^\d/.test(row)) {
+        // Skip rows which don't start with numbers
+        continue;
+      }
+      nNumericRows++;
+      for (const columnSeparator of Object.keys(columnSeparatorCounts)) {
+        if (row.includes(columnSeparator)) {
+          columnSeparatorCounts[columnSeparator] += 1;
+        }
+      }
+    }
+    const columnSeparatorCandidates = [];
+    for (const [sep, count] of Object.entries(columnSeparatorCounts)) {
+      if (count === nNumericRows) {
+        columnSeparatorCandidates.push(sep)
+      }
+    }
+    let columnSeparator = '';
+    if (columnSeparatorCandidates.includes('\t')) {
+      columnSeparator = '\t';
+    } else if (columnSeparatorCandidates.includes(';')) {
+      columnSeparator = ';';
+    } else if (columnSeparatorCandidates.includes('|')) {
+      columnSeparator = '|';
+    } else if (columnSeparatorCandidates.includes(',')) {
+      return [',', '.'];
+    } else {
+      return [null, null];
+    }
+    if (columnSeparatorCandidates.includes(',')) {
+      return [columnSeparator, ','];
+    }
+    return [columnSeparator, '.'];
+  }
+
   const onSaveClick = () => {
+    let csv = csvText.trim();
+
+    const [columnSeparator, decimalDelimiter] = findCsvSeparators();
+    if (columnSeparator === null) {
+      setError('Column separator couldn\'t be detected');
+      return;
+    }
+    if (decimalDelimiter === ',') {
+      csv = csv.replace(',', '.')
+    }
+
+    const rows = csv.split('\n');
     const frequency = [];
     const raw = [];
-    const rows = csvText.trim().split('\n');
     for (const row of rows) {
-      if (row.trim() === '') {
+      if (!/^\d/.test(row)) {
+        // Skip rows which don't start with numbers
         continue;
       }
-      const cells = row.trim().split(',');
-      if (cells.length !== 2) {
-        setError('Invalid data');
-        return;
-      }
-      if (cells[0] === 'frequency') {
-        continue;
-      }
-      if (isNaN(parseFloat(cells[0].trim())) || isNaN(parseFloat(cells[1].trim()))) {
-        setError('Invalid data');
-        return;
+      const cells = row.trim().split(columnSeparator);
+      if (cells.length < 2) {
+        setError('CSV data has row(s) with less than 2 values')
       }
       frequency.push(parseFloat(cells[0].trim()));
       raw.push(parseFloat(cells[1].trim()));
+      if (isNaN(frequency[frequency.length - 1]) || isNaN(raw[raw.length - 1])) {
+        setError('Non-numbers detected in CSV data');
+        return;
+      }
+    }
+    const freqSet = new Set();
+    for (const freq of frequency) {
+      if ( freqSet.has(freq)) {
+        setError(`Duplicate frequency ${freq} in CSV data`);
+        return;
+      }
+      freqSet.add(freq);
     }
     if (!!props.value) {
       props.onOptionUpdated(props.value.label, name, frequency, raw);
@@ -199,6 +255,11 @@ function CSVAutocomplete(props) {
               </Grid>
             </Grid>
           </Grid>
+          {!!error & (
+            <Grid item>
+              <Typography>Error: {error}</Typography>
+            </Grid>
+          )}
         </Grid>
       )}
     </Grid>
