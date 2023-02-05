@@ -15,11 +15,16 @@ import findIndex from 'lodash/findIndex';
 import merge from 'lodash/merge';
 import {decode} from 'base64-arraybuffer';
 import {decodeFloat16} from "./utils";
+import Player from './Player';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.audioContext = new AudioContext();
+    this.gainNode = this.audioContext.createGain();
+    this.gainNode.gain.value = 0.5;
+    this.gainNode.connect(this.audioContext.destination);
+
     this.state = {
       isSnackbarOpen: false,
       snackbarMessage: '',
@@ -161,7 +166,9 @@ class App extends React.Component {
       graphicEq: null,
       parametricEq: null,
       fixedBandEq: null,
-      firAudioBuffer: null
+      firAudioBuffer: null,
+
+      gain: this.gainNode.gain.value * 100,
     };
     this.equalizeTimer = null;
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
@@ -181,9 +188,8 @@ class App extends React.Component {
     this.onCustomPeqConfigFilterChanged = this.onCustomPeqConfigFilterChanged.bind(this);
     this.onCustomPeqAddFilterClick = this.onCustomPeqAddFilterClick.bind(this);
     this.onCustomPeqDeleteFilterClick = this.onCustomPeqDeleteFilterClick.bind(this);
+    this.onGainChange = this.onGainChange.bind(this);
   }
-
-
 
   async fetchMeasurements() {
     const data = await fetch('/entries').then(res => res.json()).catch((err) => {
@@ -592,13 +598,18 @@ class App extends React.Component {
     });
   }
 
+  onGainChange(val) {
+    this.gainNode.gain.value = val / 100;
+    this.setState({ gain: val });
+  }
+
   render() {
     const customPeq = find(
       this.state.equalizers,
       (equalizer) => equalizer.label === 'Custom Parametric Eq');
     const customPeqConfig = !!customPeq ? customPeq.config : null;
     return (
-      <Grid container direction='column' rowSpacing={{xs: 1, md: 2}} sx={{pb: 1}}>
+      <Grid container direction='column' rowSpacing={{xs: 1, md: 2}} sx={{pb: 8}}>
         <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
           <Paper sx={{padding: 1, borderRadius: 0, background: (theme) => theme.palette.background.default}}>
             <TopBar
@@ -691,6 +702,17 @@ class App extends React.Component {
             </Container>
           </Grid>
         )}
+        <Grid
+          item sx={{position: 'fixed', bottom: 0, width: '100%'}}
+          container direction='column' justifyContent='center' alignItems='center'
+        >
+          <Player
+            audioContext={this.audioContext}
+            audioDestination={this.gainNode}
+            gain={this.state.gain}
+            onGainChange={this.onGainChange}
+          />
+        </Grid>
         <Grid item>
           <Snackbar
             open={this.state.isSnackbarOpen}
