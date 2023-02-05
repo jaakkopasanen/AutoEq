@@ -24,6 +24,7 @@ class App extends React.Component {
     this.gainNode = this.audioContext.createGain();
     this.gainNode.gain.value = 0.5;
     this.gainNode.connect(this.audioContext.destination);
+    this.eqNodes = [];
 
     this.state = {
       isSnackbarOpen: false,
@@ -169,6 +170,7 @@ class App extends React.Component {
       firAudioBuffer: null,
 
       gain: this.gainNode.gain.value * 100,
+      isEqOn: false,
     };
     this.equalizeTimer = null;
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
@@ -189,6 +191,11 @@ class App extends React.Component {
     this.onCustomPeqAddFilterClick = this.onCustomPeqAddFilterClick.bind(this);
     this.onCustomPeqDeleteFilterClick = this.onCustomPeqDeleteFilterClick.bind(this);
     this.onGainChange = this.onGainChange.bind(this);
+    this.onIsEqOnChange = this.onIsEqOnChange.bind(this);
+    this.initParametricEqNodes = this.initParametricEqNodes.bind(this);
+    this.initConvolutionNode = this.initConvolutionNode.bind(this);
+    this.connectEqNodes = this.connectEqNodes.bind(this);
+    this.disconnectEqNodes = this.disconnectEqNodes.bind(this);
   }
 
   async fetchMeasurements() {
@@ -275,7 +282,7 @@ class App extends React.Component {
       graphic_eq: selectedEqualizer?.type === 'graphic',
       parametric_eq: selectedEqualizer?.type === 'parametric',
       fixed_band_eq: selectedEqualizer?.type === 'fixedBand',
-      convolution_eq: selectedEqualizer?.type === 'convolution',
+      convolution_eq: !['parametric', 'fixedBand'].includes(selectedEqualizer?.type),
       response: {
         fr_f_step: 1.02,
         fr_fields: this.state.smoothed
@@ -405,18 +412,72 @@ class App extends React.Component {
     }
     const newState = { graphData };
 
+    for (const eqNode of this.eqNodes) {
+      eqNode.disconnect();
+    }
+
     if (!!data.graphic_eq) {
       newState.graphicEq = data.graphic_eq;
-    } else if (!!data.parametric_eq) {
+    }
+    if (!!data.parametric_eq) {
       newState.parametricEq = cloneDeep(data.parametric_eq);
+      this.eqNodes = this.initParametricEqNodes(data.parametric_eq);
     } else if (!!data.fixed_band_eq) {
       newState.fixedBandEq = cloneDeep(data.fixed_band_eq);
+      this.eqNodes = this.initParametricEqNodes(data.fixed_band_eq);
     } else if (!!data.fir) {
       await this.audioContext.decodeAudioData(decode(data.fir), (audioBuffer) => {
         newState.firAudioBuffer = audioBuffer;
+        this.eqNodes = [this.initConvolutionNode(audioBuffer)];
       });
     }
+    // TODO: Preamp for no eq
+    if (this.state.isEqOn) {
+      this.connectEqNodes();
+    }
     this.setState(newState);
+  }
+
+  initParametricEqNodes(parametricEq) {
+    const preampNode = this.audioContext.createGain();
+    preampNode.gain.value = 10 ** (parametricEq.preamp / 20);  // dB to linear
+    const biquadNodes = [preampNode];
+    const typeMap = { 'LOW_SHELF': 'lowshelf', 'HIGH_SHELF': 'highshelf', 'PEAKING': 'peaking' }
+    for (const filter of parametricEq.filters) {
+      const node = this.audioContext.createBiquadFilter();
+      node.type = typeMap[filter.type];
+      node.frequency.value = filter.fc;
+      node.Q.value = filter.q;
+      node.gain.value = filter.gain;
+      if (biquadNodes.length > 0) {
+        // Connect subsequent node to this one
+        biquadNodes[biquadNodes.length - 1].connect(node);
+      }
+      biquadNodes.push(node);
+    }
+    return biquadNodes;
+  }
+
+  initConvolutionNode(audioBuffer) {
+    const node = this.audioContext.createConvolver();
+    node.normalize = false;
+    node.buffer = audioBuffer;
+    return node;
+  }
+
+  connectEqNodes() {
+    const nodes = [this.gainNode, ...this.eqNodes, this.audioContext.destination];
+    for (let i = 0; i < nodes.length - 1; ++i) {
+      nodes[i].disconnect();
+      nodes[i].connect(nodes[i + 1]);
+    }
+  }
+
+  disconnectEqNodes() {
+    for (const node of [this.gainNode, ...this.eqNodes]) {
+      node.disconnect();
+    }
+    this.gainNode.connect(this.audioContext.destination);
   }
 
   async onMeasurementSelected(measurement) {
@@ -603,6 +664,15 @@ class App extends React.Component {
     this.setState({ gain: val });
   }
 
+  onIsEqOnChange(val) {
+    this.setState({ isEqOn: val });
+    if (!val) {  // Disable Eq
+      this.disconnectEqNodes();
+    } else {  // Enable Eq
+      this.connectEqNodes();
+    }
+  }
+
   render() {
     const customPeq = find(
       this.state.equalizers,
@@ -643,13 +713,10 @@ class App extends React.Component {
                       <TargetTab
                         compensations={Object.keys(this.state.compensations)}
                         selectedCompensation={this.state.selectedCompensation}
-
                         soundSignatures={this.state.soundSignatures}
                         selectedSoundSignature={this.state.selectedSoundSignature}
-
                         selectedMeasurement={this.state.selectedMeasurement}
                         graphData={this.state.graphData}
-
                         bassBoostGain={this.state.bassBoostGain}
                         bassBoostFc={this.state.bassBoostFc}
                         bassBoostQ={this.state.bassBoostQ}
@@ -663,7 +730,6 @@ class App extends React.Component {
                         trebleFLower={this.state.trebleFLower}
                         trebleFUpper={this.state.trebleFUpper}
                         trebleGainK={this.state.trebleGainK}
-
                         onSoundSignatureSelected={this.onSoundSignatureSelected}
                         onSoundSignatureCreated={this.onSoundSignatureCreated}
                         onSoundSignatureUpdated={this.onSoundSignatureUpdated}
@@ -711,6 +777,8 @@ class App extends React.Component {
             audioDestination={this.gainNode}
             gain={this.state.gain}
             onGainChange={this.onGainChange}
+            onIsEqOnChange={this.onIsEqOnChange}
+            isEqEnabled={this.eqNodes.length > 0}
           />
         </Grid>
         <Grid item>

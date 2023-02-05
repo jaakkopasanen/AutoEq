@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Grid, IconButton, LinearProgress, Slider} from "@mui/material";
+import {Grid, IconButton, LinearProgress, Slider, Switch, Typography} from "@mui/material";
 import {
   PlayArrow as PlayIcon,
   SkipNext as SkipNextIcon,
@@ -33,29 +33,36 @@ const Player = (props) => {
   const [trackIx, setTrackIx] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [isEqOn, setIsEqOn] = useState(true);
+
+  const initSourceNode = (ix) => {
+    if (playlist[ix].sourceNode === null) {
+      playlist[ix].sourceNode = props.audioContext.createMediaElementSource(playlist[ix].audio);
+      playlist[ix].sourceNode.connect(props.audioDestination);
+    }
+  }
 
   const onSkipPreviousClick = () => {
     playlist[trackIx].audio.pause();
     const newTrackIx = trackIx > 0 ? trackIx - 1 : 0;
+    initSourceNode(newTrackIx);
     playlist[newTrackIx].audio.fastSeek(0);
     playlist[newTrackIx].audio.play();
     setTrackIx(newTrackIx);
+    setIsPlaying(true);
   };
 
   const onSkipNextClick = () => {
     playlist[trackIx].audio.pause();
     const newTrackIx = trackIx < playlist.length - 1 ? trackIx + 1 : playlist.length - 1;
+    initSourceNode(newTrackIx);
     playlist[newTrackIx].audio.fastSeek(0);
     playlist[newTrackIx].audio.play();
     setTrackIx(newTrackIx);
+    setIsPlaying(true);
   };
 
   const onPlayClick = () => {
-    if (playlist[trackIx].sourceNode === null) {
-      playlist[trackIx].sourceNode = props.audioContext.createMediaElementSource(playlist[trackIx].audio);
-      playlist[trackIx].sourceNode.connect(props.audioDestination);
-    }
+    initSourceNode(trackIx);
     if (isPlaying) {
       playlist[trackIx].audio.pause();
     } else {
@@ -71,7 +78,7 @@ const Player = (props) => {
     return () => {
       clearInterval(timer);
     };
-  }, []);
+  }, [trackIx, isPlaying]);
 
   return (
     <Grid container direction='column' justifyContent='center' alignItems='center'>
@@ -116,6 +123,18 @@ const Player = (props) => {
               </Grid>
               <Grid item sx={{flexGrow: 1}}>
                 <Slider value={props.gain} onChange={(e, val) => { props.onGainChange(val); }} size='medium' />
+              </Grid>
+            </Grid>
+            <Grid item container direction='row' justifyContent='center' alignItems='center' sx={{width: '120px'}}>
+              <Grid item>
+                <Typography>EQ</Typography>
+              </Grid>
+              <Grid item>
+                <Switch
+                  checked={props.isEqOn}
+                  onChange={(e, val) => { props.onIsEqOnChange(val); }}
+                  disabled={!props.isEqEnabled}
+                />
               </Grid>
             </Grid>
           </Grid>
