@@ -10,15 +10,27 @@ import {
 
 const playlist = [
   {
-    url: 'https://dl.dropboxusercontent.com/s/5p1gayvfmb3fc0z/Eagles%20-%20Hotel%20California%2064%20kbps.mp3?dl=0',
+    url: 'https://dl.dropboxusercontent.com/s/yqv05oe7zgxczpw/Blink%20182%20-%20All%20The%20Small%20Things%20%28intro%29.ogg',
+    name: 'Blink 182 - All The Small Things'
+  },
+  {
+    url: 'https://dl.dropboxusercontent.com/s/nsqmqptbcy8cjbn/Eagles%20-%20Hotel%20California%20%28intro%29.ogg',
     name: 'Eagles - Hotel California'
   },
   {
-    url: 'https://dl.dropboxusercontent.com/s/7jb5cif5o5bda9n/Jennifer%20Warnes%20-%20Bird%20on%20a%20Wire%2064%20kbps.mp3?dl=0',
+    url: 'https://dl.dropboxusercontent.com/s/yo1tvps4ajkzb2i/Jennifer%20Warnes%20-%20Bird%20on%20a%20Wire%20%28vocals%20start%29.ogg',
     name: 'Jennifer Warnes - Bird On a Wire'
   },
   {
-    url: 'https://dl.dropboxusercontent.com/s/epvit0keu9w7emp/Wintersun%20-%20Sons%20of%20Winter%20and%20Stars%2064%20kbps.mp3?dl=0',
+    url: 'https://dl.dropboxusercontent.com/s/pqvb6ms03d2j72q/Michael%20Jackson%20-%20Billie%20Jean%20%28intro%29.ogg',
+    name: 'Michel Jackson - Billie Jean'
+  },
+  {
+    url: 'https://dl.dropboxusercontent.com/s/6mmfl67b51rco7r/Steely%20Dan%20-%20Cousin%20Dupree%20%28vocals%20start%29.ogg',
+    name: 'Steely Dan - Cousin Dupree'
+  },
+  {
+    url: 'https://dl.dropboxusercontent.com/s/wsw81vkcs1kb7v5/Wintersun%20-%20Sons%20of%20Winter%20and%20Stars%20%28chorus%201%29.ogg',
     name: 'Wintersun - Sons Of Winter And Stars'
   },
 ];
