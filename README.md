@@ -237,6 +237,12 @@ which does the actual equalization.
 Pardon the lack of documentation for these. I have not tested any of the methods myself but they have been suggested by
 helpful AutoEq users.
 
+#### [eqMac](https://eqmac.app) is a Free & [Partially Open Source](https://github.com/bitgapp/eqmac) System Wide equalizer for macOS.
+eqMac offers a Free 10 Fixed Band EQ and an Paid Unlimited Band Parametric EQ, both have all the AutoEq presets built-in and updated regularly!
+<p align="center">
+  <img width="1024" src="https://raw.githubusercontent.com/bitgapp/eqMac/master/assets/screenshots/autoeq-promo.png"/>
+</p>
+
 [SoundSource](https://rogueamoeba.com/soundsource/) is the easiest way to use AutoEq on Mac since it comes with all of the
 profiles built in. The software is however not free.
 
@@ -257,13 +263,6 @@ expensive than Voxengo but might be easier to install and use. Note: Pro Q3 uses
 
 Tutorials:
 - [Apple AU Lab + Soundflower + AUNBandEQ Tutorial](https://www.superbestaudiofriends.org/index.php?threads/systemwide-eq-on-mac.7435/) [AU Lab Permission Issue](https://discussions.apple.com/thread/8552731)
-
-#### eqMac
-[eqMac](https://eqmac.app) is a Free & [Open Source](https://github.com/bitgapp/eqmac) System Wide equalizer for macOS.
-eqMac has a Free 10 Band EQ and an Unlimited Band EQ (paid) with built-in AutoEq Integration! (Expert EQ)
-<p align="center">
-  <img width="1024" src="https://raw.githubusercontent.com/bitgapp/eqMac/master/assets/screenshots/autoeq-promo.png"/>
-</p>
 
 ### iOS
 iOS unfortunately doesn't allow system-wide equalizers, so the only options are either music players with built-in
