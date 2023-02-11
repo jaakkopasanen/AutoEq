@@ -59,7 +59,6 @@ const Player = (props) => {
   };
 
   useEffect(() => {
-    console.log('useEffect', trackIx, isPlaying);
     if (!playlist.length) return;
     if (isPlaying) {
       setProgressInterval(setInterval(() => {

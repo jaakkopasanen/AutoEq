@@ -384,7 +384,12 @@ class App extends React.Component {
       parametric_eq: 'parametricEq',
       fixed_band_eq: 'fixedBandEq',
     };
-    if (selectedEqualizer?.type === 'parametric' && !!fr?.parametric_eq) {
+
+    if (!selectedEqualizer) {
+      keyMap.equalization = null;
+      keyMap.equalized_raw = null;
+      keyMap.equalized_smoothed = null;
+    } else if (selectedEqualizer?.type === 'parametric' && !!fr?.parametric_eq) {
       // Use parametric eq curve as the equalization in the frequency response graph
       keyMap.parametric_eq = 'equalization';
       keyMap.equalization = null;
@@ -393,6 +398,7 @@ class App extends React.Component {
       keyMap.fixed_band_eq = 'equalization';
       keyMap.equalization = null;
     } else if (selectedEqualizer?.type === 'convolution' && !!fr?.convolution_eq) {
+      // Use convolution eq curve as the equalization in the frequency response graph
       keyMap.convolution_eq = 'equalization';
       keyMap.equalization = null;
     }
@@ -684,7 +690,7 @@ class App extends React.Component {
       (equalizer) => equalizer.label === 'Custom Parametric Eq');
     const customPeqConfig = !!customPeq ? customPeq.config : null;
     return (
-      <Grid container direction='column' rowSpacing={{xs: 1, md: 2}} sx={{pb: 8}}>
+      <Grid container direction='column' rowSpacing={{xs: 1, md: 2}} sx={{pb: 12}}>
         <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
           <Paper sx={{padding: 1, borderRadius: 0, background: (theme) => theme.palette.background.default}}>
             <TopBar
@@ -783,7 +789,7 @@ class App extends React.Component {
             gain={this.state.gain}
             onGainChange={this.onGainChange}
             onIsEqOnChange={this.onIsEqOnChange}
-            isEqEnabled={this.eqNodes.length > 0}
+            isEqEnabled={this.eqNodes.length > 0 && this.state.selectedEqualizer !== null}
           />
         </Grid>
         <Grid item>
