@@ -49,11 +49,11 @@ def get_playlist():
     playlist = []
     extension_pattern = re.compile(r'\.(wav|flac|map3|aac|ogg|opus)$', flags=re.IGNORECASE)
     full_pattern = re.compile(r'^.*\.(wav|flac|map3|aac|ogg|opus)$', flags=re.IGNORECASE)
-    for fp in ROOT_DIR.joinpath('data').glob('*'):
+    for fp in ROOT_DIR.joinpath('data/audio').glob('*'):
         if re.match(full_pattern, str(fp.name)):
             playlist.append({
                 'name': re.sub(extension_pattern, '', fp.name),
-                'url': fp.name
+                'url': f'audio/{fp.name}'
             })
     return playlist
 
@@ -339,7 +339,6 @@ def equalize(req: EqualizeRequest):
     return res
 
 
+app.mount('/audio', StaticFiles(directory=ROOT_DIR.joinpath('data/audio'), html=True), name='audio')
 if os.getenv('APP_ENV') == 'production':
-    app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('ui/build'), html=True), name='static')
-else:
-    app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('data'), html=True), name='static')
+    app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('ui/build'), html=True), name='build')

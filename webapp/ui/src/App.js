@@ -428,7 +428,10 @@ class App extends React.Component {
     if (!!data.graphic_eq) {
       newState.graphicEq = data.graphic_eq;
     }
-    if (!!data.parametric_eq) {
+    if (!selectedEqualizer) {
+      this.eqNodes = [];
+      this.preampNode.gain.value = 1.0;
+    } else if (!!data.parametric_eq) {
       newState.parametricEq = cloneDeep(data.parametric_eq);
       this.eqNodes = this.initParametricEqNodes(data.parametric_eq);
       this.preampNode.gain.value = 10 ** (data.parametric_eq.preamp / 20);

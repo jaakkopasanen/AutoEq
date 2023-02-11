@@ -31,7 +31,11 @@ docker push yourusername/autoeq:latest
 
 ## Run Docker
 Data directory needs to be created and mounted. `webapp/create_data.py` creates the directory and necessary files by
-packaging compensation curves and measurements. You need all measurement data available in the `measurements` directory.
+packaging compensation curves and measurements. You need all measurement data available in the `measurements` directory
+to do this.
+
+The data directory also need to have all the songs for the player. It's recommended to normalize the volumes across all
+your tracks. https://www.loudnesspenalty.com/ helps calculating the required amplification. Use Spotify levels.
 ```shell
 docker run -d -p 8000:8000 -v /path/to/AutoEq/webapp/data:/app/webapp/data yourusername/autoeq:latest
 ```
