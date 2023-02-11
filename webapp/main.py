@@ -1,5 +1,6 @@
 import json
 import os
+import re
 from base64 import b64encode
 from enum import Enum
 from io import BytesIO
@@ -41,6 +42,20 @@ def get_entries():
 @app.get('/compensations')
 def get_compensations():
     return {compensation['label']: {key: compensation[key] for key in ['compatible', 'recommended', 'bassBoost']} for compensation in compensations}
+
+
+@app.get('/playlist')
+def get_playlist():
+    playlist = []
+    extension_pattern = re.compile(r'\.(wav|flac|map3|aac|ogg|opus)$', flags=re.IGNORECASE)
+    full_pattern = re.compile(r'^.*\.(wav|flac|map3|aac|ogg|opus)$', flags=re.IGNORECASE)
+    for fp in ROOT_DIR.joinpath('data').glob('*'):
+        if re.match(full_pattern, str(fp.name)):
+            playlist.append({
+                'name': re.sub(extension_pattern, '', fp.name),
+                'url': fp.name
+            })
+    return playlist
 
 
 class MeasurementData(BaseModel):
@@ -326,3 +341,5 @@ def equalize(req: EqualizeRequest):
 
 if os.getenv('APP_ENV') == 'production':
     app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('ui/build'), html=True), name='static')
+else:
+    app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('data'), html=True), name='static')

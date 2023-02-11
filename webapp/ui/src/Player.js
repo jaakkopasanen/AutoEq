@@ -8,48 +8,22 @@ import {
   VolumeUp as VolumeIcon
 } from "@mui/icons-material";
 
-const playlist = [
-  {
-    url: 'https://dl.dropboxusercontent.com/s/yqv05oe7zgxczpw/Blink%20182%20-%20All%20The%20Small%20Things%20%28intro%29.ogg',
-    name: 'Blink 182 - All The Small Things'
-  },
-  {
-    url: 'https://dl.dropboxusercontent.com/s/nsqmqptbcy8cjbn/Eagles%20-%20Hotel%20California%20%28intro%29.ogg',
-    name: 'Eagles - Hotel California'
-  },
-  {
-    url: 'https://dl.dropboxusercontent.com/s/yo1tvps4ajkzb2i/Jennifer%20Warnes%20-%20Bird%20on%20a%20Wire%20%28vocals%20start%29.ogg',
-    name: 'Jennifer Warnes - Bird On a Wire'
-  },
-  {
-    url: 'https://dl.dropboxusercontent.com/s/pqvb6ms03d2j72q/Michael%20Jackson%20-%20Billie%20Jean%20%28intro%29.ogg',
-    name: 'Michel Jackson - Billie Jean'
-  },
-  {
-    url: 'https://dl.dropboxusercontent.com/s/6mmfl67b51rco7r/Steely%20Dan%20-%20Cousin%20Dupree%20%28vocals%20start%29.ogg',
-    name: 'Steely Dan - Cousin Dupree'
-  },
-  {
-    url: 'https://dl.dropboxusercontent.com/s/wsw81vkcs1kb7v5/Wintersun%20-%20Sons%20of%20Winter%20and%20Stars%20%28chorus%201%29.ogg',
-    name: 'Wintersun - Sons Of Winter And Stars'
-  },
-];
-for (let i = 0; i < playlist.length; ++i) {
-  playlist[i].audio = new Audio(playlist[i].url);
-  playlist[i].audio.crossOrigin = 'anonymous';
-  playlist[i].audio.loop = true;
-  playlist[i].sourceNode = null;
-}
-
 const Player = (props) => {
   const [trackIx, setTrackIx] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [progressInterval, setProgressInterval] = useState(null);
   const [progress, setProgress] = useState(0);
+  const [playlist, setPlaylist] = useState([]);
 
   const initSourceNode = (ix) => {
-    if (playlist[ix].sourceNode === null) {
-      playlist[ix].sourceNode = props.audioContext.createMediaElementSource(playlist[ix].audio);
-      playlist[ix].sourceNode.connect(props.audioDestination);
+    if (playlist[ix].audio === null) {
+      const newPlaylist = [ ...playlist ];
+      newPlaylist[ix].audio = new Audio(newPlaylist[ix].url);
+      newPlaylist[ix].audio.crossOrigin = 'anonymous';
+      newPlaylist[ix].audio.loop = true;
+      newPlaylist[ix].sourceNode = props.audioContext.createMediaElementSource(newPlaylist[ix].audio);
+      newPlaylist[ix].sourceNode.connect(props.audioDestination);
+      setPlaylist(newPlaylist);
     }
   }
 
@@ -74,6 +48,7 @@ const Player = (props) => {
   };
 
   const onPlayClick = () => {
+    if (!playlist.length) return;
     initSourceNode(trackIx);
     if (isPlaying) {
       playlist[trackIx].audio.pause();
@@ -84,13 +59,33 @@ const Player = (props) => {
   };
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress(playlist[trackIx].audio.currentTime / playlist[trackIx].audio.duration * 100);
-    }, 10);
+    console.log('useEffect', trackIx, isPlaying);
+    if (!playlist.length) return;
+    if (isPlaying) {
+      setProgressInterval(setInterval(() => {
+        setProgress(playlist[trackIx].audio.currentTime / playlist[trackIx].audio.duration * 100);
+      }, 10));
+    } else {
+      clearInterval(progressInterval);
+    }
     return () => {
-      clearInterval(timer);
+      clearInterval(progressInterval);
     };
   }, [trackIx, isPlaying]);
+
+  useEffect(() => {
+    if (playlist.length) return;
+    fetch('/playlist').then(async res => {
+      const playlist = await res.json();
+      for (let i = 0; i < playlist.length; ++i) {
+        playlist[i].audio = null;
+        playlist[i].sourceNode = null;
+      }
+      setPlaylist(playlist);
+    });
+  }, []);
+
+  if (!playlist.length) return null;
 
   return (
     <Grid container direction='column' justifyContent='center' alignItems='center'>
