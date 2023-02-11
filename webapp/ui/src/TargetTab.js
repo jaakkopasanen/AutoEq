@@ -136,7 +136,7 @@ class TargetTab extends React.Component {
                       this.setState({showAdvanced: val});
                     }}
                   />}
-                label={'Show advanced parameters'}
+                label={'Show advanced'}
                 sx={{color: 'rgba(0, 0, 0, 0.5)'}}
               />
             </FormGroup>

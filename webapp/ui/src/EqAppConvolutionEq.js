@@ -1,7 +1,8 @@
 import React from 'react';
-import {Autocomplete, Button, Grid, Switch, TextField, Typography} from "@mui/material";
+import {Autocomplete, Grid, IconButton, Switch, TextField, Typography} from "@mui/material";
 import InputSlider from './InputSlider';
 import audioBufferToWav from 'audiobuffer-to-wav';
+import {Download as DownloadIcon} from "@mui/icons-material";
 
 class EqAppConvolutionEq extends React.Component {
   constructor(props) {
@@ -93,7 +94,7 @@ class EqAppConvolutionEq extends React.Component {
               <Switch checked={this.state.stereo} onChange={this.onStereoChanged} />
             </Grid>
           <Grid item xs={6}>
-            <Button variant='outlined' onClick={this.onDownloadClick}>Download</Button>
+            <IconButton onClick={this.onDownloadClick}><DownloadIcon /></IconButton>
           </Grid>
         </Grid>
       </Grid>

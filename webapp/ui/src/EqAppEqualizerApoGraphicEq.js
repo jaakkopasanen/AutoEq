@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Grid, Tooltip } from '@mui/material';
+import {Grid, IconButton, Tooltip} from '@mui/material';
+import { FileCopy as CopyIcon, Download as DownloadIcon } from '@mui/icons-material';
 import { downloadAsFile } from "./utils";
 
 class EqAppEqualizerApoGraphicEq extends React.Component {
@@ -48,7 +49,7 @@ class EqAppEqualizerApoGraphicEq extends React.Component {
         </Grid>
         <Grid item container direction='row' columnSpacing={1} justifyContent='center'>
           <Grid item>
-            <Button variant='outlined' onClick={this.onDownloadClick}>Download</Button>
+            <IconButton onClick={this.onDownloadClick}><DownloadIcon /></IconButton>
           </Grid>
           <Grid item>
             <Tooltip
@@ -65,7 +66,7 @@ class EqAppEqualizerApoGraphicEq extends React.Component {
                 }
               }}
             >
-              <Button variant='outlined' onClick={this.onCopyToClipboardClick}>Copy to Clipboard</Button>
+              <IconButton onClick={this.onCopyToClipboardClick}><CopyIcon /></IconButton>
             </Tooltip>
           </Grid>
         </Grid>

@@ -1,11 +1,30 @@
 import React from 'react';
 import {
-  Autocomplete, Button, Grid, IconButton, Table, TableBody, TableCell, TableHead, TableRow, TextField, ToggleButton,
-  ToggleButtonGroup, Typography
+  Autocomplete,
+  Button,
+  Grid,
+  IconButton,
+  styled,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+  TextField,
+  ToggleButton,
+  ToggleButtonGroup,
+  Typography
 } from '@mui/material';
-import { Delete as DeleteIcon } from '@mui/icons-material';
+import {Delete as DeleteIcon, Download as DownloadIcon} from '@mui/icons-material';
 import { downloadAsFile } from './utils';
 import InputSlider from './InputSlider';
+
+const CompactTableCell = styled(TableCell)(({ theme }) => ({
+  padding: `6px`,
+  [theme.breakpoints.up('md')]: {
+    padding: `6px ${theme.spacing(2)}`
+  }
+}));
 
 class EqAppParametricEq extends React.Component {
   constructor(props) {
@@ -328,10 +347,14 @@ class EqAppParametricEq extends React.Component {
           <Table size='small'>
             <TableHead>
               <TableRow>
-                {!('fixedBands' in this.props && this.props.fixedBands !== false) && (<TableCell align='left'>Filter Type</TableCell>)}
-                <TableCell align='center'>{columnNames.fc}</TableCell>
-                {!('fixedBands' in this.props && this.props.fixedBands !== false) && (<TableCell align='center'>{columnNames.q}</TableCell>)}
-                <TableCell align='center'>{columnNames.gain}</TableCell>
+                {!('fixedBands' in this.props && this.props.fixedBands !== false) && (
+                  <CompactTableCell align='left'>Filter Type</CompactTableCell>
+                )}
+                <CompactTableCell align='center'>{columnNames.fc}</CompactTableCell>
+                {!('fixedBands' in this.props && this.props.fixedBands !== false) && (
+                  <CompactTableCell align='center'>{columnNames.q}</CompactTableCell>
+                )}
+                <CompactTableCell align='center'>{columnNames.gain}</CompactTableCell>
               </TableRow>
             </TableHead>
             {!!this.props.parametricEq?.filters && (
@@ -340,15 +363,15 @@ class EqAppParametricEq extends React.Component {
                   return (
                     <TableRow key={i}>
                       {!('fixedBands' in this.props && this.props.fixedBands !== false) && (
-                        <TableCell align='left'>{filterNames[filt.type]}</TableCell>
+                        <CompactTableCell align='left'>{filterNames[filt.type]}</CompactTableCell>
                       )}
-                      <TableCell align='center'>{filt.fc.toFixed(0)}</TableCell>
+                      <CompactTableCell align='center'>{filt.fc.toFixed(0)}</CompactTableCell>
                       {!('fixedBands' in this.props && this.props.fixedBands !== false) && (
-                        <TableCell align='center'>
+                        <CompactTableCell align='center'>
                           {(useBandwidth ? this.bandwidth(filt.q) : filt.q).toFixed(2)}
-                        </TableCell>
+                        </CompactTableCell>
                       )}
-                      <TableCell align='center'>{filt.gain.toFixed(1)}</TableCell>
+                      <CompactTableCell align='center'>{filt.gain.toFixed(1)}</CompactTableCell>
                     </TableRow>
                   );
                 })}
@@ -362,7 +385,7 @@ class EqAppParametricEq extends React.Component {
         {!!this.props.uiConfig?.showDownload && (
           <Grid item container direction='row' columnSpacing={1} justifyContent='center'>
             <Grid item>
-              <Button variant='outlined' onClick={this.onDownloadClick}>Download</Button>
+              <IconButton onClick={this.onDownloadClick}><DownloadIcon /></IconButton>
             </Grid>
           </Grid>
         )}

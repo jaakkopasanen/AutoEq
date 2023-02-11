@@ -124,7 +124,7 @@ class FrequencyResponseGraph extends React.Component {
                   1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000,
                   10000, 20000
                 ]}
-                tickFormatter={(x => [1, 2, 5].includes(x / 10**Math.floor(Math.log10(x))) ? x.toFixed(0) : '')}
+                tickFormatter={(x => [1, 2, 5].includes(x / 10**Math.floor(Math.log10(x))) ? ( x >= 1000 ? (x/1000).toFixed(0) + 'k' : x.toFixed(0) ) : '')}
                 interval={0}
                 label={{ value: 'Frequency (Hz)', position: 'outsideBottomCenter', dy: 20}}
               />
@@ -138,7 +138,7 @@ class FrequencyResponseGraph extends React.Component {
             </LineChart>
           </ResponsiveContainer>
         </Grid>
-        <Grid item xs={12} md={2.5} lg={2} sx={{pl: {md: 4}}} container direction={{xs: 'row', md: 'column'}}>
+        <Grid item xs={12} md={2.5} lg={2} sx={{pl: {xs: 1, sm: 1, md: 4}}} container direction={{xs: 'row', md: 'column'}}>
           <Grid item container alignItems='center'>
             <Grid item md={7}>
               <Typography>Smoothed</Typography>

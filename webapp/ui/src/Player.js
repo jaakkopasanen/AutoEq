@@ -95,7 +95,7 @@ const Player = (props) => {
             sx={{
               background: 'rgba(255, 255, 255, 0.8)',
               borderRadius: 2,
-              padding: '12px 18px',
+              padding: {xs: 1, md: '12px 18px'},
               borderStyle: 'solid', borderWidth: 1, borderColor: theme => theme.palette.grey.A400,
               backdropFilter: 'blur(2px)'
             }}
@@ -122,7 +122,7 @@ const Player = (props) => {
                     <SkipNextIcon />
                   </IconButton>
                 </Grid>
-                <Grid item sx={{width: '200px'}}>
+                <Grid item sx={{width: {sm: '190px'}}}>
                   <LinearProgress
                     sx={{ '& .MuiLinearProgress-bar': { transition: 'none' } }}
                     variant='determinate'

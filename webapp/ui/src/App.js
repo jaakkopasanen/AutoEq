@@ -708,11 +708,16 @@ class App extends React.Component {
         </Grid>
         {!!this.state.graphData && (
           <Grid item>
-            <Container sx={{pl: {xs: 0, sm: 2}, pr: {xs: 0, sm: 2}}}>
-              <Grid container direction='column' rowSpacing={{xs: 1, sm: 2}}>
+            <Container sx={{pl: {xs: 0, sm: 1, md: 2}, pr: {xs: 0, sm: 1, md: 2}}}>
+              <Grid container direction='column' rowSpacing={{xs: 1, md: 2}}>
                 <Grid item>
                   <Paper
-                    sx={{pt: 1, pl: {xs: 1, sm: 2, md: 0}, pr: {xs: 1, sm: 2, md: 0}, pb: {xs: 1, sm: 2, md: 0}}}
+                    sx={{
+                      pt: 1,
+                      pl: {xs: 1, sm: 0, md: 0},
+                      pr: {xs: 1, sm: 1, md: 0},
+                      pb: {xs: 1, sm: 0.5, md: 0}
+                    }}
                   >
                     <FrequencyResponseGraph
                       data={this.state.graphData}
@@ -721,9 +726,9 @@ class App extends React.Component {
                     />
                   </Paper>
                 </Grid>
-                <Grid item container direction='row' columnSpacing={{xs: 1, sm: 2}} alignItems='stretch'>
+                <Grid item container direction='row' columnSpacing={{xs: 1, md: 2}} alignItems='stretch'>
                   <Grid item xs={6}>
-                    <Paper sx={{p: {xs: 1, sm: 2}}}>
+                    <Paper sx={{p: {xs: 1, md: 2}}}>
                       <TargetTab
                         compensations={Object.keys(this.state.compensations)}
                         selectedCompensation={this.state.selectedCompensation}
@@ -753,7 +758,7 @@ class App extends React.Component {
                     </Paper>
                   </Grid>
                   <Grid item xs={6}>
-                    <Paper sx={{p: {xs: 1, sm: 2}}}>
+                    <Paper sx={{p: {xs: 1, md: 2}}}>
                       <EqTab
                         selectedMeasurement={this.state.selectedMeasurement?.label}
                         equalizers={this.state.equalizers}
