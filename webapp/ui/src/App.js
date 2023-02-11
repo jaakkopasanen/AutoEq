@@ -443,7 +443,7 @@ class App extends React.Component {
       await this.audioContext.decodeAudioData(decode(data.fir), (audioBuffer) => {
         newState.firAudioBuffer = audioBuffer;
         this.eqNodes = [this.initConvolutionNode(audioBuffer)];
-        this.preampNode.gain.value = 10 ** (Math.max(...data.fr.convolution_eq) / 20);
+        this.preampNode.gain.value = 10 ** (-Math.max(...data.fr.convolution_eq) / 20);
       });
     }
     if (this.state.isEqOn) {
