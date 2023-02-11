@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Button, Grid, Link, SvgIcon, Typography} from '@mui/material';
+import {Grid, IconButton, Link, SvgIcon, Typography} from '@mui/material';
 import CSVAutocomplete from "./CSVAutocomplete";
 
 function GitHubIcon(props) {
@@ -19,44 +19,46 @@ const TopBar = (props) => {
   }
 
   return (
-    <Grid container direction='row' justifyContent='space-between' alignItems='start' sx={{height: '56px', overflowY: 'visible'}}>
-      <Grid item sx={{display: {xs: 'none', sm: 'block'}}}>
-        <Typography variant='h1' sx={{fontSize: '2rem'}}>AutoEq</Typography>
+    <Grid
+      container direction='column' justifyContent='center' alignItems='center'
+      sx={{height: props.isMeasurementSelected ? '56px' : '48px'}}>
+      <Grid
+        item container direction='row' justifyContent='space-between' alignItems='center'
+        sx={{overflowY: 'visible', display: {xs: props.isMeasurementSelected ? 'none' : 'flex', sm: 'flex'}}}>
+        <Grid item>
+          <Typography variant='h1' sx={{fontSize: '2rem'}}>AutoEq</Typography>
+        </Grid>
+        <Grid item>
+          <Link href='https://github.com/jaakkopasanen/AutoEq' target='_blank' rel='noopener'>
+            <IconButton sx={{color: '#000'}}><GitHubIcon /></IconButton>
+          </Link>
+        </Grid>
       </Grid>
-      <Grid item sx={{
-        width: {xs: '100%', sm: '50%'},
-        position: 'relative',
-        transform: `translateY(${props.isMeasurementSelected ? 0 : '30vh'})`,
+      <Grid item container direction='row' justifyContent='center' alignItems='center' sx={{
+        width: {xs: '100%', md: '50%'},
+        position: 'fixed',
+        top: props.isMeasurementSelected ? 0 : 300,
         zIndex: 2,
         background: props.isMeasurementSelected ? theme => theme.palette.background.default : 'none',
-        p: props.isMeasurementSelected ? 1 : 0,
-        boxShadow: props.isMeasurementSelected ? '0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)' : 'none',
-        borderRadius: props.isMeasurementSelected ? 0.75 : 0,
+        p: 1,
       }}>
-        <CSVAutocomplete
-          value={props.selectedMeasurement}
-          options={props.measurements}
-          onChange={props.onMeasurementSelected}
-          autocompleteProps={{
-            sx: {background: (theme) => theme.palette.background.default},
-            size: 'large',
-            blurOnSelect: true,
-          }}
-          autocompleteLabel='Select headphones'
-          onOptionCreated={props.onMeasurementCreated}
-          onOptionUpdated={props.onMeasurementUpdated}
-          showEdit={showEdit}
-          onShowEditChanged={() => { setShowEdit(!showEdit); }}
-        />
-      </Grid>
-      <Grid item sx={{display: {xs: 'none', sm: 'block'}}}>
-        <Link href='https://github.com/jaakkopasanen/AutoEq' target='_blank' rel='noopener'>
-          <Button
-            variant='outlined' color='inherit' size='large'
-            startIcon={<GitHubIcon/>}
-            sx={{color: '#000'}}
-          >Github</Button>
-        </Link>
+        <Grid item sx={{width: '100%'}}>
+          <CSVAutocomplete
+            value={props.selectedMeasurement}
+            options={props.measurements}
+            onChange={props.onMeasurementSelected}
+            autocompleteProps={{
+              sx: {background: (theme) => theme.palette.background.default},
+              size: 'large',
+              blurOnSelect: true,
+            }}
+            autocompleteLabel='Select headphones'
+            onOptionCreated={props.onMeasurementCreated}
+            onOptionUpdated={props.onMeasurementUpdated}
+            showEdit={showEdit}
+            onShowEditChanged={() => { setShowEdit(!showEdit); }}
+          />
+        </Grid>
       </Grid>
     </Grid>
   )

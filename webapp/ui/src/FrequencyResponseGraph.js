@@ -54,7 +54,7 @@ class FrequencyResponseGraph extends React.Component {
     const yTicks = (isNaN(yMin) || isNaN(yMax)) ? null : [ ...Array(Math.max((yMax - yMin) / 2 - 1, 2)).keys() ].map(x => yMin + 2 + x * 2) // Every 2 dB, excluding ends
 
     return (
-      <Grid container direction={{xs: 'row', md: 'row'}} alignItems='center'>
+      <Grid container direction={{xs: 'row', md: 'row'}} alignItems='center' sx={{marginLeft: {xs: '-12px', sm: 0}}}>
         <Grid item xs={12} md={9.5} lg={10}>
           <ResponsiveContainer width='100%' aspect={2.3}>
             <LineChart

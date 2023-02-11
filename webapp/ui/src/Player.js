@@ -101,7 +101,7 @@ const Player = (props) => {
             }}
           >
             <Grid item>
-              <Typography>{playlist[trackIx].name}</Typography>
+              <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>{playlist[trackIx].name}</Typography>
             </Grid>
             <Grid item>
               <Grid
@@ -122,7 +122,7 @@ const Player = (props) => {
                     <SkipNextIcon />
                   </IconButton>
                 </Grid>
-                <Grid item sx={{width: {sm: '190px'}}}>
+                <Grid item sx={{width: {sm: '210px'}}}>
                   <LinearProgress
                     sx={{ '& .MuiLinearProgress-bar': { transition: 'none' } }}
                     variant='determinate'
@@ -130,7 +130,10 @@ const Player = (props) => {
                     value={progress}
                   />
                 </Grid>
-                <Grid item container direction='row' justifyContent='center' alignItems='center' sx={{width: '120px'}}>
+                <Grid
+                  item container direction='row' justifyContent='center' alignItems='center'
+                  sx={{width: '120px', display: {xs: 'none', sm: 'flex'}}}
+                >
                   <Grid item>
                     <IconButton color='secondary'>
                       <VolumeIcon />
@@ -140,7 +143,10 @@ const Player = (props) => {
                     <Slider value={props.gain} onChange={(e, val) => { props.onGainChange(val); }} size='medium' />
                   </Grid>
                 </Grid>
-                <Grid item container direction='row' justifyContent='center' alignItems='center' sx={{width: '120px'}}>
+                <Grid
+                  item container direction='row' justifyContent='center' alignItems='center'
+                  sx={{width: '90px'}}
+                >
                   <Grid item>
                     <Typography>EQ</Typography>
                   </Grid>

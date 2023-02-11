@@ -4,7 +4,7 @@ import {
   Alert,
   Container,
   Grid,
-  Paper, Snackbar,
+  Paper, Snackbar, styled,
 } from '@mui/material';
 import TopBar from './TopBar';
 import TargetTab from './TargetTab';
@@ -16,6 +16,18 @@ import merge from 'lodash/merge';
 import {decode} from 'base64-arraybuffer';
 import {decodeFloat16} from "./utils";
 import Player from './Player';
+
+const SmPaper = styled(Paper)(({ theme }) => ({
+  [theme.breakpoints.down('sm')]: {
+    borderRadius: 0,
+    boxShadow: 'none',
+    borderBottom: '1px dashed #aaa',
+    paddingLeft: theme.spacing(1),
+    paddingRight: theme.spacing(1),
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(2)
+  },
+}));
 
 class App extends React.Component {
   constructor(props) {
@@ -693,7 +705,7 @@ class App extends React.Component {
       (equalizer) => equalizer.label === 'Custom Parametric Eq');
     const customPeqConfig = !!customPeq ? customPeq.config : null;
     return (
-      <Grid container direction='column' rowSpacing={{xs: 1, md: 2}} sx={{pb: 12}}>
+      <Grid container direction='column' rowSpacing={{xs: 0, sm: 1, md: 2}} sx={{pb: 12}}>
         <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
           <Paper sx={{padding: 1, borderRadius: 0, background: (theme) => theme.palette.background.default}}>
             <TopBar
@@ -709,13 +721,13 @@ class App extends React.Component {
         {!!this.state.graphData && (
           <Grid item>
             <Container sx={{pl: {xs: 0, sm: 1, md: 2}, pr: {xs: 0, sm: 1, md: 2}}}>
-              <Grid container direction='column' rowSpacing={{xs: 1, md: 2}}>
+              <Grid container direction='column' rowSpacing={{xs: 0, sm: 1, md: 2}}>
                 <Grid item>
-                  <Paper
+                  <SmPaper
                     sx={{
                       pt: 1,
                       pl: {xs: 1, sm: 0, md: 0},
-                      pr: {xs: 1, sm: 1, md: 0},
+                      pr: {xs: 0, sm: 1, md: 0},
                       pb: {xs: 1, sm: 0.5, md: 0}
                     }}
                   >
@@ -724,11 +736,11 @@ class App extends React.Component {
                       smoothed={this.state.smoothed}
                       onSmoothedChanged={this.onSmoothedChanged}
                     />
-                  </Paper>
+                  </SmPaper>
                 </Grid>
-                <Grid item container direction='row' columnSpacing={{xs: 1, md: 2}} alignItems='stretch'>
-                  <Grid item xs={6}>
-                    <Paper sx={{p: {xs: 1, md: 2}}}>
+                <Grid item container direction='row' columnSpacing={{xs: 0, sm: 1, md: 2}} alignItems='stretch'>
+                  <Grid item xs={12} sm={6}>
+                    <SmPaper sx={{p: {sm: 1, md: 2}}}>
                       <TargetTab
                         compensations={Object.keys(this.state.compensations)}
                         selectedCompensation={this.state.selectedCompensation}
@@ -755,10 +767,10 @@ class App extends React.Component {
                         onEqParamChanged={this.onEqParamChanged}
                         onCompensationSelected={this.onCompensationSelected}
                       />
-                    </Paper>
+                    </SmPaper>
                   </Grid>
-                  <Grid item xs={6}>
-                    <Paper sx={{p: {xs: 1, md: 2}}}>
+                  <Grid item xs={12} sm={6}>
+                    <SmPaper sx={{p: {sm: 1, md: 2}}}>
                       <EqTab
                         selectedMeasurement={this.state.selectedMeasurement?.label}
                         equalizers={this.state.equalizers}
@@ -780,7 +792,7 @@ class App extends React.Component {
                         onCustomPeqAddFilterClick={this.onCustomPeqAddFilterClick}
                         onCustomPeqDeleteFilterClick={this.onCustomPeqDeleteFilterClick}
                       />
-                    </Paper>
+                    </SmPaper>
                   </Grid>
                 </Grid>
               </Grid>
