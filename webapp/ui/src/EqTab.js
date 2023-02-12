@@ -22,6 +22,7 @@ class EqTab extends React.Component {
             value={selectedEqualizer}
             isOptionEqualToValue={(option, value) => option.label === value.label}
             onChange={(e, val) => { this.props.onEqualizerSelected(val.label); }}
+            disableClearable
           />
         </Grid>
         {selectedEqualizer?.type === 'graphic' && (

@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import {Autocomplete, Button, Grid, IconButton, TextField, Typography} from '@mui/material';
 import {Download as DownloadIcon, Edit as EditIcon} from '@mui/icons-material';
-import {useDropzone} from "react-dropzone";
+import {useDropzone} from 'react-dropzone';
 
 function CSVAutocomplete(props) {
   const constructCsvText = (data) => {

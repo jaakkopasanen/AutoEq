@@ -1,7 +1,7 @@
 import React from 'react';
-import {Autocomplete, Button, Checkbox, FormControlLabel, FormGroup, Grid, TextField} from "@mui/material";
-import InputSlider from "./InputSlider";
-import CSVAutocomplete from "./CSVAutocomplete";
+import {Autocomplete, Checkbox, FormControlLabel, FormGroup, Grid, TextField} from "@mui/material";
+import InputSlider from './InputSlider';
+import CSVField from './CSVField';
 
 class TargetTab extends React.Component {
   constructor(props) {
@@ -25,6 +25,11 @@ class TargetTab extends React.Component {
     });
   }
 
+  onSoundSignatureChanged(frequency, raw) {
+    console.log(frequency);
+    console.log(raw);
+  }
+
   render() {
     return (
       <Grid item xs={12} sm={12} container direction='column' rowSpacing={1}>
@@ -40,10 +45,11 @@ class TargetTab extends React.Component {
                 this.props.onCompensationSelected(val)
               }}
               sx={{width: '100%'}}
+              disableClearable
             />
           </Grid>
         )}
-        <Grid item container direction='column' rowSpacing={1}>
+{/*        <Grid item container direction='column' rowSpacing={1}>
           <Grid item>
             <CSVAutocomplete
               value={this.props.selectedSoundSignature}
@@ -89,10 +95,14 @@ class TargetTab extends React.Component {
               </Button>
             </Grid>
           )}
+        </Grid>*/}
+
+        <Grid item>
+          <CSVField label='Sound signature' onChange={this.onSoundSignatureChanged} />
         </Grid>
 
         <Grid item container direction='row' columnSpacing={1}>
-          <Grid item xs={12} md={6} container direction='column' rowSpacing={1}>
+          <Grid item xs={12} md={6} container direction='column' rowSpacing={0}>
             <Grid item>
               <InputSlider
                 label='Bass boost (dB)' value={this.props.bassBoostGain} min={0} max={20} step={0.5}
@@ -118,7 +128,7 @@ class TargetTab extends React.Component {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12} md={6} container direction='column' rowSpacing={1}>
+          <Grid item xs={12} md={6} container direction='column' rowSpacing={0}>
             <Grid item>
               <InputSlider
                 label='Treble boost (dB)' value={this.props.trebleBoostGain} min={-20} max={20} step={0.5}
@@ -187,6 +197,7 @@ class TargetTab extends React.Component {
             />
           </Grid>
         </Grid>
+
         <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
           <InputSlider
             label='Treble transition region (Hz)' value={[
@@ -199,6 +210,7 @@ class TargetTab extends React.Component {
             }}
           />
         </Grid>
+
         <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
           <InputSlider
             label='Treble region gain multiplier' value={this.props.trebleGainK}
