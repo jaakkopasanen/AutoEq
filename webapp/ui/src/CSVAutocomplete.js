@@ -31,7 +31,7 @@ function CSVAutocomplete(props) {
             sx={{
               background: (theme) => theme.palette.background.default,
               '& .MuiInputBase-root': (theme) => ({
-                backgroundColor: isDragAccept ? 'rgb(228, 246, 229)' : theme.palette.background.default,
+                backgroundColor: isDragAccept ? 'rgb(249,255,249)' : theme.palette.background.default,
                 borderRadius: '4px'
               }),
               '& .MuiAutocomplete-endAdornment': { display: 'none' },

@@ -196,6 +196,7 @@ class App extends React.Component {
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
     this.onCompensationSelected = this.onCompensationSelected.bind(this);
+    this.onCompensationCreated = this.onCompensationCreated.bind(this);
     this.onEqualizerSelected = this.onEqualizerSelected.bind(this);
     this.onCustomPeqConfigChanged = this.onCustomPeqConfigChanged.bind(this);
     this.onCustomPeqConfigFilterChanged = this.onCustomPeqConfigFilterChanged.bind(this);
@@ -267,10 +268,16 @@ class App extends React.Component {
       }
     }
 
-    const base64fp16 = true;
+    const compensation = this.state.compensations[this.state.selectedCompensation].frequency?.length > 0
+      ? {
+          frequency: this.state.compensations[this.state.selectedCompensation].frequency,
+          raw: this.state.compensations[this.state.selectedCompensation].raw
+        }
+      : this.state.selectedCompensation;
 
+    const base64fp16 = true;
     const body = {
-      compensation: this.state.selectedCompensation,
+      compensation: compensation,
       //sound_signature: soundSignature,
       //sound_signature_smoothing_window_size: soundSignatureSmoothingWindowSize,
       sound_signature: soundSignature,
@@ -569,6 +576,29 @@ class App extends React.Component {
     );
   }
 
+  onCompensationCreated(name, dataPoints) {
+    const compensations = cloneDeep(this.state.compensations);
+    const frequency = [];
+    const raw = [];
+    for (const dataPoint of dataPoints) {
+      frequency.push(dataPoint.frequency);
+      raw.push(dataPoint.raw);
+    }
+    compensations[name] = {
+      frequency, raw,
+      compatible: [],
+      recommended: [],
+      bassBoost: {
+        fc: 105,
+        q: 0.7,
+        gain: 0.0
+      }
+    };
+    this.setState({ compensations }, () => {
+      this.onCompensationSelected(name);
+    })
+  }
+
   onEqParamChanged(newParams) {
     const preferredCompensations = cloneDeep(this.state.preferredCompensations);
     const compensations = cloneDeep(this.state.compensations);
@@ -729,6 +759,8 @@ class App extends React.Component {
                         trebleGainK={this.state.trebleGainK}
                         onEqParamChanged={this.onEqParamChanged}
                         onCompensationSelected={this.onCompensationSelected}
+                        onCompensationCreated={this.onCompensationCreated}
+                        onError={this.onError}
                       />
                     </SmPaper>
                   </Grid>

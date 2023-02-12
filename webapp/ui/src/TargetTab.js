@@ -1,18 +1,17 @@
 import React from 'react';
 import {
-  Autocomplete,
   Checkbox,
   FormControlLabel,
   FormGroup,
   Grid,
   IconButton,
-  TextField,
   Typography
 } from "@mui/material";
 import InputSlider from './InputSlider';
 import CSVField from './CSVField';
 import HeadphonesIcon from '@mui/icons-material/Headphones';
 import FileOpenOutlinedIcon from "@mui/icons-material/FileOpenOutlined";
+import CSVAutocomplete from "./CSVAutocomplete";
 
 class TargetTab extends React.Component {
   constructor(props) {
@@ -35,17 +34,18 @@ class TargetTab extends React.Component {
       <Grid item xs={12} sm={12} container direction='column' rowSpacing={1}>
         {!!this.props.compensations && (
           <Grid item>
-            <Autocomplete
-              renderInput={(params) =>
-                <TextField {...params} label='Target'/>
-              }
-              options={this.props.compensations}
+            <CSVAutocomplete
               value={this.props.selectedCompensation}
-              onChange={(e, val) => {
-                this.props.onCompensationSelected(val)
-              }}
+              options={this.props.compensations}
+              onChange={this.props.onCompensationSelected}
+              onOptionCreated={this.props.onCompensationCreated}
+              onError={this.props.onError}
               sx={{width: '100%'}}
-              disableClearable
+              label='Target'
+              autocompleteProps={{
+                disableClearable: true,
+                blurOnSelect: true,
+              }}
             />
           </Grid>
         )}
@@ -64,7 +64,7 @@ class TargetTab extends React.Component {
                 <Typography variant='body2' sx={{display: 'inline'}}> to use the current error curve.</Typography>
               </span>
             }
-            minRows={4} maxRows={6}
+            minRows={5} maxRows={10}
           />
           <IconButton
             variant='outlined' onClick={this.onUseCurrentErrorClicked}

@@ -68,7 +68,7 @@ const CSVField = (props) => {
     onCsvTextChanged(constructCsvText([]));
   };
 
-  const rows = Math.max(props.minRows || 2, Math.min(props.maxRows || 10, csvText.split('\n').length));
+  const rows = Math.max(props.minRows || 3, Math.min(props.maxRows || 10, csvText.split('\n').length));
   return (
     <Grid container direction='column'>
       <Grid item>
@@ -79,7 +79,7 @@ const CSVField = (props) => {
               right: '70px',
               left: {xs: '40%', sm: '50%', md: '40%'},
               color: isDragAccept ? theme => theme.palette.info : theme => theme.palette.text.secondary,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             {props.helperText || (
@@ -96,7 +96,12 @@ const CSVField = (props) => {
             onChange={e => { onCsvTextChanged(e.target.value); }}
             label={props.label || 'CSV Data'}
             error={!!error}
-            sx={{width: '100%', textField: { paddingRight: '40px'}}}
+            sx={{
+              width: '100%',
+              textField: { paddingRight: '40px'},
+              backgroundColor: isDragAccept ? 'rgb(249,255,249)' : theme => theme.palette.background.default,
+            }}
+            size='small'
           />
           <Box sx={{position: 'absolute', top: 0, right: 0}}>
             <IconButton onClick={onClearClick}>
