@@ -278,8 +278,6 @@ class App extends React.Component {
     const base64fp16 = true;
     const body = {
       compensation: compensation,
-      //sound_signature: soundSignature,
-      //sound_signature_smoothing_window_size: soundSignatureSmoothingWindowSize,
       sound_signature: soundSignature,
       sound_signature_smoothing_window_size: this.state.soundSignatureSmoothingWindowSize,
       bass_boost_gain: this.state.bassBoostGain,
