@@ -192,7 +192,6 @@ class App extends React.Component {
     this.equalize = this.equalize.bind(this);
     this.onMeasurementSelected = this.onMeasurementSelected.bind(this);
     this.onMeasurementCreated = this.onMeasurementCreated.bind(this);
-    this.onMeasurementUpdated = this.onMeasurementUpdated.bind(this);
     this.onSmoothedChanged = this.onSmoothedChanged.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
@@ -542,22 +541,6 @@ class App extends React.Component {
     });
   }
 
-  onMeasurementUpdated(label, name, frequency, raw) {
-    const measurements = cloneDeep(this.state.measurements);
-    const ix = findIndex(measurements, (measurement) => measurement.label === label);
-    const measurement = { ...measurements[ix], label: name };
-    if (!!frequency.length > 0) {
-      measurement.frequency = frequency;
-    }
-    if (raw.length > 0) {
-      measurement.raw = raw;
-    }
-    measurements[ix] = measurement;
-    this.setState({ measurements }, () => {
-      this.onMeasurementSelected(measurement);
-    });
-  }
-
   onSmoothedChanged(val) {
     this.setState({smoothed: val}, () => {
       this.equalize(true);
@@ -685,7 +668,6 @@ class App extends React.Component {
               measurements={this.state.measurements}
               onMeasurementSelected={this.onMeasurementSelected}
               onMeasurementCreated={this.onMeasurementCreated}
-              onMeasurementUpdated={this.onMeasurementUpdated}
             />
           </Paper>
         </Grid>

@@ -4,6 +4,7 @@ import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
 import ClearIcon from '@mui/icons-material/Clear';
 import {useDropzone} from 'react-dropzone';
 import isEqual from 'lodash/isEqual';
+import {parseCSV} from "./utils";
 
 const constructCsvText = (data) => {
   let csvText = 'frequency,raw\n';
@@ -36,91 +37,6 @@ const CSVField = (props) => {
       }
     }
   }, [props.value])
-
-  const findCsvSeparators = (csv) => {
-    const rows = csv.trim().split('\n')
-    const columnSeparatorCounts = { ',': 0, ';': 0, '\t': 0, '|': 0 };
-    let nNumericRows = 0;
-    for (const row of rows) {
-      if (!/^\d/.test(row)) {
-        // Skip rows which don't start with numbers
-        continue;
-      }
-      nNumericRows++;
-      for (const columnSeparator of Object.keys(columnSeparatorCounts)) {
-        if (row.includes(columnSeparator)) {
-          columnSeparatorCounts[columnSeparator] += 1;
-        }
-      }
-    }
-    const columnSeparatorCandidates = [];
-    for (const [sep, count] of Object.entries(columnSeparatorCounts)) {
-      if (count === nNumericRows) {
-        columnSeparatorCandidates.push(sep)
-      }
-    }
-    let columnSeparator = '';
-    if (columnSeparatorCandidates.includes('\t')) {
-      columnSeparator = '\t';
-    } else if (columnSeparatorCandidates.includes(';')) {
-      columnSeparator = ';';
-    } else if (columnSeparatorCandidates.includes('|')) {
-      columnSeparator = '|';
-    } else if (columnSeparatorCandidates.includes(',')) {
-      return [',', '.'];
-    } else {
-      return [null, null];
-    }
-    if (columnSeparatorCandidates.includes(',')) {
-      return [columnSeparator, ','];
-    }
-    return [columnSeparator, '.'];
-  }
-
-  const parseCSV = (csv) => {
-    csv = csv.trim();
-
-    const [columnSeparator, decimalDelimiter] = findCsvSeparators(csv);
-    if (columnSeparator === null) {
-      throw new Error('Column separator couldn\'t be detected');
-    }
-    if (decimalDelimiter === ',') {
-      csv = csv.replace(',', '.')
-    }
-
-    const rows = csv.split('\n');
-    const frequency = [];
-    const raw = [];
-    for (const row of rows) {
-      if (!/^\d/.test(row)) {
-        // Skip rows which don't start with numbers
-        continue;
-      }
-      const cells = row.trim().split(columnSeparator);
-      if (cells.length < 2) {
-        throw new Error('CSV data has row(s) with less than 2 values');
-      }
-      frequency.push(parseFloat(cells[0].trim()));
-      raw.push(parseFloat(cells[1].trim()));
-      if (isNaN(frequency[frequency.length - 1]) || isNaN(raw[raw.length - 1])) {
-        throw new Error('Non-numbers detected in CSV data');
-      }
-    }
-    const freqSet = new Set();
-    for (const freq of frequency) {
-      if ( freqSet.has(freq)) {
-        throw new Error(`Duplicate frequency "${freq}" in CSV data`);
-      }
-      freqSet.add(freq);
-    }
-
-    const dataPoints = [];
-    for (let i = 0; i < frequency.length; ++i) {
-      dataPoints.push({ frequency: frequency[i], raw: raw[i] });
-    }
-
-    return dataPoints;
-  };
 
   const onCsvTextChanged = (csv) => {
     setCsvText(csv);

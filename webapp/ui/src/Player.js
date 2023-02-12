@@ -101,7 +101,7 @@ const Player = (props) => {
             }}
           >
             <Grid item>
-              <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>{playlist[trackIx].name}</Typography>
+              <Typography variant='caption'>{playlist[trackIx].name}</Typography>
             </Grid>
             <Grid item>
               <Grid
