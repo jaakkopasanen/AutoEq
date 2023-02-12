@@ -12,7 +12,7 @@ class InputSlider extends React.Component {
               onChange={(e) => {
                   this.props.onChange([parseFloat(e.target.value), this.props.value[1]])
               }}
-              size='small' sx={{width: '75px'}} inputProps={{step: this.props.step}}
+              size='small' sx={{width: '65px'}}
               error={this.props.value[0] > this.props.value[1]}
             />
           </Grid>
@@ -41,7 +41,7 @@ class InputSlider extends React.Component {
                 this.props.onChange(parseFloat(e.target.value))
               }
             }}
-            size='small' sx={{width: '75px'}} inputProps={{step: this.props.step}}
+            size='small' sx={{width: '65px'}}
             error={Array.isArray(this.props.value) && this.props.value[0] > this.props.value[1]}
           />
         </Grid>

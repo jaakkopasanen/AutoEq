@@ -50,8 +50,8 @@ class App extends React.Component {
       preferredCompensations: [],
       selectedCompensation: null, // Name (label) of the currently selected compensation.
 
-      soundSignatures: [], // Sound signatures
-      selectedSoundSignature: null, // Currently selected sound signature
+      soundSignature: null,  // Sound signature { frequency, raw }
+      soundSignatureSmoothingWindowSize: 0.0,  // Smoothing window size for sound signature
 
       measurements: null, // { label, source, form, rig }
       selectedMeasurement: null, // { label, source, form, rig }
@@ -194,9 +194,6 @@ class App extends React.Component {
     this.onMeasurementCreated = this.onMeasurementCreated.bind(this);
     this.onMeasurementUpdated = this.onMeasurementUpdated.bind(this);
     this.onSmoothedChanged = this.onSmoothedChanged.bind(this);
-    this.onSoundSignatureSelected = this.onSoundSignatureSelected.bind(this);
-    this.onSoundSignatureCreated = this.onSoundSignatureCreated.bind(this);
-    this.onSoundSignatureUpdated = this.onSoundSignatureUpdated.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
     this.onCompensationSelected = this.onCompensationSelected.bind(this);
@@ -260,22 +257,24 @@ class App extends React.Component {
       return;
     }
 
-    const soundSignature = !!this.state.selectedSoundSignature ? { ...this.state.selectedSoundSignature } : null;
-    let soundSignatureSmoothingWindowSize;
-    if (!!soundSignature) {
-      delete soundSignature.label;
-      soundSignatureSmoothingWindowSize = soundSignature.smoothingWindowSize;
-      delete soundSignature.smoothingWindowSize;
+    const selectedEqualizer = find(this.state.equalizers, (eq) => eq.label === this.state.selectedEqualizer);
+    let soundSignature = null;
+    if (this.state.soundSignature !== null && this.state.soundSignature.length > 0) {
+      soundSignature = { frequency: [], raw: []};
+      for (let i = 0; i < this.state.soundSignature.length; ++i) {
+        soundSignature.frequency.push(this.state.soundSignature[i].frequency);
+        soundSignature.raw.push(this.state.soundSignature[i].raw);
+      }
     }
 
-    const selectedEqualizer = find(this.state.equalizers, (eq) => eq.label === this.state.selectedEqualizer);
-
-    const base64fp16 = false;
+    const base64fp16 = true;
 
     const body = {
       compensation: this.state.selectedCompensation,
+      //sound_signature: soundSignature,
+      //sound_signature_smoothing_window_size: soundSignatureSmoothingWindowSize,
       sound_signature: soundSignature,
-      sound_signature_smoothing_window_size: soundSignatureSmoothingWindowSize,
+      sound_signature_smoothing_window_size: this.state.soundSignatureSmoothingWindowSize,
       bass_boost_gain: this.state.bassBoostGain,
       bass_boost_fc: this.state.bassBoostFc,
       bass_boost_q: this.state.bassBoostQ,
@@ -580,34 +579,6 @@ class App extends React.Component {
     );
   }
 
-  onSoundSignatureSelected(soundSignature) {
-    this.setState({ selectedSoundSignature: soundSignature }, () => {
-      if (soundSignature?.label !== 'Add new') {
-        this.equalize(true);
-      }
-    });
-  }
-
-  onSoundSignatureCreated(name, frequency, raw, smoothingWindowSize) {
-    const soundSignatures = cloneDeep(this.state.soundSignatures);
-    const soundSignature = { label: name, frequency, raw, smoothingWindowSize };
-    soundSignatures.push(soundSignature);
-    this.setState(
-      { selectedSoundSignature: soundSignature, soundSignatures },
-      () => { this.equalize(true); }
-    );
-  }
-
-  onSoundSignatureUpdated(label, name, frequency, raw, smoothingWindowSize) {
-    const soundSignatures = cloneDeep(this.state.soundSignatures);
-    const soundSignature = { label: name, frequency, raw, smoothingWindowSize };
-    const ix = findIndex(soundSignatures, (ss) => ss.label === label);
-    soundSignatures[ix] = soundSignature;
-    this.setState(
-      { selectedSoundSignature: soundSignature, soundSignatures },
-      () => { this.equalize(true); });
-  }
-
   onEqParamChanged(newParams) {
     const preferredCompensations = cloneDeep(this.state.preferredCompensations);
     const compensations = cloneDeep(this.state.compensations);
@@ -739,15 +710,16 @@ class App extends React.Component {
                   </SmPaper>
                 </Grid>
                 <Grid item container direction='row' columnSpacing={{xs: 0, sm: 1, md: 2}} alignItems='stretch'>
-                  <Grid item xs={12} sm={6}>
+                  <Grid item xs={12} md={6}>
                     <SmPaper sx={{p: {sm: 1, md: 2}}}>
                       <TargetTab
                         compensations={Object.keys(this.state.compensations)}
                         selectedCompensation={this.state.selectedCompensation}
-                        soundSignatures={this.state.soundSignatures}
-                        selectedSoundSignature={this.state.selectedSoundSignature}
                         selectedMeasurement={this.state.selectedMeasurement}
+                        soundSignature={this.state.soundSignature}
+                        soundSignatureSmoothingWindowSize={this.state.soundSignatureSmoothingWindowSize}
                         graphData={this.state.graphData}
+                        smoothed={this.state.smoothed}
                         bassBoostGain={this.state.bassBoostGain}
                         bassBoostFc={this.state.bassBoostFc}
                         bassBoostQ={this.state.bassBoostQ}
@@ -761,15 +733,12 @@ class App extends React.Component {
                         trebleFLower={this.state.trebleFLower}
                         trebleFUpper={this.state.trebleFUpper}
                         trebleGainK={this.state.trebleGainK}
-                        onSoundSignatureSelected={this.onSoundSignatureSelected}
-                        onSoundSignatureCreated={this.onSoundSignatureCreated}
-                        onSoundSignatureUpdated={this.onSoundSignatureUpdated}
                         onEqParamChanged={this.onEqParamChanged}
                         onCompensationSelected={this.onCompensationSelected}
                       />
                     </SmPaper>
                   </Grid>
-                  <Grid item xs={12} sm={6}>
+                  <Grid item xs={12} md={6}>
                     <SmPaper sx={{p: {sm: 1, md: 2}}}>
                       <EqTab
                         selectedMeasurement={this.state.selectedMeasurement?.label}

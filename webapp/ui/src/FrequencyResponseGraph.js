@@ -32,6 +32,7 @@ class FrequencyResponseGraph extends React.Component {
         if (key === 'frequency'
           || (this.props.smoothed && ['raw', 'error', 'equalizedRaw'].includes(key))
           || (!this.props.smoothed && ['smoothed', 'errorSmoothed', 'equalizedSmoothed'].includes(key))
+          || isNaN(val)
         ) {
           continue;
         }
@@ -49,9 +50,13 @@ class FrequencyResponseGraph extends React.Component {
       return null;
     }
     const [dataMin, dataMax, dataRange] = this.yRange(this.props.data);
-    const yMin = Math.floor((dataMin - dataRange * 0.05) / 2) * 2; // min - 5% of range, rounded to 2 dB below
-    const yMax = Math.ceil((dataMax + dataRange * 0.05) / 2) * 2; // max + 5% of range, rounded to 2 dB above
-    const yTicks = (isNaN(yMin) || isNaN(yMax)) ? null : [ ...Array(Math.max((yMax - yMin) / 2 - 1, 2)).keys() ].map(x => yMin + 2 + x * 2) // Every 2 dB, excluding ends
+    const interval = Math.ceil(dataRange / 10);
+    // min - 5% of range, rounded to interval below
+    const yMin = Math.floor((dataMin - dataRange * 0.05) / interval) * interval;
+    // max + 5% of range, rounded to interval above
+    const yMax = Math.ceil((dataMax + dataRange * 0.05) / interval) * interval;
+    // Every interval, excluding ends
+    const yTicks = (isNaN(yMin) || isNaN(yMax)) ? null : [ ...Array(Math.max((yMax - yMin) / interval - 1, interval)).keys() ].map(x => yMin + interval + x * interval);
 
     return (
       <Grid container direction={{xs: 'row', md: 'row'}} alignItems='center' sx={{marginLeft: {xs: '-12px', sm: 0}}}>

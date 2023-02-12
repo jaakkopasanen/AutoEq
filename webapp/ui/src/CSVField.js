@@ -1,7 +1,8 @@
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {Box, Grid, IconButton, TextField, Typography} from '@mui/material';
 import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
 import {useDropzone} from 'react-dropzone';
+import isEqual from 'lodash/isEqual';
 
 const constructCsvText = (data) => {
   let csvText = 'frequency,raw\n';
@@ -9,16 +10,31 @@ const constructCsvText = (data) => {
     csvText += '20,0\n20000,0'
   } else {
     for (let i = 0; i < data.length; ++i) {
-      csvText += data[i].frequency.toFixed(1)
-        + ',' + data[i].raw.toFixed(1) + '\n';
+      const f = data[i].frequency.toString().length < data[i].frequency.toFixed(1).length
+        ? data[i].frequency.toString()
+        : data[i].frequency.toFixed(1);
+      const r = data[i].raw.toString().length < data[i].raw.toFixed(2).length
+        ? data[i].raw.toString()
+        : data[i].raw.toFixed(2);
+      csvText += f + ',' + r + '\n';
     }
   }
-  return csvText;
+  return csvText.trim();
 };
 
 const CSVField = (props) => {
   const [csvText, setCsvText] = useState(constructCsvText([]));
   const [error, setError] = useState('');
+
+  useEffect(() => {
+    if (props.value?.length > 0) {
+      //const newCsvText = constructCsvText(props.value);
+      const parsedValue = parseCSV(csvText);
+      if (!isEqual(props.value, parsedValue)) {
+        setCsvText(constructCsvText(props.value));
+      }
+    }
+  }, [props.value])
 
   const findCsvSeparators = (csv) => {
     const rows = csv.trim().split('\n')
@@ -97,16 +113,21 @@ const CSVField = (props) => {
       freqSet.add(freq);
     }
 
-    return [frequency, raw];
+    const dataPoints = [];
+    for (let i = 0; i < frequency.length; ++i) {
+      dataPoints.push({ frequency: frequency[i], raw: raw[i] });
+    }
+
+    return dataPoints;
   };
 
   const onCsvTextChanged = (csv) => {
     setCsvText(csv);
     try {
-      const [frequency, raw] = parseCSV(csv);
-      props.onChange(frequency, raw);
+      props.onChange(parseCSV(csv));
+      setError('');
     } catch (e) {
-      setError(e);
+      setError(e.toString());
     }
   };
 
@@ -126,7 +147,7 @@ const CSVField = (props) => {
   }, [])
   const {getRootProps, getInputProps, isDragAccept, open} = useDropzone({onDrop, noClick: true, noKeyboard: true});
 
-  const rows = Math.min(10, csvText.split('\n').length);
+  const rows = Math.max(2, Math.min(10, csvText.split('\n').length));
   return (
     <Grid container direction='column'>
       <Grid item>
@@ -134,7 +155,7 @@ const CSVField = (props) => {
           <Box
             sx={{
               position: 'absolute', top: '50%', transform: 'translateY(-50%)',
-              right: {xs: '20%', sm: '30px', md: '20%'},
+              right: '70px',
               left: {xs: '40%', sm: '50%', md: '40%'},
               color: isDragAccept ? theme => theme.palette.info : theme => theme.palette.text.secondary,
               textAlign: 'center'
@@ -146,11 +167,11 @@ const CSVField = (props) => {
           </Box>
           <TextField
             multiline rows={rows} value={csvText}
-            inputProps={{ style: { fontFamily: 'monospace' } }}
+            inputProps={{ style: { fontFamily: 'monospace', marginRight: '24px' } }}
             onChange={e => { onCsvTextChanged(e.target.value); }}
             label={props.label || 'CSV Data'}
             error={!!error}
-            sx={{width: '100%'}}
+            sx={{width: '100%', textField: { paddingRight: '40px'}}}
           />
           <Box sx={{position: 'absolute', top: 0, right: 0}}>
             <IconButton onClick={open}>
@@ -162,7 +183,7 @@ const CSVField = (props) => {
       </Grid>
       {!!error && (
         <Grid item>
-          <Typography color='error'>Error: {error}</Typography>
+          <Typography color='error' variant='caption'>{error}</Typography>
         </Grid>
       )}
     </Grid>

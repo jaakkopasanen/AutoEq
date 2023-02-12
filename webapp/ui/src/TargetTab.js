@@ -1,33 +1,23 @@
 import React from 'react';
-import {Autocomplete, Checkbox, FormControlLabel, FormGroup, Grid, TextField} from "@mui/material";
+import {Autocomplete, Checkbox, FormControlLabel, FormGroup, Grid, IconButton, TextField} from "@mui/material";
 import InputSlider from './InputSlider';
 import CSVField from './CSVField';
+import HeadphonesIcon from '@mui/icons-material/Headphones';
 
 class TargetTab extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      showAdvanced: false,
-      showSoundSignatureEdit: false,
-      newSoundSignatureValue: null,
-      soundSignatureSmoothingWindowSize: 0,
-    };
-    this.onUseCurrentErrorClicked = this.onUseCurrentErrorClicked.bind(this);
+    this.state = { showAdvanced: false, };
     this.onUseCurrentErrorClicked = this.onUseCurrentErrorClicked.bind(this);
   }
 
   onUseCurrentErrorClicked() {
-    this.setState({
-      newSoundSignatureValue: this.props.graphData.map(dataPoint => ({
+    this.props.onEqParamChanged({
+      soundSignature: this.props.graphData.map(dataPoint => ({
         frequency: dataPoint.frequency,
-        raw: dataPoint.error
+        raw: this.props.smoothed ? dataPoint.errorSmoothed : dataPoint.error
       }))
     });
-  }
-
-  onSoundSignatureChanged(frequency, raw) {
-    console.log(frequency);
-    console.log(raw);
   }
 
   render() {
@@ -49,60 +39,32 @@ class TargetTab extends React.Component {
             />
           </Grid>
         )}
-{/*        <Grid item container direction='column' rowSpacing={1}>
-          <Grid item>
-            <CSVAutocomplete
-              value={this.props.selectedSoundSignature}
-              newData={this.state.newSoundSignatureValue}
-              options={this.props.soundSignatures}
-              onChange={this.props.onSoundSignatureSelected}
-              autocompleteProps={{
-                sx: {background: (theme) => theme.palette.background.default},
-                size: 'large',
-                blurOnSelect: true,
-              }}
-              autocompleteLabel='Sound signature'
-              onOptionCreated={(name, frequency, raw) => {
-                this.setState({ showSoundSignatureEdit: false });
-                this.props.onSoundSignatureCreated(name, frequency, raw, this.state.soundSignatureSmoothingWindowSize);
-              }}
-              onOptionUpdated={(label, name, frequency, raw) => {
-                this.props.onSoundSignatureUpdated(label, name, frequency, raw, this.state.soundSignatureSmoothingWindowSize);
-              }}
-              showEdit={this.state.showSoundSignatureEdit}
-              onShowEditChanged={() => {
-                this.setState({ showSoundSignatureEdit: !this.state.showSoundSignatureEdit });
-              }}
-            />
-          </Grid>
-          {this.state.showSoundSignatureEdit && (
-            <Grid item>
-              <InputSlider
-                label='Smoothing window size'
-                value={this.state.soundSignatureSmoothingWindowSize}
-                onChange={(val) => { this.setState({ soundSignatureSmoothingWindowSize: val}); }}
-                step={0.01} min={0} max={2}
-              />
-            </Grid>
-          )}
-          {this.state.showSoundSignatureEdit && (
-            <Grid item>
-              <Button
-                variant='outlined' onClick={this.onUseCurrentErrorClicked}
-                disabled={this.props.graphData.filter(x => !!x.error).length === 0}
-              >
-                Use current error
-              </Button>
-            </Grid>
-          )}
-        </Grid>*/}
 
+        <Grid item sx={{position: 'relative'}}>
+          <CSVField
+            label='Sound signature'
+            onChange={(dataPoints) => { this.props.onEqParamChanged({ soundSignature: dataPoints }); }}
+            value={this.props.soundSignature}
+          />
+          <IconButton
+            variant='outlined' onClick={this.onUseCurrentErrorClicked}
+            disabled={this.props.graphData.filter(x => this.props.smoothed ? !!x.errorSmoothed : !!x.error).length === 0}
+            sx={{position: 'absolute', top: '40px', right: 0}}
+          >
+            <HeadphonesIcon />
+          </IconButton>
+        </Grid>
         <Grid item>
-          <CSVField label='Sound signature' onChange={this.onSoundSignatureChanged} />
+          <InputSlider
+            label='Sound signature smoothing'
+            value={this.props.soundSignatureSmoothingWindowSize}
+            onChange={(val) => { this.props.onEqParamChanged({ soundSignatureSmoothingWindowSize: val}); }}
+            step={0.01} min={0} max={2}
+          />
         </Grid>
 
         <Grid item container direction='row' columnSpacing={1}>
-          <Grid item xs={12} md={6} container direction='column' rowSpacing={0}>
+          <Grid item xs={12} sm={6} container direction='column' rowSpacing={0}>
             <Grid item>
               <InputSlider
                 label='Bass boost (dB)' value={this.props.bassBoostGain} min={0} max={20} step={0.5}
@@ -113,14 +75,14 @@ class TargetTab extends React.Component {
             </Grid>
             <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
               <InputSlider
-                label='Bass boost frequency (Hz)' value={this.props.bassBoostFc}
+                label='Bass freq (Hz)' value={this.props.bassBoostFc}
                 min={20.0} max={500.0} step={5.0}
                 onChange={(v) => { this.props.onEqParamChanged({ bassBoostFc: v }); }}
               />
             </Grid>
             <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
               <InputSlider
-                label='Bass boost quality (Q)' value={this.props.bassBoostQ}
+                label='Bass quality' value={this.props.bassBoostQ}
                 min={0.3} max={1.0} step={0.1}
                 onChange={(v) => {
                   this.props.onEqParamChanged({ bassBoostQ: v })
@@ -128,7 +90,7 @@ class TargetTab extends React.Component {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12} md={6} container direction='column' rowSpacing={0}>
+          <Grid item xs={12} sm={6} container direction='column' rowSpacing={0}>
             <Grid item>
               <InputSlider
                 label='Treble boost (dB)' value={this.props.trebleBoostGain} min={-20} max={20} step={0.5}
@@ -139,7 +101,7 @@ class TargetTab extends React.Component {
             </Grid>
             <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
               <InputSlider
-                label='Treble boost frequency (Hz)' value={this.props.trebleBoostFc}
+                label='Treble freq (Hz)' value={this.props.trebleBoostFc}
                 min={1000.0} max={20000.0} step={5.0}
                 onChange={(v) => {
                   this.props.onEqParamChanged({ trebleBoostFc: v })
@@ -148,7 +110,7 @@ class TargetTab extends React.Component {
             </Grid>
             <Grid item sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
               <InputSlider
-                label='Treble boost quality (Q)' value={this.props.trebleBoostQ}
+                label='Treble quality' value={this.props.trebleBoostQ}
                 min={0.3} max={1.0} step={0.1}
                 onChange={(v) => {
                   this.props.onEqParamChanged({ trebleBoostQ: v })
@@ -159,7 +121,7 @@ class TargetTab extends React.Component {
         </Grid>
 
         <Grid item container direction='row' columnSpacing={1}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} sm={6}>
             <InputSlider
               label='Tilt (db/oct)' value={this.props.tilt} min={-2} max={2} step={0.1}
               onChange={(v) => {
@@ -167,7 +129,7 @@ class TargetTab extends React.Component {
               }}
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} sm={6}>
             <InputSlider
               label='Max gain (dB)' value={this.props.maxGain} min={0} max={30} step={0.5}
               onChange={(v) => {
@@ -178,7 +140,7 @@ class TargetTab extends React.Component {
         </Grid>
 
         <Grid item container direction='row' columnSpacing={1}>
-          <Grid item xs={12} md={6} sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
+          <Grid item xs={12} sm={6} sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
               label='Smoothing window' value={this.props.windowSize}
               min={0} max={1} step={0.01}
@@ -187,9 +149,9 @@ class TargetTab extends React.Component {
               }}
             />
           </Grid>
-          <Grid item xs={12} md={6} sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
+          <Grid item xs={12} sm={6} sx={{display: this.state.showAdvanced ? 'block' : 'none'}}>
             <InputSlider
-              label='Treble smoothing window' value={this.props.trebleWindowSize}
+              label='Treble smoothing' value={this.props.trebleWindowSize}
               min={0} max={3} step={0.01}
               onChange={(v) => {
                 this.props.onEqParamChanged({ trebleWindowSize: v })
