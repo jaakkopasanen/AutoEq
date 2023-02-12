@@ -1,8 +1,18 @@
 import React from 'react';
-import {Autocomplete, Checkbox, FormControlLabel, FormGroup, Grid, IconButton, TextField} from "@mui/material";
+import {
+  Autocomplete,
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  Grid,
+  IconButton,
+  TextField,
+  Typography
+} from "@mui/material";
 import InputSlider from './InputSlider';
 import CSVField from './CSVField';
 import HeadphonesIcon from '@mui/icons-material/Headphones';
+import FileOpenOutlinedIcon from "@mui/icons-material/FileOpenOutlined";
 
 class TargetTab extends React.Component {
   constructor(props) {
@@ -45,11 +55,21 @@ class TargetTab extends React.Component {
             label='Sound signature'
             onChange={(dataPoints) => { this.props.onEqParamChanged({ soundSignature: dataPoints }); }}
             value={this.props.soundSignature}
+            helperText={
+              <span>
+                <Typography variant='body2' sx={{display: 'inline'}}>Edit the text directly, drop a CSV file or click </Typography>
+                <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
+                <Typography variant='body2' sx={{display: 'inline'}}> to open a file. Click </Typography>
+                <HeadphonesIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
+                <Typography variant='body2' sx={{display: 'inline'}}> to use the current error curve.</Typography>
+              </span>
+            }
+            minRows={4} maxRows={6}
           />
           <IconButton
             variant='outlined' onClick={this.onUseCurrentErrorClicked}
             disabled={this.props.graphData.filter(x => this.props.smoothed ? !!x.errorSmoothed : !!x.error).length === 0}
-            sx={{position: 'absolute', top: '40px', right: 0}}
+            sx={{position: 'absolute', top: '88px', right: 0}}
           >
             <HeadphonesIcon />
           </IconButton>

@@ -1,6 +1,7 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import {Box, Grid, IconButton, TextField, Typography} from '@mui/material';
 import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
+import ClearIcon from '@mui/icons-material/Clear';
 import {useDropzone} from 'react-dropzone';
 import isEqual from 'lodash/isEqual';
 
@@ -147,7 +148,11 @@ const CSVField = (props) => {
   }, [])
   const {getRootProps, getInputProps, isDragAccept, open} = useDropzone({onDrop, noClick: true, noKeyboard: true});
 
-  const rows = Math.max(2, Math.min(10, csvText.split('\n').length));
+  const onClearClick = () => {
+    onCsvTextChanged(constructCsvText([]));
+  };
+
+  const rows = Math.max(props.minRows || 2, Math.min(props.maxRows || 10, csvText.split('\n').length));
   return (
     <Grid container direction='column'>
       <Grid item>
@@ -161,9 +166,13 @@ const CSVField = (props) => {
               textAlign: 'center'
             }}
           >
-            <Typography variant='body2' sx={{display: 'inline'}}>Edit the text directly, drop a CSV file or click </Typography>
-            <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
-            <Typography variant='body2' sx={{display: 'inline'}}> to open a file.</Typography>
+            {props.helperText || (
+              <span>
+                <Typography variant='body2' sx={{display: 'inline'}}>Edit the text directly, drop a CSV file or click </Typography>
+                <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
+                <Typography variant='body2' sx={{display: 'inline'}}> to open a file.</Typography>
+              </span>
+            )}
           </Box>
           <TextField
             multiline rows={rows} value={csvText}
@@ -174,6 +183,11 @@ const CSVField = (props) => {
             sx={{width: '100%', textField: { paddingRight: '40px'}}}
           />
           <Box sx={{position: 'absolute', top: 0, right: 0}}>
+            <IconButton onClick={onClearClick}>
+              <ClearIcon />
+            </IconButton>
+          </Box>
+          <Box sx={{position: 'absolute', top: 40, right: 0}}>
             <IconButton onClick={open}>
               <FileOpenOutlinedIcon />
             </IconButton>
