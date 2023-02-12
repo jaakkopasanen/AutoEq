@@ -207,6 +207,7 @@ class App extends React.Component {
     this.initConvolutionNode = this.initConvolutionNode.bind(this);
     this.connectEqNodes = this.connectEqNodes.bind(this);
     this.disconnectEqNodes = this.disconnectEqNodes.bind(this);
+    this.onError = this.onError.bind(this);
   }
 
   async fetchMeasurements() {
@@ -504,7 +505,7 @@ class App extends React.Component {
     this.preampNode.connect(this.audioContext.destination);
   }
 
-  async onMeasurementSelected(measurement) {
+  onMeasurementSelected(measurement) {
     if (measurement === null) {
       this.setState({
         selectedMeasurement: null,
@@ -526,8 +527,14 @@ class App extends React.Component {
     });
   }
 
-  onMeasurementCreated(name, frequency, raw) {
+  onMeasurementCreated(name, dataPoints) {
     const measurements = cloneDeep(this.state.measurements);
+    const frequency = [];
+    const raw = [];
+    for (const dataPoint of dataPoints) {
+      frequency.push(dataPoint.frequency);
+      raw.push(dataPoint.raw);
+    }
     const measurement = {
       label: name,
       form: 'unknown',
@@ -653,6 +660,10 @@ class App extends React.Component {
     }
   }
 
+  onError(err) {
+    this.setState({ isSnackbarOpen: true, snackbarMessage: err.toString()});
+  }
+
   render() {
     const customPeq = find(
       this.state.equalizers,
@@ -668,6 +679,7 @@ class App extends React.Component {
               measurements={this.state.measurements}
               onMeasurementSelected={this.onMeasurementSelected}
               onMeasurementCreated={this.onMeasurementCreated}
+              onError={this.onError}
             />
           </Paper>
         </Grid>
@@ -766,11 +778,12 @@ class App extends React.Component {
         <Grid item>
           <Snackbar
             open={this.state.isSnackbarOpen}
-            onClose={() => { this.setState({ isSnackBarOpen: false }); }}
+            onClose={() => { this.setState({ isSnackbarOpen: false }); }}
             sx={{background: theme => theme.palette.background.default}}
+            anchorOrigin={{ vertical: 'top', horizontal: 'center'}}
           >
             <Alert
-              onClose={() => { this.setState({ isSnackBarOpen: false }); }}
+              onClose={() => { this.setState({ isSnackbarOpen: false }); }}
               severity='error' variant='outlined' sx={{ width: '100%'}}
             >
               {this.state.snackbarMessage}

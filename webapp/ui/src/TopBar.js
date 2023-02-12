@@ -35,6 +35,7 @@ const TopBar = (props) => {
           }}
           label='Select headphones'
           onOptionCreated={props.onMeasurementCreated}
+          onError={props.onError}
         />
       </Grid>
       <Grid item>

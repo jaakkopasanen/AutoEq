@@ -11,14 +11,12 @@ function CSVAutocomplete(props) {
       reader.onabort = () => console.log('file reading was aborted');
       reader.onerror = () => console.log('file reading has failed');
       reader.onload = () => {
-        const dataPoints = parseCSV(reader.result);
-        const frequency = [];
-        const raw = [];
-        for (const dataPoint of dataPoints) {
-          frequency.push(dataPoint.frequency);
-          raw.push(dataPoint.raw);
+        try {
+          const dataPoints = parseCSV(reader.result);
+          props.onOptionCreated(file.name.replace(/\.\w+$/, ''), dataPoints);
+        } catch (err) {
+          props.onError(err);
         }
-        props.onOptionCreated(file.name.replace(/\.\w+$/, ''), frequency, raw);
       }
       reader.readAsText(file);
     });
@@ -45,7 +43,7 @@ function CSVAutocomplete(props) {
         value={props.value}
         options={props.options}
         isOptionEqualToValue={(option, value) => option.label === value.label}
-        onChange={props.onChange}
+        onChange={(e, val) => { props.onChange(val); }}
         { ...props.autocompleteProps }
       />
       <IconButton onClick={open} sx={{position: 'absolute', top: '50%', transform: 'translateY(-50%)', right: '0px'}}>

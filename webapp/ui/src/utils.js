@@ -1,3 +1,5 @@
+import * as Papa from 'papaparse';
+
 const decodeFloat16 = (binary) => {
   'use strict';
   const exponent = (binary & 0x7C00) >> 10;
@@ -63,49 +65,21 @@ const findCsvSeparators = (csv) => {
   return [columnSeparator, '.'];
 };
 
-const parseCSV = (csv) => {
-  csv = csv.trim();
-
-  const [columnSeparator, decimalDelimiter] = findCsvSeparators(csv);
+const parseCSV = (csvString) => {
+  // Remove lines which don't start with a digit to get rid of comments
+  csvString = csvString.trim().split('\n').filter(row => /^\d/.test(row)).join('\n');
+  const [columnSeparator, decimalDelimiter] = findCsvSeparators(csvString);
   if (columnSeparator === null) {
     throw new Error('Column separator couldn\'t be detected');
   }
   if (decimalDelimiter === ',') {
-    csv = csv.replace(',', '.')
+    csvString = csvString.replace(',', '.');
   }
-
-  const rows = csv.split('\n');
-  const frequency = [];
-  const raw = [];
-  for (const row of rows) {
-    if (!/^\d/.test(row)) {
-      // Skip rows which don't start with numbers
-      continue;
-    }
-    const cells = row.trim().split(columnSeparator);
-    if (cells.length < 2) {
-      throw new Error('CSV data has row(s) with less than 2 values');
-    }
-    frequency.push(parseFloat(cells[0].trim()));
-    raw.push(parseFloat(cells[1].trim()));
-    if (isNaN(frequency[frequency.length - 1]) || isNaN(raw[raw.length - 1])) {
-      throw new Error('Non-numbers detected in CSV data');
-    }
+  const parseResult = Papa.parse(csvString, { delimiter: columnSeparator, header: false});
+  if (parseResult.errors.length > 0) {
+    throw new Error(parseResult.errors[0].message);
   }
-  const freqSet = new Set();
-  for (const freq of frequency) {
-    if ( freqSet.has(freq)) {
-      throw new Error(`Duplicate frequency "${freq}" in CSV data`);
-    }
-    freqSet.add(freq);
-  }
-
-  const dataPoints = [];
-  for (let i = 0; i < frequency.length; ++i) {
-    dataPoints.push({ frequency: frequency[i], raw: raw[i] });
-  }
-
-  return dataPoints;
+  return parseResult.data.map(row => ({ frequency: row[0], raw: row[1] }));
 };
 
 export { decodeFloat16, downloadAsFile, parseCSV };
