@@ -1,22 +1,28 @@
 import React from 'react';
 import {
-  Checkbox,
+  Button,
+  Checkbox, Chip,
   FormControlLabel,
   FormGroup,
   Grid,
   IconButton, Tooltip,
   Typography
-} from "@mui/material";
+} from '@mui/material';
 import InputSlider from './InputSlider';
 import CSVField from './CSVField';
 import HeadphonesIcon from '@mui/icons-material/Headphones';
-import FileOpenOutlinedIcon from "@mui/icons-material/FileOpenOutlined";
+import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
+import AddIcon from '@mui/icons-material/Add';
 import CSVAutocomplete from "./CSVAutocomplete";
+import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 
 class TargetTab extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showAdvanced: false, };
+    this.state = {
+      showAdvanced: false,
+      addingNewSoundProfile: false
+    };
     this.onUseCurrentErrorClicked = this.onUseCurrentErrorClicked.bind(this);
   }
 
@@ -32,6 +38,59 @@ class TargetTab extends React.Component {
   render() {
     return (
       <Grid item xs={12} sm={12} container direction='column' rowSpacing={1}>
+        <Grid
+          item
+          container direction='row' justifyContent='space-between' alignItems='center' columnSpacing={1}
+          sx={{mb: theme => theme.spacing(1)}}
+        >
+          {this.props.soundProfiles.length === 0 && <Grid item><Typography variant='caption'>Profiles</Typography></Grid>}
+          {this.props.soundProfiles.length > 0 && (
+            <Grid item container direction='row' columnSpacing={1} alignItems='center' sx={{width: 'calc(100% - 40px)'}}>
+              {this.props.soundProfiles.map((soundProfile) => (
+                <Grid item key={soundProfile.name}>
+                  <Chip
+                    label={soundProfile.name}
+                    onClick={() => { this.props.onSoundProfileSelected(soundProfile.name); }}
+                    onDelete={soundProfile.name !== 'Default' ? () => { this.props.onSoundProfileDeleted(soundProfile.name); } : null}
+                    color={this.props.selectedSoundProfile === soundProfile.name ? 'primary' : 'default'}
+                    variant='outlined'
+                  />
+                  {this.props.selectedSoundProfile === soundProfile.name && this.props.selectedSoundProfile !== 'Default' && (
+                    <Tooltip title={`Save current settings to profile ${soundProfile.name}`}>
+                      <IconButton
+                        onClick={() => this.props.onSoundProfileSaved(soundProfile.name)}
+                        color='default'
+                        sx={{p: '4px'}}
+                      >
+                        <SaveOutlinedIcon />
+                      </IconButton>
+                    </Tooltip>
+                  )}
+                </Grid>
+              ))
+              }
+            </Grid>
+          )}
+
+          <Grid item>
+            <Tooltip title='Create new profile with current settings' placement='left'>
+              <Button
+                variant='outlined'
+                sx={{
+                  minWidth: '32px',
+                  width: '32px',
+                  height: '32px',
+                  borderRadius: '16px',
+                  padding: 0
+                }}
+                onClick={() => { this.props.onSoundProfileCreated(); }}
+              >
+                <AddIcon variant='outlined' />
+              </Button>
+            </Tooltip>
+          </Grid>
+        </Grid>
+
         {!!this.props.compensations && (
           <Grid item>
             <CSVAutocomplete

@@ -45,6 +45,9 @@ class App extends React.Component {
       isSnackbarOpen: false,
       snackbarMessage: '',
 
+      soundProfiles: [],
+      selectedSoundProfile: null,
+
       compensations: [],
       // Sound signatures preferred for each measurement rig: {source: {form: {rig: label}}
       preferredCompensations: [],
@@ -195,6 +198,11 @@ class App extends React.Component {
     this.onSmoothedChanged = this.onSmoothedChanged.bind(this);
     this.onEqParamChanged = this.onEqParamChanged.bind(this);
     this.fetchCompensations = this.fetchCompensations.bind(this);
+    this.captureSoundProfile = this.captureSoundProfile.bind(this);
+    this.onSoundProfileSelected = this.onSoundProfileSelected.bind(this);
+    this.onSoundProfileCreated = this.onSoundProfileCreated.bind(this);
+    this.onSoundProfileSaved = this.onSoundProfileSaved.bind(this);
+    this.onSoundProfileDeleted = this.onSoundProfileDeleted.bind(this);
     this.onCompensationSelected = this.onCompensationSelected.bind(this);
     this.onCompensationCreated = this.onCompensationCreated.bind(this);
     this.onEqualizerSelected = this.onEqualizerSelected.bind(this);
@@ -559,6 +567,57 @@ class App extends React.Component {
     });
   }
 
+  onSoundProfileSelected(name) {
+    const newState = cloneDeep(find(this.state.soundProfiles, (p) => p.name === name));
+    delete newState.name;
+    newState.selectedSoundProfile = name;
+    this.setState(newState, () => {
+      this.equalize(true);
+    });
+  }
+
+  captureSoundProfile() {
+    const keys = [
+      'selectedCompensation', 'preferredCompensations',
+      'soundSignature', 'soundSignatureSmoothingWindowSize',
+      'bassBoostGain', 'bassBoostFc', 'bassBoostQ',
+      'trebleBoostGain', 'trebleBoostFc', 'trebleBoostQ',
+      'tilt', 'maxGain',
+      'windowSize', 'trebleWindowSize', 'trebleFLower', 'trebleFUpper', 'trebleGainK',
+    ];
+    const profile = {};
+    for (const key of keys) {
+      profile[key] = this.state[key];
+    }
+    return cloneDeep(profile);
+  }
+
+  onSoundProfileCreated() {
+    const newSoundProfile = this.captureSoundProfile();
+    const soundProfiles = cloneDeep(this.state.soundProfiles);
+    newSoundProfile.name = soundProfiles.length;
+    soundProfiles.push(newSoundProfile);
+    this.setState({ soundProfiles }, () => {
+      this.onSoundProfileSelected(newSoundProfile.name);
+    });
+  }
+
+  onSoundProfileSaved(name) {
+    const profile = this.captureSoundProfile();
+    profile.name = name;
+    const soundProfiles = cloneDeep(this.state.soundProfiles);
+    const ix = findIndex(soundProfiles, (p) => p.name === name);
+    soundProfiles[ix] = profile;
+    this.setState({ soundProfiles });
+  }
+
+  onSoundProfileDeleted(name) {
+    const soundProfiles = cloneDeep(this.state.soundProfiles);
+    const ix = findIndex(soundProfiles, (p) => p.name === name);
+    soundProfiles.splice(ix, 1);
+    this.setState({ soundProfiles });
+  }
+
   onCompensationSelected(label) {
     const preferredCompensations = cloneDeep(this.state.preferredCompensations);
     preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig] = label;
@@ -735,13 +794,27 @@ class App extends React.Component {
                   <Grid item xs={12} md={6}>
                     <SmPaper sx={{p: {sm: 1, md: 2}}}>
                       <TargetTab
+                        selectedMeasurement={this.state.selectedMeasurement}
+
+                        soundProfiles={this.state.soundProfiles}
+                        selectedSoundProfile={this.state.selectedSoundProfile}
+                        onSoundProfileSelected={this.onSoundProfileSelected}
+                        onSoundProfileCreated={this.onSoundProfileCreated}
+                        onSoundProfileSaved={this.onSoundProfileSaved}
+                        onSoundProfileDeleted={this.onSoundProfileDeleted}
+                        captureSoundProfile={this.captureSoundProfile}
+
                         compensations={Object.keys(this.state.compensations)}
                         selectedCompensation={this.state.selectedCompensation}
-                        selectedMeasurement={this.state.selectedMeasurement}
+                        onCompensationSelected={this.onCompensationSelected}
+                        onCompensationCreated={this.onCompensationCreated}
+
                         soundSignature={this.state.soundSignature}
                         soundSignatureSmoothingWindowSize={this.state.soundSignatureSmoothingWindowSize}
+
                         graphData={this.state.graphData}
                         smoothed={this.state.smoothed}
+
                         bassBoostGain={this.state.bassBoostGain}
                         bassBoostFc={this.state.bassBoostFc}
                         bassBoostQ={this.state.bassBoostQ}
@@ -756,8 +829,7 @@ class App extends React.Component {
                         trebleFUpper={this.state.trebleFUpper}
                         trebleGainK={this.state.trebleGainK}
                         onEqParamChanged={this.onEqParamChanged}
-                        onCompensationSelected={this.onCompensationSelected}
-                        onCompensationCreated={this.onCompensationCreated}
+
                         onError={this.onError}
                       />
                     </SmPaper>
