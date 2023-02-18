@@ -99,7 +99,7 @@ const CSVField = (props) => {
             sx={{
               width: '100%',
               textField: { paddingRight: '40px'},
-              backgroundColor: isDragAccept ? 'rgb(249,255,249)' : theme => theme.palette.background.default,
+              backgroundColor: isDragAccept ? 'rgba(225, 255, 214, 0.2)' : 'rgba(0, 0, 0, 0.0)',
             }}
             size='small'
           />
