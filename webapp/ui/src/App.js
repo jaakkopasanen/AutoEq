@@ -190,6 +190,11 @@ class App extends React.Component {
       gain: this.gainNode.gain.value * 100,
       isEqOn: false,
     };
+
+    if (window.localStorage.getItem('soundProfiles')) {
+      this.state.soundProfiles = JSON.parse(window.localStorage.getItem('soundProfiles'));
+    }
+
     this.equalizeTimer = null;
     this.fetchMeasurements = this.fetchMeasurements.bind(this);
     this.equalize = this.equalize.bind(this);
@@ -597,6 +602,7 @@ class App extends React.Component {
     const soundProfiles = cloneDeep(this.state.soundProfiles);
     newSoundProfile.name = soundProfiles.length;
     soundProfiles.push(newSoundProfile);
+    window.localStorage.setItem('soundProfiles', JSON.stringify(soundProfiles));
     this.setState({ soundProfiles }, () => {
       this.onSoundProfileSelected(newSoundProfile.name);
     });
@@ -608,6 +614,7 @@ class App extends React.Component {
     const soundProfiles = cloneDeep(this.state.soundProfiles);
     const ix = findIndex(soundProfiles, (p) => p.name === name);
     soundProfiles[ix] = profile;
+    window.localStorage.setItem('soundProfiles', JSON.stringify(soundProfiles));
     this.setState({ soundProfiles });
   }
 
