@@ -783,7 +783,11 @@ class App extends React.Component {
     return (
       <Grid container direction='column' rowSpacing={{xs: 0, sm: 1, md: 2}} sx={{pb: 12}}>
         <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
-          <Paper sx={{padding: 1, borderRadius: 0, background: (theme) => theme.palette.background.default}}>
+          <Paper sx={{
+            padding: '8px 16px',
+            borderRadius: 0,
+            background: (theme) => theme.palette.background.default}}
+          >
             <TopBar
               selectedMeasurement={this.state.selectedMeasurement}
               isMeasurementSelected={!!this.state.selectedMeasurement}
@@ -796,7 +800,7 @@ class App extends React.Component {
         </Grid>
         {!!this.state.graphData && (
           <Grid item>
-            <Container sx={{pl: {xs: 0, sm: 1, md: 2}, pr: {xs: 0, sm: 1, md: 2}}}>
+            <Container sx={{pl: {xs: 0, sm: 2, md: 3}, pr: {xs: 0, sm: 1, md: 3}}}>
               <Grid container direction='column' rowSpacing={{xs: 0, sm: 1, md: 2}}>
                 <Grid item>
                   <SmPaper

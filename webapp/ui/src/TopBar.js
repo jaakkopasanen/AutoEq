@@ -19,7 +19,10 @@ const TopBar = (props) => {
   return (
     <Grid
       item container direction='row' justifyContent='space-between' alignItems='center'
-      sx={{overflowY: 'visible', display: {xs: props.isMeasurementSelected ? 'none' : 'flex', sm: 'flex'}}}>
+      sx={{
+        overflowY: 'visible',
+        display: {xs: props.isMeasurementSelected ? 'none' : 'flex', sm: 'flex'},
+      }}>
       <Grid item>
         <Typography variant='h1' sx={{fontSize: '2rem'}}>AEq</Typography>
       </Grid>
