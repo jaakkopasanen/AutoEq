@@ -70,7 +70,8 @@ const Player = (props) => {
     return () => {
       clearInterval(progressInterval);
     };
-  }, [trackIx, isPlaying, playlist, progressInterval]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [trackIx, isPlaying, playlist]);
 
   useEffect(() => {
     if (playlist.length) return;
