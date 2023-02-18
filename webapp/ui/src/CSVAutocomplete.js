@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-import {Autocomplete, Box, IconButton, TextField,} from '@mui/material';
+import {Autocomplete, Box, IconButton, TextField, Tooltip,} from '@mui/material';
 import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
 import {useDropzone} from 'react-dropzone';
 import {parseCSV} from './utils';
@@ -20,7 +20,7 @@ function CSVAutocomplete(props) {
       }
       reader.readAsText(file);
     });
-  }, [])
+  }, [props])
   const {getRootProps, getInputProps, open, isDragAccept} = useDropzone({onDrop, noClick: true, noKeyboard: true})
 
   return (
@@ -46,9 +46,11 @@ function CSVAutocomplete(props) {
         onChange={(e, val) => { props.onChange(val); }}
         { ...props.autocompleteProps }
       />
-      <IconButton onClick={open} sx={{position: 'absolute', top: '50%', transform: 'translateY(-50%)', right: '0px'}}>
-        <FileOpenOutlinedIcon />
-      </IconButton>
+      <Tooltip title='Open CSV file' placement='left'>
+        <IconButton onClick={open} sx={{position: 'absolute', top: '50%', transform: 'translateY(-50%)', right: '0px'}}>
+          <FileOpenOutlinedIcon />
+        </IconButton>
+      </Tooltip>
       <input { ...getInputProps() } />
     </Box>
   );

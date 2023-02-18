@@ -547,7 +547,7 @@ class App extends React.Component {
       source: 'unknown',
       frequency, raw
     };
-    measurements.push(measurement);
+    measurements.splice(0, 0, measurement);
     this.setState({ measurements }, () => {
       this.onMeasurementSelected(measurement);
     });

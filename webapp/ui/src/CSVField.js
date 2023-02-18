@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {Box, Grid, IconButton, TextField, Typography} from '@mui/material';
+import {Box, Grid, IconButton, TextField, Tooltip, Typography} from '@mui/material';
 import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
 import ClearIcon from '@mui/icons-material/Clear';
 import {useDropzone} from 'react-dropzone';
@@ -36,9 +36,9 @@ const CSVField = (props) => {
         setCsvText(constructCsvText(props.value));
       }
     }
-  }, [props.value])
+  }, [props.value, csvText])
 
-  const onCsvTextChanged = (csv) => {
+  const onCsvTextChanged = useCallback((csv) => {
     setCsvText(csv);
     try {
       props.onChange(parseCSV(csv));
@@ -46,7 +46,7 @@ const CSVField = (props) => {
     } catch (e) {
       setError(e.toString());
     }
-  };
+  }, [props]);
 
   const onDrop = useCallback((acceptedFiles) => {
     acceptedFiles.forEach((file) => {
@@ -61,7 +61,7 @@ const CSVField = (props) => {
       }
       reader.readAsText(file);
     });
-  }, [])
+  }, [props, onCsvTextChanged])
   const {getRootProps, getInputProps, isDragAccept, open} = useDropzone({onDrop, noClick: true, noKeyboard: true});
 
   const onClearClick = () => {
@@ -104,14 +104,18 @@ const CSVField = (props) => {
             size='small'
           />
           <Box sx={{position: 'absolute', top: 0, right: 0}}>
-            <IconButton onClick={onClearClick}>
-              <ClearIcon />
-            </IconButton>
+            <Tooltip title='Clear' placement='left'>
+              <IconButton onClick={onClearClick}>
+                <ClearIcon />
+              </IconButton>
+            </Tooltip>
           </Box>
           <Box sx={{position: 'absolute', top: 40, right: 0}}>
-            <IconButton onClick={open}>
-              <FileOpenOutlinedIcon />
-            </IconButton>
+            <Tooltip title='Open CSV file' placement='left'>
+              <IconButton onClick={open}>
+                <FileOpenOutlinedIcon />
+              </IconButton>
+            </Tooltip>
           </Box>
           <input { ...getInputProps() } />
         </Box>

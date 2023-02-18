@@ -1,7 +1,6 @@
 import * as Papa from 'papaparse';
 
 const decodeFloat16 = (binary) => {
-  'use strict';
   const exponent = (binary & 0x7C00) >> 10;
   const fraction = binary & 0x03FF;
   return (binary >> 15 ? -1 : 1) * (
@@ -27,7 +26,7 @@ const downloadAsFile = (data, fileType, fileName) => {
 
 const findCsvSeparators = (csv) => {
   const rows = csv.trim().split('\n')
-  const columnSeparatorCounts = { ',': 0, ';': 0, '\t': 0, '|': 0 };
+  const columnSeparatorCounts = { ',': 0, ';': 0, '\t': 0, '|': 0, ' ': 0 };
   let nNumericRows = 0;
   for (const row of rows) {
     if (!/^\d/.test(row)) {
@@ -54,6 +53,8 @@ const findCsvSeparators = (csv) => {
     columnSeparator = ';';
   } else if (columnSeparatorCandidates.includes('|')) {
     columnSeparator = '|';
+  } else if (columnSeparatorCandidates.includes(' ')) {
+    columnSeparator = ' ';
   } else if (columnSeparatorCandidates.includes(',')) {
     return [',', '.'];
   } else {
@@ -73,13 +74,13 @@ const parseCSV = (csvString) => {
     throw new Error('Column separator couldn\'t be detected');
   }
   if (decimalDelimiter === ',') {
-    csvString = csvString.replace(',', '.');
+    csvString = csvString.replaceAll(',', '.');
   }
   const parseResult = Papa.parse(csvString, { delimiter: columnSeparator, header: false});
   if (parseResult.errors.length > 0) {
     throw new Error(parseResult.errors[0].message);
   }
-  return parseResult.data.map(row => ({ frequency: row[0], raw: row[1] }));
+  return parseResult.data.map(row => ({ frequency: parseFloat(row[0]), raw: parseFloat(row[1]) }));
 };
 
 export { decodeFloat16, downloadAsFile, parseCSV };

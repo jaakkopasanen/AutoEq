@@ -4,7 +4,7 @@ import {
   FormControlLabel,
   FormGroup,
   Grid,
-  IconButton,
+  IconButton, Tooltip,
   Typography
 } from "@mui/material";
 import InputSlider from './InputSlider';
@@ -66,13 +66,15 @@ class TargetTab extends React.Component {
             }
             minRows={5} maxRows={10}
           />
-          <IconButton
-            variant='outlined' onClick={this.onUseCurrentErrorClicked}
-            disabled={this.props.graphData.filter(x => this.props.smoothed ? !!x.errorSmoothed : !!x.error).length === 0}
-            sx={{position: 'absolute', top: '88px', right: 0}}
-          >
-            <HeadphonesIcon />
-          </IconButton>
+          <Tooltip title='Use current error' placement='left'>
+            <IconButton
+              variant='outlined' onClick={this.onUseCurrentErrorClicked}
+              disabled={this.props.graphData.filter(x => this.props.smoothed ? !!x.errorSmoothed : !!x.error).length === 0}
+              sx={{position: 'absolute', top: '88px', right: 0}}
+            >
+              <HeadphonesIcon />
+            </IconButton>
+          </Tooltip>
         </Grid>
         <Grid item>
           <InputSlider

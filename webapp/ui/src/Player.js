@@ -70,7 +70,7 @@ const Player = (props) => {
     return () => {
       clearInterval(progressInterval);
     };
-  }, [trackIx, isPlaying]);
+  }, [trackIx, isPlaying, playlist, progressInterval]);
 
   useEffect(() => {
     if (playlist.length) return;
@@ -82,7 +82,7 @@ const Player = (props) => {
       }
       setPlaylist(playlist);
     });
-  }, []);
+  }, [playlist.length]);
 
   if (!playlist.length) return null;
 
