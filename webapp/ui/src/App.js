@@ -480,8 +480,12 @@ class App extends React.Component {
     } else if (!!data.fir) {
       await this.audioContext.decodeAudioData(decode(data.fir), (audioBuffer) => {
         newState.firAudioBuffer = audioBuffer;
-        this.eqNodes = [this.initConvolutionNode(audioBuffer)];
-        this.preampNode.gain.value = 10 ** (-Math.max(...data.fr.convolution_eq) / 20);
+        const preamp = 10 ** (-Math.max(...fr.convolution_eq) / 20);
+        // Add node for reverting preamp node when eq is activated because FIR filters are already normalized
+        const unnormalizer = this.audioContext.createGain();
+        unnormalizer.gain.value = 1 / preamp;
+        this.eqNodes = [this.initConvolutionNode(audioBuffer), unnormalizer];
+        this.preampNode.gain.value = preamp;
       });
     }
     if (this.state.isEqOn) {
