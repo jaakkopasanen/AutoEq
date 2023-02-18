@@ -100,6 +100,7 @@ class EqAppParametricEq extends React.Component {
                     }}
                     label='Min frequency (Hz)' size='small' sx={{width: '100%'}} type='number'
                     inputProps={{step: 1.0}}
+                    error={this.props.config.optimizer?.maxF !== null && this.props.config.optimizer?.minF > this.props.config.optimizer?.maxF}
                   />
                 </Grid>
                 <Grid item xs={6}>
@@ -121,7 +122,7 @@ class EqAppParametricEq extends React.Component {
                       this.props.onConfigChanged({optimizer: { maxTime: this.parseTextFieldOutput(e.target.value) / 1000 } })
                     }}
                     label='Max time (ms)' size='small' sx={{width: '100%'}} type='number'
-                    inputProps={{step: 10.0}}
+                    inputProps={{step: 10.0}} error={this.props.config.optimizer?.maxTime > 0.5}
                   />
                 </Grid>
                 <Grid item xs={4}>
@@ -147,93 +148,10 @@ class EqAppParametricEq extends React.Component {
               </Grid>
             </Grid>
             <Grid item container direction='column' rowSpacing={1}>
-              <Grid item><Typography variant='h6'>Filter Defaults</Typography></Grid>
-              <Grid item><Typography sx={{fontSize: '0.75rem', color: 'grey.700'}}>Will be used for missing values in filters</Typography></Grid>
-              <Grid item>
-                <ToggleButtonGroup
-                  value={this.props.config.filterDefaults?.type}
-                  exclusive
-                  onChange={(e, val) => {
-                    this.props.onConfigChanged({ filterDefaults: { type: val } });
-                  }}
-                  size='small'
-                  color='primary'
-                >
-                  <ToggleButton value='LOW_SHELF'>Low-shelf</ToggleButton>
-                  <ToggleButton value='PEAKING'>Peaking</ToggleButton>
-                  <ToggleButton value='HIGH_SHELF'>High-shelf</ToggleButton>
-                </ToggleButtonGroup>
-              </Grid>
-              <Grid item container direction='row' columnSpacing={1}>
-                <Grid item xs={4}>
-                  <TextField
-                    value={this.parseTextFieldInput(this.props.config.filterDefaults?.minFc)}
-                    onChange={(e) => {
-                      this.props.onConfigChanged({ filterDefaults: { minFc: this.parseTextFieldOutput(e.target.value) } })
-                    }}
-                    label='Min Fc' size='small' sx={{width: '100%'}} type='number'
-                    inputProps={{step: 1.0}}
-                  />
-                </Grid>
-                <Grid item xs={4}>
-                  <TextField
-                    value={this.parseTextFieldInput(this.props.config.filterDefaults?.minQ)}
-                    onChange={(e) => {
-                      this.props.onConfigChanged({ filterDefaults: { minQ: this.parseTextFieldOutput(e.target.value) } })
-                    }}
-                    label='Min Q' size='small' sx={{width: '100%'}} type='number'
-                    inputProps={{step: 0.01}}
-                  />
-                </Grid>
-                <Grid item xs={4}>
-                  <TextField
-                    value={this.parseTextFieldInput(this.props.config.filterDefaults?.minGain)}
-                    onChange={(e) => {
-                      this.props.onConfigChanged({ filterDefaults: { minGain: this.parseTextFieldOutput(e.target.value) } })
-                    }}
-                    label='Min gain' size='small' sx={{width: '100%'}} type='number'
-                    inputProps={{step: 0.1}}
-                  />
-                </Grid>
-              </Grid>
-              <Grid item container direction='row' columnSpacing={1}>
-                <Grid item xs={4}>
-                  <TextField
-                    value={this.parseTextFieldInput(this.props.config.filterDefaults?.maxFc)}
-                    onChange={(e) => {
-                      this.props.onConfigChanged({ filterDefaults: { maxFc: this.parseTextFieldOutput(e.target.value) } })
-                    }}
-                    label='Max Fc' size='small' sx={{width: '100%'}} type='number'
-                    inputProps={{step: 1.0}}
-                  />
-                </Grid>
-                <Grid item xs={4}>
-                  <TextField
-                    value={this.parseTextFieldInput(this.props.config.filterDefaults?.maxQ)}
-                    onChange={(e) => {
-                      this.props.onConfigChanged({ filterDefaults: { maxQ: this.parseTextFieldOutput(e.target.value) } })
-                    }}
-                    label='Max Q' size='small' sx={{width: '100%'}} type='number'
-                    inputProps={{step: 0.01}}
-                  />
-                </Grid>
-                <Grid item xs={4}>
-                  <TextField
-                    value={this.parseTextFieldInput(this.props.config.filterDefaults?.maxGain)}
-                    onChange={(e) => {
-                      this.props.onConfigChanged({ filterDefaults: { maxGain: this.parseTextFieldOutput(e.target.value) } })
-                    }}
-                    label='Max gain' size='small' sx={{width: '100%'}} type='number'
-                    inputProps={{step: 0.1}}
-                  />
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid item container direction='column' rowSpacing={1}>
               <Grid item><Typography variant='h6'>Filters</Typography></Grid>
               <Grid item>
                 <Typography sx={{fontSize: '0.75rem', color: 'grey.700'}}>
-                  Add as many filters as you like. Fixed value for Fc, Q or gain will disable optimization for it.
+                  Add as many filters as you like
                 </Typography>
               </Grid>
               {this.props.config?.filters?.map((filter, i) => (
@@ -268,6 +186,7 @@ class EqAppParametricEq extends React.Component {
                         }}
                         label='Min Fc' size='small' sx={{width: '100%'}} type='number'
                         inputProps={{step: 1.0}}
+                        error={filter.maxFc !== null && filter.minFc > filter.maxFc}
                       />
                     </Grid>
                     <Grid item xs={4}>
@@ -278,6 +197,7 @@ class EqAppParametricEq extends React.Component {
                         }}
                         label='Min Q' size='small' sx={{width: '100%'}} type='number'
                         inputProps={{step: 0.01}}
+                        error={filter.maxQ !== null && filter.minQ > filter.maxQ}
                       />
                     </Grid>
                     <Grid item xs={4}>
@@ -288,6 +208,7 @@ class EqAppParametricEq extends React.Component {
                         }}
                         label='Min gain' size='small' sx={{width: '100%'}} type='number'
                         inputProps={{step: 0.1}}
+                        error={filter.maxGain !== null && filter.minGain > filter.maxGain}
                       />
                     </Grid>
                   </Grid>

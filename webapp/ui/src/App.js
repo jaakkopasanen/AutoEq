@@ -77,7 +77,6 @@ class App extends React.Component {
           uiConfig: { showDownload: true },
           config: {
             optimizer: { minF: null, maxF: null, maxTime: 0.5, minChangeRate: null, minStd: null },
-            filterDefaults: { type: 'PEAKING', minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null },
             filters: []
           },
         },
@@ -271,7 +270,12 @@ class App extends React.Component {
       return;
     }
 
+    if (this.state.trebleFLower > this.state.trebleFUpper) {
+      return;
+    }
+
     const selectedEqualizer = find(this.state.equalizers, (eq) => eq.label === this.state.selectedEqualizer);
+
     let soundSignature = null;
     if (this.state.soundSignature !== null && this.state.soundSignature.length > 0) {
       soundSignature = { frequency: [], raw: []};
@@ -342,6 +346,18 @@ class App extends React.Component {
         if (!selectedEqualizer.config.filters.length) {
           return;
         }
+        if (selectedEqualizer.config.optimizer.maxF !== null && selectedEqualizer.config.optimizer.minF > selectedEqualizer.config.optimizer.maxF) {
+          return;
+        }
+        for (const filter of selectedEqualizer.config.filters) {
+          if (
+            (filter.maxFc !== null && filter.minFc > filter.maxFc) ||
+            (filter.maxQ !== null && filter.minQ > filter.maxQ) ||
+            (filter.maxGain !== null && filter.minGain > filter.maxGain)
+          ) {
+            return;
+          }
+        }
         body.parametric_eq_config = {
           optimizer: {
             min_f: selectedEqualizer.config.optimizer.minF,
@@ -349,14 +365,6 @@ class App extends React.Component {
             max_time: selectedEqualizer.config.optimizer.maxTime,
             min_change_rate: selectedEqualizer.config.optimizer.minChangeRate,
             min_std: selectedEqualizer.config.optimizer.minStd,
-          },
-          filter_defaults: {
-            type: selectedEqualizer.config.filterDefaults.type,
-            min_fc: selectedEqualizer.config.filterDefaults.minFc,
-            max_fc: selectedEqualizer.config.filterDefaults.maxFc,
-            min_q: selectedEqualizer.config.filterDefaults.minQ,
-            max_q: selectedEqualizer.config.filterDefaults.maxQ,
-            min_gain: selectedEqualizer.config.filterDefaults.minGain
           },
           filters: selectedEqualizer.config.filters.map(filter => ({
             type: filter.type,
@@ -622,6 +630,7 @@ class App extends React.Component {
     const soundProfiles = cloneDeep(this.state.soundProfiles);
     const ix = findIndex(soundProfiles, (p) => p.name === name);
     soundProfiles.splice(ix, 1);
+    window.localStorage.setItem('soundProfiles', JSON.stringify(soundProfiles));
     this.setState({ soundProfiles });
   }
 
@@ -722,7 +731,7 @@ class App extends React.Component {
     // Find custom parametric eq in the equalizers array
     const ix = findIndex(equalizers, (equalizer) => equalizer.label === 'Custom Parametric Eq');
     const equalizer = equalizers[ix];
-    equalizer.config.filters.push({ fc: null, q: null, gain: null, minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null});
+    equalizer.config.filters.push({ type: 'PEAKING', fc: null, q: null, gain: null, minFc: null, maxFc: null, minQ: null, maxQ: null, minGain: null, maxGain: null});
     equalizers.splice(ix, 1, equalizer);
     this.setState({ equalizers }, () => {
       this.equalize();

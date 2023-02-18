@@ -185,7 +185,12 @@ class Peaking(PEQFilter):
         min_fc_ix = np.argmin(np.abs(self.f - self.min_fc))
         max_fc_ix = np.argmin(np.abs(self.f - self.max_fc))
 
-        if len(positive_peak_ixs) == 0 and len(negative_peak_ixs) == 0:
+        # All peak indexes together
+        peak_ixs = np.concatenate([positive_peak_ixs, negative_peak_ixs])
+        # Exclude peak indexes which are outside of minimum and maximum center frequency
+        mask = np.logical_and(peak_ixs >= min_fc_ix, peak_ixs <= max_fc_ix)
+
+        if (len(positive_peak_ixs) == 0 and len(negative_peak_ixs) == 0) or np.sum(mask) == 0:
             # No peaks found
             params = []
             if self.optimize_fc:
@@ -199,10 +204,6 @@ class Peaking(PEQFilter):
                 params.append(self.gain)
             return params
 
-        # All peak indexes together
-        peak_ixs = np.concatenate([positive_peak_ixs, negative_peak_ixs])
-        # Exclude peak indexes which are outside of minimum and maximum center frequency
-        mask = np.logical_and(peak_ixs >= min_fc_ix, peak_ixs <= max_fc_ix)
         peak_ixs = peak_ixs[mask]
         # Properties of included peaks together
         widths = np.concatenate([peak_props['widths'], dip_props['widths']])[mask]
@@ -497,13 +498,19 @@ class PEQ:
         }
         global_filter_defaults['HIGH_SHELF'] = deepcopy(global_filter_defaults['LOW_SHELF'])
         for filt in config['filters']:
-            if 'filter_defaults' in config:
+            if 'filter_defaults' in config and config['filter_defaults'] is not None:
                 for key in keys:
                     if (key not in filt or filt[key] is None) and key in config['filter_defaults']:
                         filt[key] = config['filter_defaults'][key]
             for key in keys:
                 if (key not in filt or filt[key] is None) and key in global_filter_defaults[filt['type']]:
                     filt[key] = global_filter_defaults[filt['type']][key]
+            if 'min_fc' in filt and 'max_fc' in filt and filt['min_fc'] == filt['max_fc']:
+                filt['fc'] = filt['min_fc']
+            if 'min_q' in filt and 'max_q' in filt and filt['min_q'] == filt['max_q']:
+                filt['q'] = filt['min_q']
+            if 'min_gain' in filt and 'max_gain' in filt and filt['min_gain'] == filt['max_gain']:
+                filt['gain'] = filt['min_gain']
             peq.add_filter(filter_classes[filt['type']](
                 peq.f, peq.fs,
                 **{key: filt[key] for key in keys if key in filt and key != 'type'},
@@ -699,6 +706,13 @@ class PEQ:
 
     def optimize(self):
         """Optimizes filter parameters"""
+        has_free_variables = False
+        for filt in self.filters:
+            if filt.optimize_fc or filt.optimize_q or filt.optimize_gain:
+                has_free_variables = True
+                break
+        if not has_free_variables:
+            return
         self.history = OptimizationHistory()
         try:
             fmin_slsqp(  # Tested all of the scipy minimize methods, this is the best
