@@ -43,7 +43,9 @@ class TargetTab extends React.Component {
           container direction='row' justifyContent='space-between' alignItems='center' columnSpacing={1}
           sx={{mb: theme => theme.spacing(1)}}
         >
-          {this.props.soundProfiles.length === 0 && <Grid item><Typography variant='caption'>Profiles</Typography></Grid>}
+          {this.props.soundProfiles.length === 0 && (
+            <Grid item><Typography variant='caption'>Profiles</Typography></Grid>
+          )}
           {this.props.soundProfiles.length > 0 && (
             <Grid item container direction='row' columnSpacing={1} alignItems='center' sx={{width: 'calc(100% - 40px)'}}>
               {this.props.soundProfiles.map((soundProfile) => (
@@ -91,7 +93,7 @@ class TargetTab extends React.Component {
           </Grid>
         </Grid>
 
-        {!!this.props.compensations && (
+        {this.props.compensations?.length > 0 && (
           <Grid item>
             <CSVAutocomplete
               value={this.props.selectedCompensation}
@@ -104,6 +106,7 @@ class TargetTab extends React.Component {
               autocompleteProps={{
                 disableClearable: true,
                 blurOnSelect: true,
+                isOptionEqualToValue: (opt, val) => opt.label === val
               }}
             />
           </Grid>

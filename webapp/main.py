@@ -41,7 +41,7 @@ def get_entries():
 
 @app.get('/compensations')
 def get_compensations():
-    return {compensation['label']: {key: compensation[key] for key in ['compatible', 'recommended', 'bassBoost']} for compensation in compensations}
+    return [{key: compensation[key] for key in ['label', 'compatible', 'recommended', 'bassBoost']} for compensation in compensations]
 
 
 @app.get('/playlist')

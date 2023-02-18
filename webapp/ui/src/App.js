@@ -239,7 +239,7 @@ class App extends React.Component {
       throw err;
     });
     const preferredCompensations = { 'unknown': { 'unknown': { 'unknown': 'Flat' } } };
-    for (const [label, compensation] of Object.entries(compensations)) {
+    for (const compensation of compensations) {
       if (!compensation.recommended) {
         continue;
       }
@@ -251,7 +251,7 @@ class App extends React.Component {
           preferredCompensations[rigPath[0]][rigPath[1]] = {};
         }
         if (!preferredCompensations[rigPath[0]][rigPath[1]][rigPath[2]]) {
-          preferredCompensations[rigPath[0]][rigPath[1]][rigPath[2]] = label;
+          preferredCompensations[rigPath[0]][rigPath[1]][rigPath[2]] = compensation.label;
         }
       }
     }
@@ -285,12 +285,13 @@ class App extends React.Component {
       }
     }
 
-    const compensation = this.state.compensations[this.state.selectedCompensation].frequency?.length > 0
+    const selectedCompensation = find(this.state.compensations, (compensation) => compensation.label === this.state.selectedCompensation);
+    const compensation = selectedCompensation.frequency?.length > 0
       ? {
-          frequency: this.state.compensations[this.state.selectedCompensation].frequency,
-          raw: this.state.compensations[this.state.selectedCompensation].raw
+          frequency: selectedCompensation.frequency,
+          raw: selectedCompensation.raw
         }
-      : this.state.selectedCompensation;
+      : this.state.selectedCompensation;  // Named compensation, sending just a string
 
     const base64fp16 = true;
     const body = {
@@ -542,12 +543,13 @@ class App extends React.Component {
 
     // TODO: not preferred for any?
     const compensationLabel = this.state.preferredCompensations[measurement.source][measurement.form][measurement.rig];
+    const compensation = find(this.state.compensations, (c) => c.label === compensationLabel);
     this.setState({
       selectedMeasurement: { ...measurement },
       selectedCompensation: compensationLabel,
-      bassBoostFc: this.state.compensations[compensationLabel].bassBoost.fc,
-      bassBoostQ: this.state.compensations[compensationLabel].bassBoost.q,
-      bassBoostGain: this.state.compensations[compensationLabel].bassBoost.gain,
+      bassBoostFc: compensation.bassBoost.fc,
+      bassBoostQ: compensation.bassBoost.q,
+      bassBoostGain: compensation.bassBoost.gain,
     }, () => {
       this.equalize(true);
     });
@@ -634,16 +636,16 @@ class App extends React.Component {
     this.setState({ soundProfiles });
   }
 
-  onCompensationSelected(label) {
+  onCompensationSelected(compensation) {
     const preferredCompensations = cloneDeep(this.state.preferredCompensations);
-    preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig] = label;
+    preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig] = compensation.label;
     this.setState(
       {
-        selectedCompensation: label,
+        selectedCompensation: compensation.label,
         preferredCompensations,
-        bassBoostFc: this.state.compensations[label].bassBoost.fc,
-        bassBoostQ: this.state.compensations[label].bassBoost.q,
-        bassBoostGain: this.state.compensations[label].bassBoost.gain,
+        bassBoostFc: compensation.bassBoost.fc,
+        bassBoostQ: compensation.bassBoost.q,
+        bassBoostGain: compensation.bassBoost.gain,
       },
       () => { this.equalize(true); }
     );
@@ -657,7 +659,8 @@ class App extends React.Component {
       frequency.push(dataPoint.frequency);
       raw.push(dataPoint.raw);
     }
-    compensations[name] = {
+    compensations.push({
+      label: name,
       frequency, raw,
       compatible: [],
       recommended: [],
@@ -666,7 +669,7 @@ class App extends React.Component {
         q: 0.7,
         gain: 0.0
       }
-    };
+    });
     this.setState({ compensations }, () => {
       this.onCompensationSelected(name);
     })
@@ -676,13 +679,14 @@ class App extends React.Component {
     const preferredCompensations = cloneDeep(this.state.preferredCompensations);
     const compensations = cloneDeep(this.state.compensations);
     const compensationLabel = preferredCompensations[this.state.selectedMeasurement.source][this.state.selectedMeasurement.form][this.state.selectedMeasurement.rig];
+    const ix = findIndex(compensations, (c) => c.label === compensationLabel);
     for (const [key, val] of Object.entries(newParams)) {
       if (key === 'bassBoostFc') {
-        compensations[compensationLabel].bassBoost.fc = val;
+        compensations[ix].bassBoost.fc = val;
       } else  if (key === 'bassBoostQ') {
-        compensations[compensationLabel].bassBoost.q = val;
+        compensations[ix].bassBoost.q = val;
       } else if (key === 'bassBoostGain') {
-        compensations[compensationLabel].bassBoost.gain = val;
+        compensations[ix].bassBoost.gain = val;
       }
     }
     this.setState({ ...newParams, preferredCompensations, compensations }, () => {
@@ -820,7 +824,7 @@ class App extends React.Component {
                         onSoundProfileDeleted={this.onSoundProfileDeleted}
                         captureSoundProfile={this.captureSoundProfile}
 
-                        compensations={Object.keys(this.state.compensations)}
+                        compensations={this.state.compensations}
                         selectedCompensation={this.state.selectedCompensation}
                         onCompensationSelected={this.onCompensationSelected}
                         onCompensationCreated={this.onCompensationCreated}
