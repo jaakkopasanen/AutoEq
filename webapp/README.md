@@ -39,7 +39,7 @@ your tracks. https://www.loudnesspenalty.com/ helps calculating the required amp
 
 Privacy policy (`privacy-policy.html`) and Terms of Service (`terms-of-service.html`) should be placed in `data/legal`.
 
-```shell
+```
 data/
   audio/
     Jennifer Warnes - Bird On a Wire.ogg
