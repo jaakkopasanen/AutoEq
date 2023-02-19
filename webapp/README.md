@@ -36,6 +36,21 @@ to do this.
 
 The `data/audio` directory also needs to have all the songs for the player. It's recommended to normalize the volumes across all
 your tracks. https://www.loudnesspenalty.com/ helps calculating the required amplification. Use Spotify levels.
+
+Privacy policy (`privacy-policy.html`) and Terms of Service (`terms-of-service.html`) should be placed in `data/legal`.
+
+```shell
+data/
+  audio/
+    Jennifer Warnes - Bird On a Wire.ogg
+  legal/
+    privacy-policy.html
+    terms-of-service.html
+  compensations.json
+  entries.json
+  measurements.json
+```
+
 ```shell
 docker run -d -p 8000:8000 -v /path/to/AutoEq/webapp/data:/app/webapp/data yourusername/autoeq:latest
 ```

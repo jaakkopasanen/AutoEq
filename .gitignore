@@ -113,4 +113,5 @@ measurements/crinacle/*data*/
 measurements/crinacle/Raw measurements (Patreon)/
 results/crinacle/*/*/*.csv
 chromedriver*
-webapp/data/
+webapp/data/*
+!webapp/data/legal/

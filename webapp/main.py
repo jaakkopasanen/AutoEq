@@ -340,6 +340,7 @@ def equalize(req: EqualizeRequest):
     return res
 
 
-app.mount('/audio', StaticFiles(directory=ROOT_DIR.joinpath('data/audio'), html=True), name='audio')
+app.mount('/audio', StaticFiles(directory=ROOT_DIR.joinpath('data/audio'), html=False), name='audio')
+app.mount('/legal', StaticFiles(directory=ROOT_DIR.joinpath('data/legal'), html=True), name='legal')
 if os.getenv('APP_ENV') == 'production':
     app.mount('/', StaticFiles(directory=ROOT_DIR.joinpath('ui/build'), html=True), name='build')

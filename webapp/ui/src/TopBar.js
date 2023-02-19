@@ -76,12 +76,12 @@ const TopBar = (props) => {
           </Link>
         </MenuItem>
         <MenuItem>
-          <Link href='/privacy' target='_blank' rel='noopener' sx={{textDecoration: 'none'}}>
+          <Link href='/legal/privacy-policy.html' target='_blank' rel='noopener' sx={{textDecoration: 'none'}}>
             <IconAndText icon={<PrivacyTipIcon />} label='Privacy Policy' />
           </Link>
         </MenuItem>
         <MenuItem>
-          <Link href='/terms' target='_blank' rel='noopener' sx={{textDecoration: 'none'}}>
+          <Link href='/legal/terms-of-service.html' target='_blank' rel='noopener' sx={{textDecoration: 'none'}}>
             <IconAndText icon={<GavelIcon />} label='Terms of Service' />
           </Link>
         </MenuItem>
