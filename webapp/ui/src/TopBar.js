@@ -32,6 +32,11 @@ const TopBar = (props) => {
     return null;
   }
 
+  const onShowInfoClick = () => {
+    setMenuAnchor(null);
+    props.onShowInfoClicked();
+  };
+
   return (
     <Grid
       item container direction='row' justifyContent='space-between' alignItems='center'
@@ -67,7 +72,7 @@ const TopBar = (props) => {
         anchorOrigin={{ vertical: 'top', horizontal: 'left' }}
         PaperProps={{sx: {width: '200px'}}}
       >
-        <MenuItem>
+        <MenuItem onClick={onShowInfoClick}>
           <IconAndText icon={<HelpIcon />} label='Show Info' />
         </MenuItem>
         <MenuItem>
