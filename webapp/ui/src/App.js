@@ -1,7 +1,7 @@
 import React from 'react';
 import FrequencyResponseGraph from './FrequencyResponseGraph';
 import {
-  Alert,
+  Alert, Box,
   Container,
   Grid,
   Paper, Snackbar, styled,
@@ -781,8 +781,100 @@ class App extends React.Component {
       (equalizer) => equalizer.label === 'Custom Parametric Eq');
     const customPeqConfig = !!customPeq ? customPeq.config : null;
     return (
-      <Grid container direction='column' rowSpacing={{xs: 0, sm: 1, md: 2}} sx={{pb: 12}}>
-        <Grid item sx={{width: '100%', padding: 0, background: '#fff'}}>
+      <Box sx={{pt: 10, pb: {xs: 12, md: 13}}}>
+        {!!this.state.graphData && (
+          <Container sx={{pl: {xs: 0, sm: 2, md: 3}, pr: {xs: 0, sm: 1, md: 3}}}>
+            <Grid container direction='column' rowSpacing={{xs: 0, sm: 1, md: 2}}>
+              <Grid item>
+                <SmPaper
+                  sx={{
+                    pt: 1,
+                    pl: {xs: 1, sm: 0, md: 0},
+                    pr: {xs: 0, sm: 1, md: 0},
+                    pb: {xs: 1, sm: 0.5, md: 0}
+                  }}
+                >
+                  <FrequencyResponseGraph
+                    data={this.state.graphData}
+                    smoothed={this.state.smoothed}
+                    onSmoothedChanged={this.onSmoothedChanged}
+                  />
+                </SmPaper>
+              </Grid>
+              <Grid item container direction='row' columnSpacing={{xs: 0, sm: 1, md: 2}} alignItems='stretch'>
+                <Grid item xs={12} md={6}>
+                  <SmPaper sx={{p: {sm: 1, md: 2}}}>
+                    <TargetTab
+                      selectedMeasurement={this.state.selectedMeasurement}
+
+                      soundProfiles={this.state.soundProfiles}
+                      selectedSoundProfile={this.state.selectedSoundProfile}
+                      onSoundProfileSelected={this.onSoundProfileSelected}
+                      onSoundProfileCreated={this.onSoundProfileCreated}
+                      onSoundProfileSaved={this.onSoundProfileSaved}
+                      onSoundProfileDeleted={this.onSoundProfileDeleted}
+                      captureSoundProfile={this.captureSoundProfile}
+
+                      compensations={this.state.compensations}
+                      selectedCompensation={this.state.selectedCompensation}
+                      onCompensationSelected={this.onCompensationSelected}
+                      onCompensationCreated={this.onCompensationCreated}
+
+                      soundSignature={this.state.soundSignature}
+                      soundSignatureSmoothingWindowSize={this.state.soundSignatureSmoothingWindowSize}
+
+                      graphData={this.state.graphData}
+                      smoothed={this.state.smoothed}
+
+                      bassBoostGain={this.state.bassBoostGain}
+                      bassBoostFc={this.state.bassBoostFc}
+                      bassBoostQ={this.state.bassBoostQ}
+                      trebleBoostGain={this.state.trebleBoostGain}
+                      trebleBoostFc={this.state.trebleBoostFc}
+                      trebleBoostQ={this.state.trebleBoostQ}
+                      tilt={this.state.tilt}
+                      maxGain={this.state.maxGain}
+                      windowSize={this.state.windowSize}
+                      trebleWindowSize={this.state.trebleWindowSize}
+                      trebleFLower={this.state.trebleFLower}
+                      trebleFUpper={this.state.trebleFUpper}
+                      trebleGainK={this.state.trebleGainK}
+                      onEqParamChanged={this.onEqParamChanged}
+
+                      onError={this.onError}
+                    />
+                  </SmPaper>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <SmPaper sx={{p: {sm: 1, md: 2}}}>
+                    <EqTab
+                      selectedMeasurement={this.state.selectedMeasurement?.label}
+                      equalizers={this.state.equalizers}
+                      selectedEqualizer={this.state.selectedEqualizer}
+                      onEqualizerSelected={this.onEqualizerSelected}
+                      graphicEq={this.state.graphicEq}
+                      parametricEq={this.state.parametricEq}
+                      fixedBandEq={this.state.fixedBandEq}
+                      firAudioBuffer={this.state.firAudioBuffer}
+                      fs={this.state.fs}
+                      bitDepth={this.state.bitDepth}
+                      phase={this.state.phase}
+                      fRes={this.state.fRes}
+                      preamp={this.state.preamp}
+                      onEqParamChanged={this.onEqParamChanged}
+                      customPeqConfig={customPeqConfig}
+                      onCustomPeqConfigChanged={this.onCustomPeqConfigChanged}
+                      onCustomPeqConfigFilterChanged={this.onCustomPeqConfigFilterChanged}
+                      onCustomPeqAddFilterClick={this.onCustomPeqAddFilterClick}
+                      onCustomPeqDeleteFilterClick={this.onCustomPeqDeleteFilterClick}
+                    />
+                  </SmPaper>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Container>
+        )}
+        <Box sx={{position: 'fixed', top: 0, left: 0, width: '100%', padding: 0, background: '#fff'}}>
           <Paper sx={{
             padding: '8px 16px',
             borderRadius: 0,
@@ -797,105 +889,13 @@ class App extends React.Component {
               onError={this.onError}
             />
           </Paper>
-        </Grid>
-        {!!this.state.graphData && (
-          <Grid item>
-            <Container sx={{pl: {xs: 0, sm: 2, md: 3}, pr: {xs: 0, sm: 1, md: 3}}}>
-              <Grid container direction='column' rowSpacing={{xs: 0, sm: 1, md: 2}}>
-                <Grid item>
-                  <SmPaper
-                    sx={{
-                      pt: 1,
-                      pl: {xs: 1, sm: 0, md: 0},
-                      pr: {xs: 0, sm: 1, md: 0},
-                      pb: {xs: 1, sm: 0.5, md: 0}
-                    }}
-                  >
-                    <FrequencyResponseGraph
-                      data={this.state.graphData}
-                      smoothed={this.state.smoothed}
-                      onSmoothedChanged={this.onSmoothedChanged}
-                    />
-                  </SmPaper>
-                </Grid>
-                <Grid item container direction='row' columnSpacing={{xs: 0, sm: 1, md: 2}} alignItems='stretch'>
-                  <Grid item xs={12} md={6}>
-                    <SmPaper sx={{p: {sm: 1, md: 2}}}>
-                      <TargetTab
-                        selectedMeasurement={this.state.selectedMeasurement}
-
-                        soundProfiles={this.state.soundProfiles}
-                        selectedSoundProfile={this.state.selectedSoundProfile}
-                        onSoundProfileSelected={this.onSoundProfileSelected}
-                        onSoundProfileCreated={this.onSoundProfileCreated}
-                        onSoundProfileSaved={this.onSoundProfileSaved}
-                        onSoundProfileDeleted={this.onSoundProfileDeleted}
-                        captureSoundProfile={this.captureSoundProfile}
-
-                        compensations={this.state.compensations}
-                        selectedCompensation={this.state.selectedCompensation}
-                        onCompensationSelected={this.onCompensationSelected}
-                        onCompensationCreated={this.onCompensationCreated}
-
-                        soundSignature={this.state.soundSignature}
-                        soundSignatureSmoothingWindowSize={this.state.soundSignatureSmoothingWindowSize}
-
-                        graphData={this.state.graphData}
-                        smoothed={this.state.smoothed}
-
-                        bassBoostGain={this.state.bassBoostGain}
-                        bassBoostFc={this.state.bassBoostFc}
-                        bassBoostQ={this.state.bassBoostQ}
-                        trebleBoostGain={this.state.trebleBoostGain}
-                        trebleBoostFc={this.state.trebleBoostFc}
-                        trebleBoostQ={this.state.trebleBoostQ}
-                        tilt={this.state.tilt}
-                        maxGain={this.state.maxGain}
-                        windowSize={this.state.windowSize}
-                        trebleWindowSize={this.state.trebleWindowSize}
-                        trebleFLower={this.state.trebleFLower}
-                        trebleFUpper={this.state.trebleFUpper}
-                        trebleGainK={this.state.trebleGainK}
-                        onEqParamChanged={this.onEqParamChanged}
-
-                        onError={this.onError}
-                      />
-                    </SmPaper>
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <SmPaper sx={{p: {sm: 1, md: 2}}}>
-                      <EqTab
-                        selectedMeasurement={this.state.selectedMeasurement?.label}
-                        equalizers={this.state.equalizers}
-                        selectedEqualizer={this.state.selectedEqualizer}
-                        onEqualizerSelected={this.onEqualizerSelected}
-                        graphicEq={this.state.graphicEq}
-                        parametricEq={this.state.parametricEq}
-                        fixedBandEq={this.state.fixedBandEq}
-                        firAudioBuffer={this.state.firAudioBuffer}
-                        fs={this.state.fs}
-                        bitDepth={this.state.bitDepth}
-                        phase={this.state.phase}
-                        fRes={this.state.fRes}
-                        preamp={this.state.preamp}
-                        onEqParamChanged={this.onEqParamChanged}
-                        customPeqConfig={customPeqConfig}
-                        onCustomPeqConfigChanged={this.onCustomPeqConfigChanged}
-                        onCustomPeqConfigFilterChanged={this.onCustomPeqConfigFilterChanged}
-                        onCustomPeqAddFilterClick={this.onCustomPeqAddFilterClick}
-                        onCustomPeqDeleteFilterClick={this.onCustomPeqDeleteFilterClick}
-                      />
-                    </SmPaper>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Container>
-          </Grid>
-        )}
-        <Grid
-          item sx={{position: 'fixed', bottom: theme => theme.spacing(1), width: '100%'}}
-          container direction='column' justifyContent='center' alignItems='center'
-        >
+        </Box>
+        <Box
+          sx={{
+            position: 'fixed', bottom: theme => theme.spacing(1),
+            width: {xs: '252px', sm: '574px', md: '594px'},
+            left: {xs: 'calc((100% - 252px) / 2)', sm: 'calc((100% - 574px) / 2)', md: 'calc((100% - 594px) / 2)'}
+          }}>
           <Player
             audioContext={this.audioContext}
             audioDestination={this.gainNode}
@@ -904,8 +904,8 @@ class App extends React.Component {
             onIsEqOnChange={this.onIsEqOnChange}
             isEqEnabled={this.eqNodes.length > 0 && this.state.selectedEqualizer !== null}
           />
-        </Grid>
-        <Grid item>
+        </Box>
+        <Box>
           <Snackbar
             open={this.state.isSnackbarOpen}
             onClose={() => { this.setState({ isSnackbarOpen: false }); }}
@@ -919,8 +919,8 @@ class App extends React.Component {
               {this.state.snackbarMessage}
             </Alert>
           </Snackbar>
-        </Grid>
-      </Grid>
+        </Box>
+      </Box>
     );
   }
 }
