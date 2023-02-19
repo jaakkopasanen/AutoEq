@@ -83,4 +83,8 @@ const parseCSV = (csvString) => {
   return parseResult.data.map(row => ({ frequency: parseFloat(row[0]), raw: parseFloat(row[1]) }));
 };
 
-export { decodeFloat16, downloadAsFile, parseCSV };
+const bandwidth = (q) => {
+  return Math.log2((2*q**2+1) / (2*q**2) + Math.sqrt((((2*q**2 + 1) / q**2)**2)/4-1));
+};
+
+export { decodeFloat16, downloadAsFile, parseCSV, bandwidth };
