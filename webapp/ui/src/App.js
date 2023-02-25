@@ -25,6 +25,7 @@ import {
 } from 'platform-detect'
 import {decodeFloat16} from './utils';
 import Player from './Player';
+import Waves from './Waves';
 
 const SmPaper = styled(Paper)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
@@ -801,6 +802,8 @@ class App extends React.Component {
     }[platform];
     return (
       <Box sx={{pt: 10, pb: {xs: 12, md: 13}}}>
+        <Waves nWaves={10} />
+
         {(!!this.state.graphData && !this.state.showInfo) && (
           <Container
             sx={{
@@ -970,6 +973,7 @@ class App extends React.Component {
             </Grid>
           </Grid>
         </Container>
+
         <Box sx={{position: 'fixed', top: 0, left: 0, width: '100%', padding: 0, background: '#fff'}}>
           <Paper sx={{
             padding: '8px 16px',
@@ -987,6 +991,7 @@ class App extends React.Component {
             />
           </Paper>
         </Box>
+
         <Box
           sx={{
             position: 'fixed', bottom: theme => theme.spacing(1),
@@ -1002,6 +1007,7 @@ class App extends React.Component {
             isEqEnabled={this.eqNodes.length > 0 && this.state.selectedEqualizer !== null}
           />
         </Box>
+
         <Box>
           <Snackbar
             open={this.state.isSnackbarOpen}
