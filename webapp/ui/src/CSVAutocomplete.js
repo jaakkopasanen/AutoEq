@@ -29,7 +29,7 @@ function CSVAutocomplete(props) {
         renderInput={(params) =>
           <TextField
             sx={{
-              background: (theme) => theme.palette.background.default,
+              background: (theme) => 'transparent',
               '& .MuiInputBase-root': (theme) => ({
                 backgroundColor: isDragAccept ? 'rgba(225, 255, 214, 0.2)' : 'rgba(0, 0, 0, 0.0)',
                 borderRadius: '4px'

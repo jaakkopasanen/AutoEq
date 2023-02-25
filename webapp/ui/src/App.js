@@ -35,8 +35,10 @@ const SmPaper = styled(Paper)(({ theme }) => ({
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
     paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2)
+    paddingBottom: theme.spacing(2),
   },
+  background: 'rgba(255, 255, 255, 0.97)',
+  backdropFilter: 'blur(3px)',
 }));
 
 class App extends React.Component {
