@@ -18,11 +18,12 @@ const Waves = (props) => {
   ];
   const paths = [];
   for (let i = 0; i < props.nWaves; ++i) {
-    //const waveDuration = 12 - ((i / props.nWaves * 2)**2 - 4 * i / props.nWaves) * 4;
-    const waveDuration = 12;
+    const swellDuration = 12 + ((i / props.nWaves * 1.5)**2 - 3 * i / props.nWaves) * 6;
+    const swellDelay = -props.nWaves + i * 0.3
+    const waveDuration = 15;
     const waveDelay = ((i / props.nWaves * 1.5)**2 - 3 * i / props.nWaves) * 6;
     paths.push(
-      <svg style={{animation: `swell ${12}s ease ${-props.nWaves + i * 0.3}s infinite`}}>
+      <svg style={{animation: `swell ${swellDuration}s ease ${swellDelay}s infinite`}}>
         <path
           d={`${sine(100, 100, 50 + i * 7)}`}
           fill={palette[i % palette.length]}
