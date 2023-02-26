@@ -3,11 +3,9 @@ import FrequencyResponseGraph from './FrequencyResponseGraph';
 import {
   Alert, Box,
   Container,
-  Grid, IconButton,
-  Paper, Snackbar, styled, Typography,
+  Grid,
+  Paper, Snackbar, styled,
 } from '@mui/material';
-import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
-import ClearIcon from '@mui/icons-material/Clear';
 import TopBar from './TopBar';
 import TargetTab from './TargetTab';
 import EqTab from './EqTab';
@@ -15,19 +13,13 @@ import cloneDeep from 'lodash/cloneDeep';
 import find from 'lodash/find';
 import findIndex from 'lodash/findIndex';
 import merge from 'lodash/merge';
-import {
-  windows as isWindows,
-  android as isAndroid,
-  linux as isLinux,
-  macos as isMacos,
-  ios as isIos
-} from 'platform-detect'
 import { transposeArrayToObject } from './utils';
 import Player from './Player';
 import Waves from './Waves';
 import defaultEqualizers from './equalizers';
 import ApiClient from './ApiClient';
 import useStateRef from './useStateRef';
+import InfoPage from "./InfoPage";
 
 const SmPaper = styled(Paper)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
@@ -137,7 +129,6 @@ const App = (props) => {
     setGain(gainNodeRef.current.gain.value * 100);
   };
   useEffect(() => {
-    console.log('useEffect with empty deps');
     setUp();
   }, []);
 
@@ -415,14 +406,6 @@ const App = (props) => {
 
   const customPeq = find(equalizersRef.current, (equalizer) => equalizer.label === 'Custom Parametric Eq');
   const customPeqConfig = !!customPeq ? customPeq.config : null;
-  const platform = isWindows ? 'Windows' : isMacos ? 'Mac OS' : isLinux ? 'Linux' : isAndroid ? 'Android' : isIos ? 'OSX' : null;
-  const recommendedApp = {
-    'Windows': 'EqualizerAPO GraphicEq',
-    'Mac OS': 'Sound Source',
-    'Linux': 'EasyEffects',
-    'Android': 'Wavelet',
-    'iOS': null,
-  }[platform];
   //console.log(!!graphData, !!showInfo);
   return (
     <Box sx={{pt: 10, pb: {xs: 12, md: 6}}}>
@@ -435,15 +418,9 @@ const App = (props) => {
             container direction='row' alignItems='stretch'
             columnSpacing={{xs: 0, sm: 1, md: 2}} rowSpacing={{xs: 0, sm: 1, md: 2}}
           >
+
             <Grid item xs={12}>
-              <SmPaper
-                sx={{
-                  pt: 1,
-                  pl: {xs: 1, sm: 0, md: 0},
-                  pr: {xs: 0, sm: 1, md: 0},
-                  pb: {xs: 1, sm: 0.5, md: 0}
-                }}
-              >
+              <SmPaper sx={{ pt: 1, pl: {xs: 1, sm: 0, md: 0}, pr: {xs: 0, sm: 1, md: 0}, pb: {xs: 1, sm: 0.5, md: 0} }}>
                 <FrequencyResponseGraph
                   data={graphData}
                   smoothed={smoothed}
@@ -525,79 +502,12 @@ const App = (props) => {
         </Container>
       )}
 
-      <Container
-        fixed
-        sx={{
-          display: (!!showInfo || !graphData) ? 'block' : 'none',
-          color: theme => theme.palette.grey.A400
-        }}
-      >
-        <IconButton
-          onClick={() => setShowInfo(false)}
-          sx={{
-            position: 'absolute', right: 0, top: theme => theme.spacing(10),
-            display: !!graphData ? 'block' : 'none',
-            color: theme => theme.palette.grey.A400
-          }}
-        >
-          <ClearIcon />
-        </IconButton>
-        <Grid
-          container direction='column' alignItems='center' rowSpacing={8}
-          sx={{'& p': {pb: theme => theme.spacing(1)}}}
-        >
-          <Grid item sx={{textAlign: 'center', mt: '96px'}}>
-            <Typography variant='h1'>AutoEq</Typography>
-            <Typography variant='body2'>makes your headphones sound better</Typography>
-          </Grid>
-          <Grid item container direction='row' columnSpacing={4} rowSpacing={4} justifyContent='center'>
-            <Grid item xs={12} sm={4} sx={{textAlign: 'left'}}>
-              <Typography variant='h4' sx={{textAlign: 'center'}}>Step 1</Typography>
-              <Typography variant='body2'>Choose your headphone make and model from the top.</Typography>
-              <Typography variant='body2'>
-                You can also import your own data by dragging and dropping a CSV file to the select field or clicking
-                <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
-                to select a CSV file on your device.
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <Typography variant='h4' sx={{textAlign: 'center'}}>Step 2</Typography>
-              <Typography variant='body2'>Choose an equalizer app you wish to use.</Typography>
-              <Typography variant='body2'>
-                AutoEq doesn't do the live equalization for your device and so you need a separate equalizer app to
-                do this. AutoEq will produce optimal settings for the app.
-              </Typography>
-              {platform === 'iOS' && (
-                <Typography variant='body2'>
-                  Unfortunately there are no system-wide equalizer apps available for iOS since the devices block app
-                  from accessing audio stream of other apps. You can choose iTunes built-in equalizer if you use
-                  iTunes but for example with Spotify you're largely out of luck. You may want to look into hardware
-                  based solutions such as Qudelix-5K or MiniDSP IL-DSP.
-                </Typography>
-              )}
-              {platform !== 'iOS' && (
-                <Typography variant='body2'>
-                  The recommended equalizer app for <b>{platform}</b> is&nbsp;
-                  <b>{recommendedApp}</b> but you are free to use other apps too. AutoEq supports any kind of equalizer and the most
-                  popular apps are already listed. For others you can use the generic Graphic Equalizer, Parametric
-                  Equalizer or Convolution Equalizer options.
-                </Typography>
-              )}
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <Typography variant='h4' sx={{textAlign: 'center'}}>Step 3</Typography>
-              <Typography variant='body2'>Hear the difference with the live demo.</Typography>
-              <Typography variant='body2'>
-                Play some songs with player on the bottom and toggle EQ on and off to hear the difference.
-              </Typography>
-              <Typography variant='body2'>
-                AutoEq simulates the chosen equalizer app so the results should be almost identical to what you'll
-                hear with the app.
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Container>
+      <Box sx={{color: theme => theme.palette.grey.A400, display: (!!showInfo || !graphData) ? 'block' : 'none'}}>
+        <InfoPage
+          canClose={!!graphData}
+          onCloseClick={() => { setShowInfo(false); }}
+        />
+      </Box>
 
       <Box sx={{position: 'fixed', top: 0, left: 0, width: '100%', padding: 0, background: '#fff'}}>
         <Paper sx={{
