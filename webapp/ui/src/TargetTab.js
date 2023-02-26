@@ -35,7 +35,7 @@ const TargetTab = (props) => {
         container direction='row' justifyContent='space-between' alignItems='center' columnSpacing={1}
         sx={{mb: theme => theme.spacing(1)}}
       >
-        {props.soundProfiles.length === 0 && (
+        {!(props.soundProfiles?.length) > 0 && (
           <Grid item><Typography variant='caption'>Profiles</Typography></Grid>
         )}
         {props.soundProfiles.length > 0 && (

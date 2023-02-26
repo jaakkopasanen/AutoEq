@@ -55,7 +55,7 @@ const App = (props) => {
   const [soundProfiles, setSoundProfiles, soundProfilesRef] = useStateRef(
     window.localStorage.getItem('soundProfiles')
       ? JSON.parse(window.localStorage.getItem('soundProfiles'))
-      : null
+      : []
   );
   const [selectedSoundProfile, setSelectedSoundProfile, selectedSoundProfileRef] = useStateRef(null);
   const [compensations, setCompensations, compensationsRef] = useStateRef([]);
