@@ -92,4 +92,60 @@ const bandwidth = (q) => {
   return Math.log2((2*q**2+1) / (2*q**2) + Math.sqrt((((2*q**2 + 1) / q**2)**2)/4-1));
 };
 
-export { decodeFloat16, downloadAsFile, parseCSV, bandwidth };
+const initParametricEqNodes = (parametricEq, audioContext) => {
+  const biquadNodes = [];
+  const typeMap = { 'LOW_SHELF': 'lowshelf', 'HIGH_SHELF': 'highshelf', 'PEAKING': 'peaking' }
+  for (const filter of parametricEq.filters) {
+    const node = audioContext.createBiquadFilter();
+    node.type = typeMap[filter.type];
+    node.frequency.value = filter.fc;
+    node.Q.value = filter.q;
+    node.gain.value = filter.gain;
+    if (biquadNodes.length > 0) {
+      // Connect subsequent node to this one
+      biquadNodes[biquadNodes.length - 1].connect(node);
+    }
+    biquadNodes.push(node);
+  }
+  return biquadNodes;
+};
+
+const initConvolutionNode = (audioBuffer, audioContext) => {
+  const node = audioContext.createConvolver();
+  node.normalize = false;
+  node.buffer = audioBuffer;
+  return node;
+};
+
+const transposeArrayToObject = (arr, keys) => {
+  if (arr === null) {
+    return null;
+  }
+  const obj = {};
+  for (const key of keys) {
+    obj[key] = [];
+  }
+  for (const [el, ix] of arr.entries()) {
+    for (const key of keys) {
+      obj[key][ix] = el;
+    }
+  }
+  return obj;
+};
+
+const transposeObjectToArray = (obj, keys) => {
+  const arr = [];
+  for (let i = 0; i < obj[keys[0]].length; ++i) {
+    const val = {};
+    for (const key of keys) {
+      val[key] = obj[key][i];
+    }
+    arr.push(val);
+  }
+  return arr;
+};
+
+export {
+  decodeFloat16, downloadAsFile, parseCSV, bandwidth, initParametricEqNodes, initConvolutionNode,
+  transposeArrayToObject, transposeObjectToArray
+};

@@ -94,7 +94,7 @@ const Player = (props) => {
           <Grid
             item container direction='column' justifyContent='center' alignItems='center'
             sx={{
-              background: 'rgba(255, 255, 255, 0.85)',
+              background: 'rgba(255, 255, 255, 0.93)',
               borderRadius: 2,
               padding: {xs: 1, md: '12px 18px'},
               borderStyle: 'solid', borderWidth: 1, borderColor: theme => theme.palette.grey.A400,

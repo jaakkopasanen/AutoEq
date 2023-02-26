@@ -218,7 +218,7 @@ const TargetTab = (props) => {
       <Grid item container direction='row' columnSpacing={1}>
         <Grid item xs={12} sm={6} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <InputSlider
-            label='Smoothing window' value={props.windowSize}
+            label='Smoothing size' value={props.windowSize}
             min={0} max={1} step={0.01}
             onChange={(v) => {
               props.onEqParamChanged({ windowSize: v })
