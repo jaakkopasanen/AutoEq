@@ -807,7 +807,7 @@ class App extends React.Component {
         <Waves nWaves={10} />
 
         {(!!this.state.graphData && !this.state.showInfo) && (
-          <Container
+          <Container fixed
             sx={{
               pl: {xs: 0, sm: 2, md: 3},
               pr: {xs: 0, sm: 1, md: 3},
@@ -830,7 +830,7 @@ class App extends React.Component {
                   />
                 </SmPaper>
               </Grid>
-              <Grid item container direction='row' columnSpacing={{xs: 0, sm: 1, md: 2}} alignItems='stretch'>
+              <Grid item container direction='row' columnSpacing={{xs: 0, sm: 1, md: 2}} rowSpacing={1} alignItems='stretch'>
                 <Grid item xs={12} md={6}>
                   <SmPaper sx={{p: {sm: 1, md: 2}}}>
                     <TargetTab
@@ -903,7 +903,9 @@ class App extends React.Component {
             </Grid>
           </Container>
         )}
+
         <Container
+          fixed
           sx={{
             display: (!!this.state.showInfo || !this.state.graphData) ? 'block' : 'none',
             color: theme => theme.palette.grey.A400
