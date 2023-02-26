@@ -408,7 +408,7 @@ const App = (props) => {
   const customPeqConfig = !!customPeq ? customPeq.config : null;
   //console.log(!!graphData, !!showInfo);
   return (
-    <Box sx={{pt: 10, pb: {xs: 12, md: 6}}}>
+    <Box sx={{pt: 10, pb: {xs: 12, md: 13}}}>
       <Waves nWaves={10} />
 
       {(!!graphData && !showInfo) && (

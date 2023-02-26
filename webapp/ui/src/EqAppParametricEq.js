@@ -58,22 +58,25 @@ const EqAppParametricEq = (props) => {
   const columnNames = !!props.uiConfig?.columnNames ? props.uiConfig.columnNames : {
     fc: 'Frequency (Hz)', q: props.uiConfig?.bw ? 'BW (oct)' : 'Q', gain: 'Gain (dB)',
   };
+
   return (
     <Grid container direction='column' rowSpacing={1}>
-      <Grid item>
-        <Autocomplete
-          freeSolo
-          renderInput={(params) =>
-            <TextField {...params} label='Sample rate (Hz)' type='number' required={!props.fs} />}
-          value={props.fs.toFixed(0)}
-          options={['44100', '48000', '96000', '192000', '384000']}
-          onChange={(e, val) => {
-            props.onEqParamChanged({ fs: parseFloat(val) })
-          }}
-          size='small'
-          disableClearable
-        />
-      </Grid>
+      {props.uiConfig?.showFsControl && (
+        <Grid item>
+          <Autocomplete
+            freeSolo
+            renderInput={(params) =>
+              <TextField {...params} label='Sample rate (Hz)' type='number' required={!props.fs} />}
+            value={props.fs.toFixed(0)}
+            options={['44100', '48000', '96000', '192000', '384000']}
+            onChange={(e, val) => {
+              props.onEqParamChanged({ fs: parseFloat(val) })
+            }}
+            size='small'
+            disableClearable
+          />
+        </Grid>
+      )}
       {'showConfig' in props && props.showConfig !== false && (
         <Grid item container direction='column' rowSpacing={2}>
           <Grid item container direction='column' rowSpacing={1}>
