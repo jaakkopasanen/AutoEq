@@ -80,7 +80,12 @@ const parseCSV = (csvString) => {
   if (parseResult.errors.length > 0) {
     throw new Error(parseResult.errors[0].message);
   }
-  return parseResult.data.map(row => ({ frequency: parseFloat(row[0]), raw: parseFloat(row[1]) }));
+  return parseResult.data.map(row => {
+    if (isNaN(parseFloat(row[0])) || isNaN(parseFloat(row[1]))) {
+      throw new Error('Non-numeric values present');
+    }
+    return { frequency: parseFloat(row[0]), raw: parseFloat(row[1]) };
+  });
 };
 
 const bandwidth = (q) => {

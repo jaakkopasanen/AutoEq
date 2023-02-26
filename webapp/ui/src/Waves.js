@@ -23,7 +23,7 @@ const Waves = (props) => {
     const waveDuration = 15;
     const waveDelay = ((i / props.nWaves * 1.5)**2 - 3 * i / props.nWaves) * 6;
     paths.push(
-      <svg style={{animation: `swell ${swellDuration}s ease ${swellDelay}s infinite`}}>
+      <svg key={i} style={{animation: `swell ${swellDuration}s ease ${swellDelay}s infinite`}}>
         <path
           d={`${sine(100, 100, 50 + i * 7)}`}
           fill={palette[i % palette.length]}

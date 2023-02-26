@@ -803,7 +803,7 @@ class App extends React.Component {
       'iOS': null,
     }[platform];
     return (
-      <Box sx={{pt: 10, pb: {xs: 12, md: 13}}}>
+      <Box sx={{pt: 10, pb: {xs: 12, md: 6}}}>
         <Waves nWaves={10} />
 
         {(!!this.state.graphData && !this.state.showInfo) && (

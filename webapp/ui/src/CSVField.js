@@ -31,10 +31,12 @@ const CSVField = (props) => {
   useEffect(() => {
     if (props.value?.length > 0) {
       //const newCsvText = constructCsvText(props.value);
-      const parsedValue = parseCSV(csvText);
-      if (!isEqual(props.value, parsedValue)) {
-        setCsvText(constructCsvText(props.value));
-      }
+      try {
+        const parsedValue = parseCSV(csvText);
+        if (!isEqual(props.value, parsedValue)) {
+          setCsvText(constructCsvText(props.value));
+        }
+      } catch (e) {}
     }
   }, [props.value, csvText])
 
