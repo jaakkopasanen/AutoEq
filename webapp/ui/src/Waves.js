@@ -48,10 +48,10 @@ const Waves = (props) => {
 
   return (
     <svg
-      width='100%' height='300' viewBox='0 0 100 100'
+      width='100%' viewBox='0 0 100 100'
       preserveAspectRatio='none'
       style={{
-        position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: -1
+        position: 'fixed', bottom: 0, left: 0, right: 0, height: '300px', maxHeight: '40vw'
       }}
     >
       {paths}
