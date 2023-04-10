@@ -38,8 +38,8 @@ const Knob = (props) => {
   const ticks = [];
   const nTicks = props.nTicks || 8;
   for (let i = 0; i < nTicks; ++i) {
-    const value = i * props.maxValue / (nTicks - 1);
-    ticks.push(angleOffset + (props.minValue + value) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset));
+    const value = props.minValue + i * (props.maxValue - props.minValue) / (nTicks - 1);
+    ticks.push(angleOffset + (value - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset));
   }
   return (
     <Box
@@ -58,6 +58,7 @@ const Knob = (props) => {
         height: props.size,
         padding: '12px',
         boxSizing: 'border-box',
+        marginBottom: '-6px'
       }}>
         {ticks.map(a => (
           <Box key={a} sx={{
@@ -97,22 +98,24 @@ const Knob = (props) => {
           <Typography sx={{lineHeight: 1}}>{props.formattedValue}</Typography>
           {props.unit && <Typography variant='caption'>{props.unit}</Typography>}
         </Box>
-        <Box
-          sx={{
-            position: 'absolute',
-            bottom: '2px', left: '50%',
-            width: '16px', height: '16px',
-            transform: 'translate(-50%)',
-            border: theme => `1px solid ${theme.palette.grey.A400}`,
-            borderRadius: '4px',
-            background: theme => theme.palette.background.default,
-            padding: '1px 3px',
-          }}
-        >
-          <props.icon sx={{color: theme => theme.palette.primary.light, width: 16, height: 16}} />
-        </Box>
+        {'icon' in props && (
+          <Box
+            sx={{
+              position: 'absolute',
+              bottom: '2px', left: '50%',
+              width: '16px', height: '16px',
+              transform: 'translate(-50%)',
+              border: theme => `1px solid ${theme.palette.grey.A400}`,
+              borderRadius: '4px',
+              background: theme => theme.palette.background.default,
+              padding: '1px 3px',
+            }}
+          >
+            <props.icon sx={{color: theme => theme.palette.primary.light, width: 16, height: 16}} />
+          </Box>
+        )}
       </Box>
-      {props.label && <Typography variant='caption'>{props.label}</Typography>}
+      {props.label && <Typography variant='caption' sx={{lineHeight: 1}}>{props.label}</Typography>}
     </Box>
   );
 };

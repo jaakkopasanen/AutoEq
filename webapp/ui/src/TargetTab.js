@@ -105,21 +105,12 @@ const TargetTab = (props) => {
         </Grid>
       )}
 
-      <Grid item container direction='row' justifyContent='space-between'>
+      <Grid item container direction='row' justifyContent='space-between' sx={{display: showAdvanced ? 'flex' : 'none'}}>
         <Grid item sx={{position: 'relative'}}>
           <CSVField
             label='Sound signature'
             onChange={(dataPoints) => { props.onEqParamChanged({ soundSignature: dataPoints }); }}
             value={props.soundSignature}
-            // helperText={
-            //   <span>
-            //   <Typography variant='body2' sx={{display: 'inline'}}>Edit the text directly, drop a CSV file or click </Typography>
-            //   <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
-            //   <Typography variant='body2' sx={{display: 'inline'}}> to open a file. Click </Typography>
-            //   <HeadphonesIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
-            //   <Typography variant='body2' sx={{display: 'inline'}}> to use the current error curve.</Typography>
-            // </span>
-            // }
             helperText=''
             minRows={5} maxRows={10}
           />
@@ -149,101 +140,147 @@ const TargetTab = (props) => {
         </Grid>
       </Grid>
 
-      <Grid item container direction='row' columnSpacing={1}>
-        <Grid item xs={12} sm={6} container direction='column' rowSpacing={0}>
-          <Grid item>
-            <InputSlider
-              label='Bass boost (dB)' value={props.bassBoostGain} min={0} max={20} step={0.5}
-              onChange={(v) => {
-                props.onEqParamChanged({bassBoostGain: v})
-              }}
-            />
-          </Grid>
-          <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
-            <InputSlider
-              label='Bass freq (Hz)' value={props.bassBoostFc}
-              min={20.0} max={500.0} step={5.0}
-              onChange={(v) => { props.onEqParamChanged({ bassBoostFc: v }); }}
-            />
-          </Grid>
-          <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
-            <InputSlider
-              label='Bass quality' value={props.bassBoostQ}
-              min={0.3} max={1.0} step={0.05}
-              onChange={(v) => {
-                props.onEqParamChanged({ bassBoostQ: v })
-              }}
-            />
-          </Grid>
+      <Grid item container direction='row' columnSpacing={1} rowSpacing={2} justifyContent='space-around'>
+        <Grid item>
+          <Knob
+            value={props.bassBoostGain}
+            minValue={0} maxValue={20}
+            label='Bass boost'
+            onChange={(v) => { props.onEqParamChanged({bassBoostGain: v}) }}
+            formattedValue={props.bassBoostGain.toFixed(1)}
+            size={120}
+            unit='dB'
+            nTicks={9}
+          />
         </Grid>
-        <Grid item xs={12} sm={6} container direction='column' rowSpacing={0}>
-          <Grid item>
-            <InputSlider
-              label='Treble boost (dB)' value={props.trebleBoostGain} min={-20} max={20} step={0.5}
-              onChange={(v) => {
-                props.onEqParamChanged({ trebleBoostGain: v })
-              }}
-            />
-          </Grid>
-          <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
-            <InputSlider
-              label='Treble freq (Hz)' value={props.trebleBoostFc}
-              min={1000.0} max={20000.0} step={5.0}
-              onChange={(v) => {
-                props.onEqParamChanged({ trebleBoostFc: v })
-              }}
-            />
-          </Grid>
-          <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
-            <InputSlider
-              label='Treble quality' value={props.trebleBoostQ}
-              min={0.3} max={1.0} step={0.05}
-              onChange={(v) => {
-                props.onEqParamChanged({ trebleBoostQ: v })
-              }}
-            />
-          </Grid>
-        </Grid>
-      </Grid>
 
-      <Grid item container direction='row' columnSpacing={1}>
-        <Grid item xs={12} sm={6}>
-          <InputSlider
-            label='Tilt (db/oct)' value={props.tilt} min={-2} max={2} step={0.1}
-            onChange={(v) => {
-              props.onEqParamChanged({ tilt: v })
-            }}
+        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+          <Knob
+            value={props.bassBoostFc}
+            minValue={20.0} maxValue={500.0}
+            label='Bass freq'
+            onChange={(v) => { props.onEqParamChanged({bassBoostFc: v}) }}
+            formattedValue={props.bassBoostFc.toFixed(0)}
+            size={120}
+            unit='Hz'
+            nTicks={9}
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputSlider
-            label='Max gain (dB)' value={props.maxGain} min={0} max={30} step={0.5}
-            onChange={(v) => {
-              props.onEqParamChanged({ maxGain: v })
-            }}
-          />
-        </Grid>
-      </Grid>
 
-      <Grid item container direction='row' columnSpacing={1}>
-        <Grid item xs={12} sm={6} sx={{display: showAdvanced ? 'block' : 'none'}}>
-          <InputSlider
-            label='Smoothing size' value={props.windowSize}
-            min={0} max={1} step={0.01}
-            onChange={(v) => {
-              props.onEqParamChanged({ windowSize: v })
-            }}
+        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+          <Knob
+            value={props.bassBoostQ}
+            minValue={0.3} maxValue={1.0}
+            label='Bass quality'
+            onChange={(v) => { props.onEqParamChanged({bassBoostQ: v}) }}
+            formattedValue={props.bassBoostQ.toFixed(2)}
+            size={120}
+            nTicks={9}
           />
         </Grid>
-        <Grid item xs={12} sm={6} sx={{display: showAdvanced ? 'block' : 'none'}}>
-          <InputSlider
-            label='Treble smoothing' value={props.trebleWindowSize}
-            min={0} max={3} step={0.01}
-            onChange={(v) => {
-              props.onEqParamChanged({ trebleWindowSize: v })
-            }}
+
+        <Grid item>
+          <Knob
+            value={props.trebleBoostGain}
+            minValue={0} maxValue={20}
+            label='Treble boost'
+            onChange={(v) => { props.onEqParamChanged({trebleBoostGain: v}) }}
+            formattedValue={props.trebleBoostGain.toFixed(1)}
+            size={120}
+            unit='dB'
+            nTicks={9}
           />
         </Grid>
+
+        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+          <Knob
+            value={props.trebleBoostFc}
+            minValue={1000} maxValue={2000}
+            label='Treble freq'
+            onChange={(v) => { props.onEqParamChanged({trebleBoostFc: v}) }}
+            formattedValue={props.trebleBoostFc.toFixed(0)}
+            size={120}
+            unit='Hz'
+            nTicks={9}
+          />
+        </Grid>
+
+        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+          <Knob
+            value={props.trebleBoostQ}
+            minValue={1000} maxValue={2000}
+            label='Treble quality'
+            onChange={(v) => { props.onEqParamChanged({trebleBoostQ: v}) }}
+            formattedValue={props.trebleBoostQ.toFixed(2)}
+            size={120}
+            nTicks={9}
+          />
+        </Grid>
+
+        <Grid item>
+          <Knob
+            value={props.maxGain}
+            minValue={0} maxValue={30}
+            label='Max gain'
+            onChange={(v) => { props.onEqParamChanged({maxGain: v}) }}
+            formattedValue={props.maxGain.toFixed(1)}
+            size={120}
+            unit='dB'
+            nTicks={9}
+          />
+        </Grid>
+
+        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+          <Knob
+            value={props.tilt}
+            minValue={0} maxValue={2}
+            label='Tilt'
+            onChange={(v) => { props.onEqParamChanged({ tilt: v }) }}
+            formattedValue={props.tilt.toFixed(2)}
+            size={120}
+            unit='dB/oct'
+            nTicks={9}
+          />
+        </Grid>
+
+        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+          <Knob
+            value={props.windowSize}
+            minValue={0} maxValue={1}
+            label='Smoothing window'
+            onChange={(v) => { props.onEqParamChanged({ windowSize: v }) }}
+            formattedValue={props.windowSize.toFixed(2)}
+            size={120}
+            unit='oct'
+            nTicks={9}
+          />
+        </Grid>
+
+        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+          <Knob
+            value={props.trebleWindowSize}
+            minValue={0} maxValue={3}
+            label='Treble smoothing'
+            onChange={(v) => { props.onEqParamChanged({ trebleWindowSize: v }) }}
+            formattedValue={props.trebleWindowSize.toFixed(2)}
+            size={120}
+            unit='oct'
+            nTicks={9}
+          />
+        </Grid>
+
+        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+          <Knob
+            value={props.trebleGainK}
+            minValue={0} maxValue={3}
+            label='Treble gain multiplier'
+            onChange={(v) => { props.onEqParamChanged({ trebleGainK: v }) }}
+            formattedValue={props.trebleGainK.toFixed(2)}
+            size={120}
+            nTicks={9}
+          />
+        </Grid>
+
       </Grid>
 
       <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
@@ -255,16 +292,6 @@ const TargetTab = (props) => {
           min={1000} max={20000} step={100}
           onChange={(v) => {
             props.onEqParamChanged({ trebleFLower: v[0], trebleFUpper: v[1] })
-          }}
-        />
-      </Grid>
-
-      <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
-        <InputSlider
-          label='Treble region gain multiplier' value={props.trebleGainK}
-          min={0.0} max={1.0} step={0.01}
-          onChange={(v) => {
-            props.onEqParamChanged({ trebleGainK: v })
           }}
         />
       </Grid>
