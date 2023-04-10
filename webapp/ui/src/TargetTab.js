@@ -105,8 +105,15 @@ const TargetTab = (props) => {
         </Grid>
       )}
 
-      <Grid item container direction='row' justifyContent='space-between' sx={{display: showAdvanced ? 'flex' : 'none'}}>
-        <Grid item sx={{position: 'relative'}}>
+      <Grid
+        item
+        container
+        direction='row'
+        justifyContent='space-between'
+        columnSpacing={2}
+        sx={{display: showAdvanced ? 'flex' : 'none'}}
+      >
+        <Grid item sx={{position: 'relative', flexGrow: 1, width: '185px'}}>
           <CSVField
             label='Sound signature'
             onChange={(dataPoints) => { props.onEqParamChanged({ soundSignature: dataPoints }); }}
@@ -131,7 +138,7 @@ const TargetTab = (props) => {
             formattedValue={props.soundSignatureSmoothingWindowSize.toFixed(2)}
             minValue={0}
             maxValue={2}
-            size={120}
+            size={115}
             unit='oct'
             icon={VolumeUpIcon}
             nTicks={9}
@@ -140,8 +147,8 @@ const TargetTab = (props) => {
         </Grid>
       </Grid>
 
-      <Grid item container direction='row' columnSpacing={1} rowSpacing={2} justifyContent='space-around'>
-        <Grid item>
+      <Grid item container direction='row' columnSpacing={2} rowSpacing={2} justifyContent='center'>
+        <Grid item xs={4}>
           <Knob
             value={props.bassBoostGain}
             minValue={0} maxValue={20}
@@ -151,10 +158,11 @@ const TargetTab = (props) => {
             size={120}
             unit='dB'
             nTicks={9}
+            style={{margin: 'auto'}}
           />
         </Grid>
 
-        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+        <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
             value={props.bassBoostFc}
             minValue={20.0} maxValue={500.0}
@@ -167,7 +175,7 @@ const TargetTab = (props) => {
           />
         </Grid>
 
-        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+        <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
             value={props.bassBoostQ}
             minValue={0.3} maxValue={1.0}
@@ -179,7 +187,7 @@ const TargetTab = (props) => {
           />
         </Grid>
 
-        <Grid item>
+        <Grid item xs={4}>
           <Knob
             value={props.trebleBoostGain}
             minValue={0} maxValue={20}
@@ -192,7 +200,7 @@ const TargetTab = (props) => {
           />
         </Grid>
 
-        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+        <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
             value={props.trebleBoostFc}
             minValue={1000} maxValue={2000}
@@ -205,7 +213,7 @@ const TargetTab = (props) => {
           />
         </Grid>
 
-        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+        <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
             value={props.trebleBoostQ}
             minValue={1000} maxValue={2000}
@@ -217,7 +225,7 @@ const TargetTab = (props) => {
           />
         </Grid>
 
-        <Grid item>
+        <Grid item xs={4}>
           <Knob
             value={props.maxGain}
             minValue={0} maxValue={30}
@@ -230,7 +238,7 @@ const TargetTab = (props) => {
           />
         </Grid>
 
-        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+        <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
             value={props.tilt}
             minValue={0} maxValue={2}
@@ -243,7 +251,7 @@ const TargetTab = (props) => {
           />
         </Grid>
 
-        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+        <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
             value={props.windowSize}
             minValue={0} maxValue={1}
@@ -256,7 +264,7 @@ const TargetTab = (props) => {
           />
         </Grid>
 
-        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+        <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
             value={props.trebleWindowSize}
             minValue={0} maxValue={3}
@@ -269,7 +277,7 @@ const TargetTab = (props) => {
           />
         </Grid>
 
-        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+        <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
             value={props.trebleGainK}
             minValue={0} maxValue={3}
@@ -283,7 +291,7 @@ const TargetTab = (props) => {
 
       </Grid>
 
-      <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
+      <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
         <InputSlider
           label='Treble transition region (Hz)' value={[
             props.trebleFLower,

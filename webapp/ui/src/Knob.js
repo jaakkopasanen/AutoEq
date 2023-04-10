@@ -46,6 +46,7 @@ const Knob = (props) => {
       sx={{
         width: props.size,
         textAlign: 'center',
+        margin: 'auto'
       }}
       onMouseDown={onMouseDown}
       onMouseUp={onMouseUp}
