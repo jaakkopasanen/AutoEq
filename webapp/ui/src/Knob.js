@@ -11,7 +11,18 @@ const Knob = (props) => {
     // atan2 returns angle from center right with angle increasing counter clockwise
     // transform the angle to be relative to bottom center and clockwise
     const angle = (270 - Math.atan2(cy - e.clientY, e.clientX - cx) * 180 / Math.PI) % 360;
-    let value = (angle - angleOffset) / (360 - 2 * angleOffset) * (props.maxValue - props.minValue)  // Value from angle
+    let value = props.minValue + (angle - angleOffset) / (360 - 2 * angleOffset) * (props.maxValue - props.minValue)  // Value from angle
+    if (props.step) {
+      let v = props.minValue;
+      let closest = null;
+      while (v < props.maxValue + props.step) {
+        if (closest === null || Math.abs(value - v) < Math.abs(value - closest)) {
+          closest = v;
+        }
+        v += props.step;
+      }
+      return closest;
+    }
     return Math.min(props.maxValue, Math.max(props.minValue, value));  // Clip between min and max values
   };
 
@@ -34,7 +45,7 @@ const Knob = (props) => {
 
   const elRef = useRef();
 
-  const angle = angleOffset + (props.minValue + props.value) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset);
+  const angle = angleOffset + (props.value - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset);
   const ticks = [];
   const nTicks = props.nTicks || 8;
   for (let i = 0; i < nTicks; ++i) {

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import FrequencyResponseGraph from './FrequencyResponseGraph';
 import {
   Alert, Box,
@@ -43,21 +43,21 @@ const App = (props) => {
   const eqNodesRef = useRef([]);
   const equalizeTimerRef = useRef(null);
 
-  const [isSnackbarOpen, setIsSnackbarOpen, isSnackbarOpenRef] = useStateRef(false);
-  const [snackbarMessage, setSnackbarMessage, snackbarMessageRef] = useStateRef('');
-  const [showInfo, setShowInfo, showInfoRef] = useStateRef(true);
+  const [isSnackbarOpen, setIsSnackbarOpen] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState('');
+  const [showInfo, setShowInfo] = useState(true);
 
   const [measurements, setMeasurements, measurementsRef] = useStateRef(null);  // { label, source, form, rig }
   const [selectedMeasurement, setSelectedMeasurement, selectedMeasurementRef] = useStateRef(null);  // { label, source, form, rig }
 
-  const [graphData, setGraphData, graphDataRef] = useStateRef(null);  // Data for the frequency response graph
+  const [graphData, setGraphData] = useState(null);  // Data for the frequency response graph
 
   const [soundProfiles, setSoundProfiles, soundProfilesRef] = useStateRef(
     window.localStorage.getItem('soundProfiles')
       ? JSON.parse(window.localStorage.getItem('soundProfiles'))
       : []
   );
-  const [selectedSoundProfile, setSelectedSoundProfile, selectedSoundProfileRef] = useStateRef(null);
+  const [selectedSoundProfile, setSelectedSoundProfile] = useState(null);
   const [compensations, setCompensations, compensationsRef] = useStateRef([]);
   // Sound signatures preferred for each measurement rig: {source: {form: {rig: label}}
   const [preferredCompensations, setPreferredCompensations, preferredCompensationsRef] = useStateRef([]);
@@ -90,11 +90,11 @@ const App = (props) => {
   const [phase, setPhase, phaseRef] = useStateRef('minimum');
   const [fRes, setFRes, fResRef] = useStateRef(16.0);
   const [preamp, setPreamp, preampRef] = useStateRef(0.0);
-  const [graphicEq, setGraphicEq, graphicEqRef] = useStateRef(null);
-  const [parametricEq, setParametricEq, parametricEqRef] = useStateRef(null);
-  const [fixedBandEq, setFixedBandEq, fixedBandEqRef] = useStateRef(null);
-  const [firAudioBuffer, setFirAudioBuffer, firAudioBufferRef] = useStateRef(null);
-  const [gain, setGain, gainRef] = useStateRef(null);
+  const [graphicEq, setGraphicEq] = useState(null);
+  const [parametricEq, setParametricEq] = useState(null);
+  const [fixedBandEq, setFixedBandEq] = useState(null);
+  const [firAudioBuffer, setFirAudioBuffer] = useState(null);
+  const [gain, setGain] = useState(null);
   const [isEqOn, setIsEqOn, isEqOnRef] = useStateRef(false);
 
   const setState = {
