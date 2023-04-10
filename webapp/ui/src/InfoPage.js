@@ -27,14 +27,14 @@ const InfoPage = (props) => {
   const iconSize = 48;
 
   return (
-    <Container fixed maxWidth='sm' sx={{color: theme => theme.palette.grey.A400, }}>
+    <Container fixed maxWidth='sm' sx={{color: theme => theme.palette.grey.A200, }}>
       <IconButton
         onClick={props.onCloseClick}
         sx={{
           display: (props.canClose) ? 'inherit' : 'none',
           position: 'absolute', right: 0,
           top: theme => theme.spacing(10),
-          color: theme => theme.palette.grey.A400,
+          color: theme => theme.palette.grey.A200,
         }}
       >
         <ClearIcon />
@@ -98,8 +98,8 @@ const InfoPage = (props) => {
                 Play some songs with player on the bottom and toggle EQ on and off to hear the difference
               </Typography>
               <Typography variant='body2'>
-                Adjust bass and treble to taste and play around with the other parameters to get the most out of
-                your headphones
+                Adjust bass and treble to taste and play around with the advanced parameters if you wish to get the
+                most out of your headphones
               </Typography>
             </Grid>
           </Grid>

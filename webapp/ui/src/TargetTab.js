@@ -15,7 +15,6 @@ import AddIcon from '@mui/icons-material/Add';
 import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 import CSVAutocomplete from './CSVAutocomplete';
 import Knob from './Knob';
-import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 const TargetTab = (props) => {
   const [showAdvanced, setShowAdvanced] = useState(false);
@@ -87,7 +86,7 @@ const TargetTab = (props) => {
       </Grid>
 
       {props.compensations?.length > 0 && (
-        <Grid item>
+        <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
           <CSVAutocomplete
             value={props.selectedCompensation}
             options={props.compensations}
@@ -138,14 +137,14 @@ const TargetTab = (props) => {
             minValue={0} maxValue={2} step={0.1}
             size={115}
             unit='oct'
-            icon={VolumeUpIcon}
             nTicks={9}
             label='Smoothing'
+            tooltip='Sound signature smoothing window size. Useful for making the sound signature smooth when only a few points are present.'
           />
         </Grid>
       </Grid>
 
-      <Grid item container direction='row' columnSpacing={2} rowSpacing={2} justifyContent='center'>
+      <Grid item container direction='row' columnSpacing={2} rowSpacing={2} justifyContent='center' sx={{mt: 0}}>
         <Grid item xs={4}>
           <Knob
             value={props.bassBoostGain}
@@ -157,6 +156,7 @@ const TargetTab = (props) => {
             unit='dB'
             nTicks={9}
             style={{margin: 'auto'}}
+            tooltip='Bass boost level'
           />
         </Grid>
 
@@ -170,6 +170,7 @@ const TargetTab = (props) => {
             size={120}
             unit='Hz'
             nTicks={9}
+            tooltip='Bass boost shelf center frequency'
           />
         </Grid>
 
@@ -182,19 +183,21 @@ const TargetTab = (props) => {
             formattedValue={props.bassBoostQ.toFixed(2)}
             size={120}
             nTicks={9}
+            tooltip='Bass boost shelf quality (slope steepness)'
           />
         </Grid>
 
         <Grid item xs={4}>
           <Knob
             value={props.trebleBoostGain}
-            minValue={0} maxValue={20} step={0.5}
+            minValue={-15} maxValue={15} step={0.5}
             label='Treble boost'
             onChange={(v) => { props.onEqParamChanged({trebleBoostGain: v}) }}
             formattedValue={props.trebleBoostGain.toFixed(1)}
             size={120}
             unit='dB'
             nTicks={9}
+            tooltip='Treble boost level'
           />
         </Grid>
 
@@ -208,6 +211,7 @@ const TargetTab = (props) => {
             size={120}
             unit='Hz'
             nTicks={9}
+            tooltip='Treble boost shelf center frequency'
           />
         </Grid>
 
@@ -220,6 +224,7 @@ const TargetTab = (props) => {
             formattedValue={props.trebleBoostQ.toFixed(2)}
             size={120}
             nTicks={9}
+            tooltip='Treble boost shelf quality (slope steepness)'
           />
         </Grid>
 
@@ -233,6 +238,7 @@ const TargetTab = (props) => {
             size={120}
             unit='dB'
             nTicks={9}
+            tooltip="Maximum gain for EQ. Decrease max gain if you're not getting enough volume."
           />
         </Grid>
 
@@ -246,6 +252,7 @@ const TargetTab = (props) => {
             size={120}
             unit='dB/oct'
             nTicks={9}
+            tooltip='Frequency response tilt. Positive values make sound brighter and negative darker.'
           />
         </Grid>
 
@@ -253,12 +260,13 @@ const TargetTab = (props) => {
           <Knob
             value={props.windowSize}
             minValue={0} maxValue={1} step={0.1}
-            label='Smoothing window'
+            label='Smoothing'
             onChange={(v) => { props.onEqParamChanged({ windowSize: v }) }}
             formattedValue={props.windowSize.toFixed(2)}
             size={120}
             unit='oct'
             nTicks={9}
+            tooltip='Smoothing window size. Higher values make curves smoother.'
           />
         </Grid>
 
@@ -272,6 +280,7 @@ const TargetTab = (props) => {
             size={120}
             unit='oct'
             nTicks={9}
+            tooltip='Smoothing window size above treble transition region'
           />
         </Grid>
 
@@ -284,6 +293,7 @@ const TargetTab = (props) => {
             formattedValue={props.trebleGainK.toFixed(2)}
             size={120}
             nTicks={9}
+            tooltip='Treble region gain multiplier. Useful for reducing EQ in the highest frequencies.'
           />
         </Grid>
 

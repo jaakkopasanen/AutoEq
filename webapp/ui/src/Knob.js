@@ -1,5 +1,6 @@
 import React, {useRef, useState} from 'react';
-import {Box, Typography} from '@mui/material';
+import {Box, Tooltip, Typography} from '@mui/material';
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const Knob = (props) => {
   const angleOffset = 45;
@@ -127,7 +128,17 @@ const Knob = (props) => {
           </Box>
         )}
       </Box>
-      {props.label && <Typography variant='caption' sx={{lineHeight: 1}}>{props.label}</Typography>}
+      {props.label && props.tooltip && (
+        <Tooltip title={props.tooltip}>
+          <Typography variant='caption' sx={{lineHeight: 1}}>
+            {props.label}
+            <InfoOutlinedIcon sx={{width: 14, height: 14, verticalAlign: 'bottom'}} />
+          </Typography>
+        </Tooltip>
+      )}
+      {props.label && !props.tooltip && (
+        <Typography variant='caption' sx={{lineHeight: 1}}>{props.label}</Typography>
+      )}
     </Box>
   );
 };
