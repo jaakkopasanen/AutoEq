@@ -11,10 +11,11 @@ import {
 import InputSlider from './InputSlider';
 import CSVField from './CSVField';
 import HeadphonesIcon from '@mui/icons-material/Headphones';
-import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
 import AddIcon from '@mui/icons-material/Add';
 import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
-import CSVAutocomplete from "./CSVAutocomplete";
+import CSVAutocomplete from './CSVAutocomplete';
+import Knob from './Knob';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 const TargetTab = (props) => {
   const [showAdvanced, setShowAdvanced] = useState(false);
@@ -104,39 +105,48 @@ const TargetTab = (props) => {
         </Grid>
       )}
 
-      <Grid item sx={{position: 'relative'}}>
-        <CSVField
-          label='Sound signature'
-          onChange={(dataPoints) => { props.onEqParamChanged({ soundSignature: dataPoints }); }}
-          value={props.soundSignature}
-          helperText={
-            <span>
-              <Typography variant='body2' sx={{display: 'inline'}}>Edit the text directly, drop a CSV file or click </Typography>
-              <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
-              <Typography variant='body2' sx={{display: 'inline'}}> to open a file. Click </Typography>
-              <HeadphonesIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
-              <Typography variant='body2' sx={{display: 'inline'}}> to use the current error curve.</Typography>
-            </span>
-          }
-          minRows={5} maxRows={10}
-        />
-        <Tooltip title='Use current error' placement='left'>
-          <IconButton
-            variant='outlined' onClick={onUseCurrentErrorClicked}
-            disabled={props.graphData.filter(x => props.smoothed ? !!x.errorSmoothed : !!x.error).length === 0}
-            sx={{position: 'absolute', top: '88px', right: 0}}
-          >
-            <HeadphonesIcon />
-          </IconButton>
-        </Tooltip>
-      </Grid>
-      <Grid item>
-        <InputSlider
-          label='Sound signature smoothing'
-          value={props.soundSignatureSmoothingWindowSize}
-          onChange={(val) => { props.onEqParamChanged({ soundSignatureSmoothingWindowSize: val}); }}
-          step={0.01} min={0} max={2}
-        />
+      <Grid item container direction='row' justifyContent='space-between'>
+        <Grid item sx={{position: 'relative'}}>
+          <CSVField
+            label='Sound signature'
+            onChange={(dataPoints) => { props.onEqParamChanged({ soundSignature: dataPoints }); }}
+            value={props.soundSignature}
+            // helperText={
+            //   <span>
+            //   <Typography variant='body2' sx={{display: 'inline'}}>Edit the text directly, drop a CSV file or click </Typography>
+            //   <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
+            //   <Typography variant='body2' sx={{display: 'inline'}}> to open a file. Click </Typography>
+            //   <HeadphonesIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
+            //   <Typography variant='body2' sx={{display: 'inline'}}> to use the current error curve.</Typography>
+            // </span>
+            // }
+            helperText=''
+            minRows={5} maxRows={10}
+          />
+          <Tooltip title='Use current error' placement='left'>
+            <IconButton
+              variant='outlined' onClick={onUseCurrentErrorClicked}
+              disabled={props.graphData.filter(x => props.smoothed ? !!x.errorSmoothed : !!x.error).length === 0}
+              sx={{position: 'absolute', top: '80px', right: 0}}
+            >
+              <HeadphonesIcon />
+            </IconButton>
+          </Tooltip>
+        </Grid>
+        <Grid item>
+          <Knob
+            value={props.soundSignatureSmoothingWindowSize}
+            onChange={(val) => { props.onEqParamChanged({ soundSignatureSmoothingWindowSize: val}); }}
+            formattedValue={props.soundSignatureSmoothingWindowSize.toFixed(2)}
+            minValue={0}
+            maxValue={2}
+            size={120}
+            unit='oct'
+            icon={VolumeUpIcon}
+            nTicks={9}
+            label='Smoothing'
+          />
+        </Grid>
       </Grid>
 
       <Grid item container direction='row' columnSpacing={1}>

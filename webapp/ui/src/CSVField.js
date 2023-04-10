@@ -84,7 +84,7 @@ const CSVField = (props) => {
               textAlign: 'center',
             }}
           >
-            {props.helperText || (
+            {'helperText' in props || (
               <span>
                 <Typography variant='body2' sx={{display: 'inline'}}>Edit the text directly, drop a CSV file or click </Typography>
                 <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
