@@ -75,23 +75,6 @@ const CSVField = (props) => {
     <Grid container direction='column'>
       <Grid item>
         <Box { ...getRootProps() } sx={{position: 'relative'}}>
-          <Box
-            sx={{
-              position: 'absolute', top: '50%', transform: 'translateY(-50%)',
-              right: '70px',
-              left: {xs: '40%', sm: '50%', md: '40%'},
-              color: isDragAccept ? theme => theme.palette.info : theme => theme.palette.text.secondary,
-              textAlign: 'center',
-            }}
-          >
-            {'helperText' in props || (
-              <span>
-                <Typography variant='body2' sx={{display: 'inline'}}>Edit the text directly, drop a CSV file or click </Typography>
-                <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
-                <Typography variant='body2' sx={{display: 'inline'}}> to open a file.</Typography>
-              </span>
-            )}
-          </Box>
           <TextField
             multiline rows={rows} value={csvText}
             inputProps={{ style: { fontFamily: 'monospace', marginRight: '24px' } }}

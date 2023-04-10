@@ -356,7 +356,7 @@ const App = (props) => {
     const equalizer = equalizers[ix];
     equalizers.splice(ix, 1, equalizer);
     updateFn(equalizer);
-    setEqualizers(equalizer);
+    setEqualizers(equalizers);
     equalize();
   };
 

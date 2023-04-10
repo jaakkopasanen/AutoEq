@@ -118,7 +118,6 @@ const TargetTab = (props) => {
             label='Sound signature'
             onChange={(dataPoints) => { props.onEqParamChanged({ soundSignature: dataPoints }); }}
             value={props.soundSignature}
-            helperText=''
             minRows={5} maxRows={10}
           />
           <Tooltip title='Use current error' placement='left'>

@@ -77,7 +77,7 @@ const Knob = (props) => {
             position: 'absolute', bottom: 0, left: '50%',
             transform: `translate(-50%) rotate(${a}deg)`,
             width: '2px', height: '10px',
-            background: theme => theme.palette.grey.A400,
+            background: '#666',
             borderRadius: '1px',
             transformOrigin: `50% -${parseFloat(props.size) / 2 - 10}px`
           }} />
@@ -86,7 +86,7 @@ const Knob = (props) => {
           sx={{
             width: '100%', height: '100%',
             borderRadius: '50%',
-            border: theme => `1px solid ${theme.palette.primary.main}`,
+            border: theme => `2px solid ${theme.palette.primary.main}`,
             boxSizing: 'border-box'
           }}
         />
