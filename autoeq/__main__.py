@@ -5,7 +5,8 @@ import warnings
 
 from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_FC, \
-    DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE
+    DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_BOOST_FC, \
+    DEFAULT_TREBLE_BOOST_Q, DEFAULT_PREAMP
 from autoeq.batch_processing import batch_processing
 
 
@@ -93,6 +94,14 @@ def cli_args():
                                  'value (gain) is given, default values for Fc and Q are used which are '
                                  f'{DEFAULT_BASS_BOOST_FC} Hz and {DEFAULT_BASS_BOOST_Q}, '
                                  'respectively. For example "--bass-boost=6" or "--bass-boost=9.5,150,0.69".')
+    arg_parser.add_argument('--treble-boost', type=str, default=argparse.SUPPRESS,
+                            help='Treble boost shelf. > 10 kHz frequencies will be boosted by this amount. Can be '
+                                 'either a single value for a gain in dB or a comma separated list of three values '
+                                 'for parameters of a high shelf filter, where the first is gain in dB, second is '
+                                 'center frequency (Fc) in Hz and the last is quality (Q). When only a single '
+                                 'value (gain) is given, default values for Fc and Q are used which are '
+                                 f'{DEFAULT_TREBLE_BOOST_FC} Hz and {DEFAULT_TREBLE_BOOST_Q}, '
+                                 'respectively. For example "--treble-boost=3" or "--treble-boost=-4,12000,0.69".')
     arg_parser.add_argument('--tilt', type=float, default=argparse.SUPPRESS,
                             help='Target tilt in dB/octave. Positive value (upwards slope) will result in brighter '
                                  'frequency response and negative value (downwards slope) will result in darker '
@@ -134,6 +143,8 @@ def cli_args():
                             help='Amount of threads to use for processing results. If set to "max" all the threads '
                                  'available will be used. Using more threads result in higher memory usage. '
                                  'Defaults to 1.')
+    arg_parser.add_argument('--preamp', type=float, default=DEFAULT_PREAMP,
+                            help='Extra pre-amplification to be applied to equalizer settings in dB')
     args = vars(arg_parser.parse_args())
 
     # Replace hyphens with underscores to be compatible with the batch_processing method signature
@@ -155,8 +166,22 @@ def cli_args():
             args['bass_boost_fc'] = float(bass_boost[1])
             args['bass_boost_q'] = float(bass_boost[2])
         else:
-            raise ValueError('"--bass_boost" must have one value or three values separated by commas!')
+            raise ValueError('"--bass-boost" must have one value or three values separated by commas!')
         del args['bass_boost']
+        
+    if 'treble_boost' in args:
+        treble_boost = args['treble_boost'].split(',')
+        if len(treble_boost) == 1:
+            args['treble_boost_gain'] = float(treble_boost[0])
+            args['treble_boost_fc'] = DEFAULT_TREBLE_BOOST_FC
+            args['treble_boost_q'] = DEFAULT_TREBLE_BOOST_Q
+        elif len(treble_boost) == 3:
+            args['treble_boost_gain'] = float(treble_boost[0])
+            args['treble_boost_fc'] = float(treble_boost[1])
+            args['treble_boost_q'] = float(treble_boost[2])
+        else:
+            raise ValueError('"--treble-boost" must have one value or three values separated by commas!')
+        del args['treble_boost']
 
     if 'parametric_eq_config' in args:
         if not os.path.isfile(args['parametric_eq_config']):

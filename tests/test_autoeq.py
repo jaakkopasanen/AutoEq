@@ -9,7 +9,8 @@ from autoeq.frequency_response import FrequencyResponse
 from autoeq.batch_processing import batch_processing
 from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, \
     DEFAULT_BIT_DEPTH, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, \
-    DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, PEQ_CONFIGS
+    DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, PEQ_CONFIGS, DEFAULT_TREBLE_BOOST_GAIN, \
+    DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q
 
 
 class TestAutoEq(unittest.TestCase):
@@ -50,11 +51,13 @@ class TestAutoEq(unittest.TestCase):
             fixed_band_eq_config=None, convolution_eq=True,
             fs=[44100, 48000], bit_depth=DEFAULT_BIT_DEPTH, phase='both', f_res=DEFAULT_F_RES,
             bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
-            bass_boost_q=DEFAULT_BASS_BOOST_Q, tilt=-0.2, sound_signature=self._sound_signature,
+            bass_boost_q=DEFAULT_BASS_BOOST_Q, treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
+            treble_boost_fc=DEFAULT_TREBLE_BOOST_FC, treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
+            tilt=-0.2, sound_signature=self._sound_signature,
             max_gain=DEFAULT_MAX_GAIN,
             window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
             treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-            treble_gain_k=DEFAULT_TREBLE_GAIN_K, thread_count=1
+            treble_gain_k=DEFAULT_TREBLE_GAIN_K, preamp=-1.0, thread_count=1
         )
         self.assertEqual(len(frs), 2)
 

@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "autoeq"
-version = "2.0.0"
+version = "2.2.0"
 authors = [
   { name="Jaakko Pasanen", email="jaakko.o.pasanen@gmail.com" },
 ]
@@ -25,7 +25,7 @@ dependencies = [
     'scipy~=1.8.1',
     'numpy~=1.23.1',
     'tabulate~=0.8.10',
-    'soundfile~=0.10.2',
+    'soundfile~=0.11.0',
     'pyyaml~=6.0',
     'tqdm~=4.64.0',
 ]
@@ -38,7 +38,6 @@ dependencies = [
 include = [
     "/autoeq",
     "LICENCE",
-    "README.md",
     "pyproject.toml",
 ]
 exclude = [
@@ -49,4 +48,5 @@ exclude = [
     "/results",
     "/tests",
     ".gitignore",
+    "/autoeq/README.md"
 ]

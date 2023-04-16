@@ -25,8 +25,9 @@ from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
     HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, \
-    DEFAULT_BIQUAD_OPTIMIZATION_F_STEP
-from autoeq.peq import PEQ, LowShelf
+    DEFAULT_BIQUAD_OPTIMIZATION_F_STEP, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, \
+    DEFAULT_PREAMP
+from autoeq.peq import PEQ, LowShelf, HighShelf
 
 warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
 
@@ -246,7 +247,7 @@ class FrequencyResponse:
         df = pd.DataFrame(self.to_dict())
         df.to_csv(file_path, header=True, index=False, float_format='%.2f')
 
-    def eqapo_graphic_eq(self, normalize=True, f_step=DEFAULT_GRAPHIC_EQ_STEP):
+    def eqapo_graphic_eq(self, normalize=True, preamp=DEFAULT_PREAMP, f_step=DEFAULT_GRAPHIC_EQ_STEP):
         """Generates EqualizerAPO GraphicEQ string from equalization curve."""
         fr = self.__class__(name='hack', frequency=self.frequency, raw=self.equalization)
         n = np.ceil(np.log(20000 / 20) / np.log(f_step))
@@ -255,26 +256,30 @@ class FrequencyResponse:
         fr.interpolate(f=f)
         if normalize:
             fr.raw -= np.max(fr.raw) + PREAMP_HEADROOM
-            if fr.raw[0] > 0.0:
-                # Prevent bass boost below lowest frequency
-                fr.raw[0] = 0.0
+        if preamp:
+            fr.raw += preamp
+        if fr.raw[0] > 0.0:
+            # Prevent bass boost below lowest frequency
+            fr.raw[0] = 0.0
         s = '; '.join(['{f} {a:.1f}'.format(f=f, a=a) for f, a in zip(fr.frequency, fr.raw)])
         s = 'GraphicEQ: ' + s
         return s
 
-    def write_eqapo_graphic_eq(self, file_path, normalize=True):
+    def write_eqapo_graphic_eq(self, file_path, normalize=True, preamp=DEFAULT_PREAMP):
         """Writes equalization graph to a file as Equalizer APO config."""
         file_path = os.path.abspath(file_path)
-        s = self.eqapo_graphic_eq(normalize=normalize)
+        s = self.eqapo_graphic_eq(normalize=normalize, preamp=preamp)
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(s)
         return s
 
-    def _optimize_peq_filters(self, configs, fs, max_time=None):
+    def _optimize_peq_filters(self, configs, fs, max_time=None, preamp=DEFAULT_PREAMP):
         if type(configs) != list:
             configs = [configs]
         peqs = []
         fr = self.__class__(name='optimizer', frequency=self.frequency, equalization=self.equalization)
+        if preamp:
+            fr.equalization += preamp
         fr.interpolate(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP)
         start_time = time()
         for config in configs:
@@ -288,8 +293,8 @@ class FrequencyResponse:
                 max_time = max_time - (time() - start_time)
         return peqs
 
-    def optimize_parametric_eq(self, configs, fs, max_time=None):
-        peqs = self._optimize_peq_filters(configs, fs, max_time=max_time)
+    def optimize_parametric_eq(self, configs, fs, max_time=None, preamp=DEFAULT_PREAMP):
+        peqs = self._optimize_peq_filters(configs, fs, max_time=max_time, preamp=preamp)
         fr = FrequencyResponse(
             name='PEQ', frequency=self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP),
             raw=np.sum(np.vstack([peq.fr for peq in peqs]), axis=0))
@@ -297,8 +302,8 @@ class FrequencyResponse:
         self.parametric_eq = fr.raw
         return peqs
 
-    def optimize_fixed_band_eq(self, configs, fs, max_time=None):
-        peqs = self._optimize_peq_filters(configs, fs, max_time=max_time)
+    def optimize_fixed_band_eq(self, configs, fs, max_time=None, preamp=DEFAULT_PREAMP):
+        peqs = self._optimize_peq_filters(configs, fs, max_time=max_time, preamp=preamp)
         fr = FrequencyResponse(
             name='PEQ', frequency=self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP),
             raw=np.sum(np.vstack([peq.fr for peq in peqs]), axis=0))
@@ -355,7 +360,7 @@ class FrequencyResponse:
         folders.reverse()
         return folders
 
-    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True):
+    def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True, preamp=DEFAULT_PREAMP):
         """Generates minimum phase impulse response
 
         Inspired by:
@@ -365,6 +370,7 @@ class FrequencyResponse:
             fs: Sampling frequency in Hz
             f_res: Frequency resolution as sampling interval. 20 would result in sampling at 0 Hz, 20 Hz, 40 Hz, ...
             normalize: Normalize gain to -0.2 dB
+            preamp: Extra pre-amplification in dB
 
         Returns:
             Minimum phase impulse response
@@ -389,6 +395,8 @@ class FrequencyResponse:
             # Reduce by max gain to avoid clipping with 1 dB of headroom
             fr.raw -= np.max(fr.raw)
             fr.raw -= PREAMP_HEADROOM
+        if preamp:
+            fr.raw += preamp
         # Minimum phase transformation by scipy's homomorphic method halves dB gain
         fr.raw *= 2
         # Convert amplitude to linear scale
@@ -401,7 +409,7 @@ class FrequencyResponse:
         ir = minimum_phase(ir, n_fft=len(ir))
         return ir
 
-    def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True):
+    def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True, preamp=DEFAULT_PREAMP):
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
         fr = self.__class__(name='fr_data', frequency=self.frequency, raw=self.equalization)
@@ -417,6 +425,8 @@ class FrequencyResponse:
             # Reduce by max gain to avoid clipping with 1 dB of headroom
             fr.raw -= np.max(fr.raw)
             fr.raw -= PREAMP_HEADROOM
+        if preamp:
+            fr.raw += preamp
         # Convert amplitude to linear scale
         fr.raw = 10 ** (fr.raw / 20)
         # Calculate response
@@ -596,31 +606,45 @@ class FrequencyResponse:
                       bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
                       bass_boost_fc=DEFAULT_BASS_BOOST_FC,
                       bass_boost_q=DEFAULT_BASS_BOOST_Q,
-                      tilt=None):
+                      treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
+                      treble_boost_fc=DEFAULT_TREBLE_BOOST_FC,
+                      treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
+                      tilt=None,
+                      fs=DEFAULT_FS):
         """Creates target curve with bass boost as described by harman target response.
 
         Args:
             bass_boost_gain: Bass boost amount in dB
             bass_boost_fc: Bass boost low shelf center frequency
             bass_boost_q: Bass boost low shelf quality
+            treble_boost_gain: Treble boost amount in dB
+            treble_boost_fc: Treble boost high shelf center frequency
+            treble_boost_q: Treble boost high shelf quality
             tilt: Frequency response tilt (slope) in dB per octave, positive values make it brighter
+            fs: Sampling frequency
 
         Returns:
             Target for equalization
         """
-        bass_boost = LowShelf(self.frequency, DEFAULT_FS, fc=bass_boost_fc, q=bass_boost_q, gain=bass_boost_gain)
+        bass_boost = LowShelf(self.frequency, fs, fc=bass_boost_fc, q=bass_boost_q, gain=bass_boost_gain)
+        treble_boost = HighShelf(
+            self.frequency, fs, fc=treble_boost_fc, q=treble_boost_q, gain=treble_boost_gain)
         if tilt is not None:
             tilt = self._tilt(tilt=tilt)
         else:
             tilt = np.zeros(len(self.frequency))
-        return bass_boost.fr + tilt
+        return bass_boost.fr + treble_boost.fr + tilt
 
     def compensate(self,
                    compensation,
                    bass_boost_gain=DEFAULT_BASS_BOOST_GAIN,
                    bass_boost_fc=DEFAULT_BASS_BOOST_FC,
                    bass_boost_q=DEFAULT_BASS_BOOST_Q,
+                   treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
+                   treble_boost_fc=DEFAULT_TREBLE_BOOST_FC,
+                   treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
                    tilt=None,
+                   fs=DEFAULT_FS,
                    sound_signature=None,
                    min_mean_error=False):
         """Sets target and error curves."""
@@ -633,7 +657,11 @@ class FrequencyResponse:
             bass_boost_gain=bass_boost_gain,
             bass_boost_fc=bass_boost_fc,
             bass_boost_q=bass_boost_q,
-            tilt=tilt
+            treble_boost_gain=treble_boost_gain,
+            treble_boost_fc=treble_boost_fc,
+            treble_boost_q=treble_boost_q,
+            tilt=tilt,
+            fs=fs
         )
         if sound_signature is not None:
             # Sound signature give, add it to target curve
@@ -1263,7 +1291,11 @@ class FrequencyResponse:
                 bass_boost_gain=None,
                 bass_boost_fc=None,
                 bass_boost_q=None,
+                treble_boost_gain=None,
+                treble_boost_fc=None,
+                treble_boost_q=None,
                 tilt=None,
+                fs=DEFAULT_FS,
                 sound_signature=None,
                 max_gain=DEFAULT_MAX_GAIN,
                 concha_interference=False,
@@ -1282,6 +1314,10 @@ class FrequencyResponse:
             bass_boost_gain: Bass boost amount in dB.
             bass_boost_fc: Bass boost low shelf center frequency.
             bass_boost_q: Bass boost low shelf quality.
+            treble_boost_gain: Treble boost amount in dB.
+            treble_boost_fc: Treble boost high shelf center frequency.
+            treble_boost_q: Treble boost high shelf quality.
+            fs: Sampling frequency
             tilt: Target frequency response tilt in db / octave
             sound_signature: Sound signature as FrequencyResponse instance. Raw data will be used.
             max_gain: Maximum positive gain in dB
@@ -1302,7 +1338,11 @@ class FrequencyResponse:
             bass_boost_gain=bass_boost_gain,
             bass_boost_fc=bass_boost_fc,
             bass_boost_q=bass_boost_q,
+            treble_boost_gain=treble_boost_gain,
+            treble_boost_fc=treble_boost_fc,
+            treble_boost_q=treble_boost_q,
             tilt=tilt,
+            fs=fs,
             sound_signature=sound_signature,
             min_mean_error=min_mean_error
         )
