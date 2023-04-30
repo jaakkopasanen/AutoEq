@@ -109,12 +109,12 @@ const Knob = (props) => {
         />
         <Box sx={{
           position: 'absolute',
-          bottom: '18px', left: '50%',
+          bottom: '20px', left: '50%',
           width: '6px', height: '6px',
           background: theme => theme.palette.primary.main,
           borderRadius: '3px',
           transform: `translate(-50%) rotate(${angle}deg)`,
-          transformOrigin: `50% -${parseFloat(props.size) / 2 - 24}px`
+          transformOrigin: `50% -${parseFloat(props.size) / 2 - 26}px`
         }} />
         <Box
           sx={{

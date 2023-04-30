@@ -83,8 +83,8 @@ const App = (props) => {
   const maxGainRef = useRef(12.0);
   const windowSizeRef = useRef(0.08);
   const trebleWindowSizeRef = useRef(2.0);
-  const [trebleFLower, setTrebleFLower, trebleFLowerRef] = useStateRef(6000.0);
-  const [trebleFUpper, setTrebleFUpper, trebleFUpperRef] = useStateRef(8000.0);
+  const trebleFLowerRef = useRef(6000.0);
+  const trebleFUpperRef = useRef(8000.0);
   const trebleGainKRef = useRef(1.0);
   const fsRef = useRef(44100);
   const bitDepthRef = useRef(16);
@@ -118,8 +118,8 @@ const App = (props) => {
     maxGain: (v) => { maxGainRef.current = v; },
     windowSize: (v) => { windowSizeRef.current = v; },
     trebleWindowSize: (v) => { trebleWindowSizeRef.current = v; },
-    trebleFLower: setTrebleFLower,
-    trebleFUpper: setTrebleFUpper,
+    trebleFLower: (v) => { trebleFLowerRef.current = v; },
+    trebleFUpper: (v) => { trebleFUpperRef.current = v; },
     trebleGainK: (v) => { trebleGainKRef.current = v; },
     smoothed: setSmoothed,
     maxSlope: (v) => { maxSlopeRef.current = v; },
@@ -258,6 +258,7 @@ const App = (props) => {
 
   const onSmoothedChanged = (val) => {
     setSmoothed(val);
+    equalize(true);
   };
 
   const onSoundProfileSelected = (name) => {
@@ -280,7 +281,7 @@ const App = (props) => {
       trebleBoostFc: trebleBoostFcRef.current, trebleBoostQ: trebleBoostQRef.current,
       tilt: tiltRef.current, maxGain: maxGainRef.current, windowSize: windowSizeRef.current,
       trebleWindowSize: trebleWindowSizeRef.current,
-      trebleFLower, trebleFUpper, trebleGainK: trebleGainKRef.current
+      trebleFLower: trebleFLowerRef.current, trebleFUpper: trebleFUpperRef.current, trebleGainK: trebleGainKRef.current
     };
   };
 
@@ -478,8 +479,8 @@ const App = (props) => {
                   maxGain={maxGainRef.current}
                   windowSize={windowSizeRef.current}
                   trebleWindowSize={trebleWindowSizeRef.current}
-                  trebleFLower={trebleFLower}
-                  trebleFUpper={trebleFUpper}
+                  trebleFLower={trebleFLowerRef.current}
+                  trebleFUpper={trebleFUpperRef.current}
                   trebleGainK={trebleGainKRef.current}
                   maxSlope={maxSlopeRef.current}
 

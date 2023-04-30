@@ -66,14 +66,14 @@ const EqAppConvolutionEq = (props) => {
       </Grid>
       <Grid item>
         <InputSlider
-          label='Frequency resolution (Hz)' value={props.fRes}
+          label='Frequency resolution (Hz)' initialValue={props.fRes}
           min={1.0} max={40.0} step={1.0}
           onChange={(v) => { props.onEqParamChanged({ fRes: v }) }}
         />
       </Grid>
       <Grid item>
         <InputSlider
-          label='Preamp' value={props.preamp}
+          label='Preamp' initialValue={props.preamp}
           min={-20} max={20} step={0.5}
           onChange={(v) => { props.onEqParamChanged({ preamp: v }) }}
         />

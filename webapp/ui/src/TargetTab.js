@@ -315,14 +315,11 @@ const TargetTab = (props) => {
 
       <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
         <InputSlider
-          label='Treble transition region (Hz)' value={[
-            props.trebleFLower,
-            props.trebleFUpper,
-          ]}
+          label='Treble transition region (Hz)'
+          initialValue={[ props.trebleFLower, props.trebleFUpper, ]}
           min={1000} max={20000} step={100}
-          onChange={(v) => {
-            props.onEqParamChanged({ trebleFLower: v[0], trebleFUpper: v[1] })
-          }}
+          onChange={(v) => { props.onEqParamChanged({ trebleFLower: v[0], trebleFUpper: v[1] }) }}
+          inputChars={5}
         />
       </Grid>
 

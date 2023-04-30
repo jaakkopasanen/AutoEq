@@ -129,8 +129,8 @@ const FrequencyResponseGraph = (props) => {
         </ResponsiveContainer>
       </Grid>
       <Grid item xs={12} md={2.5} lg={2} sx={{pl: {xs: 4.5, sm: 1, md: 4}}} container direction={{xs: 'row', md: 'column'}}>
-        <Grid item container alignItems='center' sx={{mr: 2}}>
-          <Grid item md={7} sx={{width: 'auto'}}>
+        <Grid item container alignItems='center' sx={{mr: 2, width: 'auto'}}>
+          <Grid item md={7}>
             <Typography variant='body2'>Smoothed</Typography>
           </Grid>
           <Grid item md={5}>
@@ -160,13 +160,13 @@ const FrequencyResponseGraph = (props) => {
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Eq' sx={{color: 'rgba(222, 212, 0)'}}
+            label={isXs ? 'Eq' : 'Equalizer'} sx={{color: 'rgba(222, 212, 0)'}}
             control={<Checkbox size='small' checked={showEqualization} onChange={(e, val) => setShowEqualization(val)}/>}
           />
         </Grid>
         <Grid item>
           <FormControlLabel
-            label="Eq'd" sx={{color: 'rgba(20, 104, 153)'}}
+            label={isXs ? 'Eq\'d' : 'Equalized'} sx={{color: 'rgba(20, 104, 153)'}}
             control={<Checkbox size='small' checked={showEqualized} onChange={(e, val) => setShowEqualized(val)}/>}
           />
         </Grid>

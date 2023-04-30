@@ -45,7 +45,7 @@ const InfoPage = (props) => {
       >
         <Grid item sx={{textAlign: 'center', mt: '64px'}}>
           <Typography variant='h1'>AutoEq</Typography>
-          <Typography variant='body2'>makes your headphones sound better</Typography>
+          <Typography variant='body2'>four easy steps to make your headphones sound better</Typography>
         </Grid>
 
         <Grid item container direction='column' columnSpacing={4} rowSpacing={4} justifyContent='center'>

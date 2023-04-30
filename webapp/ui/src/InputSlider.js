@@ -1,18 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Grid, Slider, TextField, Typography} from "@mui/material";
 
 const InputSlider = (props) => {
+  const [value, setValue] = useState(props.initialValue || 0.0);
+
+  const handleChange = (v) => {
+    setValue(v);
+    props.onChange(v);
+  };
+
   return (
     <Grid item container direction='row' columnSpacing={1} alignItems='center'>
-      {Array.isArray(props.value) && (
+      {Array.isArray(value) && (
         <Grid item>
           <TextField
-            value={props.value[0].toString()}
+            value={value[0].toString()}
             onChange={(e) => {
-                props.onChange([parseFloat(e.target.value), props.value[1]])
+                props.onChange([parseFloat(e.target.value), value[1]])
             }}
-            size='small' sx={{width: '65px'}}
-            error={props.value[0] > props.value[1]}
+            size='small' sx={{width: (props.inputChars || 3) * 10 + 25}}
+            error={value[0] > value[1]}
           />
         </Grid>
       )}
@@ -22,26 +29,26 @@ const InputSlider = (props) => {
         </Grid>
         <Grid item>
           <Slider
-            value={props.value}
+            value={value}
             min={props.min} max={props.max} step={props.step}
-            onChange={(e) => props.onChange(e.target.value)}
-            color={Array.isArray(props.value) && props.value[0] > props.value[1] ? 'error' : 'primary'}
+            onChange={(e) => handleChange(e.target.value)}
+            color={Array.isArray(value) && value[0] > value[1] ? 'error' : 'primary'}
             sx={{padding: '12px 0'}}
           />
         </Grid>
       </Grid>
       <Grid item>
         <TextField
-          value={(Array.isArray(props.value) ? props.value[1] : props.value).toString()}
+          value={(Array.isArray(value) ? value[1] : value).toString()}
           onChange={(e) => {
-            if (Array.isArray(props.value)) {
-              props.onChange([props.value[0], parseFloat(e.target.value)])
+            if (Array.isArray(value)) {
+              props.onChange([value[0], parseFloat(e.target.value)])
             } else {
               props.onChange(parseFloat(e.target.value))
             }
           }}
-          size='small' sx={{width: '65px'}}
-          error={Array.isArray(props.value) && props.value[0] > props.value[1]}
+          size='small' sx={{width: (props.inputChars || 3) * 10 + 25}}
+          error={Array.isArray(value) && value[0] > value[1]}
         />
       </Grid>
     </Grid>
