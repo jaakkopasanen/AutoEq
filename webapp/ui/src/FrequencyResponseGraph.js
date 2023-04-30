@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
-import { Checkbox, FormControlLabel, Grid, Switch, Typography } from '@mui/material';
+import {Checkbox, FormControlLabel, Grid, Switch, Typography, useMediaQuery} from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 const FrequencyResponseGraph = (props) => {
   const [showRaw, setShowRaw] = useState(true);
@@ -8,6 +9,9 @@ const FrequencyResponseGraph = (props) => {
   const [showTarget, setShowTarget] = useState(true);
   const [showEqualization, setShowEqualization] = useState(true);
   const [showEqualized, setShowEqualized] = useState(true);
+
+  const theme = useTheme();
+  const isXs = useMediaQuery(theme.breakpoints.down('sm'));
 
   const yRange = (data) => {
     const vals = [];
@@ -43,9 +47,15 @@ const FrequencyResponseGraph = (props) => {
   const yTicks = (isNaN(yMin) || isNaN(yMax)) ? null : [ ...Array(Math.max((yMax - yMin) / interval - 1, interval)).keys() ].map(x => yMin + interval + x * interval);
 
   return (
-    <Grid container direction={{xs: 'row', md: 'row'}} alignItems='center' sx={{marginLeft: {xs: '-12px', sm: 0}}}>
+    <Grid
+      container direction={{xs: 'row', md: 'row'}} alignItems='center'
+      sx={{
+        marginLeft: {xs: '-36px', sm: 0},
+        width: {xs: 'calc(100% + 24px)', sm: '100%'}
+      }}
+    >
       <Grid item xs={12} md={9.5} lg={10}>
-        <ResponsiveContainer width='100%' aspect={2.3}>
+        <ResponsiveContainer width='100%' aspect={isXs ? 1.6 : 2.3}>
           <LineChart
             data={props.data}
             margin={{top: 0, left: 0, bottom: 20, right: 0}}
@@ -118,10 +128,10 @@ const FrequencyResponseGraph = (props) => {
           </LineChart>
         </ResponsiveContainer>
       </Grid>
-      <Grid item xs={12} md={2.5} lg={2} sx={{pl: {xs: 1, sm: 1, md: 4}}} container direction={{xs: 'row', md: 'column'}}>
-        <Grid item container alignItems='center'>
-          <Grid item md={7}>
-            <Typography>Smoothed</Typography>
+      <Grid item xs={12} md={2.5} lg={2} sx={{pl: {xs: 4.5, sm: 1, md: 4}}} container direction={{xs: 'row', md: 'column'}}>
+        <Grid item container alignItems='center' sx={{mr: 2}}>
+          <Grid item md={7} sx={{width: 'auto'}}>
+            <Typography variant='body2'>Smoothed</Typography>
           </Grid>
           <Grid item md={5}>
             <Switch
@@ -150,13 +160,13 @@ const FrequencyResponseGraph = (props) => {
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Equalizer' sx={{color: 'rgba(222, 212, 0)'}}
+            label='Eq' sx={{color: 'rgba(222, 212, 0)'}}
             control={<Checkbox size='small' checked={showEqualization} onChange={(e, val) => setShowEqualization(val)}/>}
           />
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Equalized' sx={{color: 'rgba(20, 104, 153)'}}
+            label="Eq'd" sx={{color: 'rgba(20, 104, 153)'}}
             control={<Checkbox size='small' checked={showEqualized} onChange={(e, val) => setShowEqualized(val)}/>}
           />
         </Grid>

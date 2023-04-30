@@ -22,6 +22,7 @@ const EqTab = (props) => {
           isOptionEqualToValue={(option, value) => option.label === value.label}
           onChange={(e, val) => { props.onEqualizerSelected(val.label); }}
           disableClearable
+          blurOnSelect
         />
       </Grid>
       {selectedEqualizer?.type === 'graphic' && (
