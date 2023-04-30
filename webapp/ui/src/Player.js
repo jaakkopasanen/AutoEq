@@ -14,6 +14,7 @@ const Player = (props) => {
   const [progressInterval, setProgressInterval] = useState(null);
   const [progress, setProgress] = useState(0);
   const [playlist, setPlaylist] = useState([]);
+  const [gain, setGain] = useState(50);
 
   const initSourceNode = (ix) => {
     if (playlist[ix].audio === null) {
@@ -85,6 +86,11 @@ const Player = (props) => {
     });
   }, [playlist.length]);
 
+  const onGainChange = (val) => {
+    setGain(val);
+    props.onGainChange(val);
+  };
+
   if (!playlist.length) return null;
 
   return (
@@ -141,7 +147,7 @@ const Player = (props) => {
                     </IconButton>
                   </Grid>
                   <Grid item sx={{flexGrow: 1}}>
-                    <Slider value={props.gain} onChange={(e, val) => { props.onGainChange(val); }} size='medium' />
+                    <Slider value={gain} onChange={(e, val) => { onGainChange(val); }} size='medium' />
                   </Grid>
                 </Grid>
                 <Grid

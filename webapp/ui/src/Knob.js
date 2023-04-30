@@ -1,17 +1,20 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Box, Tooltip, Typography} from '@mui/material';
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const Knob = (props) => {
   const angleOffset = 45;
   const [isMouseDown, setIsMouseDown] = useState(false);
+  const [value, setValue] = useState(props.initialValue);
 
   const newValue = (e) => {
+    const clientX = e.clientX || e.touches[0].clientX;
+    const clientY = e.clientY || e.touches[0].clientY;
     const cx = elRef.current.getBoundingClientRect().x + parseFloat(props.size) / 2;
     const cy = elRef.current.getBoundingClientRect().y + parseFloat(props.size) / 2;
     // atan2 returns angle from center right with angle increasing counter clockwise
     // transform the angle to be relative to bottom center and clockwise
-    const angle = (270 - Math.atan2(cy - e.clientY, e.clientX - cx) * 180 / Math.PI) % 360;
+    const angle = (270 - Math.atan2(cy - clientY, clientX - cx) * 180 / Math.PI) % 360;
     let value = props.minValue + (angle - angleOffset) / (360 - 2 * angleOffset) * (props.maxValue - props.minValue)  // Value from angle
     if (props.step) {
       let v = props.minValue;
@@ -29,8 +32,10 @@ const Knob = (props) => {
 
   const onMouseDown = (e) => {
     setIsMouseDown(true);
+    const newVal = newValue(e);
+    setValue(newVal);
     if (props.onChange) {
-      props.onChange(newValue(e));
+      props.onChange(newVal);
     }
   };
 
@@ -39,20 +44,31 @@ const Knob = (props) => {
   };
 
   const onMouseMove = (e) => {
-    if (isMouseDown && props.onChange) {
-      props.onChange(newValue(e));
+    if (isMouseDown) {
+      const newVal = newValue(e);
+      setValue(newVal);
+      if (props.onChange) {
+        props.onChange(newVal);
+      }
     }
   };
 
   const elRef = useRef();
 
-  const angle = angleOffset + (props.value - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset);
+  useEffect(() => {
+    if (props.initialValue !== value) {
+      setValue(props.initialValue);
+    }
+  }, [props.initialValue]);
+
+  const angle = angleOffset + (value - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset);
   const ticks = [];
   const nTicks = props.nTicks || 8;
   for (let i = 0; i < nTicks; ++i) {
     const value = props.minValue + i * (props.maxValue - props.minValue) / (nTicks - 1);
     ticks.push(angleOffset + (value - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset));
   }
+
   return (
     <Box
       sx={{
@@ -60,9 +76,9 @@ const Knob = (props) => {
         textAlign: 'center',
         margin: 'auto'
       }}
-      onMouseDown={onMouseDown}
-      onMouseUp={onMouseUp}
-      onMouseMove={onMouseMove}
+      onMouseDown={onMouseDown} onTouchStart={onMouseDown}
+      onMouseUp={onMouseUp} onTouchEnd={onMouseUp}
+      onMouseMove={onMouseMove} onTouchMove={onMouseMove}
       ref={elRef}
     >
       <Box sx={{
@@ -108,7 +124,7 @@ const Knob = (props) => {
             textAlign: 'center',
           }}
         >
-          <Typography sx={{lineHeight: 1}}>{props.formattedValue}</Typography>
+          <Typography sx={{lineHeight: 1}}>{props.formatter ? props.formatter(value) : value}</Typography>
           {props.unit && <Typography variant='caption'>{props.unit}</Typography>}
         </Box>
         {'icon' in props && (

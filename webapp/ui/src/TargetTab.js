@@ -131,9 +131,9 @@ const TargetTab = (props) => {
         </Grid>
         <Grid item>
           <Knob
-            value={props.soundSignatureSmoothingWindowSize}
+            initialValue={props.soundSignatureSmoothingWindowSize}
             onChange={(val) => { props.onEqParamChanged({ soundSignatureSmoothingWindowSize: val}); }}
-            formattedValue={props.soundSignatureSmoothingWindowSize.toFixed(2)}
+            formatter={(val) => val.toFixed(2)}
             minValue={0} maxValue={2} step={0.1}
             size={115}
             unit='oct'
@@ -147,11 +147,11 @@ const TargetTab = (props) => {
       <Grid item container direction='row' columnSpacing={2} rowSpacing={2} justifyContent='center' sx={{mt: 0}}>
         <Grid item xs={4}>
           <Knob
-            value={props.bassBoostGain}
+            initialValue={props.bassBoostGain}
             minValue={0} maxValue={20} step={0.5}
             label='Bass boost'
             onChange={(v) => { props.onEqParamChanged({bassBoostGain: v}) }}
-            formattedValue={props.bassBoostGain.toFixed(1)}
+            formatter={(val) => val !== undefined ? val.toFixed(1) : ''}
             size={120}
             unit='dB'
             nTicks={9}
@@ -162,11 +162,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
-            value={props.bassBoostFc}
+            initialValue={props.bassBoostFc}
             minValue={20.0} maxValue={300.0} step={5}
             label='Bass freq'
             onChange={(v) => { props.onEqParamChanged({bassBoostFc: v}) }}
-            formattedValue={props.bassBoostFc.toFixed(0)}
+            formatter={(val) => val.toFixed(0)}
             size={120}
             unit='Hz'
             nTicks={9}
@@ -176,11 +176,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
-            value={props.bassBoostQ}
+            initialValue={props.bassBoostQ}
             minValue={0.3} maxValue={0.8} step={0.05}
             label='Bass quality'
             onChange={(v) => { props.onEqParamChanged({bassBoostQ: v}) }}
-            formattedValue={props.bassBoostQ.toFixed(2)}
+            formatter={(val) => val.toFixed(2)}
             size={120}
             nTicks={9}
             tooltip='Bass boost shelf quality (slope steepness)'
@@ -189,11 +189,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4}>
           <Knob
-            value={props.trebleBoostGain}
+            initialValue={props.trebleBoostGain}
             minValue={-15} maxValue={15} step={0.5}
             label='Treble boost'
             onChange={(v) => { props.onEqParamChanged({trebleBoostGain: v}) }}
-            formattedValue={props.trebleBoostGain.toFixed(1)}
+            formatter={v => v.toFixed(1)}
             size={120}
             unit='dB'
             nTicks={9}
@@ -203,11 +203,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
-            value={props.trebleBoostFc}
+            initialValue={props.trebleBoostFc}
             minValue={1000} maxValue={20000} step={1000}
             label='Treble freq'
             onChange={(v) => { props.onEqParamChanged({trebleBoostFc: v}) }}
-            formattedValue={props.trebleBoostFc.toFixed(0)}
+            formatter={(val) => val.toFixed(0)}
             size={120}
             unit='Hz'
             nTicks={9}
@@ -217,11 +217,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
-            value={props.trebleBoostQ}
+            initialValue={props.trebleBoostQ}
             minValue={0.3} maxValue={0.8} step={0.1}
             label='Treble quality'
             onChange={(v) => { props.onEqParamChanged({trebleBoostQ: v}) }}
-            formattedValue={props.trebleBoostQ.toFixed(2)}
+            formatter={(val) => val.toFixed(2)}
             size={120}
             nTicks={9}
             tooltip='Treble boost shelf quality (slope steepness)'
@@ -230,11 +230,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4}>
           <Knob
-            value={props.maxGain}
+            initialValue={props.maxGain}
             minValue={0} maxValue={36} step={1}
             label='Max gain'
             onChange={(v) => { props.onEqParamChanged({maxGain: v}) }}
-            formattedValue={props.maxGain.toFixed(1)}
+            formatter={(val) => val.toFixed(1)}
             size={120}
             unit='dB'
             nTicks={9}
@@ -244,11 +244,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
-            value={props.tilt}
+            initialValue={props.tilt}
             minValue={0} maxValue={2} step={0.1}
             label='Tilt'
             onChange={(v) => { props.onEqParamChanged({ tilt: v }) }}
-            formattedValue={props.tilt.toFixed(2)}
+            formatter={(val) => val.toFixed(2)}
             size={120}
             unit='dB/oct'
             nTicks={9}
@@ -258,11 +258,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
-            value={props.windowSize}
+            initialValue={props.windowSize}
             minValue={0} maxValue={1} step={0.1}
             label='Smoothing'
             onChange={(v) => { props.onEqParamChanged({ windowSize: v }) }}
-            formattedValue={props.windowSize.toFixed(2)}
+            formatter={(val) => val.toFixed(2)}
             size={120}
             unit='oct'
             nTicks={9}
@@ -272,11 +272,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
-            value={props.trebleWindowSize}
+            initialValue={props.trebleWindowSize}
             minValue={0} maxValue={3} step={0.1}
             label='Treble smoothing'
             onChange={(v) => { props.onEqParamChanged({ trebleWindowSize: v }) }}
-            formattedValue={props.trebleWindowSize.toFixed(2)}
+            formatter={(val) => val.toFixed(2)}
             size={120}
             unit='oct'
             nTicks={9}
@@ -286,11 +286,11 @@ const TargetTab = (props) => {
 
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
-            value={props.trebleGainK}
+            initialValue={props.trebleGainK}
             minValue={0} maxValue={1} step={0.05}
             label='Treble gain multiplier'
             onChange={(v) => { props.onEqParamChanged({ trebleGainK: v }) }}
-            formattedValue={props.trebleGainK.toFixed(2)}
+            formatter={(val) => val.toFixed(2)}
             size={120}
             nTicks={9}
             tooltip='Treble region gain multiplier. Useful for reducing EQ in the highest frequencies.'

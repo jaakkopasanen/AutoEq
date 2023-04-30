@@ -59,6 +59,7 @@ const App = (props) => {
   );
   const [selectedSoundProfile, setSelectedSoundProfile] = useState(null);
   const [compensations, setCompensations, compensationsRef] = useStateRef([]);
+  const compensationsBassBoostsRef = useRef({});
   // Sound signatures preferred for each measurement rig: {source: {form: {rig: label}}
   const [preferredCompensations, setPreferredCompensations, preferredCompensationsRef] = useStateRef([]);
   // Name (label) of the currently selected compensation.
@@ -72,48 +73,65 @@ const App = (props) => {
 
   const [smoothed, setSmoothed, smoothedRef] = useStateRef(true);
 
-  const [bassBoostGain, setBassBoostGain, bassBoostGainRef] = useStateRef(0.0);
-  const [bassBoostFc, setBassBoostFc, bassBoostFcRef] = useStateRef(105.0);
-  const [bassBoostQ, setBassBoostQ, bassBoostQRef] = useStateRef(0.7);
-  const [trebleBoostGain, setTrebleBoostGain, trebleBoostGainRef] = useStateRef(0.0);
-  const [trebleBoostFc, setTrebleBoostFc, trebleBoostFcRef] = useStateRef(10000.0);
-  const [trebleBoostQ, setTrebleBoostQ, trebleBoostQRef] = useStateRef(0.7);
-  const [tilt, setTilt, tiltRef] = useStateRef(0.0);
-  const [maxGain, setMaxGain, maxGainRef] = useStateRef(12.0);
-  const [windowSize, setWindowSize, windowSizeRef] = useStateRef(0.08);
-  const [trebleWindowSize, setTrebleWindowSize, trebleWindowSizeRef] = useStateRef(2.0);
+  const bassBoostGainRef = useRef(0.0);
+  const bassBoostFcRef = useRef(105.0);
+  const bassBoostQRef = useRef(0.7);
+  const trebleBoostGainRef = useRef(0.0);
+  const trebleBoostFcRef = useRef(10000.0);
+  const trebleBoostQRef = useRef(0.7);
+  const tiltRef = useRef(0.0);
+  const maxGainRef = useRef(12.0);
+  const windowSizeRef = useRef(0.08);
+  const trebleWindowSizeRef = useRef(2.0);
   const [trebleFLower, setTrebleFLower, trebleFLowerRef] = useStateRef(6000.0);
   const [trebleFUpper, setTrebleFUpper, trebleFUpperRef] = useStateRef(8000.0);
-  const [trebleGainK, setTrebleGainK, trebleGainKRef] = useStateRef(1.0);
-  const [fs, setFs, fsRef] = useStateRef(44100);
-  const [bitDepth, setBitDepth, bitDepthRef] = useStateRef(16);
-  const [phase, setPhase, phaseRef] = useStateRef('minimum');
-  const [fRes, setFRes, fResRef] = useStateRef(16.0);
-  const [preamp, setPreamp, preampRef] = useStateRef(0.0);
+  const trebleGainKRef = useRef(1.0);
+  const fsRef = useRef(44100);
+  const bitDepthRef = useRef(16);
+  const phaseRef = useRef('minimum');
+  const fResRef = useRef(16.0);
+  const preampRef = useRef(0.0);
   const [graphicEq, setGraphicEq] = useState(null);
   const [parametricEq, setParametricEq] = useState(null);
   const [fixedBandEq, setFixedBandEq] = useState(null);
   const [firAudioBuffer, setFirAudioBuffer] = useState(null);
-  const [gain, setGain] = useState(null);
   const [isEqOn, setIsEqOn, isEqOnRef] = useStateRef(false);
 
   const setState = {
     selectedCompensation: setSelectedCompensation,
     preferredCompensations: setPreferredCompensations,
     soundSignature: setSoundSignature,
-    soundSignatureSmoothingWindowSize: setSoundSignatureSmoothingWindowSize,
-    bassBoostFc: setBassBoostFc, bassBoostQ: setBassBoostQ, bassBoostGain: setBassBoostGain,
-    trebleBoostFc: setTrebleBoostFc, trebleBoostQ: setTrebleBoostQ, trebleBoostGain: setTrebleBoostGain,
-    tilt: setTilt, fs: setFs, bitDepth: setBitDepth, phase: setPhase, fRes: setFRes,
-    preamp: setPreamp, maxGain: setMaxGain,
-    windowSize: setWindowSize, trebleWindowSize: setTrebleWindowSize,
-    trebleFLower: setTrebleFLower, trebleFUpper: setTrebleFUpper, trebleGainK: setTrebleGainK,
+    soundSignatureSmoothingWindowSize: (v) => { soundSignatureSmoothingWindowSizeRef.current = v; },
+    bassBoostFc: (v) => { bassBoostFcRef.current = v; },
+    bassBoostQ: (v) => { bassBoostQRef.current = v; },
+    bassBoostGain: (v) => { bassBoostGainRef.current = v; },
+    trebleBoostFc: (v) => { trebleBoostFcRef.current = v; },
+    trebleBoostQ: (v) => { trebleBoostQRef.current = v; },
+    trebleBoostGain: (v) => { trebleBoostGainRef.current = v; },
+    tilt: (v) => { tiltRef.current = v; },
+    fs: (v) => { fsRef.current = v; },
+    bitDepth: (v) => { bitDepthRef.current = v; },
+    phase: (v) => { phaseRef.current = v; },
+    fRes: (v) => { fResRef.current = v; },
+    preamp: (v) => { preampRef.current = v; },
+    maxGain: (v) => { maxGainRef.current = v; },
+    windowSize: (v) => { windowSizeRef.current = v; },
+    trebleWindowSize: (v) => { trebleWindowSizeRef.current = v; },
+    trebleFLower: setTrebleFLower,
+    trebleFUpper: setTrebleFUpper,
+    trebleGainK: (v) => { trebleGainKRef.current = v; },
     smoothed: setSmoothed
   };
 
   const setUp = async () => {
     setMeasurements(await ApiClient.fetchMeasurements());
     const [compensations, preferredCompensations] = await ApiClient.fetchCompensations();
+    const compensationsBassBoosts = {};
+    for (const compensation of compensations) {
+      compensationsBassBoosts[compensation.label] = cloneDeep(compensation.bassBoost);
+      delete compensation.bassBoost;
+    }
+    compensationsBassBoostsRef.current = compensationsBassBoosts;
     setCompensations(compensations);
     setPreferredCompensations(preferredCompensations);
 
@@ -125,8 +143,7 @@ const App = (props) => {
     preampNodeRef.current.gain.value = 1.0;
     preampNodeRef.current.connect(audioContextRef.current.destination);
     gainNodeRef.current.connect(preampNodeRef.current);
-    setFs(audioContextRef.current.sampleRate);
-    setGain(gainNodeRef.current.gain.value * 100);
+    fsRef.current = audioContextRef.current.sampleRate;
   };
   useEffect(() => {
     setUp();
@@ -211,13 +228,12 @@ const App = (props) => {
 
     // TODO: not preferred for any?
     const compensationLabel = preferredCompensationsRef.current[measurement.source][measurement.form][measurement.rig];
-    const compensation = find(compensations, (c) => c.label === compensationLabel);
     setShowInfo(false);
     setSelectedMeasurement(cloneDeep(measurement));
     setSelectedCompensation(compensationLabel);
-    setBassBoostFc(compensation.bassBoost.fc);
-    setBassBoostQ(compensation.bassBoost.q);
-    setBassBoostGain(compensation.bassBoost.gain);
+    bassBoostFcRef.current = compensationsBassBoostsRef.current[compensationLabel].fc;
+    bassBoostQRef.current = compensationsBassBoostsRef.current[compensationLabel].q;
+    bassBoostGainRef.current = compensationsBassBoostsRef.current[compensationLabel].gain;
     equalize(true);
   };
 
@@ -257,8 +273,11 @@ const App = (props) => {
   const captureSoundProfile = () => {
     return {
       selectedCompensation, preferredCompensations, soundSignature, soundSignatureSmoothingWindowSize,
-      bassBoostGain, bassBoostFc, bassBoostQ, trebleBoostGain, trebleBoostFc, trebleBoostQ,
-      tilt, maxGain, windowSize, trebleWindowSize, trebleFLower, trebleFUpper, trebleGainK
+      bassBoostGain: bassBoostGainRef.current, bassBoostFc: bassBoostFcRef.current, bassBoostQ: bassBoostQRef.current,
+      trebleBoostFc: trebleBoostFcRef.current, trebleBoostQ: trebleBoostQRef.current,
+      tilt: tiltRef.current, maxGain: maxGainRef.current, windowSize: windowSizeRef.current,
+      trebleWindowSize: trebleWindowSizeRef.current,
+      trebleFLower, trebleFUpper, trebleGainK: trebleGainKRef.current
     };
   };
 
@@ -295,9 +314,9 @@ const App = (props) => {
     newPreferredCompensations[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig] = compensation.label;
     setSelectedCompensation(compensation.label);
     setPreferredCompensations(newPreferredCompensations);
-    setBassBoostFc(compensation.bassBoost.fc);
-    setBassBoostQ(compensation.bassBoost.q);
-    setBassBoostGain(compensation.bassBoost.gain);
+    bassBoostFcRef.current = compensationsBassBoostsRef.current[compensation.label].fc;
+    bassBoostQRef.current = compensationsBassBoostsRef.current[compensation.label].q;
+    bassBoostGainRef.current = compensationsBassBoostsRef.current[compensation.label].gain;
     equalize(true);
   };
 
@@ -318,25 +337,19 @@ const App = (props) => {
   };
 
   const onEqParamChanged = (newParams) => {
-    const newPreferredCompensations = cloneDeep(preferredCompensationsRef.current);
-    const newCompensations = cloneDeep(compensationsRef.current);
-    const compensationLabel = newPreferredCompensations[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig];
-    const ix = findIndex(newCompensations, (c) => c.label === compensationLabel);
+    const newCompensationsBassBoosts = cloneDeep(compensationsBassBoostsRef.current);
+    const compensationLabel = preferredCompensationsRef.current[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig];
     for (const [key, val] of Object.entries(newParams)) {
       if (key === 'bassBoostFc') {
-        newCompensations[ix].bassBoost.fc = val;
-        setBassBoostFc(val);
+        newCompensationsBassBoosts[compensationLabel].fc = val;
       } else  if (key === 'bassBoostQ') {
-        newCompensations[ix].bassBoost.q = val;
-        setBassBoostQ(val);
+        newCompensationsBassBoosts[compensationLabel].q = val;
       } else if (key === 'bassBoostGain') {
-        newCompensations[ix].bassBoost.gain = val;
-        setBassBoostGain(val);
+        newCompensationsBassBoosts[compensationLabel].gain = val;
       }
       setState[key](val);
     }
-    setPreferredCompensations(newPreferredCompensations);
-    setCompensations(newCompensations);
+    compensationsBassBoostsRef.current = newCompensationsBassBoosts;
     equalize();
   };
 
@@ -387,7 +400,6 @@ const App = (props) => {
 
   const onGainChange = (val) => {
     gainNodeRef.current.gain.value = val / 100;
-    setGain(val);
   };
 
   const onIsEqOnChange = (val) => {
@@ -453,19 +465,19 @@ const App = (props) => {
                   graphData={graphData}
                   smoothed={smoothed}
 
-                  bassBoostGain={bassBoostGain}
-                  bassBoostFc={bassBoostFc}
-                  bassBoostQ={bassBoostQ}
-                  trebleBoostGain={trebleBoostGain}
-                  trebleBoostFc={trebleBoostFc}
-                  trebleBoostQ={trebleBoostQ}
-                  tilt={tilt}
-                  maxGain={maxGain}
-                  windowSize={windowSize}
-                  trebleWindowSize={trebleWindowSize}
+                  bassBoostGain={bassBoostGainRef.current}
+                  bassBoostFc={bassBoostFcRef.current}
+                  bassBoostQ={bassBoostQRef.current}
+                  trebleBoostGain={trebleBoostGainRef.current}
+                  trebleBoostFc={trebleBoostFcRef.current}
+                  trebleBoostQ={trebleBoostQRef.current}
+                  tilt={tiltRef.current}
+                  maxGain={maxGainRef.current}
+                  windowSize={windowSizeRef.current}
+                  trebleWindowSize={trebleWindowSizeRef.current}
                   trebleFLower={trebleFLower}
                   trebleFUpper={trebleFUpper}
-                  trebleGainK={trebleGainK}
+                  trebleGainK={trebleGainKRef.current}
                   onEqParamChanged={onEqParamChanged}
 
                   onError={onError}
@@ -484,11 +496,11 @@ const App = (props) => {
                   parametricEq={parametricEq}
                   fixedBandEq={fixedBandEq}
                   firAudioBuffer={firAudioBuffer}
-                  fs={fs}
-                  bitDepth={bitDepth}
-                  phase={phase}
-                  fRes={fRes}
-                  preamp={preamp}
+                  fs={fsRef.current}
+                  bitDepth={bitDepthRef.current}
+                  phase={phaseRef.current}
+                  fRes={fResRef.current}
+                  preamp={preampRef.current}
                   onEqParamChanged={onEqParamChanged}
                   customPeqConfig={customPeqConfig}
                   onCustomPeqConfigChanged={onCustomPeqConfigChanged}
@@ -536,7 +548,6 @@ const App = (props) => {
         <Player
           audioContext={audioContextRef.current}
           audioDestination={gainNodeRef.current}
-          gain={gain}
           onGainChange={onGainChange}
           onIsEqOnChange={onIsEqOnChange}
           isEqEnabled={eqNodesRef.current.length > 0 && selectedEqualizer !== null}
