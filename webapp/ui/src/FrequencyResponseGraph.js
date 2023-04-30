@@ -64,7 +64,7 @@ const FrequencyResponseGraph = (props) => {
               <Line
                 dataKey={showRaw ? props.smoothed ? 'smoothed' : 'raw' : ''}
                 name='Frequency Response' type='linear' dot={false}
-                stroke={showRaw ? '#000' : '#999'}
+                stroke={showRaw ? 'rgba(37, 31, 27)' : '#999'}
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
@@ -73,7 +73,7 @@ const FrequencyResponseGraph = (props) => {
               <Line
                 dataKey={showError ? props.smoothed ? 'errorSmoothed' : 'error' : ''}
                 name='Error' type='linear' dot={false}
-                stroke={showError ? '#d62728' : '#999'}
+                stroke={showError ? 'rgba(255, 91, 61)' : '#999'}
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
@@ -81,7 +81,7 @@ const FrequencyResponseGraph = (props) => {
               <Line
                 dataKey={showEqualization ? 'equalization' : ''}
                 name='Equalizer' type='linear' dot={false}
-                stroke={showEqualization ? '#38d338' : '#999'}
+                stroke={showEqualization ? 'rgba(222, 212, 0)' : '#999'}
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
@@ -89,7 +89,7 @@ const FrequencyResponseGraph = (props) => {
               <Line
                 dataKey={showEqualized ? props.smoothed ? 'equalizedSmoothed' : 'equalizedRaw' : ''}
                 name='Equalized' type='linear' dot={false}
-                stroke={showEqualized ? '#0343df' : '#999'}
+                stroke={showEqualized ? 'rgba(20, 104, 153)' : '#999'}
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
@@ -132,13 +132,13 @@ const FrequencyResponseGraph = (props) => {
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Raw' sx={{color: '#000'}}
+            label='Raw' sx={{color: 'rgba(37, 31, 27)'}}
             control={<Checkbox size='small' checked={showRaw} onChange={(e, val) => setShowRaw(val)} />}
           />
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Error' sx={{color: '#d62728'}}
+            label='Error' sx={{color: 'rgba(255, 91, 61)'}}
             control={<Checkbox size='small' checked={showError} onChange={(e, val) => setShowError(val)}/>}
           />
         </Grid>
@@ -150,13 +150,13 @@ const FrequencyResponseGraph = (props) => {
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Equalizer' sx={{color: '#38d338'}}
+            label='Equalizer' sx={{color: 'rgba(222, 212, 0)'}}
             control={<Checkbox size='small' checked={showEqualization} onChange={(e, val) => setShowEqualization(val)}/>}
           />
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Equalized' sx={{color: '#0343df'}}
+            label='Equalized' sx={{color: 'rgba(20, 104, 153)'}}
             control={<Checkbox size='small' checked={showEqualized} onChange={(e, val) => setShowEqualized(val)}/>}
           />
         </Grid>

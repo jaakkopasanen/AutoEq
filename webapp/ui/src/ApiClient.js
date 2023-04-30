@@ -65,6 +65,7 @@ class ApiClient {
       f_res: params.fRes,
       preamp: params.preamp,
       max_gain: params.maxGain,
+      max_slope: params.maxSlope,
       window_size: params.windowSize,
       treble_window_size: params.trebleWindowSize,
       treble_f_lower: params.trebleFLower,

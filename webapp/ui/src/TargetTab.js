@@ -258,6 +258,20 @@ const TargetTab = (props) => {
 
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
+            initialValue={props.maxSlope}
+            minValue={6} maxValue={36} step={3}
+            label='Max slope'
+            onChange={(v) => { props.onEqParamChanged({ maxSlope: v }) }}
+            formatter={(val) => val.toFixed(0)}
+            size={120}
+            unit='dB/oct'
+            nTicks={9}
+            tooltip='Maximum slope steepness for equalizer frequency response. Try lowering the value if peaks at high frequencies sound unpleasant.'
+          />
+        </Grid>
+
+        <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
+          <Knob
             initialValue={props.windowSize}
             minValue={0} maxValue={1} step={0.1}
             label='Smoothing'

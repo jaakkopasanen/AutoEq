@@ -12,7 +12,7 @@ from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_T
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, \
     DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, \
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, PEQ_CONFIGS, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_Q, \
-    DEFAULT_TREBLE_BOOST_FC, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
+    DEFAULT_TREBLE_BOOST_FC, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE, DEFAULT_MAX_SLOPE
 from autoeq.frequency_response import FrequencyResponse
 
 
@@ -25,7 +25,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
                      treble_boost_fc=DEFAULT_TREBLE_BOOST_FC, treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
                      tilt=None, sound_signature=None,
                      sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
-                     max_gain=DEFAULT_MAX_GAIN,
+                     max_gain=DEFAULT_MAX_GAIN, max_slope=DEFAULT_MAX_SLOPE,
                      window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
                      treble_gain_k=DEFAULT_TREBLE_GAIN_K, preamp=DEFAULT_PREAMP, thread_count=0):
@@ -101,7 +101,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
             args = (input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q,
                     treble_boost_fc, treble_boost_gain, treble_boost_q,
                     bit_depth, compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
-                    fixed_band_eq_config, max_gain, window_size, treble_window_size,
+                    fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size,
                     parametric_eq, phase, rockbox, sound_signature, sound_signature_smoothing_window_size,
                     standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp)
             args_list.append(args)
@@ -124,8 +124,8 @@ def process_file_wrapper(params):
 def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q,
                  treble_boost_fc, treble_boost_gain, treble_boost_q, bit_depth,
                  compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
-                 fixed_band_eq_config, max_gain, window_size, treble_window_size, parametric_eq, phase, rockbox,
-                 sound_signature, sound_signature_smoothing_window_size, standardize_input, ten_band_eq, tilt,
+                 fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size, parametric_eq, phase,
+                 rockbox, sound_signature, sound_signature_smoothing_window_size, standardize_input, ten_band_eq, tilt,
                  treble_f_lower, treble_f_upper, treble_gain_k, preamp):
     # The method assumes fs is iterable, ensure it really is
     try:
@@ -169,6 +169,7 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         sound_signature=sound_signature,
         sound_signature_smoothing_window_size=sound_signature_smoothing_window_size,
         max_gain=max_gain,
+        max_slope=max_slope,
         window_size=window_size,
         treble_window_size=treble_window_size,
         treble_f_lower=treble_f_lower,

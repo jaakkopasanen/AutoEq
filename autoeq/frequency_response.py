@@ -831,8 +831,8 @@ class FrequencyResponse:
 
     def equalize(self,
                  max_gain=DEFAULT_MAX_GAIN,
-                 limit=DEFAULT_MAX_SLOPE,
-                 limit_decay=0.0,
+                 max_slope=DEFAULT_MAX_SLOPE,
+                 max_slope_decay=0.0,
                  concha_interference=False,
                  window_size=1 / 12,
                  treble_window_size=2,
@@ -843,8 +843,8 @@ class FrequencyResponse:
 
         Args:
             max_gain: Maximum positive gain in dB
-            limit: Maximum slope in dB per octave
-            limit_decay: Decay coefficient (per octave) for the limit. Value of 0.5 would reduce limit by 50% in an octave
+            max_slope: Maximum slope in dB per octave
+            max_slope_decay: Decay coefficient (per octave) for the limit. Value of 0.5 would reduce limit by 50% in an octave
                 when traversing a single limitation zone.
             concha_interference: Do measurements include concha interference which produced a narrow dip around 9 kHz?
             window_size: Smoothing window size in octaves.
@@ -898,10 +898,10 @@ class FrequencyResponse:
             # clipped_ltr is boolean mask for limited samples when traversing left to right
             # limited_rtl is found using ltr algorithm but with flipped data
             limited_ltr, clipped_ltr, regions_ltr = self.limited_ltr_slope(
-                x, y, limit, limit_decay=limit_decay, start_index=0, peak_inds=peak_inds,
+                x, y, max_slope, max_slope_decay=max_slope_decay, start_index=0, peak_inds=peak_inds,
                 limit_free_mask=limit_free_mask, concha_interference=concha_interference)
             limited_rtl, clipped_rtl, regions_rtl = self.limited_rtl_slope(
-                x, y, limit, limit_decay=limit_decay, start_index=rtl_start, peak_inds=peak_inds,
+                x, y, max_slope, max_slope_decay=max_slope_decay, start_index=rtl_start, peak_inds=peak_inds,
                 limit_free_mask=limit_free_mask, concha_interference=concha_interference)
 
             # ltr and rtl limited curves are combined with min function
@@ -965,15 +965,15 @@ class FrequencyResponse:
         return mask
 
     @classmethod
-    def limited_rtl_slope(cls, x, y, limit, limit_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None,
+    def limited_rtl_slope(cls, x, y, max_slope, max_slope_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None,
                           concha_interference=False):
         """Limits right to left slope of an equalization curve.
 
             Args:
                 x: frequencies
                 y: amplitudes
-                limit: maximum slope in dB / oct
-                limit_decay: Limit decay coefficient per octave
+                max_slope: maximum slope in dB / oct
+                max_slope_decay: Max slope decay coefficient per octave
                 start_index: Index where to start traversing, no limitations apply before this
                 peak_inds: Peak indexes. Regions will require to touch one of these if given.
                 limit_free_mask: Boolean mask for indices where limitation must not be applied
@@ -990,7 +990,7 @@ class FrequencyResponse:
         if limit_free_mask is not None:
             limit_free_mask = np.flip(limit_free_mask)
         limited_rtl, clipped_rtl, regions_rtl = cls.limited_ltr_slope(
-            x, np.flip(y), limit, limit_decay=limit_decay, start_index=start_index, peak_inds=peak_inds,
+            x, np.flip(y), max_slope, max_slope_decay=max_slope_decay, start_index=start_index, peak_inds=peak_inds,
             limit_free_mask=limit_free_mask, concha_interference=concha_interference)
         limited_rtl = np.flip(limited_rtl)
         clipped_rtl = np.flip(clipped_rtl)
@@ -998,15 +998,15 @@ class FrequencyResponse:
         return limited_rtl, clipped_rtl, regions_rtl
 
     @classmethod
-    def limited_ltr_slope(cls, x, y, limit, limit_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None,
+    def limited_ltr_slope(cls, x, y, max_slope, max_slope_decay=0.0, start_index=0, peak_inds=None, limit_free_mask=None,
                           concha_interference=False):
         """Limits left to right slope of a equalization curve.
 
         Args:
             x: frequencies
             y: amplitudes
-            limit: maximum slope in dB / oct
-            limit_decay: Limit decay coefficient per octave
+            max_slope: maximum slope in dB / oct
+            max_slope_decay: Max slope decay coefficient per octave
             start_index: Index where to start traversing, no limitations apply before this
             peak_inds: Peak indexes. Regions will require to touch one of these if given.
             limit_free_mask: Boolean mask for indices where limitation must not be applied
@@ -1033,11 +1033,11 @@ class FrequencyResponse:
             # Calculate slope and local limit
             slope = cls.log_log_gradient(x[i], x[i - 1], y[i], limited[-1])
             # Local limit is 25% of the limit between 8 kHz and 10 kHz
-            local_limit = limit / 4 if 8000 <= x[i] <= 11500 and concha_interference else limit
+            local_limit = max_slope / 4 if 8000 <= x[i] <= 11500 and concha_interference else max_slope
 
             if clipped[-1]:
                 # Previous sample clipped, reduce limit
-                local_limit *= (1 - limit_decay) ** np.log2(x[i] / x[regions[-1][0]])
+                local_limit *= (1 - max_slope_decay) ** np.log2(x[i] / x[regions[-1][0]])
 
             if slope > local_limit and (limit_free_mask is None or not limit_free_mask[i]):
                 # Slope between the two samples is greater than the local maximum slope, clip to the max
@@ -1306,6 +1306,7 @@ class FrequencyResponse:
                 sound_signature=None,
                 sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
                 max_gain=DEFAULT_MAX_GAIN,
+                max_slope=DEFAULT_MAX_SLOPE,
                 concha_interference=False,
                 window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
                 treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
@@ -1330,6 +1331,7 @@ class FrequencyResponse:
             sound_signature: Sound signature as FrequencyResponse instance. Raw data will be used.
             sound_signature_smoothing_window_size: Smoothing window size in octaves for sound signature
             max_gain: Maximum positive gain in dB
+            max_slope: Maximum slope steepness for equalizer frequency response in db/oct.
             concha_interference: Do measurements include concha interference which produced a narrow dip around 9 kHz?
             window_size: Smoothing window size in octaves.
             treble_window_size: Smoothing window size in octaves in the treble region.
@@ -1363,5 +1365,5 @@ class FrequencyResponse:
             treble_f_upper=treble_f_upper
         )
         self.equalize(
-            max_gain=max_gain, concha_interference=concha_interference, treble_f_lower=treble_f_lower,
+            max_slope=max_slope, max_gain=max_gain, concha_interference=concha_interference, treble_f_lower=treble_f_lower,
             treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)

@@ -6,7 +6,7 @@ import warnings
 from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_BOOST_FC, \
-    DEFAULT_TREBLE_BOOST_Q, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
+    DEFAULT_TREBLE_BOOST_Q, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE, DEFAULT_MAX_SLOPE
 from autoeq.batch_processing import batch_processing
 
 
@@ -126,6 +126,9 @@ def cli_args():
                                  'dips in  frequency response but will limit output volume if no analog gain is '
                                  'available because positive gain requires negative digital preamp equal to '
                                  f'maximum positive gain. Defaults to {DEFAULT_MAX_GAIN}.')
+    arg_parser.add_argument('--max-slope', type=float, default=DEFAULT_MAX_SLOPE,
+                            help='Maximum slope steepness for equalizer frequency response in dB/oct. Defaults to '
+                                 f'{DEFAULT_MAX_SLOPE}')
     arg_parser.add_argument('--window-size', type=float, default=DEFAULT_SMOOTHING_WINDOW_SIZE,
                             help='Smoothing window size in octaves.')
     arg_parser.add_argument('--treble-window-size', type=float, default=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,

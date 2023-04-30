@@ -96,6 +96,7 @@ const App = (props) => {
   const [fixedBandEq, setFixedBandEq] = useState(null);
   const [firAudioBuffer, setFirAudioBuffer] = useState(null);
   const [isEqOn, setIsEqOn, isEqOnRef] = useStateRef(false);
+  const maxSlopeRef = useRef(18);
 
   const setState = {
     selectedCompensation: setSelectedCompensation,
@@ -120,7 +121,8 @@ const App = (props) => {
     trebleFLower: setTrebleFLower,
     trebleFUpper: setTrebleFUpper,
     trebleGainK: (v) => { trebleGainKRef.current = v; },
-    smoothed: setSmoothed
+    smoothed: setSmoothed,
+    maxSlope: (v) => { maxSlopeRef.current = v; },
   };
 
   const setUp = async () => {
@@ -176,6 +178,7 @@ const App = (props) => {
         fRes: fResRef.current,
         preamp: preampRef.current,
         maxGain: maxGainRef.current,
+        maxSlope: maxSlopeRef.current,
         windowSize: windowSizeRef.current,
         trebleWindowSize: trebleWindowSizeRef.current,
         trebleFLower: trebleFLowerRef.current,
@@ -478,8 +481,9 @@ const App = (props) => {
                   trebleFLower={trebleFLower}
                   trebleFUpper={trebleFUpper}
                   trebleGainK={trebleGainKRef.current}
-                  onEqParamChanged={onEqParamChanged}
+                  maxSlope={maxSlopeRef.current}
 
+                  onEqParamChanged={onEqParamChanged}
                   onError={onError}
                 />
               </SmPaper>
