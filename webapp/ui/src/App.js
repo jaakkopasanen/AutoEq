@@ -187,6 +187,10 @@ const App = (props) => {
         smoothed: smoothedRef.current
       }, audioContextRef.current);
 
+      if (res === undefined) {
+        return;
+      }
+
       preampNodeRef.current.gain.value = res.preampGain;
       eqNodesRef.current = res.eqNodes;
       if (isEqOnRef.current) {

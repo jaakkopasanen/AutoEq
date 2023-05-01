@@ -33,7 +33,6 @@ const TargetTab = (props) => {
       <Grid
         item
         container direction='row' justifyContent='space-between' alignItems='center' columnSpacing={1}
-        sx={{mb: theme => theme.spacing(1)}}
       >
         {!(props.soundProfiles?.length) > 0 && (
           <Grid item><Typography variant='caption'>Profiles</Typography></Grid>
@@ -323,19 +322,13 @@ const TargetTab = (props) => {
         />
       </Grid>
 
-      <Grid item>
-        <FormGroup>
-          <FormControlLabel
-            control={
-              <Checkbox
-                size='small' color='secondary'
-                value={showAdvanced}
-                onChange={(e, val) => setShowAdvanced(val)}
-              />
-            }
-            label='Show advanced' sx={{color: 'rgba(0, 0, 0, 0.5)'}}
-          />
-        </FormGroup>
+      <Grid item sx={{ mt: 1, textAlign: 'center'}}>
+        <Typography
+          variant='caption' color='primary'
+          sx={{ cursor: 'pointer' }}
+          onClick={() => { setShowAdvanced(!showAdvanced); }}>
+          {showAdvanced ? 'Hide advanced' : 'Show advanced'}
+        </Typography>
       </Grid>
     </Grid>
   )

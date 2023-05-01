@@ -115,17 +115,17 @@ const Player = (props) => {
                 container direction='row' justifyContent='center' alignItems='center' columnSpacing={1}
               >
                 <Grid item>
-                  <IconButton onClick={onSkipPreviousClick} color='secondary'>
+                  <IconButton onClick={onSkipPreviousClick} color='primary'>
                     <SkipPreviousIcon />
                   </IconButton>
                 </Grid>
                 <Grid item>
-                  <IconButton onClick={onPlayClick} color='secondary'>
+                  <IconButton onClick={onPlayClick} color='primary'>
                     {isPlaying ? <PauseIcon /> : <PlayIcon />}
                   </IconButton>
                 </Grid>
                 <Grid item>
-                  <IconButton onClick={onSkipNextClick} color='secondary'>
+                  <IconButton onClick={onSkipNextClick} color='primary'>
                     <SkipNextIcon />
                   </IconButton>
                 </Grid>
@@ -142,7 +142,7 @@ const Player = (props) => {
                   sx={{width: '120px', display: {xs: 'none', sm: 'flex'}}}
                 >
                   <Grid item>
-                    <IconButton color='secondary'>
+                    <IconButton color='primary'>
                       <VolumeIcon />
                     </IconButton>
                   </Grid>

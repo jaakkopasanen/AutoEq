@@ -65,7 +65,7 @@ const FrequencyResponseGraph = (props) => {
               <Line
                 dataKey={showTarget ? 'target' : ''}
                 name='Target' type='linear' dot={false}
-                stroke={showTarget ? '#7bc8f6' : '#999'}
+                stroke={showTarget ? theme.palette.primary.light : '#999'}
                 strokeWidth={7.5} isAnimationActive={false}
               />
             )}
@@ -74,7 +74,7 @@ const FrequencyResponseGraph = (props) => {
               <Line
                 dataKey={showRaw ? props.smoothed ? 'smoothed' : 'raw' : ''}
                 name='Frequency Response' type='linear' dot={false}
-                stroke={showRaw ? 'rgba(37, 31, 27)' : '#999'}
+                stroke={showRaw ? theme.palette.black.main : '#999'}
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
@@ -83,7 +83,7 @@ const FrequencyResponseGraph = (props) => {
               <Line
                 dataKey={showError ? props.smoothed ? 'errorSmoothed' : 'error' : ''}
                 name='Error' type='linear' dot={false}
-                stroke={showError ? 'rgba(255, 91, 61)' : '#999'}
+                stroke={showError ? theme.palette.error.main : '#999'}
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
@@ -91,7 +91,8 @@ const FrequencyResponseGraph = (props) => {
               <Line
                 dataKey={showEqualization ? 'equalization' : ''}
                 name='Equalizer' type='linear' dot={false}
-                stroke={showEqualization ? 'rgba(222, 212, 0)' : '#999'}
+                //stroke={showEqualization ? 'rgba(222, 212, 0)' : '#999'}
+                stroke={showEqualization ? theme.palette.secondary.main : '#999'}
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
@@ -99,7 +100,7 @@ const FrequencyResponseGraph = (props) => {
               <Line
                 dataKey={showEqualized ? props.smoothed ? 'equalizedSmoothed' : 'equalizedRaw' : ''}
                 name='Equalized' type='linear' dot={false}
-                stroke={showEqualized ? 'rgba(20, 104, 153)' : '#999'}
+                stroke={showEqualized ? theme.palette.primary.main : '#999'}
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
@@ -142,31 +143,31 @@ const FrequencyResponseGraph = (props) => {
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Raw' sx={{color: 'rgba(37, 31, 27)'}}
+            label='Raw' sx={{color: theme.palette.black.main}}
             control={<Checkbox size='small' checked={showRaw} onChange={(e, val) => setShowRaw(val)} />}
           />
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Error' sx={{color: 'rgba(255, 91, 61)'}}
+            label='Error' sx={{color: theme.palette.error.main}}
             control={<Checkbox size='small' checked={showError} onChange={(e, val) => setShowError(val)}/>}
           />
         </Grid>
         <Grid item>
           <FormControlLabel
-            label='Target' sx={{color: '#7bc8f6'}}
+            label='Target' sx={{color: theme.palette.primary.light}}
             control={<Checkbox size='small' checked={showTarget} onChange={(e, val) => setShowTarget(val)}/>}
           />
         </Grid>
         <Grid item>
           <FormControlLabel
-            label={isXs ? 'Eq' : 'Equalizer'} sx={{color: 'rgba(222, 212, 0)'}}
+            label={isXs ? 'Eq' : 'Equalizer'} sx={{color: theme.palette.secondary.main}}
             control={<Checkbox size='small' checked={showEqualization} onChange={(e, val) => setShowEqualization(val)}/>}
           />
         </Grid>
         <Grid item>
           <FormControlLabel
-            label={isXs ? 'Eq\'d' : 'Equalized'} sx={{color: 'rgba(20, 104, 153)'}}
+            label={isXs ? 'Eq\'d' : 'Equalized'} sx={{color: theme.palette.primary.main}}
             control={<Checkbox size='small' checked={showEqualized} onChange={(e, val) => setShowEqualized(val)}/>}
           />
         </Grid>
