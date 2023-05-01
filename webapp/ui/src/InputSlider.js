@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Grid, Slider, TextField, Typography} from "@mui/material";
+import {Grid, Slider, TextField, Tooltip, Typography} from "@mui/material";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const InputSlider = (props) => {
   const [value, setValue] = useState(props.initialValue || 0.0);
@@ -25,7 +26,17 @@ const InputSlider = (props) => {
       )}
       <Grid item sx={{flexGrow: 1, width: 'auto'}} container direction='column'>
         <Grid item>
-          <Typography sx={{fontSize: '14px'}}>{props.label}</Typography>
+          {props.tooltip && (
+            <Tooltip title={props.tooltip}>
+              <Typography sx={{fontSize: '14px'}}>
+                {props.label}
+                <InfoOutlinedIcon sx={{width: 18, height: 18, verticalAlign: 'bottom'}} />
+              </Typography>
+            </Tooltip>
+          )}
+          {!props.tooltip && (
+            <Typography sx={{fontSize: '14px'}}>{props.label}</Typography>
+          )}
         </Grid>
         <Grid item>
           <Slider

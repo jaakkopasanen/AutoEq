@@ -12,13 +12,14 @@ import {
   TableRow,
   TextField,
   ToggleButton,
-  ToggleButtonGroup,
+  ToggleButtonGroup, Tooltip,
   Typography
 } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import DownloadIcon from '@mui/icons-material/Download';
 import { bandwidth, downloadAsFile } from './utils';
 import InputSlider from './InputSlider';
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const CompactTableCell = styled(TableCell)(({ theme }) => ({
   padding: `6px`,
@@ -61,8 +62,28 @@ const EqAppParametricEq = (props) => {
 
   return (
     <Grid container direction='column' rowSpacing={1}>
+      {props.instructions && (
+        <Grid
+          item
+          sx={{
+            padding: '8px 12px',
+            background: '#e5f3f7',
+            borderStyle: 'solid',
+            borderWidth: '1px',
+            borderColor: '#9abac3',
+            borderRadius: '4px',
+            marginTop: '8px',
+            marginBottom: '8px',
+          }}
+          key='instructions'
+        >
+          <Typography variant='caption'>
+            {props.instructions}
+          </Typography>
+        </Grid>
+      )}
       {props.uiConfig?.showFsControl && (
-        <Grid item>
+        <Grid item sx={{ position: 'relative' }}>
           <Autocomplete
             freeSolo
             renderInput={(params) =>
@@ -75,15 +96,17 @@ const EqAppParametricEq = (props) => {
             size='small'
             disableClearable
           />
+          <Tooltip title='Ideally sample rate should match the device sample rate but will in most cases have only a very minor impact in the highest frequencies.'>
+            <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: 1, right: 10, background: '#fff' }} />
+          </Tooltip>
         </Grid>
       )}
       {'showConfig' in props && props.showConfig !== false && (
         <Grid item container direction='column' rowSpacing={2}>
           <Grid item container direction='column' rowSpacing={1}>
             <Grid item><Typography variant='h6'>Optimizer</Typography></Grid>
-            <Grid item><Typography sx={{fontSize: '0.75rem', color: 'grey.700'}}>Optimization algorithm parameters</Typography></Grid>
             <Grid item container direction='row' columnSpacing={1}>
-              <Grid item xs={6}>
+              <Grid item xs={6} sx={{ position: 'relative' }}>
                 <TextField
                   value={parseTextFieldInput(props.config.optimizer?.minF)}
                   onChange={(e) => {
@@ -93,8 +116,11 @@ const EqAppParametricEq = (props) => {
                   inputProps={{step: 1.0}}
                   error={props.config.optimizer?.maxF !== null && props.config.optimizer?.minF > props.config.optimizer?.maxF}
                 />
+                <Tooltip title='Lower bound of the optimization region. Can be left empty in most cases. Useful for example for avoiding sub-bass boost when equalizing bookshelf speakers.'>
+                  <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
+                </Tooltip>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={6} sx={{ position: 'relative' }}>
                 <TextField
                   value={parseTextFieldInput(props.config.optimizer?.maxF)}
                   onChange={(e) => {
@@ -103,48 +129,14 @@ const EqAppParametricEq = (props) => {
                   label='Max frequency (Hz)' size='small' sx={{width: '100%'}} type='number'
                   inputProps={{step: 1.0}}
                 />
-              </Grid>
-            </Grid>
-            <Grid item container direction='row' columnSpacing={1}>
-              <Grid item xs={4}>
-                <TextField
-                  value={(parseTextFieldInput(props.config.optimizer?.maxTime * 1000))}
-                  onChange={(e) => {
-                    props.onConfigChanged({optimizer: { maxTime: parseTextFieldOutput(e.target.value) / 1000 } })
-                  }}
-                  label='Max time (ms)' size='small' sx={{width: '100%'}} type='number'
-                  inputProps={{step: 10.0}} error={props.config.optimizer?.maxTime > 0.5}
-                />
-              </Grid>
-              <Grid item xs={4}>
-                <TextField
-                  value={parseTextFieldInput(props.config.optimizer?.minChangeRate)}
-                  onChange={(e) => {
-                    props.onConfigChanged({ optimizer: { minChangeRate: parseTextFieldOutput(e.target.value) } })
-                  }}
-                  label='Min change' size='small' sx={{width: '100%'}} type='number'
-                  inputProps={{step: 0.01}}
-                />
-              </Grid>
-              <Grid item xs={4}>
-                <TextField
-                  value={parseTextFieldInput(props.config.optimizer?.minStd)}
-                  onChange={(e) => {
-                    props.onConfigChanged({ optimizer: { minStd: parseTextFieldOutput(e.target.value) } })
-                  }}
-                  label='Min STD' size='small' sx={{width: '100%'}} type='number'
-                  inputProps={{step: 0.001}}
-                />
+                <Tooltip title='Upper bound of the optimization region. Default value should serve most cases.'>
+                  <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
+                </Tooltip>
               </Grid>
             </Grid>
           </Grid>
           <Grid item container direction='column' rowSpacing={1}>
             <Grid item><Typography variant='h6'>Filters</Typography></Grid>
-            <Grid item>
-              <Typography sx={{fontSize: '0.75rem', color: 'grey.700'}}>
-                Add as many filters as you like
-              </Typography>
-            </Grid>
             {props.config?.filters?.map((filter, i) => (
               <Grid key={i} item container direction='column' rowSpacing={1}>
                 <Grid item container direction='row' justifyContent='space-between' alignItems='center'>

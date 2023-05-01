@@ -30,6 +30,7 @@ const EqTab = (props) => {
           <EqAppEqualizerApoGraphicEq
             selectedMeasurement={props.selectedMeasurement}
             graphicEq={props.graphicEq}
+            instructions={selectedEqualizer?.instructions}
           />
         </Grid>
       )}
@@ -41,6 +42,8 @@ const EqTab = (props) => {
             fs={props.fs}
             onEqParamChanged={props.onEqParamChanged}
             uiConfig={selectedEqualizer?.uiConfig}
+            eqParams={selectedEqualizer?.eqParams}
+            instructions={selectedEqualizer?.instructions}
             preamp={props.preamp}
           />
         </Grid>
@@ -59,6 +62,7 @@ const EqTab = (props) => {
             onConfigFilterChanged={props.onCustomPeqConfigFilterChanged}
             onAddFilterClick={props.onCustomPeqAddFilterClick}
             onFilterDeleteClick={props.onCustomPeqDeleteFilterClick}
+            instructions={selectedEqualizer?.instructions}
           />
         </Grid>
       )}
@@ -69,6 +73,7 @@ const EqTab = (props) => {
             fs={props.fs}
             onEqParamChanged={props.onEqParamChanged}
             fixedBands
+            instructions={selectedEqualizer?.instructions}
           />
         </Grid>
       )}
@@ -83,6 +88,7 @@ const EqTab = (props) => {
             preamp={props.preamp}
             selectedMeasurement={props.selectedMeasurement}
             onEqParamChanged={props.onEqParamChanged}
+            instructions={selectedEqualizer?.instructions}
           />
         </Grid>
       )}

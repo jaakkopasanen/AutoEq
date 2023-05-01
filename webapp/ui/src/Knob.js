@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Box, Tooltip, Typography} from '@mui/material';
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 const Knob = (props) => {
   const angleOffset = 45;

@@ -158,34 +158,41 @@ const App = (props) => {
       return;
     }
 
+    const selectedEqualizerObj = find(equalizers, (equalizer) => equalizer.label === selectedEqualizerRef.current);
+
+    const eqParams = {
+      selectedMeasurement: selectedMeasurementRef.current,
+      equalizer: find(equalizersRef.current, (eq) => eq.label === selectedEqualizerRef.current),
+      compensation: selectedCompensationRef.current,
+      soundSignature: soundSignatureRef.current,
+      soundSignatureSmoothingWindowSize: soundSignatureSmoothingWindowSizeRef.current,
+      bassBoostGain: bassBoostGainRef.current,
+      bassBoostFc: bassBoostFcRef.current,
+      bassBoostQ: bassBoostQRef.current,
+      trebleBoostGain: trebleBoostGainRef.current,
+      trebleBoostFc: trebleBoostFcRef.current,
+      trebleBoostQ: trebleBoostQRef.current,
+      tilt: tiltRef.current,
+      fs: fsRef.current,
+      bitDepth: bitDepthRef.current,
+      phase: phaseRef.current,
+      fRes: fResRef.current,
+      preamp: preampRef.current,
+      maxGain: maxGainRef.current,
+      maxSlope: maxSlopeRef.current,
+      windowSize: windowSizeRef.current,
+      trebleWindowSize: trebleWindowSizeRef.current,
+      trebleFLower: trebleFLowerRef.current,
+      trebleFUpper: trebleFUpperRef.current,
+      trebleGainK: trebleGainKRef.current,
+      smoothed: smoothedRef.current
+    };
+    if (selectedEqualizerObj?.eqParams) {
+      Object.assign(eqParams, selectedEqualizerObj.eqParams);
+    }
+
     try {
-      const res = await apiClientRef.current.equalize({
-        selectedMeasurement: selectedMeasurementRef.current,
-        equalizer: find(equalizersRef.current, (eq) => eq.label === selectedEqualizerRef.current),
-        compensation: selectedCompensationRef.current,
-        soundSignature: soundSignatureRef.current,
-        soundSignatureSmoothingWindowSize: soundSignatureSmoothingWindowSizeRef.current,
-        bassBoostGain: bassBoostGainRef.current,
-        bassBoostFc: bassBoostFcRef.current,
-        bassBoostQ: bassBoostQRef.current,
-        trebleBoostGain: trebleBoostGainRef.current,
-        trebleBoostFc: trebleBoostFcRef.current,
-        trebleBoostQ: trebleBoostQRef.current,
-        tilt: tiltRef.current,
-        fs: fsRef.current,
-        bitDepth: bitDepthRef.current,
-        phase: phaseRef.current,
-        fRes: fResRef.current,
-        preamp: preampRef.current,
-        maxGain: maxGainRef.current,
-        maxSlope: maxSlopeRef.current,
-        windowSize: windowSizeRef.current,
-        trebleWindowSize: trebleWindowSizeRef.current,
-        trebleFLower: trebleFLowerRef.current,
-        trebleFUpper: trebleFUpperRef.current,
-        trebleGainK: trebleGainKRef.current,
-        smoothed: smoothedRef.current
-      }, audioContextRef.current);
+      const res = await apiClientRef.current.equalize(eqParams, audioContextRef.current);
 
       if (res === undefined) {
         return;
@@ -363,8 +370,10 @@ const App = (props) => {
 
   const onEqualizerSelected = (val) => {
     if (val === null) {
+      selectedEqualizerRef.current = null;
       setSelectedEqualizer(null);
     } else {
+      selectedEqualizerRef.current = val;
       setSelectedEqualizer(val);
       equalize(true);
     }

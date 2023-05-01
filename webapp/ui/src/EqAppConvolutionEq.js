@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Autocomplete, Grid, IconButton, Switch, TextField, Typography } from "@mui/material";
+import {Autocomplete, Grid, IconButton, Switch, TextField, Tooltip, Typography} from "@mui/material";
 import InputSlider from './InputSlider';
 import audioBufferToWav from 'audiobuffer-to-wav';
 import DownloadIcon from '@mui/icons-material/Download';
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const EqAppConvolutionEq = (props) => {
   const [stereo, setStereo] = useState(false);
@@ -25,12 +26,31 @@ const EqAppConvolutionEq = (props) => {
 
   return (
     <Grid container direction='column' rowSpacing={1}>
+      {props.instructions && (
+        <Grid
+          item
+          sx={{
+            padding: '8px 12px',
+            background: '#e5f3f7',
+            borderStyle: 'solid',
+            borderWidth: '1px',
+            borderColor: '#9abac3',
+            borderRadius: '4px',
+            marginTop: '8px',
+            marginBottom: '8px'
+          }}
+        >
+          <Typography variant='caption'>
+            {props.instructions}
+          </Typography>
+        </Grid>
+      )}
       <Grid item container direction='row' columnSpacing={1}>
-        <Grid item xs={4}>
+        <Grid item xs={4} sx={{position: 'relative'}}>
           <Autocomplete
             freeSolo
             renderInput={(params) =>
-              <TextField {...params} label='Sample rate (Hz)' type='number' />
+              <TextField {...params} label='Sample rate' type='number' />
             }
             value={props.fs.toFixed(0)}
             options={['44100', '48000', '96000', '192000', '384000']}
@@ -40,8 +60,11 @@ const EqAppConvolutionEq = (props) => {
             size='small'
             disableClearable
           />
+          <Tooltip title='Sample rate must match the device sample rate'>
+            <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
+          </Tooltip>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={4} sx={{position: 'relative'}}>
           <Autocomplete
             renderInput={(params) => <TextField {...params} label='Bit depth' /> }
             value={props.bitDepth.toFixed(0)}
@@ -51,10 +74,13 @@ const EqAppConvolutionEq = (props) => {
             }}
             size='small'
           />
+          <Tooltip title='Use 16 bits unless the app requires 32 bits'>
+            <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
+          </Tooltip>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={4} sx={{position: 'relative'}}>
           <Autocomplete
-            renderInput={(params) => <TextField {...params} label='Phase' /> }
+            renderInput={(params) => <TextField {...params} label='Phase' />}
             value={props.phase}
             options={['minimum', 'linear']}
             onChange={(e, val) => {
@@ -62,6 +88,9 @@ const EqAppConvolutionEq = (props) => {
             }}
             size='small'
           />
+          <Tooltip title='Use minimum phase always when equalizing headphones'>
+            <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
+          </Tooltip>
         </Grid>
       </Grid>
       <Grid item>
@@ -69,6 +98,7 @@ const EqAppConvolutionEq = (props) => {
           label='Frequency resolution (Hz)' initialValue={props.fRes}
           min={1.0} max={40.0} step={1.0}
           onChange={(v) => { props.onEqParamChanged({ fRes: v }) }}
+          tooltip='Smaller values give more accurate bass but require more CPU power. Default value is enough for most cases.'
         />
       </Grid>
       <Grid item>
@@ -76,16 +106,25 @@ const EqAppConvolutionEq = (props) => {
           label='Preamp' initialValue={props.preamp}
           min={-20} max={20} step={0.5}
           onChange={(v) => { props.onEqParamChanged({ preamp: v }) }}
+          tooltip="Apply negative preamp if you hear clipping. AutoEq normalizes convolution filters but cannot guarantee the audio won't ever clip."
         />
       </Grid>
-      <Grid item container direction='row' columnSpacing={1} justifyContent='center' alignItems='center'>
+      <Grid item container direction='row' columnSpacing={0} justifyContent='space-between' alignItems='center'>
+        <Grid item container direction='row' alignItems='center' sx={{ width: 'auto' }}>
           <Grid item>
             <Typography>Stereo</Typography>
           </Grid>
           <Grid item>
             <Switch checked={stereo} onChange={onStereoChanged} />
           </Grid>
-        <Grid item xs={6}>
+          <Grid item>
+            <Tooltip title='Use stereo only if the equalizer app requires stereo impulse responses'>
+              <InfoOutlinedIcon sx={{width: 18, height: 18, verticalAlign: 'bottom'}} />
+            </Tooltip>
+          </Grid>
+        </Grid>
+
+        <Grid item>
           <IconButton onClick={onDownloadClick}><DownloadIcon /></IconButton>
         </Grid>
       </Grid>

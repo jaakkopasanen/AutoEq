@@ -12,7 +12,8 @@ const theme = createTheme({
       main: 'rgba(20, 104, 153)'
     },
     secondary: {
-      main: 'rgba(222, 212, 0)'
+      main: 'rgba(222, 212, 0)',
+      dark: 'rgba(153, 131, 0)'
     },
     error: {
       main: 'rgba(255, 91, 61)'
