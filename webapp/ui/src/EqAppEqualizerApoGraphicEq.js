@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {Grid, IconButton, Tooltip} from '@mui/material';
-import { FileCopy as CopyIcon, Download as DownloadIcon } from '@mui/icons-material';
+import {Grid, IconButton, Tooltip, Typography} from '@mui/material';
+import FileCopyIcon from '@mui/icons-material/FileCopy';
+import DownloadIcon from '@mui/icons-material/Download';
 import { downloadAsFile } from "./utils";
 
 const EqAppEqualizerApoGraphicEq = (props) => {
@@ -28,7 +29,24 @@ const EqAppEqualizerApoGraphicEq = (props) => {
 
   return (
     <Grid container direction='column' rowSpacing={1}>
-      <Grid item />
+      {props.instructions && (
+        <Grid
+          item
+          sx={{
+            padding: '8px 12px',
+            background: '#e5f3f7',
+            borderStyle: 'solid',
+            borderWidth: '1px',
+            borderColor: '#9abac3',
+            borderRadius: '4px',
+            marginTop: '8px',
+          }}
+        >
+          <Typography variant='caption'>
+            {props.instructions}
+          </Typography>
+        </Grid>
+      )}
       <Grid item container direction='row' sx={{flexWrap: 'nowrap'}}>
         <Grid
           item
@@ -64,7 +82,7 @@ const EqAppEqualizerApoGraphicEq = (props) => {
               }
             }}
           >
-            <IconButton onClick={onCopyToClipboardClick}><CopyIcon /></IconButton>
+            <IconButton onClick={onCopyToClipboardClick}><FileCopyIcon /></IconButton>
           </Tooltip>
         </Grid>
       </Grid>
