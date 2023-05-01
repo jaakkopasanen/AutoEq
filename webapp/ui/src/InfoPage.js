@@ -13,6 +13,7 @@ import LooksOneOutlinedIcon from '@mui/icons-material/LooksOneOutlined';
 import LooksTwoOutlinedIcon from '@mui/icons-material/LooksTwoOutlined';
 import Looks3OutlinedIcon from '@mui/icons-material/Looks3Outlined';
 import Looks4OutlinedIcon from '@mui/icons-material/Looks4Outlined';
+import {useTheme} from "@emotion/react";
 
 const InfoPage = (props) => {
   const platform = isWindows ? 'Windows' : isMacos ? 'Mac OS' : isLinux ? 'Linux' : isAndroid ? 'Android' : isIos ? 'OSX' : null;
@@ -24,6 +25,7 @@ const InfoPage = (props) => {
     'iOS': null,
   }[platform];
 
+  const theme = useTheme();
   const iconSize = 48;
 
   return (
@@ -71,7 +73,7 @@ const InfoPage = (props) => {
               <Typography variant='h6'>Select equalizer app</Typography>
               {platform !== 'iOS' && (
                 <Typography variant='body2'>
-                  <b>{recommendedApp}</b> is recommended for <b>{platform}</b>
+                  <b style={{color: theme.palette.secondary.light}}>{recommendedApp}</b> is recommended for <b>{platform}</b>
                 </Typography>
               )}
               {platform === 'iOS' && (

@@ -23,7 +23,7 @@ import InfoPage from "./InfoPage";
 
 const SmPaper = styled(Paper)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
-    borderRadius: 0,
+    //borderRadius: 0,
     boxShadow: 'none',
     borderBottom: '1px dashed #aaa',
     paddingLeft: theme.spacing(1),
@@ -437,15 +437,15 @@ const App = (props) => {
   const customPeqConfig = !!customPeq ? customPeq.config : null;
   //console.log(!!graphData, !!showInfo);
   return (
-    <Box sx={{pt: 10, pb: {xs: 12, md: 13}, background: '#2c2424', minHeight: '100vh', boxSizing: 'border-box'}}>
+    <Box sx={{pt: 9.5, pb: {xs: 12, md: 13}, background: '#2c2424', minHeight: '100vh', boxSizing: 'border-box'}}>
       <Waves nWaves={10} />
 
       {(!!graphData && !showInfo) && (
-        <Container fixed sx={{ pl: {xs: 0, sm: 2, md: 3}, pr: {xs: 0, sm: 1, md: 3}, }}>
+        <Container fixed sx={{ pl: {xs: 0.5, sm: 2, md: 3}, pr: {xs: 0.5, sm: 1, md: 3}, }}>
           <Grid
             item
             container direction='row' alignItems='stretch'
-            columnSpacing={{xs: 0, sm: 1, md: 2}} rowSpacing={{xs: 0, sm: 1, md: 2}}
+            columnSpacing={{xs: 0.5, sm: 1, md: 2}} rowSpacing={{xs: 0.5, sm: 1, md: 2}}
           >
 
             <Grid item xs={12}>

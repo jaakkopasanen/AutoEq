@@ -320,7 +320,7 @@ class FrequencyResponse:
             for filt in peq.filters:
                 compound.add_filter(filt)
 
-        types = {Peaking.__name__: 'PK', LowShelf.__name__: 'LS', HighShelf.__name__: 'HS'}
+        types = {Peaking.__name__: 'PK', LowShelf.__name__: 'LSC', HighShelf.__name__: 'HSC'}
 
         with open(file_path, 'w', encoding='utf-8') as f:
             s = f'Preamp: {-compound.max_gain:.1f} dB\n'

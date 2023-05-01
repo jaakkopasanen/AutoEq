@@ -48,9 +48,25 @@ export default [
         <p>Download a file the app supports EqualizerAPO file format or configure the filters in the app manually.</p>
       </div>
   },
-  { label: 'EasyEffects / PulseEffects', type: 'convolution' },
-  { label: 'eqMac (Advanced Equalizer)', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ', uiConfig: { showFsControl: false } },
-  { label: 'eqMac (Expert Equalizer)', type: 'parametric', config: '8_PEAKING_WITH_SHELVES', uiConfig: { showFsControl: true } },
+  {
+    label: 'EasyEffects / PulseEffects',
+    type: 'convolution',
+    instructions: 'Download file, add Convolver plugin on plugins tab and click "Import impulse" in "Impulses".'
+  },
+  {
+    label: 'eqMac (Advanced Equalizer)',
+    type: 'fixedBand',
+    config: '10_BAND_GRAPHIC_EQ',
+    uiConfig: { showFsControl: false },
+    instructions: 'Adjust the sliders in eqMac to match the gain values',
+  },
+  {
+    label: 'eqMac (Expert Equalizer)',
+    type: 'parametric',
+    config: '8_PEAKING_WITH_SHELVES',
+    uiConfig: { showFsControl: true },
+    instructions: 'Configure frequency, gain and quality (Q) for each band manually on Expert tab'
+  },
   {
     label: 'EqualizerAPO GraphicEq',
     type: 'graphic',
@@ -69,11 +85,18 @@ export default [
     label: 'Peace', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
     uiConfig: {
       bw: false, showDownload: true, showFsControl: true,
-      filterNames: { LOW_SHELF: 'Low-shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High-shelf', PREAMP: 'Preamplification' },
-      columnNames: { fc: 'Center frequency (Hz)', gain: 'Gain (dB)', q: 'Q factor' }
-    }
+      filterNames: { LOW_SHELF: 'Low-shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High-shelf', PREAMP: 'Pre Amplifying' },
+      columnNames: { fc: 'Frequency', gain: 'Gain', q: 'Quality (Q)' },
+    },
+    instructions: 'Download file and import it to Peace by clicking "📁 Import" button'
   },
-  { label: 'iTunes built-in equalizer', type: 'fixedBand', config: '10_BAND_GRAPHIC_EQ', uiConfig: { showFsControl: false } },
+  {
+    label: 'iTunes built-in equalizer',
+    type: 'fixedBand',
+    config: '10_BAND_GRAPHIC_EQ',
+    uiConfig: { showFsControl: false },
+    instructions: 'Adjust the sliders in the equalizer to match the gain values and set Preamp'
+  },
   { label: 'JamesDSP', type: 'convolution' },
   { label: 'RootlessJamesDSP', type: 'convolution' },
   {
@@ -83,14 +106,16 @@ export default [
       filterNames: { LOW_SHELF: 'LOW_SHELF', PEAKING: 'PEAK', HIGH_SHELF: 'HIGH_SHELF', PREAMP: 'Preamp' },
       columnNames: { fc: 'Frequency', gain: 'Gain', q: 'Q' }
     },
+    instructions: 'Configure frequency, gain and quality (Q) for each band manually with Parametric EQ'
   },
   {
     label: 'MiniDSP IL-DSP', type: 'parametric', config: 'MINIDSP_IL_DSP',
     uiConfig: {
-      bw: false, showDownload: false, showPreampControl: true, showFsControl: false,
+      bw: false, showDownload: false, showPreampControl: true, showFsControl: true,
       filterNames: { LOW_SHELF: 'LOW_SHELF', PEAKING: 'PEAK', HIGH_SHELF: 'HIGH_SHELF', PREAMP: 'Preamp' },
       columnNames: { fc: 'Frequency', gain: 'Gain', q: 'Q' },
     },
+    instructions: 'Configure frequency, gain and quality (Q) for each band manually with Parametric EQ. IL-DSP doesn\'t have preamp control and therefore to prevent clipping, you can adjust preamp slider here until the requested preamp at the bottom of the produced settings gives a slightly positive value'
   },
   {
     label: 'Neutron Music Player', type: 'parametric', config: 'NEUTRON_MUSIC_PLAYER',
@@ -108,7 +133,8 @@ export default [
       bw: false, showDownload: false, showFsControl: false,
       filterNames: { LOW_SHELF: 'Low Shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High Shelf', PREAMP: 'Preamp' },
       columnNames: { fc: 'Freq', gain: 'Gain', q: 'Q' }
-    }
+    },
+    instructions: 'Enable Parametric equalizer in the settings. Configure frequency, gain and quality (Q) for each band manually and set preamp.'
   },
   {
     label: 'Qudelix-5K', type: 'parametric', config: 'QUDELIX_5K',
@@ -116,7 +142,8 @@ export default [
       bw: false, showDownload: false, showFsControl: true,
       filterNames: { LOW_SHELF: 'LSHELF', PEAKING: 'PEAK', HIGH_SHELF: 'HSHELF', PREAMP: 'PRE GAIN(dB)' },
       columnNames: { fc: 'FREQ(Hz)', gain: 'GAIN(db)', q: 'Q' }
-    }
+    },
+    instructions: 'Configure frequency, gain and quality (Q) for each band manually on Equalizer tab'
   },
   {
     label: 'SoundSource', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
@@ -124,10 +151,15 @@ export default [
       bw: false, showDownload: true, showFsControl: true,
       filterNames: { LOW_SHELF: 'Low Shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High Shelf', PREAMP: 'Preamp' },
       columnNames: { fc: 'Frequency (Hz)', gain: 'Gain (dB)', q: 'Q' }
-    }
+    },
+    instructions: 'Download file and import to SoundSource from Headphone EQ menu by selecting "Add Other Profile..."'
   },
   {
-    label: 'Spotify built-in equalizer', type: 'fixedBand', config: 'SPOTIFY', uiConfig: { showFsControl: false }
+    label: 'Spotify built-in equalizer',
+    type: 'fixedBand',
+    config: 'SPOTIFY',
+    uiConfig: { showFsControl: false },
+    instructions: 'Go to Settings and adjust the Equalizer sliders to match the gain values'
   },
   {
     label: 'USB Audio Player PRO', type: 'parametric', config: 'USB_AUDIO_PLAYER_PRO',
@@ -135,8 +167,17 @@ export default [
       bw: false, showDownload: false, showFsControl: false,
       filterNames: { LOW_SHELF: 'Low shelf', PEAKING: 'Analog bell', HIGH_SHELF: 'High shelf', PREAMP: 'Preamp' },
       columnNames: { fc: 'Frequency (Hz)', gain: 'Gain (dB)', q: 'Q factor' }
-    }
+    },
+    instructions: 'Configure frequency, gain and quality (Q) for each band manually in Toneboosters'
   },
-  { label: 'Viper4Android', type: 'convolution' },
-  { label: 'Wavelet', type: 'graphic' },
+  {
+    label: 'Viper4Android',
+    type: 'convolution',
+    instructions: 'Download the file to "/ViPER4Android/Kernel" on your phone. Then select the file under "Convolver" in the app.'
+  },
+  {
+    label: 'Wavelet',
+    type: 'graphic',
+    instructions: 'Download the file on your phone and import to Wavelet by selecting AutoEq, clicking the headphone name and then Import button'
+  },
 ];

@@ -47,6 +47,7 @@ const Knob = (props) => {
     if (isMouseDown) {
       const newVal = newValue(e);
       setValue(newVal);
+      e.preventDefault();
       if (props.onChange) {
         props.onChange(newVal);
       }
@@ -76,9 +77,6 @@ const Knob = (props) => {
         textAlign: 'center',
         margin: 'auto'
       }}
-      onMouseDown={onMouseDown} onTouchStart={onMouseDown}
-      onMouseUp={onMouseUp} onTouchEnd={onMouseUp}
-      onMouseMove={onMouseMove} onTouchMove={onMouseMove}
       ref={elRef}
     >
       <Box sx={{
@@ -106,6 +104,9 @@ const Knob = (props) => {
             border: theme => `2px solid ${theme.palette.primary.main}`,
             boxSizing: 'border-box'
           }}
+          onMouseDown={onMouseDown} onTouchStart={onMouseDown}
+          onMouseUp={onMouseUp} onTouchEnd={onMouseUp}
+          onMouseMove={onMouseMove} onTouchMove={onMouseMove}
         />
         <Box sx={{
           position: 'absolute',
