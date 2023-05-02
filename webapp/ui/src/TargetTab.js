@@ -140,7 +140,7 @@ const TargetTab = (props) => {
             size={115}
             unit='oct'
             nTicks={9}
-            label='Smoothing'
+            label='Sound signature smoothing'
             tooltip='Sound signature smoothing window size. Useful for making the sound signature smooth when only a few points are present.'
           />
         </Grid>
