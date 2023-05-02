@@ -247,7 +247,7 @@ const TargetTab = (props) => {
         <Grid item xs={4} sx={{display: showAdvanced ? 'block' : 'none'}}>
           <Knob
             initialValue={props.tilt}
-            minValue={0} maxValue={2} step={0.1}
+            minValue={-2} maxValue={2} step={0.1}
             label='Tilt'
             onChange={(v) => { props.onEqParamChanged({ tilt: v }) }}
             formatter={(val) => val.toFixed(2)}
