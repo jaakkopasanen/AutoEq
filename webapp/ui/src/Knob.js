@@ -4,7 +4,6 @@ import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 const Knob = (props) => {
   const angleOffset = 45;
-  const [isMouseDown, setIsMouseDown] = useState(false);
   const [value, setValue] = useState(props.initialValue);
 
   const newValue = (e) => {
@@ -30,28 +29,24 @@ const Knob = (props) => {
     return Math.min(props.maxValue, Math.max(props.minValue, value));  // Clip between min and max values
   };
 
-  const onMouseDown = (e) => {
-    setIsMouseDown(true);
+  const update = (e) => {
     const newVal = newValue(e);
     setValue(newVal);
     if (props.onChange) {
       props.onChange(newVal);
     }
-  };
+  }
 
-  const onMouseUp = () => {
-    setIsMouseDown(false);
-  };
-
-  const onMouseMove = (e) => {
-    if (isMouseDown) {
-      const newVal = newValue(e);
-      setValue(newVal);
-      e.preventDefault();
-      if (props.onChange) {
-        props.onChange(newVal);
-      }
-    }
+  const onMouseDown = (e) => {
+    e.preventDefault();
+    update(e);
+    const moveHandler = (e) => { update(e); };
+    document.addEventListener('mousemove', moveHandler);
+    document.addEventListener('touchmove', moveHandler);
+    document.addEventListener('mouseup', (e) => {
+      document.removeEventListener('mousemove', moveHandler);
+      document.removeEventListener('touchmove', moveHandler);
+    });
   };
 
   const elRef = useRef();
@@ -105,8 +100,6 @@ const Knob = (props) => {
             boxSizing: 'border-box'
           }}
           onMouseDown={onMouseDown} onTouchStart={onMouseDown}
-          onMouseUp={onMouseUp} onTouchEnd={onMouseUp}
-          onMouseMove={onMouseMove} onTouchMove={onMouseMove}
         />
         <Box sx={{
           position: 'absolute',
