@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Box, Tooltip, Typography} from '@mui/material';
+import {Box, TextField, Tooltip, Typography} from '@mui/material';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 const Knob = (props) => {
   const angleOffset = 45;
-  const [value, setValue] = useState(props.initialValue);
+  const [value, setValue] = useState(props.formatter(props.initialValue));
 
   const newValue = (e) => {
     const clientX = e.clientX || e.touches[0].clientX;
@@ -31,7 +31,7 @@ const Knob = (props) => {
 
   const update = (e) => {
     const newVal = newValue(e);
-    setValue(newVal);
+    setValue(props.formatter(newVal));
     if (props.onChange) {
       props.onChange(newVal);
     }
@@ -49,11 +49,18 @@ const Knob = (props) => {
     });
   };
 
+  const handleChange = (e) => {
+    setValue(e.target.value);
+    if (props.onChange) {
+      props.onChange(parseFloat(e.target.value));
+    }
+  };
+
   const elRef = useRef();
 
   useEffect(() => {
     if (props.initialValue !== value) {
-      setValue(props.initialValue);
+      setValue(props.formatter(props.initialValue));
     }
   }, [props.initialValue]);
 
@@ -113,12 +120,21 @@ const Knob = (props) => {
         <Box
           sx={{
             position: 'absolute',
-            top: '50%', left: '50%',
+            top: '45%', left: '50%',
             transform: props.unit ? 'translate(-50%, -14px)' : 'translate(-50%, -7px)',
             textAlign: 'center',
           }}
         >
-          <Typography sx={{lineHeight: 1}}>{props.formatter ? props.formatter(value) : value}</Typography>
+          {/*<Typography sx={{lineHeight: 1}}>{props.formatter ? props.formatter(value) : value}</Typography>*/}
+          <TextField
+            variant='standard'
+            value={value}
+            size='small'
+            inputProps={{
+              style: { textAlign: 'center' }
+            }}
+            onChange={handleChange}
+          />
           {props.unit && <Typography variant='caption'>{props.unit}</Typography>}
         </Box>
         {'icon' in props && (

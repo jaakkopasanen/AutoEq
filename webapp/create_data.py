@@ -38,19 +38,18 @@ def write_compensations():
     path = Path().resolve()
     compensations = [
         {
-            'name': 'diffuse_field',
-            'label': 'Diffuse Field',
+            'name': 'diffuse_field_gras_kemar',
+            'label': 'Diffuse Field GRAS KEMAR',
             'compatible': [],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         }, {
-            'name': 'free_field',
-            'label': 'Free Field',
+            'name': 'diffuse_field_iso_11904-2',
+            'label': 'Diffuse Field ISO 11904-2',
             'compatible': [],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
-        },
-        {
+        }, {
             'name': 'zero',
             'label': 'Flat',
             'compatible': [],
@@ -86,6 +85,13 @@ def write_compensations():
             'compatible': [('headphonecom', 'onear', 'unknown')],
             'recommended': [('headphonecom', 'onear', 'unknown')],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
+        },
+        {
+            'name': '711_5128_delta',
+            'label': '711/5128 Delta',
+            'compatible': [('crinacle', 'inear', 'unknown'), ('oratory1990', 'inear', 'unknown')],
+            'recommended': [],
+            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
             'name': 'innerfidelity_harman_in-ear_2019v2_wo_bass',
