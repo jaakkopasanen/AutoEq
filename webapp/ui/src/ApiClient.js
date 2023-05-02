@@ -140,8 +140,7 @@ class ApiClient {
       body: JSON.stringify(body)
     });
     if (apiRes.status < 200 || apiRes.status >= 300) {
-      let errorMessage;
-      errorMessage = JSON.stringify((await apiRes.json()), null, 4);
+      const errorMessage = await apiRes.text();
       throw new Error(errorMessage);
     }
     const data = await apiRes.json();

@@ -15,7 +15,12 @@ import CSVAutocomplete from './CSVAutocomplete';
 import Knob from './Knob';
 
 const TargetTab = (props) => {
-  const [showAdvanced, setShowAdvanced] = useState(false);
+  const [showAdvanced, _setShowAdvanced] = useState(window.localStorage.getItem('showAdvanced') === 'true' || false);
+
+  const setShowAdvanced = (val) => {
+    window.localStorage.setItem('showAdvanced', val);
+    _setShowAdvanced(val);
+  };
 
   const onUseCurrentErrorClicked = () => {
     props.onEqParamChanged({

@@ -160,10 +160,19 @@ const App = (props) => {
 
     const selectedEqualizerObj = find(equalizers, (equalizer) => equalizer.label === selectedEqualizerRef.current);
 
+    let compensation = find(
+      compensationsRef.current,
+      (compensation) => compensation.label === selectedCompensationRef.current);
+    if (compensation.frequency) {
+      compensation = { frequency: compensation.frequency, raw: compensation.raw };
+    } else{
+      compensation = compensation.label;
+    }
+
     const eqParams = {
       selectedMeasurement: selectedMeasurementRef.current,
       equalizer: find(equalizersRef.current, (eq) => eq.label === selectedEqualizerRef.current),
-      compensation: selectedCompensationRef.current,
+      compensation: compensation,
       soundSignature: soundSignatureRef.current,
       soundSignatureSmoothingWindowSize: soundSignatureSmoothingWindowSizeRef.current,
       bassBoostGain: bassBoostGainRef.current,
@@ -215,6 +224,7 @@ const App = (props) => {
     } catch (err) {
       setIsSnackbarOpen(true);
       setSnackbarMessage(err.toString());
+      throw err;
     }
   };
 
@@ -337,6 +347,7 @@ const App = (props) => {
 
   const onCompensationCreated = (name, dataPoints) => {
     const newCompensations = cloneDeep(compensationsRef.current);
+    const newCompensationsBassBoosts = cloneDeep(compensationsBassBoostsRef.current);
     const obj = transposeArrayToObject(dataPoints, ['frequency', 'raw'])
     const newCompensation = {
       label: name,
@@ -347,8 +358,11 @@ const App = (props) => {
       bassBoost: { fc: 105, q: 0.7, gain: 0.0 }
     };
     newCompensations.push(newCompensation);
+    newCompensationsBassBoosts[name] = { fc: 105, q: 0.7, gain: 0.0 };
+    compensationsBassBoostsRef.current = newCompensationsBassBoosts;
     setCompensations(newCompensations);
     onCompensationSelected(newCompensation);
+
   };
 
   const onEqParamChanged = (newParams) => {

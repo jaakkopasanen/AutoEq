@@ -125,9 +125,9 @@ const transposeArrayToObject = (arr, keys) => {
   for (const key of keys) {
     obj[key] = [];
   }
-  for (const [el, ix] of arr.entries()) {
+  for (const el of arr) {
     for (const key of keys) {
-      obj[key][ix] = el;
+      obj[key].push(el[key]);
     }
   }
   return obj;
