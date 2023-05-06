@@ -571,7 +571,7 @@ const App = (props) => {
       </Box>
 
       <Box sx={{ position: 'fixed', bottom: {xs: 0, sm: 8}, left: 0, right: 0 }}>
-        <Container fixed maxWidth='sm' sx={{padding: 0}}>
+        <Container fixed maxWidth='sm' sx={{padding: '0 !important'}}>
           <Player
             audioContext={audioContextRef.current}
             audioDestination={gainNodeRef.current}
