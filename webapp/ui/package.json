@@ -18,6 +18,7 @@
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-scripts": "5.0.1",
+    "react-window": "^1.8.9",
     "recharts": "^2.1.16",
     "web-vitals": "^2.1.4"
   },

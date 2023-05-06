@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {createContext, forwardRef, useCallback, useContext} from 'react';
 import {
   Autocomplete,
   Box,
@@ -8,15 +8,101 @@ import {
   MenuItem,
   Select,
   TextField,
-  Tooltip,
+  Tooltip, Typography,
 } from '@mui/material';
 import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
 import {useDropzone} from 'react-dropzone';
 import find from 'lodash/find';
 import {parseCSV} from './utils';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import { FixedSizeList } from 'react-window';
+import {useTheme} from '@emotion/react';
+import Popper from "@mui/material/Popper";
 
-function CSVAutocomplete(props) {
+
+const LISTBOX_PADDING = 8; // px
+
+const renderRow = (props) => {
+  const { data, index, style } = props;
+  const liProps = data[index][0];
+  const option = data[index][1];
+  const renderOptionFn = data[index][2];
+
+  if (renderOptionFn) {
+    return renderOptionFn(liProps, option, style);
+  } else {
+    return (
+      <Typography component='li' {...liProps} style={{ ...style, top: (style.top) + LISTBOX_PADDING }}>
+        {option.label}
+      </Typography>
+    );
+  }
+};
+
+const OuterElementContext = createContext({});
+
+const OuterElementType = forwardRef((props, ref) => {
+  const outerProps = useContext(OuterElementContext);
+  return <div ref={ref} {...props} {...outerProps} />;
+});
+
+const InnerElementType = forwardRef(({ style, ...other }, ref) => (
+  <ul
+    ref={ref}
+    style={{
+      ...style,
+      paddingLeft: 0,
+      marginTop: 0
+    }}
+    { ...other }
+  />
+));
+
+const ListboxComponent = forwardRef(function ListboxComponent(props, ref) {
+  const { children, ...other } = props;
+  const itemData = [];
+  children.forEach(
+    (child) => {
+      itemData.push(child);
+      itemData.push(...(child.children || []));
+    }
+  );
+
+  const itemCount = itemData.length;
+  const itemSize = 48;
+
+  const getHeight = () => {
+    return Math.min(8, itemCount) * itemSize;
+  };
+
+  return (
+    <div ref={ref}>
+      <OuterElementContext.Provider value={other}>
+        <FixedSizeList
+          itemData={itemData}
+          height={getHeight() + 2 * LISTBOX_PADDING}
+          width='100%'
+          outerElementType={OuterElementType}
+          innerElementType={InnerElementType}
+          itemSize={itemSize}
+          overscanCount={5}
+          itemCount={itemCount}
+          style={{paddingLeft: 0 }}
+        >
+          {renderRow}
+        </FixedSizeList>
+      </OuterElementContext.Provider>
+    </div>
+  );
+});
+
+const PopperComponent = (props) => {
+  return (
+    <Popper { ...props } style={{ minWidth: 350, width: props.anchorEl.clientWidth }} placement='bottom' />
+  );
+};
+
+const CSVAutocomplete = (props) => {
   const onDrop = useCallback((acceptedFiles) => {
     acceptedFiles.forEach((file) => {
       const reader = new FileReader();
@@ -53,7 +139,33 @@ function CSVAutocomplete(props) {
           </Select>
         </FormControl>
       )}
-      {!props.useSelect && (
+      {!props.useSelect && 'virtualize' in props && props.virtualize !== false && (
+        <Autocomplete
+          renderInput={(params) =>
+            <TextField
+              sx={{
+                background: (theme) => 'transparent',
+                '& .MuiInputBase-root': (theme) => ({
+                  backgroundColor: isDragAccept ? 'rgba(225, 255, 214, 0.2)' : 'rgba(0, 0, 0, 0.0)',
+                  borderRadius: '4px'
+                }),
+                '& .MuiAutocomplete-endAdornment': { display: 'none' },
+              }}
+              {...params}
+              label={props.label}
+            />
+          }
+          ListboxComponent={ListboxComponent}
+          PopperComponent={PopperComponent}
+          renderOption={(liProps, option) => [liProps, option, props.renderOption || null]}
+          value={props.value}
+          options={props.options}
+          isOptionEqualToValue={(option, value) => option.label === value.label}
+          onChange={(e, val) => { props.onChange(val); }}
+          { ...props.autocompleteProps }
+        />
+      )}
+      {!props.useSelect && !props.virtualize && (
         <Autocomplete
           renderInput={(params) =>
             <TextField
@@ -94,6 +206,6 @@ function CSVAutocomplete(props) {
       <input { ...getInputProps() } />
     </Box>
   );
-}
+};
 
 export default CSVAutocomplete;

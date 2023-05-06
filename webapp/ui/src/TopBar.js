@@ -1,5 +1,16 @@
 import React, {useState} from 'react';
-import {Grid, IconButton, Link, ListItemIcon, ListItemText, Menu, MenuItem, SvgIcon, Typography} from '@mui/material';
+import {
+  Box,
+  Grid,
+  IconButton,
+  Link,
+  ListItemIcon,
+  ListItemText,
+  Menu,
+  MenuItem,
+  SvgIcon,
+  Typography
+} from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import GavelIcon from '@mui/icons-material/Gavel';
@@ -60,6 +71,13 @@ const TopBar = (props) => {
           label='Select headphones'
           onOptionCreated={props.onMeasurementCreated}
           onError={props.onError}
+          virtualize
+          renderOption={(liProps, option, style) => (
+            <Box component='li' { ...liProps } style={{ ...style, top: (style.top) + 8, borderBottom: '1px solid #eee' }}>
+              <Typography>{option.label}</Typography>
+              <Typography variant='caption' sx={{whiteSpace: 'nowrap', ml: 'auto'}}>by {option.source}</Typography>
+            </Box>
+          )}
         />
       </Grid>
       <Grid item>
