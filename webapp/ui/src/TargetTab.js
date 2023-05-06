@@ -4,7 +4,7 @@ import {
   Chip,
   Grid,
   IconButton, Tooltip,
-  Typography
+  Typography, useMediaQuery
 } from '@mui/material';
 import InputSlider from './InputSlider';
 import CSVField from './CSVField';
@@ -13,6 +13,7 @@ import AddIcon from '@mui/icons-material/Add';
 import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 import CSVAutocomplete from './CSVAutocomplete';
 import Knob from './Knob';
+import {useTheme} from '@emotion/react';
 
 const TargetTab = (props) => {
   const [showAdvanced, _setShowAdvanced] = useState(window.localStorage.getItem('showAdvanced') === 'true' || false);
@@ -30,6 +31,9 @@ const TargetTab = (props) => {
       }))
     });
   };
+
+  const theme = useTheme();
+  const isSm = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Grid item xs={12} sm={12} container direction='column' rowSpacing={1}>
@@ -102,6 +106,7 @@ const TargetTab = (props) => {
               blurOnSelect: true,
               isOptionEqualToValue: (opt, val) => opt.label === val
             }}
+            useSelect={isSm}
           />
         </Grid>
       )}
