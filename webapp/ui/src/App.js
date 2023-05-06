@@ -455,7 +455,7 @@ const App = (props) => {
       <Waves nWaves={10} />
 
       {(!!graphData && !showInfo) && (
-        <Container fixed sx={{ pl: {xs: 0.5, sm: 2, md: 3}, pr: {xs: 0.5, sm: 1, md: 3}, }}>
+        <Container fixed sx={{ pl: {xs: '1px', sm: 2, md: 3}, pr: {xs: '1px', sm: 1, md: 3}, }}>
           <Grid
             item
             container direction='row' alignItems='stretch'
