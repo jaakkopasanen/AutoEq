@@ -66,7 +66,7 @@ const App = (props) => {
   const [selectedCompensation, setSelectedCompensation, selectedCompensationRef] = useStateRef(null);
   const [soundSignature, setSoundSignature, soundSignatureRef] = useStateRef(null);  // Sound signature { frequency, raw }
   // Smoothing window size for sound signature
-  const [soundSignatureSmoothingWindowSize, setSoundSignatureSmoothingWindowSize, soundSignatureSmoothingWindowSizeRef] = useStateRef(0.0);
+  const [soundSignatureSmoothingWindowSize, setSoundSignatureSmoothingWindowSize, soundSignatureSmoothingWindowSizeRef] = useStateRef(1.0);
 
   const [equalizers, setEqualizers, equalizersRef] = useStateRef(defaultEqualizers);
   const [selectedEqualizer, setSelectedEqualizer, selectedEqualizerRef] = useStateRef(null);  // Name of the selected equalizer app

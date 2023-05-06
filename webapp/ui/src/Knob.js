@@ -72,14 +72,23 @@ const Knob = (props) => {
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down('sm'));
 
+  // Calculate angle of the cursor
   const floatValue = value === null || value === undefined ? props.minValue : parseFloat(value);
   const clippedValue = Math.min(props.maxValue, Math.max(props.minValue, floatValue));
   const angle = angleOffset + (clippedValue - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset);
+
+  // Generate ticks
   const ticks = [];
-  const nTicks = props.nTicks || 8;
-  for (let i = 0; i < nTicks; ++i) {
-    const val = props.minValue + i * (props.maxValue - props.minValue) / (nTicks - 1);
-    ticks.push(angleOffset + (val - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset));
+  if (props.tickStep) {
+    for (let val = props.minValue; val < props.maxValue + props.tickStep * 0.5; val += props.tickStep) {
+      ticks.push(angleOffset + (val - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset));
+    }
+  } else {
+    const nTicks = props.nTicks || 8;
+    for (let i = 0; i < nTicks; ++i) {
+      const val = props.minValue + i * (props.maxValue - props.minValue) / (nTicks - 1);
+      ticks.push(angleOffset + (val - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset));
+    }
   }
 
   return (
