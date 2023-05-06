@@ -1,11 +1,22 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Box, TextField, Tooltip, Typography, useMediaQuery} from '@mui/material';
+import {Box, TextField, Typography, useMediaQuery} from '@mui/material';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import {useTheme} from '@emotion/react';
+import { styled } from '@mui/material/styles';
+
+const ValueTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} arrow />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    fontSize: 18,
+  },
+}));
 
 const Knob = (props) => {
   const angleOffset = 45;
   const [value, setValue] = useState(props.formatter(props.initialValue));
+  const [showValueTooltip, setShowValueTooltip] = useState(false);
 
   const newFloatValue = (e) => {
     const clientX = e.clientX || e.touches[0].clientX;
@@ -48,8 +59,10 @@ const Knob = (props) => {
         document.removeEventListener('mousemove', moveHandler);
       });
     } else if (e.type === 'touchstart') {
+      setShowValueTooltip(true);
       document.addEventListener('touchmove', moveHandler);
       document.addEventListener('touchend', (e) => {
+        setShowValueTooltip(false);
         document.removeEventListener('touchmove', moveHandler);
       });
     }
@@ -96,7 +109,8 @@ const Knob = (props) => {
       sx={{
         width: props.size,
         textAlign: 'center',
-        margin: 'auto'
+        margin: 'auto',
+        touchAction: 'none'
       }}
       ref={elRef}
     >
@@ -118,15 +132,21 @@ const Knob = (props) => {
             transformOrigin: `50% -${parseFloat(props.size) / 2 - 10}px`
           }} />
         ))}
-        <Box
-          sx={{
-            width: '100%', height: '100%',
-            borderRadius: '50%',
-            border: theme => `2px solid ${theme.palette.primary.main}`,
-            boxSizing: 'border-box'
-          }}
-          onMouseDown={onPointerDown} onTouchStart={onPointerDown}
-        />
+        <ValueTooltip
+          title={value}
+          open={showValueTooltip}
+          placement='top'
+        >
+          <Box
+            sx={{
+              width: '100%', height: '100%',
+              borderRadius: '50%',
+              border: theme => `2px solid ${theme.palette.primary.main}`,
+              boxSizing: 'border-box'
+            }}
+            onMouseDown={onPointerDown} onTouchStart={onPointerDown}
+          />
+        </ValueTooltip>
         <Box sx={{
           position: 'absolute',
           bottom: '20px', left: '50%',
