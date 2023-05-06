@@ -6,7 +6,7 @@ const Knob = (props) => {
   const angleOffset = 45;
   const [value, setValue] = useState(props.formatter(props.initialValue));
 
-  const newValue = (e) => {
+  const newFloatValue = (e) => {
     const clientX = e.clientX || e.touches[0].clientX;
     const clientY = e.clientY || e.touches[0].clientY;
     const cx = elRef.current.getBoundingClientRect().x + parseFloat(props.size) / 2;
@@ -14,30 +14,30 @@ const Knob = (props) => {
     // atan2 returns angle from center right with angle increasing counter clockwise
     // transform the angle to be relative to bottom center and clockwise
     const angle = (270 - Math.atan2(cy - clientY, clientX - cx) * 180 / Math.PI) % 360;
-    let value = props.minValue + (angle - angleOffset) / (360 - 2 * angleOffset) * (props.maxValue - props.minValue)  // Value from angle
+    let val = props.minValue + (angle - angleOffset) / (360 - 2 * angleOffset) * (props.maxValue - props.minValue)  // Value from angle
     if (props.step) {
       let v = props.minValue;
       let closest = null;
       while (v < props.maxValue + props.step) {
-        if (closest === null || Math.abs(value - v) < Math.abs(value - closest)) {
+        if (closest === null || Math.abs(val - v) < Math.abs(val - closest)) {
           closest = v;
         }
         v += props.step;
       }
       return closest;
     }
-    return Math.min(props.maxValue, Math.max(props.minValue, value));  // Clip between min and max values
+    return Math.min(props.maxValue, Math.max(props.minValue, val));  // Clip between min and max values
   };
 
   const update = (e) => {
-    const newVal = newValue(e);
+    const newVal = newFloatValue(e);
     setValue(props.formatter(newVal));
     if (props.onChange) {
       props.onChange(newVal);
     }
   }
 
-  const onMouseDown = (e) => {
+  const onPointerDown = (e) => {
     e.preventDefault();
     update(e);
     const moveHandler = (e) => { update(e); };
@@ -45,6 +45,8 @@ const Knob = (props) => {
     document.addEventListener('touchmove', moveHandler);
     document.addEventListener('mouseup', (e) => {
       document.removeEventListener('mousemove', moveHandler);
+    });
+    document.addEventListener('touchend', (e) => {
       document.removeEventListener('touchmove', moveHandler);
     });
   };
@@ -64,12 +66,14 @@ const Knob = (props) => {
     }
   }, [props.initialValue]);
 
-  const angle = angleOffset + (value - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset);
+  const floatValue = value === null || value === undefined ? props.minValue : parseFloat(value);
+  const clippedValue = Math.min(props.maxValue, Math.max(props.minValue, floatValue));
+  const angle = angleOffset + (clippedValue - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset);
   const ticks = [];
   const nTicks = props.nTicks || 8;
   for (let i = 0; i < nTicks; ++i) {
-    const value = props.minValue + i * (props.maxValue - props.minValue) / (nTicks - 1);
-    ticks.push(angleOffset + (value - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset));
+    const val = props.minValue + i * (props.maxValue - props.minValue) / (nTicks - 1);
+    ticks.push(angleOffset + (val - props.minValue) / (props.maxValue - props.minValue) * (360 - 2 * angleOffset));
   }
 
   return (
@@ -106,7 +110,7 @@ const Knob = (props) => {
             border: theme => `2px solid ${theme.palette.primary.main}`,
             boxSizing: 'border-box'
           }}
-          onMouseDown={onMouseDown} onTouchStart={onMouseDown}
+          onMouseDown={onPointerDown} onTouchStart={onPointerDown}
         />
         <Box sx={{
           position: 'absolute',
@@ -125,6 +129,7 @@ const Knob = (props) => {
             textAlign: 'center',
           }}
         >
+          {/*TODO: Use text only on mobile*/}
           {/*<Typography sx={{lineHeight: 1}}>{props.formatter ? props.formatter(value) : value}</Typography>*/}
           <TextField
             variant='standard'
