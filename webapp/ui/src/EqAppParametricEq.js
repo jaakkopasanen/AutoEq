@@ -19,7 +19,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import DownloadIcon from '@mui/icons-material/Download';
 import { bandwidth, downloadAsFile } from './utils';
 import InputSlider from './InputSlider';
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 const CompactTableCell = styled(TableCell)(({ theme }) => ({
   padding: `6px`,
@@ -96,7 +96,12 @@ const EqAppParametricEq = (props) => {
             size='small'
             disableClearable
           />
-          <Tooltip title='Ideally sample rate should match the device sample rate but will in most cases have only a very minor impact in the highest frequencies.'>
+          <Tooltip
+            title='Ideally sample rate should match the device sample rate but will in most cases have only a very minor impact in the highest frequencies.'
+            disableFocusListener
+            enterTouchDelay={0} leaveTouchDelay={0}
+            placement='top'
+          >
             <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: 1, right: 10, background: '#fff' }} />
           </Tooltip>
         </Grid>
@@ -116,7 +121,12 @@ const EqAppParametricEq = (props) => {
                   inputProps={{step: 1.0}}
                   error={props.config.optimizer?.maxF !== null && props.config.optimizer?.minF > props.config.optimizer?.maxF}
                 />
-                <Tooltip title='Lower bound of the optimization region. Can be left empty in most cases. Useful for example for avoiding sub-bass boost when equalizing bookshelf speakers.'>
+                <Tooltip
+                  title='Lower bound of the optimization region. Can be left empty in most cases. Useful for example for avoiding sub-bass boost when equalizing bookshelf speakers.'
+                  disableFocusListener
+                  enterTouchDelay={0} leaveTouchDelay={0}
+                  placement='top'
+                >
                   <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
                 </Tooltip>
               </Grid>
@@ -129,7 +139,12 @@ const EqAppParametricEq = (props) => {
                   label='Max frequency (Hz)' size='small' sx={{width: '100%'}} type='number'
                   inputProps={{step: 1.0}}
                 />
-                <Tooltip title='Upper bound of the optimization region. Default value should serve most cases.'>
+                <Tooltip
+                  title='Upper bound of the optimization region. Default value should serve most cases.'
+                  disableFocusListener
+                  enterTouchDelay={0} leaveTouchDelay={0}
+                  placement='top'
+                >
                   <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
                 </Tooltip>
               </Grid>

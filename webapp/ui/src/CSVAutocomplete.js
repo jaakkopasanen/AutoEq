@@ -14,6 +14,7 @@ import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
 import {useDropzone} from 'react-dropzone';
 import find from 'lodash/find';
 import {parseCSV} from './utils';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 function CSVAutocomplete(props) {
   const onDrop = useCallback((acceptedFiles) => {
@@ -80,6 +81,16 @@ function CSVAutocomplete(props) {
           <FileOpenOutlinedIcon />
         </IconButton>
       </Tooltip>
+      {props.tooltip && (
+        <Tooltip
+          title={props.tooltip}
+          disableFocusListener
+          enterTouchDelay={0} leaveTouchDelay={0}
+          placement='top'
+        >
+          <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
+        </Tooltip>
+      )}
       <input { ...getInputProps() } />
     </Box>
   );

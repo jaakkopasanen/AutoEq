@@ -27,7 +27,12 @@ const InputSlider = (props) => {
       <Grid item sx={{flexGrow: 1, width: 'auto'}} container direction='column'>
         <Grid item>
           {props.tooltip && (
-            <Tooltip title={props.tooltip}>
+            <Tooltip
+              title={props.tooltip}
+              disableFocusListener
+              enterTouchDelay={0} leaveTouchDelay={0}
+              placement='top'
+            >
               <Typography sx={{fontSize: '14px'}}>
                 {props.label}
                 <InfoOutlinedIcon sx={{width: 18, height: 18, verticalAlign: 'bottom'}} />

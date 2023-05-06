@@ -107,6 +107,7 @@ const TargetTab = (props) => {
               isOptionEqualToValue: (opt, val) => opt.label === val
             }}
             useSelect={isSm}
+            tooltip='Target frequency response. Equalizer settings will attempt to make the headphone match this. A good target is automatically selected based on measurement.'
           />
         </Grid>
       )}
@@ -125,6 +126,7 @@ const TargetTab = (props) => {
             onChange={(dataPoints) => { props.onEqParamChanged({ soundSignature: dataPoints }); }}
             value={props.soundSignature}
             minRows={5} maxRows={10}
+            tooltip='Sound signature is added to target frequency response. Write or copy-paste CSV data, open CSV file or use the current error.'
           />
           <Tooltip title='Use current error' placement='left'>
             <IconButton
@@ -327,6 +329,7 @@ const TargetTab = (props) => {
           min={1000} max={20000} step={100}
           onChange={(v) => { props.onEqParamChanged({ trebleFLower: v[0], trebleFUpper: v[1] }) }}
           inputChars={5}
+          tooltip='Lower and upper bounds for transition region after which treble smoothing and gain multiplier apply'
         />
       </Grid>
 

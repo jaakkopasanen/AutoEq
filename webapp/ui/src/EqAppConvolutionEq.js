@@ -3,7 +3,7 @@ import {Autocomplete, Grid, IconButton, Switch, TextField, Tooltip, Typography} 
 import InputSlider from './InputSlider';
 import audioBufferToWav from 'audiobuffer-to-wav';
 import DownloadIcon from '@mui/icons-material/Download';
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 const EqAppConvolutionEq = (props) => {
   const [stereo, setStereo] = useState(false);
@@ -60,7 +60,12 @@ const EqAppConvolutionEq = (props) => {
             size='small'
             disableClearable
           />
-          <Tooltip title='Sample rate must match the device sample rate'>
+          <Tooltip
+            title='Sample rate must match the device sample rate'
+            disableFocusListener
+            enterTouchDelay={0} leaveTouchDelay={0}
+            placement='top'
+          >
             <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
           </Tooltip>
         </Grid>
@@ -74,7 +79,12 @@ const EqAppConvolutionEq = (props) => {
             }}
             size='small'
           />
-          <Tooltip title='Use 16 bits unless the app requires 32 bits'>
+          <Tooltip
+            title='Use 16 bits unless the app requires 32 bits'
+            disableFocusListener
+            enterTouchDelay={0} leaveTouchDelay={0}
+            placement='top'
+          >
             <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
           </Tooltip>
         </Grid>
@@ -88,7 +98,12 @@ const EqAppConvolutionEq = (props) => {
             }}
             size='small'
           />
-          <Tooltip title='Use minimum phase always when equalizing headphones'>
+          <Tooltip
+            title='Use minimum phase always when equalizing headphones'
+            disableFocusListener
+            enterTouchDelay={0} leaveTouchDelay={0}
+            placement='top'
+          >
             <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 10, background: '#fff' }} />
           </Tooltip>
         </Grid>
@@ -118,7 +133,12 @@ const EqAppConvolutionEq = (props) => {
             <Switch checked={stereo} onChange={onStereoChanged} />
           </Grid>
           <Grid item>
-            <Tooltip title='Use stereo only if the equalizer app requires stereo impulse responses'>
+            <Tooltip
+              title='Use stereo only if the equalizer app requires stereo impulse responses'
+              disableFocusListener
+              enterTouchDelay={0} leaveTouchDelay={0}
+              placement='top'
+            >
               <InfoOutlinedIcon sx={{width: 18, height: 18, verticalAlign: 'bottom'}} />
             </Tooltip>
           </Grid>

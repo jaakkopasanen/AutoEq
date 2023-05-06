@@ -5,6 +5,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import {useDropzone} from 'react-dropzone';
 import isEqual from 'lodash/isEqual';
 import {parseCSV} from "./utils";
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 const constructCsvText = (data) => {
   let csvText = 'frequency,raw\n';
@@ -102,6 +103,16 @@ const CSVField = (props) => {
               </IconButton>
             </Tooltip>
           </Box>
+          {props.tooltip && (
+            <Tooltip
+              title={props.tooltip}
+              disableFocusListener
+              enterTouchDelay={0} leaveTouchDelay={0}
+              placement='top'
+            >
+              <InfoOutlinedIcon sx={{ width: 14, height: 14, position: 'absolute', top: -6, right: 40, background: '#fff' }} />
+            </Tooltip>
+          )}
           <input { ...getInputProps() } />
         </Box>
       </Grid>

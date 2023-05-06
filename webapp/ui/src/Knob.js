@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Box, TextField, Tooltip, Typography, useMediaQuery} from '@mui/material';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import {useTheme} from "@emotion/react";
+import {useTheme} from '@emotion/react';
 
 const Knob = (props) => {
   const angleOffset = 45;
@@ -42,14 +42,17 @@ const Knob = (props) => {
     e.preventDefault();
     update(e);
     const moveHandler = (e) => { update(e); };
-    document.addEventListener('mousemove', moveHandler);
-    document.addEventListener('touchmove', moveHandler);
-    document.addEventListener('mouseup', (e) => {
-      document.removeEventListener('mousemove', moveHandler);
-    });
-    document.addEventListener('touchend', (e) => {
-      document.removeEventListener('touchmove', moveHandler);
-    });
+    if (e.type === 'mousedown') {
+      document.addEventListener('mousemove', moveHandler);
+      document.addEventListener('mouseup', (e) => {
+        document.removeEventListener('mousemove', moveHandler);
+      });
+    } else if (e.type === 'touchstart') {
+      document.addEventListener('touchmove', moveHandler);
+      document.addEventListener('touchend', (e) => {
+        document.removeEventListener('touchmove', moveHandler);
+      });
+    }
   };
 
   const handleChange = (e) => {
@@ -168,10 +171,15 @@ const Knob = (props) => {
         )}
       </Box>
       {props.label && props.tooltip && (
-        <Tooltip title={props.tooltip}>
+        <Tooltip
+          title={props.tooltip}
+          disableFocusListener
+          enterTouchDelay={0} leaveTouchDelay={0}
+          placement='top'
+        >
           <Typography variant='caption' sx={{lineHeight: 1}}>
             {props.label}
-            <InfoOutlinedIcon sx={{width: 14, height: 14, verticalAlign: 'bottom'}} />
+            <InfoOutlinedIcon sx={{width: 16, height: 16, verticalAlign: 'middle'}} />
           </Typography>
         </Tooltip>
       )}
