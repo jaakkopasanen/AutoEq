@@ -25,7 +25,6 @@ const SmPaper = styled(Paper)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     //borderRadius: 0,
     boxShadow: 'none',
-    borderBottom: '1px dashed #aaa',
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
     paddingTop: theme.spacing(2),
@@ -451,11 +450,11 @@ const App = (props) => {
   const customPeqConfig = !!customPeq ? customPeq.config : null;
   //console.log(!!graphData, !!showInfo);
   return (
-    <Box sx={{pt: 9.5, pb: {xs: 12, md: 13}, background: '#2c2424', minHeight: '100vh', boxSizing: 'border-box'}}>
+    <Box sx={{pt: 9.5, pb: {xs: 10.25, sm: 12}, background: '#2c2424', minHeight: '100vh', boxSizing: 'border-box'}}>
       <Waves nWaves={10} />
 
       {(!!graphData && !showInfo) && (
-        <Container fixed sx={{ pl: {xs: '1px', sm: 2, md: 3}, pr: {xs: '1px', sm: 1, md: 3}, }}>
+        <Container fixed sx={{ pl: {xs: '1px', sm: 1, md: 3}, pr: {xs: '1px', sm: 1, md: 3}, }}>
           <Grid
             item
             container direction='row' alignItems='stretch'
@@ -571,19 +570,18 @@ const App = (props) => {
         </Paper>
       </Box>
 
-      <Box
-        sx={{
-          position: 'fixed', bottom: theme => theme.spacing(1),
-          width: {xs: '252px', sm: '574px', md: '594px'},
-          left: {xs: 'calc((100% - 252px) / 2)', sm: 'calc((100% - 574px) / 2)', md: 'calc((100% - 594px) / 2)'}
-        }}>
-        <Player
-          audioContext={audioContextRef.current}
-          audioDestination={gainNodeRef.current}
-          onGainChange={onGainChange}
-          onIsEqOnChange={onIsEqOnChange}
-          isEqEnabled={eqNodesRef.current.length > 0 && selectedEqualizer !== null}
-        />
+      <Box sx={{ position: 'fixed', bottom: {xs: 0, sm: 8}, left: 0, right: 0 }}>
+        <Container
+          fixed maxWidth='sm'
+        >
+          <Player
+            audioContext={audioContextRef.current}
+            audioDestination={gainNodeRef.current}
+            onGainChange={onGainChange}
+            onIsEqOnChange={onIsEqOnChange}
+            isEqEnabled={eqNodesRef.current.length > 0 && selectedEqualizer !== null}
+          />
+        </Container>
       </Box>
 
       <Box>
