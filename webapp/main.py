@@ -219,7 +219,6 @@ def equalize(req: EqualizeRequest):
     else:
         compensation = FrequencyResponse(
             name='compensation', frequency=req.compensation.frequency, raw=req.compensation.raw)
-        compensation.interpolate(f=fr.frequency)
 
     if req.sound_signature is not None:
         sound_signature = FrequencyResponse(

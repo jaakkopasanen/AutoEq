@@ -651,6 +651,7 @@ class FrequencyResponse:
         """Sets target and error curves."""
         # Copy and center compensation data
         compensation = self.__class__(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
+        compensation.interpolate()
         compensation.center()
 
         # Set target
@@ -665,7 +666,7 @@ class FrequencyResponse:
             fs=fs
         )
         if sound_signature is not None:
-            # Sound signature give, add it to target curve
+            # Sound signature given, add it to target curve
             if not np.all(sound_signature.frequency == self.frequency):
                 # Interpolate sound signature to match self on the frequency axis
                 sound_signature.interpolate(self.frequency)
