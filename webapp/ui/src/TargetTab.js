@@ -34,6 +34,8 @@ const TargetTab = (props) => {
 
   const theme = useTheme();
   const isSm = useMediaQuery(theme.breakpoints.down('md'));
+  const isLg = useMediaQuery(theme.breakpoints.up('lg'));
+  const knobSize = isLg ? 150 : 120;
 
   return (
     <Grid item xs={12} sm={12} container direction='column' rowSpacing={1}>
@@ -161,7 +163,7 @@ const TargetTab = (props) => {
             label='Bass boost'
             onChange={(v) => { props.onEqParamChanged({bassBoostGain: v}) }}
             formatter={(val) => val !== undefined ? val.toFixed(1) : ''}
-            size={120}
+            size={knobSize}
             unit='dB'
             tickStep={2.0}
             style={{margin: 'auto'}}
@@ -176,7 +178,7 @@ const TargetTab = (props) => {
             label='Bass freq'
             onChange={(v) => { props.onEqParamChanged({bassBoostFc: v}) }}
             formatter={(val) => val.toFixed(0)}
-            size={120}
+            size={knobSize}
             unit='Hz'
             tickStep={10}
             tooltip='Bass boost shelf center frequency'
@@ -190,7 +192,7 @@ const TargetTab = (props) => {
             label='Bass quality'
             onChange={(v) => { props.onEqParamChanged({bassBoostQ: v}) }}
             formatter={(val) => val.toFixed(2)}
-            size={120}
+            size={knobSize}
             tickStep={0.05}
             tooltip='Bass boost shelf quality (slope steepness)'
           />
@@ -203,7 +205,7 @@ const TargetTab = (props) => {
             label='Treble boost'
             onChange={(v) => { props.onEqParamChanged({trebleBoostGain: v}) }}
             formatter={v => v.toFixed(1)}
-            size={120}
+            size={knobSize}
             unit='dB'
             tickStep={2.0}
             tooltip='Treble boost level'
@@ -217,7 +219,7 @@ const TargetTab = (props) => {
             label='Treble freq'
             onChange={(v) => { props.onEqParamChanged({trebleBoostFc: v}) }}
             formatter={(val) => val.toFixed(0)}
-            size={120}
+            size={knobSize}
             unit='Hz'
             tickStep={1000}
             tooltip='Treble boost shelf center frequency'
@@ -231,7 +233,7 @@ const TargetTab = (props) => {
             label='Treble quality'
             onChange={(v) => { props.onEqParamChanged({trebleBoostQ: v}) }}
             formatter={(val) => val.toFixed(2)}
-            size={120}
+            size={knobSize}
             tickStep={0.05}
             tooltip='Treble boost shelf quality (slope steepness)'
           />
@@ -244,7 +246,7 @@ const TargetTab = (props) => {
             label='Max gain'
             onChange={(v) => { props.onEqParamChanged({maxGain: v}) }}
             formatter={(val) => val.toFixed(1)}
-            size={120}
+            size={knobSize}
             unit='dB'
             tickStep={3}
             tooltip="Maximum gain for EQ. Decrease max gain if you're not getting enough volume."
@@ -258,7 +260,7 @@ const TargetTab = (props) => {
             label='Tilt'
             onChange={(v) => { props.onEqParamChanged({ tilt: v }) }}
             formatter={(val) => val.toFixed(2)}
-            size={120}
+            size={knobSize}
             unit='dB/oct'
             tickStep={0.2}
             tooltip='Frequency response tilt. Positive values make sound brighter and negative darker.'
@@ -272,7 +274,7 @@ const TargetTab = (props) => {
             label='Max slope'
             onChange={(v) => { props.onEqParamChanged({ maxSlope: v }) }}
             formatter={(val) => val.toFixed(0)}
-            size={120}
+            size={knobSize}
             unit='dB/oct'
             tickStep={3}
             tooltip='Maximum slope steepness for equalizer frequency response. Try lowering the value if peaks at high frequencies sound unpleasant.'
@@ -286,7 +288,7 @@ const TargetTab = (props) => {
             label='Smoothing'
             onChange={(v) => { props.onEqParamChanged({ windowSize: v }) }}
             formatter={(val) => val.toFixed(2)}
-            size={120}
+            size={knobSize}
             unit='oct'
             tickStep={0.1}
             tooltip='Smoothing window size. Higher values make curves smoother.'
@@ -300,7 +302,7 @@ const TargetTab = (props) => {
             label='Treble smoothing'
             onChange={(v) => { props.onEqParamChanged({ trebleWindowSize: v }) }}
             formatter={(val) => val.toFixed(2)}
-            size={120}
+            size={knobSize}
             unit='oct'
             tickStep={0.3}
             tooltip='Smoothing window size above treble transition region'
@@ -314,7 +316,7 @@ const TargetTab = (props) => {
             label='Treble gain multiplier'
             onChange={(v) => { props.onEqParamChanged({ trebleGainK: v }) }}
             formatter={(val) => val.toFixed(2)}
-            size={120}
+            size={knobSize}
             tickStep={0.1}
             tooltip='Treble region gain multiplier. Useful for reducing EQ in the highest frequencies.'
           />
