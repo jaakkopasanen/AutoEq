@@ -6,7 +6,7 @@ DIR = Path().absolute()
 
 
 def write_entries_and_measurements():
-    source_ranking = ['oratory1990', 'crinacle', 'rtings', 'innerfidelity', 'headphonecom', 'referenceaudioanalyzer']
+    source_ranking = ['oratory1990', 'crinacle', 'rtings', 'innerfidelity', 'headphonecom']
     entries = dict()
     measurements = dict()
     for hp_path in DIR.parent.joinpath('measurements').glob('*/data/**/*.csv'):
@@ -108,27 +108,6 @@ def write_compensations():
             'compatible': [('innerfidelity', 'onear', 'unknown')],
             'recommended': [('innerfidelity', 'onear', 'unknown')],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
-        },
-        {
-            'name': 'referenceaudioanalyzer_hdm1_harman_over-ear_2018_wo_bass',
-            'label': 'RAA HDM-1 Harman Over-ear 2018',
-            'compatible': [('referenceaudioanalyzer', 'onear', 'HDM1')],
-            'recommended': [('referenceaudioanalyzer', 'onear', 'HDM1')],
-            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
-        },
-        {
-            'name': 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018_wo_bass',
-            'label': 'RAA HDM-X Harman Over-ear 2018',
-            'compatible': [('referenceaudioanalyzer', 'onear', 'HDM-X')],
-            'recommended': [('referenceaudioanalyzer', 'onear', 'HDM-X')],
-            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
-        },
-        {
-            'name': 'referenceaudioanalyzer_siec_harman_in-ear_2019v2_wo_bass',
-            'label': 'RAA SIEC Harman Over-ear 2019',
-            'compatible': [('referenceaudioanalyzer', 'inear', 'SIEC')],
-            'recommended': [('referenceaudioanalyzer', 'inear', 'SIEC')],
-            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
             'name': 'rtings_harman_in-ear_2019v2_wo_bass',

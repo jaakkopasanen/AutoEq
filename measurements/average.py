@@ -28,7 +28,7 @@ def average_measurements(input_dir=None, output_dir=None):
         models[norm].append(model)
 
     for norm, origs in models.items():
-        if len(origs) > 1:
+        if len(origs) > 0:
             f = FrequencyResponse.generate_frequencies()
             avg = np.zeros(len(f))
             for model in origs:

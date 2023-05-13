@@ -189,7 +189,7 @@ class Oratory1990Crawler(Crawler):
 
         return Image.open(output_file)
 
-    def process(self, item, url):
+    def process_one(self, item, url):
         if item.form == 'ignore':
             return
 
@@ -237,7 +237,7 @@ class GraphParseFailed(Exception):
 
 def main():
     crawler = Oratory1990Crawler()
-    crawler.process_new(prompt=False)
+    crawler.process(prompt=False)
 
 
 if __name__ == '__main__':

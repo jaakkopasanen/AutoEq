@@ -562,9 +562,7 @@ Results provided in this project currently have all the headphone measurements f
 - [Headphone.com](http://graphs.headphone.com/)
 - [Innerfidelity](https://www.innerfidelity.com/headphone-measurements)
 - [oratory1990](https://www.reddit.com/r/oratory1990)
-- [Reference Audio Analyzer](https://reference-audio-analyzer.pro/en/catalog-reports.php?sp_1=1&tp=1)
 - [Rtings](https://www.rtings.com/headphones)
-with the exception of Reference Audio Analyzer measurements done on the SF1 system.
 
 Results are organized by `source/target/headphone` so a Sennheiser HD 650 measured by Innerfidelity and tuned to a
 calibrated Harman target would be found in
@@ -587,13 +585,6 @@ Innerfidelity, Rtings and Headphone.com measurements have been performed on Head
 This system is not an industry standard anymore because of the rigid pinnae. The Headphone.com measurements are the old
 ones which are no longer available. These are not to be consfused with the new measurements Resolve is producing using
 GRAS system.
-
-Reference Audio Analyzer have [three different measurement systems](https://reference-audio-analyzer.pro/en/stands.php)
-none of which seem to represent human hearing particularly well. The most recent HDM-X system is close to the Head
-Acoustics HMSII.3 systems but seems to suffer a bit more in the bass range. HDM1 is clearly worse than other systems
-and the measurements done on the SF1 system are not included at all because that is a flat plate coupler. IEM measurements
-are done with what looks like a tubing coupler and these don't look very accurate. Reference Audio Analyzer
-measurements and results are a last resort.
 
 All of the results use frequency response targets that were specifically developed for this project except oratory1990
 and Crinacle's IEM measurements which use standard Harman targets. The target curves were developed by calibrating

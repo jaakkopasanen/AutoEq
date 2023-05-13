@@ -35,17 +35,23 @@ class CrinacleCrawler(Crawler):
         for false_name, true_name in hp_book.items():
             rows.append([false_name, true_name, 'onear'])
 
-        # IEM measurements name index
+        # 711 IEM measurements name index
         res = requests.get('https://crinacle.com/graphing/data/phone_book.json')
         iem_book = self.parse_book(res.json())
         for false_name, true_name in iem_book.items():
             rows.append([false_name, true_name, 'inear'])
 
-        # Gras measurments name index
+        # Gras measurements name index
         res = requests.get('https://crinacle.com/graphing/data_hp_gras/phone_book.json')
         gras_book = self.parse_book(res.json())
         for false_name, true_name in gras_book.items():
             rows.append([false_name, true_name, 'onear'])
+
+        # 4620 measurements name index
+        res = requests.get('https://crinacle.com/graphing/data_4620/phone_book.json')
+        bk4620_book = self.parse_book(res.json())
+        for false_name, true_name in bk4620_book.items():
+            rows.append([false_name, true_name, 'inear'])
 
         self.book_name_index = NameIndex(rows)
 
@@ -97,6 +103,7 @@ class CrinacleCrawler(Crawler):
 
     def get_urls(self):
         # Link source is not a web page but raw_data folder
+        # { hp_name: { rig: [ file_path1, ... ] }
         file_paths = dict()
 
         def add_to(_fp, _rig):
@@ -112,32 +119,36 @@ class CrinacleCrawler(Crawler):
         patreon_dir = os.path.join(DIR_PATH, 'raw_data')
 
         # IEMs
-        iem_source_paths = list(glob(os.path.join(patreon_dir, 'IEM Measurements (TSV)', '*.txt')))
-        for fp in iem_source_paths:
-            add_to(fp, 'iem')
+        iem_711_source_paths = list(glob(os.path.join(patreon_dir, 'IEC60318-4 IEM Measurements', '*.txt')))
+        for fp in iem_711_source_paths:
+            add_to(fp, '711')
 
         # Ears + 711
-        legacy_source_paths = list(glob(os.path.join(patreon_dir, 'Legacy Data (EARS + 711)', '*.txt')))
+        legacy_source_paths = list(glob(os.path.join(patreon_dir, 'EARS + 711 (TSV txt) (Legacy)', '*.txt')))
         for fp in legacy_source_paths:
             add_to(fp, 'legacy')
 
         # Gras
-        gras_source_paths = list(glob(os.path.join(patreon_dir, 'FR Data (CSV)', '*.txt')))
+        gras_source_paths = list(glob(os.path.join(patreon_dir, 'GRAS 43AG-7', '*.txt')))
         for fp in gras_source_paths:
             add_to(fp, 'gras')
 
+        iem_4620_source_paths = list(glob(os.path.join(patreon_dir, '4620 IEM Measurements', '*.txt')))
+        for fp in iem_4620_source_paths:
+            add_to(fp, '4620')
+
         for name, rigs_and_file_paths in file_paths.items():
             if (
-                    'iem' in rigs_and_file_paths and
+                    '711' in rigs_and_file_paths and
                     ('legacy' in rigs_and_file_paths or 'gras' in rigs_and_file_paths)
             ):
                 # Remove IEM rig measurements if Ears-711 or GRAS measurements exist
                 # This means the headphone is onear model and the files found in IEM folder are duplicates
-                del rigs_and_file_paths['iem']
+                del rigs_and_file_paths['711']
 
         return file_paths
 
-    def process(self, item, file_paths, target_dir=None):
+    def process_one(self, item, file_paths, target_dir=None):
         if item.form == 'ignore':
             return
 
@@ -204,11 +215,11 @@ class CrinacleCrawler(Crawler):
                 self.update_name_index(NameItem(false_name, None, form))
                 return
             item = NameItem(false_name, true_name, form)
-            self.process(item, file_paths, target_dir=target_dir)
+            self.process_one(item, file_paths, target_dir=target_dir)
             self.update_name_index(item)
         return callback
 
-    def process_new(self, prompt=True):
+    def process(self, prompt=True):
         """Processes all new measurements
 
         Updates name index with the new entries now found in the name index previously.
@@ -228,8 +239,11 @@ class CrinacleCrawler(Crawler):
                     elif rig == 'legacy':
                         target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'Ears-711')
                         form = 'onear'
-                    else:
-                        target_dir = os.path.join(DIR_PATH, 'data', 'inear')
+                    elif rig == '4620':
+                        target_dir = os.path.join(DIR_PATH, 'data', 'inear', 'Bruel & Kjaer 4620')
+                        form = 'inear'
+                    elif rig == '711':
+                        target_dir = os.path.join(DIR_PATH, 'data', 'inear', '711')
                         form = 'inear'
 
                     item = self.name_index.find_one(false_name=false_name)
@@ -268,7 +282,7 @@ class CrinacleCrawler(Crawler):
                     else:
                         existing = self.existing.find_one(true_name=item.true_name)
                         if not existing:
-                            self.process(item, file_paths, target_dir=target_dir)
+                            self.process_one(item, file_paths, target_dir=target_dir)
                 except Exception as err:
                     print(f'Processing failed for "{false_name}"')
                     raise err
@@ -276,6 +290,7 @@ class CrinacleCrawler(Crawler):
             print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
             print('Add them to manufacturers.tsv and run this cell again')
         self.prompts.children = prompts
+        print('N PROMPTS', len(prompts))
 
     def intermediate_name(self, false_name):
         """Gets intermediate name with false name."""
@@ -293,7 +308,7 @@ class CrinacleCrawler(Crawler):
 
 def main():
     crawler = CrinacleCrawler()
-    crawler.process_new(prompt=False)
+    crawler.process(prompt=False)
 
 
 if __name__ == '__main__':

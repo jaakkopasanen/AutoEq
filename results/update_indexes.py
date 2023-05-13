@@ -51,13 +51,6 @@ def get_urls(files):
 
 def write_recommendations():
     urls = dict()
-    # Get links to Reference Audio Analyzer results
-    urls.update(get_urls(glob(os.path.abspath(
-        os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_siec_harman_in-ear_2019v2', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(
-        os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm1_harman_over-ear_2018', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(
-        os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018', '*')))))
     # Get links to Headphone.com results
     urls.update(get_urls(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_over-ear_2018', '*')))))
@@ -89,8 +82,8 @@ def write_recommendations():
         headphones, these can be found in the
         [full index](./INDEX.md).
 
-        Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > Headphone.com >
-        Reference Audio Analyzer. This means if there are measurements from multiple sources for the same headphone
+        Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > Headphone.com.
+        This means if there are measurements from multiple sources for the same headphone
         model only the highest priority result will be shown in this list.
 
         This list has {unique} headphone models covered but if your headphone is missing you can create settings for
@@ -121,20 +114,6 @@ def get_lines(dirs, note=None, path_root=DIR_PATH):
 
 def write_full_index():
     lines = []
-    # Get links to Reference Audio Analyzer results
-    lines.extend(get_lines(
-        glob(os.path.abspath(
-            os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm-x_harman_over-ear_2018',
-                         '*'))),
-        note='by Reference Audio Analyzer, HDM-X'))
-    lines.extend(get_lines(
-        glob(os.path.abspath(
-            os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_hdm1_harman_over-ear_2018', '*'))),
-        note='by Reference Audio Analyzer, HDM1'))
-    lines.extend(get_lines(
-        glob(os.path.abspath(
-            os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'referenceaudioanalyzer_siec_harman_in-ear_2019v2', '*'))),
-        note='by Reference Audio Analyzer'))
     # Get links to Headphone.com results
     lines.extend(get_lines(
         glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_over-ear_2018', '*'))),
@@ -185,17 +164,8 @@ def write_full_index():
         f.write(re.sub('\n[ \t]+', '\n', s).strip() + '\n')
 
 
-def write_reference_audio_analyzer_index():
-    # Get links to Reference Audio Analyzer results
-    base_dir = os.path.abspath(os.path.join(DIR_PATH, 'referenceaudioanalyzer'))
-    lines = get_lines(glob(os.path.join(base_dir, '*', '*')), path_root=base_dir)
-    lines = sorted(lines, key=lambda s: s.lower())
-    with open(os.path.join(DIR_PATH, 'referenceaudioanalyzer', 'README.md'), 'w', encoding='utf-8') as f:
-        f.write('# Reference Audio Analyzer Results\n\n' + '\n'.join(lines) + '\n')
-
-
 def write_headphonecom_index():
-    # Get links to Reference Audio Analyzer results
+    # Get links to Headphone.com results
     base_dir = os.path.abspath(os.path.join(DIR_PATH, 'headphonecom'))
     lines = get_lines(glob(os.path.join(base_dir, '*', '*')), path_root=base_dir)
     lines = sorted(lines, key=lambda s: s.lower())
@@ -204,7 +174,7 @@ def write_headphonecom_index():
 
 
 def write_rtings_index():
-    # Get links to Reference Audio Analyzer results
+    # Get links to Rtings results
     base_dir = os.path.abspath(os.path.join(DIR_PATH, 'rtings'))
     lines = get_lines(glob(os.path.join(base_dir, '*', '*')), path_root=base_dir)
     lines = sorted(lines, key=lambda s: s.lower())
@@ -213,7 +183,7 @@ def write_rtings_index():
 
 
 def write_innerfidelity_index():
-    # Get links to Reference Audio Analyzer results
+    # Get links to Innerfidelity results
     base_dir = os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity'))
     lines = get_lines(glob(os.path.join(base_dir, '*', '*')), path_root=base_dir)
     lines = sorted(lines, key=lambda s: s.lower())
@@ -233,7 +203,7 @@ def write_crinacle_index():
 
 
 def write_oratory1990_index():
-    # Get links to Reference Audio Analyzer results
+    # Get links to oratory1990 results
     base_dir = os.path.abspath(os.path.join(DIR_PATH, 'oratory1990'))
     lines = get_lines(glob(os.path.join(base_dir, '*', '*')), path_root=base_dir)
     lines = sorted(lines, key=lambda s: s.lower())
@@ -251,7 +221,6 @@ def write_hesuvi_zip():
         os.path.join(DIR_PATH, 'innerfidelity'),
         os.path.join(DIR_PATH, 'rtings'),
         os.path.join(DIR_PATH, 'headphonecom'),
-        os.path.join(DIR_PATH, 'referenceaudioanalyzer'),
     ]
     zip_files = set()
     for dir_path in dir_paths:
@@ -364,7 +333,6 @@ def main():
     write_recommendations()
     write_ranking_table()
     write_full_index()
-    write_reference_audio_analyzer_index()
     write_headphonecom_index()
     write_rtings_index()
     write_innerfidelity_index()

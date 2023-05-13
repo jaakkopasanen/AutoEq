@@ -104,7 +104,7 @@ class RtingsCrawler(Crawler):
         target = FrequencyResponse(name='target', frequency=frequency, raw=target)
         return fr, target
 
-    def process(self, item, url):
+    def process_one(self, item, url):
         if item.form == 'ignore':
             return
 
@@ -185,7 +185,7 @@ class RtingsCrawler(Crawler):
 
 def main():
     crawler = RtingsCrawler()
-    crawler.process_new(prompt=False)
+    crawler.process(prompt=False)
 
 
 if __name__ == '__main__':

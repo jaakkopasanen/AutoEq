@@ -55,7 +55,7 @@ class Crawler(ABC):
             NameIndex
         """
         name_proposals = NameIndex()
-        for db in ['crinacle', 'oratory1990', 'rtings', 'referenceaudioanalyzer']:
+        for db in ['crinacle', 'oratory1990', 'rtings']:
             name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db, 'name_index.tsv'))
             name_proposals.concat(name_index)
         for db in ['innerfidelity', 'headphonecom']:
@@ -110,7 +110,7 @@ class Crawler(ABC):
         pass
 
     @abstractmethod
-    def process(self, item, url):
+    def process_one(self, item, url):
         """Downloads a single URL and processes it
 
         Args:
@@ -137,14 +137,18 @@ class Crawler(ABC):
             if self.manufacturers.find(true_name, ignore_case=False)[0] is None:
                 raise ValueError(f'Manufacturer of "{true_name}" not recognized!')
             item = NameItem(false_name, true_name, form)
-            self.process(NameItem(false_name, true_name, form), url)
+            self.process_one(NameItem(false_name, true_name, form), url)
             self.update_name_index(item)
         return callback
 
-    def process_new(self, prompt=True):
+    def process(self, prompt=True, new_only=True):
         """Processes all new measurements
 
         Updates name index with the new entries now found in the name index previously.
+
+        Args:
+            prompt: Should the user be prompted for a name?
+            new_only: Process only new items?
 
         Returns:
             None
@@ -184,9 +188,9 @@ class Crawler(ABC):
                 ).widget)
             else:
                 existing = self.existing.find_one(true_name=item.true_name)
-                if not existing:
+                if not new_only or not existing:
                     # Name found in name index but the measurement doesn't exist
-                    self.process(item, url)
+                    self.process_one(item, url)
         if len(unknown_manufacturers) > 0:
             print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
             print('Add them to manufacturers.tsv and run this cell again')

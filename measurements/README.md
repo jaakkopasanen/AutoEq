@@ -66,7 +66,6 @@ become Crinacle's patreon.
 ```bash
 python -m measurements.crinacle.crinacle_crawler
 python -m measurements.oratory1990.oratory1990_crawler
-python -m measurements.referenceaudioanalyzer.reference_audio_analyzer_crawler
 python -m measurements.rtings.rtings_crawler
 ```
 If you just downloaded the Crinacle's raw data and run the crawler like this, you need to create averaged measurements
@@ -79,8 +78,8 @@ python -m measurements.average --input_dir="measurements/crinacle/data/inear"
 
 ## Updating Measurements and Results
 1. Remove measurements that have updates
-2. Check obsolete results: `python results/prune_results.py --dry-run --crinacle --oratory1990 --referenceaudioanalyzer --rtings`
-3. Prune results: `python results/prune_results.py --crinacle --oratory1990 --referenceaudioanalyzer --rtings`
+2. Check obsolete results: `python results/prune_results.py --dry-run --crinacle --oratory1990 --rtings`
+3. Prune results: `python results/prune_results.py --crinacle --oratory1990 --rtings`
 4. Crawl new measurements: `jupyter lab measurements/crawl.ipynb`
 5. Run results update: `python results/update_results.py --new_only`
 6. Update result indexes: `python results/update_indexes.py`

@@ -8,7 +8,6 @@ import argparse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.crinacle.crinacle_crawler import CrinacleCrawler
 from measurements.oratory1990.oratory1990_crawler import Oratory1990Crawler
-from measurements.referenceaudioanalyzer.reference_audio_analyzer_crawler import ReferenceAudioAnalyzerCrawler
 from measurements.rtings.rtings_crawler import RtingsCrawler
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
@@ -21,7 +20,6 @@ def main():
                         help='Check which results would be removed without removing.')
     parser.add_argument('--crinacle', action='store_true')
     parser.add_argument('--oratory1990', action='store_true')
-    parser.add_argument('--referenceaudioanalyzer', action='store_true')
     parser.add_argument('--rtings', action='store_true')
     cli_args = parser.parse_args()
     dry_run = cli_args.dry_run
@@ -33,9 +31,6 @@ def main():
     if cli_args.oratory1990:
         dbs.append('oratory1990')
         crawlers.append(Oratory1990Crawler)
-    if cli_args.referenceaudioanalyzer:
-        dbs.append('referenceaudioanalyzer')
-        crawlers.append(ReferenceAudioAnalyzerCrawler)
     if cli_args.rtings:
         dbs.append('rtings')
         crawlers.append(RtingsCrawler)
