@@ -14,6 +14,7 @@ import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 import CSVAutocomplete from './CSVAutocomplete';
 import Knob from './Knob';
 import {useTheme} from '@emotion/react';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 const TargetTab = (props) => {
   const [showAdvanced, _setShowAdvanced] = useState(window.localStorage.getItem('showAdvanced') === 'true' || false);
@@ -48,7 +49,14 @@ const TargetTab = (props) => {
         container direction='row' justifyContent='space-between' alignItems='center' columnSpacing={1}
       >
         {!(props.soundProfiles?.length) > 0 && (
-          <Grid item><Typography variant='caption'>Profiles</Typography></Grid>
+          <Grid item>
+            <Tooltip title='Click plus button to save current parameters for later use and easier comparisons. Click the profiles to load them.'>
+              <Typography variant='caption'>
+                Profiles
+                <InfoOutlinedIcon sx={{width: 16, height: 16, verticalAlign: 'middle'}} />
+              </Typography>
+            </Tooltip>
+          </Grid>
         )}
         {props.soundProfiles.length > 0 && (
           <Grid item container direction='row' columnSpacing={1} alignItems='center' sx={{width: 'calc(100% - 40px)'}}>

@@ -15,6 +15,9 @@ def write_entries_and_measurements():
         form = parts[0]
         rig = parts[1] if len(parts) == 4 else 'unknown'
         name = parts[-2]
+        if '(sample' in name or '(serial number' in name:
+            # Skip individual samples
+            continue
         if name not in entries:
             entries[name] = []
         if name not in measurements:
@@ -37,8 +40,7 @@ def write_entries_and_measurements():
 def write_compensations():
     path = Path().resolve()
     compensations = [
-        {
-            'name': 'diffuse_field_gras_kemar',
+        {            'name': 'diffuse_field_gras_kemar',
             'label': 'Diffuse Field GRAS KEMAR',
             'compatible': [],
             'recommended': [],
