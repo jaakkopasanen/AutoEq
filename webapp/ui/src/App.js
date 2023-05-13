@@ -30,7 +30,7 @@ const SmPaper = styled(Paper)(({ theme }) => ({
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
   },
-  background: 'rgba(255, 255, 255, 0.97)',
+  background: theme.palette.background.default,
   backdropFilter: 'blur(3px)',
 }));
 
@@ -448,126 +448,119 @@ const App = (props) => {
 
   const customPeq = find(equalizersRef.current, (equalizer) => equalizer.label === 'Custom Parametric Eq');
   const customPeqConfig = !!customPeq ? customPeq.config : null;
-  //console.log(!!graphData, !!showInfo);
+
   return (
-    <Box sx={{pt: 9.5, pb: {xs: 10.25, sm: 12}, background: '#2c2424', minHeight: '100vh', boxSizing: 'border-box'}}>
+    <Box sx={{pt: 0, pb: {xs: 10.25, sm: 12}, background: '#2c2424', minHeight: '100vh', boxSizing: 'border-box'}}>
       <Waves nWaves={10} />
 
-      {(!!graphData && !showInfo) && (
-        <Container fixed sx={{ pl: {xs: '1px', sm: 1, md: 3}, pr: {xs: '1px', sm: 1, md: 3}, }}>
-          <Grid
-            item
-            container direction='row' alignItems='stretch'
-            columnSpacing={{xs: 0.5, sm: 1, md: 2}} rowSpacing={{xs: 0.5, sm: 1, md: 2}}
-          >
+      <Box sx={{padding: [1, 1.5]}}>
+        <TopBar
+          onShowInfoClicked={() => setShowInfo(!showInfo)}
+          selectedMeasurement={selectedMeasurement}
+          isMeasurementSelected={!!selectedMeasurement}
+          measurements={measurements}
+          onMeasurementSelected={onMeasurementSelected}
+          onMeasurementCreated={onMeasurementCreated}
+          onError={onError}
+          showLogo={!showInfo && graphData}
+        />
+      </Box>
 
-            <Grid item xs={12}>
-              <SmPaper sx={{ pt: 1, pl: {xs: 1, sm: 0, md: 0}, pr: {xs: 0, sm: 1, md: 0}, pb: {xs: 1, sm: 0.5, md: 0} }}>
-                <FrequencyResponseGraph
-                  data={graphData}
-                  smoothed={smoothed}
-                  onSmoothedChanged={onSmoothedChanged}
-                />
-              </SmPaper>
-            </Grid>
+      <Container fixed sx={{ pl: {xs: '1px', sm: 1, md: 3}, pr: {xs: '1px', sm: 1, md: 3}, }}>
+        <Grid
+          item
+          container direction='row' alignItems='stretch'
+          columnSpacing={{xs: 0.5, sm: 1, md: 2}} rowSpacing={{xs: 0.5, sm: 1, md: 2}}
+        >
 
-            <Grid item xs={12} md={6}>
-              <SmPaper sx={{p: {sm: 1, md: 2}}}>
-                <TargetTab
-                  selectedMeasurement={selectedMeasurement}
-
-                  soundProfiles={soundProfiles}
-                  selectedSoundProfile={selectedSoundProfile}
-                  onSoundProfileSelected={onSoundProfileSelected}
-                  onSoundProfileCreated={onSoundProfileCreated}
-                  onSoundProfileSaved={onSoundProfileSaved}
-                  onSoundProfileDeleted={onSoundProfileDeleted}
-                  captureSoundProfile={captureSoundProfile}
-
-                  compensations={compensations}
-                  selectedCompensation={selectedCompensation}
-                  onCompensationSelected={onCompensationSelected}
-                  onCompensationCreated={onCompensationCreated}
-
-                  soundSignature={soundSignature}
-                  soundSignatureSmoothingWindowSize={soundSignatureSmoothingWindowSize}
-
-                  graphData={graphData}
-                  smoothed={smoothed}
-
-                  bassBoostGain={bassBoostGainRef.current}
-                  bassBoostFc={bassBoostFcRef.current}
-                  bassBoostQ={bassBoostQRef.current}
-                  trebleBoostGain={trebleBoostGainRef.current}
-                  trebleBoostFc={trebleBoostFcRef.current}
-                  trebleBoostQ={trebleBoostQRef.current}
-                  tilt={tiltRef.current}
-                  maxGain={maxGainRef.current}
-                  windowSize={windowSizeRef.current}
-                  trebleWindowSize={trebleWindowSizeRef.current}
-                  trebleFLower={trebleFLowerRef.current}
-                  trebleFUpper={trebleFUpperRef.current}
-                  trebleGainK={trebleGainKRef.current}
-                  maxSlope={maxSlopeRef.current}
-
-                  onEqParamChanged={onEqParamChanged}
-                  onError={onError}
-                />
-              </SmPaper>
-            </Grid>
-
-            <Grid item xs={12} md={6}>
-              <SmPaper sx={{p: {sm: 1, md: 2}}}>
-                <EqTab
-                  selectedMeasurement={selectedMeasurement?.label}
-                  equalizers={equalizers}
-                  selectedEqualizer={selectedEqualizer}
-                  onEqualizerSelected={onEqualizerSelected}
-                  graphicEq={graphicEq}
-                  parametricEq={parametricEq}
-                  fixedBandEq={fixedBandEq}
-                  firAudioBuffer={firAudioBuffer}
-                  fs={fsRef.current}
-                  bitDepth={bitDepthRef.current}
-                  phase={phaseRef.current}
-                  fRes={fResRef.current}
-                  preamp={preampRef.current}
-                  onEqParamChanged={onEqParamChanged}
-                  customPeqConfig={customPeqConfig}
-                  onCustomPeqConfigChanged={onCustomPeqConfigChanged}
-                  onCustomPeqConfigFilterChanged={onCustomPeqConfigFilterChanged}
-                  onCustomPeqAddFilterClick={onCustomPeqAddFilterClick}
-                  onCustomPeqDeleteFilterClick={onCustomPeqDeleteFilterClick}
-                />
-              </SmPaper>
-            </Grid>
+          <Grid item xs={12} sx={{display: !!graphData && !showInfo ? 'block' : 'none'}}>
+            <SmPaper sx={{ pt: 1, pl: {xs: 1, sm: 0, md: 0}, pr: {xs: 0, sm: 1, md: 0}, pb: {xs: 1, sm: 0.5, md: 0} }}>
+              <FrequencyResponseGraph
+                data={graphData}
+                smoothed={smoothed}
+                onSmoothedChanged={onSmoothedChanged}
+              />
+            </SmPaper>
           </Grid>
-        </Container>
-      )}
+
+          <Grid item xs={12} md={6} sx={{display: !!graphData && !showInfo ? 'block' : 'none'}}>
+            <SmPaper sx={{p: {sm: 1, md: 2}}}>
+              <TargetTab
+                selectedMeasurement={selectedMeasurement}
+
+                soundProfiles={soundProfiles}
+                selectedSoundProfile={selectedSoundProfile}
+                onSoundProfileSelected={onSoundProfileSelected}
+                onSoundProfileCreated={onSoundProfileCreated}
+                onSoundProfileSaved={onSoundProfileSaved}
+                onSoundProfileDeleted={onSoundProfileDeleted}
+                captureSoundProfile={captureSoundProfile}
+
+                compensations={compensations}
+                selectedCompensation={selectedCompensation}
+                onCompensationSelected={onCompensationSelected}
+                onCompensationCreated={onCompensationCreated}
+
+                soundSignature={soundSignature}
+                soundSignatureSmoothingWindowSize={soundSignatureSmoothingWindowSize}
+
+                graphData={graphData}
+                smoothed={smoothed}
+
+                bassBoostGain={bassBoostGainRef.current}
+                bassBoostFc={bassBoostFcRef.current}
+                bassBoostQ={bassBoostQRef.current}
+                trebleBoostGain={trebleBoostGainRef.current}
+                trebleBoostFc={trebleBoostFcRef.current}
+                trebleBoostQ={trebleBoostQRef.current}
+                tilt={tiltRef.current}
+                maxGain={maxGainRef.current}
+                windowSize={windowSizeRef.current}
+                trebleWindowSize={trebleWindowSizeRef.current}
+                trebleFLower={trebleFLowerRef.current}
+                trebleFUpper={trebleFUpperRef.current}
+                trebleGainK={trebleGainKRef.current}
+                maxSlope={maxSlopeRef.current}
+
+                onEqParamChanged={onEqParamChanged}
+                onError={onError}
+              />
+            </SmPaper>
+          </Grid>
+
+          <Grid item xs={12} md={6} sx={{display: !!graphData && !showInfo ? 'block' : 'none'}}>
+            <SmPaper sx={{p: {sm: 1, md: 2}}}>
+              <EqTab
+                selectedMeasurement={selectedMeasurement?.label}
+                equalizers={equalizers}
+                selectedEqualizer={selectedEqualizer}
+                onEqualizerSelected={onEqualizerSelected}
+                graphicEq={graphicEq}
+                parametricEq={parametricEq}
+                fixedBandEq={fixedBandEq}
+                firAudioBuffer={firAudioBuffer}
+                fs={fsRef.current}
+                bitDepth={bitDepthRef.current}
+                phase={phaseRef.current}
+                fRes={fResRef.current}
+                preamp={preampRef.current}
+                onEqParamChanged={onEqParamChanged}
+                customPeqConfig={customPeqConfig}
+                onCustomPeqConfigChanged={onCustomPeqConfigChanged}
+                onCustomPeqConfigFilterChanged={onCustomPeqConfigFilterChanged}
+                onCustomPeqAddFilterClick={onCustomPeqAddFilterClick}
+                onCustomPeqDeleteFilterClick={onCustomPeqDeleteFilterClick}
+              />
+            </SmPaper>
+          </Grid>
+        </Grid>
+      </Container>
 
       <Box sx={{color: theme => theme.palette.grey.A400, display: (!!showInfo || !graphData) ? 'block' : 'none'}}>
         <InfoPage
           canClose={!!graphData}
           onCloseClick={() => { setShowInfo(false); }}
         />
-      </Box>
-
-      <Box sx={{position: 'fixed', top: 0, left: 0, width: '100%', padding: 0, background: '#fff'}}>
-        <Paper sx={{
-          padding: '8px 16px',
-          borderRadius: 0,
-          background: (theme) => theme.palette.background.default}}
-        >
-          <TopBar
-            onShowInfoClicked={() => setShowInfo(!showInfo)}
-            selectedMeasurement={selectedMeasurement}
-            isMeasurementSelected={!!selectedMeasurement}
-            measurements={measurements}
-            onMeasurementSelected={onMeasurementSelected}
-            onMeasurementCreated={onMeasurementCreated}
-            onError={onError}
-          />
-        </Paper>
       </Box>
 
       <Box sx={{ position: 'fixed', bottom: {xs: 0, sm: 8}, left: 0, right: 0 }}>

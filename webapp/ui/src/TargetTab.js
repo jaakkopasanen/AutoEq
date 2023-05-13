@@ -37,6 +37,10 @@ const TargetTab = (props) => {
   const isLg = useMediaQuery(theme.breakpoints.up('lg'));
   const knobSize = isLg ? 150 : 120;
 
+  if (!props.graphData) {
+    return;
+  }
+
   return (
     <Grid item xs={12} sm={12} container direction='column' rowSpacing={1}>
       <Grid

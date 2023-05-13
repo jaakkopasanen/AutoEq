@@ -16,7 +16,6 @@ import find from 'lodash/find';
 import {parseCSV} from './utils';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { FixedSizeList } from 'react-window';
-import {useTheme} from '@emotion/react';
 import Popper from "@mui/material/Popper";
 
 
@@ -146,10 +145,15 @@ const CSVAutocomplete = (props) => {
               sx={{
                 background: (theme) => 'transparent',
                 '& .MuiInputBase-root': (theme) => ({
-                  backgroundColor: isDragAccept ? 'rgba(225, 255, 214, 0.2)' : 'rgba(0, 0, 0, 0.0)',
+                  backgroundColor: isDragAccept ? 'rgba(225, 255, 214, 0.2)' : theme.palette.background.default,
                   borderRadius: '4px'
                 }),
                 '& .MuiAutocomplete-endAdornment': { display: 'none' },
+                '& .MuiInputLabel-root': (theme) => ({
+                  background: theme.palette.background.default,
+                  borderRadius: '4px',
+                  padding: '0 4px'
+                })
               }}
               {...params}
               label={props.label}
@@ -172,7 +176,7 @@ const CSVAutocomplete = (props) => {
               sx={{
                 background: (theme) => 'transparent',
                 '& .MuiInputBase-root': (theme) => ({
-                  backgroundColor: isDragAccept ? 'rgba(225, 255, 214, 0.2)' : 'rgba(0, 0, 0, 0.0)',
+                  backgroundColor: isDragAccept ? 'rgba(225, 255, 214, 0.2)' : theme.palette.background.default,
                   borderRadius: '4px'
                 }),
                 '& .MuiAutocomplete-endAdornment': { display: 'none' },

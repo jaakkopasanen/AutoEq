@@ -123,14 +123,19 @@ const Knob = (props) => {
         marginBottom: '-6px'
       }}>
         {ticks.map(a => (
-          <Box key={a} sx={{
-            position: 'absolute', bottom: 0, left: '50%',
-            transform: `translate(-50%) rotate(${a}deg)`,
-            width: '2px', height: '10px',
-            background: '#666',
-            borderRadius: '1px',
-            transformOrigin: `50% -${parseFloat(props.size) / 2 - 10}px`
-          }} />
+          <Box
+            key={a}
+            sx={{
+              position: 'absolute', bottom: 0, left: '50%',
+              width: '2px', height: '10px',
+              background: '#666',
+              borderRadius: '1px',
+              transformOrigin: `50% -${parseFloat(props.size) / 2 - 10}px`
+            }}
+            style={{
+              transform: `translate(-50%) rotate(${a}deg)`,
+            }}
+          />
         ))}
         <ValueTooltip
           title={value}
@@ -147,15 +152,19 @@ const Knob = (props) => {
             onMouseDown={onPointerDown} onTouchStart={onPointerDown}
           />
         </ValueTooltip>
-        <Box sx={{
-          position: 'absolute',
-          bottom: '20px', left: '50%',
-          width: '6px', height: '6px',
-          background: theme => theme.palette.primary.main,
-          borderRadius: '3px',
-          transform: `translate(-50%) rotate(${angle}deg)`,
-          transformOrigin: `50% -${parseFloat(props.size) / 2 - 26}px`
-        }} />
+        <Box
+          sx={{
+            position: 'absolute',
+            bottom: '20px', left: '50%',
+            width: '6px', height: '6px',
+            background: theme => theme.palette.primary.main,
+            borderRadius: '3px',
+            transformOrigin: `50% -${parseFloat(props.size) / 2 - 26}px`
+          }}
+          style={{
+            transform: `translate(-50%) rotate(${angle}deg)`,
+          }}
+        />
         <Box
           sx={{
             position: 'absolute',
@@ -165,7 +174,6 @@ const Knob = (props) => {
             textAlign: 'center',
           }}
         >
-          {/*TODO: Use text only on mobile*/}
           {isXs && (
             <Typography sx={{lineHeight: 1}}>{value}</Typography>
           )}

@@ -39,32 +39,26 @@ const TopBar = (props) => {
   const [menuAnchor, setMenuAnchor] = useState(null);
   const isMenuOpen = Boolean(menuAnchor);
 
-  if (!props.measurements) {
-    return null;
-  }
-
   const onShowInfoClick = () => {
     setMenuAnchor(null);
     props.onShowInfoClicked();
   };
 
   return (
-    <Grid
-      item container direction='row' justifyContent='space-between' alignItems='center'
-      sx={{
-        overflowY: 'visible',
-        display: 'flex',
-      }}>
-      <Grid item>
-        <Typography variant='h1' sx={{fontSize: '2rem'}}>AEq</Typography>
+    <Grid item container direction='row' justifyContent='space-between' alignItems='center'>
+      <Grid item sx={{width: 100}}>
+        <img
+          src='autoeq_logo.svg'
+          alt='AutoEq logo'
+          style={{width: 100, display: props.showLogo ? 'block' : 'none'}}
+        />
       </Grid>
       <Grid item sx={{width: {xs: '200px', sm: '400px', md: '500px'}}}>
         <CSVAutocomplete
           value={props.selectedMeasurement}
-          options={props.measurements}
+          options={props.measurements || []}
           onChange={props.onMeasurementSelected}
           autocompleteProps={{
-            sx: {background: (theme) => theme.palette.background.default},
             size: 'large',
             blurOnSelect: true,
           }}
@@ -82,7 +76,7 @@ const TopBar = (props) => {
       </Grid>
       <Grid item>
         <IconButton onClick={(e) => setMenuAnchor(!!menuAnchor ? null : e.currentTarget)}>
-          <MoreVertIcon />
+          <MoreVertIcon sx={{color: theme => theme.palette.grey.A200}} />
         </IconButton>
       </Grid>
       <Menu

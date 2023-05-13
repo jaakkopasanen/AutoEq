@@ -46,12 +46,13 @@ const InfoPage = (props) => {
         sx={{'& p': {pb: theme => theme.spacing(1)}}}
       >
         <Grid item sx={{textAlign: 'center', mt: '64px'}}>
-          <Typography variant='h1'>AutoEq</Typography>
+          <img src="/autoeq_logo.svg" style={{width: 400}} alt='AutoEq logo' />
+
           <Typography variant='body2'>four easy steps to make your headphones sound better</Typography>
         </Grid>
 
-        <Grid item container direction='column' columnSpacing={4} rowSpacing={4} justifyContent='center'>
-          <Grid item xs={12} sm={4} container direction='row' alignItems='start' sx={{textAlign: 'left'}}>
+        <Grid item container direction='row' columnSpacing={4} rowSpacing={4} justifyContent='center'>
+          <Grid item xs={12} sm={6} container direction='row' alignItems='start' sx={{textAlign: 'left'}}>
             <Grid item sx={{width: iconSize + 8}}>
               <LooksOneOutlinedIcon sx={{width: iconSize, height: iconSize}} />
             </Grid>
@@ -65,7 +66,7 @@ const InfoPage = (props) => {
             </Grid>
           </Grid>
 
-          <Grid item xs={12} sm={4} container direction='row' alignItems='start' sx={{textAlign: 'left'}}>
+          <Grid item xs={12} sm={6} container direction='row' alignItems='start' sx={{textAlign: 'left'}}>
             <Grid item sx={{width: iconSize + 8}}>
               <LooksTwoOutlinedIcon sx={{width: iconSize, height: iconSize}} />
             </Grid>
@@ -90,7 +91,7 @@ const InfoPage = (props) => {
             </Grid>
           </Grid>
 
-          <Grid item xs={12} sm={4} container direction='row' alignItems='start' sx={{textAlign: 'left'}}>
+          <Grid item xs={12} sm={6} container direction='row' alignItems='start' sx={{textAlign: 'left'}}>
             <Grid item sx={{width: iconSize + 8}}>
               <Looks3OutlinedIcon sx={{width: iconSize, height: iconSize}} />
             </Grid>
@@ -106,7 +107,7 @@ const InfoPage = (props) => {
             </Grid>
           </Grid>
 
-          <Grid item xs={12} sm={4} container direction='row' alignItems='start' sx={{textAlign: 'left'}}>
+          <Grid item xs={12} sm={6} container direction='row' alignItems='start' sx={{textAlign: 'left'}}>
             <Grid item sx={{width: iconSize + 8}}>
               <Looks4OutlinedIcon sx={{width: iconSize, height: iconSize}} />
             </Grid>
