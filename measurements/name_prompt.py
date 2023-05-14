@@ -43,7 +43,7 @@ class NamePrompt:
 
         # Form buttons
         form_buttons = []
-        forms = ['onear', 'inear', 'earbud'] if form is None else [form]
+        forms = ['over-ear', 'in-ear', 'earbud'] if form is None else [form]
         forms.append('ignore')
         for form in forms:
             btn = widgets.Button(

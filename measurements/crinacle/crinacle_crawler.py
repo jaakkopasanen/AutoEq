@@ -33,25 +33,25 @@ class CrinacleCrawler(Crawler):
         res = requests.get('https://crinacle.com/graphing/data_hp/phone_book.json')
         hp_book = self.parse_book(res.json())
         for false_name, true_name in hp_book.items():
-            rows.append([false_name, true_name, 'onear'])
+            rows.append([false_name, true_name, 'over-ear'])
 
         # 711 IEM measurements name index
         res = requests.get('https://crinacle.com/graphing/data/phone_book.json')
         iem_book = self.parse_book(res.json())
         for false_name, true_name in iem_book.items():
-            rows.append([false_name, true_name, 'inear'])
+            rows.append([false_name, true_name, 'in-ear'])
 
         # Gras measurements name index
         res = requests.get('https://crinacle.com/graphing/data_hp_gras/phone_book.json')
         gras_book = self.parse_book(res.json())
         for false_name, true_name in gras_book.items():
-            rows.append([false_name, true_name, 'onear'])
+            rows.append([false_name, true_name, 'over-ear'])
 
         # 4620 measurements name index
         res = requests.get('https://crinacle.com/graphing/data_4620/phone_book.json')
         bk4620_book = self.parse_book(res.json())
         for false_name, true_name in bk4620_book.items():
-            rows.append([false_name, true_name, 'inear'])
+            rows.append([false_name, true_name, 'in-ear'])
 
         self.book_name_index = NameIndex(rows)
 
@@ -143,7 +143,7 @@ class CrinacleCrawler(Crawler):
                     ('legacy' in rigs_and_file_paths or 'gras' in rigs_and_file_paths)
             ):
                 # Remove IEM rig measurements if Ears-711 or GRAS measurements exist
-                # This means the headphone is onear model and the files found in IEM folder are duplicates
+                # This means the headphone is over-ear model and the files found in IEM folder are duplicates
                 del rigs_and_file_paths['711']
 
         return file_paths
@@ -234,17 +234,17 @@ class CrinacleCrawler(Crawler):
                 try:
                     file_paths = [os.path.abspath(p) for p in file_paths]
                     if rig == 'gras':
-                        target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'GRAS 43AG-7')
-                        form = 'onear'
+                        target_dir = os.path.join(DIR_PATH, 'data', 'over-ear', 'GRAS 43AG-7')
+                        form = 'over-ear'
                     elif rig == 'legacy':
-                        target_dir = os.path.join(DIR_PATH, 'data', 'onear', 'Ears-711')
-                        form = 'onear'
+                        target_dir = os.path.join(DIR_PATH, 'data', 'over-ear', 'EARS + 711')
+                        form = 'over-ear'
                     elif rig == '4620':
-                        target_dir = os.path.join(DIR_PATH, 'data', 'inear', 'Bruel & Kjaer 4620')
-                        form = 'inear'
+                        target_dir = os.path.join(DIR_PATH, 'data', 'in-ear', 'Bruel & Kjaer 4620')
+                        form = 'in-ear'
                     elif rig == '711':
-                        target_dir = os.path.join(DIR_PATH, 'data', 'inear', '711')
-                        form = 'inear'
+                        target_dir = os.path.join(DIR_PATH, 'data', 'in-ear', '711')
+                        form = 'in-ear'
 
                     item = self.name_index.find_one(false_name=false_name)
                     if item and item.form == 'ignore':

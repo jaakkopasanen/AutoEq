@@ -19,7 +19,7 @@ def main():
     serious = FrequencyResponse.read_from_csv('resources/rtings_compensation_sbaf-serious.csv')
     native = FrequencyResponse.read_from_csv('resources/rtings_compensation.csv')
     avg = measurements_avg()
-    hd650 = FrequencyResponse.read_from_csv('data/onear/Sennheiser HD 650/Sennheiser HD 650.csv')
+    hd650 = FrequencyResponse.read_from_csv('data/over-ear/Sennheiser HD 650.csv')
 
     fig, ax = native.plot_graph(show=False, color=None)
     serious.plot_graph(fig=fig, ax=ax, show=False, color=None)

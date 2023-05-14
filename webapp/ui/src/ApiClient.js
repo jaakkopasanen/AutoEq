@@ -2,11 +2,6 @@ import {decode} from "base64-arraybuffer";
 import {decodeFloat16, initConvolutionNode, initParametricEqNodes, transposeArrayToObject} from "./utils";
 
 class ApiClient {
-  constructor() {
-    this.equalizeTimer = null;
-    this.equalize = this.equalize.bind(this);
-  }
-
   static async fetchMeasurements() {
     const data = await fetch('/entries').then(res => res.json());
     const measurements = [];
@@ -25,15 +20,15 @@ class ApiClient {
       if (!compensation.recommended) {
         continue;
       }
-      for (const rigPath of compensation.recommended) {
-        if (!preferredCompensations[rigPath[0]]) {
-          preferredCompensations[rigPath[0]] = {};
+      for (const measurementSource of compensation.recommended) {
+        if (!preferredCompensations[measurementSource.source]) {
+          preferredCompensations[measurementSource.source] = {};
         }
-        if (!preferredCompensations[rigPath[0]][rigPath[1]]) {
-          preferredCompensations[rigPath[0]][rigPath[1]] = {};
+        if (!preferredCompensations[measurementSource.source][measurementSource.form]) {
+          preferredCompensations[measurementSource.source][measurementSource.form] = {};
         }
-        if (!preferredCompensations[rigPath[0]][rigPath[1]][rigPath[2]]) {
-          preferredCompensations[rigPath[0]][rigPath[1]][rigPath[2]] = compensation.label;
+        if (!preferredCompensations[measurementSource.source][measurementSource.form][measurementSource.rig]) {
+          preferredCompensations[measurementSource.source][measurementSource.form][measurementSource.rig] = compensation.label;
         }
       }
     }

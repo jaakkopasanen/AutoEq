@@ -16,7 +16,7 @@ from measurements.crawler import Crawler
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 # Compensation
-ONEAR_TARGET = FrequencyResponse.read_from_csv(
+OVEREAR_TARGET = FrequencyResponse.read_from_csv(
     os.path.join(DIR_PATH, 'resources', 'rtings_compensation_w_bass.csv')
 )
 INEAR_TARGET = FrequencyResponse.read_from_csv(
@@ -155,12 +155,12 @@ class RtingsCrawler(Crawler):
             target.interpolate()
             target = target
             print(f'Using target for {fr.name}')
-        elif item.form == 'inear':
+        elif item.form == 'in-ear':
             # Using in-ear target response
             target = INEAR_TARGET
         else:
             # Using on-ear or earbud target response
-            target = ONEAR_TARGET
+            target = OVEREAR_TARGET
         target.center()
         fr.raw += target.raw
         fr.center()

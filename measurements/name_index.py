@@ -64,7 +64,7 @@ class NameIndex:
             path_components = cls.split_path(os.path.abspath(file))
             name = path_components[-1]
             for component in path_components:
-                if component in ['onear', 'inear', 'earbud']:
+                if component in ['over-ear', 'in-ear', 'earbud']:
                     form = component
             name = re.sub(r'\.[tc]sv$', '', name)
             rows.append([name, name, form])

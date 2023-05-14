@@ -38,7 +38,7 @@ false_name	true_name	form
 64 Audio N8 M15	64 Audio N8 (m15 Apex module)	inear
 64 Audio N8 M15 (CIEM)	64 Audio N8 (CIEM, m15 Apex module)	inear
 64 Audio Nio M15	64 Audio Nio (m15 Apex module)	inear
-700	Bose Noise Cancelling Headphones 700	onear
+700	Bose Noise Cancelling Headphones 700	over-ear
 747	Advanced 747	inear
 747 NC	Advanced 747 NC	inear
 75t	Jabra Elite 75t	inear
@@ -48,11 +48,11 @@ false_name	true_name	form
 8SL	qdc 8SL (sample 1)	inear
 8SL S2	qdc 8SL (sample 2)	inear
 8SS	qdc 8SS	inear
-99 Classic	Meze Audio 99 Classic	onear
-99 Neo	Meze 99 Neo	onear
+99 Classic	Meze Audio 99 Classic	over-ear
+99 Neo	Meze 99 Neo	over-ear
 A-HE03	Whizzer A-HE03 Kylin	inear
 A10	CCA A10	inear
-A1000Z	Audio-Technica ATH-A1000Z	onear
+A1000Z	Audio-Technica ATH-A1000Z	over-ear
 A12t	64 Audio A12t	inear
 A12t C	64 Audio A12t (CIEM) (sample 1)	inear
 A12t C S2	64 Audio A12t (CIEM) (sample 2)	inear
@@ -62,8 +62,8 @@ A18S	64 Audio A18s (universal) (sample 1)	inear
 A18S C	64 Audio A18s (CIEM)	inear
 A18S S2	64 Audio A18s (universal) (sample 2)	inear
 A2 Pro	LZ Hi-Fi Audio A2 Pro	inear
-A2000X	Audio-Technica ATH-A2000X	onear
-A2000Z	Audio-Technica ATH-A2000Z	onear
+A2000X	Audio-Technica ATH-A2000X	over-ear
+A2000Z	Audio-Technica ATH-A2000Z	over-ear
 A2e	64 Audio A2e	inear
 A2H V2	AAW A2H V2	inear
 A3000	Final Audio A3000	inear
@@ -77,7 +77,7 @@ A4 Pro Black-Red	LZ Hi-Fi Audio A4 Pro (black nozzle, red vent)	inear
 A4 Pro Blue-Black	LZ Hi-Fi Audio A4 Pro (blue nozzle, black vent)	inear
 A4 Pro Red-Black	LZ Hi-Fi Audio A4 Pro (red nozzle, black vent)	inear
 A4 Pro Silver-Black	LZ Hi-Fi Audio A4 Pro (silver nozzle, black vent)	inear
-A40 TR	ASTRO Gaming A40 TR	onear
+A40 TR	ASTRO Gaming A40 TR	over-ear
 A4000	Final Audio A4000	inear
 A4t	64 Audio A4t	inear
 A6t	64 Audio A6t	inear
@@ -88,12 +88,12 @@ A8	Moondrop A8	inear
 A8 BLON	BLON BL-A8 Prometheus	inear
 A8 Cardas	Cardas A8	inear
 A8000	Final Audio A8000	inear
-A900X	Audio-Technica ATH-A900X	onear
+A900X	Audio-Technica ATH-A900X	over-ear
 A91	Fidue A91 Sirius	inear
-A990Z	Audio-Technica ATH-A990Z	onear
-AB-1266 Phi	Abyss AB-1266 Phi	onear
-AB-1266 Phi CC	Abyss AB-1266 Phi CC	onear
-AB-1266 Phi CC Lite	Abyss AB-1266 Phi CC Lite	onear
+A990Z	Audio-Technica ATH-A990Z	over-ear
+AB-1266 Phi	Abyss AB-1266 Phi	over-ear
+AB-1266 Phi CC	Abyss AB-1266 Phi CC	over-ear
+AB-1266 Phi CC Lite	Abyss AB-1266 Phi CC Lite	over-ear
 Ace		ignore
 Ace 00	Aroma Audio Ace (off-off)	inear
 Ace 02	Aroma Audio Ace (off-on)	inear
@@ -103,35 +103,35 @@ ACH	AAW ACH	inear
 ACME 8	Fearless Audio ACME 8	inear
 Acoustic Deer	Heartfield Acoustic Deer	inear
 Active65	Jabra Elite Active 65t	inear
-AD1000X	Audio-Technica ATH-AD1000X	onear
-AD2000	Audio-Technica ATH-AD2000	onear
-AD500X	Audio-Technica ATH-AD500X	onear
-AD700X	Audio-Technica ATH-AD700X	onear
-AD900X	Audio-Technica ATH-AD900X	onear
+AD1000X	Audio-Technica ATH-AD1000X	over-ear
+AD2000	Audio-Technica ATH-AD2000	over-ear
+AD500X	Audio-Technica ATH-AD500X	over-ear
+AD700X	Audio-Technica ATH-AD700X	over-ear
+AD900X	Audio-Technica ATH-AD900X	over-ear
 Adagio 3	Final Audio III	inear
 Adonis	Queen of Audio Adonis	inear
-ADX5000	Audio-Technica ATH-ADX5000	onear
-ADX5000 (A2000Z AD2000X)	Audio-Technica ATH-ADX5000 (Yaxi A2000Z,AD2000X earpads)	onear
-ADX5000 (Dekoni Elite Sheepskin)	Audio-Technica ATH-ADX5000 (Dekoni elite sheepskin earpads)	onear
-ADX5000 (Dekoni fensheep)	Audio-Technica ATH-ADX5000 (Dekoni fenestrated sheepskin earpads)	onear
-Aeolus	ZMF Aeolus	onear
-Aeolus (perf Universe suede)	ZMF Aeolus (universal perforated suede earpads)	onear
-Aeolus UP	ZMF Aeolus (universal perforated earpads)	onear
-Aeon 2 Closed	Dan Clark Audio Aeon 2 Closed	onear
-Aeon 2 Noire	Dan Clark Audio Aeon 2 Noire	onear
-Aeon 2 Open	Dan Clark Audio Aeon 2 Open	onear
-Aeon Flow Closed (Medium damping)	Dan Clark Audio Aeon Flow Closed (white filter with one notch)	onear
-Aeon Flow Closed (Minimum damping)	Dan Clark Audio Aeon Flow Closed (black filter)	onear
-Aeon Flow Open	Dan Clark Audio Aeon Flow Open	onear
+ADX5000	Audio-Technica ATH-ADX5000	over-ear
+ADX5000 (A2000Z AD2000X)	Audio-Technica ATH-ADX5000 (Yaxi A2000Z,AD2000X earpads)	over-ear
+ADX5000 (Dekoni Elite Sheepskin)	Audio-Technica ATH-ADX5000 (Dekoni elite sheepskin earpads)	over-ear
+ADX5000 (Dekoni fensheep)	Audio-Technica ATH-ADX5000 (Dekoni fenestrated sheepskin earpads)	over-ear
+Aeolus	ZMF Aeolus	over-ear
+Aeolus (perf Universe suede)	ZMF Aeolus (universal perforated suede earpads)	over-ear
+Aeolus UP	ZMF Aeolus (universal perforated earpads)	over-ear
+Aeon 2 Closed	Dan Clark Audio Aeon 2 Closed	over-ear
+Aeon 2 Noire	Dan Clark Audio Aeon 2 Noire	over-ear
+Aeon 2 Open	Dan Clark Audio Aeon 2 Open	over-ear
+Aeon Flow Closed (Medium damping)	Dan Clark Audio Aeon Flow Closed (white filter with one notch)	over-ear
+Aeon Flow Closed (Minimum damping)	Dan Clark Audio Aeon Flow Closed (black filter)	over-ear
+Aeon Flow Open	Dan Clark Audio Aeon Flow Open	over-ear
 Aether	Lime Ears Aether	inear
 Aether Bass	Lime Ears Aether (bass)	inear
 Aether R	Lime Ears Aether R	inear
 Aether R Bass	Lime Ears Aether R (bass)	inear
 AG2	Audio Genetic AG2	inear
-AH-D5000	Denon AH-D5000	onear
-AH-D5200	Denon AH-D5200	onear
-AH-D7200	Denon AH-D7200	onear
-AH-D9200	Denon AH-D9200	onear
+AH-D5000	Denon AH-D5000	over-ear
+AH-D5200	Denon AH-D5200	over-ear
+AH-D7200	Denon AH-D7200	over-ear
+AH-D9200	Denon AH-D9200	over-ear
 Air 2	FitEar Air 2	inear
 AirPods Max	Apple AirPods Max	onear
 AirPods Pro	Apple AirPods Pro (sample 1)	inear

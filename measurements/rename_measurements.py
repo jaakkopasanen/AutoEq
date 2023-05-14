@@ -151,7 +151,7 @@ def rename_groups(databases=DBS):
                     d = path
                     while True:
                         d, f = os.path.split(d)
-                        if f in ['onear', 'inear', 'earbud']:
+                        if f in ['over-ear', 'in-ear', 'earbud']:
                             form = f
                             break
                     name_index.add(NameItem(false_name=old_name, true_name=new_name, form=form))

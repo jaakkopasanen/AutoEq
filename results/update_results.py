@@ -20,7 +20,7 @@ def main():
     arg_parser.add_argument('--oratory1990', action='store_true', help='Process oratory1990 measurements?')
     arg_parser.add_argument('--rtings', action='store_true', help='Process Rtings measurements?')
     arg_parser.add_argument('--crinacle', action='store_true', help='Process Crinacle measurements?')
-    arg_parser.add_argument('--onear', action='store_true', help='Process on-ear measurements?')
+    arg_parser.add_argument('--overear', action='store_true', help='Process on-ear measurements?')
     arg_parser.add_argument('--inear', action='store_true', help='Process in-ear measurements?')
     arg_parser.add_argument('--earbud', action='store_true', help='Process ear bud measurements?')
     cli_args = arg_parser.parse_args()
@@ -32,7 +32,7 @@ def main():
     rtings = bool(cli_args.rtings)
     crinacle = bool(cli_args.crinacle)
 
-    onear = bool(cli_args.onear)
+    overear = bool(cli_args.overear)
     inear = bool(cli_args.inear)
     earbud = bool(cli_args.earbud)
 
@@ -42,20 +42,21 @@ def main():
         oratory1990 = True
         rtings = True
         crinacle = True
-    if not onear and not inear and not earbud:
-        onear = True
+    if not overear and not inear and not earbud:
+        overear = True
         inear = True
         earbud = True
 
-    innerfidelity_overear = os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'resources', 'innerfidelity_harman_over-ear_2018_wo_bass.csv')
-    innerfidelity_inear = os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'resources', 'innerfidelity_harman_in-ear_2019v2_wo_bass.csv')
-    headphonecom_overear = os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'resources', 'headphonecom_harman_over-ear_2018_wo_bass.csv')
-    headphonecom_inear = os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'resources', 'headphonecom_harman_in-ear_2019v2_wo_bass.csv')
-    rtings_overear = os.path.join(ROOT_DIR, 'measurements', 'rtings', 'resources', 'rtings_harman_over-ear_2018_wo_bass.csv')
-    rtings_inear = os.path.join(ROOT_DIR, 'measurements', 'rtings', 'resources', 'rtings_harman_in-ear_2019v2_wo_bass.csv')
-    harman_inear = os.path.join(ROOT_DIR, 'compensation', 'harman_in-ear_2019v2_wo_bass.csv')
+    innerfidelity_overear = os.path.join(ROOT_DIR, 'compensation', 'innerfidelity_harman_over-ear_2018_wo_bass.csv')
+    innerfidelity_inear = os.path.join(ROOT_DIR, 'compensation', 'innerfidelity_harman_in-ear_2019v2_wo_bass.csv')
+    headphonecom_overear = os.path.join(ROOT_DIR, 'compensation', 'headphonecom_harman_over-ear_2018_wo_bass.csv')
+    headphonecom_inear = os.path.join(ROOT_DIR, 'compensation', 'headphonecom_harman_in-ear_2019v2_wo_bass.csv')
+    rtings_overear = os.path.join(ROOT_DIR, 'compensation', 'rtings_harman_over-ear_2018_wo_bass.csv')
+    rtings_inear = os.path.join(ROOT_DIR, 'compensation', 'rtings_harman_in-ear_2019v2_wo_bass.csv')
+    autoeq_inear = os.path.join(ROOT_DIR, 'compensation', 'autoeq_in-ear.csv')
     harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
-    crinacle_ears711_overear = os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'resources', 'crinacle_harman_over-ear_2018_wo_bass.csv')
+    crinacle_ears711_overear = os.path.join(ROOT_DIR, 'compensation', 'crinacle_harman_over-ear_2018_wo_bass.csv')
+    diffuse_field_5128_tilted = os.path.join(ROOT_DIR, 'compensation', 'diffuse_field_5128_-1dBpoct.csv')
     eq_kwargs = {
         'new_only': new_only,
         'parametric_eq': True,
@@ -65,149 +66,153 @@ def main():
         'fs': [44100, 48000],
         'thread_count': 0,
     }
-    onear_kwargs = eq_kwargs.copy()
-    onear_kwargs.update({'bass_boost_gain': 4.0})
-    inear_kwargs = eq_kwargs.copy()
-    inear_kwargs.update({'bass_boost_gain': 6.0})
-    earbud_kwargs = eq_kwargs.copy()
-    earbud_kwargs.update({'bass_boost_gain': 0.0})
+    bass0 = {'bass_boost_fc': 105, 'bass_boost_q': 0.7, 'bass_boost_gain': 0.0}
+    bass6 = {'bass_boost_fc': 105, 'bass_boost_q': 0.7, 'bass_boost_gain': 6.0}
+    bass95 = {'bass_boost_fc': 105, 'bass_boost_q': 0.7, 'bass_boost_gain': 95.0}
 
     if innerfidelity:
-        if onear:
-            print('\nProcessing Innerfidelity on-ear measurements...')
+        if overear:
+            print('\nProcessing Innerfidelity over-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'onear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'innerfidelity_harman_over-ear_2018'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'over-ear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'Innerfidelity', 'over-ear'),
                 compensation=innerfidelity_overear,
-                **onear_kwargs
+                **bass6, **eq_kwargs
             )
 
         if inear:
             print('\nProcessing Innerfidelity in-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'inear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'innerfidelity_harman_in-ear_2019v2'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'in-ear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'Innerfidelity', 'in-ear'),
                 compensation=innerfidelity_inear,
-                **inear_kwargs
+                **bass95, **eq_kwargs
             )
 
         if earbud:
             print('\nProcessing Innerfidelity earbud measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'innerfidelity', 'data', 'earbud'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'innerfidelity', 'innerfidelity_harman_in-ear_2019v2'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'Innerfidelity', 'earbud'),
                 compensation=innerfidelity_inear,
-                **earbud_kwargs
+                **bass0, **eq_kwargs
             )
 
     if headphonecom:
-        if onear:
+        if overear:
             print('\nProcessing Headphone.com on-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'onear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'headphonecom', 'headphonecom_harman_over-ear_2018'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'over-ear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'Headphone.com Legacy', 'over-ear'),
                 compensation=headphonecom_overear,
-                **onear_kwargs
+                **bass6, **eq_kwargs
             )
 
         if inear:
             print('\nProcessing Headphone.com in-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'inear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'headphonecom', 'headphonecom_harman_in-ear_2019v2'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'in-ear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'Headphone.com Legacy', 'in-ear'),
                 compensation=headphonecom_inear,
-                **inear_kwargs
+                **bass95, **eq_kwargs
             )
 
         if earbud:
             print('\nProcessing Headphone.com earbud measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'headphonecom', 'data', 'earbud'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'headphonecom', 'headphonecom_harman_in-ear_2019v2'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'Headphone.com Legacy', 'earbud'),
                 compensation=headphonecom_inear,
-                **earbud_kwargs
+                **bass0, **eq_kwargs
             )
 
     if oratory1990:
-        if onear:
+        if overear:
             print('\nProcessing oratory1990 on-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'onear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'over-ear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'over-ear'),
                 compensation=harman_overear,
-                **onear_kwargs
+                **bass6, **eq_kwargs
             )
 
         if inear:
             print('\nProcessing oratory1990 in-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'inear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2'),
-                compensation=harman_inear,
-                **inear_kwargs
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'in-ear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'in-ear'),
+                compensation=autoeq_inear,
+                **bass95, **eq_kwargs
             )
 
         if earbud:
             print('\nProcessing oratory1990 ear bud measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'oratory1990', 'data', 'earbud'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2'),
-                compensation=harman_inear,
-                **earbud_kwargs
+                output_dir=os.path.join(ROOT_DIR, 'results', 'oratory1990', 'earbud'),
+                compensation=autoeq_inear,
+                **bass0, **eq_kwargs
             )
 
     if rtings:
-        if onear:
+        if overear:
             # Rtings on-ear Avg
             print('\nProcessing Rtings on-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'onear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'rtings_harman_over-ear_2018'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'over-ear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'Rtings', 'over-ear'),
                 compensation=rtings_overear,
-                **onear_kwargs
+                **bass6, **eq_kwargs
             )
 
         if inear:
             print('\nProcessing Rtings in-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'inear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'rtings_harman_in-ear_2019v2'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'in-ear'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'Rtings', 'in-ear'),
                 compensation=rtings_inear,
-                **inear_kwargs
+                **bass95, **eq_kwargs
             )
 
         if earbud:
             print('\nProcessing Rtings earbud measurements...')
             batch_processing(
                 input_dir=os.path.join(ROOT_DIR, 'measurements', 'rtings', 'data', 'earbud'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'rtings', 'rtings_harman_in-ear_2019v2'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'Rtings', 'earbud'),
                 compensation=rtings_inear,
-                **earbud_kwargs
+                **bass0, **eq_kwargs
             )
 
     if crinacle:
-        if onear:
+        if overear:
             print('\nProcessing Crinacle Ears-711 on-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear', 'Ears-711'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'ears-711_harman_over-ear_2018'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'over-ear', 'EARS + 711'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'EARS + 711 over-ear'),
                 compensation=crinacle_ears711_overear,
-                **onear_kwargs
+                **bass6, **eq_kwargs
             )
             print('\nProcessing Crinacle GRAS 43AG-7 on-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'onear', 'GRAS 43AG-7'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'gras_43ag-7_harman_over-ear_2018'),
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'over-ear', 'GRAS 43AG-7'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'GRAS 43AG-7 over-ear'),
                 compensation=harman_overear,
-                **onear_kwargs
+                **bass6, **eq_kwargs
             )
         if inear:
-            print('\nProcessing Crinacle in-ear measurements...')
+            print('\nProcessing Crinacle 711 in-ear measurements...')
             batch_processing(
-                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'inear'),
-                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2'),
-                compensation=harman_inear,
-                **inear_kwargs
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'in-ear', '711'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', '711 in-ear'),
+                compensation=autoeq_inear,
+                **bass95, **eq_kwargs
+            )
+            print('\nProcessing Crinacle 4620 in-ear measurements...')
+            batch_processing(
+                input_dir=os.path.join(ROOT_DIR, 'measurements', 'crinacle', 'data', 'in-ear', 'Bruel & Kjaer 4620'),
+                output_dir=os.path.join(ROOT_DIR, 'results', 'crinacle', 'Bruel & Kjaer 4620 in-ear'),
+                compensation=diffuse_field_5128_tilted,
+                **bass0, **eq_kwargs
             )
 
 

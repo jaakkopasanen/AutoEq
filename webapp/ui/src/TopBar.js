@@ -69,7 +69,11 @@ const TopBar = (props) => {
           renderOption={(liProps, option, style) => (
             <Box component='li' { ...liProps } style={{ ...style, top: (style.top) + 8, borderBottom: '1px solid #eee' }}>
               <Typography>{option.label}</Typography>
-              <Typography variant='caption' sx={{whiteSpace: 'nowrap', ml: 'auto'}}>by {option.source}</Typography>
+              <Typography variant='caption' sx={{whiteSpace: 'nowrap', ml: 'auto', textAlign: 'right'}}>
+                by {option.source}
+                {option.rig !== 'unknown' && <br />}
+                {option.rig !== 'unknown' && (option.rig)}
+              </Typography>
             </Box>
           )}
         />

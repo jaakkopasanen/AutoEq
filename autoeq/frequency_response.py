@@ -24,7 +24,7 @@ from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_ITERATIONS, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
-    HARMAN_ONEAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, \
+    HARMAN_OVEREAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, \
     DEFAULT_BIQUAD_OPTIMIZATION_F_STEP, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, \
     DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
 from autoeq.peq import PEQ, LowShelf, HighShelf, Peaking
@@ -1247,7 +1247,7 @@ class FrequencyResponse:
             plt.close(fig)
         return fig, ax
 
-    def harman_onear_preference_score(self):
+    def harman_overear_preference_score(self):
         """Calculates Harman preference score for over-ear and on-ear headphones.
 
         Returns:
@@ -1256,7 +1256,7 @@ class FrequencyResponse:
             - slope: Slope of linear regression of error
         """
         fr = self.copy()
-        fr.interpolate(HARMAN_ONEAR_PREFERENCE_FREQUENCIES)
+        fr.interpolate(HARMAN_OVEREAR_PREFERENCE_FREQUENCIES)
         sl = np.logical_and(fr.frequency >= 50, fr.frequency <= 10000)
         x = fr.frequency[sl]
         y = fr.error[sl]

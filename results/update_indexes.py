@@ -252,7 +252,7 @@ def write_hesuvi_zip():
     zip_object.close()
 
 
-def ranking_row(file_path, target, form='onear'):
+def ranking_row(file_path, target, form='over-ear'):
     dir_path = os.path.abspath(os.path.join(file_path, os.pardir))
     rel_path = os.path.relpath(dir_path, os.path.join(ROOT_DIR, 'results'))
     url = form_url(rel_path)
@@ -261,10 +261,10 @@ def ranking_row(file_path, target, form='onear'):
         return None
     fr.interpolate()
     fr.compensate(target, bass_boost_gain=0.0)  # Pre-computed results are with Harman target without bass
-    if form == 'onear':
-        score, std, slope = fr.harman_onear_preference_score()
+    if form == 'over-ear':
+        score, std, slope = fr.harman_overear_preference_score()
         return [f'[{fr.name}]({url})', f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}']
-    elif form == 'inear':
+    elif form == 'in-ear':
         score, std, slope, mean = fr.harman_inear_preference_score()
         return [f'[{fr.name}]({url})', f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}', f'{mean:.2f}']
 
@@ -275,7 +275,7 @@ def write_ranking_table():
     harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018.csv')
     harman_overear = FrequencyResponse.read_from_csv(harman_overear)
 
-    onear_rows = []
+    overear_rows = []
     # Over-ear
     files = dict()
     for fp in glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*', '*.csv')):
@@ -283,11 +283,11 @@ def write_ranking_table():
     for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018', '*', '*.csv')):
         files[os.path.split(fp)[1]] = fp
     for fp in files.values():
-        row = ranking_row(fp, harman_overear, 'onear')
+        row = ranking_row(fp, harman_overear, 'over-ear')
         if row:
-            onear_rows.append(row)
-    onear_rows = sorted(onear_rows, key=lambda row: float(row[1]), reverse=True)
-    onear_str = tabulate(onear_rows, headers=['Name', 'Score', 'STD (dB)', 'Slope'], tablefmt='github')
+            overear_rows.append(row)
+    overear_rows = sorted(overear_rows, key=lambda row: float(row[1]), reverse=True)
+    overear_str = tabulate(overear_rows, headers=['Name', 'Score', 'STD (dB)', 'Slope'], tablefmt='github')
 
     inear_rows = []
     # In-ear
@@ -297,7 +297,7 @@ def write_ranking_table():
     for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2', '*', '*.csv')):
         files[os.path.split(fp)[1]] = fp
     for fp in files.values():
-        row = ranking_row(fp, harman_inear, 'inear')
+        row = ranking_row(fp, harman_inear, 'in-ear')
         if row:
             inear_rows.append(row)
     inear_str = sorted(inear_rows, key=lambda row: float(row[1]), reverse=True)
@@ -319,7 +319,7 @@ def write_ranking_table():
     preference scoring developed by Sean Olive et al.
     
     ## Over-ear Headphones    
-    {onear_str}
+    {overear_str}
 
     ## In-ear Headphones
     {inear_str}

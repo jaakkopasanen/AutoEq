@@ -71,9 +71,10 @@ python -m measurements.rtings.rtings_crawler
 If you just downloaded the Crinacle's raw data and run the crawler like this, you need to create averaged measurements
 too.
 ```bash
-python -m measurements.average --input_dir="measurements/crinacle/data/onear/GRAS 43AG-7"
-python -m measurements.average --input_dir="measurements/crinacle/data/onear/Ears-711"
-python -m measurements.average --input_dir="measurements/crinacle/data/inear"
+python -m measurements.average --input_dir="measurements/crinacle/data/over-ear/GRAS 43AG-7"
+python -m measurements.average --input_dir="measurements/crinacle/data/over-ear/EARS + 711"
+python -m measurements.average --input_dir="measurements/crinacle/data/in-ear/711"
+python -m measurements.average --input_dir="measurements/crinacle/data/in-ear/Bruel & Kjaer 4620"
 ```
 
 ## Updating Measurements and Results
