@@ -10,6 +10,15 @@ AutoEq [Github page](https://github.com/jaakkopasanen/AutoEq) also serves as a d
 measurements, pre-computed results and has documentation about different equalizers and how the implementation works.
 
 ### Updates
+#### 3.0.0
+* Added `--input-file`, `--max-slope` and `--sound-signature-smoothing-window-size` parameters.
+* Fixed crashing with non-standard sized compensation and measurement data.
+* Fixed parametric eq optimizer producing filters outside of specified frequency range.
+* Fixed parametric eq optimizer crashing without any free optimizeable parameters.
+* Added defaul values for some args in parametric eq optimizer.
+* Added more parametric eq optimizer configs.
+* Introduced API breaking naming changes.
+
 #### 2.2.0
 Added `--preamp` parameter
 
