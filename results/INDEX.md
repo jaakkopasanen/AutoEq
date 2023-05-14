@@ -1612,7 +1612,7 @@ from the same source.
 - [Final Audio Pandora Hope 4](./Innerfidelity/over-ear/Final%20Audio%20Pandora%20Hope%204) by Innerfidelity
 - [Final Audio Sonorous VIII](./crinacle/GRAS%2043AG-7%20over-ear/Final%20Audio%20Sonorous%20VIII) by Crinacle, GRAS 43AG-7
 - [Final Audio Sonorous X](./crinacle/GRAS%2043AG-7%20over-ear/Final%20Audio%20Sonorous%20X) by Crinacle, GRAS 43AG-7
-- [Final Audio UX3000 (B, ANC on)](./oratory1990/in-ear/Final%20Audio%20UX3000%20(B,%20ANC%20on)) by oratory1990
+- [Final Audio UX3000 (B, ANC on)](./oratory1990/over-ear/Final%20Audio%20UX3000%20(B,%20ANC%20on)) by oratory1990
 - [fineEars TSH-HR1000K](./crinacle/711%20in-ear/fineEars%20TSH-HR1000K) by Crinacle, 711
 - [Fir Audio M2 (sample 1)](./crinacle/711%20in-ear/Fir%20Audio%20M2%20(sample%201)) by Crinacle, 711
 - [Fir Audio M2 (sample 2)](./crinacle/711%20in-ear/Fir%20Audio%20M2%20(sample%202)) by Crinacle, 711
@@ -2365,7 +2365,6 @@ from the same source.
 - [Koss KSC75](./Innerfidelity/over-ear/Koss%20KSC75) by Innerfidelity
 - [Koss KSC75](./oratory1990/over-ear/Koss%20KSC75) by oratory1990
 - [Koss KSC75](./Rtings/over-ear/Koss%20KSC75) by Rtings
-- [Koss KSC75X (Yaxi arpads)](./oratory1990/over-ear/Koss%20KSC75X%20(Yaxi%20arpads)) by oratory1990
 - [Koss KSC75X (Yaxi earpads)](./oratory1990/over-ear/Koss%20KSC75X%20(Yaxi%20earpads)) by oratory1990
 - [Koss Porta Pro (sample 1)](./Headphone.com%20Legacy/over-ear/Koss%20Porta%20Pro%20(sample%201)) by Headphone.com (Legacy)
 - [Koss Porta Pro (sample 2)](./Headphone.com%20Legacy/over-ear/Koss%20Porta%20Pro%20(sample%202)) by Headphone.com (Legacy)

@@ -12,7 +12,7 @@ authors = [
 ]
 description = "Automatic headphone equalizer config generator"
 readme = "README.md"
-requires-python = ">=3.7,<3.10"
+requires-python = ">=3.7,<3.11"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",

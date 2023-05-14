@@ -1,6 +1,6 @@
 {
   "name": "autoeq",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

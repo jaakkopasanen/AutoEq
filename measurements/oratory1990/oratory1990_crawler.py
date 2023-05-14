@@ -36,7 +36,7 @@ class Oratory1990Crawler(Crawler):
 
     @staticmethod
     def get_existing():
-        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*', '*'))
+        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*.csv'))
 
     def get_urls(self):
         if self.driver is None:

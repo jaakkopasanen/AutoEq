@@ -37,6 +37,7 @@ def main():
     for db, crawler in zip(dbs, crawlers):
         existing = crawler.get_existing()
         for path in glob(os.path.join(ROOT_DIR, 'results', db, '**', '*.png'), recursive=True):
+            path = os.path.abspath(path)
             dir_path, file_name = os.path.split(path)
             name = file_name.replace('.png', '')
             item = existing.find_one(true_name=name)

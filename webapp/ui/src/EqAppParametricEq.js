@@ -38,7 +38,7 @@ const EqAppParametricEq = (props) => {
   };
 
   const equalizerApoParametricEqString = () => {
-    const typeMap = { LOW_SHELF: 'LS', PEAKING: 'PK', HIGH_SHELF: 'HS' };
+    const typeMap = { LOW_SHELF: 'LSC', PEAKING: 'PK', HIGH_SHELF: 'HSC' };
     let s = `Preamp: ${props.parametricEq?.preamp?.toFixed(2)} dB\n`
     for (const [i, filt] of props.parametricEq?.filters?.entries()) {
       s += `Filter ${i + 1}: ON ${typeMap[filt.type]} Fc ${filt.fc.toFixed(1)} Hz Gain ${filt.gain.toFixed(1)} dB Q ${filt.q.toFixed(2)}\n`
