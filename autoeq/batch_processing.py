@@ -91,9 +91,12 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
     file_paths = []
     args_list = []
     for input_file_path in glob_files:
+        name = os.path.split(input_file_path)[1].replace('.csv', '')
         relative_path = os.path.relpath(input_file_path, input_dir)
-        output_file_path = os.path.join(output_dir, relative_path) if output_dir else None
-        output_file_dir = os.path.split(output_file_path)[0]
+        output_file_path = os.path.join(output_dir, relative_path)
+        output_file_dir, output_file_name = os.path.split(output_file_path)
+        output_file_dir = os.path.join(output_file_dir, name)
+        output_file_path = os.path.join(output_file_dir, output_file_name)
         if not new_only or not os.path.isdir(output_file_dir) or not len(os.listdir(output_file_dir)):
             # Not looking for only new ones or the output directory doesn't exist or it's empty
             file_paths.append((input_file_path, output_file_path))

@@ -48,11 +48,11 @@ def main():
         earbud = True
 
     innerfidelity_overear = os.path.join(ROOT_DIR, 'compensation', 'innerfidelity_harman_over-ear_2018_wo_bass.csv')
-    innerfidelity_inear = os.path.join(ROOT_DIR, 'compensation', 'innerfidelity_harman_in-ear_2019v2_wo_bass.csv')
+    innerfidelity_inear = os.path.join(ROOT_DIR, 'compensation', 'innerfidelity_autoeq_in-ear.csv')
     headphonecom_overear = os.path.join(ROOT_DIR, 'compensation', 'headphonecom_harman_over-ear_2018_wo_bass.csv')
-    headphonecom_inear = os.path.join(ROOT_DIR, 'compensation', 'headphonecom_harman_in-ear_2019v2_wo_bass.csv')
+    headphonecom_inear = os.path.join(ROOT_DIR, 'compensation', 'headphonecom_autoeq_in-ear.csv')
     rtings_overear = os.path.join(ROOT_DIR, 'compensation', 'rtings_harman_over-ear_2018_wo_bass.csv')
-    rtings_inear = os.path.join(ROOT_DIR, 'compensation', 'rtings_harman_in-ear_2019v2_wo_bass.csv')
+    rtings_inear = os.path.join(ROOT_DIR, 'compensation', 'rtings_autoeq_in-ear.csv')
     autoeq_inear = os.path.join(ROOT_DIR, 'compensation', 'autoeq_in-ear.csv')
     harman_overear = os.path.join(ROOT_DIR, 'compensation', 'harman_over-ear_2018_wo_bass.csv')
     crinacle_ears711_overear = os.path.join(ROOT_DIR, 'compensation', 'crinacle_harman_over-ear_2018_wo_bass.csv')
@@ -68,7 +68,7 @@ def main():
     }
     bass0 = {'bass_boost_fc': 105, 'bass_boost_q': 0.7, 'bass_boost_gain': 0.0}
     bass6 = {'bass_boost_fc': 105, 'bass_boost_q': 0.7, 'bass_boost_gain': 6.0}
-    bass95 = {'bass_boost_fc': 105, 'bass_boost_q': 0.7, 'bass_boost_gain': 95.0}
+    bass95 = {'bass_boost_fc': 105, 'bass_boost_q': 0.7, 'bass_boost_gain': 9.5}
 
     if innerfidelity:
         if overear:

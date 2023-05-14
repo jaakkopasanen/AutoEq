@@ -1,0 +1,11 @@
+Preamp: -6.3 dB
+Filter 1: ON LSC Fc 105 Hz Gain 4.7 dB Q 0.70
+Filter 2: ON PK Fc 175 Hz Gain -4.3 dB Q 0.59
+Filter 3: ON PK Fc 4489 Hz Gain 6.2 dB Q 1.61
+Filter 4: ON PK Fc 2582 Hz Gain 5.3 dB Q 3.48
+Filter 5: ON PK Fc 1785 Hz Gain -4.6 dB Q 2.86
+Filter 6: ON HSC Fc 10000 Hz Gain 0.5 dB Q 0.70
+Filter 7: ON PK Fc 873 Hz Gain 1.8 dB Q 1.73
+Filter 8: ON PK Fc 350 Hz Gain -0.7 dB Q 1.65
+Filter 9: ON PK Fc 1341 Hz Gain -1.2 dB Q 3.46
+Filter 10: ON PK Fc 6067 Hz Gain -1.5 dB Q 6.00

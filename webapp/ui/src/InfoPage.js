@@ -57,7 +57,7 @@ const InfoPage = (props) => {
               <LooksOneOutlinedIcon sx={{width: iconSize, height: iconSize}} />
             </Grid>
             <Grid item sx={{width: `calc(100% - ${iconSize + 8}px)`}}>
-              <Typography variant='h6'>Select your headphones at the top</Typography>
+              <Typography variant='h6' sx={{lineHeight: 1.2, mb: '12px'}}>Select your headphones at the top</Typography>
               <Typography variant='body2'>
                 You can also import your own data by dragging and dropping a CSV file to the select field or clicking
                 <FileOpenOutlinedIcon sx={{display: 'inline', height: '17px', width: '16px', transform: 'translate(-1px, 3px)'}} />
@@ -71,7 +71,7 @@ const InfoPage = (props) => {
               <LooksTwoOutlinedIcon sx={{width: iconSize, height: iconSize}} />
             </Grid>
             <Grid item sx={{width: `calc(100% - ${iconSize + 8}px)`}}>
-              <Typography variant='h6'>Select equalizer app</Typography>
+              <Typography variant='h6' sx={{lineHeight: 1.2, mb: '12px'}}>Select equalizer app</Typography>
               {platform !== 'iOS' && (
                 <Typography variant='body2'>
                   <b style={{color: theme.palette.secondary.light}}>{recommendedApp}</b> is recommended for <b>{platform}</b>
@@ -96,7 +96,7 @@ const InfoPage = (props) => {
               <Looks3OutlinedIcon sx={{width: iconSize, height: iconSize}} />
             </Grid>
             <Grid item sx={{width: `calc(100% - ${iconSize + 8}px)`}}>
-              <Typography variant='h6'>Hear the difference with the live demo</Typography>
+              <Typography variant='h6' sx={{lineHeight: 1.2, mb: '12px'}}>Hear the difference with the live demo</Typography>
               <Typography variant='body2'>
                 Play some songs with player on the bottom and toggle EQ on and off to hear the difference
               </Typography>
@@ -112,7 +112,7 @@ const InfoPage = (props) => {
               <Looks4OutlinedIcon sx={{width: iconSize, height: iconSize}} />
             </Grid>
             <Grid item sx={{width: `calc(100% - ${iconSize + 8}px)`}}>
-              <Typography variant='h6'>Copy settings to the equalizer app</Typography>
+              <Typography variant='h6' sx={{lineHeight: 1.2, mb: '12px'}}>Copy settings to the equalizer app</Typography>
               <Typography variant='body2'>
                 Download and import, copy and paste or configure manually, depending on your chosen equalizer
               </Typography>

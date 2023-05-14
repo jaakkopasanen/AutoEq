@@ -8,7 +8,7 @@ import re
 import numpy as np
 from zipfile import ZipFile
 from tabulate import tabulate
-from autoeq.constants import MOD_REGEX, ROOT_DIR
+from autoeq.constants import MOD_REGEX
 from autoeq.frequency_response import FrequencyResponse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.manufacturer_index import ManufacturerIndex
@@ -50,29 +50,23 @@ def get_urls(files):
 
 
 def write_recommendations():
+    """Writes a single recommended result for each headphone to results/README.md."""
     urls = dict()
-    # Get links to Headphone.com results
-    urls.update(get_urls(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_over-ear_2018', '*')))))
-    urls.update(get_urls(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_in-ear_2019v2', '*')))))
-    # Get links to Rtings results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'rtings_harman_over-ear_2018', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'rtings_harman_in-ear_2019v2', '*')))))
-    # Get links to Innerfidelity results
-    urls.update(get_urls(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_over-ear_2018', '*')))))
-    urls.update(get_urls(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_in-ear_2019v2', '*')))))
-    # Get links to Crinacle results
-    urls.update(
-        get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'ears-711_harman_over-ear_2018', '*')))))
-    urls.update(
-        get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2', '*')))))
-    # Get links to oratory1990 results
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*')))))
-    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2019v2', '*')))))
+    # In-ear results
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'Headphone.com Legacy', 'in-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'Rtings', 'in-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'Innerfidelity', 'in-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', '711 in-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'in-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'Bruel & Kjaer 4620 in-ear', '*')))))
+
+    # Over-ear results
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'EARS + 711 over-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'Headphone.com Legacy', 'over-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'Rtings', 'over-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'Innerfidelity', 'over-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'GRAS 43AG-7 over-ear', '*')))))
+    urls.update(get_urls(glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'over-ear', '*')))))
 
     with open(os.path.join(DIR_PATH, 'README.md'), 'w', encoding='utf-8') as f:
         keys = sorted(urls.keys(), key=lambda s: s.lower())
@@ -82,9 +76,8 @@ def write_recommendations():
         headphones, these can be found in the
         [full index](./INDEX.md).
 
-        Recommendation priority is: oratory1990 > Crinacle > Innerfidelity > Rtings > Headphone.com.
-        This means if there are measurements from multiple sources for the same headphone
-        model only the highest priority result will be shown in this list.
+        Where there are measurements from multiple sources for the same headphone, only the one with highest accuracy
+        appears on this list.
 
         This list has {unique} headphone models covered but if your headphone is missing you can create settings for
         it yourself by following this guide:
@@ -113,44 +106,60 @@ def get_lines(dirs, note=None, path_root=DIR_PATH):
 
 
 def write_full_index():
+    """Writes all results in a single list."""
     lines = []
     # Get links to Headphone.com results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_over-ear_2018', '*'))),
-        note='by Headphone.com'))
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'Headphone.com Legacy', 'over-ear', '*'))),
+        note='by Headphone.com (Legacy)'))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'headphonecom', 'headphonecom_harman_in-ear_2019v2', '*'))),
-        note='by Headphone.com'))
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'Headphone.com Legacy', 'in-ear', '*'))),
+        note='by Headphone.com (Legacy)'))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'Headphone.com Legacy', 'earbud', '*'))),
+        note='by Headphone.com (Legacy)'))
     # Get links to Rtings results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'rtings_harman_over-ear_2018', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'Rtings', 'over-ear', '*'))),
         note='by Rtings'))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'rtings', 'rtings_harman_in-ear_2019v2', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'Rtings', 'in-ear', '*'))),
+        note='by Rtings'))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'Rtings', 'earbud', '*'))),
         note='by Rtings'))
     # Get links to Innerfidelity results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_over-ear_2018', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'Innerfidelity', 'over-ear', '*'))),
         note='by Innerfidelity'))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity', 'innerfidelity_harman_in-ear_2019v2', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'Innerfidelity', 'in-ear', '*'))),
+        note='by Innerfidelity'))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'Innerfidelity', 'earbud', '*'))),
         note='by Innerfidelity'))
     # Get links to Crinacle results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'ears-711_harman_over-ear_2018', '*'))),
-        note='by Crinacle, Ears-711'))
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'EARS + 711 over-ear', '*'))),
+        note='by Crinacle, EARS + 711'))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'GRAS 43AG-7 over-ear', '*'))),
         note='by Crinacle, GRAS 43AG-7'))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'harman_in-ear_2019v2', '*'))),
-        note='by Crinacle'))
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', '711 in-ear', '*'))),
+        note='by Crinacle, 711'))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'crinacle', 'Bruel & Kjaer 4620 in-ear', '*'))),
+        note='by Crinacle, Bruel & Kjaer 4620'))
     # Get links to oratory1990 results
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_over-ear_2018', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'over-ear', '*'))),
         note='by oratory1990'))
     lines.extend(get_lines(
-        glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'harman_in-ear_2019v2', '*'))),
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'in-ear', '*'))),
+        note='by oratory1990'))
+    lines.extend(get_lines(
+        glob(os.path.abspath(os.path.join(DIR_PATH, 'oratory1990', 'earbud', '*'))),
         note='by oratory1990'))
     lines = sorted(lines, key=lambda s: s.lower())
 
@@ -166,40 +175,40 @@ def write_full_index():
 
 def write_headphonecom_index():
     # Get links to Headphone.com results
-    base_dir = os.path.abspath(os.path.join(DIR_PATH, 'headphonecom'))
+    base_dir = os.path.abspath(os.path.join(DIR_PATH, 'Headphone.com Legacy'))
     lines = get_lines(glob(os.path.join(base_dir, '*', '*')), path_root=base_dir)
     lines = sorted(lines, key=lambda s: s.lower())
-    with open(os.path.join(DIR_PATH, 'headphonecom', 'README.md'), 'w', encoding='utf-8') as f:
-        f.write('# Headphone.com Results\n\n' + '\n'.join(lines) + '\n')
+    with open(os.path.join(DIR_PATH, 'Headphone.com Legacy', 'README.md'), 'w', encoding='utf-8') as f:
+        f.write('# Headphone.com Legacy Results\n\n' + '\n'.join(lines) + '\n')
 
 
 def write_rtings_index():
     # Get links to Rtings results
-    base_dir = os.path.abspath(os.path.join(DIR_PATH, 'rtings'))
+    base_dir = os.path.abspath(os.path.join(DIR_PATH, 'Rtings'))
     lines = get_lines(glob(os.path.join(base_dir, '*', '*')), path_root=base_dir)
     lines = sorted(lines, key=lambda s: s.lower())
-    with open(os.path.join(DIR_PATH, 'rtings', 'README.md'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(DIR_PATH, 'Rtings', 'README.md'), 'w', encoding='utf-8') as f:
         f.write('# Rtings Results\n\n' + '\n'.join(lines) + '\n')
 
 
 def write_innerfidelity_index():
     # Get links to Innerfidelity results
-    base_dir = os.path.abspath(os.path.join(DIR_PATH, 'innerfidelity'))
+    base_dir = os.path.abspath(os.path.join(DIR_PATH, 'Innerfidelity'))
     lines = get_lines(glob(os.path.join(base_dir, '*', '*')), path_root=base_dir)
     lines = sorted(lines, key=lambda s: s.lower())
-    with open(os.path.join(DIR_PATH, 'innerfidelity', 'README.md'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(DIR_PATH, 'Innerfidelity', 'README.md'), 'w', encoding='utf-8') as f:
         f.write('# Innerfidelity Results\n\n' + '\n'.join(lines) + '\n')
 
 
 def write_crinacle_index():
     base_dir = os.path.abspath(os.path.join(DIR_PATH, 'crinacle'))
-    lines = get_lines(
-        glob(os.path.join(base_dir, 'ears-711_harman_over-ear_2018', '*')), path_root=base_dir, note='Ears-711')
-    lines.extend(get_lines(glob(os.path.join(base_dir, 'gras_43ag-7_harman_over-ear_2018', '*')), path_root=base_dir))
-    lines.extend(get_lines(glob(os.path.join(base_dir, 'harman_in-ear_2019v2', '*')), path_root=base_dir))
+    lines = get_lines(glob(os.path.join(base_dir, 'EARS + 711 over-ear', '*')), path_root=base_dir, note='on EARS + 711')
+    lines.extend(get_lines(glob(os.path.join(base_dir, 'GRAS 43AG-7 over-ear', '*')), path_root=base_dir, note='on GRAS 43AG-7'))
+    lines.extend(get_lines(glob(os.path.join(base_dir, '711 in-ear', '*')), path_root=base_dir, note='on 711'))
+    lines.extend(get_lines(glob(os.path.join(base_dir, 'Bruel & Kjaer 4620 in-ear', '*')), path_root=base_dir, note='on Bruel & Kjaer 4620'))
     lines = sorted(lines, key=lambda s: s.lower())
     with open(os.path.join(DIR_PATH, 'crinacle', 'README.md'), 'w', encoding='utf-8') as f:
-        f.write('# Crinacle Results\n\n' + '\n'.join(lines) + '\n')
+        f.write('# crinacle Results\n\n' + '\n'.join(lines) + '\n')
 
 
 def write_oratory1990_index():
@@ -214,15 +223,28 @@ def write_oratory1990_index():
 def write_hesuvi_zip():
     manufacturers = ManufacturerIndex()
     zip_object = ZipFile(os.path.join(DIR_PATH, 'hesuvi.zip'), 'w')
+
     dir_paths = [
-        os.path.join(DIR_PATH, 'oratory1990'),
-        os.path.join(DIR_PATH, 'crinacle', 'gras_43ag-7_harman_over-ear_2018'),
-        os.path.join(DIR_PATH, 'crinacle', 'ears-711_harman_over-ear_2018'),
-        os.path.join(DIR_PATH, 'innerfidelity'),
-        os.path.join(DIR_PATH, 'rtings'),
-        os.path.join(DIR_PATH, 'headphonecom'),
+        os.path.join(DIR_PATH, db) for db in ['oratory1990', 'crinacle', 'innerfidelity', 'rtings', 'headphonecom']
     ]
+
+    dir_paths = [
+        os.path.join(DIR_PATH, 'Headphone.com Legacy', 'in-ear'),
+        os.path.join(DIR_PATH, 'Rtings', 'in-ear'),
+        os.path.join(DIR_PATH, 'Innerfidelity', 'in-ear'),
+        os.path.join(DIR_PATH, 'crinacle', '711 in-ear'),
+        os.path.join(DIR_PATH, 'oratory1990', 'in-ear'),
+        os.path.join(DIR_PATH, 'crinacle', 'Bruel & Kjaer 4620 in-ear'),
+        os.path.join(DIR_PATH, 'crinacle', 'EARS + 711 over-ear'),
+        os.path.join(DIR_PATH, 'Headphone.com Legacy', 'over-ear'),
+        os.path.join(DIR_PATH, 'Rtings', 'over-ear'),
+        os.path.join(DIR_PATH, 'Innerfidelity', 'over-ear'),
+        os.path.join(DIR_PATH, 'crinacle', 'GRAS 43AG-7 over-ear'),
+        os.path.join(DIR_PATH, 'oratory1990', 'over-ear')
+    ][::-1]
+
     zip_files = set()
+    included_paths = []
     for dir_path in dir_paths:
         for fp in glob(os.path.join(dir_path, '**', '* GraphicEQ.txt'), recursive=True):
             _, name = os.path.split(fp)
@@ -235,20 +257,21 @@ def write_hesuvi_zip():
                 print(f'Manufacturer could not be found for {name}. Will skip in hesuvi.zip.')
                 continue
             name = manufacturers.model(name)
-            arcname = f'eq/{manufacturer}/{name}.txt'
-            if arcname in zip_files:
+            archive_path = f'eq/{manufacturer}/{name}.txt'
+            if archive_path in zip_files:
                 # Skip duplicates
                 continue
             with open(fp, 'r', encoding='utf-8') as fh:
                 s = fh.read()
                 data = np.array([x.split() for x in s.split(': ')[1].split('; ')], dtype='float')
+                # Normalizing about mean level in range 100 Hz and 10 kHz
                 sl = np.logical_and(data[:, 0] > 100, data[:, 0] < 10000)
                 data[:, 1] -= np.mean(data[sl, 1])
                 s = 'GraphicEQ: '
                 s += '; '.join([f'{x[0]:.0f} {x[1]:.1f}' for x in data])
-                zip_object.writestr(arcname, s)
-                zip_files.add(arcname)
-
+                zip_object.writestr(archive_path, s)
+                zip_files.add(archive_path)
+                included_paths.append(fp)
     zip_object.close()
 
 
@@ -278,9 +301,9 @@ def write_ranking_table():
     overear_rows = []
     # Over-ear
     files = dict()
-    for fp in glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'gras_43ag-7_harman_over-ear_2018', '*', '*.csv')):
+    for fp in glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'GRAS 43AG-7 over-ear', '*', '*.csv')):
         files[os.path.split(fp)[1]] = fp
-    for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_over-ear_2018', '*', '*.csv')):
+    for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'over-ear', '*', '*.csv')):
         files[os.path.split(fp)[1]] = fp
     for fp in files.values():
         row = ranking_row(fp, harman_overear, 'over-ear')
@@ -292,9 +315,9 @@ def write_ranking_table():
     inear_rows = []
     # In-ear
     files = dict()
-    for fp in glob(os.path.join(ROOT_DIR, 'results', 'crinacle', 'harman_in-ear_2019v2', '*', '*.csv')):
+    for fp in glob(os.path.join(ROOT_DIR, 'results', 'crinacle', '711 in-ear', '*', '*.csv')):
         files[os.path.split(fp)[1]] = fp
-    for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'harman_in-ear_2019v2', '*', '*.csv')):
+    for fp in glob(os.path.join(ROOT_DIR, 'results', 'oratory1990', 'in-ear', '*', '*.csv')):
         files[os.path.split(fp)[1]] = fp
     for fp in files.values():
         row = ranking_row(fp, harman_inear, 'in-ear')
@@ -307,12 +330,12 @@ def write_ranking_table():
     Headphones ranked by Harman headphone listener preference scores.
 
     Tables include the preference score (Score), standard deviation of the error (STD), slope of the logarithimc
-    regression fit of the error (Slope) for both headphone types and average of the absolute error (Average) for in-ear
+    regression fit of the error (Slope) for both over-ear and in-ear headphones and average of the absolute error (Average) for in-ears
     headphones. STD tells how much the headphone deviates from neutral and slope tells if the headphone is warm (< 0) or
     bright (> 0).
 
-    Keep in mind that these numbers are calculated with deviations from Harman targets. The linked results use different
-    levels of bass boost so the slope numbers here won't match the error curves you see in the linked results.
+    Keep in mind that these numbers are calculated with deviations from Harman targets and you're preferences might
+    differ.
 
     Over-ear table includes headphones measured by oratory1990 and Crinacle using GRAS systems. Measurements from
     other databases and systems are not included because they are not compatible with measurements, targets and
@@ -331,7 +354,6 @@ def write_ranking_table():
 
 def main():
     write_recommendations()
-    write_ranking_table()
     write_full_index()
     write_headphonecom_index()
     write_rtings_index()
@@ -339,6 +361,7 @@ def main():
     write_crinacle_index()
     write_oratory1990_index()
     write_hesuvi_zip()
+    write_ranking_table()
 
 
 if __name__ == '__main__':
