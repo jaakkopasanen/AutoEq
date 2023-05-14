@@ -14,7 +14,8 @@ const Player = (props) => {
   const [progressInterval, setProgressInterval] = useState(null);
   const [progress, setProgress] = useState(0);
   const [playlist, setPlaylist] = useState([]);
-  const [gain, setGain] = useState(parseFloat(window.localStorage.getItem('gain')) || 50);
+  const storedGain = parseFloat(window.localStorage.getItem('gain'));
+  const [gain, setGain] = useState(isNaN(storedGain) ? 50 : storedGain);
 
   const initSourceNode = (ix) => {
     if (playlist[ix].audio === null) {

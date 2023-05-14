@@ -42,6 +42,7 @@ false_name	true_name	form
 747	Advanced 747	inear
 747 NC	Advanced 747 NC	inear
 75t	Jabra Elite 75t	inear
+7Hz Salnotes Dioko	7Hz x Crinacle Salnotes Dioko (sample 1)	inear
 8CL	qdc 8CL (CIEM)	inear
 8SH	qdc 8SH	inear
 8SL	qdc 8SL (sample 1)	inear
@@ -285,8 +286,8 @@ Big Bus	Big Bus Earbuds	inear
 Biggie	Venture Electronics Monk IE Biggie	inear
 Billets	MUNITIO Billets	inear
 Billie Jean	JH Audio Billie Jean	inear
-BL-Max	BLON BL-Max	inear
 BL-MAX	BLON BL-Max	inear
+BL-Max	BLON BL-Max	inear
 BL01	BLON BL-01	inear
 BL03	BLON BL-03 (sample 1)	inear
 BL03 S3	BLON BL-03 (sample 3)	inear
@@ -419,8 +420,8 @@ Diana Phi	Abyss Diana Phi	onear
 Diana V2	Abyss Diana V2	onear
 Dio	Elysian Annihilator (sample 1)	inear
 Dioko		ignore
-Dioko S1	7Hz Salnotes Dioko (sample 1)	inear
-Dioko S2	7Hz Salnotes Dioko( sample 2)	inear
+Dioko S1	7Hz x Crinacle Salnotes Dioko (sample 1)	inear
+Dioko S2	7Hz x Crinacle Salnotes Dioko (sample 2)	inear
 direm E3	Neusonik direm E3	inear
 direm PRO	Neusonik direm PRO	inear
 Diva Half Bass	Elysian Diva (half bass)	inear
@@ -897,8 +898,8 @@ IE800	Sennheiser IE 800	inear
 IE800S	Sennheiser IE 800 S	inear
 IE80S	Sennheiser IE 80 S (min)	inear
 IE80S Half	Sennheiser IE 80 S (half)	inear
-IE80S Max	Sennheiser IE 80 S (max)	inear
 IE80S max	Sennheiser IE 80 S (max)	inear
+IE80S Max	Sennheiser IE 80 S (max)	inear
 IE900	Sennheiser IE 900	inear
 IER-Z1R	Sony IER-Z1R	inear
 IEX1	Audio-Technica ATH-IEX1	inear
@@ -1127,8 +1128,8 @@ M5 S3	Fir Audio M5 (sample 3)	inear
 M5 S5	Fir Audio M5 (sample 4)	inear
 M5 S6	Fir Audio M5 (sample 5)	inear
 M5 S7	Fir Audio M5 (sample 7)	inear
-M50x	Audio-Technica ATH-M50x (sample 1)	onear
 M50X	Audio-Technica ATH-M50x	onear
+M50x	Audio-Technica ATH-M50x (sample 1)	onear
 M50x S2	Audio-Technica ATH-M50x (sample 2)	onear
 M50xBT	Audio-Technica ATH-M50xBT	onear
 M51D	Advanced M51D	inear
@@ -1318,8 +1319,8 @@ NDH 20	Neumann NDH20	onear
 NDH20	Neumann NDH20	onear
 Nekocake	Moondrop Nekocake	inear
 Nekocake Acht Acht Limited	Moondrop Nekocake	inear
-nemesis	Empire Ears Nemesis	inear
 Nemesis	Empire Ears Nemesis	inear
+nemesis	Empire Ears Nemesis	inear
 Neo	SeeAudio Neo	inear
 Neo BG	Shozy & Neo BG	inear
 Neon	KBEar Neon	inear
@@ -1723,8 +1724,8 @@ TA2	TRN TA2	inear
 Tango	Jomo Audio Tango	inear
 Tanya	Tanchjim Tanya	inear
 Tanya RM	Tanchjim Tanya	inear
-Taobao 3 Driver	Taobao 3 driver	inear
 Taobao 3 driver	Taobao 3 driver	inear
+Taobao 3 Driver	Taobao 3 driver	inear
 Taobao 6 Driver	Taobao 6 driver	inear
 Tape	Shuoer Tape	inear
 Tape Pro	Shuoer Tape Pro	inear
@@ -1760,7 +1761,7 @@ Thummim	Metal Magic Research Thummim	inear
 Ti	Periodic Audio Ti	inear
 Ti Galaxy	TFZ Ti Galaxy	inear
 Timeless	7HZ Timeless	inear
-Timeless AE	7Hz Salnotes Timeless AE	inear
+Timeless AE	7Hz Timeless AE	inear
 Titan	FitEar Titan (sample 1)	inear
 Titan 1	DUNU Titan 1	inear
 Titan 3	DUNU Titan 3	inear
