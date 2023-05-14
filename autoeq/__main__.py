@@ -13,7 +13,9 @@ from autoeq.batch_processing import batch_processing
 def cli_args():
     """Parses command line arguments."""
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('--input-dir', type=str, required=True,
+    arg_parser.add_argument('--input-file', type=str, required=False,
+                            help='Path to measurement CSV data')
+    arg_parser.add_argument('--input-dir', type=str, required=False,
                             help='Path to input data directory. Will look for CSV files in the data directory and '
                                  'recursively in sub-directories.')
     arg_parser.add_argument('--output-dir', type=str, required=True,

@@ -16,8 +16,8 @@ from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_T
 from autoeq.frequency_response import FrequencyResponse
 
 
-def batch_processing(input_dir=None, output_dir=None, new_only=False, standardize_input=False, compensation=None,
-                     parametric_eq=False, fixed_band_eq=False, rockbox=False,
+def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=False, standardize_input=False,
+                     compensation=None, parametric_eq=False, fixed_band_eq=False, rockbox=False,
                      ten_band_eq=False, parametric_eq_config=None, fixed_band_eq_config=None, convolution_eq=False,
                      fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
                      bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
@@ -33,11 +33,17 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
     if not compensation and (parametric_eq or fixed_band_eq or rockbox or ten_band_eq or convolution_eq):
         raise ValueError('Compensation must be specified when equalizing.')
 
-    # Dir paths to absolute
-    input_dir = os.path.abspath(input_dir)
-    glob_files = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)
-    if len(glob_files) == 0:
-        raise FileNotFoundError(f'No CSV files found in "{input_dir}"')
+    if input_file:
+        input_file_paths = [input_file]
+        input_dir = os.path.split(input_file)[0]
+    elif input_dir:
+        # Dir paths to absolute
+        input_dir = os.path.abspath(input_dir)
+        input_file_paths = glob(os.path.join(input_dir, '**', '*.csv'), recursive=True)
+        if len(input_file_paths) == 0:
+            raise FileNotFoundError(f'No CSV files found in "{input_dir}"')
+    else:
+        raise ValueError('Input file or input directory path must be specified.')
 
     if compensation:
         # Creates FrequencyResponse for compensation data
@@ -90,7 +96,7 @@ def batch_processing(input_dir=None, output_dir=None, new_only=False, standardiz
     n_total = 0
     file_paths = []
     args_list = []
-    for input_file_path in glob_files:
+    for input_file_path in input_file_paths:
         name = os.path.split(input_file_path)[1].replace('.csv', '')
         relative_path = os.path.relpath(input_file_path, input_dir)
         output_file_path = os.path.join(output_dir, relative_path)
