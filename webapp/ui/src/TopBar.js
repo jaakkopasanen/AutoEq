@@ -46,11 +46,11 @@ const TopBar = (props) => {
 
   return (
     <Grid item container direction='row' justifyContent='space-between' alignItems='center'>
-      <Grid item sx={{width: 100}}>
+      <Grid item sx={{ width: {xs: '60px', sm: '100px'}}} >
         <img
           src='autoeq_logo.svg'
           alt='AutoEq logo'
-          style={{width: 100, display: props.showLogo ? 'block' : 'none'}}
+          style={{width: '100%', display: props.showLogo ? 'block' : 'none' }}
         />
       </Grid>
       <Grid item sx={{width: {xs: '200px', sm: '400px', md: '500px'}}}>

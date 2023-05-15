@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Grid, IconButton, LinearProgress, Slider, Switch, Typography} from "@mui/material";
 import {
   PlayArrow as PlayIcon,
@@ -12,6 +12,7 @@ const Player = (props) => {
   const [trackIx, setTrackIx] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progressInterval, setProgressInterval] = useState(null);
+  const progressIntervalRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [playlist, setPlaylist] = useState([]);
   const storedGain = parseFloat(window.localStorage.getItem('gain'));
@@ -27,26 +28,27 @@ const Player = (props) => {
       newPlaylist[ix].sourceNode.connect(props.audioDestination);
       setPlaylist(newPlaylist);
     }
-  }
+  };
+
+  const skip = (newTrackIx) => {
+    if (playlist.length && playlist[trackIx] && playlist[trackIx].audio) {
+      playlist[trackIx].audio.pause();
+    }
+    initSourceNode(newTrackIx);
+    playlist[newTrackIx].audio.currentTime = 0;
+    setTrackIx(newTrackIx);
+    setProgress(0);
+    if (isPlaying) {
+      playlist[newTrackIx].audio.play();
+    }
+  };
 
   const onSkipPreviousClick = () => {
-    playlist[trackIx].audio.pause();
-    const newTrackIx = trackIx > 0 ? trackIx - 1 : playlist.length - 1;
-    initSourceNode(newTrackIx);
-    playlist[newTrackIx].audio.fastSeek(0);
-    playlist[newTrackIx].audio.play();
-    setTrackIx(newTrackIx);
-    setIsPlaying(true);
+    skip(trackIx > 0 ? trackIx - 1 : playlist.length - 1);
   };
 
   const onSkipNextClick = () => {
-    playlist[trackIx].audio.pause();
-    const newTrackIx = trackIx < playlist.length - 1 ? trackIx + 1 : 0;
-    initSourceNode(newTrackIx);
-    playlist[newTrackIx].audio.fastSeek(0);
-    playlist[newTrackIx].audio.play();
-    setTrackIx(newTrackIx);
-    setIsPlaying(true);
+    skip(trackIx < playlist.length - 1 ? trackIx + 1 : 0);
   };
 
   const onPlayClick = () => {
@@ -62,15 +64,16 @@ const Player = (props) => {
 
   useEffect(() => {
     if (!playlist.length) return;
+    clearInterval(progressIntervalRef.current);
+    progressIntervalRef.current = null;
     if (isPlaying) {
-      setProgressInterval(setInterval(() => {
+      progressIntervalRef.current = setInterval(() => {
         setProgress(playlist[trackIx].audio.currentTime / playlist[trackIx].audio.duration * 100);
-      }, 10));
-    } else {
-      clearInterval(progressInterval);
+      }, 10)
     }
     return () => {
-      clearInterval(progressInterval);
+      clearInterval(progressIntervalRef.current);
+      progressIntervalRef.current = null;
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [trackIx, isPlaying, playlist]);
@@ -96,7 +99,14 @@ const Player = (props) => {
   if (!playlist.length) return null;
 
   return (
-    <Grid container direction='column' justifyContent='center' alignItems='center' sx={{width: '100%'}}>
+    <Grid
+      container
+      direction='column'
+      justifyContent='center'
+      alignItems='center'
+      sx={{width: '100%', transition: 'transform 0.5s ease 0.2s'}}
+      style={{transform: props.isEqEnabled ? 'translate(0, 0)' : 'translateY(200px)'}}
+    >
       <Grid item sx={{width: '100%'}}>
         <div>
           <Grid

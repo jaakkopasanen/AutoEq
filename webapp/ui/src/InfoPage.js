@@ -1,4 +1,4 @@
-import {Container, Grid, IconButton, Typography} from "@mui/material";
+import {Container, Grid, IconButton, Typography, Box} from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import FileOpenOutlinedIcon from "@mui/icons-material/FileOpenOutlined";
 import React from "react";
@@ -29,7 +29,7 @@ const InfoPage = (props) => {
   const iconSize = 48;
 
   return (
-    <Container fixed maxWidth='sm' sx={{color: theme => theme.palette.grey.A200, }}>
+    <Container fixed maxWidth='md' sx={{color: theme => theme.palette.grey.A200, pb: 4}}>
       <IconButton
         onClick={props.onCloseClick}
         sx={{
@@ -42,13 +42,19 @@ const InfoPage = (props) => {
         <ClearIcon />
       </IconButton>
       <Grid
-        container direction='column' alignItems='center' rowSpacing={6}
-        sx={{'& p': {pb: theme => theme.spacing(1)}}}
+        container direction='column' alignItems='center' rowSpacing={{xs: 2, sm: 6}}
+        sx={{'& p': {pb: theme => theme.spacing(1)}, pt: {xs: 4, sm: 8}}}
       >
-        <Grid item sx={{textAlign: 'center', mt: '64px'}}>
-          <img src="/autoeq_logo.svg" style={{width: 400}} alt='AutoEq logo' />
+        <Grid
+          item
+          sx={{textAlign: 'center'}}
+          style={{pt: {xs: 4, sm: 8}, pb: {xs: 2, sm: 4}}}
+        >
+          <Box sx={{width: {xs: '60vw', sm: 300, xl: 400}, maxWidth: {xs: 300, sm: '60vw'}}}>
+            <img src="/autoeq_logo.svg" alt='AutoEq logo' style={{width: '100%'}}/>
+            <Typography variant='body2'>four easy steps to make your headphones sound better</Typography>
+          </Box>
 
-          <Typography variant='body2'>four easy steps to make your headphones sound better</Typography>
         </Grid>
 
         <Grid item container direction='row' columnSpacing={4} rowSpacing={4} justifyContent='center'>

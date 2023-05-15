@@ -51,7 +51,7 @@ const Waves = (props) => {
       width='100%' viewBox='0 0 100 100'
       preserveAspectRatio='none'
       style={{
-        position: 'fixed', bottom: 0, left: 0, right: 0, height: '300px', maxHeight: '40vw'
+        position: 'fixed', bottom: 0, left: 0, right: 0, height: '300px', maxHeight: '20vh'
       }}
     >
       {paths}

@@ -36,7 +36,7 @@ const SmPaper = styled(Paper)(({ theme }) => ({
 
 const App = (props) => {
   const apiClientRef = useRef();
-  const audioContextRef = useRef();
+  const audioContextRef = useRef(null);
   const gainNodeRef = useRef();
   const preampNodeRef = useRef();
   const eqNodesRef = useRef([]);
@@ -135,8 +135,20 @@ const App = (props) => {
     compensationsBassBoostsRef.current = compensationsBassBoosts;
     setCompensations(compensations);
     setPreferredCompensations(preferredCompensations);
-
     apiClientRef.current = new ApiClient();
+
+    document.addEventListener('click', () => {
+      setUpAudioContext();
+    }, { once: true });
+  };
+  useEffect(() => {
+    setUp();
+  }, []);
+
+  const setUpAudioContext = () => {
+    if (audioContextRef.current !== null) {
+      return;
+    }
     audioContextRef.current = new AudioContext();
     gainNodeRef.current = audioContextRef.current.createGain();
     gainNodeRef.current.gain.value = 0.5;
@@ -146,9 +158,6 @@ const App = (props) => {
     gainNodeRef.current.connect(preampNodeRef.current);
     fsRef.current = audioContextRef.current.sampleRate;
   };
-  useEffect(() => {
-    setUp();
-  }, []);
 
   const equalize = async (skipTimer) => {
     if (!!equalizeTimerRef.current) clearTimeout(equalizeTimerRef.current);

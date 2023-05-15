@@ -79,7 +79,7 @@ python -m measurements.average --input_dir="measurements/crinacle/data/in-ear/Br
 
 ## Updating Measurements and Results
 1. Remove measurements that have updates
-2. Check obsolete results: `python results/prune_results.py --dry-run --crinacle --oratory1990 --rtings`
+2. Check obsolete results: ``
 3. Prune results: `python results/prune_results.py --crinacle --oratory1990 --rtings`
 4. Crawl new measurements: `jupyter lab measurements/crawl.ipynb`
 5. Run results update: `python results/update_results.py --oratory1990 --crinacle --rtings`

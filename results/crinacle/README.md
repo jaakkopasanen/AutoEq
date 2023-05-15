@@ -376,6 +376,7 @@
 - [BGVP VG4 (on-off-off)](./711%20in-ear/BGVP%20VG4%20(on-off-off)) on 711
 - [BGVP ZERO](./711%20in-ear/BGVP%20ZERO) on 711
 - [Big Bus Earbuds](./711%20in-ear/Big%20Bus%20Earbuds) on 711
+- [BLON Annotation](./Bruel%20&%20Kjaer%204620%20in-ear/BLON%20Annotation) on Bruel & Kjaer 4620
 - [BLON B20](./GRAS%2043AG-7%20over-ear/BLON%20B20) on GRAS 43AG-7
 - [BLON B60 (sample 1)](./GRAS%2043AG-7%20over-ear/BLON%20B60%20(sample%201)) on GRAS 43AG-7
 - [BLON B60 (sample 2)](./GRAS%2043AG-7%20over-ear/BLON%20B60%20(sample%202)) on GRAS 43AG-7
@@ -865,6 +866,7 @@
 - [Grado SR80e](./GRAS%2043AG-7%20over-ear/Grado%20SR80e) on GRAS 43AG-7
 - [Grado The Hemp Headphone](./GRAS%2043AG-7%20over-ear/Grado%20The%20Hemp%20Headphone) on GRAS 43AG-7
 - [Grell Audio TWS 1](./711%20in-ear/Grell%20Audio%20TWS%201) on 711
+- [GuideRay GR-I](./Bruel%20&%20Kjaer%204620%20in-ear/GuideRay%20GR-I) on Bruel & Kjaer 4620
 - [Harman Kardon FLY ANC](./GRAS%2043AG-7%20over-ear/Harman%20Kardon%20FLY%20ANC) on GRAS 43AG-7
 - [HarmonicDyne G200 (lambskin earpads)](./GRAS%2043AG-7%20over-ear/HarmonicDyne%20G200%20(lambskin%20earpads)) on GRAS 43AG-7
 - [HarmonicDyne G200 (velour earpads)](./GRAS%2043AG-7%20over-ear/HarmonicDyne%20G200%20(velour%20earpads)) on GRAS 43AG-7
@@ -1080,6 +1082,7 @@
 - [JVC HA-FX99X-B](./711%20in-ear/JVC%20HA-FX99X-B) on 711
 - [KBEar F1](./Bruel%20&%20Kjaer%204620%20in-ear/KBEar%20F1) on Bruel & Kjaer 4620
 - [KBEar Neon](./711%20in-ear/KBEar%20Neon) on 711
+- [KBEAR Qinglong](./Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong) on Bruel & Kjaer 4620
 - [Kennerton Jimo](./711%20in-ear/Kennerton%20Jimo) on 711
 - [Kennerton Odin Bog Oak](./GRAS%2043AG-7%20over-ear/Kennerton%20Odin%20Bog%20Oak) on GRAS 43AG-7
 - [Kennerton Thror Bog Oak](./GRAS%2043AG-7%20over-ear/Kennerton%20Thror%20Bog%20Oak) on GRAS 43AG-7
@@ -1896,6 +1899,8 @@
 - [TRN MT1](./711%20in-ear/TRN%20MT1) on 711
 - [TRN TA2](./711%20in-ear/TRN%20TA2) on 711
 - [TRN X7](./711%20in-ear/TRN%20X7) on 711
+- [Truthear Hexa](./711%20in-ear/Truthear%20Hexa) on 711
+- [Truthear Hola](./711%20in-ear/Truthear%20Hola) on 711
 - [Truthear Zero (sample 10)](./711%20in-ear/Truthear%20Zero%20(sample%2010)) on 711
 - [Truthear Zero (sample 2)](./711%20in-ear/Truthear%20Zero%20(sample%202)) on 711
 - [Truthear Zero (sample 3)](./711%20in-ear/Truthear%20Zero%20(sample%203)) on 711
@@ -1907,6 +1912,7 @@
 - [Truthear Zero (sample 9)](./711%20in-ear/Truthear%20Zero%20(sample%209)) on 711
 - [Truthear Zero](./711%20in-ear/Truthear%20Zero) on 711
 - [Truthear Zero](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20Zero) on Bruel & Kjaer 4620
+- [UFOEar UFO-111](./Bruel%20&%20Kjaer%204620%20in-ear/UFOEar%20UFO-111) on Bruel & Kjaer 4620
 - [UFOear UFO-112 (sample 1)](./Bruel%20&%20Kjaer%204620%20in-ear/UFOear%20UFO-112%20(sample%201)) on Bruel & Kjaer 4620
 - [UFOear UFO-112](./Bruel%20&%20Kjaer%204620%20in-ear/UFOear%20UFO-112) on Bruel & Kjaer 4620
 - [Ultimate Ears Live (sample 2)](./711%20in-ear/Ultimate%20Ears%20Live%20(sample%202)) on 711

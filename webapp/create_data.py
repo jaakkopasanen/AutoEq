@@ -38,6 +38,9 @@ def write_entries_and_measurements():
         source = hp_path.parts[hp_path.parts.index('data') - 1]
         form = parts[0]
         rig = parts[1] if len(parts) == 3 else 'unknown'
+        if source == 'crinacle' and rig == 'unknown':
+            print(parts)
+            return
         name = parts[-1].replace('.csv', '')
         if '(sample' in name or '(serial number' in name:
             # Skip individual samples
@@ -211,7 +214,7 @@ def write_compensations():
 
 def main():
     write_entries_and_measurements()
-    write_compensations()
+    #write_compensations()
 
 
 if __name__ == '__main__':

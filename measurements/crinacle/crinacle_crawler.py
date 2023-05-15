@@ -119,7 +119,7 @@ class CrinacleCrawler(Crawler):
         patreon_dir = os.path.join(DIR_PATH, 'raw_data')
 
         # IEMs
-        iem_711_source_paths = list(glob(os.path.join(patreon_dir, 'IEC60318-4 IEM Measurements', '*.txt')))
+        iem_711_source_paths = list(glob(os.path.join(patreon_dir, 'IEC60318-4 IEM Measurements (TSV txt)', '*.txt')))
         for fp in iem_711_source_paths:
             add_to(fp, '711')
 
@@ -203,9 +203,8 @@ class CrinacleCrawler(Crawler):
         avg_fr.raw /= len(file_paths)
 
         # Save
-        dir_path = os.path.join(target_dir, avg_fr.name)
-        os.makedirs(dir_path, exist_ok=True)
-        file_path = os.path.join(dir_path, f'{avg_fr.name}.csv')
+        os.makedirs(target_dir, exist_ok=True)
+        file_path = os.path.join(target_dir, f'{avg_fr.name}.csv')
         avg_fr.write_to_csv(file_path)
         print(f'Saved "{avg_fr.name}" to "{file_path}"')
 

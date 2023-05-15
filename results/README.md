@@ -6,7 +6,7 @@ headphones, these can be found in the
 Where there are measurements from multiple sources for the same headphone, only the one with highest accuracy
 appears on this list.
 
-This list has 3147 headphone models covered but if your headphone is missing you can create settings for
+This list has 3153 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -659,6 +659,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Big Bus Earbuds](./crinacle/711%20in-ear/Big%20Bus%20Earbuds)
 - [BKHC BK9](./Innerfidelity/over-ear/BKHC%20BK9)
 - [Bloc Roc Galvanize S2](./Innerfidelity/over-ear/Bloc%20Roc%20Galvanize%20S2)
+- [BLON Annotation](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20Annotation)
 - [BLON B20](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B20)
 - [BLON B60](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60)
 - [BLON BL-01](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20BL-01)
@@ -1347,6 +1348,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Grado SR80e](./crinacle/GRAS%2043AG-7%20over-ear/Grado%20SR80e)
 - [Grado The Hemp Headphone](./crinacle/GRAS%2043AG-7%20over-ear/Grado%20The%20Hemp%20Headphone)
 - [Grell Audio TWS 1](./crinacle/711%20in-ear/Grell%20Audio%20TWS%201)
+- [GuideRay GR-I](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/GuideRay%20GR-I)
 - [Harman Kardon FLY ANC](./crinacle/GRAS%2043AG-7%20over-ear/Harman%20Kardon%20FLY%20ANC)
 - [Harman Kardon NC](./Rtings/over-ear/Harman%20Kardon%20NC)
 - [Harman Kardon NI](./Innerfidelity/in-ear/Harman%20Kardon%20NI)
@@ -1730,6 +1732,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Kaldas Research Conquest RR1](./oratory1990/over-ear/Kaldas%20Research%20Conquest%20RR1)
 - [KBEar F1](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEar%20F1)
 - [KBEar Neon](./crinacle/711%20in-ear/KBEar%20Neon)
+- [KBEAR Qinglong](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong)
 - [KEF M200](./Innerfidelity/in-ear/KEF%20M200)
 - [KEF M500](./Innerfidelity/over-ear/KEF%20M500)
 - [Kennerton Jimo](./crinacle/711%20in-ear/Kennerton%20Jimo)
@@ -3283,6 +3286,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [TRN MT1](./crinacle/711%20in-ear/TRN%20MT1)
 - [TRN TA2](./crinacle/711%20in-ear/TRN%20TA2)
 - [TRN X7](./crinacle/711%20in-ear/TRN%20X7)
+- [Truthear Hexa](./crinacle/711%20in-ear/Truthear%20Hexa)
+- [Truthear Hola](./crinacle/711%20in-ear/Truthear%20Hola)
 - [Truthear Zero](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20Zero)
 - [Turtle Beach Battle Buds](./Rtings/in-ear/Turtle%20Beach%20Battle%20Buds)
 - [Turtle Beach Elite 800](./Rtings/over-ear/Turtle%20Beach%20Elite%20800)
@@ -3300,6 +3305,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Turtle Beach Stealth 700](./Rtings/over-ear/Turtle%20Beach%20Stealth%20700)
 - [Turtle Beach Stealth 700 Gen 2](./Rtings/over-ear/Turtle%20Beach%20Stealth%20700%20Gen%202)
 - [UBSound Fighter](./Innerfidelity/in-ear/UBSound%20Fighter)
+- [UFOEar UFO-111](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOEar%20UFO-111)
 - [UFOear UFO-112](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOear%20UFO-112%20(sample%201))
 - [Ultimate Ears FITS](./Rtings/in-ear/Ultimate%20Ears%20FITS)
 - [Ultimate Ears Live](./crinacle/711%20in-ear/Ultimate%20Ears%20Live%20(sample%202))

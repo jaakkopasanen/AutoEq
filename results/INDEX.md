@@ -923,6 +923,7 @@ from the same source.
 - [Big Bus Earbuds](./crinacle/711%20in-ear/Big%20Bus%20Earbuds) by Crinacle, 711
 - [BKHC BK9](./Innerfidelity/over-ear/BKHC%20BK9) by Innerfidelity
 - [Bloc Roc Galvanize S2](./Innerfidelity/over-ear/Bloc%20Roc%20Galvanize%20S2) by Innerfidelity
+- [BLON Annotation](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20Annotation) by Crinacle, Bruel & Kjaer 4620
 - [BLON B20](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B20) by Crinacle, GRAS 43AG-7
 - [BLON B60 (sample 1)](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60%20(sample%201)) by Crinacle, GRAS 43AG-7
 - [BLON B60 (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60%20(sample%202)) by Crinacle, GRAS 43AG-7
@@ -1845,6 +1846,7 @@ from the same source.
 - [Grado The Hemp Headphone](./crinacle/GRAS%2043AG-7%20over-ear/Grado%20The%20Hemp%20Headphone) by Crinacle, GRAS 43AG-7
 - [Grado The Hemp Headphone](./Rtings/over-ear/Grado%20The%20Hemp%20Headphone) by Rtings
 - [Grell Audio TWS 1](./crinacle/711%20in-ear/Grell%20Audio%20TWS%201) by Crinacle, 711
+- [GuideRay GR-I](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/GuideRay%20GR-I) by Crinacle, Bruel & Kjaer 4620
 - [Harman Kardon FLY ANC](./crinacle/GRAS%2043AG-7%20over-ear/Harman%20Kardon%20FLY%20ANC) by Crinacle, GRAS 43AG-7
 - [Harman Kardon NC](./Rtings/over-ear/Harman%20Kardon%20NC) by Rtings
 - [Harman Kardon NI](./Innerfidelity/in-ear/Harman%20Kardon%20NI) by Innerfidelity
@@ -2297,6 +2299,7 @@ from the same source.
 - [Kaldas Research Conquest RR1](./oratory1990/over-ear/Kaldas%20Research%20Conquest%20RR1) by oratory1990
 - [KBEar F1](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEar%20F1) by Crinacle, Bruel & Kjaer 4620
 - [KBEar Neon](./crinacle/711%20in-ear/KBEar%20Neon) by Crinacle, 711
+- [KBEAR Qinglong](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong) by Crinacle, Bruel & Kjaer 4620
 - [KEF M200](./Innerfidelity/in-ear/KEF%20M200) by Innerfidelity
 - [KEF M500](./Headphone.com%20Legacy/over-ear/KEF%20M500) by Headphone.com (Legacy)
 - [KEF M500](./Innerfidelity/over-ear/KEF%20M500) by Innerfidelity
@@ -4372,6 +4375,8 @@ from the same source.
 - [TRN MT1](./crinacle/711%20in-ear/TRN%20MT1) by Crinacle, 711
 - [TRN TA2](./crinacle/711%20in-ear/TRN%20TA2) by Crinacle, 711
 - [TRN X7](./crinacle/711%20in-ear/TRN%20X7) by Crinacle, 711
+- [Truthear Hexa](./crinacle/711%20in-ear/Truthear%20Hexa) by Crinacle, 711
+- [Truthear Hola](./crinacle/711%20in-ear/Truthear%20Hola) by Crinacle, 711
 - [Truthear Zero (sample 10)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%2010)) by Crinacle, 711
 - [Truthear Zero (sample 2)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%202)) by Crinacle, 711
 - [Truthear Zero (sample 3)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%203)) by Crinacle, 711
@@ -4399,6 +4404,7 @@ from the same source.
 - [Turtle Beach Stealth 700 Gen 2](./Rtings/over-ear/Turtle%20Beach%20Stealth%20700%20Gen%202) by Rtings
 - [Turtle Beach Stealth 700](./Rtings/over-ear/Turtle%20Beach%20Stealth%20700) by Rtings
 - [UBSound Fighter](./Innerfidelity/in-ear/UBSound%20Fighter) by Innerfidelity
+- [UFOEar UFO-111](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOEar%20UFO-111) by Crinacle, Bruel & Kjaer 4620
 - [UFOear UFO-112 (sample 1)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOear%20UFO-112%20(sample%201)) by Crinacle, Bruel & Kjaer 4620
 - [UFOear UFO-112](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOear%20UFO-112) by Crinacle, Bruel & Kjaer 4620
 - [Ultimate Ears FITS](./Rtings/in-ear/Ultimate%20Ears%20FITS) by Rtings

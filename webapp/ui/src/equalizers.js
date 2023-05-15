@@ -82,15 +82,6 @@ export default [
     instructions: 'Download the file to "C:\\Program Files\\EqualizerAPO\\config\\", open "Configuration Editor" app, add a filter "Control > Include" and select the file with 📁.'
   },
   {
-    label: 'Peace', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
-    uiConfig: {
-      bw: false, showDownload: true, showFsControl: true,
-      filterNames: { LOW_SHELF: 'Low-shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High-shelf', PREAMP: 'Pre Amplifying' },
-      columnNames: { fc: 'Frequency', gain: 'Gain', q: 'Quality (Q)' },
-    },
-    instructions: 'Download file and import it to Peace by clicking "📁 Import" button'
-  },
-  {
     label: 'iTunes built-in equalizer',
     type: 'fixedBand',
     config: '10_BAND_GRAPHIC_EQ',
@@ -126,6 +117,15 @@ export default [
     },
     eqParams: { fs: 48000 },
     instructions: 'Go to ⚙ > Playback > DSP Effect > Equalizer, change the band count in ⚙️ and configure frequency, gain and Q for each band and change the filter types from band\'s ⚙️.'
+  },
+  {
+    label: 'Peace', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
+    uiConfig: {
+      bw: false, showDownload: true, showFsControl: true,
+      filterNames: { LOW_SHELF: 'Low-shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High-shelf', PREAMP: 'Pre Amplifying' },
+      columnNames: { fc: 'Frequency', gain: 'Gain', q: 'Quality (Q)' },
+    },
+    instructions: 'Download file and import it to Peace by clicking "📁 Import" button'
   },
   {
     label: 'Poweramp Equalizer', type: 'parametric', config: 'POWERAMP_EQUALIZER',
