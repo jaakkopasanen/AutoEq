@@ -81,6 +81,7 @@ const EqTab = (props) => {
       {selectedEqualizer?.type === 'convolution' && (
         <Grid item>
           <EqAppConvolutionEq
+            audioContext={props.audioContext}
             firAudioBuffer={props.firAudioBuffer}
             fs={props.fs}
             bitDepth={props.bitDepth}

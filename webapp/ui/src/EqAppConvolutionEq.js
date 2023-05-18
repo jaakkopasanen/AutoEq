@@ -13,7 +13,16 @@ const EqAppConvolutionEq = (props) => {
   };
 
   const onDownloadClick = () => {
-    const wav = audioBufferToWav(props.firAudioBuffer, {float32: props.bitDepth === 32});
+    let audioBuffer;
+    if (stereo) {
+      const arr = props.firAudioBuffer.getChannelData(0);
+      audioBuffer = props.audioContext.createBuffer(2, props.firAudioBuffer.length, props.firAudioBuffer.sampleRate);
+      audioBuffer.copyToChannel(arr, 0);
+      audioBuffer.copyToChannel(arr, 1);
+    } else {
+      audioBuffer = props.firAudioBuffer;
+    }
+    const wav = audioBufferToWav(audioBuffer, {float32: props.bitDepth === 32});
     const blob = new window.Blob([ new DataView(wav) ], { type: 'audio/wav' });
     const anchor = document.createElement('a');
     const url = window.URL.createObjectURL(blob);

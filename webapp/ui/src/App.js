@@ -540,6 +540,7 @@ const App = (props) => {
           <Grid item xs={12} md={6} sx={{display: !!graphData && !showInfo ? 'block' : 'none'}}>
             <SmPaper sx={{p: {sm: 1, md: 2}}}>
               <EqTab
+                audioContext={audioContextRef.current}
                 selectedMeasurement={selectedMeasurement?.label}
                 equalizers={equalizers}
                 selectedEqualizer={selectedEqualizer}
