@@ -2458,8 +2458,8 @@ from the same source.
 - [KZ ZS6](./crinacle/711%20in-ear/KZ%20ZS6) by Crinacle, 711
 - [KZ ZS7](./oratory1990/in-ear/KZ%20ZS7) by oratory1990
 - [KZ ZSN Pro X](./crinacle/711%20in-ear/KZ%20ZSN%20Pro%20X) by Crinacle, 711
+- [KZ ZSN Pro X](./oratory1990/in-ear/KZ%20ZSN%20Pro%20X) by oratory1990
 - [KZ ZSN Pro](./crinacle/711%20in-ear/KZ%20ZSN%20Pro) by Crinacle, 711
-- [KZ ZSN Pro](./oratory1990/in-ear/KZ%20ZSN%20Pro) by oratory1990
 - [KZ ZSN](./Rtings/in-ear/KZ%20ZSN) by Rtings
 - [KZ ZSR](./crinacle/711%20in-ear/KZ%20ZSR) by Crinacle, 711
 - [KZ ZST](./crinacle/711%20in-ear/KZ%20ZST) by Crinacle, 711
@@ -3197,6 +3197,7 @@ from the same source.
 - [Rock Jaw Alpha Genus (silver filters)](./Innerfidelity/in-ear/Rock%20Jaw%20Alpha%20Genus%20(silver%20filters)) by Innerfidelity
 - [Rock Zircon](./oratory1990/in-ear/Rock%20Zircon) by oratory1990
 - [RockIt Sounds R30](./Innerfidelity/in-ear/RockIt%20Sounds%20R30) by Innerfidelity
+- [RockIt Sounds R50](./Innerfidelity/in-ear/RockIt%20Sounds%20R50) by Innerfidelity
 - [Rose BR5 Mk2](./crinacle/711%20in-ear/Rose%20BR5%20Mk2) by Crinacle, 711
 - [Rose Mini2](./crinacle/711%20in-ear/Rose%20Mini2) by Crinacle, 711
 - [Rosson Audio Design RAD-0](./crinacle/GRAS%2043AG-7%20over-ear/Rosson%20Audio%20Design%20RAD-0) by Crinacle, GRAS 43AG-7

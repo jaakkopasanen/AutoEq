@@ -639,6 +639,7 @@
 - [Rock Jaw Alpha Genus (black filter)](./in-ear/Rock%20Jaw%20Alpha%20Genus%20(black%20filter))
 - [Rock Jaw Alpha Genus (silver filters)](./in-ear/Rock%20Jaw%20Alpha%20Genus%20(silver%20filters))
 - [RockIt Sounds R30](./in-ear/RockIt%20Sounds%20R30)
+- [RockIt Sounds R50](./in-ear/RockIt%20Sounds%20R50)
 - [Samsung Level On](./over-ear/Samsung%20Level%20On)
 - [Sansui SS100](./over-ear/Sansui%20SS100)
 - [Sansui SS35](./over-ear/Sansui%20SS35)

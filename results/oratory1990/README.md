@@ -342,7 +342,7 @@
 - [KZ ES4](./in-ear/KZ%20ES4)
 - [KZ ZS10](./in-ear/KZ%20ZS10)
 - [KZ ZS7](./in-ear/KZ%20ZS7)
-- [KZ ZSN Pro](./in-ear/KZ%20ZSN%20Pro)
+- [KZ ZSN Pro X](./in-ear/KZ%20ZSN%20Pro%20X)
 - [KZ ZST](./in-ear/KZ%20ZST)
 - [Light Harmonic Mera](./in-ear/Light%20Harmonic%20Mera)
 - [Lindy HF-100](./over-ear/Lindy%20HF-100)

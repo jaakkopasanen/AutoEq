@@ -6,7 +6,7 @@ headphones, these can be found in the
 Where there are measurements from multiple sources for the same headphone, only the one with highest accuracy
 appears on this list.
 
-This list has 3153 headphone models covered but if your headphone is missing you can create settings for
+This list has 3154 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -1852,8 +1852,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [KZ ZS6](./crinacle/711%20in-ear/KZ%20ZS6)
 - [KZ ZS7](./oratory1990/in-ear/KZ%20ZS7)
 - [KZ ZSN](./Rtings/in-ear/KZ%20ZSN)
-- [KZ ZSN Pro](./oratory1990/in-ear/KZ%20ZSN%20Pro)
-- [KZ ZSN Pro X](./crinacle/711%20in-ear/KZ%20ZSN%20Pro%20X)
+- [KZ ZSN Pro](./crinacle/711%20in-ear/KZ%20ZSN%20Pro)
+- [KZ ZSN Pro X](./oratory1990/in-ear/KZ%20ZSN%20Pro%20X)
 - [KZ ZSR](./crinacle/711%20in-ear/KZ%20ZSR)
 - [KZ ZST](./oratory1990/in-ear/KZ%20ZST)
 - [KZ ZSX](./crinacle/711%20in-ear/KZ%20ZSX)
@@ -2440,6 +2440,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Rock Jaw Alpha Genus (silver filters)](./Innerfidelity/in-ear/Rock%20Jaw%20Alpha%20Genus%20(silver%20filters))
 - [Rock Zircon](./oratory1990/in-ear/Rock%20Zircon)
 - [RockIt Sounds R30](./Innerfidelity/in-ear/RockIt%20Sounds%20R30)
+- [RockIt Sounds R50](./Innerfidelity/in-ear/RockIt%20Sounds%20R50)
 - [Rose BR5 Mk2](./crinacle/711%20in-ear/Rose%20BR5%20Mk2)
 - [Rose Mini2](./crinacle/711%20in-ear/Rose%20Mini2)
 - [Rosson Audio Design RAD-0](./oratory1990/over-ear/Rosson%20Audio%20Design%20RAD-0)
