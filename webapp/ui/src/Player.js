@@ -11,7 +11,6 @@ import {
 const Player = (props) => {
   const [trackIx, setTrackIx] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [progressInterval, setProgressInterval] = useState(null);
   const progressIntervalRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [playlist, setPlaylist] = useState([]);
