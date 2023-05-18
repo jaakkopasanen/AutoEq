@@ -36,7 +36,8 @@ const TargetTab = (props) => {
   const theme = useTheme();
   const isSm = useMediaQuery(theme.breakpoints.down('md'));
   const isLg = useMediaQuery(theme.breakpoints.up('lg'));
-  const knobSize = isLg ? 150 : 120;
+  const isXxl = useMediaQuery(theme.breakpoints.up('xxl'));
+  const knobSize = isLg && !isXxl ? 150 : 120;
 
   if (!props.graphData) {
     return;

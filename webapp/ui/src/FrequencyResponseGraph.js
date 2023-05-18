@@ -12,6 +12,7 @@ const FrequencyResponseGraph = (props) => {
 
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down('sm'));
+  const isXxl = useMediaQuery(theme.breakpoints.up('xxl'));
 
   const yRange = (data) => {
     const vals = [];
@@ -55,7 +56,7 @@ const FrequencyResponseGraph = (props) => {
       }}
     >
       <Grid item xs={12} md={9.5} lg={10}>
-        <ResponsiveContainer width='100%' aspect={isXs ? 1.6 : 2.3}>
+        <ResponsiveContainer width='100%' aspect={isXs || isXxl ? 1.6 : 2.3}>
           <LineChart
             data={props.data}
             margin={{top: 0, left: 0, bottom: 20, right: 0}}
