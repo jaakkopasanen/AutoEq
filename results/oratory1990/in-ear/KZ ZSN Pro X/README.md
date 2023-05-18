@@ -1,4 +1,4 @@
-# KZ ZSN Pro
+# KZ ZSN Pro X
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.5 dB
 |  10 | Peaking |     16000 | 1.41 |        -9.1 |
 
 ### Graphs
-![](./KZ%20ZSN%20Pro.png)
+![](./KZ%20ZSN%20Pro%20X.png)
