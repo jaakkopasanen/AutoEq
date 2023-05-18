@@ -72,11 +72,13 @@ def write_compensations():
             'label': 'AutoEq In-ear',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
-                {'source': 'oratory1990', 'form': 'in-ear', 'rig': 'unknown'}
+                {'source': 'oratory1990', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'oratory1990', 'form': 'earbud', 'rig': 'unknown'}
             ],
             'recommended': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
-                {'source': 'oratory1990', 'form': 'in-ear', 'rig': 'unknown'}
+                {'source': 'oratory1990', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'oratory1990', 'form': 'earbud', 'rig': 'unknown'}
             ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
@@ -113,7 +115,8 @@ def write_compensations():
             'label': 'Harman In-ear 2019',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
-                {'source': 'oratory1990', 'form': 'in-ear', 'rig': 'unknown'}
+                {'source': 'oratory1990', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'oratory1990', 'form': 'earbud', 'rig': 'unknown'}
             ],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
@@ -134,8 +137,14 @@ def write_compensations():
         {
             'file': path.parent.joinpath('compensation', 'headphonecom_autoeq_in-ear.csv'),
             'label': 'Headphone.com Legacy AutoEq In-ear',
-            'compatible': [{'source': 'headphonecom', 'form': 'in-ear', 'rig': 'unknown'}],
-            'recommended': [{'source': 'headphonecom', 'form': 'in-ear', 'rig': 'unknown'}],
+            'compatible': [
+                {'source': 'headphonecom', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'headphonecom', 'form': 'earbud', 'rig': 'unknown'},
+            ],
+            'recommended': [
+                {'source': 'headphonecom', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'headphonecom', 'form': 'earbud', 'rig': 'unknown'},
+            ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
@@ -157,7 +166,8 @@ def write_compensations():
             'label': '711/5128 Delta',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': 'unknown'},
-                {'source': 'oratory1990', 'form': 'in-ear', 'rig': 'unknown'}
+                {'source': 'oratory1990', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'oratory1990', 'form': 'earbud', 'rig': 'unknown'},
             ],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
@@ -165,14 +175,23 @@ def write_compensations():
         {
             'file': path.parent.joinpath('compensation', 'innerfidelity_autoeq_in-ear.csv'),
             'label': 'Innerfidelity AutoEq In-ear',
-            'compatible': [{'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'}],
-            'recommended': [{'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'}],
+            'compatible': [
+                {'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'innerfidelity', 'form': 'earbud', 'rig': 'unknown'},
+            ],
+            'recommended': [
+                {'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'innerfidelity', 'form': 'earbud', 'rig': 'unknown'},
+            ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
             'file': path.parent.joinpath('compensation', 'innerfidelity_harman_in-ear_2019v2_wo_bass.csv'),
             'label': 'Innerfidelity Harman In-ear 2019',
-            'compatible': [{'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'}],
+            'compatible': [
+                {'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'innerfidelity', 'form': 'earbud', 'rig': 'unknown'},
+            ],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
@@ -186,14 +205,23 @@ def write_compensations():
         {
             'file': path.parent.joinpath('compensation', 'rtings_autoeq_in-ear.csv'),
             'label': 'Rtings AutoEq In-ear',
-            'compatible': [{'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'}],
-            'recommended': [{'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'}],
+            'compatible': [
+                {'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'rtings', 'form': 'earbud', 'rig': 'unknown'},
+            ],
+            'recommended': [
+                {'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'rtings', 'form': 'earbud', 'rig': 'unknown'},
+            ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
             'file': path.parent.joinpath('compensation', 'rtings_harman_in-ear_2019v2_wo_bass.csv'),
             'label': 'Rtings Harman In-ear 2019',
-            'compatible': [{'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'}],
+            'compatible': [
+                {'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'},
+                {'source': 'rtings', 'form': 'earbud', 'rig': 'unknown'},
+            ],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
@@ -214,7 +242,7 @@ def write_compensations():
 
 def main():
     write_entries_and_measurements()
-    #write_compensations()
+    write_compensations()
 
 
 if __name__ == '__main__':

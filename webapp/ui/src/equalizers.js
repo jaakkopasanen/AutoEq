@@ -152,7 +152,15 @@ export default [
       filterNames: { LOW_SHELF: 'Low Shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High Shelf', PREAMP: 'Preamp' },
       columnNames: { fc: 'Frequency (Hz)', gain: 'Gain (dB)', q: 'Q' }
     },
-    instructions: 'Download file and import to SoundSource from Headphone EQ menu by selecting "Add Other Profile..."'
+    instructions: 'Download file and import to SoundSource from Headphone EQ menu by selecting "Add Other Profile..."',
+    fileFormatter: (preamp, filters) => {
+      const typeMap = { LOW_SHELF: 'LS', PEAKING: 'PK', HIGH_SHELF: 'HS' };
+      let s = `Preamp: ${preamp?.toFixed(2)} dB\n`
+      for (const [i, filt] of filters?.entries()) {
+        s += `Filter ${i + 1}: ON ${typeMap[filt.type]} Fc ${filt.fc.toFixed(1)} Hz Gain ${filt.gain.toFixed(1)} dB Q ${filt.q.toFixed(2)}\n`
+      }
+      return s;
+    }
   },
   {
     label: 'Spotify built-in equalizer',

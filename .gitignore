@@ -115,3 +115,4 @@ results/crinacle/*/*/*.csv
 chromedriver*
 webapp/data/*
 !webapp/data/legal/
+!webapp/data/compensations.json

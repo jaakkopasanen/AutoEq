@@ -145,7 +145,19 @@ const transposeObjectToArray = (obj, keys) => {
   return arr;
 };
 
+const equalizerApoParametricEqString = (preamp, filters) => {
+  if (preamp === undefined || filters === undefined) {
+    return '';
+  }
+  const typeMap = { LOW_SHELF: 'LSC', PEAKING: 'PK', HIGH_SHELF: 'HSC' };
+  let s = `Preamp: ${preamp.toFixed(2)} dB\n`
+  for (const [i, filt] of filters.entries()) {
+    s += `Filter ${i + 1}: ON ${typeMap[filt.type]} Fc ${filt.fc.toFixed(1)} Hz Gain ${filt.gain.toFixed(1)} dB Q ${filt.q.toFixed(2)}\n`
+  }
+  return s;
+};
+
 export {
   decodeFloat16, downloadAsFile, parseCSV, bandwidth, initParametricEqNodes, initConvolutionNode,
-  transposeArrayToObject, transposeObjectToArray
+  transposeArrayToObject, transposeObjectToArray, equalizerApoParametricEqString
 };

@@ -45,6 +45,7 @@ const EqTab = (props) => {
             eqParams={selectedEqualizer?.eqParams}
             instructions={selectedEqualizer?.instructions}
             preamp={props.preamp}
+            fileFormatter={selectedEqualizer?.fileFormatter}
           />
         </Grid>
       )}

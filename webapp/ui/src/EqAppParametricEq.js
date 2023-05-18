@@ -17,7 +17,7 @@ import {
 } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import DownloadIcon from '@mui/icons-material/Download';
-import { bandwidth, downloadAsFile } from './utils';
+import {bandwidth, downloadAsFile, equalizerApoParametricEqString} from './utils';
 import InputSlider from './InputSlider';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
@@ -37,18 +37,11 @@ const EqAppParametricEq = (props) => {
     return value !== null && typeof value !== 'undefined' && value !== '' ? parseFloat(value) : null;
   };
 
-  const equalizerApoParametricEqString = () => {
-    const typeMap = { LOW_SHELF: 'LSC', PEAKING: 'PK', HIGH_SHELF: 'HSC' };
-    let s = `Preamp: ${props.parametricEq?.preamp?.toFixed(2)} dB\n`
-    for (const [i, filt] of props.parametricEq?.filters?.entries()) {
-      s += `Filter ${i + 1}: ON ${typeMap[filt.type]} Fc ${filt.fc.toFixed(1)} Hz Gain ${filt.gain.toFixed(1)} dB Q ${filt.q.toFixed(2)}\n`
-    }
-    return s;
-  };
-
   const onDownloadClick = () => {
     downloadAsFile(
-      equalizerApoParametricEqString(),
+      props.fileFormatter
+        ? props.fileFormatter(props.parametricEq?.preamp, props.parametricEq?.filters)
+        : equalizerApoParametricEqString(props.parametricEq?.preamp, props.parametricEq?.filters),
       'text/plain',
       `${props.selectedMeasurement} ParametricEq.txt`);
   };
