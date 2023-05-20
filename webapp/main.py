@@ -6,7 +6,7 @@ from enum import Enum
 from io import BytesIO
 from pathlib import Path
 import numpy as np
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, validator, root_validator, confloat, conlist, conint
 from typing import Union, Optional
@@ -193,152 +193,156 @@ def magnitude_response(x, fs):
 
 @app.post('/equalize')
 def equalize(req: EqualizeRequest):
-    if req.measurement:  # Custom measurement data provided
-        fr = FrequencyResponse(name='fr', frequency=req.measurement.frequency, raw=req.measurement.raw)
-    else:  # Named measurement
-        measurement = measurements[req.name][req.source][req.rig]
-        fr = FrequencyResponse(name='fr', frequency=measurement['frequency'], raw=measurement['raw'])
+    try:
+        if req.measurement:  # Custom measurement data provided
+            fr = FrequencyResponse(name='fr', frequency=req.measurement.frequency, raw=req.measurement.raw)
+        else:  # Named measurement
+            measurement = measurements[req.name][req.source][req.rig]
+            fr = FrequencyResponse(name='fr', frequency=measurement['frequency'], raw=measurement['raw'])
 
-    if req.compensation is None:
-        fr.smoothen_fractional_octave(
+        if req.compensation is None:
+            fr.smoothen_fractional_octave(
+                window_size=req.window_size,
+                treble_window_size=req.treble_window_size,
+                treble_f_lower=req.treble_f_lower,
+                treble_f_upper=req.treble_f_upper
+            )
+            return {'fr': fr.to_dict()}
+        elif type(req.compensation) == str:
+            compensation = None
+            for comp in compensations:
+                if comp['label'] == req.compensation:
+                    compensation = comp
+            if compensation is None:
+                raise ValueError(f'Unknown compensation {req.compensation}')
+            compensation = FrequencyResponse(
+                name='compensation', frequency=compensation['fr']['frequency'], raw=compensation['fr']['raw'])
+        else:
+            compensation = FrequencyResponse(
+                name='compensation', frequency=req.compensation.frequency, raw=req.compensation.raw)
+
+        if req.sound_signature is not None:
+            sound_signature = FrequencyResponse(
+                name='sound signature', frequency=req.sound_signature.frequency, raw=req.sound_signature.raw)
+        else:
+            sound_signature = None
+
+        fr.process(
+            compensation=compensation,
+            min_mean_error=True,
+            bass_boost_gain=req.bass_boost_gain,
+            bass_boost_fc=req.bass_boost_fc,
+            bass_boost_q=req.bass_boost_q,
+            treble_boost_gain=req.treble_boost_gain,
+            treble_boost_fc=req.treble_boost_fc,
+            treble_boost_q=req.treble_boost_q,
+            tilt=req.tilt,
+            fs=req.fs,
+            sound_signature=sound_signature,
+            sound_signature_smoothing_window_size=req.sound_signature_smoothing_window_size,
+            max_gain=req.max_gain,
+            max_slope=req.max_slope,
             window_size=req.window_size,
             treble_window_size=req.treble_window_size,
             treble_f_lower=req.treble_f_lower,
-            treble_f_upper=req.treble_f_upper
-        )
-        return {'fr': fr.to_dict()}
-    elif type(req.compensation) == str:
-        compensation = None
-        for comp in compensations:
-            if comp['label'] == req.compensation:
-                compensation = comp
-        if compensation is None:
-            raise ValueError(f'Unknown compensation {req.compensation}')
-        compensation = FrequencyResponse(
-            name='compensation', frequency=compensation['fr']['frequency'], raw=compensation['fr']['raw'])
-    else:
-        compensation = FrequencyResponse(
-            name='compensation', frequency=req.compensation.frequency, raw=req.compensation.raw)
+            treble_f_upper=req.treble_f_upper,
+            treble_gain_k=req.treble_gain_k)
 
-    if req.sound_signature is not None:
-        sound_signature = FrequencyResponse(
-            name='sound signature', frequency=req.sound_signature.frequency, raw=req.sound_signature.raw)
-    else:
-        sound_signature = None
+        f_step = req.response.fr_f_step if req.response is not None else ResponseRequirements.fr_f_step
+        fr_fields = req.response.fr_fields if req.response is not None else ResponseRequirements.fr_fields
+        if fr_fields is None:
+            fr_fields = list(fr.to_dict().keys())
 
-    fr.process(
-        compensation=compensation,
-        min_mean_error=True,
-        bass_boost_gain=req.bass_boost_gain,
-        bass_boost_fc=req.bass_boost_fc,
-        bass_boost_q=req.bass_boost_q,
-        treble_boost_gain=req.treble_boost_gain,
-        treble_boost_fc=req.treble_boost_fc,
-        treble_boost_q=req.treble_boost_q,
-        tilt=req.tilt,
-        fs=req.fs,
-        sound_signature=sound_signature,
-        sound_signature_smoothing_window_size=req.sound_signature_smoothing_window_size,
-        max_gain=req.max_gain,
-        max_slope=req.max_slope,
-        window_size=req.window_size,
-        treble_window_size=req.treble_window_size,
-        treble_f_lower=req.treble_f_lower,
-        treble_f_upper=req.treble_f_upper,
-        treble_gain_k=req.treble_gain_k)
+        fr.interpolate(f_step=f_step)
+        d = fr.to_dict()
+        res = {'fr': {key: d[key] for key in fr_fields}}
 
-    f_step = req.response.fr_f_step if req.response is not None else ResponseRequirements.fr_f_step
-    fr_fields = req.response.fr_fields if req.response is not None else ResponseRequirements.fr_fields
-    if fr_fields is None:
-        fr_fields = list(fr.to_dict().keys())
+        if req.parametric_eq:
+            parametric_eq_config = req.parametric_eq_config
+            if type(parametric_eq_config) != list:
+                parametric_eq_config = [parametric_eq_config]
+            parametric_eq_config = [
+                PEQ_CONFIGS[config] if type(config) == str else config.dict() for config in parametric_eq_config
+            ]
+            # Limit maximum optimization time to 500 ms
+            total_max_time = 0
+            for config in parametric_eq_config:
+                if 'optimizer' not in config:
+                    config['optimizer'] = {'max_time': 0.5}
+                elif (
+                        'max_time' not in config['optimizer']
+                        or config['optimizer']['max_time'] is None
+                        or config['optimizer']['max_time'] > 0.5
+                ):
+                    config['optimizer']['max_time'] = 0.5
+                total_max_time += config['optimizer']['max_time']
+            max_time = 0.5 if total_max_time > 0.5 else None
+            parametric_peqs = fr.optimize_parametric_eq(parametric_eq_config, req.fs, preamp=req.preamp, max_time=max_time)
+            peq = parametric_peqs[0]
+            peq.sort_filters()
+            res['parametric_eq'] = peq.to_dict()
+            res['parametric_eq']['preamp'] = peq.max_gain * -1 - 0.1
+            peq_fr = FrequencyResponse(name='PEQ', frequency=peq.f, raw=peq.fr)
+            peq_fr.interpolate(f_step=f_step)
+            res['fr']['parametric_eq'] = peq_fr.raw.tolist()
 
-    fr.interpolate(f_step=f_step)
-    d = fr.to_dict()
-    res = {'fr': {key: d[key] for key in fr_fields}}
-
-    if req.parametric_eq:
-        parametric_eq_config = req.parametric_eq_config
-        if type(parametric_eq_config) != list:
-            parametric_eq_config = [parametric_eq_config]
-        parametric_eq_config = [
-            PEQ_CONFIGS[config] if type(config) == str else config.dict() for config in parametric_eq_config
-        ]
-        # Limit maximum optimization time to 500 ms
-        total_max_time = 0
-        for config in parametric_eq_config:
-            if 'optimizer' not in config:
-                config['optimizer'] = {'max_time': 0.5}
+        if req.fixed_band_eq:
+            if type(req.fixed_band_eq_config) == str:
+                fixed_band_eq_config = PEQ_CONFIGS[req.fixed_band_eq_config]
+            else:
+                fixed_band_eq_config = req.fixed_band_eq_config.dict()
+            if 'optimizer' not in fixed_band_eq_config:
+                fixed_band_eq_config['optimizer'] = {'max_time': 0.5}
             elif (
-                    'max_time' not in config['optimizer']
-                    or config['optimizer']['max_time'] is None
-                    or config['optimizer']['max_time'] > 0.5
+                    'max_time' not in fixed_band_eq_config['optimizer']
+                    or fixed_band_eq_config['optimizer']['max_time'] is None
+                    or fixed_band_eq_config['optimizer']['max_time'] > 0.5
             ):
-                config['optimizer']['max_time'] = 0.5
-            total_max_time += config['optimizer']['max_time']
-        max_time = 0.5 if total_max_time > 0.5 else None
-        parametric_peqs = fr.optimize_parametric_eq(parametric_eq_config, req.fs, preamp=req.preamp, max_time=max_time)
-        peq = parametric_peqs[0]
-        peq.sort_filters()
-        res['parametric_eq'] = peq.to_dict()
-        res['parametric_eq']['preamp'] = peq.max_gain * -1 - 0.1
-        peq_fr = FrequencyResponse(name='PEQ', frequency=peq.f, raw=peq.fr)
-        peq_fr.interpolate(f_step=f_step)
-        res['fr']['parametric_eq'] = peq_fr.raw.tolist()
+                fixed_band_eq_config['optimizer']['max_time'] = 0.5
+            fixed_band_peqs = fr.optimize_fixed_band_eq(fixed_band_eq_config, req.fs, preamp=req.preamp)
+            fixed_band_peq = fixed_band_peqs[0]
+            fixed_band_peq.sort_filters()
+            res['fixed_band_eq'] = fixed_band_peq.to_dict()
+            res['fixed_band_eq']['preamp'] = fixed_band_peq.max_gain * -1 - 0.1
+            fbpeq_fr = FrequencyResponse('FBPEQ', frequency=fixed_band_peq.f, raw=fixed_band_peq.fr)
+            fbpeq_fr.interpolate(f_step=f_step)
+            res['fr']['fixed_band_eq'] = fbpeq_fr.raw.tolist()
 
-    if req.fixed_band_eq:
-        if type(req.fixed_band_eq_config) == str:
-            fixed_band_eq_config = PEQ_CONFIGS[req.fixed_band_eq_config]
-        else:
-            fixed_band_eq_config = req.fixed_band_eq_config.dict()
-        if 'optimizer' not in fixed_band_eq_config:
-            fixed_band_eq_config['optimizer'] = {'max_time': 0.5}
-        elif (
-                'max_time' not in fixed_band_eq_config['optimizer']
-                or fixed_band_eq_config['optimizer']['max_time'] is None
-                or fixed_band_eq_config['optimizer']['max_time'] > 0.5
-        ):
-            fixed_band_eq_config['optimizer']['max_time'] = 0.5
-        fixed_band_peqs = fr.optimize_fixed_band_eq(fixed_band_eq_config, req.fs, preamp=req.preamp)
-        fixed_band_peq = fixed_band_peqs[0]
-        fixed_band_peq.sort_filters()
-        res['fixed_band_eq'] = fixed_band_peq.to_dict()
-        res['fixed_band_eq']['preamp'] = fixed_band_peq.max_gain * -1 - 0.1
-        fbpeq_fr = FrequencyResponse('FBPEQ', frequency=fixed_band_peq.f, raw=fixed_band_peq.fr)
-        fbpeq_fr.interpolate(f_step=f_step)
-        res['fr']['fixed_band_eq'] = fbpeq_fr.raw.tolist()
+        if req.graphic_eq:
+            graphic_eq = fr.eqapo_graphic_eq(normalize=True, preamp=req.preamp)
+            res['graphic_eq'] = graphic_eq
 
-    if req.graphic_eq:
-        graphic_eq = fr.eqapo_graphic_eq(normalize=True, preamp=req.preamp)
-        res['graphic_eq'] = graphic_eq
+        if req.convolution_eq:
+            bit_depth = req.bit_depth if req.bit_depth is not None else DEFAULT_BIT_DEPTH
+            bit_depth = 'PCM_16' if bit_depth == BitDepthEnum.PCM_16 else 'PCM_32'
+            f_res = req.f_res if req.f_res is not None else DEFAULT_F_RES
+            preamp = req.preamp if req.preamp is not None else DEFAULT_PREAMP
+            phase = req.phase if req.phase is not None else DEFAULT_PHASE
+            if phase is None or phase == PhaseEnum.minimum or phase == 'minimum':
+                fir = fr.minimum_phase_impulse_response(fs=req.fs, f_res=f_res, normalize=True, preamp=preamp).T
+            elif phase == PhaseEnum.linear:
+                fir = fr.linear_phase_impulse_response(fs=req.fs, f_res=f_res, normalize=True, preamp=preamp).T
+            else:
+                raise TypeError
+            buf = BytesIO()
+            sf.write(buf, fir, req.fs, bit_depth, format='WAV')
+            buf.seek(0)
+            f, mag = magnitude_response(fir, req.fs)
+            fir_fr = FrequencyResponse(name='FIR', frequency=f[1:], raw=mag[1:])
+            fir_fr.interpolate(f_step=f_step)
+            ix200 = np.argmin(np.abs(fr.frequency - 200))
+            fir_fr.raw += np.mean(fr.equalization[ix200:] - fir_fr.raw[ix200:])
+            res['fir'] = b64encode(buf.read())
+            res['fr']['convolution_eq'] = fir_fr.raw.tolist()
 
-    if req.convolution_eq:
-        bit_depth = req.bit_depth if req.bit_depth is not None else DEFAULT_BIT_DEPTH
-        bit_depth = 'PCM_16' if bit_depth == BitDepthEnum.PCM_16 else 'PCM_32'
-        f_res = req.f_res if req.f_res is not None else DEFAULT_F_RES
-        preamp = req.preamp if req.preamp is not None else DEFAULT_PREAMP
-        phase = req.phase if req.phase is not None else DEFAULT_PHASE
-        if phase is None or phase == PhaseEnum.minimum or phase == 'minimum':
-            fir = fr.minimum_phase_impulse_response(fs=req.fs, f_res=f_res, normalize=True, preamp=preamp).T
-        elif phase == PhaseEnum.linear:
-            fir = fr.linear_phase_impulse_response(fs=req.fs, f_res=f_res, normalize=True, preamp=preamp).T
-        else:
-            raise TypeError
-        buf = BytesIO()
-        sf.write(buf, fir, req.fs, bit_depth, format='WAV')
-        buf.seek(0)
-        f, mag = magnitude_response(fir, req.fs)
-        fir_fr = FrequencyResponse(name='FIR', frequency=f[1:], raw=mag[1:])
-        fir_fr.interpolate(f_step=f_step)
-        ix200 = np.argmin(np.abs(fr.frequency - 200))
-        fir_fr.raw += np.mean(fr.equalization[ix200:] - fir_fr.raw[ix200:])
-        res['fir'] = b64encode(buf.read())
-        res['fr']['convolution_eq'] = fir_fr.raw.tolist()
+        base64fp16 = req.response.base64fp16 if req.response is not None else ResponseRequirements.base64fp16
+        if base64fp16:
+            res['fr'] = {key: b64encode(np.array(val, dtype='float16')) for key, val in res['fr'].items()}
 
-    base64fp16 = req.response.base64fp16 if req.response is not None else ResponseRequirements.base64fp16
-    if base64fp16:
-        res['fr'] = {key: b64encode(np.array(val, dtype='float16')) for key, val in res['fr'].items()}
+        return res
 
-    return res
+    except Exception as err:
+        raise HTTPException(status_code=500, detail=str(err))
 
 
 app.mount('/audio', StaticFiles(directory=ROOT_DIR.joinpath('data/audio'), html=False), name='audio')

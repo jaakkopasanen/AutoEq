@@ -135,7 +135,11 @@ class ApiClient {
       body: JSON.stringify(body)
     });
     if (apiRes.status < 200 || apiRes.status >= 300) {
-      const errorMessage = await apiRes.text();
+      let errorMessage = await apiRes.text();
+      try {
+        const errorObject = JSON.parse(errorMessage);
+        errorMessage = errorObject.detail;
+      } catch {}
       throw new Error(errorMessage);
     }
     const data = await apiRes.json();
