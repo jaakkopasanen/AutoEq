@@ -79,11 +79,12 @@ python -m measurements.average --input_dir="measurements/crinacle/data/in-ear/Br
 
 ## Updating Measurements and Results
 1. Remove measurements that have updates
-2. Check obsolete results: ``
+2. Check obsolete results: `python results/prune_results.py --crinacle --oratory1990 --rtings --dry-run`
 3. Prune results: `python results/prune_results.py --crinacle --oratory1990 --rtings`
 4. Crawl new measurements: `jupyter lab measurements/crawl.ipynb`
-5. Run results update: `python results/update_results.py --oratory1990 --crinacle --rtings`
+5. Run results update: `python results/update_results.py --oratory1990 --crinacle --rtings --new_only`
 6. Update result indexes: `python results/update_indexes.py`
-7. Add files to git: `git add results measurements/*/data/**/*.csv measurements/*/name_index.tsv`
-8. Commit: `git commit -m "New measurements with pre-computed results."`
-9. Push: `git push`
+7. Update web app data set: `python webapp/create_data.py`
+8. Add files to git: `git add results measurements/*/data/**/*.csv measurements/*/name_index.tsv`
+9. Commit: `git commit -m "New measurements with pre-computed results."`
+10. Push: `git push`

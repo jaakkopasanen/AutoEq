@@ -6,7 +6,7 @@ headphones, these can be found in the
 Where there are measurements from multiple sources for the same headphone, only the one with highest accuracy
 appears on this list.
 
-This list has 3154 headphone models covered but if your headphone is missing you can create settings for
+This list has 3158 headphone models covered but if your headphone is missing you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -2914,6 +2914,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Sony WF-1000XM4 (Treble Boost preset)](./crinacle/711%20in-ear/Sony%20WF-1000XM4%20(Treble%20Boost%20preset))
 - [Sony WF-1000XM4 (Vocal preset)](./crinacle/711%20in-ear/Sony%20WF-1000XM4%20(Vocal%20preset))
 - [Sony WF-C500](./oratory1990/in-ear/Sony%20WF-C500)
+- [Sony WF-C700N](./Rtings/in-ear/Sony%20WF-C700N)
 - [Sony WF-SP700N](./Rtings/in-ear/Sony%20WF-SP700N)
 - [Sony WF-SP800N](./crinacle/711%20in-ear/Sony%20WF-SP800N)
 - [Sony WF-XB700](./oratory1990/in-ear/Sony%20WF-XB700)
@@ -2984,6 +2985,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Spiral Ear SE 5-Way Ultimate](./oratory1990/in-ear/Spiral%20Ear%20SE%205-Way%20Ultimate)
 - [Spiral Ear SE5U](./crinacle/711%20in-ear/Spiral%20Ear%20SE5U)
 - [Spirit Torino Radiante](./crinacle/GRAS%2043AG-7%20over-ear/Spirit%20Torino%20Radiante)
+- [Status Audio Between 3ANC](./Rtings/in-ear/Status%20Audio%20Between%203ANC)
 - [Status Audio Between Pro](./Rtings/in-ear/Status%20Audio%20Between%20Pro)
 - [Status Audio BT One](./Rtings/over-ear/Status%20Audio%20BT%20One)
 - [Status Audio BT One (wired)](./oratory1990/over-ear/Status%20Audio%20BT%20One%20(wired))
@@ -3289,6 +3291,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [TRN X7](./crinacle/711%20in-ear/TRN%20X7)
 - [Truthear Hexa](./crinacle/711%20in-ear/Truthear%20Hexa)
 - [Truthear Hola](./crinacle/711%20in-ear/Truthear%20Hola)
+- [Truthear x Crinacle Zero RED](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED)
+- [Truthear x Crinacle Zero RED (10 ohm resistor)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor))
 - [Truthear Zero](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20Zero)
 - [Turtle Beach Battle Buds](./Rtings/in-ear/Turtle%20Beach%20Battle%20Buds)
 - [Turtle Beach Elite 800](./Rtings/over-ear/Turtle%20Beach%20Elite%20800)

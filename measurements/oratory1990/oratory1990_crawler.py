@@ -184,7 +184,7 @@ class Oratory1990Crawler(Crawler):
         )
         gs.exit()
         shutil.copy(tmp_out, output_file)
-        print('  Saved image to "{}"\n'.format(output_file))
+        print('  Saved image to "{}"'.format(output_file))
         f.close()
 
         return Image.open(output_file)
@@ -197,7 +197,7 @@ class Oratory1990Crawler(Crawler):
         image_dir = os.path.join(DIR_PATH, 'images')
         inspection_dir = os.path.join(DIR_PATH, 'inspection')
         data_dir = os.path.join(DIR_PATH, 'data')
-        out_dir = os.path.join(data_dir, item.form, item.true_name)
+        out_dir = os.path.join(data_dir, item.form)
 
         os.makedirs(pdf_dir, exist_ok=True)
         os.makedirs(image_dir, exist_ok=True)

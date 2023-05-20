@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from autoeq.frequency_response import FrequencyResponse
 
-DIR = Path().absolute()
+DIR = Path(__file__).resolve().parent
 
 
 def measurement_rank(entry):
@@ -40,6 +40,7 @@ def write_entries_and_measurements():
         rig = parts[1] if len(parts) == 3 else 'unknown'
         if source == 'crinacle' and rig == 'unknown':
             print(parts)
+            print(hp_path)
             return
         name = parts[-1].replace('.csv', '')
         if '(sample' in name or '(serial number' in name:
@@ -65,10 +66,9 @@ def write_entries_and_measurements():
 
 
 def write_compensations():
-    path = Path().resolve()
     compensations = [
         {
-            'file': path.parent.joinpath('compensation', 'autoeq_in-ear.csv'),
+            'file': DIR.parent.joinpath('compensation', 'autoeq_in-ear.csv'),
             'label': 'AutoEq In-ear',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
@@ -83,35 +83,35 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': path.parent.joinpath('compensation', 'diffuse_field_5128_-1dBpoct.csv'),
+            'file': DIR.parent.joinpath('compensation', 'diffuse_field_5128_-1dBpoct.csv'),
             'label': 'Diffuse Field 5128 (-1 dB /oct)',
             'compatible': [{'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'}],
             'recommended': [{'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'}],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': path.parent.joinpath('compensation', 'diffuse_field_gras_kemar.csv'),
+            'file': DIR.parent.joinpath('compensation', 'diffuse_field_gras_kemar.csv'),
             'label': 'Diffuse Field GRAS KEMAR',
             'compatible': [],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': path.parent.joinpath('compensation', 'diffuse_field_iso_11904-2.csv'),
+            'file': DIR.parent.joinpath('compensation', 'diffuse_field_iso_11904-2.csv'),
             'label': 'Diffuse Field ISO 11904-2',
             'compatible': [],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': path.parent.joinpath('compensation', 'zero.csv'),
+            'file': DIR.parent.joinpath('compensation', 'zero.csv'),
             'label': 'Flat',
             'compatible': [],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': path.parent.joinpath('compensation', 'harman_in-ear_2019v2_wo_bass.csv'),
+            'file': DIR.parent.joinpath('compensation', 'harman_in-ear_2019v2_wo_bass.csv'),
             'label': 'Harman In-ear 2019',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
@@ -122,7 +122,7 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': path.parent.joinpath('compensation', 'harman_over-ear_2018_wo_bass.csv'),
+            'file': DIR.parent.joinpath('compensation', 'harman_over-ear_2018_wo_bass.csv'),
             'label': 'Harman Over-ear 2018',
             'compatible': [
                 {'source': 'crinacle', 'form': 'over-ear', 'rig': 'GRAS 43AG-7'},
@@ -135,7 +135,7 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },
         {
-            'file': path.parent.joinpath('compensation', 'headphonecom_autoeq_in-ear.csv'),
+            'file': DIR.parent.joinpath('compensation', 'headphonecom_autoeq_in-ear.csv'),
             'label': 'Headphone.com Legacy AutoEq In-ear',
             'compatible': [
                 {'source': 'headphonecom', 'form': 'in-ear', 'rig': 'unknown'},
@@ -148,21 +148,21 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': path.parent.joinpath('compensation', 'headphonecom_harman_in-ear_2019v2_wo_bass.csv'),
+            'file': DIR.parent.joinpath('compensation', 'headphonecom_harman_in-ear_2019v2_wo_bass.csv'),
             'label': 'Headphone.com Legacy Harman In-ear 2019',
             'compatible': [{'source': 'headphonecom', 'form': 'in-ear', 'rig': 'unknown'}],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': path.parent.joinpath('compensation', 'headphonecom_harman_over-ear_2018_wo_bass.csv'),
+            'file': DIR.parent.joinpath('compensation', 'headphonecom_harman_over-ear_2018_wo_bass.csv'),
             'label': 'Headphone.com Legacy Harman Over-ear 2018',
             'compatible': [{'source': 'headphonecom', 'form': 'over-ear', 'rig': 'unknown'}],
             'recommended': [{'source': 'headphonecom', 'form': 'over-ear', 'rig': 'unknown'}],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },
         {
-            'file': path.parent.joinpath('compensation', '711_5128_delta.csv'),
+            'file': DIR.parent.joinpath('compensation', '711_5128_delta.csv'),
             'label': '711/5128 Delta',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': 'unknown'},
@@ -173,7 +173,7 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': path.parent.joinpath('compensation', 'innerfidelity_autoeq_in-ear.csv'),
+            'file': DIR.parent.joinpath('compensation', 'innerfidelity_autoeq_in-ear.csv'),
             'label': 'Innerfidelity AutoEq In-ear',
             'compatible': [
                 {'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'},
@@ -186,7 +186,7 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': path.parent.joinpath('compensation', 'innerfidelity_harman_in-ear_2019v2_wo_bass.csv'),
+            'file': DIR.parent.joinpath('compensation', 'innerfidelity_harman_in-ear_2019v2_wo_bass.csv'),
             'label': 'Innerfidelity Harman In-ear 2019',
             'compatible': [
                 {'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'},
@@ -196,14 +196,14 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': path.parent.joinpath('compensation', 'innerfidelity_harman_over-ear_2018_wo_bass.csv'),
+            'file': DIR.parent.joinpath('compensation', 'innerfidelity_harman_over-ear_2018_wo_bass.csv'),
             'label': 'Innerfidelity Harman Over-ear 2018',
             'compatible': [{'source': 'innerfidelity', 'form': 'over-ear', 'rig': 'unknown'}],
             'recommended': [{'source': 'innerfidelity', 'form': 'over-ear', 'rig': 'unknown'}],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },
         {
-            'file': path.parent.joinpath('compensation', 'rtings_autoeq_in-ear.csv'),
+            'file': DIR.parent.joinpath('compensation', 'rtings_autoeq_in-ear.csv'),
             'label': 'Rtings AutoEq In-ear',
             'compatible': [
                 {'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'},
@@ -216,7 +216,7 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': path.parent.joinpath('compensation', 'rtings_harman_in-ear_2019v2_wo_bass.csv'),
+            'file': DIR.parent.joinpath('compensation', 'rtings_harman_in-ear_2019v2_wo_bass.csv'),
             'label': 'Rtings Harman In-ear 2019',
             'compatible': [
                 {'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'},
@@ -226,7 +226,7 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': path.parent.joinpath('compensation', 'rtings_harman_over-ear_2018_wo_bass.csv'),
+            'file': DIR.parent.joinpath('compensation', 'rtings_harman_over-ear_2018_wo_bass.csv'),
             'label': 'Rtings Harman Over-ear 2018',
             'compatible': [{'source': 'rtings', 'form': 'over-ear', 'rig': 'unknown'}],
             'recommended': [{'source': 'rtings', 'form': 'over-ear', 'rig': 'unknown'}],

@@ -1901,6 +1901,28 @@
 - [TRN X7](./711%20in-ear/TRN%20X7) on 711
 - [Truthear Hexa](./711%20in-ear/Truthear%20Hexa) on 711
 - [Truthear Hola](./711%20in-ear/Truthear%20Hola) on 711
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 1)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%201)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 10)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%2010)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 2)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%202)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 3)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%203)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 4)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%204)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 5)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%205)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 6)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%206)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 7)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%207)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 8)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%208)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 9)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%209)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 1)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%201)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 10)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%2010)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 2)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%202)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 3)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%203)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 4)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%204)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 5)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%205)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 6)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%206)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 7)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%207)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 8)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%208)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 9)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%209)) on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED) on Bruel & Kjaer 4620
 - [Truthear Zero (sample 10)](./711%20in-ear/Truthear%20Zero%20(sample%2010)) on 711
 - [Truthear Zero (sample 2)](./711%20in-ear/Truthear%20Zero%20(sample%202)) on 711
 - [Truthear Zero (sample 3)](./711%20in-ear/Truthear%20Zero%20(sample%203)) on 711

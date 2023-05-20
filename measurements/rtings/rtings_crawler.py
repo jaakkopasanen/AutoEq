@@ -116,38 +116,6 @@ class RtingsCrawler(Crawler):
             fr.name = item.true_name
         else:
             raise FileNotFoundError(f'Could not download JSON file for{item.true_name} at {url}')
-            # # No frequency response available, download bass, mid and treble
-            # # Bass
-            # Crawler.download(
-            #     url.replace('frequency-response-14.json', 'bass.json'),
-            #     f'{item.true_name}-bass', os.path.join(DIR_PATH, 'json')
-            # )
-            # with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}-bass.json'), 'r', encoding='utf-8') as fh:
-            #     bass_fr, bass_target = self.parse_json(json.load(fh))
-            # # Mid
-            # Crawler.download(
-            #     url.replace('frequency-response-14.json', 'mid.json'),
-            #     f'{item.true_name}-mid', os.path.join(DIR_PATH, 'json')
-            # )
-            # with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}-mid.json'), 'r', encoding='utf-8') as fh:
-            #     mid_fr, mid_target = self.parse_json(json.load(fh))
-            # # Treble
-            # Crawler.download(
-            #     url.replace('frequency-response-14.json', 'treble.json'),
-            #     f'{item.true_name}-treble', os.path.join(DIR_PATH, 'json')
-            # )
-            # with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}-treble.json'), 'r', encoding='utf-8') as fh:
-            #     treble_fr, treble_target = self.parse_json(json.load(fh))
-            # fr = FrequencyResponse(
-            #     name=item.true_name,
-            #     frequency=np.concatenate([bass_fr.frequency, mid_fr.frequency, treble_fr.frequency]),
-            #     raw=np.concatenate([bass_fr.raw, mid_fr.raw, treble_fr.raw])
-            # )
-            # target = FrequencyResponse(
-            #     name=item.true_name,
-            #     frequency=np.concatenate([bass_target.frequency, mid_target.frequency, treble_target.frequency]),
-            #     raw=np.concatenate([bass_target.raw, mid_target.raw, treble_target.raw])
-            # )
 
         fr.interpolate()
         if np.std(fr.raw) == 0:
@@ -173,7 +141,7 @@ class RtingsCrawler(Crawler):
         plt.close(fig)
 
         # Write to file
-        dir_path = os.path.join(DIR_PATH, 'data', item.form, fr.name)
+        dir_path = os.path.join(DIR_PATH, 'data', item.form)
         os.makedirs(dir_path, exist_ok=True)
         file_path = os.path.join(dir_path, fr.name + '.csv')
         fr.write_to_csv(file_path)
