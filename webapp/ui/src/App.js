@@ -270,6 +270,7 @@ const App = (props) => {
   };
 
   const onMeasurementCreated = (name, dataPoints) => {
+    setUpAudioContext();
     const newMeasurements = cloneDeep(measurementsRef.current);
     const obj = transposeArrayToObject(dataPoints, ['frequency', 'raw']);
     const newMeasurement = {
