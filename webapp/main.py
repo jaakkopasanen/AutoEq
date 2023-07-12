@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, validator, root_validator, confloat, conlist, conint
+from pydantic import BaseModel, validator, model_validator, confloat, conlist, conint
 from typing import Union, Optional
 import soundfile as sf
 from scipy.fft import fft
@@ -94,7 +94,7 @@ class Filter(BaseModel):
 class PEQConfig(BaseModel):
     optimizer: Optional[Optimizer]
     filter_defaults: Optional[Filter]
-    filters: conlist(Filter, min_items=1)
+    filters: conlist(Filter, min_length=1)
 
 
 class BitDepthEnum(int, Enum):
@@ -108,47 +108,47 @@ class PhaseEnum(str, Enum):
 
 
 class ResponseRequirements(BaseModel):
-    fr_f_step = DEFAULT_STEP
+    fr_f_step: float = DEFAULT_STEP
     fr_fields: Optional[list[str]]
-    base64fp16 = False
+    base64fp16: bool = False
 
 
 class EqualizeRequest(BaseModel):
-    measurement: Optional[MeasurementData]
-    name: Optional[str]
-    source: Optional[str]
-    rig: Optional[str]
+    measurement: Optional[MeasurementData] = None
+    name: Optional[str] = None
+    source: Optional[str] = None
+    rig: Optional[str] = None
     compensation: Optional[Union[str, MeasurementData]]
-    bass_boost_gain = DEFAULT_BASS_BOOST_GAIN
-    bass_boost_fc = DEFAULT_BASS_BOOST_FC
-    bass_boost_q = DEFAULT_BASS_BOOST_Q
-    treble_boost_gain = DEFAULT_TREBLE_BOOST_GAIN
-    treble_boost_fc = DEFAULT_TREBLE_BOOST_FC
-    treble_boost_q = DEFAULT_TREBLE_BOOST_Q
-    tilt = DEFAULT_TILT
+    bass_boost_gain: float = DEFAULT_BASS_BOOST_GAIN
+    bass_boost_fc: float = DEFAULT_BASS_BOOST_FC
+    bass_boost_q: float = DEFAULT_BASS_BOOST_Q
+    treble_boost_gain: float = DEFAULT_TREBLE_BOOST_GAIN
+    treble_boost_fc: float = DEFAULT_TREBLE_BOOST_FC
+    treble_boost_q: float = DEFAULT_TREBLE_BOOST_Q
+    tilt: float = DEFAULT_TILT
     fs: Optional[int] = DEFAULT_FS
     bit_depth: Optional[BitDepthEnum] = DEFAULT_BIT_DEPTH
     f_res: Optional[float] = DEFAULT_F_RES
     phase: Optional[PhaseEnum] = DEFAULT_PHASE
     sound_signature: Optional[MeasurementData]
     sound_signature_smoothing_window_size: Optional[float] = DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
-    max_gain = DEFAULT_MAX_GAIN
-    max_slope = DEFAULT_MAX_SLOPE
-    window_size = DEFAULT_SMOOTHING_WINDOW_SIZE
-    treble_window_size = DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE
-    treble_f_lower = DEFAULT_TREBLE_F_LOWER
-    treble_f_upper = DEFAULT_TREBLE_F_UPPER
-    treble_gain_k = DEFAULT_TREBLE_GAIN_K
-    parametric_eq = False
+    max_gain: float = DEFAULT_MAX_GAIN
+    max_slope: float = DEFAULT_MAX_SLOPE
+    window_size: float = DEFAULT_SMOOTHING_WINDOW_SIZE
+    treble_window_size: float = DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE
+    treble_f_lower: float = DEFAULT_TREBLE_F_LOWER
+    treble_f_upper: float = DEFAULT_TREBLE_F_UPPER
+    treble_gain_k: float = DEFAULT_TREBLE_GAIN_K
+    parametric_eq: bool = False
     parametric_eq_config: Optional[Union[str, PEQConfig, list[Union[str, PEQConfig]]]] = '8_PEAKING_WITH_SHELVES'
-    fixed_band_eq = False
+    fixed_band_eq: bool = False
     fixed_band_eq_config: Optional[Union[str, PEQConfig]] = '10_BAND_GRAPHIC_EQ'
-    graphic_eq = False
-    convolution_eq = False
-    preamp = DEFAULT_PREAMP
-    response: Optional[ResponseRequirements]
+    graphic_eq: bool = False
+    convolution_eq: bool = False
+    preamp: float = DEFAULT_PREAMP
+    response: Optional[ResponseRequirements] = None
 
-    @root_validator
+    @model_validator(mode='before')
     def only_one_eq_type(cls, values):
         assert values.get('measurement') or (values.get('name') and values.get('source') and values.get('rig')), 'Measurement is required'
         keys = ['parametric_eq', 'fixed_band_eq', 'equalizer_apo_graphic_eq', 'convolution_eq']

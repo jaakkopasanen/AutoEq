@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {Box, TextField, Typography, useMediaQuery} from '@mui/material';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
@@ -75,11 +75,11 @@ const Knob = (props) => {
     }
   };
 
-  useEffect(() => {
-    if (props.initialValue !== value) {
-      setValue(props.formatter(props.initialValue));
-    }
-  }, [props.initialValue]);
+  const [prevInitialValue, setPrevInitialValue] = useState(props.initialValue);
+  if (props.initialValue !== prevInitialValue) {
+    setValue(props.formatter(props.initialValue));
+    setPrevInitialValue(props.initialValue);
+  }
 
   const elRef = useRef();
   const theme = useTheme();

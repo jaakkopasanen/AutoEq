@@ -1,4 +1,4 @@
-export default [
+const equalizers = [
   {
     label: '10-band Graphic Eq',
     type: 'fixedBand',
@@ -189,3 +189,4 @@ export default [
     instructions: 'Download the file on your phone and import to Wavelet by selecting AutoEq, clicking the headphone name and then Import button'
   },
 ];
+export default equalizers;

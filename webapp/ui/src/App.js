@@ -65,6 +65,7 @@ const App = (props) => {
   const [selectedCompensation, setSelectedCompensation, selectedCompensationRef] = useStateRef(null);
   const [soundSignature, setSoundSignature, soundSignatureRef] = useStateRef(null);  // Sound signature { frequency, raw }
   // Smoothing window size for sound signature
+  // eslint-disable-next-line no-unused-vars
   const [soundSignatureSmoothingWindowSize, setSoundSignatureSmoothingWindowSize, soundSignatureSmoothingWindowSizeRef] = useStateRef(1.0);
 
   const [equalizers, setEqualizers, equalizersRef] = useStateRef(defaultEqualizers);
@@ -94,6 +95,7 @@ const App = (props) => {
   const [parametricEq, setParametricEq] = useState(null);
   const [fixedBandEq, setFixedBandEq] = useState(null);
   const [firAudioBuffer, setFirAudioBuffer] = useState(null);
+  // eslint-disable-next-line no-unused-vars
   const [isEqOn, setIsEqOn, isEqOnRef] = useStateRef(false);
   const maxSlopeRef = useRef(18);
 
@@ -143,6 +145,7 @@ const App = (props) => {
   };
   useEffect(() => {
     setUp();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const setUpAudioContext = () => {
