@@ -188,4 +188,11 @@ export default [
     type: 'graphic',
     instructions: 'Download the file on your phone and import to Wavelet by selecting AutoEq, clicking the headphone name and then Import button'
   },
+  {
+    label: 'Super EQ (foobar2000, DeaDBeeF)',
+    type: 'fixedBand',
+    config: 'SUPER_EQ',
+    uiConfig: { showFsControl: false },
+    instructions: 'Adjust the sliders in your equalizer app to match the gain values. Set preamp to given value if that option is available in the app.'
+  },
 ];

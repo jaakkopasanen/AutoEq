@@ -292,4 +292,19 @@ PEQ_CONFIGS = {
             'max_fc': 10000.0,
         }] * 8
     },
+    'SUPER_EQ': {
+        'optimizer': {'min_std': 0.01},
+        'filter_defaults': {'q': 2.871, 'min_gain': -20.0, 'max_gain': 20.0, 'type': 'PEAKING'},
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 65.406392,
+            'q': 0.7
+        }] + [
+            {'fc': 77.782 * math.sqrt(2) ** i, 'type': 'PEAKING'} for i in range(16)
+        ] + [{
+            'type': 'HIGH_SHELF',
+            'fc': 16744.036,
+            'q': 0.7
+        }]
+    },
 }
