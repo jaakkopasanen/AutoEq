@@ -161,7 +161,7 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         fixed_band_eq_config = PEQ_CONFIGS['10_BAND_GRAPHIC_EQ']
     
     if voicemeeterpeq:
-        	voicemeeterpeq = True
+        voicemeeterpeq = True
     
     if rockbox and not ten_band_eq:
         raise ValueError('Rockbox configuration requires ten-band eq')
