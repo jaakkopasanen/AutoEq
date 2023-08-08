@@ -188,4 +188,11 @@ export default [
     type: 'graphic',
     instructions: 'Download the file on your phone and import to Wavelet by selecting AutoEq, clicking the headphone name and then Import button'
   },
+  {
+    label: 'Voicemeeter BANANA EQ',
+    type: 'parametric',
+    config: 'VOICEMEETER_PEQ',
+    uiConfig: { showFsControl: true },
+    instructions: 'Import generated .xml to Voicemeeter BANANA EQ (right-click EQ window header, ...)'
+  },
 ];
