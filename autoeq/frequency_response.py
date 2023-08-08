@@ -42,6 +42,7 @@ class FrequencyResponse:
                  error_smoothed=None,
                  equalization=None,
                  parametric_eq=None,
+                 voicemeeterpeq=None,
                  fixed_band_eq=None,
                  equalized_raw=None,
                  equalized_smoothed=None,
@@ -60,6 +61,7 @@ class FrequencyResponse:
         self.error_smoothed = self._init_data(error_smoothed)
         self.equalization = self._init_data(equalization)
         self.parametric_eq = self._init_data(parametric_eq)
+        self.voicemeeterpeq = self._init_data(voicemeeterpeq)
         self.fixed_band_eq = self._init_data(fixed_band_eq)
         self.equalized_raw = self._init_data(equalized_raw)
         self.equalized_smoothed = self._init_data(equalized_smoothed)
@@ -76,6 +78,7 @@ class FrequencyResponse:
             error_smoothed=self._init_data(self.error_smoothed),
             equalization=self._init_data(self.equalization),
             parametric_eq=self._init_data(self.parametric_eq),
+            voicemeeterpeq=self._init_data(self.voicemeeterpeq),
             fixed_band_eq=self._init_data(self.fixed_band_eq),
             equalized_raw=self._init_data(self.equalized_raw),
             equalized_smoothed=self._init_data(self.equalized_smoothed),
@@ -133,6 +136,7 @@ class FrequencyResponse:
               equalization=True,
               fixed_band_eq=True,
               parametric_eq=True,
+              voicemeeterpeq=True,
               equalized_raw=True,
               equalized_smoothed=True,
               target=True):
@@ -149,6 +153,8 @@ class FrequencyResponse:
             self.equalization = self._init_data(None)
         if parametric_eq:
             self.parametric_eq = self._init_data(None)
+        if voicemeeterpeq:
+            self.voicemeeterpeq = self._init_data(None)
         if fixed_band_eq:
             self.fixed_band_eq = self._init_data(None)
         if equalized_raw:
@@ -246,7 +252,42 @@ class FrequencyResponse:
         file_path = os.path.abspath(file_path)
         df = pd.DataFrame(self.to_dict())
         df.to_csv(file_path, header=True, index=False, float_format='%.2f')
-
+    
+    def write_voicemeeter_peq(self, file_path, peqs):
+        file_path = os.path.abspath(file_path)
+        f = self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP)
+        compound = PEQ(f, peqs[0].fs, [])
+        for peq in peqs:
+            for filt in peq.filters:
+                compound.add_filter(filt)
+        EQType = 0
+        with open(file_path.replace('.txt', '.xml'), 'w', encoding='utf-8') as f:
+            s = f'<?xml version="1.0" encoding="utf-8"?>\n'
+            s += f'<VBAudioVoicemeeterBUSEQConfig>\n'
+            s += f'<VoiceMeeterBUSEQ>\n'
+            for idx in range(1,2):
+                for channel in range(1,9):
+                    for i, filt in enumerate(compound.filters):
+                        s += f'\t<Bus index=\'{idx:d}\' ' 
+                        s += f'channel=\'{channel:d}\' '
+                        s += f'cell=\'{i+1:d}\' '
+                        s += f'EQon=\'1\' ' 
+                        if i > 0 and i < 5:
+                            EQType = 0
+                        elif i == 0:
+                            EQType = 5
+                        else:
+                            EQType = 6
+                        s += f'EQtype=\'{EQType:d}\' ' 
+                        s += f'dblevel=\'{filt.gain:.2f}\' '
+                        s += f'freq=\'{filt.fc:.2f}\' '
+                        s += f'Q=\'{filt.q:.2f}\' />\n'
+                            #print(s)
+                            
+            s += f'</VoiceMeeterBUSEQ>\n'
+            s += f'</VBAudioVoicemeeterBUSEQConfig>'
+            f.write(s)
+            
     def eqapo_graphic_eq(self, normalize=True, preamp=DEFAULT_PREAMP, f_step=DEFAULT_GRAPHIC_EQ_STEP):
         """Generates EqualizerAPO GraphicEQ string from equalization curve."""
         fr = self.__class__(name='hack', frequency=self.frequency, raw=self.equalization)
@@ -694,6 +735,7 @@ class FrequencyResponse:
             error_smoothed=True,
             equalization=True,
             parametric_eq=True,
+            voicemeeterpeq=True,
             fixed_band_eq=True,
             equalized_raw=True,
             equalized_smoothed=True,
@@ -824,6 +866,7 @@ class FrequencyResponse:
             error_smoothed=False,
             equalization=True,
             parametric_eq=True,
+            voicemeeterpeq=True,
             fixed_band_eq=True,
             equalized_raw=True,
             equalized_smoothed=True,
