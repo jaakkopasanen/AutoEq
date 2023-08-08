@@ -33,6 +33,8 @@ def cli_args():
                             help='Will run equalization if this parameter exists, no value needed.')
     arg_parser.add_argument('--parametric-eq', action='store_true',
                             help='Will produce parametric eq settings if this parameter exists, no value needed.')
+    arg_parser.add_argument('--voicemeeterpeq', action='store_true',
+                            help='Will produce Voicemeeter eq settings if this parameter exists, no value needed.')
     arg_parser.add_argument('--fixed-band-eq', action='store_true',
                             help='Will produce fixed band eq settings if this parameter exists, no value needed.')
     arg_parser.add_argument('--rockbox', action='store_true',
