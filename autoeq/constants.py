@@ -310,7 +310,7 @@ PEQ_CONFIGS = {
         },
         'filters': [{
             'type': 'LOW_SHELF',
-            'fc': 65.0,
+            'fc': 65.406392,
             'q': 0.7
         }, 
             {'type': 'PEAKING'},
