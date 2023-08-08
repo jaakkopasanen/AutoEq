@@ -292,4 +292,38 @@ PEQ_CONFIGS = {
             'max_fc': 10000.0,
         }] * 8
     },
+    'VOICEMEETER_PEQ': {
+        'optimizer': {
+            'min_f': 20,
+            'max_f': 20000,
+            'max_time': None,
+            'min_change_rate': None,
+            'min_std': 0.008,
+        },
+        'filter_defaults': {
+            'min_fc': 20.0,
+            'max_fc': 10000.0,
+            'min_q': 0.18248,
+            'max_q': 6.0,
+            'min_gain': -20,
+            'max_gain': 20
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 65.0,
+            'q': 0.7
+        }, 
+            {'type': 'PEAKING'},
+            {'type': 'PEAKING'},
+            {'type': 'PEAKING'},
+            {'type': 'PEAKING'},
+        {
+            'type': 'HIGH_SHELF',
+            'fc': 16744.036,
+            'min_fc': 15000,
+            'max_fc': 20000,
+            'min_q': 0.4,
+            'max_q': 0.7
+        }] 
+    }
 }
