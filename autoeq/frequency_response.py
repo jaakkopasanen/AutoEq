@@ -282,7 +282,6 @@ class FrequencyResponse:
                         s += f'dblevel=\'{filt.gain:.2f}\' '
                         s += f'freq=\'{filt.fc:.2f}\' '
                         s += f'Q=\'{filt.q:.2f}\' />\n'
-                            #print(s)
                             
             s += f'</VoiceMeeterBUSEQ>\n'
             s += f'</VBAudioVoicemeeterBUSEQConfig>'
