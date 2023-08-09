@@ -261,10 +261,11 @@ class FrequencyResponse:
         df.to_csv(file_path, header=True, index=False, float_format='%.2f')
 
     def write_supereq(self, file_path):  # interpolation method = scipy.interpolate.krogh_interpolate()
-        # remember import bisect
         """Writes SuperEq's 18 band eq settings to a preset file."""
+        """Gain values are interpolated using Krogh's interpolator method from same memory data which is stored into csv file by AutoEQ"""
         last_idx = np.size(self.frequency)-1
         prev_idx = 0
+        self.gains = []  # array slot used in plot_graph()
         with open(file_path.replace('.txt', '.feqk'), 'w', encoding='utf-8') as f:  # .feq = foobar2k preset file extension
             s = ''
             file_path = os.path.abspath(file_path)
@@ -275,15 +276,18 @@ class FrequencyResponse:
                 idx = bisect.bisect_left(self.frequency, i, lo=prev_idx, hi=last_idx-1)
                 if last_idx > idx+1:
                     P = krogh_interpolate([self.frequency[idx-2], self.frequency[idx-1], self.frequency[idx], self.frequency[idx+1]], \
-                                                       [self.equalization[idx-2], self.equalization[idx-1], self.equalization[idx], self.equalization[idx+1]], i, der=0)
+                                            [self.equalization[idx-2], self.equalization[idx-1], self.equalization[idx], self.equalization[idx+1]], i, der=0)
                     G = int(np.round(P))
                     s += f'{G:d}\n'
                     prev_idx = idx
-                else: # get value from the last element
-                    G = round(self.equalization[-1]) # (~20kHz)     
+                    self.gains.append(G)
+                else: # get value from the last element if less than 20kHz
+                    G = round(self.equalization[-1]) 
                     s += f'{G:d}\n'
-                    
+                    self.gains.append(G)
+            
             f.write(s)
+            self.supereq = True  # flag used in plot_graph()
             
     def write_voicemeeter_peq(self, file_path, peqs):
         """ Generates prest file for Voicemeeter BANANA EQ."""
@@ -1226,6 +1230,7 @@ class FrequencyResponse:
                    error_smoothed=True,
                    equalization=True,
                    parametric_eq=True,
+                   supereq=True,
                    fixed_band_eq=True,
                    equalized=True,
                    target=True,
@@ -1241,6 +1246,7 @@ class FrequencyResponse:
                    error_smoothed_plot_kwargs=None,
                    equalization_plot_kwargs=None,
                    parametric_eq_plot_kwargs=None,
+                   supereq_plot_kwargs=None,
                    fixed_band_eq_plot_kwargs=None,
                    equalized_plot_kwargs=None,
                    target_plot_kwargs=None,
@@ -1307,6 +1313,18 @@ class FrequencyResponse:
                 self.frequency, self.equalized_raw,
                 **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized', linewidth=1, color='blue')
             )
+
+        if self.supereq:
+            if np.size(self.gains) > 0:
+                low = [20, 65, 93, 131, 185, 262, 370, 523, 740, 1047, 1480, 2093, 2960, 4186, 5920, 8372, 11840, 16744];
+                high = [65, 93, 131, 185, 262, 370, 523, 740, 1047, 1480, 2093, 2960, 4186, 5920, 8372, 11840, 16744, 20000];
+                for k in range(0,18):
+                    G = self.gains[k]
+                    ax.plot([low[k],high[k]], [G, G], linestyle='--', color='black', linewidth=1)
+                    ax.plot([low[k],low[k]],[0, G], linestyle='--', color='black', linewidth=1)
+                    ax.plot([high[k],high[k]],[G, 0], linestyle='--', color='black', linewidth=1)
+                    
+                ax.plot(20000, G, **self.kwarg_defaults(supereq_plot_kwargs, label='SuperEq', linewidth=1, linestyle='--', color='black'))
 
         ax.set_title(self.name)
         if len(ax.lines) > 0:
