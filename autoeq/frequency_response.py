@@ -7,7 +7,7 @@ import matplotlib.ticker as ticker
 import math
 import pandas as pd
 from io import StringIO
-from scipy.interpolate import InterpolatedUnivariateSpline
+from scipy.interpolate import InterpolatedUnivariateSpline, krogh_interpolate
 from scipy.signal import savgol_filter, find_peaks, minimum_phase, firwin2
 from scipy.special import expit
 from scipy.stats import linregress
@@ -259,8 +259,34 @@ class FrequencyResponse:
         file_path = os.path.abspath(file_path)
         df = pd.DataFrame(self.to_dict())
         df.to_csv(file_path, header=True, index=False, float_format='%.2f')
-    
+
+    def write_supereq(self, file_path):  # interpolation method = scipy.interpolate.krogh_interpolate()
+        # remember import bisect
+        """Writes SuperEq's 18 band eq settings to a preset file."""
+        last_idx = np.size(self.frequency)-1
+        prev_idx = 0
+        with open(file_path.replace('.txt', '.feqk'), 'w', encoding='utf-8') as f:  # .feq = foobar2k preset file extension
+            s = ''
+            file_path = os.path.abspath(file_path)
+            cfreq = [55.0, 77.0, 110.0, 156.0, 220.0, 311.0, 440.0, 622.0, 880.0, 1200.0, 1800.0, \
+                     2500.0, 3500.0, 5000.0, 7000.0, 10000.0, 14000.0, 20000.0] # SuperEQ band center frequencies
+            idx = 0
+            for i in cfreq:
+                idx = bisect.bisect_left(self.frequency, i, lo=prev_idx, hi=last_idx-1)
+                if last_idx > idx+1:
+                    P = krogh_interpolate([self.frequency[idx-2], self.frequency[idx-1], self.frequency[idx], self.frequency[idx+1]], \
+                                                       [self.equalization[idx-2], self.equalization[idx-1], self.equalization[idx], self.equalization[idx+1]], i, der=0)
+                    G = int(np.round(P))
+                    s += f'{G:d}\n'
+                    prev_idx = idx
+                else: # get value from the last element
+                    G = round(self.equalization[-1]) # (~20kHz)     
+                    s += f'{G:d}\n'
+                    
+            f.write(s)
+            
     def write_voicemeeter_peq(self, file_path, peqs):
+        """ Generates prest file for Voicemeeter BANANA EQ."""
         file_path = os.path.abspath(file_path)
         f = self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP)
         compound = PEQ(f, peqs[0].fs, [])
