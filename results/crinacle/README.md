@@ -1444,6 +1444,7 @@
 - [Razer BlackShark V2 Pro](./GRAS%2043AG-7%20over-ear/Razer%20BlackShark%20V2%20Pro) on GRAS 43AG-7
 - [Razer BlackShark V2 X](./GRAS%2043AG-7%20over-ear/Razer%20BlackShark%20V2%20X) on GRAS 43AG-7
 - [Razer Kraken V3 Pro](./GRAS%2043AG-7%20over-ear/Razer%20Kraken%20V3%20Pro) on GRAS 43AG-7
+- [Razer Moray](./Bruel%20&%20Kjaer%204620%20in-ear/Razer%20Moray) on Bruel & Kjaer 4620
 - [RHA CL1](./711%20in-ear/RHA%20CL1) on 711
 - [RHA CL2](./711%20in-ear/RHA%20CL2) on 711
 - [RHA CL750](./711%20in-ear/RHA%20CL750) on 711

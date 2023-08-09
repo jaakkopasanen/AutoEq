@@ -287,8 +287,8 @@ Big Bus	Big Bus Earbuds	in-ear
 Biggie	Venture Electronics Monk IE Biggie	in-ear
 Billets	MUNITIO Billets	in-ear
 Billie Jean	JH Audio Billie Jean	in-ear
-BL-Max	BLON BL-Max	in-ear
 BL-MAX	BLON BL-Max	in-ear
+BL-Max	BLON BL-Max	in-ear
 BL01	BLON BL-01	in-ear
 BL03	BLON BL-03 (sample 1)	in-ear
 BL03 S3	BLON BL-03 (sample 3)	in-ear
@@ -902,8 +902,8 @@ IE800	Sennheiser IE 800	in-ear
 IE800S	Sennheiser IE 800 S	in-ear
 IE80S	Sennheiser IE 80 S (min)	in-ear
 IE80S Half	Sennheiser IE 80 S (half)	in-ear
-IE80S max	Sennheiser IE 80 S (max)	in-ear
 IE80S Max	Sennheiser IE 80 S (max)	in-ear
+IE80S max	Sennheiser IE 80 S (max)	in-ear
 IE900	Sennheiser IE 900	in-ear
 IER-Z1R	Sony IER-Z1R	in-ear
 IEX1	Audio-Technica ATH-IEX1	in-ear
@@ -935,8 +935,8 @@ Jade II	HIFIMAN Jade II	over-ear
 Janus	ddHiFi E2020A Janus	in-ear
 Jasper	AUNE Jasper	in-ear
 Jazz	Jomo Audio Jazz	in-ear
-Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
 JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
+Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
 JH13v2 Max	JH Audio 13v2 (max)	in-ear
 JH13v2 Min	JH Audio 13v2 (min)	in-ear
 JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	in-ear
@@ -1270,6 +1270,7 @@ Monarch S2 20ohm	ThieAudio Monarch (20 Ohm resistor)	in-ear
 Monet 17	FitEar Monet 17	in-ear
 Monitor 10	Pioneer Monitor 10	over-ear
 Moonlight	Yanyin Moonlight	in-ear
+Moray	Razer Moray	in-ear
 MS4	Hidizs Mermaid MS4	in-ear
 MSR7b	Audio-Technica ATH-MSR7b	over-ear
 MT1	TRN MT1	in-ear
@@ -1506,6 +1507,9 @@ Rai Solo	Meze Rai Solo	in-ear
 RE2000	HIFIMAN RE2000	in-ear
 RE400	HIFIMAN RE400	in-ear
 RE800	HIFIMAN RE800	in-ear
+Red V3.0b		ignore
+Red V3.1		ignore
+Red V3.1 10ohm		ignore
 Reference	HUM Hong Kong Reference	in-ear
 Reference FF	Fatfreq Reference	in-ear
 Reference Plus	Fatfreq Reference Plus	in-ear

@@ -1,8 +1,12 @@
 false_name	true_name	form
 1More 1M301 Single Driver	1MORE Single Driver	in-ear
+1More 1M301 Single Driver (Standard)	1MORE Single Driver	in-ear
 1More H1701 Triple Driver Over-Ear	1MORE Triple Driver Over Ear	over-ear
+1More H1701 Triple Driver Over-Ear (Standard)	1MORE Triple Driver Over Ear	over-ear
 1More Quad Driver	1MORE Quad Driver	in-ear
+1More Quad Driver (Standard)	1MORE Quad Driver	in-ear
 1More Triple Driver LTNG	1MORE Triple Driver LTNG	in-ear
+1More Triple Driver LTNG (Standard)	1MORE Triple Driver LTNG	in-ear
 64 Audio A12t (M15 Apex Module)	64 Audio A12t (m15 Apex module)	in-ear
 64 Audio A12t (M20 Apex Module)	64 Audio A12t (m20 Apex module)	in-ear
 64 Audio N8	64 Audio N8	ignore
@@ -24,6 +28,7 @@ AKG K361 (variant 1)	AKG K361	over-ear
 AKG K361 (variant 2)	AKG K361 (sample 2)	ignore
 AKG K371	AKG K371	over-ear
 AKG K371 (Brainwavz oval earpads)	AKG K371 (Brainwavz oval earpads)	over-ear
+AKG K52	AKG K52	over-ear
 AKG K553	AKG K553	over-ear
 AKG K601	AKG K601	over-ear
 AKG K601 (Dekoni Fenestrated Sheepskin Earpads)	AKG K601 (Dekoni fenestrated sheepskin earpads)	over-ear
@@ -47,6 +52,7 @@ AKG N20	AKG N20	in-ear
 AKG N400NC	AKG N400	in-ear
 AKG N5005	AKG N5005	in-ear
 AKG N60 NC Wireless Bluetooth	AKG N60 NC Wireless	over-ear
+AKG Q701	AKG Q701	over-ear
 AKG Y50BT	AKG Y50BT	over-ear
 Akoustyx R-220	Akoustyx R-220	in-ear
 Allen & Heath XD-53	Allen & Heath XD-53	over-ear
@@ -60,10 +66,12 @@ Anker Soundcore Life Q30 (ANC on)	Anker Soundcore Life Q30 (ANC on)	over-ear
 Anker Soundcore Life Q35 (ANC off or Ambience on)	Anker Soundcore Life Q35 (ANC off)	over-ear
 Anker Soundcore Life Q35 (ANC on)	Anker Soundcore Life Q35 (ANC on)	over-ear
 Anker Soundcore Life Q35 (wired, passive)	Anker Soundcore Life Q35 (wired, passive)	over-ear
+Anker Soundcore Space Q45 (ANC or Transparency mode)	Anker Soundcore Space Q45 (ANC on)	over-ear
 Apple AirPods Max	Apple AirPods Max	over-ear
 Apple AirPods Max (3rd party pleather earpads)	Apple AirPods Max (3rd party pleather earpads)	over-ear
 Apple ME186 In-Ear Headphones	Apple ME186 In-Ear Headphones	in-ear
 Astro A40 TR	ASTRO Gaming A40 TR	ignore
+Audeze CRBN	Audeze CRBN	over-ear
 Audeze Euclid	Audeze Euclid	in-ear
 Audeze iSine10	Audeze iSINE 10	in-ear
 Audeze iSine20	Audeze iSINE 20	in-ear
@@ -80,6 +88,7 @@ Audeze LCD-4	Audeze LCD-4	over-ear
 Audeze LCD-4z	Audeze LCD-4z	over-ear
 Audeze LCD-5	Audeze LCD-5	over-ear
 Audeze LCD-MX4	Audeze LCD-MX4	over-ear
+Audeze LCD-R	Audeze LCD-R	over-ear
 Audeze LCD-X	Audeze LCD-X	over-ear
 Audeze LCD-X (2021 revision)	Audeze LCD-X 2021	over-ear
 Audeze LCD-X (Dekoni Sheepskin Earpads)	Audeze LCD-X (Dekoni sheepskin Earpads)	over-ear
@@ -96,6 +105,7 @@ Audio Technica ATH-A2000Z	Audio-Technica ATH-A2000Z	over-ear
 Audio Technica ATH-AD700X	Audio-Technica ATH-AD700X	over-ear
 Audio Technica ATH-ADX5000	Audio-Technica ATH-ADX5000	over-ear
 Audio Technica ATH-CKN50	Audio-Technica ATH-CKN50	in-ear
+Audio Technica ATH-M20x	Audio-Technica ATH-M20x	over-ear
 Audio Technica ATH-M40x	Audio-Technica ATH-M40x	over-ear
 Audio Technica ATH-M50x	Audio-Technica ATH-M50x	over-ear
 Audio Technica ATH-M50x (Dekoni Sheepskin Earpads)	Audio-Technica ATH-M50x (Dekoni sheepskin earpads)	over-ear
@@ -123,6 +133,7 @@ Beats Powerbeats Pro	Beats Powerbeats Pro	in-ear
 Beats Pro	Beats Pro	over-ear
 Beats Solo Pro	Beats Solo Pro	over-ear
 Beats Studio Buds	Beats Studio Buds	in-ear
+Beats Studio3 Wireless	Beats Studio3 Wireless	over-ear
 Beyerdynamic Amiron Home	Beyerdynamic Amiron Home	over-ear
 Beyerdynamic Aventho Wireless	Beyerdynamic Aventho Wireless	over-ear
 Beyerdynamic Blue Byrd	Beyerdynamic Blue Byrd	in-ear
@@ -179,6 +190,7 @@ Bose Headphone 700 (preliminary)	Bose Noise Cancelling Headphones 700	over-ear
 Bose QC20	Bose QuietComfort 20	in-ear
 Bose QC25	Bose QuietComfort 25	over-ear
 Bose QC25 (ANC off)	Bose Q25 (ANC off)	over-ear
+Bose QC45	Bose QuietComfort 45	over-ear
 Bose SoundSport Free	Bose SoundSport Free	in-ear
 Bose SoundSport Wireless	Bose SoundSport Wireless	in-ear
 Bowers & Wilkins C5 series 2	Bowers & Wilkins C5 Series 2	in-ear
@@ -196,6 +208,7 @@ Campfire Audio Polaris	Campfire Audio Polaris	in-ear
 Campfire Audio Vega (Foam Eartips)	Campfire Audio Vega (Foam Eartips)	in-ear
 Cleer Next	Cleer Next	over-ear
 Coolermaster MH752	Cooler Master MH752	over-ear
+Cosmic Ears CE6B	Cosmic Ears CE6B	in-ear
 Creative Aurvana Live!	Creative Aurvana Live!	over-ear
 Creative Aurvana Live!2	Creative Aurvana Live! 2	over-ear
 Creative SoundBlasterx H6 (analog input)	Creative Sound Blasterx H6 (analog input)	over-ear
@@ -217,6 +230,7 @@ Dan Clark Audio Ether C Flow	Dan Clark Audio Ether C Flow	over-ear
 Dan Clark Audio Ether C Flow 1.1	Dan Clark Audio Ether C Flow 1.1	over-ear
 Dan Clark Audio Ether CX	Dan Clark Audio Ether CX	over-ear
 Dan Clark Audio Ether Flow	Dan Clark Audio Ether Flow	over-ear
+Dan Clark Audio Ether Flow 1.1	Dan Clark Audio Ether Flow 1.1	over-ear
 Dan Clark Audio Expanse	Dan Clark Audio EXPANSE	over-ear
 Dan Clark Audio Stealth	Dan Clark Audio Stealth	over-ear
 Denon AH-D5200	Denon AH-D5200	over-ear
@@ -230,6 +244,7 @@ Dunu Titan 3	DUNU Titan 3	ignore
 E-MU Teak	E-Mu Teak	over-ear
 Earfun Free Pro (Oluv Edition)	EarFun Free Pro (Oluv Edition)	in-ear
 Earfun Wave	EarFun Wave	over-ear
+ETA Mini Closed	ETA Mini Closed	over-ear
 ETA Mini-S	ETA Mini Semi-Closed	over-ear
 ETA Mini-S (with ring dampeners installed)	ETA Mini Semi-Closed (with ring dampeners installed)	over-ear
 Etimova Airmotiv GR1	Emotiva Airmotiv GR1	over-ear
@@ -277,6 +292,7 @@ Focal Utopia (Dekoni Sheepskin Earpads)	Focal Utopia (Dekoni sheepskin Earpads)	
 Focal Utopia 2022	Focal Utopia 2022	over-ear
 Focusrite HP60 (Scarlett Studio)	Focusrite HP60 (Scarlett Studio)	over-ear
 Fostex T-X0	Fostex T-X0	over-ear
+Fostex T40RPmk3	Fostex T40RP Mk3	over-ear
 Fostex T60RP	Fostex T60RP	over-ear
 Fostex TH-X00 Ebony	Fostex TH-X00 Ebony	over-ear
 Fostex TH-X00 Mahogany	Fostex TH-X00 Mahogany	over-ear
@@ -359,6 +375,7 @@ Koss ESP/95X (6 band parametric)	Massdrop x Koss ESP95X (6 band parametric)	igno
 Koss ESP/95X (RME ADI-2 settin (midrange precision))		ignore
 Koss KPH30i	Koss KPH30i	over-ear
 Koss KPH30i (Grado GS1000 earpads)	Koss KPH30i (Grado GS1000 earpads)	over-ear
+Koss KPH40	Koss KPH40	over-ear
 Koss KSC75	Koss KSC75	over-ear
 Koss KSC75 (Diffuse-Field)		ignore
 Koss KSC75X (Yaxi earpads)	Koss KSC75X (Yaxi earpads)	over-ear
@@ -475,6 +492,7 @@ Raptgo Hook-X	Raptgo Hook-X	in-ear
 RHA MA750	RHA MA750	ignore
 Ritmix RH-508	Ritmix RH-508	over-ear
 Rock Zircon	Rock Zircon	in-ear
+Rode NTH-100	RØDE NTH-100	over-ear
 Rosson Audio RAD-0	Rosson Audio Design RAD-0	over-ear
 "Samsung ""EO-IC500 """"ANC Type-C"""""""	Samsung EO-IC500 ANC Type-C	in-ear
 "Samsung EO-IC500 ""ANC Type-C"""	Samsung EO-IC500 ANC Type-C	in-ear
@@ -485,6 +503,10 @@ Samsung SM-R175 Galaxy Buds+	Samsung Galaxy Buds Plus	ignore
 Samsung SM-R177 Galaxy Buds 2	Samsung Galaxy Buds2	in-ear
 Samsung SM-R190 Galaxy Buds Pro	Samsung Galaxy Buds Pro	in-ear
 Samsung SM-R510 Galaxy Buds 2 Pro	Samsung Galaxy Buds2 Pro	in-ear
+Sash Tres 45 (closed back, leather earpads)	Sash Tres 45 (closed back, leather earpads)	over-ear
+Sash Tres 45 (open back, leather earpads)	Sash Tres 45 (open back, leather earpads)	over-ear
+Sash Tres 45 (perforated leather earpads)	Sash Tres 45 (perforated leather earpads)	over-ear
+Sash Tres 45 (velours earpads)	Sash Tres 45 (velour earpads)	over-ear
 Sendy Aiva	Sendy Aiva	over-ear
 Sendy Peacock	Sendy Peacock	over-ear
 Sennheiser CX 400BT	Sennheiser CX 400BT	in-ear
@@ -591,6 +613,7 @@ Sony MDR-XB80BS	Sony MDR-XB80BS	in-ear
 Sony MDR-Z1R	Sony MDR-Z1R	over-ear
 Sony MDR-Z7 (preliminary)	Sony MDR-Z7	over-ear
 Sony MDR-Z7M2	Sony MDR-Z7M2	over-ear
+Sony MDR-ZX310	Sony MDR-ZX310	over-ear
 Sony MH750	Sony MH750	in-ear
 Sony MH755	Sony MH755	in-ear
 Sony WF-1000X	Sony WF-1000X	in-ear
@@ -602,6 +625,7 @@ Sony WH-1000XM2	Sony WH-1000XM2	over-ear
 Sony WH-1000XM3	Sony WH-1000XM3	over-ear
 Sony WH-1000XM4	Sony WH-1000XM4	over-ear
 Sony WH-1000XM5	Sony WH-1000XM5	over-ear
+Sony WH-CH510	Sony WH-CH510	over-ear
 Sony WH-H900N	Sony WH-H900N	over-ear
 Sony WH1000XM2	Sony WH-1000XM2	over-ear
 Sony WH1000XM3	Sony WH-1000XM3	over-ear

@@ -65,7 +65,7 @@ class Oratory1990Crawler(Crawler):
                 continue
 
             false_name = f'{manufacturer} {model}'
-            if notes:
+            if notes and notes.lower() != 'standard':
                 false_name += f' ({notes})'
             if false_name not in urls:
                 urls[false_name] = url

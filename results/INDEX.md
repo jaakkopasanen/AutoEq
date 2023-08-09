@@ -230,6 +230,7 @@ from the same source.
 - [AKG K501](./Innerfidelity/over-ear/AKG%20K501) by Innerfidelity
 - [AKG K518LE](./Innerfidelity/over-ear/AKG%20K518LE) by Innerfidelity
 - [AKG K52](./crinacle/GRAS%2043AG-7%20over-ear/AKG%20K52) by Crinacle, GRAS 43AG-7
+- [AKG K52](./oratory1990/over-ear/AKG%20K52) by oratory1990
 - [AKG K550](./Headphone.com%20Legacy/over-ear/AKG%20K550) by Headphone.com (Legacy)
 - [AKG K550](./Innerfidelity/over-ear/AKG%20K550) by Innerfidelity
 - [AKG K553](./oratory1990/over-ear/AKG%20K553) by oratory1990
@@ -304,6 +305,7 @@ from the same source.
 - [AKG Q460 Quincy Jones](./Innerfidelity/over-ear/AKG%20Q460%20Quincy%20Jones) by Innerfidelity
 - [AKG Q701 Quincy Jones](./Headphone.com%20Legacy/over-ear/AKG%20Q701%20Quincy%20Jones) by Headphone.com (Legacy)
 - [AKG Q701 Quincy Jones](./Innerfidelity/over-ear/AKG%20Q701%20Quincy%20Jones) by Innerfidelity
+- [AKG Q701](./oratory1990/over-ear/AKG%20Q701) by oratory1990
 - [AKG Q701](./Rtings/over-ear/AKG%20Q701) by Rtings
 - [AKG Y50BT](./oratory1990/over-ear/AKG%20Y50BT) by oratory1990
 - [Akoustyx R-220](./oratory1990/in-ear/Akoustyx%20R-220) by oratory1990
@@ -318,6 +320,7 @@ from the same source.
 - [Altec Lansing True Evo](./Rtings/in-ear/Altec%20Lansing%20True%20Evo) by Rtings
 - [Altiat Cal.1H](./crinacle/GRAS%2043AG-7%20over-ear/Altiat%20Cal.1H) by Crinacle, GRAS 43AG-7
 - [Amazon Echo Buds Gen 2](./Rtings/in-ear/Amazon%20Echo%20Buds%20Gen%202) by Rtings
+- [Amazon Echo Buds Gen 3](./Rtings/in-ear/Amazon%20Echo%20Buds%20Gen%203) by Rtings
 - [Amazon Echo Buds](./oratory1990/in-ear/Amazon%20Echo%20Buds) by oratory1990
 - [Amazon Echo Buds](./Rtings/in-ear/Amazon%20Echo%20Buds) by Rtings
 - [AmazonBasics Lightweight On Ear](./Rtings/over-ear/AmazonBasics%20Lightweight%20On%20Ear) by Rtings
@@ -362,6 +365,7 @@ from the same source.
 - [Anker Soundcore Life Q35](./Rtings/over-ear/Anker%20Soundcore%20Life%20Q35) by Rtings
 - [Anker Soundcore Space A40](./Rtings/in-ear/Anker%20Soundcore%20Space%20A40) by Rtings
 - [Anker SoundCore Space NC](./Rtings/over-ear/Anker%20SoundCore%20Space%20NC) by Rtings
+- [Anker Soundcore Space Q45 (ANC on)](./oratory1990/over-ear/Anker%20Soundcore%20Space%20Q45%20(ANC%20on)) by oratory1990
 - [Anker Soundcore Space Q45](./Rtings/over-ear/Anker%20Soundcore%20Space%20Q45) by Rtings
 - [Anker Soundcore Spirit X](./Rtings/in-ear/Anker%20Soundcore%20Spirit%20X) by Rtings
 - [Anker Zolo Liberty+](./Rtings/in-ear/Anker%20Zolo%20Liberty+) by Rtings
@@ -437,6 +441,7 @@ from the same source.
 - [Audeze CRBN (sample 1)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20CRBN%20(sample%201)) by Crinacle, GRAS 43AG-7
 - [Audeze CRBN (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20CRBN%20(sample%202)) by Crinacle, GRAS 43AG-7
 - [Audeze CRBN](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20CRBN) by Crinacle, GRAS 43AG-7
+- [Audeze CRBN](./oratory1990/over-ear/Audeze%20CRBN) by oratory1990
 - [Audeze EL8 Closed](./Innerfidelity/over-ear/Audeze%20EL8%20Closed) by Innerfidelity
 - [Audeze EL8 Open](./Innerfidelity/over-ear/Audeze%20EL8%20Open) by Innerfidelity
 - [Audeze Euclid](./crinacle/711%20in-ear/Audeze%20Euclid) by Crinacle, 711
@@ -498,6 +503,7 @@ from the same source.
 - [Audeze LCD-MX4](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20LCD-MX4) by Crinacle, GRAS 43AG-7
 - [Audeze LCD-MX4](./oratory1990/over-ear/Audeze%20LCD-MX4) by oratory1990
 - [Audeze LCD-R](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20LCD-R) by Crinacle, GRAS 43AG-7
+- [Audeze LCD-R](./oratory1990/over-ear/Audeze%20LCD-R) by oratory1990
 - [Audeze LCD-X (Dekoni sheepskin Earpads)](./oratory1990/over-ear/Audeze%20LCD-X%20(Dekoni%20sheepskin%20Earpads)) by oratory1990
 - [Audeze LCD-X (sample 3)](./Innerfidelity/over-ear/Audeze%20LCD-X%20(sample%203)) by Innerfidelity
 - [Audeze LCD-X (serial number 7454971)](./Innerfidelity/over-ear/Audeze%20LCD-X%20(serial%20number%207454971)) by Innerfidelity
@@ -614,6 +620,7 @@ from the same source.
 - [Audio-Technica ATH-LS50](./crinacle/711%20in-ear/Audio-Technica%20ATH-LS50) by Crinacle, 711
 - [Audio-Technica ATH-M10](./Headphone.com%20Legacy/over-ear/Audio-Technica%20ATH-M10) by Headphone.com (Legacy)
 - [Audio-Technica ATH-M10](./Innerfidelity/over-ear/Audio-Technica%20ATH-M10) by Innerfidelity
+- [Audio-Technica ATH-M20x](./oratory1990/over-ear/Audio-Technica%20ATH-M20x) by oratory1990
 - [Audio-Technica ATH-M20x](./Rtings/over-ear/Audio-Technica%20ATH-M20x) by Rtings
 - [Audio-Technica ATH-M30](./crinacle/EARS%20+%20711%20over-ear/Audio-Technica%20ATH-M30) by Crinacle, EARS + 711
 - [Audio-Technica ATH-M30x](./Rtings/over-ear/Audio-Technica%20ATH-M30x) by Rtings
@@ -753,9 +760,11 @@ from the same source.
 - [Beats Solo](./Innerfidelity/over-ear/Beats%20Solo) by Innerfidelity
 - [Beats Studio 2 2014](./Innerfidelity/over-ear/Beats%20Studio%202%202014) by Innerfidelity
 - [Beats Studio 2 Bluetooth](./Innerfidelity/over-ear/Beats%20Studio%202%20Bluetooth) by Innerfidelity
+- [Beats Studio Buds +](./Rtings/in-ear/Beats%20Studio%20Buds%20+) by Rtings
 - [Beats Studio Buds](./oratory1990/in-ear/Beats%20Studio%20Buds) by oratory1990
 - [Beats Studio Buds](./Rtings/in-ear/Beats%20Studio%20Buds) by Rtings
 - [Beats Studio Wireless](./Rtings/over-ear/Beats%20Studio%20Wireless) by Rtings
+- [Beats Studio3 Wireless](./oratory1990/over-ear/Beats%20Studio3%20Wireless) by oratory1990
 - [Beats Studio3 Wireless](./Rtings/over-ear/Beats%20Studio3%20Wireless) by Rtings
 - [Beats Studio](./Innerfidelity/over-ear/Beats%20Studio) by Innerfidelity
 - [Beats Tour 2014](./Innerfidelity/in-ear/Beats%20Tour%202014) by Innerfidelity
@@ -976,6 +985,7 @@ from the same source.
 - [Bose QuietComfort 35 II](./Rtings/over-ear/Bose%20QuietComfort%2035%20II) by Rtings
 - [Bose QuietComfort 35](./Rtings/over-ear/Bose%20QuietComfort%2035) by Rtings
 - [Bose QuietComfort 3](./Headphone.com%20Legacy/over-ear/Bose%20QuietComfort%203) by Headphone.com (Legacy)
+- [Bose QuietComfort 45](./oratory1990/over-ear/Bose%20QuietComfort%2045) by oratory1990
 - [Bose QuietComfort 45](./Rtings/over-ear/Bose%20QuietComfort%2045) by Rtings
 - [Bose QuietComfort Earbuds II](./Rtings/in-ear/Bose%20QuietComfort%20Earbuds%20II) by Rtings
 - [Bose QuietComfort Earbuds](./Rtings/in-ear/Bose%20QuietComfort%20Earbuds) by Rtings
@@ -1010,6 +1020,7 @@ from the same source.
 - [Bowers & Wilkins PX5](./Rtings/over-ear/Bowers%20&%20Wilkins%20PX5) by Rtings
 - [Bowers & Wilkins Px7 S2](./Rtings/over-ear/Bowers%20&%20Wilkins%20Px7%20S2) by Rtings
 - [Bowers & Wilkins PX7](./Rtings/over-ear/Bowers%20&%20Wilkins%20PX7) by Rtings
+- [Bowers & Wilkins Px8](./Rtings/over-ear/Bowers%20&%20Wilkins%20Px8) by Rtings
 - [Bowers & Wilkins PX](./crinacle/GRAS%2043AG-7%20over-ear/Bowers%20&%20Wilkins%20PX) by Crinacle, GRAS 43AG-7
 - [Bowers & Wilkins PX](./Rtings/over-ear/Bowers%20&%20Wilkins%20PX) by Rtings
 - [BQEYZ Autumn (bass filter)](./crinacle/711%20in-ear/BQEYZ%20Autumn%20(bass%20filter)) by Crinacle, 711
@@ -1131,6 +1142,7 @@ from the same source.
 - [Corsair Void Elite](./Rtings/over-ear/Corsair%20Void%20Elite) by Rtings
 - [Corsair Void PRO RGB](./Rtings/over-ear/Corsair%20Void%20PRO%20RGB) by Rtings
 - [Corsair Void RGB](./Rtings/over-ear/Corsair%20Void%20RGB) by Rtings
+- [Cosmic Ears CE6B](./oratory1990/in-ear/Cosmic%20Ears%20CE6B) by oratory1990
 - [Cougar Immersa](./Rtings/over-ear/Cougar%20Immersa) by Rtings
 - [Cowin Apex Elite](./Rtings/in-ear/Cowin%20Apex%20Elite) by Rtings
 - [Cowin E7 (wired, ANC off)](./Innerfidelity/over-ear/Cowin%20E7%20(wired,%20ANC%20off)) by Innerfidelity
@@ -1210,6 +1222,7 @@ from the same source.
 - [Dan Clark Audio Ether C](./oratory1990/over-ear/Dan%20Clark%20Audio%20Ether%20C) by oratory1990
 - [Dan Clark Audio Ether CX](./oratory1990/over-ear/Dan%20Clark%20Audio%20Ether%20CX) by oratory1990
 - [Dan Clark Audio Ether Flow 1.1](./crinacle/GRAS%2043AG-7%20over-ear/Dan%20Clark%20Audio%20Ether%20Flow%201.1) by Crinacle, GRAS 43AG-7
+- [Dan Clark Audio Ether Flow 1.1](./oratory1990/over-ear/Dan%20Clark%20Audio%20Ether%20Flow%201.1) by oratory1990
 - [Dan Clark Audio Ether Flow](./Innerfidelity/over-ear/Dan%20Clark%20Audio%20Ether%20Flow) by Innerfidelity
 - [Dan Clark Audio Ether Flow](./oratory1990/over-ear/Dan%20Clark%20Audio%20Ether%20Flow) by oratory1990
 - [Dan Clark Audio EXPANSE](./oratory1990/over-ear/Dan%20Clark%20Audio%20EXPANSE) by oratory1990
@@ -1407,6 +1420,7 @@ from the same source.
 - [EPOS Sennheiser GSP 600](./Rtings/over-ear/EPOS%20Sennheiser%20GSP%20600) by Rtings
 - [ES Lab ES-1a](./crinacle/GRAS%2043AG-7%20over-ear/ES%20Lab%20ES-1a) by Crinacle, GRAS 43AG-7
 - [Eskuche 33 1 3 B](./Innerfidelity/over-ear/Eskuche%2033%201%203%20B) by Innerfidelity
+- [ETA Mini Closed](./oratory1990/over-ear/ETA%20Mini%20Closed) by oratory1990
 - [ETA Mini Semi-Closed (with ring dampeners installed)](./oratory1990/over-ear/ETA%20Mini%20Semi-Closed%20(with%20ring%20dampeners%20installed)) by oratory1990
 - [ETA Mini Semi-Closed](./oratory1990/over-ear/ETA%20Mini%20Semi-Closed) by oratory1990
 - [Eternal Melody EM6W](./crinacle/711%20in-ear/Eternal%20Melody%20EM6W) by Crinacle, 711
@@ -1733,6 +1747,7 @@ from the same source.
 - [Fostex T-X0](./oratory1990/over-ear/Fostex%20T-X0) by oratory1990
 - [Fostex T20RP Mk3](./Innerfidelity/over-ear/Fostex%20T20RP%20Mk3) by Innerfidelity
 - [Fostex T40RP Mk3](./Innerfidelity/over-ear/Fostex%20T40RP%20Mk3) by Innerfidelity
+- [Fostex T40RP Mk3](./oratory1990/over-ear/Fostex%20T40RP%20Mk3) by oratory1990
 - [Fostex T50](./Innerfidelity/over-ear/Fostex%20T50) by Innerfidelity
 - [Fostex T50RP (sample 1)](./Innerfidelity/over-ear/Fostex%20T50RP%20(sample%201)) by Innerfidelity
 - [Fostex T50RP (sample 2)](./Innerfidelity/over-ear/Fostex%20T50RP%20(sample%202)) by Innerfidelity
@@ -2220,6 +2235,7 @@ from the same source.
 - [JBL TUNE 750BTNC](./Rtings/over-ear/JBL%20TUNE%20750BTNC) by Rtings
 - [JBL Tune 760NC](./Rtings/over-ear/JBL%20Tune%20760NC) by Rtings
 - [JBL Vibe 100TWS](./Rtings/in-ear/JBL%20Vibe%20100TWS) by Rtings
+- [JBL Vibe Beam](./Rtings/in-ear/JBL%20Vibe%20Beam) by Rtings
 - [JH Audio 13v2 (2 o’clock)](./crinacle/711%20in-ear/JH%20Audio%2013v2%20(2%20o%E2%80%99clock)) by Crinacle, 711
 - [JH Audio 13v2 (max)](./crinacle/711%20in-ear/JH%20Audio%2013v2%20(max)) by Crinacle, 711
 - [JH Audio 13v2 (min)](./crinacle/711%20in-ear/JH%20Audio%2013v2%20(min)) by Crinacle, 711
@@ -2362,6 +2378,7 @@ from the same source.
 - [Koss KPH30i](./crinacle/GRAS%2043AG-7%20over-ear/Koss%20KPH30i) by Crinacle, GRAS 43AG-7
 - [Koss KPH30i](./oratory1990/over-ear/Koss%20KPH30i) by oratory1990
 - [Koss KPH40](./crinacle/GRAS%2043AG-7%20over-ear/Koss%20KPH40) by Crinacle, GRAS 43AG-7
+- [Koss KPH40](./oratory1990/over-ear/Koss%20KPH40) by oratory1990
 - [Koss KPH7](./Innerfidelity/over-ear/Koss%20KPH7) by Innerfidelity
 - [Koss KSC75](./crinacle/GRAS%2043AG-7%20over-ear/Koss%20KSC75) by Crinacle, GRAS 43AG-7
 - [Koss KSC75](./Headphone.com%20Legacy/over-ear/Koss%20KSC75) by Headphone.com (Legacy)
@@ -2499,6 +2516,7 @@ from the same source.
 - [Linsoul Audio Lokahi](./crinacle/711%20in-ear/Linsoul%20Audio%20Lokahi) by Crinacle, 711
 - [Lioncast X55](./oratory1990/over-ear/Lioncast%20X55) by oratory1990
 - [Little Dot GYFU](./crinacle/GRAS%2043AG-7%20over-ear/Little%20Dot%20GYFU) by Crinacle, GRAS 43AG-7
+- [Logitech G PRO X 2 Lightspeed](./Rtings/over-ear/Logitech%20G%20PRO%20X%202%20Lightspeed) by Rtings
 - [Logitech G Pro X Lightspeed](./Rtings/over-ear/Logitech%20G%20Pro%20X%20Lightspeed) by Rtings
 - [Logitech G Pro X](./crinacle/GRAS%2043AG-7%20over-ear/Logitech%20G%20Pro%20X) by Crinacle, GRAS 43AG-7
 - [Logitech G Pro X](./Rtings/over-ear/Logitech%20G%20Pro%20X) by Rtings
@@ -2669,6 +2687,7 @@ from the same source.
 - [Moondrop Blessing 2](./crinacle/711%20in-ear/Moondrop%20Blessing%202) by Crinacle, 711
 - [Moondrop Blessing 2](./oratory1990/in-ear/Moondrop%20Blessing%202) by oratory1990
 - [Moondrop Blessing 3](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20Blessing%203) by Crinacle, Bruel & Kjaer 4620
+- [Moondrop Blessing 3](./Rtings/in-ear/Moondrop%20Blessing%203) by Rtings
 - [Moondrop Blessing2 Dusk (sample 3)](./crinacle/711%20in-ear/Moondrop%20Blessing2%20Dusk%20(sample%203)) by Crinacle, 711
 - [Moondrop Blessing2 Dusk (sample 4)](./crinacle/711%20in-ear/Moondrop%20Blessing2%20Dusk%20(sample%204)) by Crinacle, 711
 - [Moondrop Blessing2 Dusk](./crinacle/711%20in-ear/Moondrop%20Blessing2%20Dusk) by Crinacle, 711
@@ -3136,6 +3155,7 @@ from the same source.
 - [Razer Barracuda X](./crinacle/GRAS%2043AG-7%20over-ear/Razer%20Barracuda%20X) by Crinacle, GRAS 43AG-7
 - [Razer Barracuda X](./Rtings/over-ear/Razer%20Barracuda%20X) by Rtings
 - [Razer Barracuda](./Rtings/over-ear/Razer%20Barracuda) by Rtings
+- [Razer BlackShark V2 Pro 2023](./Rtings/over-ear/Razer%20BlackShark%20V2%20Pro%202023) by Rtings
 - [Razer BlackShark V2 Pro](./crinacle/GRAS%2043AG-7%20over-ear/Razer%20BlackShark%20V2%20Pro) by Crinacle, GRAS 43AG-7
 - [Razer BlackShark V2 Pro](./Rtings/over-ear/Razer%20BlackShark%20V2%20Pro) by Rtings
 - [Razer BlackShark V2 X](./crinacle/GRAS%2043AG-7%20over-ear/Razer%20BlackShark%20V2%20X) by Crinacle, GRAS 43AG-7
@@ -3161,6 +3181,7 @@ from the same source.
 - [Razer Kraken V3](./Rtings/over-ear/Razer%20Kraken%20V3) by Rtings
 - [Razer Kraken X](./Rtings/over-ear/Razer%20Kraken%20X) by Rtings
 - [Razer Man O' War](./Rtings/over-ear/Razer%20Man%20O'%20War) by Rtings
+- [Razer Moray](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Razer%20Moray) by Crinacle, Bruel & Kjaer 4620
 - [Razer Nari Ultimate](./Rtings/over-ear/Razer%20Nari%20Ultimate) by Rtings
 - [Razer Opus 2020](./Rtings/over-ear/Razer%20Opus%202020) by Rtings
 - [Razer Opus 2021](./Rtings/over-ear/Razer%20Opus%202021) by Rtings
@@ -3204,6 +3225,7 @@ from the same source.
 - [Rosson Audio Design RAD-0](./oratory1990/over-ear/Rosson%20Audio%20Design%20RAD-0) by oratory1990
 - [Rovking V1](./Rtings/in-ear/Rovking%20V1) by Rtings
 - [RUNMUS RGB K1 Gaming Headset](./Rtings/over-ear/RUNMUS%20RGB%20K1%20Gaming%20Headset) by Rtings
+- [RØDE NTH-100](./oratory1990/over-ear/R%C3%98DE%20NTH-100) by oratory1990
 - [RØDE NTH-100M](./Rtings/over-ear/R%C3%98DE%20NTH-100M) by Rtings
 - [Sabbat E12](./Rtings/in-ear/Sabbat%20E12) by Rtings
 - [Samson SR850](./Rtings/over-ear/Samson%20SR850) by Rtings
@@ -3246,6 +3268,10 @@ from the same source.
 - [Sansui SS35](./Innerfidelity/over-ear/Sansui%20SS35) by Innerfidelity
 - [Santa Cruz Audio SC1000 (active)](./Innerfidelity/in-ear/Santa%20Cruz%20Audio%20SC1000%20(active)) by Innerfidelity
 - [Santa Cruz Audio SC1000 (passive)](./Innerfidelity/in-ear/Santa%20Cruz%20Audio%20SC1000%20(passive)) by Innerfidelity
+- [Sash Tres 45 (closed back, leather earpads)](./oratory1990/over-ear/Sash%20Tres%2045%20(closed%20back,%20leather%20earpads)) by oratory1990
+- [Sash Tres 45 (open back, leather earpads)](./oratory1990/over-ear/Sash%20Tres%2045%20(open%20back,%20leather%20earpads)) by oratory1990
+- [Sash Tres 45 (perforated leather earpads)](./oratory1990/over-ear/Sash%20Tres%2045%20(perforated%20leather%20earpads)) by oratory1990
+- [Sash Tres 45 (velour earpads)](./oratory1990/over-ear/Sash%20Tres%2045%20(velour%20earpads)) by oratory1990
 - [SATOLEX Tubomi DH298-A1Bk](./crinacle/711%20in-ear/SATOLEX%20Tubomi%20DH298-A1Bk) by Crinacle, 711
 - [SATOLEX Tubomi DH302-A1Bs](./crinacle/711%20in-ear/SATOLEX%20Tubomi%20DH302-A1Bs) by Crinacle, 711
 - [SATOLEX Tubomi DH310-A1SS](./crinacle/711%20in-ear/SATOLEX%20Tubomi%20DH310-A1SS) by Crinacle, 711
@@ -3874,6 +3900,7 @@ from the same source.
 - [Sony MDR-M1ST](./crinacle/GRAS%2043AG-7%20over-ear/Sony%20MDR-M1ST) by Crinacle, GRAS 43AG-7
 - [Sony MDR-MA900](./crinacle/GRAS%2043AG-7%20over-ear/Sony%20MDR-MA900) by Crinacle, GRAS 43AG-7
 - [Sony MDR-MA900](./oratory1990/over-ear/Sony%20MDR-MA900) by oratory1990
+- [Sony MDR-MV1](./Rtings/over-ear/Sony%20MDR-MV1) by Rtings
 - [Sony MDR-NC8](./Rtings/over-ear/Sony%20MDR-NC8) by Rtings
 - [Sony MDR-Q68LW](./Headphone.com%20Legacy/over-ear/Sony%20MDR-Q68LW) by Headphone.com (Legacy)
 - [Sony MDR-R10](./oratory1990/over-ear/Sony%20MDR-R10) by oratory1990
@@ -3908,6 +3935,7 @@ from the same source.
 - [Sony MDR-Z7M2](./oratory1990/over-ear/Sony%20MDR-Z7M2) by oratory1990
 - [Sony MDR-ZX1000](./Innerfidelity/over-ear/Sony%20MDR-ZX1000) by Innerfidelity
 - [Sony MDR-ZX110NC](./Rtings/over-ear/Sony%20MDR-ZX110NC) by Rtings
+- [Sony MDR-ZX310](./oratory1990/over-ear/Sony%20MDR-ZX310) by oratory1990
 - [Sony MDR-ZX550BN](./Rtings/over-ear/Sony%20MDR-ZX550BN) by Rtings
 - [Sony MDR-ZX700](./Headphone.com%20Legacy/over-ear/Sony%20MDR-ZX700) by Headphone.com (Legacy)
 - [Sony MDR-ZX700](./Innerfidelity/over-ear/Sony%20MDR-ZX700) by Innerfidelity
@@ -3960,6 +3988,7 @@ from the same source.
 - [Sony WH-1000XM5](./Rtings/over-ear/Sony%20WH-1000XM5) by Rtings
 - [Sony WH-CH400](./Rtings/over-ear/Sony%20WH-CH400) by Rtings
 - [Sony WH-CH500](./Rtings/over-ear/Sony%20WH-CH500) by Rtings
+- [Sony WH-CH510](./oratory1990/over-ear/Sony%20WH-CH510) by oratory1990
 - [Sony WH-CH510](./Rtings/over-ear/Sony%20WH-CH510) by Rtings
 - [Sony WH-CH520](./Rtings/over-ear/Sony%20WH-CH520) by Rtings
 - [Sony WH-CH700N](./Rtings/over-ear/Sony%20WH-CH700N) by Rtings
@@ -4428,6 +4457,7 @@ from the same source.
 - [Turtle Beach Stealth 600](./Rtings/over-ear/Turtle%20Beach%20Stealth%20600) by Rtings
 - [Turtle Beach Stealth 700 Gen 2](./Rtings/over-ear/Turtle%20Beach%20Stealth%20700%20Gen%202) by Rtings
 - [Turtle Beach Stealth 700](./Rtings/over-ear/Turtle%20Beach%20Stealth%20700) by Rtings
+- [Turtle Beach Stealth Pro](./Rtings/over-ear/Turtle%20Beach%20Stealth%20Pro) by Rtings
 - [UBSound Fighter](./Innerfidelity/in-ear/UBSound%20Fighter) by Innerfidelity
 - [UFOEar UFO-111](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOEar%20UFO-111) by Crinacle, Bruel & Kjaer 4620
 - [UFOear UFO-112 (sample 1)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOear%20UFO-112%20(sample%201)) by Crinacle, Bruel & Kjaer 4620
