@@ -460,7 +460,7 @@ const App = (props) => {
   const customPeqConfig = !!customPeq ? customPeq.config : null;
 
   return (
-    <Box sx={{pt: 0, pb: {xs: 10.25, sm: 12}, background: '#2c2424', minHeight: '100vh', boxSizing: 'border-box'}}>
+    <Box sx={{pt: 0, pb: {xs: 10.25, sm: 14}, background: '#2c2424', minHeight: '100vh', boxSizing: 'border-box'}}>
       <Waves nWaves={10} />
 
       <Box sx={{padding: [1, 1.5]}}>

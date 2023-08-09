@@ -10,18 +10,18 @@ const theme = createTheme({
   palette: {
     primary: {
       light: '#7bc8f6',
-      main: 'rgba(20, 104, 153)'
+      main: '#146899'
     },
     secondary: {
-      light: 'rgba(255, 245, 128)',
-      main: 'rgba(222, 212, 0)',
-      dark: 'rgba(153, 131, 0)'
+      light: '#fff580',
+      main: '#ded400',
+      dark: '#998300'
     },
     error: {
-      main: 'rgba(255, 91, 61)'
+      main: '#ff5b3d'
     },
     black: {
-      main: 'rgba(37, 31, 27)'
+      main: '#251f1b'
     }
   },
   breakpoints: {

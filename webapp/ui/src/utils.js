@@ -113,7 +113,25 @@ const initParametricEqNodes = (parametricEq, audioContext) => {
 const initConvolutionNode = (audioBuffer, audioContext) => {
   const node = audioContext.createConvolver();
   node.normalize = false;
-  node.buffer = audioBuffer;
+  if (audioContext.sampleRate !== audioBuffer.sampleRate) {
+    // Requested sample rate that's different from the current device's sample rate, the FIR filter needs to be
+    // resampled for the current device
+    const offlineContext = new OfflineAudioContext(
+      audioBuffer.numberOfChannels,
+      audioBuffer.duration * audioContext.sampleRate,
+      audioContext.sampleRate);
+    const buffer = offlineContext.createBuffer(
+      audioBuffer.numberOfChannels,
+      offlineContext.length,
+      audioContext.sampleRate);
+    for (let channel = 0; channel < audioBuffer.numberOfChannels; channel++) {
+      buffer.copyToChannel(audioBuffer.getChannelData(channel), channel);
+    }
+    node.buffer = buffer;
+  } else {
+    // Sample rates match, the buffer can be used as is
+    node.buffer = audioBuffer;
+  }
   return node;
 };
 

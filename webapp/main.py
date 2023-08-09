@@ -324,15 +324,17 @@ def equalize(req: EqualizeRequest):
                 fir = fr.linear_phase_impulse_response(fs=req.fs, f_res=f_res, normalize=True, preamp=preamp).T
             else:
                 raise TypeError
+            # Create WAV data buffer
             buf = BytesIO()
             sf.write(buf, fir, req.fs, bit_depth, format='WAV')
             buf.seek(0)
+            res['fir'] = b64encode(buf.read())
+            # Add FIR frequency response
             f, mag = magnitude_response(fir, req.fs)
             fir_fr = FrequencyResponse(name='FIR', frequency=f[1:], raw=mag[1:])
             fir_fr.interpolate(f_step=f_step)
             ix200 = np.argmin(np.abs(fr.frequency - 200))
             fir_fr.raw += np.mean(fr.equalization[ix200:] - fir_fr.raw[ix200:])
-            res['fir'] = b64encode(buf.read())
             res['fr']['convolution_eq'] = fir_fr.raw.tolist()
 
         base64fp16 = req.response.base64fp16 if req.response is not None else ResponseRequirements.base64fp16

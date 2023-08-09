@@ -81,8 +81,8 @@ const EqAppConvolutionEq = (props) => {
         <Grid item xs={4} sx={{position: 'relative'}}>
           <Autocomplete
             renderInput={(params) => <TextField {...params} label='Bit depth' /> }
-            value={props.bitDepth.toFixed(0)}
-            options={['16', '32']}
+            value={props.bitDepth === 32 ? '32 bit float' : '16 bit'}
+            options={['16 bit', '32 bit float']}
             onChange={(e, val) => {
               props.onEqParamChanged({ bitDepth: parseInt(val) })
             }}

@@ -14,6 +14,7 @@ import LooksTwoOutlinedIcon from '@mui/icons-material/LooksTwoOutlined';
 import Looks3OutlinedIcon from '@mui/icons-material/Looks3Outlined';
 import Looks4OutlinedIcon from '@mui/icons-material/Looks4Outlined';
 import {useTheme} from "@emotion/react";
+import Link from '@mui/material/Link';
 
 const InfoPage = (props) => {
   const platform = isWindows ? 'Windows' : isMacos ? 'Mac OS' : isLinux ? 'Linux' : isAndroid ? 'Android' : isIos ? 'OSX' : null;
@@ -80,7 +81,14 @@ const InfoPage = (props) => {
               <Typography variant='h6' sx={{lineHeight: 1.2, mb: '12px'}}>Select equalizer app</Typography>
               {platform !== 'iOS' && (
                 <Typography variant='body2'>
-                  <b style={{color: theme.palette.secondary.light}}>{recommendedApp}</b> is recommended for <b>{platform}</b>
+                  <b style={{color: theme.palette.secondary.light}}>{recommendedApp}</b> is recommended for
+                  <b>{platform}</b>. See <Link
+                    href='https://github.com/jaakkopasanen/AutoEq/wiki/Choosing-an-Equalizer-App'
+                    target='_blank' rel='noopener'
+                    underline='none'
+                  >
+                    wiki
+                  </Link> for more options.
                 </Typography>
               )}
               {platform === 'iOS' && (
@@ -122,6 +130,18 @@ const InfoPage = (props) => {
               <Typography variant='body2'>
                 Download and import, copy and paste or configure manually, depending on your chosen equalizer
               </Typography>
+            </Grid>
+          </Grid>
+
+          <Grid item xs={12} container direction='row' alignItems='center' justifyContent='center'>
+            <Grid item>
+              <Typography>Visit <Link
+                href='https://github.com/jaakkopasanen/AutoEq/wiki/'
+                target='_blank' rel='noopener'
+                underline='none'
+              >
+                wiki
+              </Link> for frequently asked questions</Typography>
             </Grid>
           </Grid>
 

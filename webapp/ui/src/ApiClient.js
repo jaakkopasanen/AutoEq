@@ -225,7 +225,8 @@ class ApiClient {
       res.eqNodes = initParametricEqNodes(data.fixed_band_eq, audioContext);
       res.preampGain = 10 ** (data.fixed_band_eq.preamp / 20);
     } else if (!!data.fir) {
-      await audioContext.decodeAudioData(decode(data.fir), (audioBuffer) => {
+      const actx = new AudioContext({ sampleRate: params.fs });
+      await actx.decodeAudioData(decode(data.fir), (audioBuffer) => {
         res.firAudioBuffer = audioBuffer;
         const preamp = 10 ** (-Math.max(...fr.convolution_eq) / 20);
         // Add node for reverting preamp node when eq is activated because FIR filters are already normalized
