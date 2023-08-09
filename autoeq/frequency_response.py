@@ -18,6 +18,7 @@ from time import time
 from PIL import Image
 import re
 import warnings
+import bisect as bisect
 from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, \
     DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, DEFAULT_SMOOTHING_WINDOW_SIZE, \
     DEFAULT_SMOOTHING_ITERATIONS, DEFAULT_TREBLE_SMOOTHING_F_LOWER, DEFAULT_TREBLE_SMOOTHING_F_UPPER, \
@@ -42,6 +43,7 @@ class FrequencyResponse:
                  error_smoothed=None,
                  equalization=None,
                  parametric_eq=None,
+                 supereq=None,
                  voicemeeterpeq=None,
                  fixed_band_eq=None,
                  equalized_raw=None,
@@ -61,6 +63,7 @@ class FrequencyResponse:
         self.error_smoothed = self._init_data(error_smoothed)
         self.equalization = self._init_data(equalization)
         self.parametric_eq = self._init_data(parametric_eq)
+        self.supereq = self._init_data(supereq)
         self.voicemeeterpeq = self._init_data(voicemeeterpeq)
         self.fixed_band_eq = self._init_data(fixed_band_eq)
         self.equalized_raw = self._init_data(equalized_raw)
@@ -78,6 +81,7 @@ class FrequencyResponse:
             error_smoothed=self._init_data(self.error_smoothed),
             equalization=self._init_data(self.equalization),
             parametric_eq=self._init_data(self.parametric_eq),
+            supereq=self._init_data(self.supereq),
             voicemeeterpeq=self._init_data(self.voicemeeterpeq),
             fixed_band_eq=self._init_data(self.fixed_band_eq),
             equalized_raw=self._init_data(self.equalized_raw),
@@ -136,6 +140,7 @@ class FrequencyResponse:
               equalization=True,
               fixed_band_eq=True,
               parametric_eq=True,
+              supereq=True,
               voicemeeterpeq=True,
               equalized_raw=True,
               equalized_smoothed=True,
@@ -153,6 +158,8 @@ class FrequencyResponse:
             self.equalization = self._init_data(None)
         if parametric_eq:
             self.parametric_eq = self._init_data(None)
+        if supereq:
+            self.supereq = self._init_data(None)
         if voicemeeterpeq:
             self.voicemeeterpeq = self._init_data(None)
         if fixed_band_eq:
@@ -734,6 +741,7 @@ class FrequencyResponse:
             error_smoothed=True,
             equalization=True,
             parametric_eq=True,
+            supereq=True,
             voicemeeterpeq=True,
             fixed_band_eq=True,
             equalized_raw=True,
@@ -865,6 +873,7 @@ class FrequencyResponse:
             error_smoothed=False,
             equalization=True,
             parametric_eq=True,
+            supereq=True,
             voicemeeterpeq=True,
             fixed_band_eq=True,
             equalized_raw=True,
