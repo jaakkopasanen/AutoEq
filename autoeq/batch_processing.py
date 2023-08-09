@@ -17,7 +17,7 @@ from autoeq.frequency_response import FrequencyResponse
 
 
 def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=False, standardize_input=False,
-                     compensation=None, parametric_eq=False, voicemeeterpeq=False, fixed_band_eq=False, rockbox=False,
+                     compensation=None, parametric_eq=False, supereq=False, voicemeeterpeq=False, fixed_band_eq=False, rockbox=False,
                      ten_band_eq=False, parametric_eq_config=None, fixed_band_eq_config=None, convolution_eq=False,
                      fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
                      bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
@@ -30,7 +30,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
                      treble_gain_k=DEFAULT_TREBLE_GAIN_K, preamp=DEFAULT_PREAMP, thread_count=0):
     """Parses files in input directory and produces equalization results in output directory."""
-    if not compensation and (parametric_eq or voicemeeterpeq or fixed_band_eq or rockbox or ten_band_eq or convolution_eq):
+    if not compensation and (parametric_eq or supereq or voicemeeterpeq or fixed_band_eq or rockbox or ten_band_eq or convolution_eq):
         raise ValueError('Compensation must be specified when equalizing.')
 
     if input_file:
@@ -111,7 +111,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
                     treble_boost_fc, treble_boost_gain, treble_boost_q,
                     bit_depth, compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
                     fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size,
-                    parametric_eq, voicemeeterpeq, phase, rockbox, sound_signature, sound_signature_smoothing_window_size,
+                    parametric_eq, supereq, voicemeeterpeq, phase, rockbox, sound_signature, sound_signature_smoothing_window_size,
                     standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp)
             args_list.append(args)
 
@@ -132,7 +132,7 @@ def process_file_wrapper(params):
 
 def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q,
                  treble_boost_fc, treble_boost_gain, treble_boost_q, bit_depth,
-                 compensation, convolution_eq, f_res, fixed_band_eq, voicemeeterpeq, fs, parametric_eq_config,
+                 compensation, convolution_eq, f_res, fixed_band_eq, supereq, voicemeeterpeq, fs, parametric_eq_config,
                  fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size, parametric_eq, phase,
                  rockbox, sound_signature, sound_signature_smoothing_window_size, standardize_input, ten_band_eq, tilt,
                  treble_f_lower, treble_f_upper, treble_gain_k, preamp):
@@ -160,9 +160,12 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         fixed_band_eq = True
         fixed_band_eq_config = PEQ_CONFIGS['10_BAND_GRAPHIC_EQ']
     
+    if supereq:
+        supereq = True
+    
     if voicemeeterpeq:
         voicemeeterpeq = True
-    
+        
     if rockbox and not ten_band_eq:
         raise ValueError('Rockbox configuration requires ten-band eq')
 
@@ -196,7 +199,10 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         fr.write_eqapo_parametric_eq(output_file_path.replace('.csv', ' ParametricEQ.txt'), parametric_peqs)
     else:
         parametric_peqs = None
-
+    
+    if supereq:
+       fr.write_supereq(output_file_path.replace('.csv', '.feq')) 
+        
     if voicemeeterpeq:
         parametric_peqs = fr.optimize_parametric_eq(
             parametric_eq_config, fs[0], preamp=preamp) if parametric_eq else None
