@@ -1318,14 +1318,13 @@ class FrequencyResponse:
             if np.size(self.gains) > 0:
                 low = [20, 65, 93, 131, 185, 262, 370, 523, 740, 1047, 1480, 2093, 2960, 4186, 5920, 8372, 11840, 16744];
                 high = [65, 93, 131, 185, 262, 370, 523, 740, 1047, 1480, 2093, 2960, 4186, 5920, 8372, 11840, 16744, 20000];
-                for k in range(0,18):
+                for k in range(0,17):
                     G = self.gains[k]
                     ax.plot([low[k],high[k]], [G, G], linestyle='--', color='black', linewidth=1)
-                    ax.plot([low[k],low[k]],[0, G], linestyle='--', color='black', linewidth=1)
-                    ax.plot([high[k],high[k]],[G, 0], linestyle='--', color='black', linewidth=1)
+                    ax.plot([high[k],high[k]],[G, self.gains[k+1]], linestyle='--', color='black', linewidth=1)
                     
-                ax.plot(20000, G, **self.kwarg_defaults(supereq_plot_kwargs, label='SuperEq', linewidth=1, linestyle='--', color='black'))
-
+                ax.plot([low[k+1],high[k+1]],[self.gains[k+1], self.gains[k+1]], **self.kwarg_defaults(supereq_plot_kwargs, label='SuperEq', linewidth=1, linestyle='--', color='black'))
+                
         ax.set_title(self.name)
         if len(ax.lines) > 0:
             ax.legend(fontsize=8)
