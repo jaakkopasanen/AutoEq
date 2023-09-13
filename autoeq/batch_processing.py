@@ -10,7 +10,7 @@ import yaml
 
 from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, \
-    DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, \
+    DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_GRAPHIC_EQ_BANDS, \
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, PEQ_CONFIGS, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_Q, \
     DEFAULT_TREBLE_BOOST_FC, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE, DEFAULT_MAX_SLOPE
 from autoeq.frequency_response import FrequencyResponse
@@ -18,8 +18,8 @@ from autoeq.frequency_response import FrequencyResponse
 
 def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=False, standardize_input=False,
                      compensation=None, parametric_eq=False, fixed_band_eq=False, rockbox=False,
-                     ten_band_eq=False, parametric_eq_config=None, fixed_band_eq_config=None, convolution_eq=False,
-                     fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
+                     ten_band_eq=False, graphic_eq_bands=DEFAULT_GRAPHIC_EQ_BANDS, parametric_eq_config=None, fixed_band_eq_config=None,
+                     convolution_eq=False, fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
                      bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
                      bass_boost_q=DEFAULT_BASS_BOOST_Q, treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
                      treble_boost_fc=DEFAULT_TREBLE_BOOST_FC, treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
@@ -109,7 +109,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
             n_total += 1
             args = (input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q,
                     treble_boost_fc, treble_boost_gain, treble_boost_q,
-                    bit_depth, compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
+                    bit_depth, compensation, convolution_eq, f_res, fixed_band_eq, fs, graphic_eq_bands, parametric_eq_config,
                     fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size,
                     parametric_eq, phase, rockbox, sound_signature, sound_signature_smoothing_window_size,
                     standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp)
@@ -132,7 +132,7 @@ def process_file_wrapper(params):
 
 def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q,
                  treble_boost_fc, treble_boost_gain, treble_boost_q, bit_depth,
-                 compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
+                 compensation, convolution_eq, f_res, fixed_band_eq, fs, graphic_eq_bands, parametric_eq_config,
                  fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size, parametric_eq, phase,
                  rockbox, sound_signature, sound_signature_smoothing_window_size, standardize_input, ten_band_eq, tilt,
                  treble_f_lower, treble_f_upper, treble_gain_k, preamp):
@@ -185,7 +185,7 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
         treble_f_upper=treble_f_upper,
         treble_gain_k=treble_gain_k,)
 
-    fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True, preamp=preamp)
+    fr.write_eqapo_graphic_eq(output_file_path.replace('.csv', ' GraphicEQ.txt'), normalize=True, preamp=preamp, graphic_eq_bands=graphic_eq_bands)
 
     if parametric_eq:
         parametric_peqs = fr.optimize_parametric_eq(

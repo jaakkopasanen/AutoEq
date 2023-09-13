@@ -17,7 +17,8 @@ from autoeq.constants import DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, DEF
     DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_MAX_GAIN, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_F_LOWER, \
     DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, DEFAULT_PHASE, DEFAULT_PREAMP, DEFAULT_F_RES, \
-    PEQ_CONFIGS, DEFAULT_BIT_DEPTH, DEFAULT_STEP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE, DEFAULT_MAX_SLOPE
+    PEQ_CONFIGS, DEFAULT_BIT_DEPTH, DEFAULT_STEP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE, DEFAULT_MAX_SLOPE, \
+    DEFAULT_GRAPHIC_EQ_BANDS
 from autoeq.frequency_response import FrequencyResponse
 
 ROOT_DIR = Path().resolve()
@@ -139,6 +140,7 @@ class EqualizeRequest(BaseModel):
     treble_f_lower = DEFAULT_TREBLE_F_LOWER
     treble_f_upper = DEFAULT_TREBLE_F_UPPER
     treble_gain_k = DEFAULT_TREBLE_GAIN_K
+    graphic_eq_bands = DEFAULT_GRAPHIC_EQ_BANDS
     parametric_eq = False
     parametric_eq_config: Optional[Union[str, PEQConfig, list[Union[str, PEQConfig]]]] = '8_PEAKING_WITH_SHELVES'
     fixed_band_eq = False
@@ -309,7 +311,7 @@ def equalize(req: EqualizeRequest):
             res['fr']['fixed_band_eq'] = fbpeq_fr.raw.tolist()
 
         if req.graphic_eq:
-            graphic_eq = fr.eqapo_graphic_eq(normalize=True, preamp=req.preamp)
+            graphic_eq = fr.eqapo_graphic_eq(normalize=True, preamp=req.preamp, n=req.graphic_eq_bands)
             res['graphic_eq'] = graphic_eq
 
         if req.convolution_eq:

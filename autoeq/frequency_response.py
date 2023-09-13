@@ -23,7 +23,7 @@ from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT
     DEFAULT_SMOOTHING_ITERATIONS, DEFAULT_TREBLE_SMOOTHING_F_LOWER, DEFAULT_TREBLE_SMOOTHING_F_UPPER, \
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_ITERATIONS, DEFAULT_TILT, DEFAULT_FS, \
     DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, DEFAULT_BASS_BOOST_FC, \
-    DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_STEP, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
+    DEFAULT_BASS_BOOST_Q, DEFAULT_GRAPHIC_EQ_BANDS, HARMAN_INEAR_PREFENCE_FREQUENCIES, \
     HARMAN_OVEREAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, \
     DEFAULT_BIQUAD_OPTIMIZATION_F_STEP, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, \
     DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
@@ -247,10 +247,10 @@ class FrequencyResponse:
         df = pd.DataFrame(self.to_dict())
         df.to_csv(file_path, header=True, index=False, float_format='%.2f')
 
-    def eqapo_graphic_eq(self, normalize=True, preamp=DEFAULT_PREAMP, f_step=DEFAULT_GRAPHIC_EQ_STEP):
+    def eqapo_graphic_eq(self, normalize=True, preamp=DEFAULT_PREAMP, n=DEFAULT_GRAPHIC_EQ_BANDS):
         """Generates EqualizerAPO GraphicEQ string from equalization curve."""
         fr = self.__class__(name='hack', frequency=self.frequency, raw=self.equalization)
-        n = np.ceil(np.log(20000 / 20) / np.log(f_step))
+        f_step = np.e ** (np.log(20000 / 20) / (n - 0.9999))
         f = 20 * f_step ** np.arange(n)
         f = np.sort(np.unique(f.astype('int')))
         fr.interpolate(f=f)
@@ -265,10 +265,10 @@ class FrequencyResponse:
         s = 'GraphicEQ: ' + s
         return s
 
-    def write_eqapo_graphic_eq(self, file_path, normalize=True, preamp=DEFAULT_PREAMP):
+    def write_eqapo_graphic_eq(self, file_path, normalize=True, preamp=DEFAULT_PREAMP, n=DEFAULT_GRAPHIC_EQ_BANDS):
         """Writes equalization graph to a file as Equalizer APO config."""
         file_path = os.path.abspath(file_path)
-        s = self.eqapo_graphic_eq(normalize=normalize, preamp=preamp)
+        s = self.eqapo_graphic_eq(normalize=normalize, preamp=preamp, n=n)
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(s)
         return s

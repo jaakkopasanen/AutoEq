@@ -49,9 +49,15 @@ export default [
       </div>
   },
   {
-    label: 'EasyEffects / PulseEffects',
+    label: 'EasyEffects / PulseEffects Convolver',
     type: 'convolution',
     instructions: 'Download file, add Convolver plugin on plugins tab and click "Import impulse" in "Impulses".'
+  },
+  {
+    label: 'EasyEffects / PulseEffects GraphicEQ',
+    type: 'graphic',
+    config: 32,
+    instructions: 'Download file, add Equalizer plugin on plugins tab and click "GraphicEQ" in "Import Preset".'
   },
   {
     label: 'eqMac (Advanced Equalizer)',
@@ -70,6 +76,7 @@ export default [
   {
     label: 'EqualizerAPO GraphicEq',
     type: 'graphic',
+    config: 127,
     instructions: 'Download the file to "C:\\Program Files\\EqualizerAPO\\config\\", open "Configuration Editor" app, add a filter "Control > Include" and select the file with 📁.'
   },
   {
@@ -186,6 +193,7 @@ export default [
   {
     label: 'Wavelet',
     type: 'graphic',
+    config: 127,
     instructions: 'Download the file on your phone and import to Wavelet by selecting AutoEq, clicking the headphone name and then Import button'
   },
 ];

@@ -6,7 +6,7 @@ import warnings
 from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_FC, \
     DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, DEFAULT_TREBLE_BOOST_FC, \
-    DEFAULT_TREBLE_BOOST_Q, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE, DEFAULT_MAX_SLOPE
+    DEFAULT_TREBLE_BOOST_Q, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE, DEFAULT_MAX_SLOPE, DEFAULT_GRAPHIC_EQ_BANDS
 from autoeq.batch_processing import batch_processing
 
 
@@ -31,6 +31,9 @@ def cli_args():
                                  '"compensation", "innerfidelity/resources" and "headphonecom/resources".')
     arg_parser.add_argument('--equalize', action='store_true',
                             help='Will run equalization if this parameter exists, no value needed.')
+    arg_parser.add_argument('--graphic-eq-bands', type=int, default=DEFAULT_GRAPHIC_EQ_BANDS,
+                            help='Number of bands to use for graphic eq preset generation.'
+                                 f'Defaults to {DEFAULT_GRAPHIC_EQ_BANDS}.')
     arg_parser.add_argument('--parametric-eq', action='store_true',
                             help='Will produce parametric eq settings if this parameter exists, no value needed.')
     arg_parser.add_argument('--fixed-band-eq', action='store_true',

@@ -63,7 +63,7 @@ DEFAULT_BIQUAD_OPTIMIZATION_F_STEP = 1.02
 DEFAULT_MAX_SLOPE = 18.0
 DEFAULT_PREAMP = 0.0
 
-DEFAULT_GRAPHIC_EQ_STEP = 1.0563  # Produces 127 samples with greatest frequency of 19871
+DEFAULT_GRAPHIC_EQ_BANDS = 127
 
 ROOT_DIR = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 MOD_REGEX = r' \((sample|serial number) [a-zA-Z0-9\-]+\)$'

@@ -127,6 +127,8 @@ class ApiClient {
       }
     } else if (params.equalizer?.type === 'fixedBand') {
       body.fixed_band_eq_config = params.equalizer.config;
+    } else if (params.equalizer?.type === 'graphic') {
+      body.graphic_eq_bands = params.equalizer.config;
     }
 
     const apiRes = await fetch('/equalize', {
