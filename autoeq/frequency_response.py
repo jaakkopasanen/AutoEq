@@ -250,7 +250,7 @@ class FrequencyResponse:
     def eqapo_graphic_eq(self, normalize=True, preamp=DEFAULT_PREAMP, n=DEFAULT_GRAPHIC_EQ_BANDS):
         """Generates EqualizerAPO GraphicEQ string from equalization curve."""
         fr = self.__class__(name='hack', frequency=self.frequency, raw=self.equalization)
-        f_step = np.e ** (np.log(20000 / 20) / (n - 0.9999))
+        f_step = np.e ** (np.log(20000 / 20) / (n - 0.88217456942))
         f = 20 * f_step ** np.arange(n)
         f = np.sort(np.unique(f.astype('int')))
         fr.interpolate(f=f)
