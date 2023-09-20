@@ -173,7 +173,7 @@ def write_recommendations(paths):
             [Headphone Ranking](./RANKING.md).
             '''
     for name, group_paths in grouped_by_name.items():
-        s += f'\n* [{name}]({group_paths[0].url_relative_to_root})'
+        s += f'\n- [{name}]({group_paths[0].url_relative_to_root})'
 
     with open(DIR_PATH.joinpath('README.md'), 'w', encoding='utf-8') as f:
         f.write(re.sub('\n[ \t]+', '\n', s).strip())
@@ -190,7 +190,7 @@ def write_full_index(paths):
 
     for name, group_paths in grouped_by_name.items():
         for path in group_paths:
-            hp_str = f'\n* [{path.name}]({path.url_relative_to_root}) by {path.source_name}'
+            hp_str = f'\n- [{path.name}]({path.url_relative_to_root}) by {path.source_name}'
             if path.rig:
                 hp_str += f' on {path.rig}'
             s += hp_str
@@ -209,7 +209,7 @@ def write_source_indexes(paths):
         grouped_by_name = group_by(source_paths, 'name')
         for name, hp_paths in grouped_by_name.items():
             for path in sort_by(hp_paths, 'priority'):
-                hp_str = f'\n* [{path.name}]({path.url_relative_to_source})'
+                hp_str = f'\n- [{path.name}]({path.url_relative_to_source})'
                 if path.rig:
                     hp_str += f' on {path.rig}'
                 s += hp_str
