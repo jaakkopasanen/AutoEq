@@ -216,25 +216,26 @@ class ApiClient {
     if (!params.equalizer) {
       res.eqNodes = [];
       res.preampGain = 1.0;
+
     } else if (!!data.parametric_eq) {
       res.parametricEq = data.parametric_eq;
       res.eqNodes = initParametricEqNodes(data.parametric_eq, audioContext);
       res.preampGain = 10 ** (data.parametric_eq.preamp / 20);
+
     } else if (!!data.fixed_band_eq) {
       res.fixedBandEq = data.fixed_band_eq;
       res.eqNodes = initParametricEqNodes(data.fixed_band_eq, audioContext);
       res.preampGain = 10 ** (data.fixed_band_eq.preamp / 20);
+
     } else if (!!data.fir) {
       const actx = new AudioContext({ sampleRate: params.fs });
-      await actx.decodeAudioData(decode(data.fir), (audioBuffer) => {
-        res.firAudioBuffer = audioBuffer;
-        const preamp = 10 ** (-Math.max(...fr.convolution_eq) / 20);
-        // Add node for reverting preamp node when eq is activated because FIR filters are already normalized
-        const unnormalizer = audioContext.createGain();
-        unnormalizer.gain.value = 1 / preamp;
-        res.eqNodes = [initConvolutionNode(audioBuffer, audioContext), unnormalizer];
-        res.preampGain = preamp;
-      });
+      res.firAudioBuffer = await actx.decodeAudioData(decode(data.fir));
+      const preamp = 10 ** (-Math.max(...fr.convolution_eq) / 20);
+      // Add node for reverting preamp node when eq is activated because FIR filters are already normalized
+      const unnormalizer = audioContext.createGain();
+      unnormalizer.gain.value = 1 / preamp;
+      res.eqNodes = [initConvolutionNode(res.firAudioBuffer, audioContext), unnormalizer];
+      res.preampGain = preamp;
     }
 
     return res;

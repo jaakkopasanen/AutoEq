@@ -26,6 +26,7 @@ const InputSlider = (props) => {
       )}
       <Grid item sx={{flexGrow: 1, width: 'auto'}} container direction='column'>
         <Grid item>
+          <Typography variant='caption'>{props.label}</Typography>
           {props.tooltip && (
             <Tooltip
               title={props.tooltip}
@@ -33,14 +34,8 @@ const InputSlider = (props) => {
               enterTouchDelay={0} leaveTouchDelay={0}
               placement='top'
             >
-              <Typography sx={{fontSize: '14px'}}>
-                {props.label}
-                <InfoOutlinedIcon sx={{width: 18, height: 18, verticalAlign: 'bottom'}} />
-              </Typography>
+              <InfoOutlinedIcon sx={{width: 14, height: 14, verticalAlign: 'middle', ml: 0.5}} />
             </Tooltip>
-          )}
-          {!props.tooltip && (
-            <Typography sx={{fontSize: '14px'}}>{props.label}</Typography>
           )}
         </Grid>
         <Grid item>

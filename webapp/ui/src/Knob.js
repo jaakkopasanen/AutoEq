@@ -207,21 +207,21 @@ const Knob = (props) => {
           </Box>
         )}
       </Box>
-      {props.label && props.tooltip && (
-        <Tooltip
-          title={props.tooltip}
-          disableFocusListener
-          enterTouchDelay={0} leaveTouchDelay={0}
-          placement='top'
-        >
-          <Typography variant='caption' sx={{lineHeight: 1}}>
-            {props.label}
-            <InfoOutlinedIcon sx={{width: 16, height: 16, verticalAlign: 'middle'}} />
-          </Typography>
-        </Tooltip>
+      {props.label && (
+        <Typography variant='caption' sx={{lineHeight: 1}}>
+          {props.label}
+        </Typography>
       )}
-      {props.label && !props.tooltip && (
-        <Typography variant='caption' sx={{lineHeight: 1}}>{props.label}</Typography>
+      {props.tooltip && (
+
+        <Tooltip
+        title={props.tooltip}
+        disableFocusListener
+        enterTouchDelay={0} leaveTouchDelay={0}
+        placement='top'
+        >
+          <InfoOutlinedIcon sx={{width: 14, height: 14, verticalAlign: 'middle', ml: 0.5}} />
+        </Tooltip>
       )}
     </Box>
   );
