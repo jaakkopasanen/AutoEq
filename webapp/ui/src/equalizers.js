@@ -43,15 +43,17 @@ export default [
     },
     instructions:
       <div>
-        <p style={{marginTop: 0}}>Custom parametric eq allows you to fully control what kind of set of paramteric filters will be produced.</p>
+        <p style={{marginTop: 0}}>Custom parametric eq allows you to fully control what kind of set of parametric filters will be produced.</p>
         <p style={{marginBottom: 0}}>Add filters, configure their types and allowed ranges for center frequency (Fc), gain and quality (Q).</p>
         <p>Download a file the app supports EqualizerAPO file format or configure the filters in the app manually.</p>
       </div>
   },
   {
-    label: 'EasyEffects / PulseEffects',
-    type: 'convolution',
-    instructions: 'Download file, add Convolver plugin on plugins tab and click "Import impulse" in "Impulses".'
+    label: 'EasyEffects',
+    type: 'parametric',
+    config: '8_PEAKING_WITH_SHELVES',
+    uiConfig: { showFsControl: true, showDownload: true },
+    instructions: 'Download the file and click "APO" below "Import Preset" in Equalizer plugin in EasyEffects'
   },
   {
     label: 'eqMac (Advanced Equalizer)',

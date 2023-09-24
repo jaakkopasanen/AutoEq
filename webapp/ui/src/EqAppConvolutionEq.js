@@ -33,6 +33,13 @@ const EqAppConvolutionEq = (props) => {
     anchor.remove();
   };
 
+  // Firefox cannot decode 32-bit float WAVs and will produce all zeros in the FIR audio buffer
+  let isFirDecodeFailed = null;
+  if (props.firAudioBuffer) {
+    const firData = props.firAudioBuffer.getChannelData(0);
+    isFirDecodeFailed = firData.filter(x => x === 0.0).length === firData.length;
+  }
+
   return (
     <Grid container direction='column' rowSpacing={1}>
       {props.instructions && (
@@ -117,6 +124,11 @@ const EqAppConvolutionEq = (props) => {
           </Tooltip>
         </Grid>
       </Grid>
+      {isFirDecodeFailed && (
+        <Grid item>
+          <Typography variant='caption' color='error'>Failed to decode filter audio data. Try another browser.</Typography>
+        </Grid>
+      )}
       <Grid item>
         <InputSlider
           label='Frequency resolution (Hz)' initialValue={props.fRes}
