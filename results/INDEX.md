@@ -77,6 +77,8 @@ from the same source.
 - [64 Audio Tia Fourte (sample 1)](./crinacle/711%20in-ear/64%20Audio%20Tia%20Fourte%20(sample%201)) by crinacle on 711
 - [64 Audio Tia Fourte (sample 2)](./crinacle/711%20in-ear/64%20Audio%20Tia%20Fourte%20(sample%202)) by crinacle on 711
 - [64 Audio Tia Fourte Noir](./crinacle/711%20in-ear/64%20Audio%20Tia%20Fourte%20Noir) by crinacle on 711
+- [64 Audio tia Trio](./crinacle/711%20in-ear/64%20Audio%20tia%20Trio) by crinacle on 711
+- [64 Audio tia Trio (sample 2)](./crinacle/711%20in-ear/64%20Audio%20tia%20Trio%20(sample%202)) by crinacle on 711
 - [64 Audio U12t](./crinacle/711%20in-ear/64%20Audio%20U12t) by crinacle on 711
 - [64 Audio U12t (sample 3)](./crinacle/711%20in-ear/64%20Audio%20U12t%20(sample%203)) by crinacle on 711
 - [64 Audio U18Tzar](./crinacle/711%20in-ear/64%20Audio%20U18Tzar) by crinacle on 711
@@ -85,8 +87,6 @@ from the same source.
 - [64 Audio U18Tzar (m20 Apex module)](./crinacle/711%20in-ear/64%20Audio%20U18Tzar%20(m20%20Apex%20module)) by crinacle on 711
 - [64 Audio U18Tzar (sample 1)](./crinacle/711%20in-ear/64%20Audio%20U18Tzar%20(sample%201)) by crinacle on 711
 - [64 Audio U18Tzar (sample 2)](./crinacle/711%20in-ear/64%20Audio%20U18Tzar%20(sample%202)) by crinacle on 711
-- [64 Audio tia Trio](./crinacle/711%20in-ear/64%20Audio%20tia%20Trio) by crinacle on 711
-- [64 Audio tia Trio (sample 2)](./crinacle/711%20in-ear/64%20Audio%20tia%20Trio%20(sample%202)) by crinacle on 711
 - [7Hz Eternal](./crinacle/711%20in-ear/7Hz%20Eternal) by crinacle on 711
 - [7Hz Salnotes Zero](./oratory1990/in-ear/7Hz%20Salnotes%20Zero) by oratory1990
 - [7Hz Salnotes Zero](./crinacle/711%20in-ear/7Hz%20Salnotes%20Zero) by crinacle on 711
@@ -117,17 +117,76 @@ from the same source.
 - [AAW Canary](./crinacle/711%20in-ear/AAW%20Canary) by crinacle on 711
 - [AAW Canary (sample 1)](./crinacle/711%20in-ear/AAW%20Canary%20(sample%201)) by crinacle on 711
 - [AAW Canary (sample 2)](./crinacle/711%20in-ear/AAW%20Canary%20(sample%202)) by crinacle on 711
-- [AAW Halcyon (Vokal filter)](./crinacle/711%20in-ear/AAW%20Halcyon%20(Vokal%20filter)) by crinacle on 711
 - [AAW Halcyon (bass filter)](./crinacle/711%20in-ear/AAW%20Halcyon%20(bass%20filter)) by crinacle on 711
 - [AAW Halcyon (norm filter)](./crinacle/711%20in-ear/AAW%20Halcyon%20(norm%20filter)) by crinacle on 711
+- [AAW Halcyon (Vokal filter)](./crinacle/711%20in-ear/AAW%20Halcyon%20(Vokal%20filter)) by crinacle on 711
 - [AAW Kingfisher](./crinacle/711%20in-ear/AAW%20Kingfisher) by crinacle on 711
 - [AAW Mockingbird](./crinacle/711%20in-ear/AAW%20Mockingbird) by crinacle on 711
 - [AAW Nightingale](./crinacle/711%20in-ear/AAW%20Nightingale) by crinacle on 711
 - [AAW W500](./crinacle/711%20in-ear/AAW%20W500) by crinacle on 711
 - [AAW W900](./crinacle/711%20in-ear/AAW%20W900) by crinacle on 711
-- [AAW x Custom Art Project 4+2 (Vokal filter)](./crinacle/711%20in-ear/AAW%20x%20Custom%20Art%20Project%204+2%20(Vokal%20filter)) by crinacle on 711
 - [AAW x Custom Art Project 4+2 (bass filter)](./crinacle/711%20in-ear/AAW%20x%20Custom%20Art%20Project%204+2%20(bass%20filter)) by crinacle on 711
 - [AAW x Custom Art Project 4+2 (norm filter)](./crinacle/711%20in-ear/AAW%20x%20Custom%20Art%20Project%204+2%20(norm%20filter)) by crinacle on 711
+- [AAW x Custom Art Project 4+2 (Vokal filter)](./crinacle/711%20in-ear/AAW%20x%20Custom%20Art%20Project%204+2%20(Vokal%20filter)) by crinacle on 711
+- [Abyss AB-1266](./Innerfidelity/over-ear/Abyss%20AB-1266) by Innerfidelity
+- [Abyss AB-1266 Phi](./crinacle/GRAS%2043AG-7%20over-ear/Abyss%20AB-1266%20Phi) by crinacle on GRAS 43AG-7
+- [Abyss AB-1266 Phi CC](./crinacle/GRAS%2043AG-7%20over-ear/Abyss%20AB-1266%20Phi%20CC) by crinacle on GRAS 43AG-7
+- [Abyss AB-1266 Phi CC Lite](./crinacle/EARS%20+%20711%20over-ear/Abyss%20AB-1266%20Phi%20CC%20Lite) by crinacle on EARS + 711
+- [Abyss Diana Phi](./crinacle/GRAS%2043AG-7%20over-ear/Abyss%20Diana%20Phi) by crinacle on GRAS 43AG-7
+- [Abyss Diana Phi](./crinacle/EARS%20+%20711%20over-ear/Abyss%20Diana%20Phi) by crinacle on EARS + 711
+- [Abyss Diana V2](./crinacle/GRAS%2043AG-7%20over-ear/Abyss%20Diana%20V2) by crinacle on GRAS 43AG-7
+- [Accidentally Extraordinary 51st Studios](./Innerfidelity/over-ear/Accidentally%20Extraordinary%2051st%20Studios) by Innerfidelity
+- [Accidentally Extraordinary Bamboo](./Innerfidelity/in-ear/Accidentally%20Extraordinary%20Bamboo) by Innerfidelity
+- [Acoustic Research AR H1](./Innerfidelity/over-ear/Acoustic%20Research%20AR%20H1) by Innerfidelity
+- [Acoustic Research AR-H1](./crinacle/GRAS%2043AG-7%20over-ear/Acoustic%20Research%20AR-H1) by crinacle on GRAS 43AG-7
+- [Acoustune HS1001](./crinacle/711%20in-ear/Acoustune%20HS1001) by crinacle on 711
+- [Acoustune HS1003](./crinacle/711%20in-ear/Acoustune%20HS1003) by crinacle on 711
+- [Acoustune HS1004](./crinacle/711%20in-ear/Acoustune%20HS1004) by crinacle on 711
+- [Acoustune HS1004 (sample 1)](./crinacle/711%20in-ear/Acoustune%20HS1004%20(sample%201)) by crinacle on 711
+- [Acoustune HS1004 (sample 2)](./crinacle/711%20in-ear/Acoustune%20HS1004%20(sample%202)) by crinacle on 711
+- [Acoustune HS1300](./crinacle/711%20in-ear/Acoustune%20HS1300) by crinacle on 711
+- [Acoustune HS1501](./crinacle/711%20in-ear/Acoustune%20HS1501) by crinacle on 711
+- [Acoustune HS1501 (sample 1)](./crinacle/711%20in-ear/Acoustune%20HS1501%20(sample%201)) by crinacle on 711
+- [Acoustune HS1501 (sample 2)](./crinacle/711%20in-ear/Acoustune%20HS1501%20(sample%202)) by crinacle on 711
+- [Acoustune HS1503](./crinacle/711%20in-ear/Acoustune%20HS1503) by crinacle on 711
+- [Acoustune HS1551](./crinacle/711%20in-ear/Acoustune%20HS1551) by crinacle on 711
+- [Acoustune HS1650](./crinacle/711%20in-ear/Acoustune%20HS1650) by crinacle on 711
+- [Acoustune HS1655](./crinacle/711%20in-ear/Acoustune%20HS1655) by crinacle on 711
+- [Acoustune HS1657](./crinacle/711%20in-ear/Acoustune%20HS1657) by crinacle on 711
+- [Acoustune HS1670](./crinacle/711%20in-ear/Acoustune%20HS1670) by crinacle on 711
+- [Acoustune HS1677](./crinacle/711%20in-ear/Acoustune%20HS1677) by crinacle on 711
+- [Acoustune HS1695](./crinacle/711%20in-ear/Acoustune%20HS1695) by crinacle on 711
+- [Acoustune HS1697](./crinacle/711%20in-ear/Acoustune%20HS1697) by crinacle on 711
+- [Acoustune HS2000MX](./crinacle/711%20in-ear/Acoustune%20HS2000MX) by crinacle on 711
+- [Adam SP-5](./oratory1990/over-ear/Adam%20SP-5) by oratory1990
+- [Advanced 747](./crinacle/711%20in-ear/Advanced%20747) by crinacle on 711
+- [Advanced 747 NC](./crinacle/711%20in-ear/Advanced%20747%20NC) by crinacle on 711
+- [Advanced Alpha (shallow earpads)](./Innerfidelity/over-ear/Advanced%20Alpha%20(shallow%20earpads)) by Innerfidelity
+- [Advanced Elise](./crinacle/711%20in-ear/Advanced%20Elise) by crinacle on 711
+- [Advanced Evo X](./crinacle/711%20in-ear/Advanced%20Evo%20X) by crinacle on 711
+- [Advanced Furai](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Advanced%20Furai) by crinacle on Bruel & Kjaer 4620
+- [Advanced GT-R](./oratory1990/over-ear/Advanced%20GT-R) by oratory1990
+- [Advanced GT3](./crinacle/711%20in-ear/Advanced%20GT3) by crinacle on 711
+- [Advanced GT3 (treble)](./crinacle/711%20in-ear/Advanced%20GT3%20(treble)) by crinacle on 711
+- [Advanced GT3 Superbass](./crinacle/711%20in-ear/Advanced%20GT3%20Superbass) by crinacle on 711
+- [Advanced GT3 Superbass (bass)](./crinacle/711%20in-ear/Advanced%20GT3%20Superbass%20(bass)) by crinacle on 711
+- [Advanced GT3 Superbass (treble)](./crinacle/711%20in-ear/Advanced%20GT3%20Superbass%20(treble)) by crinacle on 711
+- [Advanced M3](./crinacle/711%20in-ear/Advanced%20M3) by crinacle on 711
+- [Advanced M4](./crinacle/711%20in-ear/Advanced%20M4) by crinacle on 711
+- [Advanced M4](./Innerfidelity/in-ear/Advanced%20M4) by Innerfidelity
+- [Advanced M51D](./crinacle/711%20in-ear/Advanced%20M51D) by crinacle on 711
+- [Advanced M55D](./crinacle/711%20in-ear/Advanced%20M55D) by crinacle on 711
+- [Advanced Model X](./crinacle/711%20in-ear/Advanced%20Model%20X) by crinacle on 711
+- [Advanced S2000](./crinacle/711%20in-ear/Advanced%20S2000) by crinacle on 711
+- [Advanced Sleeper](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Advanced%20Sleeper) by crinacle on Bruel & Kjaer 4620
+- [Aedle VK1](./Innerfidelity/over-ear/Aedle%20VK1) by Innerfidelity
+- [AfterShokz Aeropex](./Rtings/earbud/AfterShokz%20Aeropex) by Rtings
+- [AfterShokz Trekz Air](./Rtings/earbud/AfterShokz%20Trekz%20Air) by Rtings
+- [Aiaiai TMA-1](./Innerfidelity/over-ear/Aiaiai%20TMA-1) by Innerfidelity
+- [Aiaiai TMA-1 Studio](./Innerfidelity/over-ear/Aiaiai%20TMA-1%20Studio) by Innerfidelity
+- [Aiaiai TMA-2 HD Wireless](./oratory1990/over-ear/Aiaiai%20TMA-2%20HD%20Wireless) by oratory1990
+- [AirBuds](./Innerfidelity/in-ear/AirBuds) by Innerfidelity
+- [Akai MPC](./Innerfidelity/over-ear/Akai%20MPC) by Innerfidelity
 - [AKG K1000](./Innerfidelity/over-ear/AKG%20K1000) by Innerfidelity
 - [AKG K167 Tiesto](./Innerfidelity/over-ear/AKG%20K167%20Tiesto) by Innerfidelity
 - [AKG K240 MKII](./oratory1990/over-ear/AKG%20K240%20MKII) by oratory1990
@@ -249,86 +308,6 @@ from the same source.
 - [AKG Q701 Quincy Jones](./Innerfidelity/over-ear/AKG%20Q701%20Quincy%20Jones) by Innerfidelity
 - [AKG Q701 Quincy Jones](./Headphone.com%20Legacy/over-ear/AKG%20Q701%20Quincy%20Jones) by Headphone.com Legacy
 - [AKG Y50BT](./oratory1990/over-ear/AKG%20Y50BT) by oratory1990
-- [ARC Mira](./crinacle/711%20in-ear/ARC%20Mira) by crinacle on 711
-- [ARC Oculus](./crinacle/711%20in-ear/ARC%20Oculus) by crinacle on 711
-- [ARC Pollux](./crinacle/711%20in-ear/ARC%20Pollux) by crinacle on 711
-- [ASTRO Gaming A10](./Rtings/over-ear/ASTRO%20Gaming%20A10) by Rtings
-- [ASTRO Gaming A10 Gen 2](./Rtings/over-ear/ASTRO%20Gaming%20A10%20Gen%202) by Rtings
-- [ASTRO Gaming A20](./Rtings/over-ear/ASTRO%20Gaming%20A20) by Rtings
-- [ASTRO Gaming A20 Gen 2](./Rtings/over-ear/ASTRO%20Gaming%20A20%20Gen%202) by Rtings
-- [ASTRO Gaming A30](./Rtings/over-ear/ASTRO%20Gaming%20A30) by Rtings
-- [ASTRO Gaming A40](./Rtings/over-ear/ASTRO%20Gaming%20A40) by Rtings
-- [ASTRO Gaming A40 2019](./Rtings/over-ear/ASTRO%20Gaming%20A40%202019) by Rtings
-- [ASTRO Gaming A40 TR](./crinacle/GRAS%2043AG-7%20over-ear/ASTRO%20Gaming%20A40%20TR) by crinacle on GRAS 43AG-7
-- [ASTRO Gaming A50](./Rtings/over-ear/ASTRO%20Gaming%20A50) by Rtings
-- [ASTRO Gaming A50 Gen 3 2017](./Rtings/over-ear/ASTRO%20Gaming%20A50%20Gen%203%202017) by Rtings
-- [ASTRO Gaming A50 Gen 4 2019](./Rtings/over-ear/ASTRO%20Gaming%20A50%20Gen%204%202019) by Rtings
-- [AUKEY Latitude](./Rtings/in-ear/AUKEY%20Latitude) by Rtings
-- [AUNE Jasper](./crinacle/711%20in-ear/AUNE%20Jasper) by crinacle on 711
-- [AVIOT TE-D01b](./crinacle/711%20in-ear/AVIOT%20TE-D01b) by crinacle on 711
-- [AVIOT TE-D01d](./crinacle/711%20in-ear/AVIOT%20TE-D01d) by crinacle on 711
-- [AZLA 01R Mk2](./crinacle/711%20in-ear/AZLA%2001R%20Mk2) by crinacle on 711
-- [AZLA Horizon](./crinacle/711%20in-ear/AZLA%20Horizon) by crinacle on 711
-- [AZLA Orta](./crinacle/711%20in-ear/AZLA%20Orta) by crinacle on 711
-- [Abyss AB-1266](./Innerfidelity/over-ear/Abyss%20AB-1266) by Innerfidelity
-- [Abyss AB-1266 Phi](./crinacle/GRAS%2043AG-7%20over-ear/Abyss%20AB-1266%20Phi) by crinacle on GRAS 43AG-7
-- [Abyss AB-1266 Phi CC](./crinacle/GRAS%2043AG-7%20over-ear/Abyss%20AB-1266%20Phi%20CC) by crinacle on GRAS 43AG-7
-- [Abyss AB-1266 Phi CC Lite](./crinacle/EARS%20+%20711%20over-ear/Abyss%20AB-1266%20Phi%20CC%20Lite) by crinacle on EARS + 711
-- [Abyss Diana Phi](./crinacle/GRAS%2043AG-7%20over-ear/Abyss%20Diana%20Phi) by crinacle on GRAS 43AG-7
-- [Abyss Diana Phi](./crinacle/EARS%20+%20711%20over-ear/Abyss%20Diana%20Phi) by crinacle on EARS + 711
-- [Abyss Diana V2](./crinacle/GRAS%2043AG-7%20over-ear/Abyss%20Diana%20V2) by crinacle on GRAS 43AG-7
-- [Accidentally Extraordinary 51st Studios](./Innerfidelity/over-ear/Accidentally%20Extraordinary%2051st%20Studios) by Innerfidelity
-- [Accidentally Extraordinary Bamboo](./Innerfidelity/in-ear/Accidentally%20Extraordinary%20Bamboo) by Innerfidelity
-- [Acoustic Research AR H1](./Innerfidelity/over-ear/Acoustic%20Research%20AR%20H1) by Innerfidelity
-- [Acoustic Research AR-H1](./crinacle/GRAS%2043AG-7%20over-ear/Acoustic%20Research%20AR-H1) by crinacle on GRAS 43AG-7
-- [Acoustune HS1001](./crinacle/711%20in-ear/Acoustune%20HS1001) by crinacle on 711
-- [Acoustune HS1003](./crinacle/711%20in-ear/Acoustune%20HS1003) by crinacle on 711
-- [Acoustune HS1004](./crinacle/711%20in-ear/Acoustune%20HS1004) by crinacle on 711
-- [Acoustune HS1004 (sample 1)](./crinacle/711%20in-ear/Acoustune%20HS1004%20(sample%201)) by crinacle on 711
-- [Acoustune HS1004 (sample 2)](./crinacle/711%20in-ear/Acoustune%20HS1004%20(sample%202)) by crinacle on 711
-- [Acoustune HS1300](./crinacle/711%20in-ear/Acoustune%20HS1300) by crinacle on 711
-- [Acoustune HS1501](./crinacle/711%20in-ear/Acoustune%20HS1501) by crinacle on 711
-- [Acoustune HS1501 (sample 1)](./crinacle/711%20in-ear/Acoustune%20HS1501%20(sample%201)) by crinacle on 711
-- [Acoustune HS1501 (sample 2)](./crinacle/711%20in-ear/Acoustune%20HS1501%20(sample%202)) by crinacle on 711
-- [Acoustune HS1503](./crinacle/711%20in-ear/Acoustune%20HS1503) by crinacle on 711
-- [Acoustune HS1551](./crinacle/711%20in-ear/Acoustune%20HS1551) by crinacle on 711
-- [Acoustune HS1650](./crinacle/711%20in-ear/Acoustune%20HS1650) by crinacle on 711
-- [Acoustune HS1655](./crinacle/711%20in-ear/Acoustune%20HS1655) by crinacle on 711
-- [Acoustune HS1657](./crinacle/711%20in-ear/Acoustune%20HS1657) by crinacle on 711
-- [Acoustune HS1670](./crinacle/711%20in-ear/Acoustune%20HS1670) by crinacle on 711
-- [Acoustune HS1677](./crinacle/711%20in-ear/Acoustune%20HS1677) by crinacle on 711
-- [Acoustune HS1695](./crinacle/711%20in-ear/Acoustune%20HS1695) by crinacle on 711
-- [Acoustune HS1697](./crinacle/711%20in-ear/Acoustune%20HS1697) by crinacle on 711
-- [Acoustune HS2000MX](./crinacle/711%20in-ear/Acoustune%20HS2000MX) by crinacle on 711
-- [Adam SP-5](./oratory1990/over-ear/Adam%20SP-5) by oratory1990
-- [Advanced 747](./crinacle/711%20in-ear/Advanced%20747) by crinacle on 711
-- [Advanced 747 NC](./crinacle/711%20in-ear/Advanced%20747%20NC) by crinacle on 711
-- [Advanced Alpha (shallow earpads)](./Innerfidelity/over-ear/Advanced%20Alpha%20(shallow%20earpads)) by Innerfidelity
-- [Advanced Elise](./crinacle/711%20in-ear/Advanced%20Elise) by crinacle on 711
-- [Advanced Evo X](./crinacle/711%20in-ear/Advanced%20Evo%20X) by crinacle on 711
-- [Advanced Furai](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Advanced%20Furai) by crinacle on Bruel & Kjaer 4620
-- [Advanced GT-R](./oratory1990/over-ear/Advanced%20GT-R) by oratory1990
-- [Advanced GT3](./crinacle/711%20in-ear/Advanced%20GT3) by crinacle on 711
-- [Advanced GT3 (treble)](./crinacle/711%20in-ear/Advanced%20GT3%20(treble)) by crinacle on 711
-- [Advanced GT3 Superbass](./crinacle/711%20in-ear/Advanced%20GT3%20Superbass) by crinacle on 711
-- [Advanced GT3 Superbass (bass)](./crinacle/711%20in-ear/Advanced%20GT3%20Superbass%20(bass)) by crinacle on 711
-- [Advanced GT3 Superbass (treble)](./crinacle/711%20in-ear/Advanced%20GT3%20Superbass%20(treble)) by crinacle on 711
-- [Advanced M3](./crinacle/711%20in-ear/Advanced%20M3) by crinacle on 711
-- [Advanced M4](./crinacle/711%20in-ear/Advanced%20M4) by crinacle on 711
-- [Advanced M4](./Innerfidelity/in-ear/Advanced%20M4) by Innerfidelity
-- [Advanced M51D](./crinacle/711%20in-ear/Advanced%20M51D) by crinacle on 711
-- [Advanced M55D](./crinacle/711%20in-ear/Advanced%20M55D) by crinacle on 711
-- [Advanced Model X](./crinacle/711%20in-ear/Advanced%20Model%20X) by crinacle on 711
-- [Advanced S2000](./crinacle/711%20in-ear/Advanced%20S2000) by crinacle on 711
-- [Advanced Sleeper](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Advanced%20Sleeper) by crinacle on Bruel & Kjaer 4620
-- [Aedle VK1](./Innerfidelity/over-ear/Aedle%20VK1) by Innerfidelity
-- [AfterShokz Aeropex](./Rtings/earbud/AfterShokz%20Aeropex) by Rtings
-- [AfterShokz Trekz Air](./Rtings/earbud/AfterShokz%20Trekz%20Air) by Rtings
-- [Aiaiai TMA-1](./Innerfidelity/over-ear/Aiaiai%20TMA-1) by Innerfidelity
-- [Aiaiai TMA-1 Studio](./Innerfidelity/over-ear/Aiaiai%20TMA-1%20Studio) by Innerfidelity
-- [Aiaiai TMA-2 HD Wireless](./oratory1990/over-ear/Aiaiai%20TMA-2%20HD%20Wireless) by oratory1990
-- [AirBuds](./Innerfidelity/in-ear/AirBuds) by Innerfidelity
-- [Akai MPC](./Innerfidelity/over-ear/Akai%20MPC) by Innerfidelity
 - [Akoustyx R-220](./oratory1990/in-ear/Akoustyx%20R-220) by oratory1990
 - [Alclair Electro](./crinacle/711%20in-ear/Alclair%20Electro) by crinacle on 711
 - [Alclair Studio3](./crinacle/711%20in-ear/Alclair%20Studio3) by crinacle on 711
@@ -360,23 +339,22 @@ from the same source.
 - [Anker SoundBuds Curve Upgraded 2019](./Rtings/in-ear/Anker%20SoundBuds%20Curve%20Upgraded%202019) by Rtings
 - [Anker SoundBuds Life](./Rtings/in-ear/Anker%20SoundBuds%20Life) by Rtings
 - [Anker SoundBuds Sport](./Rtings/in-ear/Anker%20SoundBuds%20Sport) by Rtings
-- [Anker SoundCore Liberty Air](./Rtings/in-ear/Anker%20SoundCore%20Liberty%20Air) by Rtings
-- [Anker SoundCore Liberty Air 2](./oratory1990/in-ear/Anker%20SoundCore%20Liberty%20Air%202) by oratory1990
-- [Anker SoundCore Liberty Air 2](./crinacle/711%20in-ear/Anker%20SoundCore%20Liberty%20Air%202) by crinacle on 711
-- [Anker SoundCore Liberty Air 2](./Rtings/in-ear/Anker%20SoundCore%20Liberty%20Air%202) by Rtings
-- [Anker SoundCore Liberty Lite](./Rtings/in-ear/Anker%20SoundCore%20Liberty%20Lite) by Rtings
-- [Anker SoundCore Life 2](./Rtings/in-ear/Anker%20SoundCore%20Life%202) by Rtings
-- [Anker SoundCore Life P2](./Rtings/in-ear/Anker%20SoundCore%20Life%20P2) by Rtings
-- [Anker SoundCore Life P3](./Rtings/in-ear/Anker%20SoundCore%20Life%20P3) by Rtings
-- [Anker SoundCore Space NC](./Rtings/over-ear/Anker%20SoundCore%20Space%20NC) by Rtings
 - [Anker Soundcore Liberty 2 Pro](./oratory1990/in-ear/Anker%20Soundcore%20Liberty%202%20Pro) by oratory1990
 - [Anker Soundcore Liberty 2 Pro](./crinacle/711%20in-ear/Anker%20Soundcore%20Liberty%202%20Pro) by crinacle on 711
 - [Anker Soundcore Liberty 2 Pro](./Rtings/in-ear/Anker%20Soundcore%20Liberty%202%20Pro) by Rtings
 - [Anker Soundcore Liberty 3 Pro](./Rtings/in-ear/Anker%20Soundcore%20Liberty%203%20Pro) by Rtings
 - [Anker Soundcore Liberty 4](./Rtings/in-ear/Anker%20Soundcore%20Liberty%204) by Rtings
+- [Anker SoundCore Liberty Air](./Rtings/in-ear/Anker%20SoundCore%20Liberty%20Air) by Rtings
+- [Anker SoundCore Liberty Air 2](./oratory1990/in-ear/Anker%20SoundCore%20Liberty%20Air%202) by oratory1990
+- [Anker SoundCore Liberty Air 2](./crinacle/711%20in-ear/Anker%20SoundCore%20Liberty%20Air%202) by crinacle on 711
+- [Anker SoundCore Liberty Air 2](./Rtings/in-ear/Anker%20SoundCore%20Liberty%20Air%202) by Rtings
 - [Anker Soundcore Liberty Air 2 Pro](./Rtings/in-ear/Anker%20Soundcore%20Liberty%20Air%202%20Pro) by Rtings
+- [Anker SoundCore Liberty Lite](./Rtings/in-ear/Anker%20SoundCore%20Liberty%20Lite) by Rtings
+- [Anker SoundCore Life 2](./Rtings/in-ear/Anker%20SoundCore%20Life%202) by Rtings
 - [Anker Soundcore Life A2 NC](./Rtings/in-ear/Anker%20Soundcore%20Life%20A2%20NC) by Rtings
 - [Anker Soundcore Life Dot 2](./Rtings/in-ear/Anker%20Soundcore%20Life%20Dot%202) by Rtings
+- [Anker SoundCore Life P2](./Rtings/in-ear/Anker%20SoundCore%20Life%20P2) by Rtings
+- [Anker SoundCore Life P3](./Rtings/in-ear/Anker%20SoundCore%20Life%20P3) by Rtings
 - [Anker Soundcore Life Q20](./Rtings/over-ear/Anker%20Soundcore%20Life%20Q20) by Rtings
 - [Anker Soundcore Life Q30](./Rtings/over-ear/Anker%20Soundcore%20Life%20Q30) by Rtings
 - [Anker Soundcore Life Q30 (ANC off)](./oratory1990/over-ear/Anker%20Soundcore%20Life%20Q30%20(ANC%20off)) by oratory1990
@@ -386,6 +364,7 @@ from the same source.
 - [Anker Soundcore Life Q35 (ANC on)](./oratory1990/over-ear/Anker%20Soundcore%20Life%20Q35%20(ANC%20on)) by oratory1990
 - [Anker Soundcore Life Q35 (wired, passive)](./oratory1990/over-ear/Anker%20Soundcore%20Life%20Q35%20(wired,%20passive)) by oratory1990
 - [Anker Soundcore Space A40](./Rtings/in-ear/Anker%20Soundcore%20Space%20A40) by Rtings
+- [Anker SoundCore Space NC](./Rtings/over-ear/Anker%20SoundCore%20Space%20NC) by Rtings
 - [Anker Soundcore Space Q45](./Rtings/over-ear/Anker%20Soundcore%20Space%20Q45) by Rtings
 - [Anker Soundcore Space Q45 (ANC on)](./oratory1990/over-ear/Anker%20Soundcore%20Space%20Q45%20(ANC%20on)) by oratory1990
 - [Anker Soundcore Spirit X](./Rtings/in-ear/Anker%20Soundcore%20Spirit%20X) by Rtings
@@ -415,10 +394,13 @@ from the same source.
 - [Apple EarPods](./Rtings/earbud/Apple%20EarPods) by Rtings
 - [Apple EarPods](./Headphone.com%20Legacy/earbud/Apple%20EarPods) by Headphone.com Legacy
 - [Apple In-Ear 2013](./Innerfidelity/in-ear/Apple%20In-Ear%202013) by Innerfidelity
-- [Apple ME186 In-Ear Headphones](./oratory1990/in-ear/Apple%20ME186%20In-Ear%20Headphones) by oratory1990
 - [Apple iPod Ear Buds](./Innerfidelity/earbud/Apple%20iPod%20Ear%20Buds) by Innerfidelity
 - [Apple iPod Ear Buds (sample A)](./Innerfidelity/earbud/Apple%20iPod%20Ear%20Buds%20(sample%20A)) by Innerfidelity
 - [Apple iPod Ear Buds (sample B)](./Innerfidelity/earbud/Apple%20iPod%20Ear%20Buds%20(sample%20B)) by Innerfidelity
+- [Apple ME186 In-Ear Headphones](./oratory1990/in-ear/Apple%20ME186%20In-Ear%20Headphones) by oratory1990
+- [ARC Mira](./crinacle/711%20in-ear/ARC%20Mira) by crinacle on 711
+- [ARC Oculus](./crinacle/711%20in-ear/ARC%20Oculus) by crinacle on 711
+- [ARC Pollux](./crinacle/711%20in-ear/ARC%20Pollux) by crinacle on 711
 - [Aroma Audio Ace (off-off)](./crinacle/711%20in-ear/Aroma%20Audio%20Ace%20(off-off)) by crinacle on 711
 - [Aroma Audio Ace (off-on)](./crinacle/711%20in-ear/Aroma%20Audio%20Ace%20(off-on)) by crinacle on 711
 - [Aroma Audio Ace (on-off)](./crinacle/711%20in-ear/Aroma%20Audio%20Ace%20(on-off)) by crinacle on 711
@@ -439,13 +421,23 @@ from the same source.
 - [Astell & Kern T8iE Mk1 (sample 1)](./crinacle/711%20in-ear/Astell%20&%20Kern%20T8iE%20Mk1%20(sample%201)) by crinacle on 711
 - [Astell & Kern T8iE Mk1 (sample 2)](./crinacle/711%20in-ear/Astell%20&%20Kern%20T8iE%20Mk1%20(sample%202)) by crinacle on 711
 - [Astell & Kern T9iE](./crinacle/711%20in-ear/Astell%20&%20Kern%20T9iE) by crinacle on 711
+- [ASTRO Gaming A10](./Rtings/over-ear/ASTRO%20Gaming%20A10) by Rtings
+- [ASTRO Gaming A10 Gen 2](./Rtings/over-ear/ASTRO%20Gaming%20A10%20Gen%202) by Rtings
+- [ASTRO Gaming A20](./Rtings/over-ear/ASTRO%20Gaming%20A20) by Rtings
+- [ASTRO Gaming A20 Gen 2](./Rtings/over-ear/ASTRO%20Gaming%20A20%20Gen%202) by Rtings
+- [ASTRO Gaming A30](./Rtings/over-ear/ASTRO%20Gaming%20A30) by Rtings
+- [ASTRO Gaming A40](./Rtings/over-ear/ASTRO%20Gaming%20A40) by Rtings
+- [ASTRO Gaming A40 2019](./Rtings/over-ear/ASTRO%20Gaming%20A40%202019) by Rtings
+- [ASTRO Gaming A40 TR](./crinacle/GRAS%2043AG-7%20over-ear/ASTRO%20Gaming%20A40%20TR) by crinacle on GRAS 43AG-7
+- [ASTRO Gaming A50](./Rtings/over-ear/ASTRO%20Gaming%20A50) by Rtings
+- [ASTRO Gaming A50 Gen 3 2017](./Rtings/over-ear/ASTRO%20Gaming%20A50%20Gen%203%202017) by Rtings
+- [ASTRO Gaming A50 Gen 4 2019](./Rtings/over-ear/ASTRO%20Gaming%20A50%20Gen%204%202019) by Rtings
 - [Astrotec AM90](./Innerfidelity/in-ear/Astrotec%20AM90) by Innerfidelity
 - [Astrotec AX35](./Innerfidelity/in-ear/Astrotec%20AX35) by Innerfidelity
 - [Astrotec AX7](./Innerfidelity/in-ear/Astrotec%20AX7) by Innerfidelity
 - [Astrotec Delphinus 5](./crinacle/711%20in-ear/Astrotec%20Delphinus%205) by crinacle on 711
 - [Astrotec Volans](./crinacle/711%20in-ear/Astrotec%20Volans) by crinacle on 711
 - [Atomic Floyd SuperDarts](./crinacle/711%20in-ear/Atomic%20Floyd%20SuperDarts) by crinacle on 711
-- [AuGlamour F300](./oratory1990/in-ear/AuGlamour%20F300) by oratory1990
 - [Audeze CRBN](./oratory1990/over-ear/Audeze%20CRBN) by oratory1990
 - [Audeze CRBN](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20CRBN) by crinacle on GRAS 43AG-7
 - [Audeze CRBN (sample 1)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20CRBN%20(sample%201)) by crinacle on GRAS 43AG-7
@@ -454,6 +446,14 @@ from the same source.
 - [Audeze EL8 Open](./Innerfidelity/over-ear/Audeze%20EL8%20Open) by Innerfidelity
 - [Audeze Euclid](./oratory1990/in-ear/Audeze%20Euclid) by oratory1990
 - [Audeze Euclid](./crinacle/711%20in-ear/Audeze%20Euclid) by crinacle on 711
+- [Audeze iSINE 10](./oratory1990/in-ear/Audeze%20iSINE%2010) by oratory1990
+- [Audeze iSINE 10](./crinacle/711%20in-ear/Audeze%20iSINE%2010) by crinacle on 711
+- [Audeze iSINE 10 (sample 1)](./crinacle/711%20in-ear/Audeze%20iSINE%2010%20(sample%201)) by crinacle on 711
+- [Audeze iSINE 10 (sample 2)](./crinacle/711%20in-ear/Audeze%20iSINE%2010%20(sample%202)) by crinacle on 711
+- [Audeze iSINE 20](./oratory1990/in-ear/Audeze%20iSINE%2020) by oratory1990
+- [Audeze iSINE 20](./crinacle/711%20in-ear/Audeze%20iSINE%2020) by crinacle on 711
+- [Audeze iSINE 20](./Innerfidelity/in-ear/Audeze%20iSINE%2020) by Innerfidelity
+- [Audeze iSINE 20 (Cipher cable)](./crinacle/711%20in-ear/Audeze%20iSINE%2020%20(Cipher%20cable)) by crinacle on 711
 - [Audeze LCD-1](./oratory1990/over-ear/Audeze%20LCD-1) by oratory1990
 - [Audeze LCD-1](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20LCD-1) by crinacle on GRAS 43AG-7
 - [Audeze LCD-1](./Rtings/over-ear/Audeze%20LCD-1) by Rtings
@@ -461,8 +461,8 @@ from the same source.
 - [Audeze LCD-2](./oratory1990/over-ear/Audeze%20LCD-2) by oratory1990
 - [Audeze LCD-2](./Innerfidelity/over-ear/Audeze%20LCD-2) by Innerfidelity
 - [Audeze LCD-2 (Dekoni fenestrated sheepskin earpads)](./crinacle/EARS%20+%20711%20over-ear/Audeze%20LCD-2%20(Dekoni%20fenestrated%20sheepskin%20earpads)) by crinacle on EARS + 711
-- [Audeze LCD-2 (Rosewood)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20LCD-2%20(Rosewood)) by crinacle on GRAS 43AG-7
 - [Audeze LCD-2 (pre 2017)](./oratory1990/over-ear/Audeze%20LCD-2%20(pre%202017)) by oratory1990
+- [Audeze LCD-2 (Rosewood)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20LCD-2%20(Rosewood)) by crinacle on GRAS 43AG-7
 - [Audeze LCD-2 (sample 1)](./Innerfidelity/over-ear/Audeze%20LCD-2%20(sample%201)) by Innerfidelity
 - [Audeze LCD-2 (serial number 5312123)](./Innerfidelity/over-ear/Audeze%20LCD-2%20(serial%20number%205312123)) by Innerfidelity
 - [Audeze LCD-2 (serial number 53211704)](./Innerfidelity/over-ear/Audeze%20LCD-2%20(serial%20number%2053211704)) by Innerfidelity
@@ -497,6 +497,9 @@ from the same source.
 - [Audeze LCD-5](./oratory1990/over-ear/Audeze%20LCD-5) by oratory1990
 - [Audeze LCD-5](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20LCD-5) by crinacle on GRAS 43AG-7
 - [Audeze LCD-GX](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20LCD-GX) by crinacle on GRAS 43AG-7
+- [Audeze LCD-i3](./crinacle/711%20in-ear/Audeze%20LCD-i3) by crinacle on 711
+- [Audeze LCD-i3 (Cipher bluetooth)](./crinacle/711%20in-ear/Audeze%20LCD-i3%20(Cipher%20bluetooth)) by crinacle on 711
+- [Audeze LCD-i4](./crinacle/711%20in-ear/Audeze%20LCD-i4) by crinacle on 711
 - [Audeze LCD-MX4](./oratory1990/over-ear/Audeze%20LCD-MX4) by oratory1990
 - [Audeze LCD-MX4](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20LCD-MX4) by crinacle on GRAS 43AG-7
 - [Audeze LCD-R](./oratory1990/over-ear/Audeze%20LCD-R) by oratory1990
@@ -520,15 +523,10 @@ from the same source.
 - [Audeze LCD-XC (sample 1)](./Innerfidelity/over-ear/Audeze%20LCD-XC%20(sample%201)) by Innerfidelity
 - [Audeze LCD-XC (sample 2)](./Innerfidelity/over-ear/Audeze%20LCD-XC%20(sample%202)) by Innerfidelity
 - [Audeze LCD-XC pre-2021](./oratory1990/over-ear/Audeze%20LCD-XC%20pre-2021) by oratory1990
-- [Audeze LCD-i3](./crinacle/711%20in-ear/Audeze%20LCD-i3) by crinacle on 711
-- [Audeze LCD-i3 (Cipher bluetooth)](./crinacle/711%20in-ear/Audeze%20LCD-i3%20(Cipher%20bluetooth)) by crinacle on 711
-- [Audeze LCD-i4](./crinacle/711%20in-ear/Audeze%20LCD-i4) by crinacle on 711
+- [Audeze Maxwell](./Rtings/over-ear/Audeze%20Maxwell) by Rtings
 - [Audeze MM-500](./oratory1990/over-ear/Audeze%20MM-500) by oratory1990
 - [Audeze MM-500](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20MM-500) by crinacle on GRAS 43AG-7
-- [Audeze MX-4](./crinacle/EARS%20+%20711%20over-ear/Audeze%20MX-4) by crinacle on EARS + 711
-- [Audeze Maxwell](./Rtings/over-ear/Audeze%20Maxwell) by Rtings
 - [Audeze Mobius](./Rtings/over-ear/Audeze%20Mobius) by Rtings
-- [Audeze Mobius (RPG preset)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20Mobius%20(RPG%20preset)) by crinacle on GRAS 43AG-7
 - [Audeze Mobius (ballistics preset)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20Mobius%20(ballistics%20preset)) by crinacle on GRAS 43AG-7
 - [Audeze Mobius (default preset)](./oratory1990/over-ear/Audeze%20Mobius%20(default%20preset)) by oratory1990
 - [Audeze Mobius (default preset)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20Mobius%20(default%20preset)) by crinacle on GRAS 43AG-7
@@ -536,6 +534,8 @@ from the same source.
 - [Audeze Mobius (footsteps preset)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20Mobius%20(footsteps%20preset)) by crinacle on GRAS 43AG-7
 - [Audeze Mobius (music preset)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20Mobius%20(music%20preset)) by crinacle on GRAS 43AG-7
 - [Audeze Mobius (racing preset)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20Mobius%20(racing%20preset)) by crinacle on GRAS 43AG-7
+- [Audeze Mobius (RPG preset)](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20Mobius%20(RPG%20preset)) by crinacle on GRAS 43AG-7
+- [Audeze MX-4](./crinacle/EARS%20+%20711%20over-ear/Audeze%20MX-4) by crinacle on EARS + 711
 - [Audeze Penrose](./Rtings/over-ear/Audeze%20Penrose) by Rtings
 - [Audeze SINE](./oratory1990/over-ear/Audeze%20SINE) by oratory1990
 - [Audeze SINE](./Innerfidelity/over-ear/Audeze%20SINE) by Innerfidelity
@@ -543,14 +543,6 @@ from the same source.
 - [Audeze SINE (MSR-7 earpads)](./oratory1990/over-ear/Audeze%20SINE%20(MSR-7%20earpads)) by oratory1990
 - [Audeze SINE DX](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20SINE%20DX) by crinacle on GRAS 43AG-7
 - [Audeze SINE DX](./Innerfidelity/over-ear/Audeze%20SINE%20DX) by Innerfidelity
-- [Audeze iSINE 10](./oratory1990/in-ear/Audeze%20iSINE%2010) by oratory1990
-- [Audeze iSINE 10](./crinacle/711%20in-ear/Audeze%20iSINE%2010) by crinacle on 711
-- [Audeze iSINE 10 (sample 1)](./crinacle/711%20in-ear/Audeze%20iSINE%2010%20(sample%201)) by crinacle on 711
-- [Audeze iSINE 10 (sample 2)](./crinacle/711%20in-ear/Audeze%20iSINE%2010%20(sample%202)) by crinacle on 711
-- [Audeze iSINE 20](./oratory1990/in-ear/Audeze%20iSINE%2020) by oratory1990
-- [Audeze iSINE 20](./crinacle/711%20in-ear/Audeze%20iSINE%2020) by crinacle on 711
-- [Audeze iSINE 20](./Innerfidelity/in-ear/Audeze%20iSINE%2020) by Innerfidelity
-- [Audeze iSINE 20 (Cipher cable)](./crinacle/711%20in-ear/Audeze%20iSINE%2020%20(Cipher%20cable)) by crinacle on 711
 - [Audio Genetic AG2](./crinacle/711%20in-ear/Audio%20Genetic%20AG2) by crinacle on 711
 - [Audio Zenith PMx2](./Innerfidelity/over-ear/Audio%20Zenith%20PMx2) by Innerfidelity
 - [Audio Zenith PMx2 v1](./oratory1990/over-ear/Audio%20Zenith%20PMx2%20v1) by oratory1990
@@ -593,10 +585,10 @@ from the same source.
 - [Audio-Technica ATH-ANC33iS](./Rtings/in-ear/Audio-Technica%20ATH-ANC33iS) by Rtings
 - [Audio-Technica ATH-ANC50iS Passive](./Innerfidelity/over-ear/Audio-Technica%20ATH-ANC50iS%20Passive) by Innerfidelity
 - [Audio-Technica ATH-ANC70](./Rtings/over-ear/Audio-Technica%20ATH-ANC70) by Rtings
-- [Audio-Technica ATH-ANC7B SVIS](./Rtings/over-ear/Audio-Technica%20ATH-ANC7B%20SVIS) by Rtings
 - [Audio-Technica ATH-ANC7b](./Innerfidelity/over-ear/Audio-Technica%20ATH-ANC7b) by Innerfidelity
 - [Audio-Technica ATH-ANC7b](./Rtings/over-ear/Audio-Technica%20ATH-ANC7b) by Rtings
 - [Audio-Technica ATH-ANC7b](./Headphone.com%20Legacy/over-ear/Audio-Technica%20ATH-ANC7b) by Headphone.com Legacy
+- [Audio-Technica ATH-ANC7B SVIS](./Rtings/over-ear/Audio-Technica%20ATH-ANC7B%20SVIS) by Rtings
 - [Audio-Technica ATH-ANC9](./Innerfidelity/over-ear/Audio-Technica%20ATH-ANC9) by Innerfidelity
 - [Audio-Technica ATH-ANC9](./Rtings/over-ear/Audio-Technica%20ATH-ANC9) by Rtings
 - [Audio-Technica ATH-AWAS](./crinacle/GRAS%2043AG-7%20over-ear/Audio-Technica%20ATH-AWAS) by crinacle on GRAS 43AG-7
@@ -656,11 +648,11 @@ from the same source.
 - [Audio-Technica ATH-M70x](./Innerfidelity/over-ear/Audio-Technica%20ATH-M70x) by Innerfidelity
 - [Audio-Technica ATH-M70x](./Rtings/over-ear/Audio-Technica%20ATH-M70x) by Rtings
 - [Audio-Technica ATH-MSR7](./Innerfidelity/over-ear/Audio-Technica%20ATH-MSR7) by Innerfidelity
+- [Audio-Technica ATH-MSR7b](./oratory1990/over-ear/Audio-Technica%20ATH-MSR7b) by oratory1990
+- [Audio-Technica ATH-MSR7b](./crinacle/GRAS%2043AG-7%20over-ear/Audio-Technica%20ATH-MSR7b) by crinacle on GRAS 43AG-7
 - [Audio-Technica ATH-MSR7NC](./Rtings/over-ear/Audio-Technica%20ATH-MSR7NC) by Rtings
 - [Audio-Technica ATH-MSR7NC (ANC on)](./Innerfidelity/over-ear/Audio-Technica%20ATH-MSR7NC%20(ANC%20on)) by Innerfidelity
 - [Audio-Technica ATH-MSR7NC (passive)](./Innerfidelity/over-ear/Audio-Technica%20ATH-MSR7NC%20(passive)) by Innerfidelity
-- [Audio-Technica ATH-MSR7b](./oratory1990/over-ear/Audio-Technica%20ATH-MSR7b) by oratory1990
-- [Audio-Technica ATH-MSR7b](./crinacle/GRAS%2043AG-7%20over-ear/Audio-Technica%20ATH-MSR7b) by crinacle on GRAS 43AG-7
 - [Audio-Technica ATH-PRO700](./Headphone.com%20Legacy/over-ear/Audio-Technica%20ATH-PRO700) by Headphone.com Legacy
 - [Audio-Technica ATH-R70x](./oratory1990/over-ear/Audio-Technica%20ATH-R70x) by oratory1990
 - [Audio-Technica ATH-R70x](./crinacle/GRAS%2043AG-7%20over-ear/Audio-Technica%20ATH-R70x) by crinacle on GRAS 43AG-7
@@ -673,10 +665,10 @@ from the same source.
 - [Audio-Technica ATH-W5000 2013](./Innerfidelity/over-ear/Audio-Technica%20ATH-W5000%202013) by Innerfidelity
 - [Audio-Technica ATH-WS55](./Innerfidelity/over-ear/Audio-Technica%20ATH-WS55) by Innerfidelity
 - [Audio-Technica ATH-WS99](./Innerfidelity/over-ear/Audio-Technica%20ATH-WS99) by Innerfidelity
+- [AudioFly Adagio Club Life](./Innerfidelity/in-ear/AudioFly%20Adagio%20Club%20Life) by Innerfidelity
 - [AudioFly AF140](./Innerfidelity/in-ear/AudioFly%20AF140) by Innerfidelity
 - [AudioFly AF160](./Innerfidelity/in-ear/AudioFly%20AF160) by Innerfidelity
 - [AudioFly AF180](./Innerfidelity/in-ear/AudioFly%20AF180) by Innerfidelity
-- [AudioFly Adagio Club Life](./Innerfidelity/in-ear/AudioFly%20Adagio%20Club%20Life) by Innerfidelity
 - [AudioQuest NightHawk](./oratory1990/over-ear/AudioQuest%20NightHawk) by oratory1990
 - [AudioQuest NightHawk](./crinacle/GRAS%2043AG-7%20over-ear/AudioQuest%20NightHawk) by crinacle on GRAS 43AG-7
 - [AudioQuest NightHawk](./Innerfidelity/over-ear/AudioQuest%20NightHawk) by Innerfidelity
@@ -693,6 +685,9 @@ from the same source.
 - [Audiosense DT600](./crinacle/711%20in-ear/Audiosense%20DT600) by crinacle on 711
 - [Audiosense DT600 (80 ohm resistor)](./crinacle/711%20in-ear/Audiosense%20DT600%20(80%20ohm%20resistor)) by crinacle on 711
 - [Audiosense T800](./crinacle/711%20in-ear/Audiosense%20T800) by crinacle on 711
+- [AuGlamour F300](./oratory1990/in-ear/AuGlamour%20F300) by oratory1990
+- [AUKEY Latitude](./Rtings/in-ear/AUKEY%20Latitude) by Rtings
+- [AUNE Jasper](./crinacle/711%20in-ear/AUNE%20Jasper) by crinacle on 711
 - [Aure Audio Elixir](./crinacle/711%20in-ear/Aure%20Audio%20Elixir) by crinacle on 711
 - [Aure Audio Flame](./crinacle/711%20in-ear/Aure%20Audio%20Flame) by crinacle on 711
 - [Aure Audio Storm](./crinacle/711%20in-ear/Aure%20Audio%20Storm) by crinacle on 711
@@ -707,56 +702,13 @@ from the same source.
 - [Austrian Audio Hi-X65](./oratory1990/over-ear/Austrian%20Audio%20Hi-X65) by oratory1990
 - [Avantone Planar](./oratory1990/over-ear/Avantone%20Planar) by oratory1990
 - [Avantree HT5009](./Rtings/over-ear/Avantree%20HT5009) by Rtings
+- [AVIOT TE-D01b](./crinacle/711%20in-ear/AVIOT%20TE-D01b) by crinacle on 711
+- [AVIOT TE-D01d](./crinacle/711%20in-ear/AVIOT%20TE-D01d) by crinacle on 711
 - [Aya Siren](./crinacle/711%20in-ear/Aya%20Siren) by crinacle on 711
 - [Aya Trident](./crinacle/711%20in-ear/Aya%20Trident) by crinacle on 711
-- [BGVP DM6](./crinacle/711%20in-ear/BGVP%20DM6) by crinacle on 711
-- [BGVP DM6](./Rtings/in-ear/BGVP%20DM6) by Rtings
-- [BGVP DM6 20 Ohm](./crinacle/711%20in-ear/BGVP%20DM6%2020%20Ohm) by crinacle on 711
-- [BGVP DM6 75 Ohm](./crinacle/711%20in-ear/BGVP%20DM6%2075%20Ohm) by crinacle on 711
-- [BGVP DM6 M](./crinacle/711%20in-ear/BGVP%20DM6%20M) by crinacle on 711
-- [BGVP DM7](./crinacle/711%20in-ear/BGVP%20DM7) by crinacle on 711
-- [BGVP DMG](./oratory1990/in-ear/BGVP%20DMG) by oratory1990
-- [BGVP DMG (black)](./crinacle/711%20in-ear/BGVP%20DMG%20(black)) by crinacle on 711
-- [BGVP DMG (foam eartips)](./oratory1990/in-ear/BGVP%20DMG%20(foam%20eartips)) by oratory1990
-- [BGVP DMG (gold)](./crinacle/711%20in-ear/BGVP%20DMG%20(gold)) by crinacle on 711
-- [BGVP DMG (silver)](./crinacle/711%20in-ear/BGVP%20DMG%20(silver)) by crinacle on 711
-- [BGVP DMS](./crinacle/711%20in-ear/BGVP%20DMS) by crinacle on 711
-- [BGVP DN3](./crinacle/711%20in-ear/BGVP%20DN3) by crinacle on 711
-- [BGVP DS1 Pro](./crinacle/711%20in-ear/BGVP%20DS1%20Pro) by crinacle on 711
-- [BGVP ES12 (off-off-off)](./crinacle/711%20in-ear/BGVP%20ES12%20(off-off-off)) by crinacle on 711
-- [BGVP ES12 (off-off-on)](./crinacle/711%20in-ear/BGVP%20ES12%20(off-off-on)) by crinacle on 711
-- [BGVP ES12 (off-on-off)](./crinacle/711%20in-ear/BGVP%20ES12%20(off-on-off)) by crinacle on 711
-- [BGVP ES12 (on-off-off)](./crinacle/711%20in-ear/BGVP%20ES12%20(on-off-off)) by crinacle on 711
-- [BGVP ES12 (on-on-on)](./crinacle/711%20in-ear/BGVP%20ES12%20(on-on-on)) by crinacle on 711
-- [BGVP VG4 (off-off-off)](./crinacle/711%20in-ear/BGVP%20VG4%20(off-off-off)) by crinacle on 711
-- [BGVP VG4 (off-off-on)](./crinacle/711%20in-ear/BGVP%20VG4%20(off-off-on)) by crinacle on 711
-- [BGVP VG4 (off-on-off)](./crinacle/711%20in-ear/BGVP%20VG4%20(off-on-off)) by crinacle on 711
-- [BGVP VG4 (on-off-off)](./crinacle/711%20in-ear/BGVP%20VG4%20(on-off-off)) by crinacle on 711
-- [BGVP ZERO](./crinacle/711%20in-ear/BGVP%20ZERO) by crinacle on 711
-- [BKHC BK9](./Innerfidelity/over-ear/BKHC%20BK9) by Innerfidelity
-- [BLON Annotation](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20Annotation/BLON%20Annotation) by crinacle on Bruel & Kjaer 4620
-- [BLON B20](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B20) by crinacle on GRAS 43AG-7
-- [BLON B60](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60) by crinacle on GRAS 43AG-7
-- [BLON B60 (sample 1)](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60%20(sample%201)) by crinacle on GRAS 43AG-7
-- [BLON B60 (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60%20(sample%202)) by crinacle on GRAS 43AG-7
-- [BLON BL-01](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20BL-01) by crinacle on Bruel & Kjaer 4620
-- [BLON BL-01](./oratory1990/in-ear/BLON%20BL-01) by oratory1990
-- [BLON BL-03](./oratory1990/in-ear/BLON%20BL-03) by oratory1990
-- [BLON BL-03](./crinacle/711%20in-ear/BLON%20BL-03) by crinacle on 711
-- [BLON BL-03 (sample 1)](./crinacle/711%20in-ear/BLON%20BL-03%20(sample%201)) by crinacle on 711
-- [BLON BL-03 (sample 3)](./crinacle/711%20in-ear/BLON%20BL-03%20(sample%203)) by crinacle on 711
-- [BLON BL-05](./crinacle/711%20in-ear/BLON%20BL-05) by crinacle on 711
-- [BLON BL-A8 Prometheus](./crinacle/711%20in-ear/BLON%20BL-A8%20Prometheus) by crinacle on 711
-- [BLON BL-Max](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20BL-Max) by crinacle on Bruel & Kjaer 4620
-- [BLON BL-Max](./crinacle/711%20in-ear/BLON%20BL-Max) by crinacle on 711
-- [BQEYZ Autumn (bass filter)](./crinacle/711%20in-ear/BQEYZ%20Autumn%20(bass%20filter)) by crinacle on 711
-- [BQEYZ Autumn (normal filter)](./crinacle/711%20in-ear/BQEYZ%20Autumn%20(normal%20filter)) by crinacle on 711
-- [BQEYZ Autumn (treble filter)](./crinacle/711%20in-ear/BQEYZ%20Autumn%20(treble%20filter)) by crinacle on 711
-- [BQEYZ Spring 1](./crinacle/711%20in-ear/BQEYZ%20Spring%201) by crinacle on 711
-- [BQEYZ Spring 1 (mesh mod)](./crinacle/711%20in-ear/BQEYZ%20Spring%201%20(mesh%20mod)) by crinacle on 711
-- [BQEYZ Spring 1 (mesh mod) (sample 2)](./crinacle/711%20in-ear/BQEYZ%20Spring%201%20(mesh%20mod)%20(sample%202)) by crinacle on 711
-- [BQEYZ Summer](./crinacle/711%20in-ear/BQEYZ%20Summer) by crinacle on 711
-- [Bang & Olufsen BeoPlay H7](./crinacle/GRAS%2043AG-7%20over-ear/Bang%20&%20Olufsen%20BeoPlay%20H7) by crinacle on GRAS 43AG-7
+- [AZLA 01R Mk2](./crinacle/711%20in-ear/AZLA%2001R%20Mk2) by crinacle on 711
+- [AZLA Horizon](./crinacle/711%20in-ear/AZLA%20Horizon) by crinacle on 711
+- [AZLA Orta](./crinacle/711%20in-ear/AZLA%20Orta) by crinacle on 711
 - [Bang & Olufsen Beoplay E8](./crinacle/711%20in-ear/Bang%20&%20Olufsen%20Beoplay%20E8) by crinacle on 711
 - [Bang & Olufsen Beoplay E8](./Rtings/in-ear/Bang%20&%20Olufsen%20Beoplay%20E8) by Rtings
 - [Bang & Olufsen Beoplay E8 2.0](./crinacle/711%20in-ear/Bang%20&%20Olufsen%20Beoplay%20E8%202.0) by crinacle on 711
@@ -767,6 +719,7 @@ from the same source.
 - [Bang & Olufsen Beoplay H6](./Innerfidelity/over-ear/Bang%20&%20Olufsen%20Beoplay%20H6) by Innerfidelity
 - [Bang & Olufsen Beoplay H6](./Rtings/over-ear/Bang%20&%20Olufsen%20Beoplay%20H6) by Rtings
 - [Bang & Olufsen Beoplay H6 2nd Gen](./Innerfidelity/over-ear/Bang%20&%20Olufsen%20Beoplay%20H6%202nd%20Gen) by Innerfidelity
+- [Bang & Olufsen BeoPlay H7](./crinacle/GRAS%2043AG-7%20over-ear/Bang%20&%20Olufsen%20BeoPlay%20H7) by crinacle on GRAS 43AG-7
 - [Bang & Olufsen Beoplay H9](./oratory1990/over-ear/Bang%20&%20Olufsen%20Beoplay%20H9) by oratory1990
 - [Bang & Olufsen Beoplay H9](./Rtings/over-ear/Bang%20&%20Olufsen%20Beoplay%20H9) by Rtings
 - [Bang & Olufsen Beoplay H95](./oratory1990/over-ear/Bang%20&%20Olufsen%20Beoplay%20H95) by oratory1990
@@ -776,6 +729,8 @@ from the same source.
 - [Bang & Olufsen E8 3.0](./Rtings/in-ear/Bang%20&%20Olufsen%20E8%203.0) by Rtings
 - [Base Audio G12](./oratory1990/over-ear/Base%20Audio%20G12) by oratory1990
 - [Beats BeatsX](./Rtings/in-ear/Beats%20BeatsX) by Rtings
+- [Beats by Dr](./Headphone.com%20Legacy/over-ear/Beats%20by%20Dr) by Headphone.com Legacy
+- [Beats by Dr Dre Solo HD](./Innerfidelity/over-ear/Beats%20by%20Dr%20Dre%20Solo%20HD) by Innerfidelity
 - [Beats EP On-Ear](./Rtings/over-ear/Beats%20EP%20On-Ear) by Rtings
 - [Beats Executive](./Rtings/over-ear/Beats%20Executive) by Rtings
 - [Beats Fit Pro](./Rtings/in-ear/Beats%20Fit%20Pro) by Rtings
@@ -815,12 +770,10 @@ from the same source.
 - [Beats Studio3 Wireless](./Rtings/over-ear/Beats%20Studio3%20Wireless) by Rtings
 - [Beats Tour](./Innerfidelity/in-ear/Beats%20Tour) by Innerfidelity
 - [Beats Tour 2014](./Innerfidelity/in-ear/Beats%20Tour%202014) by Innerfidelity
-- [Beats X](./Rtings/in-ear/Beats%20X) by Rtings
-- [Beats by Dr](./Headphone.com%20Legacy/over-ear/Beats%20by%20Dr) by Headphone.com Legacy
-- [Beats by Dr Dre Solo HD](./Innerfidelity/over-ear/Beats%20by%20Dr%20Dre%20Solo%20HD) by Innerfidelity
 - [Beats ur3](./Rtings/in-ear/Beats%20ur3) by Rtings
 - [Beats urBeats](./Rtings/in-ear/Beats%20urBeats) by Rtings
 - [Beats urBeats3](./Rtings/in-ear/Beats%20urBeats3) by Rtings
+- [Beats X](./Rtings/in-ear/Beats%20X) by Rtings
 - [Bedphones](./Innerfidelity/over-ear/Bedphones) by Innerfidelity
 - [Behringer HPS5000](./Innerfidelity/over-ear/Behringer%20HPS5000) by Innerfidelity
 - [Betron YSM1000](./Rtings/in-ear/Betron%20YSM1000) by Rtings
@@ -904,12 +857,12 @@ from the same source.
 - [Beyerdynamic DT 990 250 Ohm (worn earpads)](./oratory1990/over-ear/Beyerdynamic%20DT%20990%20250%20Ohm%20(worn%20earpads)) by oratory1990
 - [Beyerdynamic DT 990 600 Ohm](./Headphone.com%20Legacy/over-ear/Beyerdynamic%20DT%20990%20600%20Ohm) by Headphone.com Legacy
 - [Beyerdynamic DT1990 (Dekoni lite Velours Earpads)](./oratory1990/over-ear/Beyerdynamic%20DT1990%20(Dekoni%20lite%20Velours%20Earpads)) by oratory1990
-- [Beyerdynamic DT1990 Pro (Dekoni elite velour earpads)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(Dekoni%20elite%20velour%20earpads)) by crinacle on GRAS 43AG-7
-- [Beyerdynamic DT1990 Pro (Dekoni elite velour earpads) (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(Dekoni%20elite%20velour%20earpads)%20(sample%202)) by crinacle on GRAS 43AG-7
 - [Beyerdynamic DT1990 Pro (analytical earpads)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(analytical%20earpads)) by crinacle on GRAS 43AG-7
 - [Beyerdynamic DT1990 Pro (analytical earpads) (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(analytical%20earpads)%20(sample%202)) by crinacle on GRAS 43AG-7
 - [Beyerdynamic DT1990 Pro (balanced earpads)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(balanced%20earpads)) by crinacle on GRAS 43AG-7
 - [Beyerdynamic DT1990 Pro (balanced earpads) (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(balanced%20earpads)%20(sample%202)) by crinacle on GRAS 43AG-7
+- [Beyerdynamic DT1990 Pro (Dekoni elite velour earpads)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(Dekoni%20elite%20velour%20earpads)) by crinacle on GRAS 43AG-7
+- [Beyerdynamic DT1990 Pro (Dekoni elite velour earpads) (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(Dekoni%20elite%20velour%20earpads)%20(sample%202)) by crinacle on GRAS 43AG-7
 - [Beyerdynamic DT880 Black Edition](./oratory1990/over-ear/Beyerdynamic%20DT880%20Black%20Edition) by oratory1990
 - [Beyerdynamic DTX 300p](./Innerfidelity/over-ear/Beyerdynamic%20DTX%20300p) by Innerfidelity
 - [Beyerdynamic DTX 350m](./Innerfidelity/over-ear/Beyerdynamic%20DTX%20350m) by Innerfidelity
@@ -953,8 +906,48 @@ from the same source.
 - [Beyerdynamic TYGR 300 R](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20TYGR%20300%20R) by crinacle on GRAS 43AG-7
 - [Beyerdynamic Xelento](./oratory1990/in-ear/Beyerdynamic%20Xelento) by oratory1990
 - [Beyerdynamic Xelento](./crinacle/711%20in-ear/Beyerdynamic%20Xelento) by crinacle on 711
+- [BGVP DM6](./crinacle/711%20in-ear/BGVP%20DM6) by crinacle on 711
+- [BGVP DM6](./Rtings/in-ear/BGVP%20DM6) by Rtings
+- [BGVP DM6 20 Ohm](./crinacle/711%20in-ear/BGVP%20DM6%2020%20Ohm) by crinacle on 711
+- [BGVP DM6 75 Ohm](./crinacle/711%20in-ear/BGVP%20DM6%2075%20Ohm) by crinacle on 711
+- [BGVP DM6 M](./crinacle/711%20in-ear/BGVP%20DM6%20M) by crinacle on 711
+- [BGVP DM7](./crinacle/711%20in-ear/BGVP%20DM7) by crinacle on 711
+- [BGVP DMG](./oratory1990/in-ear/BGVP%20DMG) by oratory1990
+- [BGVP DMG (black)](./crinacle/711%20in-ear/BGVP%20DMG%20(black)) by crinacle on 711
+- [BGVP DMG (foam eartips)](./oratory1990/in-ear/BGVP%20DMG%20(foam%20eartips)) by oratory1990
+- [BGVP DMG (gold)](./crinacle/711%20in-ear/BGVP%20DMG%20(gold)) by crinacle on 711
+- [BGVP DMG (silver)](./crinacle/711%20in-ear/BGVP%20DMG%20(silver)) by crinacle on 711
+- [BGVP DMS](./crinacle/711%20in-ear/BGVP%20DMS) by crinacle on 711
+- [BGVP DN3](./crinacle/711%20in-ear/BGVP%20DN3) by crinacle on 711
+- [BGVP DS1 Pro](./crinacle/711%20in-ear/BGVP%20DS1%20Pro) by crinacle on 711
+- [BGVP ES12 (off-off-off)](./crinacle/711%20in-ear/BGVP%20ES12%20(off-off-off)) by crinacle on 711
+- [BGVP ES12 (off-off-on)](./crinacle/711%20in-ear/BGVP%20ES12%20(off-off-on)) by crinacle on 711
+- [BGVP ES12 (off-on-off)](./crinacle/711%20in-ear/BGVP%20ES12%20(off-on-off)) by crinacle on 711
+- [BGVP ES12 (on-off-off)](./crinacle/711%20in-ear/BGVP%20ES12%20(on-off-off)) by crinacle on 711
+- [BGVP ES12 (on-on-on)](./crinacle/711%20in-ear/BGVP%20ES12%20(on-on-on)) by crinacle on 711
+- [BGVP VG4 (off-off-off)](./crinacle/711%20in-ear/BGVP%20VG4%20(off-off-off)) by crinacle on 711
+- [BGVP VG4 (off-off-on)](./crinacle/711%20in-ear/BGVP%20VG4%20(off-off-on)) by crinacle on 711
+- [BGVP VG4 (off-on-off)](./crinacle/711%20in-ear/BGVP%20VG4%20(off-on-off)) by crinacle on 711
+- [BGVP VG4 (on-off-off)](./crinacle/711%20in-ear/BGVP%20VG4%20(on-off-off)) by crinacle on 711
+- [BGVP ZERO](./crinacle/711%20in-ear/BGVP%20ZERO) by crinacle on 711
 - [Big Bus Earbuds](./crinacle/711%20in-ear/Big%20Bus%20Earbuds) by crinacle on 711
+- [BKHC BK9](./Innerfidelity/over-ear/BKHC%20BK9) by Innerfidelity
 - [Bloc Roc Galvanize S2](./Innerfidelity/over-ear/Bloc%20Roc%20Galvanize%20S2) by Innerfidelity
+- [BLON Annotation](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20Annotation/BLON%20Annotation) by crinacle on Bruel & Kjaer 4620
+- [BLON B20](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B20) by crinacle on GRAS 43AG-7
+- [BLON B60](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60) by crinacle on GRAS 43AG-7
+- [BLON B60 (sample 1)](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60%20(sample%201)) by crinacle on GRAS 43AG-7
+- [BLON B60 (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60%20(sample%202)) by crinacle on GRAS 43AG-7
+- [BLON BL-01](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20BL-01) by crinacle on Bruel & Kjaer 4620
+- [BLON BL-01](./oratory1990/in-ear/BLON%20BL-01) by oratory1990
+- [BLON BL-03](./oratory1990/in-ear/BLON%20BL-03) by oratory1990
+- [BLON BL-03](./crinacle/711%20in-ear/BLON%20BL-03) by crinacle on 711
+- [BLON BL-03 (sample 1)](./crinacle/711%20in-ear/BLON%20BL-03%20(sample%201)) by crinacle on 711
+- [BLON BL-03 (sample 3)](./crinacle/711%20in-ear/BLON%20BL-03%20(sample%203)) by crinacle on 711
+- [BLON BL-05](./crinacle/711%20in-ear/BLON%20BL-05) by crinacle on 711
+- [BLON BL-A8 Prometheus](./crinacle/711%20in-ear/BLON%20BL-A8%20Prometheus) by crinacle on 711
+- [BLON BL-Max](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20BL-Max) by crinacle on Bruel & Kjaer 4620
+- [BLON BL-Max](./crinacle/711%20in-ear/BLON%20BL-Max) by crinacle on 711
 - [Blue Lola](./Innerfidelity/over-ear/Blue%20Lola) by Innerfidelity
 - [Blue MOFI (active)](./Innerfidelity/over-ear/Blue%20MOFI%20(active)) by Innerfidelity
 - [Blue MOFI (active+)](./Innerfidelity/over-ear/Blue%20MOFI%20(active+)) by Innerfidelity
@@ -1024,13 +1017,20 @@ from the same source.
 - [Bowers & Wilkins P7 Wireless (wired)](./Innerfidelity/over-ear/Bowers%20&%20Wilkins%20P7%20Wireless%20(wired)) by Innerfidelity
 - [Bowers & Wilkins P7 Wireless (wireless)](./Innerfidelity/over-ear/Bowers%20&%20Wilkins%20P7%20Wireless%20(wireless)) by Innerfidelity
 - [Bowers & Wilkins PI7](./Rtings/in-ear/Bowers%20&%20Wilkins%20PI7) by Rtings
+- [Bowers & Wilkins Pi7 S2](./Rtings/in-ear/Bowers%20&%20Wilkins%20Pi7%20S2) by Rtings
 - [Bowers & Wilkins PX](./crinacle/GRAS%2043AG-7%20over-ear/Bowers%20&%20Wilkins%20PX) by crinacle on GRAS 43AG-7
 - [Bowers & Wilkins PX](./Rtings/over-ear/Bowers%20&%20Wilkins%20PX) by Rtings
 - [Bowers & Wilkins PX5](./Rtings/over-ear/Bowers%20&%20Wilkins%20PX5) by Rtings
 - [Bowers & Wilkins PX7](./Rtings/over-ear/Bowers%20&%20Wilkins%20PX7) by Rtings
-- [Bowers & Wilkins Pi7 S2](./Rtings/in-ear/Bowers%20&%20Wilkins%20Pi7%20S2) by Rtings
 - [Bowers & Wilkins Px7 S2](./Rtings/over-ear/Bowers%20&%20Wilkins%20Px7%20S2) by Rtings
 - [Bowers & Wilkins Px8](./Rtings/over-ear/Bowers%20&%20Wilkins%20Px8) by Rtings
+- [BQEYZ Autumn (bass filter)](./crinacle/711%20in-ear/BQEYZ%20Autumn%20(bass%20filter)) by crinacle on 711
+- [BQEYZ Autumn (normal filter)](./crinacle/711%20in-ear/BQEYZ%20Autumn%20(normal%20filter)) by crinacle on 711
+- [BQEYZ Autumn (treble filter)](./crinacle/711%20in-ear/BQEYZ%20Autumn%20(treble%20filter)) by crinacle on 711
+- [BQEYZ Spring 1](./crinacle/711%20in-ear/BQEYZ%20Spring%201) by crinacle on 711
+- [BQEYZ Spring 1 (mesh mod)](./crinacle/711%20in-ear/BQEYZ%20Spring%201%20(mesh%20mod)) by crinacle on 711
+- [BQEYZ Spring 1 (mesh mod) (sample 2)](./crinacle/711%20in-ear/BQEYZ%20Spring%201%20(mesh%20mod)%20(sample%202)) by crinacle on 711
+- [BQEYZ Summer](./crinacle/711%20in-ear/BQEYZ%20Summer) by crinacle on 711
 - [Brainwavz B400](./crinacle/711%20in-ear/Brainwavz%20B400) by crinacle on 711
 - [Brainwavz B400 (sample 1)](./crinacle/711%20in-ear/Brainwavz%20B400%20(sample%201)) by crinacle on 711
 - [Brainwavz B400 (sample 2)](./crinacle/711%20in-ear/Brainwavz%20B400%20(sample%202)) by crinacle on 711
@@ -1042,14 +1042,6 @@ from the same source.
 - [Brainwavz S1](./Innerfidelity/in-ear/Brainwavz%20S1) by Innerfidelity
 - [Brainwavz S5](./Innerfidelity/in-ear/Brainwavz%20S5) by Innerfidelity
 - [BÖHM B-66](./Rtings/over-ear/B%C3%96HM%20B-66) by Rtings
-- [CCA A10](./crinacle/711%20in-ear/CCA%20A10) by crinacle on 711
-- [CCA C10](./crinacle/711%20in-ear/CCA%20C10) by crinacle on 711
-- [CCA C12](./crinacle/711%20in-ear/CCA%20C12) by crinacle on 711
-- [CCA C16](./crinacle/711%20in-ear/CCA%20C16) by crinacle on 711
-- [CCA CRA](./crinacle/711%20in-ear/CCA%20CRA) by crinacle on 711
-- [CCA CSN](./crinacle/711%20in-ear/CCA%20CSN) by crinacle on 711
-- [CCA CST](./crinacle/711%20in-ear/CCA%20CST) by crinacle on 711
-- [CCA NRA](./crinacle/711%20in-ear/CCA%20NRA) by crinacle on 711
 - [Caeden Linea No 10 (wired, active)](./Innerfidelity/over-ear/Caeden%20Linea%20No%2010%20(wired,%20active)) by Innerfidelity
 - [Caeden Linea No 10 (wired, passive)](./Innerfidelity/over-ear/Caeden%20Linea%20No%2010%20(wired,%20passive)) by Innerfidelity
 - [California Headphone Company Lorado](./Innerfidelity/over-ear/California%20Headphone%20Company%20Lorado) by Innerfidelity
@@ -1079,9 +1071,9 @@ from the same source.
 - [Campfire Audio Honeydew](./oratory1990/in-ear/Campfire%20Audio%20Honeydew) by oratory1990
 - [Campfire Audio Honeydew](./crinacle/711%20in-ear/Campfire%20Audio%20Honeydew) by crinacle on 711
 - [Campfire Audio IO](./crinacle/711%20in-ear/Campfire%20Audio%20IO) by crinacle on 711
+- [Campfire Audio Io](./oratory1990/in-ear/Campfire%20Audio%20Io) by oratory1990
 - [Campfire Audio IO (sample 1)](./crinacle/711%20in-ear/Campfire%20Audio%20IO%20(sample%201)) by crinacle on 711
 - [Campfire Audio IO (sample 2)](./crinacle/711%20in-ear/Campfire%20Audio%20IO%20(sample%202)) by crinacle on 711
-- [Campfire Audio Io](./oratory1990/in-ear/Campfire%20Audio%20Io) by oratory1990
 - [Campfire Audio Mammoth](./crinacle/711%20in-ear/Campfire%20Audio%20Mammoth) by crinacle on 711
 - [Campfire Audio Orion](./crinacle/711%20in-ear/Campfire%20Audio%20Orion) by crinacle on 711
 - [Campfire Audio Polaris](./oratory1990/in-ear/Campfire%20Audio%20Polaris) by oratory1990
@@ -1111,6 +1103,14 @@ from the same source.
 - [Cat Ear Audio Mia](./crinacle/711%20in-ear/Cat%20Ear%20Audio%20Mia) by crinacle on 711
 - [Cayin Fantasy](./crinacle/711%20in-ear/Cayin%20Fantasy) by crinacle on 711
 - [Cayin YB04](./crinacle/711%20in-ear/Cayin%20YB04) by crinacle on 711
+- [CCA A10](./crinacle/711%20in-ear/CCA%20A10) by crinacle on 711
+- [CCA C10](./crinacle/711%20in-ear/CCA%20C10) by crinacle on 711
+- [CCA C12](./crinacle/711%20in-ear/CCA%20C12) by crinacle on 711
+- [CCA C16](./crinacle/711%20in-ear/CCA%20C16) by crinacle on 711
+- [CCA CRA](./crinacle/711%20in-ear/CCA%20CRA) by crinacle on 711
+- [CCA CSN](./crinacle/711%20in-ear/CCA%20CSN) by crinacle on 711
+- [CCA CST](./crinacle/711%20in-ear/CCA%20CST) by crinacle on 711
+- [CCA NRA](./crinacle/711%20in-ear/CCA%20NRA) by crinacle on 711
 - [Clariar i430](./crinacle/711%20in-ear/Clariar%20i430) by crinacle on 711
 - [Clariar i640](./crinacle/711%20in-ear/Clariar%20i640) by crinacle on 711
 - [Clear Tune CT-200](./crinacle/711%20in-ear/Clear%20Tune%20CT-200) by crinacle on 711
@@ -1137,9 +1137,9 @@ from the same source.
 - [Corsair HS70 Wireless](./Rtings/over-ear/Corsair%20HS70%20Wireless) by Rtings
 - [Corsair HS75 XB WIRELESS](./Rtings/over-ear/Corsair%20HS75%20XB%20WIRELESS) by Rtings
 - [Corsair HS80 RGB WIRELESS](./Rtings/over-ear/Corsair%20HS80%20RGB%20WIRELESS) by Rtings
-- [Corsair VIRTUOSO RGB Wireless XT](./Rtings/over-ear/Corsair%20VIRTUOSO%20RGB%20Wireless%20XT) by Rtings
 - [Corsair Virtuoso RGB Wireless](./Rtings/over-ear/Corsair%20Virtuoso%20RGB%20Wireless) by Rtings
 - [Corsair Virtuoso RGB Wireless SE](./Rtings/over-ear/Corsair%20Virtuoso%20RGB%20Wireless%20SE) by Rtings
+- [Corsair VIRTUOSO RGB Wireless XT](./Rtings/over-ear/Corsair%20VIRTUOSO%20RGB%20Wireless%20XT) by Rtings
 - [Corsair Void Elite](./Rtings/over-ear/Corsair%20Void%20Elite) by Rtings
 - [Corsair Void PRO RGB](./Rtings/over-ear/Corsair%20Void%20PRO%20RGB) by Rtings
 - [Corsair Void RGB](./Rtings/over-ear/Corsair%20Void%20RGB) by Rtings
@@ -1170,10 +1170,10 @@ from the same source.
 - [Creative HN-900](./Rtings/over-ear/Creative%20HN-900) by Rtings
 - [Creative Outlier Air](./Rtings/in-ear/Creative%20Outlier%20Air) by Rtings
 - [Creative Outlier Air V2](./Rtings/in-ear/Creative%20Outlier%20Air%20V2) by Rtings
-- [Creative SXFI Air](./Rtings/over-ear/Creative%20SXFI%20Air) by Rtings
 - [Creative Sound Blaster EVO ZxR](./Rtings/over-ear/Creative%20Sound%20Blaster%20EVO%20ZxR) by Rtings
 - [Creative Sound BlasterX H5](./Rtings/over-ear/Creative%20Sound%20BlasterX%20H5) by Rtings
 - [Creative Sound Blasterx H6 (analog input)](./oratory1990/over-ear/Creative%20Sound%20Blasterx%20H6%20(analog%20input)) by oratory1990
+- [Creative SXFI Air](./Rtings/over-ear/Creative%20SXFI%20Air) by Rtings
 - [Custom Art Ei.3](./crinacle/711%20in-ear/Custom%20Art%20Ei.3) by crinacle on 711
 - [Custom Art FIBAE 1](./crinacle/711%20in-ear/Custom%20Art%20FIBAE%201) by crinacle on 711
 - [Custom Art FIBAE 2](./crinacle/711%20in-ear/Custom%20Art%20FIBAE%202) by crinacle on 711
@@ -1189,32 +1189,6 @@ from the same source.
 - [Cyberdrive Forte Impact Bass](./Innerfidelity/in-ear/Cyberdrive%20Forte%20Impact%20Bass) by Innerfidelity
 - [Cypher Labs Astru IEM](./Innerfidelity/in-ear/Cypher%20Labs%20Astru%20IEM) by Innerfidelity
 - [Cypher Labs Astru IEM (bass boost filter)](./Innerfidelity/in-ear/Cypher%20Labs%20Astru%20IEM%20(bass%20boost%20filter)) by Innerfidelity
-- [DUNU DK2001](./crinacle/711%20in-ear/DUNU%20DK2001) by crinacle on 711
-- [DUNU DK3001 Pro](./crinacle/711%20in-ear/DUNU%20DK3001%20Pro) by crinacle on 711
-- [DUNU DK4001](./crinacle/711%20in-ear/DUNU%20DK4001) by crinacle on 711
-- [DUNU DN1000](./crinacle/711%20in-ear/DUNU%20DN1000) by crinacle on 711
-- [DUNU DN1000](./Innerfidelity/in-ear/DUNU%20DN1000) by Innerfidelity
-- [DUNU DN2000](./crinacle/711%20in-ear/DUNU%20DN2000) by crinacle on 711
-- [DUNU DN2000](./Innerfidelity/in-ear/DUNU%20DN2000) by Innerfidelity
-- [DUNU DN2000J](./Innerfidelity/in-ear/DUNU%20DN2000J) by Innerfidelity
-- [DUNU DN2002](./crinacle/711%20in-ear/DUNU%20DN2002) by crinacle on 711
-- [DUNU DN900](./Innerfidelity/in-ear/DUNU%20DN900) by Innerfidelity
-- [DUNU EST 112](./crinacle/711%20in-ear/DUNU%20EST%20112) by crinacle on 711
-- [DUNU Falcon Pro (Atmospheric Immersion filter)](./crinacle/711%20in-ear/DUNU%20Falcon%20Pro%20(Atmospheric%20Immersion%20filter)) by crinacle on 711
-- [DUNU Falcon Pro (Reference filter)](./crinacle/711%20in-ear/DUNU%20Falcon%20Pro%20(Reference%20filter)) by crinacle on 711
-- [DUNU Falcon Pro (Transparency filter)](./crinacle/711%20in-ear/DUNU%20Falcon%20Pro%20(Transparency%20filter)) by crinacle on 711
-- [DUNU Kima](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/DUNU%20Kima) by crinacle on Bruel & Kjaer 4620
-- [DUNU Luna](./crinacle/711%20in-ear/DUNU%20Luna) by crinacle on 711
-- [DUNU SA6 (atmospheric Immersion mode)](./crinacle/711%20in-ear/DUNU%20SA6%20(atmospheric%20Immersion%20mode)) by crinacle on 711
-- [DUNU SA6 (default mode)](./crinacle/711%20in-ear/DUNU%20SA6%20(default%20mode)) by crinacle on 711
-- [DUNU Titan 1](./crinacle/711%20in-ear/DUNU%20Titan%201) by crinacle on 711
-- [DUNU Titan 1](./Innerfidelity/in-ear/DUNU%20Titan%201) by Innerfidelity
-- [DUNU Titan 3](./crinacle/711%20in-ear/DUNU%20Titan%203) by crinacle on 711
-- [DUNU Titan 3](./Innerfidelity/in-ear/DUNU%20Titan%203) by Innerfidelity
-- [DUNU Titan 5](./Innerfidelity/in-ear/DUNU%20Titan%205) by Innerfidelity
-- [DUNU Titan S](./crinacle/711%20in-ear/DUNU%20Titan%20S) by crinacle on 711
-- [DUNU Zen](./crinacle/711%20in-ear/DUNU%20Zen) by crinacle on 711
-- [DUNU Zen Pro](./crinacle/711%20in-ear/DUNU%20Zen%20Pro) by crinacle on 711
 - [Daiso $2 earphones](./crinacle/711%20in-ear/Daiso%20$2%20earphones) by crinacle on 711
 - [Dali IO-4](./oratory1990/over-ear/Dali%20IO-4) by oratory1990
 - [Dali IO-6](./oratory1990/over-ear/Dali%20IO-6) by oratory1990
@@ -1238,7 +1212,6 @@ from the same source.
 - [Dan Clark Audio Aeon X Open](./oratory1990/over-ear/Dan%20Clark%20Audio%20Aeon%20X%20Open) by oratory1990
 - [Dan Clark Audio Alpha Dog 2014](./Innerfidelity/over-ear/Dan%20Clark%20Audio%20Alpha%20Dog%202014) by Innerfidelity
 - [Dan Clark Audio Alpha Prime](./Innerfidelity/over-ear/Dan%20Clark%20Audio%20Alpha%20Prime) by Innerfidelity
-- [Dan Clark Audio EXPANSE](./oratory1990/over-ear/Dan%20Clark%20Audio%20EXPANSE) by oratory1990
 - [Dan Clark Audio Ether 2](./oratory1990/over-ear/Dan%20Clark%20Audio%20Ether%202) by oratory1990
 - [Dan Clark Audio Ether 2](./crinacle/GRAS%2043AG-7%20over-ear/Dan%20Clark%20Audio%20Ether%202) by crinacle on GRAS 43AG-7
 - [Dan Clark Audio Ether C](./oratory1990/over-ear/Dan%20Clark%20Audio%20Ether%20C) by oratory1990
@@ -1253,11 +1226,13 @@ from the same source.
 - [Dan Clark Audio Ether Flow](./Innerfidelity/over-ear/Dan%20Clark%20Audio%20Ether%20Flow) by Innerfidelity
 - [Dan Clark Audio Ether Flow 1.1](./oratory1990/over-ear/Dan%20Clark%20Audio%20Ether%20Flow%201.1) by oratory1990
 - [Dan Clark Audio Ether Flow 1.1](./crinacle/GRAS%2043AG-7%20over-ear/Dan%20Clark%20Audio%20Ether%20Flow%201.1) by crinacle on GRAS 43AG-7
+- [Dan Clark Audio EXPANSE](./oratory1990/over-ear/Dan%20Clark%20Audio%20EXPANSE) by oratory1990
 - [Dan Clark Audio Mad Dog](./Innerfidelity/over-ear/Dan%20Clark%20Audio%20Mad%20Dog) by Innerfidelity
 - [Dan Clark Audio Mad Dog 2014](./Innerfidelity/over-ear/Dan%20Clark%20Audio%20Mad%20Dog%202014) by Innerfidelity
 - [Dan Clark Audio Stealth](./oratory1990/over-ear/Dan%20Clark%20Audio%20Stealth) by oratory1990
 - [Dan Clark Audio Stealth](./crinacle/GRAS%2043AG-7%20over-ear/Dan%20Clark%20Audio%20Stealth) by crinacle on GRAS 43AG-7
 - [Dan Clark Audio Voce](./crinacle/GRAS%2043AG-7%20over-ear/Dan%20Clark%20Audio%20Voce) by crinacle on GRAS 43AG-7
+- [ddHiFi E2020A Janus](./crinacle/711%20in-ear/ddHiFi%20E2020A%20Janus) by crinacle on 711
 - [Delta Air complimentary earphones](./crinacle/711%20in-ear/Delta%20Air%20complimentary%20earphones) by crinacle on 711
 - [Denon AH-C260R](./Headphone.com%20Legacy/in-ear/Denon%20AH-C260R) by Headphone.com Legacy
 - [Denon AH-C351K](./Headphone.com%20Legacy/in-ear/Denon%20AH-C351K) by Headphone.com Legacy
@@ -1314,6 +1289,32 @@ from the same source.
 - [Dita Audio Sakura 71](./crinacle/711%20in-ear/Dita%20Audio%20Sakura%2071) by crinacle on 711
 - [Dita Audio Truth](./crinacle/711%20in-ear/Dita%20Audio%20Truth) by crinacle on 711
 - [Dolby Dimension](./Rtings/over-ear/Dolby%20Dimension) by Rtings
+- [DUNU DK2001](./crinacle/711%20in-ear/DUNU%20DK2001) by crinacle on 711
+- [DUNU DK3001 Pro](./crinacle/711%20in-ear/DUNU%20DK3001%20Pro) by crinacle on 711
+- [DUNU DK4001](./crinacle/711%20in-ear/DUNU%20DK4001) by crinacle on 711
+- [DUNU DN1000](./crinacle/711%20in-ear/DUNU%20DN1000) by crinacle on 711
+- [DUNU DN1000](./Innerfidelity/in-ear/DUNU%20DN1000) by Innerfidelity
+- [DUNU DN2000](./crinacle/711%20in-ear/DUNU%20DN2000) by crinacle on 711
+- [DUNU DN2000](./Innerfidelity/in-ear/DUNU%20DN2000) by Innerfidelity
+- [DUNU DN2000J](./Innerfidelity/in-ear/DUNU%20DN2000J) by Innerfidelity
+- [DUNU DN2002](./crinacle/711%20in-ear/DUNU%20DN2002) by crinacle on 711
+- [DUNU DN900](./Innerfidelity/in-ear/DUNU%20DN900) by Innerfidelity
+- [DUNU EST 112](./crinacle/711%20in-ear/DUNU%20EST%20112) by crinacle on 711
+- [DUNU Falcon Pro (Atmospheric Immersion filter)](./crinacle/711%20in-ear/DUNU%20Falcon%20Pro%20(Atmospheric%20Immersion%20filter)) by crinacle on 711
+- [DUNU Falcon Pro (Reference filter)](./crinacle/711%20in-ear/DUNU%20Falcon%20Pro%20(Reference%20filter)) by crinacle on 711
+- [DUNU Falcon Pro (Transparency filter)](./crinacle/711%20in-ear/DUNU%20Falcon%20Pro%20(Transparency%20filter)) by crinacle on 711
+- [DUNU Kima](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/DUNU%20Kima) by crinacle on Bruel & Kjaer 4620
+- [DUNU Luna](./crinacle/711%20in-ear/DUNU%20Luna) by crinacle on 711
+- [DUNU SA6 (atmospheric Immersion mode)](./crinacle/711%20in-ear/DUNU%20SA6%20(atmospheric%20Immersion%20mode)) by crinacle on 711
+- [DUNU SA6 (default mode)](./crinacle/711%20in-ear/DUNU%20SA6%20(default%20mode)) by crinacle on 711
+- [DUNU Titan 1](./crinacle/711%20in-ear/DUNU%20Titan%201) by crinacle on 711
+- [DUNU Titan 1](./Innerfidelity/in-ear/DUNU%20Titan%201) by Innerfidelity
+- [DUNU Titan 3](./crinacle/711%20in-ear/DUNU%20Titan%203) by crinacle on 711
+- [DUNU Titan 3](./Innerfidelity/in-ear/DUNU%20Titan%203) by Innerfidelity
+- [DUNU Titan 5](./Innerfidelity/in-ear/DUNU%20Titan%205) by Innerfidelity
+- [DUNU Titan S](./crinacle/711%20in-ear/DUNU%20Titan%20S) by crinacle on 711
+- [DUNU Zen](./crinacle/711%20in-ear/DUNU%20Zen) by crinacle on 711
+- [DUNU Zen Pro](./crinacle/711%20in-ear/DUNU%20Zen%20Pro) by crinacle on 711
 - [Dynamic Motion DM200H](./crinacle/711%20in-ear/Dynamic%20Motion%20DM200H) by crinacle on 711
 - [Dyson Zone](./Rtings/over-ear/Dyson%20Zone) by Rtings
 - [E-Mu Purpleheart](./Innerfidelity/over-ear/E-Mu%20Purpleheart) by Innerfidelity
@@ -1324,15 +1325,6 @@ from the same source.
 - [E-Mu Teak Rosewood Cups](./Innerfidelity/over-ear/E-Mu%20Teak%20Rosewood%20Cups) by Innerfidelity
 - [E-Mu Walnut](./crinacle/GRAS%2043AG-7%20over-ear/E-Mu%20Walnut) by crinacle on GRAS 43AG-7
 - [E-Mu Walnut](./Innerfidelity/over-ear/E-Mu%20Walnut) by Innerfidelity
-- [EKSA E900 Pro](./crinacle/GRAS%2043AG-7%20over-ear/EKSA%20E900%20Pro) by crinacle on GRAS 43AG-7
-- [ENACFIRE E60](./Rtings/in-ear/ENACFIRE%20E60) by Rtings
-- [ENIGMAcoustics Dharma Production 2015](./Innerfidelity/over-ear/ENIGMAcoustics%20Dharma%20Production%202015) by Innerfidelity
-- [EPOS GTW 270 Hybrid](./Rtings/in-ear/EPOS%20GTW%20270%20Hybrid) by Rtings
-- [EPOS Sennheiser GSP 600](./Rtings/over-ear/EPOS%20Sennheiser%20GSP%20600) by Rtings
-- [ES Lab ES-1a](./crinacle/GRAS%2043AG-7%20over-ear/ES%20Lab%20ES-1a) by crinacle on GRAS 43AG-7
-- [ETA Mini Closed](./oratory1990/over-ear/ETA%20Mini%20Closed) by oratory1990
-- [ETA Mini Semi-Closed](./oratory1990/over-ear/ETA%20Mini%20Semi-Closed) by oratory1990
-- [ETA Mini Semi-Closed (with ring dampeners installed)](./oratory1990/over-ear/ETA%20Mini%20Semi-Closed%20(with%20ring%20dampeners%20installed)) by oratory1990
 - [EarFun Air Pro](./Rtings/in-ear/EarFun%20Air%20Pro) by Rtings
 - [EarFun Air Pro 2](./Rtings/in-ear/EarFun%20Air%20Pro%202) by Rtings
 - [EarFun Air Pro 2 2021](./Rtings/in-ear/EarFun%20Air%20Pro%202%202021) by Rtings
@@ -1361,10 +1353,10 @@ from the same source.
 - [EarSonics Velvet (tight)](./Innerfidelity/in-ear/EarSonics%20Velvet%20(tight)) by Innerfidelity
 - [EarSonics Velvet (warm)](./crinacle/711%20in-ear/EarSonics%20Velvet%20(warm)) by crinacle on 711
 - [EarSonics Velvet (warm)](./Innerfidelity/in-ear/EarSonics%20Velvet%20(warm)) by Innerfidelity
-- [EarWerkz Legend Omega](./crinacle/711%20in-ear/EarWerkz%20Legend%20Omega) by crinacle on 711
 - [Eartech Dual](./crinacle/711%20in-ear/Eartech%20Dual) by crinacle on 711
 - [Eartech Quad](./crinacle/711%20in-ear/Eartech%20Quad) by crinacle on 711
 - [Eartech Triple](./crinacle/711%20in-ear/Eartech%20Triple) by crinacle on 711
+- [EarWerkz Legend Omega](./crinacle/711%20in-ear/EarWerkz%20Legend%20Omega) by crinacle on 711
 - [Echobox Finder X1 (black filter)](./Innerfidelity/in-ear/Echobox%20Finder%20X1%20(black%20filter)) by Innerfidelity
 - [Echobox Finder X1 (red filter)](./Innerfidelity/in-ear/Echobox%20Finder%20X1%20(red%20filter)) by Innerfidelity
 - [Echobox Finder X1 (white filter)](./Innerfidelity/in-ear/Echobox%20Finder%20X1%20(white%20filter)) by Innerfidelity
@@ -1377,6 +1369,7 @@ from the same source.
 - [Effect Audio King Arthur (sample 1)](./crinacle/711%20in-ear/Effect%20Audio%20King%20Arthur%20(sample%201)) by crinacle on 711
 - [Effect Audio King Arthur (sample 2)](./crinacle/711%20in-ear/Effect%20Audio%20King%20Arthur%20(sample%202)) by crinacle on 711
 - [Effect Audio Symphony](./crinacle/711%20in-ear/Effect%20Audio%20Symphony) by crinacle on 711
+- [EKSA E900 Pro](./crinacle/GRAS%2043AG-7%20over-ear/EKSA%20E900%20Pro) by crinacle on GRAS 43AG-7
 - [Elysian Annihilator](./crinacle/711%20in-ear/Elysian%20Annihilator) by crinacle on 711
 - [Elysian Annihilator (sample 1)](./crinacle/711%20in-ear/Elysian%20Annihilator%20(sample%201)) by crinacle on 711
 - [Elysian Annihilator (sample 2)](./crinacle/711%20in-ear/Elysian%20Annihilator%20(sample%202)) by crinacle on 711
@@ -1422,8 +1415,16 @@ from the same source.
 - [Empire Ears Zeus](./crinacle/GRAS%2043AG-7%20over-ear/Empire%20Ears%20Zeus) by crinacle on GRAS 43AG-7
 - [Empire Ears Zeus-R](./crinacle/711%20in-ear/Empire%20Ears%20Zeus-R) by crinacle on 711
 - [Empire Ears Zeus-XIV](./crinacle/711%20in-ear/Empire%20Ears%20Zeus-XIV) by crinacle on 711
+- [ENACFIRE E60](./Rtings/in-ear/ENACFIRE%20E60) by Rtings
+- [ENIGMAcoustics Dharma Production 2015](./Innerfidelity/over-ear/ENIGMAcoustics%20Dharma%20Production%202015) by Innerfidelity
 - [Enigmatic Audio Paradox](./Innerfidelity/over-ear/Enigmatic%20Audio%20Paradox) by Innerfidelity
+- [EPOS GTW 270 Hybrid](./Rtings/in-ear/EPOS%20GTW%20270%20Hybrid) by Rtings
+- [EPOS Sennheiser GSP 600](./Rtings/over-ear/EPOS%20Sennheiser%20GSP%20600) by Rtings
+- [ES Lab ES-1a](./crinacle/GRAS%2043AG-7%20over-ear/ES%20Lab%20ES-1a) by crinacle on GRAS 43AG-7
 - [Eskuche 33 1 3 B](./Innerfidelity/over-ear/Eskuche%2033%201%203%20B) by Innerfidelity
+- [ETA Mini Closed](./oratory1990/over-ear/ETA%20Mini%20Closed) by oratory1990
+- [ETA Mini Semi-Closed](./oratory1990/over-ear/ETA%20Mini%20Semi-Closed) by oratory1990
+- [ETA Mini Semi-Closed (with ring dampeners installed)](./oratory1990/over-ear/ETA%20Mini%20Semi-Closed%20(with%20ring%20dampeners%20installed)) by oratory1990
 - [Eternal Melody EM6W](./crinacle/711%20in-ear/Eternal%20Melody%20EM6W) by crinacle on 711
 - [Etymotic EK5](./Innerfidelity/in-ear/Etymotic%20EK5) by Innerfidelity
 - [Etymotic ER2SE](./oratory1990/in-ear/Etymotic%20ER2SE) by oratory1990
@@ -1456,7 +1457,6 @@ from the same source.
 - [Etymotic ERX](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Etymotic%20ERX) by crinacle on Bruel & Kjaer 4620
 - [Etymotic EVO](./oratory1990/in-ear/Etymotic%20EVO) by oratory1990
 - [Etymotic EVO](./crinacle/711%20in-ear/Etymotic%20EVO) by crinacle on 711
-- [Etymotic Mk5](./Innerfidelity/in-ear/Etymotic%20Mk5) by Innerfidelity
 - [Etymotic hf2](./Headphone.com%20Legacy/in-ear/Etymotic%20hf2) by Headphone.com Legacy
 - [Etymotic hf3](./Headphone.com%20Legacy/in-ear/Etymotic%20hf3) by Headphone.com Legacy
 - [Etymotic hf5](./oratory1990/in-ear/Etymotic%20hf5) by oratory1990
@@ -1465,24 +1465,8 @@ from the same source.
 - [Etymotic mc3](./Innerfidelity/in-ear/Etymotic%20mc3) by Innerfidelity
 - [Etymotic mc3](./Headphone.com%20Legacy/in-ear/Etymotic%20mc3) by Headphone.com Legacy
 - [Etymotic mc5](./Headphone.com%20Legacy/in-ear/Etymotic%20mc5) by Headphone.com Legacy
+- [Etymotic Mk5](./Innerfidelity/in-ear/Etymotic%20Mk5) by Innerfidelity
 - [FAAEAL Hibiscus](./crinacle/711%20in-ear/FAAEAL%20Hibiscus) by crinacle on 711
-- [FAudio Dark Sky](./crinacle/711%20in-ear/FAudio%20Dark%20Sky) by crinacle on 711
-- [FAudio Mezzo (000 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(000%20setting)) by crinacle on 711
-- [FAudio Mezzo (003 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(003%20setting)) by crinacle on 711
-- [FAudio Mezzo (020 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(020%20setting)) by crinacle on 711
-- [FAudio Mezzo (023 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(023%20setting)) by crinacle on 711
-- [FAudio Mezzo (100 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(100%20setting)) by crinacle on 711
-- [FAudio Mezzo (120 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(120%20setting)) by crinacle on 711
-- [FAudio Mezzo (123 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(123%20setting)) by crinacle on 711
-- [FAudio Minor](./crinacle/711%20in-ear/FAudio%20Minor) by crinacle on 711
-- [FAudio Minor (sample 2)](./crinacle/711%20in-ear/FAudio%20Minor%20(sample%202)) by crinacle on 711
-- [FIIL T1X](./Rtings/in-ear/FIIL%20T1X) by Rtings
-- [FLC Technology FLC8 Bk Gy Bk](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20Bk%20Gy%20Bk) by Innerfidelity
-- [FLC Technology FLC8 C C Bk Ligh](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20C%20C%20Bk%20Ligh) by Innerfidelity
-- [FLC Technology FLC8 C C Gn Strin](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20C%20C%20Gn%20Strin) by Innerfidelity
-- [FLC Technology FLC8 CCY Voca](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20CCY%20Voca) by Innerfidelity
-- [FLC Technology FLC8 G G Bk De](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20G%20G%20Bk%20De) by Innerfidelity
-- [FLC Technology FLC8 GGBl](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20GGBl) by Innerfidelity
 - [Fatfreq 20.6](./crinacle/711%20in-ear/Fatfreq%2020.6) by crinacle on 711
 - [Fatfreq 20.6 (bass switch on)](./crinacle/711%20in-ear/Fatfreq%2020.6%20(bass%20switch%20on)) by crinacle on 711
 - [Fatfreq 20.8](./crinacle/711%20in-ear/Fatfreq%2020.8) by crinacle on 711
@@ -1505,6 +1489,16 @@ from the same source.
 - [Fatfreq Sakura](./crinacle/711%20in-ear/Fatfreq%20Sakura) by crinacle on 711
 - [Fatfreq Sakura (bass switch on)](./crinacle/711%20in-ear/Fatfreq%20Sakura%20(bass%20switch%20on)) by crinacle on 711
 - [Fatfreq Tsuru](./crinacle/711%20in-ear/Fatfreq%20Tsuru) by crinacle on 711
+- [FAudio Dark Sky](./crinacle/711%20in-ear/FAudio%20Dark%20Sky) by crinacle on 711
+- [FAudio Mezzo (000 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(000%20setting)) by crinacle on 711
+- [FAudio Mezzo (003 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(003%20setting)) by crinacle on 711
+- [FAudio Mezzo (020 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(020%20setting)) by crinacle on 711
+- [FAudio Mezzo (023 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(023%20setting)) by crinacle on 711
+- [FAudio Mezzo (100 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(100%20setting)) by crinacle on 711
+- [FAudio Mezzo (120 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(120%20setting)) by crinacle on 711
+- [FAudio Mezzo (123 setting)](./crinacle/711%20in-ear/FAudio%20Mezzo%20(123%20setting)) by crinacle on 711
+- [FAudio Minor](./crinacle/711%20in-ear/FAudio%20Minor) by crinacle on 711
+- [FAudio Minor (sample 2)](./crinacle/711%20in-ear/FAudio%20Minor%20(sample%202)) by crinacle on 711
 - [Fearless Audio ACME 8](./crinacle/711%20in-ear/Fearless%20Audio%20ACME%208) by crinacle on 711
 - [Fearless Audio Barcelona](./crinacle/711%20in-ear/Fearless%20Audio%20Barcelona) by crinacle on 711
 - [Fearless Audio Crystal Ball](./crinacle/711%20in-ear/Fearless%20Audio%20Crystal%20Ball) by crinacle on 711
@@ -1545,6 +1539,7 @@ from the same source.
 - [Fidue A83](./Innerfidelity/in-ear/Fidue%20A83) by Innerfidelity
 - [Fidue A91 Sirius](./crinacle/711%20in-ear/Fidue%20A91%20Sirius) by crinacle on 711
 - [Fidue A91 Sirius (CIEM)](./crinacle/711%20in-ear/Fidue%20A91%20Sirius%20(CIEM)) by crinacle on 711
+- [FIIL T1X](./Rtings/in-ear/FIIL%20T1X) by Rtings
 - [FiiO EH3](./crinacle/GRAS%2043AG-7%20over-ear/FiiO%20EH3) by crinacle on GRAS 43AG-7
 - [FiiO F3](./oratory1990/in-ear/FiiO%20F3) by oratory1990
 - [FiiO F3](./crinacle/711%20in-ear/FiiO%20F3) by crinacle on 711
@@ -1635,6 +1630,7 @@ from the same source.
 - [Final Audio Sonorous VIII](./crinacle/GRAS%2043AG-7%20over-ear/Final%20Audio%20Sonorous%20VIII) by crinacle on GRAS 43AG-7
 - [Final Audio Sonorous X](./crinacle/GRAS%2043AG-7%20over-ear/Final%20Audio%20Sonorous%20X) by crinacle on GRAS 43AG-7
 - [Final Audio UX3000 (B, ANC on)](./oratory1990/over-ear/Final%20Audio%20UX3000%20(B,%20ANC%20on)) by oratory1990
+- [fineEars TSH-HR1000K](./crinacle/711%20in-ear/fineEars%20TSH-HR1000K) by crinacle on 711
 - [Fir Audio M2](./crinacle/711%20in-ear/Fir%20Audio%20M2) by crinacle on 711
 - [Fir Audio M2 (sample 1)](./crinacle/711%20in-ear/Fir%20Audio%20M2%20(sample%201)) by crinacle on 711
 - [Fir Audio M2 (sample 2)](./crinacle/711%20in-ear/Fir%20Audio%20M2%20(sample%202)) by crinacle on 711
@@ -1666,6 +1662,7 @@ from the same source.
 - [Fischer Audio Omega Spark](./crinacle/711%20in-ear/Fischer%20Audio%20Omega%20Spark) by crinacle on 711
 - [Fischer Audio SBA-03](./Innerfidelity/in-ear/Fischer%20Audio%20SBA-03) by Innerfidelity
 - [Fischer Audio Tandem](./Innerfidelity/in-ear/Fischer%20Audio%20Tandem) by Innerfidelity
+- [Fitbit Flyer](./Rtings/in-ear/Fitbit%20Flyer) by Rtings
 - [FitEar Air 2](./crinacle/711%20in-ear/FitEar%20Air%202) by crinacle on 711
 - [FitEar Aya](./crinacle/711%20in-ear/FitEar%20Aya) by crinacle on 711
 - [FitEar EST](./crinacle/711%20in-ear/FitEar%20EST) by crinacle on 711
@@ -1689,8 +1686,15 @@ from the same source.
 - [FitEar Titan](./crinacle/711%20in-ear/FitEar%20Titan) by crinacle on 711
 - [FitEar Titan (sample 1)](./crinacle/711%20in-ear/FitEar%20Titan%20(sample%201)) by crinacle on 711
 - [FitEar Titan (sample 2)](./crinacle/711%20in-ear/FitEar%20Titan%20(sample%202)) by crinacle on 711
-- [Fitbit Flyer](./Rtings/in-ear/Fitbit%20Flyer) by Rtings
+- [fix Bespoke Edition (Leneo)](./crinacle/711%20in-ear/fix%20Bespoke%20Edition%20(Leneo)) by crinacle on 711
+- [fix Event Horizon](./crinacle/711%20in-ear/fix%20Event%20Horizon) by crinacle on 711
 - [Flare Audio Reference R1](./Innerfidelity/over-ear/Flare%20Audio%20Reference%20R1) by Innerfidelity
+- [FLC Technology FLC8 Bk Gy Bk](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20Bk%20Gy%20Bk) by Innerfidelity
+- [FLC Technology FLC8 C C Bk Ligh](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20C%20C%20Bk%20Ligh) by Innerfidelity
+- [FLC Technology FLC8 C C Gn Strin](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20C%20C%20Gn%20Strin) by Innerfidelity
+- [FLC Technology FLC8 CCY Voca](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20CCY%20Voca) by Innerfidelity
+- [FLC Technology FLC8 G G Bk De](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20G%20G%20Bk%20De) by Innerfidelity
+- [FLC Technology FLC8 GGBl](./Innerfidelity/in-ear/FLC%20Technology%20FLC8%20GGBl) by Innerfidelity
 - [Flicker Ear Norma](./crinacle/711%20in-ear/Flicker%20Ear%20Norma) by crinacle on 711
 - [Focal Bathys](./oratory1990/over-ear/Focal%20Bathys) by oratory1990
 - [Focal Bathys](./Rtings/over-ear/Focal%20Bathys) by Rtings
@@ -1709,10 +1713,10 @@ from the same source.
 - [Focal Elear](./Innerfidelity/over-ear/Focal%20Elear) by Innerfidelity
 - [Focal Elear](./Rtings/over-ear/Focal%20Elear) by Rtings
 - [Focal Elear (Elex earpads)](./crinacle/GRAS%2043AG-7%20over-ear/Focal%20Elear%20(Elex%20earpads)) by crinacle on GRAS 43AG-7
-- [Focal Elear (Utopia earpads)](./crinacle/GRAS%2043AG-7%20over-ear/Focal%20Elear%20(Utopia%20earpads)) by crinacle on GRAS 43AG-7
-- [Focal Elear (Utopia earpads)](./Innerfidelity/over-ear/Focal%20Elear%20(Utopia%20earpads)) by Innerfidelity
 - [Focal Elear (sample 1)](./crinacle/GRAS%2043AG-7%20over-ear/Focal%20Elear%20(sample%201)) by crinacle on GRAS 43AG-7
 - [Focal Elear (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Focal%20Elear%20(sample%202)) by crinacle on GRAS 43AG-7
+- [Focal Elear (Utopia earpads)](./crinacle/GRAS%2043AG-7%20over-ear/Focal%20Elear%20(Utopia%20earpads)) by crinacle on GRAS 43AG-7
+- [Focal Elear (Utopia earpads)](./Innerfidelity/over-ear/Focal%20Elear%20(Utopia%20earpads)) by Innerfidelity
 - [Focal Elegia](./oratory1990/over-ear/Focal%20Elegia) by oratory1990
 - [Focal Elegia](./Rtings/over-ear/Focal%20Elegia) by Rtings
 - [Focal Elegia](./crinacle/EARS%20+%20711%20over-ear/Focal%20Elegia) by crinacle on EARS + 711
@@ -1809,10 +1813,13 @@ from the same source.
 - [Grado GW100](./oratory1990/over-ear/Grado%20GW100) by oratory1990
 - [Grado GW100](./crinacle/GRAS%2043AG-7%20over-ear/Grado%20GW100) by crinacle on GRAS 43AG-7
 - [Grado GW100](./Rtings/over-ear/Grado%20GW100) by Rtings
+- [Grado Hemp](./oratory1990/over-ear/Grado%20Hemp) by oratory1990
 - [Grado HF1](./Innerfidelity/over-ear/Grado%20HF1) by Innerfidelity
 - [Grado HF1 Prototype](./Innerfidelity/over-ear/Grado%20HF1%20Prototype) by Innerfidelity
 - [Grado HF2](./Innerfidelity/over-ear/Grado%20HF2) by Innerfidelity
-- [Grado Hemp](./oratory1990/over-ear/Grado%20Hemp) by oratory1990
+- [Grado iGE](./crinacle/711%20in-ear/Grado%20iGE) by crinacle on 711
+- [Grado iGi](./Headphone.com%20Legacy/in-ear/Grado%20iGi) by Headphone.com Legacy
+- [Grado iGrado White](./Headphone.com%20Legacy/in-ear/Grado%20iGrado%20White) by Headphone.com Legacy
 - [Grado PS1000](./Innerfidelity/over-ear/Grado%20PS1000) by Innerfidelity
 - [Grado PS1000](./Headphone.com%20Legacy/over-ear/Grado%20PS1000) by Headphone.com Legacy
 - [Grado PS500](./Innerfidelity/over-ear/Grado%20PS500) by Innerfidelity
@@ -1820,9 +1827,9 @@ from the same source.
 - [Grado PS500e](./crinacle/GRAS%2043AG-7%20over-ear/Grado%20PS500e) by crinacle on GRAS 43AG-7
 - [Grado RS1](./Innerfidelity/over-ear/Grado%20RS1) by Innerfidelity
 - [Grado RS1](./Headphone.com%20Legacy/over-ear/Grado%20RS1) by Headphone.com Legacy
-- [Grado RS1e (S earpads)](./Innerfidelity/over-ear/Grado%20RS1e%20(S%20earpads)) by Innerfidelity
 - [Grado RS1e (bowl earpads)](./Innerfidelity/over-ear/Grado%20RS1e%20(bowl%20earpads)) by Innerfidelity
 - [Grado RS1e (flat earpads)](./Innerfidelity/over-ear/Grado%20RS1e%20(flat%20earpads)) by Innerfidelity
+- [Grado RS1e (S earpads)](./Innerfidelity/over-ear/Grado%20RS1e%20(S%20earpads)) by Innerfidelity
 - [Grado RS1e (yellow earpads)](./Innerfidelity/over-ear/Grado%20RS1e%20(yellow%20earpads)) by Innerfidelity
 - [Grado RS2](./Innerfidelity/over-ear/Grado%20RS2) by Innerfidelity
 - [Grado RS2](./Headphone.com%20Legacy/over-ear/Grado%20RS2) by Headphone.com Legacy
@@ -1833,12 +1840,12 @@ from the same source.
 - [Grado SR225](./Headphone.com%20Legacy/over-ear/Grado%20SR225) by Headphone.com Legacy
 - [Grado SR225e](./Rtings/over-ear/Grado%20SR225e) by Rtings
 - [Grado SR225i](./Innerfidelity/over-ear/Grado%20SR225i) by Innerfidelity
-- [Grado SR225i (G earpads)](./Innerfidelity/over-ear/Grado%20SR225i%20(G%20earpads)) by Innerfidelity
-- [Grado SR225i (TTVJ flat earpads)](./Innerfidelity/over-ear/Grado%20SR225i%20(TTVJ%20flat%20earpads)) by Innerfidelity
 - [Grado SR225i (comfy earpads)](./Innerfidelity/over-ear/Grado%20SR225i%20(comfy%20earpads)) by Innerfidelity
+- [Grado SR225i (G earpads)](./Innerfidelity/over-ear/Grado%20SR225i%20(G%20earpads)) by Innerfidelity
 - [Grado SR225i (goo bowl earpads)](./Innerfidelity/over-ear/Grado%20SR225i%20(goo%20bowl%20earpads)) by Innerfidelity
 - [Grado SR225i (reverse bowl earpads)](./Innerfidelity/over-ear/Grado%20SR225i%20(reverse%20bowl%20earpads)) by Innerfidelity
 - [Grado SR225i (small flat earpads)](./Innerfidelity/over-ear/Grado%20SR225i%20(small%20flat%20earpads)) by Innerfidelity
+- [Grado SR225i (TTVJ flat earpads)](./Innerfidelity/over-ear/Grado%20SR225i%20(TTVJ%20flat%20earpads)) by Innerfidelity
 - [Grado SR325](./Innerfidelity/over-ear/Grado%20SR325) by Innerfidelity
 - [Grado SR325](./Headphone.com%20Legacy/over-ear/Grado%20SR325) by Headphone.com Legacy
 - [Grado SR325e](./crinacle/GRAS%2043AG-7%20over-ear/Grado%20SR325e) by crinacle on GRAS 43AG-7
@@ -1855,14 +1862,41 @@ from the same source.
 - [Grado SR80e](./Rtings/over-ear/Grado%20SR80e) by Rtings
 - [Grado The Hemp Headphone](./crinacle/GRAS%2043AG-7%20over-ear/Grado%20The%20Hemp%20Headphone) by crinacle on GRAS 43AG-7
 - [Grado The Hemp Headphone](./Rtings/over-ear/Grado%20The%20Hemp%20Headphone) by Rtings
-- [Grado iGE](./crinacle/711%20in-ear/Grado%20iGE) by crinacle on 711
-- [Grado iGi](./Headphone.com%20Legacy/in-ear/Grado%20iGi) by Headphone.com Legacy
-- [Grado iGrado White](./Headphone.com%20Legacy/in-ear/Grado%20iGrado%20White) by Headphone.com Legacy
 - [Grell Audio TWS 1](./crinacle/711%20in-ear/Grell%20Audio%20TWS%201) by crinacle on 711
 - [GuideRay GR-I](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/GuideRay%20GR-I/GuideRay%20GR-I) by crinacle on Bruel & Kjaer 4620
+- [Harman Kardon FLY ANC](./crinacle/GRAS%2043AG-7%20over-ear/Harman%20Kardon%20FLY%20ANC) by crinacle on GRAS 43AG-7
+- [Harman Kardon NC](./Rtings/over-ear/Harman%20Kardon%20NC) by Rtings
+- [Harman Kardon NI](./Innerfidelity/in-ear/Harman%20Kardon%20NI) by Innerfidelity
+- [HarmonicDyne G200 (lambskin earpads)](./crinacle/GRAS%2043AG-7%20over-ear/HarmonicDyne%20G200%20(lambskin%20earpads)) by crinacle on GRAS 43AG-7
+- [HarmonicDyne G200 (velour earpads)](./oratory1990/over-ear/HarmonicDyne%20G200%20(velour%20earpads)) by oratory1990
+- [HarmonicDyne G200 (velour earpads)](./crinacle/GRAS%2043AG-7%20over-ear/HarmonicDyne%20G200%20(velour%20earpads)) by crinacle on GRAS 43AG-7
+- [HarmonicDyne Helios](./crinacle/GRAS%2043AG-7%20over-ear/HarmonicDyne%20Helios) by crinacle on GRAS 43AG-7
+- [HarmonicDyne PD1](./crinacle/711%20in-ear/HarmonicDyne%20PD1) by crinacle on 711
+- [HarmonicDyne Zeus](./oratory1990/over-ear/HarmonicDyne%20Zeus) by oratory1990
+- [Havi B3 Pro1](./Innerfidelity/in-ear/Havi%20B3%20Pro1) by Innerfidelity
+- [Heartfield Acoustic Deer](./crinacle/711%20in-ear/Heartfield%20Acoustic%20Deer) by crinacle on 711
 - [HEDD HEDDphone](./oratory1990/over-ear/HEDD%20HEDDphone) by oratory1990
 - [HEDD HEDDphone](./crinacle/GRAS%2043AG-7%20over-ear/HEDD%20HEDDphone) by crinacle on GRAS 43AG-7
 - [HEDD HEDDphone (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/HEDD%20HEDDphone%20(sample%202)) by crinacle on GRAS 43AG-7
+- [Heir Audio Tzar 350](./crinacle/711%20in-ear/Heir%20Audio%20Tzar%20350) by crinacle on 711
+- [HiBy Crystal 6](./crinacle/711%20in-ear/HiBy%20Crystal%206) by crinacle on 711
+- [HiBy WH3](./crinacle/711%20in-ear/HiBy%20WH3) by crinacle on 711
+- [Hidition NT6](./crinacle/711%20in-ear/Hidition%20NT6) by crinacle on 711
+- [Hidition NT6 Pro](./crinacle/711%20in-ear/Hidition%20NT6%20Pro) by crinacle on 711
+- [Hidition NT6 Uni](./crinacle/711%20in-ear/Hidition%20NT6%20Uni) by crinacle on 711
+- [Hidition NT8](./crinacle/711%20in-ear/Hidition%20NT8) by crinacle on 711
+- [Hidition Viento](./crinacle/711%20in-ear/Hidition%20Viento) by crinacle on 711
+- [Hidition Viento (bass)](./oratory1990/in-ear/Hidition%20Viento%20(bass)) by oratory1990
+- [Hidition Viento (bass)](./crinacle/711%20in-ear/Hidition%20Viento%20(bass)) by crinacle on 711
+- [Hidition Viento (bass, mids)](./crinacle/711%20in-ear/Hidition%20Viento%20(bass,%20mids)) by crinacle on 711
+- [Hidition Viento (mids)](./crinacle/711%20in-ear/Hidition%20Viento%20(mids)) by crinacle on 711
+- [Hidition Viento-A (CIEM)](./crinacle/711%20in-ear/Hidition%20Viento-A%20(CIEM)) by crinacle on 711
+- [Hidition Viento-B (CIEM)](./crinacle/711%20in-ear/Hidition%20Viento-B%20(CIEM)) by crinacle on 711
+- [Hidition Viento-D (CIEM)](./crinacle/711%20in-ear/Hidition%20Viento-D%20(CIEM)) by crinacle on 711
+- [Hidition Violet](./crinacle/711%20in-ear/Hidition%20Violet) by crinacle on 711
+- [Hidition Waltz](./crinacle/711%20in-ear/Hidition%20Waltz) by crinacle on 711
+- [Hidizs Mermaid MS4](./crinacle/711%20in-ear/Hidizs%20Mermaid%20MS4) by crinacle on 711
+- [HiFi Boy OS V3](./crinacle/711%20in-ear/HiFi%20Boy%20OS%20V3) by crinacle on 711
 - [HIFIMAN Ananda](./oratory1990/over-ear/HIFIMAN%20Ananda) by oratory1990
 - [HIFIMAN Ananda](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20Ananda) by crinacle on GRAS 43AG-7
 - [HIFIMAN Ananda](./Rtings/over-ear/HIFIMAN%20Ananda) by Rtings
@@ -1912,7 +1946,6 @@ from the same source.
 - [HIFIMAN HE1000se](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20HE1000se) by crinacle on GRAS 43AG-7
 - [HIFIMAN HE350](./oratory1990/over-ear/HIFIMAN%20HE350) by oratory1990
 - [HIFIMAN HE35X](./oratory1990/over-ear/HIFIMAN%20HE35X) by oratory1990
-- [HIFIMAN HE400S](./Innerfidelity/over-ear/HIFIMAN%20HE400S) by Innerfidelity
 - [HIFIMAN HE400i](./oratory1990/over-ear/HIFIMAN%20HE400i) by oratory1990
 - [HIFIMAN HE400i](./Innerfidelity/over-ear/HIFIMAN%20HE400i) by Innerfidelity
 - [HIFIMAN HE400i](./Rtings/over-ear/HIFIMAN%20HE400i) by Rtings
@@ -1920,6 +1953,7 @@ from the same source.
 - [HIFIMAN HE400i 2016](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20HE400i%202016) by crinacle on GRAS 43AG-7
 - [HIFIMAN HE400i 2020](./oratory1990/over-ear/HIFIMAN%20HE400i%202020) by oratory1990
 - [HIFIMAN HE400i 2020](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20HE400i%202020) by crinacle on GRAS 43AG-7
+- [HIFIMAN HE400S](./Innerfidelity/over-ear/HIFIMAN%20HE400S) by Innerfidelity
 - [HIFIMAN HE400se](./oratory1990/over-ear/HIFIMAN%20HE400se) by oratory1990
 - [HIFIMAN HE400se](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20HE400se) by crinacle on GRAS 43AG-7
 - [HIFIMAN HE400se](./Rtings/over-ear/HIFIMAN%20HE400se) by Rtings
@@ -1929,8 +1963,8 @@ from the same source.
 - [HIFIMAN HE560 2014](./Innerfidelity/over-ear/HIFIMAN%20HE560%202014) by Innerfidelity
 - [HIFIMAN HE560 V1](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20HE560%20V1) by crinacle on GRAS 43AG-7
 - [HIFIMAN HE560 V1 (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20HE560%20V1%20(sample%202)) by crinacle on GRAS 43AG-7
-- [HIFIMAN HE5XX](./oratory1990/over-ear/HIFIMAN%20HE5XX) by oratory1990
 - [HIFIMAN HE5se](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20HE5se) by crinacle on GRAS 43AG-7
+- [HIFIMAN HE5XX](./oratory1990/over-ear/HIFIMAN%20HE5XX) by oratory1990
 - [HIFIMAN HE6](./oratory1990/over-ear/HIFIMAN%20HE6) by oratory1990
 - [HIFIMAN HE6](./Innerfidelity/over-ear/HIFIMAN%20HE6) by Innerfidelity
 - [HIFIMAN HE6](./Headphone.com%20Legacy/over-ear/HIFIMAN%20HE6) by Headphone.com Legacy
@@ -1967,6 +2001,20 @@ from the same source.
 - [HIFIMAN Susvara](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20Susvara) by crinacle on GRAS 43AG-7
 - [HIFIMAN Susvara (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20Susvara%20(sample%202)) by crinacle on GRAS 43AG-7
 - [HIFIMAN TWS600](./crinacle/711%20in-ear/HIFIMAN%20TWS600) by crinacle on 711
+- [HiSoundAudio BA-100](./Innerfidelity/in-ear/HiSoundAudio%20BA-100) by Innerfidelity
+- [HiSoundAudio Crystal](./Innerfidelity/in-ear/HiSoundAudio%20Crystal) by Innerfidelity
+- [HiSoundAudio Golden Crystal](./Innerfidelity/in-ear/HiSoundAudio%20Golden%20Crystal) by Innerfidelity
+- [HiSoundAudio Hiphone HP4](./Innerfidelity/in-ear/HiSoundAudio%20Hiphone%20HP4) by Innerfidelity
+- [HiSoundAudio Wooduo](./Innerfidelity/in-ear/HiSoundAudio%20Wooduo) by Innerfidelity
+- [Horluchs HL4300](./crinacle/711%20in-ear/Horluchs%20HL4300) by crinacle on 711
+- [House of Marley Exodus Second Pair](./Innerfidelity/over-ear/House%20of%20Marley%20Exodus%20Second%20Pair) by Innerfidelity
+- [House of Marley Legend](./Innerfidelity/in-ear/House%20of%20Marley%20Legend) by Innerfidelity
+- [House of Marley Liberate XLBT Wired](./Innerfidelity/over-ear/House%20of%20Marley%20Liberate%20XLBT%20Wired) by Innerfidelity
+- [House of Marley Smile Jamaica](./Innerfidelity/in-ear/House%20of%20Marley%20Smile%20Jamaica) by Innerfidelity
+- [House of Marley Stir It Up](./Innerfidelity/over-ear/House%20of%20Marley%20Stir%20It%20Up) by Innerfidelity
+- [Howard Leight Sync](./Innerfidelity/over-ear/Howard%20Leight%20Sync) by Innerfidelity
+- [Huawei Freebuds 4i](./oratory1990/in-ear/Huawei%20Freebuds%204i) by oratory1990
+- [Huawei Freebuds Pro 2](./oratory1990/in-ear/Huawei%20Freebuds%20Pro%202) by oratory1990
 - [HUM Dolores](./crinacle/711%20in-ear/HUM%20Dolores) by crinacle on 711
 - [HUM Hong Kong Reference](./crinacle/711%20in-ear/HUM%20Hong%20Kong%20Reference) by crinacle on 711
 - [HUM Hong Kong TT](./crinacle/711%20in-ear/HUM%20Hong%20Kong%20TT) by crinacle on 711
@@ -1978,52 +2026,6 @@ from the same source.
 - [HYLA Sarda](./crinacle/711%20in-ear/HYLA%20Sarda) by crinacle on 711
 - [HYLA TE-5B](./crinacle/711%20in-ear/HYLA%20TE-5B) by crinacle on 711
 - [HYLA TE-5T](./crinacle/711%20in-ear/HYLA%20TE-5T) by crinacle on 711
-- [HZSOUND HZ-EP001](./Innerfidelity/in-ear/HZSOUND%20HZ-EP001) by Innerfidelity
-- [HZSOUND HZ3](./Innerfidelity/in-ear/HZSOUND%20HZ3) by Innerfidelity
-- [Harman Kardon FLY ANC](./crinacle/GRAS%2043AG-7%20over-ear/Harman%20Kardon%20FLY%20ANC) by crinacle on GRAS 43AG-7
-- [Harman Kardon NC](./Rtings/over-ear/Harman%20Kardon%20NC) by Rtings
-- [Harman Kardon NI](./Innerfidelity/in-ear/Harman%20Kardon%20NI) by Innerfidelity
-- [HarmonicDyne G200 (lambskin earpads)](./crinacle/GRAS%2043AG-7%20over-ear/HarmonicDyne%20G200%20(lambskin%20earpads)) by crinacle on GRAS 43AG-7
-- [HarmonicDyne G200 (velour earpads)](./oratory1990/over-ear/HarmonicDyne%20G200%20(velour%20earpads)) by oratory1990
-- [HarmonicDyne G200 (velour earpads)](./crinacle/GRAS%2043AG-7%20over-ear/HarmonicDyne%20G200%20(velour%20earpads)) by crinacle on GRAS 43AG-7
-- [HarmonicDyne Helios](./crinacle/GRAS%2043AG-7%20over-ear/HarmonicDyne%20Helios) by crinacle on GRAS 43AG-7
-- [HarmonicDyne PD1](./crinacle/711%20in-ear/HarmonicDyne%20PD1) by crinacle on 711
-- [HarmonicDyne Zeus](./oratory1990/over-ear/HarmonicDyne%20Zeus) by oratory1990
-- [Havi B3 Pro1](./Innerfidelity/in-ear/Havi%20B3%20Pro1) by Innerfidelity
-- [Heartfield Acoustic Deer](./crinacle/711%20in-ear/Heartfield%20Acoustic%20Deer) by crinacle on 711
-- [Heir Audio Tzar 350](./crinacle/711%20in-ear/Heir%20Audio%20Tzar%20350) by crinacle on 711
-- [HiBy Crystal 6](./crinacle/711%20in-ear/HiBy%20Crystal%206) by crinacle on 711
-- [HiBy WH3](./crinacle/711%20in-ear/HiBy%20WH3) by crinacle on 711
-- [HiFi Boy OS V3](./crinacle/711%20in-ear/HiFi%20Boy%20OS%20V3) by crinacle on 711
-- [HiSoundAudio BA-100](./Innerfidelity/in-ear/HiSoundAudio%20BA-100) by Innerfidelity
-- [HiSoundAudio Crystal](./Innerfidelity/in-ear/HiSoundAudio%20Crystal) by Innerfidelity
-- [HiSoundAudio Golden Crystal](./Innerfidelity/in-ear/HiSoundAudio%20Golden%20Crystal) by Innerfidelity
-- [HiSoundAudio Hiphone HP4](./Innerfidelity/in-ear/HiSoundAudio%20Hiphone%20HP4) by Innerfidelity
-- [HiSoundAudio Wooduo](./Innerfidelity/in-ear/HiSoundAudio%20Wooduo) by Innerfidelity
-- [Hidition NT6](./crinacle/711%20in-ear/Hidition%20NT6) by crinacle on 711
-- [Hidition NT6 Pro](./crinacle/711%20in-ear/Hidition%20NT6%20Pro) by crinacle on 711
-- [Hidition NT6 Uni](./crinacle/711%20in-ear/Hidition%20NT6%20Uni) by crinacle on 711
-- [Hidition NT8](./crinacle/711%20in-ear/Hidition%20NT8) by crinacle on 711
-- [Hidition Viento](./crinacle/711%20in-ear/Hidition%20Viento) by crinacle on 711
-- [Hidition Viento (bass)](./oratory1990/in-ear/Hidition%20Viento%20(bass)) by oratory1990
-- [Hidition Viento (bass)](./crinacle/711%20in-ear/Hidition%20Viento%20(bass)) by crinacle on 711
-- [Hidition Viento (bass, mids)](./crinacle/711%20in-ear/Hidition%20Viento%20(bass,%20mids)) by crinacle on 711
-- [Hidition Viento (mids)](./crinacle/711%20in-ear/Hidition%20Viento%20(mids)) by crinacle on 711
-- [Hidition Viento-A (CIEM)](./crinacle/711%20in-ear/Hidition%20Viento-A%20(CIEM)) by crinacle on 711
-- [Hidition Viento-B (CIEM)](./crinacle/711%20in-ear/Hidition%20Viento-B%20(CIEM)) by crinacle on 711
-- [Hidition Viento-D (CIEM)](./crinacle/711%20in-ear/Hidition%20Viento-D%20(CIEM)) by crinacle on 711
-- [Hidition Violet](./crinacle/711%20in-ear/Hidition%20Violet) by crinacle on 711
-- [Hidition Waltz](./crinacle/711%20in-ear/Hidition%20Waltz) by crinacle on 711
-- [Hidizs Mermaid MS4](./crinacle/711%20in-ear/Hidizs%20Mermaid%20MS4) by crinacle on 711
-- [Horluchs HL4300](./crinacle/711%20in-ear/Horluchs%20HL4300) by crinacle on 711
-- [House of Marley Exodus Second Pair](./Innerfidelity/over-ear/House%20of%20Marley%20Exodus%20Second%20Pair) by Innerfidelity
-- [House of Marley Legend](./Innerfidelity/in-ear/House%20of%20Marley%20Legend) by Innerfidelity
-- [House of Marley Liberate XLBT Wired](./Innerfidelity/over-ear/House%20of%20Marley%20Liberate%20XLBT%20Wired) by Innerfidelity
-- [House of Marley Smile Jamaica](./Innerfidelity/in-ear/House%20of%20Marley%20Smile%20Jamaica) by Innerfidelity
-- [House of Marley Stir It Up](./Innerfidelity/over-ear/House%20of%20Marley%20Stir%20It%20Up) by Innerfidelity
-- [Howard Leight Sync](./Innerfidelity/over-ear/Howard%20Leight%20Sync) by Innerfidelity
-- [Huawei Freebuds 4i](./oratory1990/in-ear/Huawei%20Freebuds%204i) by oratory1990
-- [Huawei Freebuds Pro 2](./oratory1990/in-ear/Huawei%20Freebuds%20Pro%202) by oratory1990
 - [HyperX Cloud Alpha](./oratory1990/over-ear/HyperX%20Cloud%20Alpha) by oratory1990
 - [HyperX Cloud Alpha](./Rtings/over-ear/HyperX%20Cloud%20Alpha) by Rtings
 - [HyperX Cloud Alpha S](./Rtings/over-ear/HyperX%20Cloud%20Alpha%20S) by Rtings
@@ -2040,8 +2042,27 @@ from the same source.
 - [HyperX Cloud Stinger](./Rtings/over-ear/HyperX%20Cloud%20Stinger) by Rtings
 - [HyperX Cloud Stinger 2](./Rtings/over-ear/HyperX%20Cloud%20Stinger%202) by Rtings
 - [HyperX Cloud Stinger S](./Rtings/over-ear/HyperX%20Cloud%20Stinger%20S) by Rtings
+- [HZSOUND HZ-EP001](./Innerfidelity/in-ear/HZSOUND%20HZ-EP001) by Innerfidelity
+- [HZSOUND HZ3](./Innerfidelity/in-ear/HZSOUND%20HZ3) by Innerfidelity
 - [I-INTO i8](./crinacle/711%20in-ear/I-INTO%20i8) by crinacle on 711
 - [I-Mego Throne](./Innerfidelity/over-ear/I-Mego%20Throne) by Innerfidelity
+- [iBasso AM05](./crinacle/711%20in-ear/iBasso%20AM05) by crinacle on 711
+- [iBasso IT00](./crinacle/711%20in-ear/iBasso%20IT00) by crinacle on 711
+- [iBasso IT01](./crinacle/711%20in-ear/iBasso%20IT01) by crinacle on 711
+- [iBasso IT01 (sample 1)](./crinacle/711%20in-ear/iBasso%20IT01%20(sample%201)) by crinacle on 711
+- [iBasso IT01 (sample 2)](./crinacle/711%20in-ear/iBasso%20IT01%20(sample%202)) by crinacle on 711
+- [iBasso IT01S](./crinacle/711%20in-ear/iBasso%20IT01S) by crinacle on 711
+- [iBasso IT01X](./crinacle/711%20in-ear/iBasso%20IT01X) by crinacle on 711
+- [iBasso IT03](./crinacle/711%20in-ear/iBasso%20IT03) by crinacle on 711
+- [iBasso IT03w](./crinacle/711%20in-ear/iBasso%20IT03w) by crinacle on 711
+- [iBasso IT04](./crinacle/711%20in-ear/iBasso%20IT04) by crinacle on 711
+- [iBasso IT07](./crinacle/711%20in-ear/iBasso%20IT07) by crinacle on 711
+- [iBasso SR1](./crinacle/GRAS%2043AG-7%20over-ear/iBasso%20SR1) by crinacle on GRAS 43AG-7
+- [iBasso SR2](./crinacle/GRAS%2043AG-7%20over-ear/iBasso%20SR2) by crinacle on GRAS 43AG-7
+- [iClever Boostcare](./Rtings/over-ear/iClever%20Boostcare) by Rtings
+- [iClever BTH02](./Rtings/over-ear/iClever%20BTH02) by Rtings
+- [iHarmonix iHX Pro ev-Series](./Headphone.com%20Legacy/in-ear/iHarmonix%20iHX%20Pro%20ev-Series) by Headphone.com Legacy
+- [iHarmonix Platinum ev-Series](./Innerfidelity/in-ear/iHarmonix%20Platinum%20ev-Series) by Innerfidelity
 - [IKKO OH1](./oratory1990/in-ear/IKKO%20OH1) by oratory1990
 - [IKKO OH1](./crinacle/711%20in-ear/IKKO%20OH1) by crinacle on 711
 - [IKKO OH10](./oratory1990/in-ear/IKKO%20OH10) by oratory1990
@@ -2049,6 +2070,7 @@ from the same source.
 - [IKKO OH1S](./crinacle/711%20in-ear/IKKO%20OH1S) by crinacle on 711
 - [IKKO OH2](./crinacle/711%20in-ear/IKKO%20OH2) by crinacle on 711
 - [IKKO OH7](./crinacle/711%20in-ear/IKKO%20OH7) by crinacle on 711
+- [iMetal iM590](./Innerfidelity/in-ear/iMetal%20iM590) by Innerfidelity
 - [IMR Acoustics Aten (silver nozzle, blue filter)](./crinacle/711%20in-ear/IMR%20Acoustics%20Aten%20(silver%20nozzle,%20blue%20filter)) by crinacle on 711
 - [IMR Acoustics R1 (black)](./crinacle/711%20in-ear/IMR%20Acoustics%20R1%20(black)) by crinacle on 711
 - [IMR Acoustics R1 (black) (sample 1)](./crinacle/711%20in-ear/IMR%20Acoustics%20R1%20(black)%20(sample%201)) by crinacle on 711
@@ -2108,6 +2130,45 @@ from the same source.
 - [Itsfit Lab R3](./crinacle/711%20in-ear/Itsfit%20Lab%20R3) by crinacle on 711
 - [Itsfit Lab R3 (CIEM)](./crinacle/711%20in-ear/Itsfit%20Lab%20R3%20(CIEM)) by crinacle on 711
 - [Ivery IS-1](./Innerfidelity/in-ear/Ivery%20IS-1) by Innerfidelity
+- [Jabra Elite 25e](./Rtings/in-ear/Jabra%20Elite%2025e) by Rtings
+- [Jabra Elite 3](./Rtings/in-ear/Jabra%20Elite%203) by Rtings
+- [Jabra Elite 4](./Rtings/in-ear/Jabra%20Elite%204) by Rtings
+- [Jabra Elite 4 Active](./Rtings/in-ear/Jabra%20Elite%204%20Active) by Rtings
+- [Jabra Elite 45e](./Rtings/in-ear/Jabra%20Elite%2045e) by Rtings
+- [Jabra Elite 5](./Rtings/in-ear/Jabra%20Elite%205) by Rtings
+- [Jabra Elite 65e](./Rtings/in-ear/Jabra%20Elite%2065e) by Rtings
+- [Jabra Elite 65t](./Rtings/in-ear/Jabra%20Elite%2065t) by Rtings
+- [Jabra Elite 7 Active](./Rtings/in-ear/Jabra%20Elite%207%20Active) by Rtings
+- [Jabra Elite 7 Pro](./oratory1990/in-ear/Jabra%20Elite%207%20Pro) by oratory1990
+- [Jabra Elite 7 Pro](./Rtings/in-ear/Jabra%20Elite%207%20Pro) by Rtings
+- [Jabra Elite 75t](./oratory1990/in-ear/Jabra%20Elite%2075t) by oratory1990
+- [Jabra Elite 75t](./crinacle/711%20in-ear/Jabra%20Elite%2075t) by crinacle on 711
+- [Jabra Elite 75t](./Rtings/in-ear/Jabra%20Elite%2075t) by Rtings
+- [Jabra Elite 85h](./Rtings/over-ear/Jabra%20Elite%2085h) by Rtings
+- [Jabra Elite 85t](./Rtings/in-ear/Jabra%20Elite%2085t) by Rtings
+- [Jabra Elite Active 45e](./Rtings/in-ear/Jabra%20Elite%20Active%2045e) by Rtings
+- [Jabra Elite Active 65t](./crinacle/711%20in-ear/Jabra%20Elite%20Active%2065t) by crinacle on 711
+- [Jabra Elite Active 65t](./Rtings/in-ear/Jabra%20Elite%20Active%2065t) by Rtings
+- [Jabra Elite Active 75t](./Rtings/in-ear/Jabra%20Elite%20Active%2075t) by Rtings
+- [Jabra Elite Sport](./Rtings/in-ear/Jabra%20Elite%20Sport) by Rtings
+- [Jabra Evolve 65t](./Rtings/in-ear/Jabra%20Evolve%2065t) by Rtings
+- [Jabra Evolve 75e](./oratory1990/in-ear/Jabra%20Evolve%2075e) by oratory1990
+- [Jabra Evolve2 65](./Rtings/over-ear/Jabra%20Evolve2%2065) by Rtings
+- [Jabra Evolve2 85](./Rtings/over-ear/Jabra%20Evolve2%2085) by Rtings
+- [Jabra Move (wired)](./Innerfidelity/over-ear/Jabra%20Move%20(wired)) by Innerfidelity
+- [Jade Audio EA3](./crinacle/711%20in-ear/Jade%20Audio%20EA3) by crinacle on 711
+- [Jaybird Freedom](./Rtings/in-ear/Jaybird%20Freedom) by Rtings
+- [Jaybird Freedom 2](./Rtings/in-ear/Jaybird%20Freedom%202) by Rtings
+- [Jaybird Run](./Rtings/in-ear/Jaybird%20Run) by Rtings
+- [Jaybird Run XT](./Rtings/in-ear/Jaybird%20Run%20XT) by Rtings
+- [Jaybird Tarah](./Rtings/in-ear/Jaybird%20Tarah) by Rtings
+- [Jaybird Tarah Pro](./Rtings/in-ear/Jaybird%20Tarah%20Pro) by Rtings
+- [Jaybird Vista](./crinacle/711%20in-ear/Jaybird%20Vista) by crinacle on 711
+- [Jaybird Vista](./Rtings/in-ear/Jaybird%20Vista) by Rtings
+- [Jaybird Vista 2](./Rtings/in-ear/Jaybird%20Vista%202) by Rtings
+- [Jaybird X2](./Rtings/in-ear/Jaybird%20X2) by Rtings
+- [Jaybird X3](./Rtings/in-ear/Jaybird%20X3) by Rtings
+- [Jaybird X4](./Rtings/in-ear/Jaybird%20X4) by Rtings
 - [JAYS a-JAYS FIVE](./Innerfidelity/in-ear/JAYS%20a-JAYS%20FIVE) by Innerfidelity
 - [JAYS d-JAYS](./Headphone.com%20Legacy/in-ear/JAYS%20d-JAYS) by Headphone.com Legacy
 - [JAYS j-JAYS](./Headphone.com%20Legacy/in-ear/JAYS%20j-JAYS) by Headphone.com Legacy
@@ -2165,17 +2226,17 @@ from the same source.
 - [JBL T200A](./oratory1990/in-ear/JBL%20T200A) by oratory1990
 - [JBL T450BT](./oratory1990/over-ear/JBL%20T450BT) by oratory1990
 - [JBL T450BT](./Rtings/over-ear/JBL%20T450BT) by Rtings
-- [JBL TUNE 120TWS](./Rtings/in-ear/JBL%20TUNE%20120TWS) by Rtings
-- [JBL TUNE 220TWS](./Rtings/in-ear/JBL%20TUNE%20220TWS) by Rtings
-- [JBL TUNE 750BTNC](./Rtings/over-ear/JBL%20TUNE%20750BTNC) by Rtings
 - [JBL Tour One](./Rtings/over-ear/JBL%20Tour%20One) by Rtings
 - [JBL Tour Pro+ TWS](./Rtings/in-ear/JBL%20Tour%20Pro+%20TWS) by Rtings
+- [JBL TUNE 120TWS](./Rtings/in-ear/JBL%20TUNE%20120TWS) by Rtings
 - [JBL Tune 125TWS](./Rtings/in-ear/JBL%20Tune%20125TWS) by Rtings
 - [JBL Tune 130NC TWS](./Rtings/in-ear/JBL%20Tune%20130NC%20TWS) by Rtings
+- [JBL TUNE 220TWS](./Rtings/in-ear/JBL%20TUNE%20220TWS) by Rtings
 - [JBL Tune 225TWS](./Rtings/in-ear/JBL%20Tune%20225TWS) by Rtings
 - [JBL Tune 230NC TWS](./Rtings/in-ear/JBL%20Tune%20230NC%20TWS) by Rtings
 - [JBL Tune 510BT](./Rtings/over-ear/JBL%20Tune%20510BT) by Rtings
 - [JBL Tune 660NC](./Rtings/over-ear/JBL%20Tune%20660NC) by Rtings
+- [JBL TUNE 750BTNC](./Rtings/over-ear/JBL%20TUNE%20750BTNC) by Rtings
 - [JBL Tune 760NC](./Rtings/over-ear/JBL%20Tune%20760NC) by Rtings
 - [JBL Vibe 100TWS](./Rtings/in-ear/JBL%20Vibe%20100TWS) by Rtings
 - [JBL Vibe Beam](./Rtings/in-ear/JBL%20Vibe%20Beam) by Rtings
@@ -2212,66 +2273,6 @@ from the same source.
 - [JLab Audio JBuds Air](./Rtings/in-ear/JLab%20Audio%20JBuds%20Air) by Rtings
 - [JLab Audio JBuds Air ANC](./Rtings/in-ear/JLab%20Audio%20JBuds%20Air%20ANC) by Rtings
 - [JLab Audio JBuds Air Executive](./Rtings/in-ear/JLab%20Audio%20JBuds%20Air%20Executive) by Rtings
-- [JQ 4u Pro](./crinacle/711%20in-ear/JQ%204u%20Pro) by crinacle on 711
-- [JQ Hua Jiang](./crinacle/711%20in-ear/JQ%20Hua%20Jiang) by crinacle on 711
-- [JQ Hua Jiang (sample 2)](./crinacle/711%20in-ear/JQ%20Hua%20Jiang%20(sample%202)) by crinacle on 711
-- [JVC FD01 (modded)](./crinacle/711%20in-ear/JVC%20FD01%20(modded)) by crinacle on 711
-- [JVC HA-FD01](./crinacle/711%20in-ear/JVC%20HA-FD01) by crinacle on 711
-- [JVC HA-FD02](./crinacle/711%20in-ear/JVC%20HA-FD02) by crinacle on 711
-- [JVC HA-FDX1](./crinacle/711%20in-ear/JVC%20HA-FDX1) by crinacle on 711
-- [JVC HA-FDX1 (blue)](./crinacle/711%20in-ear/JVC%20HA-FDX1%20(blue)) by crinacle on 711
-- [JVC HA-FDX1 (green)](./crinacle/711%20in-ear/JVC%20HA-FDX1%20(green)) by crinacle on 711
-- [JVC HA-FR301](./Innerfidelity/in-ear/JVC%20HA-FR301) by Innerfidelity
-- [JVC HA-FW01](./oratory1990/in-ear/JVC%20HA-FW01) by oratory1990
-- [JVC HA-FW01](./crinacle/711%20in-ear/JVC%20HA-FW01) by crinacle on 711
-- [JVC HA-FW02](./crinacle/711%20in-ear/JVC%20HA-FW02) by crinacle on 711
-- [JVC HA-FW03](./crinacle/711%20in-ear/JVC%20HA-FW03) by crinacle on 711
-- [JVC HA-FW10000](./oratory1990/in-ear/JVC%20HA-FW10000) by oratory1990
-- [JVC HA-FW10000](./crinacle/711%20in-ear/JVC%20HA-FW10000) by crinacle on 711
-- [JVC HA-FW1800](./oratory1990/in-ear/JVC%20HA-FW1800) by oratory1990
-- [JVC HA-FX99X-B](./crinacle/711%20in-ear/JVC%20HA-FX99X-B) by crinacle on 711
-- [JVC HA-FXT90](./Innerfidelity/in-ear/JVC%20HA-FXT90) by Innerfidelity
-- [JVC HA-S500-Z](./Innerfidelity/over-ear/JVC%20HA-S500-Z) by Innerfidelity
-- [JVC XX Elation HA FR100X](./Innerfidelity/in-ear/JVC%20XX%20Elation%20HA%20FR100X) by Innerfidelity
-- [Jabra Elite 25e](./Rtings/in-ear/Jabra%20Elite%2025e) by Rtings
-- [Jabra Elite 3](./Rtings/in-ear/Jabra%20Elite%203) by Rtings
-- [Jabra Elite 4](./Rtings/in-ear/Jabra%20Elite%204) by Rtings
-- [Jabra Elite 4 Active](./Rtings/in-ear/Jabra%20Elite%204%20Active) by Rtings
-- [Jabra Elite 45e](./Rtings/in-ear/Jabra%20Elite%2045e) by Rtings
-- [Jabra Elite 5](./Rtings/in-ear/Jabra%20Elite%205) by Rtings
-- [Jabra Elite 65e](./Rtings/in-ear/Jabra%20Elite%2065e) by Rtings
-- [Jabra Elite 65t](./Rtings/in-ear/Jabra%20Elite%2065t) by Rtings
-- [Jabra Elite 7 Active](./Rtings/in-ear/Jabra%20Elite%207%20Active) by Rtings
-- [Jabra Elite 7 Pro](./oratory1990/in-ear/Jabra%20Elite%207%20Pro) by oratory1990
-- [Jabra Elite 7 Pro](./Rtings/in-ear/Jabra%20Elite%207%20Pro) by Rtings
-- [Jabra Elite 75t](./oratory1990/in-ear/Jabra%20Elite%2075t) by oratory1990
-- [Jabra Elite 75t](./crinacle/711%20in-ear/Jabra%20Elite%2075t) by crinacle on 711
-- [Jabra Elite 75t](./Rtings/in-ear/Jabra%20Elite%2075t) by Rtings
-- [Jabra Elite 85h](./Rtings/over-ear/Jabra%20Elite%2085h) by Rtings
-- [Jabra Elite 85t](./Rtings/in-ear/Jabra%20Elite%2085t) by Rtings
-- [Jabra Elite Active 45e](./Rtings/in-ear/Jabra%20Elite%20Active%2045e) by Rtings
-- [Jabra Elite Active 65t](./crinacle/711%20in-ear/Jabra%20Elite%20Active%2065t) by crinacle on 711
-- [Jabra Elite Active 65t](./Rtings/in-ear/Jabra%20Elite%20Active%2065t) by Rtings
-- [Jabra Elite Active 75t](./Rtings/in-ear/Jabra%20Elite%20Active%2075t) by Rtings
-- [Jabra Elite Sport](./Rtings/in-ear/Jabra%20Elite%20Sport) by Rtings
-- [Jabra Evolve 65t](./Rtings/in-ear/Jabra%20Evolve%2065t) by Rtings
-- [Jabra Evolve 75e](./oratory1990/in-ear/Jabra%20Evolve%2075e) by oratory1990
-- [Jabra Evolve2 65](./Rtings/over-ear/Jabra%20Evolve2%2065) by Rtings
-- [Jabra Evolve2 85](./Rtings/over-ear/Jabra%20Evolve2%2085) by Rtings
-- [Jabra Move (wired)](./Innerfidelity/over-ear/Jabra%20Move%20(wired)) by Innerfidelity
-- [Jade Audio EA3](./crinacle/711%20in-ear/Jade%20Audio%20EA3) by crinacle on 711
-- [Jaybird Freedom](./Rtings/in-ear/Jaybird%20Freedom) by Rtings
-- [Jaybird Freedom 2](./Rtings/in-ear/Jaybird%20Freedom%202) by Rtings
-- [Jaybird Run](./Rtings/in-ear/Jaybird%20Run) by Rtings
-- [Jaybird Run XT](./Rtings/in-ear/Jaybird%20Run%20XT) by Rtings
-- [Jaybird Tarah](./Rtings/in-ear/Jaybird%20Tarah) by Rtings
-- [Jaybird Tarah Pro](./Rtings/in-ear/Jaybird%20Tarah%20Pro) by Rtings
-- [Jaybird Vista](./crinacle/711%20in-ear/Jaybird%20Vista) by crinacle on 711
-- [Jaybird Vista](./Rtings/in-ear/Jaybird%20Vista) by Rtings
-- [Jaybird Vista 2](./Rtings/in-ear/Jaybird%20Vista%202) by Rtings
-- [Jaybird X2](./Rtings/in-ear/Jaybird%20X2) by Rtings
-- [Jaybird X3](./Rtings/in-ear/Jaybird%20X3) by Rtings
-- [Jaybird X4](./Rtings/in-ear/Jaybird%20X4) by Rtings
 - [Jomo Audio Flamenco](./crinacle/711%20in-ear/Jomo%20Audio%20Flamenco) by crinacle on 711
 - [Jomo Audio Flamenco (bass)](./crinacle/711%20in-ear/Jomo%20Audio%20Flamenco%20(bass)) by crinacle on 711
 - [Jomo Audio Flamenco (bass, treble)](./crinacle/711%20in-ear/Jomo%20Audio%20Flamenco%20(bass,%20treble)) by crinacle on 711
@@ -2293,80 +2294,49 @@ from the same source.
 - [Jomo Audio Tango](./crinacle/711%20in-ear/Jomo%20Audio%20Tango) by crinacle on 711
 - [Jomo Audio Trinity](./crinacle/711%20in-ear/Jomo%20Audio%20Trinity) by crinacle on 711
 - [Jomo Audio Trinity Brass](./crinacle/711%20in-ear/Jomo%20Audio%20Trinity%20Brass) by crinacle on 711
+- [JQ 4u Pro](./crinacle/711%20in-ear/JQ%204u%20Pro) by crinacle on 711
+- [JQ Hua Jiang](./crinacle/711%20in-ear/JQ%20Hua%20Jiang) by crinacle on 711
+- [JQ Hua Jiang (sample 2)](./crinacle/711%20in-ear/JQ%20Hua%20Jiang%20(sample%202)) by crinacle on 711
 - [Just Ear Club Sound](./crinacle/711%20in-ear/Just%20Ear%20Club%20Sound) by crinacle on 711
-- [KBEAR Qinglong](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong/KBEAR%20Qinglong) by crinacle on Bruel & Kjaer 4620
+- [JVC FD01 (modded)](./crinacle/711%20in-ear/JVC%20FD01%20(modded)) by crinacle on 711
+- [JVC HA-FD01](./crinacle/711%20in-ear/JVC%20HA-FD01) by crinacle on 711
+- [JVC HA-FD02](./crinacle/711%20in-ear/JVC%20HA-FD02) by crinacle on 711
+- [JVC HA-FDX1](./crinacle/711%20in-ear/JVC%20HA-FDX1) by crinacle on 711
+- [JVC HA-FDX1 (blue)](./crinacle/711%20in-ear/JVC%20HA-FDX1%20(blue)) by crinacle on 711
+- [JVC HA-FDX1 (green)](./crinacle/711%20in-ear/JVC%20HA-FDX1%20(green)) by crinacle on 711
+- [JVC HA-FR301](./Innerfidelity/in-ear/JVC%20HA-FR301) by Innerfidelity
+- [JVC HA-FW01](./oratory1990/in-ear/JVC%20HA-FW01) by oratory1990
+- [JVC HA-FW01](./crinacle/711%20in-ear/JVC%20HA-FW01) by crinacle on 711
+- [JVC HA-FW02](./crinacle/711%20in-ear/JVC%20HA-FW02) by crinacle on 711
+- [JVC HA-FW03](./crinacle/711%20in-ear/JVC%20HA-FW03) by crinacle on 711
+- [JVC HA-FW10000](./oratory1990/in-ear/JVC%20HA-FW10000) by oratory1990
+- [JVC HA-FW10000](./crinacle/711%20in-ear/JVC%20HA-FW10000) by crinacle on 711
+- [JVC HA-FW1800](./oratory1990/in-ear/JVC%20HA-FW1800) by oratory1990
+- [JVC HA-FX99X-B](./crinacle/711%20in-ear/JVC%20HA-FX99X-B) by crinacle on 711
+- [JVC HA-FXT90](./Innerfidelity/in-ear/JVC%20HA-FXT90) by Innerfidelity
+- [JVC HA-S500-Z](./Innerfidelity/over-ear/JVC%20HA-S500-Z) by Innerfidelity
+- [JVC XX Elation HA FR100X](./Innerfidelity/in-ear/JVC%20XX%20Elation%20HA%20FR100X) by Innerfidelity
+- [Kaldas Research Conquest RR1](./oratory1990/over-ear/Kaldas%20Research%20Conquest%20RR1) by oratory1990
 - [KBEar F1](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEar%20F1) by crinacle on Bruel & Kjaer 4620
 - [KBEar Neon](./crinacle/711%20in-ear/KBEar%20Neon) by crinacle on 711
+- [KBEAR Qinglong](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong/KBEAR%20Qinglong) by crinacle on Bruel & Kjaer 4620
 - [KEF M200](./Innerfidelity/in-ear/KEF%20M200) by Innerfidelity
 - [KEF M500](./Innerfidelity/over-ear/KEF%20M500) by Innerfidelity
 - [KEF M500](./Headphone.com%20Legacy/over-ear/KEF%20M500) by Headphone.com Legacy
-- [KLH Ultimate One](./oratory1990/over-ear/KLH%20Ultimate%20One) by oratory1990
-- [KRK SYSTEMS KNS 6400](./Innerfidelity/over-ear/KRK%20SYSTEMS%20KNS%206400) by Innerfidelity
-- [KRK SYSTEMS KNS 6400](./Headphone.com%20Legacy/over-ear/KRK%20SYSTEMS%20KNS%206400) by Headphone.com Legacy
-- [KRK SYSTEMS KNS 8400](./Innerfidelity/over-ear/KRK%20SYSTEMS%20KNS%208400) by Innerfidelity
-- [KRK SYSTEMS KNS 8400](./Headphone.com%20Legacy/over-ear/KRK%20SYSTEMS%20KNS%208400) by Headphone.com Legacy
-- [KZ AS10](./crinacle/711%20in-ear/KZ%20AS10) by crinacle on 711
-- [KZ AS10](./Rtings/in-ear/KZ%20AS10) by Rtings
-- [KZ AS16](./crinacle/711%20in-ear/KZ%20AS16) by crinacle on 711
-- [KZ ASF](./crinacle/711%20in-ear/KZ%20ASF) by crinacle on 711
-- [KZ ASX](./crinacle/711%20in-ear/KZ%20ASX) by crinacle on 711
-- [KZ ATE](./oratory1990/in-ear/KZ%20ATE) by oratory1990
-- [KZ BA10](./crinacle/711%20in-ear/KZ%20BA10) by crinacle on 711
-- [KZ DQ6](./crinacle/711%20in-ear/KZ%20DQ6) by crinacle on 711
-- [KZ DQ6 (sample 1)](./crinacle/711%20in-ear/KZ%20DQ6%20(sample%201)) by crinacle on 711
-- [KZ DQ6 (sample 2)](./crinacle/711%20in-ear/KZ%20DQ6%20(sample%202)) by crinacle on 711
-- [KZ DQ6S](./crinacle/711%20in-ear/KZ%20DQ6S) by crinacle on 711
-- [KZ E10](./crinacle/711%20in-ear/KZ%20E10) by crinacle on 711
-- [KZ ED Special Edition](./crinacle/711%20in-ear/KZ%20ED%20Special%20Edition) by crinacle on 711
-- [KZ ED16](./crinacle/711%20in-ear/KZ%20ED16) by crinacle on 711
-- [KZ EDSE](./oratory1990/in-ear/KZ%20EDSE) by oratory1990
-- [KZ EDX Pro](./crinacle/711%20in-ear/KZ%20EDX%20Pro) by crinacle on 711
-- [KZ EDX Pro (sample 1)](./crinacle/711%20in-ear/KZ%20EDX%20Pro%20(sample%201)) by crinacle on 711
-- [KZ EDX Pro (sample 2)](./crinacle/711%20in-ear/KZ%20EDX%20Pro%20(sample%202)) by crinacle on 711
-- [KZ ES4](./oratory1990/in-ear/KZ%20ES4) by oratory1990
-- [KZ ES4](./crinacle/711%20in-ear/KZ%20ES4) by crinacle on 711
-- [KZ S2](./crinacle/711%20in-ear/KZ%20S2) by crinacle on 711
-- [KZ S4](./crinacle/711%20in-ear/KZ%20S4) by crinacle on 711
-- [KZ ZAS](./crinacle/711%20in-ear/KZ%20ZAS) by crinacle on 711
-- [KZ ZAX](./crinacle/711%20in-ear/KZ%20ZAX) by crinacle on 711
-- [KZ ZEX](./crinacle/711%20in-ear/KZ%20ZEX) by crinacle on 711
-- [KZ ZS10](./oratory1990/in-ear/KZ%20ZS10) by oratory1990
-- [KZ ZS10](./Rtings/in-ear/KZ%20ZS10) by Rtings
-- [KZ ZS10 Pro](./crinacle/711%20in-ear/KZ%20ZS10%20Pro) by crinacle on 711
-- [KZ ZS3](./crinacle/711%20in-ear/KZ%20ZS3) by crinacle on 711
-- [KZ ZS5v1](./crinacle/711%20in-ear/KZ%20ZS5v1) by crinacle on 711
-- [KZ ZS5v1 (sample 1)](./crinacle/711%20in-ear/KZ%20ZS5v1%20(sample%201)) by crinacle on 711
-- [KZ ZS5v1 (sample 2)](./crinacle/711%20in-ear/KZ%20ZS5v1%20(sample%202)) by crinacle on 711
-- [KZ ZS5v2](./crinacle/711%20in-ear/KZ%20ZS5v2) by crinacle on 711
-- [KZ ZS6](./crinacle/711%20in-ear/KZ%20ZS6) by crinacle on 711
-- [KZ ZS7](./oratory1990/in-ear/KZ%20ZS7) by oratory1990
-- [KZ ZSN](./Rtings/in-ear/KZ%20ZSN) by Rtings
-- [KZ ZSN Pro](./crinacle/711%20in-ear/KZ%20ZSN%20Pro) by crinacle on 711
-- [KZ ZSN Pro X](./oratory1990/in-ear/KZ%20ZSN%20Pro%20X) by oratory1990
-- [KZ ZSN Pro X](./crinacle/711%20in-ear/KZ%20ZSN%20Pro%20X) by crinacle on 711
-- [KZ ZSR](./crinacle/711%20in-ear/KZ%20ZSR) by crinacle on 711
-- [KZ ZST](./oratory1990/in-ear/KZ%20ZST) by oratory1990
-- [KZ ZST](./crinacle/711%20in-ear/KZ%20ZST) by crinacle on 711
-- [KZ ZST](./Rtings/in-ear/KZ%20ZST) by Rtings
-- [KZ ZSX](./crinacle/711%20in-ear/KZ%20ZSX) by crinacle on 711
-- [KZ ZSX (sample 1)](./crinacle/711%20in-ear/KZ%20ZSX%20(sample%201)) by crinacle on 711
-- [KZ ZSX (sample 2)](./crinacle/711%20in-ear/KZ%20ZSX%20(sample%202)) by crinacle on 711
-- [KZ x Crinacle CRN (ZEX Pro)](./crinacle/711%20in-ear/KZ%20x%20Crinacle%20CRN%20(ZEX%20Pro)) by crinacle on 711
-- [Kaldas Research Conquest RR1](./oratory1990/over-ear/Kaldas%20Research%20Conquest%20RR1) by oratory1990
 - [Kennerton Jimo](./crinacle/711%20in-ear/Kennerton%20Jimo) by crinacle on 711
 - [Kennerton Magister](./oratory1990/over-ear/Kennerton%20Magister) by oratory1990
 - [Kennerton Magister](./Innerfidelity/over-ear/Kennerton%20Magister) by Innerfidelity
 - [Kennerton Odin Bog Oak](./crinacle/GRAS%2043AG-7%20over-ear/Kennerton%20Odin%20Bog%20Oak) by crinacle on GRAS 43AG-7
 - [Kennerton Thror Bog Oak](./crinacle/GRAS%2043AG-7%20over-ear/Kennerton%20Thror%20Bog%20Oak) by crinacle on GRAS 43AG-7
+- [Kinera Baldr](./crinacle/711%20in-ear/Kinera%20Baldr) by crinacle on 711
 - [Kinera BD005](./crinacle/711%20in-ear/Kinera%20BD005) by crinacle on 711
 - [Kinera BD005 Pro](./crinacle/711%20in-ear/Kinera%20BD005%20Pro) by crinacle on 711
-- [Kinera Baldr](./crinacle/711%20in-ear/Kinera%20Baldr) by crinacle on 711
 - [Kinera Freya](./crinacle/711%20in-ear/Kinera%20Freya) by crinacle on 711
 - [Kinera H3](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Kinera%20H3) by crinacle on Bruel & Kjaer 4620
-- [Kinera IDUN Deluxe](./crinacle/711%20in-ear/Kinera%20IDUN%20Deluxe) by crinacle on 711
 - [Kinera Idun](./crinacle/711%20in-ear/Kinera%20Idun) by crinacle on 711
 - [Kinera Idun (sample 1)](./crinacle/711%20in-ear/Kinera%20Idun%20(sample%201)) by crinacle on 711
 - [Kinera Idun (sample 2)](./crinacle/711%20in-ear/Kinera%20Idun%20(sample%202)) by crinacle on 711
+- [Kinera IDUN Deluxe](./crinacle/711%20in-ear/Kinera%20IDUN%20Deluxe) by crinacle on 711
 - [Kinera Nanna](./crinacle/711%20in-ear/Kinera%20Nanna) by crinacle on 711
 - [Kinera Nanna 2.0](./crinacle/711%20in-ear/Kinera%20Nanna%202.0) by crinacle on 711
 - [Kinera Odin](./crinacle/711%20in-ear/Kinera%20Odin) by crinacle on 711
@@ -2374,8 +2344,9 @@ from the same source.
 - [Kinera SIF](./crinacle/711%20in-ear/Kinera%20SIF) by crinacle on 711
 - [Kingsound KS-H04](./oratory1990/over-ear/Kingsound%20KS-H04) by oratory1990
 - [Kiwi Ears Orchestra](./crinacle/711%20in-ear/Kiwi%20Ears%20Orchestra) by crinacle on 711
-- [Klipsch HP3](./crinacle/711%20in-ear/Klipsch%20HP3) by crinacle on 711
+- [KLH Ultimate One](./oratory1990/over-ear/KLH%20Ultimate%20One) by oratory1990
 - [Klipsch Heritage HP-3](./crinacle/GRAS%2043AG-7%20over-ear/Klipsch%20Heritage%20HP-3) by crinacle on GRAS 43AG-7
+- [Klipsch HP3](./crinacle/711%20in-ear/Klipsch%20HP3) by crinacle on 711
 - [Klipsch Image One](./Innerfidelity/over-ear/Klipsch%20Image%20One) by Innerfidelity
 - [Klipsch Image One](./Headphone.com%20Legacy/over-ear/Klipsch%20Image%20One) by Headphone.com Legacy
 - [Klipsch Image One B](./Innerfidelity/over-ear/Klipsch%20Image%20One%20B) by Innerfidelity
@@ -2384,9 +2355,9 @@ from the same source.
 - [Klipsch Image S4i](./Headphone.com%20Legacy/in-ear/Klipsch%20Image%20S4i) by Headphone.com Legacy
 - [Klipsch Mode M40](./Innerfidelity/over-ear/Klipsch%20Mode%20M40) by Innerfidelity
 - [Klipsch Mode M40](./Headphone.com%20Legacy/over-ear/Klipsch%20Mode%20M40) by Headphone.com Legacy
+- [Klipsch Reference On Ear](./Innerfidelity/over-ear/Klipsch%20Reference%20On%20Ear) by Innerfidelity
 - [Klipsch Reference ONE](./Innerfidelity/over-ear/Klipsch%20Reference%20ONE) by Innerfidelity
 - [Klipsch Reference ONE](./Headphone.com%20Legacy/over-ear/Klipsch%20Reference%20ONE) by Headphone.com Legacy
-- [Klipsch Reference On Ear](./Innerfidelity/over-ear/Klipsch%20Reference%20On%20Ear) by Innerfidelity
 - [Klipsch T5 II](./Rtings/in-ear/Klipsch%20T5%20II) by Rtings
 - [Klipsch T5 II True Wireless ANC](./Rtings/in-ear/Klipsch%20T5%20II%20True%20Wireless%20ANC) by Rtings
 - [Klipsch T5 II True Wireless Sport](./Rtings/in-ear/Klipsch%20T5%20II%20True%20Wireless%20Sport) by Rtings
@@ -2419,18 +2390,18 @@ from the same source.
 - [Koss KSC75](./Rtings/over-ear/Koss%20KSC75) by Rtings
 - [Koss KSC75](./Headphone.com%20Legacy/over-ear/Koss%20KSC75) by Headphone.com Legacy
 - [Koss KSC75X (Yaxi earpads)](./oratory1990/over-ear/Koss%20KSC75X%20(Yaxi%20earpads)) by oratory1990
-- [Koss PRO DJ 100](./Headphone.com%20Legacy/over-ear/Koss%20PRO%20DJ%20100) by Headphone.com Legacy
-- [Koss PRO DJ100](./crinacle/GRAS%2043AG-7%20over-ear/Koss%20PRO%20DJ100) by crinacle on GRAS 43AG-7
 - [Koss Porta Pro](./oratory1990/over-ear/Koss%20Porta%20Pro) by oratory1990
 - [Koss Porta Pro](./crinacle/GRAS%2043AG-7%20over-ear/Koss%20Porta%20Pro) by crinacle on GRAS 43AG-7
 - [Koss Porta Pro](./Innerfidelity/over-ear/Koss%20Porta%20Pro) by Innerfidelity
 - [Koss Porta Pro](./Rtings/over-ear/Koss%20Porta%20Pro) by Rtings
 - [Koss Porta Pro](./Headphone.com%20Legacy/over-ear/Koss%20Porta%20Pro) by Headphone.com Legacy
-- [Koss Porta Pro (Yaxi earpads)](./oratory1990/over-ear/Koss%20Porta%20Pro%20(Yaxi%20earpads)) by oratory1990
 - [Koss Porta Pro (sample 1)](./Headphone.com%20Legacy/over-ear/Koss%20Porta%20Pro%20(sample%201)) by Headphone.com Legacy
 - [Koss Porta Pro (sample 2)](./Headphone.com%20Legacy/over-ear/Koss%20Porta%20Pro%20(sample%202)) by Headphone.com Legacy
+- [Koss Porta Pro (Yaxi earpads)](./oratory1990/over-ear/Koss%20Porta%20Pro%20(Yaxi%20earpads)) by oratory1990
 - [Koss Porta Pro Aniv Ed](./Headphone.com%20Legacy/over-ear/Koss%20Porta%20Pro%20Aniv%20Ed) by Headphone.com Legacy
 - [Koss Porta Pro Wireless](./Rtings/over-ear/Koss%20Porta%20Pro%20Wireless) by Rtings
+- [Koss PRO DJ 100](./Headphone.com%20Legacy/over-ear/Koss%20PRO%20DJ%20100) by Headphone.com Legacy
+- [Koss PRO DJ100](./crinacle/GRAS%2043AG-7%20over-ear/Koss%20PRO%20DJ100) by crinacle on GRAS 43AG-7
 - [Koss Pro4AA 1975](./Innerfidelity/over-ear/Koss%20Pro4AA%201975) by Innerfidelity
 - [Koss Pro4AA 2014](./Innerfidelity/over-ear/Koss%20Pro4AA%202014) by Innerfidelity
 - [Koss Pro4AAA](./Innerfidelity/over-ear/Koss%20Pro4AAA) by Innerfidelity
@@ -2446,6 +2417,10 @@ from the same source.
 - [Koss UR 20](./Rtings/over-ear/Koss%20UR%2020) by Rtings
 - [Koss UR 20](./Headphone.com%20Legacy/over-ear/Koss%20UR%2020) by Headphone.com Legacy
 - [Koss UR 29](./Headphone.com%20Legacy/over-ear/Koss%20UR%2029) by Headphone.com Legacy
+- [KRK SYSTEMS KNS 6400](./Innerfidelity/over-ear/KRK%20SYSTEMS%20KNS%206400) by Innerfidelity
+- [KRK SYSTEMS KNS 6400](./Headphone.com%20Legacy/over-ear/KRK%20SYSTEMS%20KNS%206400) by Headphone.com Legacy
+- [KRK SYSTEMS KNS 8400](./Innerfidelity/over-ear/KRK%20SYSTEMS%20KNS%208400) by Innerfidelity
+- [KRK SYSTEMS KNS 8400](./Headphone.com%20Legacy/over-ear/KRK%20SYSTEMS%20KNS%208400) by Headphone.com Legacy
 - [Kumitate Lab KL-Corona](./crinacle/711%20in-ear/Kumitate%20Lab%20KL-Corona) by crinacle on 711
 - [Kumitate Lab KL-Corona (sample 1)](./crinacle/711%20in-ear/Kumitate%20Lab%20KL-Corona%20(sample%201)) by crinacle on 711
 - [Kumitate Lab KL-Corona (sample 2)](./crinacle/711%20in-ear/Kumitate%20Lab%20KL-Corona%20(sample%202)) by crinacle on 711
@@ -2467,26 +2442,65 @@ from the same source.
 - [Kumitate Lab Trio (half)](./crinacle/711%20in-ear/Kumitate%20Lab%20Trio%20(half)) by crinacle on 711
 - [Kumitate Lab Trio (max)](./crinacle/711%20in-ear/Kumitate%20Lab%20Trio%20(max)) by crinacle on 711
 - [Kumitate Lab Trio (min)](./crinacle/711%20in-ear/Kumitate%20Lab%20Trio%20(min)) by crinacle on 711
-- [LG Quadbeat HSS-F420](./Innerfidelity/in-ear/LG%20Quadbeat%20HSS-F420) by Innerfidelity
-- [LG Tone Free](./crinacle/711%20in-ear/LG%20Tone%20Free) by crinacle on 711
-- [LH Labs Verb](./crinacle/711%20in-ear/LH%20Labs%20Verb) by crinacle on 711
-- [LZ Hi-Fi Audio A2 Pro](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A2%20Pro) by crinacle on 711
-- [LZ Hi-Fi Audio A4 Pro (black nozzle, black vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(black%20nozzle,%20black%20vent)) by crinacle on 711
-- [LZ Hi-Fi Audio A4 Pro (black nozzle, blue vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(black%20nozzle,%20blue%20vent)) by crinacle on 711
-- [LZ Hi-Fi Audio A4 Pro (black nozzle, red vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(black%20nozzle,%20red%20vent)) by crinacle on 711
-- [LZ Hi-Fi Audio A4 Pro (blue nozzle, black vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(blue%20nozzle,%20black%20vent)) by crinacle on 711
-- [LZ Hi-Fi Audio A4 Pro (red nozzle, black vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(red%20nozzle,%20black%20vent)) by crinacle on 711
-- [LZ Hi-Fi Audio A4 Pro (silver nozzle, black vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(silver%20nozzle,%20black%20vent)) by crinacle on 711
-- [LZ Hi-Fi Audio Z05A](./oratory1990/in-ear/LZ%20Hi-Fi%20Audio%20Z05A) by oratory1990
+- [KZ AS10](./crinacle/711%20in-ear/KZ%20AS10) by crinacle on 711
+- [KZ AS10](./Rtings/in-ear/KZ%20AS10) by Rtings
+- [KZ AS16](./crinacle/711%20in-ear/KZ%20AS16) by crinacle on 711
+- [KZ ASF](./crinacle/711%20in-ear/KZ%20ASF) by crinacle on 711
+- [KZ ASX](./crinacle/711%20in-ear/KZ%20ASX) by crinacle on 711
+- [KZ ATE](./oratory1990/in-ear/KZ%20ATE) by oratory1990
+- [KZ BA10](./crinacle/711%20in-ear/KZ%20BA10) by crinacle on 711
+- [KZ DQ6](./crinacle/711%20in-ear/KZ%20DQ6) by crinacle on 711
+- [KZ DQ6 (sample 1)](./crinacle/711%20in-ear/KZ%20DQ6%20(sample%201)) by crinacle on 711
+- [KZ DQ6 (sample 2)](./crinacle/711%20in-ear/KZ%20DQ6%20(sample%202)) by crinacle on 711
+- [KZ DQ6S](./crinacle/711%20in-ear/KZ%20DQ6S) by crinacle on 711
+- [KZ E10](./crinacle/711%20in-ear/KZ%20E10) by crinacle on 711
+- [KZ ED Special Edition](./crinacle/711%20in-ear/KZ%20ED%20Special%20Edition) by crinacle on 711
+- [KZ ED16](./crinacle/711%20in-ear/KZ%20ED16) by crinacle on 711
+- [KZ EDSE](./oratory1990/in-ear/KZ%20EDSE) by oratory1990
+- [KZ EDX Pro](./crinacle/711%20in-ear/KZ%20EDX%20Pro) by crinacle on 711
+- [KZ EDX Pro (sample 1)](./crinacle/711%20in-ear/KZ%20EDX%20Pro%20(sample%201)) by crinacle on 711
+- [KZ EDX Pro (sample 2)](./crinacle/711%20in-ear/KZ%20EDX%20Pro%20(sample%202)) by crinacle on 711
+- [KZ ES4](./oratory1990/in-ear/KZ%20ES4) by oratory1990
+- [KZ ES4](./crinacle/711%20in-ear/KZ%20ES4) by crinacle on 711
+- [KZ S2](./crinacle/711%20in-ear/KZ%20S2) by crinacle on 711
+- [KZ S4](./crinacle/711%20in-ear/KZ%20S4) by crinacle on 711
+- [KZ x Crinacle CRN (ZEX Pro)](./crinacle/711%20in-ear/KZ%20x%20Crinacle%20CRN%20(ZEX%20Pro)) by crinacle on 711
+- [KZ ZAS](./crinacle/711%20in-ear/KZ%20ZAS) by crinacle on 711
+- [KZ ZAX](./crinacle/711%20in-ear/KZ%20ZAX) by crinacle on 711
+- [KZ ZEX](./crinacle/711%20in-ear/KZ%20ZEX) by crinacle on 711
+- [KZ ZS10](./oratory1990/in-ear/KZ%20ZS10) by oratory1990
+- [KZ ZS10](./Rtings/in-ear/KZ%20ZS10) by Rtings
+- [KZ ZS10 Pro](./crinacle/711%20in-ear/KZ%20ZS10%20Pro) by crinacle on 711
+- [KZ ZS3](./crinacle/711%20in-ear/KZ%20ZS3) by crinacle on 711
+- [KZ ZS5v1](./crinacle/711%20in-ear/KZ%20ZS5v1) by crinacle on 711
+- [KZ ZS5v1 (sample 1)](./crinacle/711%20in-ear/KZ%20ZS5v1%20(sample%201)) by crinacle on 711
+- [KZ ZS5v1 (sample 2)](./crinacle/711%20in-ear/KZ%20ZS5v1%20(sample%202)) by crinacle on 711
+- [KZ ZS5v2](./crinacle/711%20in-ear/KZ%20ZS5v2) by crinacle on 711
+- [KZ ZS6](./crinacle/711%20in-ear/KZ%20ZS6) by crinacle on 711
+- [KZ ZS7](./oratory1990/in-ear/KZ%20ZS7) by oratory1990
+- [KZ ZSN](./Rtings/in-ear/KZ%20ZSN) by Rtings
+- [KZ ZSN Pro](./crinacle/711%20in-ear/KZ%20ZSN%20Pro) by crinacle on 711
+- [KZ ZSN Pro X](./oratory1990/in-ear/KZ%20ZSN%20Pro%20X) by oratory1990
+- [KZ ZSN Pro X](./crinacle/711%20in-ear/KZ%20ZSN%20Pro%20X) by crinacle on 711
+- [KZ ZSR](./crinacle/711%20in-ear/KZ%20ZSR) by crinacle on 711
+- [KZ ZST](./oratory1990/in-ear/KZ%20ZST) by oratory1990
+- [KZ ZST](./crinacle/711%20in-ear/KZ%20ZST) by crinacle on 711
+- [KZ ZST](./Rtings/in-ear/KZ%20ZST) by Rtings
+- [KZ ZSX](./crinacle/711%20in-ear/KZ%20ZSX) by crinacle on 711
+- [KZ ZSX (sample 1)](./crinacle/711%20in-ear/KZ%20ZSX%20(sample%201)) by crinacle on 711
+- [KZ ZSX (sample 2)](./crinacle/711%20in-ear/KZ%20ZSX%20(sample%202)) by crinacle on 711
 - [Lark Studio LSX](./crinacle/711%20in-ear/Lark%20Studio%20LSX) by crinacle on 711
 - [Lear LCM BD4.2](./crinacle/711%20in-ear/Lear%20LCM%20BD4.2) by crinacle on 711
 - [Lear LUF 4C](./Innerfidelity/in-ear/Lear%20LUF%204C) by Innerfidelity
 - [Lear LUF-4F](./Innerfidelity/in-ear/Lear%20LUF-4F) by Innerfidelity
-- [Lear NS-U1 (NS on)](./crinacle/711%20in-ear/Lear%20NS-U1%20(NS%20on)) by crinacle on 711
 - [Lear NS-U1 (all Off)](./crinacle/711%20in-ear/Lear%20NS-U1%20(all%20Off)) by crinacle on 711
+- [Lear NS-U1 (NS on)](./crinacle/711%20in-ear/Lear%20NS-U1%20(NS%20on)) by crinacle on 711
 - [Lenntek Pro Series](./Innerfidelity/in-ear/Lenntek%20Pro%20Series) by Innerfidelity
 - [Lenntek Pro Series](./Headphone.com%20Legacy/in-ear/Lenntek%20Pro%20Series) by Headphone.com Legacy
 - [Lenntek Sonix 3 Headset](./Headphone.com%20Legacy/in-ear/Lenntek%20Sonix%203%20Headset) by Headphone.com Legacy
+- [LG Quadbeat HSS-F420](./Innerfidelity/in-ear/LG%20Quadbeat%20HSS-F420) by Innerfidelity
+- [LG Tone Free](./crinacle/711%20in-ear/LG%20Tone%20Free) by crinacle on 711
+- [LH Labs Verb](./crinacle/711%20in-ear/LH%20Labs%20Verb) by crinacle on 711
 - [Libratone Track Air Plus](./crinacle/711%20in-ear/Libratone%20Track%20Air%20Plus) by crinacle on 711
 - [Life Acoustics PreKickstarter](./Innerfidelity/in-ear/Life%20Acoustics%20PreKickstarter) by Innerfidelity
 - [Light Harmonic Mera](./oratory1990/in-ear/Light%20Harmonic%20Mera) by oratory1990
@@ -2506,10 +2520,10 @@ from the same source.
 - [Linsoul Audio Lokahi](./crinacle/711%20in-ear/Linsoul%20Audio%20Lokahi) by crinacle on 711
 - [Lioncast X55](./oratory1990/over-ear/Lioncast%20X55) by oratory1990
 - [Little Dot GYFU](./crinacle/GRAS%2043AG-7%20over-ear/Little%20Dot%20GYFU) by crinacle on GRAS 43AG-7
-- [Logitech G PRO X 2 Lightspeed](./Rtings/over-ear/Logitech%20G%20PRO%20X%202%20Lightspeed) by Rtings
 - [Logitech G Pro](./Rtings/over-ear/Logitech%20G%20Pro) by Rtings
 - [Logitech G Pro X](./crinacle/GRAS%2043AG-7%20over-ear/Logitech%20G%20Pro%20X) by crinacle on GRAS 43AG-7
 - [Logitech G Pro X](./Rtings/over-ear/Logitech%20G%20Pro%20X) by Rtings
+- [Logitech G PRO X 2 Lightspeed](./Rtings/over-ear/Logitech%20G%20PRO%20X%202%20Lightspeed) by Rtings
 - [Logitech G Pro X Lightspeed](./Rtings/over-ear/Logitech%20G%20Pro%20X%20Lightspeed) by Rtings
 - [Logitech G333](./Rtings/in-ear/Logitech%20G333) by Rtings
 - [Logitech G335](./Rtings/over-ear/Logitech%20G335) by Rtings
@@ -2539,21 +2553,14 @@ from the same source.
 - [Lypertek PurePlay Z3 2.0](./crinacle/711%20in-ear/Lypertek%20PurePlay%20Z3%202.0) by crinacle on 711
 - [Lypertek PurePlay Z7](./crinacle/711%20in-ear/Lypertek%20PurePlay%20Z7) by crinacle on 711
 - [Lypertek Tevi](./crinacle/711%20in-ear/Lypertek%20Tevi) by crinacle on 711
-- [MEE Audio A161P](./Innerfidelity/in-ear/MEE%20Audio%20A161P) by Innerfidelity
-- [MEE Audio Air-Fi Matrix2 AF62 (wired)](./Innerfidelity/over-ear/MEE%20Audio%20Air-Fi%20Matrix2%20AF62%20(wired)) by Innerfidelity
-- [MEE Audio Air-Fi Matrix2 AF62 (wireless)](./Innerfidelity/over-ear/MEE%20Audio%20Air-Fi%20Matrix2%20AF62%20(wireless)) by Innerfidelity
-- [MEE Audio M6](./Rtings/in-ear/MEE%20Audio%20M6) by Rtings
-- [MEE Audio M6 Pro](./crinacle/711%20in-ear/MEE%20Audio%20M6%20Pro) by crinacle on 711
-- [MEE Audio M6 Pro](./Rtings/in-ear/MEE%20Audio%20M6%20Pro) by Rtings
-- [MEE Audio M9B](./Rtings/in-ear/MEE%20Audio%20M9B) by Rtings
-- [MEE Audio Pinnacle PX](./oratory1990/in-ear/MEE%20Audio%20Pinnacle%20PX) by oratory1990
-- [MEE Audio Planamic](./oratory1990/in-ear/MEE%20Audio%20Planamic) by oratory1990
-- [MEE Audio Planamic](./crinacle/711%20in-ear/MEE%20Audio%20Planamic) by crinacle on 711
-- [MEE Audio X6 Plus](./Rtings/in-ear/MEE%20Audio%20X6%20Plus) by Rtings
-- [MEE Audio X7](./Rtings/in-ear/MEE%20Audio%20X7) by Rtings
-- [MUNITIO Billets](./crinacle/711%20in-ear/MUNITIO%20Billets) by crinacle on 711
-- [MUNITIO Bullet In-Ear](./crinacle/711%20in-ear/MUNITIO%20Bullet%20In-Ear) by crinacle on 711
-- [MUNITIO Pro40](./Innerfidelity/over-ear/MUNITIO%20Pro40) by Innerfidelity
+- [LZ Hi-Fi Audio A2 Pro](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A2%20Pro) by crinacle on 711
+- [LZ Hi-Fi Audio A4 Pro (black nozzle, black vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(black%20nozzle,%20black%20vent)) by crinacle on 711
+- [LZ Hi-Fi Audio A4 Pro (black nozzle, blue vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(black%20nozzle,%20blue%20vent)) by crinacle on 711
+- [LZ Hi-Fi Audio A4 Pro (black nozzle, red vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(black%20nozzle,%20red%20vent)) by crinacle on 711
+- [LZ Hi-Fi Audio A4 Pro (blue nozzle, black vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(blue%20nozzle,%20black%20vent)) by crinacle on 711
+- [LZ Hi-Fi Audio A4 Pro (red nozzle, black vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(red%20nozzle,%20black%20vent)) by crinacle on 711
+- [LZ Hi-Fi Audio A4 Pro (silver nozzle, black vent)](./crinacle/711%20in-ear/LZ%20Hi-Fi%20Audio%20A4%20Pro%20(silver%20nozzle,%20black%20vent)) by crinacle on 711
+- [LZ Hi-Fi Audio Z05A](./oratory1990/in-ear/LZ%20Hi-Fi%20Audio%20Z05A) by oratory1990
 - [Mackie MP-360](./oratory1990/in-ear/Mackie%20MP-360) by oratory1990
 - [Madoo Type 711](./crinacle/711%20in-ear/Madoo%20Type%20711) by crinacle on 711
 - [Magaosi K5](./crinacle/711%20in-ear/Magaosi%20K5) by crinacle on 711
@@ -2561,9 +2568,9 @@ from the same source.
 - [Mangird Tea](./crinacle/711%20in-ear/Mangird%20Tea) by crinacle on 711
 - [Mangird XENNS UP](./crinacle/711%20in-ear/Mangird%20XENNS%20UP) by crinacle on 711
 - [Mark Levinson No 5909](./oratory1990/over-ear/Mark%20Levinson%20No%205909) by oratory1990
-- [Marshall MID ANC](./Rtings/over-ear/Marshall%20MID%20ANC) by Rtings
 - [Marshall Major](./Headphone.com%20Legacy/over-ear/Marshall%20Major) by Headphone.com Legacy
 - [Marshall Major II](./Rtings/over-ear/Marshall%20Major%20II) by Rtings
+- [Marshall MID ANC](./Rtings/over-ear/Marshall%20MID%20ANC) by Rtings
 - [Massdrop Nobel X](./Innerfidelity/in-ear/Massdrop%20Nobel%20X) by Innerfidelity
 - [Massdrop Panda](./oratory1990/over-ear/Massdrop%20Panda) by oratory1990
 - [Massdrop Panda](./Rtings/over-ear/Massdrop%20Panda) by Rtings
@@ -2587,6 +2594,18 @@ from the same source.
 - [Mayflower Electronics T50RP Version 2](./Innerfidelity/over-ear/Mayflower%20Electronics%20T50RP%20Version%202) by Innerfidelity
 - [Meccaudio ME04](./crinacle/711%20in-ear/Meccaudio%20ME04) by crinacle on 711
 - [Meccaudio ME20](./crinacle/711%20in-ear/Meccaudio%20ME20) by crinacle on 711
+- [MEE Audio A161P](./Innerfidelity/in-ear/MEE%20Audio%20A161P) by Innerfidelity
+- [MEE Audio Air-Fi Matrix2 AF62 (wired)](./Innerfidelity/over-ear/MEE%20Audio%20Air-Fi%20Matrix2%20AF62%20(wired)) by Innerfidelity
+- [MEE Audio Air-Fi Matrix2 AF62 (wireless)](./Innerfidelity/over-ear/MEE%20Audio%20Air-Fi%20Matrix2%20AF62%20(wireless)) by Innerfidelity
+- [MEE Audio M6](./Rtings/in-ear/MEE%20Audio%20M6) by Rtings
+- [MEE Audio M6 Pro](./crinacle/711%20in-ear/MEE%20Audio%20M6%20Pro) by crinacle on 711
+- [MEE Audio M6 Pro](./Rtings/in-ear/MEE%20Audio%20M6%20Pro) by Rtings
+- [MEE Audio M9B](./Rtings/in-ear/MEE%20Audio%20M9B) by Rtings
+- [MEE Audio Pinnacle PX](./oratory1990/in-ear/MEE%20Audio%20Pinnacle%20PX) by oratory1990
+- [MEE Audio Planamic](./oratory1990/in-ear/MEE%20Audio%20Planamic) by oratory1990
+- [MEE Audio Planamic](./crinacle/711%20in-ear/MEE%20Audio%20Planamic) by crinacle on 711
+- [MEE Audio X6 Plus](./Rtings/in-ear/MEE%20Audio%20X6%20Plus) by Rtings
+- [MEE Audio X7](./Rtings/in-ear/MEE%20Audio%20X7) by Rtings
 - [Metal Magic Research Homunculus](./crinacle/711%20in-ear/Metal%20Magic%20Research%20Homunculus) by crinacle on 711
 - [Metal Magic Research Thummim](./crinacle/711%20in-ear/Metal%20Magic%20Research%20Thummim) by crinacle on 711
 - [Meze 109 Pro](./oratory1990/over-ear/Meze%20109%20Pro) by oratory1990
@@ -2620,11 +2639,11 @@ from the same source.
 - [Meze Rai Penta](./crinacle/711%20in-ear/Meze%20Rai%20Penta) by crinacle on 711
 - [Meze Rai Solo](./oratory1990/in-ear/Meze%20Rai%20Solo) by oratory1990
 - [Meze Rai Solo](./crinacle/711%20in-ear/Meze%20Rai%20Solo) by crinacle on 711
-- [MiM Audio Dark Magician](./crinacle/711%20in-ear/MiM%20Audio%20Dark%20Magician) by crinacle on 711
 - [Microsoft Surface Earbuds](./Rtings/earbud/Microsoft%20Surface%20Earbuds) by Rtings
 - [Microsoft Surface Headphones](./oratory1990/over-ear/Microsoft%20Surface%20Headphones) by oratory1990
 - [Microsoft Surface Headphones](./Rtings/over-ear/Microsoft%20Surface%20Headphones) by Rtings
 - [Microsoft Surface Headphones 2](./Rtings/over-ear/Microsoft%20Surface%20Headphones%202) by Rtings
+- [MiM Audio Dark Magician](./crinacle/711%20in-ear/MiM%20Audio%20Dark%20Magician) by crinacle on 711
 - [Mixcder E9](./Rtings/over-ear/Mixcder%20E9) by Rtings
 - [Moe Audio SS01](./Innerfidelity/in-ear/Moe%20Audio%20SS01) by Innerfidelity
 - [Mofasest M14 (00 setting)](./crinacle/711%20in-ear/Mofasest%20M14%20(00%20setting)) by crinacle on 711
@@ -2682,21 +2701,21 @@ from the same source.
 - [Moondrop Chu](./crinacle/711%20in-ear/Moondrop%20Chu) by crinacle on 711
 - [Moondrop Crescent](./oratory1990/in-ear/Moondrop%20Crescent) by oratory1990
 - [Moondrop Crescent](./crinacle/711%20in-ear/Moondrop%20Crescent) by crinacle on 711
-- [Moondrop KATO](./Rtings/in-ear/Moondrop%20KATO) by Rtings
-- [Moondrop KXXS](./crinacle/711%20in-ear/Moondrop%20KXXS) by crinacle on 711
 - [Moondrop Kanas Pro](./crinacle/711%20in-ear/Moondrop%20Kanas%20Pro) by crinacle on 711
+- [Moondrop KATO](./Rtings/in-ear/Moondrop%20KATO) by Rtings
 - [Moondrop Kato (brass nozzle)](./crinacle/711%20in-ear/Moondrop%20Kato%20(brass%20nozzle)) by crinacle on 711
 - [Moondrop Kato (steel nozzle)](./crinacle/711%20in-ear/Moondrop%20Kato%20(steel%20nozzle)) by crinacle on 711
+- [Moondrop KXXS](./crinacle/711%20in-ear/Moondrop%20KXXS) by crinacle on 711
 - [Moondrop LAN](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20LAN) by crinacle on Bruel & Kjaer 4620
 - [Moondrop Nekocake](./crinacle/711%20in-ear/Moondrop%20Nekocake) by crinacle on 711
 - [Moondrop Quarks](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20Quarks) by crinacle on Bruel & Kjaer 4620
 - [Moondrop Quarks](./oratory1990/in-ear/Moondrop%20Quarks) by oratory1990
 - [Moondrop Quarks](./crinacle/711%20in-ear/Moondrop%20Quarks) by crinacle on 711
 - [Moondrop S8](./crinacle/711%20in-ear/Moondrop%20S8) by crinacle on 711
-- [Moondrop SSP](./crinacle/711%20in-ear/Moondrop%20SSP) by crinacle on 711
-- [Moondrop SSR](./crinacle/711%20in-ear/Moondrop%20SSR) by crinacle on 711
 - [Moondrop Spaceship](./crinacle/711%20in-ear/Moondrop%20Spaceship) by crinacle on 711
 - [Moondrop Sparks](./crinacle/711%20in-ear/Moondrop%20Sparks) by crinacle on 711
+- [Moondrop SSP](./crinacle/711%20in-ear/Moondrop%20SSP) by crinacle on 711
+- [Moondrop SSR](./crinacle/711%20in-ear/Moondrop%20SSR) by crinacle on 711
 - [Moondrop Starfield](./oratory1990/in-ear/Moondrop%20Starfield) by oratory1990
 - [Moondrop Starfield](./crinacle/711%20in-ear/Moondrop%20Starfield) by crinacle on 711
 - [Moondrop Stellaris](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20Stellaris) by crinacle on Bruel & Kjaer 4620
@@ -2721,30 +2740,21 @@ from the same source.
 - [Mpow X3](./Rtings/in-ear/Mpow%20X3) by Rtings
 - [Mpow X5](./Rtings/in-ear/Mpow%20X5) by Rtings
 - [Mpow X6](./Rtings/in-ear/Mpow%20X6) by Rtings
+- [MUNITIO Billets](./crinacle/711%20in-ear/MUNITIO%20Billets) by crinacle on 711
+- [MUNITIO Bullet In-Ear](./crinacle/711%20in-ear/MUNITIO%20Bullet%20In-Ear) by crinacle on 711
+- [MUNITIO Pro40](./Innerfidelity/over-ear/MUNITIO%20Pro40) by Innerfidelity
 - [Music Hall Audio DeBe](./Innerfidelity/over-ear/Music%20Hall%20Audio%20DeBe) by Innerfidelity
 - [Musical Fidelity MF100](./Innerfidelity/over-ear/Musical%20Fidelity%20MF100) by Innerfidelity
 - [Musical Fidelity MF200](./Innerfidelity/over-ear/Musical%20Fidelity%20MF200) by Innerfidelity
-- [MyST IzoPhones-60](./Innerfidelity/over-ear/MyST%20IzoPhones-60) by Innerfidelity
 - [MySphere 3](./oratory1990/over-ear/MySphere%203) by oratory1990
 - [MySphere 3.2](./crinacle/GRAS%2043AG-7%20over-ear/MySphere%203.2) by crinacle on GRAS 43AG-7
+- [MyST IzoPhones-60](./Innerfidelity/over-ear/MyST%20IzoPhones-60) by Innerfidelity
 - [NAD RP18 Bass Light Version](./Innerfidelity/over-ear/NAD%20RP18%20Bass%20Light%20Version) by Innerfidelity
 - [NAD VISO HP50](./oratory1990/over-ear/NAD%20VISO%20HP50) by oratory1990
 - [NAD VISO HP50](./Innerfidelity/over-ear/NAD%20VISO%20HP50) by Innerfidelity
 - [NAD VISO HP50](./Rtings/over-ear/NAD%20VISO%20HP50) by Rtings
 - [NAD VISO HP50](./Headphone.com%20Legacy/over-ear/NAD%20VISO%20HP50) by Headphone.com Legacy
 - [NAD VISO HP70](./oratory1990/over-ear/NAD%20VISO%20HP70) by oratory1990
-- [NCM Bella](./crinacle/711%20in-ear/NCM%20Bella) by crinacle on 711
-- [NF Audio NF2u](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/NF%20Audio%20NF2u) by crinacle on Bruel & Kjaer 4620
-- [NF Audio NM2+](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/NF%20Audio%20NM2+) by crinacle on Bruel & Kjaer 4620
-- [NF Audio NM2+](./crinacle/711%20in-ear/NF%20Audio%20NM2+) by crinacle on 711
-- [NHT Super Buds](./Innerfidelity/in-ear/NHT%20Super%20Buds) by Innerfidelity
-- [NS Audio NS3](./oratory1990/in-ear/NS%20Audio%20NS3) by oratory1990
-- [NVX EX10S](./Innerfidelity/in-ear/NVX%20EX10S) by Innerfidelity
-- [NVX XPT100](./Innerfidelity/over-ear/NVX%20XPT100) by Innerfidelity
-- [NVX XPT100 (flat earpads)](./Innerfidelity/over-ear/NVX%20XPT100%20(flat%20earpads)) by Innerfidelity
-- [NXEars Basso](./crinacle/711%20in-ear/NXEars%20Basso) by crinacle on 711
-- [NXEars Opera](./crinacle/711%20in-ear/NXEars%20Opera) by crinacle on 711
-- [NXEars Sonata](./crinacle/711%20in-ear/NXEars%20Sonata) by crinacle on 711
 - [Nan-6 Nan-6](./crinacle/GRAS%2043AG-7%20over-ear/Nan-6%20Nan-6) by crinacle on GRAS 43AG-7
 - [NarMoo B2M](./Innerfidelity/in-ear/NarMoo%20B2M) by Innerfidelity
 - [NarMoo R1M (black ports)](./Innerfidelity/in-ear/NarMoo%20R1M%20(black%20ports)) by Innerfidelity
@@ -2752,6 +2762,7 @@ from the same source.
 - [NarMoo R1M (silver ports)](./Innerfidelity/in-ear/NarMoo%20R1M%20(silver%20ports)) by Innerfidelity
 - [NarMoo S1](./Innerfidelity/in-ear/NarMoo%20S1) by Innerfidelity
 - [NarMoo W1M](./Innerfidelity/in-ear/NarMoo%20W1M) by Innerfidelity
+- [NCM Bella](./crinacle/711%20in-ear/NCM%20Bella) by crinacle on 711
 - [Nectar Hive](./oratory1990/over-ear/Nectar%20Hive) by oratory1990
 - [Nectar Hive](./crinacle/GRAS%2043AG-7%20over-ear/Nectar%20Hive) by crinacle on GRAS 43AG-7
 - [Neumann NDH20](./oratory1990/over-ear/Neumann%20NDH20) by oratory1990
@@ -2759,6 +2770,10 @@ from the same source.
 - [Neumann NDH30](./oratory1990/over-ear/Neumann%20NDH30) by oratory1990
 - [Neusonik direm E3](./crinacle/711%20in-ear/Neusonik%20direm%20E3) by crinacle on 711
 - [Neusonik direm PRO](./crinacle/711%20in-ear/Neusonik%20direm%20PRO) by crinacle on 711
+- [NF Audio NF2u](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/NF%20Audio%20NF2u) by crinacle on Bruel & Kjaer 4620
+- [NF Audio NM2+](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/NF%20Audio%20NM2+) by crinacle on Bruel & Kjaer 4620
+- [NF Audio NM2+](./crinacle/711%20in-ear/NF%20Audio%20NM2+) by crinacle on 711
+- [NHT Super Buds](./Innerfidelity/in-ear/NHT%20Super%20Buds) by Innerfidelity
 - [NiceHCK NX7 Mk3 (black)](./crinacle/711%20in-ear/NiceHCK%20NX7%20Mk3%20(black)) by crinacle on 711
 - [NiceHCK NX7 Mk3 (blue)](./crinacle/711%20in-ear/NiceHCK%20NX7%20Mk3%20(blue)) by crinacle on 711
 - [NiceHCK NX7 Mk3 (red)](./crinacle/711%20in-ear/NiceHCK%20NX7%20Mk3%20(red)) by crinacle on 711
@@ -2810,6 +2825,10 @@ from the same source.
 - [Nothing ear (1)](./Rtings/in-ear/Nothing%20ear%20(1)) by Rtings
 - [Nothing ear (2)](./Rtings/in-ear/Nothing%20ear%20(2)) by Rtings
 - [Nothing ear (stick)](./Rtings/in-ear/Nothing%20ear%20(stick)) by Rtings
+- [NS Audio NS3](./oratory1990/in-ear/NS%20Audio%20NS3) by oratory1990
+- [Nuarl NT01](./crinacle/711%20in-ear/Nuarl%20NT01) by crinacle on 711
+- [Nuarl NT100](./crinacle/711%20in-ear/Nuarl%20NT100) by crinacle on 711
+- [Nuarl NT110](./crinacle/711%20in-ear/Nuarl%20NT110) by crinacle on 711
 - [NuForce EDC3](./oratory1990/in-ear/NuForce%20EDC3) by oratory1990
 - [NuForce EDC3](./crinacle/711%20in-ear/NuForce%20EDC3) by crinacle on 711
 - [NuForce Every Day Car](./Innerfidelity/in-ear/NuForce%20Every%20Day%20Car) by Innerfidelity
@@ -2821,16 +2840,25 @@ from the same source.
 - [NuForce Primo 8](./crinacle/711%20in-ear/NuForce%20Primo%208) by crinacle on 711
 - [NuForce Primo 8](./Innerfidelity/in-ear/NuForce%20Primo%208) by Innerfidelity
 - [NuForce Stride](./oratory1990/in-ear/NuForce%20Stride) by oratory1990
-- [Nuarl NT01](./crinacle/711%20in-ear/Nuarl%20NT01) by crinacle on 711
-- [Nuarl NT100](./crinacle/711%20in-ear/Nuarl%20NT100) by crinacle on 711
-- [Nuarl NT110](./crinacle/711%20in-ear/Nuarl%20NT110) by crinacle on 711
 - [Nura Loop](./Rtings/in-ear/Nura%20Loop) by Rtings
 - [Nura NuraLoop](./Rtings/in-ear/Nura%20NuraLoop) by Rtings
 - [Nura Nuraphone](./Rtings/over-ear/Nura%20Nuraphone) by Rtings
 - [Nura phone](./Rtings/over-ear/Nura%20phone) by Rtings
-- [OLLO S4R](./oratory1990/over-ear/OLLO%20S4R) by oratory1990
-- [OLLO S4R 1.1](./oratory1990/over-ear/OLLO%20S4R%201.1) by oratory1990
-- [ORA GrapheneQ](./oratory1990/over-ear/ORA%20GrapheneQ) by oratory1990
+- [NVX EX10S](./Innerfidelity/in-ear/NVX%20EX10S) by Innerfidelity
+- [NVX XPT100](./Innerfidelity/over-ear/NVX%20XPT100) by Innerfidelity
+- [NVX XPT100 (flat earpads)](./Innerfidelity/over-ear/NVX%20XPT100%20(flat%20earpads)) by Innerfidelity
+- [NXEars Basso](./crinacle/711%20in-ear/NXEars%20Basso) by crinacle on 711
+- [NXEars Opera](./crinacle/711%20in-ear/NXEars%20Opera) by crinacle on 711
+- [NXEars Sonata](./crinacle/711%20in-ear/NXEars%20Sonata) by crinacle on 711
+- [oBravo Cupid](./oratory1990/in-ear/oBravo%20Cupid) by oratory1990
+- [oBravo Cupid](./crinacle/711%20in-ear/oBravo%20Cupid) by crinacle on 711
+- [oBravo Cupid (sample 1)](./crinacle/711%20in-ear/oBravo%20Cupid%20(sample%201)) by crinacle on 711
+- [oBravo Cupid (sample 2)](./crinacle/711%20in-ear/oBravo%20Cupid%20(sample%202)) by crinacle on 711
+- [oBravo Cupid (sample 3)](./crinacle/711%20in-ear/oBravo%20Cupid%20(sample%203)) by crinacle on 711
+- [oBravo Cupid (sample 4)](./crinacle/711%20in-ear/oBravo%20Cupid%20(sample%204)) by crinacle on 711
+- [oBravo HAMT1](./Innerfidelity/over-ear/oBravo%20HAMT1) by Innerfidelity
+- [oBravo Ra 21 C](./crinacle/711%20in-ear/oBravo%20Ra%2021%20C) by crinacle on 711
+- [oBravo Ra C-Cu](./crinacle/711%20in-ear/oBravo%20Ra%20C-Cu) by crinacle on 711
 - [Ocharaku Co-Donguri Shizuku](./crinacle/711%20in-ear/Ocharaku%20Co-Donguri%20Shizuku) by crinacle on 711
 - [Ocharaku Co-Donguri Shizuku (sample 1)](./crinacle/711%20in-ear/Ocharaku%20Co-Donguri%20Shizuku%20(sample%201)) by crinacle on 711
 - [Ocharaku Co-Donguri Shizuku (sample 2)](./crinacle/711%20in-ear/Ocharaku%20Co-Donguri%20Shizuku%20(sample%202)) by crinacle on 711
@@ -2842,6 +2870,8 @@ from the same source.
 - [Ocharaku Flat-4 Kaede Type 2](./crinacle/711%20in-ear/Ocharaku%20Flat-4%20Kaede%20Type%202) by crinacle on 711
 - [Ocharaku Flat-4 Kuro Type II](./Innerfidelity/in-ear/Ocharaku%20Flat-4%20Kuro%20Type%20II) by Innerfidelity
 - [Ocharaku Flat-4 Ti Plus](./crinacle/711%20in-ear/Ocharaku%20Flat-4%20Ti%20Plus) by crinacle on 711
+- [OLLO S4R](./oratory1990/over-ear/OLLO%20S4R) by oratory1990
+- [OLLO S4R 1.1](./oratory1990/over-ear/OLLO%20S4R%201.1) by oratory1990
 - [OnePlus Buds](./Rtings/in-ear/OnePlus%20Buds) by Rtings
 - [OnePlus Buds Pro](./Rtings/in-ear/OnePlus%20Buds%20Pro) by Rtings
 - [OnePlus Buds Pro 2](./Rtings/in-ear/OnePlus%20Buds%20Pro%202) by Rtings
@@ -2855,8 +2885,8 @@ from the same source.
 - [Oppo Enco X2](./oratory1990/in-ear/Oppo%20Enco%20X2) by oratory1990
 - [Oppo PM1](./Innerfidelity/over-ear/Oppo%20PM1) by Innerfidelity
 - [Oppo PM1](./Headphone.com%20Legacy/over-ear/Oppo%20PM1) by Headphone.com Legacy
-- [Oppo PM1 (PM2 earpads)](./Innerfidelity/over-ear/Oppo%20PM1%20(PM2%20earpads)) by Innerfidelity
 - [Oppo PM1 (alternative earpads)](./Innerfidelity/over-ear/Oppo%20PM1%20(alternative%20earpads)) by Innerfidelity
+- [Oppo PM1 (PM2 earpads)](./Innerfidelity/over-ear/Oppo%20PM1%20(PM2%20earpads)) by Innerfidelity
 - [Oppo PM1 (velour earpads)](./Innerfidelity/over-ear/Oppo%20PM1%20(velour%20earpads)) by Innerfidelity
 - [Oppo PM2](./oratory1990/over-ear/Oppo%20PM2) by oratory1990
 - [Oppo PM2](./Innerfidelity/over-ear/Oppo%20PM2) by Innerfidelity
@@ -2871,6 +2901,7 @@ from the same source.
 - [Oppo PM3 (Aliexpress leather earpads)](./oratory1990/over-ear/Oppo%20PM3%20(Aliexpress%20leather%20earpads)) by oratory1990
 - [Oppo PM3 (sample A)](./Innerfidelity/over-ear/Oppo%20PM3%20(sample%20A)) by Innerfidelity
 - [Oppo PM3 (sample C)](./Innerfidelity/over-ear/Oppo%20PM3%20(sample%20C)) by Innerfidelity
+- [ORA GrapheneQ](./oratory1990/over-ear/ORA%20GrapheneQ) by oratory1990
 - [Origami Audio Silver](./crinacle/711%20in-ear/Origami%20Audio%20Silver) by crinacle on 711
 - [Oriolus Finschi](./crinacle/711%20in-ear/Oriolus%20Finschi) by crinacle on 711
 - [Oriolus Finschi Hifi](./crinacle/711%20in-ear/Oriolus%20Finschi%20Hifi) by crinacle on 711
@@ -2896,19 +2927,6 @@ from the same source.
 - [Ovidius RX-100](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Ovidius%20RX-100) by crinacle on Bruel & Kjaer 4620
 - [Ovidius RX-100](./crinacle/711%20in-ear/Ovidius%20RX-100) by crinacle on 711
 - [Ovidius TX-901](./crinacle/GRAS%2043AG-7%20over-ear/Ovidius%20TX-901) by crinacle on GRAS 43AG-7
-- [PEARS SH2](./crinacle/711%20in-ear/PEARS%20SH2) by crinacle on 711
-- [PEARS SH3](./crinacle/711%20in-ear/PEARS%20SH3) by crinacle on 711
-- [PEARS SH3 (CIEM)](./crinacle/711%20in-ear/PEARS%20SH3%20(CIEM)) by crinacle on 711
-- [PEARS SH3 (sample 1)](./crinacle/711%20in-ear/PEARS%20SH3%20(sample%201)) by crinacle on 711
-- [PEARS SH3 (sample 2)](./crinacle/711%20in-ear/PEARS%20SH3%20(sample%202)) by crinacle on 711
-- [PNY Midtown](./Innerfidelity/in-ear/PNY%20Midtown) by Innerfidelity
-- [PNY Uptown](./Innerfidelity/in-ear/PNY%20Uptown) by Innerfidelity
-- [PSB M4U 1](./Innerfidelity/over-ear/PSB%20M4U%201) by Innerfidelity
-- [PSB M4U 2](./Innerfidelity/over-ear/PSB%20M4U%202) by Innerfidelity
-- [PSB M4U 2 (passive)](./Innerfidelity/over-ear/PSB%20M4U%202%20(passive)) by Innerfidelity
-- [PSB M4U 4](./Innerfidelity/in-ear/PSB%20M4U%204) by Innerfidelity
-- [PSB M4U 8](./oratory1990/over-ear/PSB%20M4U%208) by oratory1990
-- [PSB M4U 8 (wired, passive)](./Innerfidelity/over-ear/PSB%20M4U%208%20(wired,%20passive)) by Innerfidelity
 - [Pai Audio DM2A](./crinacle/711%20in-ear/Pai%20Audio%20DM2A) by crinacle on 711
 - [Panasonic RP HT600 S](./Innerfidelity/over-ear/Panasonic%20RP%20HT600%20S) by Innerfidelity
 - [Panasonic RP-HC101](./Rtings/over-ear/Panasonic%20RP-HC101) by Rtings
@@ -2923,6 +2941,11 @@ from the same source.
 - [Parrot Zik 2.0](./Innerfidelity/over-ear/Parrot%20Zik%202.0) by Innerfidelity
 - [Parrot Zik 2.0](./Rtings/over-ear/Parrot%20Zik%202.0) by Rtings
 - [Parrot Zik 3.0](./Rtings/over-ear/Parrot%20Zik%203.0) by Rtings
+- [PEARS SH2](./crinacle/711%20in-ear/PEARS%20SH2) by crinacle on 711
+- [PEARS SH3](./crinacle/711%20in-ear/PEARS%20SH3) by crinacle on 711
+- [PEARS SH3 (CIEM)](./crinacle/711%20in-ear/PEARS%20SH3%20(CIEM)) by crinacle on 711
+- [PEARS SH3 (sample 1)](./crinacle/711%20in-ear/PEARS%20SH3%20(sample%201)) by crinacle on 711
+- [PEARS SH3 (sample 2)](./crinacle/711%20in-ear/PEARS%20SH3%20(sample%202)) by crinacle on 711
 - [Peerless MB PMB 85 Double Action](./oratory1990/over-ear/Peerless%20MB%20PMB%2085%20Double%20Action) by oratory1990
 - [Pendulumic Stance S1 Bluetooth](./Innerfidelity/over-ear/Pendulumic%20Stance%20S1%20Bluetooth) by Innerfidelity
 - [Periodic Audio Be](./oratory1990/in-ear/Periodic%20Audio%20Be) by oratory1990
@@ -2935,11 +2958,11 @@ from the same source.
 - [Phiaton Chord MS 530](./Innerfidelity/over-ear/Phiaton%20Chord%20MS%20530) by Innerfidelity
 - [Phiaton Chord MS 530 (ANC on)](./Innerfidelity/over-ear/Phiaton%20Chord%20MS%20530%20(ANC%20on)) by Innerfidelity
 - [Phiaton Chord MS 530 (wireless)](./Innerfidelity/over-ear/Phiaton%20Chord%20MS%20530%20(wireless)) by Innerfidelity
+- [Phiaton Moderna MS200](./Innerfidelity/in-ear/Phiaton%20Moderna%20MS200) by Innerfidelity
 - [Phiaton MS 100 BA](./Innerfidelity/in-ear/Phiaton%20MS%20100%20BA) by Innerfidelity
 - [Phiaton MS 300](./Innerfidelity/over-ear/Phiaton%20MS%20300) by Innerfidelity
 - [Phiaton MS 300](./Headphone.com%20Legacy/over-ear/Phiaton%20MS%20300) by Headphone.com Legacy
 - [Phiaton MS 400](./Headphone.com%20Legacy/over-ear/Phiaton%20MS%20400) by Headphone.com Legacy
-- [Phiaton Moderna MS200](./Innerfidelity/in-ear/Phiaton%20Moderna%20MS200) by Innerfidelity
 - [Phiaton PS 20](./Innerfidelity/in-ear/Phiaton%20PS%2020) by Innerfidelity
 - [Phiaton PS 200](./Innerfidelity/in-ear/Phiaton%20PS%20200) by Innerfidelity
 - [Phiaton PS 200](./Headphone.com%20Legacy/in-ear/Phiaton%20PS%20200) by Headphone.com Legacy
@@ -3005,19 +3028,21 @@ from the same source.
 - [Pioneer SE-A1000](./Innerfidelity/over-ear/Pioneer%20SE-A1000) by Innerfidelity
 - [Pioneer SE-CX9](./crinacle/711%20in-ear/Pioneer%20SE-CX9) by crinacle on 711
 - [Pioneer SE-M290](./Innerfidelity/over-ear/Pioneer%20SE-M290) by Innerfidelity
-- [Pioneer SE-MJ31](./Innerfidelity/over-ear/Pioneer%20SE-MJ31) by Innerfidelity
 - [Pioneer SE-Master1](./crinacle/GRAS%2043AG-7%20over-ear/Pioneer%20SE-Master1) by crinacle on GRAS 43AG-7
 - [Pioneer SE-Master1](./Innerfidelity/over-ear/Pioneer%20SE-Master1) by Innerfidelity
+- [Pioneer SE-MJ31](./Innerfidelity/over-ear/Pioneer%20SE-MJ31) by Innerfidelity
 - [Plane Quiet Platinum](./Rtings/over-ear/Plane%20Quiet%20Platinum) by Rtings
 - [Plantronics 325T](./oratory1990/over-ear/Plantronics%20325T) by oratory1990
 - [Plantronics BackBeat 500 (wired)](./Innerfidelity/over-ear/Plantronics%20BackBeat%20500%20(wired)) by Innerfidelity
 - [Plantronics BackBeat Fit](./Rtings/earbud/Plantronics%20BackBeat%20Fit) by Rtings
 - [Plantronics BackBeat Go 600](./Rtings/over-ear/Plantronics%20BackBeat%20Go%20600) by Rtings
-- [Plantronics BackBeat Pro 2](./Rtings/over-ear/Plantronics%20BackBeat%20Pro%202) by Rtings
 - [Plantronics Backbeat Go 810](./Rtings/over-ear/Plantronics%20Backbeat%20Go%20810) by Rtings
 - [Plantronics Backbeat Pro](./Rtings/over-ear/Plantronics%20Backbeat%20Pro) by Rtings
+- [Plantronics BackBeat Pro 2](./Rtings/over-ear/Plantronics%20BackBeat%20Pro%202) by Rtings
 - [Plantronics RIG 800LX](./Rtings/over-ear/Plantronics%20RIG%20800LX) by Rtings
 - [Plugged Crown](./Innerfidelity/over-ear/Plugged%20Crown) by Innerfidelity
+- [PNY Midtown](./Innerfidelity/in-ear/PNY%20Midtown) by Innerfidelity
+- [PNY Uptown](./Innerfidelity/in-ear/PNY%20Uptown) by Innerfidelity
 - [Polk Audio Buckle](./Innerfidelity/over-ear/Polk%20Audio%20Buckle) by Innerfidelity
 - [Polk Audio Buckle](./Rtings/over-ear/Polk%20Audio%20Buckle) by Rtings
 - [Polk Audio Hinge](./Innerfidelity/over-ear/Polk%20Audio%20Hinge) by Innerfidelity
@@ -3046,10 +3071,50 @@ from the same source.
 - [PopClik String](./Innerfidelity/in-ear/PopClik%20String) by Innerfidelity
 - [Precide ERGO 2](./crinacle/GRAS%2043AG-7%20over-ear/Precide%20ERGO%202) by crinacle on GRAS 43AG-7
 - [Prisma Azul](./crinacle/711%20in-ear/Prisma%20Azul) by crinacle on 711
+- [PSB M4U 1](./Innerfidelity/over-ear/PSB%20M4U%201) by Innerfidelity
+- [PSB M4U 2](./Innerfidelity/over-ear/PSB%20M4U%202) by Innerfidelity
+- [PSB M4U 2 (passive)](./Innerfidelity/over-ear/PSB%20M4U%202%20(passive)) by Innerfidelity
+- [PSB M4U 4](./Innerfidelity/in-ear/PSB%20M4U%204) by Innerfidelity
+- [PSB M4U 8](./oratory1990/over-ear/PSB%20M4U%208) by oratory1990
+- [PSB M4U 8 (wired, passive)](./Innerfidelity/over-ear/PSB%20M4U%208%20(wired,%20passive)) by Innerfidelity
 - [Pump Audio Earphones](./Innerfidelity/in-ear/Pump%20Audio%20Earphones) by Innerfidelity
 - [PureSound Clarity One](./Innerfidelity/in-ear/PureSound%20Clarity%20One) by Innerfidelity
 - [Puro JuniorJams](./Rtings/over-ear/Puro%20JuniorJams) by Rtings
 - [QCY T5](./crinacle/711%20in-ear/QCY%20T5) by crinacle on 711
+- [qdc 3SH](./crinacle/711%20in-ear/qdc%203SH) by crinacle on 711
+- [qdc 4SS](./crinacle/711%20in-ear/qdc%204SS) by crinacle on 711
+- [qdc 5SH](./crinacle/711%20in-ear/qdc%205SH) by crinacle on 711
+- [qdc 8CL (CIEM)](./crinacle/711%20in-ear/qdc%208CL%20(CIEM)) by crinacle on 711
+- [qdc 8SH](./crinacle/711%20in-ear/qdc%208SH) by crinacle on 711
+- [qdc 8SL](./crinacle/711%20in-ear/qdc%208SL) by crinacle on 711
+- [qdc 8SL (sample 1)](./crinacle/711%20in-ear/qdc%208SL%20(sample%201)) by crinacle on 711
+- [qdc 8SL (sample 2)](./crinacle/711%20in-ear/qdc%208SL%20(sample%202)) by crinacle on 711
+- [qdc 8SS](./crinacle/711%20in-ear/qdc%208SS) by crinacle on 711
+- [qdc Anole V14 (0000 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(0000%20setting)) by crinacle on 711
+- [qdc Anole V14 (0004 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(0004%20setting)) by crinacle on 711
+- [qdc Anole V14 (0030 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(0030%20setting)) by crinacle on 711
+- [qdc Anole V14 (0200 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(0200%20setting)) by crinacle on 711
+- [qdc Anole V14 (1000 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(1000%20setting)) by crinacle on 711
+- [qdc Anole V14 (1234 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(1234%20setting)) by crinacle on 711
+- [qdc Anole V3](./crinacle/711%20in-ear/qdc%20Anole%20V3) by crinacle on 711
+- [qdc Anole V3 (bass)](./crinacle/711%20in-ear/qdc%20Anole%20V3%20(bass)) by crinacle on 711
+- [qdc Anole V3 (bass, treble)](./crinacle/711%20in-ear/qdc%20Anole%20V3%20(bass,%20treble)) by crinacle on 711
+- [qdc Anole V3 (treble)](./crinacle/711%20in-ear/qdc%20Anole%20V3%20(treble)) by crinacle on 711
+- [qdc Anole V6](./crinacle/711%20in-ear/qdc%20Anole%20V6) by crinacle on 711
+- [qdc Anole V6 (bass)](./crinacle/711%20in-ear/qdc%20Anole%20V6%20(bass)) by crinacle on 711
+- [qdc Anole V6 (bass, mids)](./crinacle/711%20in-ear/qdc%20Anole%20V6%20(bass,%20mids)) by crinacle on 711
+- [qdc Anole V6 (mids)](./crinacle/711%20in-ear/qdc%20Anole%20V6%20(mids)) by crinacle on 711
+- [qdc Anole VX](./crinacle/711%20in-ear/qdc%20Anole%20VX) by crinacle on 711
+- [qdc Anole VX (bass)](./crinacle/711%20in-ear/qdc%20Anole%20VX%20(bass)) by crinacle on 711
+- [qdc Anole VX (mids)](./crinacle/711%20in-ear/qdc%20Anole%20VX%20(mids)) by crinacle on 711
+- [qdc Anole VX (treble)](./crinacle/711%20in-ear/qdc%20Anole%20VX%20(treble)) by crinacle on 711
+- [qdc Anole VX All](./crinacle/711%20in-ear/qdc%20Anole%20VX%20All) by crinacle on 711
+- [qdc Dmagic](./crinacle/711%20in-ear/qdc%20Dmagic) by crinacle on 711
+- [qdc Dmagic (sample 2)](./crinacle/711%20in-ear/qdc%20Dmagic%20(sample%202)) by crinacle on 711
+- [qdc Gemini](./crinacle/711%20in-ear/qdc%20Gemini) by crinacle on 711
+- [qdc Gemini (bass)](./crinacle/711%20in-ear/qdc%20Gemini%20(bass)) by crinacle on 711
+- [qdc Neptune](./crinacle/711%20in-ear/qdc%20Neptune) by crinacle on 711
+- [qdc Uranus](./crinacle/711%20in-ear/qdc%20Uranus) by crinacle on 711
 - [QKZ AK6](./crinacle/711%20in-ear/QKZ%20AK6) by crinacle on 711
 - [QKZ VK4](./oratory1990/in-ear/QKZ%20VK4) by oratory1990
 - [QKZ VK4](./crinacle/711%20in-ear/QKZ%20VK4) by crinacle on 711
@@ -3075,31 +3140,6 @@ from the same source.
 - [RAAL SR1a](./oratory1990/over-ear/RAAL%20SR1a) by oratory1990
 - [RAAL SR1a](./crinacle/GRAS%2043AG-7%20over-ear/RAAL%20SR1a) by crinacle on GRAS 43AG-7
 - [RAAL SR1a (no ear contact)](./crinacle/GRAS%2043AG-7%20over-ear/RAAL%20SR1a%20(no%20ear%20contact)) by crinacle on GRAS 43AG-7
-- [RBH EP1](./Innerfidelity/in-ear/RBH%20EP1) by Innerfidelity
-- [RBH EP3](./Innerfidelity/in-ear/RBH%20EP3) by Innerfidelity
-- [RHA CL1](./crinacle/711%20in-ear/RHA%20CL1) by crinacle on 711
-- [RHA CL2](./crinacle/711%20in-ear/RHA%20CL2) by crinacle on 711
-- [RHA CL750](./crinacle/711%20in-ear/RHA%20CL750) by crinacle on 711
-- [RHA MA-350](./Innerfidelity/in-ear/RHA%20MA-350) by Innerfidelity
-- [RHA MA450i](./Innerfidelity/in-ear/RHA%20MA450i) by Innerfidelity
-- [RHA MA600](./Innerfidelity/in-ear/RHA%20MA600) by Innerfidelity
-- [RHA MA750](./crinacle/711%20in-ear/RHA%20MA750) by crinacle on 711
-- [RHA MA750](./Innerfidelity/in-ear/RHA%20MA750) by Innerfidelity
-- [RHA S500i](./Innerfidelity/in-ear/RHA%20S500i) by Innerfidelity
-- [RHA SA-850](./Innerfidelity/over-ear/RHA%20SA-850) by Innerfidelity
-- [RHA SA950i](./Innerfidelity/over-ear/RHA%20SA950i) by Innerfidelity
-- [RHA T10i (bass filter)](./Innerfidelity/in-ear/RHA%20T10i%20(bass%20filter)) by Innerfidelity
-- [RHA T10i (reference filter)](./Innerfidelity/in-ear/RHA%20T10i%20(reference%20filter)) by Innerfidelity
-- [RHA T10i (treble filter)](./Innerfidelity/in-ear/RHA%20T10i%20(treble%20filter)) by Innerfidelity
-- [RHA T20 (bass filter)](./Innerfidelity/in-ear/RHA%20T20%20(bass%20filter)) by Innerfidelity
-- [RHA T20 (reference filter)](./Innerfidelity/in-ear/RHA%20T20%20(reference%20filter)) by Innerfidelity
-- [RHA T20 (treble filter)](./Innerfidelity/in-ear/RHA%20T20%20(treble%20filter)) by Innerfidelity
-- [RHA T20i](./crinacle/711%20in-ear/RHA%20T20i) by crinacle on 711
-- [RHA TrueConnect](./crinacle/711%20in-ear/RHA%20TrueConnect) by crinacle on 711
-- [RHA TrueConnect](./Rtings/in-ear/RHA%20TrueConnect) by Rtings
-- [ROCCAT Elo 7.1 Air](./Rtings/over-ear/ROCCAT%20Elo%207.1%20Air) by Rtings
-- [ROCCAT Syn Pro Air](./Rtings/over-ear/ROCCAT%20Syn%20Pro%20Air) by Rtings
-- [RUNMUS RGB K1 Gaming Headset](./Rtings/over-ear/RUNMUS%20RGB%20K1%20Gaming%20Headset) by Rtings
 - [Radius HP-NHA11](./Innerfidelity/in-ear/Radius%20HP-NHA11) by Innerfidelity
 - [Radius HP-NHR11](./Innerfidelity/in-ear/Radius%20HP-NHR11) by Innerfidelity
 - [Radius HP-TWF31](./Innerfidelity/in-ear/Radius%20HP-TWF31) by Innerfidelity
@@ -3136,8 +3176,8 @@ from the same source.
 - [Razer Kaira X for PlayStation](./Rtings/over-ear/Razer%20Kaira%20X%20for%20PlayStation) by Rtings
 - [Razer Kraken Pro V2](./Rtings/over-ear/Razer%20Kraken%20Pro%20V2) by Rtings
 - [Razer Kraken Tournament Edition](./Rtings/over-ear/Razer%20Kraken%20Tournament%20Edition) by Rtings
-- [Razer Kraken USB](./Rtings/over-ear/Razer%20Kraken%20USB) by Rtings
 - [Razer Kraken Ultimate](./Rtings/over-ear/Razer%20Kraken%20Ultimate) by Rtings
+- [Razer Kraken USB](./Rtings/over-ear/Razer%20Kraken%20USB) by Rtings
 - [Razer Kraken V3](./Rtings/over-ear/Razer%20Kraken%20V3) by Rtings
 - [Razer Kraken V3 HyperSense](./Rtings/over-ear/Razer%20Kraken%20V3%20HyperSense) by Rtings
 - [Razer Kraken V3 Pro](./crinacle/GRAS%2043AG-7%20over-ear/Razer%20Kraken%20V3%20Pro) by crinacle on GRAS 43AG-7
@@ -3152,9 +3192,33 @@ from the same source.
 - [Razer Opus 2020](./Rtings/over-ear/Razer%20Opus%202020) by Rtings
 - [Razer Opus 2021](./Rtings/over-ear/Razer%20Opus%202021) by Rtings
 - [Razer Opus X](./Rtings/over-ear/Razer%20Opus%20X) by Rtings
+- [RBH EP1](./Innerfidelity/in-ear/RBH%20EP1) by Innerfidelity
+- [RBH EP3](./Innerfidelity/in-ear/RBH%20EP3) by Innerfidelity
+- [RHA CL1](./crinacle/711%20in-ear/RHA%20CL1) by crinacle on 711
+- [RHA CL2](./crinacle/711%20in-ear/RHA%20CL2) by crinacle on 711
+- [RHA CL750](./crinacle/711%20in-ear/RHA%20CL750) by crinacle on 711
+- [RHA MA-350](./Innerfidelity/in-ear/RHA%20MA-350) by Innerfidelity
+- [RHA MA450i](./Innerfidelity/in-ear/RHA%20MA450i) by Innerfidelity
+- [RHA MA600](./Innerfidelity/in-ear/RHA%20MA600) by Innerfidelity
+- [RHA MA750](./crinacle/711%20in-ear/RHA%20MA750) by crinacle on 711
+- [RHA MA750](./Innerfidelity/in-ear/RHA%20MA750) by Innerfidelity
+- [RHA S500i](./Innerfidelity/in-ear/RHA%20S500i) by Innerfidelity
+- [RHA SA-850](./Innerfidelity/over-ear/RHA%20SA-850) by Innerfidelity
+- [RHA SA950i](./Innerfidelity/over-ear/RHA%20SA950i) by Innerfidelity
+- [RHA T10i (bass filter)](./Innerfidelity/in-ear/RHA%20T10i%20(bass%20filter)) by Innerfidelity
+- [RHA T10i (reference filter)](./Innerfidelity/in-ear/RHA%20T10i%20(reference%20filter)) by Innerfidelity
+- [RHA T10i (treble filter)](./Innerfidelity/in-ear/RHA%20T10i%20(treble%20filter)) by Innerfidelity
+- [RHA T20 (bass filter)](./Innerfidelity/in-ear/RHA%20T20%20(bass%20filter)) by Innerfidelity
+- [RHA T20 (reference filter)](./Innerfidelity/in-ear/RHA%20T20%20(reference%20filter)) by Innerfidelity
+- [RHA T20 (treble filter)](./Innerfidelity/in-ear/RHA%20T20%20(treble%20filter)) by Innerfidelity
+- [RHA T20i](./crinacle/711%20in-ear/RHA%20T20i) by crinacle on 711
+- [RHA TrueConnect](./crinacle/711%20in-ear/RHA%20TrueConnect) by crinacle on 711
+- [RHA TrueConnect](./Rtings/in-ear/RHA%20TrueConnect) by Rtings
 - [Rhapsodio Clipper](./crinacle/711%20in-ear/Rhapsodio%20Clipper) by crinacle on 711
 - [Rhapsodio Infinity Mk2](./crinacle/711%20in-ear/Rhapsodio%20Infinity%20Mk2) by crinacle on 711
 - [Ritmix RH-508](./oratory1990/over-ear/Ritmix%20RH-508) by oratory1990
+- [ROCCAT Elo 7.1 Air](./Rtings/over-ear/ROCCAT%20Elo%207.1%20Air) by Rtings
+- [ROCCAT Syn Pro Air](./Rtings/over-ear/ROCCAT%20Syn%20Pro%20Air) by Rtings
 - [Rock Jaw Alpha Genus (black filter)](./Innerfidelity/in-ear/Rock%20Jaw%20Alpha%20Genus%20(black%20filter)) by Innerfidelity
 - [Rock Jaw Alpha Genus (silver filters)](./Innerfidelity/in-ear/Rock%20Jaw%20Alpha%20Genus%20(silver%20filters)) by Innerfidelity
 - [Rock Zircon](./oratory1990/in-ear/Rock%20Zircon) by oratory1990
@@ -3165,21 +3229,9 @@ from the same source.
 - [Rosson Audio Design RAD-0](./oratory1990/over-ear/Rosson%20Audio%20Design%20RAD-0) by oratory1990
 - [Rosson Audio Design RAD-0](./crinacle/GRAS%2043AG-7%20over-ear/Rosson%20Audio%20Design%20RAD-0) by crinacle on GRAS 43AG-7
 - [Rovking V1](./Rtings/in-ear/Rovking%20V1) by Rtings
+- [RUNMUS RGB K1 Gaming Headset](./Rtings/over-ear/RUNMUS%20RGB%20K1%20Gaming%20Headset) by Rtings
 - [RØDE NTH-100](./oratory1990/over-ear/R%C3%98DE%20NTH-100) by oratory1990
 - [RØDE NTH-100M](./Rtings/over-ear/R%C3%98DE%20NTH-100M) by Rtings
-- [SATOLEX Tubomi DH298-A1Bk](./crinacle/711%20in-ear/SATOLEX%20Tubomi%20DH298-A1Bk) by crinacle on 711
-- [SATOLEX Tubomi DH302-A1Bs](./crinacle/711%20in-ear/SATOLEX%20Tubomi%20DH302-A1Bs) by crinacle on 711
-- [SATOLEX Tubomi DH310-A1SS](./crinacle/711%20in-ear/SATOLEX%20Tubomi%20DH310-A1SS) by crinacle on 711
-- [SATOLEX Tumuri DH303-A1](./crinacle/711%20in-ear/SATOLEX%20Tumuri%20DH303-A1) by crinacle on 711
-- [SENSO ActivBuds S-250](./Rtings/in-ear/SENSO%20ActivBuds%20S-250) by Rtings
-- [SMS Audio DJ Pro](./Innerfidelity/over-ear/SMS%20Audio%20DJ%20Pro) by Innerfidelity
-- [SMS Audio Over Ear ANC](./Innerfidelity/over-ear/SMS%20Audio%20Over%20Ear%20ANC) by Innerfidelity
-- [SMS Audio Street by 50 Cent](./Innerfidelity/over-ear/SMS%20Audio%20Street%20by%2050%20Cent) by Innerfidelity
-- [SMS Audio Street by 50 Cent](./Rtings/over-ear/SMS%20Audio%20Street%20by%2050%20Cent) by Rtings
-- [SMS Audio Sync by 50 Cent](./Innerfidelity/over-ear/SMS%20Audio%20Sync%20by%2050%20Cent) by Innerfidelity
-- [SOL REPUBLIC Master Tracks XC](./Innerfidelity/over-ear/SOL%20REPUBLIC%20Master%20Tracks%20XC) by Innerfidelity
-- [SOL REPUBLIC Tracks](./Innerfidelity/over-ear/SOL%20REPUBLIC%20Tracks) by Innerfidelity
-- [SOL REPUBLIC Tracks B](./Innerfidelity/over-ear/SOL%20REPUBLIC%20Tracks%20B) by Innerfidelity
 - [Sabbat E12](./Rtings/in-ear/Sabbat%20E12) by Rtings
 - [Samson SR850](./Rtings/over-ear/Samson%20SR850) by Rtings
 - [Samsung AKG EO-IG955 Type-C](./Rtings/in-ear/Samsung%20AKG%20EO-IG955%20Type-C) by Rtings
@@ -3201,12 +3253,12 @@ from the same source.
 - [Samsung Galaxy Buds2](./Rtings/in-ear/Samsung%20Galaxy%20Buds2) by Rtings
 - [Samsung Galaxy Buds2 Pro](./oratory1990/in-ear/Samsung%20Galaxy%20Buds2%20Pro) by oratory1990
 - [Samsung Galaxy Buds2 Pro](./Rtings/in-ear/Samsung%20Galaxy%20Buds2%20Pro) by Rtings
-- [Samsung Galaxy Buds2 Pro (ANC mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(ANC%20mode)) by crinacle on 711
-- [Samsung Galaxy Buds2 Pro (Passive mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(Passive%20mode)) by crinacle on 711
 - [Samsung Galaxy Buds2 Pro (ambient mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(ambient%20mode)) by crinacle on 711
+- [Samsung Galaxy Buds2 Pro (ANC mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(ANC%20mode)) by crinacle on 711
 - [Samsung Galaxy Buds2 Pro (bass boost EQ) (ANC mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(bass%20boost%20EQ)%20(ANC%20mode)) by crinacle on 711
 - [Samsung Galaxy Buds2 Pro (blear EQ) (ANC mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(blear%20EQ)%20(ANC%20mode)) by crinacle on 711
 - [Samsung Galaxy Buds2 Pro (dynamic EQ) (ANC mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(dynamic%20EQ)%20(ANC%20mode)) by crinacle on 711
+- [Samsung Galaxy Buds2 Pro (Passive mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(Passive%20mode)) by crinacle on 711
 - [Samsung Galaxy Buds2 Pro (soft EQ) (ANC mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(soft%20EQ)%20(ANC%20mode)) by crinacle on 711
 - [Samsung Galaxy Buds2 Pro (treble boost EQ) (ANC mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(treble%20boost%20EQ)%20(ANC%20mode)) by crinacle on 711
 - [Samsung Galaxy Buds2 Pro (treble boost EQ) (ANC mode) (sample 1)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(treble%20boost%20EQ)%20(ANC%20mode)%20(sample%201)) by crinacle on 711
@@ -3225,14 +3277,18 @@ from the same source.
 - [Sash Tres 45 (open back, leather earpads)](./oratory1990/over-ear/Sash%20Tres%2045%20(open%20back,%20leather%20earpads)) by oratory1990
 - [Sash Tres 45 (perforated leather earpads)](./oratory1990/over-ear/Sash%20Tres%2045%20(perforated%20leather%20earpads)) by oratory1990
 - [Sash Tres 45 (velour earpads)](./oratory1990/over-ear/Sash%20Tres%2045%20(velour%20earpads)) by oratory1990
+- [SATOLEX Tubomi DH298-A1Bk](./crinacle/711%20in-ear/SATOLEX%20Tubomi%20DH298-A1Bk) by crinacle on 711
+- [SATOLEX Tubomi DH302-A1Bs](./crinacle/711%20in-ear/SATOLEX%20Tubomi%20DH302-A1Bs) by crinacle on 711
+- [SATOLEX Tubomi DH310-A1SS](./crinacle/711%20in-ear/SATOLEX%20Tubomi%20DH310-A1SS) by crinacle on 711
+- [SATOLEX Tumuri DH303-A1](./crinacle/711%20in-ear/SATOLEX%20Tumuri%20DH303-A1) by crinacle on 711
 - [Scosche RH1060 Bluetooth](./Innerfidelity/over-ear/Scosche%20RH1060%20Bluetooth) by Innerfidelity
 - [Seahf AWK-009](./crinacle/711%20in-ear/Seahf%20AWK-009) by crinacle on 711
 - [SeeAudio Bravery](./crinacle/711%20in-ear/SeeAudio%20Bravery) by crinacle on 711
 - [SeeAudio Kaguya](./crinacle/711%20in-ear/SeeAudio%20Kaguya) by crinacle on 711
 - [SeeAudio Neo](./crinacle/711%20in-ear/SeeAudio%20Neo) by crinacle on 711
-- [SeeAudio Yume](./crinacle/711%20in-ear/SeeAudio%20Yume) by crinacle on 711
 - [SeeAudio x Crincale Yume Midnight](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/SeeAudio%20x%20Crincale%20Yume%20Midnight) by crinacle on Bruel & Kjaer 4620
 - [SeeAudio x Crincale Yume Midnight](./crinacle/711%20in-ear/SeeAudio%20x%20Crincale%20Yume%20Midnight) by crinacle on 711
+- [SeeAudio Yume](./crinacle/711%20in-ear/SeeAudio%20Yume) by crinacle on 711
 - [Seek Real Audio Airship](./crinacle/711%20in-ear/Seek%20Real%20Audio%20Airship) by crinacle on 711
 - [Sendy Aiva](./oratory1990/over-ear/Sendy%20Aiva) by oratory1990
 - [Sendy Aiva](./crinacle/EARS%20+%20711%20over-ear/Sendy%20Aiva) by crinacle on EARS + 711
@@ -3406,15 +3462,15 @@ from the same source.
 - [Sennheiser HD 800](./Innerfidelity/over-ear/Sennheiser%20HD%20800) by Innerfidelity
 - [Sennheiser HD 800](./Headphone.com%20Legacy/over-ear/Sennheiser%20HD%20800) by Headphone.com Legacy
 - [Sennheiser HD 800](./crinacle/711%20in-ear/Sennheiser%20HD%20800) by crinacle on 711
+- [Sennheiser HD 800 (sample 1)](./Headphone.com%20Legacy/over-ear/Sennheiser%20HD%20800%20(sample%201)) by Headphone.com Legacy
+- [Sennheiser HD 800 (sample 1)](./crinacle/711%20in-ear/Sennheiser%20HD%20800%20(sample%201)) by crinacle on 711
+- [Sennheiser HD 800 (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20800%20(sample%202)) by crinacle on GRAS 43AG-7
+- [Sennheiser HD 800 (sample 2)](./Headphone.com%20Legacy/over-ear/Sennheiser%20HD%20800%20(sample%202)) by Headphone.com Legacy
 - [Sennheiser HD 800 (SDR mod)](./oratory1990/over-ear/Sennheiser%20HD%20800%20(SDR%20mod)) by oratory1990
 - [Sennheiser HD 800 (SDR mod)](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20800%20(SDR%20mod)) by crinacle on GRAS 43AG-7
 - [Sennheiser HD 800 (SDR mod) (sample 1)](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20800%20(SDR%20mod)%20(sample%201)) by crinacle on GRAS 43AG-7
 - [Sennheiser HD 800 (SDR mod) (sample 2)](./crinacle/EARS%20+%20711%20over-ear/Sennheiser%20HD%20800%20(SDR%20mod)%20(sample%202)) by crinacle on EARS + 711
 - [Sennheiser HD 800 (SDR mod, Dekoni fenestrated sheepskin earpads)](./oratory1990/over-ear/Sennheiser%20HD%20800%20(SDR%20mod,%20Dekoni%20fenestrated%20sheepskin%20earpads)) by oratory1990
-- [Sennheiser HD 800 (sample 1)](./Headphone.com%20Legacy/over-ear/Sennheiser%20HD%20800%20(sample%201)) by Headphone.com Legacy
-- [Sennheiser HD 800 (sample 1)](./crinacle/711%20in-ear/Sennheiser%20HD%20800%20(sample%201)) by crinacle on 711
-- [Sennheiser HD 800 (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20800%20(sample%202)) by crinacle on GRAS 43AG-7
-- [Sennheiser HD 800 (sample 2)](./Headphone.com%20Legacy/over-ear/Sennheiser%20HD%20800%20(sample%202)) by Headphone.com Legacy
 - [Sennheiser HD 800 S](./oratory1990/over-ear/Sennheiser%20HD%20800%20S) by oratory1990
 - [Sennheiser HD 800 S](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20800%20S) by crinacle on GRAS 43AG-7
 - [Sennheiser HD 800 S](./Innerfidelity/over-ear/Sennheiser%20HD%20800%20S) by Innerfidelity
@@ -3473,9 +3529,6 @@ from the same source.
 - [Sennheiser MM 50 iP](./Headphone.com%20Legacy/in-ear/Sennheiser%20MM%2050%20iP) by Headphone.com Legacy
 - [Sennheiser MM 550 Travel Bluetooth NC](./Headphone.com%20Legacy/over-ear/Sennheiser%20MM%20550%20Travel%20Bluetooth%20NC) by Headphone.com Legacy
 - [Sennheiser MM 550-X](./Rtings/over-ear/Sennheiser%20MM%20550-X) by Rtings
-- [Sennheiser MX 560](./Innerfidelity/earbud/Sennheiser%20MX%20560) by Innerfidelity
-- [Sennheiser MX 560](./Headphone.com%20Legacy/earbud/Sennheiser%20MX%20560) by Headphone.com Legacy
-- [Sennheiser MX 680](./Innerfidelity/earbud/Sennheiser%20MX%20680) by Innerfidelity
 - [Sennheiser Momentum](./Innerfidelity/over-ear/Sennheiser%20Momentum) by Innerfidelity
 - [Sennheiser Momentum](./Headphone.com%20Legacy/over-ear/Sennheiser%20Momentum) by Headphone.com Legacy
 - [Sennheiser Momentum 2.0](./Innerfidelity/over-ear/Sennheiser%20Momentum%202.0) by Innerfidelity
@@ -3516,6 +3569,9 @@ from the same source.
 - [Sennheiser Momentum Wireless (wired, active)](./Innerfidelity/over-ear/Sennheiser%20Momentum%20Wireless%20(wired,%20active)) by Innerfidelity
 - [Sennheiser Momentum Wireless (wired, passive)](./Innerfidelity/over-ear/Sennheiser%20Momentum%20Wireless%20(wired,%20passive)) by Innerfidelity
 - [Sennheiser Momentum Wireless (wireless)](./Innerfidelity/over-ear/Sennheiser%20Momentum%20Wireless%20(wireless)) by Innerfidelity
+- [Sennheiser MX 560](./Innerfidelity/earbud/Sennheiser%20MX%20560) by Innerfidelity
+- [Sennheiser MX 560](./Headphone.com%20Legacy/earbud/Sennheiser%20MX%20560) by Headphone.com Legacy
+- [Sennheiser MX 680](./Innerfidelity/earbud/Sennheiser%20MX%20680) by Innerfidelity
 - [Sennheiser OCX 685](./oratory1990/in-ear/Sennheiser%20OCX%20685) by oratory1990
 - [Sennheiser OMX 680](./Headphone.com%20Legacy/earbud/Sennheiser%20OMX%20680) by Headphone.com Legacy
 - [Sennheiser PC37X](./oratory1990/over-ear/Sennheiser%20PC37X) by oratory1990
@@ -3560,6 +3616,7 @@ from the same source.
 - [Sennheiser SC 160 USB-C](./Rtings/over-ear/Sennheiser%20SC%20160%20USB-C) by Rtings
 - [Sennheiser Urbanite](./Innerfidelity/over-ear/Sennheiser%20Urbanite) by Innerfidelity
 - [Sennheiser Urbanite XL](./Innerfidelity/over-ear/Sennheiser%20Urbanite%20XL) by Innerfidelity
+- [SENSO ActivBuds S-250](./Rtings/in-ear/SENSO%20ActivBuds%20S-250) by Rtings
 - [Shanling ME100](./crinacle/711%20in-ear/Shanling%20ME100) by crinacle on 711
 - [Shanling ME200](./crinacle/711%20in-ear/Shanling%20ME200) by crinacle on 711
 - [Shanling ME500](./crinacle/711%20in-ear/Shanling%20ME500) by crinacle on 711
@@ -3601,14 +3658,14 @@ from the same source.
 - [Shuoer Tape](./oratory1990/in-ear/Shuoer%20Tape) by oratory1990
 - [Shuoer Tape](./crinacle/711%20in-ear/Shuoer%20Tape) by crinacle on 711
 - [Shuoer Tape Pro](./crinacle/711%20in-ear/Shuoer%20Tape%20Pro) by crinacle on 711
-- [Shure AONIC 50](./oratory1990/over-ear/Shure%20AONIC%2050) by oratory1990
-- [Shure AONIC 50](./crinacle/GRAS%2043AG-7%20over-ear/Shure%20AONIC%2050) by crinacle on GRAS 43AG-7
-- [Shure AONIC 50](./Rtings/over-ear/Shure%20AONIC%2050) by Rtings
 - [Shure Aonic 3](./crinacle/711%20in-ear/Shure%20Aonic%203) by crinacle on 711
 - [Shure Aonic 4](./crinacle/711%20in-ear/Shure%20Aonic%204) by crinacle on 711
 - [Shure Aonic 5 (bright filter)](./crinacle/711%20in-ear/Shure%20Aonic%205%20(bright%20filter)) by crinacle on 711
 - [Shure Aonic 5 (default filter)](./crinacle/711%20in-ear/Shure%20Aonic%205%20(default%20filter)) by crinacle on 711
 - [Shure Aonic 5 (warm filter)](./crinacle/711%20in-ear/Shure%20Aonic%205%20(warm%20filter)) by crinacle on 711
+- [Shure AONIC 50](./oratory1990/over-ear/Shure%20AONIC%2050) by oratory1990
+- [Shure AONIC 50](./crinacle/GRAS%2043AG-7%20over-ear/Shure%20AONIC%2050) by crinacle on GRAS 43AG-7
+- [Shure AONIC 50](./Rtings/over-ear/Shure%20AONIC%2050) by Rtings
 - [Shure KSE1200](./oratory1990/in-ear/Shure%20KSE1200) by oratory1990
 - [Shure KSE1200](./crinacle/711%20in-ear/Shure%20KSE1200) by crinacle on 711
 - [Shure KSE1200 (sample 1)](./crinacle/711%20in-ear/Shure%20KSE1200%20(sample%201)) by crinacle on 711
@@ -3743,12 +3800,20 @@ from the same source.
 - [Skullcandy Venue](./Rtings/over-ear/Skullcandy%20Venue) by Rtings
 - [Sleek SA1](./Headphone.com%20Legacy/in-ear/Sleek%20SA1) by Headphone.com Legacy
 - [Sleek SA6](./Headphone.com%20Legacy/in-ear/Sleek%20SA6) by Headphone.com Legacy
+- [SMS Audio DJ Pro](./Innerfidelity/over-ear/SMS%20Audio%20DJ%20Pro) by Innerfidelity
+- [SMS Audio Over Ear ANC](./Innerfidelity/over-ear/SMS%20Audio%20Over%20Ear%20ANC) by Innerfidelity
+- [SMS Audio Street by 50 Cent](./Innerfidelity/over-ear/SMS%20Audio%20Street%20by%2050%20Cent) by Innerfidelity
+- [SMS Audio Street by 50 Cent](./Rtings/over-ear/SMS%20Audio%20Street%20by%2050%20Cent) by Rtings
+- [SMS Audio Sync by 50 Cent](./Innerfidelity/over-ear/SMS%20Audio%20Sync%20by%2050%20Cent) by Innerfidelity
 - [SoftEars Cerberus](./oratory1990/in-ear/SoftEars%20Cerberus) by oratory1990
 - [SoftEars RS10](./oratory1990/in-ear/SoftEars%20RS10) by oratory1990
 - [SoftEars RS10](./crinacle/711%20in-ear/SoftEars%20RS10) by crinacle on 711
 - [SoftEars RSV](./crinacle/711%20in-ear/SoftEars%20RSV) by crinacle on 711
 - [SoftEars Turii](./crinacle/711%20in-ear/SoftEars%20Turii) by crinacle on 711
 - [SoftEars Volume](./crinacle/711%20in-ear/SoftEars%20Volume) by crinacle on 711
+- [SOL REPUBLIC Master Tracks XC](./Innerfidelity/over-ear/SOL%20REPUBLIC%20Master%20Tracks%20XC) by Innerfidelity
+- [SOL REPUBLIC Tracks](./Innerfidelity/over-ear/SOL%20REPUBLIC%20Tracks) by Innerfidelity
+- [SOL REPUBLIC Tracks B](./Innerfidelity/over-ear/SOL%20REPUBLIC%20Tracks%20B) by Innerfidelity
 - [Sonic Sonic](./crinacle/711%20in-ear/Sonic%20Sonic) by crinacle on 711
 - [Sony DR-Z7](./Innerfidelity/over-ear/Sony%20DR-Z7) by Innerfidelity
 - [Sony Float Run](./Rtings/earbud/Sony%20Float%20Run) by Rtings
@@ -3972,12 +4037,12 @@ from the same source.
 - [Soranik SK3](./crinacle/711%20in-ear/Soranik%20SK3) by crinacle on 711
 - [Soranik SP3](./crinacle/711%20in-ear/Soranik%20SP3) by crinacle on 711
 - [Soranik SP3 SE](./crinacle/711%20in-ear/Soranik%20SP3%20SE) by crinacle on 711
-- [Soul Combat](./Innerfidelity/over-ear/Soul%20Combat) by Innerfidelity
-- [Soul Jet Pro ANC Off](./Innerfidelity/over-ear/Soul%20Jet%20Pro%20ANC%20Off) by Innerfidelity
-- [Soul Jet Pro ANC On](./Innerfidelity/over-ear/Soul%20Jet%20Pro%20ANC%20On) by Innerfidelity
 - [Soul by Ludacris SL100](./Innerfidelity/over-ear/Soul%20by%20Ludacris%20SL100) by Innerfidelity
 - [Soul by Ludacris SL150](./Innerfidelity/over-ear/Soul%20by%20Ludacris%20SL150) by Innerfidelity
 - [Soul by Ludacris SL300](./Innerfidelity/over-ear/Soul%20by%20Ludacris%20SL300) by Innerfidelity
+- [Soul Combat](./Innerfidelity/over-ear/Soul%20Combat) by Innerfidelity
+- [Soul Jet Pro ANC Off](./Innerfidelity/over-ear/Soul%20Jet%20Pro%20ANC%20Off) by Innerfidelity
+- [Soul Jet Pro ANC On](./Innerfidelity/over-ear/Soul%20Jet%20Pro%20ANC%20On) by Innerfidelity
 - [Sound Intone CX-05](./Rtings/over-ear/Sound%20Intone%20CX-05) by Rtings
 - [Sound Linear Fitz 10 Flat](./crinacle/711%20in-ear/Sound%20Linear%20Fitz%2010%20Flat) by crinacle on 711
 - [Sound Linear Fitz 10 Flat (sample 1)](./crinacle/711%20in-ear/Sound%20Linear%20Fitz%2010%20Flat%20(sample%201)) by crinacle on 711
@@ -4002,10 +4067,10 @@ from the same source.
 - [Spiral Ear SE5U (sample 1)](./crinacle/711%20in-ear/Spiral%20Ear%20SE5U%20(sample%201)) by crinacle on 711
 - [Spiral Ear SE5U (sample 2)](./crinacle/711%20in-ear/Spiral%20Ear%20SE5U%20(sample%202)) by crinacle on 711
 - [Spirit Torino Radiante](./crinacle/GRAS%2043AG-7%20over-ear/Spirit%20Torino%20Radiante) by crinacle on GRAS 43AG-7
+- [Status Audio Between Pro](./Rtings/in-ear/Status%20Audio%20Between%20Pro) by Rtings
 - [Status Audio BT One](./Rtings/over-ear/Status%20Audio%20BT%20One) by Rtings
 - [Status Audio BT One (wired)](./oratory1990/over-ear/Status%20Audio%20BT%20One%20(wired)) by oratory1990
 - [Status Audio BT One (wireless)](./oratory1990/over-ear/Status%20Audio%20BT%20One%20(wireless)) by oratory1990
-- [Status Audio Between Pro](./Rtings/in-ear/Status%20Audio%20Between%20Pro) by Rtings
 - [Status Audio SM-CB1](./Innerfidelity/over-ear/Status%20Audio%20SM-CB1) by Innerfidelity
 - [Status Audio SM-OB1](./Innerfidelity/over-ear/Status%20Audio%20SM-OB1) by Innerfidelity
 - [Stax 4070](./Innerfidelity/over-ear/Stax%204070) by Innerfidelity
@@ -4057,15 +4122,15 @@ from the same source.
 - [Stax SR-L300](./Rtings/over-ear/Stax%20SR-L300) by Rtings
 - [Stax SR-L300 (sample 1)](./crinacle/GRAS%2043AG-7%20over-ear/Stax%20SR-L300%20(sample%201)) by crinacle on GRAS 43AG-7
 - [Stax SR-L300 (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Stax%20SR-L300%20(sample%202)) by crinacle on GRAS 43AG-7
+- [Stax SR-L300 Limited](./crinacle/GRAS%2043AG-7%20over-ear/Stax%20SR-L300%20Limited) by crinacle on GRAS 43AG-7
 - [Stax SR-L300 LTD](./oratory1990/over-ear/Stax%20SR-L300%20LTD) by oratory1990
 - [Stax SR-L300 LTD (L700 earpads)](./oratory1990/over-ear/Stax%20SR-L300%20LTD%20(L700%20earpads)) by oratory1990
-- [Stax SR-L300 Limited](./crinacle/GRAS%2043AG-7%20over-ear/Stax%20SR-L300%20Limited) by crinacle on GRAS 43AG-7
 - [Stax SR-L500](./oratory1990/over-ear/Stax%20SR-L500) by oratory1990
 - [Stax SR-L500](./crinacle/GRAS%2043AG-7%20over-ear/Stax%20SR-L500) by crinacle on GRAS 43AG-7
-- [Stax SR-L500 (Vesper earpads)](./oratory1990/over-ear/Stax%20SR-L500%20(Vesper%20earpads)) by oratory1990
 - [Stax SR-L500 (blu-tac mod)](./oratory1990/over-ear/Stax%20SR-L500%20(blu-tac%20mod)) by oratory1990
 - [Stax SR-L500 (sample 1)](./crinacle/GRAS%2043AG-7%20over-ear/Stax%20SR-L500%20(sample%201)) by crinacle on GRAS 43AG-7
 - [Stax SR-L500 (sample 2)](./crinacle/GRAS%2043AG-7%20over-ear/Stax%20SR-L500%20(sample%202)) by crinacle on GRAS 43AG-7
+- [Stax SR-L500 (Vesper earpads)](./oratory1990/over-ear/Stax%20SR-L500%20(Vesper%20earpads)) by oratory1990
 - [Stax SR-L700](./oratory1990/over-ear/Stax%20SR-L700) by oratory1990
 - [Stax SR-L700](./crinacle/GRAS%2043AG-7%20over-ear/Stax%20SR-L700) by crinacle on GRAS 43AG-7
 - [Stax SR-L700 (blu-tac mod)](./oratory1990/over-ear/Stax%20SR-L700%20(blu-tac%20mod)) by oratory1990
@@ -4126,9 +4191,9 @@ from the same source.
 - [Superlux HD 681](./Headphone.com%20Legacy/over-ear/Superlux%20HD%20681) by Headphone.com Legacy
 - [Superlux HD 681 (velour earpads)](./oratory1990/over-ear/Superlux%20HD%20681%20(velour%20earpads)) by oratory1990
 - [Superlux HD 681 EVO](./Rtings/over-ear/Superlux%20HD%20681%20EVO) by Rtings
+- [Superlux Hd 681B (Brainwavz round hybrid earpads)](./oratory1990/over-ear/Superlux%20Hd%20681B%20(Brainwavz%20round%20hybrid%20earpads)) by oratory1990
 - [Superlux HD 681B (pleather earpads)](./oratory1990/over-ear/Superlux%20HD%20681B%20(pleather%20earpads)) by oratory1990
 - [Superlux HD 681B (velour earpads)](./oratory1990/over-ear/Superlux%20HD%20681B%20(velour%20earpads)) by oratory1990
-- [Superlux Hd 681B (Brainwavz round hybrid earpads)](./oratory1990/over-ear/Superlux%20Hd%20681B%20(Brainwavz%20round%20hybrid%20earpads)) by oratory1990
 - [Swimbuds Swimbuds](./Rtings/in-ear/Swimbuds%20Swimbuds) by Rtings
 - [Symphonium Audio Aurora](./crinacle/711%20in-ear/Symphonium%20Audio%20Aurora) by crinacle on 711
 - [Symphonium Audio Helios](./crinacle/711%20in-ear/Symphonium%20Audio%20Helios) by crinacle on 711
@@ -4146,55 +4211,13 @@ from the same source.
 - [T-Peos Spider](./Innerfidelity/in-ear/T-Peos%20Spider) by Innerfidelity
 - [T-Peos Tank](./Innerfidelity/in-ear/T-Peos%20Tank) by Innerfidelity
 - [T-Peos U200R](./Innerfidelity/in-ear/T-Peos%20U200R) by Innerfidelity
-- [TDK BA200](./Innerfidelity/in-ear/TDK%20BA200) by Innerfidelity
-- [TDK MT300](./Innerfidelity/in-ear/TDK%20MT300) by Innerfidelity
-- [TFZ 1S](./crinacle/711%20in-ear/TFZ%201S) by crinacle on 711
-- [TFZ 2S](./crinacle/711%20in-ear/TFZ%202S) by crinacle on 711
-- [TFZ 4S](./crinacle/711%20in-ear/TFZ%204S) by crinacle on 711
-- [TFZ 5S](./crinacle/711%20in-ear/TFZ%205S) by crinacle on 711
-- [TFZ Balance 2M](./crinacle/711%20in-ear/TFZ%20Balance%202M) by crinacle on 711
-- [TFZ Exclusive 1](./crinacle/711%20in-ear/TFZ%20Exclusive%201) by crinacle on 711
-- [TFZ Exclusive 3](./crinacle/711%20in-ear/TFZ%20Exclusive%203) by crinacle on 711
-- [TFZ Exclusive 5](./crinacle/711%20in-ear/TFZ%20Exclusive%205) by crinacle on 711
-- [TFZ King Pro](./crinacle/711%20in-ear/TFZ%20King%20Pro) by crinacle on 711
-- [TFZ Mylove 2](./crinacle/711%20in-ear/TFZ%20Mylove%202) by crinacle on 711
-- [TFZ No.3](./crinacle/711%20in-ear/TFZ%20No.3) by crinacle on 711
-- [TFZ S2 Pro](./crinacle/711%20in-ear/TFZ%20S2%20Pro) by crinacle on 711
-- [TFZ Secret Garden](./crinacle/711%20in-ear/TFZ%20Secret%20Garden) by crinacle on 711
-- [TFZ T2 Galaxy](./oratory1990/in-ear/TFZ%20T2%20Galaxy) by oratory1990
-- [TFZ Tequila 1](./crinacle/711%20in-ear/TFZ%20Tequila%201) by crinacle on 711
-- [TFZ Ti Galaxy](./crinacle/711%20in-ear/TFZ%20Ti%20Galaxy) by crinacle on 711
-- [TFZ Warrior](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/TFZ%20Warrior) by crinacle on Bruel & Kjaer 4620
-- [TForce Yuan Li Dark Soul](./crinacle/711%20in-ear/TForce%20Yuan%20Li%20Dark%20Soul) by crinacle on 711
-- [TOZO NC2](./Rtings/in-ear/TOZO%20NC2) by Rtings
-- [TOZO NC7](./Rtings/in-ear/TOZO%20NC7) by Rtings
-- [TOZO NC9](./Rtings/in-ear/TOZO%20NC9) by Rtings
-- [TOZO T10](./Rtings/in-ear/TOZO%20T10) by Rtings
-- [TOZO T12](./Rtings/in-ear/TOZO%20T12) by Rtings
-- [TOZO T6](./Rtings/in-ear/TOZO%20T6) by Rtings
-- [TREBLAB X5](./Rtings/in-ear/TREBLAB%20X5) by Rtings
-- [TREBLAB Z2](./Rtings/over-ear/TREBLAB%20Z2) by Rtings
-- [TREBLAB Z7 Pro](./Rtings/over-ear/TREBLAB%20Z7%20Pro) by Rtings
-- [TRI Starlight](./crinacle/711%20in-ear/TRI%20Starlight) by crinacle on 711
-- [TRI Starsea (00 setting)](./crinacle/711%20in-ear/TRI%20Starsea%20(00%20setting)) by crinacle on 711
-- [TRI Starsea (02 setting)](./crinacle/711%20in-ear/TRI%20Starsea%20(02%20setting)) by crinacle on 711
-- [TRI Starsea (10 setting)](./crinacle/711%20in-ear/TRI%20Starsea%20(10%20setting)) by crinacle on 711
-- [TRI Starsea (12 setting)](./crinacle/711%20in-ear/TRI%20Starsea%20(12%20setting)) by crinacle on 711
-- [TRI Starshine](./crinacle/711%20in-ear/TRI%20Starshine) by crinacle on 711
-- [TRI i3](./crinacle/711%20in-ear/TRI%20i3) by crinacle on 711
-- [TRI i4](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/TRI%20i4) by crinacle on Bruel & Kjaer 4620
-- [TRN BA5](./crinacle/711%20in-ear/TRN%20BA5) by crinacle on 711
-- [TRN BAX](./crinacle/711%20in-ear/TRN%20BAX) by crinacle on 711
-- [TRN MT1](./crinacle/711%20in-ear/TRN%20MT1) by crinacle on 711
-- [TRN TA2](./crinacle/711%20in-ear/TRN%20TA2) by crinacle on 711
-- [TRN X7](./crinacle/711%20in-ear/TRN%20X7) by crinacle on 711
 - [Takstar Pro 80](./Innerfidelity/over-ear/Takstar%20Pro%2080) by Innerfidelity
 - [Takstar Pro 82](./oratory1990/over-ear/Takstar%20Pro%2082) by oratory1990
 - [Tanchjim Cora](./crinacle/711%20in-ear/Tanchjim%20Cora) by crinacle on 711
 - [Tanchjim Darling](./crinacle/711%20in-ear/Tanchjim%20Darling) by crinacle on 711
 - [Tanchjim Echo](./crinacle/711%20in-ear/Tanchjim%20Echo) by crinacle on 711
-- [Tanchjim HANA 2021](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Tanchjim%20HANA%202021) by crinacle on Bruel & Kjaer 4620
 - [Tanchjim Hana](./crinacle/711%20in-ear/Tanchjim%20Hana) by crinacle on 711
+- [Tanchjim HANA 2021](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Tanchjim%20HANA%202021) by crinacle on Bruel & Kjaer 4620
 - [Tanchjim Hana 2021](./crinacle/711%20in-ear/Tanchjim%20Hana%202021) by crinacle on 711
 - [Tanchjim Ola](./crinacle/711%20in-ear/Tanchjim%20Ola) by crinacle on 711
 - [Tanchjim Oxygen](./crinacle/711%20in-ear/Tanchjim%20Oxygen) by crinacle on 711
@@ -4225,15 +4248,17 @@ from the same source.
 - [Tansio Mirai TSMR-5 (off-on-off)](./crinacle/711%20in-ear/Tansio%20Mirai%20TSMR-5%20(off-on-off)) by crinacle on 711
 - [Tansio Mirai TSMR-5 (on-off-off)](./crinacle/711%20in-ear/Tansio%20Mirai%20TSMR-5%20(on-off-off)) by crinacle on 711
 - [Tansio Mirai TSMR-5 (on-on-on)](./crinacle/711%20in-ear/Tansio%20Mirai%20TSMR-5%20(on-on-on)) by crinacle on 711
+- [Taobao 3 driver](./crinacle/711%20in-ear/Taobao%203%20driver) by crinacle on 711
+- [Taobao 6 driver](./crinacle/711%20in-ear/Taobao%206%20driver) by crinacle on 711
 - [TaoTronics SoundLiberty 79](./Rtings/in-ear/TaoTronics%20SoundLiberty%2079) by Rtings
 - [TaoTronics SoundLiberty 92](./Rtings/in-ear/TaoTronics%20SoundLiberty%2092) by Rtings
 - [TaoTronics SoundLiberty 94](./Rtings/in-ear/TaoTronics%20SoundLiberty%2094) by Rtings
 - [TaoTronics SoundLiberty 95](./Rtings/earbud/TaoTronics%20SoundLiberty%2095) by Rtings
 - [TaoTronics SoundSurge 60](./Rtings/over-ear/TaoTronics%20SoundSurge%2060) by Rtings
 - [TaoTronics TT-BH060](./Rtings/over-ear/TaoTronics%20TT-BH060) by Rtings
-- [Taobao 3 driver](./crinacle/711%20in-ear/Taobao%203%20driver) by crinacle on 711
-- [Taobao 6 driver](./crinacle/711%20in-ear/Taobao%206%20driver) by crinacle on 711
 - [Tascam TH-02](./Rtings/over-ear/Tascam%20TH-02) by Rtings
+- [TDK BA200](./Innerfidelity/in-ear/TDK%20BA200) by Innerfidelity
+- [TDK MT300](./Innerfidelity/in-ear/TDK%20MT300) by Innerfidelity
 - [Teac CT-H02](./Innerfidelity/over-ear/Teac%20CT-H02) by Innerfidelity
 - [Teac CT-H02](./Headphone.com%20Legacy/over-ear/Teac%20CT-H02) by Headphone.com Legacy
 - [Technics EAH-AZ70W](./crinacle/711%20in-ear/Technics%20EAH-AZ70W) by crinacle on 711
@@ -4241,6 +4266,24 @@ from the same source.
 - [Tekfusion Twinwoofers](./Innerfidelity/in-ear/Tekfusion%20Twinwoofers) by Innerfidelity
 - [Teknmotion London Underground](./Innerfidelity/over-ear/Teknmotion%20London%20Underground) by Innerfidelity
 - [Teufel Real Z](./oratory1990/over-ear/Teufel%20Real%20Z) by oratory1990
+- [TForce Yuan Li Dark Soul](./crinacle/711%20in-ear/TForce%20Yuan%20Li%20Dark%20Soul) by crinacle on 711
+- [TFZ 1S](./crinacle/711%20in-ear/TFZ%201S) by crinacle on 711
+- [TFZ 2S](./crinacle/711%20in-ear/TFZ%202S) by crinacle on 711
+- [TFZ 4S](./crinacle/711%20in-ear/TFZ%204S) by crinacle on 711
+- [TFZ 5S](./crinacle/711%20in-ear/TFZ%205S) by crinacle on 711
+- [TFZ Balance 2M](./crinacle/711%20in-ear/TFZ%20Balance%202M) by crinacle on 711
+- [TFZ Exclusive 1](./crinacle/711%20in-ear/TFZ%20Exclusive%201) by crinacle on 711
+- [TFZ Exclusive 3](./crinacle/711%20in-ear/TFZ%20Exclusive%203) by crinacle on 711
+- [TFZ Exclusive 5](./crinacle/711%20in-ear/TFZ%20Exclusive%205) by crinacle on 711
+- [TFZ King Pro](./crinacle/711%20in-ear/TFZ%20King%20Pro) by crinacle on 711
+- [TFZ Mylove 2](./crinacle/711%20in-ear/TFZ%20Mylove%202) by crinacle on 711
+- [TFZ No.3](./crinacle/711%20in-ear/TFZ%20No.3) by crinacle on 711
+- [TFZ S2 Pro](./crinacle/711%20in-ear/TFZ%20S2%20Pro) by crinacle on 711
+- [TFZ Secret Garden](./crinacle/711%20in-ear/TFZ%20Secret%20Garden) by crinacle on 711
+- [TFZ T2 Galaxy](./oratory1990/in-ear/TFZ%20T2%20Galaxy) by oratory1990
+- [TFZ Tequila 1](./crinacle/711%20in-ear/TFZ%20Tequila%201) by crinacle on 711
+- [TFZ Ti Galaxy](./crinacle/711%20in-ear/TFZ%20Ti%20Galaxy) by crinacle on 711
+- [TFZ Warrior](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/TFZ%20Warrior) by crinacle on Bruel & Kjaer 4620
 - [Thermaltake Isurus](./Innerfidelity/in-ear/Thermaltake%20Isurus) by Innerfidelity
 - [ThieAudio Clairvoyance](./crinacle/711%20in-ear/ThieAudio%20Clairvoyance) by crinacle on 711
 - [ThieAudio Clairvoyance (100 ohm resistor)](./crinacle/711%20in-ear/ThieAudio%20Clairvoyance%20(100%20ohm%20resistor)) by crinacle on 711
@@ -4315,11 +4358,11 @@ from the same source.
 - [Tin HiFi TWS2000](./crinacle/711%20in-ear/Tin%20HiFi%20TWS2000) by crinacle on 711
 - [Tipsy Dunmer Pro](./crinacle/711%20in-ear/Tipsy%20Dunmer%20Pro) by crinacle on 711
 - [Tipsy TTROMSO](./crinacle/711%20in-ear/Tipsy%20TTROMSO) by crinacle on 711
-- [Torque t096z (U-shaped filter)](./Innerfidelity/in-ear/Torque%20t096z%20(U-shaped%20filter)) by Innerfidelity
 - [Torque t096z (bass boost filter)](./Innerfidelity/in-ear/Torque%20t096z%20(bass%20boost%20filter)) by Innerfidelity
 - [Torque t096z (mid centric filter)](./Innerfidelity/in-ear/Torque%20t096z%20(mid%20centric%20filter)) by Innerfidelity
 - [Torque t096z (neutral filter)](./Innerfidelity/in-ear/Torque%20t096z%20(neutral%20filter)) by Innerfidelity
 - [Torque t096z (treble boost filter)](./Innerfidelity/in-ear/Torque%20t096z%20(treble%20boost%20filter)) by Innerfidelity
+- [Torque t096z (U-shaped filter)](./Innerfidelity/in-ear/Torque%20t096z%20(U-shaped%20filter)) by Innerfidelity
 - [Torque t096z (warm tilt filter)](./Innerfidelity/in-ear/Torque%20t096z%20(warm%20tilt%20filter)) by Innerfidelity
 - [Torque t103z (black filter)](./Innerfidelity/in-ear/Torque%20t103z%20(black%20filter)) by Innerfidelity
 - [Torque t103z (red filter)](./Innerfidelity/in-ear/Torque%20t103z%20(red%20filter)) by Innerfidelity
@@ -4333,12 +4376,29 @@ from the same source.
 - [Torque t402v (on-ear earpads, red vent)](./Innerfidelity/over-ear/Torque%20t402v%20(on-ear%20earpads,%20red%20vent)) by Innerfidelity
 - [Torque t402v (on-ear earpads, yellow vent)](./Innerfidelity/over-ear/Torque%20t402v%20(on-ear%20earpads,%20yellow%20vent)) by Innerfidelity
 - [Toshiba HR-810 Low Gain](./Innerfidelity/over-ear/Toshiba%20HR-810%20Low%20Gain) by Innerfidelity
+- [TOZO NC2](./Rtings/in-ear/TOZO%20NC2) by Rtings
+- [TOZO NC7](./Rtings/in-ear/TOZO%20NC7) by Rtings
+- [TOZO NC9](./Rtings/in-ear/TOZO%20NC9) by Rtings
+- [TOZO T10](./Rtings/in-ear/TOZO%20T10) by Rtings
+- [TOZO T12](./Rtings/in-ear/TOZO%20T12) by Rtings
+- [TOZO T6](./Rtings/in-ear/TOZO%20T6) by Rtings
 - [Tralucent Audio 1+X plus](./crinacle/711%20in-ear/Tralucent%20Audio%201+X%20plus) by crinacle on 711
 - [Tralucent Audio 1Plus1.2](./crinacle/711%20in-ear/Tralucent%20Audio%201Plus1.2) by crinacle on 711
 - [Tralucent Audio 1Plus2.3](./crinacle/711%20in-ear/Tralucent%20Audio%201Plus2.3) by crinacle on 711
 - [Tralucent Audio 1Plus5.2](./crinacle/711%20in-ear/Tralucent%20Audio%201Plus5.2) by crinacle on 711
 - [Tralucent Audio Audio 1Plus 2.2](./crinacle/711%20in-ear/Tralucent%20Audio%20Audio%201Plus%202.2) by crinacle on 711
 - [Tranya T10](./Rtings/in-ear/Tranya%20T10) by Rtings
+- [TREBLAB X5](./Rtings/in-ear/TREBLAB%20X5) by Rtings
+- [TREBLAB Z2](./Rtings/over-ear/TREBLAB%20Z2) by Rtings
+- [TREBLAB Z7 Pro](./Rtings/over-ear/TREBLAB%20Z7%20Pro) by Rtings
+- [TRI i3](./crinacle/711%20in-ear/TRI%20i3) by crinacle on 711
+- [TRI i4](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/TRI%20i4) by crinacle on Bruel & Kjaer 4620
+- [TRI Starlight](./crinacle/711%20in-ear/TRI%20Starlight) by crinacle on 711
+- [TRI Starsea (00 setting)](./crinacle/711%20in-ear/TRI%20Starsea%20(00%20setting)) by crinacle on 711
+- [TRI Starsea (02 setting)](./crinacle/711%20in-ear/TRI%20Starsea%20(02%20setting)) by crinacle on 711
+- [TRI Starsea (10 setting)](./crinacle/711%20in-ear/TRI%20Starsea%20(10%20setting)) by crinacle on 711
+- [TRI Starsea (12 setting)](./crinacle/711%20in-ear/TRI%20Starsea%20(12%20setting)) by crinacle on 711
+- [TRI Starshine](./crinacle/711%20in-ear/TRI%20Starshine) by crinacle on 711
 - [Tripowin Cencibel](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Tripowin%20Cencibel) by crinacle on Bruel & Kjaer 4620
 - [Tripowin H1](./crinacle/GRAS%2043AG-7%20over-ear/Tripowin%20H1) by crinacle on GRAS 43AG-7
 - [Tripowin Leá](./crinacle/711%20in-ear/Tripowin%20Le%C3%A1) by crinacle on 711
@@ -4347,19 +4407,13 @@ from the same source.
 - [Tripowin TC-01](./crinacle/711%20in-ear/Tripowin%20TC-01) by crinacle on 711
 - [Tripowin TP10](./crinacle/711%20in-ear/Tripowin%20TP10) by crinacle on 711
 - [Tripowin x HBB Mele](./crinacle/711%20in-ear/Tripowin%20x%20HBB%20Mele) by crinacle on 711
+- [TRN BA5](./crinacle/711%20in-ear/TRN%20BA5) by crinacle on 711
+- [TRN BAX](./crinacle/711%20in-ear/TRN%20BAX) by crinacle on 711
+- [TRN MT1](./crinacle/711%20in-ear/TRN%20MT1) by crinacle on 711
+- [TRN TA2](./crinacle/711%20in-ear/TRN%20TA2) by crinacle on 711
+- [TRN X7](./crinacle/711%20in-ear/TRN%20X7) by crinacle on 711
 - [Truthear Hexa](./crinacle/711%20in-ear/Truthear%20Hexa) by crinacle on 711
 - [Truthear Hola](./crinacle/711%20in-ear/Truthear%20Hola) by crinacle on 711
-- [Truthear Zero](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20Zero) by crinacle on Bruel & Kjaer 4620
-- [Truthear Zero](./crinacle/711%20in-ear/Truthear%20Zero) by crinacle on 711
-- [Truthear Zero (sample 10)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%2010)) by crinacle on 711
-- [Truthear Zero (sample 2)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%202)) by crinacle on 711
-- [Truthear Zero (sample 3)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%203)) by crinacle on 711
-- [Truthear Zero (sample 4)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%204)) by crinacle on 711
-- [Truthear Zero (sample 5)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%205)) by crinacle on 711
-- [Truthear Zero (sample 6)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%206)) by crinacle on 711
-- [Truthear Zero (sample 7)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%207)) by crinacle on 711
-- [Truthear Zero (sample 8)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%208)) by crinacle on 711
-- [Truthear Zero (sample 9)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%209)) by crinacle on 711
 - [Truthear x Crinacle Zero RED](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED) by crinacle on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero RED (10 ohm resistor)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)) by crinacle on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 1)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%201)) by crinacle on Bruel & Kjaer 4620
@@ -4382,6 +4436,17 @@ from the same source.
 - [Truthear x Crinacle Zero RED (sample 7)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%207)) by crinacle on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero RED (sample 8)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%208)) by crinacle on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero RED (sample 9)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%209)) by crinacle on Bruel & Kjaer 4620
+- [Truthear Zero](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20Zero) by crinacle on Bruel & Kjaer 4620
+- [Truthear Zero](./crinacle/711%20in-ear/Truthear%20Zero) by crinacle on 711
+- [Truthear Zero (sample 10)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%2010)) by crinacle on 711
+- [Truthear Zero (sample 2)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%202)) by crinacle on 711
+- [Truthear Zero (sample 3)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%203)) by crinacle on 711
+- [Truthear Zero (sample 4)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%204)) by crinacle on 711
+- [Truthear Zero (sample 5)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%205)) by crinacle on 711
+- [Truthear Zero (sample 6)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%206)) by crinacle on 711
+- [Truthear Zero (sample 7)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%207)) by crinacle on 711
+- [Truthear Zero (sample 8)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%208)) by crinacle on 711
+- [Truthear Zero (sample 9)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%209)) by crinacle on 711
 - [Turtle Beach Battle Buds](./Rtings/in-ear/Turtle%20Beach%20Battle%20Buds) by Rtings
 - [Turtle Beach Elite 800](./Rtings/over-ear/Turtle%20Beach%20Elite%20800) by Rtings
 - [Turtle Beach Elite Atlas](./Rtings/over-ear/Turtle%20Beach%20Elite%20Atlas) by Rtings
@@ -4462,11 +4527,6 @@ from the same source.
 - [Unique Melody 3X](./crinacle/711%20in-ear/Unique%20Melody%203X) by crinacle on 711
 - [Unique Melody 3X](./Innerfidelity/in-ear/Unique%20Melody%203X) by Innerfidelity
 - [Unique Melody Legacy](./crinacle/711%20in-ear/Unique%20Melody%20Legacy) by crinacle on 711
-- [Unique Melody ME1](./crinacle/711%20in-ear/Unique%20Melody%20ME1) by crinacle on 711
-- [Unique Melody MEST (CIEM)](./crinacle/711%20in-ear/Unique%20Melody%20MEST%20(CIEM)) by crinacle on 711
-- [Unique Melody MEST (universal)](./crinacle/711%20in-ear/Unique%20Melody%20MEST%20(universal)) by crinacle on 711
-- [Unique Melody MEST Mk2](./crinacle/711%20in-ear/Unique%20Melody%20MEST%20Mk2) by crinacle on 711
-- [Unique Melody MEXT](./crinacle/711%20in-ear/Unique%20Melody%20MEXT) by crinacle on 711
 - [Unique Melody Maestro V2](./crinacle/711%20in-ear/Unique%20Melody%20Maestro%20V2) by crinacle on 711
 - [Unique Melody Martian](./crinacle/711%20in-ear/Unique%20Melody%20Martian) by crinacle on 711
 - [Unique Melody Mason V3](./crinacle/711%20in-ear/Unique%20Melody%20Mason%20V3) by crinacle on 711
@@ -4474,7 +4534,12 @@ from the same source.
 - [Unique Melody Mason V3+](./crinacle/711%20in-ear/Unique%20Melody%20Mason%20V3+) by crinacle on 711
 - [Unique Melody Maven](./crinacle/711%20in-ear/Unique%20Melody%20Maven) by crinacle on 711
 - [Unique Melody Mavis 2](./crinacle/711%20in-ear/Unique%20Melody%20Mavis%202) by crinacle on 711
+- [Unique Melody ME1](./crinacle/711%20in-ear/Unique%20Melody%20ME1) by crinacle on 711
 - [Unique Melody Merlin V2](./crinacle/711%20in-ear/Unique%20Melody%20Merlin%20V2) by crinacle on 711
+- [Unique Melody MEST (CIEM)](./crinacle/711%20in-ear/Unique%20Melody%20MEST%20(CIEM)) by crinacle on 711
+- [Unique Melody MEST (universal)](./crinacle/711%20in-ear/Unique%20Melody%20MEST%20(universal)) by crinacle on 711
+- [Unique Melody MEST Mk2](./crinacle/711%20in-ear/Unique%20Melody%20MEST%20Mk2) by crinacle on 711
+- [Unique Melody MEXT](./crinacle/711%20in-ear/Unique%20Melody%20MEXT) by crinacle on 711
 - [Unique Melody Mini MEST](./crinacle/711%20in-ear/Unique%20Melody%20Mini%20MEST) by crinacle on 711
 - [Unique Melody Miracle V2](./crinacle/711%20in-ear/Unique%20Melody%20Miracle%20V2) by crinacle on 711
 - [Unique Melody Mirage](./crinacle/711%20in-ear/Unique%20Melody%20Mirage) by crinacle on 711
@@ -4505,6 +4570,43 @@ from the same source.
 - [V-MODA XS](./Innerfidelity/over-ear/V-MODA%20XS) by Innerfidelity
 - [V-MODA XS](./Headphone.com%20Legacy/over-ear/V-MODA%20XS) by Headphone.com Legacy
 - [V-MODA Zn](./oratory1990/in-ear/V-MODA%20Zn) by oratory1990
+- [Valco VMK20](./oratory1990/over-ear/Valco%20VMK20) by oratory1990
+- [Veedix Diamond String](./crinacle/711%20in-ear/Veedix%20Diamond%20String) by crinacle on 711
+- [Velodyne vPulse](./Innerfidelity/in-ear/Velodyne%20vPulse) by Innerfidelity
+- [Venstone X1](./Rtings/in-ear/Venstone%20X1) by Rtings
+- [Venture Electronics Bonus In-Ears (BIE)](./crinacle/711%20in-ear/Venture%20Electronics%20Bonus%20In-Ears%20(BIE)) by crinacle on 711
+- [Venture Electronics Duke](./Innerfidelity/in-ear/Venture%20Electronics%20Duke) by Innerfidelity
+- [Venture Electronics Duke (CIEM)](./crinacle/711%20in-ear/Venture%20Electronics%20Duke%20(CIEM)) by crinacle on 711
+- [Venture Electronics Monk IE Biggie](./crinacle/711%20in-ear/Venture%20Electronics%20Monk%20IE%20Biggie) by crinacle on 711
+- [Venture Electronics Monk IE Smalls](./crinacle/711%20in-ear/Venture%20Electronics%20Monk%20IE%20Smalls) by crinacle on 711
+- [Venture Electronics Monk Plus](./Innerfidelity/earbud/Venture%20Electronics%20Monk%20Plus) by Innerfidelity
+- [Verum One](./oratory1990/over-ear/Verum%20One) by oratory1990
+- [Verum One](./crinacle/EARS%20+%20711%20over-ear/Verum%20One) by crinacle on EARS + 711
+- [Verum One (leather earpads)](./oratory1990/over-ear/Verum%20One%20(leather%20earpads)) by oratory1990
+- [Verum One (ZMF Ori earpads)](./oratory1990/over-ear/Verum%20One%20(ZMF%20Ori%20earpads)) by oratory1990
+- [violator73 DIY 16 BA](./crinacle/711%20in-ear/violator73%20DIY%2016%20BA) by crinacle on 711
+- [ViSang VS-K1](./Innerfidelity/in-ear/ViSang%20VS-K1) by Innerfidelity
+- [Vision Ears Elysium](./oratory1990/in-ear/Vision%20Ears%20Elysium) by oratory1990
+- [Vision Ears Elysium](./crinacle/711%20in-ear/Vision%20Ears%20Elysium) by crinacle on 711
+- [Vision Ears Erlkönig](./oratory1990/in-ear/Vision%20Ears%20Erlk%C3%B6nig) by oratory1990
+- [Vision Ears Erlkönig 1](./crinacle/711%20in-ear/Vision%20Ears%20Erlk%C3%B6nig%201) by crinacle on 711
+- [Vision Ears Erlkönig 2](./crinacle/711%20in-ear/Vision%20Ears%20Erlk%C3%B6nig%202) by crinacle on 711
+- [Vision Ears Erlkönig 3](./crinacle/711%20in-ear/Vision%20Ears%20Erlk%C3%B6nig%203) by crinacle on 711
+- [Vision Ears Erlkönig 4](./crinacle/711%20in-ear/Vision%20Ears%20Erlk%C3%B6nig%204) by crinacle on 711
+- [Vision Ears EVE 20](./crinacle/711%20in-ear/Vision%20Ears%20EVE%2020) by crinacle on 711
+- [Vision Ears EXT](./crinacle/711%20in-ear/Vision%20Ears%20EXT) by crinacle on 711
+- [Vision Ears VE3.2](./crinacle/711%20in-ear/Vision%20Ears%20VE3.2) by crinacle on 711
+- [Vision Ears VE3.2 (CIEM)](./crinacle/711%20in-ear/Vision%20Ears%20VE3.2%20(CIEM)) by crinacle on 711
+- [Vision Ears VE3.2 (sample 1)](./crinacle/711%20in-ear/Vision%20Ears%20VE3.2%20(sample%201)) by crinacle on 711
+- [Vision Ears VE3.2 (sample 2)](./crinacle/711%20in-ear/Vision%20Ears%20VE3.2%20(sample%202)) by crinacle on 711
+- [Vision Ears VE4.2](./crinacle/711%20in-ear/Vision%20Ears%20VE4.2) by crinacle on 711
+- [Vision Ears VE5](./crinacle/711%20in-ear/Vision%20Ears%20VE5) by crinacle on 711
+- [Vision Ears VE6X1](./crinacle/711%20in-ear/Vision%20Ears%20VE6X1) by crinacle on 711
+- [Vision Ears VE6X2](./crinacle/711%20in-ear/Vision%20Ears%20VE6X2) by crinacle on 711
+- [Vision Ears VE7](./crinacle/711%20in-ear/Vision%20Ears%20VE7) by crinacle on 711
+- [Vision Ears VE8](./crinacle/711%20in-ear/Vision%20Ears%20VE8) by crinacle on 711
+- [Vision Ears VE8 (CIEM)](./crinacle/711%20in-ear/Vision%20Ears%20VE8%20(CIEM)) by crinacle on 711
+- [Vivo XE800](./oratory1990/in-ear/Vivo%20XE800) by oratory1990
 - [VSonic Ares](./crinacle/711%20in-ear/VSonic%20Ares) by crinacle on 711
 - [VSonic GR01](./crinacle/711%20in-ear/VSonic%20GR01) by crinacle on 711
 - [VSonic GR02 Bass Edition](./Innerfidelity/in-ear/VSonic%20GR02%20Bass%20Edition) by Innerfidelity
@@ -4527,42 +4629,6 @@ from the same source.
 - [VSonic VSD3](./Innerfidelity/in-ear/VSonic%20VSD3) by Innerfidelity
 - [VSonic VSD3S](./crinacle/711%20in-ear/VSonic%20VSD3S) by crinacle on 711
 - [VSonic VSD3S](./Innerfidelity/in-ear/VSonic%20VSD3S) by Innerfidelity
-- [Valco VMK20](./oratory1990/over-ear/Valco%20VMK20) by oratory1990
-- [Veedix Diamond String](./crinacle/711%20in-ear/Veedix%20Diamond%20String) by crinacle on 711
-- [Velodyne vPulse](./Innerfidelity/in-ear/Velodyne%20vPulse) by Innerfidelity
-- [Venstone X1](./Rtings/in-ear/Venstone%20X1) by Rtings
-- [Venture Electronics Bonus In-Ears (BIE)](./crinacle/711%20in-ear/Venture%20Electronics%20Bonus%20In-Ears%20(BIE)) by crinacle on 711
-- [Venture Electronics Duke](./Innerfidelity/in-ear/Venture%20Electronics%20Duke) by Innerfidelity
-- [Venture Electronics Duke (CIEM)](./crinacle/711%20in-ear/Venture%20Electronics%20Duke%20(CIEM)) by crinacle on 711
-- [Venture Electronics Monk IE Biggie](./crinacle/711%20in-ear/Venture%20Electronics%20Monk%20IE%20Biggie) by crinacle on 711
-- [Venture Electronics Monk IE Smalls](./crinacle/711%20in-ear/Venture%20Electronics%20Monk%20IE%20Smalls) by crinacle on 711
-- [Venture Electronics Monk Plus](./Innerfidelity/earbud/Venture%20Electronics%20Monk%20Plus) by Innerfidelity
-- [Verum One](./oratory1990/over-ear/Verum%20One) by oratory1990
-- [Verum One](./crinacle/EARS%20+%20711%20over-ear/Verum%20One) by crinacle on EARS + 711
-- [Verum One (ZMF Ori earpads)](./oratory1990/over-ear/Verum%20One%20(ZMF%20Ori%20earpads)) by oratory1990
-- [Verum One (leather earpads)](./oratory1990/over-ear/Verum%20One%20(leather%20earpads)) by oratory1990
-- [ViSang VS-K1](./Innerfidelity/in-ear/ViSang%20VS-K1) by Innerfidelity
-- [Vision Ears EVE 20](./crinacle/711%20in-ear/Vision%20Ears%20EVE%2020) by crinacle on 711
-- [Vision Ears EXT](./crinacle/711%20in-ear/Vision%20Ears%20EXT) by crinacle on 711
-- [Vision Ears Elysium](./oratory1990/in-ear/Vision%20Ears%20Elysium) by oratory1990
-- [Vision Ears Elysium](./crinacle/711%20in-ear/Vision%20Ears%20Elysium) by crinacle on 711
-- [Vision Ears Erlkönig](./oratory1990/in-ear/Vision%20Ears%20Erlk%C3%B6nig) by oratory1990
-- [Vision Ears Erlkönig 1](./crinacle/711%20in-ear/Vision%20Ears%20Erlk%C3%B6nig%201) by crinacle on 711
-- [Vision Ears Erlkönig 2](./crinacle/711%20in-ear/Vision%20Ears%20Erlk%C3%B6nig%202) by crinacle on 711
-- [Vision Ears Erlkönig 3](./crinacle/711%20in-ear/Vision%20Ears%20Erlk%C3%B6nig%203) by crinacle on 711
-- [Vision Ears Erlkönig 4](./crinacle/711%20in-ear/Vision%20Ears%20Erlk%C3%B6nig%204) by crinacle on 711
-- [Vision Ears VE3.2](./crinacle/711%20in-ear/Vision%20Ears%20VE3.2) by crinacle on 711
-- [Vision Ears VE3.2 (CIEM)](./crinacle/711%20in-ear/Vision%20Ears%20VE3.2%20(CIEM)) by crinacle on 711
-- [Vision Ears VE3.2 (sample 1)](./crinacle/711%20in-ear/Vision%20Ears%20VE3.2%20(sample%201)) by crinacle on 711
-- [Vision Ears VE3.2 (sample 2)](./crinacle/711%20in-ear/Vision%20Ears%20VE3.2%20(sample%202)) by crinacle on 711
-- [Vision Ears VE4.2](./crinacle/711%20in-ear/Vision%20Ears%20VE4.2) by crinacle on 711
-- [Vision Ears VE5](./crinacle/711%20in-ear/Vision%20Ears%20VE5) by crinacle on 711
-- [Vision Ears VE6X1](./crinacle/711%20in-ear/Vision%20Ears%20VE6X1) by crinacle on 711
-- [Vision Ears VE6X2](./crinacle/711%20in-ear/Vision%20Ears%20VE6X2) by crinacle on 711
-- [Vision Ears VE7](./crinacle/711%20in-ear/Vision%20Ears%20VE7) by crinacle on 711
-- [Vision Ears VE8](./crinacle/711%20in-ear/Vision%20Ears%20VE8) by crinacle on 711
-- [Vision Ears VE8 (CIEM)](./crinacle/711%20in-ear/Vision%20Ears%20VE8%20(CIEM)) by crinacle on 711
-- [Vivo XE800](./oratory1990/in-ear/Vivo%20XE800) by oratory1990
 - [W+G T2](./crinacle/711%20in-ear/W+G%20T2) by crinacle on 711
 - [Walmart Three DOllar Buds](./Innerfidelity/earbud/Walmart%20Three%20DOllar%20Buds) by Innerfidelity
 - [Warbler Prelude](./crinacle/711%20in-ear/Warbler%20Prelude) by crinacle on 711
@@ -4615,17 +4681,17 @@ from the same source.
 - [Wyze Buds Pro](./Rtings/in-ear/Wyze%20Buds%20Pro) by Rtings
 - [Wyze Noise-Cancelling Headphones](./Rtings/over-ear/Wyze%20Noise-Cancelling%20Headphones) by Rtings
 - [Wyze Wireless Gaming Headset](./Rtings/over-ear/Wyze%20Wireless%20Gaming%20Headset) by Rtings
-- [XFYRO xS2](./Rtings/in-ear/XFYRO%20xS2) by Rtings
-- [XTZ EarPhone-12](./Innerfidelity/in-ear/XTZ%20EarPhone-12) by Innerfidelity
 - [Xbox Stereo Headset](./Rtings/over-ear/Xbox%20Stereo%20Headset) by Rtings
 - [Xbox Wireless Headset](./Rtings/over-ear/Xbox%20Wireless%20Headset) by Rtings
 - [Xenns Mangird Tea 2](./crinacle/711%20in-ear/Xenns%20Mangird%20Tea%202) by crinacle on 711
+- [XFYRO xS2](./Rtings/in-ear/XFYRO%20xS2) by Rtings
 - [Xiaomi Crystal](./Innerfidelity/in-ear/Xiaomi%20Crystal) by Innerfidelity
 - [Xiaomi Hybrid](./Innerfidelity/in-ear/Xiaomi%20Hybrid) by Innerfidelity
 - [Xiaomi Mi ANC](./oratory1990/in-ear/Xiaomi%20Mi%20ANC) by oratory1990
 - [Xiaomi Piston 2](./Innerfidelity/in-ear/Xiaomi%20Piston%202) by Innerfidelity
 - [Xiaomi Piston 3](./Innerfidelity/in-ear/Xiaomi%20Piston%203) by Innerfidelity
 - [Xiaomi Piston 3 Youth Edition](./Innerfidelity/in-ear/Xiaomi%20Piston%203%20Youth%20Edition) by Innerfidelity
+- [XTZ EarPhone-12](./Innerfidelity/in-ear/XTZ%20EarPhone-12) by Innerfidelity
 - [Yamaha EPH-100](./crinacle/711%20in-ear/Yamaha%20EPH-100) by crinacle on 711
 - [Yamaha HP-300](./crinacle/GRAS%2043AG-7%20over-ear/Yamaha%20HP-300) by crinacle on GRAS 43AG-7
 - [Yamaha HP-50S](./crinacle/GRAS%2043AG-7%20over-ear/Yamaha%20HP-50S) by crinacle on GRAS 43AG-7
@@ -4659,6 +4725,12 @@ from the same source.
 - [Yuin PK2](./Innerfidelity/earbud/Yuin%20PK2) by Innerfidelity
 - [Yuin PK2](./Headphone.com%20Legacy/earbud/Yuin%20PK2) by Headphone.com Legacy
 - [Yutai BAS02](./Innerfidelity/in-ear/Yutai%20BAS02) by Innerfidelity
+- [Zero Audio Carbo Basso ZH-DX210-CB](./crinacle/711%20in-ear/Zero%20Audio%20Carbo%20Basso%20ZH-DX210-CB) by crinacle on 711
+- [Zero Audio Carbo Doppio ZH-BX700](./crinacle/711%20in-ear/Zero%20Audio%20Carbo%20Doppio%20ZH-BX700) by crinacle on 711
+- [Zero Audio Carbo Singolo ZH-BS150-CS](./crinacle/711%20in-ear/Zero%20Audio%20Carbo%20Singolo%20ZH-BS150-CS) by crinacle on 711
+- [Zero Audio Carbo Tenore](./crinacle/711%20in-ear/Zero%20Audio%20Carbo%20Tenore) by crinacle on 711
+- [Zero Audio Duoza ZH-DWX10](./crinacle/711%20in-ear/Zero%20Audio%20Duoza%20ZH-DWX10) by crinacle on 711
+- [Zipbuds Pro Mic](./Innerfidelity/in-ear/Zipbuds%20Pro%20Mic) by Innerfidelity
 - [ZMF Aeolus](./crinacle/EARS%20+%20711%20over-ear/ZMF%20Aeolus) by crinacle on EARS + 711
 - [ZMF Aeolus (universal perforated earpads)](./crinacle/EARS%20+%20711%20over-ear/ZMF%20Aeolus%20(universal%20perforated%20earpads)) by crinacle on EARS + 711
 - [ZMF Aeolus (universal perforated suede earpads)](./crinacle/GRAS%2043AG-7%20over-ear/ZMF%20Aeolus%20(universal%20perforated%20suede%20earpads)) by crinacle on GRAS 43AG-7
@@ -4678,82 +4750,10 @@ from the same source.
 - [ZMF Eikon (Protein earpads)](./oratory1990/over-ear/ZMF%20Eikon%20(Protein%20earpads)) by oratory1990
 - [ZMF Verite](./oratory1990/over-ear/ZMF%20Verite) by oratory1990
 - [ZMF Verite](./crinacle/711%20in-ear/ZMF%20Verite) by crinacle on 711
-- [ZMF Verite (perforated Verite lambskin earpads)](./crinacle/GRAS%2043AG-7%20over-ear/ZMF%20Verite%20(perforated%20Verite%20lambskin%20earpads)) by crinacle on GRAS 43AG-7
 - [ZMF Verite (perforated hybid BE2 earpads)](./crinacle/GRAS%2043AG-7%20over-ear/ZMF%20Verite%20(perforated%20hybid%20BE2%20earpads)) by crinacle on GRAS 43AG-7
+- [ZMF Verite (perforated Verite lambskin earpads)](./crinacle/GRAS%2043AG-7%20over-ear/ZMF%20Verite%20(perforated%20Verite%20lambskin%20earpads)) by crinacle on GRAS 43AG-7
 - [ZMF Verite Closed](./crinacle/EARS%20+%20711%20over-ear/ZMF%20Verite%20Closed) by crinacle on EARS + 711
 - [ZMF Verite Closed (Auteur lambskin earpads)](./crinacle/GRAS%2043AG-7%20over-ear/ZMF%20Verite%20Closed%20(Auteur%20lambskin%20earpads)) by crinacle on GRAS 43AG-7
 - [ZMF Verite Closed (hybrid Universe earpads)](./crinacle/GRAS%2043AG-7%20over-ear/ZMF%20Verite%20Closed%20(hybrid%20Universe%20earpads)) by crinacle on GRAS 43AG-7
-- [Zero Audio Carbo Basso ZH-DX210-CB](./crinacle/711%20in-ear/Zero%20Audio%20Carbo%20Basso%20ZH-DX210-CB) by crinacle on 711
-- [Zero Audio Carbo Doppio ZH-BX700](./crinacle/711%20in-ear/Zero%20Audio%20Carbo%20Doppio%20ZH-BX700) by crinacle on 711
-- [Zero Audio Carbo Singolo ZH-BS150-CS](./crinacle/711%20in-ear/Zero%20Audio%20Carbo%20Singolo%20ZH-BS150-CS) by crinacle on 711
-- [Zero Audio Carbo Tenore](./crinacle/711%20in-ear/Zero%20Audio%20Carbo%20Tenore) by crinacle on 711
-- [Zero Audio Duoza ZH-DWX10](./crinacle/711%20in-ear/Zero%20Audio%20Duoza%20ZH-DWX10) by crinacle on 711
-- [Zipbuds Pro Mic](./Innerfidelity/in-ear/Zipbuds%20Pro%20Mic) by Innerfidelity
 - [Zoukbox ZDY10 Bass](./Innerfidelity/in-ear/Zoukbox%20ZDY10%20Bass) by Innerfidelity
 - [Zoukbox ZLX30](./Innerfidelity/in-ear/Zoukbox%20ZLX30) by Innerfidelity
-- [ddHiFi E2020A Janus](./crinacle/711%20in-ear/ddHiFi%20E2020A%20Janus) by crinacle on 711
-- [fineEars TSH-HR1000K](./crinacle/711%20in-ear/fineEars%20TSH-HR1000K) by crinacle on 711
-- [fix Bespoke Edition (Leneo)](./crinacle/711%20in-ear/fix%20Bespoke%20Edition%20(Leneo)) by crinacle on 711
-- [fix Event Horizon](./crinacle/711%20in-ear/fix%20Event%20Horizon) by crinacle on 711
-- [iBasso AM05](./crinacle/711%20in-ear/iBasso%20AM05) by crinacle on 711
-- [iBasso IT00](./crinacle/711%20in-ear/iBasso%20IT00) by crinacle on 711
-- [iBasso IT01](./crinacle/711%20in-ear/iBasso%20IT01) by crinacle on 711
-- [iBasso IT01 (sample 1)](./crinacle/711%20in-ear/iBasso%20IT01%20(sample%201)) by crinacle on 711
-- [iBasso IT01 (sample 2)](./crinacle/711%20in-ear/iBasso%20IT01%20(sample%202)) by crinacle on 711
-- [iBasso IT01S](./crinacle/711%20in-ear/iBasso%20IT01S) by crinacle on 711
-- [iBasso IT01X](./crinacle/711%20in-ear/iBasso%20IT01X) by crinacle on 711
-- [iBasso IT03](./crinacle/711%20in-ear/iBasso%20IT03) by crinacle on 711
-- [iBasso IT03w](./crinacle/711%20in-ear/iBasso%20IT03w) by crinacle on 711
-- [iBasso IT04](./crinacle/711%20in-ear/iBasso%20IT04) by crinacle on 711
-- [iBasso IT07](./crinacle/711%20in-ear/iBasso%20IT07) by crinacle on 711
-- [iBasso SR1](./crinacle/GRAS%2043AG-7%20over-ear/iBasso%20SR1) by crinacle on GRAS 43AG-7
-- [iBasso SR2](./crinacle/GRAS%2043AG-7%20over-ear/iBasso%20SR2) by crinacle on GRAS 43AG-7
-- [iClever BTH02](./Rtings/over-ear/iClever%20BTH02) by Rtings
-- [iClever Boostcare](./Rtings/over-ear/iClever%20Boostcare) by Rtings
-- [iHarmonix Platinum ev-Series](./Innerfidelity/in-ear/iHarmonix%20Platinum%20ev-Series) by Innerfidelity
-- [iHarmonix iHX Pro ev-Series](./Headphone.com%20Legacy/in-ear/iHarmonix%20iHX%20Pro%20ev-Series) by Headphone.com Legacy
-- [iMetal iM590](./Innerfidelity/in-ear/iMetal%20iM590) by Innerfidelity
-- [oBravo Cupid](./oratory1990/in-ear/oBravo%20Cupid) by oratory1990
-- [oBravo Cupid](./crinacle/711%20in-ear/oBravo%20Cupid) by crinacle on 711
-- [oBravo Cupid (sample 1)](./crinacle/711%20in-ear/oBravo%20Cupid%20(sample%201)) by crinacle on 711
-- [oBravo Cupid (sample 2)](./crinacle/711%20in-ear/oBravo%20Cupid%20(sample%202)) by crinacle on 711
-- [oBravo Cupid (sample 3)](./crinacle/711%20in-ear/oBravo%20Cupid%20(sample%203)) by crinacle on 711
-- [oBravo Cupid (sample 4)](./crinacle/711%20in-ear/oBravo%20Cupid%20(sample%204)) by crinacle on 711
-- [oBravo HAMT1](./Innerfidelity/over-ear/oBravo%20HAMT1) by Innerfidelity
-- [oBravo Ra 21 C](./crinacle/711%20in-ear/oBravo%20Ra%2021%20C) by crinacle on 711
-- [oBravo Ra C-Cu](./crinacle/711%20in-ear/oBravo%20Ra%20C-Cu) by crinacle on 711
-- [qdc 3SH](./crinacle/711%20in-ear/qdc%203SH) by crinacle on 711
-- [qdc 4SS](./crinacle/711%20in-ear/qdc%204SS) by crinacle on 711
-- [qdc 5SH](./crinacle/711%20in-ear/qdc%205SH) by crinacle on 711
-- [qdc 8CL (CIEM)](./crinacle/711%20in-ear/qdc%208CL%20(CIEM)) by crinacle on 711
-- [qdc 8SH](./crinacle/711%20in-ear/qdc%208SH) by crinacle on 711
-- [qdc 8SL](./crinacle/711%20in-ear/qdc%208SL) by crinacle on 711
-- [qdc 8SL (sample 1)](./crinacle/711%20in-ear/qdc%208SL%20(sample%201)) by crinacle on 711
-- [qdc 8SL (sample 2)](./crinacle/711%20in-ear/qdc%208SL%20(sample%202)) by crinacle on 711
-- [qdc 8SS](./crinacle/711%20in-ear/qdc%208SS) by crinacle on 711
-- [qdc Anole V14 (0000 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(0000%20setting)) by crinacle on 711
-- [qdc Anole V14 (0004 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(0004%20setting)) by crinacle on 711
-- [qdc Anole V14 (0030 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(0030%20setting)) by crinacle on 711
-- [qdc Anole V14 (0200 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(0200%20setting)) by crinacle on 711
-- [qdc Anole V14 (1000 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(1000%20setting)) by crinacle on 711
-- [qdc Anole V14 (1234 setting)](./crinacle/711%20in-ear/qdc%20Anole%20V14%20(1234%20setting)) by crinacle on 711
-- [qdc Anole V3](./crinacle/711%20in-ear/qdc%20Anole%20V3) by crinacle on 711
-- [qdc Anole V3 (bass)](./crinacle/711%20in-ear/qdc%20Anole%20V3%20(bass)) by crinacle on 711
-- [qdc Anole V3 (bass, treble)](./crinacle/711%20in-ear/qdc%20Anole%20V3%20(bass,%20treble)) by crinacle on 711
-- [qdc Anole V3 (treble)](./crinacle/711%20in-ear/qdc%20Anole%20V3%20(treble)) by crinacle on 711
-- [qdc Anole V6](./crinacle/711%20in-ear/qdc%20Anole%20V6) by crinacle on 711
-- [qdc Anole V6 (bass)](./crinacle/711%20in-ear/qdc%20Anole%20V6%20(bass)) by crinacle on 711
-- [qdc Anole V6 (bass, mids)](./crinacle/711%20in-ear/qdc%20Anole%20V6%20(bass,%20mids)) by crinacle on 711
-- [qdc Anole V6 (mids)](./crinacle/711%20in-ear/qdc%20Anole%20V6%20(mids)) by crinacle on 711
-- [qdc Anole VX](./crinacle/711%20in-ear/qdc%20Anole%20VX) by crinacle on 711
-- [qdc Anole VX (bass)](./crinacle/711%20in-ear/qdc%20Anole%20VX%20(bass)) by crinacle on 711
-- [qdc Anole VX (mids)](./crinacle/711%20in-ear/qdc%20Anole%20VX%20(mids)) by crinacle on 711
-- [qdc Anole VX (treble)](./crinacle/711%20in-ear/qdc%20Anole%20VX%20(treble)) by crinacle on 711
-- [qdc Anole VX All](./crinacle/711%20in-ear/qdc%20Anole%20VX%20All) by crinacle on 711
-- [qdc Dmagic](./crinacle/711%20in-ear/qdc%20Dmagic) by crinacle on 711
-- [qdc Dmagic (sample 2)](./crinacle/711%20in-ear/qdc%20Dmagic%20(sample%202)) by crinacle on 711
-- [qdc Gemini](./crinacle/711%20in-ear/qdc%20Gemini) by crinacle on 711
-- [qdc Gemini (bass)](./crinacle/711%20in-ear/qdc%20Gemini%20(bass)) by crinacle on 711
-- [qdc Neptune](./crinacle/711%20in-ear/qdc%20Neptune) by crinacle on 711
-- [qdc Uranus](./crinacle/711%20in-ear/qdc%20Uranus) by crinacle on 711
-- [violator73 DIY 16 BA](./crinacle/711%20in-ear/violator73%20DIY%2016%20BA) by crinacle on 711

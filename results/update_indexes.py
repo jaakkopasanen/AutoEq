@@ -140,7 +140,7 @@ def group_by(paths, prop):
 
 def sort_by(paths, prop):
     """Sorts paths by a property"""
-    return sorted(paths, key=lambda path: path[prop])
+    return sorted(paths, key=lambda path: path[prop].lower() if type(path[prop]) == str else path[prop])
 
 
 def sort_each_group_by(groups, prop):
@@ -172,8 +172,8 @@ def write_recommendations(paths):
             Headphone ranking based on Harman listener preference scores can be found in the
             [Headphone Ranking](./RANKING.md).
             '''
-    for name, group_paths in grouped_by_name.items():
-        s += f'\n- [{name}]({group_paths[0].url_relative_to_root})'
+    for name in sorted(list(grouped_by_name.keys()), key=lambda key: key.lower()):
+        s += f'\n- [{name}]({grouped_by_name[name][0].url_relative_to_root})'
 
     with open(DIR_PATH.joinpath('README.md'), 'w', encoding='utf-8') as f:
         f.write(re.sub('\n[ \t]+', '\n', s).strip())
@@ -188,8 +188,8 @@ def write_full_index(paths):
             from the same source.
             '''
 
-    for name, group_paths in grouped_by_name.items():
-        for path in group_paths:
+    for name in sorted(list(grouped_by_name.keys()), key=lambda key: key.lower()):
+        for path in grouped_by_name[name]:
             hp_str = f'\n- [{path.name}]({path.url_relative_to_root}) by {path.source_name}'
             if path.rig:
                 hp_str += f' on {path.rig}'
@@ -207,8 +207,8 @@ def write_source_indexes(paths):
         s = f'# {source_name} Results\n'
 
         grouped_by_name = group_by(source_paths, 'name')
-        for name, hp_paths in grouped_by_name.items():
-            for path in sort_by(hp_paths, 'priority'):
+        for name in sorted(list(grouped_by_name.keys()), key=lambda key: key.lower()):
+            for path in sort_by(grouped_by_name[name], 'priority'):
                 hp_str = f'\n- [{path.name}]({path.url_relative_to_source})'
                 if path.rig:
                     hp_str += f' on {path.rig}'
