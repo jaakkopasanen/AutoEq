@@ -6,7 +6,7 @@ headphones, these can be found in the
 Where there are measurements from multiple sources for the same headphone, only the one with the highest accuracy
 appears on this list.
 
-This list has 3591 headphone models covered, but if your headphone is missing, you can create settings for
+This list has 3596 headphone models covered, but if your headphone is missing, you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -255,6 +255,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Anker Soundcore Liberty 2 Pro](./oratory1990/in-ear/Anker%20Soundcore%20Liberty%202%20Pro)
 - [Anker Soundcore Liberty 3 Pro](./Rtings/in-ear/Anker%20Soundcore%20Liberty%203%20Pro)
 - [Anker Soundcore Liberty 4](./Rtings/in-ear/Anker%20Soundcore%20Liberty%204)
+- [Anker SoundCore Liberty 4 NC](./Rtings/in-ear/Anker%20SoundCore%20Liberty%204%20NC)
 - [Anker SoundCore Liberty Air](./Rtings/in-ear/Anker%20SoundCore%20Liberty%20Air)
 - [Anker SoundCore Liberty Air 2](./oratory1990/in-ear/Anker%20SoundCore%20Liberty%20Air%202)
 - [Anker Soundcore Liberty Air 2 Pro](./Rtings/in-ear/Anker%20Soundcore%20Liberty%20Air%202%20Pro)
@@ -274,6 +275,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Anker Soundcore Life Q35 (wired, passive)](./oratory1990/over-ear/Anker%20Soundcore%20Life%20Q35%20(wired,%20passive))
 - [Anker Soundcore Space A40](./Rtings/in-ear/Anker%20Soundcore%20Space%20A40)
 - [Anker SoundCore Space NC](./Rtings/over-ear/Anker%20SoundCore%20Space%20NC)
+- [Anker SoundCore Space One](./Rtings/over-ear/Anker%20SoundCore%20Space%20One)
 - [Anker Soundcore Space Q45](./Rtings/over-ear/Anker%20Soundcore%20Space%20Q45)
 - [Anker Soundcore Space Q45 (ANC on)](./oratory1990/over-ear/Anker%20Soundcore%20Space%20Q45%20(ANC%20on))
 - [Anker Soundcore Spirit X](./Rtings/in-ear/Anker%20Soundcore%20Spirit%20X)
@@ -822,6 +824,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Corsair HS70 Bluetooth](./Rtings/over-ear/Corsair%20HS70%20Bluetooth)
 - [Corsair HS70 Wireless](./Rtings/over-ear/Corsair%20HS70%20Wireless)
 - [Corsair HS75 XB WIRELESS](./Rtings/over-ear/Corsair%20HS75%20XB%20WIRELESS)
+- [Corsair HS80 MAX WIRELESS](./Rtings/over-ear/Corsair%20HS80%20MAX%20WIRELESS)
 - [Corsair HS80 RGB WIRELESS](./Rtings/over-ear/Corsair%20HS80%20RGB%20WIRELESS)
 - [Corsair Virtuoso RGB Wireless](./Rtings/over-ear/Corsair%20Virtuoso%20RGB%20Wireless)
 - [Corsair Virtuoso RGB Wireless SE](./Rtings/over-ear/Corsair%20Virtuoso%20RGB%20Wireless%20SE)
@@ -937,6 +940,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Denon AH-D9200](./oratory1990/over-ear/Denon%20AH-D9200)
 - [Denon AH-GC20](./Rtings/over-ear/Denon%20AH-GC20)
 - [Denon AH-NC732K](./Headphone.com%20Legacy/over-ear/Denon%20AH-NC732K)
+- [Denon PerL Pro](./Rtings/in-ear/Denon%20PerL%20Pro)
 - [Dethonray Tender I](./crinacle/711%20in-ear/Dethonray%20Tender%20I)
 - [Diskin Wireless Bluetooth](./Rtings/over-ear/Diskin%20Wireless%20Bluetooth)
 - [Dita Audio Answer](./crinacle/711%20in-ear/Dita%20Audio%20Answer)
@@ -1686,6 +1690,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [JBL Tune 660NC](./Rtings/over-ear/JBL%20Tune%20660NC)
 - [JBL TUNE 750BTNC](./Rtings/over-ear/JBL%20TUNE%20750BTNC)
 - [JBL Tune 760NC](./Rtings/over-ear/JBL%20Tune%20760NC)
+- [JBL Tune Flex](./Rtings/in-ear/JBL%20Tune%20Flex)
 - [JBL Vibe 100TWS](./Rtings/in-ear/JBL%20Vibe%20100TWS)
 - [JBL Vibe Beam](./Rtings/in-ear/JBL%20Vibe%20Beam)
 - [JH Audio 13v2 (2 o’clock)](./crinacle/711%20in-ear/JH%20Audio%2013v2%20(2%20o%E2%80%99clock))
@@ -2847,7 +2852,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Skullcandy Sesh ANC](./Rtings/in-ear/Skullcandy%20Sesh%20ANC)
 - [Skullcandy Sesh Evo](./Rtings/in-ear/Skullcandy%20Sesh%20Evo)
 - [Skullcandy SkullCrushers Max Bass](./Headphone.com%20Legacy/over-ear/Skullcandy%20SkullCrushers%20Max%20Bass)
-- [Skullcandy Smokin Buds](./Headphone.com%20Legacy/in-ear/Skullcandy%20Smokin%20Buds)
+- [Skullcandy Smokin Buds](./Rtings/in-ear/Skullcandy%20Smokin%20Buds)
 - [Skullcandy Smokin Buds- Mic'd](./Headphone.com%20Legacy/in-ear/Skullcandy%20Smokin%20Buds-%20Mic'd)
 - [Skullcandy Spoke](./Rtings/in-ear/Skullcandy%20Spoke)
 - [Skullcandy Venue](./Rtings/over-ear/Skullcandy%20Venue)

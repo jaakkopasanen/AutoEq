@@ -344,6 +344,7 @@ from the same source.
 - [Anker Soundcore Liberty 2 Pro](./Rtings/in-ear/Anker%20Soundcore%20Liberty%202%20Pro) by Rtings
 - [Anker Soundcore Liberty 3 Pro](./Rtings/in-ear/Anker%20Soundcore%20Liberty%203%20Pro) by Rtings
 - [Anker Soundcore Liberty 4](./Rtings/in-ear/Anker%20Soundcore%20Liberty%204) by Rtings
+- [Anker SoundCore Liberty 4 NC](./Rtings/in-ear/Anker%20SoundCore%20Liberty%204%20NC) by Rtings
 - [Anker SoundCore Liberty Air](./Rtings/in-ear/Anker%20SoundCore%20Liberty%20Air) by Rtings
 - [Anker SoundCore Liberty Air 2](./oratory1990/in-ear/Anker%20SoundCore%20Liberty%20Air%202) by oratory1990
 - [Anker SoundCore Liberty Air 2](./crinacle/711%20in-ear/Anker%20SoundCore%20Liberty%20Air%202) by crinacle on 711
@@ -365,6 +366,7 @@ from the same source.
 - [Anker Soundcore Life Q35 (wired, passive)](./oratory1990/over-ear/Anker%20Soundcore%20Life%20Q35%20(wired,%20passive)) by oratory1990
 - [Anker Soundcore Space A40](./Rtings/in-ear/Anker%20Soundcore%20Space%20A40) by Rtings
 - [Anker SoundCore Space NC](./Rtings/over-ear/Anker%20SoundCore%20Space%20NC) by Rtings
+- [Anker SoundCore Space One](./Rtings/over-ear/Anker%20SoundCore%20Space%20One) by Rtings
 - [Anker Soundcore Space Q45](./Rtings/over-ear/Anker%20Soundcore%20Space%20Q45) by Rtings
 - [Anker Soundcore Space Q45 (ANC on)](./oratory1990/over-ear/Anker%20Soundcore%20Space%20Q45%20(ANC%20on)) by oratory1990
 - [Anker Soundcore Spirit X](./Rtings/in-ear/Anker%20Soundcore%20Spirit%20X) by Rtings
@@ -1136,6 +1138,7 @@ from the same source.
 - [Corsair HS70 Bluetooth](./Rtings/over-ear/Corsair%20HS70%20Bluetooth) by Rtings
 - [Corsair HS70 Wireless](./Rtings/over-ear/Corsair%20HS70%20Wireless) by Rtings
 - [Corsair HS75 XB WIRELESS](./Rtings/over-ear/Corsair%20HS75%20XB%20WIRELESS) by Rtings
+- [Corsair HS80 MAX WIRELESS](./Rtings/over-ear/Corsair%20HS80%20MAX%20WIRELESS) by Rtings
 - [Corsair HS80 RGB WIRELESS](./Rtings/over-ear/Corsair%20HS80%20RGB%20WIRELESS) by Rtings
 - [Corsair Virtuoso RGB Wireless](./Rtings/over-ear/Corsair%20Virtuoso%20RGB%20Wireless) by Rtings
 - [Corsair Virtuoso RGB Wireless SE](./Rtings/over-ear/Corsair%20Virtuoso%20RGB%20Wireless%20SE) by Rtings
@@ -1275,6 +1278,7 @@ from the same source.
 - [Denon AH-D9200](./crinacle/GRAS%2043AG-7%20over-ear/Denon%20AH-D9200) by crinacle on GRAS 43AG-7
 - [Denon AH-GC20](./Rtings/over-ear/Denon%20AH-GC20) by Rtings
 - [Denon AH-NC732K](./Headphone.com%20Legacy/over-ear/Denon%20AH-NC732K) by Headphone.com Legacy
+- [Denon PerL Pro](./Rtings/in-ear/Denon%20PerL%20Pro) by Rtings
 - [Dethonray Tender I](./crinacle/711%20in-ear/Dethonray%20Tender%20I) by crinacle on 711
 - [Diskin Wireless Bluetooth](./Rtings/over-ear/Diskin%20Wireless%20Bluetooth) by Rtings
 - [Dita Audio Answer](./crinacle/711%20in-ear/Dita%20Audio%20Answer) by crinacle on 711
@@ -2238,6 +2242,7 @@ from the same source.
 - [JBL Tune 660NC](./Rtings/over-ear/JBL%20Tune%20660NC) by Rtings
 - [JBL TUNE 750BTNC](./Rtings/over-ear/JBL%20TUNE%20750BTNC) by Rtings
 - [JBL Tune 760NC](./Rtings/over-ear/JBL%20Tune%20760NC) by Rtings
+- [JBL Tune Flex](./Rtings/in-ear/JBL%20Tune%20Flex) by Rtings
 - [JBL Vibe 100TWS](./Rtings/in-ear/JBL%20Vibe%20100TWS) by Rtings
 - [JBL Vibe Beam](./Rtings/in-ear/JBL%20Vibe%20Beam) by Rtings
 - [JH Audio 13v2 (2 o’clock)](./crinacle/711%20in-ear/JH%20Audio%2013v2%20(2%20o%E2%80%99clock)) by crinacle on 711
@@ -3794,6 +3799,7 @@ from the same source.
 - [Skullcandy Sesh ANC](./Rtings/in-ear/Skullcandy%20Sesh%20ANC) by Rtings
 - [Skullcandy Sesh Evo](./Rtings/in-ear/Skullcandy%20Sesh%20Evo) by Rtings
 - [Skullcandy SkullCrushers Max Bass](./Headphone.com%20Legacy/over-ear/Skullcandy%20SkullCrushers%20Max%20Bass) by Headphone.com Legacy
+- [Skullcandy Smokin Buds](./Rtings/in-ear/Skullcandy%20Smokin%20Buds) by Rtings
 - [Skullcandy Smokin Buds](./Headphone.com%20Legacy/in-ear/Skullcandy%20Smokin%20Buds) by Headphone.com Legacy
 - [Skullcandy Smokin Buds- Mic'd](./Headphone.com%20Legacy/in-ear/Skullcandy%20Smokin%20Buds-%20Mic'd) by Headphone.com Legacy
 - [Skullcandy Spoke](./Rtings/in-ear/Skullcandy%20Spoke) by Rtings
