@@ -35,9 +35,6 @@ def cli_args():
                             help='Will produce parametric eq settings if this parameter exists, no value needed.')
     arg_parser.add_argument('--fixed-band-eq', action='store_true',
                             help='Will produce fixed band eq settings if this parameter exists, no value needed.')
-    arg_parser.add_argument('--rockbox', action='store_true',
-                            help='Will produce a Rockbox .cfg file with 10 band eq settings if this parameter exists,'
-                                 'no value needed.')
     arg_parser.add_argument('--ten-band-eq', action='store_true',
                             help='Shortcut parameter for activating standard ten band eq optimization.')
     arg_parser.add_argument('--parametric-eq-config', type=str,

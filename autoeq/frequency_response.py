@@ -329,20 +329,6 @@ class FrequencyResponse:
             f.write(s)
 
     @staticmethod
-    def write_rockbox_10_band_fixed_eq(file_path, peq):
-        """Writes Rockbox 10 band eq settings to a file."""
-        with open(file_path, 'w', encoding='utf-8') as f:
-            s = f'eq enabled: on\neq precut: {round(peq.max_gain, 1) * 10:.0f}\n'
-            for i, filt in enumerate(peq.filters):
-                if i == 0:
-                    s += f'eq low shelf filter: {filt.fc:.0f}, {round(filt.q, 1) * 10:.0f}, {round(filt.gain, 1) * 10:.0f}\n'
-                elif i == len(peq.filters) - 1:
-                    s += f'eq high shelf filter: {filt.fc:.0f}, {round(filt.q, 1) * 10:.0f}, {round(filt.gain, 1) * 10:.0f}\n'
-                else:
-                    s += f'eq peak filter {i}: {filt.fc:.0f}, {round(filt.q, 1) * 10:.0f}, {round(filt.gain, 1) * 10:.0f}\n'
-            f.write(s)
-
-    @staticmethod
     def _split_path(path):
         """Splits file system path into components."""
         folders = []

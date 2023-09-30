@@ -148,6 +148,39 @@ export default [
     instructions: 'Configure frequency, gain and quality (Q) for each band manually on Equalizer tab'
   },
   {
+    label: 'Rockbox', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
+    uiConfig: {
+      bw: false, showDownload: true, showFsControl: true,
+      filterNames: { LOW_SHELF: 'Low Shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High Shelf', PREAMP: 'Pre-cut' },
+    },
+    instructions: 'Download the file, move it to the device and load it by clicking "Browse EQ Presets"',
+    fileFormatter: (preamp, filters) => {
+      const filterTypes = {
+        'LOW_SHELF': 'low shelf',
+        'PEAKING': 'peak',
+        'HIGH_SHELF': 'high shelf'
+      };
+      const lines = [
+        'eq enabled: on',
+        `eq precut: ${Math.max(0, Math.round(preamp * -10)).toFixed(0)}`,
+      ];
+      for (const [i, filt] of filters?.entries()) {
+        let line = `eq ${filterTypes[filt.type]} filter`;
+        if (filt.type === 'PEAKING') {
+          line += ` ${i}`
+        }
+        line += `: ${Math.round(filt.fc).toFixed(0)}, `;
+        line += `${Math.round(filt.q * 10).toFixed(0)}, `;
+        line += `${Math.round(filt.gain * 10).toFixed(0)}`;
+        lines.push(line);
+      }
+      return lines.join('\n');
+    },
+    fileName: (name) => {
+      return `${name} Rockbox.cfg`
+    }
+  },
+  {
     label: 'SoundSource', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
     uiConfig: {
       bw: false, showDownload: true, showFsControl: true,
