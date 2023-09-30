@@ -43,7 +43,10 @@ const EqAppParametricEq = (props) => {
         ? props.fileFormatter(props.parametricEq?.preamp, props.parametricEq?.filters)
         : equalizerApoParametricEqString(props.parametricEq?.preamp, props.parametricEq?.filters),
       'text/plain',
-      `${props.selectedMeasurement} ParametricEq.txt`);
+      props.fileName
+        ? props.fileName(props.selectedMeasurement)
+        : `${props.selectedMeasurement} ParametricEq.txt`
+      );
   };
 
   const filterNames = !!props.uiConfig?.filterNames ? props.uiConfig.filterNames : {

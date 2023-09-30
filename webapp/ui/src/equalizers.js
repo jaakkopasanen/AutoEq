@@ -174,7 +174,7 @@ export default [
   {
     label: 'USB Audio Player PRO', type: 'parametric', config: 'USB_AUDIO_PLAYER_PRO',
     uiConfig: {
-      bw: false, showDownload: false, showFsControl: false,
+      bw: false, showDownload: false, showFsControl: true,
       filterNames: { LOW_SHELF: 'Low shelf', PEAKING: 'Analog bell', HIGH_SHELF: 'High shelf', PREAMP: 'Preamp' },
       columnNames: { fc: 'Frequency (Hz)', gain: 'Gain (dB)', q: 'Q factor' }
     },
@@ -184,6 +184,36 @@ export default [
     label: 'Viper4Android',
     type: 'convolution',
     instructions: 'Download the file to "/ViPER4Android/Kernel" on your phone. Then select the file under "Convolver" in the app.'
+  },
+  {
+    label: 'Voicemeeter', type: 'parametric', config: '4_PEAKING_WITH_SHELVES',
+    uiConfig: {
+      bw: false, showDownload: true, showFsControl: true,
+    },
+    instructions: 'Download the file and import it to Voicemeeter by right clicking the top bar and selecting "Load EQ Settings"',
+    fileFormatter: (preamp, filters) => {
+      const filterTypes = {
+        'LOW_SHELF': '5',
+        'PEAKING': '0',
+        'HIGH_SHELF': '6'
+      };
+      const lines = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        '<VBAudioVoicemeeterBUSEQConfig>',
+        '<VoiceMeeterBUSEQ>'
+      ];
+      for (let channel = 1; channel < 9; ++channel) {
+        for (const [i, filt] of filters?.entries()) {
+          lines.push(`<Bus index="1" channel="${channel}" cell="${i+1}" EQon="1" EQtype="${filterTypes[filt.type]}" dblevel="${filt.gain.toFixed(2)}" freq="${filt.fc.toFixed(2)}" Q="${filt.q.toFixed(2)}" />`);
+        }
+      }
+      lines.push('</VoiceMeeterBUSEQ>');
+      lines.push('</VBAudioVoicemeeterBUSEQConfig>');
+      return lines.join('\n');
+    },
+    fileName: (name) => {
+      return `${name} Voicemeeter.xml`
+    }
   },
   {
     label: 'Wavelet',

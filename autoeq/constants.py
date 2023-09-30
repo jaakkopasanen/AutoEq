@@ -101,6 +101,20 @@ PEQ_CONFIGS = {
             'q': 0.7
         }] + [{'type': 'PEAKING'}] * 8
     },
+    '4_PEAKING_WITH_SHELVES': {
+        'optimizer': {
+            'min_std': 0.008
+        },
+        'filters': [{
+            'type': 'LOW_SHELF',
+            'fc': 105.0,
+            'q': 0.7
+        }, {
+            'type': 'HIGH_SHELF',
+            'fc': 10000.0,
+            'q': 0.7
+        }] + [{'type': 'PEAKING'}] * 4
+    },
     '4_PEAKING_WITH_LOW_SHELF': {
         'optimizer': {
             'max_f': 10000.0,
