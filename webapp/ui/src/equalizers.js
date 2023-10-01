@@ -49,6 +49,34 @@ export default [
       </div>
   },
   {
+    label: 'Ears (Chrome Extension)',
+    type: 'parametric',
+    config: {
+      optimizer: { minF: null, maxF: 10000, maxTime: 0.5, minChangeRate: null, minStd: null },
+      filters: [
+        { type: 'LOW_SHELF', fc: null, minFc: 105, maxFc: 105, gain: null, minGain: null, maxGain: null, q: null, minQ: 0.7, maxQ: 0.7 },
+        ...(Array(9).fill(
+          { type: 'PEAKING', fc: null, minFc: null, maxFc: null, gain: null, minGain: null, maxGain: null, q: null, minQ: null, maxQ: null }
+        )),
+        { type: 'HIGH_SHELF', fc: null, minFc: 10000, maxFc: 10000, gain: null, minGain: null, maxGain: null, q: null, minQ: 0.7, maxQ: 0.7 },
+      ]
+    },
+    uiConfig: { showDownload: true, showFsControl: true },
+    fileFormatter: (preamp, filters, name) => {
+      return JSON.stringify({
+        [name]: {
+          frequencies: filters.map(filter => filter.fc),
+          gains: filters.map(filter => filter.gain),
+          qs: filters.map(filter => filter.q)
+        }
+      }, null, 2);
+    },
+    fileName: (name) => {
+      return `${name} Ears.json`
+    },
+    instructions: 'Download file, open Ears, click "Import Presets", select file and drag Volume bar to match Preamp.'
+  },
+  {
     label: 'EasyEffects',
     type: 'parametric',
     config: '8_PEAKING_WITH_SHELVES',

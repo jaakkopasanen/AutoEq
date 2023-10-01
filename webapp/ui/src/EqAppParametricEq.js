@@ -40,8 +40,8 @@ const EqAppParametricEq = (props) => {
   const onDownloadClick = () => {
     downloadAsFile(
       props.fileFormatter
-        ? props.fileFormatter(props.parametricEq?.preamp, props.parametricEq?.filters)
-        : equalizerApoParametricEqString(props.parametricEq?.preamp, props.parametricEq?.filters),
+        ? props.fileFormatter(props.parametricEq?.preamp, props.parametricEq?.filters, props.selectedMeasurement)
+        : equalizerApoParametricEqString(props.parametricEq?.preamp, props.parametricEq?.filters,),
       'text/plain',
       props.fileName
         ? props.fileName(props.selectedMeasurement)
