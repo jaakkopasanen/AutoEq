@@ -143,9 +143,7 @@ def rename_groups(databases=DBS):
 
                 new_path = re.sub(re.escape(name), new_name, path)
                 print(f'    Moving "{os.path.relpath(path, DIR_PATH)}" to "{os.path.relpath(new_path, DIR_PATH)}"')
-                os.makedirs(os.path.split(new_path)[0], exist_ok=True)
                 shutil.move(path, new_path)
-                os.rmdir(os.path.join(path, os.pardir))
                 matches = name_index.find(true_name=new_name)
                 if not matches:
                     d = path

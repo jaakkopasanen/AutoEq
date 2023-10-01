@@ -5,6 +5,7 @@ false_name	true_name	form
 10 Flat	Sound Linear Fitz 10 Flat (sample 1)	in-ear
 10 Flat S2	Sound Linear Fitz 10 Flat (sample 2)	in-ear
 12 Classics V2	Meze 12 Classics V2	in-ear
+16Cosmos	CHIKYU-SEKAI 16 Cosmos	in-ear
 18+		ignore
 18Plus C	Ultimate Ears UE18+ (CIEM)	in-ear
 18Plus S3	Ultimate Ears UE18+ (sample 3)	in-ear
@@ -21,6 +22,7 @@ false_name	true_name	form
 2HT	Unique Melody 2HT Terminator	in-ear
 2S	TFZ 2S	in-ear
 333	FitEar Private 333	in-ear
+3D Terminator	Unique Melody 3D Terminator	in-ear
 3DD-Ti	Unique Melody 3DD-Ti	in-ear
 3DD-Ti Open	Unique Melody 3DD-Ti Open	in-ear
 3SH	qdc 3SH	in-ear
@@ -195,6 +197,17 @@ Aonic 5 Bright	Shure Aonic 5 (bright filter)	in-ear
 Aonic 5 Neutral	Shure Aonic 5 (default filter)	in-ear
 Aonic 5 Warm	Shure Aonic 5 (warm filter)	in-ear
 Aonic 50	Shure AONIC 50	over-ear
+APP2 Pinna 51	Apple AirPods Pro 2 (51dB + ANC)	in-ear
+APP2 Pinna 56	Apple AirPods Pro 2 (56dB + ANC)	in-ear
+APP2 Pinna 60	Apple AirPods Pro 2 (60dB + ANC)	in-ear
+APP2 Pinna 65	Apple AirPods Pro 2 (65dB + ANC)	in-ear
+APP2 Pinna 69	Apple AirPods Pro 2 (69dB + ANC)	in-ear
+APP2 Pinna 73	Apple AirPods Pro 2 (73dB + ANC)	in-ear
+APP2 Pinna 77	Apple AirPods Pro 2 (77dB + ANC)	in-ear
+APP2 Pinna 81	Apple AirPods Pro 2 (81dB + ANC)	in-ear
+APP2 Pinna 84	Apple AirPods Pro 2 (84dB + ANC)	in-ear
+APP2 Pinna 88	Apple AirPods Pro 2 (88dB + ANC)	in-ear
+APP2 Pinna 91	Apple AirPods Pro 2 (91dB + ANC)	in-ear
 AQ3	Audiosense AQ3	in-ear
 AQ4	Audiosense AQ4	in-ear
 AQ7	Audiosense AQ7	in-ear
@@ -226,6 +239,7 @@ Atrium (BE2 perforated lambskin pads)	ZMF Atrium (perforated lambskin BE2 earpad
 Atticus	ZMF Atticus	over-ear
 Atticus (Eikon suede)	ZMF Atticus (Eikon suede earpads)	over-ear
 Aurora	Symphonium Audio Aurora	in-ear
+Aurora Flipears	FlipEars Aurora	in-ear
 Aurum	Craft Ears Aurum	in-ear
 Aurvana Trio	Creative Aurvana Trio	in-ear
 Australis	Aurorus Australis	ignore
@@ -287,8 +301,8 @@ Big Bus	Big Bus Earbuds	in-ear
 Biggie	Venture Electronics Monk IE Biggie	in-ear
 Billets	MUNITIO Billets	in-ear
 Billie Jean	JH Audio Billie Jean	in-ear
-BL-MAX	BLON BL-Max	in-ear
 BL-Max	BLON BL-Max	in-ear
+BL-MAX	BLON BL-Max	in-ear
 BL01	BLON BL-01	in-ear
 BL03	BLON BL-03 (sample 1)	in-ear
 BL03 S3	BLON BL-03 (sample 3)	in-ear
@@ -302,6 +316,7 @@ Blessing	Moondrop Blessing	in-ear
 Blessing 2	Moondrop Blessing 2	in-ear
 Blessing 2 S2	Moondrop Blessing 2 (sample 2)	in-ear
 Blessing 3	Moondrop Blessing 3	in-ear
+Blessing 3 S1	Moondrop Blessing 3	in-ear
 Borealis	Aurorus Borealis	over-ear
 BR5 Mk2	Rose BR5 Mk2	in-ear
 Brass	Dita Audio Brass	in-ear
@@ -328,6 +343,7 @@ C6 C	Craft Ears Craft SIX (CIEM)	in-ear
 Cal1H	Altiat Cal.1H	over-ear
 Canary	AAW Canary (sample 1)	in-ear
 Canary S2	AAW Canary (sample 2)	in-ear
+Canon		ignore
 Canon 000	Yanyin Canon (000 setting)	in-ear
 Canon 003	Yanyin Canon (003 setting)	in-ear
 Canon 020	Yanyin Canon (020 setting)	in-ear
@@ -343,7 +359,10 @@ Ceberus		ignore
 Celestee	Focal Celestee	over-ear
 Cencibel	Tripowin Cencibel	in-ear
 Ceres	Shozy Ceres	in-ear
+CF-IEM Stella	ORB CF-IEM Stella	in-ear
+Chorus	FAudio Chorus	in-ear
 Chu	Moondrop Chu	in-ear
+CK2000Ti	Audio-Technica ATH-CK2000Ti	in-ear
 CK3TW	Audio-Technica ATH-CK3TW	in-ear
 CK5TW	Audio-Technica ATH-CKS5TW	in-ear
 CKR7TW	Audio-Technica ATH-CKR7TW	in-ear
@@ -393,7 +412,12 @@ Cupid S2	oBravo Cupid (sample 2)	in-ear
 Cupid S3	oBravo Cupid (sample 3)	in-ear
 Cupid S4	oBravo Cupid (sample 4)	in-ear
 Cuprum	Craft Ears Cuprum	in-ear
+CW-U77	Canal Works CW-U77	in-ear
+CW-U91	Canal Works CW-U91	in-ear
 CX9	Pioneer SE-CX9	in-ear
+D13 Gold	Shuoer D13 (gold nozzle)	in-ear
+D13 Silver	Shuoer D13 (silver nozzle)	in-ear
+D6		ignore
 D8000	Final Audio D8000	over-ear
 D8000 Pro	Final Audio D8000 Pro Edition	over-ear
 Daiso	Daiso $2 earphones	in-ear
@@ -499,6 +523,7 @@ E2	Anthem Five E2 (CIEM)	in-ear
 E2000	Final Audio E2000 (sample 1)	in-ear
 E2000 S2	Final Audio E2000 (sample 2)	in-ear
 E25	Raycon E25	in-ear
+E3		ignore
 E3000 S2	Final Audio E3000 (sample 2)	in-ear
 E3000 S3	Final Audio E3000 (sample 3)	in-ear
 E4	Anthem Five E4 (CIEM)	in-ear
@@ -513,6 +538,9 @@ E900	Onkyo E900	in-ear
 E900 Pro	EKSA E900 Pro	over-ear
 EA3	Jade Audio EA3	in-ear
 EAH-AZ70W	Technics EAH-AZ70W	in-ear
+Ear 1 Pre update		ignore
+Ear 2 Post update		ignore
+Ear 2 Pre update		ignore
 Earfun x Oluv Free Pro	EarFun Free Pro (Oluv Edition)	in-ear
 Early	Aroma Audio Early	in-ear
 Echo	Tanchjim Echo	in-ear
@@ -532,6 +560,7 @@ Eikon	ZMF Eikon	over-ear
 Eikon (Eikon lambskin)	ZMF Eikon (Eikon lambskin earpads)	over-ear
 EJ07	Shuoer EJ07	in-ear
 EJ07M	Shuoer EJ07	in-ear
+EJ07M Lava	Shuoer EJ07M Kinda Lava Edition	in-ear
 EK3	Simgot Audio EK3 (off-off)	in-ear
 EK3 1	Simgot Audio EK3 (off-on)	in-ear
 EK3 2	Simgot Audio EK3 (on-off)	in-ear
@@ -717,6 +746,7 @@ FW01	JVC HA-FW01	in-ear
 FW02	JVC HA-FW02	in-ear
 FW03	JVC HA-FW03	in-ear
 FW10000	JVC HA-FW10000	in-ear
+FW1500	JVC HA-FW1500	in-ear
 FX99X	JVC HA-FX99X-B	in-ear
 FXA9	Fender FXA9	in-ear
 G PRO X	Logitech G Pro X	over-ear
@@ -835,6 +865,8 @@ HE5SE	HIFIMAN HE5se	over-ear
 HE6 (6-screw) (Velour)	HIFIMAN HE6 (6-screw, velour earpads)	over-ear
 HE6se	HIFIMAN HE6se	over-ear
 HE6se V2	HIFIMAN HE6se V2	over-ear
+Heartmirror	HZSOUND Heart Mirror	in-ear
+Heartmirror Pro	HZSOUND Heart Mirror Pro	in-ear
 Heaven 4	Final Audio Heaven 4	in-ear
 Heaven 7	Final Audio Heaven 7	in-ear
 Heaven 8	Final Audio Heaven 8	in-ear
@@ -853,6 +885,7 @@ Hibiki SE	Shozy x AAW Hibiki SE	in-ear
 Hibiscus	FAAEAL Hibiscus	in-ear
 Hive	Nectar Hive	over-ear
 HL4300	Horluchs HL4300	in-ear
+Hodur	Kinera Hodur	in-ear
 Hola	Truthear Hola	in-ear
 Holocene	Campfire Audio Holocene	in-ear
 Homunculus	Metal Magic Research Homunculus	in-ear
@@ -862,6 +895,7 @@ Horizon	AZLA Horizon	in-ear
 HP-3	Klipsch Heritage HP-3	over-ear
 HP-300	Yamaha HP-300	over-ear
 HP-50S	Yamaha HP-50S	over-ear
+HP-TWF41	Radius HP-TWF41	in-ear
 HP3	Klipsch HP3	over-ear
 HS1001	Acoustune HS1001	in-ear
 HS1003	Acoustune HS1003	in-ear
@@ -879,6 +913,8 @@ HS1670	Acoustune HS1670	in-ear
 HS1677	Acoustune HS1677	in-ear
 HS1695	Acoustune HS1695	in-ear
 HS1697	Acoustune HS1697	in-ear
+HS1750Cu	Acoustune HS1750	in-ear
+HS1790Ti	Acoustune HS1790	in-ear
 HS2000MX	Acoustune HS2000MX	in-ear
 Hua Jiang 2	JQ Hua Jiang (sample 2)	in-ear
 Hyper S 12	Fearless Audio HyperS 12	in-ear
@@ -902,9 +938,10 @@ IE800	Sennheiser IE 800	in-ear
 IE800S	Sennheiser IE 800 S	in-ear
 IE80S	Sennheiser IE 80 S (min)	in-ear
 IE80S Half	Sennheiser IE 80 S (half)	in-ear
-IE80S Max	Sennheiser IE 80 S (max)	in-ear
 IE80S max	Sennheiser IE 80 S (max)	in-ear
+IE80S Max	Sennheiser IE 80 S (max)	in-ear
 IE900	Sennheiser IE 900	in-ear
+IER-M7Q	Sony IER-M7 Q	in-ear
 IER-Z1R	Sony IER-Z1R	in-ear
 IEX1	Audio-Technica ATH-IEX1	in-ear
 iGE	Grado iGE	in-ear
@@ -912,13 +949,14 @@ IM01	Audio-Technica ATH-IM01	in-ear
 IM02	Audio-Technica ATH-IM02	in-ear
 IM03	Audio-Technica ATH-IM03	in-ear
 In Air	INAIR M360	in-ear
+Infinity Mk1	Rhapsodio Infinity Mk1	in-ear
 Infinity Mk2	Rhapsodio Infinity Mk2	in-ear
 IO	Campfire Audio IO (sample 1)	in-ear
 IO S2	Campfire Audio IO (sample 2)	in-ear
 ION-4 Vietnam	Soranik ION-4 (Vietnamese domestic market edition)	in-ear
 Isabellae	Oriolus Isabellae	in-ear
-iSine 10	Audeze iSINE 10 (sample 1)	in-ear
 iSIne 10	Audeze iSINE 10	in-ear
+iSine 10	Audeze iSINE 10 (sample 1)	in-ear
 iSine 10 S2	Audeze iSINE 10 (sample 2)	in-ear
 iSine 20	Audeze iSINE 20	in-ear
 iSine 20 Cipher	Audeze iSINE 20 (Cipher cable)	in-ear
@@ -935,8 +973,8 @@ Jade II	HIFIMAN Jade II	over-ear
 Janus	ddHiFi E2020A Janus	in-ear
 Jasper	AUNE Jasper	in-ear
 Jazz	Jomo Audio Jazz	in-ear
-JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
 Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
+JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
 JH13v2 Max	JH Audio 13v2 (max)	in-ear
 JH13v2 Min	JH Audio 13v2 (min)	in-ear
 JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	in-ear
@@ -964,11 +1002,14 @@ K7XX	AKG K7XX	over-ear
 K812	AKG K812	over-ear
 K872 Pro	AKG K872 Pro	over-ear
 K92	AKG K92	over-ear
+Kadence	Noble Audio Kadence	in-ear
 Kaguya	SeeAudio Kaguya	in-ear
+Kai	TRI Kai	in-ear
 Kanas Pro	Moondrop Kanas Pro	in-ear
 Katana	Noble Audio Katana	in-ear
 Kato Brass	Moondrop Kato (brass nozzle)	in-ear
 Kato Steel	Moondrop Kato (steel nozzle)	in-ear
+Keyagu	Kojo Technology KJB-01 Keyagu	in-ear
 Khan	Noble Audio Khan (sample 1)	in-ear
 Khan S2	Noble Audio Khan (sample 1)	in-ear
 Kicker	Aurisonics Kicker	in-ear
@@ -1003,10 +1044,12 @@ KL-Unknown Min Treble	Kumitate Lab Unknown (min treble)	ignore
 KPH30i	Koss KPH30i	over-ear
 KPH40	Koss KPH40	over-ear
 Kraken V3 Pro	Razer Kraken V3 Pro	over-ear
+Krypton-5	Fir Audio Krypton 5	in-ear
 KS3	Alpha & Delta KS3	in-ear
 KSC75	Koss KSC75	over-ear
 KSE1200	Shure KSE1200 (sample 1)	in-ear
 KSE1200 S2	Shure KSE1200 (sample 2)	in-ear
+Kublai Khan	Noble Audio Kublai Khan	in-ear
 KXXS	Moondrop KXXS	in-ear
 Kylin	Whizzer A-HE03 Kylin	in-ear
 L3 00	ThieAudio Legacy 3 (00 setting)	in-ear
@@ -1145,12 +1188,15 @@ M9	Sony IER-M9 (sample 1)	in-ear
 M9 S2	Sony IER-M9 (sample 2)	in-ear
 M9 S2 Filterless	Sony IER-M9 (no filter)	in-ear
 MA750	RHA MA750	in-ear
+Macbeth Ti	Unique Melody Macbeth Ti	in-ear
+Mach 80	Westone MACH 80	in-ear
 MAD16	Ambient Acoustics MAD16	in-ear
 MAD24	Ambient Acoustics MAD24	in-ear
 Maestro FF	Fatfreq Maestro	in-ear
 Maestro Mini	Fatfreq Maestro Mini	in-ear
 Maestro SE	Fatfreq Maestro SE	in-ear
 Maestro V2	Unique Melody Maestro V2	in-ear
+Mahina	Yanyin Mahina	in-ear
 Make 2	Final Audio Make 2	in-ear
 Mammoth	Campfire Audio Mammoth	in-ear
 Martian	Unique Melody Martian	in-ear
@@ -1160,6 +1206,7 @@ Mason V3 Ported	Unique Melody Mason V3 Ported	in-ear
 Mason V3+	Unique Melody Mason V3+	in-ear
 Massdrop Plus	Massdrop Plus Universal IEM	in-ear
 Maven	Unique Melody Maven	in-ear
+Maverick II	Unique Melody Maverick II	in-ear
 Mavis 2	Unique Melody Mavis 2	in-ear
 MB01 (ANC off) (Wired)	Montblanc MB 01 (wired, ANC off)	over-ear
 MB01 (ANC on) (Wireless)	Montblanc MB 01 (wireless, ANC)	over-ear
@@ -1233,6 +1280,7 @@ Mira	ARC Mira	in-ear
 Miracle V2	Unique Melody Miracle V2	in-ear
 Mirage	Symphonium Audio Mirage	in-ear
 Mirage UM	Unique Melody Mirage	in-ear
+Miu	SeeAudio MIU	in-ear
 Mk2	Oriolus Japan Mk2 (sample 1)	in-ear
 Mk2 S2	Oriolus Japan Mk2 (sample 2)	in-ear
 Mk2 S3	Oriolus Japan Mk2 (sample 3)	in-ear
@@ -1324,11 +1372,12 @@ NDH 20	Neumann NDH20	over-ear
 NDH20	Neumann NDH20	over-ear
 Nekocake	Moondrop Nekocake	in-ear
 Nekocake Acht Acht Limited	Moondrop Nekocake	in-ear
-Nemesis	Empire Ears Nemesis	in-ear
 nemesis	Empire Ears Nemesis	in-ear
+Nemesis	Empire Ears Nemesis	in-ear
 Neo	SeeAudio Neo	in-ear
 Neo BG	Shozy & Neo BG	in-ear
 Neon	KBEar Neon	in-ear
+Neon-4	Fir Audio Neon 4	in-ear
 Neptune	qdc Neptune	in-ear
 nerva X	HYLA Nerva X	in-ear
 New HANA	Tanchjim HANA 2021	in-ear
@@ -1347,6 +1396,7 @@ NM2 Plus	NF Audio NM2+	in-ear
 NM2+	NF Audio NM2+	in-ear
 No.3	TFZ No.3	in-ear
 Norma	Flicker Ear Norma	in-ear
+Norn	Kinera Norn	in-ear
 NRA	CCA NRA	in-ear
 NS-U1 All Off	Lear NS-U1 (all Off)	in-ear
 NS-U1 NS On	Lear NS-U1 (NS on)	in-ear
@@ -1376,6 +1426,8 @@ OH500	Oriveti OH500	in-ear
 OH7	IKKO OH7	in-ear
 Ola	Tanchjim Ola	in-ear
 Oldskool RPM (ZnC LE)	Fischer Audio Oldskool RPM 33 1-3 (Zeppelin & Co Limited Edition)	over-ear
+Olina	Tripowin Olina	in-ear
+Olina SE	Tripowin Olina SE	in-ear
 Oluv x EarFun Free	EarFun Free	in-ear
 Omega Spark	Fischer Audio Omega Spark	in-ear
 Opera	NXEars Opera	in-ear
@@ -1390,6 +1442,7 @@ P1 (Front vent sealed)	Tin HiFi P1 (front vent sealed)	in-ear
 P1 Max	Tin HiFi P1 Max	in-ear
 P1 Plus	Tin HiFi P1 Plus	in-ear
 P2	Tin HiFi P2	in-ear
+P2 Plus CE	Tin HiFi P2 Plus Commemorative Edition	in-ear
 P3	Jomo Audio P3	in-ear
 Panda	Massdrop Panda (active)	over-ear
 Panda Passive	Massdrop Panda (passive)	over-ear
@@ -1399,6 +1452,7 @@ PC38X	Sennheiser PC38X	over-ear
 PD1	HarmonicDyne PD1	in-ear
 Peacock	Sendy Peacock	over-ear
 Percivali	Oriolus Percivali	in-ear
+Perpetua	Dita Audio Perpetua	in-ear
 PFE	Phonak PFE 232	in-ear
 Phantom	Empire Ears Phantom	in-ear
 Phantom CE	Empire Ears Phantom (CIEM) emulated (sample 1)	ignore
@@ -1410,6 +1464,7 @@ Phoenix	Sivga Audio Phoenix	over-ear
 Pink Lady	Queen of Audio Pink Lady (sample 1)	in-ear
 Pink Lady S2	Queen of Audio Pink Lady (sample 2)	in-ear
 Piston 1More	1MORE Piston	in-ear
+PLA13	CCA PLA13	in-ear
 Planamic	MEE Audio Planamic	in-ear
 Plus	Massdrop Plus Universal IEM (sample 1)	in-ear
 Plus S2	Massdrop Plus Universal IEM (sample 2)	in-ear
@@ -1423,6 +1478,8 @@ Pollux	ARC Pollux	in-ear
 Pollux S2	ARC Pollux	in-ear
 Portapro	Koss Porta Pro	over-ear
 Poseidon	Elysian Poseidon	in-ear
+Power	Muse HiFi Power	in-ear
+PR1	KZ PR1	in-ear
 Prelude	Warbler Prelude (sample 1)	in-ear
 Prelude S2	Warbler Prelude (sample 2)	in-ear
 Prestige	ThieAudio Prestige	in-ear
@@ -1430,6 +1487,7 @@ Primo8	NuForce Primo 8	in-ear
 Prism	Tanchjim Prism	in-ear
 Pristine	HUM Pristine Reference	in-ear
 PRO DJ100	Koss PRO DJ100	over-ear
+Pro X50	Westone Pro X50	in-ear
 Pro330v2	Custom Art Pro330v2	in-ear
 Project 71	Dita Audio Project 71	in-ear
 Prophile8	InEar ProPhile-8	in-ear
@@ -1445,6 +1503,7 @@ PX	Bowers & Wilkins PX	over-ear
 QC35 II (Active)	Bose QuietComfort 35 II	over-ear
 QC35 II (Passive)	Bose QuietComfort 35 II (passive)	over-ear
 Qinglong	KBEAR Qinglong	in-ear
+QKZ x HBB	QKZ x HBB	in-ear
 QM50	Queen of Audio QM50	in-ear
 Quad	1MORE Quad Driver	in-ear
 Quad 2.0	Unknown Custom Quad 2.0	in-ear
@@ -1505,9 +1564,15 @@ RAH Silver-red	IMR Acoustics RAH (red nozzle, silver filter)	in-ear
 Rai Penta	Meze Rai Penta	in-ear
 Rai Solo	Meze Rai Solo	in-ear
 RE2000	HIFIMAN RE2000	in-ear
+RE2000Pro	HIFIMAN RE2000 Pro	in-ear
 RE400	HIFIMAN RE400	in-ear
 RE800	HIFIMAN RE800	in-ear
+Red Proto		ignore
+Red V2.1		ignore
+Red V2.2		ignore
+Red V3-0b		ignore
 Red V3.0b		ignore
+Red V3.0b 75ohm		ignore
 Red V3.1		ignore
 Red V3.1 10ohm		ignore
 Reference	HUM Hong Kong Reference	in-ear
@@ -1552,6 +1617,8 @@ SA05	1Custom SA05	in-ear
 SA5000 (AliEx pads)		ignore
 SA6	DUNU SA6 (default mode)	in-ear
 SA6 On	DUNU SA6 (atmospheric Immersion mode)	in-ear
+SA6 Ultra Off	DUNU SA6 Ultra (default mode)	in-ear
+SA6 Ultra On	DUNU SA6 Ultra (atmospheric immersion mode)	in-ear
 Sage	Noble Audio Sage	in-ear
 Sakura 71	Dita Audio Sakura 71	in-ear
 Sakura FF	Fatfreq Sakura	in-ear
@@ -1605,6 +1672,7 @@ Singolo	Zero Audio Carbo Singolo ZH-BS150-CS	in-ear
 Siren	Aya Siren	in-ear
 Sirius C S2	Fidue A91 Sirius (CIEM)	in-ear
 SK3	Soranik SK3	in-ear
+Skuld	Kinera Skuld	in-ear
 Sleeper	Advanced Sleeper	in-ear
 Smalls	Venture Electronics Monk IE Smalls	in-ear
 Solaris	Campfire Audio Solaris (sample 1)	in-ear
@@ -1717,6 +1785,7 @@ T2 WG	W+G T2	in-ear
 T20i	RHA T20i	in-ear
 T3	Tin HiFi T3	in-ear
 T3 Plus	Tin HiFi T3 Plus	in-ear
+T3-02	TAGO STUDIO T3-02	in-ear
 T4	Tin HiFi T4	in-ear
 T5	QCY T5	in-ear
 T5 (3rd Gen)	Beyerdynamic T5 3rd Generation	over-ear
@@ -1730,11 +1799,13 @@ T8iE Mk1	Astell & Kern T8iE Mk1 (sample 1)	in-ear
 T8iE Mk1 S2	Astell & Kern T8iE Mk1 (sample 2)	in-ear
 T9iE	Astell & Kern T9iE	in-ear
 TA2	TRN TA2	in-ear
+Talos Off	DUNU Talos (BA off)	in-ear
+Talos On	DUNU Talos (BA on)	in-ear
 Tango	Jomo Audio Tango	in-ear
 Tanya	Tanchjim Tanya	in-ear
 Tanya RM	Tanchjim Tanya	in-ear
-Taobao 3 Driver	Taobao 3 driver	in-ear
 Taobao 3 driver	Taobao 3 driver	in-ear
+Taobao 3 Driver	Taobao 3 driver	in-ear
 Taobao 6 Driver	Taobao 6 driver	in-ear
 Tape	Shuoer Tape	in-ear
 Tape Pro	Shuoer Tape Pro	in-ear
@@ -1769,6 +1840,7 @@ Thror Bog Oak	Kennerton Thror Bog Oak	over-ear
 Thummim	Metal Magic Research Thummim	in-ear
 Ti	Periodic Audio Ti	in-ear
 Ti Galaxy	TFZ Ti Galaxy	in-ear
+Tiger qdc	qdc Tiger	in-ear
 Timeless	7Hz Timeless	in-ear
 Timeless AE	7Hz Timeless AE	in-ear
 Titan	FitEar Titan (sample 1)	in-ear
@@ -1819,6 +1891,7 @@ Ttromso	Tipsy TTROMSO	in-ear
 Tumuri	SATOLEX Tumuri DH303-A1	in-ear
 Turii	SoftEars Turii	in-ear
 Tux 5	Noble Audio Tux 5	in-ear
+Twilight Softears	SoftEars Twilight	in-ear
 Twins Bass	Aroma Audio Twins (bass)	in-ear
 Twins Treble	Aroma Audio Twins (treble)	in-ear
 TWS1	Edifier TWS1	in-ear
@@ -1884,6 +1957,7 @@ Valkyrie Mk2	Empire Ears Valkyrie Mk2	in-ear
 Vantage	Empire Ears Vantage	in-ear
 Variations	Moondrop Variations	in-ear
 VC02	VSonic VC02	in-ear
+VE2	Vision Ears VE2	in-ear
 VE3.2	Vision Ears VE3.2 (sample 1)	in-ear
 VE3.2 C	Vision Ears VE3.2 (CIEM)	in-ear
 VE32	Vision Ears VE3.2 (sample 2)	in-ear
@@ -1942,6 +2016,7 @@ VS7	VSonic VS7	in-ear
 VSD1S	VSonic VSD1S	in-ear
 VSD2S	VSonic VSD2S	in-ear
 VSD3S	VSonic VSD3S	in-ear
+Vulkan	DUNU Vulkan	in-ear
 VxV	Fir Audio VxV	in-ear
 W10	Westone W10	in-ear
 W20	Westone W20	in-ear
@@ -1982,6 +2057,7 @@ XBA-A3 S3	Sony XBA-A3 (sample 3)	in-ear
 XBA-H3	Sony XBA-H3	in-ear
 XBA300	Sony XBA-300	in-ear
 Xelento	Beyerdynamic Xelento	in-ear
+Xenon-6	Fir Audio Xenon 6	in-ear
 Xenon-6 C	Fir Audio Xenon 6 (CIEM)	in-ear
 Yao	Aroma Audio Yao	in-ear
 YB04	Cayin YB04	in-ear
@@ -1999,7 +2075,8 @@ Z5	Sony XBA-Z5	in-ear
 ZAS	KZ ZAS	in-ear
 ZAX	KZ ZAX	in-ear
 Zen	DUNU Zen	in-ear
-Zen Pro	DUNU Zen Pro	in-ear
+Zen Pro	DUNU Zen Pro (sample 1)	in-ear
+Zen Pro S2	DUNU Zen Pro (sample 2)	in-ear
 Zenith Black	IMR Acoustics Zenith (black)	in-ear
 Zenith Blue	IMR Acoustics Zenith (blue)	in-ear
 Zenith Gold	IMR Acoustics Zenith (gold)	in-ear
@@ -2009,6 +2086,7 @@ Zero	BGVP ZERO	in-ear
 Zero Salnotes	7Hz Salnotes Zero (sample 1)	in-ear
 Zero Salnotes S2	7Hz Salnotes Zero (sample 2)	in-ear
 Zero Salnotes S3	7Hz Salnotes Zero (sample 3)	in-ear
+Zero Tanch	Tanchjim Zero	in-ear
 Zero Tanchjim	Tanchjim Zero	in-ear
 Zero TE	Truthear Zero	in-ear
 Zero TE S10	Truthear Zero (sample 10)	in-ear
@@ -2040,6 +2118,7 @@ ZeroRed S8	Truthear x Crinacle Zero RED (sample 8)	in-ear
 ZeroRed S8 10ohm	Truthear x Crinacle Zero RED (10 ohm resistor) (sample 8)	in-ear
 ZeroRed S9	Truthear x Crinacle Zero RED (sample 9)	in-ear
 ZeroRed S9 10ohm	Truthear x Crinacle Zero RED (10 ohm resistor) (sample 9)	in-ear
+Zetian Wu	TANGZU Zetian Wu	in-ear
 Zeus	Empire Ears Zeus	in-ear
 Zeus-R	Empire Ears Zeus-R	in-ear
 Zeus-XIV	Empire Ears Zeus-XIV	in-ear
@@ -2051,6 +2130,7 @@ Zodiac 100	Tansio Mirai TSMR-12 (on-off-off)	in-ear
 Zodiac 103	Tansio Mirai TSMR-12 (on-off-on)	in-ear
 Zodiac 120	Tansio Mirai TSMR-12 (on-on-off)	in-ear
 Zodiac 123	Tansio Mirai TSMR-12 (on-on-on)	in-ear
+Zone		ignore
 ZS10 Pro	KZ ZS10 Pro	in-ear
 ZS3	KZ ZS3	in-ear
 ZS3 S2	KZ ZS3	in-ear
