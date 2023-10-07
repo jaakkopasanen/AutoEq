@@ -13,7 +13,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.0 dB or -5.4 dB, respectivel
 |   5 | Peaking   |      8641 | 2.39 |         6   |
 |   6 | Peaking   |        32 | 2.12 |        -0.5 |
 |   7 | Peaking   |        64 | 1.73 |         0.5 |
-|   8 | Peaking   |      5033 | 6    |         2.6 |
+|   8 | Peaking   |      5033 | 6    |         2.5 |
 |   9 | Peaking   |      5922 | 6    |        -2.3 |
 |  10 | HighShelf |     10000 | 0.7  |        -1.9 |
 
@@ -24,14 +24,14 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.6 dB
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |        -0.5 |
 |   2 | Peaking |        62 | 1.41 |         0.7 |
-|   3 | Peaking |       125 | 1.41 |        -1.4 |
+|   3 | Peaking |       125 | 1.41 |        -1.5 |
 |   4 | Peaking |       250 | 1.41 |        -1.9 |
 |   5 | Peaking |       500 | 1.41 |         0.3 |
 |   6 | Peaking |      1000 | 1.41 |         1.4 |
 |   7 | Peaking |      2000 | 1.41 |        -1.3 |
 |   8 | Peaking |      4000 | 1.41 |        -1.8 |
 |   9 | Peaking |      8000 | 1.41 |         5   |
-|  10 | Peaking |     16000 | 1.41 |        -4.3 |
+|  10 | Peaking |     16000 | 1.41 |        -4.4 |
 
 ### Graphs
 ![](./Bose%20SoundLink%20Around-Ear%20II.png)

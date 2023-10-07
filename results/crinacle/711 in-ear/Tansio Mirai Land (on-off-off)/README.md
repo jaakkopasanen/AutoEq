@@ -30,8 +30,8 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-8.6 dB
 |   6 | Peaking |      1000 | 1.41 |         2.8 |
 |   7 | Peaking |      2000 | 1.41 |        -0.9 |
 |   8 | Peaking |      4000 | 1.41 |         0.4 |
-|   9 | Peaking |      8000 | 1.41 |        -2.7 |
-|  10 | Peaking |     16000 | 1.41 |         8.7 |
+|   9 | Peaking |      8000 | 1.41 |        -2.6 |
+|  10 | Peaking |     16000 | 1.41 |         8.6 |
 
 ### Graphs
 ![](./Tansio%20Mirai%20Land%20(on-off-off).png)

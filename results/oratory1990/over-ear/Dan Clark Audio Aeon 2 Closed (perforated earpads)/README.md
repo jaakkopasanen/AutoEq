@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -3.2 dB or -3.2 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         3.5 |
-|   2 | Peaking   |       106 | 0.87 |        -7.4 |
-|   3 | Peaking   |       169 | 1.17 |         4.2 |
-|   4 | Peaking   |       864 | 1.55 |         1.7 |
-|   5 | Peaking   |      5895 | 5.41 |        -3.9 |
-|   6 | Peaking   |        41 | 3.9  |        -1   |
-|   7 | Peaking   |        60 | 2.26 |         0.5 |
-|   8 | Peaking   |      3143 | 4.91 |        -1.4 |
-|   9 | Peaking   |      4002 | 5.24 |         2.3 |
+|   2 | Peaking   |       106 | 0.87 |        -7.5 |
+|   3 | Peaking   |       169 | 1.17 |         4.3 |
+|   4 | Peaking   |       866 | 1.55 |         1.7 |
+|   5 | Peaking   |      5890 | 5.42 |        -3.9 |
+|   6 | Peaking   |        41 | 3.85 |        -1   |
+|   7 | Peaking   |        57 | 2.27 |         0.4 |
+|   8 | Peaking   |      3143 | 4.89 |        -1.5 |
+|   9 | Peaking   |      4014 | 5.27 |         2.2 |
 |  10 | HighShelf |     10000 | 0.7  |        -6.7 |
 
 ### Fixed Band EQs
@@ -22,13 +22,13 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.5 dB
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         3.7 |
+|   1 | Peaking |        31 | 1.41 |         3.6 |
 |   2 | Peaking |        62 | 1.41 |        -0.7 |
 |   3 | Peaking |       125 | 1.41 |        -3.1 |
 |   4 | Peaking |       250 | 1.41 |         1.5 |
 |   5 | Peaking |       500 | 1.41 |        -0.2 |
-|   6 | Peaking |      1000 | 1.41 |         1.8 |
-|   7 | Peaking |      2000 | 1.41 |        -0.5 |
+|   6 | Peaking |      1000 | 1.41 |         1.7 |
+|   7 | Peaking |      2000 | 1.41 |        -0.4 |
 |   8 | Peaking |      4000 | 1.41 |         0   |
 |   9 | Peaking |      8000 | 1.41 |        -0.2 |
 |  10 | Peaking |     16000 | 1.41 |       -12   |

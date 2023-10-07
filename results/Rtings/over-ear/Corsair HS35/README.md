@@ -13,7 +13,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.7 dB or -6.5 dB, respectivel
 |   5 | Peaking   |      4909 | 2.38 |        -6   |
 |   6 | Peaking   |       238 | 2.76 |        -1.7 |
 |   7 | Peaking   |       430 | 3.1  |         5.4 |
-|   8 | Peaking   |       578 | 3.53 |        -3.5 |
+|   8 | Peaking   |       578 | 3.54 |        -3.5 |
 |   9 | Peaking   |      2877 | 6    |        -3.5 |
 |  10 | HighShelf |     10000 | 0.7  |        -0.9 |
 
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-5.7 dB
 |   7 | Peaking |      2000 | 1.41 |         5.5 |
 |   8 | Peaking |      4000 | 1.41 |        -5.1 |
 |   9 | Peaking |      8000 | 1.41 |         0.1 |
-|  10 | Peaking |     16000 | 1.41 |        -2   |
+|  10 | Peaking |     16000 | 1.41 |        -1.9 |
 
 ### Graphs
 ![](./Corsair%20HS35.png)

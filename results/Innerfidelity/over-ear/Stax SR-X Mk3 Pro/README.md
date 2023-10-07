@@ -13,7 +13,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.9 dB or -5.9 dB, respectivel
 |   5 | Peaking   |      6349 | 3.42 |        -4.1 |
 |   6 | Peaking   |        85 | 2.22 |        -0.5 |
 |   7 | Peaking   |      1118 | 2.25 |        -1.2 |
-|   8 | Peaking   |      1552 | 3.39 |         0.7 |
+|   8 | Peaking   |      1551 | 3.39 |         0.7 |
 |   9 | Peaking   |      4883 | 6    |         1.1 |
 |  10 | HighShelf |     10000 | 0.7  |        -2.4 |
 
@@ -28,10 +28,10 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB
 |   4 | Peaking |       250 | 1.41 |        -0.1 |
 |   5 | Peaking |       500 | 1.41 |         1.1 |
 |   6 | Peaking |      1000 | 1.41 |        -1.6 |
-|   7 | Peaking |      2000 | 1.41 |         3.4 |
+|   7 | Peaking |      2000 | 1.41 |         3.5 |
 |   8 | Peaking |      4000 | 1.41 |        -3.7 |
 |   9 | Peaking |      8000 | 1.41 |        -1.3 |
-|  10 | Peaking |     16000 | 1.41 |        -4.7 |
+|  10 | Peaking |     16000 | 1.41 |        -4.8 |
 
 ### Graphs
 ![](./Stax%20SR-X%20Mk3%20Pro.png)

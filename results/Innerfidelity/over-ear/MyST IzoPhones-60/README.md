@@ -8,13 +8,13 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.6 dB or -6.6 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.7 |
 |   2 | Peaking   |        94 | 1.31 |        -4.5 |
-|   3 | Peaking   |       428 | 1.31 |         1.6 |
-|   4 | Peaking   |      1223 | 1.87 |        -1.4 |
-|   5 | Peaking   |      2222 | 2.47 |         4.7 |
-|   6 | Peaking   |        53 | 4.38 |         1.1 |
-|   7 | Peaking   |       184 | 2.21 |        -0.5 |
-|   8 | Peaking   |      4266 | 6    |        -2.6 |
-|   9 | Peaking   |      6935 | 5.96 |        -4.3 |
+|   3 | Peaking   |       427 | 1.31 |         1.6 |
+|   4 | Peaking   |      1224 | 1.87 |        -1.4 |
+|   5 | Peaking   |      2221 | 2.47 |         4.7 |
+|   6 | Peaking   |        53 | 4.36 |         1.1 |
+|   7 | Peaking   |       187 | 2.2  |        -0.5 |
+|   8 | Peaking   |      4264 | 6    |        -2.7 |
+|   9 | Peaking   |      6936 | 5.96 |        -4.3 |
 |  10 | HighShelf |     10000 | 0.7  |        -6.2 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-8.0 dB
 |   7 | Peaking |      2000 | 1.41 |         3.9 |
 |   8 | Peaking |      4000 | 1.41 |        -0.4 |
 |   9 | Peaking |      8000 | 1.41 |        -2.9 |
-|  10 | Peaking |     16000 | 1.41 |       -10.7 |
+|  10 | Peaking |     16000 | 1.41 |       -10.6 |
 
 ### Graphs
 ![](./MyST%20IzoPhones-60.png)

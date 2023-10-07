@@ -7,31 +7,31 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.1 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |        -3.3 |
-|   2 | Peaking   |       166 | 1.07 |        -4.4 |
-|   3 | Peaking   |      3336 | 1.02 |        -5.4 |
-|   4 | Peaking   |      5559 | 1.52 |         6   |
-|   5 | Peaking   |      7904 | 1.29 |         4.3 |
-|   6 | Peaking   |       298 | 1.95 |        -1.1 |
-|   7 | Peaking   |       846 | 1.21 |         3.1 |
-|   8 | Peaking   |      2197 | 2.36 |        -2.9 |
-|   9 | Peaking   |      2998 | 4.34 |         2.4 |
-|  10 | HighShelf |     10000 | 0.7  |        -2.7 |
+|   2 | Peaking   |       165 | 1.05 |        -4.4 |
+|   3 | Peaking   |      3342 | 1.02 |        -5.5 |
+|   4 | Peaking   |      5551 | 1.52 |         6   |
+|   5 | Peaking   |      7872 | 1.3  |         4.3 |
+|   6 | Peaking   |       294 | 2    |        -1.1 |
+|   7 | Peaking   |       856 | 1.16 |         3.1 |
+|   8 | Peaking   |      2197 | 2.25 |        -2.9 |
+|   9 | Peaking   |      2991 | 4.4  |         2.5 |
+|  10 | HighShelf |     10000 | 0.7  |        -2.6 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.2 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |        -3.5 |
-|   2 | Peaking |        62 | 1.41 |        -2.1 |
+|   1 | Peaking |        31 | 1.41 |        -3.6 |
+|   2 | Peaking |        62 | 1.41 |        -2.2 |
 |   3 | Peaking |       125 | 1.41 |        -4   |
-|   4 | Peaking |       250 | 1.41 |        -3.3 |
-|   5 | Peaking |       500 | 1.41 |         1.1 |
-|   6 | Peaking |      1000 | 1.41 |         3.1 |
-|   7 | Peaking |      2000 | 1.41 |        -4.5 |
+|   4 | Peaking |       250 | 1.41 |        -3.5 |
+|   5 | Peaking |       500 | 1.41 |         1.2 |
+|   6 | Peaking |      1000 | 1.41 |         3   |
+|   7 | Peaking |      2000 | 1.41 |        -4.4 |
 |   8 | Peaking |      4000 | 1.41 |        -0.9 |
-|   9 | Peaking |      8000 | 1.41 |         7.8 |
-|  10 | Peaking |     16000 | 1.41 |        -6.6 |
+|   9 | Peaking |      8000 | 1.41 |         7.7 |
+|  10 | Peaking |     16000 | 1.41 |        -6.5 |
 
 ### Graphs
 ![](./KZ%20ES4.png)

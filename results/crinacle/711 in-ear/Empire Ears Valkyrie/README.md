@@ -11,10 +11,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -4.6 dB or -4.6 dB, respectivel
 |   3 | Peaking   |       796 | 0.84 |         5.2 |
 |   4 | Peaking   |      1683 | 1.24 |        -3.7 |
 |   5 | Peaking   |      4995 | 4.73 |        -4.4 |
-|   6 | Peaking   |        70 | 1.99 |         1.4 |
+|   6 | Peaking   |        70 | 1.98 |         1.4 |
 |   7 | Peaking   |       130 | 2.41 |        -0.6 |
-|   8 | Peaking   |      6363 | 6    |         1.8 |
-|   9 | Peaking   |      7894 | 3.02 |        -1.2 |
+|   8 | Peaking   |      6365 | 6    |         1.8 |
+|   9 | Peaking   |      7898 | 3.02 |        -1.2 |
 |  10 | HighShelf |     10000 | 0.7  |        -0.4 |
 
 ### Fixed Band EQs
@@ -24,14 +24,14 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.9 dB
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |        -4.2 |
 |   2 | Peaking |        62 | 1.41 |        -0.3 |
-|   3 | Peaking |       125 | 1.41 |        -1.7 |
-|   4 | Peaking |       250 | 1.41 |        -1.1 |
-|   5 | Peaking |       500 | 1.41 |         3.6 |
-|   6 | Peaking |      1000 | 1.41 |         3   |
-|   7 | Peaking |      2000 | 1.41 |        -2.5 |
+|   3 | Peaking |       125 | 1.41 |        -1.6 |
+|   4 | Peaking |       250 | 1.41 |        -1.2 |
+|   5 | Peaking |       500 | 1.41 |         3.7 |
+|   6 | Peaking |      1000 | 1.41 |         2.9 |
+|   7 | Peaking |      2000 | 1.41 |        -2.4 |
 |   8 | Peaking |      4000 | 1.41 |        -1.1 |
-|   9 | Peaking |      8000 | 1.41 |        -1.1 |
-|  10 | Peaking |     16000 | 1.41 |         0.2 |
+|   9 | Peaking |      8000 | 1.41 |        -0.9 |
+|  10 | Peaking |     16000 | 1.41 |         0   |
 
 ### Graphs
 ![](./Empire%20Ears%20Valkyrie.png)

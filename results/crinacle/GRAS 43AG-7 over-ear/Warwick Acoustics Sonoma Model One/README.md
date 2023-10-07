@@ -8,17 +8,17 @@ You can use filters 1-5 or 1-10. Apply preamp of -3.8 dB or -3.6 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         2.9 |
 |   2 | Peaking   |       995 | 0.96 |        -3   |
-|   3 | Peaking   |      1925 | 2.22 |         2.8 |
-|   4 | Peaking   |      6788 | 5.51 |         3.5 |
-|   5 | Peaking   |      9537 | 2.9  |         2.1 |
+|   3 | Peaking   |      1926 | 2.22 |         2.9 |
+|   4 | Peaking   |      6788 | 5.52 |         3.5 |
+|   5 | Peaking   |      9535 | 2.9  |         2.1 |
 |   6 | Peaking   |        74 | 3.18 |        -2.3 |
 |   7 | Peaking   |       404 | 1.92 |         0.4 |
-|   8 | Peaking   |       482 | 4.94 |         1.2 |
-|   9 | Peaking   |       580 | 4.17 |        -1.2 |
+|   8 | Peaking   |       482 | 4.93 |         1.2 |
+|   9 | Peaking   |       580 | 4.18 |        -1.2 |
 |  10 | HighShelf |     10000 | 0.7  |        -2   |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-4.9 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.8 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.9 dB
 |   7 | Peaking |      2000 | 1.41 |         2   |
 |   8 | Peaking |      4000 | 1.41 |        -0.9 |
 |   9 | Peaking |      8000 | 1.41 |         2.8 |
-|  10 | Peaking |     16000 | 1.41 |        -4.6 |
+|  10 | Peaking |     16000 | 1.41 |        -4.3 |
 
 ### Graphs
 ![](./Warwick%20Acoustics%20Sonoma%20Model%20One.png)

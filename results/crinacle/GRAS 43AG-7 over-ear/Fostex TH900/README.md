@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-5.4 dB
 |   7 | Peaking |      2000 | 1.41 |         5.7 |
 |   8 | Peaking |      4000 | 1.41 |        -1   |
 |   9 | Peaking |      8000 | 1.41 |        -0.5 |
-|  10 | Peaking |     16000 | 1.41 |        -7.6 |
+|  10 | Peaking |     16000 | 1.41 |        -7.7 |
 
 ### Graphs
 ![](./Fostex%20TH900.png)

@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.9 dB or -6.3 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.9 dB or -6.8 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         4.6 |
 |   2 | Peaking   |       216 | 0.45 |        -5.1 |
-|   3 | Peaking   |      2198 | 1.08 |         2.8 |
-|   4 | Peaking   |      6677 | 1.28 |         5.6 |
-|   5 | Peaking   |      9359 | 4.43 |         4.2 |
-|   6 | Peaking   |      3433 | 4.68 |         1.3 |
-|   7 | Peaking   |      4293 | 5.88 |        -2   |
-|   8 | Peaking   |      7020 | 5.99 |        -1.7 |
-|   9 | Peaking   |      9345 | 5.85 |        -3.2 |
-|  10 | HighShelf |     10000 | 0.7  |         6.2 |
+|   3 | Peaking   |      2171 | 1.11 |         2.8 |
+|   4 | Peaking   |      6781 | 1.2  |         5.7 |
+|   5 | Peaking   |      9409 | 4.89 |         3.9 |
+|   6 | Peaking   |      3390 | 4.59 |         1.2 |
+|   7 | Peaking   |      4316 | 5.81 |        -1.9 |
+|   8 | Peaking   |      8895 | 5.98 |        -1.3 |
+|   9 | Peaking   |      9497 | 5.99 |        -2.4 |
+|  10 | HighShelf |     10000 | 0.7  |         6   |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-11.4 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-11.7 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         4.5 |
-|   2 | Peaking |        62 | 1.41 |         2.4 |
+|   1 | Peaking |        31 | 1.41 |         4.7 |
+|   2 | Peaking |        62 | 1.41 |         2.3 |
 |   3 | Peaking |       125 | 1.41 |        -2.3 |
-|   4 | Peaking |       250 | 1.41 |        -5   |
-|   5 | Peaking |       500 | 1.41 |        -2.4 |
-|   6 | Peaking |      1000 | 1.41 |        -0.3 |
+|   4 | Peaking |       250 | 1.41 |        -4.9 |
+|   5 | Peaking |       500 | 1.41 |        -2.3 |
+|   6 | Peaking |      1000 | 1.41 |        -0.2 |
 |   7 | Peaking |      2000 | 1.41 |         2.6 |
 |   8 | Peaking |      4000 | 1.41 |         1.6 |
-|   9 | Peaking |      8000 | 1.41 |         5.9 |
-|  10 | Peaking |     16000 | 1.41 |        11   |
+|   9 | Peaking |      8000 | 1.41 |         6   |
+|  10 | Peaking |     16000 | 1.41 |        11.3 |
 
 ### Graphs
 ![](./Vision%20Ears%20VE6X1.png)

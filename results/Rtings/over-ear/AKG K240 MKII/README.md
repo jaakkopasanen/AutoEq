@@ -6,15 +6,15 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.2 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         5.9 |
-|   2 | Peaking   |        55 | 0.91 |         2.5 |
-|   3 | Peaking   |       138 | 0.51 |        -5.4 |
-|   4 | Peaking   |      1628 | 2.31 |         4.3 |
-|   5 | Peaking   |      4437 | 1.72 |         3.7 |
-|   6 | Peaking   |       113 | 1.93 |         0.2 |
-|   7 | Peaking   |      2725 | 4.71 |        -2.3 |
-|   8 | Peaking   |      3514 | 6    |         2.1 |
-|   9 | Peaking   |      9606 | 2.74 |        -2.1 |
+|   1 | LowShelf  |       105 | 0.7  |         6.4 |
+|   2 | Peaking   |        57 | 1.06 |         2.7 |
+|   3 | Peaking   |       129 | 0.47 |        -5.5 |
+|   4 | Peaking   |      1625 | 2.31 |         4.2 |
+|   5 | Peaking   |      4427 | 1.71 |         3.8 |
+|   6 | Peaking   |       164 | 1.83 |         0.1 |
+|   7 | Peaking   |      2731 | 4.69 |        -2.3 |
+|   8 | Peaking   |      3510 | 6    |         2.1 |
+|   9 | Peaking   |      9596 | 2.72 |        -2.2 |
 |  10 | HighShelf |     10000 | 0.7  |         2.4 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.6 dB
 |   7 | Peaking |      2000 | 1.41 |         2   |
 |   8 | Peaking |      4000 | 1.41 |         3   |
 |   9 | Peaking |      8000 | 1.41 |        -0.2 |
-|  10 | Peaking |     16000 | 1.41 |         4.2 |
+|  10 | Peaking |     16000 | 1.41 |         4.1 |
 
 ### Graphs
 ![](./AKG%20K240%20MKII.png)

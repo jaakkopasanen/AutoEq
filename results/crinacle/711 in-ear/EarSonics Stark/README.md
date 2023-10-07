@@ -11,10 +11,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.0 dB or -6.2 dB, respectivel
 |   3 | Peaking   |      1457 | 1.25 |        -7.5 |
 |   4 | Peaking   |      2590 | 1.34 |         5.5 |
 |   5 | Peaking   |     10000 | 0.18 |         4   |
-|   6 | Peaking   |       667 | 3.27 |        -0.7 |
+|   6 | Peaking   |       666 | 3.27 |        -0.7 |
 |   7 | Peaking   |      5151 | 4.63 |         2.4 |
 |   8 | Peaking   |      6260 | 5.79 |        -5.3 |
-|   9 | Peaking   |      9180 | 1.98 |         3.4 |
+|   9 | Peaking   |      9172 | 1.97 |         3.4 |
 |  10 | HighShelf |     10000 | 0.7  |        -4.6 |
 
 ### Fixed Band EQs
@@ -23,15 +23,15 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.2 dB
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |        -1.2 |
-|   2 | Peaking |        62 | 1.41 |        -0.9 |
+|   2 | Peaking |        62 | 1.41 |        -0.8 |
 |   3 | Peaking |       125 | 1.41 |        -4   |
 |   4 | Peaking |       250 | 1.41 |        -2.1 |
 |   5 | Peaking |       500 | 1.41 |         0.6 |
 |   6 | Peaking |      1000 | 1.41 |        -4.3 |
-|   7 | Peaking |      2000 | 1.41 |         0.7 |
+|   7 | Peaking |      2000 | 1.41 |         0.6 |
 |   8 | Peaking |      4000 | 1.41 |         5.6 |
 |   9 | Peaking |      8000 | 1.41 |         3.7 |
-|  10 | Peaking |     16000 | 1.41 |        -1.7 |
+|  10 | Peaking |     16000 | 1.41 |        -1.8 |
 
 ### Graphs
 ![](./EarSonics%20Stark.png)

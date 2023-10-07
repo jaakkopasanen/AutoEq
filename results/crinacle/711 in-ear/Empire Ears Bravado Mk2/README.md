@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-2.9 dB
 |   7 | Peaking |      2000 | 1.41 |        -0.4 |
 |   8 | Peaking |      4000 | 1.41 |         2   |
 |   9 | Peaking |      8000 | 1.41 |         1.5 |
-|  10 | Peaking |     16000 | 1.41 |        -4.7 |
+|  10 | Peaking |     16000 | 1.41 |        -4.6 |
 
 ### Graphs
 ![](./Empire%20Ears%20Bravado%20Mk2.png)

@@ -11,8 +11,8 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.2 dB, respectivel
 |   3 | Peaking   |       841 | 2.16 |         1.5 |
 |   4 | Peaking   |      2378 | 3.44 |        -3.7 |
 |   5 | Peaking   |      6287 | 1.09 |         5.1 |
-|   6 | Peaking   |      1606 | 2.15 |        -0.5 |
-|   7 | Peaking   |      3353 | 4.61 |         1.7 |
+|   6 | Peaking   |      1606 | 2.16 |        -0.5 |
+|   7 | Peaking   |      3354 | 4.61 |         1.7 |
 |   8 | Peaking   |      4686 | 6    |        -1.7 |
 |   9 | Peaking   |     10000 | 3.02 |        -0.8 |
 |  10 | HighShelf |     10000 | 0.7  |         0.9 |
@@ -24,14 +24,14 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.6 dB
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         6.9 |
 |   2 | Peaking |        62 | 1.41 |         3.7 |
-|   3 | Peaking |       125 | 1.41 |        -0.3 |
+|   3 | Peaking |       125 | 1.41 |        -0.4 |
 |   4 | Peaking |       250 | 1.41 |        -3.4 |
-|   5 | Peaking |       500 | 1.41 |        -1.1 |
-|   6 | Peaking |      1000 | 1.41 |         1.8 |
-|   7 | Peaking |      2000 | 1.41 |        -2.9 |
+|   5 | Peaking |       500 | 1.41 |        -1   |
+|   6 | Peaking |      1000 | 1.41 |         1.6 |
+|   7 | Peaking |      2000 | 1.41 |        -3   |
 |   8 | Peaking |      4000 | 1.41 |         2.7 |
-|   9 | Peaking |      8000 | 1.41 |         3.8 |
-|  10 | Peaking |     16000 | 1.41 |         1.4 |
+|   9 | Peaking |      8000 | 1.41 |         3.9 |
+|  10 | Peaking |     16000 | 1.41 |         1.1 |
 
 ### Graphs
 ![](./Aya%20Siren.png)

@@ -14,8 +14,8 @@ You can use filters 1-5 or 1-10. Apply preamp of -1.3 dB or -4.2 dB, respectivel
 |   6 | Peaking   |        75 | 1.7  |         0.5 |
 |   7 | Peaking   |       160 | 2.1  |        -0.6 |
 |   8 | Peaking   |      6687 | 5.81 |        -2.8 |
-|   9 | Peaking   |      8698 | 2.16 |         2.5 |
-|  10 | HighShelf |     10000 | 0.7  |         4.1 |
+|   9 | Peaking   |      8699 | 2.16 |         2.5 |
+|  10 | HighShelf |     10000 | 0.7  |         4   |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-8.3 dB** (if available) and set gains manually with these parameters.

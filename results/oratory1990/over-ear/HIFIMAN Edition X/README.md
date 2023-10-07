@@ -6,19 +6,19 @@ You can use filters 1-5 or 1-10. Apply preamp of -7.2 dB or -7.2 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        16.5 |
-|   2 | Peaking   |        42 | 0.35 |       -12.9 |
-|   3 | Peaking   |      1008 | 1.26 |        -4.2 |
-|   4 | Peaking   |      2334 | 0.51 |         7   |
-|   5 | Peaking   |      3045 | 1.4  |        -7.3 |
-|   6 | Peaking   |        75 | 3.11 |        -0.9 |
-|   7 | Peaking   |       131 | 2.38 |         0.8 |
-|   8 | Peaking   |      1114 | 6    |        -1.3 |
-|   9 | Peaking   |      6200 | 6    |        -3.7 |
+|   1 | LowShelf  |       105 | 0.7  |        16.3 |
+|   2 | Peaking   |        42 | 0.35 |       -12.7 |
+|   3 | Peaking   |       990 | 1.32 |        -4   |
+|   4 | Peaking   |      2394 | 0.51 |         6.7 |
+|   5 | Peaking   |      3061 | 1.39 |        -7.2 |
+|   6 | Peaking   |        75 | 3.16 |        -0.9 |
+|   7 | Peaking   |       130 | 2.41 |         0.8 |
+|   8 | Peaking   |      1123 | 6    |        -1.3 |
+|   9 | Peaking   |      6193 | 6    |        -3.7 |
 |  10 | HighShelf |     10000 | 0.7  |         4.9 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-8.8 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-8.7 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-8.8 dB
 |   7 | Peaking |      2000 | 1.41 |         3.5 |
 |   8 | Peaking |      4000 | 1.41 |        -1.7 |
 |   9 | Peaking |      8000 | 1.41 |         2.5 |
-|  10 | Peaking |     16000 | 1.41 |         8.7 |
+|  10 | Peaking |     16000 | 1.41 |         8.6 |
 
 ### Graphs
 ![](./HIFIMAN%20Edition%20X.png)

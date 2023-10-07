@@ -6,15 +6,15 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.7 dB or -7.2 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        10.2 |
-|   2 | Peaking   |        69 | 0.27 |       -11.7 |
-|   3 | Peaking   |       759 | 1.65 |         9.1 |
-|   4 | Peaking   |      1062 | 0.4  |        -2.7 |
-|   5 | Peaking   |      7962 | 1.05 |         6.8 |
-|   6 | Peaking   |      1278 | 4.37 |        -1   |
-|   7 | Peaking   |      1991 | 4.35 |         2.3 |
-|   8 | Peaking   |      2699 | 4.1  |        -1.5 |
-|   9 | Peaking   |      4848 | 5.52 |        -1.2 |
+|   1 | LowShelf  |       105 | 0.7  |        10.3 |
+|   2 | Peaking   |        68 | 0.27 |       -11.8 |
+|   3 | Peaking   |       758 | 1.65 |         9.2 |
+|   4 | Peaking   |      1046 | 0.39 |        -2.7 |
+|   5 | Peaking   |      7957 | 1.05 |         6.9 |
+|   6 | Peaking   |      1278 | 4.38 |        -1   |
+|   7 | Peaking   |      1992 | 4.33 |         2.3 |
+|   8 | Peaking   |      2697 | 4.13 |        -1.4 |
+|   9 | Peaking   |      4850 | 5.56 |        -1.2 |
 |  10 | HighShelf |     10000 | 0.7  |         2.2 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.2 dB
 |   7 | Peaking |      2000 | 1.41 |        -1.8 |
 |   8 | Peaking |      4000 | 1.41 |        -0.2 |
 |   9 | Peaking |      8000 | 1.41 |         6.7 |
-|  10 | Peaking |     16000 | 1.41 |         6.7 |
+|  10 | Peaking |     16000 | 1.41 |         6.8 |
 
 ### Graphs
 ![](./Torque%20t402v%20(on-ear%20earpads,%20black%20vent).png)

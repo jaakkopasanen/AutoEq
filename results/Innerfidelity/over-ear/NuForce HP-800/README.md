@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.9 dB or -6.3 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         5.6 |
-|   2 | Peaking   |        86 | 0.24 |        -7.3 |
+|   2 | Peaking   |        87 | 0.24 |        -7.3 |
 |   3 | Peaking   |       437 | 1.54 |         5.7 |
-|   4 | Peaking   |      1192 | 2.52 |         3.7 |
-|   5 | Peaking   |      5165 | 2.89 |         5.8 |
-|   6 | Peaking   |      1689 | 3.32 |         1.2 |
-|   7 | Peaking   |      2774 | 2.22 |        -6.7 |
-|   8 | Peaking   |      5858 | 3.41 |        -3   |
-|   9 | Peaking   |      7871 | 0.31 |         2.8 |
+|   4 | Peaking   |      1191 | 2.52 |         3.7 |
+|   5 | Peaking   |      5166 | 2.88 |         5.8 |
+|   6 | Peaking   |      1687 | 3.32 |         1.2 |
+|   7 | Peaking   |      2775 | 2.22 |        -6.7 |
+|   8 | Peaking   |      5868 | 3.42 |        -3   |
+|   9 | Peaking   |      7897 | 0.31 |         2.8 |
 |  10 | HighShelf |     10000 | 0.7  |         0.6 |
 
 ### Fixed Band EQs
@@ -22,16 +22,16 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.1 dB
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         0.8 |
+|   1 | Peaking |        31 | 1.41 |         0.9 |
 |   2 | Peaking |        62 | 1.41 |        -1.7 |
 |   3 | Peaking |       125 | 1.41 |        -4.1 |
 |   4 | Peaking |       250 | 1.41 |        -4.1 |
-|   5 | Peaking |       500 | 1.41 |         2.8 |
-|   6 | Peaking |      1000 | 1.41 |         2.3 |
+|   5 | Peaking |       500 | 1.41 |         2.9 |
+|   6 | Peaking |      1000 | 1.41 |         2.2 |
 |   7 | Peaking |      2000 | 1.41 |        -1.5 |
 |   8 | Peaking |      4000 | 1.41 |         1   |
 |   9 | Peaking |      8000 | 1.41 |         3.8 |
-|  10 | Peaking |     16000 | 1.41 |         3   |
+|  10 | Peaking |     16000 | 1.41 |         3.1 |
 
 ### Graphs
 ![](./NuForce%20HP-800.png)

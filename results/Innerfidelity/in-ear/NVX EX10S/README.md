@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.4 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.0 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         6.5 |
-|   2 | Peaking   |       277 | 0.37 |        -4.4 |
-|   3 | Peaking   |      1001 | 0.8  |        -6.9 |
-|   4 | Peaking   |      1410 | 2.3  |        -5.2 |
-|   5 | Peaking   |      2411 | 0.23 |         7.4 |
-|   6 | Peaking   |        43 | 3.05 |         0.3 |
-|   7 | Peaking   |      1878 | 5.9  |        -0.7 |
-|   8 | Peaking   |      2210 | 5.99 |         1   |
-|   9 | Peaking   |      5753 | 5.87 |        -2.5 |
+|   1 | LowShelf  |       105 | 0.7  |         6.2 |
+|   2 | Peaking   |       144 | 0.19 |        -4.2 |
+|   3 | Peaking   |       982 | 0.79 |        -6.3 |
+|   4 | Peaking   |      1400 | 2.22 |        -5.3 |
+|   5 | Peaking   |      2602 | 0.24 |         7.3 |
+|   6 | Peaking   |        45 | 1.88 |        -0.2 |
+|   7 | Peaking   |      1867 | 5.83 |        -0.7 |
+|   8 | Peaking   |      2214 | 5.99 |         1.1 |
+|   9 | Peaking   |      5746 | 5.89 |        -2.4 |
 |  10 | HighShelf |     10000 | 0.7  |         2.9 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.7 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         6.5 |
-|   2 | Peaking |        62 | 1.41 |         4.3 |
-|   3 | Peaking |       125 | 1.41 |        -1.2 |
+|   1 | Peaking |        31 | 1.41 |         4.6 |
+|   2 | Peaking |        62 | 1.41 |         1.2 |
+|   3 | Peaking |       125 | 1.41 |        -1.6 |
 |   4 | Peaking |       250 | 1.41 |        -3.4 |
-|   5 | Peaking |       500 | 1.41 |        -1.8 |
-|   6 | Peaking |      1000 | 1.41 |        -5.3 |
-|   7 | Peaking |      2000 | 1.41 |         1.9 |
-|   8 | Peaking |      4000 | 1.41 |         6.1 |
-|   9 | Peaking |      8000 | 1.41 |         3.7 |
-|  10 | Peaking |     16000 | 1.41 |         7   |
+|   5 | Peaking |       500 | 1.41 |        -1.5 |
+|   6 | Peaking |      1000 | 1.41 |        -5.4 |
+|   7 | Peaking |      2000 | 1.41 |         2.1 |
+|   8 | Peaking |      4000 | 1.41 |         6.3 |
+|   9 | Peaking |      8000 | 1.41 |         4   |
+|  10 | Peaking |     16000 | 1.41 |         7.4 |
 
 ### Graphs
 ![](./NVX%20EX10S.png)

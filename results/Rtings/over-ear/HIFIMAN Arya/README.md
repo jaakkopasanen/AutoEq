@@ -29,9 +29,9 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.2 dB
 |   5 | Peaking |       500 | 1.41 |         0.6 |
 |   6 | Peaking |      1000 | 1.41 |         0.1 |
 |   7 | Peaking |      2000 | 1.41 |         4.9 |
-|   8 | Peaking |      4000 | 1.41 |        -3.4 |
+|   8 | Peaking |      4000 | 1.41 |        -3.5 |
 |   9 | Peaking |      8000 | 1.41 |        -1   |
-|  10 | Peaking |     16000 | 1.41 |        -4   |
+|  10 | Peaking |     16000 | 1.41 |        -4.1 |
 
 ### Graphs
 ![](./HIFIMAN%20Arya.png)

@@ -6,15 +6,15 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.5 dB or -6.8 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        11.1 |
-|   2 | Peaking   |        68 | 0.19 |       -10.5 |
-|   3 | Peaking   |       383 | 0.42 |        12.5 |
-|   4 | Peaking   |      1639 | 0.25 |       -20   |
-|   5 | Peaking   |      4138 | 0.33 |        18.8 |
-|   6 | Peaking   |      1572 | 6    |         0.9 |
-|   7 | Peaking   |      2807 | 5.98 |        -1.3 |
-|   8 | Peaking   |      3748 | 5.35 |         1.3 |
-|   9 | Peaking   |      6536 | 3.8  |        -1.6 |
+|   1 | LowShelf  |       105 | 0.7  |        11.7 |
+|   2 | Peaking   |        62 | 0.19 |       -10.8 |
+|   3 | Peaking   |       388 | 0.41 |        12.7 |
+|   4 | Peaking   |      1598 | 0.24 |       -20   |
+|   5 | Peaking   |      4191 | 0.33 |        18.7 |
+|   6 | Peaking   |      2801 | 6    |        -1.2 |
+|   7 | Peaking   |      3764 | 5.31 |         1.3 |
+|   8 | Peaking   |      5644 | 3.22 |        -0.5 |
+|   9 | Peaking   |      6715 | 3.92 |        -1.2 |
 |  10 | HighShelf |     10000 | 0.7  |         3.3 |
 
 ### Fixed Band EQs
@@ -23,15 +23,15 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-12.2 d
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         2.8 |
-|   2 | Peaking |        62 | 1.41 |         0.5 |
-|   3 | Peaking |       125 | 1.41 |        -3.1 |
+|   2 | Peaking |        62 | 1.41 |         0.4 |
+|   3 | Peaking |       125 | 1.41 |        -3   |
 |   4 | Peaking |       250 | 1.41 |        -1.4 |
 |   5 | Peaking |       500 | 1.41 |         1.2 |
 |   6 | Peaking |      1000 | 1.41 |        -5.6 |
 |   7 | Peaking |      2000 | 1.41 |        -4.7 |
-|   8 | Peaking |      4000 | 1.41 |         6   |
-|   9 | Peaking |      8000 | 1.41 |         5.4 |
-|  10 | Peaking |     16000 | 1.41 |        11.9 |
+|   8 | Peaking |      4000 | 1.41 |         6.1 |
+|   9 | Peaking |      8000 | 1.41 |         5.3 |
+|  10 | Peaking |     16000 | 1.41 |        11.8 |
 
 ### Graphs
 ![](./Phiaton%20Chord%20MS%20530.png)

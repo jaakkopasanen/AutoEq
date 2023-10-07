@@ -7,15 +7,15 @@ You can use filters 1-5 or 1-10. Apply preamp of -7.0 dB or -7.0 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.7 |
-|   2 | Peaking   |      1011 | 0.22 |        -3.7 |
+|   2 | Peaking   |      1008 | 0.22 |        -3.7 |
 |   3 | Peaking   |      1913 | 1.81 |         7.4 |
-|   4 | Peaking   |      4433 | 0.73 |         9.6 |
-|   5 | Peaking   |      7183 | 1.31 |       -10.2 |
+|   4 | Peaking   |      4429 | 0.73 |         9.6 |
+|   5 | Peaking   |      7186 | 1.31 |       -10.1 |
 |   6 | Peaking   |        90 | 2.31 |         1.8 |
-|   7 | Peaking   |       238 | 1.22 |        -0.9 |
+|   7 | Peaking   |       240 | 1.21 |        -0.9 |
 |   8 | Peaking   |       585 | 1.72 |         0.7 |
-|   9 | Peaking   |      9342 | 1.82 |         2.3 |
-|  10 | HighShelf |     10000 | 0.7  |        -5.9 |
+|   9 | Peaking   |      9375 | 1.8  |         2.3 |
+|  10 | HighShelf |     10000 | 0.7  |        -6   |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB** (if available) and set gains manually with these parameters.
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB
 |   7 | Peaking |      2000 | 1.41 |         6.2 |
 |   8 | Peaking |      4000 | 1.41 |         5.4 |
 |   9 | Peaking |      8000 | 1.41 |        -5.7 |
-|  10 | Peaking |     16000 | 1.41 |        -9.1 |
+|  10 | Peaking |     16000 | 1.41 |        -9.2 |
 
 ### Graphs
 ![](./JH%20Audio%20Lola%20(min).png)

@@ -27,11 +27,11 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-2.8 dB
 |   3 | Peaking |       125 | 1.41 |         1.8 |
 |   4 | Peaking |       250 | 1.41 |        -2.3 |
 |   5 | Peaking |       500 | 1.41 |        -4.9 |
-|   6 | Peaking |      1000 | 1.41 |         2.9 |
+|   6 | Peaking |      1000 | 1.41 |         3   |
 |   7 | Peaking |      2000 | 1.41 |         2.3 |
 |   8 | Peaking |      4000 | 1.41 |        -0.6 |
 |   9 | Peaking |      8000 | 1.41 |         2.6 |
-|  10 | Peaking |     16000 | 1.41 |        -2   |
+|  10 | Peaking |     16000 | 1.41 |        -2.1 |
 
 ### Graphs
 ![](./AKG%20K391-NC.png)

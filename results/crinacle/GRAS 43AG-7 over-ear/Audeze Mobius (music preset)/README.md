@@ -11,10 +11,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.0 dB, respectivel
 |   3 | Peaking   |       401 | 1.8  |         2.9 |
 |   4 | Peaking   |      4303 | 5.72 |         3   |
 |   5 | Peaking   |      6499 | 2.08 |         5.9 |
-|   6 | Peaking   |        33 | 5.3  |         1   |
-|   7 | Peaking   |      2346 | 5.03 |         1.1 |
+|   6 | Peaking   |        33 | 5.29 |         1   |
+|   7 | Peaking   |      2347 | 5.03 |         1.1 |
 |   8 | Peaking   |      2927 | 5.38 |        -2.3 |
-|   9 | Peaking   |      9365 | 2.35 |         2.8 |
+|   9 | Peaking   |      9362 | 2.35 |         2.8 |
 |  10 | HighShelf |     10000 | 0.7  |        -5.1 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.7 dB
 |   7 | Peaking |      2000 | 1.41 |        -0.5 |
 |   8 | Peaking |      4000 | 1.41 |         2.1 |
 |   9 | Peaking |      8000 | 1.41 |         4.9 |
-|  10 | Peaking |     16000 | 1.41 |       -10.2 |
+|  10 | Peaking |     16000 | 1.41 |       -10.3 |
 
 ### Graphs
 ![](./Audeze%20Mobius%20(music%20preset).png)

@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.7 dB or -5.9 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |        -4.9 |
-|   2 | Peaking   |        60 | 0.66 |         6.6 |
-|   3 | Peaking   |       178 | 1.54 |        -3.6 |
-|   4 | Peaking   |       965 | 1.69 |        -1.7 |
-|   5 | Peaking   |      1878 | 2.91 |         5.9 |
-|   6 | Peaking   |      2206 | 6    |         1.3 |
-|   7 | Peaking   |      2572 | 5.93 |        -2.8 |
-|   8 | Peaking   |      3350 | 5.21 |         2.8 |
-|   9 | Peaking   |      5466 | 4.16 |        -3.4 |
+|   2 | Peaking   |        60 | 0.68 |         6.6 |
+|   3 | Peaking   |       179 | 1.6  |        -3.5 |
+|   4 | Peaking   |       967 | 1.71 |        -1.7 |
+|   5 | Peaking   |      1878 | 2.9  |         5.9 |
+|   6 | Peaking   |      2207 | 6    |         1.3 |
+|   7 | Peaking   |      2572 | 5.92 |        -2.8 |
+|   8 | Peaking   |      3350 | 5.21 |         2.7 |
+|   9 | Peaking   |      5465 | 4.16 |        -3.4 |
 |  10 | HighShelf |     10000 | 0.7  |        -2.5 |
 
 ### Fixed Band EQs
@@ -29,9 +29,9 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.4 dB
 |   5 | Peaking |       500 | 1.41 |         0.5 |
 |   6 | Peaking |      1000 | 1.41 |        -2.4 |
 |   7 | Peaking |      2000 | 1.41 |         5   |
-|   8 | Peaking |      4000 | 1.41 |        -1.3 |
+|   8 | Peaking |      4000 | 1.41 |        -1.2 |
 |   9 | Peaking |      8000 | 1.41 |        -0.2 |
-|  10 | Peaking |     16000 | 1.41 |        -5.3 |
+|  10 | Peaking |     16000 | 1.41 |        -5.2 |
 
 ### Graphs
 ![](./Austrian%20Audio%20Hi-X60.png)

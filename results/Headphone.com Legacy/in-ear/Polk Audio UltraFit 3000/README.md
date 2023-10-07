@@ -22,7 +22,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-8.1 dB
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |        -4.9 |
+|   1 | Peaking |        31 | 1.41 |        -5   |
 |   2 | Peaking |        62 | 1.41 |        -3   |
 |   3 | Peaking |       125 | 1.41 |        -7.2 |
 |   4 | Peaking |       250 | 1.41 |        -6.8 |

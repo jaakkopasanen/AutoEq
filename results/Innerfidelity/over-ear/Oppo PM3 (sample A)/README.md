@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -7.0 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         1.1 |
-|   2 | Peaking   |       354 | 3.65 |         1.9 |
-|   3 | Peaking   |      2319 | 0.6  |        -6.5 |
-|   4 | Peaking   |      8326 | 5.65 |         0.6 |
-|   5 | Peaking   |      9013 | 0.24 |         6.5 |
+|   2 | Peaking   |       353 | 3.65 |         1.9 |
+|   3 | Peaking   |      2318 | 0.6  |        -6.5 |
+|   4 | Peaking   |      8297 | 5.65 |         0.6 |
+|   5 | Peaking   |      9038 | 0.24 |         6.5 |
 |   6 | Peaking   |        41 | 1.09 |         0.4 |
 |   7 | Peaking   |       103 | 3.84 |        -1.4 |
 |   8 | Peaking   |       204 | 4.66 |        -1.5 |
-|   9 | Peaking   |      6827 | 6    |        -1.6 |
+|   9 | Peaking   |      6828 | 6    |        -1.6 |
 |  10 | HighShelf |     10000 | 0.7  |         1.4 |
 
 ### Fixed Band EQs
@@ -22,8 +22,8 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-12.1 d
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         1.6 |
-|   2 | Peaking |        62 | 1.41 |         1.2 |
+|   1 | Peaking |        31 | 1.41 |         1.5 |
+|   2 | Peaking |        62 | 1.41 |         1.1 |
 |   3 | Peaking |       125 | 1.41 |        -1.2 |
 |   4 | Peaking |       250 | 1.41 |         0.3 |
 |   5 | Peaking |       500 | 1.41 |         0.5 |
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-12.1 d
 |   7 | Peaking |      2000 | 1.41 |        -4   |
 |   8 | Peaking |      4000 | 1.41 |         0.7 |
 |   9 | Peaking |      8000 | 1.41 |         5.6 |
-|  10 | Peaking |     16000 | 1.41 |        11.8 |
+|  10 | Peaking |     16000 | 1.41 |        11.9 |
 
 ### Graphs
 ![](./Oppo%20PM3%20(sample%20A).png)

@@ -26,12 +26,12 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-5.2 dB
 |   2 | Peaking |        62 | 1.41 |         0.5 |
 |   3 | Peaking |       125 | 1.41 |        -3.8 |
 |   4 | Peaking |       250 | 1.41 |        -4.4 |
-|   5 | Peaking |       500 | 1.41 |         1.2 |
+|   5 | Peaking |       500 | 1.41 |         1.3 |
 |   6 | Peaking |      1000 | 1.41 |         0.8 |
-|   7 | Peaking |      2000 | 1.41 |        -1.3 |
-|   8 | Peaking |      4000 | 1.41 |         5.6 |
+|   7 | Peaking |      2000 | 1.41 |        -1.4 |
+|   8 | Peaking |      4000 | 1.41 |         5.5 |
 |   9 | Peaking |      8000 | 1.41 |        -1.9 |
-|  10 | Peaking |     16000 | 1.41 |         3   |
+|  10 | Peaking |     16000 | 1.41 |         3.1 |
 
 ### Graphs
 ![](./SteelSeries%20Arctis%20Nova%203.png)

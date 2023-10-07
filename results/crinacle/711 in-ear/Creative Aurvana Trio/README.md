@@ -13,7 +13,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.6 dB or -5.8 dB, respectivel
 |   5 | Peaking   |      5975 | 3.96 |         4.9 |
 |   6 | Peaking   |      3843 | 5.98 |         1.1 |
 |   7 | Peaking   |      4566 | 6    |        -2.5 |
-|   8 | Peaking   |      5337 | 5.98 |         1.2 |
+|   8 | Peaking   |      5338 | 5.98 |         1.2 |
 |   9 | Peaking   |      9376 | 2.06 |        -2.3 |
 |  10 | HighShelf |     10000 | 0.7  |         4.7 |
 
@@ -30,8 +30,8 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB
 |   6 | Peaking |      1000 | 1.41 |         3.2 |
 |   7 | Peaking |      2000 | 1.41 |         1.6 |
 |   8 | Peaking |      4000 | 1.41 |         3   |
-|   9 | Peaking |      8000 | 1.41 |         0.7 |
-|  10 | Peaking |     16000 | 1.41 |         7.2 |
+|   9 | Peaking |      8000 | 1.41 |         0.6 |
+|  10 | Peaking |     16000 | 1.41 |         7.1 |
 
 ### Graphs
 ![](./Creative%20Aurvana%20Trio.png)

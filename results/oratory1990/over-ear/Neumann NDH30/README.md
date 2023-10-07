@@ -9,12 +9,12 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.1 dB, respectivel
 |   1 | LowShelf  |       105 | 0.7  |         3.7 |
 |   2 | Peaking   |       160 | 0.19 |        -2.3 |
 |   3 | Peaking   |      2262 | 1.99 |         3.5 |
-|   4 | Peaking   |      3648 | 3.86 |        -3.9 |
-|   5 | Peaking   |      9235 | 1    |         6.1 |
+|   4 | Peaking   |      3647 | 3.86 |        -3.9 |
+|   5 | Peaking   |      9234 | 1    |         6.1 |
 |   6 | Peaking   |        52 | 1.98 |        -0.8 |
-|   7 | Peaking   |        66 | 4.36 |         0.6 |
-|   8 | Peaking   |       496 | 1.11 |         0.6 |
-|   9 | Peaking   |      1028 | 2.73 |        -1.1 |
+|   7 | Peaking   |        66 | 4.35 |         0.6 |
+|   8 | Peaking   |       497 | 1.11 |         0.6 |
+|   9 | Peaking   |      1029 | 2.73 |        -1.1 |
 |  10 | HighShelf |     10000 | 0.7  |        -0.1 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.2 dB
 |   7 | Peaking |      2000 | 1.41 |         3.4 |
 |   8 | Peaking |      4000 | 1.41 |        -2.2 |
 |   9 | Peaking |      8000 | 1.41 |         6.2 |
-|  10 | Peaking |     16000 | 1.41 |         2.8 |
+|  10 | Peaking |     16000 | 1.41 |         2.7 |
 
 ### Graphs
 ![](./Neumann%20NDH30.png)

@@ -2,20 +2,20 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -7.0 dB or -8.5 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.9 dB or -8.4 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        -0.7 |
-|   2 | Peaking   |       161 | 0.73 |        -3.3 |
-|   3 | Peaking   |       385 | 0.34 |        -6.9 |
-|   4 | Peaking   |      1199 | 0.42 |         7.9 |
-|   5 | Peaking   |      8557 | 2.08 |         6.3 |
-|   6 | Peaking   |      1763 | 4.7  |        -2.8 |
-|   7 | Peaking   |      2982 | 1.27 |         2.2 |
-|   8 | Peaking   |      5133 | 3.63 |        -6.8 |
-|   9 | Peaking   |      6279 | 6    |         3.2 |
-|  10 | HighShelf |     10000 | 0.7  |         4.9 |
+|   1 | LowShelf  |       105 | 0.7  |        -0.6 |
+|   2 | Peaking   |       155 | 0.79 |        -2.4 |
+|   3 | Peaking   |       283 | 0.39 |        -6.5 |
+|   4 | Peaking   |      1364 | 0.43 |         6.2 |
+|   5 | Peaking   |      8491 | 2.12 |         6.2 |
+|   6 | Peaking   |      1766 | 4.74 |        -2.8 |
+|   7 | Peaking   |      3011 | 1.24 |         2.2 |
+|   8 | Peaking   |      5131 | 3.6  |        -6.8 |
+|   9 | Peaking   |      6274 | 6    |         3.2 |
+|  10 | HighShelf |     10000 | 0.7  |         5   |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-10.5 dB** (if available) and set gains manually with these parameters.
@@ -24,8 +24,8 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-10.5 d
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |        -1.2 |
 |   2 | Peaking |        62 | 1.41 |        -1.2 |
-|   3 | Peaking |       125 | 1.41 |        -5.6 |
-|   4 | Peaking |       250 | 1.41 |        -6.7 |
+|   3 | Peaking |       125 | 1.41 |        -5.7 |
+|   4 | Peaking |       250 | 1.41 |        -6.6 |
 |   5 | Peaking |       500 | 1.41 |        -2.2 |
 |   6 | Peaking |      1000 | 1.41 |         3.3 |
 |   7 | Peaking |      2000 | 1.41 |         5   |

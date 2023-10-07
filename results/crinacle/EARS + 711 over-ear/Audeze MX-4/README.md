@@ -7,18 +7,18 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.3 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         3.6 |
-|   2 | Peaking   |       154 | 0.47 |        -2.4 |
-|   3 | Peaking   |      1402 | 0.56 |        -5.9 |
-|   4 | Peaking   |      1965 | 2.88 |         6.7 |
+|   2 | Peaking   |       152 | 0.47 |        -2.4 |
+|   3 | Peaking   |      1398 | 0.56 |        -5.9 |
+|   4 | Peaking   |      1963 | 2.89 |         6.7 |
 |   5 | Peaking   |     10000 | 0.26 |         6.3 |
-|   6 | Peaking   |      3021 | 4.08 |        -3.3 |
-|   7 | Peaking   |      4122 | 2.72 |         3.2 |
-|   8 | Peaking   |      4701 | 5.88 |         1.2 |
-|   9 | Peaking   |      5859 | 6    |        -3.3 |
+|   6 | Peaking   |      3022 | 4.09 |        -3.3 |
+|   7 | Peaking   |      4121 | 2.72 |         3.2 |
+|   8 | Peaking   |      4700 | 5.88 |         1.2 |
+|   9 | Peaking   |      5860 | 6    |        -3.3 |
 |  10 | HighShelf |     10000 | 0.7  |        -5.6 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-6.3 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-6.2 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -26,7 +26,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.3 dB
 |   2 | Peaking |        62 | 1.41 |         1.8 |
 |   3 | Peaking |       125 | 1.41 |        -1.4 |
 |   4 | Peaking |       250 | 1.41 |        -2.3 |
-|   5 | Peaking |       500 | 1.41 |        -1   |
+|   5 | Peaking |       500 | 1.41 |        -1.1 |
 |   6 | Peaking |      1000 | 1.41 |        -5.4 |
 |   7 | Peaking |      2000 | 1.41 |         1.5 |
 |   8 | Peaking |      4000 | 1.41 |         2.6 |

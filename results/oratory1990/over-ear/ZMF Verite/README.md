@@ -2,20 +2,20 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.4 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.3 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         5.6 |
-|   2 | Peaking   |       171 | 0.18 |        -3.9 |
-|   3 | Peaking   |      3395 | 2.86 |         3.9 |
-|   4 | Peaking   |      5590 | 1.8  |       -13   |
-|   5 | Peaking   |      6820 | 0.45 |         9.1 |
-|   6 | Peaking   |        40 | 2.23 |        -0.2 |
-|   7 | Peaking   |       922 | 3.07 |        -0.9 |
-|   8 | Peaking   |      1425 | 2.38 |         1   |
-|   9 | Peaking   |      2382 | 5.06 |        -1.2 |
-|  10 | HighShelf |     10000 | 0.7  |        -4.2 |
+|   1 | LowShelf  |       105 | 0.7  |         5.7 |
+|   2 | Peaking   |       164 | 0.18 |        -3.9 |
+|   3 | Peaking   |      3479 | 1.94 |         4.4 |
+|   4 | Peaking   |      5528 | 1.77 |       -12.4 |
+|   5 | Peaking   |      7316 | 0.43 |         8.3 |
+|   6 | Peaking   |       923 | 3.02 |        -0.9 |
+|   7 | Peaking   |      1395 | 2.32 |         1.1 |
+|   8 | Peaking   |      2476 | 4.93 |        -1.6 |
+|   9 | Peaking   |      2973 | 6    |         1   |
+|  10 | HighShelf |     10000 | 0.7  |        -4.4 |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-4.8 dB** (if available) and set gains manually with these parameters.
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.8 dB
 |   7 | Peaking |      2000 | 1.41 |         2.8 |
 |   8 | Peaking |      4000 | 1.41 |         1.9 |
 |   9 | Peaking |      8000 | 1.41 |         2.9 |
-|  10 | Peaking |     16000 | 1.41 |        -1.5 |
+|  10 | Peaking |     16000 | 1.41 |        -1.6 |
 
 ### Graphs
 ![](./ZMF%20Verite.png)

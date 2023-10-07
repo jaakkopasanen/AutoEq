@@ -7,13 +7,13 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.3 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         7.4 |
-|   2 | Peaking   |        66 | 0.43 |        -3.2 |
+|   2 | Peaking   |        67 | 0.43 |        -3.2 |
 |   3 | Peaking   |       618 | 2.32 |        -1.7 |
 |   4 | Peaking   |      1743 | 2.06 |         2.2 |
-|   5 | Peaking   |      6147 | 5.88 |        -1.9 |
-|   6 | Peaking   |       263 | 2.53 |        -0.3 |
+|   5 | Peaking   |      6146 | 5.88 |        -1.9 |
+|   6 | Peaking   |       262 | 2.53 |        -0.3 |
 |   7 | Peaking   |       965 | 6    |        -1.7 |
-|   8 | Peaking   |      2987 | 4.67 |        -1.4 |
+|   8 | Peaking   |      2987 | 4.66 |        -1.4 |
 |   9 | Peaking   |      3587 | 4.53 |         1.2 |
 |  10 | HighShelf |     10000 | 0.7  |        -0.6 |
 
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.8 dB
 |   7 | Peaking |      2000 | 1.41 |         2.1 |
 |   8 | Peaking |      4000 | 1.41 |        -0.9 |
 |   9 | Peaking |      8000 | 1.41 |         1.4 |
-|  10 | Peaking |     16000 | 1.41 |        -2.6 |
+|  10 | Peaking |     16000 | 1.41 |        -2.7 |
 
 ### Graphs
 ![](./HIFIMAN%20Edition%20X.png)

@@ -546,7 +546,10 @@ class FrequencyResponse:
         """
         equal_energy_fr = self.__class__(name='equal_energy', frequency=self.frequency.copy(), raw=self.raw.copy())
         equal_energy_fr.interpolate()
-        interpolator = InterpolatedUnivariateSpline(np.log10(equal_energy_fr.frequency), equal_energy_fr.raw, k=1)
+        try:
+            interpolator = InterpolatedUnivariateSpline(np.log10(equal_energy_fr.frequency), equal_energy_fr.raw, k=1)
+        except Exception as err:
+            raise Exception(f'{len(np.log10(equal_energy_fr.frequency))} vs {len(equal_energy_fr.raw)} @ {self.name}')
         if type(frequency) in [list, np.ndarray] and len(frequency) > 1:
             # Use the average of the gain values between the given frequencies as the difference to be subtracted
             diff = np.mean(equal_energy_fr.raw[np.logical_and(

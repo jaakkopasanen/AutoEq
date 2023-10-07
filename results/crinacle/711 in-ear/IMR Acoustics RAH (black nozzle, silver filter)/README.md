@@ -7,11 +7,11 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.6 dB or -6.5 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         2.9 |
-|   2 | Peaking   |       171 | 0.62 |        -4.7 |
+|   2 | Peaking   |       170 | 0.62 |        -4.7 |
 |   3 | Peaking   |      1914 | 3.15 |         1.8 |
-|   4 | Peaking   |      3408 | 4.09 |         2.2 |
-|   5 | Peaking   |      3987 | 1.02 |         4.6 |
-|   6 | Peaking   |        81 | 2.01 |        -0   |
+|   4 | Peaking   |      3414 | 4.1  |         2.2 |
+|   5 | Peaking   |      3982 | 1.02 |         4.6 |
+|   6 | Peaking   |        85 | 2.01 |        -0   |
 |   7 | Peaking   |      5299 | 6    |        -2.5 |
 |   8 | Peaking   |      6127 | 6    |         2.9 |
 |   9 | Peaking   |      9773 | 3.39 |         3.5 |
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.2 dB
 |   7 | Peaking |      2000 | 1.41 |         1.8 |
 |   8 | Peaking |      4000 | 1.41 |         5.8 |
 |   9 | Peaking |      8000 | 1.41 |         0.9 |
-|  10 | Peaking |     16000 | 1.41 |        -8.3 |
+|  10 | Peaking |     16000 | 1.41 |        -8.2 |
 
 ### Graphs
 ![](./IMR%20Acoustics%20RAH%20(black%20nozzle,%20silver%20filter).png)

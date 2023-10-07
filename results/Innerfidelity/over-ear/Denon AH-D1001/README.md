@@ -11,10 +11,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.4 dB, respectivel
 |   3 | Peaking   |       469 | 1.12 |         3.4 |
 |   4 | Peaking   |       885 | 1.36 |        -3.9 |
 |   5 | Peaking   |      2035 | 3.09 |         4   |
-|   6 | Peaking   |      2786 | 6    |        -1.3 |
-|   7 | Peaking   |      3148 | 5.92 |         2.7 |
-|   8 | Peaking   |      4239 | 3.09 |        -1   |
-|   9 | Peaking   |      5622 | 2.09 |        -1.1 |
+|   6 | Peaking   |      2791 | 6    |        -1.3 |
+|   7 | Peaking   |      3150 | 5.92 |         2.9 |
+|   8 | Peaking   |      4220 | 3.1  |        -1   |
+|   9 | Peaking   |      5637 | 2.06 |        -1.1 |
 |  10 | HighShelf |     10000 | 0.7  |        -3.5 |
 
 ### Fixed Band EQs
@@ -24,14 +24,14 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         6.8 |
 |   2 | Peaking |        62 | 1.41 |         3.5 |
-|   3 | Peaking |       125 | 1.41 |        -1.3 |
-|   4 | Peaking |       250 | 1.41 |        -0.6 |
+|   3 | Peaking |       125 | 1.41 |        -1.2 |
+|   4 | Peaking |       250 | 1.41 |        -0.7 |
 |   5 | Peaking |       500 | 1.41 |         3.2 |
 |   6 | Peaking |      1000 | 1.41 |        -4.4 |
-|   7 | Peaking |      2000 | 1.41 |         3.8 |
+|   7 | Peaking |      2000 | 1.41 |         3.9 |
 |   8 | Peaking |      4000 | 1.41 |        -1.1 |
 |   9 | Peaking |      8000 | 1.41 |        -1.3 |
-|  10 | Peaking |     16000 | 1.41 |        -6.2 |
+|  10 | Peaking |     16000 | 1.41 |        -6.3 |
 
 ### Graphs
 ![](./Denon%20AH-D1001.png)

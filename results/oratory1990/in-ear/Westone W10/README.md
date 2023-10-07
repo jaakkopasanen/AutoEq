@@ -11,10 +11,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.9 dB or -6.3 dB, respectivel
 |   3 | Peaking   |       238 | 0.18 |        -4.1 |
 |   4 | Peaking   |      2487 | 2.16 |         2.9 |
 |   5 | Peaking   |      5964 | 0.64 |         5.8 |
-|   6 | Peaking   |       240 | 1.55 |        -0.4 |
-|   7 | Peaking   |       714 | 1.12 |         0.7 |
-|   8 | Peaking   |      1200 | 2.41 |        -1   |
-|   9 | Peaking   |      8154 | 3.68 |        -2.8 |
+|   6 | Peaking   |       237 | 1.55 |        -0.4 |
+|   7 | Peaking   |       707 | 1.15 |         0.7 |
+|   8 | Peaking   |      1200 | 2.4  |        -1   |
+|   9 | Peaking   |      8149 | 3.71 |        -2.8 |
 |  10 | HighShelf |     10000 | 0.7  |         5.6 |
 
 ### Fixed Band EQs
@@ -24,14 +24,14 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-12.1 d
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         5.4 |
 |   2 | Peaking |        62 | 1.41 |         3.5 |
-|   3 | Peaking |       125 | 1.41 |        -1.6 |
+|   3 | Peaking |       125 | 1.41 |        -1.7 |
 |   4 | Peaking |       250 | 1.41 |        -3.9 |
 |   5 | Peaking |       500 | 1.41 |        -2.3 |
 |   6 | Peaking |      1000 | 1.41 |        -2.8 |
-|   7 | Peaking |      2000 | 1.41 |         1.6 |
+|   7 | Peaking |      2000 | 1.41 |         1.5 |
 |   8 | Peaking |      4000 | 1.41 |         4.8 |
 |   9 | Peaking |      8000 | 1.41 |         3.9 |
-|  10 | Peaking |     16000 | 1.41 |        11.8 |
+|  10 | Peaking |     16000 | 1.41 |        11.9 |
 
 ### Graphs
 ![](./Westone%20W10.png)

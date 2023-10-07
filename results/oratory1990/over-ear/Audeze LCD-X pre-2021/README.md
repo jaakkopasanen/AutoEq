@@ -6,19 +6,19 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.9 dB or -5.9 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         5.7 |
-|   2 | Peaking   |       152 | 0.18 |        -3.7 |
-|   3 | Peaking   |       928 | 1.24 |        -3.5 |
-|   4 | Peaking   |      4366 | 0.61 |         9.6 |
+|   1 | LowShelf  |       105 | 0.7  |         5.8 |
+|   2 | Peaking   |       146 | 0.19 |        -3.7 |
+|   3 | Peaking   |       921 | 1.22 |        -3.6 |
+|   4 | Peaking   |      4373 | 0.61 |         9.6 |
 |   5 | Peaking   |      5369 | 2.07 |       -11.1 |
-|   6 | Peaking   |        25 | 2.64 |         0.5 |
-|   7 | Peaking   |        47 | 1.28 |        -0.4 |
-|   8 | Peaking   |       128 | 1.58 |         0.5 |
-|   9 | Peaking   |       232 | 1.99 |        -0.4 |
+|   6 | Peaking   |        25 | 2.61 |         0.5 |
+|   7 | Peaking   |        46 | 1.28 |        -0.4 |
+|   8 | Peaking   |       129 | 1.57 |         0.5 |
+|   9 | Peaking   |       234 | 1.95 |        -0.4 |
 |  10 | HighShelf |     10000 | 0.7  |        -6.3 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-4.8 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.7 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.8 dB
 |   7 | Peaking |      2000 | 1.41 |         3.7 |
 |   8 | Peaking |      4000 | 1.41 |         3.5 |
 |   9 | Peaking |      8000 | 1.41 |         1.5 |
-|  10 | Peaking |     16000 | 1.41 |       -11.4 |
+|  10 | Peaking |     16000 | 1.41 |       -11.3 |
 
 ### Graphs
 ![](./Audeze%20LCD-X%20pre-2021.png)

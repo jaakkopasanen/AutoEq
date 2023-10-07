@@ -12,41 +12,16 @@ from autoeq.batch_processing import batch_processing
 ROOT_DIR = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 
 
-def main():
-    arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('--new_only', action='store_true', help='Process only new measurements?')
-    arg_parser.add_argument('--innerfidelity', action='store_true', help='Process Innerfidelity measurements?')
-    arg_parser.add_argument('--headphonecom', action='store_true', help='Process Headphone.com measurements?')
-    arg_parser.add_argument('--oratory1990', action='store_true', help='Process oratory1990 measurements?')
-    arg_parser.add_argument('--rtings', action='store_true', help='Process Rtings measurements?')
-    arg_parser.add_argument('--crinacle', action='store_true', help='Process Crinacle measurements?')
-    arg_parser.add_argument('--overear', action='store_true', help='Process on-ear measurements?')
-    arg_parser.add_argument('--inear', action='store_true', help='Process in-ear measurements?')
-    arg_parser.add_argument('--earbud', action='store_true', help='Process ear bud measurements?')
-    cli_args = arg_parser.parse_args()
-
-    new_only = bool(cli_args.new_only)
-    innerfidelity = bool(cli_args.innerfidelity)
-    headphonecom = bool(cli_args.headphonecom)
-    oratory1990 = bool(cli_args.oratory1990)
-    rtings = bool(cli_args.rtings)
-    crinacle = bool(cli_args.crinacle)
-
-    overear = bool(cli_args.overear)
-    inear = bool(cli_args.inear)
-    earbud = bool(cli_args.earbud)
-
-    if not innerfidelity and not headphonecom and not oratory1990 and not rtings and not crinacle:
-        innerfidelity = True
-        headphonecom = True
-        oratory1990 = True
-        rtings = True
-        crinacle = True
-    if not overear and not inear and not earbud:
-        overear = True
-        inear = True
-        earbud = True
-
+def main(
+        new_only=True,
+        innerfidelity=False,
+        headphonecom=False,
+        oratory1990=False,
+        rtings=False,
+        crinacle=False,
+        overear=False,
+        inear=False,
+        earbud=False):
     innerfidelity_overear = os.path.join(ROOT_DIR, 'compensation', 'innerfidelity_harman_over-ear_2018_wo_bass.csv')
     innerfidelity_inear = os.path.join(ROOT_DIR, 'compensation', 'innerfidelity_autoeq_in-ear.csv')
     headphonecom_overear = os.path.join(ROOT_DIR, 'compensation', 'headphonecom_harman_over-ear_2018_wo_bass.csv')
@@ -216,5 +191,20 @@ def main():
             )
 
 
+def _cli():
+    arg_parser = argparse.ArgumentParser()
+    arg_parser.add_argument('--new_only', action='store_true', help='Process only new measurements?')
+    arg_parser.add_argument('--innerfidelity', action='store_true', help='Process Innerfidelity measurements?')
+    arg_parser.add_argument('--headphonecom', action='store_true', help='Process Headphone.com measurements?')
+    arg_parser.add_argument('--oratory1990', action='store_true', help='Process oratory1990 measurements?')
+    arg_parser.add_argument('--rtings', action='store_true', help='Process Rtings measurements?')
+    arg_parser.add_argument('--crinacle', action='store_true', help='Process Crinacle measurements?')
+    arg_parser.add_argument('--overear', action='store_true', help='Process on-ear measurements?')
+    arg_parser.add_argument('--inear', action='store_true', help='Process in-ear measurements?')
+    arg_parser.add_argument('--earbud', action='store_true', help='Process ear bud measurements?')
+    cli_args = arg_parser.parse_args()
+    return vars(cli_args)
+
+
 if __name__ == '__main__':
-    main()
+    main(**_cli())

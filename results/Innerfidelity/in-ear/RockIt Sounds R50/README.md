@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.2 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         6.1 |
-|   2 | Peaking   |        78 | 1.98 |         1.5 |
-|   3 | Peaking   |       267 | 0.69 |        -2   |
-|   4 | Peaking   |      3425 | 1.68 |         6.4 |
-|   5 | Peaking   |      7950 | 2    |        -5.6 |
-|   6 | Peaking   |       896 | 2.6  |         0.7 |
-|   7 | Peaking   |      1357 | 3.16 |        -1.2 |
-|   8 | Peaking   |      2051 | 4.37 |         0.6 |
-|   9 | Peaking   |      5388 | 5.96 |         0.8 |
-|  10 | HighShelf |     10000 | 0.7  |        -2   |
+|   1 | LowShelf  |       105 | 0.7  |         6.2 |
+|   2 | Peaking   |       178 | 0.41 |        -2   |
+|   3 | Peaking   |      2618 | 1.74 |         1.2 |
+|   4 | Peaking   |      3526 | 1.81 |         5.8 |
+|   5 | Peaking   |      7963 | 2.09 |        -5.4 |
+|   6 | Peaking   |       406 | 1.53 |        -0.3 |
+|   7 | Peaking   |       867 | 2.32 |         0.9 |
+|   8 | Peaking   |      1333 | 3.21 |        -0.9 |
+|   9 | Peaking   |      5368 | 5.74 |         0.9 |
+|  10 | HighShelf |     10000 | 0.7  |        -1.9 |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-7.4 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         6.2 |
-|   2 | Peaking |        62 | 1.41 |         5.6 |
-|   3 | Peaking |       125 | 1.41 |         1   |
-|   4 | Peaking |       250 | 1.41 |        -2.4 |
-|   5 | Peaking |       500 | 1.41 |        -1   |
+|   1 | Peaking |        31 | 1.41 |         6.7 |
+|   2 | Peaking |        62 | 1.41 |         3.5 |
+|   3 | Peaking |       125 | 1.41 |         0   |
+|   4 | Peaking |       250 | 1.41 |        -2.1 |
+|   5 | Peaking |       500 | 1.41 |        -0.8 |
 |   6 | Peaking |      1000 | 1.41 |        -0.1 |
-|   7 | Peaking |      2000 | 1.41 |         0.7 |
-|   8 | Peaking |      4000 | 1.41 |         5.8 |
-|   9 | Peaking |      8000 | 1.41 |        -5.5 |
-|  10 | Peaking |     16000 | 1.41 |        -4.3 |
+|   7 | Peaking |      2000 | 1.41 |         1   |
+|   8 | Peaking |      4000 | 1.41 |         6   |
+|   9 | Peaking |      8000 | 1.41 |        -5.4 |
+|  10 | Peaking |     16000 | 1.41 |        -3.6 |
 
 ### Graphs
 ![](./RockIt%20Sounds%20R50.png)

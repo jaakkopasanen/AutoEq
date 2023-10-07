@@ -14,7 +14,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -4.7 dB or -4.5 dB, respectivel
 |   6 | Peaking   |       325 | 2.18 |        -0.5 |
 |   7 | Peaking   |       873 | 1.58 |         1.4 |
 |   8 | Peaking   |      1392 | 2.61 |        -1.3 |
-|   9 | Peaking   |      3822 | 6    |        -1   |
+|   9 | Peaking   |      3821 | 6    |        -1   |
 |  10 | HighShelf |     10000 | 0.7  |        -3.4 |
 
 ### Fixed Band EQs
@@ -29,9 +29,9 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.1 dB
 |   5 | Peaking |       500 | 1.41 |         0.3 |
 |   6 | Peaking |      1000 | 1.41 |         0.5 |
 |   7 | Peaking |      2000 | 1.41 |         0.5 |
-|   8 | Peaking |      4000 | 1.41 |         1.4 |
+|   8 | Peaking |      4000 | 1.41 |         1.5 |
 |   9 | Peaking |      8000 | 1.41 |         3.2 |
-|  10 | Peaking |     16000 | 1.41 |        -7.3 |
+|  10 | Peaking |     16000 | 1.41 |        -7.2 |
 
 ### Graphs
 ![](./Fatfreq%20Hayabusa%20(bass%20switch%20on).png)

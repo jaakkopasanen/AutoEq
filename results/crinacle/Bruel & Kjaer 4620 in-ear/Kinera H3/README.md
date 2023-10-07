@@ -13,7 +13,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.9 dB or -5.9 dB, respectivel
 |   5 | Peaking   |      6299 | 1.09 |       -13   |
 |   6 | Peaking   |        78 | 1.23 |        -0.4 |
 |   7 | Peaking   |       354 | 4.12 |         0.8 |
-|   8 | Peaking   |       589 | 3.87 |        -0.7 |
+|   8 | Peaking   |       589 | 3.88 |        -0.7 |
 |   9 | Peaking   |       849 | 4.56 |         0.8 |
 |  10 | HighShelf |     10000 | 0.7  |         3   |
 
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.9 dB
 |   7 | Peaking |      2000 | 1.41 |        -0   |
 |   8 | Peaking |      4000 | 1.41 |         2.6 |
 |   9 | Peaking |      8000 | 1.41 |       -12   |
-|  10 | Peaking |     16000 | 1.41 |         7.6 |
+|  10 | Peaking |     16000 | 1.41 |         7.5 |
 
 ### Graphs
 ![](./Kinera%20H3.png)

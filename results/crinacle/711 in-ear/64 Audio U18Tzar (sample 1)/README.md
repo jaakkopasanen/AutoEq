@@ -7,12 +7,12 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -5.2 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         2.5 |
-|   2 | Peaking   |       174 | 0.47 |        -4.1 |
+|   2 | Peaking   |       173 | 0.47 |        -4.1 |
 |   3 | Peaking   |       822 | 1.38 |         1.5 |
 |   4 | Peaking   |      3979 | 1.77 |         4.8 |
 |   5 | Peaking   |      9246 | 3.09 |         5.9 |
 |   6 | Peaking   |      2751 | 5.96 |         1.7 |
-|   7 | Peaking   |      3389 | 5.72 |        -1   |
+|   7 | Peaking   |      3390 | 5.72 |        -1   |
 |   8 | Peaking   |      6571 | 6    |        -1.8 |
 |   9 | Peaking   |      7950 | 5.56 |         2.6 |
 |  10 | HighShelf |     10000 | 0.7  |        -3.8 |
@@ -22,7 +22,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.2 dB
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         2.4 |
+|   1 | Peaking |        31 | 1.41 |         2.3 |
 |   2 | Peaking |        62 | 1.41 |         0.5 |
 |   3 | Peaking |       125 | 1.41 |        -2.6 |
 |   4 | Peaking |       250 | 1.41 |        -3.8 |

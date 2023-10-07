@@ -2,27 +2,27 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.0 dB or -6.3 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.4 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         3.6 |
-|   2 | Peaking   |       100 | 0.24 |        -5   |
-|   3 | Peaking   |       863 | 1.33 |         7   |
+|   1 | LowShelf  |       105 | 0.7  |         3.7 |
+|   2 | Peaking   |        96 | 0.24 |        -5   |
+|   3 | Peaking   |       866 | 1.36 |         7   |
 |   4 | Peaking   |      1838 | 2.91 |        -2.3 |
-|   5 | Peaking   |      4089 | 5.66 |        -2   |
-|   6 | Peaking   |        38 | 3.6  |        -2.2 |
-|   7 | Peaking   |        77 | 1.95 |         0.5 |
-|   8 | Peaking   |      6597 | 6    |        -6.1 |
-|   9 | Peaking   |      8359 | 1.42 |         4.3 |
+|   5 | Peaking   |      4089 | 5.68 |        -2   |
+|   6 | Peaking   |        38 | 3.57 |        -2.1 |
+|   7 | Peaking   |        77 | 1.92 |         0.5 |
+|   8 | Peaking   |      6598 | 6    |        -6.1 |
+|   9 | Peaking   |      8353 | 1.42 |         4.3 |
 |  10 | HighShelf |     10000 | 0.7  |         6.2 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-11.9 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-12.0 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         0   |
+|   1 | Peaking |        31 | 1.41 |         0.1 |
 |   2 | Peaking |        62 | 1.41 |        -1.1 |
 |   3 | Peaking |       125 | 1.41 |        -2.9 |
 |   4 | Peaking |       250 | 1.41 |        -3.8 |

@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.3 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.6 |
-|   2 | Peaking   |        50 | 2.27 |         1.7 |
+|   2 | Peaking   |        50 | 2.28 |         1.7 |
 |   3 | Peaking   |       123 | 0.46 |        -3.5 |
-|   4 | Peaking   |       433 | 1.1  |         1.1 |
-|   5 | Peaking   |      8515 | 1.4  |         3.3 |
-|   6 | Peaking   |      2148 | 3.03 |         1.2 |
-|   7 | Peaking   |      2924 | 3.05 |        -1.3 |
-|   8 | Peaking   |      4961 | 6    |        -0.7 |
-|   9 | Peaking   |      6826 | 6    |         1   |
+|   4 | Peaking   |       435 | 1.11 |         1.1 |
+|   5 | Peaking   |      8536 | 1.4  |         3.3 |
+|   6 | Peaking   |      2150 | 3.05 |         1.2 |
+|   7 | Peaking   |      2928 | 3.07 |        -1.3 |
+|   8 | Peaking   |      4961 | 6    |        -0.6 |
+|   9 | Peaking   |      6825 | 6    |         1   |
 |  10 | HighShelf |     10000 | 0.7  |        -0.9 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.6 dB
 |   7 | Peaking |      2000 | 1.41 |         0.5 |
 |   8 | Peaking |      4000 | 1.41 |        -0.7 |
 |   9 | Peaking |      8000 | 1.41 |         3.4 |
-|  10 | Peaking |     16000 | 1.41 |        -1.3 |
+|  10 | Peaking |     16000 | 1.41 |        -1.2 |
 
 ### Graphs
 ![](./Sennheiser%20HD%20600.png)

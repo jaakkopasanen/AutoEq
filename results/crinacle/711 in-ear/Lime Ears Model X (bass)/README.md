@@ -8,11 +8,11 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.4 dB or -5.4 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         4.3 |
 |   2 | Peaking   |       215 | 0.46 |        -5   |
-|   3 | Peaking   |       930 | 1.4  |         2.4 |
-|   4 | Peaking   |      3058 | 1.27 |         5.2 |
+|   3 | Peaking   |       929 | 1.4  |         2.4 |
+|   4 | Peaking   |      3057 | 1.27 |         5.2 |
 |   5 | Peaking   |      6279 | 4.7  |         4   |
-|   6 | Peaking   |      4281 | 6    |         1.2 |
-|   7 | Peaking   |      4882 | 6    |        -1.9 |
+|   6 | Peaking   |      4280 | 6    |         1.2 |
+|   7 | Peaking   |      4883 | 6    |        -1.9 |
 |   8 | Peaking   |      7524 | 5.96 |        -1.1 |
 |   9 | Peaking   |     10000 | 6    |         0.7 |
 |  10 | HighShelf |     10000 | 0.7  |         3.9 |
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.6 dB
 |   7 | Peaking |      2000 | 1.41 |         2.2 |
 |   8 | Peaking |      4000 | 1.41 |         4.2 |
 |   9 | Peaking |      8000 | 1.41 |         1.1 |
-|  10 | Peaking |     16000 | 1.41 |         7.4 |
+|  10 | Peaking |     16000 | 1.41 |         7.5 |
 
 ### Graphs
 ![](./Lime%20Ears%20Model%20X%20(bass).png)

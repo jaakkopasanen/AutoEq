@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.5 dB or -6.5 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.4 |
-|   2 | Peaking   |       523 | 1.57 |         1.4 |
-|   3 | Peaking   |      2299 | 0.57 |         3.9 |
-|   4 | Peaking   |      2650 | 4.17 |        -7.3 |
-|   5 | Peaking   |      3237 | 2.48 |       -10.5 |
-|   6 | Peaking   |        83 | 3.53 |         1.4 |
-|   7 | Peaking   |      3948 | 6    |        -1.6 |
-|   8 | Peaking   |      5408 | 4.18 |         4.6 |
-|   9 | Peaking   |      7225 | 2.5  |        -3.6 |
+|   2 | Peaking   |       526 | 1.55 |         1.4 |
+|   3 | Peaking   |      2296 | 0.57 |         3.9 |
+|   4 | Peaking   |      2649 | 4.17 |        -7.3 |
+|   5 | Peaking   |      3236 | 2.49 |       -10.5 |
+|   6 | Peaking   |        83 | 3.54 |         1.4 |
+|   7 | Peaking   |      3946 | 6    |        -1.6 |
+|   8 | Peaking   |      5408 | 4.17 |         4.6 |
+|   9 | Peaking   |      7221 | 2.49 |        -3.6 |
 |  10 | HighShelf |     10000 | 0.7  |         1.7 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.8 dB
 |   7 | Peaking |      2000 | 1.41 |        -0.6 |
 |   8 | Peaking |      4000 | 1.41 |        -4.7 |
 |   9 | Peaking |      8000 | 1.41 |         0.3 |
-|  10 | Peaking |     16000 | 1.41 |         4.6 |
+|  10 | Peaking |     16000 | 1.41 |         4.7 |
 
 ### Graphs
 ![](./Audio-Technica%20ATH-EW9.png)

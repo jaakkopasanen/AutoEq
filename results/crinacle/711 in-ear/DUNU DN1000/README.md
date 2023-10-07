@@ -7,13 +7,13 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.1 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.1 |
-|   2 | Peaking   |        40 | 3.07 |         0.3 |
+|   2 | Peaking   |        40 | 3.1  |         0.4 |
 |   3 | Peaking   |       224 | 0.59 |        -3.5 |
-|   4 | Peaking   |      2259 | 1.21 |         3.3 |
+|   4 | Peaking   |      2258 | 1.21 |         3.3 |
 |   5 | Peaking   |      3872 | 4.01 |         4.8 |
-|   6 | Peaking   |       458 | 1.68 |        -0.4 |
-|   7 | Peaking   |       892 | 3.1  |         1.1 |
-|   8 | Peaking   |      6112 | 5.52 |         2.2 |
+|   6 | Peaking   |       458 | 1.69 |        -0.4 |
+|   7 | Peaking   |       892 | 3.1  |         1   |
+|   8 | Peaking   |      6113 | 5.52 |         2.2 |
 |   9 | Peaking   |      7517 | 2.15 |        -3.3 |
 |  10 | HighShelf |     10000 | 0.7  |         5.9 |
 
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-11.8 d
 |   7 | Peaking |      2000 | 1.41 |         2   |
 |   8 | Peaking |      4000 | 1.41 |         4   |
 |   9 | Peaking |      8000 | 1.41 |        -2.2 |
-|  10 | Peaking |     16000 | 1.41 |        11.9 |
+|  10 | Peaking |     16000 | 1.41 |        11.8 |
 
 ### Graphs
 ![](./DUNU%20DN1000.png)

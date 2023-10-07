@@ -10,10 +10,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.5 dB, respectivel
 |   2 | Peaking   |       201 | 0.45 |        -6.8 |
 |   3 | Peaking   |       799 | 2.46 |         1.1 |
 |   4 | Peaking   |      3432 | 4.37 |        -2.6 |
-|   5 | Peaking   |      7214 | 0.27 |         6.1 |
+|   5 | Peaking   |      7215 | 0.27 |         6.1 |
 |   6 | Peaking   |        36 | 1.97 |        -0.2 |
 |   7 | Peaking   |      1297 | 4.08 |        -0.5 |
-|   8 | Peaking   |      4724 | 4.73 |         1.3 |
+|   8 | Peaking   |      4723 | 4.73 |         1.3 |
 |   9 | Peaking   |      5938 | 6    |        -1.5 |
 |  10 | HighShelf |     10000 | 0.7  |        -1.3 |
 

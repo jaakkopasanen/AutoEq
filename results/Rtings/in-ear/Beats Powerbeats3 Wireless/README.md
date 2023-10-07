@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-12.1 d
 |   7 | Peaking |      2000 | 1.41 |        -2.5 |
 |   8 | Peaking |      4000 | 1.41 |         4.9 |
 |   9 | Peaking |      8000 | 1.41 |         1.9 |
-|  10 | Peaking |     16000 | 1.41 |        12   |
+|  10 | Peaking |     16000 | 1.41 |        11.9 |
 
 ### Graphs
 ![](./Beats%20Powerbeats3%20Wireless.png)

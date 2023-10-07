@@ -1175,8 +1175,8 @@ M5 S3	Fir Audio M5 (sample 3)	in-ear
 M5 S5	Fir Audio M5 (sample 4)	in-ear
 M5 S6	Fir Audio M5 (sample 5)	in-ear
 M5 S7	Fir Audio M5 (sample 7)	in-ear
-M50X	Audio-Technica ATH-M50x	over-ear
 M50x	Audio-Technica ATH-M50x (sample 1)	over-ear
+M50X	Audio-Technica ATH-M50x	over-ear
 M50x S2	Audio-Technica ATH-M50x (sample 2)	over-ear
 M50xBT	Audio-Technica ATH-M50xBT	over-ear
 M51D	Advanced M51D	in-ear
@@ -1372,8 +1372,8 @@ NDH 20	Neumann NDH20	over-ear
 NDH20	Neumann NDH20	over-ear
 Nekocake	Moondrop Nekocake	in-ear
 Nekocake Acht Acht Limited	Moondrop Nekocake	in-ear
-nemesis	Empire Ears Nemesis	in-ear
 Nemesis	Empire Ears Nemesis	in-ear
+nemesis	Empire Ears Nemesis	in-ear
 Neo	SeeAudio Neo	in-ear
 Neo BG	Shozy & Neo BG	in-ear
 Neon	KBEar Neon	in-ear
@@ -2088,16 +2088,16 @@ Zero Salnotes S2	7Hz Salnotes Zero (sample 2)	in-ear
 Zero Salnotes S3	7Hz Salnotes Zero (sample 3)	in-ear
 Zero Tanch	Tanchjim Zero	in-ear
 Zero Tanchjim	Tanchjim Zero	in-ear
-Zero TE	Truthear Zero	in-ear
-Zero TE S10	Truthear Zero (sample 10)	in-ear
-Zero TE S2	Truthear Zero (sample 2)	in-ear
-Zero TE S3	Truthear Zero (sample 3)	in-ear
-Zero TE S4	Truthear Zero (sample 4)	in-ear
-Zero TE S5	Truthear Zero (sample 5)	in-ear
-Zero TE S6	Truthear Zero (sample 6)	in-ear
-Zero TE S7	Truthear Zero (sample 7)	in-ear
-Zero TE S8	Truthear Zero (sample 8)	in-ear
-Zero TE S9	Truthear Zero (sample 9)	in-ear
+Zero TE	Truthear x Crinacle Zero (sample 1)	in-ear
+Zero TE S10	Truthear x Crinacle Zero (sample 10)	in-ear
+Zero TE S2	Truthear x Crinacle Zero (sample 2)	in-ear
+Zero TE S3	Truthear x Crinacle Zero (sample 3)	in-ear
+Zero TE S4	Truthear x Crinacle Zero (sample 4)	in-ear
+Zero TE S5	Truthear x Crinacle Zero (sample 5)	in-ear
+Zero TE S6	Truthear x Crinacle Zero (sample 6)	in-ear
+Zero TE S7	Truthear x Crinacle Zero (sample 7)	in-ear
+Zero TE S8	Truthear x Crinacle Zero (sample 8)	in-ear
+Zero TE S9	Truthear x Crinacle Zero (sample 9)	in-ear
 ZeroRed S1	Truthear x Crinacle Zero RED (sample 1)	in-ear
 ZeroRed S1 10ohm	Truthear x Crinacle Zero RED (10 ohm resistor) (sample 1)	in-ear
 ZeroRed S10	Truthear x Crinacle Zero RED (sample 10)	in-ear

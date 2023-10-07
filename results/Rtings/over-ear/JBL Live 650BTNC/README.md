@@ -8,13 +8,13 @@ You can use filters 1-5 or 1-10. Apply preamp of -2.7 dB or -2.8 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |        -4.9 |
 |   2 | Peaking   |       667 | 1.31 |         2.1 |
-|   3 | Peaking   |      1290 | 2.09 |        -3.4 |
+|   3 | Peaking   |      1291 | 2.09 |        -3.4 |
 |   4 | Peaking   |      2486 | 2.49 |         3.3 |
 |   5 | Peaking   |      3407 | 4.55 |        -4.1 |
-|   6 | Peaking   |        54 | 2.48 |         1.7 |
-|   7 | Peaking   |       118 | 1.9  |        -1.3 |
-|   8 | Peaking   |      6240 | 4.24 |        -6.9 |
-|   9 | Peaking   |      7738 | 1.08 |         2.8 |
+|   6 | Peaking   |        54 | 2.46 |         1.6 |
+|   7 | Peaking   |       117 | 1.9  |        -1.3 |
+|   8 | Peaking   |      6235 | 4.21 |        -6.9 |
+|   9 | Peaking   |      7695 | 1.08 |         2.7 |
 |  10 | HighShelf |     10000 | 0.7  |         0.8 |
 
 ### Fixed Band EQs
@@ -28,10 +28,10 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.6 dB
 |   4 | Peaking |       250 | 1.41 |         0.3 |
 |   5 | Peaking |       500 | 1.41 |         1.9 |
 |   6 | Peaking |      1000 | 1.41 |        -1.6 |
-|   7 | Peaking |      2000 | 1.41 |         1.5 |
+|   7 | Peaking |      2000 | 1.41 |         1.4 |
 |   8 | Peaking |      4000 | 1.41 |        -1.8 |
 |   9 | Peaking |      8000 | 1.41 |         0.3 |
-|  10 | Peaking |     16000 | 1.41 |         4.6 |
+|  10 | Peaking |     16000 | 1.41 |         4.5 |
 
 ### Graphs
 ![](./JBL%20Live%20650BTNC.png)

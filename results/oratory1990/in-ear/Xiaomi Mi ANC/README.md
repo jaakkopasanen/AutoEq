@@ -2,19 +2,19 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.6 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.5 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         6.1 |
-|   2 | Peaking   |       139 | 0.79 |         2.3 |
-|   3 | Peaking   |      1198 | 0.38 |       -15.1 |
-|   4 | Peaking   |      3044 | 0.37 |        20   |
-|   5 | Peaking   |      3632 | 1.73 |       -17.4 |
-|   6 | Peaking   |      1688 | 2.9  |        -0.6 |
-|   7 | Peaking   |      2435 | 6    |         1.2 |
-|   8 | Peaking   |      5853 | 5.86 |         1.2 |
-|   9 | Peaking   |      9267 | 3.67 |         3   |
+|   1 | LowShelf  |       105 | 0.7  |         6   |
+|   2 | Peaking   |       138 | 0.76 |         2.3 |
+|   3 | Peaking   |      1198 | 0.38 |       -15   |
+|   4 | Peaking   |      3055 | 0.37 |        20   |
+|   5 | Peaking   |      3635 | 1.74 |       -17.4 |
+|   6 | Peaking   |      3226 | 5.51 |        -1.2 |
+|   7 | Peaking   |      3453 | 6    |         1   |
+|   8 | Peaking   |      5846 | 5.95 |         1.2 |
+|   9 | Peaking   |      9271 | 3.7  |         3   |
 |  10 | HighShelf |     10000 | 0.7  |        -6.1 |
 
 ### Fixed Band EQs
@@ -23,15 +23,15 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-8.0 dB
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         6.3 |
-|   2 | Peaking |        62 | 1.41 |         4.8 |
-|   3 | Peaking |       125 | 1.41 |         3   |
+|   2 | Peaking |        62 | 1.41 |         4.7 |
+|   3 | Peaking |       125 | 1.41 |         2.9 |
 |   4 | Peaking |       250 | 1.41 |        -1.4 |
 |   5 | Peaking |       500 | 1.41 |        -3.6 |
-|   6 | Peaking |      1000 | 1.41 |        -6.3 |
-|   7 | Peaking |      2000 | 1.41 |         2.6 |
+|   6 | Peaking |      1000 | 1.41 |        -6.4 |
+|   7 | Peaking |      2000 | 1.41 |         2.7 |
 |   8 | Peaking |      4000 | 1.41 |        -2.6 |
 |   9 | Peaking |      8000 | 1.41 |         8.7 |
-|  10 | Peaking |     16000 | 1.41 |        -7.7 |
+|  10 | Peaking |     16000 | 1.41 |        -7.8 |
 
 ### Graphs
 ![](./Xiaomi%20Mi%20ANC.png)

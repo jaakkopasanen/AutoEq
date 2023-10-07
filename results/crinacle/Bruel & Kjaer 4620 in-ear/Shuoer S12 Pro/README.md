@@ -2,19 +2,19 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -5.9 dB or -5.8 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -5.7 dB or -5.6 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        -2.9 |
-|   2 | Peaking   |        33 | 0.18 |        -2.4 |
-|   3 | Peaking   |       699 | 0.53 |         7.9 |
-|   4 | Peaking   |      2373 | 0.23 |        -9.5 |
-|   5 | Peaking   |      3395 | 1.2  |        13.8 |
-|   6 | Peaking   |       125 | 3.24 |         1.2 |
-|   7 | Peaking   |       170 | 2.74 |        -1.2 |
-|   8 | Peaking   |      2067 | 4.49 |        -0.8 |
-|   9 | Peaking   |      9421 | 2.32 |         1.9 |
+|   1 | LowShelf  |       105 | 0.7  |        -3.6 |
+|   2 | Peaking   |        46 | 0.18 |        -1.7 |
+|   3 | Peaking   |       680 | 0.54 |         7.5 |
+|   4 | Peaking   |      2413 | 0.22 |        -8.6 |
+|   5 | Peaking   |      3402 | 1.23 |        12.9 |
+|   6 | Peaking   |       125 | 3.17 |         1.2 |
+|   7 | Peaking   |       166 | 2.8  |        -1.2 |
+|   8 | Peaking   |      2053 | 4.46 |        -0.9 |
+|   9 | Peaking   |      9418 | 2.33 |         1.9 |
 |  10 | HighShelf |     10000 | 0.7  |        -3.9 |
 
 ### Fixed Band EQs

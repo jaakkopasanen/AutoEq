@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.8 dB
 |   7 | Peaking |      2000 | 1.41 |        -2.8 |
 |   8 | Peaking |      4000 | 1.41 |         4.8 |
 |   9 | Peaking |      8000 | 1.41 |         3.4 |
-|  10 | Peaking |     16000 | 1.41 |        -9.8 |
+|  10 | Peaking |     16000 | 1.41 |        -9.7 |
 
 ### Graphs
 ![](./Kinera%20Nanna%202.0.png)

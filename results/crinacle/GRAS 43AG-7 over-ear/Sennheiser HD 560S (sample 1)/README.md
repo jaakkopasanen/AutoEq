@@ -8,12 +8,12 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.7 dB or -5.7 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         9.2 |
 |   2 | Peaking   |        49 | 0.45 |        -6.7 |
-|   3 | Peaking   |      1112 | 3.51 |        -1.7 |
-|   4 | Peaking   |      4719 | 3.54 |        -4.1 |
+|   3 | Peaking   |      1111 | 3.51 |        -1.7 |
+|   4 | Peaking   |      4718 | 3.53 |        -4.1 |
 |   5 | Peaking   |     10000 | 0.88 |         5.5 |
-|   6 | Peaking   |      1401 | 5.81 |        -1.1 |
+|   6 | Peaking   |      1400 | 5.79 |        -1.1 |
 |   7 | Peaking   |      1972 | 3.76 |         2.2 |
-|   8 | Peaking   |      3406 | 5.62 |        -1.4 |
+|   8 | Peaking   |      3405 | 5.62 |        -1.4 |
 |   9 | Peaking   |      3827 | 6    |         1.1 |
 |  10 | HighShelf |     10000 | 0.7  |        -4.6 |
 
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.7 dB
 |   7 | Peaking |      2000 | 1.41 |         1.9 |
 |   8 | Peaking |      4000 | 1.41 |        -2.4 |
 |   9 | Peaking |      8000 | 1.41 |         4.6 |
-|  10 | Peaking |     16000 | 1.41 |        -5.5 |
+|  10 | Peaking |     16000 | 1.41 |        -5.4 |
 
 ### Graphs
 ![](./Sennheiser%20HD%20560S%20(sample%201).png)

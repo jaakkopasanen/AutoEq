@@ -18,7 +18,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -4.9 dB or -5.8 dB, respectivel
 |  10 | HighShelf |     10000 | 0.7  |         5.7 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-11.0 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-11.1 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-11.0 d
 |   7 | Peaking |      2000 | 1.41 |         2.4 |
 |   8 | Peaking |      4000 | 1.41 |        -1.6 |
 |   9 | Peaking |      8000 | 1.41 |        -4.4 |
-|  10 | Peaking |     16000 | 1.41 |        11.2 |
+|  10 | Peaking |     16000 | 1.41 |        11.3 |
 
 ### Graphs
 ![](./Sony%20MDR-1000X%20(wireless,%20ANC%20off).png)

@@ -9,12 +9,12 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.1 dB, respectivel
 |   1 | LowShelf  |       105 | 0.7  |         1.3 |
 |   2 | Peaking   |       108 | 1.19 |        -4.1 |
 |   3 | Peaking   |       528 | 0.52 |        -2.1 |
-|   4 | Peaking   |      1604 | 1.83 |         3.8 |
+|   4 | Peaking   |      1603 | 1.83 |         3.8 |
 |   5 | Peaking   |      3592 | 3.22 |         6   |
-|   6 | Peaking   |        44 | 3.39 |        -0.7 |
-|   7 | Peaking   |      2537 | 6    |        -1.1 |
+|   6 | Peaking   |        44 | 3.4  |        -0.7 |
+|   7 | Peaking   |      2536 | 6    |        -1.1 |
 |   8 | Peaking   |      5471 | 6    |        -5.1 |
-|   9 | Peaking   |      6459 | 5.85 |         2.8 |
+|   9 | Peaking   |      6458 | 5.85 |         2.8 |
 |  10 | HighShelf |     10000 | 0.7  |         0.4 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.6 dB
 |   7 | Peaking |      2000 | 1.41 |         2.2 |
 |   8 | Peaking |      4000 | 1.41 |         3.1 |
 |   9 | Peaking |      8000 | 1.41 |         0.4 |
-|  10 | Peaking |     16000 | 1.41 |        -0.7 |
+|  10 | Peaking |     16000 | 1.41 |        -0.8 |
 
 ### Graphs
 ![](./ZMF%20Verite%20Closed%20(hybrid%20Universe%20earpads).png)

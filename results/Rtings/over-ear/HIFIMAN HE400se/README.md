@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.4 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.8 |
-|   2 | Peaking   |        62 | 1.27 |        -2.7 |
-|   3 | Peaking   |       283 | 0.32 |        -3.9 |
-|   4 | Peaking   |       439 | 1.17 |         3.1 |
-|   5 | Peaking   |      1806 | 1.43 |         5.1 |
-|   6 | Peaking   |      2225 | 3.44 |         0.5 |
-|   7 | Peaking   |      2754 | 4    |        -1.7 |
-|   8 | Peaking   |      4305 | 2.68 |         2.1 |
-|   9 | Peaking   |      6935 | 6    |        -1.4 |
+|   2 | Peaking   |        61 | 1.43 |        -2.2 |
+|   3 | Peaking   |       232 | 0.27 |        -3.5 |
+|   4 | Peaking   |       438 | 1.52 |         2.7 |
+|   5 | Peaking   |      1810 | 1.41 |         5   |
+|   6 | Peaking   |      2183 | 3.33 |         0.5 |
+|   7 | Peaking   |      2760 | 3.98 |        -1.7 |
+|   8 | Peaking   |      4304 | 2.69 |         2.1 |
+|   9 | Peaking   |      6930 | 6    |        -1.4 |
 |  10 | HighShelf |     10000 | 0.7  |        -0.6 |
 
 ### Fixed Band EQs
@@ -30,8 +30,8 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.2 dB
 |   6 | Peaking |      1000 | 1.41 |        -1   |
 |   7 | Peaking |      2000 | 1.41 |         4.2 |
 |   8 | Peaking |      4000 | 1.41 |         0.6 |
-|   9 | Peaking |      8000 | 1.41 |        -0.5 |
-|  10 | Peaking |     16000 | 1.41 |        -1.4 |
+|   9 | Peaking |      8000 | 1.41 |        -0.4 |
+|  10 | Peaking |     16000 | 1.41 |        -1.3 |
 
 ### Graphs
 ![](./HIFIMAN%20HE400se.png)
