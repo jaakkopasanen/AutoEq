@@ -3,6 +3,9 @@
 import os
 import sys
 from pathlib import Path
+
+from measurements.PromptListItem import PromptListItem
+
 if str(Path(__file__).resolve().parent) not in sys.path:
     sys.path.insert(1, str(Path(__file__).resolve().parent))
 import pandas as pd
@@ -23,6 +26,10 @@ from measurements.name_prompt import NamePrompt
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 
+class UnknownManufacturerError(Exception):
+    pass
+
+
 class Crawler(ABC):
     def __init__(self, driver=None):
         self.driver = driver
@@ -34,9 +41,10 @@ class Crawler(ABC):
         self.urls = self.get_urls()
 
         # UI
-        self.prompts = widgets.VBox([])
-        self.iframe = widgets.VBox([])
-        self.widget = widgets.HBox([self.prompts, self.iframe])
+        self.prompts = []
+        self.prompt_list = None
+        self.active_list_item = None
+        self.widget = widgets.HBox([])
 
     @staticmethod
     @abstractmethod
@@ -109,6 +117,26 @@ class Crawler(ABC):
         """
         pass
 
+    def reload_ui(self):
+        if self.prompt_list is None:
+            self.prompt_list = widgets.VBox([prompt.widget for prompt in self.prompts])
+        children = [self.prompt_list]
+        if self.active_list_item:
+            children.append(self.active_list_item.name_prompt.widget)
+        self.widget.children = children
+
+    def switch_prompt(self, prompt_list_item):
+        for i, item in enumerate(self.prompts):
+            item.inactive_style()
+        self.active_list_item = prompt_list_item
+        if self.active_list_item:
+            self.active_list_item.active_style()
+        self.reload_ui()
+
+    def next_prompt(self, is_ignored):
+        ix = self.prompts.index(self.active_list_item)
+        self.switch_prompt(self.prompts[ix + 1] if ix + 1 < len(self.prompts) else None)
+
     @abstractmethod
     def process_one(self, item, url):
         """Downloads a single URL and processes it
@@ -132,10 +160,14 @@ class Crawler(ABC):
     def prompt_callback(self, false_name, url):
         def callback(true_name, form):
             if form == 'ignore':
+                self.active_list_item.resolution = 'ignore'
+                self.next_prompt(True)
                 self.update_name_index(NameItem(false_name, None, form))
                 return
             if self.manufacturers.find(true_name, ignore_case=False)[0] is None:
                 raise ValueError(f'Manufacturer of "{true_name}" not recognized!')
+            self.active_list_item.resolution = 'success'
+            self.next_prompt(False)
             item = NameItem(false_name, true_name, form)
             self.process_one(NameItem(false_name, true_name, form), url)
             self.update_name_index(item)
@@ -153,7 +185,6 @@ class Crawler(ABC):
         Returns:
             None
         """
-        prompts = []
         unknown_manufacturers = []
         for false_name, url in self.urls.items():
             item = self.name_index.find_one(false_name=false_name)
@@ -169,7 +200,7 @@ class Crawler(ABC):
                 if manufacturer:
                     model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE).strip()
                     name_proposals = self.get_name_proposals(false_name)
-                    similar_names = self.get_name_proposals(false_name, n=6, normalize_digits=True, threshold=0)
+                    similar_names = self.get_name_proposals(false_name, n=4, normalize_digits=True, threshold=0)
                     similar_names = [item.true_name for item in similar_names.items]
                 else:
                     unknown_manufacturers.append(intermediate_name)
@@ -177,24 +208,30 @@ class Crawler(ABC):
                     name_proposals = None
                     similar_names = None
                 # Not sure about the name, ask user
-                prompts.append(NamePrompt(
-                    model,
-                    self.prompt_callback(false_name, url),
-                    manufacturer=manufacturer,
-                    name_proposals=name_proposals,
-                    search_callback=self.search,
-                    false_name=false_name,
-                    similar_names=similar_names
-                ).widget)
+                self.prompts.append(
+                    PromptListItem(
+                        NamePrompt(
+                            model,
+                            self.prompt_callback(false_name, url),
+                            manufacturer=manufacturer,
+                            name_proposals=name_proposals,
+                            search_callback=self.search,
+                            false_name=false_name,
+                            similar_names=similar_names
+                        ),
+                        self.switch_prompt)
+                )
             else:
                 existing = self.existing.find_one(true_name=item.true_name)
                 if not new_only or not existing:
                     # Name found in name index but the measurement doesn't exist
                     self.process_one(item, url)
         if len(unknown_manufacturers) > 0:
-            print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
-            print('Add them to manufacturers.tsv and run this cell again')
-        self.prompts.children = prompts
+            err = 'Headphones with unknown manufacturers:\n  '
+            err += '\n  '.join(unknown_manufacturers)
+            err += '\nAdd them to manufacturers.tsv and run this cell again'
+            raise UnknownManufacturerError(err)
+        self.reload_ui()
 
     def search(self, name):
         quoted = urllib.parse.quote_plus(name)

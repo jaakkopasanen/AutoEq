@@ -7,12 +7,18 @@ import re
 import numpy as np
 import requests
 from autoeq.frequency_response import FrequencyResponse
+from measurements.PromptListItem import PromptListItem
+
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_prompt import NamePrompt
 from measurements.name_index import NameIndex, NameItem
-from measurements.crawler import Crawler
+from measurements.crawler import Crawler, UnknownManufacturerError
 
 DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+
+
+class UnknownRigError(Exception):
+    pass
 
 
 class CrinacleCrawler(Crawler):
@@ -211,8 +217,12 @@ class CrinacleCrawler(Crawler):
     def prompt_callback(self, false_name, file_paths, target_dir):
         def callback(true_name, form):
             if form == 'ignore':
+                self.active_list_item.resolution = 'ignore'
+                self.next_prompt(True)
                 self.update_name_index(NameItem(false_name, None, form))
                 return
+            self.active_list_item.resolution = 'success'
+            self.next_prompt(False)
             item = NameItem(false_name, true_name, form)
             self.process_one(item, file_paths, target_dir=target_dir)
             self.update_name_index(item)
@@ -226,7 +236,6 @@ class CrinacleCrawler(Crawler):
         Returns:
             None
         """
-        prompts = []
         unknown_manufacturers = []
         for false_name, rigs_and_file_paths in self.urls.items():
             for rig, file_paths in rigs_and_file_paths.items():
@@ -244,6 +253,8 @@ class CrinacleCrawler(Crawler):
                     elif rig == '711':
                         target_dir = os.path.join(DIR_PATH, 'data', 'in-ear', '711')
                         form = 'in-ear'
+                    else:
+                        raise UnknownRigError()
 
                     item = self.name_index.find_one(false_name=false_name)
                     if item and item.form == 'ignore':
@@ -260,7 +271,7 @@ class CrinacleCrawler(Crawler):
                             model = model.strip()
                             name_proposals = self.get_name_proposals(intermediate_name)
                             similar_names = self.get_name_proposals(
-                                intermediate_name, n=6, normalize_digits=True, normalize_extras=True, threshold=0)
+                                intermediate_name, n=4, normalize_digits=True, normalize_extras=True, threshold=0)
                             similar_names = [item.true_name for item in similar_names.items]
                         else:
                             unknown_manufacturers.append(intermediate_name)
@@ -268,16 +279,20 @@ class CrinacleCrawler(Crawler):
                             name_proposals = None
                             similar_names = None
                         # Not sure about the name, ask user
-                        prompts.append(NamePrompt(
-                            model,
-                            self.prompt_callback(false_name, file_paths, target_dir),
-                            manufacturer=manufacturer,
-                            name_proposals=name_proposals,
-                            search_callback=self.search,
-                            false_name=false_name,
-                            form=form,
-                            similar_names=similar_names
-                            ).widget)
+                        self.prompts.append(
+                            PromptListItem(
+                                NamePrompt(
+                                    model,
+                                    self.prompt_callback(false_name, file_paths, target_dir),
+                                    manufacturer=manufacturer,
+                                    name_proposals=name_proposals,
+                                    search_callback=self.search,
+                                    false_name=false_name,
+                                    form=form,
+                                    similar_names=similar_names
+                                ),
+                                self.switch_prompt
+                            ))
                     else:
                         existing = self.existing.find_one(true_name=item.true_name)
                         if not existing:
@@ -286,10 +301,11 @@ class CrinacleCrawler(Crawler):
                     print(f'Processing failed for "{false_name}"')
                     raise err
         if len(unknown_manufacturers) > 0:
-            print('Headphones with unknown manufacturers\n  ' + '\n  '.join(unknown_manufacturers))
-            print('Add them to manufacturers.tsv and run this cell again')
-        self.prompts.children = prompts
-        print('N PROMPTS', len(prompts))
+            err = 'Headphones with unknown manufacturers:\n  '
+            err += '\n  '.join(unknown_manufacturers)
+            err += '\nAdd them to manufacturers.tsv and run this cell again'
+            raise UnknownManufacturerError(err)
+        self.reload_ui()
 
     def intermediate_name(self, false_name):
         """Gets intermediate name with false name."""
