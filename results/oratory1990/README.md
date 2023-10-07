@@ -494,7 +494,7 @@
 - [Sennheiser HD 820](./over-ear/Sennheiser%20HD%20820)
 - [Sennheiser HD 8XX](./over-ear/Sennheiser%20HD%208XX)
 - [Sennheiser HD25-1 II](./over-ear/Sennheiser%20HD25-1%20II)
-- [Sennheiser HE 1 Orpheus 2](./over-ear/Sennheiser%20HE%201%20Orpheus%202/Sennheiser%20HE%201%20Orpheus%202)
+- [Sennheiser HE 1 Orpheus 2](./over-ear/Sennheiser%20HE%201%20Orpheus%202)
 - [Sennheiser HE 90 Orpheus](./over-ear/Sennheiser%20HE%2090%20Orpheus)
 - [Sennheiser IE 4](./in-ear/Sennheiser%20IE%204)
 - [Sennheiser IE 40 Pro](./in-ear/Sennheiser%20IE%2040%20Pro)

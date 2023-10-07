@@ -192,6 +192,7 @@ from the same source.
 - [AKG K1000](./Innerfidelity/over-ear/AKG%20K1000) by Innerfidelity
 - [AKG K167 Tiesto](./Innerfidelity/over-ear/AKG%20K167%20Tiesto) by Innerfidelity
 - [AKG K240 MKII](./oratory1990/over-ear/AKG%20K240%20MKII) by oratory1990
+- [AKG K240 MKII](./Innerfidelity/over-ear/AKG%20K240%20MKII) by Innerfidelity
 - [AKG K240 MKII](./Rtings/over-ear/AKG%20K240%20MKII) by Rtings
 - [AKG K240 MKII](./Headphone.com%20Legacy/over-ear/AKG%20K240%20MKII) by Headphone.com Legacy
 - [AKG K240 Monitor](./Innerfidelity/over-ear/AKG%20K240%20Monitor) by Innerfidelity
@@ -237,6 +238,7 @@ from the same source.
 - [AKG K550](./Headphone.com%20Legacy/over-ear/AKG%20K550) by Headphone.com Legacy
 - [AKG K553](./oratory1990/over-ear/AKG%20K553) by oratory1990
 - [AKG K601](./oratory1990/over-ear/AKG%20K601) by oratory1990
+- [AKG K601](./Innerfidelity/over-ear/AKG%20K601) by Innerfidelity
 - [AKG K601](./Headphone.com%20Legacy/over-ear/AKG%20K601) by Headphone.com Legacy
 - [AKG K601 (Dekoni fenestrated sheepskin earpads)](./oratory1990/over-ear/AKG%20K601%20(Dekoni%20fenestrated%20sheepskin%20earpads)) by oratory1990
 - [AKG K601 (Dekoni sheepskin earpads)](./oratory1990/over-ear/AKG%20K601%20(Dekoni%20sheepskin%20earpads)) by oratory1990
@@ -949,6 +951,7 @@ from the same source.
 - [Big Bus Earbuds](./crinacle/711%20in-ear/Big%20Bus%20Earbuds) by crinacle on 711
 - [BKHC BK9](./Innerfidelity/over-ear/BKHC%20BK9) by Innerfidelity
 - [Bloc Roc Galvanize S2](./Innerfidelity/over-ear/Bloc%20Roc%20Galvanize%20S2) by Innerfidelity
+- [BLON Annotation](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20Annotation) by crinacle on Bruel & Kjaer 4620
 - [BLON Annotation](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/BLON%20Annotation/BLON%20Annotation) by crinacle on Bruel & Kjaer 4620
 - [BLON B20](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B20) by crinacle on GRAS 43AG-7
 - [BLON B60](./crinacle/GRAS%2043AG-7%20over-ear/BLON%20B60) by crinacle on GRAS 43AG-7
@@ -1032,7 +1035,7 @@ from the same source.
 - [Bowers & Wilkins P7](./Rtings/over-ear/Bowers%20&%20Wilkins%20P7) by Rtings
 - [Bowers & Wilkins P7 Wireless (wired)](./Innerfidelity/over-ear/Bowers%20&%20Wilkins%20P7%20Wireless%20(wired)) by Innerfidelity
 - [Bowers & Wilkins P7 Wireless (wireless)](./Innerfidelity/over-ear/Bowers%20&%20Wilkins%20P7%20Wireless%20(wireless)) by Innerfidelity
-- [Bowers & Wilkins PI7](./Rtings/in-ear/Bowers%20&%20Wilkins%20PI7) by Rtings
+- [Bowers & Wilkins Pi7](./Rtings/in-ear/Bowers%20&%20Wilkins%20Pi7) by Rtings
 - [Bowers & Wilkins Pi7 S2](./Rtings/in-ear/Bowers%20&%20Wilkins%20Pi7%20S2) by Rtings
 - [Bowers & Wilkins PX](./crinacle/GRAS%2043AG-7%20over-ear/Bowers%20&%20Wilkins%20PX) by crinacle on GRAS 43AG-7
 - [Bowers & Wilkins PX](./Rtings/over-ear/Bowers%20&%20Wilkins%20PX) by Rtings
@@ -1327,6 +1330,7 @@ from the same source.
 - [DUNU Falcon Pro (Reference filter)](./crinacle/711%20in-ear/DUNU%20Falcon%20Pro%20(Reference%20filter)) by crinacle on 711
 - [DUNU Falcon Pro (Transparency filter)](./crinacle/711%20in-ear/DUNU%20Falcon%20Pro%20(Transparency%20filter)) by crinacle on 711
 - [DUNU Kima](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/DUNU%20Kima) by crinacle on Bruel & Kjaer 4620
+- [DUNU Kima](./crinacle/711%20in-ear/DUNU%20Kima) by crinacle on 711
 - [DUNU Luna](./crinacle/711%20in-ear/DUNU%20Luna) by crinacle on 711
 - [DUNU SA6 (atmospheric Immersion mode)](./crinacle/711%20in-ear/DUNU%20SA6%20(atmospheric%20Immersion%20mode)) by crinacle on 711
 - [DUNU SA6 (default mode)](./crinacle/711%20in-ear/DUNU%20SA6%20(default%20mode)) by crinacle on 711
@@ -1898,6 +1902,7 @@ from the same source.
 - [Grado The Hemp Headphone](./crinacle/GRAS%2043AG-7%20over-ear/Grado%20The%20Hemp%20Headphone) by crinacle on GRAS 43AG-7
 - [Grado The Hemp Headphone](./Rtings/over-ear/Grado%20The%20Hemp%20Headphone) by Rtings
 - [Grell Audio TWS 1](./crinacle/711%20in-ear/Grell%20Audio%20TWS%201) by crinacle on 711
+- [GuideRay GR-I](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/GuideRay%20GR-I) by crinacle on Bruel & Kjaer 4620
 - [GuideRay GR-I](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/GuideRay%20GR-I/GuideRay%20GR-I) by crinacle on Bruel & Kjaer 4620
 - [Harman Kardon FLY ANC](./crinacle/GRAS%2043AG-7%20over-ear/Harman%20Kardon%20FLY%20ANC) by crinacle on GRAS 43AG-7
 - [Harman Kardon NC](./Rtings/over-ear/Harman%20Kardon%20NC) by Rtings
@@ -2359,6 +2364,7 @@ from the same source.
 - [Kaldas Research Conquest RR1](./oratory1990/over-ear/Kaldas%20Research%20Conquest%20RR1) by oratory1990
 - [KBEar F1](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEar%20F1) by crinacle on Bruel & Kjaer 4620
 - [KBEar Neon](./crinacle/711%20in-ear/KBEar%20Neon) by crinacle on 711
+- [KBEAR Qinglong](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong) by crinacle on Bruel & Kjaer 4620
 - [KBEAR Qinglong](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong/KBEAR%20Qinglong) by crinacle on Bruel & Kjaer 4620
 - [KEF M200](./Innerfidelity/in-ear/KEF%20M200) by Innerfidelity
 - [KEF M500](./Innerfidelity/over-ear/KEF%20M500) by Innerfidelity
@@ -3212,6 +3218,7 @@ from the same source.
 - [Razer Barracuda X](./Rtings/over-ear/Razer%20Barracuda%20X) by Rtings
 - [Razer Barracuda X 2021](./Rtings/over-ear/Razer%20Barracuda%20X%202021) by Rtings
 - [Razer BlackShark V2](./Rtings/over-ear/Razer%20BlackShark%20V2) by Rtings
+- [Razer BlackShark V2 HyperSpeed](./Rtings/over-ear/Razer%20BlackShark%20V2%20HyperSpeed) by Rtings
 - [Razer BlackShark V2 Pro](./crinacle/GRAS%2043AG-7%20over-ear/Razer%20BlackShark%20V2%20Pro) by crinacle on GRAS 43AG-7
 - [Razer BlackShark V2 Pro](./Rtings/over-ear/Razer%20BlackShark%20V2%20Pro) by Rtings
 - [Razer BlackShark V2 Pro 2023](./Rtings/over-ear/Razer%20BlackShark%20V2%20Pro%202023) by Rtings
@@ -3547,7 +3554,7 @@ from the same source.
 - [Sennheiser HD1 In-Ear Wireless](./Rtings/in-ear/Sennheiser%20HD1%20In-Ear%20Wireless) by Rtings
 - [Sennheiser HD25-1 II](./oratory1990/over-ear/Sennheiser%20HD25-1%20II) by oratory1990
 - [Sennheiser HD600 2020](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD600%202020) by crinacle on GRAS 43AG-7
-- [Sennheiser HE 1 Orpheus 2](./oratory1990/over-ear/Sennheiser%20HE%201%20Orpheus%202/Sennheiser%20HE%201%20Orpheus%202) by oratory1990
+- [Sennheiser HE 1 Orpheus 2](./oratory1990/over-ear/Sennheiser%20HE%201%20Orpheus%202) by oratory1990
 - [Sennheiser HE 1 Orpheus 2](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HE%201%20Orpheus%202) by crinacle on GRAS 43AG-7
 - [Sennheiser HE 60](./Innerfidelity/over-ear/Sennheiser%20HE%2060) by Innerfidelity
 - [Sennheiser HE 90 Orpheus](./oratory1990/over-ear/Sennheiser%20HE%2090%20Orpheus) by oratory1990
@@ -4038,6 +4045,7 @@ from the same source.
 - [Sony WF-1000XM4 (Vocal preset)](./crinacle/711%20in-ear/Sony%20WF-1000XM4%20(Vocal%20preset)) by crinacle on 711
 - [Sony WF-1000XM5](./Rtings/in-ear/Sony%20WF-1000XM5) by Rtings
 - [Sony WF-C500](./oratory1990/in-ear/Sony%20WF-C500) by oratory1990
+- [Sony WF-C700N](./Rtings/in-ear/Sony%20WF-C700N) by Rtings
 - [Sony WF-SP700N](./Rtings/in-ear/Sony%20WF-SP700N) by Rtings
 - [Sony WF-SP800N](./crinacle/711%20in-ear/Sony%20WF-SP800N) by crinacle on 711
 - [Sony WF-SP800N](./Rtings/in-ear/Sony%20WF-SP800N) by Rtings
@@ -4128,6 +4136,7 @@ from the same source.
 - [Spiral Ear SE5U (sample 1)](./crinacle/711%20in-ear/Spiral%20Ear%20SE5U%20(sample%201)) by crinacle on 711
 - [Spiral Ear SE5U (sample 2)](./crinacle/711%20in-ear/Spiral%20Ear%20SE5U%20(sample%202)) by crinacle on 711
 - [Spirit Torino Radiante](./crinacle/GRAS%2043AG-7%20over-ear/Spirit%20Torino%20Radiante) by crinacle on GRAS 43AG-7
+- [Status Audio Between 3ANC](./Rtings/in-ear/Status%20Audio%20Between%203ANC) by Rtings
 - [Status Audio Between Pro](./Rtings/in-ear/Status%20Audio%20Between%20Pro) by Rtings
 - [Status Audio BT One](./Rtings/over-ear/Status%20Audio%20BT%20One) by Rtings
 - [Status Audio BT One (wired)](./oratory1990/over-ear/Status%20Audio%20BT%20One%20(wired)) by oratory1990
@@ -4482,39 +4491,60 @@ from the same source.
 - [TRN X7](./crinacle/711%20in-ear/TRN%20X7) by crinacle on 711
 - [Truthear Hexa](./crinacle/711%20in-ear/Truthear%20Hexa) by crinacle on 711
 - [Truthear Hola](./crinacle/711%20in-ear/Truthear%20Hola) by crinacle on 711
+- [Truthear x Crinacle Zero](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero) by crinacle on 711
+- [Truthear x Crinacle Zero (sample 10)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%2010)) by crinacle on 711
+- [Truthear x Crinacle Zero (sample 2)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%202)) by crinacle on 711
+- [Truthear x Crinacle Zero (sample 3)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%203)) by crinacle on 711
+- [Truthear x Crinacle Zero (sample 4)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%204)) by crinacle on 711
+- [Truthear x Crinacle Zero (sample 5)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%205)) by crinacle on 711
+- [Truthear x Crinacle Zero (sample 6)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%206)) by crinacle on 711
+- [Truthear x Crinacle Zero (sample 7)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%207)) by crinacle on 711
+- [Truthear x Crinacle Zero (sample 8)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%208)) by crinacle on 711
+- [Truthear x Crinacle Zero (sample 9)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%209)) by crinacle on 711
 - [Truthear x Crinacle Zero RED](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 1)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%201)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 1)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%201)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 10)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%2010)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 10)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%2010)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 2)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%202)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 2)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%202)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 3)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%203)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 3)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%203)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 4)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%204)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 4)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%204)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 5)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%205)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 5)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%205)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 6)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%206)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 6)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%206)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 7)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%207)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 7)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%207)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 8)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%208)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 8)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%208)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 9)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%209)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (10 ohm resistor) (sample 9)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(10%20ohm%20resistor)%20(sample%209)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 1)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%201)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 1)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%201)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 10)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%2010)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 10)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%2010)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 2)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%202)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 2)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%202)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 3)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%203)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 3)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%203)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 4)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%204)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 4)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%204)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 5)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%205)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 5)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%205)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 6)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%206)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 6)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%206)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 7)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%207)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 7)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%207)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 8)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%208)) by crinacle on Bruel & Kjaer 4620
+- [Truthear x Crinacle Zero RED (sample 8)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%208)) by crinacle on 711
 - [Truthear x Crinacle Zero RED (sample 9)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%209)) by crinacle on Bruel & Kjaer 4620
-- [Truthear Zero](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20Zero) by crinacle on Bruel & Kjaer 4620
-- [Truthear Zero](./crinacle/711%20in-ear/Truthear%20Zero) by crinacle on 711
-- [Truthear Zero (sample 10)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%2010)) by crinacle on 711
-- [Truthear Zero (sample 2)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%202)) by crinacle on 711
-- [Truthear Zero (sample 3)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%203)) by crinacle on 711
-- [Truthear Zero (sample 4)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%204)) by crinacle on 711
-- [Truthear Zero (sample 5)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%205)) by crinacle on 711
-- [Truthear Zero (sample 6)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%206)) by crinacle on 711
-- [Truthear Zero (sample 7)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%207)) by crinacle on 711
-- [Truthear Zero (sample 8)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%208)) by crinacle on 711
-- [Truthear Zero (sample 9)](./crinacle/711%20in-ear/Truthear%20Zero%20(sample%209)) by crinacle on 711
+- [Truthear x Crinacle Zero RED (sample 9)](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(sample%209)) by crinacle on 711
 - [Turtle Beach Battle Buds](./Rtings/in-ear/Turtle%20Beach%20Battle%20Buds) by Rtings
 - [Turtle Beach Elite 800](./Rtings/over-ear/Turtle%20Beach%20Elite%20800) by Rtings
 - [Turtle Beach Elite Atlas](./Rtings/over-ear/Turtle%20Beach%20Elite%20Atlas) by Rtings
@@ -4532,6 +4562,7 @@ from the same source.
 - [Turtle Beach Stealth 700 Gen 2](./Rtings/over-ear/Turtle%20Beach%20Stealth%20700%20Gen%202) by Rtings
 - [Turtle Beach Stealth Pro](./Rtings/over-ear/Turtle%20Beach%20Stealth%20Pro) by Rtings
 - [UBSound Fighter](./Innerfidelity/in-ear/UBSound%20Fighter) by Innerfidelity
+- [UFOEar UFO-111](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOEar%20UFO-111) by crinacle on Bruel & Kjaer 4620
 - [UFOEar UFO-111](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOEar%20UFO-111/UFOEar%20UFO-111) by crinacle on Bruel & Kjaer 4620
 - [UFOear UFO-112](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOear%20UFO-112) by crinacle on Bruel & Kjaer 4620
 - [UFOear UFO-112 (sample 1)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/UFOear%20UFO-112%20(sample%201)) by crinacle on Bruel & Kjaer 4620

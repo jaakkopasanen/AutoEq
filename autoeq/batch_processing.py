@@ -5,7 +5,7 @@ from glob import glob
 import multiprocessing
 import soundfile as sf
 import numpy as np
-import tqdm
+from tqdm.auto import tqdm
 import yaml
 
 from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_TREBLE_F_UPPER, \
@@ -120,7 +120,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
 
     with multiprocessing.Pool(thread_count) as pool:
         results = []
-        for result in tqdm.tqdm(
+        for result in tqdm(
                 pool.imap_unordered(process_file_wrapper, args_list, chunksize=1), total=len(args_list)):
             results.append(result)
         return results

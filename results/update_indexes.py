@@ -8,6 +8,7 @@ import re
 import numpy as np
 from zipfile import ZipFile
 from tabulate import tabulate
+from tqdm.auto import tqdm
 from autoeq.constants import MOD_REGEX
 from autoeq.frequency_response import FrequencyResponse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
@@ -151,6 +152,7 @@ def sort_each_group_by(groups, prop):
 
 
 def write_recommendations(paths):
+    print('Creating recommendations index...')
     # Skip models with serial number or sample number in the name as these have averaged results
     paths = list(filter(lambda path: not re.search(MOD_REGEX, path.name, flags=re.IGNORECASE), paths))
 
@@ -180,6 +182,7 @@ def write_recommendations(paths):
 
 
 def write_full_index(paths):
+    print('Creating full index...')
     grouped_by_name = group_by(paths, 'name')
     grouped_by_name = sort_each_group_by(grouped_by_name, 'priority')
 
@@ -200,6 +203,7 @@ def write_full_index(paths):
 
 
 def write_source_indexes(paths):
+    print('Creating source indices...')
     grouped_by_source = group_by(paths, 'source_name')
     grouped_by_source = sort_each_group_by(grouped_by_source, 'form')
 
@@ -219,6 +223,7 @@ def write_source_indexes(paths):
 
 
 def write_hesuvi_zip(paths):
+    print('Creating HeSuVi ZIP archive...')
     # Skip models with serial number or sample number in the name as these have averaged results
     paths = list(filter(lambda path: not re.search(MOD_REGEX, path.name, flags=re.IGNORECASE), paths))
 
@@ -229,7 +234,7 @@ def write_hesuvi_zip(paths):
     grouped_by_name = group_by(paths, 'name')
     grouped_by_name = sort_each_group_by(grouped_by_name, 'priority')
 
-    for name, group_paths in grouped_by_name.items():
+    for name, group_paths in tqdm(grouped_by_name.items()):
         manufacturer, _ = manufacturers.find(name)
         if manufacturer is None:
             print(f'Manufacturer could not be found for {name}. Will skip in hesuvi.zip.')
@@ -252,6 +257,7 @@ def write_hesuvi_zip(paths):
 
 
 def write_ranking_table(paths):
+    print('Creating ranking index...')
     # Skip models with serial number or sample number in the name as these have averaged results
     paths = list(filter(lambda path: not re.search(MOD_REGEX, path.name, flags=re.IGNORECASE), paths))
 
@@ -261,7 +267,7 @@ def write_ranking_table(paths):
     over_ears = []
     in_ears = []
 
-    for name, group_paths in grouped_by_name.items():
+    for name, group_paths in tqdm(grouped_by_name.items()):
         path = group_paths[0]
         if path.form == 'over-ear' and (
             (path.source_name == 'crinacle' and path.rig == 'GRAS 43AG-7')
@@ -313,7 +319,7 @@ def write_ranking_table(paths):
         fh.write(re.sub('\n[ \t]+', '\n', s).strip())
 
 
-def main():
+def update_all_indexes():
     paths = [ResultPath(readme_path.parent) for readme_path in Path(DIR_PATH).glob('*/*/**/*.md')]
     write_recommendations(paths)
     write_full_index(paths)
@@ -323,4 +329,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    update_all_indexes()

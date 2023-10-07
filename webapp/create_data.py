@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from tqdm.auto import tqdm
 from autoeq.frequency_response import FrequencyResponse
 
 DIR = Path(__file__).resolve().parent
@@ -33,7 +34,7 @@ def measurement_rank(entry):
 def write_entries_and_measurements():
     entries = dict()
     measurements = dict()
-    for hp_path in DIR.parent.joinpath('measurements').glob('*/data/**/*.csv'):
+    for hp_path in tqdm(list(DIR.parent.joinpath('measurements').glob('*/data/**/*.csv'))):
         parts = hp_path.parts[hp_path.parts.index('data') + 1:]
         source = hp_path.parts[hp_path.parts.index('data') - 1]
         form = parts[0]
