@@ -9,8 +9,21 @@ sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
 from measurements.crinacle.crinacle_crawler import CrinacleCrawler
 from measurements.oratory1990.oratory1990_crawler import Oratory1990Crawler
 from measurements.rtings.rtings_crawler import RtingsCrawler
+from measurements.name_index import NameIndex
 
 DIR_PATH = Path(__file__).parent
+
+
+class InnerfidelityCrawler:
+    @staticmethod
+    def get_existing():
+        return NameIndex.read_files(os.path.join(DIR_PATH.parent, 'measurements', 'innerfidelity', 'data', '*', '*.csv'))
+
+
+class HeadphonecomCrawler:
+    @staticmethod
+    def get_existing():
+        return NameIndex.read_files(os.path.join(DIR_PATH.parent, 'measurements', 'headphonecom', 'data', '*', '*.csv'))
 
 
 def prune_results(dry_run=False, databases=None):
@@ -21,8 +34,10 @@ def prune_results(dry_run=False, databases=None):
         crawlers.append(Oratory1990Crawler)
     if 'rtings' in databases:
         crawlers.append(RtingsCrawler)
-    # TODO: Innerfidelity
-    # TODO: Headphonecom
+    if 'innerfidelity' in databases:
+        crawlers.append(InnerfidelityCrawler)
+    if 'headphonecom' in databases:
+        crawlers.append(HeadphonecomCrawler)
     for db, crawler in zip(databases, crawlers):
         existing = crawler.get_existing()
         file_paths = list(DIR_PATH.joinpath(db).glob('**/*.png'))

@@ -258,7 +258,6 @@ const App = (props) => {
       return;
     }
 
-    // TODO: not preferred for any?
     const compensationLabel = preferredCompensationsRef.current[measurement.source][measurement.form][measurement.rig];
     setShowInfo(false);
     setSelectedMeasurement(cloneDeep(measurement));
