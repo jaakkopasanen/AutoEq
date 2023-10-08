@@ -1,4 +1,4 @@
-# Sennheiser IE 40 PRO
+# Sennheiser IE 40 Pro
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.1 dB
 |  10 | Peaking |     16000 | 1.41 |        -1.9 |
 
 ### Graphs
-![](./Sennheiser%20IE%2040%20PRO.png)
+![](./Sennheiser%20IE%2040%20Pro.png)

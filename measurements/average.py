@@ -22,25 +22,25 @@ def average_measurements(input_dir=None, output_dir=None):
         model = os.path.split(file_path)[-1].replace('.csv', '')
         if not re.search(MOD_REGEX, model, re.IGNORECASE):
             continue
-        norm = re.sub(MOD_REGEX, '', model, 0, flags=re.IGNORECASE)
-        if norm not in models:
-            models[norm] = []
-        models[norm].append(model)
+        normalized_name = re.sub(MOD_REGEX, '', model, 0, flags=re.IGNORECASE)
+        if normalized_name not in models:
+            models[normalized_name] = []
+        models[normalized_name].append(model)
 
-    for norm, origs in models.items():
-        if len(origs) > 0:
+    for normalized_name, original_name_models in models.items():
+        if len(original_name_models) > 1:  # Not averaging with just one sample
             f = FrequencyResponse.generate_frequencies()
             avg = np.zeros(len(f))
-            for model in origs:
+            for model in original_name_models:
                 fr = FrequencyResponse.read_from_csv(os.path.join(input_dir, model + '.csv'))
                 fr.interpolate()
                 fr.center()
                 avg += fr.raw
-            avg /= len(origs)
-            fr = FrequencyResponse(name=norm, frequency=f, raw=avg)
-            file_path = os.path.join(output_dir, norm + '.csv')
+            avg /= len(original_name_models)
+            fr = FrequencyResponse(name=normalized_name, frequency=f, raw=avg)
+            file_path = os.path.join(output_dir, normalized_name + '.csv')
             fr.write_to_csv(file_path)
-            print(f'Saved {norm} to {file_path}')
+            print(f'Saved {normalized_name} to {file_path}')
 
 
 def create_cli():

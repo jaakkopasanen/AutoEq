@@ -1,4 +1,4 @@
-# Anker SoundCore Liberty Lite
+# Anker Soundcore Liberty Lite
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-1.7 dB
 |  10 | Peaking |     16000 | 1.41 |         1.4 |
 
 ### Graphs
-![](./Anker%20SoundCore%20Liberty%20Lite.png)
+![](./Anker%20Soundcore%20Liberty%20Lite.png)

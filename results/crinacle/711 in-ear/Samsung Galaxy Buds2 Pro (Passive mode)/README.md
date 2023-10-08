@@ -1,4 +1,4 @@
-# Samsung Galaxy Buds2 Pro (Passive mode)
+# Samsung Galaxy Buds2 Pro (passive mode)
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.8 dB
 |  10 | Peaking |     16000 | 1.41 |        -6.5 |
 
 ### Graphs
-![](./Samsung%20Galaxy%20Buds2%20Pro%20(Passive%20mode).png)
+![](./Samsung%20Galaxy%20Buds2%20Pro%20(passive%20mode).png)

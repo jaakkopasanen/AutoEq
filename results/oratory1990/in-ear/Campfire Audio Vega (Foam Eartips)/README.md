@@ -1,4 +1,4 @@
-# Campfire Audio Vega (Foam Eartips)
+# Campfire Audio Vega (foam eartips)
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.0 dB
 |  10 | Peaking |     16000 | 1.41 |         6.7 |
 
 ### Graphs
-![](./Campfire%20Audio%20Vega%20(Foam%20Eartips).png)
+![](./Campfire%20Audio%20Vega%20(foam%20eartips).png)

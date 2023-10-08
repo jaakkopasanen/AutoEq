@@ -60,9 +60,9 @@ A12t C	64 Audio A12t (CIEM) (sample 1)	in-ear
 A12t C S2	64 Audio A12t (CIEM) (sample 2)	in-ear
 A15	Whizzer A15	in-ear
 A15 Pro	Whizzer A15 Pro	in-ear
-A18S	64 Audio A18s (universal) (sample 1)	in-ear
+A18S	64 Audio A18s (sample 1)	in-ear
 A18S C	64 Audio A18s (CIEM)	in-ear
-A18S S2	64 Audio A18s (universal) (sample 2)	in-ear
+A18S S2	64 Audio A18s (sample 2)	in-ear
 A2 Pro	LZ Hi-Fi Audio A2 Pro	in-ear
 A2000X	Audio-Technica ATH-A2000X	over-ear
 A2000Z	Audio-Technica ATH-A2000Z	over-ear
@@ -70,8 +70,8 @@ A2e	64 Audio A2e	in-ear
 A2H V2	AAW A2H V2	in-ear
 A3000	Final Audio A3000	in-ear
 A3H	AAW A3H	in-ear
-A3H 2019	AAW A3H 2019	in-ear
-A3H Plus	AAW (Advanced AcousticWerkes) A3H Plus	in-ear
+A3H 2019	AAW A3H (2019)	in-ear
+A3H Plus	AAW A3H Plus	in-ear
 A3H V2	AAW A3H V2	in-ear
 A4 Pro Black	LZ Hi-Fi Audio A4 Pro (black nozzle, black vent)	in-ear
 A4 Pro Black-Blue	LZ Hi-Fi Audio A4 Pro (black nozzle, blue vent)	in-ear
@@ -110,7 +110,7 @@ AD2000	Audio-Technica ATH-AD2000	over-ear
 AD500X	Audio-Technica ATH-AD500X	over-ear
 AD700X	Audio-Technica ATH-AD700X	over-ear
 AD900X	Audio-Technica ATH-AD900X	over-ear
-Adagio 3	Final Audio III	in-ear
+Adagio 3	Final Audio Heaven III	in-ear
 Adonis	Queen of Audio Adonis	in-ear
 ADX5000	Audio-Technica ATH-ADX5000	over-ear
 ADX5000 (A2000Z AD2000X)	Audio-Technica ATH-ADX5000 (Yaxi A2000Z,AD2000X earpads)	over-ear
@@ -165,18 +165,18 @@ Andromeda S2	Campfire Audio Andromeda (sample 2)	in-ear
 Andromeda S3	Campfire Audio Andromeda (sample 3)	in-ear
 Andromeda S3 IEMatch	Campfire Audio Andromeda (sample 3) IEMatch	ignore
 Andromeda SS	Campfire Audio Andromeda SS	in-ear
-Angie 2oclock	JH Audio Angie (2 o’clock)	in-ear
+Angie 2oclock	JH Audio Angie (2 o'clock)	in-ear
 Angie Max	JH Audio Angie (max)	in-ear
 Angie Min	JH Audio Angie (min)	in-ear
 Annihilator	Elysian Annihilator (sample 2)	in-ear
-Annihilator 2021 S2	Elysian Annihilator DIO 2021	in-ear
+Annihilator 2021 S2	Elysian Annihilator (2021)	in-ear
 Annotation	BLON Annotation	in-ear
-Anole V14 0000	qdc Anole V14 (0000 setting)	in-ear
-Anole V14 0004	qdc Anole V14 (0004 setting)	in-ear
-Anole V14 0030	qdc Anole V14 (0030 setting)	in-ear
-Anole V14 0200	qdc Anole V14 (0200 setting)	in-ear
-Anole V14 1000	qdc Anole V14 (1000 setting)	in-ear
-Anole V14 1234	qdc Anole V14 (1234 setting)	in-ear
+Anole V14 0000	qdc Anole V14 (off-off-off-off)	in-ear
+Anole V14 0004	qdc Anole V14 (off-off-off-on)	in-ear
+Anole V14 0030	qdc Anole V14 (off-off-on-off)	in-ear
+Anole V14 0200	qdc Anole V14 (off-on-off-off)	in-ear
+Anole V14 1000	qdc Anole V14 (on-off-off-off)	in-ear
+Anole V14 1234	qdc Anole V14 (on-on-on-on)	in-ear
 Anole V3	qdc Anole V3	in-ear
 Anole V3 Bass	qdc Anole V3 (bass)	in-ear
 Anole V3 Bass Treble	qdc Anole V3 (bass, treble)	in-ear
@@ -186,7 +186,7 @@ Anole V6 Bass	qdc Anole V6 (bass)	in-ear
 Anole V6 Bass Mids	qdc Anole V6 (bass, mids)	in-ear
 Anole V6 Mids	qdc Anole V6 (mids)	in-ear
 Anole VX	qdc Anole VX	in-ear
-Anole VX All	qdc Anole VX All	in-ear
+Anole VX All	qdc Anole VX (all)	in-ear
 Anole VX Bass	qdc Anole VX (bass)	in-ear
 Anole VX Mids	qdc Anole VX (mids)	in-ear
 Anole VX Treble	qdc Anole VX (treble)	in-ear
@@ -216,13 +216,13 @@ Ara	Campfire Audio Ara	in-ear
 Ares	VSonic Ares	in-ear
 Argentum	Craft Ears Argentum	in-ear
 Aria	Moondrop Aria	in-ear
-Aria 2021	Moondrop Aria 2021	in-ear
+Aria 2021	Moondrop Aria (2021)	in-ear
 Aria SE	Moondrop Aria Snow Edition	in-ear
 Aria Snow	Moondrop Aria Snow Edition	in-ear
 Artemis	Elysian Artemis	in-ear
 Artemis V2	Elysian Artemis V2	in-ear
 Arya	HIFIMAN Arya	over-ear
-Arya Stealth	HIFIMAN Arya Stealth	over-ear
+Arya Stealth	HIFIMAN Arya Stealth Magnet Version	over-ear
 AS10	KZ AS10	in-ear
 AS16	KZ AS16	in-ear
 AS800	Sony MDR-AS800	over-ear
@@ -258,7 +258,7 @@ AWAS	Audio-Technica ATH-AWAS	over-ear
 AWK-009	Seahf AWK-009	in-ear
 AWKT	Audio-Technica ATH-AWKT	over-ear
 AXH	AAW AXH	in-ear
-AXH 2019	AAW AXH 2019	in-ear
+AXH 2019	AAW AXH (2019)	in-ear
 Axiom	Effect Audio Axiom	in-ear
 Aya	FitEar Aya	in-ear
 Azul	Prisma Azul	in-ear
@@ -327,12 +327,12 @@ Buds Plus	Samsung Galaxy Buds Plus	in-ear
 Buds2	Samsung Galaxy Buds2	in-ear
 Buds2 Pro Ambient	Samsung Galaxy Buds2 Pro (ambient mode)	in-ear
 Buds2 Pro ANC	Samsung Galaxy Buds2 Pro (ANC mode)	in-ear
-Buds2 Pro ANC (Bass Boost)	Samsung Galaxy Buds2 Pro (bass boost EQ) (ANC mode)	in-ear
-Buds2 Pro ANC (Clear)	Samsung Galaxy Buds2 Pro (blear EQ) (ANC mode)	in-ear
-Buds2 Pro ANC (Dynamic)	Samsung Galaxy Buds2 Pro (dynamic EQ) (ANC mode)	in-ear
-Buds2 Pro ANC (Soft)	Samsung Galaxy Buds2 Pro (soft EQ) (ANC mode)	in-ear
-Buds2 Pro ANC (Treble Boost)	Samsung Galaxy Buds2 Pro (treble boost EQ) (ANC mode) (sample 1)	in-ear
-Buds2 Pro Passive	Samsung Galaxy Buds2 Pro (Passive mode)	in-ear
+Buds2 Pro ANC (Bass Boost)	Samsung Galaxy Buds2 Pro (bass boost EQ, ANC mode)	in-ear
+Buds2 Pro ANC (Clear)	Samsung Galaxy Buds2 Pro (blear EQ, ANC mode)	in-ear
+Buds2 Pro ANC (Dynamic)	Samsung Galaxy Buds2 Pro (dynamic EQ, ANC mode)	in-ear
+Buds2 Pro ANC (Soft)	Samsung Galaxy Buds2 Pro (soft EQ, ANC mode)	in-ear
+Buds2 Pro ANC (Treble Boost)	Samsung Galaxy Buds2 Pro (treble boost EQ, ANC mode) (sample 1)	in-ear
+Buds2 Pro Passive	Samsung Galaxy Buds2 Pro (passive mode)	in-ear
 Buds2 Pro S2		ignore
 Buds2 Pro S2 ANC (Treble Boost)		ignore
 Bullet In-Ear	MUNITIO Bullet In-Ear	in-ear
@@ -344,11 +344,11 @@ Cal1H	Altiat Cal.1H	over-ear
 Canary	AAW Canary (sample 1)	in-ear
 Canary S2	AAW Canary (sample 2)	in-ear
 Canon		ignore
-Canon 000	Yanyin Canon (000 setting)	in-ear
-Canon 003	Yanyin Canon (003 setting)	in-ear
-Canon 020	Yanyin Canon (020 setting)	in-ear
-Canon 100	Yanyin Canon (100 setting)	in-ear
-Canon 123	Yanyin Canon (123 setting)	in-ear
+Canon 000	Yanyin Canon (off-off-off)	in-ear
+Canon 003	Yanyin Canon (off-off-on)	in-ear
+Canon 020	Yanyin Canon (off-on-off)	in-ear
+Canon 100	Yanyin Canon (on-off-off)	in-ear
+Canon 123	Yanyin Canon (on-on-on)	in-ear
 Cascade	Campfire Audio Cascade	over-ear
 CD2000	Sony MDR-CD2000	over-ear
 CD900ST	Sony MDR-CD900ST	over-ear
@@ -434,7 +434,7 @@ Delta Air	Delta Air complimentary earphones	in-ear
 DES-R		ignore
 DES-Revised		ignore
 DES-S		ignore
-Deva (Passive)	HIFIMAN Deva (passive)	over-ear
+Deva (Passive)	HIFIMAN Deva (wired)	over-ear
 Deva Pro	HIFIMAN Deva Pro	over-ear
 DH298	SATOLEX Tubomi DH298-A1Bk	in-ear
 DH302	SATOLEX Tubomi DH302-A1Bs	in-ear
@@ -464,7 +464,7 @@ DM6 20ohm		ignore
 DM6 75ohm		ignore
 DM6 M		ignore
 DM7	BGVP DM7	in-ear
-DMagic S2	qdc Dmagic (sample 2)	in-ear
+DMagic S2	qdc Dmagic	in-ear
 DMG Black	BGVP DMG (black)	in-ear
 DMG Gold	BGVP DMG (gold)	in-ear
 DMG Silver	BGVP DMG (silver)	in-ear
@@ -495,15 +495,15 @@ DT1990 Pro S2 (Analytical pads) (DIYAH filter)		ignore
 DT1990 Pro S2 (Balanced pads)	Beyerdynamic DT 1990 Pro (balanced earpads) (sample 2)	over-ear
 DT1990 Pro S2 (Dekoni Elite Velour)	Beyerdynamic DT 1990 Pro (Dekoni Elite velour earpads)	over-ear
 DT200	Audiosense DT200	in-ear
-DT250 (80Ω)	Beyerdynamic DT 250 80 Ohm	over-ear
+DT250 (80Ω)	Beyerdynamic DT 250 (80 Ohm)	over-ear
 DT6	Senfer DT6	in-ear
 DT600	Audiosense DT600	in-ear
 DT600 80ohm	Audiosense DT600 (80 ohm resistor)	in-ear
-DT770 Pro (250Ω)	Beyerdynamic DT 770 250 Ohm	over-ear
-DT770 Pro (80Ω)	Beyerdynamic DT 770 80 Ohm	over-ear
+DT770 Pro (250Ω)	Beyerdynamic DT 770 Pro (250 Ohm)	over-ear
+DT770 Pro (80Ω)	Beyerdynamic DT 770 Pro (80 Ohm)	over-ear
 DT860	Beyerdynamic DT 860	over-ear
-DT880 Pro (32Ω)	Beyerdynamic DT 880 32 Ohm	over-ear
-DT990 Pro (250Ω)	Beyerdynamic DT 990 250 Ohm	over-ear
+DT880 Pro (32Ω)	Beyerdynamic DT 880 (32 Ohm)	over-ear
+DT990 Pro (250Ω)	Beyerdynamic DT 990 Pro (250 Ohm)	over-ear
 Dual	Eartech Dual	in-ear
 Dual Driver	1MORE Dual Driver	in-ear
 Duke C	Venture Electronics Duke (CIEM)	in-ear
@@ -695,13 +695,13 @@ FH3	FiiO FH3	in-ear
 FH5	FiiO FH5 (sample 1)	in-ear
 FH5 S2	FiiO FH5 (sample 2)	in-ear
 FH5s	FiiO FH5s	in-ear
-FH5s B	FiiO FH5s (bass switch on)	in-ear
-FH5s Bass	FiiO FH5s (bass)	in-ear
-FH5s BMT	FiiO FH5s (all switches on)	in-ear
-FH5s M	FiiO FH5s (mid switch on)	in-ear
-FH5s Mids	FiiO FH5s (mids)	in-ear
-FH5s T	FiiO FH5s (treble switch on)	in-ear
-FH5s Treble	FiiO FH5s (treble)	in-ear
+FH5s B	FiiO FH5s (on-off-off)	in-ear
+FH5s Bass	FiiO FH5s (on-off-off)	in-ear
+FH5s BMT	FiiO FH5s (on-on-on)	in-ear
+FH5s M	FiiO FH5s (off-on-off)	in-ear
+FH5s Mids	FiiO FH5s (off-on-off)	in-ear
+FH5s T	FiiO FH5s (off-off-on)	in-ear
+FH5s Treble	FiiO FH5s (off-off-on)	in-ear
 FH7	FiiO FH7	in-ear
 FH9 Black	FiiO FH9 (black filter)	in-ear
 FH9 Green	FiiO FH9 (green filter)	in-ear
@@ -768,10 +768,10 @@ GL12	Gold Planar GL12 (no filter)	in-ear
 GL12 Filter	Gold Planar GL12 (filter)	in-ear
 GL20	Gold Planar GL20	in-ear
 GL20 EQ		ignore
-GL2000 (double) (leather)	Gold Planar GL2000 double-sided (leather earpads)	over-ear
-GL2000 (double) (perf hybrid)	Gold Planar GL2000 double-sided (perforated hybrid earpads)	over-ear
-GL2000 (leather)	Gold Planar GL2000 (leather earpads)	over-ear
-GL2000 (perf hybrid)	Gold Planar GL2000 (perforated hybrid earpads)	over-ear
+GL2000 (double) (leather)	Gold Planar GL2000 (double-sided, leather earpads)	over-ear
+GL2000 (double) (perf hybrid)	Gold Planar GL2000 (double-sided, perforated hybrid earpads)	over-ear
+GL2000 (leather)	Gold Planar GL2000 (single-sided, leather earpads)	over-ear
+GL2000 (perf hybrid)	Gold Planar GL2000 (single-sided, perforated hybrid earpads)	over-ear
 GL850	Gold Planar GL850	over-ear
 Gorham	NocturnaL Audio Gorham	in-ear
 GR-I	GuideRay GR-I	in-ear
@@ -806,7 +806,7 @@ Hana	Tanchjim Hana	in-ear
 Hana 2021	Tanchjim Hana 2021	in-ear
 Harmony 8.2	Custom Art Harmony 8.2	in-ear
 Hayabusa Off	Fatfreq Hayabusa	in-ear
-Hayabusa On	Fatfreq Hayabusa (bass switch on)	in-ear
+Hayabusa On	Fatfreq Hayabusa (bass)	in-ear
 HD25 Aluminium	Sennheiser HD 25 Aluminium	over-ear
 HD25 Plus	Sennheiser HD 25 Plus	over-ear
 HD250 BT	Sennheiser HD 250BT	over-ear
@@ -856,10 +856,10 @@ HE1000 V1	HIFIMAN HE1000	over-ear
 HE1000 V2	HIFIMAN HE1000 V2	over-ear
 HE1000se	HIFIMAN HE1000se	over-ear
 HE200	Fengru HE-200	in-ear
-HE400i (2016)	HIFIMAN HE400i 2016	over-ear
-HE400i (2020)	HIFIMAN HE400i 2020	over-ear
+HE400i (2016)	HIFIMAN HE400i (2016)	over-ear
+HE400i (2020)	HIFIMAN HE400i (2020)	over-ear
 HE400se	HIFIMAN HE400se	over-ear
-HE560	HIFIMAN HE560 V1	over-ear
+HE560	HIFIMAN HE560 V1 (sample 1)	over-ear
 HE560 V1 S2	HIFIMAN HE560 V1 (sample 2)	over-ear
 HE5SE	HIFIMAN HE5se	over-ear
 HE5se	HIFIMAN HE5se	over-ear
@@ -916,7 +916,7 @@ HS1697	Acoustune HS1697	in-ear
 HS1750Cu	Acoustune HS1750	in-ear
 HS1790Ti	Acoustune HS1790	in-ear
 HS2000MX	Acoustune HS2000MX	in-ear
-Hua Jiang 2	JQ Hua Jiang (sample 2)	in-ear
+Hua Jiang 2	JQ Hua Jiang	in-ear
 Hyper S 12	Fearless Audio HyperS 12	in-ear
 i4 TRI	TRI i4	in-ear
 i430	Clariar i430	in-ear
@@ -938,8 +938,8 @@ IE800	Sennheiser IE 800	in-ear
 IE800S	Sennheiser IE 800 S	in-ear
 IE80S	Sennheiser IE 80 S (min)	in-ear
 IE80S Half	Sennheiser IE 80 S (half)	in-ear
-IE80S Max	Sennheiser IE 80 S (max)	in-ear
 IE80S max	Sennheiser IE 80 S (max)	in-ear
+IE80S Max	Sennheiser IE 80 S (max)	in-ear
 IE900	Sennheiser IE 900	in-ear
 IER-M7Q	Sony IER-M7 Q	in-ear
 IER-Z1R	Sony IER-Z1R	in-ear
@@ -955,8 +955,8 @@ IO	Campfire Audio IO (sample 1)	in-ear
 IO S2	Campfire Audio IO (sample 2)	in-ear
 ION-4 Vietnam	Soranik ION-4 (Vietnamese domestic market edition)	in-ear
 Isabellae	Oriolus Isabellae	in-ear
-iSine 10	Audeze iSINE 10 (sample 1)	in-ear
 iSIne 10	Audeze iSINE 10	in-ear
+iSine 10	Audeze iSINE 10 (sample 1)	in-ear
 iSine 10 S2	Audeze iSINE 10 (sample 2)	in-ear
 iSine 20	Audeze iSINE 20	in-ear
 iSine 20 Cipher	Audeze iSINE 20 (Cipher cable)	in-ear
@@ -973,11 +973,11 @@ Jade II	HIFIMAN Jade II	over-ear
 Janus	ddHiFi E2020A Janus	in-ear
 Jasper	AUNE Jasper	in-ear
 Jazz	Jomo Audio Jazz	in-ear
-Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
-JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
+JH13v2 2oclock	JH Audio JH13v2 (half bass)	in-ear
+Jh13v2 2oclock	JH Audio 13v2 (2 o'clock)	in-ear
 JH13v2 Max	JH Audio 13v2 (max)	in-ear
 JH13v2 Min	JH Audio 13v2 (min)	in-ear
-JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	in-ear
+JH16v2 2oclock	JH Audio 16v2 (2 o'clock)	in-ear
 JH16v2 Max	JH Audio 16v2 (max)	in-ear
 JH16v2 Min	JH Audio 16v2 (min)	in-ear
 Jimo	Kennerton Jimo	in-ear
@@ -1022,8 +1022,8 @@ KL-Corona	Kumitate Lab KL-Corona (sample 1)	in-ear
 KL-Corona S2	Kumitate Lab KL-Corona (sample 2)	in-ear
 KL-Focus Max Bass	Kumitate Lab KL-Focus (max bass)	in-ear
 KL-Focus Min Bass	Kumitate Lab KL-Focus (min bass)	in-ear
-KL-Focus Setting 2	Kumitate Lab KL-Focus Setting 2	in-ear
-KL-Focus Setting 3	Kumitate Lab KL-Focus Setting 3	in-ear
+KL-Focus Setting 2	Kumitate Lab KL-Focus (setting 2)	in-ear
+KL-Focus Setting 3	Kumitate Lab KL-Focus (setting 3)	in-ear
 KL-Kanon 6-Minus	Kumitate Lab KL-Kanon 6-Minus	in-ear
 KL-Kanon 6-Plus	Kumitate Lab KL-Kanon 6-Plus	in-ear
 KL-Meteo	Kumitate Lab KL-Meteo	in-ear
@@ -1052,14 +1052,14 @@ KSE1200 S2	Shure KSE1200 (sample 2)	in-ear
 Kublai Khan	Noble Audio Kublai Khan	in-ear
 KXXS	Moondrop KXXS	in-ear
 Kylin	Whizzer A-HE03 Kylin	in-ear
-L3 00	ThieAudio Legacy 3 (00 setting)	in-ear
-L3 02	ThieAudio Legacy 3 (02 setting)	in-ear
-L3 10	ThieAudio Legacy 3 (10 setting)	over-ear
-L3 12	ThieAudio Legacy 3 (12 setting)	in-ear
-L3 C 00	ThieAudio Legacy 3 (CIEM, 00 setting)	in-ear
-L3 C 02	ThieAudio Legacy 3 (CIEM, 02 setting)	in-ear
-L3 C 10	ThieAudio Legacy 3 (CIEM, 10 setting)	in-ear
-L3 C 12	ThieAudio Legacy 3 (CIEM, 12 setting)	in-ear
+L3 00	ThieAudio Legacy 3 (off-off)	in-ear
+L3 02	ThieAudio Legacy 3 (off-on)	in-ear
+L3 10	ThieAudio Legacy 3 (on-off)	over-ear
+L3 12	ThieAudio Legacy 3 (on-on)	in-ear
+L3 C 00	ThieAudio Legacy 3 (CIEM, off-off)	in-ear
+L3 C 02	ThieAudio Legacy 3 (CIEM, off-on)	in-ear
+L3 C 10	ThieAudio Legacy 3 (CIEM, on-off)	in-ear
+L3 C 12	ThieAudio Legacy 3 (CIEM, on-on)	in-ear
 L300	Stax SR-L300 (sample 1)	over-ear
 L4 00	ThieAudio Legacy 4 (off-off)	in-ear
 L4 02	ThieAudio Legacy 4 (off-on)	in-ear
@@ -1081,16 +1081,16 @@ Land 003	Tansio Mirai Land (off-off-on)	in-ear
 Land 020	Tansio Mirai Land (off-on-off)	in-ear
 Land 100	Tansio Mirai Land (on-off-off)	in-ear
 Land 123	Tansio Mirai Land (on-on-on)	in-ear
-Layla 2o_clock	JH Audio Layla (2 o’clock)	in-ear
-Layla 2oclock	JH Audio Layla (2 o’clock)	in-ear
-Layla AION 2o_clock	JH Audio Layla AION (2 o’clock)	in-ear
-Layla AION 2oclock	JH Audio Layla AION (2 o’clock)	in-ear
+Layla 2o_clock	JH Audio Layla (2 o'clock)	in-ear
+Layla 2oclock	JH Audio Layla (half bass)	in-ear
+Layla AION 2o_clock	JH Audio Layla AION (2 o'clock)	in-ear
+Layla AION 2oclock	JH Audio Layla AION (half bass)	in-ear
 Layla AION Max Bass	JH Audio Layla AION (max bass)	in-ear
 Layla AION Min Bass	JH Audio Layla AION (min bass)	in-ear
 Layla Max	JH Audio Layla (max)	in-ear
 Layla Min	JH Audio Layla (min)	in-ear
 LCD-1	Audeze LCD-1	over-ear
-LCD-2 (Rosewood)	Audeze LCD-2 (Rosewood)	over-ear
+LCD-2 (Rosewood)	Audeze LCD-2	over-ear
 LCD-2 Classic	Audeze LCD-2 Classic	over-ear
 LCD-2 Closed Back	Audeze LCD-2 Closed Back	over-ear
 LCD-2 Dekoni Fen	Audeze LCD-2 (Dekoni fenestrated sheepskin earpads)	over-ear
@@ -1119,10 +1119,10 @@ Lea	Tripowin Leá	in-ear
 Leaf	Raptgo Leaf D01	in-ear
 Legacy	Unique Melody Legacy	in-ear
 Legacy 2	ThieAudio Legacy 2	in-ear
-Legacy 3 00	ThieAudio Legacy 3 (universal, 00 setting)	in-ear
-Legacy 3 02	ThieAudio Legacy 3 (universal, 02 setting)	in-ear
-Legacy 3 10	ThieAudio Legacy 3 (universal, 10 setting)	in-ear
-Legacy 3 12	ThieAudio Legacy 3 (universal, 12 setting)	in-ear
+Legacy 3 00	ThieAudio Legacy 3 (off-off)	in-ear
+Legacy 3 02	ThieAudio Legacy 3 (off-on)	in-ear
+Legacy 3 10	ThieAudio Legacy 3 (on-off)	in-ear
+Legacy 3 12	ThieAudio Legacy 3 (on-on)	in-ear
 Legacy 5	ThieAudio Legacy 5	in-ear
 Legend EVO	Empire Ears Legend EVO	in-ear
 Legend Omega	EarWerkz Legend Omega	in-ear
@@ -1130,13 +1130,13 @@ Legend X	Empire Ears Legend X (sample 1)	in-ear
 Legend X S2	Empire Ears Legend X (sample 2)	in-ear
 Legend X SE	Empire Ears Legend X SE	in-ear
 Liberty 2 Pro	Anker Soundcore Liberty 2 Pro	in-ear
-Liberty Air 2	Anker SoundCore Liberty Air 2	in-ear
+Liberty Air 2	Anker Soundcore Liberty Air 2	in-ear
 Liric	Meze Liric	over-ear
 Listen Professional	Focal Listen Professional	over-ear
 Live S2	Ultimate Ears Live (sample 2)	in-ear
 LIVE300TWS	JBL Live 300TWS	in-ear
 Lokahi	Linsoul Audio Lokahi	in-ear
-Lola 2oclock	JH Audio Lola (2 o’clock)	in-ear
+Lola 2oclock	JH Audio Lola (2 o'clock)	in-ear
 Lola Max	JH Audio Lola (max)	in-ear
 Lola Min	JH Audio Lola (min)	in-ear
 LS200	Audio-Technica ATH-LS200	in-ear
@@ -1147,10 +1147,10 @@ LSX S2	Lark Studio LSX	in-ear
 Luna	DUNU Luna	in-ear
 Lyndale	Ambient Dynamics AD-006 Lyndale	in-ear
 M-TWE	Monoprice Monolith M-TWE	in-ear
-M14 00	Mofasest M14 (00 setting)	in-ear
-M14 02	Mofasest M14 (02 setting)	in-ear
-M14 10	Mofasest M14 (10 setting)	in-ear
-M14 12	Mofasest M14 (12 setting)	in-ear
+M14 00	Mofasest M14 (off-off)	in-ear
+M14 02	Mofasest M14 (off-on)	in-ear
+M14 10	Mofasest M14 (on-off)	in-ear
+M14 12	Mofasest M14 (on-on)	in-ear
 M2 FiR	Fir Audio M2 (sample 1)	in-ear
 M2 S2	Fir Audio M2 (sample 2)	in-ear
 M3	Advanced M3	in-ear
@@ -1232,27 +1232,27 @@ ME200	Shanling ME200	in-ear
 ME500	Shanling ME500	in-ear
 ME700	Shanling ME700	in-ear
 ME700 Lite	Shanling ME700 Lite	in-ear
-ME800 00	Shanling ME800 (00 setting)	in-ear
-ME800 02	Shanling ME800 (02 setting)	in-ear
-ME800 10	Shanling ME800 (10 setting)	in-ear
-ME800 12	Shanling ME800 (12 setting)	in-ear
+ME800 00	Shanling ME800 (off-off)	in-ear
+ME800 02	Shanling ME800 (off-on)	in-ear
+ME800 10	Shanling ME800 (on-off)	in-ear
+ME800 12	Shanling ME800 (on-on)	in-ear
 MEE Audio M6 PRO	MEE Audio M6 Pro	in-ear
 Mele	Tripowin x HBB Mele	in-ear
 Mellianus	Oriolus Mellianus	in-ear
 Mercury	OpenAudio Mercury	in-ear
 Merlin V2	Unique Melody Merlin V2	in-ear
-MEST	Unique Melody MEST (universal)	in-ear
+MEST	Unique Melody MEST	in-ear
 MEST C	Unique Melody MEST (CIEM)	in-ear
 MEST Mk2	Unique Melody MEST Mk2	in-ear
 MEXT	Unique Melody MEXT	in-ear
 Meze 12	Meze 12 Classics	in-ear
-Mezzo 000	FAudio Mezzo (000 setting)	in-ear
-Mezzo 003	FAudio Mezzo (003 setting)	in-ear
-Mezzo 020	FAudio Mezzo (020 setting)	in-ear
-Mezzo 023	FAudio Mezzo (023 setting)	in-ear
-Mezzo 100	FAudio Mezzo (100 setting)	in-ear
-Mezzo 120	FAudio Mezzo (120 setting)	in-ear
-Mezzo 123	FAudio Mezzo (123 setting)	in-ear
+Mezzo 000	FAudio Mezzo (off-off-off)	in-ear
+Mezzo 003	FAudio Mezzo (off-off-on)	in-ear
+Mezzo 020	FAudio Mezzo (off-on-off)	in-ear
+Mezzo 023	FAudio Mezzo (off-on-on)	in-ear
+Mezzo 100	FAudio Mezzo (on-off-off)	in-ear
+Mezzo 120	FAudio Mezzo (on-on-off)	in-ear
+Mezzo 123	FAudio Mezzo (on-on-on)	in-ear
 Mg	Periodic Audio Mg	in-ear
 MG5HX	Future Sonics MG5HX	in-ear
 MG600	Shanling MG600	in-ear
@@ -1274,7 +1274,7 @@ Midnight S1	SeeAudio x Crincale Yume Midnight	in-ear
 Minerva	Elysian Minerva	in-ear
 Mini MEST	Unique Melody Mini MEST	in-ear
 Mini2	Rose Mini2	in-ear
-Minor	FAudio Minor	in-ear
+Minor	FAudio Minor (sample 1)	in-ear
 Minor S2	FAudio Minor (sample 2)	in-ear
 Mira	ARC Mira	in-ear
 Miracle V2	Unique Melody Miracle V2	in-ear
@@ -1305,7 +1305,7 @@ Momentum 2 Wireless	Sennheiser Momentum 2.0 Wireless	over-ear
 Momentum 3 S2	Sennheiser Momentum 3 Wireless (sample 2)	over-ear
 Momentum 3 S2 (HEST)	Sennheiser Momentum 3 Wireless (HEST)	ignore
 Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	over-ear
-Momentum 4 Wireless (Active)	Sennheiser Momentum 4 Wireless (active)	over-ear
+Momentum 4 Wireless (Active)	Sennheiser Momentum 4 Wireless	over-ear
 Momentum 4 Wireless (Passive)	Sennheiser Momentum 4 Wireless (passive)	over-ear
 Momentum TW	Sennheiser Momentum True Wireless	in-ear
 Momentum TWS 2	Sennheiser Momentum True Wireless 2	in-ear
@@ -1372,8 +1372,8 @@ NDH 20	Neumann NDH20	over-ear
 NDH20	Neumann NDH20	over-ear
 Nekocake	Moondrop Nekocake	in-ear
 Nekocake Acht Acht Limited	Moondrop Nekocake	in-ear
-Nemesis	Empire Ears Nemesis	in-ear
 nemesis	Empire Ears Nemesis	in-ear
+Nemesis	Empire Ears Nemesis	in-ear
 Neo	SeeAudio Neo	in-ear
 Neo BG	Shozy & Neo BG	in-ear
 Neon	KBEar Neon	in-ear
@@ -1583,11 +1583,11 @@ Reference Pro	Fatfreq Reference Pro	in-ear
 Reference Pro SE	Fatfreq Reference Pro SE	in-ear
 Rhombus	Tripowin Rhombus	in-ear
 Roland	Fearless Audio Roland	in-ear
-Rosie 2oclock	Astell & Kern Rosie (2 o’clock)	in-ear
+Rosie 2oclock	Astell & Kern Rosie (2 o'clock)	in-ear
 Rosie Max	Astell & Kern Rosie (max)	in-ear
 Rosie Min	Astell & Kern Rosie (min)	in-ear
 Rouge	Shozy Rouge	in-ear
-Roxanne 2 2oclock	JH Audio Roxanne (2 o’clock)	in-ear
+Roxanne 2 2oclock	JH Audio Roxanne (2 o'clock)	in-ear
 Roxanne 2 Max	JH Audio Roxanne (max)	in-ear
 Roxanne 2 Min	JH Audio Roxanne (min)	in-ear
 RS10	SoftEars RS10	in-ear
@@ -1626,7 +1626,7 @@ Sakura FF On	Fatfreq Sakura (bass switch on)	in-ear
 Salsa	Jomo Audio Salsa	in-ear
 Samba	Jomo Audio Samba	in-ear
 Samba C	Jomo Audio Samba (CIEM)	in-ear
-Samsung AKG	Samsung EO-IG955 (AKG)	in-ear
+Samsung AKG	Samsung AKG EO-IG955	in-ear
 Sarda	HYLA Sarda	in-ear
 Satsuma	Campfire Audio Satsuma	in-ear
 Savanna	Noble Audio Savanna	in-ear
@@ -1726,7 +1726,7 @@ SR-L700 S2	Stax SR-L700 (sample 2)	over-ear
 SR-Lambda Pro	Stax SR-Lambda Pro	over-ear
 SR-X Mk2	Stax SR-X Mk2	over-ear
 SR001 Mk1	Stax SR-001 Mk1	in-ear
-SR001 Mk1 CES Stock	Stax SR-001 Mk1 CES (stock)	in-ear
+SR001 Mk1 CES Stock	Stax SR-001 Mk1 CES (CES-A1)	in-ear
 SR002	Stax SR-002	in-ear
 SR1	iBasso SR1	over-ear
 SR125e	Grado SR125e	over-ear
@@ -1748,10 +1748,10 @@ Star	Aroma Audio Star	in-ear
 Starfield	Moondrop Starfield	in-ear
 Stark	EarSonics Stark	in-ear
 Starlight	TRI Starlight	in-ear
-Starsea 00	TRI Starsea (00 setting)	in-ear
-Starsea 02	TRI Starsea (02 setting)	in-ear
-Starsea 10	TRI Starsea (10 setting)	in-ear
-Starsea 12	TRI Starsea (12 setting)	in-ear
+Starsea 00	TRI Starsea (off-off)	in-ear
+Starsea 02	TRI Starsea (off-on)	in-ear
+Starsea 10	TRI Starsea (on-off)	in-ear
+Starsea 12	TRI Starsea (on-on)	in-ear
 Starshine	TRI Starshine	in-ear
 Start	Fearless Audio Start	in-ear
 Stealth	Dan Clark Audio Stealth	over-ear
@@ -1767,13 +1767,13 @@ Summer	BQEYZ Summer	in-ear
 Sundara	HIFIMAN Sundara (pre-2020 earpads)	over-ear
 Sundara (2020)	HIFIMAN Sundara (post-2020 earpads)	over-ear
 Superdarts	Atomic Floyd SuperDarts	in-ear
-Susvara	HIFIMAN Susvara	over-ear
+Susvara	HIFIMAN Susvara (sample 1)	over-ear
 Susvara S2	HIFIMAN Susvara (sample 2)	over-ear
 SV Grey		ignore
 SV021	Sivga Audio Robin	over-ear
 Symphony	Effect Audio Symphony	in-ear
 T1	Tin HiFi T1	in-ear
-T1 (3rd Gen)	Beyerdynamic T1 3rd Generation	over-ear
+T1 (3rd Gen)	Beyerdynamic T1 (3rd Gen)	over-ear
 T2	Tin HiFi T2	in-ear
 T2 DLC	Tin HiFi T2 DLC	in-ear
 T2 Evo	Tin HiFi T2 Evo	in-ear
@@ -1788,15 +1788,15 @@ T3 Plus	Tin HiFi T3 Plus	in-ear
 T3-02	TAGO STUDIO T3-02	in-ear
 T4	Tin HiFi T4	in-ear
 T5	QCY T5	in-ear
-T5 (3rd Gen)	Beyerdynamic T5 3rd Generation	over-ear
+T5 (3rd Gen)	Beyerdynamic T5 (3rd Gen)	over-ear
 T5 Tin	Tin HiFi T5	in-ear
 T5 True Wireless	Klipsch T5 True Wireless	in-ear
 T50RP Mk3	Fostex T50RP Mk3	over-ear
 T5p (1st Gen)	Beyerdynamic T5p	over-ear
 T70	Beyerdynamic T70	over-ear
 T800	Audiosense T800	in-ear
-T8iE Mk1	Astell & Kern T8iE Mk1 (sample 1)	in-ear
-T8iE Mk1 S2	Astell & Kern T8iE Mk1 (sample 2)	in-ear
+T8iE Mk1	Astell & Kern T8iE (sample 1)	in-ear
+T8iE Mk1 S2	Astell & Kern T8iE (sample 2)	in-ear
 T9iE	Astell & Kern T9iE	in-ear
 TA2	TRN TA2	in-ear
 Talos Off	DUNU Talos (BA off)	in-ear
@@ -1821,7 +1821,7 @@ Tender	Dethonray Tender I	in-ear
 Tenore	Zero Audio Carbo Tenore	in-ear
 Tequila	Fearless Audio Tequila	in-ear
 Tequila 1	TFZ Tequila 1	in-ear
-Terminator	Elysian Terminator	in-ear
+Terminator	Elysian Terminator (sample 1)	in-ear
 Terminator V2	Elysian Terminator V2	in-ear
 Terminator V2 S2	Elysian Terminator V2 (sample 2)	in-ear
 Tevi	Lypertek Tevi	in-ear
@@ -1863,7 +1863,7 @@ Trident	Noble Audio Trident	in-ear
 Trident Aya	Aya Trident	in-ear
 Trinity	Jomo Audio Trinity	in-ear
 Trinity Brass	Jomo Audio Trinity Brass	in-ear
-Trio	64 Audio tia Trio	in-ear
+Trio	64 Audio tia Trio (sample 1)	in-ear
 Trio S2	64 Audio tia Trio (sample 2)	in-ear
 Triple	Eartech Triple	in-ear
 Triple Driver	1MORE Triple Driver	in-ear
@@ -1905,7 +1905,7 @@ TX-901	Ovidius TX-901	over-ear
 TYGR 300 R	Beyerdynamic TYGR 300 R	over-ear
 Type 711	Madoo Type 711	in-ear
 Tzar 350	Heir Audio Tzar 350	in-ear
-U12t	64 Audio U12t	in-ear
+U12t	64 Audio U12t (sample 1)	in-ear
 U12t DEC14	64 Audio U12t (December 2014)	ignore
 U12t DEC17	64 Audio U12t (December 2017)	ignore
 U12t L DEC14		ignore
@@ -1945,10 +1945,10 @@ Uranus	qdc Uranus	in-ear
 Utopia	Focal Utopia (sample 1)	over-ear
 Utopia S2	Focal Utopia (sample 2)	over-ear
 Utopia S3	Focal Utopia (sample 3)	over-ear
-V14 00	ThieAudio Voyager 14 (00 setting)	in-ear
-V14 02	ThieAudio Voyager 14 (02 setting)	in-ear
-V14 10	ThieAudio Voyager 14 (10 setting)	in-ear
-V14 12	ThieAudio Voyager 14 (12 setting)	in-ear
+V14 00	ThieAudio Voyager 14 (off-off)	in-ear
+V14 02	ThieAudio Voyager 14 (off-on)	in-ear
+V14 10	ThieAudio Voyager 14 (on-off)	in-ear
+V14 12	ThieAudio Voyager 14 (on-on)	in-ear
 V16 Divinity	ThieAudio V16 Divinity	in-ear
 V2	64 Audio 1964 Ears V2	in-ear
 V33	Shozy V33	in-ear
@@ -2003,8 +2003,8 @@ Viento-D C	Hidition Viento-D (CIEM)	in-ear
 Violet	Hidition Violet	in-ear
 Vista	Jaybird Vista	in-ear
 VK4	QKZ VK4 (sample 1)	in-ear
-VK4 Revised S1	QKZ VK4 Revised (sample 1)	in-ear
-VK4 Revised S2	QKZ VK4 Revised (sample 2)	in-ear
+VK4 Revised S1	QKZ VK4 (revised) (sample 1)	in-ear
+VK4 Revised S2	QKZ VK4 (revised) (sample 2)	in-ear
 VK4 S2	QKZ VK4 (sample 2)	in-ear
 Voce	Dan Clark Audio Voce	over-ear
 Void	Moondrop Void	over-ear
@@ -2031,7 +2031,7 @@ Walnut	E-Mu Walnut	over-ear
 Waltz	Hidition Waltz	in-ear
 Warrior	TFZ Warrior	in-ear
 WF-1000XM3	Sony WF-1000XM3	in-ear
-WF-1000XM3 NC	Sony WF-1000XM3 NC	in-ear
+WF-1000XM3 NC	Sony WF-1000XM3 (ANC on)	in-ear
 WF-1000XM4	Sony WF-1000XM4	in-ear
 WF-1000XM4 Bass Boost	Sony WF-1000XM4 (Bass Boost preset)	in-ear
 WF-1000XM4 Bright	Sony WF-1000XM4 (Bright preset)	in-ear

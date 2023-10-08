@@ -1,4 +1,4 @@
-# Anker SoundCore Liberty Air 2
+# Anker Soundcore Liberty Air 2
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.3 dB
 |  10 | Peaking |     16000 | 1.41 |       -12   |
 
 ### Graphs
-![](./Anker%20SoundCore%20Liberty%20Air%202.png)
+![](./Anker%20Soundcore%20Liberty%20Air%202.png)

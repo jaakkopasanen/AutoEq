@@ -1,4 +1,4 @@
-# Campfire Audio Io
+# Campfire Audio IO
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-8.9 dB
 |  10 | Peaking |     16000 | 1.41 |        -9   |
 
 ### Graphs
-![](./Campfire%20Audio%20Io.png)
+![](./Campfire%20Audio%20IO.png)

@@ -15,10 +15,10 @@
 - [64 Audio A12t (CIEM)](./711%20in-ear/64%20Audio%20A12t%20(CIEM)) on 711
 - [64 Audio A12t (CIEM) (sample 1)](./711%20in-ear/64%20Audio%20A12t%20(CIEM)%20(sample%201)) on 711
 - [64 Audio A12t (CIEM) (sample 2)](./711%20in-ear/64%20Audio%20A12t%20(CIEM)%20(sample%202)) on 711
+- [64 Audio A18s](./711%20in-ear/64%20Audio%20A18s) on 711
 - [64 Audio A18s (CIEM)](./711%20in-ear/64%20Audio%20A18s%20(CIEM)) on 711
-- [64 Audio A18s (universal)](./711%20in-ear/64%20Audio%20A18s%20(universal)) on 711
-- [64 Audio A18s (universal) (sample 1)](./711%20in-ear/64%20Audio%20A18s%20(universal)%20(sample%201)) on 711
-- [64 Audio A18s (universal) (sample 2)](./711%20in-ear/64%20Audio%20A18s%20(universal)%20(sample%202)) on 711
+- [64 Audio A18s (sample 1)](./711%20in-ear/64%20Audio%20A18s%20(sample%201)) on 711
+- [64 Audio A18s (sample 2)](./711%20in-ear/64%20Audio%20A18s%20(sample%202)) on 711
 - [64 Audio A2e](./711%20in-ear/64%20Audio%20A2e) on 711
 - [64 Audio A4t](./711%20in-ear/64%20Audio%20A4t) on 711
 - [64 Audio A6](./711%20in-ear/64%20Audio%20A6) on 711
@@ -59,8 +59,10 @@
 - [64 Audio Tia Fourte (sample 2)](./711%20in-ear/64%20Audio%20Tia%20Fourte%20(sample%202)) on 711
 - [64 Audio Tia Fourte Noir](./711%20in-ear/64%20Audio%20Tia%20Fourte%20Noir) on 711
 - [64 Audio tia Trio](./711%20in-ear/64%20Audio%20tia%20Trio) on 711
+- [64 Audio tia Trio (sample 1)](./711%20in-ear/64%20Audio%20tia%20Trio%20(sample%201)) on 711
 - [64 Audio tia Trio (sample 2)](./711%20in-ear/64%20Audio%20tia%20Trio%20(sample%202)) on 711
 - [64 Audio U12t](./711%20in-ear/64%20Audio%20U12t) on 711
+- [64 Audio U12t (sample 1)](./711%20in-ear/64%20Audio%20U12t%20(sample%201)) on 711
 - [64 Audio U12t (sample 3)](./711%20in-ear/64%20Audio%20U12t%20(sample%203)) on 711
 - [64 Audio U18Tzar](./711%20in-ear/64%20Audio%20U18Tzar) on 711
 - [64 Audio U18Tzar (December 2014)](./711%20in-ear/64%20Audio%20U18Tzar%20(December%202014)) on 711
@@ -78,17 +80,17 @@
 - [7Hz x Crinacle Salnotes Dioko](./711%20in-ear/7Hz%20x%20Crinacle%20Salnotes%20Dioko) on 711
 - [7Hz x Crinacle Salnotes Dioko (sample 1)](./711%20in-ear/7Hz%20x%20Crinacle%20Salnotes%20Dioko%20(sample%201)) on 711
 - [7Hz x Crinacle Salnotes Dioko (sample 2)](./711%20in-ear/7Hz%20x%20Crinacle%20Salnotes%20Dioko%20(sample%202)) on 711
-- [AAW (Advanced AcousticWerkes) A3H Plus](./711%20in-ear/AAW%20(Advanced%20AcousticWerkes)%20A3H%20Plus) on 711
 - [AAW A2H V2](./711%20in-ear/AAW%20A2H%20V2) on 711
 - [AAW A3H](./711%20in-ear/AAW%20A3H) on 711
-- [AAW A3H 2019](./711%20in-ear/AAW%20A3H%202019) on 711
+- [AAW A3H (2019)](./711%20in-ear/AAW%20A3H%20(2019)) on 711
+- [AAW A3H Plus](./711%20in-ear/AAW%20A3H%20Plus) on 711
 - [AAW A3H V2](./711%20in-ear/AAW%20A3H%20V2) on 711
 - [AAW ACH](./711%20in-ear/AAW%20ACH) on 711
 - [AAW ASH](./711%20in-ear/AAW%20ASH) on 711
 - [AAW ASH (sample 1)](./711%20in-ear/AAW%20ASH%20(sample%201)) on 711
 - [AAW ASH (sample 2)](./711%20in-ear/AAW%20ASH%20(sample%202)) on 711
 - [AAW AXH](./711%20in-ear/AAW%20AXH) on 711
-- [AAW AXH 2019](./711%20in-ear/AAW%20AXH%202019) on 711
+- [AAW AXH (2019)](./711%20in-ear/AAW%20AXH%20(2019)) on 711
 - [AAW Canary](./711%20in-ear/AAW%20Canary) on 711
 - [AAW Canary (sample 1)](./711%20in-ear/AAW%20Canary%20(sample%201)) on 711
 - [AAW Canary (sample 2)](./711%20in-ear/AAW%20Canary%20(sample%202)) on 711
@@ -131,8 +133,8 @@
 - [Acoustune HS1750](./711%20in-ear/Acoustune%20HS1750) on 711
 - [Acoustune HS1790](./711%20in-ear/Acoustune%20HS1790) on 711
 - [Acoustune HS2000MX](./711%20in-ear/Acoustune%20HS2000MX) on 711
-- [Advanced 747](./711%20in-ear/Advanced%20747) on 711
-- [Advanced 747 NC](./711%20in-ear/Advanced%20747%20NC) on 711
+- [Advanced 747 (ANC off)](./711%20in-ear/Advanced%20747%20(ANC%20off)) on 711
+- [Advanced 747 (ANC on)](./711%20in-ear/Advanced%20747%20(ANC%20on)) on 711
 - [Advanced Elise](./711%20in-ear/Advanced%20Elise) on 711
 - [Advanced Evo X](./711%20in-ear/Advanced%20Evo%20X) on 711
 - [Advanced Furai](./Bruel%20&%20Kjaer%204620%20in-ear/Advanced%20Furai) on Bruel & Kjaer 4620
@@ -182,7 +184,7 @@
 - [Ambient Acoustics MAD24](./711%20in-ear/Ambient%20Acoustics%20MAD24) on 711
 - [Ambient Dynamics AD-006 Lyndale](./711%20in-ear/Ambient%20Dynamics%20AD-006%20Lyndale) on 711
 - [Anker Soundcore Liberty 2 Pro](./711%20in-ear/Anker%20Soundcore%20Liberty%202%20Pro) on 711
-- [Anker SoundCore Liberty Air 2](./711%20in-ear/Anker%20SoundCore%20Liberty%20Air%202) on 711
+- [Anker Soundcore Liberty Air 2](./711%20in-ear/Anker%20Soundcore%20Liberty%20Air%202) on 711
 - [Anthem Five E2 (CIEM)](./711%20in-ear/Anthem%20Five%20E2%20(CIEM)) on 711
 - [Anthem Five E4 (CIEM)](./711%20in-ear/Anthem%20Five%20E4%20(CIEM)) on 711
 - [Apple AirPods Max](./GRAS%2043AG-7%20over-ear/Apple%20AirPods%20Max) on GRAS 43AG-7
@@ -201,8 +203,6 @@
 - [Apple AirPods Pro 2 (88dB + ANC)](./711%20in-ear/Apple%20AirPods%20Pro%202%20(88dB%20+%20ANC)) on 711
 - [Apple AirPods Pro 2 (91dB + ANC)](./711%20in-ear/Apple%20AirPods%20Pro%202%20(91dB%20+%20ANC)) on 711
 - [Apple AirPods Pro 2 (ANC mode)](./711%20in-ear/Apple%20AirPods%20Pro%202%20(ANC%20mode)) on 711
-- [Apple AirPods Pro 2 (ANC off)](./711%20in-ear/Apple%20AirPods%20Pro%202%20(ANC%20off)) on 711
-- [Apple AirPods Pro 2 (ANC on)](./711%20in-ear/Apple%20AirPods%20Pro%202%20(ANC%20on)) on 711
 - [Apple AirPods Pro 2 (passive mode)](./711%20in-ear/Apple%20AirPods%20Pro%202%20(passive%20mode)) on 711
 - [Apple AirPods Pro 2 (transparency mode)](./711%20in-ear/Apple%20AirPods%20Pro%202%20(transparency%20mode)) on 711
 - [ARC Mira](./711%20in-ear/ARC%20Mira) on 711
@@ -221,12 +221,12 @@
 - [Aroma Audio Witch Girl S](./711%20in-ear/Aroma%20Audio%20Witch%20Girl%20S) on 711
 - [Aroma Audio Witch Girl W12](./711%20in-ear/Aroma%20Audio%20Witch%20Girl%20W12) on 711
 - [Aroma Audio Yao](./711%20in-ear/Aroma%20Audio%20Yao) on 711
-- [Astell & Kern Rosie (2 o’clock)](./711%20in-ear/Astell%20&%20Kern%20Rosie%20(2%20o%E2%80%99clock)) on 711
+- [Astell & Kern Rosie (2 o'clock)](./711%20in-ear/Astell%20&%20Kern%20Rosie%20(2%20o'clock)) on 711
 - [Astell & Kern Rosie (max)](./711%20in-ear/Astell%20&%20Kern%20Rosie%20(max)) on 711
 - [Astell & Kern Rosie (min)](./711%20in-ear/Astell%20&%20Kern%20Rosie%20(min)) on 711
-- [Astell & Kern T8iE Mk1](./711%20in-ear/Astell%20&%20Kern%20T8iE%20Mk1) on 711
-- [Astell & Kern T8iE Mk1 (sample 1)](./711%20in-ear/Astell%20&%20Kern%20T8iE%20Mk1%20(sample%201)) on 711
-- [Astell & Kern T8iE Mk1 (sample 2)](./711%20in-ear/Astell%20&%20Kern%20T8iE%20Mk1%20(sample%202)) on 711
+- [Astell & Kern T8iE](./711%20in-ear/Astell%20&%20Kern%20T8iE) on 711
+- [Astell & Kern T8iE (sample 1)](./711%20in-ear/Astell%20&%20Kern%20T8iE%20(sample%201)) on 711
+- [Astell & Kern T8iE (sample 2)](./711%20in-ear/Astell%20&%20Kern%20T8iE%20(sample%202)) on 711
 - [Astell & Kern T9iE](./711%20in-ear/Astell%20&%20Kern%20T9iE) on 711
 - [ASTRO Gaming A40 TR](./GRAS%2043AG-7%20over-ear/ASTRO%20Gaming%20A40%20TR) on GRAS 43AG-7
 - [Astrotec Delphinus 5](./711%20in-ear/Astrotec%20Delphinus%205) on 711
@@ -242,8 +242,8 @@
 - [Audeze iSINE 20](./711%20in-ear/Audeze%20iSINE%2020) on 711
 - [Audeze iSINE 20 (Cipher cable)](./711%20in-ear/Audeze%20iSINE%2020%20(Cipher%20cable)) on 711
 - [Audeze LCD-1](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-1) on GRAS 43AG-7
+- [Audeze LCD-2](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-2) on GRAS 43AG-7
 - [Audeze LCD-2 (Dekoni fenestrated sheepskin earpads)](./EARS%20+%20711%20over-ear/Audeze%20LCD-2%20(Dekoni%20fenestrated%20sheepskin%20earpads)) on EARS + 711
-- [Audeze LCD-2 (Rosewood)](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-2%20(Rosewood)) on GRAS 43AG-7
 - [Audeze LCD-2 Classic](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-2%20Classic) on GRAS 43AG-7
 - [Audeze LCD-2 Closed Back](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-2%20Closed%20Back) on GRAS 43AG-7
 - [Audeze LCD-24](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-24) on GRAS 43AG-7
@@ -256,9 +256,10 @@
 - [Audeze LCD-i4](./711%20in-ear/Audeze%20LCD-i4) on 711
 - [Audeze LCD-MX4](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-MX4) on GRAS 43AG-7
 - [Audeze LCD-R](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-R) on GRAS 43AG-7
-- [Audeze LCD-X](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-X) on GRAS 43AG-7
-- [Audeze LCD-X (worn earpads)](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-X%20(worn%20earpads)) on GRAS 43AG-7
-- [Audeze LCD-X (worn earpads) (sample 2)](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-X%20(worn%20earpads)%20(sample%202)) on GRAS 43AG-7
+- [Audeze LCD-X](./EARS%20+%20711%20over-ear/Audeze%20LCD-X) on EARS + 711
+- [Audeze LCD-X (2021)](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-X%20(2021)) on GRAS 43AG-7
+- [Audeze LCD-X (pre-2021)](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-X%20(pre-2021)) on GRAS 43AG-7
+- [Audeze LCD-X (pre-2021) (worn earpads)](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-X%20(pre-2021)%20(worn%20earpads)) on GRAS 43AG-7
 - [Audeze LCD-XC](./GRAS%2043AG-7%20over-ear/Audeze%20LCD-XC) on GRAS 43AG-7
 - [Audeze MM-500](./GRAS%2043AG-7%20over-ear/Audeze%20MM-500) on GRAS 43AG-7
 - [Audeze Mobius (ballistics preset)](./GRAS%2043AG-7%20over-ear/Audeze%20Mobius%20(ballistics%20preset)) on GRAS 43AG-7
@@ -349,29 +350,24 @@
 - [Beyerdynamic Aventho Wireless](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20Aventho%20Wireless) on GRAS 43AG-7
 - [Beyerdynamic DT 1350](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%201350) on GRAS 43AG-7
 - [Beyerdynamic DT 1770 Pro (velour earpads)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%201770%20Pro%20(velour%20earpads)) on GRAS 43AG-7
-- [Beyerdynamic DT 1990 (balanced earpads)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%201990%20(balanced%20earpads)) on GRAS 43AG-7
-- [Beyerdynamic DT 250 80 Ohm](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20250%2080%20Ohm) on GRAS 43AG-7
-- [Beyerdynamic DT 770 250 Ohm](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20770%20250%20Ohm) on GRAS 43AG-7
-- [Beyerdynamic DT 770 80 Ohm](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20770%2080%20Ohm) on GRAS 43AG-7
+- [Beyerdynamic DT 1990 Pro (analytical earpads)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%201990%20Pro%20(analytical%20earpads)) on GRAS 43AG-7
+- [Beyerdynamic DT 1990 Pro (balanced earpads)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%201990%20Pro%20(balanced%20earpads)) on GRAS 43AG-7
+- [Beyerdynamic DT 1990 Pro (balanced earpads) (sample 1)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%201990%20Pro%20(balanced%20earpads)%20(sample%201)) on GRAS 43AG-7
+- [Beyerdynamic DT 1990 Pro (balanced earpads) (sample 2)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%201990%20Pro%20(balanced%20earpads)%20(sample%202)) on GRAS 43AG-7
+- [Beyerdynamic DT 1990 Pro (Dekoni Elite velour earpads)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%201990%20Pro%20(Dekoni%20Elite%20velour%20earpads)) on GRAS 43AG-7
+- [Beyerdynamic DT 250 (80 Ohm)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20250%20(80%20Ohm)) on GRAS 43AG-7
+- [Beyerdynamic DT 770 Pro (250 Ohm)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20770%20Pro%20(250%20Ohm)) on GRAS 43AG-7
+- [Beyerdynamic DT 770 Pro (80 Ohm)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20770%20Pro%20(80%20Ohm)) on GRAS 43AG-7
 - [Beyerdynamic DT 860](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20860) on GRAS 43AG-7
-- [Beyerdynamic DT 880 32 Ohm](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20880%2032%20Ohm) on GRAS 43AG-7
-- [Beyerdynamic DT 990 250 Ohm](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20990%20250%20Ohm) on GRAS 43AG-7
-- [Beyerdynamic DT1990 Pro (analytical earpads)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(analytical%20earpads)) on GRAS 43AG-7
-- [Beyerdynamic DT1990 Pro (analytical earpads) (sample 2)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(analytical%20earpads)%20(sample%202)) on GRAS 43AG-7
-- [Beyerdynamic DT1990 Pro (balanced earpads)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(balanced%20earpads)) on GRAS 43AG-7
-- [Beyerdynamic DT1990 Pro (balanced earpads) (sample 2)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(balanced%20earpads)%20(sample%202)) on GRAS 43AG-7
-- [Beyerdynamic DT1990 Pro (Dekoni elite velour earpads)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(Dekoni%20elite%20velour%20earpads)) on GRAS 43AG-7
-- [Beyerdynamic DT1990 Pro (Dekoni elite velour earpads) (sample 2)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT1990%20Pro%20(Dekoni%20elite%20velour%20earpads)%20(sample%202)) on GRAS 43AG-7
-- [Beyerdynamic T1 3rd Generation](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20T1%203rd%20Generation) on GRAS 43AG-7
-- [Beyerdynamic T5 3rd Generation](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20T5%203rd%20Generation) on GRAS 43AG-7
+- [Beyerdynamic DT 880 (32 Ohm)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20880%20(32%20Ohm)) on GRAS 43AG-7
+- [Beyerdynamic DT 990 Pro (250 Ohm)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20990%20Pro%20(250%20Ohm)) on GRAS 43AG-7
+- [Beyerdynamic T1 (3rd Gen)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20T1%20(3rd%20Gen)) on GRAS 43AG-7
+- [Beyerdynamic T5 (3rd Gen)](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20T5%20(3rd%20Gen)) on GRAS 43AG-7
 - [Beyerdynamic T5p](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20T5p) on GRAS 43AG-7
 - [Beyerdynamic T70](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20T70) on GRAS 43AG-7
 - [Beyerdynamic TYGR 300 R](./GRAS%2043AG-7%20over-ear/Beyerdynamic%20TYGR%20300%20R) on GRAS 43AG-7
 - [Beyerdynamic Xelento](./711%20in-ear/Beyerdynamic%20Xelento) on 711
 - [BGVP DM6](./711%20in-ear/BGVP%20DM6) on 711
-- [BGVP DM6 20 Ohm](./711%20in-ear/BGVP%20DM6%2020%20Ohm) on 711
-- [BGVP DM6 75 Ohm](./711%20in-ear/BGVP%20DM6%2075%20Ohm) on 711
-- [BGVP DM6 M](./711%20in-ear/BGVP%20DM6%20M) on 711
 - [BGVP DM7](./711%20in-ear/BGVP%20DM7) on 711
 - [BGVP DMG (black)](./711%20in-ear/BGVP%20DMG%20(black)) on 711
 - [BGVP DMG (gold)](./711%20in-ear/BGVP%20DMG%20(gold)) on 711
@@ -391,7 +387,6 @@
 - [BGVP ZERO](./711%20in-ear/BGVP%20ZERO) on 711
 - [Big Bus Earbuds](./711%20in-ear/Big%20Bus%20Earbuds) on 711
 - [BLON Annotation](./Bruel%20&%20Kjaer%204620%20in-ear/BLON%20Annotation) on Bruel & Kjaer 4620
-- [BLON Annotation](./Bruel%20&%20Kjaer%204620%20in-ear/BLON%20Annotation/BLON%20Annotation) on Bruel & Kjaer 4620
 - [BLON B20](./GRAS%2043AG-7%20over-ear/BLON%20B20) on GRAS 43AG-7
 - [BLON B60](./GRAS%2043AG-7%20over-ear/BLON%20B60) on GRAS 43AG-7
 - [BLON B60 (sample 1)](./GRAS%2043AG-7%20over-ear/BLON%20B60%20(sample%201)) on GRAS 43AG-7
@@ -599,9 +594,9 @@
 - [Effect Audio Symphony](./711%20in-ear/Effect%20Audio%20Symphony) on 711
 - [EKSA E900 Pro](./GRAS%2043AG-7%20over-ear/EKSA%20E900%20Pro) on GRAS 43AG-7
 - [Elysian Annihilator](./711%20in-ear/Elysian%20Annihilator) on 711
+- [Elysian Annihilator (2021)](./711%20in-ear/Elysian%20Annihilator%20(2021)) on 711
 - [Elysian Annihilator (sample 1)](./711%20in-ear/Elysian%20Annihilator%20(sample%201)) on 711
 - [Elysian Annihilator (sample 2)](./711%20in-ear/Elysian%20Annihilator%20(sample%202)) on 711
-- [Elysian Annihilator DIO 2021](./711%20in-ear/Elysian%20Annihilator%20DIO%202021) on 711
 - [Elysian Artemis](./711%20in-ear/Elysian%20Artemis) on 711
 - [Elysian Artemis V2](./711%20in-ear/Elysian%20Artemis%20V2) on 711
 - [Elysian Cora V2](./711%20in-ear/Elysian%20Cora%20V2) on 711
@@ -615,7 +610,7 @@
 - [Elysian Hades V2 (stage)](./711%20in-ear/Elysian%20Hades%20V2%20(stage)) on 711
 - [Elysian Minerva](./711%20in-ear/Elysian%20Minerva) on 711
 - [Elysian Poseidon](./711%20in-ear/Elysian%20Poseidon) on 711
-- [Elysian Terminator](./711%20in-ear/Elysian%20Terminator) on 711
+- [Elysian Terminator (sample 1)](./711%20in-ear/Elysian%20Terminator%20(sample%201)) on 711
 - [Elysian Terminator V2](./711%20in-ear/Elysian%20Terminator%20V2) on 711
 - [Elysian Terminator V2 (sample 2)](./711%20in-ear/Elysian%20Terminator%20V2%20(sample%202)) on 711
 - [Elysian X](./711%20in-ear/Elysian%20X) on 711
@@ -666,7 +661,7 @@
 - [Fatfreq 20.8](./711%20in-ear/Fatfreq%2020.8) on 711
 - [Fatfreq Eden](./711%20in-ear/Fatfreq%20Eden) on 711
 - [Fatfreq Hayabusa](./711%20in-ear/Fatfreq%20Hayabusa) on 711
-- [Fatfreq Hayabusa (bass switch on)](./711%20in-ear/Fatfreq%20Hayabusa%20(bass%20switch%20on)) on 711
+- [Fatfreq Hayabusa (bass)](./711%20in-ear/Fatfreq%20Hayabusa%20(bass)) on 711
 - [Fatfreq Maestro](./711%20in-ear/Fatfreq%20Maestro) on 711
 - [Fatfreq Maestro Mini](./711%20in-ear/Fatfreq%20Maestro%20Mini) on 711
 - [Fatfreq Maestro SE](./711%20in-ear/Fatfreq%20Maestro%20SE) on 711
@@ -685,14 +680,15 @@
 - [Fatfreq Tsuru](./711%20in-ear/Fatfreq%20Tsuru) on 711
 - [FAudio Chorus](./711%20in-ear/FAudio%20Chorus) on 711
 - [FAudio Dark Sky](./711%20in-ear/FAudio%20Dark%20Sky) on 711
-- [FAudio Mezzo (000 setting)](./711%20in-ear/FAudio%20Mezzo%20(000%20setting)) on 711
-- [FAudio Mezzo (003 setting)](./711%20in-ear/FAudio%20Mezzo%20(003%20setting)) on 711
-- [FAudio Mezzo (020 setting)](./711%20in-ear/FAudio%20Mezzo%20(020%20setting)) on 711
-- [FAudio Mezzo (023 setting)](./711%20in-ear/FAudio%20Mezzo%20(023%20setting)) on 711
-- [FAudio Mezzo (100 setting)](./711%20in-ear/FAudio%20Mezzo%20(100%20setting)) on 711
-- [FAudio Mezzo (120 setting)](./711%20in-ear/FAudio%20Mezzo%20(120%20setting)) on 711
-- [FAudio Mezzo (123 setting)](./711%20in-ear/FAudio%20Mezzo%20(123%20setting)) on 711
+- [FAudio Mezzo (off-off-off)](./711%20in-ear/FAudio%20Mezzo%20(off-off-off)) on 711
+- [FAudio Mezzo (off-off-on)](./711%20in-ear/FAudio%20Mezzo%20(off-off-on)) on 711
+- [FAudio Mezzo (off-on-off)](./711%20in-ear/FAudio%20Mezzo%20(off-on-off)) on 711
+- [FAudio Mezzo (off-on-on)](./711%20in-ear/FAudio%20Mezzo%20(off-on-on)) on 711
+- [FAudio Mezzo (on-off-off)](./711%20in-ear/FAudio%20Mezzo%20(on-off-off)) on 711
+- [FAudio Mezzo (on-on-off)](./711%20in-ear/FAudio%20Mezzo%20(on-on-off)) on 711
+- [FAudio Mezzo (on-on-on)](./711%20in-ear/FAudio%20Mezzo%20(on-on-on)) on 711
 - [FAudio Minor](./711%20in-ear/FAudio%20Minor) on 711
+- [FAudio Minor (sample 1)](./711%20in-ear/FAudio%20Minor%20(sample%201)) on 711
 - [FAudio Minor (sample 2)](./711%20in-ear/FAudio%20Minor%20(sample%202)) on 711
 - [Fearless Audio ACME 8](./711%20in-ear/Fearless%20Audio%20ACME%208) on 711
 - [Fearless Audio Barcelona](./711%20in-ear/Fearless%20Audio%20Barcelona) on 711
@@ -746,13 +742,13 @@
 - [FiiO FH5 (sample 1)](./711%20in-ear/FiiO%20FH5%20(sample%201)) on 711
 - [FiiO FH5 (sample 2)](./711%20in-ear/FiiO%20FH5%20(sample%202)) on 711
 - [FiiO FH5s](./711%20in-ear/FiiO%20FH5s) on 711
-- [FiiO FH5s (all switches on)](./711%20in-ear/FiiO%20FH5s%20(all%20switches%20on)) on 711
-- [FiiO FH5s (bass switch on)](./711%20in-ear/FiiO%20FH5s%20(bass%20switch%20on)) on 711
-- [FiiO FH5s (bass)](./Bruel%20&%20Kjaer%204620%20in-ear/FiiO%20FH5s%20(bass)) on Bruel & Kjaer 4620
-- [FiiO FH5s (mid switch on)](./711%20in-ear/FiiO%20FH5s%20(mid%20switch%20on)) on 711
-- [FiiO FH5s (mids)](./Bruel%20&%20Kjaer%204620%20in-ear/FiiO%20FH5s%20(mids)) on Bruel & Kjaer 4620
-- [FiiO FH5s (treble switch on)](./711%20in-ear/FiiO%20FH5s%20(treble%20switch%20on)) on 711
-- [FiiO FH5s (treble)](./Bruel%20&%20Kjaer%204620%20in-ear/FiiO%20FH5s%20(treble)) on Bruel & Kjaer 4620
+- [FiiO FH5s (off-off-on)](./Bruel%20&%20Kjaer%204620%20in-ear/FiiO%20FH5s%20(off-off-on)) on Bruel & Kjaer 4620
+- [FiiO FH5s (off-off-on)](./711%20in-ear/FiiO%20FH5s%20(off-off-on)) on 711
+- [FiiO FH5s (off-on-off)](./Bruel%20&%20Kjaer%204620%20in-ear/FiiO%20FH5s%20(off-on-off)) on Bruel & Kjaer 4620
+- [FiiO FH5s (off-on-off)](./711%20in-ear/FiiO%20FH5s%20(off-on-off)) on 711
+- [FiiO FH5s (on-off-off)](./Bruel%20&%20Kjaer%204620%20in-ear/FiiO%20FH5s%20(on-off-off)) on Bruel & Kjaer 4620
+- [FiiO FH5s (on-off-off)](./711%20in-ear/FiiO%20FH5s%20(on-off-off)) on 711
+- [FiiO FH5s (on-on-on)](./711%20in-ear/FiiO%20FH5s%20(on-on-on)) on 711
 - [FiiO FH7](./711%20in-ear/FiiO%20FH7) on 711
 - [FiiO FH9 (black filter)](./711%20in-ear/FiiO%20FH9%20(black%20filter)) on 711
 - [FiiO FH9 (green filter)](./711%20in-ear/FiiO%20FH9%20(green%20filter)) on 711
@@ -786,8 +782,8 @@
 - [Final Audio Heaven 4](./711%20in-ear/Final%20Audio%20Heaven%204) on 711
 - [Final Audio Heaven 7](./711%20in-ear/Final%20Audio%20Heaven%207) on 711
 - [Final Audio Heaven 8](./711%20in-ear/Final%20Audio%20Heaven%208) on 711
+- [Final Audio Heaven III](./711%20in-ear/Final%20Audio%20Heaven%20III) on 711
 - [Final Audio Heaven S](./711%20in-ear/Final%20Audio%20Heaven%20S) on 711
-- [Final Audio III](./711%20in-ear/Final%20Audio%20III) on 711
 - [Final Audio Lab 1](./711%20in-ear/Final%20Audio%20Lab%201) on 711
 - [Final Audio Lab 1 Fit 1](./711%20in-ear/Final%20Audio%20Lab%201%20Fit%201) on 711
 - [Final Audio Lab 1 Fit 2](./711%20in-ear/Final%20Audio%20Lab%201%20Fit%202) on 711
@@ -884,10 +880,10 @@
 - [Gold Planar GL12 (filter)](./711%20in-ear/Gold%20Planar%20GL12%20(filter)) on 711
 - [Gold Planar GL12 (no filter)](./711%20in-ear/Gold%20Planar%20GL12%20(no%20filter)) on 711
 - [Gold Planar GL20](./711%20in-ear/Gold%20Planar%20GL20) on 711
-- [Gold Planar GL2000 (leather earpads)](./GRAS%2043AG-7%20over-ear/Gold%20Planar%20GL2000%20(leather%20earpads)) on GRAS 43AG-7
-- [Gold Planar GL2000 (perforated hybrid earpads)](./GRAS%2043AG-7%20over-ear/Gold%20Planar%20GL2000%20(perforated%20hybrid%20earpads)) on GRAS 43AG-7
-- [Gold Planar GL2000 double-sided (leather earpads)](./GRAS%2043AG-7%20over-ear/Gold%20Planar%20GL2000%20double-sided%20(leather%20earpads)) on GRAS 43AG-7
-- [Gold Planar GL2000 double-sided (perforated hybrid earpads)](./GRAS%2043AG-7%20over-ear/Gold%20Planar%20GL2000%20double-sided%20(perforated%20hybrid%20earpads)) on GRAS 43AG-7
+- [Gold Planar GL2000 (double-sided, leather earpads)](./GRAS%2043AG-7%20over-ear/Gold%20Planar%20GL2000%20(double-sided,%20leather%20earpads)) on GRAS 43AG-7
+- [Gold Planar GL2000 (double-sided, perforated hybrid earpads)](./GRAS%2043AG-7%20over-ear/Gold%20Planar%20GL2000%20(double-sided,%20perforated%20hybrid%20earpads)) on GRAS 43AG-7
+- [Gold Planar GL2000 (single-sided, leather earpads)](./GRAS%2043AG-7%20over-ear/Gold%20Planar%20GL2000%20(single-sided,%20leather%20earpads)) on GRAS 43AG-7
+- [Gold Planar GL2000 (single-sided, perforated hybrid earpads)](./GRAS%2043AG-7%20over-ear/Gold%20Planar%20GL2000%20(single-sided,%20perforated%20hybrid%20earpads)) on GRAS 43AG-7
 - [Gold Planar GL850](./GRAS%2043AG-7%20over-ear/Gold%20Planar%20GL850) on GRAS 43AG-7
 - [Grado GR8](./711%20in-ear/Grado%20GR8) on 711
 - [Grado GW100](./GRAS%2043AG-7%20over-ear/Grado%20GW100) on GRAS 43AG-7
@@ -908,7 +904,6 @@
 - [HarmonicDyne PD1](./711%20in-ear/HarmonicDyne%20PD1) on 711
 - [Heartfield Acoustic Deer](./711%20in-ear/Heartfield%20Acoustic%20Deer) on 711
 - [HEDD HEDDphone](./GRAS%2043AG-7%20over-ear/HEDD%20HEDDphone) on GRAS 43AG-7
-- [HEDD HEDDphone (sample 2)](./GRAS%2043AG-7%20over-ear/HEDD%20HEDDphone%20(sample%202)) on GRAS 43AG-7
 - [Heir Audio Tzar 350](./711%20in-ear/Heir%20Audio%20Tzar%20350) on 711
 - [HiBy Crystal 6](./711%20in-ear/HiBy%20Crystal%206) on 711
 - [HiBy WH3](./711%20in-ear/HiBy%20WH3) on 711
@@ -929,8 +924,8 @@
 - [HiFi Boy OS V3](./711%20in-ear/HiFi%20Boy%20OS%20V3) on 711
 - [HIFIMAN Ananda](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Ananda) on GRAS 43AG-7
 - [HIFIMAN Arya](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Arya) on GRAS 43AG-7
-- [HIFIMAN Arya Stealth](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Arya%20Stealth) on GRAS 43AG-7
-- [HIFIMAN Deva (passive)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Deva%20(passive)) on GRAS 43AG-7
+- [HIFIMAN Arya Stealth Magnet Version](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Arya%20Stealth%20Magnet%20Version) on GRAS 43AG-7
+- [HIFIMAN Deva (wired)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Deva%20(wired)) on GRAS 43AG-7
 - [HIFIMAN Deva Pro](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Deva%20Pro) on GRAS 43AG-7
 - [HIFIMAN Edition X V2](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Edition%20X%20V2) on GRAS 43AG-7
 - [HIFIMAN HE-5](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE-5) on GRAS 43AG-7
@@ -939,10 +934,11 @@
 - [HIFIMAN HE1000](./EARS%20+%20711%20over-ear/HIFIMAN%20HE1000) on EARS + 711
 - [HIFIMAN HE1000 V2](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE1000%20V2) on GRAS 43AG-7
 - [HIFIMAN HE1000se](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE1000se) on GRAS 43AG-7
-- [HIFIMAN HE400i 2016](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE400i%202016) on GRAS 43AG-7
-- [HIFIMAN HE400i 2020](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE400i%202020) on GRAS 43AG-7
+- [HIFIMAN HE400i (2016)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE400i%20(2016)) on GRAS 43AG-7
+- [HIFIMAN HE400i (2020)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE400i%20(2020)) on GRAS 43AG-7
 - [HIFIMAN HE400se](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE400se) on GRAS 43AG-7
 - [HIFIMAN HE560 V1](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE560%20V1) on GRAS 43AG-7
+- [HIFIMAN HE560 V1 (sample 1)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE560%20V1%20(sample%201)) on GRAS 43AG-7
 - [HIFIMAN HE560 V1 (sample 2)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE560%20V1%20(sample%202)) on GRAS 43AG-7
 - [HIFIMAN HE5se](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE5se) on GRAS 43AG-7
 - [HIFIMAN HE6 (6-screw, velour earpads)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20HE6%20(6-screw,%20velour%20earpads)) on GRAS 43AG-7
@@ -954,9 +950,11 @@
 - [HIFIMAN RE400](./711%20in-ear/HIFIMAN%20RE400) on 711
 - [HIFIMAN RE800](./711%20in-ear/HIFIMAN%20RE800) on 711
 - [HIFIMAN Shangri-La Jr](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Shangri-La%20Jr) on GRAS 43AG-7
-- [HIFIMAN Sundara](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Sundara) on GRAS 43AG-7
-- [HIFIMAN Sundara 2020](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Sundara%202020) on GRAS 43AG-7
+- [HIFIMAN Sundara (post-2020 earpads)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Sundara%20(post-2020%20earpads)) on GRAS 43AG-7
+- [HIFIMAN Sundara (pre-2020 earpads)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Sundara%20(pre-2020%20earpads)) on GRAS 43AG-7
+- [HIFIMAN Sundara (pre-2020 earpads)](./EARS%20+%20711%20over-ear/HIFIMAN%20Sundara%20(pre-2020%20earpads)) on EARS + 711
 - [HIFIMAN Susvara](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Susvara) on GRAS 43AG-7
+- [HIFIMAN Susvara (sample 1)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Susvara%20(sample%201)) on GRAS 43AG-7
 - [HIFIMAN Susvara (sample 2)](./GRAS%2043AG-7%20over-ear/HIFIMAN%20Susvara%20(sample%202)) on GRAS 43AG-7
 - [HIFIMAN TWS600](./711%20in-ear/HIFIMAN%20TWS600) on 711
 - [Horluchs HL4300](./711%20in-ear/Horluchs%20HL4300) on 711
@@ -1052,13 +1050,13 @@
 - [Jade Audio EA3](./711%20in-ear/Jade%20Audio%20EA3) on 711
 - [Jaybird Vista](./711%20in-ear/Jaybird%20Vista) on 711
 - [JBL Live 300TWS](./711%20in-ear/JBL%20Live%20300TWS) on 711
-- [JH Audio 13v2 (2 o’clock)](./711%20in-ear/JH%20Audio%2013v2%20(2%20o%E2%80%99clock)) on 711
+- [JH Audio 13v2 (2 o'clock)](./711%20in-ear/JH%20Audio%2013v2%20(2%20o'clock)) on 711
 - [JH Audio 13v2 (max)](./711%20in-ear/JH%20Audio%2013v2%20(max)) on 711
 - [JH Audio 13v2 (min)](./711%20in-ear/JH%20Audio%2013v2%20(min)) on 711
-- [JH Audio 16v2 (2 o’clock)](./711%20in-ear/JH%20Audio%2016v2%20(2%20o%E2%80%99clock)) on 711
+- [JH Audio 16v2 (2 o'clock)](./711%20in-ear/JH%20Audio%2016v2%20(2%20o'clock)) on 711
 - [JH Audio 16v2 (max)](./711%20in-ear/JH%20Audio%2016v2%20(max)) on 711
 - [JH Audio 16v2 (min)](./711%20in-ear/JH%20Audio%2016v2%20(min)) on 711
-- [JH Audio Angie (2 o’clock)](./711%20in-ear/JH%20Audio%20Angie%20(2%20o%E2%80%99clock)) on 711
+- [JH Audio Angie (2 o'clock)](./711%20in-ear/JH%20Audio%20Angie%20(2%20o'clock)) on 711
 - [JH Audio Angie (max)](./711%20in-ear/JH%20Audio%20Angie%20(max)) on 711
 - [JH Audio Angie (min)](./711%20in-ear/JH%20Audio%20Angie%20(min)) on 711
 - [JH Audio Billie Jean](./711%20in-ear/JH%20Audio%20Billie%20Jean) on 711
@@ -1066,19 +1064,22 @@
 - [JH Audio Contour XO (max bass)](./711%20in-ear/JH%20Audio%20Contour%20XO%20(max%20bass)) on 711
 - [JH Audio Contour XO (min bass)](./711%20in-ear/JH%20Audio%20Contour%20XO%20(min%20bass)) on 711
 - [JH Audio Diana](./711%20in-ear/JH%20Audio%20Diana) on 711
+- [JH Audio JH13v2 (half bass)](./711%20in-ear/JH%20Audio%20JH13v2%20(half%20bass)) on 711
 - [JH Audio Jolene (half bass)](./711%20in-ear/JH%20Audio%20Jolene%20(half%20bass)) on 711
 - [JH Audio Jolene (max bass)](./711%20in-ear/JH%20Audio%20Jolene%20(max%20bass)) on 711
 - [JH Audio Jolene (min bass)](./711%20in-ear/JH%20Audio%20Jolene%20(min%20bass)) on 711
-- [JH Audio Layla (2 o’clock)](./711%20in-ear/JH%20Audio%20Layla%20(2%20o%E2%80%99clock)) on 711
+- [JH Audio Layla (2 o'clock)](./711%20in-ear/JH%20Audio%20Layla%20(2%20o'clock)) on 711
+- [JH Audio Layla (half bass)](./711%20in-ear/JH%20Audio%20Layla%20(half%20bass)) on 711
 - [JH Audio Layla (max)](./711%20in-ear/JH%20Audio%20Layla%20(max)) on 711
 - [JH Audio Layla (min)](./711%20in-ear/JH%20Audio%20Layla%20(min)) on 711
-- [JH Audio Layla AION (2 o’clock)](./711%20in-ear/JH%20Audio%20Layla%20AION%20(2%20o%E2%80%99clock)) on 711
+- [JH Audio Layla AION (2 o'clock)](./711%20in-ear/JH%20Audio%20Layla%20AION%20(2%20o'clock)) on 711
+- [JH Audio Layla AION (half bass)](./711%20in-ear/JH%20Audio%20Layla%20AION%20(half%20bass)) on 711
 - [JH Audio Layla AION (max bass)](./711%20in-ear/JH%20Audio%20Layla%20AION%20(max%20bass)) on 711
 - [JH Audio Layla AION (min bass)](./711%20in-ear/JH%20Audio%20Layla%20AION%20(min%20bass)) on 711
-- [JH Audio Lola (2 o’clock)](./711%20in-ear/JH%20Audio%20Lola%20(2%20o%E2%80%99clock)) on 711
+- [JH Audio Lola (2 o'clock)](./711%20in-ear/JH%20Audio%20Lola%20(2%20o'clock)) on 711
 - [JH Audio Lola (max)](./711%20in-ear/JH%20Audio%20Lola%20(max)) on 711
 - [JH Audio Lola (min)](./711%20in-ear/JH%20Audio%20Lola%20(min)) on 711
-- [JH Audio Roxanne (2 o’clock)](./711%20in-ear/JH%20Audio%20Roxanne%20(2%20o%E2%80%99clock)) on 711
+- [JH Audio Roxanne (2 o'clock)](./711%20in-ear/JH%20Audio%20Roxanne%20(2%20o'clock)) on 711
 - [JH Audio Roxanne (max)](./711%20in-ear/JH%20Audio%20Roxanne%20(max)) on 711
 - [JH Audio Roxanne (min)](./711%20in-ear/JH%20Audio%20Roxanne%20(min)) on 711
 - [Jomo Audio Flamenco](./711%20in-ear/Jomo%20Audio%20Flamenco) on 711
@@ -1104,7 +1105,6 @@
 - [Jomo Audio Trinity Brass](./711%20in-ear/Jomo%20Audio%20Trinity%20Brass) on 711
 - [JQ 4u Pro](./711%20in-ear/JQ%204u%20Pro) on 711
 - [JQ Hua Jiang](./711%20in-ear/JQ%20Hua%20Jiang) on 711
-- [JQ Hua Jiang (sample 2)](./711%20in-ear/JQ%20Hua%20Jiang%20(sample%202)) on 711
 - [Just Ear Club Sound](./711%20in-ear/Just%20Ear%20Club%20Sound) on 711
 - [JVC FD01 (modded)](./711%20in-ear/JVC%20FD01%20(modded)) on 711
 - [JVC HA-FD01](./711%20in-ear/JVC%20HA-FD01) on 711
@@ -1159,8 +1159,8 @@
 - [Kumitate Lab KL-Corona (sample 2)](./711%20in-ear/Kumitate%20Lab%20KL-Corona%20(sample%202)) on 711
 - [Kumitate Lab KL-Focus (max bass)](./711%20in-ear/Kumitate%20Lab%20KL-Focus%20(max%20bass)) on 711
 - [Kumitate Lab KL-Focus (min bass)](./711%20in-ear/Kumitate%20Lab%20KL-Focus%20(min%20bass)) on 711
-- [Kumitate Lab KL-Focus Setting 2](./711%20in-ear/Kumitate%20Lab%20KL-Focus%20Setting%202) on 711
-- [Kumitate Lab KL-Focus Setting 3](./711%20in-ear/Kumitate%20Lab%20KL-Focus%20Setting%203) on 711
+- [Kumitate Lab KL-Focus (setting 2)](./711%20in-ear/Kumitate%20Lab%20KL-Focus%20(setting%202)) on 711
+- [Kumitate Lab KL-Focus (setting 3)](./711%20in-ear/Kumitate%20Lab%20KL-Focus%20(setting%203)) on 711
 - [Kumitate Lab KL-Kanon 6-Minus](./711%20in-ear/Kumitate%20Lab%20KL-Kanon%206-Minus) on 711
 - [Kumitate Lab KL-Kanon 6-Plus](./711%20in-ear/Kumitate%20Lab%20KL-Kanon%206-Plus) on 711
 - [Kumitate Lab KL-Meteo](./711%20in-ear/Kumitate%20Lab%20KL-Meteo) on 711
@@ -1279,16 +1279,16 @@
 - [Meze Rai Penta](./711%20in-ear/Meze%20Rai%20Penta) on 711
 - [Meze Rai Solo](./711%20in-ear/Meze%20Rai%20Solo) on 711
 - [MiM Audio Dark Magician](./711%20in-ear/MiM%20Audio%20Dark%20Magician) on 711
-- [Mofasest M14 (00 setting)](./711%20in-ear/Mofasest%20M14%20(00%20setting)) on 711
-- [Mofasest M14 (02 setting)](./711%20in-ear/Mofasest%20M14%20(02%20setting)) on 711
-- [Mofasest M14 (10 setting)](./711%20in-ear/Mofasest%20M14%20(10%20setting)) on 711
-- [Mofasest M14 (12 setting)](./711%20in-ear/Mofasest%20M14%20(12%20setting)) on 711
+- [Mofasest M14 (off-off)](./711%20in-ear/Mofasest%20M14%20(off-off)) on 711
+- [Mofasest M14 (off-on)](./711%20in-ear/Mofasest%20M14%20(off-on)) on 711
+- [Mofasest M14 (on-off)](./711%20in-ear/Mofasest%20M14%20(on-off)) on 711
+- [Mofasest M14 (on-on)](./711%20in-ear/Mofasest%20M14%20(on-on)) on 711
 - [Monoprice Monolith M-TWE](./711%20in-ear/Monoprice%20Monolith%20M-TWE) on 711
 - [Montblanc MB 01 (wired, ANC off)](./GRAS%2043AG-7%20over-ear/Montblanc%20MB%2001%20(wired,%20ANC%20off)) on GRAS 43AG-7
 - [Montblanc MB 01 (wireless, ANC)](./GRAS%2043AG-7%20over-ear/Montblanc%20MB%2001%20(wireless,%20ANC)) on GRAS 43AG-7
 - [Moondrop A8](./711%20in-ear/Moondrop%20A8) on 711
 - [Moondrop Aria](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20Aria) on Bruel & Kjaer 4620
-- [Moondrop Aria 2021](./711%20in-ear/Moondrop%20Aria%202021) on 711
+- [Moondrop Aria (2021)](./711%20in-ear/Moondrop%20Aria%20(2021)) on 711
 - [Moondrop Aria Snow Edition](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20Aria%20Snow%20Edition) on Bruel & Kjaer 4620
 - [Moondrop Aria Snow Edition](./711%20in-ear/Moondrop%20Aria%20Snow%20Edition) on 711
 - [Moondrop Blessing](./711%20in-ear/Moondrop%20Blessing) on 711
@@ -1297,9 +1297,6 @@
 - [Moondrop Blessing 2 (sample 2)](./711%20in-ear/Moondrop%20Blessing%202%20(sample%202)) on 711
 - [Moondrop Blessing 3](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20Blessing%203) on Bruel & Kjaer 4620
 - [Moondrop Blessing 3](./711%20in-ear/Moondrop%20Blessing%203) on 711
-- [Moondrop Blessing2 Dusk](./711%20in-ear/Moondrop%20Blessing2%20Dusk) on 711
-- [Moondrop Blessing2 Dusk (sample 3)](./711%20in-ear/Moondrop%20Blessing2%20Dusk%20(sample%203)) on 711
-- [Moondrop Blessing2 Dusk (sample 4)](./711%20in-ear/Moondrop%20Blessing2%20Dusk%20(sample%204)) on 711
 - [Moondrop Chu](./711%20in-ear/Moondrop%20Chu) on 711
 - [Moondrop Crescent](./711%20in-ear/Moondrop%20Crescent) on 711
 - [Moondrop Kanas Pro](./711%20in-ear/Moondrop%20Kanas%20Pro) on 711
@@ -1320,7 +1317,12 @@
 - [Moondrop Variations](./711%20in-ear/Moondrop%20Variations) on 711
 - [Moondrop Venus](./GRAS%2043AG-7%20over-ear/Moondrop%20Venus) on GRAS 43AG-7
 - [Moondrop Void](./GRAS%2043AG-7%20over-ear/Moondrop%20Void) on GRAS 43AG-7
+- [Moondrop x Crinacle Blessing2 Dusk](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20x%20Crinacle%20Blessing2%20Dusk) on Bruel & Kjaer 4620
 - [Moondrop x Crinacle Blessing2 Dusk](./711%20in-ear/Moondrop%20x%20Crinacle%20Blessing2%20Dusk) on 711
+- [Moondrop x Crinacle Blessing2 Dusk (sample 1)](./711%20in-ear/Moondrop%20x%20Crinacle%20Blessing2%20Dusk%20(sample%201)) on 711
+- [Moondrop x Crinacle Blessing2 Dusk (sample 2)](./711%20in-ear/Moondrop%20x%20Crinacle%20Blessing2%20Dusk%20(sample%202)) on 711
+- [Moondrop x Crinacle Blessing2 Dusk (sample 3)](./711%20in-ear/Moondrop%20x%20Crinacle%20Blessing2%20Dusk%20(sample%203)) on 711
+- [Moondrop x Crinacle Blessing2 Dusk (sample 4)](./711%20in-ear/Moondrop%20x%20Crinacle%20Blessing2%20Dusk%20(sample%204)) on 711
 - [Moondrop x Crinacle Blessing2 Dusk (sample 5)](./711%20in-ear/Moondrop%20x%20Crinacle%20Blessing2%20Dusk%20(sample%205)) on 711
 - [MUNITIO Billets](./711%20in-ear/MUNITIO%20Billets) on 711
 - [MUNITIO Bullet In-Ear](./711%20in-ear/MUNITIO%20Bullet%20In-Ear) on 711
@@ -1441,12 +1443,12 @@
 - [qdc 8SL (sample 1)](./711%20in-ear/qdc%208SL%20(sample%201)) on 711
 - [qdc 8SL (sample 2)](./711%20in-ear/qdc%208SL%20(sample%202)) on 711
 - [qdc 8SS](./711%20in-ear/qdc%208SS) on 711
-- [qdc Anole V14 (0000 setting)](./711%20in-ear/qdc%20Anole%20V14%20(0000%20setting)) on 711
-- [qdc Anole V14 (0004 setting)](./711%20in-ear/qdc%20Anole%20V14%20(0004%20setting)) on 711
-- [qdc Anole V14 (0030 setting)](./711%20in-ear/qdc%20Anole%20V14%20(0030%20setting)) on 711
-- [qdc Anole V14 (0200 setting)](./711%20in-ear/qdc%20Anole%20V14%20(0200%20setting)) on 711
-- [qdc Anole V14 (1000 setting)](./711%20in-ear/qdc%20Anole%20V14%20(1000%20setting)) on 711
-- [qdc Anole V14 (1234 setting)](./711%20in-ear/qdc%20Anole%20V14%20(1234%20setting)) on 711
+- [qdc Anole V14 (off-off-off-off)](./711%20in-ear/qdc%20Anole%20V14%20(off-off-off-off)) on 711
+- [qdc Anole V14 (off-off-off-on)](./711%20in-ear/qdc%20Anole%20V14%20(off-off-off-on)) on 711
+- [qdc Anole V14 (off-off-on-off)](./711%20in-ear/qdc%20Anole%20V14%20(off-off-on-off)) on 711
+- [qdc Anole V14 (off-on-off-off)](./711%20in-ear/qdc%20Anole%20V14%20(off-on-off-off)) on 711
+- [qdc Anole V14 (on-off-off-off)](./711%20in-ear/qdc%20Anole%20V14%20(on-off-off-off)) on 711
+- [qdc Anole V14 (on-on-on-on)](./711%20in-ear/qdc%20Anole%20V14%20(on-on-on-on)) on 711
 - [qdc Anole V3](./711%20in-ear/qdc%20Anole%20V3) on 711
 - [qdc Anole V3 (bass)](./711%20in-ear/qdc%20Anole%20V3%20(bass)) on 711
 - [qdc Anole V3 (bass, treble)](./711%20in-ear/qdc%20Anole%20V3%20(bass,%20treble)) on 711
@@ -1456,12 +1458,11 @@
 - [qdc Anole V6 (bass, mids)](./711%20in-ear/qdc%20Anole%20V6%20(bass,%20mids)) on 711
 - [qdc Anole V6 (mids)](./711%20in-ear/qdc%20Anole%20V6%20(mids)) on 711
 - [qdc Anole VX](./711%20in-ear/qdc%20Anole%20VX) on 711
+- [qdc Anole VX (all)](./711%20in-ear/qdc%20Anole%20VX%20(all)) on 711
 - [qdc Anole VX (bass)](./711%20in-ear/qdc%20Anole%20VX%20(bass)) on 711
 - [qdc Anole VX (mids)](./711%20in-ear/qdc%20Anole%20VX%20(mids)) on 711
 - [qdc Anole VX (treble)](./711%20in-ear/qdc%20Anole%20VX%20(treble)) on 711
-- [qdc Anole VX All](./711%20in-ear/qdc%20Anole%20VX%20All) on 711
 - [qdc Dmagic](./711%20in-ear/qdc%20Dmagic) on 711
-- [qdc Dmagic (sample 2)](./711%20in-ear/qdc%20Dmagic%20(sample%202)) on 711
 - [qdc Gemini](./711%20in-ear/qdc%20Gemini) on 711
 - [qdc Gemini (bass)](./711%20in-ear/qdc%20Gemini%20(bass)) on 711
 - [qdc Neptune](./711%20in-ear/qdc%20Neptune) on 711
@@ -1469,11 +1470,12 @@
 - [qdc Uranus](./711%20in-ear/qdc%20Uranus) on 711
 - [QKZ AK6](./711%20in-ear/QKZ%20AK6) on 711
 - [QKZ VK4](./711%20in-ear/QKZ%20VK4) on 711
+- [QKZ VK4 (revised)](./711%20in-ear/QKZ%20VK4%20(revised)) on 711
+- [QKZ VK4 (revised) (sample 1)](./711%20in-ear/QKZ%20VK4%20(revised)%20(sample%201)) on 711
+- [QKZ VK4 (revised) (sample 2)](./711%20in-ear/QKZ%20VK4%20(revised)%20(sample%202)) on 711
 - [QKZ VK4 (sample 1)](./711%20in-ear/QKZ%20VK4%20(sample%201)) on 711
 - [QKZ VK4 (sample 2)](./711%20in-ear/QKZ%20VK4%20(sample%202)) on 711
 - [QKZ VK4 Revised](./711%20in-ear/QKZ%20VK4%20Revised) on 711
-- [QKZ VK4 Revised (sample 1)](./711%20in-ear/QKZ%20VK4%20Revised%20(sample%201)) on 711
-- [QKZ VK4 Revised (sample 2)](./711%20in-ear/QKZ%20VK4%20Revised%20(sample%202)) on 711
 - [QKZ x HBB](./711%20in-ear/QKZ%20x%20HBB) on 711
 - [QKZ ZXD](./711%20in-ear/QKZ%20ZXD) on 711
 - [QKZ ZXN](./711%20in-ear/QKZ%20ZXN) on 711
@@ -1509,20 +1511,20 @@
 - [Rose BR5 Mk2](./711%20in-ear/Rose%20BR5%20Mk2) on 711
 - [Rose Mini2](./711%20in-ear/Rose%20Mini2) on 711
 - [Rosson Audio Design RAD-0](./GRAS%2043AG-7%20over-ear/Rosson%20Audio%20Design%20RAD-0) on GRAS 43AG-7
-- [Samsung EO-IG955 (AKG)](./711%20in-ear/Samsung%20EO-IG955%20(AKG)) on 711
+- [Samsung AKG EO-IG955](./711%20in-ear/Samsung%20AKG%20EO-IG955) on 711
 - [Samsung Galaxy Buds](./711%20in-ear/Samsung%20Galaxy%20Buds) on 711
 - [Samsung Galaxy Buds Plus](./711%20in-ear/Samsung%20Galaxy%20Buds%20Plus) on 711
 - [Samsung Galaxy Buds Pro](./711%20in-ear/Samsung%20Galaxy%20Buds%20Pro) on 711
 - [Samsung Galaxy Buds2](./711%20in-ear/Samsung%20Galaxy%20Buds2) on 711
 - [Samsung Galaxy Buds2 Pro (ambient mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(ambient%20mode)) on 711
 - [Samsung Galaxy Buds2 Pro (ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(ANC%20mode)) on 711
-- [Samsung Galaxy Buds2 Pro (bass boost EQ) (ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(bass%20boost%20EQ)%20(ANC%20mode)) on 711
-- [Samsung Galaxy Buds2 Pro (blear EQ) (ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(blear%20EQ)%20(ANC%20mode)) on 711
-- [Samsung Galaxy Buds2 Pro (dynamic EQ) (ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(dynamic%20EQ)%20(ANC%20mode)) on 711
-- [Samsung Galaxy Buds2 Pro (Passive mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(Passive%20mode)) on 711
-- [Samsung Galaxy Buds2 Pro (soft EQ) (ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(soft%20EQ)%20(ANC%20mode)) on 711
-- [Samsung Galaxy Buds2 Pro (treble boost EQ) (ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(treble%20boost%20EQ)%20(ANC%20mode)) on 711
-- [Samsung Galaxy Buds2 Pro (treble boost EQ) (ANC mode) (sample 1)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(treble%20boost%20EQ)%20(ANC%20mode)%20(sample%201)) on 711
+- [Samsung Galaxy Buds2 Pro (bass boost EQ, ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(bass%20boost%20EQ,%20ANC%20mode)) on 711
+- [Samsung Galaxy Buds2 Pro (blear EQ, ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(blear%20EQ,%20ANC%20mode)) on 711
+- [Samsung Galaxy Buds2 Pro (dynamic EQ, ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(dynamic%20EQ,%20ANC%20mode)) on 711
+- [Samsung Galaxy Buds2 Pro (passive mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(passive%20mode)) on 711
+- [Samsung Galaxy Buds2 Pro (soft EQ, ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(soft%20EQ,%20ANC%20mode)) on 711
+- [Samsung Galaxy Buds2 Pro (treble boost EQ, ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(treble%20boost%20EQ,%20ANC%20mode)) on 711
+- [Samsung Galaxy Buds2 Pro (treble boost EQ, ANC mode) (sample 1)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(treble%20boost%20EQ,%20ANC%20mode)%20(sample%201)) on 711
 - [Sansui SS10](./GRAS%2043AG-7%20over-ear/Sansui%20SS10) on GRAS 43AG-7
 - [SATOLEX Tubomi DH298-A1Bk](./711%20in-ear/SATOLEX%20Tubomi%20DH298-A1Bk) on 711
 - [SATOLEX Tubomi DH302-A1Bs](./711%20in-ear/SATOLEX%20Tubomi%20DH302-A1Bs) on 711
@@ -1556,19 +1558,23 @@
 - [Sennheiser HD 580 (white paper)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20580%20(white%20paper)) on GRAS 43AG-7
 - [Sennheiser HD 58X](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%2058X) on GRAS 43AG-7
 - [Sennheiser HD 599](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20599) on GRAS 43AG-7
-- [Sennheiser HD 600](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600) on GRAS 43AG-7
-- [Sennheiser HD 600 (sample 1)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(sample%201)) on GRAS 43AG-7
-- [Sennheiser HD 600 (sample 3)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(sample%203)) on GRAS 43AG-7
-- [Sennheiser HD 600 (semi-worn earpads)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(semi-worn%20earpads)) on GRAS 43AG-7
-- [Sennheiser HD 600 (semi-worn earpads) (sample 2)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(semi-worn%20earpads)%20(sample%202)) on GRAS 43AG-7
-- [Sennheiser HD 600 (worn earpads)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(worn%20earpads)) on GRAS 43AG-7
-- [Sennheiser HD 600 (worn earpads) (sample 1)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(worn%20earpads)%20(sample%201)) on GRAS 43AG-7
-- [Sennheiser HD 600 (worn earpads) (sample 3)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(worn%20earpads)%20(sample%203)) on GRAS 43AG-7
-- [Sennheiser HD 650](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650) on GRAS 43AG-7
-- [Sennheiser HD 650 (sample 2)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(sample%202)) on GRAS 43AG-7
-- [Sennheiser HD 650 (worn earpads)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(worn%20earpads)) on GRAS 43AG-7
-- [Sennheiser HD 650 (worn earpads) (sample 1)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(worn%20earpads)%20(sample%201)) on GRAS 43AG-7
-- [Sennheiser HD 650 (worn earpads) (sample 2)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(worn%20earpads)%20(sample%202)) on GRAS 43AG-7
+- [Sennheiser HD 600 (2020)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(2020)) on GRAS 43AG-7
+- [Sennheiser HD 600 (2020) (sample 1)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(2020)%20(sample%201)) on GRAS 43AG-7
+- [Sennheiser HD 600 (2020) (sample 2)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(2020)%20(sample%202)) on GRAS 43AG-7
+- [Sennheiser HD 600 (2020) (sample 3)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(2020)%20(sample%203)) on GRAS 43AG-7
+- [Sennheiser HD 600 (2020, worn earpads)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(2020,%20worn%20earpads)) on GRAS 43AG-7
+- [Sennheiser HD 600 (pre-2020)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(pre-2020)) on GRAS 43AG-7
+- [Sennheiser HD 600 (pre-2020, semi-worn earpads)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(pre-2020,%20semi-worn%20earpads)) on GRAS 43AG-7
+- [Sennheiser HD 600 (pre-2020, worn earpads)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600%20(pre-2020,%20worn%20earpads)) on GRAS 43AG-7
+- [Sennheiser HD 650 (2020)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(2020)) on GRAS 43AG-7
+- [Sennheiser HD 650 (2020) (sample 1)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(2020)%20(sample%201)) on GRAS 43AG-7
+- [Sennheiser HD 650 (2020) (sample 2)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(2020)%20(sample%202)) on GRAS 43AG-7
+- [Sennheiser HD 650 (2020, worn earpads)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(2020,%20worn%20earpads)) on GRAS 43AG-7
+- [Sennheiser HD 650 (2020, worn earpads) (sample 1)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(2020,%20worn%20earpads)%20(sample%201)) on GRAS 43AG-7
+- [Sennheiser HD 650 (2020, worn earpads) (sample 2)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(2020,%20worn%20earpads)%20(sample%202)) on GRAS 43AG-7
+- [Sennheiser HD 650 (pre-2020)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(pre-2020)) on GRAS 43AG-7
+- [Sennheiser HD 650 (pre-2020, semi-worn earpads)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(pre-2020,%20semi-worn%20earpads)) on GRAS 43AG-7
+- [Sennheiser HD 650 (pre-2020, worn earpads)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20650%20(pre-2020,%20worn%20earpads)) on GRAS 43AG-7
 - [Sennheiser HD 660 S](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20660%20S) on GRAS 43AG-7
 - [Sennheiser HD 800](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20800) on GRAS 43AG-7
 - [Sennheiser HD 800](./711%20in-ear/Sennheiser%20HD%20800) on 711
@@ -1583,7 +1589,6 @@
 - [Sennheiser HD 800 S (sample 3)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20800%20S%20(sample%203)) on GRAS 43AG-7
 - [Sennheiser HD 820](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20820) on GRAS 43AG-7
 - [Sennheiser HD 8XX](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%208XX) on GRAS 43AG-7
-- [Sennheiser HD600 2020](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD600%202020) on GRAS 43AG-7
 - [Sennheiser HE 1 Orpheus 2](./GRAS%2043AG-7%20over-ear/Sennheiser%20HE%201%20Orpheus%202) on GRAS 43AG-7
 - [Sennheiser IE 200](./Bruel%20&%20Kjaer%204620%20in-ear/Sennheiser%20IE%20200) on Bruel & Kjaer 4620
 - [Sennheiser IE 300](./711%20in-ear/Sennheiser%20IE%20300) on 711
@@ -1602,15 +1607,13 @@
 - [Sennheiser IE 900](./711%20in-ear/Sennheiser%20IE%20900) on 711
 - [Sennheiser Momentum 2.0 Wireless](./GRAS%2043AG-7%20over-ear/Sennheiser%20Momentum%202.0%20Wireless) on GRAS 43AG-7
 - [Sennheiser Momentum 3 Wireless](./GRAS%2043AG-7%20over-ear/Sennheiser%20Momentum%203%20Wireless) on GRAS 43AG-7
-- [Sennheiser Momentum 3 Wireless (HEST)](./GRAS%2043AG-7%20over-ear/Sennheiser%20Momentum%203%20Wireless%20(HEST)) on GRAS 43AG-7
 - [Sennheiser Momentum 3 Wireless (sample 1)](./GRAS%2043AG-7%20over-ear/Sennheiser%20Momentum%203%20Wireless%20(sample%201)) on GRAS 43AG-7
 - [Sennheiser Momentum 3 Wireless (sample 2)](./GRAS%2043AG-7%20over-ear/Sennheiser%20Momentum%203%20Wireless%20(sample%202)) on GRAS 43AG-7
-- [Sennheiser Momentum 4 Wireless (active)](./GRAS%2043AG-7%20over-ear/Sennheiser%20Momentum%204%20Wireless%20(active)) on GRAS 43AG-7
+- [Sennheiser Momentum 4 Wireless](./GRAS%2043AG-7%20over-ear/Sennheiser%20Momentum%204%20Wireless) on GRAS 43AG-7
 - [Sennheiser Momentum 4 Wireless (passive)](./GRAS%2043AG-7%20over-ear/Sennheiser%20Momentum%204%20Wireless%20(passive)) on GRAS 43AG-7
 - [Sennheiser Momentum In-Ear](./711%20in-ear/Sennheiser%20Momentum%20In-Ear) on 711
 - [Sennheiser Momentum True Wireless](./711%20in-ear/Sennheiser%20Momentum%20True%20Wireless) on 711
 - [Sennheiser Momentum True Wireless 2](./711%20in-ear/Sennheiser%20Momentum%20True%20Wireless%202) on 711
-- [Sennheiser Momentum True Wireless 2 (High-End Sound Tuning mode)](./711%20in-ear/Sennheiser%20Momentum%20True%20Wireless%202%20(High-End%20Sound%20Tuning%20mode)) on 711
 - [Sennheiser Momentum True Wireless 3](./711%20in-ear/Sennheiser%20Momentum%20True%20Wireless%203) on 711
 - [Sennheiser PC38X](./GRAS%2043AG-7%20over-ear/Sennheiser%20PC38X) on GRAS 43AG-7
 - [Shanling ME100](./711%20in-ear/Shanling%20ME100) on 711
@@ -1618,10 +1621,10 @@
 - [Shanling ME500](./711%20in-ear/Shanling%20ME500) on 711
 - [Shanling ME700](./711%20in-ear/Shanling%20ME700) on 711
 - [Shanling ME700 Lite](./711%20in-ear/Shanling%20ME700%20Lite) on 711
-- [Shanling ME800 (00 setting)](./711%20in-ear/Shanling%20ME800%20(00%20setting)) on 711
-- [Shanling ME800 (02 setting)](./711%20in-ear/Shanling%20ME800%20(02%20setting)) on 711
-- [Shanling ME800 (10 setting)](./711%20in-ear/Shanling%20ME800%20(10%20setting)) on 711
-- [Shanling ME800 (12 setting)](./711%20in-ear/Shanling%20ME800%20(12%20setting)) on 711
+- [Shanling ME800 (off-off)](./711%20in-ear/Shanling%20ME800%20(off-off)) on 711
+- [Shanling ME800 (off-on)](./711%20in-ear/Shanling%20ME800%20(off-on)) on 711
+- [Shanling ME800 (on-off)](./711%20in-ear/Shanling%20ME800%20(on-off)) on 711
+- [Shanling ME800 (on-on)](./711%20in-ear/Shanling%20ME800%20(on-on)) on 711
 - [Shanling MG600](./711%20in-ear/Shanling%20MG600) on 711
 - [Shanling MTW200](./711%20in-ear/Shanling%20MTW200) on 711
 - [Shozy & Neo BG](./Bruel%20&%20Kjaer%204620%20in-ear/Shozy%20&%20Neo%20BG) on Bruel & Kjaer 4620
@@ -1749,7 +1752,7 @@
 - [Sony MH755 (sample 4)](./711%20in-ear/Sony%20MH755%20(sample%204)) on 711
 - [Sony MH755 (sample 5)](./711%20in-ear/Sony%20MH755%20(sample%205)) on 711
 - [Sony WF-1000XM3](./711%20in-ear/Sony%20WF-1000XM3) on 711
-- [Sony WF-1000XM3 NC](./711%20in-ear/Sony%20WF-1000XM3%20NC) on 711
+- [Sony WF-1000XM3 (ANC on)](./711%20in-ear/Sony%20WF-1000XM3%20(ANC%20on)) on 711
 - [Sony WF-1000XM4](./711%20in-ear/Sony%20WF-1000XM4) on 711
 - [Sony WF-1000XM4 (Bass Boost preset)](./711%20in-ear/Sony%20WF-1000XM4%20(Bass%20Boost%20preset)) on 711
 - [Sony WF-1000XM4 (Bright preset)](./711%20in-ear/Sony%20WF-1000XM4%20(Bright%20preset)) on 711
@@ -1786,7 +1789,7 @@
 - [Spiral Ear SE5U (sample 2)](./711%20in-ear/Spiral%20Ear%20SE5U%20(sample%202)) on 711
 - [Spirit Torino Radiante](./GRAS%2043AG-7%20over-ear/Spirit%20Torino%20Radiante) on GRAS 43AG-7
 - [Stax SR-001 Mk1](./711%20in-ear/Stax%20SR-001%20Mk1) on 711
-- [Stax SR-001 Mk1 CES (stock)](./711%20in-ear/Stax%20SR-001%20Mk1%20CES%20(stock)) on 711
+- [Stax SR-001 Mk1 CES (CES-A1)](./711%20in-ear/Stax%20SR-001%20Mk1%20CES%20(CES-A1)) on 711
 - [Stax SR-001 Mk2](./711%20in-ear/Stax%20SR-001%20Mk2) on 711
 - [Stax SR-002](./711%20in-ear/Stax%20SR-002) on 711
 - [Stax SR-007](./EARS%20+%20711%20over-ear/Stax%20SR-007) on EARS + 711
@@ -1884,18 +1887,18 @@
 - [ThieAudio Elixir](./711%20in-ear/ThieAudio%20Elixir) on 711
 - [ThieAudio Excalibur](./711%20in-ear/ThieAudio%20Excalibur) on 711
 - [ThieAudio Legacy 2](./711%20in-ear/ThieAudio%20Legacy%202) on 711
-- [ThieAudio Legacy 3 (00 setting)](./711%20in-ear/ThieAudio%20Legacy%203%20(00%20setting)) on 711
-- [ThieAudio Legacy 3 (02 setting)](./711%20in-ear/ThieAudio%20Legacy%203%20(02%20setting)) on 711
-- [ThieAudio Legacy 3 (10 setting)](./711%20in-ear/ThieAudio%20Legacy%203%20(10%20setting)) on 711
-- [ThieAudio Legacy 3 (12 setting)](./711%20in-ear/ThieAudio%20Legacy%203%20(12%20setting)) on 711
-- [ThieAudio Legacy 3 (CIEM, 00 setting)](./711%20in-ear/ThieAudio%20Legacy%203%20(CIEM,%2000%20setting)) on 711
-- [ThieAudio Legacy 3 (CIEM, 02 setting)](./711%20in-ear/ThieAudio%20Legacy%203%20(CIEM,%2002%20setting)) on 711
-- [ThieAudio Legacy 3 (CIEM, 10 setting)](./711%20in-ear/ThieAudio%20Legacy%203%20(CIEM,%2010%20setting)) on 711
-- [ThieAudio Legacy 3 (CIEM, 12 setting)](./711%20in-ear/ThieAudio%20Legacy%203%20(CIEM,%2012%20setting)) on 711
-- [ThieAudio Legacy 3 (universal, 00 setting)](./Bruel%20&%20Kjaer%204620%20in-ear/ThieAudio%20Legacy%203%20(universal,%2000%20setting)) on Bruel & Kjaer 4620
-- [ThieAudio Legacy 3 (universal, 02 setting)](./Bruel%20&%20Kjaer%204620%20in-ear/ThieAudio%20Legacy%203%20(universal,%2002%20setting)) on Bruel & Kjaer 4620
-- [ThieAudio Legacy 3 (universal, 10 setting)](./Bruel%20&%20Kjaer%204620%20in-ear/ThieAudio%20Legacy%203%20(universal,%2010%20setting)) on Bruel & Kjaer 4620
-- [ThieAudio Legacy 3 (universal, 12 setting)](./Bruel%20&%20Kjaer%204620%20in-ear/ThieAudio%20Legacy%203%20(universal,%2012%20setting)) on Bruel & Kjaer 4620
+- [ThieAudio Legacy 3 (CIEM, off-off)](./711%20in-ear/ThieAudio%20Legacy%203%20(CIEM,%20off-off)) on 711
+- [ThieAudio Legacy 3 (CIEM, off-on)](./711%20in-ear/ThieAudio%20Legacy%203%20(CIEM,%20off-on)) on 711
+- [ThieAudio Legacy 3 (CIEM, on-off)](./711%20in-ear/ThieAudio%20Legacy%203%20(CIEM,%20on-off)) on 711
+- [ThieAudio Legacy 3 (CIEM, on-on)](./711%20in-ear/ThieAudio%20Legacy%203%20(CIEM,%20on-on)) on 711
+- [ThieAudio Legacy 3 (off-off)](./Bruel%20&%20Kjaer%204620%20in-ear/ThieAudio%20Legacy%203%20(off-off)) on Bruel & Kjaer 4620
+- [ThieAudio Legacy 3 (off-off)](./711%20in-ear/ThieAudio%20Legacy%203%20(off-off)) on 711
+- [ThieAudio Legacy 3 (off-on)](./Bruel%20&%20Kjaer%204620%20in-ear/ThieAudio%20Legacy%203%20(off-on)) on Bruel & Kjaer 4620
+- [ThieAudio Legacy 3 (off-on)](./711%20in-ear/ThieAudio%20Legacy%203%20(off-on)) on 711
+- [ThieAudio Legacy 3 (on-off)](./Bruel%20&%20Kjaer%204620%20in-ear/ThieAudio%20Legacy%203%20(on-off)) on Bruel & Kjaer 4620
+- [ThieAudio Legacy 3 (on-off)](./711%20in-ear/ThieAudio%20Legacy%203%20(on-off)) on 711
+- [ThieAudio Legacy 3 (on-on)](./Bruel%20&%20Kjaer%204620%20in-ear/ThieAudio%20Legacy%203%20(on-on)) on Bruel & Kjaer 4620
+- [ThieAudio Legacy 3 (on-on)](./711%20in-ear/ThieAudio%20Legacy%203%20(on-on)) on 711
 - [ThieAudio Legacy 4 (off-off)](./711%20in-ear/ThieAudio%20Legacy%204%20(off-off)) on 711
 - [ThieAudio Legacy 4 (off-on)](./711%20in-ear/ThieAudio%20Legacy%204%20(off-on)) on 711
 - [ThieAudio Legacy 4 (on-off)](./711%20in-ear/ThieAudio%20Legacy%204%20(on-off)) on 711
@@ -1910,10 +1913,10 @@
 - [ThieAudio Oracle](./711%20in-ear/ThieAudio%20Oracle) on 711
 - [ThieAudio Prestige](./Bruel%20&%20Kjaer%204620%20in-ear/ThieAudio%20Prestige) on Bruel & Kjaer 4620
 - [ThieAudio V16 Divinity](./711%20in-ear/ThieAudio%20V16%20Divinity) on 711
-- [ThieAudio Voyager 14 (00 setting)](./711%20in-ear/ThieAudio%20Voyager%2014%20(00%20setting)) on 711
-- [ThieAudio Voyager 14 (02 setting)](./711%20in-ear/ThieAudio%20Voyager%2014%20(02%20setting)) on 711
-- [ThieAudio Voyager 14 (10 setting)](./711%20in-ear/ThieAudio%20Voyager%2014%20(10%20setting)) on 711
-- [ThieAudio Voyager 14 (12 setting)](./711%20in-ear/ThieAudio%20Voyager%2014%20(12%20setting)) on 711
+- [ThieAudio Voyager 14 (off-off)](./711%20in-ear/ThieAudio%20Voyager%2014%20(off-off)) on 711
+- [ThieAudio Voyager 14 (off-on)](./711%20in-ear/ThieAudio%20Voyager%2014%20(off-on)) on 711
+- [ThieAudio Voyager 14 (on-off)](./711%20in-ear/ThieAudio%20Voyager%2014%20(on-off)) on 711
+- [ThieAudio Voyager 14 (on-on)](./711%20in-ear/ThieAudio%20Voyager%2014%20(on-on)) on 711
 - [Tiandirenhe TD1](./711%20in-ear/Tiandirenhe%20TD1) on 711
 - [Timsok TS-1024](./GRAS%2043AG-7%20over-ear/Timsok%20TS-1024) on GRAS 43AG-7
 - [Tin HiFi P1](./711%20in-ear/Tin%20HiFi%20P1) on 711
@@ -1947,10 +1950,10 @@
 - [TRI i4](./Bruel%20&%20Kjaer%204620%20in-ear/TRI%20i4) on Bruel & Kjaer 4620
 - [TRI Kai](./711%20in-ear/TRI%20Kai) on 711
 - [TRI Starlight](./711%20in-ear/TRI%20Starlight) on 711
-- [TRI Starsea (00 setting)](./711%20in-ear/TRI%20Starsea%20(00%20setting)) on 711
-- [TRI Starsea (02 setting)](./711%20in-ear/TRI%20Starsea%20(02%20setting)) on 711
-- [TRI Starsea (10 setting)](./711%20in-ear/TRI%20Starsea%20(10%20setting)) on 711
-- [TRI Starsea (12 setting)](./711%20in-ear/TRI%20Starsea%20(12%20setting)) on 711
+- [TRI Starsea (off-off)](./711%20in-ear/TRI%20Starsea%20(off-off)) on 711
+- [TRI Starsea (off-on)](./711%20in-ear/TRI%20Starsea%20(off-on)) on 711
+- [TRI Starsea (on-off)](./711%20in-ear/TRI%20Starsea%20(on-off)) on 711
+- [TRI Starsea (on-on)](./711%20in-ear/TRI%20Starsea%20(on-on)) on 711
 - [TRI Starshine](./711%20in-ear/TRI%20Starshine) on 711
 - [Tripowin Cencibel](./Bruel%20&%20Kjaer%204620%20in-ear/Tripowin%20Cencibel) on Bruel & Kjaer 4620
 - [Tripowin H1](./GRAS%2043AG-7%20over-ear/Tripowin%20H1) on GRAS 43AG-7
@@ -1968,7 +1971,9 @@
 - [TRN X7](./711%20in-ear/TRN%20X7) on 711
 - [Truthear Hexa](./711%20in-ear/Truthear%20Hexa) on 711
 - [Truthear Hola](./711%20in-ear/Truthear%20Hola) on 711
+- [Truthear x Crinacle Zero](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero) on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero](./711%20in-ear/Truthear%20x%20Crinacle%20Zero) on 711
+- [Truthear x Crinacle Zero (sample 1)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%201)) on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero (sample 10)](./711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%2010)) on 711
 - [Truthear x Crinacle Zero (sample 2)](./711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%202)) on 711
 - [Truthear x Crinacle Zero (sample 3)](./711%20in-ear/Truthear%20x%20Crinacle%20Zero%20(sample%203)) on 711
@@ -2061,8 +2066,8 @@
 - [Unique Melody Mavis 2](./711%20in-ear/Unique%20Melody%20Mavis%202) on 711
 - [Unique Melody ME1](./711%20in-ear/Unique%20Melody%20ME1) on 711
 - [Unique Melody Merlin V2](./711%20in-ear/Unique%20Melody%20Merlin%20V2) on 711
+- [Unique Melody MEST](./711%20in-ear/Unique%20Melody%20MEST) on 711
 - [Unique Melody MEST (CIEM)](./711%20in-ear/Unique%20Melody%20MEST%20(CIEM)) on 711
-- [Unique Melody MEST (universal)](./711%20in-ear/Unique%20Melody%20MEST%20(universal)) on 711
 - [Unique Melody MEST Mk2](./711%20in-ear/Unique%20Melody%20MEST%20Mk2) on 711
 - [Unique Melody MEXT](./711%20in-ear/Unique%20Melody%20MEXT) on 711
 - [Unique Melody Mini MEST](./711%20in-ear/Unique%20Melody%20Mini%20MEST) on 711
@@ -2142,11 +2147,11 @@
 - [Yamaha HP-300](./GRAS%2043AG-7%20over-ear/Yamaha%20HP-300) on GRAS 43AG-7
 - [Yamaha HP-50S](./GRAS%2043AG-7%20over-ear/Yamaha%20HP-50S) on GRAS 43AG-7
 - [Yanyin Aladdin](./711%20in-ear/Yanyin%20Aladdin) on 711
-- [Yanyin Canon (000 setting)](./711%20in-ear/Yanyin%20Canon%20(000%20setting)) on 711
-- [Yanyin Canon (003 setting)](./711%20in-ear/Yanyin%20Canon%20(003%20setting)) on 711
-- [Yanyin Canon (020 setting)](./711%20in-ear/Yanyin%20Canon%20(020%20setting)) on 711
-- [Yanyin Canon (100 setting)](./711%20in-ear/Yanyin%20Canon%20(100%20setting)) on 711
-- [Yanyin Canon (123 setting)](./711%20in-ear/Yanyin%20Canon%20(123%20setting)) on 711
+- [Yanyin Canon (off-off-off)](./711%20in-ear/Yanyin%20Canon%20(off-off-off)) on 711
+- [Yanyin Canon (off-off-on)](./711%20in-ear/Yanyin%20Canon%20(off-off-on)) on 711
+- [Yanyin Canon (off-on-off)](./711%20in-ear/Yanyin%20Canon%20(off-on-off)) on 711
+- [Yanyin Canon (on-off-off)](./711%20in-ear/Yanyin%20Canon%20(on-off-off)) on 711
+- [Yanyin Canon (on-on-on)](./711%20in-ear/Yanyin%20Canon%20(on-on-on)) on 711
 - [Yanyin Mahina](./711%20in-ear/Yanyin%20Mahina) on 711
 - [Yanyin Moonlight](./711%20in-ear/Yanyin%20Moonlight) on 711
 - [Yinyoo Ash](./711%20in-ear/Yinyoo%20Ash) on 711
