@@ -159,9 +159,9 @@ Beyerdynamic DT880 (fresh earpads)	Beyerdynamic DT 880 250 Ohm	over-ear
 Beyerdynamic DT880 (worn earpads)	Beyerdynamic DT 880 250 Ohm (worn earpads)	over-ear
 Beyerdynamic DT880 Black Edition	Beyerdynamic DT880 Black Edition	over-ear
 Beyerdynamic DT900 Pro X	Beyerdynamic DT 900 Pro X	over-ear
-Beyerdynamic DT990	Beyerdynamic DT 990	over-ear
-Beyerdynamic DT990 (fresh earpads)	Beyerdynamic DT 990 250 Ohm	over-ear
-Beyerdynamic DT990 (worn earpads)	Beyerdynamic DT 990 250 Ohm (worn earpads)	over-ear
+Beyerdynamic DT990		ignore
+Beyerdynamic DT990 (fresh earpads)	Beyerdynamic DT 990 (fresh earpads)	over-ear
+Beyerdynamic DT990 (worn earpads)	Beyerdynamic DT 990 (worn earpads)	over-ear
 Beyerdynamic DTX 350p	Beyerdynamic DTX 350p	over-ear
 Beyerdynamic ET1000	Beyerdynamic ET1000	over-ear
 Beyerdynamic Lagoon	Beyerdynamic Lagoon	over-ear
@@ -337,10 +337,9 @@ Hifiman HE6se V2	HIFIMAN HE6se V2	over-ear
 Hifiman Jade II	HIFIMAN Jade II	over-ear
 Hifiman RE600S	HIFIMAN RE600S	in-ear
 Hifiman Shangri-La	HIFIMAN Shangri-La	over-ear
-Hifiman Sundara	HIFIMAN Sundara	over-ear
-Hifiman Sundara (2020 revised earpads)	HIFIMAN Sundara (2020 revised earpads)	over-ear
-Hifiman Sundara (Dekoni Sheepskin Earpads)	HIFIMAN Sundara (Dekoni heepskin Earpads)	over-ear
-Hifiman Sundara (pre 2020 earpad revision)	HIFIMAN Sundara (pre-2020 earpad revision)	over-ear
+Hifiman Sundara (2020 revised earpads)	HIFIMAN Sundara (post-2020 earpads)	over-ear
+Hifiman Sundara (Dekoni Sheepskin Earpads)	HIFIMAN Sundara (Dekoni sheepskin Earpads)	over-ear
+Hifiman Sundara (pre 2020 earpad revision)	HIFIMAN Sundara (pre-2020 earpads)	over-ear
 Hifiman Sundara Closed Back	HIFIMAN Sundara Closed-Back	over-ear
 Hifiman Susvara	HIFIMAN Susvara	over-ear
 Huawei Freebuds 4i	Huawei Freebuds 4i	in-ear

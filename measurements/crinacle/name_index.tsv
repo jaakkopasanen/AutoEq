@@ -41,8 +41,8 @@ false_name	true_name	form
 64 Audio N8 M15 (CIEM)	64 Audio N8 (CIEM, m15 Apex module)	in-ear
 64 Audio Nio M15	64 Audio Nio (m15 Apex module)	in-ear
 700	Bose Noise Cancelling Headphones 700	over-ear
-747	Advanced 747	in-ear
-747 NC	Advanced 747 NC	in-ear
+747	Advanced 747 (ANC off)	in-ear
+747 NC	Advanced 747 (ANC on)	in-ear
 75t	Jabra Elite 75t	in-ear
 7Hz Salnotes Dioko	7Hz x Crinacle Salnotes Dioko (sample 1)	in-ear
 8CL	qdc 8CL (CIEM)	in-ear
@@ -460,9 +460,9 @@ DK4001	DUNU DK4001	in-ear
 DM200H	Dynamic Motion DM200H	in-ear
 DM2A	Pai Audio DM2A	in-ear
 DM6	BGVP DM6	in-ear
-DM6 20ohm	BGVP DM6 20 Ohm	in-ear
-DM6 75ohm	BGVP DM6 75 Ohm	in-ear
-DM6 M	BGVP DM6 M	in-ear
+DM6 20ohm		ignore
+DM6 75ohm		ignore
+DM6 M		ignore
 DM7	BGVP DM7	in-ear
 DMagic S2	qdc Dmagic (sample 2)	in-ear
 DMG Black	BGVP DMG (black)	in-ear
@@ -489,11 +489,11 @@ DS1 Pro	BGVP DS1 Pro	in-ear
 DT100	Audiosense DT100	in-ear
 DT1350	Beyerdynamic DT 1350	over-ear
 DT1770 Pro	Beyerdynamic DT 1770 Pro (velour earpads)	over-ear
-DT1990 Pro	Beyerdynamic DT 1990 (balanced earpads)	over-ear
-DT1990 Pro S2 (Analytical pads)	Beyerdynamic DT1990 Pro (analytical earpads) (sample 2)	over-ear
+DT1990 Pro	Beyerdynamic DT 1990 Pro (balanced earpads) (sample 1)	over-ear
+DT1990 Pro S2 (Analytical pads)	Beyerdynamic DT 1990 Pro (analytical earpads)	over-ear
 DT1990 Pro S2 (Analytical pads) (DIYAH filter)		ignore
-DT1990 Pro S2 (Balanced pads)	Beyerdynamic DT1990 Pro (balanced earpads) (sample 2)	over-ear
-DT1990 Pro S2 (Dekoni Elite Velour)	Beyerdynamic DT1990 Pro (Dekoni elite velour earpads) (sample 2)	over-ear
+DT1990 Pro S2 (Balanced pads)	Beyerdynamic DT 1990 Pro (balanced earpads) (sample 2)	over-ear
+DT1990 Pro S2 (Dekoni Elite Velour)	Beyerdynamic DT 1990 Pro (Dekoni Elite velour earpads)	over-ear
 DT200	Audiosense DT200	in-ear
 DT250 (80Ω)	Beyerdynamic DT 250 80 Ohm	over-ear
 DT6	Senfer DT6	in-ear
@@ -512,9 +512,10 @@ Dunmer Pro	Tipsy Dunmer Pro	in-ear
 Duo 64	64 Audio Duo	in-ear
 Duoza	Zero Audio Duoza ZH-DWX10	in-ear
 Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear
-Dusk S2	Moondrop x Crinacle Blessing2 Dusk	in-ear
-Dusk S3	Moondrop Blessing2 Dusk (sample 3)	in-ear
-Dusk S4	Moondrop Blessing2 Dusk (sample 4)	in-ear
+Dusk S1	Moondrop x Crinacle Blessing2 Dusk (sample 1)	in-ear
+Dusk S2	Moondrop x Crinacle Blessing2 Dusk (sample 2)	in-ear
+Dusk S3	Moondrop x Crinacle Blessing2 Dusk (sample 3)	in-ear
+Dusk S4	Moondrop x Crinacle Blessing2 Dusk (sample 4)	in-ear
 Dusk S5	Moondrop x Crinacle Blessing2 Dusk (sample 5)	in-ear
 E10	KZ E10	in-ear
 E1000	Final Audio E1000	in-ear
@@ -820,20 +821,20 @@ HD580 (Silver screen)		ignore
 HD580 (White paper)	Sennheiser HD 580 (white paper)	over-ear
 HD58X	Sennheiser HD 58X	over-ear
 HD599	Sennheiser HD 599	over-ear
-HD600	Sennheiser HD 600 (sample 1)	over-ear
-HD600 (2020) S2	Sennheiser HD600 2020	over-ear
-HD600 S1 (worn pads)	Sennheiser HD 600 (worn earpads) (sample 1)	over-ear
-HD600 S2	Sennheiser HD 600 (semi-worn earpads) (sample 2)	over-ear
-HD600 S3 (2020) (fresh pads)		ignore
-HD600 S3 (2020, fresh pads)	Sennheiser HD 600 (sample 3)	over-ear
-HD600 S3 (worn pads)	Sennheiser HD 600 (worn earpads) (sample 3)	over-ear
-HD650	Sennheiser HD 650	over-ear
-HD650 S1 (worn pads)	Sennheiser HD 650 (worn earpads) (sample 1)	over-ear
-HD650 S2 (2020) (fresh pads)		ignore
-HD650 S2 (2020) (worn pads)		ignore
-HD650 S2 (2020, fresh pads)	Sennheiser HD 650 (sample 2)	over-ear
-HD650 S2 (2020, worn pads)	Sennheiser HD 650 (worn earpads) (sample 2)	over-ear
-HD650 S3 (Worn-ish pads)		ignore
+HD600	Sennheiser HD 600 (pre-2020)	over-ear
+HD600 (2020) S2	Sennheiser HD 600 (2020) (sample 2)	over-ear
+HD600 S1 (worn pads)	Sennheiser HD 600 (pre-2020, worn earpads)	over-ear
+HD600 S2	Sennheiser HD 600 (pre-2020, semi-worn earpads)	over-ear
+HD600 S3 (2020) (fresh pads)	Sennheiser HD 600 (2020) (sample 1)	over-ear
+HD600 S3 (2020, fresh pads)	Sennheiser HD 600 (2020) (sample 3)	over-ear
+HD600 S3 (worn pads)	Sennheiser HD 600 (2020, worn earpads)	over-ear
+HD650	Sennheiser HD 650 (pre-2020)	over-ear
+HD650 S1 (worn pads)	Sennheiser HD 650 (pre-2020, worn earpads)	over-ear
+HD650 S2 (2020) (fresh pads)	Sennheiser HD 650 (2020) (sample 1)	over-ear
+HD650 S2 (2020) (worn pads)	Sennheiser HD 650 (2020, worn earpads) (sample 1)	over-ear
+HD650 S2 (2020, fresh pads)	Sennheiser HD 650 (2020) (sample 2)	over-ear
+HD650 S2 (2020, worn pads)	Sennheiser HD 650 (2020, worn earpads) (sample 2)	over-ear
+HD650 S3 (Worn-ish pads)	Sennheiser HD 650 (pre-2020, semi-worn earpads)	over-ear
 HD660S	Sennheiser HD 660 S	over-ear
 HD800	Sennheiser HD 800 (sample 1)	over-ear
 HD800 avg		ignore
@@ -860,8 +861,8 @@ HE400i (2020)	HIFIMAN HE400i 2020	over-ear
 HE400se	HIFIMAN HE400se	over-ear
 HE560	HIFIMAN HE560 V1	over-ear
 HE560 V1 S2	HIFIMAN HE560 V1 (sample 2)	over-ear
-HE5se	HIFIMAN HE5se	over-ear
 HE5SE	HIFIMAN HE5se	over-ear
+HE5se	HIFIMAN HE5se	over-ear
 HE6 (6-screw) (Velour)	HIFIMAN HE6 (6-screw, velour earpads)	over-ear
 HE6se	HIFIMAN HE6se	over-ear
 HE6se V2	HIFIMAN HE6se V2	over-ear
@@ -871,9 +872,8 @@ Heaven 4	Final Audio Heaven 4	in-ear
 Heaven 7	Final Audio Heaven 7	in-ear
 Heaven 8	Final Audio Heaven 8	in-ear
 Heaven S	Final Audio Heaven S	in-ear
-HEDD Heddphone	HEDD HEDDphone	over-ear
-HEDDphone	HEDD HEDDphone	over-ear
-HEDDphone S2	HEDD HEDDphone (sample 2)	over-ear
+HEDDphone		ignore
+HEDDphone S2	HEDD HEDDphone	over-ear
 HEK1K		ignore
 Helios	HarmonicDyne Helios	over-ear
 Helios Sym	Symphonium Audio Helios	in-ear
@@ -938,8 +938,8 @@ IE800	Sennheiser IE 800	in-ear
 IE800S	Sennheiser IE 800 S	in-ear
 IE80S	Sennheiser IE 80 S (min)	in-ear
 IE80S Half	Sennheiser IE 80 S (half)	in-ear
-IE80S max	Sennheiser IE 80 S (max)	in-ear
 IE80S Max	Sennheiser IE 80 S (max)	in-ear
+IE80S max	Sennheiser IE 80 S (max)	in-ear
 IE900	Sennheiser IE 900	in-ear
 IER-M7Q	Sony IER-M7 Q	in-ear
 IER-Z1R	Sony IER-Z1R	in-ear
@@ -955,8 +955,8 @@ IO	Campfire Audio IO (sample 1)	in-ear
 IO S2	Campfire Audio IO (sample 2)	in-ear
 ION-4 Vietnam	Soranik ION-4 (Vietnamese domestic market edition)	in-ear
 Isabellae	Oriolus Isabellae	in-ear
-iSIne 10	Audeze iSINE 10	in-ear
 iSine 10	Audeze iSINE 10 (sample 1)	in-ear
+iSIne 10	Audeze iSINE 10	in-ear
 iSine 10 S2	Audeze iSINE 10 (sample 2)	in-ear
 iSine 20	Audeze iSINE 20	in-ear
 iSine 20 Cipher	Audeze iSINE 20 (Cipher cable)	in-ear
@@ -973,8 +973,8 @@ Jade II	HIFIMAN Jade II	over-ear
 Janus	ddHiFi E2020A Janus	in-ear
 Jasper	AUNE Jasper	in-ear
 Jazz	Jomo Audio Jazz	in-ear
-JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
 Jh13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
+JH13v2 2oclock	JH Audio 13v2 (2 o’clock)	in-ear
 JH13v2 Max	JH Audio 13v2 (max)	in-ear
 JH13v2 Min	JH Audio 13v2 (min)	in-ear
 JH16v2 2oclock	JH Audio 16v2 (2 o’clock)	in-ear
@@ -1110,9 +1110,9 @@ LCD-i4	Audeze LCD-i4	in-ear
 LCD-MX4	Audeze LCD-MX4	over-ear
 LCD-R	Audeze LCD-R	over-ear
 LCD-X	Audeze LCD-X	over-ear
-LCD-X (2021)	Audeze LCD-X	over-ear
-LCD-X (7454544)	Audeze LCD-X (worn earpads) (sample 2)	over-ear
-LCD-X (Fazor)	Audeze LCD-X	over-ear
+LCD-X (2021)	Audeze LCD-X (2021)	over-ear
+LCD-X (7454544)	Audeze LCD-X (pre-2021) (worn earpads)	over-ear
+LCD-X (Fazor)	Audeze LCD-X (pre-2021)	over-ear
 LCD-XC (Fazor)	Audeze LCD-XC	over-ear
 LE2	Lime Ears LE2	in-ear
 Lea	Tripowin Leá	in-ear
@@ -1175,8 +1175,8 @@ M5 S3	Fir Audio M5 (sample 3)	in-ear
 M5 S5	Fir Audio M5 (sample 4)	in-ear
 M5 S6	Fir Audio M5 (sample 5)	in-ear
 M5 S7	Fir Audio M5 (sample 7)	in-ear
-M50x	Audio-Technica ATH-M50x (sample 1)	over-ear
 M50X	Audio-Technica ATH-M50x	over-ear
+M50x	Audio-Technica ATH-M50x (sample 1)	over-ear
 M50x S2	Audio-Technica ATH-M50x (sample 2)	over-ear
 M50xBT	Audio-Technica ATH-M50xBT	over-ear
 M51D	Advanced M51D	in-ear
@@ -1303,13 +1303,13 @@ Mojito	Queen of Audio Mojito	in-ear
 Momentum	Sennheiser Momentum In-Ear	in-ear
 Momentum 2 Wireless	Sennheiser Momentum 2.0 Wireless	over-ear
 Momentum 3 S2	Sennheiser Momentum 3 Wireless (sample 2)	over-ear
-Momentum 3 S2 (HEST)	Sennheiser Momentum 3 Wireless (HEST)	over-ear
+Momentum 3 S2 (HEST)	Sennheiser Momentum 3 Wireless (HEST)	ignore
 Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	over-ear
 Momentum 4 Wireless (Active)	Sennheiser Momentum 4 Wireless (active)	over-ear
 Momentum 4 Wireless (Passive)	Sennheiser Momentum 4 Wireless (passive)	over-ear
 Momentum TW	Sennheiser Momentum True Wireless	in-ear
 Momentum TWS 2	Sennheiser Momentum True Wireless 2	in-ear
-Momentum TWS 2 HEST	Sennheiser Momentum True Wireless 2 (High-End Sound Tuning mode)	in-ear
+Momentum TWS 2 HEST	Sennheiser Momentum True Wireless 2 (High-End Sound Tuning mode)	ignore
 Monarch		ignore
 Monarch Mk2	ThieAudio Monarch MKII	in-ear
 Monarch S2	ThieAudio Monarch	in-ear
@@ -1764,8 +1764,8 @@ Studio 4	Alclair Studio4	in-ear
 Stylish	1MORE Stylish	in-ear
 Sultan	Noble Audio Sultan	in-ear
 Summer	BQEYZ Summer	in-ear
-Sundara	HIFIMAN Sundara	over-ear
-Sundara (2020)	HIFIMAN Sundara 2020	over-ear
+Sundara	HIFIMAN Sundara (pre-2020 earpads)	over-ear
+Sundara (2020)	HIFIMAN Sundara (post-2020 earpads)	over-ear
 Superdarts	Atomic Floyd SuperDarts	in-ear
 Susvara	HIFIMAN Susvara	over-ear
 Susvara S2	HIFIMAN Susvara (sample 2)	over-ear

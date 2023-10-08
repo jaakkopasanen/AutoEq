@@ -221,6 +221,9 @@ class CrinacleCrawler(Crawler):
                 self.next_prompt(True)
                 self.update_name_index(NameItem(false_name, None, form))
                 return
+            manufacturer, match = self.manufacturers.find(true_name, ignore_case=True)
+            if manufacturer is None:
+                raise UnknownManufacturerError(f'Manufacturer is not known for "{true_name}"')
             self.active_list_item.resolution = 'success'
             self.next_prompt(False)
             item = NameItem(false_name, true_name, form)
@@ -301,10 +304,10 @@ class CrinacleCrawler(Crawler):
                     print(f'Processing failed for "{false_name}"')
                     raise err
         if len(unknown_manufacturers) > 0:
-            err = 'Headphones with unknown manufacturers:\n  '
-            err += '\n  '.join(unknown_manufacturers)
-            err += '\nAdd them to manufacturers.tsv and run this cell again'
-            raise UnknownManufacturerError(err)
+            warning = 'Headphones with unknown manufacturers:\n  * '
+            warning += '\n  * '.join(unknown_manufacturers)
+            warning += '\nAdd them to manufacturers.tsv and run this cell again'
+            print(warning)
         self.reload_ui()
 
     def intermediate_name(self, false_name):

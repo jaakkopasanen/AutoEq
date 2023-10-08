@@ -21,6 +21,8 @@ def prune_results(dry_run=False, databases=None):
         crawlers.append(Oratory1990Crawler)
     if 'rtings' in databases:
         crawlers.append(RtingsCrawler)
+    # TODO: Innerfidelity
+    # TODO: Headphonecom
     for db, crawler in zip(databases, crawlers):
         existing = crawler.get_existing()
         file_paths = list(DIR_PATH.joinpath(db).glob('**/*.png'))
