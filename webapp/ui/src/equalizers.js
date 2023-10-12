@@ -251,7 +251,7 @@ export default [
     uiConfig: {
       bw: false, showDownload: true, showFsControl: true,
     },
-    instructions: 'Download the file and import it to Voicemeeter by right clicking the top bar and selecting "Load EQ Settings"',
+    instructions: 'Download the file and import it to Voicemeeter by opening the EQ window for a channel and right clicking the top bar and selecting "Load EQ Settings"',
     fileFormatter: (preamp, filters) => {
       const filterTypes = {
         'LOW_SHELF': '5',
