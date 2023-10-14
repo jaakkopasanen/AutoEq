@@ -840,6 +840,7 @@ from the same source.
 - [Beyerdynamic DT 770 600 Ohm](./Headphone.com%20Legacy/over-ear/Beyerdynamic%20DT%20770%20600%20Ohm) by Headphone.com Legacy
 - [Beyerdynamic DT 770 M](./oratory1990/over-ear/Beyerdynamic%20DT%20770%20M) by oratory1990
 - [Beyerdynamic DT 770 Pro](./oratory1990/over-ear/Beyerdynamic%20DT%20770%20Pro) by oratory1990
+- [Beyerdynamic DT 770 Pro](./Rtings/over-ear/Beyerdynamic%20DT%20770%20Pro) by Rtings
 - [Beyerdynamic DT 770 Pro (250 Ohm)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20770%20Pro%20(250%20Ohm)) by crinacle on GRAS 43AG-7
 - [Beyerdynamic DT 770 Pro (250 Ohm)](./Rtings/over-ear/Beyerdynamic%20DT%20770%20Pro%20(250%20Ohm)) by Rtings
 - [Beyerdynamic DT 770 Pro (250 Ohm)](./Headphone.com%20Legacy/over-ear/Beyerdynamic%20DT%20770%20Pro%20(250%20Ohm)) by Headphone.com Legacy
@@ -2062,6 +2063,7 @@ from the same source.
 - [HyperX Cloud II](./Rtings/over-ear/HyperX%20Cloud%20II) by Rtings
 - [HyperX Cloud II Wireless](./Rtings/over-ear/HyperX%20Cloud%20II%20Wireless) by Rtings
 - [HyperX Cloud III](./Rtings/over-ear/HyperX%20Cloud%20III) by Rtings
+- [HyperX Cloud III Wireless](./Rtings/over-ear/HyperX%20Cloud%20III%20Wireless) by Rtings
 - [HyperX Cloud Mix](./Rtings/over-ear/HyperX%20Cloud%20Mix) by Rtings
 - [HyperX Cloud Revolver](./Rtings/over-ear/HyperX%20Cloud%20Revolver) by Rtings
 - [HyperX Cloud Revolver + 7.1](./Rtings/over-ear/HyperX%20Cloud%20Revolver%20+%207.1) by Rtings

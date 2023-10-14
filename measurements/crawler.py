@@ -3,9 +3,7 @@
 import os
 import sys
 from pathlib import Path
-
 from measurements.PromptListItem import PromptListItem
-
 if str(Path(__file__).resolve().parent) not in sys.path:
     sys.path.insert(1, str(Path(__file__).resolve().parent))
 import pandas as pd
@@ -16,6 +14,7 @@ import re
 from bs4 import BeautifulSoup
 import ipywidgets as widgets
 import webbrowser
+from selenium.webdriver.common.by import By
 import urllib.parse
 from abc import ABC, abstractmethod
 from time import sleep
@@ -321,5 +320,5 @@ class Crawler(ABC):
     def get_beautiful_soup(self, url):
         self.driver.get(url)
         sleep(2)  # Giving some time for Selenium to render the page
-        html = self.driver.find_element_by_tag_name('html').get_attribute('outerHTML')
+        html = self.driver.find_element(By.TAG_NAME, 'html').get_attribute('outerHTML')
         return BeautifulSoup(html, 'html.parser')

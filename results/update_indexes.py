@@ -283,7 +283,11 @@ def write_ranking_table(paths):
             or path.source_name == 'oratory1990'
         ):  # Include in-ear measurements from oratory1990 and crinacle (with 711 clone)
             fr = FrequencyResponse.read_from_csv(path.absolute_path.joinpath(f'{path.name}.csv'))
-            score, std, slope, mean = fr.harman_inear_preference_score()
+            try:
+                score, std, slope, mean = fr.harman_inear_preference_score()
+            except:
+                print(path.absolute_path)
+                print(fr.error)
             in_ears.append([
                 f'[{path.name}]({path.url_relative_to_root})',
                 f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}', f'{mean:.2f}'
@@ -321,11 +325,11 @@ def write_ranking_table(paths):
 
 def update_all_indexes():
     paths = [ResultPath(readme_path.parent) for readme_path in Path(DIR_PATH).glob('*/*/**/*.md')]
+    write_ranking_table(paths)
     write_recommendations(paths)
     write_full_index(paths)
     write_source_indexes(paths)
     write_hesuvi_zip(paths)
-    write_ranking_table(paths)
 
 
 if __name__ == '__main__':

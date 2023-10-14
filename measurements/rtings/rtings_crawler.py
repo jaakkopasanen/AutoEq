@@ -29,7 +29,7 @@ class RtingsCrawler(Crawler):
         if driver is None:
             opts = Options()
             opts.add_argument('--headless')
-            driver = webdriver.Chrome(os.path.abspath(os.path.join(DIR_PATH, '..', 'chromedriver')), options=opts)
+            driver = webdriver.Chrome(options=opts)
         super().__init__(driver=driver)
 
     @staticmethod

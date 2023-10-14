@@ -24,7 +24,7 @@ class Oratory1990Crawler(Crawler):
         if driver is None:
             opts = Options()
             opts.add_argument('--headless')
-            driver = webdriver.Chrome(os.path.abspath(os.path.join(DIR_PATH, '..', 'chromedriver')), options=opts)
+            driver = webdriver.Chrome(options=opts)
         super().__init__(driver=driver)
 
     @staticmethod
@@ -160,7 +160,7 @@ class Oratory1990Crawler(Crawler):
 
         # Read headphone model from the PDF
         f = open(input_file, 'rb')
-        text = PyPDF2.PdfFileReader(f).getPage(0).extractText()
+        text = PyPDF2.PdfReader(f).pages[0].extract_text()
         if 'crinacle' in text.lower():
             raise ValueError('Measured by Crinacle')
 

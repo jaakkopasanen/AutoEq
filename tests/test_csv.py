@@ -1,5 +1,5 @@
 import unittest
-from autoeq.csv import parse_csv, create_csv, find_csv_separators, autoeq_pattern, rew_pattern
+from autoeq.csv import parse_csv, find_csv_separators, autoeq_pattern, rew_pattern
 
 csv1 = """frequency,raw
 20,0
@@ -56,15 +56,21 @@ csv7 = """error,frequency,raw
 1,20000,0
 """
 
+csv8 = """frequency,raw,error,smoothed,error_smoothed,equalization,parametric_eq,fixed_band_eq,equalized_raw,equalized_smoothed,target
+20.00,0.81,-8.06,0.82,-8.05,6.00,6.13,2.79,6.81,6.82,8.87
+1000.00,0.89,-7.98,0.89,-7.98,6.00,6.13,2.87,6.89,6.89,8.87
+20000.00,0.95,-7.91,0.95,-7.92,6.00,6.12,2.95,6.95,6.95,8.87
+"""
+
 
 class TestCsv(unittest.TestCase):
     def test_regex(self):
-        for s, pattern in [(csv1, autoeq_pattern), (csv2, None), (csv3, None), (csv4, None), (csv5, rew_pattern), (csv6, None), (csv7, None)]:
+        for s, pattern in [(csv1, autoeq_pattern), (csv2, None), (csv3, None), (csv4, None), (csv5, rew_pattern), (csv6, None), (csv7, None), (csv8, autoeq_pattern)]:
             if pattern:
                 self.assertTrue(bool(pattern.match(s)))
 
     def test_find_csv_separators(self):
-        for s, true_col, true_dec in [(csv1, ',', '.'), (csv2, '\t', '.'), (csv3, ';', ','), (csv4, '\t', '.'), (csv5, ',', '.'), (csv6, '\t', '.'), (csv7, ',', '.')]:
+        for s, true_col, true_dec in [(csv1, ',', '.'), (csv2, '\t', '.'), (csv3, ';', ','), (csv4, '\t', '.'), (csv5, ',', '.'), (csv6, '\t', '.'), (csv7, ',', '.'), (csv8, ',', '.')]:
             col, dec = find_csv_separators(s)
             self.assertEqual(col, true_col)
             self.assertEqual(dec, true_dec)

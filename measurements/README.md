@@ -55,7 +55,7 @@ python -m ipykernel install --user --name="autoeq"
 Crawlers are intended to be ran in a Jupyter Notebook (or Lab). The notebook has graphical user interface for prompting
 the headphone names and forms from the user. Run
 ```bash
-jupyter lab measurements/crawl.ipynb
+jupyter lab db.ipynb
 ```
 Make sure to select the IPython kernel you just installed. Run (Shift+Enter) the first two code blocks to import
 dependencies and then run the crawler blocks which you need.

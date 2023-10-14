@@ -6,7 +6,7 @@ headphones, these can be found in the
 Where there are measurements from multiple sources for the same headphone, only the one with the highest accuracy
 appears on this list.
 
-This list has 3648 headphone models covered, but if your headphone is missing, you can create settings for
+This list has 3649 headphone models covered, but if your headphone is missing, you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -1521,6 +1521,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [HyperX Cloud II](./Rtings/over-ear/HyperX%20Cloud%20II)
 - [HyperX Cloud II Wireless](./Rtings/over-ear/HyperX%20Cloud%20II%20Wireless)
 - [HyperX Cloud III](./Rtings/over-ear/HyperX%20Cloud%20III)
+- [HyperX Cloud III Wireless](./Rtings/over-ear/HyperX%20Cloud%20III%20Wireless)
 - [HyperX Cloud Mix](./Rtings/over-ear/HyperX%20Cloud%20Mix)
 - [HyperX Cloud Revolver](./Rtings/over-ear/HyperX%20Cloud%20Revolver)
 - [HyperX Cloud Revolver + 7.1](./Rtings/over-ear/HyperX%20Cloud%20Revolver%20+%207.1)

@@ -9,8 +9,9 @@ autoeq_columns = {
 
 # Regex for AutoEq style CSV
 header_pattern = r'frequency(?:,(?:raw|smoothed|error|error_smoothed|equalization|parametric_eq|fixed_band_eq|equalized_raw|equalized_smoothed|target))+'
-autoeq_pattern = re.compile(rf'{header_pattern}(?:\n\d+(?:\.\d+=)?, ?\d+(?:\.\d+=)?)+\n*')
-rew_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\), SPL\(dB\), Phase\(degrees\)\n(?:\d+\.\d+, -?\d+\.\d+, -?\d+\.\d+\n?)+')
+float_pattern = r'-?\d+(?:\.\d+)?'
+autoeq_pattern = re.compile(rf'{header_pattern}(?:\n{float_pattern}(?:,{float_pattern})+)+')
+rew_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\), SPL\(dB\), Phase\(degrees\)\n(?:\d+\.\d+, -?\d+\.\d+, -?\d+\.\d+\n?)+\n*')
 
 
 class CsvParseError(Exception):
