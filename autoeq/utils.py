@@ -1,12 +1,65 @@
 # -*- coding: utf-8 -*-
 import numpy as np
-from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP
+from scipy.special import expit
 
 
-def generate_frequencies(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=DEFAULT_STEP):
+def generate_frequencies(f_min, f_max, f_step):
     frequencies = []
     f = f_min
     while f <= f_max:
         frequencies.append(f)
         f *= f_step
     return np.array(frequencies)
+
+
+def log_tilt(f, steepness):
+    """Creates a tilt for equalization.
+
+    Args:
+        f: Frequency array
+        steepness: Slope steepness in dB/octave
+
+    Returns:
+        Tilted data
+    """
+    # Center frequency in logarithmic scale
+    c = 20.0 * np.sqrt(20000.0 / 20.0)
+    # N octaves above center
+    n_oct = np.log2(f / c)
+    return n_oct * steepness
+
+
+def smoothing_window_size(f, octaves):
+    """Calculates moving average window size in indices from octaves."""
+    # Octaves to coefficient
+    k = 2 ** octaves
+    # Calculate average step size in frequencies
+    steps = []
+    for i in range(1, len(f)):
+        steps.append(f[i] / f[i - 1])
+    step_size = sum(steps) / len(steps)
+    # Calculate window size in indices
+    # step_size^x = k  --> x = ...
+    n = np.log(k) / np.log(step_size)
+    # Round to integer to be usable as index
+    n = round(n)
+    if not n % 2:
+        n += 1
+    return n
+
+
+def log_f_sigmoid(f, f_lower, f_upper, a_normal=0.0, a_treble=1.0):
+    # TODO: Move to utils
+    f_center = np.sqrt(f_upper / f_lower) * f_lower
+    half_range = np.log10(f_upper) - np.log10(f_center)
+    f_center = np.log10(f_center)
+    a = expit((np.log10(f) - f_center) / (half_range / 4))
+    a = a * -(a_normal - a_treble) + a_normal
+    return a
+
+
+def log_log_gradient(f0, f1, g0, g1):
+    """Calculates gradient (derivative) in dB per octave."""
+    octaves = np.log(f1 / f0) / np.log(2)
+    gain = g1 - g0
+    return gain / octaves
