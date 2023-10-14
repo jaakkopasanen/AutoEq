@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import math
 import pandas as pd
-from io import StringIO
+from pathlib import Path
 from scipy.interpolate import InterpolatedUnivariateSpline
 from scipy.signal import savgol_filter, find_peaks, minimum_phase, firwin2
 from scipy.special import expit
@@ -16,7 +16,6 @@ import numpy as np
 import urllib
 from time import time
 from PIL import Image
-import re
 import warnings
 from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, \
     DEFAULT_TREBLE_F_UPPER, DEFAULT_TREBLE_GAIN_K, DEFAULT_SMOOTHING_WINDOW_SIZE, \
@@ -27,24 +26,16 @@ from autoeq.constants import DEFAULT_F_MIN, DEFAULT_F_MAX, DEFAULT_STEP, DEFAULT
     HARMAN_OVEREAR_PREFERENCE_FREQUENCIES, PREAMP_HEADROOM, DEFAULT_MAX_SLOPE, \
     DEFAULT_BIQUAD_OPTIMIZATION_F_STEP, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_FC, DEFAULT_TREBLE_BOOST_Q, \
     DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE
+from autoeq.csv import parse_csv, create_csv
 from autoeq.peq import PEQ, LowShelf, HighShelf, Peaking
+from autoeq.utils import generate_frequencies
 
 warnings.filterwarnings("ignore", message="Values in x were outside bounds during a minimize step, clipping to bounds")
 
 
 class FrequencyResponse:
-    def __init__(self,
-                 name=None,
-                 frequency=None,
-                 raw=None,
-                 error=None,
-                 smoothed=None,
-                 error_smoothed=None,
-                 equalization=None,
-                 parametric_eq=None,
-                 fixed_band_eq=None,
-                 equalized_raw=None,
-                 equalized_smoothed=None,
+    def __init__(self, name=None, frequency=None, raw=None, error=None, smoothed=None, error_smoothed=None,
+                 equalization=None, parametric_eq=None, fixed_band_eq=None, equalized_raw=None, equalized_smoothed=None,
                  target=None):
         if not name:
             raise TypeError('Name must not be a non-empty string.')
@@ -104,6 +95,7 @@ class FrequencyResponse:
                 raise ValueError('Duplicate values found at frequency {}. Remove duplicates manually.'.format(
                     self.frequency[i])
                 )
+        # TODO: Iterate props with __dict__
         if len(self.raw):
             self.raw = self.raw[sorted_inds]
         if len(self.error):
@@ -125,18 +117,11 @@ class FrequencyResponse:
         if len(self.target):
             self.target = self.target[sorted_inds]
 
-    def reset(self,
-              raw=False,
-              smoothed=True,
-              error=True,
-              error_smoothed=True,
-              equalization=True,
-              fixed_band_eq=True,
-              parametric_eq=True,
-              equalized_raw=True,
-              equalized_smoothed=True,
-              target=True):
+    def reset(self, raw=False, smoothed=True, error=True, error_smoothed=True, equalization=True, fixed_band_eq=True,
+              parametric_eq=True, equalized_raw=True, equalized_smoothed=True, target=True):
         """Resets data."""
+        # TODO: All false by default
+        # TODO: Iterate props with __dict__
         if raw:
             self.raw = self._init_data(None)
         if smoothed:
@@ -161,61 +146,15 @@ class FrequencyResponse:
     @classmethod
     def read_from_csv(cls, file_path):
         """Reads data from CSV file and constructs class instance."""
-        name = '.'.join(os.path.split(file_path)[1].split('.')[:-1])
-
-        # Read file
-        f = open(file_path, 'r', encoding='utf-8')
-        s = f.read()
-
-        # Regex for AutoEq style CSV
-        header_pattern = r'frequency(?:,(?:raw|smoothed|error|error_smoothed|equalization|parametric_eq|fixed_band_eq|equalized_raw|equalized_smoothed|target))+'
-        float_pattern = r'-?\d+(?:\.\d+)?'
-        data_2_pattern = r'{fl}[ ,;:\t]+{fl}?'.format(fl=float_pattern)
-        data_n_pattern = r'{fl}(?:[ ,;:\t]+{fl})+?'.format(fl=float_pattern)
-        autoeq_pattern = r'^{header}(?:\n{data})+\n*$'.format(header=header_pattern, data=data_n_pattern)
-
-        if re.match(autoeq_pattern, s):
-            # Known AutoEq CSV format
-            df = pd.read_csv(StringIO(s), sep=',', header=0)
-            frequency = list(df['frequency'])
-            raw = list(df['raw']) if 'raw' in df else None
-            smoothed = list(df['smoothed']) if 'smoothed' in df else None
-            error = list(df['error']) if 'error' in df else None
-            error_smoothed = list(df['error_smoothed']) if 'error_smoothed' in df else None
-            equalization = list(df['equalization']) if 'equalization' in df else None
-            parametric_eq = list(df['parametric_eq']) if 'parametric_eq' in df else None
-            fixed_band_eq = list(df['fixed_band_eq']) if 'fixed_band_eq' in df else None
-            equalized_raw = list(df['equalized_raw']) if 'equalized_raw' in df else None
-            equalized_smoothed = list(df['equalized_smoothed']) if 'equalized_smoothed' in df else None
-            target = list(df['target']) if 'target' in df else None
-            return cls(
-                name=name,
-                frequency=frequency,
-                raw=raw,
-                smoothed=smoothed,
-                error=error,
-                error_smoothed=error_smoothed,
-                equalization=equalization,
-                parametric_eq=parametric_eq,
-                fixed_band_eq=fixed_band_eq,
-                equalized_raw=equalized_raw,
-                equalized_smoothed=equalized_smoothed,
-                target=target
-            )
-        else:
-            # Unknown format, try to guess
-            lines = s.split('\n')
-            frequency = []
-            raw = []
-            for line in lines:
-                if re.match(data_2_pattern, line):  # float separator float
-                    floats = re.findall(float_pattern, line)
-                    frequency.append(float(floats[0]))  # Assume first to be frequency
-                    raw.append(float(floats[1]))  # Assume second to be raw
-                # Discard all lines which don't match data pattern
-            return cls(name=name, frequency=frequency, raw=raw)
+        # TODO: read_csv
+        name = '.'.join(Path(file_path).name.split('.')[:-1])
+        with open(file_path, 'r', encoding='utf-8') as fh:
+            csv_str = fh.read().strip()
+        return cls(name=name, **parse_csv(csv_str))
 
     def to_dict(self):
+        # TODO: Fail with None or NaN values?
+        # TODO: Iterate props with __dict__
         d = dict()
         if len(self.frequency):
             d['frequency'] = self.frequency.tolist()
@@ -243,9 +182,8 @@ class FrequencyResponse:
 
     def write_to_csv(self, file_path=None):
         """Writes data to files as CSV."""
-        file_path = os.path.abspath(file_path)
-        df = pd.DataFrame(self.to_dict())
-        df.to_csv(file_path, header=True, index=False, float_format='%.2f')
+        with open(file_path, 'w') as fh:
+            fh.write(create_csv(self.to_dict()) + '\n')
 
     def eqapo_graphic_eq(self, normalize=True, preamp=DEFAULT_PREAMP, f_step=DEFAULT_GRAPHIC_EQ_STEP):
         """Generates EqualizerAPO GraphicEQ string from equalization curve."""
@@ -328,24 +266,6 @@ class FrequencyResponse:
                 s += f'Filter {i + 1}: ON {types[filt.__class__.__name__]} Fc {filt.fc:.0f} Hz Gain {filt.gain:.1f} dB Q {filt.q:.2f}\n'
             f.write(s)
 
-    @staticmethod
-    def _split_path(path):
-        """Splits file system path into components."""
-        folders = []
-        while 1:
-            path, folder = os.path.split(path)
-
-            if folder != "":
-                folders.append(folder)
-            else:
-                if path != "":
-                    folders.append(path)
-
-                break
-
-        folders.reverse()
-        return folders
-
     def minimum_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True, preamp=DEFAULT_PREAMP):
         """Generates minimum phase impulse response
 
@@ -365,15 +285,13 @@ class FrequencyResponse:
         f_res /= 2
         # Interpolate to even sample interval
         fr = self.__class__(name='fr_data', frequency=self.frequency.copy(), raw=self.equalization.copy())
-        # Save gain at lowest available frequency
-        f_min = np.max([fr.frequency[0], f_res])
+        f_min = np.max([fr.frequency[0], f_res])  # Save gain at lowest available frequency
         interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
         gain_f_min = interpolator(np.log10(f_min))
         # Filter length, optimized for FFT speed
         n = round(fs // 2 / f_res)
         n = next_fast_len(n)
         f = np.linspace(0.0, fs // 2, n)
-        # Run interpolation
         fr.interpolate(f, pol_order=1)
         # Set gain for all frequencies below original minimum frequency to match gain at the original minimum frequency
         fr.raw[fr.frequency <= f_min] = gain_f_min
@@ -383,27 +301,20 @@ class FrequencyResponse:
             fr.raw -= PREAMP_HEADROOM
         if preamp:
             fr.raw += preamp
-        # Minimum phase transformation by scipy's homomorphic method halves dB gain
-        fr.raw *= 2
-        # Convert amplitude to linear scale
-        fr.raw = 10 ** (fr.raw / 20)
-        # Zero gain at Nyquist frequency
-        fr.raw[-1] = 0.0
-        # Calculate response
-        ir = firwin2(len(fr.frequency) * 2, fr.frequency, fr.raw, fs=fs)
-        # Convert to minimum phase
-        ir = minimum_phase(ir, n_fft=len(ir))
+        fr.raw *= 2  # Minimum phase transformation by scipy's homomorphic method halves dB gain
+        fr.raw = 10 ** (fr.raw / 20)  # Convert amplitude to linear scale
+        fr.raw[-1] = 0.0  # Zero gain at Nyquist frequency
+        ir = firwin2(len(fr.frequency) * 2, fr.frequency, fr.raw, fs=fs)  # Calculate linear phase FIR filter
+        ir = minimum_phase(ir, n_fft=len(ir))  # Convert FIR filter to minimum phase
         return ir
 
     def linear_phase_impulse_response(self, fs=DEFAULT_FS, f_res=DEFAULT_F_RES, normalize=True, preamp=DEFAULT_PREAMP):
         """Generates impulse response implementation of equalization filter."""
         # Interpolate to even sample interval
         fr = self.__class__(name='fr_data', frequency=self.frequency, raw=self.equalization)
-        # Save gain at lowest available frequency
-        f_min = np.max([fr.frequency[0], f_res])
+        f_min = np.max([fr.frequency[0], f_res])  # Save gain at lowest available frequency
         interpolator = InterpolatedUnivariateSpline(np.log10(fr.frequency), fr.raw, k=1)
         gain_f_min = interpolator(np.log10(f_min))
-        # Run interpolation
         fr.interpolate(np.arange(0.0, fs // 2, f_res), pol_order=1)
         # Set gain for all frequencies below original minimum frequency to match gain at the original minimum frequency
         fr.raw[fr.frequency <= f_min] = gain_f_min
@@ -413,13 +324,10 @@ class FrequencyResponse:
             fr.raw -= PREAMP_HEADROOM
         if preamp:
             fr.raw += preamp
-        # Convert amplitude to linear scale
-        fr.raw = 10 ** (fr.raw / 20)
-        # Calculate response
-        fr.frequency = np.append(fr.frequency, fs // 2)
-        fr.raw = np.append(fr.raw, 0.0)
-        ir = firwin2(len(fr.frequency) * 2, fr.frequency, fr.raw, fs=fs)
-        return ir
+        fr.raw = 10 ** (fr.raw / 20)  # Convert amplitude to linear scale
+        fr.frequency = np.append(fr.frequency, fs // 2)  # Nyquist frequency
+        fr.raw = np.append(fr.raw, 0.0)  # Zero gain at Nyquist frequency
+        return firwin2(len(fr.frequency) * 2, fr.frequency, fr.raw, fs=fs)
 
     def write_readme(self, file_path, parametric_peqs=None, fixed_band_peq=None):
         """Writes README.md with picture and Equalizer APO settings."""
@@ -484,12 +392,8 @@ class FrequencyResponse:
 
     @staticmethod
     def generate_frequencies(f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, f_step=DEFAULT_STEP):
-        freq = []
-        f = f_min
-        while f <= f_max:
-            freq.append(f)
-            f *= f_step
-        return np.array(freq)
+        """Moved to autoeq.utils but retaining method to avoid breaking changes."""
+        return generate_frequencies(f_min=f_min, f_max=f_max, f_step=f_step)
 
     def interpolate(self, f=None, f_step=DEFAULT_STEP, pol_order=1, f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX):
         """Interpolates missing values from previous and next value. Resets all but raw data."""
@@ -549,6 +453,7 @@ class FrequencyResponse:
         try:
             interpolator = InterpolatedUnivariateSpline(np.log10(equal_energy_fr.frequency), equal_energy_fr.raw, k=1)
         except Exception as err:
+            # TODO: Custom error
             raise Exception(f'{len(np.log10(equal_energy_fr.frequency))} vs {len(equal_energy_fr.raw)} @ {self.name}')
         if type(frequency) in [list, np.ndarray] and len(frequency) > 1:
             # Use the average of the gain values between the given frequencies as the difference to be subtracted
@@ -585,6 +490,7 @@ class FrequencyResponse:
         Returns:
             Tilted data
         """
+        # TODO: Move to utils
         # Center in logarithmic scale
         c = DEFAULT_F_MIN * np.sqrt(DEFAULT_F_MAX / DEFAULT_F_MIN)
         # N octaves above center
@@ -677,20 +583,12 @@ class FrequencyResponse:
 
         # Smoothed error and equalization results are affected by compensation, reset them
         self.reset(
-            raw=False,
-            smoothed=False,
-            error=False,
-            error_smoothed=True,
-            equalization=True,
-            parametric_eq=True,
-            fixed_band_eq=True,
-            equalized_raw=True,
-            equalized_smoothed=True,
-            target=False
-        )
+            raw=False, smoothed=False, error=False, error_smoothed=True, equalization=True, parametric_eq=True,
+            fixed_band_eq=True, equalized_raw=True, equalized_smoothed=True, target=False)
 
     def _window_size(self, octaves):
         """Calculates moving average window size in indices from octaves."""
+        # TODO: Move to utils
         # Octaves to coefficient
         k = 2 ** octaves
         # Calculate average step size in frequencies
@@ -710,6 +608,7 @@ class FrequencyResponse:
         return window_size
 
     def _sigmoid(self, f_lower, f_upper, a_normal=0.0, a_treble=1.0):
+        # TODO: Move to utils
         f_center = np.sqrt(f_upper / f_lower) * f_lower
         half_range = np.log10(f_upper) - np.log10(f_center)
         f_center = np.log10(f_center)
@@ -717,14 +616,10 @@ class FrequencyResponse:
         a = a * -(a_normal - a_treble) + a_normal
         return a
 
-    def _smoothen_fractional_octave(self,
-                                    data,
-                                    window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-                                    iterations=DEFAULT_SMOOTHING_ITERATIONS,
-                                    treble_window_size=None,
-                                    treble_iterations=None,
-                                    treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,
-                                    treble_f_upper=DEFAULT_TREBLE_SMOOTHING_F_UPPER):
+    def _smoothen_fractional_octave(
+            self, data, window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, iterations=DEFAULT_SMOOTHING_ITERATIONS,
+            treble_window_size=None, treble_iterations=None, treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,
+            treble_f_upper=DEFAULT_TREBLE_SMOOTHING_F_UPPER):
         """Smooths data.
 
         Args:
@@ -737,6 +632,7 @@ class FrequencyResponse:
             treble_f_upper: Upper boundary of transition frequency reqion. In the transition region normal filter is \
                         switched to treble filter with sigmoid weighting function.
         """
+        # TODO: Remove iterations
         if None in self.frequency or None in data:
             # Must not contain None values
             raise ValueError('None values present, cannot smoothen!')
@@ -760,13 +656,10 @@ class FrequencyResponse:
         k_normal = k_treble * -1 + 1
         return y_normal * k_normal + y_treble * k_treble
 
-    def smoothen_fractional_octave(self,
-                                   window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-                                   iterations=DEFAULT_SMOOTHING_ITERATIONS,
-                                   treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
-                                   treble_iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS,
-                                   treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,
-                                   treble_f_upper=DEFAULT_TREBLE_SMOOTHING_F_UPPER):
+    def smoothen_fractional_octave(
+            self, window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, iterations=DEFAULT_SMOOTHING_ITERATIONS,
+            treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
+            treble_iterations=DEFAULT_TREBLE_SMOOTHING_ITERATIONS, treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,treble_f_upper=DEFAULT_TREBLE_SMOOTHING_F_UPPER):
         """Smooths data.
 
         Args:
@@ -779,6 +672,7 @@ class FrequencyResponse:
             treble_f_upper: Upper boundary of transition frequency reqion. In the transition region normal filter is \
                         switched to treble filter with sigmoid weighting function.
         """
+        # TODO: Remove iterations
         if treble_f_upper <= treble_f_lower:
             raise ValueError('Upper transition boundary must be greater than lower boundary')
 
@@ -807,28 +701,13 @@ class FrequencyResponse:
 
         # Equalization is affected by smoothing, reset equalization results
         self.reset(
-            raw=False,
-            smoothed=False,
-            error=False,
-            error_smoothed=False,
-            equalization=True,
-            parametric_eq=True,
-            fixed_band_eq=True,
-            equalized_raw=True,
-            equalized_smoothed=True,
-            target=False
-        )
+            raw=False, smoothed=False, error=False, error_smoothed=False, equalization=True, parametric_eq=True,
+            fixed_band_eq=True, equalized_raw=True, equalized_smoothed=True, target=False)
 
-    def equalize(self,
-                 max_gain=DEFAULT_MAX_GAIN,
-                 max_slope=DEFAULT_MAX_SLOPE,
-                 max_slope_decay=0.0,
-                 concha_interference=False,
-                 window_size=1 / 12,
-                 treble_window_size=2,
-                 treble_f_lower=DEFAULT_TREBLE_F_LOWER,
-                 treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                 treble_gain_k=DEFAULT_TREBLE_GAIN_K):
+    def equalize(
+            self, max_gain=DEFAULT_MAX_GAIN, max_slope=DEFAULT_MAX_SLOPE, max_slope_decay=0.0,
+            concha_interference=False, window_size=1 / 12, treble_window_size=2, treble_f_lower=DEFAULT_TREBLE_F_LOWER,
+            treble_f_upper=DEFAULT_TREBLE_F_UPPER, treble_gain_k=DEFAULT_TREBLE_GAIN_K):
         """Creates equalization curve and equalized curve.
 
         Args:
@@ -1064,6 +943,7 @@ class FrequencyResponse:
     @staticmethod
     def log_log_gradient(f0, f1, g0, g1):
         """Calculates gradient (derivative) in dB per octave."""
+        # TODO: Move to utils
         octaves = np.log(f1 / f0) / np.log(2)
         gain = g1 - g0
         return gain / octaves
@@ -1111,6 +991,7 @@ class FrequencyResponse:
 
     @staticmethod
     def init_plot(fig=None, ax=None, f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, a_min=None, a_max=None, ):
+        """Configures figure and axis ready for frequency response plots"""
         if fig is None:
             fig, ax = plt.subplots()
             fig.set_size_inches(12, 8)
@@ -1128,97 +1009,58 @@ class FrequencyResponse:
         ax.set_xticks([20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000])
         return fig, ax
 
-    def plot_graph(self,
-                   fig=None,
-                   ax=None,
-                   show=True,
-                   raw=True,
-                   error=True,
-                   smoothed=True,
-                   error_smoothed=True,
-                   equalization=True,
-                   parametric_eq=True,
-                   fixed_band_eq=True,
-                   equalized=True,
-                   target=True,
-                   file_path=None,
-                   f_min=DEFAULT_F_MIN,
-                   f_max=DEFAULT_F_MAX,
-                   a_min=None,
-                   a_max=None,
-                   color='black',
-                   raw_plot_kwargs=None,
-                   smoothed_plot_kwargs=None,
-                   error_plot_kwargs=None,
-                   error_smoothed_plot_kwargs=None,
-                   equalization_plot_kwargs=None,
-                   parametric_eq_plot_kwargs=None,
-                   fixed_band_eq_plot_kwargs=None,
-                   equalized_plot_kwargs=None,
-                   target_plot_kwargs=None,
-                   close=False):
+    def plot_graph(
+            self, fig=None, ax=None, show=True, raw=True, error=True, smoothed=True, error_smoothed=True,
+            equalization=True, parametric_eq=True, fixed_band_eq=True, equalized=True, target=True, file_path=None,
+            f_min=DEFAULT_F_MIN, f_max=DEFAULT_F_MAX, a_min=None, a_max=None, color='black', raw_plot_kwargs=None,
+            smoothed_plot_kwargs=None, error_plot_kwargs=None, error_smoothed_plot_kwargs=None,
+            equalization_plot_kwargs=None, parametric_eq_plot_kwargs=None, fixed_band_eq_plot_kwargs=None,
+            equalized_plot_kwargs=None, target_plot_kwargs=None, close=False):
         """Plots frequency response graph."""
+        # TODO: close --> close_fig
         if not len(self.frequency):
             raise ValueError('\'frequency\' has no data!')
-
         fig, ax = self.__class__.init_plot(fig=fig, ax=ax, f_min=f_min, f_max=f_max, a_min=a_min, a_max=a_max)
-
         if target and len(self.target):
             ax.plot(
                 self.frequency, self.target,
-                **self.kwarg_defaults(target_plot_kwargs, label='Target', linewidth=5, color='lightblue')
-            )
-
+                **self.kwarg_defaults(target_plot_kwargs, label='Target', linewidth=5, color='lightblue'))
         if smoothed and len(self.smoothed):
             ax.plot(
                 self.frequency, self.smoothed,
-                **self.kwarg_defaults(smoothed_plot_kwargs, label='Raw Smoothed', linewidth=5, color='lightgrey')
-            )
-
+                **self.kwarg_defaults(smoothed_plot_kwargs, label='Raw Smoothed', linewidth=5, color='lightgrey'))
         if error_smoothed and len(self.error_smoothed):
             ax.plot(
                 self.frequency, self.error_smoothed,
-                **self.kwarg_defaults(error_smoothed_plot_kwargs, label='Error Smoothed', linewidth=5, color='pink')
-            )
-
+                **self.kwarg_defaults(error_smoothed_plot_kwargs, label='Error Smoothed', linewidth=5, color='pink'))
         if raw and len(self.raw):
             ax.plot(
                 self.frequency, self.raw,
-                **self.kwarg_defaults(raw_plot_kwargs, label='Raw', linewidth=1, color=color)
-            )
-
+                **self.kwarg_defaults(raw_plot_kwargs, label='Raw', linewidth=1, color=color))
         if error and len(self.error):
             ax.plot(
                 self.frequency, self.error,
-                **self.kwarg_defaults(error_plot_kwargs, label='Error', linewidth=1, color='red')
-            )
+                **self.kwarg_defaults(error_plot_kwargs, label='Error', linewidth=1, color='red'))
 
         if equalization and len(self.equalization):
             ax.plot(
                 self.frequency, self.equalization,
-                **self.kwarg_defaults(equalization_plot_kwargs, label='Equalization', linewidth=5, color='lightgreen')
-            )
-
+                **self.kwarg_defaults(equalization_plot_kwargs, label='Equalization', linewidth=5, color='lightgreen'))
         if parametric_eq and len(self.parametric_eq):
             ax.plot(
                 self.frequency, self.parametric_eq,
-                **self.kwarg_defaults(parametric_eq_plot_kwargs, label='Parametric Eq', linewidth=1, color='darkgreen')
-            )
-
+                **self.kwarg_defaults(parametric_eq_plot_kwargs, label='Parametric Eq', linewidth=1, color='darkgreen'))
         if fixed_band_eq and len(self.fixed_band_eq):
             ax.plot(
                 self.frequency, self.fixed_band_eq,
                 **self.kwarg_defaults(
                     fixed_band_eq_plot_kwargs,
                     label='Fixed Band Eq', linewidth=1, color='darkgreen', linestyle='--'
-                )
-            )
-
+                ))
         if equalized and len(self.equalized_raw):
             ax.plot(
                 self.frequency, self.equalized_raw,
-                **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized', linewidth=1, color='blue')
-            )
+                **self.kwarg_defaults(equalized_plot_kwargs, label='Equalized', linewidth=1, color='blue'))
 
         ax.set_title(self.name)
         if len(ax.lines) > 0:
@@ -1249,11 +1091,9 @@ class FrequencyResponse:
         sl = np.logical_and(fr.frequency >= 50, fr.frequency <= 10000)
         x = fr.frequency[sl]
         y = fr.error[sl]
-
         std = np.std(y, ddof=1)  # ddof=1 is required to get the exact same numbers as the Excel from Listen Inc gives
         slope, _, _, _, _ = linregress(np.log(x), y)
         score = 114.490443008238 - 12.62 * std - 15.5163857197367 * np.abs(slope)
-
         return score, std, slope
 
     def harman_inear_preference_score(self):
@@ -1270,7 +1110,6 @@ class FrequencyResponse:
         sl = np.logical_and(fr.frequency >= 20, fr.frequency <= 10000)
         x = fr.frequency[sl]
         y = fr.error[sl]
-
         std = np.std(y, ddof=1)  # ddof=1 is required to get the exact same numbers as the Excel from Listen Inc gives
         slope, _, _, _, _ = linregress(np.log(x), y)
         # Mean of absolute of error centered by 500 Hz
@@ -1279,30 +1118,16 @@ class FrequencyResponse:
         mean = np.mean(np.abs(y))
         # Final score
         score = 100.0795 - 8.5 * std - 6.796 * np.abs(slope) - 3.475 * mean
-
         return score, std, slope, mean
 
-    def process(self,
-                compensation=None,
-                min_mean_error=False,
-                bass_boost_gain=None,
-                bass_boost_fc=None,
-                bass_boost_q=None,
-                treble_boost_gain=None,
-                treble_boost_fc=None,
-                treble_boost_q=None,
-                tilt=None,
-                fs=DEFAULT_FS,
-                sound_signature=None,
-                sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
-                max_gain=DEFAULT_MAX_GAIN,
-                max_slope=DEFAULT_MAX_SLOPE,
-                concha_interference=False,
-                window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-                treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
-                treble_f_lower=DEFAULT_TREBLE_F_LOWER,
-                treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                treble_gain_k=DEFAULT_TREBLE_GAIN_K):
+    def process(
+            self, compensation=None, min_mean_error=False, bass_boost_gain=None, bass_boost_fc=None, bass_boost_q=None,
+            treble_boost_gain=None, treble_boost_fc=None, treble_boost_q=None, tilt=None, fs=DEFAULT_FS,
+            sound_signature=None, sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
+            max_gain=DEFAULT_MAX_GAIN, max_slope=DEFAULT_MAX_SLOPE, concha_interference=False,
+            window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
+            treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
+            treble_gain_k=DEFAULT_TREBLE_GAIN_K):
         """Runs processing pipeline with interpolation, centering, compensation and equalization.
 
         Args:
@@ -1335,25 +1160,16 @@ class FrequencyResponse:
         self.interpolate()
         self.center()
         self.compensate(
-            compensation,
-            bass_boost_gain=bass_boost_gain,
-            bass_boost_fc=bass_boost_fc,
-            bass_boost_q=bass_boost_q,
-            treble_boost_gain=treble_boost_gain,
-            treble_boost_fc=treble_boost_fc,
-            treble_boost_q=treble_boost_q,
-            tilt=tilt,
-            fs=fs,
-            sound_signature=sound_signature,
+            compensation, bass_boost_gain=bass_boost_gain, bass_boost_fc=bass_boost_fc, bass_boost_q=bass_boost_q,
+            treble_boost_gain=treble_boost_gain, treble_boost_fc=treble_boost_fc, treble_boost_q=treble_boost_q,
+            tilt=tilt, fs=fs, sound_signature=sound_signature,
             sound_signature_smoothing_window_size=sound_signature_smoothing_window_size,
             min_mean_error=min_mean_error
         )
         self.smoothen_fractional_octave(
             window_size=window_size,
-            treble_window_size=treble_window_size,
-            treble_f_lower=treble_f_lower,
-            treble_f_upper=treble_f_upper
+            treble_window_size=treble_window_size, treble_f_lower=treble_f_lower, treble_f_upper=treble_f_upper
         )
         self.equalize(
-            max_slope=max_slope, max_gain=max_gain, concha_interference=concha_interference, treble_f_lower=treble_f_lower,
-            treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
+            max_slope=max_slope, max_gain=max_gain, concha_interference=concha_interference,
+            treble_f_lower=treble_f_lower, treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
