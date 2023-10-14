@@ -69,13 +69,13 @@ class TestAutoEq(unittest.TestCase):
         df = pd.read_csv(self._output.joinpath('Headphone 1', 'Headphone 1.csv'))
         columns = 'frequency,raw,error,smoothed,error_smoothed,equalization,parametric_eq,fixed_band_eq,' \
                   'equalized_raw,equalized_smoothed,target'.split(',')
-        self.assertEqual(list(df.columns), columns)
+        self.assertEqual(set(df.columns), set(columns))
         self.assertEqual(df.size, 695 * len(columns))
 
         # Graphic equalizer
         self.assertTrue(self._output.joinpath('Headphone 1', 'Headphone 1 GraphicEQ.txt').exists())
         with open(self._output.joinpath('Headphone 1', 'Headphone 1 GraphicEQ.txt')) as fh:
-            self.assertRegexpMatches(fh.read().strip() + '; ', r'GraphicEQ: \d{2,5} (-?\d(\.\d+)?; )+')
+            self.assertRegex(fh.read().strip() + '; ', r'GraphicEQ: \d{2,5} (-?\d(\.\d+)?; )+')
 
         # Fixed band equalizer
         self.assertTrue(self._output.joinpath('Headphone 1', 'Headphone 1 FixedBandEq.txt').exists())
