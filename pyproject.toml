@@ -6,28 +6,27 @@ build-backend = "hatchling.build"
 
 [project]
 name = "autoeq"
-version = "3.0.0"
+version = "3.0.1"
 authors = [
   { name="Jaakko Pasanen", email="jaakko.o.pasanen@gmail.com" },
 ]
 description = "Automatic headphone equalizer config generator"
 readme = "README.md"
-requires-python = ">=3.7,<3.11"
+requires-python = ">=3.8,<3.12"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    'Pillow~=9.2.0',
-    'matplotlib~=3.5.2',
-    'pandas~=1.4.3',
-    'scipy~=1.8.1',
-    'numpy~=1.23.1',
-    'tabulate~=0.8.10',
-    'soundfile~=0.11.0',
+    'Pillow~=10.0.1',
+    'matplotlib~=3.7.3',
+    'scipy~=1.10.1',
+    'numpy~=1.24.4',
+    'tabulate~=0.9.0',
+    'soundfile~=0.12.1',
     'pyyaml~=6.0',
-    'tqdm~=4.64.0',
+    'tqdm~=4.66.1',
 ]
 
 [project.urls]
@@ -44,7 +43,6 @@ exclude = [
     "/.github",
     "/compensation",
     "/measurements",
-    "/research",
     "/results",
     "/tests",
     ".gitignore",

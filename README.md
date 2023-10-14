@@ -87,6 +87,10 @@ python -m pip install -U -e .
 python -m autoeq --help
 ```
 
+```shell
+python -m autoeq --input-file="measurements/oratory1990/data/over-ear/Sennheiser HD 800.csv" --output-dir="my_results" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --max-gain=24 --parametric-eq --parametric-eq-config=4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF --bass-boost=6 --convolution-eq --fs=48000 --bit-depth=32 --f-res=16
+```
+
 When coming back at a later time you'll only need to activate virtual environment again
 ```shell
 # On Windows
