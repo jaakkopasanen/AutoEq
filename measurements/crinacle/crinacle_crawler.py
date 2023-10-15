@@ -24,9 +24,14 @@ class UnknownRigError(Exception):
 
 class CrinacleCrawler(Crawler):
     def __init__(self, driver=None):
+        super().__init__(driver=driver)
+        self.register_start_time('parse_books()')
         self.book_name_index = None
         self.parse_books()
-        super().__init__(driver=driver)
+        self.register_end_time('parse_books()')
+        self.register_start_time('get_urls()')
+        self.urls = self.get_urls()
+        self.register_end_time('get_urls()')
 
     def parse_books(self):
         """Downloads parses phone books to get names
@@ -122,7 +127,7 @@ class CrinacleCrawler(Crawler):
         file_name = self.normalize_file_name(file_path.name)
         url = file_path.relative_to(ROOT_PATH)
         url = 'file://' + str(url).replace('\\', '/') if type(url) == WindowsPath else str(url)
-        index_item = self.name_index.find_one(source_name=file_name)
+        index_item = self.name_index.find_one(url=url)
         if index_item is not None:  # Existing item in the name index, ground truth
             item = NameItem(index_item.source_name, index_item.name, index_item.form, url=url, rig=None)
         else:
@@ -162,7 +167,6 @@ class CrinacleCrawler(Crawler):
         """
         if items[0].form == 'ignore':
             return
-
         avg_fr = FrequencyResponse(name=items[0].name)
         avg_fr.raw = np.zeros(avg_fr.frequency.shape)
         for item in items:
@@ -177,22 +181,31 @@ class CrinacleCrawler(Crawler):
         avg_fr.write_to_csv(file_path)
         print(f'Saved "{avg_fr.name}" to "{file_path}"')
 
-    def create_prompt_callback(self, items):
-        def callback(item):
-            if item.form == 'ignore':
-                item.name = None
-                self.update_name_index(item)
-                self.active_list_item.resolution = 'ignore'
-                self.next_prompt()
-                return
-            manufacturer, manufacturer_match = self.manufacturers.find(item.name, ignore_case=True)
-            if manufacturer is None:
-                raise UnknownManufacturerError(f'Manufacturer is not known for "{item.name}"')
-            item.name = self.manufacturers.replace(item.name)
-            self.process_one(items)
-            self.update_name_index(item)
-            self.active_list_item.resolution = 'success'
+    def create_prompt_callback(self, original_items):
+        def callback(prompted_item):
+            self.active_list_item.resolution = 'ignore' if prompted_item.form == 'ignore' else 'success'
             self.next_prompt()
+
+            if not prompted_item.form == 'ignore':
+                manufacturer, manufacturer_match = self.manufacturers.find(prompted_item.name, ignore_case=True)
+                if manufacturer is None:
+                    raise UnknownManufacturerError(f'Manufacturer is not known for "{prompted_item.name}"')
+                prompted_item.name = self.manufacturers.replace(prompted_item.name)
+
+            new_items = []
+            for original_item in original_items:
+                new_item = original_item.copy()
+                new_item.name = prompted_item.name if prompted_item.form != 'ignore' else None
+                new_item.form = prompted_item.form
+                new_items.append(new_item)
+                self.update_name_index(new_item, write=False)
+            self.write_name_index()
+
+            if prompted_item.form == 'ignore':
+                return
+
+            self.process_one(new_items)
+
         return callback
 
     @staticmethod
@@ -200,6 +213,11 @@ class CrinacleCrawler(Crawler):
         if item.form is None or item.rig is None or item.name is None:
             return None
         return DIR_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
+
+    def group_key(self, url):
+        file_path = Path(url.replace('file://', '')).parent.joinpath(
+            self.normalize_file_name(url.split('/')[-1]))
+        return str(file_path.relative_to(file_path.parent.parent))
 
     def process(self, new_only=True):
         """Processes all new measurements
@@ -209,60 +227,65 @@ class CrinacleCrawler(Crawler):
         Returns:
             None
         """
+        self.register_start_time('process()')
         groups = {}
         for item in self.urls.items:
-            key = item.source_name if item.source_name else self.normalize_file_name(item.url.split('/')[-1])
+            key = self.group_key(item.url)
             if key not in groups:
                 groups[key] = []
             groups[key].append(item)
 
         unknown_manufacturers = []
-        for source_name, items in groups.items():
+        for group_key, group_items in groups.items():
             try:
-                if items[0].form == 'ignore':
-                    continue
-                name_prompt_item = items[0].copy()
-                name_prompt_item.source_name = source_name
+                name_prompt_item = group_items[0].copy()
                 if name_prompt_item.form == 'ignore':
                     continue
                 target_path = self.item_target_path(name_prompt_item)
                 if target_path and target_path.exists() and new_only:  # Target file exists, nothing to do
                     continue
                 elif name_prompt_item.name is not None:  # True name is known already but file doesn't exist
-                    self.process_one(items)
+                    self.process_one(group_items)
                     continue
 
                 # Use known source name or last part of URL as source name
-                guessed_name = self.intermediate_name(source_name)
+                if name_prompt_item.source_name is not None:
+                    guessed_name = name_prompt_item.source_name
+                else:
+                    guessed_name = self.normalize_file_name(name_prompt_item.url.split('/')[-1])
+                guessed_name = self.intermediate_name(guessed_name)
                 manufacturer, manufacturer_match = self.manufacturers.find(guessed_name)
                 if manufacturer:
-                    guessed_name = self.manufacturers.replace(guessed_name)
+                    guessed_name = guessed_name.replace(manufacturer_match, manufacturer)
                 else:
-                    if source_name == 'ADX5000 #1':
-                        raise UnknownManufacturerError(str(items[0]))
                     unknown_manufacturers.append(guessed_name)
+
+                name_proposals = self.get_name_proposals(guessed_name, n=4) if manufacturer else None
+                similar_names = [
+                    item.name for item in self.get_name_proposals(
+                        guessed_name, n=4, normalize_digits=True, normalize_extras=True, threshold=0
+                    ).items]
 
                 name_prompt = NamePrompt(
                     name_prompt_item,
-                    self.create_prompt_callback(items),
+                    self.create_prompt_callback(group_items),
                     manufacturer=manufacturer,
                     search_callback=self.search,
-                    name_proposals=self.get_name_proposals(guessed_name, n=4) if manufacturer else None,
-                    similar_names=[
-                        item.name for item in self.get_name_proposals(
-                            guessed_name, n=4, normalize_digits=True, normalize_extras=True, threshold=0
-                        ).items
-                    ])
+                    guessed_name=guessed_name,
+                    name_proposals=name_proposals,
+                    similar_names=similar_names)
                 self.prompts.append(PromptListItem(name_prompt, self.switch_prompt))
 
             except Exception as err:
-                print(f'Processing failed for "{items[0].url}"')
+                print(f'Processing failed for "{group_items[0].url}"')
                 raise err
         if len(unknown_manufacturers) > 0:
             warning = 'Headphones with unknown manufacturers:\n  * '
             warning += '\n  * '.join(unknown_manufacturers)
             warning += '\nAdd them to manufacturers.tsv and run this cell again'
             print(warning)
+        self.prompts = sorted(self.prompts, key=lambda pli: pli.name_prompt.name)
+        self.register_end_time('process()')
         self.reload_ui()
 
     def intermediate_name(self, source_name):

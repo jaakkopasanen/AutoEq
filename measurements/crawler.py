@@ -17,7 +17,7 @@ import webbrowser
 from selenium.webdriver.common.by import By
 import urllib.parse
 from abc import ABC, abstractmethod
-from time import sleep
+from time import sleep, time
 from measurements.name_index import NameIndex, NameItem
 from measurements.manufacturer_index import ManufacturerIndex
 from measurements.name_prompt import NamePrompt
@@ -31,18 +31,28 @@ class UnknownManufacturerError(Exception):
 
 class Crawler(ABC):
     def __init__(self, driver=None):
+        self._start_time = time()
+        self._timings = {}
+
         self.driver = driver
+        self.register_start_time('read_name_index()')
         self.name_index = self.read_name_index()
+        self.register_end_time('read_name_index()')
+        self.register_start_time('ManufacturerIndex()')
         self.manufacturers = ManufacturerIndex()
+        self.register_end_time('ManufacturerIndex()')
         self.name_proposals = None
+        self.register_start_time('init_name_proposals()')
         self.init_name_proposals()
-        self.urls = self.get_urls()
+        self.register_end_time('init_name_proposals()')
 
         # UI
         self.prompts = []
         self.prompt_list = None
         self.active_list_item = None
         self.widget = widgets.HBox([])
+
+
 
     @staticmethod
     @abstractmethod
@@ -137,12 +147,13 @@ class Crawler(ABC):
         """
         pass
 
-    def update_name_index(self, item):
+    def update_name_index(self, item, write=True):
         """Updates name index"""
-        exact_match = self.name_index.find_one(source_name=item.source_name, name=item.name, form=item.form)
+        exact_match = self.name_index.find_one(url=item.url)
         if not exact_match:
-            self.name_index.update(item, source_name=item.source_name)
-            self.write_name_index()
+            self.name_index.update(item)
+            if write:
+                self.write_name_index()
 
     def create_prompt_callback(self, outer_item):
         def callback(item):
@@ -311,3 +322,21 @@ class Crawler(ABC):
         sleep(2)  # Giving some time for Selenium to render the page
         html = self.driver.find_element(By.TAG_NAME, 'html').get_attribute('outerHTML')
         return BeautifulSoup(html, 'html.parser')
+
+    def register_start_time(self, task):
+        self._timings[task] = {'start': time() - self._start_time}
+
+    def register_end_time(self, task):
+        self._timings[task]['end'] = time() - self._start_time
+
+    def get_timings(self):
+        return [
+            {'task': key, **self._timings[key], 'duration': self._timings[key]['end'] - self._timings[key]['start']}
+            for key in sorted(self._timings.keys(), key=lambda key: self._timings[key]['start'])
+        ]
+
+    def print_timings(self):
+        timings = self.get_timings()
+        print('task' + ' ' * 20 + 'start\tend\tduration')
+        for timing in timings:
+            print(timing["task"] + ' ' * (24 - len(timing['task'])) + f'{timing["start"]:.2f}\t{timing["end"]:.2f}\t{timing["duration"]:.2f}')

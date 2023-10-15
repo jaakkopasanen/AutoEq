@@ -86,7 +86,9 @@ class NameIndex:
         return index
 
     def write_tsv(self, file_path):
-        df = self.df.iloc[self.df['source_name'].str.lower().argsort()]
+        sort_df = self.df.copy()
+        sort_df.fillna('', inplace=True)
+        df = self.df.iloc[sort_df['name'].str.lower().argsort()]
         df.to_csv(file_path, sep='\t', header=True, index=False, encoding='utf-8')
 
     def mask(self, url=None, source_name=None, name=None, form=None, rig=None):
@@ -123,26 +125,22 @@ class NameIndex:
         """Removes duplicate entries."""
         self.df = self.df.drop_duplicates()
 
-    def update(self, new_item, source_name=None, name=None, form=None):
-        """Updates all items which match the given query parameters to the given item.
+    def update(self, new_item):
+        """Updates all items which have the same URL as the given item
 
         Args:
             new_item: New value as NameItem
-            source_name: Name of the items in the source to update
-            name: True name of the items to update
-            form: Form of the items to update
 
         Returns:
             None
         """
-        if self.find(source_name=new_item.source_name, name=name, form=form):
-            mask = self.mask(source_name=source_name, name=name, form=form)
+        if self.find(url=new_item.url):
+            mask = self.mask(url=new_item.url)
             try:
-                self.df.loc[mask] = np.tile([new_item.source_name, new_item.name, new_item.form], (sum(mask), 1))
+                self.df.loc[mask] = np.tile(
+                    [new_item.url, new_item.source_name, new_item.name, new_item.form, new_item.rig],
+                    (sum(mask), 1))
             except Exception as err:
-                print(source_name, name, form)
-                print(new_item)
-                print(mask)
                 raise err
         else:
             self.add(new_item)
