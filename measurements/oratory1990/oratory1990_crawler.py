@@ -64,11 +64,11 @@ class Oratory1990Crawler(Crawler):
                 # Skip various EQ settings
                 continue
 
-            false_name = f'{manufacturer} {model}'
+            source_name = f'{manufacturer} {model}'
             if notes and notes.lower() != 'standard':
-                false_name += f' ({notes})'
-            if false_name not in urls:
-                urls[false_name] = url
+                source_name += f' ({notes})'
+            if source_name not in urls:
+                urls[source_name] = url
 
         # Manual additions which have not been added to the list yet
         #urls['Avantone Planar'] = 'https://www.dropbox.com/s/o867ox65g124mp1/Avantone%20Planar.pdf?dl=1'
@@ -204,25 +204,25 @@ class Oratory1990Crawler(Crawler):
         os.makedirs(inspection_dir, exist_ok=True)
         os.makedirs(out_dir, exist_ok=True)
 
-        pdf_path = Crawler.download(url, item.true_name, pdf_dir)
+        pdf_path = Crawler.download(url, item.name, pdf_dir)
         if not pdf_path:
             return
         try:
             im = Oratory1990Crawler.pdf_to_image(
-                os.path.join(pdf_dir, f'{item.true_name}.pdf'),
-                os.path.join(image_dir, f'{item.true_name}.png')
+                os.path.join(pdf_dir, f'{item.name}.pdf'),
+                os.path.join(image_dir, f'{item.name}.png')
             )
         except ValueError as err:
             if str(err) == 'Measured by Crinacle':
                 ignored = item.copy()
                 ignored.form = 'ignore'
-                self.name_index.update(ignored, false_name=item.false_name, true_name=item.true_name, form=item.form)
+                self.name_index.update(ignored, source_name=item.source_name, name=item.name, form=item.form)
                 self.write_name_index()
-                print(f'  Ignored {item.false_name} because it is measured by Crinacle.\n')
+                print(f'  Ignored {item.source_name} because it is measured by Crinacle.\n')
             return
-        fr, inspection = Oratory1990Crawler.parse_image(im, item.true_name)
-        inspection.save(os.path.join(inspection_dir, f'{item.true_name}.png'))
-        fr_path = os.path.join(out_dir, f'{item.true_name}.csv')
+        fr, inspection = Oratory1990Crawler.parse_image(im, item.name)
+        inspection.save(os.path.join(inspection_dir, f'{item.name}.png'))
+        fr_path = os.path.join(out_dir, f'{item.name}.csv')
         fr.write_to_csv(fr_path)
         print(f'  Saved CSV to "{fr_path}"')
 

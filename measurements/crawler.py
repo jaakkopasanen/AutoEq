@@ -77,15 +77,15 @@ class Crawler(ABC):
             'model': []
         }
         for item in name_proposals.items:
-            if not item.true_name or item.form == 'ignore':
+            if not item.name or item.form == 'ignore':
                 continue
-            manufacturer = re.search(manufacturer_pattern, item.true_name, flags=re.IGNORECASE)
+            manufacturer = re.search(manufacturer_pattern, item.name, flags=re.IGNORECASE)
             if not manufacturer:
                 continue
             manufacturer = manufacturer[0]
             proposal_data['form'].append(item.form)
             proposal_data['manufacturer'].append(manufacturer)
-            proposal_data['model'].append(item.true_name.replace(manufacturer, '').strip())
+            proposal_data['model'].append(item.name.replace(manufacturer, '').strip())
         self.name_proposals = pd.DataFrame(proposal_data)
 
     @abstractmethod
@@ -151,25 +151,25 @@ class Crawler(ABC):
 
     def update_name_index(self, item):
         """Updates name index"""
-        exact_match = self.name_index.find_one(false_name=item.false_name, true_name=item.true_name, form=item.form)
+        exact_match = self.name_index.find_one(source_name=item.source_name, name=item.name, form=item.form)
         if not exact_match:
-            self.name_index.update(item, false_name=item.false_name)
+            self.name_index.update(item, source_name=item.source_name)
             self.write_name_index()
 
-    def prompt_callback(self, false_name, url):
-        def callback(true_name, form):
+    def prompt_callback(self, source_name, url):
+        def callback(name, form):
             if form == 'ignore':
                 self.active_list_item.resolution = 'ignore'
                 self.next_prompt(True)
-                self.update_name_index(NameItem(false_name, None, form))
+                self.update_name_index(NameItem(source_name, None, form))
                 return
-            manufacturer, match = self.manufacturers.find(true_name, ignore_case=True)
+            manufacturer, match = self.manufacturers.find(name, ignore_case=True)
             if manufacturer is None:
-                raise UnknownManufacturerError(f'Manufacturer is not known for "{true_name}"')
+                raise UnknownManufacturerError(f'Manufacturer is not known for "{name}"')
             self.active_list_item.resolution = 'success'
             self.next_prompt(False)
-            item = NameItem(false_name, true_name, form)
-            self.process_one(NameItem(false_name, true_name, form), url)
+            item = NameItem(source_name, name, form)
+            self.process_one(NameItem(source_name, name, form), url)
             self.update_name_index(item)
         return callback
 
@@ -186,22 +186,22 @@ class Crawler(ABC):
             None
         """
         unknown_manufacturers = []
-        for false_name, url in self.urls.items():
-            item = self.name_index.find_one(false_name=false_name)
+        for source_name, url in self.urls.items():
+            item = self.name_index.find_one(source_name=source_name)
             if item and item.form == 'ignore':
                 continue
             if not item:
                 if not prompt:
-                    print(f'{false_name} is unknown and prompting is prohibited, skipping the item.')
+                    print(f'{source_name} is unknown and prompting is prohibited, skipping the item.')
                     continue
                 # Name doesn't exist in the name index
-                intermediate_name = self.intermediate_name(false_name)
+                intermediate_name = self.intermediate_name(source_name)
                 manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
                 if manufacturer:
                     model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE).strip()
-                    name_proposals = self.get_name_proposals(false_name)
-                    similar_names = self.get_name_proposals(false_name, n=4, normalize_digits=True, threshold=0)
-                    similar_names = [item.true_name for item in similar_names.items]
+                    name_proposals = self.get_name_proposals(source_name)
+                    similar_names = self.get_name_proposals(source_name, n=4, normalize_digits=True, threshold=0)
+                    similar_names = [item.name for item in similar_names.items]
                 else:
                     unknown_manufacturers.append(intermediate_name)
                     model = intermediate_name
@@ -212,17 +212,17 @@ class Crawler(ABC):
                     PromptListItem(
                         NamePrompt(
                             model,
-                            self.prompt_callback(false_name, url),
+                            self.prompt_callback(source_name, url),
                             manufacturer=manufacturer,
                             name_proposals=name_proposals,
                             search_callback=self.search,
-                            false_name=false_name,
+                            source_name=source_name,
                             similar_names=similar_names
                         ),
                         self.switch_prompt)
                 )
             else:
-                existing = self.existing.find_one(true_name=item.true_name)
+                existing = self.existing.find_one(name=item.name)
                 if not new_only or not existing:
                     # Name found in name index but the measurement doesn't exist
                     self.process_one(item, url)
@@ -238,11 +238,11 @@ class Crawler(ABC):
         url = f'https://google.com/search?q={quoted}&tbm=isch'
         webbrowser.open(url)
 
-    def get_name_proposals(self, false_name, n=4, normalize_digits=False, normalize_extras=False, threshold=60):
+    def get_name_proposals(self, source_name, n=4, normalize_digits=False, normalize_extras=False, threshold=60):
         """Prompts manufacturer, model and form from the user
 
         Args:
-            false_name: Name as it exists in the measurement source
+            source_name: Name as it exists in the measurement source
             n: Number of proposals to return
             normalize_digits: Normalize all digits to zeros before calculating fuzzy string matching score
             normalize_extras: Remove extra details in the parentheses
@@ -262,10 +262,10 @@ class Crawler(ABC):
                 b = re.sub(r'\(.+\)$', '', b).strip()
             return fn(a, b)
 
-        manufacturer, manufacturer_match = self.manufacturers.find(false_name)
+        manufacturer, manufacturer_match = self.manufacturers.find(source_name)
         if not manufacturer:
             return NameIndex([])
-        false_model = re.sub(re.escape(manufacturer_match), '', false_name, flags=re.IGNORECASE).strip()
+        false_model = re.sub(re.escape(manufacturer_match), '', source_name, flags=re.IGNORECASE).strip()
         # Select only the items with the same manufacturer
         models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
 
@@ -284,17 +284,17 @@ class Crawler(ABC):
         ni.df = ni.df.head(n)
         return ni
 
-    def intermediate_name(self, false_name):
+    def intermediate_name(self, source_name):
         """Gets intermediate name with false name."""
-        return false_name
+        return source_name
 
     @staticmethod
-    def download(url, true_name, output_dir, file_type=None):
+    def download(url, name, output_dir, file_type=None):
         """Downloads a file from a URL
 
         Args:
             url: URL to download
-            true_name: True name of the item to download
+            name: True name of the item to download
             output_dir: Where to write the downloaded file
             file_type: File extension. Detected automatically if None.
 
@@ -305,12 +305,12 @@ class Crawler(ABC):
         os.makedirs(output_dir, exist_ok=True)
         res = requests.get(url, stream=True)
         if res.status_code != 200:
-            print(f'Failed to download "{true_name}" at "{url}"')
+            print(f'Failed to download "{name}" at "{url}"')
             return None
         if file_type is None:
             file_type = url.split('.')[-1]
             file_type = file_type.split('?')[0]
-        file_path = os.path.join(output_dir, f'{true_name}.{file_type}')
+        file_path = os.path.join(output_dir, f'{name}.{file_type}')
         with open(file_path, 'wb') as f:
             res.raw.decode_content = True
             shutil.copyfileobj(res.raw, f)

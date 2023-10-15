@@ -4,28 +4,28 @@ import ipywidgets as widgets
 
 
 class NamePrompt:
-    def __init__(self, model, callback, manufacturer=None, name_proposals=None, search_callback=None, false_name=None,
+    def __init__(self, model, callback, manufacturer=None, name_proposals=None, search_callback=None, source_name=None,
                  form=None, similar_names=None):
         self.model = model
         self.callback = callback
         self.manufacturer = manufacturer
         self.name_proposals = name_proposals
         self.search_callback = search_callback
-        self.false_name = false_name
+        self.source_name = source_name
 
         # Add button for each name proposal
         buttons = []
         if name_proposals is not None:
             for item in name_proposals.items:
                 btn = widgets.Button(
-                    description=f'{item.true_name}', button_style='primary', layout=widgets.Layout(width='400px'))
+                    description=f'{item.name}', button_style='primary', layout=widgets.Layout(width='400px'))
                 btn.on_click(self.on_click)
                 buttons.append(btn)
 
         # Create HTML title
         title = '<h4 style="margin: 0">'
-        if self.false_name:
-            title += f'{self.false_name} → '
+        if self.source_name:
+            title += f'{self.source_name} → '
         if manufacturer:
             title += f'<span style="color: blue">{manufacturer}&nbsp;</span>'
             text = f'{manufacturer} {model}'
@@ -75,8 +75,8 @@ class NamePrompt:
         if self.manufacturer:
             return f'{self.manufacturer} {self.model}'
         else:
-            if self.false_name:
-                return self.false_name
+            if self.source_name:
+                return self.source_name
             else:
                 return self.model
 
@@ -89,7 +89,7 @@ class NamePrompt:
     def on_click(self, btn):
         if btn.description.strip() != 'ignore':
             btn.button_style = 'success'
-        item = self.name_proposals.find_one(true_name=btn.description)
+        item = self.name_proposals.find_one(name=btn.description)
         self.callback(btn.description.strip(), item.form)
 
     def on_submit(self, btn):

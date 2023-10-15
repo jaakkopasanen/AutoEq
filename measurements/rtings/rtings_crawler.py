@@ -108,14 +108,14 @@ class RtingsCrawler(Crawler):
         if item.form == 'ignore':
             return
 
-        json_file = Crawler.download(url, item.true_name, os.path.join(DIR_PATH, 'json'), file_type='json')
+        json_file = Crawler.download(url, item.name, os.path.join(DIR_PATH, 'json'), file_type='json')
         if json_file is not None:
-            with open(os.path.join(DIR_PATH, 'json', f'{item.true_name}.json'), 'r', encoding='utf-8') as fh:
+            with open(os.path.join(DIR_PATH, 'json', f'{item.name}.json'), 'r', encoding='utf-8') as fh:
                 json_data = json.load(fh)
             fr, target = RtingsCrawler.parse_json(json_data)
-            fr.name = item.true_name
+            fr.name = item.name
         else:
-            raise FileNotFoundError(f'Could not download JSON file for{item.true_name} at {url}')
+            raise FileNotFoundError(f'Could not download JSON file for{item.name} at {url}')
 
         fr.interpolate()
         if np.std(fr.raw) == 0:
@@ -147,8 +147,8 @@ class RtingsCrawler(Crawler):
         fr.write_to_csv(file_path)
         print(f'Saved "{fr.name}" to "{file_path}"')
 
-    def intermediate_name(self, false_name):
-        return re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', false_name).strip()
+    def intermediate_name(self, source_name):
+        return re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', source_name).strip()
 
 
 def main():

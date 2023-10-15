@@ -57,16 +57,12 @@ def rename_measurements(renames, dry_run=False):
                             with open(old_path, 'w') as fh:
                                 fh.write(contents)
 
-                    name_item = db['name_index'].find_one(true_name=rename['old_name'])
+                    name_item = db['name_index'].find_one(name=rename['old_name'])
                     if len(db['name_index']) > 0 and name_item is None:
                         continue
                     if not dry_run:
                         db['name_index'].update(
-                            NameItem(
-                                false_name=name_item.false_name,
-                                true_name=rename['new_name'],
-                                form=name_item.form
-                            ),
-                            true_name=name_item.true_name
+                            NameItem(name_item.source_name, rename['new_name'], name_item.form),
+                            name=name_item.name
                         )
                         db['name_index'].write_tsv(DIR_PATH.joinpath(db['name'], 'name_index.tsv'))

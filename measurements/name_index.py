@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import math
 import os
 import sys
 from glob import glob
@@ -10,24 +10,27 @@ from rapidfuzz import fuzz
 
 
 class NameItem:
-    def __init__(self, false_name, true_name, form):
-        self.false_name = false_name
-        self.true_name = true_name
+    def __init__(self, source_name, name, form, url=None, rig=None):
+        self.url = url
+        self.source_name = source_name
+        self.name = name
         self.form = form
+        self.rig = rig
 
     def __str__(self):
-        return '\t'.join([self.false_name or '', self.true_name or '', self.form or ''])
+        return '\t'.join([self.url or '', self.source_name or '', self.name or '', self.form or '', self.rig or ''])
 
     def copy(self):
-        return NameItem(self.false_name, self.true_name, self.form)
+        return NameItem(self.source_name, self.name, self.form, url=self.url, rig=self.rig)
 
 
 class NameIndex:
     def __init__(self, rows=None, items=None):
-        self.df = pd.DataFrame(rows if rows is not None else [], columns=['false_name', 'true_name', 'form'])
+        self.df = pd.DataFrame(rows if rows is not None else [], columns=['url', 'source_name', 'name', 'form', 'rig'])
         if items is not None:
-            for item in items:
-                self.add(item)
+            rows = [[item.url, item.source_name, item.name, item.form, item.rig] for item in items]
+            self.df = pd.concat([self.df, pd.DataFrame(rows, columns=self.df.columns)])
+            self.df = self.df.drop_duplicates()
 
     def __len__(self):
         return self.df.shape[0]
@@ -39,7 +42,7 @@ class NameIndex:
     def items(self):
         items = []
         for i, row in self.df.iterrows():
-            items.append(NameItem(row['false_name'], row['true_name'], row['form']))
+            items.append(NameItem(row['source_name'], row['name'], row['form'], url=row['url'],  rig=row['rig']))
         return items
 
     @staticmethod
@@ -76,26 +79,33 @@ class NameIndex:
         if not os.path.isfile(file_path):
             return index
         df = pd.read_csv(file_path, sep='\t', header=0, encoding='utf-8')
-        if list(df.columns) != ['false_name', 'true_name', 'form']:
+        if list(df.columns) != ['url', 'source_name', 'name', 'form', 'rig']:
             raise TypeError(f'"{file_path}" columns {df.columns} are corrupted')
-        df.fillna('', inplace=True)
+        df.replace([np.nan], [None], inplace=True)
         index.df = df
         return index
 
     def write_tsv(self, file_path):
-        df = self.df.iloc[self.df['false_name'].str.lower().argsort()]
+        df = self.df.iloc[self.df['source_name'].str.lower().argsort()]
         df.to_csv(file_path, sep='\t', header=True, index=False, encoding='utf-8')
 
-    def mask(self, false_name=None, true_name=None, form=None):
+    def mask(self, url=None, source_name=None, name=None, form=None, rig=None):
         """Creates a filter mask for rows which match the given query parameters."""
+        # TODO source_url and rig
         mask = None
-        if false_name is not None:
-            mask = (self.df.false_name == false_name)
-        if true_name is not None:
-            m = (self.df.true_name == true_name)
+        if url is not None:
+            mask = (self.df.url == url)
+        if source_name is not None:
+            m = (self.df.source_name == source_name)
+            mask = m if mask is None else mask & m
+        if name is not None:
+            m = (self.df.name == name)
             mask = m if mask is None else mask & m
         if form is not None:
             m = (self.df.form == form)
+            mask = m if mask is None else mask & m
+        if rig is not None:
+            m = (self.df.rig == rig)
             mask = m if mask is None else mask & m
         return mask
 
@@ -105,52 +115,52 @@ class NameIndex:
 
     def add(self, item):
         """Adds an item to index."""
-        false_name = item.false_name if item.false_name is not None else ''
-        true_name = item.true_name if item.true_name is not None else ''
-        form = item.form if item.form is not None else ''
-        self.df = pd.concat([self.df, pd.DataFrame([[false_name, true_name, form]], columns=self.df.columns)])
+        self.df = pd.concat(
+            [self.df, pd.DataFrame([[item.source_name, item.name, item.form]], columns=self.df.columns)])
         self.df = self.df.drop_duplicates()
 
     def remove_duplicates(self):
         """Removes duplicate entries."""
         self.df = self.df.drop_duplicates()
 
-    def update(self, item, false_name=None, true_name=None, form=None):
+    def update(self, new_item, source_name=None, name=None, form=None):
         """Updates all items which match the given query parameters to the given item.
 
         Args:
-            item: New value as NameItem
-            false_name: False name of the items to update
-            true_name: True name of the items to update
+            new_item: New value as NameItem
+            source_name: Name of the items in the source to update
+            name: True name of the items to update
             form: Form of the items to update
 
         Returns:
             None
         """
-        if self.find(false_name=item.false_name, true_name=true_name, form=form):
-            mask = self.mask(false_name=false_name, true_name=true_name, form=form)
+        if self.find(source_name=new_item.source_name, name=name, form=form):
+            mask = self.mask(source_name=source_name, name=name, form=form)
             try:
-                self.df.loc[mask] = np.tile([item.false_name, item.true_name, item.form], (sum(mask), 1))
+                self.df.loc[mask] = np.tile([new_item.source_name, new_item.name, new_item.form], (sum(mask), 1))
             except Exception as err:
-                print(false_name, true_name, form)
-                print(item)
+                print(source_name, name, form)
+                print(new_item)
                 print(mask)
                 raise err
         else:
-            self.add(item)
+            self.add(new_item)
 
-    def find(self, false_name=None, true_name=None, form=None):
+    def find(self, url=None, source_name=None, name=None, form=None, rig=None):
         """Finds all items which match the given query parameters.
 
         Args:
-            false_name: False name of the items to find
-            true_name: True name of the items to find
-            form: Form of the items to find
+            url: Measurement source URL
+            source_name: Measurement name in the source
+            name: Measurement name in AutoEq
+            form: Measured item form (over-ear, in-ear or earbud)
+            rig: Measurement rig used
 
         Returns:
             New NameIndex instance with the matching items
         """
-        mask = self.mask(false_name=false_name, true_name=true_name, form=form)
+        mask = self.mask(url=url, source_name=source_name, name=name, form=form, rig=rig)
         return NameIndex(rows=self.df.loc[mask].copy())
 
     def find_one(self, **kwargs):
@@ -158,7 +168,7 @@ class NameIndex:
         if results:
             return results.items[0]
 
-    def search_by_false_name(self, name, threshold=80):
+    def search_by_source_name(self, name, threshold=80):
         """Finds all items which match closely to all given query parameters.
 
         Args:
@@ -171,13 +181,13 @@ class NameIndex:
         matches = []
         for item in self.items:
             # Search with false name
-            ratio = fuzz.ratio(item.false_name, name)
-            token_set_ratio = fuzz.token_set_ratio(item.false_name.lower(), name.lower())
+            ratio = fuzz.ratio(item.source_name, name)
+            token_set_ratio = fuzz.token_set_ratio(item.source_name.lower(), name.lower())
             if ratio > threshold or token_set_ratio > threshold:
                 matches.append((item, ratio, token_set_ratio))
         return sorted(matches, key=lambda x: x[1], reverse=True)
 
-    def search_by_true_name(self, name, threshold=80):
+    def search_by_name(self, name, threshold=80):
         """Finds all items which match closely to all given query parameters.
 
         Args:
@@ -190,8 +200,8 @@ class NameIndex:
         matches = []
         for item in self.items:
             # Search with false name
-            ratio = fuzz.ratio(item.true_name, name)
-            token_set_ratio = fuzz.token_set_ratio(item.true_name.lower(), name.lower())
+            ratio = fuzz.ratio(item.name, name)
+            token_set_ratio = fuzz.token_set_ratio(item.name.lower(), name.lower())
             if ratio > threshold or token_set_ratio > threshold:
                 matches.append((item, ratio, token_set_ratio))
         return sorted(matches, key=lambda x: x[1], reverse=True)

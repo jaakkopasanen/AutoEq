@@ -33,13 +33,13 @@ class ManufacturerIndex:
         true_manufacturer, match = sorted(matches, key=lambda x: len(x[1]), reverse=True)[0]
         return true_manufacturer, match
 
-    def replace(self, name):
-        manufacturer, match = self.find(name)
+    def replace(self, old_name):
+        manufacturer, match = self.find(old_name)
         if match is None:
-            return name
+            return old_name
         # Replace manufacturer with the match
-        true_name = re.sub(f'^{re.escape(match)}', manufacturer, name, flags=re.IGNORECASE)
-        return true_name
+        new_name = re.sub(f'^{re.escape(match)}', manufacturer, old_name, flags=re.IGNORECASE)
+        return new_name
 
     def model(self, name):
         manufacturer, match = self.find(name)

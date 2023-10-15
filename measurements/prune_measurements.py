@@ -16,7 +16,7 @@ def main():
         for fp in glob(os.path.join(DIR_PATH, db, 'data', '*', '*')):
             d, name = os.path.split(fp)
             _, form = os.path.split(d)
-            if not name_index.find(true_name=name, form=form):
+            if not name_index.find(name=name, form=form):
                 print(f'Removing: "{fp}"')
                 shutil.rmtree(fp)
 
