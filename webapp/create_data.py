@@ -1,6 +1,9 @@
 import json
+import re
 from pathlib import Path
 from tqdm.auto import tqdm
+
+from autoeq.constants import MOD_REGEX
 from autoeq.frequency_response import FrequencyResponse
 
 DIR = Path(__file__).resolve().parent
@@ -44,7 +47,7 @@ def write_entries_and_measurements():
             print(hp_path)
             return
         name = parts[-1].replace('.csv', '')
-        if '(sample' in name or '(serial number' in name:
+        if re.search(MOD_REGEX, name, re.IGNORECASE):
             # Skip individual samples
             continue
         if name not in entries:
