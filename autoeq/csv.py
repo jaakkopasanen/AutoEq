@@ -78,6 +78,8 @@ def find_csv_columns(csv, column_separator):
 
 def parse_csv(csv):
     lines = csv.strip().split('\n')
+    lines = [line for line in lines if line.strip()]
+    csv = '\n'.join(lines)
     if autoeq_pattern.match(csv):  # Matches AutoEq produced CSV files
         columns = lines[0].split(',')
         return {column: [float(line.split(',')[i]) for line in lines[1:]] for i, column in enumerate(columns)}
@@ -107,8 +109,10 @@ def parse_csv(csv):
             if re.match(r'^(?:spl|gain|ampl|raw)', column, flags=re.IGNORECASE):
                 ixs['raw'] = i
         if ixs['frequency'] is None:
-            print(columns)
-            raise CsvParseError('Failed to find frequency column')
+            if len(columns) == 2:  # Can't find proper columns but there's only two, assuming freq + raw
+                ixs = {'frequency': 0, 'raw': 1}
+            else:
+                raise CsvParseError('Failed to find frequency column')
         if ixs['raw'] is None:
             raise CsvParseError('Failed to find SPL column')
 

@@ -138,6 +138,9 @@ class CrinacleCrawler(Crawler):
         items = []
         dirs_rigs_forms = [
             ('IEC60318-4 IEM Measurements (TSV txt)', 'in-ear', '711'),
+            ('4620 IEM Measurements', 'in-ear', 'Bruel & Kjaer 4620'),
+            ('EARS + 711 (TSV txt) (Legacy)', 'over-ear', 'EARS + 711'),
+            ('GRAS 43AG-7', 'over-ear', 'GRAS 43AG-7'),
         ]
         for dir_name, form, rig in dirs_rigs_forms:
             for fp in raw_data_dir.joinpath(dir_name).glob('*.txt'):

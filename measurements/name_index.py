@@ -116,7 +116,7 @@ class NameIndex:
     def add(self, item):
         """Adds an item to index."""
         self.df = pd.concat(
-            [self.df, pd.DataFrame([[item.source_name, item.name, item.form]], columns=self.df.columns)])
+            [self.df, pd.DataFrame([[item.url, item.source_name, item.name, item.form, item.rig]], columns=self.df.columns)])
         self.df = self.df.drop_duplicates()
 
     def remove_duplicates(self):
