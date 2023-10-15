@@ -4,14 +4,14 @@ import ipywidgets as widgets
 
 
 class NamePrompt:
-    def __init__(self, model, callback, manufacturer=None, name_proposals=None, search_callback=None, source_name=None,
-                 form=None, similar_names=None):
-        self.model = model
-        self.callback = callback
+    def __init__(
+            self, item, callback, manufacturer=None, search_callback=None, name_proposals=None, similar_names=None):
+        """IPyWidgets UI element for setting name for a crawled headphone"""
+        self.item = item
         self.manufacturer = manufacturer
+        self.callback = callback
         self.name_proposals = name_proposals
         self.search_callback = search_callback
-        self.source_name = source_name
 
         # Add button for each name proposal
         buttons = []
@@ -19,37 +19,27 @@ class NamePrompt:
             for item in name_proposals.items:
                 btn = widgets.Button(
                     description=f'{item.name}', button_style='primary', layout=widgets.Layout(width='400px'))
-                btn.on_click(self.on_click)
+                btn.on_click(self.on_name_proposal_click)
                 buttons.append(btn)
 
         # Create HTML title
-        title = '<h4 style="margin: 0">'
-        if self.source_name:
-            title += f'{self.source_name} → '
-        if manufacturer:
-            title += f'<span style="color: blue">{manufacturer}&nbsp;</span>'
-            text = f'{manufacturer} {model}'
-        else:
-            text = model
-        title += f'{model}</h4>'
+        title = f'<h4 style="margin: 0">{self.item.source_name}</h4>'
+        input_text = self.item.source_name
 
-        # Name input field
-        self.text_field = widgets.Text(value=text, layout=widgets.Layout(width='400px'))
-
-        # Search button
+        self.text_field = widgets.Text(value=input_text, layout=widgets.Layout(width='400px'))
         search_button = widgets.Button(description='🔎', layout=widgets.Layout(width='48px'))
         search_button.on_click(self.on_search)
 
         # Form buttons
         form_buttons = []
-        forms = ['over-ear', 'in-ear', 'earbud'] if form is None else [form]
+        forms = ['over-ear', 'in-ear', 'earbud'] if self.item.form is None else [self.item.form]
         forms.append('ignore')
         for form in forms:
             btn = widgets.Button(
                 description=form,
                 button_style='danger' if form == 'ignore' else 'success',
-                layout=widgets.Layout(width='64px'))
-            btn.on_click(self.on_submit)
+                layout=widgets.Layout(width='80px'))
+            btn.on_click(self.on_form_click)
             form_buttons.append(btn)
 
         # Similar names for establishing naming convention
@@ -72,25 +62,17 @@ class NamePrompt:
 
     @property
     def name(self):
-        if self.manufacturer:
-            return f'{self.manufacturer} {self.model}'
-        else:
-            if self.source_name:
-                return self.source_name
-            else:
-                return self.model
+        return self.item.source_name
 
     def on_search(self, btn):
-        if self.manufacturer:
-            self.search_callback(f'{self.manufacturer} {self.model}')
-        else:
-            self.search_callback(self.model)
+        self.search_callback(self.item.source_name)
 
-    def on_click(self, btn):
-        if btn.description.strip() != 'ignore':
-            btn.button_style = 'success'
-        item = self.name_proposals.find_one(name=btn.description)
-        self.callback(btn.description.strip(), item.form)
+    def on_name_proposal_click(self, btn):
+        btn.button_style = 'success'
+        self.callback(self.name_proposals.find_one(name=btn.description).copy())
 
-    def on_submit(self, btn):
-        self.callback(self.text_field.value.strip(), btn.description)
+    def on_form_click(self, btn):
+        item = self.item.copy()
+        item.name = self.text_field.value.strip()
+        item.form = btn.description
+        self.callback(item)

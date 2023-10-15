@@ -62,64 +62,133 @@ csv8 = """frequency,raw,error,smoothed,error_smoothed,equalization,parametric_eq
 20000.00,0.95,-7.91,0.95,-7.92,6.00,6.12,2.95,6.95,6.95,8.87
 """
 
+csv9 = """
+Frequency	dB	Unweighted
+20.0	69.6
+1000.0	69.7
+20000	51
+overall dB	93.3 dB
+decay	Average
+averaging	No Smoothing
+source	Headset Mic 1 Low Range
+
+
+saved	2/2/19, 4:17 PM
+peak	20.5Hz
+"""
+
+csv10 = """* Measurement data saved by REW V5.18
+* Source: Trace Arithmetic result A / B
+* Format: Trace Arithmetic result A / B
+* Dated: 17-Feb-2019 15:47:47
+* REW Settings:
+*  C-weighting compensation: Off
+*  Target level: 75.0 dB
+* Note: Trace Arithmetic A over B A = F111 Clone L.txt B = Phone to Desktop Only  
+* Measurement: A over B
+* Smoothing: None
+* Frequency Step: 0.24999999 Hz
+* Start Frequency: 19.5 Hz
+*
+* Freq(Hz) SPL(dB) Phase(degrees)
+19.500 ? 0
+19.750 ? 0
+20.000 68.334 0
+20.250 68.335 0
+19998.498 27.402 0
+19998.748 ? 0
+19998.998 ? 0
+19999.248 ? 0
+19999.498 ? 0
+"""
+
 
 class TestCsv(unittest.TestCase):
     def test_regex(self):
-        for s, pattern in [(csv1, autoeq_pattern), (csv2, None), (csv3, None), (csv4, None), (csv5, rew_pattern), (csv6, None), (csv7, None), (csv8, autoeq_pattern)]:
+        pattern_asserts = [
+            (csv1, autoeq_pattern), (csv2, None), (csv3, None), (csv4, None), (csv5, rew_pattern), (csv6, None),
+            (csv7, None), (csv8, autoeq_pattern), (csv9, None),
+        ]
+        for s, pattern in pattern_asserts:
             if pattern:
                 self.assertTrue(bool(pattern.match(s)))
 
     def test_find_csv_separators(self):
-        for s, true_col, true_dec in [(csv1, ',', '.'), (csv2, '\t', '.'), (csv3, ';', ','), (csv4, '\t', '.'), (csv5, ',', '.'), (csv6, '\t', '.'), (csv7, ',', '.'), (csv8, ',', '.')]:
+        separator_asserts = [
+            (csv1, ',', '.'), (csv2, '\t', '.'), (csv3, ';', ','), (csv4, '\t', '.'), (csv5, ',', '.'),
+            (csv6, '\t', '.'), (csv7, ',', '.'), (csv8, ',', '.'), (csv9, '\t', '.')
+        ]
+        for s, true_col, true_dec in separator_asserts:
             col, dec = find_csv_separators(s)
-            self.assertEqual(col, true_col)
-            self.assertEqual(dec, true_dec)
+            self.assertEqual(true_col, col)
+            self.assertEqual(true_dec, dec)
 
     def test_parse_csv1(self):
         d = parse_csv(csv1)
         self.assertIn('frequency', d)
-        self.assertEqual(d['frequency'], [20.0, 1000.0, 20000.0])
+        self.assertEqual([20.0, 1000.0, 20000.0], d['frequency'])
         self.assertIn('raw', d)
-        self.assertEqual(d['raw'], [0.0, 3.0, 0.0])
+        self.assertEqual([0.0, 3.0, 0.0], d['raw'])
 
     def test_parse_csv2(self):
         d = parse_csv(csv2)
         self.assertIn('frequency', d)
-        self.assertEqual(d['frequency'], [20.0, 1000.0, 20000.0])
+        self.assertEqual([20.0, 1000.0, 20000.0], d['frequency'])
         self.assertIn('raw', d)
-        self.assertEqual(d['raw'], [0.0, 3.0, 0.0])
+        self.assertEqual([0.0, 3.0, 0.0], d['raw'])
 
     def test_parse_csv3(self):
         d = parse_csv(csv3)
         self.assertIn('frequency', d)
-        self.assertEqual(d['frequency'], [20.0, 1000.0, 20000.0])
+        self.assertEqual([20.0, 1000.0, 20000.0], d['frequency'])
         self.assertIn('raw', d)
-        self.assertEqual(d['raw'], [0.0, 3.0, 0.0])
+        self.assertEqual([0.0, 3.0, 0.0], d['raw'])
 
     def test_parse_csv4(self):
         d = parse_csv(csv4)
         self.assertIn('frequency', d)
-        self.assertEqual(d['frequency'], [20.0, 1000.0, 20000.0])
+        self.assertEqual([20.0, 1000.0, 20000.0], d['frequency'])
         self.assertIn('raw', d)
-        self.assertEqual(d['raw'], [0.0, 3.0, 0.0])
+        self.assertEqual([0.0, 3.0, 0.0], d['raw'])
 
     def test_parse_csv5(self):
         d = parse_csv(csv5)
         self.assertIn('frequency', d)
-        self.assertEqual(d['frequency'], [20.0, 1000.0, 20000.0])
+        self.assertEqual([20.0, 1000.0, 20000.0], d['frequency'])
         self.assertIn('raw', d)
-        self.assertEqual(d['raw'], [0.0, 3.0, 0.0])
+        self.assertEqual([0.0, 3.0, 0.0], d['raw'])
 
     def test_parse_csv6(self):
         d = parse_csv(csv6)
         self.assertIn('frequency', d)
-        self.assertEqual(d['frequency'], [20.0, 1000.0, 20000.0])
+        self.assertEqual([20.0, 1000.0, 20000.0], d['frequency'])
         self.assertIn('raw', d)
-        self.assertEqual(d['raw'], [0.0, 3.0, 0.0])
+        self.assertEqual([0.0, 3.0, 0.0], d['raw'])
 
     def test_parse_csv7(self):
         d = parse_csv(csv7)
         self.assertIn('frequency', d)
-        self.assertEqual(d['frequency'], [20.0, 1000.0, 20000.0])
+        self.assertEqual([20.0, 1000.0, 20000.0], d['frequency'])
         self.assertIn('raw', d)
-        self.assertEqual(d['raw'], [0.0, 3.0, 0.0])
+        self.assertEqual([0.0, 3.0, 0.0], d['raw'])
+
+    def test_parse_csv8(self):
+        d = parse_csv(csv8)
+        self.assertIn('raw', d)
+        self.assertEqual([20.0, 1000.0, 20000.0], d['frequency'])
+        self.assertIn('raw', d)
+        self.assertEqual([0.81, 0.89, 0.95], d['raw'])
+
+    def test_parse_csv9(self):
+        d = parse_csv(csv9)
+        self.assertIn('frequency', d)
+        self.assertEqual([20.0, 1000.0, 20000.0], d['frequency'])
+        self.assertIn('raw', d)
+        self.assertEqual([69.6, 69.7, 51.0], d['raw'])
+
+    def test_parse_csv10(self):
+        d = parse_csv(csv10)
+        self.assertIn('frequency', d)
+        self.assertEqual([20.0, 20.25, 19998.498], d['frequency'], )
+        self.assertIn('raw', d)
+        self.assertEqual([68.334, 68.335, 27.402], d['raw'])

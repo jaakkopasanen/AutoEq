@@ -18,7 +18,7 @@ class NameItem:
         self.rig = rig
 
     def __str__(self):
-        return '\t'.join([self.url or '', self.source_name or '', self.name or '', self.form or '', self.rig or ''])
+        return '"' + '"\t"'.join([self.url or '', self.source_name or '', self.name or '', self.form or '', self.rig or '']) + '"'
 
     def copy(self):
         return NameItem(self.source_name, self.name, self.form, url=self.url, rig=self.rig)
@@ -61,7 +61,7 @@ class NameIndex:
 
     @classmethod
     def read_files(cls, glob_pattern):
-        rows = []
+        items = []
         for file in glob(glob_pattern, recursive=True):
             form = None
             path_components = cls.split_path(os.path.abspath(file))
@@ -70,8 +70,8 @@ class NameIndex:
                 if component in ['over-ear', 'in-ear', 'earbud']:
                     form = component
             name = re.sub(r'\.[tc]sv$', '', name)
-            rows.append([name, name, form])
-        return cls(rows=rows)
+            items.append(NameItem(None, name, form, url=None, rig=None))
+        return cls(items=items)
 
     @classmethod
     def read_tsv(cls, file_path):

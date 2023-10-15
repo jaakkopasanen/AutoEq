@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import os
-from pathlib import Path
+from pathlib import Path, WindowsPath
 import sys
-from glob import glob
 import re
 import numpy as np
 import requests
 from autoeq.frequency_response import FrequencyResponse
-from measurements.PromptListItem import PromptListItem
+from measurements.prompt_list_item import PromptListItem
 
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_prompt import NamePrompt
@@ -112,147 +111,94 @@ class CrinacleCrawler(Crawler):
         # FIXME: Tanchjim Zero exists in 711 measurements, seeing that in 4620 raw_data will be ignored when crawling
         return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '**', '*.csv'))
 
-    def get_urls_new(self):
-        raw_data_dir = DIR_PATH.joinpath('raw_data')
-        items = []
-        for fp in raw_data_dir.joinpath('IEC60318-4 IEM Measurements (TSV txt)').glob('*.txt'):
-            file_name = re.sub(r' [LR](?:\d+)?.txt', '', fp.name)
-            url = fp.relative_to(ROOT_PATH)
+    @staticmethod
+    def normalize_file_name(file_name):
+        file_name = re.sub(r' #\d+ [LR]\.txt', '', file_name)
+        file_name = re.sub(r' [LR](?:\d+)?\.txt$', '', file_name)
+        file_name = re.sub(r'\.txt$', '', file_name)
+        return file_name
+
+    def get_item_from_file_path(self, file_path):
+        file_name = self.normalize_file_name(file_path.name)
+        url = file_path.relative_to(ROOT_PATH)
+        url = 'file://' + str(url).replace('\\', '/') if type(url) == WindowsPath else str(url)
+        index_item = self.name_index.find_one(source_name=file_name)
+        if index_item is not None:  # Existing item in the name index, ground truth
+            item = NameItem(index_item.source_name, index_item.name, index_item.form, url=url, rig=None)
+        else:
             book_item = self.book_name_index.find_one(source_name=file_name)
-            source_name = book_item.name if book_item is not None else None
-            index_item = self.name_index.find_one(url=url)
-            if index_item is None and source_name is not None:
-                index_item = self.name_index.find_one(source_name=source_name)
-            if index_item is None:
-                index_item = self.name_index.find_one(source_name=file_name)
-            name = index_item.name if index_item is not None else None
-            item = NameItem(source_name, name, 'in-ear', url=url, rig='711')
-            items.append(item)
-        return NameIndex(items=items)
+            if book_item is not None:  # File name to Crinacle's name mapping exists
+                item = NameItem(book_item.name, None, book_item.form, url=url, rig=None)
+            else:  # Nothing is known about this item
+                item = NameItem(None, None, None, url=url, rig=None)
+        return item
 
     def get_urls(self):
-        # Link source is not a web page but raw_data folder
-        # { hp_name: { rig: [ file_path1, ... ] }
-        file_paths = dict()
+        raw_data_dir = DIR_PATH.joinpath('raw_data')
+        items = []
+        dirs_rigs_forms = [
+            ('IEC60318-4 IEM Measurements (TSV txt)', 'in-ear', '711'),
+        ]
+        for dir_name, form, rig in dirs_rigs_forms:
+            for fp in raw_data_dir.joinpath(dir_name).glob('*.txt'):
+                item = self.get_item_from_file_path(fp)
+                if item.form is None:
+                    item.form = form
+                item.rig = rig
+                items.append(item)
+        return NameIndex(items=items)
 
-        def add_to(_fp, _rig):
-            name = os.path.split(fp)[1]
-            name = re.sub(r' [LR]\d*\.txt', '', name).replace('.txt', '')
-            name = re.sub(r' #\d$', '', name)
-            if name not in file_paths:
-                file_paths[name] = dict()
-            if _rig not in file_paths[name]:
-                file_paths[name][_rig] = []
-            file_paths[name][_rig].append(fp)
+    def process_one(self, items):
+        """Reads measurement files for a single unit and saves an average frequency response
 
-        raw_data_dir = os.path.join(DIR_PATH, 'raw_data')
+        Args:
+            items: List of items for all of the measurements of the same unit
 
-        # 711 in-ear measurements
-        iem_711_source_paths = list(glob(os.path.join(raw_data_dir, 'IEC60318-4 IEM Measurements (TSV txt)', '*.txt')))
-        for fp in iem_711_source_paths:
-            add_to(fp, '711')
-        # Ears + 711 over-ear measurements
-        legacy_source_paths = list(glob(os.path.join(raw_data_dir, 'EARS + 711 (TSV txt) (Legacy)', '*.txt')))
-        for fp in legacy_source_paths:
-            add_to(fp, 'legacy')
-        # Gras over-ear measurements
-        gras_source_paths = list(glob(os.path.join(raw_data_dir, 'GRAS 43AG-7', '*.txt')))
-        for fp in gras_source_paths:
-            add_to(fp, 'gras')
-        # B&K 4620 in-ear measurements
-        iem_4620_source_paths = list(glob(os.path.join(raw_data_dir, '4620 IEM Measurements', '*.txt')))
-        for fp in iem_4620_source_paths:
-            add_to(fp, '4620')
-
-        for name, rigs_and_file_paths in file_paths.items():
-            if (
-                    '711' in rigs_and_file_paths and
-                    ('legacy' in rigs_and_file_paths or 'gras' in rigs_and_file_paths)
-            ):
-                # Remove IEM rig measurements if Ears-711 or GRAS measurements exist
-                # This means the headphone is over-ear model and the files found in IEM folder are duplicates
-                del rigs_and_file_paths['711']
-
-        return file_paths
-
-    def process_one(self, item, file_paths, target_dir=None):
-        if item.form == 'ignore':
+        Returns:
+            None
+        """
+        if items[0].form == 'ignore':
             return
 
-        if target_dir is None:
-            raise TypeError('"target_dir" must be given')
-
-        avg_fr = FrequencyResponse(name=item.name)
+        avg_fr = FrequencyResponse(name=items[0].name)
         avg_fr.raw = np.zeros(avg_fr.frequency.shape)
-        for fp in file_paths:
-            with open(fp, 'r', encoding='utf-8') as fh:
-                s = fh.read()
-
-            freq = []
-            raw = []
-            for line in s.split('\n'):
-                if len(line) == 0 or line[0] == '*':
-                    # Skip empty lines and comments
-                    if 'C-weighting compensation: On' in line:
-                        print(f'C-weighted measurement: {item.source_name}')
-                    continue
-
-                frp = line.split(', ')
-                if len(frp) == 1:
-                    frp = line.split('\t')
-                if len(frp) == 1:
-                    frp = line.split(' ')
-                if len(frp) == 2:
-                    f, r = frp
-                elif len(frp) == 3:
-                    f, r, p = frp
-                else:
-                    # Must be comment line
-                    continue
-
-                if f == '?' or r == '?':
-                    # Skip lines with missing data
-                    continue
-
-                try:
-                    freq.append(float(f))
-                    raw.append(float(r))
-                except ValueError as err:
-                    # Failed to convert values to floats, must be header or comment row, skip
-                    continue
-
-            # Create standard fr object
-            fr = FrequencyResponse(name=item.name, frequency=freq, raw=raw)
+        for item in items:
+            fr = FrequencyResponse.read_from_csv(ROOT_PATH.joinpath(item.url.replace('file://', '')))
             fr.interpolate()
             fr.center()
             avg_fr.raw += fr.raw
+        avg_fr.raw /= len(items)
 
-        avg_fr.raw /= len(file_paths)
-
-        # Save
-        os.makedirs(target_dir, exist_ok=True)
-        file_path = os.path.join(target_dir, f'{avg_fr.name}.csv')
+        file_path = self.item_target_path(items[0])
+        Path(file_path.parent).mkdir(exist_ok=True, parents=True)
         avg_fr.write_to_csv(file_path)
         print(f'Saved "{avg_fr.name}" to "{file_path}"')
 
-    def prompt_callback(self, source_name, file_paths, target_dir):
-        def callback(name, form):
-            if form == 'ignore':
+    def create_prompt_callback(self, items):
+        def callback(item):
+            if item.form == 'ignore':
+                item.name = None
+                self.update_name_index(item)
                 self.active_list_item.resolution = 'ignore'
-                self.next_prompt(True)
-                self.update_name_index(NameItem(source_name, None, form))
+                self.next_prompt()
                 return
-            manufacturer, match = self.manufacturers.find(name, ignore_case=True)
+            manufacturer, manufacturer_match = self.manufacturers.find(item.name, ignore_case=True)
             if manufacturer is None:
-                raise UnknownManufacturerError(f'Manufacturer is not known for "{name}"')
-            self.active_list_item.resolution = 'success'
-            self.next_prompt(False)
-            item = NameItem(source_name, name, form)
-            self.process_one(item, file_paths, target_dir=target_dir)
+                raise UnknownManufacturerError(f'Manufacturer is not known for "{item.name}"')
+            item.name = self.manufacturers.replace(item.name)
+            self.process_one(items)
             self.update_name_index(item)
+            self.active_list_item.resolution = 'success'
+            self.next_prompt()
         return callback
 
-    def process(self, prompt=True):
+    @staticmethod
+    def item_target_path(item):
+        if item.form is None or item.rig is None or item.name is None:
+            return None
+        return DIR_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
+
+    def process(self, new_only=True):
         """Processes all new measurements
 
         Updates name index with the new entries now found in the name index previously.
@@ -260,70 +206,55 @@ class CrinacleCrawler(Crawler):
         Returns:
             None
         """
-        unknown_manufacturers = []
-        for source_name, rigs_and_file_paths in self.urls.items():
-            for rig, file_paths in rigs_and_file_paths.items():
-                try:
-                    file_paths = [os.path.abspath(p) for p in file_paths]
-                    if rig == 'gras':
-                        target_dir = os.path.join(DIR_PATH, 'data', 'over-ear', 'GRAS 43AG-7')
-                        form = 'over-ear'
-                    elif rig == 'legacy':
-                        target_dir = os.path.join(DIR_PATH, 'data', 'over-ear', 'EARS + 711')
-                        form = 'over-ear'
-                    elif rig == '4620':
-                        target_dir = os.path.join(DIR_PATH, 'data', 'in-ear', 'Bruel & Kjaer 4620')
-                        form = 'in-ear'
-                    elif rig == '711':
-                        target_dir = os.path.join(DIR_PATH, 'data', 'in-ear', '711')
-                        form = 'in-ear'
-                    else:
-                        raise UnknownRigError()
+        groups = {}
+        for item in self.urls.items:
+            key = item.source_name if item.source_name else self.normalize_file_name(item.url.split('/')[-1])
+            if key not in groups:
+                groups[key] = []
+            groups[key].append(item)
 
-                    item = self.name_index.find_one(source_name=source_name)
-                    if item and item.form == 'ignore':
-                        continue
-                    if not item or not item.name or not item.form:
-                        if not prompt:
-                            print(f'{source_name} is unknown and prompting is prohibited, skipping the item.')
-                            continue
-                        # Name doesn't exist in the name index
-                        intermediate_name = self.intermediate_name(source_name)
-                        manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
-                        if manufacturer:
-                            model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE)
-                            model = model.strip()
-                            name_proposals = self.get_name_proposals(intermediate_name)
-                            similar_names = self.get_name_proposals(
-                                intermediate_name, n=4, normalize_digits=True, normalize_extras=True, threshold=0)
-                            similar_names = [item.name for item in similar_names.items]
-                        else:
-                            unknown_manufacturers.append(intermediate_name)
-                            model = intermediate_name
-                            name_proposals = None
-                            similar_names = None
-                        # Not sure about the name, ask user
-                        self.prompts.append(
-                            PromptListItem(
-                                NamePrompt(
-                                    model,
-                                    self.prompt_callback(source_name, file_paths, target_dir),
-                                    manufacturer=manufacturer,
-                                    name_proposals=name_proposals,
-                                    search_callback=self.search,
-                                    source_name=source_name,
-                                    form=form,
-                                    similar_names=similar_names
-                                ),
-                                self.switch_prompt
-                            ))
-                    else:
-                        existing = self.existing.find_one(name=item.name)
-                        if not existing:
-                            self.process_one(item, file_paths, target_dir=target_dir)
-                except Exception as err:
-                    print(f'Processing failed for "{source_name}"')
-                    raise err
+        unknown_manufacturers = []
+        for source_name, items in groups.items():
+            try:
+                if items[0].form == 'ignore':
+                    continue
+                name_prompt_item = items[0].copy()
+                name_prompt_item.source_name = source_name
+                if name_prompt_item.form == 'ignore':
+                    continue
+                target_path = self.item_target_path(name_prompt_item)
+                if target_path and target_path.exists() and new_only:  # Target file exists, nothing to do
+                    continue
+                elif name_prompt_item.name is not None:  # True name is known already but file doesn't exist
+                    self.process_one(items)
+                    continue
+
+                # Use known source name or last part of URL as source name
+                guessed_name = self.intermediate_name(source_name)
+                manufacturer, manufacturer_match = self.manufacturers.find(guessed_name)
+                if manufacturer:
+                    guessed_name = self.manufacturers.replace(guessed_name)
+                else:
+                    if source_name == 'ADX5000 #1':
+                        raise UnknownManufacturerError(str(items[0]))
+                    unknown_manufacturers.append(guessed_name)
+
+                name_prompt = NamePrompt(
+                    name_prompt_item,
+                    self.create_prompt_callback(items),
+                    manufacturer=manufacturer,
+                    search_callback=self.search,
+                    name_proposals=self.get_name_proposals(guessed_name, n=4) if manufacturer else None,
+                    similar_names=[
+                        item.name for item in self.get_name_proposals(
+                            guessed_name, n=4, normalize_digits=True, normalize_extras=True, threshold=0
+                        ).items
+                    ])
+                self.prompts.append(PromptListItem(name_prompt, self.switch_prompt))
+
+            except Exception as err:
+                print(f'Processing failed for "{items[0].url}"')
+                raise err
         if len(unknown_manufacturers) > 0:
             warning = 'Headphones with unknown manufacturers:\n  * '
             warning += '\n  * '.join(unknown_manufacturers)
@@ -333,16 +264,13 @@ class CrinacleCrawler(Crawler):
 
     def intermediate_name(self, source_name):
         """Gets intermediate name with false name."""
-        ni = self.book_name_index.find_one(source_name=source_name)
-        if ni:
-            name = ni.name
-            name = name.replace('(w/ ', '(')
-            name = name.replace(' pads)', ' earpads)')
-            if re.search(r'S\d$', name):
-                match = re.search(r'S\d$', name)[0]
-                name = name.replace(match, match.replace('S', 'sample '))
-            return name
-        return source_name
+        name = source_name.replace('(w/ ', '(')
+        name = re.sub(r' pads\)', ' earpads)', name, flags=re.IGNORECASE)
+        match = re.search(r' S\d+[$ ]', name)
+        if match:
+            name = re.sub(r' S(\d+)[$ ]', r' (sample \1) ', name)
+            name = re.sub(r'\s{2,}', ' ', name)
+        return name
 
 
 def main():

@@ -11,7 +11,10 @@ autoeq_columns = {
 header_pattern = r'frequency(?:,(?:raw|smoothed|error|error_smoothed|equalization|parametric_eq|fixed_band_eq|equalized_raw|equalized_smoothed|target))+'
 float_pattern = r'-?\d+(?:\.\d+)?'
 autoeq_pattern = re.compile(rf'{header_pattern}(?:\n{float_pattern}(?:,{float_pattern})+)+')
-rew_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\), SPL\(dB\), Phase\(degrees\)\n(?:\d+\.\d+, -?\d+\.\d+, -?\d+\.\d+\n?)+\n*')
+rew_float_pattern = rf'(?:{float_pattern}|\?)'
+rew_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\), SPL\(dB\), Phase\(degrees\)\n(?:{rew_float_pattern}, {rew_float_pattern}, {rew_float_pattern})+\n*')
+rew_space_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\) SPL\(dB\) Phase\(degrees\)(?:\n{rew_float_pattern} {rew_float_pattern} {rew_float_pattern})+')
+crinacle_pattern = re.compile(rf'[\s\n]?Frequency\tdB\tUnweighted(?:\n{float_pattern}\t{float_pattern})+[.\n]?')
 
 
 class CsvParseError(Exception):
@@ -79,14 +82,15 @@ def parse_csv(csv):
         columns = lines[0].split(',')
         return {column: [float(line.split(',')[i]) for line in lines[1:]] for i, column in enumerate(columns)}
 
-    if rew_pattern.match(csv):  # Matches Room Eq Wizard produced CSV files
-        frequency = []
-        raw = []
-        for line in lines:
-            if numeric_start.match(line):
-                frequency.append(float(line.split(', ')[0].strip()))
-                raw.append(float(line.split(', ')[1].strip()))
-        return {'frequency': frequency, 'raw': raw}
+    if rew_pattern.match(csv) or crinacle_pattern.match(csv):
+        # These two have all sort of junk in them but the first column is frequency and the second SPL, so all good
+        csv = '\n'.join([line for line in lines if numeric_start.match(line)])
+        lines = csv.split('\n')
+
+    if rew_space_pattern.match(csv):
+        csv = '\n'.join([line for line in lines if numeric_start.match(line) and '?' not in line])
+        csv = csv.replace(' ', '\t')
+        lines = csv.split('\n')
 
     column_separator, decimal_separator = find_csv_separators(csv)
     columns = find_csv_columns(csv, column_separator)
@@ -103,6 +107,7 @@ def parse_csv(csv):
             if re.match(r'^(?:spl|gain|ampl|raw)', column, flags=re.IGNORECASE):
                 ixs['raw'] = i
         if ixs['frequency'] is None:
+            print(columns)
             raise CsvParseError('Failed to find frequency column')
         if ixs['raw'] is None:
             raise CsvParseError('Failed to find SPL column')

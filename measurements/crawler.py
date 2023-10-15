@@ -3,7 +3,7 @@
 import os
 import sys
 from pathlib import Path
-from measurements.PromptListItem import PromptListItem
+from measurements.prompt_list_item import PromptListItem
 if str(Path(__file__).resolve().parent) not in sys.path:
     sys.path.insert(1, str(Path(__file__).resolve().parent))
 import pandas as pd
@@ -36,7 +36,6 @@ class Crawler(ABC):
         self.manufacturers = ManufacturerIndex()
         self.name_proposals = None
         self.init_name_proposals()
-        self.existing = self.get_existing()
         self.urls = self.get_urls()
 
         # UI
@@ -97,22 +96,12 @@ class Crawler(ABC):
         """
         pass
 
-    @staticmethod
-    @abstractmethod
-    def get_existing():
-        """Reads existing files as Index
-
-        Returns:
-            Index
-        """
-        pass
-
     @abstractmethod
     def get_urls(self):
         """Crawls measurement URLs
 
         Returns:
-            Dict where headphone names are keys and URLs are values
+            NameIndex with the crawled items
         """
         pass
 
@@ -132,17 +121,16 @@ class Crawler(ABC):
             self.active_list_item.active_style()
         self.reload_ui()
 
-    def next_prompt(self, is_ignored):
+    def next_prompt(self):
         ix = self.prompts.index(self.active_list_item)
         self.switch_prompt(self.prompts[ix + 1] if ix + 1 < len(self.prompts) else None)
 
     @abstractmethod
-    def process_one(self, item, url):
+    def process_one(self, item):
         """Downloads a single URL and processes it
 
         Args:
             item: Item
-            url: URL to measurement
 
         Returns:
             None
@@ -156,35 +144,36 @@ class Crawler(ABC):
             self.name_index.update(item, source_name=item.source_name)
             self.write_name_index()
 
-    def prompt_callback(self, source_name, url):
-        def callback(name, form):
-            if form == 'ignore':
+    def create_prompt_callback(self, outer_item):
+        def callback(item):
+            if item.form == 'ignore':
+                item.name = None
+                self.update_name_index(item)
                 self.active_list_item.resolution = 'ignore'
-                self.next_prompt(True)
-                self.update_name_index(NameItem(source_name, None, form))
+                self.next_prompt()
                 return
-            manufacturer, match = self.manufacturers.find(name, ignore_case=True)
+            manufacturer, manufacturer_match = self.manufacturers.find(item.name, ignore_case=True)
             if manufacturer is None:
-                raise UnknownManufacturerError(f'Manufacturer is not known for "{name}"')
-            self.active_list_item.resolution = 'success'
-            self.next_prompt(False)
-            item = NameItem(source_name, name, form)
-            self.process_one(NameItem(source_name, name, form), url)
+                raise UnknownManufacturerError(f'Manufacturer is not known for "{item.name}"')
+            item.name = self.manufacturers.replace(item.name)
+            self.process_one(item)
             self.update_name_index(item)
+            self.active_list_item.resolution = 'success'
+            self.next_prompt()
         return callback
 
-    def process(self, prompt=True, new_only=True):
+    def process(self, new_only=True):
         """Processes all new measurements
 
         Updates name index with the new entries now found in the name index previously.
 
         Args:
-            prompt: Should the user be prompted for a name?
             new_only: Process only new items?
 
         Returns:
             None
         """
+        prompt = True
         unknown_manufacturers = []
         for source_name, url in self.urls.items():
             item = self.name_index.find_one(source_name=source_name)
@@ -212,7 +201,7 @@ class Crawler(ABC):
                     PromptListItem(
                         NamePrompt(
                             model,
-                            self.prompt_callback(source_name, url),
+                            self.create_prompt_callback(source_name, url),
                             manufacturer=manufacturer,
                             name_proposals=name_proposals,
                             search_callback=self.search,
