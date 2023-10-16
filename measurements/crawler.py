@@ -30,29 +30,36 @@ class UnknownManufacturerError(Exception):
 
 
 class Crawler(ABC):
+    """Crawler base class for crawling a frequency response measurement database index, resolving names, downloading
+    data and processing the data to save in a standard AutoEq format in a correct target location in measurements
+    directory.
+
+    1. The database index is crawled and URLs for the data files are created
+    2. Source names, AutoEq names, heapdhone forms and measurement rigs are attempted to be resolved
+    3. Measurements for individual unit are grouped together to be processed together
+    4. A set of user prompts are created for IPyWidgets based UI
+    5. User goes through the prompts, crawl index items and name index are updated
+    6. All groups are processed (file download, PDF parsing, image digitization, JSON / CSV parsing, ...)
+
+    """
     def __init__(self, driver=None):
         self._start_time = time()
         self._timings = {}
-
-        self.driver = driver
-        self.register_start_time('read_name_index()')
-        self.name_index = self.read_name_index()
-        self.register_end_time('read_name_index()')
-        self.register_start_time('ManufacturerIndex()')
+        # Name resolutions
+        self.name_index = None
         self.manufacturers = ManufacturerIndex()
-        self.register_end_time('ManufacturerIndex()')
         self.name_proposals = None
-        self.register_start_time('init_name_proposals()')
-        self.init_name_proposals()
-        self.register_end_time('init_name_proposals()')
-
+        self.groups = None
+        # Crawler
+        self.driver = driver
+        self.crawl_index = None
         # UI
         self.prompts = []
         self.prompt_list = None
         self.active_list_item = None
         self.widget = widgets.HBox([])
 
-
+    # Name resolution methods
 
     @staticmethod
     @abstractmethod
@@ -64,6 +71,23 @@ class Crawler(ABC):
         """
         pass
 
+    @abstractmethod
+    def write_name_index(self):
+        """Writes name index to a file
+
+        Returns:
+            Index
+        """
+        pass
+
+    def update_name_index(self, item, write=True):
+        """Updates name index"""
+        exact_match = self.name_index.find_one(url=item.url)
+        if not exact_match:
+            self.name_index.update(item)
+            if write:
+                self.write_name_index()
+
     def init_name_proposals(self):
         """Gets name proposals for new measurements
 
@@ -74,6 +98,7 @@ class Crawler(ABC):
         for db in ['crinacle', 'oratory1990', 'rtings']:
             name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db, 'name_index.tsv'))
             name_proposals.concat(name_index)
+        # TODO: Name index for Innerfidelity
         for db in ['innerfidelity', 'headphonecom']:
             name_index = NameIndex.read_files(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'))
             name_proposals.concat(name_index)
@@ -96,147 +121,6 @@ class Crawler(ABC):
             proposal_data['manufacturer'].append(manufacturer)
             proposal_data['model'].append(item.name.replace(manufacturer, '').strip())
         self.name_proposals = pd.DataFrame(proposal_data)
-
-    @abstractmethod
-    def write_name_index(self):
-        """Writes name index to a file
-
-        Returns:
-            Index
-        """
-        pass
-
-    @abstractmethod
-    def get_urls(self):
-        """Crawls measurement URLs
-
-        Returns:
-            NameIndex with the crawled items
-        """
-        pass
-
-    def reload_ui(self):
-        if self.prompt_list is None:
-            self.prompt_list = widgets.VBox([prompt.widget for prompt in self.prompts])
-        children = [self.prompt_list]
-        if self.active_list_item:
-            children.append(self.active_list_item.name_prompt.widget)
-        self.widget.children = children
-
-    def switch_prompt(self, prompt_list_item):
-        for i, item in enumerate(self.prompts):
-            item.inactive_style()
-        self.active_list_item = prompt_list_item
-        if self.active_list_item:
-            self.active_list_item.active_style()
-        self.reload_ui()
-
-    def next_prompt(self):
-        ix = self.prompts.index(self.active_list_item)
-        self.switch_prompt(self.prompts[ix + 1] if ix + 1 < len(self.prompts) else None)
-
-    @abstractmethod
-    def process_one(self, item):
-        """Downloads a single URL and processes it
-
-        Args:
-            item: Item
-
-        Returns:
-            None
-        """
-        pass
-
-    def update_name_index(self, item, write=True):
-        """Updates name index"""
-        exact_match = self.name_index.find_one(url=item.url)
-        if not exact_match:
-            self.name_index.update(item)
-            if write:
-                self.write_name_index()
-
-    def create_prompt_callback(self, outer_item):
-        def callback(item):
-            if item.form == 'ignore':
-                item.name = None
-                self.update_name_index(item)
-                self.active_list_item.resolution = 'ignore'
-                self.next_prompt()
-                return
-            manufacturer, manufacturer_match = self.manufacturers.find(item.name, ignore_case=True)
-            if manufacturer is None:
-                raise UnknownManufacturerError(f'Manufacturer is not known for "{item.name}"')
-            item.name = self.manufacturers.replace(item.name)
-            self.process_one(item)
-            self.update_name_index(item)
-            self.active_list_item.resolution = 'success'
-            self.next_prompt()
-        return callback
-
-    def process(self, new_only=True):
-        """Processes all new measurements
-
-        Updates name index with the new entries now found in the name index previously.
-
-        Args:
-            new_only: Process only new items?
-
-        Returns:
-            None
-        """
-        prompt = True
-        unknown_manufacturers = []
-        for source_name, url in self.urls.items():
-            item = self.name_index.find_one(source_name=source_name)
-            if item and item.form == 'ignore':
-                continue
-            if not item:
-                if not prompt:
-                    print(f'{source_name} is unknown and prompting is prohibited, skipping the item.')
-                    continue
-                # Name doesn't exist in the name index
-                intermediate_name = self.intermediate_name(source_name)
-                manufacturer, manufacturer_match = self.manufacturers.find(intermediate_name)
-                if manufacturer:
-                    model = re.sub(re.escape(manufacturer_match), '', intermediate_name, flags=re.IGNORECASE).strip()
-                    name_proposals = self.get_name_proposals(source_name)
-                    similar_names = self.get_name_proposals(source_name, n=4, normalize_digits=True, threshold=0)
-                    similar_names = [item.name for item in similar_names.items]
-                else:
-                    unknown_manufacturers.append(intermediate_name)
-                    model = intermediate_name
-                    name_proposals = None
-                    similar_names = None
-                # Not sure about the name, ask user
-                self.prompts.append(
-                    PromptListItem(
-                        NamePrompt(
-                            model,
-                            self.create_prompt_callback(source_name, url),
-                            manufacturer=manufacturer,
-                            name_proposals=name_proposals,
-                            search_callback=self.search,
-                            source_name=source_name,
-                            similar_names=similar_names
-                        ),
-                        self.switch_prompt)
-                )
-            else:
-                existing = self.existing.find_one(name=item.name)
-                if not new_only or not existing:
-                    # Name found in name index but the measurement doesn't exist
-                    self.process_one(item, url)
-        if len(unknown_manufacturers) > 0:
-            warning = 'Headphones with unknown manufacturers:\n  * '
-            warning += '\n  * '.join(unknown_manufacturers)
-            warning += '\nAdd them to manufacturers.tsv and run this cell again'
-            print(warning)
-        self.reload_ui()
-
-    def search(self, name):
-        quoted = urllib.parse.quote_plus(name)
-        url = f'https://google.com/search?q={quoted}&tbm=isch'
-        webbrowser.open(url)
 
     def get_name_proposals(self, source_name, n=4, normalize_digits=False, normalize_extras=False, threshold=60):
         """Prompts manufacturer, model and form from the user
@@ -284,9 +168,97 @@ class Crawler(ABC):
         ni.df = ni.df.head(n)
         return ni
 
-    def intermediate_name(self, source_name):
-        """Gets intermediate name with false name."""
-        return source_name
+    def guess_name(self, item):
+        """Tries to guess what the name might be."""
+        return item.name or item.source_name or re.sub(r'\.(?:txt|csv)$', '', item.url.split('/')[-1], flags=re.IGNORECASE)
+
+    def resolve_name(self, item):
+        """Resolve name for a single item
+
+        Args:
+            item: The crawl index NameItem to resolve
+
+        Returns:
+            True if resolution was successful, False if user needs to be prompted
+        """
+        ground_truth = self.name_index.find_one(url=item.url)
+        if ground_truth and ground_truth.rig is not None:
+            item.name = ground_truth.name
+            item.rig = ground_truth.rig
+            if ground_truth.source_name is not None:  # Source name doesn't exist for all items
+                item.source_name = ground_truth.source_name
+            return True
+        return False
+
+    def resolve_names(self):
+        if self.name_index is None:
+            self.name_index = self.read_name_index()
+        if self.crawl_index is None:
+            self.crawl()  # Produced URLs and source names
+
+        self.prompts = []
+        for item in self.crawl_index.items:
+            if not self.resolve_name(item):
+                self.prompts.append(item)
+
+    def create_prompt_callback(self, original_items):
+        def callback(prompted_item):
+            self.active_list_item.resolution = 'ignore' if prompted_item.form == 'ignore' else 'success'
+            self.next_prompt()
+            # Replace manufacturer name with the true manufacturer name
+            if not prompted_item.form == 'ignore':
+                manufacturer, manufacturer_match = self.manufacturers.find(prompted_item.name, ignore_case=True)
+                if manufacturer is None:
+                    raise UnknownManufacturerError(f'Manufacturer is not known for "{prompted_item.name}"')
+                prompted_item.name = self.manufacturers.replace(prompted_item.name)
+            # Update crawl index items and name index
+            for original_item in original_items:
+                original_item.name = prompted_item.name if prompted_item.form != 'ignore' else None
+                original_item.form = prompted_item.form
+                self.update_name_index(original_item, write=False)
+            self.write_name_index()
+        return callback
+
+    def resolution_callback(self, item):
+        """Creates a function to do extra name, form or rig resolutions during prompting."""
+        return NameItem(None, None, None, url=None, rig=None)
+
+    @abstractmethod
+    def group_key(self, item):
+        """Creates grouping key for an item to group items of the same unit together."""
+        pass
+
+    def group_prompts(self):
+        """Groups measurements in the crawl index belonging to the same unit together and creates prompts."""
+        if self.crawl_index is None:
+            self.crawl()
+        self.groups = {}
+        for item in self.crawl_index.items:
+            key = self.group_key(item)
+            if key not in self.groups:
+                self.groups[key] = []
+            self.groups[key].append(item)
+        for key, group_items in self.groups.items():
+            item = group_items[0]
+            if item.form is not None and item.rig is not None and item.name is not None:
+                # All important attributes are known, can skip prompt for this group (unit)
+                continue
+            guessed_name = self.guess_name(item)
+            name_prompt = NamePrompt(
+                item,
+                self.create_prompt_callback(group_items),
+                search_callback=self.google_image_search,
+                resolution_callback=self.resolution_callback,
+                guessed_name=guessed_name,
+                name_proposals=self.get_name_proposals(guessed_name, n=4),
+                similar_names=[
+                    item.name for item in self.get_name_proposals(
+                        guessed_name, n=4, normalize_digits=True, normalize_extras=True, threshold=0
+                    ).items])
+            self.prompts.append(PromptListItem(name_prompt, self.switch_prompt))
+        self.prompts = sorted(self.prompts, key=lambda pli: pli.name_prompt.name)
+
+    # Crawler methods
 
     @staticmethod
     def download(url, name, output_dir, file_type=None):
@@ -323,20 +295,79 @@ class Crawler(ABC):
         html = self.driver.find_element(By.TAG_NAME, 'html').get_attribute('outerHTML')
         return BeautifulSoup(html, 'html.parser')
 
-    def register_start_time(self, task):
-        self._timings[task] = {'start': time() - self._start_time}
+    @abstractmethod
+    def crawl(self):
+        """Crawls measurement URLs
 
-    def register_end_time(self, task):
-        self._timings[task]['end'] = time() - self._start_time
+        Returns:
+            NameIndex with the crawled items
+        """
+        pass
 
-    def get_timings(self):
-        return [
-            {'task': key, **self._timings[key], 'duration': self._timings[key]['end'] - self._timings[key]['start']}
-            for key in sorted(self._timings.keys(), key=lambda key: self._timings[key]['start'])
-        ]
+    # Processing methods
 
-    def print_timings(self):
-        timings = self.get_timings()
-        print('task' + ' ' * 20 + 'start\tend\tduration')
-        for timing in timings:
-            print(timing["task"] + ' ' * (24 - len(timing['task'])) + f'{timing["start"]:.2f}\t{timing["end"]:.2f}\t{timing["duration"]:.2f}')
+    @abstractmethod
+    def process_group(self, group):
+        """Processes measurements for a single unit
+
+        Args:
+            group: List of NameItems belonging to the same unit to be processed together
+
+        Returns:
+            None
+        """
+        pass
+
+    def process_groups(self, new_only=True):
+        """Processes all new measurements
+
+        Updates name index with the new entries now found in the name index previously.
+
+        Args:
+            new_only: Process only new items?
+
+        Returns:
+            None
+        """
+
+    # UI methods
+
+    def reload_ui(self):
+        """Refreshes IPyWidgets UI"""
+        if self.prompt_list is None:
+            self.prompt_list = widgets.VBox([prompt.widget for prompt in self.prompts])
+        children = [self.prompt_list]
+        if self.active_list_item:
+            children.append(self.active_list_item.name_prompt.widget)
+        self.widget.children = children
+
+    def switch_prompt(self, prompt_list_item):
+        """Switches to a different item in the prompt list in the IPyWidgets UI"""
+        for i, item in enumerate(self.prompts):
+            item.inactive_style()
+        self.active_list_item = prompt_list_item
+        if self.active_list_item:
+            self.active_list_item.active_style()
+            self.active_list_item.name_prompt.resolve()  # Trigger extra resolution
+        self.reload_ui()
+
+    def next_prompt(self):
+        """Switches to next prompt in the IPyWidgets UI"""
+        ix = self.prompts.index(self.active_list_item)
+        self.switch_prompt(self.prompts[ix + 1] if ix + 1 < len(self.prompts) else None)
+
+    def google_image_search(self, name):
+        quoted = urllib.parse.quote_plus(name)
+        url = f'https://google.com/search?q={quoted}&tbm=isch'
+        webbrowser.open(url)
+
+    def prompt(self):
+        self.reload_ui()
+
+    # Control flow
+
+    def run(self):
+        self.crawl()
+        self.resolve_names()
+        self.group_prompts()
+        # Crawler.process_groups() needs to be invoked after user has resolved prompts

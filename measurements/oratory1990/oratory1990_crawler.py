@@ -38,7 +38,7 @@ class Oratory1990Crawler(Crawler):
     def get_existing():
         return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*.csv'))
 
-    def get_urls(self):
+    def crawl(self):
         if self.driver is None:
             raise TypeError('self.driver cannot be None')
 
@@ -189,7 +189,7 @@ class Oratory1990Crawler(Crawler):
 
         return Image.open(output_file)
 
-    def process_one(self, item, url):
+    def process_group(self, item, url):
         if item.form == 'ignore':
             return
 
@@ -237,7 +237,7 @@ class GraphParseFailed(Exception):
 
 def main():
     crawler = Oratory1990Crawler()
-    crawler.process(prompt=False)
+    crawler.process_groups(prompt=False)
 
 
 if __name__ == '__main__':

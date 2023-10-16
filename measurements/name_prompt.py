@@ -5,17 +5,17 @@ import ipywidgets as widgets
 
 class NamePrompt:
     def __init__(
-            self, item, callback, manufacturer=None, search_callback=None,
+            self, item, callback, search_callback=None, resolution_callback=None,
             guessed_name=None, name_proposals=None, similar_names=None):
         """IPyWidgets UI element for setting name for a crawled headphone"""
         self.item = item
-        self.manufacturer = manufacturer
         self.callback = callback
         self.guessed_name = guessed_name or item.source_name
         if self.guessed_name is None:
             raise ValueError('Guessed name cannot be None')
         self.name_proposals = name_proposals
         self.search_callback = search_callback
+        self.resolution_callback = resolution_callback
 
         # Add button for each name proposal
         buttons = []
@@ -72,10 +72,10 @@ class NamePrompt:
 
     def handle_name_proposal_click(self, btn):
         btn.button_style = 'success'
-        item = self.name_proposals.find_one(name=btn.description).copy()
-        item.url = self.item.url
-        item.rig = self.item.rig
-        item.source_name = self.item.source_name
+        item = self.item.copy()
+        proposal_item = self.name_proposals.find_one(name=btn.description).copy()
+        item.name = proposal_item.name
+        item.form = proposal_item.form
         self.callback(item)
 
     def handle_form_click(self, btn):
@@ -83,3 +83,15 @@ class NamePrompt:
         item.name = self.text_field.value.strip()
         item.form = btn.description
         self.callback(item)
+
+    def resolve(self):
+        resolved_item = self.resolution_callback(self.item)
+        if resolved_item is not None:
+            if self.item.source_name is None and resolved_item.source_name is not None:
+                self.item.source_name = resolved_item.source_name
+            if self.item.name is None and resolved_item.name is not None:
+                self.item.name = resolved_item.name
+            if self.item.form is None and resolved_item.form is not None:
+                self.item.form = resolved_item.form
+            if self.item.rig is None and resolved_item.rig is not None:
+                self.item.rig = resolved_item.rig

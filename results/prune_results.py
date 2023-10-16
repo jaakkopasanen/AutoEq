@@ -39,10 +39,10 @@ def prune_results(dry_run=False, databases=None):
     if 'headphonecom' in databases:
         crawlers.append(HeadphonecomCrawler)
     for db, crawler in zip(databases, crawlers):
-        existing = crawler.get_existing()
+        existing_measurements = crawler.get_existing()
         file_paths = list(DIR_PATH.joinpath(db).glob('**/*.png'))
         for path in file_paths:
-            item = existing.find_one(true_name=path.name.replace('.png', ''))
+            item = existing_measurements.find_one(true_name=path.name.replace('.png', ''))
             if not item:
                 if not dry_run:
                     shutil.rmtree(path.parent)

@@ -12,10 +12,10 @@ class PromptListItem:
             button_style='warning',
             layout=widgets.Layout(width='300px')
         )
-        self.widget.on_click(self.on_click)
+        self.widget.on_click(self.handle_click)
         self.resolution = None
 
-    def on_click(self, btn):
+    def handle_click(self, btn):
         self.click_callback(self)
 
     def active_style(self):

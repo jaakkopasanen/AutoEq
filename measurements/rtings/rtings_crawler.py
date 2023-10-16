@@ -43,7 +43,7 @@ class RtingsCrawler(Crawler):
     def get_existing():
         return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*.csv'))
 
-    def get_urls(self):
+    def crawl(self):
         # Line 2422
         # var sel_product = document.getElementById("product_select");
         # var product1 = sel_product.options[sel_product.selectedIndex].value
@@ -104,7 +104,7 @@ class RtingsCrawler(Crawler):
         target = FrequencyResponse(name='target', frequency=frequency, raw=target)
         return fr, target
 
-    def process_one(self, item, url):
+    def process_group(self, item, url):
         if item.form == 'ignore':
             return
 
@@ -147,13 +147,13 @@ class RtingsCrawler(Crawler):
         fr.write_to_csv(file_path)
         print(f'Saved "{fr.name}" to "{file_path}"')
 
-    def intermediate_name(self, source_name):
-        return re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', source_name).strip()
+    def guess_name(self, item):
+        return re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', item).strip()
 
 
 def main():
     crawler = RtingsCrawler()
-    crawler.process(prompt=False)
+    crawler.process_groups(prompt=False)
 
 
 if __name__ == '__main__':

@@ -25,13 +25,7 @@ class UnknownRigError(Exception):
 class CrinacleCrawler(Crawler):
     def __init__(self, driver=None):
         super().__init__(driver=driver)
-        self.register_start_time('parse_books()')
-        self.book_name_index = None
-        self.parse_books()
-        self.register_end_time('parse_books()')
-        self.register_start_time('get_urls()')
-        self.urls = self.get_urls()
-        self.register_end_time('get_urls()')
+        self.book_index = None
 
     def parse_books(self):
         """Downloads parses phone books to get names
@@ -39,33 +33,24 @@ class CrinacleCrawler(Crawler):
         Returns:
             NameIndex
         """
-        items = []
-
-        # Ears-711 measurements name index
-        res = requests.get('https://crinacle.com/graphing/data_hp/phone_book.json')
-        hp_book = self.parse_book(res.json())
-        for source_name, name in hp_book.items():
-            items.append(NameItem(source_name, name, 'over-ear'))
-
-        # 711 IEM measurements name index
-        res = requests.get('https://crinacle.com/graphing/data/phone_book.json')
-        iem_book = self.parse_book(res.json())
-        for source_name, name in iem_book.items():
-            items.append(NameItem(source_name, name, 'in-ear'))
-
-        # Gras measurements name index
-        res = requests.get('https://crinacle.com/graphing/data_hp_gras/phone_book.json')
-        gras_book = self.parse_book(res.json())
-        for source_name, name in gras_book.items():
-            items.append(NameItem(source_name, name, 'over-ear'))
-
         # 4620 measurements name index
         res = requests.get('https://crinacle.com/graphing/data_4620/phone_book.json')
         bk4620_book = self.parse_book(res.json())
-        for source_name, name in bk4620_book.items():
-            items.append(NameItem(source_name, name, 'in-ear'))
-
-        self.book_name_index = NameIndex(items=items)
+        # Ears-711 measurements name index
+        res = requests.get('https://crinacle.com/graphing/data_hp/phone_book.json')
+        ears_711_map = self.parse_book(res.json())
+        # Gras measurements name index
+        res = requests.get('https://crinacle.com/graphing/data_hp_gras/phone_book.json')
+        gras_map = self.parse_book(res.json())
+        # 711 IEM measurements name index
+        res = requests.get('https://crinacle.com/graphing/data/phone_book.json')
+        iem_711_map = self.parse_book(res.json())
+        self.book_index = {
+            '4620 IEM Measurements': bk4620_book,
+            'EARS + 711 (TSV txt) (Legacy)': ears_711_map,
+            'GRAS 43AG-7': gras_map,
+            'IEC60318-4 IEM Measurements (TSV txt)': iem_711_map,
+        }
 
     def parse_book(self, data):
         """Parses a phone book as dict with false names as keys and true names as values.
@@ -101,7 +86,6 @@ class CrinacleCrawler(Crawler):
                     else:
                         for file_name in model['file']:
                             book[file_name.strip()] = f'{manufacturer_name} {model["name"]}'
-
         return book
 
     @staticmethod
@@ -131,14 +115,13 @@ class CrinacleCrawler(Crawler):
         if index_item is not None:  # Existing item in the name index, ground truth
             item = NameItem(index_item.source_name, index_item.name, index_item.form, url=url, rig=None)
         else:
-            book_item = self.book_name_index.find_one(source_name=file_name)
-            if book_item is not None:  # File name to Crinacle's name mapping exists
-                item = NameItem(book_item.name, None, book_item.form, url=url, rig=None)
+            if file_name in self.book_index:  # File name to Crinacle's name mapping exists
+                item = NameItem(self.book_index[file_name], None, None, url=url, rig=None)
             else:  # Nothing is known about this item
                 item = NameItem(None, None, None, url=url, rig=None)
         return item
 
-    def get_urls(self):
+    def crawl(self):
         raw_data_dir = DIR_PATH.joinpath('raw_data')
         items = []
         dirs_rigs_forms = [
@@ -150,13 +133,12 @@ class CrinacleCrawler(Crawler):
         for dir_name, form, rig in dirs_rigs_forms:
             for fp in raw_data_dir.joinpath(dir_name).glob('*.txt'):
                 item = self.get_item_from_file_path(fp)
-                if item.form is None:
-                    item.form = form
+                item.form = form
                 item.rig = rig
                 items.append(item)
         return NameIndex(items=items)
 
-    def process_one(self, items):
+    def process_group(self, items):
         """Reads measurement files for a single unit and saves an average frequency response
 
         Args:
@@ -176,7 +158,7 @@ class CrinacleCrawler(Crawler):
             avg_fr.raw += fr.raw
         avg_fr.raw /= len(items)
 
-        file_path = self.item_target_path(items[0])
+        file_path = self.target_path(items[0])
         Path(file_path.parent).mkdir(exist_ok=True, parents=True)
         avg_fr.write_to_csv(file_path)
         print(f'Saved "{avg_fr.name}" to "{file_path}"')
@@ -204,12 +186,12 @@ class CrinacleCrawler(Crawler):
             if prompted_item.form == 'ignore':
                 return
 
-            self.process_one(new_items)
+            self.process_group(new_items)
 
         return callback
 
     @staticmethod
-    def item_target_path(item):
+    def target_path(item):
         if item.form is None or item.rig is None or item.name is None:
             return None
         return DIR_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
@@ -219,7 +201,7 @@ class CrinacleCrawler(Crawler):
             self.normalize_file_name(url.split('/')[-1]))
         return str(file_path.relative_to(file_path.parent.parent))
 
-    def process(self, new_only=True):
+    def process_groups(self, new_only=True):
         """Processes all new measurements
 
         Updates name index with the new entries now found in the name index previously.
@@ -227,9 +209,8 @@ class CrinacleCrawler(Crawler):
         Returns:
             None
         """
-        self.register_start_time('process()')
         groups = {}
-        for item in self.urls.items:
+        for item in self.crawl_index.items:
             key = self.group_key(item.url)
             if key not in groups:
                 groups[key] = []
@@ -241,11 +222,11 @@ class CrinacleCrawler(Crawler):
                 name_prompt_item = group_items[0].copy()
                 if name_prompt_item.form == 'ignore':
                     continue
-                target_path = self.item_target_path(name_prompt_item)
+                target_path = self.target_path(name_prompt_item)
                 if target_path and target_path.exists() and new_only:  # Target file exists, nothing to do
                     continue
                 elif name_prompt_item.name is not None:  # True name is known already but file doesn't exist
-                    self.process_one(group_items)
+                    self.process_group(group_items)
                     continue
 
                 # Use known source name or last part of URL as source name
@@ -253,7 +234,7 @@ class CrinacleCrawler(Crawler):
                     guessed_name = name_prompt_item.source_name
                 else:
                     guessed_name = self.normalize_file_name(name_prompt_item.url.split('/')[-1])
-                guessed_name = self.intermediate_name(guessed_name)
+                guessed_name = self.guess_name(guessed_name)
                 manufacturer, manufacturer_match = self.manufacturers.find(guessed_name)
                 if manufacturer:
                     guessed_name = guessed_name.replace(manufacturer_match, manufacturer)
@@ -270,7 +251,7 @@ class CrinacleCrawler(Crawler):
                     name_prompt_item,
                     self.create_prompt_callback(group_items),
                     manufacturer=manufacturer,
-                    search_callback=self.search,
+                    search_callback=self.google_image_search,
                     guessed_name=guessed_name,
                     name_proposals=name_proposals,
                     similar_names=similar_names)
@@ -285,12 +266,11 @@ class CrinacleCrawler(Crawler):
             warning += '\nAdd them to manufacturers.tsv and run this cell again'
             print(warning)
         self.prompts = sorted(self.prompts, key=lambda pli: pli.name_prompt.name)
-        self.register_end_time('process()')
         self.reload_ui()
 
-    def intermediate_name(self, source_name):
+    def guess_name(self, item):
         """Gets intermediate name with false name."""
-        name = source_name.replace('(w/ ', '(')
+        name = item.replace('(w/ ', '(')
         name = re.sub(r' pads\)', ' earpads)', name, flags=re.IGNORECASE)
         match = re.search(r' S\d+[$ ]', name)
         if match:
@@ -301,7 +281,7 @@ class CrinacleCrawler(Crawler):
 
 def main():
     crawler = CrinacleCrawler()
-    crawler.process(prompt=False)
+    crawler.process_groups(prompt=False)
 
 
 if __name__ == '__main__':
