@@ -4,18 +4,16 @@ import os
 from pathlib import Path, WindowsPath
 import sys
 import re
+from time import time
 import numpy as np
 import requests
 from autoeq.frequency_response import FrequencyResponse
-from measurements.prompt_list_item import PromptListItem
-
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_prompt import NamePrompt
 from measurements.name_index import NameIndex, NameItem
-from measurements.crawler import Crawler, UnknownManufacturerError
+from measurements.crawler import Crawler
 
-DIR_PATH = Path(__file__).parent
-ROOT_PATH = DIR_PATH.parent.parent
+CRINACLE_PATH = Path(__file__).parent
+ROOT_PATH = CRINACLE_PATH.parent.parent
 
 
 class UnknownRigError(Exception):
@@ -23,9 +21,23 @@ class UnknownRigError(Exception):
 
 
 class CrinacleCrawler(Crawler):
+    raw_data_rig_map = {
+        '4620 IEM Measurements': 'Bruel & Kjaer 4620',
+        'EARS + 711 (TSV txt) (Legacy)': 'EARS + 711',
+        'GRAS 43AG-7': 'GRAS 43AG-7',
+        'IEC60318-4 IEM Measurements (TSV txt)': '711',
+    }
+
+    raw_data_form_map = {
+        '4620 IEM Measurements': 'in-ear',
+        'EARS + 711 (TSV txt) (Legacy)': 'over-ear',
+        'GRAS 43AG-7': 'over-ear',
+        'IEC60318-4 IEM Measurements (TSV txt)': 'in-ear',
+    }
+
     def __init__(self, driver=None):
         super().__init__(driver=driver)
-        self.book_index = None
+        self.book_index = self.parse_books()
 
     def parse_books(self):
         """Downloads parses phone books to get names
@@ -45,7 +57,7 @@ class CrinacleCrawler(Crawler):
         # 711 IEM measurements name index
         res = requests.get('https://crinacle.com/graphing/data/phone_book.json')
         iem_711_map = self.parse_book(res.json())
-        self.book_index = {
+        return {
             '4620 IEM Measurements': bk4620_book,
             'EARS + 711 (TSV txt) (Legacy)': ears_711_map,
             'GRAS 43AG-7': gras_map,
@@ -59,7 +71,7 @@ class CrinacleCrawler(Crawler):
             data: Phone book object
 
         Returns:
-            Dict with file names as keys and and phone book names as values
+            Dict with phone book file names as keys and and phone book names as values
         """
         book = dict()
         for manufacturer in data:
@@ -90,15 +102,53 @@ class CrinacleCrawler(Crawler):
 
     @staticmethod
     def read_name_index():
-        return NameIndex.read_tsv(DIR_PATH.joinpath('name_index.tsv'))
+        return NameIndex.read_tsv(CRINACLE_PATH.joinpath('name_index.tsv'))
 
     def write_name_index(self):
-        self.name_index.write_tsv(DIR_PATH.joinpath('name_index.tsv'))
+        self.name_index.write_tsv(CRINACLE_PATH.joinpath('name_index.tsv'))
 
     @staticmethod
     def get_existing():
         # FIXME: Tanchjim Zero exists in 711 measurements, seeing that in 4620 raw_data will be ignored when crawling
-        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '**', '*.csv'))
+        return NameIndex.read_files(os.path.join(CRINACLE_PATH, 'data', '**', '*.csv'))
+
+    @staticmethod
+    def get_url_from_file_path(raw_data_file_path):
+        """Creates URL from file path"""
+        url = raw_data_file_path.relative_to(ROOT_PATH)
+        return 'file://' + str(url).replace('\\', '/') if type(url) == WindowsPath else str(url)
+
+    def get_item_from_file_path(self, raw_data_file_path):
+        """Creates NameItem from path to a TXT file in raw_data"""
+        url = self.get_url_from_file_path(raw_data_file_path)
+        index_item = self.name_index.find_one(url=url)
+        if index_item is not None:  # Existing item in the name index, ground truth
+            item = NameItem(index_item.source_name, index_item.name, index_item.form, url=url, rig=None)
+        else:
+            item = NameItem(
+                None, None,
+                self.raw_data_form_map[raw_data_file_path.parent.name],
+                url=url,
+                rig=self.raw_data_rig_map[raw_data_file_path.parent.name])
+        return item
+
+    def crawl(self):
+        self.name_index = self.read_name_index()
+        items = []
+        for dir_path in CRINACLE_PATH.joinpath('raw_data').glob('*'):
+            items += [self.get_item_from_file_path(fp) for fp in dir_path.glob('*.txt')]
+        self.crawl_index = NameIndex(items=items)
+        return self.crawl_index
+
+    @staticmethod
+    def target_path(item):
+        if item.form is None or item.rig is None or item.name is None:
+            return None
+        return CRINACLE_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
+
+    @staticmethod
+    def get_file_path_from_url(url):
+        return Path(re.sub(r'^file://', '', url)).resolve()
 
     @staticmethod
     def normalize_file_name(file_name):
@@ -107,38 +157,59 @@ class CrinacleCrawler(Crawler):
         file_name = re.sub(r'\.txt$', '', file_name)
         return file_name
 
-    def get_item_from_file_path(self, file_path):
-        file_name = self.normalize_file_name(file_path.name)
-        url = file_path.relative_to(ROOT_PATH)
-        url = 'file://' + str(url).replace('\\', '/') if type(url) == WindowsPath else str(url)
-        index_item = self.name_index.find_one(url=url)
-        if index_item is not None:  # Existing item in the name index, ground truth
-            item = NameItem(index_item.source_name, index_item.name, index_item.form, url=url, rig=None)
-        else:
-            if file_name in self.book_index:  # File name to Crinacle's name mapping exists
-                item = NameItem(self.book_index[file_name], None, None, url=url, rig=None)
-            else:  # Nothing is known about this item
-                item = NameItem(None, None, None, url=url, rig=None)
-        return item
+    def group_key(self, item):
+        file_path = self.get_file_path_from_url(item.url)
+        normalized_name = self.normalize_file_name(file_path.name)
+        return file_path.parent.joinpath(normalized_name)
 
-    def crawl(self):
-        raw_data_dir = DIR_PATH.joinpath('raw_data')
-        items = []
-        dirs_rigs_forms = [
-            ('IEC60318-4 IEM Measurements (TSV txt)', 'in-ear', '711'),
-            ('4620 IEM Measurements', 'in-ear', 'Bruel & Kjaer 4620'),
-            ('EARS + 711 (TSV txt) (Legacy)', 'over-ear', 'EARS + 711'),
-            ('GRAS 43AG-7', 'over-ear', 'GRAS 43AG-7'),
-        ]
-        for dir_name, form, rig in dirs_rigs_forms:
-            for fp in raw_data_dir.joinpath(dir_name).glob('*.txt'):
-                item = self.get_item_from_file_path(fp)
-                item.form = form
-                item.rig = rig
-                items.append(item)
-        return NameIndex(items=items)
+    def resolve_name(self, item):
+        """Resolve name for a single item. Updates the item in place.
 
-    def process_group(self, items):
+        Args:
+            item: The crawl index NameItem to resolve
+
+        Returns:
+            True if resolution was successful, False if user needs to be prompted
+        """
+        # FIXME: Super slow?
+        t = time()
+        group_key = self.group_key(item)
+        for true_item in self.name_index.items:
+            if group_key == self.group_key(true_item):
+                if true_item.name is not None:
+                    item.name = true_item.name
+                if true_item.source_name is not None:
+                    item.source_name = true_item.source_name
+                if true_item.form is not None:
+                    item.form = true_item.form
+                if true_item.rig is not None:
+                    item.rig = true_item.rig
+                print(f'Time: {time() - t:.3f} s')
+                return item
+        return None
+
+    def guess_name(self, item):
+        """Gets intermediate name with false name."""
+        name = item.source_name
+        if name is None:
+            file_path = self.get_file_path_from_url(item.url)
+            item_from_url = self.get_item_from_file_path(file_path)
+            name = item_from_url.source_name
+        if name is None:
+            normalized_file_name = self.normalize_file_name(file_path.name)
+            if normalized_file_name in self.book_index[file_path.parent.name]:
+                name = self.book_index[file_path.parent.name][normalized_file_name]
+            else:
+                return None
+        name = name.replace('(w/ ', '(')
+        name = re.sub(r' pads\)', ' earpads)', name, flags=re.IGNORECASE)
+        match = re.search(r' S\d+[$ ]', name)
+        if match:
+            name = re.sub(r' S(\d+)[$ ]', r' (sample \1) ', name)
+            name = re.sub(r'\s{2,}', ' ', name)
+        return name
+
+    def process_one(self, items):
         """Reads measurement files for a single unit and saves an average frequency response
 
         Args:
@@ -162,127 +233,3 @@ class CrinacleCrawler(Crawler):
         Path(file_path.parent).mkdir(exist_ok=True, parents=True)
         avg_fr.write_to_csv(file_path)
         print(f'Saved "{avg_fr.name}" to "{file_path}"')
-
-    def create_prompt_callback(self, original_items):
-        def callback(prompted_item):
-            self.active_list_item.resolution = 'ignore' if prompted_item.form == 'ignore' else 'success'
-            self.next_prompt()
-
-            if not prompted_item.form == 'ignore':
-                manufacturer, manufacturer_match = self.manufacturers.find(prompted_item.name, ignore_case=True)
-                if manufacturer is None:
-                    raise UnknownManufacturerError(f'Manufacturer is not known for "{prompted_item.name}"')
-                prompted_item.name = self.manufacturers.replace(prompted_item.name)
-
-            new_items = []
-            for original_item in original_items:
-                new_item = original_item.copy()
-                new_item.name = prompted_item.name if prompted_item.form != 'ignore' else None
-                new_item.form = prompted_item.form
-                new_items.append(new_item)
-                self.update_name_index(new_item, write=False)
-            self.write_name_index()
-
-            if prompted_item.form == 'ignore':
-                return
-
-            self.process_group(new_items)
-
-        return callback
-
-    @staticmethod
-    def target_path(item):
-        if item.form is None or item.rig is None or item.name is None:
-            return None
-        return DIR_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
-
-    def group_key(self, url):
-        file_path = Path(url.replace('file://', '')).parent.joinpath(
-            self.normalize_file_name(url.split('/')[-1]))
-        return str(file_path.relative_to(file_path.parent.parent))
-
-    def process_groups(self, new_only=True):
-        """Processes all new measurements
-
-        Updates name index with the new entries now found in the name index previously.
-
-        Returns:
-            None
-        """
-        groups = {}
-        for item in self.crawl_index.items:
-            key = self.group_key(item.url)
-            if key not in groups:
-                groups[key] = []
-            groups[key].append(item)
-
-        unknown_manufacturers = []
-        for group_key, group_items in groups.items():
-            try:
-                name_prompt_item = group_items[0].copy()
-                if name_prompt_item.form == 'ignore':
-                    continue
-                target_path = self.target_path(name_prompt_item)
-                if target_path and target_path.exists() and new_only:  # Target file exists, nothing to do
-                    continue
-                elif name_prompt_item.name is not None:  # True name is known already but file doesn't exist
-                    self.process_group(group_items)
-                    continue
-
-                # Use known source name or last part of URL as source name
-                if name_prompt_item.source_name is not None:
-                    guessed_name = name_prompt_item.source_name
-                else:
-                    guessed_name = self.normalize_file_name(name_prompt_item.url.split('/')[-1])
-                guessed_name = self.guess_name(guessed_name)
-                manufacturer, manufacturer_match = self.manufacturers.find(guessed_name)
-                if manufacturer:
-                    guessed_name = guessed_name.replace(manufacturer_match, manufacturer)
-                else:
-                    unknown_manufacturers.append(guessed_name)
-
-                name_proposals = self.get_name_proposals(guessed_name, n=4) if manufacturer else None
-                similar_names = [
-                    item.name for item in self.get_name_proposals(
-                        guessed_name, n=4, normalize_digits=True, normalize_extras=True, threshold=0
-                    ).items]
-
-                name_prompt = NamePrompt(
-                    name_prompt_item,
-                    self.create_prompt_callback(group_items),
-                    manufacturer=manufacturer,
-                    search_callback=self.google_image_search,
-                    guessed_name=guessed_name,
-                    name_proposals=name_proposals,
-                    similar_names=similar_names)
-                self.prompts.append(PromptListItem(name_prompt, self.switch_prompt))
-
-            except Exception as err:
-                print(f'Processing failed for "{group_items[0].url}"')
-                raise err
-        if len(unknown_manufacturers) > 0:
-            warning = 'Headphones with unknown manufacturers:\n  * '
-            warning += '\n  * '.join(unknown_manufacturers)
-            warning += '\nAdd them to manufacturers.tsv and run this cell again'
-            print(warning)
-        self.prompts = sorted(self.prompts, key=lambda pli: pli.name_prompt.name)
-        self.reload_ui()
-
-    def guess_name(self, item):
-        """Gets intermediate name with false name."""
-        name = item.replace('(w/ ', '(')
-        name = re.sub(r' pads\)', ' earpads)', name, flags=re.IGNORECASE)
-        match = re.search(r' S\d+[$ ]', name)
-        if match:
-            name = re.sub(r' S(\d+)[$ ]', r' (sample \1) ', name)
-            name = re.sub(r'\s{2,}', ' ', name)
-        return name
-
-
-def main():
-    crawler = CrinacleCrawler()
-    crawler.process_groups(prompt=False)
-
-
-if __name__ == '__main__':
-    main()

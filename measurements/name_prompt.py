@@ -1,74 +1,108 @@
 # -*- coding: utf-8 -*-
 
 import ipywidgets as widgets
+import webbrowser
+import urllib.parse
 
 
 class NamePrompt:
     def __init__(
-            self, item, callback, search_callback=None, resolution_callback=None,
-            guessed_name=None, name_proposals=None, similar_names=None):
+            self, item, callback, guessed_name=None, name_proposals=None, similar_names=None):
         """IPyWidgets UI element for setting name for a crawled headphone"""
-        self.item = item
+        self._item = item
         self.callback = callback
-        self.guessed_name = guessed_name or item.source_name
-        if self.guessed_name is None:
-            raise ValueError('Guessed name cannot be None')
-        self.name_proposals = name_proposals
-        self.search_callback = search_callback
-        self.resolution_callback = resolution_callback
+        self._guessed_name = guessed_name or item.source_name or ''
+        self._name_proposals = name_proposals if name_proposals is not None else []
+        self._similar_names = similar_names if similar_names is not None else []
+        # UI elements
+        self.title = None
+        self.search_button = widgets.Button(description='🔎', layout=widgets.Layout(width='48px'))
+        self.search_button.on_click(self.handle_search)
+        self._name_proposal_buttons = []
+        self.text_field = widgets.Text(value=self.guessed_name, layout=widgets.Layout(width='400px'))
+        self.form_buttons = []
+        for form in ['over-ear', 'in-ear', 'earbud', 'ignore']:
+            btn = widgets.Button(description=form, layout=widgets.Layout(width='80px'))
+            btn.on_click(self.handle_form_click)
+            self.form_buttons.append(btn)
+        self.widget = None
+        self.reload_ui()
 
+    def reload_ui(self):
+        self.title = f'<h4 style="margin: 0">{self.item.url or self.item.source_name}</h4>'
+        for button in self.form_buttons:
+            button.button_style = 'success' if button.description == self.item.form else (
+                'danger' if button.description == 'ignore' else 'warning')
+        self.widget = widgets.VBox([
+            widgets.HBox([
+                widgets.VBox([
+                    widgets.HBox([widgets.HTML(value=self.title), self.search_button]),
+                    *self._name_proposal_buttons,  # Name suggestions
+                ]),
+                widgets.HTML(
+                    '<div style="margin-left: 12px"><b>Naming convention</b><br />' +
+                    '<br>'.join(self.similar_names) + '</div>'
+                ),
+            ]),
+            widgets.HBox([self.text_field, *self.form_buttons]),
+        ])
+
+    @property
+    def item(self):
+        return self._item
+
+    @item.setter
+    def item(self, item):
+        self._item = item
+        self.reload_ui()
+
+    @property
+    def guessed_name(self):
+        return self._guessed_name
+
+    @guessed_name.setter
+    def guessed_name(self, value):
+        if self.guessed_name == self.text_field.value:
+            # User hasn't updated text field value manually, safe to update to new guessed name
+            self._guessed_name = value
+            self.text_field.value = self._guessed_name
+            self.reload_ui()
+
+    @property
+    def name_proposals(self):
+        return self._name_proposals
+
+    @name_proposals.setter
+    def name_proposals(self, name_proposals):
+        self._name_proposals = name_proposals if name_proposals is not None else []
         # Add button for each name proposal
-        buttons = []
-        if name_proposals is not None:
+        self._name_proposal_buttons = []
+        if self._name_proposals is not None:
             for item in name_proposals.items:
                 btn = widgets.Button(
                     description=f'{item.name}', button_style='primary', layout=widgets.Layout(width='400px'))
                 btn.on_click(self.handle_name_proposal_click)
-                buttons.append(btn)
+                self._name_proposal_buttons.append(btn)
+            self.reload_ui()
 
-        # Create HTML title
-        title = f'<h4 style="margin: 0">{self.item.url}</h4>'
+    @property
+    def similar_names(self):
+        return self._similar_names
 
-        self.text_field = widgets.Text(value=self.guessed_name, layout=widgets.Layout(width='400px'))
-        search_button = widgets.Button(description='🔎', layout=widgets.Layout(width='48px'))
-        search_button.on_click(self.handle_search)
-
-        # Form buttons
-        form_buttons = []
-        forms = ['over-ear', 'in-ear', 'earbud'] if self.item.form is None else [self.item.form]
-        forms.append('ignore')
-        for form in forms:
-            btn = widgets.Button(
-                description=form,
-                button_style='danger' if form == 'ignore' else 'success',
-                layout=widgets.Layout(width='80px'))
-            btn.on_click(self.handle_form_click)
-            form_buttons.append(btn)
-
-        # Similar names for establishing naming convention
-        if similar_names is None:
-            similar_names = []
-
-        self.widget = widgets.VBox([
-            widgets.HBox([
-                widgets.VBox([
-                    widgets.HBox([widgets.HTML(value=title), search_button]),  # Title and search
-                    *buttons,  # Name suggestions
-                ]),
-                widgets.HTML(
-                    '<div style="margin-left: 12px"><b>Naming convention</b><br />' +
-                    '<br>'.join(similar_names) + '</div>'
-                ),
-            ]),
-            widgets.HBox([self.text_field, *form_buttons]),
-        ])
+    @similar_names.setter
+    def similar_names(self, similar_names):
+        self._similar_names = similar_names if similar_names is not None else []
+        if self._similar_names:
+            self.reload_ui()
 
     @property
     def name(self):
-        return self.guessed_name
+        return self.guessed_name or self.item.url.split('/')[-1]
 
     def handle_search(self, btn):
-        self.search_callback(self.guessed_name)
+        quoted = urllib.parse.quote_plus(self.name)
+        url = f'https://google.com/search?q={quoted}&tbm=isch'
+        webbrowser.open(url)
 
     def handle_name_proposal_click(self, btn):
         btn.button_style = 'success'
@@ -83,15 +117,3 @@ class NamePrompt:
         item.name = self.text_field.value.strip()
         item.form = btn.description
         self.callback(item)
-
-    def resolve(self):
-        resolved_item = self.resolution_callback(self.item)
-        if resolved_item is not None:
-            if self.item.source_name is None and resolved_item.source_name is not None:
-                self.item.source_name = resolved_item.source_name
-            if self.item.name is None and resolved_item.name is not None:
-                self.item.name = resolved_item.name
-            if self.item.form is None and resolved_item.form is not None:
-                self.item.form = resolved_item.form
-            if self.item.rig is None and resolved_item.rig is not None:
-                self.item.rig = resolved_item.rig

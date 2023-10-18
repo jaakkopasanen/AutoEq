@@ -45,6 +45,11 @@ class NameIndex:
             items.append(NameItem(row['source_name'], row['name'], row['form'], url=row['url'],  rig=row['rig']))
         return items
 
+    @items.setter
+    def items(self, items):
+        rows = [[item.url, item.source_name, item.name, item.form, item.rig] for item in items]
+        self.df = pd.DataFrame(rows, columns=self.df.columns)
+
     @staticmethod
     def split_path(path):
         components = []
