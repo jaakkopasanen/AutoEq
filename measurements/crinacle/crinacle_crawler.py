@@ -152,15 +152,13 @@ class CrinacleCrawler(Crawler):
 
     @staticmethod
     def normalize_file_name(file_name):
-        file_name = re.sub(r' #\d+ [LR]\.txt', '', file_name)
+        file_name = re.sub(r' #\d+ [LR]\.txt$', '', file_name)
         file_name = re.sub(r' [LR](?:\d+)?\.txt$', '', file_name)
         file_name = re.sub(r'\.txt$', '', file_name)
         return file_name
 
-    def group_key(self, item):
-        file_path = self.get_file_path_from_url(item.url)
-        normalized_name = self.normalize_file_name(file_path.name)
-        return file_path.parent.joinpath(normalized_name)
+    def source_group_key(self, item):
+        return self.normalize_file_name(re.sub(r'^file://', '', item.url))
 
     def resolve_name(self, item):
         """Resolve name for a single item. Updates the item in place.
@@ -171,11 +169,10 @@ class CrinacleCrawler(Crawler):
         Returns:
             True if resolution was successful, False if user needs to be prompted
         """
-        # FIXME: Super slow?
         t = time()
-        group_key = self.group_key(item)
+        group_key = self.source_group_key(item)
         for true_item in self.name_index.items:
-            if group_key == self.group_key(true_item):
+            if group_key == self.source_group_key(true_item):
                 if true_item.name is not None:
                     item.name = true_item.name
                 if true_item.source_name is not None:
@@ -184,7 +181,6 @@ class CrinacleCrawler(Crawler):
                     item.form = true_item.form
                 if true_item.rig is not None:
                     item.rig = true_item.rig
-                print(f'Time: {time() - t:.3f} s')
                 return item
         return None
 
@@ -203,7 +199,7 @@ class CrinacleCrawler(Crawler):
                 return None
         name = name.replace('(w/ ', '(')
         name = re.sub(r' pads\)', ' earpads)', name, flags=re.IGNORECASE)
-        match = re.search(r' S\d+[$ ]', name)
+        match = re.search(r' S\d+[$ ](?:\.txt)?$', name)
         if match:
             name = re.sub(r' S(\d+)[$ ]', r' (sample \1) ', name)
             name = re.sub(r'\s{2,}', ' ', name)

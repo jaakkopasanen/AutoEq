@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
-import math
-import os
-import sys
-from glob import glob
 import numpy as np
 import pandas as pd
-import re
 from rapidfuzz import fuzz
 
 
@@ -20,135 +15,135 @@ class NameItem:
     def __str__(self):
         return '"' + '"\t"'.join([self.url or '', self.source_name or '', self.name or '', self.form or '', self.rig or '']) + '"'
 
+    def __hash__(self):
+        return hash(f'{self.url};;{self.source_name};;{self.name};;{self.form};;{self.rig}')
+
     def copy(self):
         return NameItem(self.source_name, self.name, self.form, url=self.url, rig=self.rig)
 
 
 class NameIndex:
-    def __init__(self, rows=None, items=None):
-        self.df = pd.DataFrame(rows if rows is not None else [], columns=['url', 'source_name', 'name', 'form', 'rig'])
+    def __init__(self, items=None):
+        self._by_hash = {}  # hash: NameItem, primary inded
+        self._by_url = {}  # url: NameItem
+        # The rest are {attribute: [item1, item2, ...], name2: [item3, item4, ...]}
+        self._by_source_name = {}
+        self._by_name = {}
+        self._by_form = {}
+        self._by_rig = {}
         if items is not None:
-            rows = [[item.url, item.source_name, item.name, item.form, item.rig] for item in items]
-            self.df = pd.concat([self.df, pd.DataFrame(rows, columns=self.df.columns)])
-            self.df = self.df.drop_duplicates()
+            for item in items:
+                self.add(item)
 
     def __len__(self):
-        return self.df.shape[0]
+        return len(self._by_hash)
 
     def __bool__(self):
         return len(self) > 0
 
     @property
     def items(self):
-        items = []
-        for i, row in self.df.iterrows():
-            items.append(NameItem(row['source_name'], row['name'], row['form'], url=row['url'],  rig=row['rig']))
-        return items
+        return [item for item in self._by_hash.values()]
 
     @items.setter
     def items(self, items):
-        rows = [[item.url, item.source_name, item.name, item.form, item.rig] for item in items]
-        self.df = pd.DataFrame(rows, columns=self.df.columns)
-
-    @staticmethod
-    def split_path(path):
-        components = []
-        while True:
-            path, file = os.path.split(path)
-            if file:
-                components.append(file)
-            elif path:
-                components.append(path)
-                break
-            else:
-                break
-        return components[::-1]
-
-    @classmethod
-    def read_files(cls, glob_pattern):
-        items = []
-        for file in glob(glob_pattern, recursive=True):
-            form = None
-            path_components = cls.split_path(os.path.abspath(file))
-            name = path_components[-1]
-            for component in path_components:
-                if component in ['over-ear', 'in-ear', 'earbud']:
-                    form = component
-            name = re.sub(r'\.[tc]sv$', '', name)
-            items.append(NameItem(None, name, form, url=None, rig=None))
-        return cls(items=items)
+        self._by_hash = {}
+        self._by_url = {}
+        self._by_source_name = {}
+        self._by_name = {}
+        self._by_form = {}
+        self._by_rig = {}
+        for item in items:
+            self.add(item)
 
     @classmethod
     def read_tsv(cls, file_path):
-        index = cls()
-        if not os.path.isfile(file_path):
-            return index
-        df = pd.read_csv(file_path, sep='\t', header=0, encoding='utf-8')
-        if list(df.columns) != ['url', 'source_name', 'name', 'form', 'rig']:
-            raise TypeError(f'"{file_path}" columns {df.columns} are corrupted')
+        df = pd.read_csv(file_path, sep='\t', header=0, encoding='utf-8', dtype=str, na_values=None)
         df.replace([np.nan], [None], inplace=True)
-        index.df = df
-        return index
+        return cls(
+            [NameItem(row['source_name'], row['name'], row['form'], url=row['url'], rig=row['rig'])
+             for i, row in df.iterrows()])
 
     def write_tsv(self, file_path):
-        sort_df = self.df.copy()
-        sort_df.fillna('', inplace=True)
-        df = self.df.iloc[sort_df['name'].str.lower().argsort()]
+        df = pd.DataFrame(
+            [[item.url, item.source_name, item.name, item.form, item.rig] for item in self.items],
+            columns=['url', 'source_name', 'name', 'form', 'rig'])
+        df.fillna('', inplace=True)
+        df.sort_values(['name', 'rig'], inplace=True)
         df.to_csv(file_path, sep='\t', header=True, index=False, encoding='utf-8')
-
-    def mask(self, url=None, source_name=None, name=None, form=None, rig=None):
-        """Creates a filter mask for rows which match the given query parameters."""
-        # TODO source_url and rig
-        mask = None
-        if url is not None:
-            mask = (self.df.url == url)
-        if source_name is not None:
-            m = (self.df.source_name == source_name)
-            mask = m if mask is None else mask & m
-        if name is not None:
-            m = (self.df.name == name)
-            mask = m if mask is None else mask & m
-        if form is not None:
-            m = (self.df.form == form)
-            mask = m if mask is None else mask & m
-        if rig is not None:
-            m = (self.df.rig == rig)
-            mask = m if mask is None else mask & m
-        return mask
-
-    def concat(self, name_index):
-        """Merges another NameIndex to this."""
-        self.df = pd.concat([self.df, name_index.df])
 
     def add(self, item):
         """Adds an item to index."""
-        self.df = pd.concat(
-            [self.df, pd.DataFrame([[item.url, item.source_name, item.name, item.form, item.rig]], columns=self.df.columns)])
-        self.df = self.df.drop_duplicates()
+        if hash(item) in self._by_hash:
+            return
+        self._by_hash[hash(item)] = item
+        if item.url is not None:
+            self._by_url[item.url] = item
+        if item.source_name is not None:
+            if item.source_name not in self._by_source_name:
+                self._by_source_name[item.source_name] = []
+            self._by_source_name[item.source_name].append(item)
+        if item.name is not None:
+            if item.name not in self._by_name:
+                self._by_name[item.name] = []
+            self._by_name[item.name].append(item)
+        if item.form is not None:
+            if item.form not in self._by_form:
+                self._by_form[item.form] = []
+            self._by_form[item.form].append(item)
+        if item.rig is not None:
+            if item.rig not in self._by_rig:
+                self._by_rig[item.rig] = []
+            self._by_rig[item.rig].append(item)
 
-    def remove_duplicates(self):
-        """Removes duplicate entries."""
-        self.df = self.df.drop_duplicates()
+    def concat(self, name_index):
+        """Merges another NameIndex to this."""
+        for item in name_index.items:
+            self.add(item)
 
-    def update(self, new_item):
+    @staticmethod
+    def update_item(old, new):
+        old.url = new.url
+        old.source_name = new.source_name
+        old.name = new.name
+        old.form = new.form
+        old.rig = new.rig
+
+    def update(self, item):
         """Updates all items which have the same URL as the given item
 
         Args:
-            new_item: New value as NameItem
+            item: New value as NameItem
 
         Returns:
             None
         """
-        if self.find(url=new_item.url):
-            mask = self.mask(url=new_item.url)
-            try:
-                self.df.loc[mask] = np.tile(
-                    [new_item.url, new_item.source_name, new_item.name, new_item.form, new_item.rig],
-                    (sum(mask), 1))
-            except Exception as err:
-                raise err
-        else:
-            self.add(new_item)
+        if item.url is None or item.url not in self._by_url:
+            return
+        old_item = self._by_url[item.url]
+        del self._by_url[item.url]
+        # Move old item to new index locations where the attributes have changed
+        if item.source_name != old_item.source_name:  # Source name has changed
+            self._by_source_name[old_item.source_name].remove(old_item)  # Remove from old index location
+            if item.source_name not in self._by_source_name:  # Init new index location if needed
+                self._by_source_name[item.source_name] = []
+            self._by_source_name[item.source_name].append(old_item)  # Add old item to new index location
+        if item.name != old_item.name:
+            self._by_name[old_item.name].remove(old_item)
+            if item.name not in self._by_name:
+                self._by_name[item.name] = []
+            self._by_name[item.name].append(old_item)
+        if item.form != old_item.form:
+            self._by_form[old_item.form].remove(old_item)
+            if item.form not in self._by_form:
+                self._by_form[item.form] = []
+            self._by_form[item.form].append(old_item)
+        if item.rig != old_item.rig:
+            self._by_rig[old_item.rig].remove(old_item)
+            if item.rig not in self._by_rig:
+                self._by_rig[item.rig] = []
+            self._by_rig[item.rig].append(old_item)
+        self.update_item(old_item, item)  # Update old item attributes with the new item
 
     def find(self, url=None, source_name=None, name=None, form=None, rig=None):
         """Finds all items which match the given query parameters.
@@ -163,19 +158,43 @@ class NameIndex:
         Returns:
             New NameIndex instance with the matching items
         """
-        mask = self.mask(url=url, source_name=source_name, name=name, form=form, rig=rig)
-        return NameIndex(rows=self.df.loc[mask].copy())
+        items = None
+        if url is not None:
+            if url not in self._by_url:
+                return None
+            items = {self._by_url[url]}
+        if source_name is not None:
+            if source_name not in self._by_source_name:
+                return None
+            by_source_name = set(self._by_source_name[source_name])
+            items = items.intersection(by_source_name) if items is not None else by_source_name
+        if name is not None:
+            if name not in self._by_name:
+                return None
+            by_name = set(self._by_name[name])
+            items = items.intersection(by_name) if items is not None else by_name
+        if form is not None:
+            if form not in self._by_form:
+                return None
+            by_form = set(self._by_form[form])
+            items = items.intersection(by_form) if items is not None else by_form
+        if rig is not None:
+            if rig not in self._by_rig:
+                return None
+            by_rig = set(self._by_rig[rig])
+            items = items.intersection(by_rig) if items is not None else by_rig
+        return self.__class__(items)
 
     def find_one(self, **kwargs):
         results = self.find(**kwargs)
         if results:
             return results.items[0]
 
-    def search_by_source_name(self, name, threshold=80):
+    def search_by_source_name(self, source_name, threshold=80):
         """Finds all items which match closely to all given query parameters.
 
         Args:
-            name: Name to search by. Ignored if None.
+            source_name: Name to search by. Ignored if None.
             threshold: Threshold for matching with RapidFuzz.
 
         Returns:
@@ -184,8 +203,8 @@ class NameIndex:
         matches = []
         for item in self.items:
             # Search with false name
-            ratio = fuzz.ratio(item.source_name, name)
-            token_set_ratio = fuzz.token_set_ratio(item.source_name.lower(), name.lower())
+            ratio = fuzz.ratio(item.source_name.lower(), source_name.lower())
+            token_set_ratio = fuzz.token_set_ratio(item.source_name.lower(), source_name.lower())
             if ratio > threshold or token_set_ratio > threshold:
                 matches.append((item, ratio, token_set_ratio))
         return sorted(matches, key=lambda x: x[1], reverse=True)
@@ -203,7 +222,7 @@ class NameIndex:
         matches = []
         for item in self.items:
             # Search with false name
-            ratio = fuzz.ratio(item.name, name)
+            ratio = fuzz.ratio(item.name.lower(), name.lower())
             token_set_ratio = fuzz.token_set_ratio(item.name.lower(), name.lower())
             if ratio > threshold or token_set_ratio > threshold:
                 matches.append((item, ratio, token_set_ratio))

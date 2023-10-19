@@ -99,11 +99,10 @@ class Crawler(ABC):
         for db in ['crinacle', 'oratory1990', 'rtings']:
             name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db, 'name_index.tsv'))
             name_proposals.concat(name_index)
-        # TODO: Name index for Innerfidelity
-        for db in ['innerfidelity', 'headphonecom']:
-            name_index = NameIndex.read_files(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'))
-            name_proposals.concat(name_index)
-        name_proposals.remove_duplicates()
+        # TODO: Name indexes for Innerfidelity and headphonecom
+        # for db in ['innerfidelity', 'headphonecom']:
+        #     name_index = NameIndex.read_files(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'))
+        #     name_proposals.concat(name_index)
 
         manufacturer_pattern = rf'^({"|".join([m[0] for m in self.manufacturers.manufacturers])})'
         proposal_data = {
@@ -160,13 +159,14 @@ class Crawler(ABC):
 
         models = models.assign(partial_ratio=partial_ratios)
         models = models.assign(ratio=ratios)
-        models = models[models.partial_ratio >= threshold]
         models.sort_values('ratio', ascending=False, inplace=True)
+        models = models[models.partial_ratio >= threshold]
         proposals = []
         for i, row in models.iterrows():
             proposals.append(NameItem(None, f'{manufacturer} {row.model}', row.form))
-        ni = NameIndex(items=proposals)
-        ni.df = ni.df.head(n)
+        print(len(proposals))
+        ni = NameIndex(items=proposals[:n])
+        print(len(ni))
         return ni
 
     def guess_name(self, item):
@@ -320,7 +320,7 @@ class Crawler(ABC):
             # then rest of the optional properties
             self.active_list_item.name_prompt.guessed_name = self.guess_name(self.active_list_item.name_prompt.item)
             self.active_list_item.name_prompt.name_proposals = self.get_name_proposals(
-                self.active_list_item.name_prompt.guessed_name, n=4)
+                self.active_list_item.name_prompt.guessed_name, n=4, threshold=10)
             self.active_list_item.name_prompt.similar_names = [
                     item.name for item in self.get_name_proposals(
                         self.active_list_item.name_prompt.guessed_name, n=4, normalize_digits=True,
