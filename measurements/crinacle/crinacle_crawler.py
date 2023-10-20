@@ -169,7 +169,6 @@ class CrinacleCrawler(Crawler):
         Returns:
             True if resolution was successful, False if user needs to be prompted
         """
-        t = time()
         group_key = self.source_group_key(item)
         for true_item in self.name_index.items:
             if group_key == self.source_group_key(true_item):
@@ -196,7 +195,7 @@ class CrinacleCrawler(Crawler):
             if normalized_file_name in self.book_index[file_path.parent.name]:
                 name = self.book_index[file_path.parent.name][normalized_file_name]
             else:
-                return None
+                return normalized_file_name
         name = name.replace('(w/ ', '(')
         name = re.sub(r' pads\)', ' earpads)', name, flags=re.IGNORECASE)
         match = re.search(r' S\d+[$ ](?:\.txt)?$', name)

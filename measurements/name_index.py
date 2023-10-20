@@ -118,8 +118,10 @@ class NameIndex:
         Returns:
             None
         """
-        if item.url is None or item.url not in self._by_url:
-            return
+        if item.url is None:
+            raise ValueError('Item doesn\'t have URL')
+        if item.url not in self._by_url:
+            return self.add(item)
         old_item = self._by_url[item.url]
         del self._by_url[item.url]
         # Move old item to new index locations where the attributes have changed

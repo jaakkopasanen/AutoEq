@@ -9,40 +9,65 @@ DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
 
 class ManufacturerIndex:
     def __init__(self):
+        self._false_names = {}
+        self._true_name = {}
         with open(os.path.join(DIR_PATH, 'manufacturers.tsv'), encoding='utf-8') as fh:
-            manufacturers = fh.read().strip().split('\n')
-        self.manufacturers = [m.strip().split('\t') for m in manufacturers]
+            manufacturers = [line.strip() for line in fh.read().strip().split('\n') if line.strip()]
+        for manufacturer in manufacturers:
+            names = manufacturer.split('\t')
+            true_name = names[0]
+            self._false_names[true_name] = names[1:]
+            for name in names:
+                self._true_name[name] = true_name
 
     def write(self):
-        manufacturers = sorted(self.manufacturers, key=lambda x: x[0].lower())
+        true_names = sorted(list(self._false_names.keys()), key=lambda x: x[0].lower())
+        lines = []
+        for true_name in true_names:
+            lines.append('\t'.join([true_name] + self._false_names[true_name]))
         with open(os.path.join(DIR_PATH, 'manufacturers.tsv'), 'w', encoding='utf-8') as fh:
-            fh.write('\n'.join(['\t'.join(manufacturer) for manufacturer in manufacturers]) + '\n')
+            fh.write('\n'.join(lines) + '\n')
 
     def find(self, name, ignore_case=True):
-        matches = []
-        for manufacturer in self.manufacturers:
-            for variant in manufacturer:
-                if re.search(f'^{re.escape(variant)}', name, flags=re.IGNORECASE if ignore_case else 0):
-                    # Case insensitive match with manufacturer, add true manufacturer and the matching variant
-                    matches.append((manufacturer[0], variant))
+        """Finds manufacturer with a full headphone name
 
-        if not matches:
+        Args:
+            name: Full name of the headphone
+            ignore_case: Match even if casing doesn't match?
+
+        Returns:
+            (True manufacturer name, matching part in the headphone name)
+        """
+        if not name:
             return None, None
+        # Copy dict with lowercase key if ignoring case
+        index = {key.lower(): val for key, val in self._true_name.items()} if ignore_case else self._true_name
+        # Test substring of the headphone name made up of decreasing number of words, starting from the full length
+        # and eliminating words one by one from the tail as long as a match is found
+        # Sennheiser Electronic HD 800 (SDR mod)
+        # Sennheiser Electronic HD 800 (SDR
+        # Sennheiser Electronic HD 800
+        # Sennheiser Electronic HD
+        # Sennheiser Electronic --> Match false name "Sennheiser Electronic", finds true name "Sennheiser"
+        words = name.split(' ')
+        for n in range(len(words), 0, -1):
+            candidate = ' '.join(words[:n])
+            if ignore_case:
+                candidate = candidate.lower()
+            if candidate in index:
+                return index[candidate], candidate
+        return None, None
 
-        # Select longest match
-        true_manufacturer, match = sorted(matches, key=lambda x: len(x[1]), reverse=True)[0]
-        return true_manufacturer, match
-
-    def replace(self, old_name):
-        manufacturer, match = self.find(old_name)
+    def replace(self, old_name, ignore_case=True):
+        manufacturer, match = self.find(old_name, ignore_case=ignore_case)
         if match is None:
             return old_name
         # Replace manufacturer with the match
         new_name = re.sub(f'^{re.escape(match)}', manufacturer, old_name, flags=re.IGNORECASE)
         return new_name
 
-    def model(self, name):
-        manufacturer, match = self.find(name)
+    def model(self, name, ignore_case=True):
+        manufacturer, match = self.find(name, ignore_case=ignore_case)
         if match is None:
             return None
         # Replace manufacturer with the match
@@ -50,10 +75,9 @@ class ManufacturerIndex:
 
     def search(self, name, threshold=80):
         matches = []
-        for manufacturer in self.manufacturers:
-            for variant in manufacturer:
-                # Search with false name
-                ratio = fuzz.ratio(variant.lower(), name.lower())
-                if ratio > threshold:
-                    matches.append((manufacturer[0], ratio))
+        for false_name, true_name in self._true_name.items():
+            # Search with false name
+            ratio = fuzz.ratio(false_name.lower(), name.lower())
+            if ratio > threshold:
+                matches.append((true_name, ratio))
         return sorted(matches, key=lambda x: x[1], reverse=True)

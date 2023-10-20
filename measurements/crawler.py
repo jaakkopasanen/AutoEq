@@ -85,6 +85,7 @@ class Crawler(ABC):
 
     def update_name_index(self, item, write=True):
         """Updates name index"""
+        print('Updating name index', item, write)
         self.name_index.update(item)
         if write:
             self.write_name_index()
@@ -104,22 +105,16 @@ class Crawler(ABC):
         #     name_index = NameIndex.read_files(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'))
         #     name_proposals.concat(name_index)
 
-        manufacturer_pattern = rf'^({"|".join([m[0] for m in self.manufacturers.manufacturers])})'
-        proposal_data = {
-            'form': [],
-            'manufacturer': [],
-            'model': []
-        }
+        proposal_data = {'form': [], 'manufacturer': [], 'model': []}
         for item in name_proposals.items:
             if not item.name or item.form == 'ignore':
                 continue
-            manufacturer = re.search(manufacturer_pattern, item.name, flags=re.IGNORECASE)
+            manufacturer, match = self.manufacturers.find(item.name)
             if not manufacturer:
                 continue
-            manufacturer = manufacturer[0]
             proposal_data['form'].append(item.form)
             proposal_data['manufacturer'].append(manufacturer)
-            proposal_data['model'].append(item.name.replace(manufacturer, '').strip())
+            proposal_data['model'].append(self.manufacturers.model(item.name))
         self.name_proposals = pd.DataFrame(proposal_data)
 
     def get_name_proposals(self, source_name, n=4, normalize_digits=False, normalize_extras=False, threshold=60):
@@ -149,7 +144,7 @@ class Crawler(ABC):
         manufacturer, manufacturer_match = self.manufacturers.find(source_name)
         if not manufacturer:
             return NameIndex([])
-        false_model = re.sub(re.escape(manufacturer_match), '', source_name, flags=re.IGNORECASE).strip()
+        false_model = self.manufacturers.model(source_name)
         # Select only the items with the same manufacturer
         models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
 
@@ -164,9 +159,7 @@ class Crawler(ABC):
         proposals = []
         for i, row in models.iterrows():
             proposals.append(NameItem(None, f'{manufacturer} {row.model}', row.form))
-        print(len(proposals))
         ni = NameIndex(items=proposals[:n])
-        print(len(ni))
         return ni
 
     def guess_name(self, item):
