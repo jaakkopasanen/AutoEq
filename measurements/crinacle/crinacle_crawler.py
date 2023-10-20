@@ -141,12 +141,6 @@ class CrinacleCrawler(Crawler):
         return self.crawl_index
 
     @staticmethod
-    def target_path(item):
-        if item.form is None or item.rig is None or item.name is None:
-            return None
-        return CRINACLE_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
-
-    @staticmethod
     def get_file_path_from_url(url):
         return Path(re.sub(r'^file://', '', url)).resolve()
 
@@ -204,27 +198,28 @@ class CrinacleCrawler(Crawler):
             name = re.sub(r'\s{2,}', ' ', name)
         return name
 
-    def process_one(self, items):
-        """Reads measurement files for a single unit and saves an average frequency response
+    def target_group_key(self, item):
+        return f'{item.form}/{item.rig}/{item.name}'
 
-        Args:
-            items: List of items for all of the measurements of the same unit
+    def target_path(self, item):
+        if item.form is None or item.rig is None or item.name is None:
+            return None
+        return CRINACLE_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
 
-        Returns:
-            None
-        """
+    def process_group(self, items, new_only=True):
         if items[0].form == 'ignore':
+            return
+        file_path = self.target_path(items[0])
+        if new_only and file_path.exists():
             return
         avg_fr = FrequencyResponse(name=items[0].name)
         avg_fr.raw = np.zeros(avg_fr.frequency.shape)
         for item in items:
-            fr = FrequencyResponse.read_from_csv(ROOT_PATH.joinpath(item.url.replace('file://', '')))
+            fr = FrequencyResponse.read_from_csv(self.get_file_path_from_url(item.url))
             fr.interpolate()
             fr.center()
             avg_fr.raw += fr.raw
         avg_fr.raw /= len(items)
-
-        file_path = self.target_path(items[0])
         Path(file_path.parent).mkdir(exist_ok=True, parents=True)
         avg_fr.write_to_csv(file_path)
-        print(f'Saved "{avg_fr.name}" to "{file_path}"')
+        print(f'Saved "{avg_fr.name}" to "{file_path}" with {len(items)} measurements')

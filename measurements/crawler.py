@@ -13,7 +13,7 @@ import shutil
 import re
 from bs4 import BeautifulSoup
 import ipywidgets as widgets
-
+from tqdm.auto import tqdm
 from selenium.webdriver.common.by import By
 
 from abc import ABC, abstractmethod
@@ -46,7 +46,7 @@ class Crawler(ABC):
         a. All measurements of the same headphone model are processed together, frequency responses are averaged
 
     """
-    def __init__(self, driver=None):
+    def __init__(self, driver=None, delete_existing_on_prompt=True):
         self._start_time = time()
         self._timings = {}
         # Name resolutions
@@ -56,6 +56,7 @@ class Crawler(ABC):
         # Crawler
         self.driver = driver
         self.crawl_index = None
+        self.delete_existing_on_prompt = delete_existing_on_prompt
         # UI
         self.prompts = []
         self.prompt_list = None
@@ -84,8 +85,6 @@ class Crawler(ABC):
         pass
 
     def update_name_index(self, item, write=True):
-        """Updates name index"""
-        print('Updating name index', item, write)
         self.name_index.update(item)
         if write:
             self.write_name_index()
@@ -210,24 +209,25 @@ class Crawler(ABC):
                 raise UnknownManufacturerError(f'Manufacturer is not known for "{prompted_item.name}"')
             prompted_item.name = self.manufacturers.replace(prompted_item.name)
         self.update_name_index(prompted_item, write=True)
+        if self.delete_existing_on_prompt and self.target_path(prompted_item).exists():
+            self.target_path(prompted_item).unlink()
         self.next_prompt()
 
     def create_prompt_callback(self, *args, **kwargs):
         return self.prompt_callback
 
-    def create_prompts(self):
+    def create_prompts(self, max_prompts=50):
         if self.name_proposals is None:
             self.init_name_proposals()
         self.prompts = []
-        for item in self.crawl_index.items:
+        crawled_items = sorted(self.crawl_index.items, key=lambda item: item.source_name or item.url.split('/')[-1])
+        for item in crawled_items:
             if item.form is not None and item.name is not None:
                 # All important attributes are known, can skip prompt for item
                 continue
-            self.prompts.append(
-                PromptListItem(
-                    NamePrompt(item, self.prompt_callback),
-                    self.switch_prompt))
-        self.prompts = sorted(self.prompts, key=lambda pli: pli.name_prompt.name)
+            self.prompts.append(PromptListItem(NamePrompt(item, self.prompt_callback), self.switch_prompt))
+            if len(self.prompts) >= max_prompts:
+                break
 
     # Crawler methods
 
@@ -278,16 +278,53 @@ class Crawler(ABC):
     # Processing methods
 
     @abstractmethod
-    def process_one(self, item):
+    def target_group_key(self, item):
+        """Key for grouping measurements (NameItems) that should be averaged
+
+        Args:
+            item: NameItem
+
+        Returns:
+            Group key, None if necessary props are missing
+        """
+
+    @abstractmethod
+    def target_path(self, item):
+        """Target file path for the item in measurements directory
+
+        Args:
+            item: NameItem for the measurement
+
+        Returns:
+            Target file path, None if necessary props are missing
+        """
+
+    @abstractmethod
+    def process_group(self, items, new_only=True):
         """Processes measurements for a single unit
 
         Args:
-            item: NameItem to be processed together
+            items: NameItem to be processed together
+            new_only: Only process measurements that don't exist yet?
 
         Returns:
             None
         """
         pass
+
+    def process(self, new_only=True):
+        groups = {}
+        for item in self.name_index.items:
+            if item.form == 'ignore':
+                continue
+            key = self.target_group_key(item)
+            if key is None:
+                continue
+            if key not in groups:
+                groups[key] = []
+            groups[key].append(item)
+        for items in groups.values():
+            self.process_group(items, new_only=new_only)
 
     # UI methods
 
@@ -327,9 +364,6 @@ class Crawler(ABC):
         """Switches to next prompt in the IPyWidgets UI"""
         ix = self.prompts.index(self.active_list_item)
         self.switch_prompt(self.prompts[ix + 1] if ix + 1 < len(self.prompts) else None)
-
-    def prompt(self):
-        self.reload_ui()
 
     # Control flow
 

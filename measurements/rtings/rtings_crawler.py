@@ -104,18 +104,18 @@ class RtingsCrawler(Crawler):
         target = FrequencyResponse(name='target', frequency=frequency, raw=target)
         return fr, target
 
-    def process_one(self, item, url):
-        if item.form == 'ignore':
+    def process_group(self, items, url):
+        if items.form == 'ignore':
             return
 
-        json_file = Crawler.download(url, item.name, os.path.join(DIR_PATH, 'json'), file_type='json')
+        json_file = Crawler.download(url, items.name, os.path.join(DIR_PATH, 'json'), file_type='json')
         if json_file is not None:
-            with open(os.path.join(DIR_PATH, 'json', f'{item.name}.json'), 'r', encoding='utf-8') as fh:
+            with open(os.path.join(DIR_PATH, 'json', f'{items.name}.json'), 'r', encoding='utf-8') as fh:
                 json_data = json.load(fh)
             fr, target = RtingsCrawler.parse_json(json_data)
-            fr.name = item.name
+            fr.name = items.name
         else:
-            raise FileNotFoundError(f'Could not download JSON file for{item.name} at {url}')
+            raise FileNotFoundError(f'Could not download JSON file for{items.name} at {url}')
 
         fr.interpolate()
         if np.std(fr.raw) == 0:
@@ -123,7 +123,7 @@ class RtingsCrawler(Crawler):
             target.interpolate()
             target = target
             print(f'Using target for {fr.name}')
-        elif item.form == 'in-ear':
+        elif items.form == 'in-ear':
             # Using in-ear target response
             target = INEAR_TARGET
         else:
@@ -141,7 +141,7 @@ class RtingsCrawler(Crawler):
         plt.close(fig)
 
         # Write to file
-        dir_path = os.path.join(DIR_PATH, 'data', item.form)
+        dir_path = os.path.join(DIR_PATH, 'data', items.form)
         os.makedirs(dir_path, exist_ok=True)
         file_path = os.path.join(dir_path, fr.name + '.csv')
         fr.write_to_csv(file_path)

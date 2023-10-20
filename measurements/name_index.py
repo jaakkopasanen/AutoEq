@@ -146,6 +146,21 @@ class NameIndex:
                 self._by_rig[item.rig] = []
             self._by_rig[item.rig].append(old_item)
         self.update_item(old_item, item)  # Update old item attributes with the new item
+        
+    def remove(self, item):
+        if hash(item) not in self._by_hash:
+            return
+        del self._by_hash[hash(item)]
+        if item.url is not None and item.url in self._by_url:
+            del self._by_url[item.url]
+        if item.source_name is not None and item.source_name in self._by_source_name:
+            del self._by_source_name[item.source_name]
+        if item.name is not None and item.name in self._by_name:
+            del self._by_name[item.name]
+        if item.form is not None and item.form in self._by_form:
+            del self._by_form[item.form]
+        if item.rig is not None and item.rig in self._by_rig:
+            del self._by_rig[item.rig]
 
     def find(self, url=None, source_name=None, name=None, form=None, rig=None):
         """Finds all items which match the given query parameters.

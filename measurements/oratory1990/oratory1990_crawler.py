@@ -189,40 +189,40 @@ class Oratory1990Crawler(Crawler):
 
         return Image.open(output_file)
 
-    def process_one(self, item, url):
-        if item.form == 'ignore':
+    def process_group(self, items, url):
+        if items.form == 'ignore':
             return
 
         pdf_dir = os.path.join(DIR_PATH, 'pdf')
         image_dir = os.path.join(DIR_PATH, 'images')
         inspection_dir = os.path.join(DIR_PATH, 'inspection')
         data_dir = os.path.join(DIR_PATH, 'data')
-        out_dir = os.path.join(data_dir, item.form)
+        out_dir = os.path.join(data_dir, items.form)
 
         os.makedirs(pdf_dir, exist_ok=True)
         os.makedirs(image_dir, exist_ok=True)
         os.makedirs(inspection_dir, exist_ok=True)
         os.makedirs(out_dir, exist_ok=True)
 
-        pdf_path = Crawler.download(url, item.name, pdf_dir)
+        pdf_path = Crawler.download(url, items.name, pdf_dir)
         if not pdf_path:
             return
         try:
             im = Oratory1990Crawler.pdf_to_image(
-                os.path.join(pdf_dir, f'{item.name}.pdf'),
-                os.path.join(image_dir, f'{item.name}.png')
+                os.path.join(pdf_dir, f'{items.name}.pdf'),
+                os.path.join(image_dir, f'{items.name}.png')
             )
         except ValueError as err:
             if str(err) == 'Measured by Crinacle':
-                ignored = item.copy()
+                ignored = items.copy()
                 ignored.form = 'ignore'
-                self.name_index.update(ignored, source_name=item.source_name, name=item.name, form=item.form)
+                self.name_index.update(ignored, source_name=items.source_name, name=items.name, form=items.form)
                 self.write_name_index()
-                print(f'  Ignored {item.source_name} because it is measured by Crinacle.\n')
+                print(f'  Ignored {items.source_name} because it is measured by Crinacle.\n')
             return
-        fr, inspection = Oratory1990Crawler.parse_image(im, item.name)
-        inspection.save(os.path.join(inspection_dir, f'{item.name}.png'))
-        fr_path = os.path.join(out_dir, f'{item.name}.csv')
+        fr, inspection = Oratory1990Crawler.parse_image(im, items.name)
+        inspection.save(os.path.join(inspection_dir, f'{items.name}.png'))
+        fr_path = os.path.join(out_dir, f'{items.name}.csv')
         fr.write_to_csv(fr_path)
         print(f'  Saved CSV to "{fr_path}"')
 
