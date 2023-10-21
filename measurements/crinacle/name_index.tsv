@@ -3793,16 +3793,6 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Bles
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Blessing 3 S1 R.txt	Blessing 3 S1	Moondrop Blessing 3	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Blessing 3 L.txt	Blessing 3	Moondrop Blessing 3	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Blessing 3 R.txt	Blessing 3	Moondrop Blessing 3	in-ear	Bruel & Kjaer 4620
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S1 L.txt		Moondrop Blessing2 Dusk	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S1 R.txt		Moondrop Blessing2 Dusk	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S2 L.txt		Moondrop Blessing2 Dusk	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S2 R.txt		Moondrop Blessing2 Dusk	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S3 L.txt		Moondrop Blessing2 Dusk	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S3 R.txt		Moondrop Blessing2 Dusk	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S4 L.txt		Moondrop Blessing2 Dusk	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S4 R.txt		Moondrop Blessing2 Dusk	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S5 L.txt		Moondrop Blessing2 Dusk	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S5 R.txt		Moondrop Blessing2 Dusk	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Chu R.txt	Moondrop Chu	Moondrop Chu	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Chu L.txt	Moondrop Chu	Moondrop Chu	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Chu L.txt	Moondrop Chu	Moondrop Chu	in-ear	Bruel & Kjaer 4620
@@ -3867,6 +3857,10 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/Void S2 L1.txt	Void S2	Moondro
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Void L3.txt	Void	Moondrop Void	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Void S2 R3.txt	Void S2	Moondrop Void	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Void L2.txt	Void	Moondrop Void	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S1 L.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S1 R.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S2 L.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S2 R.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Dusk R.txt	Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Dusk L.txt	Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Power L.txt	Power	Muse HiFi Power	in-ear	711
@@ -4928,8 +4922,8 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MDR7
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MDR7550 R.txt		Sony MDR-7550	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MDR7550 S2 L.txt		Sony MDR-7550	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MDR7550 S2 R.txt		Sony MDR-7550	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AS800 L.txt	AS800	Sony MDR-AS800	over-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AS800 R.txt	AS800	Sony MDR-AS800	over-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AS800 L.txt	AS800	Sony MDR-AS800	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AS800 R.txt	AS800	Sony MDR-AS800	in-ear	711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/CD2000 R2.txt	Sony MDR-CD2000	Sony MDR-CD2000	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/CD2000 R3.txt	Sony MDR-CD2000	Sony MDR-CD2000	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/CD2000 R4.txt	Sony MDR-CD2000	Sony MDR-CD2000	over-ear	EARS + 711
@@ -5065,8 +5059,8 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/WH-1000XM4 R3.txt	WH-1000XM4	S
 file://measurements/crinacle/raw_data/GRAS 43AG-7/WH-1000XM4 R2.txt	WH-1000XM4	Sony WH-1000XM4	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA300 L.txt	XBA300	Sony XBA-300	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA300 R.txt	XBA300	Sony XBA-300	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-40 L.txt	XBA-40	Sony XBA-40	over-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-40 R.txt	XBA-40	Sony XBA-40	over-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-40 L.txt	XBA-40	Sony XBA-40	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-40 R.txt	XBA-40	Sony XBA-40	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-A3 L.txt		Sony XBA-A3	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-A3 R.txt		Sony XBA-A3	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-A3 S3 L.txt		Sony XBA-A3	in-ear	711
@@ -5488,8 +5482,8 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/L3 0
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/L3 02 L.txt	L3 02	ThieAudio Legacy 3 (off-on)	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Legacy 3 02 L.txt	Legacy 3 02	ThieAudio Legacy 3 (off-on)	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Legacy 3 02 R.txt	Legacy 3 02	ThieAudio Legacy 3 (off-on)	in-ear	Bruel & Kjaer 4620
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/L3 10 R.txt	L3 10	ThieAudio Legacy 3 (on-off)	over-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/L3 10 L.txt	L3 10	ThieAudio Legacy 3 (on-off)	over-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/L3 10 R.txt	L3 10	ThieAudio Legacy 3 (on-off)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/L3 10 L.txt	L3 10	ThieAudio Legacy 3 (on-off)	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Legacy 3 10 L.txt	Legacy 3 10	ThieAudio Legacy 3 (on-off)	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Legacy 3 10 R.txt	Legacy 3 10	ThieAudio Legacy 3 (on-off)	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/L3 12 L.txt	L3 12	ThieAudio Legacy 3 (on-on)	in-ear	711
@@ -5770,10 +5764,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ R.txt		Ultimate Ears UE18+ (2nd Gen)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ S2 L.txt		Ultimate Ears UE18+ (2nd Gen)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ S2 R.txt		Ultimate Ears UE18+ (2nd Gen)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ 3rd Gen L.txt		Ultimate Ears UE18+ (3rd Gen)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ 3rd Gen R.txt		Ultimate Ears UE18+ (3rd Gen)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/18Plus C L.txt	18Plus C	Ultimate Ears UE18+ (CIEM)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/18Plus C R.txt	18Plus C	Ultimate Ears UE18+ (CIEM)	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ 3rd Gen L.txt	UE18+ 3rd Gen	Ultimate Ears UE18+ 3rd Gen	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ 3rd Gen R.txt	UE18+ 3rd Gen	Ultimate Ears UE18+ 3rd Gen	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE4 Pro R.txt	UE4 Pro	Ultimate Ears UE4 Pro	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE4 Pro L.txt	UE4 Pro	Ultimate Ears UE4 Pro	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE5 R.txt	UE5	Ultimate Ears UE5	in-ear	711

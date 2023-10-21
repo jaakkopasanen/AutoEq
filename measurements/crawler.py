@@ -379,4 +379,5 @@ class Crawler(ABC):
     def run(self):
         self.crawl()
         self.create_prompts()
+        self.reload_ui()
         # Crawler.process_all() needs to be invoked after user has resolved prompts
