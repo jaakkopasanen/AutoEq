@@ -10,7 +10,7 @@ class PromptListItem:
         self.widget = widgets.Button(
             description=name_prompt.name,
             button_style='warning',
-            layout=widgets.Layout(width='300px')
+            layout=widgets.Layout(width='300px', height='32px', min_height='32px')
         )
         self.widget.on_click(self.handle_click)
         self.resolution = None

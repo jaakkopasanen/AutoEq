@@ -89,6 +89,22 @@ class Crawler(ABC):
         if write:
             self.write_name_index()
 
+    def add_name_proposal(self, item):
+        """Adds one item to name proposals"""
+        if item.form is None:
+            raise ValueError('Item needs a form before it can be added to name proposals')
+        if item.name is None:
+            raise ValueError('Item needs a name before it can be added to name proposals')
+        manufacturer, _ = self.manufacturers.find(item.name)
+        model = self.manufacturers.model(item.name)
+        if not (
+                (self.name_proposals['form'] == item.form)
+                & (self.name_proposals['manufacturer'] == manufacturer)
+                & (self.name_proposals['model'] == model)
+        ).any():
+            self.name_proposals.loc[len(self.name_proposals.index)] = [item.form, manufacturer, model]
+            print('Added to proposals:', item)
+
     def init_name_proposals(self):
         """Gets name proposals for new measurements
 
@@ -115,6 +131,7 @@ class Crawler(ABC):
             proposal_data['manufacturer'].append(manufacturer)
             proposal_data['model'].append(self.manufacturers.model(item.name))
         self.name_proposals = pd.DataFrame(proposal_data)
+        self.name_proposals.drop_duplicates(inplace=True)
 
     def get_name_proposals(self, source_name, n=4, normalize_digits=False, normalize_extras=False, threshold=60):
         """Prompts manufacturer, model and form from the user
@@ -188,18 +205,6 @@ class Crawler(ABC):
             return item
         return None
 
-    def prune_ignored(self):
-        if self.crawl_index is None:
-            self.crawl()  # Produced URLs and source names
-        i = 0
-        items = self.crawl_index.items
-        while i < len(items):
-            if items[i].form == 'ignore':
-                del items[i]
-            else:
-                i += 1
-        self.crawl_index.items = items
-
     def prompt_callback(self, prompted_item):
         self.active_list_item.resolution = 'ignore' if prompted_item.form == 'ignore' else 'success'
         if prompted_item.form != 'ignore':
@@ -211,12 +216,13 @@ class Crawler(ABC):
         self.update_name_index(prompted_item, write=True)
         if self.delete_existing_on_prompt and self.target_path(prompted_item).exists():
             self.target_path(prompted_item).unlink()
+        self.add_name_proposal(prompted_item)
         self.next_prompt()
 
     def create_prompt_callback(self, *args, **kwargs):
         return self.prompt_callback
 
-    def create_prompts(self, max_prompts=50):
+    def create_prompts(self, max_prompts=4):
         if self.name_proposals is None:
             self.init_name_proposals()
         self.prompts = []
@@ -313,6 +319,7 @@ class Crawler(ABC):
         pass
 
     def process(self, new_only=True):
+        self.name_index = self.read_name_index()
         groups = {}
         for item in self.name_index.items:
             if item.form == 'ignore':
@@ -330,7 +337,9 @@ class Crawler(ABC):
 
     def reload_ui(self):
         """Refreshes IPyWidgets UI"""
-        self.prompt_list = widgets.VBox([prompt.widget for prompt in self.prompts])
+        self.prompt_list = widgets.VBox(
+            [prompt.widget for prompt in self.prompts],
+            layout=widgets.Layout(max_height='600px', overflow='auto', width='324px'))
         children = [self.prompt_list]
         if self.active_list_item:
             children.append(self.active_list_item.name_prompt.widget)
@@ -341,7 +350,7 @@ class Crawler(ABC):
         for i, prompt_list_item in enumerate(self.prompts):
             prompt_list_item.inactive_style()
         self.active_list_item = new_active
-        if self.active_list_item and self.active_list_item.widget.button_style != 'success':  # Selected something i.e. is not clear out in the end of the list
+        if self.active_list_item and self.active_list_item.widget.button_style not in ['success', 'ignore']:  # Selected something i.e. is not clear out in the end of the list
             self.active_list_item.active_style()
             # Item needs to be resolved and updated first
             item = self.resolve_name(self.active_list_item.name_prompt.item)
@@ -350,7 +359,7 @@ class Crawler(ABC):
             # then rest of the optional properties
             self.active_list_item.name_prompt.guessed_name = self.guess_name(self.active_list_item.name_prompt.item)
             self.active_list_item.name_prompt.name_proposals = self.get_name_proposals(
-                self.active_list_item.name_prompt.guessed_name, n=4, threshold=10)
+                self.active_list_item.name_prompt.guessed_name, n=6, threshold=10)
             self.active_list_item.name_prompt.similar_names = [
                     item.name for item in self.get_name_proposals(
                         self.active_list_item.name_prompt.guessed_name, n=4, normalize_digits=True,
@@ -369,6 +378,5 @@ class Crawler(ABC):
 
     def run(self):
         self.crawl()
-        self.prune_ignored()
         self.create_prompts()
         # Crawler.process_all() needs to be invoked after user has resolved prompts

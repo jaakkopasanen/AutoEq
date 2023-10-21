@@ -34,17 +34,18 @@ class NamePrompt:
             button.button_style = 'success' if button.description == self.item.form else (
                 'danger' if button.description == 'ignore' else 'warning')
         self.widget = widgets.VBox([
+            widgets.HBox([widgets.HTML(value=self.title), self.search_button]),
             widgets.HBox([
                 widgets.VBox([
-                    widgets.HBox([widgets.HTML(value=self.title), self.search_button]),
                     *self._name_proposal_buttons,  # Name suggestions
+                    widgets.HBox([*self.form_buttons]),
+                    self.text_field,
                 ]),
                 widgets.HTML(
                     '<div style="margin-left: 12px"><b>Naming convention</b><br />' +
                     '<br>'.join(self.similar_names) + '</div>'
                 ),
             ]),
-            widgets.HBox([self.text_field, *self.form_buttons]),
         ])
 
     @property

@@ -177,6 +177,27 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A6t 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A6t M20 R.txt	A6t M20	64 Audio A6t (m20 Apex module)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Duo 64 R.txt	Duo 64	64 Audio Duo	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Duo 64 L.txt	Duo 64	64 Audio Duo	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 None C L.txt		64 Audio N8  (CIEM)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 None C R.txt		64 Audio N8  (CIEM)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 None C S2 L.txt		64 Audio N8  (CIEM)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 None C S3 L.txt		64 Audio N8  (CIEM)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 None C S3 R.txt		64 Audio N8  (CIEM)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 L.txt		64 Audio N8  (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 R.txt		64 Audio N8  (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 S3 L.txt		64 Audio N8  (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 S3 R.txt		64 Audio N8  (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 S4 L.txt		64 Audio N8  (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 S4 R.txt		64 Audio N8  (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 C S6 L.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 C S6 R.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 C S2 L.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 C S2 R.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 C S3 L.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 C S3 R.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 C S4 L.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 C S4 R.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 C S5 L.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M15 C S5 R.txt		64 Audio N8 (CIEM, m15 Apex module)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M20 C L.txt	N8 M20 C	64 Audio N8 (CIEM, m20 Apex module)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 M20 C R.txt	N8 M20 C	64 Audio N8 (CIEM, m20 Apex module)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 DD disabled L.txt	N8 DD disabled	64 Audio N8 (dd disabled)	in-ear	711
@@ -194,14 +215,40 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 V
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8 Vent Blocked R.txt	N8 Vent Blocked	64 Audio N8 (vent blocked)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8t M15 R.txt	N8t M15	64 Audio N8t (m15 Apex module)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/N8t M15 L.txt	N8t M15	64 Audio N8t (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio M15 L.txt		64 Audio Nio (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio M15 R.txt		64 Audio Nio (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio S2 M15 L.txt		64 Audio Nio (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio S2 M15 R.txt		64 Audio Nio (m15 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio S2 M20 L.txt		64 Audio Nio (m20 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio S2 M20 R.txt		64 Audio Nio (m20 Apex module)	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Nio M20 L.txt	Nio M20	64 Audio Nio (m20 Apex module)	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Nio M20 R.txt	Nio M20	64 Audio Nio (m20 Apex module)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio MX L.txt		64 Audio Nio (mX Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio MX R.txt		64 Audio Nio (mX Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio S2 MX L.txt		64 Audio Nio (mX Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nio S2 MX R.txt		64 Audio Nio (mX Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Fourte L.txt		64 Audio Tia Fourte	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Fourte R.txt		64 Audio Tia Fourte	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Fourte S2 L.txt		64 Audio Tia Fourte	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Fourte S2 R.txt		64 Audio Tia Fourte	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Fourte Noir R.txt	Fourte Noir	64 Audio Tia Fourte Noir	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Fourte Noir L.txt	Fourte Noir	64 Audio Tia Fourte Noir	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Trio L.txt		64 Audio Tia Trio	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Trio R.txt		64 Audio Tia Trio	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Trio S2 L.txt		64 Audio Tia Trio	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Trio S2 R.txt		64 Audio Tia Trio	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U12t L.txt		64 Audio U12t	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U12t R.txt		64 Audio U12t	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U12t S3 L.txt		64 Audio U12t	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U12t S3 R.txt		64 Audio U12t	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A18S L.txt		64 Audio U18S	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A18S R.txt		64 Audio U18S	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A18S S2 L.txt		64 Audio U18S	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A18S S2 R.txt		64 Audio U18S	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar L.txt		64 Audio U18Tzar	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar R.txt		64 Audio U18Tzar	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar S2 L.txt		64 Audio U18Tzar	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar S2 R.txt		64 Audio U18Tzar	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar DEC14 R.txt	U18Tzar DEC14	64 Audio U18Tzar (December 2014)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar DEC17 R.txt	U18Tzar DEC17	64 Audio U18Tzar (December 2017)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar M20 R.txt	U18Tzar M20	64 Audio U18Tzar (m20 Apex module)	in-ear	711
@@ -213,6 +260,12 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Diok
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dioko S1 R.txt		7Hz Salnotes Dioko	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dioko S2 L.txt		7Hz Salnotes Dioko	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dioko S2 R.txt		7Hz Salnotes Dioko	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero Salnotes L.txt		7Hz Salnotes Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero Salnotes R.txt		7Hz Salnotes Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero Salnotes S2 L.txt		7Hz Salnotes Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero Salnotes S2 R.txt		7Hz Salnotes Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero Salnotes S3 L.txt		7Hz Salnotes Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero Salnotes S3 R.txt		7Hz Salnotes Zero	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero Salnotes L.txt		7Hz Salnotes Zero	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero Salnotes R.txt		7Hz Salnotes Zero	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Timeless L.txt	Timeless	7Hz Timeless	in-ear	711
@@ -431,8 +484,16 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS10
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1001 R.txt	HS1001	Acoustune HS1001	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1003 R.txt	HS1003	Acoustune HS1003	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1003 L.txt	HS1003	Acoustune HS1003	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1004 L.txt		Acoustune HS1004	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1004 R.txt		Acoustune HS1004	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1004 S2 L.txt		Acoustune HS1004	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1004 S2 R.txt		Acoustune HS1004	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1300 R.txt	HS1300	Acoustune HS1300	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1300 L.txt	HS1300	Acoustune HS1300	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1501 L.txt		Acoustune HS1501	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1501 R.txt		Acoustune HS1501	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1501 S2 L.txt		Acoustune HS1501	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1501 S2 R.txt		Acoustune HS1501	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1503 R.txt	HS1503	Acoustune HS1503	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1503 L.txt	HS1503	Acoustune HS1503	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HS1551 R.txt	HS1551	Acoustune HS1551	in-ear	711
@@ -467,6 +528,18 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Evo 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Evo X R.txt	Evo X	Advanced Evo X	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Furai L.txt		Advanced Furai	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Furai R.txt		Advanced Furai	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Bass L.txt		Advanced GT3 (bass)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Bass R.txt		Advanced GT3 (bass)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Ref L.txt		Advanced GT3 (ref)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Ref R.txt		Advanced GT3 (ref)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Treble L.txt		Advanced GT3 (treble)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Treble R.txt		Advanced GT3 (treble)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Superbass Bass L.txt		Advanced GT3 Superbass (bass)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Superbass Bass R.txt		Advanced GT3 Superbass (bass)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Superbass Ref L.txt		Advanced GT3 Superbass (ref)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Superbass Ref R.txt		Advanced GT3 Superbass (ref)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Superbass Treble L.txt		Advanced GT3 Superbass (treble)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GT3 Superbass Treble R.txt		Advanced GT3 Superbass (treble)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 R.txt	M3	Advanced M3	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 L.txt	M3	Advanced M3	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 L.txt	M4	Advanced M4	in-ear	711
@@ -593,6 +666,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Witc
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Witch Girl W12 L.txt	Witch Girl W12	Aroma Audio Witch Girl W12	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Yao L.txt	Yao	Aroma Audio Yao	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Yao R.txt	Yao	Aroma Audio Yao	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T8iE Mk1 L.txt		Astell & Kern (Astell&Kern) T8iE	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T8iE Mk1 R.txt		Astell & Kern (Astell&Kern) T8iE	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T8iE Mk1 S2 L.txt		Astell & Kern (Astell&Kern) T8iE	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T8iE Mk1 S2 R.txt		Astell & Kern (Astell&Kern) T8iE	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Rosie 2oclock R.txt	Rosie 2oclock	Astell & Kern Rosie (2 o'clock)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Rosie 2oclock L.txt	Rosie 2oclock	Astell & Kern Rosie (2 o'clock)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Rosie Max R.txt	Rosie Max	Astell & Kern Rosie (max)	in-ear	711
@@ -814,6 +891,9 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/Sine DX R1.txt	Sine DX	Audeze 
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Sine DX L1.txt	Sine DX	Audeze SINE DX	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Sine DX R3.txt	Sine DX	Audeze SINE DX	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/iSIne 10 R.txt	iSIne 10	Audeze iSINE 10	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/iSine 10 L.txt		Audeze iSINE 10	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/iSine 10 S2 L.txt		Audeze iSINE 10	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/iSine 10 S2 R.txt		Audeze iSINE 10	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/iSine 20 R.txt	iSine 20	Audeze iSINE 20	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/iSine 20 L.txt	iSine 20	Audeze iSINE 20	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/iSine 20 Cipher L.txt	iSine 20 Cipher	Audeze iSINE 20 (Cipher cable)	in-ear	711
@@ -993,6 +1073,18 @@ file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/M50X R3.txt	
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/M50X R2.txt	M50X	Audio-Technica ATH-M50x	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/M50X R5.txt	M50X	Audio-Technica ATH-M50x	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/M50X R4.txt	M50X	Audio-Technica ATH-M50x	over-ear	EARS + 711
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x L1.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x L2.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x L3.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x R1.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x R2.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x R3.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x S2 L1.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x S2 L2.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x S2 L3.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x S2 R1.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x S2 R2.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/M50x S2 R3.txt		Audio-Technica ATH-M50x	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/M50xBT L2.txt	M50xBT	Audio-Technica ATH-M50xBT	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/M50xBT R1.txt	M50xBT	Audio-Technica ATH-M50xBT	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/M50xBT R2.txt	M50xBT	Audio-Technica ATH-M50xBT	over-ear	GRAS 43AG-7
@@ -1191,6 +1283,8 @@ file://measurements/crinacle/raw_data/4620 IEM Measurements/Autumn Treble L.txt	
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Autumn Treble R.txt	BQEYZ Autumn (Treble filter)	BQEYZ Autumn (treble filter)	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Spring 1 R.txt	Spring 1	BQEYZ Spring 1	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Spring 1 L.txt	Spring 1	BQEYZ Spring 1	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Spring 1 S2 Mesh L.txt		BQEYZ Spring 1 (mesh mod)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Spring 1 S2 Mesh R.txt		BQEYZ Spring 1 (mesh mod)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Summer R.txt	BQEYZ Summer	BQEYZ Summer	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Summer L.txt	BQEYZ Summer	BQEYZ Summer	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Summer L.txt	BQEYZ Summer	BQEYZ Summer	in-ear	Bruel & Kjaer 4620
@@ -1426,18 +1520,42 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Holo
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Holocene L.txt	Holocene	Campfire Audio Holocene	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Honeydew R.txt	Honeydew	Campfire Audio Honeydew	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Honeydew L.txt	Honeydew	Campfire Audio Honeydew	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IO L.txt		Campfire Audio IO	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IO R.txt		Campfire Audio IO	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IO S2 L.txt		Campfire Audio IO	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IO S2 R.txt		Campfire Audio IO	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mammoth R.txt	Mammoth	Campfire Audio Mammoth	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mammoth L.txt	Mammoth	Campfire Audio Mammoth	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Orion R.txt	Orion	Campfire Audio Orion	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Orion L.txt	Orion	Campfire Audio Orion	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Polaris L.txt		Campfire Audio Polaris (V1)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Polaris R.txt		Campfire Audio Polaris (V1)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Polaris S2 L.txt		Campfire Audio Polaris (V1)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Polaris S2 R.txt		Campfire Audio Polaris (V1)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Polaris V2 S2 L.txt	Polaris V2 S2	Campfire Audio Polaris V2	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Polaris V2 S2 R.txt	Polaris V2 S2	Campfire Audio Polaris V2	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Satsuma L.txt	Satsuma	Campfire Audio Satsuma	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Satsuma R.txt	Satsuma	Campfire Audio Satsuma	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris S1 L.txt		Campfire Audio Solaris (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris S1 R.txt		Campfire Audio Solaris (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris S2 L.txt		Campfire Audio Solaris (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris S2 R.txt		Campfire Audio Solaris (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris S3 L.txt		Campfire Audio Solaris (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris S3 R.txt		Campfire Audio Solaris (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris S4 L.txt		Campfire Audio Solaris (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris S4 R.txt		Campfire Audio Solaris (pre-2020)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris 2020 L.txt	Campfire Audio Solaris (2020)	Campfire Audio Solaris 2020	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris 2020 R.txt	Campfire Audio Solaris (2020)	Campfire Audio Solaris 2020	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris SE L.txt		Campfire Audio Solaris SE	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris SE R.txt		Campfire Audio Solaris SE	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris SE S2 L.txt		Campfire Audio Solaris SE	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solaris SE S2 R.txt		Campfire Audio Solaris SE	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solstice L.txt	Solstice	Campfire Audio Solstice	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Solstice R.txt	Solstice	Campfire Audio Solstice	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vega L.txt		Campfire Audio Vega (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vega R.txt		Campfire Audio Vega (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vega S2 L.txt		Campfire Audio Vega (pre-2020)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vega S2 R.txt		Campfire Audio Vega (pre-2020)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vega 2020 L.txt	Vega 2020	Campfire Audio Vega 2020	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vega 2020 R.txt	Vega 2020	Campfire Audio Vega 2020	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/CW-U77 R.txt	CW-U77	Canal Works CW-U77	in-ear	711
@@ -1569,6 +1687,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen L.txt	DUNU Zen	DUNU Zen	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Zen L.txt	DUNU Zen	DUNU Zen	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Zen R.txt	DUNU Zen	DUNU Zen	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen Pro L.txt		DUNU Zen Pro	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen Pro R.txt		DUNU Zen Pro	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen Pro S2 L.txt		DUNU Zen Pro	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen Pro S2 R.txt		DUNU Zen Pro	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Daiso R.txt	Daiso	Daiso $2 earphones	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Daiso L.txt	Daiso	Daiso $2 earphones	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Aeon 2 Closed L3.txt	Aeon 2 Closed	Dan Clark Audio Aeon 2 Closed	over-ear	GRAS 43AG-7
@@ -1771,6 +1893,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TWS6
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TWS6 L.txt	TWS6	Edifier TWS6	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Axiom R.txt	Axiom	Effect Audio Axiom	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Axiom L.txt	Axiom	Effect Audio Axiom	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/King Arthur L.txt		Effect Audio King Arthur	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/King Arthur R.txt		Effect Audio King Arthur	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/King Arthur S2 L.txt		Effect Audio King Arthur	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/King Arthur S2 R.txt		Effect Audio King Arthur	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Symphony L.txt	Symphony	Effect Audio Symphony	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Symphony R.txt	Symphony	Effect Audio Symphony	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Annihilator 2021 S2 R.txt	Annihilator 2021 S2	Elysian Annihilator (2021)	in-ear	711
@@ -1807,6 +1933,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Pose
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Poseidon R.txt	Elysian Acoustic Labs Poseidon	Elysian Poseidon	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Terminator L.txt	Terminator	Elysian Terminator	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Terminator R.txt	Terminator	Elysian Terminator	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Terminator V2 L.txt		Elysian Terminator V2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Terminator V2 R.txt		Elysian Terminator V2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Terminator V2 S2 L.txt		Elysian Terminator V2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Terminator V2 S2 R.txt		Elysian Terminator V2	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Elysian X R.txt	Elysian X	Elysian X	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Elysian X L.txt	Elysian X	Elysian X	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Bravado L.txt	Bravado	Empire Ears Bravado	in-ear	711
@@ -1825,6 +1955,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hero
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hero L.txt	Hero	Empire Ears Hero	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Legend EVO R.txt	Legend EVO	Empire Ears Legend EVO	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Legend EVO L.txt	Legend EVO	Empire Ears Legend EVO	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Legend X L.txt		Empire Ears Legend X	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Legend X R.txt		Empire Ears Legend X	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Legend X S2 L.txt		Empire Ears Legend X	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Legend X S2 R.txt		Empire Ears Legend X	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Legend X SE L.txt	Legend X SE	Empire Ears Legend X SE	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Legend X SE R.txt	Legend X SE	Empire Ears Legend X SE	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nemesis R.txt	Nemesis	Empire Ears Nemesis	in-ear	711
@@ -1833,6 +1967,12 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Odin
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Odin EE R.txt	Odin EE	Empire Ears Odin	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom L.txt	Phantom	Empire Ears Phantom	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom R.txt	Phantom	Empire Ears Phantom	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom CE L.txt		Empire Ears Phantom	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom CE R.txt		Empire Ears Phantom	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom Eu L.txt		Empire Ears Phantom	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom Eu R.txt		Empire Ears Phantom	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom S3 L.txt		Empire Ears Phantom	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom S3 R.txt		Empire Ears Phantom	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom X R.txt	Phantom X	Empire Ears Phantom X	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Phantom X L.txt	Phantom X	Empire Ears Phantom X	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Valkyrie R.txt	Empire Ears Valkyrie	Empire Ears Valkyrie	in-ear	711
@@ -1910,6 +2050,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mezz
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mezzo 120 R.txt	Mezzo 120	FAudio Mezzo (on-on-off)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mezzo 123 L.txt	Mezzo 123	FAudio Mezzo (on-on-on)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mezzo 123 R.txt	Mezzo 123	FAudio Mezzo (on-on-on)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Minor L.txt		FAudio Minor	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Minor R.txt		FAudio Minor	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Minor S2 L.txt		FAudio Minor	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Minor S2 R.txt		FAudio Minor	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE846 Clone L.txt	SE846 Clone	Fake Shure SE846	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE846 Clone R.txt	SE846 Clone	Fake Shure SE846	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/F111 Clone L.txt	F111 Clone	Fake Taobao F111	ignore	711
@@ -1994,6 +2138,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S6Pr
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S6Pro R.txt	S6Pro	Fearless Audio S6Pro	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S6Rui R.txt	S6Rui	Fearless Audio S6Rui	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S6Rui L.txt	S6Rui	Fearless Audio S6Rui	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S8F L.txt		Fearless Audio S8F	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S8F R.txt		Fearless Audio S8F	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S8F S2 L.txt		Fearless Audio S8F	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S8F S2 R.txt		Fearless Audio S8F	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S8Pro L.txt	S8Pro	Fearless Audio S8Pro	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S8Pro R.txt	S8Pro	Fearless Audio S8Pro	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/S8Z R.txt	S8Z	Fearless Audio S8Z	in-ear	711
@@ -2059,6 +2207,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/FH3 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/FH3 R.txt		FiiO FH3	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/FH3 R.txt	FiiO FH3	FiiO FH3	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/FH3 L.txt	FiiO FH3	FiiO FH3	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/FH5 L.txt		FiiO FH5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/FH5 R.txt		FiiO FH5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/FH5 S2 L.txt		FiiO FH5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/FH5 S2 R.txt		FiiO FH5	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/FH5s R.txt	FiiO FH5s 	FiiO FH5s	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/FH5s L.txt	FiiO FH5s 	FiiO FH5s	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/FH5s R.txt	FiiO FH5s 	FiiO FH5s	in-ear	Bruel & Kjaer 4620
@@ -2180,8 +2332,42 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/Sonorous X L3.txt	Sonorous X	F
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Sonorous X R1.txt	Sonorous X	Final Audio Sonorous X	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Krypton-5 L.txt	Krypton-5	Fir Audio Krypton 5	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Krypton-5 R.txt	Krypton-5	Fir Audio Krypton 5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M2 FiR L.txt		Fir Audio M2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M2 FiR R.txt		Fir Audio M2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M2 S2 L.txt		Fir Audio M2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M2 S2 R.txt		Fir Audio M2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 FiR L.txt		Fir Audio M3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 FiR R.txt		Fir Audio M3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 FiR S2 L.txt		Fir Audio M3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 FiR S2 R.txt		Fir Audio M3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 S3 L.txt		Fir Audio M3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 S3 R.txt		Fir Audio M3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 S4 L.txt		Fir Audio M3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 S4 R.txt		Fir Audio M3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 FiR L.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 FiR R.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 FiR S2 L.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 FiR S2 R.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 S3 L.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 S3 R.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 S4 L.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 S4 R.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 S5 L.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M4 S5 R.txt		Fir Audio M4	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 L.txt		Fir Audio M5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 R.txt		Fir Audio M5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S3 L.txt		Fir Audio M5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S3 R.txt		Fir Audio M5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S5 L.txt		Fir Audio M5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S5 R.txt		Fir Audio M5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S6 L.txt		Fir Audio M5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S6 R.txt		Fir Audio M5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S7 L.txt		Fir Audio M5	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S7 R.txt		Fir Audio M5	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 C R.txt	M5 C	Fir Audio M5 (CIEM)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 C L.txt	M5 C	Fir Audio M5 (CIEM)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S2 L.txt		Fir Audio M5 S2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M5 S2 R.txt		Fir Audio M5 S2	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Neon-4 R.txt	Neon-4	Fir Audio Neon 4	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Neon-4 L.txt	Neon-4	Fir Audio Neon 4	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/VxV L.txt	VxV	Fir Audio VxV	in-ear	711
@@ -2216,6 +2402,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH33
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH335DW L.txt	MH335DW	FitEar MH335DW	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monet 17 R.txt	Monet 17	FitEar Monet 17	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monet 17 L.txt	Monet 17	FitEar Monet 17	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Parterre L.txt		FitEar Parterre	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Parterre R.txt		FitEar Parterre	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Parterre S2 L.txt		FitEar Parterre	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Parterre S2 R.txt		FitEar Parterre	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/222 L.txt	222	FitEar Private 222	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/222 R.txt	222	FitEar Private 222	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/223 L.txt	223	FitEar Private 223	in-ear	711
@@ -2224,6 +2414,16 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/333 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/333 R.txt	333	FitEar Private 333	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/435 R.txt	435	FitEar Private C435	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/435 L.txt	435	FitEar Private C435	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TG334 L.txt		FitEar TG334	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TG334 R.txt		FitEar TG334	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TG334 S1 L.txt		FitEar TG334	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TG334 S1 R.txt		FitEar TG334	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TG334 S2 L.txt		FitEar TG334	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TG334 S2 R.txt		FitEar TG334	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Titan L.txt		FitEar Titan	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Titan R.txt		FitEar Titan	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Titan S3 L.txt		FitEar Titan	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Titan S3 R.txt		FitEar Titan	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Norma R.txt	Norma	Flicker Ear Norma	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Norma L.txt	Norma	Flicker Ear Norma	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Aurora Flipears L.txt	Aurora Flipears	FlipEars Aurora	in-ear	711
@@ -2268,6 +2468,12 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear R1.txt	Focal Elear	Focal
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear L1.txt	Focal Elear	Focal Elear	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear R2.txt	Focal Elear	Focal Elear	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear R3.txt	Focal Elear	Focal Elear	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear S2 L1.txt		Focal Elear	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear S2 L2.txt		Focal Elear	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear S2 L3.txt		Focal Elear	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear S2 R1.txt		Focal Elear	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear S2 R2.txt		Focal Elear	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear S2 R3.txt		Focal Elear	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear S3 (Elex pads) L3.txt	Elear S3 (Elex pads)	Focal Elear (Elex earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear S3 (Elex pads) R1.txt	Elear S3 (Elex pads)	Focal Elear (Elex earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Elear S3 (Elex pads) L2.txt	Elear S3 (Elex pads)	Focal Elear (Elex earpads)	over-ear	GRAS 43AG-7
@@ -2321,6 +2527,18 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia L1.txt	Focal Utopia	Foc
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia R1.txt	Focal Utopia	Focal Utopia	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia R2.txt	Focal Utopia	Focal Utopia	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia R3.txt	Focal Utopia	Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S2 L1.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S2 L2.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S2 L3.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S2 R1.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S2 R2.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S2 R3.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S3 L1.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S3 L2.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S3 L3.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S3 R1.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S3 R2.txt		Focal Utopia	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Utopia S3 R3.txt		Focal Utopia	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/T50RP Mk3 L3.txt	T50RP Mk3	Fostex T50RP Mk3	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/T50RP Mk3 L2.txt	T50RP Mk3	Fostex T50RP Mk3	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/T50RP Mk3 L1.txt	T50RP Mk3	Fostex T50RP Mk3	over-ear	GRAS 43AG-7
@@ -2486,6 +2704,18 @@ file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HEDDphone R3
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HEDDphone R4.txt	Heinz Electrodynamic Designs (HEDD) HEDDphone	HEDD HEDDphone	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HEDDphone R5.txt	Heinz Electrodynamic Designs (HEDD) HEDDphone	HEDD HEDDphone	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HEDDphone R2.txt	Heinz Electrodynamic Designs (HEDD) HEDDphone	HEDD HEDDphone	over-ear	EARS + 711
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone L1.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone L2.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone L3.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone R1.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone R2.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone R3.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone S2 L1.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone S2 L2.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone S2 L3.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone S2 R1.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone S2 R2.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HEDDphone S2 R3.txt		HEDD HEDDphone	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Ananda R2.txt	Hifiman Electronics Ananda	HIFIMAN Ananda	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Ananda R1.txt	Hifiman Electronics Ananda	HIFIMAN Ananda	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Ananda R3.txt	Hifiman Electronics Ananda	HIFIMAN Ananda	over-ear	EARS + 711
@@ -2596,6 +2826,18 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/HE400se L1.txt	HE400se	HIFIMAN
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HE400se R3.txt	HE400se	HIFIMAN HE400se	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HE400se R2.txt	HE400se	HIFIMAN HE400se	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HE400se L2.txt	HE400se	HIFIMAN HE400se	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 L1.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 L2.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 L3.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 R1.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 R2.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 R3.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 V1 S2 L1.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 V1 S2 L2.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 V1 S2 L3.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 V1 S2 R1.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 V1 S2 R2.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HE560 V1 S2 R3.txt		HIFIMAN HE560 (V1)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HE5SE R1.txt	HE5SE	HIFIMAN HE5se	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HE5SE R3.txt	HE5SE	HIFIMAN HE5se	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HE5SE R2.txt	HE5SE	HIFIMAN HE5se	over-ear	EARS + 711
@@ -2662,6 +2904,18 @@ file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Sundara R4.t
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Sundara R5.txt	Hifiman Electronics Sundara	HIFIMAN Sundara (pre-2020 earpads)	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Sundara R1.txt	Hifiman Electronics Sundara	HIFIMAN Sundara (pre-2020 earpads)	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Sundara R3.txt	Hifiman Electronics Sundara	HIFIMAN Sundara (pre-2020 earpads)	over-ear	EARS + 711
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara L1.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara L2.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara L3.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara R1.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara R2.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara R3.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara S2 L1.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara S2 L2.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara S2 L3.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara S2 R1.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara S2 R2.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Susvara S2 R3.txt		HIFIMAN Susvara	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TWS600 R.txt	TWS600	HIFIMAN TWS600	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/TWS600 L.txt	TWS600	HIFIMAN TWS600	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HP3 #1 R.txt		HP3	ignore	711
@@ -2870,6 +3124,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zeni
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zenith Orange R.txt	Zenith Orange	IMR Acoustics Zenith (orange)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zenith Pink R.txt	Zenith Pink	IMR Acoustics Zenith (pink)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zenith Pink L.txt	Zenith Pink	IMR Acoustics Zenith (pink)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/R1 S2 Black mod L.txt		IMR R1 (Sample 2, modded) (Black nozzle)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/R1 S2 Black mod R.txt		IMR R1 (Sample 2, modded) (Black nozzle)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/R1 S2 Blue mod L.txt		IMR R1 (Sample 2, modded) (Blue nozzle)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/R1 S2 Blue mod R.txt		IMR R1 (Sample 2, modded) (Blue nozzle)	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/In Air L.txt	In Air	INAIR M360	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/In Air R.txt	In Air	INAIR M360	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Prophile8 R.txt	Prophile8	InEar ProPhile-8	in-ear	711
@@ -3006,6 +3264,14 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA3 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA3 R.txt	EA3	Jade Audio EA3	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vista L.txt	Vista	Jaybird Vista	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vista R.txt	Vista	Jaybird Vista	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco L.txt		Jomo Audio Flamenco	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco R.txt		Jomo Audio Flamenco	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco S2 L.txt		Jomo Audio Flamenco	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco S2 R.txt		Jomo Audio Flamenco	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco Bass Treble L.txt		Jomo Audio Flamenco (bass on, treble on)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco Bass Treble R.txt		Jomo Audio Flamenco (bass on, treble on)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco S2 Bass Treble L.txt		Jomo Audio Flamenco (bass on, treble on)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco S2 Bass Treble R.txt		Jomo Audio Flamenco (bass on, treble on)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco Bass L.txt	Flamenco Bass	Jomo Audio Flamenco (bass)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco Bass R.txt	Flamenco Bass	Jomo Audio Flamenco (bass)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Flamenco Treble R.txt	Flamenco Treble	Jomo Audio Flamenco (treble)	in-ear	711
@@ -3098,6 +3364,13 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS10
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS10 Pro R.txt	KZ (Knowledge Zenith) ZS10 Pro	KZ ZS10 Pro	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/ZS10 Pro R.txt	KZ (Knowledge Zenith) ZS10 Pro	KZ ZS10 Pro	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/ZS10 Pro L.txt	KZ (Knowledge Zenith) ZS10 Pro	KZ ZS10 Pro	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS3 L.txt		KZ ZS3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS3 R.txt		KZ ZS3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS3 S2 L.txt		KZ ZS3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS3 S2 R.txt		KZ ZS3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS5v1 L.txt		KZ ZS5v1	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS5v1 R.txt		KZ ZS5v1	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS5v1 S2 R.txt		KZ ZS5v1	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS5v2 L.txt	KZ (Knowledge Zenith) ZS5v2	KZ ZS5v2	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS5v2 R.txt	KZ (Knowledge Zenith) ZS5v2	KZ ZS5v2	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZS6 R.txt	KZ (Knowledge Zenith) ZS6	KZ ZS6	in-ear	711
@@ -3110,6 +3383,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZSR 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZSR R.txt	KZ (Knowledge Zenith) ZSR	KZ ZSR	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZST R.txt	KZ (Knowledge Zenith) ZST	KZ ZST	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZST L.txt	KZ (Knowledge Zenith) ZST	KZ ZST	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZSX L.txt		KZ ZSX	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZSX R.txt		KZ ZSX	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZSX S2 L.txt		KZ ZSX	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZSX S2 R.txt		KZ ZSX	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/CRN S2 L.txt		KZ x Crinacle CRN	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/CRN Proto L.txt		KZ x Crinacle CRN	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/CRN Proto R.txt		KZ x Crinacle CRN	in-ear	711
@@ -3140,6 +3417,10 @@ file://measurements/crinacle/raw_data/4620 IEM Measurements/H3 R.txt	H3	Kinera H
 file://measurements/crinacle/raw_data/4620 IEM Measurements/H3 L.txt	H3	Kinera H3	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hodur L.txt	Hodur	Kinera Hodur	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hodur R.txt	Hodur	Kinera Hodur	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Idun L.txt		Kinera IDUN	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Idun R.txt		Kinera IDUN	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Idun S2 L.txt		Kinera IDUN	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Idun S2 R.txt		Kinera IDUN	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IDUN Deluxe L.txt	IDUN Deluxe	Kinera IDUN Deluxe	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IDUN Deluxe R.txt	IDUN Deluxe	Kinera IDUN Deluxe	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nanna L.txt	Nanna	Kinera Nanna	in-ear	711
@@ -3219,6 +3500,10 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/SP540 L2.txt	SP540	Koss SP540	
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SP540 R3.txt	SP540	Koss SP540	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KL-Trio Min Test L.txt	KL-Trio Min Test	Kumitate KL-Trio (min) (test)	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KL-Trio Min Test R.txt	KL-Trio Min Test	Kumitate KL-Trio (min) (test)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KL-Corona L.txt		Kumitate Lab KL-Corona	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KL-Corona R.txt		Kumitate Lab KL-Corona	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KL-Corona S2 L.txt		Kumitate Lab KL-Corona	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KL-Corona S2 R.txt		Kumitate Lab KL-Corona	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KL-Focus Max Bass R.txt	KL-Focus Max Bass	Kumitate Lab KL-Focus (max bass)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KL-Focus Max Bass L.txt	KL-Focus Max Bass	Kumitate Lab KL-Focus (max bass)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KL-Focus Min Bass R.txt	KL-Focus Min Bass	Kumitate Lab KL-Focus (min bass)	in-ear	711
@@ -3300,6 +3585,14 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Aeth
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Aether R Bass R.txt	Aether R Bass	Lime Ears Aether R (bass)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/LE2 L.txt	LE2	Lime Ears LE2	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/LE2 R.txt	LE2	Lime Ears LE2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X L.txt		Lime Ears Model X (switch off)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X R.txt		Lime Ears Model X (switch off)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X S2 L.txt		Lime Ears Model X (switch off)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X S2 R.txt		Lime Ears Model X (switch off)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X Bass L.txt		Lime Ears Model X (switch on)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X Bass R.txt		Lime Ears Model X (switch on)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X Bass S2 L.txt		Lime Ears Model X (switch on)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X Bass S2 R.txt		Lime Ears Model X (switch on)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Lokahi R.txt	Lokahi	Linsoul Audio Lokahi	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Lokahi L.txt	Lokahi	Linsoul Audio Lokahi	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/GYFU L3.txt	GYFU	Little Dot GYFU	over-ear	GRAS 43AG-7
@@ -3375,6 +3668,10 @@ file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Panda Passiv
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Panda Passive R1.txt	Panda Passive	Massdrop Panda (passive)	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Panda Passive R2.txt	Panda Passive	Massdrop Panda (passive)	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Panda Passive R4.txt	Panda Passive	Massdrop Panda (passive)	over-ear	EARS + 711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Plus L.txt		Massdrop Plus Universal IEM	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Plus R.txt		Massdrop Plus Universal IEM	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Plus S2 L.txt		Massdrop Plus Universal IEM	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Plus S2 R.txt		Massdrop Plus Universal IEM	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MH40 L1.txt	MH40	Master & Dynamic MH40	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MH40 L3.txt	MH40	Master & Dynamic MH40	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MH40 L2.txt	MH40	Master & Dynamic MH40	over-ear	GRAS 43AG-7
@@ -3434,6 +3731,12 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean L1.txt	Meze Empyrean	
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean L3.txt	Meze Empyrean	Meze Empyrean	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean R2.txt	Meze Empyrean	Meze Empyrean	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean R1.txt	Meze Empyrean	Meze Empyrean	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean S2 L1.txt		Meze Empyrean	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean S2 L2.txt		Meze Empyrean	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean S2 L3.txt		Meze Empyrean	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean S2 R1.txt		Meze Empyrean	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean S2 R2.txt		Meze Empyrean	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Empyrean S2 R3.txt		Meze Empyrean	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Liric L2.txt	Liric	Meze Liric	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Liric L3.txt	Liric	Meze Liric	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Liric R1.txt	Liric	Meze Liric	over-ear	GRAS 43AG-7
@@ -3641,6 +3944,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Kade
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Kadence L.txt	Kadence	Noble Audio Kadence	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Katana L.txt	Katana	Noble Audio Katana	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Katana R.txt	Katana	Noble Audio Katana	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Khan L.txt		Noble Audio Khan	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Khan R.txt		Noble Audio Khan	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Khan S2 L.txt		Noble Audio Khan	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Khan S2 R.txt		Noble Audio Khan	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Kublai Khan R.txt	Kublai Khan	Noble Audio Kublai Khan	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Kublai Khan L.txt	Kublai Khan	Noble Audio Kublai Khan	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M3 Noble L.txt	M3 Noble	Noble Audio M3	in-ear	711
@@ -3718,10 +4025,19 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Fins
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Finschi L.txt	Finschi	Oriolus Finschi	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Finschi Hifi R.txt	Finschi Hifi	Oriolus Finschi Hifi	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Finschi Hifi L.txt	Finschi Hifi	Oriolus Finschi Hifi	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Forsteni L.txt		Oriolus Forsteni	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Forsteni R.txt		Oriolus Forsteni	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Forsteni S2 R.txt		Oriolus Forsteni	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Isabellae R.txt	Isabellae	Oriolus Isabellae	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Isabellae L.txt	Isabellae	Oriolus Isabellae	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mellianus R.txt	Mellianus	Oriolus Mellianus	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mellianus L.txt	Mellianus	Oriolus Mellianus	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mk2 L.txt		Oriolus Mk2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mk2 R.txt		Oriolus Mk2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mk2 S2 L.txt		Oriolus Mk2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mk2 S2 R.txt		Oriolus Mk2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mk2 S3 L.txt		Oriolus Mk2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mk2 S3 R.txt		Oriolus Mk2	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Percivali L.txt	Percivali	Oriolus Percivali	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Percivali R.txt	Percivali	Oriolus Percivali	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Traillii L.txt	Traillii	Oriolus Traillii	in-ear	711
@@ -3746,6 +4062,10 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/TX-901 R1.txt	TX-901	Ovidius T
 file://measurements/crinacle/raw_data/GRAS 43AG-7/TX-901 L3.txt	TX-901	Ovidius TX-901	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SH2 L.txt	SH2	PEARS SH2	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SH2 R.txt	SH2	PEARS SH2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SH3 L.txt		PEARS SH3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SH3 R.txt		PEARS SH3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SH3 S2 L.txt		PEARS SH3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SH3 S2 R.txt		PEARS SH3	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SH3 C R.txt	SH3 C	PEARS SH3 (CIEM)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SH3 C L.txt	SH3 C	PEARS SH3 (CIEM)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DM2A L.txt	DM2A	Pai Audio DM2A	in-ear	711
@@ -3800,6 +4120,14 @@ file://measurements/crinacle/raw_data/4620 IEM Measurements/T5 L.txt	QCY T5	QCY 
 file://measurements/crinacle/raw_data/4620 IEM Measurements/T5 R.txt	QCY T5	QCY T5	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AK6 L.txt	AK6	QKZ AK6	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AK6 R.txt	AK6	QKZ AK6	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/VK4 L.txt		QKZ VK4 (pre-revision)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/VK4 R.txt		QKZ VK4 (pre-revision)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/VK4 Revised S1 L.txt		QKZ VK4 (pre-revision)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/VK4 Revised S1 R.txt		QKZ VK4 (pre-revision)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/VK4 S2 L.txt		QKZ VK4 (pre-revision)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/VK4 S2 R.txt		QKZ VK4 (pre-revision)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/VK4 Revised S2 L.txt		QKZ VK4 (revised)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/VK4 Revised S2 R.txt		QKZ VK4 (revised)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZXD L.txt	QKZ ZXD	QKZ ZXD	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZXD R.txt	QKZ ZXD	QKZ ZXD	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/ZXD R.txt	QKZ ZXD	QKZ ZXD	in-ear	Bruel & Kjaer 4620
@@ -3821,12 +4149,18 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Adon
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Adonis L.txt	Adonis	Queen of Audio Adonis	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mojito R.txt	Mojito	Queen of Audio Mojito	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mojito L.txt	Mojito	Queen of Audio Mojito	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Pink Lady L.txt		Queen of Audio Pink Lady	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Pink Lady R.txt		Queen of Audio Pink Lady	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Pink Lady S2 L.txt		Queen of Audio Pink Lady	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Pink Lady S2 R.txt		Queen of Audio Pink Lady	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/QM50 R.txt	QM50	Queen of Audio QM50	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/QM50 L.txt	QM50	Queen of Audio QM50	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vesper S2 R.txt	Vesper S2	Queen of Audio Vesper	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vesper L.txt	Vesper	Queen of Audio Vesper	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vesper R.txt	Vesper	Queen of Audio Vesper	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Vesper S2 L.txt	Vesper S2	Queen of Audio Vesper	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/R1 S2 Blue mod Open L.txt		R1 S2 Blue mod Open	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/R1 S2 Blue mod Open R.txt		R1 S2 Blue mod Open	ignore	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SR1a (ear contact) L1.txt	SR1a (ear contact)	RAAL SR1a	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SR1a (ear contact) R2.txt	SR1a (ear contact)	RAAL SR1a	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SR1a (ear contact) R3.txt	SR1a (ear contact)	RAAL SR1a	over-ear	GRAS 43AG-7
@@ -4016,6 +4350,18 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/HD559 L3.txt	HD559	Sennheiser 
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD559 R3.txt	HD559	Sennheiser HD 559	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD559 R2.txt	HD559	Sennheiser HD 559	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD559 R1.txt	HD559	Sennheiser HD 559	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S L1.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S L2.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S L3.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S R1.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S R2.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S R3.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S S2 L1.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S S2 L2.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S S2 L3.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S S2 R1.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S S2 R2.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD560S S2 R3.txt		Sennheiser HD 560S	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD579 L2.txt	HD579	Sennheiser HD 579	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD579 L1.txt	HD579	Sennheiser HD 579	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD579 R3.txt	HD579	Sennheiser HD 579	over-ear	GRAS 43AG-7
@@ -4069,6 +4415,12 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 L2.txt	Sennheiser Electr
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 R3.txt	Sennheiser Electronic HD600	Sennheiser HD 600	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 L3.txt	Sennheiser Electronic HD600	Sennheiser HD 600	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 L1.txt	Sennheiser Electronic HD600	Sennheiser HD 600	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020, fresh pads) L1.txt		Sennheiser HD 600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020, fresh pads) L2.txt		Sennheiser HD 600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020, fresh pads) L3.txt		Sennheiser HD 600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020, fresh pads) R1.txt		Sennheiser HD 600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020, fresh pads) R2.txt		Sennheiser HD 600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020, fresh pads) R3.txt		Sennheiser HD 600 (2020)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (worn pads) R3.txt	HD600 S3 (worn pads)	Sennheiser HD 600 (2020, worn earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (worn pads) R1.txt	HD600 S3 (worn pads)	Sennheiser HD 600 (2020, worn earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (worn pads) L2.txt	HD600 S3 (worn pads)	Sennheiser HD 600 (2020, worn earpads)	over-ear	GRAS 43AG-7
@@ -4093,6 +4445,30 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 L1.txt	Sennheiser Electr
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 L2.txt	Sennheiser Electronic HD650	Sennheiser HD 650	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 R3.txt	Sennheiser Electronic HD650	Sennheiser HD 650	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 R1.txt	Sennheiser Electronic HD650	Sennheiser HD 650	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (fresh pads) L1.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (fresh pads) L2.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (fresh pads) L3.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (fresh pads) R1.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (fresh pads) R2.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (fresh pads) R3.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, fresh pads) L1.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, fresh pads) L2.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, fresh pads) L3.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, fresh pads) R1.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, fresh pads) R2.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, fresh pads) R3.txt		Sennheiser HD 650 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (worn pads) L1.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (worn pads) L2.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (worn pads) L3.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (worn pads) R1.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (worn pads) R2.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020) (worn pads) R3.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, worn pads) L1.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, worn pads) L2.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, worn pads) L3.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, worn pads) R1.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, worn pads) R2.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S2 (2020, worn pads) R3.txt		Sennheiser HD 650 (2020, worn earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S3 (Worn-ish pads) R2.txt	HD650 S3 (Worn-ish pads)	Sennheiser HD 650 (pre-2020, semi-worn earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S3 (Worn-ish pads) R3.txt	HD650 S3 (Worn-ish pads)	Sennheiser HD 650 (pre-2020, semi-worn earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD650 S3 (Worn-ish pads) R1.txt	HD650 S3 (Worn-ish pads)	Sennheiser HD 650 (pre-2020, semi-worn earpads)	over-ear	GRAS 43AG-7
@@ -4116,6 +4492,12 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/HD660S R2.txt	Sennheiser Elect
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD660S L2.txt	Sennheiser Electronic HD660S	Sennheiser HD 660 S	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD660S R3.txt	Sennheiser Electronic HD660S	Sennheiser HD 660 S	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD660S L1.txt	Sennheiser Electronic HD660S	Sennheiser HD 660 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/HD800 S2 R.txt		Sennheiser HD 800	ignore	711
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 S2 L1.txt		Sennheiser HD 800	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 S2 L2.txt		Sennheiser HD 800	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 S2 L3.txt		Sennheiser HD 800	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 S2 R2.txt		Sennheiser HD 800	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 S2 R3.txt		Sennheiser HD 800	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HD800 S2 SDR R1.txt		Sennheiser HD 800 (SDR mod)	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HD800 S2 SDR R2.txt		Sennheiser HD 800 (SDR mod)	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HD800 S2 SDR R3.txt		Sennheiser HD 800 (SDR mod)	over-ear	EARS + 711
@@ -4137,6 +4519,18 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S L2.txt	Sennheiser Elect
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S R3.txt	Sennheiser Electronic HD800S	Sennheiser HD 800 S	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S R1.txt	Sennheiser Electronic HD800S	Sennheiser HD 800 S	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S L3.txt	Sennheiser Electronic HD800S	Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S2 L1.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S2 L2.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S2 L3.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S2 R1.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S2 R2.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S2 R3.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S3 L1.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S3 L2.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S3 L3.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S3 R1.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S3 R2.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800S S3 R3.txt		Sennheiser HD 800 S	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HD820 R3.txt	Sennheiser Electronic HD820	Sennheiser HD 820	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HD820 R5.txt	Sennheiser Electronic HD820	Sennheiser HD 820	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/HD820 R1.txt	Sennheiser Electronic HD820	Sennheiser HD 820	over-ear	EARS + 711
@@ -4154,6 +4548,25 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/HD8XX L1.txt	HD8XX	Sennheiser 
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD8XX R2.txt	HD8XX	Sennheiser HD 8XX	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD8XX R3.txt	HD8XX	Sennheiser HD 8XX	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HD8XX L2.txt	HD8XX	Sennheiser HD 8XX	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 (2020) S2 L1.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 (2020) S2 L2.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 (2020) S2 L3.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 (2020) S2 R1.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 (2020) S2 R2.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 (2020) S2 R3.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020) (fresh pads) L1.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020) (fresh pads) L2.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020) (fresh pads) L3.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020) (fresh pads) R1.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020) (fresh pads) R2.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD600 S3 (2020) (fresh pads) R3.txt		Sennheiser HD600 (2020)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 S2 R1.txt		Sennheiser HD800	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 SDR L1.txt		Sennheiser HD800 (SDR mod)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 SDR L2.txt		Sennheiser HD800 (SDR mod)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 SDR L3.txt		Sennheiser HD800 (SDR mod)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 SDR R1.txt		Sennheiser HD800 (SDR mod)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 SDR R2.txt		Sennheiser HD800 (SDR mod)	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/HD800 SDR R3.txt		Sennheiser HD800 (SDR mod)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HE-1 (fresh pads) L1.txt	Sennheiser HE-1 (Fresh pads)	Sennheiser HE 1 Orpheus 2	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HE-1 (fresh pads) L3.txt	Sennheiser HE-1 (Fresh pads)	Sennheiser HE 1 Orpheus 2	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HE-1 (fresh pads) R1.txt	Sennheiser HE-1 (Fresh pads)	Sennheiser HE 1 Orpheus 2	over-ear	GRAS 43AG-7
@@ -4210,6 +4623,12 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 Wireless L1.txt	Mom
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 Wireless R1.txt	Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 Wireless L2.txt	Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 Wireless L3.txt	Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 S2 L1.txt		Sennheiser Momentum 3 Wireless	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 S2 L2.txt		Sennheiser Momentum 3 Wireless	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 S2 L3.txt		Sennheiser Momentum 3 Wireless	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 S2 R1.txt		Sennheiser Momentum 3 Wireless	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 S2 R2.txt		Sennheiser Momentum 3 Wireless	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 3 S2 R3.txt		Sennheiser Momentum 3 Wireless	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 4 Wireless (Active) R2.txt	Momentum 4 Wireless (Active)	Sennheiser Momentum 4 Wireless	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 4 Wireless (Active) L2.txt	Momentum 4 Wireless (Active)	Sennheiser Momentum 4 Wireless	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Momentum 4 Wireless (Active) L3.txt	Momentum 4 Wireless (Active)	Sennheiser Momentum 4 Wireless	over-ear	GRAS 43AG-7
@@ -4306,6 +4725,8 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hibi
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hibiki SE L.txt	Hibiki SE	Shozy x AAW Hibiki SE	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Pola S2 L.txt	Pola S2	Shozy x AAW Pola	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Pola S2 R.txt	Pola S2	Shozy x AAW Pola	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Pola L.txt		Shozy x AAW Pola	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Pola R.txt		Shozy x AAW Pola	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/D13 Gold R.txt	D13 Gold	Shuoer D13 (gold nozzle)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/D13 Gold L.txt	D13 Gold	Shuoer D13 (gold nozzle)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/D13 Silver R.txt	D13 Silver	Shuoer D13 (silver nozzle)	in-ear	711
@@ -4348,6 +4769,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Aoni
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Aonic 5 Neutral R.txt	Aonic 5 Neutral	Shure Aonic 5 (default filter)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Aonic 5 Warm L.txt	Aonic 5 Warm	Shure Aonic 5 (warm filter)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Aonic 5 Warm R.txt	Aonic 5 Warm	Shure Aonic 5 (warm filter)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KSE1200 L.txt		Shure KSE1200	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KSE1200 R.txt		Shure KSE1200	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KSE1200 S2 L.txt		Shure KSE1200	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KSE1200 S2 R.txt		Shure KSE1200	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE215 R.txt	SE215	Shure SE215	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE215 L.txt	SE215	Shure SE215	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE215 Ltd R.txt	SE215 Ltd	Shure SE215 Ltd	in-ear	711
@@ -4358,6 +4783,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE42
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE425 R.txt	SE425	Shure SE425	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE535 L.txt	SE535	Shure SE535	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE535 R.txt	SE535	Shure SE535	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE846 Black L.txt		Shure SE846 (black)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE846 Black R.txt		Shure SE846 (black)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE846 Black S2 L.txt		Shure SE846 (black)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE846 Black S2 R.txt		Shure SE846 (black)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE846 Blue R.txt	SE846 Blue	Shure SE846 (blue)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE846 Blue L.txt	SE846 Blue	Shure SE846 (blue)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE846 White R.txt	SE846 White	Shure SE846 (white)	in-ear	711
@@ -4380,6 +4809,18 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH440 R1.txt	SRH440	Shure SRH
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH440 L3.txt	SRH440	Shure SRH440	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH440 R2.txt	SRH440	Shure SRH440	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH440 L2.txt	SRH440	Shure SRH440	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 L1.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 L2.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 L3.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 R1.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 R2.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 R3.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 L1.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 L2.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 L3.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 R1.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 R2.txt		Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 R3.txt		Shure SRH840	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EK3 L.txt	EK3	Simgot Audio EK3 (off-off)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EK3 R.txt	EK3	Simgot Audio EK3 (off-off)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EK3 1 L.txt	EK3 1	Simgot Audio EK3 (off-on)	in-ear	711
@@ -4442,8 +4883,26 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M7 L
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M7 R.txt	M7	Sony IER-M7	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IER-M7Q R.txt	IER-M7Q	Sony IER-M7 Q	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IER-M7Q L.txt	IER-M7Q	Sony IER-M7 Q	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M9 L.txt		Sony IER-M9	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M9 R.txt		Sony IER-M9	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M9 S2 L.txt		Sony IER-M9	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M9 S2 R.txt		Sony IER-M9	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M9 S2 Filterless R.txt	M9 S2 Filterless	Sony IER-M9 (no filter)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/M9 S2 Filterless L.txt	M9 S2 Filterless	Sony IER-M9 (no filter)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R L.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R R.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S2 L.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S2 R.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S3 L.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S3 R.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S4 L.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S4 R.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S5 L.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S5 R.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S6 L.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S6 R.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S7 L.txt		Sony IER-Z1R	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R S7 R.txt		Sony IER-Z1R	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/IER-Z1R R.txt	IER-Z1R	Sony IER-Z1R	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/IER-Z1R L.txt	IER-Z1R	Sony IER-Z1R	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Z1R Filterless L.txt	Z1R Filterless	Sony IER-Z1R (no filter)	in-ear	711
@@ -4465,6 +4924,10 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/MDR-7510 L1.txt	MDR-7510	Sony 
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MDR-7510 R2.txt	MDR-7510	Sony MDR-7510	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MDR-7510 R3.txt	MDR-7510	Sony MDR-7510	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MDR-7510 L3.txt	MDR-7510	Sony MDR-7510	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MDR7550 L.txt		Sony MDR-7550	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MDR7550 R.txt		Sony MDR-7550	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MDR7550 S2 L.txt		Sony MDR-7550	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MDR7550 S2 R.txt		Sony MDR-7550	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AS800 L.txt	AS800	Sony MDR-AS800	over-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AS800 R.txt	AS800	Sony MDR-AS800	over-ear	711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/CD2000 R2.txt	Sony MDR-CD2000	Sony MDR-CD2000	over-ear	EARS + 711
@@ -4515,6 +4978,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EX51
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EX510 Filterless L.txt	EX510 Filterless	Sony MDR-EX510 (no filter)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EX800 L.txt		Sony MDR-EX800ST	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EX800 R.txt		Sony MDR-EX800ST	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EX800ST S2 L.txt		Sony MDR-EX800ST	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EX800ST S2 R.txt		Sony MDR-EX800ST	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EX800ST S3 L.txt		Sony MDR-EX800ST	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EX800ST S3 R.txt		Sony MDR-EX800ST	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MDR-M1ST L1.txt	MDR-M1ST	Sony MDR-M1ST	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MDR-M1ST L2.txt	MDR-M1ST	Sony MDR-M1ST	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MDR-M1ST L3.txt	MDR-M1ST	Sony MDR-M1ST	over-ear	GRAS 43AG-7
@@ -4554,6 +5021,14 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH75
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH750 L.txt	MH750	Sony MH750	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 R.txt	Sony MH755 S1	Sony MH755	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 L.txt	Sony MH755 S1	Sony MH755	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 S2 L.txt		Sony MH755	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 S2 R.txt		Sony MH755	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 S3 L.txt		Sony MH755	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 S3 R.txt		Sony MH755	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 S4 L.txt		Sony MH755	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 S4 R.txt		Sony MH755	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 S5 L.txt		Sony MH755	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/MH755 S5 R.txt		Sony MH755	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/MH755 R.txt	Sony MH755 S1	Sony MH755	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/MH755 L.txt	Sony MH755 S1	Sony MH755	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/WF-1000XM3 L.txt	WF-1000XM3	Sony WF-1000XM3	in-ear	711
@@ -4592,6 +5067,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA3
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA300 R.txt	XBA300	Sony XBA-300	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-40 L.txt	XBA-40	Sony XBA-40	over-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-40 R.txt	XBA-40	Sony XBA-40	over-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-A3 L.txt		Sony XBA-A3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-A3 R.txt		Sony XBA-A3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-A3 S3 L.txt		Sony XBA-A3	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-A3 S3 R.txt		Sony XBA-A3	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-A3 Mod R.txt	XBA-A3 Mod	Sony XBA-A3 (modded)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-A3 Mod L.txt	XBA-A3 Mod	Sony XBA-A3 (modded)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/XBA-H3 L.txt	XBA-H3	Sony XBA-H3	in-ear	711
@@ -4618,6 +5097,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/10 F
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/10 Flat S2 R.txt		Sound Linear Fitz 10 Flat	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/E11 L.txt	E11	SoundMAGIC E11	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/E11 R.txt	E11	SoundMAGIC E11	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE5U L.txt		Spiral Ear SE 5-Way Ultimate	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE5U R.txt		Spiral Ear SE 5-Way Ultimate	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE5U S2 L.txt		Spiral Ear SE 5-Way Ultimate	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/SE5U S2 R.txt		Spiral Ear SE 5-Way Ultimate	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Radiante R3.txt	Radiante	Spirit Torino Radiante	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Radiante L3.txt	Radiante	Spirit Torino Radiante	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Radiante R2.txt	Radiante	Spirit Torino Radiante	over-ear	GRAS 43AG-7
@@ -4718,6 +5201,18 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/L300 R2.txt	Stax SR-L300	Stax 
 file://measurements/crinacle/raw_data/GRAS 43AG-7/L300 R3.txt	Stax SR-L300	Stax SR-L300	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/L300 L3.txt	Stax SR-L300	Stax SR-L300	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/L300 L2.txt	Stax SR-L300	Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 L1.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 L2.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 L3.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 R1.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 R2.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 R3.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 S2 L1.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 S2 L2.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 S2 L3.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 S2 R1.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 S2 R2.txt		Stax SR-L300	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 S2 R3.txt		Stax SR-L300	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 Limited R1.txt	SR-L300 Limited	Stax SR-L300 Limited	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 Limited L3.txt	SR-L300 Limited	Stax SR-L300 Limited	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L300 Limited R3.txt	SR-L300 Limited	Stax SR-L300 Limited	over-ear	GRAS 43AG-7
@@ -4735,6 +5230,12 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/L500 L2.txt	Stax SR-L500	Stax 
 file://measurements/crinacle/raw_data/GRAS 43AG-7/L500 R1.txt	Stax SR-L500	Stax SR-L500	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/L500 L1.txt	Stax SR-L500	Stax SR-L500	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/L500 R3.txt	Stax SR-L500	Stax SR-L500	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L500 S2 L1.txt		Stax SR-L500	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L500 S2 L2.txt		Stax SR-L500	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L500 S2 L3.txt		Stax SR-L500	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L500 S2 R1.txt		Stax SR-L500	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L500 S2 R2.txt		Stax SR-L500	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L500 S2 R3.txt		Stax SR-L500	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/L700 R3.txt	Stax SR-L700	Stax SR-L700	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/L700 R4.txt	Stax SR-L700	Stax SR-L700	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/L700 R2.txt	Stax SR-L700	Stax SR-L700	over-ear	EARS + 711
@@ -4746,6 +5247,18 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/L700 L3.txt	Stax SR-L700	Stax 
 file://measurements/crinacle/raw_data/GRAS 43AG-7/L700 R2.txt	Stax SR-L700	Stax SR-L700	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/L700 R1.txt	Stax SR-L700	Stax SR-L700	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/L700 L1.txt	Stax SR-L700	Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S1 (fresh pads) L1.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S1 (fresh pads) L2.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S1 (fresh pads) L3.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S1 (fresh pads) R1.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S1 (fresh pads) R2.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S1 (fresh pads) R3.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S2 L1.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S2 L2.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S2 L3.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S2 R1.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S2 R2.txt		Stax SR-L700	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-L700 S2 R3.txt		Stax SR-L700	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-Lambda Pro R3.txt	SR-Lambda Pro	Stax SR-Lambda Pro	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-Lambda Pro L1.txt	SR-Lambda Pro	Stax SR-Lambda Pro	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SR-Lambda Pro R1.txt	SR-Lambda Pro	Stax SR-Lambda Pro	over-ear	GRAS 43AG-7
@@ -5069,6 +5582,8 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T2 E
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T2 Evo L.txt	T2 Evo	Tin HiFi T2 Evo	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T2 Plus R.txt	Tin HiFi T2 Plus	Tin HiFi T2 Plus	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T2 Plus L.txt	Tin HiFi T2 Plus	Tin HiFi T2 Plus	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T2 Plus S2 L.txt		Tin HiFi T2 Plus	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T2 Plus S2 R.txt		Tin HiFi T2 Plus	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/T2 Plus L.txt	Tin HiFi T2 Plus	Tin HiFi T2 Plus	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/T2 Plus R.txt	Tin HiFi T2 Plus	Tin HiFi T2 Plus	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T2 Pro L.txt	T2 Pro	Tin HiFi T2 Pro	in-ear	711
@@ -5133,6 +5648,24 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hola
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hola R.txt	Truthear Hola	Truthear Hola	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Hola L.txt	Truthear Hola	Truthear Hola	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Hola R.txt	Truthear Hola	Truthear Hola	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S10 L.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S10 R.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S2 L.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S2 R.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S3 L.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S3 R.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S4 L.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S4 R.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S5 L.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S5 R.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S6 L.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S6 R.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S7 L.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S7 R.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S8 L.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S8 R.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S9 L.txt		Truthear x Crinacle Zero	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S9 R.txt		Truthear x Crinacle Zero	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero TE L.txt		Truthear x Crinacle Zero	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero TE R.txt		Truthear x Crinacle Zero	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ZeroRed S1 L.txt		Truthear x Crinacle Zero RED	in-ear	711
@@ -5219,6 +5752,8 @@ file://measurements/crinacle/raw_data/4620 IEM Measurements/UFO-111 L.txt	UFO-11
 file://measurements/crinacle/raw_data/4620 IEM Measurements/UFO-111 R.txt	UFO-111	UFOEar UFO-111	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/UFO-112 L.txt		UFOEar UFO-112	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/UFO-112 R.txt		UFOEar UFO-112	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Live S2 L.txt		Ultimate Ears Live	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Live S2 R.txt		Ultimate Ears Live	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UERM R.txt	UERM	Ultimate Ears Reference Monitors	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UERM L.txt	UERM	Ultimate Ears Reference Monitors	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UERR L.txt	UERR	Ultimate Ears Reference Remastered	in-ear	711
@@ -5231,6 +5766,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE11
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE11 R.txt	UE11	Ultimate Ears UE11	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/18Plus S3 L.txt		Ultimate Ears UE18+ (2nd Gen)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/18Plus S3 R.txt		Ultimate Ears UE18+ (2nd Gen)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ L.txt		Ultimate Ears UE18+ (2nd Gen)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ R.txt		Ultimate Ears UE18+ (2nd Gen)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ S2 L.txt		Ultimate Ears UE18+ (2nd Gen)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ S2 R.txt		Ultimate Ears UE18+ (2nd Gen)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/18Plus C L.txt	18Plus C	Ultimate Ears UE18+ (CIEM)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/18Plus C R.txt	18Plus C	Ultimate Ears UE18+ (CIEM)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/UE18+ 3rd Gen L.txt	UE18+ 3rd Gen	Ultimate Ears UE18+ 3rd Gen	in-ear	711
@@ -5405,6 +5944,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T2 W
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T2 WG R.txt	W+G T2	W+G T2	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/T2 WG L.txt	W+G T2	W+G T2	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/T2 WG R.txt	W+G T2	W+G T2	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Prelude S2 L.txt		Warbler Prelude	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Prelude S2 R.txt		Warbler Prelude	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Prelude L.txt		Warbler Prelude (CIEM)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Prelude R.txt		Warbler Prelude (CIEM)	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Sonoma Model One (M1) R2.txt	Sonoma Model One (M1)	Warwick Acoustics Sonoma Model One	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Sonoma Model One (M1) L1.txt	Sonoma Model One (M1)	Warwick Acoustics Sonoma Model One	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Sonoma Model One (M1) L3.txt	Sonoma Model One (M1)	Warwick Acoustics Sonoma Model One	over-ear	GRAS 43AG-7
@@ -5625,6 +6168,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AM05
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/AM05 R.txt	AM05	iBasso AM05	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IT00 R.txt	IT00	iBasso IT00	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IT00 L.txt	IT00	iBasso IT00	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IT01 L.txt		iBasso IT01	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IT01 R.txt		iBasso IT01	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IT01 S2 L.txt		iBasso IT01	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IT01 S2 R.txt		iBasso IT01	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IT01S R.txt	IT01S	iBasso IT01S	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IT01S L.txt	IT01S	iBasso IT01S	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IT01X R.txt	IT01X	iBasso IT01X	in-ear	711
