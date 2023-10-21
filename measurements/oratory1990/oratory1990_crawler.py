@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import os
+import re
 import sys
+import tempfile
+from pathlib import Path
 from ghostscript import Ghostscript
 import PyPDF2
 from PIL import Image, ImageDraw
@@ -12,20 +15,20 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from autoeq.frequency_response import FrequencyResponse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex
+from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
 from measurements.image_graph_parser import ImageGraphParser
 
-DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+DIR_PATH = Path(__file__).parent
 
 
 class Oratory1990Crawler(Crawler):
-    def __init__(self, driver=None):
+    def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
         if driver is None:
             opts = Options()
             opts.add_argument('--headless')
             driver = webdriver.Chrome(options=opts)
-        super().__init__(driver=driver)
+        super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
 
     @staticmethod
     def read_name_index():
@@ -34,46 +37,98 @@ class Oratory1990Crawler(Crawler):
     def write_name_index(self):
         self.name_index.write_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
 
+    def guess_name(self, item):
+        """Tries to guess what the name might be."""
+        return item.source_name
+
     @staticmethod
-    def get_existing():
-        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*.csv'))
+    def image_path(item):
+        return DIR_PATH.joinpath('images', f'{item.name}.png')
+
+    def parse_pdf(self, item):
+        pdf_path = self.pdf_path(item)
+        image_path = self.image_path(item)
+        with open(pdf_path, 'rb') as fh:
+            text = PyPDF2.PdfReader(fh).pages[0].extract_text()
+        # Convert to image with ghostscript
+        # Using temporary paths with Ghostscript because it seems to be unable to work with non-ascii characters
+        tmp_in = Path(tempfile.gettempdir()).joinpath('__tmp.pdf')
+        tmp_out = Path(tempfile.gettempdir()).joinpath('__tmp.png')
+        shutil.copy(pdf_path, tmp_in)
+        Ghostscript(
+            b'pdf2png', b'-dNOPAUSE', b'-sDEVICE=png16m', b'-dBATCH', b'-r600', b'-dUseCropBox',
+            f'-sOutputFile={tmp_out}'.encode('utf-8'), tmp_in.encode('utf-8')).exit()
+        shutil.copy(tmp_out, image_path)
+        return text
+
+    @staticmethod
+    def pdf_path(item):
+        return DIR_PATH.joinpath('pdf', f'{item.name}.pdf')
+
+    def resolve(self, item):
+        true_item = self.name_index.find_one(source_name=item.source_name)
+        if true_item is not None and true_item.name is not None:
+            item.name = true_item.name
+        pdf_path = self.pdf_path(item)
+        super().resolve(item)
+        if not self.pdf_path(item).exists():
+            self.download(item.url, pdf_path)
+        with open(pdf_path, 'rb') as fh:
+            text = PyPDF2.PdfReader(fh).pages[0].extract_text()
+        if re.search(r'(?:measured|measurements?) (?:by|from)', text, flags=re.IGNORECASE):
+            # Ignore stuff done based on Crinacle's measurements
+            item.form = 'ignore'
+        elif 'measured on' in text.lower():
+            ix = text.lower().index('measured on')
+            ix += len('measured on ')
+            item.rig = text[ix:].split(' ')[0]
+        else:
+            print('No measured on in PDF for:', item)
+
+    def is_prompt_needed(self, item):
+        if item.form == 'ignore':
+            return False
+        return item.name is None or item.form is None or item.rig is None
 
     def crawl(self):
         if self.driver is None:
             raise TypeError('self.driver cannot be None')
-
+        self.name_index = self.read_name_index()
         document = self.get_beautiful_soup('https://www.reddit.com/r/oratory1990/wiki/index/list_of_presets')
-        urls = {}
         table_header = document.find(id='wiki_full_list_of_eq_settings.3A')
         if table_header is None:
-            raise RedditCrawlFailed('Failed to parse Reddit page.')
-        tbody = table_header.parent.find('table').find('tbody')
-        manufacturer = None
-        model = None
-        for row in tbody.find_all('tr'):
+            raise RedditCrawlFailed('Failed to parse Reddit page. Maybe try again?')
+        self.crawl_index = NameIndex()
+        manufacturer, model = None, None
+        for row in table_header.parent.find('table').find('tbody').find_all('tr'):
             cells = row.find_all('td')
-
             # Parse cells
+            # Try to read manufacturer from the first cell and if it fails (cell is empty), use the previous name
             manufacturer = cells[0].text.strip() if cells[0].text.strip() != '-' else manufacturer
+            # Try to read model from the second cell and if it fails (cell is empty), use the previous name
             model = cells[1].text.strip() if cells[1].text.strip() != '-' else model
-            url = cells[2].find('a')['href'].replace('?dl=0', '?dl=1')
-            notes = cells[3].text.strip()
-
-            words = [x.strip().lower() for x in notes.split()]
-            if bool([x for x in ['band', 'eq', 'setting', 'crinacle', 'adi-2'] if x in words]):
-                # Skip various EQ settings
-                continue
-
             source_name = f'{manufacturer} {model}'
+            # Third cell contains hyperlink, where the anchor is the PDF and text is target name
+            url = cells[2].find('a')['href'].replace('?dl=0', '?dl=1')
+            form = 'over-ear' if 'over-ear' in cells[2].text.strip().lower() else 'in-ear'
+            # Fourth cell is notes
+            notes = cells[3].text.strip()
+            if 'preliminary' in notes.lower() or ' EQ' in notes:
+                continue  # Skip various EQ settings and preliminary measurements
             if notes and notes.lower() != 'standard':
                 source_name += f' ({notes})'
-            if source_name not in urls:
-                urls[source_name] = url
-
-        # Manual additions which have not been added to the list yet
-        #urls['Avantone Planar'] = 'https://www.dropbox.com/s/o867ox65g124mp1/Avantone%20Planar.pdf?dl=1'
-
-        return urls
+            item = NameItem(source_name, None, form, url=url)
+            known_item = self.name_index.find_one(source_name=source_name)  # TODO: Switch to URL
+            if known_item is not None:
+                if known_item.name is not None:
+                    item.name = known_item.name
+                if known_item.form is not None:
+                    item.form = known_item.form
+                if known_item.rig is not None:
+                    item.rig = known_item.rig
+            if not self.crawl_index.find(source_name=source_name):
+                self.crawl_index.add(item)
+        return self.crawl_index
 
     @staticmethod
     def parse_image(im, model, px_top=800, px_bottom=4400, px_left=0, px_right=2500):
@@ -153,43 +208,17 @@ class Oratory1990Crawler(Crawler):
         fr.center()
         return fr, _im
 
-    @staticmethod
-    def pdf_to_image(input_file, output_file):
-        input_file = os.path.abspath(input_file)
-        output_file = os.path.abspath(output_file)
+    def target_group_key(self, item):
+        """Key for grouping measurements (NameItems) that should be averaged"""
+        return f'{item.form}/{item.name}'
 
-        # Read headphone model from the PDF
-        f = open(input_file, 'rb')
-        text = PyPDF2.PdfReader(f).pages[0].extract_text()
-        if 'crinacle' in text.lower():
-            raise ValueError('Measured by Crinacle')
+    def target_path(self, item):
+        """Target file path for the item in measurements directory"""
+        if item.form is None or item.name is None:
+            return None
+        return DIR_PATH.joinpath('data', item.form, f'{item.name}.csv')
 
-        # Convert to image with ghostscript
-        # Using temporary paths with Ghostscript because it seems to be unable to work with non-ascii characters
-        tmp_in = os.path.join(os.path.split(input_file)[0], '__tmp.pdf')
-        tmp_out = os.path.join(os.path.split(output_file)[0], '__tmp.png')
-        if tmp_in == input_file or tmp_out == output_file:
-            # Skip tmp files in case it was passed as input
-            raise ValueError('tmp file')
-        shutil.copy(input_file, tmp_in)
-        gs = Ghostscript(
-            b'pdf2png',
-            b'-dNOPAUSE',
-            b'-sDEVICE=png16m',
-            b'-dBATCH',
-            b'-r600',
-            b'-dUseCropBox',
-            f'-sOutputFile={tmp_out}'.encode('utf-8'),
-            tmp_in.encode('utf-8')
-        )
-        gs.exit()
-        shutil.copy(tmp_out, output_file)
-        print('  Saved image to "{}"'.format(output_file))
-        f.close()
-
-        return Image.open(output_file)
-
-    def process_group(self, items, url):
+    def process_group(self, items, new_only=True):
         if items.form == 'ignore':
             return
 
@@ -208,7 +237,7 @@ class Oratory1990Crawler(Crawler):
         if not pdf_path:
             return
         try:
-            im = Oratory1990Crawler.pdf_to_image(
+            im = Oratory1990Crawler.parse_pdf(
                 os.path.join(pdf_dir, f'{items.name}.pdf'),
                 os.path.join(image_dir, f'{items.name}.png')
             )
@@ -234,11 +263,3 @@ class RedditCrawlFailed(Exception):
 class GraphParseFailed(Exception):
     pass
 
-
-def main():
-    crawler = Oratory1990Crawler()
-    crawler.process_all(prompt=False)
-
-
-if __name__ == '__main__':
-    main()

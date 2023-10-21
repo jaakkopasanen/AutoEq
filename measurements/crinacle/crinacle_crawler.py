@@ -35,8 +35,8 @@ class CrinacleCrawler(Crawler):
         'IEC60318-4 IEM Measurements (TSV txt)': 'in-ear',
     }
 
-    def __init__(self, driver=None):
-        super().__init__(driver=driver)
+    def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
+        super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
         self.book_index = self.parse_books()
 
     def parse_books(self):
@@ -108,11 +108,6 @@ class CrinacleCrawler(Crawler):
         self.name_index.write_tsv(CRINACLE_PATH.joinpath('name_index.tsv'))
 
     @staticmethod
-    def get_existing():
-        # FIXME: Tanchjim Zero exists in 711 measurements, seeing that in 4620 raw_data will be ignored when crawling
-        return NameIndex.read_files(os.path.join(CRINACLE_PATH, 'data', '**', '*.csv'))
-
-    @staticmethod
     def get_url_from_file_path(raw_data_file_path):
         """Creates URL from file path"""
         url = raw_data_file_path.relative_to(ROOT_PATH)
@@ -137,8 +132,7 @@ class CrinacleCrawler(Crawler):
         items = []
         for dir_path in CRINACLE_PATH.joinpath('raw_data').glob('*'):
             for item in [self.get_item_from_file_path(fp) for fp in dir_path.glob('*.txt')]:
-                if item.form != 'ignore':
-                    items.append(item)
+                items.append(item)
         self.crawl_index = NameIndex(items=items)
         return self.crawl_index
 
@@ -156,7 +150,7 @@ class CrinacleCrawler(Crawler):
     def source_group_key(self, item):
         return self.normalize_file_name(re.sub(r'^file://', '', item.url))
 
-    def resolve_name(self, item):
+    def resolve(self, item):
         """Resolve name for a single item. Updates the item in place.
 
         Args:

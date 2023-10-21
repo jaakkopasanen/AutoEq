@@ -40,6 +40,7 @@ class NamePrompt:
                     *self._name_proposal_buttons,  # Name suggestions
                     widgets.HBox([*self.form_buttons]),
                     self.text_field,
+                    widgets.Label(f'Measured on: {self.item.rig}'),
                 ]),
                 widgets.HTML(
                     '<div style="margin-left: 12px"><b>Naming convention</b><br />' +

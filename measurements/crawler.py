@@ -46,7 +46,7 @@ class Crawler(ABC):
         a. All measurements of the same headphone model are processed together, frequency responses are averaged
 
     """
-    def __init__(self, driver=None, delete_existing_on_prompt=True):
+    def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
         self._start_time = time()
         self._timings = {}
         # Name resolutions
@@ -57,6 +57,7 @@ class Crawler(ABC):
         self.driver = driver
         self.crawl_index = None
         self.delete_existing_on_prompt = delete_existing_on_prompt
+        self.redownload = redownload
         # UI
         self.prompts = []
         self.prompt_list = None
@@ -103,7 +104,6 @@ class Crawler(ABC):
                 & (self.name_proposals['model'] == model)
         ).any():
             self.name_proposals.loc[len(self.name_proposals.index)] = [item.form, manufacturer, model]
-            print('Added to proposals:', item)
 
     def init_name_proposals(self):
         """Gets name proposals for new measurements
@@ -183,14 +183,14 @@ class Crawler(ABC):
         return item.name or item.source_name or re.sub(
             r'\.(?:txt|csv)$', '', item.url.split('/')[-1], flags=re.IGNORECASE)
 
-    def resolve_name(self, item):
+    def resolve(self, item):
         """Resolve name for a single item. Updates the item in place.
 
         Args:
             item: The crawl index NameItem to resolve
 
         Returns:
-            True if resolution was successful, False if user needs to be prompted
+            None
         """
         ground_truth = self.name_index.find_one(url=item.url)
         if ground_truth and ground_truth.rig is not None:
@@ -202,8 +202,6 @@ class Crawler(ABC):
                 item.form = ground_truth.form
             if ground_truth.rig is not None:
                 item.rig = ground_truth.rig
-            return item
-        return None
 
     def prompt_callback(self, prompted_item):
         self.active_list_item.resolution = 'ignore' if prompted_item.form == 'ignore' else 'success'
@@ -213,23 +211,31 @@ class Crawler(ABC):
             if manufacturer is None:
                 raise UnknownManufacturerError(f'Manufacturer is not known for "{prompted_item.name}"')
             prompted_item.name = self.manufacturers.replace(prompted_item.name)
+            self.add_name_proposal(prompted_item)
         self.update_name_index(prompted_item, write=True)
-        if self.delete_existing_on_prompt and self.target_path(prompted_item).exists():
+        if (
+                self.delete_existing_on_prompt
+                and self.target_path(prompted_item) is not None
+                and self.target_path(prompted_item).exists()
+        ):
             self.target_path(prompted_item).unlink()
-        self.add_name_proposal(prompted_item)
         self.next_prompt()
 
     def create_prompt_callback(self, *args, **kwargs):
         return self.prompt_callback
 
-    def create_prompts(self, max_prompts=4):
+    def is_prompt_needed(self, item):
+        if item.form == 'ignore':
+            return False
+        return item.name is None or item.form is None
+
+    def create_prompts(self, max_prompts=30):
         if self.name_proposals is None:
             self.init_name_proposals()
         self.prompts = []
         crawled_items = sorted(self.crawl_index.items, key=lambda item: item.source_name or item.url.split('/')[-1])
         for item in crawled_items:
-            if item.form is not None and item.name is not None:
-                # All important attributes are known, can skip prompt for item
+            if not self.is_prompt_needed(item):
                 continue
             self.prompts.append(PromptListItem(NamePrompt(item, self.prompt_callback), self.switch_prompt))
             if len(self.prompts) >= max_prompts:
@@ -237,34 +243,29 @@ class Crawler(ABC):
 
     # Crawler methods
 
-    @staticmethod
-    def download(url, name, output_dir, file_type=None):
+    def download(self, url, file_path):
         """Downloads a file from a URL
 
         Args:
             url: URL to download
-            name: True name of the item to download
-            output_dir: Where to write the downloaded file
-            file_type: File extension. Detected automatically if None.
+            file_path: File path for the downloaded file
 
         Returns:
             Bool depicting if download succeeded or not
         """
-        output_dir = os.path.abspath(output_dir)
-        os.makedirs(output_dir, exist_ok=True)
+        file_path = Path(file_path)
+        if file_path.exists() and not self.redownload:
+            with open(file_path, 'rb') as fh:
+                return fh.read()
+        file_path.parent.mkdir(exist_ok=True, parents=True)
         res = requests.get(url, stream=True)
-        if res.status_code != 200:
-            print(f'Failed to download "{name}" at "{url}"')
-            return None
-        if file_type is None:
-            file_type = url.split('.')[-1]
-            file_type = file_type.split('?')[0]
-        file_path = os.path.join(output_dir, f'{name}.{file_type}')
-        with open(file_path, 'wb') as f:
+        if res.status_code < 200 or res.status_code >= 300:
+            raise Exception(f'Failed to download "{url}"')  # TODO: Exception type
+        with open(file_path, 'wb') as fh:
             res.raw.decode_content = True
-            shutil.copyfileobj(res.raw, f)
+            shutil.copyfileobj(res.raw, fh)
         print('Downloaded to "{}"'.format(file_path))
-        return file_path
+        return res.raw
 
     def get_beautiful_soup(self, url):
         self.driver.get(url)
@@ -353,16 +354,18 @@ class Crawler(ABC):
         if self.active_list_item and self.active_list_item.widget.button_style not in ['success', 'ignore']:  # Selected something i.e. is not clear out in the end of the list
             self.active_list_item.active_style()
             # Item needs to be resolved and updated first
-            item = self.resolve_name(self.active_list_item.name_prompt.item)
-            if item is not None:
-                self.active_list_item.name_prompt.item = item
+            self.resolve(self.active_list_item.name_prompt.item)
+            if self.active_list_item.name_prompt.item.form == 'ignore':
+                self.prompt_callback(self.active_list_item.name_prompt.item)
+                self.reload_ui()
+                return
             # then rest of the optional properties
             self.active_list_item.name_prompt.guessed_name = self.guess_name(self.active_list_item.name_prompt.item)
             self.active_list_item.name_prompt.name_proposals = self.get_name_proposals(
-                self.active_list_item.name_prompt.guessed_name, n=6, threshold=10)
+                self.active_list_item.name_prompt.guessed_name, n=4, threshold=10)
             self.active_list_item.name_prompt.similar_names = [
                     item.name for item in self.get_name_proposals(
-                        self.active_list_item.name_prompt.guessed_name, n=4, normalize_digits=True,
+                        self.active_list_item.name_prompt.guessed_name, n=6, normalize_digits=True,
                         normalize_extras=True, threshold=0).items]
             if self.active_list_item.name_prompt.item.name is not None and self.active_list_item.name_prompt.item.form is not None:
                 # Prompting can resolve AutoEq name and the headphone form, both got resolved here, no need to prompt
