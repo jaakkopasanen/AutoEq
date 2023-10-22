@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import numpy as np
 import pandas as pd
 from rapidfuzz import fuzz
@@ -40,6 +41,10 @@ class NameIndex:
 
     def __bool__(self):
         return len(self) > 0
+
+    def __iter__(self):
+        for item in self._by_hash.values():
+            yield item
 
     @property
     def items(self):

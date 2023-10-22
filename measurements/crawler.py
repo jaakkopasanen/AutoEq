@@ -13,9 +13,8 @@ import shutil
 import re
 from bs4 import BeautifulSoup
 import ipywidgets as widgets
-from tqdm.auto import tqdm
 from selenium.webdriver.common.by import By
-
+from autoeq.utils import is_file_name_allowed
 from abc import ABC, abstractmethod
 from time import sleep, time
 from measurements.name_index import NameIndex, NameItem
@@ -204,14 +203,18 @@ class Crawler(ABC):
                 item.rig = ground_truth.rig
 
     def prompt_callback(self, prompted_item):
-        self.active_list_item.resolution = 'ignore' if prompted_item.form == 'ignore' else 'success'
         if prompted_item.form != 'ignore':
+            if not is_file_name_allowed(prompted_item.name):
+                raise ValueError(f'Name "{prompted_item.name}" doesn\'t work as file name')
+            self.active_list_item.resolution = 'success'
             # Replace manufacturer name with the true manufacturer name
             manufacturer, manufacturer_match = self.manufacturers.find(prompted_item.name, ignore_case=True)
             if manufacturer is None:
                 raise UnknownManufacturerError(f'Manufacturer is not known for "{prompted_item.name}"')
             prompted_item.name = self.manufacturers.replace(prompted_item.name)
             self.add_name_proposal(prompted_item)
+        else:
+            self.active_list_item.resolution = 'ignore'
         self.update_name_index(prompted_item, write=True)
         if (
                 self.delete_existing_on_prompt

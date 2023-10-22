@@ -4,10 +4,10 @@ import os
 from pathlib import Path, WindowsPath
 import sys
 import re
-from time import time
 import numpy as np
 import requests
 from autoeq.frequency_response import FrequencyResponse
+from autoeq.utils import is_file_name_allowed
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
@@ -200,7 +200,10 @@ class CrinacleCrawler(Crawler):
     def target_path(self, item):
         if item.form is None or item.rig is None or item.name is None:
             return None
-        return CRINACLE_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
+        path = CRINACLE_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
+        if not is_file_name_allowed(item.name):
+            raise ValueError(f'Target path cannot be "{path}"')
+        return path
 
     def process_group(self, items, new_only=True):
         if items[0].form == 'ignore':

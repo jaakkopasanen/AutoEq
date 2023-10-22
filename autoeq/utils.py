@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import re
+
 import numpy as np
 from scipy.special import expit
 
@@ -63,3 +65,28 @@ def log_log_gradient(f0, f1, g0, g1):
     octaves = np.log(f1 / f0) / np.log(2)
     gain = g1 - g0
     return gain / octaves
+
+
+def is_file_name_allowed(name):
+    return not (
+        # Prohibited file name characters, including ASCII control characters
+        bool(re.search(r'[<>:"/\\\|\?\*\u0000-\u001F]', name))
+        # Windows has some reserved file names
+        or bool(re.match(r'(?:CON|PRN|AUX|NUL|COM1|COM2|COM3|COM4|COM5|COM6|COM7|COM8|COM9|LPT1|LPT2|LPT3|LPT4|LPT5|LPT6|LPT7|LPT8|LPT9)(?:\.[a-zA-Z0-9]+)?$', name))
+        # Files on Windows cannot end in space or dot
+        or bool(re.search(r'[ \.]$', name))
+    )
+
+
+def make_file_name_allowed(name):
+    # Remove prohibited characters
+    name = re.sub(r'[<>:"/\\\|\?\*\u0000-\u001F]', '', name)
+    # Add suffix for reserved file names
+    name = re.sub(
+        r'(CON|PRN|AUX|NUL|COM1|COM2|COM3|COM4|COM5|COM6|COM7|COM8|COM9|LPT1|LPT2|LPT3|LPT4|LPT5|LPT6|LPT7|LPT8|LPT9)(\.[a-zA-Z0-9]+)?$',
+        '\1-tmp\2',
+        name)
+    # Remove leading dot and space
+    name = re.sub(r'[ \.]$', '', name)
+    return name
+

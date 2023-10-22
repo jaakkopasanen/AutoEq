@@ -14,12 +14,13 @@ import shutil
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from autoeq.frequency_response import FrequencyResponse
+from autoeq.utils import make_file_name_allowed, is_file_name_allowed
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
 from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
 from measurements.image_graph_parser import ImageGraphParser
 
-DIR_PATH = Path(__file__).parent
+ORATORY1990_PATH = Path(__file__).parent
 
 
 class Oratory1990Crawler(Crawler):
@@ -32,10 +33,10 @@ class Oratory1990Crawler(Crawler):
 
     @staticmethod
     def read_name_index():
-        return NameIndex.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
+        return NameIndex.read_tsv(os.path.join(ORATORY1990_PATH, 'name_index.tsv'))
 
     def write_name_index(self):
-        self.name_index.write_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
+        self.name_index.write_tsv(os.path.join(ORATORY1990_PATH, 'name_index.tsv'))
 
     def guess_name(self, item):
         """Tries to guess what the name might be."""
@@ -43,13 +44,15 @@ class Oratory1990Crawler(Crawler):
 
     @staticmethod
     def image_path(item):
-        return DIR_PATH.joinpath('images', f'{item.name}.png')
+        return ORATORY1990_PATH.joinpath('images', f'{make_file_name_allowed(item.source_name)}.png')
+
+    @staticmethod
+    def pdf_path(item):
+        return ORATORY1990_PATH.joinpath('pdf', f'{make_file_name_allowed(item.source_name)}.pdf')
 
     def parse_pdf(self, item):
         pdf_path = self.pdf_path(item)
         image_path = self.image_path(item)
-        with open(pdf_path, 'rb') as fh:
-            text = PyPDF2.PdfReader(fh).pages[0].extract_text()
         # Convert to image with ghostscript
         # Using temporary paths with Ghostscript because it seems to be unable to work with non-ascii characters
         tmp_in = Path(tempfile.gettempdir()).joinpath('__tmp.pdf')
@@ -59,31 +62,46 @@ class Oratory1990Crawler(Crawler):
             b'pdf2png', b'-dNOPAUSE', b'-sDEVICE=png16m', b'-dBATCH', b'-r600', b'-dUseCropBox',
             f'-sOutputFile={tmp_out}'.encode('utf-8'), tmp_in.encode('utf-8')).exit()
         shutil.copy(tmp_out, image_path)
-        return text
+        return image_path
+
+    def read_pdf_text(self, item):
+        self.download(item.url, self.pdf_path(item))
+        with open(self.pdf_path(item), 'rb') as fh:
+            return PyPDF2.PdfReader(fh).pages[0].extract_text()
 
     @staticmethod
-    def pdf_path(item):
-        return DIR_PATH.joinpath('pdf', f'{item.name}.pdf')
+    def extract_rig(text, item):
+        text = text.lower()
+        rig = re.search(r'gras ?(?:/?4[35][ -]?[ABCG]+)+[ -]?\d*', text, flags=re.IGNORECASE)
+        if rig is None:
+            return None
+        rig = re.sub(r'^gras4', r'GRAS 4', rig[0], flags=re.IGNORECASE)
+        if re.search(r'43 ?ac ?/ ?43 ?ag', rig, flags=re.IGNORECASE):
+            rig = 'GRAS 43AC' if item.form == 'in-ear' else 'GRAS 43AG'
+        return rig.upper()
+
+    @staticmethod
+    def is_by_3rd_party(text):
+        return re.search(r'(?:measured|measurements?) (?:by|from)', text, flags=re.IGNORECASE) or \
+               re.search(r'(?:head-fi|crinacle)', text, flags=re.IGNORECASE)
 
     def resolve(self, item):
         true_item = self.name_index.find_one(source_name=item.source_name)
-        if true_item is not None and true_item.name is not None:
-            item.name = true_item.name
-        pdf_path = self.pdf_path(item)
+        if true_item is not None:
+            if true_item.name is not None:
+                item.name = true_item.name
+            if true_item.form is not None:
+                item.form = true_item.form
+            if true_item.rig is not None:
+                item.rig = true_item.rig
         super().resolve(item)
-        if not self.pdf_path(item).exists():
-            self.download(item.url, pdf_path)
-        with open(pdf_path, 'rb') as fh:
-            text = PyPDF2.PdfReader(fh).pages[0].extract_text()
-        if re.search(r'(?:measured|measurements?) (?:by|from)', text, flags=re.IGNORECASE):
-            # Ignore stuff done based on Crinacle's measurements
+        if item.form is not None and item.rig is not None:
+            return
+        text = self.read_pdf_text(item)
+        if self.is_by_3rd_party(text):  # Ignore stuff done based on 3rd party measurements
             item.form = 'ignore'
-        elif 'measured on' in text.lower():
-            ix = text.lower().index('measured on')
-            ix += len('measured on ')
-            item.rig = text[ix:].split(' ')[0]
         else:
-            print('No measured on in PDF for:', item)
+            item.rig = self.extract_rig(text, item)
 
     def is_prompt_needed(self, item):
         if item.form == 'ignore':
@@ -216,16 +234,19 @@ class Oratory1990Crawler(Crawler):
         """Target file path for the item in measurements directory"""
         if item.form is None or item.name is None:
             return None
-        return DIR_PATH.joinpath('data', item.form, f'{item.name}.csv')
+        path = ORATORY1990_PATH.joinpath('data', item.form, f'{item.name}.csv')
+        if not is_file_name_allowed(item.name):
+            raise ValueError(f'Target path cannot be "{path}"')
+        return path
 
     def process_group(self, items, new_only=True):
         if items.form == 'ignore':
             return
 
-        pdf_dir = os.path.join(DIR_PATH, 'pdf')
-        image_dir = os.path.join(DIR_PATH, 'images')
-        inspection_dir = os.path.join(DIR_PATH, 'inspection')
-        data_dir = os.path.join(DIR_PATH, 'data')
+        pdf_dir = os.path.join(ORATORY1990_PATH, 'pdf')
+        image_dir = os.path.join(ORATORY1990_PATH, 'images')
+        inspection_dir = os.path.join(ORATORY1990_PATH, 'inspection')
+        data_dir = os.path.join(ORATORY1990_PATH, 'data')
         out_dir = os.path.join(data_dir, items.form)
 
         os.makedirs(pdf_dir, exist_ok=True)
