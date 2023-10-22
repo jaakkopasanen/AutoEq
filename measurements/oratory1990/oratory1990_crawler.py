@@ -136,7 +136,7 @@ class Oratory1990Crawler(Crawler):
             if notes and notes.lower() != 'standard':
                 source_name += f' ({notes})'
             item = NameItem(source_name, None, form, url=url)
-            known_item = self.name_index.find_one(source_name=source_name)  # TODO: Switch to URL
+            known_item = self.name_index.find_one(url=url)
             if known_item is not None:
                 if known_item.name is not None:
                     item.name = known_item.name
@@ -235,6 +235,9 @@ class Oratory1990Crawler(Crawler):
 
     def process_group(self, items, new_only=True):
         if items[0].form == 'ignore':
+            return
+        file_path = self.target_path(items[0])
+        if new_only and file_path.exists():
             return
         inspection_path = ORATORY1990_PATH.joinpath('inspection')
         inspection_path.mkdir(exist_ok=True, parents=True)

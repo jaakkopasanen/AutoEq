@@ -106,14 +106,6 @@ class NameIndex:
         for item in name_index.items:
             self.add(item)
 
-    @staticmethod
-    def update_item(old, new):
-        old.url = new.url
-        old.source_name = new.source_name
-        old.name = new.name
-        old.form = new.form
-        old.rig = new.rig
-
     def update(self, item):
         """Updates all items which have the same URL as the given item
 
@@ -131,27 +123,34 @@ class NameIndex:
         del self._by_url[item.url]
         # Move old item to new index locations where the attributes have changed
         if item.source_name != old_item.source_name:  # Source name has changed
-            self._by_source_name[old_item.source_name].remove(old_item)  # Remove from old index location
+            if old_item.source_name in self._by_source_name:
+                self._by_source_name[old_item.source_name].remove(old_item)  # Remove from old index location
+            old_item.source_name = item.source_name
             if item.source_name not in self._by_source_name:  # Init new index location if needed
                 self._by_source_name[item.source_name] = []
             self._by_source_name[item.source_name].append(old_item)  # Add old item to new index location
         if item.name != old_item.name:
-            self._by_name[old_item.name].remove(old_item)
+            if old_item.name in self._by_name:
+                self._by_name[old_item.name].remove(old_item)
+            old_item.name = item.name
             if item.name not in self._by_name:
                 self._by_name[item.name] = []
             self._by_name[item.name].append(old_item)
         if item.form != old_item.form:
-            self._by_form[old_item.form].remove(old_item)
+            if old_item.form in self._by_form:
+                self._by_form[old_item.form].remove(old_item)
+            old_item.form = item.form
             if item.form not in self._by_form:
                 self._by_form[item.form] = []
             self._by_form[item.form].append(old_item)
         if item.rig != old_item.rig:
-            self._by_rig[old_item.rig].remove(old_item)
+            if old_item.rig in self._by_rig:
+                self._by_rig[old_item.rig].remove(old_item)
+            old_item.rig = item.rig
             if item.rig not in self._by_rig:
                 self._by_rig[item.rig] = []
             self._by_rig[item.rig].append(old_item)
-        self.update_item(old_item, item)  # Update old item attributes with the new item
-        
+
     def remove(self, item):
         if hash(item) not in self._by_hash:
             return

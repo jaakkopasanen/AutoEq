@@ -7,3 +7,4 @@ selenium~=4.14.0
 rapidfuzz~=3.4.0
 ipywidgets~=8.1.1
 jupyterlab~=4.0.7
+selenium-wire~5.10.0

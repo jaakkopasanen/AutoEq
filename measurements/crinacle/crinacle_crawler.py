@@ -129,11 +129,10 @@ class CrinacleCrawler(Crawler):
 
     def crawl(self):
         self.name_index = self.read_name_index()
-        items = []
+        self.crawl_index = NameIndex()
         for dir_path in CRINACLE_PATH.joinpath('raw_data').glob('*'):
             for item in [self.get_item_from_file_path(fp) for fp in dir_path.glob('*.txt')]:
-                items.append(item)
-        self.crawl_index = NameIndex(items=items)
+                self.crawl_index.add(item)
         return self.crawl_index
 
     @staticmethod

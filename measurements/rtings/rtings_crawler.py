@@ -2,30 +2,36 @@
 
 import os
 import sys
+import requests
+from bs4 import BeautifulSoup
+from tqdm.auto import tqdm
 import json
 import re
+from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from autoeq.frequency_response import FrequencyResponse
 sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex
+from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
 
-DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
+RTINGS_PATH = Path(__file__).parent
 
 # Compensation
 OVEREAR_TARGET = FrequencyResponse.read_from_csv(
-    os.path.join(DIR_PATH, 'resources', 'rtings_compensation_w_bass.csv')
-)
+    os.path.join(RTINGS_PATH, 'resources', 'rtings_compensation_w_bass.csv'))
 INEAR_TARGET = FrequencyResponse.read_from_csv(
-    os.path.join(DIR_PATH, 'resources', 'rtings_inear_compensation_w_bass.csv')
-)
+    os.path.join(RTINGS_PATH, 'resources', 'rtings_inear_compensation_w_bass.csv'))
+
+
+class RtingsCrawlError(Exception):
+    pass
 
 
 class RtingsCrawler(Crawler):
-    def __init__(self, driver=None):
+    def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
         if driver is None:
             opts = Options()
             opts.add_argument('--headless')
@@ -34,36 +40,118 @@ class RtingsCrawler(Crawler):
 
     @staticmethod
     def read_name_index():
-        return NameIndex.read_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
+        return NameIndex.read_tsv(os.path.join(RTINGS_PATH, 'name_index.tsv'))
 
     def write_name_index(self):
-        self.name_index.write_tsv(os.path.join(DIR_PATH, 'name_index.tsv'))
+        self.name_index.write_tsv(os.path.join(RTINGS_PATH, 'name_index.tsv'))
+
+    def guess_name(self, item):
+        name = re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', item.source_name).strip()
+        name = self.manufacturers.replace(name)
+        return name
+
+    def resolve(self, item):
+        """Resolve name for a single item. Updates the item in place."""
+        ground_truths = self.name_index.find(source_name=item.source_name)
+        if ground_truths is None:
+            return
+        for ground_truth in ground_truths:
+            if ground_truth.name is not None:
+                item.name = ground_truth.name
+            if ground_truth.form is not None:
+                item.form = ground_truth.form
+            if ground_truth.rig is not None:
+                item.rig = ground_truth.rig
 
     @staticmethod
-    def get_existing():
-        return NameIndex.read_files(os.path.join(DIR_PATH, 'data', '*', '*.csv'))
+    def graph_data_url_payloads():
+        product_graph_data_url_payloads = []
+        for version in ['1-5', '1-4', '1-2']:
+            html = requests.get(f'https://www.rtings.com/headphones/{version}/graph').text
+            document = BeautifulSoup(html, 'html.parser')
+            test_bench = json.loads(document.find(class_='graph_tool_page').get('data-props'))['test_bench']
+            with open(RTINGS_PATH.joinpath(f'test_bench_{version}.json'), 'w', encoding='utf-8') as fh:
+                json.dump(test_bench, fh, ensure_ascii=False, indent=4)
+            for product in test_bench['comparable_products']:
+                if product["fullname"] in [payload['source_name'] for payload in product_graph_data_url_payloads]:
+                    # The versions are iterated from newest to oldest, if product with the same name already exists,
+                    # that means it was included in the results of the newer test methodology and so this one can
+                    # be skipped
+                    continue
+                graph_type = None
+                tids = set([test_result['test']['original_id'] for test_result in product['review']['test_results']])
+                valid_test_ids = []
+                matching_raw_fr_l_ids = [
+                    tid for tid in tids if tid in ['4011', '7917', '21564', '1344', '2060', '3182']]
+                if matching_raw_fr_l_ids:
+                    valid_test_ids.append(matching_raw_fr_l_ids[0])
+                    graph_type = 'raw-left-right'
+                matching_raw_fr_r_ids = [
+                    tid for tid in tids if tid in ['4012', '7918', '21565', '1343', '2061', '3183']]
+                if matching_raw_fr_r_ids:
+                    valid_test_ids.append(matching_raw_fr_r_ids[0])
+                    graph_type = 'raw-left-right'
+                if not valid_test_ids:
+                    if '436' in tids and '437' in tids and '438' in tids:
+                        valid_test_ids = ['436', '437', '438']
+                        graph_type = 'bass-mid-treble'
+                if not valid_test_ids:
+                    print(f'No valid test_original_id found for {product["fullname"]}')
+                    continue
+                product_graph_data_url_payloads.append({
+                    'source_name': product['fullname'],
+                    'graph_type': graph_type,
+                    'payloads': [{
+                        'named_version': 'public',
+                        'product_id': product['id'],
+                        'test_original_id': test_id
+                    } for test_id in valid_test_ids]
+                })
+        return product_graph_data_url_payloads
+
+    @staticmethod
+    def graph_data_url(payload):
+        res = requests.post('https://www.rtings.com/api/v2/safe/graph_tool__product_graph_data_url', data=payload)
+        if res.status_code < 200 or res.status_code >= 300:
+            print(f'Failed to get graph URL with payload {payload}: {res.text}')
+            return None
+        data = res.json()
+        try:
+            path = data['data']['product']['review']['test_results'][0]['graph_data_url']
+            return f'https://i.rtings.com{path}'
+        except:
+            print(f'Graph data URL for {payload} returned an unexpected data format: {data}')
+            return None
 
     def crawl(self):
-        # Line 2422
-        # var sel_product = document.getElementById("product_select");
-        # var product1 = sel_product.options[sel_product.selectedIndex].value
-        # "https://www.rtings.com/graph/data/" + product1 + "/" + comparison_id
-        if self.driver is None:
-            raise TypeError('self.driver cannot be None')
-        document = self.get_beautiful_soup('https://www.rtings.com/headphones/1-5/graph')
-        urls = {}
-        style = 'display: block; visibility: visible;'
-        for child in document.find(id='product_select').find_all('option', attrs={'style': style}):
-            try:
-                data_id = child['value']
-            except KeyError:
-                # Dropdown option doesn't have value, perhaps it's default value placeholder
-                continue
+        if RTINGS_PATH.joinpath('crawl_graph_data_urls.json').exists():
+            with open(RTINGS_PATH.joinpath('crawl_graph_data_urls.json')) as fh:
+                graph_data_url_cache = json.load(fh)
+        else:
+            graph_data_url_cache = {}
+        self.name_index = self.read_name_index()
+        self.crawl_index = NameIndex()
+        for product_payloads in tqdm(self.graph_data_url_payloads()):
+            for payload in product_payloads['payloads']:
+                item = NameItem(product_payloads['source_name'], None, None, url=None, rig='HMS II.3')
+                cache_key = f'{payload["product_id"]}/{payload["test_original_id"]}'
+                if cache_key in graph_data_url_cache:  # Item found in cache
+                    item.url = graph_data_url_cache[cache_key]
+                else:  # Item not found in cache, get URL with API call
+                    item.url = self.graph_data_url(payload)
+                if item.url is not None:
+                    graph_data_url_cache[cache_key] = item.url
+                self.resolve(item)
+                self.crawl_index.add(item)
+        with open(RTINGS_PATH.joinpath('crawl_graph_data_urls.json'), 'w', encoding='utf-8') as fh:
+            json.dump(graph_data_url_cache, fh, ensure_ascii=False, indent=4)
+        return self.crawl_index
 
-            name = child.text.strip()
-            #urls[name] = f'https://www.rtings.com/images/graphs/{urlpart}/graph-frequency-response-14.json'
-            urls[name] = f'https://www.rtings.com/graph/data/{data_id}/3992'
-        return urls
+    def target_group_key(self, item):
+        return f'{item.form}/{item.name}'
+
+    def target_path(self, item):
+        return RTINGS_PATH.joinpath('data', item.form, f'{item.name}.csv')
 
     @staticmethod
     def parse_json(json_data):
@@ -104,19 +192,23 @@ class RtingsCrawler(Crawler):
         target = FrequencyResponse(name='target', frequency=frequency, raw=target)
         return fr, target
 
-    def process_group(self, items, url):
-        if items.form == 'ignore':
+    def process_group(self, items, new_only=True):
+        if items[0].form == 'ignore':
             return
+        file_path = self.target_path(items[0])
+        if new_only and file_path.exists():
+            return
+        for item in items:
+            json_file = Crawler.download(f'https://i.rtings.com{item.url}', self.target_path(item))
 
-        json_file = Crawler.download(url, items.name, os.path.join(DIR_PATH, 'json'), file_type='json')
+        json_file = Crawler.download(url, items.name, os.path.join(RTINGS_PATH, 'json'), file_type='json')
         if json_file is not None:
-            with open(os.path.join(DIR_PATH, 'json', f'{items.name}.json'), 'r', encoding='utf-8') as fh:
+            with open(os.path.join(RTINGS_PATH, 'json', f'{items.name}.json'), 'r', encoding='utf-8') as fh:
                 json_data = json.load(fh)
             fr, target = RtingsCrawler.parse_json(json_data)
             fr.name = items.name
         else:
             raise FileNotFoundError(f'Could not download JSON file for{items.name} at {url}')
-
         fr.interpolate()
         if np.std(fr.raw) == 0:
             # Frequency response data has non-zero target response, use that
@@ -132,23 +224,18 @@ class RtingsCrawler(Crawler):
         target.center()
         fr.raw += target.raw
         fr.center()
-
         # Inspection
-        dir_path = os.path.join(DIR_PATH, 'inspection')
+        dir_path = os.path.join(RTINGS_PATH, 'inspection')
         os.makedirs(dir_path, exist_ok=True)
         file_path = os.path.join(dir_path, f'{fr.name}.png')
         fig, ax = fr.plot_graph(file_path=file_path, show=False)
         plt.close(fig)
-
         # Write to file
-        dir_path = os.path.join(DIR_PATH, 'data', items.form)
+        dir_path = os.path.join(RTINGS_PATH, 'data', items.form)
         os.makedirs(dir_path, exist_ok=True)
         file_path = os.path.join(dir_path, fr.name + '.csv')
         fr.write_to_csv(file_path)
         print(f'Saved "{fr.name}" to "{file_path}"')
-
-    def guess_name(self, item):
-        return re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', item).strip()
 
 
 def main():
