@@ -60,7 +60,7 @@ class Oratory1990Crawler(Crawler):
         shutil.copy(pdf_path, tmp_in)
         Ghostscript(
             b'pdf2png', b'-dNOPAUSE', b'-sDEVICE=png16m', b'-dBATCH', b'-r600', b'-dUseCropBox',
-            f'-sOutputFile={tmp_out}'.encode('utf-8'), tmp_in.encode('utf-8')).exit()
+            f'-sOutputFile={tmp_out}'.encode('utf-8'), str(tmp_in).encode('utf-8')).exit()
         shutil.copy(tmp_out, image_path)
         return image_path
 
@@ -149,17 +149,16 @@ class Oratory1990Crawler(Crawler):
         return self.crawl_index
 
     @staticmethod
-    def parse_image(im, model, px_top=800, px_bottom=4400, px_left=0, px_right=2500):
-        """Parses graph image downloaded from innerfidelity.com"""
+    def parse_image(path, px_top=800, px_bottom=4400, px_left=0, px_right=2500):
+        """Parses graph images converted from oratory1990 PDFs"""
+        im = Image.open(path)
         # Crop out everything but graph area (roughly)
         box = (px_left, px_top, im.size[0] - px_right, im.size[1] - px_bottom)
         im = im.crop(box)
         # im.show()
-
         # Find graph edges
         v_lines = ImageGraphParser.find_lines(im, 'vertical')
         h_lines = ImageGraphParser.find_lines(im, 'horizontal')
-
         # Crop by graph edges
         try:
             box = (v_lines[0], h_lines[0], v_lines[1], h_lines[1])
@@ -167,7 +166,6 @@ class Oratory1990Crawler(Crawler):
             raise GraphParseFailed('Failed to parse PDF')
         im = im.crop(box)
         # im.show()
-
         # X axis
         f_min = 10
         f_max = 20000
@@ -175,12 +173,10 @@ class Oratory1990Crawler(Crawler):
         f = [f_min]
         for _ in range(1, im.size[0]):
             f.append(f[-1] * f_step)
-
         # Y axis
         a_max = 30
         a_min = -20
         a_res = (a_max - a_min) / im.size[1]
-
         _im = im.copy()
         pix = _im.load()
         amplitude = []
@@ -195,7 +191,6 @@ class Oratory1990Crawler(Crawler):
                 if y > y_legend and x0_legend < x < x1_legend:
                     # Skip pixels in the legend box
                     continue
-
                 # Convert read RGB pixel values and convert to HSV
                 h, s, v = colorsys.rgb_to_hsv(*[v / 255.0 for v in im.getpixel((x, y))])
                 # Graph pixels are colored
@@ -213,15 +208,14 @@ class Oratory1990Crawler(Crawler):
                 # Convert to dB value
                 v = a_max - v * a_res
                 amplitude.append(v)
-
         # Inspection image
         draw = ImageDraw.Draw(_im)
         x0 = np.log(20 / f_min) / np.log(f_step)
         x1 = np.log(10000 / f_min) / np.log(f_step)
         draw.rectangle(((x0, 10 / a_res), (x1, 40 / a_res)), outline='magenta')
         draw.rectangle(((x0 + 1, 10 / a_res + 1), (x1 - 1, 40 / a_res - 1)), outline='magenta')
-
-        fr = FrequencyResponse(model, f, amplitude)
+        # Create FR object
+        fr = FrequencyResponse('parsed', f, amplitude)
         fr.interpolate()
         fr.center()
         return fr, _im
@@ -240,40 +234,20 @@ class Oratory1990Crawler(Crawler):
         return path
 
     def process_group(self, items, new_only=True):
-        if items.form == 'ignore':
+        if items[0].form == 'ignore':
             return
-
-        pdf_dir = os.path.join(ORATORY1990_PATH, 'pdf')
-        image_dir = os.path.join(ORATORY1990_PATH, 'images')
-        inspection_dir = os.path.join(ORATORY1990_PATH, 'inspection')
-        data_dir = os.path.join(ORATORY1990_PATH, 'data')
-        out_dir = os.path.join(data_dir, items.form)
-
-        os.makedirs(pdf_dir, exist_ok=True)
-        os.makedirs(image_dir, exist_ok=True)
-        os.makedirs(inspection_dir, exist_ok=True)
-        os.makedirs(out_dir, exist_ok=True)
-
-        pdf_path = Crawler.download(url, items.name, pdf_dir)
-        if not pdf_path:
-            return
-        try:
-            im = Oratory1990Crawler.parse_pdf(
-                os.path.join(pdf_dir, f'{items.name}.pdf'),
-                os.path.join(image_dir, f'{items.name}.png')
-            )
-        except ValueError as err:
-            if str(err) == 'Measured by Crinacle':
-                ignored = items.copy()
-                ignored.form = 'ignore'
-                self.name_index.update(ignored, source_name=items.source_name, name=items.name, form=items.form)
-                self.write_name_index()
-                print(f'  Ignored {items.source_name} because it is measured by Crinacle.\n')
-            return
-        fr, inspection = Oratory1990Crawler.parse_image(im, items.name)
-        inspection.save(os.path.join(inspection_dir, f'{items.name}.png'))
-        fr_path = os.path.join(out_dir, f'{items.name}.csv')
-        fr.write_to_csv(fr_path)
+        inspection_path = ORATORY1990_PATH.joinpath('inspection')
+        inspection_path.mkdir(exist_ok=True, parents=True)
+        avg_fr = FrequencyResponse(items[0].name)
+        avg_fr.raw = np.zeros(avg_fr.frequency.shape)
+        for item in items:
+            image_path = self.parse_pdf(item)
+            fr, inspection = Oratory1990Crawler.parse_image(image_path)
+            avg_fr.raw += fr.raw
+            inspection.save(inspection_path.joinpath(f'{make_file_name_allowed(item.source_name)}.png'))
+        avg_fr.raw /= len(items)
+        fr_path = self.target_path(items[0])
+        avg_fr.write_to_csv(fr_path)
         print(f'  Saved CSV to "{fr_path}"')
 
 
