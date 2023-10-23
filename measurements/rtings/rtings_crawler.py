@@ -26,10 +26,6 @@ INEAR_TARGET = FrequencyResponse.read_from_csv(
     os.path.join(RTINGS_PATH, 'resources', 'rtings_inear_compensation_w_bass.csv'))
 
 
-class RtingsCrawlError(Exception):
-    pass
-
-
 class RtingsCrawler(Crawler):
     def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
         if driver is None:
@@ -154,43 +150,35 @@ class RtingsCrawler(Crawler):
         return RTINGS_PATH.joinpath('data', item.form, f'{item.name}.csv')
 
     @staticmethod
+    def json_path(item):
+        return RTINGS_PATH.joinpath('json', f'{item.name}.json')
+
+    @staticmethod
     def parse_json(json_data):
         """Parses Rtings.com JSON data
-
-        The columns should be "Frequency", "Left", "Right", "Target Response", "Left", "Right". Some rows might have
-        data in the first Left and Right, some might have it in the second left and right
 
         Args:
             json_data: JSON data object as returned by Rtings API
 
         Returns:
-            - Parsed raw frequency response as FrequencyResponse
-            - Parsed target response as FrequencyResponse
+            Parsed FrequencyResponse
         """
         header = json_data['header']
         data = np.array(json_data['data'])
         frequency = data[:, header.index('Frequency')]
         target = data[:, header.index('Target Response')]
-        left_col = header.index('Left')
-        right_col = header.index('Right')
-
-        for row in data:
-            if row[left_col] == np.array(None):
-                # Data missing at the first "Left" column, use the last "Left" column
-                row[left_col] = row[len(header) - header[::-1].index('Left') - 1]
-            if row[right_col] == np.array(None):
-                # Data missing at the first "Right" column, use the last "Right" column
-                row[right_col] = row[len(header) - header[::-1].index('Right') - 1]
-
-        left = data[:, left_col]
-        right = data[:, right_col]
-
-        raw = np.mean([left, right], axis=0)
-        if np.std(target) > 0:
-            raw += target
-        fr = FrequencyResponse(name='fr', frequency=frequency, raw=raw)
-        target = FrequencyResponse(name='target', frequency=frequency, raw=target)
-        return fr, target
+        # Raw Left FR data has "Left Avg", raw right FR data has "Right Avg" and bass, mid and treble data has both
+        # "Left" and "Right" columns
+        col_ix = None
+        for col_name in ['Left Avg', 'Left', 'Right Avg', 'Right']:
+            if col_name in header:
+                col_ix = header.index(col_name)
+                break
+        if col_ix is None:
+            raise RtingsProcessingError('Could not find any of the data columns in JSON')
+        fr = FrequencyResponse(name='fr', frequency=frequency, raw=data[:, col_ix], target=target)
+        fr.raw = fr.raw - fr.target
+        return fr
 
     def process_group(self, items, new_only=True):
         if items[0].form == 'ignore':
@@ -198,50 +186,34 @@ class RtingsCrawler(Crawler):
         file_path = self.target_path(items[0])
         if new_only and file_path.exists():
             return
+        frs = []
         for item in items:
-            json_file = Crawler.download(f'https://i.rtings.com{item.url}', self.target_path(item))
-
-        json_file = Crawler.download(url, items.name, os.path.join(RTINGS_PATH, 'json'), file_type='json')
-        if json_file is not None:
-            with open(os.path.join(RTINGS_PATH, 'json', f'{items.name}.json'), 'r', encoding='utf-8') as fh:
-                json_data = json.load(fh)
-            fr, target = RtingsCrawler.parse_json(json_data)
-            fr.name = items.name
+            raw = self.download(item.url, self.json_path(item))
+            frs.append(self.parse_json(json.loads(raw.decode('utf-8'))))
+        if len(frs) == 2:  # Raw frequency responses for left and right in separate files
+            fr = FrequencyResponse(
+                name=items[0].name,
+                frequency=frs[0].frequency,
+                raw=np.mean([fr.raw for fr in frs], axis=0))
+            fr.raw /= 2
+        elif len(frs) == 3:  # Bass, mid and treble responses in separate files
+            fr = FrequencyResponse(
+                name=items[0].name,
+                frequency=np.concatenate([fr.frequency for fr in frs]),  # All three have different frequency ranges
+                raw=np.concatenate([fr.raw for fr in frs]))
         else:
-            raise FileNotFoundError(f'Could not download JSON file for{items.name} at {url}')
+            raise RtingsProcessingError(f'{len(frs)} JSON files grouped together, don\'t know what to do.')
         fr.interpolate()
-        if np.std(fr.raw) == 0:
-            # Frequency response data has non-zero target response, use that
-            target.interpolate()
-            target = target
-            print(f'Using target for {fr.name}')
-        elif items.form == 'in-ear':
-            # Using in-ear target response
-            target = INEAR_TARGET
-        else:
-            # Using on-ear or earbud target response
-            target = OVEREAR_TARGET
-        target.center()
-        fr.raw += target.raw
         fr.center()
-        # Inspection
-        dir_path = os.path.join(RTINGS_PATH, 'inspection')
-        os.makedirs(dir_path, exist_ok=True)
-        file_path = os.path.join(dir_path, f'{fr.name}.png')
-        fig, ax = fr.plot_graph(file_path=file_path, show=False)
-        plt.close(fig)
         # Write to file
-        dir_path = os.path.join(RTINGS_PATH, 'data', items.form)
-        os.makedirs(dir_path, exist_ok=True)
-        file_path = os.path.join(dir_path, fr.name + '.csv')
+        file_path.parent.mkdir(exist_ok=True, parents=True)
         fr.write_to_csv(file_path)
         print(f'Saved "{fr.name}" to "{file_path}"')
 
 
-def main():
-    crawler = RtingsCrawler()
-    crawler.process_all(prompt=False)
+class RtingsCrawlError(Exception):
+    pass
 
 
-if __name__ == '__main__':
-    main()
+class RtingsProcessingError(Exception):
+    pass

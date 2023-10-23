@@ -263,7 +263,7 @@ class Crawler(ABC):
         file_path.parent.mkdir(exist_ok=True, parents=True)
         res = requests.get(url, stream=True)
         if res.status_code < 200 or res.status_code >= 300:
-            raise Exception(f'Failed to download "{url}"')  # TODO: Exception type
+            raise InvalidResponseCodeError(f'Failed to download "{url}"')
         with open(file_path, 'wb') as fh:
             res.raw.decode_content = True
             shutil.copyfileobj(res.raw, fh)
@@ -387,3 +387,7 @@ class Crawler(ABC):
         self.create_prompts()
         self.reload_ui()
         # Crawler.process_all() needs to be invoked after user has resolved prompts
+
+
+class InvalidResponseCodeError(Exception):
+    pass
