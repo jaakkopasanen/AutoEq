@@ -59,9 +59,11 @@ class Crawler(ABC):
         self.redownload = redownload
         # UI
         self.prompts = []
-        self.prompt_list = None
+        self.prompt_list = self.prompt_list = widgets.VBox(
+            [], layout=widgets.Layout(max_height='600px', overflow='auto', width='324px'))
+        self.active_list_item_container = widgets.VBox([])
         self.active_list_item = None
-        self.widget = widgets.HBox([])
+        self.widget = widgets.HBox([self.prompt_list, self.active_list_item_container])
 
     # Name resolution methods
 
@@ -232,7 +234,7 @@ class Crawler(ABC):
             return False
         return item.name is None or item.form is None
 
-    def create_prompts(self, max_prompts=30):
+    def create_prompts(self, max_prompts=100):
         if self.name_proposals is None:
             self.init_name_proposals()
         self.prompts = []
@@ -243,6 +245,7 @@ class Crawler(ABC):
             self.prompts.append(PromptListItem(NamePrompt(item, self.prompt_callback), self.switch_prompt))
             if len(self.prompts) >= max_prompts:
                 break
+        self.prompt_list.children = [prompt.widget for prompt in self.prompts]
 
     # Crawler methods
 
@@ -341,13 +344,8 @@ class Crawler(ABC):
 
     def reload_ui(self):
         """Refreshes IPyWidgets UI"""
-        self.prompt_list = widgets.VBox(
-            [prompt.widget for prompt in self.prompts],
-            layout=widgets.Layout(max_height='600px', overflow='auto', width='324px'))
-        children = [self.prompt_list]
         if self.active_list_item:
-            children.append(self.active_list_item.name_prompt.widget)
-        self.widget.children = children
+            self.active_list_item_container.children = [self.active_list_item.name_prompt.widget]
 
     def switch_prompt(self, new_active):
         """Switches to a different item in the prompt list in the IPyWidgets UI"""
