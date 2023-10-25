@@ -147,6 +147,8 @@ class RtingsCrawler(Crawler):
         return f'{item.form}/{item.name}'
 
     def target_path(self, item):
+        if item.form is None or item.name is None:
+            return None
         return RTINGS_PATH.joinpath('data', item.form, f'{item.name}.csv')
 
     @staticmethod
@@ -209,6 +211,9 @@ class RtingsCrawler(Crawler):
         file_path.parent.mkdir(exist_ok=True, parents=True)
         fr.write_to_csv(file_path)
         print(f'Saved "{fr.name}" to "{file_path}"')
+
+    def list_existing_files(self):
+        return list(RTINGS_PATH.joinpath('data').glob('**/*.csv'))
 
 
 class RtingsCrawlError(Exception):

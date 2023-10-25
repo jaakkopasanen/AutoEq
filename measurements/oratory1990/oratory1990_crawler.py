@@ -253,6 +253,9 @@ class Oratory1990Crawler(Crawler):
         avg_fr.write_to_csv(fr_path)
         print(f'  Saved CSV to "{fr_path}"')
 
+    def list_existing_files(self):
+        return list(ORATORY1990_PATH.joinpath('data').glob('**/*.csv'))
+
 
 class RedditCrawlFailed(Exception):
     pass

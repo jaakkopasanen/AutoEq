@@ -221,3 +221,6 @@ class CrinacleCrawler(Crawler):
         Path(file_path.parent).mkdir(exist_ok=True, parents=True)
         avg_fr.write_to_csv(file_path)
         print(f'Saved "{avg_fr.name}" to "{file_path}" with {len(items)} measurements')
+
+    def list_existing_files(self):
+        return list(CRINACLE_PATH.joinpath('data').glob('**/*.csv'))

@@ -340,6 +340,27 @@ class Crawler(ABC):
         for items in groups.values():
             self.process_group(items, new_only=new_only)
 
+    @abstractmethod
+    def list_existing_files(self):
+        """Lists all existing measurement files"""
+        pass
+
+    def prune_measurements(self, dry_run=False):
+        if self.name_index is None:
+            self.name_index = self.read_name_index()
+        existing = self.list_existing_files()
+        known = []
+        for item in self.name_index:
+            file_path = self.target_path(item)
+            if file_path is None:
+                continue
+            known.append(file_path)
+        unknown = set(existing).difference(set(known))
+        for file_path in unknown:
+            if not dry_run:
+                file_path.unlink()
+            print(f'Removed "{file_path}"')
+
     # UI methods
 
     def reload_ui(self):
