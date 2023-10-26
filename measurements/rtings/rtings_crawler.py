@@ -9,7 +9,6 @@ import json
 import re
 from pathlib import Path
 import numpy as np
-import matplotlib.pyplot as plt
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from autoeq.frequency_response import FrequencyResponse
@@ -18,8 +17,6 @@ from measurements.name_index import NameIndex, NameItem
 from measurements.crawler import Crawler
 
 RTINGS_PATH = Path(__file__).parent
-
-# Compensation
 OVEREAR_TARGET = FrequencyResponse.read_from_csv(
     os.path.join(RTINGS_PATH, 'resources', 'rtings_compensation_w_bass.csv'))
 INEAR_TARGET = FrequencyResponse.read_from_csv(
@@ -153,7 +150,8 @@ class RtingsCrawler(Crawler):
 
     @staticmethod
     def json_path(item):
-        return RTINGS_PATH.joinpath('json', f'{item.name}.json')
+        uid = item.url.split('/')[-2]
+        return RTINGS_PATH.joinpath('json', f'{uid}.json')
 
     @staticmethod
     def parse_json(json_data):
@@ -179,7 +177,6 @@ class RtingsCrawler(Crawler):
         if col_ix is None:
             raise RtingsProcessingError('Could not find any of the data columns in JSON')
         fr = FrequencyResponse(name='fr', frequency=frequency, raw=data[:, col_ix], target=target)
-        fr.raw = fr.raw - fr.target
         return fr
 
     def process_group(self, items, new_only=True):
@@ -192,12 +189,11 @@ class RtingsCrawler(Crawler):
         for item in items:
             raw = self.download(item.url, self.json_path(item))
             frs.append(self.parse_json(json.loads(raw.decode('utf-8'))))
-        if len(frs) == 2:  # Raw frequency responses for left and right in separate files
+        if len(frs) < 3:  # Raw frequency responses for left and right in separate files, unless single ear unit
             fr = FrequencyResponse(
                 name=items[0].name,
                 frequency=frs[0].frequency,
                 raw=np.mean([fr.raw for fr in frs], axis=0))
-            fr.raw /= 2
         elif len(frs) == 3:  # Bass, mid and treble responses in separate files
             fr = FrequencyResponse(
                 name=items[0].name,

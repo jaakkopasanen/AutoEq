@@ -9,7 +9,7 @@ if str(Path(__file__).resolve().parent) not in sys.path:
 import pandas as pd
 from rapidfuzz import fuzz
 import requests
-import shutil
+from tqdm.auto import tqdm
 import re
 from bs4 import BeautifulSoup
 import ipywidgets as widgets
@@ -265,13 +265,13 @@ class Crawler(ABC):
                 return fh.read()
         file_path.parent.mkdir(exist_ok=True, parents=True)
         res = requests.get(url, stream=True)
+        content = res.content
         if res.status_code < 200 or res.status_code >= 300:
             raise InvalidResponseCodeError(f'Failed to download "{url}"')
         with open(file_path, 'wb') as fh:
-            res.raw.decode_content = True
-            shutil.copyfileobj(res.raw, fh)
+            fh.write(content)
         print('Downloaded to "{}"'.format(file_path))
-        return res.raw
+        return content
 
     def get_beautiful_soup(self, url):
         self.driver.get(url)
@@ -337,7 +337,7 @@ class Crawler(ABC):
             if key not in groups:
                 groups[key] = []
             groups[key].append(item)
-        for items in groups.values():
+        for items in tqdm(groups.values()):
             self.process_group(items, new_only=new_only)
 
     @abstractmethod
