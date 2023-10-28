@@ -52,6 +52,8 @@ class Oratory1990Crawler(Crawler):
 
     def parse_pdf(self, item):
         pdf_path = self.pdf_path(item)
+        if not pdf_path.exists():
+            self.download(item.url, self.pdf_path(item))
         image_path = self.image_path(item)
         # Convert to image with ghostscript
         # Using temporary paths with Ghostscript because it seems to be unable to work with non-ascii characters

@@ -69,29 +69,24 @@ class RtingsCrawler(Crawler):
                     # that means it was included in the results of the newer test methodology and so this one can
                     # be skipped
                     continue
-                graph_type = None
+                # IDs of all the tests done for the current headphone
                 tids = set([test_result['test']['original_id'] for test_result in product['review']['test_results']])
                 valid_test_ids = []
+                # Look for test IDs that correspond to left channel raw frequency response
                 matching_raw_fr_l_ids = [
                     tid for tid in tids if tid in ['4011', '7917', '21564', '1344', '2060', '3182']]
                 if matching_raw_fr_l_ids:
                     valid_test_ids.append(matching_raw_fr_l_ids[0])
-                    graph_type = 'raw-left-right'
+                # Look for test IDs that correspond to right channel raw frequency response
                 matching_raw_fr_r_ids = [
                     tid for tid in tids if tid in ['4012', '7918', '21565', '1343', '2061', '3183']]
                 if matching_raw_fr_r_ids:
                     valid_test_ids.append(matching_raw_fr_r_ids[0])
-                    graph_type = 'raw-left-right'
-                if not valid_test_ids:
-                    if '436' in tids and '437' in tids and '438' in tids:
-                        valid_test_ids = ['436', '437', '438']
-                        graph_type = 'bass-mid-treble'
                 if not valid_test_ids:
                     print(f'No valid test_original_id found for {product["fullname"]}')
                     continue
                 product_graph_data_url_payloads.append({
                     'source_name': product['fullname'],
-                    'graph_type': graph_type,
                     'payloads': [{
                         'named_version': 'public',
                         'product_id': product['id'],
@@ -102,6 +97,7 @@ class RtingsCrawler(Crawler):
 
     @staticmethod
     def graph_data_url(payload):
+        """Fetches URL for JSON file from API"""
         res = requests.post('https://www.rtings.com/api/v2/safe/graph_tool__product_graph_data_url', data=payload)
         if res.status_code < 200 or res.status_code >= 300:
             print(f'Failed to get graph URL with payload {payload}: {res.text}')
