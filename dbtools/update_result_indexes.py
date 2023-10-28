@@ -1,24 +1,24 @@
 # -*- coding: utf-8 -*-
-import json
-import os
+
 import sys
 from pathlib import Path
+import json
 from urllib.parse import quote
 import re
 import numpy as np
 from zipfile import ZipFile
 from tabulate import tabulate
 from tqdm.auto import tqdm
-from autoeq.constants import MOD_REGEX
+from autoeq.constants import SAMPLE_REGEX
 from autoeq.frequency_response import FrequencyResponse
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from measurements.manufacturer_index import ManufacturerIndex
-
-DIR_PATH = Path(__file__).parent
+ROOT_PATH = Path(__file__).parent.parent
+if str(ROOT_PATH) not in sys.path:
+    sys.path.insert(1, str(ROOT_PATH))
+from dbtools.manufacturer_index import ManufacturerIndex
+from dbtools.constants import RESULTS_PATH
 
 
 class ResultPath:
-    root_path = Path(__file__).parent.absolute()
     priorities = [
         ('Headphone.com Legacy', 'earbud'),
         ('Rtings', 'earbud'),
@@ -42,13 +42,13 @@ class ResultPath:
 
     def __init__(self, path):
         self._absolute_path = Path(path).absolute()
-        self._path_relative_to_root = self._absolute_path.relative_to(self.__class__.root_path)
+        self._path_relative_to_root = self._absolute_path.relative_to(RESULTS_PATH)
         self._source_name = self._path_relative_to_root.parts[0]
         self._form_rig = self._path_relative_to_root.parts[1]
         self._rig = self._form_rig.replace('earbud', '').replace('in-ear', '').replace('over-ear', '').strip()
         self._form = self._form_rig.replace(self._rig, '').strip()
-        self._path_relative_to_source = self._absolute_path.relative_to(self.__class__.root_path.joinpath(self._source_name))
-        self._name = self._absolute_path.parts[-1]
+        self._path_relative_to_source = self._absolute_path.relative_to(RESULTS_PATH.joinpath(self._source_name))
+        self._name = self._absolute_path.parts[-1]  # TODO: remove .csv?
 
     def __str__(self):
         return json.dumps({
@@ -154,7 +154,7 @@ def sort_each_group_by(groups, prop):
 def write_recommendations(paths):
     print('Creating recommendations index...')
     # Skip models with serial number or sample number in the name as these have averaged results
-    paths = list(filter(lambda path: not re.search(MOD_REGEX, path.name, flags=re.IGNORECASE), paths))
+    paths = list(filter(lambda path: not SAMPLE_REGEX.search(path.name), paths))
 
     grouped_by_name = group_by(paths, 'name')
     grouped_by_name = sort_each_group_by(grouped_by_name, 'priority')
@@ -177,7 +177,7 @@ def write_recommendations(paths):
     for name in sorted(list(grouped_by_name.keys()), key=lambda key: key.lower()):
         s += f'\n- [{name}]({grouped_by_name[name][0].url_relative_to_root})'
 
-    with open(DIR_PATH.joinpath('README.md'), 'w', encoding='utf-8') as f:
+    with open(RESULTS_PATH.joinpath('README.md'), 'w', encoding='utf-8') as f:
         f.write(re.sub('\n[ \t]+', '\n', s).strip())
 
 
@@ -198,7 +198,7 @@ def write_full_index(paths):
                 hp_str += f' on {path.rig}'
             s += hp_str
 
-    with open(DIR_PATH.joinpath('INDEX.md'), 'w', encoding='utf-8') as f:
+    with open(RESULTS_PATH.joinpath('INDEX.md'), 'w', encoding='utf-8') as f:
         f.write(re.sub('\n[ \t]+', '\n', s).strip() + '\n')
 
 
@@ -218,17 +218,17 @@ def write_source_indexes(paths):
                     hp_str += f' on {path.rig}'
                 s += hp_str
 
-        with open(DIR_PATH.joinpath(source_name, 'README.md'), 'w', encoding='utf-8') as f:
+        with open(RESULTS_PATH.joinpath(source_name, 'README.md'), 'w', encoding='utf-8') as f:
             f.write(re.sub('\n[ \t]+', '\n', s).strip() + '\n')
 
 
 def write_hesuvi_zip(paths):
     print('Creating HeSuVi ZIP archive...')
     # Skip models with serial number or sample number in the name as these have averaged results
-    paths = list(filter(lambda path: not re.search(MOD_REGEX, path.name, flags=re.IGNORECASE), paths))
+    paths = list(filter(lambda path: not SAMPLE_REGEX.search(path.name), paths))
 
     manufacturers = ManufacturerIndex()
-    zip_object = ZipFile(os.path.join(DIR_PATH, 'hesuvi.zip'), 'w')
+    zip_object = ZipFile(RESULTS_PATH.joinpath('hesuvi.zip'), 'w')
     zip_files = set()
 
     grouped_by_name = group_by(paths, 'name')
@@ -259,7 +259,7 @@ def write_hesuvi_zip(paths):
 def write_ranking_table(paths):
     print('Creating ranking index...')
     # Skip models with serial number or sample number in the name as these have averaged results
-    paths = list(filter(lambda path: not re.search(MOD_REGEX, path.name, flags=re.IGNORECASE), paths))
+    paths = list(filter(lambda path: not SAMPLE_REGEX.search(path.name), paths))
 
     grouped_by_name = group_by(paths, 'name')
     grouped_by_name = sort_each_group_by(grouped_by_name, 'priority')
@@ -319,12 +319,12 @@ def write_ranking_table(paths):
             {inear_str}
 
             '''
-    with open(DIR_PATH.joinpath('RANKING.md'), 'w', encoding='utf-8') as fh:
+    with open(RESULTS_PATH.joinpath('RANKING.md'), 'w', encoding='utf-8') as fh:
         fh.write(re.sub('\n[ \t]+', '\n', s).strip())
 
 
 def update_all_indexes():
-    paths = [ResultPath(readme_path.parent) for readme_path in Path(DIR_PATH).glob('*/*/**/*.md')]
+    paths = [ResultPath(readme_path.parent) for readme_path in Path(RESULTS_PATH).glob('*/*/**/*.md')]
     write_ranking_table(paths)
     write_recommendations(paths)
     write_full_index(paths)

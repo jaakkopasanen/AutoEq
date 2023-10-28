@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 
-import os
+from pathlib import Path
 import re
 from rapidfuzz import fuzz
 
-DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
-
 
 class ManufacturerIndex:
+    tsv_path = Path(__file__).parent.joinpath('manufacturers.tsv')
+
     def __init__(self):
         self._false_names = {}
         self._true_name = {}
-        with open(os.path.join(DIR_PATH, 'manufacturers.tsv'), encoding='utf-8') as fh:
+        with open(self.tsv_path, encoding='utf-8') as fh:
             manufacturers = [line.strip() for line in fh.read().strip().split('\n') if line.strip()]
         for manufacturer in manufacturers:
             names = manufacturer.split('\t')
@@ -25,7 +25,7 @@ class ManufacturerIndex:
         lines = []
         for true_name in true_names:
             lines.append('\t'.join([true_name] + self._false_names[true_name]))
-        with open(os.path.join(DIR_PATH, 'manufacturers.tsv'), 'w', encoding='utf-8') as fh:
+        with open(self.tsv_path, 'w', encoding='utf-8') as fh:
             fh.write('\n'.join(lines) + '\n')
 
     def find(self, name, ignore_case=True):
@@ -81,3 +81,7 @@ class ManufacturerIndex:
             if ratio > threshold:
                 matches.append((true_name, ratio))
         return sorted(matches, key=lambda x: x[1], reverse=True)
+
+
+class UnknownManufacturerError(Exception):
+    pass

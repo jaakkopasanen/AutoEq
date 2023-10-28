@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import os
 import sys
 from pathlib import Path
-from measurements.prompt_list_item import PromptListItem
-if str(Path(__file__).resolve().parent) not in sys.path:
-    sys.path.insert(1, str(Path(__file__).resolve().parent))
 import pandas as pd
 from rapidfuzz import fuzz
 import requests
@@ -17,15 +13,14 @@ from selenium.webdriver.common.by import By
 from autoeq.utils import is_file_name_allowed
 from abc import ABC, abstractmethod
 from time import sleep, time
-from measurements.name_index import NameIndex, NameItem
-from measurements.manufacturer_index import ManufacturerIndex
-from measurements.name_prompt import NamePrompt
-
-DIR_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
-
-
-class UnknownManufacturerError(Exception):
-    pass
+ROOT_PATH = Path(__file__).parent.parent
+if str(ROOT_PATH) not in sys.path:
+    sys.path.insert(1, str(ROOT_PATH))
+from dbtools.constants import MEASUREMENTS_PATH
+from dbtools.name_index import NameIndex, NameItem
+from dbtools.manufacturer_index import ManufacturerIndex
+from dbtools.name_prompt import NamePrompt
+from dbtools.prompt_list_item import PromptListItem
 
 
 class Crawler(ABC):
@@ -114,12 +109,9 @@ class Crawler(ABC):
         """
         name_proposals = NameIndex()
         for db in ['crinacle', 'oratory1990', 'rtings']:
-            name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db, 'name_index.tsv'))
+            name_index = NameIndex.read_tsv(MEASUREMENTS_PATH.joinpath(db, 'name_index.tsv'))
             name_proposals.concat(name_index)
         # TODO: Name indexes for Innerfidelity and headphonecom
-        # for db in ['innerfidelity', 'headphonecom']:
-        #     name_index = NameIndex.read_files(os.path.join(DIR_PATH, db, 'data', '**', '*.csv'))
-        #     name_proposals.concat(name_index)
 
         proposal_data = {'form': [], 'manufacturer': [], 'model': []}
         for item in name_proposals.items:

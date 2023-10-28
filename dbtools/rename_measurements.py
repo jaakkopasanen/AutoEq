@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import os
 import sys
 from pathlib import Path
-
-from measurements.crawler import UnknownManufacturerError
-
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir)))
-from measurements.name_index import NameIndex, NameItem
-from measurements.manufacturer_index import ManufacturerIndex
-
-DIR_PATH = Path(__file__).parent
+ROOT_PATH = Path(__file__).parent.parent
+if str(ROOT_PATH) not in sys.path:
+    sys.path.insert(1, str(ROOT_PATH))
+from dbtools.name_index import NameIndex, NameItem
+from dbtools.manufacturer_index import ManufacturerIndex, UnknownManufacturerError
+from dbtools.constants import MEASUREMENTS_PATH
 
 
 class UnknownDatabaseError(Exception):
@@ -20,8 +17,9 @@ class UnknownDatabaseError(Exception):
 def rename_measurements(renames, dry_run=False):
     dbs = {}
     for db_name in ['crinacle', 'headphonecom', 'innerfidelity', 'oratory1990', 'rtings']:
-        name_index = NameIndex.read_tsv(os.path.join(DIR_PATH, db_name, 'name_index.tsv'))
-        files = list(DIR_PATH.joinpath(db_name, 'data').glob('**/*.csv'))  # Read all the existing files in the database
+        name_index = NameIndex.read_tsv(MEASUREMENTS_PATH.joinpath(db_name, 'name_index.tsv'))
+        # Read all the existing files in the database
+        files = list(MEASUREMENTS_PATH.joinpath(db_name, 'data').glob('**/*.csv'))
         dbs[db_name] = {'name': db_name, 'name_index': name_index, 'measurements': files}
 
     manufacturers = ManufacturerIndex()
@@ -50,7 +48,7 @@ def rename_measurements(renames, dry_run=False):
                             old_path.unlink()
                             with open(new_path, 'w') as fh:
                                 fh.write(contents)
-                        print(f'Renamed "{old_path.relative_to(DIR_PATH)}" as "{new_path.relative_to(DIR_PATH)}"')
+                        print(f'Renamed "{old_path.relative_to(MEASUREMENTS_PATH)}" as "{new_path.relative_to(MEASUREMENTS_PATH)}"')
                     except Exception as err:
                         print(f'Failed to rename "{rename["old_name"]}". Restoring old file.')
                         if not dry_run:
@@ -65,4 +63,4 @@ def rename_measurements(renames, dry_run=False):
                             name_item.source_name, rename['new_name'], name_item.form, url=name_item.url,
                             rig=name_item.rig),
                         )
-                        db['name_index'].write_tsv(DIR_PATH.joinpath(db['name'], 'name_index.tsv'))
+                        db['name_index'].write_tsv(MEASUREMENTS_PATH.joinpath(db['name'], 'name_index.tsv'))

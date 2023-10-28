@@ -3861,6 +3861,12 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S1 R.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S2 L.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S2 R.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S3 L.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S3 R.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S4 L.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S4 R.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S5 L.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S5 R.txt		Moondrop x Crinacle Blessing2 Dusk	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Dusk R.txt	Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Dusk L.txt	Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Power L.txt	Power	Muse HiFi Power	in-ear	711
@@ -6123,11 +6129,11 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/Verite (BE2) R3.txt	Verite (BE
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Verite (BE2) L3.txt	Verite (BE2)	ZMF Verite (perforated hybid BE2 earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Verite (BE2) L1.txt	Verite (BE2)	ZMF Verite (perforated hybid BE2 earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Verite (BE2) R1.txt	Verite (BE2)	ZMF Verite (perforated hybid BE2 earpads)	over-ear	GRAS 43AG-7
-file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R2.txt	Verite Closed	ZMF Verite Closed	over-ear	EARS + 711
-file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R5.txt	Verite Closed	ZMF Verite Closed	over-ear	EARS + 711
-file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R1.txt	Verite Closed	ZMF Verite Closed	over-ear	EARS + 711
-file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R4.txt	Verite Closed	ZMF Verite Closed	over-ear	EARS + 711
-file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R3.txt	Verite Closed	ZMF Verite Closed	over-ear	EARS + 711
+file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R1.txt		ZMF Verite Closed	over-ear	EARS + 711
+file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R2.txt		ZMF Verite Closed	over-ear	EARS + 711
+file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R3.txt		ZMF Verite Closed	over-ear	EARS + 711
+file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R4.txt		ZMF Verite Closed	over-ear	EARS + 711
+file://measurements/crinacle/raw_data/EARS + 711 (TSV txt) (Legacy)/Verite Closed R5.txt		ZMF Verite Closed	over-ear	EARS + 711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Verite Closed (Auteur lambskin) R2.txt	Verite Closed (Auteur lambskin)	ZMF Verite Closed (Auteur lambskin earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Verite Closed (Auteur lambskin) R3.txt	Verite Closed (Auteur lambskin)	ZMF Verite Closed (Auteur lambskin earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Verite Closed (Auteur lambskin) L1.txt	Verite Closed (Auteur lambskin)	ZMF Verite Closed (Auteur lambskin earpads)	over-ear	GRAS 43AG-7

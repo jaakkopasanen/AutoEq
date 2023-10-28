@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 
-import os
-from pathlib import Path, WindowsPath
 import sys
+from pathlib import Path, WindowsPath
 import re
 import numpy as np
 import requests
 from autoeq.frequency_response import FrequencyResponse
 from autoeq.utils import is_file_name_allowed
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex, NameItem
-from measurements.crawler import Crawler
+ROOT_PATH = Path(__file__).parent.parent
+if str(ROOT_PATH) not in sys.path:
+    sys.path.insert(1, str(ROOT_PATH))
+from dbtools.name_index import NameIndex, NameItem
+from dbtools.crawler import Crawler
+from dbtools.constants import MEASUREMENTS_PATH
 
-CRINACLE_PATH = Path(__file__).parent
-ROOT_PATH = CRINACLE_PATH.parent.parent
+CRINACLE_PATH = MEASUREMENTS_PATH.joinpath('crinacle')
 
 
 class UnknownRigError(Exception):
@@ -137,7 +138,7 @@ class CrinacleCrawler(Crawler):
 
     @staticmethod
     def get_file_path_from_url(url):
-        return Path(re.sub(r'^file://', '', url)).resolve()
+        return ROOT_PATH.joinpath(re.sub(r'^file://', '', url))
 
     @staticmethod
     def normalize_file_name(file_name):

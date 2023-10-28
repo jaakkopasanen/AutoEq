@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import os
-import re
 import sys
+import re
 import tempfile
 from pathlib import Path
 from ghostscript import Ghostscript
@@ -15,12 +14,15 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from autoeq.frequency_response import FrequencyResponse
 from autoeq.utils import make_file_name_allowed, is_file_name_allowed
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex, NameItem
-from measurements.crawler import Crawler
-from measurements.image_graph_parser import ImageGraphParser
+ROOT_PATH = Path(__file__).parent.parent
+if str(ROOT_PATH) not in sys.path:
+    sys.path.insert(1, str(ROOT_PATH))
+from dbtools.name_index import NameIndex, NameItem
+from dbtools.crawler import Crawler
+from dbtools.image_graph_parser import ImageGraphParser
+from dbtools.constants import MEASUREMENTS_PATH
 
-ORATORY1990_PATH = Path(__file__).parent
+ORATORY1990_PATH = MEASUREMENTS_PATH.joinpath('oratory1990')
 
 
 class Oratory1990Crawler(Crawler):
@@ -33,10 +35,10 @@ class Oratory1990Crawler(Crawler):
 
     @staticmethod
     def read_name_index():
-        return NameIndex.read_tsv(os.path.join(ORATORY1990_PATH, 'name_index.tsv'))
+        return NameIndex.read_tsv(ORATORY1990_PATH.joinpath('name_index.tsv'))
 
     def write_name_index(self):
-        self.name_index.write_tsv(os.path.join(ORATORY1990_PATH, 'name_index.tsv'))
+        self.name_index.write_tsv(ORATORY1990_PATH.joinpath('name_index.tsv'))
 
     def guess_name(self, item):
         """Tries to guess what the name might be."""

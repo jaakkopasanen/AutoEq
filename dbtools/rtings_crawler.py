@@ -1,26 +1,24 @@
 # -*- coding: utf-8 -*-
 
-import os
 import sys
+from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 from tqdm.auto import tqdm
 import json
 import re
-from pathlib import Path
 import numpy as np
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from autoeq.frequency_response import FrequencyResponse
-sys.path.insert(1, os.path.realpath(os.path.join(sys.path[0], os.pardir, os.pardir)))
-from measurements.name_index import NameIndex, NameItem
-from measurements.crawler import Crawler
+ROOT_PATH = Path(__file__).parent.parent
+if str(ROOT_PATH) not in sys.path:
+    sys.path.insert(1, str(ROOT_PATH))
+from dbtools.name_index import NameIndex, NameItem
+from dbtools.crawler import Crawler
+from dbtools.constants import MEASUREMENTS_PATH
 
-RTINGS_PATH = Path(__file__).parent
-OVEREAR_TARGET = FrequencyResponse.read_from_csv(
-    os.path.join(RTINGS_PATH, 'resources', 'rtings_compensation_w_bass.csv'))
-INEAR_TARGET = FrequencyResponse.read_from_csv(
-    os.path.join(RTINGS_PATH, 'resources', 'rtings_inear_compensation_w_bass.csv'))
+RTINGS_PATH = MEASUREMENTS_PATH.joinpath('rtings')
 
 
 class RtingsCrawler(Crawler):
@@ -33,10 +31,10 @@ class RtingsCrawler(Crawler):
 
     @staticmethod
     def read_name_index():
-        return NameIndex.read_tsv(os.path.join(RTINGS_PATH, 'name_index.tsv'))
+        return NameIndex.read_tsv(RTINGS_PATH.joinpath('name_index.tsv'))
 
     def write_name_index(self):
-        self.name_index.write_tsv(os.path.join(RTINGS_PATH, 'name_index.tsv'))
+        self.name_index.write_tsv(RTINGS_PATH.joinpath('name_index.tsv'))
 
     def guess_name(self, item):
         name = re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', item.source_name).strip()
@@ -83,7 +81,7 @@ class RtingsCrawler(Crawler):
                 if matching_raw_fr_r_ids:
                     valid_test_ids.append(matching_raw_fr_r_ids[0])
                 if not valid_test_ids:
-                    print(f'No valid test_original_id found for {product["fullname"]}')
+                    # This must be one of the tests that don't have raw FR, but instead has bass, mid and treble, skip
                     continue
                 product_graph_data_url_payloads.append({
                     'source_name': product['fullname'],
