@@ -226,7 +226,7 @@ class Oratory1990Crawler(Crawler):
 
     def target_path(self, item):
         """Target file path for the item in measurements directory"""
-        if item.form is None or item.name is None:
+        if item.is_ignored or item.form is None or item.name is None:
             return None
         path = ORATORY1990_PATH.joinpath('data', item.form, f'{item.name}.csv')
         if not is_file_name_allowed(item.name):
@@ -251,7 +251,6 @@ class Oratory1990Crawler(Crawler):
         avg_fr.raw /= len(items)
         fr_path = self.target_path(items[0])
         avg_fr.write_to_csv(fr_path)
-        print(f'  Saved CSV to "{fr_path}"')
 
     def list_existing_files(self):
         return list(ORATORY1990_PATH.joinpath('data').glob('**/*.csv'))

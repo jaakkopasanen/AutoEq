@@ -22,6 +22,10 @@ class NameItem:
     def copy(self):
         return NameItem(self.source_name, self.name, self.form, url=self.url, rig=self.rig)
 
+    @property
+    def is_ignored(self):
+        return self.form == 'ignore'
+
 
 class NameIndex:
     def __init__(self, items=None):

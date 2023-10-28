@@ -197,7 +197,7 @@ class CrinacleCrawler(Crawler):
         return f'{item.form}/{item.rig}/{item.name}'
 
     def target_path(self, item):
-        if item.form is None or item.rig is None or item.name is None:
+        if item.is_ignored or item.form is None or item.rig is None or item.name is None:
             return None
         path = CRINACLE_PATH.joinpath('data', item.form, item.rig, f'{item.name}.csv')
         if not is_file_name_allowed(item.name):
@@ -220,7 +220,6 @@ class CrinacleCrawler(Crawler):
         avg_fr.raw /= len(items)
         Path(file_path.parent).mkdir(exist_ok=True, parents=True)
         avg_fr.write_to_csv(file_path)
-        print(f'Saved "{avg_fr.name}" to "{file_path}" with {len(items)} measurements')
 
     def list_existing_files(self):
         return list(CRINACLE_PATH.joinpath('data').glob('**/*.csv'))

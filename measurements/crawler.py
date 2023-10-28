@@ -270,7 +270,6 @@ class Crawler(ABC):
             raise InvalidResponseCodeError(f'Failed to download "{url}"')
         with open(file_path, 'wb') as fh:
             fh.write(content)
-        print('Downloaded to "{}"'.format(file_path))
         return content
 
     def get_beautiful_soup(self, url):
@@ -356,6 +355,8 @@ class Crawler(ABC):
                 continue
             known.append(file_path)
         unknown = set(existing).difference(set(known))
+        if not unknown:
+            print('No measurements need to be pruned')
         for file_path in unknown:
             if not dry_run:
                 file_path.unlink()

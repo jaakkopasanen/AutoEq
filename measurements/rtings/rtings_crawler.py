@@ -29,7 +29,7 @@ class RtingsCrawler(Crawler):
             opts = Options()
             opts.add_argument('--headless')
             driver = webdriver.Chrome(options=opts)
-        super().__init__(driver=driver)
+        super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
 
     @staticmethod
     def read_name_index():
@@ -63,8 +63,6 @@ class RtingsCrawler(Crawler):
             html = requests.get(f'https://www.rtings.com/headphones/{version}/graph').text
             document = BeautifulSoup(html, 'html.parser')
             test_bench = json.loads(document.find(class_='graph_tool_page').get('data-props'))['test_bench']
-            with open(RTINGS_PATH.joinpath(f'test_bench_{version}.json'), 'w', encoding='utf-8') as fh:
-                json.dump(test_bench, fh, ensure_ascii=False, indent=4)
             for product in test_bench['comparable_products']:
                 if product["fullname"] in [payload['source_name'] for payload in product_graph_data_url_payloads]:
                     # The versions are iterated from newest to oldest, if product with the same name already exists,
@@ -144,7 +142,7 @@ class RtingsCrawler(Crawler):
         return f'{item.form}/{item.name}'
 
     def target_path(self, item):
-        if item.form is None or item.name is None:
+        if item.is_ignored or item.form is None or item.name is None:
             return None
         return RTINGS_PATH.joinpath('data', item.form, f'{item.name}.csv')
 
@@ -167,10 +165,8 @@ class RtingsCrawler(Crawler):
         data = np.array(json_data['data'])
         frequency = data[:, header.index('Frequency')]
         target = data[:, header.index('Target Response')]
-        # Raw Left FR data has "Left Avg", raw right FR data has "Right Avg" and bass, mid and treble data has both
-        # "Left" and "Right" columns
         col_ix = None
-        for col_name in ['Left Avg', 'Left', 'Right Avg', 'Right']:
+        for col_name in ['Left Avg', 'Right Avg']:
             if col_name in header:
                 col_ix = header.index(col_name)
                 break
@@ -182,6 +178,8 @@ class RtingsCrawler(Crawler):
     def process_group(self, items, new_only=True):
         if items[0].form == 'ignore':
             return
+        if len(items) == 0 or len(items) > 2:
+            raise RtingsProcessingError(f'{len(items)} measurements grouped together, don\'t know what to do.')
         file_path = self.target_path(items[0])
         if new_only and file_path.exists():
             return
@@ -189,24 +187,15 @@ class RtingsCrawler(Crawler):
         for item in items:
             raw = self.download(item.url, self.json_path(item))
             frs.append(self.parse_json(json.loads(raw.decode('utf-8'))))
-        if len(frs) < 3:  # Raw frequency responses for left and right in separate files, unless single ear unit
-            fr = FrequencyResponse(
-                name=items[0].name,
-                frequency=frs[0].frequency,
-                raw=np.mean([fr.raw for fr in frs], axis=0))
-        elif len(frs) == 3:  # Bass, mid and treble responses in separate files
-            fr = FrequencyResponse(
-                name=items[0].name,
-                frequency=np.concatenate([fr.frequency for fr in frs]),  # All three have different frequency ranges
-                raw=np.concatenate([fr.raw for fr in frs]))
-        else:
-            raise RtingsProcessingError(f'{len(frs)} JSON files grouped together, don\'t know what to do.')
+        fr = FrequencyResponse(
+            name=items[0].name,
+            frequency=frs[0].frequency,
+            raw=np.mean([fr.raw for fr in frs], axis=0))
         fr.interpolate()
         fr.center()
         # Write to file
         file_path.parent.mkdir(exist_ok=True, parents=True)
         fr.write_to_csv(file_path)
-        print(f'Saved "{fr.name}" to "{file_path}"')
 
     def list_existing_files(self):
         return list(RTINGS_PATH.joinpath('data').glob('**/*.csv'))

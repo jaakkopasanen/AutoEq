@@ -21,14 +21,14 @@ https://i.rtings.com/assets/products/Ppx5JE1o/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/o2S8KTM9/graph-raw-frequency-response-r-14.json	AKG K240 MKII	AKG K240 MKII	over-ear	HMS II.3
 https://i.rtings.com/assets/products/CXOYfvQV/graph-raw-frequency-response-l-14.json	AKG K371	AKG K371	over-ear	HMS II.3
 https://i.rtings.com/assets/products/MAhoZFWR/graph-raw-frequency-response-r-14.json	AKG K371	AKG K371	over-ear	HMS II.3
-https://i.rtings.com/assets/products/liYFzpsm/graph-bass.json	AKG K391-NC	AKG K391NC	in-ear	HMS II.3
-https://i.rtings.com/assets/products/KhmOchbD/graph-mid.json	AKG K391-NC	AKG K391NC	in-ear	HMS II.3
-https://i.rtings.com/assets/products/wzSsQqzQ/graph-treble.json	AKG K391-NC	AKG K391NC	in-ear	HMS II.3
+https://i.rtings.com/assets/products/liYFzpsm/graph-bass.json	AKG K391-NC	AKG K391NC	ignore	HMS II.3
+https://i.rtings.com/assets/products/KhmOchbD/graph-mid.json	AKG K391-NC	AKG K391NC	ignore	HMS II.3
+https://i.rtings.com/assets/products/wzSsQqzQ/graph-treble.json	AKG K391-NC	AKG K391NC	ignore	HMS II.3
 https://i.rtings.com/assets/products/XawiX18s/graph-raw-frequency-response-l.json	AKG K44	AKG K44	over-ear	HMS II.3
 https://i.rtings.com/assets/products/5wDksILA/graph-raw-frequency-response-r.json	AKG K44	AKG K44	over-ear	HMS II.3
-https://i.rtings.com/assets/products/YS7QtGip/graph-bass.json	AKG K490-NC	AKG K490NC	over-ear	HMS II.3
-https://i.rtings.com/assets/products/hLJD92WC/graph-mid.json	AKG K490-NC	AKG K490NC	over-ear	HMS II.3
-https://i.rtings.com/assets/products/9VppBP9s/graph-treble.json	AKG K490-NC	AKG K490NC	over-ear	HMS II.3
+https://i.rtings.com/assets/products/YS7QtGip/graph-bass.json	AKG K490-NC	AKG K490NC	ignore	HMS II.3
+https://i.rtings.com/assets/products/hLJD92WC/graph-mid.json	AKG K490-NC	AKG K490NC	ignore	HMS II.3
+https://i.rtings.com/assets/products/9VppBP9s/graph-treble.json	AKG K490-NC	AKG K490NC	ignore	HMS II.3
 https://i.rtings.com/assets/products/xfLVfaAw/graph-raw-frequency-response-l-14.json	AKG K701	AKG K701	over-ear	HMS II.3
 https://i.rtings.com/assets/products/Zhyt5bqz/graph-raw-frequency-response-r-14.json	AKG K701	AKG K701	over-ear	HMS II.3
 https://i.rtings.com/assets/products/NXXNPEn6/graph-raw-frequency-response-l-14.json	AKG K702	AKG K702	over-ear	HMS II.3
@@ -155,21 +155,21 @@ https://i.rtings.com/assets/products/b9ULwlsn/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/8pEdVK4u/graph-raw-frequency-response-r.json	Audio-Technica ATH-AD700X 2013	Audio-Technica ATH-AD700X (2013)	over-ear	HMS II.3
 https://i.rtings.com/assets/products/BUqQzsCu/graph-raw-frequency-response-l.json	Audio-Technica ATH-ANC23	Audio-Technica ATH-ANC23	in-ear	HMS II.3
 https://i.rtings.com/assets/products/KdoC6fEx/graph-raw-frequency-response-r.json	Audio-Technica ATH-ANC23	Audio-Technica ATH-ANC23	in-ear	HMS II.3
-https://i.rtings.com/assets/products/3IND7xS5/graph-bass.json	Audio-Technica ATH-ANC27x	Audio-Technica ATH-ANC27x	over-ear	HMS II.3
-https://i.rtings.com/assets/products/2GmVAlSw/graph-mid.json	Audio-Technica ATH-ANC27x	Audio-Technica ATH-ANC27x	over-ear	HMS II.3
-https://i.rtings.com/assets/products/2Cq5x59v/graph-treble.json	Audio-Technica ATH-ANC27x	Audio-Technica ATH-ANC27x	over-ear	HMS II.3
-https://i.rtings.com/assets/products/VEU4JhTw/graph-bass.json	Audio-Technica ATH-ANC29 	Audio-Technica ATH-ANC29	over-ear	HMS II.3
-https://i.rtings.com/assets/products/0gjOjb3k/graph-mid.json	Audio-Technica ATH-ANC29 	Audio-Technica ATH-ANC29	over-ear	HMS II.3
-https://i.rtings.com/assets/products/3Dl6sBXu/graph-treble.json	Audio-Technica ATH-ANC29 	Audio-Technica ATH-ANC29	over-ear	HMS II.3
+https://i.rtings.com/assets/products/3IND7xS5/graph-bass.json	Audio-Technica ATH-ANC27x	Audio-Technica ATH-ANC27x	ignore	HMS II.3
+https://i.rtings.com/assets/products/2GmVAlSw/graph-mid.json	Audio-Technica ATH-ANC27x	Audio-Technica ATH-ANC27x	ignore	HMS II.3
+https://i.rtings.com/assets/products/2Cq5x59v/graph-treble.json	Audio-Technica ATH-ANC27x	Audio-Technica ATH-ANC27x	ignore	HMS II.3
+https://i.rtings.com/assets/products/VEU4JhTw/graph-bass.json	Audio-Technica ATH-ANC29 	Audio-Technica ATH-ANC29	ignore	HMS II.3
+https://i.rtings.com/assets/products/0gjOjb3k/graph-mid.json	Audio-Technica ATH-ANC29 	Audio-Technica ATH-ANC29	ignore	HMS II.3
+https://i.rtings.com/assets/products/3Dl6sBXu/graph-treble.json	Audio-Technica ATH-ANC29 	Audio-Technica ATH-ANC29	ignore	HMS II.3
 https://i.rtings.com/assets/products/IJ2YSzph/graph-raw-frequency-response-l.json	Audio-Technica ATH-ANC33iS	Audio-Technica ATH-ANC33iS	in-ear	HMS II.3
 https://i.rtings.com/assets/products/wVmRg84G/graph-raw-frequency-response-r.json	Audio-Technica ATH-ANC33iS	Audio-Technica ATH-ANC33iS	in-ear	HMS II.3
 https://i.rtings.com/assets/products/Nt1dhPxq/graph-raw-frequency-response-l.json	Audio-Technica ATH-ANC70	Audio-Technica ATH-ANC70	over-ear	HMS II.3
 https://i.rtings.com/assets/products/aCl2iRPg/graph-raw-frequency-response-r.json	Audio-Technica ATH-ANC70	Audio-Technica ATH-ANC70	over-ear	HMS II.3
 https://i.rtings.com/assets/products/yPx7jwM4/graph-raw-frequency-response-l.json	Audio-Technica ATH-ANC7B	Audio-Technica ATH-ANC7B	over-ear	HMS II.3
 https://i.rtings.com/assets/products/r5hGGc0A/graph-raw-frequency-response-r.json	Audio-Technica ATH-ANC7B	Audio-Technica ATH-ANC7B	over-ear	HMS II.3
-https://i.rtings.com/assets/products/HWHZpqvW/graph-bass.json	Audio-Technica ATH-ANC7B SVIS	Audio-Technica ATH-ANC7B SVIS	over-ear	HMS II.3
-https://i.rtings.com/assets/products/Z3NUKNwX/graph-mid.json	Audio-Technica ATH-ANC7B SVIS	Audio-Technica ATH-ANC7B SVIS	over-ear	HMS II.3
-https://i.rtings.com/assets/products/qWOLBcxO/graph-treble.json	Audio-Technica ATH-ANC7B SVIS	Audio-Technica ATH-ANC7B SVIS	over-ear	HMS II.3
+https://i.rtings.com/assets/products/HWHZpqvW/graph-bass.json	Audio-Technica ATH-ANC7B SVIS	Audio-Technica ATH-ANC7B SVIS	ignore	HMS II.3
+https://i.rtings.com/assets/products/Z3NUKNwX/graph-mid.json	Audio-Technica ATH-ANC7B SVIS	Audio-Technica ATH-ANC7B SVIS	ignore	HMS II.3
+https://i.rtings.com/assets/products/qWOLBcxO/graph-treble.json	Audio-Technica ATH-ANC7B SVIS	Audio-Technica ATH-ANC7B SVIS	ignore	HMS II.3
 https://i.rtings.com/assets/products/mT6eemG7/graph-raw-frequency-response-l.json	Audio-Technica ATH-ANC9	Audio-Technica ATH-ANC9	over-ear	HMS II.3
 https://i.rtings.com/assets/products/vV7QSb0F/graph-raw-frequency-response-r.json	Audio-Technica ATH-ANC9	Audio-Technica ATH-ANC9	over-ear	HMS II.3
 https://i.rtings.com/assets/products/PTrESQUW/graph-raw-frequency-response-l-14.json	Audio-Technica ATH-DSR9BT Wireless	Audio-Technica ATH-DSR9BT	over-ear	HMS II.3
@@ -220,23 +220,23 @@ https://i.rtings.com/assets/products/K4QQJpEX/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/y360rzLz/graph-raw-frequency-response-r-14.json	Beats Powerbeats 4 Wireless	Beats Beats Powerbeats 4	in-ear	HMS II.3
 https://i.rtings.com/assets/products/fYJ1CH6F/graph-raw-frequency-response-l-14.json	Beats EP	Beats EP On-Ear	over-ear	HMS II.3
 https://i.rtings.com/assets/products/G3PsBjhu/graph-raw-frequency-response-r-14.json	Beats EP	Beats EP On-Ear	over-ear	HMS II.3
-https://i.rtings.com/assets/products/wP4IkRRL/graph-bass.json	Beats Executive	Beats Executive	over-ear	HMS II.3
-https://i.rtings.com/assets/products/rdZiMlqA/graph-mid.json	Beats Executive	Beats Executive	over-ear	HMS II.3
-https://i.rtings.com/assets/products/HNX8Ve9O/graph-treble.json	Beats Executive	Beats Executive	over-ear	HMS II.3
+https://i.rtings.com/assets/products/wP4IkRRL/graph-bass.json	Beats Executive	Beats Executive	ignore	HMS II.3
+https://i.rtings.com/assets/products/rdZiMlqA/graph-mid.json	Beats Executive	Beats Executive	ignore	HMS II.3
+https://i.rtings.com/assets/products/HNX8Ve9O/graph-treble.json	Beats Executive	Beats Executive	ignore	HMS II.3
 https://i.rtings.com/assets/products/qlHTEIVJ/graph-raw-frequency-response-l-14.json	Beats Fit Pro True Wireless	Beats Fit Pro	in-ear	HMS II.3
 https://i.rtings.com/assets/products/566z1BPb/graph-raw-frequency-response-r-14.json	Beats Fit Pro True Wireless	Beats Fit Pro	in-ear	HMS II.3
 https://i.rtings.com/assets/products/Oqc8PhgP/graph-raw-frequency-response-l-14.json	Beats Flex Wireless	Beats Flex	in-ear	HMS II.3
 https://i.rtings.com/assets/products/wm1teLnC/graph-raw-frequency-response-r-14.json	Beats Flex Wireless	Beats Flex	in-ear	HMS II.3
 https://i.rtings.com/assets/products/rfXk663m/graph-raw-frequency-response-l-14.json	Beats Powerbeats Pro Truly Wireless	Beats Powerbeats Pro	in-ear	HMS II.3
 https://i.rtings.com/assets/products/YkFYeUbg/graph-raw-frequency-response-r-14.json	Beats Powerbeats Pro Truly Wireless	Beats Powerbeats Pro	in-ear	HMS II.3
-https://i.rtings.com/assets/products/mSk0pqHQ/graph-bass.json	Beats Powerbeats2 Wireless	Beats Powerbeats2	in-ear	HMS II.3
-https://i.rtings.com/assets/products/J9CiRlWd/graph-mid.json	Beats Powerbeats2 Wireless	Beats Powerbeats2	in-ear	HMS II.3
-https://i.rtings.com/assets/products/g5OvofJv/graph-treble.json	Beats Powerbeats2 Wireless	Beats Powerbeats2	in-ear	HMS II.3
+https://i.rtings.com/assets/products/mSk0pqHQ/graph-bass.json	Beats Powerbeats2 Wireless	Beats Powerbeats2	ignore	HMS II.3
+https://i.rtings.com/assets/products/J9CiRlWd/graph-mid.json	Beats Powerbeats2 Wireless	Beats Powerbeats2	ignore	HMS II.3
+https://i.rtings.com/assets/products/g5OvofJv/graph-treble.json	Beats Powerbeats2 Wireless	Beats Powerbeats2	ignore	HMS II.3
 https://i.rtings.com/assets/products/OqjSS0el/graph-raw-frequency-response-l.json	Beats Powerbeats3 Wireless	Beats Powerbeats3 Wireless	in-ear	HMS II.3
 https://i.rtings.com/assets/products/zQpnTA6i/graph-raw-frequency-response-r.json	Beats Powerbeats3 Wireless	Beats Powerbeats3 Wireless	in-ear	HMS II.3
-https://i.rtings.com/assets/products/OWixnLEM/graph-bass.json	Beats Solo 2 Wireless	Beats Solo 2	over-ear	HMS II.3
-https://i.rtings.com/assets/products/gCuiypxK/graph-mid.json	Beats Solo 2 Wireless	Beats Solo 2	over-ear	HMS II.3
-https://i.rtings.com/assets/products/XMoyn2ku/graph-treble.json	Beats Solo 2 Wireless	Beats Solo 2	over-ear	HMS II.3
+https://i.rtings.com/assets/products/OWixnLEM/graph-bass.json	Beats Solo 2 Wireless	Beats Solo 2	ignore	HMS II.3
+https://i.rtings.com/assets/products/gCuiypxK/graph-mid.json	Beats Solo 2 Wireless	Beats Solo 2	ignore	HMS II.3
+https://i.rtings.com/assets/products/XMoyn2ku/graph-treble.json	Beats Solo 2 Wireless	Beats Solo 2	ignore	HMS II.3
 https://i.rtings.com/assets/products/Qz1xzRR5/graph-raw-frequency-response-l-14.json	Beats Solo Pro Wireless	Beats Solo Pro	over-ear	HMS II.3
 https://i.rtings.com/assets/products/qzD0EY3A/graph-raw-frequency-response-r-14.json	Beats Solo Pro Wireless	Beats Solo Pro	over-ear	HMS II.3
 https://i.rtings.com/assets/products/FTYtBadc/graph-raw-frequency-response-l-14.json	Beats Solo3 2019 Wireless	Beats Solo3 (wireless, 2019)	over-ear	HMS II.3
@@ -406,12 +406,12 @@ https://i.rtings.com/assets/products/chTAbuFu/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/o08tKGw4/graph-raw-frequency-response-r-14.json	Cowin SE7 Wireless	Cowin SE7	over-ear	HMS II.3
 https://i.rtings.com/assets/products/ocWwnoOq/graph-raw-frequency-response-l.json	Creative Aurvana Gold Wireless	Creative Aurvana Gold	over-ear	HMS II.3
 https://i.rtings.com/assets/products/3X3YjJcu/graph-raw-frequency-response-r.json	Creative Aurvana Gold Wireless	Creative Aurvana Gold	over-ear	HMS II.3
-https://i.rtings.com/assets/products/eWjiZpjU/graph-bass.json	Creative Aurvana Platinum Wireless	Creative Aurvana Platinum	over-ear	HMS II.3
-https://i.rtings.com/assets/products/rU2xTbn9/graph-mid.json	Creative Aurvana Platinum Wireless	Creative Aurvana Platinum	over-ear	HMS II.3
-https://i.rtings.com/assets/products/izIagcJS/graph-treble.json	Creative Aurvana Platinum Wireless	Creative Aurvana Platinum	over-ear	HMS II.3
-https://i.rtings.com/assets/products/qoRNwpdc/graph-bass.json	Creative HN-900	Creative HN-900	over-ear	HMS II.3
-https://i.rtings.com/assets/products/iiS0EBgN/graph-mid.json	Creative HN-900	Creative HN-900	over-ear	HMS II.3
-https://i.rtings.com/assets/products/MIoguOsA/graph-treble.json	Creative HN-900	Creative HN-900	over-ear	HMS II.3
+https://i.rtings.com/assets/products/eWjiZpjU/graph-bass.json	Creative Aurvana Platinum Wireless	Creative Aurvana Platinum	ignore	HMS II.3
+https://i.rtings.com/assets/products/rU2xTbn9/graph-mid.json	Creative Aurvana Platinum Wireless	Creative Aurvana Platinum	ignore	HMS II.3
+https://i.rtings.com/assets/products/izIagcJS/graph-treble.json	Creative Aurvana Platinum Wireless	Creative Aurvana Platinum	ignore	HMS II.3
+https://i.rtings.com/assets/products/qoRNwpdc/graph-bass.json	Creative HN-900	Creative HN-900	ignore	HMS II.3
+https://i.rtings.com/assets/products/iiS0EBgN/graph-mid.json	Creative HN-900	Creative HN-900	ignore	HMS II.3
+https://i.rtings.com/assets/products/MIoguOsA/graph-treble.json	Creative HN-900	Creative HN-900	ignore	HMS II.3
 https://i.rtings.com/assets/products/q3SSwzZR/graph-raw-frequency-response-l-14.json	Creative Outlier Air Truly Wireless 	Creative Outlier Air	in-ear	HMS II.3
 https://i.rtings.com/assets/products/eQsVIUeo/graph-raw-frequency-response-r-14.json	Creative Outlier Air Truly Wireless 	Creative Outlier Air	in-ear	HMS II.3
 https://i.rtings.com/assets/products/Z01gSDe3/graph-raw-frequency-response-l-14.json	Creative Outlier Air V2 True Wireless	Creative Outlier Air V2	in-ear	HMS II.3
@@ -510,9 +510,9 @@ https://i.rtings.com/assets/products/CaBVZynH/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/KwnjovRX/graph-raw-frequency-response-r-14.json	HiFiMan Sundara 2020	HIFIMAN Sundara (post-2020 earpads)	over-ear	HMS II.3
 https://i.rtings.com/assets/products/kR1Do0Fp/graph-raw-frequency-response-l-14.json	HiFiMan Sundara 2018	HIFIMAN Sundara (pre-2020 earpads)	over-ear	HMS II.3
 https://i.rtings.com/assets/products/b5An8vId/graph-raw-frequency-response-r-14.json	HiFiMan Sundara 2018	HIFIMAN Sundara (pre-2020 earpads)	over-ear	HMS II.3
-https://i.rtings.com/assets/products/cXHOZL1L/graph-bass.json	Harman/Kardon NC Noise-Cancelling	Harman Kardon NC	over-ear	HMS II.3
-https://i.rtings.com/assets/products/BpIyd7jB/graph-mid.json	Harman/Kardon NC Noise-Cancelling	Harman Kardon NC	over-ear	HMS II.3
-https://i.rtings.com/assets/products/EbDYPL5S/graph-treble.json	Harman/Kardon NC Noise-Cancelling	Harman Kardon NC	over-ear	HMS II.3
+https://i.rtings.com/assets/products/cXHOZL1L/graph-bass.json	Harman/Kardon NC Noise-Cancelling	Harman Kardon NC	ignore	HMS II.3
+https://i.rtings.com/assets/products/BpIyd7jB/graph-mid.json	Harman/Kardon NC Noise-Cancelling	Harman Kardon NC	ignore	HMS II.3
+https://i.rtings.com/assets/products/EbDYPL5S/graph-treble.json	Harman/Kardon NC Noise-Cancelling	Harman Kardon NC	ignore	HMS II.3
 https://i.rtings.com/assets/products/fd3aqpcF/graph-raw-frequency-response-l-14.json	HyperX Cloud Alpha	HyperX Cloud Alpha	over-ear	HMS II.3
 https://i.rtings.com/assets/products/jEF4AwMK/graph-raw-frequency-response-r-14.json	HyperX Cloud Alpha	HyperX Cloud Alpha	over-ear	HMS II.3
 https://i.rtings.com/assets/products/b1g0r67b/graph-raw-frequency-response-l-14.json	HyperX Cloud Alpha S	HyperX Cloud Alpha S	over-ear	HMS II.3
@@ -661,6 +661,8 @@ https://i.rtings.com/assets/products/4NjPBa6n/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/VT81Hqt2/graph-raw-frequency-response-r-14.json	JLab Audio JBuds Air ANC Truly Wireless	JLab Audio JBuds Air ANC	in-ear	HMS II.3
 https://i.rtings.com/assets/products/Tr8P9ZI2/graph-raw-frequency-response-l-14.json	JLab Audio JBuds Air Executive Truly Wireless	JLab Audio JBuds Air Executive	in-ear	HMS II.3
 https://i.rtings.com/assets/products/LB5QDkpL/graph-raw-frequency-response-r-14.json	JLab Audio JBuds Air Executive Truly Wireless	JLab Audio JBuds Air Executive	in-ear	HMS II.3
+https://i.rtings.com/assets/products/ZtbtpZi5/graph-raw-frequency-response-l-14.json	Jabra Elite 10 True Wireless 	Jabra Elite 10	in-ear	HMS II.3
+https://i.rtings.com/assets/products/bhR94es9/graph-raw-frequency-response-r-14.json	Jabra Elite 10 True Wireless 	Jabra Elite 10	in-ear	HMS II.3
 https://i.rtings.com/assets/products/4Y9AeUD8/graph-raw-frequency-response-l.json	Jabra Elite 25e Wireless	Jabra Elite 25e	in-ear	HMS II.3
 https://i.rtings.com/assets/products/WhgN0i2G/graph-raw-frequency-response-r.json	Jabra Elite 25e Wireless	Jabra Elite 25e	in-ear	HMS II.3
 https://i.rtings.com/assets/products/Yhn1kWzX/graph-raw-frequency-response-l-14.json	Jabra Elite 3 True Wireless	Jabra Elite 3	in-ear	HMS II.3
@@ -747,9 +749,9 @@ https://i.rtings.com/assets/products/hKMZB3Gv/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/7oFopqg4/graph-raw-frequency-response-r.json	Koss Porta Pro KTC	Koss Porta Pro KTC	over-ear	HMS II.3
 https://i.rtings.com/assets/products/aUtbW6jL/graph-raw-frequency-response-l.json	Koss Porta Pro Wireless	Koss Porta Pro Wireless	over-ear	HMS II.3
 https://i.rtings.com/assets/products/LICYGzgs/graph-raw-frequency-response-r.json	Koss Porta Pro Wireless	Koss Porta Pro Wireless	over-ear	HMS II.3
-https://i.rtings.com/assets/products/7kT6h3EH/graph-bass.json	Koss QZ900	Koss QZ900	over-ear	HMS II.3
-https://i.rtings.com/assets/products/bUI3TWSG/graph-mid.json	Koss QZ900	Koss QZ900	over-ear	HMS II.3
-https://i.rtings.com/assets/products/woWjUGWs/graph-treble.json	Koss QZ900	Koss QZ900	over-ear	HMS II.3
+https://i.rtings.com/assets/products/7kT6h3EH/graph-bass.json	Koss QZ900	Koss QZ900	ignore	HMS II.3
+https://i.rtings.com/assets/products/bUI3TWSG/graph-mid.json	Koss QZ900	Koss QZ900	ignore	HMS II.3
+https://i.rtings.com/assets/products/woWjUGWs/graph-treble.json	Koss QZ900	Koss QZ900	ignore	HMS II.3
 https://i.rtings.com/assets/products/4ggtaQMs/graph-raw-frequency-response-l.json	Koss QZPro	Koss QZPro	over-ear	HMS II.3
 https://i.rtings.com/assets/products/dwYr4geB/graph-raw-frequency-response-r.json	Koss QZPro	Koss QZPro	over-ear	HMS II.3
 https://i.rtings.com/assets/products/Ck46kn8N/graph-raw-frequency-response-l.json	Koss UR20	Koss UR20	over-ear	HMS II.3
@@ -822,14 +824,14 @@ https://i.rtings.com/assets/products/yTlVxplG/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/amPz19YD/graph-raw-frequency-response-r-14.json	Mixcder E9 Wireless	Mixcder E9	over-ear	HMS II.3
 https://i.rtings.com/assets/products/MtQrHs0C/graph-raw-frequency-response-l.json	Monoprice 110010	Monoprice 110010	over-ear	HMS II.3
 https://i.rtings.com/assets/products/iXlIklqS/graph-raw-frequency-response-r.json	Monoprice 110010	Monoprice 110010	over-ear	HMS II.3
-https://i.rtings.com/assets/products/y5f16u8m/graph-bass.json	Monoprice 10799	Monoprice Noice Cancelling	in-ear	HMS II.3
-https://i.rtings.com/assets/products/3GYqa7mS/graph-mid.json	Monoprice 10799	Monoprice Noice Cancelling	in-ear	HMS II.3
-https://i.rtings.com/assets/products/Lnxb4TVi/graph-treble.json	Monoprice 10799	Monoprice Noice Cancelling	in-ear	HMS II.3
+https://i.rtings.com/assets/products/y5f16u8m/graph-bass.json	Monoprice 10799	Monoprice Noice Cancelling	ignore	HMS II.3
+https://i.rtings.com/assets/products/3GYqa7mS/graph-mid.json	Monoprice 10799	Monoprice Noice Cancelling	ignore	HMS II.3
+https://i.rtings.com/assets/products/Lnxb4TVi/graph-treble.json	Monoprice 10799	Monoprice Noice Cancelling	ignore	HMS II.3
 https://i.rtings.com/assets/products/faqBFdfU/graph-raw-frequency-response-l-14.json	Monster Clarity 101 AirLinks Truly Wireless	Monster Clarity 101 AirLinks	in-ear	HMS II.3
 https://i.rtings.com/assets/products/QOfCWfq7/graph-raw-frequency-response-r-14.json	Monster Clarity 101 AirLinks Truly Wireless	Monster Clarity 101 AirLinks	in-ear	HMS II.3
-https://i.rtings.com/assets/products/ZZkus1GE/graph-bass.json	Monster Inspiration	Monster Inspiration	over-ear	HMS II.3
-https://i.rtings.com/assets/products/RrHtFrH9/graph-mid.json	Monster Inspiration	Monster Inspiration	over-ear	HMS II.3
-https://i.rtings.com/assets/products/pbNhNrOj/graph-treble.json	Monster Inspiration	Monster Inspiration	over-ear	HMS II.3
+https://i.rtings.com/assets/products/ZZkus1GE/graph-bass.json	Monster Inspiration	Monster Inspiration	ignore	HMS II.3
+https://i.rtings.com/assets/products/RrHtFrH9/graph-mid.json	Monster Inspiration	Monster Inspiration	ignore	HMS II.3
+https://i.rtings.com/assets/products/pbNhNrOj/graph-treble.json	Monster Inspiration	Monster Inspiration	ignore	HMS II.3
 https://i.rtings.com/assets/products/eIxTvOdc/graph-raw-frequency-response-l-14.json	MOONDROP Aria	Moondrop Aria	in-ear	HMS II.3
 https://i.rtings.com/assets/products/mTYt3GA7/graph-raw-frequency-response-r-14.json	MOONDROP Aria	Moondrop Aria	in-ear	HMS II.3
 https://i.rtings.com/assets/products/44AnEZwE/graph-raw-frequency-response-l-14.json	MOONDROP Blessing 3	Moondrop Blessing 3	in-ear	HMS II.3
@@ -868,9 +870,9 @@ https://i.rtings.com/assets/products/nMSZvopm/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/q0tKeHKL/graph-raw-frequency-response-r-14.json	Mpow X6 Truly Wireless	Mpow X6	in-ear	HMS II.3
 https://i.rtings.com/assets/products/3ashlShk/graph-raw-frequency-response-l.json	NAD VISO HP50	NAD VISO HP50	over-ear	HMS II.3
 https://i.rtings.com/assets/products/wFWT3H8n/graph-raw-frequency-response-r.json	NAD VISO HP50	NAD VISO HP50	over-ear	HMS II.3
-https://i.rtings.com/assets/products/cwWCprux/graph-bass.json	Noontec Hammo Go	Noontec Hammo Go	over-ear	HMS II.3
-https://i.rtings.com/assets/products/Rz9UZZB6/graph-mid.json	Noontec Hammo Go	Noontec Hammo Go	over-ear	HMS II.3
-https://i.rtings.com/assets/products/r2P0gkIx/graph-treble.json	Noontec Hammo Go	Noontec Hammo Go	over-ear	HMS II.3
+https://i.rtings.com/assets/products/cwWCprux/graph-bass.json	Noontec Hammo Go	Noontec Hammo Go	ignore	HMS II.3
+https://i.rtings.com/assets/products/Rz9UZZB6/graph-mid.json	Noontec Hammo Go	Noontec Hammo Go	ignore	HMS II.3
+https://i.rtings.com/assets/products/r2P0gkIx/graph-treble.json	Noontec Hammo Go	Noontec Hammo Go	ignore	HMS II.3
 https://i.rtings.com/assets/products/HfOdzDik/graph-raw-frequency-response-l-14.json	Nothing Ear (1) Truly Wireless	Nothing ear (1)	in-ear	HMS II.3
 https://i.rtings.com/assets/products/7RHepBGn/graph-raw-frequency-response-r-14.json	Nothing Ear (1) Truly Wireless	Nothing ear (1)	in-ear	HMS II.3
 https://i.rtings.com/assets/products/LwFCjmam/graph-raw-frequency-response-l-14.json	Nothing Ear (2) Truly Wireless	Nothing ear (2)	in-ear	HMS II.3
@@ -893,12 +895,12 @@ https://i.rtings.com/assets/products/9pxklq8U/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/ywdP2dF4/graph-raw-frequency-response-r.json	Oppo PM-3	Oppo PM3	over-ear	HMS II.3
 https://i.rtings.com/assets/products/92F7lL5f/graph-raw-frequency-response-l.json	Panasonic RP-HC101	Panasonic RP-HC101	over-ear	HMS II.3
 https://i.rtings.com/assets/products/4Zr3EOD3/graph-raw-frequency-response-r.json	Panasonic RP-HC101	Panasonic RP-HC101	over-ear	HMS II.3
-https://i.rtings.com/assets/products/a3mJSPMx/graph-bass.json	Panasonic RP-HC200	Panasonic RP-HC200	over-ear	HMS II.3
-https://i.rtings.com/assets/products/QBetwOG1/graph-mid.json	Panasonic RP-HC200	Panasonic RP-HC200	over-ear	HMS II.3
-https://i.rtings.com/assets/products/1vWyOvKt/graph-treble.json	Panasonic RP-HC200	Panasonic RP-HC200	over-ear	HMS II.3
-https://i.rtings.com/assets/products/j6f031cV/graph-bass.json	Panasonic RP-HC56	Panasonic RP-HC56	in-ear	HMS II.3
-https://i.rtings.com/assets/products/WhgiK8gy/graph-mid.json	Panasonic RP-HC56	Panasonic RP-HC56	in-ear	HMS II.3
-https://i.rtings.com/assets/products/cNtFEIYN/graph-treble.json	Panasonic RP-HC56	Panasonic RP-HC56	in-ear	HMS II.3
+https://i.rtings.com/assets/products/a3mJSPMx/graph-bass.json	Panasonic RP-HC200	Panasonic RP-HC200	ignore	HMS II.3
+https://i.rtings.com/assets/products/QBetwOG1/graph-mid.json	Panasonic RP-HC200	Panasonic RP-HC200	ignore	HMS II.3
+https://i.rtings.com/assets/products/1vWyOvKt/graph-treble.json	Panasonic RP-HC200	Panasonic RP-HC200	ignore	HMS II.3
+https://i.rtings.com/assets/products/j6f031cV/graph-bass.json	Panasonic RP-HC56	Panasonic RP-HC56	ignore	HMS II.3
+https://i.rtings.com/assets/products/WhgiK8gy/graph-mid.json	Panasonic RP-HC56	Panasonic RP-HC56	ignore	HMS II.3
+https://i.rtings.com/assets/products/cNtFEIYN/graph-treble.json	Panasonic RP-HC56	Panasonic RP-HC56	ignore	HMS II.3
 https://i.rtings.com/assets/products/UIG6vdcG/graph-raw-frequency-response-l.json	Panasonic RP-HC800	Panasonic RP-HC800	over-ear	HMS II.3
 https://i.rtings.com/assets/products/tkbHTHE9/graph-raw-frequency-response-r.json	Panasonic RP-HC800	Panasonic RP-HC800	over-ear	HMS II.3
 https://i.rtings.com/assets/products/Tz3dLA6G/graph-raw-frequency-response-l.json	Panasonic ErgoFit RP-HJE120	Panasonic RP-HJE120	in-ear	HMS II.3
@@ -917,9 +919,9 @@ https://i.rtings.com/assets/products/nvypcDqN/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/zx0g8Ijy/graph-raw-frequency-response-r-14.json	Philips SHP9500	Philips SHP9500	over-ear	HMS II.3
 https://i.rtings.com/assets/products/hmZ8aZ9E/graph-raw-frequency-response-l-14.json	Philips SHP9600	Philips SHP9600	over-ear	HMS II.3
 https://i.rtings.com/assets/products/naFxd9UL/graph-raw-frequency-response-r-14.json	Philips SHP9600	Philips SHP9600	over-ear	HMS II.3
-https://i.rtings.com/assets/products/B35t6IDi/graph-bass.json	Plane Quiet Platinum	Plane Quiet Platinum	over-ear	HMS II.3
-https://i.rtings.com/assets/products/CAarMrmZ/graph-mid.json	Plane Quiet Platinum	Plane Quiet Platinum	over-ear	HMS II.3
-https://i.rtings.com/assets/products/aN10JN6n/graph-treble.json	Plane Quiet Platinum	Plane Quiet Platinum	over-ear	HMS II.3
+https://i.rtings.com/assets/products/B35t6IDi/graph-bass.json	Plane Quiet Platinum	Plane Quiet Platinum	ignore	HMS II.3
+https://i.rtings.com/assets/products/CAarMrmZ/graph-mid.json	Plane Quiet Platinum	Plane Quiet Platinum	ignore	HMS II.3
+https://i.rtings.com/assets/products/aN10JN6n/graph-treble.json	Plane Quiet Platinum	Plane Quiet Platinum	ignore	HMS II.3
 https://i.rtings.com/assets/products/6WagNsLl/graph-raw-frequency-response-l.json	Plantronics BackBeat Fit Wireless	Plantronics BackBeat Fit	earbud	HMS II.3
 https://i.rtings.com/assets/products/iPVxaNsM/graph-raw-frequency-response-r.json	Plantronics BackBeat Fit Wireless	Plantronics BackBeat Fit	earbud	HMS II.3
 https://i.rtings.com/assets/products/MVlHOre6/graph-raw-frequency-response-l.json	Plantronics BackBeat Go 600 Wireless	Plantronics BackBeat Go 600	over-ear	HMS II.3
@@ -1019,16 +1021,16 @@ https://i.rtings.com/assets/products/rCGDlH6e/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/r2fbgx1c/graph-raw-frequency-response-r-14.json	Razer Opus Wireless 2021	Razer Opus 2021	over-ear	HMS II.3
 https://i.rtings.com/assets/products/ikwKRTZ3/graph-raw-frequency-response-l-14.json	Razer Opus X Wireless	Razer Opus X	over-ear	HMS II.3
 https://i.rtings.com/assets/products/9g5MJgCw/graph-raw-frequency-response-r-14.json	Razer Opus X Wireless	Razer Opus X	over-ear	HMS II.3
-https://i.rtings.com/assets/products/0N9MWipM/graph-bass.json	Rovking V1	Rovking V1	in-ear	HMS II.3
-https://i.rtings.com/assets/products/dxYKEDk5/graph-mid.json	Rovking V1	Rovking V1	in-ear	HMS II.3
-https://i.rtings.com/assets/products/Oaw5v9mV/graph-treble.json	Rovking V1	Rovking V1	in-ear	HMS II.3
+https://i.rtings.com/assets/products/0N9MWipM/graph-bass.json	Rovking V1	Rovking V1	ignore	HMS II.3
+https://i.rtings.com/assets/products/dxYKEDk5/graph-mid.json	Rovking V1	Rovking V1	ignore	HMS II.3
+https://i.rtings.com/assets/products/Oaw5v9mV/graph-treble.json	Rovking V1	Rovking V1	ignore	HMS II.3
 https://i.rtings.com/assets/products/LM6NUgYK/graph-raw-frequency-response-l-14.json	RØDE NTH-100M	RØDE NTH-100M	over-ear	HMS II.3
 https://i.rtings.com/assets/products/EpuYthhO/graph-raw-frequency-response-r-14.json	RØDE NTH-100M	RØDE NTH-100M	over-ear	HMS II.3
 https://i.rtings.com/assets/products/idd36TRg/graph-raw-frequency-response-l.json	SENSO ActivBuds S-250	SENSO ActivBuds S-250	in-ear	HMS II.3
 https://i.rtings.com/assets/products/hLAu419n/graph-raw-frequency-response-r.json	SENSO ActivBuds S-250	SENSO ActivBuds S-250	in-ear	HMS II.3
-https://i.rtings.com/assets/products/aM0PuCLI/graph-bass.json	SMS Audio STREET by 50	SMS Audio Street by 50	over-ear	HMS II.3
-https://i.rtings.com/assets/products/gESyGmWv/graph-mid.json	SMS Audio STREET by 50	SMS Audio Street by 50	over-ear	HMS II.3
-https://i.rtings.com/assets/products/4WNeEyqF/graph-treble.json	SMS Audio STREET by 50	SMS Audio Street by 50	over-ear	HMS II.3
+https://i.rtings.com/assets/products/aM0PuCLI/graph-bass.json	SMS Audio STREET by 50	SMS Audio Street by 50	ignore	HMS II.3
+https://i.rtings.com/assets/products/gESyGmWv/graph-mid.json	SMS Audio STREET by 50	SMS Audio Street by 50	ignore	HMS II.3
+https://i.rtings.com/assets/products/4WNeEyqF/graph-treble.json	SMS Audio STREET by 50	SMS Audio Street by 50	ignore	HMS II.3
 https://i.rtings.com/assets/products/8HGfQj5m/graph-raw-frequency-response-l-14.json	Sabbat E12 True Wireless	Sabbat E12	in-ear	HMS II.3
 https://i.rtings.com/assets/products/fscltbfs/graph-raw-frequency-response-r-14.json	Sabbat E12 True Wireless	Sabbat E12	in-ear	HMS II.3
 https://i.rtings.com/assets/products/ZE8IumI0/graph-raw-frequency-response-l-14.json	Samson SR850	Samson SR850	over-ear	HMS II.3
@@ -1071,9 +1073,9 @@ https://i.rtings.com/assets/products/BbKy1JOL/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/sHFR72W0/graph-raw-frequency-response-r-14.json	Sennheiser Game One Gaming Headset	Sennheiser GAME ONE	over-ear	HMS II.3
 https://i.rtings.com/assets/products/VemkwtSx/graph-raw-frequency-response-l.json	Sennheiser HD 201	Sennheiser HD 201	over-ear	HMS II.3
 https://i.rtings.com/assets/products/4H0pna3e/graph-raw-frequency-response-r.json	Sennheiser HD 201	Sennheiser HD 201	over-ear	HMS II.3
-https://i.rtings.com/assets/products/OZsiutJt/graph-bass.json	Sennheiser HD 202 II	Sennheiser HD 202 II	over-ear	HMS II.3
-https://i.rtings.com/assets/products/EmcTskd2/graph-mid.json	Sennheiser HD 202 II	Sennheiser HD 202 II	over-ear	HMS II.3
-https://i.rtings.com/assets/products/gIT8Ibud/graph-treble.json	Sennheiser HD 202 II	Sennheiser HD 202 II	over-ear	HMS II.3
+https://i.rtings.com/assets/products/OZsiutJt/graph-bass.json	Sennheiser HD 202 II	Sennheiser HD 202 II	ignore	HMS II.3
+https://i.rtings.com/assets/products/EmcTskd2/graph-mid.json	Sennheiser HD 202 II	Sennheiser HD 202 II	ignore	HMS II.3
+https://i.rtings.com/assets/products/gIT8Ibud/graph-treble.json	Sennheiser HD 202 II	Sennheiser HD 202 II	ignore	HMS II.3
 https://i.rtings.com/assets/products/2qItHJAZ/graph-raw-frequency-response-l-14.json	Sennheiser HD 280 Pro 2016	Sennheiser HD 280 Pro	over-ear	HMS II.3
 https://i.rtings.com/assets/products/WHE0RioX/graph-raw-frequency-response-r-14.json	Sennheiser HD 280 Pro 2016	Sennheiser HD 280 Pro	over-ear	HMS II.3
 https://i.rtings.com/assets/products/elo1ZWHO/graph-raw-frequency-response-l-14.json	Sennheiser HD 4.40 BT Wireless	Sennheiser HD 4.40BT	over-ear	HMS II.3
@@ -1124,12 +1126,12 @@ https://i.rtings.com/assets/products/Py7Odd5I/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/D111exaB/graph-raw-frequency-response-r.json	Sennheiser Momentum 2.0 Wireless/HD1 Wireless	Sennheiser HD1 Wireless	over-ear	HMS II.3
 https://i.rtings.com/assets/products/1t7vCMWp/graph-raw-frequency-response-l-14.json	Sennheiser IE 40 PRO	Sennheiser IE 40 Pro	in-ear	HMS II.3
 https://i.rtings.com/assets/products/hVoRUCtP/graph-raw-frequency-response-r-14.json	Sennheiser IE 40 PRO	Sennheiser IE 40 Pro	in-ear	HMS II.3
-https://i.rtings.com/assets/products/dQXJKdU1/graph-bass.json	Sennheiser MM 450-X Wireless	Sennheiser MM 450-X	over-ear	HMS II.3
-https://i.rtings.com/assets/products/pV90A80K/graph-mid.json	Sennheiser MM 450-X Wireless	Sennheiser MM 450-X	over-ear	HMS II.3
-https://i.rtings.com/assets/products/E658KUxJ/graph-treble.json	Sennheiser MM 450-X Wireless	Sennheiser MM 450-X	over-ear	HMS II.3
-https://i.rtings.com/assets/products/tJLLAv4u/graph-bass.json	Sennheiser MM 550-X Wireless	Sennheiser MM 550-X	over-ear	HMS II.3
-https://i.rtings.com/assets/products/PyCOzFJo/graph-mid.json	Sennheiser MM 550-X Wireless	Sennheiser MM 550-X	over-ear	HMS II.3
-https://i.rtings.com/assets/products/9NVi339R/graph-treble.json	Sennheiser MM 550-X Wireless	Sennheiser MM 550-X	over-ear	HMS II.3
+https://i.rtings.com/assets/products/dQXJKdU1/graph-bass.json	Sennheiser MM 450-X Wireless	Sennheiser MM 450-X	ignore	HMS II.3
+https://i.rtings.com/assets/products/pV90A80K/graph-mid.json	Sennheiser MM 450-X Wireless	Sennheiser MM 450-X	ignore	HMS II.3
+https://i.rtings.com/assets/products/E658KUxJ/graph-treble.json	Sennheiser MM 450-X Wireless	Sennheiser MM 450-X	ignore	HMS II.3
+https://i.rtings.com/assets/products/tJLLAv4u/graph-bass.json	Sennheiser MM 550-X Wireless	Sennheiser MM 550-X	ignore	HMS II.3
+https://i.rtings.com/assets/products/PyCOzFJo/graph-mid.json	Sennheiser MM 550-X Wireless	Sennheiser MM 550-X	ignore	HMS II.3
+https://i.rtings.com/assets/products/9NVi339R/graph-treble.json	Sennheiser MM 550-X Wireless	Sennheiser MM 550-X	ignore	HMS II.3
 https://i.rtings.com/assets/products/7FXX3Zsr/graph-raw-frequency-response-l-14.json	Sennheiser Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	over-ear	HMS II.3
 https://i.rtings.com/assets/products/yEmgXG1P/graph-raw-frequency-response-r-14.json	Sennheiser Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	over-ear	HMS II.3
 https://i.rtings.com/assets/products/9qhO19Rq/graph-raw-frequency-response-l-14.json	Sennheiser MOMENTUM 4 Wireless	Sennheiser Momentum 4 Wireless	over-ear	HMS II.3
@@ -1144,9 +1146,9 @@ https://i.rtings.com/assets/products/uqdU0IuO/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/7HvRPo7G/graph-raw-frequency-response-r-14.json	Drop + Sennheiser/EPOS PC38X	Sennheiser PC38X	over-ear	HMS II.3
 https://i.rtings.com/assets/products/eECn8WjM/graph-raw-frequency-response-l.json	Sennheiser PXC 250 II	Sennheiser PXC 250 II	over-ear	HMS II.3
 https://i.rtings.com/assets/products/EuldStWy/graph-raw-frequency-response-r.json	Sennheiser PXC 250 II	Sennheiser PXC 250 II	over-ear	HMS II.3
-https://i.rtings.com/assets/products/xChkFwjK/graph-bass.json	Sennheiser PXC 450	Sennheiser PXC 450	over-ear	HMS II.3
-https://i.rtings.com/assets/products/EBY6ewtw/graph-mid.json	Sennheiser PXC 450	Sennheiser PXC 450	over-ear	HMS II.3
-https://i.rtings.com/assets/products/VdB5TwqG/graph-treble.json	Sennheiser PXC 450	Sennheiser PXC 450	over-ear	HMS II.3
+https://i.rtings.com/assets/products/xChkFwjK/graph-bass.json	Sennheiser PXC 450	Sennheiser PXC 450	ignore	HMS II.3
+https://i.rtings.com/assets/products/EBY6ewtw/graph-mid.json	Sennheiser PXC 450	Sennheiser PXC 450	ignore	HMS II.3
+https://i.rtings.com/assets/products/VdB5TwqG/graph-treble.json	Sennheiser PXC 450	Sennheiser PXC 450	ignore	HMS II.3
 https://i.rtings.com/assets/products/Iy9p6Mce/graph-raw-frequency-response-l-14.json	Sennheiser PXC 550 Wireless	Sennheiser PXC 550 Wireless	over-ear	HMS II.3
 https://i.rtings.com/assets/products/Z33bv7CS/graph-raw-frequency-response-r-14.json	Sennheiser PXC 550 Wireless	Sennheiser PXC 550 Wireless	over-ear	HMS II.3
 https://i.rtings.com/assets/products/4SQxS0f1/graph-raw-frequency-response-l-14.json	Sennheiser PXC 550-II Wireless	Sennheiser PXC 550-II Wireless	over-ear	HMS II.3
@@ -1259,9 +1261,9 @@ https://i.rtings.com/assets/products/oT7mwjdo/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/FfZDfiAr/graph-raw-frequency-response-r.json	Sony MDR-7520	Sony MDR-7520	over-ear	HMS II.3
 https://i.rtings.com/assets/products/fTVg5va0/graph-raw-frequency-response-l-14.json	Sony MDR-MV1	Sony MDR-MV1	over-ear	HMS II.3
 https://i.rtings.com/assets/products/UXO1DQxS/graph-raw-frequency-response-r-14.json	Sony MDR-MV1	Sony MDR-MV1	over-ear	HMS II.3
-https://i.rtings.com/assets/products/PN9sNoGX/graph-bass.json	Sony MDR-NC8	Sony MDR-NC8	over-ear	HMS II.3
-https://i.rtings.com/assets/products/IwHenADu/graph-mid.json	Sony MDR-NC8	Sony MDR-NC8	over-ear	HMS II.3
-https://i.rtings.com/assets/products/pdZkJtr8/graph-treble.json	Sony MDR-NC8	Sony MDR-NC8	over-ear	HMS II.3
+https://i.rtings.com/assets/products/PN9sNoGX/graph-bass.json	Sony MDR-NC8	Sony MDR-NC8	ignore	HMS II.3
+https://i.rtings.com/assets/products/IwHenADu/graph-mid.json	Sony MDR-NC8	Sony MDR-NC8	ignore	HMS II.3
+https://i.rtings.com/assets/products/pdZkJtr8/graph-treble.json	Sony MDR-NC8	Sony MDR-NC8	ignore	HMS II.3
 https://i.rtings.com/assets/products/9aMaqspC/graph-raw-frequency-response-l-14.json	Sony MDR-XB50AP Extra Bass	Sony MDR-XB50AP	in-ear	HMS II.3
 https://i.rtings.com/assets/products/HmwZ5M4s/graph-raw-frequency-response-r-14.json	Sony MDR-XB50AP Extra Bass	Sony MDR-XB50AP	in-ear	HMS II.3
 https://i.rtings.com/assets/products/5zlf37PD/graph-raw-frequency-response-l.json	Sony MDR-XB950B1 Wireless	Sony MDR-XB950B1	over-ear	HMS II.3
@@ -1270,9 +1272,9 @@ https://i.rtings.com/assets/products/LPD1Am3R/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/BiBflbTK/graph-raw-frequency-response-r.json	Sony MDR-XB950N1 Wireless	Sony MDR-XB950N1	over-ear	HMS II.3
 https://i.rtings.com/assets/products/iZxv9ikg/graph-raw-frequency-response-l.json	Sony MDR-ZX110NC	Sony MDR-ZX110NC	over-ear	HMS II.3
 https://i.rtings.com/assets/products/b3qoMUZk/graph-raw-frequency-response-r.json	Sony MDR-ZX110NC	Sony MDR-ZX110NC	over-ear	HMS II.3
-https://i.rtings.com/assets/products/LvAx2DrA/graph-bass.json	Sony MDR-ZX550BN Wireless	Sony MDR-ZX550BN	over-ear	HMS II.3
-https://i.rtings.com/assets/products/XokodPT3/graph-mid.json	Sony MDR-ZX550BN Wireless	Sony MDR-ZX550BN	over-ear	HMS II.3
-https://i.rtings.com/assets/products/3N9zIVNv/graph-treble.json	Sony MDR-ZX550BN Wireless	Sony MDR-ZX550BN	over-ear	HMS II.3
+https://i.rtings.com/assets/products/LvAx2DrA/graph-bass.json	Sony MDR-ZX550BN Wireless	Sony MDR-ZX550BN	ignore	HMS II.3
+https://i.rtings.com/assets/products/XokodPT3/graph-mid.json	Sony MDR-ZX550BN Wireless	Sony MDR-ZX550BN	ignore	HMS II.3
+https://i.rtings.com/assets/products/3N9zIVNv/graph-treble.json	Sony MDR-ZX550BN Wireless	Sony MDR-ZX550BN	ignore	HMS II.3
 https://i.rtings.com/assets/products/musqjBIg/graph-raw-frequency-response-l.json	Sony MDR-ZX770BN Wireless	Sony MDR-ZX770BN	over-ear	HMS II.3
 https://i.rtings.com/assets/products/z1zUjzpC/graph-raw-frequency-response-r.json	Sony MDR-ZX770BN Wireless	Sony MDR-ZX770BN	over-ear	HMS II.3
 https://i.rtings.com/assets/products/csC2l9nS/graph-raw-frequency-response-l-14.json	Sony MH755	Sony MH755	in-ear	HMS II.3
@@ -1353,17 +1355,17 @@ https://i.rtings.com/assets/products/Dn94bF4o/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/ybEt8hgn/graph-raw-frequency-response-r.json	Sony MDR-100AAP/h.ear on	Sony h.ear on	over-ear	HMS II.3
 https://i.rtings.com/assets/products/Fy6ll9yw/graph-raw-frequency-response-l.json	Sound Intone CX-05	Sound Intone CX-05	over-ear	HMS II.3
 https://i.rtings.com/assets/products/uUGYNTP1/graph-raw-frequency-response-r.json	Sound Intone CX-05	Sound Intone CX-05	over-ear	HMS II.3
-https://i.rtings.com/assets/products/i7DQPrQ7/graph-bass.json	SoundPeats Q8 Wireless	SoundPeats Q8	in-ear	HMS II.3
-https://i.rtings.com/assets/products/ofb4V9Io/graph-mid.json	SoundPeats Q8 Wireless	SoundPeats Q8	in-ear	HMS II.3
-https://i.rtings.com/assets/products/lYXAVIw0/graph-treble.json	SoundPeats Q8 Wireless	SoundPeats Q8	in-ear	HMS II.3
+https://i.rtings.com/assets/products/i7DQPrQ7/graph-bass.json	SoundPeats Q8 Wireless	SoundPeats Q8	ignore	HMS II.3
+https://i.rtings.com/assets/products/ofb4V9Io/graph-mid.json	SoundPeats Q8 Wireless	SoundPeats Q8	ignore	HMS II.3
+https://i.rtings.com/assets/products/lYXAVIw0/graph-treble.json	SoundPeats Q8 Wireless	SoundPeats Q8	ignore	HMS II.3
 https://i.rtings.com/assets/products/dKFANhnJ/graph-raw-frequency-response-l.json	SoundPeats Q9A Wireless	SoundPeats Q9A	in-ear	HMS II.3
 https://i.rtings.com/assets/products/fxs5k1aX/graph-raw-frequency-response-r.json	SoundPeats Q9A Wireless	SoundPeats Q9A	in-ear	HMS II.3
-https://i.rtings.com/assets/products/CChTTaOp/graph-bass.json	SoundPeats QY8 Wireless	SoundPeats QY8	in-ear	HMS II.3
-https://i.rtings.com/assets/products/MqU9NC32/graph-mid.json	SoundPeats QY8 Wireless	SoundPeats QY8	in-ear	HMS II.3
-https://i.rtings.com/assets/products/1WDcMNKH/graph-treble.json	SoundPeats QY8 Wireless	SoundPeats QY8	in-ear	HMS II.3
-https://i.rtings.com/assets/products/xUnnCjZC/graph-bass.json	SoundPeats QY9 Wireless	SoundPeats QY9	in-ear	HMS II.3
-https://i.rtings.com/assets/products/p2Ovyze2/graph-mid.json	SoundPeats QY9 Wireless	SoundPeats QY9	in-ear	HMS II.3
-https://i.rtings.com/assets/products/rGJrTLSI/graph-treble.json	SoundPeats QY9 Wireless	SoundPeats QY9	in-ear	HMS II.3
+https://i.rtings.com/assets/products/CChTTaOp/graph-bass.json	SoundPeats QY8 Wireless	SoundPeats QY8	ignore	HMS II.3
+https://i.rtings.com/assets/products/MqU9NC32/graph-mid.json	SoundPeats QY8 Wireless	SoundPeats QY8	ignore	HMS II.3
+https://i.rtings.com/assets/products/1WDcMNKH/graph-treble.json	SoundPeats QY8 Wireless	SoundPeats QY8	ignore	HMS II.3
+https://i.rtings.com/assets/products/xUnnCjZC/graph-bass.json	SoundPeats QY9 Wireless	SoundPeats QY9	ignore	HMS II.3
+https://i.rtings.com/assets/products/p2Ovyze2/graph-mid.json	SoundPeats QY9 Wireless	SoundPeats QY9	ignore	HMS II.3
+https://i.rtings.com/assets/products/rGJrTLSI/graph-treble.json	SoundPeats QY9 Wireless	SoundPeats QY9	ignore	HMS II.3
 https://i.rtings.com/assets/products/yaxts3jv/graph-raw-frequency-response-l-14.json	SoundPeats TrueFree/True Wireless	SoundPeats TrueFree	in-ear	HMS II.3
 https://i.rtings.com/assets/products/l64iqzRe/graph-raw-frequency-response-r-14.json	SoundPeats TrueFree/True Wireless	SoundPeats TrueFree	in-ear	HMS II.3
 https://i.rtings.com/assets/products/smhGgNGZ/graph-raw-frequency-response-l-14.json	SoundPeats TrueFree 2 Wireless	SoundPeats TrueFree 2	in-ear	HMS II.3
@@ -1509,9 +1511,9 @@ https://i.rtings.com/assets/products/eOeGoSxH/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/c66Ya0mT/graph-raw-frequency-response-r.json	V-MODA Crossfade 2 Wireless	V-MODA Crossfade 2 Wireless	over-ear	HMS II.3
 https://i.rtings.com/assets/products/oQgBlhr5/graph-raw-frequency-response-l.json	V-MODA Crossfade M-100	V-MODA Crossfade M-100	over-ear	HMS II.3
 https://i.rtings.com/assets/products/gEyb2Iyl/graph-raw-frequency-response-r.json	V-MODA Crossfade M-100	V-MODA Crossfade M-100	over-ear	HMS II.3
-https://i.rtings.com/assets/products/oo1F0niG/graph-bass.json	Venstone X1	Venstone X1	in-ear	HMS II.3
-https://i.rtings.com/assets/products/RPaargsS/graph-mid.json	Venstone X1	Venstone X1	in-ear	HMS II.3
-https://i.rtings.com/assets/products/ZEqzVRWx/graph-treble.json	Venstone X1	Venstone X1	in-ear	HMS II.3
+https://i.rtings.com/assets/products/oo1F0niG/graph-bass.json	Venstone X1	Venstone X1	ignore	HMS II.3
+https://i.rtings.com/assets/products/RPaargsS/graph-mid.json	Venstone X1	Venstone X1	ignore	HMS II.3
+https://i.rtings.com/assets/products/ZEqzVRWx/graph-treble.json	Venstone X1	Venstone X1	ignore	HMS II.3
 https://i.rtings.com/assets/products/4F8rJSpY/graph-raw-frequency-response-l.json	Westone W40	Westone W40	in-ear	HMS II.3
 https://i.rtings.com/assets/products/bbPfNWJe/graph-raw-frequency-response-r.json	Westone W40	Westone W40	in-ear	HMS II.3
 https://i.rtings.com/assets/products/5YUofiyo/graph-raw-frequency-response-l-14.json	Wyze Buds Truly Wireless	Wyze Buds	in-ear	HMS II.3
