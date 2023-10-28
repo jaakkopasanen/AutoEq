@@ -441,20 +441,20 @@ class FrequencyResponse:
         return bass_boost.fr + treble_boost.fr + tilt
 
     def compensate(
-            self, compensation, bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
+            self, target, bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
             bass_boost_q=DEFAULT_BASS_BOOST_Q, treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
             treble_boost_fc=DEFAULT_TREBLE_BOOST_FC, treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
             tilt=None, fs=DEFAULT_FS,
             sound_signature=None, sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
             min_mean_error=False):
         """Sets target and error curves."""
-        # Copy and center compensation data
-        compensation = self.__class__(name='compensation', frequency=compensation.frequency, raw=compensation.raw)
-        compensation.interpolate()
-        compensation.center()
+        # Copy and center target data
+        target = target.copy()
+        target.interpolate()
+        target.center()
 
         # Set target
-        self.target = compensation.raw + self.create_target(
+        self.target = target.raw + self.create_target(
             bass_boost_gain=bass_boost_gain, bass_boost_fc=bass_boost_fc, bass_boost_q=bass_boost_q,
             treble_boost_gain=treble_boost_gain, treble_boost_fc=treble_boost_fc, treble_boost_q=treble_boost_q,
             tilt=tilt, fs=fs)
@@ -480,7 +480,7 @@ class FrequencyResponse:
             self.error -= delta
             self.target += delta
 
-        # Smoothed error and equalization results are affected by compensation, reset them
+        # Smoothed error and equalization results are affected by error calculation, reset them
         self.reset(
             raw=False, smoothed=False, error=False, error_smoothed=True, equalization=True, parametric_eq=True,
             fixed_band_eq=True, equalized_raw=True, equalized_smoothed=True, target=False)
@@ -946,17 +946,17 @@ class FrequencyResponse:
         return score, std, slope, mean
 
     def process(
-            self, compensation=None, min_mean_error=False, bass_boost_gain=None, bass_boost_fc=None, bass_boost_q=None,
+            self, target=None, min_mean_error=False, bass_boost_gain=None, bass_boost_fc=None, bass_boost_q=None,
             treble_boost_gain=None, treble_boost_fc=None, treble_boost_q=None, tilt=None, fs=DEFAULT_FS,
             sound_signature=None, sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
             max_gain=DEFAULT_MAX_GAIN, max_slope=DEFAULT_MAX_SLOPE, concha_interference=False,
             window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
             treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
             treble_gain_k=DEFAULT_TREBLE_GAIN_K):
-        """Runs processing pipeline with interpolation, centering, compensation and equalization.
+        """Runs processing pipeline with interpolation, centering, error calculation and equalization.
 
         Args:
-            compensation: Compensation FrequencyResponse. Must be interpolated and centered.
+            target: Target FrequencyResponse
             min_mean_error: Minimize mean error. Normally all curves cross at 1 kHz but this makes it possible to shift
                             error curve so that mean between 100 Hz and 10 kHz is at minimum. Target curve is shifted
                             accordingly. Useful for avoiding large bias caused by a narrow notch or peak at 1 kHz.
@@ -985,7 +985,7 @@ class FrequencyResponse:
         self.interpolate()
         self.center()
         self.compensate(
-            compensation, bass_boost_gain=bass_boost_gain, bass_boost_fc=bass_boost_fc, bass_boost_q=bass_boost_q,
+            target, bass_boost_gain=bass_boost_gain, bass_boost_fc=bass_boost_fc, bass_boost_q=bass_boost_q,
             treble_boost_gain=treble_boost_gain, treble_boost_fc=treble_boost_fc, treble_boost_q=treble_boost_q,
             tilt=tilt, fs=fs, sound_signature=sound_signature,
             sound_signature_smoothing_window_size=sound_signature_smoothing_window_size,

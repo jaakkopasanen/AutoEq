@@ -73,8 +73,8 @@ def write_entries_and_measurements():
         json.dump(entries, fh, ensure_ascii=False, indent=4)
 
 
-def write_compensations():
-    compensations = [
+def write_targets():
+    targets = [
         {
             'file': TARGETS_PATH.joinpath('autoeq_in-ear.csv'),
             'label': 'AutoEq In-ear',
@@ -241,16 +241,16 @@ def write_compensations():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },
     ]
-    for compensation in compensations:
-        compensation['fr'] = FrequencyResponse.read_from_csv(compensation['file']).to_dict()
-        del compensation['file']
-    with open(WEBAPP_PATH.joinpath('data', 'compensations.json'), 'w', encoding='utf-8') as fh:
-        json.dump(compensations, fh, ensure_ascii=False, indent=4)
+    for target in targets:
+        target['fr'] = FrequencyResponse.read_from_csv(target['file']).to_dict()
+        del target['file']
+    with open(WEBAPP_PATH.joinpath('data', 'targets.json'), 'w', encoding='utf-8') as fh:
+        json.dump(targets, fh, ensure_ascii=False, indent=4)
 
 
 def main():
     write_entries_and_measurements()
-    write_compensations()
+    write_targets()
 
 
 if __name__ == '__main__':

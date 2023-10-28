@@ -118,4 +118,5 @@ chromedriver*
 webapp/data/*
 !webapp/data/legal/
 !webapp/data/compensations.json
+!webapp/data/targets.json
 

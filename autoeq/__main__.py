@@ -25,10 +25,8 @@ def cli_args():
                             help='Overwrite input data in standardized sampling and bias?')
     arg_parser.add_argument('--new-only', action='store_true',
                             help='Only process input files which don\'t have results in output directory.')
-    arg_parser.add_argument('--compensation', type=str,
-                            help='File path to CSV containing compensation (target) curve. Compensation is '
-                                 'necessary when equalizing because all input data is raw microphone data. See '
-                                 '"compensation", "innerfidelity/resources" and "headphonecom/resources".')
+    arg_parser.add_argument('--target', type=str,
+                            help='File path to CSV containing target curve.')
     arg_parser.add_argument('--equalize', action='store_true',
                             help='Will run equalization if this parameter exists, no value needed.')
     arg_parser.add_argument('--parametric-eq', action='store_true',
@@ -109,7 +107,7 @@ def cli_args():
                                  'will affect the bass gain.')
     arg_parser.add_argument('--sound-signature', type=str,
                             help='File path to a sound signature CSV file. Sound signature is added to the '
-                                 'compensation curve. Error data will be used as the sound signature target if '
+                                 'target curve. Error data will be used as the sound signature target if '
                                  'the CSV file contains an error column and otherwise the raw column will be used. '
                                  'This means there are two different options for using sound signature: 1st is '
                                  'pointing it to a result CSV file of a previous run and the 2nd is to create a '

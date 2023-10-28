@@ -2,7 +2,7 @@
 AutoEq is a tool for equalizing headphone frequency responses automatically, and it achieves this by parsing
 frequency response measurements and producing equalization settings which correct the headphone to a neutral sound.
 AutoEq provides methods for reading data, equalizing it to a given target
-response and saving the results for usage with equalizers. It's possible to use different compensation (target)
+response and saving the results for usage with equalizers. It's possible to use different target
 curves, apply tilt for making the headphones brighter/darker and adding a bass boost. It's even possible to make one
 headphone sound (roughly) like another headphone. For more info about usage see [Usage](#usage).
 
@@ -57,7 +57,7 @@ from autoeq.batch_processing import batch_processing
 
 batch_processing(
   input_dir='path/to/measurements', output_dir='path/to/results', new_only=False, standardize_input=False,
-  compensation='path/to/compensation.csv', parametric_eq=True, fixed_band_eq=True,
+  compensation='path/to/target.csv', parametric_eq=True, fixed_band_eq=True,
   ten_band_eq=True, parametric_eq_config='8_PEAKING_WITH_SHELVES', fixed_band_eq_config='10_BAND_GRAPHIC_EQ',
   convolution_eq=True, fs=44100, bit_depth=16, phase='minimum', f_res=10, bass_boost_gain=6,
   bass_boost_fc=105, bass_boost_q=0.7, treble_boost_gain=0, treble_boost_fc=10000, treble_boost_q=0.7, tilt=None,

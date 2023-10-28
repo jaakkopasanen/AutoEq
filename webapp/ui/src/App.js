@@ -57,12 +57,12 @@ const App = (props) => {
       : []
   );
   const [selectedSoundProfile, setSelectedSoundProfile] = useState(null);
-  const [compensations, setCompensations, compensationsRef] = useStateRef([]);
-  const compensationsBassBoostsRef = useRef({});
+  const [targets, setTargets, targetsRef] = useStateRef([]);
+  const targetsBassBoostsRef = useRef({});
   // Sound signatures preferred for each measurement rig: {source: {form: {rig: label}}
-  const [preferredCompensations, setPreferredCompensations, preferredCompensationsRef] = useStateRef([]);
-  // Name (label) of the currently selected compensation.
-  const [selectedCompensation, setSelectedCompensation, selectedCompensationRef] = useStateRef(null);
+  const [preferredTargets, setPreferredTarget, preferredTargetsRef] = useStateRef([]);
+  // Name (label) of the currently selected target.
+  const [selectedTarget, setSelectedTarget, selectedTargetRef] = useStateRef(null);
   const [soundSignature, setSoundSignature, soundSignatureRef] = useStateRef(null);  // Sound signature { frequency, raw }
   // Smoothing window size for sound signature
   const [soundSignatureSmoothingWindowSize, setSoundSignatureSmoothingWindowSize, soundSignatureSmoothingWindowSizeRef] = useStateRef(1.0);
@@ -98,8 +98,8 @@ const App = (props) => {
   const maxSlopeRef = useRef(18);
 
   const setState = {
-    selectedCompensation: setSelectedCompensation,
-    preferredCompensations: setPreferredCompensations,
+    selectedTarget: setSelectedTarget,
+    preferredTargets: setPreferredTarget,
     soundSignature: setSoundSignature,
     soundSignatureSmoothingWindowSize: (v) => { soundSignatureSmoothingWindowSizeRef.current = v; },
     bassBoostFc: (v) => { bassBoostFcRef.current = v; },
@@ -126,15 +126,15 @@ const App = (props) => {
 
   const setUp = async () => {
     setMeasurements(await ApiClient.fetchMeasurements());
-    const [compensations, preferredCompensations] = await ApiClient.fetchCompensations();
-    const compensationsBassBoosts = {};
-    for (const compensation of compensations) {
-      compensationsBassBoosts[compensation.label] = cloneDeep(compensation.bassBoost);
-      delete compensation.bassBoost;
+    const [targets, preferredTarget] = await ApiClient.fetchTargets();
+    const targetsBassBoosts = {};
+    for (const target of targets) {
+      targetsBassBoosts[target.label] = cloneDeep(target.bassBoost);
+      delete target.bassBoost;
     }
-    compensationsBassBoostsRef.current = compensationsBassBoosts;
-    setCompensations(compensations);
-    setPreferredCompensations(preferredCompensations);
+    targetsBassBoostsRef.current = targetsBassBoosts;
+    setTargets(targets);
+    setPreferredTarget(preferredTarget);
     apiClientRef.current = new ApiClient();
 
     document.addEventListener('click', () => {
@@ -168,19 +168,19 @@ const App = (props) => {
 
     const selectedEqualizerObj = find(equalizers, (equalizer) => equalizer.label === selectedEqualizerRef.current);
 
-    let compensation = find(
-      compensationsRef.current,
-      (compensation) => compensation.label === selectedCompensationRef.current);
-    if (compensation.frequency) {
-      compensation = { frequency: compensation.frequency, raw: compensation.raw };
+    let target = find(
+      targetsRef.current,
+      (target) => target.label === selectedTargetRef.current);
+    if (target.frequency) {
+      target = { frequency: target.frequency, raw: target.raw };
     } else{
-      compensation = compensation.label;
+      target = target.label;
     }
 
     const eqParams = {
       selectedMeasurement: selectedMeasurementRef.current,
       equalizer: find(equalizersRef.current, (eq) => eq.label === selectedEqualizerRef.current),
-      compensation: compensation,
+      target: target,
       soundSignature: soundSignatureRef.current,
       soundSignatureSmoothingWindowSize: soundSignatureSmoothingWindowSizeRef.current,
       bassBoostGain: bassBoostGainRef.current,
@@ -258,13 +258,13 @@ const App = (props) => {
       return;
     }
 
-    const compensationLabel = preferredCompensationsRef.current[measurement.source][measurement.form][measurement.rig];
+    const targetLabel = preferredTargetsRef.current[measurement.source][measurement.form][measurement.rig];
     setShowInfo(false);
     setSelectedMeasurement(cloneDeep(measurement));
-    setSelectedCompensation(compensationLabel);
-    bassBoostFcRef.current = compensationsBassBoostsRef.current[compensationLabel].fc;
-    bassBoostQRef.current = compensationsBassBoostsRef.current[compensationLabel].q;
-    bassBoostGainRef.current = compensationsBassBoostsRef.current[compensationLabel].gain;
+    setSelectedTarget(targetLabel);
+    bassBoostFcRef.current = targetsBassBoostsRef.current[targetLabel].fc;
+    bassBoostQRef.current = targetsBassBoostsRef.current[targetLabel].q;
+    bassBoostGainRef.current = targetsBassBoostsRef.current[targetLabel].gain;
     equalize(true);
   };
 
@@ -305,7 +305,7 @@ const App = (props) => {
 
   const captureSoundProfile = () => {
     return {
-      selectedCompensation, preferredCompensations, soundSignature, soundSignatureSmoothingWindowSize,
+      selectedTarget, preferredTargets, soundSignature, soundSignatureSmoothingWindowSize,
       bassBoostGain: bassBoostGainRef.current, bassBoostFc: bassBoostFcRef.current, bassBoostQ: bassBoostQRef.current,
       trebleBoostFc: trebleBoostFcRef.current, trebleBoostQ: trebleBoostQRef.current,
       tilt: tiltRef.current, maxGain: maxGainRef.current, windowSize: windowSizeRef.current,
@@ -342,22 +342,22 @@ const App = (props) => {
     setSoundProfiles(newSoundProfiles);
   };
 
-  const onCompensationSelected = (compensation) => {
-    const newPreferredCompensations = cloneDeep(preferredCompensationsRef.current);
-    newPreferredCompensations[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig] = compensation.label;
-    setSelectedCompensation(compensation.label);
-    setPreferredCompensations(newPreferredCompensations);
-    bassBoostFcRef.current = compensationsBassBoostsRef.current[compensation.label].fc;
-    bassBoostQRef.current = compensationsBassBoostsRef.current[compensation.label].q;
-    bassBoostGainRef.current = compensationsBassBoostsRef.current[compensation.label].gain;
+  const onTargetSelected = (target) => {
+    const newPreferredTarget = cloneDeep(preferredTargetsRef.current);
+    newPreferredTarget[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig] = target.label;
+    setSelectedTarget(target.label);
+    setPreferredTarget(newPreferredTarget);
+    bassBoostFcRef.current = targetsBassBoostsRef.current[target.label].fc;
+    bassBoostQRef.current = targetsBassBoostsRef.current[target.label].q;
+    bassBoostGainRef.current = targetsBassBoostsRef.current[target.label].gain;
     equalize(true);
   };
 
-  const onCompensationCreated = (name, dataPoints) => {
-    const newCompensations = cloneDeep(compensationsRef.current);
-    const newCompensationsBassBoosts = cloneDeep(compensationsBassBoostsRef.current);
+  const onTargetCreated = (name, dataPoints) => {
+    const newTargets = cloneDeep(targetsRef.current);
+    const newTargetsBassBoosts = cloneDeep(targetsBassBoostsRef.current);
     const obj = transposeArrayToObject(dataPoints, ['frequency', 'raw'])
-    const newCompensation = {
+    const newTarget = {
       label: name,
       frequency: obj.frequency,
       raw: obj.raw,
@@ -365,28 +365,28 @@ const App = (props) => {
       recommended: [],
       bassBoost: { fc: 105, q: 0.7, gain: 0.0 }
     };
-    newCompensations.push(newCompensation);
-    newCompensationsBassBoosts[name] = { fc: 105, q: 0.7, gain: 0.0 };
-    compensationsBassBoostsRef.current = newCompensationsBassBoosts;
-    setCompensations(newCompensations);
-    onCompensationSelected(newCompensation);
+    newTargets.push(newTarget);
+    newTargetsBassBoosts[name] = { fc: 105, q: 0.7, gain: 0.0 };
+    targetsBassBoostsRef.current = newTargetsBassBoosts;
+    setTargets(newTargets);
+    onTargetSelected(newTarget);
 
   };
 
   const onEqParamChanged = (newParams) => {
-    const newCompensationsBassBoosts = cloneDeep(compensationsBassBoostsRef.current);
-    const compensationLabel = preferredCompensationsRef.current[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig];
+    const newTargetsBassBoosts = cloneDeep(targetsBassBoostsRef.current);
+    const targetLabel = preferredTargetsRef.current[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig];
     for (const [key, val] of Object.entries(newParams)) {
       if (key === 'bassBoostFc') {
-        newCompensationsBassBoosts[compensationLabel].fc = val;
+        newTargetsBassBoosts[targetLabel].fc = val;
       } else  if (key === 'bassBoostQ') {
-        newCompensationsBassBoosts[compensationLabel].q = val;
+        newTargetsBassBoosts[targetLabel].q = val;
       } else if (key === 'bassBoostGain') {
-        newCompensationsBassBoosts[compensationLabel].gain = val;
+        newTargetsBassBoosts[targetLabel].gain = val;
       }
       setState[key](val);
     }
-    compensationsBassBoostsRef.current = newCompensationsBassBoosts;
+    targetsBassBoostsRef.current = newTargetsBassBoosts;
     equalize();
   };
 
@@ -504,10 +504,10 @@ const App = (props) => {
                 onSoundProfileDeleted={onSoundProfileDeleted}
                 captureSoundProfile={captureSoundProfile}
 
-                compensations={compensations}
-                selectedCompensation={selectedCompensation}
-                onCompensationSelected={onCompensationSelected}
-                onCompensationCreated={onCompensationCreated}
+                targets={targets}
+                selectedTarget={selectedTarget}
+                onTargetSelected={onTargetSelected}
+                onTargetCreated={onTargetCreated}
 
                 soundSignature={soundSignature}
                 soundSignatureSmoothingWindowSize={soundSignatureSmoothingWindowSize}

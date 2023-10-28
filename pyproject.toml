@@ -41,7 +41,7 @@ include = [
 ]
 exclude = [
     "/.github",
-    "/compensation",
+    "/targets",
     "/measurements",
     "/results",
     "/tests",

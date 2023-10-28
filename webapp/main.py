@@ -30,8 +30,8 @@ with open(ROOT_DIR.joinpath('data/entries.json')) as fh:
 with open(ROOT_DIR.joinpath('data/measurements.json')) as fh:
     measurements = json.load(fh)
 
-with open(ROOT_DIR.joinpath('data/compensations.json')) as fh:
-    compensations = json.load(fh)
+with open(ROOT_DIR.joinpath('data/targets.json')) as fh:
+    targets = json.load(fh)
 
 
 @app.get('/entries')
@@ -39,9 +39,9 @@ def get_entries():
     return entries
 
 
-@app.get('/compensations')
-def get_compensations():
-    return [{key: compensation[key] for key in ['label', 'compatible', 'recommended', 'bassBoost']} for compensation in compensations]
+@app.get('/targets')
+def get_targets():
+    return [{key: target[key] for key in ['label', 'compatible', 'recommended', 'bassBoost']} for target in targets]
 
 
 @app.get('/playlist')
@@ -118,7 +118,7 @@ class EqualizeRequest(BaseModel):
     name: Optional[str]
     source: Optional[str]
     rig: Optional[str]
-    compensation: Optional[Union[str, MeasurementData]]
+    target: Optional[Union[str, MeasurementData]]
     bass_boost_gain = DEFAULT_BASS_BOOST_GAIN
     bass_boost_fc = DEFAULT_BASS_BOOST_FC
     bass_boost_q = DEFAULT_BASS_BOOST_Q
@@ -200,7 +200,7 @@ def equalize(req: EqualizeRequest):
             measurement = measurements[req.name][req.source][req.rig]
             fr = FrequencyResponse(name='fr', frequency=measurement['frequency'], raw=measurement['raw'])
 
-        if req.compensation is None:
+        if req.target is None:
             fr.smoothen_fractional_octave(
                 window_size=req.window_size,
                 treble_window_size=req.treble_window_size,
@@ -208,18 +208,18 @@ def equalize(req: EqualizeRequest):
                 treble_f_upper=req.treble_f_upper
             )
             return {'fr': fr.to_dict()}
-        elif type(req.compensation) == str:
-            compensation = None
-            for comp in compensations:
-                if comp['label'] == req.compensation:
-                    compensation = comp
-            if compensation is None:
-                raise ValueError(f'Unknown compensation {req.compensation}')
-            compensation = FrequencyResponse(
-                name='compensation', frequency=compensation['fr']['frequency'], raw=compensation['fr']['raw'])
+        elif type(req.target) == str:
+            target = None
+            for target_ in targets:
+                if target_['label'] == req.target:
+                    target = target_
+            if target is None:
+                raise ValueError(f'Unknown target {req.target}')
+            target = FrequencyResponse(
+                name='target', frequency=target['fr']['frequency'], raw=target['fr']['raw'])
         else:
-            compensation = FrequencyResponse(
-                name='compensation', frequency=req.compensation.frequency, raw=req.compensation.raw)
+            target = FrequencyResponse(
+                name='target', frequency=req.target.frequency, raw=req.target.raw)
 
         if req.sound_signature is not None:
             sound_signature = FrequencyResponse(
@@ -228,7 +228,7 @@ def equalize(req: EqualizeRequest):
             sound_signature = None
 
         fr.process(
-            compensation=compensation,
+            target=target,
             min_mean_error=True,
             bass_boost_gain=req.bass_boost_gain,
             bass_boost_fc=req.bass_boost_fc,

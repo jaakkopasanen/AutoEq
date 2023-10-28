@@ -26,15 +26,15 @@ class TestAutoEq(unittest.TestCase):
             path.parent.mkdir(parents=True, exist_ok=True)
             with open(path, 'w') as fh:
                 fh.write('frequency,raw\n20,2\n50,2\n200,0\n1000,1\n3000,10\n10000,0\n20000,-15')
-        self._compensation = self._root.joinpath('compensation.csv')
+        self._target = self._root.joinpath('target.csv')
         fr = FrequencyResponse(
-            name='compensation',
+            name='target',
             frequency=[20, 50, 200, 1000, 3000, 10000, 20000],
             raw=[6, 6, -1, 0, 8, 1, -10])
         fr.interpolate(pol_order=2)
         fr.smoothen_fractional_octave(window_size=2, treble_window_size=2)
         fr.center()
-        fr.write_to_csv(self._compensation)
+        fr.write_to_csv(self._target)
         self._sound_signature = self._root.joinpath('sound_signature.csv')
         with open(self._sound_signature, 'w') as fh:
             fh.write('frequency,raw\n20.0,0\n10000,0.0\n20000,3')
@@ -46,7 +46,7 @@ class TestAutoEq(unittest.TestCase):
         self.assertTrue(self._input.joinpath('Headphone 1.csv').exists())
         self.assertTrue(self._input.joinpath('Headphone 2.csv').exists())
         frs = batch_processing(
-            input_dir=self._input, output_dir=self._output, standardize_input=True, compensation=self._compensation,
+            input_dir=self._input, output_dir=self._output, standardize_input=True, target=self._target,
             parametric_eq=True, fixed_band_eq=True,
             ten_band_eq=True,
             parametric_eq_config=['4_PEAKING_WITH_LOW_SHELF', PEQ_CONFIGS['4_PEAKING_WITH_HIGH_SHELF']],

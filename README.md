@@ -13,7 +13,7 @@ This Github repository now mainly serves developers. The contributions of this p
 [Innerfidelity](https://www.stereophile.com/content/innerfidelity-headphone-measurements),
 [Rtings](https://www.rtings.com/headphones/1-5/graph) and legacy
 headphone.com measurements (which are not the same as what the company produces today).
-* Collection of different headphone frequency response [targets](./compensation) as numerical data
+* Collection of different headphone frequency response [targets](./targets) as numerical data
 * Pre-computed equalizer settings in [results](./results), although these should not be used by normal users since
 **[autoeq.app](https://autoeq.app)** exists
 
@@ -88,7 +88,7 @@ python -m autoeq --help
 ```
 
 ```shell
-python -m autoeq --input-file="measurements/oratory1990/data/over-ear/Sennheiser HD 800.csv" --output-dir="my_results" --compensation="compensation/harman_over-ear_2018_wo_bass.csv" --max-gain=24 --parametric-eq --parametric-eq-config=4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF --bass-boost=6 --convolution-eq --fs=48000 --bit-depth=32 --f-res=16
+python -m autoeq --input-file="measurements/oratory1990/data/over-ear/Sennheiser HD 800.csv" --output-dir="my_results" --target="targets/harman_over-ear_2018_wo_bass.csv" --max-gain=24 --parametric-eq --parametric-eq-config=4_PEAKING_WITH_LOW_SHELF,4_PEAKING_WITH_HIGH_SHELF --bass-boost=6 --convolution-eq --fs=48000 --bit-depth=32 --f-res=16
 ```
 
 When coming back at a later time you'll only need to activate virtual environment again
@@ -124,7 +124,7 @@ python -m autoeq --help
 ### Example
 Equalizing Sennheiser HD 650 and saving results to `my_results/`:
 ```shell
-python -m autoeq --input-file="measurements/oratory1990/data/over-ear/Sennheiser HD 650.csv" --output-dir="my_results" --compensation="compensation/harman_over-ear_2018.csv" --convolution-eq --parametric-eq --ten-band-eq --fs=44100,48000
+python -m autoeq --input-file="measurements/oratory1990/data/over-ear/Sennheiser HD 650.csv" --output-dir="my_results" --target="targets/harman_over-ear_2018.csv" --convolution-eq --parametric-eq --ten-band-eq --fs=44100,48000
 ```
 
 ### Building

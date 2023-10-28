@@ -17,7 +17,7 @@ from autoeq.frequency_response import FrequencyResponse
 
 
 def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=False, standardize_input=False,
-                     compensation=None, parametric_eq=False, fixed_band_eq=False,
+                     target=None, parametric_eq=False, fixed_band_eq=False,
                      ten_band_eq=False, parametric_eq_config=None, fixed_band_eq_config=None, convolution_eq=False,
                      fs=DEFAULT_FS, bit_depth=DEFAULT_BIT_DEPTH, phase=DEFAULT_PHASE, f_res=DEFAULT_F_RES,
                      bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
@@ -30,8 +30,8 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
                      treble_gain_k=DEFAULT_TREBLE_GAIN_K, preamp=DEFAULT_PREAMP, thread_count=0):
     """Parses files in input directory and produces equalization results in output directory."""
-    if not compensation and (parametric_eq or fixed_band_eq or ten_band_eq or convolution_eq):
-        raise ValueError('Compensation must be specified when equalizing.')
+    if not target and (parametric_eq or fixed_band_eq or ten_band_eq or convolution_eq):
+        raise ValueError('Target must be specified when equalizing.')
 
     if input_file:
         input_file_paths = [input_file]
@@ -45,12 +45,12 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
     else:
         raise ValueError('Input file or input directory path must be specified.')
 
-    if compensation:
-        # Creates FrequencyResponse for compensation data
-        compensation_path = os.path.abspath(compensation)
-        compensation = FrequencyResponse.read_from_csv(compensation_path)
-        compensation.interpolate()
-        compensation.center()
+    if target:
+        # Creates FrequencyResponse for target data
+        target_path = os.path.abspath(target)
+        target = FrequencyResponse.read_from_csv(target_path)
+        target.interpolate()
+        target.center()
 
     if bit_depth == 16:
         bit_depth = "PCM_16"
@@ -109,7 +109,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
             n_total += 1
             args = (input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q,
                     treble_boost_fc, treble_boost_gain, treble_boost_q,
-                    bit_depth, compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
+                    bit_depth, target, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
                     fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size,
                     parametric_eq, phase, sound_signature, sound_signature_smoothing_window_size,
                     standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp)
@@ -132,7 +132,7 @@ def process_file_wrapper(params):
 
 def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q,
                  treble_boost_fc, treble_boost_gain, treble_boost_q, bit_depth,
-                 compensation, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
+                 target, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
                  fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size, parametric_eq, phase,
                  sound_signature, sound_signature_smoothing_window_size, standardize_input, ten_band_eq, tilt,
                  treble_f_lower, treble_f_upper, treble_gain_k, preamp):
@@ -162,7 +162,7 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
 
     # Process and equalize
     fr.process(
-        compensation=compensation,
+        target=target,
         min_mean_error=True,
         bass_boost_gain=bass_boost_gain,
         bass_boost_fc=bass_boost_fc,

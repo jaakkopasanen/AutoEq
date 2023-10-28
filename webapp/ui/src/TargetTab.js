@@ -106,13 +106,13 @@ const TargetTab = (props) => {
         </Grid>
       </Grid>
 
-      {props.compensations?.length > 0 && (
+      {props.targets?.length > 0 && (
         <Grid item sx={{display: showAdvanced ? 'block' : 'none'}}>
           <CSVAutocomplete
-            value={props.selectedCompensation}
-            options={props.compensations}
-            onChange={props.onCompensationSelected}
-            onOptionCreated={props.onCompensationCreated}
+            value={props.selectedTarget}
+            options={props.targets}
+            onChange={props.onTargetSelected}
+            onOptionCreated={props.onTargetCreated}
             onError={props.onError}
             sx={{width: '100%'}}
             label='Target'

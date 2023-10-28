@@ -11,28 +11,28 @@ class ApiClient {
     return measurements;
   }
 
-  static async fetchCompensations() {
-    const compensations = await fetch('/compensations').then(res => res.json()).catch(err => {
+  static async fetchTargets() {
+    const targets = await fetch('/targets').then(res => res.json()).catch(err => {
       throw err;
     });
-    const preferredCompensations = { 'unknown': { 'unknown': { 'unknown': 'Flat' } } };
-    for (const compensation of compensations) {
-      if (!compensation.recommended) {
+    const preferredTargets = { 'unknown': { 'unknown': { 'unknown': 'Flat' } } };
+    for (const target of targets) {
+      if (!target.recommended) {
         continue;
       }
-      for (const measurementSource of compensation.recommended) {
-        if (!preferredCompensations[measurementSource.source]) {
-          preferredCompensations[measurementSource.source] = {};
+      for (const measurementSource of target.recommended) {
+        if (!preferredTargets[measurementSource.source]) {
+          preferredTargets[measurementSource.source] = {};
         }
-        if (!preferredCompensations[measurementSource.source][measurementSource.form]) {
-          preferredCompensations[measurementSource.source][measurementSource.form] = {};
+        if (!preferredTargets[measurementSource.source][measurementSource.form]) {
+          preferredTargets[measurementSource.source][measurementSource.form] = {};
         }
-        if (!preferredCompensations[measurementSource.source][measurementSource.form][measurementSource.rig]) {
-          preferredCompensations[measurementSource.source][measurementSource.form][measurementSource.rig] = compensation.label;
+        if (!preferredTargets[measurementSource.source][measurementSource.form][measurementSource.rig]) {
+          preferredTargets[measurementSource.source][measurementSource.form][measurementSource.rig] = target.label;
         }
       }
     }
-    return [compensations, preferredCompensations];
+    return [targets, preferredTargets];
   }
 
   async equalize(params, audioContext) {
@@ -44,7 +44,7 @@ class ApiClient {
 
     const base64fp16 = true;
     const body = {
-      compensation: params.compensation,
+      target: params.target,
       sound_signature: soundSignature,
       sound_signature_smoothing_window_size: params.soundSignatureSmoothingWindowSize,
       bass_boost_gain: params.bassBoostGain,
