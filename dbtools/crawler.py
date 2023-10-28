@@ -167,7 +167,7 @@ class Crawler(ABC):
         models = models[models.partial_ratio >= threshold]
         proposals = []
         for i, row in models.iterrows():
-            proposals.append(NameItem(None, f'{manufacturer} {row.model}', row.form))
+            proposals.append(NameItem(name=f'{manufacturer} {row.model}', form=row.form))
         ni = NameIndex(items=proposals[:n])
         return ni
 

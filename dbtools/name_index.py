@@ -6,7 +6,7 @@ from rapidfuzz import fuzz
 
 
 class NameItem:
-    def __init__(self, source_name, name, form, url=None, rig=None):
+    def __init__(self, source_name=None, name=None, form=None, url=None, rig=None):
         self.url = url
         self.source_name = source_name
         self.name = name
@@ -20,7 +20,7 @@ class NameItem:
         return hash(f'{self.url};;{self.source_name};;{self.name};;{self.form};;{self.rig}')
 
     def copy(self):
-        return NameItem(self.source_name, self.name, self.form, url=self.url, rig=self.rig)
+        return NameItem(url=self.url, source_name=self.source_name, name=self.name, form=self.form, rig=self.rig)
 
     @property
     def is_ignored(self):
@@ -70,7 +70,8 @@ class NameIndex:
         df = pd.read_csv(file_path, sep='\t', header=0, encoding='utf-8', dtype=str, na_values=None)
         df.replace([np.nan], [None], inplace=True)
         return cls(
-            [NameItem(row['source_name'], row['name'], row['form'], url=row['url'], rig=row['rig'])
+            [NameItem(
+                url=row['url'], source_name=row['source_name'], name=row['name'], form=row['form'], rig=row['rig'])
              for i, row in df.iterrows()])
 
     def write_tsv(self, file_path):

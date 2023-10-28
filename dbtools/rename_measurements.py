@@ -60,7 +60,7 @@ def rename_measurements(renames, dry_run=False):
                         continue
                     if not dry_run:
                         db['name_index'].update(NameItem(
-                            name_item.source_name, rename['new_name'], name_item.form, url=name_item.url,
-                            rig=name_item.rig),
+                            url=name_item.url, source_name=name_item.source_name, name=rename['new_name'],
+                            form=name_item.form, rig=name_item.rig),
                         )
                         db['name_index'].write_tsv(MEASUREMENTS_PATH.joinpath(db['name'], 'name_index.tsv'))

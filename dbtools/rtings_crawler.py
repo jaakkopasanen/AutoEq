@@ -118,7 +118,7 @@ class RtingsCrawler(Crawler):
         self.crawl_index = NameIndex()
         for product_payloads in tqdm(self.graph_data_url_payloads()):
             for payload in product_payloads['payloads']:
-                item = NameItem(product_payloads['source_name'], None, None, url=None, rig='HMS II.3')
+                item = NameItem(source_name=product_payloads['source_name'], rig='HMS II.3')
                 cache_key = f'{payload["product_id"]}/{payload["test_original_id"]}'
                 if cache_key in graph_data_url_cache:  # Item found in cache
                     item.url = graph_data_url_cache[cache_key]

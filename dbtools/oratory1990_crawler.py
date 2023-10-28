@@ -139,7 +139,7 @@ class Oratory1990Crawler(Crawler):
                 continue  # Skip various EQ settings and preliminary measurements
             if notes and notes.lower() != 'standard':
                 source_name += f' ({notes})'
-            item = NameItem(source_name, None, form, url=url)
+            item = NameItem(url=url, source_name=source_name, form=form)
             known_item = self.name_index.find_one(url=url)
             if known_item is not None:
                 if known_item.name is not None:

@@ -119,12 +119,12 @@ class CrinacleCrawler(Crawler):
         url = self.get_url_from_file_path(raw_data_file_path)
         index_item = self.name_index.find_one(url=url)
         if index_item is not None:  # Existing item in the name index, ground truth
-            item = NameItem(index_item.source_name, index_item.name, index_item.form, url=url, rig=None)
+            item = NameItem(
+                source_name=index_item.source_name, name=index_item.name, form=index_item.form, url=url)
         else:
             item = NameItem(
-                None, None,
-                self.raw_data_form_map[raw_data_file_path.parent.name],
                 url=url,
+                form=self.raw_data_form_map[raw_data_file_path.parent.name],
                 rig=self.raw_data_rig_map[raw_data_file_path.parent.name])
         return item
 
