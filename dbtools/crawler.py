@@ -337,6 +337,7 @@ class Crawler(ABC):
         pass
 
     def prune_measurements(self, dry_run=False):
+        """Removes measurement files that don't have a matching entry in the name index."""
         if self.name_index is None:
             self.name_index = self.read_name_index()
         existing = self.list_existing_files()
@@ -353,6 +354,19 @@ class Crawler(ABC):
             if not dry_run:
                 file_path.unlink()
             print(f'Removed "{file_path}"')
+
+    def rename_measurement(self, old_name, new_name, dry_run=False):
+        """Changes measurement's name in name index and renames the file."""
+        items = self.name_index.find(name=old_name)
+        for item in items:
+            old_path = self.target_path(item)
+            new_path = old_path.rename(old_path.parent.joinpath(f'{new_name}.csv'))
+            if not dry_run:
+                item.name = new_name
+                self.update_name_index(item, write=False)
+            print(f'Moved "{old_path}" to "{new_path}"')
+        if not dry_run:
+            self.write_name_index()
 
     # UI methods
 

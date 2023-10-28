@@ -4,7 +4,7 @@ import sys
 from pathlib import Path, WindowsPath
 import re
 import numpy as np
-import requests
+import json
 from autoeq.frequency_response import FrequencyResponse
 from autoeq.utils import is_file_name_allowed
 ROOT_PATH = Path(__file__).parent.parent
@@ -47,19 +47,25 @@ class CrinacleCrawler(Crawler):
             NameIndex
         """
         # 4620 measurements name index
-        res = requests.get('https://crinacle.com/graphing/data_4620/phone_book.json')
-        bk4620_book = self.parse_book(res.json())
+        raw = self.download(
+            'https://crinacle.com/graphing/data_4620/phone_book.json', CRINACLE_PATH.joinpath('phone_book_4620.json'))
+        bk4620_map = self.parse_book(json.loads(raw.decode('utf-8')))
         # Ears-711 measurements name index
-        res = requests.get('https://crinacle.com/graphing/data_hp/phone_book.json')
-        ears_711_map = self.parse_book(res.json())
+        raw = self.download(
+            'https://crinacle.com/graphing/data_hp/phone_book.json', CRINACLE_PATH.joinpath('phone_book_hp.json'))
+        ears_711_map = self.parse_book(json.loads(raw.decode('utf-8')))
         # Gras measurements name index
-        res = requests.get('https://crinacle.com/graphing/data_hp_gras/phone_book.json')
-        gras_map = self.parse_book(res.json())
+        raw = self.download(
+            'https://crinacle.com/graphing/data_hp_gras/phone_book.json',
+            CRINACLE_PATH.joinpath('phone_book_hp_gras.json'))
+        gras_map = self.parse_book(json.loads(raw.decode('utf-8')))
         # 711 IEM measurements name index
-        res = requests.get('https://crinacle.com/graphing/data/phone_book.json')
-        iem_711_map = self.parse_book(res.json())
+        raw = self.download(
+            'https://crinacle.com/graphing/data/phone_book.json',
+            CRINACLE_PATH.joinpath('phone_book.json'))
+        iem_711_map = self.parse_book(json.loads(raw.decode('utf-8')))
         return {
-            '4620 IEM Measurements': bk4620_book,
+            '4620 IEM Measurements': bk4620_map,
             'EARS + 711 (TSV txt) (Legacy)': ears_711_map,
             'GRAS 43AG-7': gras_map,
             'IEC60318-4 IEM Measurements (TSV txt)': iem_711_map,

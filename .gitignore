@@ -111,8 +111,10 @@ my_results/
 **/data/ignore
 measurements/crinacle/*data*/
 measurements/crinacle/Raw measurements (Patreon)/
+measurements/crinacle/phone_book*.json
 results/crinacle/*/*/*.csv
 chromedriver*
 webapp/data/*
 !webapp/data/legal/
 !webapp/data/compensations.json
+
