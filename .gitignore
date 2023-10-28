@@ -113,6 +113,7 @@ measurements/crinacle/*data*/
 measurements/crinacle/Raw measurements (Patreon)/
 measurements/crinacle/phone_book*.json
 results/crinacle/*/*/*.csv
+measurements/rtings/crawl_graph_data_urls.json
 chromedriver*
 webapp/data/*
 !webapp/data/legal/

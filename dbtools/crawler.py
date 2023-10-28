@@ -358,13 +358,19 @@ class Crawler(ABC):
     def rename_measurement(self, old_name, new_name, dry_run=False):
         """Changes measurement's name in name index and renames the file."""
         items = self.name_index.find(name=old_name)
+        renamed_file = False
         for item in items:
             old_path = self.target_path(item)
-            new_path = old_path.rename(old_path.parent.joinpath(f'{new_name}.csv'))
+            new_path = old_path.parent.joinpath(f'{new_name}.csv')
             if not dry_run:
                 item.name = new_name
                 self.update_name_index(item, write=False)
-            print(f'Moved "{old_path}" to "{new_path}"')
+            if not renamed_file:
+                if not dry_run:
+                    old_path.rename(new_path)
+                if not renamed_file:
+                    print(f'Moved "{old_path}" to "{new_path}"')
+                renamed_file = True
         if not dry_run:
             self.write_name_index()
 
