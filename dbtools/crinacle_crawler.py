@@ -107,9 +107,9 @@ class CrinacleCrawler(Crawler):
                             book[file_name.strip()] = f'{manufacturer_name} {model["name"]}'
         return book
 
-    @staticmethod
-    def read_name_index():
-        return NameIndex.read_tsv(CRINACLE_PATH.joinpath('name_index.tsv'))
+    def read_name_index(self):
+        self.name_index = NameIndex.read_tsv(CRINACLE_PATH.joinpath('name_index.tsv'))
+        return self.name_index
 
     def write_name_index(self):
         self.name_index.write_tsv(CRINACLE_PATH.joinpath('name_index.tsv'))

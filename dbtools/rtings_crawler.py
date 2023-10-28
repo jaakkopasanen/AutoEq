@@ -29,9 +29,9 @@ class RtingsCrawler(Crawler):
             driver = webdriver.Chrome(options=opts)
         super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
 
-    @staticmethod
-    def read_name_index():
-        return NameIndex.read_tsv(RTINGS_PATH.joinpath('name_index.tsv'))
+    def read_name_index(self):
+        self.name_index = NameIndex.read_tsv(RTINGS_PATH.joinpath('name_index.tsv'))
+        return self.name_index
 
     def write_name_index(self):
         self.name_index.write_tsv(RTINGS_PATH.joinpath('name_index.tsv'))

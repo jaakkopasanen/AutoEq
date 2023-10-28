@@ -44,7 +44,8 @@ class Crawler(ABC):
         self._start_time = time()
         self._timings = {}
         # Name resolutions
-        self.name_index = self.read_name_index()
+        self.name_index = None
+        self.read_name_index()
         self.manufacturers = ManufacturerIndex()
         self.name_proposals = None
         # Crawler
@@ -62,9 +63,8 @@ class Crawler(ABC):
 
     # Name resolution methods
 
-    @staticmethod
     @abstractmethod
-    def read_name_index():
+    def read_name_index(self):
         """Reads name index as Index
 
         Returns:
@@ -317,7 +317,7 @@ class Crawler(ABC):
         pass
 
     def process(self, new_only=True):
-        self.name_index = self.read_name_index()
+        self.read_name_index()
         groups = {}
         for item in self.name_index.items:
             if item.form == 'ignore':
@@ -339,7 +339,7 @@ class Crawler(ABC):
     def prune_measurements(self, dry_run=False):
         """Removes measurement files that don't have a matching entry in the name index."""
         if self.name_index is None:
-            self.name_index = self.read_name_index()
+            self.read_name_index()
         existing = self.list_existing_files()
         known = []
         for item in self.name_index:
