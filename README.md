@@ -131,6 +131,11 @@ python -m autoeq --input-file="measurements/oratory1990/data/over-ear/Sennheiser
 ```
 
 ### Building
+Install `build` and `twine`
+```shell
+python -m pip install build twine
+```
+
 Build PyPi package on Windows
 ```shell
 copy /y README.md README.md.bak && copy /y autoeq\README.md README.md && python -m build && copy /y README.md.bak README.md && del README.md.bak
