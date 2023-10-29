@@ -10,6 +10,29 @@ AutoEq [Github page](https://github.com/jaakkopasanen/AutoEq) also serves as a d
 measurements, pre-computed results and has documentation about different equalizers and how the implementation works.
 
 ### Updates
+#### 4.0.0
+BREAKING changes included!
+* Several `FrequencyResponse` class methods renamed and arguments renamed or dropped
+  * Improved duplicate frequency check
+  * All kwargs in `reset()` default to `False`
+  * Renamed `read_from_csv()` as `read_csv()` and `write_to_csv()` as `write_csv()`
+  * Dropped Rockbox support (has been added to webapp)
+  * Moved `generate_frequencies()` to `utils.py`
+  * Moved `_tilt()` to `utils.py` as `log_tilt()`
+  * Changed all mentions of "compensation" to "target"
+  * Renamed `smoothen_fractional_octave()` as `smoothen()`
+  * Removed iterations from smoothing
+  * Moved `_sigmoid()` to `utils.py`as `log_f_sigmoid()`
+  * Moved `log_log_gradient()` to `utils.py` as `log_log_gradient()`
+  * Renamed `plot_graph()` as `plot`
+  * Changed `plot()` kwargs `show` and `close` to `show_fig` and `close_fig`, respectively
+  * Changed plot colors to match webapp
+  * Added missing default values to `process()` kwargs
+* Removed some CLI arguments
+
+#### 3.0.1
+Updated dependencies.
+
 #### 3.0.0
 * Added `--input-file`, `--max-slope` and `--sound-signature-smoothing-window-size` parameters.
 * Fixed crashing with non-standard sized compensation and measurement data.
@@ -20,10 +43,10 @@ measurements, pre-computed results and has documentation about different equaliz
 * Introduced API breaking naming changes.
 
 #### 2.2.0
-Added `--preamp` parameter
+Added `--preamp` parameter.
 
 #### 2.1.1
-Fixed README in PyPi package
+Fixed README in PyPi package.
 
 #### 2.1.0
 Fixed dependencies for Apple Silicon and added `--treble-boost` parameter.
