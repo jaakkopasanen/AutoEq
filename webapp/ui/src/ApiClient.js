@@ -31,6 +31,8 @@ class ApiClient {
           if (!preferredTargets[measurementSource.source][measurementSource.form][measurementSource.rig]) {
             preferredTargets[measurementSource.source][measurementSource.form][measurementSource.rig] = target.label;
           }
+        } else {
+          preferredTargets[measurementSource.source][measurementSource.form] = target.label;
         }
       }
     }

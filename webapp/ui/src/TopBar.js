@@ -72,7 +72,7 @@ const TopBar = (props) => {
               <Typography variant='caption' sx={{whiteSpace: 'nowrap', ml: 'auto', textAlign: 'right'}}>
                 by {option.source}
                 {option.rig !== 'unknown' && <br />}
-                {option.rig !== 'unknown' && (option.rig)}
+                {option.rig !== 'unknown' && (`on ${option.rig}`)}
               </Typography>
             </Box>
           )}

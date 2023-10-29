@@ -30,7 +30,6 @@ const Waves = (props) => {
           <path
             d={`${sine(100, 100, 50 + i * 7)}`}
             fill={palette[i % palette.length]}
-            //stroke={palette[i % palette.length]} fill='transparent'
             style={{
               animation: `wave ${waveDuration}s cubic-bezier( 0.36, 0.45, 0.63, 0.53) ${waveDelay}s infinite`
             }}
