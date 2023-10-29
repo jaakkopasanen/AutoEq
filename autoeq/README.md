@@ -70,7 +70,7 @@ equalizer optimization and frequency response computations are implemented in `p
 from autoeq.frequency_response import FrequencyResponse
 from autoeq.constants import PEQ_CONFIGS
 
-harman_target = FrequencyResponse.read_from_csv('path/to/harman_over-ear_2018.csv')
+harman_target = FrequencyResponse.read_from_csv('path/to/Harman over-ear 2018.csv')
 
 fr = FrequencyResponse.read_from_csv('path/to/measurement.csv')
 fr.interpolate()  # Creates standard logarithmic sampling when no argument is passed

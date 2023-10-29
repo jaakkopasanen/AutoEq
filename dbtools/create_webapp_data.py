@@ -76,7 +76,7 @@ def write_entries_and_measurements():
 def write_targets():
     targets = [
         {
-            'file': TARGETS_PATH.joinpath('autoeq_in-ear.csv'),
+            'file': TARGETS_PATH.joinpath('AutoEq in-ear.csv'),
             'label': 'AutoEq In-ear',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
@@ -91,21 +91,21 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': TARGETS_PATH.joinpath('diffuse_field_5128_-1dBpoct.csv'),
+            'file': TARGETS_PATH.joinpath('Diffuse field 5128 -1dB per octave.csv'),
             'label': 'Diffuse Field 5128 (-1 dB /oct)',
             'compatible': [{'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'}],
             'recommended': [{'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'}],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': TARGETS_PATH.joinpath('diffuse_field_gras_kemar.csv'),
+            'file': TARGETS_PATH.joinpath('Diffuse field GRAS KEMAR.csv'),
             'label': 'Diffuse Field GRAS KEMAR',
             'compatible': [],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': TARGETS_PATH.joinpath('diffuse_field_iso_11904-2.csv'),
+            'file': TARGETS_PATH.joinpath('Diffuse field ISO 11904-1.csv'),
             'label': 'Diffuse Field ISO 11904-2',
             'compatible': [],
             'recommended': [],
@@ -119,7 +119,7 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': TARGETS_PATH.joinpath('harman_in-ear_2019v2_wo_bass.csv'),
+            'file': TARGETS_PATH.joinpath('Harman in-ear 2019 without bass.csv'),
             'label': 'Harman In-ear 2019',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
@@ -130,7 +130,7 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': TARGETS_PATH.joinpath('harman_over-ear_2018_wo_bass.csv'),
+            'file': TARGETS_PATH.joinpath('Harman over-ear 2018 without bass.csv'),
             'label': 'Harman Over-ear 2018',
             'compatible': [
                 {'source': 'crinacle', 'form': 'over-ear', 'rig': 'GRAS 43AG-7'},
@@ -143,7 +143,7 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },
         {
-            'file': TARGETS_PATH.joinpath('headphonecom_autoeq_in-ear.csv'),
+            'file': TARGETS_PATH.joinpath('Headphone.com Legacy AutoEq in-ear.csv'),
             'label': 'Headphone.com Legacy AutoEq In-ear',
             'compatible': [
                 {'source': 'headphonecom', 'form': 'in-ear', 'rig': 'unknown'},
@@ -156,21 +156,21 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': TARGETS_PATH.joinpath('headphonecom_harman_in-ear_2019v2_wo_bass.csv'),
+            'file': TARGETS_PATH.joinpath('Headphone.com Legacy Harman in-ear 2019 without bass.csv'),
             'label': 'Headphone.com Legacy Harman In-ear 2019',
             'compatible': [{'source': 'headphonecom', 'form': 'in-ear', 'rig': 'unknown'}],
             'recommended': [],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': TARGETS_PATH.joinpath('headphonecom_harman_over-ear_2018_wo_bass.csv'),
+            'file': TARGETS_PATH.joinpath('Headphone.com Legacy Harman over-ear 2018 without bass.csv'),
             'label': 'Headphone.com Legacy Harman Over-ear 2018',
             'compatible': [{'source': 'headphonecom', 'form': 'over-ear', 'rig': 'unknown'}],
             'recommended': [{'source': 'headphonecom', 'form': 'over-ear', 'rig': 'unknown'}],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },
         {
-            'file': TARGETS_PATH.joinpath('711_5128_delta.csv'),
+            'file': TARGETS_PATH.joinpath('711 5128 delta.csv'),
             'label': '711/5128 Delta',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': 'unknown'},
@@ -181,7 +181,7 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': TARGETS_PATH.joinpath('innerfidelity_autoeq_in-ear.csv'),
+            'file': TARGETS_PATH.joinpath('Innerfidelity AutoEq in-ear.csv'),
             'label': 'Innerfidelity AutoEq In-ear',
             'compatible': [
                 {'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'},
@@ -194,7 +194,7 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': TARGETS_PATH.joinpath('innerfidelity_harman_in-ear_2019v2_wo_bass.csv'),
+            'file': TARGETS_PATH.joinpath('Innerfidelity Harman in-ear 2019 without bass.csv'),
             'label': 'Innerfidelity Harman In-ear 2019',
             'compatible': [
                 {'source': 'innerfidelity', 'form': 'in-ear', 'rig': 'unknown'},
@@ -204,14 +204,14 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': TARGETS_PATH.joinpath('innerfidelity_harman_over-ear_2018_wo_bass.csv'),
+            'file': TARGETS_PATH.joinpath('Innerfidelity Harman over-ear 2018 without bass.csv'),
             'label': 'Innerfidelity Harman Over-ear 2018',
             'compatible': [{'source': 'innerfidelity', 'form': 'over-ear', 'rig': 'unknown'}],
             'recommended': [{'source': 'innerfidelity', 'form': 'over-ear', 'rig': 'unknown'}],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },
         {
-            'file': TARGETS_PATH.joinpath('rtings_autoeq_in-ear.csv'),
+            'file': TARGETS_PATH.joinpath('Rtings AutoEq in-ear.csv'),
             'label': 'Rtings AutoEq In-ear',
             'compatible': [
                 {'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'},
@@ -224,7 +224,7 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': TARGETS_PATH.joinpath('rtings_harman_in-ear_2019v2_wo_bass.csv'),
+            'file': TARGETS_PATH.joinpath('Rtings Harman in-ear 2019 without bass.csv'),
             'label': 'Rtings Harman In-ear 2019',
             'compatible': [
                 {'source': 'rtings', 'form': 'in-ear', 'rig': 'unknown'},
@@ -234,7 +234,7 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
         {
-            'file': TARGETS_PATH.joinpath('rtings_harman_over-ear_2018_wo_bass.csv'),
+            'file': TARGETS_PATH.joinpath('Rtings Harman over-ear 2018 without bass.csv'),
             'label': 'Rtings Harman Over-ear 2018',
             'compatible': [{'source': 'rtings', 'form': 'over-ear', 'rig': 'unknown'}],
             'recommended': [{'source': 'rtings', 'form': 'over-ear', 'rig': 'unknown'}],
