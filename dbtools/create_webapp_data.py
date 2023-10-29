@@ -57,18 +57,21 @@ def write_entries_and_measurements():
     for hp_path in tqdm(list(MEASUREMENTS_PATH.glob('*/data/**/*.csv'))):
         rel_path = hp_path.relative_to(MEASUREMENTS_PATH)
         source = rel_path.parts[0]
+        form = rel_path.parts[2]
         name = rel_path.parts[-1].replace('.csv', '')
-        item = name_indexes[source].find_one(name=name)
-        if item.is_ignored:
-            continue
+        if len(rel_path.parts) == 5:
+            rig = rel_path.parts[3]
+        else:
+            item = name_indexes[source].find_one(name=name)
+            rig = item.rig
         if name not in entries:
             entries[name] = []
         if name not in measurements:
             measurements[name] = dict()
         if source not in measurements[name]:
             measurements[name][source] = dict()
-        measurements[name][source][item.rig] = FrequencyResponse.read_csv(hp_path).to_dict()
-        entries[name].append({'form': item.form, 'rig': item.rig, 'source': source})
+        measurements[name][source][rig] = FrequencyResponse.read_csv(hp_path).to_dict()
+        entries[name].append({'form': form, 'rig': rig, 'source': source})
     entries = {key: entries[key] for key in sorted(list(entries.keys()), key=lambda key: key)}
     for headphone in entries.keys():
         entries[headphone] = sorted(entries[headphone], key=lambda entry: measurement_rank(entry))
