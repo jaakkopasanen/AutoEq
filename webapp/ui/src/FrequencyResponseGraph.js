@@ -41,9 +41,9 @@ const FrequencyResponseGraph = (props) => {
   const [dataMin, dataMax, dataRange] = yRange(props.data);
   const interval = Math.ceil(dataRange / 10);
   // min - 5% of range, rounded to interval below
-  const yMin = Math.floor((dataMin - dataRange * 0.05) / interval) * interval;
+  const yMin = Math.min(-3, Math.floor((dataMin - dataRange * 0.05) / interval) * interval);
   // max + 5% of range, rounded to interval above
-  const yMax = Math.ceil((dataMax + dataRange * 0.05) / interval) * interval;
+  const yMax = Math.max(3, Math.ceil((dataMax + dataRange * 0.05) / interval) * interval);
   // Every interval, excluding ends
   const yTicks = (isNaN(yMin) || isNaN(yMax)) ? null : [ ...Array(Math.max((yMax - yMin) / interval - 1, interval)).keys() ].map(x => yMin + interval + x * interval);
 
@@ -62,7 +62,9 @@ const FrequencyResponseGraph = (props) => {
             margin={{top: 0, left: 0, bottom: 20, right: 0}}
             fontFamily={'"Roboto", "Helvetica", "Arial", sans-serif'}
           >
-            {!!props.data[0].target && (
+            <CartesianGrid stroke='#cfcfcf'/>
+
+            {Object.hasOwn(props.data[0], 'target') && (
               <Line
                 dataKey={showTarget ? 'target' : ''}
                 name='Target' type='linear' dot={false}
@@ -71,7 +73,7 @@ const FrequencyResponseGraph = (props) => {
               />
             )}
 
-            {((props.smoothed && !!props.data[0].smoothed) || (!props.smoothed && !!props.data[0].raw)) && (
+            {((props.smoothed && Object.hasOwn(props.data[0], 'smoothed')) || (!props.smoothed && Object.hasOwn(props.data[0], 'raw'))) && (
               <Line
                 dataKey={showRaw ? props.smoothed ? 'smoothed' : 'raw' : ''}
                 name='Frequency Response' type='linear' dot={false}
@@ -80,7 +82,7 @@ const FrequencyResponseGraph = (props) => {
               />
             )}
 
-            {((props.smoothed && !!props.data[0].errorSmoothed) || (!props.smoothed && !!props.data[0].error)) && (
+            {((props.smoothed && Object.hasOwn(props.data[0], 'errorSmoothed')) || (!props.smoothed && Object.hasOwn(props.data[0], 'error'))) && (
               <Line
                 dataKey={showError ? props.smoothed ? 'errorSmoothed' : 'error' : ''}
                 name='Error' type='linear' dot={false}
@@ -88,7 +90,7 @@ const FrequencyResponseGraph = (props) => {
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
-            {!!props.data[0].equalization && (
+            {Object.hasOwn(props.data[0], 'equalization') && (
               <Line
                 dataKey={showEqualization ? 'equalization' : ''}
                 name='Equalizer' type='linear' dot={false}
@@ -97,7 +99,7 @@ const FrequencyResponseGraph = (props) => {
                 strokeWidth={1.5} isAnimationActive={false}
               />
             )}
-            {((props.smoothed && !!props.data[0].equalizedSmoothed) || (!props.smoothed && !!props.data[0].equalizedRaw)) && (
+            {((props.smoothed && Object.hasOwn(props.data[0], 'equalizedSmoothed')) || (!props.smoothed && Object.hasOwn(props.data[0], 'equalizedRaw'))) && (
               <Line
                 dataKey={showEqualized ? props.smoothed ? 'equalizedSmoothed' : 'equalizedRaw' : ''}
                 name='Equalized' type='linear' dot={false}
@@ -106,7 +108,6 @@ const FrequencyResponseGraph = (props) => {
               />
             )}
 
-            <CartesianGrid stroke='#cfcfcf'/>
             <XAxis
               dataKey='frequency'
               scale='log' domain={[20, 20e3]} type='number'

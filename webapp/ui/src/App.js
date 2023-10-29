@@ -125,7 +125,16 @@ const App = (props) => {
   };
 
   const setUp = async () => {
-    setMeasurements(await ApiClient.fetchMeasurements());
+    const presetMeasurements = await ApiClient.fetchMeasurements()
+    presetMeasurements.splice(0, 0, {
+      label: 'Flat',
+      form: 'unknown',
+      rig: 'unknown',
+      source: 'unknown',
+      frequency: [20.0, 20000.0],
+      raw: [0.0, 0.0]
+    });
+    setMeasurements(presetMeasurements);
     const [targets, preferredTargets] = await ApiClient.fetchTargets();
     const targetsBassBoosts = {};
     for (const target of targets) {
@@ -315,9 +324,9 @@ const App = (props) => {
     return {
       selectedTarget, preferredTargets, soundSignature, soundSignatureSmoothingWindowSize,
       bassBoostGain: bassBoostGainRef.current, bassBoostFc: bassBoostFcRef.current, bassBoostQ: bassBoostQRef.current,
-      trebleBoostFc: trebleBoostFcRef.current, trebleBoostQ: trebleBoostQRef.current,
-      tilt: tiltRef.current, maxGain: maxGainRef.current, windowSize: windowSizeRef.current,
-      trebleWindowSize: trebleWindowSizeRef.current,
+      trebleBoostGain: trebleBoostGainRef.current, trebleBoostFc: trebleBoostFcRef.current, trebleBoostQ: trebleBoostQRef.current,
+      tilt: tiltRef.current, maxGain: maxGainRef.current, maxSlope: maxSlopeRef.current,
+      windowSize: windowSizeRef.current, trebleWindowSize: trebleWindowSizeRef.current,
       trebleFLower: trebleFLowerRef.current, trebleFUpper: trebleFUpperRef.current, trebleGainK: trebleGainKRef.current
     };
   };
