@@ -225,7 +225,7 @@ from the same source.
 - [AKG K712](./crinacle/GRAS%2043AG-7%20over-ear/AKG%20K712) by crinacle on GRAS 43AG-7
 - [AKG K712](./Innerfidelity/over-ear/AKG%20K712) by Innerfidelity
 - [AKG K712](./Headphone.com%20Legacy/over-ear/AKG%20K712) by Headphone.com Legacy
-- [AKG K712 (Dekoni sheepskin Earpads)](./oratory1990/over-ear/AKG%20K712%20(Dekoni%20sheepskin%20Earpads)) by oratory1990
+- [AKG K712 (Dekoni sheepskin earpads)](./oratory1990/over-ear/AKG%20K712%20(Dekoni%20sheepskin%20earpads)) by oratory1990
 - [AKG K712 PRO](./Rtings/over-ear/AKG%20K712%20PRO) by Rtings
 - [AKG K72](./oratory1990/over-ear/AKG%20K72) by oratory1990
 - [AKG K72](./crinacle/GRAS%2043AG-7%20over-ear/AKG%20K72) by crinacle on GRAS 43AG-7
@@ -2224,7 +2224,7 @@ from the same source.
 - [JVC XX Elation HA FR100X](./Innerfidelity/in-ear/JVC%20XX%20Elation%20HA%20FR100X) by Innerfidelity
 - [KBEar F1](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEar%20F1) by crinacle on Bruel & Kjaer 4620
 - [KBEAR Neon](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Neon) by crinacle on Bruel & Kjaer 4620
-- [KBEar Neon](./crinacle/711%20in-ear/KBEar%20Neon) by crinacle on 711
+- [KBEAR Neon](./crinacle/711%20in-ear/KBEAR%20Neon) by crinacle on 711
 - [KBEAR Qinglong](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong) by crinacle on Bruel & Kjaer 4620
 - [KEF M200](./Innerfidelity/in-ear/KEF%20M200) by Innerfidelity
 - [KEF M500](./Innerfidelity/over-ear/KEF%20M500) by Innerfidelity

@@ -1028,7 +1028,7 @@
 - [JVC HA-FX99X-B](./711%20in-ear/JVC%20HA-FX99X-B) on 711
 - [KBEar F1](./Bruel%20&%20Kjaer%204620%20in-ear/KBEar%20F1) on Bruel & Kjaer 4620
 - [KBEAR Neon](./Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Neon) on Bruel & Kjaer 4620
-- [KBEar Neon](./711%20in-ear/KBEar%20Neon) on 711
+- [KBEAR Neon](./711%20in-ear/KBEAR%20Neon) on 711
 - [KBEAR Qinglong](./Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong) on Bruel & Kjaer 4620
 - [Kennerton Jimo](./711%20in-ear/Kennerton%20Jimo) on 711
 - [Kennerton Odin Bog Oak](./GRAS%2043AG-7%20over-ear/Kennerton%20Odin%20Bog%20Oak) on GRAS 43AG-7

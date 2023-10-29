@@ -6,7 +6,7 @@ headphones, these can be found in the
 Where there are measurements from multiple sources for the same headphone, only the one with the highest accuracy
 appears on this list.
 
-This list has 3665 headphone models covered, but if your headphone is missing, you can create settings for
+This list has 3664 headphone models covered, but if your headphone is missing, you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -192,7 +192,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [AKG K702 (Geekria earpads)](./oratory1990/over-ear/AKG%20K702%20(Geekria%20earpads))
 - [AKG K702 65th Anniversary Edition](./oratory1990/over-ear/AKG%20K702%2065th%20Anniversary%20Edition)
 - [AKG K712](./oratory1990/over-ear/AKG%20K712)
-- [AKG K712 (Dekoni sheepskin Earpads)](./oratory1990/over-ear/AKG%20K712%20(Dekoni%20sheepskin%20Earpads))
+- [AKG K712 (Dekoni sheepskin earpads)](./oratory1990/over-ear/AKG%20K712%20(Dekoni%20sheepskin%20earpads))
 - [AKG K712 PRO](./Rtings/over-ear/AKG%20K712%20PRO)
 - [AKG K72](./oratory1990/over-ear/AKG%20K72)
 - [AKG K7XX](./oratory1990/over-ear/AKG%20K7XX)
@@ -1801,7 +1801,6 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [JVC XX Elation HA FR100X](./Innerfidelity/in-ear/JVC%20XX%20Elation%20HA%20FR100X)
 - [KBEar F1](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEar%20F1)
 - [KBEAR Neon](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Neon)
-- [KBEar Neon](./crinacle/711%20in-ear/KBEar%20Neon)
 - [KBEAR Qinglong](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/KBEAR%20Qinglong)
 - [KEF M200](./Innerfidelity/in-ear/KEF%20M200)
 - [KEF M500](./Innerfidelity/over-ear/KEF%20M500)

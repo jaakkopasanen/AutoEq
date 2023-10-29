@@ -370,7 +370,7 @@ preference scoring developed by Sean Olive et al.
 | [Sony MDR-CD380](./crinacle/GRAS%2043AG-7%20over-ear/Sony%20MDR-CD380)                                                                                                                         |      65 |       2.78 |    0.95 |
 | [Sony MDR-R10](./oratory1990/over-ear/Sony%20MDR-R10)                                                                                                                                          |      65 |       3.48 |    0.34 |
 | [AKG K553](./oratory1990/over-ear/AKG%20K553)                                                                                                                                                  |      64 |       2.48 |   -1.2  |
-| [AKG K712 (Dekoni sheepskin Earpads)](./oratory1990/over-ear/AKG%20K712%20(Dekoni%20sheepskin%20Earpads))                                                                                      |      64 |       3.08 |   -0.76 |
+| [AKG K712 (Dekoni sheepskin earpads)](./oratory1990/over-ear/AKG%20K712%20(Dekoni%20sheepskin%20earpads))                                                                                      |      64 |       3.08 |   -0.76 |
 | [AKG N700NC M2](./crinacle/GRAS%2043AG-7%20over-ear/AKG%20N700NC%20M2)                                                                                                                         |      64 |       2.32 |   -1.35 |
 | [Anker Soundcore Space Q45 (ANC on)](./oratory1990/over-ear/Anker%20Soundcore%20Space%20Q45%20(ANC%20on))                                                                                      |      64 |       2.75 |   -1.03 |
 | [Emotiva Airmotiv GR1](./oratory1990/over-ear/Emotiva%20Airmotiv%20GR1)                                                                                                                        |      64 |       2.64 |   -1.1  |
@@ -1565,7 +1565,6 @@ preference scoring developed by Sean Olive et al.
 | [FitEar Monet 17](./crinacle/711%20in-ear/FitEar%20Monet%2017)                                                                                     |      53 |       3.65 |   -0.63 |           3.45 |
 | [IMR Acoustics RAH (red nozzle, green filter)](./crinacle/711%20in-ear/IMR%20Acoustics%20RAH%20(red%20nozzle,%20green%20filter))                   |      53 |       3.37 |   -1.22 |           3.01 |
 | [IMR Acoustics RAH (red nozzle, red filter)](./crinacle/711%20in-ear/IMR%20Acoustics%20RAH%20(red%20nozzle,%20red%20filter))                       |      53 |       3.33 |   -1.19 |           2.94 |
-| [KBEar Neon](./crinacle/711%20in-ear/KBEar%20Neon)                                                                                                 |      53 |       3.76 |    0.56 |           3.3  |
 | [KZ ZS3](./crinacle/711%20in-ear/KZ%20ZS3)                                                                                                         |      53 |       3.29 |   -1.19 |           3.11 |
 | [KZ ZS5v1](./crinacle/711%20in-ear/KZ%20ZS5v1)                                                                                                     |      53 |       3.76 |   -0.79 |           2.78 |
 | [KZ ZS5v2](./crinacle/711%20in-ear/KZ%20ZS5v2)                                                                                                     |      53 |       3.75 |   -0.63 |           3.02 |
