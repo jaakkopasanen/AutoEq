@@ -367,7 +367,11 @@ class Crawler(ABC):
                 self.update_name_index(item, write=False)
             if not renamed_file:
                 if not dry_run:
-                    old_path.rename(new_path)
+                    with open(old_path) as fh:
+                        s = fh.read()
+                    old_path.unlink()
+                    with open(new_path) as fh:
+                        fh.write(s)
                 if not renamed_file:
                     print(f'Moved "{old_path}" to "{new_path}"')
                 renamed_file = True

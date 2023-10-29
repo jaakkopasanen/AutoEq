@@ -77,7 +77,7 @@ fr = FrequencyResponse.read_csv('path/to/measurement.csv')
 fr.interpolate()  # Creates standard logarithmic sampling when no argument is passed
 fr.center()  # Centers the frequency response around 0 dB
 fr.compensate(harman_target)  # Creates target and error data for the FR
-fr.smoothen_fractional_octave()  # Smoothens the FR data and error
+fr.smoothen()  # Smoothens the FR data and error
 fr.equalize(concha_interference=True)  # Creates equalization target
 peqs = fr.optimize_parametric_eq(PEQ_CONFIGS['8_PEAKING_WITH_SHELVES'], 44100)
 for filt in peqs[0].filters:

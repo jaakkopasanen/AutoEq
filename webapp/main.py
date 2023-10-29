@@ -201,7 +201,7 @@ def equalize(req: EqualizeRequest):
             fr = FrequencyResponse(name='fr', frequency=measurement['frequency'], raw=measurement['raw'])
 
         if req.target is None:
-            fr.smoothen_fractional_octave(
+            fr.smoothen(
                 window_size=req.window_size,
                 treble_window_size=req.treble_window_size,
                 treble_f_lower=req.treble_f_lower,

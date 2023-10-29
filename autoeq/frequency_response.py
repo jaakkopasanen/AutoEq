@@ -437,12 +437,10 @@ class FrequencyResponse:
             sound_signature=None, sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
             min_mean_error=False):
         """Sets target and error curves."""
-        # Copy and center target data
         target = target.copy()
         target.interpolate()
         target.center()
 
-        # Set target
         self.target = target.raw + self.create_target(
             bass_boost_gain=bass_boost_gain, bass_boost_fc=bass_boost_fc, bass_boost_q=bass_boost_q,
             treble_boost_gain=treble_boost_gain, treble_boost_fc=treble_boost_fc, treble_boost_q=treble_boost_q,
@@ -454,14 +452,13 @@ class FrequencyResponse:
                 # Interpolate sound signature to match self on the frequency axis
                 sound_signature.interpolate(self.frequency)
             if sound_signature_smoothing_window_size:
-                sound_signature.smoothen_fractional_octave(
+                sound_signature.smoothen(
                     window_size=sound_signature_smoothing_window_size,
                     treble_window_size=sound_signature_smoothing_window_size)
                 self.target += sound_signature.smoothed
             else:
                 self.target += sound_signature.raw
 
-        # Set error
         self.error = self.raw - self.target
         if min_mean_error:
             # Shift error by it's mean in range 100 Hz to 10 kHz
@@ -474,7 +471,7 @@ class FrequencyResponse:
             error_smoothed=True, equalization=True, parametric_eq=True, fixed_band_eq=True, equalized_raw=True,
             equalized_smoothed=True)
 
-    def _smoothen_fractional_octave(
+    def _smoothen(
             self, data, window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
             treble_window_size=None, treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,
             treble_f_upper=DEFAULT_TREBLE_SMOOTHING_F_UPPER):
@@ -500,7 +497,7 @@ class FrequencyResponse:
         k_normal = k_treble * -1 + 1
         return y_normal * k_normal + y_treble * k_treble
 
-    def smoothen_fractional_octave(
+    def smoothen(
             self, window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
             treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
             treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,
@@ -517,11 +514,11 @@ class FrequencyResponse:
         """
         if treble_f_upper <= treble_f_lower:
             raise ValueError('Upper transition boundary must be greater than lower boundary')
-        self.smoothed = self._smoothen_fractional_octave(
+        self.smoothed = self._smoothen(
             self.raw, window_size=window_size, treble_window_size=treble_window_size,
             treble_f_lower=treble_f_lower, treble_f_upper=treble_f_upper)
         if len(self.error):
-            self.error_smoothed = self._smoothen_fractional_octave(
+            self.error_smoothed = self._smoothen(
                 self.error, window_size=window_size, treble_window_size=treble_window_size,
                 treble_f_lower=treble_f_lower, treble_f_upper=treble_f_upper)
         self.reset(
@@ -553,7 +550,7 @@ class FrequencyResponse:
         """
         fr = FrequencyResponse(name='fr', frequency=self.frequency, raw=self.error)
         # Smoothen data heavily in the treble region to avoid problems caused by peakiness
-        fr.smoothen_fractional_octave(
+        fr.smoothen(
             window_size=window_size, treble_window_size=treble_window_size, treble_f_lower=treble_f_lower,
             treble_f_upper=treble_f_upper)
 
@@ -608,7 +605,7 @@ class FrequencyResponse:
             # Clip positive gain to max gain
             combined.raw = np.min(np.vstack([combined.raw, np.ones(combined.raw.shape) * max_gain]), axis=0)
             # Smoothen the curve to get rid of hard kinks
-            combined.smoothen_fractional_octave(window_size=1 / 5, treble_window_size=1 / 5)
+            combined.smoothen(window_size=1 / 5, treble_window_size=1 / 5)
 
             # Equalization curve
             self.equalization = combined.smoothed
@@ -948,7 +945,7 @@ class FrequencyResponse:
             sound_signature_smoothing_window_size=sound_signature_smoothing_window_size,
             min_mean_error=min_mean_error
         )
-        self.smoothen_fractional_octave(
+        self.smoothen(
             window_size=window_size,
             treble_window_size=treble_window_size, treble_f_lower=treble_f_lower, treble_f_upper=treble_f_upper
         )
