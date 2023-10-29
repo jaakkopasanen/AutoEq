@@ -399,7 +399,7 @@ const App = (props) => {
     const targetLabel = getPreferredTarget(
       selectedMeasurementRef.current.source,
       selectedMeasurementRef.current.form,
-      selectedMeasurementRef.current.form
+      selectedMeasurementRef.current.rig
     );
     for (const [key, val] of Object.entries(newParams)) {
       if (key === 'bassBoostFc') {
