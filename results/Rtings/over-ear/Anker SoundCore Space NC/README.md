@@ -1,4 +1,4 @@
-# Anker SoundCore Space NC
+# Anker Soundcore Space NC
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.8 dB
 |  10 | Peaking |     16000 | 1.41 |        -0.7 |
 
 ### Graphs
-![](./Anker%20SoundCore%20Space%20NC.png)
+![](./Anker%20Soundcore%20Space%20NC.png)

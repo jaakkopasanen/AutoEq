@@ -1,4 +1,4 @@
-# Anker SoundCore Space One
+# Anker Soundcore Space One
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.2 dB
 |  10 | Peaking |     16000 | 1.41 |       -11.8 |
 
 ### Graphs
-![](./Anker%20SoundCore%20Space%20One.png)
+![](./Anker%20Soundcore%20Space%20One.png)
