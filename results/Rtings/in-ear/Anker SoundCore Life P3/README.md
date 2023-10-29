@@ -1,4 +1,4 @@
-# Anker SoundCore Life P3
+# Anker Soundcore Life P3
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-5.5 dB
 |  10 | Peaking |     16000 | 1.41 |        -1.8 |
 
 ### Graphs
-![](./Anker%20SoundCore%20Life%20P3.png)
+![](./Anker%20Soundcore%20Life%20P3.png)

@@ -212,7 +212,7 @@ class CrinacleCrawler(Crawler):
         return path
 
     def process_group(self, items, new_only=True):
-        if items[0].form == 'ignore':
+        if items[0].is_ignored:
             return
         file_path = self.target_path(items[0])
         if new_only and file_path.exists():

@@ -1,4 +1,4 @@
-# Anker SoundCore Liberty 4 NC
+# Anker Soundcore Liberty 4 NC
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-2.6 dB
 |  10 | Peaking |     16000 | 1.41 |         0.5 |
 
 ### Graphs
-![](./Anker%20SoundCore%20Liberty%204%20NC.png)
+![](./Anker%20Soundcore%20Liberty%204%20NC.png)

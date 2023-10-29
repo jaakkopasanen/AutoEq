@@ -1,6 +1,5 @@
 [
     {
-        "label": "AutoEq In-ear",
         "compatible": [
             {
                 "source": "crinacle",
@@ -9,13 +8,11 @@
             },
             {
                 "source": "oratory1990",
-                "form": "in-ear",
-                "rig": "unknown"
+                "form": "in-ear"
             },
             {
                 "source": "oratory1990",
-                "form": "earbud",
-                "rig": "unknown"
+                "form": "earbud"
             }
         ],
         "recommended": [
@@ -26,13 +23,11 @@
             },
             {
                 "source": "oratory1990",
-                "form": "in-ear",
-                "rig": "unknown"
+                "form": "in-ear"
             },
             {
                 "source": "oratory1990",
-                "form": "earbud",
-                "rig": "unknown"
+                "form": "earbud"
             }
         ],
         "bassBoost": {
@@ -40,6 +35,7 @@
             "q": 0.7,
             "gain": 9.5
         },
+        "label": "AutoEq in-ear",
         "fr": {
             "frequency": [
                 20.0,
@@ -1438,7 +1434,7 @@
         }
     },
     {
-        "label": "Diffuse Field 5128 (-1 dB /oct)",
+        "label": "Diffuse Field 5128 (-1 dB/oct)",
         "compatible": [
             {
                 "source": "crinacle",
@@ -1708,14 +1704,14 @@
         }
     },
     {
-        "label": "Diffuse Field GRAS KEMAR",
-        "compatible": [],
-        "recommended": [],
         "bassBoost": {
             "fc": 105,
             "q": 0.7,
             "gain": 0
         },
+        "label": "Diffuse field GRAS KEMAR",
+        "compatible": [],
+        "recommended": [],
         "fr": {
             "frequency": [
                 20.0,
@@ -3114,14 +3110,14 @@
         }
     },
     {
-        "label": "Diffuse Field ISO 11904-2",
-        "compatible": [],
-        "recommended": [],
         "bassBoost": {
             "fc": 105,
             "q": 0.7,
             "gain": 0
         },
+        "label": "Diffuse field ISO 11904-1",
+        "compatible": [],
+        "recommended": [],
         "fr": {
             "frequency": [
                 20.0,
@@ -4521,13 +4517,13 @@
     },
     {
         "label": "Flat",
-        "compatible": [],
-        "recommended": [],
         "bassBoost": {
             "fc": 105,
             "q": 0.7,
             "gain": 0
         },
+        "compatible": [],
+        "recommended": [],
         "fr": {
             "frequency": [
                 20.0,
@@ -5926,7 +5922,6 @@
         }
     },
     {
-        "label": "Harman In-ear 2019",
         "compatible": [
             {
                 "source": "crinacle",
@@ -5935,21 +5930,20 @@
             },
             {
                 "source": "oratory1990",
-                "form": "in-ear",
-                "rig": "unknown"
+                "form": "in-ear"
             },
             {
                 "source": "oratory1990",
-                "form": "earbud",
-                "rig": "unknown"
+                "form": "earbud"
             }
         ],
-        "recommended": [],
         "bassBoost": {
             "fc": 105,
             "q": 0.7,
             "gain": 9.5
         },
+        "label": "Harman in-ear 2019",
+        "recommended": [],
         "fr": {
             "frequency": [
                 20.0,
@@ -7348,7 +7342,6 @@
         }
     },
     {
-        "label": "Harman Over-ear 2018",
         "compatible": [
             {
                 "source": "crinacle",
@@ -7357,8 +7350,7 @@
             },
             {
                 "source": "oratory1990",
-                "form": "over-ear",
-                "rig": "unknown"
+                "form": "over-ear"
             }
         ],
         "recommended": [
@@ -7369,8 +7361,7 @@
             },
             {
                 "source": "oratory1990",
-                "form": "over-ear",
-                "rig": "unknown"
+                "form": "over-ear"
             }
         ],
         "bassBoost": {
@@ -7378,6 +7369,7 @@
             "q": 0.7,
             "gain": 6
         },
+        "label": "Harman over-ear 2018",
         "fr": {
             "frequency": [
                 20.0,
@@ -8776,29 +8768,24 @@
         }
     },
     {
-        "label": "Headphone.com Legacy AutoEq In-ear",
         "compatible": [
             {
-                "source": "headphonecom",
-                "form": "in-ear",
-                "rig": "unknown"
+                "source": "Headphone.com Legacy",
+                "form": "in-ear"
             },
             {
-                "source": "headphonecom",
-                "form": "earbud",
-                "rig": "unknown"
+                "source": "Headphone.com Legacy",
+                "form": "earbud"
             }
         ],
         "recommended": [
             {
-                "source": "headphonecom",
-                "form": "in-ear",
-                "rig": "unknown"
+                "source": "Headphone.com Legacy",
+                "form": "in-ear"
             },
             {
-                "source": "headphonecom",
-                "form": "earbud",
-                "rig": "unknown"
+                "source": "Headphone.com Legacy",
+                "form": "earbud"
             }
         ],
         "bassBoost": {
@@ -8806,6 +8793,7 @@
             "q": 0.7,
             "gain": 9.5
         },
+        "label": "Headphone.com Legacy AutoEq in-ear",
         "fr": {
             "frequency": [
                 20.0,
@@ -10204,12 +10192,10 @@
         }
     },
     {
-        "label": "Headphone.com Legacy Harman In-ear 2019",
         "compatible": [
             {
-                "source": "headphonecom",
-                "form": "in-ear",
-                "rig": "unknown"
+                "source": "Headphone.com Legacy",
+                "form": "in-ear"
             }
         ],
         "recommended": [],
@@ -10218,6 +10204,7 @@
             "q": 0.7,
             "gain": 9.5
         },
+        "label": "Headphone.com Legacy Harman in-ear 2019",
         "fr": {
             "frequency": [
                 20.0,
@@ -11616,19 +11603,16 @@
         }
     },
     {
-        "label": "Headphone.com Legacy Harman Over-ear 2018",
         "compatible": [
             {
-                "source": "headphonecom",
-                "form": "over-ear",
-                "rig": "unknown"
+                "source": "Headphone.com Legacy",
+                "form": "over-ear"
             }
         ],
         "recommended": [
             {
-                "source": "headphonecom",
-                "form": "over-ear",
-                "rig": "unknown"
+                "source": "Headphone.com Legacy",
+                "form": "over-ear"
             }
         ],
         "bassBoost": {
@@ -11636,6 +11620,7 @@
             "q": 0.7,
             "gain": 6
         },
+        "label": "Headphone.com Legacy Harman over-ear 2018",
         "fr": {
             "frequency": [
                 20.0,
@@ -13034,22 +13019,18 @@
         }
     },
     {
-        "label": "711/5128 Delta",
         "compatible": [
             {
                 "source": "crinacle",
-                "form": "in-ear",
-                "rig": "unknown"
+                "form": "in-ear"
             },
             {
                 "source": "oratory1990",
-                "form": "in-ear",
-                "rig": "unknown"
+                "form": "in-ear"
             },
             {
                 "source": "oratory1990",
-                "form": "earbud",
-                "rig": "unknown"
+                "form": "earbud"
             }
         ],
         "recommended": [],
@@ -13058,6 +13039,7 @@
             "q": 0.7,
             "gain": 0
         },
+        "label": "711 5128 delta",
         "fr": {
             "frequency": [
                 20.0,
@@ -14456,29 +14438,24 @@
         }
     },
     {
-        "label": "Innerfidelity AutoEq In-ear",
         "compatible": [
             {
-                "source": "innerfidelity",
-                "form": "in-ear",
-                "rig": "unknown"
+                "source": "Innerfidelity",
+                "form": "in-ear"
             },
             {
-                "source": "innerfidelity",
-                "form": "earbud",
-                "rig": "unknown"
+                "source": "Innerfidelity",
+                "form": "earbud"
             }
         ],
         "recommended": [
             {
-                "source": "innerfidelity",
-                "form": "in-ear",
-                "rig": "unknown"
+                "source": "Innerfidelity",
+                "form": "in-ear"
             },
             {
-                "source": "innerfidelity",
-                "form": "earbud",
-                "rig": "unknown"
+                "source": "Innerfidelity",
+                "form": "earbud"
             }
         ],
         "bassBoost": {
@@ -14486,6 +14463,7 @@
             "q": 0.7,
             "gain": 9.5
         },
+        "label": "Innerfidelity AutoEq in-ear",
         "fr": {
             "frequency": [
                 20.0,
@@ -15884,17 +15862,14 @@
         }
     },
     {
-        "label": "Innerfidelity Harman In-ear 2019",
         "compatible": [
             {
-                "source": "innerfidelity",
-                "form": "in-ear",
-                "rig": "unknown"
+                "source": "Innerfidelity",
+                "form": "in-ear"
             },
             {
-                "source": "innerfidelity",
-                "form": "earbud",
-                "rig": "unknown"
+                "source": "Innerfidelity",
+                "form": "earbud"
             }
         ],
         "recommended": [],
@@ -15903,6 +15878,7 @@
             "q": 0.7,
             "gain": 9.5
         },
+        "label": "Innerfidelity Harman in-ear 2019",
         "fr": {
             "frequency": [
                 20.0,
@@ -17301,19 +17277,16 @@
         }
     },
     {
-        "label": "Innerfidelity Harman Over-ear 2018",
         "compatible": [
             {
-                "source": "innerfidelity",
-                "form": "over-ear",
-                "rig": "unknown"
+                "source": "Innerfidelity",
+                "form": "over-ear"
             }
         ],
         "recommended": [
             {
-                "source": "innerfidelity",
-                "form": "over-ear",
-                "rig": "unknown"
+                "source": "Innerfidelity",
+                "form": "over-ear"
             }
         ],
         "bassBoost": {
@@ -17321,6 +17294,7 @@
             "q": 0.7,
             "gain": 6
         },
+        "label": "Innerfidelity Harman over-ear 2018",
         "fr": {
             "frequency": [
                 20.0,
@@ -18719,29 +18693,24 @@
         }
     },
     {
-        "label": "Rtings AutoEq In-ear",
         "compatible": [
             {
-                "source": "rtings",
-                "form": "in-ear",
-                "rig": "unknown"
+                "source": "Rtings",
+                "form": "in-ear"
             },
             {
-                "source": "rtings",
-                "form": "earbud",
-                "rig": "unknown"
+                "source": "Rtings",
+                "form": "earbud"
             }
         ],
         "recommended": [
             {
-                "source": "rtings",
-                "form": "in-ear",
-                "rig": "unknown"
+                "source": "Rtings",
+                "form": "in-ear"
             },
             {
-                "source": "rtings",
-                "form": "earbud",
-                "rig": "unknown"
+                "source": "Rtings",
+                "form": "earbud"
             }
         ],
         "bassBoost": {
@@ -18749,6 +18718,7 @@
             "q": 0.7,
             "gain": 9.5
         },
+        "label": "Rtings AutoEq in-ear",
         "fr": {
             "frequency": [
                 20.0,
@@ -20147,17 +20117,14 @@
         }
     },
     {
-        "label": "Rtings Harman In-ear 2019",
         "compatible": [
             {
-                "source": "rtings",
-                "form": "in-ear",
-                "rig": "unknown"
+                "source": "Rtings",
+                "form": "in-ear"
             },
             {
-                "source": "rtings",
-                "form": "earbud",
-                "rig": "unknown"
+                "source": "Rtings",
+                "form": "earbud"
             }
         ],
         "recommended": [],
@@ -20166,6 +20133,7 @@
             "q": 0.7,
             "gain": 9.5
         },
+        "label": "Rtings Harman in-ear 2019",
         "fr": {
             "frequency": [
                 20.0,
@@ -21564,19 +21532,16 @@
         }
     },
     {
-        "label": "Rtings Harman Over-ear 2018",
         "compatible": [
             {
-                "source": "rtings",
-                "form": "over-ear",
-                "rig": "unknown"
+                "source": "Rtings",
+                "form": "over-ear"
             }
         ],
         "recommended": [
             {
-                "source": "rtings",
-                "form": "over-ear",
-                "rig": "unknown"
+                "source": "Rtings",
+                "form": "over-ear"
             }
         ],
         "bassBoost": {
@@ -21584,6 +21549,7 @@
             "q": 0.7,
             "gain": 6
         },
+        "label": "Rtings Harman over-ear 2018",
         "fr": {
             "frequency": [
                 20.0,

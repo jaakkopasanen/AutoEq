@@ -18,7 +18,7 @@ if str(ROOT_PATH) not in sys.path:
     sys.path.insert(1, str(ROOT_PATH))
 from dbtools.constants import MEASUREMENTS_PATH
 from dbtools.name_index import NameIndex, NameItem
-from dbtools.manufacturer_index import ManufacturerIndex
+from dbtools.manufacturer_index import ManufacturerIndex, UnknownManufacturerError
 from dbtools.name_prompt import NamePrompt
 from dbtools.prompt_list_item import PromptListItem
 
@@ -115,7 +115,7 @@ class Crawler(ABC):
 
         proposal_data = {'form': [], 'manufacturer': [], 'model': []}
         for item in name_proposals.items:
-            if not item.name or item.form == 'ignore':
+            if not item.name or item.is_ignored:
                 continue
             manufacturer, match = self.manufacturers.find(item.name)
             if not manufacturer:
@@ -197,7 +197,7 @@ class Crawler(ABC):
                 item.rig = ground_truth.rig
 
     def prompt_callback(self, prompted_item):
-        if prompted_item.form != 'ignore':
+        if not prompted_item.is_ignored:
             if not is_file_name_allowed(prompted_item.name):
                 raise ValueError(f'Name "{prompted_item.name}" doesn\'t work as file name')
             self.active_list_item.resolution = 'success'
@@ -222,7 +222,7 @@ class Crawler(ABC):
         return self.prompt_callback
 
     def is_prompt_needed(self, item):
-        if item.form == 'ignore':
+        if item.is_ignored:
             return False
         return item.name is None or item.form is None
 
@@ -320,7 +320,7 @@ class Crawler(ABC):
         self.read_name_index()
         groups = {}
         for item in self.name_index.items:
-            if item.form == 'ignore':
+            if item.is_ignored:
                 continue
             key = self.target_group_key(item)
             if key is None:
@@ -390,7 +390,7 @@ class Crawler(ABC):
             self.active_list_item.active_style()
             # Item needs to be resolved and updated first
             self.resolve(self.active_list_item.name_prompt.item)
-            if self.active_list_item.name_prompt.item.form == 'ignore':
+            if self.active_list_item.name_prompt.item.is_ignored:
                 self.prompt_callback(self.active_list_item.name_prompt.item)
                 self.reload_ui()
                 return

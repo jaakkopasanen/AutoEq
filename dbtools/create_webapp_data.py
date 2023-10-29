@@ -25,38 +25,42 @@ name_indexes = {
 
 def measurement_rank(entry):
     order = [
-        {'source': 'oratory1990', 'form': 'over-ear', 'rig': 'unknown'},
+        {'source': 'oratory1990', 'form': 'over-ear'},
         {'source': 'crinacle', 'form': 'over-ear', 'rig': 'GRAS 43AG-7'},
-        {'source': 'Innerfidelity', 'form': 'over-ear', 'rig': 'unknown'},
-        {'source': 'Rtings', 'form': 'over-ear', 'rig': 'unknown'},
-        {'source': 'Headphone.com Legacy', 'form': 'over-ear', 'rig': 'unknown'},
+        {'source': 'Innerfidelity', 'form': 'over-ear', 'rig': 'HMS II.3'},
+        {'source': 'Rtings', 'form': 'over-ear', 'rig': 'HMS II.3'},
+        {'source': 'Headphone.com Legacy', 'form': 'over-ear', 'rig': 'HMS II.3'},
         {'source': 'crinacle', 'form': 'over-ear', 'rig': 'EARS + 711'},
 
         {'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
-        {'source': 'oratory1990', 'form': 'in-ear', 'rig': 'unknown'},
+        {'source': 'oratory1990', 'form': 'in-ear'},
         {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
-        {'source': 'Rtings', 'form': 'in-ear', 'rig': 'unknown'},
-        {'source': 'Innerfidelity', 'form': 'in-ear', 'rig': 'unknown'},
-        {'source': 'Headphone.com Legacy', 'form': 'in-ear', 'rig': 'unknown'},
+        {'source': 'Rtings', 'form': 'in-ear', 'rig': 'HMS II.3'},
+        {'source': 'Innerfidelity', 'form': 'in-ear', 'rig': 'HMS II.3'},
+        {'source': 'Headphone.com Legacy', 'form': 'in-ear', 'rig': 'HMS II.3'},
 
-        {'source': 'oratory1990', 'form': 'earbud', 'rig': 'unknown'},
+        {'source': 'oratory1990', 'form': 'earbud'},
         {'source': 'crinacle', 'form': 'earbud', 'rig': '711'},
-        {'source': 'Rtings', 'form': 'earbud', 'rig': 'unknown'},
-        {'source': 'Innerfidelity', 'form': 'earbud', 'rig': 'unknown'},
-        {'source': 'Headphone.com Legacy', 'form': 'earbud', 'rig': 'unknown'},
+        {'source': 'Rtings', 'form': 'earbud', 'rig': 'HMS II.3'},
+        {'source': 'Innerfidelity', 'form': 'earbud', 'rig': 'HMS II.3'},
+        {'source': 'Headphone.com Legacy', 'form': 'earbud', 'rig': 'HMS II.3'},
     ]
-    return order.index({'source': entry['source'], 'form': entry['form'], 'rig': entry['rig']})
+    for i, group in enumerate(order):
+        if group['source'] == entry['source'] and group['form'] == entry['form'] and ('rig' not in group or group['rig'] == entry['rig']):
+            return i
+    raise ValueError(f'{entry} is not in list')
 
 
 def write_entries_and_measurements():
     entries = dict()
     measurements = dict()
     for hp_path in tqdm(list(MEASUREMENTS_PATH.glob('*/data/**/*.csv'))):
-        rel_path = hp_path.relative_to(RESULTS_PATH)
-        parts = rel_path.parts[hp_path.parts.index('data') + 1:]
-        source = parts[0]
-        name = parts[-1].replace('.csv', '')
+        rel_path = hp_path.relative_to(MEASUREMENTS_PATH)
+        source = rel_path.parts[0]
+        name = rel_path.parts[-1].replace('.csv', '')
         item = name_indexes[source].find_one(name=name)
+        if item.is_ignored:
+            continue
         if name not in entries:
             entries[name] = []
         if name not in measurements:

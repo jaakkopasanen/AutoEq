@@ -1,4 +1,4 @@
-# AKG K712 (Dekoni sheepskin Earpads)
+# AKG K712 (Dekoni sheepskin earpads)
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.5 dB
 |  10 | Peaking |     16000 | 1.41 |        -4.7 |
 
 ### Graphs
-![](./AKG%20K712%20(Dekoni%20sheepskin%20Earpads).png)
+![](./AKG%20K712%20(Dekoni%20sheepskin%20earpads).png)

@@ -170,7 +170,7 @@ class RtingsCrawler(Crawler):
         return fr
 
     def process_group(self, items, new_only=True):
-        if items[0].form == 'ignore':
+        if items[0].is_ignored:
             return
         if len(items) == 0 or len(items) > 2:
             raise RtingsProcessingError(f'{len(items)} measurements grouped together, don\'t know what to do.')
