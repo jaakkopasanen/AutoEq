@@ -254,7 +254,7 @@ class Oratory1990Crawler(Crawler):
             inspection.save(inspection_path.joinpath(f'{make_file_name_allowed(item.source_name)}.png'))
         avg_fr.raw /= len(items)
         fr_path = self.target_path(items[0])
-        avg_fr.write_to_csv(fr_path)
+        avg_fr.write_csv(fr_path)
 
     def list_existing_files(self):
         return list(ORATORY1990_PATH.joinpath('data').glob('**/*.csv'))

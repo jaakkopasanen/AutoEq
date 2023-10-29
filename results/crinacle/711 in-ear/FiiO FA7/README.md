@@ -2,20 +2,20 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -5.4 dB or -6.3 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -5.5 dB or -6.2 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         5.8 |
-|   2 | Peaking   |       151 | 0.21 |        -5.8 |
-|   3 | Peaking   |       204 | 1.1  |        -1.3 |
-|   4 | Peaking   |       846 | 2.28 |         2.1 |
-|   5 | Peaking   |      4317 | 0.31 |         5.4 |
-|   6 | Peaking   |       558 | 2.35 |         0.4 |
-|   7 | Peaking   |      2249 | 3.14 |         0.5 |
-|   8 | Peaking   |      5735 | 4.8  |         1.4 |
-|   9 | Peaking   |      6578 | 6    |        -1.7 |
-|  10 | HighShelf |     10000 | 0.7  |        -0.6 |
+|   1 | LowShelf  |       105 | 0.7  |         6.4 |
+|   2 | Peaking   |       122 | 0.2  |        -5.6 |
+|   3 | Peaking   |       206 | 0.71 |        -1.6 |
+|   4 | Peaking   |       840 | 1.89 |         1.6 |
+|   5 | Peaking   |      4392 | 0.33 |         5.5 |
+|   6 | Peaking   |      1445 | 3.05 |        -0.5 |
+|   7 | Peaking   |      2152 | 3.37 |         0.6 |
+|   8 | Peaking   |      5781 | 4.57 |         1.2 |
+|   9 | Peaking   |      6580 | 6    |        -1.8 |
+|  10 | HighShelf |     10000 | 0.7  |        -0.5 |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-6.2 dB** (if available) and set gains manually with these parameters.
@@ -30,7 +30,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.2 dB
 |   6 | Peaking |      1000 | 1.41 |         1.5 |
 |   7 | Peaking |      2000 | 1.41 |         2.9 |
 |   8 | Peaking |      4000 | 1.41 |         5   |
-|   9 | Peaking |      8000 | 1.41 |         3.9 |
+|   9 | Peaking |      8000 | 1.41 |         4   |
 |  10 | Peaking |     16000 | 1.41 |         1.5 |
 
 ### Graphs

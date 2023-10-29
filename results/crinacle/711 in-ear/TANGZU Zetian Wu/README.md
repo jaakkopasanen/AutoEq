@@ -11,10 +11,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -3.2 dB or -2.7 dB, respectivel
 |   3 | Peaking   |       837 | 1    |         2.2 |
 |   4 | Peaking   |      1700 | 0.96 |        -1.6 |
 |   5 | Peaking   |      8722 | 1.42 |         3.2 |
-|   6 | Peaking   |        26 | 3.28 |        -0.9 |
-|   7 | Peaking   |        63 | 1.93 |         0.7 |
-|   8 | Peaking   |      4689 | 6    |        -1.5 |
-|   9 | Peaking   |      6213 | 5.95 |         1.7 |
+|   6 | Peaking   |        26 | 3.26 |        -0.9 |
+|   7 | Peaking   |        63 | 1.95 |         0.7 |
+|   8 | Peaking   |      4696 | 6    |        -1.5 |
+|   9 | Peaking   |      6211 | 5.94 |         1.7 |
 |  10 | HighShelf |     10000 | 0.7  |        -2.8 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.3 dB
 |   7 | Peaking |      2000 | 1.41 |        -1.3 |
 |   8 | Peaking |      4000 | 1.41 |        -0.6 |
 |   9 | Peaking |      8000 | 1.41 |         3.6 |
-|  10 | Peaking |     16000 | 1.41 |        -5.7 |
+|  10 | Peaking |     16000 | 1.41 |        -5.6 |
 
 ### Graphs
 ![](./TANGZU%20Zetian%20Wu.png)

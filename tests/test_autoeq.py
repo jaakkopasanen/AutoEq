@@ -34,7 +34,7 @@ class TestAutoEq(unittest.TestCase):
         fr.interpolate(pol_order=2)
         fr.smoothen_fractional_octave(window_size=2, treble_window_size=2)
         fr.center()
-        fr.write_to_csv(self._target)
+        fr.write_csv(self._target)
         self._sound_signature = self._root.joinpath('sound_signature.csv')
         with open(self._sound_signature, 'w') as fh:
             fh.write('frequency,raw\n20.0,0\n10000,0.0\n20000,3')

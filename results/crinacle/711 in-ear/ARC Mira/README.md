@@ -10,10 +10,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.0 dB or -6.4 dB, respectivel
 |   2 | Peaking   |       171 | 0.39 |        -3.5 |
 |   3 | Peaking   |       822 | 1.29 |         2.6 |
 |   4 | Peaking   |      1495 | 2.57 |        -0.9 |
-|   5 | Peaking   |      3426 | 1.88 |         3.4 |
-|   6 | Peaking   |      2390 | 6    |        -0.9 |
+|   5 | Peaking   |      3425 | 1.88 |         3.4 |
+|   6 | Peaking   |      2389 | 6    |        -0.9 |
 |   7 | Peaking   |      5064 | 6    |        -3.5 |
-|   8 | Peaking   |      6018 | 5.99 |         2.4 |
+|   8 | Peaking   |      6017 | 5.99 |         2.4 |
 |   9 | Peaking   |     10000 | 5.94 |         1   |
 |  10 | HighShelf |     10000 | 0.7  |         6.3 |
 
@@ -26,12 +26,12 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-12.0 d
 |   2 | Peaking |        62 | 1.41 |         3   |
 |   3 | Peaking |       125 | 1.41 |        -1.3 |
 |   4 | Peaking |       250 | 1.41 |        -3.6 |
-|   5 | Peaking |       500 | 1.41 |         0.1 |
+|   5 | Peaking |       500 | 1.41 |         0.2 |
 |   6 | Peaking |      1000 | 1.41 |         1.4 |
 |   7 | Peaking |      2000 | 1.41 |        -0.3 |
 |   8 | Peaking |      4000 | 1.41 |         2   |
 |   9 | Peaking |      8000 | 1.41 |         1.1 |
-|  10 | Peaking |     16000 | 1.41 |        11.9 |
+|  10 | Peaking |     16000 | 1.41 |        12   |
 
 ### Graphs
 ![](./ARC%20Mira.png)

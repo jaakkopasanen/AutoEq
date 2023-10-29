@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.4 dB
 |   7 | Peaking |      2000 | 1.41 |        -3.7 |
 |   8 | Peaking |      4000 | 1.41 |         4.1 |
 |   9 | Peaking |      8000 | 1.41 |         5.4 |
-|  10 | Peaking |     16000 | 1.41 |         6   |
+|  10 | Peaking |     16000 | 1.41 |         6.1 |
 
 ### Graphs
 ![](./TFZ%20Balance%202M.png)

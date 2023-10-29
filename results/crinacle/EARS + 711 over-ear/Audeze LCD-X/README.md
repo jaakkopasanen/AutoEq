@@ -7,10 +7,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.9 dB or -4.6 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         2.3 |
-|   2 | Peaking   |        47 | 0.68 |         1.3 |
+|   2 | Peaking   |        47 | 0.69 |         1.3 |
 |   3 | Peaking   |       221 | 0.18 |        -2.3 |
-|   4 | Peaking   |      3332 | 4.64 |         3.8 |
-|   5 | Peaking   |      8636 | 2.25 |         5.8 |
+|   4 | Peaking   |      3331 | 4.63 |         3.8 |
+|   5 | Peaking   |      8637 | 2.25 |         5.8 |
 |   6 | Peaking   |       411 | 1.84 |         0.7 |
 |   7 | Peaking   |       796 | 2.58 |        -0.7 |
 |   8 | Peaking   |      4435 | 4.85 |         2.1 |
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.3 dB
 |   7 | Peaking |      2000 | 1.41 |         0.1 |
 |   8 | Peaking |      4000 | 1.41 |         1.1 |
 |   9 | Peaking |      8000 | 1.41 |         4.6 |
-|  10 | Peaking |     16000 | 1.41 |        -8.4 |
+|  10 | Peaking |     16000 | 1.41 |        -8.3 |
 
 ### Graphs
 ![](./Audeze%20LCD-X.png)

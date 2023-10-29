@@ -7,18 +7,18 @@ You can use filters 1-5 or 1-10. Apply preamp of -3.5 dB or -3.5 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |        -0.9 |
-|   2 | Peaking   |        43 | 1.38 |        -1.2 |
-|   3 | Peaking   |      1664 | 2.21 |        -2.2 |
+|   2 | Peaking   |        43 | 1.37 |        -1.2 |
+|   3 | Peaking   |      1665 | 2.22 |        -2.2 |
 |   4 | Peaking   |      2467 | 2.88 |        -1.4 |
-|   5 | Peaking   |      3891 | 2.66 |         3.6 |
+|   5 | Peaking   |      3889 | 2.66 |         3.6 |
 |   6 | Peaking   |       159 | 2.16 |         0.4 |
-|   7 | Peaking   |       401 | 3.01 |         0.4 |
-|   8 | Peaking   |       884 | 3.63 |         0.7 |
+|   7 | Peaking   |       401 | 3.03 |         0.4 |
+|   8 | Peaking   |       884 | 3.62 |         0.7 |
 |   9 | Peaking   |      6705 | 6    |        -2.2 |
 |  10 | HighShelf |     10000 | 0.7  |         1.8 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-4.5 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.4 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.5 dB
 |   7 | Peaking |      2000 | 1.41 |        -3   |
 |   8 | Peaking |      4000 | 1.41 |         3.4 |
 |   9 | Peaking |      8000 | 1.41 |        -1.5 |
-|  10 | Peaking |     16000 | 1.41 |         4.5 |
+|  10 | Peaking |     16000 | 1.41 |         4.4 |
 
 ### Graphs
 ![](./JBL%20Tune%20Flex.png)

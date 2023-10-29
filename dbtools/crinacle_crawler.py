@@ -220,13 +220,13 @@ class CrinacleCrawler(Crawler):
         avg_fr = FrequencyResponse(name=items[0].name)
         avg_fr.raw = np.zeros(avg_fr.frequency.shape)
         for item in items:
-            fr = FrequencyResponse.read_from_csv(self.get_file_path_from_url(item.url))
+            fr = FrequencyResponse.read_csv(self.get_file_path_from_url(item.url))
             fr.interpolate()
             fr.center()
             avg_fr.raw += fr.raw
         avg_fr.raw /= len(items)
         Path(file_path.parent).mkdir(exist_ok=True, parents=True)
-        avg_fr.write_to_csv(file_path)
+        avg_fr.write_csv(file_path)
 
     def list_existing_files(self):
         return list(CRINACLE_PATH.joinpath('data').glob('**/*.csv'))

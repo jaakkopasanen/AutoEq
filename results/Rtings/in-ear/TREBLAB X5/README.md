@@ -9,13 +9,13 @@ You can use filters 1-5 or 1-10. Apply preamp of -4.9 dB or -4.8 dB, respectivel
 |   1 | LowShelf  |       105 | 0.7  |        -3.6 |
 |   2 | Peaking   |       198 | 1.04 |        -4.1 |
 |   3 | Peaking   |       863 | 0.87 |         2.8 |
-|   4 | Peaking   |      4462 | 2.6  |         4.9 |
-|   5 | Peaking   |      6550 | 5.59 |        -5.4 |
-|   6 | Peaking   |        69 | 1.68 |         0.8 |
-|   7 | Peaking   |       123 | 2.16 |        -0.5 |
-|   8 | Peaking   |      2049 | 3.19 |         0.9 |
-|   9 | Peaking   |      2812 | 4.53 |        -1.3 |
-|  10 | HighShelf |     10000 | 0.7  |        -2.9 |
+|   4 | Peaking   |      4465 | 2.6  |         4.9 |
+|   5 | Peaking   |      6551 | 5.63 |        -5.4 |
+|   6 | Peaking   |        65 | 2.08 |         0.8 |
+|   7 | Peaking   |      2046 | 3.22 |         0.9 |
+|   8 | Peaking   |      2801 | 4.56 |        -1.4 |
+|   9 | Peaking   |      8764 | 3.25 |         1.4 |
+|  10 | HighShelf |     10000 | 0.7  |        -3.3 |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-3.2 dB** (if available) and set gains manually with these parameters.
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.2 dB
 |   7 | Peaking |      2000 | 1.41 |        -0.3 |
 |   8 | Peaking |      4000 | 1.41 |         3.3 |
 |   9 | Peaking |      8000 | 1.41 |        -1.5 |
-|  10 | Peaking |     16000 | 1.41 |        -6   |
+|  10 | Peaking |     16000 | 1.41 |        -6.1 |
 
 ### Graphs
 ![](./TREBLAB%20X5.png)

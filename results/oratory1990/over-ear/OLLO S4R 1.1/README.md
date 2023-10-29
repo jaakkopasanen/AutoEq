@@ -11,10 +11,10 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.8 dB, respectivel
 |   3 | Peaking   |       109 | 0.62 |        -2   |
 |   4 | Peaking   |      1250 | 0.73 |        -3.5 |
 |   5 | Peaking   |     10000 | 0.49 |         6   |
-|   6 | Peaking   |      2116 | 2.38 |        -1.2 |
-|   7 | Peaking   |      3269 | 4.63 |         4.1 |
-|   8 | Peaking   |      5720 | 6    |        -5.6 |
-|   9 | Peaking   |      6887 | 5.77 |         2   |
+|   6 | Peaking   |      2108 | 2.39 |        -1.2 |
+|   7 | Peaking   |      3274 | 4.62 |         4.1 |
+|   8 | Peaking   |      5726 | 6    |        -5.7 |
+|   9 | Peaking   |      6875 | 5.76 |         2   |
 |  10 | HighShelf |     10000 | 0.7  |         1.3 |
 
 ### Fixed Band EQs

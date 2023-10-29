@@ -13,7 +13,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.5 dB, respectivel
 |   5 | Peaking   |      3498 | 1.04 |         5.9 |
 |   6 | Peaking   |      2840 | 4.53 |         1.7 |
 |   7 | Peaking   |      3409 | 6    |        -2.9 |
-|   8 | Peaking   |      4872 | 4.18 |         3.2 |
+|   8 | Peaking   |      4872 | 4.19 |         3.2 |
 |   9 | Peaking   |      5764 | 6    |        -3.3 |
 |  10 | HighShelf |     10000 | 0.7  |        -3.2 |
 
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.4 dB
 |   7 | Peaking |      2000 | 1.41 |         1.2 |
 |   8 | Peaking |      4000 | 1.41 |         6.1 |
 |   9 | Peaking |      8000 | 1.41 |        -0.2 |
-|  10 | Peaking |     16000 | 1.41 |        -6.5 |
+|  10 | Peaking |     16000 | 1.41 |        -6.4 |
 
 ### Graphs
 ![](./AudioQuest%20NightHawk.png)

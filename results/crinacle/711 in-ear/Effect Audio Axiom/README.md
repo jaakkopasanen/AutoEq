@@ -8,14 +8,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.8 dB or -7.0 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         0.9 |
 |   2 | Peaking   |       185 | 0.53 |        -6.6 |
-|   3 | Peaking   |       978 | 1.32 |         4.6 |
-|   4 | Peaking   |      3281 | 2.31 |         6.4 |
-|   5 | Peaking   |      6362 | 3.83 |         4.8 |
-|   6 | Peaking   |      4033 | 5.96 |         2   |
-|   7 | Peaking   |      4762 | 6    |        -3.4 |
-|   8 | Peaking   |      7102 | 5.45 |        -1.2 |
-|   9 | Peaking   |      9215 | 2.18 |         4.2 |
-|  10 | HighShelf |     10000 | 0.7  |        -3.4 |
+|   3 | Peaking   |       975 | 1.33 |         4.6 |
+|   4 | Peaking   |      3279 | 2.31 |         6.4 |
+|   5 | Peaking   |      6373 | 3.82 |         4.8 |
+|   6 | Peaking   |      4033 | 5.95 |         2   |
+|   7 | Peaking   |      4748 | 6    |        -3.4 |
+|   8 | Peaking   |      7162 | 5.49 |        -1.3 |
+|   9 | Peaking   |      9249 | 2.15 |         4.3 |
+|  10 | HighShelf |     10000 | 0.7  |        -3.5 |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-5.1 dB** (if available) and set gains manually with these parameters.
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-5.1 dB
 |   7 | Peaking |      2000 | 1.41 |         0.6 |
 |   8 | Peaking |      4000 | 1.41 |         4.4 |
 |   9 | Peaking |      8000 | 1.41 |         2.7 |
-|  10 | Peaking |     16000 | 1.41 |        -6   |
+|  10 | Peaking |     16000 | 1.41 |        -5.9 |
 
 ### Graphs
 ![](./Effect%20Audio%20Axiom.png)

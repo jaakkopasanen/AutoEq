@@ -10,14 +10,14 @@ from dbtools.name_index import NameIndex, NameItem
 from dbtools.crawler import Crawler
 from dbtools.constants import MEASUREMENTS_PATH
 
-HEADPHONECOM_PATH = MEASUREMENTS_PATH.joinpath('headphonecom')
+HEADPHONECOM_PATH = MEASUREMENTS_PATH.joinpath('Headphone.com Legacy')
 
 
 class HeadphonecomCrawler(Crawler):
     def read_name_index(self):
         self.name_index = NameIndex()
         for fp in HEADPHONECOM_PATH.joinpath('data').glob('**/*.csv'):
-            self.name_index.add(NameItem(name=fp.name.replace('.csv', ''), form=fp.parent.name))
+            self.name_index.add(NameItem(name=fp.name.replace('.csv', ''), form=fp.parent.name, rig='HMS II.3'))
         return self.name_index
 
     def write_name_index(self):

@@ -9,11 +9,11 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.4 dB, respectivel
 |   1 | LowShelf  |       105 | 0.7  |         6.7 |
 |   2 | Peaking   |       133 | 0.48 |        -4.1 |
 |   3 | Peaking   |      1721 | 1.95 |         3.6 |
-|   4 | Peaking   |      5446 | 4.67 |        -3.8 |
-|   5 | Peaking   |      9037 | 1.59 |         5.9 |
+|   4 | Peaking   |      5447 | 4.67 |        -3.8 |
+|   5 | Peaking   |      9039 | 1.59 |         5.9 |
 |   6 | Peaking   |        66 | 2.52 |        -0.8 |
-|   7 | Peaking   |        98 | 4.38 |         1.1 |
-|   8 | Peaking   |       728 | 5.52 |         1.5 |
+|   7 | Peaking   |        98 | 4.37 |         1.1 |
+|   8 | Peaking   |       728 | 5.53 |         1.5 |
 |   9 | Peaking   |      3293 | 5.08 |        -2.1 |
 |  10 | HighShelf |     10000 | 0.7  |        -1.3 |
 
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB
 |   7 | Peaking |      2000 | 1.41 |         3.6 |
 |   8 | Peaking |      4000 | 1.41 |        -3.4 |
 |   9 | Peaking |      8000 | 1.41 |         5.2 |
-|  10 | Peaking |     16000 | 1.41 |        -2.3 |
+|  10 | Peaking |     16000 | 1.41 |        -2.2 |
 
 ### Graphs
 ![](./Sennheiser%20HD%20598.png)

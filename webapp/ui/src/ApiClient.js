@@ -27,8 +27,10 @@ class ApiClient {
         if (!preferredTargets[measurementSource.source][measurementSource.form]) {
           preferredTargets[measurementSource.source][measurementSource.form] = {};
         }
-        if (!preferredTargets[measurementSource.source][measurementSource.form][measurementSource.rig]) {
-          preferredTargets[measurementSource.source][measurementSource.form][measurementSource.rig] = target.label;
+        if (!!measurementSource.rig) {
+          if (!preferredTargets[measurementSource.source][measurementSource.form][measurementSource.rig]) {
+            preferredTargets[measurementSource.source][measurementSource.form][measurementSource.rig] = target.label;
+          }
         }
       }
     }

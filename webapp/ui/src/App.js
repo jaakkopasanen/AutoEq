@@ -60,7 +60,7 @@ const App = (props) => {
   const [targets, setTargets, targetsRef] = useStateRef([]);
   const targetsBassBoostsRef = useRef({});
   // Sound signatures preferred for each measurement rig: {source: {form: {rig: label}}
-  const [preferredTargets, setPreferredTarget, preferredTargetsRef] = useStateRef([]);
+  const [preferredTargets, setPreferredTargets, preferredTargetsRef] = useStateRef([]);
   // Name (label) of the currently selected target.
   const [selectedTarget, setSelectedTarget, selectedTargetRef] = useStateRef(null);
   const [soundSignature, setSoundSignature, soundSignatureRef] = useStateRef(null);  // Sound signature { frequency, raw }
@@ -99,7 +99,7 @@ const App = (props) => {
 
   const setState = {
     selectedTarget: setSelectedTarget,
-    preferredTargets: setPreferredTarget,
+    preferredTargets: setPreferredTargets,
     soundSignature: setSoundSignature,
     soundSignatureSmoothingWindowSize: (v) => { soundSignatureSmoothingWindowSizeRef.current = v; },
     bassBoostFc: (v) => { bassBoostFcRef.current = v; },
@@ -126,7 +126,7 @@ const App = (props) => {
 
   const setUp = async () => {
     setMeasurements(await ApiClient.fetchMeasurements());
-    const [targets, preferredTarget] = await ApiClient.fetchTargets();
+    const [targets, preferredTargets] = await ApiClient.fetchTargets();
     const targetsBassBoosts = {};
     for (const target of targets) {
       targetsBassBoosts[target.label] = cloneDeep(target.bassBoost);
@@ -134,7 +134,7 @@ const App = (props) => {
     }
     targetsBassBoostsRef.current = targetsBassBoosts;
     setTargets(targets);
-    setPreferredTarget(preferredTarget);
+    setPreferredTargets(preferredTargets);
     apiClientRef.current = new ApiClient();
 
     document.addEventListener('click', () => {
@@ -251,14 +251,22 @@ const App = (props) => {
     preampNodeRef.current.connect(audioContextRef.current.destination);
   };
 
+  const getPreferredTarget = (source, form, rig) => {
+    let targetLabel = preferredTargetsRef.current[source][form];
+    if (typeof(targetLabel) !== 'string') {
+      // Preferred target defines rig level
+      targetLabel = targetLabel[rig];
+    }
+    return targetLabel;
+  };
+
   const onMeasurementSelected = (measurement) => {
     if (measurement === null) {
       setSelectedMeasurement(null);
       setGraphData(null);
       return;
     }
-
-    const targetLabel = preferredTargetsRef.current[measurement.source][measurement.form][measurement.rig];
+    const targetLabel = getPreferredTarget(measurement.source, measurement.form, measurement.rig);
     setShowInfo(false);
     setSelectedMeasurement(cloneDeep(measurement));
     setSelectedTarget(targetLabel);
@@ -344,9 +352,13 @@ const App = (props) => {
 
   const onTargetSelected = (target) => {
     const newPreferredTarget = cloneDeep(preferredTargetsRef.current);
-    newPreferredTarget[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig] = target.label;
+    if (typeof(newPreferredTarget[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form]) !== 'string') {
+      newPreferredTarget[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig] = target.label;
+    } else {
+      newPreferredTarget[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form] = target.label;
+    }
     setSelectedTarget(target.label);
-    setPreferredTarget(newPreferredTarget);
+    setPreferredTargets(newPreferredTarget);
     bassBoostFcRef.current = targetsBassBoostsRef.current[target.label].fc;
     bassBoostQRef.current = targetsBassBoostsRef.current[target.label].q;
     bassBoostGainRef.current = targetsBassBoostsRef.current[target.label].gain;
@@ -375,7 +387,11 @@ const App = (props) => {
 
   const onEqParamChanged = (newParams) => {
     const newTargetsBassBoosts = cloneDeep(targetsBassBoostsRef.current);
-    const targetLabel = preferredTargetsRef.current[selectedMeasurementRef.current.source][selectedMeasurementRef.current.form][selectedMeasurementRef.current.rig];
+    const targetLabel = getPreferredTarget(
+      selectedMeasurementRef.current.source,
+      selectedMeasurementRef.current.form,
+      selectedMeasurementRef.current.form
+    );
     for (const [key, val] of Object.entries(newParams)) {
       if (key === 'bassBoostFc') {
         newTargetsBassBoosts[targetLabel].fc = val;

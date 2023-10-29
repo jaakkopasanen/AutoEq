@@ -10,9 +10,9 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.4 dB, respectivel
 |   2 | Peaking   |       212 | 0.6  |        -2.8 |
 |   3 | Peaking   |       949 | 2.07 |         2   |
 |   4 | Peaking   |      2734 | 1.84 |         1.6 |
-|   5 | Peaking   |      8835 | 2.25 |         2.9 |
+|   5 | Peaking   |      8836 | 2.25 |         2.9 |
 |   6 | Peaking   |        52 | 2    |         0.2 |
-|   7 | Peaking   |      4056 | 5.96 |        -0.9 |
+|   7 | Peaking   |      4055 | 5.96 |        -0.9 |
 |   8 | Peaking   |      5485 | 3.79 |         2.1 |
 |   9 | Peaking   |      6422 | 6    |        -1.1 |
 |  10 | HighShelf |     10000 | 0.7  |        -3.3 |
@@ -23,15 +23,15 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         6.5 |
-|   2 | Peaking |        62 | 1.41 |         4.7 |
-|   3 | Peaking |       125 | 1.41 |        -0.6 |
+|   2 | Peaking |        62 | 1.41 |         4.6 |
+|   3 | Peaking |       125 | 1.41 |        -0.5 |
 |   4 | Peaking |       250 | 1.41 |        -2.9 |
 |   5 | Peaking |       500 | 1.41 |        -0.7 |
 |   6 | Peaking |      1000 | 1.41 |         1.5 |
 |   7 | Peaking |      2000 | 1.41 |         0.5 |
 |   8 | Peaking |      4000 | 1.41 |         0.6 |
 |   9 | Peaking |      8000 | 1.41 |         2.4 |
-|  10 | Peaking |     16000 | 1.41 |        -7.1 |
+|  10 | Peaking |     16000 | 1.41 |        -7.2 |
 
 ### Graphs
 ![](./Rose%20BR5%20Mk2.png)

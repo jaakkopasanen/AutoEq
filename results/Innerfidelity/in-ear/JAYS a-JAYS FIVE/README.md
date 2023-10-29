@@ -9,12 +9,12 @@ You can use filters 1-5 or 1-10. Apply preamp of -3.4 dB or -3.4 dB, respectivel
 |   1 | LowShelf  |       105 | 0.7  |         2.7 |
 |   2 | Peaking   |       104 | 0.21 |        -3.7 |
 |   3 | Peaking   |       694 | 0.51 |         4.5 |
-|   4 | Peaking   |      2697 | 4.71 |        -6.4 |
-|   5 | Peaking   |      5970 | 5.83 |        -6.5 |
-|   6 | Peaking   |      1431 | 3.59 |        -0.5 |
-|   7 | Peaking   |      3083 | 6    |        -1.2 |
-|   8 | Peaking   |      4091 | 4.19 |         2.9 |
-|   9 | Peaking   |      5253 | 5.96 |        -1.6 |
+|   4 | Peaking   |      2697 | 4.7  |        -6.4 |
+|   5 | Peaking   |      5970 | 5.81 |        -6.5 |
+|   6 | Peaking   |      1441 | 3.6  |        -0.5 |
+|   7 | Peaking   |      3082 | 6    |        -1.2 |
+|   8 | Peaking   |      4090 | 4.2  |         2.9 |
+|   9 | Peaking   |      5261 | 5.94 |        -1.6 |
 |  10 | HighShelf |     10000 | 0.7  |         0.7 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.1 dB
 |   7 | Peaking |      2000 | 1.41 |        -1.6 |
 |   8 | Peaking |      4000 | 1.41 |        -0.9 |
 |   9 | Peaking |      8000 | 1.41 |        -0.3 |
-|  10 | Peaking |     16000 | 1.41 |         0.9 |
+|  10 | Peaking |     16000 | 1.41 |         0.8 |
 
 ### Graphs
 ![](./JAYS%20a-JAYS%20FIVE.png)

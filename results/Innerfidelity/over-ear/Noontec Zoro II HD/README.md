@@ -14,7 +14,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.3 dB, respectivel
 |   6 | Peaking   |        99 | 2.37 |        -0.7 |
 |   7 | Peaking   |       129 | 4.55 |         1   |
 |   8 | Peaking   |      5798 | 3.08 |        -2.1 |
-|   9 | Peaking   |      9622 | 1.5  |         3   |
+|   9 | Peaking   |      9621 | 1.5  |         3   |
 |  10 | HighShelf |     10000 | 0.7  |         3.4 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-8.5 dB
 |   7 | Peaking |      2000 | 1.41 |        -0.4 |
 |   8 | Peaking |      4000 | 1.41 |         4.3 |
 |   9 | Peaking |      8000 | 1.41 |         1.2 |
-|  10 | Peaking |     16000 | 1.41 |         8.3 |
+|  10 | Peaking |     16000 | 1.41 |         8.4 |
 
 ### Graphs
 ![](./Noontec%20Zoro%20II%20HD.png)

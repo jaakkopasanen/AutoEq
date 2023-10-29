@@ -51,7 +51,6 @@ def smoothing_window_size(f, octaves):
 
 
 def log_f_sigmoid(f, f_lower, f_upper, a_normal=0.0, a_treble=1.0):
-    # TODO: Move to utils
     f_center = np.sqrt(f_upper / f_lower) * f_lower
     half_range = np.log10(f_upper) - np.log10(f_center)
     f_center = np.log10(f_center)

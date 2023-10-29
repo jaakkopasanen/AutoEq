@@ -49,9 +49,9 @@ class ImageGraphParser:
 
         for model, image in images.items():
             try:
-                if source == 'headphonecom':
+                if source == 'Headphone.com Legacy':
                     self.frequency_responses[model] = self.parse_headphonecom(image, model=model)
-                elif source == 'innerfidelity':
+                elif source == 'Innerfidelity':
                     self.frequency_responses[model], inspection = self.parse_innerfidelity(image, model=model)
                     if inspection_dir is not None:
                         inspection.save(os.path.join(inspection_dir, model+'.png'))
@@ -151,7 +151,7 @@ class ImageGraphParser:
 
     @staticmethod
     def parse_innerfidelity(im, model, px_top=800, px_bottom=4600, px_left=500, px_right=2500):
-        """Parses graph image downloaded from innerfidelity.com"""
+        """Parses graph image downloaded from Innerfidelity.com"""
         # Crop out everything but graph area (roughly)
         box = (px_left, px_top, im.size[0]-px_right, im.size[1]-px_bottom)
         im = im.crop(box)
@@ -287,7 +287,7 @@ class ImageGraphParser:
         arg_parser.add_argument('--input_dir', type=str, required=True, help='Path to directory containing images.')
         arg_parser.add_argument('--output_dir', type=str, required=True, help='Path to output directory.')
         arg_parser.add_argument('--inspection_dir', type=str, required=True, help='Path to inspection directory.')
-        arg_parser.add_argument('--source', type=str, default='headphonecom', help='Where did the image come from?')
+        arg_parser.add_argument('--source', type=str, default='Headphone.com Legacy', help='Where did the image come from?')
         cli_args = arg_parser.parse_args()
 
         input_dir = os.path.abspath(cli_args.input_dir)
@@ -306,8 +306,8 @@ class ImageGraphParser:
             dir_path = os.path.join(os.path.abspath(output_dir), fr.name)
             if not os.path.exists(dir_path):
                 os.makedirs(dir_path, exist_ok=True)
-            fr.write_to_csv(os.path.join(dir_path, fr.name+'.csv'))
-            # fr.plot_graph(show=True)
+            fr.write_csv(os.path.join(dir_path, fr.name + '.csv'))
+            # fr.plot(show_fig=True)
 
 
 if __name__ == '__main__':

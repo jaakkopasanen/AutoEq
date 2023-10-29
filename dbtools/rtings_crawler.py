@@ -18,7 +18,7 @@ from dbtools.name_index import NameIndex, NameItem
 from dbtools.crawler import Crawler
 from dbtools.constants import MEASUREMENTS_PATH
 
-RTINGS_PATH = MEASUREMENTS_PATH.joinpath('rtings')
+RTINGS_PATH = MEASUREMENTS_PATH.joinpath('Rtings')
 
 
 class RtingsCrawler(Crawler):
@@ -189,7 +189,7 @@ class RtingsCrawler(Crawler):
         fr.center()
         # Write to file
         file_path.parent.mkdir(exist_ok=True, parents=True)
-        fr.write_to_csv(file_path)
+        fr.write_csv(file_path)
 
     def list_existing_files(self):
         return list(RTINGS_PATH.joinpath('data').glob('**/*.csv'))

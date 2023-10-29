@@ -14,7 +14,7 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.5 dB or -6.4 dB, respectivel
 |   6 | Peaking   |        27 | 1.98 |        -0.4 |
 |   7 | Peaking   |        64 | 1.89 |         0.6 |
 |   8 | Peaking   |       114 | 2.54 |        -0.4 |
-|   9 | Peaking   |      4008 | 5.46 |        -0.7 |
+|   9 | Peaking   |      4007 | 5.46 |        -0.7 |
 |  10 | HighShelf |     10000 | 0.7  |        -1.4 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.7 dB
 |   7 | Peaking |      2000 | 1.41 |         5.7 |
 |   8 | Peaking |      4000 | 1.41 |         2.1 |
 |   9 | Peaking |      8000 | 1.41 |        -5.3 |
-|  10 | Peaking |     16000 | 1.41 |         0   |
+|  10 | Peaking |     16000 | 1.41 |         0.1 |
 
 ### Graphs
 ![](./Cyberdrive%20Forte%20Classic%20Bass.png)

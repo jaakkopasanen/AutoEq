@@ -587,23 +587,16 @@ class PEQ:
         # Update filters with latest iteration params
         if parse:
             self._parse_optimizer_params(params)
-
         # Above 10 kHz only the total energy matters so we'll take the average
         fr = self.fr.copy()
         target = self.target.copy()
         target[self._10k_ix:] = np.mean(target[self._10k_ix:])
         fr[self._10k_ix:] = np.mean(self.fr[self._10k_ix:])
-        #target[:self._ix50] = np.mean(target[:self._ix50])  # TODO: Is this good?
-        #fr[:self._ix50] = np.mean(fr[:self._ix50])
-
         # Mean squared error as loss, between minimum and maximum frequencies
         loss_val = np.mean(np.square(target[self._min_f_ix:self._max_f_ix] - fr[self._min_f_ix:self._max_f_ix]))
-
         # Sum penalties from all filters to MSE
         for filt in self.filters:
             loss_val += filt.sharpness_penalty
-            #loss_val += filt.band_penalty  # TODO
-
         return np.sqrt(loss_val)
 
     def _init_optimizer_params(self):

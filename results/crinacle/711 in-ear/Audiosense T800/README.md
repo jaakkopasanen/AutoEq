@@ -30,7 +30,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.7 dB
 |   6 | Peaking |      1000 | 1.41 |         1.4 |
 |   7 | Peaking |      2000 | 1.41 |        -1.4 |
 |   8 | Peaking |      4000 | 1.41 |        -1.1 |
-|   9 | Peaking |      8000 | 1.41 |         7   |
+|   9 | Peaking |      8000 | 1.41 |         7.1 |
 |  10 | Peaking |     16000 | 1.41 |        -4.4 |
 
 ### Graphs

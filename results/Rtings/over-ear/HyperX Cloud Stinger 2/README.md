@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.9 dB or -5.9 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        16.9 |
-|   2 | Peaking   |        51 | 0.27 |       -15.6 |
+|   1 | LowShelf  |       105 | 0.7  |        17   |
+|   2 | Peaking   |        51 | 0.27 |       -15.7 |
 |   3 | Peaking   |       485 | 1.46 |         7.4 |
-|   4 | Peaking   |      5380 | 0.7  |         6.3 |
-|   5 | Peaking   |      6348 | 2.68 |       -11.8 |
-|   6 | Peaking   |      1172 | 5.89 |        -0.9 |
+|   4 | Peaking   |      5390 | 0.7  |         6.4 |
+|   5 | Peaking   |      6349 | 2.67 |       -11.9 |
+|   6 | Peaking   |      1172 | 5.88 |        -0.9 |
 |   7 | Peaking   |      1467 | 6    |         1.7 |
-|   8 | Peaking   |      2485 | 4.26 |        -1.3 |
-|   9 | Peaking   |      3054 | 6    |         1.6 |
+|   8 | Peaking   |      2485 | 4.23 |        -1.3 |
+|   9 | Peaking   |      3053 | 6    |         1.5 |
 |  10 | HighShelf |     10000 | 0.7  |         0.4 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-5.0 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.9 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         4.1 |
-|   2 | Peaking |        62 | 1.41 |        -1.2 |
-|   3 | Peaking |       125 | 1.41 |        -4.5 |
+|   1 | Peaking |        31 | 1.41 |         4.3 |
+|   2 | Peaking |        62 | 1.41 |        -1   |
+|   3 | Peaking |       125 | 1.41 |        -4.6 |
 |   4 | Peaking |       250 | 1.41 |        -5.2 |
-|   5 | Peaking |       500 | 1.41 |         6.2 |
-|   6 | Peaking |      1000 | 1.41 |        -0.9 |
-|   7 | Peaking |      2000 | 1.41 |         1.5 |
-|   8 | Peaking |      4000 | 1.41 |         3   |
+|   5 | Peaking |       500 | 1.41 |         6   |
+|   6 | Peaking |      1000 | 1.41 |        -0.6 |
+|   7 | Peaking |      2000 | 1.41 |         1.3 |
+|   8 | Peaking |      4000 | 1.41 |         2.9 |
 |   9 | Peaking |      8000 | 1.41 |        -1.9 |
-|  10 | Peaking |     16000 | 1.41 |         2.7 |
+|  10 | Peaking |     16000 | 1.41 |         2.5 |
 
 ### Graphs
 ![](./HyperX%20Cloud%20Stinger%202.png)

@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.4 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.2 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         8.6 |
-|   2 | Peaking   |        83 | 0.32 |        -6.6 |
-|   3 | Peaking   |       523 | 2.32 |         0.7 |
-|   4 | Peaking   |      3014 | 1.17 |         7.8 |
-|   5 | Peaking   |      4191 | 2.26 |        -5.8 |
-|   6 | Peaking   |       217 | 2.31 |         1.2 |
-|   7 | Peaking   |       300 | 4.16 |        -2.1 |
-|   8 | Peaking   |      1442 | 4.11 |        -1.7 |
-|   9 | Peaking   |      1883 | 5.82 |         2   |
-|  10 | HighShelf |     10000 | 0.7  |        -2.5 |
+|   1 | LowShelf  |       105 | 0.7  |         7.6 |
+|   2 | Peaking   |        59 | 0.61 |        -2.9 |
+|   3 | Peaking   |       171 | 0.26 |        -4.2 |
+|   4 | Peaking   |       537 | 1.35 |         2.3 |
+|   5 | Peaking   |      2474 | 1.54 |         6   |
+|   6 | Peaking   |      3190 | 4.79 |         2.8 |
+|   7 | Peaking   |      3981 | 4.35 |        -3.9 |
+|   8 | Peaking   |      5715 | 3.68 |        -1.7 |
+|   9 | Peaking   |      8489 | 1.67 |         3.6 |
+|  10 | HighShelf |     10000 | 0.7  |        -4   |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-5.6 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-5.7 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         5.6 |
+|   1 | Peaking |        31 | 1.41 |         5.7 |
 |   2 | Peaking |        62 | 1.41 |         0.2 |
 |   3 | Peaking |       125 | 1.41 |        -2.6 |
-|   4 | Peaking |       250 | 1.41 |        -3.7 |
-|   5 | Peaking |       500 | 1.41 |         0.2 |
+|   4 | Peaking |       250 | 1.41 |        -3.9 |
+|   5 | Peaking |       500 | 1.41 |        -0   |
 |   6 | Peaking |      1000 | 1.41 |        -1.3 |
-|   7 | Peaking |      2000 | 1.41 |         5.2 |
-|   8 | Peaking |      4000 | 1.41 |         0.2 |
-|   9 | Peaking |      8000 | 1.41 |         1.5 |
-|  10 | Peaking |     16000 | 1.41 |        -7   |
+|   7 | Peaking |      2000 | 1.41 |         5.6 |
+|   8 | Peaking |      4000 | 1.41 |        -0.4 |
+|   9 | Peaking |      8000 | 1.41 |         1.7 |
+|  10 | Peaking |     16000 | 1.41 |        -7.1 |
 
 ### Graphs
 ![](./Samsung%20Level%20Over%20Wireless.png)

@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.7 dB or -6.5 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |        -0.3 |
-|   2 | Peaking   |       165 | 0.53 |        -7.2 |
-|   3 | Peaking   |       364 | 0.97 |        -2.4 |
-|   4 | Peaking   |      1046 | 0.27 |         3.9 |
-|   5 | Peaking   |      8837 | 1.88 |         6.2 |
-|   6 | Peaking   |      2698 | 3.72 |        -1.1 |
-|   7 | Peaking   |      3952 | 3.37 |         2.5 |
-|   8 | Peaking   |      5370 | 5.75 |        -3.8 |
-|   9 | Peaking   |      8983 | 5.88 |        -2.3 |
+|   2 | Peaking   |       164 | 0.53 |        -7.1 |
+|   3 | Peaking   |       357 | 0.96 |        -2.4 |
+|   4 | Peaking   |      1066 | 0.27 |         3.8 |
+|   5 | Peaking   |      8821 | 1.88 |         6.1 |
+|   6 | Peaking   |      2715 | 3.75 |        -1.1 |
+|   7 | Peaking   |      3961 | 3.35 |         2.5 |
+|   8 | Peaking   |      5367 | 5.81 |        -3.9 |
+|   9 | Peaking   |      8987 | 5.88 |        -2.3 |
 |  10 | HighShelf |     10000 | 0.7  |         4.1 |
 
 ### Fixed Band EQs
@@ -22,7 +22,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-10.1 d
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |        -0.8 |
+|   1 | Peaking |        31 | 1.41 |        -0.9 |
 |   2 | Peaking |        62 | 1.41 |        -1.9 |
 |   3 | Peaking |       125 | 1.41 |        -5.7 |
 |   4 | Peaking |       250 | 1.41 |        -5.4 |
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-10.1 d
 |   7 | Peaking |      2000 | 1.41 |         2.4 |
 |   8 | Peaking |      4000 | 1.41 |         1.4 |
 |   9 | Peaking |      8000 | 1.41 |         4.2 |
-|  10 | Peaking |     16000 | 1.41 |         9.9 |
+|  10 | Peaking |     16000 | 1.41 |         9.8 |
 
 ### Graphs
 ![](./Panasonic%20RP-HJE120.png)

@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.5 dB
 |   7 | Peaking |      2000 | 1.41 |         0.7 |
 |   8 | Peaking |      4000 | 1.41 |         6.7 |
 |   9 | Peaking |      8000 | 1.41 |        -2.9 |
-|  10 | Peaking |     16000 | 1.41 |         2.2 |
+|  10 | Peaking |     16000 | 1.41 |         2.1 |
 
 ### Graphs
 ![](./Sennheiser%20Momentum%20True%20Wireless.png)

@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.3 dB or -5.4 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         3.3 |
-|   2 | Peaking   |        34 | 1.09 |        -4.2 |
-|   3 | Peaking   |       135 | 2.14 |         0.1 |
-|   4 | Peaking   |      2391 | 1.98 |        -4.8 |
-|   5 | Peaking   |      4703 | 2.93 |         5.6 |
-|   6 | Peaking   |       216 | 2.93 |        -0.9 |
-|   7 | Peaking   |       388 | 1.82 |         1.3 |
-|   8 | Peaking   |      1177 | 2.97 |        -0.9 |
-|   9 | Peaking   |      9321 | 2.7  |        -3.6 |
+|   2 | Peaking   |        34 | 1.06 |        -4.1 |
+|   3 | Peaking   |       121 | 2.17 |         0.1 |
+|   4 | Peaking   |      2393 | 2.01 |        -4.9 |
+|   5 | Peaking   |      4705 | 2.95 |         5.7 |
+|   6 | Peaking   |       216 | 2.91 |        -0.9 |
+|   7 | Peaking   |       388 | 1.83 |         1.3 |
+|   8 | Peaking   |      1178 | 2.97 |        -1   |
+|   9 | Peaking   |      9320 | 2.69 |        -3.6 |
 |  10 | HighShelf |     10000 | 0.7  |         5.3 |
 
 ### Fixed Band EQs
@@ -23,7 +23,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-9.1 dB
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |        -0.9 |
-|   2 | Peaking |        62 | 1.41 |         1.8 |
+|   2 | Peaking |        62 | 1.41 |         1.7 |
 |   3 | Peaking |       125 | 1.41 |         0.5 |
 |   4 | Peaking |       250 | 1.41 |        -0.4 |
 |   5 | Peaking |       500 | 1.41 |         1   |

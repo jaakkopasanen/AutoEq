@@ -6,19 +6,19 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.6 dB or -6.6 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         7.9 |
+|   1 | LowShelf  |       105 | 0.7  |         8   |
 |   2 | Peaking   |       104 | 0.38 |        -6.2 |
-|   3 | Peaking   |       694 | 1.49 |         1.7 |
-|   4 | Peaking   |      1746 | 2.19 |         5.4 |
-|   5 | Peaking   |      9202 | 2.4  |         5.8 |
-|   6 | Peaking   |      3198 | 6    |        -1   |
-|   7 | Peaking   |      4521 | 5.32 |        -1.2 |
+|   3 | Peaking   |       698 | 1.49 |         1.7 |
+|   4 | Peaking   |      1746 | 2.2  |         5.4 |
+|   5 | Peaking   |      9200 | 2.39 |         5.8 |
+|   6 | Peaking   |      3198 | 6    |        -0.9 |
+|   7 | Peaking   |      4521 | 5.34 |        -1.2 |
 |   8 | Peaking   |      5806 | 5.97 |        -3.2 |
-|   9 | Peaking   |      6774 | 5.72 |         2.5 |
+|   9 | Peaking   |      6772 | 5.74 |         2.5 |
 |  10 | HighShelf |     10000 | 0.7  |         0.2 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-6.9 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.0 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -28,7 +28,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.9 dB
 |   4 | Peaking |       250 | 1.41 |        -4   |
 |   5 | Peaking |       500 | 1.41 |         0.3 |
 |   6 | Peaking |      1000 | 1.41 |         0.8 |
-|   7 | Peaking |      2000 | 1.41 |         4.9 |
+|   7 | Peaking |      2000 | 1.41 |         4.8 |
 |   8 | Peaking |      4000 | 1.41 |        -2.7 |
 |   9 | Peaking |      8000 | 1.41 |         3.9 |
 |  10 | Peaking |     16000 | 1.41 |         1.8 |

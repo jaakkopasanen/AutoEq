@@ -7,12 +7,12 @@ You can use filters 1-5 or 1-10. Apply preamp of -4.3 dB or -6.7 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.9 |
-|   2 | Peaking   |       100 | 0.2  |        -5.2 |
-|   3 | Peaking   |       212 | 1.24 |        -1.4 |
+|   2 | Peaking   |       100 | 0.21 |        -5.2 |
+|   3 | Peaking   |       213 | 1.24 |        -1.4 |
 |   4 | Peaking   |       892 | 1.57 |         3.3 |
 |   5 | Peaking   |     10000 | 0.21 |         4   |
-|   6 | Peaking   |      2269 | 3.01 |        -2   |
-|   7 | Peaking   |      3799 | 2.09 |         2.9 |
+|   6 | Peaking   |      2268 | 3    |        -2   |
+|   7 | Peaking   |      3798 | 2.09 |         2.9 |
 |   8 | Peaking   |      5336 | 4.7  |        -3.6 |
 |   9 | Peaking   |      7215 | 6    |        -2.5 |
 |  10 | HighShelf |     10000 | 0.7  |         3.2 |

@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.9 dB or -5.9 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.1 |
-|   2 | Peaking   |       164 | 0.43 |        -3.5 |
-|   3 | Peaking   |       786 | 1.7  |         2.4 |
-|   4 | Peaking   |      4176 | 3.3  |         4.4 |
-|   5 | Peaking   |      5869 | 4.21 |         4.6 |
-|   6 | Peaking   |      1024 | 3.79 |         1   |
-|   7 | Peaking   |      1732 | 1.77 |        -1.6 |
-|   8 | Peaking   |      2652 | 3.53 |         1.6 |
-|   9 | Peaking   |      7312 | 6    |        -1.3 |
+|   2 | Peaking   |       165 | 0.44 |        -3.5 |
+|   3 | Peaking   |       787 | 1.71 |         2.4 |
+|   4 | Peaking   |      4176 | 3.31 |         4.4 |
+|   5 | Peaking   |      5869 | 4.2  |         4.6 |
+|   6 | Peaking   |      1020 | 3.8  |         1   |
+|   7 | Peaking   |      1732 | 1.79 |        -1.6 |
+|   8 | Peaking   |      2654 | 3.51 |         1.6 |
+|   9 | Peaking   |      7304 | 6    |        -1.3 |
 |  10 | HighShelf |     10000 | 0.7  |         2.5 |
 
 ### Fixed Band EQs
@@ -23,15 +23,15 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.0 dB
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         6.4 |
-|   2 | Peaking |        62 | 1.41 |         2.9 |
-|   3 | Peaking |       125 | 1.41 |        -1.2 |
+|   2 | Peaking |        62 | 1.41 |         2.8 |
+|   3 | Peaking |       125 | 1.41 |        -1.3 |
 |   4 | Peaking |       250 | 1.41 |        -3.5 |
-|   5 | Peaking |       500 | 1.41 |         0.1 |
-|   6 | Peaking |      1000 | 1.41 |         1.8 |
-|   7 | Peaking |      2000 | 1.41 |        -2.1 |
+|   5 | Peaking |       500 | 1.41 |        -0   |
+|   6 | Peaking |      1000 | 1.41 |         1.7 |
+|   7 | Peaking |      2000 | 1.41 |        -2.2 |
 |   8 | Peaking |      4000 | 1.41 |         4.5 |
-|   9 | Peaking |      8000 | 1.41 |         0.5 |
-|  10 | Peaking |     16000 | 1.41 |         5.6 |
+|   9 | Peaking |      8000 | 1.41 |         0.6 |
+|  10 | Peaking |     16000 | 1.41 |         5.7 |
 
 ### Graphs
 ![](./Empire%20Ears%20ESR%20Mk2.png)

@@ -7,18 +7,18 @@ You can use filters 1-5 or 1-10. Apply preamp of -3.3 dB or -3.8 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         0.7 |
-|   2 | Peaking   |       158 | 0.73 |        -3.4 |
-|   3 | Peaking   |       530 | 0.83 |         2.8 |
-|   4 | Peaking   |      1163 | 2.53 |        -2.2 |
-|   5 | Peaking   |      8295 | 2.67 |         3.2 |
-|   6 | Peaking   |      2947 | 6    |        -1.8 |
+|   2 | Peaking   |       162 | 0.7  |        -3.4 |
+|   3 | Peaking   |       517 | 0.79 |         2.9 |
+|   4 | Peaking   |      1166 | 2.51 |        -2.2 |
+|   5 | Peaking   |      8299 | 2.69 |         3.2 |
+|   6 | Peaking   |      2946 | 6    |        -1.8 |
 |   7 | Peaking   |      4142 | 6    |        -3.6 |
-|   8 | Peaking   |      5700 | 6    |        -2.4 |
-|   9 | Peaking   |      6832 | 6    |         1.9 |
+|   8 | Peaking   |      5698 | 6    |        -2.4 |
+|   9 | Peaking   |      6833 | 6    |         1.9 |
 |  10 | HighShelf |     10000 | 0.7  |         1.6 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-3.6 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-3.5 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.6 dB
 |   7 | Peaking |      2000 | 1.41 |         0.3 |
 |   8 | Peaking |      4000 | 1.41 |        -2.5 |
 |   9 | Peaking |      8000 | 1.41 |         2.8 |
-|  10 | Peaking |     16000 | 1.41 |         3.4 |
+|  10 | Peaking |     16000 | 1.41 |         3.3 |
 
 ### Graphs
 ![](./Sony%20WH-H900N.png)

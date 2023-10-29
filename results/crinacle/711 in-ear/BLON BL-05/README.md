@@ -8,13 +8,13 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.4 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         1.6 |
 |   2 | Peaking   |       189 | 0.79 |        -2.2 |
-|   3 | Peaking   |      1820 | 1.44 |        -7.4 |
-|   4 | Peaking   |      1986 | 0.23 |         2.6 |
+|   3 | Peaking   |      1821 | 1.44 |        -7.4 |
+|   4 | Peaking   |      1985 | 0.22 |         2.6 |
 |   5 | Peaking   |      6449 | 4.03 |         4.7 |
-|   6 | Peaking   |      2268 | 4.98 |        -1.3 |
-|   7 | Peaking   |      2908 | 2.43 |         0.4 |
-|   8 | Peaking   |      3335 | 3.3  |         1.6 |
-|   9 | Peaking   |      4704 | 4.96 |        -2.8 |
+|   6 | Peaking   |      2268 | 4.99 |        -1.3 |
+|   7 | Peaking   |      2909 | 2.43 |         0.4 |
+|   8 | Peaking   |      3334 | 3.3  |         1.6 |
+|   9 | Peaking   |      4704 | 4.96 |        -2.7 |
 |  10 | HighShelf |     10000 | 0.7  |         2.8 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-5.5 dB
 |   7 | Peaking |      2000 | 1.41 |        -5   |
 |   8 | Peaking |      4000 | 1.41 |         2.9 |
 |   9 | Peaking |      8000 | 1.41 |         3   |
-|  10 | Peaking |     16000 | 1.41 |         5.3 |
+|  10 | Peaking |     16000 | 1.41 |         5.2 |
 
 ### Graphs
 ![](./BLON%20BL-05.png)

@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.2 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.2 |
-|   2 | Peaking   |       204 | 0.49 |        -2.9 |
-|   3 | Peaking   |      1100 | 1.06 |         3.1 |
-|   4 | Peaking   |      1724 | 1.43 |        -4.3 |
-|   5 | Peaking   |     10000 | 0.22 |         2.8 |
-|   6 | Peaking   |      2621 | 3.94 |        -0.8 |
-|   7 | Peaking   |      3666 | 3.5  |         1.4 |
-|   8 | Peaking   |      5084 | 5.65 |        -2.4 |
-|   9 | Peaking   |      6150 | 6    |         1.2 |
+|   2 | Peaking   |       203 | 0.51 |        -2.9 |
+|   3 | Peaking   |      1052 | 1.09 |         2.6 |
+|   4 | Peaking   |      1769 | 1.5  |        -3.9 |
+|   5 | Peaking   |      9559 | 0.22 |         2.7 |
+|   6 | Peaking   |      2632 | 3.96 |        -0.8 |
+|   7 | Peaking   |      3667 | 3.57 |         1.4 |
+|   8 | Peaking   |      5084 | 5.56 |        -2.4 |
+|   9 | Peaking   |      6148 | 6    |         1.2 |
 |  10 | HighShelf |     10000 | 0.7  |         1.1 |
 
 ### Fixed Band EQs

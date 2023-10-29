@@ -29,9 +29,9 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.7 dB
 |   5 | Peaking |       500 | 1.41 |        -0.6 |
 |   6 | Peaking |      1000 | 1.41 |        -2.1 |
 |   7 | Peaking |      2000 | 1.41 |         1.1 |
-|   8 | Peaking |      4000 | 1.41 |         6.4 |
+|   8 | Peaking |      4000 | 1.41 |         6.5 |
 |   9 | Peaking |      8000 | 1.41 |         1.3 |
-|  10 | Peaking |     16000 | 1.41 |        -9.1 |
+|  10 | Peaking |     16000 | 1.41 |        -9.2 |
 
 ### Graphs
 ![](./Sennheiser%20IE%20800%20S.png)

@@ -8,9 +8,9 @@ You can use filters 1-5 or 1-10. Apply preamp of -1.7 dB or -1.7 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         0.8 |
 |   2 | Peaking   |        59 | 1.1  |         0.9 |
-|   3 | Peaking   |       161 | 1.15 |        -1.6 |
-|   4 | Peaking   |       813 | 0.22 |         1   |
-|   5 | Peaking   |      1275 | 2.23 |        -2.1 |
+|   3 | Peaking   |       161 | 1.14 |        -1.6 |
+|   4 | Peaking   |       812 | 0.22 |         1   |
+|   5 | Peaking   |      1276 | 2.23 |        -2.1 |
 |   6 | Peaking   |      2316 | 3.5  |         0.4 |
 |   7 | Peaking   |      3158 | 3.75 |        -1.1 |
 |   8 | Peaking   |      4641 | 3.69 |         1.2 |

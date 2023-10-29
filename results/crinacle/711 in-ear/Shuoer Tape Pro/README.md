@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-8.2 dB
 |   7 | Peaking |      2000 | 1.41 |        -4.5 |
 |   8 | Peaking |      4000 | 1.41 |        -2.6 |
 |   9 | Peaking |      8000 | 1.41 |         8.3 |
-|  10 | Peaking |     16000 | 1.41 |         4.3 |
+|  10 | Peaking |     16000 | 1.41 |         4.4 |
 
 ### Graphs
 ![](./Shuoer%20Tape%20Pro.png)

@@ -7,18 +7,18 @@ You can use filters 1-5 or 1-10. Apply preamp of -3.7 dB or -3.7 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         3.8 |
-|   2 | Peaking   |       140 | 0.61 |        -3.6 |
-|   3 | Peaking   |      1500 | 2.12 |        -3.1 |
-|   4 | Peaking   |      2782 | 3.14 |         1.3 |
-|   5 | Peaking   |      5639 | 0.18 |         2.4 |
-|   6 | Peaking   |        43 | 1.84 |        -0.2 |
-|   7 | Peaking   |       740 | 1.83 |         0.3 |
-|   8 | Peaking   |      4454 | 4.25 |         1.4 |
-|   9 | Peaking   |      5826 | 5.57 |        -3.6 |
+|   2 | Peaking   |       141 | 0.61 |        -3.6 |
+|   3 | Peaking   |      1502 | 2.15 |        -3   |
+|   4 | Peaking   |      2790 | 3.11 |         1.3 |
+|   5 | Peaking   |      5757 | 0.18 |         2.3 |
+|   6 | Peaking   |       758 | 1.78 |         0.3 |
+|   7 | Peaking   |      4441 | 4.15 |         1.5 |
+|   8 | Peaking   |      5758 | 5.88 |        -3   |
+|   9 | Peaking   |      6965 | 6    |        -1   |
 |  10 | HighShelf |     10000 | 0.7  |         1.3 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-6.0 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-6.1 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.0 dB
 |   7 | Peaking |      2000 | 1.41 |         0.3 |
 |   8 | Peaking |      4000 | 1.41 |         2.8 |
 |   9 | Peaking |      8000 | 1.41 |         1.6 |
-|  10 | Peaking |     16000 | 1.41 |         5.8 |
+|  10 | Peaking |     16000 | 1.41 |         5.9 |
 
 ### Graphs
 ![](./InEar%20ProPhile-8%20(bass).png)

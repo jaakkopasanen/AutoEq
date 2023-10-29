@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.3 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.3 |
-|   2 | Peaking   |       208 | 0.45 |        -2.7 |
-|   3 | Peaking   |      1910 | 0.18 |         4   |
-|   4 | Peaking   |      2414 | 1.68 |        -7.7 |
-|   5 | Peaking   |      6203 | 2.5  |        -7.5 |
-|   6 | Peaking   |       695 | 2.37 |         0.3 |
-|   7 | Peaking   |      1082 | 3.62 |        -0.7 |
-|   8 | Peaking   |      4602 | 5.99 |         1.2 |
-|   9 | Peaking   |      5391 | 5.14 |        -0.5 |
+|   2 | Peaking   |       202 | 0.46 |        -2.6 |
+|   3 | Peaking   |      1858 | 0.18 |         3.8 |
+|   4 | Peaking   |      2419 | 1.76 |        -7.6 |
+|   5 | Peaking   |      6196 | 2.61 |        -7.5 |
+|   6 | Peaking   |       705 | 2.6  |         0.4 |
+|   7 | Peaking   |      1084 | 3.54 |        -0.6 |
+|   8 | Peaking   |      4605 | 5.99 |         1.2 |
+|   9 | Peaking   |      5364 | 5.27 |        -0.5 |
 |  10 | HighShelf |     10000 | 0.7  |        -1.5 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.4 dB
 |   7 | Peaking |      2000 | 1.41 |        -2.6 |
 |   8 | Peaking |      4000 | 1.41 |         0.4 |
 |   9 | Peaking |      8000 | 1.41 |        -1.7 |
-|  10 | Peaking |     16000 | 1.41 |        -1.6 |
+|  10 | Peaking |     16000 | 1.41 |        -1.7 |
 
 ### Graphs
 ![](./AKG%20K702.png)

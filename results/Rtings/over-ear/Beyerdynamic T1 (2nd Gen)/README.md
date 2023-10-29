@@ -8,13 +8,13 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.7 dB or -5.6 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         7.1 |
 |   2 | Peaking   |       103 | 0.24 |        -4.6 |
-|   3 | Peaking   |      2280 | 0.76 |         5.8 |
+|   3 | Peaking   |      2279 | 0.76 |         5.8 |
 |   4 | Peaking   |      6189 | 6    |        -6.4 |
-|   5 | Peaking   |      8502 | 2.47 |        -4.8 |
-|   6 | Peaking   |       601 | 0.75 |         0.4 |
-|   7 | Peaking   |       972 | 3.89 |        -1.9 |
-|   8 | Peaking   |      3176 | 4.99 |        -2.5 |
-|   9 | Peaking   |      4634 | 5.47 |         3.5 |
+|   5 | Peaking   |      8501 | 2.47 |        -4.8 |
+|   6 | Peaking   |       575 | 0.78 |         0.4 |
+|   7 | Peaking   |       973 | 3.85 |        -1.9 |
+|   8 | Peaking   |      3176 | 4.95 |        -2.5 |
+|   9 | Peaking   |      4633 | 5.47 |         3.5 |
 |  10 | HighShelf |     10000 | 0.7  |         0.2 |
 
 ### Fixed Band EQs
@@ -22,16 +22,16 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.6 dB
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         5   |
+|   1 | Peaking |        31 | 1.41 |         4.8 |
 |   2 | Peaking |        62 | 1.41 |         1.5 |
-|   3 | Peaking |       125 | 1.41 |        -1.9 |
-|   4 | Peaking |       250 | 1.41 |        -3.6 |
-|   5 | Peaking |       500 | 1.41 |        -0.4 |
-|   6 | Peaking |      1000 | 1.41 |        -1.2 |
+|   3 | Peaking |       125 | 1.41 |        -2.1 |
+|   4 | Peaking |       250 | 1.41 |        -3.5 |
+|   5 | Peaking |       500 | 1.41 |        -0.5 |
+|   6 | Peaking |      1000 | 1.41 |        -1   |
 |   7 | Peaking |      2000 | 1.41 |         6.3 |
-|   8 | Peaking |      4000 | 1.41 |         3.1 |
-|   9 | Peaking |      8000 | 1.41 |        -5.8 |
-|  10 | Peaking |     16000 | 1.41 |         3.2 |
+|   8 | Peaking |      4000 | 1.41 |         3.3 |
+|   9 | Peaking |      8000 | 1.41 |        -6   |
+|  10 | Peaking |     16000 | 1.41 |         3.4 |
 
 ### Graphs
 ![](./Beyerdynamic%20T1%20(2nd%20Gen).png)

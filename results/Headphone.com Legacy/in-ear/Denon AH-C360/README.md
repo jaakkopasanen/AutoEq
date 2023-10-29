@@ -7,14 +7,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.6 dB or -6.6 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         2.3 |
-|   2 | Peaking   |       180 | 0.45 |        -5.9 |
-|   3 | Peaking   |      1095 | 0.66 |         5.4 |
-|   4 | Peaking   |      2361 | 1.69 |         4.3 |
-|   5 | Peaking   |      5987 | 3.01 |        -7   |
-|   6 | Peaking   |        38 | 2.55 |        -0.3 |
-|   7 | Peaking   |      2868 | 5.59 |         1.2 |
-|   8 | Peaking   |      3794 | 3.87 |        -1.6 |
-|   9 | Peaking   |      7076 | 5.86 |        -0.6 |
+|   2 | Peaking   |       180 | 0.44 |        -5.9 |
+|   3 | Peaking   |      1087 | 0.65 |         5.4 |
+|   4 | Peaking   |      2359 | 1.67 |         4.3 |
+|   5 | Peaking   |      5986 | 3    |        -7   |
+|   6 | Peaking   |        38 | 2.55 |        -0.2 |
+|   7 | Peaking   |      2868 | 5.61 |         1.2 |
+|   8 | Peaking   |      3792 | 3.86 |        -1.5 |
+|   9 | Peaking   |      7074 | 5.77 |        -0.6 |
 |  10 | HighShelf |     10000 | 0.7  |         2.2 |
 
 ### Fixed Band EQs
@@ -22,16 +22,16 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.4 dB
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         2.3 |
+|   1 | Peaking |        31 | 1.41 |         2.2 |
 |   2 | Peaking |        62 | 1.41 |        -0.3 |
-|   3 | Peaking |       125 | 1.41 |        -4   |
+|   3 | Peaking |       125 | 1.41 |        -4.1 |
 |   4 | Peaking |       250 | 1.41 |        -4.7 |
 |   5 | Peaking |       500 | 1.41 |        -0.4 |
 |   6 | Peaking |      1000 | 1.41 |         4.3 |
-|   7 | Peaking |      2000 | 1.41 |         6.8 |
+|   7 | Peaking |      2000 | 1.41 |         6.9 |
 |   8 | Peaking |      4000 | 1.41 |        -1.5 |
 |   9 | Peaking |      8000 | 1.41 |        -2.2 |
-|  10 | Peaking |     16000 | 1.41 |         4.1 |
+|  10 | Peaking |     16000 | 1.41 |         4.2 |
 
 ### Graphs
 ![](./Denon%20AH-C360.png)

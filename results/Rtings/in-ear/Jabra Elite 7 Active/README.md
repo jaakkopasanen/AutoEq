@@ -6,19 +6,19 @@ You can use filters 1-5 or 1-10. Apply preamp of -2.8 dB or -2.8 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        -3.3 |
+|   1 | LowShelf  |       105 | 0.7  |        -3.2 |
 |   2 | Peaking   |        43 | 1.02 |         3.2 |
 |   3 | Peaking   |        75 | 3.05 |        -0.5 |
 |   4 | Peaking   |       212 | 1.09 |        -1.7 |
-|   5 | Peaking   |       846 | 2.27 |         2.8 |
-|   6 | Peaking   |      2511 | 3.68 |        -1.2 |
-|   7 | Peaking   |      3709 | 3.05 |         1.1 |
-|   8 | Peaking   |      5103 | 4.82 |        -1.2 |
-|   9 | Peaking   |      9141 | 2.07 |         2.5 |
+|   5 | Peaking   |       845 | 2.28 |         2.8 |
+|   6 | Peaking   |      2510 | 3.68 |        -1.2 |
+|   7 | Peaking   |      3708 | 3.04 |         1.1 |
+|   8 | Peaking   |      5114 | 4.84 |        -1.2 |
+|   9 | Peaking   |      9148 | 2.05 |         2.5 |
 |  10 | HighShelf |     10000 | 0.7  |        -2.9 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-2.1 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-2.2 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -29,9 +29,9 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-2.1 dB
 |   5 | Peaking |       500 | 1.41 |         0.4 |
 |   6 | Peaking |      1000 | 1.41 |         2.2 |
 |   7 | Peaking |      2000 | 1.41 |        -1   |
-|   8 | Peaking |      4000 | 1.41 |         0.4 |
-|   9 | Peaking |      8000 | 1.41 |         0.9 |
-|  10 | Peaking |     16000 | 1.41 |        -4.6 |
+|   8 | Peaking |      4000 | 1.41 |         0.3 |
+|   9 | Peaking |      8000 | 1.41 |         0.7 |
+|  10 | Peaking |     16000 | 1.41 |        -4.5 |
 
 ### Graphs
 ![](./Jabra%20Elite%207%20Active.png)

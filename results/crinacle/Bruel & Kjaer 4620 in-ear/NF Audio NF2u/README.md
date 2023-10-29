@@ -2,23 +2,23 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -5.4 dB or -7.3 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -5.5 dB or -7.3 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         1.3 |
-|   2 | Peaking   |       193 | 1.91 |        -2.6 |
-|   3 | Peaking   |      1809 | 1.75 |        -4   |
-|   4 | Peaking   |      2826 | 4.2  |         4.6 |
-|   5 | Peaking   |      5702 | 3.18 |         5.4 |
-|   6 | Peaking   |        78 | 1.55 |        -1.1 |
-|   7 | Peaking   |       687 | 1    |         1.4 |
-|   8 | Peaking   |      1148 | 1.93 |        -0.9 |
-|   9 | Peaking   |      4071 | 6    |        -4.3 |
+|   1 | LowShelf  |       105 | 0.7  |         1.4 |
+|   2 | Peaking   |       194 | 2.03 |        -2.7 |
+|   3 | Peaking   |      1817 | 1.61 |        -3.8 |
+|   4 | Peaking   |      2810 | 3.68 |         4.5 |
+|   5 | Peaking   |      5695 | 3.31 |         5.4 |
+|   6 | Peaking   |        78 | 1.5  |        -1.2 |
+|   7 | Peaking   |       693 | 1.08 |         1.4 |
+|   8 | Peaking   |      1186 | 1.83 |        -0.9 |
+|   9 | Peaking   |      4067 | 5.98 |        -4.3 |
 |  10 | HighShelf |     10000 | 0.7  |         7.2 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-11.8 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-11.9 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-11.8 d
 |   7 | Peaking |      2000 | 1.41 |        -2   |
 |   8 | Peaking |      4000 | 1.41 |         0.5 |
 |   9 | Peaking |      8000 | 1.41 |         3.9 |
-|  10 | Peaking |     16000 | 1.41 |        11.6 |
+|  10 | Peaking |     16000 | 1.41 |        11.7 |
 
 ### Graphs
 ![](./NF%20Audio%20NF2u.png)

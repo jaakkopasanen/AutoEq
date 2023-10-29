@@ -8,30 +8,30 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.4 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         4.5 |
 |   2 | Peaking   |       217 | 0.48 |        -5.2 |
-|   3 | Peaking   |      2164 | 1.5  |        -6.9 |
-|   4 | Peaking   |      3093 | 1.55 |         6.5 |
-|   5 | Peaking   |      9929 | 0.34 |         5.9 |
+|   3 | Peaking   |      2163 | 1.51 |        -6.9 |
+|   4 | Peaking   |      3094 | 1.56 |         6.5 |
+|   5 | Peaking   |      9930 | 0.34 |         5.9 |
 |   6 | Peaking   |       942 | 2.73 |         1   |
-|   7 | Peaking   |      1319 | 3.35 |        -0.8 |
-|   8 | Peaking   |      4595 | 5.23 |         1.4 |
+|   7 | Peaking   |      1319 | 3.36 |        -0.8 |
+|   8 | Peaking   |      4595 | 5.24 |         1.4 |
 |   9 | Peaking   |      5225 | 6    |        -2.1 |
 |  10 | HighShelf |     10000 | 0.7  |        -0.2 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.7 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         4.9 |
-|   2 | Peaking |        62 | 1.41 |         1.9 |
-|   3 | Peaking |       125 | 1.41 |        -2.3 |
-|   4 | Peaking |       250 | 1.41 |        -4.8 |
+|   1 | Peaking |        31 | 1.41 |         4.8 |
+|   2 | Peaking |        62 | 1.41 |         2   |
+|   3 | Peaking |       125 | 1.41 |        -2.1 |
+|   4 | Peaking |       250 | 1.41 |        -4.9 |
 |   5 | Peaking |       500 | 1.41 |        -2.4 |
-|   6 | Peaking |      1000 | 1.41 |         0.1 |
+|   6 | Peaking |      1000 | 1.41 |         0.3 |
 |   7 | Peaking |      2000 | 1.41 |        -3.7 |
-|   8 | Peaking |      4000 | 1.41 |         6.7 |
-|   9 | Peaking |      8000 | 1.41 |         5.2 |
-|  10 | Peaking |     16000 | 1.41 |         7.1 |
+|   8 | Peaking |      4000 | 1.41 |         6.6 |
+|   9 | Peaking |      8000 | 1.41 |         5.3 |
+|  10 | Peaking |     16000 | 1.41 |         7.3 |
 
 ### Graphs
 ![](./Fatfreq%20Reference%20Plus.png)

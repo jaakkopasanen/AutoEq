@@ -11,11 +11,11 @@ You can use filters 1-5 or 1-10. Apply preamp of -4.6 dB or -4.6 dB, respectivel
 |   3 | Peaking   |       154 | 0.77 |        -4   |
 |   4 | Peaking   |       899 | 0.61 |         4.7 |
 |   5 | Peaking   |     10000 | 0.7  |        -5   |
-|   6 | Peaking   |      2256 | 2.96 |         2.5 |
+|   6 | Peaking   |      2255 | 2.96 |         2.5 |
 |   7 | Peaking   |      3355 | 3.33 |        -4.6 |
-|   8 | Peaking   |      5339 | 3.03 |         3   |
-|   9 | Peaking   |      7124 | 3.59 |        -2.5 |
-|  10 | HighShelf |     10000 | 0.7  |         3.5 |
+|   8 | Peaking   |      5338 | 3.03 |         3   |
+|   9 | Peaking   |      7126 | 3.59 |        -2.5 |
+|  10 | HighShelf |     10000 | 0.7  |         3.6 |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-4.8 dB** (if available) and set gains manually with these parameters.
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.8 dB
 |   7 | Peaking |      2000 | 1.41 |         2.6 |
 |   8 | Peaking |      4000 | 1.41 |        -1.8 |
 |   9 | Peaking |      8000 | 1.41 |        -4.2 |
-|  10 | Peaking |     16000 | 1.41 |         1.9 |
+|  10 | Peaking |     16000 | 1.41 |         2   |
 
 ### Graphs
 ![](./Noble%20Audio%20Falcon.png)

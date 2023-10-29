@@ -6,16 +6,16 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.3 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        11.2 |
-|   2 | Peaking   |        56 | 0.46 |       -11   |
-|   3 | Peaking   |      2382 | 0.49 |        -5   |
-|   4 | Peaking   |      3277 | 2.54 |         7.5 |
-|   5 | Peaking   |      6274 | 0.78 |         7.4 |
-|   6 | Peaking   |       317 | 2.29 |         1.9 |
-|   7 | Peaking   |       696 | 0.22 |        -0.6 |
-|   8 | Peaking   |      1607 | 5.13 |         2.7 |
-|   9 | Peaking   |     10000 | 1.4  |         3.4 |
-|  10 | HighShelf |     10000 | 0.7  |        -7.4 |
+|   1 | LowShelf  |       105 | 0.7  |        11.3 |
+|   2 | Peaking   |        56 | 0.46 |       -11.1 |
+|   3 | Peaking   |      2362 | 0.5  |        -5   |
+|   4 | Peaking   |      3285 | 2.43 |         7.7 |
+|   5 | Peaking   |      6310 | 0.82 |         7.3 |
+|   6 | Peaking   |       315 | 2.24 |         1.9 |
+|   7 | Peaking   |       643 | 0.23 |        -0.7 |
+|   8 | Peaking   |      1606 | 5.04 |         2.6 |
+|   9 | Peaking   |      9793 | 1.72 |         3.4 |
+|  10 | HighShelf |     10000 | 0.7  |        -7   |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-6.3 dB** (if available) and set gains manually with these parameters.
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-6.3 dB
 |   7 | Peaking |      2000 | 1.41 |        -3.7 |
 |   8 | Peaking |      4000 | 1.41 |         6.2 |
 |   9 | Peaking |      8000 | 1.41 |         5.6 |
-|  10 | Peaking |     16000 | 1.41 |       -11.3 |
+|  10 | Peaking |     16000 | 1.41 |       -11.2 |
 
 ### Graphs
 ![](./Audio-Technica%20ATH-A1000X.png)

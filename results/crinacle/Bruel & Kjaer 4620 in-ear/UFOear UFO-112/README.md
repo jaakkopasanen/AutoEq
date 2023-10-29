@@ -1,4 +1,4 @@
-# UFOear UFO-112
+# UFOEar UFO-112
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
@@ -34,4 +34,4 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-3.1 dB
 |  10 | Peaking |     16000 | 1.41 |        -6.4 |
 
 ### Graphs
-![](./UFOear%20UFO-112.png)
+![](./UFOEar%20UFO-112.png)

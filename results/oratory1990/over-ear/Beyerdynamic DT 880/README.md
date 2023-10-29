@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.1 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.5 dB or -6.5 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         6.3 |
-|   2 | Peaking   |       152 | 0.45 |        -2.8 |
-|   3 | Peaking   |      1507 | 0.76 |         2   |
-|   4 | Peaking   |      4581 | 3.39 |         3.7 |
-|   5 | Peaking   |      5850 | 4.74 |        -6.3 |
-|   6 | Peaking   |        51 | 2.54 |        -0.4 |
-|   7 | Peaking   |       253 | 2    |        -0.4 |
-|   8 | Peaking   |       545 | 1.44 |         0.5 |
-|   9 | Peaking   |       964 | 3.74 |        -0.6 |
-|  10 | HighShelf |     10000 | 0.7  |        -2.5 |
+|   1 | LowShelf  |       105 | 0.7  |         7.4 |
+|   2 | Peaking   |       112 | 0.3  |        -3.4 |
+|   3 | Peaking   |      1320 | 0.54 |         2.1 |
+|   4 | Peaking   |      4480 | 4.24 |         3.9 |
+|   5 | Peaking   |      5760 | 4.97 |        -6.1 |
+|   6 | Peaking   |       234 | 2.41 |        -0.4 |
+|   7 | Peaking   |       480 | 2.4  |         0.5 |
+|   8 | Peaking   |       940 | 4.04 |        -0.6 |
+|   9 | Peaking   |      2939 | 4.92 |        -0.5 |
+|  10 | HighShelf |     10000 | 0.7  |        -3.1 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.2 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         6.5 |
-|   2 | Peaking |        62 | 1.41 |         3.1 |
-|   3 | Peaking |       125 | 1.41 |        -0.7 |
-|   4 | Peaking |       250 | 1.41 |        -2.9 |
-|   5 | Peaking |       500 | 1.41 |         0.1 |
-|   6 | Peaking |      1000 | 1.41 |         0.7 |
-|   7 | Peaking |      2000 | 1.41 |         1.7 |
-|   8 | Peaking |      4000 | 1.41 |         1.2 |
-|   9 | Peaking |      8000 | 1.41 |        -1.6 |
-|  10 | Peaking |     16000 | 1.41 |        -4   |
+|   1 | Peaking |        31 | 1.41 |         6.8 |
+|   2 | Peaking |        62 | 1.41 |         2.6 |
+|   3 | Peaking |       125 | 1.41 |        -1.1 |
+|   4 | Peaking |       250 | 1.41 |        -2.8 |
+|   5 | Peaking |       500 | 1.41 |        -0.1 |
+|   6 | Peaking |      1000 | 1.41 |         1.3 |
+|   7 | Peaking |      2000 | 1.41 |         1.6 |
+|   8 | Peaking |      4000 | 1.41 |         1.3 |
+|   9 | Peaking |      8000 | 1.41 |        -1.4 |
+|  10 | Peaking |     16000 | 1.41 |        -5.5 |
 
 ### Graphs
 ![](./Beyerdynamic%20DT%20880.png)

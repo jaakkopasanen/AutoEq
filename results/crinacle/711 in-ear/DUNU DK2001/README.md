@@ -8,14 +8,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -4.2 dB or -6.0 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         4.3 |
 |   2 | Peaking   |       192 | 0.48 |        -4.3 |
-|   3 | Peaking   |       844 | 0.96 |         3.6 |
-|   4 | Peaking   |      2293 | 1.46 |        -7.4 |
-|   5 | Peaking   |      3258 | 0.73 |         6.1 |
-|   6 | Peaking   |      3903 | 6    |         1.8 |
-|   7 | Peaking   |      4766 | 5.84 |        -3.4 |
-|   8 | Peaking   |      5800 | 5.09 |         1.5 |
-|   9 | Peaking   |      7538 | 5.61 |        -2.4 |
-|  10 | HighShelf |     10000 | 0.7  |         5.8 |
+|   3 | Peaking   |       846 | 0.94 |         3.6 |
+|   4 | Peaking   |      2296 | 1.46 |        -7.4 |
+|   5 | Peaking   |      3270 | 0.74 |         6.1 |
+|   6 | Peaking   |      3900 | 6    |         1.8 |
+|   7 | Peaking   |      4770 | 5.84 |        -3.4 |
+|   8 | Peaking   |      5798 | 5.07 |         1.6 |
+|   9 | Peaking   |      7538 | 5.59 |        -2.4 |
+|  10 | HighShelf |     10000 | 0.7  |         5.9 |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-11.6 dB** (if available) and set gains manually with these parameters.
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-11.6 d
 |   7 | Peaking |      2000 | 1.41 |        -3.3 |
 |   8 | Peaking |      4000 | 1.41 |         4.2 |
 |   9 | Peaking |      8000 | 1.41 |         0.7 |
-|  10 | Peaking |     16000 | 1.41 |        11.6 |
+|  10 | Peaking |     16000 | 1.41 |        11.5 |
 
 ### Graphs
 ![](./DUNU%20DK2001.png)

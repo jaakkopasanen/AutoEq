@@ -8,13 +8,13 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.0 dB or -5.0 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         4.7 |
 |   2 | Peaking   |       138 | 1.17 |        -4   |
-|   3 | Peaking   |       220 | 2.02 |        -2.1 |
+|   3 | Peaking   |       220 | 2.03 |        -2.1 |
 |   4 | Peaking   |       393 | 1.82 |         5.6 |
-|   5 | Peaking   |      2902 | 2.38 |        -1   |
-|   6 | Peaking   |       922 | 1.95 |        -0.7 |
-|   7 | Peaking   |      1648 | 4.55 |         1.4 |
-|   8 | Peaking   |      4649 | 3.82 |         5.1 |
-|   9 | Peaking   |      5716 | 1.03 |        -2.4 |
+|   5 | Peaking   |      2900 | 2.38 |        -1   |
+|   6 | Peaking   |       923 | 1.94 |        -0.7 |
+|   7 | Peaking   |      1647 | 4.52 |         1.4 |
+|   8 | Peaking   |      4651 | 3.87 |         5   |
+|   9 | Peaking   |      5763 | 1.04 |        -2.4 |
 |  10 | HighShelf |     10000 | 0.7  |         1.6 |
 
 ### Fixed Band EQs
@@ -29,9 +29,9 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-5.3 dB
 |   5 | Peaking |       500 | 1.41 |         4.4 |
 |   6 | Peaking |      1000 | 1.41 |        -1.4 |
 |   7 | Peaking |      2000 | 1.41 |         0.1 |
-|   8 | Peaking |      4000 | 1.41 |         0.2 |
+|   8 | Peaking |      4000 | 1.41 |         0.3 |
 |   9 | Peaking |      8000 | 1.41 |        -1   |
-|  10 | Peaking |     16000 | 1.41 |         2.2 |
+|  10 | Peaking |     16000 | 1.41 |         2.3 |
 
 ### Graphs
 ![](./Turtle%20Beach%20Stealth%20600%20Gen%202.png)

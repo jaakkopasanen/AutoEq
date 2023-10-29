@@ -2,19 +2,19 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.9 dB or -7.1 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.9 dB or -7.0 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        -7.5 |
-|   2 | Peaking   |       206 | 0.59 |        -5.7 |
-|   3 | Peaking   |      1125 | 0.32 |         2.1 |
-|   4 | Peaking   |      4581 | 2.97 |         5.9 |
-|   5 | Peaking   |      9060 | 3.8  |         2.5 |
-|   6 | Peaking   |      1024 | 3.99 |         1.3 |
-|   7 | Peaking   |      1387 | 3.13 |        -1.2 |
-|   8 | Peaking   |      5490 | 6    |         2.6 |
-|   9 | Peaking   |      6370 | 6    |        -4.3 |
+|   1 | LowShelf  |       105 | 0.7  |        -7.6 |
+|   2 | Peaking   |       197 | 0.63 |        -5.4 |
+|   3 | Peaking   |      1328 | 0.4  |         2   |
+|   4 | Peaking   |      4582 | 2.88 |         6.1 |
+|   5 | Peaking   |      9061 | 3.7  |         2.4 |
+|   6 | Peaking   |      1026 | 3.78 |         1.5 |
+|   7 | Peaking   |      1388 | 3.22 |        -1.4 |
+|   8 | Peaking   |      5530 | 5.99 |         2.7 |
+|   9 | Peaking   |      6353 | 6    |        -4.6 |
 |  10 | HighShelf |     10000 | 0.7  |        -0.1 |
 
 ### Fixed Band EQs
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-5.4 dB
 |   7 | Peaking |      2000 | 1.41 |         0.4 |
 |   8 | Peaking |      4000 | 1.41 |         5   |
 |   9 | Peaking |      8000 | 1.41 |         0.8 |
-|  10 | Peaking |     16000 | 1.41 |         0   |
+|  10 | Peaking |     16000 | 1.41 |         0.1 |
 
 ### Graphs
 ![](./Sony%20WI-SP600N.png)

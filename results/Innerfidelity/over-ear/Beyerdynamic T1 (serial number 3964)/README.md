@@ -7,15 +7,15 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.4 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         7.4 |
-|   2 | Peaking   |       101 | 0.29 |        -3.1 |
-|   3 | Peaking   |      1251 | 0.29 |         1.9 |
-|   4 | Peaking   |      5075 | 3.16 |         4.9 |
-|   5 | Peaking   |      6265 | 1.57 |        -6.3 |
-|   6 | Peaking   |      1648 | 3.86 |         1.1 |
-|   7 | Peaking   |      2721 | 3.87 |        -2.1 |
-|   8 | Peaking   |      3373 | 4.83 |         2   |
-|   9 | Peaking   |      7149 | 6    |         2   |
-|  10 | HighShelf |     10000 | 0.7  |        -2.4 |
+|   2 | Peaking   |       102 | 0.29 |        -3.2 |
+|   3 | Peaking   |      1327 | 0.26 |         1.9 |
+|   4 | Peaking   |      5076 | 3.3  |         5   |
+|   5 | Peaking   |      6258 | 1.5  |        -6.5 |
+|   6 | Peaking   |      1661 | 3.86 |         1.1 |
+|   7 | Peaking   |      2714 | 3.84 |        -2.2 |
+|   8 | Peaking   |      3375 | 4.82 |         2   |
+|   9 | Peaking   |      7152 | 6    |         2   |
+|  10 | HighShelf |     10000 | 0.7  |        -2.3 |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-7.1 dB** (if available) and set gains manually with these parameters.
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.1 dB
 |   7 | Peaking |      2000 | 1.41 |         1.3 |
 |   8 | Peaking |      4000 | 1.41 |         1.5 |
 |   9 | Peaking |      8000 | 1.41 |        -4.1 |
-|  10 | Peaking |     16000 | 1.41 |        -2.7 |
+|  10 | Peaking |     16000 | 1.41 |        -2.8 |
 
 ### Graphs
 ![](./Beyerdynamic%20T1%20(serial%20number%203964).png)

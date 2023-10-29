@@ -7,8 +7,8 @@ You can use filters 1-5 or 1-10. Apply preamp of -3.6 dB or -4.1 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         1.8 |
-|   2 | Peaking   |        70 | 0.41 |        -5.3 |
-|   3 | Peaking   |       267 | 2.8  |         4.8 |
+|   2 | Peaking   |        69 | 0.41 |        -5.3 |
+|   3 | Peaking   |       267 | 2.81 |         4.8 |
 |   4 | Peaking   |       406 | 0.78 |        -1.7 |
 |   5 | Peaking   |      1875 | 2.64 |         3.7 |
 |   6 | Peaking   |      3230 | 3.37 |        -2.4 |
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-5.4 dB
 |   7 | Peaking |      2000 | 1.41 |         2.9 |
 |   8 | Peaking |      4000 | 1.41 |        -1.7 |
 |   9 | Peaking |      8000 | 1.41 |         2.3 |
-|  10 | Peaking |     16000 | 1.41 |         5.3 |
+|  10 | Peaking |     16000 | 1.41 |         5.2 |
 
 ### Graphs
 ![](./Nocs%20NS700.png)

@@ -7,31 +7,31 @@ You can use filters 1-5 or 1-10. Apply preamp of -5.6 dB or -6.5 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         5.5 |
-|   2 | Peaking   |       883 | 0.59 |         2.2 |
-|   3 | Peaking   |      2229 | 2.99 |        -6.3 |
-|   4 | Peaking   |      5595 | 4.65 |        -5.1 |
-|   5 | Peaking   |      9440 | 1.86 |        -4.1 |
-|   6 | Peaking   |        41 | 2.65 |         1.4 |
-|   7 | Peaking   |        99 | 0.93 |        -1.3 |
-|   8 | Peaking   |       426 | 1.88 |         0.5 |
-|   9 | Peaking   |      3600 | 6    |         1.5 |
-|  10 | HighShelf |     10000 | 0.7  |        -0.3 |
+|   2 | Peaking   |       885 | 0.59 |         2.2 |
+|   3 | Peaking   |      2229 | 2.97 |        -6.3 |
+|   4 | Peaking   |      5596 | 4.61 |        -5.2 |
+|   5 | Peaking   |      9495 | 1.79 |        -4.1 |
+|   6 | Peaking   |        41 | 2.67 |         1.4 |
+|   7 | Peaking   |        99 | 0.92 |        -1.3 |
+|   8 | Peaking   |       427 | 1.9  |         0.5 |
+|   9 | Peaking   |      3596 | 6    |         1.4 |
+|  10 | HighShelf |     10000 | 0.7  |        -0.2 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.6 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         6.8 |
-|   2 | Peaking |        62 | 1.41 |         3.3 |
-|   3 | Peaking |       125 | 1.41 |         0.3 |
+|   2 | Peaking |        62 | 1.41 |         3.4 |
+|   3 | Peaking |       125 | 1.41 |         0.2 |
 |   4 | Peaking |       250 | 1.41 |        -0.5 |
 |   5 | Peaking |       500 | 1.41 |         1.6 |
 |   6 | Peaking |      1000 | 1.41 |         3.1 |
-|   7 | Peaking |      2000 | 1.41 |        -3.6 |
-|   8 | Peaking |      4000 | 1.41 |        -0.4 |
-|   9 | Peaking |      8000 | 1.41 |        -3.8 |
-|  10 | Peaking |     16000 | 1.41 |        -2.1 |
+|   7 | Peaking |      2000 | 1.41 |        -3.5 |
+|   8 | Peaking |      4000 | 1.41 |        -0.6 |
+|   9 | Peaking |      8000 | 1.41 |        -3.7 |
+|  10 | Peaking |     16000 | 1.41 |        -2.3 |
 
 ### Graphs
 ![](./Grado%20SR225e.png)

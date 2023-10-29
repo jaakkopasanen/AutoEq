@@ -12,7 +12,8 @@ from autoeq.constants import DEFAULT_MAX_GAIN, DEFAULT_TREBLE_F_LOWER, DEFAULT_T
     DEFAULT_TREBLE_GAIN_K, DEFAULT_FS, DEFAULT_BIT_DEPTH, DEFAULT_PHASE, DEFAULT_F_RES, DEFAULT_BASS_BOOST_GAIN, \
     DEFAULT_BASS_BOOST_FC, DEFAULT_BASS_BOOST_Q, DEFAULT_SMOOTHING_WINDOW_SIZE, \
     DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, PEQ_CONFIGS, DEFAULT_TREBLE_BOOST_GAIN, DEFAULT_TREBLE_BOOST_Q, \
-    DEFAULT_TREBLE_BOOST_FC, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE, DEFAULT_MAX_SLOPE
+    DEFAULT_TREBLE_BOOST_FC, DEFAULT_PREAMP, DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE, DEFAULT_MAX_SLOPE, \
+    DEFAULT_TILT
 from autoeq.frequency_response import FrequencyResponse
 
 
@@ -23,7 +24,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
                      bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
                      bass_boost_q=DEFAULT_BASS_BOOST_Q, treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
                      treble_boost_fc=DEFAULT_TREBLE_BOOST_FC, treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
-                     tilt=None, sound_signature=None,
+                     tilt=DEFAULT_TILT, sound_signature=None,
                      sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
                      max_gain=DEFAULT_MAX_GAIN, max_slope=DEFAULT_MAX_SLOPE,
                      window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
@@ -48,7 +49,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
     if target:
         # Creates FrequencyResponse for target data
         target_path = os.path.abspath(target)
-        target = FrequencyResponse.read_from_csv(target_path)
+        target = FrequencyResponse.read_csv(target_path)
         target.interpolate()
         target.center()
 
@@ -62,7 +63,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
         raise ValueError('Invalid bit depth. Accepted values are 16, 24 and 32.')
 
     if sound_signature is not None:
-        sound_signature = FrequencyResponse.read_from_csv(sound_signature)
+        sound_signature = FrequencyResponse.read_csv(sound_signature)
         if len(sound_signature.error) > 0:
             # Error data present, replace raw data with it
             sound_signature.raw = sound_signature.error
@@ -130,37 +131,30 @@ def process_file_wrapper(params):
     return process_file(*params)
 
 
-def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q,
-                 treble_boost_fc, treble_boost_gain, treble_boost_q, bit_depth,
-                 target, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
-                 fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size, parametric_eq, phase,
-                 sound_signature, sound_signature_smoothing_window_size, standardize_input, ten_band_eq, tilt,
-                 treble_f_lower, treble_f_upper, treble_gain_k, preamp):
+def process_file(
+        input_file_path, output_file_path, bass_boost_fc, bass_boost_gain, bass_boost_q,
+        treble_boost_fc, treble_boost_gain, treble_boost_q,
+        bit_depth, target, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
+        fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size,
+        parametric_eq, phase, sound_signature, sound_signature_smoothing_window_size,
+        standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp):
     # The method assumes fs is iterable, ensure it really is
     try:
         fs[0]
     except TypeError:
         fs = [fs]
-
-    # Read data from input file
-    fr = FrequencyResponse.read_from_csv(input_file_path)
-
-    # Copy relative path to output directory
+    fr = FrequencyResponse.read_csv(input_file_path)
     output_dir_path, _ = os.path.split(output_file_path)
     os.makedirs(output_dir_path, exist_ok=True)
-
-    if standardize_input:
-        # Overwrite input data in standard sampling and zero bias
+    if standardize_input:  # Overwrite input data in standard sampling and zero bias
         fr.interpolate()
         fr.center()
-        fr.write_to_csv(input_file_path)
-
+        fr.write_csv(input_file_path)
     if ten_band_eq:
         # Ten band eq is a shortcut for setting Fc and Q values to standard 10-band equalizer filters parameters
         fixed_band_eq = True
         fixed_band_eq_config = PEQ_CONFIGS['10_BAND_GRAPHIC_EQ']
 
-    # Process and equalize
     fr.process(
         target=target,
         min_mean_error=True,
@@ -213,11 +207,11 @@ def process_file(input_file_path, output_file_path, bass_boost_fc, bass_boost_ga
                 sf.write(
                     output_file_path.replace('.csv', f' linear phase {_fs}Hz.wav'), linear_phase_ir, _fs, bit_depth)
 
-    fr.write_to_csv(output_file_path)
+    fr.write_csv(output_file_path)
 
-    fr.plot_graph(
-        show=False,
-        close=True,
+    fr.plot(
+        show_fig=False,
+        close_fig=True,
         file_path=output_file_path.replace('.csv', '.png'),
     )
 

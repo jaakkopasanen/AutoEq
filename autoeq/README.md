@@ -66,13 +66,14 @@ batch_processing(
 
 The main functionalities of AutoEq are in `frequency_response` which implements `FrequencyResponse` class. Parametric
 equalizer optimization and frequency response computations are implemented in `peq`.
+
 ```python
 from autoeq.frequency_response import FrequencyResponse
 from autoeq.constants import PEQ_CONFIGS
 
-harman_target = FrequencyResponse.read_from_csv('path/to/Harman over-ear 2018.csv')
+harman_target = FrequencyResponse.read_csv('path/to/Harman over-ear 2018.csv')
 
-fr = FrequencyResponse.read_from_csv('path/to/measurement.csv')
+fr = FrequencyResponse.read_csv('path/to/measurement.csv')
 fr.interpolate()  # Creates standard logarithmic sampling when no argument is passed
 fr.center()  # Centers the frequency response around 0 dB
 fr.compensate(harman_target)  # Creates target and error data for the FR

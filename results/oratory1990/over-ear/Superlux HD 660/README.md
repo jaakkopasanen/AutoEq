@@ -2,19 +2,19 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.1 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.2 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         8.3 |
-|   2 | Peaking   |        52 | 0.8  |        -9.2 |
-|   3 | Peaking   |        91 | 1.37 |         3.8 |
-|   4 | Peaking   |      3718 | 2.72 |         7.1 |
-|   5 | Peaking   |      7056 | 1.11 |        -6.7 |
-|   6 | Peaking   |       542 | 4.28 |         2.6 |
+|   1 | LowShelf  |       105 | 0.7  |         8.4 |
+|   2 | Peaking   |        52 | 0.78 |        -9.1 |
+|   3 | Peaking   |        93 | 1.42 |         3.9 |
+|   4 | Peaking   |      3723 | 2.7  |         7.1 |
+|   5 | Peaking   |      7028 | 1.11 |        -6.8 |
+|   6 | Peaking   |       542 | 4.27 |         2.6 |
 |   7 | Peaking   |      2001 | 3.64 |        -2.1 |
-|   8 | Peaking   |      6588 | 6    |        -1.6 |
-|   9 | Peaking   |      7696 | 4.01 |         2.1 |
+|   8 | Peaking   |      6603 | 6    |        -1.5 |
+|   9 | Peaking   |      7675 | 4.05 |         2.1 |
 |  10 | HighShelf |     10000 | 0.7  |        -2.6 |
 
 ### Fixed Band EQs
@@ -25,8 +25,8 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.2 dB
 |   1 | Peaking |        31 | 1.41 |         4.1 |
 |   2 | Peaking |        62 | 1.41 |        -0.7 |
 |   3 | Peaking |       125 | 1.41 |         3.4 |
-|   4 | Peaking |       250 | 1.41 |        -1.7 |
-|   5 | Peaking |       500 | 1.41 |         1.7 |
+|   4 | Peaking |       250 | 1.41 |        -1.8 |
+|   5 | Peaking |       500 | 1.41 |         1.8 |
 |   6 | Peaking |      1000 | 1.41 |         0.1 |
 |   7 | Peaking |      2000 | 1.41 |        -1.9 |
 |   8 | Peaking |      4000 | 1.41 |         4.3 |

@@ -8,12 +8,12 @@ You can use filters 1-5 or 1-10. Apply preamp of -2.6 dB or -2.6 dB, respectivel
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         1.8 |
 |   2 | Peaking   |       163 | 0.83 |        -2.3 |
-|   3 | Peaking   |       777 | 0.75 |         2.9 |
+|   3 | Peaking   |       778 | 0.75 |         2.9 |
 |   4 | Peaking   |      2069 | 0.91 |        -3.4 |
 |   5 | Peaking   |      3680 | 1.52 |         3.7 |
 |   6 | Peaking   |        37 | 2.44 |        -0.3 |
-|   7 | Peaking   |        64 | 2.12 |         0.2 |
-|   8 | Peaking   |      6107 | 5.61 |         1.6 |
+|   7 | Peaking   |        65 | 2.12 |         0.2 |
+|   8 | Peaking   |      6108 | 5.6  |         1.6 |
 |   9 | Peaking   |      7236 | 6    |        -0.8 |
 |  10 | HighShelf |     10000 | 0.7  |        -3.7 |
 
@@ -31,7 +31,7 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-2.6 dB
 |   7 | Peaking |      2000 | 1.41 |        -3   |
 |   8 | Peaking |      4000 | 1.41 |         3.1 |
 |   9 | Peaking |      8000 | 1.41 |        -0.4 |
-|  10 | Peaking |     16000 | 1.41 |        -7.5 |
+|  10 | Peaking |     16000 | 1.41 |        -7.4 |
 
 ### Graphs
 ![](./Shuoer%20S12.png)

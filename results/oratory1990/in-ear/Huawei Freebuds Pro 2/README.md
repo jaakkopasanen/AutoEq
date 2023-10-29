@@ -29,9 +29,9 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-4.0 dB
 |   5 | Peaking |       500 | 1.41 |         0.8 |
 |   6 | Peaking |      1000 | 1.41 |        -2   |
 |   7 | Peaking |      2000 | 1.41 |        -0.9 |
-|   8 | Peaking |      4000 | 1.41 |        -1   |
-|   9 | Peaking |      8000 | 1.41 |         2.1 |
-|  10 | Peaking |     16000 | 1.41 |        -8   |
+|   8 | Peaking |      4000 | 1.41 |        -0.9 |
+|   9 | Peaking |      8000 | 1.41 |         2   |
+|  10 | Peaking |     16000 | 1.41 |        -7.9 |
 
 ### Graphs
 ![](./Huawei%20Freebuds%20Pro%202.png)

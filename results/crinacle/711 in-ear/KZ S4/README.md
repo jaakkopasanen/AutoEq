@@ -11,14 +11,14 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.8 dB, respectivel
 |   3 | Peaking   |       853 | 1.23 |         5.1 |
 |   4 | Peaking   |      5266 | 2.29 |        -9.6 |
 |   5 | Peaking   |      9277 | 2.01 |         7   |
-|   6 | Peaking   |        64 | 2.58 |         1.6 |
-|   7 | Peaking   |      1964 | 2.71 |         1.4 |
-|   8 | Peaking   |      2872 | 3.57 |        -4.8 |
-|   9 | Peaking   |      4023 | 4.17 |         2.5 |
+|   6 | Peaking   |        64 | 2.48 |         1.6 |
+|   7 | Peaking   |      1953 | 2.71 |         1.4 |
+|   8 | Peaking   |      2874 | 3.57 |        -4.8 |
+|   9 | Peaking   |      4021 | 4.15 |         2.5 |
 |  10 | HighShelf |     10000 | 0.7  |         1.5 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.4 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
@@ -28,10 +28,10 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-7.4 dB
 |   4 | Peaking |       250 | 1.41 |        -1.9 |
 |   5 | Peaking |       500 | 1.41 |         2.2 |
 |   6 | Peaking |      1000 | 1.41 |         4.2 |
-|   7 | Peaking |      2000 | 1.41 |         0.6 |
+|   7 | Peaking |      2000 | 1.41 |         0.7 |
 |   8 | Peaking |      4000 | 1.41 |        -6.1 |
-|   9 | Peaking |      8000 | 1.41 |         1.5 |
-|  10 | Peaking |     16000 | 1.41 |         7.3 |
+|   9 | Peaking |      8000 | 1.41 |         1.6 |
+|  10 | Peaking |     16000 | 1.41 |         7.2 |
 
 ### Graphs
 ![](./KZ%20S4.png)
