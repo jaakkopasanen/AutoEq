@@ -252,12 +252,21 @@ def write_hesuvi_zip(paths):
 def write_ranking_table(paths):
     print('Creating ranking index...')
     grouped_by_name = group_by(paths, 'name')
+    for name, group_paths in grouped_by_name.items():
+        grouped_by_name[name] = [path for path in group_paths if (
+                path.source_name == 'oratory1990' or
+                (path.source_name == 'crinacle' and (
+                        path.rig == 'GRAS 43AG-7' or path.rig == '711'
+                ))
+        )]
     grouped_by_name = sort_each_group_by(grouped_by_name, 'priority')
 
     over_ears = []
     in_ears = []
 
     for name, group_paths in tqdm(grouped_by_name.items()):
+        if not group_paths:  # No eligible measurements for this headphone
+            continue
         path = group_paths[0]
         if path.form == 'over-ear' and (
             (path.source_name == 'crinacle' and path.rig == 'GRAS 43AG-7')
