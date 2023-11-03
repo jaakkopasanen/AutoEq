@@ -22,7 +22,7 @@ headphone.com measurements (which are not the same as what the company produces 
 *Sennheiser HD 800 equalization results plotted*
 
 ### Updates
-**2022-10-29** AutoEq version 4.0.0. Improved and unified naming conventions across the project. Cleaned up obsolete
+**2023-10-29** AutoEq version 4.0.0. Improved and unified naming conventions across the project. Cleaned up obsolete
 files and reorganized directory structure. Completely reworked database management tools.
 
 **2022-05-14** Web application. Reorganized measurements and results.
