@@ -32,7 +32,7 @@ class CrinacleCrawler(CrinacleCrawlerBase):
 
     def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
         super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
-        self.book_maps = self.parse_books()
+        self.book_maps = None
 
     @property
     def measurements_path(self):
@@ -98,6 +98,7 @@ class CrinacleCrawler(CrinacleCrawlerBase):
         return item
 
     def crawl(self):
+        self.book_maps = self.parse_books()
         self.name_index = self.read_name_index()
         self.crawl_index = NameIndex()
         for dir_path in self.measurements_path.joinpath('raw_data').glob('*'):

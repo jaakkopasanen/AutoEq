@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 import numpy as np
 import json
+import requests
 from autoeq.frequency_response import FrequencyResponse
 from dbtools.crinacle_crawler_base import CrinacleCrawlerBase
 ROOT_PATH = Path(__file__).parent.parent
@@ -11,6 +12,18 @@ if str(ROOT_PATH) not in sys.path:
     sys.path.insert(1, str(ROOT_PATH))
 from dbtools.name_index import NameIndex, NameItem
 from dbtools.constants import MEASUREMENTS_PATH
+
+
+class SquigCrawlerManager:
+    def __init__(self):
+        sites = requests.get('https://squig.link/squigsites.json', headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0'
+        }).json()
+        self._crawlers = [SquigCrawler(username=site['username'], name=site['name'], dbs=site['dbs']) for site in sites]
+
+    @property
+    def crawlers(self):
+        return iter(self._crawlers)
 
 
 class SquigCrawler(CrinacleCrawlerBase):
@@ -27,7 +40,7 @@ class SquigCrawler(CrinacleCrawlerBase):
         self.name = name
         self.dbs = dbs
         super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
-        self.book_maps = self.parse_books()
+        self.book_maps = None
 
     @property
     def measurements_path(self):
@@ -55,7 +68,8 @@ class SquigCrawler(CrinacleCrawlerBase):
                 self.measurements_path.joinpath('phone_books', f'{db["type"]}.json'), headers={
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0'
                 })
-            book_maps[db['type']] = self.parse_book(json.loads(raw.decode('utf-8')))
+            form = 'in-ear' if db['type'] == 'IEMs' else 'over-ear'
+            book_maps[form] = self.parse_book(json.loads(raw.decode('utf-8')))
         return book_maps
 
     def read_name_index(self):
@@ -71,6 +85,7 @@ class SquigCrawler(CrinacleCrawlerBase):
         return '/'.join(item.url.split('/')[:-1] + [self.normalize_file_name(item.url.split('/')[-1])])
 
     def crawl(self):
+        self.book_maps = self.parse_books()
         self.name_index = self.read_name_index()
         self.crawl_index = NameIndex()
         for db in self.dbs:
@@ -80,13 +95,13 @@ class SquigCrawler(CrinacleCrawlerBase):
             # Iterate table rows from 4th to second to last. The first three are headers and the last is footer.
             for row in document.find_all('tr')[3:-1]:
                 anchor = row.find('a')
-                self.crawl_index.add(
-                    NameItem(
-                        source_name=anchor.text,
+                item = NameItem(
                         form='in-ear' if db['type'] == 'IEMs' else 'over-ear',
                         url=f'{self.db_url(db)}/{anchor["href"]}',
                         rig=db['rig'] if 'rig' in db and db['rig'] else None  # TODO
-                    ))
+                    )
+                self.resolve(item)
+                self.crawl_index.add(item)
         return self.crawl_index
 
     def raw_path(self, item):
@@ -102,7 +117,6 @@ class SquigCrawler(CrinacleCrawlerBase):
 
     def guess_name(self, item):
         """Gets intermediate name with false name."""
-        print(item.url)
         self.download(item.url, self.raw_path(item), headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0'
         })

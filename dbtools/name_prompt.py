@@ -99,7 +99,7 @@ class NamePrompt:
 
     @property
     def name(self):
-        return self.guessed_name or self.item.url.split('/')[-1]
+        return self.guessed_name or urllib.parse.unquote(self.item.url.split('/')[-1])
 
     def handle_search(self, btn):
         quoted = urllib.parse.quote_plus(self.name)
