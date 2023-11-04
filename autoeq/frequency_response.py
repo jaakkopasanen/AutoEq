@@ -404,7 +404,7 @@ class FrequencyResponse:
             self, bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
             bass_boost_q=DEFAULT_BASS_BOOST_Q, treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
             treble_boost_fc=DEFAULT_TREBLE_BOOST_FC, treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
-            tilt=None, fs=DEFAULT_FS):
+            tilt=DEFAULT_TILT, fs=DEFAULT_FS):
         """Creates target curve with bass boost as described by harman target response.
 
         Args:
@@ -433,7 +433,7 @@ class FrequencyResponse:
             self, target, bass_boost_gain=DEFAULT_BASS_BOOST_GAIN, bass_boost_fc=DEFAULT_BASS_BOOST_FC,
             bass_boost_q=DEFAULT_BASS_BOOST_Q, treble_boost_gain=DEFAULT_TREBLE_BOOST_GAIN,
             treble_boost_fc=DEFAULT_TREBLE_BOOST_FC, treble_boost_q=DEFAULT_TREBLE_BOOST_Q,
-            tilt=None, fs=DEFAULT_FS,
+            tilt=DEFAULT_TILT, fs=DEFAULT_FS,
             sound_signature=None, sound_signature_smoothing_window_size=DEFAULT_SOUND_SIGNATURE_SMOOTHING_WINDOW_SIZE,
             min_mean_error=False):
         """Sets target and error curves."""

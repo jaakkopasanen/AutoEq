@@ -14,7 +14,7 @@ ROOT_PATH = Path(__file__).parent.parent
 if str(ROOT_PATH) not in sys.path:
     sys.path.insert(1, str(ROOT_PATH))
 from dbtools.manufacturer_index import ManufacturerIndex
-from dbtools.constants import RESULTS_PATH
+from dbtools.constants import RESULTS_PATH, TARGETS_PATH
 
 
 class ResultPath:
@@ -251,6 +251,9 @@ def write_hesuvi_zip(paths):
 
 def write_ranking_table(paths):
     print('Creating ranking index...')
+    harman_inear = FrequencyResponse.read_csv(TARGETS_PATH.joinpath('Harman in-ear 2019.csv'))
+    harman_overear = FrequencyResponse.read_csv(TARGETS_PATH.joinpath('Harman over-ear 2018.csv'))
+
     grouped_by_name = group_by(paths, 'name')
     for name, group_paths in grouped_by_name.items():
         grouped_by_name[name] = [path for path in group_paths if (
@@ -273,6 +276,7 @@ def write_ranking_table(paths):
             or path.source_name == 'oratory1990'
         ):  # Include over-ear measurements from oratory1990 and crinacle (with GRAS rig)
             fr = FrequencyResponse.read_csv(path.absolute_path.joinpath(f'{path.name}.csv'))
+            fr.compensate(harman_overear)
             score, std, slope = fr.harman_overear_preference_score()
             over_ears.append([
                 f'[{path.name}]({path.url_relative_to_root})', f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}'
@@ -282,6 +286,7 @@ def write_ranking_table(paths):
             or path.source_name == 'oratory1990'
         ):  # Include in-ear measurements from oratory1990 and crinacle (with 711 clone)
             fr = FrequencyResponse.read_csv(path.absolute_path.joinpath(f'{path.name}.csv'))
+            fr.compensate(harman_inear)
             try:
                 score, std, slope, mean = fr.harman_inear_preference_score()
             except:
