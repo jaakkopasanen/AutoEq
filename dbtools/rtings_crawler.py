@@ -18,10 +18,10 @@ from dbtools.name_index import NameIndex, NameItem
 from dbtools.crawler import Crawler
 from dbtools.constants import MEASUREMENTS_PATH
 
-RTINGS_PATH = MEASUREMENTS_PATH.joinpath('Rtings')
-
 
 class RtingsCrawler(Crawler):
+    measurements_path = MEASUREMENTS_PATH.joinpath('Rtings')
+
     def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
         if driver is None:
             opts = Options()
@@ -30,11 +30,11 @@ class RtingsCrawler(Crawler):
         super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
 
     def read_name_index(self):
-        self.name_index = NameIndex.read_tsv(RTINGS_PATH.joinpath('name_index.tsv'))
+        self.name_index = NameIndex.read_tsv(self.measurements_path.joinpath('name_index.tsv'))
         return self.name_index
 
     def write_name_index(self):
-        self.name_index.write_tsv(RTINGS_PATH.joinpath('name_index.tsv'))
+        self.name_index.write_tsv(self.measurements_path.joinpath('name_index.tsv'))
 
     def guess_name(self, item):
         name = re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', item.source_name).strip()
@@ -109,8 +109,8 @@ class RtingsCrawler(Crawler):
             return None
 
     def crawl(self):
-        if RTINGS_PATH.joinpath('crawl_graph_data_urls.json').exists():
-            with open(RTINGS_PATH.joinpath('crawl_graph_data_urls.json')) as fh:
+        if self.measurements_path.joinpath('crawl_graph_data_urls.json').exists():
+            with open(self.measurements_path.joinpath('crawl_graph_data_urls.json')) as fh:
                 graph_data_url_cache = json.load(fh)
         else:
             graph_data_url_cache = {}
@@ -128,7 +128,7 @@ class RtingsCrawler(Crawler):
                     graph_data_url_cache[cache_key] = item.url
                 self.resolve(item)
                 self.crawl_index.add(item)
-        with open(RTINGS_PATH.joinpath('crawl_graph_data_urls.json'), 'w', encoding='utf-8') as fh:
+        with open(self.measurements_path.joinpath('crawl_graph_data_urls.json'), 'w', encoding='utf-8') as fh:
             json.dump(graph_data_url_cache, fh, ensure_ascii=False, indent=4)
         return self.crawl_index
 
@@ -138,12 +138,11 @@ class RtingsCrawler(Crawler):
     def target_path(self, item):
         if item.is_ignored or item.form is None or item.name is None:
             return None
-        return RTINGS_PATH.joinpath('data', item.form, f'{item.name}.csv')
+        return self.measurements_path.joinpath('data', item.form, f'{item.name}.csv')
 
-    @staticmethod
-    def json_path(item):
+    def json_path(self, item):
         uid = item.url.split('/')[-2]
-        return RTINGS_PATH.joinpath('json', f'{uid}.json')
+        return self.measurements_path.joinpath('json', f'{uid}.json')
 
     @staticmethod
     def parse_json(json_data):
@@ -192,7 +191,7 @@ class RtingsCrawler(Crawler):
         fr.write_csv(file_path)
 
     def list_existing_files(self):
-        return list(RTINGS_PATH.joinpath('data').glob('**/*.csv'))
+        return list(self.measurements_path.joinpath('data').glob('**/*.csv'))
 
 
 class RtingsCrawlError(Exception):

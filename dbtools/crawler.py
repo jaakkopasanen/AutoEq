@@ -241,7 +241,7 @@ class Crawler(ABC):
 
     # Crawler methods
 
-    def download(self, url, file_path):
+    def download(self, url, file_path, **req_kwargs):
         """Downloads a file from a URL
 
         Args:
@@ -256,18 +256,21 @@ class Crawler(ABC):
             with open(file_path, 'rb') as fh:
                 return fh.read()
         file_path.parent.mkdir(exist_ok=True, parents=True)
-        res = requests.get(url, stream=True)
-        content = res.content
+        res = requests.get(url, **req_kwargs)
         if res.status_code < 200 or res.status_code >= 300:
-            raise InvalidResponseCodeError(f'Failed to download "{url}"')
+            raise InvalidResponseCodeError(f'Failed to download "{url}": {res.status_code}, {res.text}')
+        content = res.content
         with open(file_path, 'wb') as fh:
             fh.write(content)
         return content
 
-    def get_beautiful_soup(self, url):
-        self.driver.get(url)
-        sleep(2)  # Giving some time for Selenium to render the page
-        html = self.driver.find_element(By.TAG_NAME, 'html').get_attribute('outerHTML')
+    def get_beautiful_soup(self, url, use_selenium=True, sleep_duration=2, **req_kwargs):
+        if use_selenium:
+            self.driver.get(url)
+            sleep(sleep_duration)  # Giving some time for Selenium to render the page
+            html = self.driver.find_element(By.TAG_NAME, 'html').get_attribute('outerHTML')
+        else:
+            html = requests.get(url, **req_kwargs).text
         return BeautifulSoup(html, 'html.parser')
 
     @abstractmethod
@@ -426,4 +429,8 @@ class Crawler(ABC):
 
 
 class InvalidResponseCodeError(Exception):
+    pass
+
+
+class UnknownRigError(Exception):
     pass

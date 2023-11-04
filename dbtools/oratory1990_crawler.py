@@ -22,10 +22,10 @@ from dbtools.crawler import Crawler
 from dbtools.image_graph_parser import ImageGraphParser
 from dbtools.constants import MEASUREMENTS_PATH
 
-ORATORY1990_PATH = MEASUREMENTS_PATH.joinpath('oratory1990')
-
 
 class Oratory1990Crawler(Crawler):
+    measurements_path = MEASUREMENTS_PATH.joinpath('oratory1990')
+
     def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
         if driver is None:
             opts = Options()
@@ -34,23 +34,21 @@ class Oratory1990Crawler(Crawler):
         super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
 
     def read_name_index(self):
-        self.name_index = NameIndex.read_tsv(ORATORY1990_PATH.joinpath('name_index.tsv'))
+        self.name_index = NameIndex.read_tsv(self.measurements_path.joinpath('name_index.tsv'))
         return self.name_index
 
     def write_name_index(self):
-        self.name_index.write_tsv(ORATORY1990_PATH.joinpath('name_index.tsv'))
+        self.name_index.write_tsv(self.measurements_path.joinpath('name_index.tsv'))
 
     def guess_name(self, item):
         """Tries to guess what the name might be."""
         return item.source_name
 
-    @staticmethod
-    def image_path(item):
-        return ORATORY1990_PATH.joinpath('images', f'{make_file_name_allowed(item.source_name)}.png')
+    def image_path(self, item):
+        return self.measurements_path.joinpath('images', f'{make_file_name_allowed(item.source_name)}.png')
 
-    @staticmethod
-    def pdf_path(item):
-        return ORATORY1990_PATH.joinpath('pdf', f'{make_file_name_allowed(item.source_name)}.pdf')
+    def pdf_path(self, item):
+        return self.measurements_path.joinpath('pdf', f'{make_file_name_allowed(item.source_name)}.pdf')
 
     def parse_pdf(self, item):
         pdf_path = self.pdf_path(item)
@@ -232,7 +230,7 @@ class Oratory1990Crawler(Crawler):
         """Target file path for the item in measurements directory"""
         if item.is_ignored or item.form is None or item.name is None:
             return None
-        path = ORATORY1990_PATH.joinpath('data', item.form, f'{item.name}.csv')
+        path = self.measurements_path.joinpath('data', item.form, f'{item.name}.csv')
         if not is_file_name_allowed(item.name):
             raise ValueError(f'Target path cannot be "{path}"')
         return path
@@ -243,7 +241,7 @@ class Oratory1990Crawler(Crawler):
         file_path = self.target_path(items[0])
         if new_only and file_path.exists():
             return
-        inspection_path = ORATORY1990_PATH.joinpath('inspection')
+        inspection_path = self.measurements_path.joinpath('inspection')
         inspection_path.mkdir(exist_ok=True, parents=True)
         avg_fr = FrequencyResponse(items[0].name)
         avg_fr.raw = np.zeros(avg_fr.frequency.shape)
@@ -257,7 +255,7 @@ class Oratory1990Crawler(Crawler):
         avg_fr.write_csv(fr_path)
 
     def list_existing_files(self):
-        return list(ORATORY1990_PATH.joinpath('data').glob('**/*.csv'))
+        return list(self.measurements_path.joinpath('data').glob('**/*.csv'))
 
 
 class RedditCrawlFailed(Exception):
