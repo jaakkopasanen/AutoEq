@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import urllib
 from pathlib import Path
 import numpy as np
 import json
@@ -59,7 +60,6 @@ class SquigCrawler(CrinacleCrawlerBase):
         Returns:
             NameIndex
         """
-        self.measurements_path.joinpath('phone_books').mkdir(parents=True, exist_ok=True)
         book_maps = {}
         for db in self.dbs:
             # 4620 measurements name index
@@ -88,7 +88,7 @@ class SquigCrawler(CrinacleCrawlerBase):
                 anchor = row.find('a')
                 form = 'in-ear' if db['type'] == 'IEMs' else 'over-ear'
                 book = self.book_maps[form]
-                normalized_file_name = self.normalize_file_name(anchor['text'])
+                normalized_file_name = self.normalize_file_name(urllib.parse.unquote(anchor['href']))
                 item = NameItem(
                         url=f'{self.db_url(db)}/{anchor["href"]}',
                         source_name=book[normalized_file_name] if normalized_file_name in book else None,
@@ -100,7 +100,7 @@ class SquigCrawler(CrinacleCrawlerBase):
         return self.crawl_index
 
     def raw_data_path(self, item):
-        return self.measurements_path.joinpath('raw_data', item.form, item.url.split('/')[-1])
+        return self.measurements_path.joinpath('raw_data', item.form, urllib.parse.unquote(item.url.split('/')[-1]))
 
     def get_item_from_url(self, url):
         index_item = self.name_index.find_one(url=url)

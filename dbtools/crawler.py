@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import urllib
 from pathlib import Path
 import pandas as pd
 from rapidfuzz import fuzz
@@ -240,6 +241,9 @@ class Crawler(ABC):
         for item in crawled_items:
             if not self.is_prompt_needed(item):
                 continue
+            name = item.source_name or urllib.parse.unquote(item.url.split('/')[-1])
+            if self.manufacturers.find(name)[0] is None:
+                print(f'Cannot detect manufacturer for: {name}')
             self.prompts.append(PromptListItem(NamePrompt(item, self.prompt_callback), self.switch_prompt))
             if len(self.prompts) >= max_prompts:
                 break

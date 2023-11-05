@@ -102,12 +102,31 @@ csv10 = """* Measurement data saved by REW V5.18
 19999.498 ? 0
 """
 
+csv11 = """* Measurement data measured by REW V5.20.3
+* Source: USB-C to 3.5mm Headphone Jack Adapter, USB-C to 3.5mm Headphone Jack Adapter, 0, volume: 0.138. Timing signal peak level -19.8 dBFS, measurement signal peak level -19.3 dBFS
+* Format: 256k Log Swept Sine, 1 sweep at -12.0 dBFS using an acoustic timing reference
+* Dated: Jul 10, 2023 9:36:37 PM
+* REW Settings:
+*  C-weighting compensation: Off
+*  Target level: 75.0 dB
+* Note: Delay -0.1027 ms (-35 mm, -1.39 in) using estimated IR delay relative to Acoustic reference on USB-C to 3.5mm Headphone Jack Adapter L with no timing offset
+* Measurement: Duo L Jul 10
+* Smoothing: 1/12 octave
+* Frequency Step: 1/48 octave
+* Start Frequency: 20.000 Hz
+*
+* Freq(Hz)	SPL(dB)	Phase(degrees)
+20.000000	96.774	36.7401
+20.299999	96.813	36.0714
+20.600000	96.843	35.3904
+"""
+
 
 class TestCsv(unittest.TestCase):
     def test_regex(self):
         pattern_asserts = [
             (csv1, autoeq_pattern), (csv2, None), (csv3, None), (csv4, None), (csv5, rew_pattern), (csv6, None),
-            (csv7, None), (csv8, autoeq_pattern), (csv9, None),
+            (csv7, None), (csv8, autoeq_pattern), (csv9, None), (csv10, rew_pattern), (csv11, rew_pattern)
         ]
         for s, pattern in pattern_asserts:
             if pattern:
@@ -192,3 +211,10 @@ class TestCsv(unittest.TestCase):
         self.assertEqual([20.0, 20.25, 19998.498], d['frequency'], )
         self.assertIn('raw', d)
         self.assertEqual([68.334, 68.335, 27.402], d['raw'])
+
+    def test_parse_csv11(self):
+        d = parse_csv(csv11)
+        self.assertIn('frequency', d)
+        self.assertEqual([20.0, 20.299999, 20.600000], d['frequency'], )
+        self.assertIn('raw', d)
+        self.assertEqual([96.774, 96.813, 96.843], d['raw'])

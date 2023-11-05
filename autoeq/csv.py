@@ -12,8 +12,8 @@ header_pattern = r'frequency(?:,(?:raw|smoothed|error|error_smoothed|equalizatio
 float_pattern = r'-?\d+(?:\.\d+)?'
 autoeq_pattern = re.compile(rf'{header_pattern}(?:\n{float_pattern}(?:,{float_pattern})+)+')
 rew_float_pattern = rf'(?:{float_pattern}|\?)'
-rew_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\), SPL\(dB\), Phase\(degrees\)\n(?:{rew_float_pattern}, {rew_float_pattern}, {rew_float_pattern})+\n*')
-rew_space_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\) SPL\(dB\) Phase\(degrees\)(?:\n{rew_float_pattern} {rew_float_pattern} {rew_float_pattern})+')
+rew_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\)(?:, ?| |\t)SPL\(dB\)(?:, ?| |\t)Phase\(degrees\)\n(?:{rew_float_pattern}(?:, ?| |\t){rew_float_pattern}(?:, ?| |\t){rew_float_pattern})+\n*')
+#rew_space_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\) SPL\(dB\) Phase\(degrees\)(?:\n{rew_float_pattern} {rew_float_pattern} {rew_float_pattern})+')
 crinacle_pattern = re.compile(rf'[\s\n]?Frequency\tdB\tUnweighted(?:\n{float_pattern}\t{float_pattern})+[.\n]?')
 
 
@@ -86,12 +86,7 @@ def parse_csv(csv):
 
     if rew_pattern.match(csv) or crinacle_pattern.match(csv):
         # These two have all sort of junk in them but the first column is frequency and the second SPL, so all good
-        csv = '\n'.join([line for line in lines if numeric_start.match(line)])
-        lines = csv.split('\n')
-
-    if rew_space_pattern.match(csv):
-        csv = '\n'.join([line for line in lines if numeric_start.match(line) and '?' not in line])
-        csv = csv.replace(' ', '\t')
+        csv = '\n'.join([re.sub(r'(?:, ?| |\t)', '\t', line) for line in lines if numeric_start.match(line) and '?' not in line])
         lines = csv.split('\n')
 
     column_separator, decimal_separator = find_csv_separators(csv)
