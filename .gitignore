@@ -114,9 +114,9 @@ measurements/crinacle/Raw measurements (Patreon)/
 measurements/crinacle/phone_book*.json
 results/crinacle/*/*/*.csv
 measurements/Rtings/crawl_graph_data_urls.json
+measurements/*/raw_data/
 chromedriver*
 webapp/data/*
 !webapp/data/legal/
 !webapp/data/targets.json
 !webapp/data/targets.json
-

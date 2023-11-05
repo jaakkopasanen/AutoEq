@@ -6,6 +6,7 @@ import re
 import numpy as np
 import json
 from autoeq.frequency_response import FrequencyResponse
+from autoeq.utils import is_file_name_allowed
 from dbtools.crinacle_crawler_base import CrinacleCrawlerBase
 
 ROOT_PATH = Path(__file__).parent.parent
@@ -70,13 +71,6 @@ class CrinacleCrawler(CrinacleCrawlerBase):
             'GRAS 43AG-7': gras_map,
             'IEC60318-4 IEM Measurements (TSV txt)': iem_711_map,
         }
-
-    def read_name_index(self):
-        self.name_index = NameIndex.read_tsv(self.measurements_path.joinpath('name_index.tsv'))
-        return self.name_index
-
-    def write_name_index(self):
-        self.name_index.write_tsv(self.measurements_path.joinpath('name_index.tsv'))
 
     @staticmethod
     def get_url_from_file_path(raw_data_file_path):
@@ -145,8 +139,16 @@ class CrinacleCrawler(CrinacleCrawlerBase):
             name = re.sub(r'\s{2,}', ' ', name)
         return name
 
-    def target_group_key(self, item):  # TODO: Check this
+    def target_group_key(self, item):
         return f'{item.form}/{item.rig}/{item.name}'
+
+    def target_path(self, item):
+        if item.is_ignored or item.form is None or item.rig is None or item.name is None:
+            return None
+        path = self.measurements_path.joinpath('data', item.form, item.rig, f'{item.name}.csv')
+        if not is_file_name_allowed(item.name):
+            raise ValueError(f'Target path cannot be "{path}"')
+        return path
 
     def process_group(self, items, new_only=True):
         if items[0].is_ignored:

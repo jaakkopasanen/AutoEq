@@ -5,7 +5,6 @@ import urllib
 from abc import abstractmethod, ABC
 from pathlib import Path
 import re
-from autoeq.utils import is_file_name_allowed
 ROOT_PATH = Path(__file__).parent.parent
 if str(ROOT_PATH) not in sys.path:
     sys.path.insert(1, str(ROOT_PATH))
@@ -58,14 +57,6 @@ class CrinacleCrawlerBase(Crawler, ABC):
                             book[file_name.strip()] = f'{manufacturer_name} {model["name"]}'
         return book
 
-    @abstractmethod
-    def read_name_index(self):
-        pass
-
-    @abstractmethod
-    def write_name_index(self):
-        pass
-
     @staticmethod
     def normalize_file_name(file_name):
         file_name = urllib.parse.unquote(file_name)
@@ -99,17 +90,3 @@ class CrinacleCrawlerBase(Crawler, ABC):
                     item.rig = true_item.rig
                 return item
         return None
-
-    def target_group_key(self, item):
-        return f'{item.form}/{item.name}'
-
-    def target_path(self, item):
-        if item.is_ignored or item.form is None or item.name is None:
-            return None
-        path = self.measurements_path.joinpath('data', item.form, f'{item.name}.csv')
-        if not is_file_name_allowed(item.name):
-            raise ValueError(f'Target path cannot be "{path}"')
-        return path
-
-    def list_existing_files(self):
-        return list(self.measurements_path.joinpath('data').glob('**/*.csv'))

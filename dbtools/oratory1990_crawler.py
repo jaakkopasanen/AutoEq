@@ -24,8 +24,6 @@ from dbtools.constants import MEASUREMENTS_PATH
 
 
 class Oratory1990Crawler(Crawler):
-    measurements_path = MEASUREMENTS_PATH.joinpath('oratory1990')
-
     def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
         if driver is None:
             opts = Options()
@@ -33,16 +31,9 @@ class Oratory1990Crawler(Crawler):
             driver = webdriver.Chrome(options=opts)
         super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
 
-    def read_name_index(self):
-        self.name_index = NameIndex.read_tsv(self.measurements_path.joinpath('name_index.tsv'))
-        return self.name_index
-
-    def write_name_index(self):
-        self.name_index.write_tsv(self.measurements_path.joinpath('name_index.tsv'))
-
-    def guess_name(self, item):
-        """Tries to guess what the name might be."""
-        return item.source_name
+    @property
+    def measurements_path(self):
+        return MEASUREMENTS_PATH.joinpath('oratory1990')
 
     def image_path(self, item):
         return self.measurements_path.joinpath('images', f'{make_file_name_allowed(item.source_name)}.png')
@@ -222,19 +213,6 @@ class Oratory1990Crawler(Crawler):
         fr.center()
         return fr, _im
 
-    def target_group_key(self, item):
-        """Key for grouping measurements (NameItems) that should be averaged"""
-        return f'{item.form}/{item.name}'
-
-    def target_path(self, item):
-        """Target file path for the item in measurements directory"""
-        if item.is_ignored or item.form is None or item.name is None:
-            return None
-        path = self.measurements_path.joinpath('data', item.form, f'{item.name}.csv')
-        if not is_file_name_allowed(item.name):
-            raise ValueError(f'Target path cannot be "{path}"')
-        return path
-
     def process_group(self, items, new_only=True):
         if items[0].is_ignored:
             return
@@ -254,9 +232,6 @@ class Oratory1990Crawler(Crawler):
         fr_path = self.target_path(items[0])
         avg_fr.write_csv(fr_path)
 
-    def list_existing_files(self):
-        return list(self.measurements_path.joinpath('data').glob('**/*.csv'))
-
 
 class RedditCrawlFailed(Exception):
     pass
@@ -264,4 +239,3 @@ class RedditCrawlFailed(Exception):
 
 class GraphParseFailed(Exception):
     pass
-

@@ -15,13 +15,11 @@ ROOT_PATH = Path(__file__).parent.parent
 if str(ROOT_PATH) not in sys.path:
     sys.path.insert(1, str(ROOT_PATH))
 from dbtools.name_index import NameIndex, NameItem
-from dbtools.crawler import Crawler
+from dbtools.crawler import Crawler, ProcessingError
 from dbtools.constants import MEASUREMENTS_PATH
 
 
 class RtingsCrawler(Crawler):
-    measurements_path = MEASUREMENTS_PATH.joinpath('Rtings')
-
     def __init__(self, driver=None, delete_existing_on_prompt=True, redownload=False):
         if driver is None:
             opts = Options()
@@ -29,12 +27,9 @@ class RtingsCrawler(Crawler):
             driver = webdriver.Chrome(options=opts)
         super().__init__(driver=driver, delete_existing_on_prompt=delete_existing_on_prompt, redownload=redownload)
 
-    def read_name_index(self):
-        self.name_index = NameIndex.read_tsv(self.measurements_path.joinpath('name_index.tsv'))
-        return self.name_index
-
-    def write_name_index(self):
-        self.name_index.write_tsv(self.measurements_path.joinpath('name_index.tsv'))
+    @property
+    def measurements_path(self):
+        return MEASUREMENTS_PATH.joinpath('Rtings')
 
     def guess_name(self, item):
         name = re.sub(r'(Truly Wireless|True Wireless|Wireless)$', '', item.source_name).strip()
@@ -132,14 +127,6 @@ class RtingsCrawler(Crawler):
             json.dump(graph_data_url_cache, fh, ensure_ascii=False, indent=4)
         return self.crawl_index
 
-    def target_group_key(self, item):
-        return f'{item.form}/{item.name}'
-
-    def target_path(self, item):
-        if item.is_ignored or item.form is None or item.name is None:
-            return None
-        return self.measurements_path.joinpath('data', item.form, f'{item.name}.csv')
-
     def json_path(self, item):
         uid = item.url.split('/')[-2]
         return self.measurements_path.joinpath('json', f'{uid}.json')
@@ -164,7 +151,7 @@ class RtingsCrawler(Crawler):
                 col_ix = header.index(col_name)
                 break
         if col_ix is None:
-            raise RtingsProcessingError('Could not find any of the data columns in JSON')
+            raise ProcessingError('Could not find any of the data columns in JSON')
         fr = FrequencyResponse(name='fr', frequency=frequency, raw=data[:, col_ix], target=target)
         return fr
 
@@ -172,7 +159,7 @@ class RtingsCrawler(Crawler):
         if items[0].is_ignored:
             return
         if len(items) == 0 or len(items) > 2:
-            raise RtingsProcessingError(f'{len(items)} measurements grouped together, don\'t know what to do.')
+            raise ProcessingError(f'{len(items)} measurements grouped together, don\'t know what to do.')
         file_path = self.target_path(items[0])
         if new_only and file_path.exists():
             return
@@ -190,13 +177,3 @@ class RtingsCrawler(Crawler):
         file_path.parent.mkdir(exist_ok=True, parents=True)
         fr.write_csv(file_path)
 
-    def list_existing_files(self):
-        return list(self.measurements_path.joinpath('data').glob('**/*.csv'))
-
-
-class RtingsCrawlError(Exception):
-    pass
-
-
-class RtingsProcessingError(Exception):
-    pass

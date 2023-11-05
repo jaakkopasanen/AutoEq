@@ -61,25 +61,31 @@ class Crawler(ABC):
         self.active_list_item = None
         self.widget = widgets.HBox([self.prompt_list, self.active_list_item_container])
 
+    @property
+    @abstractmethod
+    def measurements_path(self):
+        pass
+
     # Name resolution methods
 
-    @abstractmethod
     def read_name_index(self):
         """Reads name index as Index
 
         Returns:
             NameIndex
         """
-        pass
+        path = self.measurements_path.joinpath('name_index.tsv')
+        if not path.exists():
+            return NameIndex()
+        return NameIndex.read_tsv(path)
 
-    @abstractmethod
     def write_name_index(self):
         """Writes name index to a file
 
         Returns:
             Index
         """
-        pass
+        self.name_index.write_tsv(self.measurements_path.joinpath('name_index.tsv'))
 
     def update_name_index(self, item, write=True):
         self.name_index.update(item)
@@ -284,7 +290,6 @@ class Crawler(ABC):
 
     # Processing methods
 
-    @abstractmethod
     def target_group_key(self, item):
         """Key for grouping measurements (NameItems) that should be averaged
 
@@ -294,8 +299,8 @@ class Crawler(ABC):
         Returns:
             Group key, None if necessary props are missing
         """
+        return f'{item.form}/{item.name}'
 
-    @abstractmethod
     def target_path(self, item):
         """Target file path for the item in measurements directory
 
@@ -305,6 +310,12 @@ class Crawler(ABC):
         Returns:
             Target file path, None if necessary props are missing
         """
+        if item.is_ignored or item.form is None or item.name is None:
+            return None
+        path = self.measurements_path.joinpath('data', item.form, f'{item.name}.csv')
+        if not is_file_name_allowed(item.name):
+            raise ValueError(f'Target path cannot be "{path}"')
+        return path
 
     @abstractmethod
     def process_group(self, items, new_only=True):
@@ -334,10 +345,9 @@ class Crawler(ABC):
         for items in tqdm(groups.values()):
             self.process_group(items, new_only=new_only)
 
-    @abstractmethod
     def list_existing_files(self):
         """Lists all existing measurement files"""
-        pass
+        return list(self.measurements_path.joinpath('data').glob('**/*.csv'))
 
     def prune_measurements(self, dry_run=False):
         """Removes measurement files that don't have a matching entry in the name index."""
@@ -434,4 +444,8 @@ class InvalidResponseCodeError(Exception):
 
 
 class UnknownRigError(Exception):
+    pass
+
+
+class ProcessingError(Exception):
     pass

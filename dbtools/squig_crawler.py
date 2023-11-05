@@ -65,21 +65,12 @@ class SquigCrawler(CrinacleCrawlerBase):
             # 4620 measurements name index
             raw = self.download(
                 f'{self.db_url(db)}/phone_book.json',
-                self.measurements_path.joinpath('phone_books', f'{db["type"]}.json'), headers={
+                self.measurements_path.joinpath(f'phone_book_{db["type"]}.json'), headers={
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0'
                 })
             form = 'in-ear' if db['type'] == 'IEMs' else 'over-ear'
             book_maps[form] = self.parse_book(json.loads(raw.decode('utf-8')))
         return book_maps
-
-    def read_name_index(self):
-        path = self.measurements_path.joinpath('name_index.tsv')
-        if not path.exists():
-            return NameIndex()
-        return NameIndex.read_tsv(path)
-
-    def write_name_index(self):
-        self.name_index.write_tsv(self.measurements_path.joinpath('name_index.tsv'))
 
     def source_group_key(self, item):
         return '/'.join(item.url.split('/')[:-1] + [self.normalize_file_name(item.url.split('/')[-1])])
@@ -104,7 +95,7 @@ class SquigCrawler(CrinacleCrawlerBase):
                 self.crawl_index.add(item)
         return self.crawl_index
 
-    def raw_path(self, item):
+    def raw_data_path(self, item):
         return self.measurements_path.joinpath('raw_data', item.form, item.url.split('/')[-1])
 
     def get_item_from_url(self, url):
@@ -117,9 +108,6 @@ class SquigCrawler(CrinacleCrawlerBase):
 
     def guess_name(self, item):
         """Gets intermediate name with false name."""
-        self.download(item.url, self.raw_path(item), headers={
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0'
-        })
         name = item.source_name
         if name is None:  # This checks if a known item already exists in name index
             name = self.get_item_from_url(item.url).source_name
@@ -146,8 +134,10 @@ class SquigCrawler(CrinacleCrawlerBase):
         avg_fr = FrequencyResponse(name=items[0].name)
         avg_fr.raw = np.zeros(avg_fr.frequency.shape)
         for item in items:
-            self.download(item.url, self.raw_path(item))
-            fr = FrequencyResponse.read_csv(self.raw_path(item))
+            self.download(item.url, self.raw_data_path(item), headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0'
+            })
+            fr = FrequencyResponse.read_csv(self.raw_data_path(item))
             fr.interpolate()
             fr.center()
             avg_fr.raw += fr.raw
