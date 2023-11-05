@@ -115,10 +115,9 @@ class Crawler(ABC):
             NameIndex
         """
         name_proposals = NameIndex()
-        for db in ['crinacle', 'oratory1990', 'Rtings']:
-            name_index = NameIndex.read_tsv(MEASUREMENTS_PATH.joinpath(db, 'name_index.tsv'))
+        for fp in MEASUREMENTS_PATH.glob('*/name_index.tsv'):
+            name_index = NameIndex.read_tsv(fp)
             name_proposals.concat(name_index)
-        # TODO: Name indexes for Innerfidelity and Headphone.com Legacy
 
         proposal_data = {'form': [], 'manufacturer': [], 'model': []}
         for item in name_proposals.items:
