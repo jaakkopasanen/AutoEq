@@ -85,8 +85,11 @@ class CrinacleCrawler(CrinacleCrawlerBase):
         if index_item is not None:  # Existing item in the name index, ground truth
             item = index_item.copy()
         else:
+            book = self.book_maps[raw_data_file_path.parent.name]
+            normalized_file_name = self.normalize_file_name(raw_data_file_path.name)
             item = NameItem(
                 url=url,
+                source_name=book[normalized_file_name] if normalized_file_name in book else None,
                 form=self.raw_data_form_map[raw_data_file_path.parent.name],
                 rig=self.raw_data_rig_map[raw_data_file_path.parent.name])
         return item
@@ -130,7 +133,7 @@ class CrinacleCrawler(CrinacleCrawlerBase):
             if normalized_file_name in self.book_maps[file_path.parent.name]:
                 name = self.book_maps[file_path.parent.name][normalized_file_name]
             else:
-                return normalized_file_name
+                name = normalized_file_name
         name = name.replace('(w/ ', '(')
         name = re.sub(r' pads\)', ' earpads)', name, flags=re.IGNORECASE)
         match = re.search(r' S\d+[$ ](?:\.txt)?$', name)

@@ -86,9 +86,13 @@ class SquigCrawler(CrinacleCrawlerBase):
             # Iterate table rows from 4th to second to last. The first three are headers and the last is footer.
             for row in document.find_all('tr')[3:-1]:
                 anchor = row.find('a')
+                form = 'in-ear' if db['type'] == 'IEMs' else 'over-ear'
+                book = self.book_maps[form]
+                normalized_file_name = self.normalize_file_name(anchor['text'])
                 item = NameItem(
-                        form='in-ear' if db['type'] == 'IEMs' else 'over-ear',
                         url=f'{self.db_url(db)}/{anchor["href"]}',
+                        source_name=book[normalized_file_name] if normalized_file_name in book else None,
+                        form=form,
                         rig=db['rig'] if 'rig' in db and db['rig'] else None  # TODO
                     )
                 self.resolve(item)
