@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "autoeq"
-version = "4.1.0"
+version = "4.1.1"
 authors = [
   { name="Jaakko Pasanen", email="jaakko.o.pasanen@gmail.com" },
 ]

@@ -10,6 +10,12 @@ AutoEq [Github page](https://github.com/jaakkopasanen/AutoEq) also serves as a d
 measurements, pre-computed results and has documentation about different equalizers and how the implementation works.
 
 ### Updates
+#### 4.1.1
+* Updated changelog
+
+#### 4.1.0
+* Added `gain_range` option to `optimize_fixed_band_eq()` for limiting gain of each filter to maximum distance from the equalization target
+
 #### 4.0.0
 BREAKING changes included!
 * Several `FrequencyResponse` class methods renamed and arguments renamed or dropped
