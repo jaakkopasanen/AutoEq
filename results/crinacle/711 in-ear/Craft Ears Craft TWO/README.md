@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.5 dB or -6.8 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         2.8 |
-|   2 | Peaking   |       193 | 0.56 |        -5   |
-|   3 | Peaking   |      3097 | 2.88 |         4.1 |
-|   4 | Peaking   |      5020 | 4.82 |        -3.2 |
-|   5 | Peaking   |      7729 | 0.81 |         6.5 |
-|   6 | Peaking   |       891 | 2.36 |         0.7 |
-|   7 | Peaking   |      1274 | 3.89 |        -0.8 |
-|   8 | Peaking   |      2053 | 5.32 |        -0.6 |
-|   9 | Peaking   |      8434 | 5.71 |        -2.2 |
+|   1 | LowShelf  |       105 | 0.7  |         1.3 |
+|   2 | Peaking   |       193 | 0.58 |        -5   |
+|   3 | Peaking   |      3090 | 2.84 |         4.1 |
+|   4 | Peaking   |      5016 | 4.89 |        -3.2 |
+|   5 | Peaking   |      7723 | 0.79 |         6.4 |
+|   6 | Peaking   |       412 | 1.95 |        -0.3 |
+|   7 | Peaking   |       866 | 2.36 |         0.8 |
+|   8 | Peaking   |      1301 | 3.78 |        -0.8 |
+|   9 | Peaking   |      8463 | 5.6  |        -2.2 |
 |  10 | HighShelf |     10000 | 0.7  |         4.3 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-11.3 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-11.4 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         2.8 |
-|   2 | Peaking |        62 | 1.41 |         1.3 |
-|   3 | Peaking |       125 | 1.41 |        -2.9 |
-|   4 | Peaking |       250 | 1.41 |        -4.7 |
+|   1 | Peaking |        31 | 1.41 |         1.3 |
+|   2 | Peaking |        62 | 1.41 |         0.4 |
+|   3 | Peaking |       125 | 1.41 |        -3.2 |
+|   4 | Peaking |       250 | 1.41 |        -4.6 |
 |   5 | Peaking |       500 | 1.41 |        -0.9 |
-|   6 | Peaking |      1000 | 1.41 |        -0.2 |
-|   7 | Peaking |      2000 | 1.41 |         0.7 |
-|   8 | Peaking |      4000 | 1.41 |         2.8 |
-|   9 | Peaking |      8000 | 1.41 |         5.2 |
-|  10 | Peaking |     16000 | 1.41 |        11   |
+|   6 | Peaking |      1000 | 1.41 |        -0.1 |
+|   7 | Peaking |      2000 | 1.41 |         0.8 |
+|   8 | Peaking |      4000 | 1.41 |         2.9 |
+|   9 | Peaking |      8000 | 1.41 |         5.3 |
+|  10 | Peaking |     16000 | 1.41 |        11.1 |
 
 ### Graphs
 ![](./Craft%20Ears%20Craft%20TWO.png)

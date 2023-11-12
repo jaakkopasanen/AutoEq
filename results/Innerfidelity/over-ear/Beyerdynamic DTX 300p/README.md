@@ -7,31 +7,31 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.5 dB or -6.5 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         6.4 |
-|   2 | Peaking   |       167 | 1.17 |        -1.9 |
-|   3 | Peaking   |       702 | 0.58 |        -4.4 |
-|   4 | Peaking   |      1307 | 2.22 |        -1.9 |
-|   5 | Peaking   |      3223 | 0.85 |         6.6 |
-|   6 | Peaking   |        72 | 3.9  |         1.6 |
-|   7 | Peaking   |        95 | 2.54 |        -0.8 |
-|   8 | Peaking   |      5743 | 4.49 |        -3.9 |
-|   9 | Peaking   |     10000 | 1.98 |         3.6 |
-|  10 | HighShelf |     10000 | 0.7  |         3.9 |
+|   2 | Peaking   |      1117 | 0.18 |        -4.7 |
+|   3 | Peaking   |      1261 | 1.84 |        -1.1 |
+|   4 | Peaking   |      2582 | 0.97 |         6.5 |
+|   5 | Peaking   |     10000 | 0.18 |         4.5 |
+|   6 | Peaking   |        71 | 3.17 |         1.6 |
+|   7 | Peaking   |       113 | 1.23 |        -0.7 |
+|   8 | Peaking   |      5909 | 6    |        -2.6 |
+|   9 | Peaking   |     10000 | 2.28 |         1.7 |
+|  10 | HighShelf |     10000 | 0.7  |         0.4 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-10.1 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-9.9 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         6.1 |
 |   2 | Peaking |        62 | 1.41 |         5.7 |
-|   3 | Peaking |       125 | 1.41 |        -0.9 |
-|   4 | Peaking |       250 | 1.41 |        -1.8 |
+|   3 | Peaking |       125 | 1.41 |        -0.7 |
+|   4 | Peaking |       250 | 1.41 |        -2.1 |
 |   5 | Peaking |       500 | 1.41 |        -3.1 |
-|   6 | Peaking |      1000 | 1.41 |        -4.4 |
-|   7 | Peaking |      2000 | 1.41 |         2.1 |
-|   8 | Peaking |      4000 | 1.41 |         5.5 |
-|   9 | Peaking |      8000 | 1.41 |         1.2 |
-|  10 | Peaking |     16000 | 1.41 |        10   |
+|   6 | Peaking |      1000 | 1.41 |        -4.1 |
+|   7 | Peaking |      2000 | 1.41 |         2.8 |
+|   8 | Peaking |      4000 | 1.41 |         4.2 |
+|   9 | Peaking |      8000 | 1.41 |         2.3 |
+|  10 | Peaking |     16000 | 1.41 |         9.7 |
 
 ### Graphs
 ![](./Beyerdynamic%20DTX%20300p.png)

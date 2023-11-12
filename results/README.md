@@ -6,7 +6,7 @@ headphones, these can be found in the
 Where there are measurements from multiple sources for the same headphone, only the one with the highest accuracy
 appears on this list.
 
-This list has 3664 headphone models covered, but if your headphone is missing, you can create settings for
+This list has 3667 headphone models covered, but if your headphone is missing, you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -731,6 +731,8 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Bose QuietComfort 45](./oratory1990/over-ear/Bose%20QuietComfort%2045)
 - [Bose QuietComfort Earbuds](./Rtings/in-ear/Bose%20QuietComfort%20Earbuds)
 - [Bose QuietComfort Earbuds II](./Rtings/in-ear/Bose%20QuietComfort%20Earbuds%20II)
+- [Bose QuietComfort Ultra Earbuds](./Rtings/in-ear/Bose%20QuietComfort%20Ultra%20Earbuds)
+- [Bose QuietComfort Ultra Headphones](./Rtings/over-ear/Bose%20QuietComfort%20Ultra%20Headphones)
 - [Bose QuietControl 30](./Rtings/over-ear/Bose%20QuietControl%2030)
 - [Bose SoundLink Around-Ear II](./Rtings/over-ear/Bose%20SoundLink%20Around-Ear%20II)
 - [Bose SoundLink On-Ear](./Rtings/over-ear/Bose%20SoundLink%20On-Ear)
@@ -2468,7 +2470,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Raycon E25](./crinacle/711%20in-ear/Raycon%20E25)
 - [Raycon E50](./Rtings/in-ear/Raycon%20E50)
 - [Raycon E55](./Rtings/in-ear/Raycon%20E55)
-- [Raycon The Fitness Earbuds](./Rtings/in-ear/Raycon%20The%20Fitness%20Earbuds)
+- [Raycon The Fitness Earbuds (2021 Edition)](./Rtings/in-ear/Raycon%20The%20Fitness%20Earbuds%20(2021%20Edition))
 - [Razer Barracuda](./Rtings/over-ear/Razer%20Barracuda)
 - [Razer Barracuda Pro](./Rtings/over-ear/Razer%20Barracuda%20Pro)
 - [Razer Barracuda X](./crinacle/GRAS%2043AG-7%20over-ear/Razer%20Barracuda%20X)
@@ -2543,6 +2545,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Samsung AKG EO-IG955 Type-C](./Rtings/in-ear/Samsung%20AKG%20EO-IG955%20Type-C)
 - [Samsung EO-IC500 ANC Type-C](./oratory1990/in-ear/Samsung%20EO-IC500%20ANC%20Type-C)
 - [Samsung Galaxy Buds](./oratory1990/in-ear/Samsung%20Galaxy%20Buds)
+- [Samsung Galaxy Buds FE](./Rtings/in-ear/Samsung%20Galaxy%20Buds%20FE)
 - [Samsung Galaxy Buds Live](./Rtings/earbud/Samsung%20Galaxy%20Buds%20Live)
 - [Samsung Galaxy Buds Plus](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds%20Plus)
 - [Samsung Galaxy Buds Pro](./oratory1990/in-ear/Samsung%20Galaxy%20Buds%20Pro)

@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.5 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.4 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         1.3 |
-|   2 | Peaking   |       175 | 0.78 |        -3.9 |
-|   3 | Peaking   |      3836 | 1.09 |         2.2 |
-|   4 | Peaking   |      5648 | 1.75 |         6.1 |
-|   5 | Peaking   |      6657 | 2.59 |        -2.2 |
-|   6 | Peaking   |       685 | 1.72 |         0.7 |
-|   7 | Peaking   |      1453 | 2.69 |        -2.4 |
-|   8 | Peaking   |      2282 | 3.11 |         1.5 |
-|   9 | Peaking   |      9493 | 2.28 |        -2.1 |
-|  10 | HighShelf |     10000 | 0.7  |         4.4 |
+|   1 | LowShelf  |       105 | 0.7  |        -0.1 |
+|   2 | Peaking   |       174 | 0.8  |        -3.9 |
+|   3 | Peaking   |      3797 | 1.06 |         2.2 |
+|   4 | Peaking   |      5657 | 1.73 |         6.1 |
+|   5 | Peaking   |      6643 | 2.56 |        -2.1 |
+|   6 | Peaking   |       695 | 1.88 |         0.8 |
+|   7 | Peaking   |      1444 | 2.49 |        -2.2 |
+|   8 | Peaking   |      2291 | 3.58 |         1.6 |
+|   9 | Peaking   |      9994 | 1.67 |        -2.3 |
+|  10 | HighShelf |     10000 | 0.7  |         4.9 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.4 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         1.1 |
-|   2 | Peaking |        62 | 1.41 |         1   |
-|   3 | Peaking |       125 | 1.41 |        -2.6 |
-|   4 | Peaking |       250 | 1.41 |        -3.2 |
+|   1 | Peaking |        31 | 1.41 |        -0.5 |
+|   2 | Peaking |        62 | 1.41 |         0.1 |
+|   3 | Peaking |       125 | 1.41 |        -3   |
+|   4 | Peaking |       250 | 1.41 |        -3   |
 |   5 | Peaking |       500 | 1.41 |         0.7 |
-|   6 | Peaking |      1000 | 1.41 |        -0.8 |
+|   6 | Peaking |      1000 | 1.41 |        -0.7 |
 |   7 | Peaking |      2000 | 1.41 |        -0.3 |
-|   8 | Peaking |      4000 | 1.41 |         5.2 |
+|   8 | Peaking |      4000 | 1.41 |         5.3 |
 |   9 | Peaking |      8000 | 1.41 |         1.4 |
-|  10 | Peaking |     16000 | 1.41 |         7.2 |
+|  10 | Peaking |     16000 | 1.41 |         7.3 |
 
 ### Graphs
 ![](./Shanling%20ME700.png)

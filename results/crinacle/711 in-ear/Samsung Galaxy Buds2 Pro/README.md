@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -4.3 dB or -3.5 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        -1.1 |
-|   2 | Peaking   |        65 | 1.42 |         1.7 |
-|   3 | Peaking   |       202 | 0.47 |        -1.4 |
-|   4 | Peaking   |      2248 | 3.69 |         0.9 |
-|   5 | Peaking   |      8325 | 1.96 |         4.2 |
-|   6 | Peaking   |       992 | 3.38 |         0.7 |
-|   7 | Peaking   |      1454 | 2.69 |        -0.5 |
-|   8 | Peaking   |      2453 | 2.9  |         0.6 |
-|   9 | Peaking   |      3282 | 3.86 |        -1.3 |
+|   1 | LowShelf  |       105 | 0.7  |        -2.5 |
+|   2 | Peaking   |        66 | 1.33 |         1.7 |
+|   3 | Peaking   |       151 | 0.79 |        -1.3 |
+|   4 | Peaking   |       346 | 1.19 |        -0.7 |
+|   5 | Peaking   |      8333 | 1.8  |         4.2 |
+|   6 | Peaking   |      1533 | 3.03 |        -0.4 |
+|   7 | Peaking   |      2306 | 3.25 |         1.5 |
+|   8 | Peaking   |      3309 | 3.77 |        -1.2 |
+|   9 | Peaking   |      6023 | 5.98 |         1   |
 |  10 | HighShelf |     10000 | 0.7  |        -2.9 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-4.0 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-4.1 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |        -1.2 |
-|   2 | Peaking |        62 | 1.41 |         0.6 |
-|   3 | Peaking |       125 | 1.41 |        -1.2 |
-|   4 | Peaking |       250 | 1.41 |        -1.2 |
-|   5 | Peaking |       500 | 1.41 |        -0.6 |
-|   6 | Peaking |      1000 | 1.41 |        -0   |
+|   1 | Peaking |        31 | 1.41 |        -2.8 |
+|   2 | Peaking |        62 | 1.41 |        -0.3 |
+|   3 | Peaking |       125 | 1.41 |        -1.6 |
+|   4 | Peaking |       250 | 1.41 |        -0.9 |
+|   5 | Peaking |       500 | 1.41 |        -0.7 |
+|   6 | Peaking |      1000 | 1.41 |         0.1 |
 |   7 | Peaking |      2000 | 1.41 |         0.7 |
 |   8 | Peaking |      4000 | 1.41 |        -1.1 |
-|   9 | Peaking |      8000 | 1.41 |         4.4 |
-|  10 | Peaking |     16000 | 1.41 |        -6.6 |
+|   9 | Peaking |      8000 | 1.41 |         4.5 |
+|  10 | Peaking |     16000 | 1.41 |        -6.4 |
 
 ### Graphs
 ![](./Samsung%20Galaxy%20Buds2%20Pro.png)

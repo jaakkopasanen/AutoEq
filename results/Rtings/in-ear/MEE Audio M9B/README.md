@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -5.6 dB or -5.5 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -5.1 dB or -5.1 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        -9.2 |
-|   2 | Peaking   |       204 | 1.56 |        -2.5 |
-|   3 | Peaking   |       691 | 0.66 |         2.9 |
-|   4 | Peaking   |      1997 | 2.35 |         4.8 |
-|   5 | Peaking   |      6578 | 4.02 |       -10.6 |
-|   6 | Peaking   |        80 | 1.12 |         1.6 |
-|   7 | Peaking   |       137 | 2.16 |        -1.2 |
-|   8 | Peaking   |      3456 | 4.04 |        -3.5 |
-|   9 | Peaking   |      4949 | 2.9  |         1.9 |
-|  10 | HighShelf |     10000 | 0.7  |        -3.5 |
+|   1 | LowShelf  |       105 | 0.7  |       -10.2 |
+|   2 | Peaking   |       593 | 1.54 |         4   |
+|   3 | Peaking   |      2349 | 0.81 |         6.2 |
+|   4 | Peaking   |      3312 | 3.27 |        -7.1 |
+|   5 | Peaking   |      7013 | 1.56 |        -9.5 |
+|   6 | Peaking   |        75 | 1.23 |         1.8 |
+|   7 | Peaking   |       167 | 1.55 |        -1.8 |
+|   8 | Peaking   |      5043 | 4.29 |         2   |
+|   9 | Peaking   |      7750 | 5.77 |         2.8 |
+|  10 | HighShelf |     10000 | 0.7  |        -7.6 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-5.3 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-5.4 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |       -11.4 |
-|   2 | Peaking |        62 | 1.41 |        -4   |
-|   3 | Peaking |       125 | 1.41 |        -3.1 |
+|   1 | Peaking |        31 | 1.41 |       -12   |
+|   2 | Peaking |        62 | 1.41 |        -4.7 |
+|   3 | Peaking |       125 | 1.41 |        -2.7 |
 |   4 | Peaking |       250 | 1.41 |        -0.9 |
-|   5 | Peaking |       500 | 1.41 |         2.8 |
-|   6 | Peaking |      1000 | 1.41 |         1.2 |
-|   7 | Peaking |      2000 | 1.41 |         5.5 |
-|   8 | Peaking |      4000 | 1.41 |        -2.2 |
-|   9 | Peaking |      8000 | 1.41 |        -5.1 |
-|  10 | Peaking |     16000 | 1.41 |        -3.8 |
+|   5 | Peaking |       500 | 1.41 |         4.2 |
+|   6 | Peaking |      1000 | 1.41 |         1.1 |
+|   7 | Peaking |      2000 | 1.41 |         5.6 |
+|   8 | Peaking |      4000 | 1.41 |        -2   |
+|   9 | Peaking |      8000 | 1.41 |        -7.6 |
+|  10 | Peaking |     16000 | 1.41 |       -12   |
 
 ### Graphs
 ![](./MEE%20Audio%20M9B.png)

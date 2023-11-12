@@ -57,6 +57,9 @@ def write_entries_and_measurements():
     for hp_path in tqdm(list(MEASUREMENTS_PATH.glob('*/data/**/*.csv'))):
         rel_path = hp_path.relative_to(MEASUREMENTS_PATH)
         source = rel_path.parts[0]
+        if source not in name_indexes:
+            # Skipping preliminary
+            continue
         form = rel_path.parts[2]
         name = rel_path.parts[-1].replace('.csv', '')
         if len(rel_path.parts) == 5:

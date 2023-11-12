@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.8 dB or -6.4 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         4.7 |
-|   2 | Peaking   |       293 | 0.4  |        -2   |
-|   3 | Peaking   |      1136 | 0.72 |        -6   |
-|   4 | Peaking   |      1606 | 2.03 |        -5.4 |
-|   5 | Peaking   |      2994 | 0.64 |         8.8 |
-|   6 | Peaking   |      3607 | 5.32 |        -1.4 |
-|   7 | Peaking   |      6053 | 2.41 |         3.2 |
-|   8 | Peaking   |      6692 | 6    |        -3.7 |
-|   9 | Peaking   |      8870 | 3.17 |        -1.8 |
-|  10 | HighShelf |     10000 | 0.7  |        -0.9 |
+|   1 | LowShelf  |       105 | 0.7  |         5.8 |
+|   2 | Peaking   |       302 | 0.38 |        -2.1 |
+|   3 | Peaking   |      1090 | 0.86 |        -6.7 |
+|   4 | Peaking   |      1641 | 2.11 |        -5.2 |
+|   5 | Peaking   |      3039 | 0.64 |         8.5 |
+|   6 | Peaking   |      3614 | 6    |        -1.4 |
+|   7 | Peaking   |      4930 | 4.31 |         0.6 |
+|   8 | Peaking   |      5897 | 4.09 |         2.6 |
+|   9 | Peaking   |      9518 | 2.22 |        -2.8 |
+|  10 | HighShelf |     10000 | 0.7  |        -1.5 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-8.5 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-8.4 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         4.9 |
-|   2 | Peaking |        62 | 1.41 |         3.4 |
+|   1 | Peaking |        31 | 1.41 |         5.9 |
+|   2 | Peaking |        62 | 1.41 |         4.3 |
 |   3 | Peaking |       125 | 1.41 |         0.1 |
-|   4 | Peaking |       250 | 1.41 |        -2.1 |
-|   5 | Peaking |       500 | 1.41 |        -2.2 |
-|   6 | Peaking |      1000 | 1.41 |        -6.5 |
-|   7 | Peaking |      2000 | 1.41 |        -0.8 |
-|   8 | Peaking |      4000 | 1.41 |         8.8 |
-|   9 | Peaking |      8000 | 1.41 |        -0.1 |
-|  10 | Peaking |     16000 | 1.41 |        -0.7 |
+|   4 | Peaking |       250 | 1.41 |        -2.3 |
+|   5 | Peaking |       500 | 1.41 |        -2   |
+|   6 | Peaking |      1000 | 1.41 |        -7.4 |
+|   7 | Peaking |      2000 | 1.41 |        -0.5 |
+|   8 | Peaking |      4000 | 1.41 |         8.7 |
+|   9 | Peaking |      8000 | 1.41 |         0.3 |
+|  10 | Peaking |     16000 | 1.41 |        -4.6 |
 
 ### Graphs
 ![](./Audeze%20iSINE%2020.png)

@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -4.0 dB or -3.9 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -2.1 dB or -2.5 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        -3.6 |
-|   2 | Peaking   |       136 | 2.81 |        -2.2 |
-|   3 | Peaking   |       359 | 0.2  |         0.7 |
-|   4 | Peaking   |      6489 | 2.91 |        -3.4 |
-|   5 | Peaking   |      8986 | 2.02 |         4.4 |
-|   6 | Peaking   |      1320 | 2.66 |        -0.8 |
-|   7 | Peaking   |      1921 | 2.84 |         0.6 |
-|   8 | Peaking   |      2104 | 3.97 |         1.4 |
-|   9 | Peaking   |      2739 | 3.14 |        -1.4 |
-|  10 | HighShelf |     10000 | 0.7  |        -0.4 |
+|   1 | LowShelf  |       105 | 0.7  |        -4.5 |
+|   2 | Peaking   |       252 | 2.61 |         1.3 |
+|   3 | Peaking   |       890 | 0.62 |         2.5 |
+|   4 | Peaking   |      1169 | 2.63 |        -2.9 |
+|   5 | Peaking   |      6273 | 2.7  |        -3.4 |
+|   6 | Peaking   |       135 | 3    |        -1   |
+|   7 | Peaking   |      2105 | 3.92 |         2.1 |
+|   8 | Peaking   |      2918 | 2.61 |        -1.9 |
+|   9 | Peaking   |      9476 | 2.42 |         3.4 |
+|  10 | HighShelf |     10000 | 0.7  |        -5.2 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-1.6 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-2.1 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |        -3.7 |
-|   2 | Peaking |        62 | 1.41 |        -2   |
+|   1 | Peaking |        31 | 1.41 |        -5.2 |
+|   2 | Peaking |        62 | 1.41 |        -2.4 |
 |   3 | Peaking |       125 | 1.41 |        -2.1 |
-|   4 | Peaking |       250 | 1.41 |         1.1 |
-|   5 | Peaking |       500 | 1.41 |         0.5 |
+|   4 | Peaking |       250 | 1.41 |         1.7 |
+|   5 | Peaking |       500 | 1.41 |         1.7 |
 |   6 | Peaking |      1000 | 1.41 |         0.1 |
-|   7 | Peaking |      2000 | 1.41 |         0.9 |
-|   8 | Peaking |      4000 | 1.41 |        -1.2 |
-|   9 | Peaking |      8000 | 1.41 |         1.6 |
-|  10 | Peaking |     16000 | 1.41 |        -0.3 |
+|   7 | Peaking |      2000 | 1.41 |         1.4 |
+|   8 | Peaking |      4000 | 1.41 |        -1.3 |
+|   9 | Peaking |      8000 | 1.41 |        -0.9 |
+|  10 | Peaking |     16000 | 1.41 |        -8.3 |
 
 ### Graphs
 ![](./JBL%20Endurance%20Peak.png)

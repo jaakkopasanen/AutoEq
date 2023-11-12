@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -2.8 dB or -2.8 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        -3.8 |
-|   2 | Peaking   |        79 | 1.22 |         2.5 |
-|   3 | Peaking   |       424 | 1.23 |         2.8 |
-|   4 | Peaking   |      1665 | 1.6  |        -3.2 |
-|   5 | Peaking   |      4876 | 3.96 |        -2.9 |
-|   6 | Peaking   |       106 | 4.96 |         1.2 |
-|   7 | Peaking   |       128 | 4.83 |        -1.4 |
-|   8 | Peaking   |      2269 | 3.67 |        -0.9 |
-|   9 | Peaking   |      3009 | 3.96 |         1.6 |
-|  10 | HighShelf |     10000 | 0.7  |         1.1 |
+|   1 | LowShelf  |       105 | 0.7  |        -1.5 |
+|   2 | Peaking   |        70 | 1.07 |         3.1 |
+|   3 | Peaking   |       449 | 1.33 |         2.7 |
+|   4 | Peaking   |      1904 | 1.33 |        -2.4 |
+|   5 | Peaking   |      4933 | 3.24 |        -3.9 |
+|   6 | Peaking   |       106 | 4.07 |         1.8 |
+|   7 | Peaking   |       126 | 3.93 |        -1.1 |
+|   8 | Peaking   |       131 | 3.16 |        -0.6 |
+|   9 | Peaking   |       205 | 2.9  |        -0.4 |
+|  10 | HighShelf |     10000 | 0.7  |         2.3 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-3.2 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-5.8 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |        -4.4 |
-|   2 | Peaking |        62 | 1.41 |        -0.4 |
-|   3 | Peaking |       125 | 1.41 |        -0.3 |
-|   4 | Peaking |       250 | 1.41 |         0.6 |
-|   5 | Peaking |       500 | 1.41 |         2.9 |
-|   6 | Peaking |      1000 | 1.41 |        -1   |
-|   7 | Peaking |      2000 | 1.41 |        -2.4 |
-|   8 | Peaking |      4000 | 1.41 |        -0.5 |
-|   9 | Peaking |      8000 | 1.41 |        -0.7 |
-|  10 | Peaking |     16000 | 1.41 |         3.1 |
+|   1 | Peaking |        31 | 1.41 |        -1.7 |
+|   2 | Peaking |        62 | 1.41 |         2.2 |
+|   3 | Peaking |       125 | 1.41 |         0   |
+|   4 | Peaking |       250 | 1.41 |         0.2 |
+|   5 | Peaking |       500 | 1.41 |         2.8 |
+|   6 | Peaking |      1000 | 1.41 |        -0.4 |
+|   7 | Peaking |      2000 | 1.41 |        -1.9 |
+|   8 | Peaking |      4000 | 1.41 |        -2.1 |
+|   9 | Peaking |      8000 | 1.41 |        -0.6 |
+|  10 | Peaking |     16000 | 1.41 |         5.7 |
 
 ### Graphs
 ![](./Moondrop%20LAN.png)

@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.8 dB or -6.8 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.7 dB or -6.8 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         1.1 |
-|   2 | Peaking   |       297 | 0.26 |        -7.9 |
-|   3 | Peaking   |       677 | 0.56 |         7.3 |
-|   4 | Peaking   |      4815 | 0.69 |        11.4 |
-|   5 | Peaking   |      6988 | 1.12 |       -11.4 |
-|   6 | Peaking   |      1527 | 3.21 |        -0.8 |
-|   7 | Peaking   |      2335 | 2.37 |         0.6 |
-|   8 | Peaking   |      6807 | 6    |        -1.6 |
-|   9 | Peaking   |      7614 | 5.92 |         2.1 |
-|  10 | HighShelf |     10000 | 0.7  |        -1.2 |
+|   1 | LowShelf  |       105 | 0.7  |        -0.8 |
+|   2 | Peaking   |       182 | 0.51 |        -6.6 |
+|   3 | Peaking   |      1320 | 0.24 |         2.8 |
+|   4 | Peaking   |      4804 | 0.95 |         8.8 |
+|   5 | Peaking   |      6899 | 1.21 |        -9.1 |
+|   6 | Peaking   |       388 | 1.51 |        -0.3 |
+|   7 | Peaking   |       874 | 2.18 |         1.1 |
+|   8 | Peaking   |      1478 | 2.64 |        -1.4 |
+|   9 | Peaking   |      2580 | 2.41 |         0.7 |
+|  10 | HighShelf |     10000 | 0.7  |        -0.9 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.4 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         0.2 |
-|   2 | Peaking |        62 | 1.41 |        -1.1 |
-|   3 | Peaking |       125 | 1.41 |        -4.6 |
-|   4 | Peaking |       250 | 1.41 |        -4.8 |
+|   1 | Peaking |        31 | 1.41 |        -1.3 |
+|   2 | Peaking |        62 | 1.41 |        -1.9 |
+|   3 | Peaking |       125 | 1.41 |        -5   |
+|   4 | Peaking |       250 | 1.41 |        -4.6 |
 |   5 | Peaking |       500 | 1.41 |        -0.1 |
-|   6 | Peaking |      1000 | 1.41 |         2.2 |
-|   7 | Peaking |      2000 | 1.41 |         2.1 |
-|   8 | Peaking |      4000 | 1.41 |         7.5 |
+|   6 | Peaking |      1000 | 1.41 |         2.3 |
+|   7 | Peaking |      2000 | 1.41 |         2.2 |
+|   8 | Peaking |      4000 | 1.41 |         7.4 |
 |   9 | Peaking |      8000 | 1.41 |        -4.3 |
-|  10 | Peaking |     16000 | 1.41 |        -2.1 |
+|  10 | Peaking |     16000 | 1.41 |        -1.9 |
 
 ### Graphs
 ![](./Sennheiser%20Momentum%20In-Ear.png)
