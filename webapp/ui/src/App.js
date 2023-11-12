@@ -48,6 +48,7 @@ const App = (props) => {
 
   const [measurements, setMeasurements, measurementsRef] = useStateRef(null);  // { label, source, form, rig }
   const [selectedMeasurement, setSelectedMeasurement, selectedMeasurementRef] = useStateRef(null);  // { label, source, form, rig }
+  const [showOnlyRecommended, setShowOnlyRecommended] = useState(true);
 
   const [graphData, setGraphData] = useState(null);  // Data for the frequency response graph
 
@@ -125,7 +126,7 @@ const App = (props) => {
   };
 
   const setUp = async () => {
-    const presetMeasurements = await ApiClient.fetchMeasurements()
+    const presetMeasurements = await ApiClient.fetchMeasurements();
     presetMeasurements.splice(0, 0, {
       label: 'Flat',
       form: 'unknown',
@@ -145,7 +146,6 @@ const App = (props) => {
     setTargets(targets);
     setPreferredTargets(preferredTargets);
     apiClientRef.current = new ApiClient();
-
     document.addEventListener('click', () => {
       setUpAudioContext();
     }, { once: true });
@@ -322,7 +322,8 @@ const App = (props) => {
 
   const captureSoundProfile = () => {
     return {
-      selectedTarget, preferredTargets, soundSignature, soundSignatureSmoothingWindowSize,
+      selectedTarget, preferredTargets, soundSignature,
+      soundSignatureSmoothingWindowSize: soundSignatureSmoothingWindowSizeRef.current,
       bassBoostGain: bassBoostGainRef.current, bassBoostFc: bassBoostFcRef.current, bassBoostQ: bassBoostQRef.current,
       trebleBoostGain: trebleBoostGainRef.current, trebleBoostFc: trebleBoostFcRef.current, trebleBoostQ: trebleBoostQRef.current,
       tilt: tiltRef.current, maxGain: maxGainRef.current, maxSlope: maxSlopeRef.current,
@@ -334,7 +335,7 @@ const App = (props) => {
   const onSoundProfileCreated = () => {
     const newSoundProfile = captureSoundProfile();
     const newSoundProfiles = cloneDeep(soundProfilesRef.current);
-    newSoundProfile.name = newSoundProfiles.length;
+    newSoundProfile.name = newSoundProfiles.length ? Math.max(...newSoundProfiles.map(p => parseInt(p.name))) + 1 : 1;
     newSoundProfiles.push(newSoundProfile);
     window.localStorage.setItem('soundProfiles', JSON.stringify(newSoundProfiles));
     setSoundProfiles(newSoundProfiles);
@@ -489,6 +490,8 @@ const App = (props) => {
 
       <Box sx={{padding: [1, 1.5]}}>
         <TopBar
+          showOnlyRecommended={showOnlyRecommended}
+          onShowOnlyRecommendedChanged={(val) => setShowOnlyRecommended(val)}
           onShowInfoClicked={() => setShowInfo(!showInfo)}
           selectedMeasurement={selectedMeasurement}
           isMeasurementSelected={!!selectedMeasurement}
@@ -535,7 +538,7 @@ const App = (props) => {
                 onTargetCreated={onTargetCreated}
 
                 soundSignature={soundSignature}
-                soundSignatureSmoothingWindowSize={soundSignatureSmoothingWindowSize}
+                soundSignatureSmoothingWindowSize={soundSignatureSmoothingWindowSizeRef.current}
 
                 graphData={graphData}
                 smoothed={smoothed}

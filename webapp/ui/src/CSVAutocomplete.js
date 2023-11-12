@@ -2,7 +2,10 @@ import React, {createContext, forwardRef, useCallback, useContext} from 'react';
 import {
   Autocomplete,
   Box,
+  Button,
+  ButtonGroup,
   FormControl,
+  Grid,
   IconButton,
   InputLabel,
   MenuItem,
@@ -13,6 +16,7 @@ import {
 import FileOpenOutlinedIcon from '@mui/icons-material/FileOpenOutlined';
 import {useDropzone} from 'react-dropzone';
 import find from 'lodash/find';
+import isEqual from 'lodash/isEqual';
 import {parseCSV} from './utils';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { FixedSizeList } from 'react-window';
@@ -58,7 +62,7 @@ const InnerElementType = forwardRef(({ style, ...other }, ref) => (
 ));
 
 const ListboxComponent = forwardRef(function ListboxComponent(props, ref) {
-  const { children, ...other } = props;
+  const { children, showOnlyUniqueLabels, onShowOnlyUniqueLabelsChanged, ...other } = props;
   const itemData = [];
   children.forEach(
     (child) => {
@@ -87,9 +91,30 @@ const ListboxComponent = forwardRef(function ListboxComponent(props, ref) {
           overscanCount={5}
           itemCount={itemCount}
           style={{paddingLeft: 0 }}
+          scrollToIndex={30}
         >
           {renderRow}
         </FixedSizeList>
+        <Grid container direction='row' alignItems='center' justifyContent='center' sx={{p: 1, borderTop: '1px solid #ddd'}}>
+          <Grid item>
+            <ButtonGroup variant='text'>
+              <Button
+                size='small' sx={{height: 22, textTransform: 'none', color: !showOnlyUniqueLabels ? 'primary' : 'gray'}}
+                onMouseDown={event => event.preventDefault()}
+                onClick={() => onShowOnlyUniqueLabelsChanged(false)}
+              >
+                all
+              </Button>
+              <Button
+                size='small' sx={{height: 22, textTransform: 'none', color: showOnlyUniqueLabels ? 'primary' : 'gray'}}
+                onMouseDown={event => event.preventDefault()}
+                onClick={() => onShowOnlyUniqueLabelsChanged(true)}
+              >
+                uniques
+              </Button>
+            </ButtonGroup>
+          </Grid>
+        </Grid>
       </OuterElementContext.Provider>
     </div>
   );
@@ -119,6 +144,16 @@ const CSVAutocomplete = (props) => {
     });
   }, [props])
   const {getRootProps, getInputProps, open, isDragAccept} = useDropzone({onDrop, noClick: true, noKeyboard: true})
+
+  let options = props.options;
+  if (props.showOnlyUniqueLabels) {
+    options = [];
+    for (const option of props.options) {
+      if (options.length === 0 || options[options.length - 1].label !== option.label) {
+        options.push(option);
+      }
+    }
+  }
 
   return (
     <Box sx={{position: 'relative'}} { ...getRootProps() }>
@@ -160,11 +195,15 @@ const CSVAutocomplete = (props) => {
             />
           }
           ListboxComponent={ListboxComponent}
+          ListboxProps={{
+            showOnlyUniqueLabels: props.showOnlyUniqueLabels,
+            onShowOnlyUniqueLabelsChanged: props.onShowOnlyUniqueLabelsChanged
+          }}
           PopperComponent={PopperComponent}
           renderOption={(liProps, option) => [liProps, option, props.renderOption || null]}
           value={props.value}
-          options={props.options}
-          isOptionEqualToValue={(option, value) => option.label === value.label}
+          options={options}
+          isOptionEqualToValue={(option, value) => option.label === value.label && isEqual(option, value)}
           onChange={(e, val) => { props.onChange(val); }}
           { ...props.autocompleteProps }
         />
@@ -186,7 +225,7 @@ const CSVAutocomplete = (props) => {
             />
           }
           value={props.value}
-          options={props.options}
+          options={options}
           isOptionEqualToValue={(option, value) => option.label === value.label}
           onChange={(e, val) => { props.onChange(val); }}
           { ...props.autocompleteProps }

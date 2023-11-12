@@ -57,6 +57,8 @@ const TopBar = (props) => {
         <CSVAutocomplete
           value={props.selectedMeasurement}
           options={props.measurements || []}
+          showOnlyUniqueLabels={props.showOnlyRecommended}
+          onShowOnlyUniqueLabelsChanged={props.onShowOnlyRecommendedChanged}
           onChange={props.onMeasurementSelected}
           autocompleteProps={{
             size: 'large',

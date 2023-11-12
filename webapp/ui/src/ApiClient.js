@@ -6,7 +6,9 @@ class ApiClient {
     const data = await fetch('/entries').then(res => res.json());
     const measurements = [];
     for (const [headphone, items] of Object.entries(data)) {
-      measurements.push({label: headphone, ...items[0]});
+      for (const item of items) {
+        measurements.push({label: headphone, ...item});
+      }
     }
     return measurements;
   }

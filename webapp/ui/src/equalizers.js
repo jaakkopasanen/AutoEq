@@ -230,7 +230,7 @@ export default [
     type: 'fixedBand',
     config: 'SPOTIFY',
     uiConfig: { showFsControl: false },
-    instructions: 'Go to Settings and adjust the Equalizer sliders to match the gain values'
+    instructions: 'Use Spotify\'s built-in equalizer only as the last resort! Go to Settings and adjust the Equalizer sliders to match the gain values'
   },
   {
     label: 'USB Audio Player PRO', type: 'parametric', config: 'USB_AUDIO_PLAYER_PRO',
