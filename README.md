@@ -136,6 +136,8 @@ Install `build` and `twine`
 python -m pip install build twine
 ```
 
+Add updates to `autoeq/README.md` before building!
+
 Build PyPi package on Windows
 ```shell
 copy /y README.md README.md.bak && copy /y autoeq\README.md README.md && python -m build && copy /y README.md.bak README.md && del README.md.bak
@@ -150,6 +152,8 @@ publish
 ```shell
 python -m twine upload dist/autoeq-<VERSION>*
 ```
+
+Remember to add Git tag!
 
 ## Contact
 [Issues](https://github.com/jaakkopasanen/AutoEq/issues) are the way to go if you are experiencing problems or have
