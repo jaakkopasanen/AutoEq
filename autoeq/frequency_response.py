@@ -109,7 +109,7 @@ class FrequencyResponse:
             csv_str = fh.read().strip()
         return cls(name=name, **parse_csv(csv_str))
 
-    def write_csv(self, file_path=None):
+    def write_csv(self, file_path):
         """Writes data to files as CSV."""
         with open(file_path, 'w') as fh:
             fh.write(create_csv(self.to_dict()) + '\n')
@@ -171,8 +171,24 @@ class FrequencyResponse:
         self.parametric_eq = fr.raw
         return peqs
 
-    def optimize_fixed_band_eq(self, configs, fs, max_time=None, preamp=DEFAULT_PREAMP):
+    def optimize_fixed_band_eq(self, configs, fs, max_time=None, preamp=DEFAULT_PREAMP, gain_range=None):
         """Creates optimal set of fixed eq filters to match the equalization data"""
+        if type(configs) != list:
+            configs = [configs]
+        if gain_range is not None:
+            fc_fr = self.copy()
+            fcs = np.array([[filt['fc'] for filt in config['filters']] for config in configs]).flatten()
+            fc_fr.interpolate(f=fcs)
+            for config in configs:
+                for filt in config['filters']:
+                    print(
+                        filt['fc'],
+                        fc_fr.frequency[np.argmin(np.abs(fc_fr.frequency - filt['fc']))],
+                        fc_fr.equalization[np.argmin(np.abs(fc_fr.frequency - filt['fc']))]
+                    )
+                    target = fc_fr.equalization[np.argmin(np.abs(fc_fr.frequency - filt['fc']))]
+                    filt['min_gain'] = target - gain_range
+                    filt['max_gain'] = target + gain_range
         peqs = self._optimize_peq_filters(configs, fs, max_time=max_time, preamp=preamp)
         fr = FrequencyResponse(
             name='PEQ', frequency=self.generate_frequencies(f_step=DEFAULT_BIQUAD_OPTIMIZATION_F_STEP),
