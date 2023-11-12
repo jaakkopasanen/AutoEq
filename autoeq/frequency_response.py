@@ -181,11 +181,6 @@ class FrequencyResponse:
             fc_fr.interpolate(f=fcs)
             for config in configs:
                 for filt in config['filters']:
-                    print(
-                        filt['fc'],
-                        fc_fr.frequency[np.argmin(np.abs(fc_fr.frequency - filt['fc']))],
-                        fc_fr.equalization[np.argmin(np.abs(fc_fr.frequency - filt['fc']))]
-                    )
                     target = fc_fr.equalization[np.argmin(np.abs(fc_fr.frequency - filt['fc']))]
                     filt['min_gain'] = target - gain_range
                     filt['max_gain'] = target + gain_range
