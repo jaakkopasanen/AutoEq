@@ -12,7 +12,8 @@ header_pattern = r'frequency(?:,(?:raw|smoothed|error|error_smoothed|equalizatio
 float_pattern = r'-?\d+(?:\.\d+)?'
 autoeq_pattern = re.compile(rf'{header_pattern}(?:\n{float_pattern}(?:,{float_pattern})+)+')
 rew_float_pattern = rf'(?:{float_pattern}|\?)'
-rew_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\)(?:, ?| |\t)SPL\(dB\)(?:, ?| |\t)Phase\(degrees\)\n(?:{rew_float_pattern}(?:, ?| |\t){rew_float_pattern}(?:, ?| |\t){rew_float_pattern})+\n*')
+rew_separator = rf'(?:, |; | |\t)'
+rew_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\){rew_separator}\(dB\){rew_separator}Phase\(degrees\)\n(?:{rew_float_pattern}{rew_separator}{rew_float_pattern}{rew_separator}{rew_float_pattern})+\n*')
 #rew_space_pattern = re.compile(rf'^(?:\*.*\n)*\* Freq\(Hz\) SPL\(dB\) Phase\(degrees\)(?:\n{rew_float_pattern} {rew_float_pattern} {rew_float_pattern})+')
 crinacle_pattern = re.compile(rf'[\s\n]?Frequency\tdB\tUnweighted(?:\n{float_pattern}\t{float_pattern})+[.\n]?')
 

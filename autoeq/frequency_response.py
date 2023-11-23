@@ -473,7 +473,7 @@ class FrequencyResponse:
 
     def _smoothen(
             self, data, window_size=DEFAULT_SMOOTHING_WINDOW_SIZE,
-            treble_window_size=None, treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,
+            treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE, treble_f_lower=DEFAULT_TREBLE_SMOOTHING_F_LOWER,
             treble_f_upper=DEFAULT_TREBLE_SMOOTHING_F_UPPER):
         """Smooths data.
 
