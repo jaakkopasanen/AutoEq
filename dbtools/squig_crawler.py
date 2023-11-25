@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import re
 import sys
 import urllib
 from pathlib import Path
@@ -25,6 +25,13 @@ class SquigCrawlerManager:
     @property
     def crawlers(self):
         return iter(self._crawlers)
+
+    def run(self, username):
+        for crawler in self.crawlers:
+            if crawler.username == username:
+                crawler.run()
+                return crawler
+        raise ValueError(f'Unknown squig.link site "{username}"')
 
 
 class SquigCrawler(CrinacleCrawlerBase):
@@ -88,7 +95,10 @@ class SquigCrawler(CrinacleCrawlerBase):
                 anchor = row.find('a')
                 form = 'in-ear' if db['type'] == 'IEMs' else 'over-ear'
                 book = self.book_maps[form]
-                normalized_file_name = self.normalize_file_name(urllib.parse.unquote(anchor['href']))
+                file_name = anchor['href']
+                if re.search(r'Target.txt$', file_name) or file_name == 'phone_book.json':  # Skip targets and book
+                    continue
+                normalized_file_name = self.normalize_file_name(urllib.parse.unquote(file_name))
                 item = NameItem(
                         url=f'{self.db_url(db)}/{anchor["href"]}',
                         source_name=book[normalized_file_name] if normalized_file_name in book else None,

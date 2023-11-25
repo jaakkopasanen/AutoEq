@@ -233,6 +233,7 @@ class Crawler(ABC):
         return item.name is None or item.form is None
 
     def create_prompts(self, max_prompts=100):
+        self.manufacturers = ManufacturerIndex()
         if self.name_proposals is None:
             self.init_name_proposals()
         self.prompts = []
@@ -418,7 +419,7 @@ class Crawler(ABC):
             # then rest of the optional properties
             self.active_list_item.name_prompt.guessed_name = self.guess_name(self.active_list_item.name_prompt.item)
             self.active_list_item.name_prompt.name_proposals = self.get_name_proposals(
-                self.active_list_item.name_prompt.guessed_name, n=4, threshold=10)
+                self.active_list_item.name_prompt.guessed_name, n=5, threshold=10)
             self.active_list_item.name_prompt.similar_names = [
                     item.name for item in self.get_name_proposals(
                         self.active_list_item.name_prompt.guessed_name, n=6, normalize_digits=True,
