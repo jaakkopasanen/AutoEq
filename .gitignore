@@ -103,7 +103,9 @@ ENV/
 .idea
 inspect/
 my_data/
+my-data/
 my_results/
+my-results/
 **/images
 **/inspection
 **/pdf
