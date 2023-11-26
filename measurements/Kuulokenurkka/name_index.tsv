@@ -1,0 +1,325 @@
+url	source_name	name	form	rig
+https://kuulokenurkka.squig.link/data/K361%20**%20L.txt	AKG K361	AKG K361	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/K361%20**%20R.txt	AKG K361	AKG K361	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/K712%20Pro%20L.txt	AKG K712 Pro	AKG K712 PRO	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/K712%20Pro%20R.txt	AKG K712 Pro	AKG K712 PRO	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/AB-1266%20Phi%20(Air%20Gap)%20L.txt	Abyss AB-1266 Phi	Abyss AB-1266 Phi	ignore	
+https://kuulokenurkka.squig.link/data/AB-1266%20Phi%20(Air%20Gap)%20R.txt	Abyss AB-1266 Phi	Abyss AB-1266 Phi	ignore	
+https://kuulokenurkka.squig.link/data/AB-1266%20Phi%20(Big%20Air%20Gap)%20L.txt	Abyss AB-1266 Phi	Abyss AB-1266 Phi	ignore	
+https://kuulokenurkka.squig.link/data/AB-1266%20Phi%20(Big%20Air%20Gap)%20R.txt	Abyss AB-1266 Phi	Abyss AB-1266 Phi	ignore	
+https://kuulokenurkka.squig.link/data/AB-1266%20Phi%20(Good%20Seal)%20L.txt	Abyss AB-1266 Phi	Abyss AB-1266 Phi	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/AB-1266%20Phi%20(Good%20Seal)%20R.txt	Abyss AB-1266 Phi	Abyss AB-1266 Phi	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/AB1266%20Phi%20TC%20(Good%20Seal)%20**%20L.txt	Abyss AB1266 Phi TC	Abyss AB1-266 Phi TC	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/AB1266%20Phi%20TC%20(Good%20Seal)%20**%20R.txt	Abyss AB1266 Phi TC	Abyss AB1-266 Phi TC	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/AB1266%20Phi%20TC%20(Big%20Air%20Gap)%20**%20L.txt	Abyss AB1266 Phi TC	Abyss AB1266 Phi TC	ignore	
+https://kuulokenurkka.squig.link/data/AB1266%20Phi%20TC%20(Big%20Air%20Gap)%20**%20R.txt	Abyss AB1266 Phi TC	Abyss AB1266 Phi TC	ignore	
+https://kuulokenurkka.squig.link/data/AB1266%20Phi%20TC%20(Small%20Air%20Gap)%20**%20L.txt	Abyss AB1266 Phi TC	Abyss AB1266 Phi TC	ignore	
+https://kuulokenurkka.squig.link/data/AB1266%20Phi%20TC%20(Small%20Air%20Gap)%20**%20R.txt	Abyss AB1266 Phi TC	Abyss AB1266 Phi TC	ignore	
+https://kuulokenurkka.squig.link/data/Life%20Q30%20(ANC%20ON)%20L.txt	Anker Soundcore Life Q30	Anker Soundcore Life Q30	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Life%20Q30%20(ANC%20ON)%20R.txt	Anker Soundcore Life Q30	Anker Soundcore Life Q30	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Space%20Q45%20(ANC%20OFF)%20**%20L.txt	Anker Soundcore Space Q45	Anker Soundcore Space Q45	ignore	
+https://kuulokenurkka.squig.link/data/Space%20Q45%20(ANC%20OFF)%20**%20R.txt	Anker Soundcore Space Q45	Anker Soundcore Space Q45	ignore	
+https://kuulokenurkka.squig.link/data/Space%20Q45%20(ANC%20ON%20&%20BassUP%20OFF)%20**%20L.txt	Anker Soundcore Space Q45	Anker Soundcore Space Q45	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Space%20Q45%20(ANC%20ON%20&%20BassUP%20OFF)%20**%20R.txt	Anker Soundcore Space Q45	Anker Soundcore Space Q45	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/LCD-R%20**%20L.txt	Audeze LCD-R	Audeze LCD-R	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/LCD-R%20**%20R.txt	Audeze LCD-R	Audeze LCD-R	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/LCD-R%20(Bass%20Boost%20ON)%20**%20L.txt	Audeze LCD-R	Audeze LCD-R (bass boost)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/LCD-R%20(Bass%20Boost%20ON)%20**%20R.txt	Audeze LCD-R	Audeze LCD-R (bass boost)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/ATH-HL7BT%20**%20L.txt	Audio-Technica ATH-HL7BT	Audio-Technica ATH-HL7BT	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/ATH-HL7BT%20**%20R.txt	Audio-Technica ATH-HL7BT	Audio-Technica ATH-HL7BT	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/ATH-M50X%20**%20L.txt	Audio-Technica ATH-M50X	Audio-Technica ATH-M50x	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/ATH-M50X%20**%20R.txt	Audio-Technica ATH-M50X	Audio-Technica ATH-M50x	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/ATH-R70x%20L.txt	Audio-Technica ATH-R70x	Audio-Technica ATH-R70x	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/ATH-R70x%20R.txt	Audio-Technica ATH-R70x	Audio-Technica ATH-R70x	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/DT%20700%20Pro%20X%20L.txt	Beyerdynamic DT 700 Pro X	Beyerdynamic DT 700 Pro X	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/DT%20700%20Pro%20X%20R.txt	Beyerdynamic DT 700 Pro X	Beyerdynamic DT 700 Pro X	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/DT%20770%20Pro%20(32%20ohm%20-%20Beyer%20Pleather%20Pads)%20**%20L.txt	Beyerdynamic DT 770 Pro (32 ohm LE)	Beyerdynamic DT 770 Pro (32 ohm Limited Edition, pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/DT%20770%20Pro%20(32%20ohm%20-%20Beyer%20Pleather%20Pads)%20**%20R.txt	Beyerdynamic DT 770 Pro (32 ohm LE)	Beyerdynamic DT 770 Pro (32 ohm Limited Edition, pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/DT%20770%20Pro%20(80%20ohm)%20**%20L.txt	Beyerdynamic DT 770 Pro (80 ohm)	Beyerdynamic DT 770 Pro (80 Ohm)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/DT%20770%20Pro%20(80%20ohm)%20**%20R.txt	Beyerdynamic DT 770 Pro (80 ohm)	Beyerdynamic DT 770 Pro (80 Ohm)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/DT%20900%20Pro%20X%20L.txt	Beyerdynamic DT 900 Pro X	Beyerdynamic DT 900 Pro X	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/DT%20900%20Pro%20X%20R.txt	Beyerdynamic DT 900 Pro X	Beyerdynamic DT 900 Pro X	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/QuietComfort%20SE%20(EQ%20-2%20+3%20-3)%20**%20L.txt	Bose QuietComfort SE	Bose QuietComfort SE	ignore	
+https://kuulokenurkka.squig.link/data/QuietComfort%20SE%20(EQ%20-2%20+3%20-3)%20**%20R.txt	Bose QuietComfort SE	Bose QuietComfort SE	ignore	
+https://kuulokenurkka.squig.link/data/QuietComfort%20SE%20(ANC%20ON)%20**%20L.txt	Bose QuietComfort SE	Bose QuietComfort SE (ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/QuietComfort%20SE%20(ANC%20ON)%20**%20R.txt	Bose QuietComfort SE	Bose QuietComfort SE (ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/QuietComfort%20SE%20(Wired%20&%20Power%20OFF)%20**%20L.txt	Bose QuietComfort SE	Bose QuietComfort SE (passive)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/QuietComfort%20SE%20(Wired%20&%20Power%20OFF)%20**%20R.txt	Bose QuietComfort SE	Bose QuietComfort SE (passive)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/PX7%20S2e%20(EQ%20-1,5%20-2,5)%20**%20L.txt	Bowers & Wilkins PX7 S2e	Bowers & Wilkins PX7 S2e	ignore	
+https://kuulokenurkka.squig.link/data/PX7%20S2e%20(EQ%20-1,5%20-2,5)%20**%20R.txt	Bowers & Wilkins PX7 S2e	Bowers & Wilkins PX7 S2e	ignore	
+https://kuulokenurkka.squig.link/data/PX7%20S2%20(ANC%20ON)%20L.txt	Bowers & Wilkins PX7 S2	Bowers & Wilkins Px7 S2	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/PX7%20S2%20(ANC%20ON)%20R.txt	Bowers & Wilkins PX7 S2	Bowers & Wilkins Px7 S2	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/PX7%20S2e%20(BT%20ANC%20OFF)%20**%20L.txt	Bowers & Wilkins PX7 S2e	Bowers & Wilkins Px7 S2e (ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/PX7%20S2e%20(BT%20ANC%20OFF)%20**%20R.txt	Bowers & Wilkins PX7 S2e	Bowers & Wilkins Px7 S2e (ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/PX7%20S2e%20(BT%20ANC%20ON)%20**%20L.txt	Bowers & Wilkins PX7 S2e	Bowers & Wilkins Px7 S2e (ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/PX7%20S2e%20(BT%20ANC%20ON)%20**%20R.txt	Bowers & Wilkins PX7 S2e	Bowers & Wilkins Px7 S2e (ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/DT770%20Pro%20(32%20ohm%20-%20Beyer%20Pleather%20Pads)%20L.txt		DT770 Pro (32 ohm - Beyer Pleather Pads)	ignore	
+https://kuulokenurkka.squig.link/data/DT770%20Pro%20(32%20ohm%20-%20Beyer%20Pleather%20Pads)%20R.txt		DT770 Pro (32 ohm - Beyer Pleather Pads)	ignore	
+https://kuulokenurkka.squig.link/data/AH-D5200%20(Fostex%20Pads)%20**%20L.txt	Denon AH-D5200	Denon AH-D5200	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/AH-D5200%20(Fostex%20Pads)%20**%20R.txt	Denon AH-D5200	Denon AH-D5200	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/AH-D9200%20L.txt	Denon AH-D9200	Denon AH-D9200	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/AH-D9200%20R.txt	Denon AH-D9200	Denon AH-D9200	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/W820NB%20(ANC%20OFF)%20L.txt		Edifier W820NB (ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/W820NB%20(ANC%20OFF)%20R.txt		Edifier W820NB (ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/W820NB%20(ANC%20ON)%20L.txt		Edifier W820NB (ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/W820NB%20(ANC%20ON)%20R.txt		Edifier W820NB (ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/WH950NB%20(ANC%20ON%20&%20Classic%20Mode)%20**%20L.txt	Edifier WH950NB	Edifier WH950NB (ANC on, classic mode)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/WH950NB%20(ANC%20ON%20&%20Classic%20Mode)%20**%20R.txt	Edifier WH950NB	Edifier WH950NB (ANC on, classic mode)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/WH950NB%20(ANC%20ON%20&%20Dynamic%20Mode)%20**%20L.txt	Edifier WH950NB	Edifier WH950NB (ANC on, dynamic mode)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/WH950NB%20(ANC%20ON%20&%20Dynamic%20Mode)%20**%20R.txt	Edifier WH950NB	Edifier WH950NB (ANC on, dynamic mode)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/WH950NB%20(Wired%20&%20Power%20OFF)%20**%20L.txt	Edifier WH950NB	Edifier WH950NB (passive)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/WH950NB%20(Wired%20&%20Power%20OFF)%20**%20R.txt	Edifier WH950NB	Edifier WH950NB (passive)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/FT3%20(Pleather%20Pads)%20L.txt	Fiio FT3	FiiO FT3 (pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/FT3%20(Pleather%20Pads)%20R.txt	Fiio FT3	FiiO FT3 (pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/FT3%20(Suede%20Pads)%20L.txt	Fiio FT3	FiiO FT3 (suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/FT3%20(Suede%20Pads)%20R.txt	Fiio FT3	FiiO FT3 (suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/FT3%20(Pleather%20Pads%20and%20Added%20Foam)%20L.txt	Fiio FT3	Fiio FT3	ignore	
+https://kuulokenurkka.squig.link/data/FT3%20(Pleather%20Pads%20and%20Added%20Foam)%20R.txt	Fiio FT3	Fiio FT3	ignore	
+https://kuulokenurkka.squig.link/data/Bathys%20(Dynamic%20Preset)%20**%20L.txt	Focal Bathys	Focal Bathys	ignore	
+https://kuulokenurkka.squig.link/data/Bathys%20(Dynamic%20Preset)%20**%20R.txt	Focal Bathys	Focal Bathys	ignore	
+https://kuulokenurkka.squig.link/data/Bathys%20**%20L.txt	Focal Bathys	Focal Bathys	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Bathys%20**%20R.txt	Focal Bathys	Focal Bathys	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Utopia%20**%20L.txt	Focal Utopia	Focal Utopia	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Utopia%20**%20R.txt	Focal Utopia	Focal Utopia	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/TR-X00%20Purpleheart%20**%20L.txt	Fostex TR-X00 Purpleheart	Fostex TH-X00 (purpleheart)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/TR-X00%20Purpleheart%20**%20R.txt	Fostex TR-X00 Purpleheart	Fostex TH-X00 (purpleheart)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR125e%20L.txt	Grado SR125e	Grado SR125e	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR125e%20R.txt	Grado SR125e	Grado SR125e	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Ananda%20**%20L.txt	Hifiman Ananda	HIFIMAN Ananda	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Ananda%20**%20R.txt	Hifiman Ananda	HIFIMAN Ananda	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Ananda%20Nano%20**%20L.txt	Hifiman Ananda Nano	HIFIMAN Ananda Nano	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Ananda%20Nano%20**%20R.txt	Hifiman Ananda Nano	HIFIMAN Ananda Nano	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Arya%20Organic%20**%20L.txt	Hifiman Arya Organic	HIFIMAN Arya Organic	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Arya%20Organic%20**%20R.txt	Hifiman Arya Organic	HIFIMAN Arya Organic	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Deva%20Pro%20(Wired)%20L.txt	Hifiman Deva Pro (Wired)	HIFIMAN Deva Pro-wired	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Deva%20Pro%20(Wired)%20R.txt	Hifiman Deva Pro (Wired)	HIFIMAN Deva Pro-wired	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Edition%20XS%20(Sample%201)%20L.txt	Hifiman Edition XS	HIFIMAN Edition XS	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Edition%20XS%20(Sample%201)%20R.txt	Hifiman Edition XS	HIFIMAN Edition XS	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Edition%20XS%20(Sample%202)%20L.txt	Hifiman Edition XS	HIFIMAN Edition XS	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Edition%20XS%20(Sample%202)%20R.txt	Hifiman Edition XS	HIFIMAN Edition XS	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-6%20(Sample%202%20Focus%20Pads)%20L.txt	Hifiman HE-6 (6 screw)	HIFIMAN HE-6 (6-screw, HIFIMAN FocusPad earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-6%20(Sample%202%20Focus%20Pads)%20R.txt	Hifiman HE-6 (6 screw)	HIFIMAN HE-6 (6-screw, HIFIMAN FocusPad earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-6%20(Sample%202%20HFM%20Pleather%20Pads)%20L.txt	Hifiman HE-6 (6 screw)	HIFIMAN HE-6 (6-screw, pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-6%20(Sample%202%20HFM%20Pleather%20Pads)%20R.txt	Hifiman HE-6 (6 screw)	HIFIMAN HE-6 (6-screw, pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-6%20(Sample%202%20HFM%20Velour%20Pads)%20L.txt	Hifiman HE-6 (6 screw)	HIFIMAN HE-6 (6-screw, pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-6%20(Sample%202%20HFM%20Velour%20Pads)%20R.txt	Hifiman HE-6 (6 screw)	HIFIMAN HE-6 (6-screw, pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-R9%20(Sample%201)%20**%20L.txt	Hifiman HE-R9	HIFIMAN HE-R9	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-R9%20(Sample%201)%20**%20R.txt	Hifiman HE-R9	HIFIMAN HE-R9	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-R9%20(Sample%202)%20L.txt	Hifiman HE-R9	HIFIMAN HE-R9	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-R9%20(Sample%202)%20R.txt	Hifiman HE-R9	HIFIMAN HE-R9	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-400SE%20L.txt	Hifiman HE-400SE	HIFIMAN HE400se	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-400SE%20R.txt	Hifiman HE-400SE	HIFIMAN HE400se	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20(2020)%20**%20L.txt	Hifiman Sundara (2020)	HIFIMAN Sundara (post-2020 earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20(2020)%20**%20R.txt	Hifiman Sundara (2020)	HIFIMAN Sundara (post-2020 earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20(2020)%20L.txt		HIFIMAN Sundara (post-2020 earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20(2020)%20R.txt		HIFIMAN Sundara (post-2020 earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20(2020)%20Sample%202%20**%20L.txt		HIFIMAN Sundara (post-2020 earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20(2020)%20Sample%202%20**%20R.txt		HIFIMAN Sundara (post-2020 earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Closed%20(Sample%201)%20L.txt	Hifiman Sundara Closed	HIFIMAN Sundara Closed-Back	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Closed%20(Sample%201)%20R.txt	Hifiman Sundara Closed	HIFIMAN Sundara Closed-Back	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Closed%20(Sample%202)%20L.txt	Hifiman Sundara Closed	HIFIMAN Sundara Closed-Back	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Closed%20(Sample%202)%20R.txt	Hifiman Sundara Closed	HIFIMAN Sundara Closed-Back	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Closed%20**%20L.txt	Hifiman Sundara Closed	HIFIMAN Sundara Closed-Back	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Closed%20**%20R.txt	Hifiman Sundara Closed	HIFIMAN Sundara Closed-Back	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Silver%20(Sample%201)%20**%20L.txt	Hifiman Sundara Silver	HIFIMAN Sundara Silver	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Silver%20(Sample%201)%20**%20R.txt	Hifiman Sundara Silver	HIFIMAN Sundara Silver	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Silver%20(Sample%202)%20**%20L.txt	Hifiman Sundara Silver	HIFIMAN Sundara Silver	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Sundara%20Silver%20(Sample%202)%20**%20R.txt	Hifiman Sundara Silver	HIFIMAN Sundara Silver	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Susvara%20**%20L.txt	Hifiman Susvara	HIFIMAN Susvara	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Susvara%20**%20R.txt	Hifiman Susvara	HIFIMAN Susvara	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/H1H%20(AUX%20Power%20OFF)%20**%20R.txt	Heavys H1H	Heavys H1H (AUX power off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/H1H%20(Hell%20Blocker%20OFF)%20**%20L.txt	Heavys H1H	Heavys H1H (Hell Blocker off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/H1H%20(Hell%20Blocker%20OFF)%20**%20R.txt	Heavys H1H	Heavys H1H (Hell Blocker off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/H1H%20(Hell%20Blocker%20ON)%20**%20L.txt	Heavys H1H	Heavys H1H (Hell Blocker on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/H1H%20(Hell%20Blocker%20ON)%20**%20R.txt	Heavys H1H	Heavys H1H (Hell Blocker on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HE-6%20(Sample%201%20HFM%20Velour%20Pads%20and%20Grill%20Mod)%20**%20L.txt	Hifiman HE-6 (6 screw)	Hifiman HE-6 (6 screw)	ignore	
+https://kuulokenurkka.squig.link/data/HE-6%20(Sample%201%20HFM%20Velour%20Pads%20and%20Grill%20Mod)%20**%20R.txt	Hifiman HE-6 (6 screw)	Hifiman HE-6 (6 screw)	ignore	
+https://kuulokenurkka.squig.link/data/Cloud%20Alpha%20**%20L.txt	HyperX Cloud Alpha	HyperX Cloud Alpha	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Cloud%20Alpha%20**%20R.txt	HyperX Cloud Alpha	HyperX Cloud Alpha	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Porta%20Pro%20(Yaxi%20Pads)%20**%20L.txt		Koss Porta Pro (Yaxi earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Porta%20Pro%20(Yaxi%20Pads)%20**%20R.txt		Koss Porta Pro (Yaxi earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Porta%20Pro%20(Yaxi%20Pads)%20L.txt		Koss Porta Pro (Yaxi earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Porta%20Pro%20(Yaxi%20Pads)%20R.txt		Koss Porta Pro (Yaxi earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/109%20Pro%20**%20L.txt	Meze Audio 109 Pro	Meze 109 Pro	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/109%20Pro%20**%20R.txt	Meze Audio 109 Pro	Meze 109 Pro	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/109%20Pro%20L.txt	Meze Audio 109 Pro	Meze 109 Pro	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/109%20Pro%20R.txt	Meze Audio 109 Pro	Meze 109 Pro	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/109%20Pro%20(ZMF%20Titanium%20Solid%20Mesh)%20L.txt	Meze Audio 109 Pro	Meze 109 Pro (ZMF Acoustic Titan Mesh)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/109%20Pro%20(ZMF%20Titanium%20Solid%20Mesh)%20R.txt	Meze Audio 109 Pro	Meze 109 Pro (ZMF Acoustic Titan Mesh)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Empyrean%20(Suede%20Pads)%20L.txt	Meze Audio Empyrean	Meze Empyrean (alcantara earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Empyrean%20(Suede%20Pads)%20R.txt	Meze Audio Empyrean	Meze Empyrean (alcantara earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Empyrean%20(Leather%20Pads)%20L.txt	Meze Audio Empyrean	Meze Empyrean (leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Empyrean%20(Leather%20Pads)%20R.txt	Meze Audio Empyrean	Meze Empyrean (leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Argon%20mk3%20(ZMF%20Oval%20Pleather%20Pads)%20L.txt	Modhouse Audio Argon mk3	Modhouse Audio Argon Mk3 (ZMF oval pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Argon%20mk3%20(ZMF%20Oval%20Pleather%20Pads)%20R.txt	Modhouse Audio Argon mk3	Modhouse Audio Argon Mk3 (ZMF oval pleather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/T60RP%20Argon%20(Xenon%20Suede%20Pads%20Without%20Baffle%20Upgrade)%20**%20L.txt	Modhouse Audio T60RP Argon	Modhouse Audio T60RP Argon (Xenon suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/T60RP%20Argon%20(Xenon%20Suede%20Pads%20Without%20Baffle%20Upgrade)%20**%20R.txt	Modhouse Audio T60RP Argon	Modhouse Audio T60RP Argon (Xenon suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/T60RP%20Argon%20(Xenon%20Suede%20Pads%20and%20Baffle%20Upgrade)%20**%20L.txt	Modhouse Audio T60RP Argon	Modhouse Audio T60RP Argon (Xenon suede earpads, baffle upgrade)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/T60RP%20Argon%20(Xenon%20Suede%20Pads%20and%20Baffle%20Upgrade)%20**%20R.txt	Modhouse Audio T60RP Argon	Modhouse Audio T60RP Argon (Xenon suede earpads, baffle upgrade)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Joker%20**%20L.txt	Moondrop Joker	Moondrop Joker	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Joker%20**%20R.txt	Moondrop Joker	Moondrop Joker	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Venus%20**%20L.txt	Moondrop Venus	Moondrop Venus	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Venus%20**%20R.txt	Moondrop Venus	Moondrop Venus	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Project%20HRP%20L.txt		Project HRP	ignore	
+https://kuulokenurkka.squig.link/data/Project%20HRP%20R.txt		Project HRP	ignore	
+https://kuulokenurkka.squig.link/data/ERA-1%20**%20L.txt	Quad ERA-1	QUAD Era-1	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/ERA-1%20**%20R.txt	Quad ERA-1	QUAD Era-1	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-1a%20(Ear%20Contact%20&%20OBC%20OFF)%20**%20L.txt	Raal-requisite SR-1a	RAAL SR1a (ear contact, OBC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-1a%20(Ear%20Contact%20&%20OBC%20OFF)%20**%20R.txt	Raal-requisite SR-1a	RAAL SR1a (ear contact, OBC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-1a%20(Ear%20Contact%20&%20OBC%20ON)%20**%20L.txt	Raal-requisite SR-1a	RAAL SR1a (ear contact, OBC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-1a%20(Ear%20Contact%20&%20OBC%20ON)%20**%20R.txt	Raal-requisite SR-1a	RAAL SR1a (ear contact, OBC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-1a%20(No%20Ear%20Contact%20&%20OBC%20OFF)%20**%20L.txt	Raal-requisite SR-1a	RAAL SR1a (no ear contact, OBC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-1a%20(No%20Ear%20Contact%20&%20OBC%20OFF)%20**%20R.txt	Raal-requisite SR-1a	RAAL SR1a (no ear contact, OBC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-1a%20(No%20Ear%20Contact%20&%20OBC%20ON)%20**%20L.txt	Raal-requisite SR-1a	RAAL SR1a (no ear contact, OBC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-1a%20(No%20Ear%20Contact%20&%20OBC%20ON)%20**%20R.txt	Raal-requisite SR-1a	RAAL SR1a (no ear contact, OBC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/NTH100%20**%20L.txt	Rode NTH100	RØDE NTH-100	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/NTH100%20**%20R.txt	Rode NTH100	RØDE NTH-100	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/NTH100%20(Front%20Dampening%20Removed)%20**%20L.txt	Rode NTH100	RØDE NTH-100 (front dampening removed)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/NTH100%20(Front%20Dampening%20Removed)%20**%20R.txt	Rode NTH100	RØDE NTH-100 (front dampening removed)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Tres%20(45%20ohm)%20**%20L.txt	SASH Tres (45 ohm)	Sash Tres 45	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Tres%20(45%20ohm)%20**%20R.txt	SASH Tres (45 ohm)	Sash Tres 45	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Tres%20(45%20ohm)%20L.txt	SASH Tres (45 ohm)	Sash Tres 45	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Tres%20(45%20ohm)%20R.txt	SASH Tres (45 ohm)	Sash Tres 45	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Tres%20SE%20(S-style%20Grill)%20**%20L.txt	SASH Tres SE	Sash Tres Second Edition (S-style grill)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Tres%20SE%20(S-style%20Grill)%20**%20R.txt	SASH Tres SE	Sash Tres Second Edition (S-style grill)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Tres%20SE%20(Honeycomb%20Grill)%20**%20L.txt	SASH Tres SE	Sash Tres Second Edition (honeycomb grill)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Tres%20SE%20(Honeycomb%20Grill)%20**%20R.txt	SASH Tres SE	Sash Tres Second Edition (honeycomb grill)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20580%20Precision%20L.txt	Sennheiser HD 580 Precision	Sennheiser HD 580 precision	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20580%20Precision%20R.txt	Sennheiser HD 580 Precision	Sennheiser HD 580 precision	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20600%20(ZMF%20Perf%20Leather%20Pads)%20**%20L.txt	Sennheiser HD 600 (2020)	Sennheiser HD 600 (2020)	ignore	
+https://kuulokenurkka.squig.link/data/HD%20600%20(ZMF%20Perf%20Leather%20Pads)%20**%20R.txt	Sennheiser HD 600 (2020)	Sennheiser HD 600 (2020)	ignore	
+https://kuulokenurkka.squig.link/data/HD%20600%20(ZMF%20Perf%20Leather%20Pads)%20L.txt	Sennheiser HD 600 (2020)	Sennheiser HD 600 (2020)	ignore	
+https://kuulokenurkka.squig.link/data/HD%20600%20(ZMF%20Perf%20Leather%20Pads)%20R.txt	Sennheiser HD 600 (2020)	Sennheiser HD 600 (2020)	ignore	
+https://kuulokenurkka.squig.link/data/HD%20600%20(2021%20Pads)%20**%20L.txt	Sennheiser HD 600 (2020)	Sennheiser HD 600 (2020)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20600%20(2021%20Pads)%20**%20R.txt	Sennheiser HD 600 (2020)	Sennheiser HD 600 (2020)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20600%20(2021%20Pads)%20L.txt	Sennheiser HD 600 (2020)	Sennheiser HD 600 (2020)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20600%20(2021%20Pads)%20R.txt	Sennheiser HD 600 (2020)	Sennheiser HD 600 (2020)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20650%20(ZMF%20Perf%20Leather%20Pads)%20L.txt	Sennheiser HD 650	Sennheiser HD 650	ignore	
+https://kuulokenurkka.squig.link/data/HD%20650%20(ZMF%20Perf%20Leather%20Pads)%20R.txt	Sennheiser HD 650	Sennheiser HD 650	ignore	
+https://kuulokenurkka.squig.link/data/HD%20650%20(2021%20Pads)%20L.txt	Sennheiser HD 650	Sennheiser HD 650	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20650%20(2021%20Pads)%20R.txt	Sennheiser HD 650	Sennheiser HD 650	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20660S2%20(ZMF%20Perf%20Leather%20Pads)%20**%20L.txt	Sennheiser HD 660S2	Sennheiser HD 660S2	ignore	
+https://kuulokenurkka.squig.link/data/HD%20660S2%20(ZMF%20Perf%20Leather%20Pads)%20**%20R.txt	Sennheiser HD 660S2	Sennheiser HD 660S2	ignore	
+https://kuulokenurkka.squig.link/data/HD%20660S2%20**%20L.txt	Sennheiser HD 660S2	Sennheiser HD 660S2	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20660S2%20**%20R.txt	Sennheiser HD 660S2	Sennheiser HD 660S2	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%206XX%20L.txt	Sennheiser HD 6XX	Sennheiser HD 6XX	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%206XX%20R.txt	Sennheiser HD 6XX	Sennheiser HD 6XX	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20800%20(SDR%20Mod)%20**%20L.txt	Sennheiser HD 800	Sennheiser HD 800 (SDR mod)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/HD%20800%20(SDR%20Mod)%20**%20R.txt	Sennheiser HD 800	Sennheiser HD 800 (SDR mod)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Momentum%203%20Wireless%20(HEST%20ON)%20L.txt	Sennheiser Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	ignore	
+https://kuulokenurkka.squig.link/data/Momentum%203%20Wireless%20(HEST%20ON)%20R.txt	Sennheiser Momentum 3 Wireless	Sennheiser Momentum 3 Wireless	ignore	
+https://kuulokenurkka.squig.link/data/WH-1000XM3%20(ANC%20OFF)%20L.txt	Sony WH-1000XM3	Sony WH-1000XM3 (ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/WH-1000XM3%20(ANC%20OFF)%20R.txt	Sony WH-1000XM3	Sony WH-1000XM3 (ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/WH-1000XM3%20(ANC%20ON)%20L.txt	Sony WH-1000XM3	Sony WH-1000XM3 (ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/WH-1000XM3%20(ANC%20ON)%20R.txt	Sony WH-1000XM3	Sony WH-1000XM3 (ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-L700%20**%20L.txt	STAX SR-L700	Stax SR-L700	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/SR-L700%20**%20R.txt	STAX SR-L700	Stax SR-L700	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK20%20(Wired%20ANC%20ON)%20L.txt	Valco VMK20	Valco VMK20 (wired, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK20%20(Wired%20ANC%20ON)%20R.txt	Valco VMK20	Valco VMK20 (wired, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK20%20(Wired%20Power%20OFF)%20L.txt	Valco VMK20	Valco VMK20 (wireled, power off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK20%20(Wired%20Power%20OFF)%20R.txt	Valco VMK20	Valco VMK20 (wireled, power off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK20%20(BT%20ANC%20OFF)%20L.txt	Valco VMK20	Valco VMK20 (wireless, ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK20%20(BT%20ANC%20OFF)%20R.txt	Valco VMK20	Valco VMK20 (wireless, ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK20%20(BT%20ANC%20ON)%20L.txt	Valco VMK20	Valco VMK20 (wireless, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK20%20(BT%20ANC%20ON)%20R.txt	Valco VMK20	Valco VMK20 (wireless, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(Wired%20ANC%20OFF)%20L.txt	Valco VMK25	Valco VMK25 (wired, ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(Wired%20ANC%20OFF)%20R.txt	Valco VMK25	Valco VMK25 (wired, ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(Wired%20ANC%20ON)%20L.txt	Valco VMK25	Valco VMK25 (wired, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(Wired%20ANC%20ON)%20R.txt	Valco VMK25	Valco VMK25 (wired, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(Wired%20Power%20OFF)%20L.txt	Valco VMK25	Valco VMK25 (wired, power off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(Wired%20Power%20OFF)%20R.txt	Valco VMK25	Valco VMK25 (wired, power off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(BT%20ANC%20OFF)%20**%20L.txt	Valco VMK25	Valco VMK25 (wireless, ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(BT%20ANC%20OFF)%20**%20R.txt	Valco VMK25	Valco VMK25 (wireless, ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(BT%20ANC%20OFF)%20L.txt	Valco VMK25	Valco VMK25 (wireless, ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(BT%20ANC%20OFF)%20R.txt	Valco VMK25	Valco VMK25 (wireless, ANC off)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(BT%20ANC%20ON)%20**%20L.txt	Valco VMK25	Valco VMK25 (wireless, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(BT%20ANC%20ON)%20**%20R.txt	Valco VMK25	Valco VMK25 (wireless, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(BT%20ANC%20ON)%20L.txt	Valco VMK25	Valco VMK25 (wireless, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/VMK25%20(BT%20ANC%20ON)%20R.txt	Valco VMK25	Valco VMK25 (wireless, ANC on)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Aeolus%20(BE2%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Aeolus	ZMF Aeolus (ZMF BE2 perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Aeolus%20(BE2%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Aeolus	ZMF Aeolus (ZMF BE2 perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Aeolus%20(Universe%20Perf%20Leather%20Pads)%20**%20L.txt	ZMF Aeolus	ZMF Aeolus (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Aeolus%20(Universe%20Perf%20Leather%20Pads)%20**%20R.txt	ZMF Aeolus	ZMF Aeolus (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Aeolus%20(Universe%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Aeolus	ZMF Aeolus (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Aeolus%20(Universe%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Aeolus	ZMF Aeolus (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atrium%20(Auteur%20Perf%20Leather%20Pads)%20**%20L.txt	ZMF Atrium	ZMF Atrium (ZMF Auteur perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atrium%20(Auteur%20Perf%20Leather%20Pads)%20**%20R.txt	ZMF Atrium	ZMF Atrium (ZMF Auteur perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atrium%20(BE2%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Atrium	ZMF Atrium (ZMF BE2 perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atrium%20(BE2%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Atrium	ZMF Atrium (ZMF BE2 perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atrium%20(Universe%20Perf%20Leather%20Pads)%20**%20L.txt	ZMF Atrium	ZMF Atrium (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atrium%20(Universe%20Perf%20Leather%20Pads)%20**%20R.txt	ZMF Atrium	ZMF Atrium (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atrium%20(Universe%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Atrium	ZMF Atrium (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atrium%20(Universe%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Atrium	ZMF Atrium (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atticus%20(Eikon%20Suede%20Pads)%20L.txt	ZMF Atticus	ZMF Atticus (ZMF Eikon suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atticus%20(Eikon%20Suede%20Pads)%20R.txt	ZMF Atticus	ZMF Atticus (ZMF Eikon suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atticus%20(Ori%20Leather%20Pads)%20L.txt	ZMF Atticus	ZMF Atticus (ZMF Ori leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Atticus%20(Ori%20Leather%20Pads)%20R.txt	ZMF Atticus	ZMF Atticus (ZMF Ori leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Auteur%20Perf%20Hybrid%20Pads)%20**%20L.txt	ZMF Auteur	ZMF Auteur (ZMF Auteur perforated hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Auteur%20Perf%20Hybrid%20Pads)%20**%20R.txt	ZMF Auteur	ZMF Auteur (ZMF Auteur perforated hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Auteur%20Perf%20Leather%20Pads)%20**%20L.txt	ZMF Auteur	ZMF Auteur (ZMF Auteur perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Auteur%20Perf%20Leather%20Pads)%20**%20R.txt	ZMF Auteur	ZMF Auteur (ZMF Auteur perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Auteur%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Auteur	ZMF Auteur (ZMF Auteur perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Auteur%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Auteur	ZMF Auteur (ZMF Auteur perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Eikon%20Perf%20Leather%20Pads)%20**%20L.txt	ZMF Auteur	ZMF Auteur (ZMF Eikon perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Eikon%20Perf%20Leather%20Pads)%20**%20R.txt	ZMF Auteur	ZMF Auteur (ZMF Eikon perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Eikon%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Auteur	ZMF Auteur (ZMF Eikon perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Eikon%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Auteur	ZMF Auteur (ZMF Eikon perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Universe%20Perf%20Leather%20Pads)%20**%20L.txt	ZMF Auteur	ZMF Auteur (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Universe%20Perf%20Leather%20Pads)%20**%20R.txt	ZMF Auteur	ZMF Auteur (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Universe%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Auteur	ZMF Auteur (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20(Universe%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Auteur	ZMF Auteur (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Auteur%20Perf%20Hybrid%20Pads)%20**%20L.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Auteur perforated hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Auteur%20Perf%20Hybrid%20Pads)%20**%20R.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Auteur perforated hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Auteur%20Perf%20Leather%20Pads)%20**%20L.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Auteur perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Auteur%20Perf%20Leather%20Pads)%20**%20R.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Auteur perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Auteur%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Auteur perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Auteur%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Auteur perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(BE2%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF BE2 perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(BE2%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF BE2 perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Eikon%20Perf%20Leather%20Pads)%20**%20L.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Eikon perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Eikon%20Perf%20Leather%20Pads)%20**%20R.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Eikon perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Eikon%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Eikon perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Eikon%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Eikon perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Universe%20Perf%20Leather%20Pads)%20**%20L.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Universe%20Perf%20Leather%20Pads)%20**%20R.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Universe%20Perf%20Suede%20Pads)%20**%20L.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Auteur%20Classic%20(Universe%20Perf%20Suede%20Pads)%20**%20R.txt	ZMF Auteur Classic	ZMF Auteur Classic (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Caldera%20(Cowhide%20Pads)%20**%20L.txt	ZMF Caldera	ZMF Caldera (cowhide earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Caldera%20(Cowhide%20Pads)%20**%20R.txt	ZMF Caldera	ZMF Caldera (cowhide earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Caldera%20(Lambskin%20Pads)%20**%20L.txt	ZMF Caldera	ZMF Caldera (lambskin earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Caldera%20(Lambskin%20Pads)%20**%20R.txt	ZMF Caldera	ZMF Caldera (lambskin earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Caldera%20(Suede%20Pads)%20**%20L.txt	ZMF Caldera	ZMF Caldera (suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Caldera%20(Suede%20Pads)%20**%20R.txt	ZMF Caldera	ZMF Caldera (suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Caldera%20(Thick%20Pads)%20**%20L.txt	ZMF Caldera	ZMF Caldera (thick earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Caldera%20(Thick%20Pads)%20**%20R.txt	ZMF Caldera	ZMF Caldera (thick earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Eikon%20(Auteur%20Leather%20Pads)%20**%20L.txt	ZMF Eikon	ZMF Eikon (ZMF Auteur leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Eikon%20(Auteur%20Leather%20Pads)%20**%20R.txt	ZMF Eikon	ZMF Eikon (ZMF Auteur leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Eikon%20(Eikon%20Leather%20Pads)%20**%20L.txt	ZMF Eikon	ZMF Eikon (ZMF Eikon leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Eikon%20(Eikon%20Leather%20Pads)%20**%20R.txt	ZMF Eikon	ZMF Eikon (ZMF Eikon leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Eikon%20(Eikon%20Suede%20Pads)%20**%20L.txt	ZMF Eikon	ZMF Eikon (ZMF Eikon suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Eikon%20(Eikon%20Suede%20Pads)%20**%20R.txt	ZMF Eikon	ZMF Eikon (ZMF Eikon suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Eikon%20(Universe%20Leather%20Pads)%20**%20L.txt	ZMF Eikon	ZMF Eikon (ZMF Universe leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Eikon%20(Universe%20Leather%20Pads)%20**%20R.txt	ZMF Eikon	ZMF Eikon (ZMF Universe leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(Auteur%20Perf%20Hybrid%20Pads)%20L.txt	ZMF Verite Open	ZMF Verite (ZMF Auteur perforated hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(Auteur%20Perf%20Hybrid%20Pads)%20R.txt	ZMF Verite Open	ZMF Verite (ZMF Auteur perforated hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(BE2%20Perf%20Hybrid%20Pads)%20L.txt	ZMF Verite Open	ZMF Verite (ZMF BE2 perforated hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(BE2%20Perf%20Hybrid%20Pads)%20R.txt	ZMF Verite Open	ZMF Verite (ZMF BE2 perforated hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(BE2%20Perf%20Leather%20Pads)%20L.txt	ZMF Verite Open	ZMF Verite (ZMF BE2 perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(BE2%20Perf%20Leather%20Pads)%20R.txt	ZMF Verite Open	ZMF Verite (ZMF BE2 perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(Universe%20Perf%20Leather%20Pads)%20L.txt	ZMF Verite Open	ZMF Verite (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(Universe%20Perf%20Leather%20Pads)%20R.txt	ZMF Verite Open	ZMF Verite (ZMF Universe perforated leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(Universe%20Perf%20Suede%20Pads)%20L.txt	ZMF Verite Open	ZMF Verite (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Open%20(Universe%20Perf%20Suede%20Pads)%20R.txt	ZMF Verite Open	ZMF Verite (ZMF Universe perforated suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Auteur%20Hybrid%20Pads)%20**%20L.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Auteur hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Auteur%20Hybrid%20Pads)%20**%20R.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Auteur hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Auteur%20Leather%20Pads)%20**%20L.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Auteur leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Auteur%20Leather%20Pads)%20**%20R.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Auteur leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Eikon%20Leather%20Pads)%20**%20L.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Eikon leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Eikon%20Leather%20Pads)%20**%20R.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Eikon leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Eikon%20Suede%20Pads)%20**%20L.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Eikon suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Eikon%20Suede%20Pads)%20**%20R.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Eikon suede earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Universe%20Hybrid%20Pads)%20**%20L.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Universe hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Universe%20Hybrid%20Pads)%20**%20R.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Universe hybrid earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Universe%20Leather%20Pads)%20**%20L.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Universe leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/Verite%20Closed%20(Universe%20Leather%20Pads)%20**%20R.txt	ZMF Verite Closed	ZMF Verite Closed (ZMF Universe leather earpads)	over-ear	Clone pinna + 711
+https://kuulokenurkka.squig.link/data/phone_book_backup.json		phone_book_backup.json	ignore	

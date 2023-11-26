@@ -1,0 +1,177 @@
+url	source_name	name	form	rig
+https://kr0mka.squig.link/data/Dioko%20L.txt	7Hz Dioko 	7Hz Salnotes Dioko	in-ear	 711
+https://kr0mka.squig.link/data/Dioko%20R.txt	7Hz Dioko 	7Hz Salnotes Dioko	in-ear	 711
+https://kr0mka.squig.link/data/Dioko%20Spring%20R.txt	7Hz Dioko Spring	7Hz Salnotes Dioko Spring	in-ear	 711
+https://kr0mka.squig.link/data/Timeless%20L.txt	7Hz Timeless	7Hz Timeless	in-ear	 711
+https://kr0mka.squig.link/data/Timeless%20R.txt	7Hz Timeless	7Hz Timeless	in-ear	 711
+https://kr0mka.squig.link/data/DT200%20L.txt	Audiosense DT200 	Audiosense DT200	in-ear	 711
+https://kr0mka.squig.link/data/DT200%20R.txt	Audiosense DT200 	Audiosense DT200	in-ear	 711
+https://kr0mka.squig.link/data/DT200%20Spring%20L.txt	Audiosense DT200 Spring	Audiosense DT200 Spring	ignore	
+https://kr0mka.squig.link/data/DT200%20Spring%20R.txt	Audiosense DT200 Spring	Audiosense DT200 Spring	ignore	
+https://kr0mka.squig.link/data/DT200%20Spring%2023R%20OI%20L.txt	Audiosense DT200 Spring 23Ω OI	Audiosense DT200 Spring 23Ω OI	ignore	
+https://kr0mka.squig.link/data/DT200%20Spring%2023R%20OI%20R.txt	Audiosense DT200 Spring 23Ω OI	Audiosense DT200 Spring 23Ω OI	ignore	
+https://kr0mka.squig.link/data/SD251-BT%20L.txt	Behringer SD251-BT	Behringer SD251-BT	in-ear	 711
+https://kr0mka.squig.link/data/SD251-BT%20R.txt	Behringer SD251-BT	Behringer SD251-BT	in-ear	 711
+https://kr0mka.squig.link/data/CCA%20C16%20L.txt	CCA C16 	CCA C16	in-ear	 711
+https://kr0mka.squig.link/data/CCA%20C16%20R.txt	CCA C16 	CCA C16	in-ear	 711
+https://kr0mka.squig.link/data/CCA%20C16%2047R%20OI%20L.txt	CCA C16 47Ω OI	CCA C16 47Ω OI	ignore	
+https://kr0mka.squig.link/data/CCA%20C16%2047R%20OI%20R.txt	CCA C16 47Ω OI	CCA C16 47Ω OI	ignore	
+https://kr0mka.squig.link/data/CRA%20L.txt	CCA CRA 	CCA CRA	in-ear	 711
+https://kr0mka.squig.link/data/CRA%20R.txt	CCA CRA 	CCA CRA	in-ear	 711
+https://kr0mka.squig.link/data/CRA%20Spring%20R.txt	CCA CRA Spring tips	CCA CRA (JVC Spring eartips)	in-ear	 711
+https://kr0mka.squig.link/data/e1000%20L.txt	Final Audio E1000	Final Audio E1000	in-ear	 711
+https://kr0mka.squig.link/data/e1000%20R.txt	Final Audio E1000	Final Audio E1000	in-ear	 711
+https://kr0mka.squig.link/data/X2%20pro%20L.txt	Fonge X2 Pro	Fonge X2 Pro	in-ear	 711
+https://kr0mka.squig.link/data/X2%20pro%20R.txt	Fonge X2 Pro	Fonge X2 Pro	in-ear	 711
+https://kr0mka.squig.link/data/G1%20L.txt	GK G1	GK G1	in-ear	 711
+https://kr0mka.squig.link/data/G1%20R.txt	GK G1	GK G1	in-ear	 711
+https://kr0mka.squig.link/data/5i%20L.txt	Huawei Freebuds 5i 	Huawei Freebuds 5i (ANC off)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20R.txt	Huawei Freebuds 5i 	Huawei Freebuds 5i (ANC off)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20Transparency%20L.txt	Huawei Freebuds 5i Awareness	Huawei Freebuds 5i (ANC off, awareness)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20Transparency%20R.txt	Huawei Freebuds 5i Awareness	Huawei Freebuds 5i (ANC off, awareness)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20BASS%20L.txt	Huawei Freebuds 5i Bass boost	Huawei Freebuds 5i (ANC off, bass boost)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20BASS%20R.txt	Huawei Freebuds 5i Bass boost	Huawei Freebuds 5i (ANC off, bass boost)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20TREBLE%20L.txt	Huawei Freebuds 5i Treble boost	Huawei Freebuds 5i (ANC off, treble boost)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20TREBLE%20R.txt	Huawei Freebuds 5i Treble boost	Huawei Freebuds 5i (ANC off, treble boost)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20ANC%20L.txt	Huawei Freebuds 5i ANC	Huawei Freebuds 5i (ANC on)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20ANC%20R.txt	Huawei Freebuds 5i ANC	Huawei Freebuds 5i (ANC on)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20ANC%20BASS%20L.txt	Huawei Freebuds 5i ANC + Bass boost	Huawei Freebuds 5i (ANC on, bass boost)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20ANC%20BASS%20R.txt	Huawei Freebuds 5i ANC + Bass boost	Huawei Freebuds 5i (ANC on, bass boost)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20ANC%20TREBLE%20L.txt	Huawei Freebuds 5i ANC + Treble boost	Huawei Freebuds 5i (ANC on, treble boost)	in-ear	 711
+https://kr0mka.squig.link/data/5i%20ANC%20TREBLE%20R.txt	Huawei Freebuds 5i ANC + Treble boost	Huawei Freebuds 5i (ANC on, treble boost)	in-ear	 711
+https://kr0mka.squig.link/data/Tune%20110%20L.txt	JBL Tune 110	JBL Tune 110	in-ear	 711
+https://kr0mka.squig.link/data/Tune%20110%20R.txt	JBL Tune 110	JBL Tune 110	in-ear	 711
+https://kr0mka.squig.link/data/AT1%20L.txt	Jcally AT1	JCally AT1	in-ear	 711
+https://kr0mka.squig.link/data/AT1%20R.txt	Jcally AT1	JCally AT1	in-ear	 711
+https://kr0mka.squig.link/data/HA-FR15-H%20L.txt	JVC HA-FR15	JVC HA-FR15	in-ear	 711
+https://kr0mka.squig.link/data/HA-FR15-H%20R.txt	JVC HA-FR15	JVC HA-FR15	in-ear	 711
+https://kr0mka.squig.link/data/ZS10%20L.txt	KZ ZS10	KZ ZS10	in-ear	 711
+https://kr0mka.squig.link/data/ZS10%20R.txt	KZ ZS10	KZ ZS10	in-ear	 711
+https://kr0mka.squig.link/data/ZS10%20Pro%20L.txt	KZ ZS10 Pro	KZ ZS10 Pro	in-ear	 711
+https://kr0mka.squig.link/data/ZS10%20Pro%20R.txt	KZ ZS10 Pro	KZ ZS10 Pro	in-ear	 711
+https://kr0mka.squig.link/data/ZS5v1%20L.txt	KZ ZS5v1 	KZ ZS5v1	in-ear	 711
+https://kr0mka.squig.link/data/ZS5v1%20R.txt	KZ ZS5v1 	KZ ZS5v1	in-ear	 711
+https://kr0mka.squig.link/data/ZS5v1%2047R%20OI%20L.txt	KZ ZS5v1 47Ω OI	KZ ZS5v1 47Ω OI	ignore	
+https://kr0mka.squig.link/data/ZS5v1%2047R%20OI%20R.txt	KZ ZS5v1 47Ω OI	KZ ZS5v1 47Ω OI	ignore	
+https://kr0mka.squig.link/data/ZEX%20Pro%20L.txt	KZ CRN (ZEX Pro)	KZ x Crinacle CRN	in-ear	 711
+https://kr0mka.squig.link/data/ZEX%20Pro%20R.txt	KZ CRN (ZEX Pro)	KZ x Crinacle CRN	in-ear	 711
+https://kr0mka.squig.link/data/e20%20wide%2010%20ohm%20L.txt	Letshuoer Aoshida E20 Wide Bore 10Ω OI/Adapter	Letshuoer Aoshida E20 Wide Bore 10Ω OI/Adapter	ignore	
+https://kr0mka.squig.link/data/e20%20wide%2010%20ohm%20R.txt	Letshuoer Aoshida E20 Wide Bore 10Ω OI/Adapter	Letshuoer Aoshida E20 Wide Bore 10Ω OI/Adapter	ignore	
+https://kr0mka.squig.link/data/Aria%20L.txt	Moondrop Aria	Moondrop Aria	in-ear	 711
+https://kr0mka.squig.link/data/Aria%20R.txt	Moondrop Aria	Moondrop Aria	in-ear	 711
+https://kr0mka.squig.link/data/Chu%20L.txt	Moondrop Chu	Moondrop Chu	in-ear	 711
+https://kr0mka.squig.link/data/Chu%20R.txt	Moondrop Chu	Moondrop Chu	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20L.txt	Moondrop KXXS 	Moondrop KXXS	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20R.txt	Moondrop KXXS 	Moondrop KXXS	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20(BGVP%20W01)%20L.txt	Moondrop KXXS BGVP W01	Moondrop KXXS (BGVP W01 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20(BGVP%20W01)%20R.txt	Moondrop KXXS BGVP W01	Moondrop KXXS (BGVP W01 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20spring%20L.txt	Moondrop KXXS Spring	Moondrop KXXS (Moondrop Spring eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20spring%20R.txt	Moondrop KXXS Spring	Moondrop KXXS (Moondrop Spring eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20(EP-EX11)%20L.txt	Moondrop KXXS EP-EX11	Moondrop KXXS (Sony EP-EX11 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20(EX15)%20L.txt	Moondrop KXXS EX15	Moondrop KXXS (Sony MDR-EX15 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20(EX15)%20R.txt	Moondrop KXXS EX15	Moondrop KXXS (Sony MDR-EX15 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20(CP%20100)%20L.txt	Moondrop KXXS CP100	Moondrop KXXS (SpinFit CP100 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20(CP%20100)%20R.txt	Moondrop KXXS CP100	Moondrop KXXS (SpinFit CP100 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20(Symbio%20W%20Peel)%20L.txt	Moondrop KXXS Symbio W Peel	Moondrop KXXS Symbio W Peel	ignore	
+https://kr0mka.squig.link/data/KXXS%20(Symbio%20W%20Peel)%20R.txt	Moondrop KXXS Symbio W Peel	Moondrop KXXS Symbio W Peel	ignore	
+https://kr0mka.squig.link/data/LAN%20L.txt	Moondrop LAN	Moondrop LAN	in-ear	 711
+https://kr0mka.squig.link/data/LAN%20R.txt	Moondrop LAN	Moondrop LAN	in-ear	 711
+https://kr0mka.squig.link/data/Sparks%20Balanced%201.2.1%20L.txt	Moondrop Sparks Balanced 1.2.1	Moondrop Sparks Balanced 1.2.1	ignore	
+https://kr0mka.squig.link/data/Sparks%20Balanced%201.2.1%20R.txt	Moondrop Sparks Balanced 1.2.1	Moondrop Sparks Balanced 1.2.1	ignore	
+https://kr0mka.squig.link/data/Sparks%20Basshead%201.2.1%20L.txt	Moondrop Sparks Basshead 1.2.1	Moondrop Sparks Basshead 1.2.1	ignore	
+https://kr0mka.squig.link/data/Sparks%20David%20Xu%201.2.1%20L.txt	Moondrop Sparks David Xu 1.2.1	Moondrop Sparks David Xu 1.2.1	ignore	
+https://kr0mka.squig.link/data/Sparks%20No%20bass%201.2.1%20L.txt	Moondrop Sparks No bass 1.2.1	Moondrop Sparks No bass 1.2.1	ignore	
+https://kr0mka.squig.link/data/Sparks%20Studio%201.2.1%20L.txt	Moondrop Sparks Studio 1.2.1	Moondrop Sparks Studio 1.2.1	ignore	
+https://kr0mka.squig.link/data/Sparks%20Wennebostel%201.2.1%20L.txt	Moondrop Sparks Wennebostel 1.2.1	Moondrop Sparks Wennebostel 1.2.1	ignore	
+https://kr0mka.squig.link/data/Dusk%20L.txt	Moondrop Blessing 2: Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	 711
+https://kr0mka.squig.link/data/Dusk%20R.txt	Moondrop Blessing 2: Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	 711
+https://kr0mka.squig.link/data/EDC3%20L.txt	Massdrop x NuForce EDC3	NuForce EDC3	in-ear	 711
+https://kr0mka.squig.link/data/EDC3%20R.txt	Massdrop x NuForce EDC3	NuForce EDC3	in-ear	 711
+https://kr0mka.squig.link/data/RP-HJE125E-K%20L.txt	Panasonic RP-HJE125E	Panasonic RP-HJE125E	in-ear	 711
+https://kr0mka.squig.link/data/RP-HJE125E-K%20R.txt	Panasonic RP-HJE125E	Panasonic RP-HJE125E	in-ear	 711
+https://kr0mka.squig.link/data/RP-HJE270E%20L.txt	Panasonic RP-HJE270E	Panasonic RP-HJE270E	in-ear	 711
+https://kr0mka.squig.link/data/RP-HJE270E%20R.txt	Panasonic RP-HJE270E	Panasonic RP-HJE270E	in-ear	 711
+https://kr0mka.squig.link/data/TAE1105%20L.txt	Philips TAE1105	Philips TAE1105	in-ear	 711
+https://kr0mka.squig.link/data/TAE1105%20R.txt	Philips TAE1105	Philips TAE1105	in-ear	 711
+https://kr0mka.squig.link/data/SJ01%20L.txt	Reecho (Yusicon) Summer 2022 (SJ01)	Reecho Summer	in-ear	 711
+https://kr0mka.squig.link/data/SJ01%20R.txt	Reecho (Yusicon) Summer 2022 (SJ01)	Reecho Summer	in-ear	 711
+https://kr0mka.squig.link/data/EO-IC100%20L.txt	Samsung EO-IC100	Samsung EO-IC100 Type-C	in-ear	 711
+https://kr0mka.squig.link/data/EO-IC100%20R.txt	Samsung EO-IC100	Samsung EO-IC100 Type-C	in-ear	 711
+https://kr0mka.squig.link/data/EO-IG955%20Fake%20L.txt	Samsung Fake EO-IG955	Samsung Fake EO-IG955	ignore	
+https://kr0mka.squig.link/data/EO-IG955%20Fake%20R.txt	Samsung Fake EO-IG955	Samsung Fake EO-IG955	ignore	
+https://kr0mka.squig.link/data/Gbuds%20pro%20L.txt	Samsung Galaxy Buds Pro	Samsung Galaxy Buds Pro	in-ear	 711
+https://kr0mka.squig.link/data/Gbuds%20pro%20R.txt	Samsung Galaxy Buds Pro	Samsung Galaxy Buds Pro	in-ear	 711
+https://kr0mka.squig.link/data/e20%20narrow%20L.txt	Letshuoer Aoshida E20 Narrow Bore	Shuoer Aoshida E20 (narrow bore eartips)	in-ear	 711
+https://kr0mka.squig.link/data/e20%20narrow%20R.txt	Letshuoer Aoshida E20 Narrow Bore	Shuoer Aoshida E20 (narrow bore eartips)	in-ear	 711
+https://kr0mka.squig.link/data/e20%20wide%20L.txt	Letshuoer Aoshida E20 Wide Bore	Shuoer Aoshida E20 (wide bore eartips)	in-ear	 711
+https://kr0mka.squig.link/data/e20%20wide%20R.txt	Letshuoer Aoshida E20 Wide Bore	Shuoer Aoshida E20 (wide bore eartips)	in-ear	 711
+https://kr0mka.squig.link/data/EJ07M%20L.txt	Letshuoer EJ07M U	Shuoer EJ07M	in-ear	 711
+https://kr0mka.squig.link/data/EJ07M%20R.txt	Letshuoer EJ07M U	Shuoer EJ07M	in-ear	 711
+https://kr0mka.squig.link/data/Inkd%202.0%20L.txt	Skullcandy Inkd 2.0	Skullcandy Inkd 2.0	in-ear	 711
+https://kr0mka.squig.link/data/Inkd%202.0%20R.txt	Skullcandy Inkd 2.0	Skullcandy Inkd 2.0	in-ear	 711
+https://kr0mka.squig.link/data/MH755%20Fake%20L.txt	Sony Fake MH755	Sony Fake MH755	ignore	
+https://kr0mka.squig.link/data/MH755%20Fake%20R.txt	Sony Fake MH755	Sony Fake MH755	ignore	
+https://kr0mka.squig.link/data/MDR-EX15%20(Symbio%20W%20Peel)%20L.txt	Sony MDR-EX15AP Symbio W Peel	Sony MDR-EX15AP Symbio W Peel	ignore	
+https://kr0mka.squig.link/data/MDR-EX15%20(Symbio%20W%20Peel)%20R.txt	Sony MDR-EX15AP Symbio W Peel	Sony MDR-EX15AP Symbio W Peel	ignore	
+https://kr0mka.squig.link/data/MDR-EX15AP%20L.txt	Sony MDR-EX15AP 	Sony MDR-EX15LP	in-ear	 711
+https://kr0mka.squig.link/data/MDR-EX15AP%20R.txt	Sony MDR-EX15AP 	Sony MDR-EX15LP	in-ear	 711
+https://kr0mka.squig.link/data/MDR-EX15%20(BGVP%20W01)%20L.txt	Sony MDR-EX15AP BGVP W01	Sony MDR-EX15LP (BGVP W01 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/MDR-EX15%20(BGVP%20W01)%20R.txt	Sony MDR-EX15AP BGVP W01	Sony MDR-EX15LP (BGVP W01 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/MDR-EX15%20(KXXS)%20L.txt	Sony MDR-EX15AP KXXS	Sony MDR-EX15LP (Moondrop KXXS)	in-ear	 711
+https://kr0mka.squig.link/data/MDR-EX15%20(KXXS)%20R.txt	Sony MDR-EX15AP KXXS	Sony MDR-EX15LP (Moondrop KXXS)	in-ear	 711
+https://kr0mka.squig.link/data/MDR-EX15%20CP100%20L.txt	Sony MDR-EX15AP CP100	Sony MDR-EX15LP (SpinFit CP100 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/MDR-EX15%20CP100%20R.txt	Sony MDR-EX15AP CP100	Sony MDR-EX15LP (SpinFit CP100 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/MDR-XB55AP%20L.txt	Sony MDR-XB55AP	Sony MDR-XB55AP	in-ear	 711
+https://kr0mka.squig.link/data/MDR-XB55AP%20R.txt	Sony MDR-XB55AP	Sony MDR-XB55AP	in-ear	 711
+https://kr0mka.squig.link/data/Mini%20Pro%20HS%20anc%20off%20L.txt	Soundpeats Mini Pro HS 	SoundPeats Mini Pro HS (ANC off)	in-ear	 711
+https://kr0mka.squig.link/data/Mini%20Pro%20HS%20anc%20off%20R.txt	Soundpeats Mini Pro HS 	SoundPeats Mini Pro HS (ANC off)	in-ear	 711
+https://kr0mka.squig.link/data/Mini%20Pro%20HS%20anc%20on%20L.txt	Soundpeats Mini Pro HS ANC	SoundPeats Mini Pro HS (ANC on)	in-ear	 711
+https://kr0mka.squig.link/data/Mini%20Pro%20HS%20anc%20on%20R.txt	Soundpeats Mini Pro HS ANC	SoundPeats Mini Pro HS (ANC on)	in-ear	 711
+https://kr0mka.squig.link/data/SOCL300%20L.txt	TCL SOCL300	TCL SOCL300	in-ear	 711
+https://kr0mka.squig.link/data/SOCL300%20R.txt	TCL SOCL300	TCL SOCL300	in-ear	 711
+https://kr0mka.squig.link/data/TE0%20Narrow%20L.txt		TE0 Narrow	ignore	
+https://kr0mka.squig.link/data/TE0%20Narrow%20R.txt		TE0 Narrow	ignore	
+https://kr0mka.squig.link/data/V20%20L.txt	TRN V20	TRN V20	in-ear	 711
+https://kr0mka.squig.link/data/V20%20R.txt	TRN V20	TRN V20	in-ear	 711
+https://kr0mka.squig.link/data/Ola%20L.txt	Tanchjim Ola	Tanchjim Ola	in-ear	 711
+https://kr0mka.squig.link/data/Ola%20R.txt	Tanchjim Ola	Tanchjim Ola	in-ear	 711
+https://kr0mka.squig.link/data/One%20DSP%20Default%20L.txt	Tanchjim One DSP Default Preset	Tanchjim One DSP	in-ear	 711
+https://kr0mka.squig.link/data/One%20DSP%20Default%20R.txt	Tanchjim One DSP Default Preset	Tanchjim One DSP	in-ear	 711
+https://kr0mka.squig.link/data/One%20DSP%20PEQ%20OFF%20L.txt	Tanchjim One DSP 5 Band PEQ Off	Tanchjim One DSP 5 Band PEQ Off	ignore	
+https://kr0mka.squig.link/data/One%20DSP%20PEQ%20OFF%20R.txt	Tanchjim One DSP 5 Band PEQ Off	Tanchjim One DSP 5 Band PEQ Off	ignore	
+https://kr0mka.squig.link/data/One%20DSP%20Balanced%20L.txt	Tanchjim One DSP Balanced Preset	Tanchjim One DSP Balanced Preset	ignore	
+https://kr0mka.squig.link/data/One%20DSP%20Balanced%20R.txt	Tanchjim One DSP Balanced Preset	Tanchjim One DSP Balanced Preset	ignore	
+https://kr0mka.squig.link/data/One%20DSP%20Instrumental%20L.txt	Tanchjim One DSP Instrumental Preset	Tanchjim One DSP Instrumental Preset	ignore	
+https://kr0mka.squig.link/data/One%20DSP%20Instrumental%20R.txt	Tanchjim One DSP Instrumental Preset	Tanchjim One DSP Instrumental Preset	ignore	
+https://kr0mka.squig.link/data/One%20DSP%20Natural%20L.txt	Tanchjim One DSP Natural Preset	Tanchjim One DSP Natural Preset	ignore	
+https://kr0mka.squig.link/data/One%20DSP%20Natural%20R.txt	Tanchjim One DSP Natural Preset	Tanchjim One DSP Natural Preset	ignore	
+https://kr0mka.squig.link/data/One%20DSP%20Popular%20L.txt	Tanchjim One DSP Popular Preset	Tanchjim One DSP Popular Preset	ignore	
+https://kr0mka.squig.link/data/One%20DSP%20Popular%20R.txt	Tanchjim One DSP Popular Preset	Tanchjim One DSP Popular Preset	ignore	
+https://kr0mka.squig.link/data/Tanya%20DSP%20L.txt	Tanchjim Tanya DSP	Tanchjim Tanya DSP	in-ear	 711
+https://kr0mka.squig.link/data/Tanya%20DSP%20R.txt	Tanchjim Tanya DSP	Tanchjim Tanya DSP	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20default%20anc%20off%20L.txt	Tronsmart Apollo Bold 	Tronsmart Apollo Bold (ANC off)	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20classical%20anc%20off%20L.txt	Tronsmart Apollo Bold Classical	Tronsmart Apollo Bold (ANC off, classic)	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20jazz%20anc%20off%20L.txt	Tronsmart Apollo Bold Jazz	Tronsmart Apollo Bold (ANC off, jazz)	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20pop%20anc%20off%20L.txt	Tronsmart Apollo Bold Pop	Tronsmart Apollo Bold (ANC off, pop)	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20rock%20anc%20off%20L.txt	Tronsmart Apollo Bold Rock	Tronsmart Apollo Bold (ANC off, rock)	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20default%20anc%20on%20L.txt	Tronsmart Apollo Bold ANC	Tronsmart Apollo Bold (ANC on)	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20classical%20anc%20on%20L.txt	Tronsmart Apollo Bold Classical ANC	Tronsmart Apollo Bold (ANC on, classic)	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20jazz%20anc%20on%20L.txt	Tronsmart Apollo Bold Jazz ANC	Tronsmart Apollo Bold (ANC on, jazz)	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20pop%20anc%20on%20L.txt	Tronsmart Apollo Bold Pop ANC	Tronsmart Apollo Bold (ANC on, pop)	in-ear	 711
+https://kr0mka.squig.link/data/Apollo%20Bold%20rock%20anc%20on%20L.txt	Tronsmart Apollo Bold Rock ANC	Tronsmart Apollo Bold (ANC on, rock)	in-ear	 711
+https://kr0mka.squig.link/data/Onyx%20Free%20L.txt	Tronsmart Onyx Free	Tronsmart Onyx Free	in-ear	 711
+https://kr0mka.squig.link/data/Onyx%20Free%20R.txt	Tronsmart Onyx Free	Tronsmart Onyx Free	in-ear	 711
+https://kr0mka.squig.link/data/Onyx%20Neo%20L.txt	Tronsmart Onyx Neo	Tronsmart Onyx Neo	in-ear	 711
+https://kr0mka.squig.link/data/Onyx%20Neo%20R.txt	Tronsmart Onyx Neo	Tronsmart Onyx Neo	in-ear	 711
+https://kr0mka.squig.link/data/Hexa%20L.txt	Truthear Hexa	Truthear Hexa	in-ear	 711
+https://kr0mka.squig.link/data/Hexa%20R.txt	Truthear Hexa	Truthear Hexa	in-ear	 711
+https://kr0mka.squig.link/data/Hola%20S1%20L.txt	Truthear Hola S1	Truthear Hola	in-ear	 711
+https://kr0mka.squig.link/data/Hola%20S1%20R.txt	Truthear Hola S1	Truthear Hola	in-ear	 711
+https://kr0mka.squig.link/data/Hola%20S2%20L.txt	Truthear Hola S2	Truthear Hola	in-ear	 711
+https://kr0mka.squig.link/data/Hola%20S2%20R.txt	Truthear Hola S2	Truthear Hola	in-ear	 711
+https://kr0mka.squig.link/data/TE0%20Wide%2047%20OI%20L.txt	Truthear Zero 47Ω OI	Truthear Zero 47Ω OI	ignore	
+https://kr0mka.squig.link/data/TE0%20Wide%2047%20OI%20R.txt	Truthear Zero 47Ω OI	Truthear Zero 47Ω OI	ignore	
+https://kr0mka.squig.link/data/TE0%20Wide%20L.txt	Truthear Zero 	Truthear x Crinacle Zero	in-ear	 711
+https://kr0mka.squig.link/data/TE0%20Wide%20R.txt	Truthear Zero 	Truthear x Crinacle Zero	in-ear	 711
+https://kr0mka.squig.link/data/556%20L.txt	YU9 Audio 556	YU9 Audio U-556	in-ear	 711
+https://kr0mka.squig.link/data/556%20R.txt	YU9 Audio 556	YU9 Audio U-556	in-ear	 711

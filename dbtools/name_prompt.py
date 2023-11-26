@@ -12,6 +12,7 @@ class NamePrompt:
         self._item = item
         self.callback = callback
         self._guessed_name = guessed_name or item.source_name or ''
+        self._guessed_name = self._guessed_name.strip()
         self._name_proposals = name_proposals if name_proposals is not None else []
         self._similar_names = similar_names if similar_names is not None else []
         # UI elements
@@ -35,8 +36,8 @@ class NamePrompt:
             widgets.HBox([
                 widgets.VBox([
                     widgets.HTML(
-                        value=f'<h4 style="margin: 0; margin-bottom: -12px; text-align: center">{self.name}</h4>'
-                              f'<i style="text-align: center; display: inline-block; width: 100%">'
+                        value=f'<h4 style="margin: 0;text-align: center; line-height: 1.7">{self.name}</h4>'
+                              f'<i style="text-align: center; display: inline-block; width: 100%; line-height: 1">'
                               f'{urllib.parse.unquote(self.item.url) or self.item.source_name}</i>'),
                 ], layout=widgets.Layout(width='400px', text_align='center')),
                 self.search_button
@@ -72,7 +73,7 @@ class NamePrompt:
     def guessed_name(self, value):
         if self.guessed_name == self.text_field.value:
             # User hasn't updated text field value manually, safe to update to new guessed name
-            self._guessed_name = value
+            self._guessed_name = value.strip()
             self.text_field.value = self._guessed_name
             self.reload_ui()
 
@@ -88,7 +89,9 @@ class NamePrompt:
         if self._name_proposals is not None:
             for item in name_proposals.items:
                 btn = widgets.Button(
-                    description=f'{item.name}', button_style='primary', layout=widgets.Layout(width='400px'))
+                    description=f'{item.name}',
+                    button_style='success' if self.guessed_name and item.name.lower() == self.guessed_name.lower() else 'primary',
+                    layout=widgets.Layout(width='400px'))
                 btn.on_click(self.handle_name_proposal_click)
                 self._name_proposal_buttons.append(btn)
             self.reload_ui()
