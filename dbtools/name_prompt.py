@@ -15,8 +15,7 @@ class NamePrompt:
         self._name_proposals = name_proposals if name_proposals is not None else []
         self._similar_names = similar_names if similar_names is not None else []
         # UI elements
-        self.title = None
-        self.search_button = widgets.Button(description='🔎', layout=widgets.Layout(width='48px'))
+        self.search_button = widgets.Button(description='🔎', layout=widgets.Layout(width='48px', height='44px'))
         self.search_button.on_click(self.handle_search)
         self._name_proposal_buttons = []
         self.text_field = widgets.Text(value=self.guessed_name, layout=widgets.Layout(width='400px'))
@@ -29,12 +28,19 @@ class NamePrompt:
         self.reload_ui()
 
     def reload_ui(self):
-        self.title = f'<h4 style="margin: 0">{self.item.url or self.item.source_name}</h4>'
         for button in self.form_buttons:
             button.button_style = 'success' if button.description == self.item.form else (
                 'danger' if button.description == 'ignore' else 'warning')
         self.widget = widgets.VBox([
-            widgets.HBox([widgets.HTML(value=self.title), self.search_button]),
+            widgets.HBox([
+                widgets.VBox([
+                    widgets.HTML(
+                        value=f'<h4 style="margin: 0; margin-bottom: -12px; text-align: center">{self.name}</h4>'
+                              f'<i style="text-align: center; display: inline-block; width: 100%">'
+                              f'{urllib.parse.unquote(self.item.url) or self.item.source_name}</i>'),
+                ], layout=widgets.Layout(width='400px', text_align='center')),
+                self.search_button
+            ]),
             widgets.HBox([
                 widgets.VBox([
                     *self._name_proposal_buttons,  # Name suggestions
