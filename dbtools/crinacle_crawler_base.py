@@ -60,7 +60,7 @@ class CrinacleCrawlerBase(Crawler, ABC):
     @staticmethod
     def normalize_file_name(file_name):
         file_name = urllib.parse.unquote(file_name)
-        file_name = re.sub(r' [LR]\.txt$', '', file_name)
+        file_name = re.sub(r' [LR]\d?\.txt$', '', file_name)
         file_name = re.sub(r'\.txt$', '', file_name)
         return file_name
 

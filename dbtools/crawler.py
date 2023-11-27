@@ -3,6 +3,7 @@
 import sys
 import urllib
 from pathlib import Path
+import numpy as np
 import pandas as pd
 from rapidfuzz import fuzz
 import requests
@@ -77,8 +78,10 @@ class Crawler(ABC):
         """
         path = self.measurements_path.joinpath('name_index.tsv')
         if not path.exists():
-            return NameIndex()
-        return NameIndex.read_tsv(path)
+            self.name_index = NameIndex()
+        else:
+            self.name_index = NameIndex.read_tsv(path)
+        return self.name_index
 
     def write_name_index(self):
         """Writes name index to a file
@@ -164,12 +167,17 @@ class Crawler(ABC):
         models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
 
         # Calculate ratios
-        partial_ratios = [fuzzy(fuzz.partial_ratio, model, false_model) for model in models.model.tolist()]
+        # Partial ratio to capture the model name (without mods) approximately
+        partial_ratios = np.array([fuzzy(
+            fuzz.partial_ratio, re.sub(r' \(.*\)$', '', model), re.sub(r' \(.*\)$', '', false_model)
+        ) for model in models.model.tolist()])
+        partial_ratios = np.round(partial_ratios / 2) * 2
+        # Ratio to fine sort all good model matches
         ratios = [fuzzy(fuzz.ratio, model, false_model) for model in models.model.tolist()]
 
         models = models.assign(partial_ratio=partial_ratios)
         models = models.assign(ratio=ratios)
-        models.sort_values('ratio', ascending=False, inplace=True)
+        models.sort_values(['partial_ratio', 'ratio'], ascending=False, inplace=True)
         models = models[models.partial_ratio >= threshold]
         proposals = []
         for i, row in models.iterrows():

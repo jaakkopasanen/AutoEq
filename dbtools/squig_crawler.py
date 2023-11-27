@@ -7,6 +7,7 @@ import numpy as np
 import json
 import requests
 from autoeq.frequency_response import FrequencyResponse
+from autoeq.utils import make_file_name_allowed
 from dbtools.crinacle_crawler_base import CrinacleCrawlerBase
 ROOT_PATH = Path(__file__).parent.parent
 if str(ROOT_PATH) not in sys.path:
@@ -52,7 +53,7 @@ class SquigCrawler(CrinacleCrawlerBase):
 
     @property
     def measurements_path(self):
-        return MEASUREMENTS_PATH.joinpath(self.name)
+        return MEASUREMENTS_PATH.joinpath(make_file_name_allowed(self.name))
 
     @property
     def base_url(self):
@@ -128,7 +129,7 @@ class SquigCrawler(CrinacleCrawlerBase):
         if name is None:  # This looks for a name in the phone book
             normalized_file_name = self.normalize_file_name(item.url.split('/')[-1])
             if item.form is not None:  # Form is known, use the phone book
-                if normalized_file_name in self.book_maps[item.form]:
+                if item.form in self.book_maps and normalized_file_name in self.book_maps[item.form]:
                     name = self.book_maps[item.form][normalized_file_name]
             else:  # Form is not know, iterate through all phone books
                 for book_map in self.book_maps.values():
