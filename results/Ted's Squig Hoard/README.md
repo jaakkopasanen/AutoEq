@@ -1,0 +1,17 @@
+# Ted's Squig Hoard Results
+
+- [7Hz Salnotes Dioko](./in-ear/7Hz%20Salnotes%20Dioko)
+- [7Hz Salnotes Zero](./in-ear/7Hz%20Salnotes%20Zero)
+- [DUNU Titan S](./in-ear/DUNU%20Titan%20S)
+- [Kinera Celest Wyvern Pro](./in-ear/Kinera%20Celest%20Wyvern%20Pro)
+- [Kinera Freya 2.0](./in-ear/Kinera%20Freya%202.0)
+- [Kinera Hodur](./in-ear/Kinera%20Hodur)
+- [Kinera Imperial Loki Emerald](./in-ear/Kinera%20Imperial%20Loki%20Emerald)
+- [Kinera Imperial Nanna](./in-ear/Kinera%20Imperial%20Nanna)
+- [Kinera Imperial Odin](./in-ear/Kinera%20Imperial%20Odin)
+- [Kinera Imperial URD](./in-ear/Kinera%20Imperial%20URD)
+- [Kinera Norn](./in-ear/Kinera%20Norn)
+- [Kinera Skuld](./in-ear/Kinera%20Skuld)
+- [Moondrop Chu](./in-ear/Moondrop%20Chu)
+- [Moondrop Quarks](./in-ear/Moondrop%20Quarks)
+- [Symphonium Audio Meteor](./in-ear/Symphonium%20Audio%20Meteor)

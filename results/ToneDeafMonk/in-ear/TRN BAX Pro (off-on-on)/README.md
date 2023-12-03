@@ -1,0 +1,37 @@
+# TRN BAX Pro (off-on-on)
+See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
+
+### Parametric EQs
+You can use filters 1-5 or 1-10. Apply preamp of -4.8 dB or -6.0 dB, respectively.
+
+|   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|-----------|-----------|------|-------------|
+|   1 | LowShelf  |       105 | 0.7  |         6.8 |
+|   2 | Peaking   |        76 | 0.28 |        -4.4 |
+|   3 | Peaking   |       872 | 0.67 |         3.6 |
+|   4 | Peaking   |      1965 | 1.23 |        -4.5 |
+|   5 | Peaking   |      7518 | 3.27 |         4.8 |
+|   6 | Peaking   |      2914 | 3.58 |         1.7 |
+|   7 | Peaking   |      3822 | 4.68 |        -2.1 |
+|   8 | Peaking   |      5267 | 4.37 |        -1.8 |
+|   9 | Peaking   |      8155 | 5.86 |        -2.2 |
+|  10 | HighShelf |     10000 | 0.7  |         5.9 |
+
+### Fixed Band EQs
+When using fixed band (also called graphic) equalizer, apply preamp of **-11.1 dB** (if available) and set gains manually with these parameters.
+
+|   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
+|-----|---------|-----------|------|-------------|
+|   1 | Peaking |        31 | 1.41 |         4.2 |
+|   2 | Peaking |        62 | 1.41 |         1.4 |
+|   3 | Peaking |       125 | 1.41 |        -1.6 |
+|   4 | Peaking |       250 | 1.41 |        -2.4 |
+|   5 | Peaking |       500 | 1.41 |         1.4 |
+|   6 | Peaking |      1000 | 1.41 |         3   |
+|   7 | Peaking |      2000 | 1.41 |        -3.3 |
+|   8 | Peaking |      4000 | 1.41 |        -1.6 |
+|   9 | Peaking |      8000 | 1.41 |         3.1 |
+|  10 | Peaking |     16000 | 1.41 |        10.9 |
+
+### Graphs
+![](./TRN%20BAX%20Pro%20(off-on-on).png)
