@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.2 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         6.1 |
-|   2 | Peaking   |       206 | 0.52 |        -3.6 |
-|   3 | Peaking   |      2402 | 1.31 |         3.1 |
-|   4 | Peaking   |      3912 | 1.51 |         5.5 |
-|   5 | Peaking   |      7459 | 1.51 |        -3.2 |
-|   6 | Peaking   |       438 | 1.47 |        -0.4 |
-|   7 | Peaking   |       925 | 2.48 |         1.3 |
-|   8 | Peaking   |      1369 | 2.99 |        -0.8 |
-|   9 | Peaking   |      8807 | 3.38 |         1.1 |
-|  10 | HighShelf |     10000 | 0.7  |        -2.6 |
+|   1 | LowShelf  |       105 | 0.7  |         5   |
+|   2 | Peaking   |       192 | 0.47 |        -3.6 |
+|   3 | Peaking   |      2417 | 1.21 |         3.1 |
+|   4 | Peaking   |      3954 | 1.41 |         5.5 |
+|   5 | Peaking   |      7370 | 1.38 |        -3.3 |
+|   6 | Peaking   |       413 | 1.43 |        -0.4 |
+|   7 | Peaking   |       920 | 2.4  |         1.3 |
+|   8 | Peaking   |      1375 | 2.87 |        -0.8 |
+|   9 | Peaking   |      8873 | 3.22 |         1.2 |
+|  10 | HighShelf |     10000 | 0.7  |        -2.4 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-6.3 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         6.6 |
-|   2 | Peaking |        62 | 1.41 |         3.6 |
-|   3 | Peaking |       125 | 1.41 |        -1   |
-|   4 | Peaking |       250 | 1.41 |        -3.5 |
-|   5 | Peaking |       500 | 1.41 |        -1.6 |
-|   6 | Peaking |      1000 | 1.41 |         0.3 |
-|   7 | Peaking |      2000 | 1.41 |         2.4 |
+|   1 | Peaking |        31 | 1.41 |         5.3 |
+|   2 | Peaking |        62 | 1.41 |         2.5 |
+|   3 | Peaking |       125 | 1.41 |        -1.4 |
+|   4 | Peaking |       250 | 1.41 |        -3.4 |
+|   5 | Peaking |       500 | 1.41 |        -1.5 |
+|   6 | Peaking |      1000 | 1.41 |         0.4 |
+|   7 | Peaking |      2000 | 1.41 |         2.6 |
 |   8 | Peaking |      4000 | 1.41 |         6.3 |
-|   9 | Peaking |      8000 | 1.41 |        -3.4 |
-|  10 | Peaking |     16000 | 1.41 |        -4.6 |
+|   9 | Peaking |      8000 | 1.41 |        -3.3 |
+|  10 | Peaking |     16000 | 1.41 |        -4.5 |
 
 ### Graphs
 ![](./Heir%20Audio%20Tzar%20350.png)

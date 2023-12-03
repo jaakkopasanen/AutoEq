@@ -275,6 +275,7 @@ PEQ_CONFIGS = {
             {'fc': 60.0, 'q': 1.0, 'type': 'PEAKING'},
             {'fc': 150.0, 'q': 1.0, 'type': 'PEAKING'},
             {'fc': 400.0, 'q': 1.0, 'type': 'PEAKING'},
+            {'fc': 1000.0, 'q': 1.0, 'type': 'PEAKING'},
             {'fc': 2400.0, 'q': 1.0, 'type': 'PEAKING'},
             {'fc': 15000.0, 'q': 1.0, 'type': 'PEAKING'},
         ]

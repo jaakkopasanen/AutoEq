@@ -950,6 +950,8 @@ from the same source.
 - [Bose QuietComfort 45](./Rtings/over-ear/Bose%20QuietComfort%2045) by Rtings
 - [Bose QuietComfort Earbuds](./Rtings/in-ear/Bose%20QuietComfort%20Earbuds) by Rtings
 - [Bose QuietComfort Earbuds II](./Rtings/in-ear/Bose%20QuietComfort%20Earbuds%20II) by Rtings
+- [Bose QuietComfort Ultra Earbuds](./Rtings/in-ear/Bose%20QuietComfort%20Ultra%20Earbuds) by Rtings
+- [Bose QuietComfort Ultra Headphones](./Rtings/over-ear/Bose%20QuietComfort%20Ultra%20Headphones) by Rtings
 - [Bose QuietControl 30](./Rtings/over-ear/Bose%20QuietControl%2030) by Rtings
 - [Bose SoundLink Around-Ear II](./Rtings/over-ear/Bose%20SoundLink%20Around-Ear%20II) by Rtings
 - [Bose SoundLink On-Ear](./Rtings/over-ear/Bose%20SoundLink%20On-Ear) by Rtings
@@ -3056,7 +3058,7 @@ from the same source.
 - [Raycon E25](./Rtings/in-ear/Raycon%20E25) by Rtings
 - [Raycon E50](./Rtings/in-ear/Raycon%20E50) by Rtings
 - [Raycon E55](./Rtings/in-ear/Raycon%20E55) by Rtings
-- [Raycon The Fitness Earbuds](./Rtings/in-ear/Raycon%20The%20Fitness%20Earbuds) by Rtings
+- [Raycon The Fitness Earbuds (2021 Edition)](./Rtings/in-ear/Raycon%20The%20Fitness%20Earbuds%20(2021%20Edition)) by Rtings
 - [Razer Barracuda](./Rtings/over-ear/Razer%20Barracuda) by Rtings
 - [Razer Barracuda Pro](./Rtings/over-ear/Razer%20Barracuda%20Pro) by Rtings
 - [Razer Barracuda X](./crinacle/GRAS%2043AG-7%20over-ear/Razer%20Barracuda%20X) by crinacle on GRAS 43AG-7
@@ -3141,6 +3143,7 @@ from the same source.
 - [Samsung Galaxy Buds](./oratory1990/in-ear/Samsung%20Galaxy%20Buds) by oratory1990
 - [Samsung Galaxy Buds](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds) by crinacle on 711
 - [Samsung Galaxy Buds](./Rtings/in-ear/Samsung%20Galaxy%20Buds) by Rtings
+- [Samsung Galaxy Buds FE](./Rtings/in-ear/Samsung%20Galaxy%20Buds%20FE) by Rtings
 - [Samsung Galaxy Buds Live](./Rtings/earbud/Samsung%20Galaxy%20Buds%20Live) by Rtings
 - [Samsung Galaxy Buds Plus](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds%20Plus) by crinacle on 711
 - [Samsung Galaxy Buds Plus](./Rtings/in-ear/Samsung%20Galaxy%20Buds%20Plus) by Rtings
@@ -4320,6 +4323,7 @@ from the same source.
 - [Truthear Hola](./crinacle/711%20in-ear/Truthear%20Hola) by crinacle on 711
 - [Truthear x Crinacle Zero](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero) by crinacle on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero) by crinacle on 711
+- [Truthear x Crinacle Zero](./Rtings/in-ear/Truthear%20x%20Crinacle%20Zero) by Rtings
 - [Truthear x Crinacle Zero RED](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED) by crinacle on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero RED](./crinacle/711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED) by crinacle on 711
 - [Truthear x Crinacle Zero RED (Bass+)](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(Bass+)) by crinacle on Bruel & Kjaer 4620

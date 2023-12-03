@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -2.1 dB or -2.1 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         0.6 |
-|   2 | Peaking   |        73 | 0.96 |         1.5 |
-|   3 | Peaking   |       215 | 1.19 |        -0.6 |
-|   4 | Peaking   |       813 | 2.89 |         1.3 |
-|   5 | Peaking   |      1365 | 2.24 |        -1.5 |
-|   6 | Peaking   |      3100 | 3.97 |        -0.9 |
-|   7 | Peaking   |      4242 | 5.95 |         0.9 |
-|   8 | Peaking   |      6776 | 2.88 |         1.2 |
-|   9 | Peaking   |      9573 | 2.09 |         3.1 |
-|  10 | HighShelf |     10000 | 0.7  |        -4.8 |
+|   1 | LowShelf  |       105 | 0.7  |        -0.7 |
+|   2 | Peaking   |        70 | 0.86 |         1.9 |
+|   3 | Peaking   |       748 | 1.27 |         2.3 |
+|   4 | Peaking   |      1237 | 2.32 |        -2.2 |
+|   5 | Peaking   |      3331 | 3.24 |        -1.3 |
+|   6 | Peaking   |       943 | 3.4  |         0.4 |
+|   7 | Peaking   |       987 | 4.23 |        -0.6 |
+|   8 | Peaking   |      3024 | 6    |        -0.1 |
+|   9 | Peaking   |      6698 | 5.97 |         1.6 |
+|  10 | HighShelf |     10000 | 0.7  |        -8.6 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-2.1 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-1.6 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         0.8 |
-|   2 | Peaking |        62 | 1.41 |         1.8 |
+|   1 | Peaking |        31 | 1.41 |        -0.5 |
+|   2 | Peaking |        62 | 1.41 |         1.4 |
 |   3 | Peaking |       125 | 1.41 |         0.6 |
-|   4 | Peaking |       250 | 1.41 |        -0.8 |
-|   5 | Peaking |       500 | 1.41 |         0.4 |
-|   6 | Peaking |      1000 | 1.41 |         0   |
-|   7 | Peaking |      2000 | 1.41 |        -0.8 |
+|   4 | Peaking |       250 | 1.41 |        -0.2 |
+|   5 | Peaking |       500 | 1.41 |         1.5 |
+|   6 | Peaking |      1000 | 1.41 |         0.2 |
+|   7 | Peaking |      2000 | 1.41 |        -0.5 |
 |   8 | Peaking |      4000 | 1.41 |         0.1 |
-|   9 | Peaking |      8000 | 1.41 |         1.8 |
-|  10 | Peaking |     16000 | 1.41 |        -8.4 |
+|   9 | Peaking |      8000 | 1.41 |        -1.2 |
+|  10 | Peaking |     16000 | 1.41 |       -12   |
 
 ### Graphs
 ![](./Moondrop%20Blessing%203.png)

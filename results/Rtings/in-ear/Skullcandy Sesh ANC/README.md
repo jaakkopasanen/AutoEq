@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.8 dB or -6.8 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.1 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |       -10.3 |
-|   2 | Peaking   |        50 | 0.43 |        10.4 |
-|   3 | Peaking   |       169 | 0.94 |        -3.7 |
-|   4 | Peaking   |      4366 | 1.6  |        10   |
-|   5 | Peaking   |      6464 | 1.39 |        -8.8 |
-|   6 | Peaking   |        38 | 4.16 |         0.6 |
-|   7 | Peaking   |       293 | 2.78 |        -0.5 |
-|   8 | Peaking   |       854 | 2.19 |         1.6 |
-|   9 | Peaking   |      1526 | 2.3  |        -1   |
-|  10 | HighShelf |     10000 | 0.7  |         4.2 |
+|   1 | LowShelf  |       105 | 0.7  |        -7.3 |
+|   2 | Peaking   |        51 | 0.77 |         6.8 |
+|   3 | Peaking   |       712 | 1.72 |         2.5 |
+|   4 | Peaking   |      4308 | 1.55 |        10.2 |
+|   5 | Peaking   |      6933 | 1.03 |       -10   |
+|   6 | Peaking   |        90 | 2.33 |         1.2 |
+|   7 | Peaking   |       160 | 1.05 |        -1   |
+|   8 | Peaking   |       425 | 2.51 |         0.8 |
+|   9 | Peaking   |      1355 | 2.91 |        -0.8 |
+|  10 | HighShelf |     10000 | 0.7  |         2.1 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-9.8 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-5.5 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |        -2.8 |
-|   2 | Peaking |        62 | 1.41 |         1.7 |
-|   3 | Peaking |       125 | 1.41 |        -1.1 |
-|   4 | Peaking |       250 | 1.41 |        -0.9 |
-|   5 | Peaking |       500 | 1.41 |         0.6 |
-|   6 | Peaking |      1000 | 1.41 |         1.2 |
-|   7 | Peaking |      2000 | 1.41 |        -1.5 |
-|   8 | Peaking |      4000 | 1.41 |         6.7 |
-|   9 | Peaking |      8000 | 1.41 |        -7.1 |
-|  10 | Peaking |     16000 | 1.41 |        10.1 |
+|   1 | Peaking |        31 | 1.41 |        -4.3 |
+|   2 | Peaking |        62 | 1.41 |         1.2 |
+|   3 | Peaking |       125 | 1.41 |        -0.7 |
+|   4 | Peaking |       250 | 1.41 |        -0.7 |
+|   5 | Peaking |       500 | 1.41 |         2.2 |
+|   6 | Peaking |      1000 | 1.41 |         0.9 |
+|   7 | Peaking |      2000 | 1.41 |        -1   |
+|   8 | Peaking |      4000 | 1.41 |         7   |
+|   9 | Peaking |      8000 | 1.41 |        -9.9 |
+|  10 | Peaking |     16000 | 1.41 |         5.6 |
 
 ### Graphs
 ![](./Skullcandy%20Sesh%20ANC.png)

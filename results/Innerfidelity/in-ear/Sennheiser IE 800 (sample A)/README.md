@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.3 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.4 dB or -6.4 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |        -4.2 |
-|   2 | Peaking   |       192 | 0.67 |        -4.5 |
-|   3 | Peaking   |      1483 | 1.81 |        -2.5 |
-|   4 | Peaking   |      2579 | 1.04 |         6.1 |
-|   5 | Peaking   |      4060 | 2.77 |         3.3 |
-|   6 | Peaking   |        31 | 1.62 |        -0.3 |
-|   7 | Peaking   |        63 | 1.94 |         0.4 |
-|   8 | Peaking   |      5588 | 6    |        -1.8 |
-|   9 | Peaking   |      6352 | 5.88 |         2.5 |
-|  10 | HighShelf |     10000 | 0.7  |        -2.4 |
+|   1 | LowShelf  |       105 | 0.7  |        -3.1 |
+|   2 | Peaking   |       192 | 0.64 |        -4.5 |
+|   3 | Peaking   |      1380 | 1.27 |        -2.5 |
+|   4 | Peaking   |      2567 | 1.09 |         6.2 |
+|   5 | Peaking   |      3962 | 2.66 |         3.4 |
+|   6 | Peaking   |        64 | 2.11 |         0.3 |
+|   7 | Peaking   |      5499 | 6    |        -1.7 |
+|   8 | Peaking   |      6361 | 5.96 |         3   |
+|   9 | Peaking   |      7336 | 3.18 |         0.7 |
+|  10 | HighShelf |     10000 | 0.7  |        -3.8 |
 
 ### Fixed Band EQs
 When using fixed band (also called graphic) equalizer, apply preamp of **-6.4 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |        -4.9 |
-|   2 | Peaking |        62 | 1.41 |        -2.8 |
-|   3 | Peaking |       125 | 1.41 |        -4.3 |
-|   4 | Peaking |       250 | 1.41 |        -3.4 |
-|   5 | Peaking |       500 | 1.41 |        -0.6 |
-|   6 | Peaking |      1000 | 1.41 |        -0.9 |
-|   7 | Peaking |      2000 | 1.41 |         2.9 |
+|   1 | Peaking |        31 | 1.41 |        -3.8 |
+|   2 | Peaking |        62 | 1.41 |        -2.2 |
+|   3 | Peaking |       125 | 1.41 |        -3.9 |
+|   4 | Peaking |       250 | 1.41 |        -3.8 |
+|   5 | Peaking |       500 | 1.41 |        -0.4 |
+|   6 | Peaking |      1000 | 1.41 |        -2.1 |
+|   7 | Peaking |      2000 | 1.41 |         3.1 |
 |   8 | Peaking |      4000 | 1.41 |         5.9 |
 |   9 | Peaking |      8000 | 1.41 |        -0.1 |
-|  10 | Peaking |     16000 | 1.41 |        -5.1 |
+|  10 | Peaking |     16000 | 1.41 |        -7.5 |
 
 ### Graphs
 ![](./Sennheiser%20IE%20800%20(sample%20A).png)

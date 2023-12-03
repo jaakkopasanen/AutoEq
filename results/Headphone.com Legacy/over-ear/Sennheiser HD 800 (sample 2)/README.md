@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.3 dB or -6.3 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         6.5 |
-|   2 | Peaking   |       132 | 0.41 |        -2.4 |
-|   3 | Peaking   |      1641 | 0.91 |         4.3 |
-|   4 | Peaking   |      6087 | 4.36 |        -8.6 |
-|   5 | Peaking   |      8632 | 2.07 |        -2.7 |
-|   6 | Peaking   |        80 | 5.32 |        -0.7 |
-|   7 | Peaking   |      4063 | 6    |        -1.6 |
-|   8 | Peaking   |      4526 | 6    |         1.5 |
-|   9 | Peaking   |      9584 | 1.94 |         3.3 |
-|  10 | HighShelf |     10000 | 0.7  |        -7.5 |
+|   1 | LowShelf  |       105 | 0.7  |         6.3 |
+|   2 | Peaking   |       165 | 0.46 |        -2.5 |
+|   3 | Peaking   |      2124 | 0.75 |         6.8 |
+|   4 | Peaking   |      3511 | 2.66 |        -4.3 |
+|   5 | Peaking   |      6241 | 2.26 |        -9.8 |
+|   6 | Peaking   |      4068 | 6    |        -1   |
+|   7 | Peaking   |      4840 | 5.82 |         2   |
+|   8 | Peaking   |      6225 | 6    |        -1.7 |
+|   9 | Peaking   |      6944 | 5.29 |         3.6 |
+|  10 | HighShelf |     10000 | 0.7  |        -7.2 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.3 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.5 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         6.7 |
-|   2 | Peaking |        62 | 1.41 |         3.2 |
-|   3 | Peaking |       125 | 1.41 |        -0.9 |
-|   4 | Peaking |       250 | 1.41 |        -2   |
-|   5 | Peaking |       500 | 1.41 |        -0.3 |
-|   6 | Peaking |      1000 | 1.41 |         1.7 |
-|   7 | Peaking |      2000 | 1.41 |         4.5 |
-|   8 | Peaking |      4000 | 1.41 |        -1.2 |
-|   9 | Peaking |      8000 | 1.41 |        -4.1 |
-|  10 | Peaking |     16000 | 1.41 |       -11.2 |
+|   2 | Peaking |        62 | 1.41 |         3.6 |
+|   3 | Peaking |       125 | 1.41 |        -0.5 |
+|   4 | Peaking |       250 | 1.41 |        -2.1 |
+|   5 | Peaking |       500 | 1.41 |        -0.4 |
+|   6 | Peaking |      1000 | 1.41 |         1.2 |
+|   7 | Peaking |      2000 | 1.41 |         7.4 |
+|   8 | Peaking |      4000 | 1.41 |        -2.7 |
+|   9 | Peaking |      8000 | 1.41 |        -4.9 |
+|  10 | Peaking |     16000 | 1.41 |       -12   |
 
 ### Graphs
 ![](./Sennheiser%20HD%20800%20(sample%202).png)

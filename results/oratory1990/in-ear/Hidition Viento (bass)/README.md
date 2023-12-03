@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -3.8 dB or -3.8 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -2.8 dB or -2.8 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         2.2 |
-|   2 | Peaking   |        67 | 1.09 |         1.9 |
-|   3 | Peaking   |       237 | 1.13 |        -1.6 |
-|   4 | Peaking   |      5285 | 2.78 |         2.7 |
-|   5 | Peaking   |      8975 | 2.91 |         1.7 |
-|   6 | Peaking   |       426 | 1.78 |        -0.3 |
-|   7 | Peaking   |       904 | 2.37 |         1.3 |
-|   8 | Peaking   |      1446 | 2.53 |        -0.9 |
-|   9 | Peaking   |      2858 | 4.1  |        -0.9 |
-|  10 | HighShelf |     10000 | 0.7  |        -4.2 |
+|   1 | LowShelf  |       105 | 0.7  |         0.5 |
+|   2 | Peaking   |        70 | 0.8  |         2.5 |
+|   3 | Peaking   |       212 | 0.55 |        -1.5 |
+|   4 | Peaking   |       847 | 2.73 |         1.4 |
+|   5 | Peaking   |      5475 | 1.89 |         2.7 |
+|   6 | Peaking   |      1018 | 4.51 |         0.6 |
+|   7 | Peaking   |      1445 | 2.61 |        -0.8 |
+|   8 | Peaking   |      2902 | 3.86 |        -1   |
+|   9 | Peaking   |      9388 | 2.55 |         3.8 |
+|  10 | HighShelf |     10000 | 0.7  |        -5.1 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-4.2 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-2.9 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         2.5 |
-|   2 | Peaking |        62 | 1.41 |         3.6 |
-|   3 | Peaking |       125 | 1.41 |         0.6 |
-|   4 | Peaking |       250 | 1.41 |        -1.8 |
+|   1 | Peaking |        31 | 1.41 |         1   |
+|   2 | Peaking |        62 | 1.41 |         2.6 |
+|   3 | Peaking |       125 | 1.41 |         0.3 |
+|   4 | Peaking |       250 | 1.41 |        -1.7 |
 |   5 | Peaking |       500 | 1.41 |        -0.2 |
-|   6 | Peaking |      1000 | 1.41 |         0.8 |
+|   6 | Peaking |      1000 | 1.41 |         1   |
 |   7 | Peaking |      2000 | 1.41 |        -1.2 |
 |   8 | Peaking |      4000 | 1.41 |         1.3 |
-|   9 | Peaking |      8000 | 1.41 |         2.3 |
-|  10 | Peaking |     16000 | 1.41 |        -9.5 |
+|   9 | Peaking |      8000 | 1.41 |         2.4 |
+|  10 | Peaking |     16000 | 1.41 |        -9.4 |
 
 ### Graphs
 ![](./Hidition%20Viento%20(bass).png)

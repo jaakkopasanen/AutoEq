@@ -2,19 +2,19 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.7 dB or -6.9 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.6 dB or -6.9 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         8.8 |
-|   2 | Peaking   |       110 | 0.24 |        -6.2 |
-|   3 | Peaking   |       890 | 1.36 |         2.7 |
-|   4 | Peaking   |      1924 | 2.64 |         2.6 |
-|   5 | Peaking   |      4260 | 2.75 |         6.5 |
-|   6 | Peaking   |      2938 | 5.5  |        -2.4 |
-|   7 | Peaking   |      3620 | 6    |         1.3 |
-|   8 | Peaking   |      6075 | 6    |        -3.3 |
-|   9 | Peaking   |      9440 | 2.13 |         3   |
+|   1 | LowShelf  |       105 | 0.7  |         8   |
+|   2 | Peaking   |       100 | 0.25 |        -6.5 |
+|   3 | Peaking   |       903 | 1.42 |         2.6 |
+|   4 | Peaking   |      1925 | 2.65 |         2.7 |
+|   5 | Peaking   |      4266 | 2.65 |         6.4 |
+|   6 | Peaking   |      2942 | 5.53 |        -2.4 |
+|   7 | Peaking   |      3614 | 6    |         1.3 |
+|   8 | Peaking   |      6070 | 6    |        -3.3 |
+|   9 | Peaking   |      9412 | 2.07 |         2.9 |
 |  10 | HighShelf |     10000 | 0.7  |         6.3 |
 
 ### Fixed Band EQs
@@ -22,15 +22,15 @@ When using fixed band (also called graphic) equalizer, apply preamp of **-12.1 d
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         6.4 |
-|   2 | Peaking |        62 | 1.41 |         1.4 |
-|   3 | Peaking |       125 | 1.41 |        -2.8 |
-|   4 | Peaking |       250 | 1.41 |        -5   |
+|   1 | Peaking |        31 | 1.41 |         4.9 |
+|   2 | Peaking |        62 | 1.41 |         0.6 |
+|   3 | Peaking |       125 | 1.41 |        -3.4 |
+|   4 | Peaking |       250 | 1.41 |        -4.6 |
 |   5 | Peaking |       500 | 1.41 |        -1.5 |
-|   6 | Peaking |      1000 | 1.41 |         1.7 |
+|   6 | Peaking |      1000 | 1.41 |         1.8 |
 |   7 | Peaking |      2000 | 1.41 |         1.1 |
 |   8 | Peaking |      4000 | 1.41 |         3.5 |
-|   9 | Peaking |      8000 | 1.41 |         1.9 |
+|   9 | Peaking |      8000 | 1.41 |         2   |
 |  10 | Peaking |     16000 | 1.41 |        12   |
 
 ### Graphs

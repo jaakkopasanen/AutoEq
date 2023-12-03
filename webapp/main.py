@@ -299,7 +299,10 @@ def equalize(req: EqualizeRequest):
                     or fixed_band_eq_config['optimizer']['max_time'] > 0.5
             ):
                 fixed_band_eq_config['optimizer']['max_time'] = 0.5
-            fixed_band_peqs = fr.optimize_fixed_band_eq(fixed_band_eq_config, req.fs, preamp=req.preamp)
+
+            fixed_band_peqs = fr.optimize_fixed_band_eq(
+                fixed_band_eq_config, req.fs, preamp=req.preamp,
+                gain_range=2.0 if len(fixed_band_eq_config['filters']) > 10 else None)
             fixed_band_peq = fixed_band_peqs[0]
             fixed_band_peq.sort_filters()
             res['fixed_band_eq'] = fixed_band_peq.to_dict()

@@ -315,22 +315,22 @@ def write_ranking_table(paths):
 
     s = f'''# Headphone Ranking
             Headphones ranked by Harman headphone listener preference scores.
-    
+
             Tables include the preference score (Score), standard deviation of the error (STD), slope of the logarithimc
             regression fit of the error (Slope) for both over-ear and in-ear headphones and average of the absolute error (Average) for in-ears
             headphones. STD tells how much the headphone deviates from neutral and slope tells if the headphone is warm (< 0) or
             bright (> 0).
-    
+
             Keep in mind that these numbers are calculated with deviations from Harman targets and you're preferences might
             differ.
-    
+
             Over-ear table includes headphones measured by oratory1990 and Crinacle using GRAS systems. Measurements from
             other databases and systems are not included because they are not compatible with measurements, targets and
             preference scoring developed by Sean Olive et al.
-    
+
             ## Over-ear Headphones    
             {overear_str}
-    
+
             ## In-ear Headphones
             {inear_str}
 

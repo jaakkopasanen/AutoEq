@@ -7,31 +7,31 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.5 dB or -6.3 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         5.4 |
-|   2 | Peaking   |       217 | 0.47 |         5.2 |
-|   3 | Peaking   |      2099 | 0.96 |       -11.1 |
-|   4 | Peaking   |      4106 | 1.9  |       -14.8 |
-|   5 | Peaking   |      5124 | 0.72 |        10.1 |
-|   6 | Peaking   |        65 | 1.69 |        -0.3 |
-|   7 | Peaking   |       929 | 1.91 |         0.7 |
-|   8 | Peaking   |      1332 | 3.55 |        -1   |
-|   9 | Peaking   |      8236 | 2.79 |        -2.4 |
-|  10 | HighShelf |     10000 | 0.7  |         5.8 |
+|   2 | Peaking   |       220 | 0.46 |         5.2 |
+|   3 | Peaking   |      2127 | 0.95 |       -11.1 |
+|   4 | Peaking   |      4081 | 2.33 |       -12.2 |
+|   5 | Peaking   |      5476 | 0.68 |         7.8 |
+|   6 | Peaking   |        65 | 1.67 |        -0.3 |
+|   7 | Peaking   |       937 | 2.01 |         0.7 |
+|   8 | Peaking   |      1331 | 3.53 |        -1   |
+|   9 | Peaking   |      8248 | 2.88 |        -2.4 |
+|  10 | HighShelf |     10000 | 0.7  |         5.9 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-11.8 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-11.9 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
 |   1 | Peaking |        31 | 1.41 |         6.4 |
 |   2 | Peaking |        62 | 1.41 |         4.2 |
-|   3 | Peaking |       125 | 1.41 |         4.7 |
+|   3 | Peaking |       125 | 1.41 |         4.8 |
 |   4 | Peaking |       250 | 1.41 |         4.3 |
-|   5 | Peaking |       500 | 1.41 |         1.8 |
+|   5 | Peaking |       500 | 1.41 |         1.9 |
 |   6 | Peaking |      1000 | 1.41 |        -0.2 |
 |   7 | Peaking |      2000 | 1.41 |        -9.2 |
-|   8 | Peaking |      4000 | 1.41 |        -6.7 |
-|   9 | Peaking |      8000 | 1.41 |         5.5 |
-|  10 | Peaking |     16000 | 1.41 |        11.6 |
+|   8 | Peaking |      4000 | 1.41 |        -6.6 |
+|   9 | Peaking |      8000 | 1.41 |         5.7 |
+|  10 | Peaking |     16000 | 1.41 |        11.7 |
 
 ### Graphs
 ![](./Lear%20NS-U1%20(all%20Off).png)

@@ -6,32 +6,32 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.2 dB or -6.2 dB, respectivel
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         6.7 |
-|   2 | Peaking   |       146 | 0.18 |        -1.7 |
-|   3 | Peaking   |      1173 | 0.46 |         2.4 |
-|   4 | Peaking   |      4034 | 1.13 |         7.3 |
-|   5 | Peaking   |      5877 | 1.37 |       -11.9 |
-|   6 | Peaking   |       396 | 1.37 |        -0.2 |
-|   7 | Peaking   |       850 | 2.38 |         0.5 |
-|   8 | Peaking   |      1352 | 3.67 |        -1   |
-|   9 | Peaking   |      1964 | 3.84 |         0.8 |
-|  10 | HighShelf |     10000 | 0.7  |        -2.1 |
+|   1 | LowShelf  |       105 | 0.7  |         6.2 |
+|   2 | Peaking   |       210 | 0.77 |        -1.4 |
+|   3 | Peaking   |      2195 | 0.75 |         3.6 |
+|   4 | Peaking   |      3878 | 1.89 |         7.1 |
+|   5 | Peaking   |      5665 | 0.86 |        -8.8 |
+|   6 | Peaking   |       754 | 2.27 |         0.6 |
+|   7 | Peaking   |      1237 | 2.77 |        -0.5 |
+|   8 | Peaking   |      6875 | 6    |         1.1 |
+|   9 | Peaking   |      9652 | 3.82 |         1.3 |
+|  10 | HighShelf |     10000 | 0.7  |        -3.2 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.0 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-7.4 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         6.2 |
-|   2 | Peaking |        62 | 1.41 |         3.5 |
-|   3 | Peaking |       125 | 1.41 |         0.7 |
-|   4 | Peaking |       250 | 1.41 |        -1.8 |
-|   5 | Peaking |       500 | 1.41 |        -0   |
-|   6 | Peaking |      1000 | 1.41 |         1.5 |
-|   7 | Peaking |      2000 | 1.41 |         2.9 |
-|   8 | Peaking |      4000 | 1.41 |         1.8 |
-|   9 | Peaking |      8000 | 1.41 |        -7   |
-|  10 | Peaking |     16000 | 1.41 |        -3.1 |
+|   1 | Peaking |        31 | 1.41 |         6.4 |
+|   2 | Peaking |        62 | 1.41 |         4.6 |
+|   3 | Peaking |       125 | 1.41 |         0.6 |
+|   4 | Peaking |       250 | 1.41 |        -2   |
+|   5 | Peaking |       500 | 1.41 |         0.4 |
+|   6 | Peaking |      1000 | 1.41 |         0.5 |
+|   7 | Peaking |      2000 | 1.41 |         3   |
+|   8 | Peaking |      4000 | 1.41 |         1.7 |
+|   9 | Peaking |      8000 | 1.41 |        -6.7 |
+|  10 | Peaking |     16000 | 1.41 |        -6.9 |
 
 ### Graphs
 ![](./Noble%20Audio%20PR%20P%20Tuning.png)

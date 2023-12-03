@@ -7,30 +7,30 @@ You can use filters 1-5 or 1-10. Apply preamp of -6.7 dB or -6.7 dB, respectivel
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
 |   1 | LowShelf  |       105 | 0.7  |         7   |
-|   2 | Peaking   |        88 | 0.9  |        -5.4 |
-|   3 | Peaking   |      1654 | 0.22 |         4.1 |
-|   4 | Peaking   |      2175 | 1.83 |        -5.5 |
-|   5 | Peaking   |      7078 | 0.99 |        -9.2 |
-|   6 | Peaking   |      2879 | 3.88 |        -2.5 |
-|   7 | Peaking   |      4089 | 2.28 |         3.8 |
-|   8 | Peaking   |      5671 | 6    |        -8.3 |
-|   9 | Peaking   |      7016 | 2.33 |         3.6 |
-|  10 | HighShelf |     10000 | 0.7  |        -6.7 |
+|   2 | Peaking   |        85 | 0.88 |        -5.3 |
+|   3 | Peaking   |      2293 | 1.04 |        -7   |
+|   4 | Peaking   |      2302 | 0.25 |         6.7 |
+|   5 | Peaking   |      7303 | 0.83 |       -10.1 |
+|   6 | Peaking   |      3321 | 4.17 |        -3.1 |
+|   7 | Peaking   |      4573 | 2.13 |         4.3 |
+|   8 | Peaking   |      5695 | 5.99 |        -8.5 |
+|   9 | Peaking   |      7301 | 2.17 |         2.9 |
+|  10 | HighShelf |     10000 | 0.7  |        -6.3 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-7.9 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-8.0 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         7.7 |
-|   2 | Peaking |        62 | 1.41 |         0.7 |
-|   3 | Peaking |       125 | 1.41 |        -1.7 |
-|   4 | Peaking |       250 | 1.41 |         0   |
+|   1 | Peaking |        31 | 1.41 |         7.9 |
+|   2 | Peaking |        62 | 1.41 |         0.3 |
+|   3 | Peaking |       125 | 1.41 |        -1.5 |
+|   4 | Peaking |       250 | 1.41 |        -0.3 |
 |   5 | Peaking |       500 | 1.41 |         2.7 |
-|   6 | Peaking |      1000 | 1.41 |         3.1 |
-|   7 | Peaking |      2000 | 1.41 |        -1.9 |
-|   8 | Peaking |      4000 | 1.41 |         1.7 |
-|   9 | Peaking |      8000 | 1.41 |        -7.9 |
+|   6 | Peaking |      1000 | 1.41 |         3.4 |
+|   7 | Peaking |      2000 | 1.41 |        -1.2 |
+|   8 | Peaking |      4000 | 1.41 |         0.6 |
+|   9 | Peaking |      8000 | 1.41 |        -6.9 |
 |  10 | Peaking |     16000 | 1.41 |       -12   |
 
 ### Graphs

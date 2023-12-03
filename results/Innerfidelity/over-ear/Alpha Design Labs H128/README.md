@@ -2,36 +2,36 @@
 See [usage instructions](https://github.com/jaakkopasanen/AutoEq#usage) for more options and info.
 
 ### Parametric EQs
-You can use filters 1-5 or 1-10. Apply preamp of -6.1 dB or -6.5 dB, respectively.
+You can use filters 1-5 or 1-10. Apply preamp of -6.8 dB or -6.8 dB, respectively.
 
 |   # | Type      |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|-----------|-----------|------|-------------|
-|   1 | LowShelf  |       105 | 0.7  |         7.3 |
-|   2 | Peaking   |        62 | 0.29 |        -8.9 |
-|   3 | Peaking   |       768 | 1.2  |        -1.7 |
-|   4 | Peaking   |      4288 | 1.19 |         5.9 |
-|   5 | Peaking   |      6762 | 5.06 |         2.9 |
-|   6 | Peaking   |      1961 | 3.58 |         1.4 |
-|   7 | Peaking   |      2600 | 2.64 |        -0.9 |
-|   8 | Peaking   |      5579 | 6    |        -1.5 |
-|   9 | Peaking   |      8148 | 3.88 |        -1.7 |
-|  10 | HighShelf |     10000 | 0.7  |         6.4 |
+|   1 | LowShelf  |       105 | 0.7  |         4.6 |
+|   2 | Peaking   |        83 | 0.29 |        -6.8 |
+|   3 | Peaking   |       747 | 1.78 |        -1.4 |
+|   4 | Peaking   |      4587 | 3.51 |         2.8 |
+|   5 | Peaking   |      5847 | 0.61 |         4.3 |
+|   6 | Peaking   |      1996 | 3.55 |         1.9 |
+|   7 | Peaking   |      3217 | 5.04 |        -2   |
+|   8 | Peaking   |      6607 | 5.76 |         1.4 |
+|   9 | Peaking   |      8401 | 3.77 |        -3.6 |
+|  10 | HighShelf |     10000 | 0.7  |         5.8 |
 
 ### Fixed Band EQs
-When using fixed band (also called graphic) equalizer, apply preamp of **-11.9 dB** (if available) and set gains manually with these parameters.
+When using fixed band (also called graphic) equalizer, apply preamp of **-12.2 dB** (if available) and set gains manually with these parameters.
 
 |   # | Type    |   Fc (Hz) |    Q |   Gain (dB) |
 |-----|---------|-----------|------|-------------|
-|   1 | Peaking |        31 | 1.41 |         0.9 |
-|   2 | Peaking |        62 | 1.41 |        -2.3 |
-|   3 | Peaking |       125 | 1.41 |        -4.2 |
-|   4 | Peaking |       250 | 1.41 |        -3.4 |
-|   5 | Peaking |       500 | 1.41 |        -1.4 |
-|   6 | Peaking |      1000 | 1.41 |        -1.6 |
-|   7 | Peaking |      2000 | 1.41 |         0.6 |
-|   8 | Peaking |      4000 | 1.41 |         5.5 |
-|   9 | Peaking |      8000 | 1.41 |         2   |
-|  10 | Peaking |     16000 | 1.41 |        11.8 |
+|   1 | Peaking |        31 | 1.41 |         1   |
+|   2 | Peaking |        62 | 1.41 |        -2.7 |
+|   3 | Peaking |       125 | 1.41 |        -3.8 |
+|   4 | Peaking |       250 | 1.41 |        -3.7 |
+|   5 | Peaking |       500 | 1.41 |        -1.5 |
+|   6 | Peaking |      1000 | 1.41 |        -1.3 |
+|   7 | Peaking |      2000 | 1.41 |         1.2 |
+|   8 | Peaking |      4000 | 1.41 |         4.4 |
+|   9 | Peaking |      8000 | 1.41 |         2.9 |
+|  10 | Peaking |     16000 | 1.41 |        12   |
 
 ### Graphs
 ![](./Alpha%20Design%20Labs%20H128.png)
