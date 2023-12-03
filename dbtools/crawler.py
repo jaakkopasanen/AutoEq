@@ -448,7 +448,7 @@ class Crawler(ABC):
         self.crawl()
         self.create_prompts()
         self.reload_ui()
-        # Crawler.process_all() needs to be invoked after user has resolved prompts
+        # Crawler.process() needs to be invoked after user has resolved prompts
 
 
 class InvalidResponseCodeError(Exception):

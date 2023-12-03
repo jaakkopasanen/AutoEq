@@ -34,6 +34,13 @@ class SquigCrawlerManager:
                 return crawler
         raise ValueError(f'Unknown squig.link site "{username}"')
 
+    def process(self, username=None, new_only=True):
+        for crawler in self.crawlers:
+            if username is None or crawler.username == username:
+                crawler.process(new_only=new_only)
+                if username is not None:
+                    return
+
 
 class SquigCrawler(CrinacleCrawlerBase):
     def __init__(
