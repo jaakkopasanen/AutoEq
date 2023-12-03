@@ -105,8 +105,12 @@ class FrequencyResponse:
     def read_csv(cls, file_path):
         """Reads data from CSV file and constructs class instance."""
         name = '.'.join(Path(file_path).name.split('.')[:-1])
-        with open(file_path, 'r', encoding='utf-8') as fh:
-            csv_str = fh.read().strip()
+        try:
+            with open(file_path, 'r', encoding='utf-8') as fh:
+                csv_str = fh.read().strip()
+        except UnicodeDecodeError as err:
+            with open(file_path, 'r', encoding='windows-1252') as fh:
+                csv_str = fh.read().strip()
         return cls(name=name, **parse_csv(csv_str))
 
     def write_csv(self, file_path):

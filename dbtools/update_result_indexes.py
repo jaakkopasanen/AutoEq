@@ -32,21 +32,44 @@ class ResultPath:
         ('Headphone.com Legacy', 'earbud'),
         ('Rtings', 'earbud'),
         ('Innerfidelity', 'earbud'),
+        ('Kazi', 'earbud'),
+        ('Regan Cipher', 'earbud'),
+        ('Super Review', 'earbud'),
         ('oratory1990', 'earbud'),
 
-        ('Auriculares Argentina', 'in-ear'),
-        ('Headphone.com Legacy', 'in-ear'),
-        ('Rtings', 'in-ear'),
-        ('Innerfidelity', 'in-ear'),
+        ('Headphone.com Legacy', 'in-ear'),  # STD 1.05 (small sample)
+        ('Rtings', 'in-ear'),  # STD 2.09
+        ('Innerfidelity', 'in-ear'),  # STD 1.96
+        ('Filk', 'in-ear'),  # No calibration
+        ('RikudouGoku', 'in-ear'),  # No calibration
+        ('DHRME', 'in-ear'),  # No calibration
+        ('Jaytiss', 'in-ear'),  # No calibration
+        ('Kazi', 'in-ear'),  # No calibration
+        ('Regan Cipher', 'in-ear'),  # STD 0.69 (very small sample)
+        ('Ted\'s Squig Hoard', 'in-ear'),  # STD 4.24 (unreliable, bad outliers)
+        ('ToneDeafMonk', 'in-ear'),  # 0.87 (small sample)
+        ('Auriculares Argentina', 'in-ear'),  # STD 1.62 (small sample)
+        ('Bakkwatan', 'in-ear'),  # STD 0.83 (small sample)
+        ('Hi End Portable', 'in-ear'),  # STD 1.30 (increased by few outliers)
+        ('Fahryst', 'in-ear'),  # STD 1.18
+        ('kr0mka', 'in-ear'),  # STD 1.15
+        ('Harpo', 'in-ear'),  # STD 1.04
+        ('freeryder05', 'in-ear'),  # STD 0.92
+        ('Super Review', 'in-ear'),  # STD 0.90 (large sample)
         ('crinacle', '711 in-ear'),
         ('oratory1990', 'in-ear'),
         ('crinacle', 'Bruel & Kjaer 4620 in-ear'),
 
         ('crinacle', 'EARS + 711 over-ear'),
-        ('Headphone.com Legacy', 'over-ear'),
-        ('Rtings', 'over-ear'),
-        ('Innerfidelity', 'over-ear'),
-        ('Auriculares Argentina', 'over-ear'),
+        ('Regan Cipher', 'over-ear'),  # No calibration
+        ('RikudouGoku', 'over-ear'),  # No calibration
+        ('Headphone.com Legacy', 'over-ear'),  # STD 2.77
+        ('Innerfidelity', 'over-ear'),  # STD 1.92
+        ('Rtings', 'over-ear'),  # STD 1.62
+        ('Filk', 'over-ear'),  # STD 2.04
+        ('Auriculares Argentina', 'over-ear'),  # STD 1.64
+        ('Super Review', 'over-ear'),  # STD 1.56
+        ('Kuulokenurkka', 'over-ear'),  # STD 1.26
         ('crinacle', 'GRAS 43AG-7 over-ear'),
         ('oratory1990', 'over-ear'),
     ][::-1]
@@ -372,6 +395,7 @@ def update_all_indexes():
     write_full_index(paths)
     write_source_indexes(paths)
     write_hesuvi_zip(paths)
+    write_webapp_entries_and_measurements(paths)
 
 
 if __name__ == '__main__':

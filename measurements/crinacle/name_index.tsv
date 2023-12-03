@@ -272,6 +272,18 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Time
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Timeless R.txt	7Hz-Salnotes Timeless	7Hz Timeless	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Timeless AE R.txt	7Hz-Salnotes Timeless AE	7Hz Timeless AE	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Timeless AE L.txt	7Hz-Salnotes Timeless AE	7Hz Timeless AE	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero2 S1 L.txt		7Hz x Crinacle Zero 2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero2 S1 R.txt		7Hz x Crinacle Zero 2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero2 S2 L.txt		7Hz x Crinacle Zero 2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero2 S2 R.txt		7Hz x Crinacle Zero 2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero2 S3 L.txt		7Hz x Crinacle Zero 2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero2 S3 R.txt		7Hz x Crinacle Zero 2	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero2 S1 L.txt		7Hz x Crinacle Zero 2	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero2 S1 R.txt		7Hz x Crinacle Zero 2	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero2 S2 L.txt		7Hz x Crinacle Zero 2	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero2 S2 R.txt		7Hz x Crinacle Zero 2	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero2 S3 L.txt		7Hz x Crinacle Zero 2	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Zero2 S3 R.txt		7Hz x Crinacle Zero 2	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ASH L.txt	AAW (Advanced AcousticWerkes) ASH S1	AAW (Advanced AcousticWerkes) ASH	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ASH R.txt	AAW (Advanced AcousticWerkes) ASH S1	AAW (Advanced AcousticWerkes) ASH	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ASH S2 L.txt	AAW (Advanced AcousticWerkes) ASH S2	AAW (Advanced AcousticWerkes) ASH	in-ear	711
@@ -1819,6 +1831,24 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Trut
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Truth R.txt	Dita Truth	Dita Audio Truth	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DM200H R.txt	Dynamic Motion DM200H	Dynamic Motion DM200H	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DM200H L.txt	Dynamic Motion DM200H	Dynamic Motion DM200H	in-ear	711
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Neutral) L1.txt	"Dyson Zone (""Neutral"" EQ)"	Dyson Zone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Neutral) L2.txt	"Dyson Zone (""Neutral"" EQ)"	Dyson Zone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Neutral) L3.txt	"Dyson Zone (""Neutral"" EQ)"	Dyson Zone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Neutral) R1.txt	"Dyson Zone (""Neutral"" EQ)"	Dyson Zone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Neutral) R2.txt	"Dyson Zone (""Neutral"" EQ)"	Dyson Zone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Neutral) R3.txt	"Dyson Zone (""Neutral"" EQ)"	Dyson Zone	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Bass Boost) L1.txt	"Dyson Zone (""Bass Boost"" EQ)"	"Dyson Zone (""Bass Boost"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Bass Boost) L2.txt	"Dyson Zone (""Bass Boost"" EQ)"	"Dyson Zone (""Bass Boost"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Bass Boost) L3.txt	"Dyson Zone (""Bass Boost"" EQ)"	"Dyson Zone (""Bass Boost"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Bass Boost) R1.txt	"Dyson Zone (""Bass Boost"" EQ)"	"Dyson Zone (""Bass Boost"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Bass Boost) R2.txt	"Dyson Zone (""Bass Boost"" EQ)"	"Dyson Zone (""Bass Boost"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Bass Boost) R3.txt	"Dyson Zone (""Bass Boost"" EQ)"	"Dyson Zone (""Bass Boost"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Enhanced) L1.txt	"Dyson Zone (""Enhanced"" EQ)"	"Dyson Zone (""Enhanced"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Enhanced) L2.txt	"Dyson Zone (""Enhanced"" EQ)"	"Dyson Zone (""Enhanced"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Enhanced) L3.txt	"Dyson Zone (""Enhanced"" EQ)"	"Dyson Zone (""Enhanced"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Enhanced) R1.txt	"Dyson Zone (""Enhanced"" EQ)"	"Dyson Zone (""Enhanced"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Enhanced) R2.txt	"Dyson Zone (""Enhanced"" EQ)"	"Dyson Zone (""Enhanced"" EQ)"	ignore	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Enhanced) R3.txt	"Dyson Zone (""Enhanced"" EQ)"	"Dyson Zone (""Enhanced"" EQ)"	ignore	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Teak R1.txt	E-MU Teak	E-Mu Teak	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Teak L2.txt	E-MU Teak	E-Mu Teak	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Teak R2.txt	E-MU Teak	E-Mu Teak	over-ear	GRAS 43AG-7
@@ -3797,6 +3827,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Chu 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Chu L.txt	Moondrop Chu	Moondrop Chu	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Chu L.txt	Moondrop Chu	Moondrop Chu	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Chu R.txt	Moondrop Chu	Moondrop Chu	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Chu 2 L.txt		Moondrop Chu 2	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Chu 2 R.txt		Moondrop Chu 2	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Chu 2 L.txt		Moondrop Chu 2	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Chu 2 R.txt		Moondrop Chu 2	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Crescent L.txt	Moondrop Crescent	Moondrop Crescent	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Crescent R.txt	Moondrop Crescent	Moondrop Crescent	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/KXXS L.txt	Moondrop KXXS	Moondrop KXXS	in-ear	711
@@ -3813,6 +3847,12 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Neko
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nekocake Acht Acht Limited L.txt	Moondrop Nekocake (Acht Acht Limited)	Moondrop Nekocake	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nekocake L.txt	Moondrop Nekocake	Moondrop Nekocake	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Nekocake Acht Acht Limited R.txt	Moondrop Nekocake (Acht Acht Limited)	Moondrop Nekocake	in-ear	711
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Para L1.txt	Moondrop Para	Moondrop Para	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Para L2.txt	Moondrop Para	Moondrop Para	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Para L3.txt	Moondrop Para	Moondrop Para	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Para R1.txt	Moondrop Para	Moondrop Para	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Para R2.txt	Moondrop Para	Moondrop Para	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/GRAS 43AG-7/Para R3.txt	Moondrop Para	Moondrop Para	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Quarks RM L.txt	Moondrop Quarks	Moondrop Quarks	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Quarks RM R.txt	Moondrop Quarks	Moondrop Quarks	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Quarks R.txt	Moondrop Quarks	Moondrop Quarks	in-ear	Bruel & Kjaer 4620
@@ -5291,6 +5331,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Trit
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Triton S2 R.txt	Symphonium Audio Triton	Symphonium Audio Triton	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T3-02 R.txt	Tago Studio T3-02	TAGO STUDIO T3-02	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T3-02 L.txt	Tago Studio T3-02	TAGO STUDIO T3-02	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Wan_er L.txt		TANGZU Wan'er S.G	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Wan_er R.txt		TANGZU Wan'er S.G	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Wan_er L.txt		TANGZU Wan'er S.G	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Wan_er R.txt		TANGZU Wan'er S.G	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zetian Wu L.txt	Tangzu Zetian Wu	TANGZU Zetian Wu	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zetian Wu R.txt	Tangzu Zetian Wu	TANGZU Zetian Wu	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/1S R.txt	TFZ (The Fragrant Zither) 1S	TFZ 1S	in-ear	711
@@ -5648,6 +5692,8 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hola
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Hola R.txt	Truthear Hola	Truthear Hola	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Hola L.txt	Truthear Hola	Truthear Hola	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Hola R.txt	Truthear Hola	Truthear Hola	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Nova TE L.txt	Truthear Nova	Truthear Nova	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Nova TE R.txt	Truthear Nova	Truthear Nova	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S10 L.txt	Truthear Zero S10	Truthear x Crinacle Zero	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S10 R.txt	Truthear Zero S10	Truthear x Crinacle Zero	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zero TE S2 L.txt	Truthear Zero S2	Truthear x Crinacle Zero	in-ear	711

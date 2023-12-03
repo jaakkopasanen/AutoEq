@@ -18,6 +18,7 @@ preference scoring developed by Sean Olive et al.
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|------------|---------|
 | [Mark Levinson No 5909](./oratory1990/over-ear/Mark%20Levinson%20No%205909)                                                                                                                    |      99 |       1.14 |    0.06 |
 | [Sennheiser HE 1 Orpheus 2](./oratory1990/over-ear/Sennheiser%20HE%201%20Orpheus%202)                                                                                                          |      99 |       1.18 |   -0.02 |
+| [Dyson Zone](./crinacle/GRAS%2043AG-7%20over-ear/Dyson%20Zone)                                                                                                                                 |      96 |       1.45 |    0.01 |
 | [Shure SRH440](./oratory1990/over-ear/Shure%20SRH440)                                                                                                                                          |      96 |       1.31 |    0.11 |
 | [HIFIMAN Sundara (post-2020 earpads)](./oratory1990/over-ear/HIFIMAN%20Sundara%20(post-2020%20earpads))                                                                                        |      95 |       1.54 |   -0.01 |
 | [Philips Fidelio X2HR](./oratory1990/over-ear/Philips%20Fidelio%20X2HR)                                                                                                                        |      94 |       1.27 |   -0.29 |
@@ -29,6 +30,7 @@ preference scoring developed by Sean Olive et al.
 | [Sennheiser HD 600](./oratory1990/over-ear/Sennheiser%20HD%20600)                                                                                                                              |      91 |       1.88 |    0.02 |
 | [Moondrop Venus](./oratory1990/over-ear/Moondrop%20Venus)                                                                                                                                      |      90 |       1.91 |   -0.04 |
 | [Onkyo A800](./oratory1990/over-ear/Onkyo%20A800)                                                                                                                                              |      90 |       1.41 |   -0.46 |
+| [Sennheiser HD600 (2020)](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD600%20(2020))                                                                                                     |      90 |       1.93 |   -0.01 |
 | [Warwick Acoustics Sonoma Model One](./crinacle/GRAS%2043AG-7%20over-ear/Warwick%20Acoustics%20Sonoma%20Model%20One)                                                                           |      90 |       1.86 |   -0.08 |
 | [Audeze LCD-XC](./oratory1990/over-ear/Audeze%20LCD-XC)                                                                                                                                        |      89 |       1.9  |    0.11 |
 | [Audeze SINE](./oratory1990/over-ear/Audeze%20SINE)                                                                                                                                            |      89 |       1.94 |   -0.07 |
@@ -85,6 +87,7 @@ preference scoring developed by Sean Olive et al.
 | [HIFIMAN Ananda](./oratory1990/over-ear/HIFIMAN%20Ananda)                                                                                                                                      |      84 |       2.32 |   -0.09 |
 | [HIFIMAN HE6se V2](./oratory1990/over-ear/HIFIMAN%20HE6se%20V2)                                                                                                                                |      84 |       2.19 |    0.18 |
 | [HIFIMAN Sundara (Dekoni sheepskin Earpads)](./oratory1990/over-ear/HIFIMAN%20Sundara%20(Dekoni%20sheepskin%20Earpads))                                                                        |      84 |       2.42 |    0.01 |
+| [Moondrop Para](./crinacle/GRAS%2043AG-7%20over-ear/Moondrop%20Para)                                                                                                                           |      84 |       1.94 |    0.36 |
 | [Sennheiser HD 650](./oratory1990/over-ear/Sennheiser%20HD%20650)                                                                                                                              |      84 |       2.1  |   -0.27 |
 | [Sennheiser PC38X](./oratory1990/over-ear/Sennheiser%20PC38X)                                                                                                                                  |      84 |       1.99 |   -0.36 |
 | [Stax SR-L700](./oratory1990/over-ear/Stax%20SR-L700)                                                                                                                                          |      84 |       2.29 |   -0.08 |
@@ -369,7 +372,6 @@ preference scoring developed by Sean Olive et al.
 | [Sony MDR-CD380](./crinacle/GRAS%2043AG-7%20over-ear/Sony%20MDR-CD380)                                                                                                                         |      65 |       2.79 |    0.95 |
 | [Sony MDR-R10](./oratory1990/over-ear/Sony%20MDR-R10)                                                                                                                                          |      65 |       3.49 |    0.34 |
 | [AKG K553](./oratory1990/over-ear/AKG%20K553)                                                                                                                                                  |      64 |       2.49 |   -1.21 |
-| [AKG K712 (Dekoni sheepskin earpads)](./oratory1990/over-ear/AKG%20K712%20(Dekoni%20sheepskin%20earpads))                                                                                      |      64 |       3.09 |   -0.75 |
 | [AKG N700NC M2](./crinacle/GRAS%2043AG-7%20over-ear/AKG%20N700NC%20M2)                                                                                                                         |      64 |       2.32 |   -1.35 |
 | [Anker Soundcore Space Q45 (ANC on)](./oratory1990/over-ear/Anker%20Soundcore%20Space%20Q45%20(ANC%20on))                                                                                      |      64 |       2.75 |   -1.03 |
 | [Emotiva Airmotiv GR1](./oratory1990/over-ear/Emotiva%20Airmotiv%20GR1)                                                                                                                        |      64 |       2.65 |   -1.1  |
@@ -683,6 +685,7 @@ preference scoring developed by Sean Olive et al.
 | [IKKO OH1](./oratory1990/in-ear/IKKO%20OH1)                                                                                                        |      78 |       1.79 |   -0.33 |           1.46 |
 | [KZ BA10](./crinacle/711%20in-ear/KZ%20BA10)                                                                                                       |      78 |       1.92 |    0.09 |           1.54 |
 | [KZ x Crinacle CRN](./crinacle/711%20in-ear/KZ%20x%20Crinacle%20CRN)                                                                               |      78 |       1.7  |   -0.35 |           1.5  |
+| [Moondrop Chu 2](./crinacle/711%20in-ear/Moondrop%20Chu%202)                                                                                       |      78 |       1.73 |   -0.46 |           1.36 |
 | [Raptgo Hook-X](./oratory1990/in-ear/Raptgo%20Hook-X)                                                                                              |      78 |       1.75 |   -0.2  |           1.63 |
 | [Samsung Galaxy Buds2 Pro (ANC mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(ANC%20mode))                                       |      78 |       1.7  |   -0.58 |           1.18 |
 | [SeeAudio Yume](./crinacle/711%20in-ear/SeeAudio%20Yume)                                                                                           |      78 |       1.75 |   -0.18 |           1.77 |
@@ -720,7 +723,7 @@ preference scoring developed by Sean Olive et al.
 | [Raptgo Leaf D01](./crinacle/711%20in-ear/Raptgo%20Leaf%20D01)                                                                                     |      76 |       2    |   -0.05 |           1.8  |
 | [Samsung Galaxy Buds Plus](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds%20Plus)                                                                 |      76 |       1.85 |   -0.65 |           1.2  |
 | [Samsung Galaxy Buds Pro](./oratory1990/in-ear/Samsung%20Galaxy%20Buds%20Pro)                                                                      |      76 |       1.89 |   -0.3  |           1.75 |
-| [Samsung Galaxy Buds2 Pro (ambient mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(ambient%20mode))                               |      76 |       1.77 |   -0.61 |           1.27 |
+| [Samsung Galaxy Buds2 Pro (Ambient mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(Ambient%20mode))                               |      76 |       1.77 |   -0.61 |           1.27 |
 | [Seek Real Audio Airship](./crinacle/711%20in-ear/Seek%20Real%20Audio%20Airship)                                                                   |      76 |       1.8  |   -0.49 |           1.54 |
 | [Shure SE846](./oratory1990/in-ear/Shure%20SE846)                                                                                                  |      76 |       1.9  |   -0.32 |           1.59 |
 | [SoftEars RSV](./crinacle/711%20in-ear/SoftEars%20RSV)                                                                                             |      76 |       1.76 |   -0.39 |           1.75 |
@@ -778,6 +781,7 @@ preference scoring developed by Sean Olive et al.
 | [Zero Audio Carbo Tenore](./crinacle/711%20in-ear/Zero%20Audio%20Carbo%20Tenore)                                                                   |      74 |       2.01 |   -0.28 |           1.92 |
 | [qdc Gemini](./crinacle/711%20in-ear/qdc%20Gemini)                                                                                                 |      74 |       2.23 |   -0.12 |           1.68 |
 | [violator73 DIY 16 BA](./crinacle/711%20in-ear/violator73%20DIY%2016%20BA)                                                                         |      74 |       1.97 |   -0.51 |           1.71 |
+| [7Hz x Crinacle Zero 2](./crinacle/711%20in-ear/7Hz%20x%20Crinacle%20Zero%202)                                                                     |      73 |       1.99 |   -0.71 |           1.52 |
 | [Apple AirPods Pro 2 (65dB + ANC)](./crinacle/711%20in-ear/Apple%20AirPods%20Pro%202%20(65dB%20+%20ANC))                                           |      73 |       1.9  |   -0.68 |           1.74 |
 | [Apple AirPods Pro 2 (73dB + ANC)](./crinacle/711%20in-ear/Apple%20AirPods%20Pro%202%20(73dB%20+%20ANC))                                           |      73 |       1.99 |   -0.42 |           2.04 |
 | [Audio-Technica ATH-CKR7TW](./crinacle/711%20in-ear/Audio-Technica%20ATH-CKR7TW)                                                                   |      73 |       2.18 |    0.06 |           2.35 |
@@ -834,7 +838,7 @@ preference scoring developed by Sean Olive et al.
 | [Pai Audio DM2A](./crinacle/711%20in-ear/Pai%20Audio%20DM2A)                                                                                       |      72 |       2.48 |    0.08 |           1.98 |
 | [Philips SHE3855](./oratory1990/in-ear/Philips%20SHE3855)                                                                                          |      72 |       1.92 |   -0.74 |           1.96 |
 | [QKZ VK4](./oratory1990/in-ear/QKZ%20VK4)                                                                                                          |      72 |       1.95 |   -0.81 |           1.63 |
-| [SeeAudio x Crincale Yume Midnight](./crinacle/711%20in-ear/SeeAudio%20x%20Crincale%20Yume%20Midnight)                                             |      72 |       2.19 |   -0.65 |           1.59 |
+| [SeeAudio x Crinacle Yume Midnight](./crinacle/711%20in-ear/SeeAudio%20x%20Crinacle%20Yume%20Midnight)                                             |      72 |       2.19 |   -0.65 |           1.59 |
 | [Shanling ME800 (off-off)](./crinacle/711%20in-ear/Shanling%20ME800%20(off-off))                                                                   |      72 |       2.43 |    0.1  |           1.93 |
 | [Shuoer D13 (gold nozzle)](./crinacle/711%20in-ear/Shuoer%20D13%20(gold%20nozzle))                                                                 |      72 |       2.22 |   -0.38 |           1.87 |
 | [Sony MH755](./oratory1990/in-ear/Sony%20MH755)                                                                                                    |      72 |       1.92 |   -0.9  |           1.51 |
@@ -874,6 +878,7 @@ preference scoring developed by Sean Olive et al.
 | [SoftEars Twilight](./crinacle/711%20in-ear/SoftEars%20Twilight)                                                                                   |      71 |       2.42 |   -0.1  |           2.27 |
 | [Sony XBA-H3](./oratory1990/in-ear/Sony%20XBA-H3)                                                                                                  |      71 |       2.65 |    0.01 |           1.95 |
 | [Soranik SP3 SE](./crinacle/711%20in-ear/Soranik%20SP3%20SE)                                                                                       |      71 |       2.58 |   -0.15 |           1.8  |
+| [TANGZU Wan'er S.G](./crinacle/711%20in-ear/TANGZU%20Wan'er%20S.G)                                                                                 |      71 |       2.48 |   -0.32 |           1.81 |
 | [Tansio Mirai TSMR-5 (on-on-on)](./crinacle/711%20in-ear/Tansio%20Mirai%20TSMR-5%20(on-on-on))                                                     |      71 |       2.57 |   -0.03 |           2.14 |
 | [Tin HiFi T2 Plus](./oratory1990/in-ear/Tin%20HiFi%20T2%20Plus)                                                                                    |      71 |       2.45 |    0.17 |           1.91 |
 | [Tralucent Audio 1+X plus](./crinacle/711%20in-ear/Tralucent%20Audio%201+X%20plus)                                                                 |      71 |       2.43 |   -0.3  |           1.88 |
@@ -975,7 +980,7 @@ preference scoring developed by Sean Olive et al.
 | [Grado GT220](./oratory1990/in-ear/Grado%20GT220)                                                                                                  |      68 |       2.23 |   -0.63 |           2.41 |
 | [IMR Acoustics R1 (pink)](./crinacle/711%20in-ear/IMR%20Acoustics%20R1%20(pink))                                                                   |      68 |       2.77 |   -0.09 |           2.39 |
 | [JBL Live 300TWS](./crinacle/711%20in-ear/JBL%20Live%20300TWS)                                                                                     |      68 |       2.3  |   -0.78 |           1.97 |
-| [JQ 4u Pro](./crinacle/711%20in-ear/JQ%204u%20Pro)                                                                                                 |      68 |       2.46 |   -0.61 |           1.91 |
+| [JQ 4U Pro](./crinacle/711%20in-ear/JQ%204U%20Pro)                                                                                                 |      68 |       2.46 |   -0.61 |           1.91 |
 | [Kumitate Lab KL-REF Type-S](./crinacle/711%20in-ear/Kumitate%20Lab%20KL-REF%20Type-S)                                                             |      68 |       2.7  |    0.06 |           2.5  |
 | [Noble Audio M3](./crinacle/711%20in-ear/Noble%20Audio%20M3)                                                                                       |      68 |       2.32 |   -0.43 |           2.59 |
 | [Sony MDR-EX15LP](./oratory1990/in-ear/Sony%20MDR-EX15LP)                                                                                          |      68 |       2.24 |   -0.88 |           2.09 |
@@ -1037,7 +1042,7 @@ preference scoring developed by Sean Olive et al.
 | [Fender Ten 5](./crinacle/711%20in-ear/Fender%20Ten%205)                                                                                           |      66 |       2.66 |   -0.57 |           2.15 |
 | [Final Audio Heaven V](./oratory1990/in-ear/Final%20Audio%20Heaven%20V)                                                                            |      66 |       2.75 |   -0.18 |           2.81 |
 | [JVC HA-FW1500](./crinacle/711%20in-ear/JVC%20HA-FW1500)                                                                                           |      66 |       2.69 |   -0.53 |           2.17 |
-| [Kinera Idun](./crinacle/711%20in-ear/Kinera%20Idun)                                                                                               |      66 |       2.87 |    0.3  |           2.15 |
+| [Kinera IDUN](./crinacle/711%20in-ear/Kinera%20IDUN)                                                                                               |      66 |       2.87 |    0.3  |           2.15 |
 | [Kumitate Lab KL-REF Type-S (half bass)](./crinacle/711%20in-ear/Kumitate%20Lab%20KL-REF%20Type-S%20(half%20bass))                                 |      66 |       2.62 |   -0.6  |           2.16 |
 | [Meze Rai Penta](./oratory1990/in-ear/Meze%20Rai%20Penta)                                                                                          |      66 |       3.07 |    0.01 |           2.34 |
 | [Ovidius RX-100](./crinacle/711%20in-ear/Ovidius%20RX-100)                                                                                         |      66 |       2.63 |   -0.73 |           1.89 |
@@ -1063,7 +1068,7 @@ preference scoring developed by Sean Olive et al.
 | [iBasso IT01S](./crinacle/711%20in-ear/iBasso%20IT01S)                                                                                             |      66 |       2.84 |   -0.22 |           2.5  |
 | [qdc Tiger](./crinacle/711%20in-ear/qdc%20Tiger)                                                                                                   |      66 |       3.04 |   -0.04 |           2.24 |
 | [64 Audio A12t](./crinacle/711%20in-ear/64%20Audio%20A12t)                                                                                         |      65 |       2.5  |   -0.87 |           2.15 |
-| [64 Audio tia Trio](./crinacle/711%20in-ear/64%20Audio%20tia%20Trio)                                                                               |      65 |       2.59 |   -0.76 |           2.21 |
+| [64 Audio Tia Trio](./crinacle/711%20in-ear/64%20Audio%20Tia%20Trio)                                                                               |      65 |       2.59 |   -0.76 |           2.21 |
 | [Apple AirPods Pro 2 (passive mode)](./crinacle/711%20in-ear/Apple%20AirPods%20Pro%202%20(passive%20mode))                                         |      65 |       2.54 |   -0.13 |           3.64 |
 | [Aure Audio Flame](./crinacle/711%20in-ear/Aure%20Audio%20Flame)                                                                                   |      65 |       2.9  |   -0.36 |           2.17 |
 | [Aya Trident](./crinacle/711%20in-ear/Aya%20Trident)                                                                                               |      65 |       2.51 |   -0.74 |           2.63 |

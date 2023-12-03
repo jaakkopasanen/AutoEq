@@ -34,7 +34,6 @@
 - [AKG K702 (Geekria earpads)](./over-ear/AKG%20K702%20(Geekria%20earpads))
 - [AKG K702 65th Anniversary Edition](./over-ear/AKG%20K702%2065th%20Anniversary%20Edition)
 - [AKG K712](./over-ear/AKG%20K712)
-- [AKG K712 (Dekoni sheepskin earpads)](./over-ear/AKG%20K712%20(Dekoni%20sheepskin%20earpads))
 - [AKG K72](./over-ear/AKG%20K72)
 - [AKG K7XX](./over-ear/AKG%20K7XX)
 - [AKG K812](./over-ear/AKG%20K812)

@@ -34,7 +34,7 @@
 - [64 Audio Nio (mX Apex module)](./711%20in-ear/64%20Audio%20Nio%20(mX%20Apex%20module)) on 711
 - [64 Audio Tia Fourte](./711%20in-ear/64%20Audio%20Tia%20Fourte) on 711
 - [64 Audio Tia Fourte Noir](./711%20in-ear/64%20Audio%20Tia%20Fourte%20Noir) on 711
-- [64 Audio tia Trio](./711%20in-ear/64%20Audio%20tia%20Trio) on 711
+- [64 Audio Tia Trio](./711%20in-ear/64%20Audio%20Tia%20Trio) on 711
 - [64 Audio U12t](./711%20in-ear/64%20Audio%20U12t) on 711
 - [64 Audio U18S](./711%20in-ear/64%20Audio%20U18S) on 711
 - [64 Audio U18Tzar](./711%20in-ear/64%20Audio%20U18Tzar) on 711
@@ -48,6 +48,8 @@
 - [7Hz Salnotes Zero](./711%20in-ear/7Hz%20Salnotes%20Zero) on 711
 - [7Hz Timeless](./711%20in-ear/7Hz%20Timeless) on 711
 - [7Hz Timeless AE](./Bruel%20&%20Kjaer%204620%20in-ear/7Hz%20Timeless%20AE) on Bruel & Kjaer 4620
+- [7Hz x Crinacle Zero 2](./Bruel%20&%20Kjaer%204620%20in-ear/7Hz%20x%20Crinacle%20Zero%202) on Bruel & Kjaer 4620
+- [7Hz x Crinacle Zero 2](./711%20in-ear/7Hz%20x%20Crinacle%20Zero%202) on 711
 - [AAW (Advanced AcousticWerkes) ASH](./711%20in-ear/AAW%20(Advanced%20AcousticWerkes)%20ASH) on 711
 - [AAW (Advanced AcousticWerkes) Canary](./711%20in-ear/AAW%20(Advanced%20AcousticWerkes)%20Canary) on 711
 - [AAW A2H V2](./711%20in-ear/AAW%20A2H%20V2) on 711
@@ -511,6 +513,7 @@
 - [DUNU Zen](./711%20in-ear/DUNU%20Zen) on 711
 - [DUNU Zen Pro](./711%20in-ear/DUNU%20Zen%20Pro) on 711
 - [Dynamic Motion DM200H](./711%20in-ear/Dynamic%20Motion%20DM200H) on 711
+- [Dyson Zone](./GRAS%2043AG-7%20over-ear/Dyson%20Zone) on GRAS 43AG-7
 - [E-Mu Teak](./GRAS%2043AG-7%20over-ear/E-Mu%20Teak) on GRAS 43AG-7
 - [E-Mu Walnut](./GRAS%2043AG-7%20over-ear/E-Mu%20Walnut) on GRAS 43AG-7
 - [EarFun Free](./711%20in-ear/EarFun%20Free) on 711
@@ -1011,7 +1014,7 @@
 - [Jomo Audio Trinity](./711%20in-ear/Jomo%20Audio%20Trinity) on 711
 - [Jomo Audio Trinity Brass](./711%20in-ear/Jomo%20Audio%20Trinity%20Brass) on 711
 - [JQ 4U Pro](./Bruel%20&%20Kjaer%204620%20in-ear/JQ%204U%20Pro) on Bruel & Kjaer 4620
-- [JQ 4u Pro](./711%20in-ear/JQ%204u%20Pro) on 711
+- [JQ 4U Pro](./711%20in-ear/JQ%204U%20Pro) on 711
 - [JQ Hua Jiang](./711%20in-ear/JQ%20Hua%20Jiang) on 711
 - [Just Ear Club Sound](./711%20in-ear/Just%20Ear%20Club%20Sound) on 711
 - [JVC FD01 (modded)](./711%20in-ear/JVC%20FD01%20(modded)) on 711
@@ -1039,7 +1042,7 @@
 - [Kinera Freya](./711%20in-ear/Kinera%20Freya) on 711
 - [Kinera H3](./Bruel%20&%20Kjaer%204620%20in-ear/Kinera%20H3) on Bruel & Kjaer 4620
 - [Kinera Hodur](./711%20in-ear/Kinera%20Hodur) on 711
-- [Kinera Idun](./711%20in-ear/Kinera%20Idun) on 711
+- [Kinera IDUN](./711%20in-ear/Kinera%20IDUN) on 711
 - [Kinera IDUN Deluxe](./711%20in-ear/Kinera%20IDUN%20Deluxe) on 711
 - [Kinera Nanna](./711%20in-ear/Kinera%20Nanna) on 711
 - [Kinera Nanna 2.0](./711%20in-ear/Kinera%20Nanna%202.0) on 711
@@ -1196,6 +1199,8 @@
 - [Moondrop Blessing 3](./711%20in-ear/Moondrop%20Blessing%203) on 711
 - [Moondrop Chu](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20Chu) on Bruel & Kjaer 4620
 - [Moondrop Chu](./711%20in-ear/Moondrop%20Chu) on 711
+- [Moondrop Chu 2](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20Chu%202) on Bruel & Kjaer 4620
+- [Moondrop Chu 2](./711%20in-ear/Moondrop%20Chu%202) on 711
 - [Moondrop Crescent](./711%20in-ear/Moondrop%20Crescent) on 711
 - [Moondrop Kanas Pro](./711%20in-ear/Moondrop%20Kanas%20Pro) on 711
 - [Moondrop Kato (brass nozzle)](./711%20in-ear/Moondrop%20Kato%20(brass%20nozzle)) on 711
@@ -1203,6 +1208,7 @@
 - [Moondrop KXXS](./711%20in-ear/Moondrop%20KXXS) on 711
 - [Moondrop LAN](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20LAN) on Bruel & Kjaer 4620
 - [Moondrop Nekocake](./711%20in-ear/Moondrop%20Nekocake) on 711
+- [Moondrop Para](./GRAS%2043AG-7%20over-ear/Moondrop%20Para) on GRAS 43AG-7
 - [Moondrop Quarks](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20Quarks) on Bruel & Kjaer 4620
 - [Moondrop Quarks](./711%20in-ear/Moondrop%20Quarks) on 711
 - [Moondrop S8](./711%20in-ear/Moondrop%20S8) on 711
@@ -1398,7 +1404,7 @@
 - [Samsung Galaxy Buds Pro](./711%20in-ear/Samsung%20Galaxy%20Buds%20Pro) on 711
 - [Samsung Galaxy Buds2](./711%20in-ear/Samsung%20Galaxy%20Buds2) on 711
 - [Samsung Galaxy Buds2 Pro](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro) on 711
-- [Samsung Galaxy Buds2 Pro (ambient mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(ambient%20mode)) on 711
+- [Samsung Galaxy Buds2 Pro (Ambient mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(Ambient%20mode)) on 711
 - [Samsung Galaxy Buds2 Pro (ANC mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(ANC%20mode)) on 711
 - [Samsung Galaxy Buds2 Pro (passive mode)](./711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(passive%20mode)) on 711
 - [Sansui SS10](./GRAS%2043AG-7%20over-ear/Sansui%20SS10) on GRAS 43AG-7
@@ -1412,8 +1418,8 @@
 - [SeeAudio Kaguya](./711%20in-ear/SeeAudio%20Kaguya) on 711
 - [SeeAudio MIU](./711%20in-ear/SeeAudio%20MIU) on 711
 - [SeeAudio Neo](./711%20in-ear/SeeAudio%20Neo) on 711
-- [SeeAudio x Crincale Yume Midnight](./Bruel%20&%20Kjaer%204620%20in-ear/SeeAudio%20x%20Crincale%20Yume%20Midnight) on Bruel & Kjaer 4620
-- [SeeAudio x Crincale Yume Midnight](./711%20in-ear/SeeAudio%20x%20Crincale%20Yume%20Midnight) on 711
+- [SeeAudio x Crinacle Yume Midnight](./Bruel%20&%20Kjaer%204620%20in-ear/SeeAudio%20x%20Crinacle%20Yume%20Midnight) on Bruel & Kjaer 4620
+- [SeeAudio x Crinacle Yume Midnight](./711%20in-ear/SeeAudio%20x%20Crinacle%20Yume%20Midnight) on 711
 - [SeeAudio Yume](./711%20in-ear/SeeAudio%20Yume) on 711
 - [Seek Real Audio Airship](./Bruel%20&%20Kjaer%204620%20in-ear/Seek%20Real%20Audio%20Airship) on Bruel & Kjaer 4620
 - [Seek Real Audio Airship](./711%20in-ear/Seek%20Real%20Audio%20Airship) on 711
@@ -1457,6 +1463,7 @@
 - [Sennheiser HD 820](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20820) on GRAS 43AG-7
 - [Sennheiser HD 820](./EARS%20+%20711%20over-ear/Sennheiser%20HD%20820) on EARS + 711
 - [Sennheiser HD 8XX](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD%208XX) on GRAS 43AG-7
+- [Sennheiser HD600 (2020)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD600%20(2020)) on GRAS 43AG-7
 - [Sennheiser HD800](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD800) on GRAS 43AG-7
 - [Sennheiser HD800 (SDR mod)](./GRAS%2043AG-7%20over-ear/Sennheiser%20HD800%20(SDR%20mod)) on GRAS 43AG-7
 - [Sennheiser HE 1 Orpheus 2](./GRAS%2043AG-7%20over-ear/Sennheiser%20HE%201%20Orpheus%202) on GRAS 43AG-7
@@ -1692,6 +1699,8 @@
 - [Tanchjim Tanya](./711%20in-ear/Tanchjim%20Tanya) on 711
 - [Tanchjim Zero](./Bruel%20&%20Kjaer%204620%20in-ear/Tanchjim%20Zero) on Bruel & Kjaer 4620
 - [Tanchjim Zero](./711%20in-ear/Tanchjim%20Zero) on 711
+- [TANGZU Wan'er S.G](./Bruel%20&%20Kjaer%204620%20in-ear/TANGZU%20Wan'er%20S.G) on Bruel & Kjaer 4620
+- [TANGZU Wan'er S.G](./711%20in-ear/TANGZU%20Wan'er%20S.G) on 711
 - [TANGZU Zetian Wu](./711%20in-ear/TANGZU%20Zetian%20Wu) on 711
 - [Tansio Mirai Land (off-off-off)](./711%20in-ear/Tansio%20Mirai%20Land%20(off-off-off)) on 711
 - [Tansio Mirai Land (off-off-on)](./711%20in-ear/Tansio%20Mirai%20Land%20(off-off-on)) on 711
@@ -1844,6 +1853,7 @@
 - [Truthear Hexa](./711%20in-ear/Truthear%20Hexa) on 711
 - [Truthear Hola](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20Hola) on Bruel & Kjaer 4620
 - [Truthear Hola](./711%20in-ear/Truthear%20Hola) on 711
+- [Truthear Nova](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20Nova) on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero) on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero](./711%20in-ear/Truthear%20x%20Crinacle%20Zero) on 711
 - [Truthear x Crinacle Zero RED](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED) on Bruel & Kjaer 4620
@@ -1851,7 +1861,6 @@
 - [Truthear x Crinacle Zero RED (Bass+)](./Bruel%20&%20Kjaer%204620%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(Bass+)) on Bruel & Kjaer 4620
 - [Truthear x Crinacle Zero RED (Bass+)](./711%20in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(Bass+)) on 711
 - [UFOEar UFO-111](./Bruel%20&%20Kjaer%204620%20in-ear/UFOEar%20UFO-111) on Bruel & Kjaer 4620
-- [UFOear UFO-112](./Bruel%20&%20Kjaer%204620%20in-ear/UFOear%20UFO-112) on Bruel & Kjaer 4620
 - [Ultimate Ears Live](./711%20in-ear/Ultimate%20Ears%20Live) on 711
 - [Ultimate Ears Reference Monitors](./711%20in-ear/Ultimate%20Ears%20Reference%20Monitors) on 711
 - [Ultimate Ears Reference Remastered](./711%20in-ear/Ultimate%20Ears%20Reference%20Remastered) on 711

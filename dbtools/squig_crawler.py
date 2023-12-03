@@ -6,6 +6,7 @@ from pathlib import Path
 import numpy as np
 import json
 import requests
+from autoeq.csv import CsvParseError
 from autoeq.frequency_response import FrequencyResponse
 from autoeq.utils import make_file_name_allowed
 from dbtools.crinacle_crawler_base import CrinacleCrawlerBase
@@ -118,7 +119,7 @@ class SquigCrawler(CrinacleCrawlerBase):
         return self.crawl_index
 
     def raw_data_path(self, item):
-        return self.measurements_path.joinpath('raw_data', item.form, urllib.parse.unquote(item.url.split('/')[-1]))
+        return self.measurements_path.joinpath('raw_data', item.form, make_file_name_allowed(urllib.parse.unquote(item.url.split('/')[-1])))
 
     def get_item_from_url(self, url):
         index_item = self.name_index.find_one(url=url)
@@ -159,7 +160,11 @@ class SquigCrawler(CrinacleCrawlerBase):
             self.download(item.url, self.raw_data_path(item), headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0'
             })
-            fr = FrequencyResponse.read_csv(self.raw_data_path(item))
+            try:
+                fr = FrequencyResponse.read_csv(self.raw_data_path(item))
+            except CsvParseError as err:
+                print('Failed to parse', self.raw_data_path(item))
+                continue
             fr.interpolate()
             fr.center()
             avg_fr.raw += fr.raw
