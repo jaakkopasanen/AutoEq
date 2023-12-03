@@ -17,12 +17,50 @@ def write_targets():
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
                 {'source': 'oratory1990', 'form': 'in-ear'},
-                {'source': 'oratory1990', 'form': 'earbud'}
+                {'source': 'oratory1990', 'form': 'earbud'},
+                {'source': 'Auriculares Argentina', 'form': 'in-ear'},
+                {'source': 'Bakkwatan', 'form': 'in-ear'},
+                {'source': 'DHRME', 'form': 'in-ear'},
+                {'source': 'Fahryst', 'form': 'in-ear'},
+                {'source': 'Filk', 'form': 'in-ear'},
+                {'source': 'freeryder05', 'form': 'in-ear'},
+                {'source': 'Harpo', 'form': 'in-ear'},
+                {'source': 'Hi End Portable', 'form': 'in-ear'},
+                {'source': 'Jaytiss', 'form': 'in-ear'},
+                {'source': 'Kazi', 'form': 'in-ear'},
+                {'source': 'Kazi', 'form': 'earbud'},
+                {'source': 'kr0mka', 'form': 'in-ear'},
+                {'source': 'Regan Cipher', 'form': 'in-ear'},
+                {'source': 'Regan Cipher', 'form': 'earbud'},
+                {'source': 'RikudouGoku', 'form': 'in-ear'},
+                {'source': 'Super Review', 'form': 'in-ear'},
+                {'source': 'Super Review', 'form': 'earbud'},
+                {'source': 'Ted\'s Squig Hoard', 'form': 'in-ear'},
+                {'source': 'ToneDeafMonk', 'form': 'in-ear'},
             ],
             'recommended': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
                 {'source': 'oratory1990', 'form': 'in-ear'},
-                {'source': 'oratory1990', 'form': 'earbud'}
+                {'source': 'oratory1990', 'form': 'earbud'},
+                {'source': 'Auriculares Argentina', 'form': 'in-ear'},
+                {'source': 'Bakkwatan', 'form': 'in-ear'},
+                {'source': 'DHRME', 'form': 'in-ear'},
+                {'source': 'Fahryst', 'form': 'in-ear'},
+                {'source': 'Filk', 'form': 'in-ear'},
+                {'source': 'freeryder05', 'form': 'in-ear'},
+                {'source': 'Harpo', 'form': 'in-ear'},
+                {'source': 'Hi End Portable', 'form': 'in-ear'},
+                {'source': 'Jaytiss', 'form': 'in-ear'},
+                {'source': 'Kazi', 'form': 'in-ear'},
+                {'source': 'Kazi', 'form': 'earbud'},
+                {'source': 'kr0mka', 'form': 'in-ear'},
+                {'source': 'Regan Cipher', 'form': 'in-ear'},
+                {'source': 'Regan Cipher', 'form': 'earbud'},
+                {'source': 'RikudouGoku', 'form': 'in-ear'},
+                {'source': 'Super Review', 'form': 'in-ear'},
+                {'source': 'Super Review', 'form': 'earbud'},
+                {'source': 'Ted\'s Squig Hoard', 'form': 'in-ear'},
+                {'source': 'ToneDeafMonk', 'form': 'in-ear'},
             ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 8}
         },
@@ -33,8 +71,8 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
-            'file': TARGETS_PATH.joinpath('JM-1 without bass.csv'),
-            'label': 'JM-1',
+            'file': TARGETS_PATH.joinpath('JM-1 with Harman treble filter.csv'),
+            'label': 'JM-1 with Harman filters',
             'compatible': [{'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'}],
             'recommended': [{'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'}],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6.5}
@@ -45,11 +83,6 @@ def write_targets():
         },
         {
             'file': TARGETS_PATH.joinpath('Diffuse field GRAS KEMAR.csv'),
-            'compatible': [
-                {'source': 'crinacle', 'form': 'in-ear'},
-                {'source': 'oratory1990', 'form': 'in-ear'},
-                {'source': 'oratory1990', 'form': 'earbud'},
-            ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
@@ -67,7 +100,26 @@ def write_targets():
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
                 {'source': 'oratory1990', 'form': 'in-ear'},
-                {'source': 'oratory1990', 'form': 'earbud'}
+                {'source': 'oratory1990', 'form': 'earbud'},
+                {'source': 'Auriculares Argentina', 'form': 'in-ear'},
+                {'source': 'Bakkwatan', 'form': 'in-ear'},
+                {'source': 'DHRME', 'form': 'in-ear'},
+                {'source': 'Fahryst', 'form': 'in-ear'},
+                {'source': 'Filk', 'form': 'in-ear'},
+                {'source': 'freeryder05', 'form': 'in-ear'},
+                {'source': 'Harpo', 'form': 'in-ear'},
+                {'source': 'Hi End Portable', 'form': 'in-ear'},
+                {'source': 'Jaytiss', 'form': 'in-ear'},
+                {'source': 'Kazi', 'form': 'in-ear'},
+                {'source': 'Kazi', 'form': 'earbud'},
+                {'source': 'kr0mka', 'form': 'in-ear'},
+                {'source': 'Regan Cipher', 'form': 'in-ear'},
+                {'source': 'Regan Cipher', 'form': 'earbud'},
+                {'source': 'RikudouGoku', 'form': 'in-ear'},
+                {'source': 'Super Review', 'form': 'in-ear'},
+                {'source': 'Super Review', 'form': 'earbud'},
+                {'source': 'Ted\'s Squig Hoard', 'form': 'in-ear'},
+                {'source': 'ToneDeafMonk', 'form': 'in-ear'},
             ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 9.5}
         },
@@ -76,11 +128,23 @@ def write_targets():
             'label': 'Harman over-ear 2018',
             'compatible': [
                 {'source': 'crinacle', 'form': 'over-ear', 'rig': 'GRAS 43AG-7'},
-                {'source': 'oratory1990', 'form': 'over-ear'}
+                {'source': 'oratory1990', 'form': 'over-ear'},
+                {'source': 'Auriculares Argentina', 'form': 'over-ear'},
+                {'source': 'Filk', 'form': 'over-ear'},
+                {'source': 'Kuulokenurkka', 'form': 'over-ear'},
+                {'source': 'Regan Cipher', 'form': 'over-ear'},
+                {'source': 'RikudouGoku', 'form': 'over-ear'},
+                {'source': 'Super Review', 'form': 'over-ear'},
             ],
             'recommended': [
                 {'source': 'crinacle', 'form': 'over-ear', 'rig': 'GRAS 43AG-7'},
-                {'source': 'oratory1990', 'form': 'over-ear'}
+                {'source': 'oratory1990', 'form': 'over-ear'},
+                {'source': 'Auriculares Argentina', 'form': 'over-ear'},
+                {'source': 'Filk', 'form': 'over-ear'},
+                {'source': 'Kuulokenurkka', 'form': 'over-ear'},
+                {'source': 'Regan Cipher', 'form': 'over-ear'},
+                {'source': 'RikudouGoku', 'form': 'over-ear'},
+                {'source': 'Super Review', 'form': 'over-ear'},
             ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },
@@ -129,6 +193,17 @@ def write_targets():
                 {'source': 'Headphone.com Legacy', 'form': 'over-ear'},
                 {'source': 'Innerfidelity', 'form': 'over-ear'},
                 {'source': 'Rtings', 'form': 'over-ear'},
+            ],
+            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
+        },
+        {
+            'file': TARGETS_PATH.joinpath('crinacle EARS + 711 Harman over-ear 2018 without bass.csv'),
+            'label': 'crinacle EARS + 711 Harman over-ear 2018',
+            'compatible': [
+                {'source': 'crinacle', 'form': 'over-ear', 'rig': 'EARS + 711'},
+            ],
+            'recommended': [
+                {'source': 'crinacle', 'form': 'over-ear', 'rig': 'EARS + 711'},
             ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },

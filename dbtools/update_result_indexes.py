@@ -380,7 +380,11 @@ def write_webapp_entries_and_measurements(paths):
             if path.source_name not in measurements[name]:
                 measurements[name][path.source_name] = dict()
             csv_path = path.absolute_path.joinpath(f'{path.name}.csv')
-            measurements[name][path.source_name][rig] = FrequencyResponse.read_csv(csv_path).to_dict()
+            fr = FrequencyResponse.read_csv(csv_path)
+            fr.reset(
+                raw=False, smoothed=True, error=True, error_smoothed=True, equalization=True, fixed_band_eq=True,
+                parametric_eq=True, equalized_raw=True, equalized_smoothed=True, target=True)
+            measurements[name][path.source_name][rig] = fr.to_dict()
 
     with open(WEBAPP_PATH.joinpath('data', 'measurements.json'), 'w', encoding='utf-8') as fh:
         json.dump(measurements, fh, ensure_ascii=False, indent=4)
