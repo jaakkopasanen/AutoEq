@@ -18,7 +18,7 @@ https://kr0mka.squig.link/data/CCA%20C16%2047R%20OI%20L.txt	CCA C16 47Ω OI	CCA
 https://kr0mka.squig.link/data/CCA%20C16%2047R%20OI%20R.txt	CCA C16 47Ω OI	CCA C16 47Ω OI	ignore	
 https://kr0mka.squig.link/data/CRA%20L.txt	CCA CRA 	CCA CRA	in-ear	 711
 https://kr0mka.squig.link/data/CRA%20R.txt	CCA CRA 	CCA CRA	in-ear	 711
-https://kr0mka.squig.link/data/CRA%20Spring%20R.txt	CCA CRA Spring tips	CCA CRA (JVC Spring eartips)	in-ear	 711
+https://kr0mka.squig.link/data/CRA%20Spring%20R.txt	CCA CRA Spring tips	CCA CRA (JVC Spring eartips)	ignore	 711
 https://kr0mka.squig.link/data/e1000%20L.txt	Final Audio E1000	Final Audio E1000	in-ear	 711
 https://kr0mka.squig.link/data/e1000%20R.txt	Final Audio E1000	Final Audio E1000	in-ear	 711
 https://kr0mka.squig.link/data/X2%20pro%20L.txt	Fonge X2 Pro	Fonge X2 Pro	in-ear	 711
@@ -63,15 +63,15 @@ https://kr0mka.squig.link/data/Chu%20L.txt	Moondrop Chu	Moondrop Chu	in-ear	 711
 https://kr0mka.squig.link/data/Chu%20R.txt	Moondrop Chu	Moondrop Chu	in-ear	 711
 https://kr0mka.squig.link/data/KXXS%20L.txt	Moondrop KXXS 	Moondrop KXXS	in-ear	 711
 https://kr0mka.squig.link/data/KXXS%20R.txt	Moondrop KXXS 	Moondrop KXXS	in-ear	 711
-https://kr0mka.squig.link/data/KXXS%20(BGVP%20W01)%20L.txt	Moondrop KXXS BGVP W01	Moondrop KXXS (BGVP W01 eartips)	in-ear	 711
-https://kr0mka.squig.link/data/KXXS%20(BGVP%20W01)%20R.txt	Moondrop KXXS BGVP W01	Moondrop KXXS (BGVP W01 eartips)	in-ear	 711
-https://kr0mka.squig.link/data/KXXS%20spring%20L.txt	Moondrop KXXS Spring	Moondrop KXXS (Moondrop Spring eartips)	in-ear	 711
-https://kr0mka.squig.link/data/KXXS%20spring%20R.txt	Moondrop KXXS Spring	Moondrop KXXS (Moondrop Spring eartips)	in-ear	 711
-https://kr0mka.squig.link/data/KXXS%20(EP-EX11)%20L.txt	Moondrop KXXS EP-EX11	Moondrop KXXS (Sony EP-EX11 eartips)	in-ear	 711
-https://kr0mka.squig.link/data/KXXS%20(EX15)%20L.txt	Moondrop KXXS EX15	Moondrop KXXS (Sony MDR-EX15 eartips)	in-ear	 711
-https://kr0mka.squig.link/data/KXXS%20(EX15)%20R.txt	Moondrop KXXS EX15	Moondrop KXXS (Sony MDR-EX15 eartips)	in-ear	 711
-https://kr0mka.squig.link/data/KXXS%20(CP%20100)%20L.txt	Moondrop KXXS CP100	Moondrop KXXS (SpinFit CP100 eartips)	in-ear	 711
-https://kr0mka.squig.link/data/KXXS%20(CP%20100)%20R.txt	Moondrop KXXS CP100	Moondrop KXXS (SpinFit CP100 eartips)	in-ear	 711
+https://kr0mka.squig.link/data/KXXS%20(BGVP%20W01)%20L.txt	Moondrop KXXS BGVP W01	Moondrop KXXS (BGVP W01 eartips)	ignore	 711
+https://kr0mka.squig.link/data/KXXS%20(BGVP%20W01)%20R.txt	Moondrop KXXS BGVP W01	Moondrop KXXS (BGVP W01 eartips)	ignore	 711
+https://kr0mka.squig.link/data/KXXS%20spring%20L.txt	Moondrop KXXS Spring	Moondrop KXXS (Moondrop Spring eartips)	ignore	 711
+https://kr0mka.squig.link/data/KXXS%20spring%20R.txt	Moondrop KXXS Spring	Moondrop KXXS (Moondrop Spring eartips)	ignore	 711
+https://kr0mka.squig.link/data/KXXS%20(EP-EX11)%20L.txt	Moondrop KXXS EP-EX11	Moondrop KXXS (Sony EP-EX11 eartips)	ignore	 711
+https://kr0mka.squig.link/data/KXXS%20(EX15)%20L.txt	Moondrop KXXS EX15	Moondrop KXXS (Sony MDR-EX15 eartips)	ignore	 711
+https://kr0mka.squig.link/data/KXXS%20(EX15)%20R.txt	Moondrop KXXS EX15	Moondrop KXXS (Sony MDR-EX15 eartips)	ignore	 711
+https://kr0mka.squig.link/data/KXXS%20(CP%20100)%20L.txt	Moondrop KXXS CP100	Moondrop KXXS (SpinFit CP100 eartips)	ignore	 711
+https://kr0mka.squig.link/data/KXXS%20(CP%20100)%20R.txt	Moondrop KXXS CP100	Moondrop KXXS (SpinFit CP100 eartips)	ignore	 711
 https://kr0mka.squig.link/data/KXXS%20(Symbio%20W%20Peel)%20L.txt	Moondrop KXXS Symbio W Peel	Moondrop KXXS Symbio W Peel	ignore	
 https://kr0mka.squig.link/data/KXXS%20(Symbio%20W%20Peel)%20R.txt	Moondrop KXXS Symbio W Peel	Moondrop KXXS Symbio W Peel	ignore	
 https://kr0mka.squig.link/data/LAN%20L.txt	Moondrop LAN	Moondrop LAN	in-ear	 711

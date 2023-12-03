@@ -5,8 +5,8 @@ https://jaytiss.squig.link/data/Sonus%20L.txt	7hz Sonus	7Hz Sonus	in-ear	711
 https://jaytiss.squig.link/data/Sonus%20R.txt	7hz Sonus	7Hz Sonus	in-ear	711
 https://jaytiss.squig.link/data/Supernova%20L.txt	7th Acoustics Supernova	7th Acoustics Supernova	in-ear	711
 https://jaytiss.squig.link/data/Supernova%20R.txt	7th Acoustics Supernova	7th Acoustics Supernova	in-ear	711
-https://jaytiss.squig.link/data/Magic%201%20L.txt	Aful MagicOne with Divinus Velvet L	AFUL MagicOne (Divinus Velvet L eartips)	in-ear	711
-https://jaytiss.squig.link/data/Magic%201%20R.txt	Aful MagicOne with Divinus Velvet L	AFUL MagicOne (Divinus Velvet L eartips)	in-ear	711
+https://jaytiss.squig.link/data/Magic%201%20L.txt	Aful MagicOne with Divinus Velvet L	AFUL MagicOne (Divinus Velvet L eartips)	ignore	711
+https://jaytiss.squig.link/data/Magic%201%20R.txt	Aful MagicOne with Divinus Velvet L	AFUL MagicOne (Divinus Velvet L eartips)	ignore	711
 https://jaytiss.squig.link/data/MagicFoam%20L.txt	Aful MagicOne with Foams	AFUL MagicOne (foam eartips)	in-ear	711
 https://jaytiss.squig.link/data/MagicFoam%20R.txt	Aful MagicOne with Foams	AFUL MagicOne (foam eartips)	in-ear	711
 https://jaytiss.squig.link/data/Performer%205%20L.txt	Aful Performer 5	AFUL Performer 5	in-ear	711
@@ -65,8 +65,8 @@ https://jaytiss.squig.link/data/Hola%20L.txt	Truthear Hola	Truthear Hola	in-ear	
 https://jaytiss.squig.link/data/Hola%20R.txt	Truthear Hola	Truthear Hola	in-ear	711
 https://jaytiss.squig.link/data/Truthear%20Nova%20with%20Foams%20L.txt	Truthear Nova with stock Foams	Truthear Nova	in-ear	711
 https://jaytiss.squig.link/data/Truthear%20Nova%20with%20Foams%20R.txt	Truthear Nova with stock Foams	Truthear Nova	in-ear	711
-https://jaytiss.squig.link/data/Truthear%20Nova%20L.txt	Truthear Nova with Divinus Velvet L	Truthear Nova (Divinus Velvet L eartips)	in-ear	711
-https://jaytiss.squig.link/data/Truthear%20Nova%20R.txt	Truthear Nova with Divinus Velvet L	Truthear Nova (Divinus Velvet L eartips)	in-ear	711
+https://jaytiss.squig.link/data/Truthear%20Nova%20L.txt	Truthear Nova with Divinus Velvet L	Truthear Nova (Divinus Velvet L eartips)	ignore	711
+https://jaytiss.squig.link/data/Truthear%20Nova%20R.txt	Truthear Nova with Divinus Velvet L	Truthear Nova (Divinus Velvet L eartips)	ignore	711
 https://jaytiss.squig.link/data/Red%20L.txt	Truthear Crinacle x Red	Truthear x Crinacle Zero RED	in-ear	711
 https://jaytiss.squig.link/data/Red%20R.txt	Truthear Crinacle x Red	Truthear x Crinacle Zero RED	in-ear	711
 https://jaytiss.squig.link/data/Red%20310%20L.txt	Truthear Crinacle x Red 310 ohm adapter	Truthear x Crinacle Zero RED (310 ohm adapter)	ignore	711
