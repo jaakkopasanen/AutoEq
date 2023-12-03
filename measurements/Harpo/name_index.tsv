@@ -13,8 +13,8 @@ https://harpo.squig.link/data/Aukey%20EP-B44%20R.txt	Aukey EP-B44	AUKEY EP-B44	i
 https://harpo.squig.link/data/Soundcore%20Liberty%203%20Pro%20R.txt	Soundcore by Anker Liberty 3 Pro	Anker Soundcore Liberty 3 Pro	in-ear	711
 https://harpo.squig.link/data/APPLE%20AIRPODS%20PRO%202%20L.txt	Apple Airpods Pro 2	Apple Airpods Pro 2	in-ear	711
 https://harpo.squig.link/data/AUDIOSENSE%20DT600%20R.txt	AUDIOSENSE DT600 without Ω adapter	Audiosense DT600	in-ear	711
-https://harpo.squig.link/data/AUDIOSENSE%20DT600%20ohm%20L.txt	AUDIOSENSE DT600 with Ω adapter	Audiosense DT600 (80 ohm resistor)	in-ear	711
-https://harpo.squig.link/data/AUDIOSENSE%20DT600%20ohm%20R.txt	AUDIOSENSE DT600 with Ω adapter	Audiosense DT600 (80 ohm resistor)	in-ear	711
+https://harpo.squig.link/data/AUDIOSENSE%20DT600%20ohm%20L.txt	AUDIOSENSE DT600 with Ω adapter	Audiosense DT600 (80 ohm adapter)	ignore	711
+https://harpo.squig.link/data/AUDIOSENSE%20DT600%20ohm%20R.txt	AUDIOSENSE DT600 with Ω adapter	Audiosense DT600 (80 ohm adapter)	ignore	711
 https://harpo.squig.link/data/BGVP%20P05%20No%20Cap%20-%20Standard%20Nozzle%20L.txt	BGVP P05 No Cap - Standard Nozzle	BGVP P05 (no filter, standard nozzle)	in-ear	711
 https://harpo.squig.link/data/BGVP%20P05%20Red%20Cap%20-%20Alternative%20Nozzle%20L.txt	BGVP P05 Red Cap - Alternative Nozzle	BGVP P05 (red filter, alternative nozzle)	in-ear	711
 https://harpo.squig.link/data/BGVP%20P05%20Red%20Cap%20-%20Standard%20Nozzle%20L.txt	BGVP P05 Red Cap - Standard Nozzle	BGVP P05 (red filter, standard nozzle)	in-ear	711

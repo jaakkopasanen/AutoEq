@@ -39,9 +39,9 @@ class NamePrompt:
                         value=f'<h4 style="margin: 0;text-align: center; line-height: 1.7">{self.name}</h4>'
                               f'<i style="text-align: center; display: inline-block; width: 100%; line-height: 1">'
                               f'{urllib.parse.unquote(self.item.url) or self.item.source_name}</i>'),
-                ], layout=widgets.Layout(width='400px', text_align='center')),
+                ], layout=widgets.Layout(text_align='center', min_width='400px')),
                 self.search_button
-            ]),
+            ], layout=widgets.Layout(width='600px')),
             widgets.HBox([
                 widgets.VBox([
                     *self._name_proposal_buttons,  # Name suggestions

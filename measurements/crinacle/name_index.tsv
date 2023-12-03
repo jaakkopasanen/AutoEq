@@ -1146,8 +1146,8 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DT20
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DT200 R.txt	Audiosense DT200	Audiosense DT200	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DT600 R.txt	Audiosense DT600 	Audiosense DT600	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DT600 L.txt	Audiosense DT600 	Audiosense DT600	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DT600 80ohm L.txt	Audiosense DT600 (80Ω resistor)	Audiosense DT600 (80 ohm resistor)	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DT600 80ohm R.txt	Audiosense DT600 (80Ω resistor)	Audiosense DT600 (80 ohm resistor)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DT600 80ohm L.txt	Audiosense DT600 (80Ω resistor)	Audiosense DT600 (80 ohm adapter)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DT600 80ohm R.txt	Audiosense DT600 (80Ω resistor)	Audiosense DT600 (80 ohm adapter)	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T800 R.txt	Audiosense T800 S1	Audiosense T800	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T800 L.txt	Audiosense T800 S1	Audiosense T800	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Elixir R.txt	Aure Elixir	Aure Audio Elixir	in-ear	711
@@ -5462,8 +5462,8 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EAH-
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EAH-AZ70W L.txt	Technics EAH-AZ70W	Technics EAH-AZ70W	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Clairvoyance L.txt	ThieAudio Clairvoyance 	ThieAudio Clairvoyance	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Clairvoyance R.txt	ThieAudio Clairvoyance 	ThieAudio Clairvoyance	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Clairvoyance 100ohm R.txt	ThieAudio Clairvoyance (100Ω resistor)	ThieAudio Clairvoyance (100 ohm resistor)	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Clairvoyance 100ohm L.txt	ThieAudio Clairvoyance (100Ω resistor)	ThieAudio Clairvoyance (100 ohm resistor)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Clairvoyance 100ohm R.txt	ThieAudio Clairvoyance (100Ω resistor)	ThieAudio Clairvoyance (100 ohm adapter)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Clairvoyance 100ohm L.txt	ThieAudio Clairvoyance (100Ω resistor)	ThieAudio Clairvoyance (100 ohm adapter)	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Elixir TA R.txt	ThieAudio Elixir	ThieAudio Elixir	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Elixir TA L.txt	ThieAudio Elixir	ThieAudio Elixir	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Excalibur L.txt	ThieAudio Excalibur	ThieAudio Excalibur	in-ear	711
@@ -5514,10 +5514,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mona
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch S2 R.txt	ThieAudio Monarch 	ThieAudio Monarch	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch L.txt		ThieAudio Monarch	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch R.txt		ThieAudio Monarch	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch S2 100ohm L.txt	ThieAudio Monarch (100Ω resistor)	ThieAudio Monarch (100 Ohm resistor)	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch S2 100ohm R.txt	ThieAudio Monarch (100Ω resistor)	ThieAudio Monarch (100 Ohm resistor)	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch S2 20ohm R.txt	ThieAudio Monarch (20Ω resistor)	ThieAudio Monarch (20 Ohm resistor)	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch S2 20ohm L.txt	ThieAudio Monarch (20Ω resistor)	ThieAudio Monarch (20 Ohm resistor)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch S2 100ohm L.txt	ThieAudio Monarch (100Ω resistor)	ThieAudio Monarch (100 ohm adapter)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch S2 100ohm R.txt	ThieAudio Monarch (100Ω resistor)	ThieAudio Monarch (100 ohm adapter)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch S2 20ohm R.txt	ThieAudio Monarch (20Ω resistor)	ThieAudio Monarch (20 ohm adapter)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch S2 20ohm L.txt	ThieAudio Monarch (20Ω resistor)	ThieAudio Monarch (20 ohm adapter)	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch Mk2 R.txt	ThieAudio Monarch Mk2	ThieAudio Monarch MKII	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Monarch Mk2 L.txt	ThieAudio Monarch Mk2	ThieAudio Monarch MKII	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Monarch Mk2 R.txt	Thieaudio Monarch Mk2	ThieAudio Monarch MKII	in-ear	Bruel & Kjaer 4620

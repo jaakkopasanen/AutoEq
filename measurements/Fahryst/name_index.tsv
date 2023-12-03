@@ -16,12 +16,12 @@ https://fahryst.squig.link/data/Audiosense%20AQ4%20L.txt	Audiosense AQ4	Audiosen
 https://fahryst.squig.link/data/Audiosense%20AQ4%20R.txt	Audiosense AQ4	Audiosense AQ4	in-ear	711
 https://fahryst.squig.link/data/Audiosense%20DT600%20Stock%20L.txt	Audiosense DT600 (Stock)	Audiosense DT600	in-ear	711
 https://fahryst.squig.link/data/Audiosense%20DT600%20Stock%20R.txt	Audiosense DT600 (Stock)	Audiosense DT600	in-ear	711
-https://fahryst.squig.link/data/Audiosense%20DT600%2010%20Ohm%20L.txt	Audiosense DT600 (10 Ohm Impedance)	Audiosense DT600 (10 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Audiosense%20DT600%2010%20Ohm%20R.txt	Audiosense DT600 (10 Ohm Impedance)	Audiosense DT600 (10 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Audiosense%20DT600%2025%20Ohm%20L.txt	Audiosense DT600 (25 Ohm Impedance)	Audiosense DT600 (25 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Audiosense%20DT600%2025%20Ohm%20R.txt	Audiosense DT600 (25 Ohm Impedance)	Audiosense DT600 (25 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Audiosense%20DT600%20with%2030%20Ohm%20Impedance%20L.txt	Audiosense DT600 (30 Ohm Impedance)	Audiosense DT600 (30 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Audiosense%20DT600%20with%2030%20Ohm%20Impedance%20R.txt	Audiosense DT600 (30 Ohm Impedance)	Audiosense DT600 (30 ohm resistor)	in-ear	711
+https://fahryst.squig.link/data/Audiosense%20DT600%2010%20Ohm%20L.txt	Audiosense DT600 (10 Ohm Impedance)	Audiosense DT600 (10 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Audiosense%20DT600%2010%20Ohm%20R.txt	Audiosense DT600 (10 Ohm Impedance)	Audiosense DT600 (10 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Audiosense%20DT600%2025%20Ohm%20L.txt	Audiosense DT600 (25 Ohm Impedance)	Audiosense DT600 (25 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Audiosense%20DT600%2025%20Ohm%20R.txt	Audiosense DT600 (25 Ohm Impedance)	Audiosense DT600 (25 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Audiosense%20DT600%20with%2030%20Ohm%20Impedance%20L.txt	Audiosense DT600 (30 Ohm Impedance)	Audiosense DT600 (30 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Audiosense%20DT600%20with%2030%20Ohm%20Impedance%20R.txt	Audiosense DT600 (30 Ohm Impedance)	Audiosense DT600 (30 ohm adapter)	ignore	711
 https://fahryst.squig.link/data/BGVP%20Scale%20L.txt	BGVP Scale	BGVP Scale	in-ear	711
 https://fahryst.squig.link/data/BGVP%20Scale%20R.txt	BGVP Scale	BGVP Scale	in-ear	711
 https://fahryst.squig.link/data/BLON%20BL-Max%20L.txt	BLON BL-Max	BLON BL-Max	in-ear	711
@@ -56,8 +56,8 @@ https://fahryst.squig.link/data/EPZ%20Q5%20L.txt	EPZ Q5	EPZ Q5	in-ear	711
 https://fahryst.squig.link/data/EPZ%20Q5%20R.txt	EPZ Q5	EPZ Q5	in-ear	711
 https://fahryst.squig.link/data/Etymotic%20ER3XR%20L.txt	Etymotic ER3XR (Stock)	Etymotic ER3XR	in-ear	711
 https://fahryst.squig.link/data/Etymotic%20ER3XR%20R.txt	Etymotic ER3XR (Stock)	Etymotic ER3XR	in-ear	711
-https://fahryst.squig.link/data/Etymotic%20ER3XR%2030%20Ohm%20Impedance%20L.txt	Etymotic ER3XR (30 Ohm Impedance)	Etymotic ER3XR (30 Ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Etymotic%20ER3XR%2030%20Ohm%20Impedance%20R.txt	Etymotic ER3XR (30 Ohm Impedance)	Etymotic ER3XR (30 Ohm resistor)	in-ear	711
+https://fahryst.squig.link/data/Etymotic%20ER3XR%2030%20Ohm%20Impedance%20L.txt	Etymotic ER3XR (30 Ohm Impedance)	Etymotic ER3XR (30 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Etymotic%20ER3XR%2030%20Ohm%20Impedance%20R.txt	Etymotic ER3XR (30 Ohm Impedance)	Etymotic ER3XR (30 ohm adapter)	ignore	711
 https://fahryst.squig.link/data/Fiio%20F9%20L.txt	Fiio F9	FiiO F9	in-ear	711
 https://fahryst.squig.link/data/Fiio%20FD11%20L.txt	Fiio FD11	FiiO FD11	in-ear	711
 https://fahryst.squig.link/data/Fiio%20FD11%20R.txt	Fiio FD11	FiiO FD11	in-ear	711
@@ -229,18 +229,18 @@ https://fahryst.squig.link/data/Truthear%20Hexa%20L.txt	Truthear Hexa	Truthear H
 https://fahryst.squig.link/data/Truthear%20Hexa%20R.txt	Truthear Hexa	Truthear Hexa	in-ear	711
 https://fahryst.squig.link/data/Truthear%20Zero%20L.txt	Truthear x Crinacle Zero (Stock)	Truthear x Crinacle Zero	in-ear	711
 https://fahryst.squig.link/data/Truthear%20Zero%20R.txt	Truthear x Crinacle Zero (Stock)	Truthear x Crinacle Zero	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%2010%20Ohm%20L.txt	Truthear x Crinacle Zero (10 Ohm Impedance)	Truthear x Crinacle Zero (10 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%2010%20Ohm%20R.txt	Truthear x Crinacle Zero (10 Ohm Impedance)	Truthear x Crinacle Zero (10 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%2030%20Ohm%20L.txt	Truthear x Crinacle Zero (30 Ohm Impedance)	Truthear x Crinacle Zero (30 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%2030%20Ohm%20R.txt	Truthear x Crinacle Zero (30 Ohm Impedance)	Truthear x Crinacle Zero (30 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%2075%20Ohm%20L.txt	Truthear x Crinacle Zero (75 Ohm Impedance)	Truthear x Crinacle Zero (75 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%2075%20Ohm%20R.txt	Truthear x Crinacle Zero (75 Ohm Impedance)	Truthear x Crinacle Zero (75 ohm resistor)	in-ear	711
+https://fahryst.squig.link/data/Truthear%20Zero%2010%20Ohm%20L.txt	Truthear x Crinacle Zero (10 Ohm Impedance)	Truthear x Crinacle Zero (10 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Truthear%20Zero%2010%20Ohm%20R.txt	Truthear x Crinacle Zero (10 Ohm Impedance)	Truthear x Crinacle Zero (10 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Truthear%20Zero%2030%20Ohm%20L.txt	Truthear x Crinacle Zero (30 Ohm Impedance)	Truthear x Crinacle Zero (30 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Truthear%20Zero%2030%20Ohm%20R.txt	Truthear x Crinacle Zero (30 Ohm Impedance)	Truthear x Crinacle Zero (30 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Truthear%20Zero%2075%20Ohm%20L.txt	Truthear x Crinacle Zero (75 Ohm Impedance)	Truthear x Crinacle Zero (75 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Truthear%20Zero%2075%20Ohm%20R.txt	Truthear x Crinacle Zero (75 Ohm Impedance)	Truthear x Crinacle Zero (75 ohm adapter)	ignore	711
 https://fahryst.squig.link/data/Truthear%20Zero%20Red%20L.txt	Truthear x Crinacle Zero RED (Stock)	Truthear x Crinacle Zero RED	in-ear	711
 https://fahryst.squig.link/data/Truthear%20Zero%20Red%20R.txt	Truthear x Crinacle Zero RED (Stock)	Truthear x Crinacle Zero RED	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%20Red%2030%20Ohm%20L.txt	Truthear x Crinacle Zero RED (30 Ohm Impedance)	Truthear x Crinacle Zero RED (30 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%20Red%2030%20Ohm%20R.txt	Truthear x Crinacle Zero RED (30 Ohm Impedance)	Truthear x Crinacle Zero RED (30 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%20Red%2075%20Ohm%20L.txt	Truthear x Crinacle Zero RED (75 Ohm Impedance)	Truthear x Crinacle Zero RED (75 ohm resistor)	in-ear	711
-https://fahryst.squig.link/data/Truthear%20Zero%20Red%2075%20Ohm%20R.txt	Truthear x Crinacle Zero RED (75 Ohm Impedance)	Truthear x Crinacle Zero RED (75 ohm resistor)	in-ear	711
+https://fahryst.squig.link/data/Truthear%20Zero%20Red%2030%20Ohm%20L.txt	Truthear x Crinacle Zero RED (30 Ohm Impedance)	Truthear x Crinacle Zero RED (30 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Truthear%20Zero%20Red%2030%20Ohm%20R.txt	Truthear x Crinacle Zero RED (30 Ohm Impedance)	Truthear x Crinacle Zero RED (30 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Truthear%20Zero%20Red%2075%20Ohm%20L.txt	Truthear x Crinacle Zero RED (75 Ohm Impedance)	Truthear x Crinacle Zero RED (75 ohm adapter)	ignore	711
+https://fahryst.squig.link/data/Truthear%20Zero%20Red%2075%20Ohm%20R.txt	Truthear x Crinacle Zero RED (75 Ohm Impedance)	Truthear x Crinacle Zero RED (75 ohm adapter)	ignore	711
 https://fahryst.squig.link/data/Truthear%20Zero%20Red%2010%20Ohm%20L.txt	Truthear x Crinacle Zero RED (10 Ohm Impedance)	Truthear x Crinacle Zero RED (Bass+)	in-ear	711
 https://fahryst.squig.link/data/Truthear%20Zero%20Red%2010%20Ohm%20R.txt	Truthear x Crinacle Zero RED (10 Ohm Impedance)	Truthear x Crinacle Zero RED (Bass+)	in-ear	711
 https://fahryst.squig.link/data/Whizzer%20Kylin%20HE01B%20L.txt	Whizzer Kylin HE01B	Whizzer Kylin HE01B	in-ear	711

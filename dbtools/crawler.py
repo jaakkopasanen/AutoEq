@@ -415,7 +415,7 @@ class Crawler(ABC):
         for i, prompt_list_item in enumerate(self.prompts):
             prompt_list_item.inactive_style()
         self.active_list_item = new_active
-        if self.active_list_item and self.active_list_item.widget.button_style not in ['success', 'ignore']:
+        if self.active_list_item and self.active_list_item.widget.button_style not in ['success', 'danger']:
             # Selected something i.e. is not clear-out at the end of the list
             self.active_list_item.active_style()
             # Item needs to be resolved and updated first

@@ -1,0 +1,483 @@
+url	source_name	name	form	rig
+https://rg.squig.link/data/7hz%20Legato%20L.txt	7Hz Legato (stock)	7Hz Legato	in-ear	711
+https://rg.squig.link/data/7hz%20Legato%20R.txt	7Hz Legato (stock)	7Hz Legato	in-ear	711
+https://rg.squig.link/data/7hz%20Legato%20(250%20mesh)%20L.txt	7Hz Legato (250 mesh)	7Hz Legato (250 mesh)	ignore	
+https://rg.squig.link/data/7hz%20Legato%20(3%20outer%20vent%20blutack)%20L.txt	7Hz Legato (3 outer vent blutack)	7Hz Legato (3 outer vent blutack)	ignore	
+https://rg.squig.link/data/7hz%20Legato%20(500%20mesh)%20L.txt	7Hz Legato (500 mesh)	7Hz Legato (500 mesh)	ignore	
+https://rg.squig.link/data/7hz%20Legato%20(inner%20vent%20blutack)%20L.txt	7Hz Legato (inner vent blutack)	7Hz Legato (inner vent blutack)	ignore	
+https://rg.squig.link/data/7Hz%20Timeless%20L.txt	7Hz Timeless (stock)	7Hz Timeless	in-ear	711
+https://rg.squig.link/data/7Hz%20Timeless%20R.txt	7Hz Timeless (stock)	7Hz Timeless	in-ear	711
+https://rg.squig.link/data/7Hz%20Timeless%20(350%20Mesh,%20stock%20tuning%20foam%20sideways,%20Super%20Thin%20HS%20Foam%20inner%20vent)%20L.txt	7Hz Timeless (350 Mesh, stock tuning foam sideways, Super Thin HS Foam inner vent)	7Hz Timeless (350 Mesh, stock tuning foam sideways, Super Thin HS Foam inner vent)	ignore	
+https://rg.squig.link/data/7Hz%20Timeless%20(350%20Mesh,%20stock%20tuning%20foam,%20Super%20Thin%20HS%20Foam%20inner%20vent)%20L.txt	7Hz Timeless (350 Mesh, stock tuning foam, Super Thin HS Foam inner vent)	7Hz Timeless (350 Mesh, stock tuning foam, Super Thin HS Foam inner vent)	ignore	
+https://rg.squig.link/data/7Hz%20Timeless%20(Sony%20Import%20Foam)%20L.txt	7Hz Timeless (Sony Import Foam)	7Hz Timeless (Sony Import Foam)	ignore	
+https://rg.squig.link/data/7Hz%20Timeless%20(Sony%20Import%20Foam,%20Super%20Thin%20HS%20Foam%20inner%20vent)%20L.txt	7Hz Timeless (Sony Import Foam, Super Thin HS Foam inner vent)	7Hz Timeless (Sony Import Foam, Super Thin HS Foam inner vent)	ignore	
+https://rg.squig.link/data/7Hz%20Timeless%20(Tanchjim%20Filter,%20stock%20tuning%20foam%20sideways,%20Super%20Thin%20HS%20Foam%20inner%20vent)%20L.txt	7Hz Timeless (Tanchjim Filter, stock tuning foam sideways, Super Thin HS Foam inner vent)	7Hz Timeless (Tanchjim Filter, stock tuning foam sideways, Super Thin HS Foam inner vent)	ignore	
+https://rg.squig.link/data/AZLA%20Azel%20L.txt	AZLA Azel	AZLA Azel	in-ear	711
+https://rg.squig.link/data/Aiderlot%20M5%20(Treble%20+%20350%20Mesh)%20L.txt	Aiderlot M5 (Treble filter + 350 Mesh)	Aiderlot M5 (Treble filter + 350 Mesh)	ignore	
+https://rg.squig.link/data/Aiderlot%20M5%20(Treble%20+%20500%20Mesh)%20L.txt	Aiderlot M5 (Treble filter + 500 Mesh)	Aiderlot M5 (Treble filter + 500 Mesh)	ignore	
+https://rg.squig.link/data/Aiderlot%20M5%20(Treble%20+%20Sony%20Import%20Foam)%20L.txt	Aiderlot M5 (Treble filter + Sony Import Foam)	Aiderlot M5 (Treble filter + Sony Import Foam)	ignore	
+https://rg.squig.link/data/Aiderlot%20M5%20(Bass)%20L.txt	Aiderlot M5 (Bass filter)	Aiderlot M5 (bass filter)	in-ear	711
+https://rg.squig.link/data/Aiderlot%20M5%20(Filterless)%20L.txt	Aiderlot M5 (Filterless)	Aiderlot M5 (no filter)	in-ear	711
+https://rg.squig.link/data/Aiderlot%20M5%20(Reference)%20L.txt	Aiderlot M5 (Reference filter)	Aiderlot M5 (reference filter)	in-ear	711
+https://rg.squig.link/data/Aiderlot%20M5%20(Treble)%20L.txt	Aiderlot M5 (Treble filter)	Aiderlot M5 (treble filter)	in-ear	711
+https://rg.squig.link/data/Aiderlot%20M5%20(Treble%20+%2080ohm)%20L.txt	Aiderlot M5 (Treble, w/ 80ohm resistor)	Aiderlot M5 (treble, 80 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/Aiderlot%20M5%20Pro%20L.txt	Aiderlot M5 Pro (stock)	Aiderlot M5 Pro	in-ear	711
+https://rg.squig.link/data/Aiderlot%20M5%20Pro%20R.txt	Aiderlot M5 Pro (stock)	Aiderlot M5 Pro	in-ear	711
+https://rg.squig.link/data/Aiderlot%20M5%20Pro%20modded%20L.txt	Aiderlot M5 Pro (modded)	Aiderlot M5 Pro (modded)	ignore	
+https://rg.squig.link/data/Audiosense%20DT100%20L.txt	Audiosense DT100 (stock)	Audiosense DT100	in-ear	711
+https://rg.squig.link/data/Audiosense%20DT100%20(80ohm)%20L.txt	Audiosense DT100 (w/ 80ohm resistor)	Audiosense DT100 (80 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/Audiosense%20DT200%20L.txt	Audiosense DT200	Audiosense DT200	in-ear	711
+https://rg.squig.link/data/Audiosense%20DT300%20L.txt	Audiosense DT300 (stock)	Audiosense DT300	in-ear	711
+https://rg.squig.link/data/Audiosense%20DT300%20R.txt	Audiosense DT300 (stock)	Audiosense DT300	in-ear	711
+https://rg.squig.link/data/Audiosense%20DT300%20(80ohm)%20L.txt	Audiosense DT300 (w/ 80ohm resistor)	Audiosense DT300 (80 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/Audiosense%20DT600%20(stock)%20L.txt	Audiosense DT600 (stock)	Audiosense DT600	in-ear	711
+https://rg.squig.link/data/Audiosense%20DT600%20(stock)%20R.txt	Audiosense DT600 (stock)	Audiosense DT600	in-ear	711
+https://rg.squig.link/data/Audiosense%20DT600%20(20ohm)%20L.txt	Audiosense DT600 (w/ 20ohm resistor)	Audiosense DT600 (20 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/Audiosense%20DT600%20(25ohm)%20L.txt	Audiosense DT600 (w/ 25ohm resistor)	Audiosense DT600 (25 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/Audiosense%20DT600%20(30ohm)%20L.txt	Audiosense DT600 (w/ 30ohm resistor)	Audiosense DT600 (30 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/Audiosense%20DT600%20(30ohm+Tanya%20Filter)%20L.txt	Audiosense DT600 (Tanya Filter, w/ 30ohm resistor)	Audiosense DT600 (Tanya Filter, w/ 30ohm resistor)	ignore	
+https://rg.squig.link/data/Audiosense%20T180%20Pro%20L.txt	Audiosense T180 Pro	Audiosense T180 Pro	in-ear	711
+https://rg.squig.link/data/Audiosense%20T800%20L.txt	Audiosense T800 (stock)	Audiosense T800	in-ear	711
+https://rg.squig.link/data/Audiosense%20T800%20(1dividedby16%20foam)%20L.txt	Audiosense T800 (1dividedby16 foam)	Audiosense T800 (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/Blon%20BL-01%20L.txt	Blon BL-01	BLON BL-01	in-ear	711
+https://rg.squig.link/data/Blon%20BL-05%20L.txt	Blon BL-05	BLON BL-05	in-ear	711
+https://rg.squig.link/data/Blon%20X%20HBB%20Z300%20L.txt	Blon X HBB Z300	BLON x HBB Z300	in-ear	711
+https://rg.squig.link/data/Blon%20X%20HBB%20Z300%20R.txt	Blon X HBB Z300	BLON x HBB Z300	in-ear	711
+https://rg.squig.link/data/BQEYZ%20Autumn%20(500%20mesh%20inner%20vent,%20Sony%20import%20foam)%20L.txt	BQEYZ Autumn (500 mesh inner vent, Sony import foam)	BQEYZ Autumn (500 mesh inner vent, Sony import foam)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(500%20mesh%20inner%20vent,%20Sony%20import%20foam,%20blutack%20outer%20vent)%20L.txt	BQEYZ Autumn (500 mesh inner vent, Sony import foam, blutack outer vent)	BQEYZ Autumn (500 mesh inner vent, Sony import foam, blutack outer vent)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(Y3%20WTF%20inner%20vent,%202%20high-density%20tuning%20foam,%20500%20mesh)%20R.txt	BQEYZ Autumn (Y3 WTF inner vent, 2 high-density tuning foam, 500 mesh)	BQEYZ Autumn (Y3 WTF inner vent, 2 high-density tuning foam, 500 mesh)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(Y3%20WTF%20inner%20vent,%20Sony%20import%20foam)%20L.txt	BQEYZ Autumn (Y3 WTF inner vent, Sony import foam)	BQEYZ Autumn (Y3 WTF inner vent, Sony import foam)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(Y6%20WTF%20inner%20vent,%20Sony%20import%20foam)%20L.txt	BQEYZ Autumn (Y6 WTF inner vent, Sony import foam)	BQEYZ Autumn (Y6 WTF inner vent, Sony import foam)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(bass)%20L.txt	BQEYZ Autumn (bass)	BQEYZ Autumn (bass filter)	in-ear	711
+https://rg.squig.link/data/BQEYZ%20Autumn%20(bass%20vent,%20Sony%20import%20foam)%20L.txt	BQEYZ Autumn (bass vent, Sony import foam)	BQEYZ Autumn (bass vent, Sony import foam)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(bass%20vent,%20filterless)%20L.txt	BQEYZ Autumn (bass vent, filterless)	BQEYZ Autumn (bass vent, filterless)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(bass%20vent,%20high-density%20tuning%20foam)%20L.txt	BQEYZ Autumn (bass vent, high-density tuning foam)	BQEYZ Autumn (bass vent, high-density tuning foam)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(bass%20vent,%20high-density%20tuning%20foam,%20cotton%20filter)%20L.txt	BQEYZ Autumn (bass vent, high-density tuning foam, cotton filter)	BQEYZ Autumn (bass vent, high-density tuning foam, cotton filter)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(normal)%20L.txt	BQEYZ Autumn (normal)	BQEYZ Autumn (normal filter)	in-ear	711
+https://rg.squig.link/data/BQEYZ%20Autumn%20(normal)%20R.txt	BQEYZ Autumn (normal)	BQEYZ Autumn (normal filter)	in-ear	711
+https://rg.squig.link/data/BQEYZ%20Autumn%20(normal%20vent,%20Sony%20import%20foam)%20L.txt	BQEYZ Autumn (normal vent, Sony import foam)	BQEYZ Autumn (normal vent, Sony import foam)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(normal%20vent,%20Sony%20import%20foam,%20blutack%20outer%20vent)%20L.txt	BQEYZ Autumn (normal vent, Sony import foam, blutack outer vent)	BQEYZ Autumn (normal vent, Sony import foam, blutack outer vent)	ignore	
+https://rg.squig.link/data/BQEYZ%20Autumn%20(treble)%20L.txt	BQEYZ Autumn (treble)	BQEYZ Autumn (treble filter)	in-ear	711
+https://rg.squig.link/data/BQEYZ%20Autumn%20(treble%20vent,%20Sony%20import%20foam)%20L.txt	BQEYZ Autumn (treble vent, Sony import foam)	BQEYZ Autumn (treble vent, Sony import foam)	ignore	
+https://rg.squig.link/data/BQEYZ%20Spring%202%20L.txt	BQEYZ Spring 2 (stock)	BQEYZ Spring 2	in-ear	711
+https://rg.squig.link/data/BQEYZ%20Spring%202%20(modded)%20L.txt	BQEYZ Spring 2 (modded)	BQEYZ Spring 2 (modded)	ignore	
+https://rg.squig.link/data/Bamboo%20Forest%20Bird%20Jinghong%20L.txt	Bamboo Forest Bird Jinghong (stock)	Bamboo Forest Bird Jinghong	in-ear	711
+https://rg.squig.link/data/Bamboo%20Forest%20Bird%20Jinghong%20R.txt	Bamboo Forest Bird Jinghong (stock)	Bamboo Forest Bird Jinghong	in-ear	711
+https://rg.squig.link/data/Bamboo%20Forest%20Bird%20Jinghong%20(Sony%20Import%20Foam)%20L.txt	Bamboo Forest Bird Jinghong (Sony Import Foam)	Bamboo Forest Bird Jinghong (Sony Import Foam)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(450%20mesh%20+%20micropore%20tape%202pin%20vent%20block)%20L.txt	Blon BL-03 (450 mesh + micropore tape 2pin vent block)	Blon BL-03 (450 mesh + micropore tape 2pin vent block)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(500%20mesh%20+%20micropore%20tape%202pin%20vent%20block)%20L.txt	Blon BL-03 (500 mesh + micropore tape 2pin vent block)	Blon BL-03 (500 mesh + micropore tape 2pin vent block)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(5mm%20Y4%20WTF%20+%20micropore%20tape%202pin%20vent%20block)%20L.txt	Blon BL-03 (5mm Y4 WTF + micropore tape 2pin vent block)	Blon BL-03 (5mm Y4 WTF + micropore tape 2pin vent block)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(Mesh%20mod)%20L.txt	Blon BL-03 (Mesh mod)	Blon BL-03 (Mesh mod)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(cotton%20filter%20+%20high-density%20tuning%20foam%20+%20micropore%20tape%202pin%20vent%20block)%20L.txt	Blon BL-03 (cotton filter + high-density tuning foam + micropore tape 2pin vent block)	Blon BL-03 (cotton filter + high-density tuning foam + micropore tape 2pin vent block)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(cotton%20filter%20+%20micropore%20tape%202pin%20vent%20block)%20L.txt	Blon BL-03 (cotton filter + micropore tape 2pin vent block)	Blon BL-03 (cotton filter + micropore tape 2pin vent block)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(high-density%20tuning%20foam)%20L.txt	Blon BL-03 (high density tuning foam)	Blon BL-03 (high density tuning foam)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(high-density%20tuning%20foam,%20tanchjim%20filter)%20L.txt	Blon BL-03 (high density tuning foam, tanchjim filter)	Blon BL-03 (high density tuning foam, tanchjim filter)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(micropore%20tape%202pin%20vent%20block)%20L.txt	Blon BL-03 (micropore tape 2pin vent block)	Blon BL-03 (micropore tape 2pin vent block)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(tanchjim%20filter%20+%20blutack%202pin%20vent%20block)%20L.txt	Blon BL-03 (tanchjim filter + blutack 2pin vent block)	Blon BL-03 (tanchjim filter + blutack 2pin vent block)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(tanchjim%20filter%20+%20micropore%20tape%202pin%20vent%20block)%20L.txt	Blon BL-03 (tanchjim filter + micropore tape 2pin vent block)	Blon BL-03 (tanchjim filter + micropore tape 2pin vent block)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(tanchjim%20filter)%20L.txt	Blon BL-03 (tanchjim filter)	Blon BL-03 (tanchjim filter)	ignore	
+https://rg.squig.link/data/Blon%20BL-03%20(white%20fine%20mesh%20+%20micropore%20tape%202pin%20vent%20block)%20L.txt	Blon BL-03 (white fine mesh + micropore tape 2pin vent block)	Blon BL-03 (white fine mesh + micropore tape 2pin vent block)	ignore	
+https://rg.squig.link/data/CCA%20C10%20L.txt	CCA C10	CCA C10	in-ear	711
+https://rg.squig.link/data/CCA%20CA10%20L.txt	CCA CA10	CCA CA10	in-ear	711
+https://rg.squig.link/data/CCA%20CA10%20R.txt	CCA CA10	CCA CA10	in-ear	711
+https://rg.squig.link/data/CCA%20CRA%20S2%20L.txt	CCA CRA (S2)	CCA CRA	in-ear	711
+https://rg.squig.link/data/CCA%20CRA%20S2%20R.txt	CCA CRA (S2)	CCA CRA	in-ear	711
+https://rg.squig.link/data/CCA%20CRA%20L.txt	CCA CRA (stock)	CCA CRA	in-ear	711
+https://rg.squig.link/data/CCA%20CRA%20R.txt	CCA CRA (stock)	CCA CRA	in-ear	711
+https://rg.squig.link/data/CCA%20CRA%20(1dividedby4%20Foam)%20L.txt	CCA CRA (1dividedby4 Foam)	CCA CRA (1dividedby4 Foam)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(1dividedby8%20Foam)%20L.txt	CCA CRA (1dividedby8 Foam)	CCA CRA (1dividedby8 Foam)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(200%20Mesh)%20L.txt	CCA CRA (200 Mesh)	CCA CRA (200 Mesh)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(350%20Mesh)%20L.txt	CCA CRA (350 Mesh)	CCA CRA (350 Mesh)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20200%20Paper%20Filter)%20L.txt	CCA CRA (500 Mesh + 200 Paper Filter)	CCA CRA (500 Mesh + 200 Paper Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20250%20Paper%20Filter)%20L.txt	CCA CRA (500 Mesh + 250 Paper Filter)	CCA CRA (500 Mesh + 250 Paper Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20300%20Paper%20Filter%20+%20High-Density%20Tuning%20Foam)%20L.txt	CCA CRA (500 Mesh + 300 Paper Filter + High-Density Tuning Foam)	CCA CRA (500 Mesh + 300 Paper Filter + High-Density Tuning Foam)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20300%20Paper%20Filter)%20L.txt	CCA CRA (500 Mesh + 300 Paper Filter)	CCA CRA (500 Mesh + 300 Paper Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20350%20Paper%20Filter)%20L.txt	CCA CRA (500 Mesh + 350 Paper Filter)	CCA CRA (500 Mesh + 350 Paper Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20500%20Paper%20Filter)%20L.txt	CCA CRA (500 Mesh + 500 Paper Filter)	CCA CRA (500 Mesh + 500 Paper Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20High-Density%20Tuning%20Foam)%20L.txt	CCA CRA (500 Mesh + High-Density Tuning Foam)	CCA CRA (500 Mesh + High-Density Tuning Foam)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20Sony%20General%20Foam)%20L.txt	CCA CRA (500 Mesh + Sony General Foam)	CCA CRA (500 Mesh + Sony General Foam)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20Y1%20Paper%20Filter)%20L.txt	CCA CRA (500 Mesh + Y1 Paper Filter)	CCA CRA (500 Mesh + Y1 Paper Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20Y3%20Paper%20Filter)%20L.txt	CCA CRA (500 Mesh + Y3 Paper Filter)	CCA CRA (500 Mesh + Y3 Paper Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh%20+%20Y6%20Paper%20Filter)%20L.txt	CCA CRA (500 Mesh + Y6 Paper Filter)	CCA CRA (500 Mesh + Y6 Paper Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(500%20Mesh)%20L.txt	CCA CRA (500 Mesh)	CCA CRA (500 Mesh)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(Filterless%20+%202%20High-Density%20Tuning%20Foams)%20L.txt	CCA CRA (Filterless + 2 High-Density Tuning Foams)	CCA CRA (Filterless + 2 High-Density Tuning Foams)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(Filterless%20+%20High-Density%20Tuning%20Foams)%20L.txt	CCA CRA (Filterless + High-Density Tuning Foams)	CCA CRA (Filterless + High-Density Tuning Foams)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(Filterless)%20L.txt	CCA CRA (Filterless)	CCA CRA (Filterless)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(Nylon%20filter)%20L.txt	CCA CRA (Nylon Filter)	CCA CRA (Nylon Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(Sony%20General%20Foam)%20L.txt	CCA CRA (Sony General Foam)	CCA CRA (Sony General Foam)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(Sony%20Import%20Foam)%20L.txt	CCA CRA (Sony Import Foam)	CCA CRA (Sony Import Foam)	ignore	
+https://rg.squig.link/data/CCA%20CRA%20(Tanchjim%20Filter)%20L.txt	CCA CRA (Tanchjim Filter)	CCA CRA (Tanchjim Filter)	ignore	
+https://rg.squig.link/data/CCA%20CRA+%20L.txt	CCA CRA+ (Stock)	CCA CRA+	in-ear	711
+https://rg.squig.link/data/CCA%20CRA+%20R.txt	CCA CRA+ (Stock)	CCA CRA+	in-ear	711
+https://rg.squig.link/data/CCA%20CRA+%20(Stock%20Filter%20+%20350%20Mesh)%20L.txt	CCA CRA+ (Stock Filter + 350 Mesh)	CCA CRA+ (Stock Filter + 350 Mesh)	ignore	
+https://rg.squig.link/data/CCA%20NRA%20(0.15ohm)%20L.txt	CCA NRA (w/0.15ohm cable)	CCA NRA (w/0.15ohm cable)	ignore	
+https://rg.squig.link/data/CCA%20NRA%20(0.66ohm)%20L.txt	CCA NRA (w/0.66ohm cable)	CCA NRA (w/0.66ohm cable)	ignore	
+https://rg.squig.link/data/CCA%20NRA%20(0.66ohm)%20R.txt	CCA NRA (w/0.66ohm cable)	CCA NRA (w/0.66ohm cable)	ignore	
+https://rg.squig.link/data/CVJ%20Konoka%20(00)%20L.txt	CVJ Konoka (00)	CVJ Konoka (off-off)	in-ear	711
+https://rg.squig.link/data/CVJ%20Konoka%20(01)%20L.txt	CVJ Konoka (01)	CVJ Konoka (off-on)	in-ear	711
+https://rg.squig.link/data/CVJ%20Konoka%20(10)%20L.txt	CVJ Konoka (10)	CVJ Konoka (on-off)	in-ear	711
+https://rg.squig.link/data/CVJ%20Konoka%20(11)%20L.txt	CVJ Konoka (11)	CVJ Konoka (on-on)	in-ear	711
+https://rg.squig.link/data/CVJ%20Konoka%20(11)%20R.txt	CVJ Konoka (11)	CVJ Konoka (on-on)	in-ear	711
+https://rg.squig.link/data/CVJ%20Konoka%20(10%20+%204x3mm%20high%20density%20foam%20sideways%20+%20cotton%20in%20BA%20nozzle%20+%20500%20mesh)%20L.txt	CVJ Konoka 10 + 4x3mm high density foam sideways + cotton in BA nozzle + 500 mesh	CVJ Konoka 10 + 4x3mm high density foam sideways + cotton in BA nozzle + 500 mesh	ignore	
+https://rg.squig.link/data/Co-Donguri%20Brass%20L.txt	Co-Donguri Brass (stock)	Co-Donguri Brass	in-ear	711
+https://rg.squig.link/data/Co-Donguri%20Brass%20(1dividedby16%20foam)%20L.txt	Co-Donguri Brass (1dividedby16 foam)	Co-Donguri Brass (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/Co-Donguri%20Brass%20(1dividedby2%20Foam_Nozzle)%20L.txt	Co-Donguri Brass (1dividedby2 Foam_Nozzle)	Co-Donguri Brass (1dividedby2 Foam_Nozzle)	ignore	
+https://rg.squig.link/data/Co-Donguri%20Brass%20(1dividedby4%20Foam_Nozzle)%20L.txt	Co-Donguri Brass (1dividedby4 Foam_Nozzle)	Co-Donguri Brass (1dividedby4 Foam_Nozzle)	ignore	
+https://rg.squig.link/data/10Clear%20Hmax-1%20V13%20L.txt	DIY 1 (V13)	DIY 1 (V13)	ignore	
+https://rg.squig.link/data/10Clear%20V18%20L.txt	DIY 10Clear (V18)	DIY 10Clear (V18)	ignore	
+https://rg.squig.link/data/10SS%20V1%20L.txt	DIY 10SS (V1)	DIY 10SS (V1)	ignore	
+https://rg.squig.link/data/10SS%20V13%20L.txt	DIY 10SS (V13)	DIY 10SS (V13)	ignore	
+https://rg.squig.link/data/10mm%20Bio%20V1%20R.txt	DIY 10mm Bio (V1)	DIY 10mm Bio (V1)	ignore	
+https://rg.squig.link/data/10mm%20Bio%20V2%20R.txt	DIY 10mm Bio (V2)	DIY 10mm Bio (V2)	ignore	
+https://rg.squig.link/data/10mm%20Bio%20V3%20R.txt	DIY 10mm Bio (V3)	DIY 10mm Bio (V3)	ignore	
+https://rg.squig.link/data/10mm%20Bio%20V4%20R.txt	DIY 10mm Bio (V4)	DIY 10mm Bio (V4)	ignore	
+https://rg.squig.link/data/10mm%20Bio%20V5%20R.txt	DIY 10mm Bio (V5)	DIY 10mm Bio (V5)	ignore	
+https://rg.squig.link/data/11Openback%20V1%20L.txt	DIY 11Openback (V1)	DIY 11Openback (V1)	ignore	
+https://rg.squig.link/data/11Openback%20V9%20L.txt	DIY 11Openback (V9)	DIY 11Openback (V9)	ignore	
+https://rg.squig.link/data/8CU%20V1%20L.txt	DIY 8CU (V1)	DIY 8CU (V1)	ignore	
+https://rg.squig.link/data/8CU%20V2%20L.txt	DIY 8CU (V2)	DIY 8CU (V2)	ignore	
+https://rg.squig.link/data/8CU%20V3%20L.txt	DIY 8CU (V3)	DIY 8CU (V3)	ignore	
+https://rg.squig.link/data/8CU%20V6%20L.txt	DIY 8CU (V6)	DIY 8CU (V6)	ignore	
+https://rg.squig.link/data/8CU%20V9%20L.txt	DIY 8CU (V9)	DIY 8CU (V9)	ignore	
+https://rg.squig.link/data/Dunu%20EST112%20L.txt	Dunu EST112 (stock)	DUNU EST 112	in-ear	711
+https://rg.squig.link/data/Dunu%20EST112%20(30ohm)%20L.txt	Dunu EST112 (w/ 30ohm resistor)	DUNU EST 112 (30 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Atmospheric%20Immersion%20filter)%20L.txt	Dunu Falcon Pro (Atmospheric Immersion filter)	DUNU Falcon Pro (Atmospheric Immersion filter)	in-ear	711
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Reference%20filter)%20L.txt	Dunu Falcon Pro (Reference filter)	DUNU Falcon Pro (Reference filter)	in-ear	711
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Reference%20filter)%20R.txt	Dunu Falcon Pro (Reference filter)	DUNU Falcon Pro (Reference filter)	in-ear	711
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Transparent%20filter,%202%20outer%20vent%20500%20WTF,%201%20inner%20vent%20500%20WTF,%20low-density%20tuning%20foam)%20L.txt	Dunu Falcon Pro (Transparent filter, 2 outer vent 500 WTF, 1 inner vent 500 WTF, low-density tuning foam)	DUNU Falcon Pro (Transparency filter)	in-ear	711
+https://rg.squig.link/data/Dunu%20Titan%20S%20L.txt	Dunu Titan S (stock)	DUNU Titan S	in-ear	711
+https://rg.squig.link/data/Dunu%20Titan%20S%20R.txt	Dunu Titan S (stock)	DUNU Titan S	in-ear	711
+https://rg.squig.link/data/Dunu%20VULKAN%20L.txt	Dunu VULKAN	DUNU Vulkan	in-ear	711
+https://rg.squig.link/data/Dunu%20VULKAN%20R.txt	Dunu VULKAN	DUNU Vulkan	in-ear	711
+https://rg.squig.link/data/Dunu%20Zen%20L.txt	Dunu Zen (stock)	DUNU Zen	in-ear	711
+https://rg.squig.link/data/Dunu%20EST112%20(1dividedby16%20foam)%20L.txt	Dunu EST112 (1dividedby16foam)	Dunu EST112 (1dividedby16foam)	ignore	
+https://rg.squig.link/data/Dunu%20EST112%20(Micropore%20Tape%20Mod)%20L.txt	Dunu EST112 (Micropore Tape Mod)	Dunu EST112 (Micropore Tape Mod)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Reference%20filter,%202%20outer%20vent%20PK%20foam)%20L.txt	Dunu Falcon Pro (Reference filter, 2 outer vent PK foam)	Dunu Falcon Pro (Reference filter, 2 outer vent PK foam)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Reference%20filter,%202%20outer%20vent%20PK%20foam,%20high-density%20tuning%20foam)%20L.txt	Dunu Falcon Pro (Reference filter, 2 outer vent PK foam, high-density tuning foam)	Dunu Falcon Pro (Reference filter, 2 outer vent PK foam, high-density tuning foam)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Reference%20filter,%202%20outer%20vent%20blutack)%20L.txt	Dunu Falcon Pro (Reference filter, 2 outer vent blutack)	Dunu Falcon Pro (Reference filter, 2 outer vent blutack)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Reference%20filter,%202%20outer%20vent%20blutack,%20high-density%20tuning%20foam)%20L.txt	Dunu Falcon Pro (Reference filter, 2 outer vent blutack, high-density tuning foam)	Dunu Falcon Pro (Reference filter, 2 outer vent blutack, high-density tuning foam)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Transparent%20filter)%20L.txt	Dunu Falcon Pro (Transparent filter)	Dunu Falcon Pro (Transparent filter)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Transparent%20filter,%202%20outer%20vent%20PK%20foam,%20high-density%20tuning%20foam)%20L.txt	Dunu Falcon Pro (Transparent filter, 2 outer vent PK foam, high-density tuning foam)	Dunu Falcon Pro (Transparent filter, 2 outer vent PK foam, high-density tuning foam)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Transparent%20filter,%202%20outer%20vent%20PK%20foam,%20low-density%20tuning%20foam)%20L.txt	Dunu Falcon Pro (Transparent filter, 2 outer vent PK foam, low-density tuning foam)	Dunu Falcon Pro (Transparent filter, 2 outer vent PK foam, low-density tuning foam)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Transparent%20filter,%202%20outer%20vent%20blutack,%201%20inner%20vent%20blutack,%20low-density%20tuning%20foam)%20L.txt	Dunu Falcon Pro (Transparent filter, 2 outer vent blutack, 1 inner vent blutack, low-density tuning foam)	Dunu Falcon Pro (Transparent filter, 2 outer vent blutack, 1 inner vent blutack, low-density tuning foam)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Transparent%20filter,%202%20outer%20vent%20blutack,%20high-density%20tuning%20foam)%20L.txt	Dunu Falcon Pro (Transparent filter, 2 outer vent blutack, high-density tuning foam)	Dunu Falcon Pro (Transparent filter, 2 outer vent blutack, high-density tuning foam)	ignore	
+https://rg.squig.link/data/Dunu%20Falcon%20Pro%20(Transparent%20filter,%202%20outer%20vent%20blutack,%20low-density%20tuning%20foam)%20L.txt	Dunu Falcon Pro (Transparent filter, 2 outer vent blutack, low-density tuning foam)	Dunu Falcon Pro (Transparent filter, 2 outer vent blutack, low-density tuning foam)	ignore	
+https://rg.squig.link/data/Dunu%20Titan%20S%20(500%20Mesh)%20L.txt	Dunu Titan S (500 Mesh)	Dunu Titan S (500 Mesh)	ignore	
+https://rg.squig.link/data/Dunu%20Titan%20S%20(Tanchjim%20Filter)%20L.txt	Dunu Titan S (Tanchjim Filter)	Dunu Titan S (Tanchjim Filter)	ignore	
+https://rg.squig.link/data/Dunu%20Titan%20S%20(Y3%20Paper%20Filter)%20L.txt	Dunu Titan S (Y3 Paper Filter)	Dunu Titan S (Y3 Paper Filter)	ignore	
+https://rg.squig.link/data/Dunu%20Titan%20S%20(Y6%20Paper%20Filter)%20L.txt	Dunu Titan S (Y6 Paper Filter)	Dunu Titan S (Y6 Paper Filter)	ignore	
+https://rg.squig.link/data/Dunu%20Zen%20(High-Density%20Tuning%20Foams%20Inside%20Tips)%20L.txt	Dunu Zen (High-Density Tuning Foams Inside Tips)	Dunu Zen (High-Density Tuning Foams Inside Tips)	ignore	
+https://rg.squig.link/data/Dunu%20Zen%20(Micropore%20Tape%20Mod)%20L.txt	Dunu Zen (Micropore Tape Mod)	Dunu Zen (Micropore Tape Mod)	ignore	
+https://rg.squig.link/data/Earsonics%20Onyx%20L.txt	Earsonics Onyx	EarSonics Onyx	in-ear	711
+https://rg.squig.link/data/Earsonics%20Onyx%20R.txt	Earsonics Onyx	EarSonics Onyx	in-ear	711
+https://rg.squig.link/data/FIIL%20T1%20Lite%20(Bass)%20L.txt	FIIL T1 Lite TWS (Bass)	FIIL T1 Lite TWS (bass EQ)	in-ear	711
+https://rg.squig.link/data/FIIL%20T1%20Lite%20TWS%20L.txt	FIIL T1 Lite TWS (Default)	FIIL T1 Lite TWS (default EQ)	in-ear	711
+https://rg.squig.link/data/FIIL%20T1%20Lite%20TWS%20R.txt	FIIL T1 Lite TWS (Default)	FIIL T1 Lite TWS (default EQ)	in-ear	711
+https://rg.squig.link/data/FIIL%20T1%20Lite%20(Treble)%20L.txt	FIIL T1 Lite TWS (Treble)	FIIL T1 Lite TWS (treble EQ)	in-ear	711
+https://rg.squig.link/data/Fiio%20FD5%20(Bass%20filter)%20L.txt	Fiio FD5 (Bass filter)	FiiO FD5 (narrow nozzle)	in-ear	711
+https://rg.squig.link/data/Fiio%20FD5%20(Balanced%20filter)%20L.txt	Fiio FD5 (Balanced filter)	FiiO FD5 (stock nozzle)	in-ear	711
+https://rg.squig.link/data/Fiio%20FH3%20L.txt	Fiio FH3	FiiO FH3	in-ear	711
+https://rg.squig.link/data/Fiio%20FH5S%20(000)%20L.txt	Fiio FH5S (000)	FiiO FH5s (off-off-off)	in-ear	711
+https://rg.squig.link/data/Fiio%20FH5S%20(001)%20L.txt	Fiio FH5S (001)	FiiO FH5s (off-off-on)	in-ear	711
+https://rg.squig.link/data/Fiio%20FH5S%20(010)%20L.txt	Fiio FH5S (010)	FiiO FH5s (off-on-off)	in-ear	711
+https://rg.squig.link/data/Fiio%20FH5S%20(011)%20L.txt	Fiio FH5S (011)	FiiO FH5s (off-on-on)	in-ear	711
+https://rg.squig.link/data/Fiio%20FH5S%20(100)%20L.txt	Fiio FH5S (100)	FiiO FH5s (on-off-off)	in-ear	711
+https://rg.squig.link/data/Fiio%20FH5S%20(101)%20L.txt	Fiio FH5S (101)	FiiO FH5s (on-off-on)	in-ear	711
+https://rg.squig.link/data/Fiio%20FH5S%20(110)%20L.txt	Fiio FH5S (110)	FiiO FH5s (on-on-off)	in-ear	711
+https://rg.squig.link/data/Fiio%20FH5S%20(111)%20L.txt	Fiio FH5S (111)	FiiO FH5s (on-on-on)	in-ear	711
+https://rg.squig.link/data/Fiio%20FD5%20(1dividedby16%20foam)%20L.txt	Fiio FD5 (1dividedby16 foam)	Fiio FD5 (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/Fiio%20FD5%20(Micropore%20Tape%20Mod)%20L.txt	Fiio FD5 (Micropore Tape Mod)	Fiio FD5 (Micropore Tape Mod)	ignore	
+https://rg.squig.link/data/Final%20Audio%20E1000%20L.txt	Final Audio E1000 (Unmodded)	Final Audio E1000	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20E1000%20(Micropore%20mod)%20L.txt	Final Audio E1000 (Micropore mod)	Final Audio E1000 (Micropore mod)	ignore	
+https://rg.squig.link/data/Final%20Audio%20E2000%20L.txt	Final Audio E2000	Final Audio E2000	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20E3000%20L.txt	Final Audio E3000	Final Audio E3000	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20E4000%20L.txt	Final Audio E4000	Final Audio E4000	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20E500%20L.txt	Final Audio E500	Final Audio E500	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20E500%20R.txt	Final Audio E500	Final Audio E500	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20E5000%20L.txt	Final Audio E5000	Final Audio E5000	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20FI-EVA2020%20L.txt	Final Audio FI-EVA2020	Final Audio EVA2020	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20F3100%20L.txt	Final Audio F3100	Final Audio F3100	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20VR3000%20L.txt	Final Audio VR3000	Final Audio VR3000	in-ear	711
+https://rg.squig.link/data/Final%20Audio%20VR3000%20R.txt	Final Audio VR3000	Final Audio VR3000	in-ear	711
+https://rg.squig.link/data/GS%20Audio%20GD11%20(85H)%20L.txt	GS Audio GD11 (85H)	GS Audio GD11	in-ear	711
+https://rg.squig.link/data/GS%20Audio%20GD11%20(85H)%20R.txt	GS Audio GD11 (85H)	GS Audio GD11	in-ear	711
+https://rg.squig.link/data/GS%20Audio%20GD11%20L.txt	GS Audio GD11 (0 H)	GS Audio GD11 (0 H)	ignore	
+https://rg.squig.link/data/GS%20Audio%20GD11%20(40H)%20L.txt	GS Audio GD11 (40H)	GS Audio GD11 (40H)	ignore	
+https://rg.squig.link/data/GS%20Audio%20GD3A%20L.txt	GS Audio GD3A	GS Audio GD3A	in-ear	711
+https://rg.squig.link/data/GS%20Audio%20GD3A%20R.txt	GS Audio GD3A	GS Audio GD3A	in-ear	711
+https://rg.squig.link/data/GS%20Audio%20GT12x%20L.txt	GS Audio GT12x (stock)	GS Audio GT12X	in-ear	711
+https://rg.squig.link/data/GS%20Audio%20GT12x%20R.txt	GS Audio GT12x (stock)	GS Audio GT12X	in-ear	711
+https://rg.squig.link/data/GS%20Audio%20GT12x%20(30ohm)%20L.txt	GS Audio GT12x (w/ 30ohm resistor)	GS Audio GT12X (30 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/GS%20Audio%20ST1%20L.txt	GS Audio ST1 (stock)	GS Audio ST1	in-ear	711
+https://rg.squig.link/data/GS%20Audio%20ST1%20R.txt	GS Audio ST1 (stock)	GS Audio ST1	in-ear	711
+https://rg.squig.link/data/GS%20Audio%20ST1%20(30ohm)%20L.txt	GS Audio ST1 (w/ 30ohm resistor)	GS Audio ST1 (30 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/GS%20Audio%20ST1%20(30ohm%20+%20500%20Mesh)%20L.txt	GS Audio ST1 (500 Mesh, w/ 30ohm resistor)	GS Audio ST1 (500 Mesh, w/ 30ohm resistor)	ignore	
+https://rg.squig.link/data/Geek%20Wold%20GK10%20(50H)%20L.txt	Geek Wold GK10 (50H)	Geek Wold GK10	in-ear	711
+https://rg.squig.link/data/Geek%20Wold%20GK10%20L.txt	Geek Wold GK10 (stock 0.37ohm cable)	Geek Wold GK10	in-ear	711
+https://rg.squig.link/data/Geek%20Wold%20GK10%20R.txt	Geek Wold GK10 (stock 0.37ohm cable)	Geek Wold GK10	in-ear	711
+https://rg.squig.link/data/Geek%20Wold%20GK10%20(0.16ohm%20cable)%20L.txt	Geek Wold GK10 (0.16ohm cable)	Geek Wold GK10 (0.16ohm cable)	ignore	
+https://rg.squig.link/data/Geek%20Wold%20GK10%20(0.86ohm%20cable)%20L.txt	Geek Wold GK10 (0.86ohm cable)	Geek Wold GK10 (0.86ohm cable)	ignore	
+https://rg.squig.link/data/Geek%20Wold%20GK3%20L.txt	Geek Wold GK3	Geek Wold GK3	in-ear	711
+https://rg.squig.link/data/Hidizs%20MP145%20(Low%20Frequency%20nozzle)%20L.txt	Hidizs MP145 (Low Frequency nozzle)	Hidizs MP145 (red nozzle)	in-ear	711
+https://rg.squig.link/data/Hidizs%20MP145%20(Balanced%20nozzle)%20L.txt	Hidizs MP145 (Balanced nozzle)	Hidizs MP145 (rosegold nozzle)	in-ear	711
+https://rg.squig.link/data/Hidizs%20MP145%20(Balanced%20nozzle)%20R.txt	Hidizs MP145 (Balanced nozzle)	Hidizs MP145 (rosegold nozzle)	in-ear	711
+https://rg.squig.link/data/Hidizs%20MP145%20(High%20Frequency%20nozzle)%20L.txt	Hidizs MP145 (High Frequency nozzle)	Hidizs MP145 (silver nozzle)	in-ear	711
+https://rg.squig.link/data/Hisenior%20T2%20L.txt	Hisenior T2	Hisenior T2	in-ear	711
+https://rg.squig.link/data/ikko%20OH10%20L.txt	ikko OH10 (stock)	IKKO OH10	in-ear	711
+https://rg.squig.link/data/ISN%20D10%20L.txt	ISN D10	ISN AUDIO D10	in-ear	711
+https://rg.squig.link/data/intime%20Sora%202%20L.txt	intime Sora 2	Intime Sora 2	in-ear	711
+https://rg.squig.link/data/intime%20Sora%20Light%202019%20L.txt	intime Sora Light 2019 (S1)	Intime Sora Light	in-ear	711
+https://rg.squig.link/data/intime%20Sora%20Light%202019%20R.txt	intime Sora Light 2019 (S1)	Intime Sora Light	in-ear	711
+https://rg.squig.link/data/intime%20Sora%20Light%202019%20(S2)%20L.txt	intime Sora Light 2019 (S2)	Intime Sora Light	in-ear	711
+https://rg.squig.link/data/intime%20Sora%20Light%202019%20(S2)%20R.txt	intime Sora Light 2019 (S2)	Intime Sora Light	in-ear	711
+https://rg.squig.link/data/intime%20Todoroki%20GO%20L.txt	intime Todoroki GO	Intime Todoroki GO	in-ear	711
+https://rg.squig.link/data/JVC%20HA-FX6%20L.txt	JVC HA-FX6	JVC HA-FX6	in-ear	711
+https://rg.squig.link/data/JVC%20HA-FX6%20R.txt	JVC HA-FX6	JVC HA-FX6	in-ear	711
+https://rg.squig.link/data/KBEAR%20KS2%20L.txt	KBEAR KS2	KBEAR KS2	in-ear	711
+https://rg.squig.link/data/KBEAR%20Neon%20(stock%20type%20E%20avg)%20L.txt	KBEAR Neon (stock cable, Type E, average fit)	KBEAR Neon (Final Audio Type E eartips)	in-ear	711
+https://rg.squig.link/data/KBEAR%20Neon%20(stock%20type%20E%20avg)%20R.txt	KBEAR Neon (stock cable, Type E, average fit)	KBEAR Neon (Final Audio Type E eartips)	in-ear	711
+https://rg.squig.link/data/KBEAR%20Neon%20(A3%20type%20E%20deep)%20L.txt	KBEAR Neon (cable A3, Type E, Deep fit)	KBEAR Neon (cable A3, Type E, Deep fit)	ignore	
+https://rg.squig.link/data/KBEAR%20Neon%20(A3%20type%20E%20deep)%20R.txt	KBEAR Neon (cable A3, Type E, Deep fit)	KBEAR Neon (cable A3, Type E, Deep fit)	ignore	
+https://rg.squig.link/data/KBEAR%20Neon%20(stock%20type%20E%20deep)%20L.txt	KBEAR Neon (stock cable, Type E, Deep fit)	KBEAR Neon (stock cable, Type E, Deep fit)	ignore	
+https://rg.squig.link/data/KBEAR%20Neon%20(stock%20type%20E%20deep)%20R.txt	KBEAR Neon (stock cable, Type E, Deep fit)	KBEAR Neon (stock cable, Type E, Deep fit)	ignore	
+https://rg.squig.link/data/KBEAR%20Neon%20(stock%20type%20E%20deep%2080ohm)%20L.txt	KBEAR Neon (stock cable, Type E, Deep fit, w/ 80ohm resistor)	KBEAR Neon (stock cable, Type E, Deep fit, w/ 80ohm resistor)	ignore	
+https://rg.squig.link/data/KBEAR%20Neon%20(stock%20type%20E%20deep%2080ohm)%20R.txt	KBEAR Neon (stock cable, Type E, Deep fit, w/ 80ohm resistor)	KBEAR Neon (stock cable, Type E, Deep fit, w/ 80ohm resistor)	ignore	
+https://rg.squig.link/data/KBEAR%20Robin%20L.txt	KBEAR Robin	KBEAR Robin	in-ear	711
+https://rg.squig.link/data/KBEAR%20Robin%20R.txt	KBEAR Robin	KBEAR Robin	in-ear	711
+https://rg.squig.link/data/KZ%20BA10%20L.txt	KZ BA10 (stock)	KZ BA10	in-ear	711
+https://rg.squig.link/data/KZ%20BA10%20R.txt	KZ BA10 (stock)	KZ BA10	in-ear	711
+https://rg.squig.link/data/KZ%20BA10%20(1dividedby4%20foam)%20L.txt	KZ BA10 (1dividedby4 foam)	KZ BA10 (1dividedby4 foam)	ignore	
+https://rg.squig.link/data/KZ%20BA10%20(500%20Mesh)%20L.txt	KZ BA10 (500 Mesh)	KZ BA10 (500 Mesh)	ignore	
+https://rg.squig.link/data/KZ%20BA10%20(Tanchjim%20Filter)%20L.txt	KZ BA10 (Tanchjim Filter)	KZ BA10 (Tanchjim Filter)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20L.txt	KZ DQ6 (stock)	KZ DQ6	in-ear	711
+https://rg.squig.link/data/KZ%20DQ6%20(1dividedby16%20foam)%20L.txt	KZ DQ6 (1dividedby16 foam)	KZ DQ6 (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(Hana%20Filter)%20L.txt	KZ DQ6 (Hana Filter)	KZ DQ6 (Hana Filter)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(High-Density%20Tuning%20Foam%20+%20cotton%20filter)%20L.txt	KZ DQ6 (High-Density Tuning Foam + cotton filter)	KZ DQ6 (High-Density Tuning Foam + cotton filter)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(High-Density%20Tuning%20Foam)%20L.txt	KZ DQ6 (High-Density Tuning Foam)	KZ DQ6 (High-Density Tuning Foam)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(Low-Density%20Tuning%20Foam)%20L.txt	KZ DQ6 (Low-Density Tuning Foam)	KZ DQ6 (Low-Density Tuning Foam)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(Micropore+%201dividedby16foam%20Tips)%20L.txt	KZ DQ6 (Micropore + 1dividedby16foam tips)	KZ DQ6 (Micropore + 1dividedby16foam tips)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(Micropore%20Tape%20Mod)%20L.txt	KZ DQ6 (Micropore Tape Mod)	KZ DQ6 (Micropore Tape Mod)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(Micropore%20Tips)%20L.txt	KZ DQ6 (Micropore Tips)	KZ DQ6 (Micropore Tips)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(Micropore%20tape+%201dividedby16foam%20Mod)%20L.txt	KZ DQ6 (Micropore tape + 1dividedby16foam Mod)	KZ DQ6 (Micropore tape + 1dividedby16foam Mod)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(O2%20Filter)%20L.txt	KZ DQ6 (O2 Filter)	KZ DQ6 (O2 Filter)	ignore	
+https://rg.squig.link/data/KZ%20DQ6%20(Sony%20Import%20Foam)%20L.txt	KZ DQ6 (Sony Import Foam)	KZ DQ6 (Sony Import Foam)	ignore	
+https://rg.squig.link/data/KZ%20DQ6S%20L.txt	KZ DQ6S	KZ DQ6S	in-ear	711
+https://rg.squig.link/data/KZ%20DQ6S%20R.txt	KZ DQ6S	KZ DQ6S	in-ear	711
+https://rg.squig.link/data/KZ%20ED9%20(Balanced%20filter)%20L.txt	KZ ED9 (Balanced filter)	KZ ED9 (balanced filter)	in-ear	711
+https://rg.squig.link/data/KZ%20EDR1%20L.txt	KZ EDR1	KZ EDR1	in-ear	711
+https://rg.squig.link/data/KZ%20EDX%20Pro%20L.txt	KZ EDX Pro (stock)	KZ EDX Pro	in-ear	711
+https://rg.squig.link/data/KZ%20EDX%20Pro%20R.txt	KZ EDX Pro (stock)	KZ EDX Pro	in-ear	711
+https://rg.squig.link/data/KZ%20EDX%20Pro%20(2%20Low-Density%20Tuning%20Foams)%20L.txt	KZ EDX Pro (2 Low-Density Tuning Foams)	KZ EDX Pro (2 Low-Density Tuning Foams)	ignore	
+https://rg.squig.link/data/KZ%20EDX%20Pro%20(High-Density%20Tuning%20Foam)%20L.txt	KZ EDX Pro (High-Density Tuning Foam)	KZ EDX Pro (High-Density Tuning Foam)	ignore	
+https://rg.squig.link/data/KZ%20EDX%20Pro%20(Low-Density%20Tuning%20Foam)%20L.txt	KZ EDX Pro (Low-Density Tuning Foam)	KZ EDX Pro (Low-Density Tuning Foam)	ignore	
+https://rg.squig.link/data/KZ%20EDX%20Ultra%20L.txt	KZ EDX Ultra	KZ EDX Ultra	in-ear	711
+https://rg.squig.link/data/KZ%20EDX%20Ultra%20R.txt	KZ EDX Ultra	KZ EDX Ultra	in-ear	711
+https://rg.squig.link/data/KZ%20ZES%20L.txt	KZ ZES	KZ ZES	in-ear	711
+https://rg.squig.link/data/KZ%20ZES%20R.txt	KZ ZES	KZ ZES	in-ear	711
+https://rg.squig.link/data/KZ%20ZEX%20Pro%20L.txt	KZ ZEX Pro (stock)	KZ ZEX Pro	in-ear	711
+https://rg.squig.link/data/KZ%20ZEX%20Pro%20R.txt	KZ ZEX Pro (stock)	KZ ZEX Pro	in-ear	711
+https://rg.squig.link/data/KZ%20ZEX%20Pro%20(30ohm)%20L.txt	KZ ZEX Pro (w/ 30ohm resistor)	KZ ZEX Pro (30 ohm (adapter|resistor))?	ignore	
+https://rg.squig.link/data/KZ%20ZS4%20L.txt	KZ ZS4	KZ ZS4	in-ear	711
+https://rg.squig.link/data/KZ%20ZS6%20L.txt	KZ ZS6	KZ ZS6	in-ear	711
+https://rg.squig.link/data/KZ%20ZS7%20L.txt	KZ ZS7 (stock)	KZ ZS7	in-ear	711
+https://rg.squig.link/data/KZ%20ZS7%20(1dividedby16%20foam)%20L.txt	KZ ZS7 (1dividedby16 foam)	KZ ZS7 (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/KZ%20ZSE%20L.txt	KZ ZSE	KZ ZSE	in-ear	711
+https://rg.squig.link/data/Kinera%20Freya%20L.txt	Kinera Freya	Kinera Freya	in-ear	711
+https://rg.squig.link/data/KitSound%20Mini%20L.txt	KitSound Mini	Kitsound Mini	in-ear	711
+https://rg.squig.link/data/KitSound%20Mini%20R.txt	KitSound Mini	Kitsound Mini	in-ear	711
+https://rg.squig.link/data/Kiwi%20Ears%20Orchestra%20Lite%20L.txt	Kiwi Ears Orchestra Lite (stock)	Kiwi Ears Orchestra Lite	in-ear	711
+https://rg.squig.link/data/Kiwi%20Ears%20Orchestra%20Lite%20R.txt	Kiwi Ears Orchestra Lite (stock)	Kiwi Ears Orchestra Lite	in-ear	711
+https://rg.squig.link/data/Kiwi%20Ears%20Orchestra%20Lite%20(2.5mm%20500%20mesh%20on%20green%20bore)%20L.txt	Kiwi Ears Orchestra Lite (2.5mm 500 mesh on green bore)	Kiwi Ears Orchestra Lite (2.5mm 500 mesh on green bore)	ignore	
+https://rg.squig.link/data/Kiwi%20Ears%20Orchestra%20Lite%20(2.5mm%20500%20mesh%20on%20white%20bore)%20L.txt	Kiwi Ears Orchestra Lite (2.5mm 500 mesh on white bore)	Kiwi Ears Orchestra Lite (2.5mm 500 mesh on white bore)	ignore	
+https://rg.squig.link/data/Kiwi%20Ears%20Orchestra%20Lite%20(2.5mm%20500%20mesh%20on%20yellow%20bore)%20L.txt	Kiwi Ears Orchestra Lite (2.5mm 500 mesh on yellow bore)	Kiwi Ears Orchestra Lite (2.5mm 500 mesh on yellow bore)	ignore	
+https://rg.squig.link/data/Kiwi%20Ears%20Orchestra%20Lite%20(25ohm)%20L.txt	Kiwi Ears Orchestra Lite (w/ 25ohm resistor)	Kiwi Ears Orchestra Lite (w/ 25ohm resistor)	ignore	
+https://rg.squig.link/data/Klipsch%20S4%20L.txt	Klipsch S4	Klipsch S4	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(A7%20Red%20F%20+%20Black%20V)%20L.txt	LZ A4 Pro (A7 Red F + Black V)	LZ A4 Pro (A7 Red F + Black V)	ignore	
+https://rg.squig.link/data/LZ%20A7%20(Pop-Black,%20High-Density%20Tuning%20Foams)%20L.txt	LZ A7 (Pop-Black, High-Density Tuning Foams)	LZ A7 (Pop-Black, High-Density Tuning Foams)	ignore	
+https://rg.squig.link/data/LZ%20A7%20(Pop-Blue,%20High-Density%20Tuning%20Foams)%20L.txt	LZ A7 (Pop-Blue, High-Density Tuning Foams)	LZ A7 (Pop-Blue, High-Density Tuning Foams)	ignore	
+https://rg.squig.link/data/LZ%20A7%20(Pop-Red,%2030ohm)%20L.txt	LZ A7 (Pop-Red, w/ 30ohm resistor)	LZ A7 (Pop-Red, w/ 30ohm resistor)	ignore	
+https://rg.squig.link/data/LZ%20A4%20Pro%20(A7%20Gold%20F%20+%20Black%20V)%20L.txt	LZ A4 Pro (A7 Gold F + Black V)	LZ Hi-Fi Audio A4 Pro (A7 gold nozzle, black vent)	ignore	
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Black%20F%20+%20Black%20V)%20L.txt	LZ A4 Pro (Black F + Black V)	LZ Hi-Fi Audio A4 Pro (black nozzle, black vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Black%20F%20+%20Blue%20V)%20L.txt	LZ A4 Pro (Black F + Blue V)	LZ Hi-Fi Audio A4 Pro (black nozzle, blue vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Black%20F%20+%20Red%20V)%20L.txt	LZ A4 Pro (Black F + Red V)	LZ Hi-Fi Audio A4 Pro (black nozzle, red vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Blue%20F%20+%20Black%20V)%20L.txt	LZ A4 Pro (Blue F + Black V)	LZ Hi-Fi Audio A4 Pro (blue nozzle, black vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Blue%20F%20+%20Blue%20V)%20L.txt	LZ A4 Pro (Blue F + Blue V)	LZ Hi-Fi Audio A4 Pro (blue nozzle, blue vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Blue%20F%20+%20Red%20V)%20L.txt	LZ A4 Pro (Blue F + Red V)	LZ Hi-Fi Audio A4 Pro (blue nozzle, red vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Gold%20F%20+%20Black%20V)%20L.txt	LZ A4 Pro (Gold F + Black V)	LZ Hi-Fi Audio A4 Pro (gold nozzle, black vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Gold%20F%20+%20Blue%20V)%20L.txt	LZ A4 Pro (Gold F + Blue V)	LZ Hi-Fi Audio A4 Pro (gold nozzle, blue vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Gold%20F%20+%20Red%20V)%20L.txt	LZ A4 Pro (Gold F + Red V)	LZ Hi-Fi Audio A4 Pro (gold nozzle, red vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Red%20F%20+%20Black%20V)%20L.txt	LZ A4 Pro (Red F + Black V)	LZ Hi-Fi Audio A4 Pro (red nozzle, black vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Red%20F%20+%20Blue%20V)%20L.txt	LZ A4 Pro (Red F + Blue V)	LZ Hi-Fi Audio A4 Pro (red nozzle, blue vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A4%20Pro%20(Red%20F%20+%20Red%20V)%20L.txt	LZ A4 Pro (Red F + Red V)	LZ Hi-Fi Audio A4 Pro (red nozzle, red vent)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20(Black%20filter)%20L.txt	LZ A6 (Black filter)	LZ Hi-Fi Audio A6 (black nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20(Blue%20filter)%20L.txt	LZ A6 (Blue filter)	LZ Hi-Fi Audio A6 (blue nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20(Dark%20Blue%20filter)%20L.txt	LZ A6 (Dark Blue filter)	LZ Hi-Fi Audio A6 (dark blue nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20(Grey%20filter)%20L.txt	LZ A6 (Grey filter)	LZ Hi-Fi Audio A6 (grey nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20(Pink%20filter)%20L.txt	LZ A6 (Pink filter)	LZ Hi-Fi Audio A6 (pink nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20(Purple%20filter)%20L.txt	LZ A6 (Purple filter)	LZ Hi-Fi Audio A6 (purple nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20(Red%20filter)%20L.txt	LZ A6 (Red filter)	LZ Hi-Fi Audio A6 (red nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20(Silver%20filter)%20L.txt	LZ A6 (Silver filter)	LZ Hi-Fi Audio A6 (silver nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20(Yellow%20filter)%20L.txt	LZ A6 (Yellow filter)	LZ Hi-Fi Audio A6 (yellow nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20Mini%20(Black%20filter)%20L.txt	LZ A6 Mini (Black filter)	LZ Hi-Fi Audio A6 Mini (black nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20Mini%20(Blue%20filter)%20L.txt	LZ A6 Mini (Blue filter)	LZ Hi-Fi Audio A6 Mini (blue nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A6%20Mini%20(Red%20filter)%20L.txt	LZ A6 Mini (Red filter)	LZ Hi-Fi Audio A6 Mini (red nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Monitor-Black)%20L.txt	LZ A7 (Monitor-Black)	LZ Hi-Fi Audio A7 (monitor, black nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Monitor-Blue)%20L.txt	LZ A7 (Monitor-Blue)	LZ Hi-Fi Audio A7 (monitor, blue nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Monitor-Gold)%20L.txt	LZ A7 (Monitor-Gold)	LZ Hi-Fi Audio A7 (monitor, gold nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Monitor-Red)%20L.txt	LZ A7 (Monitor-Red)	LZ Hi-Fi Audio A7 (monitor, red nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Monitor-Silver)%20L.txt	LZ A7 (Monitor-Silver)	LZ Hi-Fi Audio A7 (monitor, silver nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Pop-Black)%20L.txt	LZ A7 (Pop-Black	LZ Hi-Fi Audio A7 (pop, black nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Pop-Blue)%20L.txt	LZ A7 (Pop-Blue)	LZ Hi-Fi Audio A7 (pop, blue nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Pop-Gold)%20L.txt	LZ A7 (Pop-Gold)	LZ Hi-Fi Audio A7 (pop, gold nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Pop-Red)%20L.txt	LZ A7 (Pop-Red)	LZ Hi-Fi Audio A7 (pop, red nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20A7%20(Pop-Silver)%20L.txt	LZ A7 (Pop-Silver)	LZ Hi-Fi Audio A7 (pop, silver nozzle)	in-ear	711
+https://rg.squig.link/data/LZ%20Z04A%20L.txt	LZ Z04A (Stock)	LZ Hi-Fi Audio Z04A	in-ear	711
+https://rg.squig.link/data/LZ%20Z05A%20L.txt	LZ Z05A	LZ Hi-Fi Audio Z05A	in-ear	711
+https://rg.squig.link/data/LZ%20Z04A%20(1dividedby16%20Foam)%20L.txt	LZ Z04A (1dividedby16 foam)	LZ Z04A (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/LZ%20Z04A%20(Low-Density%20Tuning%20Foam)%20L.txt	LZ Z04A (Low-Density Tuning Foam)	LZ Z04A (Low-Density Tuning Foam)	ignore	
+https://rg.squig.link/data/Lypertek%20PurePlay%20Z3%20(1.0)%20L.txt	Lypertek PurePlay Z3 1.0 (stock)	Lypertek PurePlay Z3 1.0	in-ear	711
+https://rg.squig.link/data/Lypertek%20PurePlay%20Z3%20(1.0)%20R.txt	Lypertek PurePlay Z3 1.0 (stock)	Lypertek PurePlay Z3 1.0	in-ear	711
+https://rg.squig.link/data/Lypertek%20PurePlay%20Z3%20(1.0,%20Tanchjim%20filter)%20L.txt	Lypertek PurePlay Z3 1.0 (Tanchjim filter)	Lypertek PurePlay Z3 1.0 (Tanchjim filter)	ignore	
+https://rg.squig.link/data/Moondrop%20Blessing%202%20L.txt	Moondrop Blessing 2	Moondrop Blessing 2	in-ear	711
+https://rg.squig.link/data/Moondrop%20KXXS%20L.txt	Moondrop KXXS	Moondrop KXXS	in-ear	711
+https://rg.squig.link/data/Moondrop%20Kato%20(Gold,%20High-Density%20Tuning%20Foam)%20L.txt	Moondrop Kato (Gold, High-Density Tuning Foam)	Moondrop Kato (Gold, High-Density Tuning Foam)	ignore	
+https://rg.squig.link/data/Moondrop%20Kato%20(Gold,%20Sony%20General%20Foam)%20L.txt	Moondrop Kato (Gold, Sony General Foam)	Moondrop Kato (Gold, Sony General Foam)	ignore	
+https://rg.squig.link/data/Moondrop%20Kato%20(Gold,%20Sony%20Import%20Foam)%20L.txt	Moondrop Kato (Gold, Sony Import Foam)	Moondrop Kato (Gold, Sony Import Foam)	ignore	
+https://rg.squig.link/data/Moondrop%20Kato%20(Gold,%20Sony%20Import%20Foam,%20Micropore%20Vent)%20L.txt	Moondrop Kato (Gold, Sony Import Foam, Micropore Vent)	Moondrop Kato (Gold, Sony Import Foam, Micropore Vent)	ignore	
+https://rg.squig.link/data/Moondrop%20Kato%20(Gold)%20L.txt	Moondrop Kato (Gold)	Moondrop Kato (gold nozzle)	in-ear	711
+https://rg.squig.link/data/Moondrop%20Kato%20(Gold)%20R.txt	Moondrop Kato (Gold)	Moondrop Kato (gold nozzle)	in-ear	711
+https://rg.squig.link/data/Moondrop%20Kato%20(Silver)%20L.txt	Moondrop Kato (Silver)	Moondrop Kato (silver nozzle)	in-ear	711
+https://rg.squig.link/data/Moondrop%20Kato%20(Silver)%20R.txt	Moondrop Kato (Silver)	Moondrop Kato (silver nozzle)	in-ear	711
+https://rg.squig.link/data/Moondrop%20Quarks%20L.txt	Moondrop Quarks	Moondrop Quarks	in-ear	711
+https://rg.squig.link/data/Moondrop%20Quarks%20R.txt	Moondrop Quarks	Moondrop Quarks	in-ear	711
+https://rg.squig.link/data/Moondrop%20Spaceship%20L.txt	Moondrop Spaceship	Moondrop Spaceship	in-ear	711
+https://rg.squig.link/data/Peacock%20Audio%20P1%20L.txt	Peacock Audio P1	Peacock Audio P1	in-ear	711
+https://rg.squig.link/data/Periodic%20Audio%20Beryllium%20L.txt	Periodic Audio Beryllium	Periodic Audio Be	in-ear	711
+https://rg.squig.link/data/Samsung%20Galaxy%20Buds%20Pro%20L.txt	Samsung Galaxy Buds Pro (Normal preset)	Samsung Galaxy Buds Pro	in-ear	711
+https://rg.squig.link/data/Samsung%20Galaxy%20Buds%20Pro%20R.txt	Samsung Galaxy Buds Pro (Normal preset)	Samsung Galaxy Buds Pro	in-ear	711
+https://rg.squig.link/data/Samsung%20Galaxy%20Buds%20Pro%20(Bass%20preset)%20L.txt	Samsung Galaxy Buds Pro (Bass preset)	Samsung Galaxy Buds Pro (Bass preset)	ignore	
+https://rg.squig.link/data/Samsung%20Galaxy%20Buds%20Pro%20(Clear%20preset)%20L.txt	Samsung Galaxy Buds Pro (Clear preset)	Samsung Galaxy Buds Pro (Clear preset)	ignore	
+https://rg.squig.link/data/Samsung%20Galaxy%20Buds%20Pro%20(Dynamic%20preset)%20L.txt	Samsung Galaxy Buds Pro (Dynamic preset)	Samsung Galaxy Buds Pro (Dynamic preset)	ignore	
+https://rg.squig.link/data/Samsung%20Galaxy%20Buds%20Pro%20(Soft%20preset)%20L.txt	Samsung Galaxy Buds Pro (Soft preset)	Samsung Galaxy Buds Pro (Soft preset)	ignore	
+https://rg.squig.link/data/Samsung%20Galaxy%20Buds%20Pro%20(Treble%20preset)%20L.txt	Samsung Galaxy Buds Pro (Treble preset)	Samsung Galaxy Buds Pro (Treble preset)	ignore	
+https://rg.squig.link/data/SeeAudio%20Bravery%20L.txt	SeeAudio Bravery (stock)	SeeAudio Bravery	in-ear	711
+https://rg.squig.link/data/SeeAudio%20Bravery%20R.txt	SeeAudio Bravery (stock)	SeeAudio Bravery	in-ear	711
+https://rg.squig.link/data/SeeAudio%20Bravery%20(30ohm)%20L.txt	SeeAudio Bravery (w/30ohm resistor)	SeeAudio Bravery (w/30ohm resistor)	ignore	
+https://rg.squig.link/data/Sennheiser%20CX%20400BT%20TWS%20L.txt	Sennheiser CX 400BT TWS	Sennheiser CX 400BT	over-ear	
+https://rg.squig.link/data/Sennheiser%20CX%20400BT%20TWS%20R.txt	Sennheiser CX 400BT TWS	Sennheiser CX 400BT	over-ear	
+https://rg.squig.link/data/Shozy%20Form%201.1%20L.txt	Shozy Form 1.1	Shozy Form 1.1	in-ear	711
+https://rg.squig.link/data/Shuoer%20EJ07M%20L.txt	Shuoer EJ07M (stock)	Shuoer EJ07M	in-ear	711
+https://rg.squig.link/data/Shuoer%20EJ07M%20R.txt	Shuoer EJ07M (stock)	Shuoer EJ07M	in-ear	711
+https://rg.squig.link/data/Shuoer%20EJ07M%20(Tanya%20Filter)%20L.txt	Shuoer EJ07M (Tanya Filter)	Shuoer EJ07M (Tanya Filter)	ignore	
+https://rg.squig.link/data/Shuoer%20EJ07M%20(30ohm)%20L.txt	Shuoer EJ07M (w/ 30ohm resistor)	Shuoer EJ07M (w/ 30ohm resistor)	ignore	
+https://rg.squig.link/data/Shuoer%20Tape%20L.txt	Shuoer Tape (stock)	Shuoer Tape	in-ear	711
+https://rg.squig.link/data/Shuoer%20Tape%20(1dividedby16%20foam)%20L.txt	Shuoer Tape (1dividedby16 foam)	Shuoer Tape (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/Shuoer%20Tape%20Pro%20L.txt	Shuoer Tape Pro	Shuoer Tape Pro	in-ear	711
+https://rg.squig.link/data/Simgot%20EA1000%20(black)%20L.txt	Simgot EA1000 (black)	Simgot Audio EA1000 (black nozzle)	in-ear	711
+https://rg.squig.link/data/Simgot%20EA1000%20(gold)%20L.txt	Simgot EA1000 (gold)	Simgot Audio EA1000 (gold nozzle)	in-ear	711
+https://rg.squig.link/data/Simgot%20EA1000%20(red)%20L.txt	Simgot EA1000 (red)	Simgot Audio EA1000 (red nozzle)	in-ear	711
+https://rg.squig.link/data/Simgot%20EA500%20(black%20nozzle)%20L.txt	Simgot EA500 (black nozzle)	Simgot Audio EA500 (black nozzle)	in-ear	711
+https://rg.squig.link/data/Simgot%20EA500%20(red%20nozzle)%20L.txt	Simgot EA500 (red nozzle)	Simgot Audio EA500 (red nozzle)	in-ear	711
+https://rg.squig.link/data/Simgot%20EA500%20(red%20nozzle)%20R.txt	Simgot EA500 (red nozzle)	Simgot Audio EA500 (red nozzle)	in-ear	711
+https://rg.squig.link/data/Simgot%20EM6L%20L.txt		Simgot Audio EM6L	in-ear	711
+https://rg.squig.link/data/Simgot%20EM6L%20R.txt		Simgot Audio EM6L	in-ear	711
+https://rg.squig.link/data/Simgot%20EA1000%20(gold%20+%20Sony%20Import%20Foam%204x5mm)%20L.txt	Simgot EA1000 (gold + Sony Import Foam 4x5mm)	Simgot EA1000 (gold + Sony Import Foam 4x5mm)	ignore	
+https://rg.squig.link/data/Simgot%20EA1000%20(red%20+%202xHigh%20Density%20Foam%204x3mm%20+%204.5mm%20500%20mesh%20+%20PR%20taped)%20L.txt	Simgot EA1000 (red + 2xHigh Density Foam 4x3mm + 4.5mm 500 mesh + PR taped)	Simgot EA1000 (red + 2xHigh Density Foam 4x3mm + 4.5mm 500 mesh + PR taped)	ignore	
+https://rg.squig.link/data/Simgot%20EA1000%20(red%20+%202xHigh%20Density%20Foam%204x3mm%20+%204.5mm%20500%20mesh)%20L.txt	Simgot EA1000 (red + 2xHigh Density Foam 4x3mm + 4.5mm 500 mesh)	Simgot EA1000 (red + 2xHigh Density Foam 4x3mm + 4.5mm 500 mesh)	ignore	
+https://rg.squig.link/data/Simgot%20EA1000%20(red%20+%202xHigh%20Density%20Foam%204x3mm)%20L.txt	Simgot EA1000 (red + 2xHigh Density Foam 4x3mm)	Simgot EA1000 (red + 2xHigh Density Foam 4x3mm)	ignore	
+https://rg.squig.link/data/Simgot%20EA1000%20(red%20+%20High%20Density%20Foam%204x3mm)%20L.txt	Simgot EA1000 (red + High Density Foam 4x3mm)	Simgot EA1000 (red + High Density Foam 4x3mm)	ignore	
+https://rg.squig.link/data/Simgot%20EA1000%20(red%20+%20Sony%20Composite%20Foam%204x5mm)%20L.txt	Simgot EA1000 (red + Sony Composite Foam 4x5mm	Simgot EA1000 (red + Sony Composite Foam 4x5mm	ignore	
+https://rg.squig.link/data/Simgot%20EA1000%20(red%20+%20Sony%20Import%20Foam%204x3mm)%20L.txt	Simgot EA1000 (red + Sony Import Foam 4x3mm)	Simgot EA1000 (red + Sony Import Foam 4x3mm)	ignore	
+https://rg.squig.link/data/Simgot%20EA500%20(red%20nozzle%20+%20500%20mesh%20+%202x%20high%20density%20tuning%20foams%20+%20inner%20vent%20blutack)%20L.txt	Simgot EA500 (red nozzle + 500 mesh + 2x high density tuning foams + inner vent blutack)	Simgot EA500 (red nozzle + 500 mesh + 2x high density tuning foams + inner vent blutack)	ignore	
+https://rg.squig.link/data/Simgot%20EA500%20(red%20nozzle%20+%20500%20mesh%20+%202x%20high%20density%20tuning%20foams)%20L.txt	Simgot EA500 (red nozzle + 500 mesh + 2x high density tuning foams)	Simgot EA500 (red nozzle + 500 mesh + 2x high density tuning foams)	ignore	
+https://rg.squig.link/data/Simgot%20EA500%20(red%20nozzle%20+%20500%20mesh)%20L.txt	Simgot EA500 (red nozzle + 500 mesh)	Simgot EA500 (red nozzle + 500 mesh)	ignore	
+https://rg.squig.link/data/Simgot%20EA500%20(red%20nozzle%20+%20high%20density%20tuning%20foam)%20L.txt	Simgot EA500 (red nozzle + high density tuning foam)	Simgot EA500 (red nozzle + high density tuning foam)	ignore	
+https://rg.squig.link/data/Simgot%20EA500%20(red%20nozzle%20+%20inner%20vent%20blutack)%20L.txt	Simgot EA500 (red nozzle + inner vent blutack)	Simgot EA500 (red nozzle + inner vent blutack)	ignore	
+https://rg.squig.link/data/Softears%20Volume%20(Atom)%20L.txt	Softears Volume (Atom)	SoftEars Volume	in-ear	711
+https://rg.squig.link/data/Softears%20Volume%20(Atom)%20R.txt	Softears Volume (Atom)	SoftEars Volume	in-ear	711
+https://rg.squig.link/data/Softears%20Volume%20(Asgard%203)%20L.txt	Softears Volume (Asgard 3)	Softears Volume (Asgard 3)	ignore	
+https://rg.squig.link/data/Softears%20Volume%20(Atom%20+%2030ohm)%20L.txt	Softears Volume (Atom + 30ohm)	Softears Volume (Atom + 30ohm)	ignore	
+https://rg.squig.link/data/Softears%20Volume%20(Atom%20+%20Y2%20Paper%20Filter%20on%20BA%20bore)%20L.txt	Softears Volume (Atom + Y2 Paper Filter on BA bore)	Softears Volume (Atom + Y2 Paper Filter on BA bore)	ignore	
+https://rg.squig.link/data/Softears%20Volume%20(Atom%20+%20Y3%20Paper%20Filter%20on%20BA%20bore)%20L.txt	Softears Volume (Atom + Y3 Paper Filter on BA bore)	Softears Volume (Atom + Y3 Paper Filter on BA bore)	ignore	
+https://rg.squig.link/data/Softears%20Volume%20(Atom%20+%20Y6%20Paper%20Filter%20on%20BA%20bore)%20L.txt	Softears Volume (Atom + Y6 Paper Filter on BA bore)	Softears Volume (Atom + Y6 Paper Filter on BA bore)	ignore	
+https://rg.squig.link/data/Softears%20Volume%20(EF04%20MUSE02%20+%20Hidizs%20Sonata%20HD%20+%20Y2%20Paper%20Filter%20on%20BA%20bore)%20L.txt	Softears Volume (EF04 MUSE02 + Hidizs Sonata HD + Y2 Paper Filter on BA bore)	Softears Volume (EF04 MUSE02 + Hidizs Sonata HD + Y2 Paper Filter on BA bore)	ignore	
+https://rg.squig.link/data/Softears%20Volume%20(EF04%20MUSE02%20+%20Y2%20Paper%20Filter%20on%20BA%20bore)%20L.txt	Softears Volume (EF04 MUSE02 + Motherboard + Y2 Paper Filter on BA bore)	Softears Volume (EF04 MUSE02 + Motherboard + Y2 Paper Filter on BA bore)	ignore	
+https://rg.squig.link/data/Softears%20Volume%20(Motherboard%20+%20Y2%20Paper%20Filter%20on%20BA%20bore)%20L.txt	Softears Volume (Motherboard + Y2 Paper Filter on BA bore)	Softears Volume (Motherboard + Y2 Paper Filter on BA bore)	ignore	
+https://rg.squig.link/data/Sony%20MDR-EX1000%20L.txt	Sony MDR-EX1000 (stock	Sony MDR-EX1000	in-ear	711
+https://rg.squig.link/data/Sony%20MDR-EX1000%20(1dividedby16%20foam)%20L.txt	Sony MDR-EX1000 (1dividedby16 foam)	Sony MDR-EX1000 (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/Sony%20MDR-EX800ST%20L.txt	Sony MDR-EX800ST (Stock)	Sony MDR-EX800ST	in-ear	711
+https://rg.squig.link/data/Sony%20MDR-EX800ST%20(BluTack)%20L.txt	Sony MDR-EX800ST (BluTack)	Sony MDR-EX800ST (BluTack)	ignore	
+https://rg.squig.link/data/Sony%20MDR-EX800ST%20(Filterless)%20L.txt	Sony MDR-EX800ST (Filterless)	Sony MDR-EX800ST (Filterless)	ignore	
+https://rg.squig.link/data/Sony%20MDR-EX800ST%20(Filterless,%204mm%20mesh)%20L.txt	Sony MDR-EX800ST (Filterless, 4mm mesh)	Sony MDR-EX800ST (Filterless, 4mm mesh)	ignore	
+https://rg.squig.link/data/Sony%20MDR-EX800ST%20(Filterless,%20BluTack)%20L.txt	Sony MDR-EX800ST (Filterless, BluTack)	Sony MDR-EX800ST (Filterless, BluTack)	ignore	
+https://rg.squig.link/data/Sony%20MDR-EX800ST%20(Low-Density%20Tuning%20Foams)%20L.txt	Sony MDR-EX800ST (Low-Density Tuning Foams)	Sony MDR-EX800ST (Low-Density Tuning Foams)	ignore	
+https://rg.squig.link/data/Sony%20MDR-EX800ST%20(Micropore%20Tape%20Mod)%20L.txt	Sony MDR-EX800ST (Micropore Tape Mod)	Sony MDR-EX800ST (Micropore Tape Mod)	ignore	
+https://rg.squig.link/data/Sony%20MDR-XB75AP%20L.txt	Sony MDR-XB75AP	Sony MDR-XB75AP	in-ear	711
+https://rg.squig.link/data/Sony%20MH750%20L.txt	Sony MH750 (stock)	Sony MH750	in-ear	711
+https://rg.squig.link/data/Sony%20MH750%20(Sony%20Import%20Foam)%20L.txt	Sony MH750 (No stock filter/foam, Sony Import Foam)	Sony MH750 (No stock filter/foam, Sony Import Foam)	ignore	
+https://rg.squig.link/data/Sony%20MH755%20L.txt	Sony MH755	Sony MH755	in-ear	711
+https://rg.squig.link/data/Sony%20WF-1000XM3%20L.txt	Sony WF-1000XM3	Sony WF-1000XM3	in-ear	711
+https://rg.squig.link/data/Sony%20XBA-A2%20L.txt	Sony XBA-A2 (stock)	Sony XBA-A2	in-ear	711
+https://rg.squig.link/data/Sony%20XBA-A2%20(Foamless)%20L.txt	Sony XBA-A2 (Foamless)	Sony XBA-A2 (Foamless)	ignore	
+https://rg.squig.link/data/Sony%20XBA-A2%20(High-Density%20Tuning%20Foam)%20L.txt	Sony XBA-A2 (High-Density Tuning Foam)	Sony XBA-A2 (High-Density Tuning Foam)	ignore	
+https://rg.squig.link/data/Sony%20XBA-A2%20(Sony%20General%20Foam)%20L.txt	Sony XBA-A2 (Sony General Foam)	Sony XBA-A2 (Sony General Foam)	ignore	
+https://rg.squig.link/data/Sony%20XBA-A2%20(Sony%20Import%20Foam)%20L.txt	Sony XBA-A2 (Sony Import Foam)	Sony XBA-A2 (Sony Import Foam)	ignore	
+https://rg.squig.link/data/Sony%20XBA-A3%20L.txt	Sony XBA-A3	Sony XBA-A3	in-ear	711
+https://rg.squig.link/data/Sony%20XBA-A3%20R.txt	Sony XBA-A3	Sony XBA-A3	in-ear	711
+https://rg.squig.link/data/Sony%20XBA-N3AP%20L.txt	Sony XBA-N3AP	Sony XBA-N3AP	in-ear	711
+https://rg.squig.link/data/Sony%20XBA-Z5%20L.txt	Sony XBA-Z5	Sony XBA-Z5	in-ear	711
+https://rg.squig.link/data/Tangzu%20Fudu%20L.txt	Tangzu Fudu	TANGZU Fudu	in-ear	711
+https://rg.squig.link/data/Tangzu%20Fudu%20R.txt	Tangzu Fudu	TANGZU Fudu	in-ear	711
+https://rg.squig.link/data/TFZ%20My%20Love%202019%20L.txt	TFZ My Love 2019	TFZ My Love Edition	in-ear	711
+https://rg.squig.link/data/TFZ%20No.3%20L.txt	TFZ No.3	TFZ No.3	in-ear	711
+https://rg.squig.link/data/TForce%20Audio%20Yuan%20Li%20L.txt	TForce Audio Yuan Li	TForce Yuan Li	in-ear	711
+https://rg.squig.link/data/TForce%20Audio%20Yuan%20Li%20R.txt	TForce Audio Yuan Li	TForce Yuan Li	in-ear	711
+https://rg.squig.link/data/TRI%20I3%20Pro%20(88H)%20L.txt	TRI I3 Pro (88H)	TRI I3 Pro (88H)	ignore	
+https://rg.squig.link/data/TRI%20I3%20Pro%20(micropore-vent)%20L.txt	TRI I3 Pro (Micropore-vent)	TRI I3 Pro (Micropore-vent)	ignore	
+https://rg.squig.link/data/TRI%20I3%20Pro%20(micropore-vent)%20R.txt	TRI I3 Pro (Micropore-vent)	TRI I3 Pro (Micropore-vent)	ignore	
+https://rg.squig.link/data/TRI%20I3%20Pro%20L.txt	TRI I3 Pro (stock)	TRI i3 Pro	in-ear	711
+https://rg.squig.link/data/TRI%20I3%20Pro%20R.txt	TRI I3 Pro (stock)	TRI i3 Pro	in-ear	711
+https://rg.squig.link/data/Tanchjim%20Echo%20L.txt	Tanchjim Echo (stock)	Tanchjim Echo	in-ear	711
+https://rg.squig.link/data/Tanchjim%20Echo%20R.txt	Tanchjim Echo (stock)	Tanchjim Echo	in-ear	711
+https://rg.squig.link/data/Tanchjim%20Echo%20(Tanchjim%20Echo%20Filter%20+%20Y6%20Paper%20Vent)%20L.txt	Tanchjim Echo (Tanchjim Echo Filter + Y6 Paper Vent)	Tanchjim Echo (Tanchjim Echo Filter + Y6 Paper Vent)	ignore	
+https://rg.squig.link/data/Tanchjim%20Echo%20(Tanchjim%20Echo%20Filter)%20L.txt	Tanchjim Echo (Tanchjim Echo Filter)	Tanchjim Echo (Tanchjim Echo filter)	in-ear	711
+https://rg.squig.link/data/Tanchjim%20Echo%20(Tanchjim%20Echo%20Filter%20+%20200%20Paper%20Vent)%20L.txt	Tanchjim Echo Tanchjim Echo (Tanchjim Echo Filter + 200 Paper Vent)	Tanchjim Echo Tanchjim Echo (Tanchjim Echo Filter + 200 Paper Vent)	ignore	
+https://rg.squig.link/data/Tanchjim%20Hana%20L.txt	Tanchjim Hana (stock)	Tanchjim Hana	in-ear	711
+https://rg.squig.link/data/Tanchjim%20Hana%20(1dividedby16%20foam)%20L.txt	Tanchjim Hana (1dividedby16 foam)	Tanchjim Hana (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/Tanchjim%20Hana%20(1dividedby8%20foam)%20L.txt	Tanchjim Hana (1dividedby8 foam)	Tanchjim Hana (1dividedby8 foam)	ignore	
+https://rg.squig.link/data/Tanchjim%20Hana%20(Y6%20Paper%20Vent%20+%20350%20Mesh)%20L.txt	Tanchjim Hana (Y6 Paper Vent + 350 Mesh)	Tanchjim Hana (Y6 Paper Vent + 350 Mesh)	ignore	
+https://rg.squig.link/data/Tanchjim%20Hana%20(Y6%20Paper%20Vent%20+%20500%20Mesh)%20L.txt	Tanchjim Hana (Y6 Paper Vent + 500 Mesh)	Tanchjim Hana (Y6 Paper Vent + 500 Mesh)	ignore	
+https://rg.squig.link/data/Tanchjim%20Hana%20(Y6%20Paper%20Vent)%20L.txt	Tanchjim Hana (Y6 Paper Vent)	Tanchjim Hana (Y6 Paper Vent)	ignore	
+https://rg.squig.link/data/Tanchjim%20Oxygen%20L.txt	Tanchjim Oxygen (stock)	Tanchjim Oxygen	in-ear	711
+https://rg.squig.link/data/Tanchjim%20Oxygen%20(1dividedby16%20foam)%20L.txt	Tanchjim Oxygen (1dividedby16 foam)	Tanchjim Oxygen (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/Tanchjim%20Tanya%20L.txt	Tanchjim Tanya	Tanchjim Tanya	in-ear	711
+https://rg.squig.link/data/Tanchjim%20Tanya%20R.txt	Tanchjim Tanya	Tanchjim Tanya	in-ear	711
+https://rg.squig.link/data/Tansio%20Mirai%20TSMR%20-%204%20Pro%20(120%20+%201dividedby16%20foam)%20L.txt	Tansio Mirai TSMR - 4 Pro (120 + 1dividedby16 foam)	Tansio Mirai TSMR - 4 Pro (120 + 1dividedby16 foam)	ignore	
+https://rg.squig.link/data/Tansio%20Mirai%20TSMR%20-%204%20Pro%20(120%20+%2080ohm)%20L.txt	Tansio Mirai TSMR - 4 Pro (120, w/ 80ohm resistor)	Tansio Mirai TSMR - 4 Pro (120, w/ 80ohm resistor)	ignore	
+https://rg.squig.link/data/Tansio%20Mirai%20TSMR%20-%204%20Pro%20(120%20+%200.15ohm%20cable)%20L.txt	Tansio Mirai TSMR - 4 Pro (120, w/0.15ohm cable)	Tansio Mirai TSMR - 4 Pro (120, w/0.15ohm cable)	ignore	
+https://rg.squig.link/data/Tansio%20Mirai%20TSMR%20-%204%20Pro%20(120%20+%200.46ohm%20cable)%20L.txt	Tansio Mirai TSMR - 4 Pro (120, w/0.46ohm cable)	Tansio Mirai TSMR - 4 Pro (120, w/0.46ohm cable)	ignore	
+https://rg.squig.link/data/Tansio%20Mirai%20TSMR%20-%204%20Pro%20(120)%20L.txt		Tansio Mirai TSMR-4 Pro (on-on-off)	in-ear	711
+https://rg.squig.link/data/ThieAudio%20Hype%202%20L.txt	ThieAudio Hype 2	ThieAudio Hype 2	in-ear	711
+https://rg.squig.link/data/ThieAudio%20Hype%202%20R.txt	ThieAudio Hype 2	ThieAudio Hype 2	in-ear	711
+https://rg.squig.link/data/ThieAudio%20Voyager%203%20(10)%20L.txt	ThieAudio Voyager 3 (10)	ThieAudio Voyager 3 (on-off)	in-ear	711
+https://rg.squig.link/data/Tin%20Hifi%20P1%20L.txt	Tin Hifi P1	Tin HiFi P1	in-ear	711
+https://rg.squig.link/data/Tin%20Hifi%20P1%20Plus%20L.txt	Tin Hifi P1 Plus	Tin HiFi P1 Plus	in-ear	711
+https://rg.squig.link/data/Tin%20Hifi%20P1%20Plus%20R.txt	Tin Hifi P1 Plus	Tin HiFi P1 Plus	in-ear	711
+https://rg.squig.link/data/Tin%20Hifi%20T3%20L.txt	Tin Hifi T3	Tin HiFi T3	in-ear	711
+https://rg.squig.link/data/Tin%20Hifi%20T3%20Plus%20L.txt	Tin Hifi T3 Plus (stock)	Tin HiFi T3 Plus	in-ear	711
+https://rg.squig.link/data/Tin%20Hifi%20T3%20Plus%20R.txt	Tin Hifi T3 Plus (stock)	Tin HiFi T3 Plus	in-ear	711
+https://rg.squig.link/data/Tin%20Hifi%20T3%20Plus%20(2%20High-Density%20Tuning%20Foams%20+%20Tanchjim%20Filter)%20L.txt	Tin Hifi T3 Plus (2 High-Density Tuning Foams + Tanchjim Filter)	Tin Hifi T3 Plus (2 High-Density Tuning Foams + Tanchjim Filter)	ignore	
+https://rg.squig.link/data/Tin%20Hifi%20T3%20Plus%20(Filterless)%20L.txt	Tin Hifi T3 Plus (Filterless)	Tin Hifi T3 Plus (Filterless)	ignore	
+https://rg.squig.link/data/Tingker%20TK200%20L.txt	Tingker TK200	Tingker TK200	in-ear	711
+https://rg.squig.link/data/Urbanfun%20ISS014%20L.txt	Urbanfun ISS014	Urbanfun YBF-ISS014	in-ear	711
+https://rg.squig.link/data/VJJB%20N1%20L.txt	VJJB N1	VJJB N1	in-ear	711
+https://rg.squig.link/data/Vento%20Conductor%20T-500%20Pro%20L.txt	Vento Conductor T-500 Pro (stock)	Vento Conductor T-500 Pro	in-ear	711
+https://rg.squig.link/data/Vento%20Conductor%20T-500%20Pro%20R.txt	Vento Conductor T-500 Pro (stock)	Vento Conductor T-500 Pro	in-ear	711
+https://rg.squig.link/data/Vento%20Conductor%20T-500%20Pro%20(1dividedby16%20foam)%20L.txt	Vento Conductor T-500 Pro (1dividedby16 foam)	Vento Conductor T-500 Pro (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/Vento%20Conductor%20T-500%20Pro%20(High-Density%20Tuning%20Foams%20+%20Tanchjim%20Tanya%20Filter)%20L.txt	Vento Conductor T-500 Pro (High-Density Tuning Foams + Tanchjim Tanya Filter)	Vento Conductor T-500 Pro (High-Density Tuning Foams + Tanchjim Tanya Filter)	ignore	
+https://rg.squig.link/data/VE%20Bonus%20IE%20L.txt	VE Bonus IE	Venture Electronics Bonus In-Ears (BIE)	in-ear	711
+https://rg.squig.link/data/Ibasso%20IT00%20L.txt	Ibasso IT00	iBasso IT00	in-ear	711
+https://rg.squig.link/data/ikko%20OH10%20(1dividedby16%20foam)%20L.txt	ikko OH10 (1dividedby16 foam)	ikko OH10 (1dividedby16 foam)	ignore	
+https://rg.squig.link/data/ikko%20OH10%20(Hana%20filter)%20L.txt	ikko OH10 (Hana filter)	ikko OH10 (Hana filter)	ignore	
+https://rg.squig.link/data/ikko%20OH10%20(High-Density%20Tuning%20Foams)%20L.txt	ikko OH10 (High-Density Tuning Foams)	ikko OH10 (High-Density Tuning Foams)	ignore	
+https://rg.squig.link/data/ikko%20OH10%20(High-Density%20Tuning%20Foams,%20Tanchjim%20Filters)%20L.txt	ikko OH10 (High-Density Tuning Foams, Tanchjim Filters)	ikko OH10 (High-Density Tuning Foams, Tanchjim Filters)	ignore	
