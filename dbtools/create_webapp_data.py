@@ -3,82 +3,11 @@
 import sys
 import json
 from pathlib import Path
-from tqdm.auto import tqdm
 from autoeq.frequency_response import FrequencyResponse
-from dbtools.name_index import NameIndex
-
 ROOT_PATH = Path(__file__).parent.parent
 if str(ROOT_PATH) not in sys.path:
     sys.path.insert(1, str(ROOT_PATH))
-from dbtools.constants import WEBAPP_PATH, MEASUREMENTS_PATH, TARGETS_PATH, RESULTS_PATH
-from dbtools.headphonecom_crawler import HeadphonecomCrawler
-from dbtools.innerfidelity_crawler import InnerfidelityCrawler
-
-name_indexes = {
-    'crinacle': NameIndex.read_tsv(MEASUREMENTS_PATH.joinpath('crinacle', 'name_index.tsv')),
-    'Headphone.com Legacy': HeadphonecomCrawler().name_index,
-    'Innerfidelity': InnerfidelityCrawler().name_index,
-    'oratory1990': NameIndex.read_tsv(MEASUREMENTS_PATH.joinpath('oratory1990', 'name_index.tsv')),
-    'Rtings': NameIndex.read_tsv(MEASUREMENTS_PATH.joinpath('Rtings', 'name_index.tsv')),
-}
-
-
-def measurement_rank(entry):
-    order = [
-        {'source': 'oratory1990', 'form': 'over-ear'},
-        {'source': 'crinacle', 'form': 'over-ear', 'rig': 'GRAS 43AG-7'},
-        {'source': 'Innerfidelity', 'form': 'over-ear', 'rig': 'HMS II.3'},
-        {'source': 'Rtings', 'form': 'over-ear', 'rig': 'HMS II.3'},
-        {'source': 'Headphone.com Legacy', 'form': 'over-ear', 'rig': 'HMS II.3'},
-        {'source': 'crinacle', 'form': 'over-ear', 'rig': 'EARS + 711'},
-
-        {'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
-        {'source': 'oratory1990', 'form': 'in-ear'},
-        {'source': 'crinacle', 'form': 'in-ear', 'rig': '711'},
-        {'source': 'Rtings', 'form': 'in-ear', 'rig': 'HMS II.3'},
-        {'source': 'Innerfidelity', 'form': 'in-ear', 'rig': 'HMS II.3'},
-        {'source': 'Headphone.com Legacy', 'form': 'in-ear', 'rig': 'HMS II.3'},
-
-        {'source': 'oratory1990', 'form': 'earbud'},
-        {'source': 'crinacle', 'form': 'earbud', 'rig': '711'},
-        {'source': 'Rtings', 'form': 'earbud', 'rig': 'HMS II.3'},
-        {'source': 'Innerfidelity', 'form': 'earbud', 'rig': 'HMS II.3'},
-        {'source': 'Headphone.com Legacy', 'form': 'earbud', 'rig': 'HMS II.3'},
-    ]
-    for i, group in enumerate(order):
-        if group['source'] == entry['source'] and group['form'] == entry['form'] and ('rig' not in group or group['rig'] == entry['rig']):
-            return i
-    raise ValueError(f'{entry} is not in list')
-
-
-def write_entries_and_measurements():
-    entries = dict()
-    measurements = dict()
-    for hp_path in tqdm(list(MEASUREMENTS_PATH.glob('*/data/**/*.csv'))):
-        rel_path = hp_path.relative_to(MEASUREMENTS_PATH)
-        source = rel_path.parts[0]
-        form = rel_path.parts[2]
-        name = rel_path.parts[-1].replace('.csv', '')
-        if len(rel_path.parts) == 5:
-            rig = rel_path.parts[3]
-        else:
-            item = name_indexes[source].find_one(name=name)
-            rig = item.rig
-        if name not in entries:
-            entries[name] = []
-        if name not in measurements:
-            measurements[name] = dict()
-        if source not in measurements[name]:
-            measurements[name][source] = dict()
-        measurements[name][source][rig] = FrequencyResponse.read_csv(hp_path).to_dict()
-        entries[name].append({'form': form, 'rig': rig, 'source': source})
-    entries = {key: entries[key] for key in sorted(list(entries.keys()), key=lambda key: key)}
-    for headphone in entries.keys():
-        entries[headphone] = sorted(entries[headphone], key=lambda entry: measurement_rank(entry))
-    with open(WEBAPP_PATH.joinpath('data', 'measurements.json'), 'w', encoding='utf-8') as fh:
-        json.dump(measurements, fh, ensure_ascii=False, indent=4)
-    with open(WEBAPP_PATH.joinpath('data', 'entries.json'), 'w', encoding='utf-8') as fh:
-        json.dump(entries, fh, ensure_ascii=False, indent=4)
+from dbtools.constants import WEBAPP_PATH, TARGETS_PATH
 
 
 def write_targets():
@@ -241,7 +170,6 @@ def write_targets():
 
 
 def main():
-    write_entries_and_measurements()
     write_targets()
 
 

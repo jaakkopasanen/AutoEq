@@ -10,20 +10,31 @@ from zipfile import ZipFile
 from tabulate import tabulate
 from tqdm.auto import tqdm
 from autoeq.frequency_response import FrequencyResponse
+from dbtools.headphonecom_crawler import HeadphonecomCrawler
+from dbtools.innerfidelity_crawler import InnerfidelityCrawler
+from dbtools.name_index import NameIndex
 ROOT_PATH = Path(__file__).parent.parent
 if str(ROOT_PATH) not in sys.path:
     sys.path.insert(1, str(ROOT_PATH))
 from dbtools.manufacturer_index import ManufacturerIndex
-from dbtools.constants import RESULTS_PATH, TARGETS_PATH
+from dbtools.constants import RESULTS_PATH, TARGETS_PATH, MEASUREMENTS_PATH, WEBAPP_PATH
+
+name_indexes = {}
+for fp in MEASUREMENTS_PATH.glob('*/name_index.tsv'):
+    source_name = fp.parent.name
+    name_indexes[fp.parent.name] = NameIndex.read_tsv(fp)
+name_indexes['Headphone.com Legacy'] = HeadphonecomCrawler().name_index
+name_indexes['Innerfidelity'] = InnerfidelityCrawler().name_index
 
 
 class ResultPath:
-    priorities = [
+    priorities = [  # Higher index means higher priority
         ('Headphone.com Legacy', 'earbud'),
         ('Rtings', 'earbud'),
         ('Innerfidelity', 'earbud'),
         ('oratory1990', 'earbud'),
 
+        ('Auriculares Argentina', 'in-ear'),
         ('Headphone.com Legacy', 'in-ear'),
         ('Rtings', 'in-ear'),
         ('Innerfidelity', 'in-ear'),
@@ -35,6 +46,7 @@ class ResultPath:
         ('Headphone.com Legacy', 'over-ear'),
         ('Rtings', 'over-ear'),
         ('Innerfidelity', 'over-ear'),
+        ('Auriculares Argentina', 'over-ear'),
         ('crinacle', 'GRAS 43AG-7 over-ear'),
         ('oratory1990', 'over-ear'),
     ][::-1]
@@ -325,6 +337,32 @@ def write_ranking_table(paths):
             '''
     with open(RESULTS_PATH.joinpath('RANKING.md'), 'w', encoding='utf-8') as fh:
         fh.write(re.sub('\n[ \t]+', '\n', s).strip())
+
+
+def write_webapp_entries_and_measurements(paths):
+    print('Creating webapp data...')
+    grouped_by_name = group_by(paths, 'name')
+    grouped_by_name = sort_each_group_by(grouped_by_name, 'priority')
+
+    entries = dict()
+    measurements = dict()
+    for name in tqdm(sorted(list(grouped_by_name.keys()), key=lambda key: key.lower())):
+        entries[name] = []
+        measurements[name] = {}
+        for path in grouped_by_name[name]:
+            rig = path.rig
+            if not rig:
+                rig = name_indexes[path.source_name].find_one(name=name).rig
+            entries[name].append({'form': path.form, 'rig': rig, 'source': path.source_name})
+            if path.source_name not in measurements[name]:
+                measurements[name][path.source_name] = dict()
+            csv_path = path.absolute_path.joinpath(f'{path.name}.csv')
+            measurements[name][path.source_name][rig] = FrequencyResponse.read_csv(csv_path).to_dict()
+
+    with open(WEBAPP_PATH.joinpath('data', 'measurements.json'), 'w', encoding='utf-8') as fh:
+        json.dump(measurements, fh, ensure_ascii=False, indent=4)
+    with open(WEBAPP_PATH.joinpath('data', 'entries.json'), 'w', encoding='utf-8') as fh:
+        json.dump(entries, fh, ensure_ascii=False, indent=4)
 
 
 def update_all_indexes():

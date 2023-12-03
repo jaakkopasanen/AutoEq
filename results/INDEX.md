@@ -192,6 +192,7 @@ from the same source.
 - [AKG K518LE](./Innerfidelity/over-ear/AKG%20K518LE) by Innerfidelity
 - [AKG K52](./oratory1990/over-ear/AKG%20K52) by oratory1990
 - [AKG K52](./crinacle/GRAS%2043AG-7%20over-ear/AKG%20K52) by crinacle on GRAS 43AG-7
+- [AKG K52](./Auriculares%20Argentina/over-ear/AKG%20K52) by Auriculares Argentina
 - [AKG K550](./Innerfidelity/over-ear/AKG%20K550) by Innerfidelity
 - [AKG K550](./Headphone.com%20Legacy/over-ear/AKG%20K550) by Headphone.com Legacy
 - [AKG K553](./oratory1990/over-ear/AKG%20K553) by oratory1990
@@ -203,10 +204,12 @@ from the same source.
 - [AKG K612](./oratory1990/over-ear/AKG%20K612) by oratory1990
 - [AKG K612](./Innerfidelity/over-ear/AKG%20K612) by Innerfidelity
 - [AKG K612 Pro](./crinacle/GRAS%2043AG-7%20over-ear/AKG%20K612%20Pro) by crinacle on GRAS 43AG-7
+- [AKG K612 Pro](./Auriculares%20Argentina/over-ear/AKG%20K612%20Pro) by Auriculares Argentina
 - [AKG K619](./Innerfidelity/over-ear/AKG%20K619) by Innerfidelity
 - [AKG K67 Tiesto](./Innerfidelity/over-ear/AKG%20K67%20Tiesto) by Innerfidelity
 - [AKG K701](./oratory1990/over-ear/AKG%20K701) by oratory1990
 - [AKG K701](./crinacle/GRAS%2043AG-7%20over-ear/AKG%20K701) by crinacle on GRAS 43AG-7
+- [AKG K701](./Auriculares%20Argentina/over-ear/AKG%20K701) by Auriculares Argentina
 - [AKG K701](./Innerfidelity/over-ear/AKG%20K701) by Innerfidelity
 - [AKG K701](./Rtings/over-ear/AKG%20K701) by Rtings
 - [AKG K701](./Headphone.com%20Legacy/over-ear/AKG%20K701) by Headphone.com Legacy
@@ -214,6 +217,7 @@ from the same source.
 - [AKG K701 (sample B)](./Innerfidelity/over-ear/AKG%20K701%20(sample%20B)) by Innerfidelity
 - [AKG K702](./oratory1990/over-ear/AKG%20K702) by oratory1990
 - [AKG K702](./crinacle/GRAS%2043AG-7%20over-ear/AKG%20K702) by crinacle on GRAS 43AG-7
+- [AKG K702](./Auriculares%20Argentina/over-ear/AKG%20K702) by Auriculares Argentina
 - [AKG K702](./Innerfidelity/over-ear/AKG%20K702) by Innerfidelity
 - [AKG K702](./Rtings/over-ear/AKG%20K702) by Rtings
 - [AKG K702](./Headphone.com%20Legacy/over-ear/AKG%20K702) by Headphone.com Legacy
@@ -509,6 +513,7 @@ from the same source.
 - [Audeze SINE (MSR-7 earpads)](./oratory1990/over-ear/Audeze%20SINE%20(MSR-7%20earpads)) by oratory1990
 - [Audeze SINE DX](./crinacle/GRAS%2043AG-7%20over-ear/Audeze%20SINE%20DX) by crinacle on GRAS 43AG-7
 - [Audeze SINE DX](./Innerfidelity/over-ear/Audeze%20SINE%20DX) by Innerfidelity
+- [Audient EVO SR2000](./Auriculares%20Argentina/over-ear/Audient%20EVO%20SR2000) by Auriculares Argentina
 - [Audio Genetic AG2](./crinacle/711%20in-ear/Audio%20Genetic%20AG2) by crinacle on 711
 - [Audio Zenith PMx2 (v1)](./oratory1990/over-ear/Audio%20Zenith%20PMx2%20(v1)) by oratory1990
 - [Audio Zenith PMx2 (v1)](./Innerfidelity/over-ear/Audio%20Zenith%20PMx2%20(v1)) by Innerfidelity
@@ -593,10 +598,12 @@ from the same source.
 - [Audio-Technica ATH-M40](./crinacle/EARS%20+%20711%20over-ear/Audio-Technica%20ATH-M40) by crinacle on EARS + 711
 - [Audio-Technica ATH-M40x](./oratory1990/over-ear/Audio-Technica%20ATH-M40x) by oratory1990
 - [Audio-Technica ATH-M40x](./crinacle/GRAS%2043AG-7%20over-ear/Audio-Technica%20ATH-M40x) by crinacle on GRAS 43AG-7
+- [Audio-Technica ATH-M40x](./Auriculares%20Argentina/over-ear/Audio-Technica%20ATH-M40x) by Auriculares Argentina
 - [Audio-Technica ATH-M40x](./Rtings/over-ear/Audio-Technica%20ATH-M40x) by Rtings
 - [Audio-Technica ATH-M50](./Headphone.com%20Legacy/over-ear/Audio-Technica%20ATH-M50) by Headphone.com Legacy
 - [Audio-Technica ATH-M50x](./oratory1990/over-ear/Audio-Technica%20ATH-M50x) by oratory1990
 - [Audio-Technica ATH-M50x](./crinacle/GRAS%2043AG-7%20over-ear/Audio-Technica%20ATH-M50x) by crinacle on GRAS 43AG-7
+- [Audio-Technica ATH-M50x](./Auriculares%20Argentina/over-ear/Audio-Technica%20ATH-M50x) by Auriculares Argentina
 - [Audio-Technica ATH-M50x](./Innerfidelity/over-ear/Audio-Technica%20ATH-M50x) by Innerfidelity
 - [Audio-Technica ATH-M50x](./Rtings/over-ear/Audio-Technica%20ATH-M50x) by Rtings
 - [Audio-Technica ATH-M50x](./Headphone.com%20Legacy/over-ear/Audio-Technica%20ATH-M50x) by Headphone.com Legacy
@@ -620,6 +627,7 @@ from the same source.
 - [Audio-Technica ATH-PRO700](./Headphone.com%20Legacy/over-ear/Audio-Technica%20ATH-PRO700) by Headphone.com Legacy
 - [Audio-Technica ATH-R70x](./oratory1990/over-ear/Audio-Technica%20ATH-R70x) by oratory1990
 - [Audio-Technica ATH-R70x](./crinacle/GRAS%2043AG-7%20over-ear/Audio-Technica%20ATH-R70x) by crinacle on GRAS 43AG-7
+- [Audio-Technica ATH-R70x](./Auriculares%20Argentina/over-ear/Audio-Technica%20ATH-R70x) by Auriculares Argentina
 - [Audio-Technica ATH-R70x](./Innerfidelity/over-ear/Audio-Technica%20ATH-R70x) by Innerfidelity
 - [Audio-Technica ATH-R70x](./Rtings/over-ear/Audio-Technica%20ATH-R70x) by Rtings
 - [Audio-Technica ATH-R70x](./crinacle/EARS%20+%20711%20over-ear/Audio-Technica%20ATH-R70x) by crinacle on EARS + 711
@@ -784,6 +792,7 @@ from the same source.
 - [Beyerdynamic DT 770 (Alpha earpads)](./oratory1990/over-ear/Beyerdynamic%20DT%20770%20(Alpha%20earpads)) by oratory1990
 - [Beyerdynamic DT 770 M](./oratory1990/over-ear/Beyerdynamic%20DT%20770%20M) by oratory1990
 - [Beyerdynamic DT 770 Pro](./oratory1990/over-ear/Beyerdynamic%20DT%20770%20Pro) by oratory1990
+- [Beyerdynamic DT 770 Pro](./Auriculares%20Argentina/over-ear/Beyerdynamic%20DT%20770%20Pro) by Auriculares Argentina
 - [Beyerdynamic DT 770 Pro](./Rtings/over-ear/Beyerdynamic%20DT%20770%20Pro) by Rtings
 - [Beyerdynamic DT 770 Pro (250 Ohm)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20770%20Pro%20(250%20Ohm)) by crinacle on GRAS 43AG-7
 - [Beyerdynamic DT 770 Pro (250 Ohm)](./Headphone.com%20Legacy/over-ear/Beyerdynamic%20DT%20770%20Pro%20(250%20Ohm)) by Headphone.com Legacy
@@ -795,6 +804,7 @@ from the same source.
 - [Beyerdynamic DT 770 Pro (worn earpads)](./oratory1990/over-ear/Beyerdynamic%20DT%20770%20Pro%20(worn%20earpads)) by oratory1990
 - [Beyerdynamic DT 860](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20860) by crinacle on GRAS 43AG-7
 - [Beyerdynamic DT 880](./oratory1990/over-ear/Beyerdynamic%20DT%20880) by oratory1990
+- [Beyerdynamic DT 880](./Auriculares%20Argentina/over-ear/Beyerdynamic%20DT%20880) by Auriculares Argentina
 - [Beyerdynamic DT 880](./Rtings/over-ear/Beyerdynamic%20DT%20880) by Rtings
 - [Beyerdynamic DT 880 (250 Ohm)](./Innerfidelity/over-ear/Beyerdynamic%20DT%20880%20(250%20Ohm)) by Innerfidelity
 - [Beyerdynamic DT 880 (250 Ohm)](./Headphone.com%20Legacy/over-ear/Beyerdynamic%20DT%20880%20(250%20Ohm)) by Headphone.com Legacy
@@ -811,9 +821,11 @@ from the same source.
 - [Beyerdynamic DT 990 (fresh earpads)](./oratory1990/over-ear/Beyerdynamic%20DT%20990%20(fresh%20earpads)) by oratory1990
 - [Beyerdynamic DT 990 (worn earpads)](./oratory1990/over-ear/Beyerdynamic%20DT%20990%20(worn%20earpads)) by oratory1990
 - [Beyerdynamic DT 990 Pro](./oratory1990/over-ear/Beyerdynamic%20DT%20990%20Pro) by oratory1990
+- [Beyerdynamic DT 990 Pro](./Auriculares%20Argentina/over-ear/Beyerdynamic%20DT%20990%20Pro) by Auriculares Argentina
 - [Beyerdynamic DT 990 Pro](./Rtings/over-ear/Beyerdynamic%20DT%20990%20Pro) by Rtings
 - [Beyerdynamic DT 990 Pro](./Headphone.com%20Legacy/over-ear/Beyerdynamic%20DT%20990%20Pro) by Headphone.com Legacy
 - [Beyerdynamic DT 990 Pro (250 Ohm)](./crinacle/GRAS%2043AG-7%20over-ear/Beyerdynamic%20DT%20990%20Pro%20(250%20Ohm)) by crinacle on GRAS 43AG-7
+- [Beyerdynamic DT 990 Pro Black Edition](./Auriculares%20Argentina/over-ear/Beyerdynamic%20DT%20990%20Pro%20Black%20Edition) by Auriculares Argentina
 - [Beyerdynamic DT1990 (Dekoni Elite velour earpads)](./oratory1990/over-ear/Beyerdynamic%20DT1990%20(Dekoni%20Elite%20velour%20earpads)) by oratory1990
 - [Beyerdynamic DTX 300p](./Innerfidelity/over-ear/Beyerdynamic%20DTX%20300p) by Innerfidelity
 - [Beyerdynamic DTX 350m](./Innerfidelity/over-ear/Beyerdynamic%20DTX%20350m) by Innerfidelity
@@ -1626,6 +1638,7 @@ from the same source.
 - [Focal Elex](./oratory1990/over-ear/Focal%20Elex) by oratory1990
 - [Focal Listen](./Innerfidelity/over-ear/Focal%20Listen) by Innerfidelity
 - [Focal Listen Professional](./crinacle/GRAS%2043AG-7%20over-ear/Focal%20Listen%20Professional) by crinacle on GRAS 43AG-7
+- [Focal Listen Professional](./Auriculares%20Argentina/over-ear/Focal%20Listen%20Professional) by Auriculares Argentina
 - [Focal Radiance](./oratory1990/over-ear/Focal%20Radiance) by oratory1990
 - [Focal Radiance](./crinacle/GRAS%2043AG-7%20over-ear/Focal%20Radiance) by crinacle on GRAS 43AG-7
 - [Focal Sphear](./crinacle/711%20in-ear/Focal%20Sphear) by crinacle on 711
@@ -1755,6 +1768,7 @@ from the same source.
 - [Grado SR60](./Headphone.com%20Legacy/over-ear/Grado%20SR60) by Headphone.com Legacy
 - [Grado SR60e](./oratory1990/over-ear/Grado%20SR60e) by oratory1990
 - [Grado SR60e](./crinacle/GRAS%2043AG-7%20over-ear/Grado%20SR60e) by crinacle on GRAS 43AG-7
+- [Grado SR60e](./Auriculares%20Argentina/over-ear/Grado%20SR60e) by Auriculares Argentina
 - [Grado SR60e](./Rtings/over-ear/Grado%20SR60e) by Rtings
 - [Grado SR60i](./Innerfidelity/over-ear/Grado%20SR60i) by Innerfidelity
 - [Grado SR80](./Headphone.com%20Legacy/over-ear/Grado%20SR80) by Headphone.com Legacy
@@ -1780,6 +1794,7 @@ from the same source.
 - [Heartfield Acoustic Deer](./crinacle/711%20in-ear/Heartfield%20Acoustic%20Deer) by crinacle on 711
 - [HEDD HEDDphone](./oratory1990/over-ear/HEDD%20HEDDphone) by oratory1990
 - [HEDD HEDDphone](./crinacle/GRAS%2043AG-7%20over-ear/HEDD%20HEDDphone) by crinacle on GRAS 43AG-7
+- [HEDD HEDDphone](./Auriculares%20Argentina/over-ear/HEDD%20HEDDphone) by Auriculares Argentina
 - [HEDD HEDDphone](./crinacle/EARS%20+%20711%20over-ear/HEDD%20HEDDphone) by crinacle on EARS + 711
 - [Heir Audio Tzar 350](./crinacle/711%20in-ear/Heir%20Audio%20Tzar%20350) by crinacle on 711
 - [HiBy Crystal 6](./crinacle/711%20in-ear/HiBy%20Crystal%206) by crinacle on 711
@@ -1802,6 +1817,7 @@ from the same source.
 - [HiFi Boy OS V3](./crinacle/711%20in-ear/HiFi%20Boy%20OS%20V3) by crinacle on 711
 - [HIFIMAN Ananda](./oratory1990/over-ear/HIFIMAN%20Ananda) by oratory1990
 - [HIFIMAN Ananda](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20Ananda) by crinacle on GRAS 43AG-7
+- [HIFIMAN Ananda](./Auriculares%20Argentina/over-ear/HIFIMAN%20Ananda) by Auriculares Argentina
 - [HIFIMAN Ananda](./Rtings/over-ear/HIFIMAN%20Ananda) by Rtings
 - [HIFIMAN Ananda](./crinacle/EARS%20+%20711%20over-ear/HIFIMAN%20Ananda) by crinacle on EARS + 711
 - [HIFIMAN Ananda BT](./Rtings/over-ear/HIFIMAN%20Ananda%20BT) by Rtings
@@ -1817,6 +1833,7 @@ from the same source.
 - [HIFIMAN Deva (wireless)](./oratory1990/over-ear/HIFIMAN%20Deva%20(wireless)) by oratory1990
 - [HIFIMAN Deva Pro](./oratory1990/over-ear/HIFIMAN%20Deva%20Pro) by oratory1990
 - [HIFIMAN Deva Pro](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20Deva%20Pro) by crinacle on GRAS 43AG-7
+- [HIFIMAN Deva Pro](./Auriculares%20Argentina/over-ear/HIFIMAN%20Deva%20Pro) by Auriculares Argentina
 - [HIFIMAN Edition S (closed back)](./oratory1990/over-ear/HIFIMAN%20Edition%20S%20(closed%20back)) by oratory1990
 - [HIFIMAN Edition S (open back)](./oratory1990/over-ear/HIFIMAN%20Edition%20S%20(open%20back)) by oratory1990
 - [HIFIMAN Edition X](./oratory1990/over-ear/HIFIMAN%20Edition%20X) by oratory1990
@@ -1861,6 +1878,7 @@ from the same source.
 - [HIFIMAN HE400S](./Innerfidelity/over-ear/HIFIMAN%20HE400S) by Innerfidelity
 - [HIFIMAN HE400se](./oratory1990/over-ear/HIFIMAN%20HE400se) by oratory1990
 - [HIFIMAN HE400se](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20HE400se) by crinacle on GRAS 43AG-7
+- [HIFIMAN HE400se](./Auriculares%20Argentina/over-ear/HIFIMAN%20HE400se) by Auriculares Argentina
 - [HIFIMAN HE400se](./Rtings/over-ear/HIFIMAN%20HE400se) by Rtings
 - [HIFIMAN HE4XX](./oratory1990/over-ear/HIFIMAN%20HE4XX) by oratory1990
 - [HIFIMAN HE4XX](./Innerfidelity/over-ear/HIFIMAN%20HE4XX) by Innerfidelity
@@ -1902,6 +1920,7 @@ from the same source.
 - [HIFIMAN Sundara (pre-2020 earpads)](./Rtings/over-ear/HIFIMAN%20Sundara%20(pre-2020%20earpads)) by Rtings
 - [HIFIMAN Sundara (pre-2020 earpads)](./crinacle/EARS%20+%20711%20over-ear/HIFIMAN%20Sundara%20(pre-2020%20earpads)) by crinacle on EARS + 711
 - [HIFIMAN Sundara Closed-Back](./oratory1990/over-ear/HIFIMAN%20Sundara%20Closed-Back) by oratory1990
+- [HIFIMAN Sundara Closed-Back](./Auriculares%20Argentina/over-ear/HIFIMAN%20Sundara%20Closed-Back) by Auriculares Argentina
 - [HIFIMAN Susvara](./crinacle/GRAS%2043AG-7%20over-ear/HIFIMAN%20Susvara) by crinacle on GRAS 43AG-7
 - [HIFIMAN TWS600](./crinacle/711%20in-ear/HIFIMAN%20TWS600) by crinacle on 711
 - [HiSoundAudio BA-100](./Innerfidelity/in-ear/HiSoundAudio%20BA-100) by Innerfidelity
@@ -2304,6 +2323,7 @@ from the same source.
 - [Koss Porta Pro (sample 1)](./Headphone.com%20Legacy/over-ear/Koss%20Porta%20Pro%20(sample%201)) by Headphone.com Legacy
 - [Koss Porta Pro (sample 2)](./Headphone.com%20Legacy/over-ear/Koss%20Porta%20Pro%20(sample%202)) by Headphone.com Legacy
 - [Koss Porta Pro (Yaxi earpads)](./oratory1990/over-ear/Koss%20Porta%20Pro%20(Yaxi%20earpads)) by oratory1990
+- [Koss Porta Pro (Yaxi earpads)](./Auriculares%20Argentina/over-ear/Koss%20Porta%20Pro%20(Yaxi%20earpads)) by Auriculares Argentina
 - [Koss Porta Pro Aniv Ed](./Headphone.com%20Legacy/over-ear/Koss%20Porta%20Pro%20Aniv%20Ed) by Headphone.com Legacy
 - [Koss Porta Pro KTC](./Rtings/over-ear/Koss%20Porta%20Pro%20KTC) by Rtings
 - [Koss Porta Pro Wireless](./Rtings/over-ear/Koss%20Porta%20Pro%20Wireless) by Rtings
@@ -2513,9 +2533,11 @@ from the same source.
 - [Meze 88 Classics](./Innerfidelity/over-ear/Meze%2088%20Classics) by Innerfidelity
 - [Meze 99 Classics](./oratory1990/over-ear/Meze%2099%20Classics) by oratory1990
 - [Meze 99 Classics](./crinacle/GRAS%2043AG-7%20over-ear/Meze%2099%20Classics) by crinacle on GRAS 43AG-7
+- [Meze 99 Classics](./Auriculares%20Argentina/over-ear/Meze%2099%20Classics) by Auriculares Argentina
 - [Meze 99 Classics](./Innerfidelity/over-ear/Meze%2099%20Classics) by Innerfidelity
 - [Meze 99 Classics (Brainwavz memory foam hybrid earpads)](./oratory1990/over-ear/Meze%2099%20Classics%20(Brainwavz%20memory%20foam%20hybrid%20earpads)) by oratory1990
 - [Meze 99 Neo](./crinacle/GRAS%2043AG-7%20over-ear/Meze%2099%20Neo) by crinacle on GRAS 43AG-7
+- [Meze 99 Neo](./Auriculares%20Argentina/over-ear/Meze%2099%20Neo) by Auriculares Argentina
 - [Meze 99 Neo (99 Classics earpads)](./Innerfidelity/over-ear/Meze%2099%20Neo%20(99%20Classics%20earpads)) by Innerfidelity
 - [Meze 99 Noir](./oratory1990/over-ear/Meze%2099%20Noir) by oratory1990
 - [Meze Elite (alcantara earpads)](./oratory1990/over-ear/Meze%20Elite%20(alcantara%20earpads)) by oratory1990
@@ -2661,6 +2683,7 @@ from the same source.
 - [Nectar Hive](./crinacle/GRAS%2043AG-7%20over-ear/Nectar%20Hive) by crinacle on GRAS 43AG-7
 - [Neumann NDH20](./oratory1990/over-ear/Neumann%20NDH20) by oratory1990
 - [Neumann NDH20](./crinacle/GRAS%2043AG-7%20over-ear/Neumann%20NDH20) by crinacle on GRAS 43AG-7
+- [Neumann NDH20](./Auriculares%20Argentina/over-ear/Neumann%20NDH20) by Auriculares Argentina
 - [Neumann NDH20](./crinacle/EARS%20+%20711%20over-ear/Neumann%20NDH20) by crinacle on EARS + 711
 - [Neumann NDH30](./oratory1990/over-ear/Neumann%20NDH30) by oratory1990
 - [Neusonik direm E3](./crinacle/711%20in-ear/Neusonik%20direm%20E3) by crinacle on 711
@@ -2881,6 +2904,7 @@ from the same source.
 - [Philips SHE3855](./oratory1990/in-ear/Philips%20SHE3855) by oratory1990
 - [Philips SHP9500](./oratory1990/over-ear/Philips%20SHP9500) by oratory1990
 - [Philips SHP9500](./crinacle/GRAS%2043AG-7%20over-ear/Philips%20SHP9500) by crinacle on GRAS 43AG-7
+- [Philips SHP9500](./Auriculares%20Argentina/over-ear/Philips%20SHP9500) by Auriculares Argentina
 - [Philips SHP9500](./Rtings/over-ear/Philips%20SHP9500) by Rtings
 - [Philips SHP9600](./Rtings/over-ear/Philips%20SHP9600) by Rtings
 - [Philips SHS8000](./oratory1990/in-ear/Philips%20SHS8000) by oratory1990
@@ -3225,6 +3249,7 @@ from the same source.
 - [Sennheiser HD 250 II](./Innerfidelity/over-ear/Sennheiser%20HD%20250%20II) by Innerfidelity
 - [Sennheiser HD 250BT](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20250BT) by crinacle on GRAS 43AG-7
 - [Sennheiser HD 280 Pro](./oratory1990/over-ear/Sennheiser%20HD%20280%20Pro) by oratory1990
+- [Sennheiser HD 280 Pro](./Auriculares%20Argentina/over-ear/Sennheiser%20HD%20280%20Pro) by Auriculares Argentina
 - [Sennheiser HD 280 Pro](./Innerfidelity/over-ear/Sennheiser%20HD%20280%20Pro) by Innerfidelity
 - [Sennheiser HD 280 Pro](./Rtings/over-ear/Sennheiser%20HD%20280%20Pro) by Rtings
 - [Sennheiser HD 280 Pro](./Headphone.com%20Legacy/over-ear/Sennheiser%20HD%20280%20Pro) by Headphone.com Legacy
@@ -3233,6 +3258,7 @@ from the same source.
 - [Sennheiser HD 4.40BT](./Rtings/over-ear/Sennheiser%20HD%204.40BT) by Rtings
 - [Sennheiser HD 4.50 BTNC](./oratory1990/over-ear/Sennheiser%20HD%204.50%20BTNC) by oratory1990
 - [Sennheiser HD 4.50 BTNC](./Rtings/over-ear/Sennheiser%20HD%204.50%20BTNC) by Rtings
+- [Sennheiser HD 400 Pro](./Auriculares%20Argentina/over-ear/Sennheiser%20HD%20400%20Pro) by Auriculares Argentina
 - [Sennheiser HD 400 S](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20400%20S) by crinacle on GRAS 43AG-7
 - [Sennheiser HD 414](./Innerfidelity/over-ear/Sennheiser%20HD%20414) by Innerfidelity
 - [Sennheiser HD 419](./Innerfidelity/over-ear/Sennheiser%20HD%20419) by Innerfidelity
@@ -3257,12 +3283,14 @@ from the same source.
 - [Sennheiser HD 540 reference-II](./oratory1990/over-ear/Sennheiser%20HD%20540%20reference-II) by oratory1990
 - [Sennheiser HD 555](./oratory1990/over-ear/Sennheiser%20HD%20555) by oratory1990
 - [Sennheiser HD 555](./Headphone.com%20Legacy/over-ear/Sennheiser%20HD%20555) by Headphone.com Legacy
+- [Sennheiser HD 558](./Auriculares%20Argentina/over-ear/Sennheiser%20HD%20558) by Auriculares Argentina
 - [Sennheiser HD 558](./Headphone.com%20Legacy/over-ear/Sennheiser%20HD%20558) by Headphone.com Legacy
 - [Sennheiser HD 559](./oratory1990/over-ear/Sennheiser%20HD%20559) by oratory1990
 - [Sennheiser HD 559](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20559) by crinacle on GRAS 43AG-7
 - [Sennheiser HD 560 Ovation II](./Innerfidelity/over-ear/Sennheiser%20HD%20560%20Ovation%20II) by Innerfidelity
 - [Sennheiser HD 560S](./oratory1990/over-ear/Sennheiser%20HD%20560S) by oratory1990
 - [Sennheiser HD 560S](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20560S) by crinacle on GRAS 43AG-7
+- [Sennheiser HD 560S](./Auriculares%20Argentina/over-ear/Sennheiser%20HD%20560S) by Auriculares Argentina
 - [Sennheiser HD 560S](./Rtings/over-ear/Sennheiser%20HD%20560S) by Rtings
 - [Sennheiser HD 565 Ovation](./Innerfidelity/over-ear/Sennheiser%20HD%20565%20Ovation) by Innerfidelity
 - [Sennheiser HD 569](./oratory1990/over-ear/Sennheiser%20HD%20569) by oratory1990
@@ -3277,6 +3305,7 @@ from the same source.
 - [Sennheiser HD 580 precision](./oratory1990/over-ear/Sennheiser%20HD%20580%20precision) by oratory1990
 - [Sennheiser HD 58X](./oratory1990/over-ear/Sennheiser%20HD%2058X) by oratory1990
 - [Sennheiser HD 58X](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%2058X) by crinacle on GRAS 43AG-7
+- [Sennheiser HD 58X](./Auriculares%20Argentina/over-ear/Sennheiser%20HD%2058X) by Auriculares Argentina
 - [Sennheiser HD 58X](./Rtings/over-ear/Sennheiser%20HD%2058X) by Rtings
 - [Sennheiser HD 58X (Brainwavz microsuede oval earpads)](./oratory1990/over-ear/Sennheiser%20HD%2058X%20(Brainwavz%20microsuede%20oval%20earpads)) by oratory1990
 - [Sennheiser HD 595](./Innerfidelity/over-ear/Sennheiser%20HD%20595) by Innerfidelity
@@ -3293,6 +3322,7 @@ from the same source.
 - [Sennheiser HD 599](./crinacle/EARS%20+%20711%20over-ear/Sennheiser%20HD%20599) by crinacle on EARS + 711
 - [Sennheiser HD 600](./oratory1990/over-ear/Sennheiser%20HD%20600) by oratory1990
 - [Sennheiser HD 600](./crinacle/GRAS%2043AG-7%20over-ear/Sennheiser%20HD%20600) by crinacle on GRAS 43AG-7
+- [Sennheiser HD 600](./Auriculares%20Argentina/over-ear/Sennheiser%20HD%20600) by Auriculares Argentina
 - [Sennheiser HD 600](./Innerfidelity/over-ear/Sennheiser%20HD%20600) by Innerfidelity
 - [Sennheiser HD 600](./Rtings/over-ear/Sennheiser%20HD%20600) by Rtings
 - [Sennheiser HD 600](./Headphone.com%20Legacy/over-ear/Sennheiser%20HD%20600) by Headphone.com Legacy
@@ -3318,6 +3348,7 @@ from the same source.
 - [Sennheiser HD 660 S](./crinacle/EARS%20+%20711%20over-ear/Sennheiser%20HD%20660%20S) by crinacle on EARS + 711
 - [Sennheiser HD 660S (Dekoni Fenestrated Sheepskin Earpads)](./oratory1990/over-ear/Sennheiser%20HD%20660S%20(Dekoni%20Fenestrated%20Sheepskin%20Earpads)) by oratory1990
 - [Sennheiser HD 660S2](./Rtings/over-ear/Sennheiser%20HD%20660S2) by Rtings
+- [Sennheiser HD 6XX](./Auriculares%20Argentina/over-ear/Sennheiser%20HD%206XX) by Auriculares Argentina
 - [Sennheiser HD 6XX](./Innerfidelity/over-ear/Sennheiser%20HD%206XX) by Innerfidelity
 - [Sennheiser HD 6XX](./Rtings/over-ear/Sennheiser%20HD%206XX) by Rtings
 - [Sennheiser HD 700](./oratory1990/over-ear/Sennheiser%20HD%20700) by oratory1990
@@ -3369,9 +3400,9 @@ from the same source.
 - [Sennheiser IE 300](./crinacle/Bruel%20&%20Kjaer%204620%20in-ear/Sennheiser%20IE%20300) by crinacle on Bruel & Kjaer 4620
 - [Sennheiser IE 300](./crinacle/711%20in-ear/Sennheiser%20IE%20300) by crinacle on 711
 - [Sennheiser IE 4](./oratory1990/in-ear/Sennheiser%20IE%204) by oratory1990
+- [Sennheiser IE 40 PRO](./Rtings/in-ear/Sennheiser%20IE%2040%20PRO) by Rtings
 - [Sennheiser IE 40 Pro](./oratory1990/in-ear/Sennheiser%20IE%2040%20Pro) by oratory1990
 - [Sennheiser IE 40 Pro](./crinacle/711%20in-ear/Sennheiser%20IE%2040%20Pro) by crinacle on 711
-- [Sennheiser IE 40 Pro](./Rtings/in-ear/Sennheiser%20IE%2040%20Pro) by Rtings
 - [Sennheiser IE 400 Pro](./crinacle/711%20in-ear/Sennheiser%20IE%20400%20Pro) by crinacle on 711
 - [Sennheiser IE 500 Pro](./crinacle/711%20in-ear/Sennheiser%20IE%20500%20Pro) by crinacle on 711
 - [Sennheiser IE 6](./Innerfidelity/in-ear/Sennheiser%20IE%206) by Innerfidelity
@@ -3581,6 +3612,7 @@ from the same source.
 - [Shure SRH1540](./crinacle/GRAS%2043AG-7%20over-ear/Shure%20SRH1540) by crinacle on GRAS 43AG-7
 - [Shure SRH1540](./Innerfidelity/over-ear/Shure%20SRH1540) by Innerfidelity
 - [Shure SRH1540](./Headphone.com%20Legacy/over-ear/Shure%20SRH1540) by Headphone.com Legacy
+- [Shure SRH1840](./Auriculares%20Argentina/over-ear/Shure%20SRH1840) by Auriculares Argentina
 - [Shure SRH1840](./Innerfidelity/over-ear/Shure%20SRH1840) by Innerfidelity
 - [Shure SRH1840](./Headphone.com%20Legacy/over-ear/Shure%20SRH1840) by Headphone.com Legacy
 - [Shure SRH240](./Rtings/over-ear/Shure%20SRH240) by Rtings
@@ -3588,6 +3620,7 @@ from the same source.
 - [Shure SRH240A](./crinacle/GRAS%2043AG-7%20over-ear/Shure%20SRH240A) by crinacle on GRAS 43AG-7
 - [Shure SRH440](./oratory1990/over-ear/Shure%20SRH440) by oratory1990
 - [Shure SRH440](./crinacle/GRAS%2043AG-7%20over-ear/Shure%20SRH440) by crinacle on GRAS 43AG-7
+- [Shure SRH440](./Auriculares%20Argentina/over-ear/Shure%20SRH440) by Auriculares Argentina
 - [Shure SRH440](./Innerfidelity/over-ear/Shure%20SRH440) by Innerfidelity
 - [Shure SRH440](./Rtings/over-ear/Shure%20SRH440) by Rtings
 - [Shure SRH440](./Headphone.com%20Legacy/over-ear/Shure%20SRH440) by Headphone.com Legacy
@@ -3618,13 +3651,17 @@ from the same source.
 - [Sivga Audio Phoenix](./oratory1990/over-ear/Sivga%20Audio%20Phoenix) by oratory1990
 - [Sivga Audio Phoenix](./crinacle/GRAS%2043AG-7%20over-ear/Sivga%20Audio%20Phoenix) by crinacle on GRAS 43AG-7
 - [Sivga Audio Robin](./crinacle/GRAS%2043AG-7%20over-ear/Sivga%20Audio%20Robin) by crinacle on GRAS 43AG-7
+- [Sivga Audio Robin](./Auriculares%20Argentina/over-ear/Sivga%20Audio%20Robin) by Auriculares Argentina
+- [Sivga Oriole](./Auriculares%20Argentina/over-ear/Sivga%20Oriole) by Auriculares Argentina
 - [Skullcandy Aviators](./Headphone.com%20Legacy/over-ear/Skullcandy%20Aviators) by Headphone.com Legacy
 - [Skullcandy Aviators no Lens](./Innerfidelity/over-ear/Skullcandy%20Aviators%20no%20Lens) by Innerfidelity
 - [Skullcandy Crusher](./Innerfidelity/over-ear/Skullcandy%20Crusher) by Innerfidelity
 - [Skullcandy Crusher](./Rtings/over-ear/Skullcandy%20Crusher) by Rtings
 - [Skullcandy Crusher 360](./Rtings/over-ear/Skullcandy%20Crusher%20360) by Rtings
 - [Skullcandy Crusher Evo](./Rtings/over-ear/Skullcandy%20Crusher%20Evo) by Rtings
+- [Skullcandy Crusher Wireless](./Auriculares%20Argentina/over-ear/Skullcandy%20Crusher%20Wireless) by Auriculares Argentina
 - [Skullcandy Crusher Wireless](./Rtings/over-ear/Skullcandy%20Crusher%20Wireless) by Rtings
+- [Skullcandy Crusher Wireless (bass boost)](./Auriculares%20Argentina/over-ear/Skullcandy%20Crusher%20Wireless%20(bass%20boost)) by Auriculares Argentina
 - [Skullcandy Crusher Wireless (wired, sub off)](./Innerfidelity/over-ear/Skullcandy%20Crusher%20Wireless%20(wired,%20sub%20off)) by Innerfidelity
 - [Skullcandy Dime](./Rtings/in-ear/Skullcandy%20Dime) by Rtings
 - [Skullcandy Dime 2](./Rtings/in-ear/Skullcandy%20Dime%202) by Rtings
@@ -3789,6 +3826,7 @@ from the same source.
 - [Sony MDR-Z7M2](./oratory1990/over-ear/Sony%20MDR-Z7M2) by oratory1990
 - [Sony MDR-Z7M2](./crinacle/GRAS%2043AG-7%20over-ear/Sony%20MDR-Z7M2) by crinacle on GRAS 43AG-7
 - [Sony MDR-ZX1000](./Innerfidelity/over-ear/Sony%20MDR-ZX1000) by Innerfidelity
+- [Sony MDR-ZX110](./Auriculares%20Argentina/over-ear/Sony%20MDR-ZX110) by Auriculares Argentina
 - [Sony MDR-ZX110NC](./Rtings/over-ear/Sony%20MDR-ZX110NC) by Rtings
 - [Sony MDR-ZX310](./oratory1990/over-ear/Sony%20MDR-ZX310) by oratory1990
 - [Sony MDR-ZX700](./Innerfidelity/over-ear/Sony%20MDR-ZX700) by Innerfidelity

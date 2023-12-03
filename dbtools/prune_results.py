@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import os
 import sys
 from pathlib import Path
 import shutil
@@ -33,9 +33,8 @@ def prune_results(dry_run=False, databases=None):
         result_paths = list(RESULTS_PATH.joinpath(db).glob('**/*.png'))
         for result_path in result_paths:
             target_key = str(result_path.relative_to(RESULTS_PATH).parent.parent).replace('\\', '/')
-            source_dir = target_to_source[target_key]
-            if not source_dir.joinpath(f'{result_path.parent.name}.csv').exists():
-                #print(source_dir.joinpath(f'{result_path.parent.name}.csv'))
+            source_path = target_to_source[target_key].joinpath(f'{result_path.parent.name}.csv')
+            if not source_path.exists() or result_path.name.replace('.png', '.csv') not in os.listdir(source_path.parent):
                 if not dry_run:
                     shutil.rmtree(result_path.parent)
                 print(f'Removed "{result_path.parent.relative_to(RESULTS_PATH)}"')

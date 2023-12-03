@@ -531,7 +531,7 @@
 - [Sennheiser HD1 On-Ear](./over-ear/Sennheiser%20HD1%20On-Ear)
 - [Sennheiser HD1 Over-Ear](./over-ear/Sennheiser%20HD1%20Over-Ear)
 - [Sennheiser HD1 Wireless](./over-ear/Sennheiser%20HD1%20Wireless)
-- [Sennheiser IE 40 Pro](./in-ear/Sennheiser%20IE%2040%20Pro)
+- [Sennheiser IE 40 PRO](./in-ear/Sennheiser%20IE%2040%20PRO)
 - [Sennheiser Momentum 3 Wireless](./over-ear/Sennheiser%20Momentum%203%20Wireless)
 - [Sennheiser Momentum 4 Wireless](./over-ear/Sennheiser%20Momentum%204%20Wireless)
 - [Sennheiser Momentum True Wireless](./in-ear/Sennheiser%20Momentum%20True%20Wireless)
