@@ -34,6 +34,7 @@ class ResultPath:
         ('Innerfidelity', 'earbud'),
         ('Kazi', 'earbud'),
         ('Regan Cipher', 'earbud'),
+        ('kr0mka', 'earbud'),
         ('Super Review', 'earbud'),
         ('oratory1990', 'earbud'),
 
@@ -41,7 +42,6 @@ class ResultPath:
         ('Rtings', 'in-ear'),  # STD 2.09
         ('Innerfidelity', 'in-ear'),  # STD 1.96
         ('Filk', 'in-ear'),  # No calibration
-        ('RikudouGoku', 'in-ear'),  # No calibration
         ('DHRME', 'in-ear'),  # No calibration
         ('Jaytiss', 'in-ear'),  # No calibration
         ('Kazi', 'in-ear'),  # No calibration
@@ -51,6 +51,7 @@ class ResultPath:
         ('Auriculares Argentina', 'in-ear'),  # STD 1.62 (small sample)
         ('Bakkwatan', 'in-ear'),  # STD 0.83 (small sample)
         ('Hi End Portable', 'in-ear'),  # STD 1.30 (increased by few outliers)
+        ('RikudouGoku', 'in-ear'),  # STD 0.80 (significant deviation in bass for mean)
         ('Fahryst', 'in-ear'),  # STD 1.18
         ('kr0mka', 'in-ear'),  # STD 1.15
         ('Harpo', 'in-ear'),  # STD 1.04
@@ -66,6 +67,7 @@ class ResultPath:
         ('Headphone.com Legacy', 'over-ear'),  # STD 2.77
         ('Innerfidelity', 'over-ear'),  # STD 1.92
         ('Rtings', 'over-ear'),  # STD 1.62
+        ('kr0mka', 'over-ear'),  # STD 2.08
         ('Filk', 'over-ear'),  # STD 2.04
         ('Auriculares Argentina', 'over-ear'),  # STD 1.64
         ('Super Review', 'over-ear'),  # STD 1.56
