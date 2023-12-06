@@ -32,8 +32,14 @@ def prune_results(dry_run=False, databases=None):
     for db in databases:
         result_paths = list(RESULTS_PATH.joinpath(db).glob('**/*.png'))
         for result_path in result_paths:
-            target_key = str(result_path.relative_to(RESULTS_PATH).parent.parent).replace('\\', '/')
-            source_path = target_to_source[target_key].joinpath(f'{result_path.parent.name}.csv')
+            source_name = result_path.relative_to(RESULTS_PATH).parent.parent.parent.name
+            form = result_path.relative_to(RESULTS_PATH).parent.parent.name
+            target_key = f'{source_name}/{form}'
+            if target_key in target_to_source:
+                source_path = target_to_source[target_key]
+            else:
+                source_path = MEASUREMENTS_PATH.joinpath(source_name, 'data', form)
+            source_path = source_path.joinpath(f'{result_path.parent.name}.csv')
             if not source_path.exists() or result_path.name.replace('.png', '.csv') not in os.listdir(source_path.parent):
                 if not dry_run:
                     shutil.rmtree(result_path.parent)

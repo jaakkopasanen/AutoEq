@@ -41,6 +41,7 @@ class ResultPath:
         ('Headphone.com Legacy', 'in-ear'),  # STD 1.05 (small sample)
         ('Rtings', 'in-ear'),  # STD 2.09
         ('Innerfidelity', 'in-ear'),  # STD 1.96
+        ('crinacle', 'Bruel & Kjaer 4620 in-ear'),
         ('Filk', 'in-ear'),  # No calibration
         ('DHRME', 'in-ear'),  # No calibration
         ('Jaytiss', 'in-ear'),  # No calibration
@@ -59,7 +60,6 @@ class ResultPath:
         ('Super Review', 'in-ear'),  # STD 0.90 (large sample)
         ('crinacle', '711 in-ear'),
         ('oratory1990', 'in-ear'),
-        ('crinacle', 'Bruel & Kjaer 4620 in-ear'),
 
         ('crinacle', 'EARS + 711 over-ear'),
         ('Regan Cipher', 'over-ear'),  # No calibration
@@ -67,8 +67,8 @@ class ResultPath:
         ('Headphone.com Legacy', 'over-ear'),  # STD 2.77
         ('Innerfidelity', 'over-ear'),  # STD 1.92
         ('Rtings', 'over-ear'),  # STD 1.62
-        ('kr0mka', 'over-ear'),  # STD 2.08
-        ('Filk', 'over-ear'),  # STD 2.04
+        ('Filk', 'over-ear'),  # STD 2.04 (small sample)
+        ('kr0mka', 'over-ear'),  # STD 1.20 (small sample, one outlier increases STD)
         ('Auriculares Argentina', 'over-ear'),  # STD 1.64
         ('Super Review', 'over-ear'),  # STD 1.56
         ('Kuulokenurkka', 'over-ear'),  # STD 1.26

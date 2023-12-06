@@ -163,8 +163,8 @@ class SquigCrawler(CrinacleCrawlerBase):
             try:
                 fr = FrequencyResponse.read_csv(self.raw_data_path(item))
             except CsvParseError as err:
-                print('Failed to parse', self.raw_data_path(item))
-                continue
+                print(f'Failed to parse "{self.raw_data_path(item)}": {str(err)}')
+                return
             fr.interpolate()
             fr.center()
             avg_fr.raw += fr.raw
