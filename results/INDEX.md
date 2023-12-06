@@ -3816,6 +3816,9 @@ from the same source.
 - [Moondrop Solis 2](./Super%20Review/in-ear/Moondrop%20Solis%202) by Super Review
 - [Moondrop Space Travel](./Regan%20Cipher/in-ear/Moondrop%20Space%20Travel) by Regan Cipher
 - [Moondrop Space Travel](./Filk/in-ear/Moondrop%20Space%20Travel) by Filk
+- [Moondrop Space Travel (basshead mode)](./kr0mka/in-ear/Moondrop%20Space%20Travel%20(basshead%20mode)) by kr0mka
+- [Moondrop Space Travel (monitor mode)](./kr0mka/in-ear/Moondrop%20Space%20Travel%20(monitor%20mode)) by kr0mka
+- [Moondrop Space Travel (reference mode)](./kr0mka/in-ear/Moondrop%20Space%20Travel%20(reference%20mode)) by kr0mka
 - [Moondrop Spaceship](./crinacle/711%20in-ear/Moondrop%20Spaceship) by crinacle on 711
 - [Moondrop Spaceship](./Super%20Review/in-ear/Moondrop%20Spaceship) by Super Review
 - [Moondrop Spaceship](./RikudouGoku/in-ear/Moondrop%20Spaceship) by RikudouGoku

@@ -6,7 +6,7 @@ headphones, these can be found in the
 Where there are measurements from multiple sources for the same headphone, only the one with the highest accuracy
 appears on this list.
 
-This list has 4818 headphone models covered, but if your headphone is missing, you can create settings for
+This list has 4821 headphone models covered, but if your headphone is missing, you can create settings for
 it yourself by following this guide:
 [Equalizing Headphones the Easy Way](https://medium.com/@jaakkopasanen/make-your-headphones-sound-supreme-1cbd567832a9)
 
@@ -2753,6 +2753,9 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Moondrop Solis](./Super%20Review/in-ear/Moondrop%20Solis)
 - [Moondrop Solis 2](./Super%20Review/in-ear/Moondrop%20Solis%202)
 - [Moondrop Space Travel](./Regan%20Cipher/in-ear/Moondrop%20Space%20Travel)
+- [Moondrop Space Travel (basshead mode)](./kr0mka/in-ear/Moondrop%20Space%20Travel%20(basshead%20mode))
+- [Moondrop Space Travel (monitor mode)](./kr0mka/in-ear/Moondrop%20Space%20Travel%20(monitor%20mode))
+- [Moondrop Space Travel (reference mode)](./kr0mka/in-ear/Moondrop%20Space%20Travel%20(reference%20mode))
 - [Moondrop Spaceship](./crinacle/711%20in-ear/Moondrop%20Spaceship)
 - [Moondrop Sparks](./crinacle/711%20in-ear/Moondrop%20Sparks)
 - [Moondrop SSP](./crinacle/711%20in-ear/Moondrop%20SSP)
