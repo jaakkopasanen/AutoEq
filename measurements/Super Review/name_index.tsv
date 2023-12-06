@@ -126,18 +126,18 @@ https://superreview.squig.link/data/Akoustyx%20S-6%20(S2)%20L.txt	Akoustyx S-6 (
 https://superreview.squig.link/data/Akoustyx%20S-6%20(S2)%20R.txt	Akoustyx S-6 (sample 2)	Akoustyx S-6	in-ear	711
 https://superreview.squig.link/data/Akoustyx%20S-6%20(Tanchjim)%20L.txt	Akoustyx S-6 (S2 + Tanchjim filter)	Akoustyx S-6 (S2 + Tanchjim filter)	ignore	
 https://superreview.squig.link/data/Akoustyx%20S-6%20(Tanchjim)%20R.txt	Akoustyx S-6 (S2 + Tanchjim filter)	Akoustyx S-6 (S2 + Tanchjim filter)	ignore	
-https://superreview.squig.link/earbuds/data/Apple%20AirPods%202%20R1.txt		Apple AirPods 2	earbud	
-https://superreview.squig.link/earbuds/data/Apple%20AirPods%202%20R2.txt		Apple AirPods 2	earbud	
-https://superreview.squig.link/earbuds/data/Apple%20AirPods%202%20R3.txt		Apple AirPods 2	earbud	
-https://superreview.squig.link/earbuds/data/Apple%20AirPods%203%20R1.txt		Apple AirPods 3	earbud	
-https://superreview.squig.link/earbuds/data/Apple%20AirPods%203%20R2.txt		Apple AirPods 3	earbud	
-https://superreview.squig.link/earbuds/data/Apple%20AirPods%203%20R3.txt		Apple AirPods 3	earbud	
-https://superreview.squig.link/earbuds/data/Apple%20EarPods%20R3.txt		Apple AirPods 3	earbud	
+https://superreview.squig.link/earbuds/data/Apple%20AirPods%202%20R1.txt		Apple AirPods 2	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Apple%20AirPods%202%20R2.txt		Apple AirPods 2	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Apple%20AirPods%202%20R3.txt		Apple AirPods 2	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Apple%20AirPods%203%20R1.txt		Apple AirPods 3	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Apple%20AirPods%203%20R2.txt		Apple AirPods 3	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Apple%20AirPods%203%20R3.txt		Apple AirPods 3	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Apple%20EarPods%20R3.txt		Apple AirPods 3	earbud	clone pinna + 711
 https://superreview.squig.link/data/Apple%20AirPods%20Pro%20L.txt	Apple AirPods Pro (firmware 3A283)	Apple AirPods Pro	in-ear	711
-https://superreview.squig.link/earbuds/data/Apple%20EarPods%20R1.txt		Apple EarPods	earbud	
-https://superreview.squig.link/earbuds/data/Apple%20EarPods%20R2.txt		Apple EarPods	earbud	
-https://superreview.squig.link/earbuds/data/Astrotec%20Lyra%20Nature%20R1.txt		Astrotec Lyra Nature	earbud	
-https://superreview.squig.link/earbuds/data/Astrotec%20Lyra%20Nature%20(no%20foam)%20R1.txt		Astrotec Lyra Nature (no foam)	earbud	
+https://superreview.squig.link/earbuds/data/Apple%20EarPods%20R1.txt		Apple EarPods	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Apple%20EarPods%20R2.txt		Apple EarPods	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Astrotec%20Lyra%20Nature%20R1.txt		Astrotec Lyra Nature	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Astrotec%20Lyra%20Nature%20(no%20foam)%20R1.txt		Astrotec Lyra Nature (no foam)	earbud	clone pinna + 711
 https://superreview.squig.link/data/Auglamour%20F300%20L.txt	Auglamour F300	AuGlamour F300	in-ear	711
 https://superreview.squig.link/data/Auglamour%20RT-3%20L.txt	Auglamour RT-3	AuGlamour RT-3	in-ear	711
 https://superreview.squig.link/headphones/data/Audeze%20LCD-2%20Closed%20L1.txt	Audeze LCD-2 Closed Back	Audeze LCD-2 Closed Back	over-ear	clone pinna + 711
@@ -370,9 +370,9 @@ https://superreview.squig.link/data/Etymotic%20ETY%20Kids%20L.txt	Etymotic ETY K
 https://superreview.squig.link/data/Etymotic%20Evo%20(2F)%20L.txt	Etymotic Evo (tips: 2-flange)	Etymotic Evo (2-flange eartips)	in-ear	711
 https://superreview.squig.link/data/Etymotic%20Evo%20L.txt	Etymotic Evo (tips: 3-flange)	Etymotic Evo (3-flange eartips)	in-ear	711
 https://superreview.squig.link/data/Etymotic%20MK5%20L.txt	Etymotic MK5 Isolator	Etymotic mk5 Isolator	in-ear	711
-https://superreview.squig.link/earbuds/data/Faaeal%20Iris%20R1.txt		FAAEAL Iris	earbud	
-https://superreview.squig.link/earbuds/data/Faaeal%20Iris%20R2.txt		FAAEAL Iris	earbud	
-https://superreview.squig.link/earbuds/data/Faaeal%20Iris%20R3.txt		FAAEAL Iris	earbud	
+https://superreview.squig.link/earbuds/data/Faaeal%20Iris%20R1.txt		FAAEAL Iris	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Faaeal%20Iris%20R2.txt		FAAEAL Iris	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Faaeal%20Iris%20R3.txt		FAAEAL Iris	earbud	clone pinna + 711
 https://superreview.squig.link/data/FLC%20DD31%20L.txt	FLC DD31	FLC Technology DD31	in-ear	711
 https://superreview.squig.link/data/FLC%208P%20(gold-black-gunmetal)%20L.txt	FLC 8P (golden / black / gunmetal)	FLC Technology FLC8P (gold, black, gunmetal)	in-ear	711
 https://superreview.squig.link/data/FLC%208P%20(gold-black-red)%20L.txt	FLC 8P (golden / black / red	FLC Technology FLC8P (gold, black, red)	in-ear	711
@@ -408,21 +408,21 @@ https://superreview.squig.link/data/Fiio%20FD7%20(bass%20+%20SpinFit)%20L.txt	Fi
 https://superreview.squig.link/data/Fiio%20FD7%20(bass%20+%20SpinFit)%20R.txt	Fiio FD7 (nozzle: bass + tips: SpinFit)	FiiO FD7 (bass nozzle, SpinFit eartips)	ignore	711
 https://superreview.squig.link/data/Fiio%20FD7%20(treble)%20L.txt	Fiio FD7 (nozzle: treble)	FiiO FD7 (treble nozzle)	in-ear	711
 https://superreview.squig.link/data/Fiio%20FD7%20(treble)%20R.txt	Fiio FD7 (nozzle: treble)	FiiO FD7 (treble nozzle)	in-ear	711
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(blk)%20R1.txt		FiiO FF1 (black)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(blk)%20R2.txt		FiiO FF1 (black)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(blk)%20R3.txt		FiiO FF1 (black)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20L1.txt		FiiO FF1 (foam)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20L2.txt		FiiO FF1 (foam)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20L3.txt		FiiO FF1 (foam)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20R1.txt		FiiO FF1 (foam)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20R2.txt		FiiO FF1 (foam)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20R3.txt		FiiO FF1 (foam)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(no%20foam)%20R1.txt		FiiO FF1 (no foam)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(no%20foam)%20R2.txt		FiiO FF1 (no foam)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(no%20foam)%20R3.txt		FiiO FF1 (no foam)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(wht)%20R1.txt		FiiO FF1 (white)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(wht)%20R2.txt		FiiO FF1 (white)	earbud	
-https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(wht)%20R3.txt		FiiO FF1 (white)	earbud	
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(blk)%20R1.txt		FiiO FF1 (black)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(blk)%20R2.txt		FiiO FF1 (black)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(blk)%20R3.txt		FiiO FF1 (black)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20L1.txt		FiiO FF1 (foam)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20L2.txt		FiiO FF1 (foam)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20L3.txt		FiiO FF1 (foam)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20R1.txt		FiiO FF1 (foam)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20R2.txt		FiiO FF1 (foam)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(foam)%20R3.txt		FiiO FF1 (foam)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(no%20foam)%20R1.txt		FiiO FF1 (no foam)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(no%20foam)%20R2.txt		FiiO FF1 (no foam)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(no%20foam)%20R3.txt		FiiO FF1 (no foam)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(wht)%20R1.txt		FiiO FF1 (white)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(wht)%20R2.txt		FiiO FF1 (white)	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Fiio%20FF1%20(wht)%20R3.txt		FiiO FF1 (white)	earbud	clone pinna + 711
 https://superreview.squig.link/data/Fiio%20FH1%20L.txt	Fiio FH1	FiiO FH1	in-ear	711
 https://superreview.squig.link/data/Fiio%20FH11%20L.txt	Fiio FH11	FiiO FH11	in-ear	711
 https://superreview.squig.link/data/Fiio%20FH11%20R.txt	Fiio FH11	FiiO FH11	in-ear	711
@@ -735,9 +735,9 @@ https://superreview.squig.link/headphones/data/Koss%20Porta%20Pro%20(Yaxi)%20L3.
 https://superreview.squig.link/headphones/data/Koss%20Porta%20Pro%20(Yaxi)%20R1.txt	Koss Porta Pro (pads: Yaxi)	Koss Porta Pro (Yaxi earpads)	over-ear	clone pinna + 711
 https://superreview.squig.link/headphones/data/Koss%20Porta%20Pro%20(Yaxi)%20R2.txt	Koss Porta Pro (pads: Yaxi)	Koss Porta Pro (Yaxi earpads)	over-ear	clone pinna + 711
 https://superreview.squig.link/headphones/data/Koss%20Porta%20Pro%20(Yaxi)%20R3.txt	Koss Porta Pro (pads: Yaxi)	Koss Porta Pro (Yaxi earpads)	over-ear	clone pinna + 711
-https://superreview.squig.link/earbuds/data/Ks%20Earphone%20K64%20R1.txt		Ks Earphone K64	earbud	
-https://superreview.squig.link/earbuds/data/Ks%20Earphone%20K64%20R2.txt		Ks Earphone K64	earbud	
-https://superreview.squig.link/earbuds/data/Ks%20Earphone%20K64%20R3.txt		Ks Earphone K64	earbud	
+https://superreview.squig.link/earbuds/data/Ks%20Earphone%20K64%20R1.txt		Ks Earphone K64	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Ks%20Earphone%20K64%20R2.txt		Ks Earphone K64	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Ks%20Earphone%20K64%20R3.txt		Ks Earphone K64	earbud	clone pinna + 711
 https://superreview.squig.link/data/LG%20HBS800%20L.txt		LG HBS800	ignore	
 https://superreview.squig.link/data/LG%20HBS800%20R.txt		LG HBS800	ignore	
 https://superreview.squig.link/data/LG%20HBS800%20(ANC%20off)%20L.txt	LG HBS800 (ANC off)	LG Tone Ultra (ANC off)	in-ear	711
@@ -1026,9 +1026,9 @@ https://superreview.squig.link/data/NF%20Audio%20NA2+%20(Etype%20tips)%20L.txt	N
 https://superreview.squig.link/data/NF%20Audio%20NA2+%20(Tanchjim%20filter)%20L.txt	NF Audio NA2+ (Tanchjim filter)	NF Audio NA2+ (Tanchjim filter)	ignore	
 https://superreview.squig.link/data/NF%20Audio%20NM2%20L.txt	NF Audio NM2	NF Audio NM2	in-ear	711
 https://superreview.squig.link/data/NF%20Audio%20NM2%20R.txt	NF Audio NM2	NF Audio NM2	in-ear	711
-https://superreview.squig.link/earbuds/data/NiceHCK%20EBX21%20R1.txt		NiceHCK EBX21	earbud	
-https://superreview.squig.link/earbuds/data/NiceHCK%20EBX21%20R2.txt		NiceHCK EBX21	earbud	
-https://superreview.squig.link/earbuds/data/NiceHCK%20EBX21%20R3.txt		NiceHCK EBX21	earbud	
+https://superreview.squig.link/earbuds/data/NiceHCK%20EBX21%20R1.txt		NiceHCK EBX21	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/NiceHCK%20EBX21%20R2.txt		NiceHCK EBX21	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/NiceHCK%20EBX21%20R3.txt		NiceHCK EBX21	earbud	clone pinna + 711
 https://superreview.squig.link/data/NiceHCK%20Topguy%20L.txt	NiceHCK Topguy	NiceHCK Topguy	in-ear	711
 https://superreview.squig.link/data/NiceHCK%20Topguy%20R.txt	NiceHCK Topguy	NiceHCK Topguy	in-ear	711
 https://superreview.squig.link/data/Night%20Oblivion%20Butastur%20(DD)%20R.txt	Night Oblivion Butastur (switches: DD)	Night Oblivion Butastur (off-off)	in-ear	711
@@ -1110,9 +1110,9 @@ https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20(blac
 https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20(black)%20R2.txt		RikuBuds Alter Rider 3 (black)	ignore	
 https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20(black)%20R3.txt		RikuBuds Alter Rider 3 (black)	ignore	
 https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20PEQ%20R1.txt		RikuBuds Alter Rider 3 PEQ	ignore	
-https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20R1.txt		Rikubuds Alter Rider 3	earbud	
-https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20R2.txt		Rikubuds Alter Rider 3	earbud	
-https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20R3.txt		Rikubuds Alter Rider 3	earbud	
+https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20R1.txt		Rikubuds Alter Rider 3	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20R2.txt		Rikubuds Alter Rider 3	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/RikuBuds%20Alter%20Rider%203%20R3.txt		Rikubuds Alter Rider 3	earbud	clone pinna + 711
 https://superreview.squig.link/data/Samsung%20Earphones%20L.txt	Samsung Earphones tuned by AKG	Samsung Earphones Tuned by AKG	in-ear	711
 https://superreview.squig.link/data/Samsung%20Earphones%20(2019)%20L.txt	Samsung Earphones tuned by AKG (2019)	Samsung Earphones Tuned by AKG (2019)	in-ear	711
 https://superreview.squig.link/data/Samsung%20Galaxy%20Buds%20Plus%20L.txt	Samsung Galaxy Buds +	Samsung Galaxy Buds Plus	in-ear	711
@@ -1440,15 +1440,15 @@ https://superreview.squig.link/data/TFZ%20T2%20Galaxy%20L.txt	TFZ T2 Galaxy	TFZ 
 https://superreview.squig.link/earbuds/data/TGX%20Ear%20Serratus%20(2x%20foam)%20R1.txt		TGX Ear Serratus (2x foam)	ignore	
 https://superreview.squig.link/earbuds/data/TGX%20Ear%20Serratus%20(2x%20foam)%20R2.txt		TGX Ear Serratus (2x foam)	ignore	
 https://superreview.squig.link/earbuds/data/TGX%20Ear%20Serratus%20(2x%20foam)%20R3.txt		TGX Ear Serratus (2x foam)	ignore	
-https://superreview.squig.link/earbuds/data/TGX%20Ear%20Serratus%20R1.txt		TGXear Serratus	earbud	
-https://superreview.squig.link/earbuds/data/TGX%20Ear%20Serratus%20R2.txt		TGXear Serratus	earbud	
-https://superreview.squig.link/earbuds/data/TGX%20Ear%20Serratus%20R3.txt		TGXear Serratus	earbud	
-https://superreview.squig.link/earbuds/data/TGX%20Ear%20Sunniva%20R1.txt		TGXear Sunniva	earbud	
-https://superreview.squig.link/earbuds/data/TGX%20Ear%20Sunniva%20R2.txt		TGXear Sunniva	earbud	
-https://superreview.squig.link/earbuds/data/TGX%20Ear%20Sunniva%20R3.txt		TGXear Sunniva	earbud	
-https://superreview.squig.link/earbuds/data/TGX%20Ear%20Totem%20R1.txt		TGXear Totem	earbud	
-https://superreview.squig.link/earbuds/data/TGX%20Ear%20Totem%20R2.txt		TGXear Totem	earbud	
-https://superreview.squig.link/earbuds/data/TGX%20Ear%20Totem%20R3.txt		TGXear Totem	earbud	
+https://superreview.squig.link/earbuds/data/TGX%20Ear%20Serratus%20R1.txt		TGXear Serratus	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/TGX%20Ear%20Serratus%20R2.txt		TGXear Serratus	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/TGX%20Ear%20Serratus%20R3.txt		TGXear Serratus	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/TGX%20Ear%20Sunniva%20R1.txt		TGXear Sunniva	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/TGX%20Ear%20Sunniva%20R2.txt		TGXear Sunniva	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/TGX%20Ear%20Sunniva%20R3.txt		TGXear Sunniva	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/TGX%20Ear%20Totem%20R1.txt		TGXear Totem	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/TGX%20Ear%20Totem%20R2.txt		TGXear Totem	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/TGX%20Ear%20Totem%20R3.txt		TGXear Totem	earbud	clone pinna + 711
 https://superreview.squig.link/data/TRN%20IM1%20L.txt	TRN IM1	TRN IM1	in-ear	711
 https://superreview.squig.link/data/TRN%20V30%20L.txt	TRN V30	TRN V30	in-ear	711
 https://superreview.squig.link/data/TRN%20V90%20L.txt	TRN V90	TRN V90	in-ear	711
@@ -1611,16 +1611,16 @@ https://superreview.squig.link/data/Vsonic%20GR07%20L.txt	Vsonic GR07	VSonic GR0
 https://superreview.squig.link/data/Vsonic%20GR07%20R.txt	Vsonic GR07	VSonic GR07	in-ear	711
 https://superreview.squig.link/data/Vsonic%20GR07%20(Bass)%20L.txt	Vsonic GR07 Bass Edition	VSonic GR07 Bass Edition	in-ear	711
 https://superreview.squig.link/data/Vsonic%20VS7%20L.txt	Vsonic VS7	VSonic VS7	in-ear	711
-https://superreview.squig.link/earbuds/data/VE%20Monk%20Plus%20R1.txt		Venture Electronics Monk Plus	earbud	
-https://superreview.squig.link/earbuds/data/VE%20Monk%20Plus%20R2.txt		Venture Electronics Monk Plus	earbud	
-https://superreview.squig.link/earbuds/data/VE%20Monk%20Plus%20R3.txt		Venture Electronics Monk Plus	earbud	
+https://superreview.squig.link/earbuds/data/VE%20Monk%20Plus%20R1.txt		Venture Electronics Monk Plus	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/VE%20Monk%20Plus%20R2.txt		Venture Electronics Monk Plus	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/VE%20Monk%20Plus%20R3.txt		Venture Electronics Monk Plus	earbud	clone pinna + 711
 https://superreview.squig.link/data/Vision%20Ears%20VE7%20L.txt	Vision Ears VE7	Vision Ears VE7	in-ear	711
 https://superreview.squig.link/data/Vision%20Ears%20VE7%20R.txt	Vision Ears VE7	Vision Ears VE7	in-ear	711
 https://superreview.squig.link/data/Vision%20Ears%20VE8%20L.txt	Vision Ears VE8	Vision Ears VE8	in-ear	711
 https://superreview.squig.link/data/Whizzer%20Kylin%20L.txt	Whizzer Kylin	Whizzer Kylin	ignore	
-https://superreview.squig.link/earbuds/data/Willsound%20Mk2%20R1.txt		Willsound MK2	earbud	
-https://superreview.squig.link/earbuds/data/Willsound%20Mk2%20R2.txt		Willsound MK2	earbud	
-https://superreview.squig.link/earbuds/data/Willsound%20Mk2%20R3.txt		Willsound MK2	earbud	
+https://superreview.squig.link/earbuds/data/Willsound%20Mk2%20R1.txt		Willsound MK2	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Willsound%20Mk2%20R2.txt		Willsound MK2	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Willsound%20Mk2%20R3.txt		Willsound MK2	earbud	clone pinna + 711
 https://superreview.squig.link/data/Xenns%20Mangird%20Tea%20L.txt	Xenns Mangird Tea	Xenns Mangird Tea	in-ear	711
 https://superreview.squig.link/data/Xenns%20Mangird%20Tea%202%20L.txt	Xenns Mangird Tea 2 (sample 1)	Xenns Mangird Tea2	in-ear	711
 https://superreview.squig.link/data/Xenns%20Mangird%20Tea%202%20R.txt	Xenns Mangird Tea 2 (sample 1)	Xenns Mangird Tea2	in-ear	711
@@ -1639,12 +1639,12 @@ https://superreview.squig.link/data/Yanyin%20Canon%20II%20(UU)%20L.txt	Yanyin Ca
 https://superreview.squig.link/data/Yanyin%20Canon%20II%20(UU)%20R.txt	Yanyin Canon II (switches: up - up)	Yanyin Canon II (on-on)	in-ear	711
 https://superreview.squig.link/data/Yanyin%20Mahina%20L.txt	Yanyin Mahina	Yanyin Mahina	in-ear	711
 https://superreview.squig.link/data/Yanyin%20Mahina%20R.txt	Yanyin Mahina	Yanyin Mahina	in-ear	711
-https://superreview.squig.link/earbuds/data/Yincrow%20RW-9%20R1.txt		Yincrow RW-9	earbud	
-https://superreview.squig.link/earbuds/data/Yincrow%20RW-9%20R2.txt		Yincrow RW-9	earbud	
-https://superreview.squig.link/earbuds/data/Yincrow%20RW-9%20R3.txt		Yincrow RW-9	earbud	
-https://superreview.squig.link/earbuds/data/Yincrow%20X6%20R1.txt		Yincrow X6	earbud	
-https://superreview.squig.link/earbuds/data/Yincrow%20X6%20R2.txt		Yincrow X6	earbud	
-https://superreview.squig.link/earbuds/data/Yincrow%20X6%20R3.txt		Yincrow X6	earbud	
+https://superreview.squig.link/earbuds/data/Yincrow%20RW-9%20R1.txt		Yincrow RW-9	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Yincrow%20RW-9%20R2.txt		Yincrow RW-9	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Yincrow%20RW-9%20R3.txt		Yincrow RW-9	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Yincrow%20X6%20R1.txt		Yincrow X6	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Yincrow%20X6%20R2.txt		Yincrow X6	earbud	clone pinna + 711
+https://superreview.squig.link/earbuds/data/Yincrow%20X6%20R3.txt		Yincrow X6	earbud	clone pinna + 711
 https://superreview.squig.link/data/Yinfu%20MD51%20L.txt	Yinfu MD51	Yinfu MD51	in-ear	711
 https://superreview.squig.link/data/Yinyoo%20V2%20L.txt	Yinyoo V2	Yinyoo V2	in-ear	711
 https://superreview.squig.link/headphones/data/ZMF%20Atrium%20(lamb%20perf)%20L1.txt	ZMF Atrium (pads: lamb skin perforated, mesh: solid)	ZMF Atrium (solid mesh, perforated lambskin earpads)	over-ear	clone pinna + 711
