@@ -2,25 +2,17 @@
     {
         "compatible": [
             {
-                "source": "crinacle",
-                "form": "in-ear",
-                "rig": "711"
-            },
-            {
-                "source": "oratory1990",
-                "form": "in-ear"
-            },
-            {
-                "source": "oratory1990",
-                "form": "earbud"
-            },
-            {
                 "source": "Auriculares Argentina",
                 "form": "in-ear"
             },
             {
                 "source": "Bakkwatan",
                 "form": "in-ear"
+            },
+            {
+                "source": "crinacle",
+                "form": "in-ear",
+                "rig": "711"
             },
             {
                 "source": "DHRME",
@@ -61,6 +53,18 @@
             {
                 "source": "kr0mka",
                 "form": "in-ear"
+            },
+            {
+                "source": "kr0mka",
+                "form": "earbud"
+            },
+            {
+                "source": "oratory1990",
+                "form": "in-ear"
+            },
+            {
+                "source": "oratory1990",
+                "form": "earbud"
             },
             {
                 "source": "Regan Cipher",
@@ -93,25 +97,17 @@
         ],
         "recommended": [
             {
-                "source": "crinacle",
-                "form": "in-ear",
-                "rig": "711"
-            },
-            {
-                "source": "oratory1990",
-                "form": "in-ear"
-            },
-            {
-                "source": "oratory1990",
-                "form": "earbud"
-            },
-            {
                 "source": "Auriculares Argentina",
                 "form": "in-ear"
             },
             {
                 "source": "Bakkwatan",
                 "form": "in-ear"
+            },
+            {
+                "source": "crinacle",
+                "form": "in-ear",
+                "rig": "711"
             },
             {
                 "source": "DHRME",
@@ -152,6 +148,18 @@
             {
                 "source": "kr0mka",
                 "form": "in-ear"
+            },
+            {
+                "source": "kr0mka",
+                "form": "earbud"
+            },
+            {
+                "source": "oratory1990",
+                "form": "in-ear"
+            },
+            {
+                "source": "oratory1990",
+                "form": "earbud"
             },
             {
                 "source": "Regan Cipher",
@@ -8467,25 +8475,17 @@
         "label": "Harman in-ear 2019",
         "compatible": [
             {
-                "source": "crinacle",
-                "form": "in-ear",
-                "rig": "711"
-            },
-            {
-                "source": "oratory1990",
-                "form": "in-ear"
-            },
-            {
-                "source": "oratory1990",
-                "form": "earbud"
-            },
-            {
                 "source": "Auriculares Argentina",
                 "form": "in-ear"
             },
             {
                 "source": "Bakkwatan",
                 "form": "in-ear"
+            },
+            {
+                "source": "crinacle",
+                "form": "in-ear",
+                "rig": "711"
             },
             {
                 "source": "DHRME",
@@ -8526,6 +8526,14 @@
             {
                 "source": "kr0mka",
                 "form": "in-ear"
+            },
+            {
+                "source": "oratory1990",
+                "form": "in-ear"
+            },
+            {
+                "source": "oratory1990",
+                "form": "earbud"
             },
             {
                 "source": "Regan Cipher",
@@ -9963,24 +9971,28 @@
         "label": "Harman over-ear 2018",
         "compatible": [
             {
+                "source": "Auriculares Argentina",
+                "form": "over-ear"
+            },
+            {
                 "source": "crinacle",
                 "form": "over-ear",
                 "rig": "GRAS 43AG-7"
-            },
-            {
-                "source": "oratory1990",
-                "form": "over-ear"
-            },
-            {
-                "source": "Auriculares Argentina",
-                "form": "over-ear"
             },
             {
                 "source": "Filk",
                 "form": "over-ear"
             },
             {
+                "source": "kr0mka",
+                "form": "over-ear"
+            },
+            {
                 "source": "Kuulokenurkka",
+                "form": "over-ear"
+            },
+            {
+                "source": "oratory1990",
                 "form": "over-ear"
             },
             {
@@ -9998,24 +10010,28 @@
         ],
         "recommended": [
             {
+                "source": "Auriculares Argentina",
+                "form": "over-ear"
+            },
+            {
                 "source": "crinacle",
                 "form": "over-ear",
                 "rig": "GRAS 43AG-7"
-            },
-            {
-                "source": "oratory1990",
-                "form": "over-ear"
-            },
-            {
-                "source": "Auriculares Argentina",
-                "form": "over-ear"
             },
             {
                 "source": "Filk",
                 "form": "over-ear"
             },
             {
+                "source": "kr0mka",
+                "form": "over-ear"
+            },
+            {
                 "source": "Kuulokenurkka",
+                "form": "over-ear"
+            },
+            {
+                "source": "oratory1990",
                 "form": "over-ear"
             },
             {
