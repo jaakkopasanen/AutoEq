@@ -200,11 +200,11 @@ def write_targets():
             'label': 'JM-1 with Harman filters',
             'compatible': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
-                {'source': 'HypetheSonics', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
+                {'source': 'HypetheSonics', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 5128'},
             ],
             'recommended': [
                 {'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
-                {'source': 'HypetheSonics', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
+                {'source': 'HypetheSonics', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 5128'},
             ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6.5}
         },
