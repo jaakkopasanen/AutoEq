@@ -197,6 +197,20 @@ PEQ_CONFIGS = {
             'max_fc': 10000.0,
         }] * 8
     },
+    'MOONDROP_FREE_DSP': {
+        'optimizer': {
+            'min_std': 0.008
+        },
+        'filters': [{
+            'type': 'PEAKING',
+            'min_q': 0.5,
+            'max_q': 6.0,
+            'min_fc': 40.0,
+            'max_fc': 10000.0,
+            'min_gain': -12.0,
+            'max_gain': 3.0,
+        }] * 9
+    },
     'NEUTRON_MUSIC_PLAYER': {
         'optimizer': {
             'min_std': 0.008

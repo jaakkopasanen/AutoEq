@@ -46,7 +46,7 @@ const TopBar = (props) => {
 
   return (
     <Grid item container direction='row' justifyContent='space-between' alignItems='center'>
-      <Grid item sx={{ width: {xs: '60px', sm: '100px'}}} >
+      <Grid item sx={{ width: {xs: '48px', sm: '88px'}}} >
         <img
           src='autoeq_logo.svg'
           alt='AutoEq logo'
@@ -80,10 +80,12 @@ const TopBar = (props) => {
           )}
         />
       </Grid>
-      <Grid item>
-        <IconButton onClick={(e) => setMenuAnchor(!!menuAnchor ? null : e.currentTarget)}>
-          <MoreVertIcon sx={{color: theme => theme.palette.grey.A200}} />
-        </IconButton>
+      <Grid item sx={{width: {xs: '48px', sm: '88px'}}} container justifyContent='end'>
+        <Grid item>
+          <IconButton onClick={(e) => setMenuAnchor(!!menuAnchor ? null : e.currentTarget)}>
+            <MoreVertIcon sx={{color: theme => theme.palette.grey.A200}} />
+          </IconButton>
+        </Grid>
       </Grid>
       <Menu
         open={isMenuOpen} anchorEl={menuAnchor} onClose={() => setMenuAnchor(null)}

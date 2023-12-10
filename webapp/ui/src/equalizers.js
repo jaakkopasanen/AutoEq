@@ -132,11 +132,20 @@ export default [
   {
     label: 'MiniDSP IL-DSP', type: 'parametric', config: 'MINIDSP_IL_DSP',
     uiConfig: {
-      bw: false, showDownload: false, showPreampControl: true, showFsControl: true,
+      bw: false, showDownload: false, showPreampControl: true, showFsControl: false,
       filterNames: { LOW_SHELF: 'LOW_SHELF', PEAKING: 'PEAK', HIGH_SHELF: 'HIGH_SHELF', PREAMP: 'Preamp' },
       columnNames: { fc: 'Frequency', gain: 'Gain', q: 'Q' },
     },
-    instructions: 'Configure frequency, gain and quality (Q) for each band manually with Parametric EQ. IL-DSP doesn\'t have preamp control and therefore to prevent clipping, you can adjust preamp slider here until the requested preamp at the bottom of the produced settings gives a slightly positive value'
+    instructions: 'Configure frequency, gain and quality (Q) for each band manually with Parametric EQ. IL-DSP doesn\'t have preamp control and therefore to prevent clipping, can adjust preamp slider here until the requested preamp at the bottom of the produced settings gives a slightly positive value.'
+  },
+  {
+    label: 'Moondrop Free DSP', type: 'parametric', config: 'MOONDROP_FREE_DSP',
+    uiConfig: {
+      bw: false, showDownload: false, showPreampControl: true, showFsControl: false,
+      filterNames: { LOW_SHELF: 'Low-shelf', PEAKING: 'Peaking', HIGH_SHELF: 'High-shelf', PREAMP: 'Preamp' },
+      columnNames: { fc: 'Freq', gain: 'Gain', q: 'Q' },
+    },
+    instructions: 'Configure frequency, gain and quality (Q) for each band manually with Parametric EQ, as accurately as the app allows. Free DSP doesn\'t have preamp control and therefore to prevent clipping, can adjust preamp slider here until the requested preamp at the bottom of the produced settings gives a slightly positive value.'
   },
   {
     label: 'Neutron Music Player', type: 'parametric', config: 'NEUTRON_MUSIC_PLAYER',
@@ -251,7 +260,7 @@ export default [
     uiConfig: {
       bw: false, showDownload: true, showFsControl: true,
     },
-    instructions: 'Download the file and import it to Voicemeeter by right clicking the top bar and selecting "Load EQ Settings"',
+    instructions: 'Download the file and import it to Voicemeeter by opening the EQ window for a channel and right clicking the top bar and selecting "Load EQ Settings"',
     fileFormatter: (preamp, filters) => {
       const filterTypes = {
         'LOW_SHELF': '5',

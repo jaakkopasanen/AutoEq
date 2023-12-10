@@ -122,7 +122,7 @@ const ListboxComponent = forwardRef(function ListboxComponent(props, ref) {
 
 const PopperComponent = (props) => {
   return (
-    <Popper { ...props } style={{ minWidth: 350, width: props.anchorEl.clientWidth }} placement='bottom' />
+    <Popper { ...props } style={{ width: 500, maxWidth: 'calc(100vw - 20px)' }} placement='bottom' />
   );
 };
 
