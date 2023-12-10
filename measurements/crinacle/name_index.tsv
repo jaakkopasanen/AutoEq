@@ -245,13 +245,13 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A18S
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A18S R.txt	64 Audio U18S S1	64 Audio U18S	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A18S S2 L.txt	64 Audio U18S S2	64 Audio U18S	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/A18S S2 R.txt	64 Audio U18S S2	64 Audio U18S	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar L.txt	64 Audio U18Tzar S1	64 Audio U18Tzar	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar R.txt	64 Audio U18Tzar S1	64 Audio U18Tzar	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar S2 L.txt	64 Audio U18Tzar S2	64 Audio U18Tzar	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar S2 R.txt	64 Audio U18Tzar S2	64 Audio U18Tzar	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar DEC14 R.txt	U18Tzar DEC14	64 Audio U18Tzar (December 2014)	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar DEC17 R.txt	U18Tzar DEC17	64 Audio U18Tzar (December 2017)	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar M20 R.txt	U18Tzar M20	64 Audio U18Tzar (m20 Apex module)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar L.txt	64 Audio U18Tzar S1	64 Audio U18t	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar R.txt	64 Audio U18Tzar S1	64 Audio U18t	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar S2 L.txt	64 Audio U18Tzar S2	64 Audio U18t	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar S2 R.txt	64 Audio U18Tzar S2	64 Audio U18t	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar DEC14 R.txt	U18Tzar DEC14	64 Audio U18t (2014)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar DEC17 R.txt	U18Tzar DEC17	64 Audio U18t (2017)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/U18Tzar M20 R.txt	U18Tzar M20	64 Audio U18t (m20 apex module)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Eternal L.txt	7Hz-Salnotes Eternal	7Hz Eternal	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Eternal R.txt	7Hz-Salnotes Eternal	7Hz Eternal	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Eternal R.txt	7Hz-Salnotes Eternal	7Hz Eternal	in-ear	Bruel & Kjaer 4620
@@ -3623,8 +3623,8 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Mode
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X Bass R.txt	Lime Ears Model X (Sample 1) (Switch on)	Lime Ears Model X (switch on)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X Bass S2 L.txt	Lime Ears Model X (Sample 2) (Switch on)	Lime Ears Model X (switch on)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Model X Bass S2 R.txt	Lime Ears Model X (Sample 2) (Switch on)	Lime Ears Model X (switch on)	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Lokahi R.txt	Audio Lokahi	Linsoul Audio Lokahi	in-ear	711
-file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Lokahi L.txt	Audio Lokahi	Linsoul Audio Lokahi	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Lokahi R.txt	Audio Lokahi	Linsoul Lokahi	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Lokahi L.txt	Audio Lokahi	Linsoul Lokahi	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/GYFU L3.txt	Little Dot GYFU	Little Dot GYFU	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/GYFU L1.txt	Little Dot GYFU	Little Dot GYFU	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/GYFU L2.txt	Little Dot GYFU	Little Dot GYFU	over-ear	GRAS 43AG-7

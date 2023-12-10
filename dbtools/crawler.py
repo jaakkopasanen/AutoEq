@@ -135,7 +135,10 @@ class Crawler(ABC):
         self.name_proposals = pd.DataFrame(proposal_data)
         self.name_proposals.drop_duplicates(inplace=True)
 
-    def get_name_proposals(self, source_name, n=4, normalize_digits=False, normalize_extras=False, threshold=60):
+    def get_name_proposals(
+            self, source_name, n=4, normalize_digits=False, normalize_extras=False, threshold=60,
+            require_manufacturer_match=True
+    ):
         """Prompts manufacturer, model and form from the user
 
         Args:
@@ -144,6 +147,7 @@ class Crawler(ABC):
             normalize_digits: Normalize all digits to zeros before calculating fuzzy string matching score
             normalize_extras: Remove extra details in the parentheses
             threshold: Score threshold
+            require_manufacturer_match: Require manufacturer to be found with the given name?
 
         Returns:
             NameItem
@@ -160,16 +164,20 @@ class Crawler(ABC):
             return fn(a, b)
 
         manufacturer, manufacturer_match = self.manufacturers.find(source_name)
-        if not manufacturer:
+        if manufacturer:
+            false_model = self.manufacturers.model(source_name)
+            # Select only the items with the same manufacturer
+            models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
+        elif require_manufacturer_match:
             return NameIndex([])
-        false_model = self.manufacturers.model(source_name)
-        # Select only the items with the same manufacturer
-        models = self.name_proposals[self.name_proposals.manufacturer == manufacturer]
+        else:
+            false_model = source_name
+            models = self.name_proposals.copy()
 
         # Calculate ratios
         # Partial ratio to capture the model name (without mods) approximately
         partial_ratios = np.array([fuzzy(
-            fuzz.partial_ratio, re.sub(r' \(.*\)$', '', model), re.sub(r' \(.*\)$', '', false_model)
+            fuzz.partial_ratio, re.sub(r'(?: \(.*\)$|\s)', '', model), re.sub(r'(?: \(.*\)$|\s)', '', false_model)
         ) for model in models.model.tolist()])
         partial_ratios = np.round(partial_ratios / 2) * 2
         # Ratio to fine sort all good model matches
@@ -181,7 +189,10 @@ class Crawler(ABC):
         models = models[models.partial_ratio >= threshold]
         proposals = []
         for i, row in models.iterrows():
-            proposals.append(NameItem(name=f'{manufacturer} {row.model}', form=row.form))
+            if manufacturer:
+                proposals.append(NameItem(name=f'{manufacturer} {row.model}', form=row.form))
+            else:
+                proposals.append(NameItem(name=f'{row.manufacturer} {row.model}', form=row.form))
         ni = NameIndex(items=proposals[:n])
         return ni
 
@@ -427,11 +438,11 @@ class Crawler(ABC):
             # then rest of the optional properties
             self.active_list_item.name_prompt.guessed_name = self.guess_name(self.active_list_item.name_prompt.item)
             self.active_list_item.name_prompt.name_proposals = self.get_name_proposals(
-                self.active_list_item.name_prompt.guessed_name, n=5, threshold=10)
+                self.active_list_item.name_prompt.guessed_name, n=5, threshold=10, require_manufacturer_match=False)
             self.active_list_item.name_prompt.similar_names = [
                     item.name for item in self.get_name_proposals(
                         self.active_list_item.name_prompt.guessed_name, n=6, normalize_digits=True,
-                        normalize_extras=True, threshold=0).items]
+                        normalize_extras=True, threshold=0, require_manufacturer_match=False).items]
             if self.active_list_item.name_prompt.item.name is not None and self.active_list_item.name_prompt.item.form is not None:
                 # Prompting can resolve AutoEq name and the headphone form, both got resolved here, no need to prompt
                 self.prompt_callback(self.active_list_item.name_prompt.item)

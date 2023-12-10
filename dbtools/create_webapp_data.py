@@ -24,6 +24,7 @@ def write_targets():
                 {'source': 'freeryder05', 'form': 'in-ear'},
                 {'source': 'Harpo', 'form': 'in-ear'},
                 {'source': 'Hi End Portable', 'form': 'in-ear'},
+                {'source': 'HypetheSonics', 'form': 'in-ear', 'rig': 'GRAS RA0045'},
                 {'source': 'Jaytiss', 'form': 'in-ear'},
                 {'source': 'Kazi', 'form': 'in-ear'},
                 {'source': 'Kazi', 'form': 'earbud'},
@@ -49,6 +50,7 @@ def write_targets():
                 {'source': 'freeryder05', 'form': 'in-ear'},
                 {'source': 'Harpo', 'form': 'in-ear'},
                 {'source': 'Hi End Portable', 'form': 'in-ear'},
+                {'source': 'HypetheSonics', 'form': 'in-ear', 'rig': 'GRAS RA0045'},
                 {'source': 'Jaytiss', 'form': 'in-ear'},
                 {'source': 'Kazi', 'form': 'in-ear'},
                 {'source': 'Kazi', 'form': 'earbud'},
@@ -67,28 +69,20 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 8}
         },
         {
+            'file': TARGETS_PATH.joinpath('crinacle EARS + 711 Harman over-ear 2018 without bass.csv'),
+            'label': 'crinacle EARS + 711 Harman over-ear 2018',
+            'compatible': [
+                {'source': 'crinacle', 'form': 'over-ear', 'rig': 'EARS + 711'},
+            ],
+            'recommended': [
+                {'source': 'crinacle', 'form': 'over-ear', 'rig': 'EARS + 711'},
+            ],
+            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
+        },
+        {
             'file': TARGETS_PATH.joinpath('Diffuse field 5128 -1dB per octave.csv'),
             'label': 'Diffuse Field 5128 (-1 dB/oct)',
             'compatible': [{'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'}],
-            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
-        },
-        {
-            'file': TARGETS_PATH.joinpath('JM-1 with Harman treble filter.csv'),
-            'label': 'JM-1 with Harman filters',
-            'compatible': [{'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'}],
-            'recommended': [{'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'}],
-            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6.5}
-        },
-        {
-            'file': TARGETS_PATH.joinpath('711 5128 delta.csv'),
-            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
-        },
-        {
-            'file': TARGETS_PATH.joinpath('Diffuse field GRAS KEMAR.csv'),
-            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
-        },
-        {
-            'file': TARGETS_PATH.joinpath('Diffuse field ISO 11904-1.csv'),
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 0}
         },
         {
@@ -109,6 +103,7 @@ def write_targets():
                 {'source': 'freeryder05', 'form': 'in-ear'},
                 {'source': 'Harpo', 'form': 'in-ear'},
                 {'source': 'Hi End Portable', 'form': 'in-ear'},
+                {'source': 'HypetheSonics', 'form': 'in-ear', 'rig': 'GRAS RA0045'},
                 {'source': 'Jaytiss', 'form': 'in-ear'},
                 {'source': 'Kazi', 'form': 'in-ear'},
                 {'source': 'Kazi', 'form': 'earbud'},
@@ -201,13 +196,27 @@ def write_targets():
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },
         {
-            'file': TARGETS_PATH.joinpath('crinacle EARS + 711 Harman over-ear 2018 without bass.csv'),
-            'label': 'crinacle EARS + 711 Harman over-ear 2018',
+            'file': TARGETS_PATH.joinpath('JM-1 with Harman treble filter.csv'),
+            'label': 'JM-1 with Harman filters',
             'compatible': [
-                {'source': 'crinacle', 'form': 'over-ear', 'rig': 'EARS + 711'},
+                {'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
+                {'source': 'HypetheSonics', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
             ],
             'recommended': [
-                {'source': 'crinacle', 'form': 'over-ear', 'rig': 'EARS + 711'},
+                {'source': 'crinacle', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
+                {'source': 'HypetheSonics', 'form': 'in-ear', 'rig': 'Bruel & Kjaer 4620'},
+            ],
+            'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6.5}
+        },
+        {
+            'file': TARGETS_PATH.joinpath('LMG 5128 0.6 without bass.csv'),
+            'compatible': [
+                {'source': 'HypetheSonics', 'form': 'over-ear'},
+                {'source': 'HypetheSonics', 'form': 'earbud'}
+            ],
+            'recommended': [
+                {'source': 'HypetheSonics', 'form': 'over-ear'},
+                {'source': 'HypetheSonics', 'form': 'earbud'}
             ],
             'bassBoost': {'fc': 105, 'q': 0.7, 'gain': 6}
         },

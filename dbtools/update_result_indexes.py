@@ -21,7 +21,6 @@ from dbtools.constants import RESULTS_PATH, TARGETS_PATH, MEASUREMENTS_PATH, WEB
 
 name_indexes = {}
 for fp in MEASUREMENTS_PATH.glob('*/name_index.tsv'):
-    source_name = fp.parent.name
     name_indexes[fp.parent.name] = NameIndex.read_tsv(fp)
 name_indexes['Headphone.com Legacy'] = HeadphonecomCrawler().name_index
 name_indexes['Innerfidelity'] = InnerfidelityCrawler().name_index
@@ -36,11 +35,13 @@ class ResultPath:
         ('Regan Cipher', 'earbud'),
         ('kr0mka', 'earbud'),
         ('Super Review', 'earbud'),
+        ('HypetheSonics', 'earbud'),
         ('oratory1990', 'earbud'),
 
         ('Headphone.com Legacy', 'in-ear'),  # STD 1.05 (small sample)
         ('Rtings', 'in-ear'),  # STD 2.09
         ('Innerfidelity', 'in-ear'),  # STD 1.96
+        ('HypetheSonics', 'Bruel & Kjaer 5128 in-ear'),
         ('crinacle', 'Bruel & Kjaer 4620 in-ear'),
         ('Filk', 'in-ear'),  # No calibration
         ('DHRME', 'in-ear'),  # No calibration
@@ -59,14 +60,16 @@ class ResultPath:
         ('freeryder05', 'in-ear'),  # STD 0.92
         ('Super Review', 'in-ear'),  # STD 0.90 (large sample)
         ('crinacle', '711 in-ear'),
+        ('HypetheSonics', 'GRAS RA0045 in-ear'),
         ('oratory1990', 'in-ear'),
 
         ('crinacle', 'EARS + 711 over-ear'),
-        ('Regan Cipher', 'over-ear'),  # No calibration
-        ('RikudouGoku', 'over-ear'),  # No calibration
         ('Headphone.com Legacy', 'over-ear'),  # STD 2.77
         ('Innerfidelity', 'over-ear'),  # STD 1.92
         ('Rtings', 'over-ear'),  # STD 1.62
+        ('HypetheSonics', 'over-ear'),  # Bruel & Kjaer 5128
+        ('Regan Cipher', 'over-ear'),  # No calibration
+        ('RikudouGoku', 'over-ear'),  # No calibration
         ('Filk', 'over-ear'),  # STD 2.04 (small sample)
         ('kr0mka', 'over-ear'),  # STD 1.20 (small sample, one outlier increases STD)
         ('Auriculares Argentina', 'over-ear'),  # STD 1.64
@@ -242,7 +245,6 @@ def write_source_indexes(paths):
 
     for source_name, source_paths in grouped_by_source.items():
         s = f'# {source_name} Results\n'
-
         grouped_by_name = group_by(source_paths, 'name')
         for name in sorted(list(grouped_by_name.keys()), key=lambda key: key.lower()):
             for path in sort_by(grouped_by_name[name], 'priority'):
@@ -297,7 +299,8 @@ def write_ranking_table(paths):
                 path.source_name == 'oratory1990' or
                 (path.source_name == 'crinacle' and (
                         path.rig == 'GRAS 43AG-7' or path.rig == '711'
-                ))
+                )) or
+                (path.source_name == 'HypetheSonics' and path.rig == 'GRAS RA0045')
         )]
     grouped_by_name = sort_each_group_by(grouped_by_name, 'priority')
 
@@ -308,31 +311,25 @@ def write_ranking_table(paths):
         if not group_paths:  # No eligible measurements for this headphone
             continue
         path = group_paths[0]
-        if path.form == 'over-ear' and (
-            (path.source_name == 'crinacle' and path.rig == 'GRAS 43AG-7')
-            or path.source_name == 'oratory1990'
-        ):  # Include over-ear measurements from oratory1990 and crinacle (with GRAS rig)
+        if path.form == 'over-ear':
             fr = FrequencyResponse.read_csv(path.absolute_path.joinpath(f'{path.name}.csv'))
             fr.compensate(harman_overear)
             score, std, slope = fr.harman_overear_preference_score()
             over_ears.append([
                 f'[{path.name}]({path.url_relative_to_root})', f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}'
             ])
-        elif path.form == 'in-ear' and (
-            (path.source_name == 'crinacle' and path.rig == '711')
-            or path.source_name == 'oratory1990'
-        ):  # Include in-ear measurements from oratory1990 and crinacle (with 711 clone)
+        elif path.form == 'in-ear':
             fr = FrequencyResponse.read_csv(path.absolute_path.joinpath(f'{path.name}.csv'))
             fr.compensate(harman_inear)
             try:
                 score, std, slope, mean = fr.harman_inear_preference_score()
+                in_ears.append([
+                    f'[{path.name}]({path.url_relative_to_root})',
+                    f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}', f'{mean:.2f}'
+                ])
             except:
                 print(path.absolute_path)
                 print(fr.error)
-            in_ears.append([
-                f'[{path.name}]({path.url_relative_to_root})',
-                f'{score:.0f}', f'{std:.2f}', f'{slope:.2f}', f'{mean:.2f}'
-            ])
     over_ears = sorted(over_ears, key=lambda row: float(row[1]), reverse=True)
     overear_str = tabulate(over_ears, headers=['Name', 'Score', 'STD (dB)', 'Slope'], tablefmt='github')
     in_ears = sorted(in_ears, key=lambda row: float(row[1]), reverse=True)

@@ -1,0 +1,672 @@
+url	source_name	name	form	rig
+https://www.hypethesonics.com/dbc/SPLdata/Aero ANC Off L.txt	1MORE Aero ANC Off	1MORE Aero (ANC Off)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aero ANC Off R.txt	1MORE Aero ANC Off	1MORE Aero (ANC Off)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aero L.txt	1MORE Aero ANC On	1MORE Aero (ANC On)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aero Transparency L.txt	1MORE Aero Transparency Mode	1MORE Aero (transparency mode)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aero Transparency R.txt	1MORE Aero Transparency Mode	1MORE Aero (transparency mode)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EVO L.txt	1MORE EVO 	1MORE EVO	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EVO R.txt	1MORE EVO 	1MORE EVO	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EVO HS001 L.txt	1MORE EVO SoundID HS001	1MORE EVO SoundID HS001	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EVO HS001 R.txt	1MORE EVO SoundID HS001	1MORE EVO SoundID HS001	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Fit SE S50 L.txt	1MORE Fit SE S50	1MORE Fit Open Earbuds S50	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Fit SE S50 R.txt	1MORE Fit SE S50	1MORE Fit Open Earbuds S50	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Fit SE S30 L.txt	1MORE Fit SE S30	1MORE Fit SE S30	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Fit SE S30 R.txt	1MORE Fit SE S30	1MORE Fit SE S30	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Penta Driver L.txt	1MORE Penta Driver	1MORE Penta Driver	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Penta Driver R.txt	1MORE Penta Driver	1MORE Penta Driver	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/PistonBuds Pro L.txt	1MORE PistonBuds Pro	1MORE PistonBuds Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/PistonBuds Pro R.txt	1MORE PistonBuds Pro	1MORE PistonBuds Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Quad Driver L.txt	1MORE Quad Driver	1MORE Quad Driver	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Quad Driver R.txt	1MORE Quad Driver	1MORE Quad Driver	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Quad Driver L.txt	1MORE Quad Driver	1MORE Quad Driver	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Quad Driver R.txt	1MORE Quad Driver	1MORE Quad Driver	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Triple Driver L.txt	1MORE Triple Driver	1MORE Triple Driver	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Triple Driver R.txt	1MORE Triple Driver	1MORE Triple Driver	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Triple Driver L.txt	1MORE Triple Driver	1MORE Triple Driver	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Triple Driver R.txt	1MORE Triple Driver	1MORE Triple Driver	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Nio L.txt	64 Audio Nio M15	64 Audio Nio (m15 Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Nio R.txt	64 Audio Nio M15	64 Audio Nio (m15 Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Nio M20 L.txt	64 Audio Nio M20	64 Audio Nio (m20 Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Nio M20 R.txt	64 Audio Nio M20	64 Audio Nio (m20 Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Nio MX L.txt	64 Audio Nio MX	64 Audio Nio (mX Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Nio MX R.txt	64 Audio Nio MX	64 Audio Nio (mX Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tia Fourte L.txt	64 Audio Tia Fourte	64 Audio Tia Fourte	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tia Fourte R.txt	64 Audio Tia Fourte	64 Audio Tia Fourte	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tia Fourte Noir L.txt	64 Audio Tia Fourte Noir	64 Audio Tia Fourte Noir	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tia Fourte Noir R.txt	64 Audio Tia Fourte Noir	64 Audio Tia Fourte Noir	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U12t L.txt	64 Audio U12t M15	64 Audio U12t (m15 Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U12t R.txt	64 Audio U12t M15	64 Audio U12t (m15 Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U12t m20 L.txt	64 Audio U12t M20	64 Audio U12t (m20 Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U12t m20 R.txt	64 Audio U12t M20	64 Audio U12t (m20 Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U12t mX L.txt	64 Audio U12t MX	64 Audio U12t (mX Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U12t mX R.txt	64 Audio U12t MX	64 Audio U12t (mX Apex module)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U12t Cp100 m15 L.txt	64 Audio U12t M15 Cp100 Eartips	64 Audio U12t M15 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U12t Cp100 m15 R.txt	64 Audio U12t M15 Cp100 Eartips	64 Audio U12t M15 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U18t L.txt	64 Audio U18t	64 Audio U18t	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/U18t R.txt	64 Audio U18t	64 Audio U18t	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Volur L.txt	64 Audio Volur	64 Audio Volur	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Volur R.txt	64 Audio Volur	64 Audio Volur	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Salnotes Zero L.txt	7Hz Salnotes Zero	7Hz Salnotes Zero	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Salnotes Zero R.txt	7Hz Salnotes Zero	7Hz Salnotes Zero	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AXH L.txt	AAW AXH	AAW AXH	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AXH R.txt	AAW AXH	AAW AXH	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/W900 L.txt	AAW W900	AAW W900	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/W900 R.txt	AAW W900	AAW W900	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/N400 L.txt	AKG N400	AKG N400	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/N400 R.txt	AKG N400	AKG N400	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/N400 L.txt	AKG N400	AKG N400	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/N400 R.txt	AKG N400	AKG N400	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/N5005 Bass L.txt	AKG N5005 Bass Fltr	AKG N5005 (bass boost)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/N5005 Bass R.txt	AKG N5005 Bass Fltr	AKG N5005 (bass boost)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/N5005 Hi L.txt	AKG N5005 Hi Fltr	AKG N5005 (high)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/N5005 Hi R.txt	AKG N5005 Hi Fltr	AKG N5005 (high)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/N5005 Mid-Hi L.txt	AKG N5005 Mid-Hi Fltr	AKG N5005 (mid high)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/N5005 Mid-Hi R.txt	AKG N5005 Mid-Hi Fltr	AKG N5005 (mid high)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/N5005 L.txt	AKG N5005 Ref Fltr	AKG N5005 (reference)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/N5005 R.txt	AKG N5005 Ref Fltr	AKG N5005 (reference)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Latitude L.txt	Aukey Latitude Balanced	AUKEY Latitude (balanced)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Latitude R.txt	Aukey Latitude Balanced	AUKEY Latitude (balanced)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Latitude Bass L.txt	Aukey Latitude Bass	AUKEY Latitude (bass)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Latitude Bass R.txt	Aukey Latitude Bass	AUKEY Latitude (bass)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Latitude Treble L.txt	Aukey Latitude Treble	AUKEY Latitude (treble)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Latitude Treble R.txt	Aukey Latitude Treble	AUKEY Latitude (treble)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AS-M4 L.txt	Advanced Sound AS-M4	Advanced M4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AS-M4 R.txt	Advanced Sound AS-M4	Advanced M4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Liberty 3 Pro L.txt	Anker-Soundcore Liberty 3 Pro	Anker Soundcore Liberty 3 Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Liberty 3 Pro R.txt	Anker-Soundcore Liberty 3 Pro	Anker Soundcore Liberty 3 Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/AirPods Pro L.txt	Apple AirPods Pro	Apple AirPods Pro	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/AirPods Pro R.txt	Apple AirPods Pro	Apple AirPods Pro	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro L.txt	Apple AirPods Pro	Apple AirPods Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro R.txt	Apple AirPods Pro	Apple AirPods Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro 2 Comply Foam L.txt	Apple AirPods Pro 2 Comply Foam Eartips	Apple AirPods Pro 2 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro 2 Comply Foam R.txt	Apple AirPods Pro 2 Comply Foam Eartips	Apple AirPods Pro 2 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro 2 SednaEarfit XELASTEC L.txt	Apple AirPods Pro 2 SednaEarfit XELASTEC Eartips	Apple AirPods Pro 2 SednaEarfit XELASTEC Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro 2 SednaEarfit XELASTEC R.txt	Apple AirPods Pro 2 SednaEarfit XELASTEC Eartips	Apple AirPods Pro 2 SednaEarfit XELASTEC Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro 2 Alt Stock L.txt	Apple AirPods Pro 2 Stock Eartips - Alt. FR	Apple AirPods Pro 2 Stock Eartips - Alt. FR	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro 2 Alt Stock R.txt	Apple AirPods Pro 2 Stock Eartips - Alt. FR	Apple AirPods Pro 2 Stock Eartips - Alt. FR	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro 2 L.txt	Apple AirPods Pro 2 Stock Eartips	Apple Airpods Pro 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/AirPods Pro 2 R.txt	Apple AirPods Pro 2 Stock Eartips	Apple Airpods Pro 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aura L.txt	Astell & Kern Aura	Astell & Kern AURA	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aura R.txt	Astell & Kern Aura	Astell & Kern AURA	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Odyssey L.txt	Astell & Kern Odyssey	Astell & Kern Odyssey	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Odyssey R.txt	Astell & Kern Odyssey	Astell & Kern Odyssey	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/T9ie L.txt	Astell & Kern T9ie Beyer Eartips	Astell & Kern T9ie Beyer Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/T9ie R.txt	Astell & Kern T9ie Beyer Eartips	Astell & Kern T9ie Beyer Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/T9ie Cp100 L.txt	Astell & Kern T9ie Cp100 Eartips	Astell & Kern T9ie Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/T9ie Cp100 R.txt	Astell & Kern T9ie Cp100 Eartips	Astell & Kern T9ie Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/LCD4 L.txt	Audeze LCD4	Audeze LCD-4	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/LCD4 R.txt	Audeze LCD4	Audeze LCD-4	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/LCD4-Z L.txt	Audeze LCD4-Z	Audeze LCD-4z	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/LCD4-Z R.txt	Audeze LCD4-Z	Audeze LCD-4z	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/LCD-GX L.txt	Audeze LCD-GX	Audeze LCD-GX	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/LCD-GX R.txt	Audeze LCD-GX	Audeze LCD-GX	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/LCD-X L.txt	Audeze LCD-X	Audeze LCD-X	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/LCD-X R.txt	Audeze LCD-X	Audeze LCD-X	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/LCDi3 L.txt	Audeze LCDi3	Audeze LCD-i3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LCDi3 R.txt	Audeze LCDi3	Audeze LCD-i3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LCDi4 L.txt	Audeze LCDi4	Audeze LCD-i4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LCDi4 R.txt	Audeze LCDi4	Audeze LCD-i4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/CT200iS L.txt	ATH CT200iS	Audio-Technica ATH-CT200iS	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/CT200iS R.txt	ATH CT200iS	Audio-Technica ATH-CT200iS	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Elixir Foam L.txt	Aure Audio Elixir Foam Eartips	Aure Audio Elixir (foam eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elixir Foam R.txt	Aure Audio Elixir Foam Eartips	Aure Audio Elixir (foam eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elixir L.txt	Aure Audio Elixir Cp100 Eartips	Aure Audio Elixir Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elixir R.txt	Aure Audio Elixir Cp100 Eartips	Aure Audio Elixir Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Flame Foam L.txt	Aure Audio Flame Foam Eartips	Aure Audio Flame (foam eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Flame Foam R.txt	Aure Audio Flame Foam Eartips	Aure Audio Flame (foam eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Flame L.txt	Aure Audio Flame Cp100 Eartips	Aure Audio Flame Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Flame R.txt	Aure Audio Flame Cp100 Eartips	Aure Audio Flame Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Bmaster L.txt	BASN Bmaster	BASN Bmaster	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Bmaster R.txt	BASN Bmaster	BASN Bmaster	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Mini L.txt	Blon Mini	BLON B-Mini	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Mini R.txt	Blon Mini	BLON B-Mini	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/BL-03 L.txt	Blon BL-03	BLON BL-03	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/BL-03 R.txt	Blon BL-03	BLON BL-03	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/BL-05 L.txt	Blon BL-05	BLON BL-05	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/BL-05 R.txt	Blon BL-05	BLON BL-05	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/BL-05 L.txt	Blon BL-05	BLON BL-05	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/BL-05 R.txt	Blon BL-05	BLON BL-05	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/T5p L.txt	Beyerdynamic T5p	Beyerdynamic T5p	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/T5p R.txt	Beyerdynamic T5p	Beyerdynamic T5p	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Xelento L.txt	Beyerdynamic Xelento	Beyerdynamic Xelento	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Xelento R.txt	Beyerdynamic Xelento	Beyerdynamic Xelento	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Gen 2 L.txt	Beyerdynamic Xelento Gen 2 Beyer Eartips	Beyerdynamic Xelento (2nd Gen)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Gen 2 R.txt	Beyerdynamic Xelento Gen 2 Beyer Eartips	Beyerdynamic Xelento (2nd Gen)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento L.txt	Beyerdynamic Xelento Beyer Eartips	Beyerdynamic Xelento Beyer Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento R.txt	Beyerdynamic Xelento Beyer Eartips	Beyerdynamic Xelento Beyer Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Cp100 L.txt	Beyerdynamic Xelento Cp100 Eartips	Beyerdynamic Xelento Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Cp100 R.txt	Beyerdynamic Xelento Cp100 Eartips	Beyerdynamic Xelento Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Gen 2 Cp100 L.txt	Beyerdynamic Xelento Gen 2 Cp100 Eartips	Beyerdynamic Xelento Gen 2 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Gen 2 Cp100 R.txt	Beyerdynamic Xelento Gen 2 Cp100 Eartips	Beyerdynamic Xelento Gen 2 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Gen 2 Vent Blocked L.txt	Beyerdynamic Xelento Gen 2 Vent Block/Beyer Eartips	Beyerdynamic Xelento Gen 2 Vent Block/Beyer Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Gen 2 Vent Blocked R.txt	Beyerdynamic Xelento Gen 2 Vent Block/Beyer Eartips	Beyerdynamic Xelento Gen 2 Vent Block/Beyer Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Gen 2 Vent Blocked Cp100 L.txt	Beyerdynamic Xelento Gen 2 Vent Block/Cp100 Eartips	Beyerdynamic Xelento Gen 2 Vent Block/Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento Gen 2 Vent Blocked Cp100 R.txt	Beyerdynamic Xelento Gen 2 Vent Block/Cp100 Eartips	Beyerdynamic Xelento Gen 2 Vent Block/Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento BP L.txt	Beyerdynamic Xelento Vent Block/Cp100 Eartips	Beyerdynamic Xelento Vent Block/Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento BP R.txt	Beyerdynamic Xelento Vent Block/Cp100 Eartips	Beyerdynamic Xelento Vent Block/Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento PM L.txt	Beyerdynamic Xelento Vent Mod/Cp100 Eartips	Beyerdynamic Xelento Vent Mod/Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xelento PM R.txt	Beyerdynamic Xelento Vent Mod/Cp100 Eartips	Beyerdynamic Xelento Vent Mod/Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/QuietComfort L.txt	Bose QuietComfort	Bose QuietComfort	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/QuietComfort R.txt	Bose QuietComfort	Bose QuietComfort	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/QuietComfort L.txt	Bose QuietComfort	Bose QuietComfort	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QuietComfort R.txt	Bose QuietComfort	Bose QuietComfort	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/QC35 II ANC Off L.txt	Bose QC35 II ANC Off	Bose QuietComfort 35 II (passive)	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/QC35 II ANC Off R.txt	Bose QC35 II ANC Off	Bose QuietComfort 35 II (passive)	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/QC35 II L.txt	Bose QC35 II ANC On	Bose QuietComfort 35 II (passive)	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/QC35 II R.txt	Bose QC35 II ANC On	Bose QuietComfort 35 II (passive)	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii 100dB@500Hz L.txt	Bose QuietComfort ii 100dB @ 500 Hz	Bose QuietComfort II (100dB)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii 100dB@500Hz R.txt	Bose QuietComfort ii 100dB @ 500 Hz	Bose QuietComfort II (100dB)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii L.txt	Bose QuietComfort ii 80dB @ 500 Hz	Bose QuietComfort II (80dB)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii R.txt	Bose QuietComfort ii 80dB @ 500 Hz	Bose QuietComfort II (80dB)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii 90dB@500Hz L.txt	Bose QuietComfort ii 90dB @ 500 Hz	Bose QuietComfort II (90dB)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii 90dB@500Hz R.txt	Bose QuietComfort ii 90dB @ 500 Hz	Bose QuietComfort II (90dB)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Soundsport Free L.txt	Bose Soundsport Free	Bose SoundSport Free	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Soundsport Free R.txt	Bose Soundsport Free	Bose SoundSport Free	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Apollo L.txt	CAT Apollo	CAT Apollo	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Apollo R.txt	CAT Apollo	CAT Apollo	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Apollo L.txt	CAT Apollo	CAT Apollo	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Apollo R.txt	CAT Apollo	CAT Apollo	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Andromeda L.txt	Campfire Audio Andromeda	Campfire Audio Andromeda	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Andromeda R.txt	Campfire Audio Andromeda	Campfire Audio Andromeda	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Andromeda Foam L.txt	Campfire Audio Andromeda Comply Foam Eartips	Campfire Audio Andromeda Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Andromeda Foam R.txt	Campfire Audio Andromeda Comply Foam Eartips	Campfire Audio Andromeda Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Andromeda L.txt	Campfire Audio Andromeda Cp155 Eartips	Campfire Audio Andromeda Cp155 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Andromeda R.txt	Campfire Audio Andromeda Cp155 Eartips	Campfire Audio Andromeda Cp155 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/A8 L.txt	Cardas Audio A8	Cardas A8	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/A8 R.txt	Cardas Audio A8	Cardas A8	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/A8 L.txt	Cardas Audio A8	Cardas A8	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/A8 R.txt	Cardas Audio A8	Cardas A8	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Campfred L.txt	Cypherus Campfred	Cypherus Audio Campfred	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Campfred R.txt	Cypherus Campfred	Cypherus Audio Campfred	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/DK-4001 L.txt	DUNU DK-4001	DUNU DK4001	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/DK-4001 R.txt	DUNU DK-4001	DUNU DK4001	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LUNA Cp240 L.txt	DUNU LUNA Cp240 Eartips	DUNU LUNA Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LUNA Cp240 R.txt	DUNU LUNA Cp240 Eartips	DUNU LUNA Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LUNA L.txt	DUNU LUNA Silicone Eartips	DUNU Luna	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LUNA R.txt	DUNU LUNA Silicone Eartips	DUNU Luna	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LUNA Foam L.txt	DUNU LUNA Foam Eartips	DUNU Luna (foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LUNA Foam R.txt	DUNU LUNA Foam Eartips	DUNU Luna (foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Aeon 2 Closed L.txt	Dan Clark Audio Aeon 2 Closed	Dan Clark Audio Aeon 2 Closed	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Aeon 2 Closed R.txt	Dan Clark Audio Aeon 2 Closed	Dan Clark Audio Aeon 2 Closed	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Aeon 2 L.txt	Dan Clark Audio Aeon 2	Dan Clark Audio Aeon 2 Open	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Aeon 2 R.txt	Dan Clark Audio Aeon 2	Dan Clark Audio Aeon 2 Open	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Aeon L.txt	Mr Speakers Aeon	Dan Clark Audio Aeon Flow Closed	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Aeon R.txt	Mr Speakers Aeon	Dan Clark Audio Aeon Flow Closed	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Ether 2 L.txt	Dan Clark Audio Ether 2	Dan Clark Audio Ether 2	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Ether 2 R.txt	Dan Clark Audio Ether 2	Dan Clark Audio Ether 2	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Bravado Mkii L.txt	Empire Ears Bravado Mkii	Empire Ears Bravado Mk2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Bravado Mkii R.txt	Empire Ears Bravado Mkii	Empire Ears Bravado Mk2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ESR Mkii L.txt	Empire Ears ESR Mkii	Empire Ears ESR Mk2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ESR Mkii R.txt	Empire Ears ESR Mkii	Empire Ears ESR Mk2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Hero L.txt	Empire Ears Hero	Empire Ears Hero	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Hero R.txt	Empire Ears Hero	Empire Ears Hero	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Hero L.txt	Empire Ears Hero	Empire Ears Hero	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Hero R.txt	Empire Ears Hero	Empire Ears Hero	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Legend X L.txt	Empire Ears Legend X	Empire Ears Legend X	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Legend X R.txt	Empire Ears Legend X	Empire Ears Legend X	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Legend X L.txt	Empire Ears Legend X	Empire Ears Legend X	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Legend X R.txt	Empire Ears Legend X	Empire Ears Legend X	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Legend X SE L.txt	Empire Ears Legend X SE	Empire Ears Legend X SE	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Legend X SE R.txt	Empire Ears Legend X SE	Empire Ears Legend X SE	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Moebass L.txt	Empire Ears Moebass	Empire Ears Moebass	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Moebass R.txt	Empire Ears Moebass	Empire Ears Moebass	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Odin L.txt	Empire Ears Odin	Empire Ears Odin	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Odin R.txt	Empire Ears Odin	Empire Ears Odin	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Odin L.txt	Empire Ears Odin	Empire Ears Odin	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Odin R.txt	Empire Ears Odin	Empire Ears Odin	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Raven L.txt	Empire Ears Raven	Empire Ears Raven	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Raven R.txt	Empire Ears Raven	Empire Ears Raven	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Valkyrie L.txt	Empire Ears Valkyrie	Empire Ears Valkyrie	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Valkyrie R.txt	Empire Ears Valkyrie	Empire Ears Valkyrie	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Wraith L.txt	Empire Ears Wraith	Empire Ears Wraith	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Wraith R.txt	Empire Ears Wraith	Empire Ears Wraith	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/ER2SE L.txt	Etymotic ER2SE	Etymotic ER2SE	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/ER2SE R.txt	Etymotic ER2SE	Etymotic ER2SE	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/ER2SE L.txt	Etymotic ER2SE	Etymotic ER2SE	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER2SE R.txt	Etymotic ER2SE	Etymotic ER2SE	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/ER2XR L.txt	Etymotic ER2XR	Etymotic ER2XR	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/ER2XR R.txt	Etymotic ER2XR	Etymotic ER2XR	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/ER2XR Comply 100 Foam L.txt	Etymotic ER2XR Comply 100 Foam Eartips	Etymotic ER2XR Comply 100 Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER2XR Comply 100 Foam R.txt	Etymotic ER2XR Comply 100 Foam Eartips	Etymotic ER2XR Comply 100 Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER2XR Comply P Foam L.txt	Etymotic ER2XR Comply P Foam Eartips	Etymotic ER2XR Comply P Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER2XR Comply P Foam R.txt	Etymotic ER2XR Comply P Foam Eartips	Etymotic ER2XR Comply P Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER2XR L.txt	Etymotic ER2XR M Tri-Flange Eartips	Etymotic ER2XR M Tri-Flange Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER2XR R.txt	Etymotic ER2XR M Tri-Flange Eartips	Etymotic ER2XR M Tri-Flange Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER2XR Medium Shure Olive L.txt	Etymotic ER2XR Medium Shure Olive Eartips	Etymotic ER2XR Medium Shure Olive Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER2XR Medium Shure Olive R.txt	Etymotic ER2XR Medium Shure Olive Eartips	Etymotic ER2XR Medium Shure Olive Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER4SR L.txt	Etymotic ER4SR	Etymotic ER4SR	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER4SR R.txt	Etymotic ER4SR	Etymotic ER4SR	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/ER4XR L.txt	Etymotic ER4XR	Etymotic ER4XR	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/ER4XR R.txt	Etymotic ER4XR	Etymotic ER4XR	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/ER4XR Comply 100 Foam L.txt	Etymotic ER4XR Comply 100 Foam Eartips	Etymotic ER4XR Comply 100 Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER4XR Comply 100 Foam R.txt	Etymotic ER4XR Comply 100 Foam Eartips	Etymotic ER4XR Comply 100 Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER4XR Comply P Foam L.txt	Etymotic ER4XR Comply P Foam Eartips	Etymotic ER4XR Comply P Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER4XR Comply P Foam R.txt	Etymotic ER4XR Comply P Foam Eartips	Etymotic ER4XR Comply P Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER4XR L.txt	Etymotic ER4XR L Tri-Flange Eartips	Etymotic ER4XR L Tri-Flange Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ER4XR R.txt	Etymotic ER4XR L Tri-Flange Eartips	Etymotic ER4XR L Tri-Flange Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Snow Lotus L.txt	FAAEAL Snow Lotus	FAAEAL Snow Lotus	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Snow Lotus R.txt	FAAEAL Snow Lotus	FAAEAL Snow Lotus	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/FLC8d L.txt	FLC FLC8d Gold Filter	FLC Technology FLC8D (gold filter)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FLC8d R.txt	FLC FLC8d Gold Filter	FLC Technology FLC8D (gold filter)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FLC8d Gunmetal L.txt	FLC FLC8d Gunmetal Filter	FLC Technology FLC8D (gunmetal filter)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FLC8d Gunmetal R.txt	FLC FLC8d Gunmetal Filter	FLC Technology FLC8D (gunmetal filter)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/S8Pro L.txt	Fearless Audio S8Pro	Fearless Audio S8Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/S8Pro R.txt	Fearless Audio S8Pro	Fearless Audio S8Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/EMX-500 L.txt	Fengru EMX-500	Fengru EMX500	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/EMX-500 R.txt	Fengru EMX-500	Fengru EMX500	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/EMXs-500 L.txt	Fengru EMXs-500	Fengru EMXs-500	ignore	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/EMXs-500 R.txt	Fengru EMXs-500	Fengru EMXs-500	ignore	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Krypton 5 VB L.txt	FiR Audio Krypton 5 Vent Blocked	FiR Audio Krypton 5 Vent Blocked	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Krypton 5 VB R.txt	FiR Audio Krypton 5 Vent Blocked	FiR Audio Krypton 5 Vent Blocked	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Comply L.txt	FiR Audio M5 Comply Foam Eartips	FiR Audio M5 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Comply R.txt	FiR Audio M5 Comply Foam Eartips	FiR Audio M5 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 L.txt	FiR Audio M5 Cp100 Eartips	FiR Audio M5 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 R.txt	FiR Audio M5 Cp100 Eartips	FiR Audio M5 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Custom Black L.txt	FiR Audio M5 Custom Black Filter	FiR Audio M5 Custom Black Filter	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Custom Black R.txt	FiR Audio M5 Custom Black Filter	FiR Audio M5 Custom Black Filter	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Custom L.txt	FiR Audio M5 Custom Gold Filter	FiR Audio M5 Custom Gold Filter	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Custom R.txt	FiR Audio M5 Custom Gold Filter	FiR Audio M5 Custom Gold Filter	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Tour Comply L.txt	FiR Audio M5 Tour Comply Foam Eartips	FiR Audio M5 Tour Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Tour Comply R.txt	FiR Audio M5 Tour Comply Foam Eartips	FiR Audio M5 Tour Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Tour L.txt	FiR Audio M5 Tour Cp100 Eartips	FiR Audio M5 Tour Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M5 Tour R.txt	FiR Audio M5 Tour Cp100 Eartips	FiR Audio M5 Tour Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Neon 4 VB L.txt	FiR Audio Neon 4 Vent Blocked	FiR Audio Neon 4 Vent Blocked	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Neon 4 VB R.txt	FiR Audio Neon 4 Vent Blocked	FiR Audio Neon 4 Vent Blocked	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/VxV L.txt	FiR Audio VxV Cp100 Eartips	FiR Audio VxV Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/VxV R.txt	FiR Audio VxV Cp100 Eartips	FiR Audio VxV Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xenon 6 VB L.txt	FiR Audio Xenon 6 Vent Blocked	FiR Audio Xenon 6 Vent Blocked	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xenon 6 VB R.txt	FiR Audio Xenon 6 Vent Blocked	FiR Audio Xenon 6 Vent Blocked	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FD5 Narrow L.txt	FiiO FD5 Narrow Bore + Cp800 Eartips	FiiO FD5 Narrow Bore + Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FD5 Narrow R.txt	FiiO FD5 Narrow Bore + Cp800 Eartips	FiiO FD5 Narrow Bore + Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FD5 L.txt	FiiO FD5 Wide Bore + Cp100 Eartips	FiiO FD5 Wide Bore + Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FD5 R.txt	FiiO FD5 Wide Bore + Cp100 Eartips	FiiO FD5 Wide Bore + Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FH3 L.txt	FiiO FH3	FiiO FH3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FH3 R.txt	FiiO FH3	FiiO FH3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FH7 Bass L.txt	FiiO FH7 Bass Filter	FiiO FH7 (bass nozzle)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FH7 Bass R.txt	FiiO FH7 Bass Filter	FiiO FH7 (bass nozzle)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FH7 L.txt	FiiO FH7 Reference Filter	FiiO FH7 (reference nozzle)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FH7 R.txt	FiiO FH7 Reference Filter	FiiO FH7 (reference nozzle)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FH7 Treble L.txt	FiiO FH7 Treble Filter	FiiO FH7 (treble nozzle)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FH7 Treble R.txt	FiiO FH7 Treble Filter	FiiO FH7 (treble nozzle)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/A8000 L.txt	Final Audio A8000	Final Audio A8000	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/A8000 R.txt	Final Audio A8000	Final Audio A8000	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/A8000 Comply Foam L.txt	Final Audio A8000 Comply Foam Eartips	Final Audio A8000 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/A8000 Comply Foam R.txt	Final Audio A8000 Comply Foam Eartips	Final Audio A8000 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/A8000 L.txt	Final Audio A8000 Cp100 Eartips	Final Audio A8000 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/A8000 R.txt	Final Audio A8000 Cp100 Eartips	Final Audio A8000 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/E2000 L.txt	Final Audio E2000	Final Audio E2000	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/E2000 R.txt	Final Audio E2000	Final Audio E2000	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/E2000 L.txt	Final Audio E2000	Final Audio E2000	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/E2000 R.txt	Final Audio E2000	Final Audio E2000	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/E4000 L.txt	Final Audio E4000	Final Audio E4000	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/E4000 R.txt	Final Audio E4000	Final Audio E4000	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/E5000 L.txt	Final Audio E5000	Final Audio E5000	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/E5000 R.txt	Final Audio E5000	Final Audio E5000	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/F7200 L.txt	Final Audio F7200	Final Audio F7200	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/F7200 R.txt	Final Audio F7200	Final Audio F7200	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/SONOROUS III L.txt	Final Audio SONOROUS III	Final Audio Sonorous III	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/SONOROUS III R.txt	Final Audio SONOROUS III	Final Audio Sonorous III	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/SONOROUS X L.txt	Final Audio SONOROUS X	Final Audio Sonorous X	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/SONOROUS X R.txt	Final Audio SONOROUS X	Final Audio Sonorous X	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Krypton 5 L.txt	FiR Audio Krypton 5 	Fir Audio Krypton 5	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Krypton 5 R.txt	FiR Audio Krypton 5 	Fir Audio Krypton 5	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M2 L.txt	FiR Audio M2	Fir Audio M2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M2 R.txt	FiR Audio M2	Fir Audio M2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M3 L.txt	FiR Audio M3	Fir Audio M3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M3 R.txt	FiR Audio M3	Fir Audio M3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M4 L.txt	FiR Audio M4	Fir Audio M4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/M4 R.txt	FiR Audio M4	Fir Audio M4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/M5 L.txt	FiR Audio M5	Fir Audio M5	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/M5 R.txt	FiR Audio M5	Fir Audio M5	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Neon 4 L.txt	FiR Audio Neon 4 	Fir Audio Neon 4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Neon 4 R.txt	FiR Audio Neon 4 	Fir Audio Neon 4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/VxV Stock L.txt	FiR Audio VxV 	Fir Audio VxV	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/VxV Stock R.txt	FiR Audio VxV 	Fir Audio VxV	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xenon 6 L.txt	FiR Audio Xenon 6 	Fir Audio Xenon 6	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Xenon 6 R.txt	FiR Audio Xenon 6 	Fir Audio Xenon 6	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/e12 L.txt	FiR Audio e12	Fir Audio e12	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/e12 R.txt	FiR Audio e12	Fir Audio e12	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Clear L.txt	Focal Clear	Focal Clear	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Clear R.txt	Focal Clear	Focal Clear	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Elegia L.txt	Focal Elegia	Focal Elegia	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Elegia R.txt	Focal Elegia	Focal Elegia	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Stellia L.txt	Focal Stellia	Focal Stellia	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Stellia R.txt	Focal Stellia	Focal Stellia	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Utopia L.txt	Focal Utopia	Focal Utopia	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Utopia R.txt	Focal Utopia	Focal Utopia	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Pixel Buds Pro L.txt	Google Pixel Buds Pro	Google Pixel Buds Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Pixel Buds Pro R.txt	Google Pixel Buds Pro	Google Pixel Buds Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/GS3000e L.txt	Grado GS3000e	Grado GS3000e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/GS3000e R.txt	Grado GS3000e	Grado GS3000e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/PS2000e L.txt	Grado PS2000e	Grado PS2000e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/PS2000e R.txt	Grado PS2000e	Grado PS2000e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/RS1e L.txt	Grado RS1e	Grado RS1e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/RS1e R.txt	Grado RS1e	Grado RS1e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/SR325e L.txt	Grado SR325e	Grado SR325e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/SR325e R.txt	Grado SR325e	Grado SR325e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/SR80e L.txt	Grado SR80e	Grado SR80e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/SR80e R.txt	Grado SR80e	Grado SR80e	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HEDDphone L.txt	HEDD Audio HEDDphone	HEDD HEDDphone	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HEDDphone R.txt	HEDD Audio HEDDphone	HEDD HEDDphone	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/JH16v2 L.txt	JH Audio JH16v2	JH Audio 16v2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/JH16v2 R.txt	JH Audio JH16v2	JH Audio 16v2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Roxanne Max Bass L.txt	JH Audio Roxanne Max Bass	JH Audio Roxanne (max)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Roxanne Max Bass R.txt	JH Audio Roxanne Max Bass	JH Audio Roxanne (max)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Roxanne L.txt	JH Audio Roxanne Mid Bass	JH Audio Roxanne (mid)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Roxanne R.txt	JH Audio Roxanne Mid Bass	JH Audio Roxanne (mid)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Roxanne Min Bass L.txt	JH Audio Roxanne Min Bass	JH Audio Roxanne (min)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Roxanne Min Bass R.txt	JH Audio Roxanne Min Bass	JH Audio Roxanne (min)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Sharona L.txt	JH Audio Sharona	JH Audio Sharona	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Sharona R.txt	JH Audio Sharona	JH Audio Sharona	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Sheena L.txt	JH Audio Sheena	JH Audio Sheena	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Sheena R.txt	JH Audio Sheena	JH Audio Sheena	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/HA-FDX1 Blue L.txt	JVC HA-FDX1 Blue Filter	JVC HA-FDX1 (blue)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/HA-FDX1 Blue R.txt	JVC HA-FDX1 Blue Filter	JVC HA-FDX1 (blue)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/HA-FDX1 Green L.txt	JVC HA-FDX1 Green Filter	JVC HA-FDX1 (green)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/HA-FDX1 Green R.txt	JVC HA-FDX1 Green Filter	JVC HA-FDX1 (green)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/HA-FDX1 L.txt	JVC HA-FDX1 Default	JVC HA-FDX1 (white)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/HA-FDX1 R.txt	JVC HA-FDX1 Default	JVC HA-FDX1 (white)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elite 3 Active L.txt	Jabra Elite 3 Active	Jabra Elite 3 Active	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elite 3 Active R.txt	Jabra Elite 3 Active	Jabra Elite 3 Active	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elite 85t ANC Off L.txt	Jabra Elite 85t ANC Off	Jabra Elite 85t (ANC Off)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elite 85t ANC Off R.txt	Jabra Elite 85t ANC Off	Jabra Elite 85t (ANC Off)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elite 85t L.txt	Jabra Elite 85t ANC On	Jabra Elite 85t (ANC On)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elite 85t R.txt	Jabra Elite 85t ANC On	Jabra Elite 85t (ANC On)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EA3 Comply L.txt	Jade Audio EA3 Comply Foam Eartips	Jade Audio EA3 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EA3 Comply R.txt	Jade Audio EA3 Comply Foam Eartips	Jade Audio EA3 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EA3 L.txt	Jade Audio EA3 Cp100 Eartips	Jade Audio EA3 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EA3 R.txt	Jade Audio EA3 Cp100 Eartips	Jade Audio EA3 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Trinity L.txt	Jomo Audio Trinity	Jomo Audio Trinity	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Trinity R.txt	Jomo Audio Trinity	Jomo Audio Trinity	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ZSN Pro L.txt	KZ ZSN Pro	KZ ZSN Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/ZSN Pro R.txt	KZ ZSN Pro	KZ ZSN Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Freya L.txt	Kinera Freya	Kinera Freya	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Freya R.txt	Kinera Freya	Kinera Freya	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/R6 II L.txt	Klipsch R6 II	Klipsch R6 II	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/R6 II R.txt	Klipsch R6 II	Klipsch R6 II	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tone-FN7 Free Natural L.txt	LG Tone-FN7 Free Natural	LG Tone Free	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tone-FN7 Free Natural R.txt	LG Tone-FN7 Free Natural	LG Tone Free	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tone-FN7 Free L.txt	LG Tone-FN7 Free Bass Boost	LG Tone-FN7 Free Bass Boost	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tone-FN7 Free R.txt	LG Tone-FN7 Free Bass Boost	LG Tone-FN7 Free Bass Boost	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tone-FN7 Free Immersive L.txt	LG Tone-FN7 Free Immersive	LG Tone-FN7 Free Immersive	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tone-FN7 Free Immersive R.txt	LG Tone-FN7 Free Immersive	LG Tone-FN7 Free Immersive	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tone-FN7 Free Treble Boost L.txt	LG Tone-FN7 Free Treble Boost	LG Tone-FN7 Free Treble Boost	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Tone-FN7 Free Treble Boost R.txt	LG Tone-FN7 Free Treble Boost	LG Tone-FN7 Free Treble Boost	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/BLD L.txt	Linsoul BLD	Linsoul BLD	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/BLD R.txt	Linsoul BLD	Linsoul BLD	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Clamor L.txt	Ludos Clamor	Ludos Clamor	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Clamor R.txt	Ludos Clamor	Ludos Clamor	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Clamor L.txt	Ludos Clamor	Ludos Clamor	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Clamor R.txt	Ludos Clamor	Ludos Clamor	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Gae Bolg L.txt	MMR Gae Bolg 	MMR Gae Bolg	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Gae Bolg R.txt	MMR Gae Bolg 	MMR Gae Bolg	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Gae Bolg Cp100 L.txt	MMR Gae Bolg Cp100 Eartips	MMR Gae Bolg Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Gae Bolg Cp100 R.txt	MMR Gae Bolg Cp100 Eartips	MMR Gae Bolg Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Homunculus L.txt	MMR Homunculus	MMR Homunculus	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Homunculus R.txt	MMR Homunculus	MMR Homunculus	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Thummim L.txt	MMR Thummim	MMR Thummim	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Thummim R.txt	MMR Thummim	MMR Thummim	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Advar L.txt	Meze Audio Advar 	Meze Advar	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Advar R.txt	Meze Audio Advar 	Meze Advar	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Advar Cp100 L.txt	Meze Audio Advar Cp100 Eartips	Meze Audio Advar Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Advar Cp100 R.txt	Meze Audio Advar Cp100 Eartips	Meze Audio Advar Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Empyrean L.txt	Meze Empyrean	Meze Empyrean	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Empyrean R.txt	Meze Empyrean	Meze Empyrean	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Rai Penta L.txt	Meze Audio Rai Penta	Meze Rai Penta	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Rai Penta R.txt	Meze Audio Rai Penta	Meze Rai Penta	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Turbine Cu Pro L.txt	Monster Turbine Cu Pro	Monster Turbine Pro	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Turbine Cu Pro R.txt	Monster Turbine Cu Pro	Monster Turbine Pro	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Turbine Cu Pro L.txt	Monster Turbine Cu Pro G	Monster Turbine Pro Gold	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Turbine Cu Pro R.txt	Monster Turbine Cu Pro G	Monster Turbine Pro Gold	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Blessing 2 L.txt	Moondrop Blessing 2	Moondrop Blessing 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Blessing 2 R.txt	Moondrop Blessing 2	Moondrop Blessing 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Chu L.txt	Moondrop Chu	Moondrop Chu	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Chu R.txt	Moondrop Chu	Moondrop Chu	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Chu 2 L.txt	Moondrop Chu 2	Moondrop Chu 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Chu 2 R.txt	Moondrop Chu 2	Moondrop Chu 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KXXX L.txt	Moondrop KXXX	Moondrop KXXX	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KXXX R.txt	Moondrop KXXX	Moondrop KXXX	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/S8 Stock L.txt	Moondrop S8 	Moondrop S8	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/S8 Stock R.txt	Moondrop S8 	Moondrop S8	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/S8 L.txt	Moondrop S8 Cp100 Eartips	Moondrop S8 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/S8 R.txt	Moondrop S8 Cp100 Eartips	Moondrop S8 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/S8 Sedna L.txt	Moondrop S8 SednaFit Eartips	Moondrop S8 SednaFit Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/S8 Sedna R.txt	Moondrop S8 SednaFit Eartips	Moondrop S8 SednaFit Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SSP L.txt	Moondrop SSP 	Moondrop SSP	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SSP R.txt	Moondrop SSP 	Moondrop SSP	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SSP Vent Blocked L.txt	Moondrop SSP Vent Blocked	Moondrop SSP Vent Blocked	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SSP Vent Blocked R.txt	Moondrop SSP Vent Blocked	Moondrop SSP Vent Blocked	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SSR L.txt	Moondrop SSR	Moondrop SSR	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SSR R.txt	Moondrop SSR	Moondrop SSR	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Starfield L.txt	Moondrop Starfield	Moondrop Starfield	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Starfield R.txt	Moondrop Starfield	Moondrop Starfield	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/PK2 L.txt	NICEHCK PK2	NiceHCK PK2	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/PK2 R.txt	NICEHCK PK2	NiceHCK PK2	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/FoKus Pro L.txt	Noble FoKus Pro	Noble Audio Fokus Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/FoKus Pro R.txt	Noble FoKus Pro	Noble Audio Fokus Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Khan L.txt	Noble Khan	Noble Audio Khan	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Khan R.txt	Noble Khan	Noble Audio Khan	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Kublai Khan L.txt	Noble Kublai Khan	Noble Audio Kublai Khan	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Kublai Khan R.txt	Noble Kublai Khan	Noble Audio Kublai Khan	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Sultan L.txt	Noble Sultan	Noble Audio Sultan	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Sultan R.txt	Noble Sultan	Noble Audio Sultan	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Sultan SE L.txt	Noble Sultan SE	Noble Audio Sultan SE	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Sultan SE R.txt	Noble Sultan SE	Noble Audio Sultan SE	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Viking Ragnar L.txt	Noble Viking Ragnar	Noble Audio Viking Ragnar	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Viking Ragnar R.txt	Noble Viking Ragnar	Noble Audio Viking Ragnar	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Beryllium L.txt	Periodic Audio Beryllium 	Periodic Audio Be	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Beryllium R.txt	Periodic Audio Beryllium 	Periodic Audio Be	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Beryllium Cp100 L.txt	Periodic Audio Beryllium Cp100 Eartips	Periodic Audio Beryllium Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Beryllium Cp100 R.txt	Periodic Audio Beryllium Cp100 Eartips	Periodic Audio Beryllium Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Beryllium V3 L.txt	Periodic Audio Beryllium V3	Periodic Audio Beryllium V3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Beryllium V3 R.txt	Periodic Audio Beryllium V3	Periodic Audio Beryllium V3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Carbon V3 L.txt	Periodic Audio Carbon V3	Periodic Audio Carbon V3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Carbon V3 R.txt	Periodic Audio Carbon V3	Periodic Audio Carbon V3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Magnesium V3 L.txt	Periodic Audio Magnesium V3	Periodic Audio Magnesium V3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Magnesium V3 R.txt	Periodic Audio Magnesium V3	Periodic Audio Magnesium V3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Titanium V3 L.txt	Periodic Audio Titanium V3	Periodic Audio Titanium V3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Titanium V3 R.txt	Periodic Audio Titanium V3	Periodic Audio Titanium V3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/NHB12 L.txt	Questyle NHB12	Questyle NHB12	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/NHB12 R.txt	Questyle NHB12	Questyle NHB12	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/EP2 L.txt	RBH Sound EP2	RBH EP2	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/EP2 R.txt	RBH Sound EP2	RBH EP2	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/EP2 L.txt	RBH Sound EP2	RBH EP2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EP2 R.txt	RBH Sound EP2	RBH EP2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/CL2 L.txt	RHA CL2	RHA CL2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/CL2 R.txt	RHA CL2	RHA CL2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EO-IG955 L.txt	Samsung-AKG EO-IG955	Samsung AKG EO-IG955	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EO-IG955 R.txt	Samsung-AKG EO-IG955	Samsung AKG EO-IG955	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Galaxy Buds Live L.txt	Samsung Galaxy Buds Live	Samsung Galaxy Buds Live	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Galaxy Buds Live R.txt	Samsung Galaxy Buds Live	Samsung Galaxy Buds Live	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Galaxy Buds Live L.txt	Samsung-AKG Galaxy Buds Live	Samsung Galaxy Buds Live	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Galaxy Buds Live R.txt	Samsung-AKG Galaxy Buds Live	Samsung Galaxy Buds Live	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Galaxy Buds Pro L.txt	Samsung-AKG Galaxy Buds Pro	Samsung Galaxy Buds Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Galaxy Buds Pro R.txt	Samsung-AKG Galaxy Buds Pro	Samsung Galaxy Buds Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Galaxy Buds 2 Pro L.txt	Samsung-AKG Galaxy Buds 2 Pro	Samsung Galaxy Buds2 Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Galaxy Buds 2 Pro R.txt	Samsung-AKG Galaxy Buds 2 Pro	Samsung Galaxy Buds2 Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Yume L.txt	SeeAudio Yume 	SeeAudio Yume	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Yume R.txt	SeeAudio Yume 	SeeAudio Yume	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Yume Cp100 L.txt	SeeAudio Yume Cp100 Eartips	SeeAudio Yume Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Yume Cp100 R.txt	SeeAudio Yume Cp100 Eartips	SeeAudio Yume Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/HD560S L.txt	Sennheiser HD560S	Sennheiser HD 560S	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HD560S R.txt	Sennheiser HD560S	Sennheiser HD 560S	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HD660S L.txt	Sennheiser HD660S	Sennheiser HD 660 S	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HD660S R.txt	Sennheiser HD660S	Sennheiser HD 660 S	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HD800S L.txt	Sennheiser HD800S	Sennheiser HD 800 S	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HD800S R.txt	Sennheiser HD800S	Sennheiser HD 800 S	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HD820 L.txt	Sennheiser HD820	Sennheiser HD 820	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HD820 R.txt	Sennheiser HD820	Sennheiser HD 820	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/IE300 L.txt	Sennheiser IE300	Sennheiser IE 300	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE300 R.txt	Sennheiser IE300	Sennheiser IE 300	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE600 Foam L.txt	Sennheiser IE600 Stock Foam	Sennheiser IE 600 (foam eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE600 Foam R.txt	Sennheiser IE600 Stock Foam	Sennheiser IE 600 (foam eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE600 L.txt	Sennheiser IE600 Stock Silicone	Sennheiser IE 600 (silicone eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE600 R.txt	Sennheiser IE600 Stock Silicone	Sennheiser IE 600 (silicone eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE800S L.txt	Sennheiser IE800S	Sennheiser IE 800 S	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE800S R.txt	Sennheiser IE800S	Sennheiser IE 800 S	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE900 Foam L.txt	Sennheiser IE900 Stock Foam	Sennheiser IE 900 (foam eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE900 Foam R.txt	Sennheiser IE900 Stock Foam	Sennheiser IE 900 (foam eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE900 L.txt	Sennheiser IE900 Stock Silicone	Sennheiser IE 900 (silicone eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE900 R.txt	Sennheiser IE900 Stock Silicone	Sennheiser IE 900 (silicone eartips)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE600 Cp100 L.txt	Sennheiser IE600 Cp100 Eartips	Sennheiser IE600 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE600 Cp100 R.txt	Sennheiser IE600 Cp100 Eartips	Sennheiser IE600 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE600 Cp145 L.txt	Sennheiser IE600 Cp145 Eartips	Sennheiser IE600 Cp145 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE600 Cp145 R.txt	Sennheiser IE600 Cp145 Eartips	Sennheiser IE600 Cp145 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE900 Cp100 L.txt	Sennheiser IE900 Cp100 Eartips	Sennheiser IE900 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE900 Cp100 R.txt	Sennheiser IE900 Cp100 Eartips	Sennheiser IE900 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE900 Cp145 L.txt	Sennheiser IE900 Cp145 Eartips	Sennheiser IE900 Cp145 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE900 Cp145 R.txt	Sennheiser IE900 Cp145 Eartips	Sennheiser IE900 Cp145 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Momentum TW 2 HEST L.txt	Sennheiser Momentum TW 2 H-E Tuning	Sennheiser Momentum TW 2 H-E Tuning	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Momentum TW 2 HEST R.txt	Sennheiser Momentum TW 2 H-E Tuning	Sennheiser Momentum TW 2 H-E Tuning	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Momentum TW 2 L.txt	Sennheiser Momentum TW 2 	Sennheiser Momentum True Wireless 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Momentum TW 2 R.txt	Sennheiser Momentum TW 2 	Sennheiser Momentum True Wireless 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Momentum TW 3 L.txt	Sennheiser Momentum TW 3	Sennheiser Momentum True Wireless 3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Momentum TW 3 R.txt	Sennheiser Momentum TW 3	Sennheiser Momentum True Wireless 3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Cygnus L.txt	Shozy Cygnus	Shozy Cygnus	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Cygnus R.txt	Shozy Cygnus	Shozy Cygnus	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/BK Stardust L.txt	Shozy BK Stardust	Shozy Stardust (bK)	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/BK Stardust R.txt	Shozy BK Stardust	Shozy Stardust (bK)	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Hibiki L.txt	AAW-Shozy Hibiki	Shozy x AAW Hibiki	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Hibiki R.txt	AAW-Shozy Hibiki	Shozy x AAW Hibiki	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Hibiki L.txt	AAW-Shozy Hibiki	Shozy x AAW Hibiki	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Hibiki R.txt	AAW-Shozy Hibiki	Shozy x AAW Hibiki	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Pola 39 L.txt	Shozy Pola 39	Shozy x AAW POLA39	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Pola 39 R.txt	Shozy Pola 39	Shozy x AAW POLA39	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/POLA39 L.txt	AAW-Shozy POLA39	Shozy x AAW POLA39	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/POLA39 R.txt	AAW-Shozy POLA39	Shozy x AAW POLA39	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Cadenza L.txt	Letshuoer Cadenza	Shuoer Cadenza 12	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Cadenza R.txt	Letshuoer Cadenza	Shuoer Cadenza 12	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/KSE1500 L.txt	Shure KSE1500	Shure KSE1500	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/KSE1500 R.txt	Shure KSE1500	Shure KSE1500	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 Comply 100 Foam L.txt	Shure KSE1500 Comply 100 Foam Eartips	Shure KSE1500 Comply 100 Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 Comply 100 Foam R.txt	Shure KSE1500 Comply 100 Foam Eartips	Shure KSE1500 Comply 100 Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 Comply P Foam L.txt	Shure KSE1500 Comply P Foam Eartips	Shure KSE1500 Comply P Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 Comply P Foam R.txt	Shure KSE1500 Comply P Foam Eartips	Shure KSE1500 Comply P Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 Cp240 L.txt	Shure KSE1500 Cp240 Eartips	Shure KSE1500 Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 Cp240 R.txt	Shure KSE1500 Cp240 Eartips	Shure KSE1500 Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 Cp800 L.txt	Shure KSE1500 Cp800 Eartips	Shure KSE1500 Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 Cp800 R.txt	Shure KSE1500 Cp800 Eartips	Shure KSE1500 Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 L.txt	Shure KSE1500 Shure Olive Eartips	Shure KSE1500 Shure Olive Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/KSE1500 R.txt	Shure KSE1500 Shure Olive Eartips	Shure KSE1500 Shure Olive Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Black Cp240 L.txt	Shure SE846 Black Fltr/Cp240 Eartips	Shure SE846 Black Fltr/Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Black Cp240 R.txt	Shure SE846 Black Fltr/Cp240 Eartips	Shure SE846 Black Fltr/Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Blue Comply P L.txt	Shure SE846 Blue Fltr/Comply P Eartips	Shure SE846 Blue Fltr/Comply P Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Blue Comply P R.txt	Shure SE846 Blue Fltr/Comply P Eartips	Shure SE846 Blue Fltr/Comply P Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Blue Cp240 L.txt	Shure SE846 Blue Fltr/Cp240 Eartips	Shure SE846 Blue Fltr/Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Blue Cp240 R.txt	Shure SE846 Blue Fltr/Cp240 Eartips	Shure SE846 Blue Fltr/Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Blue Cp800 L.txt	Shure SE846 Blue Fltr/Cp800 Eartips	Shure SE846 Blue Fltr/Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Blue Cp800 R.txt	Shure SE846 Blue Fltr/Cp800 Eartips	Shure SE846 Blue Fltr/Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Red Comply L.txt	Shure SE846 Red Fltr/Comply P Eartips	Shure SE846 Red Fltr/Comply P Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Red Comply R.txt	Shure SE846 Red Fltr/Comply P Eartips	Shure SE846 Red Fltr/Comply P Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Red Cp800 L.txt	Shure SE846 Red Fltr/Cp800 Eartips	Shure SE846 Red Fltr/Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Red Cp800 R.txt	Shure SE846 Red Fltr/Cp800 Eartips	Shure SE846 Red Fltr/Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Trishd Cp240 L.txt	Shure SE846 Trishd Mod/Cp240 Eartips	Shure SE846 Trishd Mod/Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Trishd Cp240 R.txt	Shure SE846 Trishd Mod/Cp240 Eartips	Shure SE846 Trishd Mod/Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Trishd Cp800 L.txt	Shure SE846 Trishd Mod/Cp800 Eartips	Shure SE846 Trishd Mod/Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 Trishd Cp800 R.txt	Shure SE846 Trishd Mod/Cp800 Eartips	Shure SE846 Trishd Mod/Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/SE846 L.txt	Shure SE846 W	Shure SE846 W	ignore	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/SE846 R.txt	Shure SE846 W	Shure SE846 W	ignore	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/SE846 L.txt	Shure SE846 White Fltr/Cp240 Eartips	Shure SE846 White Fltr/Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 R.txt	Shure SE846 White Fltr/Cp240 Eartips	Shure SE846 White Fltr/Cp240 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 White Cp800 L.txt	Shure SE846 White Fltr/Cp800 Eartips	Shure SE846 White Fltr/Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/SE846 White Cp800 R.txt	Shure SE846 White Fltr/Cp800 Eartips	Shure SE846 White Fltr/Cp800 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EN700 Pro L.txt	Simgot EN700 Pro	Simgot Audio EN700 Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EN700 Pro R.txt	Simgot EN700 Pro	Simgot Audio EN700 Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Smokin Buds 2 L.txt	Skullcandy Smokin Buds 2	Skullcandy Smokin Buds 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Smokin Buds 2 R.txt	Skullcandy Smokin Buds 2	Skullcandy Smokin Buds 2	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IER-M9 L.txt	Sony IER-M9	Sony IER-M9	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IER-M9 R.txt	Sony IER-M9	Sony IER-M9	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IER-Z1R L.txt	Sony IER-Z1R	Sony IER-Z1R	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IER-Z1R R.txt	Sony IER-Z1R	Sony IER-Z1R	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LinkBuds S L.txt	Sony LinkBuds S	Sony LinkBuds S	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/LinkBuds S R.txt	Sony LinkBuds S	Sony LinkBuds S	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/MDR-Z1R L.txt	Sony MDR-Z1R	Sony MDR-Z1R	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/MDR-Z1R R.txt	Sony MDR-Z1R	Sony MDR-Z1R	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/MDR-Z7M2 L.txt	Sony MDR-Z7M2	Sony MDR-Z7M2	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/MDR-Z7M2 R.txt	Sony MDR-Z7M2	Sony MDR-Z7M2	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/MH755 L.txt	Sony MH755	Sony MH755	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/MH755 R.txt	Sony MH755	Sony MH755	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/WF-1000XM3 L.txt	Sony WF-1000XM3	Sony WF-1000XM3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/WF-1000XM3 R.txt	Sony WF-1000XM3	Sony WF-1000XM3	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/WF-1000XM4 L.txt	Sony WF-1000XM4 	Sony WF-1000XM4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/WF-1000XM4 R.txt	Sony WF-1000XM4 	Sony WF-1000XM4	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/WF-1000XM4 Cp100 L.txt	Sony WF-1000XM4 Cp100 Eartips	Sony WF-1000XM4 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/WF-1000XM4 Cp100 R.txt	Sony WF-1000XM4 Cp100 Eartips	Sony WF-1000XM4 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/WH-1000XM4 ANC Off L.txt	Sony WH-1000XM4 ANC Off	Sony WH-1000XM4 (ANC Off)	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/WH-1000XM4 ANC Off R.txt	Sony WH-1000XM4 ANC Off	Sony WH-1000XM4 (ANC Off)	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/WH-1000XM4 L.txt	Sony WH-1000XM4 ANC On	Sony WH-1000XM4 (ANC on)	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/WH-1000XM4 R.txt	Sony WH-1000XM4 ANC On	Sony WH-1000XM4 (ANC on)	over-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/E11C L.txt	SoundMAGIC E11C	SoundMAGIC E11C	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/E11C R.txt	SoundMAGIC E11C	SoundMAGIC E11C	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/E11C L.txt	SoundMAGIC E11C	SoundMAGIC E11C	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/E11C R.txt	SoundMAGIC E11C	SoundMAGIC E11C	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Helios L.txt	Symphonium Audio Helios	Symphonium Audio Helios	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Helios R.txt	Symphonium Audio Helios	Symphonium Audio Helios	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/HM150 L.txt	Ty Hi-Z HM150	TY Hi-Z HM150	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HM150 R.txt	Ty Hi-Z HM150	TY Hi-Z HM150	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HP32 L.txt	Ty Hi-Z HP32	TY Hi-Z HP32	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/HP32 R.txt	Ty Hi-Z HP32	TY Hi-Z HP32	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Darling Deep L.txt	Tanchjim Darling Deep Fit	Tanchjim Darling	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Darling Deep R.txt	Tanchjim Darling Deep Fit	Tanchjim Darling	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Darling Shallow L.txt	Tanchjim Darling Shallow Fit	Tanchjim Darling	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Darling Shallow R.txt	Tanchjim Darling Shallow Fit	Tanchjim Darling	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Darling L.txt	Tanchjim Darling Shallow Fit Foam Eartips	Tanchjim Darling Shallow Fit Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Darling R.txt	Tanchjim Darling Shallow Fit Foam Eartips	Tanchjim Darling Shallow Fit Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Monarch Mkiii L.txt	Thieaudio Monarch Mkiii	ThieAudio Monarch MKIII	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Monarch Mkiii R.txt	Thieaudio Monarch Mkiii	ThieAudio Monarch MKIII	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/P1 Cp155 L.txt	Tin HiFi P1 Comply Foam Eartips	Tin HiFi P1 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/P1 Cp155 R.txt	Tin HiFi P1 Comply Foam Eartips	Tin HiFi P1 Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/P1 L.txt	Tin HiFi P1 Cp100 Eartips	Tin HiFi P1 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/P1 R.txt	Tin HiFi P1 Cp100 Eartips	Tin HiFi P1 Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/TO200 L.txt	Toneking TO200	Toneking TO200	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/TO200 R.txt	Toneking TO200	Toneking TO200	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/HEXA Cp100 L.txt	Truthear HEXA Cp100 Eartips	Truthear HEXA Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/HEXA Cp100 R.txt	Truthear HEXA Cp100 Eartips	Truthear HEXA Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/HEXA L.txt	Truthear HEXA 	Truthear Hexa	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/HEXA R.txt	Truthear HEXA 	Truthear Hexa	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/RR L.txt	Ultimate Ears RR	Ultimate Ears Reference Remastered	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/RR R.txt	Ultimate Ears RR	Ultimate Ears Reference Remastered	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/UE18+ Pro L.txt	Ultimate Ears UE18+ Pro	Ultimate Ears UE18+ Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/UE18+ Pro R.txt	Ultimate Ears UE18+ Pro	Ultimate Ears UE18+ Pro	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/MEST L.txt	Unique Melody MEST Comply Foam Eartips	Unique Melody MEST Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/MEST R.txt	Unique Melody MEST Comply Foam Eartips	Unique Melody MEST Comply Foam Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/MEST Cp100 L.txt	Unique Melody MEST Cp100 Eartips	Unique Melody MEST Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/MEST Cp100 R.txt	Unique Melody MEST Cp100 Eartips	Unique Melody MEST Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/Asura 2 L.txt	Venture Electronics Asura 2	Venture Electronics Asura 2.0	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Asura 2 R.txt	Venture Electronics Asura 2	Venture Electronics Asura 2.0	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Monk Blood Orange L.txt	Venture Electronics Monk Blood Orange	Venture Electronics Monk Blood Orange	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Monk Blood Orange R.txt	Venture Electronics Monk Blood Orange	Venture Electronics Monk Blood Orange	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Monk Buds Plus L.txt	Venture Electronics Monk Buds Plus	Venture Electronics Monk Plus	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Monk Buds Plus R.txt	Venture Electronics Monk Buds Plus	Venture Electronics Monk Plus	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Zen L.txt	Venture Electronics Zen	Venture Electronics Zen	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Zen R.txt	Venture Electronics Zen	Venture Electronics Zen	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/DIY L.txt	Vido DIY	Vido DIY	ignore	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/DIY R.txt	Vido DIY	Vido DIY	ignore	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/EVE20 L.txt	Vision Ears EVE20	Vision Ears EVE 20	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/EVE20 R.txt	Vision Ears EVE20	Vision Ears EVE 20	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elysium L.txt	Vision Ears Elysium	Vision Ears Elysium	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Elysium R.txt	Vision Ears Elysium	Vision Ears Elysium	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SEB L.txt	Vision Ears Erlkonig SEB	Vision Ears Erlkonig SEB	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SEB R.txt	Vision Ears Erlkonig SEB	Vision Ears Erlkonig SEB	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SW1 L.txt	Vision Ears Erlkonig SW1	Vision Ears Erlkonig SW1	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SW1 R.txt	Vision Ears Erlkonig SW1	Vision Ears Erlkonig SW1	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SW2 L.txt	Vision Ears Erlkonig SW2	Vision Ears Erlkonig SW2	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SW2 R.txt	Vision Ears Erlkonig SW2	Vision Ears Erlkonig SW2	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SW3 L.txt	Vision Ears Erlkonig SW3	Vision Ears Erlkonig SW3	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SW3 R.txt	Vision Ears Erlkonig SW3	Vision Ears Erlkonig SW3	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SW4 L.txt	Vision Ears Erlkonig SW4	Vision Ears Erlkonig SW4	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Erlkonig SW4 R.txt	Vision Ears Erlkonig SW4	Vision Ears Erlkonig SW4	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/PHoNIX L.txt	Vision Ears PHoNIX	Vision Ears PHöNIX	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/PHoNIX R.txt	Vision Ears PHoNIX	Vision Ears PHöNIX	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/VE8 L.txt	Vision Ears VE8	Vision Ears VE8	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/VE8 R.txt	Vision Ears VE8	Vision Ears VE8	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/W60 L.txt	Westone W60	Westone W60	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/W60 R.txt	Westone W60	Westone W60	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/W60 L.txt	Westone W60	Westone W60	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/W60 R.txt	Westone W60	Westone W60	in-ear	GRAS RA0045
+https://www.hypethesonics.com/hatsdbc/SPLdata/X6 L.txt	Yincrow X6	Yincrow X6	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/X6 R.txt	Yincrow X6	Yincrow X6	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Carbo Tenore L.txt	Zero Audio Carbo Tenore	Zero Audio Carbo Tenore	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/hatsdbc/SPLdata/Carbo Tenore R.txt	Zero Audio Carbo Tenore	Zero Audio Carbo Tenore	in-ear	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/Carbo Tenore L.txt	Zero Audio Carbo Tenore	Zero Audio Carbo Tenore	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Carbo Tenore R.txt	Zero Audio Carbo Tenore	Zero Audio Carbo Tenore	in-ear	GRAS RA0045

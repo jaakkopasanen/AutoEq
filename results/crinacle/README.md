@@ -37,10 +37,10 @@
 - [64 Audio Tia Trio](./711%20in-ear/64%20Audio%20Tia%20Trio) on 711
 - [64 Audio U12t](./711%20in-ear/64%20Audio%20U12t) on 711
 - [64 Audio U18S](./711%20in-ear/64%20Audio%20U18S) on 711
-- [64 Audio U18Tzar](./711%20in-ear/64%20Audio%20U18Tzar) on 711
-- [64 Audio U18Tzar (December 2014)](./711%20in-ear/64%20Audio%20U18Tzar%20(December%202014)) on 711
-- [64 Audio U18Tzar (December 2017)](./711%20in-ear/64%20Audio%20U18Tzar%20(December%202017)) on 711
-- [64 Audio U18Tzar (m20 Apex module)](./711%20in-ear/64%20Audio%20U18Tzar%20(m20%20Apex%20module)) on 711
+- [64 Audio U18t](./711%20in-ear/64%20Audio%20U18t) on 711
+- [64 Audio U18t (2014)](./711%20in-ear/64%20Audio%20U18t%20(2014)) on 711
+- [64 Audio U18t (2017)](./711%20in-ear/64%20Audio%20U18t%20(2017)) on 711
+- [64 Audio U18t (m20 apex module)](./711%20in-ear/64%20Audio%20U18t%20(m20%20apex%20module)) on 711
 - [7Hz Eternal](./711%20in-ear/7Hz%20Eternal) on 711
 - [7Hz Eternal](./Bruel%20&%20Kjaer%204620%20in-ear/7Hz%20Eternal) on Bruel & Kjaer 4620
 - [7Hz Salnotes Dioko](./711%20in-ear/7Hz%20Salnotes%20Dioko) on 711
@@ -1132,7 +1132,7 @@
 - [Lime Ears LE2](./711%20in-ear/Lime%20Ears%20LE2) on 711
 - [Lime Ears Model X (switch off)](./711%20in-ear/Lime%20Ears%20Model%20X%20(switch%20off)) on 711
 - [Lime Ears Model X (switch on)](./711%20in-ear/Lime%20Ears%20Model%20X%20(switch%20on)) on 711
-- [Linsoul Audio Lokahi](./711%20in-ear/Linsoul%20Audio%20Lokahi) on 711
+- [Linsoul Lokahi](./711%20in-ear/Linsoul%20Lokahi) on 711
 - [Little Dot GYFU](./GRAS%2043AG-7%20over-ear/Little%20Dot%20GYFU) on GRAS 43AG-7
 - [Logitech G Pro X](./GRAS%2043AG-7%20over-ear/Logitech%20G%20Pro%20X) on GRAS 43AG-7
 - [Logitech G431](./GRAS%2043AG-7%20over-ear/Logitech%20G431) on GRAS 43AG-7

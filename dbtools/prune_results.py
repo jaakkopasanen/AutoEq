@@ -13,18 +13,8 @@ target_to_source = {
     'crinacle/Bruel & Kjaer 4620 in-ear': MEASUREMENTS_PATH.joinpath('crinacle', 'data', 'in-ear', 'Bruel & Kjaer 4620'),
     'crinacle/EARS + 711 over-ear': MEASUREMENTS_PATH.joinpath('crinacle', 'data', 'over-ear', 'EARS + 711'),
     'crinacle/GRAS 43AG-7 over-ear': MEASUREMENTS_PATH.joinpath('crinacle', 'data', 'over-ear', 'GRAS 43AG-7'),
-    'oratory1990/earbud': MEASUREMENTS_PATH.joinpath('oratory1990', 'data', 'earbud'),
-    'oratory1990/in-ear': MEASUREMENTS_PATH.joinpath('oratory1990', 'data', 'in-ear'),
-    'oratory1990/over-ear': MEASUREMENTS_PATH.joinpath('oratory1990', 'data', 'over-ear'),
-    'Rtings/earbud': MEASUREMENTS_PATH.joinpath('Rtings', 'data', 'earbud'),
-    'Rtings/in-ear': MEASUREMENTS_PATH.joinpath('Rtings', 'data', 'in-ear'),
-    'Rtings/over-ear': MEASUREMENTS_PATH.joinpath('Rtings', 'data', 'over-ear'),
-    'Headphone.com Legacy/earbud': MEASUREMENTS_PATH.joinpath('Headphone.com Legacy', 'data', 'earbud'),
-    'Headphone.com Legacy/in-ear': MEASUREMENTS_PATH.joinpath('Headphone.com Legacy', 'data', 'in-ear'),
-    'Headphone.com Legacy/over-ear': MEASUREMENTS_PATH.joinpath('Headphone.com Legacy', 'data', 'over-ear'),
-    'Innerfidelity/earbud': MEASUREMENTS_PATH.joinpath('Innerfidelity', 'data', 'earbud'),
-    'Innerfidelity/in-ear': MEASUREMENTS_PATH.joinpath('Innerfidelity', 'data', 'in-ear'),
-    'Innerfidelity/over-ear': MEASUREMENTS_PATH.joinpath('Innerfidelity', 'data', 'over-ear'),
+    'HypetheSonics/Bruel & Kjaer 5128 in-ear': MEASUREMENTS_PATH.joinpath('HypetheSonics', 'data', 'in-ear', 'Bruel & Kjaer 5128'),
+    'HypetheSonics/GRAS RA0045 in-ear': MEASUREMENTS_PATH.joinpath('HypetheSonics', 'data', 'in-ear', 'GRAS RA0045'),
 }
 
 

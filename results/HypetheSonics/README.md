@@ -1,0 +1,226 @@
+# HypetheSonics Results
+
+- [1MORE Aero (ANC Off)](./GRAS%20RA0045%20in-ear/1MORE%20Aero%20(ANC%20Off)) on GRAS RA0045
+- [1MORE Aero (ANC On)](./GRAS%20RA0045%20in-ear/1MORE%20Aero%20(ANC%20On)) on GRAS RA0045
+- [1MORE Aero (transparency mode)](./GRAS%20RA0045%20in-ear/1MORE%20Aero%20(transparency%20mode)) on GRAS RA0045
+- [1MORE EVO](./GRAS%20RA0045%20in-ear/1MORE%20EVO) on GRAS RA0045
+- [1MORE Fit Open Earbuds S50](./GRAS%20RA0045%20in-ear/1MORE%20Fit%20Open%20Earbuds%20S50) on GRAS RA0045
+- [1MORE Fit SE S30](./GRAS%20RA0045%20in-ear/1MORE%20Fit%20SE%20S30) on GRAS RA0045
+- [1MORE Penta Driver](./GRAS%20RA0045%20in-ear/1MORE%20Penta%20Driver) on GRAS RA0045
+- [1MORE PistonBuds Pro](./GRAS%20RA0045%20in-ear/1MORE%20PistonBuds%20Pro) on GRAS RA0045
+- [1MORE Quad Driver](./Bruel%20&%20Kjaer%205128%20in-ear/1MORE%20Quad%20Driver) on Bruel & Kjaer 5128
+- [1MORE Triple Driver](./Bruel%20&%20Kjaer%205128%20in-ear/1MORE%20Triple%20Driver) on Bruel & Kjaer 5128
+- [64 Audio Nio (m15 Apex module)](./GRAS%20RA0045%20in-ear/64%20Audio%20Nio%20(m15%20Apex%20module)) on GRAS RA0045
+- [64 Audio Nio (m20 Apex module)](./GRAS%20RA0045%20in-ear/64%20Audio%20Nio%20(m20%20Apex%20module)) on GRAS RA0045
+- [64 Audio Nio (mX Apex module)](./GRAS%20RA0045%20in-ear/64%20Audio%20Nio%20(mX%20Apex%20module)) on GRAS RA0045
+- [64 Audio Tia Fourte](./GRAS%20RA0045%20in-ear/64%20Audio%20Tia%20Fourte) on GRAS RA0045
+- [64 Audio Tia Fourte Noir](./GRAS%20RA0045%20in-ear/64%20Audio%20Tia%20Fourte%20Noir) on GRAS RA0045
+- [64 Audio U12t (m15 Apex module)](./GRAS%20RA0045%20in-ear/64%20Audio%20U12t%20(m15%20Apex%20module)) on GRAS RA0045
+- [64 Audio U12t (m20 Apex module)](./GRAS%20RA0045%20in-ear/64%20Audio%20U12t%20(m20%20Apex%20module)) on GRAS RA0045
+- [64 Audio U12t (mX Apex module)](./GRAS%20RA0045%20in-ear/64%20Audio%20U12t%20(mX%20Apex%20module)) on GRAS RA0045
+- [64 Audio U18t](./GRAS%20RA0045%20in-ear/64%20Audio%20U18t) on GRAS RA0045
+- [64 Audio Volur](./GRAS%20RA0045%20in-ear/64%20Audio%20Volur) on GRAS RA0045
+- [7Hz Salnotes Zero](./GRAS%20RA0045%20in-ear/7Hz%20Salnotes%20Zero) on GRAS RA0045
+- [AAW AXH](./GRAS%20RA0045%20in-ear/AAW%20AXH) on GRAS RA0045
+- [AAW W900](./GRAS%20RA0045%20in-ear/AAW%20W900) on GRAS RA0045
+- [Advanced M4](./GRAS%20RA0045%20in-ear/Advanced%20M4) on GRAS RA0045
+- [AKG N400](./Bruel%20&%20Kjaer%205128%20in-ear/AKG%20N400) on Bruel & Kjaer 5128
+- [AKG N5005 (bass boost)](./GRAS%20RA0045%20in-ear/AKG%20N5005%20(bass%20boost)) on GRAS RA0045
+- [AKG N5005 (high)](./GRAS%20RA0045%20in-ear/AKG%20N5005%20(high)) on GRAS RA0045
+- [AKG N5005 (mid high)](./GRAS%20RA0045%20in-ear/AKG%20N5005%20(mid%20high)) on GRAS RA0045
+- [AKG N5005 (reference)](./GRAS%20RA0045%20in-ear/AKG%20N5005%20(reference)) on GRAS RA0045
+- [Anker Soundcore Liberty 3 Pro](./GRAS%20RA0045%20in-ear/Anker%20Soundcore%20Liberty%203%20Pro) on GRAS RA0045
+- [Apple AirPods Pro](./Bruel%20&%20Kjaer%205128%20in-ear/Apple%20AirPods%20Pro) on Bruel & Kjaer 5128
+- [Apple Airpods Pro 2](./GRAS%20RA0045%20in-ear/Apple%20Airpods%20Pro%202) on GRAS RA0045
+- [Astell & Kern AURA](./GRAS%20RA0045%20in-ear/Astell%20&%20Kern%20AURA) on GRAS RA0045
+- [Astell & Kern Odyssey](./GRAS%20RA0045%20in-ear/Astell%20&%20Kern%20Odyssey) on GRAS RA0045
+- [Audeze LCD-4](./over-ear/Audeze%20LCD-4)
+- [Audeze LCD-4z](./over-ear/Audeze%20LCD-4z)
+- [Audeze LCD-GX](./over-ear/Audeze%20LCD-GX)
+- [Audeze LCD-i3](./GRAS%20RA0045%20in-ear/Audeze%20LCD-i3) on GRAS RA0045
+- [Audeze LCD-i4](./GRAS%20RA0045%20in-ear/Audeze%20LCD-i4) on GRAS RA0045
+- [Audeze LCD-X](./over-ear/Audeze%20LCD-X)
+- [Audio-Technica ATH-CT200iS](./Bruel%20&%20Kjaer%205128%20in-ear/Audio-Technica%20ATH-CT200iS) on Bruel & Kjaer 5128
+- [AUKEY Latitude (balanced)](./GRAS%20RA0045%20in-ear/AUKEY%20Latitude%20(balanced)) on GRAS RA0045
+- [AUKEY Latitude (bass)](./GRAS%20RA0045%20in-ear/AUKEY%20Latitude%20(bass)) on GRAS RA0045
+- [AUKEY Latitude (treble)](./GRAS%20RA0045%20in-ear/AUKEY%20Latitude%20(treble)) on GRAS RA0045
+- [Aure Audio Elixir (foam eartips)](./GRAS%20RA0045%20in-ear/Aure%20Audio%20Elixir%20(foam%20eartips)) on GRAS RA0045
+- [Aure Audio Flame (foam eartips)](./GRAS%20RA0045%20in-ear/Aure%20Audio%20Flame%20(foam%20eartips)) on GRAS RA0045
+- [BASN Bmaster](./GRAS%20RA0045%20in-ear/BASN%20Bmaster) on GRAS RA0045
+- [Beyerdynamic T5p](./over-ear/Beyerdynamic%20T5p)
+- [Beyerdynamic Xelento](./Bruel%20&%20Kjaer%205128%20in-ear/Beyerdynamic%20Xelento) on Bruel & Kjaer 5128
+- [Beyerdynamic Xelento (2nd Gen)](./GRAS%20RA0045%20in-ear/Beyerdynamic%20Xelento%20(2nd%20Gen)) on GRAS RA0045
+- [BLON B-Mini](./GRAS%20RA0045%20in-ear/BLON%20B-Mini) on GRAS RA0045
+- [BLON BL-03](./GRAS%20RA0045%20in-ear/BLON%20BL-03) on GRAS RA0045
+- [BLON BL-05](./Bruel%20&%20Kjaer%205128%20in-ear/BLON%20BL-05) on Bruel & Kjaer 5128
+- [Bose QuietComfort](./over-ear/Bose%20QuietComfort)
+- [Bose QuietComfort 35 II (passive)](./over-ear/Bose%20QuietComfort%2035%20II%20(passive))
+- [Bose QuietComfort II (100dB)](./GRAS%20RA0045%20in-ear/Bose%20QuietComfort%20II%20(100dB)) on GRAS RA0045
+- [Bose QuietComfort II (80dB)](./GRAS%20RA0045%20in-ear/Bose%20QuietComfort%20II%20(80dB)) on GRAS RA0045
+- [Bose QuietComfort II (90dB)](./GRAS%20RA0045%20in-ear/Bose%20QuietComfort%20II%20(90dB)) on GRAS RA0045
+- [Bose SoundSport Free](./GRAS%20RA0045%20in-ear/Bose%20SoundSport%20Free) on GRAS RA0045
+- [Campfire Audio Andromeda](./Bruel%20&%20Kjaer%205128%20in-ear/Campfire%20Audio%20Andromeda) on Bruel & Kjaer 5128
+- [Cardas A8](./Bruel%20&%20Kjaer%205128%20in-ear/Cardas%20A8) on Bruel & Kjaer 5128
+- [CAT Apollo](./Bruel%20&%20Kjaer%205128%20in-ear/CAT%20Apollo) on Bruel & Kjaer 5128
+- [Cypherus Audio Campfred](./earbud/Cypherus%20Audio%20Campfred)
+- [Dan Clark Audio Aeon 2 Closed](./over-ear/Dan%20Clark%20Audio%20Aeon%202%20Closed)
+- [Dan Clark Audio Aeon 2 Open](./over-ear/Dan%20Clark%20Audio%20Aeon%202%20Open)
+- [Dan Clark Audio Aeon Flow Closed](./over-ear/Dan%20Clark%20Audio%20Aeon%20Flow%20Closed)
+- [Dan Clark Audio Ether 2](./over-ear/Dan%20Clark%20Audio%20Ether%202)
+- [DUNU DK4001](./GRAS%20RA0045%20in-ear/DUNU%20DK4001) on GRAS RA0045
+- [DUNU Luna](./GRAS%20RA0045%20in-ear/DUNU%20Luna) on GRAS RA0045
+- [Empire Ears Bravado Mk2](./GRAS%20RA0045%20in-ear/Empire%20Ears%20Bravado%20Mk2) on GRAS RA0045
+- [Empire Ears ESR Mk2](./GRAS%20RA0045%20in-ear/Empire%20Ears%20ESR%20Mk2) on GRAS RA0045
+- [Empire Ears Hero](./Bruel%20&%20Kjaer%205128%20in-ear/Empire%20Ears%20Hero) on Bruel & Kjaer 5128
+- [Empire Ears Legend X](./Bruel%20&%20Kjaer%205128%20in-ear/Empire%20Ears%20Legend%20X) on Bruel & Kjaer 5128
+- [Empire Ears Legend X SE](./GRAS%20RA0045%20in-ear/Empire%20Ears%20Legend%20X%20SE) on GRAS RA0045
+- [Empire Ears Odin](./Bruel%20&%20Kjaer%205128%20in-ear/Empire%20Ears%20Odin) on Bruel & Kjaer 5128
+- [Empire Ears Raven](./GRAS%20RA0045%20in-ear/Empire%20Ears%20Raven) on GRAS RA0045
+- [Empire Ears Valkyrie](./GRAS%20RA0045%20in-ear/Empire%20Ears%20Valkyrie) on GRAS RA0045
+- [Empire Ears Wraith](./GRAS%20RA0045%20in-ear/Empire%20Ears%20Wraith) on GRAS RA0045
+- [Etymotic ER2SE](./Bruel%20&%20Kjaer%205128%20in-ear/Etymotic%20ER2SE) on Bruel & Kjaer 5128
+- [Etymotic ER2XR](./Bruel%20&%20Kjaer%205128%20in-ear/Etymotic%20ER2XR) on Bruel & Kjaer 5128
+- [Etymotic ER4SR](./GRAS%20RA0045%20in-ear/Etymotic%20ER4SR) on GRAS RA0045
+- [Etymotic ER4XR](./Bruel%20&%20Kjaer%205128%20in-ear/Etymotic%20ER4XR) on Bruel & Kjaer 5128
+- [FAAEAL Snow Lotus](./earbud/FAAEAL%20Snow%20Lotus)
+- [Fearless Audio S8Pro](./GRAS%20RA0045%20in-ear/Fearless%20Audio%20S8Pro) on GRAS RA0045
+- [Fengru EMX500](./earbud/Fengru%20EMX500)
+- [FiiO FH3](./GRAS%20RA0045%20in-ear/FiiO%20FH3) on GRAS RA0045
+- [FiiO FH7 (bass nozzle)](./GRAS%20RA0045%20in-ear/FiiO%20FH7%20(bass%20nozzle)) on GRAS RA0045
+- [FiiO FH7 (reference nozzle)](./GRAS%20RA0045%20in-ear/FiiO%20FH7%20(reference%20nozzle)) on GRAS RA0045
+- [FiiO FH7 (treble nozzle)](./GRAS%20RA0045%20in-ear/FiiO%20FH7%20(treble%20nozzle)) on GRAS RA0045
+- [Final Audio A8000](./Bruel%20&%20Kjaer%205128%20in-ear/Final%20Audio%20A8000) on Bruel & Kjaer 5128
+- [Final Audio E2000](./Bruel%20&%20Kjaer%205128%20in-ear/Final%20Audio%20E2000) on Bruel & Kjaer 5128
+- [Final Audio E4000](./GRAS%20RA0045%20in-ear/Final%20Audio%20E4000) on GRAS RA0045
+- [Final Audio E5000](./GRAS%20RA0045%20in-ear/Final%20Audio%20E5000) on GRAS RA0045
+- [Final Audio F7200](./GRAS%20RA0045%20in-ear/Final%20Audio%20F7200) on GRAS RA0045
+- [Final Audio Sonorous III](./over-ear/Final%20Audio%20Sonorous%20III)
+- [Final Audio Sonorous X](./over-ear/Final%20Audio%20Sonorous%20X)
+- [Fir Audio e12](./GRAS%20RA0045%20in-ear/Fir%20Audio%20e12) on GRAS RA0045
+- [Fir Audio Krypton 5](./GRAS%20RA0045%20in-ear/Fir%20Audio%20Krypton%205) on GRAS RA0045
+- [Fir Audio M2](./GRAS%20RA0045%20in-ear/Fir%20Audio%20M2) on GRAS RA0045
+- [Fir Audio M3](./GRAS%20RA0045%20in-ear/Fir%20Audio%20M3) on GRAS RA0045
+- [Fir Audio M4](./GRAS%20RA0045%20in-ear/Fir%20Audio%20M4) on GRAS RA0045
+- [Fir Audio M5](./Bruel%20&%20Kjaer%205128%20in-ear/Fir%20Audio%20M5) on Bruel & Kjaer 5128
+- [Fir Audio Neon 4](./GRAS%20RA0045%20in-ear/Fir%20Audio%20Neon%204) on GRAS RA0045
+- [Fir Audio VxV](./GRAS%20RA0045%20in-ear/Fir%20Audio%20VxV) on GRAS RA0045
+- [Fir Audio Xenon 6](./GRAS%20RA0045%20in-ear/Fir%20Audio%20Xenon%206) on GRAS RA0045
+- [FLC Technology FLC8D (gold filter)](./GRAS%20RA0045%20in-ear/FLC%20Technology%20FLC8D%20(gold%20filter)) on GRAS RA0045
+- [FLC Technology FLC8D (gunmetal filter)](./GRAS%20RA0045%20in-ear/FLC%20Technology%20FLC8D%20(gunmetal%20filter)) on GRAS RA0045
+- [Focal Clear](./over-ear/Focal%20Clear)
+- [Focal Elegia](./over-ear/Focal%20Elegia)
+- [Focal Stellia](./over-ear/Focal%20Stellia)
+- [Focal Utopia](./over-ear/Focal%20Utopia)
+- [Google Pixel Buds Pro](./GRAS%20RA0045%20in-ear/Google%20Pixel%20Buds%20Pro) on GRAS RA0045
+- [Grado GS3000e](./over-ear/Grado%20GS3000e)
+- [Grado PS2000e](./over-ear/Grado%20PS2000e)
+- [Grado RS1e](./over-ear/Grado%20RS1e)
+- [Grado SR325e](./over-ear/Grado%20SR325e)
+- [Grado SR80e](./over-ear/Grado%20SR80e)
+- [HEDD HEDDphone](./over-ear/HEDD%20HEDDphone)
+- [Jabra Elite 3 Active](./GRAS%20RA0045%20in-ear/Jabra%20Elite%203%20Active) on GRAS RA0045
+- [Jabra Elite 85t (ANC Off)](./GRAS%20RA0045%20in-ear/Jabra%20Elite%2085t%20(ANC%20Off)) on GRAS RA0045
+- [Jabra Elite 85t (ANC On)](./GRAS%20RA0045%20in-ear/Jabra%20Elite%2085t%20(ANC%20On)) on GRAS RA0045
+- [JH Audio 16v2](./GRAS%20RA0045%20in-ear/JH%20Audio%2016v2) on GRAS RA0045
+- [JH Audio Roxanne (max)](./GRAS%20RA0045%20in-ear/JH%20Audio%20Roxanne%20(max)) on GRAS RA0045
+- [JH Audio Roxanne (mid)](./GRAS%20RA0045%20in-ear/JH%20Audio%20Roxanne%20(mid)) on GRAS RA0045
+- [JH Audio Roxanne (min)](./GRAS%20RA0045%20in-ear/JH%20Audio%20Roxanne%20(min)) on GRAS RA0045
+- [JH Audio Sharona](./GRAS%20RA0045%20in-ear/JH%20Audio%20Sharona) on GRAS RA0045
+- [JH Audio Sheena](./GRAS%20RA0045%20in-ear/JH%20Audio%20Sheena) on GRAS RA0045
+- [Jomo Audio Trinity](./GRAS%20RA0045%20in-ear/Jomo%20Audio%20Trinity) on GRAS RA0045
+- [JVC HA-FDX1 (blue)](./GRAS%20RA0045%20in-ear/JVC%20HA-FDX1%20(blue)) on GRAS RA0045
+- [JVC HA-FDX1 (green)](./GRAS%20RA0045%20in-ear/JVC%20HA-FDX1%20(green)) on GRAS RA0045
+- [JVC HA-FDX1 (white)](./GRAS%20RA0045%20in-ear/JVC%20HA-FDX1%20(white)) on GRAS RA0045
+- [Kinera Freya](./GRAS%20RA0045%20in-ear/Kinera%20Freya) on GRAS RA0045
+- [Klipsch R6 II](./GRAS%20RA0045%20in-ear/Klipsch%20R6%20II) on GRAS RA0045
+- [KZ ZSN Pro](./GRAS%20RA0045%20in-ear/KZ%20ZSN%20Pro) on GRAS RA0045
+- [LG Tone Free](./GRAS%20RA0045%20in-ear/LG%20Tone%20Free) on GRAS RA0045
+- [Linsoul BLD](./earbud/Linsoul%20BLD)
+- [Ludos Clamor](./Bruel%20&%20Kjaer%205128%20in-ear/Ludos%20Clamor) on Bruel & Kjaer 5128
+- [Meze Advar](./GRAS%20RA0045%20in-ear/Meze%20Advar) on GRAS RA0045
+- [Meze Empyrean](./over-ear/Meze%20Empyrean)
+- [Meze Rai Penta](./GRAS%20RA0045%20in-ear/Meze%20Rai%20Penta) on GRAS RA0045
+- [MMR Gae Bolg](./GRAS%20RA0045%20in-ear/MMR%20Gae%20Bolg) on GRAS RA0045
+- [MMR Homunculus](./GRAS%20RA0045%20in-ear/MMR%20Homunculus) on GRAS RA0045
+- [MMR Thummim](./GRAS%20RA0045%20in-ear/MMR%20Thummim) on GRAS RA0045
+- [Monster Turbine Pro](./Bruel%20&%20Kjaer%205128%20in-ear/Monster%20Turbine%20Pro) on Bruel & Kjaer 5128
+- [Monster Turbine Pro Gold](./GRAS%20RA0045%20in-ear/Monster%20Turbine%20Pro%20Gold) on GRAS RA0045
+- [Moondrop Blessing 2](./GRAS%20RA0045%20in-ear/Moondrop%20Blessing%202) on GRAS RA0045
+- [Moondrop Chu](./GRAS%20RA0045%20in-ear/Moondrop%20Chu) on GRAS RA0045
+- [Moondrop Chu 2](./GRAS%20RA0045%20in-ear/Moondrop%20Chu%202) on GRAS RA0045
+- [Moondrop KXXX](./GRAS%20RA0045%20in-ear/Moondrop%20KXXX) on GRAS RA0045
+- [Moondrop S8](./GRAS%20RA0045%20in-ear/Moondrop%20S8) on GRAS RA0045
+- [Moondrop SSP](./GRAS%20RA0045%20in-ear/Moondrop%20SSP) on GRAS RA0045
+- [Moondrop SSR](./GRAS%20RA0045%20in-ear/Moondrop%20SSR) on GRAS RA0045
+- [Moondrop Starfield](./GRAS%20RA0045%20in-ear/Moondrop%20Starfield) on GRAS RA0045
+- [NiceHCK PK2](./earbud/NiceHCK%20PK2)
+- [Noble Audio Fokus Pro](./GRAS%20RA0045%20in-ear/Noble%20Audio%20Fokus%20Pro) on GRAS RA0045
+- [Noble Audio Khan](./GRAS%20RA0045%20in-ear/Noble%20Audio%20Khan) on GRAS RA0045
+- [Noble Audio Kublai Khan](./GRAS%20RA0045%20in-ear/Noble%20Audio%20Kublai%20Khan) on GRAS RA0045
+- [Noble Audio Sultan](./GRAS%20RA0045%20in-ear/Noble%20Audio%20Sultan) on GRAS RA0045
+- [Noble Audio Sultan SE](./GRAS%20RA0045%20in-ear/Noble%20Audio%20Sultan%20SE) on GRAS RA0045
+- [Noble Audio Viking Ragnar](./GRAS%20RA0045%20in-ear/Noble%20Audio%20Viking%20Ragnar) on GRAS RA0045
+- [Periodic Audio Be](./GRAS%20RA0045%20in-ear/Periodic%20Audio%20Be) on GRAS RA0045
+- [Periodic Audio Beryllium V3](./GRAS%20RA0045%20in-ear/Periodic%20Audio%20Beryllium%20V3) on GRAS RA0045
+- [Periodic Audio Carbon V3](./GRAS%20RA0045%20in-ear/Periodic%20Audio%20Carbon%20V3) on GRAS RA0045
+- [Periodic Audio Magnesium V3](./GRAS%20RA0045%20in-ear/Periodic%20Audio%20Magnesium%20V3) on GRAS RA0045
+- [Periodic Audio Titanium V3](./GRAS%20RA0045%20in-ear/Periodic%20Audio%20Titanium%20V3) on GRAS RA0045
+- [Questyle NHB12](./GRAS%20RA0045%20in-ear/Questyle%20NHB12) on GRAS RA0045
+- [RBH EP2](./Bruel%20&%20Kjaer%205128%20in-ear/RBH%20EP2) on Bruel & Kjaer 5128
+- [RHA CL2](./GRAS%20RA0045%20in-ear/RHA%20CL2) on GRAS RA0045
+- [Samsung AKG EO-IG955](./GRAS%20RA0045%20in-ear/Samsung%20AKG%20EO-IG955) on GRAS RA0045
+- [Samsung Galaxy Buds Live](./earbud/Samsung%20Galaxy%20Buds%20Live)
+- [Samsung Galaxy Buds Pro](./GRAS%20RA0045%20in-ear/Samsung%20Galaxy%20Buds%20Pro) on GRAS RA0045
+- [Samsung Galaxy Buds2 Pro](./GRAS%20RA0045%20in-ear/Samsung%20Galaxy%20Buds2%20Pro) on GRAS RA0045
+- [SeeAudio Yume](./GRAS%20RA0045%20in-ear/SeeAudio%20Yume) on GRAS RA0045
+- [Sennheiser HD 560S](./over-ear/Sennheiser%20HD%20560S)
+- [Sennheiser HD 660 S](./over-ear/Sennheiser%20HD%20660%20S)
+- [Sennheiser HD 800 S](./over-ear/Sennheiser%20HD%20800%20S)
+- [Sennheiser HD 820](./over-ear/Sennheiser%20HD%20820)
+- [Sennheiser IE 300](./GRAS%20RA0045%20in-ear/Sennheiser%20IE%20300) on GRAS RA0045
+- [Sennheiser IE 600 (foam eartips)](./GRAS%20RA0045%20in-ear/Sennheiser%20IE%20600%20(foam%20eartips)) on GRAS RA0045
+- [Sennheiser IE 600 (silicone eartips)](./GRAS%20RA0045%20in-ear/Sennheiser%20IE%20600%20(silicone%20eartips)) on GRAS RA0045
+- [Sennheiser IE 800 S](./GRAS%20RA0045%20in-ear/Sennheiser%20IE%20800%20S) on GRAS RA0045
+- [Sennheiser IE 900 (foam eartips)](./GRAS%20RA0045%20in-ear/Sennheiser%20IE%20900%20(foam%20eartips)) on GRAS RA0045
+- [Sennheiser IE 900 (silicone eartips)](./GRAS%20RA0045%20in-ear/Sennheiser%20IE%20900%20(silicone%20eartips)) on GRAS RA0045
+- [Sennheiser Momentum True Wireless 2](./GRAS%20RA0045%20in-ear/Sennheiser%20Momentum%20True%20Wireless%202) on GRAS RA0045
+- [Sennheiser Momentum True Wireless 3](./GRAS%20RA0045%20in-ear/Sennheiser%20Momentum%20True%20Wireless%203) on GRAS RA0045
+- [Shozy Cygnus](./earbud/Shozy%20Cygnus)
+- [Shozy Stardust (bK)](./earbud/Shozy%20Stardust%20(bK))
+- [Shozy x AAW Hibiki](./Bruel%20&%20Kjaer%205128%20in-ear/Shozy%20x%20AAW%20Hibiki) on Bruel & Kjaer 5128
+- [Shozy x AAW POLA39](./Bruel%20&%20Kjaer%205128%20in-ear/Shozy%20x%20AAW%20POLA39) on Bruel & Kjaer 5128
+- [Shuoer Cadenza 12](./GRAS%20RA0045%20in-ear/Shuoer%20Cadenza%2012) on GRAS RA0045
+- [Shure KSE1500](./Bruel%20&%20Kjaer%205128%20in-ear/Shure%20KSE1500) on Bruel & Kjaer 5128
+- [Simgot Audio EN700 Pro](./GRAS%20RA0045%20in-ear/Simgot%20Audio%20EN700%20Pro) on GRAS RA0045
+- [Skullcandy Smokin Buds 2](./GRAS%20RA0045%20in-ear/Skullcandy%20Smokin%20Buds%202) on GRAS RA0045
+- [Sony IER-M9](./GRAS%20RA0045%20in-ear/Sony%20IER-M9) on GRAS RA0045
+- [Sony IER-Z1R](./GRAS%20RA0045%20in-ear/Sony%20IER-Z1R) on GRAS RA0045
+- [Sony LinkBuds S](./GRAS%20RA0045%20in-ear/Sony%20LinkBuds%20S) on GRAS RA0045
+- [Sony MDR-Z1R](./over-ear/Sony%20MDR-Z1R)
+- [Sony MDR-Z7M2](./over-ear/Sony%20MDR-Z7M2)
+- [Sony MH755](./GRAS%20RA0045%20in-ear/Sony%20MH755) on GRAS RA0045
+- [Sony WF-1000XM3](./GRAS%20RA0045%20in-ear/Sony%20WF-1000XM3) on GRAS RA0045
+- [Sony WF-1000XM4](./GRAS%20RA0045%20in-ear/Sony%20WF-1000XM4) on GRAS RA0045
+- [Sony WH-1000XM4 (ANC Off)](./over-ear/Sony%20WH-1000XM4%20(ANC%20Off))
+- [Sony WH-1000XM4 (ANC on)](./over-ear/Sony%20WH-1000XM4%20(ANC%20on))
+- [SoundMAGIC E11C](./Bruel%20&%20Kjaer%205128%20in-ear/SoundMAGIC%20E11C) on Bruel & Kjaer 5128
+- [Symphonium Audio Helios](./GRAS%20RA0045%20in-ear/Symphonium%20Audio%20Helios) on GRAS RA0045
+- [Tanchjim Darling](./GRAS%20RA0045%20in-ear/Tanchjim%20Darling) on GRAS RA0045
+- [ThieAudio Monarch MKIII](./GRAS%20RA0045%20in-ear/ThieAudio%20Monarch%20MKIII) on GRAS RA0045
+- [Toneking TO200](./earbud/Toneking%20TO200)
+- [Truthear Hexa](./GRAS%20RA0045%20in-ear/Truthear%20Hexa) on GRAS RA0045
+- [TY Hi-Z HM150](./earbud/TY%20Hi-Z%20HM150)
+- [TY Hi-Z HP32](./earbud/TY%20Hi-Z%20HP32)
+- [Ultimate Ears Reference Remastered](./GRAS%20RA0045%20in-ear/Ultimate%20Ears%20Reference%20Remastered) on GRAS RA0045
+- [Ultimate Ears UE18+ Pro](./GRAS%20RA0045%20in-ear/Ultimate%20Ears%20UE18+%20Pro) on GRAS RA0045
+- [Venture Electronics Asura 2.0](./earbud/Venture%20Electronics%20Asura%202.0)
+- [Venture Electronics Monk Blood Orange](./earbud/Venture%20Electronics%20Monk%20Blood%20Orange)
+- [Venture Electronics Monk Plus](./earbud/Venture%20Electronics%20Monk%20Plus)
+- [Venture Electronics Zen](./earbud/Venture%20Electronics%20Zen)
+- [Vision Ears Elysium](./GRAS%20RA0045%20in-ear/Vision%20Ears%20Elysium) on GRAS RA0045
+- [Vision Ears EVE 20](./GRAS%20RA0045%20in-ear/Vision%20Ears%20EVE%2020) on GRAS RA0045
+- [Vision Ears PHöNIX](./GRAS%20RA0045%20in-ear/Vision%20Ears%20PH%C3%B6NIX) on GRAS RA0045
+- [Vision Ears VE8](./GRAS%20RA0045%20in-ear/Vision%20Ears%20VE8) on GRAS RA0045
+- [Westone W60](./Bruel%20&%20Kjaer%205128%20in-ear/Westone%20W60) on Bruel & Kjaer 5128
+- [Yincrow X6](./earbud/Yincrow%20X6)
+- [Zero Audio Carbo Tenore](./Bruel%20&%20Kjaer%205128%20in-ear/Zero%20Audio%20Carbo%20Tenore) on Bruel & Kjaer 5128
