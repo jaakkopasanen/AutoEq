@@ -4784,9 +4784,9 @@ from the same source.
 - [Sennheiser CX 2.00](./Innerfidelity/in-ear/Sennheiser%20CX%202.00) by Innerfidelity
 - [Sennheiser CX 3.00](./oratory1990/in-ear/Sennheiser%20CX%203.00) by oratory1990
 - [Sennheiser CX 300-II](./Headphone.com%20Legacy/in-ear/Sennheiser%20CX%20300-II) by Headphone.com Legacy
-- [Sennheiser CX 400BT](./RikudouGoku/over-ear/Sennheiser%20CX%20400BT) by RikudouGoku
 - [Sennheiser CX 400BT](./Rtings/over-ear/Sennheiser%20CX%20400BT) by Rtings
 - [Sennheiser CX 400BT](./oratory1990/in-ear/Sennheiser%20CX%20400BT) by oratory1990
+- [Sennheiser CX 400BT](./RikudouGoku/in-ear/Sennheiser%20CX%20400BT) by RikudouGoku
 - [Sennheiser CX 500](./Headphone.com%20Legacy/in-ear/Sennheiser%20CX%20500) by Headphone.com Legacy
 - [Sennheiser CX 680](./Headphone.com%20Legacy/in-ear/Sennheiser%20CX%20680) by Headphone.com Legacy
 - [Sennheiser CX 880](./Headphone.com%20Legacy/in-ear/Sennheiser%20CX%20880) by Headphone.com Legacy

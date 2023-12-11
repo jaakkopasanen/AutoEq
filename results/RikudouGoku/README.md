@@ -145,7 +145,7 @@
 - [Periodic Audio Be](./in-ear/Periodic%20Audio%20Be)
 - [Samsung Galaxy Buds Pro](./in-ear/Samsung%20Galaxy%20Buds%20Pro)
 - [SeeAudio Bravery](./in-ear/SeeAudio%20Bravery)
-- [Sennheiser CX 400BT](./over-ear/Sennheiser%20CX%20400BT)
+- [Sennheiser CX 400BT](./in-ear/Sennheiser%20CX%20400BT)
 - [Shozy Form 1.1](./in-ear/Shozy%20Form%201.1)
 - [Shuoer EJ07M](./in-ear/Shuoer%20EJ07M)
 - [Shuoer Tape](./in-ear/Shuoer%20Tape)

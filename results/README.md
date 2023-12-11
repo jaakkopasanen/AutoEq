@@ -3440,7 +3440,7 @@ Headphone ranking based on Harman listener preference scores can be found in the
 - [Sennheiser CX 2.00](./oratory1990/in-ear/Sennheiser%20CX%202.00)
 - [Sennheiser CX 3.00](./oratory1990/in-ear/Sennheiser%20CX%203.00)
 - [Sennheiser CX 300-II](./Headphone.com%20Legacy/in-ear/Sennheiser%20CX%20300-II)
-- [Sennheiser CX 400BT](./RikudouGoku/over-ear/Sennheiser%20CX%20400BT)
+- [Sennheiser CX 400BT](./Rtings/over-ear/Sennheiser%20CX%20400BT)
 - [Sennheiser CX 500](./Headphone.com%20Legacy/in-ear/Sennheiser%20CX%20500)
 - [Sennheiser CX 680](./Headphone.com%20Legacy/in-ear/Sennheiser%20CX%20680)
 - [Sennheiser CX 880](./Headphone.com%20Legacy/in-ear/Sennheiser%20CX%20880)

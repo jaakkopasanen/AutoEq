@@ -17,6 +17,27 @@ from dbtools.name_index import NameIndex, NameItem
 from dbtools.constants import MEASUREMENTS_PATH
 
 
+_squig_rigs = {
+    'Auriculares Argentina': {'in-ear': '711', 'over-ear': 'KB501x + 711'},
+    'Bakkwatan': {'in-ear': '711'},
+    'DHRME': {'in-ear': '711'},
+    'Fahryst': {'in-ear': '711'},
+    'Filk': {'in-ear': '711', 'over-ear': 'KB006x + 711'},
+    'freeryder05': {'in-ear': '711'},
+    'Harpo': {'in-ear': '711'},
+    'Hi End Portable': {'in-ear': '711'},
+    'Jaytiss': {'in-ear': '711'},
+    'Kazi': {'in-ear': '711'},
+    'kr0mka': {'in-ear': '711', 'over-ear': 'KB501x + 711'},
+    'Kuulokenurkka': {'in-ear': '711', 'over-ear': 'KB501x + 711'},
+    'Regan Cipher': {'in-ear': '711', 'over-ear': 'KB500x + 711'},
+    'RikudouGoku': {'in-ear': '711'},
+    'Super Review': {'in-ear': '711', 'over-ear': 'KB006x + 711'},
+    'Ted\'s Squig Hoard': {'in-ear': '711', 'over-ear': 'KB500x + 711'},
+    'ToneDeafMonk': {'in-ear': '711'},
+}
+
+
 class SquigCrawlerManager:
     def __init__(self):
         sites = requests.get('https://squig.link/squigsites.json', headers={
@@ -112,7 +133,7 @@ class SquigCrawler(CrinacleCrawlerBase):
                         url=f'{self.db_url(db)}/{anchor["href"]}',
                         source_name=book[normalized_file_name] if normalized_file_name in book else None,
                         form=form,
-                        rig=db['rig'] if 'rig' in db and db['rig'] else None  # TODO
+                        rig=_squig_rigs[self.name][form]
                     )
                 self.resolve(item)
                 self.crawl_index.add(item)
