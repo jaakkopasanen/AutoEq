@@ -10,6 +10,12 @@ AutoEq [Github page](https://github.com/jaakkopasanen/AutoEq) also serves as a d
 measurements, pre-computed results and has documentation about different equalizers and how the implementation works.
 
 ### Updates
+#### 4.1.2
+* Fixed Room Eq Wizard CSV export parsing
+* Added Moondrop Free DSP PEQ optimizer config
+* Fixed reading windows-1252 encoded CSV files
+* Fixed graphic eq optimization producing wildly different results from the equalizer target
+
 #### 4.1.1
 * Updated changelog
 

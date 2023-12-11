@@ -131,6 +131,8 @@ python -m autoeq --input-file="measurements/oratory1990/data/over-ear/Sennheiser
 ```
 
 ### Building
+Add changelog entry before building and update version number in pyproject.toml!
+
 Install `build` and `twine`
 ```shell
 python -m pip install build twine
