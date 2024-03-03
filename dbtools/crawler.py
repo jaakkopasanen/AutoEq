@@ -394,6 +394,8 @@ class Crawler(ABC):
     def rename_measurement(self, old_name, new_name, dry_run=False):
         """Changes measurement's name in name index and renames the file."""
         items = self.name_index.find(name=old_name)
+        if items is None:
+            raise ValueError(f'No items found for {old_name} in {self.measurements_path}')
         renamed_file = False
         for item in items:
             old_path = self.target_path(item)

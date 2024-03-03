@@ -1435,6 +1435,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Xele
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Xelento L.txt	Beyerdynamic Xelento	Beyerdynamic Xelento	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Big Bus L.txt	Big Bus Earbuds	Big Bus Earbuds	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Big Bus R.txt	Big Bus Earbuds	Big Bus Earbuds	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Chopin L.txt	Binary Acoustics Chopin	Binary Acoustics x Gizaudio Chopin	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Chopin R.txt	Binary Acoustics Chopin	Binary Acoustics x Gizaudio Chopin	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Chopin L.txt	Binary Acoustics Chopin	Binary Acoustics x Gizaudio Chopin	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Chopin R.txt	Binary Acoustics Chopin	Binary Acoustics x Gizaudio Chopin	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/GRAS 43AG-7/700 L1.txt	Bose Noise Cancelling Headphones 700	Bose Noise Cancelling Headphones 700	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/700 L3.txt	Bose Noise Cancelling Headphones 700	Bose Noise Cancelling Headphones 700	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/700 L2.txt	Bose Noise Cancelling Headphones 700	Bose Noise Cancelling Headphones 700	over-ear	GRAS 43AG-7
@@ -1643,6 +1647,7 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/D800
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/D8000 #3 R.txt		D8000	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/D8000 #4 R.txt		D8000	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/D8000 #5 R.txt		D8000	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUCK V2.0 DSP Bass+ L.txt		DUCK V2.0 DSP Bass+	ignore	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DK-2001 R.txt	DUNU DK-2001	DUNU DK2001	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DK-2001 L.txt	DUNU DK-2001	DUNU DK2001	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DK3001 Pro R.txt	DUNU DK-3001 Pro	DUNU DK3001 Pro	in-ear	711
@@ -1703,6 +1708,13 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen Pro R.txt	DUNU Zen Pro S2	DUNU Zen Pro	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen Pro S2 L.txt		DUNU Zen Pro	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Zen Pro S2 R.txt		DUNU Zen Pro	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP Bass+ L.txt		DUSK V2.0 DSP Bass+	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP Bass+ R.txt		DUSK V2.0 DSP Bass+	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP Bass+ R.txt		DUSK V2.0 DSP Bass+	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP Diffuse L.txt		DUSK V2.0 DSP Diffuse	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP Diffuse R.txt		DUSK V2.0 DSP Diffuse	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP Diffuse L.txt		DUSK V2.0 DSP Diffuse	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP Diffuse R.txt		DUSK V2.0 DSP Diffuse	ignore	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Daiso R.txt	Daiso earphones	Daiso $2 earphones	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Daiso L.txt	Daiso earphones	Daiso $2 earphones	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Aeon 2 Closed L3.txt	DCA (Dan Clark Audio) Aeon 2 Closed	Dan Clark Audio Aeon 2 Closed	over-ear	GRAS 43AG-7
@@ -1807,6 +1819,7 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Tend
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Tender L.txt	Dethonray Tender I	Dethonray Tender I	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Tender R.txt	Dethonray Tender I	Dethonray Tender I	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Tender L.txt	Dethonray Tender I	Dethonray Tender I	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Diffuse Field (-0.8dB tilt) Target.txt		Diffuse Field (-0.8dB tilt) Target	ignore	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Answer L.txt	Dita Answer	Dita Audio Answer	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Answer R.txt	Dita Answer	Dita Audio Answer	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Brass R.txt	Dita Brass	Dita Audio Brass	in-ear	711
@@ -1829,6 +1842,8 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Saku
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Sakura 71 R.txt	Dita Sakura 71	Dita Audio Sakura 71	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Truth L.txt	Dita Truth	Dita Audio Truth	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Truth R.txt	Dita Truth	Dita Audio Truth	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk L.txt		Dusk	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk R.txt		Dusk	ignore	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DM200H R.txt	Dynamic Motion DM200H	Dynamic Motion DM200H	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DM200H L.txt	Dynamic Motion DM200H	Dynamic Motion DM200H	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/Zone (Neutral) L1.txt	"Dyson Zone (""Neutral"" EQ)"	Dyson Zone	over-ear	GRAS 43AG-7
@@ -2132,6 +2147,10 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Saku
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Sakura FF L.txt	Fatfreq Sakura 	Fatfreq Sakura	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Sakura FF On L.txt	Fatfreq Sakura (Bass switch on)	Fatfreq Sakura (bass switch on)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Sakura FF On R.txt	Fatfreq Sakura (Bass switch on)	Fatfreq Sakura (bass switch on)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Scarlet Mini L.txt	Fatfreq Scarlet Mini	Fatfreq Scarlet Mini	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Scarlet Mini R.txt	Fatfreq Scarlet Mini	Fatfreq Scarlet Mini	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Scarlet Mini L.txt	Fatfreq Scarlet Mini	Fatfreq Scarlet Mini	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Scarlet Mini R.txt	Fatfreq Scarlet Mini	Fatfreq Scarlet Mini	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Tsuru R.txt	Fatfreq Tsuru	Fatfreq Tsuru	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Tsuru L.txt	Fatfreq Tsuru	Fatfreq Tsuru	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/ACME 8 R.txt	ACME 8	Fearless Audio ACME 8	in-ear	711
@@ -2623,6 +2642,8 @@ file://measurements/crinacle/raw_data/4620 IEM Measurements/GK10 L.txt	Geek Wold
 file://measurements/crinacle/raw_data/4620 IEM Measurements/GK10 R.txt	Geek Wold GK10	Geek Wold GK10	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GK3 L.txt	Geek Wold GK3	Geek Wold GK3	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GK3 R.txt	Geek Wold GK3	Geek Wold GK3	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Genesis L.txt		Genesis	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Genesis R.txt		Genesis	ignore	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GL12 Filter L.txt	Gold Planar GL12 (Filter)	Gold Planar GL12 (filter)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GL12 Filter R.txt	Gold Planar GL12 (Filter)	Gold Planar GL12 (filter)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/GL12 L.txt	Gold Planar GL12 (No filter)	Gold Planar GL12 (no filter)	in-ear	711
@@ -4154,6 +4175,36 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Azul
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Azul L.txt	Prisma Audio Azul	Prisma Audio Azul	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Azul L.txt	Prisma Audio Azul	Prisma Audio Azul	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Azul R.txt	Prisma Audio Azul	Prisma Audio Azul	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 L.txt	Project DUSK V2.0 Analog	Project DUSK V2.0 Analog	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 R.txt	Project DUSK V2.0 Analog	Project DUSK V2.0 Analog	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 L.txt	Project DUSK V2.0 Analog	Project DUSK V2.0 Analog	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 R.txt	Project DUSK V2.0 Analog	Project DUSK V2.0 Analog	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP L.txt	Project DUSK V2.0 DSP (Default profile)	Project DUSK V2.0 DSP (Default profile)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP R.txt	Project DUSK V2.0 DSP (Default profile)	Project DUSK V2.0 DSP (Default profile)	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP L.txt	Project DUSK V2.0 DSP (Default profile)	Project DUSK V2.0 DSP (Default profile)	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP R.txt	Project DUSK V2.0 DSP (Default profile)	Project DUSK V2.0 DSP (Default profile)	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP Diffuse-Tilted L.txt	Project DUSK V2.0 DSP (Diffuse-Tilted profile)	Project DUSK V2.0 DSP (Diffuse-Tilted profile)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP Diffuse-Tilted R.txt	Project DUSK V2.0 DSP (Diffuse-Tilted profile)	Project DUSK V2.0 DSP (Diffuse-Tilted profile)	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP Diffuse-Tilted L.txt	Project DUSK V2.0 DSP (Diffuse-Tilted profile)	Project DUSK V2.0 DSP (Diffuse-Tilted profile)	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP Diffuse-Tilted R.txt	Project DUSK V2.0 DSP (Diffuse-Tilted profile)	Project DUSK V2.0 DSP (Diffuse-Tilted profile)	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP Harman L.txt	Project DUSK V2.0 DSP (Harman profile)	Project DUSK V2.0 DSP (Harman profile)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP Harman R.txt	Project DUSK V2.0 DSP (Harman profile)	Project DUSK V2.0 DSP (Harman profile)	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP Harman L.txt	Project DUSK V2.0 DSP (Harman profile)	Project DUSK V2.0 DSP (Harman profile)	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP Harman R.txt	Project DUSK V2.0 DSP (Harman profile)	Project DUSK V2.0 DSP (Harman profile)	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP V L.txt	Project DUSK V2.0 DSP (V profile)	Project DUSK V2.0 DSP (V profile)	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK V2.0 DSP V R.txt	Project DUSK V2.0 DSP (V profile)	Project DUSK V2.0 DSP (V profile)	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP V L.txt	Project DUSK V2.0 DSP (V profile)	Project DUSK V2.0 DSP (V profile)	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK V2.0 DSP V R.txt	Project DUSK V2.0 DSP (V profile)	Project DUSK V2.0 DSP (V profile)	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Genesis V2 L.txt	Project Genesis V2.0	Project Genesis V2.0	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Genesis V2 R.txt	Project Genesis V2.0	Project Genesis V2.0	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Genesis V2 L.txt	Project Genesis V2.0	Project Genesis V2.0	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Genesis V2 R.txt	Project Genesis V2.0	Project Genesis V2.0	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Mongrel V3.0 L.txt	Project Mongrel V3.0	Project Mongrel V3.0	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Mongrel V3.0 R.txt	Project Mongrel V3.0	Project Mongrel V3.0	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Resonator L.txt	Project Resonance	Project Resonance	ignore	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Resonator R.txt	Project Resonance	Project Resonance	ignore	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Resonator L.txt	Project Resonance	Project Resonance	ignore	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/Resonator R.txt	Project Resonance	Project Resonance	ignore	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T5 R.txt	QCY T5	QCY T5	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/T5 L.txt	QCY T5	QCY T5	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/T5 L.txt	QCY T5	QCY T5	in-ear	Bruel & Kjaer 4620
@@ -4621,6 +4672,12 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/HE-1 L1.txt	Sennheiser HE-1 (W
 file://measurements/crinacle/raw_data/GRAS 43AG-7/HE-1 R3.txt	Sennheiser HE-1 (Worn-ish pads)	Sennheiser HE 1 Orpheus 2 (semi-worn earpads)	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/4620 IEM Measurements/IE200 R.txt	Sennheiser IE200	Sennheiser IE 200	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/IE200 L.txt	Sennheiser IE200	Sennheiser IE 200	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IE200 Open L.txt	Sennheiser IE200 (Open tip position)	Sennheiser IE 200 (long nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IE200 Open R.txt	Sennheiser IE200 (Open tip position)	Sennheiser IE 200 (long nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/IE200 Open L.txt	Sennheiser IE200 (Open tip position)	Sennheiser IE 200 (long nozzle)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/IE200 Open R.txt	Sennheiser IE200 (Open tip position)	Sennheiser IE 200 (long nozzle)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IE200 Standard L.txt	Sennheiser IE200 (Standard tip position)	Sennheiser IE 200 (short nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IE200 Standard R.txt	Sennheiser IE200 (Standard tip position)	Sennheiser IE 200 (short nozzle)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IE300 L.txt	Sennheiser IE300	Sennheiser IE 300	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/IE300 R.txt	Sennheiser IE300	Sennheiser IE 300	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/IE300 L.txt	Sennheiser IE300	Sennheiser IE 300	in-ear	Bruel & Kjaer 4620
@@ -4861,6 +4918,20 @@ file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 L3.txt	Shure SRH840 
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 R1.txt	Shure SRH840 S2	Shure SRH840	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 R2.txt	Shure SRH840 S2	Shure SRH840	over-ear	GRAS 43AG-7
 file://measurements/crinacle/raw_data/GRAS 43AG-7/SRH840 S2 R3.txt	Shure SRH840 S2	Shure SRH840	over-ear	GRAS 43AG-7
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA1000 Black L.txt	Simgot EA1000 (Black filter)	Simgot Audio EA1000 (black nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA1000 Black R.txt	Simgot EA1000 (Black filter)	Simgot Audio EA1000 (black nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA1000 Red L.txt	Simgot EA1000 (Red filter)	Simgot Audio EA1000 (red nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA1000 Red R.txt	Simgot EA1000 (Red filter)	Simgot Audio EA1000 (red nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA1000 White L.txt	Simgot EA1000 (White filter)	Simgot Audio EA1000 (white nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA1000 White R.txt	Simgot EA1000 (White filter)	Simgot Audio EA1000 (white nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA500 Black L.txt	Simgot EA500 (Black filter)	Simgot Audio EA500 (black nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA500 Black R.txt	Simgot EA500 (Black filter)	Simgot Audio EA500 (black nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA500 Red L.txt	Simgot EA500 (Red filter)	Simgot Audio EA500 (red nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA500 Red R.txt	Simgot EA500 (Red filter)	Simgot Audio EA500 (red nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA500LM Black L.txt	Simgot EA500LM (Black filter)	Simgot Audio EA500LM (black nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA500LM Black R.txt	Simgot EA500LM (Black filter)	Simgot Audio EA500LM (black nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA500LM Red L.txt	Simgot EA500LM (Red filter)	Simgot Audio EA500LM (red nozzle)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EA500LM Red R.txt	Simgot EA500LM (Red filter)	Simgot Audio EA500LM (red nozzle)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EK3 L.txt	Simgot EK3 	Simgot Audio EK3 (off-off)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EK3 R.txt	Simgot EK3 	Simgot Audio EK3 (off-off)	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EK3 1 L.txt	Simgot EK3 (10 setting)	Simgot Audio EK3 (off-on)	in-ear	711
@@ -4875,10 +4946,16 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EM5 
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EM5 R.txt	Eternal Melody EM-5	Simgot Audio EM5	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EM5H L.txt	Eternal Melody EM-5H	Simgot Audio EM5H	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EM5H R.txt	Eternal Melody EM-5H	Simgot Audio EM5H	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EM6L L.txt	Simgot EM6L	Simgot Audio EM6L	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EM6L R.txt	Simgot EM6L	Simgot Audio EM6L	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EN700 R.txt	Simgot EN700	Simgot Audio EN700	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EN700 L.txt	Simgot EN700	Simgot Audio EN700	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EN700 Pro L.txt	Simgot EN700 Pro	Simgot Audio EN700 Pro	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EN700 Pro R.txt	Simgot EN700 Pro	Simgot Audio EN700 Pro	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EW100P S2 L.txt	Simgot EW100P	Simgot Audio EW100P	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EW100P S2 R.txt	Simgot EW100P	Simgot Audio EW100P	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EW200 L.txt	Simgot EW200	Simgot Audio EW200	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/EW200 R.txt	Simgot EW200	Simgot Audio EW200	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/RX10 L.txt	Simphonio RX10	Simphonio RX10	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/RX10 R.txt	Simphonio RX10	Simphonio RX10	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/RX10 R.txt	Simphonio RX10	Simphonio RX10	in-ear	Bruel & Kjaer 4620

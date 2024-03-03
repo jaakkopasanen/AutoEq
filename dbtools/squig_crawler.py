@@ -43,24 +43,35 @@ class SquigCrawlerManager:
         sites = requests.get('https://squig.link/squigsites.json', headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0'
         }).json()
-        self._crawlers = [SquigCrawler(username=site['username'], name=site['name'], dbs=site['dbs']) for site in sites]
+        self._crawlers = [
+            SquigCrawler(
+                username=site['username'],
+                name=make_file_name_allowed(site['name']),
+                dbs=site['dbs']
+            ) for site in sites
+        ]
 
     @property
     def crawlers(self):
         return iter(self._crawlers)
 
-    def run(self, username):
+    def crawler(self, name):
         for crawler in self.crawlers:
-            if crawler.username == username:
+            if name == crawler.name:
+                return crawler
+
+    def run(self, name):
+        for crawler in self.crawlers:
+            if crawler.name == name:
                 crawler.run()
                 return crawler
-        raise ValueError(f'Unknown squig.link site "{username}"')
+        raise ValueError(f'Unknown squig.link site "{name}"')
 
-    def process(self, username=None, new_only=True):
+    def process(self, name=None, new_only=True):
         for crawler in self.crawlers:
-            if username is None or crawler.username == username:
+            if name is None or crawler.name == name:
                 crawler.process(new_only=new_only)
-                if username is not None:
+                if name is not None:
                     return
 
 
@@ -69,7 +80,7 @@ class SquigCrawler(CrinacleCrawlerBase):
             self, driver=None, delete_existing_on_prompt=True, redownload=False,
             username=None, name=None, dbs=None):
         if username is None:
-            raise ValueError('username must be given')
+            raise ValueError('name must be given')
         if name is None:
             raise ValueError('name must be given')
         if dbs is None:

@@ -374,7 +374,12 @@ def write_webapp_entries_and_measurements(paths):
         for path in grouped_by_name[name]:
             rig = path.rig
             if not rig:
-                rig = name_indexes[path.source_name].find_one(name=name).rig
+                try:
+                    rig = name_indexes[path.source_name].find_one(name=name).rig
+                except Exception as err:
+                    print(f'name: {name}')
+                    print(f'source_name: {path.source_name}')
+                    raise err
             entries[name].append({'form': path.form, 'rig': rig, 'source': path.source_name})
             if path.source_name not in measurements[name]:
                 measurements[name][path.source_name] = dict()

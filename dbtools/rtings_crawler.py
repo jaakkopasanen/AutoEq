@@ -52,10 +52,10 @@ class RtingsCrawler(Crawler):
     @staticmethod
     def graph_data_url_payloads():
         product_graph_data_url_payloads = []
-        for version in ['1-5', '1-4', '1-2']:
+        for version in ['1-6', '1-5', '1-4', '1-2']:
             html = requests.get(f'https://www.rtings.com/headphones/{version}/graph').text
             document = BeautifulSoup(html, 'html.parser')
-            test_bench = json.loads(document.find(class_='graph_tool_page').get('data-props'))['test_bench']
+            test_bench = json.loads(document.find(class_='app-body').find('div').get('data-props'))['test_bench']
             for product in test_bench['comparable_products']:
                 if product["fullname"] in [payload['source_name'] for payload in product_graph_data_url_payloads]:
                     # The versions are iterated from newest to oldest, if product with the same name already exists,

@@ -2,6 +2,10 @@ url	source_name	name	form	rig
 https://regancipher.squig.link/data/1More%20S50%20L.txt	1More Fit Open S50	1MORE Fit Open Earbuds S50	in-ear	711
 https://regancipher.squig.link/data/1More%20S50%20R.txt	1More Fit Open S50	1MORE Fit Open Earbuds S50	in-ear	711
 https://regancipher.squig.link/data/Omthing%20Airfree%202%20R.txt	Omthing Airfree 2	1MORE Omthing Airfree 2	in-ear	711
+https://regancipher.squig.link/data/1More%20Q30%20L.txt	1More Pistonbuds Pro Q30	1MORE PistonBuds Pro Q30	in-ear	711
+https://regancipher.squig.link/data/1More%20Q30%20R.txt	1More Pistonbuds Pro Q30	1MORE PistonBuds Pro Q30	in-ear	711
+https://regancipher.squig.link/data/7Hz%20Zero2%20L.txt	7Hz x Crinacle Zero:2	7Hz x Crinacle Zero 2	in-ear	711
+https://regancipher.squig.link/data/7Hz%20Zero2%20R.txt	7Hz x Crinacle Zero:2	7Hz x Crinacle Zero 2	in-ear	711
 https://regancipher.squig.link/data/Alpha%20and%20Delta%20AD15%20L.txt	Alpha & Delta KS100 AD15	Alpha & Delta KS100	in-ear	711
 https://regancipher.squig.link/data/Alpha%20and%20Delta%20AD15%20R.txt	Alpha & Delta KS100 AD15	Alpha & Delta KS100	in-ear	711
 https://regancipher.squig.link/data/Alpha%20and%20Delta%20AD16%20L.txt	Alpha & Delta KS100 AD16	Alpha & Delta KS100	in-ear	711
@@ -13,26 +17,48 @@ https://regancipher.squig.link/data/Soundcore%20P3i%20R.txt	Soundcore P3i	Anker 
 https://regancipher.squig.link/data/Soundcore%20Aerofit%20Pro%20L.txt	Soundcore Aerofit Pro	Anker Soundcore Aerofit Pro	earbud	KB500x + 711
 https://regancipher.squig.link/data/Soundcore%20Aerofit%20Pro%20R.txt	Soundcore Aerofit Pro	Anker Soundcore Aerofit Pro	earbud	KB500x + 711
 https://regancipher.squig.link/data/Soundcore%20Liberty%203%20Pro%20L.txt	Soundcore Liberty 3 Pro	Anker Soundcore Liberty 3 Pro	in-ear	711
+https://regancipher.squig.link/data/Soundcore%20Liberty%204%20NC%20L.txt	Soundcore Liberty 4 NC	Anker Soundcore Liberty 4 NC	in-ear	711
+https://regancipher.squig.link/data/Soundcore%20Liberty%204%20NC%20R.txt	Soundcore Liberty 4 NC	Anker Soundcore Liberty 4 NC	in-ear	711
 https://regancipher.squig.link/data/Soundcore%20Space%20A40%20L.txt	Soundcore Space A40	Anker Soundcore Space A40	in-ear	711
 https://regancipher.squig.link/data/Soundcore%20Space%20A40%20R.txt	Soundcore Space A40	Anker Soundcore Space A40	in-ear	711
 https://regancipher.squig.link/data/BASN%20MMCX%20L.txt	BASN MMCX	BASN MMCX	in-ear	711
 https://regancipher.squig.link/data/BASN%20MMCX%20R.txt	BASN MMCX	BASN MMCX	in-ear	711
+https://regancipher.squig.link/data/Baseus%20AirGo%20AS01%20L.txt	Baseus AirGo AS01	Baseus AirGo AS01	in-ear	711
+https://regancipher.squig.link/data/Baseus%20AirGo%20AS01%20R.txt	Baseus AirGo AS01	Baseus AirGo AS01	in-ear	711
+https://regancipher.squig.link/data/Baseus%20AirGo%20AS01%20Bass%20Boost%20L.txt	Baseus AirGo AS01 Bass Boost	Baseus AirGo AS01 Bass Boost	ignore	711
+https://regancipher.squig.link/data/Baseus%20AirGo%20AS01%20Bass%20Boost%20R.txt	Baseus AirGo AS01 Bass Boost	Baseus AirGo AS01 Bass Boost	ignore	711
 https://regancipher.squig.link/data/Baseus%20M2S%20L.txt	Baseus M2S	Baseus M2s	in-ear	711
 https://regancipher.squig.link/data/Baseus%20M2S%20R.txt	Baseus M2S	Baseus M2s	in-ear	711
 https://regancipher.squig.link/data/CCA%20CRA%20L.txt	CCA CRA	CCA CRA	in-ear	711
 https://regancipher.squig.link/data/CCA%20CRA%20R.txt	CCA CRA	CCA CRA	in-ear	711
 https://regancipher.squig.link/data/CCZ%20Emerald%20L.txt	CCZ Emerald	CCZ Emerald	in-ear	711
 https://regancipher.squig.link/data/CCZ%20Emerald%20R.txt	CCZ Emerald	CCZ Emerald	in-ear	711
+https://regancipher.squig.link/data/Creative%20Aurvana%20Ace%202%20L.txt	Creative Aurvana Ace 2	Creative Aurvana Ace 2	in-ear	711
+https://regancipher.squig.link/data/Creative%20Aurvana%20Ace%202%20R.txt	Creative Aurvana Ace 2	Creative Aurvana Ace 2	in-ear	711
 https://regancipher.squig.link/data/Creative%20Outlier%20Pro%20L.txt	Creative Outlier Pro	Creative Outlier Pro	in-ear	711
 https://regancipher.squig.link/data/Creative%20Outlier%20Pro%20R.txt	Creative Outlier Pro	Creative Outlier Pro	in-ear	711
 https://regancipher.squig.link/data/Creative%20Sensemore%20Air%20L.txt	Creative Sensemore Air	Creative Sensemore Air	in-ear	711
 https://regancipher.squig.link/data/Creative%20Sensemore%20Air%20R.txt	Creative Sensemore Air	Creative Sensemore Air	in-ear	711
 https://regancipher.squig.link/data/Creative%20Zen%20Hybrid%20Pro%20SXFI%20L.txt	Creative Zen Hybrid Pro SXFI	Creative Zen Hybrid Pro SXFI	over-ear	KB500x + 711
 https://regancipher.squig.link/data/Creative%20Zen%20Hybrid%20Pro%20SXFI%20R.txt	Creative Zen Hybrid Pro SXFI	Creative Zen Hybrid Pro SXFI	over-ear	KB500x + 711
+https://regancipher.squig.link/data/EPZ%20G10%20L.txt	EPZ G10	EPZ G10	in-ear	711
+https://regancipher.squig.link/data/EPZ%20G10%20R.txt	EPZ G10	EPZ G10	in-ear	711
+https://regancipher.squig.link/data/EPZ%20Q5%20L.txt	EPZ Q5	EPZ Q5	in-ear	711
+https://regancipher.squig.link/data/EPZ%20Q5%20R.txt	EPZ Q5	EPZ Q5	in-ear	711
+https://regancipher.squig.link/data/Tipsy%20X%20EPZ%20Star%20and%20One%20L.txt	EPZ x Tipsy Star & One	EPZ x Tipsy Star & One	in-ear	711
+https://regancipher.squig.link/data/Tipsy%20X%20EPZ%20Star%20and%20One%20R.txt	EPZ x Tipsy Star & One	EPZ x Tipsy Star & One	in-ear	711
 https://regancipher.squig.link/data/Earfun%20Air%20Pro%203%20L.txt	Earfun Air Pro 3	EarFun Air Pro 3	in-ear	711
 https://regancipher.squig.link/data/Earfun%20Air%20Pro%203%20R.txt	Earfun Air Pro 3	EarFun Air Pro 3	in-ear	711
 https://regancipher.squig.link/data/Edifier%20NeoBuds%20Pro%20L.txt	Edifier NeoBuds Pro	Edifier NeoBuds Pro	in-ear	711
 https://regancipher.squig.link/data/Edifier%20NeoBuds%20Pro%20R.txt	Edifier NeoBuds Pro	Edifier NeoBuds Pro	in-ear	711
+https://regancipher.squig.link/data/Edifier%20NeoBuds%20Pro%202%20L.txt	Edifier NeoBuds Pro 2	Edifier NeoBuds Pro 2	in-ear	711
+https://regancipher.squig.link/data/Edifier%20NeoBuds%20Pro%202%20R.txt	Edifier NeoBuds Pro 2	Edifier NeoBuds Pro 2	in-ear	711
+https://regancipher.squig.link/data/Edifier%20WH820%20Plus%20ANC%20off%20L.txt	Edifier W820NB Plus ANC off	Edifier W820NB Plus (ANC off)	over-ear	711
+https://regancipher.squig.link/data/Edifier%20WH820%20Plus%20ANC%20off%20R.txt	Edifier W820NB Plus ANC off	Edifier W820NB Plus (ANC off)	over-ear	711
+https://regancipher.squig.link/data/Edifier%20WH820%20Plus%20L.txt	Edifier W820NB Plus ANC on	Edifier W820NB Plus (ANC on)	over-ear	711
+https://regancipher.squig.link/data/Edifier%20WH820%20Plus%20R.txt	Edifier W820NB Plus ANC on	Edifier W820NB Plus (ANC on)	over-ear	711
+https://regancipher.squig.link/data/Edifier%20WH820NB%20Plus%20Amb%20L.txt	Edifier W820NB Plus Ambient	Edifier W820NB Plus Ambient	ignore	711
+https://regancipher.squig.link/data/Edifier%20WH820NB%20Plus%20Amb%20R.txt	Edifier W820NB Plus Ambient	Edifier W820NB Plus Ambient	ignore	711
 https://regancipher.squig.link/data/Edifier%20WH700NB%20L.txt	Edifier WH700NB	Edifier WH700NB	over-ear	KB500x + 711
 https://regancipher.squig.link/data/Edifier%20WH700NB%20R.txt	Edifier WH700NB	Edifier WH700NB	over-ear	KB500x + 711
 https://regancipher.squig.link/data/Edifier%20X3%20Lite%20L.txt	Edifier X3 Lite	Edifier X3 Lite	in-ear	711
@@ -41,14 +67,30 @@ https://regancipher.squig.link/data/FIIL%20Key%20L.txt	FIIL Key	FIIL Key	in-ear	
 https://regancipher.squig.link/data/FIIL%20Key%20R.txt	FIIL Key	FIIL Key	in-ear	711
 https://regancipher.squig.link/data/Haylou%20Purfree%20Buds%20L.txt	Haylou Purfree Buds	Haylou PurFree Buds	in-ear	711
 https://regancipher.squig.link/data/Haylou%20Purfree%20Buds%20R.txt	Haylou Purfree Buds	Haylou PurFree Buds	in-ear	711
+https://regancipher.squig.link/data/Haylou%20S30%20ANC%20on%20L.txt	Haylou S30 ANC on	Haylou S30 (ANC on)	over-ear	711
+https://regancipher.squig.link/data/Haylou%20S30%20ANC%20on%20R.txt	Haylou S30 ANC on	Haylou S30 (ANC on)	over-ear	711
 https://regancipher.squig.link/data/Haylou%20S35%20L.txt		Haylou S35	over-ear	KB500x + 711
 https://regancipher.squig.link/data/Haylou%20S35%20R.txt		Haylou S35	over-ear	KB500x + 711
+https://regancipher.squig.link/data/Haylou%20S30%20ANC%20off%20L.txt	Haylou S35 ANC off	Haylou S35 (ANC off)	over-ear	711
+https://regancipher.squig.link/data/Haylou%20S30%20ANC%20off%20R.txt	Haylou S35 ANC off	Haylou S35 (ANC off)	over-ear	711
 https://regancipher.squig.link/data/Haylou%20S35%20ANC%20L.txt	Haylou S35 ANC	Haylou S35 ANC	in-ear	711
 https://regancipher.squig.link/data/Haylou%20S35%20ANC%20R.txt	Haylou S35 ANC	Haylou S35 ANC	in-ear	711
 https://regancipher.squig.link/data/Haylou%20W1%20ANC%20L.txt	Haylou W1 ANC	Haylou W1 ANC	in-ear	711
 https://regancipher.squig.link/data/Haylou%20W1%20ANC%20R.txt	Haylou W1 ANC	Haylou W1 ANC	in-ear	711
+https://regancipher.squig.link/data/Hidizs%20MS3%20Red%20L.txt	Hidizs MS3 Red	Hidizs MS3 (red nozzle)	in-ear	711
+https://regancipher.squig.link/data/Hidizs%20MS3%20Red%20R.txt	Hidizs MS3 Red	Hidizs MS3 (red nozzle)	in-ear	711
+https://regancipher.squig.link/data/Hidizs%20MS3%20Gold%20L.txt	Hidizs MS3 Gold	Hidizs MS3 (rosegold nozzle)	in-ear	711
+https://regancipher.squig.link/data/Hidizs%20MS3%20Gold%20R.txt	Hidizs MS3 Gold	Hidizs MS3 (rosegold nozzle)	in-ear	711
+https://regancipher.squig.link/data/Hidizs%20MS3%20Silver%20L.txt	Hidizs MS3 Silver	Hidizs MS3 (silver nozzle)	in-ear	711
+https://regancipher.squig.link/data/Hidizs%20MS3%20Silver%20R.txt	Hidizs MS3 Silver	Hidizs MS3 (silver nozzle)	in-ear	711
 https://regancipher.squig.link/data/Huawei%20Freebuds%20Pro%20L.txt	Huawei Freebuds Pro	Huawei Freebuds Pro	in-ear	711
 https://regancipher.squig.link/data/Huawei%20Freebuds%20Pro%20R.txt	Huawei Freebuds Pro	Huawei Freebuds Pro	in-ear	711
+https://regancipher.squig.link/data/Ikko%20Activebuds%20L.txt	IKKO Activebuds	IKKO ActiveBuds	in-ear	711
+https://regancipher.squig.link/data/Ikko%20Activebuds%20R.txt	IKKO Activebuds	IKKO ActiveBuds	in-ear	711
+https://regancipher.squig.link/data/Ikko%20Activebuds%20Elect%20L.txt	IKKO Activebuds Electro Preset	IKKO Activebuds Electro Preset	ignore	711
+https://regancipher.squig.link/data/Ikko%20Activebuds%20Elect%20R.txt	IKKO Activebuds Electro Preset	IKKO Activebuds Electro Preset	ignore	711
+https://regancipher.squig.link/data/IKKO%20OH300%20L.txt	IKKO OH300	IKKO OH300	in-ear	711
+https://regancipher.squig.link/data/IKKO%20OH300%20R.txt	IKKO OH300	IKKO OH300	in-ear	711
 https://regancipher.squig.link/data/KB%20Ear%20KS1%20L.txt	KB Ear KS1	KBEAR KS1	in-ear	711
 https://regancipher.squig.link/data/KB%20Ear%20KS1%20R.txt	KB Ear KS1	KBEAR KS1	in-ear	711
 https://regancipher.squig.link/data/KB%20Ear%20Lark%20L.txt	KB Ear Lark	KBEAR Lark	in-ear	711
@@ -75,6 +117,8 @@ https://regancipher.squig.link/data/Project%20HRP%20L.txt		Project HRP	ignore
 https://regancipher.squig.link/data/Project%20HRP%20R.txt		Project HRP	ignore	
 https://regancipher.squig.link/data/QCY%20G1%20L.txt	QCY G1	QCY G1	in-ear	711
 https://regancipher.squig.link/data/QCY%20G1%20R.txt	QCY G1	QCY G1	in-ear	711
+https://regancipher.squig.link/data/QCY%20H3%20L.txt	QCY H3	QCY H3	over-ear	711
+https://regancipher.squig.link/data/QCY%20H3%20R.txt	QCY H3	QCY H3	over-ear	711
 https://regancipher.squig.link/data/QCY%20HT05%20Melobuds%20L.txt	QCY HT05 Melobuds	QCY HT05 Melobuds	in-ear	711
 https://regancipher.squig.link/data/QCY%20HT05%20Melobuds%20R.txt	QCY HT05 Melobuds	QCY HT05 Melobuds	in-ear	711
 https://regancipher.squig.link/data/QCY%20HT07%20L.txt	QCY HT07 Arcbuds	QCY HT07 Arcbuds	in-ear	711
@@ -94,8 +138,16 @@ https://regancipher.squig.link/data/Simgot%20EA1000%20Gold%20L.txt	Simgot EA1000
 https://regancipher.squig.link/data/Simgot%20EA1000%20Gold%20R.txt	Simgot EA1000 Gold	Simgot Audio EA1000 (gold nozzle)	in-ear	711
 https://regancipher.squig.link/data/Simgot%20EA1000%20Red%20L.txt	Simgot EA1000 Red	Simgot Audio EA1000 (red nozzle)	in-ear	711
 https://regancipher.squig.link/data/Simgot%20EA1000%20Red%20R.txt	Simgot EA1000 Red	Simgot Audio EA1000 (red nozzle)	in-ear	711
+https://regancipher.squig.link/data/Simgot%20EA500%20LM%20Blue%20L.txt	Simgot EA500 LM Silver Black	Simgot Audio EA500LM (black nozzle)	in-ear	711
+https://regancipher.squig.link/data/Simgot%20EA500%20LM%20Blue%20R.txt	Simgot EA500 LM Silver Black	Simgot Audio EA500LM (black nozzle)	in-ear	711
+https://regancipher.squig.link/data/Simgot%20EA500%20LM%20Gold%20L.txt	Simgot EA500 LM Gold Red	Simgot Audio EA500LM (gold nozzle)	in-ear	711
+https://regancipher.squig.link/data/Simgot%20EA500%20LM%20Gold%20R.txt	Simgot EA500 LM Gold Red	Simgot Audio EA500LM (gold nozzle)	in-ear	711
+https://regancipher.squig.link/data/Simgot%20EA500%20LM%20L.txt	Simgot EA500 LM Silver Red	Simgot Audio EA500LM (red nozzle)	in-ear	711
+https://regancipher.squig.link/data/Simgot%20EA500%20LM%20R.txt	Simgot EA500 LM Silver Red	Simgot Audio EA500LM (red nozzle)	in-ear	711
 https://regancipher.squig.link/data/Simgot%20EM6L%20L.txt	Simgot EM6L	Simgot Audio EM6L	in-ear	711
 https://regancipher.squig.link/data/Simgot%20EM6L%20R.txt	Simgot EM6L	Simgot Audio EM6L	in-ear	711
+https://regancipher.squig.link/data/Simgot%20EW200%20L.txt	Simgot EW200	Simgot Audio EW200	in-ear	711
+https://regancipher.squig.link/data/Simgot%20EW200%20R.txt	Simgot EW200	Simgot Audio EW200	in-ear	711
 https://regancipher.squig.link/data/Simgot%20EA1000%20L.txt		Simgot EA1000	ignore	
 https://regancipher.squig.link/data/Simgot%20EA1000%20R.txt		Simgot EA1000	ignore	
 https://regancipher.squig.link/data/SoundPEATS%20Air3%20L.txt	SoundPEATS Air3	SoundPeats Air3	in-ear	711
@@ -114,6 +166,8 @@ https://regancipher.squig.link/data/SoundPEATS%20Clear%20L.txt	SoundPEATS Clear	
 https://regancipher.squig.link/data/SoundPEATS%20Clear%20R.txt	SoundPEATS Clear	SoundPeats Clear	in-ear	711
 https://regancipher.squig.link/data/SoundPEATS%20Engine4%20L.txt	SoundPEATS Engine4	SoundPeats Engine 4	in-ear	711
 https://regancipher.squig.link/data/SoundPEATS%20Engine4%20R.txt	SoundPEATS Engine4	SoundPeats Engine 4	in-ear	711
+https://regancipher.squig.link/data/SoundPEATS%20GoFree%202%20L.txt	SoundPEATS GoFree 2	SoundPeats GoFree 2	earbud	711
+https://regancipher.squig.link/data/SoundPEATS%20GoFree%202%20R.txt	SoundPEATS GoFree 2	SoundPeats GoFree 2	earbud	711
 https://regancipher.squig.link/data/SoundPEATS%20H1%20L.txt	SoundPEATS H1	SoundPeats H1	in-ear	711
 https://regancipher.squig.link/data/SoundPEATS%20H1%20R.txt	SoundPEATS H1	SoundPeats H1	in-ear	711
 https://regancipher.squig.link/data/SoundPEATS%20H2%20L.txt	SoundPEATS H2	SoundPeats H2	in-ear	711
@@ -154,3 +208,7 @@ https://regancipher.squig.link/data/TrueFree%2001%20R.txt	TrueFree 01	TrueFree 0
 https://regancipher.squig.link/data/TrueFree%20T3%20L.txt	TrueFree T3	TrueFree T3	earbud	KB500x + 711
 https://regancipher.squig.link/data/TrueFree%20T3%20R.txt	TrueFree T3	TrueFree T3	earbud	KB500x + 711
 https://regancipher.squig.link/data/Realme%20Buds%20Air%203S%20R.txt	Realme Buds Air 3S	realme Buds Air 3S	in-ear	711
+https://regancipher.squig.link/data/Realme%20Buds%20Air%205%20Pro%20L.txt	Realme Buds Air 5 Pro	realme Buds Air 5 Pro	in-ear	711
+https://regancipher.squig.link/data/Realme%20Buds%20Air%205%20Pro%20R.txt	Realme Buds Air 5 Pro	realme Buds Air 5 Pro	in-ear	711
+https://regancipher.squig.link/data/Realme%20Buds%20Air%205%20Pro%20ANC%20L.txt	Realme Buds Air 5 Pro (ANC on)	realme Buds Air 5 Pro (ANC on)	in-ear	711
+https://regancipher.squig.link/data/Realme%20Buds%20Air%205%20Pro%20ANC%20R.txt	Realme Buds Air 5 Pro (ANC on)	realme Buds Air 5 Pro (ANC on)	in-ear	711

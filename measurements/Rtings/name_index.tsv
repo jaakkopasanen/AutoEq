@@ -1,6 +1,4 @@
 url	source_name	name	form	rig
-https://i.rtings.com/assets/products/tCZ7CoV5/graph-raw-frequency-response-l-14.json	Bose QuietComfort Headphones Wireless		ignore	HMS II.3
-https://i.rtings.com/assets/products/07YyQ9Un/graph-raw-frequency-response-r-14.json	Bose QuietComfort Headphones Wireless		ignore	HMS II.3
 https://i.rtings.com/assets/products/1bcr5Elo/graph-raw-frequency-response-l-14.json	Sony MH755 (Fake)		ignore	HMS II.3
 https://i.rtings.com/assets/products/QdGyl8oJ/graph-raw-frequency-response-r-14.json	Sony MH755 (Fake)		ignore	HMS II.3
 https://i.rtings.com/assets/products/pCbfDk2n/graph-raw-frequency-response-l-14.json	Astro A40 TR Headset + MixAmp Pro 2019		ignore	HMS II.3
@@ -99,8 +97,8 @@ https://i.rtings.com/assets/products/ffyFgxnC/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/bGH74c0d/graph-raw-frequency-response-r-14.json	Anker Soundcore Liberty Air 2 Pro Truly Wireless	Anker Soundcore Liberty Air 2 Pro	in-ear	HMS II.3
 https://i.rtings.com/assets/products/5DHucNNJ/graph-raw-frequency-response-l-14.json	Anker SoundCore Liberty Lite Truly Wireless	Anker Soundcore Liberty Lite	in-ear	HMS II.3
 https://i.rtings.com/assets/products/czUfmNjl/graph-raw-frequency-response-r-14.json	Anker SoundCore Liberty Lite Truly Wireless	Anker Soundcore Liberty Lite	in-ear	HMS II.3
-https://i.rtings.com/assets/products/CsN6WX71/graph-raw-frequency-response-l-14.json	Anker SoundCore Life 2 Wireless	Anker Soundcore Life 2	in-ear	HMS II.3
-https://i.rtings.com/assets/products/3JKajKBV/graph-raw-frequency-response-r-14.json	Anker SoundCore Life 2 Wireless	Anker Soundcore Life 2	in-ear	HMS II.3
+https://i.rtings.com/assets/products/CsN6WX71/graph-raw-frequency-response-l-14.json	Anker SoundCore Life 2 Wireless	Anker Soundcore Life 2	over-ear	HMS II.3
+https://i.rtings.com/assets/products/3JKajKBV/graph-raw-frequency-response-r-14.json	Anker SoundCore Life 2 Wireless	Anker Soundcore Life 2	over-ear	HMS II.3
 https://i.rtings.com/assets/products/BWYCpMBb/graph-raw-frequency-response-l-14.json	Anker Soundcore Life A2 NC Truly Wireless	Anker Soundcore Life A2 NC	in-ear	HMS II.3
 https://i.rtings.com/assets/products/VKI45Lgo/graph-raw-frequency-response-r-14.json	Anker Soundcore Life A2 NC Truly Wireless	Anker Soundcore Life A2 NC	in-ear	HMS II.3
 https://i.rtings.com/assets/products/TIW4Kfct/graph-raw-frequency-response-l-14.json	Anker Soundcore Life Dot 2 Truly Wireless	Anker Soundcore Life Dot 2	in-ear	HMS II.3
@@ -115,6 +113,8 @@ https://i.rtings.com/assets/products/OIZ44LHA/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/19Q514xF/graph-raw-frequency-response-r-14.json	Anker Soundcore Life Q30 Wireless	Anker Soundcore Life Q30	over-ear	HMS II.3
 https://i.rtings.com/assets/products/Wa7s135h/graph-raw-frequency-response-l-14.json	Anker Soundcore Life Q35 Wireless	Anker Soundcore Life Q35	over-ear	HMS II.3
 https://i.rtings.com/assets/products/clxzP0YR/graph-raw-frequency-response-r-14.json	Anker Soundcore Life Q35 Wireless	Anker Soundcore Life Q35	over-ear	HMS II.3
+https://i.rtings.com/assets/products/lwIoTIfS/graph-raw-frequency-response-l-14.json	Anker Soundcore P25i/P20i True Wireless	Anker Soundcore P20i (P25i)	in-ear	HMS II.3
+https://i.rtings.com/assets/products/ntjSjoyz/graph-raw-frequency-response-r-14.json	Anker Soundcore P25i/P20i True Wireless	Anker Soundcore P20i (P25i)	in-ear	HMS II.3
 https://i.rtings.com/assets/products/SpwtsqjW/graph-raw-frequency-response-l-14.json	Anker Soundcore Space A40 Truly Wireless	Anker Soundcore Space A40	in-ear	HMS II.3
 https://i.rtings.com/assets/products/HLPkIQld/graph-raw-frequency-response-r-14.json	Anker Soundcore Space A40 Truly Wireless	Anker Soundcore Space A40	in-ear	HMS II.3
 https://i.rtings.com/assets/products/I27McFab/graph-raw-frequency-response-l-14.json	Anker SoundCore Space NC Wireless	Anker Soundcore Space NC	over-ear	HMS II.3
@@ -145,6 +145,8 @@ https://i.rtings.com/assets/products/MwuzIHW4/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/NSRpeCcV/graph-raw-frequency-response-r-14.json	Audeze LCD-1	Audeze LCD-1	over-ear	HMS II.3
 https://i.rtings.com/assets/products/faHRBrlP/graph-raw-frequency-response-l-14.json	Audeze LCD 2 Classic/LC2C	Audeze LCD-2 Classic	over-ear	HMS II.3
 https://i.rtings.com/assets/products/ubOTuCUW/graph-raw-frequency-response-r-14.json	Audeze LCD 2 Classic/LC2C	Audeze LCD-2 Classic	over-ear	HMS II.3
+https://i.rtings.com/assets/products/dNzgA4eP/graph-raw-frequency-response-l-14.json	Audeze MM-100	Audeze MM-100	over-ear	HMS II.3
+https://i.rtings.com/assets/products/9rcXWL0r/graph-raw-frequency-response-r-14.json	Audeze MM-100	Audeze MM-100	over-ear	HMS II.3
 https://i.rtings.com/assets/products/6KJaSLjy/graph-raw-frequency-response-l-14.json	Audeze Maxwell Wireless	Audeze Maxwell	over-ear	HMS II.3
 https://i.rtings.com/assets/products/xKwKduMF/graph-raw-frequency-response-r-14.json	Audeze Maxwell Wireless	Audeze Maxwell	over-ear	HMS II.3
 https://i.rtings.com/assets/products/7dnCdTcK/graph-raw-frequency-response-l-14.json	Audeze Mobius	Audeze Mobius	over-ear	HMS II.3
@@ -210,6 +212,8 @@ https://i.rtings.com/assets/products/ieJTpCbU/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/EUgUrWru/graph-raw-frequency-response-r.json	Bang & Olufsen Beoplay H6	Bang & Olufsen Beoplay H6 (2nd Gen)	over-ear	HMS II.3
 https://i.rtings.com/assets/products/UvflcYJM/graph-raw-frequency-response-l.json	Bang & Olufsen Beoplay H9 Gen 1 Wireless	Bang & Olufsen Beoplay H9 (Gen 1)	over-ear	HMS II.3
 https://i.rtings.com/assets/products/lKRvWay2/graph-raw-frequency-response-r.json	Bang & Olufsen Beoplay H9 Gen 1 Wireless	Bang & Olufsen Beoplay H9 (Gen 1)	over-ear	HMS II.3
+https://i.rtings.com/assets/products/PSilhiWK/graph-raw-frequency-response-l-14.json	Bang & Olufsen Beoplay H95 Wireless	Bang & Olufsen Beoplay H95	over-ear	HMS II.3
+https://i.rtings.com/assets/products/SoMRfcNh/graph-raw-frequency-response-r-14.json	Bang & Olufsen Beoplay H95 Wireless	Bang & Olufsen Beoplay H95	over-ear	HMS II.3
 https://i.rtings.com/assets/products/bPGcOinC/graph-raw-frequency-response-l-14.json	Bang & Olufsen Beoplay H9i Wireless	Bang & Olufsen Beoplay H9i	over-ear	HMS II.3
 https://i.rtings.com/assets/products/X9YL1xLR/graph-raw-frequency-response-r-14.json	Bang & Olufsen Beoplay H9i Wireless	Bang & Olufsen Beoplay H9i	over-ear	HMS II.3
 https://i.rtings.com/assets/products/RzUEpKS8/graph-raw-frequency-response-l-14.json	Bang & Olufsen Beoplay Portal	Bang & Olufsen Beoplay Portal	over-ear	HMS II.3
@@ -277,6 +281,8 @@ https://i.rtings.com/assets/products/luhr2m9n/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/jz47SZVo/graph-raw-frequency-response-r-14.json	Beyerdynamic DT 900 PRO X	Beyerdynamic DT 900 Pro X	over-ear	HMS II.3
 https://i.rtings.com/assets/products/FXaWx4i4/graph-raw-frequency-response-l-14.json	Beyerdynamic DT 990 PRO	Beyerdynamic DT 990 Pro	over-ear	HMS II.3
 https://i.rtings.com/assets/products/iqiGj4o0/graph-raw-frequency-response-r-14.json	Beyerdynamic DT 990 PRO	Beyerdynamic DT 990 Pro	over-ear	HMS II.3
+https://i.rtings.com/assets/products/gDJOi9yw/graph-raw-frequency-response-l-14.json	Beyerdynamic MMX 300 (2nd Generation)	Beyerdynamic MMX 300 (2nd generation)	over-ear	HMS II.3
+https://i.rtings.com/assets/products/yfxEq01X/graph-raw-frequency-response-r-14.json	Beyerdynamic MMX 300 (2nd Generation)	Beyerdynamic MMX 300 (2nd generation)	over-ear	HMS II.3
 https://i.rtings.com/assets/products/4OuQDL2n/graph-raw-frequency-response-l-14.json	Beyerdynamic T1 2nd Generation 2016	Beyerdynamic T1 (2nd Gen)	over-ear	HMS II.3
 https://i.rtings.com/assets/products/iGUP7IV1/graph-raw-frequency-response-r-14.json	Beyerdynamic T1 2nd Generation 2016	Beyerdynamic T1 (2nd Gen)	over-ear	HMS II.3
 https://i.rtings.com/assets/products/c9DuI2eF/graph-raw-frequency-response-l-14.json	BlueParrott B450-XT Bluetooth Headset	BlueParrott B450-XT	over-ear	HMS II.3
@@ -294,6 +300,8 @@ https://i.rtings.com/assets/products/lGqh5jBw/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/UpS4rnvC/graph-raw-frequency-response-r-14.json	Bose Hearphones Wireless	Bose Hearphones	in-ear	HMS II.3
 https://i.rtings.com/assets/products/JV6E0XoM/graph-raw-frequency-response-l-14.json	Bose 700 Headphones Wireless	Bose Noise Cancelling Headphones 700	over-ear	HMS II.3
 https://i.rtings.com/assets/products/tFZYk3oD/graph-raw-frequency-response-r-14.json	Bose 700 Headphones Wireless	Bose Noise Cancelling Headphones 700	over-ear	HMS II.3
+https://i.rtings.com/assets/products/tCZ7CoV5/graph-raw-frequency-response-l-14.json	Bose QuietComfort Headphones Wireless	Bose QuietComfort	over-ear	HMS II.3
+https://i.rtings.com/assets/products/07YyQ9Un/graph-raw-frequency-response-r-14.json	Bose QuietComfort Headphones Wireless	Bose QuietComfort	over-ear	HMS II.3
 https://i.rtings.com/assets/products/BVeubO2d/graph-raw-frequency-response-l-14.json	Bose QuietComfort 20/QC20	Bose QuietComfort 20	in-ear	HMS II.3
 https://i.rtings.com/assets/products/NQqxeTTM/graph-raw-frequency-response-r-14.json	Bose QuietComfort 20/QC20	Bose QuietComfort 20	in-ear	HMS II.3
 https://i.rtings.com/assets/products/BcitcJ2J/graph-raw-frequency-response-l-14.json	Bose QuietComfort 25/QC25	Bose QuietComfort 25	over-ear	HMS II.3
@@ -388,6 +396,8 @@ https://i.rtings.com/assets/products/8t2Gh6gD/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/ycAIfmdX/graph-raw-frequency-response-r-14.json	Corsair HS80 MAX WIRELESS	Corsair HS80 MAX WIRELESS	over-ear	HMS II.3
 https://i.rtings.com/assets/products/d0WXVESq/graph-raw-frequency-response-l-14.json	Corsair HS80 RGB WIRELESS	Corsair HS80 RGB WIRELESS	over-ear	HMS II.3
 https://i.rtings.com/assets/products/8Y0fVgE4/graph-raw-frequency-response-r-14.json	Corsair HS80 RGB WIRELESS	Corsair HS80 RGB WIRELESS	over-ear	HMS II.3
+https://i.rtings.com/assets/products/eaUfCzUm/graph-raw-frequency-response-l-14.json	Corsair VIRTUOSO PRO	Corsair VIRTUOSO PRO	over-ear	HMS II.3
+https://i.rtings.com/assets/products/KIcCkHli/graph-raw-frequency-response-r-14.json	Corsair VIRTUOSO PRO	Corsair VIRTUOSO PRO	over-ear	HMS II.3
 https://i.rtings.com/assets/products/ZDn7n2Tn/graph-raw-frequency-response-l-14.json	Corsair VIRTUOSO RGB Wireless XT	Corsair VIRTUOSO RGB Wireless XT	over-ear	HMS II.3
 https://i.rtings.com/assets/products/88exCqxV/graph-raw-frequency-response-r-14.json	Corsair VIRTUOSO RGB Wireless XT	Corsair VIRTUOSO RGB Wireless XT	over-ear	HMS II.3
 https://i.rtings.com/assets/products/JoyDTwrj/graph-raw-frequency-response-l-14.json	Corsair Virtuoso RGB Wireless SE	Corsair Virtuoso RGB Wireless SE	over-ear	HMS II.3
@@ -430,6 +440,8 @@ https://i.rtings.com/assets/products/L4rLktOw/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/eNlqvZIG/graph-raw-frequency-response-r.json	Denon AHGC20 Globe Cruiser Wireless	Denon AHGC20 Globe Cruiser	over-ear	HMS II.3
 https://i.rtings.com/assets/products/bc3GJ3Pv/graph-raw-frequency-response-l-14.json	Denon PerL Pro True Wireless	Denon PerL Pro	in-ear	HMS II.3
 https://i.rtings.com/assets/products/hNfI0Wk6/graph-raw-frequency-response-r-14.json	Denon PerL Pro True Wireless	Denon PerL Pro	in-ear	HMS II.3
+https://i.rtings.com/assets/products/pCmcKBmZ/graph-raw-frequency-response-l-14.json	Devialet Gemini II True Wireless	Devialet Gemini II	in-ear	HMS II.3
+https://i.rtings.com/assets/products/Be96W0cF/graph-raw-frequency-response-r-14.json	Devialet Gemini II True Wireless	Devialet Gemini II	in-ear	HMS II.3
 https://i.rtings.com/assets/products/IJ2mVXsS/graph-raw-frequency-response-l.json	Diskin DH3 Wireless	Diskin DH3	over-ear	HMS II.3
 https://i.rtings.com/assets/products/6KF6sttW/graph-raw-frequency-response-r.json	Diskin DH3 Wireless	Diskin DH3	over-ear	HMS II.3
 https://i.rtings.com/assets/products/Mr85br7E/graph-raw-frequency-response-l.json	Dolby Dimension Wireless	Dolby Dimension	over-ear	HMS II.3
@@ -651,12 +663,16 @@ https://i.rtings.com/assets/products/90VvVXhx/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/hDRzaUFg/graph-raw-frequency-response-r-14.json	JBL Tune 660NC Wireless	JBL Tune 660NC	over-ear	HMS II.3
 https://i.rtings.com/assets/products/kq1GC8oY/graph-raw-frequency-response-l-14.json	JBL Tune 760NC Wireless	JBL Tune 760NC	over-ear	HMS II.3
 https://i.rtings.com/assets/products/3cAiNmh8/graph-raw-frequency-response-r-14.json	JBL Tune 760NC Wireless	JBL Tune 760NC	over-ear	HMS II.3
+https://i.rtings.com/assets/products/PVGQgKdV/graph-raw-frequency-response-l-14.json	JBL Tune Buds True Wireless	JBL Tune Buds	in-ear	HMS II.3
+https://i.rtings.com/assets/products/quP2s2F5/graph-raw-frequency-response-r-14.json	JBL Tune Buds True Wireless	JBL Tune Buds	in-ear	HMS II.3
 https://i.rtings.com/assets/products/YsNoUXum/graph-raw-frequency-response-l-14.json	JBL Tune Flex True Wireless	JBL Tune Flex	in-ear	HMS II.3
 https://i.rtings.com/assets/products/sqxNNveM/graph-raw-frequency-response-r-14.json	JBL Tune Flex True Wireless	JBL Tune Flex	in-ear	HMS II.3
 https://i.rtings.com/assets/products/qpd5cpvI/graph-raw-frequency-response-l-14.json	JBL Vibe 100TWS True Wireless	JBL Vibe 100TWS	in-ear	HMS II.3
 https://i.rtings.com/assets/products/F7Uk3zC0/graph-raw-frequency-response-r-14.json	JBL Vibe 100TWS True Wireless	JBL Vibe 100TWS	in-ear	HMS II.3
 https://i.rtings.com/assets/products/eP8VkXRt/graph-raw-frequency-response-l-14.json	JBL Vibe Beam True Wireless	JBL Vibe Beam	in-ear	HMS II.3
 https://i.rtings.com/assets/products/xAeR49AG/graph-raw-frequency-response-r-14.json	JBL Vibe Beam True Wireless	JBL Vibe Beam	in-ear	HMS II.3
+https://i.rtings.com/assets/products/Cq7cULZq/graph-raw-frequency-response-l-14.json	JBL Vibe Buds True Wireless	JBL Vibe Buds	in-ear	HMS II.3
+https://i.rtings.com/assets/products/8FvFouTm/graph-raw-frequency-response-r-14.json	JBL Vibe Buds True Wireless	JBL Vibe Buds	in-ear	HMS II.3
 https://i.rtings.com/assets/products/iRjSlbfa/graph-raw-frequency-response-l-14.json	JLab Audio GO Air POP True Wireless	JLab Audio GO Air POP	in-ear	HMS II.3
 https://i.rtings.com/assets/products/Md3OTbh7/graph-raw-frequency-response-r-14.json	JLab Audio GO Air POP True Wireless	JLab Audio GO Air POP	in-ear	HMS II.3
 https://i.rtings.com/assets/products/ZpERO6ul/graph-raw-frequency-response-l-14.json	JLab Audio JBuds Air Truly Wireless 	JLab Audio JBuds Air	in-ear	HMS II.3
@@ -991,10 +1007,10 @@ https://i.rtings.com/assets/products/kPrAixoq/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/s5yfQlyP/graph-raw-frequency-response-r-14.json	Razer Hammerhead True Wireless Pro	Razer Hammerhead True Wireless Pro	in-ear	HMS II.3
 https://i.rtings.com/assets/products/e5zNjxdm/graph-raw-frequency-response-l-14.json	Razer Hammerhead USB-C ANC	Razer Hammerhead USB-C ANC	in-ear	HMS II.3
 https://i.rtings.com/assets/products/SFQKGyEn/graph-raw-frequency-response-r-14.json	Razer Hammerhead USB-C ANC	Razer Hammerhead USB-C ANC	in-ear	HMS II.3
-https://i.rtings.com/assets/products/mjGNSW8x/graph-raw-frequency-response-l-14.json	Razer Kaira Pro Wireless for Xbox	Razer Kaira Pro for Xbox	over-ear	HMS II.3
-https://i.rtings.com/assets/products/jvAN7bWu/graph-raw-frequency-response-r-14.json	Razer Kaira Pro Wireless for Xbox	Razer Kaira Pro for Xbox	over-ear	HMS II.3
-https://i.rtings.com/assets/products/rVdKNclT/graph-raw-frequency-response-l-14.json	Razer Kaira X for PlayStation	Razer Kaira X for PlayStation	over-ear	HMS II.3
-https://i.rtings.com/assets/products/p5rmPExf/graph-raw-frequency-response-r-14.json	Razer Kaira X for PlayStation	Razer Kaira X for PlayStation	over-ear	HMS II.3
+https://i.rtings.com/assets/products/mjGNSW8x/graph-raw-frequency-response-l-14.json	Razer Kaira Pro Wireless	Razer Kaira Pro	over-ear	HMS II.3
+https://i.rtings.com/assets/products/jvAN7bWu/graph-raw-frequency-response-r-14.json	Razer Kaira Pro Wireless	Razer Kaira Pro	over-ear	HMS II.3
+https://i.rtings.com/assets/products/rVdKNclT/graph-raw-frequency-response-l-14.json	Razer Kaira X	Razer Kaira X	over-ear	HMS II.3
+https://i.rtings.com/assets/products/p5rmPExf/graph-raw-frequency-response-r-14.json	Razer Kaira X	Razer Kaira X	over-ear	HMS II.3
 https://i.rtings.com/assets/products/C671EeeO/graph-raw-frequency-response-l.json	Razer Kraken Pro V2	Razer Kraken Pro V2	over-ear	HMS II.3
 https://i.rtings.com/assets/products/3LbzZtYa/graph-raw-frequency-response-r.json	Razer Kraken Pro V2	Razer Kraken Pro V2	over-ear	HMS II.3
 https://i.rtings.com/assets/products/Ym48XF0s/graph-raw-frequency-response-l-14.json	Razer Kraken Tournament Edition	Razer Kraken Tournament Edition	over-ear	HMS II.3
@@ -1065,6 +1081,8 @@ https://i.rtings.com/assets/products/KGZrQvw6/graph-raw-frequency-response-l.jso
 https://i.rtings.com/assets/products/4iKk7Xr6/graph-raw-frequency-response-r.json	Samsung Level U Pro Wireless	Samsung Level U Pro	in-ear	HMS II.3
 https://i.rtings.com/assets/products/S2uFMatH/graph-raw-frequency-response-l.json	Samsung U Flex Wireless	Samsung U Flex	in-ear	HMS II.3
 https://i.rtings.com/assets/products/JpVxfecE/graph-raw-frequency-response-r.json	Samsung U Flex Wireless	Samsung U Flex	in-ear	HMS II.3
+https://i.rtings.com/assets/products/wAKK12nx/graph-raw-frequency-response-l-14.json	Sennheiser ACCENTUM Wireless	Sennheiser ACCENTUM	over-ear	HMS II.3
+https://i.rtings.com/assets/products/HXn0kIKT/graph-raw-frequency-response-r-14.json	Sennheiser ACCENTUM Wireless	Sennheiser ACCENTUM	over-ear	HMS II.3
 https://i.rtings.com/assets/products/YgDhitiy/graph-raw-frequency-response-l.json	Sennheiser AMBEO Smart Headset	Sennheiser AMBEO Smart Headset	in-ear	HMS II.3
 https://i.rtings.com/assets/products/Dqmyf8tB/graph-raw-frequency-response-r.json	Sennheiser AMBEO Smart Headset	Sennheiser AMBEO Smart Headset	in-ear	HMS II.3
 https://i.rtings.com/assets/products/LVsmLx13/graph-raw-frequency-response-l-14.json	Sennheiser CX 400BT True Wireless	Sennheiser CX 400BT	over-ear	HMS II.3
@@ -1082,6 +1100,8 @@ https://i.rtings.com/assets/products/4H0pna3e/graph-raw-frequency-response-r.jso
 https://i.rtings.com/assets/products/OZsiutJt/graph-bass.json	Sennheiser HD 202 II	Sennheiser HD 202 II	ignore	HMS II.3
 https://i.rtings.com/assets/products/EmcTskd2/graph-mid.json	Sennheiser HD 202 II	Sennheiser HD 202 II	ignore	HMS II.3
 https://i.rtings.com/assets/products/gIT8Ibud/graph-treble.json	Sennheiser HD 202 II	Sennheiser HD 202 II	ignore	HMS II.3
+https://i.rtings.com/assets/products/PpeB25xc/graph-raw-frequency-response-l-14.json	Sennheiser HD 25	Sennheiser HD 25	over-ear	HMS II.3
+https://i.rtings.com/assets/products/tkT4aBhc/graph-raw-frequency-response-r-14.json	Sennheiser HD 25	Sennheiser HD 25	over-ear	HMS II.3
 https://i.rtings.com/assets/products/2qItHJAZ/graph-raw-frequency-response-l-14.json	Sennheiser HD 280 Pro 2016	Sennheiser HD 280 Pro	over-ear	HMS II.3
 https://i.rtings.com/assets/products/WHE0RioX/graph-raw-frequency-response-r-14.json	Sennheiser HD 280 Pro 2016	Sennheiser HD 280 Pro	over-ear	HMS II.3
 https://i.rtings.com/assets/products/elo1ZWHO/graph-raw-frequency-response-l-14.json	Sennheiser HD 4.40 BT Wireless	Sennheiser HD 4.40BT	over-ear	HMS II.3
@@ -1201,6 +1221,8 @@ https://i.rtings.com/assets/products/T5bXsM9x/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/0REFJFeu/graph-raw-frequency-response-r-14.json	Skullcandy Dime True Wireless 	Skullcandy Dime	in-ear	HMS II.3
 https://i.rtings.com/assets/products/wcrAqX7i/graph-raw-frequency-response-l-14.json	Skullcandy Dime 2 True Wireless	Skullcandy Dime 2	in-ear	HMS II.3
 https://i.rtings.com/assets/products/eYkQ5vsa/graph-raw-frequency-response-r-14.json	Skullcandy Dime 2 True Wireless	Skullcandy Dime 2	in-ear	HMS II.3
+https://i.rtings.com/assets/products/dWPWiGgl/graph-raw-frequency-response-l-14.json	Skullcandy Dime 3 True Wireless	Skullcandy Dime 3	in-ear	HMS II.3
+https://i.rtings.com/assets/products/K7Y6mZNY/graph-raw-frequency-response-r-14.json	Skullcandy Dime 3 True Wireless	Skullcandy Dime 3	in-ear	HMS II.3
 https://i.rtings.com/assets/products/qEkIrekC/graph-raw-frequency-response-l.json	Skullcandy Grind Wireless	Skullcandy Grind	over-ear	HMS II.3
 https://i.rtings.com/assets/products/GakKVrb6/graph-raw-frequency-response-r.json	Skullcandy Grind Wireless	Skullcandy Grind	over-ear	HMS II.3
 https://i.rtings.com/assets/products/pGuONCiR/graph-raw-frequency-response-l-14.json	Skullcandy Grind Fuel True Wireless	Skullcandy Grind Fuel	in-ear	HMS II.3
@@ -1247,6 +1269,8 @@ https://i.rtings.com/assets/products/w49BzY9S/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/BM6PFC4U/graph-raw-frequency-response-r-14.json	Skullcandy Venue Wireless	Skullcandy Venue	over-ear	HMS II.3
 https://i.rtings.com/assets/products/CX40q8FD/graph-raw-frequency-response-l-14.json	Sony Float Run Wireless	Sony Float Run	earbud	HMS II.3
 https://i.rtings.com/assets/products/GumjHIDJ/graph-raw-frequency-response-r-14.json	Sony Float Run Wireless	Sony Float Run	earbud	HMS II.3
+https://i.rtings.com/assets/products/e7HBHeU8/graph-raw-frequency-response-l-14.json	Sony INZONE Buds Truly Wireless	Sony INZONE Buds	in-ear	HMS II.3
+https://i.rtings.com/assets/products/nOe0EQZj/graph-raw-frequency-response-r-14.json	Sony INZONE Buds Truly Wireless	Sony INZONE Buds	in-ear	HMS II.3
 https://i.rtings.com/assets/products/AB9viFQl/graph-raw-frequency-response-l-14.json	Sony INZONE H3	Sony INZONE H3	over-ear	HMS II.3
 https://i.rtings.com/assets/products/51JdXtqH/graph-raw-frequency-response-r-14.json	Sony INZONE H3	Sony INZONE H3	over-ear	HMS II.3
 https://i.rtings.com/assets/products/dntauQsu/graph-raw-frequency-response-l-14.json	Sony INZONE H7 Wireless	Sony INZONE H7	over-ear	HMS II.3
@@ -1287,6 +1311,8 @@ https://i.rtings.com/assets/products/csC2l9nS/graph-raw-frequency-response-l-14.
 https://i.rtings.com/assets/products/iGoo42RH/graph-raw-frequency-response-r-14.json	Sony MH755	Sony MH755	in-ear	HMS II.3
 https://i.rtings.com/assets/products/J1ntd88l/graph-raw-frequency-response-l-14.json	Sony PULSE 3D Wireless	Sony PULSE 3D	over-ear	HMS II.3
 https://i.rtings.com/assets/products/JGm0vcuK/graph-raw-frequency-response-r-14.json	Sony PULSE 3D Wireless	Sony PULSE 3D	over-ear	HMS II.3
+https://i.rtings.com/assets/products/VfmmoSby/graph-raw-frequency-response-l-14.json	Sony PULSE Explore Truly Wireless	Sony PULSE Explore	in-ear	HMS II.3
+https://i.rtings.com/assets/products/WAx9dYFV/graph-raw-frequency-response-r-14.json	Sony PULSE Explore Truly Wireless	Sony PULSE Explore	in-ear	HMS II.3
 https://i.rtings.com/assets/products/hUO25Gns/graph-raw-frequency-response-l.json	Sony WF-1000X Truly Wireless	Sony WF-1000X	in-ear	HMS II.3
 https://i.rtings.com/assets/products/OdG8nc5M/graph-raw-frequency-response-r.json	Sony WF-1000X Truly Wireless	Sony WF-1000X	in-ear	HMS II.3
 https://i.rtings.com/assets/products/CniO1oDg/graph-raw-frequency-response-l-14.json	Sony WF-1000XM3 Truly Wireless 	Sony WF-1000XM3	in-ear	HMS II.3

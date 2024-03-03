@@ -23,8 +23,8 @@ https://freeryder05.squig.link/data/DT200%20L.txt	Audiosense DT200 Unit 1	Audios
 https://freeryder05.squig.link/data/DT200%20R.txt	Audiosense DT200 Unit 1	Audiosense DT200	in-ear	711
 https://freeryder05.squig.link/data/DT200%20S1%20L.txt	Audiosense DT200 Unit 2	Audiosense DT200	in-ear	711
 https://freeryder05.squig.link/data/DT200%20S1%20R.txt	Audiosense DT200 Unit 2	Audiosense DT200	in-ear	711
-https://freeryder05.squig.link/data/BLO3%20L.txt	Blon BL03	BLON BL-03	in-ear
-https://freeryder05.squig.link/data/BLO3%20R.txt	Blon BL03	BLON BL-03	in-ear
+https://freeryder05.squig.link/data/BLO3%20L.txt	Blon BL03	BLON BL-03	in-ear	
+https://freeryder05.squig.link/data/BLO3%20R.txt	Blon BL03	BLON BL-03	in-ear	
 https://freeryder05.squig.link/data/Beats%20Studio%20Buds%20+%20L.txt	Beats Studio + Stock	Beats Studio Buds +	in-ear	711
 https://freeryder05.squig.link/data/Beats%20Studio%20Buds%20+%20R.txt	Beats Studio + Stock	Beats Studio Buds +	in-ear	711
 https://freeryder05.squig.link/data/Beats%20Studio%20Buds%20Azla%20+%20L.txt	Beats Studio + Azla	Beats Studio Buds + (AZLA eartips)	ignore	711
@@ -41,6 +41,12 @@ https://freeryder05.squig.link/data/Falcon%20Ultra%20Gold%20Nozzle%20L.txt	Dunu 
 https://freeryder05.squig.link/data/Falcon%20Ultra%20Gold%20Nozzle%20R.txt	Dunu Falcon Ultra Gold Nozzle	DUNU Falcon Ultra (gold nozzle)	in-ear	711
 https://freeryder05.squig.link/data/Kima%20Classic%20L.txt	Dunu Kima Classic	DUNU Kima Classic	in-ear	711
 https://freeryder05.squig.link/data/Kima%20Classic%20R.txt	Dunu Kima Classic	DUNU Kima Classic	in-ear	711
+https://freeryder05.squig.link/data/Mirai%20Omni%20L.txt	Dunu Mirai Omni	Dunu Mirai Omni	ignore	711
+https://freeryder05.squig.link/data/Mirai%20Omni%20R.txt	Dunu Mirai Omni	Dunu Mirai Omni	ignore	711
+https://freeryder05.squig.link/data/Mirai%20SS%20L.txt	Dunu Mirai SS	Dunu Mirai SS	ignore	711
+https://freeryder05.squig.link/data/Mirai%20SS%20R.txt	Dunu Mirai SS	Dunu Mirai SS	ignore	711
+https://freeryder05.squig.link/data/Mirai%20Velvet%20L.txt	Dunu Mirai Velvet	Dunu Mirai Velvet	ignore	711
+https://freeryder05.squig.link/data/Mirai%20Velvet%20R.txt	Dunu Mirai Velvet	Dunu Mirai Velvet	ignore	711
 https://freeryder05.squig.link/data/Gaea%20Sedna%20Short%20L.txt	Effect Audio x Elysian Acoustics Gaea Sedna Short	Effect Audio x Elysian Gaea (AZA Sedna EarFit short eartips)	ignore	711
 https://freeryder05.squig.link/data/Gaea%20Sedna%20Short%20R.txt	Effect Audio x Elysian Acoustics Gaea Sedna Short	Effect Audio x Elysian Gaea (AZA Sedna EarFit short eartips)	ignore	711
 https://freeryder05.squig.link/data/Gaea%20Comply%20L.txt	Effect Audio x Elysian Acoustics Gaea Comply	Effect Audio x Elysian Gaea (Comply eartips)	ignore	711
@@ -61,12 +67,16 @@ https://freeryder05.squig.link/data/A5000%20L.txt	Final Audio A5000	Final Audio 
 https://freeryder05.squig.link/data/A5000%20R.txt	Final Audio A5000	Final Audio A5000	in-ear	711
 https://freeryder05.squig.link/data/Viento%20B%20L.txt	Hidition Viento B CIEM	Hidition Viento-B (CIEM)	in-ear	711
 https://freeryder05.squig.link/data/Viento%20B%20R.txt	Hidition Viento B CIEM	Hidition Viento-B (CIEM)	in-ear	711
+https://freeryder05.squig.link/data/Viento%20B%20Refit%20L.txt	Hidition Viento B CIEM	Hidition Viento-B (CIEM)	in-ear	711
+https://freeryder05.squig.link/data/Viento%20B%20Refit%20R.txt	Hidition Viento B CIEM	Hidition Viento-B (CIEM)	in-ear	711
 https://freeryder05.squig.link/data/FDX1%20Stock%20L.txt	JVC FDX1 Stock	JVC HA-FDX1	in-ear	711
 https://freeryder05.squig.link/data/FDX1%20Stock%20R.txt	JVC FDX1 Stock	JVC HA-FDX1	in-ear	711
 https://freeryder05.squig.link/data/FDX1%20Blue%20L.txt	JVC FDX1 Blue	JVC HA-FDX1 (blue)	in-ear	711
 https://freeryder05.squig.link/data/FDX1%20Blue%20R.txt	JVC FDX1 Blue	JVC HA-FDX1 (blue)	in-ear	711
 https://freeryder05.squig.link/data/FDX1%20Green%20L.txt	JVC FDX1 Green	JVC HA-FDX1 (green)	in-ear	711
 https://freeryder05.squig.link/data/FDX1%20Green%20R.txt	JVC FDX1 Green	JVC HA-FDX1 (green)	in-ear	711
+https://freeryder05.squig.link/data/Orchestra%20Lite%20CIEM%20Blue%20Tack%20L.txt	Kiwi Ears Orchestra Lite CIEM	Kiwi Ears Orchestra Lite (CIEM)	in-ear	711
+https://freeryder05.squig.link/data/Orchestra%20Lite%20CIEM%20Blue%20Tack%20R.txt	Kiwi Ears Orchestra Lite CIEM	Kiwi Ears Orchestra Lite (CIEM)	in-ear	711
 https://freeryder05.squig.link/data/Drop%20X%20Noble%20Azla%20L.txt	Noble Drop X Noble	Massdrop x Noble X Universal IEMs	in-ear	711
 https://freeryder05.squig.link/data/Drop%20X%20Noble%20Azla%20R.txt	Noble Drop X Noble	Massdrop x Noble X Universal IEMs	in-ear	711
 https://freeryder05.squig.link/data/Aria%20Elven%20Maiden%20L.txt	Moondrop Aria Elven Maiden	Moondrop Aria Elven Maiden	in-ear	711

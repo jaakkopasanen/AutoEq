@@ -27,6 +27,7 @@
 - [JVC HA-FDX1](./in-ear/JVC%20HA-FDX1)
 - [JVC HA-FDX1 (blue)](./in-ear/JVC%20HA-FDX1%20(blue))
 - [JVC HA-FDX1 (green)](./in-ear/JVC%20HA-FDX1%20(green))
+- [Kiwi Ears Orchestra Lite (CIEM)](./in-ear/Kiwi%20Ears%20Orchestra%20Lite%20(CIEM))
 - [Massdrop x Noble X Universal IEMs](./in-ear/Massdrop%20x%20Noble%20X%20Universal%20IEMs)
 - [Moondrop Aria Elven Maiden](./in-ear/Moondrop%20Aria%20Elven%20Maiden)
 - [Moondrop Chu](./in-ear/Moondrop%20Chu)

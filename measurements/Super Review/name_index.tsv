@@ -166,6 +166,12 @@ https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20L
 https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20R1.txt	Auribus Acoustics Everest	Auribus Acoustics Everest	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20R2.txt	Auribus Acoustics Everest	Auribus Acoustics Everest	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20R3.txt	Auribus Acoustics Everest	Auribus Acoustics Everest	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20ZMF%20+%20AKG%20L1.txt	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	ignore	KB006x + 711
+https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20ZMF%20+%20AKG%20L2.txt	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	ignore	KB006x + 711
+https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20ZMF%20+%20AKG%20L3.txt	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	ignore	KB006x + 711
+https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20ZMF%20+%20AKG%20R1.txt	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	ignore	KB006x + 711
+https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20ZMF%20+%20AKG%20R2.txt	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	ignore	KB006x + 711
+https://superreview.squig.link/headphones/data/Auribus%20Acoustics%20Everest%20ZMF%20+%20AKG%20R3.txt	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	Auribus Acoustics Everest (pads: ZMF Universe hybrid + AKG K240 foam disc)	ignore	KB006x + 711
 https://superreview.squig.link/headphones/data/Austrian%20Audio%20Hi-X60%20L1.txt	Austrian Audio Hi-X60	Austrian Audio Hi-X60	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Austrian%20Audio%20Hi-X60%20L2.txt	Austrian Audio Hi-X60	Austrian Audio Hi-X60	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Austrian%20Audio%20Hi-X60%20L3.txt	Austrian Audio Hi-X60	Austrian Audio Hi-X60	over-ear	KB006x + 711
@@ -288,8 +294,12 @@ https://superreview.squig.link/data/Dunu%20Falcon%20Ultra%20(blue)%20L.txt	Dunu 
 https://superreview.squig.link/data/Dunu%20Falcon%20Ultra%20(blue)%20R.txt	Dunu Falcon Ultra (nozzle: blue)	DUNU Falcon Ultra (blue nozzle)	in-ear	711
 https://superreview.squig.link/data/Dunu%20Falcon%20Ultra%20(gold)%20L.txt	Dunu Falcon Ultra (nozzle: gold)	DUNU Falcon Ultra (gold nozzle)	in-ear	711
 https://superreview.squig.link/data/Dunu%20Falcon%20Ultra%20(gold)%20R.txt	Dunu Falcon Ultra (nozzle: gold)	DUNU Falcon Ultra (gold nozzle)	in-ear	711
+https://superreview.squig.link/data/Dunu%20Glacier%20L.txt	Dunu Glacier	DUNU Glacier	in-ear	711
+https://superreview.squig.link/data/Dunu%20Glacier%20R.txt	Dunu Glacier	DUNU Glacier	in-ear	711
 https://superreview.squig.link/data/Dunu%20Kima%20L.txt	Dunu Kima	DUNU Kima	in-ear	711
 https://superreview.squig.link/data/Dunu%20Kima%20R.txt	Dunu Kima	DUNU Kima	in-ear	711
+https://superreview.squig.link/data/Dunu%20Mirai%20L.txt	Dunu Mirai	DUNU Mirai	in-ear	711
+https://superreview.squig.link/data/Dunu%20Mirai%20R.txt	Dunu Mirai	DUNU Mirai	in-ear	711
 https://superreview.squig.link/data/Dunu%20SA3%20L.txt	Dunu SA3	DUNU SA3	in-ear	711
 https://superreview.squig.link/data/Dunu%20SA6%20(atmospheric)%20L.txt	Dunu SA6 (switch: on)	DUNU SA6 (atmospheric Immersion mode)	in-ear	711
 https://superreview.squig.link/data/Dunu%20SA6%20(atmospheric)%20R.txt	Dunu SA6 (switch: on)	DUNU SA6 (atmospheric Immersion mode)	in-ear	711
@@ -319,6 +329,24 @@ https://superreview.squig.link/data/Dunu%20Vulkan%20(S2%20+%20red)%20R.txt	Dunu 
 https://superreview.squig.link/data/Dunu%20Zen%20L.txt	Dunu Zen	DUNU Zen	in-ear	711
 https://superreview.squig.link/data/Dunu%20Zen%20Pro%20L.txt	Dunu Zen Pro 	DUNU Zen Pro	in-ear	711
 https://superreview.squig.link/data/Dunu%20Zen%20Pro%20R.txt	Dunu Zen Pro 	DUNU Zen Pro	in-ear	711
+https://superreview.squig.link/headphones/data/DCA%20E3%20L1.txt	Dan Clark Audio E3	Dan Clark Audio E3	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20E3%20L2.txt	Dan Clark Audio E3	Dan Clark Audio E3	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20E3%20L3.txt	Dan Clark Audio E3	Dan Clark Audio E3	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20E3%20R1.txt	Dan Clark Audio E3	Dan Clark Audio E3	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20E3%20R2.txt	Dan Clark Audio E3	Dan Clark Audio E3	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20E3%20R3.txt	Dan Clark Audio E3	Dan Clark Audio E3	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Expanse%20L1.txt	Dan Clark Audio Expanse	Dan Clark Audio EXPANSE	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Expanse%20L2.txt	Dan Clark Audio Expanse	Dan Clark Audio EXPANSE	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Expanse%20L3.txt	Dan Clark Audio Expanse	Dan Clark Audio EXPANSE	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Expanse%20R1.txt	Dan Clark Audio Expanse	Dan Clark Audio EXPANSE	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Expanse%20R2.txt	Dan Clark Audio Expanse	Dan Clark Audio EXPANSE	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Expanse%20R3.txt	Dan Clark Audio Expanse	Dan Clark Audio EXPANSE	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Stealth%20L1.txt	Dan Clark Audio Stealth	Dan Clark Audio Stealth	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Stealth%20L2.txt	Dan Clark Audio Stealth	Dan Clark Audio Stealth	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Stealth%20L3.txt	Dan Clark Audio Stealth	Dan Clark Audio Stealth	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Stealth%20R1.txt	Dan Clark Audio Stealth	Dan Clark Audio Stealth	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Stealth%20R2.txt	Dan Clark Audio Stealth	Dan Clark Audio Stealth	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/DCA%20Stealth%20R3.txt	Dan Clark Audio Stealth	Dan Clark Audio Stealth	over-ear	KB006x + 711
 https://superreview.squig.link/data/Dunu%20EST%20112%20(SpinFit)%20L.txt		Dunu EST 112 (SpinFit)	ignore	
 https://superreview.squig.link/data/Dunu%20Falcon%20Pro%20(experimental)%20L.txt	Dunu Falcon Pro (experimental)	Dunu Falcon Pro (experimental)	ignore	
 https://superreview.squig.link/data/Dunu%20Falcon%20Pro%20(experimental)%20R.txt	Dunu Falcon Pro (experimental)	Dunu Falcon Pro (experimental)	ignore	
@@ -326,7 +354,19 @@ https://superreview.squig.link/data/Dunu%20Titan%20S%20(pre)%20L.txt	Dunu Titan 
 https://superreview.squig.link/data/Dunu%20Titan%20S%20(pre)%20R.txt	Dunu Titan S (pre-production)	Dunu Titan S (pre-production)	ignore	
 https://superreview.squig.link/data/Dunu%20Vulka%20(S2%20+%20red)%20L.txt		Dunu Vulka (S2 + red)	ignore	
 https://superreview.squig.link/data/Dunu%20Zen%20Pro%20(pre)%20L.txt	Dunu Zen Pro (pre-production)	Dunu Zen Pro (pre-production)	ignore	
+https://superreview.squig.link/data/EPZ%20G10%20L.txt	EPZ G10	EPZ G10	in-ear	711
+https://superreview.squig.link/data/EPZ%20G10%20R.txt	EPZ G10	EPZ G10	in-ear	711
+https://superreview.squig.link/data/EPZ%20K5%20L.txt	EPZ K5	EPZ K5	in-ear	711
+https://superreview.squig.link/data/EPZ%20K5%20R.txt	EPZ K5	EPZ K5	in-ear	711
+https://superreview.squig.link/data/EPZ%20Q5%20L.txt	EPZ Q5	EPZ Q5	in-ear	711
+https://superreview.squig.link/data/EPZ%20Q5%20R.txt	EPZ Q5	EPZ Q5	in-ear	711
 https://superreview.squig.link/data/EQ%20sandbox%20L.txt	EQ Sandbox	EQ Sandbox	ignore	
+https://superreview.squig.link/headphones/data/ETA%20O2%20L1.txt	ETA Audio O2	ETA O2	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/ETA%20O2%20L2.txt	ETA Audio O2	ETA O2	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/ETA%20O2%20L3.txt	ETA Audio O2	ETA O2	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/ETA%20O2%20R1.txt	ETA Audio O2	ETA O2	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/ETA%20O2%20R2.txt	ETA Audio O2	ETA O2	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/ETA%20O2%20R3.txt	ETA Audio O2	ETA O2	over-ear	KB006x + 711
 https://superreview.squig.link/data/EarFun%20Free%20Pro%20Oluv%20Edition%20L.txt	EarFun Free Pro - Oluv Edition ANC off	EarFun Free Pro (Oluv Edition, ANC off)	in-ear	711
 https://superreview.squig.link/data/EarFun%20Free%20Pro%20Oluv%20Edition%20(ANC)%20L.txt	EarFun Free Pro - Oluv Edition ANC on	EarFun Free Pro (Oluv Edition, ANC on)	in-ear	711
 https://superreview.squig.link/data/Effect%20Audio%20Axiom%20L.txt	Effect Audio Axiom	Effect Audio Axiom	in-ear	711
@@ -450,12 +490,26 @@ https://superreview.squig.link/data/Fiio%20FHE%20L.txt	Fiio FHE: Eclipse (sample
 https://superreview.squig.link/data/Fiio%20FHE%20R.txt	Fiio FHE: Eclipse (sample 1)	FiiO FHE Eclipse	in-ear	711
 https://superreview.squig.link/data/Fiio%20FHE%20(S2)%20L.txt	Fiio FHE: Eclipse (sample 2)	FiiO FHE Eclipse	in-ear	711
 https://superreview.squig.link/data/Fiio%20FHE%20(S2)%20R.txt	Fiio FHE: Eclipse (sample 2)	FiiO FHE Eclipse	in-ear	711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(pu)%20L1.txt	Fiio FT5 (pads: pleather)	FiiO FT5 (pleather earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(pu)%20L2.txt	Fiio FT5 (pads: pleather)	FiiO FT5 (pleather earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(pu)%20L3.txt	Fiio FT5 (pads: pleather)	FiiO FT5 (pleather earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(pu)%20R1.txt	Fiio FT5 (pads: pleather)	FiiO FT5 (pleather earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(pu)%20R2.txt	Fiio FT5 (pads: pleather)	FiiO FT5 (pleather earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(pu)%20R3.txt	Fiio FT5 (pads: pleather)	FiiO FT5 (pleather earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(suede)%20L1.txt	Fiio FT5 (pads: suede)	FiiO FT5 (suede earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(suede)%20L2.txt	Fiio FT5 (pads: suede)	FiiO FT5 (suede earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(suede)%20L3.txt	Fiio FT5 (pads: suede)	FiiO FT5 (suede earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(suede)%20R1.txt	Fiio FT5 (pads: suede)	FiiO FT5 (suede earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(suede)%20R2.txt	Fiio FT5 (pads: suede)	FiiO FT5 (suede earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Fiio%20FT5%20(suede)%20R3.txt	Fiio FT5 (pads: suede)	FiiO FT5 (suede earpads)	over-ear	KB006x + 711
 https://superreview.squig.link/data/Fiio%20FW5%20L.txt	Fiio FW5	FiiO FW5	in-ear	711
 https://superreview.squig.link/data/Fiio%20FW5%20R.txt	Fiio FW5	FiiO FW5	in-ear	711
 https://superreview.squig.link/data/Fiio%20FX15%20(off)%20L.txt	Fiio FX15 (switch: off)	FiiO FX15 (off)	in-ear	711
 https://superreview.squig.link/data/Fiio%20FX15%20(off)%20R.txt	Fiio FX15 (switch: off)	FiiO FX15 (off)	in-ear	711
 https://superreview.squig.link/data/Fiio%20FX15%20(on)%20L.txt	Fiio FX15 (switch: on)	FiiO FX15 (on)	in-ear	711
 https://superreview.squig.link/data/Fiio%20FX15%20(on)%20R.txt	Fiio FX15 (switch: on)	FiiO FX15 (on)	in-ear	711
+https://superreview.squig.link/data/Fiio%20JH5%20L.txt	Fiio JH5	FiiO JH5	in-ear	711
+https://superreview.squig.link/data/Fiio%20JH5%20R.txt	Fiio JH5	FiiO JH5	in-ear	711
 https://superreview.squig.link/data/Fiio%20FH3%20(Spring)%20L.txt	Fiio FH3 (tips: Spring)	Fiio FH3 (tips: Spring)	ignore	
 https://superreview.squig.link/data/Fiio%20FH5s%20(200%20hrs%20+%20FD5%20cable)%20L.txt	Fiio FH5S (200 hrs + FD5 cable)	Fiio FH5S (200 hrs + FD5 cable)	ignore	
 https://superreview.squig.link/data/Fiio%20FH5s%20(200%20hrs%20burn-in)%20L.txt	Fiio FH5S (200 hrs burn-in)	Fiio FH5S (200 hrs burn-in)	ignore	
@@ -497,12 +551,24 @@ https://superreview.squig.link/headphones/data/Focal%20Bathys%20(bt)%20L3.txt	Fo
 https://superreview.squig.link/headphones/data/Focal%20Bathys%20(bt)%20R1.txt	Focal Bathys (mode: Bluetooth)	Focal Bathys (wireless)	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Bathys%20(bt)%20R2.txt	Focal Bathys (mode: Bluetooth)	Focal Bathys (wireless)	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Bathys%20(bt)%20R3.txt	Focal Bathys (mode: Bluetooth)	Focal Bathys (wireless)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Celestee%20L1.txt	Focal Celestee	Focal Celestee	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Celestee%20L2.txt	Focal Celestee	Focal Celestee	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Celestee%20L3.txt	Focal Celestee	Focal Celestee	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Celestee%20R1.txt	Focal Celestee	Focal Celestee	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Celestee%20R2.txt	Focal Celestee	Focal Celestee	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Celestee%20R3.txt	Focal Celestee	Focal Celestee	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Clear%20Professional%20L1.txt	Focal Clear Professional	Focal Clear MG Professional	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Clear%20Professional%20L2.txt	Focal Clear Professional	Focal Clear MG Professional	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Clear%20Professional%20L3.txt	Focal Clear Professional	Focal Clear MG Professional	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Clear%20Professional%20R1.txt	Focal Clear Professional	Focal Clear MG Professional	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Clear%20Professional%20R2.txt	Focal Clear Professional	Focal Clear MG Professional	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Clear%20Professional%20R3.txt	Focal Clear Professional	Focal Clear MG Professional	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Radiance%20L1.txt	Focal Radiance	Focal Radiance	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Radiance%20L2.txt	Focal Radiance	Focal Radiance	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Radiance%20L3.txt	Focal Radiance	Focal Radiance	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Radiance%20R1.txt	Focal Radiance	Focal Radiance	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Radiance%20R2.txt	Focal Radiance	Focal Radiance	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Focal%20Radiance%20R3.txt	Focal Radiance	Focal Radiance	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Utopia%202022%20L1.txt	Focal Utopia 2022	Focal Utopia 2022	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Utopia%202022%20L2.txt	Focal Utopia 2022	Focal Utopia 2022	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Focal%20Utopia%202022%20L3.txt	Focal Utopia 2022	Focal Utopia 2022	over-ear	KB006x + 711
@@ -809,6 +875,18 @@ https://superreview.squig.link/headphones/data/Meze%2099%20Classics%20(meze%20sm
 https://superreview.squig.link/headphones/data/Meze%2099%20Classics%20(meze%20sm)%20R1.txt	Meze 99 Classics (pads: Meze small)	Meze 99 Classics (pads: Meze small)	ignore	
 https://superreview.squig.link/headphones/data/Meze%2099%20Classics%20(meze%20sm)%20R2.txt	Meze 99 Classics (pads: Meze small)	Meze 99 Classics (pads: Meze small)	ignore	
 https://superreview.squig.link/headphones/data/Meze%2099%20Classics%20(meze%20sm)%20R3.txt	Meze 99 Classics (pads: Meze small)	Meze 99 Classics (pads: Meze small)	ignore	
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(alcantara)%20L1.txt	Meze Empyrean II (pads: Alcantara)	Meze Empyrean II (alcantara earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(alcantara)%20L2.txt	Meze Empyrean II (pads: Alcantara)	Meze Empyrean II (alcantara earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(alcantara)%20L3.txt	Meze Empyrean II (pads: Alcantara)	Meze Empyrean II (alcantara earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(alcantara)%20R1.txt	Meze Empyrean II (pads: Alcantara)	Meze Empyrean II (alcantara earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(alcantara)%20R2.txt	Meze Empyrean II (pads: Alcantara)	Meze Empyrean II (alcantara earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(alcantara)%20R3.txt	Meze Empyrean II (pads: Alcantara)	Meze Empyrean II (alcantara earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(duo)%20L1.txt	Meze Empyrean II (pads: Duo)	Meze Empyrean II (duo earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(duo)%20L2.txt	Meze Empyrean II (pads: Duo)	Meze Empyrean II (duo earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(duo)%20L3.txt	Meze Empyrean II (pads: Duo)	Meze Empyrean II (duo earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(duo)%20R1.txt	Meze Empyrean II (pads: Duo)	Meze Empyrean II (duo earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(duo)%20R2.txt	Meze Empyrean II (pads: Duo)	Meze Empyrean II (duo earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Empyrean%20II%20(duo)%20R3.txt	Meze Empyrean II (pads: Duo)	Meze Empyrean II (duo earpads)	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Meze%20Liric%20L1.txt	Meze Liric	Meze Liric	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Meze%20Liric%20L2.txt	Meze Liric	Meze Liric	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Meze%20Liric%20L3.txt	Meze Liric	Meze Liric	over-ear	KB006x + 711
@@ -850,10 +928,10 @@ https://superreview.squig.link/data/Moondrop%20Alice%20(EQ%20PEQ%20default)%20R.
 https://superreview.squig.link/data/Moondrop%20Aria%20L.txt	Moondrop Aria	Moondrop Aria	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Aria%202%20L.txt	Moondrop Aria 2	Moondrop Aria 2	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Aria%202%20R.txt	Moondrop Aria 2	Moondrop Aria 2	in-ear	711
-https://superreview.squig.link/data/Moondrop%20Aria%20Snow%20(Spring)%20L.txt	Moondrop Aria: Snow Edition (tips: Spring)	Moondrop Aria Snow Edition (Moondrop Spring eartips)	ignore	711
-https://superreview.squig.link/data/Moondrop%20Aria%20Snow%20(Spring)%20R.txt	Moondrop Aria: Snow Edition (tips: Spring)	Moondrop Aria Snow Edition (Moondrop Spring eartips)	ignore	711
 https://superreview.squig.link/data/Moondrop%20Aria%20Snow%20L.txt	Moondrop Aria: Snow Edition (tips: gray)	Moondrop Aria Snow Edition	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Aria%20Snow%20R.txt	Moondrop Aria: Snow Edition (tips: gray)	Moondrop Aria Snow Edition	in-ear	711
+https://superreview.squig.link/data/Moondrop%20Aria%20Snow%20(Spring)%20L.txt	Moondrop Aria: Snow Edition (tips: Spring)	Moondrop Aria Snow Edition (Moondrop Spring eartips)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Aria%20Snow%20(Spring)%20R.txt	Moondrop Aria: Snow Edition (tips: Spring)	Moondrop Aria Snow Edition (Moondrop Spring eartips)	ignore	711
 https://superreview.squig.link/data/Moondrop%20Blessing%202%20(E-type)%20L.txt	Moondrop Blessing 2 (tips: E-type)	Moondrop Blessing 2 (Final Audio Type E eartips)	ignore	711
 https://superreview.squig.link/data/Moondrop%20Blessing%202%20(Precog)%20L.txt		Moondrop Blessing 2 (Precog)	ignore	
 https://superreview.squig.link/data/Moondrop%20Blessing%202%20L.txt	Moondrop Blessing 2 (no filter)	Moondrop Blessing 2 (no filter)	ignore	
@@ -876,6 +954,9 @@ https://superreview.squig.link/data/Moondrop%20Chu%202%20(S2)%20L.txt	Moondrop C
 https://superreview.squig.link/data/Moondrop%20Chu%202%20(S2)%20R.txt	Moondrop Chu 2 (sample 2)	Moondrop Chu 2	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Crescent%20L.txt	Moondrop Crescent	Moondrop Crescent	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Crescent%20R.txt	Moondrop Crescent	Moondrop Crescent	in-ear	711
+https://superreview.squig.link/data/Moondrop%20Dark%20Saber%20S1%20L.txt	Moondrop Dark Saber (both channels)	Moondrop Dark Saber (both channels)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dark%20Saber%20S1%20R.txt	Moondrop Dark Saber (both channels)	Moondrop Dark Saber (both channels)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dark%20Saber%20L.txt	Moondrop Dark Saber 	Moondrop Darksaber	in-ear	711
 https://superreview.squig.link/data/Moondrop%20The%20Droplet%20L.txt	Moondrop The Droplet	Moondrop Droplet	in-ear	711
 https://superreview.squig.link/data/Moondrop%20The%20Droplet%20R.txt	Moondrop The Droplet	Moondrop Droplet	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Illumination%20L.txt	Moondrop Illumination (sample 1)	Moondrop Illumination	in-ear	711
@@ -906,6 +987,14 @@ https://superreview.squig.link/data/Moondrop%20LAN%20L.txt	Moondrop LAN 	Moondro
 https://superreview.squig.link/data/Moondrop%20LAN%20R.txt	Moondrop LAN 	Moondrop LAN	in-ear	711
 https://superreview.squig.link/data/Moondrop%20LAN%20(Blu%20Tack)%20L.txt	Moondrop LAN (vent blocked: Blu Tack)	Moondrop LAN (vent blocked: Blu Tack)	ignore	
 https://superreview.squig.link/data/Moondrop%20LAN%20(Blu%20Tack)%20R.txt	Moondrop LAN (vent blocked: Blu Tack)	Moondrop LAN (vent blocked: Blu Tack)	ignore	
+https://superreview.squig.link/data/Moondrop%20May%20(standard)%20L.txt	Moondrop May (EQ: Standard)	Moondrop May	in-ear	711
+https://superreview.squig.link/data/Moondrop%20May%20(standard)%20R.txt	Moondrop May (EQ: Standard)	Moondrop May	in-ear	711
+https://superreview.squig.link/data/Moondrop%20May%20(2-pin)%20L.txt	Moondrop May (cable: 3.5mm)	Moondrop May (3.5 mm)	in-ear	711
+https://superreview.squig.link/data/Moondrop%20May%20(2-pin)%20R.txt	Moondrop May (cable: 3.5mm)	Moondrop May (3.5 mm)	in-ear	711
+https://superreview.squig.link/data/Moondrop%20May%20(USB)%20L.txt	Moondrop May (EQ: PEQ - no gain)	Moondrop May (EQ: PEQ - no gain)	ignore	711
+https://superreview.squig.link/data/Moondrop%20May%20(USB)%20R.txt	Moondrop May (EQ: PEQ - no gain)	Moondrop May (EQ: PEQ - no gain)	ignore	711
+https://superreview.squig.link/data/Moondrop%20May%20(VDSF)%20L.txt	Moondrop May (EQ: VDSF)	Moondrop May (EQ: VDSF)	ignore	711
+https://superreview.squig.link/data/Moondrop%20May%20(VDSF)%20R.txt	Moondrop May (EQ: VDSF)	Moondrop May (EQ: VDSF)	ignore	711
 https://superreview.squig.link/data/Moondrop%20Nekocake%20(ANC%20off)%20L.txt	Moondrop Nekocake (ANC off)	Moondrop Nekocake (ANC off)	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Nekocake%20(ANC%20off)%20R.txt	Moondrop Nekocake (ANC off)	Moondrop Nekocake (ANC off)	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Nekocake%20(ANC%20on)%20L.txt	Moondrop Nekocake (ANC on)	Moondrop Nekocake (ANC on)	in-ear	711
@@ -1208,6 +1297,12 @@ https://superreview.squig.link/headphones/data/Sennheiser%20HD%20800S%20L3.txt	S
 https://superreview.squig.link/headphones/data/Sennheiser%20HD%20800S%20R1.txt	Sennheiser HD 800S	Sennheiser HD 800	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Sennheiser%20HD%20800S%20R2.txt	Sennheiser HD 800S	Sennheiser HD 800	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Sennheiser%20HD%20800S%20R3.txt	Sennheiser HD 800S	Sennheiser HD 800	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20820%20L1.txt	Sennheiser HD 820	Sennheiser HD 820	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20820%20L2.txt	Sennheiser HD 820	Sennheiser HD 820	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20820%20L3.txt	Sennheiser HD 820	Sennheiser HD 820	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20820%20R1.txt	Sennheiser HD 820	Sennheiser HD 820	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20820%20R2.txt	Sennheiser HD 820	Sennheiser HD 820	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20820%20R3.txt	Sennheiser HD 820	Sennheiser HD 820	over-ear	KB006x + 711
 https://superreview.squig.link/data/Sennheiser%20IE%20200%20(Azla%20Max)%20L.txt	Sennheiser IE 200 (tips: Azla Max)	Sennheiser IE 200 (AZLA Max eartips)	in-ear	711
 https://superreview.squig.link/data/Sennheiser%20IE%20200%20(Azla%20Max)%20R.txt	Sennheiser IE 200 (tips: Azla Max)	Sennheiser IE 200 (AZLA Max eartips)	in-ear	711
 https://superreview.squig.link/data/Sennheiser%20IE%20200%20(Spiral%20Dot)%20L.txt	Sennheiser IE 200 (tips: Spiral Dot++)	Sennheiser IE 200 (JVC Spiral Dot++ eartips)	in-ear	711
@@ -1274,6 +1369,12 @@ https://superreview.squig.link/headphones/data/Shure%20Aonic%2050%20R1.txt	Shure
 https://superreview.squig.link/headphones/data/Shure%20Aonic%2050%20R2.txt	Shure Aonic 50	Shure AONIC 50	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Shure%20Aonic%2050%20R3.txt	Shure Aonic 50	Shure AONIC 50	over-ear	KB006x + 711
 https://superreview.squig.link/data/Shure%20SE215%20L.txt	Shure SE215	Shure SE215	in-ear	711
+https://superreview.squig.link/data/Simgot%20EA1000%20(black)%20L.txt	Simgot EA1000 (filter: black)	Simgot Audio EA1000 (black nozzle)	in-ear	711
+https://superreview.squig.link/data/Simgot%20EA1000%20(black)%20R.txt	Simgot EA1000 (filter: black)	Simgot Audio EA1000 (black nozzle)	in-ear	711
+https://superreview.squig.link/data/Simgot%20EA1000%20(red)%20L.txt	Simgot EA1000 (filter: red)	Simgot Audio EA1000 (red nozzle)	in-ear	711
+https://superreview.squig.link/data/Simgot%20EA1000%20(red)%20R.txt	Simgot EA1000 (filter: red)	Simgot Audio EA1000 (red nozzle)	in-ear	711
+https://superreview.squig.link/data/Simgot%20EA1000%20(white)%20L.txt	Simgot EA1000 (filter: white)	Simgot Audio EA1000 (white nozzle)	in-ear	711
+https://superreview.squig.link/data/Simgot%20EA1000%20(white)%20R.txt	Simgot EA1000 (filter: white)	Simgot Audio EA1000 (white nozzle)	in-ear	711
 https://superreview.squig.link/data/Simgot%20EA500%20(black)%20L.txt	Simgot EA500 (filter: black)	Simgot Audio EA500 (black nozzle)	in-ear	711
 https://superreview.squig.link/data/Simgot%20EA500%20(black)%20R.txt	Simgot EA500 (filter: black)	Simgot Audio EA500 (black nozzle)	in-ear	711
 https://superreview.squig.link/data/Simgot%20EA500%20(red)%20L.txt	Simgot EA500 (filter: red)	Simgot Audio EA500 (red nozzle)	in-ear	711
@@ -1474,6 +1575,12 @@ https://superreview.squig.link/data/Tanchjim%20Ola%20(vent%20Blu%20Tack)%20L.txt
 https://superreview.squig.link/data/Tanchjim%20Ola%20(vent%20Tanchjim%20filter)%20L.txt	Tanchjim Ola (vent blocked: Tanchjim filter)	Tanchjim Ola (vent blocked: Tanchjim filter)	ignore	
 https://superreview.squig.link/data/Tanchjim%20One%20(USB)%20L.txt	Tanchjim One (USB)	Tanchjim One (USB)	in-ear	711
 https://superreview.squig.link/data/Tanchjim%20One%20(USB)%20R.txt	Tanchjim One (USB)	Tanchjim One (USB)	in-ear	711
+https://superreview.squig.link/data/Tanchjim%20Origin%20D%20L.txt	Tanchjim Origin (nozzle: D)	Tanchjim Origin (D nozzle)	in-ear	711
+https://superreview.squig.link/data/Tanchjim%20Origin%20D%20R.txt	Tanchjim Origin (nozzle: D)	Tanchjim Origin (D nozzle)	in-ear	711
+https://superreview.squig.link/data/Tanchjim%20Origin%20L%20L.txt	Tanchjim Origin (nozzle: L)	Tanchjim Origin (L nozzle)	in-ear	711
+https://superreview.squig.link/data/Tanchjim%20Origin%20L%20R.txt	Tanchjim Origin (nozzle: L)	Tanchjim Origin (L nozzle)	in-ear	711
+https://superreview.squig.link/data/Tanchjim%20Origin%20S%20L.txt	Tanchjim Origin (nozzle: S)	Tanchjim Origin (S nozzle)	in-ear	711
+https://superreview.squig.link/data/Tanchjim%20Origin%20S%20R.txt	Tanchjim Origin (nozzle: S)	Tanchjim Origin (S nozzle)	in-ear	711
 https://superreview.squig.link/data/Tanchjim%20Oxygen%20L.txt	Tanchjim Oxygen	Tanchjim Oxygen	in-ear	711
 https://superreview.squig.link/data/Tanchjim%20Prism%20L.txt	Tanchjim Prism (tips: bass)	Tanchjim Prism (bass eartips)	in-ear	711
 https://superreview.squig.link/data/Tanchjim%20Prism%20R.txt	Tanchjim Prism (tips: bass)	Tanchjim Prism (bass eartips)	in-ear	711
@@ -1490,6 +1597,8 @@ https://superreview.squig.link/data/ThieAudio%20Elixir%20L.txt	ThieAudio Elixir	
 https://superreview.squig.link/data/ThieAudio%20Elixir%20R.txt	ThieAudio Elixir	ThieAudio Elixir	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Hype%202%20L.txt	ThieAudio Hype 2	ThieAudio Hype 2	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Hype%202%20R.txt	ThieAudio Hype 2	ThieAudio Hype 2	in-ear	711
+https://superreview.squig.link/data/ThieAudio%20Hype%204%20L.txt	ThieAudio Hype 4	ThieAudio Hype 4	in-ear	711
+https://superreview.squig.link/data/ThieAudio%20Hype%204%20R.txt	ThieAudio Hype 4	ThieAudio Hype 4	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Legacy%202%20L.txt	ThieAudio Legacy 2	ThieAudio Legacy 2	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Legacy%204%20L.txt	ThieAudio Legacy 4 (switch off)	ThieAudio Legacy 4 (off-off)	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Legacy%204%20R.txt	ThieAudio Legacy 4 (switch off)	ThieAudio Legacy 4 (off-off)	in-ear	711
@@ -1515,6 +1624,8 @@ https://superreview.squig.link/data/ThieAudio%20Monarch%20MkII%20(S2)%20L.txt	Th
 https://superreview.squig.link/data/ThieAudio%20Monarch%20MkII%20(S2)%20R.txt	ThieAudio Monarch MkII (sample 2)	ThieAudio Monarch MKII	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Monarch%20MkII%20(S2%20-%20Spring%20tips)%20L.txt	ThieAudio Monarch MkII (sample 2, tips: Spring)	ThieAudio Monarch MKII (JVC Spring eartips)	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Monarch%20MkII%20(S2%20-%20Spring%20tips)%20R.txt	ThieAudio Monarch MkII (sample 2, tips: Spring)	ThieAudio Monarch MKII (JVC Spring eartips)	in-ear	711
+https://superreview.squig.link/data/ThieAudio%20Monarch%20mkIII%20L.txt	ThieAudio Monarch MkIII	ThieAudio Monarch MKIII	in-ear	711
+https://superreview.squig.link/data/ThieAudio%20Monarch%20mkIII%20R.txt	ThieAudio Monarch MkIII	ThieAudio Monarch MKIII	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Oracle%20L.txt	ThieAudio Oracle	ThieAudio Oracle	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Oracle%20R.txt	ThieAudio Oracle	ThieAudio Oracle	in-ear	711
 https://superreview.squig.link/data/ThieAudio%20Oracle%20mkII%20L.txt	ThieAudio Oracle mkII	ThieAudio Oracle MKII	in-ear	711
@@ -1579,10 +1690,16 @@ https://superreview.squig.link/data/Truthear%20Hexa%20(S2%20-%20airlocked)%20L.t
 https://superreview.squig.link/data/Truthear%20Hexa%20(S2%20-%20airlocked)%20R.txt	Truthear Hexa (sample 2 - airlocked)	Truthear Hexa (sample 2 - airlocked)	ignore	
 https://superreview.squig.link/data/Truthear%20Hola%20L.txt	Truthear Hola	Truthear Hola	in-ear	711
 https://superreview.squig.link/data/Truthear%20Hola%20R.txt	Truthear Hola	Truthear Hola	in-ear	711
+https://superreview.squig.link/data/Truthear%20Nova%20(black%20double)%20L.txt	Truthear Nova (tips: double-flange - black)	Truthear Nova (black double flange eartips)	in-ear	711
+https://superreview.squig.link/data/Truthear%20Nova%20(black%20double)%20R.txt	Truthear Nova (tips: double-flange - black)	Truthear Nova (black double flange eartips)	in-ear	711
 https://superreview.squig.link/data/Truthear%20Nova%20(foam)%20L.txt	Truthear Nova (tips: foam)	Truthear Nova (foam eartips)	in-ear	711
 https://superreview.squig.link/data/Truthear%20Nova%20(foam)%20R.txt	Truthear Nova (tips: foam)	Truthear Nova (foam eartips)	in-ear	711
 https://superreview.squig.link/data/Truthear%20Nova%20L.txt	Truthear Nova (tips: silicone)	Truthear Nova (silicone eartips)	in-ear	711
 https://superreview.squig.link/data/Truthear%20Nova%20R.txt	Truthear Nova (tips: silicone)	Truthear Nova (silicone eartips)	in-ear	711
+https://superreview.squig.link/data/Truthear%20Nova%20(Spring)%20L.txt	Truthear Nova (tips: Spring)	Truthear Nova (tips: Spring)	ignore	711
+https://superreview.squig.link/data/Truthear%20Nova%20(Spring)%20R.txt	Truthear Nova (tips: Spring)	Truthear Nova (tips: Spring)	ignore	711
+https://superreview.squig.link/data/Truthear%20Nova%20(white%20double)%20L.txt	Truthear Nova (tips: double-flange - white)	Truthear Nova (white double flange eartips)	in-ear	711
+https://superreview.squig.link/data/Truthear%20Nova%20(white%20double)%20R.txt	Truthear Nova (tips: double-flange - white)	Truthear Nova (white double flange eartips)	in-ear	711
 https://superreview.squig.link/data/Truthear%20Zero%20(S2%20deep)%20L.txt	Truthear Zero (sample 2 - deep fit)	Truthear Zero (sample 2 - deep fit)	ignore	
 https://superreview.squig.link/data/Truthear%20Zero%20(S2%20deep)%20R.txt	Truthear Zero (sample 2 - deep fit)	Truthear Zero (sample 2 - deep fit)	ignore	
 https://superreview.squig.link/data/Truthear%20Zero%20L.txt	Truthear Zero (sample 1)	Truthear x Crinacle Zero	in-ear	711

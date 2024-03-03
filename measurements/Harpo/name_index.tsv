@@ -100,6 +100,7 @@ https://harpo.squig.link/data/KZ%20Castor%20Black%20UUDD%20R.txt	KZ Castor UUDD	
 https://harpo.squig.link/data/KZ%20Castor%20Black%20UUUD%20R.txt	KZ Castor UUUD	KZ Castor (on-on-on-off)	in-ear	711
 https://harpo.squig.link/data/KZ%20Castor%20Black%20UUUU%20R.txt	KZ Castor UUUU	KZ Castor (on-on-on-on)	in-ear	711
 https://harpo.squig.link/data/KZ%20DQ6S%20R.txt	KZ DQ6S	KZ DQ6S	in-ear	711
+https://harpo.squig.link/data/KZ%20EDX%20Ultra%20R.txt	KZ EDX Ultra	KZ EDX Ultra	in-ear	711
 https://harpo.squig.link/data/KZ%20ESX%20L.txt	KZ ESX	KZ ESX	in-ear	711
 https://harpo.squig.link/data/KZ%20ESX%20R.txt	KZ ESX	KZ ESX	in-ear	711
 https://harpo.squig.link/data/KZ%20PR1%20Balanced%20L.txt	KZ PR1 Balanced	KZ PR1 Balanced	ignore	
@@ -125,6 +126,7 @@ https://harpo.squig.link/data/LETSHUOER%20D13%20Olina%20Filter%20mod%20R.txt	Let
 https://harpo.squig.link/data/EJ07%20Foam%20R.txt	Letshuoer EJ07 (Foam Tip)	Letshuoer EJ07 (Foam Tip)	ignore	
 https://harpo.squig.link/data/Magaosi%20V3%20R.txt	Magaosi V3	Magaosi V3	in-ear	711
 https://harpo.squig.link/data/Moondrop%20Aria%20R.txt	Moondrop Aria	Moondrop Aria	in-ear	711
+https://harpo.squig.link/data/Moondrop%20Aria%202%20R.txt	Moondrop Aria 2	Moondrop Aria 2	in-ear	711
 https://harpo.squig.link/data/Moondrop%20Chu%20R.txt	Moondrop Chu	Moondrop Chu	in-ear	711
 https://harpo.squig.link/data/Moondrop%20Quarks%20DSP%20L.txt	Moondrop Quarks DSP	Moondrop Quarks DSP	in-ear	711
 https://harpo.squig.link/data/Moondrop%20SSR%20R.txt	Moondrop SSR	Moondrop SSR	in-ear	711
@@ -133,6 +135,8 @@ https://harpo.squig.link/data/Enco%20X2%20-%20Classic%20R.txt	Oppo Enco X2 - Cla
 https://harpo.squig.link/data/Enco%20X2%20-%20Punchy%20R.txt	Oppo Enco X2 - Punchy	Oppo Enco X2 - Punchy	ignore	
 https://harpo.squig.link/data/Enco%20X2%20-%20Real%20R.txt	Oppo Enco X2 - Real	Oppo Enco X2 - Real	ignore	
 https://harpo.squig.link/data/Enco%20X2%20-%20Simple%20and%20Clear%20R.txt	Oppo Enco X2 - Simple and Clear	Oppo Enco X2 - Simple and Clear	ignore	
+https://harpo.squig.link/data/Pula%20PA02%20L.txt	Pula PA02	PULA PA02	in-ear	711
+https://harpo.squig.link/data/Pula%20PA02%20R.txt	Pula PA02	PULA PA02	in-ear	711
 https://harpo.squig.link/data/Penon%20Fan%202%20R.txt	Penon Fan 2	Penon Fan 2	in-ear	711
 https://harpo.squig.link/data/Penon%20Orb%20R.txt	Penon Orb	Penon Orb	in-ear	711
 https://harpo.squig.link/data/Penon%20Serial%20R.txt	Penon Serial	Penon Serial	in-ear	711
@@ -144,10 +148,14 @@ https://harpo.squig.link/data/Penon%20Vortex%20pokemod%202%20R.txt	Penon Vortex 
 https://harpo.squig.link/data/QCY%20T18%20L.txt	QCY T18	QCY T18	in-ear	711
 https://harpo.squig.link/data/QKZ%20ZXD%20R.txt	QKZ ZXD	QKZ ZXD	in-ear	711
 https://harpo.squig.link/data/QKZ%20x%20HBB%20Kahn%20R.txt	QKZ x HBB Kahn	QKZ x HBB Khan	in-ear	711
+https://harpo.squig.link/data/Rose%20Technics%20Quietsea%20L.txt	Rose Technics QuietSea	Rose Technics QuietSea	in-ear	711
 https://harpo.squig.link/data/SeeAudio%20Yume%202%20L.txt	SeeAudio Yume 2	SeeAudio Yume 2	in-ear	711
 https://harpo.squig.link/data/SeeAudio%20Yume%202%20R.txt	SeeAudio Yume 2	SeeAudio Yume 2	in-ear	711
 https://harpo.squig.link/data/Sennheiser%20HD600%20R.txt	Sennheiser HD 600	Sennheiser HD 600	ignore	
+https://harpo.squig.link/data/Shanling%20MG100%20Silver%20R.txt	Shanling MG100 MG100 Red Nozzle	Shanling MG100 (red nozzle)	in-ear	711
+https://harpo.squig.link/data/Shanling%20MG100%20Red%20R.txt	Shanling MG100 MG100 Silver Nozzle	Shanling MG100 (silver nozzle)	in-ear	711
 https://harpo.squig.link/data/Sono%20R.txt	Shanling Sono	Shanling Sono	in-ear	711
+https://harpo.squig.link/data/Shanling%20Sono%20Black%20R.txt	Shanling Sono Sono Black Nozzle	Shanling Sono (black nozzle)	in-ear	711
 https://harpo.squig.link/data/Shozy%20Form%201.1%20L.txt	Shozy Form 1.1	Shozy Form 1.1	in-ear	711
 https://harpo.squig.link/data/Shozy%20Magma%20L.txt	Shozy Magma	Shozy Magma	in-ear	711
 https://harpo.squig.link/data/Shozy%20Magma%20R.txt	Shozy Magma	Shozy Magma	in-ear	711
@@ -160,6 +168,9 @@ https://harpo.squig.link/data/Letshuoer%20Kinda%20Lava%20Divinus%20L.txt	Letshuo
 https://harpo.squig.link/data/Letshuoer%20Kinda%20Lava%20L.txt		Shuoer EJ07M Kinda Lava Edition	in-ear	711
 https://harpo.squig.link/data/Letshuoer%20S12%20R.txt	Letshuoer S12	Shuoer S12	in-ear	711
 https://harpo.squig.link/data/Simgot%20EA500%20R.txt	Simgot EA500	Simgot Audio EA500	in-ear	711
+https://harpo.squig.link/data/Simgot%20LM500%20Silver%20Black%20R.txt	Simgot EA500 LM Simgot EA500 LM Silver Black	Simgot Audio EA500LM (black nozzle)	in-ear	711
+https://harpo.squig.link/data/Simgot%20LM500%20Bronze%20R.txt	Simgot EA500 LM Simgot EA500 LM Bronze	Simgot Audio EA500LM (bronze nozzle)	in-ear	711
+https://harpo.squig.link/data/Simgot%20LM500%20Silver%20Red%20R.txt	Simgot EA500 LM Simgot EA500 LM Silver Red	Simgot Audio EA500LM (red nozzle)	in-ear	711
 https://harpo.squig.link/data/Simgot%20EM6L%20R.txt	Simgot EM6L	Simgot Audio EM6L	in-ear	711
 https://harpo.squig.link/data/Simgot%20EW100P%20R.txt	Simgot EW100P	Simgot Audio EW100P	in-ear	711
 https://harpo.squig.link/data/Simgot%20EW200%20R.txt	Simgot EW200	Simgot Audio EW200	in-ear	711
@@ -194,6 +205,7 @@ https://harpo.squig.link/data/Tanchjim%20Ola%20R.txt	Tanchjim Ola	Tanchjim Ola	i
 https://harpo.squig.link/data/Tanchjim%20One%20L.txt	Tanchjim One	Tanchjim One	in-ear	711
 https://harpo.squig.link/data/Tanchjim%20One%20R.txt	Tanchjim One	Tanchjim One	in-ear	711
 https://harpo.squig.link/data/Tanchjim%20Tanya%20R.txt	Tanchjim Tanya	Tanchjim Tanya	in-ear	711
+https://harpo.squig.link/data/Shanling%20MG100%20Red%20Bass%20PEQ%20R.txt	Testarea MG100 Red Bass PEQ	Testarea MG100 Red Bass PEQ	ignore	711
 https://harpo.squig.link/data/Thieaudio%20Monarch%202%20R.txt		ThieAudio Monarch MKII	in-ear	711
 https://harpo.squig.link/data/Oracle%20MKII%20R.txt	Thieaudio Oracle MKII	ThieAudio Oracle MKII	in-ear	711
 https://harpo.squig.link/data/Tiandir%20TD15%20L.txt	Tiandirenhe TD15	Tiandirenhe TD15	in-ear	711
@@ -226,6 +238,8 @@ https://harpo.squig.link/data/Erasmus%2000%20R.txt	XINHS Erasmus (Switch 00)	XIN
 https://harpo.squig.link/data/Erasmus%2001%20R.txt	XINHS Erasmus (Switch 01)	XINHS x Akros Erasmus (off-on)	in-ear	711
 https://harpo.squig.link/data/Erasmus%2010%20R.txt	XINHS Erasmus (Switch 10)	XINHS x Akros Erasmus (on-off)	in-ear	711
 https://harpo.squig.link/data/Erasmus%2011%20R.txt	XINHS Erasmus (Switch 11)	XINHS x Akros Erasmus (on-on)	in-ear	711
+https://harpo.squig.link/data/Doscinco%20L.txt	Ziigaat Doscinco	ZiiGaat Doscinco	in-ear	711
+https://harpo.squig.link/data/Doscinco%20R.txt	Ziigaat Doscinco	ZiiGaat Doscinco	in-ear	711
 https://harpo.squig.link/data/phone_book%20(08.03.2023%2016-49-05).json		phone_book (08.03.2023 16-49-05).json	ignore	
 https://harpo.squig.link/data/realme%20Air%205%20Harpo%20Custom%20R.txt		realme Air 5 Harpo Custom	ignore	
 https://harpo.squig.link/data/realme%20Air%205%20original%20R.txt	realme Buds Air 5 Pro - Original	realme Buds Air 5 Pro (original sound effect mode)	in-ear	711

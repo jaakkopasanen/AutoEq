@@ -18,7 +18,7 @@ ROOT_PATH = Path(__file__).parent.parent
 if str(ROOT_PATH) not in sys.path:
     sys.path.insert(1, str(ROOT_PATH))
 from dbtools.name_index import NameIndex, NameItem
-from dbtools.crawler import Crawler
+from dbtools.crawler import Crawler, InvalidResponseCodeError
 from dbtools.image_graph_parser import ImageGraphParser
 from dbtools.constants import MEASUREMENTS_PATH
 
@@ -44,7 +44,11 @@ class Oratory1990Crawler(Crawler):
     def parse_pdf(self, item):
         pdf_path = self.pdf_path(item)
         if not pdf_path.exists():
-            self.download(item.url, self.pdf_path(item))
+            try:
+                self.download(item.url, self.pdf_path(item))
+            except InvalidResponseCodeError as err:
+                print(f'Failed to download {item.url}')
+                return
         image_path = self.image_path(item)
         # Convert to image with ghostscript
         # Using temporary paths with Ghostscript because it seems to be unable to work with non-ascii characters
@@ -105,9 +109,16 @@ class Oratory1990Crawler(Crawler):
         if self.driver is None:
             raise TypeError('self.driver cannot be None')
         self.name_index = self.read_name_index()
-        document = self.get_beautiful_soup('https://www.reddit.com/r/oratory1990/wiki/index/list_of_presets')
+        document = self.get_beautiful_soup(
+            'https://www.reddit.com/r/oratory1990/wiki/index/list_of_presets',
+            use_selenium=False,
+            headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0'
+            })
         table_header = document.find(id='wiki_full_list_of_eq_settings.3A')
         if table_header is None:
+            with open(self.measurements_path.joinpath('reddit.html'), 'w', encoding='utf-8') as fh:
+                fh.write(str(document))
             raise RedditCrawlFailed('Failed to parse Reddit page. Maybe try again?')
         self.crawl_index = NameIndex()
         manufacturer, model = None, None
@@ -120,7 +131,7 @@ class Oratory1990Crawler(Crawler):
             model = cells[1].text.strip() if cells[1].text.strip() != '-' else model
             source_name = f'{manufacturer} {model}'
             # Third cell contains hyperlink, where the anchor is the PDF and text is target name
-            url = cells[2].find('a')['href'].replace('?dl=0', '?dl=1')
+            url = cells[2].find('a')['href'].replace('dl=0', 'dl=1')
             form = 'over-ear' if 'over-ear' in cells[2].text.strip().lower() else 'in-ear'
             # Fourth cell is notes
             notes = cells[3].text.strip()
@@ -225,6 +236,8 @@ class Oratory1990Crawler(Crawler):
         avg_fr.raw = np.zeros(avg_fr.frequency.shape)
         for item in items:
             image_path = self.parse_pdf(item)
+            if image_path is None:
+                return
             fr, inspection = Oratory1990Crawler.parse_image(image_path)
             avg_fr.raw += fr.raw
             inspection.save(inspection_path.joinpath(f'{make_file_name_allowed(item.source_name)}.png'))

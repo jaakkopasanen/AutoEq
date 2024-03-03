@@ -4,6 +4,7 @@
 - [BLON x HBB Z300](./in-ear/BLON%20x%20HBB%20Z300)
 - [DUNU SA6 Ultra (atmospheric immersion mode)](./in-ear/DUNU%20SA6%20Ultra%20(atmospheric%20immersion%20mode))
 - [DUNU SA6 Ultra (default mode)](./in-ear/DUNU%20SA6%20Ultra%20(default%20mode))
+- [EPZ Q1](./in-ear/EPZ%20Q1)
 - [Juzear 41T](./in-ear/Juzear%2041T)
 - [Juzear 51T](./in-ear/Juzear%2051T)
 - [Kiwi Ears Cadenza](./in-ear/Kiwi%20Ears%20Cadenza)
@@ -38,3 +39,4 @@
 - [Truthear x Crinacle Zero RED](./in-ear/Truthear%20x%20Crinacle%20Zero%20RED)
 - [Truthear x Crinacle Zero RED (Bass+)](./in-ear/Truthear%20x%20Crinacle%20Zero%20RED%20(Bass+))
 - [Xenns Mangird Top](./in-ear/Xenns%20Mangird%20Top)
+- [Yanyin Moonlight (2023 version)](./in-ear/Yanyin%20Moonlight%20(2023%20version))
