@@ -1230,6 +1230,17 @@
 - [Moondrop Void](./GRAS%2043AG-7%20over-ear/Moondrop%20Void) on GRAS 43AG-7
 - [Moondrop x Crinacle Blessing2 Dusk](./711%20in-ear/Moondrop%20x%20Crinacle%20Blessing2%20Dusk) on 711
 - [Moondrop x Crinacle Blessing2 Dusk](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20x%20Crinacle%20Blessing2%20Dusk) on Bruel & Kjaer 4620
+- [Moondrop x Crinacle DUSK (analog)](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(analog)) on Bruel & Kjaer 4620
+- [Moondrop x Crinacle DUSK (Bass+ DSP)](./711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Bass+%20DSP)) on 711
+- [Moondrop x Crinacle DUSK (Bass+ DSP)](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Bass+%20DSP)) on Bruel & Kjaer 4620
+- [Moondrop x Crinacle DUSK (Default DSP)](./711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Default%20DSP)) on 711
+- [Moondrop x Crinacle DUSK (Default DSP)](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Default%20DSP)) on Bruel & Kjaer 4620
+- [Moondrop x Crinacle DUSK (Diffuse-tilted DSP)](./711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Diffuse-tilted%20DSP)) on 711
+- [Moondrop x Crinacle DUSK (Diffuse-tilted DSP)](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Diffuse-tilted%20DSP)) on Bruel & Kjaer 4620
+- [Moondrop x Crinacle DUSK (Harman DSP)](./711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Harman%20DSP)) on 711
+- [Moondrop x Crinacle DUSK (Harman DSP)](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Harman%20DSP)) on Bruel & Kjaer 4620
+- [Moondrop x Crinacle DUSK (V DSP)](./711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(V%20DSP)) on 711
+- [Moondrop x Crinacle DUSK (V DSP)](./Bruel%20&%20Kjaer%204620%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(V%20DSP)) on Bruel & Kjaer 4620
 - [MUNITIO Billets](./711%20in-ear/MUNITIO%20Billets) on 711
 - [MUNITIO Bullet In-Ear](./711%20in-ear/MUNITIO%20Bullet%20In-Ear) on 711
 - [Muse HiFi Power](./711%20in-ear/Muse%20HiFi%20Power) on 711

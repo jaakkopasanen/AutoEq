@@ -1,4 +1,6 @@
 url	source_name	name	form	rig
+https://dhrme.squig.link/data/sCore%20SleepA20%20Seal%20L.txt		Anker Soundcore Sleep A20	in-ear	711
+https://dhrme.squig.link/data/sCore%20SleepA20%20Seal%20R.txt		Anker Soundcore Sleep A20	in-ear	711
 https://dhrme.squig.link/data/BeoPlayEx%20ANC%20L.txt	Bang and Olufsen BeoPlay Ex (Codec: APTX Adaptive, EQ: None, ANC: Level: 3)	Bang & Olufsen BeoPlay Ex	in-ear	711
 https://dhrme.squig.link/data/BeoPlayEx%20ANC%20R.txt	Bang and Olufsen BeoPlay Ex (Codec: APTX Adaptive, EQ: None, ANC: Level: 3)	Bang & Olufsen BeoPlay Ex	in-ear	711
 https://dhrme.squig.link/data/BeoPlayEx%20NeutralClear%20L.txt	Bang and Olufsen BeoPlay Ex (Codec: APTX Adaptive, EQ: Clear, ANC: Neutral)	Bang and Olufsen BeoPlay Ex (Codec: APTX Adaptive, EQ: Clear, ANC: Neutral)	ignore	
@@ -39,6 +41,18 @@ https://dhrme.squig.link/data/NeoBudsPro2%20HighANC%20L.txt	Edifier NeoBuds Pro 
 https://dhrme.squig.link/data/NeoBudsPro2%20HighANC%20R.txt	Edifier NeoBuds Pro 2 (Codec: LDAC, EQ: Classic, ANC: High NC)	Edifier NeoBuds Pro 2 (ANC high, classic EQ)	in-ear	711
 https://dhrme.squig.link/data/NeoBudsPro2%20ANCOff%20L.txt	Edifier NeoBuds Pro 2 (Codec: LDAC, EQ: Classic, ANC: Off)	Edifier NeoBuds Pro 2 (ANC off, classic EQ)	in-ear	711
 https://dhrme.squig.link/data/NeoBudsPro2%20ANCOff%20R.txt	Edifier NeoBuds Pro 2 (Codec: LDAC, EQ: Classic, ANC: Off)	Edifier NeoBuds Pro 2 (ANC off, classic EQ)	in-ear	711
+https://dhrme.squig.link/data/FairBuds%20ANC%20BassEQ%20L.txt	Fairphone Fairbuds (Codec: AAC, EQ: Bass Boost, ANC: On)	Fairphone Fairbuds (Codec: AAC, EQ: Bass Boost, ANC: On)	ignore	711
+https://dhrme.squig.link/data/FairBuds%20ANC%20BassEQ%20R.txt	Fairphone Fairbuds (Codec: AAC, EQ: Bass Boost, ANC: On)	Fairphone Fairbuds (Codec: AAC, EQ: Bass Boost, ANC: On)	ignore	711
+https://dhrme.squig.link/data/FairBuds%20ANC%20MainEQ%20L.txt	Fairphone Fairbuds (Codec: AAC, EQ: Main, ANC: On)	Fairphone Fairbuds (Codec: AAC, EQ: Main, ANC: On)	ignore	711
+https://dhrme.squig.link/data/FairBuds%20ANC%20MainEQ%20R.txt	Fairphone Fairbuds (Codec: AAC, EQ: Main, ANC: On)	Fairphone Fairbuds (Codec: AAC, EQ: Main, ANC: On)	ignore	711
+https://dhrme.squig.link/data/FairBuds%20Studio%20Norm%20L.txt	Fairphone Fairbuds (Codec: AAC, EQ: Studio, ANC: Off)	Fairphone Fairbuds (Codec: AAC, EQ: Studio, ANC: Off)	ignore	711
+https://dhrme.squig.link/data/FairBuds%20Studio%20Norm%20R.txt	Fairphone Fairbuds (Codec: AAC, EQ: Studio, ANC: Off)	Fairphone Fairbuds (Codec: AAC, EQ: Studio, ANC: Off)	ignore	711
+https://dhrme.squig.link/data/FairBuds%20Studio%20ANC%20L.txt	Fairphone Fairbuds (Codec: AAC, EQ: Studio, ANC: On)	Fairphone Fairbuds (Codec: AAC, EQ: Studio, ANC: On)	ignore	711
+https://dhrme.squig.link/data/FairBuds%20Studio%20ANC%20R.txt	Fairphone Fairbuds (Codec: AAC, EQ: Studio, ANC: On)	Fairphone Fairbuds (Codec: AAC, EQ: Studio, ANC: On)	ignore	711
+https://dhrme.squig.link/data/FairBuds%20Norm%20FlatEQ%20L.txt	Fairphone Fairbuds (Codec: AAC, EQ: Flat, ANC: Off)	Fairphone Fairbuds (flat eq, ANC Off)	in-ear	711
+https://dhrme.squig.link/data/FairBuds%20Norm%20FlatEQ%20R.txt	Fairphone Fairbuds (Codec: AAC, EQ: Flat, ANC: Off)	Fairphone Fairbuds (flat eq, ANC Off)	in-ear	711
+https://dhrme.squig.link/data/FairBuds%20ANC%20FlatEQ%20L.txt	Fairphone Fairbuds (Codec: AAC, EQ: Flat, ANC: On)	Fairphone Fairbuds (flat eq, ANC On)	in-ear	711
+https://dhrme.squig.link/data/FairBuds%20ANC%20FlatEQ%20R.txt	Fairphone Fairbuds (Codec: AAC, EQ: Flat, ANC: On)	Fairphone Fairbuds (flat eq, ANC On)	in-ear	711
 https://dhrme.squig.link/data/Svanar%20Hifi%20L.txt	Hifiman Svanar (Codec: LDAC, EQ: None, ANC: Hifi)	HIFIMAN Svanar (ANC Hifi)	in-ear	711
 https://dhrme.squig.link/data/Svanar%20Hifi%20R.txt	Hifiman Svanar (Codec: LDAC, EQ: None, ANC: Hifi)	HIFIMAN Svanar (ANC Hifi)	in-ear	711
 https://dhrme.squig.link/data/Svanar%20ANC%20L.txt	Hifiman Svanar (Codec: LDAC, EQ: None, ANC: ANC)	HIFIMAN Svanar (ANC)	in-ear	711
@@ -47,6 +61,18 @@ https://dhrme.squig.link/data/Huawei%20Free%20Buds%20Pro%203%20ANC%20L.txt	Huawe
 https://dhrme.squig.link/data/Huawei%20Free%20Buds%20Pro%203%20ANC%20R.txt	Huawei Free Buds Pro 3 (Codec: LDAC, EQ: Default, ANC: Max (Ultra))	Huawei Free Buds Pro 3 (ANC max)	in-ear	711
 https://dhrme.squig.link/data/KZ%20VXS%20Pro%20L.txt	KZ VXS Pro (Codec: APTX Adaptive, EQ: None, ANC: N/A)	KZ VXS Pro	in-ear	711
 https://dhrme.squig.link/data/KZ%20VXS%20Pro%20R.txt	KZ VXS Pro (Codec: APTX Adaptive, EQ: None, ANC: N/A)	KZ VXS Pro	in-ear	711
+https://dhrme.squig.link/data/MDGA%20Basshead%20Norm%20L.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Basshead, ANC: Off)	Moondrop Golden Ages (Codec: LDAC, EQ: Basshead, ANC: Off)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Basshead%20Norm%20R.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Basshead, ANC: Off)	Moondrop Golden Ages (Codec: LDAC, EQ: Basshead, ANC: Off)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Basshead%20ANC%20L.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Basshead, ANC: On)	Moondrop Golden Ages (Codec: LDAC, EQ: Basshead, ANC: On)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Basshead%20ANC%20R.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Basshead, ANC: On)	Moondrop Golden Ages (Codec: LDAC, EQ: Basshead, ANC: On)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Monitor%20ANC%20L.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Monitor, ANC: On)	Moondrop Golden Ages (Codec: LDAC, EQ: Monitor, ANC: On)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Monitor%20ANC%20R.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Monitor, ANC: On)	Moondrop Golden Ages (Codec: LDAC, EQ: Monitor, ANC: On)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Reference%20Norm%20L.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Reference, ANC: Off)	Moondrop Golden Ages (Codec: LDAC, EQ: Reference, ANC: Off)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Reference%20Norm%20R.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Reference, ANC: Off)	Moondrop Golden Ages (Codec: LDAC, EQ: Reference, ANC: Off)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Reference%20ANC%20L.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Reference, ANC: On)	Moondrop Golden Ages (Codec: LDAC, EQ: Reference, ANC: On)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Reference%20ANC%20R.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Reference, ANC: On)	Moondrop Golden Ages (Codec: LDAC, EQ: Reference, ANC: On)	ignore	711
+https://dhrme.squig.link/data/MDGA%20Monitor%20Norm%20L.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Monitor, ANC: Off)	Moondrop Golden Ages (monitor eq)	in-ear	711
+https://dhrme.squig.link/data/MDGA%20Monitor%20Norm%20R.txt	Moondrop Golden Ages (Codec: LDAC, EQ: Monitor, ANC: Off)	Moondrop Golden Ages (monitor eq)	in-ear	711
 https://dhrme.squig.link/data/Nobel%20Fokus%20Mystique%20L.txt	Noble Audio Fokus Mystique (Codec: APTX Adaptive, EQ: None, ANC: N/A)	Noble Audio Fokus Mystique	in-ear	711
 https://dhrme.squig.link/data/Nobel%20Fokus%20Mystique%20R.txt	Noble Audio Fokus Mystique (Codec: APTX Adaptive, EQ: None, ANC: N/A)	Noble Audio Fokus Mystique	in-ear	711
 https://dhrme.squig.link/data/NobleFMystique%202flange%20L.txt	Noble Audio Fokus Mystique (double flange) (Codec: APTX Adaptive, EQ: None, ANC: N/A)	Noble Audio Fokus Mystique (double flange)	in-ear	711
@@ -78,6 +104,8 @@ https://dhrme.squig.link/data/SoundPeats%20Air%204%20Pro%20Normal%20L.txt	SoundP
 https://dhrme.squig.link/data/SoundPeats%20Air%204%20Pro%20Normal%20R.txt	SoundPeats Air 4 Pro (Codec: AAC, EQ: Default, ANC: Off)	SoundPeats Air4 Pro (ANC Off)	in-ear	711
 https://dhrme.squig.link/data/SoundPeats%20Air%204%20Pro%20ANC%20L.txt	SoundPeats Air 4 Pro (Codec: AAC, EQ: Default, ANC: ANC)	SoundPeats Air4 Pro (ANC on)	in-ear	711
 https://dhrme.squig.link/data/SoundPeats%20Air%204%20Pro%20ANC%20R.txt	SoundPeats Air 4 Pro (Codec: AAC, EQ: Default, ANC: ANC)	SoundPeats Air4 Pro (ANC on)	in-ear	711
+https://dhrme.squig.link/data/SoundPeats%20Engine%20ClassicEQ%20L.txt	SoundPeats Engine (Codec: AAC, EQ: Classic)	SoundPeats Engine	in-ear	711
+https://dhrme.squig.link/data/SoundPeats%20Engine%20ClassicEQ%20R.txt	SoundPeats Engine (Codec: AAC, EQ: Classic)	SoundPeats Engine	in-ear	711
 https://dhrme.squig.link/data/StatusAudiophile%20ANCOff%20L.txt	Status Audio Between 3 ANC (Codec: AAC, EQ: Status Audiophile, ANC: Off)	Status Audio Between 3 ANC (Codec: AAC, EQ: Status Audiophile, ANC: Off)	ignore	
 https://dhrme.squig.link/data/StatusAudiophile%20ANCOff%20R.txt	Status Audio Between 3 ANC (Codec: AAC, EQ: Status Audiophile, ANC: Off)	Status Audio Between 3 ANC (Codec: AAC, EQ: Status Audiophile, ANC: Off)	ignore	
 https://dhrme.squig.link/data/StatusAudiophile%20ANCOn%20L.txt	Status Audio Between 3 ANC (Codec: AAC, EQ: Status Audiophile, ANC: On)	Status Audio Between 3 ANC (Codec: AAC, EQ: Status Audiophile, ANC: On)	ignore	

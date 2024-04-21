@@ -679,6 +679,7 @@ preference scoring developed by Sean Olive et al.
 ## In-ear Headphones
 | Name                                                                                                                                               |   Score |   STD (dB) |   Slope |   Average (dB) |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|---------|------------|---------|----------------|
+| [Moondrop x Crinacle DUSK (Harman DSP)](./crinacle/711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Harman%20DSP))                                   |      91 |       0.61 |   -0.27 |           0.44 |
 | [ThieAudio Monarch MKIII](./HypetheSonics/GRAS%20RA0045%20in-ear/ThieAudio%20Monarch%20MKIII)                                                      |      91 |       0.77 |   -0.11 |           0.62 |
 | [AKG N400](./oratory1990/in-ear/AKG%20N400)                                                                                                        |      89 |       0.93 |   -0.11 |           0.68 |
 | [AKG N5005](./oratory1990/in-ear/AKG%20N5005)                                                                                                      |      87 |       1.11 |   -0.09 |           0.89 |
@@ -827,6 +828,7 @@ preference scoring developed by Sean Olive et al.
 | [Kumitate Lab KL-Focus (max bass)](./crinacle/711%20in-ear/Kumitate%20Lab%20KL-Focus%20(max%20bass))                                               |      74 |       2.07 |   -0.4  |           1.79 |
 | [Moondrop Kato (steel nozzle)](./crinacle/711%20in-ear/Moondrop%20Kato%20(steel%20nozzle))                                                         |      74 |       2.11 |   -0.32 |           1.63 |
 | [Moondrop SSP](./HypetheSonics/GRAS%20RA0045%20in-ear/Moondrop%20SSP)                                                                              |      74 |       2.16 |    0.29 |           1.77 |
+| [Moondrop x Crinacle DUSK (Diffuse-tilted DSP)](./crinacle/711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Diffuse-tilted%20DSP))                   |      74 |       1.95 |   -0.1  |           2.46 |
 | [Samsung Galaxy Buds2](./oratory1990/in-ear/Samsung%20Galaxy%20Buds2)                                                                              |      74 |       2.18 |   -0.24 |           1.68 |
 | [Shanling ME700 Lite](./crinacle/711%20in-ear/Shanling%20ME700%20Lite)                                                                             |      74 |       2.09 |    0.43 |           1.44 |
 | [Shuoer EJ07M Kinda Lava Edition](./crinacle/711%20in-ear/Shuoer%20EJ07M%20Kinda%20Lava%20Edition)                                                 |      74 |       1.98 |   -0.47 |           1.65 |
@@ -921,6 +923,8 @@ preference scoring developed by Sean Olive et al.
 | [Audeze Euclid](./oratory1990/in-ear/Audeze%20Euclid)                                                                                              |      71 |       2.39 |    0.46 |           1.72 |
 | [Aure Audio Elixir](./crinacle/711%20in-ear/Aure%20Audio%20Elixir)                                                                                 |      71 |       2.57 |   -0.08 |           1.82 |
 | [CCA C12](./crinacle/711%20in-ear/CCA%20C12)                                                                                                       |      71 |       2.22 |   -0.38 |           2.07 |
+| [Creative Aurvana Ace 2 (ANC Off)](./HypetheSonics/GRAS%20RA0045%20in-ear/Creative%20Aurvana%20Ace%202%20(ANC%20Off))                              |      71 |       2.27 |   -0.36 |           2.18 |
+| [Creative Aurvana Ace 2 (Ambient mode on)](./HypetheSonics/GRAS%20RA0045%20in-ear/Creative%20Aurvana%20Ace%202%20(Ambient%20mode%20on))            |      71 |       2.26 |   -0.36 |           2.2  |
 | [DUNU SA6 Ultra (atmospheric immersion mode)](./crinacle/711%20in-ear/DUNU%20SA6%20Ultra%20(atmospheric%20immersion%20mode))                       |      71 |       2.27 |   -0.6  |           1.65 |
 | [Elysian Cora V2](./crinacle/711%20in-ear/Elysian%20Cora%20V2)                                                                                     |      71 |       2.19 |   -0.42 |           2.22 |
 | [Final Audio A3000](./crinacle/711%20in-ear/Final%20Audio%20A3000)                                                                                 |      71 |       2.53 |   -0.12 |           2.04 |
@@ -933,6 +937,7 @@ preference scoring developed by Sean Olive et al.
 | [MEE Audio M6 Pro](./crinacle/711%20in-ear/MEE%20Audio%20M6%20Pro)                                                                                 |      71 |       2.2  |   -0.39 |           2.22 |
 | [Moondrop Aria Snow Edition](./crinacle/711%20in-ear/Moondrop%20Aria%20Snow%20Edition)                                                             |      71 |       2.61 |    0.14 |           1.71 |
 | [Moondrop Crescent](./oratory1990/in-ear/Moondrop%20Crescent)                                                                                      |      71 |       2.12 |   -0.71 |           1.74 |
+| [Moondrop x Crinacle DUSK (Default DSP)](./crinacle/711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Default%20DSP))                                 |      71 |       2.04 |   -0.8  |           1.94 |
 | [NiceHCK NX7 Pro (red)](./crinacle/711%20in-ear/NiceHCK%20NX7%20Pro%20(red))                                                                       |      71 |       2.44 |   -0.06 |           2.32 |
 | [Noble Audio Sultan SE](./HypetheSonics/GRAS%20RA0045%20in-ear/Noble%20Audio%20Sultan%20SE)                                                        |      71 |       2.18 |   -0.71 |           1.6  |
 | [Samsung Galaxy Buds2 Pro (passive mode)](./crinacle/711%20in-ear/Samsung%20Galaxy%20Buds2%20Pro%20(passive%20mode))                               |      71 |       2.08 |   -0.88 |           1.49 |
@@ -968,6 +973,7 @@ preference scoring developed by Sean Olive et al.
 | [KZ ZST](./oratory1990/in-ear/KZ%20ZST)                                                                                                            |      70 |       2.31 |   -0.47 |           1.97 |
 | [Kinera BD005 Pro](./crinacle/711%20in-ear/Kinera%20BD005%20Pro)                                                                                   |      70 |       2.51 |    0.35 |           1.85 |
 | [Mangird MT4](./crinacle/711%20in-ear/Mangird%20MT4)                                                                                               |      70 |       2.32 |   -0.54 |           1.86 |
+| [Moondrop x Crinacle DUSK (V DSP)](./crinacle/711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(V%20DSP))                                             |      70 |       2.03 |   -1.02 |           1.78 |
 | [QKZ VK4 (pre-revision)](./crinacle/711%20in-ear/QKZ%20VK4%20(pre-revision))                                                                       |      70 |       2.11 |   -0.77 |           1.85 |
 | [Shuoer D13 (silver nozzle)](./crinacle/711%20in-ear/Shuoer%20D13%20(silver%20nozzle))                                                             |      70 |       2.28 |   -0.55 |           1.88 |
 | [Simgot Audio EA500 (red nozzle)](./crinacle/711%20in-ear/Simgot%20Audio%20EA500%20(red%20nozzle))                                                 |      70 |       2.6  |    0.25 |           1.71 |
@@ -1039,6 +1045,7 @@ preference scoring developed by Sean Olive et al.
 | [BQEYZ Autumn (normal filter)](./crinacle/711%20in-ear/BQEYZ%20Autumn%20(normal%20filter))                                                         |      68 |       2.9  |    0.12 |           2.05 |
 | [Colorfly Quintet](./crinacle/711%20in-ear/Colorfly%20Quintet)                                                                                     |      68 |       2.53 |    0.66 |           1.65 |
 | [Craft Ears Craft SIX (CIEM)](./crinacle/711%20in-ear/Craft%20Ears%20Craft%20SIX%20(CIEM))                                                         |      68 |       2.6  |   -0.53 |           1.76 |
+| [Creative Aurvana Ace 2 (ANC On)](./HypetheSonics/GRAS%20RA0045%20in-ear/Creative%20Aurvana%20Ace%202%20(ANC%20On))                                |      68 |       2.45 |   -0.52 |           2.27 |
 | [DUNU DK3001 Pro](./crinacle/711%20in-ear/DUNU%20DK3001%20Pro)                                                                                     |      68 |       2.68 |   -0.19 |           2.3  |
 | [Edifier TWS5](./crinacle/711%20in-ear/Edifier%20TWS5)                                                                                             |      68 |       2.6  |   -0.52 |           1.97 |
 | [Fearless Audio S8F](./crinacle/711%20in-ear/Fearless%20Audio%20S8F)                                                                               |      68 |       2.47 |   -0.4  |           2.31 |
@@ -1392,6 +1399,7 @@ preference scoring developed by Sean Olive et al.
 | [BQEYZ Autumn (treble filter)](./crinacle/711%20in-ear/BQEYZ%20Autumn%20(treble%20filter))                                                         |      59 |       3.35 |    0.66 |           2.27 |
 | [Bang & Olufsen Beoplay E8 2.0](./crinacle/711%20in-ear/Bang%20&%20Olufsen%20Beoplay%20E8%202.0)                                                   |      59 |       3.25 |   -0.33 |           3.22 |
 | [Cozoy Trio](./crinacle/711%20in-ear/Cozoy%20Trio)                                                                                                 |      59 |       3.58 |   -0.1  |           2.89 |
+| [DCMEKA IE68](./HypetheSonics/GRAS%20RA0045%20in-ear/DCMEKA%20IE68)                                                                                |      59 |       2.79 |   -1.13 |           2.7  |
 | [DUNU Falcon Pro (Transparency filter)](./crinacle/711%20in-ear/DUNU%20Falcon%20Pro%20(Transparency%20filter))                                     |      59 |       3.49 |   -0.03 |           3.34 |
 | [DUNU Titan 1](./crinacle/711%20in-ear/DUNU%20Titan%201)                                                                                           |      59 |       3.11 |    1.06 |           2.15 |
 | [Etymotic ER3SE 75 ohm](./crinacle/711%20in-ear/Etymotic%20ER3SE%2075%20ohm)                                                                       |      59 |       3.35 |    0.65 |           2.27 |
@@ -1834,6 +1842,7 @@ preference scoring developed by Sean Olive et al.
 | [Lime Ears LE2](./crinacle/711%20in-ear/Lime%20Ears%20LE2)                                                                                         |      48 |       4.13 |   -0.41 |           3.94 |
 | [MEE Audio Planamic](./crinacle/711%20in-ear/MEE%20Audio%20Planamic)                                                                               |      48 |       3.99 |   -1.09 |           3.11 |
 | [MUNITIO Bullet In-Ear](./crinacle/711%20in-ear/MUNITIO%20Bullet%20In-Ear)                                                                         |      48 |       3.66 |   -1.34 |           3.47 |
+| [Moondrop x Crinacle DUSK (Bass+ DSP)](./crinacle/711%20in-ear/Moondrop%20x%20Crinacle%20DUSK%20(Bass+%20DSP))                                     |      48 |       3.5  |   -1.87 |           2.8  |
 | [Nuarl NT100](./crinacle/711%20in-ear/Nuarl%20NT100)                                                                                               |      48 |       3.54 |   -1.53 |           3.31 |
 | [Samsung EO-IC500 ANC Type-C](./oratory1990/in-ear/Samsung%20EO-IC500%20ANC%20Type-C)                                                              |      48 |       4.57 |    0.78 |           2.23 |
 | [Sennheiser IE 80 S (max)](./crinacle/711%20in-ear/Sennheiser%20IE%2080%20S%20(max))                                                               |      48 |       3.59 |   -1.49 |           3.3  |

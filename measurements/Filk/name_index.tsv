@@ -6,6 +6,10 @@ https://filk.squig.link/data/AKG%20N700NC%20M2%20S1%20R.txt	AKG N700NC M2 (S1 AN
 https://filk.squig.link/data/N700NC%20M2%20L.txt	AKG N700NC M2 (S2 ANC)	AKG N700NC M2 (ANC on)	over-ear	KB006x + 711
 https://filk.squig.link/data/AKG%20N700NC%20M2%20passive%20S1%20L.txt	AKG N700NC M2 (S1 passive)	AKG N700NC M2 (passive)	over-ear	KB006x + 711
 https://filk.squig.link/data/AKG%20N700NC%20M2%20passive%20S1%20R.txt	AKG N700NC M2 (S1 passive)	AKG N700NC M2 (passive)	over-ear	KB006x + 711
+https://filk.squig.link/data/ROG%20Delta%20S%20Core%20fabric%20L.txt	Asus ROG Delta S Core (Fabric earpads)	ASUS ROG Delta S Core (fabric earpads)	over-ear	KB006x + 711
+https://filk.squig.link/data/ROG%20Delta%20S%20Core%20fabric%20R.txt	Asus ROG Delta S Core (Fabric earpads)	ASUS ROG Delta S Core (fabric earpads)	over-ear	KB006x + 711
+https://filk.squig.link/data/ROG%20Delta%20S%20Core%20PU%20L.txt	Asus ROG Delta S Core (PU Leather earpads)	ASUS ROG Delta S Core (leather earpads)	over-ear	KB006x + 711
+https://filk.squig.link/data/ROG%20Delta%20S%20Core%20PU%20R.txt	Asus ROG Delta S Core (PU Leather earpads)	ASUS ROG Delta S Core (leather earpads)	over-ear	KB006x + 711
 https://filk.squig.link/data/Soundcore%20Space%20Q45%20ANC%20L.txt	Soundcore Space Q45	Anker Soundcore Space Q45	over-ear	KB006x + 711
 https://filk.squig.link/data/Soundcore%20Space%20Q45%20ANC%20R.txt	Soundcore Space Q45	Anker Soundcore Space Q45	over-ear	KB006x + 711
 https://filk.squig.link/data/Audio-technica%20BPHS1%20L.txt	Audio-Technica BPHS1 (stock earpads)	Audio-Technica BPHS1	over-ear	KB006x + 711
@@ -17,6 +21,8 @@ https://filk.squig.link/data/Baseus%20AeQur%20GH02%20USB%20L.txt	Baseus AeQur GH
 https://filk.squig.link/data/Baseus%20AeQur%20GH02%20USB%20R.txt	Baseus AeQur GH02 (USB/BT connection)	Baseus AeQur GH02 (active)	over-ear	KB006x + 711
 https://filk.squig.link/data/Baseus%20AeQur%20GH02%20pass%20L.txt	Baseus AeQur GH02 (passive)	Baseus AeQur GH02 (passive)	over-ear	KB006x + 711
 https://filk.squig.link/data/Baseus%20AeQur%20GH02%20pass%20R.txt	Baseus AeQur GH02 (passive)	Baseus AeQur GH02 (passive)	over-ear	KB006x + 711
+https://filk.squig.link/data/Baseus%20Bowie%20D05%20L.txt	Baseus Bowie D05 **	Baseus Bowie D05	over-ear	KB006x + 711
+https://filk.squig.link/data/Baseus%20Bowie%20D05%20R.txt	Baseus Bowie D05 **	Baseus Bowie D05	over-ear	KB006x + 711
 https://filk.squig.link/data/Bose%20QC45%20L.txt	Bose QC45 (ANC)	Bose QuietComfort 45 (ANC on)	over-ear	KB006x + 711
 https://filk.squig.link/data/Bose%20QC45%20R.txt	Bose QC45 (ANC)	Bose QuietComfort 45 (ANC on)	over-ear	KB006x + 711
 https://filk.squig.link/data/Bose%20QC45%20passive%20L.txt	Bose QC45 (passive)	Bose QuietComfort 45 (passive)	over-ear	KB006x + 711
@@ -78,6 +84,10 @@ https://filk.squig.link/data/Radon%20800%20fabric%20L.txt	Genesis Radon 800 (Far
 https://filk.squig.link/data/Radon%20800%20fabric%20R.txt	Genesis Radon 800 (Farbic earpads)	Genesis Radon 800 (farbic earpads)	over-ear	KB006x + 711
 https://filk.squig.link/data/Radon%20800%20leather%20L.txt	Genesis Radon 800 (Leather earpads)	Genesis Radon 800 (leather earpads)	over-ear	KB006x + 711
 https://filk.squig.link/data/Radon%20800%20leather%20R.txt	Genesis Radon 800 (Leather earpads)	Genesis Radon 800 (leather earpads)	over-ear	KB006x + 711
+https://filk.squig.link/data/Genesis%20Toron%20531%20S2%20bre%20L.txt	Genesis Toron 531 (S2 Breathable earpads)	Genesis Toron 531 (S2 Breathable earpads)	ignore	KB006x + 711
+https://filk.squig.link/data/Genesis%20Toron%20531%20S2%20bre%20R.txt	Genesis Toron 531 (S2 Breathable earpads)	Genesis Toron 531 (S2 Breathable earpads)	ignore	KB006x + 711
+https://filk.squig.link/data/Genesis%20Toron%20531%20S2%20hyb%20L.txt	Genesis Toron 531 (S2 Hybrid earpads)	Genesis Toron 531 (S2 Hybrid earpads)	ignore	KB006x + 711
+https://filk.squig.link/data/Genesis%20Toron%20531%20S2%20hyb%20R.txt	Genesis Toron 531 (S2 Hybrid earpads)	Genesis Toron 531 (S2 Hybrid earpads)	ignore	KB006x + 711
 https://filk.squig.link/data/Genesis%20Toron%20531%20breath%20L.txt	Genesis Toron 531 (Breathable earpads)	Genesis Toron 531 (breathable earpads)	over-ear	KB006x + 711
 https://filk.squig.link/data/Genesis%20Toron%20531%20breath%20R.txt	Genesis Toron 531 (Breathable earpads)	Genesis Toron 531 (breathable earpads)	over-ear	KB006x + 711
 https://filk.squig.link/data/Genesis%20Toron%20531%20hybrid%20L.txt	Genesis Toron 531 (Hybrid earpads)	Genesis Toron 531 (hybrid earpads)	over-ear	KB006x + 711
@@ -138,6 +148,8 @@ https://filk.squig.link/data/G733%20worn%20L.txt	Logitech G733 (S1 Worn-ish pads
 https://filk.squig.link/data/G733%20worn%20R.txt	Logitech G733 (S1 Worn-ish pads)	Logitech G733 (S1 Worn-ish pads)	ignore	
 https://filk.squig.link/data/Logitech%20G733%20aliexpress%20pads%20L.txt	Logitech G733 (S1 aliexpress pads)	Logitech G733 (S1 aliexpress pads)	ignore	
 https://filk.squig.link/data/Logitech%20G733%20aliexpress%20pads%20R.txt	Logitech G733 (S1 aliexpress pads)	Logitech G733 (S1 aliexpress pads)	ignore	
+https://filk.squig.link/data/Logitech%20G733%20S3%20Fresh%20L.txt	Logitech G733 (S3 Fresh pads)	Logitech G733 (S3 Fresh pads)	ignore	KB006x + 711
+https://filk.squig.link/data/Logitech%20G733%20S3%20Fresh%20R.txt	Logitech G733 (S3 Fresh pads)	Logitech G733 (S3 Fresh pads)	ignore	KB006x + 711
 https://filk.squig.link/data/G733%20L.txt	Logitech G733 (S2 Fresh pads)	Logitech G733 LIGHTSPEED	over-ear	KB006x + 711
 https://filk.squig.link/data/G733%20R.txt	Logitech G733 (S2 Fresh pads)	Logitech G733 LIGHTSPEED	over-ear	KB006x + 711
 https://filk.squig.link/data/Logitech%20Zone%20Vibe%20100%20L.txt	Logitech Zone Vibe 100	Logitech Zone Vibe 100	over-ear	KB006x + 711
@@ -160,6 +172,8 @@ https://filk.squig.link/data/Razer%20Blackshark%20v2%20THX%20L.txt	Razer Blacksh
 https://filk.squig.link/data/Razer%20Blackshark%20v2%20THX%20R.txt	Razer Blackshark V2 (via USB sound card + flat EQ + THX)	Razer Blackshark V2 (via USB sound card + flat EQ + THX)	ignore	KB006x + 711
 https://filk.squig.link/data/Razer%20Blackshark%20v2%20jack%20L.txt	Razer Blackshark V2 (via jack)	Razer Blackshark V2 (via jack)	ignore	KB006x + 711
 https://filk.squig.link/data/Razer%20Blackshark%20v2%20jack%20R.txt	Razer Blackshark V2 (via jack)	Razer Blackshark V2 (via jack)	ignore	KB006x + 711
+https://filk.squig.link/data/Razer%20Kraken%20V3%20Pro%20L.txt	Razer Kraken V3 Pro	Razer Kraken V3 Pro	over-ear	KB006x + 711
+https://filk.squig.link/data/Razer%20Kraken%20V3%20Pro%20R.txt	Razer Kraken V3 Pro	Razer Kraken V3 Pro	over-ear	KB006x + 711
 https://filk.squig.link/data/Opus%202020%20ANC%20off%20L.txt	Razer Opus 2020 (ANC off)	Razer Opus 2020 (ANC off)	over-ear	KB006x + 711
 https://filk.squig.link/data/Opus%202020%20L.txt	Razer Opus 2020 (ANC on)	Razer Opus 2020 (ANC on)	over-ear	KB006x + 711
 https://filk.squig.link/data/Razer%20Opus%202020%20S2%20ANC%20L.txt	Razer Opus 2020 (S2 ANC on)	Razer Opus 2020 (ANC on)	over-ear	KB006x + 711
@@ -173,6 +187,8 @@ https://filk.squig.link/data/Redragon%20Zeus%20X%20L.txt	Redragon Zeus X H510	Re
 https://filk.squig.link/data/Redragon%20Zeus%20X%20R.txt	Redragon Zeus X H510	Redragon H510 Zeus-X	over-ear	KB006x + 711
 https://filk.squig.link/data/Redragon%20IRE%20PRO%20H848%20L.txt	Redragon IRE PRO H848	Redragon H848 IRE PRO	over-ear	KB006x + 711
 https://filk.squig.link/data/Redragon%20IRE%20PRO%20H848%20R.txt	Redragon IRE PRO H848	Redragon H848 IRE PRO	over-ear	KB006x + 711
+https://filk.squig.link/data/RODE%20NTH-100m%20L.txt	RODE NTH-100m	RØDE NTH-100M	over-ear	KB006x + 711
+https://filk.squig.link/data/RODE%20NTH-100m%20R.txt	RODE NTH-100m	RØDE NTH-100M	over-ear	KB006x + 711
 https://filk.squig.link/data/SPC%20Gear%20Viro%20S2%20velour%20L.txt	SPC Gear Viro (S2 Velour earpads)	SPC Gear Viro (S2 Velour earpads)	ignore	KB006x + 711
 https://filk.squig.link/data/SPC%20Gear%20Viro%20S2%20velour%20R.txt	SPC Gear Viro (S2 Velour earpads)	SPC Gear Viro (S2 Velour earpads)	ignore	KB006x + 711
 https://filk.squig.link/data/Viro%20Breathable%20L.txt	SPC Gear Viro (Breathable earpads)	SPC Gear Viro (breathable earpads)	over-ear	KB006x + 711
@@ -208,6 +224,14 @@ https://filk.squig.link/data/Sennheiser%20PC38x%20fabric%20L.txt	Sennheiser PC38
 https://filk.squig.link/data/Sennheiser%20PC38x%20fabric%20R.txt	Sennheiser PC38x (fabric earpads)	Sennheiser PC38X (velour earpads)	over-ear	KB006x + 711
 https://filk.squig.link/data/Sennheiser%20PC38x%20L.txt	Sennheiser PC38x (velour earpads)	Sennheiser PC38X (velour earpads)	over-ear	KB006x + 711
 https://filk.squig.link/data/Sennheiser%20PC38x%20R.txt	Sennheiser PC38x (velour earpads)	Sennheiser PC38X (velour earpads)	over-ear	KB006x + 711
+https://filk.squig.link/data/Sennheiser%20PC38x%20S2%2050%20fab%20L.txt	Sennheiser PC38x (S2 fabric earpads + 50% volume)	Sennheiser PC38x (S2 fabric earpads + 50% volume)	ignore	KB006x + 711
+https://filk.squig.link/data/Sennheiser%20PC38x%20S2%2050%20fab%20R.txt	Sennheiser PC38x (S2 fabric earpads + 50% volume)	Sennheiser PC38x (S2 fabric earpads + 50% volume)	ignore	KB006x + 711
+https://filk.squig.link/data/Sennheiser%20PC38x%20S2%20fab%20L.txt	Sennheiser PC38x (S2 fabric earpads)	Sennheiser PC38x (S2 fabric earpads)	ignore	KB006x + 711
+https://filk.squig.link/data/Sennheiser%20PC38x%20S2%20fab%20R.txt	Sennheiser PC38x (S2 fabric earpads)	Sennheiser PC38x (S2 fabric earpads)	ignore	KB006x + 711
+https://filk.squig.link/data/Sennheiser%20PC38x%20S2%2050%20vel%20L.txt	Sennheiser PC38x (S2 velour earpads + 50% volume)	Sennheiser PC38x (S2 velour earpads + 50% volume)	ignore	KB006x + 711
+https://filk.squig.link/data/Sennheiser%20PC38x%20S2%2050%20vel%20R.txt	Sennheiser PC38x (S2 velour earpads + 50% volume)	Sennheiser PC38x (S2 velour earpads + 50% volume)	ignore	KB006x + 711
+https://filk.squig.link/data/Sennheiser%20PC38x%20S2%20L.txt	Sennheiser PC38x (S2 velour earpads)	Sennheiser PC38x (S2 velour earpads)	ignore	KB006x + 711
+https://filk.squig.link/data/Sennheiser%20PC38x%20S2%20R.txt	Sennheiser PC38x (S2 velour earpads)	Sennheiser PC38x (S2 velour earpads)	ignore	KB006x + 711
 https://filk.squig.link/data/Sennheiser%20PC38x%20fab%2050%20vol%20L.txt	Sennheiser PC38x (fabric earpads + 50% volume)	Sennheiser PC38x (fabric earpads + 50% volume)	ignore	KB006x + 711
 https://filk.squig.link/data/Sennheiser%20PC38x%20fab%2050%20vol%20R.txt	Sennheiser PC38x (fabric earpads + 50% volume)	Sennheiser PC38x (fabric earpads + 50% volume)	ignore	KB006x + 711
 https://filk.squig.link/data/Sennheiser%20PC38x%2050%20vol%20L.txt	Sennheiser PC38x (velour earpads + 50% volume)	Sennheiser PC38x (velour earpads + 50% volume)	ignore	KB006x + 711

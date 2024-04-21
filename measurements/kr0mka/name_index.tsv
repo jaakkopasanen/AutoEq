@@ -209,6 +209,22 @@ https://kr0mka.squig.link/data/5i%20ANC%20TREBLE%20L.txt	Huawei Freebuds 5i ANC 
 https://kr0mka.squig.link/data/5i%20ANC%20TREBLE%20R.txt	Huawei Freebuds 5i ANC + Treble boost	Huawei Freebuds 5i (ANC on, treble boost)	in-ear	711
 https://kr0mka.squig.link/data/Tune%20110%20L.txt	JBL Tune 110	JBL Tune 110	in-ear	711
 https://kr0mka.squig.link/data/Tune%20110%20R.txt	JBL Tune 110	JBL Tune 110	in-ear	711
+https://kr0mka.squig.link/headphones/data/720bt%20L1.txt	JBL Tune 720BT 	JBL Tune 720BT	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20L2.txt	JBL Tune 720BT 	JBL Tune 720BT	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20L3.txt	JBL Tune 720BT 	JBL Tune 720BT	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20L4.txt	JBL Tune 720BT 	JBL Tune 720BT	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20R1.txt	JBL Tune 720BT 	JBL Tune 720BT	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20R2.txt	JBL Tune 720BT 	JBL Tune 720BT	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20R3.txt	JBL Tune 720BT 	JBL Tune 720BT	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20R4.txt	JBL Tune 720BT 	JBL Tune 720BT	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20passive%20L1.txt	JBL Tune 720BT Passive	JBL Tune 720BT (passive)	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20passive%20L2.txt	JBL Tune 720BT Passive	JBL Tune 720BT (passive)	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20passive%20L3.txt	JBL Tune 720BT Passive	JBL Tune 720BT (passive)	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20passive%20L4.txt	JBL Tune 720BT Passive	JBL Tune 720BT (passive)	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20passive%20R1.txt	JBL Tune 720BT Passive	JBL Tune 720BT (passive)	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20passive%20R2.txt	JBL Tune 720BT Passive	JBL Tune 720BT (passive)	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20passive%20R3.txt	JBL Tune 720BT Passive	JBL Tune 720BT (passive)	over-ear	KB501x + 711
+https://kr0mka.squig.link/headphones/data/720bt%20passive%20R4.txt	JBL Tune 720BT Passive	JBL Tune 720BT (passive)	over-ear	KB501x + 711
 https://kr0mka.squig.link/data/AT1%20L.txt	Jcally AT1	JCally AT1	in-ear	711
 https://kr0mka.squig.link/data/AT1%20R.txt	Jcally AT1	JCally AT1	in-ear	711
 https://kr0mka.squig.link/data/HA-FR15-H%20L.txt	JVC HA-FR15	JVC HA-FR15	in-ear	711
@@ -307,6 +323,18 @@ https://kr0mka.squig.link/data/Aria%20L.txt	Moondrop Aria	Moondrop Aria	in-ear	7
 https://kr0mka.squig.link/data/Aria%20R.txt	Moondrop Aria	Moondrop Aria	in-ear	711
 https://kr0mka.squig.link/data/Chu%20L.txt	Moondrop Chu	Moondrop Chu	in-ear	711
 https://kr0mka.squig.link/data/Chu%20R.txt	Moondrop Chu	Moondrop Chu	in-ear	711
+https://kr0mka.squig.link/data/golden%20ages%20mon%208k%20L.txt	Moondrop Golden Ages Monitor	Moondrop Golden Ages (monitor eq)	in-ear	711
+https://kr0mka.squig.link/data/golden%20ages%20mon%208k%20R.txt	Moondrop Golden Ages Monitor	Moondrop Golden Ages (monitor eq)	in-ear	711
+https://kr0mka.squig.link/data/golden%20ages%20mon%20501x%20L.txt	Moondrop Golden Ages Monitor (KB501x)	Moondrop Golden Ages (monitor eq)	in-ear	711
+https://kr0mka.squig.link/data/golden%20ages%20mon%20501x%20R.txt	Moondrop Golden Ages Monitor (KB501x)	Moondrop Golden Ages (monitor eq)	in-ear	711
+https://kr0mka.squig.link/data/golden%20ages%20bass%208k%20L.txt	Moondrop Golden Ages Basshead	Moondrop Golden Ages Basshead	ignore	711
+https://kr0mka.squig.link/data/golden%20ages%20bass%208k%20R.txt	Moondrop Golden Ages Basshead	Moondrop Golden Ages Basshead	ignore	711
+https://kr0mka.squig.link/data/golden%20ages%20bass%20501x%20L.txt	Moondrop Golden Ages Basshead (KB501x)	Moondrop Golden Ages Basshead (KB501x)	ignore	711
+https://kr0mka.squig.link/data/golden%20ages%20bass%20501x%20R.txt	Moondrop Golden Ages Basshead (KB501x)	Moondrop Golden Ages Basshead (KB501x)	ignore	711
+https://kr0mka.squig.link/data/golden%20ages%20ref%208k%20L.txt	Moondrop Golden Ages Reference	Moondrop Golden Ages Reference	ignore	711
+https://kr0mka.squig.link/data/golden%20ages%20ref%208k%20R.txt	Moondrop Golden Ages Reference	Moondrop Golden Ages Reference	ignore	711
+https://kr0mka.squig.link/data/golden%20ages%20ref%20501x%20L.txt	Moondrop Golden Ages Reference (KB501x)	Moondrop Golden Ages Reference (KB501x)	ignore	711
+https://kr0mka.squig.link/data/golden%20ages%20ref%20501x%20R.txt	Moondrop Golden Ages Reference (KB501x)	Moondrop Golden Ages Reference (KB501x)	ignore	711
 https://kr0mka.squig.link/data/KXXS%20L.txt	Moondrop KXXS 	Moondrop KXXS	in-ear	711
 https://kr0mka.squig.link/data/KXXS%20R.txt	Moondrop KXXS 	Moondrop KXXS	in-ear	711
 https://kr0mka.squig.link/data/KXXS%20(BGVP%20W01)%20L.txt	Moondrop KXXS BGVP W01	Moondrop KXXS (BGVP W01 eartips)	ignore	711
@@ -574,6 +602,20 @@ https://kr0mka.squig.link/data/nova%20white%20L.txt	Truthear Nova Stock (BF-1859
 https://kr0mka.squig.link/data/nova%20white%20R.txt	Truthear Nova Stock (BF-1859 White)	Truthear Nova Stock (BF-1859 White)	ignore	711
 https://kr0mka.squig.link/data/TE0%20Wide%2047%20OI%20L.txt	Truthear Zero 47Ω OI	Truthear Zero 47Ω OI	ignore	
 https://kr0mka.squig.link/data/TE0%20Wide%2047%20OI%20R.txt	Truthear Zero 47Ω OI	Truthear Zero 47Ω OI	ignore	
+https://kr0mka.squig.link/data/red%20tanch%20narrow%20L.txt	Truthear Zero Red (Tanchjim narrow bore tips)	Truthear Zero Red (Tanchjim narrow bore tips)	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%20R.txt	Truthear Zero Red (Tanchjim narrow bore tips)	Truthear Zero Red (Tanchjim narrow bore tips)	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%20100zout%20L.txt	Truthear Zero Red 100Ω Zout/Adapter	Truthear Zero Red 100Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%20100zout%20R.txt	Truthear Zero Red 100Ω Zout/Adapter	Truthear Zero Red 100Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%2010zout%20L.txt	Truthear Zero Red 10Ω Zout/Adapter	Truthear Zero Red 10Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%2010zout%20R.txt	Truthear Zero Red 10Ω Zout/Adapter	Truthear Zero Red 10Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%20200zout%20L.txt	Truthear Zero Red 200Ω Zout/Adapter	Truthear Zero Red 200Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%20200zout%20R.txt	Truthear Zero Red 200Ω Zout/Adapter	Truthear Zero Red 200Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%2020zout%20L.txt	Truthear Zero Red 20Ω Zout/Adapter	Truthear Zero Red 20Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%2020zout%20R.txt	Truthear Zero Red 20Ω Zout/Adapter	Truthear Zero Red 20Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%2050zout%20L.txt	Truthear Zero Red 50Ω Zout/Adapter	Truthear Zero Red 50Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%2050zout%20R.txt	Truthear Zero Red 50Ω Zout/Adapter	Truthear Zero Red 50Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%205zout%20L.txt	Truthear Zero Red 5Ω Zout/Adapter	Truthear Zero Red 5Ω Zout/Adapter	ignore	711
+https://kr0mka.squig.link/data/red%20tanch%20narrow%205zout%20R.txt	Truthear Zero Red 5Ω Zout/Adapter	Truthear Zero Red 5Ω Zout/Adapter	ignore	711
 https://kr0mka.squig.link/data/TE0%20Wide%20L.txt	Truthear Zero 	Truthear x Crinacle Zero	in-ear	711
 https://kr0mka.squig.link/data/TE0%20Wide%20R.txt	Truthear Zero 	Truthear x Crinacle Zero	in-ear	711
 https://kr0mka.squig.link/headphones/data/Ultrasone%20Tribute%207%20L1.txt	Ultrasone Tribute 7	Ultrasone Tribute 7	over-ear	KB501x + 711
@@ -626,3 +668,4 @@ https://kr0mka.squig.link/headphones/data/Caldera%20Lambskin%20L3.txt	ZMF Calder
 https://kr0mka.squig.link/headphones/data/Caldera%20Lambskin%20R1.txt	ZMF Caldera Lambskin Thin Pads	ZMF Caldera (thin lambskin earpads)	over-ear	KB501x + 711
 https://kr0mka.squig.link/headphones/data/Caldera%20Lambskin%20R2.txt	ZMF Caldera Lambskin Thin Pads	ZMF Caldera (thin lambskin earpads)	over-ear	KB501x + 711
 https://kr0mka.squig.link/headphones/data/Caldera%20Lambskin%20R3.txt	ZMF Caldera Lambskin Thin Pads	ZMF Caldera (thin lambskin earpads)	over-ear	KB501x + 711
+https://kr0mka.squig.link/data/forteza%20y2%2010%20L.txt		forteza y2 10	ignore	711

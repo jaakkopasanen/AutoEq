@@ -36,6 +36,8 @@ https://jaytiss.squig.link/data/Aful%20P8%20R.txt	Aful Performer 8	AFUL Performe
 https://jaytiss.squig.link/data/Aful%205.txt		Aful 5	ignore	
 https://jaytiss.squig.link/data/DT%20200%20L.txt	Audiosense DT 200	Audiosense DT200	in-ear	711
 https://jaytiss.squig.link/data/DT%20200%20R.txt	Audiosense DT 200	Audiosense DT200	in-ear	711
+https://jaytiss.squig.link/data/MTPro%20L.txt	BASN MTPro	BASN MTPro	in-ear	711
+https://jaytiss.squig.link/data/MTPro%20R.txt	BASN MTPro	BASN MTPro	in-ear	711
 https://jaytiss.squig.link/data/Bl03%20L.txt	Blon BL03	BLON BL-03	in-ear	711
 https://jaytiss.squig.link/data/Bl03%20R.txt	Blon BL03	BLON BL-03	in-ear	711
 https://jaytiss.squig.link/data/Gizaudio%20%c3%97%20Binary%20Chopin%20L.txt	Binary x Gizaudio Chopin	Binary Acoustics x Gizaudio Chopin	in-ear	711
@@ -50,18 +52,43 @@ https://jaytiss.squig.link/data/Rhap%20DUUU%20L.txt		CCA Rhapsody (off-on-on-on)
 https://jaytiss.squig.link/data/Rhap%20DUUU%20R.txt		CCA Rhapsody (off-on-on-on)	in-ear	711
 https://jaytiss.squig.link/data/Rhap%20UUUU%20L.txt	CCA Rhapsody UUUU	CCA Rhapsody (on-on-on-on)	in-ear	711
 https://jaytiss.squig.link/data/Rhap%20UUUU%20R.txt	CCA Rhapsody UUUU	CCA Rhapsody (on-on-on-on)	in-ear	711
+https://jaytiss.squig.link/data/Trio%20L.txt	CCA Trio	CCA Trio	in-ear	711
+https://jaytiss.squig.link/data/Trio%20R.txt	CCA Trio	CCA Trio	in-ear	711
 https://jaytiss.squig.link/data/1DD4BA%20L.txt	CKLVX 1DD+4BA	CKLVX 1DD+4BA	in-ear	711
 https://jaytiss.squig.link/data/1DD4BA%20R.txt	CKLVX 1DD+4BA	CKLVX 1DD+4BA	in-ear	711
 https://jaytiss.squig.link/data/Mirai%20L.txt	DUNU Mirai	DUNU Mirai	in-ear	711
 https://jaytiss.squig.link/data/Mirai%20R.txt	DUNU Mirai	DUNU Mirai	in-ear	711
 https://jaytiss.squig.link/data/Dunu%20SA6%20MKII%20L.txt	Dunu SA6 MKII 	DUNU SA6 MK2	in-ear	711
 https://jaytiss.squig.link/data/Dunu%20SA6%20MKII%20R.txt	Dunu SA6 MKII 	DUNU SA6 MK2	in-ear	711
+https://jaytiss.squig.link/data/Delta%20L.txt	Delta Airlines Studio Billboard Earbuds	Delta Airlines Studio Billboard Earbuds	ignore	711
+https://jaytiss.squig.link/data/Delta%20R.txt	Delta Airlines Studio Billboard Earbuds	Delta Airlines Studio Billboard Earbuds	ignore	711
+https://jaytiss.squig.link/data/Darkphoenix%20L.txt		ELISE AUDIO x Kinera Dark Phoenix	in-ear	711
+https://jaytiss.squig.link/data/Darkphoenix%20R.txt		ELISE AUDIO x Kinera Dark Phoenix	in-ear	711
+https://jaytiss.squig.link/data/Darkphn%20L.txt	Kinera Celest x ELISE Dark Phoenix	ELISE AUDIO x Kinera Dark Phoenix	in-ear	711
+https://jaytiss.squig.link/data/Darkphn%20R.txt	Kinera Celest x ELISE Dark Phoenix	ELISE AUDIO x Kinera Dark Phoenix	in-ear	711
+https://jaytiss.squig.link/data/530%20L.txt	EPZ 530	EPZ 530	in-ear	711
+https://jaytiss.squig.link/data/530%20R.txt	EPZ 530	EPZ 530	in-ear	711
+https://jaytiss.squig.link/data/q1pro%20L.txt	EPZ Q1 Pro	EPZ Q1 Pro	in-ear	711
+https://jaytiss.squig.link/data/q1pro%20R.txt	EPZ Q1 Pro	EPZ Q1 Pro	in-ear	711
 https://jaytiss.squig.link/data/Q5%20L.txt	EPZ Q5	EPZ Q5	in-ear	711
 https://jaytiss.squig.link/data/Q5%20R.txt	EPZ Q5	EPZ Q5	in-ear	711
+https://jaytiss.squig.link/data/Tipsy%20L.txt	EPZ EPZ x Tipsy Star One	EPZ x Tipsy Star & One	in-ear	711
+https://jaytiss.squig.link/data/Tipsy%20R.txt	EPZ EPZ x Tipsy Star One	EPZ x Tipsy Star & One	in-ear	711
+https://jaytiss.squig.link/data/Anni%202023%20no%20ear%20tips.txt	Elysian  Annihilator 2023 no tips	Elysian  Annihilator 2023 no tips	ignore	711
+https://jaytiss.squig.link/data/Anni%202023%20no%20ear%20tips%20L.txt	Elysian  Annihilator 2023 no tips	Elysian  Annihilator 2023 no tips	ignore	711
+https://jaytiss.squig.link/data/Anni%202023%20no%20ear%20tips%20R.txt	Elysian  Annihilator 2023 no tips	Elysian  Annihilator 2023 no tips	ignore	711
 https://jaytiss.squig.link/data/Anny%20L.txt	Elysian  Annihilator 2023	Elysian Annihilator (2023)	in-ear	711
 https://jaytiss.squig.link/data/Anny%20R.txt	Elysian  Annihilator 2023	Elysian Annihilator (2023)	in-ear	711
 https://jaytiss.squig.link/data/Er2se%20L.txt	Etymotic Er2SE	Etymotic ER2SE	in-ear	711
 https://jaytiss.squig.link/data/Er2se%20R.txt	Etymotic Er2SE	Etymotic ER2SE	in-ear	711
+https://jaytiss.squig.link/data/Grand%20MaestroBlack%202%20L.txt	Fat Freq Grand Maestro Black Down	Fatfreq Grand Maestro (black module, down)	in-ear	711
+https://jaytiss.squig.link/data/Grand%20MaestroBlack%202%20R.txt	Fat Freq Grand Maestro Black Down	Fatfreq Grand Maestro (black module, down)	in-ear	711
+https://jaytiss.squig.link/data/Grand%20MaestroBlack%201%20L.txt	Fat Freq Grand Maestro Black Up	Fatfreq Grand Maestro (black module, up)	in-ear	711
+https://jaytiss.squig.link/data/Grand%20MaestroBlack%201%20R.txt	Fat Freq Grand Maestro Black Up	Fatfreq Grand Maestro (black module, up)	in-ear	711
+https://jaytiss.squig.link/data/Grand%20Maestroblue1%20L.txt	Fat Freq Grand Maestro Blue up	Fatfreq Grand Maestro (blue module, up)	in-ear	711
+https://jaytiss.squig.link/data/Grand%20Maestroblue1%20R.txt	Fat Freq Grand Maestro Blue up	Fatfreq Grand Maestro (blue module, up)	in-ear	711
+https://jaytiss.squig.link/data/Grand%20Maestroblue2%20L.txt	Fat Freq Grand Maestro Blue Down	Fatfreq Grand Maestro (bluemodule, down)	in-ear	711
+https://jaytiss.squig.link/data/Grand%20Maestroblue2%20R.txt	Fat Freq Grand Maestro Blue Down	Fatfreq Grand Maestro (bluemodule, down)	in-ear	711
 https://jaytiss.squig.link/data/Scarlet%20mini%20L.txt	Fat Freq Scarlet mini	Fatfreq Scarlet Mini	in-ear	711
 https://jaytiss.squig.link/data/Scarlet%20mini%20R.txt	Fat Freq Scarlet mini	Fatfreq Scarlet Mini	in-ear	711
 https://jaytiss.squig.link/data/Hidiz%20MP145%20L.txt	Hidizs MP 145	Hidizs MP 145	ignore	
@@ -74,16 +101,24 @@ https://jaytiss.squig.link/data/IEF%20Comp%20Target		IEF Comp Target	ignore	711
 https://jaytiss.squig.link/data/Jaytiss%20target.txt		Jaytiss target	ignore	711
 https://jaytiss.squig.link/data/Juzear%2041t%20L.txt	Juzear 41t	Juzear 41T	in-ear	711
 https://jaytiss.squig.link/data/Juzear%2041t%20R.txt	Juzear 41t	Juzear 41T	in-ear	711
+https://jaytiss.squig.link/data/Delci%20L.txt	Kefine Delci	KEFINE Delci	in-ear	711
+https://jaytiss.squig.link/data/Delci%20R.txt	Kefine Delci	KEFINE Delci	in-ear	711
 https://jaytiss.squig.link/data/Krilla%20L.txt	KZ Krilla	KZ Krila	in-ear	711
 https://jaytiss.squig.link/data/Krilla%20R.txt	KZ Krilla	KZ Krila	in-ear	711
 https://jaytiss.squig.link/data/KZPR3%20L.txt	KZ PR3 	KZ PR3	in-ear	711
 https://jaytiss.squig.link/data/KZPR3%20R.txt	KZ PR3 	KZ PR3	in-ear	711
+https://jaytiss.squig.link/data/symphony%20L.txt	KZ symphony 	KZ Symphony	in-ear	711
+https://jaytiss.squig.link/data/symphony%20R.txt	KZ symphony 	KZ Symphony	in-ear	711
 https://jaytiss.squig.link/data/Zex%20L.txt	KZ ZEX 	KZ ZEX	in-ear	711
 https://jaytiss.squig.link/data/Zex%20R.txt	KZ ZEX 	KZ ZEX	in-ear	711
 https://jaytiss.squig.link/data/KZCRN%20L.txt	KZ CRN/ZEX Pro 	KZ ZEX Pro	in-ear	711
 https://jaytiss.squig.link/data/KZCRN%20R.txt	KZ CRN/ZEX Pro 	KZ ZEX Pro	in-ear	711
+https://jaytiss.squig.link/data/symphonyIMP%20L.txt	KZ symphony with 310 impedance	KZ symphony with 310 impedance	ignore	711
+https://jaytiss.squig.link/data/symphonyIMP%20R.txt	KZ symphony with 310 impedance	KZ symphony with 310 impedance	ignore	711
 https://jaytiss.squig.link/data/Klanar%20L.txt	Kefine Klanar	Kefine Klanar	in-ear	711
 https://jaytiss.squig.link/data/Klanar%20R.txt	Kefine Klanar	Kefine Klanar	in-ear	711
+https://jaytiss.squig.link/data/Pandamon%20L.txt	Kinera Celest Celest Pandamon 2.0	Kinera Celest Pandamon 2.0	in-ear	711
+https://jaytiss.squig.link/data/Pandamon%20R.txt	Kinera Celest Celest Pandamon 2.0	Kinera Celest Pandamon 2.0	in-ear	711
 https://jaytiss.squig.link/data/Phoenixcall%20L.txt	Kinera Phoenixcall 	Kinera Celest Phoenixcall	in-ear	711
 https://jaytiss.squig.link/data/Phoenixcall%20R.txt	Kinera Phoenixcall 	Kinera Celest Phoenixcall	in-ear	711
 https://jaytiss.squig.link/data/Beast%20L.txt	Kinera Celest Plustus Beast	Kinera Celest Plutus Beast	in-ear	711
@@ -94,6 +129,8 @@ https://jaytiss.squig.link/data/Kiwi%20Melody%20L.txt	Kiwi Ears Melody	Kiwi Ears
 https://jaytiss.squig.link/data/Kiwi%20Melody%20R.txt	Kiwi Ears Melody	Kiwi Ears Melody	in-ear	711
 https://jaytiss.squig.link/data/Quintet%20L.txt	Kiwi Ears Quintet	Kiwi Ears Quintet	in-ear	711
 https://jaytiss.squig.link/data/Quintet%20R.txt	Kiwi Ears Quintet	Kiwi Ears Quintet	in-ear	711
+https://jaytiss.squig.link/data/Singolo%20L.txt	Kiwi Ears x Crinacle Singolo	Kiwi Ears x Crinacle Singolo	in-ear	711
+https://jaytiss.squig.link/data/Singolo%20R.txt	Kiwi Ears x Crinacle Singolo	Kiwi Ears x Crinacle Singolo	in-ear	711
 https://jaytiss.squig.link/data/Ulim%20L.txt	Kontinum Ulim	Kontinum Ulim	in-ear	711
 https://jaytiss.squig.link/data/Ulim%20R.txt	Kontinum Ulim	Kontinum Ulim	in-ear	711
 https://jaytiss.squig.link/data/Mirai%20from%20topping%20a70%20pro%20L.txt		Mirai from topping a70 pro	ignore	711
@@ -108,8 +145,14 @@ https://jaytiss.squig.link/data/Variations%20L.txt	Moondrop Variations	Moondrop 
 https://jaytiss.squig.link/data/Variations%20R.txt	Moondrop Variations	Moondrop Variations	in-ear	711
 https://jaytiss.squig.link/data/Dusk2%20L.txt	Moondrop Blessing 2:Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	711
 https://jaytiss.squig.link/data/Dusk2%20R.txt	Moondrop Blessing 2:Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+https://jaytiss.squig.link/data/Dusk%20L.txt		Moondrop x Crinacle DUSK	in-ear	711
+https://jaytiss.squig.link/data/Dusk%20R.txt		Moondrop x Crinacle DUSK	in-ear	711
+https://jaytiss.squig.link/data/DUSK3%20L.txt	Moondrop x Crinacle Dusk	Moondrop x Crinacle DUSK	in-ear	711
+https://jaytiss.squig.link/data/DUSK3%20R.txt	Moondrop x Crinacle Dusk	Moondrop x Crinacle DUSK	in-ear	711
 https://jaytiss.squig.link/data/Nano%20L.txt	ND 001 Nano	ND 001 Nano	in-ear	711
 https://jaytiss.squig.link/data/Nano%20R.txt	ND 001 Nano	ND 001 Nano	in-ear	711
+https://jaytiss.squig.link/data/X12%20L.txt	ND x12	ND X12	in-ear	711
+https://jaytiss.squig.link/data/X12%20R.txt	ND x12	ND X12	in-ear	711
 https://jaytiss.squig.link/data/DB2%20L.txt	NiceHCK DB2	NiceHCK DB2	in-ear	711
 https://jaytiss.squig.link/data/DB2%20R.txt	NiceHCK DB2	NiceHCK DB2	in-ear	711
 https://jaytiss.squig.link/data/NCKHCK%20F1%20Pro%20L.txt	NiceHCK F1 Pro	NiceHCK F1 Pro	in-ear	711
@@ -131,6 +174,12 @@ https://jaytiss.squig.link/data/PA02%20L.txt	Pula PA02	PULA PA02	in-ear	711
 https://jaytiss.squig.link/data/PA02%20R.txt	Pula PA02	PULA PA02	in-ear	711
 https://jaytiss.squig.link/data/PS%20L.txt	Pennon Pennon Sample	Pennon Pennon Sample	ignore	
 https://jaytiss.squig.link/data/PS%20R.txt	Pennon Pennon Sample	Pennon Pennon Sample	ignore	
+https://jaytiss.squig.link/data/Fan%202%20L.txt	Penon Fan 2	Penon Fan 2	in-ear	711
+https://jaytiss.squig.link/data/Fan%202%20R.txt	Penon Fan 2	Penon Fan 2	in-ear	711
+https://jaytiss.squig.link/data/Serial%20L.txt	Penon Serial	Penon Serial	in-ear	711
+https://jaytiss.squig.link/data/Serial%20R.txt	Penon Serial	Penon Serial	in-ear	711
+https://jaytiss.squig.link/data/unity%20L.txt	Plunge Audio Unity	Plunge Audio Unity IEM	in-ear	711
+https://jaytiss.squig.link/data/unity%20R.txt	Plunge Audio Unity	Plunge Audio Unity IEM	in-ear	711
 https://jaytiss.squig.link/data/Project%20HRP%20L.txt		Project HRP	ignore	
 https://jaytiss.squig.link/data/Project%20HRP%20R.txt		Project HRP	ignore	
 https://jaytiss.squig.link/data/Rhap%20DDDD%20Nov%2029.txt		Rhap DDDD Nov 29	ignore	711
@@ -139,6 +188,8 @@ https://jaytiss.squig.link/data/Rose%20L.txt	Rose Technics QuietSea	Rose Technic
 https://jaytiss.squig.link/data/Rose%20R.txt	Rose Technics QuietSea	Rose Technics QuietSea	in-ear	711
 https://jaytiss.squig.link/data/Bravery%20L.txt	SeeAudio Bravery AE	SeeAudio Bravery AE	in-ear	711
 https://jaytiss.squig.link/data/Bravery%20R.txt	SeeAudio Bravery AE	SeeAudio Bravery AE	in-ear	711
+https://jaytiss.squig.link/data/EJO7%20L.txt	Letshuoer EJ07	Shuoer EJ07	in-ear	711
+https://jaytiss.squig.link/data/EJO7%20R.txt	Letshuoer EJ07	Shuoer EJ07	in-ear	711
 https://jaytiss.squig.link/data/S12%20Pro%20L.txt	Letshuoer S12 Pro	Shuoer S12 Pro	in-ear	711
 https://jaytiss.squig.link/data/S12%20Pro%20R.txt	Letshuoer S12 Pro	Shuoer S12 Pro	in-ear	711
 https://jaytiss.squig.link/data/Simgot%20EA1000%20Black%20L.txt	Simgot EA1000 Black	Simgot Audio EA1000 (black nozzle)	in-ear	711
@@ -160,6 +211,8 @@ https://jaytiss.squig.link/data/Meteor%20R.txt	Symphonium Meteor	Symphonium Audi
 https://jaytiss.squig.link/data/Tanchjim%20Kara%20L.txt	Tanchijim Kara	Tanchjim Kara	in-ear	711
 https://jaytiss.squig.link/data/Tanchjim%20Kara%20R.txt	Tanchijim Kara	Tanchjim Kara	in-ear	711
 https://jaytiss.squig.link/data/Tanchjim%20Kara%20Oct%20L.txt		Tanchjim Kara Oct	ignore	
+https://jaytiss.squig.link/data/Hype%204%20L.txt	Thieaudio Hype 4	ThieAudio Hype 4	in-ear	711
+https://jaytiss.squig.link/data/Hype%204%20R.txt	Thieaudio Hype 4	ThieAudio Hype 4	in-ear	711
 https://jaytiss.squig.link/data/Monarch2%20L.txt	Thieaudio Monarch MKII	ThieAudio Monarch MKII	in-ear	711
 https://jaytiss.squig.link/data/Monarch2%20R.txt	Thieaudio Monarch MKII	ThieAudio Monarch MKII	in-ear	711
 https://jaytiss.squig.link/data/Monarch%20L.txt	Thieaudio Monarch MKIII	ThieAudio Monarch MKIII	in-ear	711
@@ -196,4 +249,7 @@ https://jaytiss.squig.link/data/Cinno%20L.txt		ZiiGaat Cinno	in-ear	711
 https://jaytiss.squig.link/data/Cinno%20R.txt		ZiiGaat Cinno	in-ear	711
 https://jaytiss.squig.link/data/Nuo%20L.txt		ZiiGaat Nuo	in-ear	711
 https://jaytiss.squig.link/data/Nuo%20R.txt		ZiiGaat Nuo	in-ear	711
+https://jaytiss.squig.link/data/Jupitier%20L.txt	ZiiGaat x HBB Jupiter	ZiiGaat x HBB Jupiter	in-ear	711
+https://jaytiss.squig.link/data/Jupitier%20R.txt	ZiiGaat x HBB Jupiter	ZiiGaat x HBB Jupiter	in-ear	711
 https://jaytiss.squig.link/data/config.js		config.js	ignore	711
+https://jaytiss.squig.link/data/unity_to_unity.txt		unity_to_unity	ignore	711

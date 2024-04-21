@@ -140,11 +140,16 @@ class SquigCrawler(CrinacleCrawlerBase):
                 if re.search(r'Target.txt$', file_name) or file_name == 'phone_book.json':  # Skip targets and book
                     continue
                 normalized_file_name = self.normalize_file_name(urllib.parse.unquote(file_name))
+                try:
+                    rig = _squig_rigs[self.name][form]
+                except KeyError as err:
+                    print(f'{self.name} has no rig for {form}. Skipping {normalized_file_name}')
+                    continue
                 item = NameItem(
                         url=f'{self.db_url(db)}/{anchor["href"]}',
                         source_name=book[normalized_file_name] if normalized_file_name in book else None,
                         form=form,
-                        rig=_squig_rigs[self.name][form]
+                        rig=rig
                     )
                 self.resolve(item)
                 self.crawl_index.add(item)

@@ -146,6 +146,8 @@ https://www.hypethesonics.com/dbc/SPLdata/Xelento BP L.txt	Beyerdynamic Xelento 
 https://www.hypethesonics.com/dbc/SPLdata/Xelento BP R.txt	Beyerdynamic Xelento Vent Block/Cp100 Eartips	Beyerdynamic Xelento Vent Block/Cp100 Eartips	ignore	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/Xelento PM L.txt	Beyerdynamic Xelento Vent Mod/Cp100 Eartips	Beyerdynamic Xelento Vent Mod/Cp100 Eartips	ignore	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/Xelento PM R.txt	Beyerdynamic Xelento Vent Mod/Cp100 Eartips	Beyerdynamic Xelento Vent Mod/Cp100 Eartips	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QC Ultra L.txt	Bose QC Ultra 94dB @ 500 Hz	Bose QC Ultra 94dB @ 500 Hz	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QC Ultra R.txt	Bose QC Ultra 94dB @ 500 Hz	Bose QC Ultra 94dB @ 500 Hz	ignore	GRAS RA0045
 https://www.hypethesonics.com/hatsdbc/SPLdata/QuietComfort L.txt	Bose QuietComfort	Bose QuietComfort	over-ear	Bruel & Kjaer 5128
 https://www.hypethesonics.com/hatsdbc/SPLdata/QuietComfort R.txt	Bose QuietComfort	Bose QuietComfort	over-ear	Bruel & Kjaer 5128
 https://www.hypethesonics.com/dbc/SPLdata/QuietComfort L.txt	Bose QuietComfort	Bose QuietComfort	ignore	GRAS RA0045
@@ -160,6 +162,8 @@ https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii L.txt	Bose QuietComfor
 https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii R.txt	Bose QuietComfort ii 80dB @ 500 Hz	Bose QuietComfort II (80dB)	in-ear	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii 90dB@500Hz L.txt	Bose QuietComfort ii 90dB @ 500 Hz	Bose QuietComfort II (90dB)	in-ear	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/QuietComfort ii 90dB@500Hz R.txt	Bose QuietComfort ii 90dB @ 500 Hz	Bose QuietComfort II (90dB)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QC Ultra 80dB L.txt	Bose QC Ultra 80dB @ 500 Hz	Bose QuietComfort Ultra Headphones	over-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/QC Ultra 80dB R.txt	Bose QC Ultra 80dB @ 500 Hz	Bose QuietComfort Ultra Headphones	over-ear	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/Soundsport Free L.txt	Bose Soundsport Free	Bose SoundSport Free	in-ear	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/Soundsport Free R.txt	Bose Soundsport Free	Bose SoundSport Free	in-ear	GRAS RA0045
 https://www.hypethesonics.com/hatsdbc/SPLdata/Apollo L.txt	CAT Apollo	CAT Apollo	in-ear	Bruel & Kjaer 5128
@@ -176,8 +180,18 @@ https://www.hypethesonics.com/hatsdbc/SPLdata/A8 L.txt	Cardas Audio A8	Cardas A8
 https://www.hypethesonics.com/hatsdbc/SPLdata/A8 R.txt	Cardas Audio A8	Cardas A8	in-ear	Bruel & Kjaer 5128
 https://www.hypethesonics.com/dbc/SPLdata/A8 L.txt	Cardas Audio A8	Cardas A8	in-ear	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/A8 R.txt	Cardas Audio A8	Cardas A8	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aurvana Ace 2 ANC Off L.txt	Creative Aurvana Ace 2 ANC Off	Creative Aurvana Ace 2 (ANC Off)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aurvana Ace 2 ANC Off R.txt	Creative Aurvana Ace 2 ANC Off	Creative Aurvana Ace 2 (ANC Off)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aurvana Ace 2 L.txt	Creative Aurvana Ace 2 ANC On	Creative Aurvana Ace 2 (ANC On)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aurvana Ace 2 R.txt	Creative Aurvana Ace 2 ANC On	Creative Aurvana Ace 2 (ANC On)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aurvana Ace 2 Ambient Mode On L.txt	Creative Aurvana Ace 2 Ambient Mode On	Creative Aurvana Ace 2 (Ambient mode on)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aurvana Ace 2 Ambient Mode On R.txt	Creative Aurvana Ace 2 Ambient Mode On	Creative Aurvana Ace 2 (Ambient mode on)	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aurvana Ace 2 ANC On KB5010 Pinna L.txt	Creative Aurvana Ace 2 ANC On KB5010 Pinna	Creative Aurvana Ace 2 ANC On KB5010 Pinna	ignore	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/Aurvana Ace 2 ANC On KB5010 Pinna R.txt	Creative Aurvana Ace 2 ANC On KB5010 Pinna	Creative Aurvana Ace 2 ANC On KB5010 Pinna	ignore	GRAS RA0045
 https://www.hypethesonics.com/hatsdbc/SPLdata/Campfred L.txt	Cypherus Campfred	Cypherus Audio Campfred	earbud	Bruel & Kjaer 5128
 https://www.hypethesonics.com/hatsdbc/SPLdata/Campfred R.txt	Cypherus Campfred	Cypherus Audio Campfred	earbud	Bruel & Kjaer 5128
+https://www.hypethesonics.com/dbc/SPLdata/IE68 L.txt	DCMEKA IE68	DCMEKA IE68	in-ear	GRAS RA0045
+https://www.hypethesonics.com/dbc/SPLdata/IE68 R.txt	DCMEKA IE68	DCMEKA IE68	in-ear	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/DK-4001 L.txt	DUNU DK-4001	DUNU DK4001	in-ear	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/DK-4001 R.txt	DUNU DK-4001	DUNU DK4001	in-ear	GRAS RA0045
 https://www.hypethesonics.com/dbc/SPLdata/LUNA Cp240 L.txt	DUNU LUNA Cp240 Eartips	DUNU LUNA Cp240 Eartips	ignore	GRAS RA0045

@@ -14,6 +14,8 @@ https://tonedeafmonk.squig.link/data/7HZ%20Sonus%20L.txt	7hz Sonus	7Hz Sonus	in-
 https://tonedeafmonk.squig.link/data/7HZ%20Sonus%20R.txt	7hz Sonus	7Hz Sonus	in-ear	711
 https://tonedeafmonk.squig.link/data/7HZ%20ZERO2%20L.txt	7hz ZERO 2.0	7Hz x Crinacle Zero 2	in-ear	711
 https://tonedeafmonk.squig.link/data/7HZ%20ZERO2%20R.txt	7hz ZERO 2.0	7Hz x Crinacle Zero 2	in-ear	711
+https://tonedeafmonk.squig.link/data/7th%20Acoustics%20Stargazer%20L.txt	7th Acoustics Stargazer	7th Acoustics Stargazer	in-ear	711
+https://tonedeafmonk.squig.link/data/7th%20Acoustics%20Stargazer%20R.txt	7th Acoustics Stargazer	7th Acoustics Stargazer	in-ear	711
 https://tonedeafmonk.squig.link/data/AFUL%20P8%20L.txt	AFUL PERFORMER8	AFUL Performer 8	in-ear	711
 https://tonedeafmonk.squig.link/data/AFUL%20P8%20R.txt	AFUL PERFORMER8	AFUL Performer 8	in-ear	711
 https://tonedeafmonk.squig.link/data/AOSHIDA%20E20%20L.txt	AOSHIDA E20	AOSHIDA E20	in-ear	711
@@ -22,8 +24,16 @@ https://tonedeafmonk.squig.link/data/ARTTI%20R1%20L.txt	ARTTI R1	ARTTI R1	in-ear
 https://tonedeafmonk.squig.link/data/ARTTI%20R1%20R.txt	ARTTI R1	ARTTI R1	in-ear	711
 https://tonedeafmonk.squig.link/data/ARTTI%20R2%20L.txt	ARTTI R2	ARTTI R2	in-ear	711
 https://tonedeafmonk.squig.link/data/ARTTI%20R2%20R.txt	ARTTI R2	ARTTI R2	in-ear	711
+https://tonedeafmonk.squig.link/data/ARTTI%20R3%20L.txt	ARTTI R3	ARTTI R3	in-ear	711
+https://tonedeafmonk.squig.link/data/ARTTI%20R3%20R.txt	ARTTI R3	ARTTI R3	in-ear	711
 https://tonedeafmonk.squig.link/data/ARTTI%20T10%20L.txt	ARTTI T10	ARTTI T10	in-ear	711
 https://tonedeafmonk.squig.link/data/ARTTI%20T10%20R.txt	ARTTI T10	ARTTI T10	in-ear	711
+https://tonedeafmonk.squig.link/data/Alpha%20&%20Delta%20KS1%20L.txt	ALPHA & DELTA KS1	Alpha & Delta KS1	in-ear	711
+https://tonedeafmonk.squig.link/data/Alpha%20&%20Delta%20KS1%20R.txt	ALPHA & DELTA KS1	Alpha & Delta KS1	in-ear	711
+https://tonedeafmonk.squig.link/data/Alpha%20Delta%20KS3%20L.txt	ALPHA & DELTA KS3	Alpha & Delta KS3	in-ear	711
+https://tonedeafmonk.squig.link/data/Alpha%20Delta%20KS3%20R.txt	ALPHA & DELTA KS3	Alpha & Delta KS3	in-ear	711
+https://tonedeafmonk.squig.link/data/Alpha%20&%20Delta%20KS3%20L.txt		Alpha & Delta KS3	in-ear	711
+https://tonedeafmonk.squig.link/data/Alpha%20&%20Delta%20KS3%20R.txt		Alpha & Delta KS3	in-ear	711
 https://tonedeafmonk.squig.link/data/AROMA%20THUNDER%20L.txt	AROMA AUDIO THUNDER	Aroma Audio Thunder	in-ear	711
 https://tonedeafmonk.squig.link/data/BLON%20HBB%20Z300%20L.txt	BLON HBB Z300	BLON x HBB Z300	in-ear	711
 https://tonedeafmonk.squig.link/data/BQEYZ%20WIND%20L.txt	BQEYZ Wind	BQEYZ Wind	in-ear	711
@@ -49,6 +59,16 @@ https://tonedeafmonk.squig.link/data/CCA%20Rhapsody%201000%20L.txt	CCA Rhapsody 
 https://tonedeafmonk.squig.link/data/CCA%20Rhapsody%201010%20L.txt	CCA Rhapsody (1010)	CCA Rhapsody (on-off-on-off)	in-ear	711
 https://tonedeafmonk.squig.link/data/CCA%20Rhapsody%201100%20L.txt	CCA Rhapsody (1100)	CCA Rhapsody (on-on-off-off)	in-ear	711
 https://tonedeafmonk.squig.link/data/CCA%20Rhapsody%201110%20L.txt	CCA Rhapsody (1110)	CCA Rhapsody (on-on-on-off)	in-ear	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20DDDD%20L.txt	CCA Trio (DDDD)	CCA Trio (off-off-off-off)	in-ear	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20DDUU%20L.txt	CCA Trio (DDUU)	CCA Trio (off-off-on-on)	in-ear	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20DUUD%20L.txt		CCA Trio (off-on-on-	ignore	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20UDDU%20L.txt	CCA Trio (DUUD)	CCA Trio (off-on-on-off)	in-ear	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20DUUU%20L.txt	CCA Trio (DUUU)	CCA Trio (off-on-on-on)	in-ear	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20UDDD%20L.txt	CCA Trio (UDDD)	CCA Trio (on-off-off-off)	in-ear	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20DDDU%20L.txt	CCA Trio (UDDU)	CCA Trio (on-off-off-on)	in-ear	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20UUDD%20L.txt	CCA Trio (UUDD)	CCA Trio (on-on-off-off)	in-ear	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20UUUD%20L.txt	CCA Trio (UUUD)	CCA Trio (on-on-on-off)	in-ear	711
+https://tonedeafmonk.squig.link/data/CCA%20TRIO%20UUUU%20L.txt	CCA Trio (UUUU)	CCA Trio (on-on-on-on)	in-ear	711
 https://tonedeafmonk.squig.link/data/CVJ%20Mei%20DD%20L.txt	CVJ MEI (DD)	CVJ Mei (off-off)	in-ear	711
 https://tonedeafmonk.squig.link/data/CVJ%20Mei%20DU%20L.txt	CVJ MEI (DU)	CVJ Mei (off-on)	in-ear	711
 https://tonedeafmonk.squig.link/data/CVJ%20Mei%20UD%20L.txt	CVJ MEI (UD)	CVJ Mei (on-off)	in-ear	711
@@ -56,6 +76,7 @@ https://tonedeafmonk.squig.link/data/CVJ%20Mei%20UU%20L.txt	CVJ MEI (UU)	CVJ Mei
 https://tonedeafmonk.squig.link/data/CVJ%20TXS%20DD%20L.txt	CVJ TXS (DD)	CVJ TXS (off-off)	in-ear	711
 https://tonedeafmonk.squig.link/data/CVJ%20TXS%20DU%20L.txt	CVJ TXS (DU)	CVJ TXS (off-on)	in-ear	711
 https://tonedeafmonk.squig.link/data/CVJ%20TXS%20UU%20L.txt	CVJ TXS (UU)	CVJ TXS (on-on)	in-ear	711
+https://tonedeafmonk.squig.link/data/DITA%20PROJECT%20M%2050%20L.txt	DITA AUDIO PROJECT M (FOAM TIPS AND 50 OHM IMPEDANCE ADAPTER)	DITA AUDIO PROJECT M (FOAM TIPS AND 50 OHM IMPEDANCE ADAPTER)	ignore	711
 https://tonedeafmonk.squig.link/data/DUNU%20Falcon%20Ultra%20Blue%20L.txt	DUNU Falcon Ultra (Blue Nozzle)	DUNU Falcon Ultra (blue nozzle)	in-ear	711
 https://tonedeafmonk.squig.link/data/DUNU%20Falcon%20Ultra%20Blue%20R.txt	DUNU Falcon Ultra (Blue Nozzle)	DUNU Falcon Ultra (blue nozzle)	in-ear	711
 https://tonedeafmonk.squig.link/data/DUNU%20Falcon%20Ultra%20Brass%20L.txt	DUNU Falcon Ultra (Brass Nozzle)	DUNU Falcon Ultra (brass nozzle)	in-ear	711
@@ -65,6 +86,10 @@ https://tonedeafmonk.squig.link/data/DUNU%20SA6MKII%20L.txt	DUNU SA6 MKII (BASS 
 https://tonedeafmonk.squig.link/data/DUNU%20SA6MKII%20R.txt	DUNU SA6 MKII (BASS SWITCH OFF)	DUNU SA6 MK2 (default mode)	in-ear	711
 https://tonedeafmonk.squig.link/data/DUNU%20VULCAN%20L.txt	DUNU Vulcan	DUNU Vulkan	in-ear	711
 https://tonedeafmonk.squig.link/data/DUNU%20VULCAN%20R.txt	DUNU Vulcan	DUNU Vulkan	in-ear	711
+https://tonedeafmonk.squig.link/data/DITA%20PROJECT%20M%20L.txt	DITA AUDIO PROJECT M (FOAM TIPS)	Dita Audio Project M (foam eartips)	in-ear	711
+https://tonedeafmonk.squig.link/data/DITA%20PROJECT%20M%20R.txt	DITA AUDIO PROJECT M (FOAM TIPS)	Dita Audio Project M (foam eartips)	in-ear	711
+https://tonedeafmonk.squig.link/data/DITA%20PROJECT%20M%20STOCK%20T%20L.txt	DITA AUDIO PROJECT M (STOCK SILICONE TIPS)	Dita Audio Project M (silicone eartips)	in-ear	711
+https://tonedeafmonk.squig.link/data/DITA%20PROJECT%20M%20STOCK%20T%20R.txt	DITA AUDIO PROJECT M (STOCK SILICONE TIPS)	Dita Audio Project M (silicone eartips)	in-ear	711
 https://tonedeafmonk.squig.link/data/EA1000%20BLK%20FOAM%20TAPE%20L.txt		EA1000 BLK FOAM TAPE	ignore	
 https://tonedeafmonk.squig.link/data/EA1000%20KIT%20500%20FOAM.txt		EA1000 KIT 500 FOAM	ignore	
 https://tonedeafmonk.squig.link/data/EA1000%20KIT%20500%20FOAM%20TAPE%20L.txt		EA1000 KIT 500 FOAM TAPE	ignore	
@@ -109,6 +134,8 @@ https://tonedeafmonk.squig.link/data/GL-AMT16%206.0_4.4%20Cotton%20Filter%20L.tx
 https://tonedeafmonk.squig.link/data/GL-AMT16%206.0_4.4%20Noz%20Filter%20L.txt	Goldplanar GL-AMT16 (OUT DIA 6.0mm-IN 3.8mm Nozzle Oxygen Filter)	Goldplanar GL-AMT16 (OUT DIA 6.0mm-IN 3.8mm Nozzle Oxygen Filter)	ignore	
 https://tonedeafmonk.squig.link/data/GL-AMT16%206.0_3.8%20L.txt	Goldplanar GL-AMT16 (OUT DIA 6.0mm-IN 3.8mm Nozzle)	Goldplanar GL-AMT16 (OUT DIA 6.0mm-IN 3.8mm Nozzle)	ignore	
 https://tonedeafmonk.squig.link/data/GL-AMT16%206.0_4.4%20L.txt	Goldplanar GL-AMT16 (OUT DIA 6.0mm-IN 4.4mm Nozzle)	Goldplanar GL-AMT16 (OUT DIA 6.0mm-IN 4.4mm Nozzle)	ignore	
+https://tonedeafmonk.squig.link/data/HIBY%20PROJECT%20ACE%20L.txt	HIBY PROJECT ACE	HiBy x FAudio Project Ace	in-ear	711
+https://tonedeafmonk.squig.link/data/HIBY%20PROJECT%20ACE%20R.txt	HIBY PROJECT ACE	HiBy x FAudio Project Ace	in-ear	711
 https://tonedeafmonk.squig.link/data/HIDIZS%20MS5%20RED%20900%20FTR%20NOZZLE%20L.txt	Hidizs MS5 (RED NOZZLE with 900 FTR)	Hidizs MS5 (RED NOZZLE with 900 FTR)	ignore	
 https://tonedeafmonk.squig.link/data/HIDIZS%20MS5%20RED%20NOZZLE%20L.txt	Hidizs MS5 (RED NOZZLE)	Hidizs MS5 (red nozzle)	in-ear	711
 https://tonedeafmonk.squig.link/data/HIDIZS%20MS5%20ROSE%20NOZZLE%20L.txt	Hidizs MS5 (ROSE NOZZLE)	Hidizs MS5 (rosegold nozzle)	in-ear	711
@@ -174,6 +201,8 @@ https://tonedeafmonk.squig.link/data/KZ%20PR1%20PRO%20500FTR%20L.txt		KZ PR1 PRO
 https://tonedeafmonk.squig.link/data/KZ%20PR1%20PRO%20L.txt		KZ PR1 Pro	in-ear	711
 https://tonedeafmonk.squig.link/data/KZ%20PR3%20L.txt	KZ PR3	KZ PR3	in-ear	711
 https://tonedeafmonk.squig.link/data/KZ%20PR3%20R.txt	KZ PR3	KZ PR3	in-ear	711
+https://tonedeafmonk.squig.link/data/KZ%20Symphony%20L.txt	KZ Symphony	KZ Symphony	in-ear	711
+https://tonedeafmonk.squig.link/data/KZ%20Symphony%20R.txt	KZ Symphony	KZ Symphony	in-ear	711
 https://tonedeafmonk.squig.link/data/KZ%20ZVX%20L.txt	KZ ZVX	KZ ZVX	in-ear	711
 https://tonedeafmonk.squig.link/data/KZ%20HBB%20PR2%20L.txt	KZ HBB PR2	KZ x HBB PR2	in-ear	711
 https://tonedeafmonk.squig.link/data/Celest%20Phoenix%20Call%20L.txt	Kinera Celest Phoenix Call	Kinera Celest Phoenixcall	in-ear	711
@@ -206,6 +235,10 @@ https://tonedeafmonk.squig.link/data/Letshouer%20D13%20R.txt	Letshouer D13	Letsh
 https://tonedeafmonk.squig.link/data/Letshouer%20S15%20PROTYPE%20L.txt	Letshouer S15 PROTOTYPE	Letshouer S15 PROTOTYPE	ignore	
 https://tonedeafmonk.squig.link/data/Letshouer%20S15%20PROTYPE%20R.txt	Letshouer S15 PROTOTYPE	Letshouer S15 PROTOTYPE	ignore	
 https://tonedeafmonk.squig.link/data/THOR%20Mjolnir%20R.txt	THOR Mjolnir MKII OG	Linsoul x THOR Mjölnir MKII	in-ear	711
+https://tonedeafmonk.squig.link/data/CKLVX%20D41%20L.txt	Myer Audio CKLVX D41	MYER-AUDIO CKLVX D41	in-ear	711
+https://tonedeafmonk.squig.link/data/CKLVX%20D41%20R.txt	Myer Audio CKLVX D41	MYER-AUDIO CKLVX D41	in-ear	711
+https://tonedeafmonk.squig.link/data/Meyer-Audio%20SLIIVO%20SL41%20L.txt	Myer Audio SLIIVO SL41	MYER-AUDIO SLIIVO SL41	in-ear	711
+https://tonedeafmonk.squig.link/data/Meyer-Audio%20SLIIVO%20SL41%20R.txt	Myer Audio SLIIVO SL41	MYER-AUDIO SLIIVO SL41	in-ear	711
 https://tonedeafmonk.squig.link/data/SLIIVO%20SL41%20L.txt	Meyer Audio SLIIVO SL41-PROTOTYPE	Meyer Audio SLIIVO SL41-PROTOTYPE	ignore	711
 https://tonedeafmonk.squig.link/data/SLIIVO%20SL41%20R.txt	Meyer Audio SLIIVO SL41-PROTOTYPE	Meyer Audio SLIIVO SL41-PROTOTYPE	ignore	711
 https://tonedeafmonk.squig.link/data/SLIIVO%20MYER04%20DD%20L.txt	Meyer Audio SLIIVO SLT6 (STANDARD TUNING Switches DOWN DOWN)	Meyer Audio SLIIVO SLT6 (off-off)	in-ear	711
@@ -219,6 +252,7 @@ https://tonedeafmonk.squig.link/data/MOONDROP%20CHU%20L.txt	MOONDROP CHU	Moondro
 https://tonedeafmonk.squig.link/data/MOONDROP%20CHU%20R.txt	MOONDROP CHU	Moondrop Chu	in-ear	711
 https://tonedeafmonk.squig.link/data/MOONDROP%20CHU2%20L.txt	MOONDROP CHU#2	Moondrop Chu 2	in-ear	711
 https://tonedeafmonk.squig.link/data/MOONDROP%20CHU2%20R.txt	MOONDROP CHU#2	Moondrop Chu 2	in-ear	711
+https://tonedeafmonk.squig.link/data/My%20Beast%20Set%20W%20R.txt		My Beast Set W	ignore	711
 https://tonedeafmonk.squig.link/data/NF%20AUDIO%20NF2U%20L%20500.txt		NF AUDIO NF2U L 500	ignore	
 https://tonedeafmonk.squig.link/data/NF%20AUDIO%20NF2U%20L.txt	NF AUDIO NF2U	NF Audio NF2u	in-ear	711
 https://tonedeafmonk.squig.link/data/NiceHCK%20DB2%20L.txt	NICEHCK DB2	NiceHCK DB2	in-ear	711
@@ -266,6 +300,10 @@ https://tonedeafmonk.squig.link/data/PENON%20TURBO%201%20100%20L.txt	PENON TURBO
 https://tonedeafmonk.squig.link/data/PENON%20TURBO%201%20010%20L.txt	PENON TURBO (T 101)	Penon Turbo (on, on-off-on)	in-ear	711
 https://tonedeafmonk.squig.link/data/PENON%20TURBO%201%20110%20L.txt	PENON TURBO (T 110)	Penon Turbo (on, on-on-off)	in-ear	711
 https://tonedeafmonk.squig.link/data/PENON%20TURBO%201%20111%20L.txt	PENON TURBO (T 111)	Penon Turbo (on, on-on-on)	in-ear	711
+https://tonedeafmonk.squig.link/data/White%20Set%20L.txt	Plunge Audio CODE NAME ARENA - Project Beast Prototype #1	Plunge Audio CODE NAME ARENA - Project Beast Prototype #1	ignore	711
+https://tonedeafmonk.squig.link/data/White%20Set%20R.txt	Plunge Audio CODE NAME ARENA - Project Beast Prototype #1	Plunge Audio CODE NAME ARENA - Project Beast Prototype #1	ignore	711
+https://tonedeafmonk.squig.link/data/Black%20Set%20L.txt	Plunge Audio CODE NAME ARENA - Project Beast Prototype #2	Plunge Audio CODE NAME ARENA - Project Beast Prototype #2	ignore	711
+https://tonedeafmonk.squig.link/data/Black%20Set%20R.txt	Plunge Audio CODE NAME ARENA - Project Beast Prototype #2	Plunge Audio CODE NAME ARENA - Project Beast Prototype #2	ignore	711
 https://tonedeafmonk.squig.link/data/Plunge%20Audio%20Unity%20L.txt	Plunge Audio Unity	Plunge Audio Unity IEM	in-ear	711
 https://tonedeafmonk.squig.link/data/Plunge%20Audio%20Unity%20R.txt	Plunge Audio Unity	Plunge Audio Unity IEM	in-ear	711
 https://tonedeafmonk.squig.link/data/Project%20HRP%20L.txt		Project HRP	ignore	
@@ -277,6 +315,8 @@ https://tonedeafmonk.squig.link/data/SIMGOT%20EA500LM%20500%20RED%20BORE%20REDUC
 https://tonedeafmonk.squig.link/data/SIMGOT%20REDNOZ%20500%20LDFOAM%20L.txt		SIMGOT REDNOZ 500 LDFOAM	ignore	
 https://tonedeafmonk.squig.link/data/Letshouer%20Cadenza%20L.txt	Letshouer Cadenza	Shuoer Cadenza 12	in-ear	711
 https://tonedeafmonk.squig.link/data/Letshouer%20Cadenza%20R.txt	Letshouer Cadenza	Shuoer Cadenza 12	in-ear	711
+https://tonedeafmonk.squig.link/data/LETSHOUER%20CADENZA%204%20L.txt	Letshouer Cadenza 4	Shuoer Cadenza 4	in-ear	711
+https://tonedeafmonk.squig.link/data/LETSHOUER%20CADENZA%204%20R.txt	Letshouer Cadenza 4	Shuoer Cadenza 4	in-ear	711
 https://tonedeafmonk.squig.link/data/Letshouer%20Conductor%20L.txt	Letshouer Conductor	Shuoer Conductor	in-ear	711
 https://tonedeafmonk.squig.link/data/Letshouer%20Conductor%20R.txt	Letshouer Conductor	Shuoer Conductor	in-ear	711
 https://tonedeafmonk.squig.link/data/LETSHOUER%20DZ4%20L.txt	Letshouer DZ4	Shuoer DZ4	in-ear	711
@@ -338,6 +378,16 @@ https://tonedeafmonk.squig.link/data/SOUND%20RHYME%20SR7%20UU%20L.txt	Sound Rhym
 https://tonedeafmonk.squig.link/data/SOUND%20RHYME%20SR7%20UU%20R.txt	Sound Rhyme SR7 (UU)	Sound Rhyme SR7 (on-on)	in-ear	711
 https://tonedeafmonk.squig.link/data/TDM%20LOGO%20TRANSP.png		TDM LOGO TRANSP.png	ignore	
 https://tonedeafmonk.squig.link/data/THOR%20Mjolnir%20RETUNE%20L.txt	THOR Mjolnir MKII RETUNE	THOR Mjolnir MKII RETUNE	ignore	
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20Atmos%20L.txt	TRN Azure Dragon (Atmospheric Immerersion)	TRN Azure Dragon (Atmospheric Immersion)	in-ear	711
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20200%20MDF%20L.txt	TRN Azure Dragon (Reference Nozzle w 200 Mesh Filter Med Density Foam)	TRN Azure Dragon (Reference Nozzle w 200 Mesh Filter Med Density Foam)	ignore	711
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20Ref%20200%20L.txt	TRN Azure Dragon (Reference Nozzle w 200 Mesh Filter)	TRN Azure Dragon (Reference Nozzle w 200 Mesh Filter)	ignore	711
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20Ref%20300%20L.txt	TRN Azure Dragon (Reference Nozzle w 300 Mesh Filter)	TRN Azure Dragon (Reference Nozzle w 300 Mesh Filter)	ignore	711
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20Ref%20350%20F%20L.txt	TRN Azure Dragon (Reference Nozzle w 350 Mesh MD Foam)	TRN Azure Dragon (Reference Nozzle w 350 Mesh MD Foam)	ignore	711
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20Ref%20400%20L.txt	TRN Azure Dragon (Reference Nozzle w 400 Mesh)	TRN Azure Dragon (Reference Nozzle w 400 Mesh)	ignore	711
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20Ref%20HDC%20L.txt	TRN Azure Dragon (Reference Nozzle w High Density Cotton Filter)	TRN Azure Dragon (Reference Nozzle w High Density Cotton Filter)	ignore	711
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20Ref%20L.txt	TRN Azure Dragon (Reference Nozzle)	TRN Azure Dragon (Reference nozzle)	in-ear	711
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20Ref%20R.txt	TRN Azure Dragon (Reference Nozzle)	TRN Azure Dragon (Reference nozzle)	in-ear	711
+https://tonedeafmonk.squig.link/data/TRN%20Azure%20Dragon%20Trans%20L.txt	TRN Azure Dragon (Transparency Nozzle)	TRN Azure Dragon (Transparency nozzle)	in-ear	711
 https://tonedeafmonk.squig.link/data/TRN%20BAX%20PRO%20DDD%20500%20L.txt		TRN BAX PRO DDD 500	ignore	
 https://tonedeafmonk.squig.link/data/TRN%20BAX%20PRO%20DDD%20500%20W%20L.txt		TRN BAX PRO DDD 500 W	ignore	
 https://tonedeafmonk.squig.link/data/TRN%20BAX%20PRO%20UDD%20500%20W%20L.txt		TRN BAX PRO UDD 500 W	ignore	
@@ -369,8 +419,13 @@ https://tonedeafmonk.squig.link/data/TRN%20TA4%20SET2%20L.txt	TRN TA4 (STOCK)	TR
 https://tonedeafmonk.squig.link/data/TRN%20TA4%20SET2%20R.txt	TRN TA4 (STOCK)	TRN TA4	in-ear	711
 https://tonedeafmonk.squig.link/data/TRN%20TA4%20300%20FILTER%20L.txt	TRN TA4 (300 LEVEL NOZZLE MEST FILTER)	TRN TA4 (300 LEVEL NOZZLE MEST FILTER)	ignore	
 https://tonedeafmonk.squig.link/data/TRN%20TA4%20500%20FILTER%20L.txt	TRN TA4 (500 LEVEL NOZZLE MESH FILTER)	TRN TA4 (500 LEVEL NOZZLE MESH FILTER)	ignore	
+https://tonedeafmonk.squig.link/data/Tanchjim%20ORIGIN%20L%20Filter%20L.txt	Tanchjim ORIGIN (Light Nozzle w Tanchjim Filter)	Tanchjim ORIGIN (Light Nozzle w Tanchjim Filter)	ignore	711
 https://tonedeafmonk.squig.link/data/Tanchjim%20ONE%20L.txt	Tanchjim ONE	Tanchjim One	in-ear	711
 https://tonedeafmonk.squig.link/data/Tanchjim%20ONE%20R.txt	Tanchjim ONE	Tanchjim One	in-ear	711
+https://tonedeafmonk.squig.link/data/Tanchjim%20ORIGIN%20Dynamic%20L.txt	Tanchjim ORIGIN (Dynamic Nozzle D)	Tanchjim Origin (D nozzle)	in-ear	711
+https://tonedeafmonk.squig.link/data/Tanchjim%20ORIGIN%20Light%20L.txt	Tanchjim ORIGIN (Light Nozzle L)	Tanchjim Origin (L nozzle)	in-ear	711
+https://tonedeafmonk.squig.link/data/Tanchjim%20ORIGIN%20Standard%20L.txt	Tanchjim ORIGIN (Standard Nozzle S)	Tanchjim Origin (S nozzle)	in-ear	711
+https://tonedeafmonk.squig.link/data/Tanchjim%20ORIGIN%20Standard%20R.txt	Tanchjim ORIGIN (Standard Nozzle S)	Tanchjim Origin (S nozzle)	in-ear	711
 https://tonedeafmonk.squig.link/data/Tansio%20Marai%20RGB%20003%20L.txt		Tansio Marai RGB 003	ignore	711
 https://tonedeafmonk.squig.link/data/Tansio%20Marai%20RGB%20020%20L.txt		Tansio Marai RGB 020	ignore	711
 https://tonedeafmonk.squig.link/data/Tansio%20Marai%20HALO%20L.txt	Tansio Mirai HALO	Tansio Mirai HALO	in-ear	711

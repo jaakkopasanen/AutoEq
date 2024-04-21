@@ -3930,6 +3930,28 @@ file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Dusk S5 R.txt	Moondrop Blessing2:Dusk S5	Moondrop x Crinacle Blessing2 Dusk	in-ear	711
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Dusk R.txt	Moondrop Blessing2:Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/4620 IEM Measurements/Dusk L.txt	Moondrop Blessing2:Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP Bass S1 L.txt	Moondrop DUSK (DSP: Bass+)	Moondrop x Crinacle DUSK (Bass+ DSP)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP Bass S1 R.txt	Moondrop DUSK (DSP: Bass+)	Moondrop x Crinacle DUSK (Bass+ DSP)	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP Bass S1 L.txt	Moondrop DUSK (DSP: Bass+)	Moondrop x Crinacle DUSK (Bass+ DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP Bass S1 R.txt	Moondrop DUSK (DSP: Bass+)	Moondrop x Crinacle DUSK (Bass+ DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP Default S1 L.txt	Moondrop DUSK (DSP: Default)	Moondrop x Crinacle DUSK (Default DSP)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP Default S1 R.txt	Moondrop DUSK (DSP: Default)	Moondrop x Crinacle DUSK (Default DSP)	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP Default S1 L.txt	Moondrop DUSK (DSP: Default)	Moondrop x Crinacle DUSK (Default DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP Default S1 R.txt	Moondrop DUSK (DSP: Default)	Moondrop x Crinacle DUSK (Default DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP DFT S1 L.txt	Moondrop DUSK (DSP: Diffuse-Tilted)	Moondrop x Crinacle DUSK (Diffuse-tilted DSP)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP DFT S1 R.txt	Moondrop DUSK (DSP: Diffuse-Tilted)	Moondrop x Crinacle DUSK (Diffuse-tilted DSP)	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP DFT S1 L.txt	Moondrop DUSK (DSP: Diffuse-Tilted)	Moondrop x Crinacle DUSK (Diffuse-tilted DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP DFT S1 R.txt	Moondrop DUSK (DSP: Diffuse-Tilted)	Moondrop x Crinacle DUSK (Diffuse-tilted DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP Harman S1 L.txt	Moondrop DUSK (DSP: Harman)	Moondrop x Crinacle DUSK (Harman DSP)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP Harman S1 R.txt	Moondrop DUSK (DSP: Harman)	Moondrop x Crinacle DUSK (Harman DSP)	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP Harman S1 L.txt	Moondrop DUSK (DSP: Harman)	Moondrop x Crinacle DUSK (Harman DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP Harman S1 R.txt	Moondrop DUSK (DSP: Harman)	Moondrop x Crinacle DUSK (Harman DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP V S1 L.txt	Moondrop DUSK (DSP: V)	Moondrop x Crinacle DUSK (V DSP)	in-ear	711
+file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/DUSK DSP V S1 R.txt	Moondrop DUSK (DSP: V)	Moondrop x Crinacle DUSK (V DSP)	in-ear	711
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP V S1 L.txt	Moondrop DUSK (DSP: V)	Moondrop x Crinacle DUSK (V DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK DSP V S1 R.txt	Moondrop DUSK (DSP: V)	Moondrop x Crinacle DUSK (V DSP)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK S1 L.txt	Moondrop DUSK (Analog)	Moondrop x Crinacle DUSK (analog)	in-ear	Bruel & Kjaer 4620
+file://measurements/crinacle/raw_data/4620 IEM Measurements/DUSK S1 R.txt	Moondrop DUSK (Analog)	Moondrop x Crinacle DUSK (analog)	in-ear	Bruel & Kjaer 4620
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Power L.txt	Muse HiFi Power	Muse HiFi Power	in-ear	711
 file://measurements/crinacle/raw_data/IEC60318-4 IEM Measurements (TSV txt)/Power R.txt	Muse HiFi Power	Muse HiFi Power	in-ear	711
 file://measurements/crinacle/raw_data/GRAS 43AG-7/MYSPHERE 3.2 L1.txt	LB-acoustics MYSPHERE 3.2	MySphere 3.2	over-ear	GRAS 43AG-7

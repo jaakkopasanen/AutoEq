@@ -80,6 +80,8 @@ https://superreview.squig.link/data/7Hz%20Timeless%20L.txt	7Hz Timeless (sample 
 https://superreview.squig.link/data/7Hz%20Timeless%20R.txt	7Hz Timeless (sample 1)	7Hz Timeless	in-ear	711
 https://superreview.squig.link/data/7Hz%20Timeless%20(S2)%20L.txt	7Hz Timeless (sample 2)	7Hz Timeless	in-ear	711
 https://superreview.squig.link/data/7Hz%20Timeless%20(S2)%20R.txt	7Hz Timeless (sample 2)	7Hz Timeless	in-ear	711
+https://superreview.squig.link/data/7Hz%20Zero%202%20L.txt	7Hz Salnotes x Crinacle Zero 2	7Hz x Crinacle Zero 2	in-ear	711
+https://superreview.squig.link/data/7Hz%20Zero%202%20R.txt	7Hz Salnotes x Crinacle Zero 2	7Hz x Crinacle Zero 2	in-ear	711
 https://superreview.squig.link/data/7th%20Acoustics%20Proxima%20L.txt	7th Acoustics Proxima	7th Acoustics Proxima	in-ear	711
 https://superreview.squig.link/data/7th%20Acoustics%20Proxima%20R.txt	7th Acoustics Proxima	7th Acoustics Proxima	in-ear	711
 https://superreview.squig.link/data/7th%20Acoustics%20Supernova%20L.txt	7th Acoustics Supernova (sample 1)	7th Acoustics Supernova	in-ear	711
@@ -118,6 +120,14 @@ https://superreview.squig.link/headphones/data/AKG%20Q701%20R2.txt		AKG Q701	ove
 https://superreview.squig.link/headphones/data/AKG%20Q701%20R3.txt		AKG Q701	over-ear	KB006x + 711
 https://superreview.squig.link/data/Aune%20Jasper%20L.txt	Aune Jasper (stock)	AUNE Jasper	in-ear	711
 https://superreview.squig.link/data/Aune%20Jasper%20R.txt	Aune Jasper (stock)	AUNE Jasper	in-ear	711
+https://superreview.squig.link/data/Acoustune%20RS%20One%20L.txt	Acoustune RS One	Acoustune RS ONE	in-ear	711
+https://superreview.squig.link/data/Acoustune%20RS%20One%20R.txt	Acoustune RS One	Acoustune RS ONE	in-ear	711
+https://superreview.squig.link/data/Delta%20Studio%20S1%20L.txt	Airlines Delta Studio (sample 1)	Airlines Delta Studio (sample 1)	ignore	711
+https://superreview.squig.link/data/Delta%20Studio%20S1%20R.txt	Airlines Delta Studio (sample 1)	Airlines Delta Studio (sample 1)	ignore	711
+https://superreview.squig.link/data/Delta%20Studio%20S2%20L.txt	Airlines Delta Studio (sample 2)	Airlines Delta Studio (sample 2)	ignore	711
+https://superreview.squig.link/data/Delta%20Studio%20S2%20R.txt	Airlines Delta Studio (sample 2)	Airlines Delta Studio (sample 2)	ignore	711
+https://superreview.squig.link/data/JetBlue%20Earbuds%20L.txt	Airlines JetBlue Earbuds	Airlines JetBlue Earbuds	ignore	711
+https://superreview.squig.link/data/JetBlue%20Earbuds%20R.txt	Airlines JetBlue Earbuds	Airlines JetBlue Earbuds	ignore	711
 https://superreview.squig.link/data/Akoustyx%20R-120%20L.txt	Akoustyx R-120	Akoustyx R-120	in-ear	711
 https://superreview.squig.link/data/Akoustyx%20R-220%20L.txt	Akoustyx R-220	Akoustyx R-220	in-ear	711
 https://superreview.squig.link/data/Akoustyx%20S-6%20L.txt	Akoustyx S-6 (sample 1)	Akoustyx S-6	in-ear	711
@@ -194,6 +204,8 @@ https://superreview.squig.link/data/BGVP%20NS9%20(gray)%20L.txt	BGVP NS9 (gray f
 https://superreview.squig.link/data/BGVP%20NS9%20(black%20tips%20+%20no%20mesh)%20L.txt	BGVP NS9 (tips: black, no mesh)	BGVP NS9 (no mesh, black eartips)	in-ear	711
 https://superreview.squig.link/data/BGVP%20NS9%20(red)%20L.txt	BGVP NS9 (red filter)	BGVP NS9 (red filter)	in-ear	711
 https://superreview.squig.link/data/BGVP%20NS9%20(silver)%20L.txt	BGVP NS9 (silver filter)	BGVP NS9 (silver filter)	in-ear	711
+https://superreview.squig.link/data/BGVP%20Phantom%20L.txt	BGVP Phantom	BGVP Phantom	in-ear	711
+https://superreview.squig.link/data/BGVP%20Phantom%20R.txt	BGVP Phantom	BGVP Phantom	in-ear	711
 https://superreview.squig.link/data/Blon%20BL03%20L.txt	Blon BL03	BLON BL-03	in-ear	711
 https://superreview.squig.link/data/Blon%20BL05%20L.txt	Blon BL05	BLON BL-05	in-ear	711
 https://superreview.squig.link/data/Blon%20A8%20Prometheus%20L.txt	Blon A8 Prometheus	BLON BL-A8 Prometheus	in-ear	711
@@ -376,10 +388,18 @@ https://superreview.squig.link/data/Effect%20Audio%20Gaea%20(deep)%20R.txt	Effec
 https://superreview.squig.link/data/Effect%20Audio%20Gaea%20L.txt	Effect Audio x Elysian Acoustic Labs Gaea 	Effect Audio x Elysian Gaea	in-ear	711
 https://superreview.squig.link/data/Effect%20Audio%20Gaea%20R.txt	Effect Audio x Elysian Acoustic Labs Gaea 	Effect Audio x Elysian Gaea	in-ear	711
 https://superreview.squig.link/data/Elysian%20Annihilator%20L.txt	Elysian Acoustic Labs Annihilator	Elysian Acoustic Labs Annihilator	ignore	
+https://superreview.squig.link/data/Elysian%20Pilgrim%20CJNYC24%20L.txt	Elysian Acoustic Labs Pilgrim (pre-production, CanJam NYC)	Elysian Acoustic Labs Pilgrim (pre-production, CanJam NYC)	ignore	711
+https://superreview.squig.link/data/Elysian%20Pilgrim%20CJNYC24%20R.txt	Elysian Acoustic Labs Pilgrim (pre-production, CanJam NYC)	Elysian Acoustic Labs Pilgrim (pre-production, CanJam NYC)	ignore	711
 https://superreview.squig.link/data/Elysian%20Annihilator%202023%20(JVC)%20L.txt	Elysian Acoustic Labs Annihilator 2023 (tips: Spiral Dots++)	Elysian Annihilator (2023, JVC Spiral Dot++ eartips)	ignore	711
 https://superreview.squig.link/data/Elysian%20Annihilator%202023%20(JVC)%20R.txt	Elysian Acoustic Labs Annihilator 2023 (tips: Spiral Dots++)	Elysian Annihilator (2023, JVC Spiral Dot++ eartips)	ignore	711
 https://superreview.squig.link/data/Elysian%20Annihilator%202023%20(W1)%20L.txt	Elysian Acoustic Labs Annihilator 2023 (tips: SpinFit W1)	Elysian Annihilator (2023, SpinFit W1 eartips)	ignore	711
 https://superreview.squig.link/data/Elysian%20Annihilator%202023%20(W1)%20R.txt	Elysian Acoustic Labs Annihilator 2023 (tips: SpinFit W1)	Elysian Annihilator (2023, SpinFit W1 eartips)	ignore	711
+https://superreview.squig.link/data/Elysian%20Diva%20blue%20L.txt	Elysian Acoustic Labs Diva 2023 (switch: blue)	Elysian Diva 2023 (blue switch)	in-ear	711
+https://superreview.squig.link/data/Elysian%20Diva%20blue%20R.txt	Elysian Acoustic Labs Diva 2023 (switch: blue)	Elysian Diva 2023 (blue switch)	in-ear	711
+https://superreview.squig.link/data/Elysian%20Diva%20red%20L.txt	Elysian Acoustic Labs Diva 2023 (switch: red)	Elysian Diva 2023 (red switch)	in-ear	711
+https://superreview.squig.link/data/Elysian%20Diva%20red%20R.txt	Elysian Acoustic Labs Diva 2023 (switch: red)	Elysian Diva 2023 (red switch)	in-ear	711
+https://superreview.squig.link/data/Elysian%20Diva%20white%20L.txt	Elysian Acoustic Labs Diva 2023 (switch: white)	Elysian Diva 2023 (white switch)	in-ear	711
+https://superreview.squig.link/data/Elysian%20Diva%20white%20R.txt	Elysian Acoustic Labs Diva 2023 (switch: white)	Elysian Diva 2023 (white switch)	in-ear	711
 https://superreview.squig.link/data/Empire%20Ears%20Bravado%20mkII%20L.txt	Empire Ears Bravado mk.II	Empire Ears Bravado Mk2	in-ear	711
 https://superreview.squig.link/data/Empire%20Ears%20ESR%20mkII%20L.txt	Empire Ears ESR mk.II	Empire Ears ESR Mk2	in-ear	711
 https://superreview.squig.link/data/Empire%20Ears%20Legend%20Evo%20L.txt	Empire Ears Legend Evo	Empire Ears Legend EVO	in-ear	711
@@ -629,12 +649,18 @@ https://superreview.squig.link/headphones/data/HarmonicDyne%20Zeus%20Elite%20R3.
 https://superreview.squig.link/data/Haylou%20GT1%20L.txt	Haylou GT1	Haylou GT1	in-ear	711
 https://superreview.squig.link/data/Haylou%20GT2%20L.txt	Haylou GT2	Haylou GT2	in-ear	711
 https://superreview.squig.link/data/Haylou%20GT2%20R.txt	Haylou GT2	Haylou GT2	in-ear	711
+https://superreview.squig.link/data/Hi-Fri%20Audio%20Aphex%20L.txt	Hi-Fri Audio Aphex	Hi-Fri Audio Aphex	in-ear	711
+https://superreview.squig.link/data/Hi-Fri%20Audio%20Aphex%20R.txt	Hi-Fri Audio Aphex	Hi-Fri Audio Aphex	in-ear	711
 https://superreview.squig.link/data/Hiby%20Crystal6%20L.txt	Hiby Crystal6	HiBy Crystal 6	in-ear	711
 https://superreview.squig.link/data/Hiby%20Crystal6%20II%20L.txt	Hiby Crystal6 II	HiBy Crystal 6 II	in-ear	711
 https://superreview.squig.link/data/Hiby%20Crystal6%20II%20R.txt	Hiby Crystal6 II	HiBy Crystal 6 II	in-ear	711
 https://superreview.squig.link/data/Hiby%20Digital%20Xoe%20L.txt	Hiby Xoe	HiBy XOE	in-ear	711
 https://superreview.squig.link/data/Hiby%20Digital%20Xoe%20R.txt	Hiby Xoe	HiBy XOE	in-ear	711
 https://superreview.squig.link/data/Hidition%20Violet%20L.txt	Hidition Violet	Hidition Violet	in-ear	711
+https://superreview.squig.link/data/Hisenior%20Mega5EST%20L.txt	Hisenior Mega5-EST (sample 1)	Hisenior Mega 5 EST (sample 1)	in-ear	711
+https://superreview.squig.link/data/Hisenior%20Mega5EST%20R.txt	Hisenior Mega5-EST (sample 1)	Hisenior Mega 5 EST (sample 1)	in-ear	711
+https://superreview.squig.link/data/Hisenior%20Mega5EST%20S2%20L.txt	Hisenior Mega5-EST (sample 2)	Hisenior Mega 5 EST (sample 2)	in-ear	711
+https://superreview.squig.link/data/Hisenior%20Mega5EST%20S2%20R.txt	Hisenior Mega5-EST (sample 2)	Hisenior Mega 5 EST (sample 2)	in-ear	711
 https://superreview.squig.link/data/Ikko%20OH1%20L.txt	Ikko OH1	IKKO OH1	in-ear	711
 https://superreview.squig.link/data/Ikko%20OH10%20L.txt	Ikko OH10	IKKO OH10	in-ear	711
 https://superreview.squig.link/data/Ikko%20OH10%20R.txt	Ikko OH10	IKKO OH10	in-ear	711
@@ -647,6 +673,8 @@ https://superreview.squig.link/data/Ikko%20Gems%20OH1s%20(S5%20+%20stock%20foams
 https://superreview.squig.link/data/Ikko%20Gems%20OH1s%20(S2%20+%20Etype%20tips)%20L.txt	Ikko Gems OH1s (sample 2 + tips: Etype)	IKKO OH1S (Final Audio Type E eartips)	ignore	711
 https://superreview.squig.link/data/Ikko%20Opal%20OH2%20L.txt	Ikko Opal OH2	IKKO OH2	in-ear	711
 https://superreview.squig.link/data/Ikko%20Opal%20OH2%20R.txt	Ikko Opal OH2	IKKO OH2	in-ear	711
+https://superreview.squig.link/data/IO%20Volare%20L.txt	I/O Volare	IO Audio Volare	in-ear	711
+https://superreview.squig.link/data/IO%20Volare%20R.txt	I/O Volare	IO Audio Volare	in-ear	711
 https://superreview.squig.link/data/Ikko%20Gems%20OH1s%20(S2%20+%20stock%20foams%20+%20BluTack)%20L.txt	Ikko Gems OH1s (sample 2 + Blu-Tack)	Ikko Gems OH1s (sample 2 + Blu-Tack)	ignore	
 https://superreview.squig.link/data/Ikko%20Gems%20OH1s%20(S2%20+%20stock%20foams%20+%20micropore%20mod)%20L.txt	Ikko Gems OH1s (sample 2 + micopore tape)	Ikko Gems OH1s (sample 2 + micopore tape)	ignore	
 https://superreview.squig.link/data/Intime%20Sora%20L.txt	Intime Sora	Intime Sora	in-ear	711
@@ -674,6 +702,8 @@ https://superreview.squig.link/data/KBEar%20Believe%20L.txt	KBEar Believe	KBEAR 
 https://superreview.squig.link/data/KBEar%20Believe%20R.txt	KBEar Believe	KBEAR Believe	in-ear	711
 https://superreview.squig.link/data/KBEar%20Diamond%20L.txt	KBEar Diamond	KBEAR Diamond	in-ear	711
 https://superreview.squig.link/data/KBEar%20KS2%20L.txt	KBEar KS2	KBEAR KS2	in-ear	711
+https://superreview.squig.link/data/Kefine%20Delci%20L.txt	Kefine Delci	KEFINE Delci	in-ear	711
+https://superreview.squig.link/data/Kefine%20Delci%20R.txt	Kefine Delci	KEFINE Delci	in-ear	711
 https://superreview.squig.link/data/KZ%20(avg)%20L.txt	KZ (average)	KZ (average)	ignore	
 https://superreview.squig.link/data/KZ%20AS06%20L.txt	KZ AS06	KZ AS06	in-ear	711
 https://superreview.squig.link/data/KZ%20AS10%20L.txt	KZ AS10	KZ AS10	in-ear	711
@@ -748,6 +778,8 @@ https://superreview.squig.link/data/Kiwi%20Ears%20Quartet%20(11)%20L.txt	Kiwi Ea
 https://superreview.squig.link/data/Kiwi%20Ears%20Quartet%20(11)%20R.txt	Kiwi Ears Quartet (switches: on - on)	Kiwi Ears Quartet (on-on)	in-ear	711
 https://superreview.squig.link/data/Kiwi%20Ears%20Quintet%20L.txt	Kiwi Ears Quintet	Kiwi Ears Quintet	in-ear	711
 https://superreview.squig.link/data/Kiwi%20Ears%20Quintet%20R.txt	Kiwi Ears Quintet	Kiwi Ears Quintet	in-ear	711
+https://superreview.squig.link/data/Kiwi%20Ears%20Singolo%20L.txt	Kiwi Ears x Crinacle Singolo	Kiwi Ears x Crinacle Singolo	in-ear	711
+https://superreview.squig.link/data/Kiwi%20Ears%20Singolo%20R.txt	Kiwi Ears x Crinacle Singolo	Kiwi Ears x Crinacle Singolo	in-ear	711
 https://superreview.squig.link/headphones/data/Koss%20ESP-95X%20L1.txt	Koss ESP/95X 	Koss ESP95X	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Koss%20ESP-95X%20L2.txt	Koss ESP/95X 	Koss ESP95X	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Koss%20ESP-95X%20L3.txt	Koss ESP/95X 	Koss ESP95X	over-ear	KB006x + 711
@@ -810,6 +842,7 @@ https://superreview.squig.link/data/LG%20HBS800%20(ANC%20off)%20L.txt	LG HBS800 
 https://superreview.squig.link/data/LG%20HBS800%20(ANC%20off)%20R.txt	LG HBS800 (ANC off)	LG Tone Ultra (ANC off)	in-ear	711
 https://superreview.squig.link/data/LG%20HBS800%20(ANC%20on)%20L.txt	LG HBS800 (ANC on)	LG Tone Ultra (ANC on)	in-ear	711
 https://superreview.squig.link/data/LG%20HBS800%20(ANC%20on)%20R.txt	LG HBS800 (ANC on)	LG Tone Ultra (ANC on)	in-ear	711
+https://superreview.squig.link/data/Letshuoer%20Candeza%204%20L.txt		Letshuoer Candeza 4	ignore	711
 https://superreview.squig.link/data/Letshuoer%20D13%20(pre-prod%20-%20nozzle%20B)%20L.txt		Letshuoer D13 (pre-prod - nozzle B)	ignore	
 https://superreview.squig.link/data/Letshuoer%20D13%20(pre-prod%20-%20nozzle%20B)%20R.txt		Letshuoer D13 (pre-prod - nozzle B)	ignore	
 https://superreview.squig.link/data/Letshuoer%20D13%20(pre-prod%20-%20nozzle%20A)%20L.txt	Letshuoer D13 (pre-production)	Letshuoer D13 (pre-production)	ignore	
@@ -893,6 +926,12 @@ https://superreview.squig.link/headphones/data/Meze%20Liric%20L3.txt	Meze Liric	
 https://superreview.squig.link/headphones/data/Meze%20Liric%20R1.txt	Meze Liric	Meze Liric	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Meze%20Liric%20R2.txt	Meze Liric	Meze Liric	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Meze%20Liric%20R3.txt	Meze Liric	Meze Liric	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Liric%20II%20L1.txt	Meze Liric II	Meze Liric II	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Liric%20II%20L2.txt	Meze Liric II	Meze Liric II	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Liric%20II%20L3.txt	Meze Liric II	Meze Liric II	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Liric%20II%20R1.txt	Meze Liric II	Meze Liric II	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Liric%20II%20R2.txt	Meze Liric II	Meze Liric II	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Meze%20Liric%20II%20R3.txt	Meze Liric II	Meze Liric II	over-ear	KB006x + 711
 https://superreview.squig.link/data/MiM%20Dark%20Magician%20L.txt	MiM Audio Dark Magician	MiM Audio Dark Magician	in-ear	711
 https://superreview.squig.link/data/MiM%20Dark%20Magician%20R.txt	MiM Audio Dark Magician	MiM Audio Dark Magician	in-ear	711
 https://superreview.squig.link/data/MiM%20Dark%20Magician%20Revised%20L.txt	MiM Audio Dark Magician (Revised)	MiM Audio Dark Magician (revised)	in-ear	711
@@ -959,6 +998,12 @@ https://superreview.squig.link/data/Moondrop%20Dark%20Saber%20S1%20R.txt	Moondro
 https://superreview.squig.link/data/Moondrop%20Dark%20Saber%20L.txt	Moondrop Dark Saber 	Moondrop Darksaber	in-ear	711
 https://superreview.squig.link/data/Moondrop%20The%20Droplet%20L.txt	Moondrop The Droplet	Moondrop Droplet	in-ear	711
 https://superreview.squig.link/data/Moondrop%20The%20Droplet%20R.txt	Moondrop The Droplet	Moondrop Droplet	in-ear	711
+https://superreview.squig.link/data/Moondrop%20Golden%20Ages%20monitor%20L.txt	Moondrop Golden Ages (preset: monitor)	Moondrop Golden Ages (monitor eq)	in-ear	711
+https://superreview.squig.link/data/Moondrop%20Golden%20Ages%20monitor%20R.txt	Moondrop Golden Ages (preset: monitor)	Moondrop Golden Ages (monitor eq)	in-ear	711
+https://superreview.squig.link/data/Moondrop%20Golden%20Ages%20basshead%20L.txt	Moondrop Golden Ages (preset: basshead)	Moondrop Golden Ages (preset: basshead)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Golden%20Ages%20basshead%20R.txt	Moondrop Golden Ages (preset: basshead)	Moondrop Golden Ages (preset: basshead)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Golden%20Ages%20reference%20L.txt	Moondrop Golden Ages (preset: reference)	Moondrop Golden Ages (preset: reference)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Golden%20Ages%20reference%20R.txt	Moondrop Golden Ages (preset: reference)	Moondrop Golden Ages (preset: reference)	ignore	711
 https://superreview.squig.link/data/Moondrop%20Illumination%20L.txt	Moondrop Illumination (sample 1)	Moondrop Illumination	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Illumination%20(S2)%20L.txt	Moondrop Illumination (sample 2)	Moondrop Illumination	in-ear	711
 https://superreview.squig.link/data/Moondrop%20Illumination%20(Sedna%20Light)%20L.txt	Moondrop Illumination (tips: Sedna Light)	Moondrop Illumination (AZLA Sedna Light eartips)	ignore	711
@@ -1109,6 +1154,24 @@ https://superreview.squig.link/data/Moondrop%20Voyager%20(normal)%20R.txt	Moondr
 https://superreview.squig.link/data/Moondrop%20Voyager%20(ultra-bass)%20L.txt	Moondrop Voyager (EQ: ultra-bass)	Moondrop Voyager (EQ: ultra-bass)	ignore	
 https://superreview.squig.link/data/Moondrop%20Voyager%20(ultra-bass)%20R.txt	Moondrop Voyager (EQ: ultra-bass)	Moondrop Voyager (EQ: ultra-bass)	ignore	
 https://superreview.squig.link/data/Moondrop%20Blessing%202%20Dusk%20L.txt	Moondrop Blessing 2: Dusk	Moondrop x Crinacle Blessing2 Dusk	in-ear	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20L.txt	Moondrop x Crinacle Dusk 2 (S1 @ CanJam - 3.5mm)	Moondrop x Crinacle Dusk 2 (S1 @ CanJam - 3.5mm)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20R.txt	Moondrop x Crinacle Dusk 2 (S1 @ CanJam - 3.5mm)	Moondrop x Crinacle Dusk 2 (S1 @ CanJam - 3.5mm)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20USB%20L.txt	Moondrop x Crinacle Dusk 2 (S1 @ CanJam - USB, Default)	Moondrop x Crinacle Dusk 2 (S1 @ CanJam - USB, Default)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20USB%20R.txt	Moondrop x Crinacle Dusk 2 (S1 @ CanJam - USB, Default)	Moondrop x Crinacle Dusk 2 (S1 @ CanJam - USB, Default)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20L.txt	Moondrop x Crinacle Dusk 2 (S2 - 3.5mm)	Moondrop x Crinacle Dusk 2 (S2 - 3.5mm)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20R.txt	Moondrop x Crinacle Dusk 2 (S2 - 3.5mm)	Moondrop x Crinacle Dusk 2 (S2 - 3.5mm)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20Bass%20L.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Bass+)	Moondrop x Crinacle Dusk 2 (S2 - USB, Bass+)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20Bass%20R.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Bass+)	Moondrop x Crinacle Dusk 2 (S2 - USB, Bass+)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20ST%20L.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Custom PEQ)	Moondrop x Crinacle Dusk 2 (S2 - USB, Custom PEQ)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20ST%20R.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Custom PEQ)	Moondrop x Crinacle Dusk 2 (S2 - USB, Custom PEQ)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20Default%20L.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Default)	Moondrop x Crinacle Dusk 2 (S2 - USB, Default)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20Default%20R.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Default)	Moondrop x Crinacle Dusk 2 (S2 - USB, Default)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20Diffuse%20Tilted%20L.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Diffuse Tilted)	Moondrop x Crinacle Dusk 2 (S2 - USB, Diffuse Tilted)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20Diffuse%20Tilted%20R.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Diffuse Tilted)	Moondrop x Crinacle Dusk 2 (S2 - USB, Diffuse Tilted)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20Harman%20L.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Harman)	Moondrop x Crinacle Dusk 2 (S2 - USB, Harman)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20Harman%20R.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, Harman)	Moondrop x Crinacle Dusk 2 (S2 - USB, Harman)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20V%20L.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, V)	Moondrop x Crinacle Dusk 2 (S2 - USB, V)	ignore	711
+https://superreview.squig.link/data/Moondrop%20Dusk%202%20S2%20USB%20V%20R.txt	Moondrop x Crinacle Dusk 2 (S2 - USB, V)	Moondrop x Crinacle Dusk 2 (S2 - USB, V)	ignore	711
 https://superreview.squig.link/data/NF%20Audio%20NA2+%20L.txt	NF Audio NA2+ (tips: atmosphere)	NF Audio NA2+ (Atmosphere eartips)	in-ear	711
 https://superreview.squig.link/data/NF%20Audio%20NA2+%20(balanced%20tips)%20L.txt	NF Audio NA2+ (tips: balanced)	NF Audio NA2+ (Balanced eartips)	in-ear	711
 https://superreview.squig.link/data/NF%20Audio%20NA2+%20(Etype%20tips)%20L.txt	NF Audio NA2+ (tips: Etype)	NF Audio NA2+ (Final Audio Type E eartips)	in-ear	711
@@ -1127,6 +1190,8 @@ https://superreview.squig.link/data/Night%20Oblivion%20Butastur%20(UD)%20L.txt	N
 https://superreview.squig.link/data/Night%20Oblivion%20Butastur%20(UD)%20R.txt	Night Oblivion Butastur (switches: UD)	Night Oblivion Butastur (on-off)	in-ear	711
 https://superreview.squig.link/data/Night%20Oblivion%20Butastur%20(UU)%20L.txt	Night Oblivion Butastur (switches: UU)	Night Oblivion Butastur (on-on)	in-ear	711
 https://superreview.squig.link/data/Night%20Oblivion%20Butastur%20(UU)%20R.txt	Night Oblivion Butastur (switches: UU)	Night Oblivion Butastur (on-on)	in-ear	711
+https://superreview.squig.link/data/Nightjar%20Singularity%20L.txt	Nightjar Acoustics Singularity	Nightjar Singularity	in-ear	711
+https://superreview.squig.link/data/Nightjar%20Singularity%20R.txt	Nightjar Acoustics Singularity	Nightjar Singularity	in-ear	711
 https://superreview.squig.link/data/Nothing%20Ear%202%20L.txt	Nothing Ear 2 (FW 1.0.1.66)	Nothing Ear 2 (FW 1.0.1.66)	ignore	
 https://superreview.squig.link/data/Nothing%20Ear%202%20R.txt	Nothing Ear 2 (FW 1.0.1.66)	Nothing Ear 2 (FW 1.0.1.66)	ignore	
 https://superreview.squig.link/data/Nothing%20Ear%202%20(balanced)%20L.txt		Nothing Ear 2 (balanced)	ignore	
@@ -1236,6 +1301,18 @@ https://superreview.squig.link/headphones/data/Sendy%20Aiva%20L3.txt	Sendy Aiva	
 https://superreview.squig.link/headphones/data/Sendy%20Aiva%20R1.txt	Sendy Aiva	Sendy Aiva	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Sendy%20Aiva%20R2.txt	Sendy Aiva	Sendy Aiva	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Sendy%20Aiva%20R3.txt	Sendy Aiva	Sendy Aiva	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20mixing%20L1.txt	Sennheiser HD 490 Pro (pads: mixing)	Sennheiser HD 490 Pro (mixing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20mixing%20L2.txt	Sennheiser HD 490 Pro (pads: mixing)	Sennheiser HD 490 Pro (mixing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20mixing%20L3.txt	Sennheiser HD 490 Pro (pads: mixing)	Sennheiser HD 490 Pro (mixing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20mixing%20R1.txt	Sennheiser HD 490 Pro (pads: mixing)	Sennheiser HD 490 Pro (mixing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20mixing%20R2.txt	Sennheiser HD 490 Pro (pads: mixing)	Sennheiser HD 490 Pro (mixing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20mixing%20R3.txt	Sennheiser HD 490 Pro (pads: mixing)	Sennheiser HD 490 Pro (mixing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20producing%20L1.txt	Sennheiser HD 490 Pro (pads: producing)	Sennheiser HD 490 Pro (producing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20producing%20L2.txt	Sennheiser HD 490 Pro (pads: producing)	Sennheiser HD 490 Pro (producing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20producing%20L3.txt	Sennheiser HD 490 Pro (pads: producing)	Sennheiser HD 490 Pro (producing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20producing%20R1.txt	Sennheiser HD 490 Pro (pads: producing)	Sennheiser HD 490 Pro (producing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20producing%20R2.txt	Sennheiser HD 490 Pro (pads: producing)	Sennheiser HD 490 Pro (producing earpads)	over-ear	KB006x + 711
+https://superreview.squig.link/headphones/data/Sennheiser%20HD%20490%20Pro%20producing%20R3.txt	Sennheiser HD 490 Pro (pads: producing)	Sennheiser HD 490 Pro (producing earpads)	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Sennheiser%20HD%20560S%20L1.txt	Sennheiser HD 560S	Sennheiser HD 560S	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Sennheiser%20HD%20560S%20L2.txt	Sennheiser HD 560S	Sennheiser HD 560S	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Sennheiser%20HD%20560S%20L3.txt	Sennheiser HD 560S	Sennheiser HD 560S	over-ear	KB006x + 711
@@ -1345,8 +1422,11 @@ https://superreview.squig.link/data/Sennheiser%20Momentum%20TW3%20R.txt	Sennheis
 https://superreview.squig.link/data/Shanling%20ME700%20Lite%20L.txt	Shanling ME700 Lite	Shanling ME700 Lite	in-ear	711
 https://superreview.squig.link/data/Shozy%20CP%20L.txt	Shozy CP	Shozy & Neo CP	in-ear	711
 https://superreview.squig.link/data/Shozy%20Rouge%20L.txt	Shozy Rouge	Shozy Rouge	in-ear	711
+https://superreview.squig.link/data/Letshuoer%20Cadenza%20L.txt		Shuoer Cadenza	in-ear	711
 https://superreview.squig.link/data/Letshuoer%20Cadenza%2012%20L.txt	Letshuoer Cadenza 12	Shuoer Cadenza 12	in-ear	711
 https://superreview.squig.link/data/Letshuoer%20Cadenza%2012%20R.txt	Letshuoer Cadenza 12	Shuoer Cadenza 12	in-ear	711
+https://superreview.squig.link/data/Letshuoer%20Cadenza%204%20L.txt	Letshuoer Cadenza 4	Shuoer Cadenza 4	in-ear	711
+https://superreview.squig.link/data/Letshuoer%20Cadenza%204%20R.txt	Letshuoer Cadenza 4	Shuoer Cadenza 4	in-ear	711
 https://superreview.squig.link/data/Letshuoer%20D13%20(gold)%20L.txt	Letshuoer D13 (nozzle: gold)	Shuoer D13 (gold nozzle)	in-ear	711
 https://superreview.squig.link/data/Letshuoer%20D13%20(gold)%20R.txt	Letshuoer D13 (nozzle: gold)	Shuoer D13 (gold nozzle)	in-ear	711
 https://superreview.squig.link/data/Letshuoer%20D13%20(silver)%20L.txt	Letshuoer D13 (nozzle: silver)	Shuoer D13 (silver nozzle)	in-ear	711
@@ -1361,6 +1441,8 @@ https://superreview.squig.link/data/Letshuoer%20Galileo%20L.txt	Letshuoer Galile
 https://superreview.squig.link/data/Letshuoer%20Galileo%20R.txt	Letshuoer Galileo	Shuoer Galileo	in-ear	711
 https://superreview.squig.link/data/Letshuoer%20S12%20L.txt	Letshuoer S12 	Shuoer S12	in-ear	711
 https://superreview.squig.link/data/Letshuoer%20S12%20R.txt	Letshuoer S12 	Shuoer S12	in-ear	711
+https://superreview.squig.link/data/Letshuoer%20S15%20L.txt	Letshuoer S15	Shuoer S15	in-ear	711
+https://superreview.squig.link/data/Letshuoer%20S15%20R.txt	Letshuoer S15	Shuoer S15	in-ear	711
 https://superreview.squig.link/data/Letshuoer%20Singer%20L.txt	Letshuoer Singer	Shuoer Singer	in-ear	711
 https://superreview.squig.link/headphones/data/Shure%20Aonic%2050%20L1.txt	Shure Aonic 50	Shure AONIC 50	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Shure%20Aonic%2050%20L2.txt	Shure Aonic 50	Shure AONIC 50	over-ear	KB006x + 711
@@ -1511,6 +1593,8 @@ https://superreview.squig.link/headphones/data/Sony%20WH-1000XM5%20L3.txt	Sony W
 https://superreview.squig.link/headphones/data/Sony%20WH-1000XM5%20R1.txt	Sony WH-1000XM5	Sony WH-1000XM5	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Sony%20WH-1000XM5%20R2.txt	Sony WH-1000XM5	Sony WH-1000XM5	over-ear	KB006x + 711
 https://superreview.squig.link/headphones/data/Sony%20WH-1000XM5%20R3.txt	Sony WH-1000XM5	Sony WH-1000XM5	over-ear	KB006x + 711
+https://superreview.squig.link/data/Sony%20XBA-A3%20L.txt	Sony XBA-A3	Sony XBA-A3	in-ear	711
+https://superreview.squig.link/data/Sony%20XBA-A3%20R.txt	Sony XBA-A3	Sony XBA-A3	in-ear	711
 https://superreview.squig.link/data/Sony%20XBA-N3%20L.txt	Sony XBA-N3 (sample 1)	Sony XBA-N3	in-ear	711
 https://superreview.squig.link/data/Sony%20XBA-N3%20R.txt	Sony XBA-N3 (sample 1)	Sony XBA-N3	in-ear	711
 https://superreview.squig.link/data/Sony%20XBA-N3%20(S2)%20L.txt	Sony XBA-N3 (sample 2)	Sony XBA-N3	in-ear	711
@@ -1550,6 +1634,8 @@ https://superreview.squig.link/earbuds/data/TGX%20Ear%20Sunniva%20R3.txt		TGXear
 https://superreview.squig.link/earbuds/data/TGX%20Ear%20Totem%20R1.txt		TGXear Totem	earbud	KB006x + 711
 https://superreview.squig.link/earbuds/data/TGX%20Ear%20Totem%20R2.txt		TGXear Totem	earbud	KB006x + 711
 https://superreview.squig.link/earbuds/data/TGX%20Ear%20Totem%20R3.txt		TGXear Totem	earbud	KB006x + 711
+https://superreview.squig.link/data/Tozo%20A1%20L.txt	Tozo A1	TOZO A1	in-ear	711
+https://superreview.squig.link/data/Tozo%20A1%20R.txt	Tozo A1	TOZO A1	in-ear	711
 https://superreview.squig.link/data/TRN%20IM1%20L.txt	TRN IM1	TRN IM1	in-ear	711
 https://superreview.squig.link/data/TRN%20V30%20L.txt	TRN V30	TRN V30	in-ear	711
 https://superreview.squig.link/data/TRN%20V90%20L.txt	TRN V90	TRN V90	in-ear	711
@@ -1663,6 +1749,8 @@ https://superreview.squig.link/data/Tin%20Hifi%20T4%20Plus%20L.txt	Tin Hifi T4 P
 https://superreview.squig.link/data/Tin%20Hifi%20T4%20Plus%20R.txt	Tin Hifi T4 Plus	Tin HiFi T4 Plus	in-ear	711
 https://superreview.squig.link/data/Tin%20Hifi%20T5%20L.txt	Tin Hifi T5 (tips: stock)	Tin HiFi T5	in-ear	711
 https://superreview.squig.link/data/Tin%20Hifi%20T5%20(Comply%20Waxguard)%20L.txt	Tin Hifi T5 (tips: Comply w/ Waxguard)	Tin HiFi T5 (Comply eartips with Waxguard)	in-ear	711
+https://superreview.squig.link/data/Tin%20Hifi%20T5S%20L.txt	Tin Hifi T5S Mars	Tin HiFi T5S	in-ear	711
+https://superreview.squig.link/data/Tin%20Hifi%20T5S%20R.txt	Tin Hifi T5S Mars	Tin HiFi T5S	in-ear	711
 https://superreview.squig.link/data/Tin%20Hifi%20Tin%20Buds%203%20L.txt	Tin Hifi Tin Buds 3	Tin HiFi Tin Buds 3	in-ear	711
 https://superreview.squig.link/data/Tin%20Hifi%20Tin%20Buds%203%20R.txt	Tin Hifi Tin Buds 3	Tin HiFi Tin Buds 3	in-ear	711
 https://superreview.squig.link/data/Tin%20Hifi%20P1%20(vent%20blocked)%20L.txt	Tin Hifi P1 (vent blocked)	Tin Hifi P1 (vent blocked)	ignore	
@@ -1682,6 +1770,8 @@ https://superreview.squig.link/data/Tripowin%20Rhombus%20L.txt	Tripowin Rhombus	
 https://superreview.squig.link/data/Tripowin%20Rhombus%20R.txt	Tripowin Rhombus	Tripowin Rhombus	in-ear	711
 https://superreview.squig.link/data/Tripowin%20Mele%20L.txt	Tripowin Mele	Tripowin x HBB Mele	in-ear	711
 https://superreview.squig.link/data/Tripowin%20Mele%20R.txt	Tripowin Mele	Tripowin x HBB Mele	in-ear	711
+https://superreview.squig.link/data/Tripowin%20Olina%20SE%20S2%20L.txt	Tripowin x HBB Olina SE (sample 2)	Tripowin x HBB Olina SE (sample 2)	ignore	711
+https://superreview.squig.link/data/Tripowin%20Olina%20SE%20S2%20R.txt	Tripowin x HBB Olina SE (sample 2)	Tripowin x HBB Olina SE (sample 2)	ignore	711
 https://superreview.squig.link/data/Truthear%20Hexa%20L.txt	Truthear Hexa (sample 1)	Truthear Hexa	in-ear	711
 https://superreview.squig.link/data/Truthear%20Hexa%20R.txt	Truthear Hexa (sample 1)	Truthear Hexa	in-ear	711
 https://superreview.squig.link/data/Truthear%20Hexa%20(S2)%20L.txt	Truthear Hexa (sample 2)	Truthear Hexa	in-ear	711

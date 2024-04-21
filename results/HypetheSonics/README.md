@@ -58,15 +58,20 @@
 - [Bose QuietComfort II (100dB)](./GRAS%20RA0045%20in-ear/Bose%20QuietComfort%20II%20(100dB)) on GRAS RA0045
 - [Bose QuietComfort II (80dB)](./GRAS%20RA0045%20in-ear/Bose%20QuietComfort%20II%20(80dB)) on GRAS RA0045
 - [Bose QuietComfort II (90dB)](./GRAS%20RA0045%20in-ear/Bose%20QuietComfort%20II%20(90dB)) on GRAS RA0045
+- [Bose QuietComfort Ultra Headphones](./over-ear/Bose%20QuietComfort%20Ultra%20Headphones)
 - [Bose SoundSport Free](./GRAS%20RA0045%20in-ear/Bose%20SoundSport%20Free) on GRAS RA0045
 - [Campfire Audio Andromeda](./Bruel%20&%20Kjaer%205128%20in-ear/Campfire%20Audio%20Andromeda) on Bruel & Kjaer 5128
 - [Cardas A8](./Bruel%20&%20Kjaer%205128%20in-ear/Cardas%20A8) on Bruel & Kjaer 5128
 - [CAT Apollo](./Bruel%20&%20Kjaer%205128%20in-ear/CAT%20Apollo) on Bruel & Kjaer 5128
+- [Creative Aurvana Ace 2 (Ambient mode on)](./GRAS%20RA0045%20in-ear/Creative%20Aurvana%20Ace%202%20(Ambient%20mode%20on)) on GRAS RA0045
+- [Creative Aurvana Ace 2 (ANC Off)](./GRAS%20RA0045%20in-ear/Creative%20Aurvana%20Ace%202%20(ANC%20Off)) on GRAS RA0045
+- [Creative Aurvana Ace 2 (ANC On)](./GRAS%20RA0045%20in-ear/Creative%20Aurvana%20Ace%202%20(ANC%20On)) on GRAS RA0045
 - [Cypherus Audio Campfred](./earbud/Cypherus%20Audio%20Campfred)
 - [Dan Clark Audio Aeon 2 Closed](./over-ear/Dan%20Clark%20Audio%20Aeon%202%20Closed)
 - [Dan Clark Audio Aeon 2 Open](./over-ear/Dan%20Clark%20Audio%20Aeon%202%20Open)
 - [Dan Clark Audio Aeon Flow Closed](./over-ear/Dan%20Clark%20Audio%20Aeon%20Flow%20Closed)
 - [Dan Clark Audio Ether 2](./over-ear/Dan%20Clark%20Audio%20Ether%202)
+- [DCMEKA IE68](./GRAS%20RA0045%20in-ear/DCMEKA%20IE68) on GRAS RA0045
 - [DUNU DK4001](./GRAS%20RA0045%20in-ear/DUNU%20DK4001) on GRAS RA0045
 - [DUNU Luna](./GRAS%20RA0045%20in-ear/DUNU%20Luna) on GRAS RA0045
 - [Empire Ears Bravado Mk2](./GRAS%20RA0045%20in-ear/Empire%20Ears%20Bravado%20Mk2) on GRAS RA0045
