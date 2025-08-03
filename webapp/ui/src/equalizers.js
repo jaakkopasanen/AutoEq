@@ -185,6 +185,56 @@ export default [
     instructions: 'Configure frequency, gain and quality (Q) for each band manually on Equalizer tab'
   },
   {
+    label: 'RME TotalMix RoomEQ',
+    type: 'parametric',
+    config: {
+      optimizer: { minF: null, maxF: 10000, maxTime: 0.5, minChangeRate: null, minStd: null },
+      filters: [
+        { type: 'LOW_SHELF', fc: null, minFc: 20, maxFc: 20000, gain: null, minGain: -20.0, maxGain: 20.0, q: null, minQ: 0.4, maxQ: 1.0 },
+        ...(Array(7).fill(
+          { type: 'PEAKING', fc: null, minFc: 20, maxFc: 20000, gain: null, minGain: -20.0, maxGain: 20.0, q: null, minQ: 0.4, maxQ: 9.9 }
+        )),
+        { type: 'HIGH_SHELF', fc: null, minFc: 20, maxFc: 20000, gain: null, minGain: -20.0, maxGain: 20.0, q: null, minQ: 0.4, maxQ: 1.0 },
+      ]
+    },
+    uiConfig: { showDownload: true, showFsControl: true },
+    fileFormatter: (preamp, filters) => {
+      const lines = [
+        '<Preset>'
+      ];
+      const channels = ['L', 'R'];
+
+      for (let channel of channels) {
+        lines.push(`    <Room EQ ${channel}>`);
+        lines.push('        <Params>');
+        lines.push('            <val e="REQ Delay" v="0.00,"/>');
+        // Band 1 can be either peak(0), low shelf(1), high pass(2) or low pass(3)
+        // Bands 2-7 are always peak
+        // Bands 8 and 9 can be either peak(0), high shelve(1), low pass(2) or high pass(3)
+        // All bands: Frequency from 20Hz to 20kHz; Q from 0.4 to 9.9; Gain from -20dB to 20dB
+        for (const [band, filt] of filters?.entries()) {
+          lines.push(`            <val e="REQ Band${band+1} Freq" v="${filt.fc.toFixed(2)},"/>`);
+          lines.push(`            <val e="REQ Band${band+1} Q" v="${filt.q.toFixed(2)},"/>`);
+          lines.push(`            <val e="REQ Band${band+1} Gain" v="${filt.gain.toFixed(2)},"/>`);
+        }
+        // Configure filter types for bands 1, 8 and 9. Must match the filter types specified in the filters configuration above
+        lines.push('            <val e="REQ Band1Type" v="1.00,"/>'); // 0=peak, 1=Shelve (low)
+        lines.push('            <val e="REQ Band8 Type" v="0.00,"/>'); // 0=Peak, 1=Shelve (high)
+        lines.push('            <val e="REQ Band9 Type" v="1.00,"/>'); // 0=Peak, 1=Shelve (high)
+        // gain from -24dB to 3dB
+        lines.push(`            <val e="Chan Gain" v="${preamp.toFixed(2)},"/>`);
+        lines.push('        </Params>');
+        lines.push(`    </Room EQ ${channel}>`);
+      }
+      lines.push('</Preset>');
+      return lines.join('\n');
+    },
+    fileName: (name) => {
+      return `${name} RME RoomEQ.tmreq`
+    },
+    instructions: 'Download file, open TotalMix, open the settings of a submix in the hardware or control room section of the mixer, open the RoomEQ panel. Under preset choose import the .tmreq file that you downloaded.'
+  },
+  {
     label: 'Rockbox', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
     uiConfig: {
       bw: false, showDownload: true, showFsControl: true,
