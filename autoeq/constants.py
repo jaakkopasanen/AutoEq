@@ -81,6 +81,11 @@ PEQ_CONFIGS = {
         'filter_defaults': {'q': 4.318473, 'min_gain': -12.0, 'max_gain': 12.0, 'type': 'PEAKING'},
         'filters': [{'fc': 20 * 2 ** (i / 3), 'type': 'PEAKING'} for i in range(31)]
     },
+    'SONY_SOUND_CONNECT_10_BAND': {
+        'optimizer': {'min_std': 0.01},
+        'filter_defaults': {'q': math.sqrt(2), 'min_gain': -6.0, 'max_gain': 6.0, 'type': 'PEAKING'},
+        'filters': [{'fc': 31.25 * 2 ** i} for i in range(10)]
+    },
     '10_PEAKING': {
         'filters': [{'type': 'PEAKING'}] * 10
     },

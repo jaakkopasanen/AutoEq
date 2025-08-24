@@ -235,6 +235,13 @@ export default [
     }
   },
   {
+    label: 'Sony Sound Connect',
+    type: 'fixedBand',
+    config: 'SONY_SOUND_CONNECT_10_BAND',
+    uiConfig: { showFsControl: false },
+    instructions: 'Adjust the 10-band equalizer sliders to match the gain values. Sony Sound Connect has limited ±6dB range and no preamp support.'
+  },
+  {
     label: 'Spotify built-in equalizer',
     type: 'fixedBand',
     config: 'SPOTIFY',
