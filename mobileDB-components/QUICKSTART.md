@@ -2,45 +2,46 @@
 
 Get up and running with AutoEq mobile search in 5 minutes.
 
-## 1. Copy Data Files
+**Important:** This library is for **local-only** operation. No web scraping or network access. You need to bundle the `/results` and `/measurements` directories with your app.
 
-First, ensure you have the AutoEq data directories on your device:
+## 1. Bundle Data Files
 
-```bash
-# If testing locally, you can use the existing directories
-# For production, copy to your app's files directory
-```
+Ensure the AutoEq data directories are bundled with your app:
+- `/results` - Contains all headphone EQ files
+- `/measurements` - Contains metadata (optional for basic search)
 
-## 2. Initialize in Your App
+## 2. Initialize (Simple Version - Recommended)
 
 ```kotlin
-import com.autoeq.mobile.AutoEqMobileApp
+import com.autoeq.mobile.LocalAutoEqSearch
 
 class MyApp : Application() {
-    lateinit var autoEq: AutoEqMobileApp
+    lateinit var search: LocalAutoEqSearch
 
     override fun onCreate() {
         super.onCreate()
 
-        // Use absolute paths to your local AutoEq directories
-        val resultsPath = "${filesDir.parent}/AutoEq-Testing/results"
-        val measurementsPath = "${filesDir.parent}/AutoEq-Testing/measurements"
+        // Point to your bundled local directories
+        val resultsPath = "${filesDir}/AutoEq/results"
+        val measurementsPath = "${filesDir}/AutoEq/measurements"
 
-        autoEq = AutoEqMobileApp(resultsPath, measurementsPath)
+        search = LocalAutoEqSearch(resultsPath, measurementsPath)
 
-        // Build index (takes 2-5 seconds)
+        // Build index from local files (takes 2-5 seconds)
         lifecycleScope.launch(Dispatchers.IO) {
-            autoEq.initialize()
+            search.buildIndex()
         }
     }
 }
 ```
 
+**Note:** This only reads from local directories already in your app - no internet required!
+
 ## 3. Implement Search UI
 
 ```kotlin
 class SearchActivity : AppCompatActivity() {
-    private val autoEq by lazy { (application as MyApp).autoEq }
+    private val search by lazy { (application as MyApp).search }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +51,7 @@ class SearchActivity : AppCompatActivity() {
 
         searchBar.addTextChangedListener { text ->
             lifecycleScope.launch(Dispatchers.IO) {
-                val results = autoEq.search(text.toString())
+                val results = search.search(text.toString())
                 withContext(Dispatchers.Main) {
                     displayResults(results)
                 }
@@ -72,8 +73,8 @@ class SearchActivity : AppCompatActivity() {
 ```kotlin
 fun onHeadphoneSelected(entry: Entry) {
     lifecycleScope.launch(Dispatchers.IO) {
-        // Load the parametric EQ file
-        val eq = autoEq.loadParametricEQ(entry)
+        // Load the parametric EQ file from local storage
+        val eq = search.loadEQ(entry)
 
         if (eq != null) {
             withContext(Dispatchers.Main) {
@@ -104,45 +105,46 @@ fun applyToAudioSystem(eq: ParametricEQ) {
 
 ```kotlin
 // Test search
-val results = autoEq.search("AirPods Pro")
+val results = search.search("AirPods Pro")
 results.forEach { entry ->
     println("Found: ${entry.label} by ${entry.source}")
 }
 
 // Test autocomplete
-val suggestions = autoEq.getSuggestions("Sony")
+val suggestions = search.getSuggestions("Sony")
 println("Suggestions: $suggestions")
 
 // Test EQ loading
-val eq = autoEq.loadParametricEQ(results[0])
+val eq = search.loadEQ(results[0])
 println("EQ has ${eq?.bands?.size} bands")
 ```
 
 ## Complete Minimal Example
 
 ```kotlin
-import com.autoeq.mobile.AutoEqMobileApp
+import com.autoeq.mobile.LocalAutoEqSearch
 
 fun main() {
-    // Initialize
-    val autoEq = AutoEqMobileApp(
-        resultsPath = "/absolute/path/to/results",
-        measurementsPath = "/absolute/path/to/measurements"
+    // Initialize with local paths
+    val search = LocalAutoEqSearch(
+        resultsPath = "/path/to/local/results",
+        measurementsPath = "/path/to/local/measurements"
     )
 
-    autoEq.initialize()
+    // Build index from local files
+    search.buildIndex()
 
-    // Search
-    val results = autoEq.search("Sony WH-1000XM4")
+    // Search locally
+    val results = search.search("Sony WH-1000XM4")
 
     // Display
     results.forEach { entry ->
         println("${entry.label} by ${entry.source} on ${entry.rig}")
     }
 
-    // Load EQ
+    // Load EQ from local file
     if (results.isNotEmpty()) {
-        val eq = autoEq.loadParametricEQ(results[0])
+        val eq = search.loadEQ(results[0])
         println("\nEQ Configuration:")
         println("Preamp: ${eq?.preamp} dB")
         println("Bands: ${eq?.bands?.size}")
@@ -152,29 +154,45 @@ fun main() {
 
 ## Next Steps
 
+- **NEW:** See [SIMPLE_USAGE.md](SIMPLE_USAGE.md) for complete Android UI examples
 - Read [USAGE_GUIDE.md](USAGE_GUIDE.md) for detailed integration examples
 - See [README.md](README.md) for architecture and API reference
-- Check `AutoEqMobileApp.kt` for all available methods
+
+## Two Implementation Options
+
+1. **LocalAutoEqSearch** (Recommended for most apps)
+   - Simplified API
+   - Only local directory scanning
+   - See [SIMPLE_USAGE.md](SIMPLE_USAGE.md)
+   - ✅ **No network code, no web scraping**
+
+2. **AutoEqMobileApp** (Full-featured)
+   - More advanced features
+   - Additional metadata support
+   - See [USAGE_GUIDE.md](USAGE_GUIDE.md)
 
 ## Troubleshooting
 
-### "Failed to initialize"
-- Check that resultsPath and measurementsPath point to correct directories
-- Ensure directories contain the expected structure (results/{source}/{rig form}/{headphone}/)
+### "Failed to initialize" or "Indexed 0 entries"
+- Verify that resultsPath points to correct local directory
+- Ensure the `/results` directory is properly bundled with your app
+- Check directory structure: `results/{source}/{rig form}/{headphone}/README.md`
+- **This library does NOT download data** - files must already be present locally
 
 ### "No results found"
-- Verify index was built successfully (`initialize()` returned true)
+- Make sure you called `buildIndex()` first
 - Try with a simple query like "Sony" or "Apple"
 - Check that result directories contain README.md files
 
 ### "ParametricEQ file not found"
 - Not all measurements have parametric EQ files
-- Check `SearchResult.hasParametricEQ` before trying to load
+- The library will return `null` if the file doesn't exist
 
 ## Performance Notes
 
-- Index building: 2-5 seconds for ~5000 measurements
+- Building index: 2-5 seconds for ~5000 measurements
 - Search: < 50ms for typical queries
 - EQ loading: < 5ms per file
+- **All operations are local** - No network latency!
 
-Always run `initialize()` in a background thread!
+Always run `buildIndex()` in a background thread!

@@ -4,10 +4,13 @@ Kotlin implementation of AutoEq search functionality for mobile applications (An
 
 ## Overview
 
-This library provides the same search functionality as the AutoEq webapp, allowing mobile apps to:
+This library provides local-only search functionality for AutoEq data that is already bundled with your app. **No network access or web scraping** - everything runs from local files.
+
+Features:
 - Index and search through local AutoEq measurements
 - Display headphone models with their source and measurement rig
-- Load and apply parametric EQ settings from result files
+- Load and apply parametric EQ settings from local result files
+- Fast, offline operation - all data pre-bundled in your app
 
 ## Architecture
 
