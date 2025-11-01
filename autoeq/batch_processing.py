@@ -29,7 +29,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
                      max_gain=DEFAULT_MAX_GAIN, max_slope=DEFAULT_MAX_SLOPE,
                      window_size=DEFAULT_SMOOTHING_WINDOW_SIZE, treble_window_size=DEFAULT_TREBLE_SMOOTHING_WINDOW_SIZE,
                      treble_f_lower=DEFAULT_TREBLE_F_LOWER, treble_f_upper=DEFAULT_TREBLE_F_UPPER,
-                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, preamp=DEFAULT_PREAMP, thread_count=0):
+                     treble_gain_k=DEFAULT_TREBLE_GAIN_K, preamp=DEFAULT_PREAMP, thread_count=0, stereo=False):
     """Parses files in input directory and produces equalization results in output directory."""
     if not target and (parametric_eq or fixed_band_eq or ten_band_eq or convolution_eq):
         raise ValueError('Target must be specified when equalizing.')
@@ -113,7 +113,7 @@ def batch_processing(input_file=None, input_dir=None, output_dir=None, new_only=
                     bit_depth, target, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
                     fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size,
                     parametric_eq, phase, sound_signature, sound_signature_smoothing_window_size,
-                    standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp)
+                    standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp, stereo)
             args_list.append(args)
 
     if not thread_count:
@@ -137,7 +137,7 @@ def process_file(
         bit_depth, target, convolution_eq, f_res, fixed_band_eq, fs, parametric_eq_config,
         fixed_band_eq_config, max_gain, max_slope, window_size, treble_window_size,
         parametric_eq, phase, sound_signature, sound_signature_smoothing_window_size,
-        standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp):
+        standardize_input, ten_band_eq, tilt, treble_f_lower, treble_f_upper, treble_gain_k, preamp, stereo):
     # The method assumes fs is iterable, ensure it really is
     try:
         fs[0]
@@ -197,15 +197,17 @@ def process_file(
             if phase in ['minimum', 'both']:  # Write minimum phase impulse response
                 minimum_phase_fir = fr.minimum_phase_impulse_response(
                     fs=_fs, f_res=f_res, normalize=True, preamp=preamp)
-                minimum_phase_ir = np.tile(minimum_phase_fir, (2, 1)).T
+                if stereo:
+                    minimum_phase_fir = np.tile(minimum_phase_fir, (2, 1)).T
                 sf.write(
-                    output_file_path.replace('.csv', f' minimum phase {_fs}Hz.wav'), minimum_phase_ir, _fs, bit_depth)
+                    output_file_path.replace('.csv', f' minimum phase {_fs}Hz.wav'), minimum_phase_fir, _fs, bit_depth)
             if phase in ['linear', 'both']:  # Write linear phase impulse response
                 linear_phase_fir = fr.linear_phase_impulse_response(
                     fs=_fs, f_res=f_res, normalize=True, preamp=preamp)
-                linear_phase_ir = np.tile(linear_phase_fir, (2, 1)).T
+                if stereo:
+                    linear_phase_fir = np.tile(linear_phase_fir, (2, 1)).T
                 sf.write(
-                    output_file_path.replace('.csv', f' linear phase {_fs}Hz.wav'), linear_phase_ir, _fs, bit_depth)
+                    output_file_path.replace('.csv', f' linear phase {_fs}Hz.wav'), linear_phase_fir, _fs, bit_depth)
 
     fr.write_csv(output_file_path)
 
