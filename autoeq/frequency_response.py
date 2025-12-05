@@ -503,6 +503,8 @@ class FrequencyResponse:
         if None in self.frequency or None in data:
             # Must not contain None values
             raise ValueError('None values present, cannot smoothen!')
+        if treble_f_lower == treble_f_upper or window_size == 0 or treble_window_size == 0:
+            return data
         # Savgol filter uses array indexing which is not future proof, ignoring the warning and trusting that this
         # will be fixed in the future release
         y_normal = savgol_filter(data, smoothing_window_size(self.frequency, window_size), 2)
@@ -527,7 +529,7 @@ class FrequencyResponse:
             treble_f_upper: Upper boundary of transition frequency reqion. In the transition region normal filter is \
                         switched to treble filter with sigmoid weighting function.
         """
-        if treble_f_upper <= treble_f_lower:
+        if treble_f_upper < treble_f_lower:
             raise ValueError('Upper transition boundary must be greater than lower boundary')
         self.smoothed = self._smoothen(
             self.raw, window_size=window_size, treble_window_size=treble_window_size,
@@ -613,14 +615,16 @@ class FrequencyResponse:
                 name='limiter', frequency=x, raw=np.min(np.vstack([limited_ltr, limited_rtl]), axis=0))
 
             # Limit treble gain
-            gain_k = log_f_sigmoid(self.frequency, treble_f_lower, treble_f_upper, a_normal=1.0, a_treble=treble_gain_k)
-            combined.raw *= gain_k
+            if treble_f_lower != treble_f_upper:
+                gain_k = log_f_sigmoid(self.frequency, treble_f_lower, treble_f_upper, a_normal=1.0, a_treble=treble_gain_k)
+                combined.raw *= gain_k
 
             # Gain can be reduced in the treble region
             # Clip positive gain to max gain
             combined.raw = np.min(np.vstack([combined.raw, np.ones(combined.raw.shape) * max_gain]), axis=0)
             # Smoothen the curve to get rid of hard kinks
-            combined.smoothen(window_size=1 / 5, treble_window_size=1 / 5)
+            combined.smoothen(window_size=window_size, treble_window_size=treble_window_size, treble_f_lower=treble_f_lower,
+            treble_f_upper=treble_f_upper)
 
             # Equalization curve
             self.equalization = combined.smoothed
@@ -966,4 +970,5 @@ class FrequencyResponse:
         )
         self.equalize(
             max_slope=max_slope, max_gain=max_gain, concha_interference=concha_interference,
-            treble_f_lower=treble_f_lower, treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k)
+            treble_f_lower=treble_f_lower, treble_f_upper=treble_f_upper, treble_gain_k=treble_gain_k,
+            window_size=window_size, treble_window_size=treble_window_size)
