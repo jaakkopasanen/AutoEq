@@ -121,6 +121,13 @@ export default [
   { label: 'JamesDSP', type: 'convolution' },
   { label: 'RootlessJamesDSP', type: 'convolution' },
   {
+    label: 'Mini EQ',
+    type: 'parametric',
+    config: '8_PEAKING_WITH_SHELVES',
+    uiConfig: { showFsControl: true, showDownload: true },
+    instructions: 'Download the file and import it in Mini EQ with "Import Equalizer APO..."'
+  },
+  {
     label: 'MiniDSP 2x4HD', type: 'parametric', config: 'MINIDSP_2X4HD',
     uiConfig: {
       bw: false, showDownload: false, showFsControl: true,
