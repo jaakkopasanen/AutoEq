@@ -78,14 +78,14 @@ class TestAutoEq(unittest.TestCase):
             self.assertRegex(fh.read().strip() + '; ', r'GraphicEQ: \d{2,5} (-?\d(\.\d+)?; )+')
 
         # Fixed band equalizer
-        self.assertTrue(self._output.joinpath('Headphone 1', 'Headphone 1 FixedBandEq.txt').exists())
-        with open(self._output.joinpath('Headphone 1', 'Headphone 1 FixedBandEq.txt')) as fh:
+        self.assertTrue(self._output.joinpath('Headphone 1', 'Headphone 1 FixedBandEQ.txt').exists())
+        with open(self._output.joinpath('Headphone 1', 'Headphone 1 FixedBandEQ.txt')) as fh:
             s = fh.read().strip()
         self.assertRegex(s, r'Preamp: -?\d+(?:\.\d+)? dB\n(?:Filter \d{1,2}: ON PK Fc \d{2,5} Hz Gain -?\d(\.\d+)? dB Q 1.41\n)+')
 
         # Parametric equalizer
-        self.assertTrue(self._output.joinpath('Headphone 1', 'Headphone 1 ParametricEq.txt').exists())
-        with open(self._output.joinpath('Headphone 1', 'Headphone 1 ParametricEq.txt')) as fh:
+        self.assertTrue(self._output.joinpath('Headphone 1', 'Headphone 1 ParametricEQ.txt').exists())
+        with open(self._output.joinpath('Headphone 1', 'Headphone 1 ParametricEQ.txt')) as fh:
             s = fh.read().strip()
         self.assertRegex(s, r'Preamp: -?\d+(?:\.\d+)? dB\n(?:Filter \d{1,2}: ON (PK|LSC|HSC) Fc \d{2,5} Hz Gain -?\d(\.\d+)? dB Q \d(\.\d+)?\n)+')
 
