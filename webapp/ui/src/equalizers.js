@@ -112,6 +112,15 @@ export default [
     instructions: 'Download the file to "C:\\Program Files\\EqualizerAPO\\config\\", open "Configuration Editor" app, add a filter "Control > Include" and select the file with 📁.'
   },
   {
+    label: 'Fidelia', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
+    uiConfig: {
+      bw: false, showDownload: true, showFsControl: true,
+      filterNames: { LOW_SHELF: 'Low-shelf', PEAKING: 'Peak', HIGH_SHELF: 'High-shelf', PREAMP: 'Preamp' },
+      columnNames: { fc: 'Center frequency (Hz)', gain: 'Gain (dB)', q: 'Q' }
+    },
+    instructions: 'Download the file, open it in a text editor and copy its contents. In Fidelia, choose Settings > Equalizer > Import Profile… (iPhone) or Preferences > Equalizer > Import Profile… (Mac) and paste.'
+  },
+  {
     label: 'iTunes built-in equalizer',
     type: 'fixedBand',
     config: '10_BAND_GRAPHIC_EQ',
