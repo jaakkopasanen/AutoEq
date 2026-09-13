@@ -1,6 +1,6 @@
 import warnings
 from copy import deepcopy
-from time import time
+from time import perf_counter
 from abc import ABC, abstractmethod
 import numpy as np
 from matplotlib import pyplot as plt, ticker
@@ -420,7 +420,7 @@ class LowShelf(ShelfFilter):
 
 class OptimizationHistory:
     def __init__(self):
-        self.start_time = time()
+        self.start_time = perf_counter()
         self.time = []
         self.loss = []
         self.moving_avg_loss = []
@@ -657,7 +657,7 @@ class PEQ:
     def _callback(self, params):
         """Optimization callback function"""
         n = 8
-        t = time() - self.history.start_time
+        t = perf_counter() - self.history.start_time
         loss = self._optimizer_loss(params, parse=False)
 
         self.history.time.append(t)
@@ -674,7 +674,13 @@ class PEQ:
         if len(self.history.moving_avg_loss) > 1:
             d_loss = loss - self.history.moving_avg_loss[-2]
             d_time = t - self.history.time[-2]
-            change_rate = d_loss / d_time if len(self.history.moving_avg_loss) > n else 0.0
+            # d_time can be 0.0 when two callbacks land within the same clock tick (cheap loss
+            # evaluations can easily outrun the clock's resolution), which would otherwise divide
+            # by zero and poison change_rate with inf/nan. Treat it as "no change measured yet".
+            if len(self.history.moving_avg_loss) > n and d_time > 0.0:
+                change_rate = d_loss / d_time
+            else:
+                change_rate = 0.0
         else:
             change_rate = 0.0
         self.history.change_rate.append(change_rate)
