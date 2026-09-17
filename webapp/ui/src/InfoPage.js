@@ -81,8 +81,7 @@ const InfoPage = (props) => {
               <Typography variant='h6' sx={{lineHeight: 1.2, mb: '12px'}}>Select equalizer app</Typography>
               {platform !== 'iOS' && (
                 <Typography variant='body2'>
-                  <b style={{color: theme.palette.secondary.light}}>{recommendedApp}</b> is recommended for
-                  <b>{platform}</b>. See <Link
+                  <b style={{color: theme.palette.secondary.light}}>{recommendedApp}</b> is recommended for <b>{platform}</b>. See <Link
                     href='https://github.com/jaakkopasanen/AutoEq/wiki/Choosing-an-Equalizer-App'
                     target='_blank' rel='noopener'
                     underline='none'
