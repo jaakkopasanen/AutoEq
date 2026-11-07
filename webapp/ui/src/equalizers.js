@@ -24,6 +24,11 @@ export default [
     instructions: 'Configure filter types, frequencies, widths and gains manually. You can ignore the shelf filter widths here since AUNBandEq has fixed width shelf filters that match the produced filters.'
   },
   {
+    label: 'Bandwise EQ (Chrome Extension)', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
+    uiConfig: { showDownload: true, showFsControl: true },
+    instructions: 'Download the file, open Bandwise EQ, choose "Import headphone profile (AutoEQ)…" from the presets menu, click "Open file…", select the file and click "Import".'
+  },
+  {
     label: 'Convolution Eq',
     type: 'convolution',
     instructions: 'Download the file and import to the equalizer app'
