@@ -24,6 +24,15 @@ export default [
     instructions: 'Configure filter types, frequencies, widths and gains manually. You can ignore the shelf filter widths here since AUNBandEq has fixed width shelf filters that match the produced filters.'
   },
   {
+    label: 'BitSpring', type: 'parametric', config: '8_PEAKING_WITH_SHELVES',
+    uiConfig: {
+      bw: false, showDownload: true, showFsControl: true,
+      filterNames: { LOW_SHELF: 'Low shelf', PEAKING: 'Peak', HIGH_SHELF: 'High shelf', PREAMP: 'Preamp' },
+      columnNames: { fc: 'Frequency (Hz)', gain: 'Gain (dB)', q: 'Q' }
+    },
+    instructions: 'Download the file and import it in BitSpring from Equalizer > Import > Import from a file. AutoEq profiles for popular headphones are also built in under Equalizer > Import > Headphone profiles.'
+  },
+  {
     label: 'Convolution Eq',
     type: 'convolution',
     instructions: 'Download the file and import to the equalizer app'
